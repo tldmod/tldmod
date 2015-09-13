@@ -6,8 +6,8 @@ qstr_Action|Действие
 qstr_Mount|Оседлать
 qstr_Attack_Type|Вид атаки
 qstr_Hold_This_Position|Удерживать эту позицию
-qstr_Follow_Me|Следуй за мной
-qstr_Charge|Выбор
+qstr_Follow_Me|Следовать за мной
+qstr_Charge|В атаку
 qstr_Advance|Продвинуться
 qstr_Fall_Back|Отступать
 qstr_Stand_Closer|Встать плотнее
@@ -24,13 +24,13 @@ qstr_Enemies|Враги
 qstr_Ready|Готов
 qstr_Wounded|Ранен
 qstr_Dead|Мёртв
-qstr_Routed|Преследуются
+qstr_Routed|Сбежали
 qstr_Number_of_men_knocke|Число оглушённых людей: {reg1}
 qstr_Number_of_men_left:_|Число оставшихся людей: {reg1}
 qstr_Opponents_Beaten:_{r|Врагов повержено: {reg1}
 qstr_Opponents_Remaining:|Врагов осталось: {reg1}
-qstr_Gauntlet_wave:_1|Перчатку волна: 1
-qstr_Gauntlet_wave:_{reg1|Перчатку волна: {reg1}
+qstr_Gauntlet_wave:_1|Взмах перчатки: 1
+qstr_Gauntlet_wave:_{reg1|Взмах перчатки: {reg1}
 qstr_Remain_in_retirement|Уйти в отставу
 qstr_Go_back_to_the_adven|Вернуться к приключениям
 qstr_You_have_retired_at_|Вы ушли в отставку на {reg4} уровне после {reg5} дней приключений.
@@ -58,11 +58,11 @@ qstr_______|
 qstr_A_peaceful_village_n|Мирная деревня, неподалёку от Вестфолда...
 qstr_The_War_is_upon_Roha|Война в Рохане!
 qstr_Minas_Tirith___The_W|Минас Тирит - Белый город
-qstr_The_White_Tree_stand|Белое Древо стоит мертвым с линии царей потерпел неудачу
+qstr_The_White_Tree_stand|Белое Древо мертво с тех пор, как прервался род Королей
 qstr_The_Shadow_grows_eve|Тень становится все сильнее на Востоке
 qstr_Minas_Morgul___City_|Минас Моргул - город Назгулов
 qstr_Sauron_s_armies_marc|Армия Саурона вступает в войну.
-qstr_Adventurers_at_audie|Искатели приключений на публику Стюард Денетор...
+qstr_Adventurers_at_audie|Искатели приключений на приеме у наместника Денетора...
 qstr___What_business_do_y|'Что за дела у тебя здесь, просителей?'
 qstr___Your_Stewardship_w|'Вашим руководством, мы пришли из дальних земель... скакать!!!
 qstr___Enough_of_this_mad|'Хватит этого безумия! Охранники!!'
@@ -527,8 +527,8 @@ qstr_{s10}_Move_over_ther|{s10}, Двигайтесь туда!
 qstr_You_have_a_clear_per|У Вас есть чёткое понимание надвигающейся опасности, от всех вокруг Вас!
 qstr_New_ent_reached_batt|Новый энт достиг батальной сцены...
 qstr_On_your_positions_bi|На Ваших позициях, суки!
-; qstr_Defenders:_infantry_|Defenders: infantry CHARGE!!
-; qstr_Defenders:_everyone_|Defenders: everyone CHARGE!!
+qstr_Defenders:_infantry_|Защитники: пехота, В АТАКУ!!
+qstr_Defenders:_everyone_|Защитники: все, В АТАКУ!!
 qstr_Attackers:_{reg1}/{r|Нападающие: {reg1}/{reg3}/{reg5} Обороняющиеся: {reg0}/{reg2}/{reg4}
 ; qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
 qstr_Ballista:_out_of_amm|Баллиста: кончились патроны!
@@ -583,9 +583,9 @@ qstr_Weekly_upkeep_for_tr|Еженедельное содержание войн
 qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} Очки Ресурсов ({reg5})
 qstr_No_upkeep_costs|Нет затрат на содержание
 qstr_Orc_hiring_bonus:_+2|Бонус за найм орка: +2/3 за каждого орка^
-; qstr_Current_party_size_l|Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}
+qstr_Current_party_size_l|Текущее ограничение размера отряда: {reg5}.^Модификаторы размера отряда:^^Базовый размер: +10^Лидерство: {s2}{reg1}^Харизма: {s3}{reg2}^Ранги: {s4}{reg3}^{s5}ВСЕГО: {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
-; qstr__________Faction_str|         Faction strengths report:^{s2}
+qstr__________Faction_str|Отчёт о силе фракций:^{s2}
 ; qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 ; qstr_Traits_gained:^{s2}|Traits gained:^{s2}
@@ -593,10 +593,10 @@ qstr_^^You_are_{s17}.|^^Вы {s17}.
 qstr_Assassins_in_the_cam|Убийцы в нашем лагере! Защищайтесь!
 qstr_Ally_party_size:_{re|Размер отряда союзников: {reg1}
 qstr_Enemy_party_size:_{r|Размер отряда противников: {reg1}
-; qstr_Party_count:_{reg0}|Party count: {reg0}
+qstr_Party_count:_{reg0}|Размер отряда: {reg0}
 ; qstr_Party_position__{reg|Party position ({reg2},{reg3}).
-; qstr_Party_size_increased|Party size increased from {reg0} to {reg1}!
-; qstr_Faction_strengths_re|Faction strengths report:^{s2}
+qstr_Party_size_increased|Размер отряда увеличен с {reg0} до {reg1}!
+qstr_Faction_strengths_re|Отчёт о силе фракций:^{s2}
 ; qstr_Attacking_enemy_part|Attacking enemy party {s11}
 qstr_Unknown_{reg3}_|Неизвестно({reg3})
 qstr_ON|Включить
@@ -613,8 +613,8 @@ qstr_Battles_only|Только битва
 ; qstr_Quadrupled|Quadrupled
 qstr_You_drank_the_Ent_Wa|Вы выпили воду энтов...
 qstr_Fangorn_search:_fail|В поисках фарагона: провалено.
-; qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
-; qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
+qstr_Troll_caged_in_wheel|Тролль заперт в клетке на колёсах.
+qstr_A_second_troll_is_ca|Второй тролль заперт в клетке на колёсах.
 qstr_Here_you_are.|Здесь вы находитесь.
 ; qstr_Player_was_moved_to_|Player was moved to {s10}.
 ; qstr_neutral_whereabouts|neutral whereabouts
@@ -632,27 +632,27 @@ qstr_lothlorien|Лотлориен
 qstr_rivendell|Ривенделл
 qstr_mirkwood|Лихолесье
 qstr_evil_man|злой человек
-; qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
+qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Только регулярные войска
 qstr_Heroes_only|Только герои
 ; qstr_Regulars_and_Heroes|Regulars and Heroes
 ; qstr_HP_lost_from_poisoni|HP lost from poisoning.
 qstr__{s17}.|, {s17}.
-; qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
-; qstr_You_are_attacking_a_|You are attacking a group of {s1}.
-; qstr_The_battle_against_t|The battle against the group of {s1} continues.
-; qstr_{s13}_asked_you_to_r|{s13} asked you to report to him with at least {reg13} troops.
-; qstr_{s13}_ordered_you_to|{s13} ordered you to join the assault against {s14}.
+qstr_A_group_of_{s1}_is_{|Группа {s1} {s10} перед вами
+qstr_You_are_attacking_a_|Вы атакуете группу {s1}.
+qstr_The_battle_against_t|Битва против группы {s1} продолжается.
+qstr_{s13}_asked_you_to_r|{s13} просит вас явиться к нему с отрядом не менее {reg13} воинов.
+qstr_{s13}_ordered_you_to|{s13} приказал вам присоединиться к штурму {s14}.
 qstr_You_were_victorious!|Вы победили
 qstr_The_battle_was_lost.|Битва проиграна! Ваша армия потерпела поражение.
-; qstr_Your_companions_carr|Your companions carry you away from the fighting.
-; qstr_You_have_defeated_th|You have defeated the enemy.
-; qstr_You_have_retreated_f|You have retreated from the fight.
-; qstr_^^Ally_Casualties:{s|^^Ally Casualties:{s0}
-; qstr_News_of_your_victory|News of your victory against {s4} reach {s3}.
-; qstr_{s3}_witnesses_your_|{s3} witnesses your victory against {s4}.
-; qstr_{s1}_of_{s3}_managed|{s1} of {s3} managed to escape.
-; qstr_Prisoners_rescued_so|Prisoners rescued so far: {reg1}
+qstr_Your_companions_carr|Ваши солдаты выносят вас с поля битвы
+qstr_You_have_defeated_th|Вы победили врага.
+qstr_You_have_retreated_f|Вы отступаете из битвы.
+qstr_^^Ally_Casualties:{s|^^Потери союзников:{s0}
+qstr_News_of_your_victory| В {s3} долетают новости о вашей победе над {s4}.
+qstr_{s3}_witnesses_your_|{s3} замечает вашу победу над {s4}.
+qstr_{s1}_of_{s3}_managed|{s1} из{s3} смог скрыться.
+qstr_Prisoners_rescued_so|Пленников освобождено: {reg1}
 ; qstr_Victory_comment._Pla|Victory comment. Player was alone
 ; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
 ; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
@@ -690,7 +690,7 @@ qstr_You_are_ready_to_att|Мы ждём вашего указа об атаке.
 ; qstr_The_town_centre_is_y|The town centre is yours, but the remaining defenders have retreated to the castle. It must fall before you can complete your victory.
 ; qstr_The_remaining_defend|The remaining defenders have retreated to the castle as a last defense. You must go in and crush any remaining resistance.
 ; qstr_However_since_you_ar|However, since you are not a sworn {man/follower} of {s9}, there is no chance he would recognize you as the {lord/lady} of this {reg8?town:castle}.
-; qstr_The_enemy_has_been_f|The enemy has been forced to retreat. The assault is over, but the siege continues.
+qstr_The_enemy_has_been_f|Враги были вынуждены отступить. Штурм закончен, но осада продолжается.
 ; qstr_The_assasins_beat_yo|The assasins beat you down and leave you for dead. .
 ; qstr_You_have_fallen._The|You have fallen. The bandits quickly search your body for valuables they can find, then vanish into the night. They have left you alive, if only barely.
 ; qstr_Luckily_some_of_your|Luckily some of your companions came to search for you when you did not return, and find you lying in the ditch. They carried you to safety and dressed your wounds.
@@ -700,14 +700,14 @@ qstr_the_place|место
 qstr_the_castle|замок
 ; qstr_Stay_indoors_for_som|Stay indoors for some time ({reg1} Resource points per night)
 ; qstr_Camp_outside_for_som|Camp outside for some time (free)
-; qstr_{s1}_s_Ship|{s1}'s Ship
+qstr_{s1}_s_Ship|Корабль {s1}
 ; qstr_Time_passes...|Time passes...
-; qstr_Forces_of_Good|Forces of Good
-; qstr_Forces_of_Mordor|Forces of Mordor
-; qstr_Forces_of_Isengard|Forces of Isengard
-; qstr_their_enemies|their enemies
-; qstr_{s11}_and_{s13}|{s11} and {s13}
-; qstr_{s11}_{s13}|{s11}, {s13}
+qstr_Forces_of_Good|Силы Добра
+qstr_Forces_of_Mordor|Силы Мордора
+qstr_Forces_of_Isengard|Силы Изенгарда
+qstr_their_enemies|их враги
+qstr_{s11}_and_{s13}|{s11} и {s13}
+qstr_{s11}_{s13}|{s11}, {s13}
 ; qstr_Now_that_the_sorcere|Now that the sorcerer is dead, there is nothing left to be done here.
 ; qstr_Now_that_the_sorcerer|Now that the sorcerer has fled, there is nothing left to be done here.
 ; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest...

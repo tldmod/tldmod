@@ -12,9 +12,9 @@ str_msg_battle_won|戦いに勝利しました！ 終了するにはTABキーを
 str_tutorial_map1|これは大陸の地図です。 マップ上を左クリックすると、 あなたのパーティはそこを目指して移動をしたり、 町の中へ入ったり、 選択されたパーティを追跡したりします。 この画面のときに、 パーティが移動もせず、 待機中でも休息中でもない場合は、 時間の流れは止まった状態になります。 スペースキーを押している間は、 パーティがその場に立ち止まった状態でも、 時間だけは流れていきます。
 str_accept|受け入れる
 str_charge|突撃
-; str_color|Color
-; str_flip_horizontal|Flip Horizontal
-; str_flip_vertical|Flip Vertical
+str_color|色
+str_flip_horizontal|水平反転
+str_flip_vertical|上下反転
 str_hold_fire|攻撃止め
 str_blunt_hold_fire|殴打 / 攻撃止め
 str_tutorial_ammo_refilled|矢弾が補充されました。
@@ -25,7 +25,7 @@ str_custom_battle_4|リューンの軍勢が接近しているとの報告を斥
 str_custom_battle_5|ウグルクは獰猛なオークどもに思うさまの略奪を約束すると、 彼らを率いて西方へと遠征した。 もしこのドワーフの要塞を今日落とすことができれば、 バラド＝ドゥアの主人たちは大いにお喜びになるだろう。
 str_custom_battle_6|ウグルク率いるオーク遊撃隊は、 彼らから逃げるエルフの巡察隊を 夢中になって追撃していた。 だが、運とはいづれ尽きるものなのだ。 どうやら、 狡猾な青白い顔の連中が攻勢に出る番が来たようだ。
 str_custom_battle_7|ゴンドールの海岸に、海賊どもが野営を張った！ なんとずうずうしい奴らか！ やつらの後続部隊が到着する前に、 元来た海へ追い戻してやろう。
-; str_finished|(Finished)
+str_finished|(終了)
 str_delivered_damage|{reg60}のダメージを与えました。
 str_archery_target_hit|距離: {reg61}ヤード。 スコア: {reg60}
 str_use_baggage_for_inventory|戦闘中にインベントリを使用するには、 箱を利用してください (戦闘開始位置に置いてあります)。
@@ -299,14 +299,14 @@ str_bar_miserable|不幸
 str_here_plus_space|ここ
 str_npc1_intro|やあ、戦士殿、 ヘンネス・アンヌーンへようこそ。
 str_npc2_intro|やあ、お客人！ 今日はどういったご用件ですかな？
-str_npc3_intro|おっと！旅の人、 もうちょっと静かにしてもらえないかな。
+str_npc3_intro|おっと！旅の人、もうちょっと静かにしてもらえないかな。
 str_npc4_intro|黄金館へようこそ、戦士殿！
 str_npc5_intro|やあ、{playername}。 マエ ゴヴァンネン！
 str_npc6_intro|私にかまわないで、旅の人。 あなたと話をしたくないの。
 str_npc7_intro|ドワーリンの息子、キーリがこれにあり。 ご用があれば、なんなりと！
 str_npc8_intro|デールへようこそ、旅の人！ 私に何かできることはあるかしら？
 str_npc9_intro|シッ！ 衛兵どもに合図を送るそぶりでも見せたら、 おまえを切り裂いて、 はらわたをワーグどもの エサにしてやるからな！
-str_npc10_intro|ようあんた！
+str_npc10_intro|おい、あんた！
 str_npc11_intro|あっ！ おまえ、よそ者だな？ においでわかるぞ。 おいらなんかにわかる訳がない、 なんて親分たちに告げ口してみろ、 おまえの目玉をくり抜いてやるからな！
 str_npc12_intro|おほ！ なにしてんだおまえ、 隠れてんのか？
 str_npc13_intro|そこを動くな！ 族長のテントに、何の用だ？
@@ -356,50 +356,50 @@ str_npc5_backstory_a|君は生身の人間たちが忘れ去ってしまった�
 str_npc6_backstory_a|感じの悪いのは謝るわ、旅の人。 でも、ここを訪れる数少ない来客といえば、 信用できない者ばかりなの。 つい一週間まえにここへ来た、 あのドワーフときたら・・・ 何でもないわ。 私はルエヴァンナ、 闇の森のシルヴァン・エルフよ。
 str_npc7_backstory_a|これはどうもご丁寧に、 {playername}。 わしらは侵攻してくる東夷やグンダバドのオークどもを 追い払っているのだが、 いまのところ、 わしらと同盟国のデールの手に余るような相手はおらん。
 str_npc8_backstory_a|兵舎に行けば、あなたの部隊に志願してくれる勇敢な戦士が きっと見つかると思いますよ。 私はただの医師、それと薬草医で、 腕も大したことないんです。
-str_npc9_backstory_a|あんた、いいね！ わし、グルム。 上官に手を上げちまって、 やつのスナガどもに追われとるんじゃ。^あの役立たずの豚め、 自業自得じゃ！ ちょっとまえ、 わら頭の偵察隊に奇襲されてな・・・ やつは一人で勝手に負けよったんじゃ。 「退却」とか叫んでな、 やつはさっさと逃げちまったのさ。 その場にとどまって 突撃してくる馬をさばいたのは グルムと他数匹だけじゃ。 黄色い頭がすり身になるまで 殴ってやったわ(ヒッヒッヒッ)。 わしら強いのがおらんかったら、 部隊はそっくり全部長虫の餌になっとったところじゃ。
-str_npc10_backstory_a|あっしはドゥルガシュ
+str_npc9_backstory_a|あんた、いいね！ わし、グルム。 上官に手を上げちまって、 やつのスナガどもに追われとるんじゃ。^あの役立たずの豚め、 自業自得じゃ！ ちょっとまえ、 わら頭の偵察隊に奇襲されてな・・・ やつは一人で勝手に負けよったんじゃ。 '退却'とか叫んでな、 やつはさっさと逃げちまったのさ。 その場にとどまって 突撃してくる馬をさばいたのは グルムと他数匹だけじゃ。 黄色い頭がすり身になるまで 殴ってやったわ(ヒッヒッヒッ)。 わしら強いのがおらんかったら、 部隊はそっくり全部長虫の餌になっとったところじゃ。
+str_npc10_backstory_a|俺はドゥルガシュ！
 str_npc11_backstory_a|どうせおいらは追跡兵には向いてないよ。 だからって、 おいらをつまみ出すことないだろ！ 親分たちは面倒くさくなっただけなんだよ。 あんなやつらは死んじまえ！ やつらの話じゃ、 おいらは矢はあさっての方向に飛ばす、 足は遅い、 鼻は効かないと来たもんだ。 ドチクショーめ！ おいらの使い道が見つからなかったら、 おいらを黒い穴に捨てちまえって話してやがったのは知ってるんだ。 おいらにそんな事しようもんなら、 親分どもと刺し違えてやる！
-; str_npc12_backstory_a|I'm in command of a band of lads up here. I'm Gorbag and you'd best learn quick lubber us Uruks are the real bosses 'round here. The Big Bosses makes slips, 'ay, even the Biggest can make mistakes, and always the poor Uruks to put slips right, and small thanks. They don't even tell us all they know, do they? Not by half. Grr!
-; str_npc13_backstory_a|I? I am a grain of soil from southern sands, blown north by cold and dark night winds. I am Lykyada, a Serpent Lord of Haradwaith. Lord of the Gold Serpent, bane of the Black Serpent Tribe, now allied to serve the will of the Dark Lord.
-; str_npc14_backstory_a|I am Fuldimir, son of the southern realm of Umbar, south of Harondor, and the Bay of Belfalas, for both are home to my heart and my people. We are the lords of sea and sail, corsairs to some, kin of the Bay of Belfalas for her waters we tame.
+str_npc12_backstory_a|俺はこの辺の下っ端どものまとめ役だ。 名前はゴルバグ。 ここは俺たちウルクが仕切ってるんだ、 よく覚えておけよ。 親分どもはどじを踏む、 ああそうさ、 一番の親分でさえ間違える事があるんだ。 後始末をするのは、 いつも気の毒な俺たちウルクさ。 ろくに褒美ももらえないけどな。 やつらはいつも情報を小出しにするんだよ、 なあ？ 知っている事の半分も教えやがらねえ。 グルル！
+str_npc13_backstory_a|俺か？俺は南の砂漠で生まれ、 暗く、 冷たい夜の風にのせられてここまで来た。 俺の名はリキアーダ。 ハラドワイスの蛇将軍であり、 金の蛇の将軍であり、 黒の蛇族の人間であり、 冥王の意思に従う同盟者だ。
+str_npc14_backstory_a|俺はフルジミア、 ハロンドール南方に浮かぶ南の王国、 ウンバールと、 ベルファラス湾の息子だ。 どちらも俺たちの大切な故郷なんだ。 俺たちを海賊と呼ぶ連中もいるが、 俺たちはベルファラス湾を手なずける海の覇者だ。
 str_npc15_backstory_a|わしはてんさいボルゾグ、 ほねつぎ師、 縫合師、 呪術医、だ。 御目のためにと戦争へいくと、 まず兵のひとりや幾人だかは 青白い顔の狩人とか馬狂いどもに斬られちまう。 オークがやられても 代わりのオークを見つけるのは簡単だ、 ああそうですとも偉大なる指導者様、 でも、ワーグはどうだい？ 巨人は？ 洞窟トロルは？ ちっ、ちっ！ そこでだ、そーこーでー、だ！ そこでわし、ボルゾグさんの出番だよ！
-; str_npc16_backstory_a|Well now, it is the stranger who should declare himself first. Nevertheless, I am Varfang of the Balcoth kin... I can tell that you have not yet heard the songs or tales of my land that speak the name of the Balcoth, for the very name would check your courage and fill your heart with woe.
+str_npc16_backstory_a|ほう、 そちらが先に名乗るのがすじだと考えていたが、 まあいいだろう、 俺はバルホス族のヴァルファングだ・・・ バルホスの名を聞いても顔色ひとつ変えないところを見ると、 どうやらあんたは我らが一族の勇名を知らんようだな。
 str_npc17_backstory_a|わしはディムボルンと呼ばれている。 わしは森で働いているんだ。 森で過ごすのが好きなんだよ。 いいところだよ。 わしは森が好きなんだ。 森にはたくさんの木がある。 わしは木が大好きなんだ。 わしは力持ちで木が好きだから、 小さい頃からずっと森で働いてきたんだ。
 str_npc1_backstory_b|私は武勇で知られるドゥネダインの子孫、イシリアンの野伏だ。 追跡と斥候の技術には自信がある。 弓と剣の腕前に関しては、 オークどもがよく知っているだろう。 また、 迫り来る闇と戦おうという意志のある者ならば、 誰でも訓練することができる。
 str_npc2_backstory_b|私はこの白い都の治安を守り、 執政閣下にお仕えするため、 ミナス・ティリスの衛兵となるべく訓練を受けました。
-; str_npc3_backstory_b|I am a Rider of the West Emnet éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
-; str_npc4_backstory_b|I was born into a noble family and I have been serving Lady Éowyn as a maid of honour ever since we were little girls. Our fathers were wise enough to allow us to train alongside our brothers in matters of combat, to become shieldmaidens of Rohan.
-; str_npc5_backstory_b|Lord Elrond sent me as an emissary to Lord Celeborn, to give aid and advice as it's needed in the War in this part of Rhovanion.
+str_npc3_backstory_b|私はウェストエムネトのエオレド所属の騎兵だ ― 部隊は私を置いて、 アイゼンの浅瀬への長期の巡察任務に旅立ってしまった。 彼らは緑の戦旗にふさわしい勇者たちだと信じるが、 彼らの多くは生きて帰らないのでは、 と心配だ。
+str_npc4_backstory_b|私は貴族の家に生まれ、 女官としてエオウィン様がご幼少の頃よりお仕えしてきました。 エオウィン様と私は、 男の兄弟たちにまじって戦闘の稽古をすることを許され、 ローハンの戦士となるべく、 共に精進してきました。
+str_npc5_backstory_b|私はエルロンド卿に頼まれ、 ロヴァニオンのこの一帯での戦闘において助けとなるべく、 ケレボルンのもとへ密使としてやってきた。
 str_npc6_backstory_b|わたしは、この美しい森の、 秘密の小道を歩くのがすき。 ときどき息をひそめては、 木々の影から森に住む動物たちの営みを、 そっと観察するの。 めずらしい鳥の歌や、 巣ごもりをする野生の熊たちの姿は、 わたしにとってはエダインが武器をぶつけあったり、 大きな城壁に心を奪われたりするのと同じくらい、 興味を引かれることなの。
 str_npc7_backstory_b|わしはドワーフのしきたり通り、 尊敬する父ドワーリンの教えに従い、 エレボールの守備を固めるのを助け、 若いドワーフたちを訓練した。
 str_npc8_backstory_b|私はブランド王の、体調不良の治療を担当しています。 これは便秘から来るもので、 戦争に行く方が患いやすいんです。 ニガヨモギを調合して薄めたものを服用すれば、 胃腸も気分も落ち着くんですよ。
 str_npc9_backstory_b|そこでわしは考えた。 'グルム、おまえは腐った肉の塊になりたいのか？'、とな。 '嫌だ'、が答えじゃ。^次の戦いで、 わしは怪我をしたふりをして、 後ろのほうにおった。 それで、 誰も見ておらんのを確認して、 上官に襲いかかったんじゃ！ 奴はほぼ、 まっぷたつじゃ、 グハハー！ それから奴の周りにおったスナガどもを、 全部きれいに切り倒した。^^・・・だが、 どうやら奴は、 血まみれで這いずってたくせに、 命拾いしたらしくてのう。 この一件を周りにまくしたてておったわ。 次はきっちり首を落としておかんとなあ、 ガァルル・・・
-str_npc10_backstory_b|アイゼンガルドの狼乗りで、追跡兵でやす。
+str_npc10_backstory_b|アイゼンガルドの狼乗りで、追跡兵なんだけどさ。
 str_npc11_backstory_b|くそったれめ！ ちょっと風邪気味なだけなんだ。 だいたい、 石ころなんか嗅ぎまわって何か意味あるのか？ ばっかやろう！ あの阿呆のウルクどものせいなんだ！ あの考えなしのうすのろどもめ！ あいつらに先に行かせてやると、 手当たり次第に物をつまみあげるわ、 そこらじゅうを踏み荒らすわで、 匂いなんかどっかに吹っ飛んじまうんだよ。
-; str_npc12_backstory_b|And those Nazgul give me the creeps. And they skin the body off you as soon as look at you, and leave you all cold in the dark on the other side. But He likes 'em; they're His favourites nowadays, so it's no use grumbling. I tell you, it's no game serving in the city. I'd like to try somewhere where there's none of 'em.
-; str_npc13_backstory_b|I saw of late the word of the Dark Lord spread among my kin, and in their hearts and minds his will crept. Most were drawn to his darkness, and in place of their courage grew an insatiable lust for slaughter so that when their ears heard his call few puppets were so willing to answer.
-; str_npc14_backstory_b|There is much change in a man who rides the tumult of the winds and seas of the Belfalas waters, and those yet to battle her will are but children. For stout men are they who meet her tempest and ride her storm. I have laid eyes on her darkest tide and yet remain her master.
-; str_npc15_backstory_b|Many moons ago, when I was just a fresh little thing, my Grandsire led the tribe down into the mines, where the dwarves had recently died. A Fire Wraith had passed through, and it was comfortable and warm. We prospered, but every so often some cruel adventurer, or Dwarf hero, would come and kill and maim us in our peaceful tunnels. My hands learned to close the wound of sword or axe, and my mind learned to see the outline of bone and sinew below any hide. These days, I can work a potion or set a break with equal skill.
-; str_npc16_backstory_b|The Balcoth were a fierce race of men from my home land, slaughtered by these westerlings to all but a few men. Chased down like beasts of burden as food for their blades. The blood spilt by those blades is the same blood that flows within me, for within me their house continues.
+str_npc12_backstory_b|あのナズグールどもは薄気味が悪い。 あいつらににらまれただけで、 あっちの世界へ魂を持っていかれちまう。 だがあいつらは大親分のお気に入りでな。 ここで愚痴を言ったところで何にもならん。 ここにいると魂がすり減るわい。 ナズグールどものいない別の場所へ鞍替えしたいもんだ。
+str_npc13_backstory_b|冥王の言葉が我らの民の心をつかみ、 我らの精神が冥王の意志で満たされるのを見てきた。 ほとんどの者は闇に取り込まれ、 勇気は殺戮への飽くことを知らぬ欲求に取って代わられた。 ひとたび冥王が呼びかければ、 その声に答えようとしない者などいない。
+str_npc14_backstory_b|荒くれる風とベルファラスの海を乗り越えてきた者と、 そうでない者とでは、 大人と子供ほどの違いがあるのさ。 いっぱしの男というのは、 暴風雨の中を生き延びてこそなんだ。 俺はあらゆる大波を見てきたが、 いまだに海に支配されてはいない。
+str_npc15_backstory_b|いく月もまえ、 まだわしが小さかった頃、 わしのじいさんはわしらの部族を、 最近ドワーフどもが死んだという、 抗道の奥深くへ引き連れていったんだ。 そこは火の精霊が通っていった後で、  暖かく、 快適だった。 わしらは繁栄した。 だが、 冷血な冒険者やドワーフの勇者がたびたび訪れては、 わしらを襲い、 洞窟の平和を乱した。 わしは仲間の手当てをするうちに、 刀傷をふさぐすべを身につけ、 皮膚の下を通る筋や骨の場所を覚えた。 近頃では、 薬を調合も傷をふさぐのもお手の物さ。
+str_npc16_backstory_b|バルホス族は我が故郷に住む獰猛な一族だったが、 あの西方の者たちによって、 ほとんどが虐殺された。 我らは傷ついた獣のように追い回され、 やつらの剣のえじきにされたのだ。 やつらの剣によって流されたあの血と同じ血は、 今、 俺の体の中に流れている。 俺の体の中に流れている限り、 一族が途絶える事はない。
 str_npc17_backstory_b|知ってるだろう、木からはたくさんのものを作れるんだ。 それがわしの仕事。 わしは木からたくさんのものを作っているんだよ。 たまに低木も使うけどね。 だけど、わしは木のほうが好きだ。
-; str_npc1_backstory_c|However, I fear we are hopelessly outnumbered here in Ithilien and we won't last long without reinforcements or bolder action by our Steward. I might as well help where my actions would account for more, if my Captain Faramir gives me leave.
+str_npc1_backstory_c|しかしながら、 これほどの多勢に無勢では、 援軍が来るか、 執政閣下が英断を下されぬ限り、 イシリアンも長くは持たないだろう。 ファラミア隊長が許してくれれば、 私は状況を打破するための別の方法を模索したいのだが。
 str_npc2_backstory_c|しかしながら、 我が任務の重要性は理解するものの、 私は常日頃、 実際の戦闘を見てみたいと切望しておりまして、 それと・・・ エルフやしゃべる木やオリファントなどというものも見てみたい、 と考えるわけであります！ 指揮官殿、 あなたは旅のご経験が豊富のようだ、 これは断じて、 あなたの格好を見てそう言っているのではありませんよ。 私は物覚えが非常に早く、 さらに料理の上手でして・・・ まあ、部隊で出される食事としては、ですが。 あなたは志願兵を募っていらっしゃると見受けますが、 いかがですか？
 str_npc3_backstory_c|そういうわけで、 私はここで苦々しさをかみしめつつ、 恥をさらしている。 今頃、 我がエオレドは遠くかなたにおるだろう。 荒野を徘徊する野人やらオークやらをさばきつつ 彼らに追いつく事など、 私には無理だ。 おぬし、 優秀なロヒアリム騎兵がひとり必要だったりしないかね？
 str_npc4_backstory_c|ご存知かも知れないが、 たとえどれほどの武芸をもっていようとも、 女がエオレドに加わる事は許されていない。 しかしながら、 暖炉のそばで戦士たちの帰りをじっと待つというのは、 私には到底受け入れられぬ。 この戦争で建てられるべき功績がひとつ残らず消えるまで、 私は何もせずにただ時間を過ごすつもりはない。 そこで戦士殿、 あなたのお力をお借りしたい。
-; str_npc5_backstory_c|However, if the enemies of Lothlórien are on the run, I might consider joining you for a while, {playername}. I sense our fates in this War are interwoven.
+str_npc5_backstory_c|しかしながら、 ロスロリエンの当面の敵が姿を隠している現状をかんがみると、 しばらく君と行動をともにする事も悪くない考えかも知れないな、 {playername}。 この戦争において、 君と私の運命は交わっているように感じる。
 str_npc6_backstory_c|みたところ、 あなたは戦いに熱心みたいだし、 こんな事は、 あなたには理解できないかもしれないわね。 でも、 あなたは遠く離れた、 いろいろな場所を旅をして来たのよね ― ここ以外の大森林に行った事はある？ わたしをそこへ連れて行けないかしら？
 str_npc7_backstory_c|この戦いは退屈で、 わしのような気質と血筋を持つ ドワーフの戦士には合わん。 わしの聞いたところだと、 あんたは方々に旅をしては 派手に暴れておるようで、 ドワーフには親切にしてるそうだな？ 一緒に戦ってくれるドワーフがいると、 生き残る可能性がぐーんと上がるぞ。
 str_npc8_backstory_c|他所では戦いがとても激しく、 そのおかげで今のところ、 私たちの土地は助かっているのだと聞きました。 あなたの防具についた無数の傷から察するに、 あなたは何度も死地を切り抜けてきたのでしょうね。 私の力は大した事がないけれど、 あなたの部隊に参加すれば、 多くの人々のお役に立てるのかも知れません。
 str_npc9_backstory_c|わしは戦闘ウルク＝ハイの、狂戦士じゃ！ 人間を殺すすべは、 熟知しておる。 白の手に仕えておったんじゃが、 白の手がわしを見つけたら、 すぐにわしを火の穴へ放り込むじゃろうな。^^おぬしにその気さえあれば、 わしはおぬしの下で南の人間どもを殺そう。 アイゼンガルドのスナガどもには歯ぎしりさせとくとしようか。
-str_npc10_backstory_c|あっしをお供に加えていただけませんか。
+str_npc10_backstory_c|あんた、俺のご主人さまにならないか。
 str_npc11_backstory_c|まあいいさ！ どうせおいらの鼻なんて大して役に立たないよ。 目で探したほうが早いんじゃないかな。 そうさ！ だいたい、 おいらの鼻は何もないときの匂いってのを知らないんだ。 もっと言うと、 おいらの鼻は何を探していいのかわかってないんだ。 ちぇ！ おいらはただ、 手当たり次第に斬りつけてまわって、 クンクン嗅ぎ回りたいだけなのにさ。
-; str_npc12_backstory_c|Eh, if I get a chance, I'll slip off and set up somewhere on my own with a few trusty lads, somewhere there's good loot nice and handy, and no big bosses. I'd like to try somewhere where there's none of 'em, like old times.
-; str_npc13_backstory_c|I followed my kin north, and heeded his dark call, to fulfill the duty I have to my people. But in them I see his darkness dwell and I seek to do my part in this war elsewhere, until the sands of my time no longer fall. Even now I feel them begin to trickle where before there was a cascade.
-; str_npc14_backstory_c|But there comes yet the darkest tide, a black tide of shadow, which will rise over these lands such as which no mortal eyes will have seen. This is the tide I seek to master, but I am without a crew hardy enough to ride this storm.
-; str_npc15_backstory_c|After many winters I came up out of the tunnels, and looked about in the Dark Forests for a good place to live and practice my arts. I was doing fine, until some big ugly bastards with white tattoos – eugh! White! Like an elf face! – big bastards, they were. They fired my little place in the Forest, and I had to hide in the caves again... In here... Say, have you anything to eat? Maybe a nice horse?
-; str_npc16_backstory_c|That was many lives of men ago, a different time, but the time for grief and tales are over. The time for my people's retribution has come and I will carve my people's vengeance on the face of these western lands. By my hand, their homes will waste and wither until their clan is no more!
+str_npc12_backstory_c|ああ、 機会さえあれば、 信頼できる下っ端を何匹か連れてここを抜け出し、 好きなときに略奪のできる、 親分どものいない場所へ根城を移したいもんだ。 昔のように、 ナズグールどものいない住処が恋しいわい。
+str_npc13_backstory_c|俺は同胞への忠義から、 一族と共に北へと旅をし、 冥王の呼びかけに耳を傾けた。 だが、 そこで俺は我が同胞の心が、 すでに冥王によって支配されている事に気がついた。 俺は冥王の支配から逃れるために、 この戦争は、 一族とは別の形で戦う事にした。 だが、 以前は滝のようだった闇の意志が、 いまだに俺の中にしたたり落ちているを感じる。
+str_npc14_backstory_c|だが、 まだ俺の見た事のない大波があった。 黒い、 闇の大波だ。 人間がいまだ目にした事のない、 大地を覆ってしまう大波だ。 俺はこのような波を手なずける機会が来るのを待っていたが、 俺ひとりの手には少々余る。
+str_npc15_backstory_c|多くの冬を越したあと、 わしは身に付けた技術を磨く場所と住みかを探すため、 洞窟を出て暗い森の中をさまよった。 うまくいってたんだが、 あの白い入れ墨の醜い連中が ― くそっ！ あの青白いのが！ エルフみたいな顔の！ ― あのでかぶつどもが邪魔したんだ。 やつらは森の中のわしの小屋に火をつけたんで、 わしはまた洞窟に逃げ込むはめになったというわけさ・・・ この通り・・・ ところで、 何か食べ物もってないか？ 馬は？
+str_npc16_backstory_c|これは何世代も前の話だ。 遠い昔話だ。 だが、 悲痛と昔話はもう終わりだ。 我が一族の報復の時が来たのだ。 俺は西の民の顔に、 我が一族の復讐の証を刻み込んでやる。 この手でやつらの故郷を廃墟に変え、 やつらの一族を根絶やしにしてくれる！
 str_npc17_backstory_c|もし森の中へ行くつもりなら、 わしが一緒についていって、 木の話をしようか？ 森の中にはとても良い木が、 たくさんあるんだよ。
-; str_npc1_backstory_later|I have been leading scouting parties to the south, as far as Emyn Arnen. There is much Enemy activity and many an orc fell to our ambush. Alas, that's only so many orc heads rolling down the gullies, we saw a myriad of foul creatures on the march. I fear for my Ithilien and the fate of Gondor.
+str_npc1_backstory_later|私は偵察隊を率いて、 遠く南のエミン・アルネンまで行って来た。 あのあたりは敵の活動がより活発で、 我々はいくつものオークどもの群れに奇襲をかけ、 これを壊滅させた。 しかし、 オークどもの首をいくら渓谷にころがそうとも、 無数のオークが湧いてくるのだ。 私はイシリアンとゴンドールの行く末が心配でならない。
 str_npc2_backstory_later|このところは、 ここを訪れる人の数も少なくなっております。 あまり良い兆しとは言えません。
 str_npc3_backstory_later|あいかわらず、 我がエオレドからの知らせはない。 私はオークどもを踏み潰したくてうずうずする。
 str_npc4_backstory_later|日に日に兵士の怪我人が増えている。 私は出来る限りの看病をしている。 だが、 自分が檻に閉じ込められているという思いはぬぐえない。
@@ -408,13 +408,13 @@ str_npc6_backstory_later|わたしはこの二日間、 大蜘蛛の巣を観察
 str_npc7_backstory_later|頑丈な城壁をつくるのは、 すべてのドワーフにとって、 やりがいを感じる仕事だ。 だが、わしは斧も振り回したいんだ。 今すぐ。 わしを一緒に連れて行ってくれないか。
 str_npc8_backstory_later|また陛下のお呼び出しを受けたのですが、 今度は嘔吐なんです。 陛下のこのような健康状態と、 敵に対する陛下の執着心とは関連性はないと信じたいのですが。 あなたは便秘や嘔吐に悩まされているような事はありませんか？
 str_npc9_backstory_later|何をしとるように見える？ グルムはここに座って、 こそこそしたスナガどもに、 暗がりで刺されるのを待っとるんじゃ。 わしを一緒に連れて行ってくれ ― わしは精一杯殺すぞ。
-str_npc10_backstory_later|どうです？あっしはお役に立ちますぜ。
+str_npc10_backstory_later|どうだい？俺はお役に立つぞ。
 str_npc11_backstory_later|ああ！あんただったのか！ においでわかったぞ、 またあんたが来ると思ってたんだ。 親分どもにもそう言ってくれよ、な？ あいつら、 おいらが追跡兵失格になったからって、 おいらをばかにしてんのさ。 あいつら間違ってる。 あいつらのきんたまに、 矢を突き刺してやる。 誰が悪いのかって？ 悪いのはおいらじゃないぞ！
-; str_npc12_backstory_later|I have my orders. Any trespasser found by my lads up here are to be stripped; teeth, nails, hair and all. But I've got my watchers. We know there are funny things going on: with the big bosses going off to war, and all that. Big things going on away west, they say. Sitting here doin' nothing is more than my belly's worth.
-; str_npc13_backstory_later|My role here goes well for the dark cause, and once more the Northerners fear the south. I see great victories ahead, and rivers of blood left in our wake. But with each victory I see my kin corrupted, their hearts twisted to his evil will. The sight of it leads me to despair.
-; str_npc14_backstory_later|You have returned stranger, it is perhaps an omen. I have been reading the waters, and I have seen them darken. The sea changes the eyes of a man, and teaches him to use his eyes to listen to her language.
-; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions.   Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
-; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balcoth before us.
+str_npc12_backstory_later|俺には任務がある。 俺の子分どもに見つかった侵入者は、 歯を抜かれ、 爪をはがされ、 髪を抜かれるといった具合だ。 だが、 俺にもまた、 監視の目が光っている。 外で普通じゃない事が起こっているのはわかる。 俺たちの親分どもがごっそり戦争に出かけたり、 まあ普通じゃないわいな。 遠く西のほうで、 何かが起こってるっていう話だ。 こんなところでぶらぶらしてるのは、 俺の性に合わん。
+str_npc13_backstory_later|闇の軍勢における俺の役まわりは、 うまくいっていると言える。 北の連中は、 再び南を怖れ始めている。 我が軍の勝利は疑いようがなく、 我々の通った後には、 血が川となって流れるだろう。 しかし、 勝利を重ねるたび、 我が同胞が闇の深みへと落ちていくのが見える。 それには絶望する以外にない。
+str_npc14_backstory_later|よう旅の人、 また来たのかい。 これは何かの兆しなのかもな。 ずっと波の様子を見ていたんだが、 海の色が暗くなっているんだ。 海は人間の目に、 多くを語るのさ。
+str_npc15_backstory_later|多くの連中が、 わしの調合する薬を求めてやって来た。 馬狂いどもや青白い顔のエルフまで来るようになったんで、 わしは再び住みかを後にしなければならなくなった。 それで・・・ 偉大なる指導者さま、 ええっと、 わしはあんまり戦いには強くないんだが、 この治療の腕は、 必ずお役に立つと・・・
+str_npc16_backstory_later|俺の一族が、 かつての土地をどれほど切望してきたことか。 西の連中がどのような不実の歴史を 主張しているのかは知らないが、 我が軍勢がこの土地を訪れた今、 やつらの歴史は、 これより暗黒の時代となるだろう。 大地を揺るがすひづめと、 剣、 それに弓。 かつてのバルホス族がそうであったように、 俺たちはあの連中に、破滅をもたらしてやるのだ。
 str_npc17_backstory_later|こないだ、とても大きいアカマツの木を見つけたんだ。 アカマツの木は長寿なんだよ。 年を重ねた木には、敬意を払わなくちゃいけない。 木にこれっぽっちも敬意を払わない連中はいるけどね。 あんたはそうじゃないだろう？
 str_npc1_backstory_response_1|もし君が一緒に来れるなら、追跡術を持つ経験豊富な戦士は大歓迎だ。
 str_npc2_backstory_response_1|{君/あなた}の言う通り{だ/よ}。私は志願兵を探している{/の}。
@@ -450,22 +450,22 @@ str_npc14_backstory_response_2|もうじゅうぶんだ。
 str_npc15_backstory_response_2|フン！私が探しているのは戦士だ、ほら吹きに用はない。
 str_npc16_backstory_response_2|もうたくさんだ。
 str_npc17_backstory_response_2|せっかくだが、我々は植物の調査をしに来たのではなくて、これから戦争に向うところなんだ。
-; str_npc1_signup|I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage.
+str_npc1_signup|さらなる勇気を持って敵に当たり、 敵の勢いを止める事のできる者が他にもいるという事を、 ファラミア隊長は理解してくれるだろう。
 str_npc2_signup|ああ、今日はついている！ 私は喜んであなたの部隊に志願したい。
-; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
-; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
-; str_npc5_signup|I see. I admit I have heard of you and your exploits.
+str_npc3_signup|信じてくれ指揮官殿、 わしに本当に必要な酒は、 勝利の美酒だけだ。 わしを戦場に連れて行ってくれれば、 ロヒアリムの槍の破壊力を、 存分にご覧に入れよう！
+str_npc4_signup|ろこんであなたの指揮下に入らせていただきましょう、 隊長。
+str_npc5_signup|なるほど。 君の名前や、 偉業の数々は、 私もよくうかがっている。
 str_npc6_signup|わたしは暴力や戦争で使う武器は 嫌いだけれど、 いざとなったら自分の身は自分で守れるわ。
 str_npc7_signup|わしは斧に自信がある。 振り回すのも投げるのも得意だ。 それに、商人との交渉をわしにまかせてくれれば、 経費も浮かせることができるぞ。 あと、戦場で倒れた敵兵から 金目の物を見つけるのも得意だ。
 str_npc8_signup|本当ですか？ それじゃ、もうあまり薬草や調合法を探して回らなくて 済むのかしら。
 str_npc9_signup|おぬしの部隊におるスナガを全部足しても、 一匹の戦闘ウルク＝ハイのほうが価値があるぞ。 戦闘ウルク＝ハイは戦場から決して逃げない。
-str_npc10_signup|ほんとうで？こりゃありがたい、精一杯ご奉公させていただきます。
+str_npc10_signup|ほんと？ようし、後悔させないぜ。
 str_npc11_signup|あんたの悪さにつきあえだって？ つきあうよ！ 西のほうは凄いんだってな、 略奪はやり放題とかさ、 味方の連中がたくさん殺されたりさ。 あんたについていって、 あんたの悪事を楽しむよ。
-; str_npc12_signup|Follow your rabble, 'ay? I may 'ave struck a bit of luck at last. I give a good rumble, I reckon, and my whip is vigilant. It's tasted its fair share of my lads' orc hide.
+str_npc12_signup|あんたの一味に加われってのかい、え？ どうやら俺にも運が向いてきたようだ。 俺は腕っぷしには自信がある。 そして俺のムチには隙がない。 下っ端オークどもをしつけるのはお手の物だ。
 ; str_npc13_signup|I may follow you if you will have me. My legs make good heading of a horse between them and my hands know well the feel of blades of the crescent moon. My fingers can make fall arrows like the plight of stars upon our enemy, be it on horse or feet, though how I fight will be at your command.
-; str_npc14_signup|Perhaps, know though that I am no thief or brigand. I will not steal, nor take that which other lives may find needed.
-; str_npc15_signup|Heh-heh. You are right! Yeesss! You are wise, Great Captain.
-; str_npc16_signup|I wait for orders, with every second passing darkening my heart. I can no longer stand to wait for the plans of far away lords and captains so unseen their existence is believed more in legend than in flesh. Lords whose whispered orders are brought forth and shouted by lesser men. I wait, and with me, my people's vengeance waits also.
+str_npc14_signup|それは良いかもな。 ただ、俺は盗賊や山賊とは違うぞ。 俺は盗みはやらないし、 生きている者から強奪したりもしない。
+str_npc15_signup|へへへ。おっしゃる通り！ やった！ あんたは賢いよ、 偉大なる隊長どの。
+str_npc16_signup|俺は命令が下されるのを、 暗い気持ちでいまかと待ち続けている。 俺はもうこれ以上、 姿を見た者もいない、 伝説だけが一人歩きしているような指揮官どもの作戦など、 あてにしてはいない。 かつての我々の指揮官たちは前線に送られ、 身分の低い者たちにこき使われているという。 だがそれでも、 我が民の復讐のため、 俺は待ち続けなければならない。
 str_npc17_signup|そうこなくっちゃ！ わしはたくさんの木を知っている。 あんたもすぐに、たくさんの木を覚えるさ。 わしみたいにね。 なぜって、 わしがたくさんの木を知っているからさ。
 str_npc1_signup_2|隊長に話をして荷物をまとめてこよう。 ちょっと待っててくれ。
 str_npc2_signup_2|私の上官に話をしてこなくてはなりませんが、 それが済めば出発できます ―― 栄誉ある戦いと、 あらゆる不思議の生物が待っている！
@@ -527,7 +527,7 @@ str_npc6_payment|一緒に行きたいけれど、私には任務があるの。
 str_npc7_payment|ついていきたいのは山々だが、わしの尊敬すべき父、ドワーリンがこの事を理解してくれるかどうかは疑問だ。 [costs {reg14} Influence with {s14}]
 str_npc8_payment|陛下のおそばを離れるわけにはいきません。 陛下の健康状態は私が把握しているのです。 [{s14}での影響力を{reg14}消費します]
 str_npc9_payment|あんたと一緒に行きたいが、 門にいる衛兵どもは許さんだろう。^一度試してみたが、だめじゃった。 [{s14}での影響力を{reg14}消費します]
-str_npc10_payment|これでも一応任務がありまして、なかなか今すぐ出発、 というわけにもいきません。 [{s14}での影響力を{reg14}消費します]
+str_npc10_payment|これでも一応任務があって、なかなか今すぐ出発、 というわけにもいかないんだ。 [{s14}での影響力を{reg14}消費します]
 str_npc11_payment|あんた、おいらの親分に話をつけてくれないかな。 親分が寝るのを待ってのどを掻き切ってもいいんだけど、 親分は自分より偉い奴にはまるで頭が上がらないんだ。 あんたのほうが偉いだろ！ [{s14}での影響力を{reg14}消費します]
 str_npc12_payment|ほっほう！ ううむ！ 子分どもには黙っているよう言っておけるが、 上の連中の口はどうにもならん。 [{s14}での影響力を{reg14}消費します]
 str_npc13_payment|ここにいる族長や酋長たちは、 俺が傍を離れるのを許さないだろう。 彼らを説得できるか？ [{s14}での影響力を{reg14}消費します]
@@ -593,9 +593,9 @@ str_npc4_personalityclash_speech|私が{s11}の事を嫌いだという話は、
 str_npc5_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc6_personalityclash_speech|{playername}、 ついさっき、 {s11}が若鳥の巣を堂々と踏み潰して 歩いていくのを見ました。 彼の粗雑さが、 罪のない若い生き物の命を奪ったのです。
 str_npc7_personalityclash_speech|{s11}卿は強いが、 あのきらきら光る髪は、 敵のめくらましになっているんじゃないのか？ それか、 彼の名声と偉そうな物腰に、 敵がびっくりして腰を抜かしているのかも知れんぞ？
-str_npc8_personalityclash_speech|隊長、 私は{s11}に対する苦情を申し立てたいと思います。 彼はことあるごとに 私に「緑の妖精」だとかいうものを調合するよう言って、 嫌がらせをするのです。
+str_npc8_personalityclash_speech|隊長、 私は{s11}に対する苦情を申し立てたいと思います。 彼はことあるごとに 私に'緑の妖精'だとかいうものを調合するよう言って、 嫌がらせをするのです。
 str_npc9_personalityclash_speech|グルムは、{s11}を殺したい。 この話は、もう言ったか？
-str_npc10_personalityclash_speech|これはもう言いましたかねえ？ あっしはどうも{s11}が苦手でして。
+str_npc10_personalityclash_speech|これはもう言ったかな？ 俺はどうも{s11}が苦手なんだ。
 str_npc11_personalityclash_speech|俺は{s11}の事が嫌いだ。 これもう言ったか？
 str_npc12_personalityclash_speech|俺は{s11}の事が嫌いだ。 これもう言ったか？
 str_npc13_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしたな？
@@ -680,7 +680,7 @@ str_npc6_personalitymatch_speech_b|彼は一体、いくつなのかしら。 �
 str_npc7_personalitymatch_speech_b|{s11}の故郷であるデールの民は、 ドワーフほどではないが、 戦いにおいて信頼できる同盟国だ。 実績もあるしな。 友人とするにしろ、 コンパニオンにするにしろ、 人間にしては見所のある民族と言える。
 str_npc8_personalitymatch_speech_b|デールの民は、はなれ山の屈強なドワーフ族を、 種族や考え方の違いを超えて、 大切な友人、 そして重要な守護者として考えています。
 str_npc9_personalitymatch_speech_b|グルムは{s11}の事が好きだ。
-str_npc10_personalitymatch_speech_b|{s11}ってのは大したタマですねえ。
+str_npc10_personalitymatch_speech_b|{s11}ってのは大したタマだなあ。
 str_npc11_personalitymatch_speech_b|{s11}はすごいな。
 str_npc12_personalitymatch_speech_b|{s11}は大したやつだ。
 str_npc13_personalitymatch_speech_b|{s11}はなかなかいい。
@@ -697,7 +697,7 @@ str_npc6_retirement_speech|戦いに明け暮れる生活にはもう疲れた�
 str_npc7_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
 str_npc8_retirement_speech|戦いに明け暮れる生活に疲れてしまいました。 もう引退しようと思います。
 str_npc9_retirement_speech|グルムは戦いに疲れた。 引退する。
-str_npc10_retirement_speech|どうも戦いに明け暮れる生活に疲れちまいまして。 引退させていただきます。
+str_npc10_retirement_speech|どうも戦いに明け暮れる生活に疲れちまった。 引退させていただきます。
 str_npc11_retirement_speech|戦いに明け暮れる生活に疲れた。 もう引退する。
 str_npc12_retirement_speech|戦いに明け暮れる生活に疲れた。 もう引退する。
 str_npc13_retirement_speech|戦いに明け暮れる生活に疲れてしまった。 もう引退しようと思う。
@@ -714,7 +714,7 @@ str_npc6_rehire_speech|会えて嬉しいわ、 {playername}。 また一緒に�
 str_npc7_rehire_speech|わしの斧はばっちり研いであるぞ、 {playername}。 また一緒に連れて行ってくれるかい？
 str_npc8_rehire_speech|あなたに会えてうれしいです。 また一緒に連れて行っていただけますか？
 str_npc9_rehire_speech|グルムはあんたのために、 たくさん殺す準備が出来ている。 もう出発するか？
-str_npc10_rehire_speech|またあっしをお供にしていただけませんか？
+str_npc10_rehire_speech|また俺のご主人さまにならないか？
 str_npc11_rehire_speech|またおいらを連れて行ってくれないか？
 str_npc12_rehire_speech|またあんたに仕えようか？
 str_npc13_rehire_speech|またあんたに仕えようか？
@@ -731,7 +731,7 @@ str_npc6_home_intro|ちょっといいかしら、{playername}。 この辺り�
 str_npc7_home_intro|おい、隊長！これはカザド＝ドゥムの東門へと続く、 むかしの道に違いないぞ。 モリアと言ったほうが、 あんたには通りがいいかな。 あの遠くに輝くのはケレド＝ザラムの湖、 そして雲の合間に見えるのが、 霧ふり山脈のこの一帯を飾り立てる事で有名な、 みっつの頂だ。
 str_npc8_home_intro|まあ、なんて不思議な場所！ ここに住む屈強な森人たちが、 動物や植物と調和を保って生活を営む話を 聞いたことがあります。 私の聞いたところによると、 ビヨルン一党と呼ばれる人達だそうです。
 str_npc9_home_intro|おのれ！あそこに見えるのは、 角笛城じゃ、 ご主人さま。
-str_npc10_home_intro|おっと、あれを見てください！
+str_npc10_home_intro|おっと、あれを見なよ！
 str_npc11_home_intro|おい、あれ見ろよ！
 str_npc12_home_intro|おい、あれ見ろ！
 str_npc13_home_intro|おい、あれを見ろ！
@@ -748,7 +748,7 @@ str_npc6_home_description|私はこんなに遠くまで来たのは初めてだ
 str_npc7_home_description|この荒廃ぶりと、 たくさんのオークの足跡を見るかぎり、 勇敢なるバーリンとその探検隊の運命には、 悲観的にならざるを得ない。 どうやらモリアは闇の手に落ちてしまったようだ。 わしらも気をつけて足を踏み入れなければならんな。
 str_npc8_home_description|まれに、私の知る限り、 最高においしいはちみつを売る旅の商人が、 デールの市場を訪れることがあるんです。 面白いことに、 彼はそのはちみつを'熊がつくったはちみつなんだ'と言って笑うんです。
 str_npc9_home_description|城壁は高く、わしの槌にもびくともせん。 もしエドラスの豚小屋から人間どもを追い立てたら、 奴らはきっとここへ逃げ込んで、 壁の向こうにこもるじゃろう。
-str_npc10_home_description|あの街をご存知で？
+str_npc10_home_description|あの街を知っているかい？
 str_npc11_home_description|あの街を知っているかい？
 str_npc12_home_description|あの街、知ってるか？
 str_npc13_home_description|あの街を知っているか？
@@ -765,7 +765,7 @@ str_npc6_home_description_2|城壁の向こう側にうごめく、 闇の軍勢
 str_npc7_home_description_2|もし敵を圧倒するような大軍を率いる事ができたら、 ぜひ抗道に潜り込んで、 お宝の山をごっそり頂こう。
 str_npc8_home_description_2|きれいな花々の香りが漂い、 蜜を収穫するみつばち達が見えます。 私はちょっと失礼して、 部隊で使う薬草をいくらか採ってこようと思います。 すぐに戻ります。
 str_npc9_home_description_2|ウルク＝ハイの大群を率いてるわけでもないのに、 こんなところを歩き回って、 何の意味があるんじゃ。 城壁にいる斥候に、 あいさつでもするのか。
-str_npc10_home_description_2|あれがミナス・モルグルです。 あそこでナズグールの連中が、 一日中飲んだくれてるんです。 ハハハ！
+str_npc10_home_description_2|あれがミナス・モルグルだ。 あそこでナズグールの連中が、 一日中飲んだくれてるんだとさ。 ハハハ！
 str_npc11_home_description_2|オルサンクの塔って、でっかい・・・ なんかに似てないか？
 str_npc12_home_description_2|オルサンクの塔、あれは・・・ なんだっけな。
 str_npc13_home_description_2|あれはミナス・モルグルだな。 ナズグールの連中が、 あそこで一日中飲んだくれてるらしい。 フフフ！
@@ -799,7 +799,7 @@ str_npc6_honorific|隊長
 str_npc7_honorific|隊長
 str_npc8_honorific|隊長
 str_npc9_honorific|ご主人さま
-str_npc10_honorific|親分
+str_npc10_honorific|ご主人さま
 str_npc11_honorific|親分
 str_npc12_honorific|親分
 str_npc13_honorific|隊長
@@ -1169,7 +1169,7 @@ str_faction_strength_strong|強い
 str_faction_strength_quite_strong|強大
 str_faction_strength_very_strong|非常に強大
 str_faction_strength_unmatched|無敵
-; str_faction_strength_last|INVALID
+str_faction_strength_last|無効な値
 str_theater_se|ゴンドール
 str_theater_sw|ローハン
 str_theater_c|ロヴァニオン南部
@@ -1199,18 +1199,18 @@ str_party_greet_friend_harad|歓迎する、ハラドリムの友よ！
 str_party_greet_enemy_harad|おまえたちの肉体はひとつ残らずすり潰して、 砂漠の砂にしてやろう！
 str_party_greet_friend_rhun|ごきげんよう、 東夷の部族とドルイニオンの友人！
 str_party_greet_enemy_rhun|ドワーフも人間も、 獰猛さで知られる我々の敵ではない！
-; str_party_greet_friend_khand|Jus jívati jyók, friend of the Variags! Your battle scars honour you.
-; str_party_greet_enemy_khand|Put on the masks of warriors, for today you shall meet your doom!
-; str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad, friend of the Corsairs!
+str_party_greet_friend_khand|ユス イファティ イオク、 ヴァリアグの友人！ いくさ傷は戦士の栄誉だ。
+str_party_greet_enemy_khand|戦士のマスクをつけろ、 今日がおまえたちの命日だ！
+str_party_greet_friend_umbar|ニ＝ヨジ ジアビス キヤド、 海賊の友人！
 str_party_greet_enemy_umbar|白の手ばんざい！
 str_party_greet_friend_moria|白の手ばんざい！
 str_party_greet_enemy_moria|おまえののど笛は、 モリアのオークがかき切ってやろう！
 str_party_greet_friend_guldur|御目に勝利を！
-; str_party_greet_enemy_guldur|The Elves and their friends shall fall under our blades!
-str_party_greet_friend_gundabad|アングマールの力を思い知れ！
-; str_party_greet_enemy_gundabad|We shall descend on you and feast on your entrails!
+str_party_greet_enemy_guldur|エルフとその仲間は、 皆殺しだ！
+str_party_greet_friend_gundabad|アングマールを称えよ！
+str_party_greet_enemy_gundabad|おまえたちを襲って、はらわたを食う！
 str_party_greet_friend_dunland|やあ、馬乗りどもの敵！
-; str_party_greet_enemy_dunland|Your homes will burn and your families shall be cut down!
+str_party_greet_enemy_dunland|おまえたちの家族を皆殺しにし、 おまえたちの故郷を廃墟に変えてくれるわ！
 str_party_greet_friend_beorn|やあ、ビヨルンの友人！
 str_party_greet_enemy_beorn|我ら熊人の怒りをたっぷり味わえ！
 str_subfaction_gondor_name_begin|ゴンドール
@@ -1240,25 +1240,25 @@ str_rohan_rumor_15|馬を駆りつつ一匹のオークを矢で射抜くのは�
 str_rohan_rumor_16|ゴンドールは弓の腕を磨く。 我々は馬上弓の鍛錬を怠らない。 褐色人は、どちらにも関心がない。
 str_rohan_rumor_17|サルマンのオークどもには、 大勢の優秀な弓兵がいる。 一方で、そうじゃないオークもたくさんいる。 優秀な騎兵指揮官は、 それらを瞬時に見分けなければならない。
 str_rohan_rumor_18|ここでは我々は皆、友人だ。 また、そうでなくてはならない。 我々が仲間同士で争えば、 モルドールが笑うだけだ。
-; str_rohan_rumor_19|Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world.
+str_rohan_rumor_19|手間をかけて馬や作物を育て、 住む家や道具をつくり、 ミナス・ティリスの呼びかけには駆けつけて、 彼らと共に戦う。 これがここでの我々の人生なんだよ。
 str_gondor_rumor_begin|敵は目と鼻の先まで迫っているというのに、 ゴンドールには王がいない。 東の闇は大きくなるばかりだ。 これは良くない。
-; str_gondor_rumor_2|In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?
+str_gondor_rumor_2|我々ゴンドールは、 自分たちに必要なものはすべて自分たちで作り、 育ててきた。 だが、 この生活を続けていく事は、 できるのだろうか？
 str_gondor_rumor_3|モルドールは、 乾ききった不毛の地だ。 あそこに住む生き物は、 一体何を食べているんだろう？ まさか共食いじゃないよね？ いやでも、まさか・・・
-; str_gondor_rumor_4|We toil our lands, as we have done for generations. Our past is glorious and brave, but our future looks uncertain.
-; str_gondor_rumor_5|The Shadow's resources for war seem limitless, but they are borne on the backs of a vast pool of slave labour.
-; str_gondor_rumor_6|We know of the elves in the north, but nowadays noone gets to see them anymore.
+str_gondor_rumor_4|我々は何代にも渡って、 土地を耕してきた。 我々の歴史は勇ましくて輝かしいが、 この先どうなるかは見通せない。
+str_gondor_rumor_5|闇の勢力の体力は無限のように思えるが、 あれは膨大な数の奴隷の 労働力によって支えられているんだ。
+str_gondor_rumor_6|北のエルフたちの事は知っているが、 最近はもう誰も会わなくなったね。
 ; str_gondor_rumor_7|I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens.
-; str_gondor_rumor_8|Why does Umbar keep invading us? Their Corsairs would have profited far more from trading with us. What plunder could match the riches they'd have hauled away selling old Numenorian artifacts to Gondorian nobles?
-; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
-; str_gondor_rumor_10|Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea.
-; str_gondor_rumor_11|Dol Guldur? Never heard of it.
-; str_gondor_rumor_12|Moria? The dwarves mine there, don't they?
-; str_gondor_rumor_13|Don't tell anyone I said this, but I think Prince Imrahil should perhaps become king. Lord Denethor is a noble man, but Gondor has faded much during his reign. And not only since his older son left.
-; str_gondor_rumor_14|People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes.
-; str_gondor_rumor_15|The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm.
-; str_gondor_rumor_16|My friend's cousin is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me.
-; str_gondor_rumor_17|There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock.
-; str_gondor_rumor_18|We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt.
+str_gondor_rumor_8|なぜウンバールの連中は、 しつこく侵略してくるんだ？ 我々とは交易をしたほうが、 はるかに儲かるはずだ。 苦労して略奪してまわるより、 ゴンドールの貴族たちに 古代のヌーメノールの遺物を売りつけるほうが よっぽど楽だろう？
+str_gondor_rumor_9|我々は確かに戦争をしている。 だがそれは、 我々すべてを滅ぼそうとする敵から 自分たちの身を守るためであって、 輝く剣の切れ味がどうとか、 矢の威力だとか、 戦士の栄誉などというものは、 どうでもいいんだ。 大切なのは、 我々が守っているものなんだよ。
+str_gondor_rumor_10|エルフの王の、 ギル＝ガラド。 吟遊詩人は、 悲しく歌う: 海と山々に囲まれた、自由で美しい国の、最後の王よ。
+str_gondor_rumor_11|ドル・グルドゥア？ 聞いた事がないな。
+str_gondor_rumor_12|モリア？　確か、　ドワーフの鉱山があるところだよね？
+str_gondor_rumor_13|ここだけの話なんだけど、 私は、 イムラヒル大公殿下が 王位を継承されるべきだと思うんだ。 執政デネソールは高貴な人物だけれど、 彼が指導者となってからのゴンドールは、 衰退していくばかりだ。
+str_gondor_rumor_14|うわさによると、 再び九人組がミナス・モルグルを発ったらしい。 あのような古代の化け物を相手に戦ってくれる、 ボロミアのような勇敢な指揮官が 我々の軍にもっといたら良かったのに。
+str_gondor_rumor_15|我々は南のやつらに、 ハロンドールから追い出されたんだ。 やつらはたびたび略奪を働く。 できればレベンニンの緑の野を自由に歩きたいのだが、 それはもう危険だからと禁止されている。 今は兵士たちが国の中心地を守っている状況だ。
+str_gondor_rumor_16|私の友人のいとこは、 公正なるヒアルイン閣下にお仕えする射手だ。 彼らの制服は抜群にかっこいいね。
+str_gondor_rumor_17|エレヒの近くに、 奇妙な黒い岩があるんだ。 一度、 父と一緒に見に行った事がある。 うわさでは、 それは海の王の息子が眠る岩穴を、 ふさいでいるというんだ。 私の見た限り、 ただの岩だったけどね。
+str_gondor_rumor_18|我々ゴンドール人は、 うそをつかない。 ほらを吹けば、 それを実現させる。 実現させるのに失敗して死ぬこともある。
 str_dwarf_rumor_begin|ドワーフには友達がいないんじゃないか、 とよく聞かれる。 もちろんわしらにも友達はおる。 ただ、友達のことが嫌いなだけだ。
 str_dwarf_rumor_2|オーク？フン！ あれは斧の油じゃよ、 ただの油じゃ。
 str_dwarf_rumor_3|おまえのその着てるものは、何だ？ それじゃあ蜂に刺されるのも 防げないんじゃないのかね。 しかも格好悪い。
@@ -1461,22 +1461,22 @@ str_good_rumor_5|死者の沼地・・・ 手の施しようのない、穢れ�
 ; str_good_rumor_7|Greenwood it used to be called and full of elves it was. Greatest of the forests of the Northern world. But now it's Mirkwood. Crawling with all manner of evil creatures.
 ; str_good_rumor_8|The Argonath, The Pillars of the Kings, great guardians of the old northern border of Gondor.
 ; str_good_rumor_9|Amon Hen is the westernmost of the three peaks at the southern end of Nen Hithoel.
-; str_neutral_rumor_begin|Tomorrow everything could change...
-; str_neutral_rumor_2|Dead Marshes... a place defiled and diseased.
-; str_neutral_rumor_3|The land used to be much different once.
-; str_neutral_rumor_4|Stay clear of Fangorn forest.
-; str_evil_rumor_begin|Orcs fight better at night, men fight better by day.
-; str_evil_rumor_2|Fight horseman with pike, footman with arrow and archer with shield!
-; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
+str_neutral_rumor_begin|明日になれば、すべてが変わるさ・・・
+str_neutral_rumor_2|死者の沼地・・・ 手の施しようのない、穢れた土地だ。
+str_neutral_rumor_3|昔と比べると、この地もずいぶんと変わったものだ。
+str_neutral_rumor_4|ファンゴルンの森には近づくな。
+str_evil_rumor_begin|オークは夜の戦いが得意だが、 人間は日のあるうちが強い。
+str_evil_rumor_2|騎兵にはパイクで、 歩兵には弓で、 射手には盾で戦え！
+str_evil_rumor_3|大河にあるあの劣等種どものでっかい彫像も、 長くは持たないだろう。
 str_legendary_rumor_begin|言い伝えによると、 木々はファンゴルンの森に集まって話をするらしい。
 str_legendary_rumor_amonhen|言い伝えによると、 アンドゥイン河の大きな彫像群のあるあたりに、 特別な場所があるらしい。
 str_legendary_rumor_deadmarshes|噂では、死者の沼地の最深部では、 死んだ者が生き返るらしい。
 str_legendary_rumor_mirkwood|闇の森では、 オーク以外の獣が徘徊しているらしい。
 str_legendary_rumor_fangorn|ファンゴルンの森へ入ってはならない。 あそこでは普通でない事が起こるんだ。
 str_last_rumor|最近は、これといって面白い話は聞いてないな。
-; str_ent_rumor_begin|Do not be hasty now...
+str_ent_rumor_begin|まあ、そう急くな・・・
 ; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
-; str_ent_rumor_3|The Old Entish is a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.
+str_ent_rumor_3|エント語は美しい言葉なのだが、 何か意味のある事を言おうとすると、 とても長くかかる。 我々は、 長い時間をかけて語る意義があって、 かつ長い時間をかけてそれを聞く意義があるときだけ、 長い時間をかけて意味のある事を語るのだ。
 str_gondor_rank_0|ゴンドールの市民
 str_gondor_rank_1|ゴンドールの兵士
 str_gondor_rank_2|ゴンドールの曹長
@@ -1657,7 +1657,7 @@ str_beorn_rank_6|森の熊
 str_beorn_rank_7|森の大熊
 str_beorn_rank_8|森の巨人
 str_beorn_rank_9|森の英雄
-; str_tld_introduction|TLD Introduction - you should go to Edoras.
+str_tld_introduction|TLD序章 ― まずはエドラスを訪れましょう。
 str_tld_erebor_dungeon|ここは死の匂いでいっぱいだ。 注意しよう。
 str_tld_spear_hit|{いてて/痛い}！
 str_fullname_region_unknown|名もなき場所、 中つ国のどこか
@@ -1842,7 +1842,7 @@ str_rhun_gift4|馬の肉と牛乳
 str_khand_gift0|色とりどりの香辛料
 str_khand_gift1|絹の生地
 str_khand_gift2|鷹狩り用の鷹
-; str_khand_gift3|Ingots of Water Steel
+str_khand_gift3|鉄のインゴット
 str_khand_gift4|神聖な戦士のマスク
 str_umbar_gift0|カキと海塩
 str_umbar_gift1|すき櫛と釣り針
@@ -1859,7 +1859,7 @@ str_guldur_gift1|拷問用の毒のつる
 str_guldur_gift2|車輪つきの奴隷用の檻
 str_guldur_gift3|大蜘蛛の卵
 str_guldur_gift4|闇の儀式の本
-; str_gundabad_gift0|Spiky Bone Piercings
+str_gundabad_gift0|骨のきり
 str_gundabad_gift1|魔除けの戦化粧
 str_gundabad_gift2|煮沸したドワーフのラード
 str_gundabad_gift3|ミイラの偶像

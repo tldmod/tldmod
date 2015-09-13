@@ -266,8 +266,8 @@ qstr_Tonight_there_will_b|Stanotte ci sarà un nemico di {s16} in meno!
 qstr_{s14}Riders_of_Rohan|{s14}Cavalieri di Rohan! Ricordate per cosa combattete!
 qstr_{s14}More_{s19}heads|{s14}Altre {s19}teste per decorare i cancelli del Morannon!
 qstr_The_Wise_Master_shal|Il Saggio Maestro sarà contento quando gli mostrerò il corpo di {playername}!
-; qstr_{s14}Now_we_will_put|{s14}Now we will put an end to the suffering of these foul things.
-; qstr_{s14}Today_we_shall_|{s14}Today we shall battle the enemies of Imladris and all that is fair.
+qstr_{s14}Now_we_will_put|{s14}Adesso porremo fine alla sofferenza di queste cose disgustose. 
+qstr_{s14}Today_we_shall_|{14}Oggi combatteremo contro i nemici di Imlandris e tutto quello che é guisto. 
 qstr_All_who_enter_Mirkwo|Tutti quelli che entrano a Bosco Atro con cattive intenzioni non ne usciranno mai più!
 qstr_Men_of_{s16}_the_ene|Uomini di {s16}, il nemico è qui! Combattete per le vostre terre!
 qstr_Men_of_{s16}_charge!|Uomini di {s16}, caricate! Combattete per la vostra terra!
@@ -283,12 +283,12 @@ qstr_These_friend_of_elve|Questi amici degli Elfi cadranno sotto le nostre lame!
 qstr_These_Elves_will_fal|Questi Elfi cadranno sotto le nostre lame!
 qstr_Raahh!_Draw_your_wea|Raaah! Sguainate le armi, feccia di {s16}! Stanotte festeggeremo con le interiora di {s15}
 qstr_Rha!_{s14}More_{s15}|Rha! {s14}Ancora {s15} corpi da sfigurare con le nostre terribili armi!
-; qstr_Slaughter_these_puny|Slaughter these puny thieves of {s18} now! Then we burn their homes and cut down their families.
-; qstr_Death_to_the_trespas|Death to the trespassers of the lands of {s16}!
+qstr_Slaughter_these_puny|Massacrate questi penosi ladri di {s18} adesso! Poi metteremo a fuoco le loro case e uccidemo le lore famiglie. 
+qstr_Death_to_the_trespas|Morte ai trangressori sulle terre di {s16}!
 ; qstr_CHARGE!_Let_s_clear_|CHARGE! Let's clear the {s18} {s19}scum from {s17}!
 ; qstr_{s14}Now_that_{s19}s|{s14}Now that {s19}scum will taste the fury of the bear people!
 qstr_Attack!|Attacco! 
-; qstr_You_are_attacked_by_|You are attacked by a group of goblins!
+qstr_You_are_attacked_by_|Sei stato attacato da un groppo di goblins!
 qstr_Holding|Mantenere
 qstr_Following|Seguire
 qstr_Charging|Caricare
@@ -298,9 +298,9 @@ qstr_Standing_Closer|Rimanere uniti
 qstr_Spreading_Out|Dispiegare
 qstr_Standing|Attendere
 qstr_N/A|N/D
-; qstr_Free|Free
+qstr_Free|Liberi
 qstr_Any_Weapon|Qualsiasi arma
-; qstr_Blunt_Weapons|Blunt Weapons
+qstr_Blunt_Weapons|Armi spuntate 
 qstr_Infantry__{reg1}_|Fanteria ({reg1})
 qstr_Archers__{reg2}_|Arceri ({reg2})
 qstr_Cavalry__{reg3}_|Cavalleria ({reg3})
