@@ -289,7 +289,7 @@ mno_disembark_no|しない。
 menu_ship_reembark|乗船しますか？
 mno_reembark_yes|する。
 mno_reembark_no|しない。
-; menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
+menu_center_reports|拠点: {s1}^地代収入: {reg1}デナル^関税収入: {reg2}デナル^食料備蓄: {reg3}日間分
 menu_sneak_into_town_suceeded|みすぼらしい浮浪者に変装したあなたは、 衛兵の目をかいくぐって町の中へと入り込みました。
 menu_sneak_into_town_caught|潜入を試みたあなたに衛兵のひとりが気付き、 大声を上げました！ この辺りの衛兵が殺到するまえに、 門の外へ逃げなければなりません！
 mno_sneak_caught_fight|強行突破だ！

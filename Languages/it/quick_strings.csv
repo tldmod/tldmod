@@ -172,7 +172,7 @@ qstr_in_sight_of_the_dark|in vista della Torre oscura di Orthanc
 qstr_near_the_Old_Ford_wh|vicino al Vecchio Guado, dove la Vecchia Strada della Foresta attraversa il fiume Anduin
 qstr_near_a_big_ford_cros|vicino ad un grande guado che attraversa il fiume {s15}
 qstr_near_a_small_ford_cr|vicino ad un piccolo guado che attraversa il fiume {s15}
-; qstr_Battle_Advantage:_{r|Battle Advantage: {reg0}.
+qstr_Battle_Advantage:_{r|Vantaggio di Battaglia: {reg0}.
 qstr_{s9}_wants_you_to_re|{s9} desidera che tu continui a seguire il suo esercito fino ad ulteriore avviso.
 qstr_Rohan_capital_moved_|La capitale di Rohan si è spostata da Edoras a Hornburg!
 qstr__Being_Raided_|(raso al suolo)
@@ -608,9 +608,9 @@ qstr_Normal|Normale
 qstr_Defender_only|Solo per i difensori
 ; qstr_Halved|Halved
 qstr_Battles_only|Solo per le battaglie
-; qstr_Doubled|Doubled
-; qstr_Tripled|Tripled
-; qstr_Quadrupled|Quadrupled
+qstr_Doubled|Duplicato
+qstr_Tripled|Triplicato
+qstr_Quadrupled|Quadruplicato
 ; qstr_You_drank_the_Ent_Wa|You drank the Ent Water...
 ; qstr_Fangorn_search:_fail|Fangorn search: failed.
 ; qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
@@ -817,7 +817,7 @@ qstr_Say_cheese!|Sorridi!
 ; qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Treebeard_wants_you_|Barbalbero vuole che trovi e sconfiggi gli orchi che stanno disturbando Fangorn.
 ; qstr_Something_wrong_not_|Something wrong, not enought troops for scout party
-qstr_my_home_town|il luogo dove sono nato
+qstr_my_home_town|La mia città natale.
 qstr_I_am_in_perfect_heal|Sono in perfetta forma.
 ; qstr_I_am_suffering_from_|I am suffering from {s1}.
 ; qstr_I_am_suffering_from_{|I am suffering from {s1} and {s2}.
@@ -826,13 +826,13 @@ qstr_I_am_in_perfect_heal|Sono in perfetta forma.
 qstr_I_don_t_have_any_ser|Non ho nessuna ferita grave, ti ringrazio.
 qstr_Good_day_to_you.|Buona giornata a te.
 ; qstr_Ah_it_s_you_again._G|Ah, it's you again. Goodbye.
-; qstr_My_apologies_if_I_wa|My apologies if I was rude, earlier. What was your story again?
+qstr_My_apologies_if_I_wa|Mi scuso se prima sono stato rude. Ancora, qual'era la tua storia?
 ; qstr_I_was_reconsidering_|I was reconsidering our last conversation. What was your story again?
 ; qstr_Greetings_{s23}_{s24|Greetings, {s23}, {s24}.
 ; qstr_Greetings_{s23}.|Greetings, {s23}.
 ; qstr_So_you_are_{s23}._I_|So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally.
 ; qstr_I_need_volunteers_wi|I need volunteers willing to follow me on dangerous missions.
-; qstr_I_need_some_soldiers|I need some soldiers to replace my dead.
+qstr_I_need_some_soldiers|Ho bisogno di alcuni soldati per rimpiazzare i caduti.
 qstr_{playername}_s_Reser|Riserve di {playername}
 qstr_Excellent_job_{s23}!|Eccellente lavoro, {s23}! Vorrei che tutti i comandanti si dedicassero come fai tu.^
 qstr_Nicely_done_{s23}.|Ben fatto, {s23}.
@@ -854,9 +854,9 @@ qstr_Thank_you_commander.|Grazie, comandante.^
 ; qstr_{s31}{reg28?Those:Th|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
 ; qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us hold {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
 ; qstr_{s4}_^Oh_and_take_ba|{s4} ^Oh, and take back those of your soldiers, that are not our kin.
-; qstr_I_don_t_need_them_an|I don't need them anyway, so save it.
-; qstr_It_is_my_duty_to_pro|It is my duty to protect our people.
-; qstr_It_is_my_duty_to_prot|It is my duty to protect our allies.
+qstr_I_don_t_need_them_an|Non ne ho bisogno comunque, quindi tienilo.
+qstr_It_is_my_duty_to_pro|Il mio dovere è proteggere questa gente.
+qstr_It_is_my_duty_to_prot|Il mio dovere è proteggere i nostri alleati.
 qstr_I_am_{s4}_{s15}_of_{|Io sono {s4}, {s15} di {s6}
 ; qstr_I_am_{s4}_a_commande|I am {s4}, a commander of {s6}
 ; qstr_{s9}{reg5?_and_the_r|{s9}{reg5? and the ruler of {s8}.:.
@@ -887,7 +887,7 @@ qstr_It_is_my_duty_to_hel|È il mio dovere aiutare la nostra gente.
 qstr_It_is_my_duty_to_help|È il mio dovere aiutare i nostri alleati.
 ; qstr_The_people_of_{s3}_t|The people of {s3} thank you for your gift, {playername}. In exchange for your gift of {s1}, we will send the people of {s4} a gift of {s2}. I thank you once again, {playername}.
 ; qstr_I_want_to_deliver_a_|I want to deliver a gift to our allies.
-; qstr_delivering_a_gift|delivering a gift
+qstr_delivering_a_gift|consegnare un regalo
 ; qstr_I_want_to_bring_a_br|I want to bring a bribe to our allies.
 ; qstr_delivering_a_bribe|delivering a bribe
 ; qstr_{s2}_[{reg14}_Resour|{s2} [{reg14} Resource Points]
@@ -914,7 +914,7 @@ qstr__under_your_orders|, ai tuoi ordini
 ; qstr_{s9}_asked_you_to_tak|{s9} asked you to take a message to {s13} of {s15}. {s13} was believed to be at {s4} when you were given this quest.
 ; qstr_{s11}_asked_you_to_e|{s11} asked you to escort his messenger to {s14}.
 ; qstr_Lend_your_experience|Lend your experienced surgeon {s3} to {s1}.
-; qstr_No_commander_should_|No commander should have to admit this, {playername}, but I was inspecting my soldiers the other day and there are such here who don't know which end of a sword to hold. They need someone to show them the meaning of valor. You are a warrior of renown, {playername}. Will you train some troops for me? I would be grateful to you.
+qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername} , ma quando stavo ispezionando i miei soldati l'altro giorno e ci sono alcuni di loro che non sanno quale fine della spada tenere. Hanno bisogno di qualcuno che gli mostri il vero significato del valore. Sei un guerriero di fama,  {playername} . Addestrerai alcune truppe per me? Te ne sarei molto grato.
 ; qstr_No_commander_should_h|No commander should have to admit this, {playername}, but I was inspecting my soldiers the other day and executed some of them for incompetence. They need someone with steel in his back to flog some courage into them, or kill them trying. You are a warrior of renown, {playername}. Will you train some troops for me? I can make it worthwhile for you.
 ; qstr_{s9}_asked_you_to_ra|{s9} asked you to raise {reg1} {s14} and bring them to him.
 ; qstr_{s9}_asked_you_to_hu|{s9} asked you to hunt down a fugitive named {s4}. He is currently believed to be at {s3}.
@@ -923,7 +923,7 @@ qstr__under_your_orders|, ai tuoi ordini
 ; qstr_{s11}_asked_you_to_c|{s11} asked you to capture an enemy commander and then bring him back to {s11} for questioning.
 ; qstr_{s9}_asked_you_to_le|{s9} asked you to lend your companion {s3} to him for a week.
 ; qstr_{s9}_has_requested_y|{s9} has requested you to bring him {reg1} enemy prisoners.
-; qstr_We_have_reports_that|We have reports that several of our allied patrols were ambushed and defeated. Some of the men may still yet live, captured by the enemy. Yet, the morale of my troops suffers, as the captured men will surely be killed, imprisoned or worse. I want you to rescue {reg1} prisoners, and bolster the morale of our troops.
+qstr_We_have_reports_that|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni uomini potrebbero essere ancora vivi, catturati dal nemico. Il morale delle mie truppe è soffre perchè i prigionieri saranno probabilmente uccisi, imprigionati o peggio. Voglio che tu salvi {reg1} prigionieri e aiutare così il morale delle nostre truppe
 ; qstr_We_have_reports_that_|We have reports that several of our patrols were ambushed and defeated. Some of the cowards may still yet live, captured by the enemy. As much as they are expendable, it's a waste to let them die in some prison hole. I want you to rescue {reg1} prisoners, and make them fight for us again.
 ; qstr_{s9}_has_asked_you_to|{s9} has asked you to rescue {reg1} prisoners.
 ; qstr_We_have_reports_that_a|We have reports that an enemy host may be gathering in {s13}. Clearly, this is of grave concern to me, as I don't know how many troops the enemy has and whether my soldiers will be ready to meet them on the field of battle. I want you to get close enough to {s13}, and find out as much as you can.
@@ -939,58 +939,58 @@ qstr__under_your_orders|, ai tuoi ordini
 ; qstr_You_chose_well_{sir/|You chose well, {sir/madam}. My lads know how to keep their word and earn their pay.
 ; qstr_Well_done_{sir/madam|Well done, {sir/madam}. Keep the money and wine coming our way, and there's no foe in Calradia you need fear.
 ; qstr_We_are_at_your_servi|We are at your service, {sir/madam}. Point us in the direction of those who need hurting, and we'll do the rest.
-; qstr_You_will_not_be_diss|You will not be dissapointed {sir/madam}. You will not find better warriors in all Calradia.
-; qstr_What_an_amazing_feat|What an amazing feat of arms!
+qstr_You_will_not_be_diss|Non vi deluderemo {sir/madam}. Non troverete guerrieri migliori in tutta Calradia.
+qstr_What_an_amazing_feat|Che enorme quantità di armi!
 qstr_Well_done!|Ben fatto!
 qstr_Nice_legwork.|Bel lavoro di gambe.
 qstr_Heh.|Eh,
 qstr_Good_moves_but_you_m|Belle mosse, ma hai ancora del lavoro da fare.
-; qstr_More_than_half_of_th|More than half of the opponents, not bad.
+qstr_More_than_half_of_th|Più della metà degli avversari, non male.
 qstr_You_ll_need_to_try_h|Devi impegnarti di più di così.
 qstr_Well..._better_here_|Bene... meglio qui che in battaglia, è?
 qstr_town|città
 qstr_village|villaggio 
-; qstr_The_{s9}_of_{s13}_ha|The {s9} of {s13} has asked you to deal with tribal orcs in the surrounding countryside.
+qstr_The_{s9}_of_{s13}_ha|Il {s9} di {s13} ti ha chiesto di occuparti delle tribù di orchi nelle vicinanze delle campagne.
 ; qstr_{s9}_of_{s3}_asked_y|{s9} of {s3} asked you to deliver {reg5} units of {s6} to the {s10} in {s4} in {reg6} days.
 ; qstr_The_{s9}_of_{s3}_ask|The {s9} of {s3} asked you to bring him {reg5} units of food in {reg6} days.
 ; qstr_The_{s9}_of_{s3}_aske|The {s9} of {s3} asked you to bring him {reg5} units of {s6} in {reg0} days.
-; qstr_Escort_the_supply_tr|Escort the supply train to {s8}.
-; qstr_The_{s9}_of_{s4}_ask|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
-; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of goblins making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
+qstr_Escort_the_supply_tr|Scorta il treno scorte fino a {s8}.
+qstr_The_{s9}_of_{s4}_ask|Il {s9} di {s4} ti ha chiesto di abbattere alcuni problematici goblin nelle vicinanze della città.
+qstr_The_{s9}_of_{s14}_ha|Il {s9} di {s14} ti ha chiesto di eliminare un gruppo di goblin che creano problemi a {s14}. Loro escono solo di notte, e attaccano persone sole nelle strade
 qstr_refugees|rifugiati
 qstr_slaves|schiavi
-; qstr_{s1}_Refugees|{s1} Refugees
-; qstr_{s1}_Slaves|{s1} Slaves
-; qstr_The_{s11}_of_{s10}_a|The {s11} of {s10} asked you to escort some {s12} to {s13}.
+qstr_{s1}_Refugees|{s1} Rifugiati
+qstr_{s1}_Slaves|{s1} Schiavi
+qstr_The_{s11}_of_{s10}_a|Il {s11} di {s10} ti ha chiesto di scortate un po' {s12} di a {s13}.
 qstr__Guards_slaughter_hi|Guardie, squartatelo!
 qstr_Slaughter_him_for_fr|Squartatelo per fresca carne umana!
-; qstr_This_is_{s5}_Command|This is {s5}, Commander.
-; qstr_{s6}_This_place_and_|{s6} This place and the surrounding lands belong to you of course, my {lord/lady}.
-; qstr_{s6}_This_place_and_t|{s6} This place and the surrounding lands belong to {s7} of {s8}.
+qstr_This_is_{s5}_Command|Questo è {s5}, Comandante.
+qstr_{s6}_This_place_and_|{s6} Questo luogo e le terre circostanti appartengono a voi ovviamente, mio {lord/lady}.
+qstr_{s6}_This_place_and_t|{s6} Questo luogo e le terre circostanti appartengono a {s7} di {s8}.
 qstr_{s3}_and_{s5}|{s3} e {s5}
 qstr_{s3}_{s5}|{s3}, {s5}
 ; qstr_{reg20?We_mostly_pro|{reg20?We mostly produce {s5} here:We don't produce much here these days}. If you would like to learn more, you can speak with our {reg4?guildmaster:village elder}. He is nearby, right over there.
-; qstr_Hey_scum!_I_can_fix_|Hey scum! I can fix that jaw of yours.
+qstr_Hey_scum!_I_can_fix_|Hey farabutto! Posso aggiustarti quella mandibola.
 qstr_Watch_where_you_re_g|Guarda dove vai, verme!
 qstr_I_don_t_like_your_fa|Non mi piace la tua faccia! Penso abbia bisogno di un'aggiustata.
 qstr_What_are_you_looking|Cos'hai da guardare? COSA?
 qstr_the_white_hand|la mano bianca
 qstr_the_lidless_eye|il grande occhio
-; qstr_I_have_some_of_your_|I have some of your people with me. I'll let them join you, to help your cause.
+qstr_I_have_some_of_your_|Ho alcune delle mie genti con me. Le lascierò seguirti, per aiutare la tua causa. 
 ; qstr_Some_of_your_stinky_|Some of your stinky kin are with me. I'm sure they'd rather go with you.
-; qstr_{s4}_It_is_always_go|{s4} It is always good to see one of our own.
+qstr_{s4}_It_is_always_go|{s4} è sempre bello vedere uno dei nostri.
 qstr_a_nearby_town|una città vicina
 qstr_that_town_over_there|quella città laggiù
 ; qstr_{s4}^We_are_from_{s1|{s4}^We are from {s11}, scouting in the direction of {s12}.
 ; qstr_{s4}^We_are_{reg1?fo|{s4}^We are {reg1?foraging:raiding} around {s11}.
-; qstr_{s4}^We_are_patrolli|{s4}^We are patrolling around {s11}.
-; qstr_{s4}^We_are_carrying|{s4}^We are carrying supplies from {s11} to {s12}.
-; qstr_{s4}^We_are_escortin|{s4}^We are escorting prisoners to {s12}.
-; qstr_Greetings_do_you_nee|Greetings, do you need reinforcements?
+qstr_{s4}^We_are_patrolli|{s4}^Stiamo pattugliando intorno a {s11}.
+qstr_{s4}^We_are_carrying|{s4}^Stiamo trasportando risorse da {s11} a {s12}.
+qstr_{s4}^We_are_escortin|{s4}^Stiamo scortando prigionieri a {s12}.
+qstr_Greetings_do_you_nee|Saluti, ti servono rinforzi?
 qstr_Goodbye_friends.|Addio, amici.
 qstr_See_you_later_if_you|Ci vediamo più tardi, se non ti farai uccidere.
-; qstr__^Oh_and_take_back_t| ^Oh, and take back those who are not our people.
+qstr__^Oh_and_take_back_t|Oh, e prenditi indietro quelle persone che non sono nostre.
 ; qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32} {s23}^^[earned {reg14} Resource Points of {s14}]
 ; qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^{s23}^^[earned {reg14} Resource Points of {s14}]
-; qstr_Good_luck_in_your_tr|Good luck in your travels.
+qstr_Good_luck_in_your_tr|Buona fortuna nei tuoi viaggi.
 qstr_Try_not_getting_your|Prova a non farti uccidere.

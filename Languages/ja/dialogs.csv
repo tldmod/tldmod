@@ -15,8 +15,8 @@ dlga_mutiny_talk_2:close_window|それで、話があるんだけどさ・・・
 ; dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|やあ、また会ったね、 {playername}！
 dlga_start:hobbit_pippin_talk_met|やあ、また会ったね、 {playername}！
-dlga_start:hobbit_general_talk_1|こんにちは、{sir/madam}！ 僕はメリアドク・ブランディバック。 メリーって呼んでね！
-dlga_start:hobbit_general_talk_1.1|こんにちは、{sir/madam}！ 僕はペレグリン・トゥック。 ピピンって呼んでね！
+dlga_start:hobbit_general_talk_1|こんにちは、{戦士殿/戦士殿}！ 僕はメリアドク・ブランディバック。 メリーって呼んでね！
+dlga_start:hobbit_general_talk_1.1|こんにちは、{戦士殿/戦士殿}！ 僕はペレグリン・トゥック。 ピピンって呼んでね！
 dlga_hobbit_general_talk_1:close_window|今は忙しい{んだ/の}。
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|そういえば、{君/あなた}の種族に出合ったのは初めて{だな/ね}。
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|そういえば、エドラスで{君/あなた}みたいな{奴/子}に会った{な/わね}。
@@ -548,10 +548,10 @@ dlga_start:spy_partners_talk|ごきげんよう。
 dlga_spy_partners_talk:spy_partners_talk_2|{s1}の名において、おまえを逮捕する！
 dlga_spy_partners_talk_2:close_window|やれるものなら、やってみろ！
 dlga_spy_partners_talk:close_window|気にしないで{くれ/ちょうだい}。ただの通りすがり{だ/よ}。
-dlga_start:runaway_serf_intro_1|ごきげんよう、{旦那/ご婦人}。
+dlga_start:runaway_serf_intro_1|ごきげんよう、{旦那さま/ご婦人}。
 dlga_runaway_serf_intro_1:runaway_serf_intro_2|私は{s4}の手の者だ。 今すぐ引き返せば、 罰は受けずに済むであろう。
 dlga_runaway_serf_intro_2:runaway_serf_intro_3|{旦那さま/ご婦人}。 {s1}でのわしらの生活は、 つらすぎます。 わしらは一日中働き、 それでも空腹に耐えながら寝るんです。 わしらは{s6}へ行って、 人間らしい、 新しい生活を始めたいんです。
-dlga_runaway_serf_intro_3:runaway_serf_go_back|奴隷の脱走は、我らの法に逆らう行為だ。今すぐ{s1}へ引き返せ！
+dlga_runaway_serf_intro_3:runaway_serf_go_back|奴隷の脱走は、 我らの法に逆らう行為だ。 今すぐ{s1}へ引き返せ！
 dlga_runaway_serf_go_back:close_window|わかりました、{旦那さま/ご婦人}。 おっしゃる通り、すぐに{s5}へ戻ります。
 dlga_start:runaway_serf_talk_caught|これは{旦那さま/ご婦人}。 わしらは{s5}へ戻るところなんですが、 どうも道に迷ったようで。
 dlga_runaway_serf_talk_caught:runaway_serf_go_back|私を甘くみるなよ。今すぐ戻れ！
@@ -590,7 +590,7 @@ dlga_trainer_talk_combat:trainer_pretalk|これで一通りの理論は頭に入
 dlga_trainer_explain_defense:trainer_explain_defense_2|いい質問です。 戦士の基本は、 まず自分の身を守ることです。 危険な場所を避けることがまず戦闘の第一で、 これは敵を攻撃する事よりもずっと重要な事です。 剣を振り回していくらかの傷を敵に与えるのは誰でもできますが、 最後に生き残るのは防御に長けた者だけです。
 dlga_trainer_explain_defense_2:trainer_explain_defense_3|さて。最も簡単な防御方法は、 盾を使うことです。 盾をかまえればよいだけです。 [マウスの右ボタンを押すと盾をかまえます。] この状態ならば、 前方からの攻撃はすべてはじくことができる。 しかし、 横方向や後ろからの攻撃には効果はありません。
 dlga_trainer_explain_defense_3:trainer_explain_defense_4|盾を持たない場合は？
-dlga_trainer_explain_defense_4:trainer_combat_pretalk|その場合は武器を使って防御しなければなりません。 これは盾を使った防御よりも少々難しい。 武器で防御をする場合、 防ぐことができるのは、 たったひとつの攻撃方向だけです。 つまり、 上段からの振り下ろし、 横へのなぎ払い、 もしくは突きのうちのいづれかのみ、 という事です。 そのため、 相手をよく見て、 相手が攻撃を出した後に、 その方向に防御しなければなりません。 これで相手からの攻撃を受け止める事ができる。 もし相手が攻撃を出すまえに防御の姿勢をとってしまうと、 相手は防御のかまえとは別の攻撃方向に切り替えて 攻撃を命中させてしまうでしょう。
+dlga_trainer_explain_defense_4:trainer_combat_pretalk|その場合は武器を使って防御しなければなりません。 これは盾を使った防御よりも少々難しい。 武器で防御をする場合、 防ぐことができるのは、 たったひとつの攻撃方向だけです。 つまり、 上段からの振り下ろし、 横へのなぎ払い、 もしくは突きのうちのいづれかのみ、 という事です。 そのため、 相手をよく見て、 相手が攻撃動作に入った後に、 その方向に防御しなければなりません。 これで相手からの攻撃を受け止める事ができる。 もし相手が攻撃を出すまえに防御の姿勢をとってしまうと、 相手は防御のかまえとは別の攻撃方向に切り替えて 攻撃を命中させてしまうでしょう。
 dlga_trainer_explain_attack:trainer_explain_attack_2|よく聞いてくれました。 攻撃は最大の防御なり、 といわれます。 多くの戦士に好まれる戦法は、 武器を振りかぶった状態を維持し、 相手の隙をとらえた瞬間に武器を振りぬく、 というものです。 [マウスの左ボタンを押すと武器を振りかぶり、 押したままにすることで振りかぶった状態を維持します。]
 dlga_trainer_explain_attack_2:trainer_explain_attack_3|それは使えそうだ。
 dlga_trainer_explain_attack_3:trainer_explain_attack_4|いい戦法ですが、 相手に見透かされて、 攻撃方向に対して防御の姿勢をとられる可能性もある。 もしそうなったら、 攻撃を中断して素早く他の攻撃方向を選択しなければなりません。 [マウスの右ボタンを素早くクリックすることで、 現在の攻撃をキャンセルできます]。
