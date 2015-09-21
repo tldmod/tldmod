@@ -1,88 +1,88 @@
-menu_start_game_1|^^^^^^^^^^Pro co budes bojovat?
-mno_start_good|pro USVIT noveho veku
+menu_start_game_1|^^^^^^^^^^Pro co bojuješ?
+mno_start_good|pro ÚSVIT nového věku
 mno_start_evil|pro SOUMRAK lidstva
-mno_go_bback|Zpet
+mno_go_bback|Zpět
 menu_start_phase_2|^^^^^ Stredozem. Na Vychode se zvedá Stin, ^ prichazi odtamtud dlouho skryte a  temne veci. ^ Svobodne narody se pripravuji na valku. Valku jakou nezazily po cely vek. ^ Lide, elfove, trpaslici a skreti - vsichni budou hrat svou roli. ^^ Jakou roli, to se teprve ukaze...
 mno_go_forth|Vydej se svou zvolenou cestou...
-menu_start_game_3            |^^^^^^^^Zvol si scenar:
-mno_custom_battle_scenario_1 |Sarvatka, Gondor proti Haradu
-mno_custom_battle_scenario_12|Vyber strany do bitvy
-mno_custom_battle_scenario_3 |Sarvatka, Elfove proti Cernym Numenorejcum
-mno_custom_battle_scenario_4 |Obrana Helmova zlebu, Rohan proti Zeleznemu pasu
-mno_custom_battle_scenario_5 |Sarvatka, Severane proti Rhûnu
-mno_custom_battle_scenario_6 |Dobyvani, skreti proti trpaslikum
-mno_custom_battle_scenario_7 |Prepadeni, skreti proti elfum z Temneho hvozdu
-mno_custom_battle_scenario_11|Testovaci bitvy (pro balancovani statu)
-mno_custom_battle_scenario_10|Testovaci bitva pro proceduralne generovanou scenu
+menu_start_game_3            |^^^^^^^^Zvol si scénář:
+mno_custom_battle_scenario_1 |Šarvátka, Gondor proti Haradu
+mno_custom_battle_scenario_12|Vyber frakce pro bitvu
+mno_custom_battle_scenario_3 |Šarvátka, Elfové proti Černým Númenorejcům
+mno_custom_battle_scenario_4 |Obrana Helmova žlebu, Rohan proti Železnému pasu
+mno_custom_battle_scenario_5 |Šarvátka, Seveřané proti Rhûnu
+mno_custom_battle_scenario_6 |Dobývání, skřeti proti trpaslíkům
+mno_custom_battle_scenario_7 |Přepadení, skřeti proti elfům z Temného hvozdu
+mno_custom_battle_scenario_11|Testovací bitvy (pro balancováni statu)
+mno_custom_battle_scenario_10|Testovací bitva pro procedurálně generovanou scénu
 mno_troll_battle_scenario    |Testovaci bitvy se zlobry
 mno_warg_battle_scenario     |Testovaci bitvy s vrrky
 mno_build_your_own_scene     |**Postav svou vlastni scenu pro TLD**
-mno_go_back                  |Zpet
-menu_tutorial|^^TLD ma mnoho funkci neznamych z puvodniho M&B. Jsou popsane bez prozrazeni detailu v PDF zabalenem s modem. Pokud chcete projit tutorial, udelejte to prosim v Native - zakladni hre, ne v modu.
-mno_go_back_dot|Zpet.
-mno_view_upkeep_costs|Zobrazit naklady druziny.
-mno_view_character_report|Zobrazit prehled postavy.
+mno_go_back                  |Zpět
+menu_tutorial|^^TLD má mnoho funkcí neznámých z původního M&B. Jsou popsané detailně bez prozrazení zápletky v PDF přibaleném s modem. Pokud chcete projít tutoriál, udělejte to prosím v Native - základní hře, ne v modu.
+mno_go_back_dot|Jdi zpět.
+mno_view_upkeep_costs|Zobrazit náklady družiny.
+mno_view_character_report|Zobrazit přehled postavy.
 mno_view_party_size_report|Zobrazit prehled velikosti druziny.
 mno_view_morale_report|Zobrazit prehled moralky druziny.
-mno_view_character_report_02|Prehled NPC.
-mno_view_faction_strengths_report|Zobrazit prehled sily frakci.
-mno_view_traits_report|Zobrazit odznaky.
+mno_view_character_report_02|Kontrola stavu NPC.
+mno_view_faction_strengths_report|Zobrazit přehled síly frakcí.
+mno_view_traits_report|Zobrazit rysy.
 mno_resume_travelling|Pokracovat v ceste.
 mno_custom_battle_go|Start.
 mno_leave_custom_battle_2|Zrusit.
-menu_custom_battle_end|^^^^^^Bitva skoncila. {s1} Tva strana zabila {reg5} nepratel a ztratila {reg6} jednotek.^Ty sam jsi zabil {reg7} protivniku.
+menu_custom_battle_end|^^^^^^Bitva skončila. {s1} Tvá strana zabila {reg5} nepřátel a ztratila {reg6} jednotek během bitvy.^Ty sám jsi zabil {reg7} protivníku v boji.
 mno_replay|Znovu hrat tuto bitvu.
 mno_continue_dot|Pokracovat.
-menu_quick_battle_general_test|^^^Aktualni bitva: ^tym A: {reg10} {s10}^^VS^^ tym B: {reg11} {s11}
-mno_tAA|+5 Tym A
-mno_tAB|-5 Tym A
+menu_quick_battle_general_test|^^^Aktuální bitva: ^tým A: {reg10} {s10}^^VS^^ tým B: {reg11} {s11}
+mno_tAA|+5 Tým A
+mno_tAB|-5 Tým A
 mno_tAC|Zvol jednotku A
-mno_tBA|+5 Tym B
-mno_tBB|-5 Tym B
+mno_tBA|+5 Tým B
+mno_tBB|-5 Tým B
 mno_tBC|Zvol jednotku B
 mno_B|Prednastaveni 1
 mno_F|ZACNI BITVU!
-mno_dot_go_back|. Jdi zpet
-menu_quick_battle_troll|^^^^^^^^Vyber si zlobri scenar:
-mno_troll_battle_scenario_10|Test: Zlobr VS Pechota
-mno_troll_battle_scenario_11|Test: Zlobr VS Lucistnici
-mno_troll_battle_scenario_12|Test: Zlobr VS Jizda
-mno_troll_battle_scenario_13|Test: Zlobr VS Kopinici
+mno_dot_go_back|. Jdi zpět
+menu_quick_battle_troll|^^^^^^^^Vyber si zlobří scénář:
+mno_troll_battle_scenario_10|Test: Zlobr VS Pěchota
+mno_troll_battle_scenario_11|Test: Zlobr VS Lučistníci
+mno_troll_battle_scenario_12|Test: Zlobr VS Jízda
+mno_troll_battle_scenario_13|Test: Zlobr VS Kopiníci
 mno_troll_battle_scenario_14|Test: Zlobr VS Zlobr
-mno_troll_battle_scenario_15|Sranda-Test: hracem ovladany Zlobr
-menu_quick_battle_wargs|^^^^^^^^Vyber si vrrci scenar:
-mno_warg_battle_scenario_10|Proti Vrrkum: 1 vs 1
-mno_warg_battle_scenario_11|Proti Vrrkum: 2 vs 3
-mno_warg_battle_scenario_12|Proti Vrrkum: mnoho vs mnoho
+mno_troll_battle_scenario_15|Sranda-Test: hráčem ovládaný Zlobr
+menu_quick_battle_wargs|^^^^^^^^Vyber si vrrčí scénář:
+mno_warg_battle_scenario_10|Proti Vrrkům: 1 vs 1
+mno_warg_battle_scenario_11|Proti Vrrkům: 2 vs 3
+mno_warg_battle_scenario_12|Proti Vrrkům: mnoho vs mnoho
 mno_warg_battle_scenario_10b|Hrej za Vrrky: 1 vs 1
 mno_warg_battle_scenario_11b|Hrej za Vrrky: 2 vs 3
 mno_warg_battle_scenario_12b|Hrej za Vrrky: mnoho vs mnoho
 menu_start_good|^^^^^^^^^^Zvol si rasu:
-mno_start_ma|CLOVEK
+mno_start_ma|ČLOVĚK
 mno_start_el|ELF
-mno_start_dw|TRPASLIK
-mno_go_back|Zpet
-menu_start_evil|^^^^^^^^^^Komu slouzis?
-mno_start_eye|SAURONOVI z Mordoru, Panu Prstenu
-mno_start_hand|SARUMANOVI ze Zelezneho pasu, Bile Ruce
-menu_start_eye|^^^^^^^^^Tvuj pan je Oko Bez Vicka^Zvol si Rasu
-mno_start_or|SKRET, slouzici Oku Bez Vicka
-mno_start_ur|SKURUT, nove skreti pleme
-mno_start_em|CLOVEK, zotroceny Sauronem
-menu_start_hand|^^^^^^^^^Tvym panem je Bila Ruka^Zvol si rasu
-mno_start_whor|Skret, slouzici Bile Ruce
-mno_start_isur|Skurut-hai, zplozenec Zelezneho Pasu
-mno_start_duma|Clovek z Vrchoviny, ze Zapadnich plani
-menu_start_good_man|^^^^^^^^^^Zvol svuj lid:
-mno_start_go|Gondor, kralovstvi Bile veze
-mno_start_ro|Rohan, lide koni
-mno_start_du|Dunadani, prastara dynastie lidi
-mno_start_be|Meddedovci, lide medveda
-mno_start_da|severni kralovstvi Dolu
-menu_start_good_elf|^^^^^^^^^^ve kterem lese prebyvas, starsi?
-mno_start_ri|Roklinka, dum pana Elronda
-mno_start_lo|Lothlorien, rise pani Galadriel
-mno_start_mi|Temny Hvozd, rise lesnich elfu
+mno_start_dw|TRPASLÍK
+mno_go_back|Zpět
+menu_start_evil|^^^^^^^^^^Komu sloužíš?
+mno_start_eye|SAURONOVI z Mordoru, Pánu Prstenů
+mno_start_hand|SARUMANOVI ze Železného pasu, Bílé Ruce
+menu_start_eye|^^^^^^^^^Tvůj pán je Oko bez víčka^Zvol si Rasu
+mno_start_or|SKŘET, sloužící Oku bez víčka
+mno_start_ur|SKURUT, nove skřetí plémě
+mno_start_em|ČLOVĚK, zotročený Sauronem
+menu_start_hand|^^^^^^^^^Tvým pánem je Bílá Ruka^Zvol si rasu
+mno_start_whor|Skřet, sloužící Bílé Ruce
+mno_start_isur|Skurut-hai, zplozenec Železného pasu
+mno_start_duma|Člověk z Vrchoviny, ze Západních plání
+menu_start_good_man|^^^^^^^^^^Zvol svůj lid:
+mno_start_go|Gondor, království Bílé věže
+mno_start_ro|Rohan, lidé koní
+mno_start_du|Dunadáni, prastará dynastie lidí
+mno_start_be|Meddědovci, lidé medvěda
+mno_start_da|severní království Dolu
+menu_start_good_elf|^^^^^^^^^^ve kterém lese přebýváš, Starší?
+mno_start_ri|Roklinka, dům pána Elronda
+mno_start_lo|Lothlorien, říše paní Galadriel
+mno_start_mi|Temný Hvozd, říše lesních elfů
 menu_start_good_dwarf|^^^^^^^^^^Zvol svuj puvod:
 mno_start_er|obyvatel Ereboru - Osamele hory
 mno_start_ih|kopac ze Zeleznych hor
@@ -180,7 +180,7 @@ mno_get_out|Musime zmizet z tohoto prokleteho mista!
 ; menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
 ; mno_i_shall_surv|I... shall... survive!
 ; menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
-; mno_end_game_bye|Farewell.
+mno_end_game_bye|Stastnou cestu.
 ; menu_cattle_herd|You encounter some people.
 ; mno_cattle_drive_away|Order them to follow.
 ; mno_cattle_stop|Bring them to a stop.

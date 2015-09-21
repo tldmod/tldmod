@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^何のために戦いますか？
 mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
 mno_go_bback|戻る
-menu_start_phase_2|^^^^^ここは中つ国。 東に広がる影は日々ふくれあがり、 ^ 遠く忘れ去られてきた暗いものたちが、その姿をあらわす。 ^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。 ^ 人間、エルフ、ドワーフ、そしてオーク; すべてのものがそれぞれの運命を演じていく。 ^^ 運命の先にあるものは何か、それはまだわからない・・・
+menu_start_phase_2|^^^^^ここは中つ国。 東に広がる闇は日々ふくれあがり、 ^ 遠く忘れ去られてきた暗いものたちが、その姿をあらわす。 ^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。 ^ 人間、エルフ、ドワーフ、そしてオーク; すべてのものがそれぞれの運命を演じていく。 ^^ 運命の先にあるものは何か、それはまだわからない・・・
 mno_go_forth|運命の道を踏み出すのだ・・・
 menu_start_game_3            |^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1 |小規模戦闘、 ゴンドール勢 vs ハラド
@@ -42,7 +42,7 @@ mno_tBB|-5 Team B
 mno_tBC|Bの兵を選ぶ
 mno_B|Preset 1
 mno_F|戦闘開始！
-mno_dot_go_back|. 戻る
+mno_dot_go_back|。 戻る
 menu_quick_battle_troll|^^^^^^^^トロルのシナリオを選んでください:
 mno_troll_battle_scenario_10|テスト: トロル VS 歩兵
 mno_troll_battle_scenario_11|テスト: トロル VS 弓兵
@@ -181,7 +181,7 @@ menu_drank_ent_water_orc|^^^あなたは水を飲んだ。 ただの水だ。^�
 mno_i_shall_surv|し・・・ 死んで・・・ たまるか！
 menu_end_game|^^^^^あなたはついに冒険者としての生活に 区切りをつける決心をし、 腰を落ち着ける事にした。 あなたは武器や防具を売りさばき、 荷物をまとめると、 馬上の人となって夕日を目指して去っていった・・・
 mno_end_game_bye|さようなら。
-menu_cattle_herd|あなたは難民の一団に会った。
+menu_cattle_herd|あなたは人間の一群に会った。
 mno_cattle_drive_away|ついてくるように言う。
 mno_cattle_stop|その場で待つように言う。
 mno_leave|立ち去る。
@@ -235,7 +235,7 @@ mno_join_siege_with_allies|次の攻撃に参加する。
 mno_join_siege_stay_back|部下に次の攻撃に参加するよう指示をし、 自身は後方に待機する。
 menu_moria_must_escape|^^この本には、 モリアに再び入植しようとした ドワーフたちの最後の試みが記録されているようだ。 その最後の試みは、 関わった者すべてが凄惨な死を遂げ、 失敗に終わったらしい。 本を注意深く読み進めていくうち、 あなたは'まことの銀'という記述を見つけた！ ページを熟読していくうち、 これはさらに深い層のどこかにある ドワーフの隠し財産に関する記述であることを ついに理解した。 やった！ 長く忘れられたドワーフのミスリルを 発掘するだなんて、 かっこいいじゃないか！？ ^あなたは喜び勇んで記述に従い、 細くまがりくねった坑道を 深く深く進んでいった・・・ ^・・・^何も手がかりのないまま 二時間ほどが過ぎた頃、 あなたは自分たちがモリアの深層で 迷ってしまい、 まず出口を探さなければ ならない事態になった事を悟った。
 mno_moria_exit_scene|出口を探すんだ！
-menu_castle_outside|ここは{s2}の外です。{s11} {s3} {s4}
+menu_castle_outside|ここは{s2}の外です。 {s11} {s3} {s4}
 mno_moria_enter|秘密の入り口を通って、モリアの大広間へ行く
 mno_moria_enter_door|モリアに入る。
 mno_castle_start_siege|この{reg6?町:城}を包囲する。
@@ -247,7 +247,7 @@ mno_castle_lead_attack|攻撃を陣頭指揮する。
 mno_attack_stay_back|部下に攻撃を指示し、 自身は後方に待機する・・・
 mno_build_ladders|城壁にかけるはしごの準備をする。
 mno_lift_siege|包囲を中止する。
-menu_siege_attack_meets_sally|^^^^^^守備軍が打って出てきました。
+menu_siege_attack_meets_sally|^^^^^^守備軍が撃って出てきました。
 menu_construct_ladders|パーティメンバーの中で最も高い 技術者スキル({reg2})を持つ{reg3?あなた:{s3}}は、 充分なはしごを準備するのに {reg4}時間を要すると計算しました。
 mno_build_ladders_cont|準備に取りかかる。
 menu_castle_attack_walls_simulate|{s4}^^自軍犠牲者:{s8}^^敵軍犠牲者: {s9}
@@ -339,8 +339,8 @@ mno_cb_mordor7|リューン
 mno_cb_mordor8|海賊
 mno_rescue_mission|夜の闇にまぎれて妖術師の根城へと潜入した。
 mno_next_rescue_scene_door|さらに進め！
-mno_pick_troops1|この任務に同行させるコンパニオンを選んでください。 {reg0}名が選択されています
-menu_pick_troops|この潜入任務に誰を連れて行きますか？ 現在、{reg0}名のコンパニオンが選択されています。 部下を10名まで連れて行くことが出来ます。
+mno_pick_troops1|この任務に同行させる部下を選んでください。 {reg0}名が選択されています
+menu_pick_troops|この潜入任務に誰を連れて行きますか？ 現在、{reg0}名が選択されています。 部下を10名まで連れて行くことが出来ます。
 mno_go_forward|同行者の選択を完了し、任務を遂行する。
 menu_burial_mound|あなたは{s2}の{s1}が埋葬された塚に近づいた。   敵の死者から奪った武器が数珠繋ぎにされ、 塚に山積みにされている。
 mno_pay_respects|ひざまずいて敬意を払う。

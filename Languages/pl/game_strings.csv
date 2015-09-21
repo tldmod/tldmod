@@ -35,10 +35,10 @@ str_cant_use_inventory_disguised|Nie możesz zmieniać ekwipunku, gdy jesteś w 
 str_cant_use_inventory_tutorial|Nie możesz zmieniać ekwipunku w trakcie trwania samouczka.
 str_1_denar|1 Pkt Prestiżu
 str_reg1_denars|{reg1} Pkt Prestiżu
-; str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (Jan)
-; str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (Feb)
-; str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (Mar)
-str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1 (Apr)}
+str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (Styczeń)
+str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (Luty)
+str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (Marzec)
+str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1 (Kwiecień)}
 str_may_reg1_reg2|Maj
 str_june_reg1_reg2|Czerwiec
 str_july_reg1_reg2|Lipiec
@@ -103,7 +103,7 @@ str_brother|brat
 str_sister|siostra
 str_he|On
 str_she|Ona
-; str_s3s_s2|{s3}'s {s2}
+str_s3s_s2|{s3} jest {s2}
 str_s5_is_s51|{s5} jest {s51}.
 str_s5_is_the_ruler_of_s51|{s5} jest władcą {s51}. 
 str_s5_is_a_nobleman_of_s6|{s5} jest szlachcicem z {s6}. 
@@ -313,7 +313,7 @@ str_npc13_intro|Zatrzymaj się! Co niesiesz do namiotu wodza?
 str_npc14_intro|You!
 str_npc15_intro|You!
 str_npc16_intro|You!
-; str_npc17_intro|Hey. Fancy them woods there?
+str_npc17_intro|Cześć. Czy podobają ci się tutejsze lasy ?
 str_npc1_intro_response_1|Witaj, Tropicielu. Jak miewają się Strażnicy z Południa?
 str_npc2_intro_response_1|Mój interes jest interesem Gondoru, kim ty jesteś?
 str_npc3_intro_response_1|Również cię pozdrawia, czy wydarzyło się coś niepokojącego?
@@ -335,7 +335,7 @@ str_npc1_intro_response_2|Nieważne, obawiam się, że jaskinie nie są miłymi 
 str_npc2_intro_response_2|Nieważne, nie mam czasu na rozmowę ze strażą.
 str_npc3_intro_response_2|Nieważne, zrobię "rakiętę" gdzie indziej.
 str_npc4_intro_response_2|Wybacz, mam inne ważne sprawy.
-; str_npc5_intro_response_2|Excuse me, I have less important people to talk to.
+str_npc5_intro_response_2|Przepraszam, mam mniej ważnych ludzi z którymi wolę rozmawiać.
 str_npc6_intro_response_2|Odwzajemniam to odczucie. Żegnam.
 str_npc7_intro_response_2|Nieważne, potrzebuję trochę świeżego powietrza.
 str_npc8_intro_response_2|Nieważne, tylko zwiedzaliśmy.

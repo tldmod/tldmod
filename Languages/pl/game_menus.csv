@@ -24,9 +24,9 @@ mno_view_upkeep_costs|Zobacz koszt utrzymania
 mno_view_character_report|Zobacz raport postaci
 mno_view_party_size_report|Obejrzyj raport rozmiaru oddziału.
 mno_view_morale_report|Obejrzyj raport morale oddziału.
-mno_view_character_report_02|NPC status check.
+mno_view_character_report_02|Sprawdź status NPC.
 mno_view_faction_strengths_report|Obejrzyj raport siły frakcji.
-mno_view_traits_report|View traits.
+mno_view_traits_report|Zobacz Cechy.
 mno_resume_travelling|Wróć.
 mno_custom_battle_go|Rozpocznij.
 mno_leave_custom_battle_2|Anuluj.
@@ -124,7 +124,7 @@ mno_camp_scene|Przespacerować się.
 mno_camp_troop|Podgląd{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
 mno_camp_action|Użyj obiektu
 mno_camp_wait_here|Odpocząć przez jakiś czas.
-mno_camp_options|Zmienić opcje TLD.
+mno_camp_options|Zmień opcje TLD.
 mno_Cheat_enable|Włączone oszustwa/tryb moderski
 menu_game_options|^^^^^^^^Kliknij by zmienić:
 mno_game_options_restrict_items|Restrykcje przedmiotów: {s7}
@@ -150,8 +150,8 @@ mno_strat_tweaks_siege_reqs|Siła wymagana do oblężenia: {s7}
 mno_strat_tweaks_siege_relax_rate|Prędkość odnawiania siły oblężenia: {reg1}
 mno_strat_tweaks_regen_rate|Szybkość regeneracji siły: {s7}
 mno_strat_tweaks_siege_regen_limit|Frakcje nie zregenerują się poniżej: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
+mno_strat_tweaks_influence_gain_rate|Szybkość zdobywania wpływów : {s7} Normal-Normalna Doubled-Podwójna Tripled-Potrójna Quadrupled-Poczwórna
+mno_strat_tweaks_rank_gain_rate|Szybkość zdobywania rangi : {s7} Normal-Normalna Doubled-Podwójna Tripled-Potrójna Quadrupled-Poczwórna
 mno_strat_tweaks_back|Wróć do menu ulepszeń.
 menu_camp_action|^^^^^^^^^     Co chcesz zrobić?
 mno_camp_customize_defilement|Dostosuj Zplugawiony Pancerz
@@ -202,7 +202,7 @@ menu_order_attack_2|{s4}^^Twoje straty: {s8}^^Straty wroga: {s9}
 mno_order_attack_continue|Rozkaż żołnierzom, by nie przerywali ataku.
 mno_order_retreat|Każ się wycofać.
 menu_kingdom_army_quest_report_to_army|{s8} przesyła wiadomość, że życzy sobie, byś przyłączył{/a} się do jego nowej kampanii wojennej. Musisz przybyć wraz z armią składającą się z {reg13} żołnierzy i szybko powin{ieneś/naś} wyszkolić więcej ludzi, jeśli tylu nie posiadasz.
-mno_reject|Send a message you are too busy.
+mno_reject|Wyślij wiadomość, że jesteś zbyt zajęty.
 mno_send_word|Wyślij wiadomość, że wkrótce do niego dołączysz
 menu_kingdom_army_quest_messenger|{s8} przesyła wiadomość, że życzy sobie rozmawiać z tobą w sprawie pewnego zadania. Żąda, byś spotkał{/a} się z nim najszybciej, jak to tylko możliwe.
 menu_kingdom_army_quest_join_siege_order|{s8} chce, byś pom{ógł/ogła} oblegać {s9} i przygotować szturm. Twoi żołnierze mają zająć {s9} za wszelką cenę.
@@ -234,10 +234,10 @@ mno_talk_to_siege_commander| Zażądaj spotkania z dowódcą.
 mno_join_siege_with_allies|Przyłącz się do następnego ataku na mury.
 mno_join_siege_stay_back|Rozkaż swoim żołnierzom, by bez ciebie przyłączyli się do następnego ataku.
 menu_moria_must_escape|^^The book is actually a copy of PLAY DWARF!^^^Specifically, a special issue on ''Big Breasts in Blonde Beards''.^Fascinating! You casually wander around reading it.^When you finish, you are lost deep in moria.
-mno_moria_exit_scene|CHEAT: steal book now
+mno_moria_exit_scene|Znajdź drogę powrotną!
 menu_castle_outside|W pobliżu znajduje się {s2}.{s11} {s3} {s4}
-mno_moria_enter|Return into main hall of Moria trough the secret entrance
-mno_moria_enter_door|Enter Moria.
+mno_moria_enter|Wróć do głównej sali Morii przez sekretne wejście.
+mno_moria_enter_door|Wejdź do Morii.
 mno_castle_start_siege|Oblegaj {reg6?miasto:zamek}.
 mno_castle_leave|Odejdź.
 menu_castle_besiege|Oblegasz {s1}. {s2} {s3}
@@ -254,35 +254,35 @@ menu_castle_attack_walls_simulate|{s4}^^Twoje straty:{s8}^^Straty wroga: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Twoje straty: {s8}^^Straty sojuszników: {s9}^^Straty wroga: {s10}
 menu_castle_taken|{s3} pada pod naporem twoich żołnierzy i masz teraz{reg2?: nad nim} pełną kontrolę{reg2? nad miastem:}.{reg1? Wydaje się, że już nic nie może cię powstrzymać, by zatrzymać {reg2?je:go} dla siebie...:}
 menu_castle_taken_2|{s3} pada pod naporem twoich żołnierzy i masz teraz nad nim pełną kontrolę. Czas, by {s9} usłyszał o twoim zwycięstwie. {s5}
-mno_castle_taken_no_claim|O nic nie proś.
+mno_castle_taken_no_claim|Nie proś o nic.
 menu_siege_started_defender|{s1} szturmuje {s2}. Łącznie macie {reg22} żołnierzy przeciwko {reg11} żołnierzom wroga. Decydujesz się...
 mno_siege_defender_join_battle|Dołaczyć do bitwy.
 mno_siege_defender_troops_join_battle|Rozkazać swoim oddziałom przyłączyć się do bitwy, ty zaś zostaniesz z tyłu.
 menu_siege_join_defense|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}^^Straty wroga: {s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^Uciekinier powala cię na ziemię potężnym uderzeniem, nagle świat zaczyna wirować i wszystko ciemnieje. Czas mija. Gdy wreszcie otwierasz oczy zmaltretowan{y/a} i zakrwawion{y/a}, ale na szczęście żadna z odniesionych ran nie okazuje się śmiertelna.
 menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Searching the bodies, you find a purse which must have belonged to a previous victim of these brutes. Or perhaps, it was given to them by someone who wanted to arrange a suitable ending to your life.
-menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
+menu_town_brawl_lost|^^^^^^Został[eś/aś] znokautowan[y/a]. Ludzie których zaatakował[eś/aś] szybko sprawdzili czy masz coś wartościowego, po czym powrócili do codziennego życia.
 menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
 menu_town|Przybywasz do {s60}.{s12}{s13}
 mno_town_menu_0|Go to some location.
 mno_town_menu_0_door|Door to some location.
-mno_town_approach|Approach {s1}...
-mno_town_castle|Go to {s1}.
+mno_town_approach|Podejdź do {s1}...
+mno_town_castle|Idź do {s1}.
 mno_town_castle_door|Drzwi do zamku.
 mno_town_center|Walk to the main square...
 mno_town_center_door|Drzwi do wieży centralnej.
-mno_aw_chamber_door|Open the door.
+mno_aw_chamber_door|Otwórz drzwi.
 mno_trade_with_arms_merchant|Odwiedź zbrojownię.
 mno_trade_with_horse_merchant|Odwiedź magazyny.
-mno_town_prison_door|Door to the prison.
+mno_town_prison_door|Drzwi do więzienia.
 mno_dungeon_enter|Enter the cellars.
-mno_dungeon_enter_door|Open the door.
+mno_dungeon_enter_door|Otwórz drzwi.
 mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 mno_isengard_underground|Go to the underground caverns.
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
-mno_town_leave|Leave...
-mno_town_leave_door|Leave Area
+mno_town_leave|Odejdź...
+mno_town_leave_door|Wyjdź
 menu_disembark|Chcesz opuścić statek?
 mno_disembark_yes|Tak.
 mno_disembark_no|Nie.
@@ -358,11 +358,11 @@ mno_ruin_leave|Wyjdz...
 menu_death|Powinieneś być martwy. Chociaż wojna wciąż trwa, ty nie jesteś już jej częścią.
 menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, kiedy nagle...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy atakujący leżeli na ziemi - ranni, lub martwi. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
+menu_animal_ambush_fail|Zwierzęta zaatakowały ciebie {reg0?,: i twojego kompana {reg2?s,:,}} ale na szczęście udało ci się je odgonić. Miejmy nadzieję że nie zaatakują cie ponownie.
 menu_build_your_scene|Tutaj możesz zbudować własną scenę walki, używając jednego ze slotów zamieszczonych poniżej i trybu edycji (musisz najpierw zmienić tryb edycji na Włączony w menu opcji w panelu startowym M&B).
-; mno_scene1|Battlefield5 (file scn battlefield5.sco)
-; mno_scene2|Battlefield6 (file scn battlefield6.sco)
-; mno_scene3|Battlefield7 (file scn battlefield7.sco)
-; mno_scene4|Battlefield8 (file scn battlefield8.sco)
-; mno_scene5|Battlefield9 (file scn battlefield9.sco)
+mno_scene1|Pole Bitwy 5 (plik scn battlefield5.sco)
+mno_scene2|Pole Bitwy 6 (plik scn battlefield6.sco)
+mno_scene3|Pole Bitwy 7 (plik scn battlefield7.sco)
+mno_scene4|Pole Bitwy 8 (plik scn battlefield8.sco)
+mno_scene5|Pole Bitwy 9 (plik scn battlefield9.sco)
 mno_back_3dot|Wróć...

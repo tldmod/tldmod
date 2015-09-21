@@ -73,7 +73,7 @@ itm_troll_head_helm_c|トロルの頭部
 itm_tree_trunk_club_a|木の幹
 itm_tree_trunk_club_b|木の幹
 itm_tree_trunk_invis|木の幹
-itm_giant_hammer|巨大ハンマー
+itm_giant_hammer|巨大槌
 itm_giant_mace|巨大メイス
 itm_giant_mace_b|棘付き巨大メイス
 itm_olog_feet_boots|オログ＝ハイの足
@@ -364,7 +364,7 @@ itm_uruk_voulge|ウルクのブージ
 itm_uruk_heavy_axe|ウルクの大斧
 itm_isengard_sword|アイゼンガルドの剣
 itm_isengard_axe|アイゼンガルドの斧
-itm_isengard_hammer|アイゼンガルドのハンマー
+itm_isengard_hammer|アイゼンガルドの槌
 itm_isengard_halberd|アイゼンガルドのハルバード
 itm_isengard_mallet|アイゼンガルドの木槌
 itm_isengard_heavy_axe|アイゼンガルドの大斧
@@ -382,7 +382,7 @@ itm_orc_club_a|オークの棍棒
 itm_orc_club_b|オークの棍棒
 itm_orc_club_c|オークの棍棒
 itm_orc_club_d|オークの棍棒
-itm_orc_sledgehammer|オークの大ハンマー
+itm_orc_sledgehammer|オークの大槌
 itm_orc_simple_spear|オークの槍
 itm_orc_skull_spear|オークのどくろ槍
 itm_orc_bill|オークのビル
@@ -392,7 +392,7 @@ itm_orc_scimitar|オークのシミター
 itm_orc_sabre|オークのサーベル
 itm_orc_machete|オークのマチェーテ
 itm_orc_axe|オークの斧
-itm_orc_two_handed_axe|オークの両手持ち斧
+itm_orc_two_handed_axe|オークの大斧
 itm_orc_throwing_axes|オークの投げ斧
 itm_orc_bow|オークの弓
 itm_orc_shield_a|オークの盾
@@ -598,7 +598,7 @@ itm_horandor_a|ハラドのシミター
 itm_skirmisher_sword|ハラド散兵の剣
 itm_harad_sabre|ハラドのサーベル
 itm_harad_mace|遠ハラドのメイス
-itm_far_harad_2h_mace|遠ハラドの両手持ちメイス
+itm_far_harad_2h_mace|遠ハラドの大メイス
 itm_harad_dagger|ハラドのナイフ
 itm_harad_short_spear|ハラドの短槍
 itm_harad_long_spear|ハラドの槍
@@ -845,7 +845,7 @@ itm_map|中つ国の地図
 itm_athelas_reward|アセラスの鉢植
 itm_phial_reward|ガラドリエルの光
 itm_scroll_reward|ゴンドリンの滅亡
-itm_hammer_reward|鍛冶屋のハンマー
+itm_hammer_reward|鍛冶屋の槌
 itm_khand_knife_reward|ハンドのいけにえのナイフ
 itm_angmar_whip_reward|調教師のムチ
 itm_horn_gondor_reward|ゴンドールの角笛
@@ -883,7 +883,7 @@ itm_isen_uruk_heavy_reward|ウルク＝ハイの将軍の鎧
 itm_lorien_bow_reward|ノルドリンの弓
 itm_lorien_sword_reward|ガラズリムの剣
 itm_dale_sword_reward|マーチウォーデンの剣
-itm_dale_armor_reward|エスガロス貴族ののど当て
+itm_dale_armor_reward|エスガロスのゴージット付き上級鎧
 itm_leather_gloves_reward|狩猟手袋
 itm_beorn_shield_reward|森人の盾
 itm_beorn_axe_reward|熊斧
