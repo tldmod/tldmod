@@ -14,7 +14,7 @@ qst_follow_spy|密会現場まで間者を追跡せよ
 qst_follow_spy_text|{s12}を出発する予定の間者を追跡するよう、 {s11}に頼まれた。 追跡に気付かれると 間者が密会を取りやめてしまう可能性があるため、 追跡は慎重に行わなければならない。 間者が連絡係と落ち合ったら 彼らを奇襲して捕獲し、 二人を{s11}へ引き渡せ。
 qst_capture_enemy_hero|敵の指揮官を捕らえよ
 qst_capture_enemy_hero_text|敵指揮官を捕らえてくるよう、 {s11}に頼まれた。
-qst_lend_companion|コンパニオンの{s3}を{s9}に貸す
+qst_lend_companion|コンパニオンの{s3}を、 {s9}に貸す
 qst_lend_companion_text|{s9}に、コンパニオンの{s3}を 一週間貸してくれと頼まれた。
 qst_capture_prisoners|敵の捕虜を{reg1}名確保せよ
 qst_capture_prisoners_text|敵の捕虜を{reg1}名連れてくるよう、 {s9}に頼まれた。
@@ -48,8 +48,8 @@ qst_join_siege_with_army|{s14}攻撃に参加せよ
 qst_join_siege_with_army_text|None
 qst_scout_waypoints|{s13}、 {s14}、 および{s15}を偵察せよ
 qst_scout_waypoints_text|None
-qst_move_cattle_herd|{s12}を{s13}まで連れて行く
-qst_move_cattle_herd_text|{s10}の長老に、 {s12}を{s13}まで連れて行くよう、頼まれた。
+qst_move_cattle_herd|{s12}を{s13}まで護衛せよ
+qst_move_cattle_herd_text|{s10}の長老に、 {s12}を{s13}まで護衛するよう、 頼まれた。
 qst_escort_merchant_caravan|{s8}への補給隊を護衛せよ
 qst_escort_merchant_caravan_text|補給隊を{s8}まで護衛する。
 qst_deliver_wine|{s4}へ{s6}を{reg5}ユニット届けよ
@@ -70,5 +70,5 @@ qst_treebeard_kill_orcs|木を伐採しているオークの一団を倒せ
 qst_treebeard_kill_orcs_text|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木のひげに頼まれた。
 qst_oath_of_vengeance|復讐の誓い
 qst_oath_of_vengeance_text|{s1}の死に大いに怒ったあなたは、 {s2}の軍勢に対する復讐を誓った。 あなたはこれからの数日間、 できるだけ多くの{s2}の部隊を 殲滅しなければならない。 多くの部下があなたの誓いを目撃しているため、 失敗すれば、 誓いを破った者として 汚名を着せられることになるだろう。 さあ血の狂乱を始めるのだ！
-qst_deliver_gift|{s2}からの{s1}の{s4}を{s3}に届けよ
-qst_deliver_gift_text|{s2}からの{s1}の{s4}を{s3}に届けるように頼まれた。
+qst_deliver_gift|{s2}からの{s1}の{s4}を、 {s3}に届けよ
+qst_deliver_gift_text|{s2}からの{s1}の{s4}を、 {s3}に届けるように頼まれた。

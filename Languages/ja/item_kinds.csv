@@ -649,7 +649,7 @@ itm_khand_med_lam_d|ハンドの薄金鎧
 itm_khand_noble_lam|ハンドの上級鎧
 itm_variag_greaves|ヴァリアグのすね当て
 itm_khand_axe_great|ハンドの大斧
-itm_khand_axe_winged|ハンドのウイング斧
+itm_khand_axe_winged|ハンドの両刃斧
 itm_khand_halberd|ハンドのハルバード
 itm_khand_trident|ハンドの刺又
 itm_khand_voulge|ハンドのブージ
@@ -843,11 +843,11 @@ itm_galadriel|ガラドリエルの衣装
 itm_ent_water|おわんに入った奇妙な水
 itm_map|中つ国の地図
 itm_athelas_reward|アセラスの鉢植
-itm_phial_reward|ガラドリエルの光
+itm_phial_reward|玻璃瓶
 itm_scroll_reward|ゴンドリンの滅亡
 itm_hammer_reward|鍛冶屋の槌
 itm_khand_knife_reward|ハンドのいけにえのナイフ
-itm_angmar_whip_reward|調教師のムチ
+itm_angmar_whip_reward|支配者のムチ
 itm_horn_gondor_reward|ゴンドールの角笛
 itm_harad_totem_reward|ハラドのトーテム
 itm_elven_amulet_reward|エルフのお守り
@@ -858,7 +858,7 @@ itm_mearas_reward|メアルスタリオン
 itm_sword_of_arathorn|アラソルンの剣
 itm_riv_armor_reward|リヴェンデルの細工入り鎧
 itm_westernesse1h_reward|西方国の剣
-itm_westernesse2h_reward|大サーペントの剣
+itm_westernesse2h_reward|大蛇の剣
 itm_mirkwood_sword_reward|緑森の遺剣
 itm_nazgul_sword|ナズグールの剣
 itm_cooking_cauldron|料理用の大なべ

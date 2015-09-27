@@ -1,5 +1,5 @@
 dlga_start:mutiny_pretalk_1|おい、{playername}。 話があるんだけどさ・・・ ^みんな不満たらたらなんだぜ！ あちこち歩き回るばっかりで、 楽しいことないのかよ。
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|隊列を乱すな、この虫けらめ！ いま我々は戦争中で、私は貴様らの指揮官だぞ！
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|隊列を乱すな、この虫けらめ！ いま我々は戦争中で、私はおまえたちの指揮官だぞ！
 dlga_mutiny_pretalk_2:close_window|へえ、おおせのとおりに、 指揮官どの、 おおせのとおりに・・・
 dlga_start:mutiny_talk_1|なあ、指揮官どの。 話があるんだけどさ・・・ みんなだいぶ機嫌が悪いぜ、 大大不機嫌だ！ ^ろくに人間の肉は食べれないし、 楽しいこともあんまりない。^みんなあんたは無能だって言ってるぜ、 指揮官どの！
 dlga_mutiny_talk_1:mutiny_talk_2|なんだと？ 上官に逆らおうというのか？^死をもって償わせるぞ、 このウジ虫めが！
@@ -35,7 +35,7 @@ dlga_treebeard_introduce_2:treebeard_introduce_3|邪魔をしてすまない・�
 dlga_treebeard_introduce_3:treebeard_introduce_4|(手足のこわばった巨大な木は、 ちいさい枝だとか木の葉、 苔に覆われた口を、 ゆっくりと開いた。 深く、 ゆっくりとした、 一面にとどろく声で、 大きな威圧感を感じる語り口だった:)^'フゥゥゥム・・・ フムム・・・ *わし*の名は語らぬ・・・ 語る機会もないだろう。 長くかかりすぎてのう。 わしの名は常に長く増え続けていて、 そしてわしはとても長く生きてきた。 だから、 わしの名は物語のようなのだ。 わしの本当の名には、 おまえたちがエント語と呼ぶ、 我々の言葉で、 さまざまな出来事が語られておる。 美しい言葉なのだが、 何か意味のある事を言おうとすると、 とても長くかかる。 我々は、 長い時間をかけて語る意義があって、 かつ長い時間をかけてそれを聞く意義があるときだけ、 長い時間をかけて意味のある事を語るのだ。'
 dlga_treebeard_introduce_4:treebeard_introduce_5|おお、あなたはエントか！ 多くの伝説で語られるあなたに会えるとは、 光栄だ。 邪魔をする気はないのだ、 何なら私はすぐにここを立ち去ろう。
 dlga_treebeard_introduce_5:treebeard_questtalk|(四肢のこわばった巨人と彼の同胞のエントたちは、 そよ風が彼らの髪やひげをなびかせるにまかせながら、 数十分の間、 沈黙を保って立っていた。 しばらくしてようやくお互いを見やったかと思うと、 エントにしてはめずらしい、 気の短そうな、 ナナカマドを思わせる木がしゃべりたそうにし始めた。 しかし、 彼より先に四肢のこわばったエントが再び話をはじめた:)
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?さきほど話したように・・・ :フゥゥゥム・・・ おまえの礼儀正しい態度は好ましい。 {reg1?おまえの種族にしてはめずらしい事だ:再びエルフと話す事ができるのはうれしく思う}。} エントの女たちがいなくなって以来、 時勢はよくない。 冥王によって放たれた、 よこしまな生き物たちが、 我らの住みかを破壊しようとしている。 素早く、かつあわて者ではない者が必要だ。 我々が次の手を話合っている間、 我々を助けてくれる者が必要だ。^たくさんのオークの群れが森に侵入し、 火の矢によって木々を焼き払っている。 もしオークたちを退治し、 木々への脅威を取り除いてくれれば、 我々は大いに感謝し、 おぬしを真の友人とするだろう。 オークを退治してくれたら、また話をしよう。
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?さきほど話したように・・・ :フゥゥゥム・・・ おまえの礼儀正しい態度は好ましい。 {reg1?おまえの種族にしてはめずらしい事だ:再びエルフと話す事ができるのはうれしく思う}。} エントの女たちがいなくなって以来、 時勢はよくない。 冥王によって放たれた、 よこしまな生き物たちが、 我らの住みかを破壊しようとしている。 素早く、かつあわて者ではない者が必要だ。 我々が次の手を話合っている間、 我々を助けてくれる者が必要だ。^たくさんのオークの群れが森に侵入し、 火の矢によって木々を焼き払っている。 もしオークたちを退治し、 木々への脅威を取り除いてくれれば、 我々は大いに感謝し、 おまえを真の友人とするだろう。 オークを退治してくれたら、また話をしよう。
 dlga_treebeard_quest_brief:close_window|オークはまったく下劣な生き物だ。やつらが二度と森に危害を加えないよう、懲らしめてこよう。
 dlga_treebeard_quest_brief:treebeard_pretalk|申し訳ないが、今はこのような事にかまけるわけにはいかないのだ。
 dlga_treebeard_questtalk:close_window|(エントの長老はゆっくりと口を開き、 他のエントたちもあなたに視線を落として、 かすかに地面を揺らす、 ゆっくりと長く、 深い音を発した。 エントたちは笑っているのだ、 とあなたは思った。 比較的若い、 ナナカマドの木に似たエントが、 つま先の七つついた彼の大きな足で地面を踏みつけると、 地面が揺れ、 あなたはあやうく尻餅をつきそうになった。^'待て、せっかち、 このわれらの友人の若い戦士が怪我をしたらどうする。 フゥゥゥム・・・ わしは木のひげ、 エントの最長老だ。 おまえの助けには皆、 感謝している・・・ フゥゥゥム・・・ 今回の成功を祝って、 エント水をおまえに贈ろう。'
@@ -53,7 +53,7 @@ dlga_treebeard_about_ents:treebeard_pretalk|フルゥゥゥム・・・わしら
 dlga_start:close_window.1|ムムムムム？
 dlga_start:close_window.2|ムムゥゥルムムム？
 dlga_start:close_window.3|ムムムルゥルルゥムム？
-dlga_start:looters_2_join|{s4}の力にひれ伏し、私に仕えよ！
+dlga_start:looters_2_join|{s4}の力にひれ伏し、われに仕えよ！
 dlga_looters_2_join:close_window|我々はあなたに従います、ご主人様。
 dlga_start:close_window.4|^^咆哮！^^
 dlga_start:member_castellan_talk|ごきげんよう、{playername}殿。 ご用件は？
@@ -133,16 +133,16 @@ dlga_player_hire_troop:player_hire_troop_give|私の部下のうち数名は、{
 dlga_player_hire_troop:close_window|守備兵の確認をしたい。
 dlga_player_hire_troop:close_window.1|訓練をしたい。
 dlga_player_hire_troop:tld_sell_prisoners|捕虜を連行してきた。
-dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} さて、哀れなゴミどもの顔を見てやろうか。
-dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|捕虜台帳を確認させてもらおう・・・
-dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|気が変わったのか、ん？
-dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|こやつらが牢獄から逃げ出さないよう、 私が責任を持って管理しよう。
+dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} さて、哀れな囚人どもの顔を拝むとしましょうか。
+dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|捕虜台帳を確認させて頂きます・・・
+dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|気が変わったのですか？
+dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|こやつらが牢獄から逃げ出さないよう、 私が責任を持って管理しましょう。
 dlga_player_hire_troop:close_window.2|さようなら。
-dlga_player_hire_troop_pre_pre_nextcycle:player_hire_troop_pre_nextcycle|名簿を確認させてもらおう・・・
-dlga_player_hire_troop_pre_nextcycle:player_hire_troop_nextcycle|そうか、気が変わったのだな・・・^なるほど。
-dlga_player_hire_troop_reunite:player_hire_troop_reunite_1|兵の名簿を確認させてもらおう・・・
-dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle|そうか、気が変わったのだな・・・^なるほど。
-dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|ここでは彼らは不要だ・・・^引き取ってもらおう。
+dlga_player_hire_troop_pre_pre_nextcycle:player_hire_troop_pre_nextcycle|名簿を確認させて頂きます・・・
+dlga_player_hire_troop_pre_nextcycle:player_hire_troop_nextcycle|そうですか、気が変わったのですね・・・^なるほど。
+dlga_player_hire_troop_reunite:player_hire_troop_reunite_1|兵の名簿を確認させて頂きます・・・
+dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle|そうですか、気が変わったのですね・・・^なるほど。
+dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|ここでは彼らは不要です・・・^引き取って頂きたい。
 dlga_player_hire_troop_nextcycle:player_hire_troop|他には何か？
 dlga_start:player_siege_castle_commander_1|何か用か？
 dlga_player_siege_castle_commander_1:player_siege_ask_surrender|降伏せよ！そちらに勝ち目はないぞ！
@@ -157,7 +157,7 @@ dlga_player_siege_ask_surrender_treatment_accept:close_window|よかろう。そ
 dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_accept|誓おう。城を明け渡せば危害は加えない。
 dlga_player_siege_ask_leave_unmolested_accept:close_window|よかろう。城は明け渡す。 今回はおぬしらの勝ちだ。 また戦場で会おう。
 dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_reject|それは受け入れられない。 おぬしらには捕虜となってもらう。
-dlga_player_siege_ask_leave_unmolested_reject:close_window|ならばこの城を枕に討ち死にするのみ。 交渉はこれまでだ。 さらば。
+dlga_player_siege_ask_leave_unmolested_reject:close_window|ならばこの城を枕に討ち死にするのみ。 交渉はこれまでだ。さらば。
 dlga_defeat_lord_answer:defeat_lord_answer_1|おぬしは我らが捕虜となった。
 dlga_defeat_lord_answer_1:close_window|好きにするがいい。
 dlga_defeat_lord_answer:defeat_lord_answer_2|おぬしはよく戦った。 解放してやろう。
@@ -262,7 +262,7 @@ dlga_lord_give_troops_check_1:lord_pretalk.1|この兵は我が軍には不要�
 dlga_lord_talk:lord_get_reward_item_ask|宝物を所望したい。
 dlga_lord_get_reward_item_ask:lord_talk|おぬしのインベントリには空きがない様子。 空きを確保してからまた来るがいい。
 dlga_lord_get_reward_item_ask:lord_get_reward_item|ほう？ 宝物を持つにふさわしいとされる者には、 相応のランクである事と、 少なからぬ影響力を持っている事が求められる。^どれを所望するのだ？
-dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [{reg14}/{reg15}の影響力を消費します]
+dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}:{s20} [{reg14}/{reg15}の影響力を消費します]
 dlga_lord_get_reward_item:lord_pretalk|では取り消します。
 dlga_lord_get_reward_item_answer:lord_pretalk|よかろう。 それをもって敵を打ち破る助けとするがよい。
 dlga_lord_talk:marshall_ask|戦争について協議をしたい。
@@ -273,7 +273,7 @@ dlga_marshall_ask:lord_pretalk.3|我々は今、任務遂行中なのだ、 {pla
 dlga_marshall_ask:marshall_suggest|聞こう、{playername}。 提案とは何か？
 dlga_marshall_suggest:marshall_answer|いますぐ{s1}を包囲するべきだ。
 dlga_marshall_suggest:lord_pretalk|なんでもない、そちらの判断にまかせる。
-dlga_marshall_answer:close_window|いいだろう、 {playername}、 ここはおぬしの意見に従おう。 我が軍の各部隊に伝令を飛ばすとしよう。^私に同行するがよい。 これより{s4}を目指して進軍する！
+dlga_marshall_answer:close_window|いいだろう、 {playername}、 ここはおぬしの意見に従おう。 我が軍の各部隊にも伝令を飛ばすとしよう。＝^おぬしは私に同行するがよい。 これより{s4}を目指して進軍する！
 dlga_lord_talk:deliver_gift_1|{s3}より{s2}の民への贈り物として、{s1}を預かって参りました。
 dlga_send_gift_1:lord_pretalk|おぬしはすでに{s4}だ、 {playername}。 そちらのほうを先に届けるがよい。
 dlga_send_gift_1:lord_pretalk.1|残念だが、今贈り物をすることはできないようだ、{playername}。^^[リソースポイントが足りません]
@@ -314,7 +314,7 @@ dlga_lord_tell_objective:lord_pretalk|私が何をしているか、だと？ �
 dlga_lord_tell_objective:lord_pretalk.1|いま私が指揮する配下はいない。
 dlga_lord_tell_objective:lord_pretalk.2|我々は{s1}{s5}で 休息をとっているところだ。
 dlga_lord_tell_objective:lord_pretalk.3|我々は{s1}{s5}を目指して 移動中だ。
-dlga_lord_tell_objective:lord_pretalk.4|々は{s1}で 兵を募っているところだ。
+dlga_lord_tell_objective:lord_pretalk.4|我々は{s1}で 兵を募っているところだ。
 dlga_lord_tell_objective:lord_pretalk.5|我々は{s1}{s5}周辺の偵察中だ。
 dlga_lord_tell_objective:lord_pretalk.6|いま{s1}の村を 焼き払っているところだ。
 dlga_lord_tell_objective:lord_pretalk.7|{s1}へ退却中だ。
@@ -322,7 +322,7 @@ dlga_lord_tell_objective:lord_pretalk.8|我々は{s1}{s5}を 攻撃している�
 dlga_lord_tell_objective:lord_pretalk.9|我々は{s1}{s5}と 戦っている最中だ。
 dlga_lord_tell_objective:lord_pretalk.10|我々は{s1}{s5}に　同行しているところだ。
 dlga_lord_tell_objective:lord_pretalk.11|次なる目標を 検討しているところだ。
-dlga_lord_tell_objective:lord_pretalk.12|知らん。: {reg1} {s1}
+dlga_lord_tell_objective:lord_pretalk.12|知らん。:{reg1} {s1}
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|お方さま、闇の森の妖術師は倒しました。
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|お許しください、お方さま。 急用に手を取られている間に、 妖術師に逃げられてしまいました。
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|闇の森の妖術師は、 まだ生きています。 やつの儀式の最中を襲いましたが、 逃げられてしまいました。
@@ -363,8 +363,8 @@ dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoc|そのよう�
 dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_accepted|野生のトロルを手に入れてご覧に入れます、ご主人様。
 dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_rejected|ご主人様、どうかご勘弁を！あのような化け物が相手では、虫のように潰されてしまいます！
 dlga_lord_mission_capture_troll_infoa:lord_mission_capture_troll_3|このような血と闇の時代には、 洞窟に住む野生のトロルどもは興奮し、 霧ふり山脈にある巣から這い出して徘徊しておるはずだ・・・ あのあたりの洞窟を探すとよかろう。
-dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|見つけたら、力ずくで倒すのだ。 手加減の必要はない: トロルはあまりにも丈夫で、 通常の武器ではすぐに殺すことはできない・・・ それに、 あやつらは驚異的な、 おぬしの想像を上回る回復力を持っておる。 トロルがみずからの血の海に倒れたら、 我らの許へ運ぶのだ。 息のあるうちにな。
-dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|おぬしには、車輪のついた、 頑丈な檻をもたせよう。 トロルを入れるだけの余裕はじゅうぶんあるうえ、 引きずり回すことができる。 ここへ戻る際には急ぐのだ: 鉄でできた檻ですら、 怒りと苦痛で猛るトロルに対しては万全とは言えぬ。 檻を抜け出しておぬしに襲いかからないよう、 じゅうぶん気をつけるのだ。
+dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|見つけたら、力ずくで倒すのだ。 手加減の必要はない。 トロルはあまりにも丈夫で、 通常の武器ではすぐに殺すことはできない・・・ それに、 あやつらは驚異的な、 おぬしの想像を上回る回復力を持っておる。 トロルがみずからの血の海に倒れたら、 我らの許へ運ぶのだ。 息のあるうちにな。
+dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|おぬしには、車輪のついた、 頑丈な檻をもたせよう。 トロルを入れるだけの余裕はじゅうぶんあるうえ、 引きずり回すことができる。 ここへ戻る際には急ぐのだ。 鉄でできた檻ですら、 怒りと苦痛で猛るトロルに対しては万全とは言えぬ。 檻を抜け出しておぬしに襲いかからないよう、 じゅうぶん気をつけるのだ。
 dlga_lord_mission_capture_troll_rejected:lord_pretalk|とうに見抜いてはいたが、 本性を見せよったか。 弱く、臆病な{playername}。 去れ。
 dlga_lord_mission_capture_troll_accepted:lord_pretalk|おぬしの強さと勇猛さは頼りに出来ると常々考えておった。 これ奴隷ども、 {playername}に、 あの車輪つきの檻をひとつ用意するのだ！ {playername}、 わしへの贈り物を捕らえたら、 ここへ戻るのだ。 わしは{reg1}回目の夜明けを見るまえに贈り物が欲しい。
 dlga_lord_tell_mission:lord_tell_mission_kill_troll|このような危機は、我々の世代では聞いた事がない。 {s3}の周辺で、 人々が行方不明になっているのだ。 一般の民だけではない、 調査に行った小規模の部隊にも戻ってこない部隊がある。 いろいろな噂が飛び交っているが、 私は何が起こっているのかを把握している。
@@ -379,7 +379,7 @@ dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_rejecte
 dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|もしかすると、 わしの下僕どもが、 脱走する卑怯者どもにまんまと逃げられただけなのかも知れぬ。 迷信に心を奪われた愚か者どもめ。 あるいは、 木々の合間に巧妙に隠れる術を知る、 狡猾なエルフどもの仕業か。 ひょっとすると、 ローハンの卑しい裏切り者どもの仕業かも知れぬ。 可能性を探っていたら、 きりがないのう。 {playername}、 おぬし、 調査してまいれ。
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepted|エルフだろうが精霊だろうが、怖れるに足りません。私にお任せください、ご主人様。
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|ご主人様、どうかこの哀れな下僕にお慈悲を！あのような呪われた地へ行けとは、あんまりです！
-dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|そうか、 おぬしも他の虫けらどもと一緒か: 迷信に惑わされる、 生きる価値もない臆病者。 おぬしを買いかぶっていたようだ。 すぐにここから去れ！
+dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|そうか、 おぬしも他の虫けらどもと一緒か。 迷信に惑わされる、 生きる価値もない臆病者。 おぬしを買いかぶっていたようだ。 すぐにここから去れ！
 dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|うむ。 この一連の不可解を明らかにせよ。 そうしたらまたここへ来て報告するがよい。 わしは{reg1}回目の夜明けを見る前におぬしの報告が欲しい。
 dlga_lord_tell_mission:lord_mission_find_lost_spears|おぬしのような信頼のおける、 勇敢な指揮官への任務があるぞ、 {playername}。 我々はリューンの軍勢に対して、 装備の面で劣っている。 我が軍は敗戦に次ぐ敗戦だ。 伝説によれば、 その昔、 大王ブラードルシン(遠い昔に死去している)の軍のために、 ドワーフたちが槍を鍛えたというのだが、 それらは三度鍛えた穂を持ち、 柄には目を見張るような金の彫刻が施されていたそうな。 しかしそれらの槍は引き渡される事も、 代金を支払われる事もなかったという・・
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|それで、私に何をしろというのでしょう、閣下？
@@ -595,7 +595,7 @@ dlga_trainer_explain_attack:trainer_explain_attack_2|よく聞いてくれまし
 dlga_trainer_explain_attack_2:trainer_explain_attack_3|それは使えそうだ。
 dlga_trainer_explain_attack_3:trainer_explain_attack_4|いい戦法ですが、 相手に見透かされて、 攻撃方向に対して防御の姿勢をとられる可能性もある。 もしそうなったら、 攻撃を中断して素早く他の攻撃方向を選択しなければなりません。 [マウスの右ボタンを素早くクリックすることで、 現在の攻撃をキャンセルできます]。
 dlga_trainer_explain_attack_4:trainer_explain_attack_5|もし相手が自分の攻撃方向に対して防御の姿勢をとっている場合は、 攻撃を中断して別の攻撃方向を選択する必要がある、と。
-dlga_trainer_explain_attack_5:trainer_combat_pretalk|そうです、 攻撃方向の選択は、 極めて重要な技術です。 攻撃方向には4種類あります: 右へのなぎ払い、 左へのなぎ払い、 上段からの振り下ろし、 そして突きです。 これらはよく考えて選択しなければならない。 [振りの方向を選択するには、 デフォルトの設定ではマウスの左ボタンを押す直前に、 武器の攻撃方向へマウスを移動させます]。
+dlga_trainer_explain_attack_5:trainer_combat_pretalk|そうです、 攻撃方向の選択は、 極めて重要な技術です。 攻撃方向には4種類あります。 右へのなぎ払い、 左へのなぎ払い、 上段からの振り下ろし、 そして突きです。 これらはよく考えて選択しなければならない。 [振りの方向を選択するには、 デフォルトの設定ではマウスの左ボタンを押す直前に、 武器の攻撃方向へマウスを移動させます]。
 dlga_trainer_explain_horseback:trainer_combat_pretalk|非常に良い質問です。 馬は戦士にとって、 戦闘をするうえでの最強の武器でしょう。 馬によって移動速度、 高さ、 破壊力、 それと主導権を手に入れることができる。 多くの武器は、 馬上で使うことによってその破壊力を大いに増します。 しかしながら、 相手が馬上にてランスを構えていた場合、 そのどんな相手も一撃必殺の破壊力には、 特に注意を要します。 [ランスを構えるには、 ランスかそれと同等の武器を装備し、 攻撃ボタンも防御ボタンも押さずに馬を走らせます。 ある一定の速度に達すると、 あなたは自然にランスを低く構えます。 そうしたら、 馬を操作してランスを敵に当ててください。]
 dlga_trainer_choose_mode:trainer_choose_mode_player|兵士たちの技術向上のために、 ここでは訓練にいくつかの種類を用意しています。 一本勝負では、 あなたひとりで一人から四人の相手をしていただきます。 団体戦では、 お互い4人から12人づつ二手に分かれて戦います。 最後に、 ガントレットと呼ばれる、 戦士にとって最大の挑戦と言える訓練があります。 あなたひとりで対戦相手の波をさばいてもらいますが、 回を追うごとに相手の人数が増えていきます。 大勢での殴り合いは、 単なる入り乱れての大喧嘩です。^どれにしますか？
 dlga_trainer_choose_mode_player:trainer_choose_opponents|一本勝負
@@ -680,7 +680,7 @@ dlga_merchant_quest_requested:merchant_quest_brief.2|お申し出に感謝しま
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|我々の食料の在庫が心細くなってきたのですが、 敵が我々の補給隊に待ち伏せ攻撃をするのです。 {reg6}日以内に食料を{reg5}ユニット手に入れないと、 我々は食べるものがなくなってしまうでしょう。 この付近の友好的な拠点には 我々に食料を供給してくれるだけの余裕が あるかも知れません。 引き受けていただけますか？
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|わかった。食料を調達してこよう。
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|悪いが、他をあたってくれ。
-dlga_merchant_quest_requested:merchant_quest_brief.3|仕事ですか？ 実は、 鉱石と金属を供給してくれるひとを探しているんです。 今や鉱山や道路は安全な場所とは言えなくなってしまい、 鉄鉱資源の確保がどんどん困難になっています。 敵勢はご存知のように、 下級のオーク兵ですら金属を身に付けています。 おそらく世に知られていない、 なんらかの効率の良い方法で鉱石を採取しているのではないかと思います。 彼らの使う金属の品質は、 彼ら相応のものです: 品質は低く、 我々の水準では信頼性が低すぎて、 通常なら実用に向かないと判断するような、 安っぽい鉄です。 しかし、 この非常時ですから、 我々の精錬工たちも、 必要とあらば低品質の金属資源も有効に利用できるよう、 工夫を重ねました。 何ひとつ無駄にはできないのです。
+dlga_merchant_quest_requested:merchant_quest_brief.3|仕事ですか？ 実は、 鉱石と金属を供給してくれるひとを探しているんです。 今や鉱山や道路は安全な場所とは言えなくなってしまい、 鉄鉱資源の確保がどんどん困難になっています。 敵勢はご存知のように、 下級のオーク兵ですら金属を身に付けています。 おそらく世に知られていない、 なんらかの効率の良い方法で鉱石を採取しているのではないかと思います。 彼らの使う金属の品質は、 彼ら相応のものです。 品質は低く、 我々の水準では信頼性が低すぎて、 通常なら実用に向かないと判断するような、 安っぽい鉄です。 しかし、 この非常時ですから、 我々の精錬工たちも、 必要とあらば低品質の金属資源も有効に利用できるよう、 工夫を重ねました。 何ひとつ無駄にはできないのです。
 dlga_merchant_quest_requested:merchant_quest_brief.4|仕事ですか？ ご主人様は毎日のように兵を要求されるが、 どの兵もご主人様の納得されるような水準にない・・・ しかし、 防具は自然に体から生えてくるわけではない、 そうでしょう？^鉱石の確保を担当する役立たずどもは、 弱くて当てにならず、 簡単に殺される。 そのせいで資源が我々のもとまで届かない。 しかし、 あの人間ども、 エルフどもは・・・ 彼らは下級の兵にいたるまで、 まるで全員が王のように、 輝く貴重な鉄を身にまとっている・・・^やつらの死体から鉄をはぎとり、 もってきて頂きたい、 {playername}殿。 あの鉄がひと塊あるだけで、 我々の精錬工どもは戦士ひと群れ分の資源を作る事ができる。
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|鍛冶師たちの鉄鉱の在庫を切らさないよう、 我々は{reg6}日以内に {reg5}ユニットの {s6}を確保する必要がある。 どうかね？
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|いいだろう。鉄くずをかき集めて、ここに運んでこよう。
@@ -783,7 +783,7 @@ dlga_start:close_window.25|面倒は起こすなよ。
 dlga_start:hall_guard_easter_egg|ああ、真夜中を過ぎましたね。 最近、変わった出来事があったんです。 聞きたいですか？
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|{ああ/ええ}、話して{くれ/}。
 dlga_hall_guard_easter_egg:close_window|{いや/結構よ}、うわさ話には興味がない{んだ/の}。
-dlga_hall_guard_easter_egg_scene:close_window|それが・・・ 最近、 一風変わった冒険者の一行が、 ここを訪れたんです: 人間がひとり、 ドワーフがひとり、 エルフがひとり、 そして・・・
+dlga_hall_guard_easter_egg_scene:close_window|それが・・・ 最近、 一風変わった冒険者の一行が、 ここを訪れたんです。 人間がひとり、 ドワーフがひとり、 エルフがひとり、 そして・・・
 dlga_start:hall_guard_talk|指揮官殿、ご命令は？
 dlga_start:close_window.26|任務中は話をしない決まりになっています、指揮官殿。
 dlga_hall_guard_talk:hall_guard_duty|任務を続けてくれ。誰か私に会いに来る者がいたら、教えてくれ。
@@ -841,5 +841,5 @@ dlga_view_char:free|他には何か？
 dlga_end:close_window|[完了]
 dlga_start:threaten_1|命が惜しければ、武器をその場に落とし、降伏せよ
 dlga_threaten_1:end|戦わずに降伏などありえぬ
-dlga_free:close_window| さらば。
-dlga_free:close_window.1| [立ち去る]
+dlga_free:close_window|さらば。
+dlga_free:close_window.1|[立ち去る]

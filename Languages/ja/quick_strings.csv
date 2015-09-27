@@ -25,35 +25,35 @@ qstr_Ready|戦闘可能
 qstr_Wounded|負傷
 qstr_Dead|死亡
 qstr_Routed|離脱
-qstr_Number_of_men_knocke|気絶した兵: {reg1}
-qstr_Number_of_men_left:_|戦闘可能な兵: {reg1}
-qstr_Opponents_Beaten:_{r|倒した敵兵: {reg1}
-qstr_Opponents_Remaining:|敵兵残り: {reg1}
+qstr_Number_of_men_knocke|気絶した兵:{reg1}
+qstr_Number_of_men_left:_|戦闘可能な兵:{reg1}
+qstr_Opponents_Beaten:_{r|倒した敵兵:{reg1}
+qstr_Opponents_Remaining:|敵兵残り:{reg1}
 qstr_Gauntlet_wave:_1|ガントレット人数:1名
 qstr_Gauntlet_wave:_{reg1|ガントレット:第{reg1}波
 qstr_Remain_in_retirement|このまま引退する
 qstr_Go_back_to_the_adven|冒険に戻る
 qstr_You_have_retired_at_|{reg5}日間に渡る冒険を終え、 あなたはレベル{reg4}で引退しました。
 qstr_Effect_on_Score|スコア内訳
-qstr_Settlements_owned_by|領有した拠点の数: {reg0}
+qstr_Settlements_owned_by|領有した拠点の数:{reg0}
 qstr_{reg0?+:}{reg0}|{reg0?+:}{reg0}
-qstr_Friendly_Settlements|友好的な拠点: {reg0}
-qstr_Hostile_Settlements:|敵対している拠点: {reg0}
+qstr_Friendly_Settlements|友好的な拠点:{reg0}
+qstr_Hostile_Settlements:|敵対している拠点:{reg0}
 qstr_{reg0}|{reg0}
-qstr_Friendly_Lords:_{reg|友好的なロード: {reg0}
-qstr_Enemy_Lords:_{reg0}|敵対するロード: {reg0}
-qstr_Victories:_{reg0}|勝利数: {reg0}
-qstr_Defeats:_{reg0}|敗北数: {reg0}
-qstr_Quests_Completed:_{r|達成したクエスト: {reg0}
-qstr_Companions_Found:_{r|出合ったコンパニオン: {reg0}
-qstr_Companions_Lost/Depa|失った/離脱したコンパニオン: {reg0}
-qstr_Wealth:_{reg0}_denar|金: {reg0}デナール
-qstr_Inventory:_{reg0}_de|インベントリ: {reg0}デナール
-qstr_Experience:_{reg0}|経験値: {reg0}
-qstr_Days_Passed:_{reg0}|冒険日数: {reg0}
-qstr_Difficulty:_{reg0}%|難易度: {reg0}%
+qstr_Friendly_Lords:_{reg|友好的なロード:{reg0}
+qstr_Enemy_Lords:_{reg0}|敵対するロード:{reg0}
+qstr_Victories:_{reg0}|勝利数:{reg0}
+qstr_Defeats:_{reg0}|敗北数:{reg0}
+qstr_Quests_Completed:_{r|達成したクエスト:{reg0}
+qstr_Companions_Found:_{r|出合ったコンパニオン:{reg0}
+qstr_Companions_Lost/Depa|失った/離脱したコンパニオン:{reg0}
+qstr_Wealth:_{reg0}_denar|金:{reg0}デナール
+qstr_Inventory:_{reg0}_de|インベントリ:{reg0}デナール
+qstr_Experience:_{reg0}|経験値:{reg0}
+qstr_Days_Passed:_{reg0}|冒険日数:{reg0}
+qstr_Difficulty:_{reg0}%|難易度:{reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
-qstr_TOTAL_SCORE:_{reg0}|トータルスコア: {reg0}
+qstr_TOTAL_SCORE:_{reg0}|トータルスコア:{reg0}
 ; qstr_______|      
 qstr_A_peaceful_village_n|ウェストフォルドから遠くない、とある平和な村・・・
 qstr_The_War_is_upon_Roha|戦争の魔の手がローハンを襲う！
@@ -111,7 +111,7 @@ qstr_You_were_wounded_in_|あなたはファンゴルンの森で負傷しまし
 qstr_Volunteers|予備兵
 qstr_{s1}_of_{s3}_was_def|{s3}の{s1}が戦いに敗れました。
 qstr_{s2}_have_razed_{s1}|{s2}が{s1}を壊滅させました！
-qstr_Left_for_dead_but_mi|瀕死の状態で放置されていましたが、奇跡的に生き延びました: {reg1?{reg1} 時間{reg2?s:}:NEVER}
+qstr_Left_for_dead_but_mi|瀕死の状態で放置されていましたが、奇跡的に生き延びました。 {reg1?{reg1} 時間{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1リソースポイント({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1}リソースポイント({s2})
 qstr_+30_to_Party_Morale|パーティの士気に+30
@@ -126,13 +126,13 @@ qstr_+1_to_Weapon_Mastery|武器熟練スキルに+1
 qstr_+1_to_Wound_Treatmen|治療スキルに+1
 qstr_+1_to_Tactics|戦略スキルに+1
 qstr_+1_to_Power_Strike|強打スキルに+1
-qstr_when_equipped|装備中
+qstr_when_equipped|（要装備）
 qstr_+1_to_Strength|体力に+1
 qstr_+1_to_Agility|敏捷性に+1
 qstr_+1_to_Leadership|統率力スキルに+1
 qstr_+1_to_Power_Draw|弓術スキルに+1
 qstr_+1_to_Trainer|訓練スキルに+1
-qstr_Recruits_Tribal_Orcs|部族オークを徴用
+qstr_Recruits_Tribal_Orcs|部族オークを徴用可能
 qstr_rally|奮い起こして
 qstr_rallies|奮い起こして
 qstr_+{reg1}_{s3}_in_batt|戦闘時に{s3}に+{reg1}
@@ -145,7 +145,7 @@ qstr_+2_to_Crafting|技術者スキルに+2
 qstr_+3_to_Spotting|観測術スキルに+3
 qstr_Less_Beorning_upkeep|ビヨルン一党の維持費が低下
 qstr_Less_Dunnish_upkeep|褐色人の維持費が低下
-qstr_Less_Wargs_upkeep|ワーグ兵の維持費が低下
+qstr_Less_Wargs_upkeep|ワーグ騎兵の維持費が低下
 qstr_+{reg1}_to_Party_Mor|パーティの士気に+{reg1}
 qstr_Do_you_want_to_disem|上陸しますか？
 qstr_Move_here|ここへ移動
@@ -163,16 +163,16 @@ qstr_routed|離脱
 qstr_wounded|負傷
 qstr_None|なし
 qstr_^None|^なし
-qstr_near_the_Great_East_|東街道のちかく、 荒れ果てたむかしの道
-qstr_near_what_is_left_of|その一部をかろうじて残す古森街道の近く、 この深い森をかつて横切っていた古のドワーフ道
+qstr_near_the_Great_East_|東街道の近くにある、 荒れ果てたむかしの道
+qstr_near_what_is_left_of|その一部をかろうじて残す古森街道の近くにある、 かつてこの深い森を横切っていた古のドワーフ道
 qstr_close_to_the_Hand_sh|オルサンクの塔の方角を指し示す、 手の形をしたサルマンの印の近く
 qstr_in_sight_of_the_maje|白の都、ミナス・ティリスの壮大な城壁を望む場所
 qstr_in_sight_of_the_entr|ドワーフの要塞、エレボールの城門を望む場所
 qstr_in_sight_of_the_dark|闇の塔、オルサンクを望む場所
-qstr_near_the_Old_Ford_wh|むかしの渡り場の近く、古森街道がアンドゥインの大河を渡るところ
+qstr_near_the_Old_Ford_wh|むかしの渡り場の近くの、 古森街道がアンドゥインの大河を渡るところ
 qstr_near_a_big_ford_cros|大きな浅瀬が{s15}の川を渡るところ
 qstr_near_a_small_ford_cr|小さな浅瀬が{s15}の川を渡るところ
-qstr_Battle_Advantage:_{r|この戦闘の優位性: {reg0}。
+qstr_Battle_Advantage:_{r|この戦闘の優位性:{reg0}。
 qstr_{s9}_wants_you_to_re|{s9}は、次の指示があるまで、再び彼の軍に同行するよう求めています。
 qstr_Rohan_capital_moved_|ローハンがエドラスから角笛城へ、遷都をしました！
 qstr__Being_Raided_|(襲撃されています)
@@ -182,12 +182,12 @@ qstr_{s3}_is_no_longer_un|{s3}の包囲が解かれました。
 qstr_Enemies_spotted_near|{s1}付近で敵勢を発見しました。
 qstr_Your_relation_with_{|あなたと{s1}の関係が向上しました。
 qstr_Your_relation_with_{s|あなたと{s1}の関係が悪化しました。
-qstr_{s2}_{reg3?was:is_cu|{s2}は{s3}に{reg3?いた:現在いる}。
-qstr_{s2}_{reg3?was:is}_t|{s2}は{s3}を目指し、 {reg3?:現在}{s4}付近を移動中{reg3?だった:だ}。
-qstr_{s2}_{reg3?was:is}_i|{s2}は{reg3?:現在}{s4}付近に{reg3?いた:いる}。
-qstr_{s2}_{reg3?was:is}_b|{s2}は{s3}で囚われの身となってい{reg3?た:る}。
-qstr_{s2}_{reg3?was:has_b|{s2}は敵の捕虜になってい{reg3?た:る}。
-qstr_{reg3?{s2}_s_locatio|{reg3?{s2}の消息は不明だ:{s2}の行方はわからない}。
+qstr_{s2}_{reg3?was:is_cu|{s2}は、 {s3}に{reg3?いた:現在いる}。
+qstr_{s2}_{reg3?was:is}_t|{s2}は、 {s3}を目指し、 {reg3?:現在}{s4}付近を移動中{reg3?だった:だ}。
+qstr_{s2}_{reg3?was:is}_i|{s2}は、 {reg3?:現在}{s4}付近に{reg3?いた:いる}。
+qstr_{s2}_{reg3?was:is}_b|{s2}は、 {s3}で囚われの身となってい{reg3?た:る}。
+qstr_{s2}_{reg3?was:has_b|{s2}は、 敵の捕虜になってい{reg3?た:る}。
+qstr_{reg3?{s2}_s_locatio|{reg3?{s2}の消息は、 不明だ:{s2}の行方はわからない}。
 qstr_{s6}_has_joined_your|{s6}があなたのパーティに加わりました
 qstr_elven|エルフ
 qstr_dwarven|ドワーフ
@@ -229,7 +229,7 @@ qstr_Quiet!_I_didn_t_came|わめくな！ おまえの首が目的ではない�
 qstr_And_I_ve_orders_to_l|まあ、 おぬしの事は見逃すように言われている。 いまのところはな。
 qstr_None_of_your_business|おまえに用はない。
 qstr_You_slaves_of_{s22}_|おまえら{s22}の奴隷どもは、 弱い！ われらの友軍におさまれて、 幸運だったな・・・
-qstr_Look_whom_we_meet_so|おい、 はるばるこの地までやってきた我らを 出迎える者の顔をみてみろ: {s20}の兵士どもだ！ これは喜ぶべきか、 不運を嘆くべきなのか。
+qstr_Look_whom_we_meet_so|おい、 はるばるこの地までやってきた我らを 出迎える者の顔をみてみろ。 {s20}の兵士どもだ！ これは喜ぶべきか、 不運を嘆くべきなのか。
 qstr_{s20}_and_{s21}_figh|{s20}と{s21}は、 共通の目的を持って戦っている。 この敵地では、 お互い協力するべきだ。
 qstr_In_these_dark_times_|{playername}、 この暗い時代では、 みな自分の事で頭が一杯のようだ。^だが我らは、 おぬしの旅の無事を祈ろう。
 qstr_Neither_good_nor_bad|おぬしの意見などどうでもよい。 我らの任務に首を突っ込まないでもらおう。
@@ -242,8 +242,8 @@ qstr_Is_that_a_threat?_Be|それは脅しか？ 倒すべき敵が多すぎて�
 qstr_The_enemy_is_upon_us|敵が寄せてきたぞ！ ^
 qstr_They_are_upon_us!_^|敵がこちらに向かってくるぞ！ ^
 qstr_{playername}_and_{hi|{s18}の{playername}と 手下の烏合の衆がやって来たぞ！ ^
-qstr_ORCS!_ORCS!|オークだ！ オークだ！
-qstr_ORCS!_ORCS!_Fight_fo|オーク！ オーク！ 死にたくなければ戦え！
+qstr_ORCS!_ORCS!|オークだ！ オークだぞ！
+qstr_ORCS!_ORCS!_Fight_fo|オークだ！ オークだぞ！ 死にたくなければ戦え！
 qstr_Elven_ghosts!|エルフの亡霊どもめ！
 qstr_Here_they_come!_Hold|来たぞ！ 陣を整えろ！
 qstr_We_are_under_attack!|敵襲だ！
@@ -305,8 +305,8 @@ qstr_Infantry__{reg1}_|歩兵 ({reg1})
 qstr_Archers__{reg2}_|弓兵 ({reg2})
 qstr_Cavalry__{reg3}_|騎兵 ({reg3})
 qstr_Orc_brew_finished!|オークビールが出来上がりました！
-qstr_Given_by:_{s62}|依頼主: {s62}
-qstr_Given_on:_{s60}|依頼日: {s60}
+qstr_Given_by:_{s62}|依頼主:{s62}
+qstr_Given_on:_{s60}|依頼日:{s60}
 qstr_You_have_{reg0}_days|達成期限はあと{reg0}日です。
 qstr_This_quest_has_been_|目的は達成しました。 {s59}に会ってクエストを完了させましょう。
 qstr_This_quest_has_been_s|このクエストは完了しました。 {s59}に会って報酬を受け取りましょう。
@@ -345,26 +345,26 @@ qstr_{s4}_looks_upset.|{s4}は怒っているようです。
 qstr_your_party|あなたのパーティ
 qstr_{reg0?One_of_your_pr|{reg0?捕虜のひとり、 :}{s3}の{s1}が脱走しました！
 qstr_You_brought_{reg3}_h|{reg3}頭の牛を{s1}まで運びました。
-qstr_Log_entry_{reg3}:_ty|ログ {reg3}: 種類 {reg4}
-qstr_Center:_{s4}|中心: {s4}
-qstr_Troop:_{s4}|兵士: {s4}
-qstr_Lord:_{s4}|ロード: {s4}
+qstr_Log_entry_{reg3}:_ty|ログ {reg3}:種類 {reg4}
+qstr_Center:_{s4}|中心:{s4}
+qstr_Troop:_{s4}|兵士:{s4}
+qstr_Lord:_{s4}|ロード:{s4}
 qstr_Ally_party_is_presen|友軍がいます
 qstr_{s4}_is_present_at_e|{s4}はイベントで待機しています
-qstr_Event_#{reg5}_type_{|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}: 兵士オブジェクトとプレイヤー所属国の関係 = {reg7}
-qstr_Event_#{reg5}_type_{r|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}: 中心オブジェクトとプレイヤー所属国の関係 = {reg7}
-qstr_Event_#{reg5}_type_{re|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}: ファクションオブジェクトとプレイヤー所属国の関係 = {reg7}
+qstr_Event_#{reg5}_type_{|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}:兵士オブジェクトとプレイヤー所属国の関係 = {reg7}
+qstr_Event_#{reg5}_type_{r|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}:中心オブジェクトとプレイヤー所属国の関係 = {reg7}
+qstr_Event_#{reg5}_type_{re|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}:ファクションオブジェクトとプレイヤー所属国の関係 = {reg7}
 qstr_Event_#{reg5}_type_{reg|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}。 関連国なし
 qstr_Event_#{reg5}_type_{reg6|イベント #{reg5}、 タイプ {reg6}、 時間 {reg8}。 プレイヤーは無所属
-qstr_Elapsed_hours:_{reg7|経過時間: {reg7}
-qstr_Reputation_type:_{s1|名声タイプ: {s15}
+qstr_Elapsed_hours:_{reg7|経過時間:{reg7}
+qstr_Reputation_type:_{s1|名声タイプ:{s15}
 qstr_Entries_up_to_#{reg5|#{reg5} までエントリをスキップしました
 qstr_A_new_location_is_no|マップに新たな場所が追加されました！
-qstr_New_trait_gained:_{s|新しい特殊技能を修得しました: {s5}。
+qstr_New_trait_gained:_{s|新しい特殊技能を修得しました:{s5}。
 qstr_Gained_permanent_+1_|恒久的に体力+1を獲得しました。
 qstr_Gained_permanent_+1_t|恒久的に敏捷性+1を獲得しました。
 qstr_Gained_permanent_+1_to|恒久的に魅力+1を獲得しました。
-qstr_Gained_permanent_+20|恒久的に武器熟練スキル+20を獲得しました。
+qstr_Gained_permanent_+20|恒久的に武器熟練ポイント+20を獲得しました。
 qstr_Gained_permanent_+2_|恒久的に体力+2を獲得しました。
 qstr_Gained_permanent_+2_t|恒久的に魅力+2を獲得しました。
 qstr_Lost_permanent__1_to|恒久的に魅力に-1されました。
@@ -372,7 +372,7 @@ qstr_Gained_permanent_+1_to_|恒久的に鋼の肉体スキル+1を獲得しま�
 qstr_Gained_permanent_+5_|恒久的に体力+5を獲得しました。
 qstr_Lost_permanent__2_to|恒久的に魅力に-2されました。
 qstr_Gained_permanent_+2_to|恒久的に鋼の肉体スキル+2を獲得しました。
-qstr_Gained_permanent_+10|恒久的に武器熟練スキル+10を獲得しました。
+qstr_Gained_permanent_+10|恒久的に武器熟練ポイント+10を獲得しました。
 qstr_Gained_permanent_+1_to_T|恒久的に戦略スキル+1を獲得しました。
 qstr_You_have|あなたは
 qstr_{s1}_has|{s1}が
@@ -424,10 +424,10 @@ qstr_Item_you_just_equipp|あなたがいま装備したアイテムは、 こ�
 qstr_Inappropriate_equipm|不適当な装備
 qstr_The_mount_you_just_e|あなたがいま装備した乗り物は、 この種族には扱えません。 この状態で戦闘を行えば、 乗り物の制御に問題がでるでしょう。
 qstr_Inappropriate_mount|不適当な乗り物
-qstr_{s24}:_Some_of_your_|{s24}: 傷がいくらか癒えたようです！
-qstr_{s24}:_Your_infantry|{s24}: あなたの歩兵たちは気分が良くなりました！
-qstr_{s24}:_Your_archers_|{s24}: あなたの弓兵たちは気分が良くなりました！
-qstr_{s24}:_Your_cavalry_|{s24}: あなたの騎兵たちは気分が良くなりました！
+qstr_{s24}:_Some_of_your_|{s24}:傷がいくらか癒えたようです！
+qstr_{s24}:_Your_infantry|{s24}:あなたの歩兵たちは気分が良くなりました！
+qstr_{s24}:_Your_archers_|{s24}:あなたの弓兵たちは気分が良くなりました！
+qstr_{s24}:_Your_cavalry_|{s24}:あなたの騎兵たちは気分が良くなりました！
 qstr_Ah_what_a_coincidenc|おお、 おぬしは{playername}か、 ここで出会うとは何という偶然だろう！ おぬしはわしのことを知らないであろうが、 わしはおぬしのことを聞いている。 わしはこれより{s4}に会いに行くところだが、 つい先ほど訪ねてきた{s3}が、 おぬしの話をしてくれた。 {s3}はこの困難な時において、おぬしを頼りにしておった。 おぬしは目先の事は置いておいて、 今は{s3}を精一杯の力で手助けせねばならん。
 qstr_Who_are_you?|あなたは誰{だ/}？
 qstr_A_friend_of_{s3}_and|{s3}と{s2}の民の友人だ。 さあ急ぐのだ！ モルドールはあらゆる邪悪なものをひきつけ、 闇の力をもってそれらをしもべにしてしまう。 この世界の清きものたちに残された時間は少ない。 闇に対抗するための、 すべての努力を無駄にしてはならぬ！
@@ -512,7 +512,7 @@ qstr_You_cower_in_terror_|ナズグールの耐え難い叫び声に、あなた
 qstr_knocked_unconscious|気を失いました
 qstr_Nazgul_diving_attack|ナズグールが{s11}を攻撃しました!
 qstr_{s11}_is_{s10}_in_th|ナズグールの攻撃により、{s11}が{s10}！
-qstr_{s1}_s_morale:_{reg1|{s1}の士気: {reg1}
+qstr_{s1}_s_morale:_{reg1|{s1}の士気:{reg1}
 qstr_You_rally_your_troop|あなたは自軍の兵士たちを奮い立たせました！
 qstr_{s5}_rallies_his_tro|{s5}が部下たちを奮い立たせています！
 qstr_You_have_killed_{reg|あなたは敵兵を{reg1}名倒しました！
@@ -527,13 +527,13 @@ qstr_{s10}_Move_over_ther|{s10}、 ここに陣取れ！
 qstr_You_have_a_clear_per|ただならぬ危険がまわりじゅうから迫って来るのをはっきりと感じる！
 qstr_New_ent_reached_batt|新手のエントが戦闘に加わりました・・・
 qstr_On_your_positions_bi|ろくでなしども、配置につけ！！
-qstr_Defenders:_infantry_|防衛軍: 歩兵部隊、突撃！！
-qstr_Defenders:_everyone_|防衛軍: 全軍突撃！！
-qstr_Attackers:_{reg1}/{r|攻撃軍: {reg1}/{reg3}/{reg5} 防衛軍: {reg0}/{reg2}/{reg4}
+qstr_Defenders:_infantry_|防衛軍:歩兵部隊、突撃！！
+qstr_Defenders:_everyone_|防衛軍:全軍突撃！！
+qstr_Attackers:_{reg1}/{r|攻撃軍:{reg1}/{reg3}/{reg5} 防衛軍:{reg0}/{reg2}/{reg4}
 qstr_Reached_Gauntlet_wav|ガントレット第{reg1}波が来ました！
-qstr_Ballista:_out_of_amm|投石器: 弾切れです！
-qstr_Ballista:_turn_CURSO|投石器: カーソルキーで旋回、 左SHIFTで照準、 スペースで発射、 Tで着火、 Fで離脱
-qstr_Ballista:_out_of_ammo|投石器: 弾切れです
+qstr_Ballista:_out_of_amm|投石器:弾切れです！
+qstr_Ballista:_turn_CURSO|投石器:カーソルキーで旋回、 左SHIFTで照準、 スペースで発射、 Tで着火、 Fで離脱
+qstr_Ballista:_out_of_ammo|投石器:弾切れです
 qstr_The_ladders_on_Deepi|奥の防壁にはしごがかけられました！気をつけてください！
 qstr_You_yell_for_your_ho|あなたは自分の馬を呼びました。
 qstr_THREE.._TWO..._ONE..|3・・・ 2・・・ 1・・・ はじめ！
@@ -541,7 +541,7 @@ qstr_Leave_the_place_in_s|黙ってこの場を去りますか？
 qstr_Leave_scene?|この場を去りますか？
 qstr_Trace_back_your_step|今まで来た道を戻り、元の広場へ戻りますか？
 qstr_There_is_no_way_out!|退路を絶たれています！ オークに降伏しますか？
-qstr_Stealth_mini_game_tu|ステルスのミニゲームの説明: 二段階の警戒レベルがあります。 警戒レベル1は、 衛兵が死体を発見するか、 あなたを目視した場合に発動します。 警戒レベル2は、 警戒レベル1のときに、 衛兵があなたを目視した場合に発動します。 警戒レベル2の状態では、 衛兵が次から次へと駆けつけて来るので、 非常に危険です。 隠密状態でいれば、 発見されるのを防ぐ事ができます。 さまざまな物陰に身を隠す事で、 隠密状態を維持できます。
+qstr_Stealth_mini_game_tu|ステルスのミニゲームの説明:二段階の警戒レベルがあります。 警戒レベル1は、 衛兵が死体を発見するか、 あなたを目視した場合に発動します。 警戒レベル2は、 警戒レベル1のときに、 衛兵があなたを目視した場合に発動します。 警戒レベル2の状態では、 衛兵が次から次へと駆けつけて来るので、 非常に危険です。 隠密状態でいれば、 発見されるのを防ぐ事ができます。 さまざまな物陰に身を隠す事で、 隠密状態を維持できます。
 qstr_You_are_now_hidden.|隠密状態です。
 qstr_You_move_out_of_hidi|隠密状態を解除しました。
 qstr_The_guards_have_spot|衛兵が死体を発見しました！
@@ -564,36 +564,36 @@ qstr_Resource_Points:^_{r|リソースポイント:^ {reg12} ({s16})
 qstr_{s11}_{s24}__{reg13}|{s11}、 {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}、 {reg11} ({s16})
 qstr_{s15}_{reg12}__in_{s|{s15}、 {reg12} ({s16})
-qstr_^No_food:___{reg7}|^食料切れ:  -{reg7}
-qstr_Current_party_morale|現在のパーティの士気は{reg5}です。^士気の修正値は次の通りです:^^基本値:  +50^パーティの規模: {s2}{reg1}^統率力: {s3}{reg2}^食事のバラエティ: {s4}{reg3}{s5}^宝物: {s6}{reg6}^直近のイベント: {s7}{reg4}^合計:  {reg5}
+qstr_^No_food:___{reg7}|^食料切れ: -{reg7}
+qstr_Current_party_morale|現在のパーティの士気は{reg5}です。^士気の修正値は次の通りです:^^基本値: +50^パーティの規模:{s2}{reg1}^統率力:{s3}{reg2}^食事のバラエティ:{s4}{reg3}{s5}^宝物:{s6}{reg6}^直近のイベント:{s7}{reg4}^合計: {reg5}
 qstr_Defending|防衛中
 qstr_Gathering_army|徴兵中
 qstr_Besieging_{s11}|{s11}を包囲攻撃中
 qstr_Raiding_{s11}|{s11}を襲撃中
 qstr_Attacking_enemies_ar|{s11}周辺の敵を攻撃中
 qstr_No_one|なし
-qstr_{s9}{s10}^Current_st|{s9}{s10}^現在の状況: {s11}^元帥: {s12}^前回の攻勢: {reg1} 時間^攻勢時の同行者最大数: {reg2}^^
-qstr_Selected_faction_is:|所属ファクション: {s10}^^{s9}
+qstr_{s9}{s10}^Current_st|{s9}{s10}^現在の状況:{s11}^元帥:{s12}^前回の攻勢:{reg1} 時間^攻勢時の同行者最大数:{reg2}^^
+qstr_Selected_faction_is:|所属ファクション:{s10}^^{s9}
 qstr_You_are_in_perfect_h|あなたの健康状態は良好です。
 qstr_You_are_suffering_fr|あなたは{s1}に悩まされています。
 qstr_You_are_suffering_fro|あなたは{s1}、 および{s2}に悩まされています。
 qstr_You_are_suffering_from|あなたは{s1}、 {s2}、 および{s3}に悩まされています。
 qstr_You_are_suffering_from_|あなたは{s1}、 {s2}、 {s3}、 および{s4}に悩まされています。
 qstr_Weekly_upkeep_for_tr|一週間の兵士維持費:^{reg5}リソースポイント^
-qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4}リソースポイント({reg5})
+qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}:{reg4}リソースポイント({reg5})
 qstr_No_upkeep_costs|維持費なし
-qstr_Orc_hiring_bonus:_+2|オーク雇用費: オーク1匹につき+2/3^
-qstr_Current_party_size_l|現在のパーティの人数上限は{reg5}です。^人数上限の修正値は次の通りです:^^基本値:  +10^統率力: {s2}{reg1}^カリスマ: {s3}{reg2}^ランク: {s4}{reg3}^{s5}合計:  {reg5}
-qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
+qstr_Orc_hiring_bonus:_+2|オーク雇用費:オーク1匹につき+2/3^
+qstr_Current_party_size_l|現在のパーティの人数上限は{reg5}です。^人数上限の修正値は次の通りです:^^基本値: +10^統率力:{s2}{reg1}^カリスマ:{s3}{reg2}^ランク:{s4}{reg3}^{s5}合計: {reg5}
+qstr_{s2}^_________{s4}:_|{s2}^ {s4}:{reg1} ({s23})
 qstr__________Faction_str|ファクションの勢力一覧:^{s2}
-qstr_{s1}^^Factions_are_n|{s1}^^ファクションは通常、 勢いが{reg1}を下回ると、 包囲攻撃を受けます。
+qstr_{s1}^^Factions_are_n|{s1}^^勢力が{reg1}を下回ると、ファクションは通常、包囲攻撃を受けます。
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|特殊能力:^{s2}
 qstr_^^You_are_{s17}.|^^あなたは{s17}にいます。
 qstr_Assassins_in_the_cam|暗殺者がいます、身を守ってください！
-qstr_Ally_party_size:_{re|友軍の人数: {reg1}
-qstr_Enemy_party_size:_{r|敵軍の人数: {reg1}
-qstr_Party_count:_{reg0}|パーティの総数: {reg0}
+qstr_Ally_party_size:_{re|友軍の人数:{reg1}
+qstr_Enemy_party_size:_{r|敵軍の人数:{reg1}
+qstr_Party_count:_{reg0}|パーティの総数:{reg0}
 qstr_Party_position__{reg|パーティの位置 ({reg2}、{reg3})。
 qstr_Party_size_increased|パーティの人数が{reg0}から {reg1}に増えました！
 qstr_Faction_strengths_re|ファクションの勢力一覧:^{s2}
@@ -612,7 +612,7 @@ qstr_Doubled|2倍
 qstr_Tripled|3倍
 qstr_Quadrupled|4倍
 qstr_You_drank_the_Ent_Wa|エント水を飲みました・・・
-qstr_Fangorn_search:_fail|ファンゴルンの森探索: 失敗。
+qstr_Fangorn_search:_fail|ファンゴルンの森探索:失敗。
 qstr_Troll_caged_in_wheel|トロルは車輪付きの檻に入れられました。
 qstr_A_second_troll_is_ca|二頭目のトロルは車輪付きの檻に入れられました。
 qstr_Here_you_are.|どうぞ。
@@ -652,7 +652,7 @@ qstr_^^Ally_Casualties:{s|^^味方の犠牲者:{s0}
 qstr_News_of_your_victory|{s3}に、あなたの{s4}戦の勝利の報せが届きました。
 qstr_{s3}_witnesses_your_|あなたの{s4}戦の勝利を{s3}が見届けました。
 qstr_{s1}_of_{s3}_managed|{s3}の{s1}は逃げのびました。
-qstr_Prisoners_rescued_so|これまでに救出した捕虜の数: {reg1}
+qstr_Prisoners_rescued_so|これまでに救出した捕虜の数:{reg1}
 qstr_Victory_comment._Pla|勝利のコメント。 プレイヤー単独。
 qstr_Ordinary_victory_com|一般的な勝利のコメント。 全兵力の40%以上をプレイヤーの部隊が占める。
 qstr_Player_participation|プレイヤーが参加したときのコメント。 戦闘開始時の敵兵力が1000以上。
@@ -696,7 +696,7 @@ qstr_You_have_fallen._The|あなたは倒されました。 野盗はあなた�
 qstr_Luckily_some_of_your|幸いにも、 あなたの戻りが遅いのを案じて探しに来たコンパニオンが、 排水溝に横たわるあなたを発見しました。 あなたは安全な場所に運ばれ、 傷の手当を受けました。
 qstr_Luckily_some_passing|幸いにも、 通りがかった地元の住人たちが、 排水溝に横たわるあなたを発見し、 そこらの物乞いではないと判断しました。 彼らはあなたを安全な場所へ運び、 傷の手当をしました。
 qstr_{s13}^^You_have_succ|{s13}^^潜入に成功しました。
-qstr_the_place|この場所
+qstr_the_place|この拠点
 qstr_the_castle|この城
 qstr_Stay_indoors_for_som|屋内に宿営する(一晩につきリソースポイントを{reg1}消費します)
 qstr_Camp_outside_for_som|野外に野営を張る(無料)
@@ -745,7 +745,7 @@ qstr_{s2}_was_defeated!|{s2}が敗れました！
 qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！{s22}は現在、{s23}です。
 qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！{s22}は現在、{s23}です。
 qstr_In_a_desperate_attem|敵に対してなりふり構わぬ必死の対抗をするため、 サウロンはモルドールの大軍団を送り込みました！
-qstr_Guardians_of_{s6}|{s6}の守護者
+qstr_Guardians_of_{s6}|{s6}防衛軍
 qstr_Guard_Legion_of_{s6}|{s6}近衛軍団
 qstr_Scouts_report_that_{|偵察隊より、 {s6}が{s7}周辺に、 本拠地防衛のための大規模な軍勢を 集結させているとの報告が入りました。
 qstr_The_forces_of_{s2}_e|{s2}が{s15}に遠征軍野営を築きました！
@@ -756,7 +756,7 @@ qstr_You_came_into_a_poss|やたらと大きなおわんに入った、 奇妙�
 qstr_Obtained:_Ent_water.|入手:エント水
 qstr_A_little_after_you_f|歩く木から手に入れた毒入りの水から 完全に回復してすぐに、 あなたは妙な副作用が出ていることに気がついた。 配下のうじ虫どもが、 あなたに敬意を払い、 以前よりもあなたを恐れているように見える。 まるで・・・ あなたの体が大きくなったかのように。 間違いない、 以前よりもあなたは少し背が高くなっている。 こんな事が本当に起こり得るのだろうか？
 qstr_Ent_water_effect.|エント水の効用。
-qstr_The_water_you_drank_|エントにもらった水を飲んだあなたは、 自分の体に奇妙な現象が起こっていることに気がついた。 最初は信じられなかったが、 自分の目で確かめてみた以上、 間違いない: どういうわけか、 あなたの背が高くなっている！ しかし、 水の毒であやうく死ぬところだったのは事実だ。 もう二度とこのような危険を冒すわけにはいかない。
+qstr_The_water_you_drank_|エントにもらった水を飲んだあなたは、 自分の体に奇妙な現象が起こっていることに気がついた。 最初は信じられなかったが、 自分の目で確かめてみた以上、 間違いない。 どういうわけか、 あなたの背が高くなっている！ しかし、 水の毒であやうく死ぬところだったのは事実だ。 もう二度とこのような危険を冒すわけにはいかない。
 qstr_Ent_water_effect:_in|エント水の効用:身長が伸びた！
 qstr__+1_to_Strength__per|体力に+1(恒久的効果)
 qstr__+1_to_Charisma__per|魅力に+1(恒久的効果)
@@ -770,10 +770,10 @@ qstr_You_are_inside_Fango|あなたはファンゴルンの森のなかにいる
 qstr_Your_party_witnessed|あなたのパーティは、オークが捕虜を食べているところを目撃しました。
 qstr_Your_party_s_morale_|憎悪から、パーティの士気が上がりました。
 qstr_Your_party_s_morale_h|恐れから、パーティの士気が下がりました。
-qstr_{s27}:_Influence_wit|{s27}: {s1}への影響力が、{reg2}から{reg1}へ向上しました。
-qstr_{s27}:_Influence_with|{s27}: {s1}への影響力が、{reg2}から{reg1}へ下がりました。
-qstr_{s27}:_Party_morale_|{s27}: パーティの士気が上がりました。
-qstr_{s27}:_Party_morale_d|{s27}: パーティの士気が下がりました。
+qstr_{s27}:_Influence_wit|{s27}:{s1}への影響力が、{reg2}から{reg1}へ向上しました。
+qstr_{s27}:_Influence_with|{s27}:{s1}への影響力が、{reg2}から{reg1}へ下がりました。
+qstr_{s27}:_Party_morale_|{s27}:パーティの士気が上がりました。
+qstr_{s27}:_Party_morale_d|{s27}:パーティの士気が下がりました。
 qstr_You_have_failed_to_f|名誉の死を遂げた {s1}の復讐をするという 誓いを達成できませんでした！
 qstr_You_have_fulfilled_y|名誉の死を遂げた {s1}の復讐をするという 誓いを成就させました！
 qstr_{reg65?my_Lady:my_Lo|{reg65?閣下:閣下}
@@ -830,25 +830,25 @@ qstr_My_apologies_if_I_wa|このあいだは失礼があったら謝りたい。
 qstr_I_was_reconsidering_|このあいだの君との話を思い出していたんだ。 もう一度きみの身の上話を聞かせてくれないか？
 qstr_Greetings_{s23}_{s24|ごきげんよう、 {s23}、 {s24}。
 qstr_Greetings_{s23}.|ごきげんよう {s23}。
-qstr_So_you_are_{s23}._I_|そうか、おぬしが{s23}か。 {s25}に加勢をしたという話を聞く限り、 わが友軍と考えるべきだろうな。
-qstr_I_need_volunteers_wi|私と共に危険な任務におもむく事を いとわない者はいないか。
-qstr_I_need_some_soldiers|兵に欠員が出た。 補充をしたい。
+qstr_So_you_are_{s23}._I_|ああ、あなたが{s23}殿か。 {s25}に味方をしたという話を聞く限り、 我らが友軍と考えるべきでしょうな。
+qstr_I_need_volunteers_wi|私と共に危険な任務におもむく事をいとわない者はいないか。
+qstr_I_need_some_soldiers|兵に欠員が出た。補充をしたい。
 qstr_{playername}_s_Reser|{playername}の予備兵
-qstr_Excellent_job_{s23}!|見事だ、 {s23}！ その献身的な仕事ぶりは、 すべての指揮官が見習うべきだ。^
-qstr_Nicely_done_{s23}.|うまくやってくれたな、 {s23}。
-qstr_Good_work_{s23}.|よくやってくれた、 {s23}。
-qstr_The_more_you_capture|捕虜は多ければ多いほど良いですな、 {s23}。
-qstr_Caught_a_few_straggl|敗残兵でも捕まえたか、 {s23}？
-qstr_I_am_sorry_no_one_el|申し訳ないが、そちらへまわす余裕はない。 ^{s22}に従ってここを防衛しなければならないのだ。
-qstr_Tough_luck_but_we_do|ついていませんね、 今は我々も余裕がない。 また今度来て頂きたい。
-qstr_There_are_brave_sold|危険をかえりみない勇敢な兵士たちはいるが、 この時勢にここの守りをおろそかに するわけにはいかないのだ。^^^[リソースポイントが足りません]
-qstr_We_have_some_spare_t|人手に余裕はあるが、おまえのような奴に預ける兵士はいない。^^^[リソースポイントが足りません]
-qstr_There_are_brave_soldi|城外での活動を志願する勇敢な兵士はいる。^^何人かはあなたに預けてもいいだろう。
-qstr_There_are_spare_troo|血の気の多めな兵が多少いる。^^何人かはあなたに預けてもいいだろう。
-qstr_Strenghten_defences_|{s21}の守りを固めようというのか？ 大歓迎だ。 ただ、 我が軍は自前の兵しか受け入れない。
-qstr_Strenghten_defences_i|{s21}の守りを固めようというのか？ 五体満足の兵なら大歓迎だ。 ただし我が軍の自前の兵だけにしてくれ。 よそ者は邪魔なだけだ。
-qstr_Please_return_them_i|頼むから生きて帰してくれよ。 個人的に彼らの勇気はよく知っているんだ。 今はひとりとして無駄にはできない。
-qstr_Don_t_let_them_all_d|彼らの命を無駄使いしないでくれよ。 卑怯者はどうなってもいいがね。 卑怯者がいたらランクスの最前列に立たせればいい。 まあ、 あんたならわかるよな。
+qstr_Excellent_job_{s23}!|見事です、 {s23}殿！ その献身的な仕事ぶりは、 すべての指揮官が見習うべきですね。^
+qstr_Nicely_done_{s23}.|うまくやってくれましたね、 {s23}殿。
+qstr_Good_work_{s23}.|よくやってくれました、 {s23}殿。
+qstr_The_more_you_capture|捕虜は多ければ多いほど良いですな、 {s23}殿。
+qstr_Caught_a_few_straggl|敗残兵でも捕まえましたか、 {s23}殿？
+qstr_I_am_sorry_no_one_el|申し訳ないが、そちらへまわす余裕はない。 ^{s22}に従って、ここを防衛しなければならないのです。
+qstr_Tough_luck_but_we_do|ついていませんね、 今は我々も余裕がない。 また日を改めて来て頂きたい。
+qstr_There_are_brave_sold|危険をかえりみない勇敢な兵士たちはいるが、 この時勢にここの守りをおろそかに するわけにはいきません。^^^[リソースポイントが足りません]
+qstr_We_have_some_spare_t|人手に余裕はありますが、あなたの部隊へまわす兵士はいません。^^^[リソースポイントが足りません]
+qstr_There_are_brave_soldi|城外での任務を志願する勇敢な兵士はいます。^^何人かはあなたに預けてもいいでしょう。
+qstr_There_are_spare_troo|血の気の多めな兵が多少います。^^何人かはあなたに預けてもいいでしょう。
+qstr_Strenghten_defences_|{s21}の守りを固めようというのですか？ 大歓迎です。 ただ、 我が軍は自前の兵しか受け入れません。
+qstr_Strenghten_defences_i|{s21}の守りを固めようというのですか？ 五体満足の兵なら大歓迎です。 ただし我が軍の自前の兵だけにしてください。 よそ者は邪魔なだけです。
+qstr_Please_return_them_i|できるだけ生きて帰してくださいよ。 個人的に彼らの勇気はよく知っているのです。 今はひとりとして無駄にはできない。
+qstr_Don_t_let_them_all_d|彼らの命を無駄使いしないでくださいよ。 卑怯者はどうなってもいいですがね。 卑怯者がいたらランクスの最前列に立たせればいい。 まあ、 あなたならよくわかっているはずだ。
 qstr_Thank_you_commander.|感謝する。^
 qstr_^{s22}_is_grateful_t|^{s22}はあなたに感謝する、 {s23}、 {s29}^
 qstr_{s31}{reg28?Those:Th|{s31}{reg28?彼ら:あの}勇敢な{reg28?兵士たち:兵士}は、 {s21}防衛の大きな戦力になるだろう。 {s32}^^[{s14}のリソースポイントを{reg14}獲得しました]
@@ -951,9 +951,9 @@ qstr_Well..._better_here_|まあ・・・ やっと訓練が終わって、や�
 qstr_town|町
 qstr_village|村
 qstr_The_{s9}_of_{s13}_ha|{s13}の{s9}より、 周辺をうろつく部族オークどもを一掃するよう、 依頼された。
-qstr_{s9}_of_{s3}_asked_y|{s3}の{s9}より、 {reg6}日以内に{s4}の{s10}へ {s6}を{reg5}ユニット届けるよう、 頼まれた。
-qstr_The_{s9}_of_{s3}_ask|{s3}の{s9}より、 {reg6}日以内に食料を{reg5}ユニット調達してくるよう、 頼まれた。
-qstr_The_{s9}_of_{s3}_aske|{s3}の{s9}より、 {reg0}日以内に{s6}を{reg5}ユニット調達してくるよう、 頼まれた。
+qstr_{s9}_of_{s3}_asked_y|{s3}の{s9}より、 {s4}の{s10}へ、 {reg5}ユニットの{s6}を、 {reg6}日以内に届けるよう、 頼まれた。
+qstr_The_{s9}_of_{s3}_ask|{s3}の{s9}より、 {reg5}ユニットの食料を、 {reg6}日以内に調達してくるよう、 頼まれた。
+qstr_The_{s9}_of_{s3}_aske|{s3}の{s9}より、 {reg5}ユニットの{s6}を、 {reg0}日以内に調達してくるよう、 頼まれた。
 qstr_Escort_the_supply_tr|補給隊を{s8}まで護衛せよ
 qstr_The_{s9}_of_{s4}_ask|{s4}の{s9}より、 集落の近辺をうろつく迷惑なゴブリンどもを退治するよう、 頼まれた。
 qstr_The_{s9}_of_{s14}_ha|{s14}の{s9}より、 {s14}で悪さを働くゴブリンの一団を退治するよう 頼まれた。 ゴブリンどもは夜のあいだだけ出没し、 一人で通りを歩く者だけを狙うという。

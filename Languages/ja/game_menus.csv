@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^何のために戦いますか？
 mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
 mno_go_bback|戻る
-menu_start_phase_2|^^^^^ここは中つ国。 東に広がる闇は日々ふくれあがり、 ^ 遠く忘れ去られてきた暗いものたちが、その姿をあらわす。 ^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。 ^ 人間、エルフ、ドワーフ、そしてオーク; すべてのものがそれぞれの運命を演じていく。 ^^ 運命の先にあるものは何か、それはまだわからない・・・
+menu_start_phase_2|^^^^^ここは中つ国。 東に広がる闇は日々ふくれあがり、 ^ 遠く忘れ去られてきた暗いものたちが、その姿をあらわす。 ^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。 ^ 人間、エルフ、ドワーフ、そしてオーク。 すべてのものがそれぞれの運命を演じていく。 ^^ 運命の先にあるものは何か、それはまだわからない・・・
 mno_go_forth|運命の道を踏み出すのだ・・・
 menu_start_game_3            |^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1 |小規模戦闘、 ゴンドール勢 vs ハラド
@@ -33,7 +33,7 @@ mno_leave_custom_battle_2|キャンセル
 menu_custom_battle_end|^^^^^^戦闘は終わりました。 {s1} あなたの陣営は敵勢{reg5}名を倒し、味方の兵を{reg6}名失いました。^あなた個人では敵を{reg7}名を倒しました。
 mno_replay|この戦闘をもう一度プレイする
 mno_continue_dot|続ける
-menu_quick_battle_general_test|^^^現在の戦闘: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
+menu_quick_battle_general_test|^^^現在の戦闘:^team A:{reg10} {s10}^^VS^^ team B:{reg11} {s11}
 mno_tAA|+5 Team A
 mno_tAB|-5 Team A
 mno_tAC|Aの兵を選ぶ
@@ -44,19 +44,19 @@ mno_B|Preset 1
 mno_F|戦闘開始！
 mno_dot_go_back|。 戻る
 menu_quick_battle_troll|^^^^^^^^トロルのシナリオを選んでください:
-mno_troll_battle_scenario_10|テスト: トロル VS 歩兵
-mno_troll_battle_scenario_11|テスト: トロル VS 弓兵
-mno_troll_battle_scenario_12|テスト: トロル VS 騎兵
-mno_troll_battle_scenario_13|テスト: トロル VS ランサー
-mno_troll_battle_scenario_14|テスト: トロル VS トロル
-mno_troll_battle_scenario_15|お遊びテスト: トロルをプレイヤーが操作
+mno_troll_battle_scenario_10|テスト:トロル VS 歩兵
+mno_troll_battle_scenario_11|テスト:トロル VS 弓兵
+mno_troll_battle_scenario_12|テスト:トロル VS 騎兵
+mno_troll_battle_scenario_13|テスト:トロル VS 槍騎兵
+mno_troll_battle_scenario_14|テスト:トロル VS トロル
+mno_troll_battle_scenario_15|お遊びテスト:トロルをプレイヤーが操作
 menu_quick_battle_wargs|^^^^^^^^ワーグのテストシナリオを選んでください:
-mno_warg_battle_scenario_10|対ワーグ: 1 vs 1
-mno_warg_battle_scenario_11|対ワーグ: 2 vs 3
-mno_warg_battle_scenario_12|対ワーグ: 大勢 vs 大勢
-mno_warg_battle_scenario_10b|ワーグをプレイ: 1 vs 1
-mno_warg_battle_scenario_11b|ワーグをプレイ: 2 vs 3
-mno_warg_battle_scenario_12b|ワーグをプレイ: 大勢 vs 大勢
+mno_warg_battle_scenario_10|対ワーグ:1 vs 1
+mno_warg_battle_scenario_11|対ワーグ:2 vs 3
+mno_warg_battle_scenario_12|対ワーグ:大勢 vs 大勢
+mno_warg_battle_scenario_10b|ワーグをプレイ:1 vs 1
+mno_warg_battle_scenario_11b|ワーグをプレイ:2 vs 3
+mno_warg_battle_scenario_12b|ワーグをプレイ:大勢 vs 大勢
 menu_start_good|^^^^^^^^^^種族を選んでください:
 mno_start_ma|人間
 mno_start_el|エルフ
@@ -118,7 +118,7 @@ mno_start_male|男性
 mno_start_female|女性
 mno_proc|通常通り続ける
 mno_continue|続ける・・・
-menu_character_report|^^^^^パーティの士気: {reg8}^パーティの人数上限: {reg7}^{s5}
+menu_character_report|^^^^^パーティの士気:{reg8}^パーティの人数上限:{reg7}^{s5}
 menu_camp|^^^^ここは{s1}です。{s2}^^何をしますか？
 mno_camp_scene|この辺りを散歩する
 mno_camp_troop|{reg10?部下:}{reg12?および:}{reg11?捕虜:}の確認をする
@@ -126,30 +126,30 @@ mno_camp_action|アイテムを使う
 mno_camp_wait_here|ここで野営する
 mno_camp_options|TLDのオプション
 mno_Cheat_enable|チート/mod作成オプションを有効にする
-menu_game_options|^^^^^^^^項目をクリックするとトグルします:
-mno_game_options_restrict_items|プレイヤーの装備制限: {s7}
-mno_game_options_formations|陣形とAI: {s7}
-mno_game_options_town_menu|拠点のNPCに常にメニュー画面からアクセス: {s7}
-mno_game_options_cutscenes|カットシーン: {s7}
-mno_game_options_injuries|コンパニオンの怪我: {s7}。
-mno_game_options_death|ロードとコンパニオンが死亡する: {s7}。
-mno_game_options_death2|プレイヤーが死亡する(あなたの事ですよ！): {s7}。
-mno_game_options_morale|戦闘時の士気システム: {s7}
-mno_game_options_animal_ambushes|動物による襲撃: {s7}
+menu_game_options|^^^^^^^^項目をクリックするとトグルします
+mno_game_options_restrict_items|プレイヤーの装備制限:{s7}
+mno_game_options_formations|陣形とAI:{s7}
+mno_game_options_town_menu|拠点のNPCに常にメニュー画面からアクセス:{s7}
+mno_game_options_cutscenes|カットシーン:{s7}
+mno_game_options_injuries|コンパニオンの怪我:{s7}
+mno_game_options_death|指揮官とコンパニオンが死亡する:{s7}
+mno_game_options_death2|プレイヤーが死亡する(あなたの事ですよ！):{s7}
+mno_game_options_morale|戦闘時の士気システム:{s7}
+mno_game_options_animal_ambushes|動物による襲撃:{s7}
 mno_game_options_tweaks|ゲームプレイの調整・・・
 mno_game_options_back|野営メニューに戻る
 menu_camp_tweaks|^^^^^^^^調整したい項目を選んでください。
 mno_tweak_options_compat|互換性の調整・・・
 mno_tweak_options_strat|戦略上の調整・・・
 mno_tweak_options_back|オプションメニューに戻る
-menu_camp_compat_tweaks|^^^^^^^^項目をクリックして調整してください(SHIFTを押しながらクリックすると数値が減ります):^(これらは互換性に関する調整で、 チートではありません)
-mno_game_options_compat_party|パーティの最大数: {s1}
+menu_camp_compat_tweaks|^^^^^^^^項目をクリックして調整してください^(SHIFTを押しながらクリックすると数値が減ります)^(これらは互換性に関する調整で、 チートではありません)
+mno_game_options_compat_party|パーティの最大数:{s1}
 mno_game_options_compat_back|調整メニューに戻る
-menu_camp_strat_tweaks|^^^^^^^^項目をクリックするとトグルします:^(警告: これらはチートです！)
-mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力: {s7}
-mno_strat_tweaks_siege_relax_rate|包囲攻城戦の必要条件の緩和レート: {reg1}
-mno_strat_tweaks_regen_rate|勢力の回復レート: {s7}
-mno_strat_tweaks_siege_regen_limit|勢力回復不可とされるファクションの勢力の上限値: {reg1}
+menu_camp_strat_tweaks|^^^^^^^^項目をクリックするとトグルします^(警告:これらはチートです！)
+mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力:{s7}
+mno_strat_tweaks_siege_relax_rate|包囲攻城戦の必要条件の緩和レート:{reg1}
+mno_strat_tweaks_regen_rate|勢力の回復レート:{s7}
+mno_strat_tweaks_siege_regen_limit|勢力回復不可とされるファクションの勢力の上限値:{reg1}
 mno_strat_tweaks_influence_gain_rate|影響力獲得レート:{s7}
 mno_strat_tweaks_rank_gain_rate|ランク獲得レート:{s7}
 mno_strat_tweaks_back|調整メニューに戻る
@@ -188,7 +188,7 @@ mno_leave|立ち去る。
 menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部下は{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
 mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
 mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}よう命令し、 自身は後方に待機する。
-; mno_special_whip|Rush forward toward them cracking the {s4}.
+mno_special_whip|{s4}を打ちながら威圧する。
 mno_encounter_leave|撤退する。
 mno_encounter_retreat|何人かの兵をしんがりに残し、撤退する。
 menu_encounter_retreat_confirm|^^^^^パーティの中で最も高い戦略スキル({reg2})を持つ {reg3?あなた:{s3}}は、 敵を振り切って部隊を無事に撤退させる作戦を 考え出しましたが、 敵の追撃を食い止めるための兵を{reg4}名、 しんがりとして犠牲にしなければなりません。
@@ -198,7 +198,7 @@ menu_encounter_retreat|^^^^^あなたは部下の兵{reg4}名に、 あなたと
 menu_order_attack_begin|^^^^^^ 部下の兵は攻撃準備をしています。
 mno_order_attack_begin|攻撃開始を命令する。
 mno_call_back|呼び戻す。
-menu_order_attack_2|^{s4}^自軍犠牲者: {s8}^^敵軍犠牲者: {s9}
+menu_order_attack_2|^{s4}^自軍犠牲者:{s8}^^敵軍犠牲者:{s9}
 mno_order_attack_continue|部下に攻撃を続けるように指示する。
 mno_order_retreat|部下を呼び戻す。
 menu_kingdom_army_quest_report_to_army|{s8}より、 今回の軍事遠征にあなたも同行せよ、 との連絡を受けました。 あなたは少なくとも {reg13}名の兵を連れて行かなくてはなりません。 足りない場合は、 急いで兵を集めてくるように、 とのことです。
@@ -213,11 +213,11 @@ menu_pre_join|^^^^^{s2}と{s1}が交戦中です。^あなたは・・・
 mno_pre_join_help_attackers|{s2}に加勢をする。
 mno_pre_join_help_defenders|{s1}の味方にまわる。
 mno_pre_join_leave|巻き込まれないようにする。
-menu_join_battle|^^^{s1}と戦っている{s2}に加勢します。^敵勢{reg11}名に対して、 戦える状態の味方の兵は{reg22}名です。^^この戦いは{s3}{s4}で行われます。
+menu_join_battle|^^^{s1}と戦っている、 {s2}に加勢します。^敵勢{reg11}名に対して、 戦える状態の味方の兵は{reg22}名です。^^この戦いは{s3}{s4}で行われます。
 mno_join_attack|攻撃を開始する。
 mno_join_order_attack|部下に友軍と共に戦うよう指示をし、自分は後方に待機する。
 mno_join_leave|撤退する。
-menu_join_order_attack|{s4}^^自軍犠牲者: {s8}^^友軍犠牲者: {s9}^^敵軍犠牲者: {s10}
+menu_join_order_attack|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
 mno_enter|入る。
 menu_battlefields|^^^^^^^^^戦場を選んでください・・・
 mno_enter_f1|Field 1
@@ -250,15 +250,15 @@ mno_lift_siege|包囲を中止する。
 menu_siege_attack_meets_sally|^^^^^^守備軍が撃って出てきました。
 menu_construct_ladders|パーティメンバーの中で最も高い 技術者スキル({reg2})を持つ{reg3?あなた:{s3}}は、 充分なはしごを準備するのに {reg4}時間を要すると計算しました。
 mno_build_ladders_cont|準備に取りかかる。
-menu_castle_attack_walls_simulate|{s4}^^自軍犠牲者:{s8}^^敵軍犠牲者: {s9}
-menu_castle_attack_walls_with_allies_simulate|{s4}^^自軍犠牲者: {s8}^^友軍犠牲者: {s9}^^敵軍犠牲者: {s10}
+menu_castle_attack_walls_simulate|{s4}^^自軍犠牲者:{s8}^^敵軍犠牲者:{s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
 menu_castle_taken|{s3}はあなたの軍の手に落ち、 現在、 この{reg2?町:城}は完全にあなたの軍の 管理下におかれています。 {reg1? ここをあなたの領地とすることを 止めるものはいません・・・:}
 menu_castle_taken_2|{s3}はあなたの軍の手に落ち、 現在、 この城は完全にあなたの軍の 管理下におかれています。 {s9}に、 この勝利を報告しましょう。 {s5}
 mno_castle_taken_no_claim|褒美の要求をしない。
 menu_siege_started_defender|{s2}の城壁に対し、 {s1}が攻撃を仕掛けています。 あなたの部隊で戦闘可能な兵は{reg22}名、 対する敵勢は{reg11}名です。 あなたは・・・
 mno_siege_defender_join_battle|攻撃に参加する。
 mno_siege_defender_troops_join_battle|部下に攻撃に参加するよう指示し、 自身は後方に待機する。
-menu_siege_join_defense|{s4}^^自軍犠牲者: {s8}^^友軍犠牲者: {s9}^^敵軍犠牲者: {s10}
+menu_siege_join_defense|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^逃亡者の強烈な一撃に、 あなたは倒され、 あなたの視界はぐるっと回った後に 闇に包まれました。 しばらくの時間が経ち、 あなたは目を覚ましました。 血まみれの体は痛みはするものの、 幸運な事に致命傷は受けていませんでした。
 menu_town_bandits_succeeded|^^^^^鎌に刈られる小麦のように、 ゴブリンどもはなぎ倒されました！ 立っているのはあなただけで、 ゴブリンどもは残らず気を失ったか、 死んだか、 または虫の息です。 このような脅威を取り除いたあなたに対し、 地元の民はとても感謝することでしょう。
 menu_town_brawl_lost|^^^^^^あなたは倒され、 完全に気を失いました。 彼らは素早くあなたの体から 金目の物を抜き取ると、 何食わぬ顔で普段の生活へと 戻っていきました。
@@ -289,7 +289,7 @@ mno_disembark_no|しない。
 menu_ship_reembark|乗船しますか？
 mno_reembark_yes|する。
 mno_reembark_no|しない。
-menu_center_reports|拠点: {s1}^地代収入: {reg1}デナル^関税収入: {reg2}デナル^食料備蓄: {reg3}日間分
+menu_center_reports|拠点:{s1}^地代収入:{reg1}デナル^関税収入:{reg2}デナル^食料備蓄:{reg3}日間分
 menu_sneak_into_town_suceeded|みすぼらしい浮浪者に変装したあなたは、 衛兵の目をかいくぐって町の中へと入り込みました。
 menu_sneak_into_town_caught|潜入を試みたあなたに衛兵のひとりが気付き、 大声を上げました！ この辺りの衛兵が殺到するまえに、 門の外へ逃げなければなりません！
 mno_sneak_caught_fight|強行突破だ！
@@ -359,7 +359,7 @@ menu_death|あなたは殺されました。 戦争の猛威はいまだ弱ま�
 menu_animal_ambush|あなたとコンパニオンは、 他の兵とはぐれてしまいました。 すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
 menu_animal_ambush_fail|獣どもはあなた{reg0?:とコンパニオン{reg2?たち:}}に噛み付き、 突進してきましたが、 あなたはなんとか彼らを追い払うことができました。 これであきらめてくれることを願いましょう。
-menu_build_your_scene|ゲームのEditモード (あらかじめM&BのランチャーのOptionsで EditモードをONにする必要があります)を 利用すれば、 下に用意されているスロットのうちのひとつを使って、 自分だけの戦闘シーンを作ることができます。 作成したシーン (TLD/SceneObjフォルダにある、 scoファイルのことです) をTLDの開発チームに送ってください。 シーンの出来が良ければ、 今後のリリースにおいて ランダム戦闘シーンのうちのひとつとして 登場するかも知れません！^^マップ上のどの地域を舞台にしたシーンなのかを 特定してください。^ヒント: あなたがシーン作成の経験が豊富で、 AIの仕組みや挙動を熟知しているのでない限り、 水中や急勾配の山といった 移動しづらい場所の使用は避けましょう。^(#0-1は攻撃側が、 #4は防衛側がメインです。 #5-8はいじらないでください。)
+menu_build_your_scene|ゲームのEditモード (あらかじめM&BのランチャーのOptionsで EditモードをONにする必要があります)を 利用すれば、 下に用意されているスロットのうちのひとつを使って、 自分だけの戦闘シーンを作ることができます。 作成したシーン (TLD/SceneObjフォルダにある、 scoファイルのことです) をTLDの開発チームに送ってください。 シーンの出来が良ければ、 今後のリリースにおいて ランダム戦闘シーンのうちのひとつとして 登場するかも知れません！^^マップ上のどの地域を舞台にしたシーンなのかを 特定してください。^ヒント:あなたがシーン作成の経験が豊富で、 AIの仕組みや挙動を熟知しているのでない限り、 水中や急勾配の山といった 移動しづらい場所の使用は避けましょう。^(#0-1は攻撃側が、 #4は防衛側がメインです。 #5-8はいじらないでください。)
 mno_scene1|Battlefield5 (file scn battlefield5.sco)
 mno_scene2|Battlefield6 (file scn battlefield6.sco)
 mno_scene3|Battlefield7 (file scn battlefield7.sco)
