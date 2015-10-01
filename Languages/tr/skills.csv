@@ -16,14 +16,14 @@ skl_wound_treatment|Yara bakımı
 ; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
 skl_inventory_management|Envanter yönetimi
 skl_inventory_management_desc|Her seviye artışında envanter kapasitesi +6 yükselir.(Lider yeteneği) 
-skl_spotting|Gözlem
-; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
-skl_pathfinding|İz Sürme
-; skl_pathfinding_desc|Party map speed is increased by 3%% per skill level. (Party skill)
+skl_spotting|Tespit etme
+skl_spotting_desc|Grubunuzun görüş sınırı yeteneğinizin her puanı ile %10 artar. (Grup Yeteneği)
+skl_pathfinding|Yol bulma
+skl_pathfinding_desc|Yeteneğinizin her seviyesi grubun haritadaki hareket hızını %3 arttırır. (Grup Yeteneği)
 skl_tactics|Taktik
-; skl_tactics_desc|Every two levels of this skill increases starting battle advantage by 1. (Party skill)
-skl_tracking|Takip etme
-; skl_tracking_desc|Tracks become more informative. (Party skill)
+skl_tactics_desc|Yetenek her 2 seviyede savaş avantajını +1 arttırır.  (Grup yeteneği)
+skl_tracking|İz sürme
+skl_tracking_desc|Yol izleri hakkında daha detaylı bilgi verir.  (Grup yeteneği)
 skl_trainer|Talimci
 skl_trainer_desc|Her gün, her kahraman tecrübe kazandırır. Her üye talim yeteneğine göre tecrübe kazandırır. Talim yeteneği şu şekilde artar; {0,4,10,16,23,30,38,46,55,65,80} (Kişisel Yetenek)
 skl_looting|Yağmalama
@@ -31,18 +31,18 @@ skl_looting_desc|Arttırma başı 10%% seviye artar.(Grup Yeteneği)
 skl_horse_archery|Atlı okçuluk
 skl_horse_archery_desc|At sürerken atılan okların verdiği zarar artar. (Kişisel Yetenek)
 skl_riding|Binicilik
-; skl_riding_desc|enables you to ride horses (or other beasts) of higher difficulty levels and increases your riding speed and manuever. (Personal skill)
+skl_riding_desc|Daha yüksek seviyeli atları (ya da diğer yaratıkları) kullanmanı sağlar ayrıca sürüş hızın ve manevra kabiliyetini arttırır. (Kişisel yetenek)
 skl_athletics|Atletizm
 skl_athletics_desc|Koşu hızını yükseltir.(kişisel yetenek)
 skl_shield|Kalkan
 ; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
 skl_weapon_master|Silah ustası
 ; skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
-; skl_power_draw|Power Draw
+skl_power_draw|Güçlü Çekme
 ; skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
-; skl_power_throw|Power Throw
+skl_power_throw|Güçlü Fırlatma
 ; skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%. (Personal skill)
-; skl_power_strike|Power Strike
+skl_power_strike|Güçlü Saldırı
 ; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
 skl_ironflesh|Demirbeden
 skl_ironflesh_desc|Bu yeteneğe harcanan her puan verilen hasarı +2 artırır.(kişisel yetenek) 

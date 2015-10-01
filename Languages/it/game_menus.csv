@@ -308,7 +308,7 @@ menu_notification_one_side_left|^^^^^La Guerra dell'Anello è terminata!^^Il {s1
 menu_notification_total_defeat|^^^^^La Guerra dell'Anello è terminata per te!^^Il {s1} è stato sconfitto dai suoi nemici e tu sei rimasto solo nella sconfitta!
 menu_notification_your_faction_collapsed|^^^^^La tua {s11} madrepatria è stata sconfitta!^Ancora, gli altri alleati rimangono nella guerra. Tu, assieme a qualcuno rimasto di {s11}, potete ancora aiutare la vostra fazione a vincere.
 menu_notification_faction_defeated|^^^^^{s1} È stato sconfitto!^{s1} non c'è più, essendo sconfitto dal esercito di {s13}!
-; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
+menu_ruins|^^^^Ti avvicini a {s1}. In questo luogo, un tempo, un accampamento è stato raso al suolo, è ancora possibile vedere tracce di fortificazioni e vecchie armi arrugginite.
 menu_legendary_place|^^^^Hai seguito le tracce ed hai trovato {s1}. Puoi esplorare e investigare questo posto ora.
 mno_explore|Esplora questo posto.
 menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da una banda di orchi. Cosa fai?
@@ -342,12 +342,12 @@ mno_next_rescue_scene_door|Prosegui!
 mno_pick_troops1|Scegli compagni per la missione, {reg0} selezionati
 menu_pick_troops|Chi sceglierai a venire insieme a te nella missione? Fino ad ora hai scelto {reg0} compagni. Puoi scegliere fino a 10 truppe.
 mno_go_forward|Chiudi la selezione dei compagni e procedi.
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|Ti avvicini al al tumulo di {s1} da {s2}. Sopra di esso è possibile vedere moltissime armi abbandonate dai suoi nemici caduti.
 mno_pay_respects|Inginocchiati e rendi omaggio.
 mno_swear_oath|Presta un giuramento di vendetta!
 mno_despoil|Dissacra il sito
 mno_leave_mound|Abbandona il tumulo.
-; menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
+menu_burial_mound_respects|Ti inginocchi e rendi omaggio a {s1}, sussurri silenziosamente una preghiera per un veloce viaggio verso l'aldilà. Non c'è più niente da fare qui.
 ; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out the forces of {s3} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
 ; menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
 ; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.

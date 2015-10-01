@@ -4,15 +4,15 @@ dlga_mutiny_pretalk_2:close_window|へえ、おおせのとおりに、 指揮�
 dlga_start:mutiny_talk_1|なあ、指揮官どの。 話があるんだけどさ・・・ みんなだいぶ機嫌が悪いぜ、 大大不機嫌だ！ ^ろくに人間の肉は食べれないし、 楽しいこともあんまりない。^みんなあんたは無能だって言ってるぜ、 指揮官どの！
 dlga_mutiny_talk_1:mutiny_talk_2|なんだと？ 上官に逆らおうというのか？^死をもって償わせるぞ、 このウジ虫めが！
 dlga_mutiny_talk_2:close_window|それで、話があるんだけどさ・・・^みんな俺が指揮官どのになればいいって言うんだ・・・ あんたを殺してな！
-; dlga_start:troll_introduce_1|Problem?
-; dlga_start:troll_talk_1|U mad?
-; dlga_troll_introduce_1:troll_goodbye|Whoa! A talking troll?!
-; dlga_troll_introduce_1:close_window|I own a horse.
-; dlga_troll_talk_1:troll_talk_2|Troll me, troll.
-; dlga_troll_talk_1:close_window|I own a horse.
-; dlga_troll_talk_2:troll_talk_3|Challenge accepted!^^{s4}
-; dlga_troll_beaten:troll_talk_1|I bow to your wisdom, Master Baiter of Trolls!
-; dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
+dlga_start:troll_introduce_1|何だ？
+dlga_start:troll_talk_1|死にたいのか？
+dlga_troll_introduce_1:troll_goodbye|えっ！トロルがしゃべった？！
+dlga_troll_introduce_1:close_window|ささよさようなら。
+dlga_troll_talk_1:troll_talk_2|おいトロル何か言えよトロル。
+dlga_troll_talk_1:close_window|ささよさようなら。
+dlga_troll_talk_2:troll_talk_3|相手してやろう！^^{s4}
+dlga_troll_beaten:troll_talk_1|おまえは賢いな、トロルでは勝てんわ！
+dlga_troll_goodbye:close_window|グワハハハハハハハハハハハハハハハハハ！
 dlga_start:hobbit_merry_talk_met|やあ、また会ったね、 {playername}！
 dlga_start:hobbit_pippin_talk_met|やあ、また会ったね、 {playername}！
 dlga_start:hobbit_general_talk_1|こんにちは、{戦士殿/戦士殿}！ 僕はメリアドク・ブランディバック。 メリーって呼んでね！
@@ -106,7 +106,7 @@ dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|{�
 dlga_companion_recruit_backstory_delayed_response:close_window|気にしないで{くれ/}、また今度にし{よう/ましょう}。
 dlga_companion_recruit_signup_confirm:close_window|了解！では準備をしてきます。すぐに出発しましょう。
 dlga_start:companion_rehire|あなたさえその気になれば、 私はいつでもあなたについて行けますよ。
-dlga_start:companion_rehire.1|生きてたのですね、{s5}！ {s6}、 あなたが捕まったのか、殺されたのか、または逃げおおせたのか、私にはまったく知るすべがありませんでした。ずっとここであなたの消息を知る者がいないか、いろいろ当たっていたんです。また一緒に旅をするなら、荷物をまとめて来ますが？
+dlga_start:companion_rehire.1|生きてたのですね、{s5}！ {s6}、 あなたが捕まったのか、 殺されたのか、 または逃げのびた、 私にはまったく知るすべがありませんでした。 ずっとここであなたの消息を知る者がいないか、 いろいろ当たっていたんです。 また一緒に旅をするなら、 荷物をまとめて来ますよ？
 dlga_start:companion_was_dismissed|会えてうれしいよ、{s21}！ 実は、どこかで君にばったり会えないかと 期待していたんだ。
 dlga_companion_was_dismissed:companion_rehire|{s5}。 また一緒に旅をしましょうか？
 dlga_companion_rehire:companion_recruit_signup_confirm|おかえり、わが友人！

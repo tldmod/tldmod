@@ -54,7 +54,7 @@ qstr_Days_Passed:_{reg0}|冒険日数:{reg0}
 qstr_Difficulty:_{reg0}%|難易度:{reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|トータルスコア:{reg0}
-; qstr_______|      
+qstr_______|      
 qstr_A_peaceful_village_n|ウェストフォルドから遠くない、とある平和な村・・・
 qstr_The_War_is_upon_Roha|戦争の魔の手がローハンを襲う！
 qstr_Minas_Tirith___The_W|ミナス・ティリス、 白の都
@@ -378,22 +378,22 @@ qstr_You_have|あなたは
 qstr_{s1}_has|{s1}が
 qstr_{s11}_suffered_a_ser|{s11}重傷を負いました。
 qstr_The_leg_has_been_bad|戦闘で足に重傷を負ったようです。
-qstr___2_athletics__1_rid|(アスレチック-2 乗馬-1 敏捷性-2 近接武器スキル-15)
+qstr___2_athletics__1_rid|(アスレチック-2 乗馬-1 敏捷性-2 近接武器熟練-15)
 qstr_The_arm_has_been_bad|戦闘で腕に重傷を負ったようです。
 qstr___20_weapon_skill__2|(武器熟練-20 体力-2 強打豪投弓術-1)
 qstr_The_head_has_suffere|頭に重傷を負ったようです。
-qstr___1_intelligence_ski|(知性系スキル-1 間接武器スキル-15)
+qstr___1_intelligence_ski|(知性系スキル-1 間接武器熟練-15)
 qstr_The_chest_has_suffer|わき腹を痛めたようです。
 qstr___20_weapon_skill_|(武器熟練-20)
 qstr_{s1}_has_been_killed|{s1}は戦死しました。
 qstr_You_were_killed.|あなたは死亡しました。
 qstr_{s1}_recovered_from_|重傷を負った{s1}の怪我が治りました。
 qstr_The_leg_wound_has_he|足の怪我が癒えました。
-qstr__+2_athletics_+1_rid|(アスレチック+2 乗馬+1 敏捷性+2 近接武器スキル+15)
+qstr__+2_athletics_+1_rid|(アスレチック+2 乗馬+1 敏捷性+2 近接武器熟練+15)
 qstr_The_arm_wound_has_he|腕の怪我が癒えました。
 qstr__+20_weapon_skill_+2|(武器熟練+20 体力+2 強打豪投弓術+1)
 qstr_The_head_wound_has_h|頭の怪我が癒えました。
-qstr__+1_intelligence_ski|(知性系スキル+1 間接武器スキル+15)
+qstr__+1_intelligence_ski|(知性系スキル+1 間接武器熟練+15)
 qstr_The_cracked_ribs_hav|わき腹の怪我が癒えました。
 qstr__+20_weapon_skill_|(武器熟練+20)
 qstr_{s1}_has_had_his_hea|{s1}の体力が向上しました
@@ -637,7 +637,7 @@ qstr_Regular_troops_only|一般の兵のみ
 qstr_Heroes_only|英雄のみ
 qstr_Regulars_and_Heroes|一般の兵と英雄
 qstr_HP_lost_from_poisoni|食中毒でヒットポイントを失いました。
-qstr__{s17}.|、 {s17}。
+qstr__{s17}.|、 {s17}
 qstr_A_group_of_{s1}_is_{|{s1}の一団がこちらに{s10}来ました。
 qstr_You_are_attacking_a_|あなたは{s1}の一団を攻撃しています。
 qstr_The_battle_against_t|{s1}の一団との戦いは続きます。
@@ -782,39 +782,39 @@ qstr_{reg65?mistress:mast|{reg65?閣下:閣下}
 qstr_{reg65?Mistress:Mast|{reg65?閣下:閣下}
 qstr_{reg65?madame:sir}|{reg65?閣下:閣下}
 qstr_{reg65?Madame:Sir}|{reg65?閣下:閣下}
-; qstr_How_do_magnets_work?|How do magnets work?
-; qstr_Um..._by_enchanting_|Um... by enchanting iron?
-; qstr_Magnets_are_made_of_|Magnets are made of metal, which is mined from the ground. They are magnetic because the metal still contains pieces of gravity inside it.
-; qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
-; qstr_I_m_sure_the_TLD_tea|I'm sure the TLD team will get to it when they can.
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
-; qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
-; qstr_Well_there_s_a_lot_o|Well, there's a lot of new graphics and stuff, I guess that takes time.
-; qstr_It_has_been_recently|It has been recently released, if you missed the link, you can download it at lemonparty.org.
-; qstr_i_wont_decapitated_e|i wont decapitated elephants in multi, nao!!11!
-; qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
-; qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
-; qstr_Did_you_bring_your_z|Did you bring your zupdog?
-; qstr_What_s_zupdog?|What's zupdog?
-; qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
-; qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
-; qstr_What_is_plate_armour|What is plate armour? Never heard of it.
-; qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
-; qstr_WHEN_U_REALSE_MOD?!!|WHEN U REALSE MOD?!!?
-; qstr_But_we_did_release._|But we did release. You're in it. And why are you shouting?
-; qstr_YES!_ALSO_SOMETIMES_|YES! ALSO SOMETIMES IS!
-; qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
-; qstr_Every_mod_team_works|Every mod team works according to their standards, you can't make mods cooperate if their vision is different.
-; qstr_Because_we_don_t_hav|Because we don't have a sense of humour and most of them are just too funny for us.
-; qstr_In_movies_trolls_are|In movies trolls are big and fat, wai u make me skinny?
-; qstr_We_interpreted_Tolki|We interpreted Tolkien like this.
-; qstr_But_we_did_make_you_|But we did make you as stupid as in the movies. That's gotta count for something.
-; qstr_What_is_news?_Got_an|What is news? Got any screenshots?
-; qstr_Well_just_look_aroun|Well just look around you, what do you need screenshots for?
-; qstr_Say_cheese!|Say cheese!
-; qstr_Why_did_you_make_mod|Why did you make mod installation so complex?
-; qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
-; qstr_You_just_got_windyfl|You just got windyflorated!
+qstr_How_do_magnets_work?|磁石はなぜくっつくのだ？
+qstr_Um..._by_enchanting_|くっつくように作ってやったんだよ感謝しろ
+qstr_Magnets_are_made_of_|磁石は地中から掘り出した金属から出来ているのだ。^その金属の中に地球の重力がまだ残っていてな、^それが磁力となっているのだ。
+qstr_i_wont_a_bonerlrord_|バンナァロード版のTLDは、まだ出ないのか？
+qstr_I_m_sure_the_TLD_tea|モノが出揃ったらTLD開発チームが取りかかるだろ
+qstr_Install_TLD_in_your_|TLDをBannerlordのModulesフォルダに入れて、^module.iniに"compatible_with_wfas = 1"の一行を追加してやれば^WarbandとWarrider 0.202でプレイできるよ！
+qstr_dis_mod_takes_2_long|このmodはリリースまでに長くかかりすぎる
+qstr_Well_there_s_a_lot_o|新しいモデルとか毎回いろいろと追加するからな^仕方ないんじゃないの
+qstr_It_has_been_recently|こないだ新バージョン出たばっかりだよ^lemonparty.orgからダウンロードできるよ
+qstr_i_wont_decapitated_e|マルチで象ぬっころしてえええ
+qstr_I_don_t_think_there_|TLDはマルチに対応する気ないだろ^象狩りは同意
+qstr_There_is_a_hidden_el|TLDの隠しモードで象デスマッチモードがあるよ^出し方は、まずセーブデータのフォルダを空にしてから^ゲーム内で100日間セーブなしのぶっとおしでプレイ^それからキャラ情報画面に行ってAlt+F4を押す^マジやる価値あり
+qstr_Did_you_bring_your_z|TLDってどうですか？マルチできますか？
+qstr_What_s_zupdog?|銅ではありません
+qstr_My_zupdog_is_ill_but|マルチはできますん
+qstr_Wai_no_plate_armour_|プレートアーマーがないのはひどくないか？？？
+qstr_What_is_plate_armour|プレートアーマーって何？聞いた事ないよ？
+qstr_Wai_no_female_trolls|トロルの女の子もいないんでしょ？え？え？そっちのほうがひどい！
+qstr_WHEN_U_REALSE_MOD?!!|modのリリースはまだなのか？
+qstr_But_we_did_release._|リリースしただろ。おまえがいまプレイしてるのは何だよ。
+qstr_YES!_ALSO_SOMETIMES_|もちろんさ！リリース！まだだ！
+qstr_Wai_u_no_work_wiht_o|他のmodとまぜて最強のLOTRゲームつくろうなんて話は、 ないのか？
+qstr_Every_mod_team_works|それぞれのmod開発陣にはそれぞれ別の目標があって 別々に製作作業が進められているので、 複数のmod間で整合性をとるのは非常に難しいよ
+qstr_Because_we_don_t_hav|我々にはどうもユーモアのセンスがないみたいで、 まぜるには他のmodは面白すぎるんだ
+qstr_In_movies_trolls_are|映画じゃトロルは巨大でマッチョなのに、^なんで私はこんなにひょろっとしてるのだ？
+qstr_We_interpreted_Tolki|俺らが原作読んでイメージしてたのは、 おまえみたいな感じなの
+qstr_But_we_did_make_you_|少なくとも映画と同じくらい馬鹿に設定してあるから、^それで満足しとけよ
+qstr_What_is_news?_Got_an|なんかアプデとかあった？新しいスクショとか？
+qstr_Well_just_look_aroun|スクショなんかいらないだろ何につかうんだよ
+qstr_Say_cheese!|いまスクショとった。これ上げとくよ！
+qstr_Why_did_you_make_mod|このmodインストールめんどくさすぎ動かねえ
+qstr_Well_if_you_are_here|マニュアル読まない馬鹿がいるときいて
+qstr_You_just_got_windyfl|おまえはスチーム版を買うといいよ
 qstr_Treebeard_wants_you_|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木のひげに頼まれた。
 qstr_Something_wrong_not_|何かがおかしい、 偵察隊を編成するための 兵が足りない
 qstr_my_home_town|我が本拠地
@@ -857,7 +857,7 @@ qstr_{s4}_^Oh_and_take_ba|{s4} ^おっと、 この兵は引き取ってくれ�
 qstr_I_don_t_need_them_an|どのみち不要なのだ、 とっておいてくれ。
 qstr_It_is_my_duty_to_pro|我らが民を守るのは、わたしの義務です。
 qstr_It_is_my_duty_to_prot|我らが友軍を守るのは、わたしの義務です。
-qstr_I_am_{s4}_{s15}_of_{|私の名は{s4}、 {s6}の{s15}
+qstr_I_am_{s4}_{s15}_of_{|私の名は{s4}。 {s6}の{s15}
 qstr_I_am_{s4}_a_commande|私は{s4}、 {s6}の指揮官
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5?で{s8}の領主である。:だ。
 qstr_Very_well_done_{play|これは素晴らしい、 {playername}！ 私の期待した通り、 間者と連絡係の二人とも捕まえてくれたのだな。 彼らは身柄を厳重に拘束され、 尋問されるのを待っている、とな。 彼らにはたっぷり質問に答えてもらわねばならん！ とにかく、 今回のおぬしの働きには非常に感謝しているぞ、 {playername}。 これはわたしからの感謝の気持ちだ、 受け取ってくれ。
@@ -919,7 +919,7 @@ qstr_No_commander_should_h|指揮官としてはこのような事は話づら�
 qstr_{s9}_asked_you_to_ra|{s9}より、 {reg1}名の{s14}を鍛え上げ、 彼に引き渡すよう頼まれた。
 qstr_{s9}_asked_you_to_hu|{s9}より、 {s4}という名のおたずね者を捕らえるよう依頼された。 おたずね者は現在、 {s3}に潜んでいるとされている。
 qstr_{s9}_asked_you_to_ca|{s9}より、 みっつのグループに分かれて逃亡中の奴隷どもを、 生きたまま{s4}へ連れ戻すよう、頼まれた。 すべてのグループは{s3}を目指して移動しているらしい。
-qstr_{s11}_asked_you_to_f|{s11}より、 {s12}を離れる予定の間者を追跡するよう、 頼まれた。 追跡に気付かれてしまうと、 あやしまれて予定を切り上げられてしまう可能性があるため、 注意を要する。 間者が連絡係と落ち合ったら、 彼らを捕獲して{s11}の許に連行しよう。
+qstr_{s11}_asked_you_to_f|{s11}より、 {s12}を離れる予定の間者を追跡するよう、 頼まれた。 追跡に気付かれてしまうと、 あやしまれて予定を切り上げられてしまう可能性があるため、 注意を要する。 間者が連絡係と落ち合ったら、 彼らを捕獲して、 {s11}の許に連行しよう。
 qstr_{s11}_asked_you_to_c|{s11}より、 敵の指揮官を捕獲し、 尋問のために{s11}の許へ連行するよう依頼された。
 qstr_{s9}_asked_you_to_le|{s9}に、 コンパニオンの{s3}を一週間貸す約束をした。
 qstr_{s9}_has_requested_y|{s9}より、 彼の許へ敵の捕虜を{reg1}名連れてくるよう、 頼まれた。

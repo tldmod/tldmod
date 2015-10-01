@@ -279,11 +279,11 @@ str_fail_quest|責任を持って引き受けた仕事に失敗する
 str_squander_money|預かった資金を使い込む
 str_murder_merchant|冷徹な殺人に手を染める
 str_round_up_serfs|貴族のための奴隷狩りをする
-str_battle_fate_1|戦いの最中にはぐれる
-str_battle_fate_2|私は負傷して倒れ、 そのまま放置された
-str_battle_fate_3|私は敵の一撃で気を失った
-str_battle_fate_4|私は捕らえられ、 身代金を要求された
-str_battle_fate_5|私は捕らえられたが、 なんとか逃げる事ができた
+str_battle_fate_1|戦いの最中にはぐれて
+str_battle_fate_2|私は負傷して倒れ、 そのまま放置されて
+str_battle_fate_3|私は敵の一撃で気を失って
+str_battle_fate_4|私は捕らえられ、 身代金を要求されて
+str_battle_fate_5|私は捕らえられましたが、 なんとか逃げる事ができて
 str_npc_morale_report|コンパニオンの顔ぶれには{s6}。 あなたの統率力には{s7}。 その他の状況には{s8}。
 str_happy|とても満足している
 str_content|満足している
@@ -816,50 +816,50 @@ str_comment_intro_famous_cunning|ほう、 これはこれは。 ようやく会
 str_comment_intro_famous_sadistic|おぬしの名は知っておる。 聞いたところによると、 おぬしの名を呪う未亡人は少なくないようだ。 悪くない。
 str_comment_intro_famous_goodnatured|おぬしの名は存じておるぞ！ かねがね、 おぬしに会いたいと願っていた。
 str_comment_intro_famous_upstanding|おぬしの名は知っている。 聞いたところでは、 最も勇敢な戦士と呼ばれているらしいな。 勇猛さを誇るのも良いが、 名誉を重んじ、 情けを知る事も大事であるぞ。
-; str_comment_intro_noble_liege|I see that you carry a nobleman's banner, although I do not recognize the device. Know that I am always looking for good men to fight for me, once they prove themselves to be worthy of my trust.
-; str_comment_intro_noble_martial|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps one day we shall test each other's valor in a tournament, or on the battlefield!
-; str_comment_intro_noble_badtempered|I don't recognize the device on your banner. No doubt another foreigner come to our lands, as if we didn't have so many here already.
-; str_comment_intro_noble_pitiless|I see that you carry a nobleman's banner, but I do not recognize the device. Another vulture come to grow fat on the leftovers of war, no doubt!
-; str_comment_intro_noble_cunning|I see that you carry a nobleman's banner, but I do not recognize the device. Still, it is always worthwhile to make the acquaintance of {men/women} who may one day prove themselves to be great warriors.
-; str_comment_intro_noble_sadistic|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps you are the bastard {son/daughter} of a puffed-up cattle thief? Or perhaps you stole it?
-; str_comment_intro_noble_goodnatured|I see that you carry a nobleman's banner, but I do not recognize the device. Forgive my ignorance, {sir/madame}! It is good to make your acquaitance.
-; str_comment_intro_noble_upstanding|I see that you carry a nobleman's banner, but I do not recognize the device. No doubt you have come to Calradia in search of wealth and glory. If this indeed is the case, then I only ask that you show mercy to those poor souls caught in the path of war.
-; str_comment_intro_common_liege|You may be of common birth, but know that I am always looking for good men to fight for me, if they can prove themselves to be worthy of my trust.
-; str_comment_intro_common_martial|Perhaps you are not of gentle birth, but if you prove yourself a {man/woman} of valor, then I would be pleased to try my strength against yours in the tournament or on the battlefield.
-; str_comment_intro_common_badtempered|Speak quickly, if you have anything to say, for I have no time to be bandying words with common soldiers of fortune.
-; str_comment_intro_common_pitiless|You have the look of a mercenary, another vulture come to grow fat on the misery of this land.
-; str_comment_intro_common_cunning|Well... I have not heard of you, but you have the look of a {man/woman} who might make something of {himself/herself}, some day.
-; str_comment_intro_common_sadistic|Normally I cut the throats of impudent commoners who barge into my presence uninvited, but I am in a good mood today.
-; str_comment_intro_common_goodnatured|Well, you look like a good enough sort.
-; str_comment_intro_common_upstanding|Peace to you, and always remember to temper your valor with mercy, your courage with honour.
-; str_comment_you_raided_my_village_enemy_benevolent|You have attacked innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!
-; str_comment_you_raided_my_village_enemy_spiteful|You have raided my village of {s51}, destroying my property and killing the tenants. I will take my compensation in blood!
-; str_comment_you_raided_my_village_enemy_coldblooded|You have raided my village of {s51}, destroying my property and killing the tenants. I will make you think twice before you disrupt my revenues like that again.
-; str_comment_you_raided_my_village_enemy|You have raided my village of {s51}, destroying my property and killing tenants under my protection. You will pay the price for your crime!
-; str_comment_you_raided_my_village_unfriendly_spiteful|You have raided my village of {s51}. Do it again and I'll gut you like a fish.
-; str_comment_you_raided_my_village_friendly|You have raided my village of {s51}. This will place a grave strain on our friendship.
-; str_comment_you_raided_my_village_default|You have raided my village of {s51}. If you continue to behave this way, we may soon come to blows.
-; str_comment_you_robbed_my_village_enemy_coldblooded|You have robbed my tenants in the village of {s51}. I take that as a personal insult.
-; str_comment_you_robbed_my_village_enemy|You have robbed innocent farmers under my protection in the village of {s51}.  I will punish you for your misdeeds!
-; str_comment_you_robbed_my_village_friendly_spiteful|I have heard that you pinched some food from my tenants at {s51}. Well, I'll not begrudge you a scrap or two, but keep in mind that I'm the one who must listen to their whining afterward.
-; str_comment_you_robbed_my_village_friendly|I have heard that you requisitioned supplies from my tenants at {s51}. I am sure that you would not have done so were you not desperately in need.
-; str_comment_you_robbed_my_village_default|You have robbed my tenants in the village of {s51}. If you continue to behave this way, we may soon come to blows.
-; str_comment_you_accosted_my_caravan_enemy|You have been accosting caravans under my protection. But your trail of brigandage will soon come to an end.
-; str_comment_you_accosted_my_caravan_default|You have been accosting caravans under my protection. This sort of behavior must stop.
-; str_comment_you_helped_villagers_benevolent|I heard that you gave charity to my tenants in the village of {s51}. I had been neglectful in my duties as lord and protector, and I appreciate what you have done.
-; str_comment_you_helped_villagers_friendly_cruel|I heard that you gave charity to my tenants in the village of {s51}. I appreciate that you meant well, but I'd rather you not undercut my authority like that.
-; str_comment_you_helped_villagers_friendly|I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, so I will not object to you providing them with assistance.
-; str_comment_you_helped_villagers_unfriendly_spiteful|I heard that you gave charity to my tenants in the village of {s51}. As amusing as it is to see you grubbing for favor among my vassals, I would ask you to mind your own business.
-; str_comment_you_helped_villagers_cruel|I heard that you gave charity to my tenants in the village of {s51}. As the peasants' lord and protector, it is most properly my duty to assist them in times of hardship. You may mean well, but your actions still undercut my authority. I would thank you to leave them alone.
-; str_comment_you_helped_villagers_default|I heard that you gave charity to my tenants in the village of {s51}. Times are hard, and I know that you mean well, but try not to make a habit of it. I am their lord and protector, and I would rather not have them go looking to strangers for assistance.
-; str_comment_you_captured_a_castle_allied_friendly|I heard that you have besieged and taken {s51}. That was a great dead, and I am proud to call you my friend!
-; str_comment_you_captured_a_castle_allied_spiteful|I heard that you have besieged and taken {s51}. Good work! Soon, we will have all their fortresses to despoil, their treasuries to ransack, their grieving widows to serve us our wine.
-; str_comment_you_captured_a_castle_allied_unfriendly_spiteful|I heard that you have besieged and taken {s51}. Well, every dog has his day, or so they say. Enjoy it while you can, until your betters kick you back out in the cold where you belong.
-; str_comment_you_captured_a_castle_allied_unfriendly|I heard that you have besieged and taken {s51}. Whatever our differences in the past, I must offer you my congratulations.
-; str_comment_you_captured_a_castle_allied|I heard that you have besieged and taken {s51}. We have them on the run!
-; str_comment_you_captured_my_castle_enemy_spiteful|I hear that you have broken into my home at {s51}. I hope the dungeon is to your liking, as you will be spending much time there in the years to come.
-; str_comment_you_captured_my_castle_enemy_chivalrous|You hold {s51}, my rightful fief. I hope you will give me the chance to win it back!
-; str_comment_you_captured_my_castle_enemy|You have something that belongs to me -- {s51}. I will make you relinquish it.
+str_comment_intro_noble_liege|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がないな。 私は私に仕えるにふさわしい、 信頼のおける、 実績のある者を常に探しておるぞ。
+str_comment_intro_noble_martial|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がないな。 一度、 手合わせ願いたいのう。 闘技会でも、 戦場でも良いぞ！
+str_comment_intro_noble_badtempered|おぬしの掲げるその戦旗にある紋章、 私は見た事がない。 どうやら我が国に、 またひとりよそ者が増えたようだな。
+str_comment_intro_noble_pitiless|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がない。 どうせ戦場に残った金目の物を漁る、 ハゲワシであろう！
+str_comment_intro_noble_cunning|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がない。 だが、 いづれ偉大な戦士となる可能性のある{男/女}と面識を持っておくのは、 悪い事ではあるまい。
+str_comment_intro_noble_sadistic|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は見た事がない。 思い上がった下賤の牛泥棒の{息子/娘}といったところか？ それともその戦旗は盗んだものか？
+str_comment_intro_noble_goodnatured|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は私の記憶にない。 {将軍/将軍}殿、 私の無知を詫びよう！ お会いできて光栄だ。
+str_comment_intro_noble_upstanding|おぬし、 戦旗を掲げる事を許されておるようだが、 その紋章は私の記憶にない。 おおかた、 富と栄誉を求めてカルラディアへやって来たのであろう。 もしそうなら、 おぬしにはぜひ、 戦争に巻き込まれる者たちへの哀れみの心を持って頂きたい。
+str_comment_intro_common_liege|おぬしは確かに平民の生まれかも知れぬが、 私は私に仕えるにふさわしい、 信頼のおける、 実績のある者を常に探しておるぞ。
+str_comment_intro_common_martial|おぬしは確かに平民の生まれかも知れぬが、 勇猛なる{男/女}として名を上げさえすれば、 私は喜んで相手してやろう。 闘技会でも、 戦場でも良いぞ。
+str_comment_intro_common_badtempered|何か言うべき事があるのなら、 さっさと吐き出すがいい。 私は傭兵風情を相手におしゃべりをする暇などないのだ。
+str_comment_intro_common_pitiless|見たところ、 おぬしは傭兵か。 この地の混乱を嗅ぎつけたハゲワシがまた一羽、 流れてきたというわけだな。
+str_comment_intro_common_cunning|ほほう・・・ おぬしの名は聞いた事がないが、 なかなかモノになりそうな{男/女}ではないか。 いづれ{勇者/勇者}として名を上げるのかも知れぬな。
+str_comment_intro_common_sadistic|いつもなら私の前に乱入してくる厚かましい平民など、 のど笛をかき切ってやるのだが、 私は今日は機嫌が良い。
+str_comment_intro_common_goodnatured|ふむ、 おぬしは好ましい人物のように見えるな。
+str_comment_intro_common_upstanding|おぬしに平穏あれ。 武勇と情け、 それに勇気と名誉。 これらは、 どれが欠けてもいけないという事を、 肝に銘じておくがいい。
+str_comment_you_raided_my_village_enemy_benevolent|おぬし、 我が庇護下にある{s51}の村に住む、 罪もない農民たちを襲ったそうだな。 この手で成敗してくれる！
+str_comment_you_raided_my_village_enemy_spiteful|おぬし、 我が{s51}の村を襲って破壊行為に及んだあげく、 住民たちを殺したそうだな。 その罪は、 おぬしの血でもって償ってもらうぞ！
+str_comment_you_raided_my_village_enemy_coldblooded|おぬし、 我が{s51}の村を襲って破壊行為に及んだあげく、 住民たちを殺したそうだな。 私の資産に手を出せばどうなるのか、 おぬしに思い知らせてやろう。
+str_comment_you_raided_my_village_enemy|おぬし、 我が{s51}の村を襲って破壊行為に及んだあげく、 住民たちを殺したそうだな。 おぬしの犯した罪を、 償ってもらうぞ！
+str_comment_you_raided_my_village_unfriendly_spiteful|おぬし、 我が{s51}の村を襲ったそうだな。 今度やったら、 おぬしのはらわたを、 引きずり出してくれる。
+str_comment_you_raided_my_village_friendly|おぬし、 我が{s51}の村を襲ったそうだな。 我々の友情も、 これまでかのう。
+str_comment_you_raided_my_village_default|おぬし、 我が{s51}の村を襲ったそうだな。 おぬしがそのつもりなら、 私にも考えがある。
+str_comment_you_robbed_my_village_enemy_coldblooded|おぬし、 我が{s51}の村の住人に対して、 略奪を働いたそうだな。 これは私に対する挑戦と見てよいな。
+str_comment_you_robbed_my_village_enemy|おぬし、 我が{s51}の村の罪もない農民に対して、 略奪を働いたそうだな。 その罪の深さを、 思い知らせてくれよう！
+str_comment_you_robbed_my_village_friendly_spiteful|おぬし、 我が{s51}の住人から食料を盗んだそうだな。 多少は多目にみてやるが、 あの連中の陳情をいちいち聞いてやらねばならないのは、 私だという事を忘れるなよ。
+str_comment_you_robbed_my_village_friendly|おぬし、 我が{s51}の住人たちから、 食料を徴発したらしいな。 それほど切羽詰まっておったわけでもなかろう。
+str_comment_you_robbed_my_village_default|おぬし、 我が{s51}の村の住人から盗みを働いたらしいな。 おぬしがそのつもりなら、 私にも考えがある。
+str_comment_you_accosted_my_caravan_enemy|おぬし、 私の隊商から金を巻き上げておるらしいな。 図に乗るのもいいかげんにしてもらおう。
+str_comment_you_accosted_my_caravan_default|おぬし、 私の隊商から金を巻き上げておるらしいな。 許しがたい蛮行だ。
+str_comment_you_helped_villagers_benevolent|おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 礼を言う。 私は領主として何もしてやれなかった。
+str_comment_you_helped_villagers_friendly_cruel|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 おぬしに悪気はないのであろうが、 私の権威を低下させるような行いは、 遠慮してもらいたい。
+str_comment_you_helped_villagers_friendly|おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 文句をつけるつもりはない。 時勢は厳しく、 おぬしにも悪気はないのであろうからな。
+str_comment_you_helped_villagers_unfriendly_spiteful|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 どういうつもりなのかは知らぬが、 余計な事はしないでもらいたい。
+str_comment_you_helped_villagers_cruel|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 我が民が苦しい時に助けの手を差し伸べるのは、 彼らの領主である私の務めである。 おぬしには私の権威を傷つけるような行いは、 慎んでもらいたい。
+str_comment_you_helped_villagers_default|聞いたところによると、 おぬし、 我が{s51}の村の住人に、 施しをしたそうな。 時勢は厳しく、 おぬしにも悪気はないのであろうが、 彼らを甘やかすのは慎んでもらいたい。 彼らの領主は私だ。 我が民がよそ者の助けを求めるような事は、 好ましいとは言えぬ。
+str_comment_you_captured_a_castle_allied_friendly|おぬし、 {s51}を落としたそうだな。 偉業だ。 おぬしの友人として、 私も誇らしい！
+str_comment_you_captured_a_castle_allied_spiteful|おぬし、 {s51}を落としたそうだな。 よくやった！ この調子でやつらの要塞すべてを踏み荒らし、 財宝を根こそぎ奪い、 悲嘆にくれる未亡人どもをはべらせ、 葡萄酒を楽しもうではないか。
+str_comment_you_captured_a_castle_allied_unfriendly_spiteful|おぬし、 {s51}を落としたそうだな。 まあ、 運の良い日というのは誰にでもあるそうな。 せいぜい今のうちに、 最後となるかも知れぬ勝利の味を、 かみしめておくがいい。
+str_comment_you_captured_a_castle_allied_unfriendly|おぬし、 {s51}を落としたそうだな。 我らの間にはわだかまりもあるが、 今日のところは、 素直におぬしの勝利を祝福しよう。
+str_comment_you_captured_a_castle_allied|おぬし、 {s51}を落としたそうだな。 ついにやつらを追い出してやったわ！
+str_comment_you_captured_my_castle_enemy_spiteful|私の留守を狙って{s51}を襲ったのは、 おぬしらしいな。 牢獄で自分の愚かさを嘆くがいい。
+str_comment_you_captured_my_castle_enemy_chivalrous|おぬしの居座る{s51}は、 私の正統なる領地だ。 必ずや、 取り戻してくれる！
+str_comment_you_captured_my_castle_enemy|おぬしの居座る{s51}は、 本来ならば私の領地だ。 きっと返してもらうぞ。
 str_comment_we_defeated_a_lord_unfriendly_spiteful|我々の{s54}戦の勝利を祝って 祝杯でも挙げようと考えているのなら、 やめておけ。 おぬしがいままでに犯した不義の行いの数々は、 あの程度で拭いとれるものではないのだからな。
 str_comment_we_defeated_a_lord_unfriendly|{s54}戦でおぬしと共に戦った事は決して忘れないが、 我々の間にあるわだかまりもまた、 決して忘れる事はできない。
 str_comment_we_defeated_a_lord_cruel|あの{s54}との戦いは、我々の大勝利であったな？ 敵勢を丸ごとからすの餌にしてくれたわ！
@@ -941,33 +941,33 @@ str_comment_you_let_me_go_enemy_chivalrous|このあいだは、 おぬしの情
 str_comment_you_let_me_go_enemy_coldblooded|このあいだは、 おぬしの情けによってこの身は逃がされた。 だが、 お互い敵同士なのは変わらぬ。 私に同じ情けを期待してもらっては困るぞ。
 str_comment_you_let_me_go_enemy|このあいだは、 おぬしの情けによってこの身は逃がされた。 その事については、 感謝しよう。 だが、 我々はいまだ交戦中なのだ。
 str_comment_you_let_me_go_default|このあいだは、 おぬしの情けによってこの身は逃がされた。 おぬしの寛大な処置には感謝する。 我々両国間の争いが止んだのは、 喜ばしい。
-; str_comment_pledged_allegiance_allied_martial_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Pray do not disgrace us by behaving in a cowardly fashion.
-; str_comment_pledged_allegiance_allied_martial|I heard that you have pledged allegiance to our lord, {s54}. I look forward to fighting alongside you against our foes.
-; str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Bah. Do yourself a favor, and stay out of my way.
-; str_comment_pledged_allegiance_allied_quarrelsome|I heard that you have pledged allegiance to our lord, {s54}. Fight hard against our foes, respect your betters, and don't cross me, and we'll get along fine.
-; str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. If I were he, I would not trust you to clean the sculleries.
-; str_comment_pledged_allegiance_allied_selfrighteous|I heard that you have pledged allegiance to our lord, {s54}. Fight bravely and you will be well-rewarded. Betray us, and we shall make of you the kind of example that will not soon be forgotten.
-; str_comment_pledged_allegiance_allied_cunning_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. I do not pretend to be happy about his decision, but perhaps it is better to have you inside our tent pissing out, than the other way around.
-; str_comment_pledged_allegiance_allied_cunning|I heard that you have pledged allegiance to our lord, {s54}. That is good. The more skilled fighters we have with us in these troubled times, the better. I shall be watching your progress.
-; str_comment_pledged_allegiance_allied_debauched_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. No doubt you will soon betray him, and I will have the pleasure of watching you die a traitor's death.
-; str_comment_pledged_allegiance_allied_debauched|I heard that you have pledged allegiance to our lord, {s54}. Excellent... I am sure that you and I will become very good friends. But remember -- if you betray us, it will be the biggest mistake you will ever make.
-; str_comment_pledged_allegiance_allied_goodnatured_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Well, I can't say that I would have trusted you, but perhaps you deserve the benefit of the doubt.
-; str_comment_pledged_allegiance_allied_goodnatured|I heard that you have pledged allegiance to our lord, {s54}. Good {man/woman}! Our lord is a noble soul, and rewards loyalty and valor with kindness and generosity.
-; str_comment_pledged_allegiance_allied_upstanding_unfriendly|I heard that you have pledged allegiance to our lord, {s54}. Alas, from what I know of you I fear that you will disgrace us, but I will be happy if you prove me wrong.
-; str_comment_pledged_allegiance_allied_upstanding|I heard that you have pledged allegiance to our lord, {s54}. Fight against our foes with valor, but also with honour and compassion. A good name is as valuable as a sharp sword or a swift horse in affairs of arms.
-; str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|I heard that {s54} granted you {s51} as a fief. Don't forget -- spare the whip and spoil the peasant!
-; str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|I heard that {s54} granted you {s51} as a fief. I am glad to see you prosper -- but be careful. Men are vipers, envious and covetous of their neighbours' wealth. Stay close to me, and I'll watch your back.
-; str_comment_our_king_granted_you_a_fief_allied_friendly|I heard that {s54} granted you {s51} as a fief. May your new lands prosper.
-; str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|I heard that {s54} granted you {s51} as a fief. But keep in mind that pride goes before a fall.
-; str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|I heard that {s54} granted you {s51} as a fief. I suspect, however, that fortune is only raising you up so as to humble you even more, when it casts you back into the dung from whence you came.
-; str_comment_our_king_granted_you_a_fief_allied_spiteful|I heard that {s54} granted you {s51} as a fief. Let's hope you are indeed deserving of our lord's favor.
-; str_comment_our_king_granted_you_a_fief_allied|I heard that {s54} granted you {s51} as a fief. You seem to be doing very well for yourself.
-; str_comment_you_renounced_your_alliegance_enemy_friendly|I heard that you renounced your allegiance to our lord, {s54}. It grieves me that we must now meet on the field of battle.
-; str_comment_you_renounced_your_alliegance_friendly|I heard that you renounced your allegiance to our lord, {s54}. Let us pray that we may not come to blows.
-; str_comment_you_renounced_your_alliegance_unfriendly_spiteful|I always had you figured for a traitor to {s54}, and now it seems I was proven right. I hope you are prepared to die a traitor's death!
-; str_comment_you_renounced_your_alliegance_unfriendly_moralizing|I heard that you renounced your allegiance to our lord, {s54}. I am forced to consider you a traitor.
-; str_comment_you_renounced_your_alliegance_enemy|I heard that you renounced your allegiance to our lord, {s54}. Well, it is the way of the world for old comrades to become enemies.
-; str_comment_you_renounced_your_alliegance_default|I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield.
+str_comment_pledged_allegiance_allied_martial_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 卑怯な行いをして、 我らの名をおとしめるような事のないように願いたい。
+str_comment_pledged_allegiance_allied_martial|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしと共に敵を打ち破るのを、 楽しみにしておるぞ。
+str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 フン。 私の邪魔だけはするなよ。
+str_comment_pledged_allegiance_allied_quarrelsome|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 敵によく当たり、 目上を敬い、 そして私に逆らう事のないようにな。 それさえ心がければ、 おぬしもうまくやっていけるだろう。
+str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 皿洗いを雇うにしても、 もう少しましな者はあるであろうにな。
+str_comment_pledged_allegiance_allied_selfrighteous|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 勇敢に戦えば、 じゅうぶん報奨されるであろう。 もし我らを裏切るような事があれば、 みせしめとして世に語り継がれるような目にあわせてくれよう。
+str_comment_pledged_allegiance_allied_cunning_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 率直に言って、 おぬしのような者を我が陣営に置くのはどうかと思うが、 まあ敵陣にあるよりはましなのかも知れぬ。
+str_comment_pledged_allegiance_allied_cunning|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 よくぞ決断した。 この困難な時代には、 優秀な戦士は多ければ多いほどいい。 おぬしには注目しておるぞ。
+str_comment_pledged_allegiance_allied_debauched_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしが将来、 裏切りを働くのは間違いない。 裏切り者として死ぬおぬしを見るのは、 楽しみだ。
+str_comment_pledged_allegiance_allied_debauched|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 素晴らしい・・・ 我々はうまくやっていけるだろう。 だが、 これだけは肝に銘じておくがいい。 もし我らを裏切れば、 かならず後悔する事になろう。
+str_comment_pledged_allegiance_allied_goodnatured_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしを信用する気には到底なれぬが、 それもおぬしの魅力のうちなのであろうな。
+str_comment_pledged_allegiance_allied_goodnatured|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 見所のある{男/女}よな！ 高貴なる心をお持ちの陛下は、 勇猛かつ忠実な者への褒賞を惜しむ事がないぞ。
+str_comment_pledged_allegiance_allied_upstanding_unfriendly|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 おぬしについては、 あまり良い評判は聞かぬが、 評判など今後の働き次第でどうにでもなる。 期待しておるぞ。
+str_comment_pledged_allegiance_allied_upstanding|おぬし、 我らが主君である{s54}陛下に、 忠誠を誓ったそうな。 勇気をもって敵に当たるのは当然のことながら、 おぬしには名誉と哀れみの心も忘れないでもらいたい。 戦場においては、 勇名とは磨き上げた剣や、 選りすぐりの駿馬に勝るとも劣らぬ価値があるのだ。
+str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 領民は甘やかすとつけ上がる！ 覚えておけ。
+str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 おぬしの出世は喜ばしい。 だが気をつけろ。 人間というものは、 他人が富を手に入れる事をねたましく思っては、 その横取りを狙う、 毒蛇なのだ。 何かあったら、 遠慮なく私を頼るがいい。 喜んで面倒を見て進ぜよう。
+str_comment_our_king_granted_you_a_fief_allied_friendly|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 おぬしの領地が栄る事を祈ろう。
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 絶頂の後に来るのは転落、 とならないように気をつけるのだな。
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 まあ、 どうせおぬしなど、 その身が膨れ上がるほど、 元来た肥溜めへと転落するのが早まるクチであろう。
+str_comment_our_king_granted_you_a_fief_allied_spiteful|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 陛下のご好意を裏切るような事がなければいいがな。
+str_comment_our_king_granted_you_a_fief_allied|{s54}陛下は、 {s51}をおぬしに、 領地として下されたそうな。 おぬしは、 順調に出世しておるようだな。
+str_comment_you_renounced_your_alliegance_enemy_friendly|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 戦場でおぬしと敵味方に分れなければならないとは、 つらいことだ。
+str_comment_you_renounced_your_alliegance_friendly|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 お互い戦場では顔を合わせたくないものだな。
+str_comment_you_renounced_your_alliegance_unfriendly_spiteful|常々、 おぬしは{s54}陛下を裏切ると考えておったが、 やはりというべきか。 おぬしには、 裏切り者にふさわしい死をくれてやろう！
+str_comment_you_renounced_your_alliegance_unfriendly_moralizing|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 これでは、 おぬしの事を裏切り者と考えざるを得ない。
+str_comment_you_renounced_your_alliegance_enemy|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 世の常とはいえ、 昨日の戦友が今日の敵とはな。
+str_comment_you_renounced_your_alliegance_default|おぬし、 我らが{s54}陛下への忠誠の誓いを、 破棄したそうだな。 それがおぬしの選ぶ道ならば致し方あるまいが、 戦場で出会っても、 私に手加減など期待してくれるなよ。
 str_personality_archetypes|君主
 str_martial|軍人
 str_quarrelsome|短気
@@ -1088,15 +1088,15 @@ str_lord_insult_cunning|軽率なうすのろ
 str_lord_insult_sadistic|はな垂れの卑怯者
 str_lord_insult_goodnatured|不快な男
 str_lord_insult_upstanding|恥ずべき悪党
-; str_rebellion_dilemma_default|[liege]
-; str_rebellion_dilemma_martial|{s45} was clearly wronged. Although I gave an oath to {s46}, it does not bind me to support him if he usurped his throne illegally.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself .
-; str_rebellion_dilemma_pitiless|Hmm. {s45} says {reg3?she:he} is the rightful heir to the throne. That is good -- it absolves me of my oath to {s46}. But still I must weight my decision carefully.
+str_rebellion_dilemma_default|[臣従をうながす]
+str_rebellion_dilemma_martial|{s45}が不当な扱いを受けたのは間違いない。 私は{s46}に忠誠を誓っているが、 もし王位が不当に奪われたものだとしたら、 私も誓いを守る義務はないと考える。
+str_rebellion_dilemma_quarrelsome|フム。 {s46}に大した恩を受けた覚えはない。 しかし、 だからといって、 {s45}を支持するという話にはならぬ。 少なくとも、 {s46}は自身を証明されておる。
+str_rebellion_dilemma_pitiless|なるほど。 {s45}は、 {reg3?彼女:彼}こそが正当なる王である、 と主張するのだな。 それはいい。 私の{s46}に対して誓った忠誠も、 正当性を失うというわけだ。 しかし、 ここは慎重に判断せねばなるまい。
 ; str_rebellion_dilemma_cunning|Hmm. I gave an oath of homage to {s46}, yet the powerful are not bound by their oaths as our ordinary people. Our duty is to our own ability to rule, to impose order and prevent the war of all against all.
 ; str_rebellion_dilemma_sadistic|Hmm. In this vile world, a wise man must think of himself, for no one else will. So -- what's in it for me?
 ; str_rebellion_dilemma_goodnatured|I do not know what to say. I gave an oath to {s46} as the lawful ruler, but if he is not the lawful ruler, I don't know if I am still bound.
 ; str_rebellion_dilemma_upstanding|This is troublesome. It is a grave thing to declare my homage to {s46} to be null and void, and dissolve the bonds which keep our land from sinking into anarchy. Yet I am also pledged to support the legitimacy of the succession, and {s45} also has a valid claim to the throne.
-; str_rebellion_dilemma_2_default|[liege]
+str_rebellion_dilemma_2_default|[臣従をうながす]
 ; str_rebellion_dilemma_2_martial|On the other hand, {s46} has led us in war and peace, and I am loathe to renounce my allegiance.
 ; str_rebellion_dilemma_2_quarrelsome|So tell me, why should I turn my back on the bastard I know, in favor of {reg3?a woman:the bastard} I don't know?
 ; str_rebellion_dilemma_2_pitiless|It is a most perilous position to be in, to be asked whom I would make {reg3?ruler:king} of this land. Yet it is also a time of opportunity, for me to reap the rewards that have always been my due!
@@ -1108,7 +1108,7 @@ str_lord_insult_upstanding|恥ずべき悪党
 ; str_rebellion_prior_argument_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
 ; str_rebellion_prior_argument_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I do not find them convincing.
 ; str_rebellion_prior_argument_very_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I disagree with most of them.
-; str_rebellion_rival_default|[liege]
+str_rebellion_rival_default|[臣従をうながす]
 ; str_rebellion_rival_martial|{s49} your ally {s44} once questioned my honour and my bravery. It's not often I get the chance to face him in battle, and make him retract his statement.
 ; str_rebellion_rival_quarrelsome|{s49} you're working with {s44}. He's a crafty weasel, and I don't trust him one bit.
 ; str_rebellion_rival_pitiless|{s49} you seem to have enlisted the support of {s44} -- who is soft, and weak, and not fit to govern a fief, and whom I have always detested.
@@ -1132,7 +1132,7 @@ str_lord_insult_upstanding|恥ずべき悪党
 ; str_but_comma_1|, but 
 ; str_and_comma_2|. Moreover, 
 ; str_but_comma_2|. Nonetheless, 
-; str_rebellion_agree_default|[liege]
+str_rebellion_agree_default|[臣従をうながす]
 ; str_rebellion_agree_martial|I have decided. I will back {s45} as the rightful heir.
 ; str_rebellion_agree_quarrelsome|Ahh, I've thought long enough. I never did like {s46} much anyway. Let's go take his throne away from him.
 ; str_rebellion_agree_pitiless|You are fortunate. I have decided to join you. Pray do not give me cause to regret this decision.
@@ -1140,10 +1140,10 @@ str_lord_insult_upstanding|恥ずべき悪党
 ; str_rebellion_agree_sadistic|I have decided. I will back your {reg3?woman:man} {s45}. But you'd best make sure that {reg3?she:he} rewards me well!
 ; str_rebellion_agree_goodnatured|All right. I think your {reg3?woman:man} will be a good ruler. I'll join you.
 ; str_rebellion_agree_upstanding|So be it. My first duty is to this realm, and to save it from lawlessness I will back {s45} and renounce my homage to {s46}. May the Heavens forgive me if I do wrong.
-; str_rebellion_refuse_default|[liege]
+str_rebellion_refuse_default|[臣従をうながす]
 ; str_rebellion_refuse_martial|I am sorry. {s45} has a good claim, but it's not enough for me to turn my back on {s46}. I will remain loyal to my liege.
 ; str_rebellion_refuse_quarrelsome|Nah. Your whelp {s45} doesn't have what it takes to rule this realm. I'm sticking with {s46}.
-; str_talk_later_default|[liege]
+str_talk_later_default|[臣従をうながす]
 ; str_talk_later_martial|Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight.
 ; str_talk_later_quarrelsome|Do you expect me to discuss betraying my liege with you, while we are surrounded by his army? What do you take me for, a bloody idiot?
 ; str_talk_later_pitiless|Still your tongue! Whatever I have to say on this matter, I will not say it here and now, while we are in the midst of our army.
@@ -1864,7 +1864,7 @@ str_gundabad_gift1|魔除けの戦化粧
 str_gundabad_gift2|煮沸したドワーフのラード
 str_gundabad_gift3|ミイラの偶像
 str_gundabad_gift4|黒ワーグ
-str_dunland_gift0|くさいヤギのチーズ
+str_dunland_gift0|かぐわしいヤギのチーズ
 str_dunland_gift1|生け贄のフリントナイフ
 str_dunland_gift2|銅の腕輪
 str_dunland_gift3|ヤギ
