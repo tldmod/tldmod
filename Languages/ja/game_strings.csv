@@ -4,10 +4,10 @@ str_noone|空
 str_s50_and_s51|{s50}、 および{s51}
 str_s5_s_party|{s5}の部隊
 str_s5_s_host|{s5}の軍隊
-str_given_by_s1_at_s2|{s2}にて {s1}より請け負う
-str_given_by_s1_in_wilderness|野外にて{s1}より請け負う
+str_given_by_s1_at_s2|{s2}にて、 {s1}より請け負う
+str_given_by_s1_in_wilderness|野外にて、 {s1}より請け負う
 str_s7_raiders|{s7}遊撃隊
-str_bandits_eliminated_by_another|迷惑な野盗は、 他のパーティによって倒されました。
+str_bandits_eliminated_by_another|迷惑な野盗は、他のパーティによって倒されました。
 str_msg_battle_won|戦いに勝利しました！ 終了するにはTABキーを押してください・・・
 str_tutorial_map1|これは大陸の地図です。 マップ上を左クリックすると、 あなたのパーティはそこを目指して移動をしたり、 町の中へ入ったり、 選択されたパーティを追跡したりします。 この画面のときに、 パーティが移動もせず、 待機中でも休息中でもない場合は、 時間の流れは止まった状態になります。 スペースキーを押している間は、 パーティがその場に立ち止まった状態でも、 時間だけは流れていきます。
 str_accept|受け入れる
@@ -18,7 +18,7 @@ str_flip_vertical|上下反転
 str_hold_fire|攻撃止め
 str_blunt_hold_fire|殴打 / 攻撃止め
 str_tutorial_ammo_refilled|矢弾が補充されました。
-str_custom_battle_1|マルヴォギル隊長率いるゴンドールの部隊は、 増援に向う途中のハラドの部隊の行く手を阻んだ。 隊長はときの声を上げ、 彼の馬にムチを当てると、 忠実な部下たちを率いて 激しい戦いの火蓋を切った。
+str_custom_battle_1|マルヴォギル隊長率いるゴンドールの部隊は、 増援に向う途中のハラドの部隊の行く手を阻んだ。 隊長はときの声を上げて彼の馬にムチを当てると、 忠実な部下たちを率いて激しい戦いの火蓋を切った。
 str_custom_battle_2|ロリエンのケレボルンが騎兵と弓兵からなる巡察隊を率いていると、 先行していた斥候から 灰色の顔をした男たちの一群が 接近していると報告を受けた。 悪名高い、黒きヌーメノール人だ！ ロスロリエンの近くでは彼らを長いこと見ることがなかったが、 再びこの世界へと追い払われてきたのだろう。
 str_custom_battle_3|ローハンのグリムボルド卿は一隊を率い、 アイゼンガルド軍による包囲のなか、 絶対防御線である城壁を死守していた。 攻城軍が仕上げの総攻撃にかかろうとする今、 彼は勇気と磨き上げた剣をもって、 この城壁を守り通さねばならない。
 str_custom_battle_4|リューンの軍勢が接近しているとの報告を斥候から受けると、 ベランヘルム卿は数に優る敵勢を食い止めるべく、 彼の野営地の守備を固める準備に素早くとりかかった。
@@ -356,7 +356,7 @@ str_npc5_backstory_a|君は生身の人間たちが忘れ去ってしまった�
 str_npc6_backstory_a|感じの悪いのは謝るわ、旅の人。 でも、ここを訪れる数少ない来客といえば、 信用できない者ばかりなの。 つい一週間まえにここへ来た、 あのドワーフときたら・・・ 何でもないわ。 私はルエヴァンナ、 闇の森のシルヴァン・エルフよ。
 str_npc7_backstory_a|これはどうもご丁寧に、 {playername}殿。 わしらは侵攻してくる東夷やグンダバドのオークどもを 追い払っているのだが、 いまのところ、 わしらと同盟国のデールの手に余るような相手はおらん。
 str_npc8_backstory_a|兵舎に行けば、あなたの部隊に志願してくれる勇敢な戦士が きっと見つかると思いますよ。 私はただの医師、それと薬草医で、 腕も大したことないんです。
-str_npc9_backstory_a|あんた、いいね！ わし、グルム。 上官に手を上げちまって、 やつのスナガどもに追われとるんじゃ。^あの役立たずの豚め、 自業自得じゃ！ ちょっとまえ、 わら頭の偵察隊に奇襲されてな・・・ やつは一人で勝手に負けよったんじゃ。 '退却'とか叫んでな、 やつはさっさと逃げちまったのさ。 その場にとどまって、 突撃してくる馬をさばいたのは、 グルムと他数匹だけじゃ。 黄色い頭がすり身になるまで、 殴ってやったわ(ヒッヒッヒッ)。 わしら強いのがおらんかったら、 部隊はそっくり全部長虫の餌になっとったところじゃ。
+str_npc9_backstory_a|あんた、いいね！ わし、グルム。 上官に手を上げちまって、 やつのスナガどもに追われとるんじゃ。^あの役立たずの豚め、 自業自得じゃ！ ちょっとまえ、 わら頭の偵察隊に奇襲されてな・・・ やつは一人で勝手に負けよったんじゃ。 「退却」とか叫んでな、 やつはさっさと逃げちまったのさ。 その場にとどまって、 突撃してくる馬をさばいたのは、 グルムと他数匹だけじゃ。 黄色い頭がすり身になるまで、 殴ってやったわ(ヒッヒッヒッ)。 わしら強いのがおらんかったら、 部隊はそっくり全部長虫の餌になっとったところじゃ。
 str_npc10_backstory_a|俺はドゥルガシュ！
 str_npc11_backstory_a|どうせおいらは追跡兵には向いてないよ。 だからって、 おいらをつまみ出すことないだろ！ 親分たちは面倒くさくなっただけなんだよ。 あんなやつらは死んじまえ！ やつらの話じゃ、 おいらは矢はあさっての方向に飛ばす、 足は遅い、 鼻は効かないと来たもんだ。 ドチクショーめ！ おいらの使い道が見つからなかったら、 おいらを黒い穴に捨てちまえって話してやがったのは知ってるんだ。 おいらにそんな事しようもんなら、 親分どもと刺し違えてやる！
 str_npc12_backstory_a|俺はこの辺の下っ端どものまとめ役だ。 名前はゴルバグ。 ここは俺たちウルクが仕切ってるんだ、 よく覚えておけよ。 親分どもはどじを踏む、 ああそうさ、 一番の親分でさえ間違える事があるんだ。 後始末をするのは、 いつも気の毒な俺たちウルクさ。 ろくに褒美ももらえないけどな。 やつらはいつも情報を小出しにするんだよ、 なあ？ 知っている事の半分も教えやがらねえ。 グルル！
@@ -373,7 +373,7 @@ str_npc5_backstory_b|私はエルロンド卿に頼まれ、 ロヴァニオン�
 str_npc6_backstory_b|私は、この美しい森の、 秘密の小道を歩くのがすき。 ときどき息をひそめては、 木々の影から森に住む動物たちの営みを、 そっと観察するの。 めずらしい鳥の歌や、 巣ごもりをする野生の熊たちの姿は、 私にとってはエダインが武器をぶつけあったり、 大きな城壁に心を奪われたりするのと同じくらい、 興味を引かれることなのよ。
 str_npc7_backstory_b|わしはドワーフのしきたり通り、 尊敬する父ドワーリンの教えに従い、 エレボールの守備を固めるのを助け、 若いドワーフたちを訓練した。
 str_npc8_backstory_b|私はブランド王の、体調不良の治療を担当しています。 これは便秘から来るもので、 戦争に行く方が患いやすいんです。 ニガヨモギを調合して薄めたものを服用すれば、 胃腸も気分も落ち着くんですよ。
-str_npc9_backstory_b|そこでわしは考えた。 'グルム、おまえはくさった肉の塊になりたいのか？'、とな。 '嫌だ'、が答えじゃ。^次の戦いで、 わしは怪我をしたふりをして、 後ろのほうにおった。 それで、 誰も見ておらんのを確認して、 上官に襲いかかったんじゃ！ 奴はほぼ、 まっぷたつじゃ、 グハハー！ それから奴の周りにおったスナガどもを、 全部きれいに切り倒した。^^・・・だが、 どうやら奴は、 血まみれで這いずってたくせに、 命拾いしたらしくてのう。 この一件を周りにまくしたてておったわ。 次はきっちり首を落としておかんとなあ、 ガァルル・・・
+str_npc9_backstory_b|そこでわしは考えた。 「グルム、おまえはくさった肉の塊になりたいのか？」、とな。 「嫌だ」、が答えじゃ。^次の戦いで、 わしは怪我をしたふりをして、 後ろのほうにおった。 それで、 誰も見ておらんのを確認して、 上官に襲いかかったんじゃ！ 奴はほぼ、 まっぷたつじゃ、 グハハー！ それから奴の周りにおったスナガどもを、 全部きれいに切り倒した。^^・・・だが、 どうやら奴は、 血まみれで這いずってたくせに、 命拾いしたらしくてのう。 この一件を周りにまくしたてておったわ。 次はきっちり首を落としておかんとなあ、 ガァルル・・・
 str_npc10_backstory_b|アイゼンガルドの狼乗りで、追跡兵なんだけどさ。
 str_npc11_backstory_b|くそったれめ！ ちょっと風邪気味なだけなんだ。 だいたい、 石ころなんか嗅ぎまわって何か意味あるのか？ ばっかやろう！ あの阿呆のウルクどものせいなんだ！ あの考えなしのうすのろどもめ！ あいつらに先に行かせてやると、 手当たり次第に物をつまみあげるわ、 そこらじゅうを踏み荒らすわで、 匂いなんかどっかに吹っ飛んじまうんだよ。
 str_npc12_backstory_b|あのナズグールどもは薄気味が悪い。 あいつらににらまれただけで、 あっちの世界へ魂を持っていかれちまう。 だがあいつらは大親分のお気に入りでな。 ここで愚痴を言ったところで何にもならん。 ここにいると魂がすり減るわい。 ナズグールどものいない別の場所へ鞍替えしたいもんだ。
@@ -583,7 +583,7 @@ str_npc4_2ary_morality_speech|隊長、ちょっとよろしいですか。 私�
 
 
 
-str_npc15_2ary_morality_speech|ひっひっひ！なんてこった、あんたは悪賢い！ 金を受け取って頭を下げ、 'おまかせください'。 でも、最初からこのつもりだった！ ひひ！ でも、気をつけてくれよ、 もし大親方をだましている事がばれたら・・・
+str_npc15_2ary_morality_speech|ひっひっひ！なんてこった、あんたは悪賢い！ 金を受け取って頭を下げ、 「おまかせください」。 でも、最初からこのつもりだった！ ひひ！ でも、気をつけてくれよ、 もし大親方をだましている事がばれたら・・・
 
 
 str_npc1_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしましたよね？
@@ -593,7 +593,7 @@ str_npc4_personalityclash_speech|私が{s11}の事を嫌いだという話は、
 str_npc5_personalityclash_speech|私が{s11}の事を嫌いだという話は、 もうしたな？
 str_npc6_personalityclash_speech|{playername}、 ついさっき、 {s11}が若鳥の巣を堂々と踏み潰して 歩いていくのを見ました。 彼の粗雑さが、 罪のない若い生き物の命を奪ったのです。
 str_npc7_personalityclash_speech|{s11}卿は強いが、 あのきらきら光る髪は、 敵のめくらましになっているんじゃないのか？ それか、 彼の名声と偉そうな物腰に、 敵がびっくりして腰を抜かしているのかも知れんぞ？
-str_npc8_personalityclash_speech|隊長、 私は{s11}に対する苦情を申し立てたいと思います。 彼はことあるごとに 私に'緑の妖精'だとかいうものを調合するよう言って、 嫌がらせをするのです。
+str_npc8_personalityclash_speech|隊長、 私は{s11}に対する苦情を申し立てたいと思います。 彼はことあるごとに 私に「緑の妖精」だとかいうものを調合するよう言って、 嫌がらせをするのです。
 str_npc9_personalityclash_speech|グルムは、{s11}を殺したい。 この話は、もう言ったか？
 str_npc10_personalityclash_speech|これはもう言ったかな？ 俺はどうも{s11}が苦手なんだ。
 str_npc11_personalityclash_speech|俺は{s11}の事が嫌いだ。 これもう言ったか？
@@ -742,11 +742,11 @@ str_npc17_home_intro|おおおおお、マルローン樹だ！ マルローン�
 str_npc1_home_description|あそこは、かつてのゴンドールの首都で、 多くの人々が幸せに暮らす、 美しい都市だった。 今は住む者もなく、 アンドゥインの流れが弱々しく横切るだけの、 廃墟と化している。
 str_npc2_home_description|もうずいぶんと昔の話ですが、 あれはかつてミナス・イシルと呼ばれていました。 言い伝えによると、 月の光に照らされた中庭が銀色の光で満たされ、 周囲の壁を銀色と白色に浮かび上がらせたそうです。 ゴンドールの衛兵はその城壁から東を望み、 エフェル・ドゥアスのかなたを監視したのです。
 str_npc3_home_description|森の中は木の幹やら枝やらが目一杯生えていて、 見通しがまったく効かないほどだ。 あそこには奇妙で危険な生き物も住んでいて、 探検してみる気は私には到底起きない。
-str_npc4_home_description|'いづれへ消えたのか、あの馬たちと乗り手たちよ？^いづれへ消えたのか、あの鳴り響いていた角笛よ？^いづれへ消えたのか、あのきらきらとたなびく髪、あの兜、あの鎧？・・・^みな、山に降り注ぐ雨のように去ったのだ、草原を抜けていく風のように；^西に沈むあの日々は、山々のむこうに姿を消し、闇が訪れる・・・'
+str_npc4_home_description|「いづれへ消えたのか、あの馬たちと乗り手たちよ？^いづれへ消えたのか、あの鳴り響いていた角笛よ？^いづれへ消えたのか、あのきらきらとたなびく髪、あの兜、あの鎧？・・・^みな、山に降り注ぐ雨のように去ったのだ、草原を抜けていく風のように；^西に沈むあの日々は、山々のむこうに姿を消し、闇が訪れる・・・」
 str_npc5_home_description|かつて南の王国によって築かれた要塞も、 今は白い魔法使いと呼ばれる者が根城とし、 いかにして他者の犠牲とひきかえに自身の力をより大きくするか、 策略をめぐらせる場所になってしまった。
 str_npc6_home_description|私はこんなに遠くまで来たのは初めてだけれど、 緑森の斥候たちの話だと、 ここにはナズグールが住んでいる可能性があるらしいわ。 確かに悪意の者の気配は感じるけれど、 それが何者なのは私にはわからない。 でも、それがとても強い力を持っているのは確かだわ。 気をつけましょう。
 str_npc7_home_description|この荒廃ぶりと、 たくさんのオークの足跡を見るかぎり、 勇敢なるバーリンとその探検隊の運命には、 悲観的にならざるを得ない。 どうやらモリアは闇の手に落ちてしまったようだ。 わしらも気をつけて足を踏み入れなければならんな。
-str_npc8_home_description|まれに、私の知る限り、 最高においしいはちみつを売る旅の商人が、 デールの市場を訪れることがあるんです。 面白いことに、 彼はそのはちみつを'熊がつくったはちみつなんだ'と言って笑うんです。
+str_npc8_home_description|まれに、私の知る限り、 最高においしいはちみつを売る旅の商人が、 デールの市場を訪れることがあるんです。 面白いことに、 彼はそのはちみつを「熊がつくったはちみつなんだ」と言って笑うんです。
 str_npc9_home_description|城壁は高く、わしの槌にもびくともせん。 もしエドラスの豚小屋から人間どもを追い立てたら、 奴らはきっとここへ逃げ込んで、 壁の向こうにこもるじゃろう。
 str_npc10_home_description|あの街を知っているかい？
 str_npc11_home_description|あの街を知っているかい？
@@ -757,7 +757,7 @@ str_npc15_home_description|あの街を知っているかい？
 str_npc16_home_description|あの街を知っているか？
 str_npc17_home_description|こんなところにも、 こんな素敵な森があるなんて、 知らなかったよ。 ここに森人はいるんだろうか。
 str_npc1_home_description_2|もしゴンドールが破滅するとしたら、 サウロンの軍勢に最初に落とされるのは、 西オスギリアスだろう。 もしファラミア隊長が守備隊の指揮官であれば、 敵の奔流をせき止めてくれるはず。 我々の部隊の兵力のうち、 いくらかでもここの守備兵力に割ければ、 と私は思います、 隊長。
-str_npc2_home_description_2|今は恐ろしいオークどもで満ちあふれ、 恐怖の亡霊や、 さらに恐ろしい者たちのすみかとなっているそうです。 私は 、いつかゴンドールがあそこを取り戻し、 すべての不浄なものを一掃する日が来る事を願って止みません。
+str_npc2_home_description_2|今は恐ろしいオークどもで満ちあふれ、 恐怖の亡霊や、 さらに恐ろしい者たちのすみかとなっているそうです。 私は、 いつかゴンドールがあそこを取り戻し、 すべての不浄なものを一掃する日が来る事を願って止みません。
 str_npc3_home_description_2|どうしてもエントの森を通り抜けなければならないのなら、 静かに、 そして迅速に行動しなければならん。 我々の足音に耳を済ませている者が何者なのかは知らんが、 正体を知りたいとは思わんな。
 str_npc4_home_description_2|過去の偉大な行いや、尊い犠牲を思い起こすのは、大事な事です。 ローハンとゴンドールの同盟軍は、 再び我々の民を破滅から救うでしょう。
 str_npc5_home_description_2|これは、堕落し、身を滅ぼすというのは、 誰にでも起こりうる事なのだ、 という教訓にしなければならない。 それは最も偉大な者、 イスタリといえども、 例外ではない。 力を追い求める者は、 力によって滅びる。 さあ、 これ以上は時間の無駄だ。
@@ -1092,65 +1092,65 @@ str_rebellion_dilemma_default|[臣従をうながす]
 str_rebellion_dilemma_martial|{s45}が不当な扱いを受けたのは間違いない。 私は{s46}に忠誠を誓っているが、 もし王位が不当に奪われたものだとしたら、 私も誓いを守る義務はないと考える。
 str_rebellion_dilemma_quarrelsome|フム。 {s46}に大した恩を受けた覚えはない。 しかし、 だからといって、 {s45}を支持するという話にはならぬ。 少なくとも、 {s46}は自身を証明されておる。
 str_rebellion_dilemma_pitiless|なるほど。 {s45}は、 {reg3?彼女:彼}こそが正当なる王である、 と主張するのだな。 それはいい。 私の{s46}に対して誓った忠誠も、 正当性を失うというわけだ。 しかし、 ここは慎重に判断せねばなるまい。
-; str_rebellion_dilemma_cunning|Hmm. I gave an oath of homage to {s46}, yet the powerful are not bound by their oaths as our ordinary people. Our duty is to our own ability to rule, to impose order and prevent the war of all against all.
-; str_rebellion_dilemma_sadistic|Hmm. In this vile world, a wise man must think of himself, for no one else will. So -- what's in it for me?
-; str_rebellion_dilemma_goodnatured|I do not know what to say. I gave an oath to {s46} as the lawful ruler, but if he is not the lawful ruler, I don't know if I am still bound.
-; str_rebellion_dilemma_upstanding|This is troublesome. It is a grave thing to declare my homage to {s46} to be null and void, and dissolve the bonds which keep our land from sinking into anarchy. Yet I am also pledged to support the legitimacy of the succession, and {s45} also has a valid claim to the throne.
+str_rebellion_dilemma_cunning|うむ。わしは{s46}に臣従の誓いを立てておる。 だがの、力ある者は市井の民ほどには誓いに縛られぬのだ。 我らが務めはあたう限りをもって支配し、秩序をもたらし、 万人の万人に対する戦いを阻むことにあるのだ。
+str_rebellion_dilemma_sadistic|さてね。この末法の世にあっては、 賢き者は自分の身を考えるのよ。 自分以外の誰も気になど掛けてくれぬからな。 さて、そこで問うが、わしに何の得があるのだ？
+str_rebellion_dilemma_goodnatured|なんと言うべきか分からぬ。わしは{s46}が 法を守る統治者ゆえに誓いを立てたのだ。 だが、仮に法を破ったとあれば、それでも わしはなお、誓いに縛られるのだろうかの。
+str_rebellion_dilemma_upstanding|これは面倒だな。{s46}への誓いを覆し、 反古とするのは大それたことだ。 我らの地が無法に転げ落ちるのを 繋ぎ止めている絆を断ち切るわけだからな。 とはいえ、わしはまた正しき継承を守る誓いも立てておるし、 {s45}にも王座に着く資格はあるようだな。
 str_rebellion_dilemma_2_default|[臣従をうながす]
-; str_rebellion_dilemma_2_martial|On the other hand, {s46} has led us in war and peace, and I am loathe to renounce my allegiance.
-; str_rebellion_dilemma_2_quarrelsome|So tell me, why should I turn my back on the bastard I know, in favor of {reg3?a woman:the bastard} I don't know?
-; str_rebellion_dilemma_2_pitiless|It is a most perilous position to be in, to be asked whom I would make {reg3?ruler:king} of this land. Yet it is also a time of opportunity, for me to reap the rewards that have always been my due!
-; str_rebellion_dilemma_2_cunning|{s46} has been challenged, and thus he will never be able to rule as strongly as one whose claim has never been questioned. Yet if {s45} takes the throne by force, {reg3?she:he} will not be as strong as one who succeeded peacefully.
-; str_rebellion_dilemma_2_sadistic|Perhaps if I join {s45} while {reg3?she:he} is still weak {reg3?she:he} will enrich me, but perhaps if I bring {s46} your head he will give me an even greater reward.
-; str_rebellion_dilemma_2_goodnatured|{s46} has always treated me decently, yet it's true that he did wrong to {s45}. I hesitate to renounce my homage to {s46}, yet I also don't think it's right to support injustice.
-; str_rebellion_dilemma_2_upstanding|I feel that I must do whatever is best for the realm, to avoid it being laid waste by civil war and ravaged by its enemies.
-; str_rebellion_prior_argument_very_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
-; str_rebellion_prior_argument_favorable|I have already heard some arguments for supporting your candidate for the throne, and I tend to agree with them.
-; str_rebellion_prior_argument_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I do not find them convincing.
-; str_rebellion_prior_argument_very_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I disagree with most of them.
+str_rebellion_dilemma_2_martial|とはいえ、{s46}は平時たると 戦時たるを問わず我らを率いてきた。 その下から去るのは気が進まぬ。
+str_rebellion_dilemma_2_quarrelsome|気心の知れている者から、 どこぞの馬の骨に乗り換えるべき理由があるのなら、 是非言ってくれ。
+str_rebellion_dilemma_2_pitiless|この地の王の行方を定めるなど火中の栗を拾うようなものよ。 だが、千載一遇の機会、 わしが受けて当然の物を掴む機会でもあるな。
+str_rebellion_dilemma_2_cunning|{s46}はこうして対抗馬が出てきたとなれば、 これまで通り統べるというわけにはいくまい。 一方、{s45}にしても 力づくで奪い返したとなれば、 平和裡に継いだときほどの力は振るえまい。
+str_rebellion_dilemma_2_sadistic|ふむ、{s45}が未だ手勢も揃わぬうちに^味方すれば恩賞も厚かろうな。 だが、貴公の首を{s46}に捧げれば、 さらなる恩賞を授かるかもしれんな。
+str_rebellion_dilemma_2_goodnatured|{s46}はわしを厚遇してくれた。 だが、{s45}を虐げたのは事実ではある。 今の誓いを翻すのは躊躇うが、 不正を支持するのは正しいとは思えぬ。
+str_rebellion_dilemma_2_upstanding|何であれ、王国にとって最善の道をとるべきであろうな。 内戦で灰燼に帰し、敵に奪い尽くされるのは避けねばならん。
+str_rebellion_prior_argument_very_favorable|そなたが王位に推す者を支持する理由なら聞いておる。 なかなか頷けるところはあったぞ。
+str_rebellion_prior_argument_favorable|そなたが王に戴かんとする者を支持する理由は聞き及んでおる。 なかなか頷けるところはあったぞ。
+str_rebellion_prior_argument_unfavorable|そなたが王位に推す者を支持する理由は聞いたがの、 今ひとつ分が悪いのではないか。
+str_rebellion_prior_argument_very_unfavorable|そなたが王に戴かんとする者を推す理由は聞き及んでおるが、 どれもこれも今ひとつであったのう。
 str_rebellion_rival_default|[臣従をうながす]
-; str_rebellion_rival_martial|{s49} your ally {s44} once questioned my honour and my bravery. It's not often I get the chance to face him in battle, and make him retract his statement.
-; str_rebellion_rival_quarrelsome|{s49} you're working with {s44}. He's a crafty weasel, and I don't trust him one bit.
-; str_rebellion_rival_pitiless|{s49} you seem to have enlisted the support of {s44} -- who is soft, and weak, and not fit to govern a fief, and whom I have always detested.
-; str_rebellion_rival_cunning|{s49} {s44}, who has already joined you, is headstrong and quarrelsome, and a bit of liability.
-; str_rebellion_rival_sadistic|{s49} I have no desire to fight alongside your ally {s44}, who puts on such a nauseating display of virtue.
-; str_rebellion_rival_goodnatured|{s49} I'd be reluctant to be on the same side as {s44}, who has quite a reputation for cruelty.
-; str_rebellion_rival_upstanding|{s49} your ally {s44} is in my opinion a dangerous, unreliable, and highly unprincipled man.
-; str_rebellion_argument_favorable|I respect your line of argument
-; str_rebellion_argument_neutral|I find your line of argument only moderately compelling
-; str_rebellion_argument_unfavorable|I do not find your line of argument compelling
-; str_rebellion_persuasion_favorable|you state your case eloquently
-; str_rebellion_persuasion_neutral|you make a reasonable case
-; str_rebellion_persuasion_unfavorable|you make an unconvincing case
-; str_rebellion_relation_very_favorable|I have the greatest respect for you personally.
-; str_rebellion_relation_favorable|I know and respect you personally.
-; str_rebellion_relation_neutral|I do not know you as well as I might like.
-; str_rebellion_relation_unfavorable|I do not trust you.
-; str_and_comma_3|Furthermore, 
-; str_but_comma_3|However,
-; str_and_comma_1|, and 
-; str_but_comma_1|, but 
-; str_and_comma_2|. Moreover, 
-; str_but_comma_2|. Nonetheless, 
+str_rebellion_rival_martial|{s49} そなたの盟友{s44}はかつて わしの名誉と武勇を疑ってかかったことがあったのだ。 彼奴と戦場で見えることはさして無く、 正す機会が無いままだがな。
+str_rebellion_rival_quarrelsome|{s49} そなた{s44}と行を共にしておろう。 彼奴はずる賢いイタチよ。わしなら少しも信用せぬな。
+str_rebellion_rival_pitiless|{s49} 貴公、{s44}の支持をとりつけたようだな。 彼奴は軟弱でひ弱、所領を治めることもできぬ。 わしは常日頃奴を見下しておるのだがな。
+str_rebellion_rival_cunning|{s49} {s44}が貴公らに加わったとか。 彼奴は鼻っ柱が強くて争いごとを好み、 いささかお荷物ではあるまいかな。
+str_rebellion_rival_sadistic|{s49} わしはそなたの盟友{s44}と 肩を並べて戦うのはごめんだな。彼奴はすぐ二言めには 道徳を押し付けてくるからな、閉口しておる。
+str_rebellion_rival_goodnatured|{s49} {s44}と同じ側に着くのはごめんだな。 彼奴は大層残虐というではないか。
+str_rebellion_rival_upstanding|{s49} そなたの盟友{s44}は、わしに言わせれば、 信用ならず、無軌道極まりない危険な漢なのだがの。
+str_rebellion_argument_favorable|そなたの言い分は尊重する
+str_rebellion_argument_neutral|そなたの話にはなるほど多少は分があるようだ
+str_rebellion_argument_unfavorable|そなたの話には分があるとは思われぬ
+str_rebellion_persuasion_favorable|見事、言い尽くされましたな
+str_rebellion_persuasion_neutral|もっともな言い分ですな
+str_rebellion_persuasion_unfavorable|そなたの言い分、理があるとは思えぬ
+str_rebellion_relation_very_favorable|そなたのことは大いに尊敬しておる。
+str_rebellion_relation_favorable|そなた個人のことは知っておるし、敬意も持っておる。
+str_rebellion_relation_neutral|そなたとはもっと近づきになりたいとは思っておるがの。
+str_rebellion_relation_unfavorable|そなたは信用ならぬ。
+str_and_comma_3|さらに、
+str_but_comma_3|けれども、
+str_and_comma_1|、 そして
+str_but_comma_1|、 だが
+str_and_comma_2|。 それに、
+str_but_comma_2|。 とはいえ、
 str_rebellion_agree_default|[臣従をうながす]
-; str_rebellion_agree_martial|I have decided. I will back {s45} as the rightful heir.
-; str_rebellion_agree_quarrelsome|Ahh, I've thought long enough. I never did like {s46} much anyway. Let's go take his throne away from him.
-; str_rebellion_agree_pitiless|You are fortunate. I have decided to join you. Pray do not give me cause to regret this decision.
-; str_rebellion_agree_cunning|This is a most dangerous decision, but after careful consideration, I have decided that I will join you. Let's hope it is for the best.
-; str_rebellion_agree_sadistic|I have decided. I will back your {reg3?woman:man} {s45}. But you'd best make sure that {reg3?she:he} rewards me well!
-; str_rebellion_agree_goodnatured|All right. I think your {reg3?woman:man} will be a good ruler. I'll join you.
-; str_rebellion_agree_upstanding|So be it. My first duty is to this realm, and to save it from lawlessness I will back {s45} and renounce my homage to {s46}. May the Heavens forgive me if I do wrong.
+str_rebellion_agree_martial|よし、心は決まった。^{s45}を正統な王位継承者として味方する。
+str_rebellion_agree_quarrelsome|ふむ、考え悩むは十分だ。いずれにせよ、 そんなに{s46}は好かぬ奴だしな。 奴を王座から放り出すとするか。
+str_rebellion_agree_pitiless|そなた、ついておるの。 わしはそなたに味方することにいたすぞ。 わしにこの決断を後悔させるなよ？
+str_rebellion_agree_cunning|なんとも多くの掛かった決断ではあるがの。 だが、考え抜いた上で、わしはそなたに加わることにする。 最善の手であることを願おうではないか。
+str_rebellion_agree_sadistic|決心したぞ。 そなたの{s45}を盛り立てるとするか。 だが、彼奴に恩賞はたっぷりと弾ませろよ。
+str_rebellion_agree_goodnatured|あい、分かった。^そなたの推す者は良き為政者となろう。そなたに加わろう。
+str_rebellion_agree_upstanding|それならそれでよい。^わしの最初の誓いはこの地へのものであり、^無法なものからそれを救うためであった。^{s45}を支持し{s46}への敬意を捨てよう。^たとえ誤ったとしても、天が許して下さることだろう。
 str_rebellion_refuse_default|[臣従をうながす]
-; str_rebellion_refuse_martial|I am sorry. {s45} has a good claim, but it's not enough for me to turn my back on {s46}. I will remain loyal to my liege.
-; str_rebellion_refuse_quarrelsome|Nah. Your whelp {s45} doesn't have what it takes to rule this realm. I'm sticking with {s46}.
+str_rebellion_refuse_martial|すまぬ。{s45}にも理はある。^だが、{s46}に背くほどとは思えぬ。^殿への忠誠の誓いは破れぬな。
+str_rebellion_refuse_quarrelsome|いかんな。そなたの推す{s45}に^この王国が治めるだけの器量があるとは思えぬ。^{s46}の側を選ぶとするぞ。
 str_talk_later_default|[臣従をうながす]
-; str_talk_later_martial|Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight.
-; str_talk_later_quarrelsome|Do you expect me to discuss betraying my liege with you, while we are surrounded by his army? What do you take me for, a bloody idiot?
-; str_talk_later_pitiless|Still your tongue! Whatever I have to say on this matter, I will not say it here and now, while we are in the midst of our army.
-; str_talk_later_cunning|This is hardly the time or the place for such a discussion. Perhaps we can discuss it at a later time and a different place, but for now we're still foes.
-; str_talk_later_sadistic|You should have your mouth sewn shut! Can you imagine what would happen if the other vassals see me talking to you of treason?
-; str_talk_later_goodnatured|So you wish to discuss your rebellion with me? Try that again when we aren't surrounded by my liege's army, and I will hear what you have to say.
-; str_talk_later_upstanding|Whatever my thoughts on the legitimacy of the succession, I am not about to discuss them here and now. If we meet again when we can talk in privacy, I will hear what you have to say on the matter. But for now, consider me your enemy.
+str_talk_later_martial|今は政治を談じるときではない。^今日ここに同胞の領主と至りしは、戦わんがため。^いざ、支度されよ。
+str_talk_later_quarrelsome|貴様、わしが主家を裏切って寝返るとでも思っているのか？^他ならぬ主君の手勢に囲まれているというのに。^一体わしをなんだと思っているのだ、^救いようのない愚か者だとでも言うのか？
+str_talk_later_pitiless|口を慎め。そなたが何を思っていようと、^わしは応じぬ。陣中なのだぞ。
+str_talk_later_cunning|そのようなことを話し合うにふさわしき時と場ではないな。^後ほど話せることもあろうが、^我らは今は敵同士なのだからな。
+str_talk_later_sadistic|唇を縫い合わせて口を閉ざしてやろうか？^家臣共が貴公と謀反を語らっているのを耳に入れたら^どうなるか分からんのか？
+str_talk_later_goodnatured|つまり、そなたはわしと謀反の企てを密かに談じたいのだな。^ならば主家の手勢に囲まれていないときにいたそう。^さすればわしも聞く耳を持とう。
+str_talk_later_upstanding|正統なる継承者についての意見がどうであろうと、^今この場で論じる気はない。^静かに話せる機会があれば、そなたの話も聞こうではないか。^今のところは、それがしを敵と思し召されよ。
 str_gossip_about_character_default|聞いた話によると、 {s6}はこれといった特徴のない、 地味な人物らしい。
 str_gossip_about_character_martial|{s6}は、 とにかく戦争の好きな人物らしい。
 str_gossip_about_character_quarrelsome|うわさによると、 最近{s6}は、 彼の鼻をからかった将軍につかみかかったらしい。
@@ -1356,7 +1356,7 @@ str_beorn_rumor_11|熊に変身？ もちろんわしらは変身なんか出来
 str_beorn_rumor_12|ビヨルンは偉大な男だった。 いや、 人間じゃない、 巨人だったんだ！
 str_beorn_rumor_13|*咆哮* はちみつは持ってないかい？
 str_beorn_rumor_14|ひとりで山に入っちゃいかんよ！ 熊や狼は、 自分たちよりも相手の数が多い場合は襲ってこない。 だが、 空腹に耐えかねて、 襲ってくる事もある。 闇の精霊のしわざだと言う者もいるがね。
-str_lorien_rumor_begin|おお、ロリエン！冬が来た、彩りが失われ、寒々しい冬木と暮らす日々が;^木の葉は木枯らしに巻かれ落ち、河の流れは急かされてゆく。
+str_lorien_rumor_begin|おお、ロリエン！冬が来た、彩りが失われ、寒々しい冬木と暮らす日々が。^木の葉は木枯らしに巻かれ落ち、河の流れは急かされてゆく。
 str_lorien_rumor_2|ガラドリエル夫人を悪く言ってはならない！ そもそも悪意などというものはないのだ、 お方さまにも、 この世界にも。 悪意を求める者が、 悪意をこの世界に持ち込んでいるのだ。 そのような者がいたら、 目を覚まさせてやれ！
 str_lorien_rumor_3|今や多くのものが闇に侵され、 確かに世界は危険に満ちている。 だが、 清きものはまだ残されている。 もしろ、 愛に苦痛がともなう時代であるにもかかわらず、 清きものは増えているのではないだろうか。
 str_lorien_rumor_4|清きもの、よこしまなものは、今も昔も変わらない。 これはエルフ、ドワーフには言える事だが、人間たちとなると話は別だ。 人間たちは、黄金の森がそうしてきたように、 自分たちでそれらをふるいにかけ、 分けなければならない。
@@ -1405,7 +1405,7 @@ str_harad_rumor_9|西方の富には期待をしている。 我々は約束さ�
 str_harad_rumor_10|ムマキルには近づくな。 やつらは気性が荒く、 あっという間に踏み潰されるぞ。
 str_harad_rumor_11|我らがハラドは砂漠と密林、それに山と海を持つ。 我々は多種多様な民で、 その数は砂漠の砂と同じくらい多い。
 str_harad_rumor_12|ハロンドールの騎士の多くは、 直刀の剣よりもサーベルを好む。 逃げ回る農民どもを斬りつけるには非常に便利だが、 強固な鎧を相手にするときは、 槍か、 手入れの行き届いた剣が必要だ。
-str_harad_rumor_13|私の義兄弟がカルカに志願した。 今は斥候になっている。 'ファング'の騎兵は危険の大きい仕事だが、 血の気の多い若者には丁度良い。
+str_harad_rumor_13|私の義兄弟がカルカに志願した。 今は斥候になっている。 「ファング」の騎兵は危険の大きい仕事だが、 血の気の多い若者には丁度良い。
 str_harad_rumor_14|ライオン族とは戦うな。 彼らの評判は伊達じゃない。
 str_harad_rumor_15|黒い鉄で造った武器が、 もっと我々の手にあれば、と思う。 我々の多くが、 いまだに銅の武器や木の棍棒、 黒い石の投げ槍を持って、 裸でなんとか戦っている。
 str_gunda_rumor_begin|人間どもから、いい土地を奪うんだ！

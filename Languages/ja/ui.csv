@@ -12,10 +12,10 @@ ui_merchant_pay_whatever|不要なんだ、とっておいてくれ。
 ui_horse|馬
 ui_reclaim_your_sold_goods|その前に、こちらに渡した物を買い戻してくれよ！
 ui_return_your_bought_goods|その前に、そちらに渡した物を返してくれよ！
-ui_return_price|返品した場合:+%d リソースポイント
-ui_sell_price|売った場合:+%d リソースポイント
-ui_reclaim_price|買い戻した場合:-%d リソースポイント
-ui_buying_price|価格:-%d リソースポイント
+ui_return_price|返品した場合:+%dリソースポイント
+ui_sell_price|売った場合:+%dリソースポイント
+ui_reclaim_price|買い戻した場合:-%dリソースポイント
+ui_buying_price|価格:-%dリソースポイント
 ui_notification_riding_skill_not_enough|乗馬スキルが足りません。
 ui_notification_payment_value|%s消費
 ui_notification_payment_receive_value|%s獲得
@@ -23,9 +23,9 @@ ui_weekly_cost_value|維持費:%s
 ui_sell|放出
 ui_hire|雇用
 ui_notification_cant_hire|(雇用するにはリソースポイントが足りません)
-ui_joining_cost_weekly_wage|雇用:%d リソースポイント  --  維持費:%d リソースポイント
-ui_weekly_wage|維持費:%d リソースポイント
-ui_price|価値:%d リソースポイント
+ui_joining_cost_weekly_wage|雇用:%dリソースポイント  --  維持費:%dリソースポイント
+ui_weekly_wage|維持費:%dリソースポイント
+ui_price|価値:%dリソースポイント
 ui_cant_reload_this_weapon_on_horseback|馬上ではこの武器は扱えません。
 ui_delivered_number_damage_to_horse|馬に%dのダメージを与えました。
 ui_horse_charged_for_number_damage|馬が%dのダメージを与えました。

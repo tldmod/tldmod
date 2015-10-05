@@ -743,13 +743,13 @@ qstr_The_Age_of_Men_has_f|Эпоха людей, наконец, прошел. �
 qstr_The_War_of_the_Two_T|Война Двух Башен начался!
 qstr_{s2}_was_defeated!|{s2} был побежден!
 qstr_The_forces_of_{s22}_|Войска {s22} воодушевлены! {s22} теперь {s23}.
-; qstr_The_might_of_{s22}_h|The might of {s22} has diminished! {s22} is now {s23}.
+qstr_The_might_of_{s22}_h|мощь уменьшилась теперь\n
 ; qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!
 qstr_Guardians_of_{s6}|Стража {s6}
-; qstr_Guard_Legion_of_{s6}|Guard Legion of {s6}
-; qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+qstr_Guard_Legion_of_{s6}|охранник легиона
+qstr_Scouts_report_that_{|\n\n
 ; qstr_The_forces_of_{s2}_e|The forces of {s2} established an advanced camp in {s15}!
-; qstr_{s1}_from_{s2}|{s1} from {s2}
+qstr_{s1}_from_{s2}|из\n
 ; qstr_When_dealing_with_lo|When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.^^(the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)
 ; qstr_Info|Info
 ; qstr_You_came_into_a_poss|You came into a possession of a strange, oversized bowl of fresh-looking water. It smells a little like musk.
@@ -824,7 +824,7 @@ qstr_Treebeard_wants_you_|Древобород хочет, чтобы ты ун�
 ; qstr_I_am_suffering_from_{s|I am suffering from {s1}, {s2}, and {s3}.
 ; qstr_I_am_suffering_from_{s1|I am suffering from {s1}, {s2}, {s3} and {s4}.
 ; qstr_I_don_t_have_any_ser|I don't have any serious injuries, thank you.
-; qstr_Good_day_to_you.|Good day to you.
+qstr_Good_day_to_you.|добрый день, союзник
 ; qstr_Ah_it_s_you_again._G|Ah, it's you again. Goodbye.
 ; qstr_My_apologies_if_I_wa|My apologies if I was rude, earlier. What was your story again?
 ; qstr_I_was_reconsidering_|I was reconsidering our last conversation. What was your story again?
@@ -835,23 +835,23 @@ qstr_Treebeard_wants_you_|Древобород хочет, чтобы ты ун�
 ; qstr_I_need_some_soldiers|I need some soldiers to replace my dead.
 ; qstr_{playername}_s_Reser|{playername}'s Reserves
 ; qstr_Excellent_job_{s23}!|Excellent job, {s23}! I wish all our commanders were as dedicated as you.^
-; qstr_Nicely_done_{s23}.|Nicely done, {s23}.
-; qstr_Good_work_{s23}.|Good work, {s23}.
-; qstr_The_more_you_capture|The more you capture, the better, {s23}.
-; qstr_Caught_a_few_straggl|Caught a few stragglers, {s23}?
-; qstr_I_am_sorry_no_one_el|I am sorry, no one else is ready to go.^They will serve {s22} by holding the defences here.
-; qstr_Tough_luck_but_we_do|Tough luck, but we don't have any. Come back later.
+qstr_Nicely_done_{s23}.|красиво сделано,{s23}
+qstr_Good_work_{s23}.|хорошая работа,{s23}
+qstr_The_more_you_capture|чем больше захвачено, тем лучше,{s23}
+qstr_Caught_a_few_straggl|нашли несколько отставших,{s23}?
+qstr_I_am_sorry_no_one_el|извините, никто не готов пойти . ^ они будут служить {s22} держа оборону здесь.
+qstr_Tough_luck_but_we_do|не повезло, но у нас нечего есть. вернёмся позже
 qstr_There_are_brave_sold|Здесь есть солдаты, готовые рискнуть своей жизнью, но в эти тёмные времена каждый защитник на счету. Я не могу позволить им уйти. ^^^[не достаточно Очков Ресурсов]
 qstr_We_have_some_spare_t|У нас есть несколько солдат в резерве, но я не отпущу их с такими как ты. ^^^[не достаточно Очков Ресурсов]
 qstr_There_are_brave_soldi|Эти храбрые солдаты готовы исполнить свой долг на полях сражений.^^Я думаю, что смогу разрешить нескольким уйти с тобой.
 qstr_There_are_spare_troo|Некоторые из моих солдат не прочь поучаствовать в небольшой бойне.^^Я могу отпустить их с тобой.
-; qstr_Strenghten_defences_|Strenghten defences in {s21}? This is surely welcome. Note that we can only accept our own people.
-; qstr_Strenghten_defences_i|Strenghten defences in {s21}? Well, as long as they are not crippled, why not. Just be sure you give away our own troops, for we have no use for outsiders here.
-; qstr_Please_return_them_i|Please return them in one piece. I personally know the valor of each one of them. And here we need every soul.
-; qstr_Don_t_let_them_all_d|Don't let them all die in one place. Except the cowards. Put those in your front ranks, you know the drill by now.
+qstr_Strenghten_defences_|Укрепление обороны в {s21}? Это, безусловно, приветствуется. Обратите внимание, что мы можем только принять наших людей.
+qstr_Strenghten_defences_i|Укрепление обороны в {s21}? Ну, а пока, как они не калека, почему нет. Только убедитесь, что Вы отдаете свои войска, для нас нет никакой пользы для посторонних здесь.
+qstr_Please_return_them_i|Пожалуйста, верните их в одно целое. Я лично знаю доблесть каждого из них. И здесь мы должны каждой душе.
+qstr_Don_t_let_them_all_d|Не позволяйте им все умирать в одном месте. Кроме трусов. Положите те, в ваших рядах, вы знаете, что делать сейчас.
 qstr_Thank_you_commander.|Благодарю, командир.^
-; qstr_^{s22}_is_grateful_t|^{s22} is grateful to you, {s23}, {s29}^
-; qstr_{s31}{reg28?Those:Th|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
+qstr_^{s22}_is_grateful_t|^{s22} благодарен вам, {s23}, {s29} ^
+qstr_{s31}{reg28?Those:Th|{s31} {reg28 Те: Это смелый} {р 28 солдат:?} солдат., несомненно, поможет нам защитить {s21} {s32} ^^ [заработали {14} рег ресурсов Точки {s14}]
 ; qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us hold {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
 ; qstr_{s4}_^Oh_and_take_ba|{s4} ^Oh, and take back those of your soldiers, that are not our kin.
 ; qstr_I_don_t_need_them_an|I don't need them anyway, so save it.
