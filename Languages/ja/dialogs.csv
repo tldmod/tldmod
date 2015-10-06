@@ -382,10 +382,10 @@ dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejecte
 dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|そうか、 おぬしも他の虫けらどもと一緒か。 迷信に惑わされる、 生きる価値もない臆病者。 おぬしを買いかぶっていたようだ。 すぐにここから去れ！
 dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|うむ。 この一連の不可解を明らかにせよ。 そうしたらまたここへ来て報告するがよい。 わしは{reg1}回目の夜明けを見る前におぬしの報告が欲しい。
 dlga_lord_tell_mission:lord_mission_find_lost_spears|おぬしのような信頼のおける、 勇敢な指揮官への任務があるぞ、 {playername}。 我々はリューンの軍勢に対して、 装備の面で劣っている。 我が軍は敗戦に次ぐ敗戦だ。 伝説によれば、 その昔、 大王ブラードルシン(遠い昔に死去している)の軍のために、 ドワーフたちが槍を鍛えたというのだが、 それらは三度鍛えた穂を持ち、 柄には目を見張るような金の彫刻が施されていたそうな。 しかしそれらの槍は引き渡される事も、 代金を支払われる事もなかったという・・
-dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|それで、私に何をしろというのでしょう、閣下？
+dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|それで、私に何をしろというのでしょう、陛下？
 dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|それらの武器は我が軍を強化するであろうが、 それ以上に兵の士気を大いに上げてくれるだろう。 おぬしには、 その槍を見つけて欲しい。 はなれ山の深層を探索するのに、 ドワーフの許可が必要になるだろう。 気をつけてくれ、 抗道にはオークやトロルが徘徊しているはずだ。 やってくれるか？
-dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|オークやトロルなど、怖れるに足りません！槍を手に入れてご覧に入れましょう、閣下。
-dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|残念ですが、私に出来る事はありません、閣下。
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|オークやトロルなど、怖れるに足りません！槍を手に入れてご覧に入れましょう、陛下。
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|残念ですが、私に出来る事はありません、陛下。
 dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|おぬしは勇気よりも慎重さに重きを置く人物のようだな。 偵察任務が適任といったところか。
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|うむ、幸運を祈る！
 dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|我が民を助けるため、 あなたには重要な任務があります、 {playername}。
@@ -682,7 +682,7 @@ dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|わかった。食�
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|悪いが、他をあたってくれ。
 dlga_merchant_quest_requested:merchant_quest_brief.3|仕事ですか？ 実は、 鉱石と金属を供給してくれるひとを探しているんです。 今や鉱山や道路は安全な場所とは言えなくなってしまい、 鉄鉱資源の確保がどんどん困難になっています。 敵勢はご存知のように、 下級のオーク兵ですら金属を身に付けています。 おそらく世に知られていない、 なんらかの効率の良い方法で鉱石を採取しているのではないかと思います。 彼らの使う金属の品質は、 彼ら相応のものです。 品質は低く、 我々の水準では信頼性が低すぎて、 通常なら実用に向かないと判断するような、 安っぽい鉄です。 しかし、 この非常時ですから、 我々の精錬工たちも、 必要とあらば低品質の金属資源も有効に利用できるよう、 工夫を重ねました。 何ひとつ無駄にはできないのです。
 dlga_merchant_quest_requested:merchant_quest_brief.4|仕事ですか？ ご主人様は毎日のように兵を要求されるが、 どの兵もご主人様の納得されるような水準にない・・・ しかし、 防具は自然に体から生えてくるわけではない、 そうでしょう？^鉱石の確保を担当する役立たずどもは、 弱くて当てにならず、 簡単に殺される。 そのせいで資源が我々のもとまで届かない。 しかし、 あの人間ども、 エルフどもは・・・ 彼らは下級の兵にいたるまで、 まるで全員が王のように、 輝く貴重な鉄を身にまとっている・・・^やつらの死体から鉄をはぎとり、 もってきて頂きたい、 {playername}殿。 あの鉄がひと塊あるだけで、 我々の精錬工どもは戦士ひと群れ分の資源を作る事ができる。
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|鍛冶師たちの鉄鉱の在庫を切らさないよう、 我々は{reg6}日以内に {reg5}ユニットの {s6}を確保する必要がある。 どうかね？
+dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|鍛冶師たちの鉄鉱の在庫を切らさないよう、 我々は{reg6}日以内に、 {reg5}ユニットの{s6}を確保する必要があります。 どうですか？
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|いいだろう。鉄くずをかき集めて、ここに運んでこよう。
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|今は少々、忙しい。
 dlga_merchant_quest_requested:merchant_quest_brief.5|ありがたい。 補給隊の護衛を探していたのだ。 あなたなら・・・
@@ -715,7 +715,7 @@ dlga_merchant_quest_brief:move_cattle_herd_quest_brief|一行は{reg6}日以内�
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|いいだろう、その一行を{s13}まで連れて行こう。
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|せっかくだが、断る。
 dlga_move_cattle_herd_quest_taken:mayor_pretalk|素晴らしい。 彼らはこの拠点のすぐ外で待っています。 彼らを{s13}まで連れて行ったら、 私のところへ報酬を受け取りに来てください。
-dlga_merchant_quest_requested:mayor_pretalk|指揮官殿、感謝する。 だが今のところはこれといった仕事はない。 また何かあったら知らせよう。
+dlga_merchant_quest_requested:mayor_pretalk|指揮官殿、感謝します。 しかし今のところはこれといった仕事はありません。 また何かあったらお知らせします。
 dlga_goods_merchant_talk:goods_trade_requested|いくつか買いたい物がある・・・ それと売りたい物も。
 dlga_goods_trade_requested:goods_trade_completed|どうぞ、どうぞ・・・ さあ、ご覧になってください
 dlga_goods_trade_completed:goods_merchant_talk|他には何か？

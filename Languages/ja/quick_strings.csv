@@ -271,7 +271,7 @@ qstr_{s14}Today_we_shall_|{s14}これより、 イムラドリスと清きもの
 qstr_All_who_enter_Mirkwo|悪意を持って闇の森に足を踏み入れる者は、 生きて森を出る事はないぞ！
 qstr_Men_of_{s16}_the_ene|{s16}の諸君、 我らの敵は目の前にある！ 我らの土地を守れ！
 qstr_Men_of_{s16}_charge!|{s16}の諸君、 突撃だ！ 我らの土地を守れ！
-qstr_{s14}Grind_their_bod|{s14}やつらの死体を 砂漠の砂にしてしまえ！
+qstr_{s14}Grind_their_bod|{s14}やつらの死体を、 砂漠の砂にしてしまえ！
 qstr_{s14}Dwarves_or_men_|{s14}ドワーフだろうが人間だろうが、 獰猛さで我らの右に出るものなどおらぬ！
 qstr_{s14}Elves_or_men_th|{s14}エルフだろうが人間だろうが、 獰猛さで我らの右に出るものなどおらぬ！
 qstr_{s14}Flesh_to_shatte|{s14}肉体は粉砕し、 のどは切り裂き、 血しぶきをあげろ！
@@ -638,9 +638,9 @@ qstr_Heroes_only|英雄のみ
 qstr_Regulars_and_Heroes|一般の兵と英雄
 qstr_HP_lost_from_poisoni|食中毒でヒットポイントを失いました。
 qstr__{s17}.|、 {s17}
-qstr_A_group_of_{s1}_is_{|{s1}の一団がこちらに{s10}来ました。
-qstr_You_are_attacking_a_|あなたは{s1}の一団を攻撃しています。
-qstr_The_battle_against_t|{s1}の一団との戦いは続きます。
+qstr_A_group_of_{s1}_is_{|{s1}がこちらに{s10}来ました。
+qstr_You_are_attacking_a_|{s1}を攻撃します。
+qstr_The_battle_against_t|{s1}との戦いは続きます。
 qstr_{s13}_asked_you_to_r|{s13}より、 最低でも{reg13}名の兵を連れて出頭せよ、 との命令を受けました。
 qstr_{s13}_ordered_you_to|あなたも{s14}攻めに加わるよう、 {s13}より命令が下されました。
 qstr_You_were_victorious!|あなたの勝利です！

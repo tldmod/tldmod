@@ -1,247 +1,138 @@
-﻿pt_none|нет
-pt_rescued_prisoners|Спасённые пленники
+pt_rescued_prisoners|Спасённые Заключённые
 pt_enemy|Враг
-pt_hero_party|Отряд воителя
-pt_cattle_herd|Стадо скота
+pt_hero_party|Армия Героя
+pt_cattle_herd|Стадо Рогатого Скота
 pt_ruins|Руины
-pt_legendary_place|Мифическое место
-pt_mound|Курган воителя
-pt_pyre|Погребальный костёр воителя
-pt_wild_troll|Дикий тролль
-pt_raging_trolls|Свирепые тролли
-pt_looters|Дикие орки
-pt_forest_bandits|Бродячие орки
-pt_mountain_bandits|Дикие гоблины
-pt_steppe_bandits|Дунландцы-изгнанники
-pt_sea_raiders|Мятежные корсары
+pt_legendary_place|Легендарное Место
+pt_mound|Курган Героя
+pt_pyre|Погребальный Костёр Героя
+pt_wild_troll|Дикий Тролль
+pt_raging_trolls|Яростный Тролль
+pt_looters|Племенные Орки
+pt_forest_bandits|Отставшие Орки
+pt_mountain_bandits|Дикие Гоблины
+pt_steppe_bandits|Изгои Дунланда
+pt_sea_raiders|Пираты-Отступники
 pt_deserters|Дезертиры
-pt_merchant_caravan|Торговый караван
-pt_troublesome_bandits|Опасные гоблины
-pt_fangorn_orcs|Орки-лесорубы
-pt_village_farmers|Крестьяне
-pt_spy_partners|Подозрительные путники
-pt_spy_partners_evil|Подозрительные путники
-pt_runaway_serfs|Сбежавшие рабы
-pt_spy|Одинокий всадник
-pt_spy_evil|Одинокий всадник
-pt_sacrificed_messenger|Убитый гонец
-pt_gandalf|Одинокий всадник
-pt_nazgul|Одинокий всадник
-pt_gondor_scouts|Гондорские разведчики
-pt_blackroot_auxila|Вспомогательный отряд Мортонда
-pt_lamedon_auxila|Вспомогательный отряд Ламедона
-pt_lossarnach_auxila|Вспомогательный отряд Лоссарнаха
-pt_pinnath_gelin_auxila|Вспомогательный отряд Пиннат-Гелина
-pt_ranger_scouts|Рейнджеры-разведчики
-pt_rohan_scouts|Роханские разведчики
-pt_lorien_scouts|Лориэнские разведчики
-pt_woodelf_scouts|Эльфы-разведчики Темнолесья
-pt_imladris_scouts|Эльфы-разведчики Ривенделла
-pt_dale_scouts|Разведчики Дэйла
+pt_merchant_caravan|Торговый Караван
+pt_troublesome_bandits|Беспокойные Гоблины
+pt_fangorn_orcs|Орки Лесорубы
+pt_village_farmers|Сельские Фермеры
+pt_spy_partners|Подозрительные Путешественники
+pt_spy_partners_evil|Подозрительные Путешественники
+pt_runaway_serfs|Сбежавшие Рабы
+pt_spy|Одинокий Всадник
+pt_spy_evil|Одинокий Всадник
+pt_sacrificed_messenger|Пожертвованный Посыльный
+pt_gandalf|Одинокий Всадник
+pt_nazgul|Одинокий Всадник
+pt_gondor_scouts|Разведчики Гондора
+pt_blackroot_auxila|Вспомогательный Отряд Эреха
+pt_lamedon_auxila|Вспомогательный Отряд Ламедона
+pt_lossarnach_auxila|Вспомогательный Отряд Лоссарнаха
+pt_pinnath_gelin_auxila|Вспомогательный Отряд Пиннат Гелина
+pt_ranger_scouts|Рейнджеры Разведчики
+pt_rohan_scouts|Рохирримы Разведчики
+pt_lorien_scouts|Разведчики Лотлориэна
+pt_woodelf_scouts|Эльфы Разведчик Лихолесья
+pt_imladris_scouts|Эльфы Разведчики Ривенделла
+pt_dale_scouts|Разведчики Дейла
 pt_esgaroth_scouts|Разведчики Эсгарота
-pt_dwarf_scouts|Гномы-дозорные
-pt_beorn_scouts|Беорнинги-разведчики
-pt_woodmen_scouts|Лесовики-разведчики
-pt_mordor_scouts|Мордорские разведчики
-pt_morgul_scouts|Моргульские разведчики
-pt_isengard_scouts|Изенгардские разведчики
-pt_isengard_scouts_warg|Изенгардские волчьи всадники
-pt_harad_scouts|Харадские разведчики
-pt_dunland_scouts|Дунландские разведчики
-pt_umbar_scouts|Умбарские разведчики
-pt_khand_scouts|Истерлинги-разведчики
-pt_moria_scouts|Морийские разведчики
-pt_guldur_scouts|Разведчики Дол-Гулдура
-pt_gundabad_scouts|Гундабадские разведчики
-pt_rhun_scouts|Рунийские разведчики
-pt_gondor_raiders|Гондорские фуражиры
-pt_rohan_raiders|Роханские фуражиры
+pt_dwarf_scouts|Разведчики Гномов
+pt_beorn_scouts|Беорнинги Разведчики
+pt_woodmen_scouts|Лесные Разведчики
+pt_mordor_scouts|Разведчики Мордора
+pt_morgul_scouts|Разведчики Моргула
+pt_isengard_scouts|Разведчики Изенгарда
+pt_isengard_scouts_warg|Изенгардские Всадники на Варгах
+pt_harad_scouts|Харадримы Разведчики
+pt_dunland_scouts|Дунландцы Разведчики
+pt_umbar_scouts|Пираты Разведчики
+pt_khand_scouts|Истерлинги Разведчики
+pt_moria_scouts|Разведчики Мории
+pt_guldur_scouts|Разведчики Дол Гулдура
+pt_gundabad_scouts|Разведчики Гундабада
+pt_rhun_scouts|Рунские Разведчики
+pt_gondor_raiders|Гондорские Фуражиры
+pt_rohan_raiders|Роханские Фуражиры
 pt_imladris_raiders|Фуражиры Ривенделла
-pt_lorien_raiders|Лориэнские фуражиры
-pt_woodelf_raiders|Фуражиры Темнолесья
-pt_dale_raiders|Фуражиры Дэйла
-pt_dwarf_raiders|Гномы-фуражиры
-pt_ranger_raiders|Рейнджеры-налётчики
-pt_morgul_raiders|Моргульские налётчики
-pt_mordor_raiders|Мордорские налётчики
-pt_isengard_raiders|Изенгардские налётчики
-pt_dunland_raiders|Дунландские налётчики
-pt_harad_raiders|Харадские налётчики
-pt_khand_raiders|Хандские налётчики
-pt_umbar_raiders|Умбарские налётчики
-pt_moria_raiders|Морийские налётчики
-pt_guldur_raiders|Налётчики Дол-Гулдура
-pt_gundabad_raiders|Гундабадские налётчики
-pt_rhun_raiders|Рунийские налётчики
-pt_gondor_patrol|Гондорский дозорный отряд
-pt_rohan_patrol|Роханский дозорный отряд
-pt_imladris_patrol|Дунаданский дозорный отряд
-pt_lorien_patrol|Лориэнский дозорный отряд
-pt_woodelf_patrol|Дозорный отряд Темнолесья
-pt_dale_patrol|Дозорный отряд Дэйла
-pt_esgaroth_patrol|Дозорный отряд Эсгарота
-pt_dwarf_patrol|Дозорный отряд гномов
-pt_ranger_patrol|Дозорный отряд рейнджеров
-pt_amroth_patrol|Дозорный отряд Дол-Амрота
-pt_pelargir_patrol|Дозорный отряд Пеларгира
-pt_lossarnach_patrol|Дозорный отряд Лоссарнаха
-pt_brv_patrol|Дозорный отряд Мортонда
-pt_pinnath_patrol|Дозорный отряд Пиннат-Гелина
-pt_lamedon_patrol|Дозорный отряд Ламедона
-pt_mordor_war_party|Мордорское войско
-pt_isengard_war_party|Изенгардское войско
-pt_harad_war_party|Харадское войско
-pt_dunland_war_party|Дунландские войско
-pt_khand_war_party|Войско варьягов
-pt_moria_war_party|Морийское войско
-pt_dale_war_party|Войско Дэйла
-pt_rhun_war_party|Рунийское войско
-pt_gondor_company|Дозорный отряд Минас-Тирита
-pt_rohan_company|Роханский отряд
-pt_imladris_company|Отряд Ривенделла
-pt_lorien_company|Лориэнский отряд
-pt_woodelf_company|Отряд эльфов Темнолесья
-pt_dale_company|Отряд Дэйла
-pt_dwarf_company|Отряд гномов
-pt_gondor_elite_company|Гондорский избранный отряд
-pt_rohan_elite_company|Роханский избранный отряд
-pt_imladris_elite_company|Избранный отряд Ривенделла
-pt_lorien_elite_company|Лориэнский избранный отряд
-pt_woodelf_elite_company|Избранный отряд эльфов Темнолесья
-pt_dale_elite_company|Избранный отряд Дэйла
-pt_dwarf_elite_company|Избранный отряд гномов
-pt_gondor_caravan|Гондорский караван
-pt_rohan_caravan|Роханский караван
+pt_lorien_raiders|Фуражиры Лотлориена
+pt_woodelf_raiders|Фуражиры Лихолесья
+pt_dale_raiders|Фуражиры Дейла
+pt_dwarf_raiders|Гномьи Фуражиры
+pt_ranger_raiders|Рейнджеры Налётчики
+pt_morgul_raiders|Моргульские Налётчики
+pt_mordor_raiders|Мордорские Налётчики
+pt_isengard_raiders|Налётчики Изенгарда
+pt_dunland_raiders|Дунландцы Налётчики
+pt_harad_raiders|Харадримы Налётчики
+pt_khand_raiders|Налётчики Кханда
+pt_umbar_raiders|Умбарские Налётчики
+pt_moria_raiders|Морийские Налётчики
+pt_guldur_raiders|Налётчики Дол Гулдура
+pt_gundabad_raiders|Гундабадские Налётчики
+pt_rhun_raiders|Рунские Налётчики
+pt_gondor_patrol|Патруль Гондора
+pt_rohan_patrol|Патруль Рохирримов
+pt_imladris_patrol|Патруль Дунэдайн
+pt_lorien_patrol|Патруль Лотлориена
+pt_woodelf_patrol|Патруль Лихолесья
+pt_dale_patrol|Патруль Дейла
+pt_esgaroth_patrol|Патруль Эсгарота
+pt_dwarf_patrol|Патруль Гномов
+pt_ranger_patrol|Патруль Рейнджеров
+pt_amroth_patrol|Патруль Дол Амрота
+pt_pelargir_patrol|Патруль Пеларгира
+pt_lossarnach_patrol|Патруль Лоссарнаха
+pt_brv_patrol|Патруль Эреха
+pt_pinnath_patrol|Патруль Пиннат Гелина
+pt_lamedon_patrol|Патруль Ламедона
+pt_mordor_war_party|Боевой Отряд Мордора
+pt_isengard_war_party|Боевой Отряд Изенгарда
+pt_harad_war_party|Боевой Отряд Харада
+pt_dunland_war_party|Боевой Отряд Дунландцев
+pt_khand_war_party|Боевой Отряд Вариагов
+pt_moria_war_party|Боевой Отряд Мории
+pt_dale_war_party|Боевой Отряд Дейла
+pt_rhun_war_party|Боевой Отряд Рун
+pt_gondor_company|Боевой Отряд Минас Тирита
+pt_rohan_company|Кампания Рохана
+pt_imladris_company|Кампания Ривенделла
+pt_lorien_company|Кампания Лотлориена
+pt_woodelf_company|Кампания Лихолесья
+pt_dale_company|Кампания Дейла
+pt_dwarf_company|Кампания Гномов
+pt_gondor_elite_company|Элитная Кампания Гондора
+pt_rohan_elite_company|Элитная Кампания Рохана
+pt_imladris_elite_company|Элитная Кампания Ривенделла
+pt_lorien_elite_company|Элитная Кампания Лотлориена
+pt_woodelf_elite_company|Элитная Кампания Лихолесья
+pt_dale_elite_company|Элитная Кампания Дейла
+pt_dwarf_elite_company|Элитная Кампания Гномов
+pt_gondor_caravan|Караван Гондора
+pt_rohan_caravan|Караван Рохана
 pt_imladris_caravan|Караван Ривенделла
-pt_lorien_caravan|Лориэнский караван
-pt_woodelf_caravan|Темнолесский караван
-pt_dale_caravan|Караван Дэйла
-pt_dwarf_caravan|Эреборский караван
-pt_mordor_caravan|Мордорский обоз
-pt_isengard_caravan|Изенгардский обоз
-pt_gunda_caravan|Гундабадский обоз
-pt_gondor_p_train|Гондорский конвой
-pt_rohan_p_train|Роханский конвой
-pt_imladris_p_train|Ривендельский конвой
-pt_lorien_p_train|Лориэнский конвой
-pt_woodelf_p_train|Темнолесский конвой
-pt_dale_p_train|Конвой Дэйла
-pt_dwarf_p_train|Эреборский конвой
-pt_mordor_p_train|Мордорский конвой
-pt_isengard_p_train|Изенгардский конвой
-pt_kingdom_hero_party|войско
-pt_gondor_reinf_d| 
-pt_gondor_reinf_a| 
-pt_gondor_reinf_b| 
-pt_gondor_reinf_c| 
-pt_pelargir_reinf_a| 
-pt_pelargir_reinf_b| 
-pt_pelargir_reinf_c| 
-pt_dol_amroth_reinf_a| 
-pt_dol_amroth_reinf_b| 
-pt_dol_amroth_reinf_c| 
-pt_lamedon_reinf_a| 
-pt_lamedon_reinf_b| 
-pt_lamedon_reinf_c| 
-pt_lossarnach_reinf_a| 
-pt_lossarnach_reinf_b| 
-pt_lossarnach_reinf_c| 
-pt_pinnath_reinf_a| 
-pt_pinnath_reinf_b| 
-pt_pinnath_reinf_c| 
-pt_ithilien_reinf_a| 
-pt_ithilien_reinf_b| 
-pt_ithilien_reinf_c| 
-pt_blackroot_reinf_a| 
-pt_blackroot_reinf_b| 
-pt_blackroot_reinf_c| 
-pt_rohan_reinf_a| 
-pt_rohan_reinf_b| 
-pt_rohan_reinf_c| 
-pt_isengard_reinf_a| 
-pt_isengard_reinf_b| 
-pt_isengard_reinf_c| 
-pt_mordor_reinf_a| 
-pt_mordor_reinf_b| 
-pt_mordor_reinf_c| 
-pt_harad_reinf_a| 
-pt_harad_reinf_b| 
-pt_harad_reinf_c| 
-pt_rhun_reinf_a| 
-pt_rhun_reinf_b| 
-pt_rhun_reinf_c| 
-pt_khand_reinf_a| 
-pt_khand_reinf_b| 
-pt_khand_reinf_c| 
-pt_umbar_reinf_a| 
-pt_umbar_reinf_b| 
-pt_umbar_reinf_c| 
-pt_lorien_reinf_a| 
-pt_lorien_reinf_b| 
-pt_lorien_reinf_c| 
-pt_imladris_reinf_a| 
-pt_imladris_reinf_b| 
-pt_imladris_reinf_c| 
-pt_woodelf_reinf_a| 
-pt_woodelf_reinf_b| 
-pt_woodelf_reinf_c| 
-pt_moria_reinf_a| 
-pt_moria_reinf_b| 
-pt_moria_reinf_c| 
-pt_guldur_reinf_a| 
-pt_guldur_reinf_b| 
-pt_guldur_reinf_c| 
-pt_beorn_reinf_a| 
-pt_beorn_reinf_b| 
-pt_beorn_reinf_c| 
-pt_gundabad_reinf_a| 
-pt_gundabad_reinf_b| 
-pt_gundabad_reinf_c| 
-pt_dale_reinf_a| 
-pt_dale_reinf_b| 
-pt_dale_reinf_c| 
-pt_dwarf_reinf_a| 
-pt_dwarf_reinf_b| 
-pt_dwarf_reinf_c| 
-pt_dunland_reinf_a| 
-pt_dunland_reinf_b| 
-pt_dunland_reinf_c| 
-pt_gondor_cap_recruits| 
-pt_gondor_recruits| 
-pt_pelargir_recruits| 
-pt_dol_amroth_recruits| 
-pt_lamedon_recruits| 
-pt_lossarnach_recruits| 
-pt_pinnath_recruits| 
-pt_ithilien_recruits| 
-pt_blackroot_recruits| 
-pt_rohan_recruits| 
-pt_rohan_cap_recruits| 
-pt_isengard_recruits| 
-pt_morannon_recruits| 
-pt_mordor_recruits| 
-pt_morgul_recruits| 
-pt_harad_recruits| 
-pt_rhun_recruits| 
-pt_khand_recruits| 
-pt_umbar_recruits| 
-pt_lorien_recruits| 
-pt_imladris_recruits| 
-pt_woodelf_recruits| 
-pt_moria_recruits| 
-pt_guldur_recruits| 
-pt_beorn_recruits| 
-pt_woodman_recruits| 
-pt_gundabad_recruits| 
-pt_gundabad_cap_recruits| 
-pt_dale_recruits| 
-pt_dwarf_recruits| 
-pt_dwarf_iron_recruits| 
-pt_dunland_recruits| 
-pt_caravan_survivors|Спасшиеся караванщики
-pt_routed_allies|Сбежавшие союзники
-pt_routed_enemies|Сбежавшие враги
+pt_lorien_caravan|Караван Лотлориена
+pt_woodelf_caravan|Караван Лихолесья
+pt_dale_caravan|Караван Дейла
+pt_dwarf_caravan|Караван Гномов
+pt_mordor_caravan|Мордорский Обоз Снабжения
+pt_isengard_caravan|Изенгардский Обоз Снабжения
+pt_gunda_caravan|Гундабадский Обоз Снабжения
+pt_gondor_p_train|Гондорский Обоз Заключённых
+pt_rohan_p_train|Роханский Обоз Заключённых
+pt_imladris_p_train|Ривенделлский Обоз Заключённых
+pt_lorien_p_train|Лотлориенский Обоз Заключённых
+pt_woodelf_p_train|Лихолесский Обоз Заключённых
+pt_dale_p_train|Дейлский Обоз Заключённых
+pt_dwarf_p_train|Гномий Обоз Заключённых
+pt_mordor_p_train|Мордорский Обоз Заключённых
+pt_isengard_p_train|Изенгардский Обоз Заключённых
+pt_kingdom_hero_party|Боевой Отряд
+pt_caravan_survivors|Караван Выживших
+pt_routed_allies|Разбитые Союзники
+pt_routed_enemies|Разбитые Враги
 pt_legion_minas_morgul|Легион Минас Моргула
 pt_legion_udun|Легион Удуна
 pt_legion_gorgoroth|Легион Горгорота
-pt_legion_barad_dur|Легион Барад-Дура
+pt_legion_barad_dur|Легион Барад-дура

@@ -33,22 +33,22 @@ mno_leave_custom_battle_2|キャンセル
 menu_custom_battle_end|^^^^^^戦闘は終わりました。 {s1} あなたの陣営は敵勢{reg5}名を倒し、味方の兵を{reg6}名失いました。^あなた個人では敵を{reg7}名を倒しました。
 mno_replay|この戦闘をもう一度プレイする
 mno_continue_dot|続ける
-menu_quick_battle_general_test|^^^現在の戦闘:^team A:{reg10} {s10}^^VS^^ team B:{reg11} {s11}
-mno_tAA|+5 Team A
-mno_tAB|-5 Team A
+menu_quick_battle_general_test|^^^現在の戦闘:^Aチーム:{reg10} {s10}^^vs^^ Bチーム:{reg11} {s11}
+mno_tAA|+5 Aチーム
+mno_tAB|-5 Aチーム
 mno_tAC|Aの兵を選ぶ
-mno_tBA|+5 Team B
-mno_tBB|-5 Team B
+mno_tBA|+5 Bチーム
+mno_tBB|-5 Bチーム
 mno_tBC|Bの兵を選ぶ
-mno_B|Preset 1
+mno_B|プリセット1
 mno_F|戦闘開始！
 mno_dot_go_back|。 戻る
 menu_quick_battle_troll|^^^^^^^^トロルのシナリオを選んでください:
-mno_troll_battle_scenario_10|テスト:トロル VS 歩兵
-mno_troll_battle_scenario_11|テスト:トロル VS 弓兵
-mno_troll_battle_scenario_12|テスト:トロル VS 騎兵
-mno_troll_battle_scenario_13|テスト:トロル VS 槍騎兵
-mno_troll_battle_scenario_14|テスト:トロル VS トロル
+mno_troll_battle_scenario_10|テスト:トロル vs 歩兵
+mno_troll_battle_scenario_11|テスト:トロル vs 弓兵
+mno_troll_battle_scenario_12|テスト:トロル vs 騎兵
+mno_troll_battle_scenario_13|テスト:トロル vs 槍騎兵
+mno_troll_battle_scenario_14|テスト:トロル vs トロル
 mno_troll_battle_scenario_15|お遊びテスト:トロルをプレイヤーが操作
 menu_quick_battle_wargs|^^^^^^^^ワーグのテストシナリオを選んでください:
 mno_warg_battle_scenario_10|対ワーグ:1 vs 1
@@ -185,7 +185,7 @@ menu_cattle_herd|あなたは人間の一群に会った。
 mno_cattle_drive_away|ついてくるように言う。
 mno_cattle_stop|その場で待つように言う。
 mno_leave|立ち去る。
-menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部下は{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
+menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部隊は総勢{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
 mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
 mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}よう命令し、 自身は後方に待機する。
 mno_special_whip|{s4}を打ちながら威圧する。
