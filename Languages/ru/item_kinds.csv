@@ -1,906 +1,1830 @@
-itm_horse_meat|Лошадиное Мясо
-itm_practice_sword|Тренировочный Меч
-itm_arena_lance|Копьё
-itm_practice_staff|Деревянный Посох
-itm_practice_bow|Тренировочный Лук
+﻿itm_no_item|INVALID ITEM
+itm_no_item_pl|INVALID ITEM
+itm_horse_meat|конина
+itm_horse_meat_pl|конина
+itm_practice_sword|Тренировочный меч
+itm_practice_sword_pl|Тренировочный меч
+itm_arena_lance|Кавалерийское копьё
+itm_arena_lance_pl|Кавалерийское копьё
+itm_practice_staff|Деревянный посох
+itm_practice_staff_pl|Деревянный посох
+itm_practice_bow|Тренировочный лук
+itm_practice_bow_pl|Тренировочный лук
 itm_wooden_javelin|Деревянный дротик
-itm_human_meat|Человеческая Плоть
-itm_maggoty_bread|Червивый Хлеб
-itm_cram|Порция Еды
-itm_lembas|Лембас
-itm_smoked_fish|Копчёная Рыба
-itm_dried_meat|Вяленое Мясо
-itm_cattle_meat|Говядина
-itm_grain|Пшеница
+itm_wooden_javelin_pl|Деревянный дротик
+itm_human_meat|человечина
+itm_human_meat_pl|человечина
+itm_maggoty_bread|червивый хлеб
+itm_maggoty_bread_pl|червивый хлеб
+itm_cram|запас крэма
+itm_cram_pl|запас крэма
+itm_lembas|лембас
+itm_lembas_pl|лембас
+itm_smoked_fish|копчёная рыба
+itm_smoked_fish_pl|копчёная рыба
+itm_dried_meat|сушёное мясо
+itm_dried_meat_pl|сушёное мясо
+itm_cattle_meat|говядина
+itm_cattle_meat_pl|говядина
+itm_grain|пшеница
+itm_grain_pl|пшеница
 itm_tools|Инструменты
-itm_siege_supply|Провиант
-itm_quest_wine|Вино
-itm_quest_ale|Эль
-itm_metal_scraps_bad|Низкокачественный металлолом
-itm_metal_scraps_medium|Годный к применению металлолом
-itm_metal_scraps_good|Высококачественный металлолом
-itm_oliphant|Элифант
-itm_sumpter_horse|Вьючная Лошадь
-itm_saddle_horse|Верховая Лошадь
-itm_steppe_horse|Степная Лошадь
-itm_courser|Рысак
+itm_tools_pl|Инструменты
+itm_siege_supply|провиант
+itm_siege_supply_pl|провиант
+itm_quest_wine|вино
+itm_quest_wine_pl|вино
+itm_quest_ale|эль
+itm_quest_ale_pl|эль
+itm_metal_scraps_bad|куски низкокачественного металла
+itm_metal_scraps_bad_pl|куски низкокачественного металла
+itm_metal_scraps_medium|куски металла
+itm_metal_scraps_medium_pl|куски металла
+itm_metal_scraps_good|куски высококачественного металла
+itm_metal_scraps_good_pl|куски высококачественного металла
+itm_oliphant|Олифант
+itm_oliphant_pl|Олифант
+itm_sumpter_horse|Вьючная лошадь
+itm_sumpter_horse_pl|Вьючная лошадь
+itm_saddle_horse|Верховая лошадь
+itm_saddle_horse_pl|Верховая лошадь
+itm_steppe_horse|Степная лошадь
+itm_steppe_horse_pl|Степная лошадь
+itm_courser|Скаковая лошадь
+itm_courser_pl|Скаковая лошадь
 itm_hunter|Гунтер
+itm_hunter_pl|Гунтер
 itm_pony|Пони
-itm_arnor_warhorse|Арнорский Боевой Конь
-itm_dunedain_warhorse|Дунэдайнский Боевой Конь
-itm_rohirrim_courser|Роханская Скаковая Лошадь
-itm_rohirrim_hunter|Роханский Гунтер
-itm_rohirrim_courser2|Роханская Скаковая Лошадь
-itm_rohan_warhorse|Роханский Боевой Конь
-itm_thengel_warhorse|Боевой Конь Тенгельской Стражи
-itm_rhun_horse_a|Рунская Лошадь
-itm_rhun_horse_b|Рунская Лошадь
-itm_rhun_horse_d|Рунская Лошадь
-itm_rhun_horse_e|Тяжёлая Рунская Лошадь
-itm_rhun_horse_f|Тяжёлая Рунская Лошадь
-itm_rhun_horse_g|Тяжёлая Рунская Лошадь
-itm_rhun_horse_h|Тяжёлая Рунская Лошадь
-itm_dale_horse|Дейлская Лошадь
-itm_dale_warhorse|Дейлский Боевой Конь
-itm_riv_warhorse|Ривенделлская Лошадь
-itm_riv_warhorse2|Конь Имладриса
-itm_mordor_warhorse|Мордорский Боевой Конь
-itm_mordor_warhorse2|Мордорский Зловещий Боевой Конь
-itm_gondor_courser|Гондорский Рысак
-itm_gondor_hunter|Гондорский Гунтер
-itm_dol_amroth_warhorse|Боевой Конь Дол Амрота
-itm_dol_amroth_warhorse2|Тяжёлый Боевой Конь Дол Амрота
-itm_gondor_warhorse|Гондорский Боевой Конь
-itm_gondor_lam_horse|Ламедонский Бронированный Конь
-itm_lorien_warhorse|Лотлориэнский Боевой Конь
-itm_harad_horse|Харадский Конь
-itm_harad_warhorse|Харадский Боевой Конь
-itm_variag_pony|Вариажский Пони
-itm_variag_kataphrakt|Истерлингский Боевой Конь
+itm_pony_pl|Пони
+itm_arnor_warhorse|Арнорский боевой конь
+itm_arnor_warhorse_pl|Арнорский боевой конь
+itm_dunedain_warhorse|Дунаданский боевой конь
+itm_dunedain_warhorse_pl|Дунаданский боевой конь
+itm_rohirrim_courser|Роханская скаковая лошадь
+itm_rohirrim_courser_pl|Роханская каковая лошадь
+itm_rohirrim_hunter|Роханский гунтер
+itm_rohirrim_hunter_pl|Роханский гунтер
+itm_rohirrim_courser2|Роханская скаковая лошадь
+itm_rohirrim_courser2_pl|Роханскпя скаковая лошадь
+itm_rohan_warhorse|Роханский боевой конь
+itm_rohan_warhorse_pl|Роханский боевой конь
+itm_thengel_warhorse|Боевой конь гвардии Тенгела
+itm_thengel_warhorse_pl|Боевой конь гвардии Тенгела
+itm_rhun_horse_a|Рунийская лошадь
+itm_rhun_horse_a_pl|Рунийская лошадь
+itm_rhun_horse_b|Рунийская лошадь
+itm_rhun_horse_b_pl|Рунийская лошадь
+itm_rhun_horse_d|Рунийская лошадь
+itm_rhun_horse_d_pl|Рунийская лошадь
+itm_rhun_horse_e|Рунийская тяжёлая лошадь
+itm_rhun_horse_e_pl|Рунийская тяжёлая лошадь
+itm_rhun_horse_f|Рунийская тяжёлая лошадь
+itm_rhun_horse_f_pl|Рунийская тяжёлая лошадь
+itm_rhun_horse_g|Рунийская тяжёлая лошадь
+itm_rhun_horse_g_pl|Рунийская тяжёлая лошадь
+itm_rhun_horse_h|Рунийская тяжёлая лошадь
+itm_rhun_horse_h_pl|Рунийская тяжёлая лошадь
+itm_dale_horse|Дэйльская лошадь
+itm_dale_horse_pl|Дэйльская лошадь
+itm_dale_warhorse|Дэйльский боевой конь
+itm_dale_warhorse_pl|Дэйльский боевой конь
+itm_riv_warhorse|Ривендельский боевой конь
+itm_riv_warhorse_pl|Ривендельский боевой конь
+itm_riv_warhorse2|Ривендельский конь
+itm_riv_warhorse2_pl|Ривендельский конь
+itm_mordor_warhorse|Мордорский боевой конь
+itm_mordor_warhorse_pl|Мордорский боевой конь
+itm_mordor_warhorse2|Мордорский устрашающий боевой конь
+itm_mordor_warhorse2_pl|Мордорский устрашающий боевой конь
+itm_gondor_courser|Гондорская скаковая лошадь
+itm_gondor_courser_pl|Гондорская скаковая лошадь
+itm_gondor_hunter|Гондорский гунтер
+itm_gondor_hunter_pl|Гондорский гунтер
+itm_dol_amroth_warhorse|Дол-амротский боевой конь
+itm_dol_amroth_warhorse_pl|Дол-амротский боевой конь
+itm_dol_amroth_warhorse2|Дол-амротский тяжёлый боевой конь
+itm_dol_amroth_warhorse2_pl|Дол-амротский тяжёлый боевой конь
+itm_gondor_warhorse|Гондорский боевой конь
+itm_gondor_warhorse_pl|Гондорский боевой конь
+itm_gondor_lam_horse|Ламедонская лошадь в броне
+itm_gondor_lam_horse_pl|Ламедонская лошадь в броне
+itm_lorien_warhorse|Лориэнский боевой конь
+itm_lorien_warhorse_pl|Лориэнский боевой конь
+itm_harad_horse|Харадская лошадь
+itm_harad_horse_pl|Харадская лошадь
+itm_harad_warhorse|Харадский боевой конь
+itm_harad_warhorse_pl|Харадский боевой конь
+itm_variag_pony|Варьягская низкорослая лошадь
+itm_variag_pony_pl|Варьягская низкорослая лошадь
+itm_variag_kataphrakt|Истерлингский боевой конь
+itm_variag_kataphrakt_pl|Истерлингский боевой конь
 itm_warg_1b|Варг
+itm_warg_1b_pl|Варг
 itm_warg_1c|Варг
+itm_warg_1c_pl|Варг
 itm_warg_1d|Варг
-itm_wargarmored_1b|Бронированный Варг
-itm_wargarmored_1c|Бронированный Варг
-itm_wargarmored_2b|Бронированный Варг
-itm_wargarmored_2c|Бронированный Варг
-itm_wargarmored_3a|Бронированный Варг
-itm_warg_reward|Огромный Варг
-itm_troll_feet_boots|Ноги Тролля
-itm_troll_head_helm|Голова Тролля
-itm_troll_head_helm_b|Голова Тролля
-itm_troll_head_helm_c|Голова Тролля
-itm_tree_trunk_club_a|Туловище Тролля
-itm_tree_trunk_club_b|Туловище Тролля
-itm_tree_trunk_invis|Туловище Тролля
-itm_giant_hammer|Гигантский Молот
-itm_giant_mace|Гигантская Булава
-itm_giant_mace_b|Гигантская Шипастая Булава
-itm_olog_feet_boots|Ноги Олог-хая
-itm_olog_head_helm|Голова Олог-хая
-itm_olog_head_helm_b|Голова Олог-хая
-itm_olog_head_helm_c|Голова Олог-хая
-itm_olog_body|Броня Олог-хая
-itm_olog_body_b|Броня Олог-хая
-itm_olog_hands|Руки Олог-хая
+itm_warg_1d_pl|Варг
+itm_wargarmored_1b|Варг в броне
+itm_wargarmored_1b_pl|Варг в броне
+itm_wargarmored_1c|Варг в броне
+itm_wargarmored_1c_pl|Варг в броне
+itm_wargarmored_2b|Варг в броне
+itm_wargarmored_2b_pl|Варг в броне
+itm_wargarmored_2c|Варг в броне
+itm_wargarmored_2c_pl|Варг в броне
+itm_wargarmored_3a|Варг в броне
+itm_wargarmored_3a_pl|Варг в броне
+itm_warg_reward|Огромный варг
+itm_warg_reward_pl|Огромный варг
+itm_troll_feet_boots|Ноги тролля
+itm_troll_feet_boots_pl|Ноги тролля
+itm_troll_head_helm|Голова тролля
+itm_troll_head_helm_pl|Голова тролля
+itm_troll_head_helm_b|Голова тролля
+itm_troll_head_helm_b_pl|Голова тролля
+itm_troll_head_helm_c|Голова тролля
+itm_troll_head_helm_c_pl|Голова тролля
+itm_tree_trunk_club_a|Ствол дерева
+itm_tree_trunk_club_a_pl|Ствол дерева
+itm_tree_trunk_club_b|Ствол дерева
+itm_tree_trunk_club_b_pl|Ствол дерева
+itm_tree_trunk_invis|Ствол дерева
+itm_tree_trunk_invis_pl|Ствол дерева
+itm_giant_hammer|Огромный молот
+itm_giant_hammer_pl|Огромный молот
+itm_giant_mace|Огромная булава
+itm_giant_mace_pl|Огромная булава
+itm_giant_mace_b|Огромная булава с шипами
+itm_giant_mace_b_pl|Огромная булава с шипами
+itm_olog_feet_boots|Ноги олог-хая
+itm_olog_feet_boots_pl|Ноги олог-хая
+itm_olog_head_helm|Голова олог-хая
+itm_olog_head_helm_pl|Голова олог-хая
+itm_olog_head_helm_b|Голова олог-хая
+itm_olog_head_helm_b_pl|Голова олог-хая
+itm_olog_head_helm_c|Голова олог-хая
+itm_olog_head_helm_c_pl|Голова олог-хая
+itm_olog_body|Броня олог-хая
+itm_olog_body_pl|Броня олог-хая
+itm_olog_body_b|Броня олог-хая
+itm_olog_body_b_pl|Броня олог-хая
+itm_olog_hands|Руки олог-хая
+itm_olog_hands_pl|Руки олог-хая
+itm_warg_ghost_armour|HIDEME armour
+itm_warg_ghost_armour_pl|HIDEME armour
+itm_warg_ghost_lance|HIDEME lance
+itm_warg_ghost_lance_pl|HIDEME lance
 itm_arrows|Стрелы
-itm_gondor_arrows|Стрелы Гондора
-itm_gondor_auxila_arrows|Гондорские Стрелы
-itm_khergit_arrows|Зазубренные Стрелы
-itm_rohan_arrows_2|Роханские Стрелы
-itm_harad_arrows|Харадские Стрелы
-itm_corsair_arrows|Стрелы Пиратов
-itm_ithilien_arrows|Итилиэнские Стрелы
-itm_woodelf_arrows|Стрелы Лесных Эльфов
-itm_elven_arrows|Эльфийские Стрелы
-itm_orc_hook_arrow|Орочьи Кривые Стрелы
-itm_isengard_arrow|Изенгардские Стрелы
-itm_pilgrim_disguise|Маскировка Паломника
-itm_leather_gloves|Кожаные Перчатки
-itm_mail_mittens|Кольчужные Рукавицы
-itm_leather_boots|Кожаные Сапоги
-itm_black_dress|Чёрное Платье
-itm_blackwhite_dress|Женское Платье
-itm_white_tunic_a|Белая Туника
-itm_white_tunic_b|Простая Туника
-itm_white_tunic_c|Жилет-Туника
-itm_blue_tunic|Голубая Туника
-itm_black_tunic|Чёрная Туника
-itm_green_tunic|Зелёная Туника
-itm_red_tunic|Красная Туника
-itm_leather_apron|Кожаный Фартук
-itm_leather_jerkin|Кожаный Камзол
-itm_fur_coat|Дейлский Плащ
-itm_green_dress|Зелёное Платье
-itm_tld_tunic|Туника
-itm_gondor_fine_outfit_dress|Отличное Снаряжение
-itm_rohan_fine_outfit_dale_dress|Отличное Снаряжение
+itm_arrows_pl|Стрелы
+itm_gondor_arrows|Гондорские стрелы
+itm_gondor_arrows_pl|Гондорские стрелы
+itm_gondor_auxila_arrows|Гондорские стрелы
+itm_gondor_auxila_arrows_pl|Гондорские стрелы
+itm_khergit_arrows|Зазубренные стрелы
+itm_khergit_arrows_pl|Зазубренные стрелы
+itm_rohan_arrows_2|Роханские стрелы
+itm_rohan_arrows_2_pl|Роханские стрелы
+itm_harad_arrows|Харадские стрелы
+itm_harad_arrows_pl|Харадские стрелы
+itm_corsair_arrows|Корсарские стрелы
+itm_corsair_arrows_pl|Корсарские стрелы
+itm_ithilien_arrows|Итилиэнские стрелы
+itm_ithilien_arrows_pl|Итилиэнские стрелы
+itm_woodelf_arrows|Стрелы лесных эльфов
+itm_woodelf_arrows_pl|Стрелы лесных эльфов
+itm_elven_arrows|Эльфийские стрелы
+itm_elven_arrows_pl|Эльфийские стрелы
+itm_orc_hook_arrow|Орочьи крючковатые стрелы
+itm_orc_hook_arrow_pl|Орочьи крючковатые стрелы
+itm_isengard_arrow|Изенгардские стрелы
+itm_isengard_arrow_pl|Изенгардские стрелы
+itm_pilgrim_disguise|Одежды путника
+itm_pilgrim_disguise_pl|Одежды путника
+itm_leather_gloves|Кожаные перчатки
+itm_leather_gloves_pl|Кожаные перчатки
+itm_mail_mittens|Кольчужные рукавицы
+itm_mail_mittens_pl|Кольчужные рукавицы
+itm_leather_boots|Кожаные сапоги
+itm_leather_boots_pl|Кожаные сапоги
+itm_black_dress|Чёрное платье
+itm_black_dress_pl|Чёрное платье
+itm_blackwhite_dress|Богатое платье
+itm_blackwhite_dress_pl|Богатое платье
+itm_white_tunic_a|Белая одежда
+itm_white_tunic_a_pl|Белая одежда
+itm_white_tunic_b|Простая одежда
+itm_white_tunic_b_pl|Простая одежда
+itm_white_tunic_c|Куртка
+itm_white_tunic_c_pl|Куртка
+itm_blue_tunic|Синяя одежда
+itm_blue_tunic_pl|Синяя одежда
+itm_black_tunic|Чёрная одежда
+itm_black_tunic_pl|Чёрная одежда
+itm_green_tunic|Зелёная одежда
+itm_green_tunic_pl|Зелёная одежда
+itm_red_tunic|Красная одежда
+itm_red_tunic_pl|Красная одежда
+itm_leather_apron|Кожаный фартук
+itm_leather_apron_pl|Кожаный фартук
+itm_leather_jerkin|Кожаная куртка
+itm_leather_jerkin_pl|Кожаная куртка
+itm_fur_coat|Дэйльская одежда
+itm_fur_coat_pl|Дэйльская одежда
+itm_green_dress|Зелёное платье
+itm_green_dress_pl|Зелёное платье
+itm_tld_tunic|Рубашка
+itm_tld_tunic_pl|Рубашка
+itm_gondor_fine_outfit_dress|Красивая одежда
+itm_gondor_fine_outfit_dress_pl|Красивая одежда
+itm_rohan_fine_outfit_dale_dress|Красивая одежда
+itm_rohan_fine_outfit_dale_dress_pl|Красивая одежда
 itm_robe_generic_dress|Мантия
-itm_wimple_a|Мантилья
-itm_wimple_with_veil|Мантилья
-itm_fine_hat|Отличная Шляпа
-itm_shortened_spear|Укороченное Копьё
+itm_robe_generic_dress_pl|Мантия
+itm_wimple_a|Чепец
+itm_wimple_a_pl|Чепец
+itm_wimple_with_veil|Чепец
+itm_wimple_with_veil_pl|Чепец
+itm_fine_hat|Красивая шляпа
+itm_fine_hat_pl|Красивая шляпа
+itm_shortened_spear|Укороченное копьё
+itm_shortened_spear_pl|Укороченное копьё
 itm_spear|Копьё
-itm_light_lance|Лёгкое Копьё
-itm_lance|Копьё
-itm_tab_shield_small_round_b|Круглый Конный Щит
-itm_short_bow|Короткий Лук
+itm_spear_pl|Копьё
+itm_light_lance|Лёгкое кавалерийское копьё
+itm_light_lance_pl|Лёгкое кавалерийское копьё
+itm_lance|Кавалерийское копьё
+itm_lance_pl|Кавалерийское копьё
+itm_tab_shield_small_round_b|Круглый щит всадника
+itm_tab_shield_small_round_b_pl|Круглый щит всадника
+itm_short_bow|Короткий лук
+itm_short_bow_pl|Короткий лук
 itm_regular_bow|Лук
-itm_nomad_bow|Лук Кочевников
-itm_gondor_bow|Гондорский Лук
-itm_strong_bow|Крепкий Лук
-itm_elven_bow|Эльфийский Лук
-itm_corsair_bow|Лук Пиратов
-itm_dwarf_horn_bow|Гномий Роговой Лук
-itm_dwarf_short_bow|Гномий Короткий Лук
-itm_harad_bow|Харадский Изогнутый Лук
-itm_lg_bow|Лук Орлиной Стражи
-itm_riv_bow|Ривенделлский Лук
-itm_glorfi_bow|Лук Глорфиндела
-itm_lorien_bow|Лук Галадрима
-itm_isengard_large_bow|Изенардский Большой Лук
-itm_dale_bow|Дейлский Лук
-itm_uruk_bow|Орочий Лук
-itm_mirkwood_bow|Лихолесский Лук
-itm_dunland_javelin|Дунландские Дротики
-itm_orc_throwing_arrow|Орочьи Дротики
-itm_heavy_throwing_spear|Тяжёлое Метательное Копьё
+itm_regular_bow_pl|Лук
+itm_nomad_bow|Лук кочевника
+itm_nomad_bow_pl|Лук кочевника
+itm_gondor_bow|Гондорский лук
+itm_gondor_bow_pl|Гондорский лук
+itm_strong_bow|Тугой лук
+itm_strong_bow_pl|Тугой лук
+itm_elven_bow|Эльфийский лук
+itm_elven_bow_pl|Эльфийский лук
+itm_corsair_bow|Корсарский лук
+itm_corsair_bow_pl|Корсарский лук
+itm_dwarf_horn_bow|Гномий роговой лук
+itm_dwarf_horn_bow_pl|Гномий роговой лук
+itm_dwarf_short_bow|Гномий короткий лук
+itm_dwarf_short_bow_pl|Гномий короткий лук
+itm_harad_bow|Харадский кривой лук
+itm_harad_bow_pl|Харадский кривой лук
+itm_lg_bow|Лук Орлиной гвардии
+itm_lg_bow_pl|Лук Орлиной гвардии
+itm_riv_bow|Ривендельский лук
+itm_riv_bow_pl|Ривендельский лук
+itm_glorfi_bow|Лук Глорфинделя
+itm_glorfi_bow_pl|Лук Глорфинделя
+itm_lorien_bow|Галадримский лук
+itm_lorien_bow_pl|Галадримский лук
+itm_isengard_large_bow|Изенгардский большой лук
+itm_isengard_large_bow_pl|Изенгардский большой лук
+itm_dale_bow|Дэйльский лук
+itm_dale_bow_pl|Дэйльский лук
+itm_uruk_bow|Орочий лук
+itm_uruk_bow_pl|Орочий лук
+itm_mirkwood_bow|Темнолесский лук
+itm_mirkwood_bow_pl|Темнолесский лук
+itm_dunland_javelin|Дунландские дротики
+itm_dunland_javelin_pl|Дунландские дротики
+itm_orc_throwing_arrow|Орочьи дротики
+itm_orc_throwing_arrow_pl|Орочьи дротики
+itm_heavy_throwing_spear|Тяжёлое метательное копьё
+itm_heavy_throwing_spear_pl|Тяжёлое метательное копьё
 itm_javelin|Дротик
-itm_harad_javelin|Харадский Дротик
-itm_gondor_javelin|Гондорский Дротик
-itm_rohirrim_throwing_axe|Роханские Метательные Топоры
-itm_loss_throwing_axes|Лоссарнахские Метательные Топоры
-itm_arnor_helm_a|Арнорский Шлем
-itm_arnor_helm_b|Арнорский Шлем
-itm_arnor_helm_c|Арнорский Шлем
-itm_dunedain_helm_a|Дунэдайнский Капюшон
-itm_dunedain_helm_b|Арнорский Украшенный Шлем
-itm_arnor_armor_a|Арнорская Броня
-itm_arnor_armor_b|Арнорская Броня
-itm_arnor_armor_c|Кожанка Дунэдайнских Следопытов
-itm_arnor_armor_d|Кожанка Дунэдайнских Следопытов
-itm_arnor_armor_e|Арнорский Укреплённый Камзол
-itm_arnor_armor_f|Арнорский Превосходный Доспех
-itm_arnor_greaves|Арнорские Поножи
-itm_arnor_splinted|Арнорские Клёпанные Поножи
-itm_arnor_shield_a|Арнорский Щит
-itm_arnor_shield_c|Арнорский Щит Всадника
-itm_arnor_shield_b|Арнорский Щит
-itm_arnor_shield_d|Арнорский Щит Всадника
-itm_arnor_sword_a|Арнорский Полуторный Меч
-itm_arnor_sword_c|Арнорский Полуторный Меч
-itm_arnor_sword_f|Арнорский Короткий Меч
-itm_riv_helm_a|Ривенделлский Чепец
-itm_riv_helm_b|Ривенделлский Шлем Лучника
-itm_riv_helm_c|Ривенделлский Шлем Воина
-itm_riv_helm_glorfi|Волосы Глорфиндела
-itm_riv_tiara|Корона Лорда Эльфа
-itm_riv_shield_a|Ривенделлский Щит
-itm_riv_shield_b|Ривенделлский Щит
-itm_riv_bas_sword|Ривенделлский Полуторный Меч
-itm_riv_1h_sword|Ривенделлский Меч
-itm_riv_riding_sword|Ривенделлский Кавалерийский Меч
-itm_riv_archer_sword|Ривенделлский Меч Лучника
-itm_riv_spear|Ривенделлское Копьё
-itm_riv_armor_light|Ривенделлская Броня
-itm_riv_armor_light_inf|Ривенделлская Броня
-itm_riv_armor_archer|Ривенделлская Броня
-itm_riv_armor_m_archer|Ривенделлская Броня
-itm_riv_armor_med|Ривенделлская Броня
-itm_riv_armor_heavy|Ривенделлская Броня
-itm_riv_armor_h_archer|Ривенделлская Броня
-itm_riv_armor_leader|Ривенделлская Броня Правителя
-itm_riv_boots|Ривенделлские Ботинки
-itm_gon_footman|Гондорская Короткая Кольчуга
-itm_gon_jerkin|Гондорский Камзол
-itm_gon_regular|Гондорская Тяжёлая Кольчуга
-itm_gon_bowman|Гондорский Поддоспешник
-itm_gon_archer|Гондорский Поддоспешник с Плащом
-itm_gon_noble_cloak|Гондорский Знатный Камзол
-itm_gon_squire|Гондорская Кольчуга с Плащом
-itm_gon_knight|Гондорская Тяжёлая Кольчуга с Плащом
-itm_gon_ranger_cloak|Гондорский Плащ Рейнджеров
-itm_gon_ranger_skirt|Гондорский Подол Рейнджеров
-itm_gon_steward_guard|Гондорская Броня Стража Управителя
-itm_gon_tower_guard|Гондорская Броня Стража Башни
-itm_gon_tower_knight|Гондорская Броня Рыцаря Башни
-itm_gon_leader_surcoat_cloak|Гондорское Сюрко Правителя
-itm_gondor_ranger_hood|Зеленый Капюшон
-itm_gondor_ranger_hood_mask|Гондорский Капюшон Следопыта
-itm_gondor_light_greaves|Гондорские Кожаные Поножи
-itm_gondor_med_greaves|Гондорские Средние Поножи
-itm_gondor_heavy_greaves|Гондорские Кольчужные Поножи
-itm_gondorian_light_helm|Гондорский Шлем Пехотинца
-itm_gondor_infantry_helm|Гондорский Шлем Воина
-itm_gondor_auxila_helm|Гондорский Шлем Вспомогательных Войск
-itm_gondorian_light_helm_b|Гондорский Шлем Лучника
-itm_gondorian_archer_helm|Гондорский Шлем Стрелка
-itm_tower_archer_helm|Шлем Башенного Лучника
-itm_gondor_leader_helm|Гондорский Превосходный Шлем
+itm_javelin_pl|Дротик
+itm_harad_javelin|Харадский дротик
+itm_harad_javelin_pl|Харадский дротик
+itm_gondor_javelin|Гондорский дротик
+itm_gondor_javelin_pl|Гондорский дротик
+itm_rohirrim_throwing_axe|Роханские метательные топоры
+itm_rohirrim_throwing_axe_pl|Роханские метательные топоры
+itm_loss_throwing_axes|Лоссарнахские метательные топоры
+itm_loss_throwing_axes_pl|Лоссарнахские метательные топоры
+itm_arnor_helm_a|Арнорский шлем
+itm_arnor_helm_a_pl|Арнорский шлем
+itm_arnor_helm_b|Арнорский шлем
+itm_arnor_helm_b_pl|Арнорский шлем
+itm_arnor_helm_c|Арнорский шлем
+itm_arnor_helm_c_pl|Арнорский шлем
+itm_dunedain_helm_a|Дунаданский капюшон
+itm_dunedain_helm_a_pl|Дунаданский капюшон
+itm_dunedain_helm_b|Арнорский украшенный шлем
+itm_dunedain_helm_b_pl|Арнорский украшенный шлем
+itm_arnor_armor_a|Арнорская броня
+itm_arnor_armor_a_pl|Арнорская броня
+itm_arnor_armor_b|Арнорская броня
+itm_arnor_armor_b_pl|Арнорская броня
+itm_arnor_armor_c|Броня дунаданского рейнджера
+itm_arnor_armor_c_pl|Броня дунаданского рейнджера
+itm_arnor_armor_d|Броня дунаданского рейнджера
+itm_arnor_armor_d_pl|Броня дунаданского рейнджера
+itm_arnor_armor_e|Арнорская толстая куртка
+itm_arnor_armor_e_pl|Арнорская толстая куртка
+itm_arnor_armor_f|Арнорская превосходная броня
+itm_arnor_armor_f_pl|Арнорская превосходная броня
+itm_arnor_greaves|Арнорские поножи
+itm_arnor_greaves_pl|Арнорские поножи
+itm_arnor_splinted|Арнорские пластинчатые поножи
+itm_arnor_splinted_pl|Арнорские пластинчатые поножи
+itm_arnor_shield_a|Арнорский щит
+itm_arnor_shield_a_pl|Арнорский щит
+itm_arnor_shield_c|Арнорский кавалерийский щит
+itm_arnor_shield_c_pl|Арнорский кавалерийский щит
+itm_arnor_shield_b|Арнорский щит
+itm_arnor_shield_b_pl|Арнорский щит
+itm_arnor_shield_d|Арнорский кавалерийский щит
+itm_arnor_shield_d_pl|Арнорский кавалерийский щит
+itm_arnor_sword_a|Арнорский меч-полутораручник
+itm_arnor_sword_a_pl|Арнорский меч-полутораручник
+itm_arnor_sword_c|Арнорский меч-полутораручник
+itm_arnor_sword_c_pl|Арнорский меч-полутораручник
+itm_arnor_sword_f|Арнорский короткий меч
+itm_arnor_sword_f_pl|Арнорский короткий меч
+itm_riv_helm_a|Ривендельский койф
+itm_riv_helm_a_pl|Ривендельский койф
+itm_riv_helm_b|Ривендельский шлем лучника
+itm_riv_helm_b_pl|Ривендельский шлем лучника
+itm_riv_helm_c|Ривендельский шлем пехотинца
+itm_riv_helm_c_pl|Ривендельский шлем пехотинца
+itm_riv_helm_glorfi|Волосы Глорфинделя
+itm_riv_helm_glorfi_pl|Волосы Глорфинделя
+itm_riv_tiara|Тиара эльфийского правителя
+itm_riv_tiara_pl|Тиара эльфийского правителя
+itm_riv_shield_a|Ривендельский щит
+itm_riv_shield_a_pl|Ривендельский щит
+itm_riv_shield_b|Ривендельский щит
+itm_riv_shield_b_pl|Ривендельский щит
+itm_riv_bas_sword|Ривендельский меч-полутораручник
+itm_riv_bas_sword_pl|Ривендельский меч-полутораручник
+itm_riv_1h_sword|Ривендельский меч
+itm_riv_1h_sword_pl|Ривендельский меч
+itm_riv_riding_sword|Ривендельский кавалерийский меч
+itm_riv_riding_sword_pl|Ривендельский кавалерийский меч
+itm_riv_archer_sword|Ривендельский меч лучника
+itm_riv_archer_sword_pl|Ривендельский меч лучника
+itm_riv_spear|Ривендельское копьё
+itm_riv_spear_pl|Ривендельское копьё
+itm_riv_armor_light|Ривендельская броня
+itm_riv_armor_light_pl|Ривендельская броня
+itm_riv_armor_light_inf|Ривендельская броня
+itm_riv_armor_light_inf_pl|Ривендельская броня
+itm_riv_armor_archer|Ривендельская броня
+itm_riv_armor_archer_pl|Ривендельская броня
+itm_riv_armor_m_archer|Ривендельская броня
+itm_riv_armor_m_archer_pl|Ривендельская броня
+itm_riv_armor_med|Ривендельская броня
+itm_riv_armor_med_pl|Ривендельская броня
+itm_riv_armor_heavy|Ривендельская броня
+itm_riv_armor_heavy_pl|Ривендельская броня
+itm_riv_armor_h_archer|Ривендельская броня
+itm_riv_armor_h_archer_pl|Ривендельская броня
+itm_riv_armor_leader|Ривендельская броня военачальника
+itm_riv_armor_leader_pl|Ривендельская броня военачальника
+itm_riv_boots|Ривендельскые сапоги
+itm_riv_boots_pl|Ривендельскые сапоги
+itm_gon_footman|Гондорская кольчуга
+itm_gon_footman_pl|Гондорская кольчуга
+itm_gon_jerkin|Гондорская куртка
+itm_gon_jerkin_pl|Гондорская куртка
+itm_gon_regular|Гондорская тяжёлая кольчуга
+itm_gon_regular_pl|Гондорская тяжёлая кольчуга
+itm_gon_bowman|Гондорский гамбезон
+itm_gon_bowman_pl|Гондорский гамбезон
+itm_gon_archer|Гондорский гамбезон с накидкой
+itm_gon_archer_pl|Гондорский гамбезон с накидкой
+itm_gon_noble_cloak|Гондорская дорогая куртка
+itm_gon_noble_cloak_pl|Гондорская дорогая куртка
+itm_gon_squire|Гондорская кольчуга с накидкой
+itm_gon_squire_pl|Гондорская кольчуга с накидкой
+itm_gon_knight|Гондорская тяжёлая кольчуга с накидкой
+itm_gon_knight_pl|Гондорская тяжёлая кольчуга с накидкой
+itm_gon_ranger_cloak|Гондорский плащ рейнджера
+itm_gon_ranger_cloak_pl|Гондорский плащ рейнджера
+itm_gon_ranger_skirt|Гондорская одежда рейнджера
+itm_gon_ranger_skirt_pl|Гондорская одежда рейнджера
+itm_gon_steward_guard|Гондорская броня Стражи наместника
+itm_gon_steward_guard_pl|Гондорская броня Стражи наместника
+itm_gon_tower_guard|Гондорская броня Стражи Башни
+itm_gon_tower_guard_pl|Гондорская броня Стражи Башни
+itm_gon_tower_knight|Гондорская броня Рыцаря Башни
+itm_gon_tower_knight_pl|Гондорская броня Рыцаря Башни
+itm_gon_leader_surcoat_cloak|Гондорская накидка военачальника
+itm_gon_leader_surcoat_cloak_pl|Гондорская накидка военачальника
+itm_gondor_ranger_hood|Зелёный капюшон
+itm_gondor_ranger_hood_pl|Зелёный капюшон
+itm_gondor_ranger_hood_mask|Гондорский капюшон рейнджера
+itm_gondor_ranger_hood_mask_pl|Гондорский капюшон рейнджера
+itm_gondor_light_greaves|Гондорские кожаные поножи
+itm_gondor_light_greaves_pl|Гондорские кожаные поножи
+itm_gondor_med_greaves|Гондорские средние поножи
+itm_gondor_med_greaves_pl|Гондорские средние поножи
+itm_gondor_heavy_greaves|Гондорские кольчужные поножи
+itm_gondor_heavy_greaves_pl|Гондорские кольчужные поножи
+itm_gondorian_light_helm|Гондорский шлем пехотинца
+itm_gondorian_light_helm_pl|Гондорский шлем пехотинца
+itm_gondor_infantry_helm|Гондорский шлем пехотинца
+itm_gondor_infantry_helm_pl|Гондорский шлем пехотинца
+itm_gondor_auxila_helm|Гондорский шлем ополченца
+itm_gondor_auxila_helm_pl|Гондорский шлем ополченца
+itm_gondorian_light_helm_b|Гондорский шлем лучника
+itm_gondorian_light_helm_b_pl|Гондорский шлем лучника
+itm_gondorian_archer_helm|Гондорский шлем лучника
+itm_gondorian_archer_helm_pl|Гондорский шлем лучника
+itm_tower_archer_helm|Шлем лучника Башни
+itm_tower_archer_helm_pl|Шлем лучника Башни
+itm_gondor_leader_helm|Гондорский превосходный шлем
+itm_gondor_leader_helm_pl|Гондорский превосходный шлем
 itm_tower_guard_helm|Шлем Стража Башни
+itm_tower_guard_helm_pl|Шлем Стража Башни
 itm_gondor_citadel_knight_helm|Шлем Рыцаря Цитадели
-itm_gondor_squire_helm|Гондорский Шлем Сквайра
-itm_gondor_knight_helm|Гондорский Шлем Рыцаря
-itm_gondor_dolamroth_helm|Шлем Дол Амрота
-itm_swan_knight_helm|Шлем Лебединых Рыцарей
-itm_gondor_lamedon_helm|Ламедонский Шлем
-itm_gondor_lamedon_leader_helm|Ламедонский Превосходный Шлем
-itm_blackroot_archer|Эрехская Броня Стрелка
-itm_blackroot_bowman|Эрехская Броня Лучника
-itm_blackroot_footman|Эрехская Броня Пехотинца
-itm_blackroot_warrior|Эрехская Броня Воина
-itm_blackroot_leader|Эрехская Броня Правителя
-itm_blackroot_hood|Эрехский Капюшон
-itm_dol_hauberk|Кольчуга Дол Амрота
-itm_dol_heavy_mail|Тяжёлая Кольчуга Дол Амрота
-itm_dol_padded_coat|Обитый Плащ Дол Амрота
-itm_dol_shirt|Рубаха Дол Амрота
-itm_dol_very_heavy_mail|Очень Тяжёлая Кольчуга Дол Амрота
-itm_dol_greaves|Поножи Дол Амрота
-itm_dol_shoes|Лёгкие Сапоги Дол Амрота
-itm_lamedon_clansman|Ламедонская Броня Члена Клана
-itm_lamedon_footman|Ламедонская Броня Пехотинца
-itm_lamedon_knight|Ламедонская Броня Рыцаря
-itm_lamedon_leader_surcoat_cloak|Ламедонская Броня Правителя
-itm_lamedon_warrior|Ламедонская Броня Воина
-itm_lamedon_veteran|Ламедонская Броня Ветерана
-itm_lamedon_vet_warrior|Ламедонская Броня Воина Ветерана
-itm_lamedon_hood|Ламедонский Капюшон
-itm_pinnath_archer|Броня Лучника Пиннат Гелина
-itm_pinnath_footman|Броня Пехотинца Пиннат Гелина
-itm_pinnath_leader|Броня Правителя Пиннат Гелина
-itm_pinnath_vet_footman|Броня Пехотинца-Ветерана Пиннат Гелина
-itm_pinnath_warrior|Броня Воина Пиннат Гелина
-itm_pel_footman|Пеларгирская Броня Пехотинца
-itm_pel_jerkin|Пеларгирский Камзол
-itm_pel_leader|Пеларгирская Броня Правителя
-itm_pel_marine|Пеларгирский Морской Пехотинец
-itm_pelargir_marine_leader|Пеларгирский Лидер Морских Пехотинцев
-itm_pelargir_regular|Пеларгирские Регулярный Воин
-itm_pelargir_hood|Пеларгирский Капюшон
-itm_pelargir_helmet_light|Пеларгирский Шлем
-itm_pelargir_helmet_heavy|Пеларгирский Тяжёлый Шлем
-itm_pelargir_greaves|Пеларгирские Поножи
-itm_lossarnach_shirt|Лоссарнахская Рубаха
-itm_lossarnach_axeman|Лоссарнахская Броня Топорника
-itm_lossarnach_leader|Лоссарнахская Броня Правителя
-itm_lossarnach_vet_axeman|Лоссарнахская Броня Топорника-Ветерана
-itm_lossarnach_vet_warrior|Лоссарнахская Броня Воина-Ветерана
-itm_lossarnach_warrior|Лоссарнахская Броня Воина
-itm_lossarnach_cloth_cap|Лоссарнахская Фуражка
-itm_lossarnach_leather_cap|Лоссарнахская Кожаная Фуражка
-itm_lossarnach_scale_cap|Лоссарнахская Чешуйчатая Фуражка
-itm_lossarnach_greaves|Лоссарнахские Поножи
-itm_gondor_shield_a|Гондорский Квадратный Щит
-itm_gondor_shield_b|Гондорский Каплевидный Щит
-itm_gondor_shield_c|Гондорский Башенный Щит
-itm_gondor_shield_d|Гондорский Каплевидный Щит
-itm_gondor_shield_e|Гондорский Королевский Щит
-itm_gon_tab_shield_a|Гондорский Геральдический Круглый Щит
-itm_gon_tab_shield_b|Гондорский Геральдический Квадратный Щит
-itm_gon_tab_shield_c|Гондорский Геральдический Каплевидный Щит
-itm_gon_tab_shield_d|Гондорский Геральдический Башенный Щит
-itm_amroth_sword_a|Меч Дол Амрота
-itm_amroth_sword_b|Рыцарский Меч Дол Амрота
-itm_gondor_sword|Гондорский Меч Пехотинца
-itm_amroth_bastard|Тяжёлый Меч Дол Амрота
-itm_gondor_short_sword|Линхирский Экет
-itm_pelargir_eket|Пеларгирский Экет
-itm_pelargir_sword|Пеларгирский Меч
-itm_gondor_ranger_sword|Гондорский Меч Следопыта
-itm_gondor_bastard|Гондорский Полуторный Меч
-itm_gondor_citadel_sword|Гондорский Меч Цитадели
-itm_gondor_cav_sword|Гондорский Кавалерийский Меч
-itm_gondor_spear|Гондорское Копьё
-itm_gondor_tower_spear|Гондорское Башенное Копьё
-itm_gondor_lance|Гондорская Пика
-itm_loss_axe|Лоссарнахский Боевой Топор
-itm_loss_war_axe|Лоссарнахские Военный Топор
-itm_lorien_sword_a|Лориенский Длинный Меч
-itm_lorien_sword_b|Лориенский Короткий Меч
-itm_lorien_sword_c|Лориенский Боевой Меч
-itm_lorien_archer|Лориенская Броня Лучника
-itm_lorien_armor_a|Лориенская Броня Воина
-itm_lorien_armor_b|Тяжёлая Лориенская Броня Война
-itm_lorien_armor_c|Лориенская Королевская Броня Лучника
-itm_lorien_armor_d|Лориенская Королевская Броня Мечника
-itm_lorien_armor_e|Лориенский Плащ Служителя
-itm_lorien_armor_f|Лориенская Элитная Броня
-itm_lorien_boots|Лотлориенские Сапоги
-itm_lorien_shield_b|Лориенский Башенный Щит
-itm_lorien_shield_c|Лориенский Каплевидный Щит
-itm_lorien_round_shield|Лориенский Круглый Щит
-itm_lorien_helm_a|Лориенский Шлем Лучника
-itm_lorien_helm_b|Лориенский Шлем Лучника
-itm_lorien_helm_c|Лориенский Шлем Мечника
-itm_orc_chain_greaves|Орочьи Поножи
-itm_orc_coif|Орочий Чепец
-itm_orc_greaves|Орочьи Цепочные Сапоги
-itm_orc_ragwrap|Орочья Тряпьё
-itm_orc_furboots|Орочьи Меховые Ботинки
-itm_orc_furboot_tall|Орочьи Меховые Ботинки
-itm_orc_tribal_a|Необработанная Кожа
-itm_orc_tribal_b|Необработанная Кожа
-itm_orc_tribal_c|Необработанная Кожа
-itm_evil_gauntlets_a|Рукавицы
-itm_evil_gauntlets_b|Рукавицы
-itm_isen_orc_armor_a|Изенгардская Орочья Броня
-itm_isen_orc_armor_b|Изенгардская Орочья Броня
-itm_isen_orc_armor_c|Изенгардская Орочья Броня
-itm_isen_orc_armor_d|Изенгардская Орочья Броня
-itm_isen_orc_armor_e|Изенгардская Орочья Броня
-itm_isen_orc_armor_f|Изенгардская Орочья Броня
-itm_isen_orc_armor_g|Изенгардская Орочья Броня
-itm_isen_uruk_light_a|Лёгкий Доспех Урук-хаев
-itm_isen_uruk_light_b|Кожаный Доспех Урук-хаев
-itm_isen_uruk_light_c|Кожаный Доспех Урук-хаев
-itm_isen_uruk_light_d|Кольчуга Урук-хаев
-itm_isen_uruk_light_e|Кольчужный Доспех Урук-хаев
-itm_isen_uruk_heavy_a|Кольчуга Урук-хаев
-itm_isen_uruk_heavy_b|Тяжёлая Броня Урук-хаев
-itm_isen_uruk_heavy_c|Тяжёлая Броня Урук-хаев
-itm_isen_uruk_heavy_d|Охотничий Кожаный Доспех Урук-хаев
-itm_isen_uruk_heavy_e|Охотничий Кожаный Доспех Урук-хаев
-itm_uruk_tracker_boots|Охотничьи Сапоги Урук-хаев
-itm_uruk_greaves|Урукские Поножи
-itm_uruk_chain_greaves|Урукские Кольчужные Поножи
-itm_uruk_ragwrap|Урукское Тряпьё
-itm_isen_orc_helm_a|Шлем Изенских Орков
-itm_isen_orc_helm_b|Шлем Изенских Орков
-itm_isen_orc_helm_c|Шлем Изенских Орков
-itm_isen_uruk_helm_a|Шлем Урук-хаев
-itm_isen_uruk_helm_b|Шлем Урук-хаев
-itm_isen_uruk_helm_c|Шлем Урук-хаев
-itm_isen_uruk_helm_d|Шлем Урук-хая Командира
-itm_isen_uruk_helm_e|Шлем Урук-хая Охотника
-itm_isen_uruk_helm_f|Шлем Урук-хая Охотника
-itm_uruk_pike_a|Урукская Пика
-itm_uruk_pike_b|Урукская Пика
-itm_uruk_falchion_a|Урукский Фальшион
-itm_uruk_falchion_b|Урукский Фальшион
-itm_uruk_spear|Урукское Копьё
-itm_uruk_skull_spear|Урукское Копьё с Черепом
-itm_uruk_voulge|Урукский Вуж
-itm_uruk_heavy_axe|Урукский Тяжёлый Топор
-itm_isengard_sword|Изенгардский Меч
-itm_isengard_axe|Изенгардский Топор
-itm_isengard_hammer|Изенгардский Молот
-itm_isengard_halberd|Изенгардская Алебарда
-itm_isengard_mallet|Изенгардская Киянка
-itm_isengard_heavy_axe|Изенгардский Тяжёлый Топор
-itm_isengard_heavy_sword|Изенгардский Тяжёлый Меч
-itm_isengard_spear|Изенгардское Копьё
-itm_isengard_pike|Изенгардская Пика
-itm_isen_orc_shield_a|Изенгардский Орочий Щит
-itm_isen_orc_shield_b|Изенгардский Орочий Щит
-itm_isen_uruk_shield_b|Изенгардский Урукский Щит
-itm_wood_club|Деревянная Дубина
-itm_twohand_wood_club|Большая Деревянная Дубина
-itm_bone_cudgel|Костная Дубина
-itm_skull_club|Дубина с Черепом
-itm_orc_club_a|Орочья Дубина
-itm_orc_club_b|Орочья Дубина
-itm_orc_club_c|Орочья Дубина
-itm_orc_club_d|Орочья Дубина
-itm_orc_sledgehammer|Орочья Кувалда
-itm_orc_simple_spear|Орочье Копьё
-itm_orc_skull_spear|Орочье Копьё с Черепом
-itm_orc_bill|Орочий Топор
-itm_orc_slasher|Орочья Сабля
-itm_orc_falchion|Орочий Фальшион
-itm_orc_scimitar|Орочий Ятаган
-itm_orc_sabre|Орочья Сабля
-itm_orc_machete|Орочье Мачете
-itm_orc_axe|Орочий Топор
-itm_orc_two_handed_axe|Орочий Двуручный Топор
-itm_orc_throwing_axes|Орочьи Метательные Топоры
-itm_orc_bow|Орочий Лук
-itm_orc_shield_a|Орочий Щит
-itm_orc_shield_b|Орочий Щит
-itm_orc_shield_c|Орочий Щит
-itm_mordor_orc_shield_a|Мордорский Орочий Щит
-itm_mordor_orc_shield_b|Мордорский Орочий Щит
-itm_mordor_orc_shield_c|Мордорский Орочий Щит
-itm_mordor_orc_shield_d|Мордорский Орочий Щит
-itm_mordor_orc_shield_e|Мордорский Орочий Щит
-itm_mordor_uruk_shield_a|Мордорский Урукский Щит
-itm_mordor_uruk_shield_b|Мордорский Урукский Щит
-itm_mordor_uruk_shield_c|Мордорский Урукский Щит
-itm_mordor_man_shield_a|Мордорский Людской Щит
-itm_mordor_man_shield_b|Мордорский Людской Щит
-itm_angmar_shield|Ангмарский Щит
-itm_orc_helm_a|Орочий Длинноносый Шлем
-itm_orc_helm_b|Орочий Решётчатый Шлем
-itm_orc_helm_c|Орочий Ведрообразный Шлем
-itm_orc_helm_d|Орочий Шлем с Решёткой
-itm_orc_helm_e|Орочий Шлем с Клювом
-itm_orc_helm_f|Орочий Дефектный Шлем
-itm_orc_helm_g|Орочий Вороний Шлем
-itm_orc_helm_h|Орочий Шлем с Челюстями
-itm_orc_helm_i|Орочий Бацинет
-itm_orc_helm_j|Орочий Шлем Ящерицы
-itm_orc_helm_k|Орочий Шлем Стервятника
-itm_m_orc_light_a|Мордорская Лёгкая Орочья Броня
-itm_m_orc_light_b|Мордорская Лёгкая Орочья Броня
-itm_m_orc_light_c|Мордорская Лёгкая Орочья Броня
-itm_m_orc_light_d|Мордорская Лёгкая Орочья Броня
-itm_m_orc_light_e|Мордорская Лёгкая Орочья Броня
-itm_m_orc_heavy_a|Мордорская Тяжёлая Орочья Броня
-itm_m_orc_heavy_b|Мордорская Тяжёлая Орочья Броня
-itm_m_orc_heavy_c|Мордорская Тяжёлая Орочья Броня
-itm_m_orc_heavy_d|Мордорская Тяжёлая Орочья Броня
-itm_m_orc_heavy_e|Мордорская Тяжёлая Орочья Броня
-itm_m_uruk_light_a|Урукский Доспех
-itm_m_uruk_light_b|Урукский Толстый Доспех
-itm_m_uruk_heavy_c|Урукская Кожаная Броня
-itm_m_uruk_heavy_d|Урукская Сегментированная Броня
-itm_m_uruk_heavy_e|Урукская Кольчуга
-itm_m_uruk_heavy_f|Урукская Кольчуга
-itm_m_uruk_heavy_g|Урукская Кольчуга
-itm_m_uruk_heavy_h|Урукский Чешуйчатый Доспех
-itm_m_uruk_heavy_i|Урукский Толстый Чешуйчатый Доспех
-itm_m_uruk_heavy_j|Урукская Тяжёлая Броня
-itm_m_uruk_heavy_k|Урукская Броня Стражника
-itm_m_cap_armor|Мордорская Командирская Броня
-itm_black_num_armor|Броня Чёрных Нуменорцев
+itm_gondor_citadel_knight_helm_pl|Шлем Рыцаря Цитадели
+itm_gondor_squire_helm|Гондорский шлем оруженосца
+itm_gondor_squire_helm_pl|Гондорский шлем оруженосца
+itm_gondor_knight_helm|Гондорский рыцарский шлем
+itm_gondor_knight_helm_pl|Гондорский рыцарский шлем
+itm_gondor_dolamroth_helm|Дол-амротский шлем
+itm_gondor_dolamroth_helm_pl|Дол-амротский шлем
+itm_swan_knight_helm|Лебединый рыцарский шлем
+itm_swan_knight_helm_pl|Лебединый рыцарский шлем
+itm_gondor_lamedon_helm|Ламедонский шлем
+itm_gondor_lamedon_helm_pl|Ламедонский шлем
+itm_gondor_lamedon_leader_helm|Ламедонский превосходный шлем
+itm_gondor_lamedon_leader_helm_pl|Ламедонский превосходный шлем
+itm_blackroot_archer|Мортондская броня лучника
+itm_blackroot_archer_pl|Мортондская броня лучника
+itm_blackroot_bowman|Мортондская броня лучника
+itm_blackroot_bowman_pl|Мортондская броня лучника
+itm_blackroot_footman|Мортондская броня пехотинца
+itm_blackroot_footman_pl|Мортондская броня пехотинца
+itm_blackroot_warrior|Мортондская броня воина
+itm_blackroot_warrior_pl|Мортондская броня воина
+itm_blackroot_leader|Мортондская броня военачальника
+itm_blackroot_leader_pl|Мортондская броня военачальника
+itm_blackroot_hood|Мортондский капюшон
+itm_blackroot_hood_pl|Мортондский капюшон
+itm_dol_hauberk|Дол-амротский хауберк
+itm_dol_hauberk_pl|Дол-амротский хауберк
+itm_dol_heavy_mail|Дол-амротская тяжёлая кольчуга
+itm_dol_heavy_mail_pl|Дол-амротская тяжёлая кольчуга
+itm_dol_padded_coat|Дол-амротская подбитая одежда
+itm_dol_padded_coat_pl|Дол-амротская подбитая одежда
+itm_dol_shirt|Дол-амротская одежда
+itm_dol_shirt_pl|Дол-амротская одежда
+itm_dol_very_heavy_mail|Дол-амротская тяжёлая кольчуга
+itm_dol_very_heavy_mail_pl|Дол-амротская тяжёлая кольчуга
+itm_dol_greaves|Дол-амротские поножи
+itm_dol_greaves_pl|Дол-амротские поножи
+itm_dol_shoes|Дол-амротские лёгкие сапоги
+itm_dol_shoes_pl|Дол-амротские лёгкие сапоги
+itm_lamedon_clansman|Ламедонская клановая броня
+itm_lamedon_clansman_pl|Ламедонская клановая броня
+itm_lamedon_footman|Ламедонская броня пехотинца
+itm_lamedon_footman_pl|Ламедонская броня пехотинца
+itm_lamedon_knight|Ламедонская рыцарская броня
+itm_lamedon_knight_pl|Ламедонская рыцарская броня
+itm_lamedon_leader_surcoat_cloak|Ламедонская броня военачальника
+itm_lamedon_leader_surcoat_cloak_pl|Ламедонская броня военачальника
+itm_lamedon_warrior|Ламедонская броня воина
+itm_lamedon_warrior_pl|Ламедонская броня воина
+itm_lamedon_veteran|Ламедонская броня ветерана
+itm_lamedon_veteran_pl|Ламедонская броня ветерана
+itm_lamedon_vet_warrior|Ламедонская превосходная броня ветерана
+itm_lamedon_vet_warrior_pl|Ламедонская превосходная броня ветерана
+itm_lamedon_hood|Ламедонский капюшон
+itm_lamedon_hood_pl|Ламедонский капюшон
+itm_pinnath_archer|Броня лучника Пиннат-Гелина
+itm_pinnath_archer_pl|Броня лучника Пиннат-Гелина
+itm_pinnath_footman|Броня пехотинца Пиннат-Гелина
+itm_pinnath_footman_pl|Броня пехотинца Пиннат-Гелина
+itm_pinnath_leader|Броня военачальника Пиннат-Гелина
+itm_pinnath_leader_pl|Броня военачальника Пиннат-Гелина
+itm_pinnath_vet_footman|Броня пехотинца-ветерана Пиннат-Гелина
+itm_pinnath_vet_footman_pl|Броня пехотинца-ветерана Пиннат-Гелина
+itm_pinnath_warrior|Броня воина Пиннат-Гелина
+itm_pinnath_warrior_pl|Броня воина Пиннат-Гелина
+itm_pel_footman|Пеларгирская броня пехотинца
+itm_pel_footman_pl|Пеларгирская броня пехотинца
+itm_pel_jerkin|Пеларгирская куртка
+itm_pel_jerkin_pl|Пеларгирская куртка
+itm_pel_leader|Пеларгирская броня военачальника
+itm_pel_leader_pl|Пеларгирская броня военачальника
+itm_pel_marine|Пеларгирская броня моряка
+itm_pel_marine_pl|Пеларгирская броня моряка
+itm_pelargir_marine_leader|Пеларгирская броня капитана
+itm_pelargir_marine_leader_pl|Пеларгирская броня капитана
+itm_pelargir_regular|Пеларгирская броня воина
+itm_pelargir_regular_pl|Пеларгирская броня воина
+itm_pelargir_hood|Пеларгирский капюшон
+itm_pelargir_hood_pl|Пеларгирский капюшон
+itm_pelargir_helmet_light|Пеларгирский шлем
+itm_pelargir_helmet_light_pl|Пеларгирский шлем
+itm_pelargir_helmet_heavy|Пеларгирский тяжёлый шлем
+itm_pelargir_helmet_heavy_pl|Пеларгирский тяжёлый шлем
+itm_pelargir_greaves|Пеларгирские поножи
+itm_pelargir_greaves_pl|Пеларгирские поножи
+itm_lossarnach_shirt|Лоссарнахская одежда
+itm_lossarnach_shirt_pl|Лоссарнахская одежда
+itm_lossarnach_axeman|Лоссарнахская броня секироносца
+itm_lossarnach_axeman_pl|Лоссарнахская броня секироносца
+itm_lossarnach_leader|Лоссарнахская броня военачальника
+itm_lossarnach_leader_pl|Лоссарнахская броня военачальника
+itm_lossarnach_vet_axeman|Лоссарнахская броня секироносца-ветерана
+itm_lossarnach_vet_axeman_pl|Лоссарнахская броня секироносца-ветерана
+itm_lossarnach_vet_warrior|Лоссарнахская броня воина-ветерана
+itm_lossarnach_vet_warrior_pl|Лоссарнахская броня воина-ветерана
+itm_lossarnach_warrior|Лоссарнахская броня воина
+itm_lossarnach_warrior_pl|Лоссарнахская броня воина
+itm_lossarnach_cloth_cap|Лоссарнахский тканевой шлем
+itm_lossarnach_cloth_cap_pl|Лоссарнахский тканевой шлем
+itm_lossarnach_leather_cap|Лоссарнахский кожаный шлем
+itm_lossarnach_leather_cap_pl|Лоссарнахский кожаный шлем
+itm_lossarnach_scale_cap|Лоссарнахский чешуйчатый шлем
+itm_lossarnach_scale_cap_pl|Лоссарнахский чешуйчатый шлем
+itm_lossarnach_greaves|Лоссарнахские поножи
+itm_lossarnach_greaves_pl|Лоссарнахские поножи
+itm_gondor_shield_a|Гондорский прямоугольный щит
+itm_gondor_shield_a_pl|Гондорский прямоугольный щит
+itm_gondor_shield_b|Гондорский каплевидный щит
+itm_gondor_shield_b_pl|Гондорский каплевидный щит
+itm_gondor_shield_c|Гондорский ростовой щит
+itm_gondor_shield_c_pl|Гондорский ростовой щит
+itm_gondor_shield_d|Гондорский каплевидный щит
+itm_gondor_shield_d_pl|Гондорский каплевидный щит
+itm_gondor_shield_e|Гондорский королевский щит
+itm_gondor_shield_e_pl|Гондорский королевский щит
+itm_gon_tab_shield_a|Геральдический гондорский круглый щит
+itm_gon_tab_shield_a_pl|Геральдический гондорский круглый щит
+itm_gon_tab_shield_b|Геральдический гондорский прямоугольный щит
+itm_gon_tab_shield_b_pl|Геральдический гондорский прямоугольный щит
+itm_gon_tab_shield_c|Геральдический гондорский каплевидный щит
+itm_gon_tab_shield_c_pl|Геральдический гондорский каплевидный щит
+itm_gon_tab_shield_d|Геральдический гондорский ростовой щит
+itm_gon_tab_shield_d_pl|Геральдический гондорский ростовой щит
+itm_amroth_sword_a|Дол-амротский меч
+itm_amroth_sword_a_pl|Дол-амротский меч
+itm_amroth_sword_b|Дол-амротский рыцарский меч
+itm_amroth_sword_b_pl|Дол-амротский рыцарский меч
+itm_gondor_sword|Гондорский меч пехотинца
+itm_gondor_sword_pl|Гондорский меч пехотинца
+itm_amroth_bastard|Дол-амротский тяжёлый меч
+itm_amroth_bastard_pl|Дол-амротский тяжёлый меч
+itm_gondor_short_sword|Линхирский экет
+itm_gondor_short_sword_pl|Линхирский экет
+itm_pelargir_eket|Пеларгирский экет
+itm_pelargir_eket_pl|Пеларгирский экет
+itm_pelargir_sword|Пеларгирский меч
+itm_pelargir_sword_pl|Пеларгирский меч
+itm_gondor_ranger_sword|Гондорский меч рейнджера
+itm_gondor_ranger_sword_pl|Гондорский меч рейнджера
+itm_gondor_bastard|Гондорский меч-полутораручник
+itm_gondor_bastard_pl|Гондорский меч-полутораручник
+itm_gondor_citadel_sword|Гондорский меч Стража Цитадели
+itm_gondor_citadel_sword_pl|Гондорский меч Стража Цитадели
+itm_gondor_cav_sword|Гондорский кавалерийский меч
+itm_gondor_cav_sword_pl|Гондорский кавалерийский меч
+itm_gondor_spear|Гондорское копьё
+itm_gondor_spear_pl|Гондорское копьё
+itm_gondor_tower_spear|Гондорское копьё Стража Цитадели
+itm_gondor_tower_spear_pl|Гондорское копьё Стража Цитадели
+itm_gondor_lance|Гондорское кавалерийское копьё
+itm_gondor_lance_pl|Гондорское кавалерийское копьё
+itm_loss_axe|Лоссарнахская секира
+itm_loss_axe_pl|Лоссарнахская секира
+itm_loss_war_axe|Лоссарнахский боевой топор
+itm_loss_war_axe_pl|Лоссарнахский боевой топор
+itm_lorien_sword_a|Лориэнский длинный меч
+itm_lorien_sword_a_pl|Лориэнский длинный меч
+itm_lorien_sword_b|Лориэнский короткий меч
+itm_lorien_sword_b_pl|Лориэнский короткий меч
+itm_lorien_sword_c|Лориэнский боевой меч
+itm_lorien_sword_c_pl|Лориэнский боевой меч
+itm_lorien_archer|Лориэнская броня лучника
+itm_lorien_archer_pl|Лориэнская броня лучника
+itm_lorien_armor_a|Лориэнская броня пехотинца
+itm_lorien_armor_a_pl|Лориэнская броня пехотинца
+itm_lorien_armor_b|Лориэнская тяжёлая броня пехотинца
+itm_lorien_armor_b_pl|Лориэнская тяжёлая броня пехотинца
+itm_lorien_armor_c|Лориэнская королевская броня лучника
+itm_lorien_armor_c_pl|Лориэнская королевская броня лучника
+itm_lorien_armor_d|Лориэнская королевская броня мечника
+itm_lorien_armor_d_pl|Лориэнская королевская броня мечника
+itm_lorien_armor_e|Лориэнский плащ стража границ
+itm_lorien_armor_e_pl|Лориэнский плащ стража границ
+itm_lorien_armor_f|Лориэнская элитная броня
+itm_lorien_armor_f_pl|Лориэнская элитная броня
+itm_lorien_boots|Лориэнские сапоги
+itm_lorien_boots_pl|Лориэнские сапоги
+itm_lorien_shield_b|Лориэнский ростовой щит
+itm_lorien_shield_b_pl|Лориэнский ростовой щит
+itm_lorien_shield_c|Лориэнский каплевидный щит
+itm_lorien_shield_c_pl|Лориэнский каплевидный щит
+itm_lorien_round_shield|Лориэнский круглый щит
+itm_lorien_round_shield_pl|Лориэнский круглый щит
+itm_lorien_helm_a|Лориэнский шлем лучника
+itm_lorien_helm_a_pl|Лориэнский шлем лучника
+itm_lorien_helm_b|Лориэнский шлем лучника
+itm_lorien_helm_b_pl|Лориэнский шлем лучника
+itm_lorien_helm_c|Лориэнский шлем пехотинца
+itm_lorien_helm_c_pl|Лориэнский шлем пехотинца
+itm_orc_chain_greaves|Орочьи поножи
+itm_orc_chain_greaves_pl|Орочьи поножи
+itm_orc_coif|Орочий койф
+itm_orc_coif_pl|Орочий койф
+itm_orc_greaves|Орочьи кольчужные сапоги
+itm_orc_greaves_pl|Орочьи кольчужные сапоги
+itm_orc_ragwrap|Орочьи рваные обмотки
+itm_orc_ragwrap_pl|Орочьи рваные обмотки
+itm_orc_furboots|Орочьи меховые сапоги
+itm_orc_furboots_pl|Орочьи меховые сапоги
+itm_orc_furboot_tall|Орочьи меховые сапоги
+itm_orc_furboot_tall_pl|Орочьи меховые сапоги
+itm_orc_tribal_a|Необработанная кожа
+itm_orc_tribal_a_pl|Необработанная кожа
+itm_orc_tribal_b|Необработанная кожа
+itm_orc_tribal_b_pl|Необработанная кожа
+itm_orc_tribal_c|Необработанная кожа
+itm_orc_tribal_c_pl|Необработанная кожа
+itm_evil_gauntlets_a|Латные перчатки
+itm_evil_gauntlets_a_pl|Латные перчатки
+itm_evil_gauntlets_b|Латные перчатки
+itm_evil_gauntlets_b_pl|Латные перчатки
+itm_isen_orc_armor_a|Изенгардская орочья броня
+itm_isen_orc_armor_a_pl|Изенгардская орочья броня
+itm_isen_orc_armor_b|Изенгардская орочья броня
+itm_isen_orc_armor_b_pl|Изенгардская орочья броня
+itm_isen_orc_armor_c|Изенгардская орочья броня
+itm_isen_orc_armor_c_pl|Изенгардская орочья броня
+itm_isen_orc_armor_d|Изенгардская орочья броня
+itm_isen_orc_armor_d_pl|Изенгардская орочья броня
+itm_isen_orc_armor_e|Изенгардская орочья броня
+itm_isen_orc_armor_e_pl|Изенгардская орочья броня
+itm_isen_orc_armor_f|Изенгардская орочья броня
+itm_isen_orc_armor_f_pl|Изенгардская орочья броня
+itm_isen_orc_armor_g|Изенгардская орочья броня
+itm_isen_orc_armor_g_pl|Изенгардская орочья броня
+itm_isen_uruk_light_a|Урук-хайск лёгкая броня
+itm_isen_uruk_light_a_pl|Урук-хайскЛёгкая броня
+itm_isen_uruk_light_b|Урук-хайская кожаная броня
+itm_isen_uruk_light_b_pl|Урук-хайская кожаная броня
+itm_isen_uruk_light_c|Урук-хайская кожаная броня
+itm_isen_uruk_light_c_pl|Урук-хайская кожаная броня
+itm_isen_uruk_light_d|Урук-хайская кожаная броня с кольчугой
+itm_isen_uruk_light_d_pl|Урук-хайская кожаная броня с кольчугой
+itm_isen_uruk_light_e|Урук-хайская кольчужная броня
+itm_isen_uruk_light_e_pl|Урук-хайская кольчужная броня
+itm_isen_uruk_heavy_a|Урук-хайская кожаная броня с кольчугой
+itm_isen_uruk_heavy_a_pl|Урук-хайская кожаная броня с кольчугой
+itm_isen_uruk_heavy_b|Урук-хайская тяжёлая броня
+itm_isen_uruk_heavy_b_pl|Урук-хайская тяжёлая броня
+itm_isen_uruk_heavy_c|Урук-хайская тяжёлая броня
+itm_isen_uruk_heavy_c_pl|Урук-хайская тяжёлая броня
+itm_isen_uruk_heavy_d|Урук-хайская кожаная броня следопыта
+itm_isen_uruk_heavy_d_pl|Урук-хайская кожаная броня следопыта
+itm_isen_uruk_heavy_e|Урук-хайская кожаная броня следопыта
+itm_isen_uruk_heavy_e_pl|Урук-хайская кожаная броня следопыта
+itm_uruk_tracker_boots|Урукские сапоги следопыта
+itm_uruk_tracker_boots_pl|Урукские сапоги следопыта
+itm_uruk_greaves|Урукские поножи
+itm_uruk_greaves_pl|Урукские поножи
+itm_uruk_chain_greaves|Урукские кольчужные поножи
+itm_uruk_chain_greaves_pl|Урукские кольчужные поножи
+itm_uruk_ragwrap|Урукские рваные обмотки
+itm_uruk_ragwrap_pl|Урукские рваные обмотки
+itm_isen_orc_helm_a|Изенгардский орочий шлем
+itm_isen_orc_helm_a_pl|Изенгардский орочий шлем
+itm_isen_orc_helm_b|Изенгардский орочий шлем
+itm_isen_orc_helm_b_pl|Изенгардский орочий шлем
+itm_isen_orc_helm_c|Изенгардский орочий шлем
+itm_isen_orc_helm_c_pl|Изенгардский орочий шлем
+itm_isen_uruk_helm_a|Урук-хайский шлем
+itm_isen_uruk_helm_a_pl|Урук-хайский шлем
+itm_isen_uruk_helm_b|Урук-хайский шлем
+itm_isen_uruk_helm_b_pl|Урук-хайский шлем
+itm_isen_uruk_helm_c|Урук-хайский шлем
+itm_isen_uruk_helm_c_pl|Урук-хайский шлем
+itm_isen_uruk_helm_d|Урук-хайский шлем командира
+itm_isen_uruk_helm_d_pl|Урук-хайский шлем командира
+itm_isen_uruk_helm_e|Урук-хайский шлем следопыта
+itm_isen_uruk_helm_e_pl|Урук-хайский шлем следопыта
+itm_isen_uruk_helm_f|Урук-хайский шлем следопыта
+itm_isen_uruk_helm_f_pl|Урук-хайский шлем следопыта
+itm_uruk_pike_a|Урукская пика
+itm_uruk_pike_a_pl|Урукская пика
+itm_uruk_pike_b|Урукская пика
+itm_uruk_pike_b_pl|Уруксая кпика
+itm_uruk_falchion_a|Урукский фальшион
+itm_uruk_falchion_a_pl|Урукский фальшион
+itm_uruk_falchion_b|Урукский фальшион
+itm_uruk_falchion_b_pl|Урукский фальшион
+itm_uruk_spear|Урукское копьё
+itm_uruk_spear_pl|Урукское копьё
+itm_uruk_skull_spear|Урукское копьё с черепом
+itm_uruk_skull_spear_pl|Урукское копьё с черепом
+itm_uruk_voulge|Урукский вуж
+itm_uruk_voulge_pl|Урукский вуж
+itm_uruk_heavy_axe|Урукский тяжёлый топор
+itm_uruk_heavy_axe_pl|Урукский тяжёлый топор
+itm_isengard_sword|Изенгардский меч
+itm_isengard_sword_pl|Изенгардский меч
+itm_isengard_axe|Изенгардский топор
+itm_isengard_axe_pl|Изенгардский топор
+itm_isengard_hammer|Изенгардский молот
+itm_isengard_hammer_pl|Изенгардский молот
+itm_isengard_halberd|Изенгардская алебарда
+itm_isengard_halberd_pl|Изенгардская алебарда
+itm_isengard_mallet|Изенгардская палица
+itm_isengard_mallet_pl|Изенгардская палица
+itm_isengard_heavy_axe|Изенгардский тяжёлый топор
+itm_isengard_heavy_axe_pl|Изенгардский тяжёлый топор
+itm_isengard_heavy_sword|Изенгардский тяжёлый меч
+itm_isengard_heavy_sword_pl|Изенгардский тяжёлый меч
+itm_isengard_spear|Изенгардское копьё
+itm_isengard_spear_pl|Изенгардское копьё
+itm_isengard_pike|Изенгардская пика
+itm_isengard_pike_pl|Изенгардская пика
+itm_isen_orc_shield_a|Изенгардский орочий щит
+itm_isen_orc_shield_a_pl|Изенгардский орочий щит
+itm_isen_orc_shield_b|Изенгардский орочий щит
+itm_isen_orc_shield_b_pl|Изенгардский орочий щит
+itm_isen_uruk_shield_b|Изенгардский урукский щит
+itm_isen_uruk_shield_b_pl|Изенгардский урукский щит
+itm_wood_club|Деревянная дубина
+itm_wood_club_pl|Деревянная дубина
+itm_twohand_wood_club|Большая деревянная дубина
+itm_twohand_wood_club_pl|Большая деревянная дубина
+itm_bone_cudgel|Костяная дубина
+itm_bone_cudgel_pl|Костяная дубина
+itm_skull_club|Дубина с черепом
+itm_skull_club_pl|Дубина с черепом
+itm_orc_club_a|Орочья дубина
+itm_orc_club_a_pl|Орочья дубина
+itm_orc_club_b|Орочья дубина
+itm_orc_club_b_pl|Орочья дубина
+itm_orc_club_c|Орочья дубина
+itm_orc_club_c_pl|Орочья дубина
+itm_orc_club_d|Орочья дубина
+itm_orc_club_d_pl|Орочья дубина
+itm_orc_sledgehammer|Орочья кувалда
+itm_orc_sledgehammer_pl|Орочья кувалда
+itm_orc_simple_spear|Орочье копьё
+itm_orc_simple_spear_pl|Орочье копьё
+itm_orc_skull_spear|Орочье копьё с черепом
+itm_orc_skull_spear_pl|Орочье копьё с черепом
+itm_orc_bill|Орочья глефа
+itm_orc_bill_pl|Орочья глефа
+itm_orc_slasher|Орочий тесак
+itm_orc_slasher_pl|Орочий тесак
+itm_orc_falchion|Орочий фальшион
+itm_orc_falchion_pl|Орочий фальшион
+itm_orc_scimitar|Орочий ятаган
+itm_orc_scimitar_pl|Орочий ятаган
+itm_orc_sabre|Орочья сабля
+itm_orc_sabre_pl|Орочья сабля
+itm_orc_machete|Орочье мачете
+itm_orc_machete_pl|Орочье мачете
+itm_orc_axe|Орочий топор
+itm_orc_axe_pl|Орочий топор
+itm_orc_two_handed_axe|Орочий двуручный топор
+itm_orc_two_handed_axe_pl|Орочий двуручный топор
+itm_orc_throwing_axes|Орочьи метательные топоры
+itm_orc_throwing_axes_pl|Орочьи метательные топоры
+itm_orc_bow|Орочий лук
+itm_orc_bow_pl|Орочий лук
+itm_orc_shield_a|Орочий щит
+itm_orc_shield_a_pl|Орочий щит
+itm_orc_shield_b|Орочий щит
+itm_orc_shield_b_pl|Орочий щит
+itm_orc_shield_c|Орочий щит
+itm_orc_shield_c_pl|Орочий щит
+itm_mordor_orc_shield_a|Мордорский орочий щит
+itm_mordor_orc_shield_a_pl|Мордорский орочий щит
+itm_mordor_orc_shield_b|Мордорский орочий щит
+itm_mordor_orc_shield_b_pl|Мордорский орочий щит
+itm_mordor_orc_shield_c|Мордорский орочий щит
+itm_mordor_orc_shield_c_pl|Мордорский орочий щит
+itm_mordor_orc_shield_d|Мордорский орочий щит
+itm_mordor_orc_shield_d_pl|Мордорский орочий щит
+itm_mordor_orc_shield_e|Мордорский орочий щит
+itm_mordor_orc_shield_e_pl|Мордорский орочий щит
+itm_mordor_uruk_shield_a|Мордорский урукский щит
+itm_mordor_uruk_shield_a_pl|Мордорский урукский щит
+itm_mordor_uruk_shield_b|Мордорский урукский щит
+itm_mordor_uruk_shield_b_pl|Мордорский урукский щит
+itm_mordor_uruk_shield_c|Мордорский урукский щит
+itm_mordor_uruk_shield_c_pl|Мордорский урукский щит
+itm_mordor_man_shield_a|Мордорский человеческий щит
+itm_mordor_man_shield_a_pl|Мордорский человеческий щит
+itm_mordor_man_shield_b|Мордорский человеческий щит
+itm_mordor_man_shield_b_pl|Мордорский человеческий щит
+itm_angmar_shield|Ангмарский щит
+itm_angmar_shield_pl|Ангмарский щит
+itm_orc_helm_a|Орочий шлем с носовой пластиной
+itm_orc_helm_a_pl|Орочий шлем с носовой пластиной
+itm_orc_helm_b|Орочий шлем с решёткой
+itm_orc_helm_b_pl|Орочий шлем с решёткой
+itm_orc_helm_c|Орочий горшковый шлем
+itm_orc_helm_c_pl|Орочий горшковый шлем
+itm_orc_helm_d|Орочий устрашающий шлем
+itm_orc_helm_d_pl|Орочий устрашающий шлем
+itm_orc_helm_e|Орочий шлем с клювом
+itm_orc_helm_e_pl|Орочий шлем с клювом
+itm_orc_helm_f|Орочий шлем жука
+itm_orc_helm_f_pl|Орочий шлем жука
+itm_orc_helm_g|Орочий вороний шлем
+itm_orc_helm_g_pl|Орочий вороний шлем
+itm_orc_helm_h|Орочий клыкастый шлем
+itm_orc_helm_h_pl|Орочий клыкастый шлем
+itm_orc_helm_i|Орочий шлем-рыло
+itm_orc_helm_i_pl|Орочий шлем-рыло
+itm_orc_helm_j|Орочий шлем ящерицы
+itm_orc_helm_j_pl|Орочий шлем ящерицы
+itm_orc_helm_k|Орочий шлем стервятника
+itm_orc_helm_k_pl|Орочий шлем стервятника
+itm_m_orc_light_a|Мордорская орочья лёгкая броня
+itm_m_orc_light_a_pl|Мордорская орочья лёгкая броня
+itm_m_orc_light_b|Мордорская орочья лёгкая броня
+itm_m_orc_light_b_pl|Мордорская орочья лёгкая броня
+itm_m_orc_light_c|Мордорская орочья лёгкая броня
+itm_m_orc_light_c_pl|Мордорская орочья лёгкая броня
+itm_m_orc_light_d|Мордорская орочья лёгкая броня
+itm_m_orc_light_d_pl|Мордорская орочья лёгкая броня
+itm_m_orc_light_e|Мордорская орочья лёгкая броня
+itm_m_orc_light_e_pl|Мордорская орочья лёгкая броня
+itm_m_orc_heavy_a|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_a_pl|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_b|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_b_pl|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_c|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_c_pl|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_d|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_d_pl|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_e|Мордорская орочья тяжёлая броня
+itm_m_orc_heavy_e_pl|Мордорская орочья тяжёлая броня
+itm_m_uruk_light_a|Урукская броня
+itm_m_uruk_light_a_pl|Урукская броня
+itm_m_uruk_light_b|Урукская толстая броня
+itm_m_uruk_light_b_pl|Урукская толстая броня
+itm_m_uruk_heavy_c|Урукская кожаная броня
+itm_m_uruk_heavy_c_pl|Урукская кожаная броня
+itm_m_uruk_heavy_d|Урукская сегментная броня
+itm_m_uruk_heavy_d_pl|Урукская сегментная броня
+itm_m_uruk_heavy_e|Урукская кольчуга
+itm_m_uruk_heavy_e_pl|Урукская кольчуга
+itm_m_uruk_heavy_f|Урукская кольчуга
+itm_m_uruk_heavy_f_pl|Урукская кольчуга
+itm_m_uruk_heavy_g|Урукская кольчуга
+itm_m_uruk_heavy_g_pl|Урукская кольчуга
+itm_m_uruk_heavy_h|Урукская чешуйчатая броня
+itm_m_uruk_heavy_h_pl|Урукская чешуйчатая броня
+itm_m_uruk_heavy_i|Урукская толстая чешуйчатая броня
+itm_m_uruk_heavy_i_pl|Урукская толстая чешуйчатая броня
+itm_m_uruk_heavy_j|Урукская тяжёлая броня
+itm_m_uruk_heavy_j_pl|Урукская тяжёлая броня
+itm_m_uruk_heavy_k|Урукская броня стражи
+itm_m_uruk_heavy_k_pl|Урукская броня стражи
+itm_m_cap_armor|Мордорская броня командира
+itm_m_cap_armor_pl|Мордорская броня командира
+itm_black_num_armor|Броня чёрного нуменорца
+itm_black_num_armor_pl|Броня чёрного нуменорца
 itm_m_armor_a|Мордорская броня
+itm_m_armor_a_pl|Мордорская броня
 itm_m_armor_b|Мордорская броня
-itm_evil_light_armor|Зловещая Одежда
-itm_uruk_helm_a|Урукский Шлем
-itm_uruk_helm_b|Урукский Шлем
-itm_uruk_helm_c|Урукский Шлем с Клювом
-itm_uruk_helm_d|Урукский Шлем с Решёткой
-itm_uruk_helm_e|Урукский Шлем с Маской
-itm_uruk_helm_f|Урукский Шлем
-itm_mordor_cap_helm|Мордорский Командирский Шлем
-itm_mordor_helm|Мордорский Шлем
-itm_black_num_helm|Шлем Чёрных Нуменорцев
-itm_mordor_sword|Мордорский Полуторный Меч
-itm_mordor_longsword|Мордорский Меч
-itm_moria_armor_a|Морийский Нагрудник
-itm_moria_armor_b|Морийский Нагрудник с Наплечниками
-itm_moria_armor_c|Морийская Кольчуга Орков
-itm_moria_armor_d|Морийский Укреплённый Кожаный Доспех
-itm_moria_armor_e|Морийская Орочья Тяжёлая Кольчуга
-itm_moria_orc_shield_a|Морийский Орочий Щит
-itm_moria_orc_shield_b|Морийский Орочий Щит
-itm_moria_orc_shield_c|Морийский Орочий Щит
-itm_gundabad_armor_a|Гундабадское Орочье Тряпьё
-itm_gundabad_armor_b|Гундабадская Орочья Меховая Одежда
-itm_gundabad_armor_c|Гундабадская Орочья Броня
-itm_gundabad_armor_d|Гундабадская Орочья Броня
-itm_gundabad_armor_e|Гундабадская Тяжёлая Орочья Броня
-itm_gundabad_helm_a|Гундабадский Шапка
-itm_gundabad_helm_b|Гундабадский Шлем
-itm_gundabad_helm_c|Гундабадский Шлем
-itm_gundabad_helm_d|Гундабадский Шлем
-itm_gundabad_helm_e|Шлем Наездника на Варге
-itm_dunland_wolfboots|Дунландские Волчьи Сапоги
-itm_dunland_armor_a|Дунландская Меховая Броня
-itm_dunland_armor_b|Дунландская Меховая Броня
-itm_dunland_armor_c|Дунландская Меховая Броня
-itm_dunland_armor_d|Дунландская Меховая Броня
-itm_dunland_armor_e|Дунландская Меховая Броня
-itm_dunland_armor_g|Дунландская Меховая Броня
-itm_dunland_armor_h|Дунландская Длинная Меховая Броня
-itm_dunland_armor_i|Дунландская Кольчуга
-itm_dunland_armor_j|Кольчуга Дунланда
-itm_dunland_armor_k|Броня Дунландского Вождя
-itm_dun_helm_a|Дунландский Волчий Шлем
-itm_dun_helm_b|Дунландский Рогатый Шлем
-itm_dun_helm_c|Дунландский Высокий Шлем
-itm_dun_helm_d|Дунландский Высокий Шлем
-itm_dun_helm_e|Дунландский Высокий Боевой Шлем
-itm_dun_shield_a|Дунландский Щит
-itm_dun_shield_b|Дунландский Щит
-itm_dun_berserker|Дунландский Меч Вождя
-itm_dunnish_antler_axe|Дунландский Рогатый Топор
-itm_dunnish_war_axe|Дунландский Боевой Топор
-itm_dunnish_axe|Дунландский Топор
-itm_dunland_spear|Дунландское Копьё
-itm_dunnish_pike|Дунландская Пика
-itm_rohan_armor_a|Роханская Рубаха
-itm_rohan_armor_b|Роханская Рубаха с Плащом
-itm_rohan_armor_c|Роханская Длинная Рубаха
-itm_rohan_armor_d|Роханская Кольчуга
-itm_rohan_armor_e|Роханская Кольчуга
-itm_rohan_armor_f|Роханская Кольчуга
-itm_rohan_armor_g|Роханская Кольчужная Рубаха
-itm_rohan_armor_h|Роханская Длинная Кольчуга
-itm_rohan_armor_i|Роханская Длинная Кольчуга
-itm_rohan_armor_j|Роханская Кольчуга
-itm_rohan_armor_k|Роханская Кольчуга
-itm_rohan_armor_l|Роханская Кольчуга
-itm_rohan_armor_m|Роханская Чешуйчатая Броня
-itm_rohan_armor_n|Роханская Чешуйчатая Броня
-itm_rohan_armor_o|Роханская Чешуйчатая Броня
-itm_rohan_armor_p|Роханская Броня
-itm_rohan_armor_q|Роханская Броня
-itm_rohan_armor_r|Роханская Броня
-itm_rohan_armor_s|Роханская Геральдическая Кольчуга
-itm_rohan_light_helmet_a|Роханский Лёгкий Шлем
-itm_rohan_light_helmet_b|Роханский Лёгкий Шлем
-itm_rohan_inf_helmet_a|Роханский Шлем Пехотинца
-itm_rohan_inf_helmet_b|Роханский Шлем Пехотинца
-itm_rohan_archer_helmet_a|Роханский Шлем Лучника
-itm_rohan_archer_helmet_b|Роханский Шлем Лучника
-itm_rohan_archer_helmet_c|Роханский Шлем Лучника-Всадника
-itm_rohan_cav_helmet_a|Роханский Шлем Всадника
-itm_rohan_cav_helmet_b|Роханский Шлем Всадника
-itm_rohan_cav_helmet_c|Роханский Шлем Всадника
-itm_rohan_captain_helmet|Роханский Командирский Шлем
-itm_rohan_shield_a|Роханский Щит
-itm_rohan_shield_b|Роханский Щит
-itm_rohan_shield_c|Роханский Щит
-itm_rohan_shield_d|Роханский Щит
-itm_rohan_shield_e|Роханский Щит
-itm_rohan_shield_f|Роханский Щит
-itm_rohan_shield_g|Роханский Королевский Щит
-itm_rohan_light_greaves|Роханские Лёгкие Поножи
-itm_rohirrim_war_greaves|Роханские Боевые Поножи
-itm_rohan_shoes|Кожаные Ботинки
-itm_rohan_cav_sword|Роханский Меч Всадника
-itm_rohan_inf_sword|Роханский Меч
-itm_rohan_spear|Роханское Копьё
-itm_rohan_lance|Роханская Пика
-itm_rohan_sword_c|Роханский Меч
-itm_rohirrim_short_axe|Роханский Короткий Топор
-itm_rohirrim_long_hafted_axe|Роханский Топор с Длинной Рукоятью
-itm_rohan_2h_sword|Роханский Боевой Меч
-itm_mirkwood_light_scale|Лёгкий Чешуйчатый Доспех Лесных Эльфов
-itm_mirkwood_armor_a|Лёгкий Кожаный Доспех
-itm_mirkwood_armor_b|Лёгкая Стёганная и Чешуйчатая Броня
-itm_mirkwood_armor_c|Лёгкая Чешуя Поверх Кольчуги
-itm_mirkwood_armor_d|Лёгкое Стёганное Сюрко
-itm_mirkwood_armor_e|Лёгкая Кольчуга и Сюрко
-itm_mirkwood_armor_f|Королевская Броня Лесных Эльфов
-itm_mirkwood_great_spear|Великое Копьё Лихолесья
-itm_mirkwood_war_spear|Боевое Копьё Лихолесья
-itm_mirkwood_short_spear|Копьё Лихолесья
-itm_mirkwood_knife|Белый Нож Лихолесья
-itm_mirkwood_sword|Меч Лихолесья
-itm_mirkwood_spear_shield_a|Щит Лихолесского Копейщика
-itm_mirkwood_spear_shield_b|Боевой Щит Лихолесья
-itm_mirkwood_spear_shield_c|Щит Лихолесского Мечника
-itm_mirkwood_helm_a|Шлем Лихолесского Лучника
-itm_mirkwood_helm_b|Шлем Лихолесья
-itm_mirkwood_helm_c|Шлем Лихолесского Королевского Копейщика
-itm_mirkwood_helm_d|Шлем Лихолесского Королевского Лучника
-itm_mirkwood_boots|Лихолесские Сапоги
-itm_mirkwood_leather_greaves|Лихолесские Кожаные Поножи
-itm_harad_tunic|Харадская Туника
-itm_harad_padded|Обитая Броня Харондора
-itm_harad_hauberk|Кольчуга Харондора
-itm_harad_lamellar|Харасжалская Броня
-itm_harad_heavy|Броня Харадского Мечника
-itm_harad_skirmisher|Лёгкая Харадская Одежда
-itm_harad_archer|Броня Харадского Лучника
-itm_black_snake_armor|Маранкская Броня
-itm_harad_champion|Одежда Дальнего Харада
-itm_panther_guard|Шкура Пантеры
-itm_harad_scale|Харадская Чешуйчатая Броня
-itm_harad_tiger_scale|Броня Тигриной Стражи
-itm_harad_lion_scale|Броня Львиной Стражи
-itm_harad_dragon_helm|Килокский Шлем
-itm_harad_cav_helm_a|Харондорский Шлем Всадника
-itm_harad_cav_helm_b|Харондорский Шлем Всадника
-itm_black_snake_helm|Маранкский Шлем
-itm_harad_finhelm|Отличный Харадский Шлем
-itm_harad_heavy_inf_helm|Отличный Харадский Шлем
-itm_harad_wavy_helm|Отличный Харадский Шлем
-itm_harad_eaglehelm|Шлем Орлиной Стражи
-itm_lion_helm|Шлем Львиной Стражи
-itm_harad_pantherhelm|Шлем Стражи Пантеры
-itm_harad_khopesh|Харадский Копеш
-itm_black_snake_sword|Тяжёлый Харадский Фальшион
-itm_harad_heavy_sword|Тяжёлый Харадский Меч
-itm_horandor_a|Харадский Ятаган
-itm_skirmisher_sword|Харадский Меч Застрельщика
-itm_harad_sabre|Харадская Сабля
-itm_harad_mace|Булава Дальнего Харада
-itm_far_harad_2h_mace|Двуручная Булава Дальнего Харада
-itm_harad_dagger|Харадский Клинок
-itm_harad_short_spear|Харадское Короткое Копьё
-itm_harad_long_spear|Харадское Копьё
-itm_eagle_guard_spear|Харасжалское Древковое Оружие
-itm_harad_long_shield_a|Харадский Щит Леопарда
-itm_harad_long_shield_b|Харадский Бронзовый Щит
-itm_harad_long_shield_c|Харадский Солнечный Щит
-itm_harad_long_shield_d|Харадский Змеиный Щит
-itm_harad_long_shield_e|Харадский Змеиный Щит
-itm_harad_shield_a|Харондорский Щит
-itm_harad_shield_b|Харондорский Баклер
-itm_harad_shield_c|Харондорский Баклер
-itm_harad_tribal_a|Щит Дальнего Харада
-itm_harad_tribal_b|Щит Дальнего Харада
-itm_harad_yellow_shield|Харадский Щит
-itm_desert_boots|Пустынные Сапоги
-itm_harad_leather_greaves|Харадские Поножи
-itm_harad_scale_greaves|Харадские Сапоги
-itm_harad_lamellar_greaves|Харадские Сапоги
-itm_khand_helmet_a1|Кхандский Шлем с Кольчужной Привеской
-itm_khand_helmet_a2|Кхандский Шлем
-itm_khand_helmet_a3|Кхандский Скрытый Шлем
-itm_khand_helmet_b1|Кхандский Украшенный Шлем
-itm_khand_helmet_b2|Кхандский Шлем с Маской
-itm_khand_helmet_b3|Кхандский Скрытый Шлем
-itm_khand_helmet_b4|Кхандский Шлем с Кольчужной Привеской
-itm_khand_helmet_c3|Кхандский Шлем Пехоты
-itm_khand_helmet_c4|Кхандский Шлем Пехоты
-itm_khand_helmet_d1|Кхандский Шлем с Маской
-itm_khand_helmet_d2|Кхандский Шлем с Кольчужной Привеской
-itm_khand_helmet_d3|Кхандский Шлем с Маской
-itm_khand_helmet_e1|Кхандский Скрытый Шлем
-itm_khand_helmet_e2|Кхандский Шлем с Кольчужной Привеской
-itm_khand_helmet_e3|Кхандский Шлем
-itm_khand_helmet_e4|Кхандский Скрытый Шлем
-itm_khand_helmet_f1|Кхандский Скрытый Шлем
-itm_khand_helmet_mask1|Кхандская Маска
-itm_khand_helmet_mask2|Кхандская Маска
-itm_khand_light|Кхандский Килт
-itm_khand_foot_lam_a|Кхандская Броня
-itm_khand_foot_lam_b|Кхандская Броня
-itm_khand_foot_lam_c|Кхандская Броня
-itm_khand_heavy_lam|Кхандская Тяжёлая Чешуя
-itm_khand_light_lam|Кхандская Лёгкая Чешуя
-itm_khand_med_lam_b|Кхандская Средняя Чешуя
-itm_khand_med_lam_c|Кхандская Средняя Чешуя
-itm_khand_med_lam_d|Кхандская Средняя Чешуя
-itm_khand_noble_lam|Кхандский Благородный Доспех
-itm_variag_greaves|Варьяжские Поножи
-itm_khand_axe_great|Кхандский Великий Топор
-itm_khand_axe_winged|Кхандский Крылатый Топор
-itm_khand_halberd|Кхандская Алебарда
-itm_khand_trident|Кхандский Трезубец
-itm_khand_voulge|Кхандский Вуж
-itm_khand_mace1|Кхандская Булава
-itm_khand_mace2|Кхандская Булава
-itm_khand_mace_spiked|Кхандская Шипастая Булава
-itm_khand_rammace|Кхандская Таранная Булава
-itm_khand_pitsword|Меч Шахтёрных Воинов
-itm_khand_tulwar|Кхандская Кривая Сабля
-itm_khand_2h_tulwar|Кхандская Кривая Сабля
-itm_khand_lance|Кхандская Пика
-itm_easterling_round_horseman|Круглый Щит Истерлингов
-itm_variag_gladiator_shield|Варьяжский Щит Гладиаторов
-itm_easterling_hawk_shield|Ястребиный Щит Истерлингов
-itm_rhun_bull1_shield|Рунский Щит
-itm_rhun_bull2_shield|Рунский Щит
-itm_rhun_bull3_shield|Рунский Щит
-itm_furry_boots|Меховые Сапоги
-itm_rhun_armor_a|Рунское Лёгкое Боевое Одеяние
-itm_rhun_armor_b|Рунское Лёгкое Боевое Одеяние
-itm_rhun_armor_d|Рунское Лёгкое Боевое Одеяние
-itm_rhun_armor_g|Рунское Тяжёлое Боевое Одеяние
-itm_rhun_armor_h|Рунское Тяжёлое Боевое Одеяние
-itm_rhun_armor_j|Рунское Среднее Боевое Одеяние
-itm_rhun_armor_m|Рунское Среднее Боевое Одеяние
-itm_rhun_armor_n|Рунское Среднее Боевое Одеяние
-itm_rhun_armor_o|Рунское Среднее Боевое Одеяние
-itm_rhun_armor_p|Рунская Благородная Броня
-itm_rhun_armor_k|Рунская Благородная Броня
-itm_rhun_helm_a|Рунский Шипастый Шлем
-itm_rhun_helm_b|Рунский Шипастый Шлем с Кольчужной Привеской
-itm_rhun_helm_c|Рунский Шлем Орды
-itm_rhun_helm_e|Рунский Рогатый Шлем Орды
-itm_rhun_helm_g|Рунский Рогатый Шлем
-itm_rhun_helm_h|Рунский Рогатый Шлем
-itm_rhun_helm_i|Рунский Круглый Шлем
-itm_rhun_helm_j|Рунский Круглый Шлем с Маской
-itm_rhun_helm_k|Рунский Кожаный Шлем
-itm_rhun_helm_l|Рунский Кожаный Шлем
-itm_rhun_helm_m|Рунский Кожаный Шлем
-itm_rhun_helm_n|Рунский Шлем Вождя
-itm_rhun_helm_o|Рунский Шлем Вождя
-itm_rhun_greataxe|Рунский Великий Топор
-itm_rhun_battleaxe|Рунский Боевой Топор
-itm_rhun_falchion|Рунский Фальшион
-itm_rhun_glaive|Рунская Глефа
-itm_rhun_greatfalchion|Рунский Великий Фальшион
-itm_rhun_greatsword|Рунский Великий Меч
-itm_rhun_shortsword|Рунский Короткий Меч
-itm_rhun_sword|Рунский Меч
-itm_rhun_shield|Рунский Каплевидный Щит
-itm_dale_armor_a|Дейлский Жилет
-itm_dale_armor_b|Дейлский Жилет с Плащом
-itm_dale_armor_c|Дейлский Жилет Лучника
-itm_dale_armor_d|Дейлский Жилет Лучника
-itm_dale_armor_e|Дейлский Плащ Поверх Кольчуги
-itm_dale_armor_f|Дейлский Плащ Поверх Кольчуги
-itm_dale_armor_g|Дейлский Плащ Поверх Кольчуги
-itm_dale_armor_h|Дейлский Плащ Поверх Длинной Кольчуги
-itm_dale_armor_i|Дейлский Плащ Поверх Длинной Кольчуги
-itm_dale_armor_j|Дейлский Плащ Поверх Длинной Кольчуги
-itm_dale_armor_k|Дейлская Благородная Броня
-itm_dale_armor_l|Дейлский Благородный Горжет
-itm_dale_helmet_a|Дейлский Лёгкий Шлем Пехоты
-itm_dale_helmet_b|Дейлский Лёгкий Шлем Лучника
-itm_dale_helmet_c|Дейлский Шлем Пехоты
-itm_dale_helmet_d|Дейлский Шлем Лучника
-itm_dale_helmet_e|Дейлский Тяжёлый Шлем Пехоты
-itm_dale_helmet_f|Дейлский Тяжёлый Шлем Лучника
-itm_dale_sword|Дейлский Короткий Меч
-itm_dale_sword_long|Дейлский Длинный Меч
-itm_dale_sword_broad|Дейлский Широкий Меч
-itm_dale_pike|Дейлское Копьё
-itm_dale_billhook|Дейлская Алебарда
-itm_dale_shield_a|Дейлский Щит
-itm_dale_shield_b|Дейлский Щит
-itm_dale_shield_c|Дейлский Щит
-itm_dale_shield_d|Дейлский Щит
-itm_umb_armor_a|Кожаная Броня Пиратов
-itm_umb_armor_a1|Тяжёлая Кожаная Броня Пиратов
-itm_umb_armor_b|Пиратская Броня Налётчиков
-itm_umb_armor_c|Пиратская Подбитая Броня
-itm_umb_armor_d|Пиратская Тяжёлая Подбитая Броня
-itm_umb_armor_e|Пиратская Подбитая Броня Налётчика
-itm_umb_armor_f|Пиратская Кольчуга
-itm_umb_armor_g|Пиратские Кольчужные Наплечники
-itm_umb_armor_h|Пиратская Тяжёлая Броня Налётчика
-itm_umb_helm_a|Пиратский Шлем с Обшивкой
-itm_umb_helm_b|Пиратский Шлем с Обшивкой
-itm_umb_helm_c|Пиратский Шлем Ополченца
-itm_umb_helm_d|Пиратский Шлем Ополченца
-itm_umb_helm_e|Пиратский Шлем Налётчика
-itm_umb_helm_f|Пиратский Шлем Налётчика
-itm_umb_hood|Умбарский Капюшон
-itm_corsair_boots|Пиратские Сапоги
-itm_umb_shield_a|Пиратский Баклер
-itm_umb_shield_b|Пиратский Баклер
-itm_umb_shield_c|Пиратский Баклер 
-itm_umb_shield_d|Пиратский Баклер
-itm_umb_shield_e|Пиратский Баклер
-itm_umbar_cutlass|Умбарская Абордажная Сабля
-itm_kraken|Абордажная Сабля Кракена
-itm_umbar_rapier|Умбарский Меч
-itm_corsair_harpoon|Пиратский Гарпун
-itm_corsair_sword|Пиратский Экет
-itm_corsair_throwing_dagger|Умбарские Метательные Кинжалы
-itm_umbar_pike|Умбарская Пика
-itm_woodman_tunic|Туника Лесника
-itm_woodman_scout|Лесничья Шляпа Разведчика
-itm_woodman_padded|Лесничья Подбитая Броня
-itm_beorn_tunic|Туника Беорнинга
-itm_beorn_padded|Подбитая Броня Беорнингов
-itm_beorn_heavy|Тяжёлая Броня Беорнингов
-itm_beorn_berserk|Беорнингское Снаряжение Берсерка
-itm_beorn_chief|Беорнингская Туника Вождя
-itm_beorn_helmet|Северная Тюбетейка
-itm_beorn_shield|Северный Щит
-itm_beorn_axe|Беорнингский Топор
-itm_beorn_staff|Посох Лесника
-itm_beorn_battle_axe|Боевой Топор Беорнинга
-itm_dwarf_shield_a|Щит гномов
-itm_dwarf_shield_b|Щит гномов
-itm_dwarf_shield_c|Щит гномов
-itm_dwarf_shield_d|Щит гномов
-itm_dwarf_shield_f|Щит гномов
-itm_dwarf_shield_g|Щит гномов
-itm_dwarf_shield_i|Щит гномов
-itm_dwarf_shield_j|Щит гномов
-itm_dwarf_shield_k|Щит гномов
-itm_dwarf_shield_l|Щит гномов
-itm_dwarf_sword_a|Меч гномов
-itm_dwarf_sword_b|Меч гномов
-itm_dwarf_sword_c|Меч гномов
-itm_dwarf_sword_d|Меч гномов
-itm_dwarf_adz|Струг Гномов
-itm_dwarf_great_axe|Большой топор гномов
-itm_dwarf_great_mattock|Великая Мотыга Гномов
-itm_dwarf_great_pick|Великая Кирка Гномов
-itm_dwarf_war_pick|Боевая Кирка Гномов
-itm_dwarf_mattock|Мотыга Гномов
-itm_dwarf_hand_axe|Короткий топор гномов
-itm_dwarf_throwing_axe|Метательный топор гномов
+itm_m_armor_b_pl|Мордорская броня
+itm_evil_light_armor|Устрашающее одеяние
+itm_evil_light_armor_pl|Устрашающее одеяние
+itm_uruk_helm_a|Урукский шлем
+itm_uruk_helm_a_pl|Урукский шлем
+itm_uruk_helm_b|Урукский шлем
+itm_uruk_helm_b_pl|Урукский шлем
+itm_uruk_helm_c|Урукский шлем с клювом
+itm_uruk_helm_c_pl|Урукский шлем с клювом
+itm_uruk_helm_d|Урукский устрашающий шлем
+itm_uruk_helm_d_pl|Урукский устрашающий шлем
+itm_uruk_helm_e|Урукский шлем с маской
+itm_uruk_helm_e_pl|Урукский шлем с маской
+itm_uruk_helm_f|Урукский шлем
+itm_uruk_helm_f_pl|Урукский шлем
+itm_mordor_cap_helm|Мордорский шлем командира
+itm_mordor_cap_helm_pl|Мордорский шлем командира
+itm_mordor_helm|Мордорский шлем
+itm_mordor_helm_pl|Мордорский шлем
+itm_black_num_helm|Шлем чёрного нуменорца
+itm_black_num_helm_pl|Шлем чёрного нуменорца
+itm_mordor_sword|Мордорский меч-полутораручник
+itm_mordor_sword_pl|Мордорский меч-полутораручник
+itm_mordor_longsword|Мордорский меч
+itm_mordor_longsword_pl|Мордорский меч
+itm_moria_armor_a|Морийский нагрудник
+itm_moria_armor_a_pl|Морийский нагрудник
+itm_moria_armor_b|Морийский нагрудник с наплечниками
+itm_moria_armor_b_pl|Морийский нагрудник с наплечниками
+itm_moria_armor_c|Морийская орочья кольчуга
+itm_moria_armor_c_pl|Морийская орочья кольчуга
+itm_moria_armor_d|Морийская проклёпанная кожаная броня
+itm_moria_armor_d_pl|Морийская проклёпанная кожаная броня
+itm_moria_armor_e|Морийская орочья тяжёлая кольчуга
+itm_moria_armor_e_pl|Морийская орочья тяжёлая кольчуга
+itm_moria_orc_shield_a|Морийский орочий щит
+itm_moria_orc_shield_a_pl|Морийский орочий щит
+itm_moria_orc_shield_b|Морийский орочий щит
+itm_moria_orc_shield_b_pl|Морийский орочий щит
+itm_moria_orc_shield_c|Морийский орочий щит
+itm_moria_orc_shield_c_pl|Морийский орочий щит
+itm_gundabad_armor_a|Гундабадские орочьи лохмотья
+itm_gundabad_armor_a_pl|Гундабадские орочьи лохмотья
+itm_gundabad_armor_b|Гундабадская орочья меховая одежда
+itm_gundabad_armor_b_pl|Гундабадская орочья меховая одежда
+itm_gundabad_armor_c|Гундабадская орочья броня
+itm_gundabad_armor_c_pl|Гундабадская орочья броня
+itm_gundabad_armor_d|Гундабадская орочья броня
+itm_gundabad_armor_d_pl|Гундабадская орочья броня
+itm_gundabad_armor_e|Гундабадская орочья тяжёлая броня
+itm_gundabad_armor_e_pl|Гундабадская орочья тяжёлая броня
+itm_gundabad_helm_a|Гундабадский шлем
+itm_gundabad_helm_a_pl|Гундабадский шлем
+itm_gundabad_helm_b|Гундабадский шлем
+itm_gundabad_helm_b_pl|Гундабадский шлем
+itm_gundabad_helm_c|Гундабадский шлем
+itm_gundabad_helm_c_pl|Гундабадский шлем
+itm_gundabad_helm_d|Гундабадский шлем
+itm_gundabad_helm_d_pl|Гундабадский шлем
+itm_gundabad_helm_e|Шлем волчьего наездника
+itm_gundabad_helm_e_pl|Шлем волчьего наездника
+itm_dunland_wolfboots|Дунландские волчьи ботинки
+itm_dunland_wolfboots_pl|Дунландские волчьи ботинки
+itm_dunland_armor_a|Дунландская меховая броня
+itm_dunland_armor_a_pl|Дунландская меховая броня
+itm_dunland_armor_b|Дунландская меховая броня
+itm_dunland_armor_b_pl|Дунландская меховая броня
+itm_dunland_armor_c|Дунландская меховая броня
+itm_dunland_armor_c_pl|Дунландская меховая броня
+itm_dunland_armor_d|Дунландская меховая броня
+itm_dunland_armor_d_pl|Дунландская меховая броня
+itm_dunland_armor_e|Дунландская меховая броня
+itm_dunland_armor_e_pl|Дунландская меховая броня
+itm_dunland_armor_g|Дунландская меховая броня
+itm_dunland_armor_g_pl|Дунландская меховая броня
+itm_dunland_armor_h|Дунландская длинная меховая броня
+itm_dunland_armor_h_pl|Дунландская длинная меховая броня
+itm_dunland_armor_i|Дунландский хауберк
+itm_dunland_armor_i_pl|Дунландский хауберк
+itm_dunland_armor_j|Дунландский хауберк
+itm_dunland_armor_j_pl|Дунландский хауберк
+itm_dunland_armor_k|Броня дунландского вождя
+itm_dunland_armor_k_pl|Броня дунландского вождя
+itm_dun_helm_a|Дунландский волчий шлем
+itm_dun_helm_a_pl|Дунландский волчий шлем
+itm_dun_helm_b|Дунландский рогатый шлем
+itm_dun_helm_b_pl|Дунландский рогатый шлем
+itm_dun_helm_c|Дунландский превосходный шлем
+itm_dun_helm_c_pl|Дунландский превосходный шлем
+itm_dun_helm_d|Дунландский превосходный шлем
+itm_dun_helm_d_pl|Дунландский превосходный шлем
+itm_dun_helm_e|Дунландский превосходный боевой шлем
+itm_dun_helm_e_pl|Дунландский превосходный боевой шлем
+itm_dun_shield_a|Дунландский щит
+itm_dun_shield_a_pl|Дунландский щит
+itm_dun_shield_b|Дунландский щит
+itm_dun_shield_b_pl|Дунландский щит
+itm_dun_berserker|Меч дунландского вождя
+itm_dun_berserker_pl|Меч дунландского вождя
+itm_dunnish_antler_axe|Дунландский топор из оленьего рога
+itm_dunnish_antler_axe_pl|Дунландский топор из оленьего рога
+itm_dunnish_war_axe|Дунландский боевой топор
+itm_dunnish_war_axe_pl|Дунландский боевой топор
+itm_dunnish_axe|Дунландский топор
+itm_dunnish_axe_pl|Дунландский топор
+itm_dunland_spear|Дунландское копьё
+itm_dunland_spear_pl|Дунландское копьё
+itm_dunnish_pike|Дунландская пика
+itm_dunnish_pike_pl|Дунландская пика
+itm_rohan_armor_a|Роханская одежда
+itm_rohan_armor_a_pl|Роханская одежда
+itm_rohan_armor_b|Роханская одежда с плащом
+itm_rohan_armor_b_pl|Роханская одежда с плащом
+itm_rohan_armor_c|Роханская длинная одежда
+itm_rohan_armor_c_pl|Роханская длинная одежда
+itm_rohan_armor_d|Роханский хауберк
+itm_rohan_armor_d_pl|Роханский хауберк
+itm_rohan_armor_e|Роханский хауберк
+itm_rohan_armor_e_pl|Роханский хауберк
+itm_rohan_armor_f|Роханский хауберк
+itm_rohan_armor_f_pl|Роханский хауберк
+itm_rohan_armor_g|Роханская кольчуга
+itm_rohan_armor_g_pl|Роханская кольчуга
+itm_rohan_armor_h|Роханская длинная кольчуга
+itm_rohan_armor_h_pl|Роханская длинная кольчуга
+itm_rohan_armor_i|Роханская длинная кольчуга
+itm_rohan_armor_i_pl|Роханская длинная кольчуга
+itm_rohan_armor_j|Роханский хауберк
+itm_rohan_armor_j_pl|Роханский хауберк
+itm_rohan_armor_k|Роханский хауберк
+itm_rohan_armor_k_pl|Роханский хауберк
+itm_rohan_armor_l|Роханский хауберк
+itm_rohan_armor_l_pl|Роханский хауберк
+itm_rohan_armor_m|Роханская чешуйчатая броня
+itm_rohan_armor_m_pl|Роханская чешуйчатая броня
+itm_rohan_armor_n|Роханская чешуйчатая броня
+itm_rohan_armor_n_pl|Роханская чешуйчатая броня
+itm_rohan_armor_o|Роханская чешуйчатая броня
+itm_rohan_armor_o_pl|Роханская чешуйчатая броня
+itm_rohan_armor_p|Роханская броня
+itm_rohan_armor_p_pl|Роханская броня
+itm_rohan_armor_q|Роханская броня
+itm_rohan_armor_q_pl|Роханская броня
+itm_rohan_armor_r|Роханская броня
+itm_rohan_armor_r_pl|Роханская броня
+itm_rohan_armor_s|Роханская кольчуга с гербом
+itm_rohan_armor_s_pl|Роханская кольчуга с гербом
+itm_rohan_light_helmet_a|Роханский лёгкий шлем
+itm_rohan_light_helmet_a_pl|Роханский лёгкий шлем
+itm_rohan_light_helmet_b|Роханский лёгкий шлем
+itm_rohan_light_helmet_b_pl|Роханский лёгкий шлем
+itm_rohan_inf_helmet_a|Роханский шлем пехотинца
+itm_rohan_inf_helmet_a_pl|Роханский шлем пехотинца
+itm_rohan_inf_helmet_b|Роханский шлем пехотинца
+itm_rohan_inf_helmet_b_pl|Роханский шлем пехотинца
+itm_rohan_archer_helmet_a|Роханский шлем лучника
+itm_rohan_archer_helmet_a_pl|Роханский шлем лучника
+itm_rohan_archer_helmet_b|Роханский шлем лучника
+itm_rohan_archer_helmet_b_pl|Роханский шлем лучника
+itm_rohan_archer_helmet_c|Роханская лошадь ий шлем лучника
+itm_rohan_archer_helmet_c_pl|Роханская лошадь ий шлем лучника
+itm_rohan_cav_helmet_a|Роханский кавалерийский шлем
+itm_rohan_cav_helmet_a_pl|Роханский кавалерийский шлем
+itm_rohan_cav_helmet_b|Роханский кавалерийский шлем
+itm_rohan_cav_helmet_b_pl|Роханский кавалерийский шлем
+itm_rohan_cav_helmet_c|Роханский кавалерийский шлем
+itm_rohan_cav_helmet_c_pl|Роханский кавалерийский шлем
+itm_rohan_captain_helmet|Роханский шлем командира
+itm_rohan_captain_helmet_pl|Роханский шлем командира
+itm_rohan_shield_a|Роханский щит
+itm_rohan_shield_a_pl|Роханский щит
+itm_rohan_shield_b|Роханский щит
+itm_rohan_shield_b_pl|Роханский щит
+itm_rohan_shield_c|Роханский щит
+itm_rohan_shield_c_pl|Роханский щит
+itm_rohan_shield_d|Роханский щит
+itm_rohan_shield_d_pl|Роханский щит
+itm_rohan_shield_e|Роханский щит
+itm_rohan_shield_e_pl|Роханский щит
+itm_rohan_shield_f|Роханский щит
+itm_rohan_shield_f_pl|Роханский щит
+itm_rohan_shield_g|Роханский королевский щит
+itm_rohan_shield_g_pl|Роханский королевский щит
+itm_rohan_light_greaves|Роханские лёгкие поножи
+itm_rohan_light_greaves_pl|Роханские лёгкие поножи
+itm_rohirrim_war_greaves|Роханские боевые поножи
+itm_rohirrim_war_greaves_pl|Роханские боевые поножи
+itm_rohan_shoes|Кожаные ботинки
+itm_rohan_shoes_pl|Кожаные ботинки
+itm_rohan_cav_sword|Роханский кавалерийский меч
+itm_rohan_cav_sword_pl|Роханский кавалерийский меч
+itm_rohan_inf_sword|Роханский меч
+itm_rohan_inf_sword_pl|Роханский меч
+itm_rohan_spear|Роханское копьё
+itm_rohan_spear_pl|Роханское копьё
+itm_rohan_lance|Роханское кавалерийское копьё
+itm_rohan_lance_pl|Роханское кавалерийское копьё
+itm_rohan_sword_c|Роханский меч
+itm_rohan_sword_c_pl|Роханский меч
+itm_rohirrim_short_axe|Роханский топорик
+itm_rohirrim_short_axe_pl|Роханский топорик
+itm_rohirrim_long_hafted_axe|Роханский большой топор
+itm_rohirrim_long_hafted_axe_pl|Роханский большой топор
+itm_rohan_2h_sword|Роханский боевой меч
+itm_rohan_2h_sword_pl|Роханский боевой меч
+itm_mirkwood_light_scale|Лёгкая чешуйчатая броня лесного эльфа
+itm_mirkwood_light_scale_pl|Лёгкая чешуйчатая броня лесного эльфа
+itm_mirkwood_armor_a|Лёгкая кожаная броня
+itm_mirkwood_armor_a_pl|Лёгкая кожаная броня
+itm_mirkwood_armor_b|Лёгкая стёганая броня с чешуйками
+itm_mirkwood_armor_b_pl|Лёгкая стёганая броня с чешуйками
+itm_mirkwood_armor_c|Лёгкая чешуйчатая броня поверх кольчуги
+itm_mirkwood_armor_c_pl|Лёгкая чешуйчатая броня поверх кольчуги
+itm_mirkwood_armor_d|Лёгкая стёганка
+itm_mirkwood_armor_d_pl|Лёгкая стёганка
+itm_mirkwood_armor_e|Лёгкая кольчуга поверх стёганки
+itm_mirkwood_armor_e_pl|Лёгкая кольчуга поверх стёганки
+itm_mirkwood_armor_f|Королевская броня лесного эльфа
+itm_mirkwood_armor_f_pl|Королевская броня лесного эльфа
+itm_mirkwood_great_spear|Темнолесское большое копьё
+itm_mirkwood_great_spear_pl|Темнолесское большое копьё
+itm_mirkwood_war_spear|Темнолесское боевое копьё
+itm_mirkwood_war_spear_pl|Темнолесское боевое копьё
+itm_mirkwood_short_spear|Темнолесское копьё
+itm_mirkwood_short_spear_pl|Темнолесское копьё
+itm_mirkwood_knife|Темнолесский белый кинжал
+itm_mirkwood_knife_pl|Темнолесский белый кинжал
+itm_mirkwood_sword|Темнолесский меч
+itm_mirkwood_sword_pl|Темнолесский меч
+itm_mirkwood_spear_shield_a|Темнолесский щит копейщика
+itm_mirkwood_spear_shield_a_pl|Темнолесский щит копейщика
+itm_mirkwood_spear_shield_b|Темнолесский боевой щит
+itm_mirkwood_spear_shield_b_pl|Темнолесский боевой щит
+itm_mirkwood_spear_shield_c|Темнолесский щит мечника
+itm_mirkwood_spear_shield_c_pl|Темнолесский щит мечника
+itm_mirkwood_helm_a|Темнолесский шлем лучника
+itm_mirkwood_helm_a_pl|Темнолесский шлем лучника
+itm_mirkwood_helm_b|Темнолесский шлем
+itm_mirkwood_helm_b_pl|Темнолесский шлем
+itm_mirkwood_helm_c|Темнолесский королевский шлем копейщика
+itm_mirkwood_helm_c_pl|Темнолесский королевский шлем копейщика
+itm_mirkwood_helm_d|Темнолесский королевский шлем лучника
+itm_mirkwood_helm_d_pl|Темнолесский королевский шлем лучника
+itm_mirkwood_boots|Темнолесские сапоги
+itm_mirkwood_boots_pl|Темнолесские сапоги
+itm_mirkwood_leather_greaves|Темнолесские кожаные поножи
+itm_mirkwood_leather_greaves_pl|Темнолесские кожаные поножи
+itm_harad_tunic|Харадская одежда
+itm_harad_tunic_pl|Харадская одежда
+itm_harad_padded|Харондорская подбитая броня
+itm_harad_padded_pl|Харондорская подбитая броня
+itm_harad_hauberk|Харондорский хауберк
+itm_harad_hauberk_pl|Харондорский хауберк
+itm_harad_lamellar|Броня-харасьяла
+itm_harad_lamellar_pl|Броня-харасьяла
+itm_harad_heavy|Харадский броня мечника
+itm_harad_heavy_pl|Харадский броня мечника
+itm_harad_skirmisher|Лёгкое харадское одеяние
+itm_harad_skirmisher_pl|Лёгкое харадское одеяние
+itm_harad_archer|Харадская броня лучника
+itm_harad_archer_pl|Харадская броня лучника
+itm_black_snake_armor|Броня-маранка
+itm_black_snake_armor_pl|Броня-маранка
+itm_harad_champion|Дальнехарадская одежда
+itm_harad_champion_pl|Дальнехарадская одежда
+itm_panther_guard|Шкура пантеры
+itm_panther_guard_pl|Шкура пантеры
+itm_harad_scale|Харадская чешуйчатая броня
+itm_harad_scale_pl|Харадская чешуйчатая броня
+itm_harad_tiger_scale|Тигриная броня стражи
+itm_harad_tiger_scale_pl|Тигриная броня стражи
+itm_harad_lion_scale|Львиная броня стражи
+itm_harad_lion_scale_pl|Львиная броня стражи
+itm_harad_dragon_helm|Шлем-килока
+itm_harad_dragon_helm_pl|Шлем-килока
+itm_harad_cav_helm_a|Харондорский кавалерийский шлем
+itm_harad_cav_helm_a_pl|Харондорский кавалерийский шлем
+itm_harad_cav_helm_b|Харондорский кавалерийский шлем
+itm_harad_cav_helm_b_pl|Харондорский кавалерийский шлем
+itm_black_snake_helm|Шлем-маранка
+itm_black_snake_helm_pl|Шлем-маранка
+itm_harad_finhelm|Большой харадский шлем
+itm_harad_finhelm_pl|Большой харадский шлем
+itm_harad_heavy_inf_helm|Большой харадский шлем
+itm_harad_heavy_inf_helm_pl|Большой харадский шлем
+itm_harad_wavy_helm|Большой харадский шлем
+itm_harad_wavy_helm_pl|Большой харадский шлем
+itm_harad_eaglehelm|Шлем Орлиной гвардии
+itm_harad_eaglehelm_pl|Шлем Орлиной гвардии
+itm_lion_helm|Шлем Львиной гвардии
+itm_lion_helm_pl|Шлем Львиной гвардии
+itm_harad_pantherhelm|Шлем Гвардии пантеры
+itm_harad_pantherhelm_pl|Шлем Гвардии пантеры
+itm_harad_khopesh|Харадский хопеш
+itm_harad_khopesh_pl|Харадский хопеш
+itm_black_snake_sword|Харадский тяжёлый фальшион
+itm_black_snake_sword_pl|Харадский тяжёлый фальшион
+itm_harad_heavy_sword|Харадский тяжёлый меч
+itm_harad_heavy_sword_pl|Харадский тяжёлый меч
+itm_horandor_a|Харадский ятаган
+itm_horandor_a_pl|Харадский ятаган
+itm_skirmisher_sword|Харадский меч застрельщика
+itm_skirmisher_sword_pl|Харадский меч застрельщика
+itm_harad_sabre|Харадская сабля
+itm_harad_sabre_pl|Харадская сабля
+itm_harad_mace|Дальнехарадская булава
+itm_harad_mace_pl|Дальнехарадская булава
+itm_far_harad_2h_mace|Дальнехарадская двуручная булава
+itm_far_harad_2h_mace_pl|Дальнехарадская двуручная булава
+itm_harad_dagger|Харадский кинжал
+itm_harad_dagger_pl|Харадский кинжал
+itm_harad_short_spear|Харадское короткое копьё
+itm_harad_short_spear_pl|Харадское короткое копьё
+itm_harad_long_spear|Харадское копьё
+itm_harad_long_spear_pl|Харадское копьё
+itm_eagle_guard_spear|Копьё-харасьяла
+itm_eagle_guard_spear_pl|Копьё-харасьяла
+itm_harad_long_shield_a|Харадский леопардовый щит
+itm_harad_long_shield_a_pl|Харадский леопардовый щит
+itm_harad_long_shield_b|Харадский бронзовый щит
+itm_harad_long_shield_b_pl|Харадский бронзовый щит
+itm_harad_long_shield_c|Харадский солнечный щит
+itm_harad_long_shield_c_pl|Харадский солнечный щит
+itm_harad_long_shield_d|Харадский змеиный щит
+itm_harad_long_shield_d_pl|Харадский змеиный щит
+itm_harad_long_shield_e|Харадский змеиный щит
+itm_harad_long_shield_e_pl|Харадский змеиный щит
+itm_harad_shield_a|Харондорский щит
+itm_harad_shield_a_pl|Харондорский щит
+itm_harad_shield_b|Харондорский баклер
+itm_harad_shield_b_pl|Харондорский баклер
+itm_harad_shield_c|Харондорский баклер
+itm_harad_shield_c_pl|Харондорский баклер
+itm_harad_tribal_a|Дальнехарадский щит
+itm_harad_tribal_a_pl|Дальнехарадский щит
+itm_harad_tribal_b|Дальнехарадский щит
+itm_harad_tribal_b_pl|Дальнехарадский щит
+itm_harad_yellow_shield|Харадский щит
+itm_harad_yellow_shield_pl|Харадский щит
+itm_desert_boots|Пустынные сапоги
+itm_desert_boots_pl|Пустынные сапоги
+itm_harad_leather_greaves|Харадские поножи
+itm_harad_leather_greaves_pl|Харадские поножи
+itm_harad_scale_greaves|Харадские сапоги
+itm_harad_scale_greaves_pl|Харадские сапоги
+itm_harad_lamellar_greaves|Харадские сапоги
+itm_harad_lamellar_greaves_pl|Харадские сапоги
+itm_khand_helmet_a1|Хандский шлем с бармицей
+itm_khand_helmet_a1_pl|Хандский шлем с бармицей
+itm_khand_helmet_a2|Хандский шлем
+itm_khand_helmet_a2_pl|Хандский шлем
+itm_khand_helmet_a3|Хандский шлем с чадрой
+itm_khand_helmet_a3_pl|Хандский шлем с чадрой
+itm_khand_helmet_b1|Хандский украшенный шлем
+itm_khand_helmet_b1_pl|Хандский украшенный шлем
+itm_khand_helmet_b2|Хандский шлем с маской
+itm_khand_helmet_b2_pl|Хандский шлем с маской
+itm_khand_helmet_b3|Хандский шлем с чадрой
+itm_khand_helmet_b3_pl|Хандский шлем с чадрой
+itm_khand_helmet_b4|Хандский шлем с бармицей
+itm_khand_helmet_b4_pl|Хандский шлем с бармицей
+itm_khand_helmet_c3|Хандский шлем пехотинца
+itm_khand_helmet_c3_pl|Хандский шлем пехотинца
+itm_khand_helmet_c4|Хандский шлем пехотинца
+itm_khand_helmet_c4_pl|Хандский шлем пехотинца
+itm_khand_helmet_d1|Хандский шлем с маской
+itm_khand_helmet_d1_pl|Хандский шлем с маской
+itm_khand_helmet_d2|Хандский шлем с бармицей
+itm_khand_helmet_d2_pl|Хандский шлем с бармицей
+itm_khand_helmet_d3|Хандский шлем с маской
+itm_khand_helmet_d3_pl|Хандский шлем с маской
+itm_khand_helmet_e1|Хандский шлем с чадрой
+itm_khand_helmet_e1_pl|Хандский шлем с чадрой
+itm_khand_helmet_e2|Хандский шлем с бармицей
+itm_khand_helmet_e2_pl|Хандский шлем с бармицей
+itm_khand_helmet_e3|Хандский шлем
+itm_khand_helmet_e3_pl|Хандский шлем
+itm_khand_helmet_e4|Хандский шлем с чадрой
+itm_khand_helmet_e4_pl|Хандский шлем с чадрой
+itm_khand_helmet_f1|Хандский шлем с чадрой
+itm_khand_helmet_f1_pl|Хандский шлем с чадрой
+itm_khand_helmet_mask1|Хандская маска
+itm_khand_helmet_mask1_pl|Хандская маска
+itm_khand_helmet_mask2|Хандская маска
+itm_khand_helmet_mask2_pl|Хандская маска
+itm_khand_light|Хандская юбка
+itm_khand_light_pl|Хандская юбка
+itm_khand_foot_lam_a|Хандская броня
+itm_khand_foot_lam_a_pl|Хандская броня
+itm_khand_foot_lam_b|Хандская броня
+itm_khand_foot_lam_b_pl|Хандская броня
+itm_khand_foot_lam_c|Хандская броня
+itm_khand_foot_lam_c_pl|Хандская броня
+itm_khand_heavy_lam|Хандский тяжёлый ламеллярный доспех
+itm_khand_heavy_lam_pl|Хандский тяжёлый ламеллярный доспех
+itm_khand_light_lam|Хандский лёгкий ламеллярный доспех
+itm_khand_light_lam_pl|Хандский лёгкий ламеллярный доспех
+itm_khand_med_lam_b|Хандский средний ламеллярный доспех
+itm_khand_med_lam_b_pl|Хандский средний ламеллярный доспех
+itm_khand_med_lam_c|Хандский средний ламеллярный доспех
+itm_khand_med_lam_c_pl|Хандский средний ламеллярный доспех
+itm_khand_med_lam_d|Хандский средний ламеллярный доспех
+itm_khand_med_lam_d_pl|Хандский средний ламеллярный доспех
+itm_khand_noble_lam|Хандская броня знатного воина
+itm_khand_noble_lam_pl|Хандская броня знатного воина
+itm_variag_greaves|Варьягские поножи
+itm_variag_greaves_pl|Варьягские поножи
+itm_khand_axe_great|Хандский большой топор
+itm_khand_axe_great_pl|Хандский большой топор
+itm_khand_axe_winged|Хандский крылатый топор
+itm_khand_axe_winged_pl|Хандский крылатый топор
+itm_khand_halberd|Хандская алебарда
+itm_khand_halberd_pl|Хандская алебарда
+itm_khand_trident|Хандский трезубец
+itm_khand_trident_pl|Хандский трезубец
+itm_khand_voulge|Хандский вуж
+itm_khand_voulge_pl|Хандский вуж
+itm_khand_mace1|Хандская булава
+itm_khand_mace1_pl|Хандская булава
+itm_khand_mace2|Хандская булава
+itm_khand_mace2_pl|Хандская булава
+itm_khand_mace_spiked|Хандская булава с шипами
+itm_khand_mace_spiked_pl|Хандская булава с шипами
+itm_khand_rammace|Хандская "баранья" булава
+itm_khand_rammace_pl|Хандская "баранья" булава
+itm_khand_pitsword|Меч поединщика
+itm_khand_pitsword_pl|Меч поединщика
+itm_khand_tulwar|Хандский тальвар
+itm_khand_tulwar_pl|Хандский тальвар
+itm_khand_2h_tulwar|Хандский тальвар
+itm_khand_2h_tulwar_pl|Хандский тальвар
+itm_khand_lance|Хандское кавалерийское копьё
+itm_khand_lance_pl|Хандское кавалерийское копьё
+itm_easterling_round_horseman|Истерлингский круглый щит
+itm_easterling_round_horseman_pl|Истерлингский круглый щит
+itm_variag_gladiator_shield|Варьягский щит поединщика
+itm_variag_gladiator_shield_pl|Варьягский щит поединщика
+itm_easterling_hawk_shield|Истерлингский соколиный щит
+itm_easterling_hawk_shield_pl|Истерлингский соколиный щит
+itm_rhun_bull1_shield|Рунийский щит
+itm_rhun_bull1_shield_pl|Рунийский щит
+itm_rhun_bull2_shield|Рунийский щит
+itm_rhun_bull2_shield_pl|Рунийский щит
+itm_rhun_bull3_shield|Рунийский щит
+itm_rhun_bull3_shield_pl|Рунийский щит
+itm_furry_boots|Меховые сапоги
+itm_furry_boots_pl|Меховые сапоги
+itm_rhun_armor_a|Рунийское лёгкое боевое одеяние
+itm_rhun_armor_a_pl|Рунийское лёгкое боевое одеяние
+itm_rhun_armor_b|Рунийское лёгкое боевое одеяние
+itm_rhun_armor_b_pl|Рунийское лёгкое боевое одеяние
+itm_rhun_armor_d|Рунийское лёгкое боевое одеяние
+itm_rhun_armor_d_pl|Рунийское лёгкое боевое одеяние
+itm_rhun_armor_g|Рунийское тяжёлое боевое одеяние
+itm_rhun_armor_g_pl|Рунийское тяжёлое боевое одеяние
+itm_rhun_armor_h|Рунийское тяжёлое боевое одеяние
+itm_rhun_armor_h_pl|Рунийское тяжёлое боевое одеяние
+itm_rhun_armor_j|Рунийское среднее боевое одеяние
+itm_rhun_armor_j_pl|Рунийское среднее боевое одеяние
+itm_rhun_armor_m|Рунийское среднее боевое одеяние
+itm_rhun_armor_m_pl|Рунийское среднее боевое одеяние
+itm_rhun_armor_n|Рунийское среднее боевое одеяние
+itm_rhun_armor_n_pl|Рунийское среднее боевое одеяние
+itm_rhun_armor_o|Рунийское среднее боевое одеяние
+itm_rhun_armor_o_pl|Рунийское среднее боевое одеяние
+itm_rhun_armor_p|Рунийская броня знатного воина
+itm_rhun_armor_p_pl|Рунийская броня знатного воина
+itm_rhun_armor_k|Рунийская броня знатного воина
+itm_rhun_armor_k_pl|Рунийская броня знатного воина
+itm_rhun_helm_a|Рунийский шлем с шипами
+itm_rhun_helm_a_pl|Рунийский шлем с шипами
+itm_rhun_helm_b|Рунийский шлем с шипами и бармицей
+itm_rhun_helm_b_pl|Рунийский шлем с шипами и бармицей
+itm_rhun_helm_c|Рунийский шлем орды
+itm_rhun_helm_c_pl|Рунийский шлем орды
+itm_rhun_helm_e|Рунийский рогатый шлем орды
+itm_rhun_helm_e_pl|Рунийский рогатый шлем орды
+itm_rhun_helm_g|Рунийская рогатая каска
+itm_rhun_helm_g_pl|Рунийская рогатая каска
+itm_rhun_helm_h|Рунийская рогатая каска
+itm_rhun_helm_h_pl|Рунийская рогатая каска
+itm_rhun_helm_i|Рунийский круглый шлем
+itm_rhun_helm_i_pl|Рунийский круглый шлем
+itm_rhun_helm_j|Рунийский круглый шлем с маской
+itm_rhun_helm_j_pl|Рунийский круглый шлем с маской
+itm_rhun_helm_k|Рунийский кожаный шлем
+itm_rhun_helm_k_pl|Рунийский кожаный шлем
+itm_rhun_helm_l|Рунийский кожаный шлем
+itm_rhun_helm_l_pl|Рунийский кожаный шлем
+itm_rhun_helm_m|Рунийский кожаный шлем
+itm_rhun_helm_m_pl|Рунийский кожаный шлем
+itm_rhun_helm_n|Рунийский шлем вождя
+itm_rhun_helm_n_pl|Рунийский шлем вождя
+itm_rhun_helm_o|Рунийский шлем вождя
+itm_rhun_helm_o_pl|Рунийский шлем вождя
+itm_rhun_greataxe|Рунийский большой топор
+itm_rhun_greataxe_pl|Рунийский большой топор
+itm_rhun_battleaxe|Рунийский боевой топор
+itm_rhun_battleaxe_pl|Рунийский боевой топор
+itm_rhun_falchion|Рунийский фальшион
+itm_rhun_falchion_pl|Рунийский фальшион
+itm_rhun_glaive|Рунийская глефа
+itm_rhun_glaive_pl|Рунийская глефа
+itm_rhun_greatfalchion|Рунийский большой фальшион
+itm_rhun_greatfalchion_pl|Рунийский большой фальшион
+itm_rhun_greatsword|Рунийский большой меч
+itm_rhun_greatsword_pl|Рунийский большой меч
+itm_rhun_shortsword|Рунийский короткий меч
+itm_rhun_shortsword_pl|Рунийский короткий меч
+itm_rhun_sword|Рунийский меч
+itm_rhun_sword_pl|Рунийский меч
+itm_rhun_shield|Рунийский каплевидный щит
+itm_rhun_shield_pl|Рунийский каплевидный щит
+itm_dale_armor_a|Дэйльская куртка
+itm_dale_armor_a_pl|Дэйльская куртка
+itm_dale_armor_b|Дэйльская куртка с плащом
+itm_dale_armor_b_pl|Дэйльская куртка с плащом
+itm_dale_armor_c|Дэйльская куртка лучника
+itm_dale_armor_c_pl|Дэйльская куртка лучника
+itm_dale_armor_d|Дэйльская куртка лучника
+itm_dale_armor_d_pl|Дэйльская куртка лучника
+itm_dale_armor_e|Дэйльская накидка поверх кольчуги
+itm_dale_armor_e_pl|Дэйльская накидка поверх кольчуги
+itm_dale_armor_f|Дэйльская накидка поверх кольчуги
+itm_dale_armor_f_pl|Дэйльская накидка поверх кольчуги
+itm_dale_armor_g|Дэйльская накидка поверх кольчуги
+itm_dale_armor_g_pl|Дэйльская накидка поверх кольчуги
+itm_dale_armor_h|Дэйльская кольчуга с плащом
+itm_dale_armor_h_pl|Дэйльская кольчуга с плащом
+itm_dale_armor_i|Дэйльская кольчуга с плащом
+itm_dale_armor_i_pl|Дэйльская кольчуга с плащом
+itm_dale_armor_j|Дэйльская кольчуга с плащом
+itm_dale_armor_j_pl|Дэйльская кольчуга с плащом
+itm_dale_armor_k|Дэйльская броня знатного воина
+itm_dale_armor_k_pl|Дэйльская броня знатного воина
+itm_dale_armor_l|Дэйльская броня с оплечьем
+itm_dale_armor_l_pl|Дэйльская броня с оплечьем
+itm_dale_helmet_a|Шлем с носовой пластиной и кольчугой
+itm_dale_helmet_a_pl|Шлем с носовой пластиной и кольчугой
+itm_dale_helmet_b|Шлем с носовой пластиной и кожаной бармицей
+itm_dale_helmet_b_pl|Шлем с носовой пластиной и кожаной бармицей
+itm_dale_helmet_c|Округлый шлем с кольчугой
+itm_dale_helmet_c_pl|Округлый шлем с кольчугой
+itm_dale_helmet_d|Округлый шлем с кожаной бармицей
+itm_dale_helmet_d_pl|Округлый шлем с кожаной бармицей
+itm_dale_helmet_e|Конический шлем с кожаной бармицей
+itm_dale_helmet_e_pl|Конический шлем с кожаной бармицей
+itm_dale_helmet_f|Конический шлем с кольчугой
+itm_dale_helmet_f_pl|Конический шлем с кольчугой
+itm_dale_sword|Дэйльский короткий меч
+itm_dale_sword_pl|Дэйльский короткий меч
+itm_dale_sword_long|Дэйльский длинный меч
+itm_dale_sword_long_pl|Дэйльский длинный меч
+itm_dale_sword_broad|Дэйльский палаш
+itm_dale_sword_broad_pl|Дэйльский палаш
+itm_dale_pike|Дэйльское копьё
+itm_dale_pike_pl|Дэйльское копьё
+itm_dale_billhook|Дэйльская глефа
+itm_dale_billhook_pl|Дэйльская глефа
+itm_dale_shield_a|Дэйльский щит
+itm_dale_shield_a_pl|Дэйльский щит
+itm_dale_shield_b|Дэйльский щит
+itm_dale_shield_b_pl|Дэйльский щит
+itm_dale_shield_c|Дэйльский щит
+itm_dale_shield_c_pl|Дэйльский щит
+itm_dale_shield_d|Дэйльский щит
+itm_dale_shield_d_pl|Дэйльский щит
+itm_umb_armor_a|Корсарская кожаная броня
+itm_umb_armor_a_pl|Корсарская кожаная броня
+itm_umb_armor_a1|Корсарская тяжёлая кожаная броня
+itm_umb_armor_a1_pl|Корсарская тяжёлая кожаная броня
+itm_umb_armor_b|Корсарская броня налётчика
+itm_umb_armor_b_pl|Корсарская броня налётчика
+itm_umb_armor_c|Корсарская подбитая броня
+itm_umb_armor_c_pl|Корсарская подбитая броня
+itm_umb_armor_d|Корсарская тяжёлая подбитая броня
+itm_umb_armor_d_pl|Корсарская тяжёлая подбитая броня
+itm_umb_armor_e|Корсарская подбитая броня налётчика
+itm_umb_armor_e_pl|Корсарская подбитая броня налётчика
+itm_umb_armor_f|Корсарский хауберк
+itm_umb_armor_f_pl|Корсарский хауберк
+itm_umb_armor_g|Корсарский хауберк с наплечниками
+itm_umb_armor_g_pl|Корсарский хауберк с наплечниками
+itm_umb_armor_h|Корсарская тяжёлая броня налётчика
+itm_umb_armor_h_pl|Корсарская тяжёлая броня налётчика
+itm_umb_helm_a|Корсарский шлем-раковина
+itm_umb_helm_a_pl|Корсарский шлем-раковина
+itm_umb_helm_b|Корсарский шлем-раковина
+itm_umb_helm_b_pl|Корсарский шлем-раковина
+itm_umb_helm_c|Корсарский шлем ополченца
+itm_umb_helm_c_pl|Корсарский шлем ополченца
+itm_umb_helm_d|Корсарский шлем ополченца
+itm_umb_helm_d_pl|Корсарский шлем ополченца
+itm_umb_helm_e|Корсарский шлем налётчика
+itm_umb_helm_e_pl|Корсарский шлем налётчика
+itm_umb_helm_f|Корсарский шлем налётчика
+itm_umb_helm_f_pl|Корсарский шлем налётчика
+itm_umb_hood|Умбарский капюшон
+itm_umb_hood_pl|Умбарский капюшон
+itm_corsair_boots|Корсарские сапоги
+itm_corsair_boots_pl|Корсарские сапоги
+itm_umb_shield_a|Корсарский баклер
+itm_umb_shield_a_pl|Корсарский баклер
+itm_umb_shield_b|Корсарский баклер
+itm_umb_shield_b_pl|Корсарский баклер
+itm_umb_shield_c|Корсарский баклер
+itm_umb_shield_c_pl|Корсарский баклер
+itm_umb_shield_d|Корсарский баклер
+itm_umb_shield_d_pl|Корсарский баклер
+itm_umb_shield_e|Корсарский баклер
+itm_umb_shield_e_pl|Корсарский баклер
+itm_umbar_cutlass|Умбарская абордажная сабля
+itm_umbar_cutlass_pl|Умбарская абордажная сабля
+itm_kraken|Абордажная сабля Кракена
+itm_kraken_pl|Абордажная сабля Кракена
+itm_umbar_rapier|Умбарский меч
+itm_umbar_rapier_pl|Умбарский меч
+itm_corsair_harpoon|Корсарский гарпун
+itm_corsair_harpoon_pl|Корсарский гарпун
+itm_corsair_sword|Корсарский экет
+itm_corsair_sword_pl|Корсарский экет
+itm_corsair_throwing_dagger|Умбарские метательные ножи
+itm_corsair_throwing_dagger_pl|Умбарские метательные ножи
+itm_umbar_pike|Умбарская пика
+itm_umbar_pike_pl|Умбарская пика
+itm_woodman_tunic|Рубашка лесовика
+itm_woodman_tunic_pl|Рубашка лесовика
+itm_woodman_scout|Накидка лесовика-разведчика
+itm_woodman_scout_pl|Накидка лесовика-разведчика
+itm_woodman_padded|Подбитая броня лесовика
+itm_woodman_padded_pl|Подбитая броня лесовика
+itm_beorn_tunic|Беорнингская одежда
+itm_beorn_tunic_pl|Беорнингская одежда
+itm_beorn_padded|Беорнингская подбитая броня
+itm_beorn_padded_pl|Беорнингская подбитая броня
+itm_beorn_heavy|Беорнингская тяжёлая броня
+itm_beorn_heavy_pl|Беорнингская тяжёлая броня
+itm_beorn_berserk|Беорнингская одежда берсерка
+itm_beorn_berserk_pl|Беорнингская одежда берсерка
+itm_beorn_chief|Беорнингская одежда вождя
+itm_beorn_chief_pl|Беорнингская одежда вождя
+itm_beorn_helmet|Северний черепник
+itm_beorn_helmet_pl|Северний черепник
+itm_beorn_shield|Северный щит
+itm_beorn_shield_pl|Северный щит
+itm_beorn_axe|Беорнингский топор
+itm_beorn_axe_pl|Беорнингский топор
+itm_beorn_staff|Посох лесовика
+itm_beorn_staff_pl|Посох лесовика
+itm_beorn_battle_axe|Беорнингский боевой топор
+itm_beorn_battle_axe_pl|Беорнингский боевой топор
+itm_dwarf_shield_a|Гномий щит
+itm_dwarf_shield_a_pl|Гномий щит
+itm_dwarf_shield_b|Гномий щит
+itm_dwarf_shield_b_pl|Гномий щит
+itm_dwarf_shield_c|Гномий щит
+itm_dwarf_shield_c_pl|Гномий щит
+itm_dwarf_shield_d|Гномий щит
+itm_dwarf_shield_d_pl|Гномий щит
+itm_dwarf_shield_f|Гномий щит
+itm_dwarf_shield_f_pl|Гномий щит
+itm_dwarf_shield_g|Гномий щит
+itm_dwarf_shield_g_pl|Гномий щит
+itm_dwarf_shield_i|Гномий щит
+itm_dwarf_shield_i_pl|Гномий щит
+itm_dwarf_shield_j|Гномий щит
+itm_dwarf_shield_j_pl|Гномий щит
+itm_dwarf_shield_k|Гномий щит
+itm_dwarf_shield_k_pl|Гномий щит
+itm_dwarf_shield_l|Гномий щит
+itm_dwarf_shield_l_pl|Гномий щит
+itm_dwarf_sword_a|Гномий меч
+itm_dwarf_sword_a_pl|Гномий меч
+itm_dwarf_sword_b|Гномий меч
+itm_dwarf_sword_b_pl|Гномий меч
+itm_dwarf_sword_c|Гномий меч
+itm_dwarf_sword_c_pl|Гномий меч
+itm_dwarf_sword_d|Гномий меч
+itm_dwarf_sword_d_pl|Гномий меч
+itm_dwarf_adz|Гномье тесло
+itm_dwarf_adz_pl|Гномье тесло
+itm_dwarf_great_axe|Гномий большой топор
+itm_dwarf_great_axe_pl|Гномий большой топор
+itm_dwarf_great_mattock|Гномья большая мотыга
+itm_dwarf_great_mattock_pl|Гномья большая мотыга
+itm_dwarf_great_pick|Гномья большая кирка
+itm_dwarf_great_pick_pl|Гномья большая кирка
+itm_dwarf_war_pick|Гномья боевая кирка
+itm_dwarf_war_pick_pl|Гномья боевая кирка
+itm_dwarf_mattock|Гномья мотыга
+itm_dwarf_mattock_pl|Гномья мотыга
+itm_dwarf_hand_axe|Гномий топорик
+itm_dwarf_hand_axe_pl|Гномий топорик
+itm_dwarf_throwing_axe|Гномий метательный топор
+itm_dwarf_throwing_axe_pl|Гномий метательный топор
 itm_dwarf_spear|Гномье копьё
+itm_dwarf_spear_pl|Гномье копьё
 itm_dwarf_spear_b|Гномья пика
+itm_dwarf_spear_b_pl|Гномья пика
 itm_dwarf_spear_c|Гномья пика
-itm_dwarf_helm_a|Чепец Гномов
-itm_dwarf_helm_b|Гномий Чепец с Маской
-itm_dwarf_helm_c|Гномий Шлем с Маской
-itm_dwarf_helm_h|Шлем Гномов
-itm_dwarf_helm_i|Фризийский Шлем Гномов
-itm_dwarf_helm_j|Фризийская Маска Гномов
-itm_dwarf_helm_l|Капюшон Гномов
-itm_dwarf_helm_m|Железное Лицо Гномов
-itm_dwarf_helm_o|Высокий Шлем Гномов
-itm_dwarf_helm_p|Шлем Короля Гномов
-itm_dwarf_helm_q|Шлем Гнома-Шахтёра
-itm_dwarf_helm_r|Шляпа Гнома-Шахтёра
-itm_dwarf_helm_u|Круглая Маска Гномов
-itm_dwarf_helm_v|Кольчужный Шлем с Забралом Гномов
-itm_dwarf_helm_x|Шлем с Забралом Гномов
-itm_dwarf_armor_a|Гномья Туника Поверх Кольчуги
-itm_leather_dwarf_armor|Гномья Одежда Поверх Кольчуги
-itm_dwarf_vest|Броня Гномов-Лучников
-itm_dwarf_armor_b|Гномья Одежда Поверх Туники
-itm_dwarf_armor_c|Гномья Чешуя Поверх Кольчуги
-itm_leather_dwarf_armor_b|Туника Гномов
-itm_dwarf_vest_b|Туника Железных Холмов
-itm_dwarf_pad_boots|Гномьи Сапоги с Подкладкой
-itm_dwarf_chain_boots|Гномьи Кольчужные Штаны
-itm_dwarf_scale_boots|Гномьи Чешуйчатые Сапоги
+itm_dwarf_spear_c_pl|Гномья пика
+itm_dwarf_helm_a|Гномий койф
+itm_dwarf_helm_a_pl|Гномий койф
+itm_dwarf_helm_b|Гномий койф с маской
+itm_dwarf_helm_b_pl|Гномий койф с маской
+itm_dwarf_helm_c|Гномий шлем с маской
+itm_dwarf_helm_c_pl|Гномий шлем с маской
+itm_dwarf_helm_h|Гномий шлем
+itm_dwarf_helm_h_pl|Гномий шлем
+itm_dwarf_helm_i|Гномий хохлатый шлем
+itm_dwarf_helm_i_pl|Гномий хохлатый шлем
+itm_dwarf_helm_j|Гномья хохлатая маска
+itm_dwarf_helm_j_pl|Гномья хохлатая маска
+itm_dwarf_helm_l|Гномий капюшон
+itm_dwarf_helm_l_pl|Гномий капюшон
+itm_dwarf_helm_m|Гномий шлем с забралом
+itm_dwarf_helm_m_pl|Гномий шлем с забралом
+itm_dwarf_helm_o|Гномий топфхельм с носовой пластиной
+itm_dwarf_helm_o_pl|Гномий топхфельм с носовой пластиной
+itm_dwarf_helm_p|Гномий королевский шлем
+itm_dwarf_helm_p_pl|Гномий королевский шлем
+itm_dwarf_helm_q|Гномий шлем рудокопа
+itm_dwarf_helm_q_pl|Гномий шлем рудокопа
+itm_dwarf_helm_r|Гномий шлем рудокопа
+itm_dwarf_helm_r_pl|Гномий шлем рудокопа
+itm_dwarf_helm_u|Гномий округлый шлем с маской
+itm_dwarf_helm_u_pl|Гномий округлый шлем с маской
+itm_dwarf_helm_v|Гномий салад с кольчугой
+itm_dwarf_helm_v_pl|Гномий салад с кольчугой
+itm_dwarf_helm_x|Гномая салад с маской
+itm_dwarf_helm_x_pl|Гномая салад с маской
+itm_dwarf_armor_a|Гномая одежда поверх кольчуги
+itm_dwarf_armor_a_pl|Гномая одежда поверх кольчуги
+itm_leather_dwarf_armor|Гномья стёганка поверх кольчуги
+itm_leather_dwarf_armor_pl|Гномья стёганка поверх кольчуги
+itm_dwarf_vest|Гномья броня лучника
+itm_dwarf_vest_pl|Гномья броня лучника
+itm_dwarf_armor_b|Гномья стёганка поверх рубашки
+itm_dwarf_armor_b_pl|Гномья стёганка поверх рубашки
+itm_dwarf_armor_c|Гномья чешуйчатая броня поверх кольчуги
+itm_dwarf_armor_c_pl|Гномья чешуйчатая броня поверх кольчуги
+itm_leather_dwarf_armor_b|Гномья одежда
+itm_leather_dwarf_armor_b_pl|Гномья одежда
+itm_dwarf_vest_b|Рубашка Железных холмов
+itm_dwarf_vest_b_pl|Рубашка Железных холмов
+itm_dwarf_pad_boots|Гномьи подбитые сапоги
+itm_dwarf_pad_boots_pl|Гномподбитые сапоги
+itm_dwarf_chain_boots|Гномьи кольчужные чулки
+itm_dwarf_chain_boots_pl|Гномьи кольчужные чулки
+itm_dwarf_scale_boots|Гномьи чешуйчатые сапоги
+itm_dwarf_scale_boots_pl|Гномьи чешуйчатые сапоги
 itm_good_mace|Булава
-itm_far_harad_shield_paint|Плетёный Щит
-itm_nazgulrobe|Роба Назгула
-itm_whiterobe|Белая Роба
-itm_mordor_banner|Знамя Мордора
-itm_isengard_banner|Знамя Изенгарда
-itm_woodelf_banner|Знамя Лихолесья
-itm_lorien_banner|Знамя Лотлориэна
-itm_imladris_banner|Знамя Имладриса
-itm_gondor_lance_banner|Копьё со Знаменем Гондора
-itm_amroth_lance_banner|Копьё со Знаменем Дол Амрота
-itm_rohan_lance_banner_sun|Копьё с Солнцем на Знамене Рохана
-itm_rohan_lance_banner_horse|Копьё с Конем на Знамене Рохана
-itm_ent_body|Тело Энта
-itm_ent_head_helm|Голова Энта
-itm_ent_head_helm2|Голова Энта
-itm_ent_head_helm3|Голова Энта
-itm_ent_feet_boots|Ноги Энта
-itm_ent_hands|Руки Энта
-itm_galadriel|Костюм Галадриэль
-itm_ent_water|Странная Чаша с Водой
+itm_good_mace_pl|Булава
+itm_far_harad_shield_paint|Плетёный щит
+itm_far_harad_shield_paint_pl|Плетёный щит
+itm_nazgulrobe|Мантия назгула
+itm_nazgulrobe_pl|Мантия назгула
+itm_whiterobe|Белая мантия
+itm_whiterobe_pl|Белая мантия
+itm_mordor_banner|Мордорское знамя
+itm_mordor_banner_pl|Мордорское знамя
+itm_isengard_banner|Изенгардское знамя
+itm_isengard_banner_pl|Изенгардское знамя
+itm_woodelf_banner|Темнолесское знамя
+itm_woodelf_banner_pl|Темнолесское знамя
+itm_lorien_banner|Лориэнское знамя
+itm_lorien_banner_pl|Лориэнское знамя
+itm_imladris_banner|Ривендельское знамя
+itm_imladris_banner_pl|Ривендельское знамя
+itm_gondor_lance_banner|Гондорское кавалерийское копьё с флажком
+itm_gondor_lance_banner_pl|Гондорское кавалерийское копьё с флажком
+itm_amroth_lance_banner|Дол-амротское кавалерийское копьё с флажком
+itm_amroth_lance_banner_pl|Дол-амротское кавалерийское копьё с флажком
+itm_rohan_lance_banner_sun|Роханское кавалерийское копьё со знаменем солнца
+itm_rohan_lance_banner_sun_pl|Роханское кавалерийское копьё со знаменем солнца
+itm_rohan_lance_banner_horse|Роханское кавалерийское копьё со знаменем коня
+itm_rohan_lance_banner_horse_pl|Роханское кавалерийское копьё со знаменем коня
+itm_merry_outfit|Хоббитская одежда
+itm_merry_outfit_pl|Хоббитская одежда
+itm_pippin_outfit|Хоббитская одежда
+itm_pippin_outfit_pl|Хоббитская одежда
+itm_ent_body|Энтийское туловище
+itm_ent_body_pl|Энтийское туловище
+itm_ent_head_helm|Энтийская голова
+itm_ent_head_helm_pl|Энтийская голова
+itm_ent_head_helm2|Энтийская голова
+itm_ent_head_helm2_pl|Энтийская голова
+itm_ent_head_helm3|Энтийская голова
+itm_ent_head_helm3_pl|Энтийская голова
+itm_ent_feet_boots|Энтийские ноги
+itm_ent_feet_boots_pl|Энтийские ноги
+itm_ent_hands|Энтийские руки
+itm_ent_hands_pl|Энтийские руки
+itm_galadriel|Костюм Галадриэли
+itm_galadriel_pl|Костюм Галадриэли
+itm_empty_hands|голые руки
+itm_empty_hands_pl|голые руки
+itm_empty_legs|голые ноги
+itm_empty_legs_pl|голые ноги
+itm_empty_head|непокрытая голова
+itm_empty_head_pl|непокрытая голова
+itm_ent_water|Странная чаша с водой
+itm_ent_water_pl|Странная чаша с водой
 itm_map|Карты Средиземья
-itm_athelas_reward|Ацелас
-itm_phial_reward|Свет Галадриэль
-itm_scroll_reward|О Падении Гондолина
-itm_hammer_reward|Молот Кузнеца
-itm_khand_knife_reward|Кхандский Жертвенный Кинжал
-itm_angmar_whip_reward|Кнут Хозяина
+itm_map_pl|Карты Средиземья
+itm_athelas_reward|Побег ателаса
+itm_athelas_reward_pl|Побег ателаса
+itm_phial_reward|Светоч Галадриэли
+itm_phial_reward_pl|Светоч Галадриэли
+itm_scroll_reward|О падении Гондолина
+itm_scroll_reward_pl|О падении Гондолина
+itm_hammer_reward|Кузнечный молот
+itm_hammer_reward_pl|Кузнечный молот
+itm_khand_knife_reward|Хандский жертвенный кинжал
+itm_khand_knife_reward_pl|Хандский жертвенный кинжал
+itm_angmar_whip_reward|Кнут Господина
+itm_angmar_whip_reward_pl|Кнут Господина
 itm_horn_gondor_reward|Рог Гондора
-itm_harad_totem_reward|Тотем Харада
-itm_elven_amulet_reward|Эльфийский Амулет
-itm_torque_reward|Злое Крученое Металлическое Ожерелье
-itm_orc_brew|Орочье Пойло
+itm_horn_gondor_reward_pl|Рог Гондора
+itm_harad_totem_reward|Харадский тотем
+itm_harad_totem_reward_pl|Харадский тотем
+itm_elven_amulet_reward|Эльфийский амулет
+itm_elven_amulet_reward_pl|Эльфийский амулет
+itm_torque_reward|Ожерелье зла
+itm_torque_reward_pl|Ожерелье зла
+itm_orc_brew|Орочье пойло
+itm_orc_brew_pl|Орочье пойло
 itm_rohan_saddle|Седло Тенгела
-itm_mearas_reward|Меарасский Жеребец
+itm_rohan_saddle_pl|Седло Тенгела
+itm_mearas_reward|Жеребец-меар
+itm_mearas_reward_pl|Жеребец-меар
 itm_sword_of_arathorn|Меч Араторна
-itm_riv_armor_reward|Ривенделлская Украшенная Броня
-itm_westernesse1h_reward|Меч Вестернесса
-itm_westernesse2h_reward|Меч Великой Змеи
-itm_mirkwood_sword_reward|Реликтовый Меч Зеленолесья
-itm_nazgul_sword|Меч Назгула
-itm_cooking_cauldron|Котёл для Готовки
+itm_sword_of_arathorn_pl|Меч Араторна
+itm_riv_armor_reward|Ривендельская украшенная броня
+itm_riv_armor_reward_pl|Ривендельская украшенная броня
+itm_westernesse1h_reward|Нуменорский меч
+itm_westernesse1h_reward_pl|Нуменорский меч
+itm_westernesse2h_reward|Меч Великого змея
+itm_westernesse2h_reward_pl|Меч Великого змея
+itm_mirkwood_sword_reward|Зеленолесский священный меч
+itm_mirkwood_sword_reward_pl|Зеленолесский священный меч
+itm_nazgul_sword|Меч назгула
+itm_nazgul_sword_pl|Меч назгула
+itm_cooking_cauldron|Котёл
+itm_cooking_cauldron_pl|Котёл
 itm_eorl_cavalry_sword|Меч Эорла
+itm_eorl_cavalry_sword_pl|Меч Эорла
 itm_garlic_reward|Чеснок
+itm_garlic_reward_pl|Чеснок
 itm_silmarillion_reward|Сильмариллион
+itm_silmarillion_reward_pl|Сильмариллион
 itm_herbarium_reward|Гербарий Средиземья
+itm_herbarium_reward_pl|Гербарий Средиземья
 itm_book_of_moria|Книга Мазарбул
-itm_ring_a_reward|Тулкарисил
-itm_ring_b_reward|Финварисил
+itm_book_of_moria_pl|Книга Мазарбул
+itm_ring_a_reward|Тулкарисиль
+itm_ring_a_reward_pl|Тулкарисиль
+itm_ring_b_reward|Финварисиль
+itm_ring_b_reward_pl|Финварисиль
 itm_dale_bow_reward|Лук Барда
-itm_explosive_reward|Мина Изенгарда
-itm_corsair_trident|Трезубец Морской Ярости
-itm_crebain_reward|Кребайн Изенгарда
-itm_miruvor_reward|Фляга Мирувора
-itm_wheeled_cage|Гигантская Клеть на Колёсах
-itm_orc_throwing_axes_reward|Гундабадский Летающий Топор
-itm_corsair_throwing_dagger_reward|Отравленные Метательные Клинки
-itm_dwarf_shield_reward|Мифриловый Щит Гномов
-itm_dwarf_great_axe_reward|Гномий Острый Топор
-itm_isen_uruk_heavy_reward|Броня Урук-хая Генерала
-itm_lorien_bow_reward|Нолдорский Лук
-itm_lorien_sword_reward|Меч Галадримов
-itm_dale_sword_reward|Меч Начальника Марша
-itm_dale_armor_reward|Эсгаротское Благородное Ожерелье
+itm_dale_bow_reward_pl|Лук Барда
+itm_explosive_reward|Изенгардская мина
+itm_explosive_reward_pl|Изенгардская мина
+itm_corsair_trident|Трезубец гнева моря
+itm_corsair_trident_pl|Трезубец гнева моря
+itm_crebain_reward|Изенгардский кребайн
+itm_crebain_reward_pl|Изенгардский кребайн
+itm_miruvor_reward|Фляжка мирувора
+itm_miruvor_reward_pl|Фляжка мирувора
+itm_wheeled_cage|Огромная клетка на колёсах
+itm_wheeled_cage_pl|Огромная клетка на колёсах
+itm_orc_throwing_axes_reward|Гундабадские метательные топоры 
+itm_orc_throwing_axes_reward_pl|Гундабадские метательные топоры
+itm_corsair_throwing_dagger_reward|Отравленные метательные кинжалы
+itm_corsair_throwing_dagger_reward_pl|Отравленные метательные кинжалы
+itm_dwarf_shield_reward|Гномий мифриловый щит 
+itm_dwarf_shield_reward_pl|Гномий мифриловый щит
+itm_dwarf_great_axe_reward|Гномья острая секира
+itm_dwarf_great_axe_reward_pl|Гномья острая секира
+itm_isen_uruk_heavy_reward|Броня полководца урук-хай
+itm_isen_uruk_heavy_reward_pl|Броня полководца урук-хай
+itm_lorien_bow_reward|Нолдорский лук
+itm_lorien_bow_reward_pl|Нолдорский лук
+itm_lorien_sword_reward|Галадримский меч
+itm_lorien_sword_reward_pl|Галадримский меч
+itm_dale_sword_reward|Меч стража границ
+itm_dale_sword_reward_pl|Меч стража границ
+itm_dale_armor_reward|Эсгаротский горжет знатного воина
+itm_dale_armor_reward_pl|Эсгаротский горжет знатного воина
 itm_leather_gloves_reward|Охотничьи перчатки
-itm_beorn_shield_reward|Щит Лесника
-itm_beorn_axe_reward|Медвежий Топор
-itm_moria_arrow_reward|Морийские Отравленные Стрелы
-itm_khamul_helm|Шлем Кхамула
-itm_gandstaff|Посох Мага
-itm_sarustaff|Посох Мага
-itm_rohan_armor_th|Роханская Королевская Броня
-itm_denethor_robe|Роба Управителя
+itm_leather_gloves_reward_pl|Охотничьи перчатки
+itm_beorn_shield_reward|Щит лесовика
+itm_beorn_shield_reward_pl|Щит лесовика
+itm_beorn_axe_reward|Медвежья секира
+itm_beorn_axe_reward_pl|Медвежья секира
+itm_moria_arrow_reward|Морийские отравленные стрелы
+itm_moria_arrow_reward_pl|Морийские отравленные стрелы
+itm_khamul_helm|Шлем Хамула
+itm_khamul_helm_pl|Шлем Хамула
+itm_gandstaff|Посох мага
+itm_gandstaff_pl|Посох мага
+itm_sarustaff|Посох мага
+itm_sarustaff_pl|Посох мага
+itm_rohan_armor_th|Роханская королевская броня
+itm_rohan_armor_th_pl|Роханская королевская броня
+itm_denethor_robe|Мантия Наместника
+itm_denethor_robe_pl|Мантия Наместника
 itm_prisoner_coll_chain|Кандалы
-itm_witchking_helmet|Ужасный Шлем
-itm_lorien_royal_armor|Лориенская Королевская Броня
-itm_feet_chains|Кандалы на Ноги
-itm_feet_chains_dwarf|Кандалы на Ноги
+itm_prisoner_coll_chain_pl|Кандалы
+itm_witchking_helmet|Ужасный шлем
+itm_witchking_helmet_pl|Ужасный шлем
+itm_lorien_royal_armor|Лориэнская королевская броня
+itm_lorien_royal_armor_pl|Лориэнская королевская броня
+itm_feet_chains|Кандалы на ноги
+itm_feet_chains_pl|Кандалы на ноги
+itm_feet_chains_dwarf|Кандалы на ноги
+itm_feet_chains_dwarf_pl|Кандалы на ноги
 itm_spider|Паук
+itm_spider_pl|Паук
 itm_bear|Медведь
+itm_bear_pl|Медведь
 itm_wolf|Волк
-itm_defiled_armor_gondor|Грязное Гондорское Сюрко Правителя
-itm_defiled_armor_rohan|Грязная Роханская Кольчуга
-itm_defiled_armor_dale|Грязная Дейлская Благородная Броня
+itm_wolf_pl|Волк
+itm_defiled_armor_gondor|Испорченный гондорский доспех командира
+itm_defiled_armor_gondor_pl|Испорченный гондорский доспех командира
+itm_defiled_armor_rohan|Испорченый роханский хауберк
+itm_defiled_armor_rohan_pl|Испорченый роханский хауберк
+itm_defiled_armor_dale|Испорченный дэйльский благородный доспех
+itm_defiled_armor_dale_pl|Испорченный дэйльский благородный доспех
+itm_save_compartibility_item10|INVALID ITEM
+itm_save_compartibility_item10_pl|INVALID ITEM
