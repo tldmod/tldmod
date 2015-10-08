@@ -6,12 +6,12 @@ dlga_mutiny_talk_1:mutiny_talk_2|なんだと？上官に逆らおうという�
 dlga_mutiny_talk_2:close_window|それで、話があるんだけどさ・・・^みんな俺が指揮官どのになればいいって言うんだ・・・ あんたを殺してな！
 dlga_start:troll_introduce_1|何だ？
 dlga_start:troll_talk_1|死にたいのか？
-dlga_troll_introduce_1:troll_goodbye|えっ！トロルがしゃべった？！
+dlga_troll_introduce_1:troll_goodbye|えっ！トロールがしゃべった？！
 dlga_troll_introduce_1:close_window|ささよさようなら。
-dlga_troll_talk_1:troll_talk_2|おいトロル何か言えよトロル。
+dlga_troll_talk_1:troll_talk_2|おいトロール何か言えよトロール。
 dlga_troll_talk_1:close_window|ささよさようなら。
 dlga_troll_talk_2:troll_talk_3|相手してやろう！^^{s4}
-dlga_troll_beaten:troll_talk_1|おまえは賢いな、トロルでは勝てんわ！
+dlga_troll_beaten:troll_talk_1|おまえは賢いな、トロールでは勝てんわ！
 dlga_troll_goodbye:close_window|グワハハハハハハハハハハハハハハハハハ！
 dlga_start:hobbit_merry_talk_met|やあ、また会ったね、 {playername}！
 dlga_start:hobbit_pippin_talk_met|やあ、また会ったね、 {playername}！
