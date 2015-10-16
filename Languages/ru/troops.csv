@@ -627,29 +627,29 @@ trp_warg_ghost_a3a_pl|Варги в броне
 trp_warg_ghost_h|Крупный варг
 trp_warg_ghost_h_pl|Крупные варги
 trp_uruk_hai_tracker|Урук-хай-следопыт
-trp_uruk_hai_tracker_pl|Урук-хаи-следопыты
+trp_uruk_hai_tracker_pl|Урук-хай-следопыты
 trp_large_uruk_hai_tracker|Крупный урук-хай-следопыт
-trp_large_uruk_hai_tracker_pl|Крупные урук-хаи-следопыты
+trp_large_uruk_hai_tracker_pl|Крупные урук-хай-следопыты
 trp_fighting_uruk_hai_tracker|Бойцовый урук-хай-следопыт
-trp_fighting_uruk_hai_tracker_pl|Бойцовые урук-хаи-следопыты
+trp_fighting_uruk_hai_tracker_pl|Бойцовые урук-хай-следопыты
 trp_fighting_uruk_hai_berserker|Бойцовый урук-хай-берсерк
-trp_fighting_uruk_hai_berserker_pl|Бойцовые урук-хаи-берсерки
+trp_fighting_uruk_hai_berserker_pl|Бойцовые урук-хай-берсерки
 trp_uruk_snaga_of_isengard|Новорожденный урук-хай
-trp_uruk_snaga_of_isengard_pl|Новорожденнык урук-хаи
+trp_uruk_snaga_of_isengard_pl|Новорожденные урук-хай
 trp_uruk_hai_of_isengard|Урук-хай Изенгарда
-trp_uruk_hai_of_isengard_pl|Урук-хаи Изенгарда
+trp_uruk_hai_of_isengard_pl|Урук-хай Изенгарда
 trp_large_uruk_hai_of_isengard|Крупный урук-хай Изенгарда
-trp_large_uruk_hai_of_isengard_pl|Крупные урук-хаи Изенгарда
+trp_large_uruk_hai_of_isengard_pl|Крупные урук-хай Изенгарда
 trp_fighting_uruk_hai_warrior|Бойцовый урук-хай
-trp_fighting_uruk_hai_warrior_pl|Бойцовые урук-хаи
+trp_fighting_uruk_hai_warrior_pl|Бойцовые урук-хай
 trp_fighting_uruk_hai_champion|Непобедимый бойцовый урук-хай
-trp_fighting_uruk_hai_champion_pl|Непобедимые бойцовые урук-хаи
+trp_fighting_uruk_hai_champion_pl|Непобедимые бойцовые урук-хай
 trp_uruk_hai_pikeman|Урук-хай-пикинёр
-trp_uruk_hai_pikeman_pl|Урук-хаи-пикинёры
+trp_uruk_hai_pikeman_pl|Урук-хай-пикинёры
 trp_fighting_uruk_hai_pikeman|Бойцовый урук-хай-пикинёр
-trp_fighting_uruk_hai_pikeman_pl|Бойцовые урук-хаи-ипикинёры
+trp_fighting_uruk_hai_pikeman_pl|Бойцовые урук-хай-ипикинёры
 trp_urukhai_standard_bearer|Урук-хай-знаменосец
-trp_urukhai_standard_bearer_pl|Урук-хаи-знаменосцы
+trp_urukhai_standard_bearer_pl|Урук-хай-знаменосцы
 trp_uruk_snaga_of_mordor|Урук-снага Мордора
 trp_uruk_snaga_of_mordor_pl|Уруки-снаги Мордора
 trp_uruk_of_mordor|Урук Мордора
@@ -671,7 +671,7 @@ trp_troll_of_moria_pl|Морийские тролли
 trp_armoured_troll|Тролль в доспехах
 trp_armoured_troll_pl|Тролли в доспехах
 trp_olog_hai|Олог-хай Мордора
-trp_olog_hai_pl|Олог-хаи Мордора
+trp_olog_hai_pl|Олог-хай Мордора
 trp_ent|Энт
 trp_ent_pl|Энты
 trp_orc_snaga_of_guldur|Орк-снага Дол-Гулдура
@@ -834,18 +834,18 @@ trp_bandit|Бандит
 trp_bandit_pl|Бандиты
 trp_brigand|Разбойник
 trp_brigand_pl|Бандиты
-trp_mountain_bandit|Горный Бандит
-trp_mountain_bandit_pl|Горные Разбойники
-trp_forest_bandit|Лесной Бандит
-trp_forest_bandit_pl|Лесные Разбойники
+trp_mountain_bandit|Горный разбойник
+trp_mountain_bandit_pl|Горные разбойники
+trp_forest_bandit|Лесной разбойник
+trp_forest_bandit_pl|Лесные разбойники
 trp_sea_raider|Морской налётчик
 trp_sea_raider_pl|Морские налётчики
-trp_steppe_bandit|Степной Бандит
-trp_steppe_bandit_pl|Степные Бандиты
-trp_manhunter|Охотник на людей
-trp_manhunter_pl|Охотники на людей
-trp_kidnapped_girl|Похищенная Девушка
-trp_kidnapped_girl_pl|Похищенные Девушки
+trp_steppe_bandit|Степной разбойник
+trp_steppe_bandit_pl|Степные разбойники
+trp_manhunter|Охотник за головами
+trp_manhunter_pl|Охотники за головами
+trp_kidnapped_girl|Похищенная девушка
+trp_kidnapped_girl_pl|Похищенные девушки
 trp_refugee|Беженец
 trp_refugee_pl|Беженцы
 trp_peasant_woman|Крестьянка
@@ -887,7 +887,7 @@ trp_walker_woman_rohan_d|Роханская девушка
 trp_walker_woman_gondor_b|Гондорская женщина
 trp_walker_woman_gondor_bw|Гондорская женщина
 trp_walker_woman_gondor_w|Гондорский знатный человек
-trp_ramun_the_slave_trader|Рамун Работорговец
+trp_ramun_the_slave_trader|Рамун-работорговец
 trp_guide|Быстрый Джимми
 trp_galeas|Галеас
 trp_farmer_from_bandit_village|Крестьянин
@@ -1517,12 +1517,12 @@ trp_dorwinion_bandit|Дорвинионский разбойник
 trp_dorwinion_bandit_pl|Дорвинионские разбойники
 trp_dorwinion_raider|Дорвинионский налётчик
 trp_dorwinion_raider_pl|Дорвинионские налётчики
-trp_city_guard|Городской Стражник
-trp_city_guard_pl|Городские Стражники
-trp_orc_sentry|Орк Часовой
-trp_orc_sentry_pl|Орки Часовые
+trp_city_guard|Городской стражник
+trp_city_guard_pl|Городские стражники
+trp_orc_sentry|Орк-часовой
+trp_orc_sentry_pl|Орки-часовые
 trp_uruk_hai_sentry|Урук-хай-часовой
-trp_uruk_hai_sentry_pl|Урук-хаи-часовые
+trp_uruk_hai_sentry_pl|Урук-хай-часовые
 trp_black_numenorean_sorcerer|Чёрный нуменорец-колдун
 trp_black_numenorean_sorcerer_pl|Чёрные нуменорцы-колдуны
 trp_black_numenorean_acolyte|Чёрный нуменорец-служитель

@@ -1,17 +1,17 @@
-dlga_start:mutiny_pretalk_1|おい、{playername}。 話があるんだけどさ・・・ ^みんな不満たらたらなんだぜ！ あちこち歩き回るばっかりで、 楽しいことないのかよ。
+dlga_start:mutiny_pretalk_1|おい、{playername}。 話があるんだけどさ・・・^みんな不満たらたらなんだぜ！ あちこち歩き回るばっかりで、 楽しいことないのかよ。
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|隊列を乱すな、この虫けらめ！ いま我々は戦争中で、私はおまえたちの指揮官だぞ！
 dlga_mutiny_pretalk_2:close_window|へえ、おおせのとおりに、指揮官どの、 おおせのとおりに・・・
-dlga_start:mutiny_talk_1|なあ、指揮官どの。 話があるんだけどさ・・・ みんなだいぶ機嫌が悪いぜ、 大大不機嫌だ！ ^ろくに人間の肉は食べれないし、 楽しいこともあんまりない。^みんなあんたは無能だって言ってるぜ、 指揮官どの！
+dlga_start:mutiny_talk_1|なあ、指揮官どの。 話があるんだけどさ・・・ みんなだいぶ機嫌が悪いぜ、 大大不機嫌だ！^ろくに人間の肉は食べれないし、 楽しいこともあんまりない。^みんなあんたは無能だって言ってるぜ、 指揮官どの！
 dlga_mutiny_talk_1:mutiny_talk_2|なんだと？上官に逆らおうというのか？^死をもって償わせるぞ、このウジ虫めが！
 dlga_mutiny_talk_2:close_window|それで、話があるんだけどさ・・・^みんな俺が指揮官どのになればいいって言うんだ・・・ あんたを殺してな！
 dlga_start:troll_introduce_1|何だ？
 dlga_start:troll_talk_1|死にたいのか？
-dlga_troll_introduce_1:troll_goodbye|えっ！トロールがしゃべった？！
+dlga_troll_introduce_1:troll_goodbye|えっ！トロルがしゃべった？！
 dlga_troll_introduce_1:close_window|ささよさようなら。
-dlga_troll_talk_1:troll_talk_2|おいトロール何か言えよトロール。
+dlga_troll_talk_1:troll_talk_2|おいトロル何か言えよトロル。
 dlga_troll_talk_1:close_window|ささよさようなら。
 dlga_troll_talk_2:troll_talk_3|相手してやろう！^^{s4}
-dlga_troll_beaten:troll_talk_1|おまえは賢いな、トロールでは勝てんわ！
+dlga_troll_beaten:troll_talk_1|おまえは賢いな、トロルでは勝てんわ！
 dlga_troll_goodbye:close_window|グワハハハハハハハハハハハハハハハハハ！
 dlga_start:hobbit_merry_talk_met|やあ、また会ったね、 {playername}！
 dlga_start:hobbit_pippin_talk_met|やあ、また会ったね、 {playername}！
@@ -535,9 +535,9 @@ dlga_defeat_hero_answer_1:close_window|おのれ。後悔する事になるぞ�
 dlga_defeat_hero_answer:defeat_hero_answer_2|どこへなりと行くがいい。二度と私に刃向わぬことだ。
 dlga_defeat_hero_answer_2:close_window|また会おう。
 dlga_start:fugitive_1|何だ、何か用かい？
-dlga_fugitive_1:fugitive_2|{s4}という名のおたずね者を探している。 おまえはその者と特徴が一致するのだ。
+dlga_fugitive_1:fugitive_2|{s4}という名のおたずね者を探している。おまえはその者と特徴が一致するのだ。
 dlga_fugitive_1:close_window|なんでもない。邪魔をしたな。
-dlga_fugitive_2:fugitive_3|何のことだ、俺は知らないぞ。 人違いだろう。
+dlga_fugitive_2:fugitive_3|何のことだ、俺は知らないぞ。人違いだろう。
 dlga_fugitive_3:fugitive_4|では武器を地面に落とせ。 身に覚えがないのなら、 恐れる理由はないはずだ。 警備隊長のところまで私に同行してもらおう。 私が人違いをしているかどうか、 確認を取る。
 dlga_fugitive_4:close_window|くそっ！てめえにはここで死んでもらう！
 dlga_start:follow_spy_talk|やあ、こんにちは。 今日は本当に良い天気だと思いませんか？ さて、話込むわけにも参りませんので、 私はこれで失礼させていただきます。
@@ -640,7 +640,7 @@ dlga_mayor_looters_quest_response:close_window|まだ報告するような事は
 dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|ええ、我々の斥候がすべて見届けましたよ。 これであの部族オークどもも、 おとなしくなるでしょう！^^[{s14}のリソースポイントを{reg14}x{reg15}獲得しました]
 dlga_mayor_looters_quest_destroyed_2:close_window|それだけではありませんよ！ あなたのおかげで、 部族オークどもの脅威はすべて取り除かれました。 もう襲撃を受けたという報告は来なくなりました。 まだ生き残りがいたとしても、 どこかへ逃げたか、 巣へ戻ったのでしょう。 これでこの辺りも少しは安全になりました！ これであなたの仕事は完了ということでいいでしょう、 {playername}殿。 感謝します、さようなら。
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|他になにかありますか？
-dlga_mayor_begin:close_window|よくやってくれました、{playername}殿。 連中を無事に届けてくれたようですね。 我らの上官に、 あなたは信頼できる方だと報告しておきます。 ^^[{s14}のリソースポイントを{reg14}獲得しました]
+dlga_mayor_begin:close_window|よくやってくれました、{playername}殿。 連中を無事に届けてくれたようですね。 我らの上官に、 あなたは信頼できる方だと報告しておきます。^^[{s14}のリソースポイントを{reg14}獲得しました]
 dlga_mayor_begin:move_cattle_herd_failed|{s9}に辿り着くまえに、 連中を見失ったそうだな。 おぬしの失態を 我らの上官に説明するのは ひと苦労だったぞ。 何か言う事はあるか？
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|すまない。だが、道中に攻撃を受けたのだ。
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|すまない。夜中に彼らを見失ってしまったのだ。
@@ -753,7 +753,7 @@ dlga_town_merchant_talk:merchant_gossip|最近の話題は？
 dlga_town_merchant_talk:close_window|ではまた。
 dlga_start:town_dweller_talk|何か？
 dlga_start:town_dweller_talk.1|ごきげんよう、指揮官殿。
-dlga_town_dweller_talk:town_dweller_ask_fugitive|{s4}という名のおたずね者を探している。 このあたりに潜んでいると聞いてやって来た。
+dlga_town_dweller_talk:town_dweller_ask_fugitive|{s4}という名のおたずね者を探している。このあたりに潜んでいると聞いてやって来た。
 dlga_town_dweller_ask_fugitive:close_window|ここはよそ者でも自由に出入りできます。 もしここに隠れているのなら、 探せば必ず見つかると思いますよ。
 dlga_town_dweller_talk:town_dweller_ask_info|この村について教えてくれないか{/しら}？
 dlga_town_dweller_talk:town_dweller_ask_info.1|この場所について教えてくれないか{/しら}？

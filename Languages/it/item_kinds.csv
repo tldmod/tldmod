@@ -538,17 +538,17 @@ itm_rohan_shield_f|Scudo di Rohan
 itm_rohan_shield_g|Scudo Reale di Rohan
 ; itm_rohan_light_greaves|Rohan Light Greaves
 ; itm_rohirrim_war_greaves|Rohirrim War Greaves
-; itm_rohan_shoes|Leather Shoes
+itm_rohan_shoes|Scarpe di Pelle
 ; itm_rohan_cav_sword|Rohan Riding Sword
-; itm_rohan_inf_sword|Rohan Sword
-; itm_rohan_spear|Rohan Spear
-; itm_rohan_lance|Rohan Lance
-; itm_rohan_sword_c|Rohan Sword
-; itm_rohirrim_short_axe|Rohirrim Short Axe
+itm_rohan_inf_sword|Spada di Rohan
+itm_rohan_spear|Lancia di Rohan
+itm_rohan_lance|Lancia di Rohan
+itm_rohan_sword_c|Spada di Rohan
+itm_rohirrim_short_axe|Ascia Corta dei Rohirrim
 ; itm_rohirrim_long_hafted_axe|Rohirrim Long Hafted Axe
-; itm_rohan_2h_sword|Rohan War Sword
+itm_rohan_2h_sword|Spada da Guerra di Rohan
 ; itm_mirkwood_light_scale|Light Woodelf Scale
-; itm_mirkwood_armor_a|Light Leather
+itm_mirkwood_armor_a|Pelle Leggera
 ; itm_mirkwood_armor_b|Light Quilted and Scale Armor
 ; itm_mirkwood_armor_c|Light Scale over Mail
 ; itm_mirkwood_armor_d|Light Quilted Surcoat
@@ -558,15 +558,15 @@ itm_rohan_shield_g|Scudo Reale di Rohan
 ; itm_mirkwood_war_spear|Mirkwood War Spear
 ; itm_mirkwood_short_spear|Mirkwood Spear
 ; itm_mirkwood_knife|Mirkwood White Knife
-; itm_mirkwood_sword|Mirkwood Sword
+itm_mirkwood_sword|Spada di Bosco Atro
 ; itm_mirkwood_spear_shield_a|Mirkwood Spearman Shield
 ; itm_mirkwood_spear_shield_b|Mirkwood War Shield
 ; itm_mirkwood_spear_shield_c|Mirkwood Swordsman Shield
 ; itm_mirkwood_helm_a|Mirkwood Archer Helm
-; itm_mirkwood_helm_b|Mirkwood Helm
+itm_mirkwood_helm_b|Elmo di Bosco Atro
 ; itm_mirkwood_helm_c|Mirkwood Royal Spearman Helm
 ; itm_mirkwood_helm_d|Mirkwood Royal Archer Helm
-; itm_mirkwood_boots|Mirkwood boots
+itm_mirkwood_boots|Stivali di Bosco Atro
 ; itm_mirkwood_leather_greaves|Mirkwood Leather Greaves
 itm_harad_tunic|Tunica Harad
 ; itm_harad_padded|Harondor Padded Armor
@@ -770,16 +770,16 @@ itm_harad_shield_a|Scudo Harondor
 ; itm_beorn_axe|Beorning Axe
 ; itm_beorn_staff|Woodman's Staff
 ; itm_beorn_battle_axe|Beorning War Axe
-; itm_dwarf_shield_a|Dwarven Shield
-; itm_dwarf_shield_b|Dwarven Shield
-; itm_dwarf_shield_c|Dwarven Shield
-; itm_dwarf_shield_d|Dwarven Shield
-; itm_dwarf_shield_f|Dwarven Shield
-; itm_dwarf_shield_g|Dwarven Shield
-; itm_dwarf_shield_i|Dwarven Shield
-; itm_dwarf_shield_j|Dwarven Shield
-; itm_dwarf_shield_k|Dwarven Shield
-; itm_dwarf_shield_l|Dwarven Shield
+itm_dwarf_shield_a|Scudo Nanico
+itm_dwarf_shield_b|Scudo Nanico
+itm_dwarf_shield_c|Scudo Nanico
+itm_dwarf_shield_d|Scudo Nanico
+itm_dwarf_shield_f|Scudo Nanico
+itm_dwarf_shield_g|Scudo Nanico
+itm_dwarf_shield_i|Scudo Nanico
+itm_dwarf_shield_j|Scudo Nanico
+itm_dwarf_shield_k|Scudo Nanico
+itm_dwarf_shield_l|Scudo Nanico
 ; itm_dwarf_sword_a|Dwarf Sword
 ; itm_dwarf_sword_b|Dwarf Sword
 ; itm_dwarf_sword_c|Dwarf Sword
@@ -815,8 +815,8 @@ itm_harad_shield_a|Scudo Harondor
 ; itm_dwarf_vest|Dwarven Archer Armor
 ; itm_dwarf_armor_b|Dwarven Pad over Tunic
 ; itm_dwarf_armor_c|Dwarven Scale over Mail
-; itm_leather_dwarf_armor_b|Dwarven Tunic
-; itm_dwarf_vest_b|Iron Hills Tunic
+itm_leather_dwarf_armor_b|Tunica Nanica
+itm_dwarf_vest_b|Tunica dei Colli Ferrosi
 ; itm_dwarf_pad_boots|Dwarven Padded Boots
 ; itm_dwarf_chain_boots|Dwarven Mail Chausses
 ; itm_dwarf_scale_boots|Dwarven Scale Boots

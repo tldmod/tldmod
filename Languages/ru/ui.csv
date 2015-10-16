@@ -45,4 +45,4 @@ ui_recent_messages|Последние сообщения
 ui_value_denars|%d Очков Снабжения
 ui_cannot_be_used_on_horseback|Невозможно использовать верхом
 ui_upgrade_to_value|Повысить до %s
-ui_notification_cant_upgrade|(Невозможно повысить, когда отдаешь солдат)
+ui_notification_cant_upgrade|(Это невозможно сделать, передавая войска)

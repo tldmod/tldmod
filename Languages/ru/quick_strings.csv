@@ -1,4 +1,4 @@
-qstr_Gate_is_breached!|Ворота разрушены!
+qstr_Gate_is_breached!|Ворота проломлены!
 qstr_Gate_opens..._You_ha|Врата открываются... Вы входите в самое сокровенное место в Средиземье!
 qstr_Secret_place_discove|Вы узнали о сокрытом месте!
 qstr_Next_Page|Следующая страница
@@ -338,9 +338,9 @@ qstr_Poor|Бедный
 qstr_Average|Средний
 qstr_Rich|Богатый
 qstr_Very_Rich|Очень богатый
-qstr_{s50}_Caves|{s50} Пещеры
-qstr_{s50}_Mines|{s50} Копи
-qstr_{s50}_Woods|{s50} Леса
+qstr_{s50}_Caves|{s50}
+qstr_{s50}_Mines|{s50}
+qstr_{s50}_Woods|{s50}
 qstr_{s4}_looks_upset.|{s4} выглядит расстроенно.
 qstr_your_party|ваш отряд
 qstr_{reg0?One_of_your_pr|{reg0?Один из ваших пленников, :}{s1} из {s3} сбежал!
@@ -716,7 +716,7 @@ qstr_You_are_quickly_disc|Враг быстро обнаружил вас.
 qstr_You_advance_stealthi|Вы скрытно углубились в лес.
 qstr_You_have_evaded_the_|Вы избежали встреч с дозорными и подобрались к руинам!
 qstr_You_have_found_the_s|Вы нашли колдуна!
-qstr_You_cannot_leave_unt|Вы не сможете уйти, пока оторветесь от стражи!
+qstr_You_cannot_leave_unt|Вы не сможете уйти, пока не оторветесь от стражи!
 qstr_Kill_him_quickly_bef|Убейте его, пока он не сбежал!
 qstr_Enraged_by_the_death|{s4} погиб, и вы ожесточились, и дали клятву отомстить державе {s3}. Теперь вы должны уничтожить в ближайшие дни столько армий державы {s3}, сколько возможно. Вы уверены, что ваши спутники видели как вы принесли клятву, и вы не хотели бы прослыть клятвопреступником. Да прольётся море крови!
 qstr_flooded._Somebody_or|затоплен. Кто-то или что-то разрушило Изенские плотины.
