@@ -6,7 +6,7 @@ ui_retreated_battle|%s savaş alanından kaçtı.
 ui_riding_skill_not_adequate_to_mount|(Binicilik becerisi çok düşük)
 ui_camp|Kamp
 ; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
-; ui_you_dont_have_value|Don't have: %s
+ui_you_dont_have_value|%s'ye sahip değilsin
 ; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
 ui_merchant_pay_whatever|Hayır, bunlara ihtiyacım yok, sende kalsın.
 ui_horse|Binek
@@ -21,28 +21,28 @@ ui_notification_payment_value|%s ödenecek
 ui_notification_payment_receive_value|%s alınacak
 ui_weekly_cost_value|Haftalık ücret: %s
 ui_sell|Ver\n
-; ui_hire|Enlist
+ui_hire|Alındı
 ; ui_notification_cant_hire|(not enough R.P. to enlist)
 ; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
 ; ui_weekly_wage|Upkeep: %d Res.P.
 ; ui_price|Value: %d Res.P.
-; ui_cant_reload_this_weapon_on_horseback|Can't reload this weapon while mounted.
+ui_cant_reload_this_weapon_on_horseback|Binek üzerinde kullanılamaz
 ; ui_delivered_number_damage_to_horse|Delivered %d damage to mount.
 ; ui_horse_charged_for_number_damage|Mount charged for %d damage.
 ui_horse_received_number_damage|Binek %d hasar aldı
-; ui_horse_fell_dead|Mount fell dead...
-; ui_horse_crippled|Mount crippled...
+ui_horse_fell_dead|At öldü
+ui_horse_crippled|At yaralandı
 ui_you_got_value|%s kazandı
 ui_has_deserted_the_party|partiden çıktı.
-; ui_have_deserted_the_party| have left the party.
+ui_have_deserted_the_party|Partiden ayrıldı
 ui_loading_textures|Dokular Yükleniyor (Sabırlı olunuz)...
-; ui_order_hold_fire_toggle|Don't shoot/Shoot at Will (Toggle)
+ui_order_hold_fire_toggle|Ateş etme/Ateş et (Geçiş)
 ; ui_order_dismount_toggle|Order Dismount/Mount (Toggle)
-; ui_mount_horses_e_|%s, Mount!
-; ui_hold_fire_e_|%s, Don't shoot!
-; ui_fire_at_will_e_|%s, Shoot at Will!
-; ui_recent_messages|Last Msgs
-; ui_value_denars|%d Resource Pts.
+ui_mount_horses_e_|%s, Atlı
+ui_hold_fire_e_|%s, Ateş etme!
+ui_fire_at_will_e_|%s, Ateş serbest!
+ui_recent_messages|Son Msgs
+ui_value_denars|%d Araştırma puanları
 ui_cannot_be_used_on_horseback|Binek üzerinde kullanılamaz
 ui_upgrade_to_value|%s'e geliştir
-; ui_notification_cant_upgrade|(Can't upgrade while giving troops)
+ui_notification_cant_upgrade|(Birlik veriyorken yükseltme yapılamaz)

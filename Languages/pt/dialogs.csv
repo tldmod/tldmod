@@ -1,9 +1,9 @@
-dlga_start:mutiny_pretalk_1|Oi, {playername}. Nós queremos dizer uma coisa... ^Os rapazes estão reclamando! Queremos mais diversão, e não ficar andando por ai.
+dlga_start:mutiny_pretalk_1|Ei, {playername}. Nós queremos dizer uma coisa... ^Os rapazes estão reclamando! Queremos mais diversão, e menos marcha por ai.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a formação, verme! Estamos em guerra e eu sou seu comandante.
-dlga_mutiny_pretalk_2:close_window|Como desejar comandante. Como desejar...
-dlga_start:mutiny_talk_1|Comandante. Queremos te dizer que... Não estamos satisfeitos, nem um pouco satisfeitos. ^Não há carne humana suficiente, não tem diversão. ^Comentam que você não é bom, comandante!
-dlga_mutiny_talk_1:mutiny_talk_2|O quê? Motim durante a guerra? ^Isso é punido com a morte, verme!
-dlga_mutiny_talk_2:close_window|Nós dizemos a vocês que ^Lads aqui acha que eu seja melhor comandante para eles quando eu matá-lo!
+dlga_mutiny_pretalk_2:close_window|Como desejar, comandante. Como desejar...
+dlga_start:mutiny_talk_1|Comandante. Queremos te dizer que... Não estamos satisfeitos, nem um pouco satisfeitos. ^Não há carne humana suficiente, não há diversão suficiente. ^Os rapazes comentam que você não é bom um bom líder, comandante!
+dlga_mutiny_talk_1:mutiny_talk_2|O quê? Motim durante a guerra? ^Isso é punível com morte, verme!
+dlga_mutiny_talk_2:close_window|Nós dizemos a você que ^Os rapazes aqui acham que eu seria um comandante melhor para eles quando EU TE MATAR!
 dlga_start:troll_introduce_1|Algum problema?
 dlga_start:troll_talk_1|Ta irritadinho?
 dlga_troll_introduce_1:troll_goodbye|Nossa! Um troll falante?!
@@ -15,21 +15,21 @@ dlga_troll_beaten:troll_talk_1|Eu me curvo a sua sabedoria, Mestre Caçador de T
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Olá denovo, {playername}!
 dlga_start:hobbit_pippin_talk_met|Olá denovo, {playername}!
-dlga_start:hobbit_general_talk_1|Ola, {sir/madam}! Meu nome é Meriadoc Brandybuck, porem podes me chamar de Merry!
-dlga_start:hobbit_general_talk_1.1|Ola, {sir/madam}! Meu nome é Peregrin Took porem podes me chamar de Pippin!
+dlga_start:hobbit_general_talk_1|Olá, {senhor/senhora}! Meu nome é Meriadoc Brandybuck, mas você pode me chamar de Merry!
+dlga_start:hobbit_general_talk_1.1|Olá, {senhor/senhora}! Meu nome é Peregrin Took, mas você pode me chamar de Pippin!
 dlga_hobbit_general_talk_1:close_window|Não tenho tempo agora.
-dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Fale. Acho que nunca vi um de sua raça.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Fale. Acho que já encontrei um de sua raça antes, em Edoras.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Fale. Acho que já encontrei um de sua raça antes, em Minas Tirith.
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei. Eu vim de longe! Eu sou um Hobbit,  {sir/madam}, do Condado.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|Ah, esse deve ter sido me querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits,  {sir/madam}, e viemos do Condado, nós dois! Bom e velho Pippin, me pergunto como ele está em Minas Tirith.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Ah, esse deve ter sido me querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits,  {sir/madam}, e viemos do Condado, nós dois! Bom e velho Merry, me pergunto como ele está em Edoras.
-dlga_hobbit_general_talk_3:close_window|Bem,adeus então.
+dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Diga. Acho que nunca vi um de sua raça.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Diga. Acho que já encontrei um de sua raça antes, em Edoras.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Diga. Acho que já encontrei um de sua raça antes, em Minas Tirith.
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei. Eu vim de longe! Eu sou um Hobbit,  {senhor/senhora}, do Condado.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|Ah, deve ter sido meu querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits,  {senhor/senhora}, e viemos do Condado, nós dois! Bom e velho Pippin, me pergunto como ele está em Minas Tirith.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Ah, deve ter sido me querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits,  {senhor/senhora}, e viemos do Condado, nós dois! Bom e velho Merry, me pergunto como ele está em Edoras.
+dlga_hobbit_general_talk_3:close_window|Bom, adeus então.
 dlga_start:hobbit_merry_talk_met.1|Bem vindo de volta, {playername}!
-dlga_start:hobbit_pippin_talk_met.1|Vem vindo de volta, {playername}!
+dlga_start:hobbit_pippin_talk_met.1|Bem vindo de volta, {playername}!
 dlga_hobbit_merry_talk_met:close_window|Olá, messer Merry.
-dlga_hobbit_pippin_talk_met:close_window|Olá, Messer Pippin.
-dlga_start:treebeard_introduce_1|( Você acha que você está olhando para uma criatura mais extraordinária . Ele é muito alto e duro- limbed com casca -like pele e cabelo frondosa. Moss também está cobrindo partes de seu corpo . Mas, no momento que você está observando pouco, mas os olhos . Os olhos profundos estão examinando você , lenta e solene , mas muito forte e penetrante. você acha que eles são marrom , tiro com luz verde , como se há um enorme bem atrás deles, preenchido com idades de memória e longo , lento e constante pensando. Mas na superfície de seus olhos estão brilhando com o presente ... como o cintilante sol sobre as folhas externas de uma grande árvore , ou as ondulações de um lago muito profundo. )
+dlga_hobbit_pippin_talk_met:close_window|Olá, messer Pippin.
+dlga_start:treebeard_introduce_1|(Você acha que você está olhando para uma criatura mais extraordinárias. Ele é muito alto e rígido com casca parecida como pele e cabelo frondoso. Musgo também está cobrindo partes de seu corpo. Mas no momento em que você está observando pouco os olhos . Os olhos profundos estão examinando você, lenta e solene , mas muito afiado e penetrante. você acha que eles são marrons , com dose de luz verde, como se há um nascente bem atrás deles, preenchido com memórias antigas e longas, devagar, com pensamentos estáveis. Mas na superfície de seus olhos estão brilhando com o presente ... como o sol cintilante sobre as folhas externas de uma grande árvore , ou as ondulações de um lago muito profundo.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|( Você está prestes a dizer algo, mas um sentimento que se fazia sentir estranho cai em cima de você , como se o ar é muito fino ou muito escassa para respirar ... com uma inspiração quase desesperada de ar -lo a gerenciar a tremer perder o sentimento ea enorme árvore- como a criatura deixa cair a intensidade de seu olhar um pouco. a criatura continua a olhar para você e você percebe as outras criaturas enormes árvores estão assistindo você também, como se esperasse que você fale ... )
 dlga_treebeard_introduce_2:treebeard_introduce_3|Perdão pela minha invasão... Eu sou um cansado viajante procurando por um refugio de eventos recentes... meu nome é {playername}. Posso perguntar quem é você?
 dlga_treebeard_introduce_3:treebeard_introduce_4|( O gigante árvore de dura limbed abre lentamente sua boca que está escondido atrás de ramos pequenos , folhas e musgo Com uma voz muito profunda, lenta e florescente ele expõe muito lentamente de uma forma mais imponente : . ) ^ ' Hrooom ... Hmmm . .. * I * não estou indo dizer-lhe o meu nome ... ainda não de qualquer forma . Para uma coisa que levaria um longo tempo. Meu nome está crescendo o tempo todo e eu vivi um tempo muito longo , longo tempo ; por isso o meu nome é como uma história. Nomes reais contar a história das coisas a que pertencem na minha língua , no Antigo entês como você poderia dizer. É uma língua adorável, mas leva um tempo muito longo dizendo qualquer coisa nele , porque não dizer qualquer coisa nele , a menos que vale a pena tomar um longo tempo para dizer e de ouvir. '
@@ -386,7 +386,7 @@ dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|O que você m
 dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|Estas armas aumentaria a eficácia de nossos exércitos , mas acima de tudo eles vão levantar o espírito dos nossos homens. Você terá que encontrar essas lanças. Você terá que ir pedir aos anões permissão para procurar as lanças nas profundezas da Montanha Solitária . Cuidado, você pode encontrar alguns orcs ou trolls nos túneis. Você está disponível para esta tarefa ?
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|Temo não há orcs nem trolls ! Eu vou encontrar essas lanças para você, meu senhor .
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|Eu estou receoso que eu não posso ajudá-lo , meu senhor.
-; dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|I see that discretion is the better part of your valor. Maybe you should stick to scouting duties.
+dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|Eu vejo que discrição é a melhor parte de sua valentia. Talvez você deveria ficar com lições de batedor.
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Boa sorte então!
 dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|Não é um serviço importante que você pode oferecer ao nosso povo, {playername}.
 dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|Meu alcance para defender e preservar a Lothlórien foi diminuída pelos dispositivos do inimigo. Um feiticeiro mestre de Dol Guldur está invocando encantos poderosos que inibem as nossas defesas . Embora ele é um mortal, ele tornou-se um dos maiores inimigos alunos no uso de rituais misteriosos e ele representa uma grande ameaça para o nosso povo. Você deve caçá-lo e destruí-lo !

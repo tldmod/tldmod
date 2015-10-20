@@ -163,12 +163,12 @@ qstr_routed|zbiegli
 qstr_wounded|odnosi rany
 qstr_None|Brak
 qstr_^None|^Brak
-; qstr_near_the_Great_East_|near the Great East Road, the abandoned old road
-; qstr_near_what_is_left_of|near what is left of the Old Forest Road, the ancient dwarven path that used to cross the thick forest
-; qstr_close_to_the_Hand_sh|close to the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc
-; qstr_in_sight_of_the_maje|in sight of the majestic City Walls of Minas Tirith, the White City
-; qstr_in_sight_of_the_entr|in sight of the entrance to Erebor, the dwarven fortress
-; qstr_in_sight_of_the_dark|in sight of the dark Tower of Orthanc
+qstr_near_the_Great_East_|przy Wspaniałej wschodniej ścieżce, stara opuszczona droga
+qstr_near_what_is_left_of|przy pozostałościach starej leśnej drogi, starożytna krasnolódzka droga która była wykorzystywana żeby przedostać się przez gęsty las
+qstr_close_to_the_Hand_sh|blisko znaku wyglądającego jak Reką znaku Sarumana, wskazująca w strone wieży Orthanc
+qstr_in_sight_of_the_maje|w zasięgu wzroku wspalniałych Murów Miasta Minas Tirith, białe Miasto
+qstr_in_sight_of_the_entr|w zasięgu wzroku wejścia do Erebor, krasnolódzkiego królestwa
+qstr_in_sight_of_the_dark|w zasięgu wzroku czarnej wieży Orthanc
 ; qstr_near_the_Old_Ford_wh|near the Old Ford, where the Old Forest Road crosses the River Anduin
 ; qstr_near_a_big_ford_cros|near a big ford crossing the River {s15}
 ; qstr_near_a_small_ford_cr|near a small ford crossing the River {s15}
@@ -207,7 +207,7 @@ qstr_We_will_go_in_peace_|Odejdziemy w pokoju, gdy tylko wypełnimy naszą misj�
 ; qstr_Is_this_your_land_{p|Is this your land, {playername}? This place stinks.^But stay calm, we are in {s20} only to follow orders by our common Master.
 qstr_Yes_go_on_do_whateve|Dobrze, idź, zrób wszystko co {s22} rozkaże.
 qstr_Of_course.|Oczywiście.
-; qstr_I_don_t_like_this._W|I don't like this. What brings your lot here, all the way from {s21}?
+qstr_I_don_t_like_this._W|Nie podoba mi się to. Co cię sprowadza tutaj z dalekiej krainy {s21}?
 qstr_Do_you_fear_us_{play|Boisz się nas, {playername} z {s20}? Mmm, co takiego ukrywasz przed {s22}?^^Zostaw nas, a nikomu nie stanie się krzywda.
 qstr_It_s_a_servant_of_{s|To sługa {s22}. Drżyj {s23}, {playername}!
 qstr_Our_allies_are_you?_|Jesteś naszym sprzymierzeńcem? Sądzę, że możesz przejść. 
@@ -417,13 +417,13 @@ qstr_Isengard_takes_a_cap|Isengard zostaje zniewolony
 qstr_You_were_grievously_|Został{e/a}ś ciężko rann{y/a} a twe ciało znalazło się między martwymi. Udało ci się pokonać mur ale wróg mógł cię widzieć. Najlepiej będzie jeśli szybko się stąd oddalisz.
 qstr_You_were_grievously_w|Został{e/a}ś ciężko rann{y/a}. Twym ludziom udało się cię wynieść z pola bitwy ale ponieśli przy tym straszliwe straty.
 qstr_You_were_grievously_wo|Został{e/a}ś ciężko rann{y/a}. Twym ludziom udało się cię wynieść z pola bitwy ale ponieśli przy tym straszliwe straty. Niestety, część twych towarzyszy zostało pojmanych i uwięzionych w {s2}.
-; qstr_You_were_grievously_wou|You were grievously wounded in battle. Your men managed to drag you away from the fighting, but unfortunately the sorcerer has managed to escape.
-; qstr_You_were_grievously_woun|You were grievously wounded and your body piled with the dead. Picking the right moment you managed to escape, but unfortunately the sorcerer has managed to escape.
+qstr_You_were_grievously_wou|Zostałeś poważnie zraniony podczas walki. Twoi żołnierze zdołali cię wydostać z pola walki, lecz niefortunnie mag zdołał uciec.
+qstr_You_were_grievously_woun|Zostałeś poważnie zraniony i twoje ciało zostało zebrane z innymi trupami. Wyczekując odpowiedni moment udało ci się uciec, lecz niefortunnie mag zdołał uciec.
 qstr_Some_of_your_compani|Część twych towarzyszy cierpi od starych ran.
 qstr_Item_you_just_equipp|Założony ekwipunek nie pasuje dla rasy danej postaci i zostanie przeniesiony do ekwipunku gracza^^Upewnij się, że masz wystarczająco miejsca albo przedmioty zostaną utracone
 qstr_Inappropriate_equipm|Nieodpowiedni ekwipunek
 qstr_The_mount_you_just_e|Wyekwipowany wierzchowiec nie nadaje się dla danej rasy. Jeśli tak to zostawisz będą później problemy na polu bitwy
-; qstr_Inappropriate_mount|Inappropriate mount
+qstr_Inappropriate_mount|Niewłaściwy wierzchowiec
 qstr_{s24}:_Some_of_your_|{s24}: Część twych ran została wyleczona!
 qstr_{s24}:_Your_infantry|{s24}: Twoja piechota czuje się lepiej!
 qstr_{s24}:_Your_archers_|{s24}: Twoi łucznicy czują się lepiej!
@@ -509,7 +509,7 @@ qstr_Nazgul_sweep!|Nadlatuje Nazgul!
 qstr_You_and_your_horse_p|Ty i twój koń panikujecie, wrzask Nazgula jest nie do zniesienia!
 qstr_Your_horse_panics_th|Twój koń panikuje, wrzask Nazgula jest nie do zniesienia!
 qstr_You_cower_in_terror_|Czołgasz się przerażon{y/a}, wrzask Nazgula jest nie do zniesienia!
-; qstr_knocked_unconscious|knocked unconscious
+qstr_knocked_unconscious|Zostałeś oguszony/a
 qstr_Nazgul_diving_attack|Nazgul przypuszcza atak na {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} {s10} w wyniku ataku Nazgula!
 qstr_{s1}_s_morale:_{reg1|Morale {s1}: {reg1}
@@ -593,21 +593,21 @@ qstr_^^You_are_{s17}.|^^Jesteś {s17}.
 qstr_Assassins_in_the_cam|Zabójcy w obozie, broń się!
 qstr_Ally_party_size:_{re|Rozmiar sojuszniczego oddziału: {reg1}
 qstr_Enemy_party_size:_{r|Rozmiar wrogiego oddziału: {reg1}
-; qstr_Party_count:_{reg0}|Party count: {reg0}
+qstr_Party_count:_{reg0}|Wielkość drużyny: {reg0}
 ; qstr_Party_position__{reg|Party position ({reg2},{reg3}).
-; qstr_Party_size_increased|Party size increased from {reg0} to {reg1}!
+qstr_Party_size_increased|Wielkość drużyny zwiększona z {reg0} to {reg1}!
 qstr_Faction_strengths_re|Raport siły frakcji:^{s2}
 qstr_Attacking_enemy_part|Atakuje wrogi oddział {s11}
 qstr_Unknown_{reg3}_|Nieznany({reg3})
 qstr_ON|WŁ
 qstr_OFF__cheat_|Wyłączony (oszustwo)
 qstr_OFF|WYŁ
-; qstr_{reg0}__will_most_li|{reg0} (will most likely cause save crashes)
-; qstr_{reg0}__could_possib|{reg0} (could possibly cause save crashes)
+qstr_{reg0}__will_most_li|{reg0} (zapewne spowoduje crash save'a)
+qstr_{reg0}__could_possib|{reg0} (jest szansa że spowoduje crash save'a)
 qstr_Normal|Normalny
 qstr_Defender_only|Tylko obrońcy
-; qstr_Halved|Halved
-; qstr_Battles_only|Battles only
+qstr_Halved|Zmiejszony o połowe
+qstr_Battles_only|Tylko walki
 qstr_Doubled|Podwojone
 qstr_Tripled|Potrójne
 qstr_Quadrupled|Poczwórne
@@ -708,9 +708,9 @@ qstr_Forces_of_Isengard|Siły Isengardu
 qstr_their_enemies|ich wrogowie
 qstr_{s11}_and_{s13}|{s11} i {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
-; qstr_Now_that_the_sorcere|Now that the sorcerer is dead, there is nothing left to be done here.
-; qstr_Now_that_the_sorcerer|Now that the sorcerer has fled, there is nothing left to be done here.
-; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest...
+qstr_Now_that_the_sorcere|Teraz gdy mag jest martwy, nie pozostało nic do roboty tutaj.
+qstr_Now_that_the_sorcerer|Teraz gdy mag zdołał uciec, nie pozostało nic do roboty tutaj.
+qstr_You_approach_a_heavi|Podchodzisz do mocno chronionej części lasu...
 qstr_You_wait_for_darknes|Czekasz do zmroku...
 qstr_You_are_quickly_disc|Zostajesz szybko odkryt{y/a} przez wroga.
 qstr_You_advance_stealthi|Ukrywasz się głęboko w lesie.
@@ -728,16 +728,16 @@ qstr_Breaking_camp...|Zwijasz obóz...
 qstr_You_have_left_{s1}.|Opuściłeś {s1}.
 qstr_You_are_entering_{s1|Wkraczasz {s1} ({s2}).
 qstr_You_are_entering_{s1}|Wkraczasz {s1}.
-; qstr_The_war_expands_comm|The war expands, commanders are getting bolder! (siege requirements reduced)
+qstr_The_war_expands_comm|Wojna się rozrasta, komendanci stają się odważniejsi! (wymagania szturmu zmniejszone)
 qstr_Your_party_is_spotte|Twój oddział został zauważony przez: {s1}.
 qstr_Party_has_nothing_to|Oddział nie ma nic do jedzenia!
 qstr_You_pay_for_accommod|Płacisz za zakwaterowanie.
 qstr_The_troll_outside_{s|Trol na zewnątrz {s2} został zabity. Zadanie anulowane.
-; qstr_{s1}_was_killed_on_t|{s1} was killed on the battlefield. Mission canceled.
-; qstr_{s1}_has_been_defeat|{s1} has been defeated. Mission canceled.
+qstr_{s1}_was_killed_on_t|{s1} został/a zabity/a podczas bitwy. Misja anulowana.
+qstr_{s1}_has_been_defeat|{s1} został/a pokonany/a. Misja anulowana.
 qstr_You_must_follow_{s1}|{s1} żąda, byś za nim podążał{/a}!
 qstr_You_must_follow_{s1}!|{s1} żąda, byś za nim podążał{/a}! To twoje ostatnie ostrzeżenie!
-; qstr_Parties_defeated:_{r|Parties defeated: {reg1}
+qstr_Parties_defeated:_{r|Drużyny pokonane: {reg1}
 qstr_{s1}_is_scouted.|Spatrolowano {s1} i okolice.
 qstr_The_Age_of_Men_has_f|Era Ludzi w końcu minęła. Teraz Dwie Wieże zbierają rozproszone zastępy i sojuszników by zadecydować kto będzie rządził Śródziemiem!
 qstr_The_War_of_the_Two_T|Wojna Dwóch Wież się rozpoczęła!
@@ -746,7 +746,7 @@ qstr_The_forces_of_{s22}_|Siły {s22} wzrosła! {s22} jest teraz {s23}.
 qstr_The_might_of_{s22}_h|Potęga {s22} została złamana! {s22} jest teraz {s23}.
 ; qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!
 qstr_Guardians_of_{s6}|Obrońcy {s6}
-; qstr_Guard_Legion_of_{s6}|Guard Legion of {s6}
+qstr_Guard_Legion_of_{s6}|Strzeż Legion {s6}
 ; qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 qstr_The_forces_of_{s2}_e|Siły {s2} rozłożyły się obozem w {s15}!
 qstr_{s1}_from_{s2}|{s1} z {s2}
@@ -768,8 +768,8 @@ qstr_You_have_a_feeling_y|Przeczucie mówi ci, że niepokoisz las wystarczająco
 qstr_Get_out_now!|Wynoście się!
 qstr_You_are_inside_Fango|Znajdujsz się w lesie Fangorn. {s11}
 qstr_Your_party_witnessed|Twój oddział ogląda orków zjadających więźniów.
-; qstr_Your_party_s_morale_|Your party's morale has risen from hatred.
-; qstr_Your_party_s_morale_h|Your party's morale has fallen from fear.
+qstr_Your_party_s_morale_|Morale twojej drużyny zostały zwiększone z nienawiści. 
+qstr_Your_party_s_morale_h|Morale twojej drużyny spadły ze strachu.
 ; qstr_{s27}:_Influence_wit|{s27}: Influence with {s1} increases from {reg2} to {reg1}.
 ; qstr_{s27}:_Influence_with|{s27}: Influence with {s1} decreases from {reg2} to {reg1}.
 qstr_{s27}:_Party_morale_|{s27}: Morale oddziału wzrosło.
@@ -812,18 +812,18 @@ qstr_But_we_did_make_you_|But we did make you as stupid as in the movies. That's
 qstr_What_is_news?_Got_an|What is news? Got any screenshots?
 qstr_Well_just_look_aroun|Well just look around you, what do you need screenshots for?
 qstr_Say_cheese!|Say cheese!
-; qstr_Why_did_you_make_mod|Why did you make mod installation so complex?
+qstr_Why_did_you_make_mod|Czemu instalacja modyfikacji jest taka skomplikowana?
 ; qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
 ; qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Treebeard_wants_you_|Drzewiec pragnie byś odnalazł{/a} i pokonała orków karczujących las Fangorn.
 qstr_Something_wrong_not_|Brakuje jednostek do oddziału zwiadowczego
 qstr_my_home_town|moje rodzinne miasto
 qstr_I_am_in_perfect_heal|Jestem w pełni zdrów.
-; qstr_I_am_suffering_from_|I am suffering from {s1}.
-; qstr_I_am_suffering_from_{|I am suffering from {s1} and {s2}.
-; qstr_I_am_suffering_from_{s|I am suffering from {s1}, {s2}, and {s3}.
-; qstr_I_am_suffering_from_{s1|I am suffering from {s1}, {s2}, {s3} and {s4}.
-; qstr_I_don_t_have_any_ser|I don't have any serious injuries, thank you.
+qstr_I_am_suffering_from_|Doznaje {s1}
+qstr_I_am_suffering_from_{|Doznaje {s1} and {s2}
+qstr_I_am_suffering_from_{s|Doznaje {s1}, {s2}, i {s3}.
+qstr_I_am_suffering_from_{s1|Doznaje {s1}, {s2}, {s3} i {s4}.
+qstr_I_don_t_have_any_ser|Nie mam żadnych poważnych ran, dziękuje.
 qstr_Good_day_to_you.|Dzień dobry.
 qstr_Ah_it_s_you_again._G|Ach, to znowu ty. Do widzenia.
 qstr_My_apologies_if_I_wa|Przepraszam, że był{e/a}m niegrzeczn{y/a}. Możesz powtórzyć swą opowieść?
@@ -879,7 +879,7 @@ qstr_What?_Let_me_see_tha|Co? Niech to obejrzę... Hmmm. Dobrze, że mi to przyn
 qstr_Give_me_that!_Hrmph!_|Daj mi to! Hrmph! Jesteś dobrym sługą dla swego pana, {playername}, ale niedługo wszyscy będziecie martwi. Nie teraz oczywiście, więc przestań uciekać.
 qstr_Do_you_need_reinforc|Potrzebujesz wsparcia?
 qstr_You_don_t_look_too_s|Nie wyglądasz na zbyt silnego, potrzebujesz żołnierzy?
-; qstr_^{s14}_is_grateful_t|^{s14} is grateful to you, {playername}, {s29}^
+qstr_^{s14}_is_grateful_t|^{s14} jest ci wdzięczny, {playername}, {s29}^
 ; qstr_{s31}{reg28?Those:That|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^^[earned {reg14} Resource Points of {s14}]
 ; qstr_{s31}{reg28?Those:That}|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^^[earned {reg14} Resource Points of {s14}]
 qstr_{s4}_^Oh_and_take_bac|{s4} ^Aha, i zabierz z powrotem tych żołnierzy, którzy nie są naszymi krewniakami. Nie mam z nich pożytku.
@@ -888,7 +888,7 @@ qstr_It_is_my_duty_to_help|Moim obowiązkiem jest pomoc naszym sprzymierzeńcom.
 ; qstr_The_people_of_{s3}_t|The people of {s3} thank you for your gift, {playername}. In exchange for your gift of {s1}, we will send the people of {s4} a gift of {s2}. I thank you once again, {playername}.
 qstr_I_want_to_deliver_a_|Chcę wysłać podarki do wszystkich naszych sojuszników
 qstr_delivering_a_gift|wysyłanie podarunku
-; qstr_I_want_to_bring_a_br|I want to bring a bribe to our allies.
+qstr_I_want_to_bring_a_br| Chcę przynieść łapówke naszym sojusznikom.
 qstr_delivering_a_bribe|dostarczanie łapówki
 ; qstr_{s2}_[{reg14}_Resour|{s2} [{reg14} Resource Points]
 qstr_Gift|Podarunek

@@ -1,17 +1,17 @@
 skl_trade|Ticaret
-; skl_trade_desc|Levels of this skill make it possible to claim more equipment for less Resource Points. (Party skill)
+skl_trade_desc|Bu yeteneğin her seviyesi az araştırma puanına karşılık daha fazla ekipman alma şansı tanır (Parti Yeteneği)
 skl_leadership|Liderlik
-; skl_leadership_desc|Every point increases maximum number of troops you can command by 5, increases your party morale and reduces troop wages by 5%%. (Leader skill)
+skl_leadership_desc|Her bir puan alabileceğin maksimum birlik sayısını 5 arttırır. Ayrıca partinizin moralini arttırıp birliklerinize verdiğiniz maaşı 5%% azaltır(Liderlik Yeteneği)
 skl_prisoner_management|Esir yönetimi
-; skl_prisoner_management_desc|Every level of this skill increases maximum number of prisoners by %d. (Leader skill)
+skl_prisoner_management_desc|Bu yeteneğin her leveli mahkum sayısını %d kadar arttırır (Liderlik yeteneği)
 skl_persuasion|İkna
-; skl_persuasion_desc|This skill helps you make other people accept your point of view. (Personal skill)
+skl_persuasion_desc|Bu yetenek diğer insanların sizin görüşünüzü kabul etmesini sağlar (Kişisel Yetenek)
 skl_engineer|Mühendislik
-; skl_engineer_desc|Each point to this skill both decreases the time to craft and upgrade equipment, and allows better quality upgrades. (Party skill)
+skl_engineer_desc|Bu yeteneğe harcanan her puan hem zanaat hemde ekipman geliştirme sürenizi düşürür, ve daha kaliteli geliştirme yapmanıza izin verir (Grup Yeteneği)
 skl_first_aid|İlk yardım
 ; skl_first_aid_desc|Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)
 skl_surgery|Cerrahlık
-; skl_surgery_desc|Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)
+skl_surgery_desc|Bu yeteneğe harcanan her puan grup üyelerinizin ölmek yerine yaralanma şanslarını 4%% arttırır. (Grup Yeteneği)
 skl_wound_treatment|Yara bakımı
 ; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
 skl_inventory_management|Envanter yönetimi
@@ -37,12 +37,12 @@ skl_athletics_desc|Koşu hızını yükseltir.(kişisel yetenek)
 skl_shield|Kalkan
 ; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
 skl_weapon_master|Silah ustası
-; skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
+skl_weapon_master_desc|Bir silahın yeterliklerini öğrenmeyi kolaylaştırır ve yeterlilik limitini arttırır. Limit şöyle olur: 60,100,140,180,220,260,300,340,380,420.(Kişisel yetenek)
 skl_power_draw|Güçlü Çekme
-; skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
+skl_power_draw_desc|Karakterin daha güçlü yaylar kullanmasına olanak verir. Bu yeteneğe harcanan her puan (+4 Güce kadar ve  yayın gereksinimlerine kadar) yayın gücünü 14%% arttırır (Kişisel Yetenek)
 skl_power_throw|Güçlü Fırlatma
-; skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%. (Personal skill)
+skl_power_throw_desc|Bu yeteneğe harcanan her puan atış hasarını 10%% arttırır (Kişisel yetenek)
 skl_power_strike|Güçlü Saldırı
-; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
+skl_power_strike_desc|Bu yeteneğe harcanan her puan yakın dövüş hasarını 8%% arttırır (Kişisel yetenek)
 skl_ironflesh|Demirbeden
 skl_ironflesh_desc|Bu yeteneğe harcanan her puan verilen hasarı +2 artırır.(kişisel yetenek) 
