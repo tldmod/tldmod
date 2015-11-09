@@ -9,15 +9,15 @@ p_town_erech|Эрех
 p_town_pinnath_gelin|Пиннат-Гелин
 p_town_west_osgiliath|Западный Осгилиат
 p_town_henneth_annun|Хеннет-Аннун
-p_town_cair_andros|Каир-Андрос
+p_town_cair_andros|Кайр-Андрос
 p_town_calembel|Калембель
 p_town_edoras|Эдорас
-p_town_aldburg|Альдбург
+p_town_aldburg|Алдбург
 p_town_hornburg|Хорнбург
-p_town_east_emnet|Восточный Эмнет
-p_town_westfold|Вестфольд
-p_town_west_emnet|Западный Эмнет
-p_town_eastfold|Истфольд
+p_town_east_emnet|Истемнет
+p_town_westfold|Вестфолд
+p_town_west_emnet|Вестемнет
+p_town_eastfold|Истфолд
 p_town_morannon|Мораннон
 p_town_minas_morgul|Минас-Моргул
 p_town_cirith_ungol|Орочий форпост
@@ -38,12 +38,12 @@ p_town_beorning_village|Деревня беорнингов
 p_town_beorn_house|Дом Беорна
 p_town_moria|Врата Мории
 p_town_troll_cave|Пещера троллей
-p_town_dale|Дэйл
+p_town_dale|Дейл
 p_town_esgaroth|Эсгарот
 p_town_dunland_camp|Дунландский лагерь
 p_town_harad_camp|Харадский лагерь
 p_town_khand_camp|Хандский лагерь
-p_town_umbar_camp|Умбарский лагерь
+p_town_umbar_camp|Лагерь корсаров
 p_town_imladris_camp|Лагерь Ривенделла
 p_town_dol_guldur|Дол-Гулдур
 p_town_dol_guldur_north_outpost|Северный аванпост Дол-Гулдура
@@ -72,14 +72,14 @@ p_advcamp_woodelf|Передовой лагерь эльфов Темнолес�
 p_advcamp_moria|Морийский передовой лагерь
 p_advcamp_guldur|Передовой лагерь Дол-Гулдура
 p_advcamp_gundabad|Гундабадский передовой лагерь
-p_advcamp_dale|Передовой лагерь Дэйла
+p_advcamp_dale|Передовой лагерь Дейла
 p_advcamp_dwarf|Эреборский передовой лагерь
 p_advcamp_dunland|Дунландский передовой лагерь
 p_advcamp_beorn|Беорнингский передовой лагерь
 p_argonath|Аргонат
 p_argonath2|Аргонат
 p_hand_isen|Каменная длань Изенгарда
-p_mount_doom|Роковая Гора
+p_mount_doom|Роковая гора
 p_town_barad_dur|Барад-Дур
 p_ford_cair_andros1|Андуин
 p_ford_cair_andros2|Андуин
@@ -89,7 +89,7 @@ p_ford_rauros|Андуин
 p_ford_pelargir|Андуин
 p_ford_edhellond|Андуин
 p_ford_cerin_dolen|Серебрянка
-p_old_ford|Старый Брод 
+p_old_ford|Старый брод
 p_ford_erech|Рингло
 p_ford_isen1|Изен
 p_ford_isen2|Изен
@@ -98,8 +98,8 @@ p_ford_rohan2|Энтова купель
 p_ford_fangorn|Энтова купель
 p_ford_fangorn2|Светлимка
 p_ford_moria|Серебрянка
-p_legend_amonhen|Амон Хен
-p_legend_deadmarshes|Мёртвые Топи
+p_legend_amonhen|Амон-Хен
+p_legend_deadmarshes|Мертвецкие болота
 p_legend_mirkwood|Темнолесье
 p_legend_fangorn|Энтомолвище
 p_ancient_ruins|Древние руины

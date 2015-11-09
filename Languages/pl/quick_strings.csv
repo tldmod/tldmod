@@ -170,8 +170,8 @@ qstr_in_sight_of_the_maje|w zasięgu wzroku wspalniałych Murów Miasta Minas Ti
 qstr_in_sight_of_the_entr|w zasięgu wzroku wejścia do Erebor, krasnolódzkiego królestwa
 qstr_in_sight_of_the_dark|w zasięgu wzroku czarnej wieży Orthanc
 ; qstr_near_the_Old_Ford_wh|near the Old Ford, where the Old Forest Road crosses the River Anduin
-; qstr_near_a_big_ford_cros|near a big ford crossing the River {s15}
-; qstr_near_a_small_ford_cr|near a small ford crossing the River {s15}
+qstr_near_a_big_ford_cros|W pobliżu małego fordu przekracza rzekę {s15}
+qstr_near_a_small_ford_cr|W pobliżu dużego fordu przekracza rzekę {s15}
 qstr_Battle_Advantage:_{r|Przewaga w bitwie: {reg0}.
 qstr_{s9}_wants_you_to_re|{s9} chce abyś dalej podążał{/a} za jego armią, aż do następnych wskazówek.
 qstr_Rohan_capital_moved_|Stolica Rohanu została przeniesiona z Edoras do Rogatego Grodu!
@@ -586,7 +586,7 @@ qstr_Orc_hiring_bonus:_+2|Orkowy bonus najmu +2/3 za każdego orka^
 qstr_Current_party_size_l|Aktualny limit oddziału: {reg5}.^Na wielkość oddziału wpływają obecnie:^^Podstawowa wielkość:  +10^Przywództwo: {s2}{reg1}^Charyzma: {s3}{reg2}^Reputacja: {s4}{reg3}^RAZEM:  {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
 qstr__________Faction_str|         Raport siły frakcji:^{s2}
-; qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
+qstr_{s1}^^Factions_are_n|{s1}^^Frakcje są zwykle oblegane, gdy posiadasz poniżej {reg1} siły
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Zyskane umiejętności:^{s2}
 qstr_^^You_are_{s17}.|^^Jesteś {s17}.
@@ -594,7 +594,7 @@ qstr_Assassins_in_the_cam|Zabójcy w obozie, broń się!
 qstr_Ally_party_size:_{re|Rozmiar sojuszniczego oddziału: {reg1}
 qstr_Enemy_party_size:_{r|Rozmiar wrogiego oddziału: {reg1}
 qstr_Party_count:_{reg0}|Wielkość drużyny: {reg0}
-; qstr_Party_position__{reg|Party position ({reg2},{reg3}).
+qstr_Party_position__{reg|Pozycja drużyny ({reg2},{reg3}).
 qstr_Party_size_increased|Wielkość drużyny zwiększona z {reg0} to {reg1}!
 qstr_Faction_strengths_re|Raport siły frakcji:^{s2}
 qstr_Attacking_enemy_part|Atakuje wrogi oddział {s11}
@@ -744,10 +744,10 @@ qstr_The_War_of_the_Two_T|Wojna Dwóch Wież się rozpoczęła!
 qstr_{s2}_was_defeated!|{s2} poniósł porażkę!
 qstr_The_forces_of_{s22}_|Siły {s22} wzrosła! {s22} jest teraz {s23}.
 qstr_The_might_of_{s22}_h|Potęga {s22} została złamana! {s22} jest teraz {s23}.
-; qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!
+qstr_In_a_desperate_attem|W desperackiej próbie obrony przed wrogami, Sauron wysyła swój legion z Mordoru!
 qstr_Guardians_of_{s6}|Obrońcy {s6}
 qstr_Guard_Legion_of_{s6}|Strzeż Legion {s6}
-; qstr_Scouts_report_that_{|Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+qstr_Scouts_report_that_{|Zwiadowcy meldują, że {s6} pozyskał wielką armię w pobliżu {s7}, w ostatniej próbie obrony swej stolicy.
 qstr_The_forces_of_{s2}_e|Siły {s2} rozłożyły się obozem w {s15}!
 qstr_{s1}_from_{s2}|{s1} z {s2}
 qstr_When_dealing_with_lo|Gdy prowadzisz handel z {s11}, pamiętaj, że cię nie znają i nie wiedzą o twych zasługach dla {s10}.^^(Pkt. Prestiżu zdobyte wśród ludzi z {s11} nie mają tej samej wartości u {s10} -- patrz ekran Raportów)
@@ -770,8 +770,8 @@ qstr_You_are_inside_Fango|Znajdujsz się w lesie Fangorn. {s11}
 qstr_Your_party_witnessed|Twój oddział ogląda orków zjadających więźniów.
 qstr_Your_party_s_morale_|Morale twojej drużyny zostały zwiększone z nienawiści. 
 qstr_Your_party_s_morale_h|Morale twojej drużyny spadły ze strachu.
-; qstr_{s27}:_Influence_wit|{s27}: Influence with {s1} increases from {reg2} to {reg1}.
-; qstr_{s27}:_Influence_with|{s27}: Influence with {s1} decreases from {reg2} to {reg1}.
+qstr_{s27}:_Influence_wit|{s27}: Wpływ z {s1} zwiększył się z {reg2} do {reg1}.
+qstr_{s27}:_Influence_with|{s27}: Wpływ z {s1} zmniejszył się z {reg2} do {reg1}.
 qstr_{s27}:_Party_morale_|{s27}: Morale oddziału wzrosło.
 qstr_{s27}:_Party_morale_d|{s27}: Morale oddziału spadło.
 ; qstr_You_have_failed_to_f|You have failed to fulfill your oath of vengeance for {s1}'s heroic death!
@@ -814,21 +814,21 @@ qstr_Well_just_look_aroun|Well just look around you, what do you need screenshot
 qstr_Say_cheese!|Say cheese!
 qstr_Why_did_you_make_mod|Czemu instalacja modyfikacji jest taka skomplikowana?
 ; qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
-; qstr_You_just_got_windyfl|You just got windyflorated!
+qstr_You_just_got_windyfl|Właśnie zdobyłeś windyflorated!
 qstr_Treebeard_wants_you_|Drzewiec pragnie byś odnalazł{/a} i pokonała orków karczujących las Fangorn.
 qstr_Something_wrong_not_|Brakuje jednostek do oddziału zwiadowczego
 qstr_my_home_town|moje rodzinne miasto
 qstr_I_am_in_perfect_heal|Jestem w pełni zdrów.
-qstr_I_am_suffering_from_|Doznaje {s1}
-qstr_I_am_suffering_from_{|Doznaje {s1} and {s2}
-qstr_I_am_suffering_from_{s|Doznaje {s1}, {s2}, i {s3}.
-qstr_I_am_suffering_from_{s1|Doznaje {s1}, {s2}, {s3} i {s4}.
-qstr_I_don_t_have_any_ser|Nie mam żadnych poważnych ran, dziękuje.
+qstr_I_am_suffering_from_|Cierpi z powodu {s1}.
+qstr_I_am_suffering_from_{|Cierpi z powodu {s1} i {s2}
+qstr_I_am_suffering_from_{s|Cierpi z powodu {s1}, {s2}, i {s3}.
+qstr_I_am_suffering_from_{s1|Cierpi z powodu {s1}, {s2}, {s3} i {s4}.
+qstr_I_don_t_have_any_ser|Nie mam żadnych poważnych ran, dziękuję.
 qstr_Good_day_to_you.|Dzień dobry.
 qstr_Ah_it_s_you_again._G|Ach, to znowu ty. Do widzenia.
 qstr_My_apologies_if_I_wa|Przepraszam, że był{e/a}m niegrzeczn{y/a}. Możesz powtórzyć swą opowieść?
 qstr_I_was_reconsidering_|Rozważył{e/a}m ponownie ostatnią naszą rozmowę. Możesz powtórzyć swą opowieść?
-qstr_Greetings_{s23}_{s24|Witaj, {s23}
+qstr_Greetings_{s23}_{s24|Witaj, {s23}, {s24}.
 qstr_Greetings_{s23}.|Witaj, {s23}
 qstr_So_you_are_{s23}._I_|Więc jesteś {s23}. Słyszałem, że wspomagasz naszych przyjaciół, chyba powinienem zastanowić się i nad naszym przymierzem.
 qstr_I_need_volunteers_wi|Potrzebuję ochotników do niebezpiecznej misji.
@@ -890,7 +890,7 @@ qstr_I_want_to_deliver_a_|Chcę wysłać podarki do wszystkich naszych sojusznik
 qstr_delivering_a_gift|wysyłanie podarunku
 qstr_I_want_to_bring_a_br| Chcę przynieść łapówke naszym sojusznikom.
 qstr_delivering_a_bribe|dostarczanie łapówki
-; qstr_{s2}_[{reg14}_Resour|{s2} [{reg14} Resource Points]
+qstr_{s2}_[{reg14}_Resour|{s2} [{reg14} Punkty Zasobów]
 qstr_Gift|Podarunek
 ; qstr_You_have_requested_t|You have requested to deliver a gift of {s1} to {s3} from {s2}. The people of {s3} will surely appreciate this kind gesture.
 qstr_Bribe|Łapówka

@@ -1,0 +1,48 @@
+skl_trade|거래 흥정
+skl_trade_desc|스킬의 레벨은 더 적은 자원으로 추가적인 장비를 사용할 수 있게 합니다.(부대 기술)
+skl_leadership|리더십
+skl_leadership_desc|1 포인트가 증가할 때 마다 최대 부대원 수가 5명이 증가하며, 부대의 사기를 5%올리고 병사의 무게를 5%% 줄입니다.(리더 스킬)
+skl_prisoner_management|포로 수송
+skl_prisoner_management_desc|1포인트가 증가할 때 마다 포로의 수가 %d로 증가합니다.(리더 기술)
+skl_persuasion|설득
+skl_persuasion_desc|이 스킬은 다른 사람들이 당신의 의견을 더 쉽게 수용하게 해줍니다.(개인 기술)
+skl_engineer|제작
+skl_engineer_desc|1 포인트가 증가할 때 마다 장비 제작과 업그레이드에 걸리는 시간을 줄여주며, 더 좋은 품질로 업그레이드 할 수 있게 합니다.(부대 기술)
+skl_first_aid|응급 치료
+skl_first_aid_desc|전투중에 체력을 잃었을 때, 스킬레벨당 5%%의 체력을 회복합니다.(부대 기술)
+skl_surgery|외과수술
+skl_surgery_desc|1 포인트가 오를 때 마다 4%%의 확률로 죽지 않고 부상입게 합니다(부대 기술)
+skl_wound_treatment|부상 치료
+skl_wound_treatment_desc|1 포인트당 부대 치료속도가 20%% 증가합니다.(부대 기술)
+skl_inventory_management|소지품 관리
+skl_inventory_management_desc|1 포인트가 오를 때 마다 소지품 제한 갯수가 +6됩니다.(리더 기술)
+skl_spotting|탐지
+skl_spotting_desc|1 포인트가 오를 때 마다 부대의 시야범위가 10%% 증가 합니다(부대 기술)
+skl_pathfinding|길 찾기
+skl_pathfinding_desc|1 포인트가 오를 때 마다 맵에서의 부대 이동속도가 3%% 오릅니다.(부대 기술)
+skl_tactics|전술
+skl_tactics_desc|2 포인트가 오를 때마다 전투 시작시 1점의 유리함이 추가됩니다(부대 기술)
+skl_tracking|추적
+skl_tracking_desc|추적이 더 정확해 집니다(부대 기술)
+skl_trainer|훈련교관
+skl_trainer_desc|매일 이 기술을 가진 각 영웅은 자신보다 레벨이 낮은 다른 구성원에게 일정의 경험치를 줍니다. 경험치는 {0,4,10,16,23,30,38,46,55,65,80}의 순으로 획득합니다(개인 기술)
+skl_looting|아이템 줍기
+skl_looting_desc|1 포인트가 오를 때 마다 습득할 수 있는 아이템의 양이10%% 증가합니다(부대 기술)
+skl_horse_archery|기마 궁술
+skl_horse_archery_desc|탑승 중 투척무기의 데미지와 정확도 감소를 줄여줍니다(개인 기술)
+skl_riding|승마
+skl_riding_desc|높은 등급의 말(또는 짐승)을 탈 수 있고, 속도와 기동을 증가시킵니다(개인 기술)
+skl_athletics|운동능력
+skl_athletics_desc|달리기 속도를 올려줍니다(개인 기술)
+skl_shield|방패 들기
+skl_shield_desc|방패가 받는 데미지를 줄이고(1 포인트 당 8%%) 방패 속도와 방어력을 올려줍니다(개인 기술)
+skl_weapon_master|무기 장인
+skl_weapon_master_desc|무기 숙달을 쉽게 하고 한계치를 올립니다. 한계치 : 60,100,140,180,220,260,300,340,380,420(개인 기술)
+skl_power_draw|당기는 힘
+skl_power_draw_desc|캐릭터가 더 강한 활을 사용하게 합니다. 1 포인트가 오를 때마다(4까지 올리면 모든 활 장착가능) 14%%의 활 데미지가 증가합니다(개인 기술)
+skl_power_throw|던지는 힘
+skl_power_throw_desc|1 포인트가 오를 때 마다 10%%의 투척 데미지가 증가합니다(개인 기술)
+skl_power_strike|때리는 힘
+skl_power_strike_desc|1 포인트가 오를 때 마다 8%% 근접 데미지가 증가합니다(개인 기술)
+skl_ironflesh|강철피부
+skl_ironflesh_desc|1 포인트가 오를 때 마다 체력이 +2 됩니다(개인 기술)

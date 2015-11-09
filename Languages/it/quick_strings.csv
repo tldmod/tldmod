@@ -24,9 +24,9 @@ qstr_Enemies|Nemici
 qstr_Ready|Pronto
 qstr_Wounded|Ferito
 qstr_Dead|Morto
-qstr_Routed|In rotta
-qstr_Number_of_men_knocke|Numero di guerrieri caduti: {reg1}
-qstr_Number_of_men_left:_|Numero di guerrieri rimasti: {reg1}
+qstr_Routed|Indirizzato
+qstr_Number_of_men_knocke|Numero di uomini caduti: {reg1}
+qstr_Number_of_men_left:_|Numero di uomini rimasti: {reg1}
 qstr_Opponents_Beaten:_{r|Nemici abbattuti: {reg1}
 qstr_Opponents_Remaining:|Nemici rimasti: {reg1}
 qstr_Gauntlet_wave:_1|Guanto di sfida: 1
@@ -285,8 +285,8 @@ qstr_Raahh!_Draw_your_wea|Raaah! Sguainate le armi, feccia di {s16}! Stanotte fe
 qstr_Rha!_{s14}More_{s15}|Rha! {s14}Ancora {s15} corpi da sfigurare con le nostre terribili armi!
 qstr_Slaughter_these_puny|Massacrate questi penosi ladri di {s18} adesso! Poi metteremo a fuoco le loro case e uccidemo le lore famiglie. 
 qstr_Death_to_the_trespas|Morte ai trangressori sulle terre di {s16}!
-; qstr_CHARGE!_Let_s_clear_|CHARGE! Let's clear the {s18} {s19}scum from {s17}!
-; qstr_{s14}Now_that_{s19}s|{s14}Now that {s19}scum will taste the fury of the bear people!
+qstr_CHARGE!_Let_s_clear_|CARICA! Ripuliamo {s17} dalla feccia {s18} {s19}!
+qstr_{s14}Now_that_{s19}s|{s14} Ora la feccia {s19} assaggerà la furia della gente orso!
 qstr_Attack!|Attacco! 
 qstr_You_are_attacked_by_|Sei stato attacato da un groppo di goblins!
 qstr_Holding|Mantenere
@@ -304,13 +304,13 @@ qstr_Blunt_Weapons|Armi spuntate
 qstr_Infantry__{reg1}_|Fanteria ({reg1})
 qstr_Archers__{reg2}_|Arceri ({reg2})
 qstr_Cavalry__{reg3}_|Cavalleria ({reg3})
-; qstr_Orc_brew_finished!|Orc brew finished!
-; qstr_Given_by:_{s62}|Given by: {s62}
+qstr_Orc_brew_finished!|Birra degli orchi terminata!
+qstr_Given_by:_{s62}|Dato da: {s62}
 ; qstr_Given_on:_{s60}|Given on: {s60}
-; qstr_You_have_{reg0}_days|You have {reg0} days to finish this quest.
-; qstr_This_quest_has_been_|This quest has been concluded. Talk to {s59} to finish it.
-; qstr_This_quest_has_been_s|This quest has been successfully completed. Talk to {s59} to claim your reward.
-; qstr_This_quest_has_faile|This quest has failed. Talk to {s59} to explain the situation.
+qstr_You_have_{reg0}_days|Hai {reg0} giori per finire questo incarico.
+qstr_This_quest_has_been_|Questo incarico è stato completato. Parla con {s59} per terminarlo. 
+qstr_This_quest_has_been_s|Questo incarico è stato completato con successo. Parla con {s59} per ottenere la tua ricompensa.
+qstr_This_quest_has_faile|L'incarico è fallito. Parla con {s59} per spiegare la situazione.
 ; qstr_At_the_time_quest_wa|At the time quest was given:^{s1}
 qstr_{s7}_and_{s8}|{s7} e {s8}
 qstr_{s7}_{s8}|{s7}, {s8}
@@ -335,7 +335,7 @@ qstr_{reg3?She:He}|{reg3?Lei:Lui}
 ; qstr_Current_garrison_con|Current garrison consists of {reg5} men.^Has food stock for {reg6} days.
 qstr_Very_Poor|Molto povero
 qstr_Poor|Povero
-; qstr_Average|Average
+qstr_Average|Media
 qstr_Rich|Ricco
 qstr_Very_Rich|Molto ricco
 qstr_{s50}_Caves|{s50} Caverne
@@ -346,8 +346,8 @@ qstr_your_party|la tua compagnia
 qstr_{reg0?One_of_your_pr|{reg0?Uno dei tuoi prigionieri, :}{s1} di {s3} è fuggito dalla prigionia!
 qstr_You_brought_{reg3}_h|Hai comprato {reg3} capi di bestiame a {s1}.
 ; qstr_Log_entry_{reg3}:_ty|Log entry {reg3}: type {reg4}
-; qstr_Center:_{s4}|Center: {s4}
-; qstr_Troop:_{s4}|Troop: {s4}
+qstr_Center:_{s4}|Centro:{s4}
+qstr_Troop:_{s4}|Truppa:{s4}
 ; qstr_Lord:_{s4}|Lord: {s4}
 qstr_Ally_party_is_presen|Compagnia alleata è presente
 qstr_{s4}_is_present_at_e|{s4} è presente all'evento
@@ -356,8 +356,8 @@ qstr_{s4}_is_present_at_e|{s4} è presente all'evento
 ; qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
 ; qstr_Event_#{reg5}_type_{reg|Event #{reg5}, type {reg6}, time {reg8}. No relevant kingdom relation
 ; qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Player unaffiliated
-; qstr_Elapsed_hours:_{reg7|Elapsed hours: {reg7}
-; qstr_Reputation_type:_{s1|Reputation type: {s15}
+qstr_Elapsed_hours:_{reg7|Ore trascorse:{reg7}
+qstr_Reputation_type:_{s1|Tipo di reputazione:{s15}
 ; qstr_Entries_up_to_#{reg5|Entries up to #{reg5} skipped
 qstr_A_new_location_is_no|Una nuova posizione è ora disponibile sulla mappa!
 qstr_New_trait_gained:_{s|Nuovo tratto acquisito: {s5}.
@@ -375,7 +375,7 @@ qstr_Gained_permanent_+1_to|Guadagnato permanentemente +1 al Carisma
 ; qstr_Gained_permanent_+10|Gained permanent +10 to weapon proficiencies.
 ; qstr_Gained_permanent_+1_to_T|Gained permanent +1 to Tactics.
 qstr_You_have|Tu hai
-; qstr_{s1}_has|{s1} has
+qstr_{s1}_has|{s1}ha
 ; qstr_{s11}_suffered_a_ser|{s11} suffered a serious wound.
 ; qstr_The_leg_has_been_bad|The leg has been badly maimed in battle.
 ; qstr___2_athletics__1_rid|(-2 athletics, -1 riding, -2 agility, -15 melee skill)
@@ -386,11 +386,11 @@ qstr_You_have|Tu hai
 ; qstr_The_chest_has_suffer|The chest has suffered some cracked ribs.
 ; qstr___20_weapon_skill_|(-20 weapon skill)
 ; qstr_{s1}_has_been_killed|{s1} has been killed.
-; qstr_You_were_killed.|You were killed.
+qstr_You_were_killed.|Sei stato ucciso
 ; qstr_{s1}_recovered_from_|{s1} recovered from a serious wound.
-; qstr_The_leg_wound_has_he|The leg wound has healed.
+qstr_The_leg_wound_has_he|La ferita alla gamba è stata curata.
 ; qstr__+2_athletics_+1_rid|(+2 athletics, +1 riding, +2 agility, +15 melee skill)
-; qstr_The_arm_wound_has_he|The arm wound has healed.
+qstr_The_arm_wound_has_he|La ferita al braccio è stata curata.
 ; qstr__+20_weapon_skill_+2|(+20 weapon skill, +2 strength, +1 power attacks)
 qstr_The_head_wound_has_h|La feria alla testa è stata curata.
 ; qstr__+1_intelligence_ski|(+1 intelligence skills, +15 missile skill)
@@ -484,11 +484,11 @@ qstr_up|su
 ; qstr_Many_of_your_enemies|Many of your enemies are fleeing from battle.
 ; qstr_Some_of_your_enemies|Some of your enemies are fleeing from battle.
 ; qstr_A_few_of_your_enemie|A few of your enemies are fleeing from battle.
-; qstr_Your_troops_flee_in_|Your troops flee in terror!
-; qstr_Many_of_your_troops_|Many of your troops are fleeing from battle.
-; qstr_Some_of_your_troops_|Some of your troops are fleeing from battle.
-; qstr_A_few_of_your_troops|A few of your troops are fleeing from battle.
-; qstr_Your_mount_stumbles!|Your mount stumbles! It seems to be lame.
+qstr_Your_troops_flee_in_|Le tue truppe fuggono terrorizzate!
+qstr_Many_of_your_troops_|Molte delle tue truppe stanno scappando dalla battaglia.
+qstr_Some_of_your_troops_|Alcune delle tue truppe stanno scappando dalla battaglia.
+qstr_A_few_of_your_troops|Un paio delle tue truppe stanno scappando dalla battaglia.
+qstr_Your_mount_stumbles!|La tua cavalcatura inciampa! Sembra sia zoppa.
 qstr_Bitten_by_your_own_w|Sei stato morso dal tuo stesso Mannaro!
 qstr_You_weigh_too_much_f|Pesi troppo per un pony!
 qstr_Your_mount_rears_ref|La tua cavalcatura impenna, si rifiuta di obbedire ai tuoi comandi!

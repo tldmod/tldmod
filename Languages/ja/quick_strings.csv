@@ -746,7 +746,7 @@ qstr_The_forces_of_{s22}_|{s22}の軍勢の勢いが増しています！{s22}�
 qstr_The_might_of_{s22}_h|{s22}の軍勢の勢いが弱まりました！{s22}は現在、{s23}です。
 qstr_In_a_desperate_attem|敵に対してなりふり構わぬ必死の対抗をするため、 サウロンはモルドールの大軍団を送り込みました！
 qstr_Guardians_of_{s6}|{s6}防衛軍
-qstr_Guard_Legion_of_{s6}|{s6}近衛軍団
+qstr_Guard_Legion_of_{s6}|{s6}防衛軍団
 qstr_Scouts_report_that_{|偵察隊より、 {s6}が{s7}周辺に、 本拠地防衛のための大規模な軍勢を 集結させているとの報告が入りました。
 qstr_The_forces_of_{s2}_e|{s2}が{s15}に遠征軍野営を築きました！
 qstr_{s1}_from_{s2}|{s2}の{s1}
@@ -762,11 +762,11 @@ qstr__+1_to_Strength__per|体力に+1(恒久的効果)
 qstr__+1_to_Charisma__per|魅力に+1(恒久的効果)
 qstr_The_dark_shadow_fina|漆黒の闇はついに堰を切って嵐となり、 闇の大群は中つ国の自由の民を標的に行軍を始めた。 南のゴンドールにはモルドールが、 西のローハンにはアイゼンガルドが、 エルフにはドル・グルドゥアが襲いかかる・・・ 遠い北の地でも戦争の火の手は上がった。
 qstr_The_War_has_started!|戦争が始まりました！
-qstr_The_forest_seems_pea|森は穏やかにみえる。
-qstr_There_is_a_sense_of_|危険な空気がただよっている。
-qstr_You_have_a_feeling_y|森を怒らせるに充分な時間を過ごしてしまった事を、あなたは悟った。
+qstr_The_forest_seems_pea|森は穏やかにみえます。
+qstr_There_is_a_sense_of_|危険な空気がただよっています。
+qstr_You_have_a_feeling_y|どうやら森を怒らせてしまったようです。
 qstr_Get_out_now!|この場から離れろ、今すぐだ！
-qstr_You_are_inside_Fango|あなたはファンゴルンの森のなかにいる。 {s11}
+qstr_You_are_inside_Fango|ここはファンゴルンの森です。 {s11}
 qstr_Your_party_witnessed|あなたのパーティは、オークが捕虜を食べているところを目撃しました。
 qstr_Your_party_s_morale_|憎悪から、パーティの士気が上がりました。
 qstr_Your_party_s_morale_h|恐れから、パーティの士気が下がりました。
@@ -823,13 +823,13 @@ qstr_I_am_suffering_from_|私は{s1}に悩まされている。
 qstr_I_am_suffering_from_{|私は{s1}、それと {s2}に悩まされている。
 qstr_I_am_suffering_from_{s|私は{s1}、 {s2}、それと {s3}に悩まされている。
 qstr_I_am_suffering_from_{s1|私は{s1}、 {s2}、 {s3}、それと {s4}に悩まされている。
-qstr_I_don_t_have_any_ser|ありがとう、 特に怪我はしていない。
+qstr_I_don_t_have_any_ser|ありがとう、特に怪我はしていない。
 qstr_Good_day_to_you.|やあ、ごきげんよう。
-qstr_Ah_it_s_you_again._G|やあ、きみか。 じゃあまた。
-qstr_My_apologies_if_I_wa|このあいだは失礼があったら謝りたい。 もう一度きみの身の上話を聞かせてくれないか？
-qstr_I_was_reconsidering_|このあいだの君との話を思い出していたんだ。 もう一度きみの身の上話を聞かせてくれないか？
+qstr_Ah_it_s_you_again._G|やあ、きみか。じゃあまた。
+qstr_My_apologies_if_I_wa|このあいだは失礼があったら謝りたい。もう一度{きみ/あなた}の身の上話を聞かせてくれないか{/しら}？
+qstr_I_was_reconsidering_|このあいだの{君/あなた}との話を思い出していた{んだ/のよ}。もう一度{きみ/あなた}の身の上話を聞かせてくれないか{/しら}？
 qstr_Greetings_{s23}_{s24|ごきげんよう、 {s24}、 {s23}殿。
-qstr_Greetings_{s23}.|ごきげんよう {s23}。
+qstr_Greetings_{s23}.|ごきげんよう、{s23}。
 qstr_So_you_are_{s23}._I_|ああ、あなたが{s23}殿か。 {s25}に味方をしたという話を聞く限り、 我らが友軍と考えるべきでしょうな。
 qstr_I_need_volunteers_wi|私と共に危険な任務におもむく事をいとわない者はいないか。
 qstr_I_need_some_soldiers|兵に欠員が出た。補充をしたい。

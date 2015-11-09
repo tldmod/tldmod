@@ -10,13 +10,13 @@ mno_custom_battle_scenario_12|Savaş için grupları seç
 mno_custom_battle_scenario_3 |Elfler ve Kara Numenoryanlar arasındaki çarpışma
 mno_custom_battle_scenario_4 |Miğfer Dibi Savunması, Rohan Isengard'a Karşı
 mno_custom_battle_scenario_5 |Çatışma, North vs Rhûn
-; mno_custom_battle_scenario_6 |Siege Attack, Orcs vs Dwarves
+mno_custom_battle_scenario_6 |Kuşatma, Orklar ve Dwarflar
 mno_custom_battle_scenario_7 |Pusu, Orclar vs Mirkwood
 ; mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
 ; mno_custom_battle_scenario_10|Scenery test battle
 mno_troll_battle_scenario    |Troll savaşını test et
 mno_warg_battle_scenario     |Warg savaşını test et
-; mno_build_your_own_scene     |** Build your own scene for TLD **
+mno_build_your_own_scene     |**TLD ile kendi Sahneni Oluştur**
 mno_go_back                  |Geri dön
 ; menu_tutorial|^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module
 mno_go_back_dot|Geri dön
@@ -46,8 +46,8 @@ mno_dot_go_back|Geri dön
 menu_quick_battle_troll|^^^^^^^^Troll senaryonu seç
 mno_troll_battle_scenario_10|Test: Troll VS Piyade
 mno_troll_battle_scenario_11|Test: Troll VS Okçular
-; mno_troll_battle_scenario_12|          Test: Troll VS Cavalry
-; mno_troll_battle_scenario_13|          Test: Troll VS Lancers
+mno_troll_battle_scenario_12|Deneme: Trole karşı Süvari
+mno_troll_battle_scenario_13|Deneme: Trole karşı Mızraklı Süvari
 mno_troll_battle_scenario_14|Test: Troll VS Troll
 ; mno_troll_battle_scenario_15|          Toy-Test: player controlled Troll
 ; menu_quick_battle_wargs|^^^^^^^^Choose your TEST Warg scenario:

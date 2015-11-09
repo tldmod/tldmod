@@ -1,7 +1,7 @@
-skl_trade|Ticaret
-skl_trade_desc|Bu yeteneğin her seviyesi az araştırma puanına karşılık daha fazla ekipman alma şansı tanır (Parti Yeteneği)
+skl_trade|Pazarlık
+skl_trade_desc|Bu yeteneğin her seviyesi daha az kaynak birimine karşılık daha fazla ekipman alma şansı tanır (Parti Yeteneği)
 skl_leadership|Liderlik
-skl_leadership_desc|Her bir puan alabileceğin maksimum birlik sayısını 5 arttırır. Ayrıca partinizin moralini arttırıp birliklerinize verdiğiniz maaşı 5%% azaltır(Liderlik Yeteneği)
+skl_leadership_desc|Her bir puan yönetebileceğin maksimum birlik sayısını 5 arttırır. Ayrıca partinizin moralini arttırıp birliklerin ücretini 5%% azaltır (Liderlik Yeteneği)
 skl_prisoner_management|Esir yönetimi
 skl_prisoner_management_desc|Bu yeteneğin her leveli mahkum sayısını %d kadar arttırır (Liderlik yeteneği)
 skl_persuasion|İkna
@@ -9,11 +9,11 @@ skl_persuasion_desc|Bu yetenek diğer insanların sizin görüşünüzü kabul e
 skl_engineer|Mühendislik
 skl_engineer_desc|Bu yeteneğe harcanan her puan hem zanaat hemde ekipman geliştirme sürenizi düşürür, ve daha kaliteli geliştirme yapmanıza izin verir (Grup Yeteneği)
 skl_first_aid|İlk yardım
-; skl_first_aid_desc|Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)
+skl_first_aid_desc|Kahramanlar puan başı görev sırasında kaybettikleri canı 5%% oranında geri kazanırlar. (Grup Yeteneği)
 skl_surgery|Cerrahlık
 skl_surgery_desc|Bu yeteneğe harcanan her puan grup üyelerinizin ölmek yerine yaralanma şanslarını 4%% arttırır. (Grup Yeteneği)
 skl_wound_treatment|Yara bakımı
-; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
+skl_wound_treatment_desc|Grup iyileşme hızı bu yeteneğin her puanı ile 20%% oranında artar.  (Grup Yeteneği)
 skl_inventory_management|Envanter yönetimi
 skl_inventory_management_desc|Her seviye artışında envanter kapasitesi +6 yükselir.(Lider yeteneği) 
 skl_spotting|Tespit etme
@@ -35,7 +35,7 @@ skl_riding_desc|Daha yüksek seviyeli atları (ya da diğer yaratıkları) kulla
 skl_athletics|Atletizm
 skl_athletics_desc|Koşu hızını yükseltir.(kişisel yetenek)
 skl_shield|Kalkan
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
+skl_shield_desc|Kalkanlara karşı hasarı azaltır (puan başı 8%%) ve kalkan hızını ve kapsamını arttırır. (Kişisel Yetenek)
 skl_weapon_master|Silah ustası
 skl_weapon_master_desc|Bir silahın yeterliklerini öğrenmeyi kolaylaştırır ve yeterlilik limitini arttırır. Limit şöyle olur: 60,100,140,180,220,260,300,340,380,420.(Kişisel yetenek)
 skl_power_draw|Güçlü Çekme

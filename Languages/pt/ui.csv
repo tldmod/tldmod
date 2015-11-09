@@ -1,0 +1,48 @@
+ui_at_learning_limit|(em aprender limite para esta corrida)
+ui_not_enough_skill_points_to_learn|(não tem  bastante habilidade  para aprender)
+ui_not_enough_attributetype_to_learn_this_skill|(%s insuficiente para aprender esta habilidade)
+ui_explanation_agility|Agilidade: Cada ponto fornece cinco pontos de arma e aumenta a velocidade da arma por 0.5%. As seguintes habilidades não podem ser desenvolvidos além de 1/3 de Agilidade: maestria em armas, Escudo, Atletismo, Cavalgar, Arqueria Montada, Pilhagem.
+ui_retreated_battle|%s recuou
+ui_riding_skill_not_adequate_to_mount|(Habilidade de cavalgar muito baixa)
+ui_camp|ações
+ui_tutorial_inventory|Em The Last Days, você precisa de Pontos de Recurso para obter equipamento. Pontos de Recursos são a medida da disposição de uma facção para mantê-lo equipado, e a quantidade de recursos da facção você é permitido a usar.
+ui_you_dont_have_value|Não tem: %s
+ui_merchant_cant_afford_value|%s: Você está fornecendo mais do que precisamos! Talvez guarde algo a mais para você (você está fornecendo bens por %s, nós só podemos usar %s).
+ui_merchant_pay_whatever|Não, eu não preciso de nada disso.
+ui_horse|Montar
+ui_reclaim_your_sold_goods|Recuperar os bens que você deu antes de dar isso!
+ui_return_your_bought_goods|Devolver a mercadoria que você tirou antes de dar isso!
+; ui_return_price|if returned: +%d Res.P.
+; ui_sell_price|if given: +%d Res.P.
+ui_reclaim_price|para recuperar: -%d Res.P.
+ui_buying_price|alegar: -%d Res.P.
+; ui_notification_riding_skill_not_enough|Your riding skill is not high enough to mount this.
+ui_notification_payment_value|consumir %s
+; ui_notification_payment_receive_value|Gaining %s
+; ui_weekly_cost_value|Upkeep: %s
+ui_sell|dar
+ui_hire|alistar
+; ui_notification_cant_hire|(not enough R.P. to enlist)
+; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
+ui_weekly_wage|Custo de Manutenção: %d Res.P.
+ui_price|Valor: %d Res.P.
+; ui_cant_reload_this_weapon_on_horseback|Can't reload this weapon while mounted.
+; ui_delivered_number_damage_to_horse|Delivered %d damage to mount.
+; ui_horse_charged_for_number_damage|Mount charged for %d damage.
+; ui_horse_received_number_damage|Mount received %d damage.
+; ui_horse_fell_dead|Mount fell dead...
+; ui_horse_crippled|Mount crippled...
+; ui_you_got_value|%s earned.
+ui_has_deserted_the_party|deixou o partido .
+ui_have_deserted_the_party|deixaram o partido .
+ui_loading_textures|Carregando Texturas ( seja paciente) ...
+; ui_order_hold_fire_toggle|Don't shoot/Shoot at Will (Toggle)
+; ui_order_dismount_toggle|Order Dismount/Mount (Toggle)
+; ui_mount_horses_e_|%s, Mount!
+; ui_hold_fire_e_|%s, Don't shoot!
+; ui_fire_at_will_e_|%s, Shoot at Will!
+ui_recent_messages|Última msgs
+; ui_value_denars|%d Resource Pts.
+ui_cannot_be_used_on_horseback|Enquanto não pode ser usada montado
+ui_upgrade_to_value|Atualize para %s
+; ui_notification_cant_upgrade|(Can't upgrade while giving troops)
