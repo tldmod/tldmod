@@ -11,7 +11,7 @@
  if %1 neq "H" (
 	mklink /%1 "%2" "../%2" && rem >> _setupsymlinks.log 2>>&1
  ) else (
-	mklink "%2" "../%2" && rem >> _setupsymlinks.log 2>>&1
+	mklink /%1 "%2" "../%2" && rem >> _setupsymlinks.log 2>>&1
  )
  
  goto :eof

@@ -8751,9 +8751,9 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(agent_get_troop_id, "$g_talk_troop", ":agent"), #apparently prisoner talk defines $g_talk_troop incorrectly. MB bug
 		(neg|troop_is_hero, "$g_talk_troop"),
 		(agent_set_animation, ":agent", "anim_fall_body_back"), 
-		(agent_set_hit_points,":agent",0,0),
+		#(agent_set_hit_points,":agent",0,0),
 		
-		(agent_deliver_damage_to_agent, reg1, ":agent"),
+		#(agent_deliver_damage_to_agent, reg1, ":agent"),
 	(try_end),
 	(party_remove_prisoners, "p_main_party", "$g_talk_troop", 1),
 	(troop_add_item,"trp_player", "itm_human_meat",imod_fresh)]],
