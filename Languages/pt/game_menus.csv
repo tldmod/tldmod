@@ -126,22 +126,22 @@ mno_camp_action|Usar um objeto.
 mno_camp_wait_here|Acampar aqui por algum tempo.
 mno_camp_options|Modificar as opções do TLD.
 mno_Cheat_enable|Habilitar a opção de trapaças/modificações.
-; menu_game_options|^^^^^^^^Click on an option to toggle:
-; mno_game_options_restrict_items|Restricted player equipment:  {s7}
-; mno_game_options_formations|Battle formations and AI:  {s7}
-; mno_game_options_town_menu|Town NPCs always accessible from Menus:  {s7}
-; mno_game_options_cutscenes|Cutscenes:  {s7}
-; mno_game_options_injuries|Injuries for companions:  {s7}.
-; mno_game_options_death|Permanent death for lords and companions:  {s7}.
-; mno_game_options_death2|Permanent death for player (that is YOU!):  {s7}.
-; mno_game_options_morale|Battle morale system:  {s7}
-; mno_game_options_animal_ambushes|Animal ambushes:  {s7}
-; mno_game_options_tweaks|Gameplay tweaks...
-; mno_game_options_back|Back to camp menu.
-; menu_camp_tweaks|^^^^^^^^Choose an option that you would like to adjust.
-; mno_tweak_options_compat|Compatibility tweaks...
-; mno_tweak_options_strat|Strategy tweaks...
-; mno_tweak_options_back|Back to options menu.
+menu_game_options|Clique em uma opção para mudar
+mno_game_options_restrict_items|Equipamento de jogador restrito: {s7}
+mno_game_options_formations|Formação de batalha e AI: {s7}
+mno_game_options_town_menu|NPCs de cidades sempre acessíveis nos Menus: {s7}
+mno_game_options_cutscenes|Cenas Cortadas: {s7}
+mno_game_options_injuries|Lesões para companheiros: {s7}
+mno_game_options_death|Morte permanente para Lords e companheiros:  {s7}
+mno_game_options_death2|Morte permanente para jogador(este é VOCÊ!): {s7}
+mno_game_options_morale|Sistema de moral em batalha: {s7}
+mno_game_options_animal_ambushes|Emboscada de animais: {s7}
+mno_game_options_tweaks|Ajustes de Jogabilidade...
+mno_game_options_back|Voltar ao menu de campo.
+menu_camp_tweaks|^^^^^^^^Escolha uma opção que gostaria de ajustar
+mno_tweak_options_compat|Ajustes de compatibilidade...
+mno_tweak_options_strat|Ajustes de jogabilidade...
+mno_tweak_options_back|Voltar ao menu de op.ções
 ; menu_camp_compat_tweaks|^^^^^^^^Click on an option to change (hold shift to decrease):^(these are for compatibilty and are not cheats)
 ; mno_game_options_compat_party|Maximum number of parties: {s1}
 ; mno_game_options_compat_back|Back to tweaks menu.

@@ -25,7 +25,7 @@ mno_view_character_report|キャラクター情報を見る
 mno_view_party_size_report|パーティの人数上限を確認する
 mno_view_morale_report|パーティの士気に関する情報を見る
 mno_view_character_report_02|NPCの状態を確認する
-mno_view_faction_strengths_report|各ファクションの勢力を確認する
+mno_view_faction_strengths_report|各ファクションの勢力値を確認する
 mno_view_traits_report|特殊能力を見る
 mno_resume_travelling|旅を続ける
 mno_custom_battle_go|開始
@@ -146,10 +146,10 @@ menu_camp_compat_tweaks|^^^^^^^^項目をクリックして調整してくださ
 mno_game_options_compat_party|パーティの最大数:{s1}
 mno_game_options_compat_back|調整メニューに戻る
 menu_camp_strat_tweaks|^^^^^^^^項目をクリックするとトグルします^(警告:これらはチートです！)
-mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力:{s7}
+mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力値:{s7}
 mno_strat_tweaks_siege_relax_rate|包囲攻城戦の必要条件の緩和レート:{reg1}
-mno_strat_tweaks_regen_rate|勢力の回復レート:{s7}
-mno_strat_tweaks_siege_regen_limit|回復不可とされるファクションの勢力の値:{reg1}
+mno_strat_tweaks_regen_rate|勢力値の回復レート:{s7}
+mno_strat_tweaks_siege_regen_limit|回復不可とされるファクションの勢力値:{reg1}
 mno_strat_tweaks_influence_gain_rate|影響力獲得レート:{s7}
 mno_strat_tweaks_rank_gain_rate|ランク獲得レート:{s7}
 mno_strat_tweaks_back|調整メニューに戻る
@@ -284,11 +284,11 @@ mno_tirith_toplevel|最上層に登る。
 mno_town_leave|立ち去る・・・
 mno_town_leave_door|立ち去る
 menu_disembark|上陸しますか？
-mno_disembark_yes|する。
-mno_disembark_no|しない。
+mno_disembark_yes|する
+mno_disembark_no|しない
 menu_ship_reembark|乗船しますか？
-mno_reembark_yes|する。
-mno_reembark_no|しない。
+mno_reembark_yes|する
+mno_reembark_no|しない
 menu_center_reports|拠点:{s1}^地代収入:{reg1}デナル^関税収入:{reg2}デナル^食料備蓄:{reg3}日間分
 menu_sneak_into_town_suceeded|みすぼらしい浮浪者に変装したあなたは、 衛兵の目をかいくぐって町の中へと入り込みました。
 menu_sneak_into_town_caught|潜入を試みたあなたに衛兵のひとりが気付き、 大声を上げました！ この辺りの衛兵が殺到するまえに、 門の外へ逃げなければなりません！
@@ -356,7 +356,7 @@ menu_town_ruins|この{s1}は{s2}
 mno_ruin_menu_0|この場所を探索する。
 mno_ruin_leave|立ち去る・・・
 menu_death|あなたは殺されました。 戦争の猛威はいまだ弱まる気配すらありませんが、 あなたの役目はここで終わりました。
-menu_animal_ambush|あなたとコンパニオンは、 他の兵とはぐれてしまいました。 すると突然・・・
+menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}
 menu_animal_ambush_fail|獣どもはあなた{reg0?:とコンパニオン{reg2?たち:}}に噛み付き、 突進してきましたが、 あなたはなんとか彼らを追い払うことができました。 これであきらめてくれることを願いましょう。
 menu_build_your_scene|ゲームのEditモード (あらかじめM&BのランチャーのOptionsで EditモードをONにする必要があります)を 利用すれば、 下に用意されているスロットのうちのひとつを使って、 自分だけの戦闘シーンを作ることができます。 作成したシーン (TLD/SceneObjフォルダにある、 scoファイルのことです) をTLDの開発チームに送ってください。 シーンの出来が良ければ、 今後のリリースにおいて ランダム戦闘シーンのうちのひとつとして 登場するかも知れません！^^マップ上のどの地域を舞台にしたシーンなのかを 特定してください。^ヒント:あなたがシーン作成の経験が豊富で、 AIの仕組みや挙動を熟知しているのでない限り、 水中や急勾配の山といった 移動しづらい場所の使用は避けましょう。^(#0-1は攻撃側が、 #4は防衛側がメインです。 #5-8はいじらないでください。)

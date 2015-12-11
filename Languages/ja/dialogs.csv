@@ -27,8 +27,8 @@ dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|ああ、それは�
 dlga_hobbit_general_talk_3:close_window|そう{か/}、それじゃあまた{な/ね}。
 dlga_start:hobbit_merry_talk_met.1|おかえりなさい、{playername}!
 dlga_start:hobbit_pippin_talk_met.1|おかえりなさい、{playername}!
-dlga_hobbit_merry_talk_met:close_window|やあ、メゼル メリー。
-dlga_hobbit_pippin_talk_met:close_window|やあ、メゼル ピピン。
+dlga_hobbit_merry_talk_met:close_window|やあ、メゼル・メリー。
+dlga_hobbit_pippin_talk_met:close_window|やあ、メゼル・ピピン。
 dlga_start:treebeard_introduce_1|(これほど奇妙な生き物が、この世に存在し得るものなのだろうか。^背はとても高く、こわばった四肢がのび、肌は樹皮のようで、頭は^木の葉だらけだった。体のあちこちには、苔も生えている。しかし^この瞬間、あなたの注意はその目に釘付けにされていた。あなたを^推し量るその深い目は、ゆっくりとして荘厳、かつ鋭く突き刺す^ようだった。あなたが緑の光のさした茶色だと思ったその目の^向こう側には、遠いかなたより続く記憶と、長くゆっくりとした、^規律ある思考で満たされた、途方もない井戸があるようだった。^しかし、その表面は、目の前にある事象をきらきらと映している・・・^それは大きな木の向こう側に揺らめく日の光か、または、^とても深い湖に起こった渦のようだった。)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(あなたは何か言いかけたが、急に空気が薄くなったかのような、^呼吸が苦しくなる妙な感覚に襲われた・・・ほとんど必死になって^空気を吸い込み、その感覚を振り払うと、巨大な木に似た生物も^少し気を緩めたようだった。だがその生物はあいかわらずあなたから^視線をはなさず、あなたは他にも同じような生物が何体か、^あなたを見ているのに気がついた。皆、あなたが何か言うのを^待っているようだった・・・)
 dlga_treebeard_introduce_2:treebeard_introduce_3|邪魔をしてすまない・・・私はわけあって、避難する場所を^探している、疲れ果てた旅の者なんだ・・・名前は{playername}という。^あなたの名前を伺ってもよろしいか？
@@ -56,10 +56,10 @@ dlga_start:close_window.3|ムムムルゥルルゥムム？
 dlga_start:looters_2_join|{s4}の力にひれ伏し、われに仕えよ！
 dlga_looters_2_join:close_window|我々はあなたに従います、ご主人様。
 dlga_start:close_window.4|^^咆哮！^^
-dlga_start:member_castellan_talk|ごきげんよう、{playername}殿。 ご用件は？
+dlga_start:member_castellan_talk|ごきげんよう、{playername}殿。ご用件は？
 dlga_member_castellan_pretalk:member_castellan_talk|他には何か？
 dlga_member_castellan_talk:member_review_castle_garrison|守備兵を確認したい。
-dlga_member_review_castle_garrison:member_castellan_pretalk|よろしいでしょう。 これが名簿です。 気が付いた事があれば言ってください・・・
+dlga_member_review_castle_garrison:member_castellan_pretalk|よろしいでしょう。これが名簿です。気が付いた事があれば^言ってください・・・
 dlga_member_castellan_talk:member_review_castellan_equipment|装備を確認させて欲しい。
 dlga_member_review_castellan_equipment:member_castellan_pretalk|さあ、どうぞ・・・
 dlga_member_castellan_talk:member_castellan_join|この城は捨てて、私に付いて来い。
@@ -81,7 +81,7 @@ dlga_member_talk:view_member_char_requested|スキルについて確認したい
 dlga_view_member_char_requested:do_member_view_char|わかりました、説明しましょう・・・
 dlga_member_talk:member_separate|しばらくの間、別々に行動しようと思う。
 dlga_member_separate:member_separate_confirm|なんだって？ ではまあ、こんな場所に長居するつもりはない。 {s4}へ戻るとしよう。 それでいいか？
-dlga_member_separate_confirm:member_separate_yes|そう{だな/ね}。我々は別れたほうがいい{/わ}。
+dlga_member_separate_confirm:member_separate_yes|そう{だな/ね}。{我々/私たち}は別れたほうがいい{/わ}。
 dlga_member_separate_confirm:do_member_trade|いや、やはり私の許にいて欲しい。
 dlga_member_separate_yes:close_window|さて。それではもう行くとしよう。 また私が必要になったら探してくれ。
 dlga_member_talk:member_question|聞きたいことがある。
@@ -115,11 +115,11 @@ dlga_companion_rehire_refused:close_window|そうか・・・また気が変わ�
 dlga_companion_objection_response:close_window|ありがとう、{君/あなた}の心遣いに感謝する{よ/わ}。
 dlga_companion_objection_response:close_window.1|もう二度と起こらないように気を付けよう。
 dlga_companion_objection_response:close_window.2|{君/あなた}の意見は分かった{が/けれど}、今はかまっている暇はない{んだ/の}。
-dlga_companion_personalityclash2_response:close_window|私は{s11}を、この部隊の重要な仲間だと考えている。 {君/あなた}ももうちょっと{reg11?彼女:彼}の事を 評価してやるべき{だ/だわ}。
-dlga_companion_personalityclash2_response:close_window.1|{君/あなた}の言う通り{だ/ね}。 {s11}のふるまいは、 目に余るものがある{/わ}。 {reg11?彼女:彼}には、 私から言ってお{こう/くわ}。
+dlga_companion_personalityclash2_response:close_window|私は{s11}を、この部隊の重要な仲間だと考えている。{君/あなた}ももうちょっと{reg11?彼女:彼}の事を評価してやるべき{だ/だわ}。
+dlga_companion_personalityclash2_response:close_window.1|{君/あなた}の言う通り{だ/ね}。{s11}のふるまいは、目に余るものがある{/わ}。{reg11?彼女:彼}には、私から言ってお{こう/くわ}。
 dlga_companion_personalityclash2_response:close_window.2|つまらない喧嘩に付き合っている暇はない{んだ/の}。
-dlga_companion_personalityclash_response:close_window|私は{s11}を、この部隊の重要な仲間だと考えている。 {君/あなた}ももうちょっと{reg11?彼女:彼}の事を 評価してやるべき{だ/だわ}。
-dlga_companion_personalityclash_response:close_window.1|{君/あなた}の言う通り{だ/ね}。 {s11}のふるまいは、 目に余るものがある{/わ}。 {reg11?彼女:彼}には、 私から言ってお{こう/くわ}。
+dlga_companion_personalityclash_response:close_window|私は{s11}を、この部隊の重要な仲間だと考えている。{君/あなた}ももうちょっと{reg11?彼女:彼}の事を評価してやるべき{だ/だわ}。
+dlga_companion_personalityclash_response:close_window.1|{君/あなた}の言う通り{だ/ね}。{s11}のふるまいは、目に余るものがある{/わ}。{reg11?彼女:彼}には、私から言ってお{こう/くわ}。
 dlga_companion_personalityclash_response:close_window.2|つまらない喧嘩に付き合っている暇はない{んだ/の}。
 dlga_companion_personalitymatch_response:close_window|それは良かった{/わね}。
 dlga_event_triggered:companion_faction_demolished|{s5}、 {reg6?我々:私}の故郷の{s6}がこの戦争に押し潰されそうになっています。 我々の部隊が休息をとって準備が出来次第、 あなたには{reg6?我々:私}の同胞たちを なんとか助ける事を考えて欲しい。
@@ -160,7 +160,7 @@ dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_reject|
 dlga_player_siege_ask_leave_unmolested_reject:close_window|ならばこの城を枕に討ち死にするのみ。 交渉はこれまでだ。さらば。
 dlga_defeat_lord_answer:defeat_lord_answer_1|おぬしは我らが捕虜となった。
 dlga_defeat_lord_answer_1:close_window|好きにするがいい。
-dlga_defeat_lord_answer:defeat_lord_answer_2|おぬしはよく戦った。 解放してやろう。
+dlga_defeat_lord_answer:defeat_lord_answer_2|おぬしはよく戦った。解放してやろう。
 dlga_start:party_encounter_lord_hostile_attacker|{playername}！
 dlga_start:party_encounter_lord_hostile_attacker.1|止まれ！
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|ここは戦わずに済ませられないものだろうか？ おぬしとは戦いたくない。
@@ -202,12 +202,12 @@ dlga_lord_start:lord_generic_mission_completed.1|おぬしが野生のトロル�
 dlga_lord_start:lord_follow_spy_half_completed|なんということだ、愚か者め！ 私は二人を捕らえよと言ったはずだ、 {playername}。 これではほとんど意味がない！ 間者がかき集めた情報については、 私は完全に把握しているのだ。 私が狙っていたのは、 連絡係なのだ。 さあ、仕事が半分なら報酬も半分だ。 受け取ったら出て行け。
 dlga_lord_start:lord_follow_spy_half_completed.1|私は、ふたり捕らえよ、といったはずだ、{playername}。 ひとりではない。ふたりだ。 少なくとも、 より重要であった連絡係のほうを捕らえてきたのは 評価してやろう。 あの間者はもう二度と ここへ戻る事はないであろう。 やつの主人が誰なのかは知らぬが、 もうあの間者の使い道はないであろうな。 まあ一応の成果は出たと言えよう。 しかし、 おぬしへの報酬は半分だ。 それで納得せよ。
 dlga_lord_start:lord_follow_spy_failed|まったく、{playername}、 おぬしはまったくの役立たずだ。 間者も連絡係も両方取り逃がすとは、 これほどの失態は聞いた事がないわ。 報酬の話などは忘れるがよい。 おぬしにくれてやる物などない。
-dlga_lord_follow_spy_half_completed:lord_pretalk|私は精一杯やったつもりです、 {s65}。
-dlga_lord_follow_spy_completed:lord_pretalk|ありがとうございます、 {s65}。
-dlga_lord_follow_spy_failed:lord_pretalk|は。お望みのように、 {s65}。
+dlga_lord_follow_spy_half_completed:lord_pretalk|私は精一杯やったつもりです、{s65}。
+dlga_lord_follow_spy_completed:lord_pretalk|ありがとうございます、{s65}。
+dlga_lord_follow_spy_failed:lord_pretalk|は。お望みのように、{s65}。
 dlga_lord_start:lord_generic_mission_completed.2|何という事だ、よくやってくれたぞ、 {playername}。 奴隷はすべて戻り、 収穫の準備で大忙しだ。 おぬしの仕事ぶりは素晴らしい。 さあ、私の感謝の気持ちだ、 報酬を受け取るがいい。
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}。 私は辛抱強く奴隷どもが戻るのを待っているのだが、 まだひとりも戻っておらぬ。 おぬしはこれをどう説明するつもりだ？ おぬしはあの教養のない動物どもに 一杯食わされたのか、 それともおぬしは単なる役立たずなのか、 どちらだ？
-dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|お許しください、{s65}、 あの奴隷どもはまるで、 うなぎのようにするりと逃げるので。
+dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|お許しください、{s65}、あの奴隷どもはまるで、うなぎのようにするりと逃げるので。
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|フン、それでは言い訳にすらならんな、{playername}。 もういい、行け。 我々が飢えるまえに、 農場で働かせるための新しい奴隷を確保しなければならん。
 dlga_lord_start:lord_runaway_serf_half_completed|おぬしにはがっかりさせられた、 {playername}。 おぬしを雇ったのは、 みっつの奴隷グループを連れ戻すためだ。 みっつだ。 {reg17}ではない。 戻ってきた連中には、 逃げおおせた者のぶんも含めて、 いままでの倍は働いてもらわねばらなんな。 おぬしへの報酬だが、 {playername}、 連れ戻した奴隷のぶんだけ払うぞ。 そら、受け取るがいい。 これでこの取引は終わりだ。
 dlga_lord_runaway_serf_half_completed:lord_pretalk|ありがとうございます、{s65}。なんという寛大なるお方だ。
@@ -216,7 +216,7 @@ dlga_lord_start:lord_deliver_cattle_to_army_thank|おお、{playername}。 私�
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|問題ありません、{s65}。
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.1|お役に立てて光栄です。
 dlga_lord_start:lord_scout_waypoints_thank|おぬしは優秀な偵察兵だな、{playername}。 おぬしの{s13}、{s14}、 それと{s15}に関する報告は、 使いの者からつい先ほど受け取った。 よくやってくれた。
-dlga_lord_scout_waypoints_thank:lord_pretalk|実に簡単な仕事でした、 {s65}。
+dlga_lord_scout_waypoints_thank:lord_pretalk|実に簡単な仕事でした、{s65}。
 dlga_lord_scout_waypoints_thank:lord_pretalk.1|私に出来ないことなどありません。
 dlga_lord_scout_waypoints_thank:lord_pretalk.2|お褒めに預かり、光栄に存じます、閣下。
 dlga_lord_start:lord_mission_told_deliver_cattle_to_army|我が軍の食料が予想以上に早く減っているのだ、{playername}。 兵が飢え始める前に、 {s4}を{reg3}ユニット調達してきてくれ。 どう調達するかについては、 私は一切関知しない。 とにかく一刻も早く調達してきてくれ。
@@ -246,7 +246,7 @@ dlga_lord_talk:lord_lend_companion_end|{s65}、 我が部下の{s14}の事です
 dlga_lord_lend_companion_end:lord_pretalk|おぬしの部隊はもうこれ以上人数を増やせないようだ、 {playername}。
 dlga_lord_lend_companion_end:lord_pretalk.1|もちろんだ、{playername}。 {reg3?彼女:彼}のような優秀な{reg3?女:男}を配下に持てて、 おぬしは幸運な指揮官よな。
 dlga_lord_talk:lord_message_delivered|{s9}より、手紙を預かって参りました。
-dlga_lord_talk:lord_message_delivered_enemy|{s9}より、手紙を預かって参った。
+dlga_lord_talk:lord_message_delivered_enemy|{s9}より、手紙を預かって参りました。
 dlga_lord_talk:lord_active_mission_1|例の任務の件ですが・・・
 dlga_lord_talk:lord_request_mission_ask|何か私にお手伝いできる事はありますか？
 dlga_lord_talk:find_lost_spears_permission|王様、 ブラードルシン王の失われた槍の探索のため、 はなれ山への入山をお許し願いたい。
@@ -286,10 +286,10 @@ dlga_send_gift_4:lord_pretalk|忘れてください。
 dlga_send_gift_5:lord_pretalk|いいだろう、{playername}。幸運を祈る。
 dlga_lord_talk:lord_give_order_ask|あなたに任務がある。
 dlga_lord_give_order_ask:lord_give_order|何か？
-dlga_lord_give_order:lord_give_order_answer|私に付いてきて欲しい。 [影響力を{reg1}/{reg2}消費します]
-dlga_lord_give_order:lord_give_order_details_ask|移動してもらいたい目的地がある・・・ [影響力を{reg1}/{reg2}消費します]
-dlga_lord_give_order:lord_give_order_details_ask.1|巡察してもらいたい場所がある・・・ [影響力を{reg1}/{reg2}消費します]
-dlga_lord_give_order:lord_give_order_details_ask.2|敵を殲滅してもらいたい場所がある・・・ [影響力を{reg1}/{reg2}消費します]
+dlga_lord_give_order:lord_give_order_answer|私に付いてきて欲しい。[影響力を{reg1}/{reg2}消費します]
+dlga_lord_give_order:lord_give_order_details_ask|移動してもらいたい目的地がある・・・[影響力を{reg1}/{reg2}消費します]
+dlga_lord_give_order:lord_give_order_details_ask.1|巡察してもらいたい場所がある・・・[影響力を{reg1}/{reg2}消費します]
+dlga_lord_give_order:lord_give_order_details_ask.2|敵を殲滅してもらいたい場所がある・・・[影響力を{reg1}/{reg2}消費します]
 dlga_lord_give_order:lord_give_order_stop|当面はあなたの力は必要ない。自由にしていて欲しい。
 dlga_lord_give_order:lord_pretalk|なんでもない。
 dlga_lord_give_order_details_ask:lord_give_order_details|目的地は？
@@ -331,19 +331,19 @@ dlga_lord_mission_sorcerer_failed:lord_pretalk|ええ、{playername}、 敵意�
 dlga_lord_active_mission_1:lord_lend_companion_end|ああ、 コンパニオンを連れ戻しに来たのだな？ なるほど・・・
 dlga_lord_active_mission_1:lord_pretalk|{playername}、 まだおぬしのコンパニオンの力が必要なのだ、 もうしばらく辛抱していただこう。 また日を改めて来てくれ。
 dlga_lord_active_mission_1:lord_active_mission_2|うむ、良い知らせであろうな？
-dlga_lord_active_mission_2:lord_generic_mission_thank|はい。 捕虜を{reg1}名、 連行して来ました。
-dlga_lord_active_mission_2:lord_generic_mission_thank_extra|もちろんです。 捕虜の件ですが、 {reg1}名では足りない事もあろうかと思い、 {reg2}名、連行してきました。
-dlga_lord_active_mission_2:lord_generic_mission_thank.1|はい。 味方の捕虜を{reg1}名救出し、 わが部隊に組み入れました。
-dlga_lord_active_mission_2:lord_generic_mission_thank.2|はい。 {s13}の偵察をしてまいりました。
-dlga_lord_active_mission_2:lord_generic_mission_thank.3|はい。 偵察隊を派遣してまいりました。
-dlga_lord_active_mission_2:lord_generic_mission_thank.4|はい。 じゅうぶんな数の敵部隊を 殲滅してまいりました。
-dlga_lord_active_mission_2:capture_enemy_hero_thank|もちろんです。 敵の指揮官を捕らえてまいりました。
+dlga_lord_active_mission_2:lord_generic_mission_thank|はい。捕虜を{reg1}名、連行して来ました。
+dlga_lord_active_mission_2:lord_generic_mission_thank_extra|もちろんです。捕虜の件ですが、{reg1}名では足りない事もあろうかと思い、{reg2}名、連行してきました。
+dlga_lord_active_mission_2:lord_generic_mission_thank.1|はい。味方の捕虜を{reg1}名救出し、わが部隊に組み入れました。
+dlga_lord_active_mission_2:lord_generic_mission_thank.2|はい。{s13}の偵察をしてまいりました。
+dlga_lord_active_mission_2:lord_generic_mission_thank.3|はい。偵察隊を派遣してまいりました。
+dlga_lord_active_mission_2:lord_generic_mission_thank.4|はい。じゅうぶんな数の敵部隊を殲滅してまいりました。
+dlga_lord_active_mission_2:capture_enemy_hero_thank|もちろんです。敵の指揮官を捕らえてまいりました。
 dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|わが友よ、大変感謝する。 この者ならば、 我々の質問に たっぷりと答えてくれることだろう。 おぬしの仕事ぶりは素晴らしい。
 dlga_capture_enemy_hero_thank_2:lord_pretalk|ありがとうございます、{s65}。
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|どうという事はありません。
 dlga_lord_active_mission_2:lord_raise_troops_thank|もちろんです。{reg1}名の{s13}を育て上げました。どうぞお預かりください。
-dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|{s3}に潜伏中だった{s4}を捕捉し、 罰を与えました。
-dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|残念ながら、 彼を取り逃がしました。
+dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|{s3}に潜伏中だった{s4}を捕捉し、罰を与えました。
+dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|残念ながら、彼を取り逃がしました。
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|あのような者がこの世から消えて、せいせいするな！ 長きにわたる私の頭痛の種を取り除いてくれて、 感謝するぞ、 {playername}。 おぬしの如才ない仕事ぶりは信頼できるな。 我々の監督官にはすでに私から話をしておいた。 補給物資の追加を期待してくれ。
 dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|ありがとうございます、{s65}。
 dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|この顛末は我々の監督官に私から話をしておこう、 {playername}。 あのいまいましい{s44}を片付けてくれて、 もう一度礼を言う。
@@ -369,7 +369,7 @@ dlga_lord_mission_capture_troll_rejected:lord_pretalk|とうに見抜いては�
 dlga_lord_mission_capture_troll_accepted:lord_pretalk|おぬしの強さと勇猛さは頼りに出来ると常々考えておった。 これ奴隷ども、 {playername}に、 あの車輪つきの檻をひとつ用意するのだ！ {playername}、 わしへの贈り物を捕らえたら、 ここへ戻るのだ。 わしは{reg1}回目の夜明けを見るまえに贈り物が欲しい。
 dlga_lord_tell_mission:lord_tell_mission_kill_troll|このような危機は、我々の世代では聞いた事がない。 {s3}の周辺で、 人々が行方不明になっているのだ。 一般の民だけではない、 調査に行った小規模の部隊にも戻ってこない部隊がある。 いろいろな噂が飛び交っているが、 私は何が起こっているのかを把握している。
 dlga_lord_tell_mission_kill_troll:lord_mission_told|野生のトロルだ、{playername}。 邪悪で奇怪な、 巨大な獣だ。 山にあるはずの奴らの暗いねぐらから こんなところまで這い出て来た事は今までなかったが、 少なくとも一頭が {s3}周辺で目撃されている。 どんな妖術でこのような事態が引き起こされたのかは 分らないが、 あの獣は退治しなければならない。
-dlga_lord_mission_told:lord_mission_kill_troll_info_a|そのような獣と、どうやって戦えばよいのか？
+dlga_lord_mission_told:lord_mission_kill_troll_info_a|そのような獣と、どうやって戦えばよいのでしょうか？
 dlga_lord_mission_kill_troll_info_a:lord_mission_told|確かにトロルは危険な生き物だ。 奴らのあの盛り上がった筋肉は、 信じがたい破壊力を持っている。 その皮膚は鉄のように硬く、 木の幹をまるで棍棒のように扱う。 聞いた話では、 一頭のトロルの繰り出す一撃で、 6人の精強な兵が簡単に倒されるそうな。 人間だけでなく、 馬もトロルを怖がる。 馬に乗って近づこうというのなら、 じゅうぶん気をつけてくれ。
 dlga_lord_mission_told:lord_mission_kill_troll_info_b|モルドールか、アイゼンガルドの仕業でしょうか？
 dlga_lord_mission_kill_troll_info_b:lord_mission_told|いや、そうではなかろう。 白の魔法使いも黒の塔もあらゆる種の化け物を飼っているが、 私の受けた報告によると、 {s3}を脅かしているトロルは調教されていない、 野生の獣らしい。 気をつけてくれ、 もしかすると一頭以上、 徘徊しているのかも知れない。 だが、 この新たな脅威は、 まだ世に知られない、 敵の術によるものと考えてよいだろう。
@@ -435,7 +435,7 @@ dlga_lord_tell_mission_lend_companion_accepted:close_window|大いに感謝す�
 dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|そうか、非常に残念だ。 だが、おぬしや{s3}に無理強いするわけにもいかぬな。 おぬし達の助けなしでなんとかしてみよう。
 dlga_lord_tell_mission:lord_mission_told.3|我々の偵察隊の報告によると、 ここのところ、 敵の活動が活発になっているらしい。 敵の捕虜を確保して何が行われているのか尋問したいところだが、 残念ながら偵察隊にはそのような事は望めないだろう。 そこで、 捕虜を{reg1}名、 確保して私のところまで連れてきてくれる戦士が必要なのだ。
 dlga_lord_tell_mission:lord_pretalk|いや、{playername}。 今は間に合っている。
-dlga_lord_mission_told:lord_mission_accepted|おまかせください、 {s65}。
+dlga_lord_mission_told:lord_mission_accepted|おまかせください、{s65}。
 dlga_lord_mission_told:lord_mission_rejected|恐れ入りますが、今はこのような任務を引き受ける事はできません。
 dlga_lord_mission_accepted:close_window|素晴らしい、{playername}、 大変結構だ。 おぬしの事は全面的に信頼しておる。
 dlga_lord_mission_rejected:close_window|そうか？ まあ、おぬしの手に余る任務かも知れんな。 もっと気概のある者に申し付けるとしよう。
@@ -456,7 +456,7 @@ dlga_prison_guard_players:close_window.1|申し訳ないが、今はだめだ。
 dlga_start:prison_guard_talk|何かご用で？
 dlga_prison_guard_talk:prison_guard_ask_prisoners|誰が牢獄に入れられている{んだ/の}？
 dlga_prison_guard_talk:prison_guard_visit_prison|捕虜と話がしたい。
-dlga_prison_guard_ask_prisoners:prison_guard_talk|今は{s51}だ。
+dlga_prison_guard_ask_prisoners:prison_guard_talk|今は{s51}です。
 dlga_prison_guard_visit_prison:close_window|どうぞ、お通りください、指揮官殿。
 dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|捕虜と面会するには、 我々の主人の許可をもらう必要がある。
 dlga_prison_guard_visit_prison_2:close_window|そうか。ではそちらを当たろう。
@@ -478,7 +478,7 @@ dlga_start:castle_guard_intro_1|何か用か？
 dlga_castle_guard_intro_1:castle_guard_intro_2|ここの主に取り次ぎ願いたい。
 dlga_castle_guard_intro_1:close_window|なんでもない。
 dlga_castle_guard_intro_2:castle_guard_intro_2|まずここで武器を預らせていただく。 大広間での武器の携帯は許されていない。
-dlga_castle_guard_intro_2:close_window|よかろう、武器はこれだ。 では入らせてもらうぞ。
+dlga_castle_guard_intro_2:close_window|よかろう、武器はこれだ。では入らせてもらうぞ。
 dlga_castle_guard_intro_2:castle_guard_intro_2b|武器を預ける事はできない。
 dlga_castle_guard_intro_2b:close_window|では入場は許可できんな。
 dlga_start:castle_gate_guard_talk|何か用か？

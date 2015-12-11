@@ -422,10 +422,10 @@ trp_veteran_footman_of_rohan|Опытный пехотинец Рохана
 trp_veteran_footman_of_rohan_pl|Опытные пехотинцы Рохана
 trp_elite_footman_of_rohan|Отборный пехотинец Рохана
 trp_elite_footman_of_rohan_pl|Отборные пехотинцы Рохана
-trp_folcwine_guard_of_rohan|Роханский воин гвардии Фолквине
-trp_folcwine_guard_of_rohan_pl|Роханские воины гвардии Фолквине
-trp_raider_of_rohan|Налётчик Фреалава
-trp_raider_of_rohan_pl|Налётчики Фреалава
+trp_folcwine_guard_of_rohan|Роханский воин гвардии Фольквине
+trp_folcwine_guard_of_rohan_pl|Роханские воины гвардии Фольквине
+trp_raider_of_rohan|Налётчик Фреалафа
+trp_raider_of_rohan_pl|Налётчики Фреалафа
 trp_heavy_swordsman_of_rohan|Тяжёлый мечник Рохана
 trp_heavy_swordsman_of_rohan_pl|Тяжёлые мечники Рохана
 trp_warden_of_methuseld|Страж Медусельда
@@ -436,8 +436,8 @@ trp_veteran_skirmisher_of_rohan|Опытный застрельщик Рохан
 trp_veteran_skirmisher_of_rohan_pl|Опытные застрельщики Рохана
 trp_elite_skirmisher_of_rohan|Отборный застрельщик Рохана
 trp_elite_skirmisher_of_rohan_pl|Отборные застрельщики Рохана
-trp_thengel_guard_of_rohan|Роханский воин гвардии Тенгеля
-trp_thengel_guard_of_rohan_pl|Роханские воины гвардии Тенгеля
+trp_thengel_guard_of_rohan|Роханский воин гвардии Тенгела
+trp_thengel_guard_of_rohan_pl|Роханские воины гвардии Тенгела
 trp_lancer_of_rohan|Конный копейщик Рохана
 trp_lancer_of_rohan_pl|Конные копейщики Рохана
 trp_elite_lancer_of_rohan|Отборный конный копейщик Рохана
@@ -932,7 +932,7 @@ trp_tavern_minstrel_1|Менестрель
 trp_npc1|Маблунг
 trp_npc2|Кирдиль
 trp_npc3|Улфас
-trp_npc4|Галмине
+trp_npc4|Гальмине
 trp_npc5|Глорфиндель
 trp_npc6|Луэванна
 trp_npc7|Кили Златопалый
@@ -978,7 +978,7 @@ trp_dale_lord|Король Бранд
 trp_dale_lord_pl|Король
 trp_dwarf_lord|Король Даин II Железностоп
 trp_dwarf_lord_pl|Король
-trp_dunland_lord|Вождь Даэглав Чёрный
+trp_dunland_lord|Вождь Даэглаф Чёрный
 trp_dunland_lord_pl|Вождь
 trp_beorn_lord|Вождь Гримбеорн Старый
 trp_beorn_lord_pl|Вождь
@@ -995,7 +995,7 @@ trp_knight_1_5|Дуинхир
 trp_knight_1_6|Хирлуин Прекрасный
 trp_knight_1_7|Фарамир
 trp_knight_1_8|Форлонг Толстый
-trp_knight_1_9|Гримболд
+trp_knight_1_9|Гримбольд
 trp_knight_1_10|Эркенбранд
 trp_knight_1_11|Эльфхельм
 trp_knight_1_12|Хама
@@ -1041,10 +1041,10 @@ trp_knight_4_12|Беранор Чёрный Мех
 trp_knight_4_16|Бролгухш, Хозяин кнута
 trp_knight_4_17|Грумрунт, Хозяин кнута
 trp_knight_4_18|Гримсоб, Хозяин кнута
-trp_knight_5_1|Владыка Халвард
+trp_knight_5_1|Владыка Хальвард
 trp_knight_5_2|Владыка Бард
 trp_knight_5_3|Владыка Эсгарайн
-trp_knight_5_6|Фулгни Длиннобородый
+trp_knight_5_6|Фульгни Длиннобородый
 trp_knight_5_7|Торин Каменный Шлем
 trp_knight_5_11|Вождь Фудрейм
 trp_knight_5_12|Вождь Вульф
@@ -1080,7 +1080,7 @@ trp_smith_edoras|Эаоден Повелитель Стали
 trp_smith_edoras_pl|Королевскую кузницу
 trp_smith_aldburg|Фулм Железное Копыто
 trp_smith_aldburg_pl|кузницу
-trp_smith_hornburg|Алдхельм
+trp_smith_hornburg|Альдхельм
 trp_smith_hornburg_pl|кузницу
 trp_smith_eastemnet|Эадфрид
 trp_smith_eastemnet_pl|кузницу
@@ -1118,7 +1118,7 @@ trp_smith_thranduils_halls|Туринор
 trp_smith_thranduils_halls_pl|кузницу
 trp_smith_woodelf_camp|Калехир
 trp_smith_woodelf_camp_pl|кузницу
-trp_smith_beorn|Беорналав Секиродел
+trp_smith_beorn|Беорналаф Секиродел
 trp_smith_beorn_pl|кузницу
 trp_smith_moria|Бургак Кузнец
 trp_smith_moria_pl|кузницу
@@ -1128,7 +1128,7 @@ trp_smith_esgaroth|Келегарн Мастер Луков
 trp_smith_esgaroth_pl|кузницу
 trp_smith_erebor|Трор Молотобоец
 trp_smith_erebor_pl|прославленные гномьи кузни
-trp_smith_dunland|Дорровулд Железная Пика
+trp_smith_dunland|Дорровульд Железная Пика
 trp_smith_dunland_pl|кузницу
 trp_smith_harad|Хар Сталелом
 trp_smith_harad_pl|кузницу
@@ -1170,7 +1170,7 @@ trp_smith_guldur_ac|Штазг Дулбаш
 trp_smith_guldur_ac_pl|кузницу
 trp_smith_imladris_ac|Дуифириан
 trp_smith_imladris_ac_pl|эльфийские оружейные мастерские
-trp_smith_dunland_ac|Дорровулд Железная Пика
+trp_smith_dunland_ac|Дорровульд Железная Пика
 trp_smith_dunland_ac_pl|кузницу
 trp_smith_harad_ac|Хар Сталелом
 trp_smith_harad_ac_pl|кузницу
@@ -1374,19 +1374,19 @@ trp_elder_henneth|Управитель Хеннет-Аннуна
 trp_elder_henneth_pl|убежище рейнджеров
 trp_elder_cairandros|Управитель Кайр-Андроса
 trp_elder_cairandros_pl|островную крепость
-trp_elder_edoras|Тейн Эдораса
+trp_elder_edoras|Тэн Эдораса
 trp_elder_edoras_pl|город
-trp_elder_aldburg|Тейн Алдбурга
+trp_elder_aldburg|Тэн Альдбурга
 trp_elder_aldburg_pl|поселение
-trp_elder_hornburg|Тейн Хорнбурга
+trp_elder_hornburg|Тэн Хорнбурга
 trp_elder_hornburg_pl|крепость
-trp_elder_eastemnet|Тейн Истемнета
+trp_elder_eastemnet|Тэн Истемнета
 trp_elder_eastemnet_pl|поселение
-trp_elder_westfold|Тейн Вестфолда
+trp_elder_westfold|Тэн Вестфольда
 trp_elder_westfold_pl|поселение
-trp_elder_westemnet|Тейн Вестемнета
+trp_elder_westemnet|Тэн Вестемнета
 trp_elder_westemnet_pl|поселение
-trp_elder_eastfold|Тейн Истфолда
+trp_elder_eastfold|Тэн Истфолда
 trp_elder_eastfold_pl|поселение
 trp_elder_morannon|Управитель Мораннона
 trp_elder_morannon_pl|пещеры у Великих Врат

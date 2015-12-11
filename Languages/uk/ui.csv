@@ -1,0 +1,48 @@
+ui_at_learning_limit|(ліміт вивчення для цієї раси)
+ui_not_enough_skill_points_to_learn|(не вистачає очок навичок для навчання)
+ui_not_enough_attributetype_to_learn_this_skill|(Недостатньо %s для вивчення навику)
+ui_explanation_agility|Спритність: Кожна одиниця дає п'ять очок зброї і збільшує швидкість зброї на 0,5%. Наступні навички не можуть бути розвинені вище 1/3 спритності: володіння зброєю,щит, атлетика, верхова їзда, верхова стрільба, мародерство.
+ui_retreated_battle|%s відступив з поля бою
+ui_riding_skill_not_adequate_to_mount|(Навички верхової їзди недостатньо)
+ui_camp|Табір
+ui_tutorial_inventory|Щоб отримувати спорядження в моді The Last Days, вам потрібні очки постачання. Вони є мірою матеріальної підтримки з боку фракції і того, наскільки багато ресурсів даної фракції вам дозволено використовувати.
+ui_you_dont_have_value|У вас немає %s.
+ui_merchant_cant_afford_value|%s: Я не можу собі дозволити %s. У мене є тільки %s.
+ui_merchant_pay_whatever|Гаразд, давайте скільки є.
+ui_horse|Кінь
+ui_reclaim_your_sold_goods|Викупіть продані товари перед придбанням цього!
+ui_return_your_bought_goods|Поверніть придбані товари перед продажем цього!
+ui_return_price|Можна повернути за %d од.спор.
+ui_sell_price|Можна віддати за %d од.спор.
+ui_reclaim_price|Можна замовити назад за %d од.спор.
+ui_buying_price|Можна замовити за %d од.спор.
+ui_notification_riding_skill_not_enough|Ваша навичка верхової їзди недостатньо висока, щоб осідлати цього коня.
+ui_notification_payment_value|Витрачено %s.
+ui_notification_payment_receive_value|Отримано %s.
+ui_weekly_cost_value|Платня: %s
+ui_sell|Продати
+ui_hire|Найняти
+ui_notification_cant_hire|(Неможливо найняти: недостатньо од.спор.)
+ui_joining_cost_weekly_wage|Вартість найму: %d од.спор., платня: %d од.спор.
+ui_weekly_wage|Платня: %d од.спор.
+ui_price|Ціна: %d од.спор.
+ui_cant_reload_this_weapon_on_horseback|Цю зброю неможливо перезарядити, будучи верхи.
+ui_delivered_number_damage_to_horse|Нанесено %d шкоди тварині.
+ui_horse_charged_for_number_damage|Тварина завдала %d шкоди.
+ui_horse_received_number_damage|Тварина отримала %d шкоди.
+ui_horse_fell_dead|Тварина впала замертво ...
+ui_horse_crippled|Тварина скульгавіла ...
+ui_you_got_value|Ви отримали %s.
+ui_has_deserted_the_party|покинув загін.
+ui_have_deserted_the_party|покинули загін.
+ui_loading_textures|Завантаження текстур (потерпіть) ...
+ui_order_hold_fire_toggle|Не стріляти/Стрільба без наказу
+ui_order_dismount_toggle|Сісти верхи/Спішитись
+ui_mount_horses_e_|%s,сісти верхи!
+ui_hold_fire_e_|%s,не стріляти!
+ui_fire_at_will_e_|%s,стріляти по готовності!
+ui_recent_messages|Останні повідомлення
+ui_value_denars|%d одиниць спорядження
+ui_cannot_be_used_on_horseback|Неможливо використовувати верхи
+ui_upgrade_to_value|Підвищити до %s
+ui_notification_cant_upgrade|(Це неможливо зробити, передаючи війська)

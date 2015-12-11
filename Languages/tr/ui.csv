@@ -24,7 +24,7 @@ ui_sell|Ver\n
 ui_hire|Alındı
 ui_notification_cant_hire|(yeterli R.
 ; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
-; ui_weekly_wage|Upkeep: %d Res.P.
+ui_weekly_wage|Haftalık ücret: %s
 ui_price|Değer: %d Res.P.
 ui_cant_reload_this_weapon_on_horseback|Bu Silah Binek Üzerindeyken Yeniden Doldurulamaz.
 ui_delivered_number_damage_to_horse|Bineğe %d hasar verildi

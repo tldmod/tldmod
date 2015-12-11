@@ -24,7 +24,7 @@ qstr_Enemies|Nemici
 qstr_Ready|Pronto
 qstr_Wounded|Ferito
 qstr_Dead|Morto
-qstr_Routed|Indirizzato
+qstr_Routed|In rotta
 qstr_Number_of_men_knocke|Numero di uomini caduti: {reg1}
 qstr_Number_of_men_left:_|Numero di uomini rimasti: {reg1}
 qstr_Opponents_Beaten:_{r|Nemici abbattuti: {reg1}
@@ -223,7 +223,7 @@ qstr_What_are_you_doing_h|Cosa state facendo qui a {s21}, feccia di {s20}? Quest
 qstr_You_dare_question_di|Osi mettere in discussione gli ordini diretti di {s23}?
 qstr_Guess_not._But_I_sti|Penso di no. Comunque non mi piace avervi attorno.^Ti terrò d'occhio, {playername} di {s20}.
 qstr_None_of_your_busines|Niente che ti riguardi, maiale!
-; qstr_*growls*^You_should_|*growls*^You should be glad you fight for our Master, otherwise you would not get away with this trespassing.
+qstr_*growls*^You_should_|*ringhia*^Dovresti essere lieto di combattere per il nostro Padrone, altrimenti non la passeresti liscia per questa trasgressione.
 qstr_What_are_you_doing_s|Che ci fai così lontano da casa, schiavo di {s22}? Da queste parti, il padrone è {s23}!
 qstr_Quiet!_I_didn_t_came|Calmati! Non sono venuto per te, questa volta.
 qstr_And_I_ve_orders_to_l|Ho ordine di farti passare, questa volta.
@@ -311,7 +311,7 @@ qstr_You_have_{reg0}_days|Hai {reg0} giori per finire questo incarico.
 qstr_This_quest_has_been_|Questo incarico è stato completato. Parla con {s59} per terminarlo. 
 qstr_This_quest_has_been_s|Questo incarico è stato completato con successo. Parla con {s59} per ottenere la tua ricompensa.
 qstr_This_quest_has_faile|L'incarico è fallito. Parla con {s59} per spiegare la situazione.
-; qstr_At_the_time_quest_wa|At the time quest was given:^{s1}
+qstr_At_the_time_quest_wa|Quando la missione ti è stata assegnata:^{s1}
 qstr_{s7}_and_{s8}|{s7} e {s8}
 qstr_{s7}_{s8}|{s7}, {s8}
 qstr_noone|nessuno
@@ -320,19 +320,19 @@ qstr_{s9}_{s10}|{s9}, {s10}
 qstr_no_one|nessuno
 qstr_{s11}_and_{s12}|{s11} e {s12}
 qstr_{s11}_{s12}|{s11}, {s12}
-; qstr_{s5}_is_ruled_by_{s6|{s5} is ruled by {s6}.^It controls {s8}.^Its commanders are {s10}.^{s5} is at war with {s12}.
+qstr_{s5}_is_ruled_by_{s6|{s5} è governato da {s6}.^Controlla {s8}.^Isuoi comandanti sono {s10}.^{s5} è in guerra con {s12}.
 qstr_{s5}_has_been_defeat|{s5} è stato sconfitto!
-; qstr_{s5}_has_a_strength_|{s5} has a strength of {reg1} men in total.
-; qstr_no_holdings|no holdings
+qstr_{s5}_has_a_strength_|{s5} ha una forza di {reg1} uomini in tutto.
+qstr_no_holdings|nessun possedimento
 qstr_{s57}_and_{s58}|{s57} e {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Lei:Lui}
 ; qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}
-; qstr_The_last_time_you_sa|The last time you saw {reg1?her:him}, {s1}
-; qstr_The_last_time_you_he|The last time you heard about {reg1?her:him}, {s1}
+qstr_The_last_time_you_sa|L'ultima volta che l'ho visto {reg1?her:him}, {s1}
+qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?her:him}, {s1}
 ; qstr_The_{s50}|The {s50}
-; qstr_{s50}_belongs_to_{s1|{s50} belongs to {s1} of {s2}.^
-; qstr_Current_garrison_con|Current garrison consists of {reg5} men.^Has food stock for {reg6} days.
+qstr_{s50}_belongs_to_{s1|{s50} appartiene a {s1} of {s2}.^
+qstr_Current_garrison_con|La guarnigione attuale consiste in {reg5} uomini.^Possiede scorte di cibo per {reg6} giorni.
 qstr_Very_Poor|Molto povero
 qstr_Poor|Povero
 qstr_Average|Media
@@ -346,9 +346,9 @@ qstr_your_party|la tua compagnia
 qstr_{reg0?One_of_your_pr|{reg0?Uno dei tuoi prigionieri, :}{s1} di {s3} è fuggito dalla prigionia!
 qstr_You_brought_{reg3}_h|Hai comprato {reg3} capi di bestiame a {s1}.
 ; qstr_Log_entry_{reg3}:_ty|Log entry {reg3}: type {reg4}
-qstr_Center:_{s4}|Centro:{s4}
-qstr_Troop:_{s4}|Truppa:{s4}
-; qstr_Lord:_{s4}|Lord: {s4}
+qstr_Center:_{s4}|Centro: {s4}
+qstr_Troop:_{s4}|Truppa: {s4}
+qstr_Lord:_{s4}|Signore: {s4}
 qstr_Ally_party_is_presen|Compagnia alleata è presente
 qstr_{s4}_is_present_at_e|{s4} è presente all'evento
 ; qstr_Event_#{reg5}_type_{|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to troop object = {reg7}
@@ -356,95 +356,95 @@ qstr_{s4}_is_present_at_e|{s4} è presente all'evento
 ; qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
 ; qstr_Event_#{reg5}_type_{reg|Event #{reg5}, type {reg6}, time {reg8}. No relevant kingdom relation
 ; qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Player unaffiliated
-qstr_Elapsed_hours:_{reg7|Ore trascorse:{reg7}
-qstr_Reputation_type:_{s1|Tipo di reputazione:{s15}
+qstr_Elapsed_hours:_{reg7|Ore trascorse: {reg7}
+qstr_Reputation_type:_{s1|Tipo di reputazione: {s15}
 ; qstr_Entries_up_to_#{reg5|Entries up to #{reg5} skipped
 qstr_A_new_location_is_no|Una nuova posizione è ora disponibile sulla mappa!
 qstr_New_trait_gained:_{s|Nuovo tratto acquisito: {s5}.
 qstr_Gained_permanent_+1_|Guadagnato permanentemente +1 alla Forza
 qstr_Gained_permanent_+1_t|Guadagnato permanentemente +1 all'Agilità
 qstr_Gained_permanent_+1_to|Guadagnato permanentemente +1 al Carisma
-; qstr_Gained_permanent_+20|Gained permanent +20 to weapon proficiencies.
-; qstr_Gained_permanent_+2_|Gained permanent +2 to Strength.
-; qstr_Gained_permanent_+2_t|Gained permanent +2 to Charisma.
-; qstr_Lost_permanent__1_to|Lost permanent -1 to Charisma.
-; qstr_Gained_permanent_+1_to_|Gained permanent +1 to Ironflesh.
-; qstr_Gained_permanent_+5_|Gained permanent +5 to Strength.
-; qstr_Lost_permanent__2_to|Lost permanent -2 to Charisma.
-; qstr_Gained_permanent_+2_to|Gained permanent +2 to Ironflesh.
-; qstr_Gained_permanent_+10|Gained permanent +10 to weapon proficiencies.
-; qstr_Gained_permanent_+1_to_T|Gained permanent +1 to Tactics.
+qstr_Gained_permanent_+20|Guadagnato permanentemente +20 all'abilità con le armi.
+qstr_Gained_permanent_+2_|Guadagnato permanentemente +20 alla Forza.
+qstr_Gained_permanent_+2_t|Guadagnato permanentemente +2 al Carisma.
+qstr_Lost_permanent__1_to|Perso permanentemente -1 al Carisma.
+qstr_Gained_permanent_+1_to_|Guadagnato permanentemente +1 alla Carne di Ferro. 
+qstr_Gained_permanent_+5_|Guadagnato permanentemente +5 alla Forza.
+qstr_Lost_permanent__2_to|Perso permanentemente -2 al Carisma.
+qstr_Gained_permanent_+2_to|Guadagnato permanentemente +2 alla Carne di Ferro.
+qstr_Gained_permanent_+10|Guadagnato permanentemente +10 all'abilità con le armi.
+qstr_Gained_permanent_+1_to_T|Guadagnato permanentemente +1 alla Tattica.
 qstr_You_have|Tu hai
-qstr_{s1}_has|{s1}ha
-; qstr_{s11}_suffered_a_ser|{s11} suffered a serious wound.
-; qstr_The_leg_has_been_bad|The leg has been badly maimed in battle.
-; qstr___2_athletics__1_rid|(-2 athletics, -1 riding, -2 agility, -15 melee skill)
-; qstr_The_arm_has_been_bad|The arm has been badly maimed in battle.
-; qstr___20_weapon_skill__2|(-20 weapon skill, -2 strength, -1 power attacks)
-; qstr_The_head_has_suffere|The head has suffered a heavy blow.
-; qstr___1_intelligence_ski|(-1 intelligence skills, -15 missile skill)
-; qstr_The_chest_has_suffer|The chest has suffered some cracked ribs.
-; qstr___20_weapon_skill_|(-20 weapon skill)
-; qstr_{s1}_has_been_killed|{s1} has been killed.
+qstr_{s1}_has|{s1} ha
+qstr_{s11}_suffered_a_ser|{s11} ha subito una ferita grave.
+qstr_The_leg_has_been_bad|Una gamba è stata gravemente mutilata in battaglia.
+qstr___2_athletics__1_rid|(-2 atletica, -1 cavalcare, -2 agilità, -15 abilità corpo a corpo)
+qstr_The_arm_has_been_bad|Un braccio è stato gravemente mutilato in battaglia .
+qstr___20_weapon_skill__2|(-20 abilità con le armi, -2 forza, -1 forza d'attacco)
+qstr_The_head_has_suffere|La testa ha subito un colpo pesante.
+qstr___1_intelligence_ski|(-1 intelligenza, -15 abilità con armi a distanza)
+qstr_The_chest_has_suffer|Il torace ha delle costole rotte. 
+qstr___20_weapon_skill_|(-20 abilità con le armi)
+qstr_{s1}_has_been_killed|{s1} è stato ucciso.
 qstr_You_were_killed.|Sei stato ucciso
-; qstr_{s1}_recovered_from_|{s1} recovered from a serious wound.
+qstr_{s1}_recovered_from_|{s1} è guarito da una ferita grave.
 qstr_The_leg_wound_has_he|La ferita alla gamba è stata curata.
-; qstr__+2_athletics_+1_rid|(+2 athletics, +1 riding, +2 agility, +15 melee skill)
+qstr__+2_athletics_+1_rid|(+2 atletica, +1 cavalcare, +2 agilità, +15 all'abilità corpo a corpo)
 qstr_The_arm_wound_has_he|La ferita al braccio è stata curata.
-; qstr__+20_weapon_skill_+2|(+20 weapon skill, +2 strength, +1 power attacks)
+qstr__+20_weapon_skill_+2|(+20 Abilità con le armi, +2 forza, +1 forza d'attacco)
 qstr_The_head_wound_has_h|La feria alla testa è stata curata.
-; qstr__+1_intelligence_ski|(+1 intelligence skills, +15 missile skill)
-; qstr_The_cracked_ribs_hav|The cracked ribs have healed.
-; qstr__+20_weapon_skill_|(+20 weapon skill)
-; qstr_{s1}_has_had_his_hea|{s1} has had his health boosted
-; qstr_News_has_arrived_tha|News has arrived that {s1} of {s2} was killed in battle!
+qstr__+1_intelligence_ski|(+1 intelligenza, +15 abilità con armi a distanza)
+qstr_The_cracked_ribs_hav|Le costole rotte sono guarite.
+qstr__+20_weapon_skill_|(+20 all'abilità con le armi)
+qstr_{s1}_has_had_his_hea|La vita di {s1} è stata potenziata.
+qstr_News_has_arrived_tha|Sono arrivate delle notizie secondo cui {s1} di {s2} è stato ucciso in battaglia!
 ; qstr_{s1}_s_Burial_Mound|{s1}'s Burial Mound
-; qstr_{s1}_s_Funeral_Pyre|{s1}'s Funeral Pyre
+qstr_{s1}_s_Funeral_Pyre|La pira funeraria di {s1}.
 ; qstr_{s1}_is_logged_as_de|{s1} is logged as dead
-; qstr_You_have_been_discov|You have been discovered before scaling the wall.
+qstr_You_have_been_discov|Sei stato scoperto prima di scalare le mura.
 qstr_The_enemy_is_coming_|Il nemico arriva in forze, devi ritirarti!
-; qstr_Scout_this_area_alon|Scout this area alone and meet your men beyond!
-; qstr_Be_stealthy_but_elim|Be stealthy but eliminate any threats quickly!
+qstr_Scout_this_area_alon|Esplora quest'area da solo e incontra oltre ad essa i tuoi uomini.
+qstr_Be_stealthy_but_elim|Sii furtivo ma elimina rapidamente ogni minaccia!
 qstr_You_are_spotted_by_a|Sei stato scoperto da una pattuglia!
 qstr_Eliminate_them_befor|Eliminali prima che diano l'allarme!
 qstr_You_have_reached_the|Hai raggiunto i sotterranei!
 qstr_Eliminate_the_guards|Elimina le guardie e libera i tuoi uomini!
-; qstr_{s1}_has_been_captur|{s1} has been captured by the enemy.
-; qstr_Gondor_takes_a_capti|Gondor takes a captive
-; qstr_Rohan_takes_a_captiv|Rohan takes a captive
-; qstr_Mordor_takes_a_capti|Mordor takes a captive
-; qstr_Isengard_takes_a_cap|Isengard takes a captive
-; qstr_You_were_grievously_|You were grievously wounded and your body piled with the dead. Picking your moment you managed to escape over the wall but the enemy may have seen your movements. Best to be quickly away.
-; qstr_You_were_grievously_w|You were grievously wounded in battle. Your men managed to drag you away but took horrific casualties in the effort.
-; qstr_You_were_grievously_wo|You were grievously wounded in battle. Your men managed to drag you away but took horrific casualties in the effort. Unfortunately, some of your companions have been captured and dragged to {s2}.
-; qstr_You_were_grievously_wou|You were grievously wounded in battle. Your men managed to drag you away from the fighting, but unfortunately the sorcerer has managed to escape.
-; qstr_You_were_grievously_woun|You were grievously wounded and your body piled with the dead. Picking the right moment you managed to escape, but unfortunately the sorcerer has managed to escape.
-; qstr_Some_of_your_compani|Some of your companions are suffering from old wounds.
-; qstr_Item_you_just_equipp|Item you just equipped does not fit characters of this race and will be removed into player inventory shortly^^Make sure your equipment has space for the item, or it will be lost
+qstr_{s1}_has_been_captur|{s1} è stato catturato dal nemico.
+qstr_Gondor_takes_a_capti|Gondor ha preso un prigioniero.
+qstr_Rohan_takes_a_captiv|Rohan ha preso un prigioniero.
+qstr_Mordor_takes_a_capti|Mordor ha preso un prigioniero.
+qstr_Isengard_takes_a_cap|Isengard ha preso un prigioniero.
+qstr_You_were_grievously_|Sei stato ferito terribilmente e il tuo corpo è stato ammassato con i morti. Cogliendo il momento adatto sei riuscito a scappare superando il muro, ma i nemici potrebbero aver notato i tuoi movimenti, meglio andarsene alla svelta da qui.
+qstr_You_were_grievously_w|Sei stato ferito in maniera preoccupante. I tuoi uomini sono riusciti a trascinarti lontano ma hanno subito terribili perdite nello sforzo. 
+qstr_You_were_grievously_wo|Sei stato ferito in maniera preoccupante. I tuoi uomini sono riusciti a trascinarti lontano ma hanno subito terribili perdite nello sforzo. Come se non bastasse, alcuni compagni sono stati catturati e condotti a {s2}.
+qstr_You_were_grievously_wou|Sei stato ferito in maniera preoccupante. I tuoi uomini sono riusciti a trascinarti lontano dal combattimento, ma sfortunatamente lo stregone è riuscito a scappare.
+qstr_You_were_grievously_woun|Sei stato ferito terribilmente e il tuo corpo è stato ammassato con i morti. Cogliendo il momento adatto sei riuscito a scappare, ma sfortunatamente lo stregone è riuscito a scappare.
+qstr_Some_of_your_compani|Alcuni dei tuoi compagni stanno soffrendo per delle vecchie ferite.
+qstr_Item_you_just_equipp|L'oggetto equipaggiato non è adatto a personaggi di questa razza e sarà subito riposto nell'inventario del giocatore^^Assicurati che il tuo equipaggiamento abbia spazio per l'oggetto, o sarà perso per sempre.
 qstr_Inappropriate_equipm|Equipaggiamento inappropriato.
-; qstr_The_mount_you_just_e|The mount you just equipped does not fit characters of this race. Be warned that there will be problems with the animal behaviour on the battlefield, if you leave it as this
+qstr_The_mount_you_just_e|La cavalcatura che hai appena equipaggiato non è adatta ai personaggi di questa razza. Sei avvisato che ci saranno problemi col comportamento dell'animale sul campo di battaglia se lascerai equipaggiata questa cavalcatura.
 qstr_Inappropriate_mount|Cavalcatura inappropriata.
-; qstr_{s24}:_Some_of_your_|{s24}: Some of your wounds healed!
-; qstr_{s24}:_Your_infantry|{s24}: Your infantry feels better!
-; qstr_{s24}:_Your_archers_|{s24}: Your archers feel better!
-; qstr_{s24}:_Your_cavalry_|{s24}: Your cavalry feels better!
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities.
+qstr_{s24}:_Some_of_your_|{s24}: Alcune delle tue ferite sono guarite!
+qstr_{s24}:_Your_infantry|{s24}: I tuoi fanti si sentono meglio!
+qstr_{s24}:_Your_archers_|{s24}: I tuoi arcieri si sentono meglio!
+qstr_{s24}:_Your_cavalry_|{s24}: I tuoi cavalieri si sentono meglio!
+qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, Imbattermi proprio in te {playername}! Tu potresti anche non conoscermi, ma io conosco te. Sono sulla strada per {s4}, ma sono appena partito da {s3} ed è la che ho sentito parlare di te. {s3} conta su di te in questi tempi pericolosi e se hai pensato di intraprendere azioni lontane dal tuo Dovere, dovresti voler riconsiderarle e concentrarti sull'aiutare {s3} con tutte le tue forze.
 qstr_Who_are_you?|Chi sei?
-; qstr_A_friend_of_{s3}_and|A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, lest we make count our every action to oppose it!
+qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora affrettati! Mordor sta richiamando a sé ogni creatura malvagia. il Potere Oscuro sta concentrando tutta la sua volontà per adunare i suoi servitori. Il tempo per tutto ciò che c'è di buono in questo mondo sta per scadere, troppo tardi dedichiamo ogni nostra sforzo per opporci ad esso!
 qstr_What_should_I_do?|Cosa dovrei fare?
-; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with him. Good luck!
-; qstr_Good_to_see_the_Shad|Good to see the Shadow has not yet managed to defeat you {playername}.
+qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parlagli. Buona Fortuna!
+qstr_Good_to_see_the_Shad|E' un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
 qstr_You_are_the_one_they|Tu sei quello che chiamano Gandalf o Mithrandir.
-; qstr_That_is_what_some_ca|That is what some call me. In my times I have also been called other things, but unless the Darkness is stopped, soon there may not be anyone left to call me anything at all.
+qstr_That_is_what_some_ca|Quel nome è come alcuni mi chiamano. Nel tempo sono stato chiamato in modi diversi, ma a meno che l'Oscurità non sia fermata, presto potrebbe non rimanere nessuno per chiamarmi in alcun modo.
 qstr_What_do_you_mean?|Cosa intendi dire?
-; qstr_In_spite_of_their_va|In spite of their valiant resistance, {s3} has been overwhelmed by the forces of evil. {s3}'s people are scattered and the good {s4} is no more.
+qstr_In_spite_of_their_va|Nonostante la loro strenua difesa, {s3} è stata travolta dalle forze del male. Il popolo di {s3} è allo sbando e il buon {s4} non è più.
 qstr_You_bring_dismal_new|Porti tristi notizie, stregone.
-; qstr_But_I_also_bring_a_m|But I also bring a message of hope. The people of {s5} are still holding firm. Their warriors are fearless and their leaders resolute.
-; qstr_Help_them_fight_the_|Help them fight the enemy as best as you can. Never relent! But be on your guard! There are older and fouler things than Orcs in the world.
-; qstr_Beware_{playername}_|Beware {playername}, the might of Darkness crumbles. {s3} has fallen, as has its leader {s4}.
-; qstr_What_do_you_want_of_|What do you want of me, old man?
-; qstr_Just_know_that_a_Daw|Just know that a Dawn is coming. It is inevitable. And should you still be alive to see it, consider what you shall have to say for yourself then.
-; qstr_Well_met_{playername|Well met {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!
+qstr_But_I_also_bring_a_m|Ma porto anche un messaggio di speranza. Il popolo di {s5} resiste ancora saldamente. I loro guerrieri non conoscono la paura e i loro signori sono risoluti.
+qstr_Help_them_fight_the_|Aiutali a combattere il nemico meglio che puoi. Non cedere mai, ma fai la tua guardia! Ci sono cose più antiche e più malvagie degli orchi al mondo.
+qstr_Beware_{playername}_|Attento, {playername}, la Forza dell'oscurità sta crollando. {s3} è caduta, come il suo signore {s4} .
+qstr_What_do_you_want_of_|Che vuoi da me, vecchio?
+qstr_Just_know_that_a_Daw|Sappi solo che l'Alba è in arrivo. E' inevitabile. E dovresti essere ancora in vita per poterla vedere, pensa cosa dovrai dire a tua discolpa allora.
+qstr_Well_met_{playername|Ben incontrato, {playername}, {s24}. La mia fiducia nei tuoi confronti non era mal riposta. La potenza delle forze dell'Ombra è in frantumi e i tuoi sforzi hanno avuto un ruolo non indifferente in tutto questo!
 qstr_Thank_you_Mithrandir|Grazie, Mithrandir!
 ; qstr_The_wizard_Saruman_i|The wizard Saruman is gone and Barad Dur has been shattered to dust along with its Dark Lord! All the peoples of Middle Earth are relieved of the threat that nearly consumed all that was good and pure in this world. The Enemy is vanquished and The King has returned!
 ; qstr_It_was_a_long_and_bl|It was a long and bloody war and many of our close friends are also no longer with us.

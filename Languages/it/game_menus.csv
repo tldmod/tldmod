@@ -150,8 +150,8 @@ mno_strat_tweaks_siege_reqs|Forza richiesta per assedi: {s7}
 mno_strat_tweaks_siege_relax_rate|Relazione della richiesta di forza per assediare: {reg1}
 mno_strat_tweaks_regen_rate|Tasso rigenerazione forza: {s7}
 mno_strat_tweaks_siege_regen_limit|Le fazioni non rigenerano sotto: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
+mno_strat_tweaks_influence_gain_rate|Tasso dell'influenza guadagnata: {s7}
+mno_strat_tweaks_rank_gain_rate|Tasso del Rango guadagnato: {s7}
 mno_strat_tweaks_back|Ritorna al menu delle modifiche.
 menu_camp_action|^^^^^^^^^ Quale oggetto?
 mno_camp_customize_defilement|Personalizza armatura corrotta
@@ -348,17 +348,17 @@ mno_swear_oath|Presta un giuramento di vendetta!
 mno_despoil|Dissacra il sito
 mno_leave_mound|Abbandona il tumulo.
 menu_burial_mound_respects|Ti inginocchi e rendi omaggio a {s1}, sussurri silenziosamente una preghiera per un veloce viaggio verso l'aldilà. Non c'è più niente da fare qui.
-; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out the forces of {s3} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
-; menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_burial_mound_oath|Pronunci ad alta voce un giuramento per vendicare la morte di {s4}. Cercherai implacabilmente le forze di {s3} fino a quando non le avrai annientate. Le tue parole vengono portate lontano dal vento, chi può dire che non siano state udite persino oltre il mare? 
+menu_burial_mound_despoil|Fai a pezzi il monumento a {s1} con le tue stesse mani e maledici perfino le sue pietre con maledizioni, canti crudeli e gesti inenarrabili. I tuoi seguaci si fanno da parte per paura dei morti, ma sembra che tu sia riuscito a rinnovare il loro rispetto per la tua malvagità.
+menu_funeral_pyre|Ti avvicini ai resti bruciati della pira di {s3} di {s2}. Qui il suo corpo è stato bruciato in modo cerimonioso dalle sue guardie personali. Non è rimasto niente di valore.  
 mno_leave_pyre|Abbandona la pira.
 menu_town_ruins|Quando ti avvicini, vedi che {s1} è {s2}
 mno_ruin_menu_0|Esplora il luogo.
 mno_ruin_leave|Abbandona...
 menu_death|Sei stato ucciso. Anche se la guerra continua ad infuriare, tu non potrai più farne parte.
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
-; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
+menu_animal_ambush_success|I {s2} {reg0?fall:falls} cadono davanti a te come spighe di grano davanti alla falce! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}
+menu_animal_ambush_fail|Gli animali ti mordono e feriscono te {reg0?,: and your companion{reg2?s,:,}} ma fortunatamente riuscite a difendervi. Si spera che non vi attaccheranno di nuovo.
 menu_build_your_scene|Qui puoi costruire la tua propria scena da battaglia, usando una delle slot qua sotto e l'Editor del gioco (Devi prima scrocettare il quadratino "Edit Mode" nelle opzioni del launcher di M&B).^Poi, puoi verificare le tue scene che hai costruito (nominate file sco dalla cartella TLD/SceneObj) al team di sviluppo di TLD, e, se la tua scena è buona abbastanza, potrà apparire nelle prossime versioni della mod come un luogo da battaglia a caso!^^ Prova anche in specificare quale regione della mappa vuoi che la tua scena appaia.^ Un paio di suggerimenti: prova ad evitare acqua profonda, montagne troppo grandi o appuntite e altri sentieri in cui non si può passare, eccetto se sei uno sceneggiatore con molta esperienza e sai come cambiare l'AI delle truppe per non andare in un posto dove non vuoi ch vadano, e quindi mettere l'AI a vagare in altri posti.^ (Gruppi #0-1 sono per gli attaccanti, #4 per i difensori, non toccare #5-8
 mno_scene1|Campo di battaglia 5 (scn_battlefield5.sco)
 mno_scene2|Campo di battaglia 6 (scn_battlefield6.sco)
