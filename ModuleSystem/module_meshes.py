@@ -468,4 +468,5 @@ meshes+=[
 
   ("draw_funeral_pyre",      0, "draw_funeral_pyre",      0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_mound_desecrated",  0, "draw_mound_desecrated",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_mound_visit",       0, "draw_mound_visit",       0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

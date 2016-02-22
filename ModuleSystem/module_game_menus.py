@@ -8088,7 +8088,7 @@ game_menus = [
 ( "burial_mound", 0, 
   "You_approach_the_burial_mound_of_{s1}_of_{s2}._\
   It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
-   [	(set_background_mesh, "mesh_ui_default_menu_window"),
+   [	(set_background_mesh, "mesh_draw_mound_visit"),
 		(store_encountered_party, ":mound"),
 		(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 		(store_troop_faction, reg1,":hero"),
@@ -8123,7 +8123,7 @@ game_menus = [
 ( "burial_mound_respects", 0, 
   "You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.\
   There is nothing left to be done here.", "none",
-					[(set_background_mesh, "mesh_ui_default_menu_window"),
+					[(set_background_mesh, "mesh_draw_mound_visit"),
 					(store_encountered_party, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(str_store_troop_name, s1, ":hero"),
