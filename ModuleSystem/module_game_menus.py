@@ -4048,31 +4048,35 @@ game_menus = [
           (jump_to_menu, "mnu_total_defeat"),
         (try_end),
 
-		## set background mesh
-		(set_background_mesh, "mesh_ui_default_menu_window"),
+    ## set background mesh
+    (set_background_mesh, "mesh_ui_default_menu_window"),
     (try_begin),
-      (eq, "$g_encountered_party_template", "pt_looters"  ),
+      #swy-- native looters are tribal orcs, neat, huh?
+      (eq, "$g_encountered_party_template", "pt_looters"),
       (set_background_mesh, "mesh_draw_tribal_orcs"),
     (else_try),
-      #swy-- if "wild goblins" or "troublesome goblins" show this illustration thingy...
-      (this_or_next|eq, "$g_encountered_party_template", "pt_mountain_bandits"),
-      (             eq, "$g_encountered_party_template", "pt_troublesome_bandits"),
+      #swy-- if "wild goblins" then show this illustration thingy...
+      (eq, "$g_encountered_party_template", "pt_mountain_bandits"),
       (set_background_mesh, "mesh_draw_mountain_goblins"),
     (else_try),
-      #swy-- if "corsair renegades" or "corsair scouts" show this illustration thingy...
+      #swy-- if "troublesome goblins" then show this illustration thingy...
+      (eq, "$g_encountered_party_template", "pt_troublesome_bandits"),
+      (set_background_mesh, "mesh_draw_troublesome_goblins"),
+    (else_try),
+      #swy-- if "corsair renegades" or "corsair scouts" then show this illustration thingy...
       (this_or_next|eq, "$g_encountered_party_template", "pt_sea_raiders"),
       (             eq, "$g_encountered_party_template", "pt_umbar_scouts"),
       (set_background_mesh, "mesh_draw_corsair_renegades"),
     (else_try),
-      #swy-- if "dunland outcasts" or "dunland scouts" show this illustration thingy...
+      #swy-- if "dunland outcasts" or "dunland scouts" then show this illustration thingy...
       (this_or_next|eq, "$g_encountered_party_template", "pt_dunland_scouts"),
       (             eq, "$g_encountered_party_template", "pt_steppe_bandits"),
       (set_background_mesh, "mesh_draw_dunland_outcasts"),
     (else_try),
-      (is_between, "$g_encountered_party_template", "pt_forest_bandits" ,"pt_steppe_bandits"        ),
+      (is_between, "$g_encountered_party_template", "pt_forest_bandits", "pt_steppe_bandits"),
       (set_background_mesh, "mesh_draw_orc_raiders"),
     (else_try),
-      (is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
+      (is_between, "$g_encountered_party_template", "pt_wild_troll", "pt_looters"),
       (set_background_mesh, "mesh_draw_wild_troll"),
     (try_end),
 		

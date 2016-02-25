@@ -351,5 +351,6 @@ mesh_draw_victory_corsairs = 349
 mesh_draw_funeral_pyre = 350
 mesh_draw_mound_desecrated = 351
 mesh_draw_mound_visit = 352
+mesh_draw_troublesome_goblins = 353
 
 
