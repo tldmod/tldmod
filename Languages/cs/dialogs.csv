@@ -1,34 +1,34 @@
-dlga_start:mutiny_pretalk_1|Zdravim veliteli, {playername}. Neco vam reknem.. ^Chlapi besni! Chteji vic zabavy, a min flakani.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Zpatky do rady, cerve! Jsme ve valce, a ja jsem vas velitel.
-dlga_mutiny_pretalk_2:close_window|Na vas rozkaz, veliteli. Na vas rozkaz...
-dlga_start:mutiny_talk_1|Zdravim veliteli. Chci vam neco rict... Chlapi nejsou moc nadseni, vlastne vubec. ^Malo lidskeho masa, malo zabavy. ^Chlapi rikaly nic moc, veliteli!
-dlga_mutiny_talk_1:mutiny_talk_2|Coze?! Vzpoura ve valce? ^To se tresta smrti, cerve!
-dlga_mutiny_talk_2:close_window|Vite co...?! ^Chlapi mysli ze budu pro ne lepsi velitel kdyz vas ZABIJU!
-dlga_start:troll_introduce_1|Problem?
-dlga_start:troll_talk_1|Jses blazen?!
-dlga_troll_introduce_1:troll_goodbye|COZE?! Mluvici troll?!
-dlga_troll_introduce_1:close_window|Vlastnim kone.
+dlga_start:mutiny_pretalk_1|Zdravím veliteli {jméno}. Poslouchejte.. ^Chlapi si stěžují! Chtějí víc zábavy, a méně pochodování.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Zpátky do řady, červe! Jsme ve válce, a já jsem váš velitel.
+dlga_mutiny_pretalk_2:close_window|Na váš rozkaz, veliteli. Jak si přejete...
+dlga_start:mutiny_talk_1|Zdravim veliteli. Chci vam neco rict... Chlapi nejsou moc nadšeni, vlastně vůbec. ^Malo lidskeho masa, málo zábavy. ^Chlapi říkají, že nejste dost dobrý, veliteli!
+dlga_mutiny_talk_1:mutiny_talk_2|Cože?! Vzpoura ve válce? ^To se trestá smrtí, červe!
+dlga_mutiny_talk_2:close_window|Víte co? ^Chlapi mysli ze budu pro ně lepší velitel, když vás ZABIJU!
+dlga_start:troll_introduce_1|Problemo?
+dlga_start:troll_talk_1|Máš nervy?
+dlga_troll_introduce_1:troll_goodbye|Co to.. Mluvící troll?!
+dlga_troll_introduce_1:close_window|Vlastním koně.
 dlga_troll_talk_1:troll_talk_2|Vytroll me trolle.
-dlga_troll_talk_1:close_window|Vlastnim kone.
-dlga_troll_talk_2:troll_talk_3|Vyzva prijat!^^{s4}
-dlga_troll_beaten:troll_talk_1|Klanim se pred vasi moudrosti, mistre Baitre od trollu!
+dlga_troll_talk_1:close_window|Vlastním koně.
+dlga_troll_talk_2:troll_talk_3|Výzva prijata!^^{s4}
+dlga_troll_beaten:troll_talk_1|Klaním se před vaší moudrosti, mistře Baitre od Trollu!
 dlga_troll_goodbye:close_window|TROLLLOLOOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Opet zdravim, {playername}!
 dlga_start:hobbit_pippin_talk_met|Opet zdravim, {playername}!
-dlga_start:hobbit_general_talk_1|Zdravim, {sir/madam}! Me jmeno je Smelmir Brandorad, ale muzes mi rikat Smisek!
-dlga_start:hobbit_general_talk_1.1|Dobrej,  {sir/madam}! Jmenuji se Peregrin Bral ale radsi mi rikejte Pippin!
-dlga_hobbit_general_talk_1:close_window|Ted nemam cas.
-dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Popravde. Myslim ze jsem nikdy nevidel nikoho z tveho druhu.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Musim rict. Myslim ze jsem potkal v Edorasu nekoho jako ty.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Pokud si vzpominam, tak jsem potkal nekoho jako ty tady v Minas Tirithu.
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Vim. Prisel jsem z dalky! Jsem hobbit, {sir/madam}, z Kraje.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|Oh, to musi byt muj bratranec! Peregrin Bral, aneb Pippin, jak mu rikaji. Jsme hobbiti, {sir/madam}, oba dva jsme prisli z Kraje! Joo, starej dobrej Pippin, docela by me zajmalo jak se mu dari v Minas Tirithu.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Och, to musi byt muj drahy bratranec! Smelmir Brandorad, nebo Smisek mu take rikaji. Jsme hobbiti, {sir/madam}, a prisli jsme z Kraje. Oba! Copak Smisek, Kdo vi jak se mu dari  v Edorasu.
-dlga_hobbit_general_talk_3:close_window|Pak tedy naschle.
+dlga_start:hobbit_general_talk_1|Zdravím, {sire/madam}! Mé jméno je Smelmir Brandorad, ale muzeš mi řikat Smíšek!
+dlga_start:hobbit_general_talk_1.1|Zdravím,  {sire/madam}! Jmenuji se Peregrin Bral ale radši mi říkejte Pippin!
+dlga_hobbit_general_talk_1:close_window|Teď nemám čas.
+dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Popravdě. Myslím že jsem nikdy neviděl někoho z tvého druhu.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Musím říct. Myslím ze jsem potkal v Edorasu někoho, jako ty.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Pokud si vzpomínám, tak jsem potkal někoho jako ty v Minas Tirithu.
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Vim. Prisel jsem z dalky! Jsem hobbit, {sire/madam}, z Kraje.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|Oh, to musi byt muj drahý bratranec! Peregrin Bral, aneb Pippin, jak mu rikaji. Jsme hobbiti, {sire/madam}, oba dva jsme prisli z Kraje! Jo, starej dobrej Pippin, docela by me zajmalo jak se mu dari v Minas Tirithu.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Ach, to musi byt muj drahy bratranec! Smelmir Brandorad, nebo Smisek mu take rikaji. Jsme hobbiti, {sire/madam}, a prisli jsme z Kraje. Oba! Copak Smisek, Zajímalo by mě, jak se mu dari v Edorasu.
+dlga_hobbit_general_talk_3:close_window|Tedy, prozatím neshledanou.
 dlga_start:hobbit_merry_talk_met.1|Vitej zpatky, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Vitej zpatky, {playername}!
-dlga_hobbit_merry_talk_met:close_window|Zdravim pane Smisku.
-dlga_hobbit_pippin_talk_met:close_window|Zdravim uctihodny Pippine.
+dlga_hobbit_merry_talk_met:close_window|Zdravim, pane Smisku.
+dlga_hobbit_pippin_talk_met:close_window|Zdravim, pane Pippine.
 dlga_start:treebeard_introduce_1|(Zjišťuješ, že se díváš na velmi zvláštní stvoření. Je velmi vysoký, se silnými končetinami s kůží jako kůra a vlasy jako listy. Mech také zakrývá části jeho těla. Ale v tuhle chvíli si všímáš pouze očí. Hluboké oči Tě zkoumají, pomalé a vážné, ale velmi bystré a pronikající. Myslíš si, že jsou hnědé, s náznakem zeleného světla, jako kdyby za nimi zela hluboká studna, naplněná věky vzpomínek a pomalého, nepřetržitého přemýšlení. Ale na povrchu jeho oči září přítomností... jako slunce třpytící se na krajních listech ohromného stromu, nebo vlnky velmi hlubokého jezera.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Chystáš se něco říct, ale podivný dusivý pocit Tě zalehne, jako kdyby byl vzduch příliš řídký nebo příliš chudý na dýchání... s téměř zoufalým nádechem vzduchu se Ti podaří setřást ten pocit a obrovské stromu podobné stvoření o trochu zmírní svůj pohled. Stvoření se na Tebe nadále dívá a všimneš si dalších obrovských stromových stvoření, které Tě rovněž pozorují, jako kdyby čekali až promluvíš...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Omlouvám se za vyrušení... Jsem pouze unavený poutník hledající úkryt od nedávných událostí... mé jméno je {playername}. Smím se zeptat kdo jste?
@@ -40,7 +40,7 @@ dlga_treebeard_quest_brief:close_window|Skřeti jsou skutečně zlá stvoření,
 dlga_treebeard_quest_brief:treebeard_pretalk|Omlouvam se. Na toto nemam prave ted cas. 
 ; dlga_treebeard_questtalk:close_window|(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'
 ; dlga_treebeard_questtalk:close_window.1|(The stiff-limped giant and his fellow Ents stand still in silence while a breeze passes through their leafy hairs and beards.)
-dlga_treebeard_pretalk:treebeard_talk_response|Hrmmmm...Co byste si racel vedet, mlady priteli?
+dlga_treebeard_pretalk:treebeard_talk_response|Hrmmm...Co byste racel vedet, mlady priteli?
 dlga_treebeard_talk_response:treebeard_about_himself|Reknete mi o sobe vic. 
 dlga_treebeard_talk_response:treebeard_about_entwives|Pověz mi o entkách.
 dlga_treebeard_talk_response:treebeard_about_ents|Reknete mi neco o Entech.
@@ -55,7 +55,7 @@ dlga_start:close_window.2|Mmhhrmmm?
 dlga_start:close_window.3|Mmmrhrrhmm?
 dlga_start:looters_2_join|Skloň se před mocí {s4} a služ mi!
 dlga_looters_2_join:close_window|Budeme poslouchat, pane.
-dlga_start:close_window.4|Vrčí.
+dlga_start:close_window.4|^^VRRRRR!^^
 dlga_start:member_castellan_talk|Ano, {playername}? Co pro tebe můžu udělat?
 dlga_member_castellan_pretalk:member_castellan_talk|Jeste neco?
 dlga_member_castellan_talk:member_review_castle_garrison|Chci si prohlédnout hradní posádku.
@@ -64,7 +64,7 @@ dlga_member_castellan_talk:member_review_castellan_equipment|Nechte me nahlednou
 dlga_member_review_castellan_equipment:member_castellan_pretalk|Nuze dobra, vsechno je to zde...
 dlga_member_castellan_talk:member_castellan_join|Chci abyste opustili hrad a pridali se k me skupine.
 dlga_member_castellan_join:close_window|Oblíbil jsem si to tu... ale jestli si to přeješ, {playername}, půjdu s tebou.
-dlga_member_castellan_join:member_castellan_pretalk|A kde budeme spát? Máš s sebou celou armádu, {playername}, není tu pro nás místo.
+dlga_member_castellan_join:member_castellan_pretalk|A kde budeme spát? Máš s sebou celou armádu, {playername}, není tu pro nás všechny místo.
 dlga_member_castellan_talk:close_window|[Odejít.]
 dlga_member_chat_00:member_lady_1|{playername}, kdy si myslíš, že dorazíme do cíle?
 dlga_member_lady_1:close_window|Stale je pred nami dlouha cesta.
@@ -806,18 +806,18 @@ dlga_do_regular_member_view_char:regular_member_talk|Jeste neco?
 ; dlga_regular_member_talk:close_window|Nothing. Keep moving.
 ; dlga_disband_regular_member_confirm:disband_regular_member_confirm_yn|Shall I leave your command, and go back home to defend my hometown?^^[you will earn {reg14} Resource Points of {s14}]
 ; dlga_disband_regular_member_confirm_yn:close_window|Yes, go there and await further orders from {s14}. Good luck, soldier!
-; dlga_disband_regular_member_confirm_yn:close_window.1|Not yet, I still need you here.
+dlga_disband_regular_member_confirm_yn:close_window.1|Ještě ne, stále tě potřebuji.
 ; dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|But you are still needed here, as well!
 ; dlga_disband_regular_member_insist:close_window|I know, but my duty brings me to different battles.^I will soon leave.
 ; dlga_start:routed_allies_talk|{reg1?My lord:Master}, you have survived! Shall we join you again?
 ; dlga_routed_allies_talk:close_window|Yes, together we shall fight for {s1} once again.
-; dlga_routed_allies_talk:close_window.1|Not yet, soldier.
+dlga_routed_allies_talk:close_window.1|Ještě ne, vojáku
 dlga_start:routed_allies_talk_troll|Vrčí.
 ; dlga_routed_allies_talk_troll:close_window|[Have them join you again]
 dlga_routed_allies_talk_troll:close_window.1|[Odejít.]
-; dlga_start:party_encounter_friend|{s4} What brings you here, {s24}?
-; dlga_party_reinforce:party_reinforce_end|We haven't seen much enemy activity yet. Maybe later, thanks.
-; dlga_party_reinforce:party_reinforce_end.1|We don't need any more soldiers, thank you.
+dlga_start:party_encounter_friend|Co tě sem přivádí?
+dlga_party_reinforce:party_reinforce_end|Zatím jsme žádné nepřátelé nespatřili. Možná později, děkuji.
+dlga_party_reinforce:party_reinforce_end.1|Nepotřebujeme žádné další vojáky, děkuji.
 ; dlga_party_reinforce:party_reinforce_check|Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.
 ; dlga_party_reinforce:party_reinforce_end.2|Unfortunately you don't have any {s22} soldiers to reinforce us with.
 ; dlga_party_reinforce_check:party_reinforce_check_1|Let me check the soldier roster... 
@@ -829,9 +829,9 @@ dlga_party_reinforce_check_1:party_reinforce_end|Takže sis to rozmyslel... Chá
 dlga_party_encounter_hostile_attacker:close_window|Neutocte! Vzdavame se.
 dlga_party_encounter_hostile_attacker:close_window.1|Budeme s vami bojovat az do konce!
 dlga_start:party_encounter_hostile_defender|Co si prejete?
-; dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Surrender or die!
-; dlga_party_encounter_hostile_defender:close_window|Nothing. We'll leave you in peace.
-; dlga_start:close_window.29|* stares at you silently *
+dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Vzdejte se nebo zemřete.
+dlga_party_encounter_hostile_defender:close_window|Nic. Necháme vás na pokoji.
+dlga_start:close_window.29|Tiše zírá.
 dlga_start:battle_reason_stated.1|Vzdejte se nebo zemřete. Je to na vás.
 dlga_battle_reason_stated:close_window|Nebojím se tě, budeme bojovat.
 dlga_start:free|Zdravím, co pro tebe mohu udělat?

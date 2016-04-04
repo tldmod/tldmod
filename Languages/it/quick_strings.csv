@@ -327,7 +327,7 @@ qstr_no_holdings|nessun possedimento
 qstr_{s57}_and_{s58}|{s57} e {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Lei:Lui}
-; qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} serve {s55} of {s56}.^}}{reg9?{reg3?She:He} è {reg3?lady:lord} di {s58}.:}{s59}{reg10?^{reg3?She:He} caduto in battaglia!:}
 qstr_The_last_time_you_sa|L'ultima volta che l'ho visto {reg1?her:him}, {s1}
 qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?her:him}, {s1}
 ; qstr_The_{s50}|The {s50}
@@ -398,9 +398,9 @@ qstr_The_cracked_ribs_hav|Le costole rotte sono guarite.
 qstr__+20_weapon_skill_|(+20 all'abilità con le armi)
 qstr_{s1}_has_had_his_hea|La vita di {s1} è stata potenziata.
 qstr_News_has_arrived_tha|Sono arrivate delle notizie secondo cui {s1} di {s2} è stato ucciso in battaglia!
-; qstr_{s1}_s_Burial_Mound|{s1}'s Burial Mound
+qstr_{s1}_s_Burial_Mound|Tumulo funebre di {s1}
 qstr_{s1}_s_Funeral_Pyre|La pira funeraria di {s1}.
-; qstr_{s1}_is_logged_as_de|{s1} is logged as dead
+qstr_{s1}_is_logged_as_de|{s1} è annotato come deceduto
 qstr_You_have_been_discov|Sei stato scoperto prima di scalare le mura.
 qstr_The_enemy_is_coming_|Il nemico arriva in forze, devi ritirarti!
 qstr_Scout_this_area_alon|Esplora quest'area da solo e incontra oltre ad essa i tuoi uomini.
@@ -446,44 +446,44 @@ qstr_What_do_you_want_of_|Che vuoi da me, vecchio?
 qstr_Just_know_that_a_Daw|Sappi solo che l'Alba è in arrivo. E' inevitabile. E dovresti essere ancora in vita per poterla vedere, pensa cosa dovrai dire a tua discolpa allora.
 qstr_Well_met_{playername|Ben incontrato, {playername}, {s24}. La mia fiducia nei tuoi confronti non era mal riposta. La potenza delle forze dell'Ombra è in frantumi e i tuoi sforzi hanno avuto un ruolo non indifferente in tutto questo!
 qstr_Thank_you_Mithrandir|Grazie, Mithrandir!
-; qstr_The_wizard_Saruman_i|The wizard Saruman is gone and Barad Dur has been shattered to dust along with its Dark Lord! All the peoples of Middle Earth are relieved of the threat that nearly consumed all that was good and pure in this world. The Enemy is vanquished and The King has returned!
-; qstr_It_was_a_long_and_bl|It was a long and bloody war and many of our close friends are also no longer with us.
-; qstr_There_is_much_to_reg|There is much to regret and mourn, and even more to rebuild and mend in the coming days. But for now, let us be jubilant with those of our friends that are with us still and celebrate all we have achieved in The Last Days Of The Third Age.
-; qstr_Bagginsssss..._Ssssh|Bagginsssss... Sssshhhire...
+qstr_The_wizard_Saruman_i|Saruman non c'è più e Barad Dur è stata ridotta in polvere insieme al suo Signore Oscuro! Tutte le popolazioni della Terra di Mezzo sono alleviate dalla minaccia che ha quasi cancellato quanto c'era di buono in questo mondo. Il nemico è sconfitto e il Re è tornato!
+qstr_It_was_a_long_and_bl|È stata una lunga e sanguinosa guerra e molti dei nostri più cari amici non sono più con noi.
+qstr_There_is_much_to_reg|C'è molto da rimpiangere e su cui versare lacrime, e ancora tanto da ricostruire e riparare nei giorni che verranno. Ma per adesso, cerchiamo di gioire con gli amici che sono ancora con noi e festeggiamo quanto abbiamo raggiunto negli ultimi giorni della terza era.
+qstr_Bagginsssss..._Ssssh|Bagginsssss... Conteaaa....
 qstr_I..._don_t_know!|Io... non lo so!
-; qstr_It..._beckonsssssss.|It... beckonsssssss...
-; qstr_Treachery..._Unforgi|Treachery... Unforgiven...
+qstr_It..._beckonsssssss.|Mi... Chiaaamanoo...
+qstr_Treachery..._Unforgi|Tradimento.. Imperdonabile..
 qstr_But_I...|Ma io...
-; qstr_Noone..._oppossssses|Noone... oppossssses... Barad Dur... and livessss!
-; qstr_All..._must..._submi|All... must... submit... and... serve...
+qstr_Noone..._oppossssses|Nessuuuno... può oppooorssi..  a Barad Dur... e viveereeh..
+qstr_All..._must..._submi|Tutti... devono... sottomettersi... e... servire...
 qstr_I_serve_the_Eye!|Servo il grande Occhio!
 qstr_I_shall_serve_the_Ey|Servirò il Grande Occhio!
-; qstr_{s1}_has_been_besieg|{s1} has been besieged by {s2} of {s3}.
-; qstr_The_forces_of_{s2}_m|The forces of {s2} march to {s15}!
-; qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
+qstr_{s1}_has_been_besieg|{s1} è sotto assedio da parte di {s2} of {s3}.
+qstr_The_forces_of_{s2}_m|Le forze di {s2} marciano su {s15}!
+qstr_The_hosts_of_{s2}_ma|I proprietari terrieri di {s2} rientrano per difendere le loro case!
 qstr____Ruins_of_{s1}___|Rovine di {s1}
 qstr_ranks|ranghi
 qstr_shield_wall|muro di scudi
 qstr_wedge|cuneo
 qstr_square|quadrato
 qstr_up|su
-; qstr___Infantry_forming_{|  Infantry forming {s1}.
-; qstr___Not_enough_infantr|  Not enough infantry to form {s1}, holding instead.
-; qstr___Cavalry_forming_{s|  Cavalry forming {s1}.
-; qstr___Not_enough_cavalry|  Not enough cavalry to form {s1}, holding instead.
-; qstr___Archers_forming_{s|  Archers forming {s1}.
-; qstr___Not_enough_archers|  Not enough archers to form {s1}, holding instead.
-; qstr___Infantry_formation|  Infantry formation disassembled.
-; qstr___Cavalry_formation_|  Cavalry formation disassembled.
-; qstr___Archer_formation_d|  Archer formation disassembled.
-; qstr_{s1}_has_fled_the_ba|{s1} has fled the battle!
-; qstr_Your_troops_are_at_{|Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!
-; qstr_Morale_of_your_troop|Morale of your troops wavers!
-; qstr_Morale_of_your_enemi|Morale of your enemies wavers!
-; qstr_Your_enemies_flee_in|Your enemies flee in terror!
-; qstr_Many_of_your_enemies|Many of your enemies are fleeing from battle.
-; qstr_Some_of_your_enemies|Some of your enemies are fleeing from battle.
-; qstr_A_few_of_your_enemie|A few of your enemies are fleeing from battle.
+qstr___Infantry_forming_{|Fanteria in formazione {s1}.
+qstr___Not_enough_infantr|Truppe insufficienti per formare {s1}, mantenere la posizione.
+qstr___Cavalry_forming_{s|Cavalleria in formazione {s1}.
+qstr___Not_enough_cavalry|Cavalleria insufficiente per formare {s1}, mantenere la posizione.
+qstr___Archers_forming_{s|Arcieri in formazione {s1}.
+qstr___Not_enough_archers|Arcieri insufficienti per formare {s1}, mantenere la posizione.
+qstr___Infantry_formation|Formazione di fanteria dismessa.
+qstr___Cavalry_formation_|Formazione di cavalleria dismessa.
+qstr___Archer_formation_d|Formazione arcieri dismessa.
+qstr_{s1}_has_fled_the_ba|{s1} fugge dalla battaglia!
+qstr_Your_troops_are_at_{|Le tue truppe hanno il {reg1}% di coesione (+{reg3}% bonus), il nemico ne ha {reg2}%!
+qstr_Morale_of_your_troop|Il morale delle tue truppe vacilla !
+qstr_Morale_of_your_enemi|Il morale del nemico vacilla !
+qstr_Your_enemies_flee_in|I tuoi nemici fuggono terrorizzati !
+qstr_Many_of_your_enemies|Molti fra i tuoi nemici fuggono dal campo di battaglia.
+qstr_Some_of_your_enemies|Diversi fra i tuoi nemici stanno fuggendo dal campo di battaglia.
+qstr_A_few_of_your_enemie|Un piccolo numero di nemici fugge dal campo di battaglia.
 qstr_Your_troops_flee_in_|Le tue truppe fuggono terrorizzate!
 qstr_Many_of_your_troops_|Molte delle tue truppe stanno scappando dalla battaglia.
 qstr_Some_of_your_troops_|Alcune delle tue truppe stanno scappando dalla battaglia.
@@ -494,45 +494,45 @@ qstr_You_weigh_too_much_f|Pesi troppo per un pony!
 qstr_Your_mount_rears_ref|La tua cavalcatura impenna, si rifiuta di obbedire ai tuoi comandi!
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
 qstr_You_have_found_the_l|Hai trovato il fabbro locale...
-; qstr_You_have_found_the_lo|You have found the local authority...
-; qstr_You_have_found_the_loc|You have found the local warehouse...
+qstr_You_have_found_the_lo|Hai appena incontrato l'autorità locale..
+qstr_You_have_found_the_loc|Hai trovato il magazzino locale...
 ; qstr__cancelled_the_{reg1|(cancelled the {reg10} exp pts earned from killing prisoners)
 qstr_Forming_ranks.|Formare i ranghi.
-; qstr_You_fall_off_of_your|You fall off of your mount!
+qstr_You_fall_off_of_your|Cadi dalla tua cavalcatura!
 qstr_Received_{reg0}_dama|Ricevuti {reg0} danni.
 qstr_{s1}_fell_unconsciou|{s1} ha perso i sensi.
 qstr_Three_Nazguls_are_ci|Tre Nazgul volano circolarmente nei cieli sul campo di battaglia.
 qstr_Two_Nazguls_are_circ|Due Nazgul volano circolarmente nei cieli sul campo di battaglia.
 qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
 qstr_Your_mount_is_scared|La tua cavalcatura è spaventata {reg5?dall'ent:dal troll}!
-; qstr_Nazgul_sweep!|Nazgul sweep!
-; qstr_You_and_your_horse_p|You and your horse panic, the Nazgul cries are unbearable!
-; qstr_Your_horse_panics_th|Your horse panics, the Nazgul cries are unbearable!
-; qstr_You_cower_in_terror_|You cower in terror, the Nazgul cries are unbearable!
-; qstr_knocked_unconscious|knocked unconscious
+qstr_Nazgul_sweep!|Spazzata Nazgul!
+qstr_You_and_your_horse_p|Tu e il tuo cavallo andate in panico, le urla dei Nazgul sono insopportabili!
+qstr_Your_horse_panics_th|Il tuo cavallo va in panico, le urla dei Nazgul sono insopportabili!
+qstr_You_cower_in_terror_|Ti accasci in preda al terrore, le urla dei Nazgul sono insopportabili!
+qstr_knocked_unconscious|ha perso i sensi
 qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11}!
-; qstr_{s11}_is_{s10}_in_th|{s11} is {s10} in the Nazgul attack!
+qstr_{s11}_is_{s10}_in_th|{s11} è {s10} nell'attacco dei Nazgul!
 ; qstr_{s1}_s_morale:_{reg1|{s1}'s morale: {reg1}
-; qstr_You_rally_your_troop|You rally your troops!
-; qstr_{s5}_rallies_his_tro|{s5} rallies his troops!
-; qstr_You_have_killed_{reg|You have killed {reg1} enemies in this battle!
-; qstr_Your_bravery_inspire|Your bravery inspires your troops!
+qstr_You_rally_your_troop|Raduni le tue truppe!
+qstr_{s5}_rallies_his_tro|{s5} raduna le sue truppe!
+qstr_You_have_killed_{reg|Hai ucciso {reg1} nemici in questa battaglia!
+qstr_Your_bravery_inspire|Il tuo coraggio inspira le tue truppe!
 qstr_Everyone|Tutti
 qstr_Infantry|Fanteria
 qstr_Archers|Arcieri
 qstr_Cavalry|Cavalleria 
 qstr_{s1}_and_{s2}|{s1} e {s2}
 qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} e {s3}
-; qstr_{s10}_Move_over_ther|{s10}, Move over there!
-; qstr_You_have_a_clear_per|You have a clear perception of great imminent danger, from all around you!
-; qstr_New_ent_reached_batt|New ent reached battle scene...
+qstr_{s10}_Move_over_ther|{s10}, muoviti verso quella direzione!
+qstr_You_have_a_clear_per|Hai la chiara percezione di un grande pericolo imminente, lo percepisci intorno a te!
+qstr_New_ent_reached_batt|Un nuovo ent ha raggiunto il campo di battaglia...
 qstr_On_your_positions_bi|Alle vostre posizioni, fecce! 
 qstr_Defenders:_infantry_|Difensori: fanteria CARICA!
 qstr_Defenders:_everyone_|Difensori: tutti quanti CARICA!
 qstr_Attackers:_{reg1}/{r|Attaccanti: {reg1}/{reg3}/{reg5} Difensori: {reg0}/{reg2}/{reg4}
 ; qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
 qstr_Ballista:_out_of_amm|Ballista: munizioni terminate!
-; qstr_Ballista:_turn_CURSO|Ballista: turn CURSOR, aim LSHIFT, shoot SPACE, set fire T, exit F
+qstr_Ballista:_turn_CURSO|Ballista: muovi con CURSORE, mira con LSHIFT, fuoco con SPAZIO, imposta fuoco con T, esci con F
 qstr_Ballista:_out_of_ammo|Ballista: munizioni terminate
 ; qstr_The_ladders_on_Deepi|The ladders on Deeping Wall! Watch out!
 qstr_You_yell_for_your_ho|Urli per il tuo cavallo.
@@ -549,7 +549,7 @@ qstr_Alarm_Level_is_now_a|Il livello di allarme è ora a 1!
 qstr_Alarm_Level_is_now_at|Il livello di allarme è ora a 0!
 qstr_The_guards_have_spott|Le guardie ti hanno scoperto!
 qstr_Alarm_Level_is_now_at_|Il livello di allarme è ora a 2!
-; qstr_The_sorcerer_has_fle|The sorcerer has fled!
+qstr_The_sorcerer_has_fle|Lo stregone è fuggito!
 ; qstr_Report_this_ill_news|Report this ill news to the Lady at once.
 qstr_The_sorcerer_is_flee|Lo stregone sta scappando! Uccidilo!
 qstr_The_sorcerer_is_dead|Lo stregone è morto!
@@ -564,10 +564,10 @@ qstr_Influence:^_{reg11}_|Influenza:^ {reg11} (with {s16})
 qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
 ; qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
-; qstr_^No_food:___{reg7}|^No food:  -{reg7}
+qstr_^No_food:___{reg7}|^Niente cibo: -{reg7}
 ; qstr_Current_party_morale|Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}
 qstr_Defending|Difendendo
-; qstr_Gathering_army|Gathering army
+qstr_Gathering_army|Raccogliendo esercito
 qstr_Besieging_{s11}|Assediando {s11}
 qstr_Raiding_{s11}|Razziando {s11}
 qstr_Attacking_enemies_ar|Attaccando i nemici attorno {s11}
@@ -575,8 +575,8 @@ qstr_No_one|Nessuno.
 ; qstr_{s9}{s10}^Current_st|{s9}{s10}^Current state: {s11}^Marshall: {s12}^Since the last offensive: {reg1} hours^Offensive maximum followers: {reg2}^^
 qstr_Selected_faction_is:|La fazione selezionata è: {s10}^^{s9}
 qstr_You_are_in_perfect_h|Sei in perfetta salute.
-; qstr_You_are_suffering_fr|You are suffering from {s1}.
-; qstr_You_are_suffering_fro|You are suffering from {s1} and {s2}.
+qstr_You_are_suffering_fr|Stai soffrendo da {s1}.
+qstr_You_are_suffering_fro|Stai soffrendo da {s1} e {s2}.
 ; qstr_You_are_suffering_from|You are suffering from {s1}, {s2}, and {s3}.
 ; qstr_You_are_suffering_from_|You are suffering from {s1}, {s2}, {s3} and {s4}.
 ; qstr_Weekly_upkeep_for_tr|Weekly upkeep for troops:^{reg5} Resource Points^
@@ -588,17 +588,17 @@ qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 ; qstr__________Faction_str|         Faction strengths report:^{s2}
 ; qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
-; qstr_Traits_gained:^{s2}|Traits gained:^{s2}
+qstr_Traits_gained:^{s2}|Tratto acquisito:^{s2}
 ; qstr_^^You_are_{s17}.|^^You are {s17}.
 qstr_Assassins_in_the_cam|Assassini nel campo, difenditi!
-; qstr_Ally_party_size:_{re|Ally party size: {reg1}
-; qstr_Enemy_party_size:_{r|Enemy party size: {reg1}
+qstr_Ally_party_size:_{re|Grandezza dell'armata alleata: {reg1}.
+qstr_Enemy_party_size:_{r|Grandezza dell'armata avversaria: {reg1}.
 ; qstr_Party_count:_{reg0}|Party count: {reg0}
 ; qstr_Party_position__{reg|Party position ({reg2},{reg3}).
-; qstr_Party_size_increased|Party size increased from {reg0} to {reg1}!
+qstr_Party_size_increased|Grandezza dell'armata aumentata da {reg0} a {reg1}!
 ; qstr_Faction_strengths_re|Faction strengths report:^{s2}
 ; qstr_Attacking_enemy_part|Attacking enemy party {s11}
-; qstr_Unknown_{reg3}_|Unknown({reg3})
+qstr_Unknown_{reg3}_|Sconosciuto({reg3})
 qstr_ON|ON
 qstr_OFF__cheat_|OFF (cheat)
 qstr_OFF|OFF
@@ -639,10 +639,10 @@ qstr_Heroes_only|Solo per gli eroi
 qstr_HP_lost_from_poisoni|HP persi per il veleno
 qstr__{s17}.|, {s17}.
 ; qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
-; qstr_You_are_attacking_a_|You are attacking a group of {s1}.
+qstr_You_are_attacking_a_|Stai attaccando un gruppo di {s1}.
 qstr_The_battle_against_t|La battaglia contro il gruppo di {s1} continua.
-; qstr_{s13}_asked_you_to_r|{s13} asked you to report to him with at least {reg13} troops.
-; qstr_{s13}_ordered_you_to|{s13} ordered you to join the assault against {s14}.
+qstr_{s13}_asked_you_to_r|{s13} Ti ha chiesto di fare rapporto da lui con almeno {reg13} truppe.
+qstr_{s13}_ordered_you_to|{s13} Ti ha ordinato di unirti nell'assalto contro {s14}.
 qstr_You_were_victorious!|Hai vinto!
 ; qstr_The_battle_was_lost.|The battle was lost. Your forces were utterly crushed.
 qstr_Your_companions_carr|I tuoi compagni ti trasportano via dal combattimento
@@ -650,9 +650,9 @@ qstr_You_have_defeated_th|Hai sconfitto il nemico.
 qstr_You_have_retreated_f|Ti sei ritirato dalla battaglia
 qstr_^^Ally_Casualties:{s|^^Perdite alleate:{s0}
 qstr_News_of_your_victory|Le notizie della tua vittoria contro {s4} giungono a {s3}
-; qstr_{s3}_witnesses_your_|{s3} witnesses your victory against {s4}.
-; qstr_{s1}_of_{s3}_managed|{s1} of {s3} managed to escape.
-; qstr_Prisoners_rescued_so|Prisoners rescued so far: {reg1}
+qstr_{s3}_witnesses_your_|{s3} Testimonia la tua vittoria contro {s4}.
+qstr_{s1}_of_{s3}_managed|{s1} di {s3} sono riusciti a scappare.
+qstr_Prisoners_rescued_so|Prigionieri salvati per ora: {reg1}
 ; qstr_Victory_comment._Pla|Victory comment. Player was alone
 ; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
 ; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
@@ -816,7 +816,7 @@ qstr_Say_cheese!|Sorridi!
 ; qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
 ; qstr_You_just_got_windyfl|You just got windyflorated!
 qstr_Treebeard_wants_you_|Barbalbero vuole che trovi e sconfiggi gli orchi che stanno disturbando Fangorn.
-; qstr_Something_wrong_not_|Something wrong, not enought troops for scout party
+qstr_Something_wrong_not_|Qualcosa è andato storto, truppe insufficienti per formare un gruppo di ricognizione
 qstr_my_home_town|La mia città natale.
 qstr_I_am_in_perfect_heal|Sono in perfetta forma.
 ; qstr_I_am_suffering_from_|I am suffering from {s1}.
@@ -925,16 +925,16 @@ qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername} , 
 ; qstr_{s9}_has_requested_y|{s9} has requested you to bring him {reg1} enemy prisoners.
 qstr_We_have_reports_that|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni uomini potrebbero essere ancora vivi, catturati dal nemico. Il morale delle mie truppe è soffre perchè i prigionieri saranno probabilmente uccisi, imprigionati o peggio. Voglio che tu salvi {reg1} prigionieri e aiutare così il morale delle nostre truppe
 ; qstr_We_have_reports_that_|We have reports that several of our patrols were ambushed and defeated. Some of the cowards may still yet live, captured by the enemy. As much as they are expendable, it's a waste to let them die in some prison hole. I want you to rescue {reg1} prisoners, and make them fight for us again.
-; qstr_{s9}_has_asked_you_to|{s9} has asked you to rescue {reg1} prisoners.
+qstr_{s9}_has_asked_you_to|{s9} Ti ha chiesto di salvare {reg1} prigionieri.
 ; qstr_We_have_reports_that_a|We have reports that an enemy host may be gathering in {s13}. Clearly, this is of grave concern to me, as I don't know how many troops the enemy has and whether my soldiers will be ready to meet them on the field of battle. I want you to get close enough to {s13}, and find out as much as you can.
-; qstr_My_spies_tell_me_of_|My spies tell me of a large group of warriors gathering in {s13}. They should be no match for us and our servants, but it wouldn't hurt to know just how many of them are there. I want you to get close enough to {s13}, and find out as much as you can.
+qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di guerrieri raggruppati in{s13}. Non dovrebbero essere un problema per noi e i nostri servi, ma non farebbe male sapere quanti sono. Voglio che ti avvicini abbastanza a {s13}, e scopri quanto più riesci. 
 ; qstr_{s9}_asked_you_to_sco|{s9} asked you to scout around {s13}.
 ; qstr_We_have_reports_of_s|We have reports of some enemy activity near {s13}. Our scouts have so far failed to get close enough and scout the area for enemy comings and goings. I want you to assemble a scouting party, get close enough to {s13}, and dispatch the scouts.
 ; qstr_My_spies_tell_me_the|My spies tell me the enemy is up to something in {s13}. Our cowardly scouts have so far failed to get close enough and tell us anything of import. I want you to recruit your own scouting party, get close enough to {s13}, and leave them there. Make sure they don't turn around and flee!
 ; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain 7 soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
 ; qstr_We_need_to_take_the_|We need to take the battle to the enemy, {playername}. At this moment, we can do this by striking at his patrols and communications. I want you to eliminate {reg1} {s13} parties, that would help us regain initiative.
 ; qstr_We_need_to_grind_dow|We need to grind down our worthless enemies, {playername}. Their patrols and supply trains are growing too bold for my liking. I want you to eliminate {reg1} {s13} parties, so they'll learn to fear what's coming.
-; qstr_{s9}_asked_you_to_el|{s9} asked you to eliminate {reg1} {s13} parties.
+qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di occuparti delle compagnie di {reg1} {s13}.
 ; qstr_{s9}_asked_you_to_fr|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
 ; qstr_You_chose_well_{sir/|You chose well, {sir/madam}. My lads know how to keep their word and earn their pay.
 ; qstr_Well_done_{sir/madam|Well done, {sir/madam}. Keep the money and wine coming our way, and there's no foe in Calradia you need fear.

@@ -448,32 +448,32 @@ itm_m_armor_b|Mordor Pantser
 ; itm_evil_light_armor|Sinister Garb
 itm_uruk_helm_a|Uruk Helm
 itm_uruk_helm_b|Uruk Helm
-; itm_uruk_helm_c|Uruk Beak Helm
+itm_uruk_helm_c|Uruk Snavel-Helm
 ; itm_uruk_helm_d|Uruk Grill Helm
-; itm_uruk_helm_e|Uruk Mask Helm
+itm_uruk_helm_e|Uruk Masker-Helm
 itm_uruk_helm_f|Uruk Helm
-; itm_mordor_cap_helm|Mordor Captain Helm
-; itm_mordor_helm|Mordor Helm
-; itm_black_num_helm|Black Numenorean Helm
+itm_mordor_cap_helm|Mordor Kapiteinshelm
+itm_mordor_helm|Mordor Helm
+itm_black_num_helm|Zwarte Numenoreanen Helm
 ; itm_mordor_sword|Bastard Sword of Mordor
-; itm_mordor_longsword|Sword of Mordor
-; itm_moria_armor_a|Moria Breast Harness
-; itm_moria_armor_b|Moria Breast and Shoulders
+itm_mordor_longsword|Zwaard van Mordor
+itm_moria_armor_a|Moria Borstpantser
+itm_moria_armor_b|Moria Borst en Schouders
 ; itm_moria_armor_c|Moria Orc Mail
 ; itm_moria_armor_d|Moria Bolted Leather
 ; itm_moria_armor_e|Moria Orc Heavy Mail
-; itm_moria_orc_shield_a|Moria Orc Shield
-; itm_moria_orc_shield_b|Moria Orc Shield
-; itm_moria_orc_shield_c|Moria Orc Shield
+itm_moria_orc_shield_a|Moria Orc Schild
+itm_moria_orc_shield_b|Moria Orc Schild
+itm_moria_orc_shield_c|Moria Orc Schild
 ; itm_gundabad_armor_a|Gundabad Orc Rags
 ; itm_gundabad_armor_b|Gundabad Orc Fur
 ; itm_gundabad_armor_c|Gundabad Orc Armor
 ; itm_gundabad_armor_d|Gundabad Orc Armor
 ; itm_gundabad_armor_e|Gundabad Orc Heavy Armor
 ; itm_gundabad_helm_a|Gundabad Cap
-; itm_gundabad_helm_b|Gundabad Helm
-; itm_gundabad_helm_c|Gundabad Helm
-; itm_gundabad_helm_d|Gundabad Helm
+itm_gundabad_helm_b|Gundabad Helm
+itm_gundabad_helm_c|Gundabad Helm
+itm_gundabad_helm_d|Gundabad Helm
 ; itm_gundabad_helm_e|Wargrider Helm
 ; itm_dunland_wolfboots|Dunland Wolfboots
 ; itm_dunland_armor_a|Dunnish Fur Armor
@@ -499,7 +499,7 @@ itm_uruk_helm_f|Uruk Helm
 ; itm_dunnish_axe|Dunnish Axe
 ; itm_dunland_spear|Dunnish Spear
 ; itm_dunnish_pike|Dunnish Pike
-; itm_rohan_armor_a|Rohan Shirt
+itm_rohan_armor_a|Rohan Shirt
 ; itm_rohan_armor_b|Rohan Shirt Cape
 ; itm_rohan_armor_c|Rohan Long Shirt
 ; itm_rohan_armor_d|Rohan Hauberk
@@ -529,16 +529,16 @@ itm_uruk_helm_f|Uruk Helm
 ; itm_rohan_cav_helmet_b|Rohan Cavalry Helmet
 ; itm_rohan_cav_helmet_c|Rohan Cavalry Helmet
 ; itm_rohan_captain_helmet|Rohan Captain Helmet
-; itm_rohan_shield_a|Rohan Shield
-; itm_rohan_shield_b|Rohan Shield
-; itm_rohan_shield_c|Rohan Shield
-; itm_rohan_shield_d|Rohan Shield
-; itm_rohan_shield_e|Rohan Shield
-; itm_rohan_shield_f|Rohan Shield
-; itm_rohan_shield_g|Rohan Royal Shield
+itm_rohan_shield_a|Rohan Schild
+itm_rohan_shield_b|Rohan Schild
+itm_rohan_shield_c|Rohan Schild
+itm_rohan_shield_d|Rohan Schild
+itm_rohan_shield_e|Rohan Schild
+itm_rohan_shield_f|Rohan Schild
+itm_rohan_shield_g|Rohan Koninklijk Schild
 ; itm_rohan_light_greaves|Rohan Light Greaves
 ; itm_rohirrim_war_greaves|Rohirrim War Greaves
-; itm_rohan_shoes|Leather Shoes
+itm_rohan_shoes|Leren Schoenen
 ; itm_rohan_cav_sword|Rohan Riding Sword
 ; itm_rohan_inf_sword|Rohan Sword
 ; itm_rohan_spear|Rohan Spear

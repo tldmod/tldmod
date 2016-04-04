@@ -1,6 +1,11 @@
 MODE CON: COLS=110
 @echo off && title Updating translations from Transifex... && set path=%cd%/.tx
 :up
+
+:: mab calls zh => cnt and zh-Hans => cns
+rename cnt zh
+rename cns zh-Hans
+
 ::convert everything to Joomla INI format
 luajit tx.lua convert
 
@@ -15,6 +20,10 @@ tx pull -a -f --skip --minimum-perc=40 --mode=reviewer
 
 ::revert back to mab format
 luajit tx.lua revert
+
+:: mab calls zh => cnt and zh-Hans => cns
+rename zh      cnt
+rename zh-Hans cns
 
 pause
 cls && goto :up

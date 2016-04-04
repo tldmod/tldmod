@@ -1,0 +1,368 @@
+menu_start_game_1|^^^^^^^^^^Pelo que você está lutando?
+mno_start_good|O AMANHECER de uma nova Era
+mno_start_evil|O CREPÚSCULO do Homem
+mno_go_bback|Volte
+menu_start_phase_2|^^^^^ Terra Média. Uma sombra está crescendo no Leste, ^ e coisas obscuras têm saído de onde vinham se escondendo há muito tempo. ^ As pessoas livres se preparam para uma guerra do tipo que não se vê há uma era. ^ Homens, Elfos, Anões, e Orcs; todos irão fazer a sua parte. ^^  Qual parte, no entanto, está para ser vista...
+mno_go_forth|Vá em frente e escolha seu caminho...
+menu_start_game_3            |^^^^^^^^Escolha o seu cenário:
+mno_custom_battle_scenario_1 |Skirmish, facções de Gondor vs Harad
+mno_custom_battle_scenario_12|Escolha as facções para a batalha
+mno_custom_battle_scenario_3 |Skirmish, Elfos vs Nazgul
+mno_custom_battle_scenario_4 |Abismo de Helm, Rohan vs Isengard
+mno_custom_battle_scenario_5 |Skirmish, facções do Norte vs Rhun
+mno_custom_battle_scenario_6 |Ataque de Siege, Orcs vs Anões
+mno_custom_battle_scenario_7 |Emboscada, Orcs vs Floresta das Trevas
+mno_custom_battle_scenario_11|Batalhas teste (Tune Balancing!)
+mno_custom_battle_scenario_10|Batalha teste de cenário
+mno_troll_battle_scenario    |Batalha teste do Troll
+mno_warg_battle_scenario     |Batalha teste dos wargs
+mno_build_your_own_scene     |** Construa o seu próprio cenário para TLD **
+mno_go_back                  |Voltar
+menu_tutorial|^^TLD possui um monte de conteúdo desconhecido pelo nativo M&B. Alguns deles estão descritos, sem spoilers e com detalhes no PDF incluso nesta versão. Para toturial dos mecanismos básicos do jogo, por favor, utilize o modo Nativo.
+mno_go_back_dot|Volte.
+mno_view_upkeep_costs|Ver custos de manutenção.
+mno_view_character_report|Ver relatório do personagem.
+mno_view_party_size_report|Ver tamanho do grupo.
+mno_view_morale_report|Ver relatório da moral do grupo.
+mno_view_character_report_02|Checar status de NPC.
+mno_view_faction_strengths_report|Ver relatório de força da facção.
+mno_view_traits_report|Ver traços.
+mno_resume_travelling|Resumo da viagem.
+mno_custom_battle_go|Começar.
+mno_leave_custom_battle_2|Cancelar.
+menu_custom_battle_end|^^^^^^A batalha acabou. {s1} Seu lado matou {reg5} inimigos e perdeu {reg6} tropas ao longo da batalha.^Você matou {reg7} oponentes durante a luta.
+mno_replay|Jogar novamente esta batalha.
+mno_continue_dot|Continuar.
+menu_quick_battle_general_test|^^^Batalha atual: ^time A: {reg10} {s10}^^VS^^ time B: {reg11} {s11}
+mno_tAA|+5 Time A
+mno_tAB|-5 Time A
+mno_tAC|Selecionar Tropa A
+mno_tBA|+5 Time B
+mno_tBB|-5 Time B
+mno_tBC|Selecionar Tropa B
+mno_B|Ajuste 1
+mno_F|COMEÇAR A BATALHA!
+mno_dot_go_back|Voltar
+menu_quick_battle_troll|^^^^^^^^Escolha o seu cenário troll:
+mno_troll_battle_scenario_10|Teste: Troll VS Infantanria
+mno_troll_battle_scenario_11|Teste: Troll VS Arqueiros
+mno_troll_battle_scenario_12|Teste: Troll VS Cavalaria
+mno_troll_battle_scenario_13|Teste: Troll VS Lanceiros
+mno_troll_battle_scenario_14|Teste: Troll VS Troll
+mno_troll_battle_scenario_15|Teste-brincadeira: jogador controlado por Troll
+menu_quick_battle_wargs|^^^^^^^^Escolha o seu cenário Warg de teste:
+mno_warg_battle_scenario_10|Contra Wargs: 1 vs 1
+mno_warg_battle_scenario_11|Contra Wargs: 2 vs 3
+mno_warg_battle_scenario_12|Contra Wargs: Muitos vs Muitos
+mno_warg_battle_scenario_10b|Jogar Wargs: 1 vs 1
+mno_warg_battle_scenario_11b|Jogar Wargs: 2 vs 3
+mno_warg_battle_scenario_12b|Jogar Wargs: Muitos vs Muitos
+menu_start_good|^^^^^^^^^^Selecione a sua raça:
+mno_start_ma|HOMEM
+mno_start_el|ELFO
+mno_start_dw|ANÃO
+mno_go_back|Voltar
+menu_start_evil|^^^^^^^^^^A quem você serve?
+mno_start_eye|SAURON de Mordor, Senhor dos Anéis
+mno_start_hand|SARUMAN de Isengard, o Branco
+menu_start_eye|^^^^^^^^^Seu Mestre é Lidless Eye^Escolha a sua raça
+mno_start_or|um Orc, a serviço de Lidless Eye
+mno_start_ur|um URUK, uma nova raça de Orcs
+mno_start_em|um HOMEM, subjugado por Sauron
+menu_start_hand|^^^^^^^^^Seu Mestre é Saruman, Branco^Escolha sua raça
+mno_start_whor|um ORC, a serviço de Saruman
+mno_start_isur|um URUK-HAI, nascido em Isengard
+mno_start_duma|um HOMEM de Dunland, das Planícies do Oeste
+menu_start_good_man|^^^^^^^^^^Selecione seu povo:
+mno_start_go|GONDOR, o Reino da Torre Branca
+mno_start_ro|ROHAN, o povo dos Cavalos
+mno_start_du|DÚNEDAIN, a antiga dinastia de Homens
+mno_start_be|BEORNINGS, o povo Urso
+mno_start_da|O reino de Valle
+menu_start_good_elf|^^^^^^^^^^Em qual floresta você vive, senhor?
+mno_start_ri|VALFENDA, do Senhor Elrond
+mno_start_lo|LOTHLÓRIEN, da senhora Galadriel
+mno_start_mi|FLORESTA DAS TREVAS, terra dos Elfos Silvestres
+menu_start_good_dwarf|^^^^^^^^^^Selecione a sua linhagem:
+mno_start_er|um morador de EREBOR
+mno_start_ih|um minerador das COLINAS DE FERRO
+menu_start_gondor|^^^^^^^^^^De onde você é, em Gondor?
+mno_start_mt|MINAS TIRITH, a Capital
+mno_start_ls|LOSSARNACH, o Feudo das Flores
+mno_start_la|LAMEDON, o Feudo dos homens do campo
+mno_start_pg|PINNATH GELIN, o feudo das Colinas Verdes
+mno_start_do|DOL AMROTH, o feudo dos Cavaleiros Cisne
+mno_start_pe|PELARGIR, o feudo da Costa
+mno_start_bl|VALE DE BLACKROOT, o feudo dos arqueiros
+menu_start_eye_man|^^^^^^^^^^Selecione seu povo: 
+mno_start_hr|HARADRIM, o povo do deserto do Sul
+mno_start_bn|NUMENORIANOS negros, os renegados do Oeste
+mno_start_um|UMBAR, os piratas dos Mares do Sul
+mno_start_rh|RHUN, os bárbaros do Leste
+mno_start_kh|KHÂND, o povo selvagem do Sudeste
+menu_start_eye_orc|^^^^^^^^^^Onde você irá se esconder?
+mno_start_arm|nos exércitos de MORDOR
+mno_start_cav|nas cavernas de DOL GULDUR
+menu_start_hand_orc|^^^^^^^^^^Onde você irá se esconder? 
+mno_start_armis|nos exércitos de ISENGARD
+mno_start_minmo|nas minas de MORIA
+mno_start_cliff|Nos penhascos do Monte GUNDABAD
+menu_start_gondor_mt|^^^^^^^^^^Selecione a sua linhagem:
+mno_start_1_com|Plebeu
+mno_start_2_hib|Bem nascido
+menu_start_haradrim|^^^^^^^Você é um Haradrim, ^um Homem do Deserto.^Selecione sua linhagem
+mno_start_1_des|Homem do Deserto
+mno_start_2_far|Homem da distante tribo de Harad
+menu_choose_gender|^^^^^^^^^^Seu sexo?
+mno_start_male|Masculino
+mno_start_female|Feminino
+mno_proc|Prosseguir normalmente
+mno_continue|Continuar...
+menu_character_report|^^^^^Partido moral: {reg8}^Tamanho limite do partido: {reg7}^{s5}
+menu_camp|^^^^Você está em {s1}.{s2}^^O que você deseja fazer?
+mno_camp_scene|Caminhar ao redor
+mno_camp_troop|Rever{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
+mno_camp_action|Usar um objeto.
+mno_camp_wait_here|Acampar algum por algum tempo.
+mno_camp_options|Trocar opções TLD.
+mno_Cheat_enable|Ativar opções de cheat/modding 
+menu_game_options|^^^^^^^^Clique em uma opção para alterná-la:
+mno_game_options_restrict_items|Equipamentos restritos do jogador: {s7}
+mno_game_options_formations|Informações de batalha e AI: {s7}
+mno_game_options_town_menu|As cidades de NPC's estão sempre acessíveis nos Menus: {s7}
+mno_game_options_cutscenes|Cutscenes: {s7}
+mno_game_options_injuries|Ferimentos dos companheiros: {s7}.
+mno_game_options_death|Morte permanente para lordes e companheiros: {s7}.
+mno_game_options_death2|Morte permanente para jogador (este é VOCÊ!): {s7}.
+mno_game_options_morale|Sistema de batalha moral: {s7}.
+mno_game_options_animal_ambushes|Emboscadas de animais: {s7}.
+mno_game_options_tweaks|Manhas de gameplay...
+mno_game_options_back|Voltar para menu de acampamento.
+menu_camp_tweaks|^^^^^^^^Escolha uma opção que você gostaria de ajustar.
+mno_tweak_options_compat|Manhas de compatibilidade...
+mno_tweak_options_strat|Manhas estratégicas...
+mno_tweak_options_back|Voltar para o menu de opções.
+menu_camp_compat_tweaks|^^^^^^^^Clique em uma opção para mudar (segure shift para diminuir):^(esses são para compatibilidade e não são cheats)
+mno_game_options_compat_party|Número máximo de partidos: {s1}
+mno_game_options_compat_back|Voltar para o menu de trapaças.
+menu_camp_strat_tweaks|^^^^^^^^Clique em uma opção para mudar:^(aviso: estes são cheats!)
+mno_strat_tweaks_siege_reqs|Requerimentos para força do cerco: {s7}
+mno_strat_tweaks_siege_relax_rate|Cerco for. req. taxa de relaxamento: {reg1}
+mno_strat_tweaks_regen_rate|Taxa de energia de regeneração: {s7}
+mno_strat_tweaks_siege_regen_limit|Abaixo, facções sem regeneração: {reg1}
+mno_strat_tweaks_influence_gain_rate|Taxa de ganho de influência: {s7}
+mno_strat_tweaks_rank_gain_rate|Taxa de ganho de rank: {s7}
+mno_strat_tweaks_back|Voltar para o menu de trapaças. 
+menu_camp_action|^^^^^^^^^ Qual objeto?
+mno_camp_customize_defilement|Customizar armadura corrompida
+mno_camp_drink_water|Beber a água Ent!
+mno_camp_action_4|Voltar.
+menu_assasins_attack_player_won|Você derrotou com sucesso os assassinos de {s2}, mandados por {s3}.
+menu_assasins_attack_player_retreat|Você escapou com vida!
+menu_fangorn_danger|^^^^^^Em volta você escuta estranhos e ameaçadores barulhos. ^As árvores estão falando? Existe uma sensação de raiva e perigo no ar.^Suas ordens?
+mno_be_quiet_elf|Respeitar o ódio das árvores. Se mover silenciosamente.
+mno_be_quiet|Abaixe as armas e permaneça quieto! Agora, fora daqui!
+mno_be_bold|Vá! Eu não tenho medo de plantas ou antigos mitos!
+mno_fight_back|Vamos descobrir! Procure na área! Queime uma árvore ou duas!
+menu_fangorn_search_fails|^^^^^^Você procura na escuridão da densa floresta, mas não encontra nada.^No entanto, você sente que está sendo observado e odiado cada vez mais.
+menu_fangorn_battle_debrief_won|^^^Uma grande vitória!^^^Então era isso o que todos os mitos sobre Fangorn queriam dizer...
+menu_fangorn_killed_player_only|^^^^^^Você vagueia na densa e escura floresta.^De repente, você é acertado por algo! Talvez um pesado ramo tenha caído em cima de sua cabeça?^Você continua inconsciente por alguns minutos. Você está seriamente ferido, mas pode continuar.
+mno_ow_get_out|Ouch! Vamos sair deste lugar amaldiçoado!
+menu_fangorn_killed_troop_and_player|^^^^^^Você vagueia na densa e escura floresta.^De repente, você é acertado por algo! Talvez um pesado ramo tenha caído em cima de sua cabeça.^Quando você se recupera, percebe que nem todos da sua tropa tiveram a mesma sorte.^
+menu_fangorn_killed_troop_only|^^^^^^^^Você vagueia na densa e escura floresta. Suas tropas estão amedrontadas.^^De repente, você escuta gritos ao fundo! Você se vira apressado, mas tudo o que encontra são alguns homens de sua tropa no chão, envoltos em uma poça de sangue.^^Alguns outros estão em algum lugar para serem encontrados...
+mno_get_out|Vamos sair deste lugar amaldiçoado!
+menu_can_capture_troll|O abatido troll selvagem continua respirando!^^Seus olhos malignos o encaram cheios de dor e raiva.^Mesmo agora, caído, jazendo desamparado em uma poça feita de seu próprio sangue, isso parece muito perigoso...
+mno_killit|Liquide isso agora. Certifiquei-se de que esteja morto.
+mno_cageit1|Prenda e arraste isso para algum lugar.
+mno_cageit2|Prenda isso junto do outro troll.
+mno_cheat_disabable|Desativar opções de cheat/modding
+menu_drank_ent_water_human|^^^Você bebe a água. O gosto é limpo e refrescante. Tem uma fragrância agradável, como de erva-almiscareira.^Você se sente refrescado.^^No entanto, você tem um pressentimento estranho, anormal. Algo lhe diz que você nunca, nunca mesmo, deve beber essa água novamente.
+menu_drank_ent_water_orc|^^^Você bebe a água. Ora, é apenas água.^De repente, sua garganta aperta, em um espasmo de dor.^Envenenada!^Você engasga, vomita sangue negro, você quase morre.^^Isso dói, oh, como dói.
+mno_i_shall_surv|Eu... Preciso... Sobreviver!
+menu_end_game|^^^^^A decisão está feita, e você resolve desistir de sua vida de aventuras e se estabelece. Você vende todas as suas armas e armadura, reúne todos os seus pertences e caminha em direção ao pôr do sol...
+mno_end_game_bye|Adeus.
+menu_cattle_herd|Você encontra algumas pessoas.
+mno_cattle_drive_away|Ordena que elas o sigam.
+mno_cattle_stop|Traz elas para uma parada.
+mno_leave|Vai embora.
+menu_simple_encounter|^^^^^{s2}^Você tem {reg22} tropas à disposição para batalhar contra seus {reg11}.^^A batalha será em {s3}{s4}.^^Suas ordens?
+mno_encounter_attack|{reg21?Carregá-los: Preparar para encará-los}.
+mno_encounter_order_attack|Ordena suas tropas para {reg21?attack:face them} sem você.
+mno_special_whip|Precipitar-se na direção deles, fraturando o {s4}.
+mno_encounter_leave|Separar.
+mno_encounter_retreat|Recuar, deixando alguns soldados para trás para encobrir sua retirada.
+menu_encounter_retreat_confirm|^^^^^Como membro do grupo com as melhores habilidades táticas, ({reg2}), {reg3?you devise:{s3} devises} um plano que permitirá você e seus homens de escapar com vida, mas você terá que deixar {reg4} alguns soldados para trás, como forma de fazer o inimigo parar de persegui-los.
+mno_leave_behind|Vai em frente. O sacrifício desses homens irá salvar a vida do resto.
+mno_dont_leave_behind|Não. Nós não deixaremos ninguém para trás.
+menu_encounter_retreat|^^^^^Você diz {reg4} para suas tropas segurarem o inimigo enquanto você se retira com o resto de seu grupo.
+menu_order_attack_begin|^^^^^^ Suas tropas se preparam para atacar o inimigo.
+mno_order_attack_begin|Ordenar o início do ataque.
+mno_call_back|Chamá-los de volta.
+menu_order_attack_2|^{s4}^Suas vítimas: {s8}^^Vítimas do inimigo: {s9}
+mno_order_attack_continue|Ordenar os soldados para continuarem o ataque.
+mno_order_retreat|Chamar seus soldados de volta.
+menu_kingdom_army_quest_report_to_army|{s8} mande dizer que ele deseja que você participe de sua nova campanha militar. Você precisa trazer, pelo menos, {reg13} tropas para o exército e  foi instruído para levantar mais guerreiros rápido se você não tiver o suficiente.
+mno_reject|Envie uma mensagem, você está muito ocupado.
+mno_send_word|Mande dizer que você irá acompanhá-lo em breve.
+menu_kingdom_army_quest_messenger|{s8} mande dizer que ele deseja falar com você sobre uma tarefa que precisa ser cumprida. Ele pede que você venha vê-lo o mais rápido possível.
+menu_kingdom_army_quest_join_siege_order|{s8} mande dizer que você está pronto para se juntar ao cerco de  {s9} na preparação para a um ataque completo. Suas tropas estão para pegar {s9} a todo custo.
+menu_kingdom_army_follow_failed|Você desobedeceu ordens e falhou em segui-lo {s8}. Ele manda mensagem dizendo que supõe que você tenha assuntos mais importantes, mas avisa que sua paciência não é ilimitada.
+menu_battle_debrief|^{s11}^Suas vítimas: {s8}^^Vítimas do inimigo: {s9}
+mno_inspect_troll|Inspecionar troll caído.
+menu_pre_join|^^^^^Você se depara com uma batalha entre {s2} e {s1}. Você decide...
+mno_pre_join_help_attackers|Ir ajudar {s2}
+mno_pre_join_help_defenders|Correr ao auxílio de(os) {s1}.
+mno_pre_join_leave|Não se envolver.
+menu_join_battle|^^^Você está ajudando {s2} contra {s1}.^ Você tem {reg22} tropas prontas para a batalha contra o inimigo {reg11}.^^A batalha está acontecendo em {s3}{s4}.
+mno_join_attack|Investir contra o inimigo.
+mno_join_order_attack|Ordenar suas tropas para atacar junto dos aliados enquanto você fica atrás.
+mno_join_leave|Separar.
+menu_join_order_attack|{s4}^^Suas vítimas: {s8}^^Vítimas dos aliados: {s9}^^Vítimas do inimigo: {s10}
+mno_enter|Entrar.
+menu_battlefields|^^^^^^^^^Selecione um campo...
+mno_enter_f1|Campo 1
+mno_enter_f2|Campo 2
+mno_enter_f3|Campo 3
+mno_enter_f4|Campo 4
+mno_enter_f5|Campo 5
+menu_join_siege_outside|^^^^^^{s1} veio por baixo do cerco de {s2}.
+mno_approach_besiegers|Aproximar-se do campo de sítio.
+mno_pass_through_siege|Passar pelas linhas do sítio e entrar {s1}.
+menu_cut_siege_without_fight|Os sitiantes deixam você se aproximar dos portões sem problema.
+menu_besiegers_camp_with_allies|{s1} continua em estado de sítio. Os estandartes de {s2} balançam sobre o campo dos sitiantes, onde você e suas tropas são recebidos.
+mno_talk_to_siege_commander|Solicite um encontro com o comandante.
+mno_join_siege_with_allies|Participe da próxima investida.
+mno_join_siege_stay_back|Ordene seus soldados a participarem da próxima investida com você.
+menu_moria_must_escape|^^O livro parece contar a última tentativa dos anões de retomarem Moria. Tentativa que, aparentemente, resultou na terrível morte de todos os envolvidos. Folheando o livro, você para nas palavras 'prata verdadeira'! Estudando as páginas, você rapidamente entende que essas são as descrições que os anões acumularam em algum lugar nos andares inferiores. Hah! Não seria legal descobrir a desaparecida Pedra dos Anões!? ^Você ansiosamente segue as direções, seguindo por um túnel estreito e sinuoso... ^...^Depois de algumas horas de buscas infrutíferas você entende que está perdido em Moria e precisa encontrar um meio de sair.
+mno_moria_exit_scene|Encontrar uma saída!
+menu_castle_outside|Você saiu {s2}.{s11} {s3} {s4}
+mno_moria_enter|Retornar para o corredor principal de Moria através da passagem secreta.
+mno_moria_enter_door|Entrar em Moria.
+mno_castle_start_siege|Cercar {reg6?town:castle}.
+mno_castle_leave|Partir.
+menu_castle_besiege|Você está sitiando {s1}. {s2} {s3}
+mno_siege_request_meeting|Convidar o comandante do castelo para uma visita.
+mno_wait_24_hours|Esperar até amanhã.
+mno_castle_lead_attack|Liderar seus soldados em um ataque.
+mno_attack_stay_back|Ordenar suas tropas para atacar enquanto você fica atrás.
+mno_build_ladders|Preparar escadas para atacar os muros.
+mno_lift_siege|Abandonar o cerco.
+menu_siege_attack_meets_sally|^^^^^^Os defensores investem contra o seu ataque.
+menu_construct_ladders|Como o membro do grupo com as melhores habilidades de engenharia ({reg2}), {reg3?you estimate:{s3} estimates} irá gastar {reg4} horas para construir escadas de escalação suficientes para o ataque.
+mno_build_ladders_cont|Faça isso.
+menu_castle_attack_walls_simulate|{s4}^^Suas vítimas: {s8}^^Vítimas do inimigo foram: {s9}
+menu_castle_attack_walls_with_allies_simulate|{s4}^^Suas vítimas: {s8}^^Vítimas dos aliados: {s9}^^Vítimas do inimigo: {s10} 
+menu_castle_taken|{s3} caíram para suas tropas e agora você tem total controle sobre {reg2?town:castle}. {reg1? parece que não há nada capaz de parar você de conseguir tomar isso sozinho...:}
+menu_castle_taken_2|{s3} caíram para suas tropas e agora você tem total controle sobre o castelo. É hora de mandar um recado para {s9} sobre a sua vitória. {s5}
+mno_castle_taken_no_claim|Não pedir recompensa.
+menu_siege_started_defender|{s1} está lançando um ataque contra os muros de {s2}. Você tem {reg22} tropas prontas para a batalha contra o inimigo {reg11}. Você decide...
+mno_siege_defender_join_battle|Participar da batalha.
+mno_siege_defender_troops_join_battle|Ordene seus homens a participarem da próxima batalha com você.
+menu_siege_join_defense|{s4}^^Suas vítimas: {s8}^^Vítimas dos aliados: {s9}^^Vítimas do inimigo: {s10} 
+menu_village_hunt_down_fugitive_defeated|^^^^^Um pesado golpe do fugitivo o derruba, e sua visão fica turva e escurece. O tempo passa. Quando você abre seus olhos de novo, se vê sujo e ensanguentado, mas por sorte, nenhum dos seus ferimentos parece ser letal.
+menu_town_bandits_succeeded|^^^^^Os goblins caem antes de você como o trigo pronto para a ceifa! Logo você se fica em pé, sozinho, enquanto a maior parte dos seus atacantes estão inconscientes,  mortos ou morrendo. Certamente os moradores locais ficarão muito agradecidos por você tê-los salvo desta ameaça.
+menu_town_brawl_lost|^^^^^^Você foi nocauteado friamente. As pessoas que você atacou, rapidamente procuraram pelos seus pertences antes de irem embora cuidar de suas atividades diárias.
+menu_town_brawl_won|^^^^^Você derrotou todos os oponentes e guardas mandados para reprimir a confusão. Você rapidamente revistou-os em busca de objetos de valor e foi embora antes dos nervos se acalmarem. ^Talvez na próxima eles mostrem um pouco mais de respeito e se retirem.
+menu_town|Você chegou em {s60}.{s12}{s13}
+mno_town_menu_0|Ir para algum lugar.
+mno_town_menu_0_door|Entrada para algum lugar.
+mno_town_approach|Aproximar {s1}...
+mno_town_castle|Ir para {s1}.
+mno_town_castle_door|Entrada para o castelo.
+mno_town_center|Caminhar até a praça principal.
+mno_town_center_door|Entrada para o centro da cidade.
+mno_aw_chamber_door|Abrir a porta.
+mno_trade_with_arms_merchant|Visitar {s40}.
+mno_trade_with_horse_merchant|Visitar {s41}.
+mno_town_prison_door|Entrada para a prisão.
+mno_dungeon_enter|Procurar pelas lanças perdidas dentro das montanhas.
+mno_dungeon_enter_door|Abrir a porta. 
+mno_talk_to_castle_commander|Visitar o {s61} Quartel.
+mno_speak_with_elder|Conversar com o {s6}.
+mno_isengard_underground|Ir para as cavernas subterrâneas.
+mno_tirith_toplevel|Escalar para o andar superior.
+mno_town_leave|Ir embora...
+mno_town_leave_door|Abandonar área
+menu_disembark|Você deseja desembarcar?
+mno_disembark_yes|Sim.
+mno_disembark_no|Não.
+menu_ship_reembark|Você deseja embarcar?
+mno_reembark_yes|Sim.
+mno_reembark_no|Não.
+menu_center_reports|Nome da cidade: {s1}^Renda de aluguel: {reg1} denars^Renda de tarifas: {reg2} denars^Estoque de comida: para {reg3} dias
+menu_sneak_into_town_suceeded|Disfarçado com as roupas de um pobre peregrino, você enganou os guardas e entrou na cidade.
+menu_sneak_into_town_caught|Enquanto tentava se esgueirar, um dos guardas o reconheceu e ativou o alarme! Você precisa fugir pelos portões antes dos guardas da cidade virem para pegá-lo!
+mno_sneak_caught_fight|Tente encontrar uma saída!
+mno_sneak_caught_surrender|Se entregar.
+menu_sneak_into_town_caught_dispersed_guards|Você se livra dos guardas e encobre sua trilha antes de fugir, facilmente perdendo seus pertences na confusão das ruas.
+menu_sneak_into_town_caught_ran_away|Você fez seu caminho de volta aos portões e rapidamente retornou para a segurança fora da cidade.
+menu_tld_player_defeated|^^^^^De repente, uma dor lancinante surge atrás da sua cabeça! \\ Você treme, enquanto o mundo a sua volta escurece...^Será este o fim?
+menu_recover_after_death_fangorn|Você acorda. A floresta continua à sua volta. Todos os ossos doem. Você está vivo por um milagre. ^^ Foi uma derrota, mas ao menos você foi capaz de ver o que aconteceu. ^Agora você sabe o que está acontecendo nesta floresta amaldiçoada,^ e sobreviveu para contar. ^^ Será que alguém irá acreditar em você?
+menu_recover_after_death_moria|^^^^^Você recobra a consciência. Você está deitado em solo macio, uma brisa fresca em seu rosto. Você está do lado de fora!^Os orcs devem tê-lo considerado morto e o jogaram em algum buraco sombrio.^ Você deve ter sido carregado para a superfície por um riacho subterrâneo.
+mno_whatever|Levante!
+menu_recover_after_death_default|^^^^^Você recobra a consciência. Você se encontra no mesmo local em que caiu. Os inimigos devem ter achado que estava morto e o deixaram. De todo modo, parece que nenhuma de suas feridas são letais, mas você se sente péssimo. Você percebe que consegue andar. Você se levanta e tenta encontrar algum outro sobrevivente de seu grupo.
+menu_recover_after_death_town|^^^^^Você recobra a consciência e se encontra nos subúrbios da cidade. Você está vivo! Ninguém está por perto e você aproveita a chance para sair da cidade. Parece que nenhuma de suas feridas são letais, mas você se sente péssimo. Você ainda consegue andar. 
+menu_recover_after_death_town_alone|^^^^^Você recobra a consciência e se encontra nos subúrbios da cidade. Você está vivo! Ninguém está por perto e você aproveita a chance para sair da cidade. Seus companheiros o encontram. Parece que nenhuma de suas feridas são letais, mas você se sente péssimo. Você ainda consegue andar.
+menu_notification_center_under_siege|{s1} foi sitiada por {s2} of {s3}!
+menu_notification_one_side_left|^^^^^A guerra do Anel acabou!^^Os {s1} derrotaram todos os inimigos e se ergue vitorioso!
+menu_notification_total_defeat|^^^^^A Guerra do Anel acabou para você!^^Os {s1} foram derrotados pelos inimigos e você se encontra sozinho na derrota!
+menu_notification_your_faction_collapsed|^^^^^Sua {s11} terra natal foi derrotada!^No entanto, Still, outros aliados continuam na Guerra. Vocês, juntos com quem sobrou de {s11}, podem ajudar o lado de vocês a ganhar.
+menu_notification_faction_defeated|^^^^^{s1} Derrotado^{s1} não está mais, derrotado pelas forças de {s13}!
+menu_ruins|^^^^Você se aproxima de {s1}. Onde um dia um forte acampamento foi levado ao chão, mesmo assim você ainda consegue ver traços de fortificações e armas enferrujadas espalhadas.
+menu_legendary_place|^^^^Você seguiu os rumores e encontrou {s1}. Agora você pode explorar este lugar e ver por si mesmo se os rumores são verdadeiros.
+mno_explore|Explorar o lugar.
+menu_starting_quest_good|^^^^^^Você descobre uma pequena caravana sendo atacada por um bando de orcs. O que você irá fazer?
+mno_help|Ajudar os estranhos!
+mno_go_your_way|Deixá-los sozinhos.
+menu_custom_battle_choose_faction1|^^^^^^^^^^Escolha o seu lado e as vantagens:
+mno_good_equal|Facção do bem.
+mno_bad_equal|Facção do mal.
+mno_replay_prev|Repetir setup anterior.
+menu_custom_battle_choose_faction2|^^^^^^^^^^Escolha facção do bem
+mno_cb_gondor|Gondor
+mno_cb_gondor1|Rohan
+mno_cb_gondor2|Lothlorien
+mno_cb_gondor3|Valfenda
+mno_cb_gondor4|Floresta das Trevas
+mno_cb_gondor5|Anões
+mno_cb_gondor6|Dale
+mno_cb_gondor7|Beornings
+menu_custom_battle_choose_faction3|^^^^^^^^^^Escolha facção do mal
+mno_cb_mordor|Mordor
+mno_cb_mordor1|Isengard
+mno_cb_mordor2|Dunland
+mno_cb_mordor3|Haradrim
+mno_cb_mordor4|Easterlings
+mno_cb_mordor5|Moria
+mno_cb_mordor6|Gundabad
+mno_cb_mordor7|Rhun
+mno_cb_mordor8|Corsários
+mno_rescue_mission|Esgueirar-se para o covil do feiticeiro na calada da noite.
+mno_next_rescue_scene_door|Continue em frente!
+mno_pick_troops1|Selecione companheiros para a missão, {reg0} selecionados
+menu_pick_troops|Quem você gostaria de levar com você em uma missão discreta? Atualmente, você escolheu {reg0}  companheiros. Você pode levar 10 tropas com você.
+mno_go_forward|Terminar seleção de companheiros e continuar.
+menu_burial_mound|Você se aproxima do túmulo de {s1} de {s2}. Ele está amontoado com as armas entalhadas de seus inimigos caídos. 
+mno_pay_respects|Ajoelhar-se e demonstrar respeito.
+mno_swear_oath|Fazer um juramento de vingança!
+mno_despoil|Profanar o site
+mno_leave_mound|Deixar o monte.
+menu_burial_mound_respects|Você ajoelha e demonstra respeito a {s1}, silenciosamente declamando uma prece para uma rápida jornada para vida após a morte. Não há nada mais a ser feito aqui. 
+menu_burial_mound_oath|Em alto e bom som você jura vingança pela morte de {s4}. Você implacavelmente procuraria pelas forças de {s3} e as destruiria. Suas palavras são carregadas pelo vento e quem poderia dizer que elas não seriam escutadas além do mar?
+menu_burial_mound_despoil|Você destrói o monumento de {s1} com suas próprias mãos e corrompe cada pedra com maldições, derruba cânticos e atos inexplicáveis. Seus seguidores se afastam com medo da morte, mas eles parecem ter renovado seu respeito pela sua maldade.
+menu_funeral_pyre|Você se aproxima dos restos carbonizados de uma pira funerária de {s3} de {s2}. Aqui seus corpos foram cerimoniosamente queimados por seus próprios guardas pessoais. Nada de valor permanece.
+mno_leave_pyre|Abandonar a pira.
+menu_town_ruins|Quando você se aproxima, você vê que {s1} é {s2}
+mno_ruin_menu_0|Explorar o lugar.
+mno_ruin_leave|Sair... 
+menu_death|Você foi morto. Apesar da guerra continuar, você não mais faz parte dela.
+menu_animal_ambush|Você e seus companheiros se encontram separados do resto do grupo, quando de repente...
+menu_animal_ambush_success|Os {s2} {reg0?fall:falls} antes de você como o trigo para a foice! Logo todos os seus agressores caem no chão, feridos ou mortos. {s3}
+menu_animal_ambush_fail|Os animais mordem e partem para cima de você{reg0?,: and your companion{reg2?s,:,}}, mas, por sorte, você consegue expulsá-los. Esperamos que eles não o ataquem de novo.
+menu_build_your_scene|Você pode construir sua própria cena de batalha aqui, usando um dos espaços abaixo oferecidos e o modo de Edição do jogo (você precisa mudar para edit mode ON em M&B na tela de início das Opções primeiro). Você pode apresentar cenas que construiu (nomeados arquivos sco na pasta TLD/SceneObj) para o time dev de TLD, e se seu cenário for bom, ele pode aparecer em lançamentos posteriores como um cenário de fundo random! ^^ TTente especificar em qual região do mapa você deseja que sua cena apareça.^ Duas dicas: Evite água profunda,  montanhas íngremes e outros locais intransitáveis, a menos que você já tenha experiência com scene-maker e saiba como barrar tropas AI de andar onde não devem e fazê-los malharem em outros locais.^ (Entradas #0-1 are para atacantes, #4 para defensores, não encostar #5-8
+mno_scene1|Campo de Batalha 5 (file scn battlefield5.sco)
+mno_scene2|Campo de Batalha 6 (file scn battlefield6.sco)
+mno_scene3|Campo de Batalha 7 (file scn battlefield7.sco)
+mno_scene4|Campo de Batalha 8 (file scn battlefield8.sco)
+mno_scene5|Campo de Batalha 9 (file scn battlefield9.sco)
+mno_back_3dot|Voltar...
