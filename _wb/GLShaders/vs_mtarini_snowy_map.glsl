@@ -30,15 +30,15 @@ varying vec4 outSunLight0;
 void main()
 {
     gl_Position = matWorldViewProj * vec4(inPosition, 1.0);
-	vec4 vWorldPos = matWorld * vec4(inPosition, 1.0);
+    vec4 vWorldPos = matWorld * vec4(inPosition, 1.0);
     vec3 vWorldN = normalize(mat3(matWorld) * inNormal); //normal in world space
 
-	outColor0 = inColor0.bgra * vMaterialColor;
-	outTexCoord = inTexCoord;
-	outFog = 1.f;
+    outColor0 = inColor0.bgra * vMaterialColor;
+    outTexCoord = inTexCoord;
+    outFog = 1.f;
 
     float wNdotSun = max(0.0f, dot(vWorldN, -vSunDir.xyz));
-	outSunLight0 = wNdotSun * vSunColor * vMaterialColor * inColor0;
+    outSunLight0 = wNdotSun * vSunColor * vMaterialColor * inColor0;
 
 
     if (MAP_SPECIAL_SNOW)

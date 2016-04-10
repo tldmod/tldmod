@@ -965,7 +965,23 @@
 			<fragment_shader name="ps_main_map.glsl"/>
 		</technique>
 
+		<!-- mtarini_windy_flora - implemented (fs uses vanilla fs_flora) -->
+		<technique name="mtarini_windy_flora">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
 
+		<!-- mtarini_windy_flora_mild - implemented (fs uses vanilla fs_flora) -->
+		<technique name="mtarini_windy_flora_mild">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
+
+		<!-- mtarini_windy_flora_mild_one_sheet - implemented (fs uses vanilla fs_flora) -->
+		<technique name="mtarini_windy_flora_mild_one_sheet">
+			<vertex_shader name="vs_flora.glsl"/>
+			<fragment_shader name="ps_flora.glsl"/>
+		</technique>
 
 	</techniques>
 </data>
