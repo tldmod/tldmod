@@ -983,5 +983,28 @@
 			<fragment_shader name="ps_flora.glsl"/>
 		</technique>
 
+		<!-- mtarini_windy_grass - implemented (fs uses vanilla fs_grass) -->
+		<technique name="mtarini_windy_grass">
+			<vertex_shader name="vs_grass.glsl"/>
+			<fragment_shader name="ps_grass.glsl"/>
+		</technique>
+
+		<!-- mtarini_windy_grass_ALPHATEST - implemented (fs uses vanilla fs_grass) -->
+		<technique name="mtarini_windy_grass_ALPHATEST">
+			<vertex_shader name="vs_grass_ALPHATEST.glsl"/>
+			<fragment_shader name="ps_grass_ALPHATEST.glsl"/>
+		</technique>
+
+		<!-- mtarini_windy_grass_no_shadow - implemented (fs uses vanilla fs_grass) -->
+		<technique name="mtarini_windy_grass_no_shadow">
+			<vertex_shader name="vs_grass_no_shadow.glsl"/>
+			<fragment_shader name="ps_grass_no_shadow.glsl"/>
+		</technique>
+
+		<!-- mtarini_windy_grass_no_shadow_ALPHATEST - implemented (fs uses vanilla fs_grass) -->
+		<technique name="mtarini_windy_grass_no_shadow_ALPHATEST">
+			<vertex_shader name="vs_grass_no_shadow_ALPHATEST.glsl"/>
+			<fragment_shader name="ps_grass_no_shadow_ALPHATEST.glsl"/>
+		</technique>
 	</techniques>
 </data>
