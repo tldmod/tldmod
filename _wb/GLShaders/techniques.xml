@@ -1012,5 +1012,17 @@
 			<vertex_shader name="vs_face_shader.glsl"/>
 			<fragment_shader name="ps_face_shader.glsl"/>
 		</technique>
+
+		<!-- specular_alpha_skin [iron_shader_skin] - copied from standart_skin_nobump_nospecmap -->
+		<technique name="specular_alpha_skin">
+			<vertex_shader name="vs_standart_skin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_skin_nobump_nospecmap.glsl"/>
+		</technique>
+
+		<!-- specular_alpha [iron_shader] - copied from standart_noskin_nobump_nospecmap -->
+		<technique name="specular_alpha___disabled">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
 	</techniques>
 </data>
