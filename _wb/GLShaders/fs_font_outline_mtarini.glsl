@@ -1,10 +1,12 @@
+/* tld glsl shader -- fs_font_mtarini -- by swyter */
 
+uniform sampler2D diffuse_texture;
 varying vec4 outColor0;
 varying vec3 outTexCoord;
 
 void main()
-{ 
-	vec4 sample = texture2D(FontTextureSampler, outTexCoord.xy);
+{
+	vec4 sample = texture2D(diffuse_texture, outTexCoord.xy);
 
 	float bord = clamp( (1.0-sample.r)*2.0, 0.0, 1.0 );
 	float bordColor = outTexCoord.z;
