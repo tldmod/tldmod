@@ -948,5 +948,24 @@
 			<fragment_shader name="ps_main_no_shadow.glsl"/>
 		</technique>
 
+		<!-- map_scribble_shader - implemented -->
+		<technique name="map_scribble_shader">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+
+		<!-- mtarini_snowy_map - implemented -->
+		<technique name="mtarini_snowy_map">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+
+		<technique name="mtarini_swampy_map">
+			<vertex_shader name="vs_main_map.glsl"/>
+			<fragment_shader name="ps_main_map.glsl"/>
+		</technique>
+
+
+
 	</techniques>
 </data>
