@@ -1006,5 +1006,11 @@
 			<vertex_shader name="vs_grass_no_shadow_ALPHATEST.glsl"/>
 			<fragment_shader name="ps_grass_no_shadow_ALPHATEST.glsl"/>
 		</technique>
+
+		<!-- face_shader_redeye - implemented -->
+		<technique name="face_shader_redeye">
+			<vertex_shader name="vs_face_shader.glsl"/>
+			<fragment_shader name="ps_face_shader.glsl"/>
+		</technique>
 	</techniques>
 </data>
