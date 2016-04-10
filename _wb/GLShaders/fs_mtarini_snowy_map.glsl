@@ -12,32 +12,33 @@ varying vec4 outColor0;
 varying vec2 outTexCoord;
 varying float outFog;
 varying vec4 outSpec0;
+varying vec4 outSunLight0;
 
 void main()
 {
     vec4 tex_col = texture2D(diffuse_texture, outTexCoord*3.0);
     vec4 tex_sdw = texture2D(diffuse_texture_2, (outTexCoord*0.2f)+(time_var*0.02f));
 
-	tex_col.rgb = pow(tex_col.rgb, input_gamma.rgb);
+	//tex_col.rgb = pow(tex_col.rgb, input_gamma.rgb);
 
     // change the following weights to tune snow presence
-    float snow = outSpec0.x*0.70         // effect of altitude on snow presence
-                 - 1.4                   // basic snow altitude
-                 - (tex_col.w-0.5)*2.5;  // effect of alpha channel on snow presence
+    float snow = outSpec0.x * 0.70           // effect of altitude on snow presence
+                 - 1.4                       // basic snow altitude
+                 - (tex_col.w - 0.5) * 2.5;  // effect of alpha channel on snow presence
 
 
-    snow=clamp(snow,0.0,0.85); // snow factor is between 0 and 0.85
+    snow = clamp(snow, 0.0, 0.85); // snow factor is between 0 and 0.85
 
-    tex_col.xyz=snow*vec3(0.9,0.9,0.9) +(1.-snow)*tex_col.xyz;
+    tex_col.xyz = snow * vec3(0.9, 0.9, 0.9) + (1.0 - snow) * tex_col.xyz;
 
 
     tex_col *= tex_sdw
              * outColor0                    // shade with Lambertian lighting
-             //+ In.SunLight
+             + outSunLight0
              + snow * outSpec0.y            // plus shininess (only for snow)...
              * 1.3 * (1.0-0.5*tex_col.w);   // ...weighted with alpha channel
 
     gl_FragColor = tex_col;
     gl_FragColor.w = outColor0.w;
-    gl_FragColor.rgb = pow(gl_FragColor.rgb, output_gamma_inv.xyz);
+    //gl_FragColor.rgb = pow(gl_FragColor.rgb, output_gamma_inv.xyz);
 }
