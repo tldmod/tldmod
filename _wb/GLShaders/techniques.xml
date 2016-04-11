@@ -1020,7 +1020,13 @@
 		</technique>
 
 		<!-- specular_alpha [iron_shader] - copied from standart_noskin_nobump_nospecmap -->
-		<technique name="specular_alpha___disabled">
+		<technique name="specular_alpha">
+			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
+			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+
+		<!-- mtarini_specular_alpha_top [iron_shader_rohanhelm] - copied from standart_noskin_nobump_nospecmap with changes -->
+		<technique name="mtarini_specular_alpha_top">
 			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
 			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
 		</technique>
