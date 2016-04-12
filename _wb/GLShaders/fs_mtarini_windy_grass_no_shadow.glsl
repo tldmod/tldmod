@@ -13,6 +13,9 @@ void main ()
   tex_col_1.w = tmpvar_3.w;
   tex_col_1.xyz = pow (tmpvar_3.xyz, vec3(2.2, 2.2, 2.2));
   tmpvar_2 = (tex_col_1 * Color);
+  if ((tmpvar_2.w < 0.1)) {
+    discard;
+  };
   tmpvar_2.xyz = pow (tmpvar_2.xyz, output_gamma_inv.xyz);
   tmpvar_2.xyz = mix (vFogColor.xyz, tmpvar_2.xyz, Fog);
   gl_FragColor = tmpvar_2;

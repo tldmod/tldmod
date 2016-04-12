@@ -13,7 +13,13 @@ void main ()
   tmpvar_3 = texture2D (diffuse_texture, Tex0);
   tex_col_1.w = tmpvar_3.w;
   tex_col_1.xyz = pow (tmpvar_3.xyz, vec3(2.2, 2.2, 2.2));
-  tmpvar_2 = (tex_col_1 * (Color + SunLight));
+  vec4 tmpvar_4;
+  tmpvar_4.w = 0.0;
+  tmpvar_4.xyz = SunLight.xyz;
+  tmpvar_2 = (tex_col_1 * (Color + tmpvar_4));
+  if ((tmpvar_2.w < 0.1)) {
+    discard;
+  };
   tmpvar_2.xyz = pow (tmpvar_2.xyz, output_gamma_inv.xyz);
   tmpvar_2.xyz = mix (vFogColor.xyz, tmpvar_2.xyz, Fog);
   gl_FragColor = tmpvar_2;
