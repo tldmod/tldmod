@@ -837,6 +837,7 @@
 			<vertex_shader name="vs_grass.glsl"/>
 			<fragment_shader name="ps_grass.glsl"/>
 		</technique>
+		<!-- swy-- modified the pixel shader to add scrolling cloud shadows -->
 		<technique name="diffuse_map">
 			<vertex_shader name="vs_main_map.glsl"/>
 			<fragment_shader name="ps_main_map.glsl"/>
@@ -1029,6 +1030,26 @@
 		<technique name="mtarini_specular_alpha_top">
 			<vertex_shader name="vs_standart_noskin_nobump.glsl"/>
 			<fragment_shader name="ps_standart_noskin_nobump_nospecmap.glsl"/>
+		</technique>
+
+		<!-- diffuse_rohan_banners [tex_mul_color_alpha_rohan_banners] - copied from diffuse with changes -->
+		<technique name="diffuse_rohan_banners">
+			<vertex_shader name="vs_main.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_rohan_banners_SHDW">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+
+		<!-- diffuse_spr_banners [tex_mul_color_alpha_spr_banners] - copied from diffuse with changes -->
+		<technique name="diffuse_spr_banners">
+			<vertex_shader name="vs_main.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="diffuse_spr_banners_SHDW">
+			<vertex_shader name="vs_main_true.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
 		</technique>
 	</techniques>
 </data>
