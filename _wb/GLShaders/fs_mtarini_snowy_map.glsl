@@ -16,8 +16,8 @@ varying vec4 outSunLight0;
 
 void main()
 {
-    vec4 tex_col = texture2D(diffuse_texture, outTexCoord*3.0);
-    vec4 tex_sdw = texture2D(diffuse_texture_2, (outTexCoord*0.2f)+(time_var*0.02f));
+    vec4 tex_col = texture2D(diffuse_texture, outTexCoord * 3.0);
+    vec4 tex_sdw = texture2D(diffuse_texture_2, (outTexCoord * 0.2f) + (time_var * 0.02f));
 
 	//tex_col.rgb = pow(tex_col.rgb, input_gamma.rgb);
 
@@ -33,10 +33,10 @@ void main()
 
 
     tex_col *= tex_sdw
-             * outColor0                    // shade with Lambertian lighting
+             * outColor0                        // shade with Lambertian lighting
              + outSunLight0
-             + snow * outSpec0.y            // plus shininess (only for snow)...
-             * 1.3 * (1.0-0.5*tex_col.w);   // ...weighted with alpha channel
+             + snow * outSpec0.y                // plus shininess (only for snow)...
+             * 1.3 * (1.0 - 0.5 * tex_col.w);   // ...weighted with alpha channel
 
     gl_FragColor = tex_col;
     gl_FragColor.w = outColor0.w;

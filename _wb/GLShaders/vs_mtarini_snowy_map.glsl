@@ -26,6 +26,7 @@ varying vec4 outSpec0;
 varying vec4 outSunLight0;
 
 #define MAP_SPECIAL_SNOW true
+#define MAP_SPECIAL_SWAMP false
 
 void main()
 {
@@ -52,5 +53,11 @@ void main()
         outSpec0.y = fSpecular * vAmbientColor.x * 0.8; // store specular in SunLight.x
     }
 
+    if (MAP_SPECIAL_SWAMP)
+    {
+        // computes wheter inside swamp
+        vec2 dist = vWorldPos.xy - vec2(-35.0, -27.0);
+        outSpec0.x = (dot(dist, dist) > 38.0 * 38.0) ? 0.0 : 1.0; // stores swamp as yes no
+    }
 }
 
