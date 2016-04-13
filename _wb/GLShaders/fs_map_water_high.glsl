@@ -1,5 +1,7 @@
+/* tld glsl shader -- fs_map_water_high -- by swyter */
+
 uniform sampler2D diffuse_texture;
-uniform sampler2D diffuse_texture2;
+uniform sampler2D diffuse_texture_2;
 
 uniform sampler2D normal_texture;
 uniform sampler2D env_texture;
@@ -32,11 +34,11 @@ void main ()
 
     //swy-- unpack vector range from 0.0f - 1.0f to -1.0f - 1.0f
 
-    vec4 flow_sample   = texture2D(diffuse_texture2, _worldpos.xy);
+    vec4 flow_sample   = texture2D(diffuse_texture_2, _worldpos.xy);
     vec2 flow_vector   = (flow_sample.rg * 2.0f) - 1.0f;
     float noise_sample = flow_sample.b;
 
-    flow_vector.x *= -1.f;
+    flow_vector.xy *= -1.f;
 
     //swy-- sample two times at different points, and show the less
     //      stretched one at the right time in cycles, permuted by the noise to limit pulsing...
@@ -85,7 +87,9 @@ void main ()
 	//swy-- tint tweaks
 	//Output.RGBColor.b *= pow(1.f, 1.f-tex_col.a);
 	tmpvar_4 *= vec4(0.77f, 0.77f, 0.80f, 0.95f);
-	tmpvar_4.rgb += (flow_sample.x * 0.03f);
+	tmpvar_4.rgb += (flow_sample.x*0.03f);
+
+	//tmpvar_4 = vec4(clamp(flow_sample.xyz, 0., 1.), 1.0);
 
   gl_FragColor = tmpvar_4;
 }

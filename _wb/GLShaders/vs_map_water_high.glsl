@@ -1,3 +1,5 @@
+/* tld glsl shader -- vs_map_water_high -- by swyter */
+
 uniform vec4 vMaterialColor;
 uniform vec4 vSunDir;
 uniform vec4 vSunColor;
@@ -110,6 +112,6 @@ void main ()
 	_worldpos.x -= 0.495f;
 	_worldpos.y += 0.68f;
 
-	_worldpos.x *= -1.f;
+	_worldpos.xy *= -1.f;
 }
 
