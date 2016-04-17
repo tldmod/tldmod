@@ -1051,5 +1051,15 @@
 			<vertex_shader name="vs_main_true.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
+
+		<!-- mtarini_standart_shader [standart_shader] - copied from diffuse with changes -->
+		<technique name="mtarini_standart_shader">
+			<vertex_shader name="vs_main.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="mtarini_standart_shader_SHDW">
+			<vertex_shader name="vs_main.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
 	</techniques>
 </data>
