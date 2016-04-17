@@ -1061,5 +1061,15 @@
 			<vertex_shader name="vs_main.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
+
+		<!-- mtarini_skin_diffuse_95perc [skeleton_shader_95perc] - copied from skin_diffuse with changes -->
+		<technique name="mtarini_skin_diffuse_95perc">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="mtarini_skin_diffuse_95perc_SHDW">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
 	</techniques>
 </data>
