@@ -26,8 +26,8 @@ varying vec2 Tex0;
 varying vec4 SunLight;
 varying vec4 ShadowTexCoord;
 
-#define PREV_RESIZE 1.00
-#define POST_RESIZE 0.95
+#define PREV_RESIZE 1.00/0.73
+#define POST_RESIZE 0.73
 
 void main ()
 {

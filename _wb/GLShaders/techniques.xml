@@ -1071,5 +1071,35 @@
 			<vertex_shader name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
+
+		<!-- mtarini_skin_diffuse_78perc [skeleton_shader_78perc] - copied from skin_diffuse with changes -->
+		<technique name="mtarini_skin_diffuse_78perc">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="mtarini_skin_diffuse_78perc_SHDW">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+
+		<!-- mtarini_skin_diffuse_73perc [skeleton_shader_73perc] - copied from skin_diffuse with changes -->
+		<technique name="mtarini_skin_diffuse_73perc">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="mtarini_skin_diffuse_73perc_SHDW">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+
+		<!-- mtarini_skin_diffuse_big [skeleton_shader_big] - copied from skin_diffuse with changes -->
+		<technique name="mtarini_skin_diffuse_big">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
+		<technique name="mtarini_skin_diffuse_big_SHDW">
+			<vertex_shader name="vs_main_skin.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
 	</techniques>
 </data>
