@@ -14,6 +14,9 @@ varying float outFog;
 varying vec4 outSpec0;
 varying vec4 outSunLight0;
 
+varying vec3 outViewDir;
+varying vec3 outWorldNormal;
+
 #define MAP_SPECIAL_SWAMP true
 #define MAP_BLEND_SMOOTH false
 #define MAP_BLEND_HARD false
@@ -54,4 +57,11 @@ void main()
          (0.5) * (0.5 + (outColor0.a - 0.5) * 2.0 + (tex_col.a - 0.5))
         , 0.0, 1.0);
 	}
+
+    /* add fresnel term to make the surface look velvet soft at glancing angles */
+    float fresnel = (1.0 - clamp(dot(normalize(outViewDir), normalize(outWorldNormal)), 0.0, 1.0));
+    gl_FragColor.xyz = (gl_FragColor.xyz * max(0.6, ((fresnel * fresnel) + 0.1)));
+
+    /* add fog mixing */
+    gl_FragColor.xyz = mix(vFogColor.xyz, gl_FragColor.xyz, outFog);
 }

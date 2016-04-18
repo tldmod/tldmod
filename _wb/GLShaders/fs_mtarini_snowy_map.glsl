@@ -14,6 +14,9 @@ varying float outFog;
 varying vec4 outSpec0;
 varying vec4 outSunLight0;
 
+varying vec3 outViewDir;
+varying vec3 outWorldNormal;
+
 void main()
 {
     vec4 tex_col = texture2D(diffuse_texture, outTexCoord * 3.0);
@@ -40,5 +43,11 @@ void main()
 
     gl_FragColor = tex_col;
     gl_FragColor.w = outColor0.w;
-    //gl_FragColor.rgb = pow(gl_FragColor.rgb, output_gamma_inv.xyz);
+
+    /* add fresnel term to make the surface look velvet soft at glancing angles */
+    float fresnel = (1.0 - clamp(dot(normalize(outViewDir), normalize(outWorldNormal)), 0.0, 1.0));
+    gl_FragColor.xyz = (gl_FragColor.xyz * max(0.6, ((fresnel * fresnel) + 0.1)));
+
+    /* add fog mixing */
+    gl_FragColor.xyz = mix(vFogColor.xyz, gl_FragColor.xyz, outFog);
 }

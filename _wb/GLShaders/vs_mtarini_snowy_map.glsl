@@ -18,12 +18,16 @@ uniform vec4 vCameraPos;
 uniform vec4 vSkyLightDir;
 uniform vec4 vSunColor;
 uniform vec4 vSunDir;
+uniform float fFogDensity;
 
 varying vec4 outColor0;
 varying vec2 outTexCoord;
 varying float outFog;
 varying vec4 outSpec0;
 varying vec4 outSunLight0;
+
+varying vec3 outViewDir;
+varying vec3 outWorldNormal;
 
 #define MAP_SPECIAL_SNOW true
 #define MAP_SPECIAL_SWAMP false
@@ -36,7 +40,19 @@ void main()
 
     outColor0 = inColor0.bgra * vMaterialColor;
     outTexCoord = inTexCoord;
-    outFog = 1.f;
+
+    /* -- fog distance calculations */
+    vec3 viewProj = (matWorldView * vec4(inPosition, 1.0)).xyz;
+
+    outFog = 1.0 / exp2(
+        sqrt( dot(viewProj, viewProj) ) * fFogDensity
+    );
+    /* -- */
+
+    /* -- for fresnel term computations at fragment shader */
+    outViewDir = normalize((vCameraPos - (matWorld * vec4(inPosition, 1.0)))).xyz;
+    outWorldNormal = vWorldN;
+    /* -- */
 
     float wNdotSun = max(0.0f, dot(vWorldN, -vSunDir.xyz));
     outSunLight0 = wNdotSun * vSunColor * vMaterialColor * inColor0;
