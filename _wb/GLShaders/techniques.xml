@@ -1101,5 +1101,11 @@
 			<vertex_shader name="vs_main_skin.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
+
+		<!-- mtarini_waterfall [waterfall_shader] - copied from diffuse with changes -->
+		<technique name="mtarini_waterfall">
+			<vertex_shader name="vs_main.glsl"/>
+			<fragment_shader name="ps_main.glsl"/>
+		</technique>
 	</techniques>
 </data>
