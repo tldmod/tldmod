@@ -209,6 +209,7 @@ morale_scripts = [
 			(try_end),
 		(else_try), #Troll and quest parties never flee
 			(agent_get_party_id, ":party_no", ":agent_no"),
+			(party_is_active, ":party_no"),  # Kham - added a validator to check
 			(party_get_template_id, ":template", ":party_no"),
 			(eq|this_or_next, ":template", "pt_wild_troll"),
 			(eq, ":template", "pt_raging_trolls"),
