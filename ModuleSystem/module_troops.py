@@ -2968,9 +2968,6 @@ troops = [
 ["bonus_chest_3","Bonus_Chest","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      def_attrib,0,0,0],
 ["camp_chest_faction","Faction_Chest","bug",tf_hero|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [],      def_attrib,0,knows_inventory_management_10,0],
 ["camp_chest_none","Chest_for_nones","bug",tf_hero|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [],      def_attrib,0,0,0],
-#kham Spears Quest
-["dorwinion_sack","Dorwinion_Sack","bug",tf_hero|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [itm_cram,itm_metal_scraps_good,itm_metal_scraps_good,itm_metal_scraps_good, itm_rhun_helm_c],      def_attrib,0,knows_inventory_management_10,0],
-#end Kham Spears quest
 ["player_chest","Your_Chest","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      def_attrib,0,0,0],
 # These are used as arrays in the scripts.
 ["temp_array_a","bug","bug",tf_hero|tf_inactive,0,0,fac_neutral,   [],      0,0,0,0],
@@ -3147,6 +3144,11 @@ str_127|agi_7|int_4|cha_4|level(35),0,knows_riding_10|knows_ironflesh_10|knows_p
 ["wolf","Wolf","Wolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
 [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_wolf],
 str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_2,orc_face7,orc_face2],
+
+#kham Spears Quest
+["dorwinion_sack","Dorwinion_Sack","bug",tf_hero|tfg_helm|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [itm_cram,itm_metal_scraps_good,itm_metal_scraps_good,itm_metal_scraps_good, itm_rhun_helm_c],      def_attrib,0,knows_inventory_management_10,0],
+#end Kham Spears quest
+
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 

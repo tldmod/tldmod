@@ -31,7 +31,6 @@ scene_props = [
 ("container_chest_c",0,"chest_c","bo_chest_c", []),
 ("player_chest",sokf_type_container,"player_chest","bo_player_chest", []),
 ("locked_player_chest",0,"player_chest","bo_player_chest", []),
-("dorwinion_sack",sokf_type_container,"dorwinion_sack","bo_dorwinion_sack", []),
 
 ("light_sun",sokf_invisible,"light_sphere","0",  [
      (ti_on_init_scene_prop,
@@ -2325,6 +2324,8 @@ scene_props = [
 
 ("gothic_chair_nocol",0,"gothic_chair",  "0", []), #swy--disabled collision so Denethor can sit correctly on Minas Tirith's castle without looking funny.
 ("smaug_skeleton",    0,"smaug_skeleton","0", []), #swy--added unused but otherwise pretty cool (both technically and artistically) Smaug skeleton, for the Lone Mountain I guess.
+
+("dorwinion_sack",sokf_type_container,"dorwinion_sack","bo_dorwinion_sack", []), # Kham - for Spears quest 
 
 ("save_compartibility1",0,"0","0", []),
 ("save_compartibility2",0,"0","0", []),
