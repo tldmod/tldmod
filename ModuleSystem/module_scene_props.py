@@ -31,6 +31,7 @@ scene_props = [
 ("container_chest_c",0,"chest_c","bo_chest_c", []),
 ("player_chest",sokf_type_container,"player_chest","bo_player_chest", []),
 ("locked_player_chest",0,"player_chest","bo_player_chest", []),
+("dorwinion_sack",sokf_type_container,"dorwinion_sack","bo_dorwinion_sack", []),
 
 ("light_sun",sokf_invisible,"light_sphere","0",  [
      (ti_on_init_scene_prop,

@@ -3184,15 +3184,38 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 #TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder) -- begin
 
-[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(check_quest_active,"qst_find_lost_spears")], "My lord, I wish to enter into the lonely mountains, in search of King Bladorthin's lost spears.", "find_lost_spears_permission", []],
+[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(check_quest_active,"qst_find_lost_spears"),(neg|quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1) ], "My lord, I wish to enter into the lonely mountains, in search of King Bladorthin's lost spears.", "find_lost_spears_permission", []],
                             
-[anyone,"find_lost_spears_permission",[(quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),], "I already gave you permission, {playername}.", "lord_pretalk", []],
-[anyone,"find_lost_spears_permission",[(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 0),(ge, "$g_talk_troop_relation", 5)], "Alright, {playername}, you may enter into the mountains.", "find_lost_spears_permission_yes", [(quest_set_slot, "qst_find_lost_spears", slot_quest_current_state, 1),]],
-[anyone,"find_lost_spears_permission",[(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 0)],"I'm sorry, but I don't know or trust you well enough, {playername}.", "lord_pretalk", []],
+[anyone,"find_lost_spears_permission",[(check_quest_active,"qst_find_lost_spears"),(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 10),], "I already gave you permission, {playername}.", "lord_pretalk", []],
+
+[anyone,"find_lost_spears_permission",[(check_quest_active,"qst_find_lost_spears"),(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 0),(ge, "$g_talk_troop_relation", 5)], "Alright, {playername}, you may enter into the mountains.", "find_lost_spears_permission_yes", [(quest_set_slot, "qst_find_lost_spears", slot_quest_current_state, 10),]],
+
+[anyone,"find_lost_spears_permission",[(check_quest_active,"qst_find_lost_spears"),(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 0)],"I'm sorry, but I don't know or trust you well enough, {playername}.", "lord_pretalk", []],
 
 [anyone|plyr,"find_lost_spears_permission_yes",[], "I thank you, my Lord.", "lord_pretalk",[]],
-              
-#TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder) -- end
+
+[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(check_quest_active,"qst_find_lost_spears"),(quest_slot_eq, "qst_find_lost_spears", slot_quest_current_state, 15),], 
+"My lord, I found a sack with a fading emblem of grapes and some shards of wood and metal inside that could have belong to a spear.", "tell_dorwinion_sack", []],
+
+[anyone,"tell_dorwinion_sack",
+  [], "Very interesting. This ancient sack could have born the mark of the finest wines that could only come from Dorwinion.", "tell_dorwinion_sack_2",
+  []],
+[anyone|plyr,"tell_dorwinion_sack_2",
+  [], "I also found this Rhun helm in the sack. Could this tell us more about what happened to the Spears?", "tell_dorwinion_sack_3",
+  []],
+[anyone,"tell_dorwinion_sack_3",
+  [], "Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for. NOTE: THIS QUEST IS NOT YET COMPLETED. TO BE CONTINUED.", "lord_pretalk", 
+      [(quest_set_slot, "qst_find_lost_spears", slot_quest_current_state, 20),
+      (str_store_string, s2, "@The search for the Lost Spears has led you to Dorwinion, the site of the ancient northern kingdom of King Bladorthin. TO BE CONTINUED"),
+      (add_quest_note_from_sreg, "qst_find_lost_spears", 1, s2, 0),
+      (call_script, "script_change_player_relation_with_troop","$g_talk_troop",3),
+      (add_xp_as_reward,50),
+      (call_script,"script_end_quest", "qst_find_lost_spears"),
+      #(enable_party, "p_amath_dollen_fortress"),
+      ]],
+
+
+#TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder, Continued by Kham) -- end
               
    #TLD - those oath options disabled for now, as no consequence menu is freezing game (Kolba)
                                                                                                                                                                                     

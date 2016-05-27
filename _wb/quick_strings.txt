@@ -1,4 +1,4 @@
-1118
+1121
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -568,6 +568,8 @@ qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_FOG:R_{reg0}_G_{reg1 FOG:R_{reg0}_G_{reg1}_B{reg2}_dist_{reg3}
 qstr_max_X_{reg0}_max_Y_{ max_X_{reg0}_max_Y_{reg1}
 qstr_THREE.._TWO..._ONE.. THREE.._TWO..._ONE...._FIGHT!
+qstr_You_have_found_the_D You_have_found_the_Dwarven_Warehouse_where_the_Legendary_Spears_could_be._Report_what_you_find_to_{s3}
+qstr_Leave_the_Warehouse? Leave_the_Warehouse?
 qstr_Leave_the_place_in_s Leave_the_place_in_silence?
 qstr_Leave_scene? Leave_scene?
 qstr_Trace_back_your_step Trace_back_your_steps_and_go_back_in_the_open_now?
@@ -1000,6 +1002,7 @@ qstr_Oh?_Let_me_see_that. Oh?_Let_me_see_that..._Well_well_well!_It_was_good_of_
 qstr_Give_me_that!_Hrmph! Give_me_that!_Hrmph!_Good_that_you_brought_me_this,_{playername},_you_are_a_useful_servant._Tell_{s9}_to_employ_you_more_often.
 qstr_What?_Let_me_see_tha What?_Let_me_see_that..._Hmmm._It_was_good_of_you_to_bring_me_this,_{playername}._Now_begone.
 qstr_Give_me_that!_Hrmph!_ Give_me_that!_Hrmph!_You_are_a_useful_servant_to_your_masters,_{playername},_but_all_of_you_will_be_dead_before_long._Not_now_though,_so_scurry_off.
+qstr_The_search_for_the_L The_search_for_the_Lost_Spears_has_led_you_to_Dorwinion,_the_site_of_the_ancient_northern_kingdom_of_King_Bladorthin._TO_BE_CONTINUED
 qstr_Do_you_need_reinforc Do_you_need_reinforcements?
 qstr_You_don_t_look_too_s You_don't_look_too_strong,_do_you_need_troops?
 qstr_^{s14}_is_grateful_t ^{s14}_is_grateful_to_you,_{playername},_{s29}^

@@ -7127,6 +7127,16 @@ game_menus = [
               (change_screen_mission),
        ],"Open the door."),
       #Enter dungeon in Erebor end (Kolba)	  
+
+      #Enter Dwarven Warehouse (Kham)
+	("dwarven_warehouse",[(eq,1,0)],
+	"Visit the Dwarven Warehouse",[
+							(set_jump_mission,"mt_tld_dwarven_warehouse"),
+							(set_passage_menu, "mnu_town"),
+							(jump_to_scene,"scn_battlefield5"),
+							(change_screen_mission),
+		],"Enter Dwarven Warehouse"),
+	#Enter Dwarven Warehouse End (Kham)
 		
 	("talk_to_castle_commander",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
 	   	  (eq,"$entry_to_town_forbidden",0), 

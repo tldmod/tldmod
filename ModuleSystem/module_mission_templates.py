@@ -2171,6 +2171,25 @@ mission_templates = [ # not used in game
 		(position_move_z, pos1, -70),
 		(prop_instance_animate_to_position, ":instance", pos1)]),
 ]),
+
+
+
+# Spears Quest - Dwarven Warehouse (Kham)
+
+( "tld_dwarven_warehouse",0,-1,"Default town visit",
+    [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,() ),],tld_common_wb_muddy_water+[
+	(0, 2, ti_once,  [],
+        [
+          (quest_slot_eq,"qst_find_lost_spears",slot_quest_current_state, 10),
+          (quest_set_slot,"qst_find_lost_spears",slot_quest_current_state, 15),
+          (str_store_troop_name, s3, "trp_dwarf_lord"),
+		  (display_message, "@You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}",color_good_news),
+      ]),
+	(ti_tab_pressed, 0, 0, [], [(question_box,"@Leave the Warehouse?")]),
+	(ti_question_answered, 0, 0, [], [(store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)])
+	]),
+
+# Spears Quest - Dwarven Warehouse - End
 ( "aw_tomb",0,-1,
   "silence...",
     [(0,mtef_scene_source|mtef_team_0,af_override_horse|af_override_weapons|af_override_head,0,1,() ),],
