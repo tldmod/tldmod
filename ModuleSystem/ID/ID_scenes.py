@@ -258,3 +258,4 @@ scn_underground_warehouse = 256
 scn_amath_dollen_fortress = 257
 scn_mirkwood_ambush = 258
 scn_mountain_ambush = 259
+scn_lair_forest_bandits = 260

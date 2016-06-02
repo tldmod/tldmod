@@ -1066,6 +1066,75 @@ mission_templates = [ # not used in game
 	custom_battle_check_defeat_condition,
 ]),
 
+
+### Kham - Ring Hunters - Start
+ (	"bandit_lair",mtf_battle_mode|mtf_synch_inventory,charge,
+    "Ambushing a bandit lair",
+    [
+      (0,mtef_team_0|mtef_use_exact_number,af_override_horse, aif_start_alarmed, 8,[]),
+      (1,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (2,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (3,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (4,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (5,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (6,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (7,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (8,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (9,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+      (10,mtef_visitor_source|mtef_team_1,af_override_horse, aif_start_alarmed,2,[]),
+ 	],
+	 tld_common_wb_muddy_water +[
+	
+	(1, 60, ti_once, 
+	[
+		(store_mission_timer_a,reg(1)),
+		(ge,reg(1),10),
+		(all_enemies_defeated),
+		(set_mission_result,1),
+		(display_message,"str_msg_battle_won"),
+		(assign,"$battle_won",1),
+		(assign, "$g_battle_result", 1),
+		(call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+	],
+	[
+		(finish_mission, 1),
+	]),
+	
+	common_inventory_not_available, 
+	common_music_situation_update,
+	common_battle_check_friendly_kills,
+	common_battle_check_victory_condition,
+	common_battle_victory_display,
+
+	(ti_tab_pressed,0,0,[],
+	[
+		(try_begin),
+			(eq, "$battle_won", 1),
+			(jump_to_menu, "mnu_ring_hunter_lair_destroyed"),
+			(finish_mission),
+      	(else_try),
+      		(eq, "$battle_won", 0),
+      		(display_message,"str_can_not_retreat"),
+		(else_try),	
+			(main_hero_fallen),
+			(jump_to_menu, "mnu_recover_after_death_default"),
+			(call_script,"script_fail_quest","qst_ring_hunters"),
+			(faction_get_slot,":loss","fac_beorn",slot_faction_strength_tmp),
+			(val_sub, ":loss", 50),
+			(display_message,"@You receive word that Beorning villages were attacked. Beornings lose faction strength",color_bad_news),
+			(faction_get_slot,":evil","fac_mordor",slot_faction_strength_tmp),
+			(val_add, ":evil", 30),
+			(display_message,"@You receive word that the Ring Hunter Leaders were seen travelling towards Mordor, a chest in tow. Mordor gains faction strength.",color_bad_news),
+			(faction_set_slot,"fac_beorn",slot_faction_strength_tmp,":loss"),
+			(faction_set_slot,"fac_mordor",slot_faction_strength_tmp,":evil"),
+			(finish_mission),
+		(try_end),
+	]),
+]),
+
+#kham - Ring Hunters - End
+
+
 ( "castle_attack_walls_defenders_sally",mtf_battle_mode,-1,
   "You attack the walls of the castle...",
     [(0,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),

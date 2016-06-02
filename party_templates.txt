@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-247
+250
 pt_none none 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 74 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -247,3 +247,6 @@ pt_legion_minas_morgul Legion_of_Minas_Morgul 844424930132049 0 6 238 419 1 1 0 
 pt_legion_udun Legion_of_Udun 844424930132049 0 6 238 419 1 1 0 363 20 30 0 370 30 45 0 349 30 45 0 360 30 90 0 354 10 10 0 
 pt_legion_gorgoroth Legion_of_Gorgoroth 844424930132049 0 6 238 419 1 1 0 403 30 30 0 354 10 10 0 362 30 50 0 360 40 90 0 369 20 40 0 
 pt_legion_barad_dur Legion_of_Barad-Dur 844424930132049 0 6 238 419 1 1 0 418 5 5 0 350 60 60 0 361 90 90 0 370 60 60 0 354 15 15 0 
+pt_beorn_messenger Beorning_Messenger 281474980905036 0 20 183 45 1 1 0 -1 -1 -1 -1 -1 
+pt_village Village 2376839 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
+pt_ring_hunters Ring_Hunters 562949953683555 0 1 494 896 1 1 0 898 10 15 0 285 10 15 0 900 12 20 0 901 20 35 0 899 15 30 0 

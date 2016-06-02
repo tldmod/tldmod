@@ -245,3 +245,6 @@ pt_legion_minas_morgul = 243
 pt_legion_udun = 244
 pt_legion_gorgoroth = 245
 pt_legion_barad_dur = 246
+pt_beorn_messenger = 247
+pt_village = 248
+pt_ring_hunters = 249

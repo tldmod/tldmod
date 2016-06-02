@@ -257,6 +257,11 @@ parties = [
   ("gunda_woodelves","gunda_woodelves_sp",pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
   ("gunda_dwarves"  ,"gunda_dwarves_sp"  ,pf_disabled|pf_is_static, no_menu, pt_none, fac_outlaws,0,ai_bhvr_hold,0,(-7.312775,-4.991470),[(trp_looter,15,0)]),
  
+
+ ## Ring Hunters Addition - Kham
+  ("ring_hunter_lair","Ring_Hunters_Lair",  icon_nomadcamp|pf_disabled|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_neutral,0,ai_bhvr_hold,0,(-30.04,-129.54),[],170),
+
+
  # add extra towns before this point 
   ("spawn_points_end","last_spawn_point",pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(-7.746731,1.880096),[(trp_looter,15,0)]),
  # pointers for scripting purposes

@@ -4078,6 +4078,9 @@ game_menus = [
     (else_try),
       (is_between, "$g_encountered_party_template", "pt_wild_troll", "pt_looters"),
       (set_background_mesh, "mesh_draw_wild_troll"),
+    (else_try),
+    	(eq, "$g_encountered_party_template", "pt_ring_hunters"),
+    	(set_background_mesh, "mesh_draw_victory_evilman"),
     (try_end),
 		
 		
@@ -4090,9 +4093,11 @@ game_menus = [
     ],
 	
     [
+       # For unfriendly enemies (e.g bandits, trolls, quest parties)
       ("encounter_attack",[
-          (this_or_next|eq, "$encountered_party_friendly", 0),
-		  (is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
+          (this_or_next|eq, 		"$encountered_party_friendly", 0),
+		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
+		  (				eq, 		"$g_encountered_party_template", "pt_ring_hunters"),
           # (neg|troop_is_wounded, "trp_player"), a test: what happes if I let player partecipate?
 ##          (store_troop_health,reg(5)),
 ##          (ge,reg(5),5),
@@ -4979,7 +4984,19 @@ game_menus = [
               (call_script, "script_abort_quest", "qst_escort_messenger", 1),
               #(call_script, "script_change_player_honor", -5),
             (try_end),
-            
+              ##Kham - Ring Hunters Quest - Messenger Start
+           	(try_begin),
+          		(check_quest_active, "qst_ring_hunters"),(quest_slot_eq,"qst_ring_hunters",slot_quest_current_state,14),
+          		(eq,"$qst_ring_hunter_party","$g_enemy_party"),
+          		(disable_party,"p_ring_hunter_lair"),                  
+      			(quest_set_slot, "qst_ring_hunters", slot_quest_current_state, 15),
+      			(set_spawn_radius,1),
+      			(spawn_around_party, "p_main_party", "pt_beorn_messenger"),
+      			(assign,":beorn_m",reg0),
+      			(party_set_ai_behavior, ":beorn_m", ai_bhvr_attack_party),
+    			(party_set_ai_object, ":beorn_m", "p_main_party"),
+           	(try_end),
+          	###Kham - Ring Hunters Quest - Messenger End
             # kill troll quest
             (try_begin),
               (check_quest_active, "qst_kill_troll"),
@@ -7731,6 +7748,49 @@ game_menus = [
      ("leave",[],"Leave.",[(change_screen_return)]),
     ]
  ),
+
+##Ring Hunters - Bandit Lair - Start (Kham)
+
+("ring_hunter_lair",0,
+    "^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.",
+    "none",
+    [(set_background_mesh, "mesh_town_evilcamp"), 
+     (str_store_party_name, s1, "$g_encountered_party")],
+    [("attack_lair",[],"Attack them now",
+       [(set_jump_mission, "mt_bandit_lair"),
+        (try_begin),
+			(eq, "$g_encountered_party", "p_ring_hunter_lair"),
+			(assign, ":lp_scene", "scn_lair_forest_bandits"),
+			#(assign, "$bs_night_sound", "snd_night_ambiance"),
+		(try_end),
+		(modify_visitors_at_site,":lp_scene"),
+        (reset_visitors),
+        (set_visitor, 0, "trp_player"),
+        (set_visitor, 1, "trp_ring_hunter_lt"),
+        (set_visitors, 2, "trp_ring_hunter_one",2),
+        (set_visitors, 3, "trp_ring_hunter_one",2),
+        (set_visitors, 4, "trp_ring_hunter_two",2),
+        (set_visitors, 5, "trp_ring_hunter_two",2),
+        (set_visitors, 6, "trp_ring_hunter_three",3),
+        (set_visitors, 7, "trp_ring_hunter_three",2),
+        (set_visitors, 8, "trp_ring_hunter_four",3),
+        (set_visitors, 9, "trp_ring_hunter_four",2),
+        (jump_to_menu, "mnu_ring_hunter_lair"),
+        (jump_to_scene,":lp_scene"),
+        (change_screen_mission),
+       ]),
+     ("leave_bandit_lair",[],"Leave for now.",[(change_screen_return)]),
+	]
+),
+
+( "ring_hunter_lair_destroyed",0,"null","none",
+    [(call_script, "script_setup_troop_meeting","trp_ring_hunter_lt", 255),
+     #(encounter_attack),
+    # (change_screen_return),
+	],[]
+ ),
+
+###Ring Hunters - Bandit Lair - End
 
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations

@@ -2005,6 +2005,7 @@ scripts = [
 		 (else_try),(eq, "$g_encountered_party", "p_camp_bandits"   ),(jump_to_menu, "mnu_camp"),
 		 (else_try),(eq, "$g_encountered_party", "p_ancient_ruins"  ),(jump_to_menu, "mnu_ancient_ruins"), #TLD sorcerer
 		 (else_try),(eq, "$g_encountered_party_template", "pt_ruins"),(jump_to_menu, "mnu_ruins"), #TLD ruins
+		 (else_try),(eq, "$g_encountered_party", "p_ring_hunter_lair"),(jump_to_menu, "mnu_ring_hunter_lair"), ## TLD Ring Hunters Quest - Lair (kham)
 		 (else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
 		 (else_try),(eq, "$g_encountered_party_template", "pt_mound"),(jump_to_menu, "mnu_burial_mound"), #TLD 808
 		 (else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808

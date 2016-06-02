@@ -351,6 +351,9 @@ scenes = [
 ("mirkwood_ambush"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("mountain_ambush" ,sf_generate|sf_randomize,"none","none",(0,0),( 90, 90),-0.5,"0x000000012c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 
+##Kham Quest Scenes
+
+("lair_forest_bandits",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b00326d90003ecfb0000657e0000213500002461",  [],[],"outer_terrain_plain"), #Ring Hunters Lair
 
 ]
 

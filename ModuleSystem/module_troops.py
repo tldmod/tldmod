@@ -3149,6 +3149,34 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["dorwinion_sack","Dorwinion_Sack","bug",tf_hero|tfg_helm|tf_inactive|tf_is_merchant,0,0,fac_neutral,   [itm_cram,itm_metal_scraps_good,itm_metal_scraps_good,itm_metal_scraps_good, itm_rhun_helm_c],      def_attrib,0,knows_inventory_management_10,0],
 #end Kham Spears quest
 
+#kham Ring Hunters Start ####
+
+["ring_hunter_captain","Ring_Hunter_Captain","bug",tf_evil_man|tf_hero| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
+   [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_black_num_armor,itm_black_num_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
+      attr_tier_6,wp_tier_5,knows_common|knows_leadership_10|knows_tactics_1|knows_athletics_8|knows_shield_7|knows_power_strike_7|knows_ironflesh_7,mordor_man1,mordor_man2],
+
+["ring_hunter_lt","Ring_Hunter_Captain","bug",tf_evil_man| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
+   [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_black_num_armor,itm_black_num_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
+      attr_tier_6,wp_tier_5,knows_common|knows_leadership_10|knows_tactics_1|knows_athletics_8|knows_shield_7|knows_power_strike_7|knows_ironflesh_7,mordor_man1,mordor_man2],
+
+
+["ring_hunter_one","Ring_Hunter","Ring_Hunters",tf_harad| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_harad,
+   [itm_harad_scale_greaves,itm_leather_gloves,itm_harad_lion_scale,itm_lion_helm,itm_harad_heavy_sword,itm_harad_khopesh,itm_harad_long_shield_b,],
+      attr_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_strike_5|knows_ironflesh_6,haradrim_face_1,haradrim_face_2],
+
+["ring_hunter_two","Ring_Hunter","Ring_Hunters",tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_umbar,
+   [itm_corsair_boots,itm_umb_armor_d,itm_umb_helm_d,itm_umb_helm_c,itm_corsair_bow,itm_corsair_arrows,itm_corsair_sword,],
+      attr_tier_5,wp_tier_5,knows_common|knows_athletics_5|knows_power_draw_3|knows_power_strike_4|knows_ironflesh_4,bandit_face1,bandit_face2],
+
+["ring_hunter_three","Ring_Hunter","Ring_Hunters",tf_urukhai|tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
+   [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_isengard_axe,itm_isen_uruk_shield_b,itm_isengard_hammer,itm_isengard_mallet,itm_isengard_heavy_sword,],
+      attr_tier_5,wp_tier_5,knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,uruk_hai_face1,uruk_hai_face2],
+["ring_hunter_four","Ring_Hunter","Ring_Hunters",tf_orc| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+   [itm_orc_greaves,itm_evil_gauntlets_b,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,],
+      attr_orc_tier_4,wp_orc_tier_4,knows_athletics_4|knows_power_draw_4|knows_power_strike_2,orc_face7,orc_face6],
+### Kham Ring Hunters End ###
+
+
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 

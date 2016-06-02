@@ -383,4 +383,13 @@ party_templates = [
 ("legion_gorgoroth","Legion_of_Gorgoroth",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_black_numenorean_horsemaster,30,30),(trp_olog_hai,10,10),(trp_warg_rider_of_gorgoroth,30,50),(trp_large_orc_of_mordor,40,90),(trp_large_orc_archer_of_mordor,20,40)]),
 ("legion_barad_dur","Legion_of_Barad-Dur",icon_uruk_x4|carries_goods(3), 0, fac_mordor, soldier_personality,[(trp_high_captain_of_mordor,1,1),(trp_captain_of_mordor,5,5),(trp_black_uruk_of_barad_dur,60,60),(trp_fell_orc_of_mordor,90,90),(trp_fell_orc_archer_of_mordor,60,60),(trp_olog_hai,15,15)]),
 
+##Kham Quests ####
+##Kham  Ring Hunters Start ####
+("beorn_messenger"    ,"Beorning Messenger"      ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_beorning_carrock_berserker,1,1)]), 
+("village","Village",icon_village_a| pf_quest_party| pf_hide_defenders|pf_is_static|pf_always_visible,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
+("ring_hunters","Ring_Hunters",icon_harad_horseman|carries_goods(2)| pf_quest_party | ai_bhvr_hold  ,0,fac_commoners  ,bandit_personality,[(trp_ring_hunter_captain,1,1),(trp_ring_hunter_one,10,15),(trp_easterling_horsemaster,10,15),(trp_ring_hunter_three,12,20),(trp_ring_hunter_four,20,35),(trp_ring_hunter_two,15,30)]),
+
+## Kham Ring Hunters End ####
+
+
 ]

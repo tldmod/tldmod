@@ -35,7 +35,9 @@ qst_tld_introduction = 33
 qst_treebeard_kill_orcs = 34
 qst_oath_of_vengeance = 35
 qst_deliver_gift = 36
-qst_quests_end = 37
+qst_ring_hunters = 37
+qst_ring_hunters2 = 38
+qst_quests_end = 39
 qsttag_deliver_message = 504403158265495552
 qsttag_deliver_message_to_enemy_lord = 504403158265495553
 qsttag_raise_troops = 504403158265495554
@@ -73,6 +75,8 @@ qsttag_tld_introduction = 504403158265495585
 qsttag_treebeard_kill_orcs = 504403158265495586
 qsttag_oath_of_vengeance = 504403158265495587
 qsttag_deliver_gift = 504403158265495588
-qsttag_quests_end = 504403158265495589
+qsttag_ring_hunters = 504403158265495589
+qsttag_ring_hunters2 = 504403158265495590
+qsttag_quests_end = 504403158265495591
 
 

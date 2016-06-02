@@ -3265,6 +3265,267 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 # [anyone|plyr,"lord_talk", [(eq, 1, 0),(le,"$talk_context", tc_party_encounter),(ge, "$g_talk_troop_faction_relation", 0)],
    # "I have an offer for you.", "lord_talk_preoffer",[]],
+
+
+###Kham Quest -- Ring Hunters --- Either Dwarf_Lord or imladris_lord #####
+
+[anyone|plyr,"lord_talk",[
+ (this_or_next|eq, "$g_talk_troop","trp_dwarf_lord"),
+ (eq, "$g_talk_troop","trp_imladris_lord"), 
+ (ge, "$g_talk_troop_relation", 1),
+ (neg|check_quest_finished, "qst_ring_hunters"),
+ (neg|quest_slot_ge,"qst_ring_hunters",slot_quest_current_state,10),
+ (store_character_level, ":playerlvl", "trp_player"),
+ (ge, ":playerlvl",1),],
+  "My lord, I am prepared to take more arduous tasks to serve you better and end this war. What would you have me do?",
+  "ring_hunters_start", []],
+
+[anyone,"ring_hunters_start",
+[],
+  "{playername}, I have heard of your exploits and you have made a name for yourself. I have a task specifically for such as yourself. You can deal with it however you wish.\
+  Bloodshed cannot be avoided, especially against this group I am about to send you of to. Do you have sufficient men?","ring_hunters_check",[]],
+
+[anyone|plyr,"ring_hunters_check",[
+  (party_get_num_companions, ":party_size", "p_main_party"),(ge, ":party_size", 30),],
+  "Yes, my lord. I have a group of well-trained, battlehardened men. We are ready for anything.","ring_hunters_1",
+  []],
+
+[anyone|plyr,"ring_hunters_check",
+[],
+  "I am afraid not, my lord.", "ring_hunters_check_failed",[]],
+
+[anyone,"ring_hunters_check_failed",
+[],
+  "Then you are not ready for this task yet,{playername}. Go and gather more troops.","lord_pretalk",
+  [(display_message, "@You need to have a party of at least 30 strong to begin this quest", color_neutral_news),]],
+ 
+
+[anyone, "ring_hunters_1",
+  [],
+  "Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind\
+   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.\
+   One with their loot moving towards Mirkwood Forest. The other, a considerable size, towards Beorn's House, perhaps to continue their destructive search.","ring_hunters_2",
+  []],
+
+[anyone|plyr,"ring_hunters_2",
+[],
+  "My lord, what could they be searching for?", "ring_hunters_what",
+[]],
+
+[anyone|plyr,"ring_hunters_2",
+[],
+  "My lord, I will do what is necessary to stop these... 'Ring Hunters'", "ring_hunters_accept",
+[]],
+
+[anyone|plyr,"ring_hunters_2",
+[],
+  "I am not ready for such a task just yet.","ring_hunters_reject",
+[]],
+
+[anyone,"ring_hunters_accept", ### Spawns Ring Hunter party near Beorn's House & Spawns Bandit Hideout near Mirkwood Forest
+[],
+  "You are brave, General. We will await news of your success","close_window",[
+  (quest_set_slot,"qst_ring_hunters",slot_quest_target_troop,"$g_talk_troop"),
+  (setup_quest_text, "qst_ring_hunters"),
+  (str_store_string, s2, "@You were tasked to hunt down the bandits that have been recently wreaking havoc in the North. You can either attack them in their hideout near Mirkwood Forest or intercept them near Beorn's House."),
+  (call_script, "script_start_quest", "qst_ring_hunters", "$g_talk_troop"),
+  (quest_set_slot, "qst_ring_hunters", slot_quest_current_state, 10),
+  (enable_party,"p_ring_hunter_lair"),
+  (set_spawn_radius, 5),(spawn_around_party, "p_town_beorn_house", "pt_ring_hunters"),
+  (assign,"$qst_ring_hunter_party",reg0),
+  (assign,"$qst_ring_hunter_lord","$g_talk_troop"),
+]],
+
+
+[anyone,"ring_hunters_reject",
+[],
+  "I see. Let me know when you are, but make haste, we do not want them to succeed.","lord_pretalk",
+[]],
+
+[anyone,"ring_hunters_what",  ### Elf Lord Question
+  [(eq,"$g_talk_troop","trp_imladris_lord"),],
+  "It is hard to know exactly what they want with this, but we can see that they are going through great lengths to find what they are looking for.\
+   All we can surmise is that this must be a powerful weapon of sorts, a weapon to be used to cause more destruction under the Dark Lord's name.",
+   "ring_hunters_2",
+   []],
+
+[anyone,"ring_hunters_what",  ### Dwarf Lord Question
+  [(eq,"$g_talk_troop","trp_dwarf_lord"),],
+  "The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for these..\
+   Whether true or not, these must not fall into the Dark Lord's hands.",
+   "ring_hunters_2",
+   []],
+
+
+[anyone|plyr,"lord_talk",[    ### Ring Hunter Quest Completion - Party Defeated.
+ (this_or_next|eq, "$g_talk_troop","trp_dwarf_lord"),
+ (eq, "$g_talk_troop","trp_imladris_lord"), 
+ (check_quest_active,"qst_ring_hunters2"),
+ (quest_slot_eq, "qst_ring_hunters2", slot_quest_current_state, 10)],
+  "My lord, I come bearing ill news.. Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for", "ring_hunter_party_defeated",
+ []],
+
+[anyone,"ring_hunter_party_defeated",
+  [],
+    "This is not ill news,{playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.\
+     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something.. a disturbance.", "ring_hunter_party_defeated2",
+    []],
+
+[anyone|plyr,"ring_hunter_party_defeated2",
+  [],
+    "I am glad, then. Whatever this weapon may have been... they may still be looking for it. I will remain vigilant and remain on the lookout for more of these Ring Hunters.", "ring_hunter_quest_end",
+    []],
+[anyone,"ring_hunter_quest_end",
+  [],
+    "We all will. Thank you once more for your service, {playername}.","close_window",
+    [ (call_script,"script_increase_rank","$g_talk_troop_faction",20),
+      (add_xp_as_reward,500),
+      (call_script,"script_end_quest","qst_ring_hunters2"),
+      (faction_get_slot,":evil","fac_mordor",slot_faction_strength_tmp), 
+      (val_add, ":evil", 30),
+      (display_message,"@Mordor Gains Faction Strength as they received an unknown weapon",color_bad_news),
+      (faction_get_slot,":win","fac_beorn",slot_faction_strength_tmp),
+      (val_add, ":win", 150),
+      (display_message,"@Beornings gain Faction Strength as news of your victory spreads.",color_good_news),
+      (faction_set_slot,"fac_beorn",slot_faction_strength_tmp,":win"),
+      (faction_set_slot,"fac_mordor",slot_faction_strength_tmp,":evil"),
+      ]],
+
+
+
+[anyone|plyr,"lord_talk",[    ### Ring Hunter Quest Completion - Lair Defeated.
+ (this_or_next|eq, "$g_talk_troop","trp_dwarf_lord"),
+ (eq, "$g_talk_troop","trp_imladris_lord"), 
+ (check_quest_active,"qst_ring_hunters2"),
+ (quest_slot_eq, "qst_ring_hunters2", slot_quest_current_state, 20)],
+  "My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. I also came across this", "ring_hunter_lair_defeated_elf",
+ []],
+
+[anyone,"ring_hunter_lair_defeated_elf",
+[],
+  "This is a minor ring of power.", "ring_hunter_lair_defeated",
+  []],
+
+[anyone|plyr,"ring_hunter_lair_defeated",
+  [],
+  "Then we have prevented the Dark Lord from obtaining this, which he will undoubtly use to end more lives.","ring_hunter_lair_defeated2",
+  []],
+
+[anyone,"ring_hunter_lair_defeated2",
+  [],
+    "You must keep this ring and use against the Dark Lord's forces. We know you will use it well.", "ring_hunter_lair_quest_end",
+  []],
+
+[anyone|plyr,"ring_hunter_lair_quest_end",
+  [],
+    "This is a tremendous honour, my Lord. Thank you. I shall continue the battle against the Dark lord, and this will help tremendously.","close_window",
+    [ (call_script,"script_increase_rank","$g_talk_troop_faction",20),
+      (str_store_faction_name, s14, "$g_talk_troop_faction"),
+      (add_xp_as_reward,500),
+      (call_script,"script_end_quest","qst_ring_hunters2"),
+      (faction_get_slot,":loss","fac_beorn",slot_faction_strength_tmp),
+      (val_sub, ":loss", 50),
+      (display_message,"@Beornings loses Faction strength when they were attacked.",color_bad_news),
+      (faction_get_slot,":win","$g_talk_troop_faction",slot_faction_strength_tmp),
+      (val_add, ":win", 150),
+      (display_message,"@ {s14} gains faction strength as news of the Ring of Power spreads.",color_good_news),
+      (faction_set_slot,"fac_beorn",slot_faction_strength_tmp,":loss"),
+      (faction_set_slot,"$g_talk_troop_faction",slot_faction_strength_tmp,":win"),
+    ]],
+
+      
+      
+
+
+##Ring Hunter Party Combat
+[anyone,"start",
+  [(check_quest_active, "qst_ring_hunters"),
+   (eq,"$g_encountered_party","$qst_ring_hunter_party"),
+  ],
+    "Look here, men. Another group to slaughter.","ring_hunters_party_attack",
+  []],
+[anyone|plyr,"ring_hunters_party_attack",
+  [],
+    "Your rampaging has come to an end.","ring_hunters_party_attack_2",
+  []],
+
+[anyone,"ring_hunters_party_attack_2",
+  [],
+    "Everyone, make sure you search their packs and their fingers. Save one to torture. Everything else you can eat.","close_window",
+  [
+   (quest_set_slot,"qst_ring_hunters",slot_quest_current_state,14),
+   (encounter_attack),
+   ]], 
+
+
+## Ring Hunter Lair Party Defeat
+[trp_ring_hunter_lt,"start",
+  [],
+    "That ring belongs to the Dark Lord! You can not have it!", "ring_hunter_lair_defeat",
+  []],
+
+[anyone|plyr,"ring_hunter_lair_defeat",
+  [],
+    "This belongs to me now.","ring_hunter_lair_defeat2",
+  [ (store_random_in_range, ":ring", 1, 3),
+    (try_begin),
+      (eq,":ring",1),
+      (troop_add_item,"trp_player","itm_ring_a_reward"),
+    (else_try),
+      (troop_add_item,"trp_player","itm_ring_b_reward"),
+    (end_try)]
+  ],
+
+[anyone,"ring_hunter_lair_defeat2",
+  [],
+    "This defeat does not matter... our war party raged on! You are too late to save them!","close_window",
+  [   (call_script,"script_end_quest","qst_ring_hunters"),
+      (setup_quest_text, "qst_ring_hunters2"),
+      (str_store_string, s2, "@You must return and report back that you have defeated the Ring Hunter leaders and have taken a magical ring."),
+      (call_script,"script_start_quest","qst_ring_hunters2","$qst_ring_hunter_lord"),
+      (quest_set_slot,"qst_ring_hunters2",slot_quest_current_state,20),
+      (call_script,"script_stand_back"),
+      (disable_party,"p_ring_hunter_lair"),
+      (remove_party,"$qst_ring_hunter_party"),
+      (assign, "$g_leave_encounter",1),
+      (change_screen_return),
+      ]],
+
+[party_tpl|pt_beorn_messenger,"start",
+  [(str_store_troop_name,s1,"$qst_ring_hunter_lord")],
+    "General, we received a message from {s1} that a large bandit party was headed our way! We had no time to gather enough forces, and when we heard the sound of battle, we prepared for the worse!","beorn_message",
+    []],
+[anyone|plyr,"beorn_message",
+  [],
+    "That was no ordinary bandit party. They were a collection of the Dark Lord's best...however, their leaders were not here...They have a lair near Mirkwood Forest and I must make haste.","beorn_message2",
+  []],
+[anyone,"beorn_message2",
+  [],
+    "Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory","beorn_message_end",
+    []],
+
+[anyone|plyr,"beorn_message_end",
+  [],
+    "Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.","beorn_message_close",
+    []],
+[anyone,"beorn_message_close",
+  [],
+    "Yes, General. We will remain vigilant. We will continue our efforts to recruit more men from surrounding villages. Your victory today has inspired us all.","close_window",     
+  [(store_encountered_party, ":beorn_m"),
+   (call_script,"script_stand_back"),
+   (call_script,"script_increase_rank","$g_talk_troop_faction",55),
+   (call_script,"script_end_quest","qst_ring_hunters"),
+   (setup_quest_text, "qst_ring_hunters2"),
+   (str_store_string, s2, "@You must return and report back that you have defeated the Ring Hunter party, but the leaders may have acquired what they were looking for."),
+   (call_script,"script_start_quest","qst_ring_hunters2","$qst_ring_hunter_lord"),
+   (quest_set_slot,"qst_ring_hunters2",slot_quest_current_state,10),
+   (assign,"$g_leave_encounter",1),
+   (change_screen_map),
+   (remove_party,":beorn_m"),
+  ]],
+
+#### Kham Ring Hunters End  ###########
+
   
 [anyone|plyr,"lord_talk", [(eq,"$encountered_party_hostile",0),
                              (eq,"$talk_context", tc_party_encounter), #works only on map: lords in towns get reinforced anyway
