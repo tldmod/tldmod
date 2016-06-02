@@ -2191,3 +2191,18 @@ tld_gifts_per_faction			= 5
 tld_cursor_undefined			= -1
 tld_cursor_arrow_mode			= -2
 tld_cursor_time				= 20
+
+
+##### Kham Constant Additions ######
+
+## More Town Walkers Additions
+isengard_mordor_centers_begin = p_town_morannon
+isengard_mordor_centers_end = p_town_caras_galadhon
+
+moria_centers_begin = p_town_moria
+moria_centers_end = p_town_dale
+
+gundabad_centers_begin = p_town_gundabad
+gundabad_centers_end = p_town_erebor
+## More Town Walkers Additions End
+
