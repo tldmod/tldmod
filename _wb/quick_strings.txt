@@ -1,4 +1,4 @@
-1131
+1145
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -76,6 +76,19 @@ qstr_Thighs Thighs
 qstr_Legs Legs
 qstr_Rotate Rotate
 qstr_Rotation={reg0} Rotation={reg0}
+qstr_<N/A> <N/A>
+qstr_Close Close
+qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
+qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
+qstr_Attributes Attributes
+qstr_STR^AGI^INT^CHA STR^AGI^INT^CHA
+qstr_{reg2} {reg2}
+qstr_{s1}^{reg2} {s1}^{reg2}
+qstr_Skills Skills
+qstr_Ironflesh^Power_Stri Ironflesh^Power_Strike^Power_Throw^Power_Draw^Shield^Athletics^Riding^Horse_Archery
+qstr_Proficiencies Proficiencies
+qstr_1H_Weapons^2H_Weapon 1H_Weapons^2H_Weapons^Polearms^Archery^Crossbows^Throwing
+qstr_Equipments Equipments
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -522,6 +535,7 @@ qstr_Your_troops_flee_in_ Your_troops_flee_in_terror!
 qstr_Many_of_your_troops_ Many_of_your_troops_are_fleeing_from_battle.
 qstr_Some_of_your_troops_ Some_of_your_troops_are_fleeing_from_battle.
 qstr_A_few_of_your_troops A_few_of_your_troops_are_fleeing_from_battle.
+qstr_{s1} {s1}
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!

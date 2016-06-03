@@ -665,3 +665,7 @@ tld_option_influence_gain_rate
 tld_option_rank_gain_rate
 qst_ring_hunter_party
 qst_ring_hunter_lord
+g_cur_slot_no
+g_current_opened_item_details
+g_selected_troop
+g_selected_page

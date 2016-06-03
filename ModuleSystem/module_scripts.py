@@ -17,8 +17,10 @@ from module_troops import *
 from module_scripts_ai import *
 from module_scripts_form import *
 from module_scripts_morale import *
+from header_presentations import *
 
 from module_info import wb_compile_switch as is_a_wb_script
+
 
 ####################################################################################################################
 # scripts is a list of script records.
@@ -20207,6 +20209,164 @@ if is_a_wb_script==1:
       (party_get_morale,   reg0, "p_main_party"),
       (set_trigger_result, reg0),
     ]),
+
+ ##Troop Presentation - rubik source - kham implement
+   ("troop_tree_recursive_backtracking", 
+    [
+      (store_script_param, ":troop_no", 1),
+      (store_script_param, ":cur_x", 2),
+      (store_script_param, ":cur_y", 3),
+      (store_script_param, ":offset_x", 4),
+      
+      (store_add, ":next_x", ":cur_x", ":offset_x"),
+      # upgrade_troop
+      (troop_get_upgrade_troop, ":upgrade_troop_1", ":troop_no", 0),
+      (troop_get_upgrade_troop, ":upgrade_troop_2", ":troop_no", 1),
+      (try_begin),
+        (gt,  ":upgrade_troop_2", 0),
+        (call_script, "script_troop_tree_recursive_backtracking", ":upgrade_troop_2", ":next_x", reg2, ":offset_x"),
+        (assign, ":upgrade_troop_2_y", reg0),
+        (val_add, reg2, 160), # current global y
+        (call_script, "script_troop_tree_recursive_backtracking", ":upgrade_troop_1", ":next_x", reg2, ":offset_x"),
+        (assign, ":upgrade_troop_1_y", reg0),
+      (else_try),
+        (gt,  ":upgrade_troop_1", 0),
+        (call_script, "script_troop_tree_recursive_backtracking", ":upgrade_troop_1", ":next_x", reg2, ":offset_x"),
+        (assign, ":upgrade_troop_1_y", reg0),
+      (try_end),
+      
+      # troop_tree_line
+      (try_begin),
+        (gt,  ":upgrade_troop_2", 0),
+        (store_add, reg0, ":upgrade_troop_1_y", ":upgrade_troop_2_y"),
+        (val_div, reg0, 2),
+        #               ---- upgrade_troop_1
+        #              |
+        # troop_no ----
+        #              |
+        #               ---- upgrade_troop_2
+        (store_div, ":half_offset_x", ":offset_x", 2),
+        (store_add, ":middle_x", ":cur_x", ":half_offset_x"),
+        (call_script, "script_prsnt_line", ":half_offset_x", 4, ":cur_x", reg0, 0),
+        (call_script, "script_prsnt_line", ":half_offset_x", 4, ":middle_x", ":upgrade_troop_1_y", 0),
+        (call_script, "script_prsnt_line", ":half_offset_x", 4, ":middle_x", ":upgrade_troop_2_y", 0),
+        (store_sub, ":size_y", ":upgrade_troop_1_y", ":upgrade_troop_2_y"),
+        (val_add, ":size_y", 4),
+        (call_script, "script_prsnt_line", 4, ":size_y", ":middle_x", ":upgrade_troop_2_y", 0),
+      (else_try),
+        (gt,  ":upgrade_troop_1", 0),
+        (assign, reg0, ":upgrade_troop_1_y"),
+        #
+        # troop_no -------- upgrade_troop_1
+        #
+        (call_script, "script_prsnt_line", ":offset_x", 4, ":cur_x", ":upgrade_troop_1_y", 0),
+      (else_try),
+        (assign, reg0, ":cur_y"),
+      (try_end),
+      
+      # troop name
+      (str_store_troop_name, s1, ":troop_no"),
+      (create_text_overlay, reg1, "@{s1}", tf_center_justify|tf_vertical_align_center|tf_double_space|tf_scrollable),
+      (store_sub, ":name_x", ":cur_x", 57),
+      (store_sub, ":name_y", reg0, 120),
+      (position_set_x, pos1, ":name_x"),
+      (position_set_y, pos1, ":name_y"),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, 100),
+      (position_set_y, pos1, 60),
+      (overlay_set_area_size, reg1, pos1),
+      (position_set_x, pos1, 640),
+      (position_set_y, pos1, 640),
+      (overlay_set_size, reg1, pos1),
+      
+      # troop avatar
+      (store_sub, ":avatar_x", ":cur_x", 60),
+      (store_sub, ":avatar_y", reg0, 60),
+      (store_mul, ":cur_troop", ":troop_no", 2), #with weapons
+      (create_image_button_overlay_with_tableau_material, reg1, -1, "tableau_game_party_window", ":cur_troop"),
+      (position_set_x, pos1, 360),
+      (position_set_y, pos1, 480),
+      (overlay_set_size, reg1, pos1),
+      (position_set_x, pos1, ":avatar_x"),
+      (position_set_y, pos1, ":avatar_y"),
+      (overlay_set_position, reg1, pos1),
+      
+      # troop info
+      (troop_set_slot, "trp_stack_selection_amounts", "$g_cur_slot_no", reg1),
+      (troop_set_slot, "trp_stack_selection_ids", "$g_cur_slot_no", ":troop_no"),
+      (val_add, "$g_cur_slot_no", 1),
+    ]),
+
+   # reg0: cur max_tier
+   ("troop_tree_recursive_detect_max_tier", 
+    [
+      (store_script_param, ":troop_no", 1),
+      (store_script_param, ":cur_tier", 2),
+      
+      (store_add, ":next_tier", ":cur_tier", 1),
+      # upgrade_troop
+      (troop_get_upgrade_troop, ":upgrade_troop_1", ":troop_no", 0),
+      (troop_get_upgrade_troop, ":upgrade_troop_2", ":troop_no", 1),
+      (try_begin),
+        (gt,  ":upgrade_troop_2", 0),
+        (call_script, "script_troop_tree_recursive_detect_max_tier", ":upgrade_troop_2", ":next_tier"),
+        (call_script, "script_troop_tree_recursive_detect_max_tier", ":upgrade_troop_1", ":next_tier"),
+      (else_try),
+        (gt,  ":upgrade_troop_1", 0),
+        (call_script, "script_troop_tree_recursive_detect_max_tier", ":upgrade_troop_1", ":next_tier"),
+      (try_end),
+      
+      (try_begin),
+        (gt, ":cur_tier", reg0),
+        (assign, reg0, ":cur_tier"),
+      (try_end),
+    ]),
+    
+  ("prsnt_line",
+    [
+      (store_script_param, ":size_x", 1),
+      (store_script_param, ":size_y", 2),
+      (store_script_param, ":pos_x", 3),
+      (store_script_param, ":pos_y", 4),
+      (store_script_param, ":color", 5),
+
+      (create_mesh_overlay, reg1, "mesh_white_plane"),
+      (val_mul, ":size_x", 50),
+      (val_mul, ":size_y", 50),
+      (position_set_x, pos0, ":size_x"),
+      (position_set_y, pos0, ":size_y"),
+      (overlay_set_size, reg1, pos0),
+      (position_set_x, pos0, ":pos_x"),
+      (position_set_y, pos0, ":pos_y"),
+      (overlay_set_position, reg1, pos0),
+      (overlay_set_color, reg1, ":color"),
+  ]),
+    
+  # script_get_page_no_of_troop_tree_for_troop_on
+  # Input: troop_no
+  # Output: page_no
+  ("get_page_no_of_troop_tree_for_troop_on",
+  [
+      (store_script_param, ":troop_no", 1),
+      
+      #(store_sub, ":num_factions", npc_kingdoms_end, npc_kingdoms_begin),
+      (store_troop_faction, ":troop_faction", ":troop_no"),
+      (try_begin),
+        (is_between, ":troop_faction", npc_kingdoms_begin, npc_kingdoms_end), 
+        (store_sub, ":page_no", ":troop_faction", npc_kingdoms_begin),
+      #(else_try),
+      #  (is_between, ":troop_no", soldiers_begin, mercenary_troops_end),
+      #  (store_add, ":page_no", ":num_factions", 0), # mercenary
+      #(else_try),
+      #  (eq, ":troop_faction", "fac_outlaws"),
+      #  (store_add, ":page_no", ":num_factions", 1), # Outlaws
+      #(else_try),
+      #  (store_add, ":page_no", ":num_factions", 2), # Others
+      (try_end),
+      (assign, reg0, ":page_no"),
+  ]),
+
+ ## troop presentation end 
   ]
 
 

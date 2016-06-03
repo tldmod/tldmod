@@ -2204,5 +2204,14 @@ moria_centers_end = p_town_dale
 
 gundabad_centers_begin = p_town_gundabad
 gundabad_centers_end = p_town_erebor
-## More Town Walkers Additions End
+## More Town Walkers Additions End ##
 
+##Troop Presentation Constants ##
+kingdoms_begin = "fac_gondor"
+kingdoms_end = "fac_kingdoms_end"
+
+npc_kingdoms_begin = "fac_gondor"
+npc_kingdoms_end = "fac_kingdoms_end"
+
+
+## Troop Presentation constants End ##

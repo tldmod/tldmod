@@ -352,5 +352,25 @@ mesh_draw_funeral_pyre = 350
 mesh_draw_mound_desecrated = 351
 mesh_draw_mound_visit = 352
 mesh_draw_troublesome_goblins = 353
+mesh_tp_victory_gondor = 354
+mesh_tp_victory_dwarf = 355
+mesh_tp_victory_rohan = 356
+mesh_tp_victory_evilman = 357
+mesh_tp_victory_uruk = 358
+mesh_tp_lorien_arrows = 359
+mesh_tp_victory_rivendell = 360
+mesh_tp_victory_mirkwood = 361
+mesh_tp_war_starts = 362
+mesh_tp_victory_harad = 363
+mesh_tp_victory_rhun = 364
+mesh_tp_victory_khand = 365
+mesh_tp_victory_corsairs = 366
+mesh_tp_victory_orc_orc = 367
+mesh_tp_tribal_orcs = 368
+mesh_tp_orc_raiders = 369
+mesh_tp_victory_dunland = 370
+mesh_tp_victory_beornings = 371
+mesh_mp_inventory_choose = 372
+mesh_inv_slot = 373
 
 

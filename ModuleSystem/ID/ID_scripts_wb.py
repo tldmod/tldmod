@@ -500,5 +500,9 @@ script_cf_shift_pos1_along_y_axis_to_ground = 498
 script_shift_pos1_along_y_axis_to_ground_aux = 499
 script_game_get_upgrade_cost = 500
 script_game_get_morale_of_troops_from_faction = 501
+script_troop_tree_recursive_backtracking = 502
+script_troop_tree_recursive_detect_max_tier = 503
+script_prsnt_line = 504
+script_get_page_no_of_troop_tree_for_troop_on = 505
 
 

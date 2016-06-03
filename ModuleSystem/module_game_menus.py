@@ -9,6 +9,7 @@ from header_terrain_types import *
 from module_constants import *
 
 from module_info import wb_compile_switch as is_a_wb_cutscene
+from module_info import wb_compile_switch as is_a_wb_menu
 
 ####################################################################################################################
 #  (menu-id, menu-flags, menu_text, mesh-name, [<operations>], [<options>]),
@@ -303,8 +304,22 @@ game_menus = [
     [ 
  ]+concatenate_scripts([[		
 	  ("cheat_faction_orders"  ,[(eq,"$cheat_mode",1)],"Cheat: Faction orders."   ,[(jump_to_menu, "mnu_faction_orders"   ),]),
- ] for ct in range(cheat_switch)])+[
-      ("view_upkeep_costs"     ,[                    ],"View upkeep costs."       ,[(jump_to_menu, "mnu_upkeep_report" ),]),
+ ] for ct in range(cheat_switch)])
+
+ 	 +
+ 	   ## Kham - Troop Trees
+	   ((is_a_wb_menu==1) and
+	   [
+	      ("action_view_troop_trees",[],"View troop trees.", [(start_presentation, "prsnt_faction_troop_trees"),]),
+	   ]
+	   or
+	   [
+	      # 1011: do nothing
+	   ])
+	   ## Troop Trees End
+	   +
+	 
+	 [("view_upkeep_costs"     ,[                    ],"View upkeep costs."       ,[(jump_to_menu, "mnu_upkeep_report" ),]),
       ("view_character_report" ,[                    ],"View character report."   ,[(jump_to_menu, "mnu_character_report" ),]),
       ("view_party_size_report",[                    ],"View party size report."  ,[(jump_to_menu, "mnu_party_size_report"),]),
       ("view_morale_report"    ,[                    ],"View party morale report.",[(jump_to_menu, "mnu_morale_report"    ),]),
