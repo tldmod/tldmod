@@ -11659,9 +11659,9 @@ scripts = [
 			(gt, ":walker_troop_id", 0),
 			(store_add, ":entry_no", town_walker_entries_start, ":walker_no"),
 			(try_begin), ## Kham Edit for more town walkers!
-				(this_or_next|is_between, "$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
-				(this_or_next|is_between, "$current_town", moria_centers_begin, moria_centers_end),
-				(is_between, "$current_town", gundabad_centers_begin, gundabad_centers_end),	
+				(this_or_next|is_between, 			"$current_town", isengard_mordor_centers_begin, isengard_mordor_centers_end),
+				(this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
+				(			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
 				(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
 			(else_try),
 				(set_visitors, ":entry_no", ":walker_troop_id",4),

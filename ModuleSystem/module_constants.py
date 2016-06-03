@@ -2197,21 +2197,21 @@ tld_cursor_time				= 20
 
 ## More Town Walkers Additions
 isengard_mordor_centers_begin = p_town_morannon
-isengard_mordor_centers_end = p_town_caras_galadhon
+isengard_mordor_centers_end = p_town_urukhai_r_camp + 1
 
 moria_centers_begin = p_town_moria
-moria_centers_end = p_town_dale
+moria_centers_end = p_town_troll_cave + 1
 
 gundabad_centers_begin = p_town_gundabad
-gundabad_centers_end = p_town_erebor
+gundabad_centers_end = p_town_gundabad_m_outpost + 1
 ## More Town Walkers Additions End ##
 
 ##Troop Presentation Constants ##
 kingdoms_begin = "fac_gondor"
 kingdoms_end = "fac_kingdoms_end"
 
-npc_kingdoms_begin = "fac_gondor"
-npc_kingdoms_end = "fac_kingdoms_end"
+npc_kingdoms_begin = kingdoms_begin
+npc_kingdoms_end = kingdoms_end
 
 
 ## Troop Presentation constants End ##
