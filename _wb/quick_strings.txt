@@ -1,4 +1,4 @@
-1145
+1148
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -536,6 +536,7 @@ qstr_Many_of_your_troops_ Many_of_your_troops_are_fleeing_from_battle.
 qstr_Some_of_your_troops_ Some_of_your_troops_are_fleeing_from_battle.
 qstr_A_few_of_your_troops A_few_of_your_troops_are_fleeing_from_battle.
 qstr_{s1} {s1}
+qstr_No_Troops_Left. No_Troops_Left.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
@@ -917,6 +918,8 @@ qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
 qstr_You_have_failed_to_f You_have_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!
 qstr_You_have_fulfilled_y You_have_fulfilled_your_oath_of_vengeance_for_{s1}'s_heroic_death!
+qstr_As_an_Orc_or_a_Dwarf As_an_Orc_or_a_Dwarf,_you_can_take_advantage_of_the_Custom_Camera_we_have_implemented_in_order_to_improve_your_experience_with_TLD's_shorter_races._See_Game_Concepts_for_more_information_about_how_to_use_this.
+qstr_Custom_Camera Custom_Camera
 qstr_{reg65?my_Lady:my_Lo {reg65?my_Lady:my_Lord}
 qstr_{reg65?My_Lady:My_Lo {reg65?My_Lady:My_Lord}
 qstr_{reg65?mistress:mast {reg65?mistress:master}

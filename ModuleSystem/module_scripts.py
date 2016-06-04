@@ -1818,7 +1818,10 @@ scripts = [
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
 	(assign, "$tld_option_max_parties", 850), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
-	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.						  # 
+	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
+	] + (is_a_wb_script==1 and [
+	(call_script, "script_init_camera"),	 #Custom Camera Initialize
+	] or []) + [					  
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
@@ -20367,6 +20370,120 @@ if is_a_wb_script==1:
   ]),
 
  ## troop presentation end 
+
+ #### Custom Camera Scripts by dunde, implemented by Kham
+("init_camera",
+ [(assign, "$key_camera_toggle",key_end),                #END button to toggle camera mode
+  (assign, "$key_camera_next",key_right),                #right key to jump to next bot
+  (assign, "$key_camera_prev",key_left),                 #left key to jump to prev bot
+  (assign, "$key_camera_zoom_plus",key_numpad_plus),     #Num + to zoom in
+  (assign, "$key_camera_zoom_min",key_numpad_minus),     #Num - to zoom out
+  (assign, "$key_camera_height_plus",key_up),
+  (assign, "$key_camera_height_min",key_down),
+  (assign, "$cam_free", 0),
+  (assign, "$g_camera_z", 300),       
+  (assign, "$g_camera_y", -1000),
+ ]),
+
+# Modified MartinF's code for DeathCam 
+# script_dmod_cycle_forwards
+# Output: New $dmod_current_agent
+# Used to cycle forwards through valid agents
+("dmod_cycle_forwards",
+ [(assign, ":agent_moved", 0),
+  (assign, ":first_agent", -1),
+  (get_player_agent_no, ":player_agent"),
+  (agent_get_team, ":player_team", ":player_agent"),
+  (agent_get_team, ":prev_team", "$cam_current_agent"),
+  (try_for_agents, ":agent_no"),
+     (neq, ":agent_moved", 1),
+     (agent_is_human, ":agent_no"),
+     (agent_is_alive, ":agent_no"),
+     (agent_get_team, ":cur_team", ":agent_no"),
+     (agent_get_troop_id, ":troop_id", ":agent_no"), 
+     (this_or_next|troop_is_hero, ":troop_id"), 
+     (neg|key_is_down, key_left_shift),
+     (this_or_next|eq, ":cur_team", ":prev_team"),
+     (neg|key_is_down, key_left_control),
+     (this_or_next|neq, ":cur_team", ":prev_team"), 
+     (neg|key_is_down, key_left_alt),             
+     (this_or_next|eq, "$cam_free", 1),         
+     (eq, ":cur_team", ":player_team"),
+     (try_begin),
+        (lt, ":first_agent", 0),                         # Find the 1st agent alive and (1 team or free mod)
+        (assign, ":first_agent", ":agent_no"),
+     (try_end),
+     (gt, ":agent_no", "$cam_current_agent"),            # Find next agent  alive and (1 team or free mod)
+     (assign, "$cam_current_agent", ":agent_no"),
+     (assign, ":agent_moved", 1),
+  (try_end),
+  (try_begin),
+     (eq, ":agent_moved", 0),                            # Next Agent not found, but 1st agent found, then the next is the first one
+     (neq, ":first_agent", -1),
+     (assign, "$cam_current_agent", ":first_agent"),
+     (assign, ":agent_moved", 1),        
+  (else_try),
+     (eq, ":agent_moved", 0),
+     (eq, ":first_agent", -1),
+     (display_message, "@No Troops Left."),
+  (try_end),
+  (try_begin),
+     (eq, ":agent_moved", 1),                            # there is next one
+     (try_begin),
+        (agent_is_alive, ":player_agent"),             # if player is still alive, push to mode 1
+        (assign, "$cam_mode", 1),
+        (mission_cam_set_mode, "$cam_mode"),
+     (try_end),
+     (str_store_agent_name, 1, "$cam_current_agent"),
+  (try_end),]),
+   
+# script_dmod_cycle_backwards
+# Output: New $dmod_current_agent
+# Used to cycle backwards through valid agents
+("dmod_cycle_backwards",
+ [(assign, ":new_agent", -1),
+  (assign, ":last_agent", -1),
+  (get_player_agent_no, ":player_agent"),
+  (agent_get_team, ":player_team", ":player_agent"),
+  (agent_get_team, ":prev_team", "$cam_current_agent"),      
+  (try_for_agents, ":agent_no"),
+     (agent_is_human, ":agent_no"),
+     (agent_is_alive, ":agent_no"),
+     (agent_get_team, ":cur_team", ":agent_no"),
+     (agent_get_troop_id, ":troop_id", ":agent_no"), 
+     (this_or_next|troop_is_hero, ":troop_id"), 
+     (neg|key_is_down, key_left_shift),
+     (this_or_next|eq, ":cur_team", ":prev_team"),
+     (neg|key_is_down, key_left_control),
+     (this_or_next|neq, ":cur_team", ":prev_team"),
+     (neg|key_is_down, key_left_alt),
+     (this_or_next|eq, "$cam_free", 1),    
+     (eq, ":cur_team", ":player_team"),
+     (assign, ":last_agent", ":agent_no"),          # Ok, the last
+     (lt, ":agent_no", "$cam_current_agent"),
+     (assign, ":new_agent", ":agent_no"),           # prev agent    
+  (try_end),
+  (try_begin),
+     (eq, ":new_agent", -1),
+     (neq, ":last_agent", -1),
+     (assign, ":new_agent", ":last_agent"),               
+  (else_try),
+     (eq, ":new_agent", -1),
+     (eq, ":last_agent", -1),
+     (display_message, "@No Troops Left."),
+  (try_end),
+  (try_begin),
+     (neq, ":new_agent", -1),                       # There is prev agent
+     (assign, "$cam_current_agent", ":new_agent"), 
+     (try_begin),
+        (agent_is_alive, ":player_agent"),
+        (assign, "$cam_mode", 1),
+        (mission_cam_set_mode, "$cam_mode"),
+     (try_end),
+     (str_store_agent_name, 1, "$cam_current_agent"),
+  (try_end), ]),
+
+### Custom camera end 
   ]
 
 

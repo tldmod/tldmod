@@ -669,3 +669,16 @@ g_cur_slot_no
 g_current_opened_item_details
 g_selected_troop
 g_selected_page
+cam_current_agent
+cam_mode
+shoot_mode
+cam_free
+g_camera_z
+g_camera_y
+key_camera_toggle
+key_camera_next
+key_camera_prev
+key_camera_zoom_plus
+key_camera_zoom_min
+key_camera_height_plus
+key_camera_height_min

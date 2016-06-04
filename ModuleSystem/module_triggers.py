@@ -1614,3 +1614,16 @@ triggers = [
    (999, 0, ti_once, [],[]),
 
 ]
+
+# Custom Camera Trigger for Orc and Dwarf
+
+if is_a_wb_trigger==1:
+  triggers +=[
+  (1, 0, ti_once,
+    [(map_free),
+     (this_or_next|eq, "$player_looks_like_an_orc",                1),
+     (             eq,          "$players_kingdom",      "fac_dwarf"),
+    ],
+
+    [(dialog_box, "@As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.", "@Custom Camera")]),
+]

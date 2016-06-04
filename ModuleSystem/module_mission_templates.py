@@ -41,6 +41,80 @@ af_castle_lord    = af_override_horse | af_override_weapons | af_require_civilia
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
 af_prisoner       = af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot
 
+################################################################
+## CUSTOM CAMERA by dunde, implemented by Kham (WB Only)
+################################################################
+
+camera_init =  ((is_a_wb_mt==1) and [
+
+                           (0,0,ti_once,[(get_player_agent_no, "$cam_current_agent"), (gt, "$cam_current_agent", -1)],
+                           [(assign,"$cam_mode", 0),(assign, "$shoot_mode",0), (assign, "$cam_free", 0)])
+                ] or [])
+
+camera_mode =  ((is_a_wb_mt==1) and [ 
+
+ ( 0, 0, 0, [], 
+ [(try_begin),
+     (eq, "$cam_mode", 1),
+     (set_fixed_point_multiplier, 100),
+     (agent_get_look_position, pos7, "$cam_current_agent"),
+     (position_get_rotation_around_x, ":angle", pos7), 
+     (store_sub, ":reverse", 25, ":angle"),
+     (position_rotate_x, pos7, ":reverse"),
+     (position_move_y, pos7, "$g_camera_y"),
+     (position_move_z, pos7, "$g_camera_z"),
+     (agent_get_horse, ":horse_agent", "$cam_current_agent"),
+     (try_begin),
+        (ge, ":horse_agent", 0),
+        (position_move_z, pos7, 80),        
+     (try_end),
+     (store_mul, ":reverse", -1, "$g_camera_y"),
+     (store_atan2, ":drop", "$g_camera_z", ":reverse"),
+     (convert_from_fixed_point, ":drop"),
+     (val_sub, ":angle", ":drop"),
+     (position_rotate_x, pos7, ":angle"),
+     (mission_cam_animate_to_position, pos7, 100, 0), 
+  (else_try),
+     (lt, "$cam_mode", 2),
+     (main_hero_fallen),
+     (agent_get_position, 1, "$cam_current_agent"),     
+     (get_player_agent_no, ":player_agent"),
+     (agent_set_position, ":player_agent", 1),
+  (try_end),])
+  ] or [])
+
+
+camera_set      =  ((is_a_wb_mt==1) and [ 
+
+( 0, 0, 0,[(key_clicked, "$key_camera_toggle"), (lt, "$cam_mode", 2),(neq, "$shoot_mode", 1)],
+# toggling only when came mode =0 or 1 (2=disable) ; shoot_mode=1 temporary diable toggling
+ [(try_begin),
+     (eq, "$cam_mode", 0), 
+     (assign, "$cam_mode", 1),
+  (else_try),
+     (eq, "$cam_mode", 1),
+     (try_begin),
+        (neg|main_hero_fallen, 0),
+        (get_player_agent_no, "$cam_current_agent"),                  
+     (try_end), 
+     (assign, "$cam_mode", 0),
+  (try_end),
+  (mission_cam_set_mode, "$cam_mode"),])
+
+  ] or [])
+
+camera_zoom_in         = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_camera_zoom_plus"),  (eq, "$cam_mode", 1)], [(val_add, "$g_camera_y",1),(neg|key_is_down, key_left_shift),(val_add, "$g_camera_y",9),(val_min,"$g_camera_y",-50),])   ] or [])
+camera_zoom_out        = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_camera_zoom_min"),   (eq, "$cam_mode", 1)], [(val_sub, "$g_camera_y",1),(neg|key_is_down, key_left_shift),(val_sub, "$g_camera_y",9),])   ] or [])
+camera_raise           = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_camera_height_plus"),(eq, "$cam_mode", 1)], [(val_add, "$g_camera_z",1),(neg|key_is_down, key_left_shift),(val_add, "$g_camera_z",9),])   ] or [])
+camera_lower           = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_camera_height_min"), (eq, "$cam_mode", 1)], [(val_sub, "$g_camera_z",1),(neg|key_is_down, key_left_shift),(val_sub, "$g_camera_z",9),(val_max,"$g_camera_z", 50),])   ] or [])
+camera_cycle_fowards   = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_clicked, "$key_camera_next"),(call_script, "script_dmod_cycle_forwards") ,], [])    ] or [])   
+camera_cycle_backwards = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_clicked, "$key_camera_prev"),(call_script, "script_dmod_cycle_backwards"),], [])    ] or [])
+
+camera_shot   = ((is_a_wb_mt==1) and [   ( 0, 0, 0,[(key_is_down, key_left_mouse_button), (eq, "$cam_mode", 1)], [(get_player_agent_no, ":player_agent"), (eq, ":player_agent","$cam_current_agent"),(agent_get_wielded_item,":weapon","$cam_current_agent",0), (neq,":weapon",-1),(item_get_type, ":type", ":weapon"), (this_or_next|eq,":type",itp_type_bow),(this_or_next|eq,":type",itp_type_crossbow),(eq,":type",itp_type_thrown),(assign, "$cam_mode", 0),(assign,"$shoot_mode",1),(mission_cam_set_mode, "$cam_mode")])   ] or [])
+camera_normal = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(neg|key_is_down, key_left_mouse_button), (eq, "$shoot_mode",1)], [(assign, "$cam_mode", 1),(assign,"$shoot_mode",0),(mission_cam_set_mode, "$cam_mode")])     ] or [])             
+              
+###############CUSTOM CAMERA END ################################ 
+
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
 	#tld_wargs_attack_horses, # WIP (CppCoder)
@@ -56,7 +130,8 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-	]+tld_morale_triggers
+	]+tld_morale_triggers 	+ camera_init	+ camera_mode	+ camera_raise	+ camera_lower	+ camera_zoom_out	+ camera_zoom_in	+ camera_set	+ camera_cycle_fowards	+ camera_cycle_backwards	+ camera_shot + camera_normal #Custom Cam triggers
+
 
 tld_siege_battle_scripts = [
 	#tld_fix_viewpoint,
@@ -67,13 +142,16 @@ tld_siege_battle_scripts = [
 	custom_troll_hitting,
 	tld_remove_galadriel, 
 	#common_battle_kill_underwater,
-	]
+	]+ camera_init + camera_mode + camera_raise  + camera_lower  + camera_zoom_out + camera_zoom_in  + camera_set  + camera_cycle_fowards  + camera_cycle_backwards  + camera_shot + camera_normal #Custom Cam triggers
+
 
 tld_common_peacetime_scripts = [
 	#tld_fix_viewpoint,
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
-] + custom_tld_bow_to_kings
+] + custom_tld_bow_to_kings + camera_init	+ camera_mode	+ camera_raise	+ camera_lower	+ camera_zoom_out	+ camera_zoom_in	+ camera_set	+ camera_cycle_fowards	+ camera_cycle_backwards	+ camera_shot + camera_normal #Custom Cam triggers
+
+
 
 tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
 
