@@ -5,6 +5,7 @@ from header_triggers import *
 from header_sounds import *
 from module_constants import *
 from header_mission_templates import *
+from module_info import wb_compile_switch as is_a_wb_sceneprop
 import string
 
 ####################################################################################################################
@@ -1612,6 +1613,9 @@ scene_props = [
 		(assign, "$gate_aggravator_agent", reg0),
 		(agent_set_speed_limit, "$gate_aggravator_agent", 1),
 		(agent_set_team, "$gate_aggravator_agent", 6),
+    ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    (agent_set_no_dynamics, "$gate_aggravator_agent",1),
+    ] or []) + [
 		(team_give_order, 6, grc_everyone, mordr_hold),
 		(team_give_order, 6, grc_everyone, mordr_stand_ground),
 		(team_set_order_position, 6, grc_everyone, pos1),
