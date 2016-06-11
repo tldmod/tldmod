@@ -25,6 +25,6 @@ void main()
 	outColor0.a *= clamp(normalize( vec3(matWorldView[2][0],matWorldView[2][1],matWorldView[2][2]) ).z * 2.0 - 1.0, 0.0, 1.0);
 
 	outTexCoord = inTexCoord;
-	outFog = 1.f;
+	outFog = 1.0;
 }
 

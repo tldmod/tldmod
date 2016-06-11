@@ -16,7 +16,7 @@ void main ()
   vec4 tex_col_1;
   vec4 tmpvar_2;
   vec4 tex_col = texture2D(diffuse_texture, Tex0);
-  vec4 tex_sdw = texture2D(diffuse_texture_2, (Tex0 * 0.2f) + (time_var * 0.02f));
+  vec4 tex_sdw = texture2D(diffuse_texture_2, (Tex0 * 0.2) + (time_var * 0.02));
 
   tex_col_1.w = tex_col.w;
   tex_col_1.xyz = pow (tex_col.xyz, vec3(2.2, 2.2, 2.2));

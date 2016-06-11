@@ -87,20 +87,20 @@ void main ()
 	//swy-- flowmap time-varying sawtooth and triangle
 	//      functions for animating and masking the flow...
 
-	float time_var_mod = time_var / 10.f;
+	float time_var_mod = time_var / 10.0;
 
 	//swy-- specially tweaked functions for
 	//      both (n)ormals and diffuse (t)extures...
 
 	float sawtooth_a_n = fract(time_var_mod);
-	float sawtooth_b_n = fract(time_var_mod + 0.5f);
+	float sawtooth_b_n = fract(time_var_mod + 0.5);
 
-	float sawtooth_a_t = fract(time_var_mod)        - 0.5f;
-	float sawtooth_b_t = fract(time_var_mod + 0.5f) - 0.5f;
+	float sawtooth_a_t = fract(time_var_mod)       - 0.5;
+	float sawtooth_b_t = fract(time_var_mod + 0.5) - 0.5;
 
 	//swy-- triangle function used for masking by lerp two samples,
 	//      all that is modulated by the upper sawtooths
-	float triangle_fn = abs(0.5f - sawtooth_a_n) / 0.5f;
+	float triangle_fn = abs(0.5 - sawtooth_a_n) / 0.5;
 
 	_sawtooth_fn = vec2(sawtooth_a_t, sawtooth_b_t);
 	_triangle_fn = triangle_fn;
@@ -108,10 +108,10 @@ void main ()
 	//       ^
 	//	     '->
 	//swy-- fits pretty well! took me a long while, tho!
-	_worldpos = vWorldPos.xy / 374.f;
-	_worldpos.x -= 0.495f;
-	_worldpos.y += 0.68f;
+	_worldpos = vWorldPos.xy / 374.0;
+	_worldpos.x -= 0.495;
+	_worldpos.y += 0.68;
 
-	_worldpos.xy *= -1.f;
+	_worldpos.xy *= -1.0;
 }
 

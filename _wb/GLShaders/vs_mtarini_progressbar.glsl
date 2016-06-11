@@ -23,6 +23,6 @@ void main()
 
 	outColor0 = inColor0.bgra * vMaterialColor;
 	outTexCoord = vec2(inPosition.x * 1.25213, inTexCoord.y);
-	outFog = 1.f;
+	outFog = 1.0;
 }
 
