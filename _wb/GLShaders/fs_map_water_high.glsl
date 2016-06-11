@@ -35,16 +35,16 @@ void main ()
     //swy-- unpack vector range from 0.0f - 1.0f to -1.0f - 1.0f
 
     vec4 flow_sample   = texture2D(diffuse_texture_2, _worldpos.xy);
-    vec2 flow_vector   = (flow_sample.rg * 2.0f) - 1.0f;
+    vec2 flow_vector   = (flow_sample.rg * 2.0) - 1.0;
     float noise_sample = flow_sample.b;
 
-    flow_vector.xy *= -1.f;
+    flow_vector.xy *= -1.0;
 
     //swy-- sample two times at different points, and show the less
     //      stretched one at the right time in cycles, permuted by the noise to limit pulsing...
 
-    vec4 sample_a = texture2D(diffuse_texture, vec2((_worldpos.xy*32.0) + (flow_vector*(_sawtooth_fn.x - noise_sample) * 0.5)));
-    vec4 sample_b = texture2D(diffuse_texture, vec2((_worldpos.xy*32.0) + (flow_vector*(_sawtooth_fn.y - noise_sample) * 0.5)));
+    vec4 sample_a = texture2D(diffuse_texture, vec2((_worldpos.xy * 32.0) + (flow_vector*(_sawtooth_fn.x - noise_sample) * 0.5)));
+    vec4 sample_b = texture2D(diffuse_texture, vec2((_worldpos.xy * 32.0) + (flow_vector*(_sawtooth_fn.y - noise_sample) * 0.5)));
 
     vec4 tex_col = mix(sample_a.rgba, sample_b.rgba, _triangle_fn);
 
@@ -86,8 +86,8 @@ void main ()
 
 	//swy-- tint tweaks
 	//Output.RGBColor.b *= pow(1.f, 1.f-tex_col.a);
-	tmpvar_4 *= vec4(0.77f, 0.77f, 0.80f, 0.95f);
-	tmpvar_4.rgb += (flow_sample.x*0.03f);
+	tmpvar_4 *= vec4(0.77, 0.77, 0.80, 0.95);
+	tmpvar_4.rgb += (flow_sample.x * 0.03);
 
 	//tmpvar_4 = vec4(clamp(flow_sample.xyz, 0., 1.), 1.0);
 

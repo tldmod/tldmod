@@ -38,15 +38,15 @@ void main ()
 	{
 
 	 //swy-- if not metal thingy
-	 if(tc.x < 0.944f)
+	 if(tc.x < 0.944)
 	 {
 		float seed = time_var + (vPosition.x/vPosition.y/vPosition.z);
 		float v_modulator;
 
 		//swy-- special codepath for sideways banner, modulating the waving vertically/horizontally by UVs. sigh :(
-		if(tc.x < 0.547f && tc.y > 0.789f)
+		if(tc.x < 0.547 && tc.y > 0.789)
 		{
-			v_modulator = tc.x * 0.5f;
+			v_modulator = tc.x * 0.5;
 		}
 
 		else
@@ -54,7 +54,7 @@ void main ()
 			v_modulator = tc.y;
 		}
 
-		vPosition.y += ((sin(seed+cos(vPosition.x))*0.4f)* v_modulator*vPosition.x)/vPosition.z;
+		vPosition.y += ((sin(seed+cos(vPosition.x))*0.4)* v_modulator*vPosition.x)/vPosition.z;
 	 }
 	}
 
@@ -62,14 +62,14 @@ void main ()
    if(swy_spr_banners)
    {
 	 //swy-- if not metal thingy
-	 if(tc.x <= (244.f/256.f))
+	 if(tc.x <= (244.0/256.0))
 	 {
 		float seed = time_var + (vPosition.x + vPosition.y + tc.x + tc.y) + matWorld[0][3];
-		float thingie  = sin(seed + cos(vPosition.x)) * fract(tc.y*3.f) /* * abs(vPosition.x) */;
-		      thingie *= 0.2f;
+		float thingie  = sin(seed + cos(vPosition.x)) * fract(tc.y*3.0) /* * abs(vPosition.x) */;
+		      thingie *= 0.2;
 
 		vPosition.y += -(abs(thingie)*abs(thingie));
-		vPosition.x += thingie*0.3f;
+		vPosition.x += thingie*0.3;
 	 }
    }
 

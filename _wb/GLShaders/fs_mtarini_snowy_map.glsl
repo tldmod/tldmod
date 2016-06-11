@@ -20,7 +20,7 @@ varying vec3 outWorldNormal;
 void main()
 {
     vec4 tex_col = texture2D(diffuse_texture, outTexCoord * 3.0);
-    vec4 tex_sdw = texture2D(diffuse_texture_2, (outTexCoord * 0.2f) + (time_var * 0.02f));
+    vec4 tex_sdw = texture2D(diffuse_texture_2, (outTexCoord * 0.2) + (time_var * 0.02));
 
 	//tex_col.rgb = pow(tex_col.rgb, input_gamma.rgb);
 

@@ -75,8 +75,8 @@ void main ()
   /* flip vertical UV space to counter reverse OpenGL (bottom-left) texture sampling vs DirectX (top-left) */
   vec2 _inTexCoord = vec2(inTexCoord.x, 1.0 - inTexCoord.y);
 
-  Tex0 = vec3(_inTexCoord.x, _inTexCoord.y - (0.15f * time_var),
-                            (_inTexCoord.y - (0.50f * time_var)) / 2.f);
+  Tex0 = vec3(_inTexCoord.x, _inTexCoord.y - (0.15 * time_var),
+                            (_inTexCoord.y - (0.50 * time_var)) / 2.0);
 
   SunLight = (((
     clamp (dot (tmpvar_6, -(vSunDir.xyz)), 0.0, 1.0)
