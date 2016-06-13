@@ -1,0 +1,11 @@
+#swy-- ignore mb1011<->wb symlinked elements
+
+_wb/Resource/
+_wb/SceneObj/
+_wb/Textures/
+_wb/Data/font_data.xml
+_wb/Data/ground_specs.txt
+_wb/Music
+_wb/Sounds
+_wb/map.txt
+_wb/languages

@@ -47,7 +47,7 @@ void main ()
 
     float atten = 1.0, wavel = 1.0 + tc.y * 0.8, angle;
 
-    atten = min(tc.y * tc.x * 2.0f, 1.0f);
+    atten = min(tc.y * tc.x * 2.0, 1.0);
     angle = time + tc.x * 9.0 * wavel;
 
     vPositionNew.x += sin(angle) * (atten * 0.065);
