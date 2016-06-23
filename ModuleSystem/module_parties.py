@@ -259,7 +259,7 @@ parties = [
  
 
  ## Ring Hunters Addition - Kham
-  ("ring_hunter_lair","Ring_Hunters_Lair",  icon_nomadcamp|pf_disabled|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_neutral,0,ai_bhvr_hold,0,(-30.04,-129.54),[],170),
+  ("ring_hunter_lair","Ring_Hunters_Lair",  icon_nomadcamp_b|pf_disabled|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_neutral,0,ai_bhvr_hold,0,(-30.04,-129.54),[],170),
 
 
  # add extra towns before this point 

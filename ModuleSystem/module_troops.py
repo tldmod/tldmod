@@ -3176,6 +3176,26 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_4|knows_power_draw_4|knows_power_strike_2,orc_face7,orc_face6],
 ### Kham Ring Hunters End ###
 
+#Kham Start Quest Troops
+["start_quest_uruk","Mordor_Uruk_Captain","bug",tf_uruk| tfg_shield| tfg_ranged|tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+   [itm_uruk_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_b,itm_orc_throwing_arrow,itm_uruk_bow,itm_orc_hook_arrow,itm_m_uruk_heavy_h,itm_m_uruk_heavy_i,itm_uruk_falchion_a,itm_uruk_falchion_b,itm_uruk_skull_spear,itm_mordor_uruk_shield_a,itm_mordor_uruk_shield_b,itm_uruk_helm_b,itm_uruk_helm_c,itm_uruk_helm_d,],
+      attr_tier_4,wp_tier_4,knows_athletics_6|knows_power_strike_5|knows_power_draw_4|knows_power_throw_3|knows_ironflesh_4|knows_shield_2,uruk_hai_face1,uruk_hai_face2],
+
+["start_quest_orc","Mordor_Orc_Lieutenant","Large_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+   [itm_orc_greaves,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_orc_skull_spear,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_mordor_orc_shield_d,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,itm_orc_helm_i,],
+      attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_3|knows_power_throw_3,orc_face3,orc_face6],
+
+["start_quest_woodelf","Galadhrim_Royal_Marksman","Galadhrim_Royal_Marksmen",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
+   [itm_lorien_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_f,itm_lorien_boots,itm_lorien_sword_b,itm_lorien_shield_c,],
+      attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_7|knows_shield_1|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
+
+["start_quest_mordor_scout","Mordor_Guide","Mordor_Guides",tf_orc| tfg_ranged| tfg_helm| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+   [itm_orc_furboots,itm_leather_gloves,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_light_c,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,],
+      attr_orc_tier_4,wp_archery (135)| wp (110),knows_riding_1|knows_athletics_6|knows_power_draw_5|knows_power_strike_2,orc_face1,orc_face4],
+
+["start_quest_beorning","Beorning_Carrock_Berserker","Beorning_Carrock_Berserkers",tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
+   [itm_beorn_berserk,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_dale_helmet_b,itm_beorn_battle_axe,itm_dale_sword_long,],
+      attr_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_strike_3|knows_ironflesh_6,beorn_face1,beorn_face2],
 
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],

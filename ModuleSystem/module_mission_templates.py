@@ -1114,13 +1114,14 @@ mission_templates = [ # not used in game
 			(jump_to_menu,"mnu_assasins_attack_player_won"),#jump to menu, where player gets message and prize
 			(finish_mission,1)]),
 ]),
-( "tld_caravan_help",mtf_battle_mode,-1,#TLD - starting quest to help/kill caravan (GA)
-  "You rush to help the caravan.",
+
+( "tld_caravan_help",mtf_battle_mode,-1,#TLD - starting quest to help/kill caravan (GA) - Modified and hooked up by Kham
+  "You rush to towards caravan.",
     [ (0,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (6,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(7,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (8,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(9,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (12,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(13,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (14,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(15,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
@@ -1133,16 +1134,240 @@ mission_templates = [ # not used in game
       (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-     ],tld_common_wb_muddy_water+[
-	common_custom_battle_tab_press,
-	common_custom_battle_question_answered,
-	common_inventory_not_available,
-	common_siege_ai_trigger_init_2,
-	(0, 0, ti_once, [],[(assign, "$g_battle_result", 0)]),
-	custom_battle_check_victory_condition,
-	common_battle_victory_display,
-	custom_battle_check_defeat_condition,
+     ],
+   tld_common_wb_muddy_water +
+   tld_common_battle_scripts + [
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 1),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1),
+  ]),
+  
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (faction_slot_eq,"$players_kingdom",slot_faction_side,faction_side_good),
+      (jump_to_menu, "mnu_starting_quest_victory_good"),
+      (display_message, "@battle won triggered - Good"),
+      (finish_mission),
+    (else_try),
+      (eq, "$battle_won", 1),
+      (jump_to_menu, "mnu_starting_quest_victory_evil"),
+      (display_message, "@battle won triggered - Evil"),
+      (finish_mission),
+    (else_try), 
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_recover_after_death_default"),
+      (finish_mission),
+    (try_end),
+  ]),
 ]),
+
+
+( "tld_start_quest_ambush",mtf_battle_mode,-1,#TLD - starting quest to ambush orcs in forest
+  "You ambush the orcs.",
+    [ (0,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (12,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(13,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(15,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+
+      (16,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+
+      (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(21,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (22,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(23,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (24,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(25,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+     ],
+   tld_common_wb_muddy_water +
+   tld_common_battle_scripts + [
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 1),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1),
+  ]),
+  
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (faction_slot_eq,"$players_kingdom",slot_faction_side,faction_side_good),
+      (jump_to_menu, "mnu_starting_quest_victory_elves"),
+      (display_message, "@battle won triggered - Good"),
+      (finish_mission),
+    (else_try), 
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_recover_after_death_default"),
+      (finish_mission),
+    (try_end),
+  ]),
+]),
+
+( "tld_start_quest_scouts",mtf_battle_mode,-1,#TLD - starting quest to kill all scouts (Easterlings)
+  "You rush towards the scouts.",
+    [ (0,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (12,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(13,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(15,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+
+      (16,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(21,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (22,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(23,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (24,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(25,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+     ],
+   tld_common_wb_muddy_water +
+   tld_common_battle_scripts + [
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 1),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1),
+  ]),
+  
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (this_or_next|eq,"$players_kingdom", fac_harad),
+      (             eq,"$players_kingdom", fac_khand),
+      (jump_to_menu, "mnu_starting_quest_victory_easterlings"),
+     # (display_message, "@battle won triggered - Easterlings"),
+      (finish_mission),
+    (else_try), 
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_recover_after_death_default"),
+      (finish_mission),
+    (try_end),
+  ]),
+]),
+
+### Kham Start Quest Evil Duel - begin
+( "start_quest_duel",mtf_team_fight, -1, # used for start quest duel
+  "You enter a melee fight.",
+    [ (0, mtef_visitor_source|mtef_team_0, af_override_horse, aif_start_alarmed, 1, []),
+    (1, mtef_visitor_source|mtef_team_1, af_override_horse, aif_start_alarmed, 1, []),
+    (2, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(3, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(4, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(5, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []), #spectators
+    (6, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(7, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(8, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(9, mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (10,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(11,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(12,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(13,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (14,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(15,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(16,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(17,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (18,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(19,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(20,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(21,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (22,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(23,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(24,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(25,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    (26,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(27,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(28,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),(29,mtef_visitor_source|mtef_team_2, af_override_horse, 0, 1, []),
+    ],tld_common_wb_muddy_water+[
+  common_inventory_not_available,
+# (ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave now.")], []),
+      
+  (ti_tab_pressed,0,0,[],[
+    (try_begin),#If the battle is won, missions ends.
+      (num_active_teams_le,2),
+      (neg|main_hero_fallen, 0),
+      (finish_mission),
+    (else_try),
+      (main_hero_fallen),
+      (finish_mission),
+    (else_try),
+      (display_message, "@Cannot leave now."),
+    (try_end)]),
+      
+  (ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 1, -1),(team_set_relation, 0, 2, 0),(team_set_relation, 1, 2, 0)]),
+  (0, 0, ti_once, [],[(call_script, "script_music_set_situation_with_culture", mtf_sit_arena)]),
+
+    (0.3, 0, 0, [], [ # spectators cheer
+    (try_for_agents,":agent"),
+      (agent_get_entry_no,reg1,":agent"),(neq,reg1,0),(neq,reg1,1), # main guys do not cheer
+      (agent_get_slot,":counter",":agent",slot_agent_is_in_scripted_mode),
+      (try_begin),
+        (gt, ":counter", 0), (val_sub,":counter", 1),(agent_set_slot,":agent",slot_agent_is_in_scripted_mode,":counter"), # pass cheering cycles
+      (else_try),
+        (store_random_in_range,reg1,0,100),(lt,reg1,10), # 10% of times
+        (agent_set_slot,":agent",slot_agent_is_in_scripted_mode,13), # remember that the guy is cheering now, pass 13 cycles after that
+        (agent_set_animation, ":agent", "anim_cheer"),
+        (agent_get_troop_id,":troop", ":agent"),
+        (troop_get_type,reg1,":troop"),
+        (try_begin),(is_between, reg1, tf_urukhai, tf_orc_end),(agent_play_sound, ":agent", "snd_uruk_yell"),
+         (else_try),(eq, reg1, tf_orc),(agent_play_sound, ":agent", "snd_orc_cheer"),
+         (else_try),(agent_play_sound, ":agent", "snd_man_yell"),
+        (try_end),
+      (try_end),
+    (try_end)]),
+
+    tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
+
+  (1, 60, 1,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
+    (try_begin),
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_recover_after_death_default"),
+      (finish_mission),
+    (else_try),
+      (num_active_teams_le,2),
+      (display_message,"str_msg_battle_won"),
+      (jump_to_menu, "mnu_start_quest_duel_won"),
+      (finish_mission),
+    (try_end)]),
+  
+]),
+
+### Kham Start Quest Duel End
 
 
 ### Kham - Ring Hunters - Start

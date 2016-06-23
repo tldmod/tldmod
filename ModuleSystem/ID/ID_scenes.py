@@ -259,3 +259,6 @@ scn_amath_dollen_fortress = 257
 scn_mirkwood_ambush = 258
 scn_mountain_ambush = 259
 scn_lair_forest_bandits = 260
+scn_start_lorien = 261
+scn_start_woodelf = 262
+scn_start_rivendell = 263

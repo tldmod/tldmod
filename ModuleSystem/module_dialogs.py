@@ -6860,23 +6860,586 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##[anyone|plyr, "noble_refugee_talk", [], "TODO: Nothing.", "close_window",[(assign, "$g_leave_encounter",1)]],
 ##
 
-### TLD dialogs: starting quest caravan master talk
-[trp_start_quest_caravaneer,"party_relieved", [(eq,"$talk_context",tc_starting_quest)], 
-"Thank you for helping! We are safe now.", "caravan_help0",[]], 
-[trp_start_quest_caravaneer,"caravan_help0", [], "Thank you for helping! We are safe now. \
-Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. \
-And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. \
-Dire things are afoot.. War is coming! I advise you to go to Edoras, the capital of your people, \
-and deliver the message about what you've seen to whomever is in command there. \
-It's an important matter, so please make haste.", "caravan_help1",[
-       (setup_quest_text, "qst_tld_introduction"),
-       (str_store_string, s2, "str_tld_introduction"),
-       (add_quest_note_from_sreg, "qst_tld_introduction", 0, s2, 0),
-       (start_quest, "qst_tld_introduction")]],
-[trp_start_quest_caravaneer|plyr,"caravan_help1", [], "Yeah, I never seen such a large orc before. Nasty things.", "caravan_help2",[]],
-[trp_start_quest_caravaneer,"caravan_help2", [], "Also, I see you are a capable warrior. I have a personal business I would like your help with. There is a small fort near Nindalf swamps, where common people and travellers can find food and lodge. It's run by a local chief who does not answer neither to Gondor, nor to Rohan. I'm a merchant traveller myself, so I have respect for people wishing to be free from lordship bonds, as long as they behave. But being independent, they are also powerless before enemy onslaught. War outbreak in next several days looks like a certain thing to me. I want you to get to those people and see if you can help them survive. Tell the chief, Balan, that Torbal asked you to deliver 'a fishslap'. He will recognize it was me who sent you.", "caravan_help3",[]],
-[trp_start_quest_caravaneer|plyr,"caravan_help3", [], "I'll deliver your message. Safe journey to you, Torbal. I'm sure we will meet again.", "close_window",[(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
+### TLD dialogs: starting quest caravan master talk - Kham changed context and removed quest. This should be enough
+#[trp_start_quest_caravaneer,"party_relieved", [(eq,"$talk_context",tc_starting_quest)], 
+#"Thank you for helping! We are safe now.", "caravan_help0",[]], 
+
+
+
+
+######### Start Quest Dialogues - Started by GA, Completed by Kham ######################
+######### Start Quest - Caravan                                    ######################
+[trp_start_quest_caravaneer,"start", 
+  [], "Thank you for helping! We are safe now. My name is Torbal, and I was just delivering some goods when we were attacked. Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. Dire things are afoot.. War is coming! I advise you to go to the nearest town and warn everyone about what you've seen to whomever is in command there. It's an important matter, so please make haste.", "caravan_help1",
+    []],
+
+[trp_start_quest_caravaneer|plyr,"caravan_help1",
+   [], 
+    "No, I have never seen such a large orc before. Nasty things... I am a Soldier in this coming war that we have all been sensing.", "caravan_help2",
+    []],
+
+###Assist Dialogue Conditions####
+[trp_start_quest_caravaneer,"caravan_help2", 
+  [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$assist","fac_dwarf"),
+      (str_store_string, s10, "@the Dwarves, so that if you pass by Erebor or the Iron Hills, you can try to arm yourself with the fabled Dwarven weaponry"),
+    (else_try),
+      (eq,"$assist","fac_gondor"),
+      (str_store_string, s10, "@Gondor, so that if you pass by their lands, you can try to purchase some of their well-known armours"),
+    (else_try),
+      (eq,"$assist","fac_rohan"),
+      (str_store_string, s10, "@Rohan, so that if you pass by their lands, you can try to purchase some of their fabled horses"),
+    (else_try),
+      (str_store_string, s10, "@Dale, so that if you pass by their lands, you can try to purchase some of their well-known bows"),
+    (try_end),
+   ], 
+    "You are? Of course you are! I have seen that you are a capable warrior. \
+I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. \
+Here, have some of the local currency used by {s10}", "caravan_help3",
+      []],
+###Assist Dialogue Conditions - End####
+
+[trp_start_quest_caravaneer|plyr,"caravan_help3", 
+  [], 
+    "Safe journey to you, Torbal. I'm sure we will meet again.", "caravan_help4",
+  []],
+
+[trp_start_quest_caravaneer,"caravan_help4",
+  [],
+    "I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! I for one am well known, and have even been given a monthly income for all the work that I do!","caravan_help5",
+    []],
+
+[trp_start_quest_caravaneer|plyr, "caravan_help5",
+  [],
+    "I will remember that. Thank you Torbal, and stay safe.", "close_window",
+      [
+        (call_script,"script_stand_back"),
+        (assign, "$g_leave_encounter",1),
+        (change_screen_return),
+        (call_script,"script_add_faction_rps", "$assist", 150),
+        (call_script,"script_increase_rank", "$assist",10),
+      ]
+],
+
+
+######### Start Quest - Caravan - End                              ######################
+
+
+#[trp_start_quest_caravaneer,"caravan_help2", [], "You are? Of course you are! I have seen that you are a capable warrior. I have a personal business I would like your help with. There is a small fort near Nindalf swamps, where common people and travellers can find food and lodge. It's run by a local chief who does not answer neither to Gondor, nor to Rohan. I'm a merchant traveller myself, so I have respect for people wishing to be free from lordship bonds, as long as they behave. But being independent, they are also powerless before enemy onslaught. War outbreak in next several days looks like a certain thing to me. I want you to get to those people and see if you can help them survive. Tell the chief, Balan, that Torbal asked you to deliver 'a fishslap'. He will recognize it was me who sent you.", "caravan_help3",[]],
+#[trp_start_quest_caravaneer|plyr,"caravan_help3", [], "I'll deliver your message. Safe journey to you, Torbal. I'm sure we will meet again.", "close_window",[(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1),(change_screen_return),]],
 # end starting quest caravan master talk
+
+
+
+### Kham Start Quest Caravan - Evil
+
+[trp_start_quest_uruk,"start", 
+  [], 
+    "Who are you? I did not need your help", "caravan_attack1",
+  []],
+
+[trp_start_quest_uruk|plyr,"caravan_attack1", 
+  [ 
+    (str_clear, s10),
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_hand),      
+      (str_store_string, s10, "@It sure look like you did, Mordor scum.. ^^I have heard the call by the Great Hand, to bring fear to the realm of men, and to kill as many of the horse-men as we can."),
+    (else_try),
+      (str_store_string, s10, "@It sure look like you did. ^^The Dark Lord has called, and I am here to answer it and destroy the realm of men"),
+    (try_end),
+  ], "{s10}", "caravan_attack2",
+  []],
+
+[trp_start_quest_uruk,"caravan_attack2", 
+  [ 
+    (str_clear, s10),
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_hand),      
+      (str_store_string, s10, "@*Snort* There is only ONE Lord, and that is the The Dark Lord. You have no place in this war, weakling. Leave me to my mission"),
+    (else_try),
+      (str_store_string, s10, "@*Snort* Another weakling to reinforce our meat shield. Leave me to my mission."),
+    (try_end),
+   ], "{s10}", "caravan_attack3",
+  []],
+
+[trp_start_quest_uruk|plyr,"caravan_attack3", 
+  [], "Weakling? I'll show you who is weak! (Difficult)", "close_window",
+  [
+    (jump_to_menu, "mnu_start_quest_duel"),
+    (assign,"$start_quest_duel", 1),
+  ]],
+
+[trp_start_quest_uruk|plyr,"caravan_attack3", 
+  [], 
+    "Go then, coward. I'll see your corpse in the fields", "close_window",
+  [
+    (jump_to_menu,"mnu_starting_quest_victory_evil_no_duel"),
+    (assign,"$start_quest_duel", 0),
+  ]],
+
+[trp_start_quest_orc,"start", 
+  [
+    (eq,"$start_quest_duel",0),
+    (str_clear, s10),
+    (try_begin),
+      (eq,"$assist","fac_moria"),
+      (str_store_string, s10, "@It's their local money.. not worth anything in Mordor. Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs..."),
+    (else_try),
+      (eq,"$assist","fac_isengard"),
+      (str_store_string, s10, "@It's their local money.. not worth anything in Mordor. Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!"),
+    (else_try),
+      (eq,"$assist","fac_gundabad"),
+      (str_store_string, s10, "@It's their local money.. not worth anything in Mordor. Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs."),
+    (else_try),
+      (eq,"$assist","fac_mordor"),
+      (str_store_string, s10, "@Take it! You can use these to buy weapons from Mordor. We only have the best!"),
+    (else_try),
+      (eq,"$assist","fac_rhun"),
+      (str_store_string, s10, "@It's their local money.. not worth anything in Mordor. Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!"),
+    (try_end),
+  ], 
+    "Hehe...He's a grumpy one, isn't he? Never mind him! You saved my skin out there! Some of the men's lives too! ^^Here, we grabbed the money in our dead men's pockets. {s10}", "caravan_duel1",
+    []],
+
+[trp_start_quest_orc,"start", 
+  [
+    (eq,"$start_quest_duel",1),
+    (str_clear, s10),
+    (try_begin),
+      (eq,"$assist","fac_moria"),
+      (str_store_string, s10, "@Here's some of their own local money that I won...not worth anything in Mordor...Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs..."),
+    (else_try),
+      (eq,"$assist","fac_isengard"),
+      (str_store_string, s10, "@Here's some of their own local money that I won..not worth anything in Mordor...Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!"),
+    (else_try),
+      (eq,"$assist","fac_gundabad"),
+      (str_store_string, s10, "@Here's some of their own local money that I won..not worth anything in Mordor...Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs."),
+    (else_try),
+      (eq,"$assist","fac_mordor"),
+      (str_store_string, s10, "@Here's some money that I won. Take it! You can use these to buy weapons from Mordor. We only have the best!"),
+    (else_try),
+      (eq,"$assist","fac_rhun"),
+      (str_store_string, s10, "@Here's some of their own local money that I won..not worth anything in Mordor...Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!"),
+    (try_end),
+  ], 
+    "I guess I am promoted, then. You are a fierce warrior. Here, take some of our loot from the caravan. The guards were also betting against you, but I wasn't..hehe... I saw what you did out there.... ^^{s10}", "caravan_duel1",
+    []],
+
+
+[trp_start_quest_orc|plyr,"caravan_duel1", 
+  [], 
+    "I could just kill you and take everything... but I have proven enough. Leave.", "caravan_duel2", 
+    []],
+
+[trp_start_quest_orc, "caravan_duel2",
+  [],
+    "The men definitely respects you now! Or they are afraid! No matter what,  they will tell their Lords what you did here. Maybe if you keep impressing them, they'll give you special things! The horse people of Rhun once gave me a horse! I ATE IT! HAHAHAHA", "caravan_duel3",
+    []],
+
+[trp_start_quest_orc|plyr,"caravan_duel3", 
+  [ 
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_rhun"),
+      (str_store_string, s10, "@That is not a smart thing to say in front of a Rhun Warrior...Next time I see you, I will kill you."),
+    (else_try),
+      (str_store_string, s10, "@They will all know my name... They will know to fear it"),
+    (try_end),
+  ], 
+    "{s10}", "close_window", 
+   [
+        (str_clear,s10),
+        (call_script,"script_stand_back"),
+        (assign, "$g_leave_encounter",1),
+        (change_screen_return),
+        (call_script,"script_add_faction_rps", "$assist", 150),
+        (try_begin),
+          (eq, "$start_quest_duel", 1),
+          (troop_add_item, "trp_player", "itm_metal_scraps_medium"),
+          (call_script,"script_increase_rank", "$assist",15),
+        (else_try),
+          (call_script,"script_increase_rank", "$assist",10),
+        (try_end),
+      ]
+],
+### Kham Start Quest Dialogue - Evil End
+
+### Kham Start Quest Dialogue - Elves Start
+
+[trp_start_quest_woodelf,"start", 
+  [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@Suilad, mellon! It is not oft we meet folk from the Hidden Valley in our realm. We give thanks to the stars they lead you to our aid, and to you as well - le hannon!"),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@Suilad, mellon! It is rare to have one of our woodland kin come to our aid - le hannon!"),
+    (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@Suilad, mellon! That is - thank you, friend!^^ At first I wasn’t sure if a goblin sabre, or a raging bear would be our doom. Alas, the stars were kind to send you to our aid."),
+    (try_end),
+  ], 
+    "{s10}", "woodelf_help_1",
+  []],
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_1", 
+  [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands... "),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@You wouldn't have need of our aid if you kept your borders shut!"),
+    (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@(*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks... "),
+    (try_end),
+  ], 
+    "{s10}", "woodelf_help_1a",
+  []],
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_1", 
+  [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@Istan quete ya merin, ar lá hanyuvatyen. Deep are my master’s designs, not for all to see and understand."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@Alae! Our green woods are heavily patrolled, our thick gates stand firm, king Thranduil’s halls secure. It would be wise to follow our example."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@(say nothing)"),
+    (try_end),
+  ], 
+    "{s10}", "woodelf_help_2",
+  []],
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_1a", 
+  [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands. ^^An ancient evil stirred in the dark places and now it swarms into the light. Wise ones across the Mountains answered the call and hosts of Imladris march to battle, to fight for the North."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@You wouldn't have need of our aid if you kept your borders shut! ^^Tales of the Forest Witch only scare away witless fools - not so the orc filth we just slew."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks.^^ Stars had none to do with it - I sensed the filth and followed a trail. I would have slain them were you in danger or not."),
+    (try_end),
+  ], 
+    "{s10}", "woodelf_help_2a",
+  []],
+
+
+[trp_start_quest_woodelf,"woodelf_help_2",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@Keep your secrets then, friend, but the Golden Woods whisper of your kin’s arrival. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@We walk under the sun and the stars, to dwell in caves is not our desire. Still, your undoubtedly well meant council is well received. ^^Your wisdom and brave deeds shall be known, your needs met whenever you wander into our domain."),
+   (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@*he sighs and smiles slightly* ^^Very well. For our common purpose we are happy to share all, even if words are in short supply where you come from."),
+    (try_end),
+ ], 
+  "{s10}", "woodelf_help_3",[]],
+
+
+[trp_start_quest_woodelf,"woodelf_help_2a",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@For some months we have watched the orc filth multiplying and staining our woods. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@Calm yourself, friend. Pedin i phith in aniron, a nin u-cheniathog. ^^We shall speak of you to all our people. Your valour and deeds shall be known, your needs met whenever you come to bask in the light of our Golden Valley."),
+   (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@Stars sail through the heavenly seas, men tread the earth. Truly, who can say if their paths follow each other? We shall speak of you to all our people. Your deeds shall be known and your needs met, were you to chase a star to the Golden Valley."),
+    (try_end),
+ ], 
+  "{s10}", "woodelf_help_3",[]],
+
+[trp_start_quest_woodelf,"woodelf_help_3",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (this_or_next|eq,"$players_kingdom", "fac_imladris"),
+      (this_or_next|eq,"$players_kingdom", "fac_beorn"),
+      (             eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Lorien are not the ones you earned in your own faction, but the ones you will earn in Lothlorien. ^^See REPORTS for more information."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_lorien"),
+      (str_store_string, s10, "@(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Beorn are not the ones you earned in Lothlorien, but the ones you will earn in Beorn. ^^See REPORTS for more information."),
+    (try_end),
+ ], 
+  "{s10}", "woodelf_help_4",[]],
+
+
+
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_4",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@I have long wished to visit the woodland folk..."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@What form shall the favour of Lorien take..."),
+   (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@Our bees make honey and wax, our herds give milk, butter and cheese..."),
+    (try_end),
+ ], 
+  "{s10}", "woodelf_help_4a",[]],
+
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_4a",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@I have long wished to visit the woodland folk, taste your lembas and hear your songs! ^^We brought sparkling golden wines, dusty tomes and proud ancient banners to remind us of our stream-singing valley, but I’m curious what unique wonders are to be found in Laurelindorenan."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@What form shall the favour of Lorien take? ^^Gold that turns into leaves come morning? Clear tasteless drink and dusty fairy-bread for my troops? ^^Blood-red wine, freshly hunted deer, armouries filled with sharp spears and keen arrows! That is hospitality I prefer."),
+   (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@Our bees make honey and wax, our herds give milk, butter and cheese.^^ Bread we make ourselves, a sharp axe I can trade for with dwarves when they pass through.^^ What else would I need, what more than a pair of strong hands?"),
+    (try_end),
+ ], 
+  "{s10}", "woodelf_help_5",[]],
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_4",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@If fate wills it, I shall walk your lands again, and know all their secrets."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@If I ever have need for the kind of help Lorien can offer, I shall come for it. Whatever use it may be."),
+   (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@(nod and say nothing)"),
+    (try_end),
+ ], 
+  "{s10}", "woodelf_help_5",[]],
+
+[trp_start_quest_woodelf,"woodelf_help_5",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@Oh, there are many and any friend of Lorien is welcome to these gifts! ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your kindness with all you would require - bright weapons, hard corselets of mail, white-feathered arrows and provisions for your troops. ^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who could offer council to others, or ask favours of them."),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@The joys of the Golden Valley are many and a true friend of Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your effort with all you would require - bright weapons, hard corselets of mail, deadly arrows and nourishing food for your troops.^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who would share wisdom with others, or ask favours of them."),
+   (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@Our Golden Valley gives goods aplenty and a friend to Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you aid the designs of our Lady and her lords, our people will reward your effort with all you would require while far away from home."),
+    (try_end),
+ ], 
+  "{s10}", "woodelf_help_6",[]],
+
+[trp_start_quest_woodelf,"woodelf_help_6",
+ [], 
+  "(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.", "woodelf_help_7",[]],
+
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_7",
+ [
+    (str_clear,s10),
+    (try_begin),
+      (eq,"$players_kingdom", "fac_imladris"),
+      (str_store_string, s10, "@I shall keep that in mind.^^ Hantanyel, áva márië!"),
+    (else_try),
+      (eq,"$players_kingdom", "fac_woodelf"),
+      (str_store_string, s10, "@That may be so, some paths of the world run crooked.^^ Boe i 'waen!"),
+    (else_try),
+      (eq,"$players_kingdom", "fac_beorn"),
+      (str_store_string, s10, "@I seldom wander far away from home. Be off now, as fast as you can. There may be more goblins prowling around."),
+    (try_end),
+ ], 
+  "{s10}", "close_window",
+  [ 
+    (call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (call_script,"script_add_faction_rps", "$assist", 150),
+    (call_script,"script_increase_rank", "$assist",10),
+  ]],
+
+
+[trp_start_quest_woodelf|plyr,"woodelf_help_7",
+ [
+   
+    (eq,"$players_kingdom", "fac_beorn"),
+ ],
+  "(Raise your hand and leave without a word)", "close_window",
+  [ 
+     (str_clear,s10),
+    (call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (call_script,"script_add_faction_rps", "$assist", 150),
+    (call_script,"script_increase_rank", "$assist",10),
+  ]],   
+
+
+###Lorien####
+
+[trp_start_quest_beorning,"start", 
+  [
+    (eq, "$players_kingdom","fac_lorien"),
+  ], 
+    "*He sizes you up with a frown.* ^^Shiny things like you is what draws goblins from the mountains into our forest. But you kill them good, for that we give thanks.", "beorn_help1",
+  []],
+
+[trp_start_quest_beorning|plyr,"beorn_help1", 
+  [], 
+    "Well met! Even though we seldom leave our woods, I would not refuse aid to any who oppose servants of the Enemy.", "beorn_help2",
+  []],
+
+[trp_start_quest_beorning|plyr,"beorn_help1", 
+  [], 
+    "(nod without saying a word)", "beorn_help2a",
+  []],
+
+[trp_start_quest_beorning,"beorn_help2", 
+  [], 
+    "It is wise not to go near those who serve him, but today it seems we can not get far enough. ^^All our people will know how many goblin heads you let roll today! And all will welcome you with mead and bread, were you to arrive at one of our steads.", "beorn_help3",
+  []],
+
+[trp_start_quest_beorning,"beorn_help2a",
+ [],
+  "*grunts appreciatively* ^^An elf of a few words, eh? You seem more like our kind, none of that dull elven singing or boring poetry. ^^A good story, from the days when the hills were young and forests without end, that’s what we like best! ^^And that’s what I’ll tell my people about you. All will know how many orc filth you rid them of today. Mead and warm hearts will welcome you in any of our wooden halls.", "beorn_help3",[]],
+
+
+[trp_start_quest_beorning,"beorn_help3",
+ [], 
+  "(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Beorn are not the ones you earned in Lothlorien, but the ones you will earn in Beorn. ^^See REPORTS for more information.", "beorn_help4",
+  []],
+
+
+[trp_start_quest_beorning|plyr,"beorn_help4",
+ [], 
+  "*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?...", "beorn_help4a",
+ []],
+
+[trp_start_quest_beorning|plyr,"beorn_help4a",
+ [], 
+  "*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?... Golden mead is sweet and warms the heart, but perhaps elven blades and keen arrows are needed more in these dark days..", "beorn_help5",
+ []],
+
+ [trp_start_quest_beorning|plyr,"beorn_help4",
+ [], 
+  "(place a hand on your heart, nod and smile)", "beorn_help5",
+ []],
+
+[trp_start_quest_beorning,"beorn_help5",
+ [], 
+  "We may be rough and hairy, grim and dark. But we help our friends, those who help us. ^^If our chiefs think you and your actions worthy, we will follow you to battle.", "beorn_help6",
+ []],
+
+
+[trp_start_quest_beorning,"beorn_help6",
+ [], 
+  "(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.",
+   "beorn_help7",[]],
+
+
+ [trp_start_quest_beorning|plyr,"beorn_help7",
+ [], 
+  "Le fael, friend! Farewell. ", "close_window",
+ [
+    (call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (call_script,"script_add_faction_rps", "$assist", 150),
+    (call_script,"script_increase_rank", "$assist",10),
+  ]],
+
+ [trp_start_quest_beorning|plyr,"beorn_help7",
+ [], 
+  "(raise your hand and leave without a word)", "close_window",
+ [
+    (call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (call_script,"script_add_faction_rps", "$assist", 150),
+    (call_script,"script_increase_rank", "$assist",10),
+  ]],
+
+
+### Kham Start Quest Dialogue - Elves End
+
+### Kham Start Quest Dialogue - Easterlings Start
+
+[trp_start_quest_mordor_scout,"start", 
+  [],
+   "Great eyes and ears you have there! If you did not warn the group, those scouts would have escaped and have told their ugly lords that we are coming.", "kill_scout_1",[]],
+
+[trp_start_quest_mordor_scout|plyr,"kill_scout_1", 
+  [],
+   "Watch where you are taking us, Orc... We did not travel this far to get stopped before the war begins!", "kill_scout_2",[]],
+
+[trp_start_quest_mordor_scout,"kill_scout_2", 
+  [],
+   "And War we shall have! Here, take these. You can buy your men some food and drink when you get to Mordor.", "kill_scout_3",[]],
+
+[trp_start_quest_mordor_scout,"kill_scout_3", 
+  [],
+   "(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Mordor are not the ones you earned in your own faction, but the ones you will earn in Mordor. ^^See REPORTS for more information.", "kill_scout_4",[]],
+
+[trp_start_quest_mordor_scout|plyr,"kill_scout_4", 
+  [],
+   "You want us to drink Orc swill?! We'd rather be drinking our own piss!", "kill_scout_5",[]],
+
+
+[trp_start_quest_mordor_scout,"kill_scout_5", 
+  [],
+   "Ha! I knew you foreigners did such things! I've won my bet against Gothmog! haha!^^ I'll definitely tell him and the rest of the Mordor commands all about you! They'll definitely keep an eye on you.^^ If they like you, you'll get rewarded nicely. ^^MORE ORC BREW! AHAHA!", "kill_scout_6",[]],
+
+[trp_start_quest_mordor_scout,"kill_scout_6", 
+  [],
+   "(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.", "kill_scout_7",[]],
+
+[trp_start_quest_mordor_scout|plyr,"kill_scout_7", 
+  [],
+   "You disgust me, Orc! Onward to Mordor, before we decorate our spears with your head!", "kill_scout_8",[]],
+
+[trp_start_quest_mordor_scout,"kill_scout_8", 
+  [],
+   "Yea yea... piss drinking foreigner...!", "close_window",
+  [ 
+    (call_script,"script_stand_back"),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (call_script,"script_add_faction_rps", "$assist", 150),
+    (call_script,"script_increase_rank", "$assist",10),
+  ]],
+
+
+
+[trp_start_quest_mordor_scout|plyr,"woodelf_help_1", [], "I have never seen such a large orc before. Nasty things. Do not fret. I am a Soldier in this coming war that we have all been sensing.", "woodelf_help_2",[]],
+
+[trp_start_quest_mordor_scout,"woodelf_help_2", [], "You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.", "woodelf_help_3",[]],
+[trp_start_quest_mordor_scout|plyr,"woodelf_help_3", [], "Safe journey to you, Torbal. I'm sure we will meet again.", "close_window",[(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1),(change_screen_return),]],
+
+### Kham Start Quest Dialogue - Easterlings End
+
 
 [anyone,"start", [(eq,"$talk_context",tc_join_battle_ally)],"You have come just in time. Let us join our forces now and teach our enemy a lesson.", "close_window", [(call_script,"script_stand_back"),]],
 [anyone,"start", [(eq,"$talk_context",tc_join_battle_enemy)],"You are making a big mistake by fighting against us.", "close_window",[(call_script,"script_stand_back"),]],

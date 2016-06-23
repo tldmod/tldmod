@@ -1,5 +1,5 @@
 scenesfile version 1
- 261
+ 264
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -120,7 +120,7 @@ scn_quick_battle_random quick_battle_random 768 none none 0 0 300 300 -100 0x000
   0 
   0 
  outer_terrain_plain 
-scn_starting_quest starting_quest 256 none none 0 0 120 120 -100 0x30401ee300059966000001bf0000299a0000638f 
+scn_starting_quest starting_quest 256 none none 0 0 120 120 -100 0x000000003007dae3000378de000001bf0000299a000048be 
   0 
   0 
  outer_terrain_plain 
@@ -1044,3 +1044,15 @@ scn_lair_forest_bandits lair_forest_bandits 256 none none 0 0 100 100 -100 0x000
   0 
   0 
  outer_terrain_plain 
+scn_start_lorien start_lorien 256 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
+  0 
+  0 
+ outer_terrain_forest 
+scn_start_woodelf start_woodelf 256 none none 0 0 100 100 -100 0x00000000bc62c90d0002308c000048850000786900001ef5 
+  0 
+  0 
+ outer_terrain_forest 
+scn_start_rivendell start_rivendell 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_forest 

@@ -64,7 +64,7 @@ scenes = [
 ("quick_battle_corsair" ,sf_generate,"none", "none", (0,0),(200,200),-100,"0x0000000320014500800a6e9800007dd98000250100006dde",[],[]),
 #("town_1_arena_football",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c"        ,[],[], "outer_terrain_plain"),
 ("quick_battle_random"  ,sf_generate|sf_randomize,"none", "none", (0,0),(300,300),-100,"0x000000033c64cb1e0006d5b50000307900001e7500004547", [],[], "outer_terrain_plain"),
-("starting_quest"       ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x30401ee300059966000001bf0000299a0000638f",[],[], "outer_terrain_plain"),
+("starting_quest"       ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x000000003007dae3000378de000001bf0000299a000048be",[],[], "outer_terrain_plain"),
 
 # city centers
   ("minas_tirith_center"    ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
@@ -354,6 +354,9 @@ scenes = [
 ##Kham Quest Scenes
 
 ("lair_forest_bandits",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b00326d90003ecfb0000657e0000213500002461",  [],[],"outer_terrain_plain"), #Ring Hunters Lair
+("start_lorien"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+("start_woodelf"  ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
+("start_rivendell"  ,sf_generate,"none","none",(0,0),( 90, 90),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_forest"),
 
 ]
 
