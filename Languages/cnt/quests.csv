@@ -1,0 +1,74 @@
+qst_deliver_message|傳達消息到 {s13}
+qst_deliver_message_text|{s9} 要你給 {s13} 送信。 你接受這個任務時 {s13} 曾在 {s4}。
+qst_deliver_message_to_enemy_lord|傳達消息到 {s13}
+qst_deliver_message_to_enemy_lord_text|{s9} 要你給 {s15} 的 {s13} 送信。 你接受這個任務時 {s13} 曾在 {s4}。
+qst_raise_troops|在 {s14} 征 {reg1} 的稅
+qst_raise_troops_text|{s9} 要你在 {s14} 征 {reg1} 的稅并帶給他。
+qst_escort_messenger|護送信使到 {s14}
+qst_escort_messenger_text|無
+qst_hunt_down_fugitive|抓捕 {s4}
+qst_hunt_down_fugitive_text|{s9} 要你去抓捕亡命徒 {s4}。他據信在 {s3}。
+qst_bring_back_runaway_serfs|追回逃跑的奴隸
+qst_bring_back_runaway_serfs_text|{s9} 要你把三隊逃跑的奴隸帶回 {s2}。 他說這三隊人都吵 {s3} 的方向跑了。
+qst_follow_spy|跟蹤間諜會面
+qst_follow_spy_text|{s11} 要你跟蹤將要離開 {s12} 的間諜。你必須小心不要在途中被間諜發現，否則他可能會產生懷疑并返回。一旦間諜和同夥會面，你該伏擊并抓獲他們，然後都帶回 {s11}。
+qst_capture_enemy_hero|俘獲一名敵方指揮官
+qst_capture_enemy_hero_text|{s11} 要你去俘獲一名敵方指揮官
+qst_lend_companion|把你的同伴 {s3} 借給 {s9}
+qst_lend_companion_text|{s9} 要你把同伴 {s3} 借給他一周。
+qst_capture_prisoners|帶來 {reg1} 個敵軍俘虜
+qst_capture_prisoners_text|{s9} 要你帶給他 {reg1} 個敵軍俘虜。
+qst_investigate_fangorn|調查法貢森林
+qst_investigate_fangorn_text|{s9} 要你去找出法貢森林在發生什麼，並且回報信息。
+qst_capture_troll|俘獲一隻巨魔
+qst_capture_troll_text|{s9} 要你帶回一個兇暴的巨魔為了軍用
+qst_kill_troll|抵達狂暴的巨魔
+qst_kill_troll_text|{s9} 要你從近郊一隻狂暴的巨魔的威脅下解救 {s13}。
+qst_mirkwood_sorcerer|殺死幽暗森林的巫師
+qst_mirkwood_sorcerer_text|Galadriel保衛 Lothlorien的力量已經被 Dol Guldur的巫師的骯髒儀式破壞。儘管他是凡人，他代表了很大的威脅對精靈們。在Mirkwood森林尋找他，其實離Dol Guldur并不遠。請秘密行動來避免引發警報，畢竟衹有一次機會去擊敗他（注意存檔）
+qst_find_lost_spears|尋找Bladorthin國王丟失的長矛
+qst_find_lost_spears_text|{s9} 讓你去尋找丟失的長矛，長矛是矮人爲Bladorthin國王打造的。你需要尋求矮人的許可去尋找長矛在孤山的深處。
+qst_rescue_prisoners|營救{reg1} 的囚犯
+qst_rescue_prisoners_text|{s9}想要你去營救{reg1}的囚犯
+qst_scout_enemy_town|偵查敵人的城鎮
+qst_scout_enemy_town_text|{s9}要求你去偵察{s13}
+qst_dispatch_scouts|派遣偵察隊
+qst_dispatch_scouts_text|{s9}讓你派出一支偵察隊在 {s13}附近。
+qst_eliminate_patrols|消滅{reg1}敵人隊伍
+qst_eliminate_patrols_text|{s9}要求你去消滅 {reg1} {s13}敵人隊伍
+qst_lend_surgeon|借用你的外科醫生 {s3}給{s1}
+qst_lend_surgeon_text|借用你的經驗豐富的外科醫生 {s3} 給{s1}
+qst_follow_army|跟隨 {s9}的部隊
+qst_follow_army_text|無
+qst_report_to_army|向 {s13} 報告
+qst_report_to_army_text|無
+qst_deliver_cattle_to_army|給 {s13} 帶 {reg3} 單位的事物
+qst_deliver_cattle_to_army_text|無
+qst_join_siege_with_army|加入 {s14} 攻城戰
+qst_join_siege_with_army_text|無
+qst_scout_waypoints|偵察 {s13}, {s14} 和 {s15}
+qst_scout_waypoints_text|無
+qst_move_cattle_herd|移動{s12}到 {s13}
+qst_move_cattle_herd_text|{s10}的長著要你帶一些{s12} 去 {s13}
+qst_escort_merchant_caravan|護送補給隊到{s8}
+qst_escort_merchant_caravan_text|護送補給隊到{s8}
+qst_deliver_wine|給 {s4} 帶  {reg5} 單位的{s6}
+qst_deliver_wine_text|{s3} 的 {s9} 要你在7天內帶 {reg5} 單位的 {s6} 到{s4} 。
+qst_troublesome_bandits|獵殺棘手的哥布林（Goblins）
+qst_troublesome_bandits_text| {s4}的{s9}的要你去獵殺棘手的哥布林（Goblins）在鎮附近
+qst_deal_with_looters|解決獸人部落
+qst_deal_with_looters_text|{s4} 的長者要你解決 {s4} 附近的幾隊獸人部落
+qst_deal_with_night_bandits|解決狂暴的哥布林
+qst_deal_with_night_bandits_text|{s14} 的長者要你解決 {s14} 的暗夜哥布林
+qst_deliver_food|向 {s3} 支援 {reg5} 單位的 食物
+qst_deliver_food_text|{s3} 的 {s9} 要你十天內帶給他 {reg5} 單位的 食物。
+qst_deliver_iron|向 {s3} 支援 {reg5} 單位的 {s6}
+qst_deliver_iron_text|{s3} 的 {s9} 要你帶給他 {reg5} 單位的 {s6}。
+qst_tld_introduction|將魔多的獸人的消息帶給指揮官
+qst_tld_introduction_text|無
+qst_treebeard_kill_orcs|打敗伐樹的獸人部隊
+qst_treebeard_kill_orcs_text|樹人希望你找到并打敗在法貢森林伐樹的獸人。
+qst_oath_of_vengeance|復仇的誓言
+qst_oath_of_vengeance_text|{s1}的死亡而激怒了你，你在 {s2}部隊前發了一個復仇的誓言。你必須消滅盡可能多{s2}的軍隊在接下來幾天。你很清楚的明白你的跟隨者是你誓言的見證者，而且你也不想食言。一個關於殺戮復仇的誓言要開始了！
+qst_deliver_gift|從 {s2} 帶{s1}的{s4}給{s3}
+qst_deliver_gift_text|你已經要求了從{s2}傳遞{s1}的{s4}給{s3} 。

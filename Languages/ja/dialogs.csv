@@ -261,7 +261,7 @@ dlga_lord_give_troops_check_1:lord_pretalk|そうか、気が変わったのだ�
 dlga_lord_give_troops_check_1:lord_pretalk.1|この兵は我が軍には不要だ・・・^引き取って頂こう。
 dlga_lord_talk:lord_get_reward_item_ask|宝物を所望したい。
 dlga_lord_get_reward_item_ask:lord_talk|おぬしのインベントリには空きがない様子。 空きを確保してからまた来るがいい。
-dlga_lord_get_reward_item_ask:lord_get_reward_item|ほう？ 宝物を持つにふさわしいとされる者には、 相応のランクである事と、 少なからぬ影響力を持っている事が求められる。^どれを所望するのだ？
+dlga_lord_get_reward_item_ask:lord_get_reward_item|ほう？ 宝物を持つにふさわしいとされる者には、 相応のランクである事と、 少なからぬ影響力を持っている事が求められる。^望みの宝物は何だ？
 dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}:{s20} [{reg14}/{reg15}の影響力を消費します]
 dlga_lord_get_reward_item:lord_pretalk|では取り消します。
 dlga_lord_get_reward_item_answer:lord_pretalk|よかろう。 それをもって敵を打ち破る助けとするがよい。
@@ -519,7 +519,7 @@ dlga_start:close_window.12|おぬしの助勢があと一歩遅かったら、 �
 dlga_start:close_window.13|あぶないところを助けてもらったな、 {playername}！ この事は忘れまい。 {s43}
 dlga_start:close_window.14|{playername}、 ここでおぬしに会えるとはうれしい。 {s43}
 dlga_start:close_window.17|助勢を感謝します、指揮官殿。 あなたのおかげで{reg1?我々:私}は命拾いをしました。
-dlga_start:close_window.18|助勢を感謝します、指揮官殿。 あなたが近くにいるだけで心強く思います。
+dlga_start:close_window.18|助勢を感謝します、指揮官殿。 あなたが近くにおられるだけで心強く思います。
 dlga_start:close_window.19|助勢を感謝します、指揮官殿。 あなたが近くにおられたのは幸運でした。
 dlga_start:freed_hero_answer|解放してくれて助かった。 わが友人よ、恩に着る。
 dlga_freed_hero_answer:freed_hero_answer_1|解放したのではない。 おまえは我が捕虜となったのだ！
@@ -631,7 +631,7 @@ dlga_mayor_talk:mayor_deliver_iron.1|さあこれが鉄{だ/よ}、 {s4}を{reg9
 dlga_mayor_talk:mayor_deliver_iron.2|鉄を{reg9}ユニット頼まれていた{が/けれど}、 鉄が山ほど手に入った{ぞ/わ}。 {reg8}ユニットの{s4}{だ/よ}。
 dlga_mayor_deliver_iron:mayor_deliver_iron_completed|これはご苦労、 {playername}殿。 これらは我々の鉄鍛冶が あますところなく使うでしょう。
 dlga_mayor_deliver_iron_completed:close_window|出来る限りの事はしよう。
-dlga_mayor_talk:mayor_deliver_food|さあこれが食料{だ/よ}、 {s4}を{reg9}{だ/ね}。
+dlga_mayor_talk:mayor_deliver_food|さあこれが食料{だ/よ}、 {reg9}ユニットある{/わ}。
 dlga_mayor_deliver_food:mayor_deliver_food_completed|よくやってくれました、 {playername}殿、 これで食料庫もじゅうぶんうるおい、 しばらくは飢えを心配する必要もなくなりました。
 dlga_mayor_deliver_food_completed:close_window|出来る限りの事はしよう。
 dlga_mayor_begin:mayor_looters_quest_response|やあ、{playername}殿。 経過はどうですか？

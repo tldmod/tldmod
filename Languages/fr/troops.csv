@@ -278,18 +278,18 @@ trp_pinnath_gelin_archer|Archer de Pinnath Gelin
 trp_pinnath_gelin_archer_pl|Archers de Pinnath Gelin
 trp_pinnath_leader|Capitaine de Pinnath Gelin
 trp_pinnath_leader_pl|Capitaines de Pinnath Gelin 
-trp_blackroot_vale_archer|Chasseur du Val de la Racine Noire
-trp_blackroot_vale_archer_pl|Chasseurs du Val de la Racine Noire
-trp_veteran_blackroot_vale_archer|Archer novice du Val de la Racine Noire
-trp_veteran_blackroot_vale_archer_pl|Archers novice du Val de la Racine Noire
-trp_master_blackroot_vale_archer|Archer du Val de la Racine Noire
-trp_master_blackroot_vale_archer_pl|Archers du Val de la Racine Noire
-trp_footman_of_blackroot_vale|Fantassin du Val de la Racine Noire
-trp_footman_of_blackroot_vale_pl|Infanterie du Val de la Racine Noire
-trp_spearman_of_blackroot_vale|Lancier du Val de la Racine Noire
-trp_spearman_of_blackroot_vale_pl|Lanciers du Val de la Racine Noire
-trp_blackroot_leader|Capitaine du Val de la Racine Noire
-trp_blackroot_leader_pl|Capitaines du Val de la Racine Noire
+trp_blackroot_vale_archer|Chasseur du Val de Blackroot
+trp_blackroot_vale_archer_pl|Chasseurs du Val de Blackroot
+trp_veteran_blackroot_vale_archer|Archer novice du Val de la Blackroot
+trp_veteran_blackroot_vale_archer_pl|Archer novice du Val de Blackroot
+trp_master_blackroot_vale_archer|Archer du Val de Blckroot
+trp_master_blackroot_vale_archer_pl|Archers du Val de Blackroot
+trp_footman_of_blackroot_vale|Fantassin du Val de Blackroot
+trp_footman_of_blackroot_vale_pl|Infanterie du Val de Blackroot
+trp_spearman_of_blackroot_vale|Lancier du Val de Blackroot
+trp_spearman_of_blackroot_vale_pl|Lanciers du Val de Blackroot
+trp_blackroot_leader|Capitaine du Val de Blackroot
+trp_blackroot_leader_pl|Capitaines du Val de Blackroot
 trp_dol_amroth_youth|Recrue de Dol Amroth
 trp_dol_amroth_youth_pl|Recrues de Dol Amroth
 trp_squire_of_dol_amroth|Écuyer de Dol Amroth
@@ -1205,7 +1205,7 @@ trp_barman_edoras_pl|Meduseld, le Château d'Or
 trp_barman_aldburg|Tavernier
 trp_barman_aldburg_pl|le Château
 trp_barman_hornburg|Tavernier
-trp_barman_hornburg_pl|des Halls du Seigneur
+trp_barman_hornburg_pl|les Halls du Seigneur
 trp_barman_eastemnet|Tavernier
 trp_barman_eastemnet_pl|le Château
 trp_barman_westfold|Tavernier
@@ -1217,7 +1217,7 @@ trp_barman_eastfold_pl|le Château
 trp_barman_baraddur|Tavernier
 trp_barman_baraddur_pl|le Château
 trp_barman_morannon|Tavernier
-trp_barman_morannon_pl|le Chef de la Caverne
+trp_barman_morannon_pl|la caverne du chef
 trp_barman_mmorgul|Tavernier
 trp_barman_mmorgul_pl|la Tour
 trp_barman_cungol|Tavernier
@@ -1233,13 +1233,13 @@ trp_barman_camroth_pl|le Château-arbre
 trp_barman_thalls|Tavernier
 trp_barman_thalls_pl|la Salle du Trône
 trp_barman_beorn|Tavernier
-trp_barman_beorn_pl|Maison de Beorn
+trp_barman_beorn_pl|la Maison de Beorn
 trp_barman_moria|Tavernier
 trp_barman_moria_pl|la Chambre du Chef
 trp_barman_dale|Tavernier
 trp_barman_dale_pl|le Château
 trp_barman_esgaroth|Tavernier
-trp_barman_esgaroth_pl|au Hall
+trp_barman_esgaroth_pl|le Hall
 trp_barman_erebor|Tavernier
 trp_barman_erebor_pl|la Chambre du Seigneur
 trp_barman_dolguldur|Tavernier
@@ -1388,7 +1388,7 @@ trp_elder_westemnet|Thain de l'Ouestemnet
 trp_elder_westemnet_pl|La Ville
 trp_elder_eastfold|Thain de l'Estfolde
 trp_elder_eastfold_pl|La Ville
-trp_elder_morannon|Chef de la Morannon
+trp_elder_morannon|Chef de la porte noire
 trp_elder_morannon_pl|Les Grottes surplombant la Porte Noire
 trp_elder_mmorgul|Chef de Minas Morgul
 trp_elder_mmorgul_pl|la Cité morte
@@ -1412,7 +1412,7 @@ trp_elder_beorn|l'Ancien des Beornides
 trp_elder_beorn_pl|Le Hameau
 trp_elder_harad|Chef de Camp du Harad
 trp_elder_harad_pl|Le Camp
-trp_elder_rhun|Chef de Camp du Rhûn
+trp_elder_rhun|Chef de camp de Rhûn
 trp_elder_rhun_pl|Le Camp
 trp_elder_khand|Chef de Camp du Khand
 trp_elder_khand_pl|Le Camp
@@ -1424,12 +1424,12 @@ trp_elder_moria|Chef de la Moria
 trp_elder_moria_pl|Les Mines
 trp_elder_gunda|Maître des Cavernes
 trp_elder_gunda_pl|Les Cavernes
-trp_elder_dale|Quartier-Maître de Dale
+trp_elder_dale|Commandant de la place de Dale
 trp_elder_dale_pl|la Cité
-trp_elder_esgaroth|le Quartier-maître d'Esgaroth
+trp_elder_esgaroth|Commandant de la place d'Esgaroth
 trp_elder_esgaroth_pl|la ville du Lac
 trp_elder_erebor|Maître de Guilde d'Erebor
-trp_elder_erebor_pl|des Halls
+trp_elder_erebor_pl|les Halls
 trp_elder_dolguldur|Chef de Dol Guldur
 trp_elder_dolguldur_pl|La Forteresse Noire
 trp_elder_gondor_ac|Maître de camp
@@ -1462,7 +1462,7 @@ trp_elder_moria_ac|Chef de camp de la Moria
 trp_elder_moria_ac_pl|Le camp
 trp_elder_gunda_ac|Chef de camp de Gundabad
 trp_elder_gunda_ac_pl|Le camp
-trp_elder_dale_ac|le Quartier-maître de Dale
+trp_elder_dale_ac|le commandant de la place du Camp de Dale
 trp_elder_dale_ac_pl|Le camp
 trp_elder_guldur_ac|Chef de camp de Dol Guldur
 trp_elder_guldur_ac_pl|Le camp

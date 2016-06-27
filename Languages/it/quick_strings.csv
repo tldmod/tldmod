@@ -539,9 +539,9 @@ qstr_You_yell_for_your_ho|Urli per il tuo cavallo.
 qstr_THREE.._TWO..._ONE..|TRE... DUE... UNO... COMBATTERE!
 qstr_Leave_the_place_in_s|Allontanarsi dall'area in silenzio?
 qstr_Leave_scene?|Abbandonare l'area?
-; qstr_Trace_back_your_step|Trace back your steps and go back in the open now?
+qstr_Trace_back_your_step|Vuoi ripercorrere i tuoi passi e tornare all'aperto ora?
 qstr_There_is_no_way_out!|Non c'è via di fuga! Ti arrendi agli orchi?
-; qstr_Stealth_mini_game_tu|Stealth mini-game tutorial: There are two alarm levels. Level 1 is set off by the guards seeing a dead body or by them spotting you. Level 2 is set off by the guards spotting you when level 1 is already active. Level two is dangerous because guards will continue to arrive. You can avoid being spotted by staying hidden. To hid simply move behind various bits of cover.
+qstr_Stealth_mini_game_tu|Tutorial del mini-game Stealth: Ci sono due livelli di allarme. Il livello 1 scatta quando le guardie avvistano un corpo senza vita o ti vedono. Livello 2 scatta quando le guardie ti vedono ed il livello 1 è già attivo. Il livello due è pericoloso perché perché le guardie continueranno ad arrivare. Puoi evitare di farti vedere rimanendo nascosto. Per nasconderti puoi semplicemente spostarti dietro a vari punti di copertura.
 qstr_You_are_now_hidden.|Sei nascosto ora.
 qstr_You_move_out_of_hidi|Esci dal tuo nascondiglio
 qstr_The_guards_have_spot|Le guardie hanno scoperto un cadavere!
@@ -550,20 +550,20 @@ qstr_Alarm_Level_is_now_at|Il livello di allarme è ora a 0!
 qstr_The_guards_have_spott|Le guardie ti hanno scoperto!
 qstr_Alarm_Level_is_now_at_|Il livello di allarme è ora a 2!
 qstr_The_sorcerer_has_fle|Lo stregone è fuggito!
-; qstr_Report_this_ill_news|Report this ill news to the Lady at once.
+qstr_Report_this_ill_news|Riferisci al più presto queste cattive notizie alla Signora.
 qstr_The_sorcerer_is_flee|Lo stregone sta scappando! Uccidilo!
 qstr_The_sorcerer_is_dead|Lo stregone è morto!
 qstr_The_battle_is_won!|La battaglia è vinta!
 ; qstr_Look_at_my_over_the_|Look at my over-the-shoulder shot, {playername}! I'm so beautiful from a distance!
 ; qstr_You_wish_old_man_my_|You wish, old man, my over-the-shoulder view is much prettier!
-; qstr_You_should_really_se|You should really see Steward Denetor's Facebook photos, he's amazing!
+qstr_You_should_really_se|Dovresti vedere le foto di Steward Denetor su facebook, è fantastico!
 qstr_Press_Space_to_conti|Premi spazio per continuare
 qstr_{s24}__{reg13}_|{s24} ({reg13})
 qstr_Influence:^_{reg11}_|Influenza:^ {reg11} (with {s16})
-; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})
+qstr_Resource_Points:^_{r|Punti Risorsa:^ {reg12} (in {s16})
 qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
-; qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
+qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
 qstr_^No_food:___{reg7}|^Niente cibo: -{reg7}
 ; qstr_Current_party_morale|Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}
 qstr_Defending|Difendendo
@@ -611,10 +611,10 @@ qstr_Battles_only|Solo per le battaglie
 qstr_Doubled|Duplicato
 qstr_Tripled|Triplicato
 qstr_Quadrupled|Quadruplicato
-; qstr_You_drank_the_Ent_Wa|You drank the Ent Water...
+qstr_You_drank_the_Ent_Wa|Hai bevuto l'acqua Ent
 ; qstr_Fangorn_search:_fail|Fangorn search: failed.
-; qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
-; qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
+qstr_Troll_caged_in_wheel|Troll imprigionato in una gabbia su ruote.
+qstr_A_second_troll_is_ca|Un secondo troll imprigionato in una gabbia su ruote.
 qstr_Here_you_are.|Eccoti.
 ; qstr_Player_was_moved_to_|Player was moved to {s10}.
 ; qstr_neutral_whereabouts|neutral whereabouts
@@ -635,16 +635,16 @@ qstr_evil_man|Uomo malvagio
 qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Solo per le truppe regolari
 qstr_Heroes_only|Solo per gli eroi
-; qstr_Regulars_and_Heroes|Regulars and Heroes
+qstr_Regulars_and_Heroes|Regolari e Eroi
 qstr_HP_lost_from_poisoni|HP persi per il veleno
 qstr__{s17}.|, {s17}.
-; qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
+qstr_A_group_of_{s1}_is_{|Un gruppo di {s1} si sta {s10} verso di te.
 qstr_You_are_attacking_a_|Stai attaccando un gruppo di {s1}.
 qstr_The_battle_against_t|La battaglia contro il gruppo di {s1} continua.
 qstr_{s13}_asked_you_to_r|{s13} Ti ha chiesto di fare rapporto da lui con almeno {reg13} truppe.
 qstr_{s13}_ordered_you_to|{s13} Ti ha ordinato di unirti nell'assalto contro {s14}.
 qstr_You_were_victorious!|Hai vinto!
-; qstr_The_battle_was_lost.|The battle was lost. Your forces were utterly crushed.
+qstr_The_battle_was_lost.|La battaglia è persa. Le tue forze sono state completamente annientate.
 qstr_Your_companions_carr|I tuoi compagni ti trasportano via dal combattimento
 qstr_You_have_defeated_th|Hai sconfitto il nemico.
 qstr_You_have_retreated_f|Ti sei ritirato dalla battaglia
@@ -658,11 +658,11 @@ qstr_Prisoners_rescued_so|Prigionieri salvati per ora: {reg1}
 ; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
 ; qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
 qstr_Some_of_your_tendons|Parte dei tuoi tendini sono stati danneggiati durante la battaglia. Perdi 1 punto in Forza
-; qstr_You_took_a_nasty_wou|You took a nasty wound which will cause you to limp slightly even after it heals. Your lose 1 agility.
-; qstr_You_have_trouble_thi|You have trouble thinking straight after the battle, perhaps from a particularly hard hit to your head, and frequent headaches now plague your existence. Your intelligence is reduced by 1.
-; qstr_Perhaps_I_m_getting_|Perhaps I'm getting unlucky...
+qstr_You_took_a_nasty_wou|Hai subito una grave ferita che ti lascerà leggermente zoppo anche dopo la sua guarigione. Perdi 1 di agiltà.
+qstr_You_have_trouble_thi|Dopo la battaglia hai difficoltà a concentrarti, forse a causa di un colpo alla testa particolarmente forte, e frequenti mal di testa ora tormentano la tua esistenza. La tua intelligenza viene ridotta di 1.
+qstr_Perhaps_I_m_getting_|Forse sto diventando sfortunato...
 qstr_Retirement_is_starti|Il ritiro comincia a suonarti sempre meglio.
-; qstr_No_matter!_I_will_pe|No matter! I will persevere!
+qstr_No_matter!_I_will_pe|Non importa! Continuerò a insistere!
 qstr_What_did_I_do_to_des|Cosa ho fatto per meritarmi questo?
 qstr_I_suppose_it_ll_make|Suppongo che ne faccia una buona storia, almeno...
 qstr__{s17}|, {s17}
@@ -677,7 +677,7 @@ qstr__You_see_the_banner_o|Vedi lo stendardo di {s7} sui cancelli della città
 qstr__The_townsfolk_here_|Gli abitanti di questo luogo hanno dichiarato la loro indipendenza
 qstr_Go_to_the_secret_ent|Vai all'entrata segreta di Moria
 qstr_Search_for_a_secret_|Cerchi un'entrata segreta per Moria
-; qstr_Get_book.|Get book.
+qstr_Get_book.|Prendi il libro.
 qstr_The_{reg6?town_s:cas|Le scorte alimentari {reg6?della città:del castello} possono resistere per {reg3} altri giorni.
 qstr_The_{reg6?town_s:cast|Le scorte alimentari {reg6?town's:castle's} si sono esaurite e i difensori hanno fame.
 qstr_You_re_preparing_to_|Ti stai preparando per attaccare le mura, il lavoro dovrebbe finire in {reg9} ore.
@@ -785,7 +785,7 @@ qstr_{reg65?madame:sir}|{reg65?madame:signore}
 qstr_How_do_magnets_work?|Come funzionano i magneti?
 qstr_Um..._by_enchanting_|Um... dal ferro incantato?
 qstr_Magnets_are_made_of_|I magneti sono fatti di metallo, che viene estratto dal terreno . Sono magnetici perché il metallo contiene ancora pezzi di gravità all'interno di esso.
-; qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
+qstr_i_wont_a_bonerlrord_|Io non...un comdnte...al prto...!!11!
 qstr_I_m_sure_the_TLD_tea|Sono sicuro che la squadra di TLD arriverà quando può.
 qstr_Install_TLD_in_your_|Installare TLD nella cartella Moduli Bannerlord, aggiungere la riga 'compatible_with_wfas = 1' a module.ini, e si può giocare sia su Warband e Warrider 0.202!\n
 qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
@@ -793,7 +793,7 @@ qstr_Well_there_s_a_lot_o|Beh, ci sono un sacco di nuove grafiche e roba, penso 
 qstr_It_has_been_recently|Di recente è stato rilasciato, se vi siete persi il link, è possibile scaricarlo a lemonparty.org.
 qstr_i_wont_decapitated_e|Voglio decapitare gli elefanti in multi, ora!!!
 ; qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
-; qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
+qstr_There_is_a_hidden_el|In TLD c'è una modalità deathmatch elefanti, ma prima devi rimuovere tutti i tuoi salvataggi, giocare per 100 giorni di gioco senza salvare poi andare alla schermata del personaggio e premere Alt+F4. Ne vale la pena!
 ; qstr_Did_you_bring_your_z|Did you bring your zupdog?
 ; qstr_What_s_zupdog?|What's zupdog?
 ; qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
@@ -806,10 +806,10 @@ qstr_i_wont_decapitated_e|Voglio decapitare gli elefanti in multi, ora!!!
 ; qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
 ; qstr_Every_mod_team_works|Every mod team works according to their standards, you can't make mods cooperate if their vision is different.
 ; qstr_Because_we_don_t_hav|Because we don't have a sense of humour and most of them are just too funny for us.
-; qstr_In_movies_trolls_are|In movies trolls are big and fat, wai u make me skinny?
-; qstr_We_interpreted_Tolki|We interpreted Tolkien like this.
-; qstr_But_we_did_make_you_|But we did make you as stupid as in the movies. That's gotta count for something.
-; qstr_What_is_news?_Got_an|What is news? Got any screenshots?
+qstr_In_movies_trolls_are|Nei film i troll sono grandi e grossi, perché mi avete fatto così smilzo?
+qstr_We_interpreted_Tolki|Abbiamo interpretato Tolkien così.
+qstr_But_we_did_make_you_|Ma ti abbiamo fatto stupido come nei film. Qualcosa conterà. 
+qstr_What_is_news?_Got_an|Quali nuove? Hai qualche screenshot?
 ; qstr_Well_just_look_aroun|Well just look around you, what do you need screenshots for?
 qstr_Say_cheese!|Sorridi!
 ; qstr_Why_did_you_make_mod|Why did you make mod installation so complex?
@@ -825,13 +825,13 @@ qstr_I_am_in_perfect_heal|Sono in perfetta forma.
 ; qstr_I_am_suffering_from_{s1|I am suffering from {s1}, {s2}, {s3} and {s4}.
 qstr_I_don_t_have_any_ser|Non ho nessuna ferita grave, ti ringrazio.
 qstr_Good_day_to_you.|Buona giornata a te.
-; qstr_Ah_it_s_you_again._G|Ah, it's you again. Goodbye.
+qstr_Ah_it_s_you_again._G|Ah, sei tu di nuovo. Arrivederci.
 qstr_My_apologies_if_I_wa|Mi scuso se prima sono stato rude. Ancora, qual'era la tua storia?
-; qstr_I_was_reconsidering_|I was reconsidering our last conversation. What was your story again?
+qstr_I_was_reconsidering_|Stavo ripensando alla nostra ultima conversazione. Qual'era la tua storia puoi ricordarmela?
 ; qstr_Greetings_{s23}_{s24|Greetings, {s23}, {s24}.
 ; qstr_Greetings_{s23}.|Greetings, {s23}.
-; qstr_So_you_are_{s23}._I_|So, you are {s23}. I hear you fight for our {s25} friends, so I guess I should consider you an ally.
-; qstr_I_need_volunteers_wi|I need volunteers willing to follow me on dangerous missions.
+qstr_So_you_are_{s23}._I_|Così, tu sei {s23}. Ho saputo che hai combattuto per i nostri amici {s25}, quindi credo che ti dovrei considerare un alleato.
+qstr_I_need_volunteers_wi|Ho bisogno di volontari desiderosi di seguirmi in missioni pericolose.
 qstr_I_need_some_soldiers|Ho bisogno di alcuni soldati per rimpiazzare i caduti.
 qstr_{playername}_s_Reser|Riserve di {playername}
 qstr_Excellent_job_{s23}!|Eccellente lavoro, {s23}! Vorrei che tutti i comandanti si dedicassero come fai tu.^
@@ -839,16 +839,16 @@ qstr_Nicely_done_{s23}.|Ben fatto, {s23}.
 qstr_Good_work_{s23}.|Ottimo lavoro, {s23}.
 qstr_The_more_you_capture|Più ne catturi, meglio è, {s23}.
 ; qstr_Caught_a_few_straggl|Caught a few stragglers, {s23}?
-; qstr_I_am_sorry_no_one_el|I am sorry, no one else is ready to go.^They will serve {s22} by holding the defences here.
+qstr_I_am_sorry_no_one_el|Mi dispiace, nessun'altro è pronto per andare.^Serviranno {s22} mantenendo le difese qui.
 ; qstr_Tough_luck_but_we_do|Tough luck, but we don't have any. Come back later.
-; qstr_There_are_brave_sold|There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here.^^^[not enough Resource Points]
+qstr_There_are_brave_sold|Ci sono soldati coraggiosi disposti a rischiare le loro vite, ma in questi tempi bui non posso permettere loro di lasciare le difese qui.^^^[Punti Risorsa non sufficienti] 
 ; qstr_We_have_some_spare_t|We have some spare troops, but we can't afford to lose them to the likes of you.^^^[not enough Resource Points]
-; qstr_There_are_brave_soldi|There are brave soldiers here volunteering for field duty.^^I think I can let a few of them go with you.
+qstr_There_are_brave_soldi|Ci sono dei soldati coraggiosi qui che si sono offerti volontari per compiti sul campo.^^Penso di poter lasciare che alcuni di loro vengano con te.
 ; qstr_There_are_spare_troo|There are spare troops here that wouldn't mind a little blood-letting.^^I can let a few of them go with you.
 ; qstr_Strenghten_defences_|Strenghten defences in {s21}? This is surely welcome. Note that we can only accept our own people.
 ; qstr_Strenghten_defences_i|Strenghten defences in {s21}? Well, as long as they are not crippled, why not. Just be sure you give away our own troops, for we have no use for outsiders here.
-; qstr_Please_return_them_i|Please return them in one piece. I personally know the valor of each one of them. And here we need every soul.
-; qstr_Don_t_let_them_all_d|Don't let them all die in one place. Except the cowards. Put those in your front ranks, you know the drill by now.
+qstr_Please_return_them_i|Per favore falli tornare tutti di interi. Conosco personalmente il valore di ognuno di loro. E qui abbiamo bisogno di ogni singola anima.
+qstr_Don_t_let_them_all_d|Non farli morire tutti in una volta sola. Eccetto i codardi. Quelli mettili nelle tue prime file, conosci l'addestramento ormai.
 qstr_Thank_you_commander.|Grazie, comandante.^
 ; qstr_^{s22}_is_grateful_t|^{s22} is grateful to you, {s23}, {s29}^
 ; qstr_{s31}{reg28?Those:Th|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
@@ -858,7 +858,7 @@ qstr_I_don_t_need_them_an|Non ne ho bisogno comunque, quindi tienilo.
 qstr_It_is_my_duty_to_pro|Il mio dovere è proteggere questa gente.
 qstr_It_is_my_duty_to_prot|Il mio dovere è proteggere i nostri alleati.
 qstr_I_am_{s4}_{s15}_of_{|Io sono {s4}, {s15} di {s6}
-; qstr_I_am_{s4}_a_commande|I am {s4}, a commander of {s6}
+qstr_I_am_{s4}_a_commande|Io sono {s4}, un comandante di {s6}
 ; qstr_{s9}{reg5?_and_the_r|{s9}{reg5? and the ruler of {s8}.:.
 qstr_Very_well_done_{play|Ben fatto, {playername}! Hai catturato sia la spia e il suo mandatario, proprio come avevo sperato, ed entrambi sono ora bloccati in modo sicuro, in attesa di essere interrogati. Avranno qualche spiegazione! In ogni caso sono molto contento del tuo successo, { playername }, e ti do questa borsa come segno del mio apprezzamento.
 qstr_Beautiful_work_{play|Bel lavoro, {playername}! Hai catturato sia la spia che il suo mandatario, proprio come speravo, e  la coppia ora è al sicuro nella mia caverna, aspettando di essere interrogati! Il mio aguzzino sarà occupato questa notte! Ad ogni modo, sono veramente contento del tuo successo,{playername}, e ti do questa borsa come segno del mio apprezzamento.
@@ -882,11 +882,11 @@ qstr_You_don_t_look_too_s|Non sembri troppo forte, hai bisogno di truppe?
 qstr_^{s14}_is_grateful_t|^{s14} ti è grato, {playername}, {s29}^
 qstr_{s31}{reg28?Those:That|{s31}{reg28?Quelli:Quello} il coraggio {reg28?soldati:soldato} ci aiuterà sicuramente a difendere le nostre terre. {s32}^^[earned {reg14} punti Risorsa {s14}]
 ; qstr_{s31}{reg28?Those:That}|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^^[earned {reg14} Resource Points of {s14}]
-; qstr_{s4}_^Oh_and_take_bac|{s4} ^Oh, and take back those soldiers who are not our kin, I have no use for them.
+qstr_{s4}_^Oh_and_take_bac|{s4} ^Oh, e riprenditi quei soldati che non sono della nostra gente, non so cosa farmene di loro.
 qstr_It_is_my_duty_to_hel|È il mio dovere aiutare la nostra gente.
 qstr_It_is_my_duty_to_help|È il mio dovere aiutare i nostri alleati.
-; qstr_The_people_of_{s3}_t|The people of {s3} thank you for your gift, {playername}. In exchange for your gift of {s1}, we will send the people of {s4} a gift of {s2}. I thank you once again, {playername}.
-; qstr_I_want_to_deliver_a_|I want to deliver a gift to our allies.
+qstr_The_people_of_{s3}_t|La gente di {s3} ti ringrazia per il tuo dono, {playername}. In cambio della tua donazione di {s1}, invieremo alla gente di {s4} un dono di {s2}. Ti ringrazio ancora una volta, {playername}.
+qstr_I_want_to_deliver_a_|Voglio consegnare un regalo ai nostri alleati.
 qstr_delivering_a_gift|consegnare un regalo
 ; qstr_I_want_to_bring_a_br|I want to bring a bribe to our allies.
 ; qstr_delivering_a_bribe|delivering a bribe
@@ -897,12 +897,12 @@ qstr_Gift|Regalo
 ; qstr_You_have_requested_to|You have requested to deliver a bribe of {s1} to {s3} from {s2}. Hopefully you can get some sort of reward from them in exchange.
 ; qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
 ; qstr_You_spent_{reg0}_of_|You spent {reg0} of your influence with {s1}, with {reg1} remaining.
-; qstr_The_War_is_over_{pla|The War is over, {playername}, haven't you heard?
-; qstr_We_are_at_war_with_{|We are at war with {s12}. However, we are mostly fighting against {s13}.
-; qstr_We_are_at_war_with_{s|We are at war with {s12}. However, there are only skirmishes at the moment.
-; qstr_we_are_not_too_conce|we are not too concerned with them at the moment, since we are fighting other enemies closer to home
+qstr_The_War_is_over_{pla|La guerra è finita, {playername}, non l'hai saputo?
+qstr_We_are_at_war_with_{|Siamo in guerra con {s12}. Tuttavia, perlopiù stiamo combattendo contro {s13}.
+qstr_We_are_at_war_with_{s|Siamo in guerra con {s12}. Tuttavia, ci sono solo schermaglie al momento.
+qstr_we_are_not_too_conce|loro non ci preoccupano più di tanto al momento, visto che stiamo combattendo altri nemici più vicini a casa
 qstr__under_your_orders|, ai tuoi ordini
-; qstr_These_soldiers_may_w|These soldiers may well turn the tide in my plans, {playername}. I am confident you've trained them well. My thanks and my compliments to you.
+qstr_These_soldiers_may_w|Questi soldati potrebbero di sicuro dare la svolta ai miei piani, {playername}. Sono certo che li hai addestrati bene. I miei ringraziamenti e complimenti vanno a te.
 ; qstr_Good_work_in_shaping|Good work in shaping up those recruits, {playername}, you have been most useful. Hopefully they'll last longer than the last batch, but come see me again if they don't.
 ; qstr_Well_the_soldiers_ar|Well, the soldiers are at your command now, sir. I am sure you will take good care of them.
 ; qstr_Well_you_may_do_as_y|Well, you may do as you please. My companions and I can always toughen up more if needed.
@@ -916,7 +916,7 @@ qstr__under_your_orders|, ai tuoi ordini
 ; qstr_Lend_your_experience|Lend your experienced surgeon {s3} to {s1}.
 qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername} , ma quando stavo ispezionando i miei soldati l'altro giorno e ci sono alcuni di loro che non sanno quale fine della spada tenere. Hanno bisogno di qualcuno che gli mostri il vero significato del valore. Sei un guerriero di fama,  {playername} . Addestrerai alcune truppe per me? Te ne sarei molto grato.
 ; qstr_No_commander_should_h|No commander should have to admit this, {playername}, but I was inspecting my soldiers the other day and executed some of them for incompetence. They need someone with steel in his back to flog some courage into them, or kill them trying. You are a warrior of renown, {playername}. Will you train some troops for me? I can make it worthwhile for you.
-; qstr_{s9}_asked_you_to_ra|{s9} asked you to raise {reg1} {s14} and bring them to him.
+qstr_{s9}_asked_you_to_ra|{s9} ti ha chiesto di aumentare {reg1} {s14} e portarli da lui.
 ; qstr_{s9}_asked_you_to_hu|{s9} asked you to hunt down a fugitive named {s4}. He is currently believed to be at {s3}.
 ; qstr_{s9}_asked_you_to_ca|{s9} asked you to catch the three groups of runaway slaves and bring them back to {s4}, alive and breathing. He said that all three groups are heading towards {s3}.
 ; qstr_{s11}_asked_you_to_f|{s11} asked you to follow the spy that will leave {s12}. Be careful not to let the spy see you on the way, or he may get suspicious and turn back. Once the spy meets with his accomplice, you are to capture them and bring them back to {s11}.
@@ -981,7 +981,7 @@ qstr_I_have_some_of_your_|Ho alcune delle mie genti con me. Le lascierò seguirt
 qstr_{s4}_It_is_always_go|{s4} è sempre bello vedere uno dei nostri.
 qstr_a_nearby_town|una città vicina
 qstr_that_town_over_there|quella città laggiù
-; qstr_{s4}^We_are_from_{s1|{s4}^We are from {s11}, scouting in the direction of {s12}.
+qstr_{s4}^We_are_from_{s1|{s4}^Noi veniamo da {s11}, esploriamo in direzione di {s12}.
 ; qstr_{s4}^We_are_{reg1?fo|{s4}^We are {reg1?foraging:raiding} around {s11}.
 qstr_{s4}^We_are_patrolli|{s4}^Stiamo pattugliando intorno a {s11}.
 qstr_{s4}^We_are_carrying|{s4}^Stiamo trasportando risorse da {s11} a {s12}.

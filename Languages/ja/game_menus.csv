@@ -78,9 +78,9 @@ mno_start_go|ゴンドール、白い塔の王国
 mno_start_ro|ローハン、馬の民
 mno_start_du|ドゥネダイン、いにしえの王族の末裔
 mno_start_be|ビヨルン一党、熊人族
-mno_start_da|デール、北方の王国
+mno_start_da|谷間の国、北方の王国
 menu_start_good_elf|^^^^^^^^^^どちらの森にお住まいですか、賢者どの？
-mno_start_ri|リヴェンデル、エルロンド卿の率いる国
+mno_start_ri|裂け谷、エルロンド卿の率いる国
 mno_start_lo|ロスロリエン、ガラドリエル夫人の治める国
 mno_start_mi|闇の森、シルヴァン・エルフの国
 menu_start_good_dwarf|^^^^^^^^^^一族を選んでください:
@@ -270,7 +270,7 @@ mno_town_approach|{s1}へ向かう・・・
 mno_town_castle|{s1}に行く。
 mno_town_castle_door|城に入る。
 mno_town_center|中央広場へ向かう・・・
-mno_town_center_door|町の中心部へ行く。
+mno_town_center_door|拠点の中心部へ行く。
 mno_aw_chamber_door|扉を開ける。
 mno_trade_with_arms_merchant|{s40}に行く。
 mno_trade_with_horse_merchant|{s41}に行く。
@@ -322,10 +322,10 @@ menu_custom_battle_choose_faction2|^^^^^^^^^^光のファクションを選択�
 mno_cb_gondor|ゴンドール
 mno_cb_gondor1|ローハン
 mno_cb_gondor2|ロスロリエン
-mno_cb_gondor3|リヴェンデル
+mno_cb_gondor3|裂け谷のエルフ
 mno_cb_gondor4|闇の森のエルフ
 mno_cb_gondor5|ドワーフ
-mno_cb_gondor6|デール
+mno_cb_gondor6|谷間の国
 mno_cb_gondor7|ビヨルン一党
 menu_custom_battle_choose_faction3|^^^^^^^^^^闇のファクションを選択してください
 mno_cb_mordor|モルドール

@@ -69,6 +69,6 @@ qst_tld_introduction_text|Aucune
 qst_treebeard_kill_orcs|Vaincre l'armée d'Orques bûcherons
 qst_treebeard_kill_orcs_text|Sylvebarbe vous demande de trouver et de tuer les Orques qui coupent les arbres de Fangorn.
 qst_oath_of_vengeance|Serment de Vengeance
-qst_oath_of_vengeance_text|Enragé par la mort de {s1}, vous avez prêté un serment de vengeance contre les forces de {s2}. Vous devez maintenant détruire le plus d'armées de {s2} que possible dans les prochains jours. Vous êtes conscients que vos partisans ont assisté à ce serment et vous ne voulez pas être vu comme un parjure. Une effusion de sang doit commencer maintenant !
+qst_oath_of_vengeance_text|Enragé par la mort de {s1}, vous avez prêté un serment de vengeance contre les forces {s2}. Vous devez maintenant détruire le plus d'armées {s2} que possible dans les prochains jours. Vous êtes conscients que vos partisans ont assisté à ce serment et vous ne voulez pas être vu comme un parjure. Une effusion de sang doit commencer maintenant !
 qst_deliver_gift|Délivrer un {s4} de {s1} de {s2} à {s3}
 qst_deliver_gift_text|Vous avez demandé de livrer un {s4} au {s1} des {s3} au départ de {s2}.

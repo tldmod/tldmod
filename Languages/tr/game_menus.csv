@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
 mno_start_good|Yeni bir çağın şafağı
 mno_start_evil|İnsanların alacakaranlığı
 mno_go_bback|Geri dön
-menu_start_phase_2|^^^^^ Orta DÜnya. Doğuda bir gölge büyüyor, ^ ve ve karanlık şeyler uzun süredir saklandıkları yerlerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
+menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve ve karanlık şeyler uzun süredir saklandıkları yerlerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtiğin yolda ilerle...
 menu_start_game_3            |^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1 |Gondor ile Harad arasında çatışma
@@ -23,16 +23,16 @@ mno_go_back_dot|Geri dön
 mno_view_upkeep_costs|Bakım ücretini gör
 mno_view_character_report|Karakter raporunu gör
 mno_view_party_size_report|parti boyutu raporunu görüntüle
-mno_view_morale_report|Grup moral raporuna gör
-mno_view_character_report_02|NPC durum kontrolü
+mno_view_morale_report|Grup moral raporuna gör.
+mno_view_character_report_02|NPC durum kontrolü.
 mno_view_faction_strengths_report|Taraf kuvvetlerinin raporunu gör.
 mno_view_traits_report|Özellikleri gör.
-mno_resume_travelling|Yolculuğa devam et
-mno_custom_battle_go|Başla
-mno_leave_custom_battle_2|İptal
+mno_resume_travelling|Yolculuğa devam et.
+mno_custom_battle_go|Başla.
+mno_leave_custom_battle_2|İptal.
 menu_custom_battle_end|Savaş bitti. {s1}, {reg5} tane düşman öldürdün ve {reg6} tane askerini savaşta kaybettin. {reg7} tane düşmanı kendin öldürdün.
-mno_replay|Savaşı tekrar oyna
-mno_continue_dot|Devam et
+mno_replay|Savaşı tekrar oyna.
+mno_continue_dot|Devam et.
 menu_quick_battle_general_test|Şimdiki savaş: ^takım A: {reg10} {s10}^^VS^^ takım B: {reg11} {s11}
 mno_tAA|+5 A Takimi
 mno_tAB|-5 B Takimi
@@ -205,21 +205,21 @@ menu_kingdom_army_quest_report_to_army|{s8} düzenleyeceği sefere katılmanı i
 mno_reject|Çok mesgul oldugunu ilet.
 mno_send_word|Hemen gelip ona katılacagini ilet.
 menu_kingdom_army_quest_messenger|{s8} seninle bir görev hakkında konuşmak istediğini iletiyor. Mümkün olduğunca çabuk gelip onu görmeni istiyor.
-; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
-; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
+menu_kingdom_army_quest_join_siege_order|{s8} sana {s9} kuşatmasına tam taarruz hazırlığı ile katılman için söz yolladı .    Askerlerin ne uğruna olursa olsun {s9} u alacak.
+menu_kingdom_army_follow_failed|Emirlerle itaatsizlik ettin ve {s8} i takip etme görevinde başarısız oldun. {s8} daha önemli bir işin olduğunu varsayıp sana bir mesaj yolladı, ama unutma ki sabrı sonsuz değil.
 menu_battle_debrief|{s11}^Kayıpların:{s8}{s10}^^Düşman Kayıpları:{s9}
 mno_inspect_troll|Yere serilen trolü kontrol et
 menu_pre_join|{s2} ve {s1} arasında bir savaşa denk geliyorsun. Karar veriyorsun...
 mno_pre_join_help_attackers|{s2}'e yardıma git.
 mno_pre_join_help_defenders|{s1}'in yardımına koş.
 mno_pre_join_leave|Karışma.
-; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
+menu_join_battle|^^^{s1} e rakip olarak {s2] ye yardım ediyorsun.^ Düşmanın {reg11} askerine karşı senin {reg22} askerin bulunuyor.^^Savaş gerçekleşiyor {s3}{s4}.
 mno_join_attack|Düşmana hücum et.
 mno_join_order_attack|Askerlerine, sen geride kalırken müttefiklerinizle saldırmalarını emret.
 mno_join_leave|Geri çekil.
 menu_join_order_attack|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
 mno_enter|Giriş.
-menu_battlefields|^^^^^^^^^^savaş bölgesi seç.
+menu_battlefields|^^^^^^^^^^Savaş Bölgesi Seç.
 mno_enter_f1|Bölge 1
 mno_enter_f2|Bölge 2
 mno_enter_f3|Bölge 3
@@ -227,14 +227,14 @@ mno_enter_f4|Bölge 4
 mno_enter_f5|Bölge 5
 menu_join_siege_outside|^^^^^^{s1}, {s2} tarafından kuşatıldı.
 mno_approach_besiegers|Kuşatma kampına yaklaş.
-; mno_pass_through_siege|Pass through the siege lines and enter {s1}.
-; menu_cut_siege_without_fight|The besiegers let you approach the gates without challenge.
-; menu_besiegers_camp_with_allies|{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,    where you and your troops are welcomed.
+mno_pass_through_siege|Kuşatmayı geç ve {s1} e gir.
+menu_cut_siege_without_fight|Kuşatmacılar zorluk çıkartmadan kapılara yaklaşmana izin verdi.
+menu_besiegers_camp_with_allies|{s1} kuşatma altında. {s2} un sancağı kuşatmacıların kampının üstünde dalgalanıyor,    burada sen ve birliğin memnuniyetle karşılanıyorsunuz.
 mno_talk_to_siege_commander|komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|askerlerine sıradaki mücadelede sensiz savaşmalarını emret.
 ; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
-; mno_moria_exit_scene|Find your way out!
+mno_moria_exit_scene|Çıkış yolunu bul!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
 mno_moria_enter|Gizli girişten Moria'nın ana salonuna dön.
 mno_moria_enter_door|Moria'ya gir
@@ -248,7 +248,7 @@ mno_attack_stay_back|sen geride beklerken askerlerine saldırma emri ver...
 mno_build_ladders|Duvarlara saldırmak için merdivenleri hazırla.
 mno_lift_siege|Kuşatmayı terk et.
 menu_siege_attack_meets_sally|Müdafi'ler taaruzunu karşılamak üzere dışarıya çıktılar.
-; menu_construct_ladders|As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to build enough scaling ladders for the assault.
+menu_construct_ladders|Mühendislik yeteneği en yüksek olan birlik üyesi ({reg2}) ile birlikte, {reg3?you estimate:{s3} estimates} saldırı için kurulacak merdivenlerin yapımı {reg4} saat alacak.
 mno_build_ladders_cont|Yap.
 menu_castle_attack_walls_simulate|{s4}^^Senin kayıpların:{s8}^^Düşmanın kayıpları: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
@@ -264,11 +264,11 @@ menu_town_bandits_succeeded|^^^^^Goblin'ler önünde buğdayların orağa karş�
 menu_town_brawl_lost|^^^^^^Şuurunu kaybettin. Saldırdığın kişiler günlük işlerine dönmeden önce çabucak değerli eşyalar için üzerini ararlar.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
 menu_town|{s60}.{s12}{s13} ' içinde vardın.
-; mno_town_menu_0|Go to some location.
+mno_town_menu_0|Bir yere git.
 ; mno_town_menu_0_door|Door to some location.
 mno_town_approach|{s1}'e yaklaş...
 mno_town_castle|{s1} e git
-; mno_town_castle_door|Door to the castle.
+mno_town_castle_door|Kalenin  Kapısı
 mno_town_center|ana meydana doğru yürüyüşe çık...
 mno_town_center_door|Şehir merkezine giden kapı.
 mno_aw_chamber_door|Kapıyı aç.
@@ -297,10 +297,10 @@ mno_sneak_caught_surrender|Teslim ol.
 menu_sneak_into_town_caught_dispersed_guards|Kaçmadan önce muhafızları ekip, izlerini gizleyerek kolayca seni kovalayan kişilerden mahallelerin karmaşıklığı sayesinde kurtuluyorsun.
 menu_sneak_into_town_caught_ran_away|Kapı tarafından şehirden ayrılıp kasaba dışına, güvenli yerlere geri çekiliyorsun.
 menu_tld_player_defeated|^^^^^Aniden kafanı patlatacakmışcasına bir ağrı hissediyorsun. \\ Etrafın kararınca titremeye başlıyorsun...^Yoksa bu senin sonun mu?
-; menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
-; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.
+menu_recover_after_death_fangorn|Uyandın. Etrafında hala orman var. Her kemiğin sızlıyor. Mucize eseri hayattasın.^^Bir yenilgiydi fakat en azından neler olduğunu görebildin. ^Şimdi bu lanetlenmiş ormanda neler olduğunu biliyorsun, ^ve bunları anlatabilmek için hayatta kaldın.^^Sana kimse inanır mı ki?
+menu_recover_after_death_moria|^^^^^Bilincini tekrar kazandın. Yumuşak toprağın üzerine uzanmış, temiz havanın yüzünde dolaşmasını hissediyorsun. Dışardasın! ^Orklar öldüğünü düşünüp seni kuytu bir çukura atmış olmalılar. ^Bir yeraltı akıntısıyla yüzeye sürüklenmiş olmalısın.
 mno_whatever|ayaklan!
-; menu_recover_after_death_default|^^^^^You regain your conciousness. You lie on the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wounds were lethal,  and although you feel awful, you find out you can still walk.  You get up and try to look for any other survivors from your party.
+menu_recover_after_death_default|^^^^^Bilincini tekrar kazandın. Düştüğün yerde yatıyorsun. Düşmanların öldüğünü düşünüp seni orada bırakmış olmalılar. Ancak, yaraların hiç ölümcül görünmüyor ve berbat hissetmene rağmen hala yürüyebileceğini farkediyorsun. Ayağa kalk ve grubundan birileri hala hayatta mı diye bir göz at.
 ; menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
 ; menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
 ; menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
@@ -314,7 +314,7 @@ mno_explore|Etrafı keşfet
 ; menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?
 mno_help|Yabancılara yardım et!
 mno_go_your_way|Onları yalnız bırak
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
+menu_custom_battle_choose_faction1|^^^^^^^^^^Tarafını ve avantajını seç:
 mno_good_equal|İyi taraf
 mno_bad_equal|Kötü taraf
 ; mno_replay_prev|Replay previous setup
@@ -332,7 +332,7 @@ mno_cb_mordor|Mordor
 mno_cb_mordor1|Isengard
 mno_cb_mordor2|Dunland
 mno_cb_mordor3|Haradrim
-; mno_cb_mordor4|Easterlings
+mno_cb_mordor4|Doğudölleri
 mno_cb_mordor5|Moria
 mno_cb_mordor6|Gundabad
 mno_cb_mordor7| Rhûn

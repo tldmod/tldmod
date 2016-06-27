@@ -374,7 +374,7 @@ str_npc6_backstory_b|Lubię chodzić ukrytymi ścieżkami w naszym pięknym lesi
 str_npc7_backstory_b|\nI pomógł poprawić obronę Ereboru i przeszkoleni trochę młodszego krasnoludzkiego ludowej, pod kierunkiem mój czcigodny ojciec Dwalin , jak to mamy w zwyczaju .
 str_npc8_backstory_b|\nMam traktować mojego króla Marka na zaparcia , wspólne złe samopoczucie wpływa ludzi idzie na wojnę. Światło napar z piołunu , a obie wnętrzności i umysł są wprowadzane swobodnie.
 str_npc9_backstory_b|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.
-str_npc10_backstory_b|Jestem Wolf Rider Isengardu oraz trackera .
+str_npc10_backstory_b|Jestem Wilczym Jeźdzcem z Isengardu oraz trackera .
 str_npc11_backstory_b|You should know that I am an Orc Snaga in service to the Great Eye. I will kill for you!
 str_npc12_backstory_b|I am an Uruk Slayer of Mordor.
 str_npc13_backstory_b|I am a Gold Serpent Horse Archer.
@@ -422,7 +422,7 @@ str_npc2_backstory_response_1|Właśnie tak, poszukuję ochotników.
 ; str_npc4_backstory_response_1|I would welcome the help of a Rohan shieldmaiden, if offered.
 ; str_npc5_backstory_response_1|It may be presumptuous of me to ask, but my company could use your skill in the coming battles.
 ; str_npc6_backstory_response_1|We travel the world, but to defend all that is fair, we give battle to the enemy.
-; str_npc7_backstory_response_1|Indeed, a dwarven warrior would be welcome in my company.
+str_npc7_backstory_response_1|W rzeczy samej, krasnoludzki wojownik byłby mile widziany w naszej kompanii.
 str_npc8_backstory_response_1|Możemy użyć medyka i zielarza.
 ; str_npc9_backstory_response_1|I reckon we could put a berserker to a good use.
 str_npc10_backstory_response_1|Zrobisz to
@@ -492,7 +492,7 @@ str_npc5_signup_response_1|Będziemy zaszczyceni mając cie w kompanii Elficki L
 str_npc6_signup_response_1|Bardzo Dobrze. Mam tylko nadzieję że nie uciekniesz od pierwszego ujrzanego orka.
 ; str_npc7_signup_response_1|Very well, Master Dwarf, you are welcome to join us.
 str_npc8_signup_response_1|Będziesz bezpieczniejszy z nami, obiecuje ci. Niedługo wyruszamy.
-; str_npc9_signup_response_1|Very good. Do as you are told, and I'll feed you well.
+str_npc9_signup_response_1|Bardzo dobrze. Rób, jak ci kazano,  a dobrze cię wyżywię.
 str_npc10_signup_response_1|Doskonale. Ruszajmy.
 str_npc11_signup_response_1|Doskonale. Ruszajmy.
 str_npc12_signup_response_1|Very well. Let's go.
@@ -501,15 +501,15 @@ str_npc14_signup_response_1|Doskonale. Ruszajmy.
 str_npc15_signup_response_1|Very well. Let's go.
 str_npc16_signup_response_1|Very well. Let's go.
 str_npc17_signup_response_1|Przykro mi, ale po prostu nie mogę sobie ciebie wyo
-; str_npc1_signup_response_2|I have no need of your company at the moment, good luck to you.
+str_npc1_signup_response_2|Nie potrzebuję Twojej kompanii w tym momencie, powodzenia.
 str_npc2_signup_response_2|Wybacz. Zmieniłem zdanie.
 str_npc3_signup_response_2|Wybacz, zmieniłem zdanie - może następnym razem.
 str_npc4_signup_response_2|Przepraszam, moja Pani, może następnym razem.
 ; str_npc5_signup_response_2|On second thought, maybe we need to help Lothlórien on our own.
 str_npc6_signup_response_2|Przykro mi, ale nie wyobrażam sobie ciebie na polu bitwy.
 ; str_npc7_signup_response_2|Sorry, I happen to like Elves.
-; str_npc8_signup_response_2|I'm sorry, everyone fights in my company.
-; str_npc9_signup_response_2|I've changed my mind. Whoever is looking for you might come for me next.
+str_npc8_signup_response_2|Wybacz, każdy walczy w mojej kompanii.
+str_npc9_signup_response_2|Zmieniłem zdanie. Ktokolwiek szuka ciebie, może następnie przyjść po mnie.
 str_npc10_signup_response_2|Zmieniłem zdanie.
 str_npc11_signup_response_2|Nie potrzebuję cie, niewolniku.
 str_npc12_signup_response_2|Zmieniłem zdanie.
@@ -660,7 +660,7 @@ str_npc17_personalityclash2_speech_b|Nie nawidze {s11}.
 ; str_npc4_personalitymatch_speech|A battle of great deeds, commander, and my congratulations on the victory. I noticed how {s11} quietly and surely took care of the wounded and ailing, even as the last of the enemy got what they deserved.
 str_npc5_personalitymatch_speech|Czy wspominałem że lubię [s11]?
 ; str_npc6_personalitymatch_speech|{playername}, as much as I hate battles, I can't help but notice my Lord {s11} riding out in full splendor and bearing down on the ugly creatures like a hawk.
-; str_npc7_personalitymatch_speech|Bloody and victorious, just as I like it! I did, however, sustain a flesh wound that {s11} was kind enough to bandage promptly.
+str_npc7_personalitymatch_speech|Krwawo i Zwycięsko, tak jak lubię. 
 ; str_npc8_personalitymatch_speech|Another victory for you, commander, and I admire your skill in sparing the lives of our men. Warriors like {s11} seem to be of great use in your battle plans.
 str_npc9_personalitymatch_speech|Czy wspominałem że lubię {s11}?
 str_npc10_personalitymatch_speech|Czy wspominałem że lubię {s11}?
@@ -706,11 +706,11 @@ str_npc15_retirement_speech|Jestem już trochę zmęczony życiem wojownika , b�
 str_npc16_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
 str_npc17_retirement_speech|Jestem już trochę zmęczony życiem wojownika , będę na emeryturze.
 str_npc1_rehire_speech|Dobrze cię znowu widzieć, Kapitanie. Powinienem raz jeszcze do ciebie dołączyć?
-; str_npc2_rehire_speech|Happy days! Commander, can I please join you again?
+str_npc2_rehire_speech|Szczęśliwy dzień! Dowódco, czy mogę do ciebię spowrotem dołączyć?
 str_npc3_rehire_speech|Ho! Powinniśmy znów razem jechać ?
 str_npc4_rehire_speech|Witaj ponowie, Możemy kontynuować tam gdzie skończyliśmy ostatnim razem?
 str_npc5_rehire_speech|Dobrze Cię widzieć, {playername}, Pozwól nam podróżować razem.
-; str_npc6_rehire_speech|It's good to see you, {playername}. Let us walk the same path again.
+str_npc6_rehire_speech|Miło Cię widzieć, {playername}. Pójdźmy jeszcze raz tą samą drogą.
 str_npc7_rehire_speech|Mój topór jest gotowy, {playername}. Powinienem znów do ciebie dołączyć?
 str_npc8_rehire_speech|Miło Cię widzieć. Dołączyć do Ciebie raz jeszcze ?
 str_npc9_rehire_speech|Gulm jest gotowy by zabić ponownie dla ciebie. Ruszamy?
@@ -782,22 +782,22 @@ str_npc5_home_recap|Zaspokoję twoją ciekawość, ale nie ociągajmy się.
 str_npc7_home_recap|Jestem synem Dwalina z ludu Durina.
 str_npc8_home_recap|Jestem uzdrowicielem oraz zielarzem z Dale 
 ; str_npc9_home_recap|Gulm will tell you if you must know. But talk doesn't make enemies dead.
-; str_npc10_home_recap|I'll make this short.
-; str_npc11_home_recap|I'll make this short.
-; str_npc12_home_recap|I'll make this short.
-; str_npc13_home_recap|I'll make this short.
-; str_npc14_home_recap|I'll make this short.
-; str_npc15_home_recap|I'll make this short.
-; str_npc16_home_recap|I'll make this short.
+str_npc10_home_recap|Skrócę to.
+str_npc11_home_recap|Skrócę to.
+str_npc12_home_recap|Skrócę to.
+str_npc13_home_recap|Skrócę to.
+str_npc14_home_recap|Skrócę to.
+str_npc15_home_recap|Skrócę to.
+str_npc16_home_recap|Skrócę to.
 ; str_npc17_home_recap|I was born at the edge of the woods, but spent all my life in the woods. Did I tell you of the many trees there?
 str_npc1_honorific|{Kapitanie/Kapitano}
-str_npc2_honorific|wodzu
-str_npc3_honorific|wodzu
-str_npc4_honorific|wodzu
-str_npc5_honorific|wodzu
+str_npc2_honorific|dowódco
+str_npc3_honorific|dowódco
+str_npc4_honorific|dowódco
+str_npc5_honorific|dowódco
 str_npc6_honorific|o waleczn{y/a}
 str_npc7_honorific|{kapitanie/kapitano}
-str_npc8_honorific|wodzu
+str_npc8_honorific|dowódco
 str_npc9_honorific|Mistrz{u/yni}
 str_npc10_honorific|Mistrz{u/yni}
 str_npc11_honorific|Mistrz{u/yni}
@@ -1169,7 +1169,7 @@ str_faction_strength_strong|silni
 str_faction_strength_quite_strong|potężni
 str_faction_strength_very_strong|przytłaczający
 str_faction_strength_unmatched|niezrównani
-; str_faction_strength_last|INVALID
+str_faction_strength_last|NIEPRAWIDŁOWE
 str_theater_se|Gondor
 str_theater_sw|Rohan
 str_theater_c|Południowy Rhovanion
@@ -1243,7 +1243,7 @@ str_rohan_rumor_3|Nigdzie nie ma tak dobrych koni jakie ma Rohan. Nawet Elfy maj
 ; str_rohan_rumor_19|Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world.
 ; str_gondor_rumor_begin|Gondor has no king and enemies are at the doorstep. The shadow grows in the east. Things do not look good.
 ; str_gondor_rumor_2|In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?
-; str_gondor_rumor_3|Mordor is a dry, infertile land. What do the creatures there eat? Surely not one another? Or maybe...
+str_gondor_rumor_3|Mordor to sucha, nieżyzna ziemia. Co tamtejsze stworzenia jedzą? Pewnie nie jedno drugie? A może...
 ; str_gondor_rumor_4|We toil our lands, as we have done for generations. Our past is glorious and brave, but our future looks uncertain.
 ; str_gondor_rumor_5|The Shadow's resources for war seem limitless, but they are borne on the backs of a vast pool of slave labour.
 ; str_gondor_rumor_6|We know of the elves in the north, but nowadays noone gets to see them anymore.
@@ -1252,7 +1252,7 @@ str_rohan_rumor_3|Nigdzie nie ma tak dobrych koni jakie ma Rohan. Nawet Elfy maj
 ; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
 ; str_gondor_rumor_10|Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea.
 str_gondor_rumor_11|Dol Guldur? Nigdy o tym nie słyszałem.
-; str_gondor_rumor_12|Moria? The dwarves mine there, don't they?
+str_gondor_rumor_12|Moria? Krasnoludy tutaj kopią, czyż nie?
 ; str_gondor_rumor_13|Don't tell anyone I said this, but I think Prince Imrahil should perhaps become king. Lord Denethor is a noble man, but Gondor has faded much during his reign. And not only since his older son left.
 ; str_gondor_rumor_14|People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes.
 ; str_gondor_rumor_15|The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm.
@@ -1284,12 +1284,12 @@ str_mordor_rumor_7|Mistrz trenował Olog-hai na wojnę!
 ; str_mordor_rumor_8|Warg bit my finger. And it really hurts! Warg-filth!
 str_mordor_rumor_9|Nie ufaj Sarumanowi-glob!
 ; str_mordor_rumor_10|Mountain orcs are weak! We are strong! We will eat tribal snagas!
-; str_mordor_rumor_11|Uruk glob ishi krimp shar-kûk.
-; str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
+str_mordor_rumor_11|Uruk glob ishi krimp shar-kûk.
+str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
 str_mordor_rumor_13|Snaga ukradł moje mięso, pushdug!
-; str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
-; str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
-; str_mordor_rumor_16|If it insults you - kill it. If it fights you - kill it. If it looks at you - kill it. If it's dead - eat it.
+str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
+str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
+str_mordor_rumor_16|Jeśli cię obraża - zabij. Jeśli z tobą walczy - zabij. Jeśli na ciebie patrzy - zabij. Jeśli jest martwe - zjedz.
 ; str_mordor_rumor_17|Saruman's uruk-hai say they don't mind the sun. Bûbhosh skai!
 ; str_mordor_rumor_18|All dead, all rotten. Elves and Men and Orcs. In the Dead Marshes!
 str_mordor_rumor_19|Nie stawaj między Nazgûlem a jego ofiarą!
@@ -1305,9 +1305,9 @@ str_isengard_rumor_4|Saruman ma wiele sztuczek! Silną stal oraz Kamienie ognia!
 str_isengard_rumor_6|Ścierwo z Morii rasy olog-hai! Big! Skai!
 ; str_isengard_rumor_7|Wise master make uruk-hai strong!
 str_isengard_rumor_8|Warg jest szybszy od konia! Warg pożera konia!
-; str_isengard_rumor_9|Uruk-hai will trample the horse-men!
+str_isengard_rumor_9|Uruk-hai zdepcze konnych!
 str_isengard_rumor_10|Szlifuj! Szlifuj! Szlifuj!
-; str_isengard_rumor_11|Uruk glob ishi krimp shar-kûk.
+str_isengard_rumor_11|Uruk glob ishi krimp shar-kûk.
 ; str_isengard_rumor_12|Burn forest! Make weapons! Kill horse-men!
 ; str_isengard_rumor_13|Keep away from the berserker before he starts chopping us up!
 ; str_isengard_rumor_14|I saw a berserker get speared through by a horse-man lance. He pulled the manling off his horse by the lance through his guts.
@@ -1354,7 +1354,7 @@ str_beorn_rumor_5|Śpię całą noc i pracuję cały dzień!
 ; str_beorn_rumor_10|Men of Rohan are our kin, bears are our blood, goblins are our prey!
 str_beorn_rumor_11|Zamiana w niedźwiedzia? Oczywiście że się nie zamieniamy. Kto ci to powiedział? Ha ha ha!
 str_beorn_rumor_12|Beorn był wielkim człowiekiem. Nie, nie człowiekiem, gigantem!
-; str_beorn_rumor_13|*GROWLS*   Do you have any honey?
+str_beorn_rumor_13|*WARCZY* Masz jakiś miód?
 ; str_beorn_rumor_14|Don't wander off alone in the mountains! Bears and wolves stay away from larger groups of men. But hunger, or as some say - shadow spirits, may drive them close enough to attack you.
 ; str_lorien_rumor_begin|O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. 
 ; str_lorien_rumor_2|Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!
@@ -1663,7 +1663,7 @@ str_tld_spear_hit|Ouch!
 str_fullname_region_unknown|do nienazwanej krainy, gdzieś w Śródziemiu
 str_fullname_region_pelennor|na Pola Pelennoru, równin wokół Minas Tirith, stolicy Królestwa Gondoru
 str_fullname_region_subfac_pelargir|na Lenno Lebenninu, części Królestwa Gondoru
-; str_fullname_region_subfac_dol_amroth|Belfalas, the costal region in the South of Gondor
+str_fullname_region_subfac_dol_amroth|Belfalas, nadmorska prowincja na północy gondoru. 
 str_fullname_region_subfac_ethring|do Ringló Vale, kraina Królestwa Gondoru
 str_fullname_region_subfac_lossarnach|na Lenno Lossarnach, znane również jako Dolina Kwiatów, część Królestwa Gondoru
 str_fullname_region_subfac_pinnath_gelin|na Zielone Wzgórza Pinnath Gelin, krainy Królestwa Gondoru

@@ -1,5 +1,5 @@
 qstr_Gate_is_breached!|La Porte a cédé !
-qstr_Gate_opens..._You_ha|La Porte est ouverte... Vous avez atteint la place la plus sacrée de la Terre du Milieu !
+qstr_Gate_opens..._You_ha|La Porte est ouverte... Vous avez atteint le lieu le plus sacré de la Terre du Milieu !
 qstr_Secret_place_discove|Endroit secret découvert !
 qstr_Next_Page|Page suivante
 qstr_Action|Action
@@ -10,9 +10,9 @@ qstr_Follow_Me|Suivez-moi
 qstr_Charge|Chargez
 qstr_Advance|Avancez
 qstr_Fall_Back|Repliez-vous
-qstr_Stand_Closer|Rapprochez-vous
+qstr_Stand_Closer|Resserez les rangs
 qstr_Spread_Out|Déployez-vous
-qstr_Stand_Ground|Tenez bon
+qstr_Stand_Ground|Tenez vos positions
 qstr_Dismount|Démontez
 qstr_Use_Any_Weapon|Utilisez n'importe quelle arme
 qstr_Use_Blunt_Weapons|Utilisez uniquement des armes contondantes
@@ -95,7 +95,7 @@ qstr_Useful_Tool_of_{s5}|Outil utile de {s5}
 qstr_Servant_of_{s5}|Serviteur de {s5}
 qstr_Unknown_to_{s5}|Inconnu de {s5}
 qstr_You_have_been_{reg1?|Vous avez été {reg1?promu:rétrogradé} {s24} ({reg0})!
-qstr_You_{reg1?earned:los|Vous avez {reg1?gagné:perdu} {reg11} Points de Rang {reg12?et {reg12} d'Influence :} avec {s11}.
+qstr_You_{reg1?earned:los|Vous avez {reg1?gagné:perdu} {reg11} Points de Rang {reg12?et {reg12} d'Influence :} {s11}.
 qstr_You_spent_{reg10}_of|Vous avez dépensé {reg10} de votre influence avec {s1}, avec {reg11} restants.
 qstr_Troop_upkeep:|Entretien des troupes :
 qstr_{s11}_and_{s10}|{s11} et {s10}
@@ -152,7 +152,7 @@ qstr_Move_here|Se déplacer ici
 qstr_View_notes|Voir notes
 qstr_nothing|rien
 qstr_Good|Bien
-qstr_Med|Med
+qstr_Med|moyen
 qstr_Bad|Mauvais
 qstr_{reg4}_killed_{reg5}|{reg4} tués, {reg5} blessés, {reg6} en déroute
 qstr_{reg4}_killed_{reg5}_|{reg4} tués, {reg5} blessés

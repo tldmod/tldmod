@@ -3,24 +3,24 @@ str_no|Non.
 str_noone|personne
 str_s50_and_s51|{s50} et {s51}
 str_s5_s_party| Troupe de {s5}
-str_s5_s_host| Ost de {s5}
+str_s5_s_host|Armée de {s51}
 str_given_by_s1_at_s2|Donné par {s1} à {s2}
-str_given_by_s1_in_wilderness|Donné par {s1} tandis que dans les champs
+str_given_by_s1_in_wilderness|{s1} vous l'a donné quand vous étiez de sortie.
 str_s7_raiders|{s7} Voleurs
 str_bandits_eliminated_by_another|Les bandits ont été éliminé par une autre troupe.
-str_msg_battle_won|Bataille gagnée ! Appuyez sur la touche tabulation pour quitter...
+str_msg_battle_won|La victoire est votre! appuyez sur tab pour quitter...
 str_tutorial_map1|Vous voyez actuellement la carte du monde. Faites un clic gauche sur la carte pour déplacer votre groupe à cet endroit, entrer dans la ville sélectionnée, ou poursuivre le groupe sélectionnée. Le temps s'arrête  si votre troupe ne bouge pas, est en attente ou au repos. Pour attendre n'importe où, simplement appuyez et maintenez la barre d'espace.
 str_accept|Accepter
 str_charge|Charge
 str_color|Couleur
 str_flip_horizontal|Renversement horizontal
 str_flip_vertical|Renversement vertical
-str_hold_fire|Maintenez le tir
-str_blunt_hold_fire|Maintenez le tir
-str_tutorial_ammo_refilled|Munitions remplies.
-str_custom_battle_1|Le captaine Malvogil et sa compagnie du Gondor ont intercepté un groupe de renforts du Harad. Poussant son cri de guerre, il éperonne son cheval vers l'avant, et mène ses hommes loyaux à une féroce bataille.
-str_custom_battle_2|Celeborn de la Lòrien mène une patrouille de cavaliers et d'archers,  quand plus avant vient une alerte qu'une force de mauvais hommes aux visages sombres approchent. Ce sont les redoutés Númenóréens Noirs! Ceux-ci n'ont pas été vu depuis des âges près de la Lothlórien, mais maintenant ils doivent être repoussés dans le néant .
-str_custom_battle_3|Le seigneur Grimbold du Rohan mène la dernière défense devant les murs contre une armée de l'Isengard. Maintenant, puisque les assiégeants se préparent pour un assaut final des murs, il doit tenir avec son courage son acier brillant.
+str_hold_fire|Ne tirez que sur mon ordre!
+str_blunt_hold_fire|N'engagez l'ennemi que sur mon ordre!
+str_tutorial_ammo_refilled|Vous disposez à nouveau de projectiles
+str_custom_battle_1|Le captaine Malvogil et sa compagnie du Gondor ont intercepté un groupe de renforts du Harad. Poussant son cri de guerre, il éperonne son cheval et mène sans faillir ses loyaux soldats dans un affrontement féroce.
+str_custom_battle_2|Celeborn de la Lòrien mène une patrouille de cavaliers et d'archers,  quand l'avant garde de ses éclaireurs l'avertissent qu'une force de mauvais hommes aux visages sombres approche. Ce sont les redoutés Númenóréens Noirs! Ceux-ci n'ont pas été vu depuis des âges près de la Lothlórien, mais maintenant ils doivent être repoussés dans le néant .
+str_custom_battle_3|Le seigneur Grimbold du Rohan mène la dernière défense devant les murs contre une armée de l'Isengard. Maintenant, puisque les assiégeants se préparent pour un assaut final des murs, il doit tenir fermement car de sa bravour dépendra l'avenir du Royaume de ses ancêtres.
 str_custom_battle_4|Alors que les éclaireurs informent le seigneur Breanhelm de l'approche d'une bande armé de Rhûn, Il décide de préparer rapidement les défenses du camp et d'essayer de tenir contre un ennemi supérieur en nombre.
 str_custom_battle_5|Ugluk a amené ses féroces Orques dans l'Ouest, avec une promesse de pillage. S'il peut faire tomber cette forteresse naine aujourd'hui, ses maîtres de Barad-Dûr seront extrêmement satisfaits.
 str_custom_battle_6|Ugluk et ses groupes de pilleurs orques étaient aussi vifs que possible en fuyant les patrouilles elfes. Mais les bonnes fortunes ne peuvent durer éternellement,  et il semble que les sales peaux-pâles aient maintenant leur part.
@@ -55,7 +55,7 @@ str_calendar_spec_day_5|T.A.{reg2}, Mettarë (Dernier Jour)
 str_town_nighttime|Il est tard la nuit.
 str_door_locked|La porte est verrouillée.
 str_castle_is_abondened|Le château semble désert.
-str_town_is_abondened|La ville n'a pas de garnison qui la défend.
+str_town_is_abondened|Cette ville ne dispose d'aucune garnison pour la défendre.
 str_place_is_occupied_by_player|L'endroit est tenu par vos troupes.
 str_place_is_occupied_by_enemy|L'endroit est tenu par des troupes ennemies.
 str_place_is_occupied_by_friendly|L'endroit est tenu par des troupes alliées.
@@ -70,8 +70,8 @@ str_entrance_to_town_forbidden|Les gardes de la ville sont à l'affût d'intrus 
 str_sneaking_to_town_impossible|Les gardes de la ville sont en alerte. Vous ne serez pas capable de vous faufiler par ces portes, quelque soit votre déguisement.
 str_battle_won|Vous avez gagné la bataille !
 str_battle_lost|Vous avez perdu la bataille !
-str_player_down|Vous avez été assommé, mais vos troupes combattent !
-str_attack_walls_success|Après un combat sanglant, vos braves soldats ont réussi à s'emparer des murs ennemis.
+str_player_down|Vous êtes hors combat, mais vous troupes continuent de combattre!
+str_attack_walls_success|Après un combat sanglant, vos braves soldats ont réussi à prendre pieds sur des murs ennemis.
 str_attack_walls_failure|Vos soldats sont tombés par vagues en attaquant les murs, et le peu qu'il restait en vie a vite été mis en déroute et a pris la fuite. On ne les reverra jamais.
 str_attack_walls_continue|Les deux camps se sont battus à égale valeur à la suite d'une bataille sanglante. Malgré les efforts de vos troupes, le château est encore aux mains de l'ennemi.
 str_order_attack_success|Vos hommes ont combattu bravement et vaincu l'ennemi.
@@ -298,29 +298,29 @@ str_bar_disgruntled| Mécontent
 str_bar_miserable| Malheureux
 str_here_plus_space|ici
 str_npc1_intro|Salut, guerrier, et bienvenue à Henneth Annûn.
-str_npc2_intro|Salut, visiteur ! Puis-je vous demander en quoi consistent vos affaires ici?
-str_npc3_intro|Ho ! Faites moins de bruit s'il vous plaît, voyageur.
+str_npc2_intro|Salut visiteur ! Puis-je vous demander en quoi consistent vos affaires ici?
+str_npc3_intro|Ho ! Faites moins de bruit s'il vous plaît voyageur.
 str_npc4_intro|Bienvenue à Meduseld, guerrier !
 str_npc5_intro|Salut {playername}. Mae govannen !
 str_npc6_intro|Laissez-moi seul, étranger, je ne souhaite pas vous parler.
 str_npc7_intro|Kíli, fils de Dwalin, à votre service!
-str_npc8_intro|Bienvenue à Dale, voyageur ! Comment puis-je vous aider ?
+str_npc8_intro|Bienvenue à Dale voyageur ! Comment puis-je vous aider ?
 str_npc9_intro|Chut ! Si vous alertez les gardes, je vais arracher votre estomac et le donner à manger aux Wargs !
 str_npc10_intro|Vous !
 str_npc11_intro|Ar ! Vous n'êtes pas d'ici, n'est-ce pas ? Je peux le sentir, et si vous dites devant les Patrons que je ne le peux pas, je vous arracherai les yeux !
 str_npc12_intro|Oho ! Que faites-vous à roder ici ?
 str_npc13_intro|Venez là ! Qu'apportez-vous à la tente du Chef ?
 str_npc14_intro|Vous avez la démarche d'un homme dont les jambes ont vu trop peu de jours en mer, étranger.
-str_npc15_intro|Louez l'Oeil, oh Guerrier!
+str_npc15_intro|Louez l'Oeil, ô Guerrier!
 str_npc16_intro|Il est rare de voir un étranger parmi les tentes des terres orientales. Qu'apportez-vous là ? Parlez maintenant et soyez bref.
 str_npc17_intro|Hé. Ces bois vous plaisent ?
 str_npc1_intro_response_1|Salut, Maître Traqueur. Comment vont les Rôdeurs du Sud?
-str_npc2_intro_response_1|Mes affaires sont les affaires du Gondor, et qui êtes-vous ?
+str_npc2_intro_response_1|Mes affaires sont les affaires du Gondor et qui êtes-vous ?
 str_npc3_intro_response_1|Bonne journée à vous aussi, quelque chose ne va pas ?
-str_npc4_intro_response_1|Salutations, ma Dame. A qui ai-je l'honneur de parler ?
-str_npc5_intro_response_1|Salutations, Seigneur-elfe ! C'est un grand honneur de vous rencontrer.
+str_npc4_intro_response_1|Salutations Madame. A qui ai-je l'honneur de parler ?
+str_npc5_intro_response_1|Salutations Seigneur elfe ! C'est un grand honneur de vous rencontrer.
 str_npc6_intro_response_1|Est-ce ainsi que les Elfes sylvains accueillent leurs hôtes ?
-str_npc7_intro_response_1|{playername}, à votre service. Comment se porte le peuple de Durin ?
+str_npc7_intro_response_1|{playername} à votre service. Comment se porte le peuple de Durin ?
 str_npc8_intro_response_1|Salutations. Je me demandais s'il se trouvait ici des volontaires pour nous rejoindre dans nos voyages.
 str_npc9_intro_response_1|Retiens tes menaces, Uruk, avant qu'on en arrive au sang - je ne suis pas un mouchard.
 str_npc10_intro_response_1|Qui êtes-vous ?
@@ -348,21 +348,21 @@ str_npc14_intro_response_2|Occupe-toi de tes affaires !
 str_npc15_intro_response_2|Hmmf. Garde tes petites griffes pour toi, Snaga.
 str_npc16_intro_response_2|Occupe-toi de tes affaires !
 str_npc17_intro_response_2|Oui, les bois sont plaisants, mais je dois partir à présent.
-str_npc1_backstory_a|Vous arrivez dans une période difficile, mon ami. L'Ithilien est envahi par les éclaireurs et les pilleurs ennemis, et certains d'entre nous ont vus de grandes bandes d'orques sur le départ. Nous essayons d'empêcher ces créatures maudites de traverser l'Anduin, et j'ai emmené un groupe de rôdeurs entraînés vers plus d'un succès. Mon capitaine Faramir est courageux, et l'ombre qui s'étend au dessus de nous ne me fait pas désespérer.
+str_npc1_backstory_a|Vous arrivez dans une période difficile, mon ami. L'Ithilien est envahi par les éclaireurs et les pilleurs ennemis et certains d'entre nous ont vus de grandes bandes d'orques non loin d'ici. Nous essayons d'empêcher ces créatures maudites de traverser l'Anduin. J'ai emmené un groupe de rôdeurs entraînés vers plus d'un succès. Mon capitaine Faramir est courageux et l'ombre qui s'étend au dessus de nous ne me fait pas désespérer.
 str_npc2_backstory_a|Ah, comme c'est généreux de votre part de prendre de mes nouvelles. J'ai récemment été nommé au service de l'Intendant, un devoir important, si je puis me permettre, mais peu riche en événements.
-str_npc3_backstory_a|Enfin, mon vieux casque semble devenir de plus en petit de minute en minute, et le sol semble bancal, comme si je chevauchais sur une feuille malicieuse. Ah, si je seulement je n'avais pas bu toute cette bière la nuit dernière - normalement je supporte bien la boisson, alors j'ai du boire je ne sais quel breuvage orque répugnant.
-str_npc4_backstory_a|Mon nom est Gálmynë, et j'ai fait mon affaire de connaître les vôtres, {playername}. Laissez-moi expliquer pourquoi.
-str_npc5_backstory_a|Vous avez dû entendre parler de mes actions dans des batailles passées et oubliées par les Hommes mortels. À cette époque incertaine, cette Guerre est un nouveau danger pour les Eldar, mais ce sera la Dernière Guerre.
+str_npc3_backstory_a|Enfin, mon vieux casque semble devenir de plus en petit de minute en minute, et le sol semble se mouvoir sous mes pieds comme si je chevauchais une feuille malicieuse. Ah, si je seulement je n'avais pas bu toute cette bière la nuit dernière - normalement je supporte bien la boisson, alors j'ai du boire je ne sais quel breuvage orque répugnant.
+str_npc4_backstory_a|Mon nom est Gálmynë et j'ai fait mon affaire de connaître les vôtres {playername}. Laissez-moi expliquer pourquoi.
+str_npc5_backstory_a|Vous avez dû entendre parler de mes succès dans des batailles passées et oubliées par les Hommes mortels. Dans la totalité de notre histoire, une guerre comme celle-ci est inédite. Ce sera aussi la dernière, la der des der!
 str_npc6_backstory_a|Pardonnez ma hardiesse, étranger, mais nous n'avons pas beaucoup de visiteurs, et beaucoup semblent peu dignes de confiance. Il y a seulement une semaine un Nain est apparu, et... peu importe, mon nom est Luevanna, des Elfes sylvains de la Forêt Noire.
 str_npc7_backstory_a|C'est aimable de votre part de demander, {playername}. Nous sommes en train de combattre les incursions des Orientaux et des Orques de Gungabad, mais jusque là rien que nous et nos alliés de Dale ne puissions gérer.
 str_npc8_backstory_a|Je suis sûr que vous pourrez trouver des volontaires si vous parlez avec le quartier-maître de nos casernes. Quand à moi je ne suis qu'un guérisseur et herboriste aux modestes compétences.
-str_npc9_backstory_a|Bien pour vous ! On m'appelle Gulm. J'ai éventré mon sergent, et depuis ses Snagas me pourchassent.^Le porc n'a rien vu venir ! Une fois, nous avons été pris en embuscade par une patrouille de têtes-blondes, et il a paniqué. « Battez en retraite », cria-t-il en s'enfuyant. Mais Gulm et quelques autres sont restés, et ont brisé la charge des cavaliers. Ensuite nous avons transformé les têtes blondes en purée (heh heh heh). Si nous n'avions pas été là, tous nourriraient les vers !
+str_npc9_backstory_a|Bien, pour vous. Ils m'appellent Gulm. J'ai éventré mon sergent et ses snagas me poursuivent maintenant.^Ce porc paresseux n'a rien vu venir! Une fois, on s'est fait attaqués par des têtes-blondes... et il a paniqué! "Repli!" qu'il a crié. Et il s'est tiré ce lâche! Seul Gulm et quelques braves ont tenu ferme et ont brisé leur charge. Ensuite on a fait de la purée avec leur têtes! HAR HAR HAR! Si Gulm n'avait pas été là, les vers mangeraient du sergent en ce moment.
 str_npc10_backstory_a|Je suis Durgash !
-str_npc11_backstory_a|Non ! Pas un pisteur. Ils m'ont jeté dehors ! Je vous ai dit qu'ils ont perdu la tête. Qu'ils soient maudits ! Tout d'abord ils disent que je tire mal, puis que je cours trop lentement, et ensuite que j'ai un nez inutile ! Garn ! S'ils ne me trouvent pas bientôt une tâche quelconque, je suis bon pour les Fosses noires, si ce que l'on dit est vrai. Mais avant ça, je veux être sûr que certains des Patrons perdent leur peau avant de m'y jeter.
+str_npc11_backstory_a|Hein?! Ah mais ce n'est pas un assassin... c'est qui?! Ils m'ont jeté dehors! Ils sont maboules, comme j'te dis! Qu'il aillent au diable! D'abord, ils ont dit que je tirais mal, puis que je ne cours pas assez vite! Et en plus que j'ai un nez inutile! GARN! Si ils ne me donnent pas vite un nouveau travail, ça veut dire qu'ils vont m'envoyer dans les fosses noires. Si ce que les autres disent est vrai. Ha! Mais ils me sous-estiment... je ferai en sorte que certains de ces "bosses" meurt avant qu'ils puissent me jeter dans les fosses à esclaves! 
 str_npc12_backstory_a|Je suis à la tête d'une bande de gars, ici présents. Je suis Gorbag et tu ferais mieux d'apprendre que nous, les Uruks, sommes les maîtres par ici. Le Grand Patron a fait bien des erreurs, 'ay, même le Plus Grand peut faire des erreurs, et ce sont toujours les pauvres Uruks qui doivent réparer, et les remerciements sont faibles. Ils ne nous disent même pas tout ce qu'ils savent, pas vrai ? Pas même la moitié. Grr !
 str_npc13_backstory_a|Moi ? Je suis un grain de sable des déserts du sud, blessé par le froid et les vents de la nuit. Je suis Lykyada, un Seigneur Serpent du Haradwaith. Seigneur du Serpent d'Or, fléau de la Tribu du Serpent Noir, maintenant alliés pour servir la volonté du Seigneur Noir.
-str_npc14_backstory_a|Je suis Fuldimir, fils du Royaume d'Umbar, au sud du Harondor, et de la Baie de Belfalas, les deux étant le foyer de mon coeur et de mon peuple. Nous sommes les seigneurs des mers, corsaires pour certains, proches de la baie de Belfalas dont nous domptons les eaux.
-str_npc15_backstory_a|Je suis Bolzog le Doué, le Poseur d'Os, la Fermeture des Coupures, et le Shaman des Soins. Si vous allez à la guerre pour l’Oeil, vous aurez sans aucun doute l'un ou l'autre de vos petits serviteurs coupés par un de ces forestiers aux pâles visages, ou par un de ces amoureux des chevaux. Maintenant, -nar-nar-nar - Les Orques sont faciles à remplacer, Oh grand chef, mais pouvez vous remplacer un Warg ? Un Géant ? Un Troll des cavernes ? Shi-shi ! Non ! Vous avez besoin de moi, le grand Bolzog !
+str_npc14_backstory_a|Je suis Fuldimir, fils d'Umbar, le Royaume du sud Harondor et de la Baie de Belfalas, les deux étant donc foyer de mon coeur et de mon peuple. Nous sommes les seigneurs de la mer et de la Baie de Belfalas... Belfa, pour les intimes, dont nous domptons les eaux.
+str_npc15_backstory_a|Je suis Bolzog le Doué, le Poseur d'Os, la Fermeture des Coupures et le Shaman des Soins. Si vous allez à la guerre pour l’Oeil vous aurez sans aucun doute l'un ou l'autre de vos petits serviteurs coupés, par un de ces forestiers aux pâles visages, ou par un de ces amoureux des chevaux. Maintenant, -nar-nar-nar - Les Orques sont faciles à remplacer, Ô grand chef, mais pouvez vous remplacer un Warg ? Un Géant ? Un Troll des cavernes ? Shi-shi ! Non ! Vous avez besoin de moi, le grand Bolzog !
 str_npc16_backstory_a|Et bien, c'est à l'étranger de se présenter le premier. Néanmoins, je suis Varfang des Balcoth... Je peux vous dire que vous n'avez pas entendu les chants et les contes de mon pays qui parlent des Balcoth, car leur simple nom met à l'épreuve votre courage et remplit votre coeur de malheur.
 str_npc17_backstory_a|On m'appelle Dímborn, et je travaille dans les bois. C'est joli ici. J'aime les bois. Il y a beaucoup d'arbres dans les bois. J'aime les arbres. J'ai travaillé dans les bois toute ma vie, car je suis fort et j'aime les arbres.
 str_npc1_backstory_b|Vous devriez savoir que je suis un Ranger de l'Ithilien, descendant des Dùnedain. Je sais beaucoup de chose sur l'art du pistage et de la reconnaissance, et mon habilité à l'arc et à l'épée est reconnue par les Orques. Je peux aussi entraîner toute âme souhaitant combattre l'Ombre qui arrive.
@@ -418,10 +418,10 @@ str_npc16_backstory_later|Les histoires de mon peuple mentionnent ces terres dep
 str_npc17_backstory_later|J'ai aperçu un très vieux pin, l'autre jour. Les pins peuvent vivre très longtemps. Vous devez respecter les vieux arbres. Mais j'ai aussi vu des gens qui ne respectent aucun arbre. Vous respectez les arbres, n'est-ce pas ?
 str_npc1_backstory_response_1|Si vous pouvez partir, j'ai besoin d'un guerrier et d'un pisteur expérimenté.
 str_npc2_backstory_response_1|Effectivement, j'ai besoin de volontaires.
-str_npc3_backstory_response_1|Si vous pouvez faire sans bière, j’accueillerais avec plaisir un bon cavalier.
+str_npc3_backstory_response_1|Si vous pouvez faire avec l'esprit clair et sans substances qui embrument le cerveau , j’accueillerais avec plaisir un bon cavalier.
 str_npc4_backstory_response_1|J'accepterais avec joie l'aide d'une guerrière du Rohan, si elle me l'offrait.
 str_npc5_backstory_response_1|Il peut paraître présomptueux de ma part de demander, mais ma compagnie pourrait avoir besoin de vos compétences dans les batailles à venir.
-str_npc6_backstory_response_1|Nous voyageons dans le monde, mais pour défendre tout ce qui est juste, nous livrons bataille à l'ennemi.
+str_npc6_backstory_response_1|Nous voyageons dans le monde, mais c'est pour défendre tout ce qui est juste et bon ici bas que nous livrons bataille à l'ennemi.
 str_npc7_backstory_response_1|En effet, un guerrier nain serait le bienvenu dans ma compagnie.
 str_npc8_backstory_response_1|Nous pouvons avoir l'utilité d'un guérisseur et d'un botaniste.
 str_npc9_backstory_response_1|J'admet qu'un berserk nous serait utile.
@@ -430,37 +430,37 @@ str_npc11_backstory_response_1|Que diriez-vous de faire sauter des têtes avec m
 str_npc12_backstory_response_1|Que diriez-vous de vous éclipser avec moi ?
 str_npc13_backstory_response_1|Que diriez-vous de me suivre ?
 str_npc14_backstory_response_1|Que diriez-vous de vous joindre à moi ?
-str_npc15_backstory_response_1|Aha... un guérisseur, hé ? Et vous êtes bon à ceci, vous dites ? Je pourrais utiliser quelqu'un comme vous.
+str_npc15_backstory_response_1|Aha... un guérisseur ? Et vous êtes bon à ceci vous dites ? Je pourrais utiliser quelqu'un comme vous.
 str_npc16_backstory_response_1|Que faites-vous ici ?
 str_npc17_backstory_response_1|Et bien, je pourrai en apprendre plus sur les arbres. Nous sommes heureux de vous avoir avec nous.
 str_npc1_backstory_response_2|Je suis désolé d'entendre ça. Puisse votre foi soutenir votre courage.
 str_npc2_backstory_response_2|Non, désolé. Je suis à la recherche de guerriers aguerris.
 str_npc3_backstory_response_2|Non, désolé. Je cherche quelqu'un de plus fiable.
 str_npc4_backstory_response_2|Je suis désolé, ma Dame, il n'y a rien que je puisse faire.
-str_npc5_backstory_response_2|Je reviendrai lorsque la Lothlórien sera moins en danger.
+str_npc5_backstory_response_2|Alors je reviendrai lorsque la Lothlórien sera moins en danger.
 str_npc6_backstory_response_2|Non, désolé. Nous ne pouvons prendre de parasites.
 str_npc7_backstory_response_2|Non, désolé. Nous nous en sortons bien tout seuls.
 str_npc8_backstory_response_2|Non, désolé. Nous ne visitons les guérisseurs que lorsque nous en avons besoin.
 str_npc9_backstory_response_2|Bah. Je n'accorde pas ma confiance aux traîtres.
-str_npc10_backstory_response_2|Je n'ai pas besoin de vous, esclave.
-str_npc11_backstory_response_2|Je ne veux pas avoir à vous entendre rôder.
-str_npc12_backstory_response_2|Les grands patrons savent mieux que vous. Vous feriez mieux de suivre les ordres.
-str_npc13_backstory_response_2|C'est votre destin de souffrir.
-str_npc14_backstory_response_2|J'en ai assez.
+str_npc10_backstory_response_2|Je n'ai pas besoin de toi esclave!
+str_npc11_backstory_response_2|Je ne veux pas avoir à t'entendre rôder.
+str_npc12_backstory_response_2|Les grands patrons savent mieux que toi. tu ferais mieux de suivre les ordres.
+str_npc13_backstory_response_2|C'est ton destin de souffrir.
+str_npc14_backstory_response_2|Bon! j'en ai assez, fermez là.
 str_npc15_backstory_response_2|Bah ! J'ai besoin de guerriers, pas de poltrons.
 str_npc16_backstory_response_2|J'en ai assez.
-str_npc17_backstory_response_2|Non, désolé. Nous allons en guerre, pas en excursion biologique.
+str_npc17_backstory_response_2|Non, désolé. Nous allons en guerre, pas en excursion biologique pour botanistes amateurs de sensations fortes.
 str_npc1_signup|Je suis sûr que le seigneur Faramir comprendra que d'autres peuvent maintenir l'Ennemi à distance avec autant de valeur et de courage.
 str_npc2_signup|Oh, c'est un jour heureux ! Ce serait un honneur que de joindre votre compagnie.
-str_npc3_signup|Croyez-moi, commandant, la seule boisson dont j'ai besoin est celle de la victoire. Si vous pouvez me mener contre l'Ennemi, Ils sentiront vite les conséquences d'une lance rohirrim !
-str_npc4_signup|C'est généreusement offert, je rejoindrais volontiers votre compagnie, commandant.
+str_npc3_signup|Croyez-moi commandant! La seule boisson dont j'ai besoin est celle de la victoire! Si vous pouvez me mener contre l'Ennemi il sentira vite les l'effet sur le cerveau d'une lance rohirrim !
+str_npc4_signup|C'est généreusement offert, je rejoindrais volontiers votre compagnie commandant.
 str_npc5_signup|Je vois. Il me semble avoir eu vent de vous et de vos exploits.
 str_npc6_signup|Je n'aime pas la violence et les armes, mais je sais me défendre en cas d'attaque.
 str_npc7_signup|Je suis adroit avec une hache, je sais la manier et la lancer. Je peux également garder vos factures basses si vous me laissez parlez aux marchands. Et j'ai l’œil pour trouver et piller les ennemis tués sur le champs de bataille.
 str_npc8_signup|Et bien dans ce cas, j'ai simplement besoin de rassembler mes herbes et mes recettes.
 str_npc9_signup|Un guerrier Uruk est bien plus valeureux que tous les snagas. Un guerrier Uruk ne s'enfuit jamais du combat.
-str_npc10_signup|Vraiment ? Vous feriez bien de m'engager.
-str_npc11_signup|Suivre votre troupe ? Ar ! J'ai entendu parler de toutes ces allées et venuesà l'Ouest les raids et tout ça, avec des centaines de nos gars. Je vais venir jeter un oeil tout de même, et voir de quoi vous êtes capable.
+str_npc10_signup|Ah vraiment ? Vous feriez bien de m'engager!
+str_npc11_signup|Suivre votre troupe ? Ar ! J'ai entendu parler de toutes ces allées et venues à l'Ouest les raids et tout ça avec des centaines de nos gars. Je vais venir jeter un oeil tout de même, et voir de quoi vous êtes capable.
 str_npc12_signup|Suivre votre troupe ? J'ai peut-être un peu de chance au final. J'ai un bon grognement, je l'admets, et mon fouet est vigilant. Il a goûté sa juste part de la peau de mes gars.
 str_npc13_signup|Je peux vous suivre si vous voulez de moi. Mes jambes savent diriger parfaitement un cheval et mes mains connaissent la sensation d'une lame. Mes doigts peuvent faire pleuvoir des flêches sur nos ennemis. Que ce soit à pied ou à cheval, je combattrai sous votre commandement.
 str_npc14_signup|Peut-être, sachez que je ne suis pas un voleur ou un brigand. Je ne volerai pas, ni ne prendrai ce que d'autres pourront trouver nécessaire.
@@ -483,12 +483,12 @@ str_npc13_signup_2|Sachez, cependant, que ma loyauté reste toujours envers les 
 str_npc14_signup_2|Il est heureux que ce qui ne sont plus de monde n'aient plus besoin de leurs trésors, et j'ai la chance d'être compétent pour alléger les propriétaires de ces trésors.
 str_npc15_signup_2|Oh, c'est un grand jour pour Bolzog le Doué, et pour vous, Grand Seigneur ! Nous conquererons ensemble, vous, indestructible grâce à ma guérison, et moi, le Grand Sage Orque qui vous appuiera !
 str_npc16_signup_2|J'ai bien peur de na pas pouvoir attendre plus longtemps. J'ai l'intention de rejoindre le prochain groupe qui quitte le camp, avec l'approbation du chef ou non. J'ai peur que la guerre ne s'achève longtemps avant que je ne me décide à la rejoindre.
-str_npc17_signup_2|Je récupère quelques outils, et nous pourrons partir. Il y a ce chêne sur la route, je dois vous le montrer !
+str_npc17_signup_2|Je récupère quelques outils et nous pourrons partir. Il y a ce chêne sur la route, je dois vous le montrer !
 str_npc1_signup_response_1|Je pourrais avoir l'utilité d'un rôdeur compétent. Vous êtes le bienvenu.
 str_npc2_signup_response_1|Très bien. Nous avons bien besoin de soutien en ces temps sombres.
 str_npc3_signup_response_1|Parfait. En selle - nous devrions partir rapidement.
 str_npc4_signup_response_1|Excellent. Nous serons près à partir quand vous voulez, ma Dame.
-str_npc5_signup_response_1|Nous serions honorés d'avoir la compagnie d'un Seigneur-Elfe.
+str_npc5_signup_response_1|Nous serions honorés d'avoir la compagnie d'un Seigneur Elfe.
 str_npc6_signup_response_1|Très bien. J'espère que vous ne vous enfuirez pas dès les premiers Orques rencontrés.
 str_npc7_signup_response_1|Très bien, Maître Nain, vous êtes le bienvenu.
 str_npc8_signup_response_1|Vous serez en sécurité avec nous, je vous le promets. Nous partirons bientôt.
@@ -506,35 +506,35 @@ str_npc2_signup_response_2|Désolé, j'ai changé d'avis.
 str_npc3_signup_response_2|Désolé, j'ai changé d'avis - peut-être la prochaine fois.
 str_npc4_signup_response_2|Je m'excuse, ma Dame, peut-être une autre fois.
 str_npc5_signup_response_2|À y repensez, peut-être avons nous besoin de la Lothlórien.
-str_npc6_signup_response_2|Désolé, je ne peux pas vous imaginer sur un champ de bataille.
+str_npc6_signup_response_2|Désolé, vous imaginer sur un champ de bataille me déconcentre, je me vois mal éclater de rire en plein combat.
 str_npc7_signup_response_2|Désolé, il m'arrive d'aimer les Elfes.
 str_npc8_signup_response_2|Je suis désolé, tout le monde se bat dans ma compagnie.
 str_npc9_signup_response_2|J'ai changé d'avis. Qui que ce soit vous cherchant pourrait venir pour moi la prochaine fois.
 str_npc10_signup_response_2|J'ai changé d'avis.
-str_npc11_signup_response_2|Je n'ai pas besoin de vous, esclave.
+str_npc11_signup_response_2|Je n'ai pas besoin de toi, esclave!
 str_npc12_signup_response_2|J'ai changé d'avis.
 str_npc13_signup_response_2|J'ai changé d'avis.
 str_npc14_signup_response_2|J'ai changé d'avis.
-str_npc15_signup_response_2|En fait, je crois que je vais chercher un vrai guérisseur et pas un baratineur.
+str_npc15_signup_response_2|En fait, je crois que je vais chercher un vrai guérisseur, au revoir.
 str_npc16_signup_response_2|J'en ai assez.
 str_npc17_signup_response_2|D'un autre côté, j'ai changé d'avis.
-str_npc1_payment|Je voudrais vous rejoindre, mais ma présence manquera à mon Capitaine Faramir. [coûte {reg14} Influence avec {s14}]
-str_npc2_payment|Le sergent de garde ne me laissera pas partir, j'en ai peur. [coûte {reg14} Influence avec {s14}]
-str_npc3_payment|Ahem, il semble que j'ai accumulé une belle note dans cette taverne, et j'ai besoin de régler mon ardoise avant de pouvoir partir. [coûte  {reg14} Influence avec {s14}]
-str_npc4_payment|Je vous rejoindrais bien, mais qui prendra soin des blessés sir la cité est attaquée ? [coûte {reg14} Influence avec {s14}]
-str_npc5_payment|Nous devrions partir bientôt. Le bénéfice de ma venue sera diminué si l'Ennemi sent ma présence. Mais la Lothlórien a aussi besoin de moi. [coût {reg14} Influence avec {s14}]
-str_npc6_payment|Je vous rejoindrais bien, mais mon devoir se trouve ici. [coûte {reg14} Influence avec {s14}]
-str_npc7_payment|Je vous rejoindrais bien, mais j'ai peur que mon honorable père Dwalin ne comprenne pas que je laisse la ville en temps de besoin. [coûte {reg14} Influence avec {s14}]
-str_npc8_payment|Je ne peux pas abandonner mes devoirs ici, mon Roi a toujours besoin de moi. Je suis trop préoccupé par sa santé. [coût {reg14} Influence avec {s14}]
-str_npc9_payment|Je voudrais partir avec vous, mais les gardes à la porte ne me laisseront pas.^Croyez-moi, j'ai essayé. [coût {reg14} Influence avec {s14}]
-str_npc10_payment|J'aimerais vous rejoindre, mais mon devoir est ici. [coût {reg14} Influence avec {14}]
-str_npc11_payment|J'ai juste besoin de quelqu'un pour s'occuper du Patron. Nous pourrions attendre qu'il ferme ses yeux pour s'éclipser, mais je pense que quelqu'un de vraiment haut pourrait forcer ses yeux à se fermer. Ai ! [coût {reg14} Influence avec {s14}]
-str_npc12_payment|Hai ! Yoi ! Je vais avoir besoin de rappeler aux gars de garder leur bouche galeuse fermée, ou les supérieurs me le feront payer. Ils le feront. [coût {reg14} Influence avec {s14}]
-str_npc13_payment|Hélas, les chefs ne me permettront pas de partir. Pouvez-vous les convaincre du contraire ? [coût {reg14} Influence avec {s14}]
-str_npc14_payment|Le capitaine du Havre aura besoin de beaucoup d'arguments pour accepter de me laisser partir. Convainquez-le et nous pourrons naviguer à travers cette tempête. [coût {reg14} Influence avec {14}]
-str_npc15_payment|Ah, oui. Noble Seigneur-guerrier ! Nous avons un petit contretemps ! Une grande injustice m'est arrivée : le maître de cette grotte n'a pas apprécié mon offre de guérison, et il a volé tout mon équipement ! Toutes mes potions ! Maître, je n'arrive pas à récupérer mon bien de ses sales griffes ! [coût {reg14} Influence avec {s14}]
-str_npc16_payment|Je ne vous suivrai pas, je suivrai mon propre chemin ; mais nos route pourraient se rejoindre pour un certain temps. Toutefois, avant que je voyage dans ces terres, je dois rendre hommage à ceux qui sont morts en essayant avant nous. Rendez-leur hommage, et nous pourrons partir. Nous ne devons jamais oublier nos ancêtres. Eux ne nous ont pas oublié. [coût {reg14} Influence avec {s14}]
-str_npc17_payment|J'aime les arbres, mais mon vieil oncle a besoin de moi ici. [coût {reg14} Influence avec {s14}]
+str_npc1_payment|Je voudrais vous rejoindre, mais ma présence manquera à mon Capitaine Faramir. [coûte {reg14} Influence {s14}]
+str_npc2_payment|Le sergent de garde ne me laissera pas partir, j'en ai peur. [coûte {reg14} Influence {s14}]
+str_npc3_payment|Ahem, il semble que j'ai accumulé une belle note dans cette taverne, et j'ai besoin de régler mon ardoise avant de pouvoir partir. [coûte {reg14} Influence {s14}]
+str_npc4_payment|Je vous rejoindrais bien, mais qui prendra soin des blessés si la cité est attaquée ? [coûte {reg14} Influence {s14}]
+str_npc5_payment|Nous pourrions partir si la Lorien ne requérait pas ma présence, de plus l'ennemi pourrait me sentir et vous perdriez le bénéfice de m'avoir à vos côtés . [coût {reg14} Influence {s14}]
+str_npc6_payment|Je vous rejoindrais bien, mais mon devoir se trouve ici. [coûte {reg14} Influence {s14}]
+str_npc7_payment|Je vous rejoindrais bien, mais j'ai peur que mon honorable père Dwalin ne comprenne pas que je laisse la ville en temps de besoin. [coûte {reg14} Influence {s14}]
+str_npc8_payment|Je ne peux pas abandonner mes devoirs ici, mon Roi a toujours besoin de moi. Je suis trop préoccupé par sa santé. [coût {reg14} Influence {s14}]
+str_npc9_payment|Je voudrais partir avec vous, mais les gardes à la porte ne me laisseront pas.^Croyez-moi, j'ai essayé. [coût {reg14} Influence {s14}]
+str_npc10_payment|J'aimerais vous rejoindre, mais mon devoir est ici. [coût {reg14} Influence {14}]
+str_npc11_payment|J'ai juste besoin de quelqu'un pour s'occuper du Patron. Nous pourrions attendre qu'il ferme ses yeux pour s'éclipser, mais je pense que quelqu'un de vraiment haut pourrait forcer ses yeux à se fermer. Ai ! [coût {reg14} Influence {s14}]
+str_npc12_payment|Hay ! Yoi ! Je vais avoir besoin de rappeler aux gars de garder leur bouche galeuse fermée, ou les supérieurs me le feront payer. Ils le feront. [coût {reg14} Influence {s14}]
+str_npc13_payment|Hélas les chefs ne me permettront pas de partir. Pouvez-vous les convaincre du contraire ? [coût {reg14} Influence {s14}]
+str_npc14_payment|Le capitaine du Havre aura besoin de beaucoup d'arguments pour accepter de me laisser partir. Convainquez-le et nous pourrons naviguer à travers cette tempête. [coût {reg14} Influence {14}]
+str_npc15_payment|Ah oui ! Noble Seigneur guerrier. Nous avons un petit contretemps ! Une grande injustice m'est arrivée : le maître de cette grotte n'a pas apprécié mon offre de guérison, et il a volé tout mon équipement ! Toutes mes potions ! Maître, je n'arrive pas à récupérer mon bien de ses sales griffes ! [coût {reg14} Influence {s14}]
+str_npc16_payment|Je ne vous suivrai pas, je suivrai mon propre chemin. Mais nos route pourraient se rejoindre pour un certain temps. Toutefois, avant que je voyage dans ces terres, je dois rendre hommage à ceux qui sont morts en essayant avant nous. Rendez-leur hommage, et nous pourrons partir. Nous ne devons jamais oublier nos ancêtres. Eux ne nous ont pas oublié. [coût {reg14} Influence {s14}]
+str_npc17_payment|J'aime les arbres, mais mon vieil oncle a besoin de moi ici. [coût {reg14} Influence {s14}]
 str_npc1_payment_response|Ne vous inquiétez pas, j'arrangerai votre départ avec lui. [coût {reg14}/{reg15} Influence]
 str_npc2_payment_response|Ne vous inquiétez pas, je parlerai à votre Sergent. [coût {reg14}/{reg15} Influence]
 str_npc3_payment_response|J'espère que ça en vaut la peine. Je vais régler le tenancier. [coût {reg14}/{reg15} Influence]
@@ -554,7 +554,7 @@ str_npc16_payment_response|J'honore les ancêtres, les vôtres et les miens. [co
 str_npc17_payment_response|Votre oncle ira bien. Vous êtes avec moi, maintenant. [coût {reg14}/{reg15} Influence]
 str_npc1_morality_speech|Capitaine, je ne comprend pas comment vous pouvez {s21} et abandonner nos hommes. Le Capitaine Faramir n'aurait jamais perdu sa compassion envers ses Rôdeurs et ne leur causerait jamais souffrance sans raison.
 str_npc2_morality_speech|J'espère que vous ne m'en voudrez pas de le dire, mais il m'est difficile de nous voir {s21}. Je devrais peut-être essayer de m'endurcir, mais si vous pouviez... prendre plus soin de nos soldats, je dormirais mieux.
-str_npc3_morality_speech|Commandant, nous les Eorlingas ne {s21} jamais. Nos chevaux ne se fatiguent pas facilement, et une fois que nous nous sommes regroupés, il n'y a aucune situation qui ne se résout pas par une charge au bon moment. Prenez garde, la prochaine fois nous pourrions combattre contre toute attente.
+str_npc3_morality_speech|Commandant, nous les Eorlingas ne {s21} jamais. Nos chevaux ne se fatiguent pas facilement et une fois que nous nous sommes regroupés, il n'y a aucune situation qui ne se résout pas par une charge au bon moment. Prenez garde, la prochaine fois nous pourrions combattre contre toute attente.
 str_npc4_morality_speech|Ne faites pas attention à ce que disent les soldats, parfois {s21} est la plus sage décision. Pour ma part, j'apprécie les vies épargnées et les membres intacts. Cela nous permet de combattre un jour futur, lorsque le sort nous sera plus favorable.
 str_npc5_morality_speech|Vous devriez reconsidérer vos actions, commandant. {s21} ne nous rend pas plus honorables que l'Ennemi et diminue la confiance de nos amis.
 
@@ -635,7 +635,7 @@ str_npc12_personalityclash2_speech|Ai-je déjà dit que je hais {s11} ?
 str_npc13_personalityclash2_speech|Ai-je déjà dit que je hais {s11} ?
 str_npc14_personalityclash2_speech|Ai-je déjà dit que je hais {s11} ?
 str_npc15_personalityclash2_speech|Ai-je déjà dit que je hais {s11} ?
-str_npc16_personalityclash2_speech|Did I mention I hate {s11}?
+str_npc16_personalityclash2_speech|Ai-je déjà dit que je hais {s11} ?
 str_npc17_personalityclash2_speech|Ai-je déjà dit que je hais {s11} ?
 str_npc1_personalityclash2_speech_b|Je hais {s11}.
 str_npc2_personalityclash2_speech_b|Je hais {s11}.
@@ -660,7 +660,7 @@ str_npc3_personalitymatch_speech|Une guerrière du Rohan en pleine charge n'est-
 str_npc4_personalitymatch_speech|Une bataille épique, commandant, et mes félicitations pour la victoire. J'ai remarqué comment {s11} a silencieusement pris soin des blessés et des malades, alors même que le dernier ennemi recevait ce qu'il méritait.
 str_npc5_personalitymatch_speech|Ai-je déjà dit que j'apprécie {s11} ?
 str_npc6_personalitymatch_speech|{playername}, j'ai beau détester les batailles, je ne peux pas m'empêcher de remarquer comme mon Seigneur {s11} chevauche dans toute sa splendeur et fonce sur les répugnantes créatures tel un faucon.
-str_npc7_personalitymatch_speech|Sanglant et victorieux, juste comme je les aime ! Toutefois, j'ai reçu une blessure que {s11} fut assez agréable pour bander rapidement.
+str_npc7_personalitymatch_speech|Sanglant et victorieux, une victoire en bonne et due forme ! Toutefois, j'ai reçu une blessure que {s11} fut assez gentil pour bander rapidement.
 str_npc8_personalitymatch_speech|Une autre victoire pour vous, commandant, et j'admire votre capacité à épargner les vies de vos hommes. Les guerriers comme {s11} semblent être très utiles dans vos plans de bataille.
 str_npc9_personalitymatch_speech|Ai-je déjà dit que j'apprécie {s11} ?
 str_npc10_personalitymatch_speech|Ai-je déjà dit que j'apprécie {s11} ?
@@ -1161,12 +1161,12 @@ str_gossip_about_character_goodnatured|On dit que {s6} est un homme bon et trait
 str_gossip_about_character_upstanding|Les gens disent qu'il est agréable d'être au service de {s6}. Il est bon avec ses suivants, et les récompense s'ils travaillent bien.
 str_latest_rumor|La dernière rumeur que vous avez entendu à propos de {s6} était :
 str_faction_strength_crushed|écrasé
-str_faction_strength_spent_and_wavering|fatigué et vacillant
+str_faction_strength_spent_and_wavering|dépassé par les évènements
 str_faction_strength_weakened|affaibli
-str_faction_strength_fair|juste
-str_faction_strength_average|moyen
+str_faction_strength_fair|faible
+str_faction_strength_average|suffisament fort
 str_faction_strength_strong|fort
-str_faction_strength_quite_strong|assez fort
+str_faction_strength_quite_strong|plutôt fort
 str_faction_strength_very_strong|très fort
 str_faction_strength_unmatched|sans égal
 str_faction_strength_last|INVALIDE
@@ -1219,7 +1219,7 @@ str_subfaction_gondor_name2|Dol Amroth
 str_subfaction_gondor_name3|Lamedon
 str_subfaction_gondor_name4|Lossarnach
 str_subfaction_gondor_name5|Pinnath Gelin
-str_subfaction_gondor_name6|Val de la Racine Noire
+str_subfaction_gondor_name6|Val de Blackroot
 str_subfaction_gondor_name7|Ithilien
 str_default_rumor|La Guerre. Tout le monde parle de la guerre.
 str_rohan_rumor_begin|Cela me brise le coeur de voir mes bébés partir à la guerre ! Mais sans eux, les hommes devraient marcher.
@@ -1227,15 +1227,15 @@ str_rohan_rumor_2|J'ai entendu dire que les Orques mangent les chevaux ! Maudite
 str_rohan_rumor_3|Il n'y a pas de meilleurs chevaux que ceux du Rohan. Même les Elfes obtiennent leurs chevaux chez nous !
 str_rohan_rumor_4|Si vous pouvez soigner les hommes, veuillez traiter mes chevaux avez autant d'égards s'ils venaient à être blessés.
 str_rohan_rumor_5|Apportez-moi huit chevaux de somme, a-t-il demandé... après les sept qu'il a demandé hier. C'est à se demander.
-str_rohan_rumor_6|Le Gondor préfère les robustes chevaux. Nos cavaliers apprécient la vitesse. Les Elfes prennent seulement le meilleur. Et nos ennemis les volent !
+str_rohan_rumor_6|Le Gondor préfère les chevaux robustes. Nos cavaliers apprécient la vitesse. Les Elfes prennent seulement le meilleur. Et nos ennemis les volent !
 str_rohan_rumor_7|J'ai vu des juments du désert et des chevaux variags. Les chevaux du Rohan sont clairement supérieurs, mais requièrent plus d'expérience pour les monter.
 str_rohan_rumor_8|Les Wargs sont plus lents que les chevaux, mais sont plus agiles. Ils sont aussi plus fragiles qu'un cheval de guerre bien élevé.
-str_rohan_rumor_9|Des armées marchent contre le Rohan, avec des piques et des lances destinées à nos cavaliers. Le traître Saroumane abattra l'entière Forêt de Fangorn pour équiper ses armées, avant la fin de la guerre.
+str_rohan_rumor_9|Des armées marchent contre le Rohan, avec des piques et des lances destinées à nos cavaliers. Le traître Saroumane abattra l'entière Forêt de Fangorn pour équiper ses armées avant la fin de la guerre.
 str_rohan_rumor_10|Être les meilleurs cavaliers du royaume commence en élevant les meilleurs chevaux.
 str_rohan_rumor_11|La plupart des chevaux que vous voyez au Gondor viennent de nous. Ils préfèrent les chevaux légèrement plus forts et plus lents, qui puissent porter leurs armures lourdes.
 str_rohan_rumor_12|On dit au Rohan qu'un cheval est comme un homme. Que si un cheval est bon, il est comme un homme bon, et que si un cheval est mauvais, il est comme un homme mauvais. Et si un cheval a faim, c'est comme si un homme avait faim, et si cheval est triste, c'est comme si un homme était triste. Et nous disons qu'un cheval en colère est comme un homme en colère. Nous disons que si un cheval marche, il marche comme un homme, et qu'un vieux cheval est comme un vieil homme, et qu'un jeune cheval est comme un jeune homme. Et de même qu'un cheval est vieux comme un homme est vieux, un petit cheval est comme un petit homme.
 str_rohan_rumor_13|Les Orques de Saroumane sont mauvais, mais ils ne portent pas beaucoup de protections. Ils ne sont pas de taille contre une bonne hache.
-str_rohan_rumor_14|Nos haches de jet et nos lances peuvent sembler encombrants, mais combien de chances avez-vous de lancer un missile avant de charger l'ennemi ? Faites en sorte de jeter quelque chose avec une certaine stature.
+str_rohan_rumor_14|Nos haches de jet et nos lances peuvent sembler encombrants, mais combien de temps avez-vous pour lancer sur l'ennemi un objet quelconque avant de le charger ? Faites en sorte de jeter quelque chose qui fasse mal.
 str_rohan_rumor_15|Toucher un Orque avec une flèche tirée depuis un cheval semble difficile, et ça l'est, mais le prix d'une charge sur une ligne de longues piques est plus élevé.
 str_rohan_rumor_16|Le Gondor pratique l'archerie. Nos pratiquons l'archerie montée. Les Hommes du Pays de Dun ne pratiquent ni l'un, ni l'autre.
 str_rohan_rumor_17|Beaucoup des Orques de Saroumane sont de mortels archers. Beaucoup ne le sont pas. Un sage commandant de cavalerie ne devrait pas attendre pour découvrir ce qu'il en est.
@@ -1243,9 +1243,9 @@ str_rohan_rumor_18|Nous sommes tous des amis, ici. Ou nous le devrions ; car le 
 str_rohan_rumor_19|Pendant longtemps, nous avons élevé nos bêtes et entretenu nos champs, construit nos maisons, forgé nos outils ou chevauché dans les guerres de Minas Tirith. Et nous appelons cela la vie des Hommes,  ainsi va le monde.
 str_gondor_rumor_begin|Le Gondor n'a pas de roi et ses ennemis sont à ses portes. L'Ombre grandit dans l'est. Les choses ne se présentent pas bien.
 str_gondor_rumor_2|Au Gondor, il n'y a rien sous le soleil que nous ne fabriquons, construisons ou élevons en certaine quantité. Mais pour combien de temps encore ?
-str_gondor_rumor_3|Le Mordor est une terre stérile et aride. Que mangent donc les créatures ? Quand même pas les unes les autres ? Ou peut-être...
+str_gondor_rumor_3|Le Mordor est une terre stérile et aride. Que mangent donc les créatures ? Quand même pas les plus faibles des leurs ? Ou peut-être...
 str_gondor_rumor_4|Nos peinons sur nos terres, comme nous l'avons fait pendant des générations. Notre passé est glorieux et brave, mais notre futur semble incertain.
-str_gondor_rumor_5|Les ressources de l'Ombre pour la guerre semblent sans limites, mais elles sont assumées par un large réservoir d'esclaves.
+str_gondor_rumor_5|Les ressources de l'Ombre pour la guerre semblent sans limites, mais elles reposent par un large réservoir d'esclaves.
 str_gondor_rumor_6|Nous connaissons les Elfes du nord, mais aujourd'hui personne ne peut plus les voir.
 str_gondor_rumor_7|Je voudrais voir l'Arbre Blanc à nouveau en fleurs dans la cour des Rois, et la Couronne d'Argent revenir, et Minas Tirith en paix : Minas Anor comme autrefois, pleine de lumière, noble et juste, belle comme une reine parmi d'autres reines.
 str_gondor_rumor_8|Pourquoi l'Umbar continue-t-il de nous envahir ? Leurs Corsaires profiteraient plus du commerce avec nous. Quel butin pourrait égaler les richesses qu'ils gagneraient à vendre au loin les antiques artefacts númenóréens des Nobles gondoriens ??
@@ -1261,13 +1261,13 @@ str_gondor_rumor_17|Il y a un étrange rocher noir près d'Erech. J'y suis allé
 str_gondor_rumor_18|Nous sommes des gens de parole, nous les Gondoriens. Nous nous vantons rarement, et puis oeuvrons, ou mourrons en essayant.
 str_dwarf_rumor_begin|Ils nous demandent si les Nains ont des amis. Bien sûr que nous avons des amis. Mais nous ne les aimons pas.
 str_dwarf_rumor_2|Les Orques ? Pfft, ils ne sont que du lubrifiant pour épée.
-str_dwarf_rumor_3|Qu'est ce que c'est que vous portez ? On dirait que cela ne vous protégerait même pas d'une piqûre d'abeille. Et cela semble drôle.
+str_dwarf_rumor_3|Qu'est ce que c'est que vous portez ? On dirait que cela ne vous protégerait même pas d'une piqûre d'abeille. Et c'est ridicule.
 str_dwarf_rumor_4|Bien sûr que nous pouvons monter des chevaux. Nous n'en avons simplement pas envie !
 str_dwarf_rumor_5|Fichez le camp ! Nous n'avons pas besoin de gens comme vous par ici, les Orques sont suffisants.
 str_dwarf_rumor_6|Qui appelez-vous petit ?
-str_dwarf_rumor_7|Vous devriez voir les Cavernes de Fort-le-Cor. Si nous seulement nous pouvions exploiter toutes ces pierres précieuses...
+str_dwarf_rumor_7|Vous devriez voir les Cavernes de Fort-le-Cor. Si seulement nous pouvions récolter toutes ces pierres précieuses...
 str_dwarf_rumor_8|Aucune nouvelle de nos frères de la Moria depuis quelques temps. Je parie qu'ils veulent juste garder toutes les richesses pour eux-mêmes !
-str_dwarf_rumor_9|Les Elfes ? Qu'ont déjà fait les Elfes pour nous ? D'accord, les arts de la guérison, mais à part ça ? Certes, quelques techniques de forgeage, mais quoi d'autre ? D'accord, ils combattent l'Ombre, mais à part ça, qu'ont-ils déjà fait pour nous, je vous le demande ?
+str_dwarf_rumor_9|Les Elfes ? Qu'ont déjà fait les Elfes pour nous ? D'accord, les arts de la guérison, mais à part ça ? Certes, quelques techniques de forgeage, mais quoi d'autre ? D'accord, ils combattent l'Ombre, mais à part ça, qu'ont-ils déjà fait pour nous. Je vous le demande !
 str_dwarf_rumor_10|Une chope de bière, un porc rôti, une fille à barbe épaisse, et je suis heureux !
 str_dwarf_rumor_11|Bien, Brian, j'ouvre une mine ! Quoi ? Ugh ? Bien, Brian, j'ouvre une mine !
 str_dwarf_rumor_12|Nous, les Nains, construisons toujours plus d'une entrée dans nos mines. Et puis il y a les entrées secrètes, aussi.
