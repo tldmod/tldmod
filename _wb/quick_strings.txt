@@ -1,4 +1,4 @@
-1209
+1214
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -541,6 +541,11 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
+qstr_Fixed_Custom_Camera Fixed_Custom_Camera
+qstr_Free_Mode_Custom_Cam Free-Mode_Custom_Camera
+qstr_Use_+/__to_zoom_in/o Use_+/-_to_zoom_in/out
+qstr_Use_Up/Down_arrow_ke Use_Up/Down_arrow_keys_to_tilt_up/down
+qstr_Default_Camera Default_Camera
 qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_You_have_found_the_l You_have_found_the_local_smithy...
 qstr_You_have_found_the_lo You_have_found_the_local_authority...

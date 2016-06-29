@@ -84,24 +84,23 @@ info_pages = [
   '''
   The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (i.e Orcs and Dwarves). It is easy to use, but can take some time to get used to.
 
-  This custom camera puts the character in the middle of the screen, and when aiming during archery or throwing, it snaps back to default camera for better aiming (which can be quite hard in the beginning, but one can get accustomed to). Once the projectile is used, it goes back to the custom camera.
+  There are 2 modes: Fixed Position and Free-Mode.
 
-  NOTE: This Custom Camera is optimized for Dwarf and Orc height, so that when the camera position 'sweet spot' is found, orcs and dwarf still strike in front of them. For other races, they might strike slightly above their point-of-view.
+  Fixed position is the optimal position for all races, however it cannot be configured.
 
-  There is also an additional death cam feature where you can track each of your troops when you have fallen. Note however that this overlaps with the current death cam. If you want to use the original death cam, you need to change back to default cam (Press END again).
+  Free-Mode Camera puts the character in the middle of the screen. This camera can be adjusted to player preference. When aiming during archery or throwing, it snaps back to default camera for better aiming (which can be quite hard in the beginning, but one can get accustomed to). Once the projectile is used, it goes back to the custom camera.
 
 
   Controls:
 
-  Press "END" to switch camera modes: Default Camera / Custom Camera
+  Press "END" to switch camera modes: Default Camera / Fixed Camera / Free-Mode Camera
   
-  Press and Hold "PAGE UP / PAGE DOWN" to adjust camera height (tilt)
+  When in "Free-Mode Cameara", Press and Hold "PAGE UP / PAGE DOWN" to adjust camera height (tilt)
 
-  Press and Hold "NUMPAD + / NUMPAD -" to adjust camera distance (zoom)
+  When in "Free-Mode Cameara", Press and Hold "NUMPAD + / NUMPAD -" to adjust camera distance (zoom)
 
-  Press and Hold "LEFT SHIFT" when moving/zooming the camera to enable smoothing
+  When in "Free-Mode Cameara", Press and Hold "LEFT SHIFT" when moving/zooming the camera to enable smoothing
 
-  When you have fallen, Press "LEFT ARROW / RIGHT ARROW" to follow your troops.
 
   '''),
 ]

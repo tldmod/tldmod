@@ -5868,7 +5868,7 @@ scripts = [
 		  (try_begin),
  			(eq, 1, cheat_switch), #CC: Enabled only with cheat switch, for now
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
-			#(ge, ":player_level", 4),
+			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 40),
 			(assign, ":quest_dont_give_again_period", 180),
 			(assign, ":quest_importance", 2),
