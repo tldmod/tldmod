@@ -2297,6 +2297,32 @@ How could I expect someone like {playername} to be up to the challange. My serva
 ##   "TODO: That's all I can do.", "lord_pretalk", []],
 
 
+
+#### Kham Defend / Raid Village Quests Completion Start ####
+
+[anyone,"lord_start", [
+    (check_quest_succeeded, "qst_defend_village"),
+    (quest_slot_eq, "qst_defend_village", slot_quest_giver_troop,"$g_talk_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_defend_village", slot_quest_object_center),
+    (str_store_party_name,12,":quest_target_center")],
+"We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.", "lord_generic_mission_completed",[
+    (call_script, "script_finish_quest", "qst_defend_village", 100),
+    ]],
+
+
+[anyone,"lord_start", [
+    (check_quest_succeeded, "qst_raid_village"),
+    (quest_get_slot, ":giver_troop", "qst_raid_village", slot_quest_giver_troop),
+    (eq, "$g_talk_troop", ":giver_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_raid_village", slot_quest_object_center),
+    (str_store_party_name,12,":quest_target_center")],
+"We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.", "lord_generic_mission_completed",[
+    (call_script, "script_finish_quest", "qst_raid_village", 100),
+    ]],
+
+
+#### Kham Defend / Raid  Village Quests Completion End ####
+
 [anyone,"lord_start", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
 						 (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                          (store_partner_quest,":lords_quest"),
@@ -4646,6 +4672,113 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
+
+#### Kham Village Quests Start ########
+#### Kham Defend Village - Good Start
+
+
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_defend_village"),
+  (quest_get_slot, ":quest_object_center", "qst_defend_village", slot_quest_object_center),
+  (str_store_party_name,12,":quest_object_center")],
+    "{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.", "lord_mission_defend_village_a",
+[]],
+
+[anyone|plyr,"lord_mission_defend_village_a", [],
+    "Are you able to send men?", "lord_mission_defend_village_b",
+[]],
+
+
+[anyone,"lord_mission_defend_village_b",
+[],
+    "We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?", "lord_mission_defend_question",
+[]],
+
+[anyone|plyr,"lord_mission_defend_question",
+[],
+    "My men and I are ready. We shall ride out at once.", "lord_mission_defend_accept",
+[]],
+
+[anyone|plyr,"lord_mission_defend_question",
+[],
+    "I am afraid I cannot do this task.", "lord_mission_defend_reject",
+[]],
+
+[anyone,"lord_mission_defend_accept", [],
+  "Thank you, {playername}. Now go, quickly!","close_window",[
+      (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
+      (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
+      (set_spawn_radius, 20),
+      (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
+      (assign, "$qst_defend_village_party", reg0),
+      (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
+      (str_store_troop_name_link,s9,"$g_talk_troop"),
+      (setup_quest_text,"$random_quest_no"),
+      (str_store_string, s2, "@{s9} asked you to defend a village under attack."),
+      (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+      (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+      (call_script, "script_stand_back"),
+      (assign, "$g_leave_encounter", 1),
+      ]],
+
+[anyone,"lord_mission_defend_reject",
+  [],
+    "I see. Then I will send what troops I can. Let us hope we are not too late.", "close_window",
+  [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]
+],
+
+##### Kham Defend Village End
+##### Kham Raid Village Start
+
+
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_raid_village"),
+  (quest_get_slot, ":raid_village_faction", "qst_raid_village", slot_quest_target_faction),
+  (try_begin), ## Elves are not likely to be guarding villages. Make an exception
+    (this_or_next|eq,":raid_village_faction", "fac_imladris"),
+    (this_or_next|eq,":raid_village_faction", "fac_lorien"),
+    (this_or_next|eq,":raid_village_faction", "fac_woodelf"),
+    (neg|is_between, ":raid_village_faction", kingdoms_begin, kingdoms_end), ## For some reason, the search counts 'ruins' etc. This takes them out! 
+    (assign,":raid_village_faction", "fac_rohan"), ## Rohan is the closest to areas where elves would mostly be.
+  (try_end),
+  (str_store_faction_name,s3,":raid_village_faction")],
+    "{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?", "lord_mission_raid_village_a",
+[]],
+
+[anyone|plyr,"lord_mission_raid_village_a", [],
+    "I will raid that village, kill every man we see, and enslave all women and children!", "lord_raid_village_accept",
+[]],
+
+[anyone|plyr,"lord_mission_raid_village_a", [],
+    "I do not have the time to raid puny villages!", "lord_raid_village_reject",
+[]],
+
+
+[anyone,"lord_raid_village_accept",[],
+  "Then what are you doing standing around here?","close_window",
+      [
+      (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
+      (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+      (set_spawn_radius, 25),
+      (spawn_around_party,":quest_object_center",":quest_target_party_template"),
+      (assign, "$qst_raid_village_party", reg0),
+      (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
+      (str_store_troop_name_link,s9,"$g_talk_troop"),
+      (setup_quest_text,"$random_quest_no"),
+      (str_store_string, s2, "@{s9} asked you to raid a village."),
+      (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+      (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+      (call_script, "script_stand_back"),
+      (assign, "$g_leave_encounter", 1),
+      ]],
+
+[anyone,"lord_raid_village_reject", [],
+    "The excuses of cowards. Go away, your cowardly stench is insulting", "close_window",
+[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+
+
+##### Raid Village - Kham - End #######
+##### Village Quests - Kham - End ##########
 
 # TLD - mirkwood sorcerer quest finish (GA, fixed by CppCoder) -- begin.
 

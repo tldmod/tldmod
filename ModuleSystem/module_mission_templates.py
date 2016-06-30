@@ -1458,6 +1458,82 @@ mission_templates = [ # not used in game
 
 #kham - Ring Hunters - End
 
+### Defend / Raid Village MT Start (kham)###
+
+ (
+    "village_attack_bandits",mtf_battle_mode|mtf_synch_inventory,charge,
+    "You lead your men to battle.",
+    [
+      (0,mtef_team_0|mtef_use_exact_number,af_override_horse, aif_start_alarmed, 50,[]),(1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[itm_practice_staff]),(11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[itm_practice_staff]),
+      (12,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(13,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),(15,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+
+      (16,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(21,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (22,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(23,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (24,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(25,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (30,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),(31,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+  ],
+   tld_common_wb_muddy_water + tld_common_battle_scripts +[
+  
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1),
+  ]),
+  
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (call_script, "script_count_mission_casualties_from_agents"),
+      (finish_mission),
+        (else_try),
+          (eq, "$battle_won", 0),
+          (display_message,"str_can_not_retreat"),
+      (else_try),
+       (main_hero_fallen),
+              (assign, "$pin_player_fallen", 1),
+               (str_store_string, s5, "str_retreat"),
+              (call_script, "script_simulate_retreat", 10, 20, 1),
+              (assign, "$g_battle_result", -1),
+              (set_mission_result, -1),
+              (call_script, "script_count_mission_casualties_from_agents"),
+              (finish_mission, 0),
+        (try_end)]),
+
+      common_battle_inventory,      
+      common_battle_order_panel,
+      common_battle_order_panel_tick,
+      
+    ],
+  ),
+
+
+### Defend / Raid Village MT End (kham)###
 
 ( "castle_attack_walls_defenders_sally",mtf_battle_mode,-1,
   "You attack the walls of the castle...",

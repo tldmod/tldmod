@@ -262,3 +262,5 @@ scn_lair_forest_bandits = 260
 scn_start_lorien = 261
 scn_start_woodelf = 262
 scn_start_rivendell = 263
+scn_village_2 = 264
+scn_village_3 = 265

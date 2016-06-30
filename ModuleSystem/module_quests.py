@@ -109,6 +109,13 @@ quests = [
   "{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain."
   ),
 
+ ("defend_village", "Defend Village", 0,
+  "{!}None"
+),
+  ("raid_village", "Raid Village", 0,
+  "{!}None"
+),
+  
 #TLD lord missions begin (MV)
 ( "rescue_prisoners", "Rescue {reg1} Prisoners", qf_random_quest,
   "{s9} wanted you to rescue {reg1} prisoners."

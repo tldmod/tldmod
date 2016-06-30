@@ -411,9 +411,9 @@ troops = [
 ["cattle","Cattle","Cattle",0,0,0,fac_neutral,   [],      0,0,0,0],
 #soldiers:
 #This troop is the troop marked as soldiers_begin
-["farmer","Farmer","Farmers",tfg_armor,0,0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,],
-      attr_tier_1,wp_tier_1,knows_common,man_face_middle_1,man_face_old_2],
+["farmer","Farmer","Farmers",tfg_armor|tfg_boots,0,0,fac_commoners,
+   [itm_leather_jerkin,itm_leather_boots, itm_practice_staff],
+      attr_tier_1,wp_tier_1,knows_common,man_face_middle_1,man_face_old_2,man_face_older_2],
 ["townsman","Townsman","Townsmen",tfg_boots| tfg_armor,0,0,fac_dale,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,mercenary_face_1,mercenary_face_2],
@@ -1766,8 +1766,8 @@ troops = [
 ["refugee","Refugee","Refugees",tf_female| tfg_armor,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,refugee_face1,refugee_face2],
-["peasant_woman","Peasant_Woman","Peasant_Women",tf_female| tfg_armor,0,0,fac_commoners,
-   [itm_leather_jerkin,itm_leather_boots,],
+["peasant_woman","Peasant_Woman","Peasant_Women",tf_female| tf_randomize_face| tfg_armor|tfg_boots,0,0,fac_commoners,
+   [itm_leather_jerkin,itm_leather_boots, itm_practice_staff],
       attr_tier_1,wp_tier_1,knows_common,refugee_face1,refugee_face2],
 ["caravan_master","Caravan_Master","Caravan_Masters",tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_leather_jerkin,itm_leather_boots,],
