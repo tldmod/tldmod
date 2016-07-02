@@ -20440,6 +20440,7 @@ if is_a_wb_script==1:
   (assign, "$cam_free", 0),
   (assign, "$g_camera_z", 300),       
   (assign, "$g_camera_y", -1000),
+  (assign, "$cam_shoulder", 0),
  ]),
 
 # Modified MartinF's code for DeathCam 

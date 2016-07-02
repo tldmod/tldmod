@@ -42,7 +42,7 @@ af_castle_warlord = af_override_horse | af_override_weapons | af_override_head |
 af_prisoner       = af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot
 
 ################################################################
-## CUSTOM CAMERA by dunde, implemented by Kham (WB Only)
+## CUSTOM CAMERA by dunde, modified to add fixed-camera + implemented by Kham (WB Only)
 ################################################################
 
 camera_init =  ((is_a_wb_mt==1) and [
@@ -74,19 +74,35 @@ camera_mode =  ((is_a_wb_mt==1) and [
      (val_sub, ":angle", ":drop"),
      (position_rotate_x, pos7, ":angle"),
      (mission_cam_animate_to_position, pos7, 100, 0), 
-  (else_try),
-      (eq, "$cam_mode", 2),   
-      (set_fixed_point_multiplier, 100),                         
-      (agent_get_look_position, pos7, "$cam_current_agent"),
-      (position_move_z, pos7,  180),
-      (position_move_y, pos7, -190),
-      (position_move_x, pos7, 70),
-      (agent_get_horse, ":horse_agent", "$cam_current_agent"),
+ (else_try),
+      (eq, "$cam_mode", 2),
       (try_begin),
-          (ge, ":horse_agent", 0),
-          (position_move_z, pos7, 80),
+        (eq,"$cam_shoulder",0),   
+          (set_fixed_point_multiplier, 100),                         
+          (agent_get_look_position, pos7, "$cam_current_agent"),
+          (position_move_z, pos7,  180),
+          (position_move_y, pos7, -190),
+          (position_move_x, pos7, 70),
+          (agent_get_horse, ":horse_agent", "$cam_current_agent"),
+          (try_begin),
+              (ge, ":horse_agent", 0),
+              (position_move_z, pos7, 80),
+          (try_end),
+         (mission_cam_animate_to_position, pos7, 100),   
+      (else_try),
+        (eq,"$cam_shoulder",1),   
+          (set_fixed_point_multiplier, 100),                         
+          (agent_get_look_position, pos7, "$cam_current_agent"),
+          (position_move_z, pos7,  180),
+          (position_move_y, pos7, -190),
+          (position_move_x, pos7, -70),
+          (agent_get_horse, ":horse_agent", "$cam_current_agent"),
+          (try_begin),
+              (ge, ":horse_agent", 0),
+              (position_move_z, pos7, 80),
+          (try_end),
+         (mission_cam_animate_to_position, pos7, 100),   
       (try_end),
-     (mission_cam_animate_to_position, pos7, 100),   
   (else_try),
      (lt, "$cam_mode", 3),
      (main_hero_fallen),
@@ -100,12 +116,13 @@ camera_mode =  ((is_a_wb_mt==1) and [
 camera_set      =  ((is_a_wb_mt==1) and [ 
 
 ( 0, 0, 0,[(key_clicked, "$key_camera_toggle"), (lt, "$cam_mode", 3),(neq, "$shoot_mode", 1)],
-# toggling only when came mode =0 or 1 (2=disable) ; shoot_mode=1 temporary diable toggling
+# toggling only when came mode =0, 1, 2 (3=disable) ; shoot_mode=1 temporary diable toggling
  [(try_begin),
      (eq, "$cam_mode", 0), 
      (assign, "$cam_mode", 2),
      (display_message, "@Fixed Custom Camera"),
-  (else_try),
+     (display_message, "@Press Left / Right Arrow Keys to Switch Shoulders"),
+  (else_try), 
      (eq, "$cam_mode", 2),
      (assign, "$cam_mode", 1),
      (display_message, "@Free-Mode Custom Camera"),
@@ -128,8 +145,8 @@ camera_zoom_in         = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_
 camera_zoom_out        = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_camera_zoom_min"),   (eq, "$cam_mode", 1)], [(val_sub, "$g_camera_y",1),(neg|key_is_down, key_left_shift),(val_sub, "$g_camera_y",9),])   ] or [])
 camera_raise           = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_camera_height_plus"),(eq, "$cam_mode", 1)], [(val_add, "$g_camera_z",1),(neg|key_is_down, key_left_shift),(val_add, "$g_camera_z",9),])   ] or [])
 camera_lower           = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_is_down, "$key_camera_height_min"), (eq, "$cam_mode", 1)], [(val_sub, "$g_camera_z",1),(neg|key_is_down, key_left_shift),(val_sub, "$g_camera_z",9),(val_max,"$g_camera_z", 50),])   ] or [])
-camera_cycle_fowards   = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_clicked, "$key_camera_next"), (eq, "$cam_mode", 1),(call_script, "script_dmod_cycle_forwards") ,], [])    ] or [])   
-camera_cycle_backwards = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_clicked, "$key_camera_prev"), (eq, "$cam_mode", 1),(call_script, "script_dmod_cycle_backwards"),], [])    ] or [])
+camera_cycle_fowards   = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_clicked, "$key_camera_next"),(try_begin),(eq, "$cam_mode", 3),(call_script, "script_dmod_cycle_forwards"), (else_try), (eq,"$cam_mode",2),(assign, "$cam_shoulder",0), (display_message, "@Fixed Camera - Right Shoulder"),(try_end),], [])    ] or [])   
+camera_cycle_backwards = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(key_clicked, "$key_camera_prev"),(try_begin),(eq, "$cam_mode", 3),(call_script, "script_dmod_cycle_backwards"),(else_try), (eq,"$cam_mode",2),(assign, "$cam_shoulder",1), (display_message, "@Fixed Camera - Left Shoulder"),(try_end),], [])    ] or [])
 
 camera_shot   = ((is_a_wb_mt==1) and [   ( 0, 0, 0,[(key_is_down, key_left_mouse_button), (eq, "$cam_mode", 1)], [(get_player_agent_no, ":player_agent"), (eq, ":player_agent","$cam_current_agent"),(agent_get_wielded_item,":weapon","$cam_current_agent",0), (neq,":weapon",-1),(item_get_type, ":type", ":weapon"), (this_or_next|eq,":type",itp_type_bow),(this_or_next|eq,":type",itp_type_crossbow),(eq,":type",itp_type_thrown),(assign, "$cam_mode", 0),(assign,"$shoot_mode",1),(mission_cam_set_mode, "$cam_mode")])   ] or [])
 camera_normal = ((is_a_wb_mt==1) and [  ( 0, 0, 0,[(neg|key_is_down, key_left_mouse_button), (eq, "$shoot_mode",1)], [(assign, "$cam_mode", 1),(assign,"$shoot_mode",0),(mission_cam_set_mode, "$cam_mode")])     ] or [])             
