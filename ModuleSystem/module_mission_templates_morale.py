@@ -54,7 +54,7 @@ tld_morale_triggers = [
 		(store_div, ":normal_rallies", ":cha", 5),
 		(val_add, ":max_rallies", ":normal_rallies"),
 		(try_begin),
-			(player_has_item|this_or_next, "itm_angmar_whip_reward"),
+			(this_or_next|player_has_item, "itm_angmar_whip_reward"),
 			(player_has_item, "itm_horn_gondor_reward"),
 			(store_skill_level,":horn_rallies","skl_leadership","trp_player"),
 			(val_div, ":horn_rallies", 3),

@@ -2301,6 +2301,7 @@ How could I expect someone like {playername} to be up to the challange. My serva
 #### Kham Defend / Raid Village Quests Completion Start ####
 
 [anyone,"lord_start", [
+    (check_quest_active, "qst_defend_village"),
     (check_quest_succeeded, "qst_defend_village"),
     (quest_slot_eq, "qst_defend_village", slot_quest_giver_troop,"$g_talk_troop"),
     (quest_get_slot, ":quest_target_center", "qst_defend_village", slot_quest_object_center),
@@ -2311,6 +2312,7 @@ How could I expect someone like {playername} to be up to the challange. My serva
 
 
 [anyone,"lord_start", [
+    (check_quest_active, "qst_raid_village"),    
     (check_quest_succeeded, "qst_raid_village"),
     (quest_get_slot, ":giver_troop", "qst_raid_village", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
@@ -7003,12 +7005,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ######### Start Quest Dialogues - Started by GA, Completed by Kham ######################
 ######### Start Quest - Caravan                                    ######################
 [trp_start_quest_caravaneer,"start", 
-  [], "Thank you for helping! We are safe now. My name is Torbal, and I was just delivering some goods when we were attacked. Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. Dire things are afoot.. War is coming! I advise you to go to the nearest town and warn everyone about what you've seen to whomever is in command there. It's an important matter, so please make haste.", "caravan_help1",
+  [], "Thank you for helping! We are safe now. My name is Torbal, and I was just delivering some goods when we were attacked.^^ Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. ^^Dire things are afoot.. War is coming! ^^I advise you to go to the nearest town and warn everyone about what you've seen to whomever is in command there. It's an important matter, so please make haste.", "caravan_help1",
     []],
 
 [trp_start_quest_caravaneer|plyr,"caravan_help1",
    [], 
-    "No, I have never seen such a large orc before. Nasty things... I am a Soldier in this coming war that we have all been sensing.", "caravan_help2",
+    "No, I have never seen such a large orc before. Nasty things... ^^I am a Soldier in this coming war that we have all been sensing.", "caravan_help2",
     []],
 
 ###Assist Dialogue Conditions####
@@ -7028,9 +7030,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (str_store_string, s10, "@Dale, so that if you pass by their lands, you can try to purchase some of their well-known bows"),
     (try_end),
    ], 
-    "You are? Of course you are! I have seen that you are a capable warrior. \
-I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. \
-Here, have some of the local currency used by {s10}", "caravan_help3",
+    "You are? Of course you are! I have seen that you are a capable warrior. ^^I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. ^^Here, have some of the local currency used by {s10}", "caravan_help3",
       []],
 ###Assist Dialogue Conditions - End####
 
@@ -7041,7 +7041,7 @@ Here, have some of the local currency used by {s10}", "caravan_help3",
 
 [trp_start_quest_caravaneer,"caravan_help4",
   [],
-    "I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! I for one am well known, and have even been given a monthly income for all the work that I do!","caravan_help5",
+    "I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!","caravan_help5",
     []],
 
 [trp_start_quest_caravaneer|plyr, "caravan_help5",

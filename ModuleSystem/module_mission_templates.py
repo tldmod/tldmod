@@ -1505,7 +1505,7 @@ mission_templates = [ # not used in game
   [
     (store_mission_timer_a,reg(1)),
     (ge,reg(1),10),
-    (all_enemies_defeated),
+    (all_enemies_defeated,1),
     (set_mission_result,1),
     (display_message,"str_msg_battle_won"),
     (assign,"$battle_won",1),

@@ -5816,6 +5816,7 @@ scripts = [
           (try_begin),
       	    (neg|check_quest_active,"qst_defend_village"),
             (faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
+            (neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
             (ge, "$g_talk_troop_faction_relation", 2),
             (is_between, ":player_level", 2,8),
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
@@ -5823,10 +5824,10 @@ scripts = [
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
-            (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
+            (store_faction_of_party,":cur_object_faction",":cur_object_center"), ## Store Faction of Object Center - So that we can set up appropriate raiders
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
             (ge, ":dist", 20),
-            (assign, ":quest_target_faction", ":cur_target_faction"),
+            (assign, ":quest_object_faction", ":cur_object_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
             (assign, ":quest_object_center", ":cur_object_center"),
             (assign, ":quest_target_center", ":cur_target_center"),
