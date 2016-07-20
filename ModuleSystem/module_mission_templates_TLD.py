@@ -595,7 +595,38 @@ common_battle_check_victory_condition = (1, 60, ti_once,[
 	(finish_mission, 1)])
 
 common_battle_victory_display = (10, 0, 0, [],[ (eq,"$battle_won",1),(display_message,"str_msg_battle_won")])
-common_battle_order_panel = (0, 0, 0, [],[(game_key_clicked, gk_view_orders),(neq, "$g_presentation_battle_active", 1),(start_presentation, "prsnt_battle")])
+common_battle_order_panel = (0, 0, 0, [],
+	[
+	    (try_begin),
+	      #-- {show up the ticker on backspace}
+	      (game_key_clicked, gk_view_orders),
+	      (neq, "$g_presentation_battle_active", 1),
+	      #--
+
+	      (start_presentation, "prsnt_battle"),
+	    (try_end),
+	]
+	 + (is_a_wb_mt==1 and 
+	[
+	    #swy-- what a shamefur dispray!
+	    (try_begin),
+	      #-- {guard against rogue Esc presses that kill the ticker without notice}
+	      (eq, "$g_presentation_battle_active", 1),
+	      (neg|is_presentation_active, "prsnt_battle"),
+	      #--
+
+	      (assign, "$g_presentation_battle_active", 0),
+	      (set_show_messages, 1),
+
+	      (try_for_agents, ":cur_agent"),
+	        (agent_set_slot, ":cur_agent", slot_agent_map_overlay_id, 0),
+	      (try_end),
+
+	      (presentation_set_duration, 0),
+	    (try_end)
+	] or [])
+)
+
 common_battle_order_panel_tick = (0.1, 0, 0, [], [ (eq, "$g_presentation_battle_active", 1),(call_script, "script_update_order_panel_statistics_and_map")])
 common_battle_inventory = (ti_inventory_key_pressed, 0, 0, [],[(display_message,"str_use_baggage_for_inventory")])
 common_inventory_not_available = (ti_inventory_key_pressed, 0, 0,[(display_message, "str_cant_use_inventory_now")],[])
@@ -2266,6 +2297,10 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		#--- {there's no rider on top of the warg right now, old or new}
 		(agent_get_rider,    ":curr_rider", ":cur_warg"),
 		(eq,                 ":curr_rider", -1),
+		#--- {this warg isn't owned by a ghost}
+		(agent_get_troop_id, ":orig_rider_trp", ":orig_rider"),
+		(neg|is_between,     ":orig_rider_trp", warg_ghost_begin, warg_ghost_end),
+
 	#	(display_message,"@warg without rider found!"),
 		#--
 		(eq, "$warg_to_be_replaced", -1), # only spawn 1 new warg per "turn"
