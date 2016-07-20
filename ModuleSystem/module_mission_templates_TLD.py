@@ -338,14 +338,16 @@ tld_wargs_attack_horses = (2, 0, 0, [(gt, "$wargs_in_battle", 0)],
 
 
 # This trigger tracks horses for riders falling off horse. -CC
-tld_track_riders = (0.1, 0, 0, [], 
+tld_track_riders = (ti_on_agent_spawn, 0, 0, [], 
 			[
-				(try_for_agents, ":cur_agent"),
-					(agent_is_human, ":cur_agent"),
-					(agent_is_alive, ":cur_agent"),
-					(agent_get_horse, ":horse", ":cur_agent"),
-					(agent_set_slot, ":cur_agent", slot_agent_mount, ":horse"), # no need to check, -1 means no horse, while 0+ means a horse.
-				(try_end),
+				(store_trigger_param_1,     ":cur_agent"),
+
+ 				(agent_is_human,            ":cur_agent"),
+ 				(agent_is_alive,            ":cur_agent"),
+				(agent_get_horse, ":horse", ":cur_agent"),
+
+				# no need to check, -1 means no horse, while 0+ means a horse.
+				(agent_set_slot, ":cur_agent", slot_agent_mount, ":horse"),
 			])
 
 # This trigger damages agents that have fallen off their horse. :) -CC
@@ -1513,6 +1515,10 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
     (agent_get_team, ":agent_rider_team", ":agent_rider"),
     (agent_set_slot, ":agent", slot_agent_mount_side, ":agent_rider_team"), #swy-- assign the spawned agent's rider team,
     (agent_set_slot, ":agent", slot_agent_mount_dead, 0),
+    #swy-- assign the built-in rider-at-startup to its mount for the lone_wargs mechanic, so that we can
+    #   -- check if the orc is still alive but unmounted before attempting to delete + doing a stealthy swap.
+    #   -- (take a look here for the reported bug: https://trello.com/c/lbGfx3Od)
+    (agent_set_slot, ":agent", slot_agent_mount_orig_rider, ":agent_rider"),
   (try_end),
   
   (try_begin),
@@ -2208,6 +2214,7 @@ custom_warg_sounds = (1,0,0, [(store_mission_timer_a,reg1),(ge,reg1,5),], # warg
 ])
 
 # mtarini: wargs attack even if they are not mounted
+#swy-- note: the other half of the code is in custom_tld_spawn_troop
 custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5 to have more time for dead riders to fall down (otherwise they disappear to Pluto with the mount)
 	(try_for_agents,":ghost"), # self destruct any ghost rider which has no ride
 		(agent_is_alive, ":ghost"), 
@@ -2253,8 +2260,13 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		
 		#swy-- if this mount is a warg and riderless...
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
-		(agent_get_rider,":rider",":cur_warg"),
-		(eq,":rider",-1), # (display_message,"@warg without rider found!"),
+		#--- {ensure that the original rider hasn't just dismounted}
+		(agent_get_slot,     ":orig_rider", ":cur_warg", slot_agent_mount_orig_rider),
+		(neg|agent_is_alive, ":orig_rider"),
+		#--- {there's no rider on top of the warg right now, old or new}
+		(agent_get_rider,    ":curr_rider", ":cur_warg"),
+		(eq,                 ":curr_rider", -1),
+	#	(display_message,"@warg without rider found!"),
 		#--
 		(eq, "$warg_to_be_replaced", -1), # only spawn 1 new warg per "turn"
 		(assign, "$warg_to_be_replaced", ":cur_warg"),

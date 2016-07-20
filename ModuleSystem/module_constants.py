@@ -164,6 +164,10 @@ slot_agent_mount			= 20
 slot_agent_rallied			= 21 # Commanders use this slot to remember they've rallied their troops.
 slot_agent_alive			= 22 
 slot_agent_wounded			= 23 
+#swy-- keep a reference in the mount of its original rider for the lone_wargs mechanic
+#   -- so that we can check if the rider is unmounted but alive
+#   -- (the player can order it and it bugs out the mechanic due to an unhadled case)
+slot_agent_mount_orig_rider = 24
 
 # why not use duplicate slots for an agent that will never use it? -CC
 

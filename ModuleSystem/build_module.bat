@@ -1,5 +1,5 @@
 @echo off && title building tld for [wait for it]--
-set PATH="C:\Python24";"C:\Python26";%PATH%
+set PATH="C:\Python24";"C:\Python26";C:\Python27;%PATH%
 set PYTHONPATH=%cd%;%cd%\data;%cd%\header;%cd%\id;%cd%\process
 
 :top

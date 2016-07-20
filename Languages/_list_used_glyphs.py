@@ -5,7 +5,7 @@
  *a shiny masterpiece of modern technology*  *requires python 3*  *please kill me*
  --
  Copyright (c) 2015 Created by Ismael Ferreras Morezuelas (swyterzone+tld@gmail.com)
- 
+
  use as: cd <lang-folder> && python ../_list_used_glyphs.py > output.txt
 
  Released under the liberal 2-clause BSD license.
@@ -22,12 +22,12 @@ for file in sorted(glob.glob('*.csv')):
 
     with codecs.open(file, 'r', 'UTF-8') as f:
         for line in f:
-			thing = line.replace('^','').replace('{','').replace('}','').rstrip()
-			if thing:
-				string=thing.split("|")[1]
-				db = db + string # append all the combined strings in the translation
-			# print(string)
+            thing = line.replace('^','').replace('{','').replace('}','').rstrip()
+            if thing:
+                string=thing.split("|")[1]
+                db = db + string # append all the combined strings in the translation
+                #print(string)
 
 db = "".join(set(db)) # remove duplicates
 db = ''.join(sorted(db)) # sort them
-print("==========\r\nDB of used glyphs (" + str(len(db)) + "): " + db.encode('utf-8'))
+print("==========\r\nDB of used glyphs (" + "%u" % len(db) + "): " + db)
