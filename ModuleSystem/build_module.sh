@@ -46,6 +46,22 @@ python -B -OO ./Process/process_postfx.py     # <-- just for wb
 python -B -OO ./Process/process_global_variables_unused.py
 # rm *.pyc -- not needed anymore
 
+
+#
+# convert to MS-DOS/Windows newline format (swyter)
+# needs this: http://linux.maruhn.com/sec/flip.html
+#
+
+if [ -e /usr/bin/flip ]; then
+    flip -d ID/*.py
+    flip -d ../*.txt
+    flip -d ../_wb/*.txt
+    flip -d *.txt
+    flip -u ../_wb/_tweaks_done_to_the_existing_res_tree.txt
+fi
+
+# --
+
 function msys_check()
 {
     cnt=$((`cat ${1} | wc -l`-1))
