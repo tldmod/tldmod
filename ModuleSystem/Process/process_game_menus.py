@@ -45,9 +45,9 @@ def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
 def save_python_header():
   from module_info import wb_compile_switch as is_wb
   if (is_wb):
-    ofile = open("./id/ID_menus_wb.py","w")
+    ofile = open("./ID/ID_menus_wb.py","w")
   else:
-    ofile = open("./id/ID_menus_mb.py","w")
+    ofile = open("./ID/ID_menus_mb.py","w")
   for i_game_menu in xrange(len(game_menus)):
     ofile.write("menu_%s = %d\n"%(game_menus[i_game_menu][0],i_game_menu))
   ofile.close()
