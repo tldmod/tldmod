@@ -323,10 +323,10 @@ dlga_lord_tell_objective:lord_pretalk.9|Bojujeme proti {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.10|Děláme společnost {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.11|Přemýšlíme o našem další kroku.
 dlga_lord_tell_objective:lord_pretalk.12|Já nevím: {reg1} {s1}
-; dlga_lord_active_mission_1:lord_mission_sorcerer_completed|The sorcerer of Mirkwood has been slain, my Lady.
-; dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Forgive me, my Lady, but urgent matters have prevented me from slaying the sorcerer, and in the meantime he has fled.
+dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Černokněžník z Temného hvozdu byl zabit, má Paní.
+dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Odpusťte mi, má Paní, ale naléhavější záležitosti mi zabránili v zabití černokežníka, a mezitím utekl.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Černokněžník z Temného hvozdu pořád žije. Přerušili jsme jeho kouzla, ale uprchl.
-; dlga_lord_mission_sorcerer_completed:lord_pretalk|Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. You have performed a great service for our people and as such you are entitled to a gift. Take this...
+dlga_lord_mission_sorcerer_completed:lord_pretalk|Ano {playername}, pocítila jsem jeho smrt. Závoj čarodejnictví odvanul z lesa a mnoho mé síly se vrátilo. Vykonal jsi velkou službu pro náš lid a za ni ti náleží dárek. Vem si tohle...
 ; dlga_lord_mission_sorcerer_failed:lord_pretalk|Yes {playername}, I sense the dark arts of enemy still pressing upon us. His efforts seem greater now. It is unfortunate that you could not stop him. No doubt he will take additional precautions in future to ward against our efforts. He will likely never be found while Dol Guldur still stands. Thank you for your efforts but leave me now. I grow tired.
 dlga_lord_active_mission_1:lord_lend_companion_end|Ty bys chtěl svého společníka zpět? Chápu...
 dlga_lord_active_mission_1:lord_pretalk|Prosím tě o trpělivost, {playername}, pořád tvého společníka potřebuji, vrať se prosím, až bude po všem.
@@ -346,8 +346,8 @@ dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|Našel jsem {s4} ukr�
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|Obávám se, že uprchl.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|A je nám bez něj o hodně lépe! Děkuji, {playername}, že jsi zbavil toho dávno zaníceného trnu. Je dobře, že se ti dá věřit, že si dokážeš taktně poradit. Poslal jsem našim lidem správu, a můžeš počítat se zásobami od nás.
 dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|Děkuji, {s65}.
-; dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|I'll notify our intendants of your service, {playername}. Once again, you've my thanks for ridding me of that {s44}.
-; dlga_lord_hunt_down_fugitive_fail:lord_pretalk|It is a sad day when that {s44} manages to avoid my grasp yet again. I thought you would be able to do this, {playername}. Clearly I was wrong.
+dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|Upozorním správce na tvoji službu, {playername}. Opětovně, máš můj vděk za zbavení se toho {s44}.
+dlga_lord_hunt_down_fugitive_fail:lord_pretalk|Je to smutný den kdy ten {s44} znovu dokázal vyhnout mému dosahu. Myslel jsem že to dokážeš, {playername}. Očividně jsem se zmýlil.
 dlga_lord_active_mission_2:lord_active_mission_3|Pracuji na tom.
 dlga_lord_active_mission_2:lord_mission_failed|Obávám se, že to nezvládnu.
 dlga_lord_active_mission_3:lord_pretalk|Dobře, pamatuj, že na tebe spoléhám.
@@ -700,28 +700,28 @@ dlga_merchant_quest_requested:merchant_quest_brief.4|Úkol říkáš? Pán si ka
 ; dlga_merchant_caravan_follow_lead:close_window|Alright. We'll be right behind you.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Počkej tu, půjdu napřed a prozkoumám cestu.
 dlga_merchant_caravan_stay_here:close_window|Dobře, počkáme tu na tebe.
-; dlga_merchant_quest_requested:merchant_quest_brief.6|Actually, I was looking for an able commander like you. There's this group of particularly troublesome goblins. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
+dlga_merchant_quest_requested:merchant_quest_brief.6|Vlastně, hledal jsem schopného velitele jako jsi ty. Je tu jedna skupina velice problémových skřetů. Vetřeli se do sousedství a napadají povozy se zásobami a osamělé válečníky. Do teď se jim dařilo všem našim hlídkám vyhýbat. Pokud je někdo nezasaví, budu potřebovat vážný vojenský zásah...
 ; dlga_merchant_quest_brief:troublesome_bandits_quest_brief|I need someone to hunt down those troublesome goblins. It's dangerous work. But I believe that you are the one for it. What do you say?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Dobře, ulovím ty skřety.
 dlga_merchant_quest_taken_bandits:close_window|Skutečně? To mě velice těší. Hodně štěstí.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Omlouvam se. Na toto nemam prave ted cas. 
 dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Je to tak! Okolí obtěžuje skupina skřetů, a já nevím jak si s nimi poradit. V noci přepadají a okrádají opilé brance, a jak dorazí stráže, zmizí jak pára nad hrncem. Ještě jsme nechytili ani jediného. Napadají jen samotné lidi, před více lidmi prchají. Potřebuji někoho, kdo se o ně postará sám. Uděláš to?
 dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Okolí obtěžuje skupina skřetů, a já nevím jak si s nimi poradit. V noci přepadají a okrádají opilé brance, a jak dorazí stráže, zmizí jak pára nad hrncem. Ještě jsme nechytili ani jediného. Napadají jen samotné lidi, před více lidmi prchají. Potřebuji někoho, kdo se o ně postará sám. Uděláš to?
-; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue goblins? Why, certainly!
-; dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, I'm not interested.
+dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Zabíjení loupežívých skřetů ? No, samozřejmě!
+dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Ne, nemám zájem.
 ; dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
 ; dlga_merchant_quest_requested:merchant_quest_brief.7|The garrison commander here is looking for a resourceful warrior to take a group of {s12} to {s13}.
 ; dlga_merchant_quest_brief:move_cattle_herd_quest_brief|The group must arrive at {s13} within {reg6} days. Sooner is better, much better,  but it must be absolutely no later than {reg6} days.  Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
 ; dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Aye, I can take them to {s13}.
-; dlga_move_cattle_herd_quest_brief:merchant_quest_stall|I am sorry, but no.
+dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Je mi líto, ale ne.
 ; dlga_move_cattle_herd_quest_taken:mayor_pretalk|Splendid. You can find them right outside the town. After you take them to {s13}, return back to me and I will give you your pay.
-; dlga_merchant_quest_requested:mayor_pretalk|Thanks, commander, but we don't need anything else right now. I'll let you know when we do.
-; dlga_goods_merchant_talk:goods_trade_requested|I want to buy a few items... and perhaps sell some.
-; dlga_goods_trade_requested:goods_trade_completed|Sure, sure... Here, have a look at my stock...
+dlga_merchant_quest_requested:mayor_pretalk|Děkuji, veliteli, ale momentálně nic jiného nepotřebujeme. Dám vám vědět až se to změní.
+dlga_goods_merchant_talk:goods_trade_requested|Chtěl bych koupit pár předmětů ... a možná jiné prodat.
+dlga_goods_trade_requested:goods_trade_completed|Jistě, jistě... Tady, podívej se na moje zásoby...
 dlga_goods_trade_completed:goods_merchant_talk|Jeste neco?
 dlga_goods_merchant_talk:close_window|Nic, děkuji.
 dlga_start:troublesome_bandits_intro_1|Co? Budeme zabíjet. Seberem ti jídlo a koně a sežerem je. Sežerem i tebe!
-; dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|You'll regret causing trouble around these parts. You should have never left your mountain caves.
+dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|Budete litovat způsobených potíží v těchto místech. Nikdy jste neměli opustit vaše horské jeskyně.
 dlga_troublesome_bandits_intro_2:close_window|Zabij vás teď a sežerem váš potom!
 dlga_start:fangorn_orcs_intro_1|Eh? Starý pán nebude rád, že rušíš práci jeho služebníků.
 dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|Přestaňte ubližovat lesu a odejděte, nebo toho budete litovat.
@@ -761,7 +761,7 @@ dlga_town_dweller_talk:town_dweller_ask_situation|Jak se tu žije?
 dlga_town_dweller_ask_situation:town_dweller_poor|Neštěstí zasáhlo mou rodinu {sir/madam}. Nemoc nám zničila úrodu a mé děti leží doma nemocné a hladové. Mí sousedi jsou příliš chudí na to, aby mi pomohli. 
 dlga_town_dweller_ask_situation:town_dweller_poor.1|Můj život je nuzný,  {sir/madam}. Nenašel jsem práci po celé měsíce a moje děti usínají každou noc hladové. Mí sousedi jsou moc chudí na to, aby mi pomohli.
 dlga_town_dweller_poor:town_dweller_poor_paid|Vem si těchto 300 denárů. Snad pomůžou tobě a tvé rodině.
-; dlga_town_dweller_poor:town_dweller_poor_not_paid|Then you must work harder and bear your burden without complaining.
+dlga_town_dweller_poor:town_dweller_poor_not_paid|Pak tedy musíš pracovat tvrději a nést své břemeno bez stěžování si.
 ; dlga_town_dweller_poor_not_paid:close_window|Yes {sir/madam}. I will do as you say.
 ; dlga_town_dweller_poor_paid:close_window|{My lord/My good lady}.  You are so good and generous. I will tell everyone how you helped us.
 ; dlga_town_dweller_ask_situation:close_window|Thank you for your kindness {sir/madam}. With your help our lives will be better. I will pray for you everyday.

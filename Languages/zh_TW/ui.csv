@@ -1,0 +1,48 @@
+ui_at_learning_limit|(達 到 此 種 族 的 學 習 限 度 )
+ui_not_enough_skill_points_to_learn|(沒 有 足 夠 的 技 能 點 來 學 習 )
+ui_not_enough_attributetype_to_learn_this_skill|(沒 有 足 夠 的 %s來 學 習 這 個 技 能 )
+ui_explanation_agility|敏 捷 ： 每 一 點 增 加 5點 武 器 熟 練 度 ， 並 且 提 高 武 器 速 度 0.5%。 下 列 技 能 不 能 超 過 敏 捷 的 1/3： 盾 防 ， 跑 動 ， 武 器 掌 握 ， 騎 術 ， 騎 射 ， 掠 奪 。 
+ui_retreated_battle|%s 已 經 排 到 。 
+ui_riding_skill_not_adequate_to_mount|(騎 術 太 低 )
+ui_camp|行 動 
+ui_tutorial_inventory|在 The Last Days， 你 需 要 資 源 點 來 獲 得 裝 備 。 資 源 點 是 一 個 陣 營 給 你 的 工 資 和 衡 量 你 的 重 要 性 ， 以 及 您 有 權 使 用 的 陣 營 資 源 。 
+ui_you_dont_have_value|沒 有 ： %s
+ui_merchant_cant_afford_value|%s： 你 給 我 們 多 於 我 們 需 要 的 ！ 也 許 你 可 以 保 留 更 多 的 東 西 。 (你 給 貨 物 %s， 我 們 只 能 用 %s)。 
+ui_merchant_pay_whatever|好 吧 ， 你 有 多 少 就 付 多 少 。 
+ui_horse|騎 乘 
+ui_reclaim_your_sold_goods|購 買 物 品 前 ， 先 收 回 賣 掉 的 同 類 物 品 ！ 
+ui_return_your_bought_goods|出 售 物 品 前 ， 先 退 回 買 走 的 同 類 物 品 ！ 
+ui_return_price|退 回 價 格 ： %d資 源 點 
+ui_sell_price|出 售 價 格 ： +%d資 源 點 
+ui_reclaim_price|收 回 價 格 ： -%d資 源 點 
+ui_buying_price|購 買 價 格 ： -%d資 源 點 
+ui_notification_riding_skill_not_enough|你 的 騎 術 太 低 ， 不 能 騎 這 個 。 
+ui_notification_payment_value|消 耗 %s
+ui_notification_payment_receive_value|獲 得 %s
+ui_weekly_cost_value|每 週 花 費 ： %s
+ui_sell|給 予 
+ui_hire|招 募 
+ui_notification_cant_hire|(沒 有 足 夠 的 資 源 點 去 招 募 )
+ui_joining_cost_weekly_wage|招 募 價 格 ： %d資 源 點 -- 每 週 工 資 ： %d資 源 點 
+ui_weekly_wage|每 週 工 資 ： %d資 源 點 
+ui_price|價 格 ： %d資 源 點 
+ui_cant_reload_this_weapon_on_horseback|騎 乘 時 無 法 裝 填 此 武 器 。 
+ui_delivered_number_damage_to_horse|給 對 方 的 坐 騎 造 成 %d點 傷 害 。 
+ui_horse_charged_for_number_damage|坐 騎 衝 撞 造 成 %d點 傷 害 。 
+ui_horse_received_number_damage|坐 騎 受 到 %d點 傷 害 。 
+ui_horse_fell_dead|坐 騎 死 了 … 
+ui_horse_crippled|坐 騎 瘸 了 … 
+ui_you_got_value|獲 得  %s。
+ui_has_deserted_the_party|從 部 隊 中 叛 逃 。 
+ui_have_deserted_the_party|從 部 隊 中 叛 逃 。 
+ui_loading_textures|載 入 紋 理 (請 耐 心 等 候 )… 
+ui_order_hold_fire_toggle|不 要 射 擊 ／ 任 意 射 擊 (切 換 )
+ui_order_dismount_toggle|命 令 下 馬 ／ 上 馬 (切 換 )
+ui_mount_horses_e_|%s， 上 馬 ！ 
+ui_hold_fire_e_|%s， 不 要 射 擊 ！ 
+ui_fire_at_will_e_|%s， 任 意 射 擊 ！ 
+ui_recent_messages|最 近 消 息 
+ui_value_denars|%d資 源 點 
+ui_cannot_be_used_on_horseback|騎 乘 時 無 法 使 用 。 
+ui_upgrade_to_value|升 級 到 %s
+ui_notification_cant_upgrade|(資 源 不 足 無 法 升 級 )

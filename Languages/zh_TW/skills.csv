@@ -1,0 +1,48 @@
+skl_trade|議 價 
+skl_trade_desc|這 個 技 能 可 以 讓 你 使 用 更 少 的 資 源 點  獲 得 更 多 的 物 品 。 (隊 伍 技 能 )
+skl_leadership|統 御 
+skl_leadership_desc|每 點 增 加 部 隊 命 令 上 限 5 人 ， 提 高 部 隊 士 氣 ， 減 少 部 隊 工 資 5%%。 (領 袖 技 能)
+skl_prisoner_management|俘 虜 管 理 
+skl_prisoner_management_desc|每 點 增 加 俘 虜 上 限 %d。 (領 袖 技 能 )
+skl_persuasion|說 服 
+skl_persuasion_desc|此 技 能 幫 助 你 ， 使 你 的 觀 點 更 容 易 讓 人 接 受 。 (個 人 技 能 )
+skl_engineer|工 藝 
+skl_engineer_desc|每 點 降 低 製 作 與 強 化 裝 備 的 時 間 ， 且 允 許 強 化 成 更 高 品 質 的 物 品 。 (隊 伍 技 能 )
+skl_first_aid|急 救 
+skl_first_aid_desc|每 點 可 重 拾 任 務 中 失 去 的 5%%命 中 點 數 。 (隊 伍 技 能 )
+skl_surgery|手 術 
+skl_surgery_desc|每 點 增 加 4%%的 機 會 ， 使 得 本 來 會 死 亡 的 隊 伍 成 員 保 住 性 命 。 (隊 伍 技 能 )
+skl_wound_treatment|療 傷 
+skl_wound_treatment_desc|每 點 增 加 隊 伍 生 命 值 回 副 速 度 20%%。 (隊 伍 技 能 )
+skl_inventory_management|物 品 管 理 
+skl_inventory_management_desc|每 點 增 加 物 品 欄 容 量 +6格 。 (領 袖 技 能 )
+skl_spotting|偵 察 
+skl_spotting_desc|每 點 增 加 隊 伍 偵 察 範 圍 10%%。 (隊 伍 技 能 )
+skl_pathfinding|向 導 
+skl_pathfinding_desc|每 點 增 加 隊 伍 地 圖 移 動 速 度 3%%。 (隊 伍 技 能 )
+skl_tactics|戰 術 
+skl_tactics_desc|每 2點 增 加 1點 戰 鬥 優 勢 。 (隊 伍 技 能 )
+skl_tracking|跟 踪 
+skl_tracking_desc|從 腳 印 和 其 它 印 跡 中 發 現 更 多 的 信 息 。 (隊 伍 技 能 )
+skl_trainer|教 練 
+skl_trainer_desc|每 天 每 位 有 該 項 技 能 的 英 雄 會 增 加 經 驗 值 給 其 它 級 別 較 低 的 隊 伍 成 員 傳 授 經 驗 值 。 經 驗 值 依 次 為 ： {0 , 4 , 10 , 16 , 23 , 30 , 38 , 46 , 55 , 65 , 80}。 (個 人 技 能 )
+skl_looting|掠 奪 
+skl_looting_desc|每 點 提 高 獲 得 戰 利 品 的 數 量 10%%。 (隊 伍 技 能 )
+skl_horse_archery|騎 射 
+skl_horse_archery_desc|減 少 在 馬 背 上 射 箭 與 投 擲 的 精 度 和 傷 害 損 失 。 (個 人 技 能 )
+skl_riding|騎 術 
+skl_riding_desc|可 以 騎 更 好 的 馬 (或 其 他 野 獸 )， 提 高 騎 行 速 度 和 操 縱 。 (個 人 技 能 )
+skl_athletics|跑 動 
+skl_athletics_desc|提 高 跑 不 速 度 。 (個 人 技 能 )
+skl_shield|盾 防 
+skl_shield_desc|減 少 盾 的 損 壞 程 度 (每 點 減 少 8%%)和 提 高 盾 的 格 擋 速 度 ， 以 及 覆 蓋 範 圍 。 (個 人 技 能 )
+skl_weapon_master|武 器 掌 握 
+skl_weapon_master_desc|讓 武 器 熟 練 度 提 升 的 更 快 並 且 提 高 武 器 熟 練  度 的 上 限 。 上 限 依 次 為 ： 60, 100, 140, 180, 220, 260, 300, 340, 380, 420。 (個 人 技 能 )
+skl_power_draw|強 弓 
+skl_power_draw_desc|角 色 可 以 使 用 更 強 力 的 弓 。 (最 高 有 效 等 級 不 超 過 弓 的 等 級 加 四 )每 點 增 加 弓 箭 傷 害 14%%。 (個 人 技 能 )
+skl_power_throw|強 擲 
+skl_power_throw_desc|每 點 增 加 10%%的 投 擲 傷 害 。 (個 人 技 能 )
+skl_power_strike|強 擊 
+skl_power_strike_desc|每 點 增 加 8%%的 進 戰 傷 害 。 (個 人 技 能 )
+skl_ironflesh|鐵 骨 
+skl_ironflesh_desc|每 點 增 加 +2點 生 命 值 。 (個 人 技 能 )

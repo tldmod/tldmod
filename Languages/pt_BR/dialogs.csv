@@ -1,7 +1,7 @@
-dlga_start:mutiny_pretalk_1|Hey, {nome do jogador}. Nós vamos te dizer uma coisa... Os rapazes aqui estão resmungando! Querem mais diversão, menos marchas.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a linha, verme! Estamos em guerra e sou seu comandante.
+dlga_start:mutiny_pretalk_1|Hey, {nome do jogador}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão e menos marchas.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a linha, verme! Estamos em guerra e eu sou seu comandante.
 dlga_mutiny_pretalk_2:close_window|Como quiser, comandante. Como quiser...
-dlga_start:mutiny_talk_1|Hey, comandante. Nós vamos te dizer uma coisa... Os rapazes aqui não estão felizes, nenhum pouco felizes. Sem carne humana o suficiente, sem diversão. Os rapazes aqui dizem que você não é bom o suficiente, comandante!
+dlga_start:mutiny_talk_1|Hey, comandante. Escute aqui... Os rapazes não estão felizes, nenhum pouco felizes. Não tem carne humana o suficiente, não tem diversão. Os rapazes dizem que você não é bom o suficiente, comandante!
 dlga_mutiny_talk_1:mutiny_talk_2|O que? Insubordinação durante a guerra? Isso é punido com a morte, verme!
 dlga_mutiny_talk_2:close_window|Nós vamos te dizer uma coisa... Os rapazes aqui acham que eu serei um melhor comandante para eles quando EU MATAR VOCÊ!
 dlga_start:troll_introduce_1|Algum problema?

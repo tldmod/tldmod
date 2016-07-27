@@ -306,7 +306,7 @@ qstr_Archers__{reg2}_|Arceri ({reg2})
 qstr_Cavalry__{reg3}_|Cavalleria ({reg3})
 qstr_Orc_brew_finished!|Birra degli orchi terminata!
 qstr_Given_by:_{s62}|Dato da: {s62}
-; qstr_Given_on:_{s60}|Given on: {s60}
+qstr_Given_on:_{s60}|Il {s50}
 qstr_You_have_{reg0}_days|Hai {reg0} giori per finire questo incarico.
 qstr_This_quest_has_been_|Questo incarico è stato completato. Parla con {s59} per terminarlo. 
 qstr_This_quest_has_been_s|Questo incarico è stato completato con successo. Parla con {s59} per ottenere la tua ricompensa.
@@ -330,7 +330,7 @@ qstr_{reg3?She:He}|{reg3?Lei:Lui}
 qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} serve {s55} of {s56}.^}}{reg9?{reg3?She:He} è {reg3?lady:lord} di {s58}.:}{s59}{reg10?^{reg3?She:He} caduto in battaglia!:}
 qstr_The_last_time_you_sa|L'ultima volta che l'ho visto {reg1?her:him}, {s1}
 qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?her:him}, {s1}
-; qstr_The_{s50}|The {s50}
+qstr_The_{s50}|Il {s50}
 qstr_{s50}_belongs_to_{s1|{s50} appartiene a {s1} of {s2}.^
 qstr_Current_garrison_con|La guarnigione attuale consiste in {reg5} uomini.^Possiede scorte di cibo per {reg6} giorni.
 qstr_Very_Poor|Molto povero
@@ -512,7 +512,7 @@ qstr_You_cower_in_terror_|Ti accasci in preda al terrore, le urla dei Nazgul son
 qstr_knocked_unconscious|ha perso i sensi
 qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} è {s10} nell'attacco dei Nazgul!
-; qstr_{s1}_s_morale:_{reg1|{s1}'s morale: {reg1}
+qstr_{s1}_s_morale:_{reg1|{s1}'s morale: {reg1}
 qstr_You_rally_your_troop|Raduni le tue truppe!
 qstr_{s5}_rallies_his_tro|{s5} raduna le sue truppe!
 qstr_You_have_killed_{reg|Hai ucciso {reg1} nemici in questa battaglia!
@@ -589,7 +589,7 @@ qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 ; qstr_{s1}^^Factions_are_n|{s1}^^Factions are normally sieged when below {reg1} strength.
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Tratto acquisito:^{s2}
-; qstr_^^You_are_{s17}.|^^You are {s17}.
+qstr_^^You_are_{s17}.|^^Tu sei {s17}.
 qstr_Assassins_in_the_cam|Assassini nel campo, difenditi!
 qstr_Ally_party_size:_{re|Grandezza dell'armata alleata: {reg1}.
 qstr_Enemy_party_size:_{r|Grandezza dell'armata avversaria: {reg1}.
@@ -618,7 +618,7 @@ qstr_A_second_troll_is_ca|Un secondo troll imprigionato in una gabbia su ruote.
 qstr_Here_you_are.|Eccoti.
 ; qstr_Player_was_moved_to_|Player was moved to {s10}.
 ; qstr_neutral_whereabouts|neutral whereabouts
-; qstr_any|any
+qstr_any|alcuni
 qstr_woman|donna
 qstr_gondor|gondor
 qstr_rohan|rohan
@@ -627,10 +627,10 @@ qstr_urukhai|urukhai
 qstr_haradrim|haradrim
 qstr_dwarf|nano
 qstr_troll|troll
-; qstr_dunedain|dunedain
-; qstr_lothlorien|lothlorien
-; qstr_rivendell|rivendell
-; qstr_mirkwood|mirkwood
+qstr_dunedain|dunedain
+qstr_lothlorien|lothorien
+qstr_rivendell|rivendell
+qstr_mirkwood|mirkwood
 qstr_evil_man|Uomo malvagio
 qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Solo per le truppe regolari
@@ -653,7 +653,7 @@ qstr_News_of_your_victory|Le notizie della tua vittoria contro {s4} giungono a {
 qstr_{s3}_witnesses_your_|{s3} Testimonia la tua vittoria contro {s4}.
 qstr_{s1}_of_{s3}_managed|{s1} di {s3} sono riusciti a scappare.
 qstr_Prisoners_rescued_so|Prigionieri salvati per ora: {reg1}
-; qstr_Victory_comment._Pla|Victory comment. Player was alone
+qstr_Victory_comment._Pla|Commento della vittoria. Il giocatore era solo
 ; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
 ; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
 ; qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
@@ -792,15 +792,15 @@ qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
 qstr_Well_there_s_a_lot_o|Beh, ci sono un sacco di nuove grafiche e roba, penso che richiede tempo.
 qstr_It_has_been_recently|Di recente è stato rilasciato, se vi siete persi il link, è possibile scaricarlo a lemonparty.org.
 qstr_i_wont_decapitated_e|Voglio decapitare gli elefanti in multi, ora!!!
-; qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
+qstr_I_don_t_think_there_|Non penso che ci sia il multyplayer in TDL, ma gli elefanti sarebbero fighi.
 qstr_There_is_a_hidden_el|In TLD c'è una modalità deathmatch elefanti, ma prima devi rimuovere tutti i tuoi salvataggi, giocare per 100 giorni di gioco senza salvare poi andare alla schermata del personaggio e premere Alt+F4. Ne vale la pena!
-; qstr_Did_you_bring_your_z|Did you bring your zupdog?
-; qstr_What_s_zupdog?|What's zupdog?
+qstr_Did_you_bring_your_z|Hai preso il tuo zupdog?
+qstr_What_s_zupdog?|Cos' è uno zapdog?
 ; qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
 ; qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
 ; qstr_What_is_plate_armour|What is plate armour? Never heard of it.
 ; qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
-; qstr_WHEN_U_REALSE_MOD?!!|WHEN U REALSE MOD?!!?
+qstr_WHEN_U_REALSE_MOD?!!|QUANDO RILASCERAI LA MOD?!!?
 ; qstr_But_we_did_release._|But we did release. You're in it. And why are you shouting?
 ; qstr_YES!_ALSO_SOMETIMES_|YES! ALSO SOMETIMES IS!
 ; qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
@@ -828,8 +828,8 @@ qstr_Good_day_to_you.|Buona giornata a te.
 qstr_Ah_it_s_you_again._G|Ah, sei tu di nuovo. Arrivederci.
 qstr_My_apologies_if_I_wa|Mi scuso se prima sono stato rude. Ancora, qual'era la tua storia?
 qstr_I_was_reconsidering_|Stavo ripensando alla nostra ultima conversazione. Qual'era la tua storia puoi ricordarmela?
-; qstr_Greetings_{s23}_{s24|Greetings, {s23}, {s24}.
-; qstr_Greetings_{s23}.|Greetings, {s23}.
+qstr_Greetings_{s23}_{s24|Salve, {s23}, {s24}.
+qstr_Greetings_{s23}.|Salve, {s23}.
 qstr_So_you_are_{s23}._I_|Così, tu sei {s23}. Ho saputo che hai combattuto per i nostri amici {s25}, quindi credo che ti dovrei considerare un alleato.
 qstr_I_need_volunteers_wi|Ho bisogno di volontari desiderosi di seguirmi in missioni pericolose.
 qstr_I_need_some_soldiers|Ho bisogno di alcuni soldati per rimpiazzare i caduti.

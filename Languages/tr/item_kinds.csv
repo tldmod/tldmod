@@ -1,0 +1,906 @@
+itm_horse_meat|At eti
+itm_practice_sword|Talim Kılıcı
+itm_arena_lance|Mızrak
+itm_practice_staff|Ahşap Asa
+itm_practice_bow|Talim Yayı
+itm_wooden_javelin|Ahşap cirit
+itm_human_meat|İnsan Eti
+itm_maggoty_bread|Kurtlu Ekmek
+itm_cram|Semirten Öğün
+itm_lembas|Lembas
+itm_smoked_fish|Tütsülenmiş Balık
+itm_dried_meat|Kurutulmuş Et
+itm_cattle_meat|Bifek
+itm_grain|Buğday
+itm_tools|Aletler
+itm_siege_supply|Malzemeler
+itm_quest_wine|Şarap
+itm_quest_ale|Bira
+itm_metal_scraps_bad|Düşük Kalite Metal Hurda
+itm_metal_scraps_medium|Kullanılabilir Metal Hurda
+itm_metal_scraps_good|İyi Kalite Metal Hurda
+itm_oliphant|Oliphaunt
+itm_sumpter_horse|Yük Beygiri
+itm_saddle_horse|Binek Atı
+itm_steppe_horse|Bozkır Atı
+itm_courser|Süvari Atı
+itm_hunter|Avcı
+itm_pony|Midilli
+itm_arnor_warhorse|Arnorian Savaş Atı
+itm_dunedain_warhorse|Dunedain Savaş Atı
+itm_rohirrim_courser|Rohirrim Süvari Atlısı
+itm_rohirrim_hunter|Rohirrim Avcıları
+itm_rohirrim_courser2|Rohirrim Süvari Atlısı
+itm_rohan_warhorse|Rohirrim Savaş Atı
+itm_thengel_warhorse|Thengel Muhafız Savaş Atı
+itm_rhun_horse_a|Rhun Atlısı
+itm_rhun_horse_b|Rhun Atlısı
+itm_rhun_horse_d|Rhun Atlısı
+itm_rhun_horse_e|Rhun Ağır Atlısı
+itm_rhun_horse_f|Rhun Ağır Atlısı
+itm_rhun_horse_g|Rhun Ağır Atlısı
+itm_rhun_horse_h|Rhun Ağır Atlısı
+itm_dale_horse|Dale Atı
+itm_dale_warhorse|Dale Savaş Atı
+itm_riv_warhorse|Rivendell Savaş Atı
+itm_riv_warhorse2|Imladris Atı
+itm_mordor_warhorse|Mordor Savaş Atı
+itm_mordor_warhorse2|Mordor Uğursuz Atı
+itm_gondor_courser|Gondor Süvari Atlısı
+itm_gondor_hunter|Gondor Avcısı
+itm_dol_amroth_warhorse|Dol Amroth Savaş Atı
+itm_dol_amroth_warhorse2|Dol Amroth Ağır Savaş Atı
+itm_gondor_warhorse|Gondor Savaş Atı
+itm_gondor_lam_horse|Lamedon Zırhlı Atı
+itm_lorien_warhorse|Lothlorien Savaş Atı
+itm_harad_horse|Harad Atı
+itm_harad_warhorse|Harad Savaş Atı
+itm_variag_pony|Variag Midillisi
+itm_variag_kataphrakt|Easterling Savaş Atı 
+itm_warg_1b|Kurt
+itm_warg_1c|Kurt
+itm_warg_1d|Kurt
+itm_wargarmored_1b|Zırhlı Kurt
+itm_wargarmored_1c|Zırhlı Kurt
+itm_wargarmored_2b|Zırhlı Kurt
+itm_wargarmored_2c|Zırhlı Kurt
+itm_wargarmored_3a|Zırhlı Kurt
+itm_warg_reward|Dev Kurt
+itm_troll_feet_boots|Troll Ayağı
+itm_troll_head_helm|Troll kafası
+itm_troll_head_helm_b|Troll kafası
+itm_troll_head_helm_c|Troll kafası
+itm_tree_trunk_club_a|Goblin Gövdesi
+itm_tree_trunk_club_b|Goblin Gövdesi
+itm_tree_trunk_invis|Goblin Gövdesi
+itm_giant_hammer|Devin Çelici
+itm_giant_mace|Devin Topuzu
+itm_giant_mace_b|Devin Dikenli Topuzu
+itm_olog_feet_boots|Olag Hainin Ayağı
+itm_olog_head_helm|Olag Hainin Kafası
+itm_olog_head_helm_b|Olag Hainin Kafası
+itm_olog_head_helm_c|Olag Hainin Kafası
+itm_olog_body|Olag Hainin Zırhı
+itm_olog_body_b|Olag Hainin Zırhı
+itm_olog_hands|Olag Hainin Elleri
+itm_arrows|Oklar
+itm_gondor_arrows|Gondor Okları
+itm_gondor_auxila_arrows|Gondor Okları
+itm_khergit_arrows|Barbed Okları
+itm_rohan_arrows_2|Rohirrim Okları
+itm_harad_arrows|Haradrim Okları
+itm_corsair_arrows|Corsair Okları
+itm_ithilien_arrows|Ithilien Okları
+itm_woodelf_arrows|Orman Elfi Okları
+itm_elven_arrows|Elf Okları
+itm_orc_hook_arrow|Kancalı Ork Okları
+itm_isengard_arrow|Isengard Okları
+itm_pilgrim_disguise|Yolcu Kılığı
+itm_leather_gloves|Deri Eldivenler
+itm_mail_mittens|Zırhlı Eldiven
+itm_leather_boots|Deri Botlar
+itm_black_dress|Siyah Elbise
+itm_blackwhite_dress|Kadın Elbisesi
+itm_white_tunic_a|Beyaz Tunik
+itm_white_tunic_b|Basic Tunik
+itm_white_tunic_c|Tunik Ceket
+itm_blue_tunic|Mavi Tunik
+itm_black_tunic|Siyah Tunik
+itm_green_tunic|Yeşil Tunik
+itm_red_tunic|Kırmızı Tunik
+itm_leather_apron|Deri göğüslük
+itm_leather_jerkin|Deri Yelek
+itm_fur_coat|Bol Ceket
+itm_green_dress|Yeşil Elbise
+itm_tld_tunic|Tunik
+itm_gondor_fine_outfit_dress|Güzel Kıyafet
+itm_rohan_fine_outfit_dale_dress|Güzel Kıfayet
+itm_robe_generic_dress|Cübbe
+itm_wimple_a|Atkı
+itm_wimple_with_veil|Atkı
+itm_fine_hat|Güzel Şapka
+itm_shortened_spear|Kısaltılmış Mızrak
+itm_spear|Mızrak
+itm_light_lance|Hafif Mızrak
+itm_lance|Mızrak
+itm_tab_shield_small_round_b|Yuvarlak Süvari Kalkanı
+itm_short_bow|Kısa Yay
+itm_regular_bow|Ok
+itm_nomad_bow|Göçmen Yayı
+itm_gondor_bow|Gondor oku
+itm_strong_bow|Güçlü oku
+itm_elven_bow|Elf oku
+itm_corsair_bow|Korsan Yayı
+itm_dwarf_horn_bow|Cüce Boynuz Yayı
+itm_dwarf_short_bow|Cüce Kısa Yayı
+itm_harad_bow|Harad Kıvrımlı Yayı
+itm_lg_bow|Kartal Muhafızı Yayı
+itm_riv_bow|Ayrıkvadi Yayı
+itm_glorfi_bow|Glorfindeil Yayı
+itm_lorien_bow|Galadhrim Yayı
+itm_isengard_large_bow|Isengar Geniş Yayı
+itm_dale_bow|Dere Yayı
+itm_uruk_bow|Ork Yayı
+itm_mirkwood_bow|Mirkwood Yayı
+itm_dunland_javelin|Dunland Ciritleri
+itm_orc_throwing_arrow|Ork dartları
+itm_heavy_throwing_spear|Ağır Atma Mızrağı
+itm_javelin|Cirit
+itm_harad_javelin|Harad Ciriti
+itm_gondor_javelin|Gondor Ciriti
+itm_rohirrim_throwing_axe|Rohirrim Fırlatma Baltaları
+itm_loss_throwing_axes|Lossarnach Fırlatma Baltaları
+itm_arnor_helm_a|Arnor Kasketi
+itm_arnor_helm_b|Arnor Kasketi
+itm_arnor_helm_c|Arnor Kasketi
+itm_dunedain_helm_a|Dunedain Başlığı
+itm_dunedain_helm_b|Arnor Süslenmiş Kasket
+itm_arnor_armor_a|Arnorian Zırhı
+itm_arnor_armor_b|Arnorian Zırhı
+itm_arnor_armor_c|Dunedain Okçu Derisi
+itm_arnor_armor_d|Dunedain Okçu Derisi
+itm_arnor_armor_e|Arnorian Güçlendirilmiş Deri Yelek
+itm_arnor_armor_f|Arnorian Üstün Zırh
+itm_arnor_greaves|Arnorian Baldır Zırhı
+itm_arnor_splinted|Arnorian Parçalanmış Baldır Zırhı
+itm_arnor_shield_a|Arnorian Kalkanı
+itm_arnor_shield_c|Arnorian Süvari Kalkanı
+itm_arnor_shield_b|Arnorian Kalkanı
+itm_arnor_shield_d|Arnorian Süvari Kalkanı
+itm_arnor_sword_a|Arnorian Piç Kılıç
+itm_arnor_sword_c|Arnorian Piç Kılıç
+itm_arnor_sword_f|Arnor Kısa Kılıç
+itm_riv_helm_a|Rivendell Takkesi
+itm_riv_helm_b|Rivendell Okçu Miğferi
+itm_riv_helm_c|Rivendell Piyade Miğferi
+itm_riv_helm_glorfi|Glorfi Saçı
+itm_riv_tiara|Elf Lordu Tiara
+itm_riv_shield_a|Rivendell Kalkanı
+itm_riv_shield_b|Rivendell Kalkanı
+itm_riv_bas_sword|Rivendell Piç Kılıcı
+itm_riv_1h_sword|Rivendell Kılıcı
+itm_riv_riding_sword|Rivendell Süveri Kılıcı
+itm_riv_archer_sword|Rivendell Okçusunun Kılıcı
+itm_riv_spear|Rivendell Mızrağı
+itm_riv_armor_light|Rivendell Zırhı
+itm_riv_armor_light_inf|Rivendell Zırhı
+itm_riv_armor_archer|Rivendell Zırhı
+itm_riv_armor_m_archer|Rivendell Zırhı
+itm_riv_armor_med|Rivendell Zırhı
+itm_riv_armor_heavy|Rivendell Zırhı
+itm_riv_armor_h_archer|Rivendell Zırhı
+itm_riv_armor_leader|Rivendell Lider Zırhı
+itm_riv_boots|Rivendell Çizmeleri
+itm_gon_footman|Gondor Örgü Zırhı
+itm_gon_jerkin|Gondor Deri Yelek
+itm_gon_regular|Gondor Ağır Örgü Zırh
+itm_gon_bowman|Gondor Gambesonu
+itm_gon_archer|Pelerinli Gondor Gambesonu
+itm_gon_noble_cloak|Gondor Soylu Deri Yeleği
+itm_gon_squire|Pelerinli Gondor Örgü Zırh
+itm_gon_knight|Gondor Ağır Örgü Zırh ve Pelerin
+itm_gon_ranger_cloak|Gondor Okçu Pelerini
+itm_gon_ranger_skirt|Gondor Okçu Eteği
+itm_gon_steward_guard|Gondor Kamarot Zırhı
+itm_gon_tower_guard|Gondor Kule Gardiyanı Zırhı
+itm_gon_tower_knight|Gondor Kule Şovalyesi Zırhı
+itm_gon_leader_surcoat_cloak|Gondor Lider Cüppesi
+itm_gondor_ranger_hood|Yeşil Başlık
+itm_gondor_ranger_hood_mask|Gondor Okçu Başlığı
+itm_gondor_light_greaves|Gondor Deri Baldır Zırhı
+itm_gondor_med_greaves|Gondor Ortalama Baldır Zırhı
+itm_gondor_heavy_greaves|Gondor Örgü Baldır Zırhı
+itm_gondorian_light_helm|Gondor Uşak Miğferi
+itm_gondor_infantry_helm|Gondor Piyade Miğferi
+itm_gondor_auxila_helm|Gondor Auxilla Miğferi
+itm_gondorian_light_helm_b|Gondorian Yay Ustasi Miğferi
+itm_gondorian_archer_helm|Gondorian Okçu Miğferi
+itm_tower_archer_helm|Kule Okçusu Miğferi
+itm_gondor_leader_helm|Gondor Üstün Miğferi
+itm_tower_guard_helm|Kule Gardiyanı Miğferi
+itm_gondor_citadel_knight_helm|Kale Şovalyesi Miğferi
+itm_gondor_squire_helm|Gondor Bey Miğferi
+itm_gondor_knight_helm|Gondor Şovalye Miğferi
+itm_gondor_dolamroth_helm|Dol Amroth Miğferi
+itm_swan_knight_helm|Kuğu Şovalye Miğferi
+itm_gondor_lamedon_helm|Lamedon Miğferi
+itm_gondor_lamedon_leader_helm|Lamedon Üstün Miğferi
+itm_blackroot_archer|Blakcroot Vadisi Okçu Zırhı
+itm_blackroot_bowman|Blackroot Vadisi Yay Ustası Zırhı
+itm_blackroot_footman|Blackroot Vadisi Uşak Zırhı
+itm_blackroot_warrior|Blackroot Vadisi Savaşçı Zırhı
+itm_blackroot_leader|Blackroot Vadisi Lider Zırhı
+itm_blackroot_hood|Blackroot Başlığı
+itm_dol_hauberk|Dol Amroth Zırh Yeleği
+itm_dol_heavy_mail|Dol Amroth Ağır Örgü Zırh
+itm_dol_padded_coat|Dol Amroth Yastıklı Palto
+itm_dol_shirt|Dol Amroth Gömlek
+itm_dol_very_heavy_mail|Dol Amroth Çok Ağır Örgü Zırh
+itm_dol_greaves|Dol Amroth Baldır Zırhı
+itm_dol_shoes|Dol Amroth Hafif Çizmeler
+itm_lamedon_clansman|Lamedon Klan Üyesi Zırhı
+itm_lamedon_footman|Lamedon Uşak Zırhı
+itm_lamedon_knight|Lamedon Şovalye Zırhı
+itm_lamedon_leader_surcoat_cloak|Lamedon Lider Zırhı
+itm_lamedon_warrior|Lamedon Savaşçı Zırhı
+itm_lamedon_veteran|Lamedon Kıdemli Zırhı
+itm_lamedon_vet_warrior|Lamedon Kıdemli Savaşçı Zırhı
+itm_lamedon_hood|Lamedon Başlığı
+itm_pinnath_archer|Pinnath Gelin Okçu Zırhı
+itm_pinnath_footman|Pinnath Gelin Uşak Zırhı
+itm_pinnath_leader|Pinnath Gelin Lider Zırhı
+itm_pinnath_vet_footman|Pinnath Gelin Kıdemli Uşak Zırhı
+itm_pinnath_warrior|Pinnath Gelin Savaşçı Zırhı
+itm_pel_footman|Pelargir Uşak Zırhı
+itm_pel_jerkin|Pelargir Deri Yelek
+itm_pel_leader|Pelargir Lider Zırhı
+itm_pel_marine|Pelargir Denizcisi
+itm_pelargir_marine_leader|Pelargir Denizci Lideri
+itm_pelargir_regular|Pelargir Askeri
+itm_pelargir_hood|Pelargir Başlığı
+itm_pelargir_helmet_light|Pelargir Miğferi
+itm_pelargir_helmet_heavy|Pelargir Ağır Miğferi
+itm_pelargir_greaves|Pelargir Baldır Zırhı
+itm_lossarnach_shirt|Lossarnach Gömleği
+itm_lossarnach_axeman|Lossarnach Baltacı Zırhı
+itm_lossarnach_leader|Lossarnach Lider Zırhı
+itm_lossarnach_vet_axeman|Lossarnach Kıdemli Baltacı Zırhı
+itm_lossarnach_vet_warrior|Lossarnach Kıdemli Savaşçı Zırhı
+itm_lossarnach_warrior|Lossarnach Savaşçı Zırhı
+itm_lossarnach_cloth_cap|Lossarnach Bez Kep
+itm_lossarnach_leather_cap|Lossarnach Deri Kep
+itm_lossarnach_scale_cap|Lossarnach Pullu Kep
+itm_lossarnach_greaves|Lossarnach Baldır Zırhı
+itm_gondor_shield_a|Gondor Kare Kalkan
+itm_gondor_shield_b|Kondor Uçurtma Kalkan
+itm_gondor_shield_c|Gondor Kule Kalkan
+itm_gondor_shield_d|Kondor Uçurtma Kalkan
+itm_gondor_shield_e|\nGondor Kraliyet Kalkanı
+itm_gon_tab_shield_a|Heraldic Gondor Yuvarlak Kalkan
+itm_gon_tab_shield_b|Heraldic Gondor Kare Kalkan
+itm_gon_tab_shield_c|Heraldic Gondor Uçurtma Kalkan
+itm_gon_tab_shield_d|Heraldic Gondor Kule Kalkan
+itm_amroth_sword_a|Dol Amrorth Kılıcı
+itm_amroth_sword_b|Dol Amroth Şovalye Kılıcı
+itm_gondor_sword|Gondor Piyade Kılıcı
+itm_amroth_bastard|Dol Amroth Ağır Kılıç
+itm_gondor_short_sword|Lihnir Eket
+itm_pelargir_eket|Pelargir Eket
+itm_pelargir_sword|Pelargir Kılıç
+itm_gondor_ranger_sword|Gondor Okçu Kılıcı
+itm_gondor_bastard|Gondor Piç Kılıç
+itm_gondor_citadel_sword|Gondor Kale Kılıcı
+itm_gondor_cav_sword|Gondor Süvari Kılıcı
+itm_gondor_spear|Gondorian Mızrağı
+itm_gondor_tower_spear|Gondorian Kule Mızrağı
+itm_gondor_lance|Gondor Mızrağı
+itm_loss_axe|Lossarnach Dövüş Baltası
+itm_loss_war_axe|Lossarnach Savaş Baltası
+itm_lorien_sword_a|Lorien Uzun Kılıç
+itm_lorien_sword_b|Lorien Kısa Kılıç
+itm_lorien_sword_c|Lorien Savaş Kılıcı
+itm_lorien_archer|Lorien Okçu Zırhı
+itm_lorien_armor_a|Lorien Piyade Zırhı
+itm_lorien_armor_b|Lorien Ağır Piyade Zırhı
+itm_lorien_armor_c|Lorien Kraliyet Okçu Zırhı
+itm_lorien_armor_d|Lorien Kraliyet Kılıç Ustası Zırhı
+itm_lorien_armor_e|Lorien Gardiyan Pelerini
+itm_lorien_armor_f|Lorien Seçkin Zırhı
+itm_lorien_boots|Lothlorien Çizmesi
+itm_lorien_shield_b|Lorien Kule Kalkan
+itm_lorien_shield_c|Lorien Uçurtma Kalkan
+itm_lorien_round_shield|Lorien Yuvarlak Kalkan
+itm_lorien_helm_a|Lorien Okçu Miğferi
+itm_lorien_helm_b|Lorien Okçu Miğferi
+itm_lorien_helm_c|Lorien Piyade Miğferi
+itm_orc_chain_greaves|Ork Baldır Zırhı
+itm_orc_coif|Ork Takkesi
+itm_orc_greaves|Ork Zincir Çizme
+itm_orc_ragwrap|Ork Bandana
+itm_orc_furboots|Ork Kürk Çizme
+itm_orc_furboot_tall|Ork Kürk Çizme
+itm_orc_tribal_a|İşlenmemiş Deri
+itm_orc_tribal_b|İşlenmemiş Deri
+itm_orc_tribal_c|İşlenmemiş Deri
+itm_evil_gauntlets_a|Eldiven
+itm_evil_gauntlets_b|Eldiven
+itm_isen_orc_armor_a|Isengard Ork Zırhı
+itm_isen_orc_armor_b|Isengard Ork Zırhı
+itm_isen_orc_armor_c|Isengard Ork Zırhı 
+itm_isen_orc_armor_d|Isengard Ork Zırhı 
+itm_isen_orc_armor_e|Isengard Ork Zırhı 
+itm_isen_orc_armor_f|Isengard Ork Zırhı
+itm_isen_orc_armor_g|Isengard Ork Zırhı 
+itm_isen_uruk_light_a|Uruk-Hai Hafif Üniforma
+itm_isen_uruk_light_b|Uruk-Hai Deri Zırh
+itm_isen_uruk_light_c|Uruk-Hadi Deri Zırh
+itm_isen_uruk_light_d|Uruk-Hai Örgü Zırh ve Deri
+itm_isen_uruk_light_e|Uruk-Hai Örgü Zırh Üniforma
+itm_isen_uruk_heavy_a|Uruk-Hai Örgü Zırh ve Deri 
+itm_isen_uruk_heavy_b|Uruk-Hai Ağır Zırh
+itm_isen_uruk_heavy_c|Uruk-Hai Ağır Zırh
+itm_isen_uruk_heavy_d|Uruk-Hai İzci Deri Zırh
+itm_isen_uruk_heavy_e|Uruk-Hai İzci Deri Zırh
+itm_uruk_tracker_boots|Uruk İzci Çizmesi
+itm_uruk_greaves|Uruk Baldır Zırhı
+itm_uruk_chain_greaves|Uruk Zincir Baldır Zırhı
+itm_uruk_ragwrap|Uruk Bandana
+itm_isen_orc_helm_a|Isen Ork Miğferi
+itm_isen_orc_helm_b|Isen Ork Miğferi
+itm_isen_orc_helm_c|Isen Ork Miğferi 
+itm_isen_uruk_helm_a|Uruk-Hai Miğferi
+itm_isen_uruk_helm_b|Uruk-Hai Miğferi
+itm_isen_uruk_helm_c|Uruk-Hai Miğferi 
+itm_isen_uruk_helm_d|Uruk-Hai Yüzbaşı Miğferi
+itm_isen_uruk_helm_e|Uruk-Hai Yüzbaşı Miğferi
+itm_isen_uruk_helm_f|Uruk-Hai İzci Miğferi
+itm_uruk_pike_a|Uruk Kargısı
+itm_uruk_pike_b|Uruk Kargısı
+itm_uruk_falchion_a|Uruk Orak Kılıcı
+itm_uruk_falchion_b|Uruk Orak Kılıcı
+itm_uruk_spear|Uruk Mızrağı
+itm_uruk_skull_spear|Uruk Kafatası Mızrağı
+itm_uruk_voulge|Uruk Uzun Saplı Geniş Bıçak
+itm_uruk_heavy_axe|Uruk Ağır Balta
+itm_isengard_sword|Isengard Kılıcı
+itm_isengard_axe|Isengard Baltası
+itm_isengard_hammer|Isengard Çekici
+itm_isengard_halberd|Isengard Teberi
+itm_isengard_mallet|Isengard Tokmağı
+itm_isengard_heavy_axe|Isengard Ağır Baltası
+itm_isengard_heavy_sword|Isengard Ağır Kılıcı
+itm_isengard_spear|Isengard Mızrağı
+itm_isengard_pike|Isengard Kargısı
+itm_isen_orc_shield_a|Isen Ork Kalkanı
+itm_isen_orc_shield_b|Isen Ork Kalkanı
+itm_isen_uruk_shield_b|Isen Uruk Kalkanı
+itm_wood_club|Tahta Sopa
+itm_twohand_wood_club|Büyük Tahta Sopa
+itm_bone_cudgel|Kemik Sopası
+itm_skull_club|Kafatası Sopası
+itm_orc_club_a|Ork Sopası
+itm_orc_club_b|Ork Sopası
+itm_orc_club_c|Ork Sopası
+itm_orc_club_d|Ork Sopası
+itm_orc_sledgehammer|Ork Balyozu
+itm_orc_simple_spear|Ork Mızrağı
+itm_orc_skull_spear|Ork Kafatası Mızrağı
+itm_orc_bill|Ork Keseri
+itm_orc_slasher|Ork Doğrayıcısı
+itm_orc_falchion|Ork Orak Kılıcı
+itm_orc_scimitar|Ork Eğri Kılıcı
+itm_orc_sabre|Ork Süvari Kılıcı
+itm_orc_machete|Ork Palası
+itm_orc_axe|Ork Baltası
+itm_orc_two_handed_axe|Ork İki Elli Baltası
+itm_orc_throwing_axes|Ork Fırlatma Baltaları
+itm_orc_bow|Ork Yayı
+itm_orc_shield_a|Ork Kalkanı
+itm_orc_shield_b|Ork Kalkanı
+itm_orc_shield_c|Ork Kalkanı
+itm_mordor_orc_shield_a|Mordor Ork Kalkanı
+itm_mordor_orc_shield_b|Mordor Ork Kalkanı
+itm_mordor_orc_shield_c|Mordor Ork Kalkanı 
+itm_mordor_orc_shield_d|Mordor Ork Kalkanı 
+itm_mordor_orc_shield_e|Mordor Ork Kalkanı 
+itm_mordor_uruk_shield_a|Mordor Uruk Kalkanı
+itm_mordor_uruk_shield_b|Mordor Uruk Kalkanı
+itm_mordor_uruk_shield_c|Mordor Uruk Kalkanı 
+itm_mordor_man_shield_a|Mordor İnsan Kalkanı
+itm_mordor_man_shield_b|Mordor İnsan Kalkanı
+itm_angmar_shield|Angmar Kalkanı
+itm_orc_helm_a|Ork Uzunburun Miğferi
+itm_orc_helm_b|Ork Kapalı Miğferi
+itm_orc_helm_c|Ork Kova Miğferi
+itm_orc_helm_d|Ork Izgara Miğferi
+itm_orc_helm_e|Ork Gaga Miğferi
+itm_orc_helm_f|Ork Kasketi
+itm_orc_helm_g|Ork Karga Miğferi
+itm_orc_helm_h|Ork Çene Miğferi
+itm_orc_helm_i|Ork Hortum Miğferi
+itm_orc_helm_j|Ork Sürüngen Miğferi
+itm_orc_helm_k|Ork Akbaba Miğferi
+itm_m_orc_light_a|Mordor Ork Hafif Zırhı
+itm_m_orc_light_b|Mordor Ork Hafif Zırhı
+itm_m_orc_light_c|Mordor Ork Hafif Zırhı 
+itm_m_orc_light_d|Mordor Ork Hafif Zırhı 
+itm_m_orc_light_e|Mordor Ork Hafif Zırhı 
+itm_m_orc_heavy_a|Mordor Ork Ağır Zırhı
+itm_m_orc_heavy_b|Mordor Ork Ağır Zırhı 
+itm_m_orc_heavy_c|Mordor Ork Ağır Zırhı 
+itm_m_orc_heavy_d|Mordor Ork Ağır Zırhı 
+itm_m_orc_heavy_e|Mordor Ork Ağır Zırhı 
+itm_m_uruk_light_a|Uruk Üniforması
+itm_m_uruk_light_b|Kalın Uruk Üniforması
+itm_m_uruk_heavy_c|Deri Uruk Üniforması
+itm_m_uruk_heavy_d|Katlı Uruk Zırhı
+itm_m_uruk_heavy_e|Uruk Örgü Zırhı
+itm_m_uruk_heavy_f|Uruk Örgü Zırhı
+itm_m_uruk_heavy_g|Uruk Örgü Zırhı 
+itm_m_uruk_heavy_h|Uruk Pul
+itm_m_uruk_heavy_i|Uruk Kalın Pul
+itm_m_uruk_heavy_j|Uruk Ağır Zırhı
+itm_m_uruk_heavy_k|Uruk Muhafız Zırhı
+itm_m_cap_armor|Mordor Yüzbaşı Zırhı
+itm_black_num_armor|Kara Numenor'lu Zırhı
+itm_m_armor_a|Mordor Zırhı
+itm_m_armor_b|Mordor Zırhı
+itm_evil_light_armor|Uğursuz Kıyafet
+itm_uruk_helm_a|Uruk Miğferi
+itm_uruk_helm_b|Uruk Miğferi
+itm_uruk_helm_c|Uruk Gaga Miğferi
+itm_uruk_helm_d|Uruk Izgara Miğferi
+itm_uruk_helm_e|Uruk Maske Miğferi
+itm_uruk_helm_f|Uruk Miğferi
+itm_mordor_cap_helm|Mordor Yüzbaşı Miğferi
+itm_mordor_helm|Mordor Miğferi
+itm_black_num_helm|Kara Numenor'lu Miğferi
+itm_mordor_sword|Mordor'un Piç Kılıcı
+itm_mordor_longsword|Mordor'un Kılıcı
+itm_moria_armor_a|Moria Göğüs Üniforması
+itm_moria_armor_b|Mora Göğüs ve Omuzluğu
+itm_moria_armor_c|Moria Ork Örgü Zırhı
+itm_moria_armor_d|Moria Sürgülü Deri Zırh
+itm_moria_armor_e|Moria Ork Ağır Zırhı
+itm_moria_orc_shield_a|Moria Ork Kalkanı
+itm_moria_orc_shield_b|Moria Ork Kalkanı
+itm_moria_orc_shield_c|Moria Ork Kalkanı 
+itm_gundabad_armor_a|Gundabad Ork Bandanası
+itm_gundabad_armor_b|Gundabad Ork Kürkü
+itm_gundabad_armor_c|Gundabad Ork Zırhı
+itm_gundabad_armor_d|Gundabad Ork Zırhı 
+itm_gundabad_armor_e|Gundabad Ork Ağır Zırhı
+itm_gundabad_helm_a|Gundabad Kepi
+itm_gundabad_helm_b|Gundabad Miğferi
+itm_gundabad_helm_c|Gundabad Miğferi 
+itm_gundabad_helm_d|Gundabad Miğferi 
+itm_gundabad_helm_e|Warg Binicisi Miğferi
+itm_dunland_wolfboots|Dunland Kurt Çizmesi
+itm_dunland_armor_a|Dunnish Kürk Zırhı
+itm_dunland_armor_b|Dunnish Kürk Zırhı
+itm_dunland_armor_c|Dunnish Kürk Zırhı
+itm_dunland_armor_d|Dunnish Kürk Zırhı
+itm_dunland_armor_e|Dunnish Kürk Zırhı
+itm_dunland_armor_g|Dunnish Kürk Zırhı
+itm_dunland_armor_h|Dun Long Kürk Zırhı
+itm_dunland_armor_i|Dunnish Zırh Yeleği
+itm_dunland_armor_j|Dunland Zırh Yeleği
+itm_dunland_armor_k|Dun Şefi Zırhı
+itm_dun_helm_a|Dunnish Kurt Kepi
+itm_dun_helm_b|Dunnish Kurt Kepi
+itm_dun_helm_c|Dunnish Uzun Miğfer
+itm_dun_helm_d|Dunnish Uzun Miğfer
+itm_dun_helm_e|Dun Tall Savaş Miğferi
+itm_dun_shield_a|Dunnish Kalkanı
+itm_dun_shield_b|Dunnish Kalkanı
+itm_dun_berserker|Dunland Kabile Reisi Kılıcı
+itm_dunnish_antler_axe|Dunnish Anten Baltası
+itm_dunnish_war_axe|Dunnish Savaş Baltası
+itm_dunnish_axe|Dunnish Baltası
+itm_dunland_spear|Dunnish Mızrağı
+itm_dunnish_pike|Dunnish Kargısı
+itm_rohan_armor_a|Rohan Gömleği
+itm_rohan_armor_b|Rohan Gömlek & Pelerin
+itm_rohan_armor_c|Rohan Uzun Gömleği
+itm_rohan_armor_d|Rohan Zırh Yeleği
+itm_rohan_armor_e|Rohan Zırh Yeleği 
+itm_rohan_armor_f|Rohan Zırh Yeleği 
+itm_rohan_armor_g|Rhan Örgü Zırh Gömlek
+itm_rohan_armor_h|Rohan Uzun Örgü Zırh
+itm_rohan_armor_i|Rohan Uzun Örgü Zırh 
+itm_rohan_armor_j|Rohan Zırh Yeleği 
+itm_rohan_armor_k|Rohan Zırh Yeleği 
+itm_rohan_armor_l|Rohan Zırh Yeleği 
+itm_rohan_armor_m|Rohan Pullu Zırhı
+itm_rohan_armor_n|Rohan Pullu Zırhı
+itm_rohan_armor_o|Rohan Pullu Zırhı
+itm_rohan_armor_p|Rohan Zırhı
+itm_rohan_armor_q|Rohan Zırhı 
+itm_rohan_armor_r|Rohan Zırhı 
+itm_rohan_armor_s|Rohan Heraldric Örgü Zırhı
+itm_rohan_light_helmet_a|Rohan Hafif Miğferi
+itm_rohan_light_helmet_b|Rohan Hafif Kaskı
+itm_rohan_inf_helmet_a|Rohan Piyade Miğferi
+itm_rohan_inf_helmet_b|Rohan Piyade Miğferi
+itm_rohan_archer_helmet_a|Rohan Okçu Kaskı
+itm_rohan_archer_helmet_b|Rohan Okçu Kaskı 
+itm_rohan_archer_helmet_c|Rohan Atlı Okçu Kaskı
+itm_rohan_cav_helmet_a|Rohan Süvari Kaskı
+itm_rohan_cav_helmet_b|Rohan Süvari Kaskı 
+itm_rohan_cav_helmet_c|Rohan Süvari Kaskı 
+itm_rohan_captain_helmet|Rohan Yüzbaşı Miğferi
+itm_rohan_shield_a|Rohan Kalkanı 
+itm_rohan_shield_b|Rohan Kalkanı 
+itm_rohan_shield_c|Rohan Kalkanı 
+itm_rohan_shield_d|Rohan Kalkanı
+itm_rohan_shield_e|Rohan Kalkanı
+itm_rohan_shield_f|Rohan Kalkanı
+itm_rohan_shield_g|Rohan Kraliyet Kalkanı
+itm_rohan_light_greaves|Rohan Hafif Baldır Zırhı
+itm_rohirrim_war_greaves|Rohirrim Savaş Baldır Zırhı
+itm_rohan_shoes|Deri Ayakkabılar
+itm_rohan_cav_sword|Rohan Binici Kılıcı
+itm_rohan_inf_sword|Rohan Kılıcı
+itm_rohan_spear|Rohan Mızrağı
+itm_rohan_lance|Rohan Mızrağı
+itm_rohan_sword_c|Rohan Kılıcı
+itm_rohirrim_short_axe|Rohirrim Kısa Balta
+itm_rohirrim_long_hafted_axe|Rohirrim Uzun Saplı Balta
+itm_rohan_2h_sword|Rohan Savaş Kılıcı
+itm_mirkwood_light_scale|Hafif Ağaç Elfi Pullu Zırhı
+itm_mirkwood_armor_a|Hafif Deri Zırh
+itm_mirkwood_armor_b|Hafif Kapiton ve Pullu Zırh
+itm_mirkwood_armor_c|Örgü Zırh Üzerine Hafif Pullu Zırh
+itm_mirkwood_armor_d|Hafif Kapiton Cüppesi
+itm_mirkwood_armor_e|Hafif Örgü Zırh ve Cüppe
+itm_mirkwood_armor_f|Ağaç Elfi Kraliyet Zırhı
+itm_mirkwood_great_spear|Kuytuorman Büyük Mızrağı
+itm_mirkwood_war_spear|Kuytuorman Savaş Mızrağı
+itm_mirkwood_short_spear|Kuytuorman Mızrağı
+itm_mirkwood_knife|Kuytuorman Beyaz Bıçağı
+itm_mirkwood_sword|Kuytuorman Kılıcı
+itm_mirkwood_spear_shield_a|Kuytuorman Mızrakçı Kalkanı
+itm_mirkwood_spear_shield_b|Kuytuorman Savaş Kalkanı
+itm_mirkwood_spear_shield_c|Kuytuorman Kılıç Ustası Kalkanı
+itm_mirkwood_helm_a|Kuytuorman Okçu Miğferi
+itm_mirkwood_helm_b|Kuytuorman Miğferi
+itm_mirkwood_helm_c|Kuytuorman Kraliyet Mızrakçı Miğferi
+itm_mirkwood_helm_d|Kuytuorman Kraliyet Okçu Miğferi
+itm_mirkwood_boots|Kuytuorman Çizmeleri
+itm_mirkwood_leather_greaves|Kuytuorman Deri Baldır Zırhı
+itm_harad_tunic|Harad Tuniği
+itm_harad_padded|Harondor Pamuklu Zırhı
+itm_harad_hauberk|Harondor Zırh Yeleği
+itm_harad_lamellar|Harasjala Zırhı
+itm_harad_heavy|Harad Kılıç Ustası Zırhı
+itm_harad_skirmisher|Hafif Harda Kıyafeti
+itm_harad_archer|Harad Okçu Zırhı
+itm_black_snake_armor|Maranka Zırhı
+itm_harad_champion|Uzak Harad Kıyafeti
+itm_panther_guard|Panter Derisi
+itm_harad_scale|Harad Pullu Zırhı
+itm_harad_tiger_scale|Kaplan Muhafız Zırhı
+itm_harad_lion_scale|Aslan Muhafız Zırhı
+itm_harad_dragon_helm|Kiloka Miğferi
+itm_harad_cav_helm_a|Harondor Süvari Miğferi
+itm_harad_cav_helm_b|Harondor Süvari Miğferi
+itm_black_snake_helm|Maranka Miğferi
+itm_harad_finhelm|Büyük Harad Kaskı
+itm_harad_heavy_inf_helm|Büyük Harad Miğferi 
+itm_harad_wavy_helm|Büyük Harad Miğferi 
+itm_harad_eaglehelm|Kartal Muhafız Miğferi
+itm_lion_helm|Aslan Muhafız Miğferi
+itm_harad_pantherhelm|Panter Muhafız Kepi
+itm_harad_khopesh|Harad Orak Bıçağı
+itm_black_snake_sword|Harad Ağır Orak Kılıcı
+itm_harad_heavy_sword|Harad Ağır Kılıcı
+itm_horandor_a|Harad Eğri Kılıcı
+itm_skirmisher_sword|Harad Çarpışma Kılıcı
+itm_harad_sabre|Harad Süvari Kılıcı
+itm_harad_mace|Uzak Harad Topuzu
+itm_far_harad_2h_mace|Uzak Harada İki Elli Topuzu
+itm_harad_dagger|Harad Bıçağı
+itm_harad_short_spear|Harad Kısa Mızrağı
+itm_harad_long_spear|Harad Mızrağı
+itm_eagle_guard_spear|Harasjala Kargısı
+itm_harad_long_shield_a|Harad Leopar Kalkanı
+itm_harad_long_shield_b|Harad Bronz Kalkanı
+itm_harad_long_shield_c|Harad Güneş Kalkanı
+itm_harad_long_shield_d|Harad Yılan Kalkanı
+itm_harad_long_shield_e|Harad Yılan Kalkanı
+itm_harad_shield_a|Harondor Kalkanı
+itm_harad_shield_b|Harondor Küçük Kalkanı
+itm_harad_shield_c|Harondor Küçük Kalkanı
+itm_harad_tribal_a|Uzak Harad Kalkanı
+itm_harad_tribal_b|Uzak Harad Kalkanı
+itm_harad_yellow_shield|Harad Kalkanı
+itm_desert_boots|Çöl botu
+itm_harad_leather_greaves|Harad Baldır Zırhı
+itm_harad_scale_greaves|Harad Çizmesi
+itm_harad_lamellar_greaves|Harad Çimesi
+itm_khand_helmet_a1|Develi Khand Miğferi
+itm_khand_helmet_a2|Khand Miğferi
+itm_khand_helmet_a3|Khand Korumalı Miğferi
+itm_khand_helmet_b1|Khand Süslenmiş Miğferi
+itm_khand_helmet_b2|Khand Maskeli Miğferi
+itm_khand_helmet_b3|Khand Korumalı Miğferi
+itm_khand_helmet_b4|Develi Khand Miğferi  
+itm_khand_helmet_c3|Khand Piyade Miğferi
+itm_khand_helmet_c4|Khand Piyade Miğferi
+itm_khand_helmet_d1|Khand Maskeli Miğferi 
+itm_khand_helmet_d2|Develi Khand Miğferi 
+itm_khand_helmet_d3|Khand Maskeli Miğferi 
+itm_khand_helmet_e1|Khand Korumalı Miğferi 
+itm_khand_helmet_e2|Develi Khand Miğferi
+itm_khand_helmet_e3|Khand Miğferi
+itm_khand_helmet_e4|Khand Korumalı Miğferi
+itm_khand_helmet_f1|Khand Korumalı Miğferi
+itm_khand_helmet_mask1|Khand Maskesi
+itm_khand_helmet_mask2|Khand Maskesi
+itm_khand_light|Khand Eteği
+itm_khand_foot_lam_a|Khand Zırhı
+itm_khand_foot_lam_b|Khand Zırhı
+itm_khand_foot_lam_c|Khand Zırhı 
+itm_khand_heavy_lam|Khand Ağır Pullu Zırhı
+itm_khand_light_lam|Khand Hafif Pullu Zırhı
+itm_khand_med_lam_b|Khand Ortalama Pullu Zırhı
+itm_khand_med_lam_c|Khand Ortalama Pullu Zırhı
+itm_khand_med_lam_d|Khand Ortalama Pullu Zırhı 
+itm_khand_noble_lam|Khand Soylu Zırhı
+itm_variag_greaves|Variag Baldır Zırhı
+itm_khand_axe_great|Khand Büyük Baltası
+itm_khand_axe_winged|Khand Kanatlı Balta
+itm_khand_halberd|Khand Teberi
+itm_khand_trident|Khand Çatallı Mızrağı
+itm_khand_voulge|Khand Uzun Saplı Geniş Bıçağı
+itm_khand_mace1|Khand Topuzu
+itm_khand_mace2|Khand Topuzu
+itm_khand_mace_spiked|Khand Dikenli Topuzu
+itm_khand_rammace|Khand Koç Topuzu
+itm_khand_pitsword|Çukur Dövüşçüsü Kılıcı
+itm_khand_tulwar|Khand Eğri Kılıcı
+itm_khand_2h_tulwar|Khand Eğri Kılıcı 
+itm_khand_lance|Khand Mızrağı
+itm_easterling_round_horseman|Easterling Yuvarlak Kalkanı
+itm_variag_gladiator_shield|Variag Gladyatör Kalkanı
+itm_easterling_hawk_shield|Easterling Şahin Kalkanı
+itm_rhun_bull1_shield|Rhun Kalkanı
+itm_rhun_bull2_shield|Rhun Kalkanı
+itm_rhun_bull3_shield|Rhun Kalkanı 
+itm_furry_boots|Kürklü Çizmeler
+itm_rhun_armor_a|Rhun Hafif Savaş Giysisi
+itm_rhun_armor_b|Rhun Hafif Savaş Giysisi
+itm_rhun_armor_d|Rhun Hafif Savaş Giysisi 
+itm_rhun_armor_g|Rhun Ağır Savaş Giysisi
+itm_rhun_armor_h|Rhun Ağır Savaş Giysisi
+itm_rhun_armor_j|Rhun Ortalama Savaş Giysisi
+itm_rhun_armor_m|Rhun Ortalama Savaş Giysisi 
+itm_rhun_armor_n|Rhun Ortalama Savaş Giysisi 
+itm_rhun_armor_o|Rhun Ortalama Savaş Giysisi 
+itm_rhun_armor_p|Rhun Soylu Zırhı
+itm_rhun_armor_k|Rhun Soylu Zırhı
+itm_rhun_helm_a|Rhun Dikenli Miğferi 
+itm_rhun_helm_b|Develi Rhun Dikenli Miğferi
+itm_rhun_helm_c|Rhun Ordu Miğferi
+itm_rhun_helm_e|Rhun Boynuzlu Ordu Miğferi
+itm_rhun_helm_g|Rhun Boynuzlu Kabı
+itm_rhun_helm_h|Rhun Boynuzlu Kabı
+itm_rhun_helm_i|Rhun Yuvarlak Miğferi
+itm_rhun_helm_j|Rhun Yuvarlak Maskeli Miğferi
+itm_rhun_helm_k|Rhun Deri Miğferi
+itm_rhun_helm_l|Rhun Deri Miğferi
+itm_rhun_helm_m|Rhun Deri Miğferi
+itm_rhun_helm_n|Rhun Kabile Reisi Miğferi
+itm_rhun_helm_o|Rhun Kabile Reisi Miğferi
+itm_rhun_greataxe|Rhun Büyük Balta
+itm_rhun_battleaxe|Rhun Savaş Baltası
+itm_rhun_falchion|Rhun Orak Kılıcı
+itm_rhun_glaive|Rhun Gönderli Kılıcı
+itm_rhun_greatfalchion|Rhun Büyük Orak Kılıcı
+itm_rhun_greatsword|Rhun Büyük Kılıcı
+itm_rhun_shortsword|Rhun Kısa Kılıcı
+itm_rhun_sword|Rhun Kılıcı
+itm_rhun_shield|Rhun Uçurtma Kalkanı
+itm_dale_armor_a|Dale Ceketi
+itm_dale_armor_b|Dale Pelerinli Ceketi
+itm_dale_armor_c|Dale Okçu Ceketi
+itm_dale_armor_d|Dale Okçu Ceketi
+itm_dale_armor_e|Dale Örgü Zırhlı Ceketi
+itm_dale_armor_f|Dale Örgü Zırhlı Ceketi
+itm_dale_armor_g|Dale Örgü Zırhlı Ceketi 
+itm_dale_armor_h|Dale Uzun Örgü Zırhlı Pelerin
+itm_dale_armor_i|Dale Uzun Örgü Zırhlı Pelerin 
+itm_dale_armor_j|Dale Uzun Örgü Zırhlı Pelerin 
+itm_dale_armor_k|Dale Soylu Zırhı
+itm_dale_armor_l|Dale Soylu Boğaz Zırhı
+itm_dale_helmet_a|Dale Hafif Piyade Miğferi
+itm_dale_helmet_b|Dale Hafif Okçu Miğferi
+itm_dale_helmet_c|Dale Piyade Miğferi
+itm_dale_helmet_d|Dale Okçu Miğferi
+itm_dale_helmet_e|Dale Ağır Piyade Miğferi 
+itm_dale_helmet_f|Dale Ağır Okçu Miğferi
+itm_dale_sword|Dale Kısa Kılıç
+itm_dale_sword_long|Dale Uzun Kılıç
+itm_dale_sword_broad|Dale Küt Kılıç
+itm_dale_pike|Dale Mızrağı
+itm_dale_billhook|Dale Keskisi
+itm_dale_shield_a|Dale Kalkanı
+itm_dale_shield_b|Dale Kalkanı
+itm_dale_shield_c|Dale Kalkanı 
+itm_dale_shield_d|Dale Kalkanı 
+itm_umb_armor_a|Korsan Deri Zırhı
+itm_umb_armor_a1|Korsan Ağır Deri Zırhı
+itm_umb_armor_b|Korsan Akıncı Zırhı
+itm_umb_armor_c|Korsan Pamuklu Zırhı
+itm_umb_armor_d|Korsan Ağır Pamuklu Zırhı
+itm_umb_armor_e|Korsan Pamuklu Akıncı Zırhı
+itm_umb_armor_f|Korsan Zırh Yeleği
+itm_umb_armor_g|Korsan Zırh Yelek Omuzluğu
+itm_umb_armor_h|Korsan Ağır Akıncı Zırhı
+itm_umb_helm_a|Korsan Kabuk Miğferi
+itm_umb_helm_b|Korsan Kabuk Miğferi
+itm_umb_helm_c|Korsan Milis Miğferi
+itm_umb_helm_d|Korsan Milis Miğferi
+itm_umb_helm_e|Korsan Akıncı Miğferi
+itm_umb_helm_f|Korsan Akıncı Miğferi
+itm_umb_hood|Umbar Başlığı
+itm_corsair_boots|Korsan Çizmesi
+itm_umb_shield_a|Korsan Küçük Kalkanı
+itm_umb_shield_b|Korsan Küçük Kalkanı
+itm_umb_shield_c|Korsan Küçük Kalkanı
+itm_umb_shield_d|Korsan Küçük Kalkanı 
+itm_umb_shield_e|Korsan Küçük Kalkanı 
+itm_umbar_cutlass|Umbar Denizci Kaması
+itm_kraken|Kraken Denizci Kaması
+itm_umbar_rapier|Umbar Kılıcı
+itm_corsair_harpoon|Korsan Zıpkını
+itm_corsair_sword|Korsan Eket
+itm_corsair_throwing_dagger|Umbar Fırlatma Bıçakları
+itm_umbar_pike|Umbar Kargısı
+itm_woodman_tunic|Korucu Tuniği
+itm_woodman_scout|Korucu İzci Pelerini
+itm_woodman_padded|Korucu Pamuklu Zırhı
+itm_beorn_tunic|Beorning Tuniği
+itm_beorn_padded|Beorning Pamuklu Zırhı
+itm_beorn_heavy|Beorning Ağır Zırhı
+itm_beorn_berserk|Beorning Vahşi Savaşçı Aleti
+itm_beorn_chief|Boerning Kabile Reisi Tuniği
+itm_beorn_helmet|Kuzey Takkesi
+itm_beorn_shield|Kuzeyli Kalkanı
+itm_beorn_axe|Beorning Baltası
+itm_beorn_staff|Korucu Asası
+itm_beorn_battle_axe|Beorning Savaş Baltası
+itm_dwarf_shield_a|Cüce Kalkanı
+itm_dwarf_shield_b|Cüce Kalkanı 
+itm_dwarf_shield_c|Cüce Kalkanı 
+itm_dwarf_shield_d|Cüce Kalkanı 
+itm_dwarf_shield_f|Cüce Kalkanı 
+itm_dwarf_shield_g|Cüce Kalkanı 
+itm_dwarf_shield_i|Cüce Kalkanı 
+itm_dwarf_shield_j|Cüce Kalkanı 
+itm_dwarf_shield_k|Cüce Kalkanı 
+itm_dwarf_shield_l|Cüce Kalkanı 
+itm_dwarf_sword_a|Cüce Kılıcı
+itm_dwarf_sword_b|Cüce Kılıcı 
+itm_dwarf_sword_c|Cüce Kılıcı 
+itm_dwarf_sword_d|Cüce Kılıcı 
+itm_dwarf_adz|Cüce Çekici
+itm_dwarf_great_axe|Cüce Büyük Baltası
+itm_dwarf_great_mattock|Cüce Büyük Kazması
+itm_dwarf_great_pick|Cüce Büyük Kazması
+itm_dwarf_war_pick|Cüce Savaş Kazması
+itm_dwarf_mattock|Cüce Kazması
+itm_dwarf_hand_axe|Cüce Kısa Baltası
+itm_dwarf_throwing_axe|Cüce Fırlatma Baltası
+itm_dwarf_spear|Cüce Mızrağı
+itm_dwarf_spear_b|Cüce Kargısı
+itm_dwarf_spear_c|Cüce Kargısı
+itm_dwarf_helm_a|Cüce Takkesi
+itm_dwarf_helm_b|Maskeli Cüce Takkesi
+itm_dwarf_helm_c|Maskeli Cüce Miğferi
+itm_dwarf_helm_h|Cüce Miğferi
+itm_dwarf_helm_i|Cüce Frisia Miğferi
+itm_dwarf_helm_j|Cüce Frisia Miğferi
+itm_dwarf_helm_l|Cüce Başlığı
+itm_dwarf_helm_m|Cüce Demir Surat
+itm_dwarf_helm_o|Cüce Baş Miğferi
+itm_dwarf_helm_p|Cüce Kral Miğferi
+itm_dwarf_helm_q|Cüce Maden Miğferi
+itm_dwarf_helm_r|Cüce Maden Miğferi
+itm_dwarf_helm_u|Cüce Yuvarlak Maskesi
+itm_dwarf_helm_v|Cüce Zincirli Miğferi
+itm_dwarf_helm_x|Cüce Maskeli Miğferi
+itm_dwarf_armor_a|Cüce Örgü Zırhlı Tuniği
+itm_leather_dwarf_armor|Cüce Pamuklu Örgü Zırhı
+itm_dwarf_vest|Cüce Okçu Zırhı
+itm_dwarf_armor_b|Cüce Pamuklu Tuniği
+itm_dwarf_armor_c|Cüce Pullu Örgü Zırhı
+itm_leather_dwarf_armor_b|Cüce Tuniği
+itm_dwarf_vest_b|Demir Tepe Tuniği
+itm_dwarf_pad_boots|Cüce Pamuklu Çizmesi
+itm_dwarf_chain_boots|Cüce Örgü Bacak Zırhı
+itm_dwarf_scale_boots|Cüce Pullu Çizmeleri
+itm_good_mace|Topuz
+itm_far_harad_shield_paint|Wicker Kalkanı
+itm_nazgulrobe|Nazgul Cüppesi
+itm_whiterobe|Beyaz Cüppe
+itm_mordor_banner|Mordor Sancağı
+itm_isengard_banner|Isengard Sancağı
+itm_woodelf_banner|Mirkwood Sancağı
+itm_lorien_banner|Lothlorien Sancağı
+itm_imladris_banner|Imladris Sancağı
+itm_gondor_lance_banner|Gondor Sancak Mızrağı
+itm_amroth_lance_banner|Dol Amroth Sancak Mızrağı
+itm_rohan_lance_banner_sun|Rohan Güneş Sancak Mızrağı
+itm_rohan_lance_banner_horse|Rohan At Sancak Mızrağı
+itm_ent_body|Ent Bedeni
+itm_ent_head_helm|Ent Kafası
+itm_ent_head_helm2|Ent Kafası
+itm_ent_head_helm3|Ent Kafası
+itm_ent_feet_boots|Ent Ayağı
+itm_ent_hands|Ent Elleri
+itm_galadriel|Galadriel'in Elbisesi
+itm_ent_water|Tuhaf Bir Çanak Su
+itm_map|Orta Dünya'nınHaritaları
+itm_athelas_reward|Athelas Bitkisi
+itm_phial_reward|Galadriel'in Işığı
+itm_scroll_reward|Gondolin'in Çöküşü
+itm_hammer_reward|Demircinin Çekici
+itm_khand_knife_reward|Khand Tören Bıçağı
+itm_angmar_whip_reward|Efendi'nin Kırbacı
+itm_horn_gondor_reward|Gondor'un Boynuz Borusu
+itm_harad_totem_reward|Harad Totemi
+itm_elven_amulet_reward|Elven Tılsımı
+itm_torque_reward|Uğursuz Tork
+itm_orc_brew|Orc İşi Mayalı İçki
+itm_rohan_saddle|Thengel'in Eyeri
+itm_mearas_reward|Mearh Aygırı
+itm_sword_of_arathorn|Arathorn'un Kılıcı
+itm_riv_armor_reward|Rivendell Dekor Zırhı
+itm_westernesse1h_reward|Westernesse Kılıcı
+itm_westernesse2h_reward| Yılanın Kılıcı
+itm_mirkwood_sword_reward|Greenwood Yadigar Kılıcı
+itm_nazgul_sword|Nazgul kılıcı
+itm_cooking_cauldron|Pişirme Kazanı
+itm_eorl_cavalry_sword|Eorl'un Kılıcı
+itm_garlic_reward|Sarımsak
+itm_silmarillion_reward|Silmarillion
+itm_herbarium_reward|Orta Dünya Bitki Müzesi
+itm_book_of_moria|Mazarbul'un Kitabı
+itm_ring_a_reward|Tulcarisil
+itm_ring_b_reward|Finwarisil
+itm_dale_bow_reward|Ozanın Yayı
+itm_explosive_reward|Isengard Madeni
+itm_corsair_trident|Deniz Öfkesinin Zıpkını
+itm_crebain_reward|Isengard Kuzgunu
+itm_miruvor_reward|Miruvor Şişesi
+itm_wheeled_cage|Dev Tekerli Kafes
+itm_orc_throwing_axes_reward|Gundabad Uçan Baltaları
+itm_corsair_throwing_dagger_reward|Zehirli Fırlatma Bıçakları
+itm_dwarf_shield_reward|Mithril Dwarven Kalkanı
+itm_dwarf_great_axe_reward|Dwarf Keskin Baltası
+itm_isen_uruk_heavy_reward|Uruk-hai General Zırhı
+itm_lorien_bow_reward|Noldorin Yayı
+itm_lorien_sword_reward|Galadhrim Kılıcı
+itm_dale_sword_reward|Marchwarden Kılıcı
+itm_dale_armor_reward|Esgaroth Boğaz Zırhı
+itm_leather_gloves_reward|Avlanma Eldiveni
+itm_beorn_shield_reward|Korucu Kalkanı
+itm_beorn_axe_reward|Ayı baltası
+itm_moria_arrow_reward|Moria Zehirli Oku
+itm_khamul_helm|Khamul'un Miğferi
+itm_gandstaff|Büyücü asası
+itm_sarustaff|Büyücü asası
+itm_rohan_armor_th|Rohan Kraliyet Zırhı
+itm_denethor_robe|Kahya Kaftanı
+itm_prisoner_coll_chain|Esir Zincirleri
+itm_witchking_helmet|Kötücül Müğfer
+itm_lorien_royal_armor|Lorien Kraliyet Zırhı
+itm_feet_chains|Ayak Zincirleri
+itm_feet_chains_dwarf|Ayak Zincirleri
+itm_spider|Örümcek
+itm_bear|Ayı
+itm_wolf|Kurt
+itm_defiled_armor_gondor|Lekelenmiş Gondor Lideri Cüppesi
+itm_defiled_armor_rohan|Lekelenmiş Rohan Zırh Yeleği
+itm_defiled_armor_dale|Lekelenmiş Dale (Vadi) Soylusu Zırhı

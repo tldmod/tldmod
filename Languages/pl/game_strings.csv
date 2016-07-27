@@ -401,7 +401,7 @@ str_npc16_backstory_c|Maybe you can be my next Chieftain.
 ; str_npc17_backstory_c|If you're going into the forest, maybe I come along and tell you about the trees there? Many very interesting trees there, you know.
 ; str_npc1_backstory_later|I have been leading scouting parties to the south, as far as Emyn Arnen. There is much Enemy activity and many an orc fell to our ambush. Alas, that's only so many orc heads rolling down the gullies, we saw a myriad of foul creatures on the march. I fear for my Ithilien and the fate of Gondor.
 ; str_npc2_backstory_later|We've had a few visitors lately, and there are fewer to come. I reckon that doesn't bode well.
-; str_npc3_backstory_later|Still no news of my éored, and I'm keen on riding down some orcs.
+str_npc3_backstory_later|Ciągle brak wieści o moim éoredzie, a chętnym by na orków pojechać.
 ; str_npc4_backstory_later|More riders return with their bodies broken, and I try to give aid where I can. But I still feel trapped in a cage.
 ; str_npc5_backstory_later|Have you reconsidered? The time for the Eldar grows short.
 ; str_npc6_backstory_later|I've been observing a nest of giant spiders for a couple of days. Ugly creatures, they seem at first, but they keep intruders at bay. Did you come to ask me to travel with you?
@@ -449,12 +449,12 @@ str_npc13_backstory_response_2|I don't need you.
 str_npc14_backstory_response_2|I don't need you.
 str_npc15_backstory_response_2|I don't need you, slave.
 str_npc16_backstory_response_2|I don't need you.
-; str_npc17_backstory_response_2|No, I'm sorry. We're off to war, not to a botanical journey.
+str_npc17_backstory_response_2|Nie,przepraszam. Jesteśmy na wojnie,a nie na wycieczce botanicznej.
 ; str_npc1_signup|I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage.
 str_npc2_signup|Cóż za szczęśliwy dzień! Byłbym uradowany dołączając do twojej kompanii!
 ; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
 ; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
-; str_npc5_signup|I see. I admit I have heard of you and your exploits.
+str_npc5_signup|Rozumiem. Przyznam,że słyszałem o tobie i o twoich wyczynach.
 ; str_npc6_signup|I dislike violence and weapons of war, but I know how to defend myself in a hurry.
 ; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
 ; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
@@ -490,7 +490,7 @@ str_npc3_signup_response_1|Bardzo dobrze. Na koń! - wkrótce ruszamy.
 str_npc4_signup_response_1|Imponujące. Jesteśmy gotowi do drogi, na twój znak, droga pani.
 str_npc5_signup_response_1|Będziemy zaszczyceni mając cie w kompanii Elficki Lordzie 
 str_npc6_signup_response_1|Bardzo Dobrze. Mam tylko nadzieję że nie uciekniesz od pierwszego ujrzanego orka.
-; str_npc7_signup_response_1|Very well, Master Dwarf, you are welcome to join us.
+str_npc7_signup_response_1|Bardzo dobrze,Panie Krasnoludzie,możesz do nas dołaczyć.
 str_npc8_signup_response_1|Będziesz bezpieczniejszy z nami, obiecuje ci. Niedługo wyruszamy.
 str_npc9_signup_response_1|Bardzo dobrze. Rób, jak ci kazano,  a dobrze cię wyżywię.
 str_npc10_signup_response_1|Doskonale. Ruszajmy.
@@ -1337,7 +1337,7 @@ str_rhun_rumor_10|Elfickie kobiety? Nah. Zbyt kruche!
 ; str_dunland_rumor_5|They call it Rohan now, but it's our ancestral land! We will avenge our forfathers and chase off the dirty land-thieves.
 str_dunland_rumor_6|Nie pozwól aby Forgoil cie złapali, inaczej będziesz torturowany bądź spalony żywcem!
 ; str_dunland_rumor_7|We are the bloodlust of the wolf and the strength of the boar!
-; str_dunland_rumor_8|Forgoil think we are savage and stupid. Let's see what they think after their horsemen meet our pikemen.
+str_dunland_rumor_8|Forgoil myśli,że jesteśmy dzicy i głupi, Zobaczymy o czym będą myśleć, kiedy ich jeźdżcy spotkają się z naszymi pikinierami.
 ; str_dunland_rumor_9|Isengard's crows will peck out Strawheads' eyes, Dunland's wolves will bite their throats.
 ; str_dunland_rumor_10|I caught and killed a wolf with my bare hands. I will snap a horse-man's neck like a twig! Grrr!
 ; str_dunland_rumor_11|Our chief found an old bronze sword in a barrow. He bent it and threw it in the marsh. Spirits of the hills will be on our side for sure. It is the old way.
@@ -1448,7 +1448,7 @@ str_umbar_rumor_6|Gondorczycy spalili naszą flotę lata temu. Teraz my spalimy 
 ; str_khand_rumor_6|Rhun warriors are fierce too, but they fight on horseback, we rather maul our enemies on foot.
 ; str_khand_rumor_7|We have fought Gondorians in the past, this time we will finish them for good!
 ; str_khand_rumor_8|The West is weak and decadent. They have no warrior spirit. They will fall to our swords and axes.
-; str_khand_rumor_9|We do not fight for gold or slaves, we fight for honour and glory!
+str_khand_rumor_9|Nie walczymy dla złota czy niewolników, walczymy za honor i chwałę1
 ; str_khand_rumor_10|The men of the West are arrogant, they do not know what might they are facing!
 ; str_khand_rumor_11|We trade with Rhun, Mordor and Harad. And sometimes we fight them too. It is the way of our people.
 ; str_khand_rumor_12|Have you made your warrior mask yet? You'll need one soon! If the enemy can't see your face, his spirit won't be able to find you.
@@ -1465,7 +1465,7 @@ str_neutral_rumor_begin|Jutro wszystko może się zmienić...
 ; str_neutral_rumor_2|Dead Marshes... a place defiled and diseased.
 ; str_neutral_rumor_3|The land used to be much different once.
 str_neutral_rumor_4|Trzymaj się z dala od Fangorn.
-; str_evil_rumor_begin|Orcs fight better at night, men fight better by day.
+str_evil_rumor_begin|Orkowie walczą lepiej w nocy,ludzie walcz lepiej za dnia.
 ; str_evil_rumor_2|Fight horseman with pike, footman with arrow and archer with shield!
 ; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
 ; str_legendary_rumor_begin|Legend says that trees meet to talk in Fangorn.
@@ -1789,7 +1789,7 @@ str_gondor_gift0|Świeże owoce oraz wino.
 ; str_gondor_gift2|Ancient Tomes and Family Trees
 ; str_gondor_gift3|Spices and Incense
 ; str_gondor_gift4|Auroch War Horns
-; str_dwarf_gift0|Strong Beer and Rock Salt
+str_dwarf_gift0|Mocne Piwo i Kamienna Sól\n
 ; str_dwarf_gift1|Hardened Shovels and Axes
 ; str_dwarf_gift2|Harps and Flutes
 ; str_dwarf_gift3|Robes Embroidered With Golden Thread and Gems

@@ -1,0 +1,48 @@
+skl_trade|Kauppias
+skl_trade_desc|Tämän taidon tasot mahdollistavat suurempien varuste määrien ottamisen vähemmillä resurssipisteillä. (Ryhmä taito)
+skl_leadership|Johtajuus
+skl_leadership_desc|Jokainen piste korottaa maksimaalista komennettavien sotilaiden määrää viidellä, korottaa myös ryhmän moraalia ja vähentää sotilaiden palkkaa 5%%. (Johtaja taito)
+skl_prisoner_management|Vankien käsittely
+skl_prisoner_management_desc|Jokainen taso tästä taidosta korottaa maksimaalista vankien määrää %d (Johtaja taito)
+; skl_persuasion|Persuasion
+; skl_persuasion_desc|This skill helps you make other people accept your point of view. (Personal skill)
+; skl_engineer|Crafting
+; skl_engineer_desc|Each point to this skill both decreases the time to craft and upgrade equipment, and allows better quality upgrades. (Party skill)
+skl_first_aid|Ensiapu
+; skl_first_aid_desc|Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)
+skl_surgery|Kirurgia
+; skl_surgery_desc|Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)
+skl_wound_treatment|Haavojen hoitaminen
+; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
+skl_inventory_management|Tavaraluettelon Käsittely
+skl_inventory_management_desc|Korottaa tavaraluettelon kapasiteettia +6 per taito taso (Johtaja taso)
+skl_spotting|Huomaaminen
+; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
+skl_pathfinding|Polun löytäminen
+; skl_pathfinding_desc|Party map speed is increased by 3%% per skill level. (Party skill)
+skl_tactics|Taktiikat
+; skl_tactics_desc|Every two levels of this skill increases starting battle advantage by 1. (Party skill)
+skl_tracking|Jäljittäminen
+; skl_tracking_desc|Tracks become more informative. (Party skill)
+skl_trainer|Kouluttaja
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)
+; skl_looting|Looting
+; skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
+skl_horse_archery|Ratsulta Jousiampuminen
+; skl_horse_archery_desc|Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)
+skl_riding|Ratsastaminen
+; skl_riding_desc|enables you to ride horses (or other beasts) of higher difficulty levels and increases your riding speed and manuever. (Personal skill)
+; skl_athletics|Athletics
+; skl_athletics_desc|improves your running speed. (Personal skill)
+skl_shield|Kilpi
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
+skl_weapon_master|Ase Mestari
+; skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
+; skl_power_draw|Power Draw
+; skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
+skl_power_throw|Voima Heitto
+; skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%. (Personal skill)
+; skl_power_strike|Power Strike
+; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
+; skl_ironflesh|Ironflesh
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2. (Personal skill)

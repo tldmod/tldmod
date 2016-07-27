@@ -671,14 +671,14 @@ str_npc14_personalitymatch_speech|Ho già detto che mi piace {s11}?
 str_npc15_personalitymatch_speech|Ho già detto che mi piace {s11}?
 str_npc16_personalitymatch_speech|Ho già detto che mi piace {s11}?
 str_npc17_personalitymatch_speech|Umm, capo. Penso che {s11} possa cavarsela bene nei boschi. Sa distinguere un frassino da un salice.
-; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse in what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
-; str_npc2_personalitymatch_speech_b|My folks at home always told me stories about the Ithilien Rangers and now I can see for myself they are all true. If they are all like {s11}, I feel Gondor is safer for it.
-; str_npc3_personalitymatch_speech_b|Commander, as a personal favour, might I ask if you can order {s11} to stay more to the rear in the next battle? I could not stand to see her harmed, and it's not the ale talking.
-; str_npc4_personalitymatch_speech_b|To preserve lives is the noblest deed, and I feel kinship with that kind soul, even if our worlds are far apart.
+str_npc1_personalitymatch_speech_b|Trovo molto piacevole la compagnia di {s11} e la sua innata abilità nel lavorare il legno è un raro spiraglio di quanto rimane dell'abilità Sindarin nel mondo. Sai, mio padre mi diede il nome del leggendario capitano, Elfo Sindarin, che servì Re Thingol del Doriath ed io ho sempre percepito un legame speciale con la bella razza.
+str_npc2_personalitymatch_speech_b|I miei mi raccontavano sempre storie sui ranger di Ithilien e ora posso vedere da me che sono tutte vere. Se tutte lo sono {11}, sento che Gondor è più al sicuro.
+str_npc3_personalitymatch_speech_b|Comandante, come favore personale, posso chiederti di ordinare a {s11} di rimanere più vicino alla retroguardia, nella prossima battaglia? Non sopporterei di vederla ferita, e non è la birra che parla.
+str_npc4_personalitymatch_speech_b|Salvare vite è l'atto più nobile che ci sia, e mi sento parentela con quell'anima gentile, anche se i nostri mondi sono distanti tra loro.
 str_npc5_personalitymatch_speech_b|Mi piace {s11}.
 str_npc6_personalitymatch_speech_b|Pensavo a quanto fosse vecchio.  Forse una dozzina di secoli più di me? Non importa, tu non capiresti.
 str_npc7_personalitymatch_speech_b|{s11} e la sua Dale-kin, anche se non sono allo stesso livello dei guerrieri nani, hanno provato di essere decisi alleato in questa guerra. Se mi permettete potrei aggiungere che siate un'ottima scelta per un amico e un compagno tra gli uomini.
-; str_npc8_personalitymatch_speech_b|The people of Dale have a deep regard for the hardy Lonely Mountain Dwarven-folk, as friends and protectors despite our different race and customs.
+str_npc8_personalitymatch_speech_b|Come amici e protettori, la gente di Dale ha una profonda considerazione per il popolo dei Nani che vive nella Montagna Solitaria, nonostante la differenza di razza, usi e costumi.
 str_npc9_personalitymatch_speech_b|Mi piace {s11}.
 str_npc10_personalitymatch_speech_b|Mi piace {s11}.
 str_npc11_personalitymatch_speech_b|Mi piace {s11}.
@@ -687,7 +687,7 @@ str_npc13_personalitymatch_speech_b|Mi piace {s11}.
 str_npc14_personalitymatch_speech_b|Mi piace {s11}.
 str_npc15_personalitymatch_speech_b|Mi piace {s11}.
 str_npc16_personalitymatch_speech_b|Mi piace {s11}.
-; str_npc17_personalitymatch_speech_b|My people get along well with the Woodelves. They like trees too. I like trees too. We all like trees.
+str_npc17_personalitymatch_speech_b|La mia gente va d' accordo con gli elfi silvani. A loro piacciono gli alberi. A me piacciono gli alberi. Tutti noi amiamo gli alberi.
 str_npc1_retirement_speech|Sto diventando un pò stanco della vita del guerriero, mi ritirerò.
 str_npc2_retirement_speech|Sto diventando un pò stanco della vita del guerriero, mi ritirerò.
 str_npc3_retirement_speech|Sto diventando un pò stanco della vita del guerriero, mi ritirerò.
@@ -705,32 +705,32 @@ str_npc14_retirement_speech|Sto diventando un pò stanco della vita del guerrier
 str_npc15_retirement_speech|Sto diventando un pò stanco della vita del guerriero, mi ritirerò.
 str_npc16_retirement_speech|Sto diventando un pò stanco della vita del guerriero, mi ritirerò.
 str_npc17_retirement_speech|Sto diventando un pò stanco della vita del guerriero, mi ritirerò.
-; str_npc1_rehire_speech|It is good to see you again, Captain. Shall I join you once more?
-; str_npc2_rehire_speech|Happy days! Commander, can I please join you again?
-; str_npc3_rehire_speech|Ho! Shall we ride again together?
-; str_npc4_rehire_speech|Welcome again. Shall we continue where we left off?
-; str_npc5_rehire_speech|It's good to see you, {playername}. Let us travel together again.
-; str_npc6_rehire_speech|It's good to see you, {playername}. Let us walk the same path again.
-; str_npc7_rehire_speech|My axe is ready, {playername}. Shall I rejoin you?
-; str_npc8_rehire_speech|You are a welcome sight. Shall I join you once again?
-; str_npc9_rehire_speech|Gulm is ready to kill for you again. Are we going?
+str_npc1_rehire_speech|E' bello rivederla capitano! Devo riunirmi al tuo esercito un' altra volta?
+str_npc2_rehire_speech|Salve comandante! Potrei riunirmi al tuo esercito?
+str_npc3_rehire_speech|Ho! Dobbiamo nuovamente cavalcare assieme?
+str_npc4_rehire_speech|Bentornato. Riprendiamo da dove c' eravamo lasciati?
+str_npc5_rehire_speech|E' bello ritrovarti, {playername}. Viaggiamo di nuovo assieme.
+str_npc6_rehire_speech|E' bello rivederti, {playername}. Continuiamo a seguire la stessa via.
+str_npc7_rehire_speech|La mia ascia è pronta, {playername}. Devo riunirmi al tuo esercito?
+str_npc8_rehire_speech|Qual buon vento ti porta? Devo riunirmi al tuo esercito?
+str_npc9_rehire_speech|Gulm è di nuovo pronto ad uccidere per te. Stiamo partendo?
 str_npc10_rehire_speech|Posso servirvi ancora una volta?
 str_npc11_rehire_speech|Posso servirvi ancora una volta?
 str_npc12_rehire_speech|Posso servirvi ancora una volta?
 str_npc13_rehire_speech|Posso servirvi ancora una volta?
 str_npc14_rehire_speech|Posso servirvi ancora una volta?
-; str_npc15_rehire_speech|Aah, Great Lord! I have searched so long for you, as word of your glorious deeds rings across Middle Earth! Surely you have missed my skills? You will welcome me once more to complete your Great Army?
+str_npc15_rehire_speech|Aah, Gran Signore! Ti ho cercato molto a lungo, mentre le voci delle tue gloriose imprese circolavano per la Terra di Mezzo! Sicuramente hai sentito la mancanza delle mie abilità? Mi accoglierai ancora una volta per completare il tuo Grande Esercito?
 str_npc16_rehire_speech|Posso servirvi ancora una volta?
-; str_npc17_rehire_speech|Hey. Time to move on again? Trees don't move much. But I like to move. But I like trees too.
-; str_npc1_home_intro|Captain, we are approaching Osgiliath now, so let us be on the lookout for friend and foe alike.
-; str_npc2_home_intro|Be vigilant, commander, that must be Minas Morgul over there. Do you feel that something is watching us?
-; str_npc3_home_intro|A word of advice, commander. We are getting mighty close to Entwood now and the horses are getting restless. Some call the forest Fangorn, too.
-; str_npc4_home_intro|Let's stop here for a minute, commander. Ahead of us, between the Anduin and the Limlight, lies the Field of Celebrant, where Eorl the Young rode to the aid of our Gondor allies.
-; str_npc5_home_intro|Daro! That's Isengard and the black tower of Orthanc ahead. Much have changed since I last saw them, and none for the better.
-; str_npc6_home_intro|Excuse me, {playername}. The paths in this part become more twisted and some lead to dead-ends. We must be approaching Dol Guldur.
-; str_npc7_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
-; str_npc8_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
-; str_npc9_home_intro|Curses! That must be Hornburg over there, master.
+str_npc17_rehire_speech|Hey. Tempo di rimettersi in marcia? Gli alberi non si muovono tanto. Mi piace marciare, ma mi piacciono anche gli alberi.
+str_npc1_home_intro|Capitano, ci stiamo avvicinando ad Osgiliath, quindi cerchiamo di avvistare amici o nemici.
+str_npc2_home_intro|Sii vigile comandante, quella dovrebbe essere Minas Morgul. Non senti qualcosa che ci sta osservando?
+str_npc3_home_intro|Una parola, comandante. Iniziamo ad avvicinarci al bosco degli Ent... i cavalli sono sempre più irrequieti mio signore. Alcuni la chiamano la foresta di Fangorn.
+str_npc4_home_intro|Fermiamoci qui per un minuto, comandante. D'avanti di noi, tra l'Anduin e Limterso, si trova il Campo di Celebrant. Eorl il Giovane passò da lì, per accorrere in aiuto dei nostri alleati di Gondor.
+str_npc5_home_intro|Daro! Quelle davanti a noi sono Isengard e la nera torre di Orthanc. Molte cose sono cambiate dall'ultima volta che le ho viste, e nessuna di queste per il meglio.
+str_npc6_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcune di queste portano a vicoli ciechi. Ci stiamo avvicinando a Dol Guldur.
+str_npc7_home_intro|Hey, capitano! Questo deve essere il vecchio sentiero che và fino all'entrata orientale di Khazad-dûm, o Moria come preferisci. Si può vedere in lontananza il lago scintillante di Kheled-zâram, e, attraverso le nuvole, i tre picchi, conosciuti da queste parti come le Montagne Nebbiose.
+str_npc8_home_intro|Oh, un fatto curioso! Ho sentito storie di questo posto dove robusti boscaioli vivono in armonia con piante e animali. Si chiamano Beornings, deduco.
+str_npc9_home_intro|Maledizione! Capitano. quella deve essere Hornburg!
 str_npc10_home_intro|Ehi, guarda!
 str_npc11_home_intro|Ehi, guarda!
 str_npc12_home_intro|Ehi, guarda!
@@ -738,16 +738,16 @@ str_npc13_home_intro|Ehi, guarda!
 str_npc14_home_intro|Ehi, guarda!
 str_npc15_home_intro|Ehi, guarda!
 str_npc16_home_intro|Ehi, guarda!
-; str_npc17_home_intro|Ooooo, mallorns grow here! One should never cut down a mallorn, they're just too beautiful!
-; str_npc1_home_description|It was a fair city once, the capital of Gondor of old, full of people and laughter. Now it lies deserted and ruined, the old Anduin flowing wearily through a ghost town.
-; str_npc2_home_description|It was called Minas Ithil many years ago, and stories are told of how moonlight filled its inner courts with silver light and its walls gleamed silver and white. Gondor watchmen peered over the walls to the east and kept watch beyond Ephel Dúath.
-; str_npc3_home_description|It's thick with trunks and branches and all manner of trees, and I wouldn't venture there as strange creatures roam the forest, not all of them harmless.
-; str_npc4_home_description|'Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...'
-; str_npc5_home_description|Once built by the Southern Kingdom, now home to one that we called the White Wizard, scheming, no doubt, how to increase his power further at the expense of others.
-; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazguls here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
-; str_npc7_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
-; str_npc8_home_description|Not too often, a travelling merchant comes to the Dale market and offers the finest honey I have ever tasted. For some curious reason, he says that 'it was made by bears' and laughs.
-; str_npc9_home_description|Its damned walls are too high and too hard for my hammer to break. I reckon if we ever chase away the manlings from their Edoras pig-sties, they'll run off here and cower behind the walls.
+str_npc17_home_intro|Ooooo, qui crescono i mallorn! Nessuno dovremme mai tagliare una pianta di mallorn, è semplicemente stupenda!
+str_npc1_home_description|Era una bella città una volta, la vecchia capitale di Gondor, piena di gente e divertimento. Ora è disabitata e in rovina, il vecchio Anduin che scorre stancamente attraverso una città fantasma.
+str_npc2_home_description|Venne chiamata Minas Ithil molti anni fà, le storie raccontano di come i chiari di luna riempissero le sue corti con la loro luce argentea, facendo brillare le pareti d'argento e bianco. Scrutando l'orizzonte dalle mura ad est, le sentinelle di Gondor riuscivano a vedere al di là di Ephel Dùath.
+str_npc3_home_description|È fatta di tronchi e rami e ogni sorta di alberi, e io non voglio avventurarmi lì dove ci sono strane creature che vagano per la foresta, soprattutto se non tutte sono innocue.
+str_npc4_home_description|' Dove sono ora il cavallo ed il cavaliere? dove si trova il corno che soffiava? ^ dove si trova il timone e l'usbergo e i brillanti capelli ?... ^ sono passati come pioggia sulla montagna, come vento nel prato; ^ i giorni sono passati nell'ovest all'ombra delle colline... '
+str_npc5_home_description|Fu costruita dal Regno del sud, ora sede di uno che abbiamo chiamato lo stregone bianco, e il perchè di come fà ad aumentare così tanto il suo potere a scapito degli altri è intrigante, senza dubbio.
+str_npc6_home_description|Non mi sono mai spinto così lontano, alcuni degli esploratori di Greenwood dicono che qui ci sono dei Nazguls. Riesco a sentire una strana presenza, ma non riesco a descriverla. E' potente, tuttavia, dobbiamo cercare di essere preparati.
+str_npc7_home_description|A giudicare dalla desolazione e a tutte queste tracce di orchi, ho paura per il destino del coraggioso Balin e della sua spedizione. Sembra che Moria sia caduta nell'ombra, dovremmo procedere con cautela.
+str_npc8_home_description|Non troppo spesso, un mercante itinerante arriva al mercato di Dale e offre il più buon miele che abbia mai assaggiato. Per qualche curioso motivo, dice che "è stato fatto dagli orsi" e ride.
+str_npc9_home_description|Le sue dannate mura sono troppo alte e resistenti per essere abbattute dal mio martello. Ritengo che se dovessimo mai scacciare gli ometti dai loro porcili in Edoras, fuggirebbero quaggiù per rifugiarsi dietro le mura.
 str_npc10_home_description|Conosci questa città?
 str_npc11_home_description|Conosci questa città?
 str_npc12_home_description|Conosci questa città?
@@ -755,33 +755,33 @@ str_npc13_home_description|Conosci questa città?
 str_npc14_home_description|Conosci questa città?
 str_npc15_home_description|Conosci questa città?
 str_npc16_home_description|Conosci questa città?
-; str_npc17_home_description|I didn't know there were such lovely woods here too. I wonder if any woodsmen work here.
-; str_npc1_home_description_2|If Gondor is doomed, West Osgiliath shall fall first to the foul hordes of the Eye. I only hope Captain Faramir would be in command that day and stem the tide. If we could spare any men to bolster the defences here, I would be most grateful, Captain.
-; str_npc2_home_description_2|It is said it's full of terrible orcs now and dread spirits and worse. I pray for the day when Gondor will reclaim it and cleanse it of all things foul.
-; str_npc3_home_description_2|If we must cross Entwood, let us do so with haste and stealth. I don't know who might be listening to our hooves and I don't care to find out.
-; str_npc4_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
-; str_npc5_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
-; str_npc6_home_description_2|I sense the evil armies behind its walls prepare to march... To fair Lothlórien? To Dale? To my Greenwood homeland? I cannot tell, but please do everything you can to thwart them.
-; str_npc7_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
-; str_npc8_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
-; str_npc9_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
-; str_npc10_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
-; str_npc11_home_description_2|Doesn't Orthanc look like a giant... something?
-; str_npc12_home_description_2|Doesn't Orthanc look like a giant... something?
-; str_npc13_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
-; str_npc14_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
-; str_npc15_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
-; str_npc16_home_description_2|Minas Morgul, where Nazguls drink all day, har-har!
-; str_npc17_home_description_2|I could chisel you a nice pipe. Would you like a pipe?
+str_npc17_home_description|Non sapevo ci fossero boschi così belli anche qui. Mi chiedo se qualche boscaiolo vi lavori.
+str_npc1_home_description_2|Se Gondor è condannato, la parte Ovest di Osgiliath sarà la prima a cadere di fronte alle sudicie orde dell'Occhio. Spero solo che il Capitano Faramir sarà al comando, quel giorno, e che argini la marea. Se potessimo prendere in prestito qualche uomo per rafforzare le difese qui ne sarei estremamente grato, Capitano.
+str_npc2_home_description_2|E' triste che ci siano ovunque terribili orchi e spiriti spaventosi, e chissà che altro di peggio. Prego che venga il giorno in cui Gondor reclamerà quanto è suo e farà pulizia di tutte queste oscenità.
+str_npc3_home_description_2|Se dobbiamo attraversare Entwood, facciamo in fretta e di nascosto. Non so chi potrebbe sentire il rumore degli zoccoli dei nostri cavalli e non voglio saperlo.
+str_npc4_home_description_2|Faremmo bene a ricordare le grandi gesta del passato e i sacrifici che sono stati fatti. L'alleanza fra Rohan e Gondor salverà i nostri popoli da un destino avverso ancora una volta.
+str_npc5_home_description_2|Che sia un memoriale per ricordare che anche i più grandi, anche uno degli Istari, può essere corrotto e cadere. Coloro che bramano il potere possono essere sconfitti dal potere stesso, quindi cerchiamo di non indugiare più a lungo.
+str_npc6_home_description_2|Sento gli eserciti del male dietro le loro mura, pronti a marciare.. Verso la fiera Lothlórien ? Verso Dale ? Verso Greenwood, la mia terra natìa ? Non posso saperlo, ma vi prego di fare tutto quello che potete per contrastarli.
+str_npc7_home_description_2|Se le sorti della guerra ci provvedessero una grande armata, dovremmo tentare di accedere alle Miniere e recuperarne i grandi tesori.
+str_npc8_home_description_2|Posso sentire il profumo di molti dolci fiori e vedere le api che ne raccolgono il nettare. Se non ti spiace, raccoglierò alcune erbe per noi tutti, ci vorrà solo un momento.
+str_npc9_home_description_2|Non ha senso arrancare qui attorno senza avere con noi una grossa orda di Uruk-hai. Sempre che non ti vada di fare delle smorfie alle guardie sulle mura, ecco.
+str_npc10_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
+str_npc11_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
+str_npc12_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
+str_npc13_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
+str_npc14_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
+str_npc15_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
+str_npc16_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
+str_npc17_home_description_2|Potrei fabbricare un bel tubo. Lo vuoi un tubo ?
 str_npc1_home_recap|Sono nato e cresciuto in Ithilien , in una lunga fila di guerrieri risalente alla Dúnedain meridionale.
-; str_npc2_home_recap|I was born in Minas Tirith, in a humble, but proud family.
-; str_npc3_home_recap|I am one of the Eorlingas, or Rohirrim, as foreigners call us.
-; str_npc4_home_recap|I don't find it amusing that you should forget so easily.
-; str_npc5_home_recap|I'll indulge your curiosity, but let us not tarry.
-; str_npc6_home_recap|I was born and raised in Mirkwood, a Silvan Elf. Our race's woodcraft skills are known to all.
-; str_npc7_home_recap|I am son of Dwalin of the Durin's folk.
+str_npc2_home_recap|Sono Nato a Minas Tirith, in una famiglia umile, ma orgogliosa.
+str_npc3_home_recap|Io sono uno degli Eorlingas, o Rohirrim, come gli stranieri ci chiamano.
+str_npc4_home_recap|Non trovo divertente il fatto che ti scordi le cose tanto facilmente.
+str_npc5_home_recap|Asseconderò la vostra curiosità, ma non perdiamo troppo tempo.
+str_npc6_home_recap|Sono nato e cresciuto a Bosco Atro, sono un Elfo Silvano. Le nostre abilità nel lavorare il legno è nota a tutti.
+str_npc7_home_recap|Sono figlio di Dwalin, della gente di Durin
 str_npc8_home_recap|Sono un guaritore ed erborista da Dale
-; str_npc9_home_recap|Gulm will tell you if you must know. But talk doesn't make enemies dead.
+str_npc9_home_recap|Gulm vi dirà tutto ciò che vi serve sapere. Ma il continuare a parlare non ucciderà i nemici.
 str_npc10_home_recap|Farò questo a breve.
 str_npc11_home_recap|Farò questo a breve.
 str_npc12_home_recap|Farò questo a breve.
@@ -789,7 +789,7 @@ str_npc13_home_recap|Farò questo a breve.
 str_npc14_home_recap|Farò questo a breve.
 str_npc15_home_recap|Farò questo a breve.
 str_npc16_home_recap|Farò questo a breve.
-; str_npc17_home_recap|I was born at the edge of the woods, but spent all my life in the woods. Did I tell you of the many trees there?
+str_npc17_home_recap|Sono nato ai margini dei boschi, ed ho speso tutta la mia vita tra gli albero. Ti ho già detto di "alcuni" alberi li ?
 str_npc1_honorific|Capitano
 str_npc2_honorific|comandante 
 str_npc3_honorific|comandante 
@@ -802,33 +802,33 @@ str_npc9_honorific|Maestro
 str_npc10_honorific|Maestro
 str_npc11_honorific|Maestro
 str_npc12_honorific|Maestro
-; str_npc13_honorific|Chieftain
+str_npc13_honorific|Capo
 str_npc14_honorific|Capitano
 str_npc15_honorific|Maestro
-; str_npc16_honorific|Chieftain
+str_npc16_honorific|Comandante
 str_npc17_honorific|Capo
-; str_comment_intro_liege_affiliated|I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk.
+str_comment_intro_liege_affiliated|Mi è stato riferito che sei uno dei contendenti che disputa sul mio diritto alla corona di Calradia. Tuttavia, possiamo ancora parlare.
 str_comment_intro_famous_liege|La tua fama corre prima di te! Ora è tempo di dimostrare il tuo valore.
 str_comment_intro_famous_martial|La tua fama corre prima di te! Dovremmo confrontare il nostro valore in un torneo, oppure sul campo di battaglia!
-; str_comment_intro_famous_badtempered|I've heard of you. Well, I'm not one for bandying words, so if you have anything to say, out with it.
-; str_comment_intro_famous_pitiless|I know your name. It strikes fear in men's hearts. That is good. Perhaps we should speak together, some time.
+str_comment_intro_famous_badtempered|Ho sentito parlare di te. Beh, io non ho tempo da perdere , quindi se hai qualcosa da dire, dilla.
+str_comment_intro_famous_pitiless|Conosco il tuo nome. Infonde paura nei cuori degli uomini. Questo è un bene, qualche volta dovremmo parlare un pò io e te.
 str_comment_intro_famous_cunning|Ah, si, ci conosciamo ora. Sembri un [buon/buono] [uomo/donna] da conoscere. Parliamo, da tempo a tempo.
-; str_comment_intro_famous_sadistic|I know your name -- and from what I hear, I'll warrant that many a grieving widow knows too. But that is no concern of mine.
+str_comment_intro_famous_sadistic|Sò qual'è il tuo nome, e da quello che ho sentito in giro, posso garantirti che anche molte vedove lo conoscono. Ma ciò non è una mia preoccupazione.
 str_comment_intro_famous_goodnatured|Ho sentito parlare di te! è davvero bello fare la tua conoscenza.
-; str_comment_intro_famous_upstanding|I know your name. They say you are a most valiant warrior. I can only hope that your honour and mercy matches your valor.
-; str_comment_intro_noble_liege|I see that you carry a nobleman's banner, although I do not recognize the device. Know that I am always looking for good men to fight for me, once they prove themselves to be worthy of my trust.
-; str_comment_intro_noble_martial|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps one day we shall test each other's valor in a tournament, or on the battlefield!
-; str_comment_intro_noble_badtempered|I don't recognize the device on your banner. No doubt another foreigner come to our lands, as if we didn't have so many here already.
-; str_comment_intro_noble_pitiless|I see that you carry a nobleman's banner, but I do not recognize the device. Another vulture come to grow fat on the leftovers of war, no doubt!
-; str_comment_intro_noble_cunning|I see that you carry a nobleman's banner, but I do not recognize the device. Still, it is always worthwhile to make the acquaintance of {men/women} who may one day prove themselves to be great warriors.
-; str_comment_intro_noble_sadistic|I see that you carry a nobleman's banner, but I do not recognize the device. Perhaps you are the bastard {son/daughter} of a puffed-up cattle thief? Or perhaps you stole it?
-; str_comment_intro_noble_goodnatured|I see that you carry a nobleman's banner, but I do not recognize the device. Forgive my ignorance, {sir/madame}! It is good to make your acquaitance.
-; str_comment_intro_noble_upstanding|I see that you carry a nobleman's banner, but I do not recognize the device. No doubt you have come to Calradia in search of wealth and glory. If this indeed is the case, then I only ask that you show mercy to those poor souls caught in the path of war.
+str_comment_intro_famous_upstanding|So chi sei. Dicono che tu sia uno dei più intrepidi guerrieri di questa terra. Posso solo sperare che il tuo onore e la tua gloria accrescino il tuo valore
+str_comment_intro_noble_liege|Vedo che porti lo stendardo di un nobile, anche se non ne riconosco il disegno. Sappi che sono sempre alla ricerca di uomini valorosi che possano combattere per me, quando dimostrano di meritare la mia fiducia.
+str_comment_intro_noble_martial|Vedo che porti lo stendardo di un nobile, ma non ne riconosco l'effige. Forse un giorno misureremo il nostro onore in un torneo, o sul campo di battaglia !
+str_comment_intro_noble_badtempered|Non riconosco lo stemma sul tuo stendardo. Senza dubbio sarai un altro straniero giunto nelle nostre terre, come se non ne avessimo già abbastanza..
+str_comment_intro_noble_pitiless|Vedo che porti lo stendardo di un nobile, ma non ne riconosco lo stemma. Un altro avvoltoio giunto ad ingrassarsi con gli avanzi della guerra, senza dubbio !
+str_comment_intro_noble_cunning|Vedo che porti lo stendardo di un nobile, anche se non ne riconosco lo stemma. Tuttavia, vale sempre la pena fare la conoscenza di {uomini/donne} che potranno un giorno dare prova d'essere grandi guerrieri.
+str_comment_intro_noble_sadistic|Vedo che porti lo stendardo di un nobile, ma non ne riconosco lo stemma. Forse sei il {figlio/figlia} di un parto illegittimo con un ladro di bestiame ? O forse il bestiame lo rubi tu ?
+str_comment_intro_noble_goodnatured|Vedo che porti lo stendardo di un nobile, ma non ne riconosco lo stemma. Perdona la mia ignoranza, {sire/signora} !  E' bello fare la tua conoscenza.
+str_comment_intro_noble_upstanding|Vedo che porti lo stendardo di un nobile, ma non ne riconosco lo stemma. Senza dubbio sei in cerca di gloria e ricchezza in Calradia. Se fosse questo il caso, ti chiedo solo di mostrare misericordia per quelle povere anime catturate nel sentiero della guerra.
 ; str_comment_intro_common_liege|You may be of common birth, but know that I am always looking for good men to fight for me, if they can prove themselves to be worthy of my trust.
-; str_comment_intro_common_martial|Perhaps you are not of gentle birth, but if you prove yourself a {man/woman} of valor, then I would be pleased to try my strength against yours in the tournament or on the battlefield.
-; str_comment_intro_common_badtempered|Speak quickly, if you have anything to say, for I have no time to be bandying words with common soldiers of fortune.
+str_comment_intro_common_martial|Forse non sei di nobile nascita,ma se dimostri valore da{uomo/donna}, allora sarei lieto di sfidarti in un torneo o in campo
+str_comment_intro_common_badtempered|Se hai qualcosa da dire parla velocemente,perchè non ho tempo da perdere con un comune soldato di ventura
 ; str_comment_intro_common_pitiless|You have the look of a mercenary, another vulture come to grow fat on the misery of this land.
-; str_comment_intro_common_cunning|Well... I have not heard of you, but you have the look of a {man/woman} who might make something of {himself/herself}, some day.
+str_comment_intro_common_cunning|Beh... Non ho mai sentito parlare di te, ma sembri un {uomo/una donna} che potrebbe far parlare di {se/se}.
 ; str_comment_intro_common_sadistic|Normally I cut the throats of impudent commoners who barge into my presence uninvited, but I am in a good mood today.
 ; str_comment_intro_common_goodnatured|Well, you look like a good enough sort.
 ; str_comment_intro_common_upstanding|Peace to you, and always remember to temper your valor with mercy, your courage with honour.
@@ -844,7 +844,7 @@ str_comment_intro_famous_goodnatured|Ho sentito parlare di te! è davvero bello 
 ; str_comment_you_robbed_my_village_friendly_spiteful|I have heard that you pinched some food from my tenants at {s51}. Well, I'll not begrudge you a scrap or two, but keep in mind that I'm the one who must listen to their whining afterward.
 ; str_comment_you_robbed_my_village_friendly|I have heard that you requisitioned supplies from my tenants at {s51}. I am sure that you would not have done so were you not desperately in need.
 ; str_comment_you_robbed_my_village_default|You have robbed my tenants in the village of {s51}. If you continue to behave this way, we may soon come to blows.
-; str_comment_you_accosted_my_caravan_enemy|You have been accosting caravans under my protection. But your trail of brigandage will soon come to an end.
+str_comment_you_accosted_my_caravan_enemy|Ti sei avvicinato troppo alle carovane sotto la mia protezione. Ma la tua carriera del brigantaggio sarà presto giunta al termine
 ; str_comment_you_accosted_my_caravan_default|You have been accosting caravans under my protection. This sort of behavior must stop.
 ; str_comment_you_helped_villagers_benevolent|I heard that you gave charity to my tenants in the village of {s51}. I had been neglectful in my duties as lord and protector, and I appreciate what you have done.
 ; str_comment_you_helped_villagers_friendly_cruel|I heard that you gave charity to my tenants in the village of {s51}. I appreciate that you meant well, but I'd rather you not undercut my authority like that.
@@ -1863,14 +1863,14 @@ str_guldur_gift0|Liquore Nero
 ; str_gundabad_gift1|Protective Warpaints
 ; str_gundabad_gift2|Boiled Dwarven Lard
 ; str_gundabad_gift3|Mummified Corpse Idols
-; str_gundabad_gift4|Black Wargs
-; str_dunland_gift0|Stinky Goat Cheese
+str_gundabad_gift4|Warg neri
+str_dunland_gift0|Formaggio di capra puzzolente
 ; str_dunland_gift1|Flint Sacrificial Knives
 ; str_dunland_gift2|Bronze Arm Rings
 str_dunland_gift3|Capre
 str_dunland_gift4|Teschi e artigli di lupo
-; str_beorn_gift0|Honey Cakes and Mead
+str_beorn_gift0|torte con miele e alcool
 ; str_beorn_gift1|Bee Wax and Hemp Cloth
 str_beorn_gift2|Alveari di Api
 str_beorn_gift3|Collane di Ambra
-; str_beorn_gift4|Well Trained Ponies
+str_beorn_gift4|Pony ben addestrati

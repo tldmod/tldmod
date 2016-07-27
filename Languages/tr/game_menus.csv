@@ -233,7 +233,7 @@ menu_besiegers_camp_with_allies|{s1} kuşatma altında. {s2} un sancağı kuşat
 mno_talk_to_siege_commander|komutan ile görüşme talep et.
 mno_join_siege_with_allies|Sıradaki saldırıya katıl
 mno_join_siege_stay_back|askerlerine sıradaki mücadelede sensiz savaşmalarını emret.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|Kitap cücelerin Moriaya yerleşmek için yaptığı son denemeyi anlatıyor gibi.Olaya karışan herkezin ölümüne sebep olan deneme... Kitabı incelerken `Gerçek Gümüş` sözlerine rastlıyorsun.Sayfalara biraz daha göz gezdirerek aniden yazılanların aşağı seviyelerdeki bir cüce hazinesinin haritası olduğunu anlıyorsun.Hah!Uzun süredir kayıp olan cüce mithrillini bulmak hoş olmazmıydı!? ^Hırslıca talimatları izliyor ve dar bir tünele giriyorsun... ^...^Birkaç saatlik arayışın ardından arayışların meyve vermeyince Moria nın en dip yerlerinde kaybolduğunu ve dışarı çıkmanın bir yolunu bulman gerektiğini anlıyorsun
 mno_moria_exit_scene|Çıkış yolunu bul!
 menu_castle_outside|Dışarıdasın {s2}.{s11} {s3} {s4}
 mno_moria_enter|Gizli girişten Moria'nın ana salonuna dön.
@@ -262,10 +262,10 @@ menu_siege_join_defense|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıplar�
 menu_village_hunt_down_fugitive_defeated|^^^^^Bir kaçak tarafından gelen sert bir darbe seni yere yığar ve gözlerin dönmeye başlar ve kararır. Zaman geçer. Uyandığında kendini yıpranmış ve kanlar içinde bulursun fakat şans eseri hiç bir yara ölümcül değildir.
 menu_town_bandits_succeeded|^^^^^Goblin'ler önünde buğdayların orağa karşı yığılması gibi yere yığılırlar. Az bir zaman sonra kendini tek başına , askerlerini ise bilinçsiz, ölü ve ölmek üzere bulursun. Hiç şüphesiz yerliler, onları bu saldırıdan kurtardığın için minnettar olacaklar.
 menu_town_brawl_lost|^^^^^^Şuurunu kaybettin. Saldırdığın kişiler günlük işlerine dönmeden önce çabucak değerli eşyalar için üzerini ararlar.
-; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
+menu_town_brawl_won|^^^^^Rahatsızlığı yatıştırmak için gönderilen tüm gardiyanları ve rakipleri yendin. Hızlıca değerli eşyalar için onları arıyor ve ardından ortalık sakinleşene kadar ortadan kayboluyorsun.^Belki gelecek sefere daha fazla saygı gösterir ve kenara çekilirler.
 menu_town|{s60}.{s12}{s13} ' içinde vardın.
 mno_town_menu_0|Bir yere git.
-; mno_town_menu_0_door|Door to some location.
+mno_town_menu_0_door|Bir yerin kapısı.
 mno_town_approach|{s1}'e yaklaş...
 mno_town_castle|{s1} e git
 mno_town_castle_door|Kalenin  Kapısı
@@ -289,7 +289,7 @@ mno_disembark_no|Hayır.
 menu_ship_reembark|Gemiye binmek mi istiyorsun?
 mno_reembark_yes|Evet.
 mno_reembark_no|Hayır.
-; menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
+menu_center_reports|Kasaba ismi: {s1}^Kira geliri: {reg1} dinar^Tariff geliri: {reg2} dinar^Yemek stoğu: {reg3} günlük
 menu_sneak_into_town_suceeded|Eski bir seyyahın giysileri ile muhafızları kandırıp kasabaya giriyorsun.
 menu_sneak_into_town_caught|Gizlice girmeye çalışırken muhafızlardan biri seni tanıyor ve alarm veriyor! Tüm kasabanın muhafızları üstüne çullanmadan önce arka kapılardan kaçmalısın!
 mno_sneak_caught_fight|Kalabalığı yararak ilerlemeye çalış!
@@ -301,23 +301,23 @@ menu_recover_after_death_fangorn|Uyandın. Etrafında hala orman var. Her kemiğ
 menu_recover_after_death_moria|^^^^^Bilincini tekrar kazandın. Yumuşak toprağın üzerine uzanmış, temiz havanın yüzünde dolaşmasını hissediyorsun. Dışardasın! ^Orklar öldüğünü düşünüp seni kuytu bir çukura atmış olmalılar. ^Bir yeraltı akıntısıyla yüzeye sürüklenmiş olmalısın.
 mno_whatever|ayaklan!
 menu_recover_after_death_default|^^^^^Bilincini tekrar kazandın. Düştüğün yerde yatıyorsun. Düşmanların öldüğünü düşünüp seni orada bırakmış olmalılar. Ancak, yaraların hiç ölümcül görünmüyor ve berbat hissetmene rağmen hala yürüyebileceğini farkediyorsun. Ayağa kalk ve grubundan birileri hala hayatta mı diye bir göz at.
-; menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
-; menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
-; menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
+menu_recover_after_death_town|^^^^Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül değilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
+menu_recover_after_death_town_alone|Bilincini tekrar kazanıyorsun ve kendini kasabanın dışında buluyorsun. Hayattasın! Etrafında kimse yok. Kendini kasabadan dışarı sürüklemeye çalışıyorsun. Görünen o ki yaralarının hiç biri ölümcül değilmiş ve kendini çok kötü hissetsen de, hala yürüyebiliyorsun.
+menu_notification_center_under_siege|{s1}, {s3}'ten {s2} tarafından kuşatıldı.
 menu_notification_one_side_left|^^^^^Yüzük için savaş sona erdi!^^ {s1} Tüm düşmanlarını yenerek zafere ulaştı!
 menu_notification_total_defeat|^^^^^Yüzük savaşı senin için sona erdi!^^ {s1} düşmanları tarafından bozguna uğratıldı ve tek başına mağlubiyet içinde kıvranıyorsun!
-; menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.
-; menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
-; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
-; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
+menu_notification_your_faction_collapsed|^^^^^Memleketin {s11} yenildi! Yine de, diğer müttefiklerin savaşta. {s11}'den kalanlarla beraber, tarafına kazanması için yardım edebilirsin.
+menu_notification_faction_defeated|^^^^^{s1} yenildi!^{s1} artık yok, {s13} kuvvetleri tarafından yok edildi!
+menu_ruins|^^^^{s1}'e yaklaşıyorsun. Güçlü bir yerleşim yerle bir edilmiş, yine de istihkam izlerini ve parçalanmış paslı silahları görebiliyorsun.
+menu_legendary_place|^^^^Söylentileri takip ettin ve {s1}'i buldun. Şimdi burayı gezebilir ve söylentilerin doğru olup olmadığını kendin görebilirsin.
 mno_explore|Etrafı keşfet
-; menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?
+menu_starting_quest_good|^^^^^^Bir grup orkun saldırısı altında bir küçük karavan görüyorsun. Ne yapacaksın?
 mno_help|Yabancılara yardım et!
 mno_go_your_way|Onları yalnız bırak
 menu_custom_battle_choose_faction1|^^^^^^^^^^Tarafını ve avantajını seç:
 mno_good_equal|İyi taraf
 mno_bad_equal|Kötü taraf
-; mno_replay_prev|Replay previous setup
+mno_replay_prev|Önceki kurulumu oynat.
 menu_custom_battle_choose_faction2|^^^^^^^^^^İyi tarafı seç
 mno_cb_gondor|Gondor
 mno_cb_gondor1|Rohan
@@ -342,24 +342,24 @@ mno_next_rescue_scene_door|İleriye devam!
 mno_pick_troops1|Görev için yoldaş seç, {reg0} seçili.
 menu_pick_troops|Gizlilik görevi için kimi beraberinde götürürdün? Şu anda {reg0}  yoldaş seçtin. Yanında 10'a kadar kişi götürebilirsin.
 mno_go_forward|Yoldaş seçimini bitir ve devam et.
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|{s2}'li {s1}'in gömülü olduğu toprağa yaklaşıyorsun. Ölmüş düşmanlarının silahlarıyla kaplanmış.
 mno_pay_respects|Diz çök ve saygılarını sun.
 mno_swear_oath|İntikam yemini et!
 mno_despoil|Mekân'ı kirlet.
 mno_leave_mound|Höyüğü terket.
-; menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
-; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out the forces of {s3} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
-; menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_burial_mound_respects|Diz çöküp {s1}'e saygını sunuyorsun, öteki hayata hızlı geçişi için sessizce dua ediyorsun. Burada yapacak bir şey kalmadı.
+menu_burial_mound_oath|{s4}'ün ölümü üzerine bağırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
+menu_burial_mound_despoil| {s1}'ın mezarını ellerinle yıkıyorsun ve taşlarını lanetlerle, merhametsiz şarkılarla ve ağza alınmayacak hareketlerle lekeliyorsun. Yoldaşların ölünün korkusundan geri çekiliyorlar fakat senin kötülüğüne duydukları saygı yenilenmiş gibi görünüyor.
+menu_funeral_pyre|{s2}'li {s3}'ün yakıldığı ağaç yığınının kavrulmuş kalıntılarına yaklaşıyorsun. Cesedi burada, seramonik bir şekilde kişisel korumaları tarafından yakılmış. Değerli bir şey kalmamış.
 mno_leave_pyre|Kremasyon alanını terket.
 menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştığında..
 mno_ruin_menu_0|Etrafı keşfet.
 mno_ruin_leave|Ayrıl...
 menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası değilsin.
 menu_animal_ambush|Yoldaşlarınla birlikte kendinizi grubunuzdan izole edilmiş olarak buluyorsunuz ve aniden...
-; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
+menu_animal_ambush_success|Tıpkı ekinlerin orağa boyun eğdiği gibi, {s2}'de sana {reg0?eğiliyor:eğiliyor}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}
+menu_animal_ambush_fail|Hayvanlar sana {reg0?,: ve yoldaşına{reg2?s,:,}} doğru havlayıp hırlıyorlar, ama şans eseri onları geri püskürtüyorsun. Umarım tekrar saldırmazlar.
+menu_build_your_scene|Burada aşağıda gösterilen slotlardan birini veya oyun düzenleme/edit modunu kullanarak, kendi savaş sahneni yaratabilirsin (düzenleme modunu M&B başlatma ayarlar ekranından açman gerekir). Ardından yarattığın sahneleri (TLD/SceneObj klasöründeki sco dosyaları) TLD modunun yapımcılarına ulaştırabilirsin. Eğer sahnen iyiyse, gelecek versiyonlarda rastgele savaşalanı olarak oynanabilir!^^ Sahnenin hangi bölgede çıkmasını istediğini belirtmeye çalış.^Bir kaç ipucu: derin sular, dik dağlar gibi geçilemez alanlar yapmamaya çalışın, tabii tecrübeli bir sahne yapımcısı değilseniz ve yapay zekayı o bölgelerden uzak tutabilecekseniz. (Girdiler 0-1 saldırganlar için, 4 savunmacılar için, 5-8'e dokunmayın.
 mno_scene1|Savaşalanı5 (file scn battlefield5.sco)
 mno_scene2|Savaşalanı6 (file scn battlefield6.sco)
 mno_scene3|Savaşalanı7 (file scn battlefield7.sco)

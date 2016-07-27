@@ -2,15 +2,15 @@ menu_start_game_1|^^^^^^^^^^Pelo que você está lutando?
 mno_start_good|O AMANHECER de uma nova Era
 mno_start_evil|O CREPÚSCULO do Homem
 mno_go_bback|Volte
-menu_start_phase_2|^^^^^ Terra Média. Uma sombra está crescendo no Leste, ^ e coisas obscuras têm saído de onde vinham se escondendo há muito tempo. ^ As pessoas livres se preparam para uma guerra do tipo que não se vê há uma era. ^ Homens, Elfos, Anões, e Orcs; todos irão fazer a sua parte. ^^  Qual parte, no entanto, está para ser vista...
+menu_start_phase_2|^^^^^ A Terra Média. Uma sombra está crescendo ao Leste, ^ e coisas obscuras têm saído de onde vinham se escondendo há muito tempo. ^ As pessoas livres se preparam para uma guerra do tipo que não se vê há uma era. ^ Homens, Elfos, Anões, e Orcs; todos farão a sua parte. ^^  Qual parte, no entanto, está para ser vista...
 mno_go_forth|Vá em frente e escolha seu caminho...
 menu_start_game_3            |^^^^^^^^Escolha o seu cenário:
 mno_custom_battle_scenario_1 |Skirmish, facções de Gondor vs Harad
 mno_custom_battle_scenario_12|Escolha as facções para a batalha
-mno_custom_battle_scenario_3 |Skirmish, Elfos vs Nazgul
+mno_custom_battle_scenario_3 |Skirmish, Elfos vs Numenorianos Negros
 mno_custom_battle_scenario_4 |Abismo de Helm, Rohan vs Isengard
 mno_custom_battle_scenario_5 |Skirmish, facções do Norte vs Rhun
-mno_custom_battle_scenario_6 |Ataque de Siege, Orcs vs Anões
+mno_custom_battle_scenario_6 |Cerco, Orcs vs Anões
 mno_custom_battle_scenario_7 |Emboscada, Orcs vs Floresta das Trevas
 mno_custom_battle_scenario_11|Batalhas teste (Tune Balancing!)
 mno_custom_battle_scenario_10|Batalha teste de cenário
@@ -18,7 +18,7 @@ mno_troll_battle_scenario    |Batalha teste do Troll
 mno_warg_battle_scenario     |Batalha teste dos wargs
 mno_build_your_own_scene     |** Construa o seu próprio cenário para TLD **
 mno_go_back                  |Voltar
-menu_tutorial|^^TLD possui um monte de conteúdo desconhecido pelo nativo M&B. Alguns deles estão descritos, sem spoilers e com detalhes no PDF incluso nesta versão. Para toturial dos mecanismos básicos do jogo, por favor, utilize o modo Nativo.
+menu_tutorial|^^TLD possui um monte de conteúdo desconhecido pelo nativo M&B. Podem-se encontrar descrições,  com detalhes e sem spoilers, no PDF incluso nesta versão. Para um tutorial dos mecanismos básicos do jogo, por favor, utilize o modo Nativo.
 mno_go_back_dot|Volte.
 mno_view_upkeep_costs|Ver custos de manutenção.
 mno_view_character_report|Ver relatório do personagem.
@@ -27,7 +27,7 @@ mno_view_morale_report|Ver relatório da moral do grupo.
 mno_view_character_report_02|Checar status de NPC.
 mno_view_faction_strengths_report|Ver relatório de força da facção.
 mno_view_traits_report|Ver traços.
-mno_resume_travelling|Resumo da viagem.
+mno_resume_travelling|Volte a viajar.
 mno_custom_battle_go|Começar.
 mno_leave_custom_battle_2|Cancelar.
 menu_custom_battle_end|^^^^^^A batalha acabou. {s1} Seu lado matou {reg5} inimigos e perdeu {reg6} tropas ao longo da batalha.^Você matou {reg7} oponentes durante a luta.
@@ -63,13 +63,13 @@ mno_start_el|ELFO
 mno_start_dw|ANÃO
 mno_go_back|Voltar
 menu_start_evil|^^^^^^^^^^A quem você serve?
-mno_start_eye|SAURON de Mordor, Senhor dos Anéis
+mno_start_eye|SAURON de Mordor, o Senhor dos Anéis
 mno_start_hand|SARUMAN de Isengard, o Branco
-menu_start_eye|^^^^^^^^^Seu Mestre é Lidless Eye^Escolha a sua raça
-mno_start_or|um Orc, a serviço de Lidless Eye
+menu_start_eye|^^^^^^^^^Seu Mestre é o Olho Sem Pálpebra^Escolha a sua raça
+mno_start_or|um Orc, a serviço do Olho Sem Pálpebra.
 mno_start_ur|um URUK, uma nova raça de Orcs
 mno_start_em|um HOMEM, subjugado por Sauron
-menu_start_hand|^^^^^^^^^Seu Mestre é Saruman, Branco^Escolha sua raça
+menu_start_hand|^^^^^^^^^Seu Mestre é Saruman, o Branco^Escolha sua raça
 mno_start_whor|um ORC, a serviço de Saruman
 mno_start_isur|um URUK-HAI, nascido em Isengard
 mno_start_duma|um HOMEM de Dunland, das Planícies do Oeste
