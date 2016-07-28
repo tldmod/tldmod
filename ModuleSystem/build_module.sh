@@ -1,6 +1,7 @@
 function title()
 {
-    PROMPT_COMMAND="echo -ne \"\033]0;$1 (on $HOSTNAME)\007\""; export PROMPT_COMMAND
+    #PROMPT_COMMAND="echo -ne \"\033]0;$1 (on $HOSTNAME)\007\"";
+    export PROMPT_COMMAND
 }
 
 export -f title

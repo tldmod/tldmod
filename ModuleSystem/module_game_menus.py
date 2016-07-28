@@ -3897,7 +3897,10 @@ game_menus = [
 			(assign, "$prebattle_talk_done",0),
 			(call_script,"script_start_current_battle"),
 		(try_end),
-		
+
+		#swy-- avoid undesired relocation when losing/running away from battle
+		(call_script, "script_maybe_relocate_player_from_z0"),
+
 		# get region + landmark (mtarini)
 		#(party_get_current_terrain, "$current_player_terrain","p_main_party"),
 		#(call_script, "script_get_region_of_party","p_main_party"),(assign, "$current_player_region", reg1),
