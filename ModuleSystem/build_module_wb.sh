@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #swy-- set the ModuleSystem folder as the current directory ($PWD)
 cd "$(dirname "$0")" || exit

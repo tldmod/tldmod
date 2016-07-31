@@ -1,11 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 
-title()
-{
-    true;
-}
-
-export -f title
+#swy-- this does nothing, just ignore any `title whateverstring` calls from the msys
+title() { true; }; export -f title
 
 #swy-- set the ModuleSystem folder as the current directory ($PWD)
 cd "$(dirname "$0")" || exit
