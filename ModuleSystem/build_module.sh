@@ -1,21 +1,21 @@
 #!/bin/sh
 
-function title()
+title()
 {
-    echo -ne ''
+    true;
 }
 
 export -f title
 
 #swy-- set the ModuleSystem folder as the current directory ($PWD)
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit
 
 title 'building tld for [wait for it]--'
 PYTHONPATH="$PWD:$PWD/Data:$PWD/Header:$PWD/ID:$PWD/Process"; export PYTHONPATH
 
 clear
 
-function python()
+python()
 {
     test -e /usr/bin/python2 && python2 "$@" || python "$@"
 }
@@ -61,20 +61,20 @@ if [ -e /usr/bin/flip ]; then
     flip -d ID/*.py
     flip -d ../*.txt
     flip -d ../_wb/*.txt
-    flip -d *.txt
+    flip -d  ./*.txt
     flip -u ../_wb/_tweaks_done_to_the_existing_res_tree.txt
 fi
 
 # --
 
-function msys_check()
+msys_check()
 {
-    cnt=$((`cat ${1} | wc -l`-1))
+    cnt=$((`cat "${1}" | wc -l` - 1))
     max=${3}
 
     echo -en "${2} count: $cnt/$max ... "
 	
-    if [ ${cnt} -lt ${max} ]; then
+    if [ ${cnt} -lt "${max}" ]; then
         echo 'ok.'
     else
         echo 'ERROR ERROR ERROR TOO MANY!!!.'
