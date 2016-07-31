@@ -372,5 +372,6 @@ mesh_tp_victory_dunland = 370
 mesh_tp_victory_beornings = 371
 mesh_mp_inventory_choose = 372
 mesh_inv_slot = 373
+mesh_draw_lumberjack_orcs = 374
 
 

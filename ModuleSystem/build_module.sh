@@ -1,10 +1,16 @@
+#!/bin/sh
+
 function title()
 {
-    #PROMPT_COMMAND="echo -ne \"\033]0;$1 (on $HOSTNAME)\007\"";
-    export PROMPT_COMMAND
+    # PROMPT_COMMAND="echo -ne \"\033]0;$1 (on $HOSTNAME)\007\"";
+    # export PROMPT_COMMAND
+    echo -ne ''
 }
 
 export -f title
+
+#swy-- set the ModuleSystem folder as the current directory ($PWD)
+cd "$(dirname "$0")"
 
 title 'building tld for [wait for it]--'
 PYTHONPATH="$PWD:$PWD/Data:$PWD/Header:$PWD/ID:$PWD/Process"; export PYTHONPATH

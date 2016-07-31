@@ -4074,6 +4074,10 @@ game_menus = [
       (eq, "$g_encountered_party_template", "pt_looters"),
       (set_background_mesh, "mesh_draw_tribal_orcs"),
     (else_try),
+      #swy-- if "tree-chopping orcs" then show this illustration thingy...
+      (eq, "$g_encountered_party_template", "pt_fangorn_orcs"),
+      (set_background_mesh, "mesh_draw_lumberjack_orcs"),
+    (else_try),
       #swy-- if "wild goblins" then show this illustration thingy...
       (eq, "$g_encountered_party_template", "pt_mountain_bandits"),
       (set_background_mesh, "mesh_draw_mountain_goblins"),
