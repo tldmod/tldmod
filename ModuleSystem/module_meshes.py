@@ -495,4 +495,5 @@ meshes+=[
   ("inv_slot",               0, "inv_slot",               0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   ("draw_lumberjack_orcs",   0, "draw_lumberjack_orcs",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_mound_kneel",       0, "draw_mound_kneel",       0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

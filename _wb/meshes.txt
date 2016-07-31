@@ -1,4 +1,4 @@
-375
+376
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -374,3 +374,4 @@ mesh_tp_victory_beornings 0 draw_victory_beornings 0 0 0 0 0 0 3 3 3
 mesh_mp_inventory_choose 0 mp_inventory_choose 0 0 0 0 0 0 1 1 1
 mesh_inv_slot 0 inv_slot 0 0 0 0 0 0 1 1 1
 mesh_draw_lumberjack_orcs 0 draw_lumberjack_orcs 0 0 0 0 0 0 1 1 1
+mesh_draw_mound_kneel 0 draw_mound_kneel 0 0 0 0 0 0 1 1 1

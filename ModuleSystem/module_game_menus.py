@@ -8742,7 +8742,7 @@ game_menus = [
 ( "burial_mound_respects", 0, 
   "You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.\
   There is nothing left to be done here.", "none",
-					[(set_background_mesh, "mesh_draw_mound_visit"),
+					[(set_background_mesh, "mesh_draw_mound_kneel"),
 					(store_encountered_party, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(str_store_troop_name, s1, ":hero"),
@@ -8760,7 +8760,7 @@ game_menus = [
   "You loudly swear an oath of vengeance for the death of {s4}. \
   You would relentlessly seek out the forces of {s3} and destroy them. \
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
-	[(set_background_mesh, "mesh_ui_default_menu_window"),
+	[(set_background_mesh, "mesh_draw_mound_visit"),
 	(store_encountered_party, ":mound"),
 	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 	(str_store_troop_name, s4, ":hero"),
