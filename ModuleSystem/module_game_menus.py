@@ -93,6 +93,18 @@ game_menus = [
     "^^^^^^^^^^What do you fight for?", "none", [
 	(set_background_mesh, "mesh_relief01"),
 	(set_show_messages,0),
+
+	#swy-- SWC trick: enable developer mode when the cursor is in the lower edge of the screen
+	#   -- during loading... (or even lower, if the game is in windowed mode), sneaky!
+	(try_begin),
+	  (mouse_get_position,                  pos42),
+	  (    position_get_y, ":cursor_y_pos", pos42),
+	  (                le, ":cursor_y_pos",     0),
+	  # --
+#	  (assign,             "$cheat_switch",     1),
+	  (assign,               "$cheat_mode",     1),
+	(try_end),
+
 	# item faction slots
 	(call_script,"script_set_item_faction"),
 	(assign, "$disable_skill_modifiers", 0),
