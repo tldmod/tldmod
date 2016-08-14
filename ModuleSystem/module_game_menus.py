@@ -158,7 +158,7 @@ game_menus = [
     (call_script, "script_update_troop_notes", "trp_player"), #MV fixes
     (call_script, "script_update_faction_notes", "$players_kingdom"),
 	],
-    [ ("go_forth",[],"__________Go forth upon you chosen path...",
+    [ ("go_forth",[],"__________Go forth upon your chosen path...",
        [#(troop_add_item, "trp_player","itm_dried_meat",0),#  free food for everyone
         (call_script, "script_get_player_party_morale_values"),
         (party_set_morale, "p_main_party", reg0),
