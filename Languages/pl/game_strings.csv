@@ -1265,58 +1265,58 @@ str_gondor_rumor_12|Moria? Krasnoludy tutaj kopią, czyż nie?
 str_dwarf_rumor_4|Oczywiście, że potrafimy jeździć konno. Po prostu nam się nie chce!
 str_dwarf_rumor_5|Spadaj! Nie potrzebujemy tutaj kogoś takiego jak ty. Orki są już wystarczająco złe.
 str_dwarf_rumor_6|Kogo nazywasz niskim?
-; str_dwarf_rumor_7|You should see the caves of Hornburg. If we could only mine all the gems there...
+str_dwarf_rumor_7|Powinieneś zobaczyć jaskinie Hornburga. Jeśli tylko możemy wydobywamy każdy klejnot w kopalni...
 ; str_dwarf_rumor_8|No word from our brothers in Moria for a while now. I bet they just want to keep all the riches to themselves!
 ; str_dwarf_rumor_9|Elves? What have the elves ever done for us? Ok, healing arts, but besides that? Ok, some smithing techniques, but anything else? Ok, they fight the Shadow, but besides what have they really ever done for us, I ask you?
 ; str_dwarf_rumor_10|A flagon of ale, a roast pig, a girl with a thick beard and I'm happy!
-; str_dwarf_rumor_11|Well, Brian, I'm opening a mine! What? Ugh? Well, Brian, I'm opening a mine!
-; str_dwarf_rumor_12|We, Dwarves always build more than one entry into our mines. And then there's the secret ones too.
+str_dwarf_rumor_11|Więc, Brian, otwieram kopalnię! Co? Hmmm? Więc, Brian, otwieram kopalnię!
+str_dwarf_rumor_12|My Krasnoludy zawsze budujemy więcej niż jedni wejście do naszych kopalni. Także tutaj jest jedno sekretne wejście.
 str_dwarf_rumor_13|Dziwne są drogi mężczyzn 
 ; str_dwarf_rumor_14|Unwearied then were Durin's folk beneath the mountains music woke: The harpers harped, the minstrels sang, and at the gates the trumpets rang.
-; str_dwarf_rumor_15|*humms quietly* Kill the Men! Kill the Elves! Save the gold for ourselves!
-; str_mordor_rumor_begin|Lugbúrz commands!
+str_dwarf_rumor_15|Zabić Ludzi! Zabić Elfy! Zebrać od nic nasze złoto!
+str_mordor_rumor_begin|Lugbúrz dowodzi!
 str_mordor_rumor_2|Nazgûle zniszczą świat ludzi 
-; str_mordor_rumor_3|Why aren't you working, glob! The Eye is watching!
+str_mordor_rumor_3|Czemu nie pracujesz, Glob?! Wielkie Oko patrzy!
 str_mordor_rumor_4|Wkrótce, ciemność nadejdzie! Durb-burz!
 str_mordor_rumor_5|Głodny! Gdzie jedzenie?
-; str_mordor_rumor_6|We will feast on men of the White city!
+str_mordor_rumor_6|Będziemy świętować na truchłach Ludzi z Białego Miasta!
 str_mordor_rumor_7|Mistrz trenował Olog-hai na wojnę!
-; str_mordor_rumor_8|Warg bit my finger. And it really hurts! Warg-filth!
+str_mordor_rumor_8|Warg odgryzł mi palec. Przeokrutnie boli! Wargowe ścierwo!
 str_mordor_rumor_9|Nie ufaj Sarumanowi-glob!
-; str_mordor_rumor_10|Mountain orcs are weak! We are strong! We will eat tribal snagas!
+str_mordor_rumor_10|Górskie orki są słabe! My jesteśmy silni! Zjemy tych plemiennych łajdaków!
 str_mordor_rumor_11|Uruk glob ishi krimp shar-kûk.
 str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
 str_mordor_rumor_13|Snaga ukradł moje mięso, pushdug!
 str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
 str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
 str_mordor_rumor_16|Jeśli cię obraża - zabij. Jeśli z tobą walczy - zabij. Jeśli na ciebie patrzy - zabij. Jeśli jest martwe - zjedz.
-; str_mordor_rumor_17|Saruman's uruk-hai say they don't mind the sun. Bûbhosh skai!
-; str_mordor_rumor_18|All dead, all rotten. Elves and Men and Orcs. In the Dead Marshes!
+str_mordor_rumor_17|Uruk-hai powiedział, że nie zważają na słońce! Bûbhosh skai!
+str_mordor_rumor_18|Wyszyscy nieżyją, wszyscy w rozkładzie. Elfy, Ludzie i Orkowie. Na Martwych Bagnach!
 str_mordor_rumor_19|Nie stawaj między Nazgûlem a jego ofiarą!
 ; str_mordor_rumor_20|Isengarders? The muck-rakers of a dirty little wizard! It's orc-flesh they eat, I'll warrant.
-; str_mordor_rumor_21|Mirkwood is in our hands already, but the elves don't know it yet.
+str_mordor_rumor_21|Mroczna puszcza jest teraz w naszych rękach, ale eldy jeszcze o tym nie wiedzą.
 ; str_mordor_rumor_22|Crank up yer spotting if you don't want to get ambushed in Ithilien. Those damn greenhoods...
-; str_mordor_rumor_23|Where there's a whip there's a way.
+str_mordor_rumor_23|Tam gdzie bicz tam jest też droga.
 str_isengard_rumor_begin|Rozkazy Sharkû!
 str_isengard_rumor_2|Konni są jedzeniem! Bubhosh!
-; str_isengard_rumor_3|Horse-men will get a pike surprise! Ha ha ha!
+str_isengard_rumor_3|Jeźdźiec dostał niespodziankę! Ha ha ha! Piką pod żebra!
 str_isengard_rumor_4|Saruman ma wiele sztuczek! Silną stal oraz Kamienie ognia! 
-; str_isengard_rumor_5|Wild-men stink! But Sharkû is wise. He knows how to use them.
+str_isengard_rumor_5|Dziki czlowiek cuchnie! Ale Sharkû jest mądry i wie jak takich wykorzystać.
 str_isengard_rumor_6|Ścierwo z Morii rasy olog-hai! Big! Skai!
-; str_isengard_rumor_7|Wise master make uruk-hai strong!
+str_isengard_rumor_7|Mądry wódz czyni Uruk-hai silnymi!
 str_isengard_rumor_8|Warg jest szybszy od konia! Warg pożera konia!
 str_isengard_rumor_9|Uruk-hai zdepcze konnych!
 str_isengard_rumor_10|Szlifuj! Szlifuj! Szlifuj!
 str_isengard_rumor_11|Uruk glob ishi krimp shar-kûk.
-; str_isengard_rumor_12|Burn forest! Make weapons! Kill horse-men!
-; str_isengard_rumor_13|Keep away from the berserker before he starts chopping us up!
-; str_isengard_rumor_14|I saw a berserker get speared through by a horse-man lance. He pulled the manling off his horse by the lance through his guts.
+str_isengard_rumor_12|Spalić las! Do broni! Zabić jeźdźców!
+str_isengard_rumor_13|Trzymaj się zdala od szaleńca zanim nas pozabija!
+str_isengard_rumor_14|Widziałem szaleńca przebitego kawaleryjską lancą. Wyciągnął ją przez swoje trzewia.
 ; str_isengard_rumor_15|I don't trust those little mountain orc swines. Isengarders will win this war, with or without them.
 ; str_isengard_rumor_16|By the White Hand! What's the use of sending mountain-maggots to fight for us, only half-trained! Cursed goblins and orcs of the North!
 ; str_isengard_rumor_17|I'd tickle some prisoners with my knife. Sometimes you need to make those miserable rats squeak!
 ; str_isengard_rumor_18|There's only one thing the maggots and rats of Lugbúrz can do: they can see like gimlets in the dark.
 ; str_isengard_rumor_19|We're cutting down the forest, but many orcs that go in, never come out.
-; str_isengard_rumor_20|Where there's a whip there's a way.
+str_isengard_rumor_20|Tam gdzie bicz tam jest też droga.
 str_rhun_rumor_begin|Jedźcie niczym wiatr po stepach!
 ; str_rhun_rumor_2|The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us.
 ; str_rhun_rumor_3|Three wizards came to our lands a while ago. I wonder what they are up to.

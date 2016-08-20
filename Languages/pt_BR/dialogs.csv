@@ -6,7 +6,7 @@ dlga_mutiny_talk_1:mutiny_talk_2|O que? Insubordinação durante a guerra? Isso 
 dlga_mutiny_talk_2:close_window|Nós vamos te dizer uma coisa... Os rapazes aqui acham que eu serei um melhor comandante para eles quando EU MATAR VOCÊ!
 dlga_start:troll_introduce_1|Algum problema?
 dlga_start:troll_talk_1|Ficou putinho?
-dlga_troll_introduce_1:troll_goodbye|Whoa! Um troll tagarela?!
+dlga_troll_introduce_1:troll_goodbye|Whoa! Um troll falante?!
 dlga_troll_introduce_1:close_window|Eu tenho um cavalo.
 dlga_troll_talk_1:troll_talk_2|Eu troll, mim ser troll. 
 dlga_troll_talk_1:close_window|Eu tenho um cavalo.
@@ -573,76 +573,76 @@ dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|Tudo certo. Mas só poss
 dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|Isso soa bem. Mas eu não posso dar ao luxo de contratar qualquer mais homens agora.
 dlga_tavern_mercenary_cant_lead:close_window|É uma pena. Bem, { REG3 iremos: ? Vou } ser persistente por aqui por um tempo, se você precisa contratar ninguém.
 dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|Isso soa bem. Mas eu não posso levar nenhum mais homens agora.
-; dlga_mercenary_tavern_talk:close_window|Sorry. I don't need any other men right now.
+dlga_mercenary_tavern_talk:close_window|Me desculpe. Mas eu não preciso de mais homens no momento.
 ; dlga_start:trainer_pretalk|You have survived up to Gauntlet wave {reg2}. {s4}
-; dlga_start:trainer_pretalk.1|Very good, you've eliminated all the opponents.
-; dlga_start:trainer_talk|Good day. Ready for some training today?
-; dlga_trainer_pretalk:trainer_talk|Are you ready for some training?
-; dlga_trainer_talk:trainer_combat_begin|First, tell me something about combat...
-; dlga_trainer_talk:trainer_choose_mode|I'm ready for training.
-; dlga_trainer_talk:close_window|I need to leave now. Farewell.
-; dlga_trainer_combat_begin:trainer_talk_combat|What do you want to know?
-; dlga_trainer_combat_pretalk:trainer_talk_combat|What else do you want to know?
-; dlga_trainer_talk_combat:trainer_explain_defense|Tell me about defending myself.
-; dlga_trainer_talk_combat:trainer_explain_attack|Tell me about attacking with weapons.
-; dlga_trainer_talk_combat:trainer_explain_horseback|Tell me about fighting on horseback.
-; dlga_trainer_talk_combat:trainer_pretalk|I guess I know all the theory I need. Let's talk about something else.
+dlga_start:trainer_pretalk.1|Muito bem, você eliminou todos os oponentes.
+dlga_start:trainer_talk|Bom dia. Pronto pra treinar hoje?
+dlga_trainer_pretalk:trainer_talk|Você está pronto para um treinamento?
+dlga_trainer_talk:trainer_combat_begin|Primeiro, diga-me algo sobre o combate...
+dlga_trainer_talk:trainer_choose_mode|Estou pronto para treinar.
+dlga_trainer_talk:close_window|Preciso ir. Até logo.
+dlga_trainer_combat_begin:trainer_talk_combat|O que você quer saber?
+dlga_trainer_combat_pretalk:trainer_talk_combat|O que mais você quer saber?
+dlga_trainer_talk_combat:trainer_explain_defense|Diga-me sobre me defender.
+dlga_trainer_talk_combat:trainer_explain_attack|Diga-me sobre atacar com armas.
+dlga_trainer_talk_combat:trainer_explain_horseback|Diga-me sobre luta em montaria.
+dlga_trainer_talk_combat:trainer_pretalk|Eu suponho que eu sei a teoria que eu precisava. Vamos mudar de assunto.
 dlga_trainer_explain_defense:trainer_explain_defense_2|Boa pergunta. A primeira coisa que você deve saber como um lutador é como se defender. Manter-se fora de perigo é a primeira regra de combate, e é muito mais importante do que fazer mal aos outros. Todos podem balançar uma espada ao redor e espero que cortar um pedaço de carne, mas apenas aqueles caças que são peritos em defesa vivem para contar isso.
 dlga_trainer_explain_defense_2:trainer_explain_defense_3|Agora. Defender-se é mais fácil se você está equipado com um escudo. Bloco só com seu escudo. [Mantenha pressionado o botão direito do mouse para se defender com o escudo.] Neste estado, você será capaz de desviar todos os ataques que vêm de sua frente. No entanto, você ainda estará aberto para ataques de seus lados ou as costas.
-; dlga_trainer_explain_defense_3:trainer_explain_defense_4|What if I don't have shield?
+dlga_trainer_explain_defense_3:trainer_explain_defense_4|E se eu não tiver um escudo?
 dlga_trainer_explain_defense_4:trainer_combat_pretalk|Então você terá que usar sua arma para bloquear o seu oponente. Isto é um pouco mais difícil do que defender com um escudo. Defender com uma arma, você pode bloquear contra direção apenas um ataque. Ou seja, você bloquear contra sobrecarga balanços, balanços de lado ou estocadas. Portanto você deve observar cuidadosamente o seu oponente e começar a bloquear depois ele começa seu ataque. Desta forma você será capaz de bloquear no sentido contrário do seu ataque atual. Se você começar a bloquear antes que ele faz o seu movimento, ele pode atacar em outra direção do que aquela que está a bloquear contra e marcar um sucesso.
 dlga_trainer_explain_attack:trainer_explain_attack_2|Boa pergunta. Atacar é a melhor defesa, dizem. Uma tática que muitos lutadores achar útil está tendo uma postura ofensiva e preparando sua arma de ataque, esperando o momento certo para ele balançando. [Você pronto sua arma de ataque, pressionando e segurando o botão esquerdo do mouse.]
-; dlga_trainer_explain_attack_2:trainer_explain_attack_3|That sounds useful.
+dlga_trainer_explain_attack_2:trainer_explain_attack_3|Isso soa útil.
 dlga_trainer_explain_attack_3:trainer_explain_attack_4|É uma boa tática, mas lembre-se que, seu oponente pode ver isso e tomar uma postura defensiva contra a direção você está balançando a arma. Se isso acontecer, você deve quebrar seu ataque e atacar rapidamente de outra direção [pode cancelar seu ataque atual pressionando rapidamente o botão direito do mouse].
 dlga_trainer_explain_attack_4:trainer_explain_attack_5|If my opponent is defending against the direction I am attacking from, I will break and use another direction.
-; dlga_trainer_explain_attack_5:trainer_combat_pretalk|Yes, selecting the direction you swing your weapon is a crucial skill. There are four main directions you may use: right swing, left swing, overhead swing and thrust. You must use each one wisely. [to control your swing direction with default controls, move your mouse in the direction you want to swing from as you press the left mouse button].
+dlga_trainer_explain_attack_5:trainer_combat_pretalk|Sim, escolher a direção em que você manuseia sua arma é uma habilidade crucial. Existem quatro direções que você pode usar: empunhar à direita, esquerda, sobre a cabeça e a estocada. Você deve usar cada uma delas sabiamente. [para controlar a direção do balanço com os controles padrões, mova o seu mouse na direção que você deseja manejar enquanto pressiona o botão esquerdo do mouse].
 dlga_trainer_explain_horseback:trainer_combat_pretalk|Boa pergunta. Um cavalo pode ser a arma mais poderosa de um guerreiro em combate. Dá-lhe velocidade, altura, força e iniciativa. Um monte de armas mortais se tornará ainda mais mortal a cavalo. No entanto, você deve pagar particular atenção aos inimigos cavalo montado exprimir suas lanças, como eles podem derrubar qualquer oponente de uma vez. [Para usar a lança formulada se, empunhar uma lança ou arma semelhante e acelerar seu cavalo sem pressionar botões de ataque ou defesa. depois de atingir uma velocidade, você vai diminuir sua lança. Em seguida, tentar atingir seus inimigos por manobrar seu cavalo.]
 dlga_trainer_choose_mode:trainer_choose_mode_player|Temos vários modos de formação para melhorar as habilidades dos nossos soldados. Combate o colocarão contra oponentes de um a quatro, na equipe de combate sua equipe de quatro vai enfrentar quatro, oito ou doze combatentes e, finalmente, Gauntlet é o maior desafio para qualquer guerreiro - você vai enfrentar ondas de aumentar o número de oponentes por conta própria. Corpo a corpo em massa é uma simples briga... ^ qual deles você prefere?
-; dlga_trainer_choose_mode_player:trainer_choose_opponents|Single combat.
-; dlga_trainer_choose_mode_player:trainer_choose_opponents.1|Team combat.
-; dlga_trainer_choose_mode_player:trainer_choose_weapon|Gauntlet.
-; dlga_trainer_choose_mode_player:trainer_choose_weapon.1|Mass melee.
-; dlga_trainer_choose_mode_player:trainer_pretalk|None of that, I've changed my mind.
-; dlga_trainer_choose_opponents:trainer_choose_opponents_player|Now choose the number of opponents.
+dlga_trainer_choose_mode_player:trainer_choose_opponents|Combate individual.
+dlga_trainer_choose_mode_player:trainer_choose_opponents.1|Combate de time.
+dlga_trainer_choose_mode_player:trainer_choose_weapon|Luva.
+dlga_trainer_choose_mode_player:trainer_choose_weapon.1|Combate de massa.
+dlga_trainer_choose_mode_player:trainer_pretalk|Nenhuma dessas, mudei de opinião.
+dlga_trainer_choose_opponents:trainer_choose_opponents_player|Agora escolha o número de oponentes.
 dlga_trainer_choose_opponents_player:trainer_choose_weapon|Um
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|Dois
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|Tres
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|Quatro, eu me sinto com sorte hoje .
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|Quatro
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|Oito.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|Twelve, me and my companions can take on anyone.
-; dlga_trainer_choose_opponents_player:trainer_pretalk|None, I've changed my mind.
-; dlga_trainer_choose_weapon:trainer_choose_weapon_player|And finally choose your preferred weapon type.
-; dlga_trainer_choose_weapon_player:trainer_begin_training|One-handed weapons.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.1|Two-handed weapons.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.2|Polearms.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.3|Bows.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.4|Thrown weapons.
-; dlga_trainer_choose_weapon_player:trainer_pretalk|None, I've changed my mind.
-; dlga_trainer_begin_training:close_window|Very well, here we go. Once you finish training, come back and speak to me.
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|Doze, eu e meus campanheiros podemos vencer qualquer um.
+dlga_trainer_choose_opponents_player:trainer_pretalk|Nenhum, mudei de ideia.
+dlga_trainer_choose_weapon:trainer_choose_weapon_player|E, finalmente, escolha seu tipo de arma preferido.
+dlga_trainer_choose_weapon_player:trainer_begin_training|Armas de uma mão.
+dlga_trainer_choose_weapon_player:trainer_begin_training.1|Armas de duas mãos.
+dlga_trainer_choose_weapon_player:trainer_begin_training.2|Armas de vara.
+dlga_trainer_choose_weapon_player:trainer_begin_training.3|Arcos.
+dlga_trainer_choose_weapon_player:trainer_begin_training.4|Armas de arremesso.
+dlga_trainer_choose_weapon_player:trainer_pretalk|Nenhum, mudei de ideia.
+dlga_trainer_begin_training:close_window|Muito bem, aqui vamos nós. Quando você terminar seu treinamento, volte e me procure.
 dlga_start:close_window.20|Embora com você , mendigo vil.
-; dlga_start:mayor_begin|Good day, my lord.
-; dlga_start:mayor_talk|Hello stranger, you seem to be new to {s9}. I am the guild master of the town.
-; dlga_start:mayor_begin.1|Good day, {playername}.
+dlga_start:mayor_begin|Bom dia, meu Lorde.
+dlga_start:mayor_talk|Olá estranho, você parece ser novo aqui [s9]. Eu sou o mestre de guilda da cidade.
+dlga_start:mayor_begin.1|Bom dia, [nome do jogardor].
 ; dlga_mayor_begin:lord_deal_with_night_bandits_completed|Very nice work, {playername}, you made short work of those lawless curs!^^[earned {reg14} Resource Points of {s14}]
 ; dlga_lord_deal_with_night_bandits_completed:close_window|They had it coming.
-; dlga_mayor_talk:mayor_deliver_iron|I've brought you better quality metal, {reg9} units of {s4}, when you requested {s3}.
-; dlga_mayor_talk:mayor_deliver_iron.1|Here's your metal supply, {reg9} units of {s4}.
+dlga_mayor_talk:mayor_deliver_iron|Eu lhe trouxe metais de uma melhor qualidade, {reg9} unidades de {s4}, quando você pediu {s3}.
+dlga_mayor_talk:mayor_deliver_iron.1|Aqui está seu abastecimento de metal, {reg9} unidades de {s4}.
 ; dlga_mayor_talk:mayor_deliver_iron.2|I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.
-; dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Very nice work, {playername}. Our smiths will find ways to put everything they are given to good use.
-; dlga_mayor_deliver_iron_completed:close_window|I do what I can.
-; dlga_mayor_talk:mayor_deliver_food|Here's your food, {reg9} units.
-; dlga_mayor_deliver_food:mayor_deliver_food_completed|Very nice work, {playername}, our food stores are full again and nobody will starve for now.
-; dlga_mayor_deliver_food_completed:close_window|I do what I can.
-; dlga_mayor_begin:mayor_looters_quest_response|Ah, {playername}. Have you any progress to report?
-; dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|I've killed some tribal orcs.
-; dlga_mayor_looters_quest_response:close_window|Not yet, sir. Farewell.
+dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Ótimo trabalho, {nome do jogador}. Nossos ferreiros encontrarão uma forma de colocar aquilo que foi dado em um bom uso.
+dlga_mayor_deliver_iron_completed:close_window|Eu faço o que posso.
+dlga_mayor_talk:mayor_deliver_food|Aqui está sua comida, {reg9} units.
+dlga_mayor_deliver_food:mayor_deliver_food_completed|Bom trabalho, {nome do jogador}, nosso estoque de alimento esta cheio novamente e ninguém irá passar fome agora.
+dlga_mayor_deliver_food_completed:close_window|Eu faço o que posso.
+dlga_mayor_begin:mayor_looters_quest_response|Ah, {nome do jogador}. Algum progresso para relatar?
+dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|Eu matei alguns orcs tribais.
+dlga_mayor_looters_quest_response:close_window|Ainda não, senhor. Adeus.
 ; dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, my scouts saw the whole thing. That should keep those tribal orcs at bay!^^[earned {reg14}x{reg15} Resource Points of {s14}]
 dlga_mayor_looters_quest_destroyed_2:close_window|E isso não é a única boa notícia! Graças a você, os tribais orcs ter deixado de ser uma ameaça. Nós não tivemos um único ataque relatado por algum tempo agora.  Se houver algum deles deixou, eles já fugiu ou se profundamente escondido. Isso é bom para a segurança do local!  Acho que isso conclui sua tarefa, {playername}. Obrigado e adeus.
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Você precisa de mais alguma coisa?
 dlga_mayor_begin:close_window|É um prazer vê-lo novamente {playername}. Ouvi dizer que tu salvaste aquelas pessoas com sucesso.  Direi que o nosso comandante é de confiança. ^^ [ganhou pontos de recurso {reg14} de {s14}]
 dlga_mayor_begin:move_cattle_herd_failed|Ouvi dizer que você perdeu seu caminho {s9} aquelas pessoas.  Eu tive um momento muito difícil explicar seu fracasso para o comandante aqui.  Tem algo a dizer?
-; dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|I am sorry. But I was attacked on the way.
+dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|Me desculpe. Mas eu fui atacado no caminho.
 dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|Desculpa. Essas pessoas se afastou durante a noite.
 dlga_move_cattle_herd_failed_2:close_window|Bem, era sua responsabilidade para entregá-los com segurança, não importa o que.  Você deve saber que o comandante exigiu saber quem é o responsável por essa falha.  Então disse-lhe que era você.
 dlga_mayor_begin:mayor_friendly_pretalk|Ouvi sobre seus atos. Você deu os duendes o castigo que eles mereciam.  Você é realmente tão bom como eles dizem. ^^ [ganhou pontos de recurso {reg14} de {s14}]
@@ -669,7 +669,7 @@ dlga_merchant_quest_taken:mayor_pretalk|Excelente. Eu estou contando com você e
 dlga_merchant_quest_stall:mayor_pretalk|Bem, eu vou ver a encontrar outra pessoa. Mas diga-me se mudares de ideias.
 dlga_merchant_quest_requested:merchant_quest_brief|Bem, você parece capaz o suficiente. Acho que tenho algo que você poderia fazer.
 ; dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near the {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion. I need somebody to teach those orcs a lesson. Sound like your kind of work?
-; dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Aye, I'll do it.
+dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|É, Vou fazer.
 dlga_merchant_quest_looters_choice:merchant_quest_stall|Receio que você tem que encontrar outra pessoa para isso.
 dlga_merchant_quest_looters_brief:close_window|Excelente! Você encontrará os orcs tribais de roaming em torno do campo, provavelmente querendo para invadir fazendas mais. Matar os orcs tribais e livra-da sua presença. Vou passar a palavra ao nosso chefe de abastecimento, e será recompensada para cada banda de orcs tribais, que destruir, até que todos os orcs são tratados.
 dlga_merchant_quest_requested:merchant_quest_brief.1|Obrigado por se oferecer para ajudar. Na verdade eu estava procurando por alguém entregar alguns  {s4}. Talvez você pode fazer isso...
@@ -696,35 +696,35 @@ dlga_start:merchant_caravan_intro_1|Saudações. Você deve ser a nossa escolta,
 ; dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Yes. My name is {playername}. I will lead you to {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Bem, é bom saber que não vai viajar sozinho. O que quer que façamos agora?
 dlga_start:escort_merchant_caravan_talk|Não é. Nós fizemos isso até agora... O que quer que façamos?
-; dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|You follow my lead. I'll take you through a safe route.
-; dlga_merchant_caravan_follow_lead:close_window|Alright. We'll be right behind you.
-; dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|You stay here for a while. I'll go ahead and check the road.
-; dlga_merchant_caravan_stay_here:close_window|Alright. We'll be waiting here for you.
+dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Você siga minhas ordens. Eu te levarei por uma rota mais segura.
+dlga_merchant_caravan_follow_lead:close_window|Certo. Estaremos atrás de você.
+dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Esperem aqui. Vou ali a frente verificar as estradas.
+dlga_merchant_caravan_stay_here:close_window|Certo. Estaremos esperando por você.
 dlga_merchant_quest_requested:merchant_quest_brief.6|Na verdade, eu estava procurando um comandante capaz como você. Há neste grupo de goblins particularmente problemáticos. Eles têm infestado o bairro e estão predando os comboios de abastecimento e guerreiros perdidos. Eles têm evitado todas nossas patrulhas até agora. Se alguém não parar logo, preciso solicitar ação militar séria...
 dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Preciso de alguém para caçar esses duendes problemáticos. É um trabalho perigoso. Mas eu acredito que você é a pessoa certa para isso. O que dizes?^^[você ganhará pontos de recurso {reg14} de {s14}]
-; dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Alright. I will hunt down the goblins.
-; dlga_merchant_quest_taken_bandits:close_window|You will? I am so happy to hear that. Good luck to you.
+dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|Certo. Vou caçar esses goblins.
+dlga_merchant_quest_taken_bandits:close_window|Você vai? Estou tão feliz em ouvir isso. Boa sorte.
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|Desculpe. Não tenho tempo para isso agora.
 dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Fazer eu mesmo! Há um grupo de goblins desonestos assediando o lugar, e eu estou no meu limite quanto à forma de lidar com eles. Foram emboscar e roubando bêbadas recrutas sob a proteção da noite e então desaparecendo rápido como um raio, quando os guardas finalmente aparecem. Não fomos capazes de pegar deles. Eles só atacam pessoas solitários, nunca ousar mostrar-se quando há um grupo sobre. Preciso de alguém que possa assumir estes Elfos sozinhos e ganhar. Isso parece ser a única maneira de livrar-se deles. Estás à altura da tarefa?
 dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Há um grupo de goblins desonestos assediando o lugar, e eu estou no meu limite quanto à forma de lidar com eles. Foram emboscar e roubando bêbadas recrutas sob a proteção da noite e então desaparecendo rápido como um raio, quando os guardas finalmente aparecem. Não fomos capazes de pegar deles. Eles só atacam pessoas solitários, nunca ousar mostrar-se quando há um grupo sobre. Preciso de alguém que possa assumir estes Elfos sozinhos e ganhar. Isso parece ser a única maneira de livrar-se deles. Estás à altura da tarefa?
 ; dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|Killing rogue goblins? Why, certainly!
-; dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, I'm not interested.
+dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|Não, não estou interessado.
 ; dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|That takes a weight off my shoulders, {playername}. You can expect a fine reward if you come back successful. Just don't get yourself killed, eh?
 dlga_merchant_quest_requested:merchant_quest_brief.7|O comandante da guarnição aqui está à procura de um guerreiro de recursos para levar um grupo de {s12} pata {s13}.
 dlga_merchant_quest_brief:move_cattle_herd_quest_brief|O grupo deve chegar ao {s13} {reg6} dias. Quanto mais cedo é melhor, muito melhor, mas deve ser absolutamente tardar {reg6} dias.  Você pode fazer isso?^ [você ganhará pontos de recurso {reg14} de {s14}]
 ; dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Aye, I can take them to {s13}.
-; dlga_move_cattle_herd_quest_brief:merchant_quest_stall|I am sorry, but no.
+dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Sinto muito, mas não.
 ; dlga_move_cattle_herd_quest_taken:mayor_pretalk|Splendid. You can find them right outside the town. After you take them to {s13}, return back to me and I will give you your pay.
 ; dlga_merchant_quest_requested:mayor_pretalk|Thanks, commander, but we don't need anything else right now. I'll let you know when we do.
-; dlga_goods_merchant_talk:goods_trade_requested|I want to buy a few items... and perhaps sell some.
-; dlga_goods_trade_requested:goods_trade_completed|Sure, sure... Here, have a look at my stock...
+dlga_goods_merchant_talk:goods_trade_requested|Eu quero comprar alguns itens... e talvez vender alguns.
+dlga_goods_trade_requested:goods_trade_completed|Claro, claro... Aqui, dê uma olhada no meu estoque...
 dlga_goods_trade_completed:goods_merchant_talk|Algo mais?
 ; dlga_goods_merchant_talk:close_window|Nothing. Thanks.
-; dlga_start:troublesome_bandits_intro_1|What? We will kill. We will take your food and mounts and eat 'em. We will eat you.
-; dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|You'll regret causing trouble around these parts. You should have never left your mountain caves.
-; dlga_troublesome_bandits_intro_2:close_window|Kill now! Eat later!
-; dlga_start:fangorn_orcs_intro_1|Eh? The Old Man won't be happy if you interrupt the work of his servants.
-; dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|Stop harming this forest and leave, or you'll regret it!
+dlga_start:troublesome_bandits_intro_1|O quê? Nós vamos te matar. Vamos pegar suas comidas e montarias e vamos comê-los. Vamos comer você.
+dlga_troublesome_bandits_intro_1:troublesome_bandits_intro_2|Você irá se arrepender por ter causado problemas por aqui. Você não devia ter deixado sua caverna nas montanhas
+dlga_troublesome_bandits_intro_2:close_window|Matar agora! Comer depois!
+dlga_start:fangorn_orcs_intro_1|Eh? O velho não irá ficar feliz se você interromper o trabalho de seus servos.
+dlga_fangorn_orcs_intro_1:fangorn_orcs_intro_2|Pare de incomodar essa floresta e saia, ou irá se arrepender!
 ; dlga_fangorn_orcs_intro_2:close_window|Har-har! We'll cut and burn as we please! After we are done with you...
 ; dlga_start:disbanded_troop_ask|Do you want us to follow you?
 ; dlga_disbanded_troop_ask:disbanded_troop_join|Yes. Let us ride together.

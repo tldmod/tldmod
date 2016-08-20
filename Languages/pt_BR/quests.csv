@@ -44,23 +44,23 @@ qst_report_to_army|Reporte para {s13}
 qst_report_to_army_text|Nenhum.
 qst_deliver_cattle_to_army|Entregar {reg3} unidades de alimentos para {s13}
 qst_deliver_cattle_to_army_text|Nenhum.
-qst_join_siege_with_army|Junte-se à cerco de {s14}
+qst_join_siege_with_army|Junte-se ao cerco de {s14}
 qst_join_siege_with_army_text|Nenhum.
-; qst_scout_waypoints|Scout {s13}, {s14} and {s15}
+qst_scout_waypoints|Escolte {s13}, {s14} e {s15}
 qst_scout_waypoints_text|Nenhum.
 qst_move_cattle_herd|Mover {s12} para {s13}
-qst_move_cattle_herd_text|O mais velho dos {s10} pediu para mover alguns {s12} para {s13}.
-qst_escort_merchant_caravan|Trem de fornecer escolta para {s8}
+qst_move_cattle_herd_text|O ancião de {s10} pediu para mover alguns {s12} para {s13}.
+qst_escort_merchant_caravan|Escolte o vagão de suprimentos para {s8}
 qst_escort_merchant_caravan_text|Escoltar o comboio de abastecimento para {s8}.
 qst_deliver_wine|\nentregar {reg5} unidades de {s6} para {s4}
 qst_deliver_wine_text|O {s9} de {s3}pediu -lhe para entregar {reg5} unidades de  {s6} para {s4} em 7 dias .
-qst_troublesome_bandits|Caçar Problemáticos Goblins
+qst_troublesome_bandits|Caçar os goblins problemáticos
 qst_troublesome_bandits_text|O  {s9} de {s4} pediu para caçar os goblins problemáticos nos arredores da cidade.
 qst_deal_with_looters|Lide com Orcs Tribais
 qst_deal_with_looters_text|O mais velho dos {s4} pediu para lidar com várias bandas de orcs tribais ao redor {s4}.
 qst_deal_with_night_bandits|Lidar com Rogue Goblins
 qst_deal_with_night_bandits_text|The Elder of {s14}  pediu-lhe para lidar com goblins  em {s14}.
-qst_deliver_food|Fornecem{s3} com {reg5} Unidades de alimentos
+qst_deliver_food|Forneça {s3} com {reg5} Unidades de alimentos
 qst_deliver_food_text|O {s9} do {s3} pediu-lhe para trazê-lo {reg5} unidades de alimentos em 10 dias.
 qst_deliver_iron|Fornecem {s3} com {reg5} unidades de {s6}
 qst_deliver_iron_text|O {s9} do  {s3} pediu-lhe para trazê-lo {reg5} unidades de {s6}.

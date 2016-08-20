@@ -174,7 +174,7 @@ dlga_start:lord_start.1|Rád tě zase vidím, {playername}...
 dlga_start:lord_start.2|Znovu se setkáváme, {playername}...
 dlga_start:lord_meet_neutral|Známe se?
 dlga_lord_meet_neutral:lord_intro|Jmenuji se {playername}.
-; dlga_lord_meet_neutral:lord_intro.1|My name is {playername}. At your service.
+dlga_lord_meet_neutral:lord_intro.1|Moje jméno je {playername}. K vašim službám.
 dlga_lord_meet_enemy:lord_intro|Jmenuji se {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Říkají mi {playername}. Zapamatuj si to, hodně o mě uslyšíš.
 ; dlga_start:lord_start.3|Well, {playername}...
@@ -385,9 +385,9 @@ dlga_lord_request_mission_ask:lord_tell_mission|Úkol?
 ; dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|What do you command me to do about it, my lord?
 ; dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|These weapons would increase the effectiveness of our armies, but above all they will lift the spirits of our men. You'll have to find these spears. You'll have to go ask the dwarves for permission to search for the spears in the deeps of the Lonely Mountain. Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?
 ; dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|I fear no orcs nor trolls! I will find these spears for you, my lord.
-; dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|I'm afraid I can't help you, my lord.
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|Bojím se, nemohu vám pomoct můj lorde.
 ; dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|I see that discretion is the better part of your valor. Maybe you should stick to scouting duties.
-; dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Good luck then!
+dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Tak hodně štěstí!
 ; dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|There is an important service you can deliver to our people, {playername}.
 ; dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. Though he is a mortal, he has become one of the enemies greatest pupils in the use of arcane rituals and he represents a great threat to our people. You must hunt him down and destroy him!
 ; dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Where can I find the sorcerer, my Lady?
@@ -403,7 +403,7 @@ dlga_lord_request_mission_ask:lord_tell_mission|Úkol?
 ; dlga_lord_tell_mission:lord_mission_deliver_message.1|I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently. If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.
 ; dlga_lord_tell_mission:lord_mission_told|There is an urgent matter... My messenger is due to report on our battle plans to commanders in {s14}. His trip has been postponed several times already with all the trouble on the roads, but this time he must get through. So, I want to at least make sure he's well-guarded. I trust you well, {playername} so I would be very grateful if you could escort him to {s14} and make sure he arrives safe and sound.
 ; dlga_lord_tell_mission:lord_mission_told.1|I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look,{reg3?she:he} may be able to convince him to give his consent to an operation.Please, I will be deeply indebted to you if you grant me this request.
-; dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|How many men do you need?
+dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Kolik mužů potřebujete?
 ; dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|If you can raise {reg1} {s14} and bring them to me, that will probably be enough.
 ; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Of course, {s65}. Give me {reg1} fresh recruits and I'll train them to be {s14}.
 ; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|I am too busy these days to train anyone.
@@ -483,16 +483,16 @@ dlga_castle_guard_intro_2:castle_guard_intro_2b|Ne, své zbraně nikomu nedám.
 ; dlga_castle_guard_intro_2b:close_window|Then you can't go in.
 dlga_start:castle_gate_guard_talk|Co si prejete?
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|Ano?
-; dlga_castle_gate_guard_talk:castle_gate_open|We need shelter for the night. Will you let us in?
+dlga_castle_gate_guard_talk:castle_gate_open|Potřebujeme na noc přístřeší. Pustíte nás dovnitř?
 ; dlga_castle_gate_guard_talk:request_meeting_castle_lord|I want to speak with the lord of the castle.
 ; dlga_castle_gate_guard_talk:request_meeting_other|I want to speak with someone in the castle.
 dlga_castle_gate_guard_talk:close_window|[Odejít.]
 ; dlga_request_meeting_castle_lord:close_window|Wait here. {s2} will see you.
 ; dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|My lord is not here now.
-; dlga_request_meeting_other:request_meeting_3|Who is that?
+dlga_request_meeting_other:request_meeting_3|Kdo to je?
 dlga_request_meeting_3:close_window|To je jedno.
 ; dlga_request_meeting_4:request_meeting_5|Wait there. I'll send him your request.
-; dlga_request_meeting_5:request_meeting_6|I'm waiting...
+dlga_request_meeting_5:request_meeting_6|Já čekám...
 ; dlga_request_meeting_6:close_window|All right. {s2} will talk to you now.
 ; dlga_request_meeting_6:close_window.1|{s2} says he will not see you. Begone now.
 ; dlga_castle_gate_open:close_window|My lord {s2} will be happy to see you {sir/madam}. Come on in. I am opening the gates for you.
@@ -646,7 +646,7 @@ dlga_start:close_window.20|Táhni, odporný žebráku.
 ; dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|I am sorry. Those people wandered off during the night.
 ; dlga_move_cattle_herd_failed_2:close_window|Well, it was your responsibility to deliver them safely, no matter what.  You should know that the commander demanded to know who is responsible for this failure.  So I told him it was you.
 ; dlga_mayor_begin:mayor_friendly_pretalk|I have heard about your deeds. You have given those goblins the punishment they deserved.  You are really as good as they say.^^[earned {reg14} Resource Points of {s14}]
-; dlga_mayor_begin:mayor_talk|What can I do for you?
+dlga_mayor_begin:mayor_talk|Co pro vás mohu udělat?
 ; dlga_mayor_friendly_pretalk:mayor_talk|Now... What else may I do for you?
 dlga_mayor_pretalk:mayor_talk|Ano?
 ; dlga_mayor_talk:mayor_info_begin|Can you tell me about what you do?
@@ -655,7 +655,7 @@ dlga_mayor_pretalk:mayor_talk|Ano?
 dlga_mayor_talk:merchant_quest_about_job|Ohledně toho úkolu...
 dlga_mayor_talk:close_window|[Odejít.]
 ; dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
-; dlga_mayor_info_talk:mayor_info_lord|Who rules this town?
+dlga_mayor_info_talk:mayor_info_lord|Kdo vládne tomuto městu?
 ; dlga_mayor_info_lord:mayor_info_talk|Our lord is {s10}.
 ; dlga_mayor_info_talk:mayor_pretalk|That's all I need to know. Thanks.
 ; dlga_merchant_quest_about_job:merchant_quest_about_job_2|What about it?
@@ -777,7 +777,7 @@ dlga_town_dweller_talk:close_window|[Odejít.]
 ; dlga_start:player_castle_guard_talk|Yes, Commander?
 ; dlga_player_castle_guard_talk:player_castle_guard_talk_2|How goes the watch, soldier?
 ; dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|All is quiet Commander. Nothing to report.
-; dlga_player_castle_guard_talk_3:close_window|Good. Keep your eyes open.
+dlga_player_castle_guard_talk_3:close_window|Dobře. Mějte své oči otevřené.
 ; dlga_start:close_window.24|Good day, Commander. It's good having you here in {s10}.
 ; dlga_start:close_window.25|Mind your manners around here and we'll have no trouble.
 ; dlga_start:hall_guard_easter_egg|Ah, just past midnight. You know, an unusual incident happened recently - do you want to hear about it?
