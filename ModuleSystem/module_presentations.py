@@ -2869,49 +2869,61 @@ presentations = [
 
 ]
 
+from module_info import wb_compile_switch
+
 if wb_compile_switch==1:
   presentations+=[
-    ("game_start", mesh_load_window, 0, [
-          (ti_on_presentation_load,
-           [(presentation_set_duration, 999999),
-            (set_fixed_point_multiplier, 1000),
-            
-            #swy-- place the main menu statue in WB, manually, as there is no hardcoded mesh as in 1.011.
-            (create_mesh_overlay, ":mmback", "mesh_main_menu_background"),
-            (position_set_x, pos1, 0),
-            (position_set_y, pos1, 0),
-            (overlay_set_position, ":mmback", pos1),
-            
-            (create_mesh_overlay, ":mmstatue", "mesh_main_menu_statue"),
-            (position_set_x, pos1, 0),
-            (position_set_y, pos1, 0),
-            (overlay_set_position, ":mmstatue", pos1),
-            ])
-    ]),
-    ("game_custom_battle_designer", mesh_load_window, 0, [
-          (ti_on_presentation_load,
-           [#swy-- boom! direct shortcut to the vanilla quick battle menu! how cool is that?
-            (jump_to_menu, "mnu_start_game_3"),
-            ])
-    ]),
-    ("game_escape", mesh_load_window, 0, [
-          (ti_on_presentation_load,
-           [(presentation_set_duration, 999999),
-            (set_fixed_point_multiplier, 1000),
-            
-            #swy-- place the random escape menu illustrations in WB, manually, as there are no hardcoded meshes as in 1.011.            
-            (create_mesh_overlay, ":emback", "mesh_main_menu_background"),
-            (position_set_x, pos1, 0),
-            (position_set_y, pos1, 0),
-            (overlay_set_position, ":emback", pos1),
-            
-            (store_random_in_range, ":random_bg_pic", mesh_pic_mb_warrior_1, mesh_pic_mb_warrior_4 + 1),
+    ("game_start", mesh_load_window, 0,
+    [
+      (ti_on_presentation_load,
+       [
+         (presentation_set_duration, 999999),
+         (set_fixed_point_multiplier,  1000),
 
-            (create_mesh_overlay, ":empic", ":random_bg_pic"),
-            (position_set_x, pos1, 0),
-            (position_set_y, pos1, 0),
-            (overlay_set_position, ":empic", pos1),
-            ])
+         #swy-- place the main menu statue in WB, manually, as there is no hardcoded mesh as in 1.011.
+         (create_mesh_overlay, ":mmback", "mesh_main_menu_background"),
+         (position_set_x, pos1, 0),
+         (position_set_y, pos1, 0),
+         (overlay_set_position, ":mmback", pos1),
+
+         (create_mesh_overlay, ":mmstatue", "mesh_main_menu_statue"),
+         (position_set_x, pos1, 0),
+         (position_set_y, pos1, 0),
+         (overlay_set_position, ":mmstatue", pos1),
+       ]),
+    ]),
+
+    ("game_custom_battle_designer", mesh_load_window, 0,
+    [
+      (ti_on_presentation_load,
+       [
+         (presentation_set_duration, 0),
+
+         #swy-- boom! direct shortcut to the vanilla quick battle menu! how cool is that?
+         (jump_to_menu, "mnu_start_game_3")
+       ])
+    ]),
+
+    ("game_escape", mesh_load_window, 0,
+    [
+      (ti_on_presentation_load,
+       [
+         (presentation_set_duration, 999999),
+         (set_fixed_point_multiplier,  1000),
+
+         #swy-- place the random escape menu illustrations in WB, manually, as there are no hardcoded meshes as in 1.011.
+         (create_mesh_overlay, ":emback", "mesh_main_menu_background"),
+         (position_set_x, pos1, 0),
+         (position_set_y, pos1, 0),
+         (overlay_set_position, ":emback", pos1),
+
+         (store_random_in_range, ":random_bg_pic", mesh_pic_mb_warrior_1, mesh_pic_mb_warrior_4 + 1),
+
+         (create_mesh_overlay, ":empic", ":random_bg_pic"),
+         (position_set_x, pos1, 0),
+         (position_set_y, pos1, 0),
+         (overlay_set_position, ":empic", pos1),
+       ])
     ]),
 
 ###Troop Presentation - rubik source #Kham implement
