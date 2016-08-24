@@ -17,8 +17,8 @@ def save_tracks():
   file = open(export_dir + "music.txt","w")
   file.write("%d\n"%len(tracks))
   for track in tracks:
-    if (not os.path.isfile(export_dir + "Music/" + track[1]) and (track[2] & mtf_module_track)):
-        print("%s not found in the mod, check case sensitivity." % track[1])
+    #if (not os.path.isfile(export_dir + "Music/" + track[1]) and (track[2] & mtf_module_track)):
+    #    print("%s not found in the mod, check case sensitivity." % track[1])
 
     file.write("%s %d %d\n"%(track[1], track[2], (track[2] | track[3])))
   file.close()
