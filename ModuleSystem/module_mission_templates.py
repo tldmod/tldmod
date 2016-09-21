@@ -39,7 +39,7 @@ pilgrim_disguise  = [itm_blackroot_hood, itm_pilgrim_disguise, itm_practice_staf
 
 af_castle_lord    = af_override_horse | af_override_weapons | af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
-af_prisoner       = af_override_horse | af_override_weapons | af_override_head | af_override_gloves| af_override_gloves| af_override_foot
+af_prisoner       = af_override_horse | af_override_weapons | af_override_head | af_override_gloves | af_override_gloves | af_override_foot
 
 ####################################################################################################################
 ## CUSTOM CAMERA by dunde, modified to add fixed-camera + implemented by Kham (WB Only)
@@ -129,24 +129,30 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   #-- camera_raise
   (0, 0, 0,
   [
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
     (key_is_down, "$key_camera_height_plus"),
     (eq,          "$cam_mode",  1)
   ],
   [
     (val_add, "$g_camera_z",    1),
-    (neg|key_is_down, key_left_shift),
+    (this_or_next|neg|key_is_down, key_right_shift),
+    (             neg|key_is_down, key_left_shift),
     (val_add, "$g_camera_z",    9)
   ]),
 
   #-- camera_lower
   (0, 0, 0,
   [
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
     (key_is_down, "$key_camera_height_min"),
     (eq,          "$cam_mode",  1)
   ],
   [
     (val_sub, "$g_camera_z",    1),
-    (neg|key_is_down, key_left_shift),
+    (this_or_next|neg|key_is_down, key_right_shift),
+    (             neg|key_is_down, key_left_shift),
     (val_sub, "$g_camera_z",    9),
     (val_max, "$g_camera_z",   50)
   ]),
@@ -154,24 +160,30 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   #--camera_zoom_out
   (0, 0, 0,
   [
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
     (key_is_down, "$key_camera_zoom_min"),
     (eq,          "$cam_mode",  1)
   ],
   [
     (val_sub, "$g_camera_y",    1),
-    (neg|key_is_down, key_left_shift),
+    (this_or_next|neg|key_is_down, key_right_shift),
+    (             neg|key_is_down, key_left_shift),
     (val_sub, "$g_camera_y",    9),
   ]),
 
   #-- camera_zoom_in
   (0, 0, 0,
   [
-    (key_is_down, "$key_camera_zoom_plus"),
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
+    (             key_is_down, "$key_camera_zoom_plus"),
     (eq, "$cam_mode",           1)
   ],
   [
     (val_add, "$g_camera_y",    1),
-    (neg|key_is_down, key_left_shift),
+    (this_or_next|neg|key_is_down, key_right_shift),
+    (             neg|key_is_down, key_left_shift),
     (val_add, "$g_camera_y",    9),
     (val_min, "$g_camera_y",  -50),
   ]),
@@ -180,6 +192,8 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   #-- camera_set
   (0, 0, 0,
   [
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
     (key_clicked, "$key_camera_toggle"),
     (lt, "$cam_mode", 3),
     (neq, "$shoot_mode", 1)
@@ -215,6 +229,8 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   #-- camera_cycle_forwards
   (0, 0, 0,
   [
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
     (key_clicked, "$key_camera_next"),
     (try_begin),
       (eq, "$cam_mode",         3),
@@ -229,6 +245,8 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   #-- camera_cycle_backwards
   (0, 0, 0,
   [
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
     (key_clicked, "$key_camera_prev"),
     (try_begin),
       (eq, "$cam_mode",         3),

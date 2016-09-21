@@ -93,13 +93,13 @@ info_pages = [
 
   Controls:
 
-  Press "END" to switch camera modes: Default Camera / Fixed Camera / Free-Mode Camera
+  Press the Ctrl+End keys together to switch between the three different camera modes: Default Camera / Fixed Camera / Free-Mode Camera.
   
-  When in "Free-Mode Cameara", Press and Hold "PAGE UP / PAGE DOWN" to adjust camera height (tilt)
+  When in "Free-Mode Camera", Press and hold Ctrl and Page Up (or Page Down) to adjust camera height (Tilt).
 
-  When in "Free-Mode Cameara", Press and Hold "NUMPAD + / NUMPAD -" to adjust camera distance (zoom)
+  When in "Free-Mode Camera", Press and hold Ctrl and Numpad + (or Numpad -) to adjust camera distance (Zoom).
 
-  When in "Free-Mode Cameara", Press and Hold "LEFT SHIFT" when moving/zooming the camera to enable smoothing
+  Additionally, you can also press Shift while moving/zooming the camera to enable smoothing.
 
 
   '''),

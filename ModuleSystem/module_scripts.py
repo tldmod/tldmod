@@ -1821,7 +1821,7 @@ scripts = [
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
-	] or []) + [					  
+	] or []) + [
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
@@ -20431,13 +20431,13 @@ if is_a_wb_script==1:
 
  #### Custom Camera Scripts by dunde, implemented by Kham
 ("init_camera",
- [(assign, "$key_camera_toggle",key_end),                #END button to toggle camera mode
-  (assign, "$key_camera_next",key_right),                #right key to jump to next bot
-  (assign, "$key_camera_prev",key_left),                 #left key to jump to prev bot
-  (assign, "$key_camera_zoom_plus",key_numpad_plus),     #Num + to zoom in
-  (assign, "$key_camera_zoom_min",key_numpad_minus),     #Num - to zoom out
-  (assign, "$key_camera_height_plus",key_up),
-  (assign, "$key_camera_height_min",key_down),
+ [(assign, "$key_camera_toggle",      key_end),             # «End» key to toggle camera mode.
+  (assign, "$key_camera_next",        key_right),           # «Right» key to jump to next bot.
+  (assign, "$key_camera_prev",        key_left),            # «Left» key to jump to prev bot.
+  (assign, "$key_camera_zoom_plus",   key_numpad_plus),     # «Num +» to zoom in.
+  (assign, "$key_camera_zoom_min",    key_numpad_minus),    # «Num -» to zoom out.
+  (assign, "$key_camera_height_plus", key_up),
+  (assign, "$key_camera_height_min",  key_down),
   (assign, "$cam_free", 0),
   (assign, "$g_camera_z", 300),       
   (assign, "$g_camera_y", -1000),
