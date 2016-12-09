@@ -16,6 +16,19 @@ import glob
 import codecs
 
 db = ""
+db_aval = ""
+
+with open("../../Data/font_data.xml") as f:
+ for line in f:
+  if line.startswith("<character"):
+    split = line.split()
+    db_aval = db_aval + chr(int( split[1].split("=")[1].strip('"') ))
+
+db_aval = "".join(set(db_aval)) # remove duplicates
+db_aval = ''.join(sorted(db_aval)) # sort them
+
+print("Available glyphs in the font (%u): %s" % (len(db_aval), "".join(db_aval)))
+
 
 for file in sorted(glob.glob('*.csv')):
     print(file)
@@ -31,3 +44,11 @@ for file in sorted(glob.glob('*.csv')):
 db = "".join(set(db)) # remove duplicates
 db = ''.join(sorted(db)) # sort them
 print("==========\r\nDB of used glyphs (" + "%u" % len(db) + "): " + db)
+
+#print((list(set(db) - set(db_aval))))
+#exit()
+
+db_intersection = "".join(list(set(db) - set(db_aval)))
+db_intersection = ''.join(sorted(db_intersection)) # sort them
+
+print("==========\r\nDB of missing glyphs that won't be displayed by the font (" + "%u" % len(db_intersection) + "): " + db_intersection)
