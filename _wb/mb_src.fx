@@ -5625,26 +5625,89 @@ struct PS_INPUT_FONT_MTARINI
 	float4 Color				: COLOR0;
 	float3 Tex0					: TEXCOORD0;
 };
-PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In) 
-{ 
 
-    float4 sample = tex2D(FontTextureSampler, In.Tex0.xy);
-    PS_OUTPUT Output;
-	float bord = clamp((1.0-sample.r)*2.0,0,1);
-	float bordColor =  In.Tex0.z;
-	Output.RGBColor.a = In.Color.a *(bord*(0.40+0.30*(1.0f-sample.g)) + sample.a);
-	
-	float isB = (1.0f-sample.a) * (1.0f-sample.g);
-	Output.RGBColor.rgb = In.Color.rgb * (1-isB) + float3(bordColor,bordColor,bordColor)*(isB);
-	return Output;
+/* inner and outer contours, 1.0/255 is invisibly thin <--> 0.0/0 the boldest */
+float intour( float d, float w ){
+    return smoothstep(0.52 - w, 0.52 + w, d);
 }
+float contour( float d, float w ){
+    return smoothstep(0.30 - w, 0.45 + w, d);
+}
+
+/* just simple macros, could be a bit less messy */
+#define    samp(uv, w)  contour( tex2D(FontTextureSampler,uv).r, w );
+#define intsamp(uv, w)   intour( tex2D(FontTextureSampler,uv).r, w );
+
+PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
+{
+ /* supersampled signed font distance technique (with partial derivatives) by /u/glacialthinker on reddit
+    https://www.reddit.com/r/gamedev/comments/2879jd/just_found_out_about_signed_distance_field_text/cicatot/ */
+
+    PS_OUTPUT Output;
+
+    float2 uv = In.Tex0.xy;
+
+    float dist = tex2D( FontTextureSampler, uv ).r;
+    float width = fwidth(dist);
+
+    float alpha = contour( dist, width );
+
+    // ------- (comment this block out to get your original behavior)
+    // Supersample, 4 extra points
+    const float dscale = 0.354; // half of 1/sqrt2; you can play with this
+    float2 duv = dscale * (ddx(uv) + ddy(uv));
+    float4 box = float4(uv-duv, uv+duv);
+
+    float asum = samp( box.xy, width )
+               + samp( box.zw, width )
+               + samp( box.xw, width )
+               + samp( box.zy, width );
+
+    // weighted average, with 4 extra points having 0.5 weight each,
+    // so 1 + 0.5*4 = 3 is the divisor
+    alpha = (alpha + 0.5 * asum) / 3.;
+    // -------
+
+    float i_ntour = intour( dist, width );
+
+    float isum = intsamp( box.xy, width )
+               + intsamp( box.zw, width )
+               + intsamp( box.xw, width )
+               + intsamp( box.zy, width );
+
+    i_ntour = (i_ntour + 0.5 * isum) / 3.;
+
+    Output.RGBColor = float4
+    ( /* mix pure black and the text color using the inner contour mask.
+         modulate the glyph's outer contour by the amount of transparency sent from the engine */
+      lerp(float3(0.0, 0.0, 0.0).rgb, In.Color.rgb, i_ntour), alpha * In.Color.a
+    );
+
+    return Output;
+}
+
+#undef    samp
+#undef intsamp
+
 
 technique font_outline_mtarini
 {
    pass P0
    {
       VertexShader = compile vs_2_0 vs_font_mtarini();
-      PixelShader = compile ps_2_0 ps_font_outline_mtarini();
+      /* turns out that ps_2_a is actually the EXTENDED ps_2_x instruction format (???), confusing as hell!
+         searched around for hours why ps_2_x isn't available outside of the manual assembler because i
+         needed this profile for the partial derivative intrinsics (ddx/ddy/fwidth).
+
+         i thought that ps_2_a was the earlier revision of ps_2_b, but actually
+         ps_2_a is the advanced version of the more limited ps_2_b,
+         with ps_2_0 being the lame version of everything.
+
+         WRONG: ps_2_0 -> ps_2_a -> ps_2_b -> ps_2_x
+         RIGHT: ps_2_0 -> ps_2_b -> ps_2_a (ps_2_x)
+
+         WTH ??? */
+      PixelShader  = compile ps_2_a ps_font_outline_mtarini();
    }
 }
 
