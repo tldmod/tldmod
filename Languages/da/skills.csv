@@ -1,0 +1,48 @@
+skl_trade|Bargevinst
+skl_trade_desc|Niveauer af denne færdighed gør det muligt at hævde mere udstyr for mindre ressource points. (Hold færdighed)
+skl_leadership|Lederskab
+skl_leadership_desc|Hvert point forhøjer det maksimale nummer of tropper du kan kommandere med 5, forhøjer dit holds morale og reducer troppernes løn med 5%%. (Leder færdighed)
+skl_prisoner_management|Fange Administration
+skl_prisoner_management_desc|Hvert niveau af denne færdighed forhøjer dit maksimale nummer af fanger med %d. (Leder færdighed)
+skl_persuasion|Overbevisning
+skl_persuasion_desc|Denne færdighed hjælper dig med at få andre personer til at acceptere dit synspunkt. (Personlig færdighed)
+skl_engineer|Lave
+skl_engineer_desc|Hvert point til denne færdighed nedsætter både tiden at lave og opgradere udstyr, og det tillader bedre kvalitet opgraderinger. (Hold færdighed)
+skl_first_aid|Førstehjælp
+skl_first_aid_desc|Helte genvinder 5%% per færdigheds niveau af liv-points tabt under missioner. (Hold færdighed) 
+skl_surgery|Kirurgi
+skl_surgery_desc|Hvert point til denne færdighed giver en 4%% chance at en dødelig ramt hold medlem vil blive skadet ildstedet for dræbt. (Hold færdighed)
+skl_wound_treatment|Sår Behandling
+skl_wound_treatment_desc|Holdets helbrednings hastighed stiger med 20%% per niveau til denne færdighed. (Hold færdighed)
+skl_inventory_management|Lagerstyring
+skl_inventory_management_desc|Forhøjer inventarlistens kapacitet med +6 per færdigheds niveau. (Leder færdighed) 
+skl_spotting|Opdage
+skl_spotting_desc|Holdets syns rækkevide er forhøjet med 10%% per færdigheds niveau. (Hold færdighed)
+skl_pathfinding|Sti-finder
+skl_pathfinding_desc|Holdets kort hastighed er forhøjet med 3%% per færdighed niveau. (Hold færdighed) 
+skl_tactics|Taktik
+skl_tactics_desc|Hvert andet niveau af denne færdighed forhøjer start kamp fordel med 1. (Hold færdighed)
+skl_tracking|Spore
+skl_tracking_desc|Spor bliver mere informative. (Hold færdighed)
+skl_trainer|Træner
+skl_trainer_desc|Hver dag, hver helt med denne færdighed tilføjer erfaring til alle andre medlemmer af holdet hvis niveau er lavere end hans/hendes. Erfaring givet forløber således:{0,4,10,16,23,30,38,46,55,65,80}. (Personlig færdighed)
+skl_looting|Plyndring
+skl_looting_desc|Denne færdighed forhøjer mængden af krigsbytte opnået med 10%% per færdigheds niveau. (Hold færdighed)
+skl_horse_archery|Ridende Bueskydning
+skl_horse_archery_desc|Reducer skade og nøjagtigheds straf for bueskydning og kastning nåd du rider. (Personlig færdighed)
+skl_riding|Ridning
+skl_riding_desc|Tillader dig at ride heste (eller andre bæster) af højere sværhedsgrader og forhøjer din ridnings hastighed og manøvre. (Personlig færdighed) 
+skl_athletics|Atletik
+skl_athletics_desc|Forbedre din løbe hastighed. (Personlig færdighed)
+skl_shield|Skjold
+skl_shield_desc|Reducer skade til skjold (med 8%% per færdigheds niveau) og forbedre skjold hastighed og dækning. (Personlig færdighed)
+skl_weapon_master|Våben mester
+skl_weapon_master_desc|Gør der nemmere at lære våben færdighed og forhøjer færdigheds grænse. Grænsen går således: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personlig færdighed)
+skl_power_draw|Magt Træk
+skl_power_draw_desc|Lader karakteren brugt mere kraftfulde buer. Hvert point til denne færdighed (op til fire plus kraft-træk betingelse af buen) forhøjer buens skade med 14%%. (Personlig færdighed)
+skl_power_throw|Magt Kast
+skl_power_throw_desc|Hvert point til denne færdighed forhøjer kaste skaden med 10%%.(Personlig færdighed)
+skl_power_strike|Magt slag
+skl_power_strike_desc|Hvert point til denne færdighed forhøjer nærkamp skade med 8%%. (Personlig færdighed)
+skl_ironflesh|Jernkød
+skl_ironflesh_desc|Hvert point til denne færdighed forhøjer liv-points med +2. (Personlig færdighed)

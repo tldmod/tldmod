@@ -1,0 +1,906 @@
+itm_horse_meat|Carne de cavalo
+itm_practice_sword|Espada de treino
+itm_arena_lance|Lança
+itm_practice_staff|Bastão de madeira
+itm_practice_bow|Arco de treino
+itm_wooden_javelin|Dardo de madeira
+itm_human_meat|Carne Humana
+itm_maggoty_bread|Pão de vermes
+itm_cram|Ração Cram
+itm_lembas|Lembas
+itm_smoked_fish|Peixe Defumado
+itm_dried_meat|Carne seca
+itm_cattle_meat|Bife
+itm_grain|Trigo
+itm_tools|Ferramentas
+itm_siege_supply|Suprimentos
+itm_quest_wine|Vinho
+itm_quest_ale|Cerveja Ale
+itm_metal_scraps_bad|Pequenas sucatas de metal
+itm_metal_scraps_medium|Sucatas de metal utilizáveis
+itm_metal_scraps_good|Sucatas de metal de boa qualidade
+itm_oliphant|Olifante
+itm_sumpter_horse|Cavalo de carga
+itm_saddle_horse|Cavalo de montaria
+itm_steppe_horse|Cavalo de estepe
+itm_courser|Corcel
+itm_hunter|Caçador
+itm_pony|Pônei
+itm_arnor_warhorse|Cavalo de guerra Arnoriano
+itm_dunedain_warhorse|Cavalo de guerra de Dúnedain
+itm_rohirrim_courser|Corcel de Rohan
+itm_rohirrim_hunter|Caçador de Rohan
+itm_rohirrim_courser2|Corcel de Rohan 
+itm_rohan_warhorse|Cavalo de guerra de Rohan
+itm_thengel_warhorse|Cavalo de guarda de Thengel
+itm_rhun_horse_a|Cavalo de Rhun
+itm_rhun_horse_b|Cavalo de Rhun 
+itm_rhun_horse_d|Cavalo de Rhun 
+itm_rhun_horse_e|Cavalo pesado de Rhun
+itm_rhun_horse_f|Cavalo pesado de Rhun 
+itm_rhun_horse_g|Cavalo pesado de Rhun 
+itm_rhun_horse_h|Cavalo pesado de Rhun 
+itm_dale_horse|Cavalo de Dale
+itm_dale_warhorse|Cavalo de guerra de Dale
+itm_riv_warhorse|Cavalo de Guerra de Valfenda
+itm_riv_warhorse2|Corcel de Imladris
+itm_mordor_warhorse|Cavalo de guerra de Mordor
+itm_mordor_warhorse2|Cavalo de guerra sinistro de Mordor
+itm_gondor_courser|Corcel de Gondor
+itm_gondor_hunter|Caçador de Gondor
+itm_dol_amroth_warhorse|Cavalo de Guerra de Dol Amroth
+itm_dol_amroth_warhorse2|Cavalo de guerra pesado de Dol Amroth
+itm_gondor_warhorse|Cavalo de guerra de Gondor
+itm_gondor_lam_horse|Cavalo blindado de Lamedon
+itm_lorien_warhorse|Cavalo de guerra de Lothlorien
+itm_harad_horse|Cavalo de Harad
+itm_harad_warhorse|Cavalo de guerra de Harad
+itm_variag_pony|Pônei de Variag
+itm_variag_kataphrakt|Cavalo de guerra Easterling
+itm_warg_1b|Warg
+itm_warg_1c|Warg 
+itm_warg_1d|Warg 
+itm_wargarmored_1b|Warg blindado
+itm_wargarmored_1c|Warg blindado 
+itm_wargarmored_2b|Warg blindado 
+itm_wargarmored_2c|Warg blindado 
+itm_wargarmored_3a|Warg blindado 
+itm_warg_reward|Warg imenso
+itm_troll_feet_boots|Pé de Troll
+itm_troll_head_helm|Cabeça de Troll
+itm_troll_head_helm_b|Cabeça de Troll 
+itm_troll_head_helm_c|Cabeça de Troll 
+itm_tree_trunk_club_a|Tronco de árvore
+itm_tree_trunk_club_b|Tronco de árvore 
+itm_tree_trunk_invis|Tronco de árvore 
+itm_giant_hammer|Machado gigante
+itm_giant_mace|Maça gigante
+itm_giant_mace_b|Maça-estrela gigante
+itm_olog_feet_boots|Pé de Olog Hai
+itm_olog_head_helm|Cabeça de Olog Hai
+itm_olog_head_helm_b|Cabeça de Olog Hai 
+itm_olog_head_helm_c|Cabeça de Olog Hai 
+itm_olog_body|Armadura de Olog Hai
+itm_olog_body_b|Armadura de Olog Hai 
+itm_olog_hands|Mãos de Olog Hai
+itm_arrows|Flechas
+itm_gondor_arrows|Flechas de Gondor
+itm_gondor_auxila_arrows|Flechas Gondorianas
+itm_khergit_arrows|Flechas farpadas
+itm_rohan_arrows_2|Flechas de Rohan
+itm_harad_arrows|Flechas de Haradrim
+itm_corsair_arrows|Flechas dos corsários
+itm_ithilien_arrows|Flechas de Ithilien 
+itm_woodelf_arrows|Flechas dos elfos silvestres
+itm_elven_arrows|Flechas élficas
+itm_orc_hook_arrow|Flecha gancho Orc
+itm_isengard_arrow|Flechas de Isengard
+itm_pilgrim_disguise|Disfarce de peregrino
+itm_leather_gloves|Luvas de couro
+itm_mail_mittens|Luvas encouraçadas
+itm_leather_boots|Botas de couro
+itm_black_dress|Vestido negro
+itm_blackwhite_dress|Vestido de dama
+itm_white_tunic_a|Túnica branca
+itm_white_tunic_b|Túnica simples
+itm_white_tunic_c|Túnica de pele
+itm_blue_tunic|Túnica Azul
+itm_black_tunic|Túnica negra
+itm_green_tunic|Túnica verde
+itm_red_tunic|Túnica vermelha
+itm_leather_apron|Placa de couro
+itm_leather_jerkin|Colete de couro
+itm_fur_coat|Casaco de Dale
+itm_green_dress|Vestido verde
+itm_tld_tunic|Túnica
+itm_gondor_fine_outfit_dress|Roupas finas
+itm_rohan_fine_outfit_dale_dress|Roupas finas 
+itm_robe_generic_dress|Robe
+itm_wimple_a|Véu
+itm_wimple_with_veil|Véu 
+itm_fine_hat|Chapéu fino
+itm_shortened_spear|Dardo curta
+itm_spear|Dardo
+itm_light_lance|Dardo leve
+itm_lance|Lança 
+itm_tab_shield_small_round_b|Escudo de cavalaria redondo
+itm_short_bow|Arco curto
+itm_regular_bow|Arco
+itm_nomad_bow|Arco nômade
+itm_gondor_bow|Arco de Gondor
+itm_strong_bow|Arco forte
+itm_elven_bow|Arco élfico
+itm_corsair_bow|Arco corsário
+itm_dwarf_horn_bow|Arco de chifre anão
+itm_dwarf_short_bow|Arco curto anão
+itm_harad_bow|Arco curvado de Harad
+itm_lg_bow|Arco da águia guardiã
+itm_riv_bow|Arco de Valfenda
+itm_glorfi_bow|Arco de Glorfindel
+itm_lorien_bow|Arco da Galadriel
+itm_isengard_large_bow|Arco largo de Isengard
+itm_dale_bow|Arco de Dale
+itm_uruk_bow|Arco Orc
+itm_mirkwood_bow|Arco da Floresta das Trevas
+itm_dunland_javelin|Lanças de Dunland
+itm_orc_throwing_arrow|Dardos Orcs
+itm_heavy_throwing_spear|Dardo de atirar pesado
+itm_javelin|Lança
+itm_harad_javelin|Lança de Harad
+itm_gondor_javelin|Lança de Gondor
+itm_rohirrim_throwing_axe|Machadinhas de Rohan
+itm_loss_throwing_axes|Machadinhas de Lossarnach
+itm_arnor_helm_a|Elmo de Arnor
+itm_arnor_helm_b|Elmo de Arnor 
+itm_arnor_helm_c|Elmo de Arnor 
+itm_dunedain_helm_a|Capuz Dunedáin
+itm_dunedain_helm_b|Elmo decorado de Arnor
+itm_arnor_armor_a|Armadura Arnoriana
+itm_arnor_armor_b|Armadura Arnoriana 
+itm_arnor_armor_c|Pele de guarda Dúnedain
+itm_arnor_armor_d|Pele de guarda Dúnedain 
+itm_arnor_armor_e|Colete Arnoriano reforçado
+itm_arnor_armor_f|Armadura nobre Arnoriana
+itm_arnor_greaves|Torresmos Arnorianos
+itm_arnor_splinted|Talos de torresmo Arnoriano
+itm_arnor_shield_a|Escudo de Arnor
+itm_arnor_shield_c|Escudo de cavalaria de Arnor
+itm_arnor_shield_b|Escudo de Arnor 
+itm_arnor_shield_d|Escudo de cavalaria de Arnor 
+itm_arnor_sword_a|Espada falsa de Arnor
+itm_arnor_sword_c|Espada falsa de Arnor 
+itm_arnor_sword_f|Espada curta de Arnor
+itm_riv_helm_a|Touca de Valfenda
+itm_riv_helm_b|Elmo de arqueiro de Valfenda
+itm_riv_helm_c|Elmo de infantaria de Valfenda
+itm_riv_helm_glorfi|Cabelo de Glorfi
+itm_riv_tiara|Tiara de lorde élfico
+itm_riv_shield_a|Escudo de Valfenda
+itm_riv_shield_b|Escudo de Valfenda 
+itm_riv_bas_sword|Espada falsa de Valfenda
+itm_riv_1h_sword|Espada de Valfenda
+itm_riv_riding_sword|Espada de cavalaria de Valfenda
+itm_riv_archer_sword|Espada de arqueiro de Valfenda
+itm_riv_spear|Lança de Valfenda
+itm_riv_armor_light|Armadura de Valfenda
+itm_riv_armor_light_inf|Armadura de Valfenda 
+itm_riv_armor_archer|Armadura de Valfenda 
+itm_riv_armor_m_archer|Armadura de Valfenda 
+itm_riv_armor_med|Armadura de Valfenda 
+itm_riv_armor_heavy|Armadura de Valfenda 
+itm_riv_armor_h_archer|Armadura de Valfenda 
+itm_riv_armor_leader|Armadura de líder de Valfenda
+itm_riv_boots|Botas de Valfenda
+itm_gon_footman|Camisa Encouraçada de Gondor
+itm_gon_jerkin|Colete de Gondor
+itm_gon_regular|Encouraçado pesado de Gondor
+itm_gon_bowman|Gambeson de Gondor
+itm_gon_archer|Gambeson com capa de Gondor
+itm_gon_noble_cloak|Casaco de nobre de Gondor
+itm_gon_squire|Encouraçado com capa de Gondor
+itm_gon_knight|Encouraçado pesado com capa de Gondor
+itm_gon_ranger_cloak|Capa de guarda de Gondor
+itm_gon_ranger_skirt|Saia de guarda de Gondor
+itm_gon_steward_guard|Armadura de guarda mordomo de Gondor
+itm_gon_tower_guard|Armadura de guarda da torre de Gondor
+itm_gon_tower_knight|Armadura de Guerreiro da torre de Gondor
+itm_gon_leader_surcoat_cloak|Casaco de líder de Gondor
+itm_gondor_ranger_hood|Capuz verde
+itm_gondor_ranger_hood_mask|Capuz de guarda de Gondor
+itm_gondor_light_greaves|Torresmos de pele Gondorianos
+itm_gondor_med_greaves|Torresmos médios Gondorianos
+itm_gondor_heavy_greaves|Torresmos emborrachados Gondorianos
+itm_gondorian_light_helm|Elmo de infante de Gondor
+itm_gondor_infantry_helm|Elmo da infantaria de Gondor
+itm_gondor_auxila_helm|Elmo auxiliar gondoriano
+itm_gondorian_light_helm_b|Elmo de arqueiro de Gondor
+itm_gondorian_archer_helm|Elmo de arqueiro gondoriano
+itm_tower_archer_helm|Elmo de arqueiro da torre
+itm_gondor_leader_helm|Capacete Nobre de Gondor
+itm_tower_guard_helm|Elmo de guarda da Torre
+itm_gondor_citadel_knight_helm|Elmo de guerreiro da citadela.
+itm_gondor_squire_helm|Elmo de escudeiro de Gondor
+itm_gondor_knight_helm|Elmo de guerreiro de Gondor
+itm_gondor_dolamroth_helm|Elmo de Dol Amroth
+itm_swan_knight_helm|Elmo de guerreiro cisne
+itm_gondor_lamedon_helm|Elmo de Lamedon
+itm_gondor_lamedon_leader_helm|Elmo nobre de Lamedon
+itm_blackroot_archer|Armadura de arqueiro do Vale Blackroot
+itm_blackroot_bowman|Armadura de arqueiro do Vale Blackroot
+itm_blackroot_footman|Armadura da infantaria do Vale Blackroot
+itm_blackroot_warrior|Armadura de guerreiro do Vale Blackroot
+itm_blackroot_leader|Armadura de líder do Vale Blackroot
+itm_blackroot_hood|Capuz Blackroot
+itm_dol_hauberk|Cota de malha de Dol Amroth
+itm_dol_heavy_mail|Encouraçado pesado de Dol Amroth
+itm_dol_padded_coat|Casaco acolchoado de Dol Amroth
+itm_dol_shirt|Saia de Dol Amroth
+itm_dol_very_heavy_mail|Encouraçado muito pesado de Dol Amroth
+itm_dol_greaves|Torresmos de Dol Amroth
+itm_dol_shoes|Botas leves de Dol Amroth
+itm_lamedon_clansman|Armadura de membro do clã de Lamedon
+itm_lamedon_footman|Armadura de infante de Lamedon
+itm_lamedon_knight|Armadura de guerreiro Lamedon
+itm_lamedon_leader_surcoat_cloak|Armadura de líder Lamedon
+itm_lamedon_warrior|Armadura de guerreiro Lamedon
+itm_lamedon_veteran|Armadura de veterano Lamedon
+itm_lamedon_vet_warrior|Armadura de veterano guerreiro Lamedon
+itm_lamedon_hood|Capuz Lamedon
+itm_pinnath_archer|Armadura de arqueiro Pinnath Gelin
+itm_pinnath_footman|Armadura de infante Pinnath Gelin
+itm_pinnath_leader|Armadura de líder Pinath Gelin
+itm_pinnath_vet_footman|Armadura de veterano Pinnath Gelin
+itm_pinnath_warrior|Armadura de guerreiro Pinnath Gelin
+itm_pel_footman|Armadura de soldado de Pelargir
+itm_pel_jerkin|Colete de Pelargir
+itm_pel_leader|Armadura de líder de Pelargir
+itm_pel_marine|Marinha de Pelargir
+itm_pelargir_marine_leader|Líder da marinha de Pelargir
+itm_pelargir_regular|Fruguês de Pelargir
+itm_pelargir_hood|Capuz de Pelargir
+itm_pelargir_helmet_light|Elmo de Pelargir
+itm_pelargir_helmet_heavy|Elmo pesado de Pelargir
+itm_pelargir_greaves|Greva de Pelargir
+itm_lossarnach_shirt|Camisa de Lossarnach
+itm_lossarnach_axeman|Armadura de Axeman de Lossarnach
+itm_lossarnach_leader|Armadura de Líder de Lossarnach
+itm_lossarnach_vet_axeman|Armadura de Axeman veterano de Lossarnach
+itm_lossarnach_vet_warrior|Armadura de guerreiro veterano de Lossarnach
+itm_lossarnach_warrior|Armadura de guerreiro de Lossarnach
+itm_lossarnach_cloth_cap|Touca de pano de Lossarnach
+itm_lossarnach_leather_cap|Touca de Couro de Lossarnach
+itm_lossarnach_scale_cap|Touca de Escamas de Lossarnach
+itm_lossarnach_greaves|Perneiras de Lossarnach
+itm_gondor_shield_a|Escudo quadrado de Gondor
+itm_gondor_shield_b|Escudo pipa de Gondor
+itm_gondor_shield_c|Escudo de torre de Gondor
+itm_gondor_shield_d|Escudo pipa de Gondor
+itm_gondor_shield_e|Escudo real de Gondor
+itm_gon_tab_shield_a|Escudo Redondo Brasonado de Gondor
+itm_gon_tab_shield_b|Escudo Quadrado Brasonado de Gondor
+itm_gon_tab_shield_c|Escudo Gota Brasonado de Gondor
+itm_gon_tab_shield_d|Escudo Torre Brasonado de Gondor
+itm_amroth_sword_a|Espada de Dol Amroth
+itm_amroth_sword_b|Espada de Cavaleiro de Dol Amroth
+itm_gondor_sword|Espada de Infantaria de Gondor
+itm_amroth_bastard|Espada Pesada de Dol Amroth
+itm_gondor_short_sword|Eket de Linhir
+itm_pelargir_eket|Eket de Pelargir
+itm_pelargir_sword|Espada de Pelargir
+itm_gondor_ranger_sword|Espada de patruleiro de Gondor
+itm_gondor_bastard|Espada bastarda de Gondor
+itm_gondor_citadel_sword|Espada da Cidadela de Gondor
+itm_gondor_cav_sword|Espada da cavalaria de Gondor
+itm_gondor_spear|Lança de Gondor
+itm_gondor_tower_spear|Lança da Torre de Gondor
+itm_gondor_lance|Lança de Gondor
+itm_loss_axe|Machado de Batalha ed Lossarnach
+itm_loss_war_axe|Machado de Guerra de Lossarnach
+itm_lorien_sword_a|Espada de Lorien
+itm_lorien_sword_b|Espada Curta de Lorien
+itm_lorien_sword_c|Espada de Guerra de Lorien
+itm_lorien_archer|Armadura de Arqueiro de Lorien
+itm_lorien_armor_a|Armadura de Infantaria de Lorien
+itm_lorien_armor_b|Armadura de Infantaria Pesada de Lorien
+itm_lorien_armor_c|Armadura de Arqueiro Real de Lorien
+itm_lorien_armor_d|Armadura de Espadachim Real de Lorien
+itm_lorien_armor_e|Manto de Guarda de Lorien
+itm_lorien_armor_f|Armadura de Elite de Lorien
+itm_lorien_boots|Botas de Lothlorien
+itm_lorien_shield_b|Escudo Torre de Lorien
+itm_lorien_shield_c|Escudo Gota de Lorien
+itm_lorien_round_shield|Escudo Redondo de Lorien
+itm_lorien_helm_a|Elmo de Arqueiro de Lorien
+itm_lorien_helm_b|Elmo de Arqueiro de Lorien
+itm_lorien_helm_c|Elmo de Infantaria de Lorien
+itm_orc_chain_greaves|Perneiras Orcs
+itm_orc_coif|Capuz Orc
+itm_orc_greaves|Botas Orcs de Cota de Malha
+itm_orc_ragwrap|Touca Orc
+itm_orc_furboots|Botas peludas de Orc
+itm_orc_furboot_tall|Botas peludas de Orc 
+itm_orc_tribal_a|Pele Não Tratada
+itm_orc_tribal_b|Pele Não Tratada
+itm_orc_tribal_c|Pele Não Tratada
+itm_evil_gauntlets_a|Luvas
+itm_evil_gauntlets_b|Luvas 
+itm_isen_orc_armor_a|Armadura de Orc de Isengard
+itm_isen_orc_armor_b|Armadura de Orc de Isengard 
+itm_isen_orc_armor_c|Armadura de Orc de Isengard 
+itm_isen_orc_armor_d|Armadura de Orc de Isengard 
+itm_isen_orc_armor_e|Armadura de Orc de Isengard 
+itm_isen_orc_armor_f|Armadura de Orc de Isengard 
+itm_isen_orc_armor_g|Armadura de Orc de Isengard 
+itm_isen_uruk_light_a|Armadura Uruk-hai Leve
+itm_isen_uruk_light_b|Armadura de couro, Uruk-hai
+itm_isen_uruk_light_c|Armadura de couro, Uruk-hai 
+itm_isen_uruk_light_d|Armadura Uruk-Hai de Couro e Cota de Malha
+itm_isen_uruk_light_e|Armadura Uruk-Hai de Cota de Malha
+itm_isen_uruk_heavy_a|Armadura Uruk-Hai de Couro e Cota de Malha
+itm_isen_uruk_heavy_b|Armadura pesada Uruk-hai
+itm_isen_uruk_heavy_c|Armadura pesada Uruk-hai 
+itm_isen_uruk_heavy_d|Armadura de Batedor Uruk-Hai de Couro
+itm_isen_uruk_heavy_e|Armadura de Batedor Uruk-Hai de Couro
+itm_uruk_tracker_boots|Botas de Batedor Uruk de Couro
+itm_uruk_greaves|Perneiras Uruks
+itm_uruk_chain_greaves|Perneiras Uruks de Cota de Malha
+itm_uruk_ragwrap|Touca Uruk
+itm_isen_orc_helm_a|Elmo Orc de Isengard
+itm_isen_orc_helm_b|Elmo Orc de Isengard
+itm_isen_orc_helm_c|Elmo Orc de Isengard
+itm_isen_uruk_helm_a|Elmo Uruk-Hai
+itm_isen_uruk_helm_b|Elmo Uruk-Hai
+itm_isen_uruk_helm_c|Elmo Uruk-Hai
+itm_isen_uruk_helm_d|Elmo de Capitão Uruk-Hai
+itm_isen_uruk_helm_e|Elmo de Batedor Uruk-Hai
+itm_isen_uruk_helm_f|Elmo de Batedor Uruk-Hai
+itm_uruk_pike_a|Pique Uruk
+itm_uruk_pike_b|Pique Uruk
+itm_uruk_falchion_a|Sabre Uruk
+itm_uruk_falchion_b|Sabre Uruk 
+itm_uruk_spear|Lança Uruk
+itm_uruk_skull_spear|Lança com Caveira Uruk
+itm_uruk_voulge|Alabarda Uruk
+itm_uruk_heavy_axe|Machado Pesado Uruk
+itm_isengard_sword|Espada de Isengard
+itm_isengard_axe|Machado de Isengard
+itm_isengard_hammer|Martelo de Isengard
+itm_isengard_halberd|Alabarda de Isengard
+itm_isengard_mallet|Marreta de Isengard
+itm_isengard_heavy_axe|Machado Pesado de Isengard
+itm_isengard_heavy_sword|Espada Pesada de Isengard
+itm_isengard_spear|Lança de Isengard
+itm_isengard_pike|Pique de Isengard
+itm_isen_orc_shield_a|Escudo Orc de Isengard
+itm_isen_orc_shield_b|Escudo Orc de Isengard
+itm_isen_uruk_shield_b|Escudo Uruk de Isengard
+itm_wood_club|Porrete de madeira
+itm_twohand_wood_club|Porretão de madeira
+itm_bone_cudgel|Clava de Osso
+itm_skull_club|Clava de Crânio
+itm_orc_club_a|Clava de Orc
+itm_orc_club_b|Clava de Orc 
+itm_orc_club_c|Clava de Orc 
+itm_orc_club_d|Clava de Orc 
+itm_orc_sledgehammer|Marreta de Orc
+itm_orc_simple_spear|Dardo de Orc
+itm_orc_skull_spear|Lança de Crânio Orc
+; itm_orc_bill|Orc Bill
+itm_orc_slasher|Cortadeira Orc
+itm_orc_falchion|Falchion Orc
+itm_orc_scimitar|Cimitarra Orc
+itm_orc_sabre|Sabre Orc
+itm_orc_machete|Facão Orc
+itm_orc_axe|Machado Orc
+itm_orc_two_handed_axe|Machado Orc de Duas Cabeças
+itm_orc_throwing_axes|Machados de Arremesso Orcs
+itm_orc_bow|Arco Orc
+itm_orc_shield_a|Escudo Orc
+itm_orc_shield_b|Escudo Orc 
+itm_orc_shield_c|Escudo Orc 
+itm_mordor_orc_shield_a|Escudo de Orc de Mordor
+itm_mordor_orc_shield_b|Escudo de Orc de Mordor 
+itm_mordor_orc_shield_c|Escudo de Orc de Mordor 
+itm_mordor_orc_shield_d|Escudo de Orc de Mordor 
+itm_mordor_orc_shield_e|Escudo de Orc de Mordor 
+itm_mordor_uruk_shield_a|Escudo de Uruk de Mordor
+itm_mordor_uruk_shield_b|Escudo de Uruk de Mordor 
+itm_mordor_uruk_shield_c|Escudo de Uruk de Mordor 
+itm_mordor_man_shield_a|Escudo Parede de Mordor
+itm_mordor_man_shield_b|Escudo Parede de Mordor
+itm_angmar_shield|Escudo de Angmar
+itm_orc_helm_a|Elmo Orc de Nariz longo
+itm_orc_helm_b|Elmo Grande Orc
+itm_orc_helm_c|Elmo Orc Balde
+itm_orc_helm_d|Elmo Orc de Grelha
+itm_orc_helm_e|Elmo Orc de Bico
+itm_orc_helm_f|Elmo Orc de Inseto
+itm_orc_helm_g|Elmo Orc de Corvo
+itm_orc_helm_h|Elmo Orc de Mandíbula
+itm_orc_helm_i|Elmo Orc de Focinho
+itm_orc_helm_j|Elmo Orc de Lagarto
+itm_orc_helm_k|Elmo Orc de Abutre
+itm_m_orc_light_a|Armadura Orc Leve de Mordor
+itm_m_orc_light_b|Armadura Orc Leve de Mordor
+itm_m_orc_light_c|Armadura Orc Leve de Mordor
+itm_m_orc_light_d|Armadura Orc Leve de Mordor
+itm_m_orc_light_e|Armadura Orc Leve de Mordor
+itm_m_orc_heavy_a|Armadura Orc Pesada de Mordor
+itm_m_orc_heavy_b|Armadura Orc Pesada de Mordor
+itm_m_orc_heavy_c|Armadura Orc Pesada de Mordor
+itm_m_orc_heavy_d|Armadura Orc Pesada de Mordor
+itm_m_orc_heavy_e|Armadura Orc Pesada de Mordor
+itm_m_uruk_light_a|Armadura Uruk
+itm_m_uruk_light_b|Armadura Uruk Grossa
+itm_m_uruk_heavy_c|Armadura Uruk de Couro
+itm_m_uruk_heavy_d|Armadura Uruk Segmentada
+itm_m_uruk_heavy_e|Armadura Uruk de Cota de Malha
+itm_m_uruk_heavy_f|Armadura Uruk de Cota de Malha
+itm_m_uruk_heavy_g|Armadura Uruk de Cota de Malha
+itm_m_uruk_heavy_h|Armadura Uruk de Escamas
+itm_m_uruk_heavy_i|Armadura Uruk de Escamas Grossa
+itm_m_uruk_heavy_j|Armadura Uruk Pesada
+itm_m_uruk_heavy_k|Armadura de Uruk Guarda
+itm_m_cap_armor|Armadura de Capitão de Mordor
+itm_black_num_armor|Armadura de Numenoriano Negro
+itm_m_armor_a|Armadura de Mordor
+itm_m_armor_b|Armadura de Mordor
+itm_evil_light_armor|Traje Sinistro
+itm_uruk_helm_a|Elmo Uruk
+itm_uruk_helm_b|Elmo Uruk
+itm_uruk_helm_c|Elmo Uruk Bico
+itm_uruk_helm_d|Elmo Uruk Grelha
+itm_uruk_helm_e|Elmo Máscara Uruk
+itm_uruk_helm_f|Elmo Uruk
+itm_mordor_cap_helm|Elmo de Capitão de Mordor
+itm_mordor_helm|Elmo de Mordor
+itm_black_num_helm|Elmo de Numenoriano Negro
+itm_mordor_sword|Espada Bastarda de Mordor
+itm_mordor_longsword|Espada de Mordor
+itm_moria_armor_a|Armadura Peitoral de Moria
+itm_moria_armor_b|Armadura Peitoral e de Ombros de Moria
+itm_moria_armor_c|Armadura Orc de Cota de Malha de Moria
+itm_moria_armor_d|Armadura de Couro Aparafusado de Moria
+itm_moria_armor_e|Armadura Orc de Cota de Malha Pesada de Moria
+itm_moria_orc_shield_a|Escudo Orc de Moria
+itm_moria_orc_shield_b|Escudo Orc de Moria
+itm_moria_orc_shield_c|Escudo Orc de Moria
+itm_gundabad_armor_a|Trapo Orc de Gundabad
+itm_gundabad_armor_b|Armadura Orc de Pele de Gundabad
+itm_gundabad_armor_c|Armadura Orc de Gundabad
+itm_gundabad_armor_d|Armadura Orc de Gundabad
+itm_gundabad_armor_e|Armadura Orc Pesada de Gundabad
+itm_gundabad_helm_a|Touca de Gundabad
+itm_gundabad_helm_b|Elmo de Gundabad
+itm_gundabad_helm_c|Elmo de Gundabad
+itm_gundabad_helm_d|Elmo de Gundabad
+itm_gundabad_helm_e|Elmo de Cavaleiro de Warg
+itm_dunland_wolfboots|Botas de Lobo das Terras Pardas
+itm_dunland_armor_a|Armadura 
+itm_dunland_armor_b|Armadura 
+itm_dunland_armor_c|Armadura 
+itm_dunland_armor_d|Armadura 
+itm_dunland_armor_e|Armadura 
+itm_dunland_armor_g|Armadura 
+itm_dunland_armor_h|Armadura de Pele das Terras Pardas
+itm_dunland_armor_i|Alabarda Terrapardense
+itm_dunland_armor_j|Alabarda das Terras Pardas
+itm_dunland_armor_k|Armadura de Chefe das Terras Pardas
+itm_dun_helm_a|Touca de Lobo Terrapardense
+itm_dun_helm_b|Touca de Veado Terrapardense
+itm_dun_helm_c|Elmo Alto Terrapardense
+itm_dun_helm_d|Elmo Alto Terrapardense
+itm_dun_helm_e|Elmo Alto de Guerra Terrapardense
+itm_dun_shield_a|Escudo Terrapardense
+itm_dun_shield_b|Escudo Terrapardense
+itm_dun_berserker|Espada de Chefe das Terras Pardas
+itm_dunnish_antler_axe|Machado de Veado Terrapardense
+itm_dunnish_war_axe|Machado de Guerra Terrapardense
+itm_dunnish_axe|Machado Terrapardense
+itm_dunland_spear|Lança Terrapardense
+itm_dunnish_pike|Pique Terrapardense
+itm_rohan_armor_a|Camisão de Rohan
+itm_rohan_armor_b|Túnica de Rohan
+itm_rohan_armor_c|Túnica Longa de Rohan
+itm_rohan_armor_d|Alabarda de Rohan
+itm_rohan_armor_e|Alabarda de Rohan
+itm_rohan_armor_f|Alabarda de Rohan
+itm_rohan_armor_g|Camisão de Cota de Malha de Rohan
+itm_rohan_armor_h|Armadura Longa de Cota de Malha de Rohan
+itm_rohan_armor_i|Armadura Longa de Cota de Malha de Rohan
+itm_rohan_armor_j|Alabarda de Rohan
+itm_rohan_armor_k|Alabarda de Rohan
+itm_rohan_armor_l|Alabarda de Rohan
+itm_rohan_armor_m|Armadura de Escamas de Rohan
+itm_rohan_armor_n|Armadura de Escamas de Rohan
+itm_rohan_armor_o|Armadura de Escamas de Rohan
+itm_rohan_armor_p|Armadura de Rohan
+itm_rohan_armor_q|Armadura de Rohan
+itm_rohan_armor_r|Armadura de Rohan
+itm_rohan_armor_s|Armadura Embrasonada de Cota de Malha de Rohan
+itm_rohan_light_helmet_a|Elmo Leve de Rohan
+itm_rohan_light_helmet_b|Elmo Leve de Rohan
+itm_rohan_inf_helmet_a|Elmo de Infantaria de Rohan
+itm_rohan_inf_helmet_b|Elmo de Infantaria de Rohan
+itm_rohan_archer_helmet_a|Elmo de Arqueiro de Rohan
+itm_rohan_archer_helmet_b|Elmo de Arqueiro de Rohan
+itm_rohan_archer_helmet_c|Elmo de Arqueiro a Cavalo de Rohan
+itm_rohan_cav_helmet_a|Elmo de Cavalaria de Rohan
+itm_rohan_cav_helmet_b|Elmo de Cavalaria de Rohan
+itm_rohan_cav_helmet_c|Elmo de Cavalaria de Rohan
+itm_rohan_captain_helmet|Elmo de Cavalaria de Rohan
+itm_rohan_shield_a|Escudo de Rohan
+itm_rohan_shield_b|Escudo de Rohan
+itm_rohan_shield_c|Escudo de Rohan
+itm_rohan_shield_d|Escudo de Rohan
+itm_rohan_shield_e|Escudo de Rohan
+itm_rohan_shield_f|Escudo de Rohan
+itm_rohan_shield_g|Escudo Real de Rohan
+itm_rohan_light_greaves|Perneiras Leves de Rohan
+itm_rohirrim_war_greaves|Perneiras de Guerra Rohirrim
+itm_rohan_shoes|Sapatos de Couro
+itm_rohan_cav_sword|.Espada de Cavalaria de Rohan
+itm_rohan_inf_sword|Espada de Rohan
+itm_rohan_spear|Lança de Rohan
+itm_rohan_lance|Lança Pesada de Rohan
+itm_rohan_sword_c|Espada de Rohan
+itm_rohirrim_short_axe|Machado Curto Rohirrim
+itm_rohirrim_long_hafted_axe|Machado Longo Revestido Rohirrim
+itm_rohan_2h_sword|Espada de Guerra de Rohan
+itm_mirkwood_light_scale|Armadura Leve de Escamas da Floresta das Trevas
+itm_mirkwood_armor_a|Armadura Leve de Couro da Floresta das Trevas
+itm_mirkwood_armor_b|Armadura Acolchoada Leve de Escamas da Floresta das Trevas
+itm_mirkwood_armor_c|Armadura Leve de Escamas e Cota de Malha da Floresta das Trevas
+itm_mirkwood_armor_d|Sobretudo Acolchoado Leve da Floresta das Trevas
+itm_mirkwood_armor_e|Sobretudo Leve de Cota de Malha da Floresta das Trevas
+itm_mirkwood_armor_f|Armadura Real da Floresta das Trevas
+itm_mirkwood_great_spear|Lança Grande da Floresta das Trevas
+itm_mirkwood_war_spear|Lança de Guerra da Floresta das Trevas
+itm_mirkwood_short_spear|Lança da Floresta das Trevas
+itm_mirkwood_knife|Faca Branca da Floresta das Trevas
+itm_mirkwood_sword|Espada da Floresta das Trevas
+itm_mirkwood_spear_shield_a|Escudo de Lanceiro da Floresta das Trevas
+itm_mirkwood_spear_shield_b|Escudo de Guerra da Floresta das Trevas
+itm_mirkwood_spear_shield_c|Escudo de Espadachim da Floresta das Trevas
+itm_mirkwood_helm_a|Elmo de Arqueiro da Floresta das Trevas
+itm_mirkwood_helm_b|Elmo da Floresta das Trevas
+itm_mirkwood_helm_c|Elmo de Lanceiro Real da Floresta das Trevas
+itm_mirkwood_helm_d|Elmo de Arqueiro Real da Floresta das Trevas
+itm_mirkwood_boots|Botas da Floresta das Trevas
+itm_mirkwood_leather_greaves|Perneiras de Couro da Floresta das Trevas
+itm_harad_tunic|Túnica de Harad
+itm_harad_padded|Armadura Acolchoada de Harondor
+itm_harad_hauberk|Alabarda de Harondor
+itm_harad_lamellar|Armadura de Harasjala
+itm_harad_heavy|Armadura de Espadachim de Harad
+itm_harad_skirmisher|Traje Leve de Harad
+itm_harad_archer|Armadura de Arqueiro de Harad
+itm_black_snake_armor|Armadura Maranka
+itm_harad_champion|Traje de Distante Harad
+itm_panther_guard|Pele de Pantera
+itm_harad_scale|Armadura de Escamas de Harad
+itm_harad_tiger_scale|Armadura de Guarda Tigre
+itm_harad_lion_scale|Armadura de Guarda Leão
+itm_harad_dragon_helm|Elmo Kiloka
+itm_harad_cav_helm_a|Elmo de Cavalaria de Harondor
+itm_harad_cav_helm_b|Elmo de Cavalaria de Harondor
+itm_black_snake_helm|Elmo Maranka
+itm_harad_finhelm|Elmo de Grande Harad
+itm_harad_heavy_inf_helm|Elmo de Grande Harad
+itm_harad_wavy_helm|Elmo de Grande Harad
+itm_harad_eaglehelm|Elmo de Guarda Águia
+itm_lion_helm|Elmo de Guarda Leão
+itm_harad_pantherhelm|Touca de Guarda Pantera
+itm_harad_khopesh|Khopesh de Harad
+itm_black_snake_sword|Falchion Pesado de Harad
+itm_harad_heavy_sword|Espada Pesada de Harad
+itm_horandor_a|Cimitarra de Harad
+itm_skirmisher_sword|Espada de Escaramuça de Harad
+itm_harad_sabre|Sabre de Harad
+itm_harad_mace|Maça de Distante Harad
+itm_far_harad_2h_mace|Maça de Duas Mãos de Distante Harad
+itm_harad_dagger|Faca de Harad
+itm_harad_short_spear|Lança Curta de Harad
+itm_harad_long_spear|Lança de Harad
+itm_eagle_guard_spear|Lança de Guarda Águia
+itm_harad_long_shield_a|Escudo Leopardo de Harad
+itm_harad_long_shield_b|Escudo de Bronze de Harad
+itm_harad_long_shield_c|Escudo Sol de Harad
+itm_harad_long_shield_d|Escudo Serpente de Harad
+itm_harad_long_shield_e|Escudo Serpente de Harad
+itm_harad_shield_a|Escudo de Harondor
+itm_harad_shield_b|Broquel de Harondor
+itm_harad_shield_c|Broquel de Harondor
+itm_harad_tribal_a|Escudo de Distante Harad
+itm_harad_tribal_b|Escudo de Distante Harad
+itm_harad_yellow_shield|Escudo de Harad
+itm_desert_boots|Botas de Deserto
+itm_harad_leather_greaves|Perneiras de Harad
+itm_harad_scale_greaves|Botas de Harad
+itm_harad_lamellar_greaves|Botas de Harad
+itm_khand_helmet_a1|Elmo com Babeira de Khand
+itm_khand_helmet_a2|Elmo de Khand
+itm_khand_helmet_a3|Elmo Velado de Khand
+itm_khand_helmet_b1|Elmo Decorado de Khand
+itm_khand_helmet_b2|Elmo com Máscara de Khand
+itm_khand_helmet_b3|Elmo Velado de Khand
+itm_khand_helmet_b4|Elmo com Babeira de khand
+itm_khand_helmet_c3|Elmo de Infantaria de Khand
+itm_khand_helmet_c4|Elmo de Infantaria de Khand
+itm_khand_helmet_d1|Elmo com Máscara de Khand
+itm_khand_helmet_d2|Elmo com Babeira de Khand
+itm_khand_helmet_d3|Elmo com Máscara de Khand
+itm_khand_helmet_e1|Elmo Velado de Khand
+itm_khand_helmet_e2|Elmo com Babeira de Khand
+itm_khand_helmet_e3|Elmo de Khand
+itm_khand_helmet_e4|Elmo Velado de Khand
+itm_khand_helmet_f1|Elmo Velado de Khand
+itm_khand_helmet_mask1|Máscara de Khand
+itm_khand_helmet_mask2|Máscara de Khand
+itm_khand_light|Kilt de Khand
+itm_khand_foot_lam_a|Armadura de Khand
+itm_khand_foot_lam_b|Armadura de Khand
+itm_khand_foot_lam_c|Armadura de Khand
+itm_khand_heavy_lam|Armadura Pesada de Placas de Khand
+itm_khand_light_lam|Armadura Leve de Placas de Khand
+itm_khand_med_lam_b|Armadura ´Média de Placas de Khand
+itm_khand_med_lam_c|Armadura Média de Placas de Khand
+itm_khand_med_lam_d|Armadura Média de Placas de Khand
+itm_khand_noble_lam|Armadura Nobre de Khand
+itm_variag_greaves|Perneiras Variags
+itm_khand_axe_great|Machado Grande de Khand
+itm_khand_axe_winged|Machado Alado de Khand
+itm_khand_halberd|Alabarda de Khand
+itm_khand_trident|Tridente de Khand
+itm_khand_voulge|Alabarda de Khand
+itm_khand_mace1|Maça de Khand
+itm_khand_mace2|Maça de Khand
+itm_khand_mace_spiked|Maça com Espinhos de Khand
+itm_khand_rammace|Maça Carneiro de Khand
+itm_khand_pitsword|Espada de Lutador de Arena
+itm_khand_tulwar|Tulwar de Khand
+itm_khand_2h_tulwar|Tulwar de Khand
+itm_khand_lance|Lança Pesada de Khand
+itm_easterling_round_horseman|Escudo Redondo de Oriental
+itm_variag_gladiator_shield|Escudo de Gladiador Variag
+itm_easterling_hawk_shield|Escudo Falcão de Oriental
+itm_rhun_bull1_shield|Escudo de Rhun
+itm_rhun_bull2_shield|Escudo de Rhun
+itm_rhun_bull3_shield|Escudo de Rhun
+itm_furry_boots|Botas de Pele
+itm_rhun_armor_a|Vestimenta de Batalha Leve de Rhun
+itm_rhun_armor_b|Vestimenta de Batalha Leve de Rhun
+itm_rhun_armor_d|Vestimenta de Batalha Leve de Rhun
+itm_rhun_armor_g|Vestimenta de Batalha Pesada de Rhun
+itm_rhun_armor_h|Vestimenta de Batalha Pesada de Rhun
+itm_rhun_armor_j|Vestimenta de Batalha Média de Rhun
+itm_rhun_armor_m|Vestimenta de Batalha Média de Rhun
+itm_rhun_armor_n|Vestimenta de Batalha Média de Rhun
+itm_rhun_armor_o|Vestimenta de Batalha Média de Rhun
+itm_rhun_armor_p|Armadura Nobre de Rhun
+itm_rhun_armor_k|Armadura Nobre de Rhun
+itm_rhun_helm_a|Elmo Farpado de Rhun
+itm_rhun_helm_b|Elmo com Babeira Farpado de Rhun
+itm_rhun_helm_c|Elmo de Horda de Rhun
+itm_rhun_helm_e|Elmo com Chifre de Horda de Rhun
+itm_rhun_helm_g|Elmo com Chifre de Rhun
+itm_rhun_helm_h|Elmo com Chifre de Rhun
+itm_rhun_helm_i|Elmo Redondo de Rhun
+itm_rhun_helm_j|Elmo Redondo com Máscara de Rhun
+itm_rhun_helm_k|Elmo de Couro de Rhun
+itm_rhun_helm_l|Elmo de Couro de Rhun
+itm_rhun_helm_m|Elmo de Couro de Rhun
+itm_rhun_helm_n|Elmo de Chefe de Rhun
+itm_rhun_helm_o|Elmo de Chefe de Rhun
+itm_rhun_greataxe|Machado Grande de Rhun
+itm_rhun_battleaxe|Machado de Batalha de Rhun
+itm_rhun_falchion|Falchion de Rhun
+itm_rhun_glaive|Alabarda de Rhun
+itm_rhun_greatfalchion|Falchion Grande de Rhun
+itm_rhun_greatsword|Espada Grande de Rhun
+itm_rhun_shortsword|Espada Curta de Rhun
+itm_rhun_sword|Espada de Rhun
+itm_rhun_shield|Escudo Gota de Rhun
+itm_dale_armor_a|Jaqueta de Valle
+itm_dale_armor_b|Jaqueta com Capa de Valle
+itm_dale_armor_c|Jaqueta de Arqueiro de Valle
+itm_dale_armor_d|Jaqueta de Arqueiro de Valle
+itm_dale_armor_e|Armadura de Cota de Malha e Casaco de Valle
+itm_dale_armor_f|Armadura de Cota de Malha e Casaco de Valle
+itm_dale_armor_g|Armadura de Cota de Malha e Casaco de Valle
+itm_dale_armor_h|Capa Bordada Longa de Valle
+itm_dale_armor_i|Capa Bordada Longa de Valle
+itm_dale_armor_j|Capa Bordada Longa de Valle
+itm_dale_armor_k|Armadura Nobre de Valle
+itm_dale_armor_l|Gorget Nobre de Valle
+itm_dale_helmet_a|Elmo de Infantaria Leve de Valle
+itm_dale_helmet_b|Elmo de Arqueiro Leve de Valle
+itm_dale_helmet_c|Elmo de Infantaria de Valle
+itm_dale_helmet_d|Elmo de Arqueiro de Valle
+itm_dale_helmet_e|Elmo de Infantaria Pesada de Valle
+itm_dale_helmet_f|Elmo de Arqueiro Pesado de Valle
+itm_dale_sword|Espada Curta de Valle
+itm_dale_sword_long|Espada Longa de Valle
+itm_dale_sword_broad|Espada Larga de Valle
+itm_dale_pike|Lança de Valle
+itm_dale_billhook|Podão de Valle
+itm_dale_shield_a|Escudo de Valle
+itm_dale_shield_b|Escudo de Valle
+itm_dale_shield_c|Escudo de Valle
+itm_dale_shield_d|Escudo de Valle
+itm_umb_armor_a|Armadura Corsária de Couro
+itm_umb_armor_a1|Armadura Corsária Pesada de Couro
+itm_umb_armor_b|Armadura de Cavaleiro Corsário
+itm_umb_armor_c|Armadura Corsária Acolchoada
+itm_umb_armor_d|Armadura Corsária Acolchoada Pesada
+itm_umb_armor_e|Armadura de Cavaleiro Corsário Acolchoada
+itm_umb_armor_f|Armadura Corsária de Cota de Malha
+itm_umb_armor_g|Ombreiras Corsárias de Cota de Malha
+itm_umb_armor_h|Armadura de Cavaleiro Corsário Pesada
+itm_umb_helm_a|Elmo Corsário de Casco
+itm_umb_helm_b|Elmo Corsário de Casco
+itm_umb_helm_c|Elmo Milícia Corsária
+itm_umb_helm_d|Elmo de Milícia Corsária
+itm_umb_helm_e|Elmo de Cavaleiro Corsário
+itm_umb_helm_f|Elmo de Cavaleiro Corsário
+itm_umb_hood|Capuz de Umbar
+itm_corsair_boots|Botas Corsárias
+itm_umb_shield_a|Broquel Corsário
+itm_umb_shield_b|Broquel Corsário
+itm_umb_shield_c|Broquel Corsário
+itm_umb_shield_d|Broquel Corsário
+itm_umb_shield_e|Broquel Corsário
+itm_umbar_cutlass|Cutelo de Umbar
+itm_kraken|Cutello de Kraken
+itm_umbar_rapier|Espada de Umbar
+itm_corsair_harpoon|Harpão de Corsário
+itm_corsair_sword|Eket de Corsário
+itm_corsair_throwing_dagger|Adagas de Lançamento de Umbar
+itm_umbar_pike|Pique de Umbar
+itm_woodman_tunic|Túnica Comum
+itm_woodman_scout|Capa de Batedor Comum
+itm_woodman_padded|Armadura Acolchoada Comum
+itm_beorn_tunic|Túnica Beorning
+itm_beorn_padded|Armadura Beorning Acolchoada
+itm_beorn_heavy|Armadura Beorning Pesada
+itm_beorn_berserk|Kit de Berserker Beorning
+itm_beorn_chief|Túnica de Chefe Beorning
+itm_beorn_helmet|Touca de Crânio Nortenha
+itm_beorn_shield|Escudo Nortenho
+itm_beorn_axe|Machado Beorning
+itm_beorn_staff|Cajado Beorning
+itm_beorn_battle_axe|Machado de Guerra Beorning
+itm_dwarf_shield_a|Escudo Anão
+itm_dwarf_shield_b|Escudo Anão
+itm_dwarf_shield_c|Escudo Anão
+itm_dwarf_shield_d|Escudo Anão
+itm_dwarf_shield_f|Escudo Anão
+itm_dwarf_shield_g|Escudo Anão
+itm_dwarf_shield_i|Escudo Anão
+itm_dwarf_shield_j|Escudo Anão
+itm_dwarf_shield_k|Escudo Anão
+itm_dwarf_shield_l|Escudo Anão
+itm_dwarf_sword_a|Espada Anã
+itm_dwarf_sword_b|Espada Anã
+itm_dwarf_sword_c|Espada Anã
+itm_dwarf_sword_d|Espada Anã
+itm_dwarf_adz|Enxó Anão
+itm_dwarf_great_axe|Machado Grande Anão
+itm_dwarf_great_mattock|Picareta Grande Anã
+itm_dwarf_great_pick|Picareta Grande Anã
+itm_dwarf_war_pick|Picareta de Guerra Anã
+itm_dwarf_mattock|Picareta Anã
+itm_dwarf_hand_axe|Machado Curto Anão
+itm_dwarf_throwing_axe|Machado de Arremesso Anão
+itm_dwarf_spear|Lança Anã
+itm_dwarf_spear_b|Pique Anão
+itm_dwarf_spear_c|Pique Anão
+itm_dwarf_helm_a|Touca Anã
+itm_dwarf_helm_b|Touca com Máscara Anã
+itm_dwarf_helm_c|Elmo com Máscara Anão
+itm_dwarf_helm_h|Elmo Anão
+itm_dwarf_helm_i|Elmo Frísio Anão
+itm_dwarf_helm_j|Máscara Frísia Anã
+itm_dwarf_helm_l|Capuz Anão
+itm_dwarf_helm_m|Máscara de Ferro Anã
+itm_dwarf_helm_o|Elmo Nasal Anão
+itm_dwarf_helm_p|Elmo Real Anão
+itm_dwarf_helm_q|Elmo de Minerador Anão
+itm_dwarf_helm_r|Touca de Minerador Anão
+itm_dwarf_helm_u|Máscara Redonda Anã
+itm_dwarf_helm_v|Sallet de Cota de Malha Anão
+itm_dwarf_helm_x|Sallet com Máscara Anão
+itm_dwarf_armor_a|Túnica Sobre Cota de Malha Anã
+itm_leather_dwarf_armor|Armadura Acolchoada de Cota de Malha Anã
+itm_dwarf_vest|Armadura de Arqueiro Anã
+itm_dwarf_armor_b|Túnica Acolchoada Anã
+itm_dwarf_armor_c|Armadura de Cota de Malha com Escamas Anã
+itm_leather_dwarf_armor_b|Túnica Anã
+itm_dwarf_vest_b|Túnica de Colinas de Ferro
+itm_dwarf_pad_boots|Botas Acolchoadas Anãs
+itm_dwarf_chain_boots|Calças de Cota de Malha Anãs
+itm_dwarf_scale_boots|Botas de Escamas Anãs
+itm_good_mace|Maça
+itm_far_harad_shield_paint|Escudo de Vime
+itm_nazgulrobe|Manto de Nazgul
+itm_whiterobe|Manto Branco
+itm_mordor_banner|Brasão de Mordor
+itm_isengard_banner|Brasão de Isengard
+itm_woodelf_banner|Brasão da Floresta das Trevas
+itm_lorien_banner|Brasão de Lothlorien
+itm_imladris_banner|Brasão de Valfenda
+itm_gondor_lance_banner|Lança com Bandeira de Gondor
+itm_amroth_lance_banner|Lança com Brasão de Dol Amroth
+itm_rohan_lance_banner_sun|Lança com Brasão Solar de Rohan
+itm_rohan_lance_banner_horse|Lança com Brasão de Cavalo de Rohan
+itm_ent_body|Corpo de Ent
+itm_ent_head_helm|Cabeça de Ent
+itm_ent_head_helm2|Cabeça de Ent
+itm_ent_head_helm3|Cabeça de Ent
+itm_ent_feet_boots|Pés de Ent
+itm_ent_hands|Mãos de Ent
+itm_galadriel|Vestido de Galadriel
+itm_ent_water|Tigela Estranha de Água
+itm_map|Mapas da Terra Média
+itm_athelas_reward|Athelas
+itm_phial_reward|Luz de Galadriel
+itm_scroll_reward|Sobre a Queda de Gondolin
+itm_hammer_reward|Martelo de Ferreiro
+itm_khand_knife_reward|Faca de Sacrifício de Khand
+itm_angmar_whip_reward|Chicote de Mestre
+itm_horn_gondor_reward|Chifre de Gondor
+itm_harad_totem_reward|Totem de Harad
+itm_elven_amulet_reward|Amuleto Élfico 
+; itm_torque_reward|Evil Torque
+itm_orc_brew|Bebida Orc
+itm_rohan_saddle|Sela de Thengel
+itm_mearas_reward|Garanhão de Mearh
+itm_sword_of_arathorn|Espada de Arathorn
+itm_riv_armor_reward|Armadura Decorada de Valfenda
+itm_westernesse1h_reward|Espada de Ponente
+itm_westernesse2h_reward|Espada da Grande Serpente
+itm_mirkwood_sword_reward|Espada Relíquia de Madeiraverde
+itm_nazgul_sword|Espada de Nazgul
+itm_cooking_cauldron|Caldeirão para Cozinhar
+itm_eorl_cavalry_sword|Espada de Eorl
+itm_garlic_reward|Alho
+itm_silmarillion_reward|Silmarillion
+itm_herbarium_reward|Herbário da Terra Média
+itm_book_of_moria|Livro de Mazarbul
+itm_ring_a_reward|Tulcarisil
+itm_ring_b_reward|Finwarisil
+itm_dale_bow_reward|Arco de Bard
+itm_explosive_reward|Mina de Isengard
+itm_corsair_trident|Tridente da Fúria do Mar
+itm_crebain_reward|Crebain de Isengard
+itm_miruvor_reward|Frasco de Miruvor
+itm_wheeled_cage|Jaula Gigante Sobre Rodas
+itm_orc_throwing_axes_reward|Machados de Lançamento de Gundabad
+itm_corsair_throwing_dagger_reward|Adagas de Lançamento Envenenadas
+itm_dwarf_shield_reward|Escudo de Mithril Anão
+itm_dwarf_great_axe_reward|Machado Afiado Anão
+itm_isen_uruk_heavy_reward|Armadura de General Uruk-Hai
+itm_lorien_bow_reward|Arco dos Noldorin
+itm_lorien_sword_reward|Galadhrim
+itm_dale_sword_reward|Espada de Guarda de Marcha
+itm_dale_armor_reward|Gorget Nobre de Esgaroth
+itm_leather_gloves_reward|Luvas de Caça
+itm_beorn_shield_reward|Escudo Beorning
+itm_beorn_axe_reward|Machado Urso
+itm_moria_arrow_reward|Flechas Envenenadas de Moria
+itm_khamul_helm|Elmo de Khamul
+itm_gandstaff|Cajado de Gandalf
+itm_sarustaff|Cajado de Saruman
+itm_rohan_armor_th|Armadura Real de Rohan
+itm_denethor_robe|Manto de Denethor
+itm_prisoner_coll_chain|Correntes de prisioneiro
+itm_witchking_helmet|Elmo corrompido
+itm_lorien_royal_armor|Armadura Real de Lorien
+itm_feet_chains|Correntes de pé 
+itm_feet_chains_dwarf|Correntes de pé
+itm_spider|Aranha
+itm_bear|Urso
+itm_wolf|Lobo
+itm_defiled_armor_gondor|Casaco sujo de líder de Gondor
+itm_defiled_armor_rohan|Cota de malha suja de Rohan
+itm_defiled_armor_dale|Armadura suja de nobre de Dale

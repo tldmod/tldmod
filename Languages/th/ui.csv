@@ -1,0 +1,48 @@
+ui_at_learning_limit|(ถึงขีดจำกัดการเรียนของเผ่านี้)
+ui_not_enough_skill_points_to_learn|(มีแต้มสกิลไม่เพียงพอ)
+ui_not_enough_attributetype_to_learn_this_skill|(มี%sไม่เพียงพอที่จะเรียนสกิล)
+ui_explanation_agility|ความว่องไว: แต่ละแต้มให้ค่าความเชี่ยวชาญอาวุธ 5แต้ม และเพิ่มความเร็วในการใช้อาวุธ 0.5%  สกิลต่อไปนี้ไม่สามารถเพิ่มเลเวลได้เกิน 1/3 ของค่าความว่องไว: การควบคุมอาวุธ, การใช้โล่, ความแข็งแรง, การขี่ม้า/สัตว์, การขี่ม้ายิงธนู, การดรอปของ
+ui_retreated_battle|%sได้เปลี่ยนเส้นทางแล้ว
+ui_riding_skill_not_adequate_to_mount|(สกิลขี่ม้าต่ำเกินไป)
+ui_camp|การกระทำ
+ui_tutorial_inventory|ในม็อดเดอะลาสต์เดย์ ผู้เล่นจะต้องใช้ค่าทรัพยากรเพื่อแลกกับสิ่งของและอุปกรณ์ต่างๆ ค่าทรัพยากรเป็นค่าที่บอกว่าฝ่ายต่างๆสนับสนุนคุณมากเท่าไหร่ และ บอกว่าแต่ละฝ่ายอนุญาตให้คุณใช้ทรัพยากรของฝ่ายได้แค่ไหน
+ui_you_dont_have_value|ไม่มี %s
+ui_merchant_cant_afford_value|%s: คุณให้ของเรามากกว่าที่เราต้องการ! บางทีคุณน่าจะเก็บของบางอย่างไว้(คุณกำลังให้สินค้ามูลค่า %s, เราจ่ายได้แค่ %s)
+ui_merchant_pay_whatever|ไม่เป็นไรข้าไม่ต้องการของพวกนั้น เก็บไว้เถอะ
+ui_horse|ขี่
+ui_reclaim_your_sold_goods|เอาสินค้าของคุณคืนไปก่อนที่จะซื้อ!
+ui_return_your_bought_goods|คืนสินค้าที่คุณเอาไปก่อนที่จะให้มัน!
+ui_return_price|ถ้าเอาคืน: +%d ค่าทรัพยากร
+ui_sell_price|ถ้าให้: +%d ค่าทรัพยากร
+ui_reclaim_price|ถ้าเอาคืน: -%d ค่าทรัพยากร
+ui_buying_price|ราคา: -%d ค่าทรัพยากร
+ui_notification_riding_skill_not_enough|ทักษะขี่ม้าคุณทำเกินไปที่จะขี่มัน
+ui_notification_payment_value|กิน/ใช้ %s
+ui_notification_payment_receive_value|รายรับ %s
+ui_weekly_cost_value|ค่าบำรุงรักษา: %s
+ui_sell|ให้
+ui_hire|เกณฑ์
+ui_notification_cant_hire|(ไม่มีค่าทรัพยากรเพียงพอที่จะทำการเกณฑ์)
+ui_joining_cost_weekly_wage|เกณฑ์: %d ค่าทรัพยากร --ค่าบำรุงรักษา: %d ค่าทรัพยากร
+ui_weekly_wage|ค่าบำรุงรักษา: %d ค่าทรัพยากร
+ui_price|มูลค่า: %d ค่าทรัพยากร
+ui_cant_reload_this_weapon_on_horseback|ไม่สามารถเติมกระสุนได้ขณะขี่ม้า
+ui_delivered_number_damage_to_horse|ทำดาเมจ %d ให้กับม้า
+ui_horse_charged_for_number_damage|ม้าทำความเสียหายจากการพุ่งชน %d
+ui_horse_received_number_damage|ม้าได้รับความเสียหาย %d
+ui_horse_fell_dead|ม้าตาย...
+ui_horse_crippled|ม้าบาดเจ็บ
+ui_you_got_value|ได้รับ %s
+ui_has_deserted_the_party|ได้ออกจากกลุ่ม
+ui_have_deserted_the_party|ได้ออกจากกลุ่ม
+ui_loading_textures|กำลังโหลดเทคเจอร์ (รอซักครู่)..
+ui_order_hold_fire_toggle|หยุดยิง/ยิงอย่างอิสระ (สลับ)
+ui_order_dismount_toggle|สั่งให้ ลงจากหลังม้า/ขี่ม้า (สลับ)
+ui_mount_horses_e_|%s, ขึ้นม้า!
+ui_hold_fire_e_|%s, หยุดยิง!
+ui_fire_at_will_e_|%s, ยิงได้อย่างอิสระ!
+ui_recent_messages|ข้อความสุดท้าย
+ui_value_denars|%d ค่าทรัพยากร
+ui_cannot_be_used_on_horseback|ไม่สามารถใช้ได้เมื่อทำการขี่ม้า/สัตว์
+ui_upgrade_to_value|อัพเกรดเป็น %s
+ui_notification_cant_upgrade|(ไม่สามารถอัพเกรดได้เมื่อกำลังทำการให้ทหาร)
