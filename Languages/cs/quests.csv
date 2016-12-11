@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} tě požádal, abys odnesl zprávu {s13}. {s13} by
 qst_deliver_message_to_enemy_lord|Doruč zprávu {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} tě požádal, abys odnesl zprávu {s13} z {s15} byl. {s13} v {s4} když ti byl zadán úkol.
 ; qst_raise_troops|Raise {reg1} {s14}
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to him.
+qst_raise_troops_text|{s9} tě žádá o vylepšení {reg1} {s14} a o jejich navrácení.
 qst_escort_messenger|Doprovoď posla do {s14}
 qst_escort_messenger_text|Nic.
 qst_hunt_down_fugitive|Zabij {s4}
@@ -11,13 +11,13 @@ qst_hunt_down_fugitive_text|{s9} tě požádal, abys zabil uprchlíka jménem {s
 qst_bring_back_runaway_serfs|Přiveď zpět uprchlé otroky.
 qst_bring_back_runaway_serfs_text|{s9} tě požádal, abys přivedl do {s2} zpět tři skupiny uprchlých otroků. Říkal, že všechny tři skupiny musí utíkat směrem k {s3}.
 qst_follow_spy|Nasleduj speha k setkani. 
-; qst_follow_spy_text|{s11} asked you to follow the spy that will leave {s12}. You must be careful not to be seen by the spy during his travel, or else he may get suspicious and turn back. Once the spy meets with his accomplice, you are to ambush and capture them and bring them both back to {s11}.
+qst_follow_spy_text|{s11} tě žádá o sledování špeha, který opustí {s12}. Musíš být opatrný a nespozorovaný špehem během této cesty, nebo se vrátí zpět. Špeh se musí potka s jeho komplicem, pak na ně zaútoč a zajmi je a vrať je zpět k {s11}.
 qst_capture_enemy_hero|Zajmi nepratelskeho velitele. 
-; qst_capture_enemy_hero_text|{s11} asked you to capture an enemy commander.
+qst_capture_enemy_hero_text|{s11} tě žáda o uvěznění nepřátelského velitele.
 ; qst_lend_companion|Lend Your Companion {s3} to {s9}
-; qst_lend_companion_text|{s9} asked you to lend your companion {s3} to him for a week.
+qst_lend_companion_text|{s9} tě žáda o zapůjčení společníka {s3} na jeden týden.
 qst_capture_prisoners|Přines {reg1} nepřátelské vězně.
-; qst_capture_prisoners_text|{s9} wanted you to bring him {reg1} enemy prisoners.
+qst_capture_prisoners_text|{s9} chce abys mu přivedl {reg1} nepřátelské vězně.
 qst_investigate_fangorn|Prozkoumej Fangorn.
 ; qst_investigate_fangorn_text|{s9} asked you to find out what is going on in the Fangorn forest, and to report back.
 qst_capture_troll|Zajmi trola. 
@@ -26,23 +26,23 @@ qst_kill_troll|Zneškodni rozzuřeného trolla.
 ; qst_kill_troll_text|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
 qst_mirkwood_sorcerer|Zabij carodejnika v Mirkwoodu. 
 ; qst_mirkwood_sorcerer_text|Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him.
-; qst_find_lost_spears|Find the lost spears of king Bladorthin
+qst_find_lost_spears|Najdi ztracená kopí krále Bladorthina
 ; qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
-; qst_rescue_prisoners|Rescue {reg1} Prisoners
-; qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
+qst_rescue_prisoners|Zachraň {reg1} Vězně
+qst_rescue_prisoners_text|{s9} chce abys osvobodil {reg1} vězně.
 qst_scout_enemy_town|Obhledni nepratelske mesto. 
-; qst_scout_enemy_town_text|{s9} asked you to scout around {s13}.
+qst_scout_enemy_town_text|{s9} tě požádal, aby si prozkoumal poblíž {s13}.
 qst_dispatch_scouts|Vysli pruzkumnou skupinu.
 ; qst_dispatch_scouts_text|{s9} asked you to dispatch a scout party near {s13}.
-; qst_eliminate_patrols|Eliminate {reg1} Enemy Parties
-; qst_eliminate_patrols_text|{s9} asked you to eliminate {reg1} {s13} enemy parties.
+qst_eliminate_patrols|Poraž {reg1} nepřátelske skupiny.
+qst_eliminate_patrols_text|{s9} tě žádá o poražení {reg1} {s13} nepřátelských skupin.
 ; qst_lend_surgeon|Lend Your Surgeon {s3} to {s1}
 ; qst_lend_surgeon_text|Lend your experienced surgeon {s3} to {s1}.
-; qst_follow_army|Follow {s9}'s Army
+qst_follow_army|Následuj {s9}ovu armádu.
 qst_follow_army_text|Nic.
 ; qst_report_to_army|Report to {s13}
 qst_report_to_army_text|Nic.
-; qst_deliver_cattle_to_army|Deliver {reg3} units of food to {s13}
+qst_deliver_cattle_to_army|Doruč {reg3} kusů jídla k {s13}
 qst_deliver_cattle_to_army_text|Nic.
 qst_join_siege_with_army|Připoj se k obléhání {s14}
 qst_join_siege_with_army_text|Nic.
@@ -50,8 +50,8 @@ qst_join_siege_with_army_text|Nic.
 qst_scout_waypoints_text|Nic.
 ; qst_move_cattle_herd|Move {s12} to {s13}
 ; qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
-; qst_escort_merchant_caravan|Escort Supply Train to {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8}.
+qst_escort_merchant_caravan|Doprovázej zásobování do {s8}
+qst_escort_merchant_caravan_text|Doprovázej zásobovácí konvoj do {s8}.
 ; qst_deliver_wine|Deliver {reg5} Units of {s6} to {s4}
 ; qst_deliver_wine_text|The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days.
 qst_troublesome_bandits|Ustvi problemy delajici gobliny.

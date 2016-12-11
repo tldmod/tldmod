@@ -881,7 +881,7 @@ qstr_Do_you_need_reinforc|Potrzebujesz wsparcia?
 qstr_You_don_t_look_too_s|Nie wyglądasz na zbyt silnego, potrzebujesz żołnierzy?
 qstr_^{s14}_is_grateful_t|^{s14} jest ci wdzięczny, {playername}, {s29}^
 ; qstr_{s31}{reg28?Those:That|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^^[earned {reg14} Resource Points of {s14}]
-; qstr_{s31}{reg28?Those:That}|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^^[earned {reg14} Resource Points of {s14}]
+qstr_{s31}{reg28?Those:That}|{s31}{reg28?Ta:Te} {reg28?przydatna:przydatne} {reg28?jednostka:jednostki} {reg28?pomogą:pomoże}nam spowodować większy bajzel.{s32}^^[Otrzymano {reg14} Punktów {s14}]
 qstr_{s4}_^Oh_and_take_bac|{s4} ^Aha, i zabierz z powrotem tych żołnierzy, którzy nie są naszymi krewniakami. Nie mam z nich pożytku.
 qstr_It_is_my_duty_to_hel|Moim obowiązkiem jest pomoc naszym ludziom.
 qstr_It_is_my_duty_to_help|Moim obowiązkiem jest pomoc naszym sprzymierzeńcom.

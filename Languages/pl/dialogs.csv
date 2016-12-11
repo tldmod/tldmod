@@ -6,12 +6,12 @@ dlga_mutiny_talk_1:mutiny_talk_2|Co? Bunt? ^Karą jest śmierć, robaku!
 dlga_mutiny_talk_2:close_window|Powiemy ci coś.. ^Chłopaki mówią, że ja będę lepszym dowódcą, gdy CIĘ ZABIJĘ!
 dlga_start:troll_introduce_1|Jakiś problem?
 dlga_start:troll_talk_1|Ty szalon{y/a}?
-dlga_troll_introduce_1:troll_goodbye|Do licha! Gadający trol?!
-dlga_troll_introduce_1:close_window|Trolololo!
-dlga_troll_talk_1:troll_talk_2|Ja trol, trol.
-dlga_troll_talk_1:close_window|Trolololo!
+dlga_troll_introduce_1:troll_goodbye|Do licha! Gadający troll?!
+dlga_troll_introduce_1:close_window|Ja mieć konia.
+dlga_troll_talk_1:troll_talk_2|Ja troll, troll.
+dlga_troll_talk_1:close_window|Ja mieć konia.
 dlga_troll_talk_2:troll_talk_3|Wyzwanie podjęte!^^{s4}
-dlga_troll_beaten:troll_talk_1|Kłaniam się przed twą mądrością, Waleczny Panie Troli!
+dlga_troll_beaten:troll_talk_1|Kłaniam się przed twą mądrością, Waleczny Panie Trolli!
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Witaj ponownie, {playername}!
 dlga_start:hobbit_pippin_talk_met|Witaj ponownie, {playername}!

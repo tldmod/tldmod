@@ -735,9 +735,9 @@ PS_OUTPUT ps_font_uniform_color(VS_OUTPUT_FONT In)
 PS_OUTPUT ps_font_background(VS_OUTPUT_FONT In) 
 { 
 	PS_OUTPUT Output;
-	Output.RGBColor.a = 1.0f; //In.Color.a;
-	Output.RGBColor.rgb = tex2D(FontTextureSampler, In.Tex0).rrr + In.Color.rgb;
-	//	Output.RGBColor.rgb += 1.0f - In.Color.a;
+	Output.RGBColor = float4(1,1,1,1); //.a = 0.0f; //In.Color.a;
+	//Output.RGBColor.rgb = tex2D(FontTextureSampler, In.Tex0).rrr + In.Color.rgb;
+	//Output.RGBColor.rgb += 1.0f - In.Color.a;
 	
 	return Output;
 }
@@ -774,24 +774,24 @@ PS_OUTPUT ps_font_outline(VS_OUTPUT_FONT In)
     float2 duv = dscale * (ddx(uv) + ddy(uv));
     float4 box = float4(uv-duv, uv+duv);
 
-    float asum = samp( box.xy, width )
+    /*float asum = samp( box.xy, width )
                + samp( box.zw, width )
                + samp( box.xw, width )
                + samp( box.zy, width );
 
     // weighted average, with 4 extra points having 0.5 weight each,
     // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + 0.5 * asum) / 3.;
+    alpha = (alpha + 0.5 * asum) / 3.;  */
     // -------
 
     float i_ntour = _intour( dist, width );
 
-    float isum = intsamp( box.xy, width )
+   /* float isum = intsamp( box.xy, width )
                + intsamp( box.zw, width )
                + intsamp( box.xw, width )
                + intsamp( box.zy, width );
 
-    i_ntour = (i_ntour + 0.5 * isum) / 3.;
+    i_ntour = (i_ntour + 0.5 * isum) / 3.; */
 
     Output.RGBColor = float4
     ( /* mix pure black and the text color using the inner contour mask.
@@ -5719,7 +5719,7 @@ PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
     const float dscale = 0.354; // half of 1/sqrt2; you can play with this
     float2 duv = dscale * (ddx(uv) + ddy(uv));
     float4 box = float4(uv-duv, uv+duv);
-
+/*
     float asum = samp( box.xy, width )
                + samp( box.zw, width )
                + samp( box.xw, width )
@@ -5727,17 +5727,17 @@ PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
 
     // weighted average, with 4 extra points having 0.5 weight each,
     // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + 0.5 * asum) / 3.;
+    alpha = (alpha + 0.5 * asum) / 3.; */
     // -------
 
-    float i_ntour = intour( dist, width );
+   float i_ntour = intour( dist, width );
 
-    float isum = intsamp( box.xy, width )
+  /*   float isum = intsamp( box.xy, width )
                + intsamp( box.zw, width )
                + intsamp( box.xw, width )
                + intsamp( box.zy, width );
 
-    i_ntour = (i_ntour + 0.5 * isum) / 3.;
+    i_ntour = (i_ntour + 0.5 * isum) / 3.; */
 
     /* this basically is a boolean variable from the vertex shader that makes
        the outline/shadow either black or white, depending on the font color. */

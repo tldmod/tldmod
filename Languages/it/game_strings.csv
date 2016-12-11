@@ -825,10 +825,10 @@ str_comment_intro_noble_sadistic|Vedo che porti lo stendardo di un nobile, ma no
 str_comment_intro_noble_goodnatured|Vedo che porti lo stendardo di un nobile, ma non ne riconosco lo stemma. Perdona la mia ignoranza, {sire/signora} !  E' bello fare la tua conoscenza.
 str_comment_intro_noble_upstanding|Vedo che porti lo stendardo di un nobile, ma non ne riconosco lo stemma. Senza dubbio sei in cerca di gloria e ricchezza in Calradia. Se fosse questo il caso, ti chiedo solo di mostrare misericordia per quelle povere anime catturate nel sentiero della guerra.
 str_comment_intro_common_liege|Potrai essere nato fra la gente comune, ma sappi che sono sempre alla ricerca di uomini validi che combattano per me, se possono dar prova d'essere meritevoli della mia fiducia.
-str_comment_intro_common_martial|Forse non sei di nobile nascita,ma se dimostri valore da{uomo/donna}, allora sarei lieto di sfidarti in un torneo o in campo
-str_comment_intro_common_badtempered|Se hai qualcosa da dire parla velocemente,perchè non ho tempo da perdere con un comune soldato di ventura
+str_comment_intro_common_martial|Forse non sei di nobile nascita, ma se dimostri valore da {uomo/donna}, allora sarei lieto di sfidarti in un torneo o sul campo di battaglia.
+str_comment_intro_common_badtempered|Se hai qualcosa da dire parla velocemente, perchè non ho tempo da perdere con un comune soldato di ventura.
 str_comment_intro_common_pitiless|Hai l'aspetto di un mercenario, ecco un altro avvoltoio giunto ad ingrassarsi sulle miserie di questa terra.
-str_comment_intro_common_cunning|Beh... Non ho mai sentito parlare di te, ma sembri un {uomo/una donna} che potrebbe far parlare di {se/se}.
+str_comment_intro_common_cunning|Beh... Non ho mai sentito parlare di te, ma sembri un{ uomo/a donna} che potrebbe far parlare di se.
 str_comment_intro_common_sadistic|Di solito taglio la gola alla gente comune che, impudente, si avvicina a me senza invito, ma oggi sono di buon umore.
 str_comment_intro_common_goodnatured| Beh, sembri una  brava persona.
 str_comment_intro_common_upstanding|Che la pace sia con te, e ricorda sempre di temprare il tuo valore con la misericordia, e il tuo coraggio con l'onore.
@@ -1026,105 +1026,105 @@ str_battle_won_grudging_goodnatured|{playername} ! Non posso dire che siamo anda
 str_battle_won_grudging_upstanding|Forse mi sono sbagliato su di te. Il tuo arrivo è stato tempestivo. Hai la mia gratitudine.
 str_battle_won_unfriendly_default|Così sei qui. Beh, meglio tardi che mai, suppongo..
 str_battle_won_unfriendly_martial|Ci siamo scambiati parole dure in passato, ma per adesso gioiamo semplicemente della nostra vittoria.
-; str_battle_won_unfriendly_quarrelsome|If you're standing there waiting for thanks, you can keep waiting. Your help wasn't really needed, but I guess you had nothing better to do, right?
-; str_battle_won_unfriendly_pitiless|You have come here, like a jackal to a lion's kill. Very well then, help yourself to the spoils. I shall not stop you.
-; str_battle_won_unfriendly_cunning|{playername}... Well, I suppose your arrival didn't hurt, although I won't pretend that I'm happy to see you.
-; str_battle_won_unfriendly_sadistic|Back off, carrion fowl! This was my victory, however hard you try to steal the glory for yourself.
-; str_battle_won_unfriendly_goodnatured|Oh, it's you. Well, I suppose I should thank you for your help.
-; str_battle_won_unfriendly_upstanding|Thank you for coming to my support. Now I will be off, before I say something that I regret.
-; str_troop_train_request_default|I need someone like you to knock them into shape.
-; str_troop_train_request_martial|They need someone to show them the meaning of valor.
-; str_troop_train_request_quarrelsome|Fat lazy bastards. They make me puke.
-; str_troop_train_request_pitiless|They are more afraid of the enemy than they are of me, and this will not do.
-; str_troop_train_request_cunning|But men, like swords, are tempered and hardened by fire.
-; str_troop_train_request_sadistic|They need someone with steel in his back to flog some courage into them, or kill them trying.
-; str_troop_train_request_goodnatured|They're good enough lads, but I am afraid that they are not quite ready for a battle just yet.
-; str_troop_train_request_upstanding|It would be tantamount to murder for me to lead them into combat in their current state.
-; str_unprovoked_attack_default|What? Why do you attack us? Speak, you rascal!
-; str_unprovoked_attack_martial|I have no objection to a trial of arms, but I would ask you for what reason you attack us?
-; str_unprovoked_attack_quarrelsome|You're making a big mistake, {boy/girl}. What do you think you're doing?
-; str_unprovoked_attack_pitiless|Indeed? If you really want to die today, I'd be more than happy to oblige you, but I am curious as to what you hope to accomplish.
-; str_unprovoked_attack_cunning|Really? I think that you are acting most unwisely. What do you hope to gain by this?
-; str_unprovoked_attack_sadistic|What's this? Do you enjoy having your eyes put out?
-; str_unprovoked_attack_goodnatured|Why do you do this? We've got no quarrel, {sir/madame}.
-; str_unprovoked_attack_upstanding|I consider this an unprovoked assault, and will protest to your king. Why do you do this?
-; str_unnecessary_attack_default|I will not hesitate to cut you down if pressed, but I will offer you the chance to ride away from this.
-; str_unnecessary_attack_martial|I am eager to take you up on your challenge, {sir/madame}, although I will give you a minute to reconsider.
-; str_unnecessary_attack_quarrelsome|Bah! I'm in no mood for this nonsense today. Get out of my way.
-; str_unnecessary_attack_pitiless|I am in a merciful mood today. I will pretend that I did not hear you.
-; str_unnecessary_attack_cunning|I don't see what you have to gain by making an enemy of me. Maybe you should just ride away.
-; str_unnecessary_attack_sadistic|I have no time to waste on a worm like you. Get out of my way.
-; str_unnecessary_attack_goodnatured|I don't see what you have to gain by picking a fight, {sir/madame}. You can still ride away.
-; str_unnecessary_attack_upstanding|If a fight is what you wish, {sir/madame}, then you will have one, but I will yet offer you the chance to back down.
-; str_lord_challenged_default|As you wish. Prepare to die!
-; str_lord_challenged_martial|So be it. Defend yourself!
-; str_lord_challenged_quarrelsome|You impudent whelp! I'll crush you!
-; str_lord_challenged_pitiless|If you so badly wish to die, then I have no choice but to oblige you.
-; str_lord_challenged_cunning|Well, if you leave me no choice...
-; str_lord_challenged_sadistic|You heap of filth! I'll make you wish you'd never been born.
-; str_lord_challenged_goodnatured|Very well. I had hoped that we might avoid coming to blows, but I see that have no choice.
-; str_lord_challenged_upstanding|So be it. It saddens me that you cannot be made to see reason.
-; str_lord_mission_failed_default|Well, I am disappointed, but I am sure that you will have many chances to redeem yourself.
-; str_lord_mission_failed_martial|There is no honour in failing a quest which you endeavoured to take, but I will accept your word on it.
-; str_lord_mission_failed_quarrelsome|You failed? Bah. I should have expected as much from the likes of you.
-; str_lord_mission_failed_pitiless|You failed? Well. You disappoint me. That is a most unwise thing to do.
-; str_lord_mission_failed_cunning|Well, I am disappointed, but no one can guarantee that the winds of fortune will always blow their way.
-; str_lord_mission_failed_sadistic|Indeed? Those who fail me do not always live to regret it.
-; str_lord_mission_failed_goodnatured|Oh well. It was a long shot, anyway. Thank you for making an effort.
-; str_lord_mission_failed_upstanding|Very well. I am sure that you gave it your best effort.
-; str_lord_follow_refusal_default|Follow you? You forget your station, {sir/madame}.
-; str_lord_follow_refusal_martial|Perhaps if you one day prove yourself a valorous and honourable warrior, then I would follow you. But not today.
-; str_lord_follow_refusal_quarrelsome|Follow someone like you? I don't think so.
-; str_lord_follow_refusal_pitiless|Lords like me do not follow people like you, {sir/madame}.
-; str_lord_follow_refusal_cunning|First show me that you are the type of {man/woman} who will not lead me into disaster, and then perhaps I will follow you.
-; str_lord_follow_refusal_sadistic|I think not! Rather, you should follow me, as a whipped cur follows {his/her} master.
-; str_lord_follow_refusal_goodnatured|Um, I am a bit pressed with errands right now. Perhaps at a later date.
-; str_lord_follow_refusal_upstanding|First show me that you are worthy to lead, and then perhaps I will follow.
-; str_lord_insult_default|base varlot
-; str_lord_insult_martial|dishonourable knave
-; str_lord_insult_quarrelsome|filth-swilling bastard
-; str_lord_insult_pitiless|low-born worm
-; str_lord_insult_cunning|careless oaf
-; str_lord_insult_sadistic|sniveling cur
-; str_lord_insult_goodnatured|unpleasant fellow
-; str_lord_insult_upstanding|disgraceful scoundrel
+str_battle_won_unfriendly_quarrelsome|Se stai aspettando i ringraziamenti, puoi continuare ad aspettare. Il tuo aiuto non era realmente necessario, ma immagino tu non avessi di meglio da fare, dico bene?
+str_battle_won_unfriendly_pitiless|Sei giunto qui come uno sciacallo sulla preda di un leone. Molto bene dunque, arraffa ciò che puoi. Non sarò io a fermarti.
+str_battle_won_unfriendly_cunning|{playername}... Beh, suppongo che il tuo arrivo non sia stato dannoso, anche se non fingerò di essere felice di vederti.
+str_battle_won_unfriendly_sadistic|Stai indietro, avvoltoio! Questa è una mia vittoria, per quanto provi disperatamente ad ottenere gloria per te stesso.
+str_battle_won_unfriendly_goodnatured|Oh, sei tu. Bene, suppongo di doverti ringraziare per l'aiuto.
+str_battle_won_unfriendly_upstanding|Grazie per esser venuto in mio aiuto. Ora mi faccio da parte, prima che possa dire qualcosa di cui potrei pentirmi.
+str_troop_train_request_default|Ho bisogno di qualcuno come te per metterli in riga.
+str_troop_train_request_martial|Loro hanno bisogno di qualcuno che gli mostri il significato di "valore".
+str_troop_train_request_quarrelsome|Grassi e pigri bastardi. Mi fanno venire il vomito.
+str_troop_train_request_pitiless|Hanno più paura del nemico di quanta ne abbiano di me, questo non avverrà.
+str_troop_train_request_cunning|Gli uomini, come le spade, sono temprati e inspessiti dal fuoco.
+str_troop_train_request_sadistic|Hanno bisogno di qualcuno con un po' di spina dorsale che gli instilli un po' di coraggio a frustate, o li uccida nel tentativo.
+str_troop_train_request_goodnatured|Sono bravi ragazzi, ma temo non siano ancora propriamente pronti per la battaglia.
+str_troop_train_request_upstanding|Sarebbe praticamente un omicidio da parte mia condurli in battaglia nel loro stato attuale.
+str_unprovoked_attack_default|Cosa? Perchè ci attacchi? Parla, mascalzone!
+str_unprovoked_attack_martial|Non ho obiezioni per quanto riguarda un duello, ma ti chiederei perchè ci attacchi?
+str_unprovoked_attack_quarrelsome|Stai facendo un grosso errore, {ragazzo/ragazza}. Cosa credi di fare?
+str_unprovoked_attack_pitiless|Davvero? Se sei così desideroso di morire oggi, sarò molto felice di accontentarti, tuttavia sono curioso, cosa speri di ottenere?
+str_unprovoked_attack_cunning|Davvero? Penso tu stia agendo in maniera molto poco saggia. Cosa speri di ottenere con questo?
+str_unprovoked_attack_sadistic|Cos'è questo? Ti piace l'idea di farti cavare gli occhi?
+str_unprovoked_attack_goodnatured|Perchè fai questo? Non abbiamo sangue cattivo tra di noi, {milord/milady}
+str_unprovoked_attack_upstanding|Considero questo un attacco senza motivo, e protesterò presso il tuo re. Perchè lo fai?
+str_unnecessary_attack_default|Non esiterò ad abbatterti se sarò costretto, ma ti offro la possibilità di andartene.
+str_unnecessary_attack_martial|Sono più che desideroso di accettare la vostra sfida, {milord/milady}, tuttavia vi darò un minuto per ripensarci.
+str_unnecessary_attack_quarrelsome|Bah! Non sono dell'umore per queste facezie oggi. Fuori dalla mia vista!
+str_unnecessary_attack_pitiless|Oggi mi sento particolarmente misericordioso. Fingerò di non averti sentito.
+str_unnecessary_attack_cunning|Non capisco cosa guadagneresti dal fare di me un tuo nemico. Magari dovresti solo andartene.
+str_unnecessary_attack_sadistic|Non ho tempo da perdere con un verme come te. Fuori dalla mia vista.
+str_unnecessary_attack_goodnatured|Non capisco cosa ci guadagnate dal cercare la lotta, {milord/milady}. Potete ancora andarvene.
+str_unnecessary_attack_upstanding|Se è un combattimento che cercate, {milord/milady}, allora ne avrete uno, ma vi offro ancora la possibilità di arrendervi.
+str_lord_challenged_default|Come desideri. Preparati a morire!
+str_lord_challenged_martial|Così sia. In guardia!
+str_lord_challenged_quarrelsome|Moccioso insolente! Ti distruggerò!
+str_lord_challenged_pitiless|Se desideri così tanto morire, non ho altra scelta che accontentarti.
+str_lord_challenged_cunning|Beh, se non mi lasciate altra scelta..
+str_lord_challenged_sadistic|Tu, pila di sterco! Ti farò desiderare di non essere mai nato!
+str_lord_challenged_goodnatured|Molto bene. Speravo che avremmo potuto evitare di giungere allo scontro, ma vedo che non ho altra scelta.
+str_lord_challenged_upstanding|Così sia. Mi intristisce vedere che non vi si può far ragionare.
+str_lord_mission_failed_default|Beh,  sono deluso, ma sono sicuro che avrete moltre altre occasioni di redimervi.
+str_lord_mission_failed_martial|Non c'è onore nel fallire una missione che ti sei impegnato a completare, ma accetterò la tua parola.
+str_lord_mission_failed_quarrelsome|Hai fallito? Bah, me lo sarei dovuto aspettare da uno come voi.
+str_lord_mission_failed_pitiless|Hai fallito? Beh, mi deludi. Ed è una cosa molto poco saggia da fare.
+str_lord_mission_failed_cunning|Beh, sono deluso, ma nessuno può garantire che i venti della fortuna soffieranno sempre in proprio favore.
+str_lord_mission_failed_sadistic|Davvero? Coloro che mi deludono, non sempre sopravvivono per pentirsene.
+str_lord_mission_failed_goodnatured|Oh beh, era comunque difficile. Grazie comunque di averci provato.
+str_lord_mission_failed_upstanding|Molto bene, sono sicuro che avete fatto del vostro meglio.
+str_lord_follow_refusal_default|Seguirvi? Vi dimenticate il vosto posto, {milord/milady}.
+str_lord_follow_refusal_martial|Magari se un giorno vi dimostrerete un combattente valoroso ed onorevole, vi seguirò. Ma non oggi.
+str_lord_follow_refusal_quarrelsome|Seguire qualcuno come voi? Non credo proprio.
+str_lord_follow_refusal_pitiless|I signori come me non seguono la gente come voi, {milord/milady}.
+str_lord_follow_refusal_cunning|Prima dimostratemi che non siete il tipo di {uomo/donna} che mi porterà al disastro, allora forse vi seguirò.
+str_lord_follow_refusal_sadistic|Non credo proprio! Piuttosto, voi dovreste seguire me, così come {un cane/una cagna} frustato segue il suo padrone!
+str_lord_follow_refusal_goodnatured|Uhm, sono un po' impegnato con delle commissioni al momento. Magari più avanti.
+str_lord_follow_refusal_upstanding|Prima dimostratemi di essere degno di condurre, e allora forse vi seguirò.
+str_lord_insult_default|vile furfante
+str_lord_insult_martial|canaglia disonorevole
+str_lord_insult_quarrelsome|bastardo succhiasozzura
+str_lord_insult_pitiless|verme di bassa lega
+str_lord_insult_cunning|bufalo incapace
+str_lord_insult_sadistic|cane piagnucoloso
+str_lord_insult_goodnatured|persona sgradevole
+str_lord_insult_upstanding|disgraziata canaglia
 str_rebellion_dilemma_default|[feudatario]
-; str_rebellion_dilemma_martial|{s45} was clearly wronged. Although I gave an oath to {s46}, it does not bind me to support him if he usurped his throne illegally.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself .
-; str_rebellion_dilemma_pitiless|Hmm. {s45} says {reg3?she:he} is the rightful heir to the throne. That is good -- it absolves me of my oath to {s46}. But still I must weight my decision carefully.
-; str_rebellion_dilemma_cunning|Hmm. I gave an oath of homage to {s46}, yet the powerful are not bound by their oaths as our ordinary people. Our duty is to our own ability to rule, to impose order and prevent the war of all against all.
-; str_rebellion_dilemma_sadistic|Hmm. In this vile world, a wise man must think of himself, for no one else will. So -- what's in it for me?
-; str_rebellion_dilemma_goodnatured|I do not know what to say. I gave an oath to {s46} as the lawful ruler, but if he is not the lawful ruler, I don't know if I am still bound.
-; str_rebellion_dilemma_upstanding|This is troublesome. It is a grave thing to declare my homage to {s46} to be null and void, and dissolve the bonds which keep our land from sinking into anarchy. Yet I am also pledged to support the legitimacy of the succession, and {s45} also has a valid claim to the throne.
+str_rebellion_dilemma_martial|{s45} ha chiaramente subito un torto. Anche se ho prestato giuramento a {s46}, non mi lega a fornirgli supporto se ha usurpato il trono.
+str_rebellion_dilemma_quarrelsome|Hmm. {s46} non mi ha mai dato ciò che mi spetta, quindi non credo di dovergli molto. Tuttavia, magari {s45} non sarà tanto meglio, e {s46} si è almeno mostrato.
+str_rebellion_dilemma_pitiless|Hmm. {s45} dice che {reg3?she:he} è il legittimo erede al trono.  Questo è un bene -- mi ascioglie dal mio giuramento a {s46}. Ma nonostante ciò, devo comunque soppesare le mie decisioni con attenzione.
+str_rebellion_dilemma_cunning|Hmm. Ho fatto un giuramento di rispetto a {s46}, tuttavia i potenti non sono legati ai loro giuramenti come le nostre normali persone. Il nostro compito ci è dato dalla nostra stessa capacità di governare, di imporre l'ordine e prevenire la guerra totale.
+str_rebellion_dilemma_sadistic|Hmm. in questo vile mondo un'uomo saggio deve pensare solo a se stesso. Quindi, che ci guadagno? 
+str_rebellion_dilemma_goodnatured|Non so cosa dire. Ho giurato fedeltà a {s46} , ma se non regnasse in modo legale, allora non so il mio giuramento valga ancora.
+str_rebellion_dilemma_upstanding|Questo è problematico. E' un serio problema annullare i miei giuramenti  a {s46}, e sciogliere così il legame che impedisce alla nostra nazione di sprofondare nell'anarchia totale. Tuttavia sono anche tenuto a sostenere la legittimità della successione, e anche {s45} ha dei validi motivi per reclamare il trono.
 str_rebellion_dilemma_2_default|[feudatario]
-; str_rebellion_dilemma_2_martial|On the other hand, {s46} has led us in war and peace, and I am loathe to renounce my allegiance.
-; str_rebellion_dilemma_2_quarrelsome|So tell me, why should I turn my back on the bastard I know, in favor of {reg3?a woman:the bastard} I don't know?
-; str_rebellion_dilemma_2_pitiless|It is a most perilous position to be in, to be asked whom I would make {reg3?ruler:king} of this land. Yet it is also a time of opportunity, for me to reap the rewards that have always been my due!
-; str_rebellion_dilemma_2_cunning|{s46} has been challenged, and thus he will never be able to rule as strongly as one whose claim has never been questioned. Yet if {s45} takes the throne by force, {reg3?she:he} will not be as strong as one who succeeded peacefully.
-; str_rebellion_dilemma_2_sadistic|Perhaps if I join {s45} while {reg3?she:he} is still weak {reg3?she:he} will enrich me, but perhaps if I bring {s46} your head he will give me an even greater reward.
-; str_rebellion_dilemma_2_goodnatured|{s46} has always treated me decently, yet it's true that he did wrong to {s45}. I hesitate to renounce my homage to {s46}, yet I also don't think it's right to support injustice.
-; str_rebellion_dilemma_2_upstanding|I feel that I must do whatever is best for the realm, to avoid it being laid waste by civil war and ravaged by its enemies.
+str_rebellion_dilemma_2_martial|D'altro canto, {s46} ci ha guidato in guerra e in pace, e detesterei dover rinunciare alla mia alleanza.
+str_rebellion_dilemma_2_quarrelsome|Perciò dimmi, perché mai dovrei voltare le spalle al bastardo che conosco, in favore di {reg3?a woman:the bastard} che non conosco?
+str_rebellion_dilemma_2_pitiless|E' una posizione alquanto precaria nella cui trovarsi, che mi sia chiesto chi io debba rendere {reg3?ruler:king} di questa terra. Tuttavia è anche un'opportunità per me di cogliere i frutti di quella che è sempre stata la mia causa!
+str_rebellion_dilemma_2_cunning|{s46} è stato sfidato, e perciò non sarà mai in grado di governare fortemente come uno la cui la cui rivendicazione non è mai stata messa in discussione. Tuttavia se {s45} dovesse prendere il trono con la forza, {reg3?she:he} non sarà mai forte come quello che è susseguito in modo pacifico.
+str_rebellion_dilemma_2_sadistic|Forse se mi unissi a {s45} mentre {reg3?lei:lui} è ancora debole {reg3?lei:lui} potrebbe arricchirmi, ma forse se porto a {s46} la tua testa mi darà una maggior ricompensa.
+str_rebellion_dilemma_2_goodnatured|{s46} mi ha sempre trattato bene, anche se è vero che ha avuto un pessimo comportamento con {s45} Sono esitante a recedere la mia obbedienza a {s46}, tuttavia non penso che sia giusto sostenere un'ingiustizia.
+str_rebellion_dilemma_2_upstanding|Ritengo di dover fare quello che è meglio per il regno, in modo da evitare che sia devastato dalla guerra civile e distrutto dai suoi nemici.
 str_rebellion_prior_argument_very_favorable|Ho già sentito alcune teorie che ti supportano come candidato al trono, e io sono più o meno d'accordo.
 str_rebellion_prior_argument_favorable|Ho già sentito alcune teorie che ti supportano come candidato al trono, e io sono più o meno d'accordo.
-; str_rebellion_prior_argument_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I do not find them convincing.
-; str_rebellion_prior_argument_very_unfavorable|I have already heard some arguments for supporting your candidate for the throne, but I disagree with most of them.
+str_rebellion_prior_argument_unfavorable|Ho già ascoltato alcune delle argomentazione per supportare il tuo candidato al trono, ma non le trovo del tutto convincenti.
+str_rebellion_prior_argument_very_unfavorable|Ho già ascoltato alcune delle argomentazione per supportare il tuo candidato al trono, ma mi trovo in disaccordo con la maggior parte di esse.
 str_rebellion_rival_default|[feudatario]
-; str_rebellion_rival_martial|{s49} your ally {s44} once questioned my honour and my bravery. It's not often I get the chance to face him in battle, and make him retract his statement.
-; str_rebellion_rival_quarrelsome|{s49} you're working with {s44}. He's a crafty weasel, and I don't trust him one bit.
-; str_rebellion_rival_pitiless|{s49} you seem to have enlisted the support of {s44} -- who is soft, and weak, and not fit to govern a fief, and whom I have always detested.
-; str_rebellion_rival_cunning|{s49} {s44}, who has already joined you, is headstrong and quarrelsome, and a bit of liability.
-; str_rebellion_rival_sadistic|{s49} I have no desire to fight alongside your ally {s44}, who puts on such a nauseating display of virtue.
-; str_rebellion_rival_goodnatured|{s49} I'd be reluctant to be on the same side as {s44}, who has quite a reputation for cruelty.
-; str_rebellion_rival_upstanding|{s49} your ally {s44} is in my opinion a dangerous, unreliable, and highly unprincipled man.
-; str_rebellion_argument_favorable|I respect your line of argument
-; str_rebellion_argument_neutral|I find your line of argument only moderately compelling
-; str_rebellion_argument_unfavorable|I do not find your line of argument compelling
-; str_rebellion_persuasion_favorable|you state your case eloquently
-; str_rebellion_persuasion_neutral|you make a reasonable case
-; str_rebellion_persuasion_unfavorable|you make an unconvincing case
-; str_rebellion_relation_very_favorable|I have the greatest respect for you personally.
-; str_rebellion_relation_favorable|I know and respect you personally.
-; str_rebellion_relation_neutral|I do not know you as well as I might like.
+str_rebellion_rival_martial|{s49}, il tuo alleato {s44} a suo tempo mise in discussione il mio onore e il mio coraggio. Purtroppo non mi è capitato di fronteggiarlo in battaglia, per dargli modo di ritrattare le sue dichiarazioni.
+str_rebellion_rival_quarrelsome|{s49} tu stai collaborando con {s44}. E' una donnola dispettosa ma furba, e non mi fido di quella persona neanche un po'.
+str_rebellion_rival_pitiless|{s49}, ho saputo che stai supportando {s44}.. E' una persona molle e debole, non adatta a governare un feudo, il genere di persona che ho sempre detestato.
+str_rebellion_rival_cunning|{s49}, {s44}, che fa ora parte della tua compagnia, è una testa dura rissosa, e manca di responsabilità.
+str_rebellion_rival_sadistic|{s49}, non ho alcun desiderio di combattere a fianco del tuo alleato {s44}, che non perde occasione per sfoggiare le proprie virtù.
+str_rebellion_rival_goodnatured|{s49}, sono riluttante a combattere dallo stesso lato con {s44}, che ha una reputazione di persona crudele.
+str_rebellion_rival_upstanding|{s49}, il tuo alleato {s44} secondo me è una persona pericolosa, inaffidabile e particolarmente priva di principi.
+str_rebellion_argument_favorable|Rispetto la tua argomentazione
+str_rebellion_argument_neutral|Trovo che la tua argomentazione non sia pienamente soddisfacente
+str_rebellion_argument_unfavorable|Trovo che la tua argomentazione non sia affatto convincente
+str_rebellion_persuasion_favorable|Hai chiarito bene la tua opinione.
+str_rebellion_persuasion_neutral|Hai esposto ragionevolmente la tua causa.
+str_rebellion_persuasion_unfavorable|Sei stato poco convincente.
+str_rebellion_relation_very_favorable|Ho il più alto rispetto per la tua persona.
+str_rebellion_relation_favorable|Ti conosco e ti rispetto.
+str_rebellion_relation_neutral|Non ti conosco bene quanto vorrei.
 str_rebellion_relation_unfavorable|Io non ho fiducia in voi.
 str_and_comma_3|Inoltre, 
 str_but_comma_3|Comunque, 
@@ -1133,243 +1133,243 @@ str_but_comma_1|, ma
 str_and_comma_2|. Inoltre,
 str_but_comma_2|. Nonchè,
 str_rebellion_agree_default|[feudatario]
-; str_rebellion_agree_martial|I have decided. I will back {s45} as the rightful heir.
-; str_rebellion_agree_quarrelsome|Ahh, I've thought long enough. I never did like {s46} much anyway. Let's go take his throne away from him.
-; str_rebellion_agree_pitiless|You are fortunate. I have decided to join you. Pray do not give me cause to regret this decision.
-; str_rebellion_agree_cunning|This is a most dangerous decision, but after careful consideration, I have decided that I will join you. Let's hope it is for the best.
-; str_rebellion_agree_sadistic|I have decided. I will back your {reg3?woman:man} {s45}. But you'd best make sure that {reg3?she:he} rewards me well!
-; str_rebellion_agree_goodnatured|All right. I think your {reg3?woman:man} will be a good ruler. I'll join you.
-; str_rebellion_agree_upstanding|So be it. My first duty is to this realm, and to save it from lawlessness I will back {s45} and renounce my homage to {s46}. May the Heavens forgive me if I do wrong.
+str_rebellion_agree_martial|Ho assunto una decisione. Farò tornare {s45} quale legittimo erede.
+str_rebellion_agree_quarrelsome|Ahh, ci ho riflettuto abbastanza. {s46} non mi è mai piaciuto un granchè, comunque. Andiamo a strappargli il trono.
+str_rebellion_agree_pitiless|Ne hai di fortuna.. Ho deciso di unirmi a te. Prega di non darmi occasione di pentirmene.
+str_rebellion_agree_cunning|Questa decisione è irta di pericoli, ma dopo un'attenta considerazione, ho deciso che mi unirò a te. Speriamo il meglio per tutti noi.
+str_rebellion_agree_sadistic|Ho deciso. Riavrai {reg3?la tua donna:il tuo uomo}, {s45}. Ma sarà meglio che {reg3?lei:lui} mi frutti bene !
+str_rebellion_agree_goodnatured|Va bene. Penso che {reg3?la tua donna:il tuo uomo} sarà un buon governante. Mi unisco a te.
+str_rebellion_agree_upstanding|Così sia. Il mio primo dovere è verso questo regno, e per salvarlo dai senza legge lascerò {s45} e rinuncerò alla mia obbedienza verso {s46}. Che i cieli mi perdonino se avrò agito male.
 str_rebellion_refuse_default|[feudatario]
-; str_rebellion_refuse_martial|I am sorry. {s45} has a good claim, but it's not enough for me to turn my back on {s46}. I will remain loyal to my liege.
-; str_rebellion_refuse_quarrelsome|Nah. Your whelp {s45} doesn't have what it takes to rule this realm. I'm sticking with {s46}.
+str_rebellion_refuse_martial|Mi spiace. {s45} fa delle rivendicazioni condivisibili, ma non è sufficiente a farmi voltare le spalle a {s46}. Resterò leale al mio signore.
+str_rebellion_refuse_quarrelsome|Nah. Quel cucciolo di {s45} non ha quello che serve per governare questo regno. Resto stretto a {s46}.
 str_talk_later_default|[feudatario]
-; str_talk_later_martial|Now is not the time to talk politics! I am here today with my fellow lords, armed for battle. You'd better prepare to fight.
-; str_talk_later_quarrelsome|Do you expect me to discuss betraying my liege with you, while we are surrounded by his army? What do you take me for, a bloody idiot?
-; str_talk_later_pitiless|Still your tongue! Whatever I have to say on this matter, I will not say it here and now, while we are in the midst of our army.
-; str_talk_later_cunning|This is hardly the time or the place for such a discussion. Perhaps we can discuss it at a later time and a different place, but for now we're still foes.
-; str_talk_later_sadistic|You should have your mouth sewn shut! Can you imagine what would happen if the other vassals see me talking to you of treason?
-; str_talk_later_goodnatured|So you wish to discuss your rebellion with me? Try that again when we aren't surrounded by my liege's army, and I will hear what you have to say.
-; str_talk_later_upstanding|Whatever my thoughts on the legitimacy of the succession, I am not about to discuss them here and now. If we meet again when we can talk in privacy, I will hear what you have to say on the matter. But for now, consider me your enemy.
-; str_gossip_about_character_default|They say that {s6} doesn't possess any interesting character traits.
-; str_gossip_about_character_martial|They say that {s6} loves nothing more than war.
-; str_gossip_about_character_quarrelsome|They say that {s6} almost came to blows with another lord lately, because the man made a joke about his nose.
-; str_gossip_about_character_selfrighteous|I heard that {s6} had a squire executed because the unfortunate man killed a deer in his forest.
-; str_gossip_about_character_cunning|They say that {s6} is a cunning opponent.
-; str_gossip_about_character_sadistic|They say that {s6} likes to torture his enemies. I wouldn't want to get on the bad side of that man.
-; str_gossip_about_character_goodnatured|They say that {s6} is a good man and treats people living in his lands decently. That is more than what can be said for most of the nobles.
-; str_gossip_about_character_upstanding|People say that it is good to be in the service of {s6}. He is good to his followers, and rewards them if they work well.
-; str_latest_rumor|The latest rumor you heard about {s6} was:
-; str_faction_strength_crushed|crushed
-; str_faction_strength_spent_and_wavering|spent and wavering
-; str_faction_strength_weakened|weakened
-; str_faction_strength_fair|fair
-; str_faction_strength_average|average
-; str_faction_strength_strong|strong
-; str_faction_strength_quite_strong|quite strong
-; str_faction_strength_very_strong|very strong
-; str_faction_strength_unmatched|unmatched
+str_talk_later_martial|Non è questo il tempo di conversare di politica ! Sono qui oggi con i miei compagni lords, armato per la battaglia. Faresti meglio a prepararti per il combattimento.
+str_talk_later_quarrelsome|Davvero ti aspetti che ora mi metta a discutere di tradire il mio signore, mentre siamo circondati dal suo esercito ? Per chi mi hai preso, per un idiota ?
+str_talk_later_pitiless|Frena la tua lingua ! Qualunque cosa avessi da dire su questa faccenda, non la dirò ora e qui, mentre siamo nel mezzo dei nostri eserciti.
+str_talk_later_cunning|Non è proprio il momento adatto per questo genere di discussioni. Forse ne potremo conversare in un tempo futuro e in un luogo diverso, ma per adesso restiamo avversari.
+str_talk_later_sadistic|Cuciti la bocca ! Riesci ad immaginare quello che potrebbe succedere se gli altri vassalli mi vedessero parlare con te di tradimento ?
+str_talk_later_goodnatured|E così vorresti parlare della tua ribellione con me ? Prova a farlo quando non siamo circondati dagli eserciti del mio signore, e forse ascolterò quello che avrai da dire.
+str_talk_later_upstanding|Quali che siano i miei pensieri sulla legittimità della successione, non starò a discuterne qui e ore. Se ci incontreremo ancora potremo parlarne in privato, e ascolterò quello che avrai da dire in merito. Ma per adesso, considerami un tuo nemico.
+str_gossip_about_character_default|Dicono che {s6} non possiede tratti caratteriali interessanti.
+str_gossip_about_character_martial|Dicono che {s6} non ama altro che la guerra.
+str_gossip_about_character_quarrelsome|Dicono che {s6} ha avuto un'accesa esplosione d'ira verso un altro lord recentemente, perché lo canzonò per il suo naso.
+str_gossip_about_character_selfrighteous|Ho saputo che {s6} ha fatto giustiziare uno scudiero perché lo sfortunato uomo ha ucciso un cervo nella sua foresta.
+str_gossip_about_character_cunning|Dicono che {s6} sia un astuto avversario.
+str_gossip_about_character_sadistic|Dicono che a {s6} piaccia torturare i suoi nemici. Non vorrei mai trovarmi dalla parte sbagliata nei confronti di quell'uomo..
+str_gossip_about_character_goodnatured|Dicono che {s6} è un buon uomo e che tratta il popolo che vive in queste terre umanamente. Questo è già più di quanto si possa dire della maggior parte dei nobili..
+str_gossip_about_character_upstanding|La gente dice che è un bene essere al servizio di {s6}. E' buono con i suoi sudditi e li ricompensa se lavorano bene.
+str_latest_rumor|Le ultime indiscrezioni che hai sentito su {s6} sono le seguenti:
+str_faction_strength_crushed|Schiacciato
+str_faction_strength_spent_and_wavering|Esaurito e vacillante
+str_faction_strength_weakened|Indebolito
+str_faction_strength_fair|Giusto
+str_faction_strength_average|Scarso
+str_faction_strength_strong|Forte
+str_faction_strength_quite_strong|Abbastanza forte
+str_faction_strength_very_strong|Molto forte
+str_faction_strength_unmatched|Imbattibile
 str_faction_strength_last|NON VALIDO
 str_theater_se|Gondor
 str_theater_sw|Rohan
-; str_theater_c|South Rhovanion
-; str_theater_n|North Rhovanion
-; str_faction_side_name|the Free People
-; str_faction_side_name1|the Naked Eye
-; str_faction_side_name2|the White Hand
-; str_party_greet_friend_gondor|Hail, friend of the White Tree!
-; str_party_greet_enemy_gondor|Draw your swords if you dare, enemies of Gondor!
-; str_party_greet_friend_dwarf|Hail from the Durin's folk, dwarf-friend!
-; str_party_greet_enemy_dwarf|Baruk Khazâd! Khazâd ai-mênu!
-; str_party_greet_friend_rohan|Hail and well met, Rohirrim friend!
-; str_party_greet_enemy_rohan|The Riders of Rohan are here to challenge you!
-; str_party_greet_friend_mordor|Victory for the Eye!
-; str_party_greet_enemy_mordor|Your heads will look nice on the gates of Morannon!
-; str_party_greet_friend_isengard|Hail the White Hand!
-; str_party_greet_enemy_isengard|The Wise Master shall be pleased when I show him your bodies!
-; str_party_greet_friend_lorien|Hail, friend of fair Lorien!
-; str_party_greet_enemy_lorien|Foul thing, we will put an end to your suffering!
-; str_party_greet_friend_imladris|Hail, friend of Imladris and Elrond!
-; str_party_greet_enemy_imladris|Today we make battle, enemies of Imladris and all that is fair!
-; str_party_greet_friend_woodelf|Hail, friend of the Silvan Elves of Mirkwood!
+str_theater_c|Rhovaniano del Sud
+str_theater_n|Rhovaniano del Nord
+str_faction_side_name|Il Popolo Libero
+str_faction_side_name1|L'Occhio Nudo
+str_faction_side_name2|La Mano Bianca
+str_party_greet_friend_gondor|Salute, amico dell'Albero Bianco !
+str_party_greet_enemy_gondor|Estraete le vostre spade, se osate, nemici di Gondor !
+str_party_greet_friend_dwarf|Salute dalle genti di Durin, amico dei nani !
+str_party_greet_enemy_dwarf|Baruk Khazâd! Khazâd ai-mênu!
+str_party_greet_friend_rohan|Salute, ben trovato, amico dei Rohirrim !
+str_party_greet_enemy_rohan|I Cavalieri di Rohan sono qui per sfidarti !
+str_party_greet_friend_mordor|Vittoria per l'Occhio !
+str_party_greet_enemy_mordor|Le vostre teste staranno bene sui cancelli di Morannon !
+str_party_greet_friend_isengard|Salute alla Mano Bianca !
+str_party_greet_enemy_isengard|Il Saggio Maestro sarà compiaciuto quando gli mostrerò i vostri corpi !
+str_party_greet_friend_lorien|Salute, amico di Lorien !
+str_party_greet_enemy_lorien|Strana creatura, porremo fine alle tue sofferenze !
+str_party_greet_friend_imladris|Salute, amici di Imladris e di Elrond !
+str_party_greet_enemy_imladris|Oggi saremo in battaglia, nemici di Imladris, com'è giusto che sia !
+str_party_greet_friend_woodelf|Salute, amici degli Elfi Silvani di Mirkwood !
 str_party_greet_enemy_woodelf|Tutti quelli che entrano a Bosco Atro con cattive intenzioni non ne usciranno mai più!
-; str_party_greet_friend_dale|Hail, friend of proud Dale!
+str_party_greet_friend_dale|Salute, amici dell'orgogliosa Dale !
 str_party_greet_enemy_dale|Abbassate le spade, noi siamo gli Uomini di Dale!
-; str_party_greet_friend_harad|Welcome, friend of the Haradrim!
-; str_party_greet_enemy_harad|Your many bodies shall be ground into the sand!
-; str_party_greet_friend_rhun|Greetings, friend of the Easterling tribes and Dorwinion!
-; str_party_greet_enemy_rhun|Dwarves and Men are no match for our fierceness!
-; str_party_greet_friend_khand|Jus jívati jyók, friend of the Variags! Your battle scars honour you.
-; str_party_greet_enemy_khand|Put on the masks of warriors, for today you shall meet your doom!
-; str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad, friend of the Corsairs!
-; str_party_greet_enemy_umbar|If we were at sea, you would dance on a plank soon enough!
-; str_party_greet_friend_moria|Hail the White Hand!
-; str_party_greet_enemy_moria|You shall have your throats cut by the orcs of Moria!
-; str_party_greet_friend_guldur|Victory for the Eye!
-; str_party_greet_enemy_guldur|The Elves and their friends shall fall under our blades!
-; str_party_greet_friend_gundabad|Fear the power of Angmar!
-; str_party_greet_enemy_gundabad|We shall descend on you and feast on your entrails!
-; str_party_greet_friend_dunland|Hail, enemy of the horse-people!
-; str_party_greet_enemy_dunland|Your homes will burn and your families shall be cut down!
-; str_party_greet_friend_beorn|Hail, friend of Beorn!
-; str_party_greet_enemy_beorn|You will taste the fury of the bear people!
+str_party_greet_friend_harad|Salute, amici di Haradrim !
+str_party_greet_enemy_harad|Molti dei vostri corpi cadranno nella sabbia !
+str_party_greet_friend_rhun|I nostri omaggi, amici delle tribà degli Easterling e di Dorwinion !
+str_party_greet_enemy_rhun|Nani e uomini non hanno speranze contro la nostra ferocia !
+str_party_greet_friend_khand|Jus jívati jyók, amici dei Variags! Le cicatrici di battaglia che porti ti conferiscono onore.
+str_party_greet_enemy_khand|Indossate la maschera dei guerrieri, perché oggi incontrerete il vostro destino !
+str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad, amico dei Corsari !
+str_party_greet_enemy_umbar|Se fossimo in mare aperto, staresti a ballare sull'asse dei condannati !
+str_party_greet_friend_moria|Salute alla Mano Bianca !
+str_party_greet_enemy_moria|Che le vostre gole siano tagliate dagli Orchi di Moria !
+str_party_greet_friend_guldur|Vittoria per l'Occhio !
+str_party_greet_enemy_guldur|Gli Elfi e i loro amici cadranno sotto le nostre lame !
+str_party_greet_friend_gundabad|Temete il potere di Angmar !
+str_party_greet_enemy_gundabad|Scenderemo a voi e festeggeremo con le vostre interiora !
+str_party_greet_friend_dunland|Salute, nemico del popolo dei cavalli !
+str_party_greet_enemy_dunland|Le vostre case bruceranno e le vostre famiglie saranno sterminate !
+str_party_greet_friend_beorn|Salute, amico di Beorn !
+str_party_greet_enemy_beorn|Assaggerai la furia del Popolo dell'Orso !
 str_subfaction_gondor_name_begin|Gondor
 str_subfaction_gondor_name1|Pelagir
 str_subfaction_gondor_name2|Dol Amroth 
-; str_subfaction_gondor_name3|Lamedon
+str_subfaction_gondor_name3|Lamedon
 str_subfaction_gondor_name4|Lossarnach
 str_subfaction_gondor_name5|Pinnath Gelin 
-; str_subfaction_gondor_name6|Blackroot Vale
-; str_subfaction_gondor_name7|Ithilien
+str_subfaction_gondor_name6|Blackroot Vale
+str_subfaction_gondor_name7|Ithilien
 str_default_rumor|La guerra. Tutti ne stanno parlando.
-; str_rohan_rumor_begin|It breaks my heart to see my babies off to war! But without them the men would have to walk.
-; str_rohan_rumor_2|I hear orcs eat horses. Foul beasts! They also eat prisoners. That is bad too, of course.
-; str_rohan_rumor_3|There are no horses finer than Rohan's. Even the Elves get their horses from us!
-; str_rohan_rumor_4|If you can heal men, please treat my horses with just as much care should they be wounded.
-; str_rohan_rumor_5|Bring me eight Sumpter Horses, he says... after the seven he asked for yesterday.  Makes you wonder.
-; str_rohan_rumor_6|Gondor prefers sturdier horses. Our riders enjoy speed. The Elves get only the best. And our enemies steal them!
-; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superiour but require a more experienced rider to handle.
-; str_rohan_rumor_8|Wargs are slower than horses but can turn faster. They are also quite fragile compared to a well-bred warhorse.
-; str_rohan_rumor_9|Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over.
-; str_rohan_rumor_10|Being the best horsemen in the realm starts with raising the best horses.
-; str_rohan_rumor_11|Most of the horses you see in Gondor came from us. They prefer a slightly stronger, slower horse that can carry their heavy armour.
-; str_rohan_rumor_12|We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small.
-; str_rohan_rumor_13|Saruman's orcs are nasty but don't wear much protection. They're no match for a good axe.
-; str_rohan_rumor_14|Our throwing axes and spears may seem bulky, but how many chances do you have to throw a missile before you ride down the foe? Make it count by throwing something with some heft.
-; str_rohan_rumor_15|Hitting an orc with an arrow loosed from horseback looks difficult because it is, but the price of charging a rank of long pikes is higher.
-; str_rohan_rumor_16|Gondor practices archery. We practice horse archery. Dunlendings practice neither.
-; str_rohan_rumor_17|Many of Saruman's orcs are deadly archers. Many are not. A wise cavalry commander shouldn't wait to discover which is which.
-; str_rohan_rumor_18|We are all friends here. Or should be; for the laughter of Mordor will be our only reward, if we quarrel.
-; str_rohan_rumor_19|Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world.
-; str_gondor_rumor_begin|Gondor has no king and enemies are at the doorstep. The shadow grows in the east. Things do not look good.
-; str_gondor_rumor_2|In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?
-; str_gondor_rumor_3|Mordor is a dry, infertile land. What do the creatures there eat? Surely not one another? Or maybe...
-; str_gondor_rumor_4|We toil our lands, as we have done for generations. Our past is glorious and brave, but our future looks uncertain.
-; str_gondor_rumor_5|The Shadow's resources for war seem limitless, but they are borne on the backs of a vast pool of slave labour.
-; str_gondor_rumor_6|We know of the elves in the north, but nowadays noone gets to see them anymore.
-; str_gondor_rumor_7|I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens.
-; str_gondor_rumor_8|Why does Umbar keep invading us? Their Corsairs would have profited far more from trading with us. What plunder could match the riches they'd have hauled away selling old Numenorian artifacts to Gondorian nobles?
-; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
-; str_gondor_rumor_10|Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea.
+str_rohan_rumor_begin|Mi spezza il cuore vedere i miei ragazzi in guerra ! Ma senza di loro gli uomini avrebbero dovuto camminare.
+str_rohan_rumor_2|Ho sentito Orchi e cavalli. Bestie pazze ! Mangiano anche i prigionieri, anche questo è un male, ovviamente..
+str_rohan_rumor_3|Non ci sono cavalli migliori di quelli di Rohan. Anche gli Elfi comprano i loro cavalli da noi !
+str_rohan_rumor_4|Se puoi guarire gli uomini, ti prego di avere cura dei miei cavalli come ne hai delle persone.
+str_rohan_rumor_5|Portami otto cavalli da soma, ha detto.. Dopo i sette che aveva chiesto ieri. Ti fa sorgere delle domande.
+str_rohan_rumor_6|Gondor preferisce cavalli più robusti. I nostri cavalieri amano la velocità. Gli Elfi prendono solo i migliori, mentrei nostri nemici li rubano !
+str_rohan_rumor_7|Ho visto le razze del mare e i cavalli dei Variag. I cavalli di Rohano sono chiaramente superiori, ma richiedono cavalieri più esperti.
+str_rohan_rumor_8|I Wargs sono più lenti dei cavalli, ma possono svoltare più rapidamente. Sono anche piuttosto fragili, paragonati ad un cavallo da guerra ben bardato.
+str_rohan_rumor_9|Armate marciano su Rohan con picche e lance contro i nostri bravi cavalieri. Saruman, il traditore, taglierà l'intera foresta di Fangorn per equipaggiare i suoi eserciti, prima che questa guerra finisca.
+str_rohan_rumor_10|Per essere i migliori cavalieri del regno bisogna prima allevare i migliori cavalli.
+str_rohan_rumor_11|Molti dei cavalli che vedi a Gondor provengono da noi.Preferiscono un cavallo leggermente più forte e lento che possa trasportare le loro pesanti armature.
+str_rohan_rumor_12|In Rohan diciamo che un cavallo è come un uomo. Che se un cavallo è buono è pari ad un buon uomo, e che se un cavallo è cattivo, è come un uomo cattivo. Che se un cavallo è rabbioso è pari ad un uomo iroso, che se un cavallo è triste è come un uomo quando il suo cuore è pesante. Diciamo che se un cavallo è felice, è uguale ad un uomo quando è felice. Diciamo che se un cavallo ha fame è come un uomo affamato. Diciamo che quando un cavallo cammina è come un uomo che cammina, e che se un cavalllo è vecchio è come un uomo anziano, che se un cavallo è giovane è pari ad un uomo giovane. E che se un cavallo è piccolo, vale quanto un uomo piccolo.
+str_rohan_rumor_13|Gli orchi di Saruman sono malvagi ma non indossare troppe protezioni. Non sono niente contro una buona ascia.
+str_rohan_rumor_14|Le nostre asce da lancio e le nostre picche possono sembrare ingombranti, ma quante possibilità hai di lanciare qualcosa prima di scagliarti in mezzo ai nemici ? Fa la sua differenza tirare qualcosa di peso.
+str_rohan_rumor_15|Colpire un orco con una freccia scagliata da cavallo può sembrare difficile, e lo è, ma caricare un'orda di picchieri costerebbe molto di più.
+str_rohan_rumor_16|Gondor pratica tiro con l'arco.Noi il tiro a cavallo. Gli uomini del Dunland nessuno dei due.
+str_rohan_rumor_17|Molti degli orchi di Saruman sono arcieri mortali.Molti no.Un saggio comandante di cavalleria non dovrebbe aspettare di verificare chi è chi.
+str_rohan_rumor_18|Siamo tutti amici qui. O dovremmo esserlo; le risate da Mordor saranno le nostre uniche ricompense, se litighiamo.
+str_rohan_rumor_19|A lungo abbiamo avuto cura delle nostre bestie, dei nostri campi, abbiamo costruito le nostre case, lavorato con i nostri strumenti, e abbiamo cavalcato lontano per dare il nostro sostegno nelle guerre di Minas Tirith. Questa è quella che abbiamo chiamato la "vita degli Uomini, la via del Mondo".
+str_gondor_rumor_begin|Gondor non ha un re, ma nemici alle porte.L'ombra cresce nell'est.Le cose non vanno bene.
+str_gondor_rumor_2|A Gondor non c'è nulla sotto il sole che non venga fatto,costruito o cresca in quantità. Ma per quanto ancora?
+str_gondor_rumor_3|Mordor è una terra arida e sterile.Che cosa mangiano le creature là? Sicuramente non l'un l'altro? O forse...
+str_gondor_rumor_4|Ci affanniamo per le nostre terre, come abbiamo fatto per generazioni. Il nostro passato è fatto di gloria e coraggio, ma il nostro futuro sembra incerto.
+str_gondor_rumor_5|Le risorse dell'Ombra per la guerra sembrano illimitate, ma poggiano sulle spalle di un mare di schiavi.
+str_gondor_rumor_6|Abbiamo sentito parlare degli elfi del nord, ma oggigiorno nessuno li vede più.
+str_gondor_rumor_7|Vorrei vedere l'Albero Bianco fiorire ancora nel cortile dei Re, la Corona d'Argento ritornare e  Minas Tirith in pace: Minas Anor ai fasti antichi, piena di luce, alta e fiera, bellissima, come una regina circondata da altre regine.
+str_gondor_rumor_8|Perché Umbar continua ad invaderci ? I loro Pirati avrebbero tratto maggiore profitto commerciando con noi. Come si può paragonare questo bottino con la ricchezza che hanno accumulato in passato vendendo antichi artifatti Numenoriani ai nobili di Gondor ?
+str_gondor_rumor_9|La guerra deve essere, mentre difendiamo le nostre vite contro un distruttore che vuole divorare tutto; ma io non amo la lucente spada per la sua lama affilata, né la freccia per la sua rapidità, o il guerriero per la sua gloria. Io amo solo ciò che essi difendono.
+str_gondor_rumor_10|Gil-galad era un Re degli Elfi. I suonatori d'arpa di lui cantano amaramente: l'ultimo il cui regno era giusto e libero, far le montagne e il mare.
 str_gondor_rumor_11|Dol Guldur? Mai sentito nominare.
-; str_gondor_rumor_12|Moria? The dwarves mine there, don't they?
-; str_gondor_rumor_13|Don't tell anyone I said this, but I think Prince Imrahil should perhaps become king. Lord Denethor is a noble man, but Gondor has faded much during his reign. And not only since his older son left.
-; str_gondor_rumor_14|People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes.
-; str_gondor_rumor_15|The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm.
-; str_gondor_rumor_16|My friend's cousin is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me.
-; str_gondor_rumor_17|There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock.
-; str_gondor_rumor_18|We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt.
-; str_dwarf_rumor_begin|They ask us if dwarves have any friends. Of course we have friends. But we don't like them.
-; str_dwarf_rumor_2|Orcs? Pfft! Axe-grease, all they are.
-; str_dwarf_rumor_3|What's that you're wearing? It doesn't look like it would protect you from a bee sting. And it looks funny.
-; str_dwarf_rumor_4|Of course we can ride horses. We just don't want to!
-; str_dwarf_rumor_5|Bugger off! We don't need your sort around here, the orcs are bad enough.
-; str_dwarf_rumor_6|Who are you calling short?
-; str_dwarf_rumor_7|You should see the caves of Hornburg. If we could only mine all the gems there...
-; str_dwarf_rumor_8|No word from our brothers in Moria for a while now. I bet they just want to keep all the riches to themselves!
-; str_dwarf_rumor_9|Elves? What have the elves ever done for us? Ok, healing arts, but besides that? Ok, some smithing techniques, but anything else? Ok, they fight the Shadow, but besides what have they really ever done for us, I ask you?
-; str_dwarf_rumor_10|A flagon of ale, a roast pig, a girl with a thick beard and I'm happy!
-; str_dwarf_rumor_11|Well, Brian, I'm opening a mine! What? Ugh? Well, Brian, I'm opening a mine!
-; str_dwarf_rumor_12|We, Dwarves always build more than one entry into our mines. And then there's the secret ones too.
-; str_dwarf_rumor_13|Strange are the ways of men.
-; str_dwarf_rumor_14|Unwearied then were Durin's folk beneath the mountains music woke: The harpers harped, the minstrels sang, and at the gates the trumpets rang.
-; str_dwarf_rumor_15|*humms quietly* Kill the Men! Kill the Elves! Save the gold for ourselves!
-; str_mordor_rumor_begin|Lugbúrz commands!
-; str_mordor_rumor_2|Nazgûl will defeat the world of men!
-; str_mordor_rumor_3|Why aren't you working, glob! The Eye is watching!
-; str_mordor_rumor_4|Soon, darkness comes! Durb-burz!
-; str_mordor_rumor_5|Hungry! Where is food?
-; str_mordor_rumor_6|We will feast on men of the White city!
-; str_mordor_rumor_7|Master trains Olog-hai for war!
-; str_mordor_rumor_8|Warg bit my finger. And it really hurts! Warg-filth!
-; str_mordor_rumor_9|Don't trust Saruman-glob!
-; str_mordor_rumor_10|Mountain orcs are weak! We are strong! We will eat tribal snagas!
-; str_mordor_rumor_11|Uruk glob ishi krimp shar-kûk.
-; str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
-; str_mordor_rumor_13|Snaga stole my meat, pushdug!
-; str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
-; str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
-; str_mordor_rumor_16|If it insults you - kill it. If it fights you - kill it. If it looks at you - kill it. If it's dead - eat it.
-; str_mordor_rumor_17|Saruman's uruk-hai say they don't mind the sun. Bûbhosh skai!
-; str_mordor_rumor_18|All dead, all rotten. Elves and Men and Orcs. In the Dead Marshes!
-; str_mordor_rumor_19|Come not between the Nazgûl and his prey!
-; str_mordor_rumor_20|Isengarders? The muck-rakers of a dirty little wizard! It's orc-flesh they eat, I'll warrant.
-; str_mordor_rumor_21|Mirkwood is in our hands already, but the elves don't know it yet.
-; str_mordor_rumor_22|Crank up yer spotting if you don't want to get ambushed in Ithilien. Those damn greenhoods...
-; str_mordor_rumor_23|Where there's a whip there's a way.
-; str_isengard_rumor_begin|Sharkû commands!
-; str_isengard_rumor_2|Horse-men are food! Bubhosh!
-; str_isengard_rumor_3|Horse-men will get a pike surprise! Ha ha ha!
-; str_isengard_rumor_4|Saruman has many tricks! Strong steel and fire-stone!
-; str_isengard_rumor_5|Wild-men stink! But Sharkû is wise. He knows how to use them.
-; str_isengard_rumor_6|Moria-scum breed olog-hai! Big! Skai!
-; str_isengard_rumor_7|Wise master make uruk-hai strong!
-; str_isengard_rumor_8|Warg is faster than horse! Warg eats horse!
-; str_isengard_rumor_9|Uruk-hai will trample the horse-men!
-; str_isengard_rumor_10|Grind! Grind! Grind!
-; str_isengard_rumor_11|Uruk glob ishi krimp shar-kûk.
-; str_isengard_rumor_12|Burn forest! Make weapons! Kill horse-men!
-; str_isengard_rumor_13|Keep away from the berserker before he starts chopping us up!
-; str_isengard_rumor_14|I saw a berserker get speared through by a horse-man lance. He pulled the manling off his horse by the lance through his guts.
-; str_isengard_rumor_15|I don't trust those little mountain orc swines. Isengarders will win this war, with or without them.
-; str_isengard_rumor_16|By the White Hand! What's the use of sending mountain-maggots to fight for us, only half-trained! Cursed goblins and orcs of the North!
-; str_isengard_rumor_17|I'd tickle some prisoners with my knife. Sometimes you need to make those miserable rats squeak!
-; str_isengard_rumor_18|There's only one thing the maggots and rats of Lugbúrz can do: they can see like gimlets in the dark.
-; str_isengard_rumor_19|We're cutting down the forest, but many orcs that go in, never come out.
-; str_isengard_rumor_20|Where there's a whip there's a way.
-; str_rhun_rumor_begin|Ride like the wind of the steppes!
-; str_rhun_rumor_2|The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us.
-; str_rhun_rumor_3|Three wizards came to our lands a while ago. I wonder what they are up to.
-; str_rhun_rumor_4|Our lands are vast and sparsely populated. But we know how to survive there.
-; str_rhun_rumor_5|We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!
-; str_rhun_rumor_6|Our cousins from Khand prefer to fight on foot, but we know being on a horse is better.
-; str_rhun_rumor_7|We have defeated Gondor legions before, and we will do it again!
-; str_rhun_rumor_8|We fight to the death! Never retreat, never turn and run! Not a step backwards!
-; str_rhun_rumor_9|A red dawn has risen in the east. A red dusk awaits the west!
-; str_rhun_rumor_10|Elven women? Nah. Too fragile!
-; str_rhun_rumor_11|Each of my sons has already brought me a head of an enemy. And my daughter the testicles of one. Ha ha ha!
-; str_rhun_rumor_12|Orcs are filthy beasts with no skill or courage. They have no place on the field of battle.
-; str_rhun_rumor_13|What's best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women.
-; str_dunland_rumor_begin|We won't rest until we are avenged and the strawheads are on their knees!
-; str_dunland_rumor_2|Rohirrim bastards are friendly with their horses at night! Ha ha ha!
-; str_dunland_rumor_3|Strawheads will cough out our land! Together with their blood! Gah!
-; str_dunland_rumor_4|Death to the Forgoil! Death to the Strawheads! Death to the robbers from the North!
-; str_dunland_rumor_5|They call it Rohan now, but it's our ancestral land! We will avenge our forfathers and chase off the dirty land-thieves.
-; str_dunland_rumor_6|Don't let the Forgoil catch you, or they will torture and burn you alive!
-; str_dunland_rumor_7|We are the bloodlust of the wolf and the strength of the boar!
-; str_dunland_rumor_8|Forgoil think we are savage and stupid. Let's see what they think after their horsemen meet our pikemen.
-; str_dunland_rumor_9|Isengard's crows will peck out Strawheads' eyes, Dunland's wolves will bite their throats.
-; str_dunland_rumor_10|I caught and killed a wolf with my bare hands. I will snap a horse-man's neck like a twig! Grrr!
-; str_dunland_rumor_11|Our chief found an old bronze sword in a barrow. He bent it and threw it in the marsh. Spirits of the hills will be on our side for sure. It is the old way.
-; str_dunland_rumor_12|My forefathers fought with Freca and later Wulf against the bloodied Forgoil. We remember their courage.
-; str_beorn_rumor_begin|The woods are vast and all manner of creatures live inside.
-; str_beorn_rumor_2|Wild bees make the best honey!
-; str_beorn_rumor_3|Elves of the woods are elusive, but kind. Dwarves from the mountains are loud and cheerful. Men of Dale are hardworking.
-; str_beorn_rumor_4|We see many strange beasts passing through our lands.
-; str_beorn_rumor_5|I sleep all night, and I work all day!
-; str_beorn_rumor_6|Evil is creeping from the mountains yonder.
-; str_beorn_rumor_7|The great forest is not as it used to be anymore!
-; str_beorn_rumor_8|The strength of the axe is not in the blade, but in the haft.
-; str_beorn_rumor_9|We slept through the last winter. What? Yes, you need to eat a lot in the autumn to last through winter like this.
-; str_beorn_rumor_10|Men of Rohan are our kin, bears are our blood, goblins are our prey!
-; str_beorn_rumor_11|Turn into bears? Of course we don't. Who told you that? Ha ha ha!
+str_gondor_rumor_12|Moria ? Ci sono le miniere dei nani laggiù, non è così ?
+str_gondor_rumor_13|Non riferire a nessuno che ho detto questo, ma penso che il Principe Imrahil potrebbe un giorno diventare Re. Lord Denethor è un nobile uomo, ma Gondor ha perso molto del suo smalto durante la sua reggenza, e non solo da quando il suo figlio maggiore è scomparso.
+str_gondor_rumor_14|La gente dice che i Nove sono usciti da Minas Morgul ancora una volta. Vorrei che avessimo più comandanti coraggiosi come Boromir per comandare i nostri uomini in battaglia contro questi antichi nemici.
+str_gondor_rumor_15|Gli Uomini del Sud ci stanno spingendo fuori da Harondor. Hanno compiuto pesanti razzie per un periodo di tempo. Vorrei poter passeggiare di nuovo in sicurezza per i campi di Lebennin. Ma ci è stato detto "No.", perché i nostri soldati devono proteggere il cuore del regno.
+str_gondor_rumor_16|L'amico di mio cugino è un arciere al servizio di Hirluin il Giusto. Hanno di gran lunga le più belle uniformi, lascia che te lo dica.
+str_gondor_rumor_17|C'è una strana roccia nera vicino a Erech. Siamo stati una volta a vederla, io e mio padre. Dicono che sia posata sopra a una sala dove riposa l'ultimo figlio dei Re del Mare. Io penso che sia solo una roccia.
+str_gondor_rumor_18|Siamo gente sincera, noi di Gondor. Ci vantiamo di rado di qualocosa, passiamo ai fatti, o moriamo tentando.
+str_dwarf_rumor_begin|Ci chiedono se i nani hanno amici. Certo che abbiamo degli amici. Ma non ci piacciono.
+str_dwarf_rumor_2|Orchi ? Pfft ! Grasso per le asce, ecco cosa sono.
+str_dwarf_rumor_3|Che roba è quella che indossi ? Sembra che non possa proteggerti nemmeno dalla puntura di un'ape. Ha un aspetto buffo.
+str_dwarf_rumor_4|Certo che possiamo salire sui cavalli. E' solo che non vogliamo farlo !
+str_dwarf_rumor_5|Sparisci ! Non abbiamo bisogno di gente come te da queste parti, abbiamo già gli orchi a darci fastidio.
+str_dwarf_rumor_6|A chi hai detto "corto" ?
+str_dwarf_rumor_7|Dovresti vedere le miniere di Hornburg. Se solo potessimo raccogliere tutte le gemme che ci sono dentro..
+str_dwarf_rumor_8|Non ci è giunta nemmeno una parola dai nostri fratelli a Moria, da lungo tempo. Scommetto che vogliono tenere tutte le cose preziose per se stessi !
+str_dwarf_rumor_9|Elfi ? Che cosa hanno mai fatto gli Elfi per noi ? Certo, ci hanno dato le arti di guarigione, ma a parte questo ? Si, ci hanno insegnato qualche tecnica per i fabbri, cos'altro ? Va bene, combattono l'Ombra, ma a parte tutte queste cose, cosa hanno veramente fatto per noi, vi chiedo ?
+str_dwarf_rumor_10|Datemi un boccale di birra, un maiale arrostito, una ragazza con la folta barba, e sarò un uomo felice !
+str_dwarf_rumor_11|Beh, Brian, sto scavando una miniera ! Cosa ! Ugh ? Beh, Brian, sto scavando una miniera !
+str_dwarf_rumor_12|Noi Nani scaviamo sempre più di un'entrata nelle nostre miniere. E comunque ce n'è sempre un'altra segreta.
+str_dwarf_rumor_13|Bizzarri sono i modi degli uomini..
+str_dwarf_rumor_14|Furono instancabili le genti di Durin ai piedi delle montagne, quando la musica li svegliò: I suonatori d'arpa suonavano, i menestrelli cantavano e ai cancelli le trombe squillavano.
+str_dwarf_rumor_15|*grugnisce lentamente* Uccidete gli Uomini ! Uccidete gli Elfi ! Prendete l'oro !
+str_mordor_rumor_begin|Ordine di Lugbúrz !
+str_mordor_rumor_2|I Nazgûl sconfiggeranno il mondo degli uomini !
+str_mordor_rumor_3|Datevi da fare, feccia ! L'Occhio vi guarda !
+str_mordor_rumor_4|Presto, l'oscurità arriverà ! Durb-burz !
+str_mordor_rumor_5|Fame ! Dov'è il cibo ?
+str_mordor_rumor_6|Banchetteremo con gil uomini della Città Bianca !
+str_mordor_rumor_7|Il Capo addestra gli Olog-hai per la guerra !
+str_mordor_rumor_8|Un Warg mi ha morso il dito. Fa davvero male ! Sporco Warg !
+str_mordor_rumor_9|Non fidarti di quel Saruman !
+str_mordor_rumor_10|Gli orchi di montagna sono deboli ! Noi siamo forti ! Mangeremo la carne della tribù di Snaga !
+str_mordor_rumor_11|Feccia Uruk ishi krimp shar-kûk.
+str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
+str_mordor_rumor_13|Uno Snaga mi ha rubato la carne, pushdug !
+str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
+str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
+str_mordor_rumor_16|Se ti insulta - uccidilo. Se ti combatte - uccidilo. Se ti guarda storto - uccidilo. Se è morto - mangialo.
+str_mordor_rumor_17|Gli uruk-hai di Saruman dicono che il sole non gli da fastidio. Bûbhosh skai !
+str_mordor_rumor_18|Tutti morti, tutti marciti. Elfi, Uomini e Orchi. Nelle Paludi della Morte !
+str_mordor_rumor_19|Non mettetevi fra i Nazgûl e la loro preda !
+str_mordor_rumor_20|Gli abitanti di Isengard ? I topi di fogna di un piccolo mago ! E la carne degli orchi che mangiano, lo garantisco.
+str_mordor_rumor_21|Mirkwood è già in mano nostra, ma gli Elfi ancora non lo sanno.
+str_mordor_rumor_22|Guardate verso l'alto per evitare agguati nell'Ithilien Dannati Elfi delle Foreste Verdi..
+str_mordor_rumor_23|Dove c'è una frusta si trova sempre un modo.
+str_isengard_rumor_begin|Ordine di Sharkû !
+str_isengard_rumor_2|Gli uomini dei cavalli sono cibo Bubhosh !
+str_isengard_rumor_3|Gli uomini dei cavalli avranno un'amara sorpresa ! Ha ha ha !
+str_isengard_rumor_4|Saruman conosce molti trucchi ! Acciao forte e pietra di fuoco !
+str_isengard_rumor_5|Gli uomini selvaggi puzzano ! Ma Sharkû è saggio. Sa come farne uso.
+str_isengard_rumor_6|Moria feccia della razza olog-hai ! Grande ! Skai !
+str_isengard_rumor_7|Saggio maestro, rendi forti gli uruk-hai !
+str_isengard_rumor_8|Un Warg è più veloce di un cavallo ! I Warg mangiano i cavalli !
+str_isengard_rumor_9|Gli uruk-hai calpesteranno gli uomini dei cavalli !
+str_isengard_rumor_10|Frantumare ! Frantumare ! Frantumare !
+str_isengard_rumor_11|Feccia Uruk ishi krimp shar-kûk.
+str_isengard_rumor_12|Bruciate la foresta ! Fabbricate armi ! Uccidete gli uomini dei cavalli !
+str_isengard_rumor_13|State alla larga dal berserker prima che cominci a farci a pezzi !
+str_isengard_rumor_14|Ho visto un berserker infilzato da una lancia di un uomo dei cavalli. Tirò la lancia facendola passare tra le sue viscere per far cadere il cavaliere.
+str_isengard_rumor_15|Non mi fido di quei maiali di orchi delle montagne. Isengard vincerà questa guerra, con o senza di loro.
+str_isengard_rumor_16|Per la Mano Bianca ! A che serve mandare dei vermi della montagna con scarso addestramento a combattere per noi ! Maledetti goblin e orchi del Nord !
+str_isengard_rumor_17|Ho fatto il solletico a qualche prigioniero con il mio coltello. Certe volte hai bisogno di sentir squittire questi ratti miserabili !
+str_isengard_rumor_18|C'è solo una cosa che i vermi e i ratti di Lugbúrz possono fare: ci vedono anche se è buio pesto.
+str_isengard_rumor_19|Stiamo tagliando l'intera foresta, ma molti orchi che sono andati all'interno non sono tornati.
+str_isengard_rumor_20|Dove c'è una frusta si trova sempre un modo.
+str_rhun_rumor_begin|Cavalca veloce come il vento sulla steppa !
+str_rhun_rumor_2|I Nani sono avidi e infami. Gli uomini di Dale li aiutano nelle loro azioni deprecabili e ci ingannano.
+str_rhun_rumor_3|Tre maghi giunsero nelle nostre terre tempo fa. Mi chiedo cosa stiano facendo.
+str_rhun_rumor_4|Le nostre terre sono vaste e scarsamente popolate. Ma sappiamo come sopravvivere qui.
+str_rhun_rumor_5|Commerciavamo vino ed erba-pipa di questa terra fertile con gli Efli e i Nani, ma loro imbrogliano e mentono !
+str_rhun_rumor_6|I nostri cugini di Khand preferiscono combattere a terra, ma noi sappiamo che stare sopra a un cavallo è meglio.
+str_rhun_rumor_7|Abbiamo sconfitto le legioni di Gondor in passato, lo faremo ancora !
+str_rhun_rumor_8|Combatteremo fino alla morte ! Nessuna ritirata, non gireremo la schiena scappando ! Non un passo indietro !
+str_rhun_rumor_9|Un'alba rossa è sorta a est. Un crepuscolo rosso attende a ovest !
+str_rhun_rumor_10|Donne Elfo ? Nah, troppo gracili !
+str_rhun_rumor_11|Ogniuno dei miei figli mi ha già portato la testa di un nemico. Mia figlia invece i testicoli. Ha ha ha !
+str_rhun_rumor_12|Gli orchi sono bestie immonde senza abiiltà né coraggio. Non hanno posto sul campo di battaglia.
+str_rhun_rumor_13|Qual'è il meglio nella vita ? Schiacciare i nemici, inseguirli mentre fuggono e ascoltare i lamenti delle femmine.
+str_dunland_rumor_begin|Non riposeremo finchè non avremo vendetta e le teste di paglia saranno in ginocchio!
+str_dunland_rumor_2|I bastardi dei Rohirim sono amichevoli con i loro cavalli la notte! Ha ha ha!
+str_dunland_rumor_3|Le teste di paglia tossiranno sulla nostra terra! Insieme al loro sangue! Gah!
+str_dunland_rumor_4|Morte ai Forgoil ! Morte ai Testadipaglia ! Morte ai ladri del Nord !
+str_dunland_rumor_5|Adesso la chiamano Rohan, ma era la nostra terra ancestrale! Noi vendicheremo i nostri Antenati e cacceremo quei sporchi ladri di terre!
+str_dunland_rumor_6|Non lasciare che Forgoil ti prenda, o ti tortureranno e ti bruceranno vivo!
+str_dunland_rumor_7|Noi siamo la sete di sangue del lupo e la forza dell'orso!
+str_dunland_rumor_8|Forgoil pensa che siamo dei selvaggi e degli stupidi, vediamo cosa pensano dopo che i loro uomini a cavallo incontrano i nostri lancieri
+str_dunland_rumor_9|I corvi di Isengard caveranno gli occhi alle teste di paglia, i lupi del Dunland morderanno le loro gole.
+str_dunland_rumor_10|Ho catturato e ucciso un lupo a mani nude. Spezzerò il collo di un uomo-cavallo come un ramoscello! Grrr!
+str_dunland_rumor_11|Il nostro capo ha trovato una vecchia spada di bronzo in un tumulo. L'ha presa e l'ha gettata nella palude. Gli spiriti delle colline saranno dalla nostra parte, di certo. Così si è sempre fatto.
+str_dunland_rumor_12|I miei antenati hanno combattuto con Freca e poi con Wulf contro Forgoil, il sanguinario. Ricordiamo il loro coraggio.
+str_beorn_rumor_begin|Le foreste sono vaste e abitate da ogni sorta di creatura.
+str_beorn_rumor_2|Le api selvatiche producono il miele migliore!
+str_beorn_rumor_3|Gli Elfi dei boschi sono sfuggenti, ma gentili. I Nani delle montagne sono chiassosi e allegri. Gli uomini di Dale sono grandi lavoratori.
+str_beorn_rumor_4|Potremmo incontrate strane bestie, attraversando i nostri territori.
+str_beorn_rumor_5|Dormo tutta la notte e lavoro tutto il giorno !
+str_beorn_rumor_6|Il male si insinua dalle cime delle montagne.
+str_beorn_rumor_7|La grande foresta non è più come un tempo !
+str_beorn_rumor_8|La forza dell'ascia non si trova nella lama, ma nell'impugnatura.
+str_beorn_rumor_9|Abbiamo dormito durante lo scorso inverno. Cosa ? Si, hai bisogno di mangiare molto in autunno per superare un inverno come questo.
+str_beorn_rumor_10|Gli uomini di Rohan sono nostri parenti, gli orsi sono nel nostro sangue, i goblins sono la nostra preda !
+str_beorn_rumor_11|Mutarci in orsi ? E' ovvio che non possiamo. Chi ti ha detto una cosa simile ? Ha ha ha !
 str_beorn_rumor_12|Beorn era un grande uomo. No, non un uomo, un gigante!
-; str_beorn_rumor_13|*GROWLS*   Do you have any honey?
-; str_beorn_rumor_14|Don't wander off alone in the mountains! Bears and wolves stay away from larger groups of men. But hunger, or as some say - shadow spirits, may drive them close enough to attack you.
-; str_lorien_rumor_begin|O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. 
-; str_lorien_rumor_2|Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!
-; str_lorien_rumor_3|The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.
-; str_lorien_rumor_4|Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house.
-; str_lorien_rumor_5|Often does hatred hurt itself!
-; str_lorien_rumor_6|Ancient magic protects Lothlórien, so powerful the Darkness does not yet dare challenge it.
-; str_lorien_rumor_7|Nathlo i nathal! You are safe within the golden woods. Posto vae - rest now, eat and drink. If you must leave then, carry with you a memory of how Lorien once was.
-; str_lorien_rumor_8|It is said that the sea calls to everyone, sooner or later. I too shall hear the gulls one day, leave Laurelindórenan for good. I Harthon an lend and. 
-; str_lorien_rumor_9|Av-'osto - do not be afraid! More than our grey cloaks protect us from the enemy here.
-; str_imladris_rumor_begin|May the blessing of Elves and Men and all Free Folk go with you.
-; str_imladris_rumor_2|May the stars shine upon your faces!
+str_beorn_rumor_13|*RUGGISCE* Hai del miele ?
+str_beorn_rumor_14|Non andartene in giro da solo per le montagne ! Orsi e lupi stanno alla larga dai grossi gruppi di uomini. Ma la fame, o in alcuni giorni.. l'ombra degli spiriti, può spingerli abbastanza vicini da attaccarti.
+str_lorien_rumor_begin|Oh Lórien ! L'inverno sta arrivando, il giorno nudo e privo di foglie; le foglie cadono nel torrente, il flume le trascina via.
+str_lorien_rumor_2|Non parlare in modo malvagio di Lady Galadriel ! Non c'è in lei e in questa terra alcun male, a meno che un uomo non lo porti cons sé. Quindi fa attenzione !
+str_lorien_rumor_3|Il mondo è davvero pieno di pericoli, e ci sono molti luoghi oscuri; ma c' anche molto di giusto, e anche se in ogni terra il male è mescolato con l'amore, quest'ultimo prevale.
+str_lorien_rumor_4|Il bene e il male non sono cambiati rispetto al passato; né si tratta di una questione di Elfi, Nani o Uomini. E' compito di ogniuno discernere fra essi, sia nella Foresta Dorata che nella propria casa.
+str_lorien_rumor_5|Spesso l'odio porta a ferirsi !
+str_lorien_rumor_6|L'antica magia protegge Lothlórien, così potente che L'Oscurità non osa sfidarla.
+str_lorien_rumor_7|Nathlo i nathal! Sei al sicuro nelle foreste dorate. Posto vae - riposa ora, mangia e bevi. Se dovrai partire, allora porta con te il ricordo di com'era Lorien.
+str_lorien_rumor_8|Si dice che il mare chiama ciascuno, presto o tardi. Anche io un giorno potrei sentire il richiamo dei gabbiani, un giorno, e lascerò Laurelindórenan per sempre. 
+str_lorien_rumor_9|Av-'osto - non temere ! Ci sono più cose a proteggerci qui dei nostri mantelli grigi.
+str_imladris_rumor_begin|Che la benedizione degli Elfi e degli Uomini e di tutti i popoli liberi ti accompagnino.
+str_imladris_rumor_2|Che le stelle possano brillare sui vostri volti !
 ; str_imladris_rumor_3|He that breaks a thing to find out what it is has left the path of wisdom.
 ; str_imladris_rumor_4|We must take a hard road, a road unforeseen. There lies our hope, if hope it be.
-; str_imladris_rumor_5|Despair is only for those who see the end beyond all doubt. We do not.
+str_imladris_rumor_5|La disperazione é per quelli che vedono la fine senza dubbio. Noi no.
 ; str_imladris_rumor_6|Even after the coldest winter flowers do spring. And after the longest night, comes a new dawn.
 ; str_imladris_rumor_7|So many had gathered when last I rode to war. The light of the drawing of our swords was like a fire in a field of reeds. So few have left Imladris now. 
 ; str_imladris_rumor_8|Áva rucë! The Eldar have taken arms to fight the enemy alongside brave Edain once more.  Perhaps for the last time, who knows? We sing of war, of fire and the end of the Night.
@@ -1378,10 +1378,10 @@ str_beorn_rumor_12|Beorn era un grande uomo. No, non un uomo, un gigante!
 ; str_woodelf_rumor_2|Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves.
 ; str_woodelf_rumor_3|Darkness and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light.
 ; str_woodelf_rumor_4|Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?
-; str_woodelf_rumor_5|Shhh, no dhínen! There may be orcs lurking around. We must be on guard!
+str_woodelf_rumor_5|Shhh, no dhínen! Potrebbero esserci orchi qui intorno. Dobbiamo stare allerta!
 str_woodelf_rumor_6|*ti fissa, chiaramente annoiato dalla tua presenza*
 ; str_woodelf_rumor_7|Oduleg hi am man theled? We need to know your purpose here. Sorcerer's spies are everywhere.
-; str_woodelf_rumor_8|Edain of Dale make intricate toys these days! They've learnt much from the Naugrim.
+str_woodelf_rumor_8|Edain di Dale costruiscono giochi molto complessi ultimamente! Hanno imparato molto da Naugrim.
 ; str_woodelf_rumor_9|The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!
 ; str_dale_rumor_begin|First there was the dragon, now this...
 ; str_dale_rumor_2|As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!
@@ -1557,23 +1557,23 @@ str_isengard_rank_8|Comandante delle Legioni
 ; str_woodelf_rank_7|Pengherdir, Bowmaster of Greenwood
 ; str_woodelf_rank_8|Armagor, Royal Swordsman of Greenwood
 ; str_woodelf_rank_9|Thalion, Hero of Greenwood
-; str_dale_rank_0|Commoner of Dale
-; str_dale_rank_1|Freeman of Dale
-; str_dale_rank_2|Soldier of Dale
-; str_dale_rank_3|Boatman of Dale
+str_dale_rank_0|cittadino di Dale
+str_dale_rank_1|Uomo libero di Dale
+str_dale_rank_2|Soldato di Dale
+str_dale_rank_3|Barcaiolo di Dale
 ; str_dale_rank_4|Shieldbearer of Dale
 ; str_dale_rank_5|Swordbearer of Dale
-; str_dale_rank_6|Barding, Archer of Dale
-; str_dale_rank_7|Captain of Dale
-; str_dale_rank_8|Lake Master of Dale
-; str_dale_rank_9|Hero of Dale
-; str_harad_rank_0|Initiate of the Tribe
-; str_harad_rank_1|Adult of the Tribe
+str_dale_rank_6|Bardatura, Arciere di Dale
+str_dale_rank_7|Capitano di Dale
+str_dale_rank_8|Mastro lago di Dale
+str_dale_rank_9|Eroe di Dale
+str_harad_rank_0|Giovane della tribù
+str_harad_rank_1|Adulto della tribù
 ; str_harad_rank_2|Warrior of the Tribe
 ; str_harad_rank_3|Lionslayer
 ; str_harad_rank_4|Snakecharmer
 ; str_harad_rank_5|Mumakil Handler
-; str_harad_rank_6|Black Snake Guard
+str_harad_rank_6|Guardia Nera del serpente
 ; str_harad_rank_7|Captain of Harondor
 ; str_harad_rank_8|General of the Great Desert
 ; str_harad_rank_9|The Golden Serpent
@@ -1685,7 +1685,7 @@ str_beorn_rank_6|Orso della Foresta
 ; str_fullname_region_entwash|the Mouths of the Entwash, where the Rohan river Entwash joins the Anduin
 ; str_fullname_region_wetwang|Nindalf, the swamps of Wetwang
 ; str_fullname_region_dead_marshes|the Dead Marshes, the ancient battlefield of the great Battle of Dagor Dagorlad, now a cursed place
-; str_fullname_region_isengard|the plains around Isengard
+str_fullname_region_isengard|Le pianure circostanti Isengard
 ; str_fullname_region_fangorn|the Fangorn forest, where trees are said to talk.
 ; str_fullname_region_brown_lands|the Brown Lands, covering the expanse between the Emyn Muil and Mirkwood
 ; str_fullname_region_dagorlad|the Dagorlad, the great, treeless, expanse of The Battle Plain, before the gates of Mordor
@@ -1701,9 +1701,9 @@ str_beorn_rank_6|Orso della Foresta
 ; str_fullname_region_grey_mountains|the foothills of Grey Mountains, where Dwarves dwell
 str_fullname_region_mordor|Mordor, le oscure terre di Sauron
 str_shortname_region_unknown|una regione senza nome
-; str_shortname_region_pelennor|Pelennor Fields
+str_shortname_region_pelennor|Campi di Pelennor
 ; str_shortname_region_subfac_pelargir|Fiefdom of Lebennin
-; str_shortname_region_subfac_dol_amroth|Belfalas
+str_shortname_region_subfac_dol_amroth|Belfalas
 ; str_shortname_region_subfac_ethring|Ringló Vale
 ; str_shortname_region_subfac_lossarnach|Fiefdom of Lossarnach
 ; str_shortname_region_subfac_pinnath_gelin|the region of Pinnath Gelin
@@ -1713,7 +1713,7 @@ str_shortname_region_unknown|una regione senza nome
 ; str_shortname_region_s_ithilien|South Ithilien
 ; str_shortname_region_druadan_forest|Drúadan Forest
 ; str_shortname_region_firien_wood|Firien wood
-; str_shortname_region_anorien|Anórien
+str_shortname_region_anorien|Anórien
 ; str_shortname_region_rohan0|the Folde
 ; str_shortname_region_rohan1|Eastemnet
 ; str_shortname_region_rohan2|Westemnet
@@ -1721,34 +1721,34 @@ str_shortname_region_rohan3|Estfalda
 str_shortname_region_rohan4|Ovestfalda
 str_shortname_region_rohan5|Il Fosso di Helm
 ; str_shortname_region_the_wold|the Wold
-; str_shortname_region_gap_of_rohan|the Gap of Rohan
+str_shortname_region_gap_of_rohan|La breccia di Rohan
 ; str_shortname_region_entwash|the Mouths of the Entwash
-; str_shortname_region_wetwang|Nindalf
+str_shortname_region_wetwang|Nindalf
 ; str_shortname_region_dead_marshes|the Dead Marshes
-; str_shortname_region_isengard|the plains around Isengard
-; str_shortname_region_fangorn|Fangorn
-; str_shortname_region_brown_lands|the Brown Lands
+str_shortname_region_isengard|Le pianure circostanti Isengard
+str_shortname_region_fangorn|Fangorn
+str_shortname_region_brown_lands|Le Terre Marroni
 ; str_shortname_region_misty_mountains|the foothills of Misty Mountains
-; str_shortname_region_lorien_|Lorien
-; str_shortname_region_anduin_banks_|the valley of Anduin
-; str_shortname_region_n_mirkwood_|North Mirkwood
-; str_shortname_region_s_mirkwood_|South Mirkwood
+str_shortname_region_lorien_|Lorien
+str_shortname_region_anduin_banks_|La Valle di Anduin
+str_shortname_region_n_mirkwood_|Nord Mirkwood
+str_shortname_region_s_mirkwood_|Sud Mirkwood
 ; str_shortname_region_above_mirkwook|Northen Rhovanion
 ; str_shortname_region_grey_mountains|the foothills of Grey Mountains
-; str_shortname_region_mordor|the Land of Mordor
-; str_trait_title_elf_friend|Elf Friend
+str_shortname_region_mordor|La terra di Mordor
+str_trait_title_elf_friend|Amico Elfo
 ; str_trait_desc_elf_friend|You have become highly esteemed by the Elves and they now regard you as a trusted ally. The cost to recruit elves has been reduced and you may now attempt to give orders to elven armies.
 ; str_trait_title_gondor_friend|Steward's Blessing
 ; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced and you may now attempt to give orders to Gondorian armies.
 ; str_trait_title_rohan_friend|King's Man
 ; str_trait_desc_rohan_friend|You have become highly esteemed by King Theoden of Rohan and your status has risen among the men of Rohan as a result. The cost to recruit Rohirrim men has been reduced and you may now attempt to give orders to the armies of the Riddermark.
-; str_trait_title_brigand_friend|Barbarian Champion
+str_trait_title_brigand_friend|Campione Barbaro
 ; str_trait_desc_brigand_friend|You have become highly esteemed by the barbarian tribes serving Sauron as a result of your impressive displays in the arena. You may now recruit barbarians at reduced cost.
 str_trait_title_blessed|Benedetto
 ; str_trait_desc_blessed|You sense that you have been blessed by powers from beyond the sea, and perhaps further away still. You do not know why this has happened or what it may mean but you are certain that it is so.
-; str_trait_title_reverent|Reverent
+str_trait_title_reverent|Riverente
 ; str_trait_desc_reverent|You have acquired a reputation for reverence and wisdom. Men and Elves are more likely to listen to your counsel.
-; str_trait_title_merciful|Merciful
+str_trait_title_merciful|Misericordioso
 ; str_trait_desc_merciful|You have aquired a reputation for merciful treatment towards the evil men who serve the Enemy. Many of the hardened men who serve you are conflicted by your behavior and suffer a morale penalty. Among the wise, however, your mercy is seen as evidence of high character and you recieve an influence bonus.
 str_trait_title_bravery|Coraggio
 ; str_trait_desc_bravery|You have aquired a reputation for bravery in the face of great danger. Your courage is spoken of in both quiet taverns and the halls of the wise. Your deeds inspire your men and they recieve a weekly morale bonus.
@@ -1762,7 +1762,7 @@ str_trait_title_bravery|Coraggio
 ; str_trait_desc_despoiler|You have aquired a reputation for leaving behind wanton destruction wherever you travel. Such behavior is valued by the dark powers you serve and your receive a weekly influence bonus.
 ; str_trait_title_accursed|Accursed
 ; str_trait_desc_accursed|You sense that you have drawn the ire of powers beyond the sea. Your followers sense this doom as well and fear being around you. They receive a weekly morale penalty.
-; str_trait_title_stealthy|Stealthy
+str_trait_title_stealthy|Silenziosamente
 ; str_trait_desc_stealthy|You have developed uncanny skill in the art of stealthy infiltration. You receive a bonus to your stealth rating when undertaking such missions.
 str_trait_title_berserker|Berserker 
 ; str_trait_desc_berserker|After many battles where you eschewed the use of armor your ferocious will has become like iron. In battles where you are gravely wounded you will receive a health bonus once per battle. This will not restore you to full strength but may keep you going long after others would have succumbed to their wounds.
@@ -1774,103 +1774,103 @@ str_trait_title_cavalry_captain|Capitano di Cavalleria
 ; str_trait_desc_cavalry_captain|You have developed uncanny skill in the command of mounted troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
 ; str_trait_title_command_voice|Command Voice
 ; str_trait_desc_command_voice|Your experience with commanding men in the field has lent you an air of authority. The influence cost to give orders to armies in the field has been reduced.
-; str_trait_title_foe_hammer|Foe Hammer
-; str_trait_desc_foe_hammer|Having slain many of the great captains of the enemy you find that you have earned a reputation as a fearsome warrior. Troops under your command now receive a weekly morale bonus. Your experiences have also honed your skill in battle.
-; str_trait_title_battle_scarred|Battle Scars
+str_trait_title_foe_hammer|Martello nemico
+str_trait_desc_foe_hammer|Avendo ucciso molti dei grandi capitani nemici capisci di aver ottenuto una fama da spietato guerriero. Ora i soldati sotto il tuo comando ricevono un bonus morale settimanale. La tua esperienza ha anche affinato le tue abilità in battaglia.
+str_trait_title_battle_scarred|Cicatrici di battaglia
 str_trait_desc_battle_scarred|Hai riportato orrende ferite durante le tue campagne, ma riesci ancora a vivere e a raccontarne la storia. Le tue membra piene di cicatrici fanno compensano la tua abilità a subire lesioni. La gente normale potrebbe trovare il tuo aspetto shockante, ma tra le tue fila è un'affermazione della tua capacità in battaglia. Il tuo seguito riceve un bonus morale settimanale.
-; str_trait_title_fell_beast|Fell Beast
-; str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
+str_trait_title_fell_beast|Animale abbattuto
+str_trait_desc_fell_beast|La tua pelle e' lacerata dalle cicatrici di innumerevoli battaglie e il tuo spirito e' duro ed inflessibile. Anche per lo standard degli orchi, uruk e i troll tu sei giudicato una bestia pericolosa e brutale. I tuoi servitori piangono il tuo nome di gioia quando li guidi sul campo. Tu sei la manifestazione della guerra in se e non temi praticamente nessuno.
 str_wound_head|un colpo pesante alla testa
 str_wound_chest|alcune costole rotte
-; str_wound_arm|a badly maimed arm
-; str_wound_leg|a badly maimed leg
+str_wound_arm|un braccio malamente storpiato
+str_wound_leg|una gamba malamente storpiata
 str_gondor_gift0|Vino e Frutta Fresca
-; str_gondor_gift1|Richly Dyed Cloth
-; str_gondor_gift2|Ancient Tomes and Family Trees
-; str_gondor_gift3|Spices and Incense
-; str_gondor_gift4|Auroch War Horns
-; str_dwarf_gift0|Strong Beer and Rock Salt
-; str_dwarf_gift1|Hardened Shovels and Axes
-; str_dwarf_gift2|Harps and Flutes
-; str_dwarf_gift3|Robes Embroidered With Golden Thread and Gems
-; str_dwarf_gift4|Marvellous Jewelry
-; str_rohan_gift0|Mead and Apple Wine
-; str_rohan_gift1|Embroided Tunics and Silver-Studded Belts
-; str_rohan_gift2|Golden Torcs and Engraved Drinking Horns
-; str_rohan_gift3|Fine Horse Barding
+str_gondor_gift1|Tessuto riccamente tinto
+str_gondor_gift2|Antichi tomi e alberi di famiglia
+str_gondor_gift3|Spezie ed incenso
+str_gondor_gift4|Corna da guerra di Uro
+str_dwarf_gift0|Birra forte e sale di scoglio
+str_dwarf_gift1|Pale ed Ascie induriti
+str_dwarf_gift2|Arpe e Flauti
+str_dwarf_gift3|Vesti ricamate con fili d'oro e gemme
+str_dwarf_gift4|Gioielli meravigliosi
+str_rohan_gift0|idromele e vino di mele
+str_rohan_gift1|Tunica ricamata e cintura di borchie argentate
+str_rohan_gift2|Collare dorato e corno inciso
+str_rohan_gift3|Raffinata bardatura da cavallo
 str_rohan_gift4|Cavalli di Rohan
-; str_mordor_gift0|Weak Peat Beer
-; str_mordor_gift1|Snaga Oil
-; str_mordor_gift2|Mordor Fly Larvae
-; str_mordor_gift3|Orodruin Obsidian
+str_mordor_gift0|Birra torbida e leggera
+str_mordor_gift1|Olio di Snaga
+str_mordor_gift2|Larva volante di Mordor
+str_mordor_gift3|Ossidiana di Orodruin
 str_mordor_gift4|Schiavi Contadini
-; str_isengard_gift0|Dried Human Meat
-; str_isengard_gift1|Black Iron Chains
-; str_isengard_gift2|Tools of Torture
-; str_isengard_gift3|Alchemist Glasswork
-; str_isengard_gift4|Saruman's Petty Rings
-; str_lorien_gift0|Seeds, Nuts and Berries
-; str_lorien_gift1|Cold Lanterns and Strong Rope
-; str_lorien_gift2|Lembas
-; str_lorien_gift3|Silver Belts and Broaches
-; str_lorien_gift4|Elven Cloaks
-; str_imladris_gift0|White Bread and Herbal Butter
-; str_imladris_gift1|Crystal Glassware
-; str_imladris_gift2|Miruvor
-; str_imladris_gift3|Embroidered Banners and Silver-Inlaid Horns
-; str_imladris_gift4|Healing Herbs and Oitments
-; str_woodelf_gift0|Soft Animal Hides
-; str_woodelf_gift1|Arrow Heads and Fletching
+str_isengard_gift0|Carne umana essiccata
+str_isengard_gift1|Catene nere di ferro
+str_isengard_gift2|Strumenti di Tortura
+str_isengard_gift3|Vetreria da Alchimista
+str_isengard_gift4|Piccolo anello di Saruman
+str_lorien_gift0|Semi, Noci e Frutti di Bosco
+str_lorien_gift1|Lanterna fredda e corda robusta
+str_lorien_gift2|Lembas
+str_lorien_gift3|Cinture argentate e Brocche
+str_lorien_gift4|Mantella incappucciata
+str_imladris_gift0|Pane bianco e burro d' erbe
+str_imladris_gift1|Cristallerie
+str_imladris_gift2|Miruvor
+str_imladris_gift3|Bandiere ricamate e corna intarsiate d'argento
+str_imladris_gift4|Erbe curative e pomate
+str_woodelf_gift0|Morbide pelli di animale
+str_woodelf_gift1|Punte e code di freccia
 str_woodelf_gift2|Lance da caccia
-; str_woodelf_gift3|Trained Birds of Prey
-; str_woodelf_gift4|Drinking Cups of Red Gold
-; str_dale_gift0|Semi-Precious Stones and Glass Beads
-; str_dale_gift1|Codexes of Heroic Sagas
-; str_dale_gift2|Dorwinion Wine
+str_woodelf_gift3|Uccelli addestrati alla preghiera
+str_woodelf_gift4|Tazzine di oro rosso
+str_dale_gift0|Pietre semi-preziose e perle di vetro
+str_dale_gift1|Codici di racconti eroici
+str_dale_gift2|Vino di Dorwinion
 str_dale_gift3|Pelliccia di Lusso
-; str_dale_gift4|Intricate Toys and Instruments
-; str_harad_gift0|Figs and Pomegranates
-; str_harad_gift1|Warrior Necklaces
-; str_harad_gift2|Carved Ivory
-; str_harad_gift3|Sacred Snake Wine
-; str_harad_gift4|Golden Serpent Statues
-; str_rhun_gift0|Waterskins
+str_dale_gift4|Giochi e strumenti complessi
+str_harad_gift0|Fichi e Melograni
+str_harad_gift1|Collana di Guerriero
+str_harad_gift2|Avorio intagliato
+str_harad_gift3|Vino sacro di serpente
+str_harad_gift4|Statua di serpente dorata
+str_rhun_gift0|Otri
 str_rhun_gift1|Inchiostro per tatuaggi
-; str_rhun_gift2|Headgear with Horns and Antlers
-; str_rhun_gift3|Horsehair Whips
+str_rhun_gift2|Copricapo con Corna e ramificazioni
+str_rhun_gift3|Fruste di crine
 str_rhun_gift4|Carne e Latte di Cavallo
-; str_khand_gift0|Colourful Spices
-; str_khand_gift1|Rolls of Silk
+str_khand_gift0|Spezie colorate
+str_khand_gift1|Rotoli di seta
 str_khand_gift2|Falchi da caccia
-; str_khand_gift3|Ingots of Water Steel
-; str_khand_gift4|Sacred Warrior Masks
-; str_umbar_gift0|Oysters and Sea Salt
-; str_umbar_gift1|Whalebone Combs and Fishing Hooks
-; str_umbar_gift2|Pleasure Slaves
-; str_umbar_gift3|Sailing Maps of the Southern Seas
-; str_umbar_gift4|Mysterious Numenorean Schematics
-; str_moria_gift0|Putrid Dwarven Ale
+str_khand_gift3|Lingotti di acciaio acquatico
+str_khand_gift4|Maschera da guerriero sacro
+str_umbar_gift0|Ostriche e sale marino
+str_umbar_gift1|Pettini di ossa di balena e ami da pesca
+str_umbar_gift2|Schiavi sessuali
+str_umbar_gift3|Carte Nautiche dei Mari del Sud
+str_umbar_gift4|Misteriose schematiche Numenoriane
+str_moria_gift0|Birra Nanica Putrida
 str_moria_gift1|Carbone
-; str_moria_gift2|Luminescent Deep-Worms
-; str_moria_gift3|Black Cave Pearls
-; str_moria_gift4|Dwarven Metal Scraps
+str_moria_gift2|Vermi di profondità luminescenti
+str_moria_gift3|Perle di Caverna Nere
+str_moria_gift4|Rottami di Metallo Nanico
 str_guldur_gift0|Liquore Nero
-; str_guldur_gift1|Poisonous Vines of Torture
-; str_guldur_gift2|Wheeled Slave Cages
-; str_guldur_gift3|Giant Spider Eggs
-; str_guldur_gift4|Tomes of Dark Sorcery
-; str_gundabad_gift0|Spiky Bone Piercings
-; str_gundabad_gift1|Protective Warpaints
-; str_gundabad_gift2|Boiled Dwarven Lard
-; str_gundabad_gift3|Mummified Corpse Idols
+str_guldur_gift1|Viti da Tortura Avvelenate
+str_guldur_gift2|Gabbie di schiavi con ruote
+str_guldur_gift3|Uova di Ragno Gigante
+str_guldur_gift4|Tomi di Stregoneria Oscura
+str_gundabad_gift0|Piercings di osso appuntito
+str_gundabad_gift1|Pitture di guerra protettive
+str_gundabad_gift2|Lardo di nano bollito
+str_gundabad_gift3|Idoli di cadavere mummificato
 str_gundabad_gift4|Warg neri
 str_dunland_gift0|Formaggio di capra puzzolente
-; str_dunland_gift1|Flint Sacrificial Knives
-; str_dunland_gift2|Bronze Arm Rings
+str_dunland_gift1|Coltelli sacrificali di pietra focaia
+str_dunland_gift2|Bracciali di bronzo
 str_dunland_gift3|Capre
 str_dunland_gift4|Teschi e artigli di lupo
 str_beorn_gift0|torte con miele e alcool
-; str_beorn_gift1|Bee Wax and Hemp Cloth
+str_beorn_gift1|Cera d'api e abiti di canapa.
 str_beorn_gift2|Alveari di Api
 str_beorn_gift3|Collane di Ambra
 str_beorn_gift4|Pony ben addestrati

@@ -459,7 +459,7 @@ str_npc5_signup|Rozumiem. Przyznam,że słyszałem o tobie i o twoich wyczynach.
 ; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
 ; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
 ; str_npc9_signup|A fighting Uruk is worth more than all your snagas. A fighting Uruk never runs from battle.
-; str_npc10_signup|Really? You would do well to enlist me.
+str_npc10_signup|Naprawdę ? Postąpił byś słusznie zatrudniając mnie.
 str_npc11_signup|Really? You would do well to enlist me.
 str_npc12_signup|Really? You would do well to enlist me.
 str_npc13_signup|Really? You would do well to enlist me.
@@ -484,7 +484,7 @@ str_npc14_signup_2|You won't regret taking me on.
 str_npc15_signup_2|You won't regret taking me on.
 str_npc16_signup_2|You won't regret taking me on.
 ; str_npc17_signup_2|I'll just get some of my tools, and we can be off. There is this oak just down the road I must show you!
-; str_npc1_signup_response_1|I could use a skilled ranger, you are welcome to join.
+str_npc1_signup_response_1|Zatrudniłbym doświadczonego strzelca, możesz do nas dołączyć.
 str_npc2_signup_response_1|Bardzo dobrze. Możemy dodać sobie otuchy w tych mrocznych czasach.
 str_npc3_signup_response_1|Bardzo dobrze. Na koń! - wkrótce ruszamy.
 str_npc4_signup_response_1|Imponujące. Jesteśmy gotowi do drogi, na twój znak, droga pani.
@@ -746,7 +746,7 @@ str_npc4_home_description|Where now the horse and the rider? where is the horn t
 ; str_npc5_home_description|Once built by the Southern Kingdom, now home to one that we called the White Wizard, scheming, no doubt, how to increase his power further at the expense of others.
 ; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazguls here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
 ; str_npc7_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
-; str_npc8_home_description|Not too often, a travelling merchant comes to the Dale market and offers the finest honey I have ever tasted. For some curious reason, he says that 'it was made by bears' and laughs.
+str_npc8_home_description|Czasami podróżujący kupiec przybywa do Dale i oferuje najlepszy miód jakiego kiedykolwiek próbowałem. Z jakiegoś szalonego powodu mówi, że "został zrobiony przez niedźwiedzie" i wybucha śmiechem.
 ; str_npc9_home_description|Its damned walls are too high and too hard for my hammer to break. I reckon if we ever chase away the manlings from their Edoras pig-sties, they'll run off here and cower behind the walls.
 str_npc10_home_description|Czy znasz to miasto?
 str_npc11_home_description|Czy znasz to miasto?
@@ -1223,13 +1223,13 @@ str_subfaction_gondor_name6|Dolina Czarnego Korzenia
 str_subfaction_gondor_name7|Ithilien
 str_default_rumor|Wojna. Wszyscy tylko o niej mówią.
 ; str_rohan_rumor_begin|It breaks my heart to see my babies off to war! But without them the men would have to walk.
-; str_rohan_rumor_2|I hear orcs eat horses. Foul beasts! They also eat prisoners. That is bad too, of course.
+str_rohan_rumor_2|Słyszałem, że orkowie jedzą konie. Przebrzydłe bestie! ... Jedzą też więźniów, to też okropne.
 str_rohan_rumor_3|Nigdzie nie ma tak dobrych koni jakie ma Rohan. Nawet Elfy mają swoje konie od nas!
 ; str_rohan_rumor_4|If you can heal men, please treat my horses with just as much care should they be wounded.
 ; str_rohan_rumor_5|Bring me eight Sumpter Horses, he says... after the seven he asked for yesterday.  Makes you wonder.
 ; str_rohan_rumor_6|Gondor prefers sturdier horses. Our riders enjoy speed. The Elves get only the best. And our enemies steal them!
 ; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superiour but require a more experienced rider to handle.
-; str_rohan_rumor_8|Wargs are slower than horses but can turn faster. They are also quite fragile compared to a well-bred warhorse.
+str_rohan_rumor_8|Wargowie są wolniejsi od koni, lecz obracają się szybciej. Mogą także delikatnie konkurować z dobrze odżywionym koniem bojowym.
 ; str_rohan_rumor_9|Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over.
 ; str_rohan_rumor_10|Being the best horsemen in the realm starts with raising the best horses.
 ; str_rohan_rumor_11|Most of the horses you see in Gondor came from us. They prefer a slightly stronger, slower horse that can carry their heavy armour.
@@ -1246,7 +1246,7 @@ str_rohan_rumor_3|Nigdzie nie ma tak dobrych koni jakie ma Rohan. Nawet Elfy maj
 str_gondor_rumor_3|Mordor to sucha, nieżyzna ziemia. Co tamtejsze stworzenia jedzą? Pewnie nie jedno drugie? A może...
 ; str_gondor_rumor_4|We toil our lands, as we have done for generations. Our past is glorious and brave, but our future looks uncertain.
 ; str_gondor_rumor_5|The Shadow's resources for war seem limitless, but they are borne on the backs of a vast pool of slave labour.
-; str_gondor_rumor_6|We know of the elves in the north, but nowadays noone gets to see them anymore.
+str_gondor_rumor_6|Wiemy o elfach na północy, ale w dzisiejszych czasach nikt nie wybiera się by je kiedykolwiek zobaczyć.
 ; str_gondor_rumor_7|I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens.
 ; str_gondor_rumor_8|Why does Umbar keep invading us? Their Corsairs would have profited far more from trading with us. What plunder could match the riches they'd have hauled away selling old Numenorian artifacts to Gondorian nobles?
 ; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
@@ -1400,7 +1400,7 @@ str_harad_rumor_4|W Gondorze jest masa złota oraz świecidełek. I jeszcze wię
 ; str_harad_rumor_5|We will catch many western weaklings and sacrifice them to the Serpent God.
 ; str_harad_rumor_6|Corsairs have their uses, they sail well, but are rowdy and unclean in appearance and sneaky in behaviour.
 ; str_harad_rumor_7|I'd never set foot on a ship. Corsairs can have all the seas as far as I am concerned.
-; str_harad_rumor_8|Warriors of Khand are fierce and fearless, but their strategy is too simple.
+str_harad_rumor_8|Khandyjscy Wojownicy są dzicy i nieustraszeni, ale ich strategia jest zbyt prosta.
 ; str_harad_rumor_9|I'm counting on good loot in the West. We were promised it. Then I can return home and run my carpet shop in peace.
 ; str_harad_rumor_10|Keep away from the Mumakil. They are ill-tempered beasts and will squash you in an instant.
 ; str_harad_rumor_11|In Harad we have deserts and jungles, mountains and sea. Our peoples are as diverse as our lands and as numerous as the grains of sand.
@@ -1412,7 +1412,7 @@ str_harad_rumor_4|W Gondorze jest masa złota oraz świecidełek. I jeszcze wię
 str_gunda_rumor_2|Sharkû obiecał ciepłe jaskinie 
 ; str_gunda_rumor_3|Enough hiding in the cold mountains! Now we march into warm lands of men.
 ; str_gunda_rumor_4|We saw a slimy skulker in our mountain tunnels, but could never catch him. He just disappeared when we got close.
-; str_gunda_rumor_5|The Isengarders think they're something special because the old man is equipping them.
+str_gunda_rumor_5|Isengardczycy myślą, że są czymś specjalnym ponieważ stary człowiek ich zaopatrza.
 str_gunda_rumor_6|Spalimy ludzkie wioski by było nam ciepło 
 ; str_gunda_rumor_7|Manlings will feel the frostbite we will bring to them. And afterwards the fire. Ha ha ha!
 ; str_gunda_rumor_8|Azog and Bolg almost defeated dwarves, elves and manlings last time. But bird-monsters and bear-men saved them. *spit*
@@ -1423,7 +1423,7 @@ str_moria_rumor_begin|Kiedy usłyszysz bębny- uciekaj!
 str_moria_rumor_2|Ghâsh jest w głębinach!
 str_moria_rumor_3|Zguba! Zguba! Zguba! Bębny w głębinach
 str_moria_rumor_4|Moria jest wielka, lecz żaden krasnolud już się tu nie panoszy
-; str_moria_rumor_5|Dwarves dug too deep. All the better for us. Ha ha ha!
+str_moria_rumor_5|Krasnoludy kopały zbyt głęboko. Tym lepiej dla nas. HA HA HA!
 str_moria_rumor_6|Jest wiele tunelów w Morii. Nie odwiedzamy każdego z nich. 
 ; str_moria_rumor_7|Some manlings and dwarves sneaked past our sentries in the mines a while ago. We doubled the watch since.
 str_moria_rumor_8|Krasnoludy już nigdy nie postawią tu stopy! Nigdy!
@@ -1437,7 +1437,7 @@ str_umbar_rumor_4|Gondorczycy nie potrafią żeglować. Są szczurami lądowymi.
 str_umbar_rumor_5|W przeszłości zabijaliśmy królów Gondoru. Teraz nie mają nawet króla!
 str_umbar_rumor_6|Gondorczycy spalili naszą flotę lata temu. Teraz my spalimy Gondor.
 ; str_umbar_rumor_7|Nothing the sea can throw at us frightens a corsair. But we heard some disturbing rumours about abominations on land.
-; str_umbar_rumor_8|We will spill over Gondor like a giant wave and reclaim our long lost lands.
+str_umbar_rumor_8|Przejdziemy przez Gondor niczym gigantyczna fala i zdobędziemy nasze dawno stracone ziemie.
 ; str_umbar_rumor_9|Haradrim don't drink rum. Did you know that? We like some, to steady the harpoon hand.
 ; str_umbar_rumor_10|I saw some Variags of Khand fighting. I wouldn't want to be facing them in battle. It is a good thing they are on our side.
 ; str_khand_rumor_begin|A fight is a fight, no matter how bloody. But retreat is the greatest shame!
@@ -1466,9 +1466,9 @@ str_neutral_rumor_begin|Jutro wszystko może się zmienić...
 ; str_neutral_rumor_3|The land used to be much different once.
 str_neutral_rumor_4|Trzymaj się z dala od Fangorn.
 str_evil_rumor_begin|Orkowie walczą lepiej w nocy,ludzie walcz lepiej za dnia.
-; str_evil_rumor_2|Fight horseman with pike, footman with arrow and archer with shield!
+str_evil_rumor_2|Zwalczaj kawalerię piką, piechotę strzalą a łucznika tarczą !!!
 ; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
-; str_legendary_rumor_begin|Legend says that trees meet to talk in Fangorn.
+str_legendary_rumor_begin|Legenda głosi, iż te drzewa spotkały się by rozmawiać w Fangorn.
 ; str_legendary_rumor_amonhen|They say there is a special place on the Anduin, somewhere where the big statues stand.
 ; str_legendary_rumor_deadmarshes|It is rumoured all dead seems alive in the middle of Dead Marshes.
 ; str_legendary_rumor_mirkwood|Creatures other than orcs crawl around Mirkwood.
@@ -1812,11 +1812,11 @@ str_isengard_gift2|Narzędzia tortur
 str_lorien_gift0|Nasiona, orzechy oraz jagody
 ; str_lorien_gift1|Cold Lanterns and Strong Rope
 str_lorien_gift2|Lembas
-; str_lorien_gift3|Silver Belts and Broaches
+str_lorien_gift3|Srebrny pas i broszka
 str_lorien_gift4|Elficki płaszcz
 str_imladris_gift0|Biały chleb oraz masło ziołowe
-; str_imladris_gift1|Crystal Glassware
-; str_imladris_gift2|Miruvor
+str_imladris_gift1|Kryształowa ceramika
+str_imladris_gift2|Miruvor
 ; str_imladris_gift3|Embroidered Banners and Silver-Inlaid Horns
 ; str_imladris_gift4|Healing Herbs and Oitments
 str_woodelf_gift0|Miękkie zwierzęce skóry 
@@ -1827,7 +1827,7 @@ str_woodelf_gift2|Włócznie myśliwskie
 ; str_dale_gift0|Semi-Precious Stones and Glass Beads
 ; str_dale_gift1|Codexes of Heroic Sagas
 ; str_dale_gift2|Dorwinion Wine
-; str_dale_gift3|Luxurious Furs
+str_dale_gift3|Luksusowe Futra
 ; str_dale_gift4|Intricate Toys and Instruments
 str_harad_gift0|Figi i Granaty
 str_harad_gift1|Wojownicze Naszyniki
