@@ -229,11 +229,11 @@ qstr_Quiet!_I_didn_t_came|¡Silencio! No he venido a por ti. Al menos por ahora.
 qstr_And_I_ve_orders_to_l|Y yo tengo órdenes de dejaros pasar, esta vez.
 qstr_None_of_your_business|No es asunto vuestro.
 qstr_You_slaves_of_{s22}_|¡Vosotros, los esclavos de {s22}, sois débiles! Y tenéis suerte de que os consideremos nuestros aliados...
-qstr_Look_whom_we_meet_so|Mirad a quien tenemos aquí, tan lejos de su hogar: ¡Soldados de {s20}! ¿Son buenas o malas noticias?
+qstr_Look_whom_we_meet_so|Mirad a quién tenemos aquí, tan lejos de su hogar: ¡Soldados de {s20}! ¿Son buenas o malas noticias?
 qstr_{s20}_and_{s21}_figh|{s20} y {s21} luchan por una causa en común, deberíamos cooperar en tierras hostiles.
 qstr_In_these_dark_times_|Éstos son tiempos oscuros, {playername}, cada uno sigue su propio camino.^Pero os deseo un buen viaje de vuelta a casa.
 qstr_Neither_good_nor_bad|Ni buenas ni malas. Nuestros asuntos son sólo nuestros.
-qstr_Everybody_on_his_way|Entonces, que cada cual siga su propio camino.
+qstr_Everybody_on_his_way|Perfecto, que cada cual siga su propio camino.
 qstr_What_are_you_trying_|¿Qué intentas, escoria de {s20}? ¿Robar nuestro botín?
 qstr_Ha!_Soon_there_will_|¡Ajá! Pronto habrá botín para todos.
 qstr_Yes._Unless_you_get_|Sí. A menos que os maten primero.
@@ -259,7 +259,7 @@ qstr_Gharr!_Kill!_Kill!_K|¡Garrg! ¡Matar! ¡Matar! ¡Matar!
 qstr_Slaughter_these_half|¡Masacrad a esos medio hombres!
 qstr_Fear_no_elven_ghosts|¡No temáis a los fantasmas elfos!
 qstr_{s14}Double_rations_|{s14}¡Ración doble al que me traiga más cabezas!
-qstr_{s14}Double_rations_t|{s14}¡Ración doble para al que me traiga más cabezas de {s15}!
+qstr_{s14}Double_rations_t|{s14}¡Ración doble al que me traiga más cabezas de {s15}!
 qstr_{s14}Kill_these_hors|{s14}¡Acabad con esos ladrones de caballos!
 qstr_Kill_them_all!_Take_|¡Matadlos a todos! ¡Recuperad lo que es nuestro!
 qstr_Tonight_there_will_b|¡Esta noche habrá un enemigo de {s16} menos!
@@ -429,7 +429,7 @@ qstr_{s24}:_Your_infantry|{s24}: ¡Tu infantería se siente mejor!
 qstr_{s24}:_Your_archers_|{s24}: ¡Tus arqueros se sienten mejor!
 qstr_{s24}:_Your_cavalry_|{s24}: ¡Tu caballería se siente mejor!
 qstr_Ah_what_a_coincidenc|¡Oh, que casualidad encontrarme contigo, {playername}! Es posible que tú no me conozcas, pero yo a ti sí. Voy de camino a {s4}, pero vengo de las tierras de {s3} y ha llegado a mis oídos tu nombre. {s3} cuenta contigo en estos tiempos de peligro y, en el caso de que tuvieras pensado seguir otro curso de acción, es posible que quieras reconsiderar y centrarte en ayudar a {s3} lo mejor posible.
-qstr_Who_are_you?|¿Quien eres?
+qstr_Who_are_you?|¿Quién eres?
 qstr_A_friend_of_{s3}_and|Un amigo de {s3} y de las gentes de {s2}. ¡Ahora, apresúrate! Mordor atrae a todos los agentes del mal y el Poder Oscuro está redoblando esfuerzos para doblar su voluntad y reunirlos allí. ¡El tiempo se agota para el bien de este mundo, debemos hacer valer cualquier baza en su contra!
 qstr_What_should_I_do?|¿Que quieres que haga?
 qstr_Find_{s3}_s_whereabo|Encuentra el paradero de {s3} y habla con él. ¡Buena suerte!
@@ -726,8 +726,8 @@ qstr_^^^You_have_slain_th|^^^Matas al cabecilla, y otros los orcos rápidamente 
 qstr_You_cover_up_your_tr|Cubres tus huellas y sigues adelante.
 qstr_Breaking_camp...|Levantando el campamento...
 qstr_You_have_left_{s1}.|Has abandonado {s1}.
-qstr_You_are_entering_{s1|Estas entrando en {s1} ({s2}).
-qstr_You_are_entering_{s1}|Estas entrando en {s1}.
+qstr_You_are_entering_{s1|Estás entrando en {s1} ({s2}).
+qstr_You_are_entering_{s1}|Estás entrando en {s1}.
 qstr_The_war_expands_comm|¡La guerra se envilece, y los señores cada vez son más audaces! (Reducidos los requisitos de asedio)
 qstr_Your_party_is_spotte|Tu grupo ha sido divisado por {s1}.
 qstr_Party_has_nothing_to|¡Tu grupo no tiene nada para comer!
@@ -876,7 +876,7 @@ qstr_we_are_not_fighting_|no estamos en guerra con nadie ahora mismo
 qstr_Oh?_Let_me_see_that.|¿Oh? Déjame verlo... ¡Bien, bien, bien! Has hecho bien en traerme esto, {playername}. Aquí tienes mi sello como prueba de que lo he recibido, saluda a {s9} de mi parte cuando le vuelvas a ver.
 qstr_Give_me_that!_Hrmph!|¡Dame eso! ¡Humrm! Has hecho bien en traerme esto, {playername}, eres un sirviente útil. Espero que hagas saber a {s9} que haga uso de ti más a menudo
 qstr_What?_Let_me_see_tha|¿Qué? Déjame verlo... Hummm. Ha estado muy listo al traérmelo, {playername}. Ahora, fuera.
-qstr_Give_me_that!_Hrmph!_|¡Dame eso! ¡Hmurm! eres un sirviente útil para con tus Amos, {playername}, pero todos vosotros moriréis tarde o temprano. Aunque no ahora, así que ¡fuera de mi vista!
+qstr_Give_me_that!_Hrmph!_|¡Dame eso! ¡Jmurm! eres un sirviente útil para con tus Amos, {playername}, pero todos vosotros moriréis tarde o temprano. Aunque no ahora, así que ¡fuera de mi vista!
 qstr_Do_you_need_reinforc|¿Necesitáis refuerzos?
 qstr_You_don_t_look_too_s|No parece que tengas hombres suficientes, ¿Necesitáis tropas?
 qstr_^{s14}_is_grateful_t|^{s14} te lo agradece, {playername}, {s29}^

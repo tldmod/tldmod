@@ -339,7 +339,7 @@ str_npc5_intro_response_2|Disculpad, tengo gente menos importante con la que hab
 str_npc6_intro_response_2|El sentimiento es mutuo. Adiós.
 str_npc7_intro_response_2|Disculpa, necesito algo de aire fresco.
 str_npc8_intro_response_2|No te preocupes, sólo estamos admirando el paisaje.
-str_npc9_intro_response_2|Me pongo en marcha entonces, o el brazo de la espada empezará a picarme.
+str_npc9_intro_response_2|Entonces me pondré en marcha, el brazo de la espada ya empieza a picarme.
 str_npc10_intro_response_2|[Ignorar e irse]
 str_npc11_intro_response_2|¡Ocúpate de tus asuntos, gusano!
 str_npc12_intro_response_2|¡Ocúpate de tus asuntos, gusano!
@@ -395,7 +395,7 @@ str_npc10_backstory_c|Quizá puedas ser mi próximo jefe.
 str_npc11_backstory_c|¡Está bien, está bien! Mi nariz no sirve de mucho. Reconozco que mis ojos son mejores que mi nariz. ¡Ay! Pero mi nariz no es buena porque no sabe cómo huele nada. Ni siquiera sabe lo que está buscando. ¡Arg! Solo necesito salir de aquí y empezar a husmear en otros lugares.
 str_npc12_backstory_c|Eh, si tengo la oportunidad, me escaparé y me organizaré por mi cuenta con algunos muchachos de confianza. En algún lugar hay un buen botín esperándome, y sin grandes jefes. Me gustaría probar algún sitio dónde no estén ellos, como en los viejos tiempos.
 str_npc13_backstory_c|Seguí a mi gente al norte, y atendí a la llamada oscura para cumplir el deber que tengo con mi gente. Pero en ellos veo oscuridad y busco hacer mi parte en esta guerra en otro lugar, hasta que las arenas de mi tiempo dejen de moverse. Incluso ahora las siento débiles, cuando antes caían a cascadas.
-str_npc14_backstory_c|Pero ahí llega la marea más oscura, una marea negra de sombra que se alza sobre estas tierras como ningunos ojos mortales han visto. Esta es la marea que quiero domar, pero no tengo una tripulación lo bastante dura como para cabalgar esta tormenta.
+str_npc14_backstory_c|Pero ahí llega la marea más oscura, una marea negra de pura sombra que se alza veloz sobre estas tierras como ningún ojo mortal ha visto antes. Esta es la marea que quiero domar, pero no tengo una tripulación lo bastante dura como para cabalgar esta tormenta.
 str_npc15_backstory_c|Tras muchos inviernos salí de los túneles y busqué en los Bosques Oscuros un buen lugar para vivir y practicar mis artes. Me iba bien, hasta que unos bastardos grandes y feos con tatuajes blancos - ¡ugh! ¡Blancos! ¡Como la cara de un elfo! Menudos bastardos. Quemaron mi casa en el bosque y tuve que esconderme en las cuevas de nuevo... Aquí... Dime, ¿tienes algo de comer? ¿Quizás un buen caballo?
 str_npc16_backstory_c|Eso ocurrió muchas vidas de hombre atrás, en otra época, pero el tiempo para pensar y para las historias ha terminado. El tiempo para que mi uebloe se tome la venganza ha llegado y yo llevaré la venganza de mi pueblo hacia estas tierras del oeste. ¡Por mi mano sus hogares arderán y se marchitarán hasta que su clan deje de existir!
 str_npc17_backstory_c|Si vas al bosque, ¿podría ir contigo y contarte cosas sobre los árboles? Hay muchos árboles muy interesantes por ahí, ¿sabes?
@@ -466,44 +466,44 @@ str_npc13_signup|Te seguiré si me aceptas. Puedo dirigir a un caballo solo con 
 str_npc14_signup|Quizás, pero debes saber que no soy un ladrón ni un bandido. No robaré, ni tomaré aquello que otros puedan necesitar para vivir.
 str_npc15_signup|Je-Je. ¡Tienes razón! ¡Ssssí! Eres sabio, Gran Capitán.
 str_npc16_signup|Aguardo órdenes, y con cada segundo que pasa se me ensombrece el corazón. Ya no puedo esperar a los planes de señores y capitanes lejanos que nunca he visto y cuya existencia es más leyenda que realidad. Señores cuyas órdenes susurradas, son traídas y voceadas por hombres de poca valía. Yo espero, y conmigo aguarda la venganza de mi pueblo.
-str_npc17_signup|¡Muy bien! Conozco muchos árboles. Muy pronto tú también conocerás muchos árboles. Como yo. Porque yo conozco mucho árboles.
+str_npc17_signup|¡Muy bien! Conozco muchos árboles. Muy pronto tú también conocerás muchos árboles. Como yo. Porque yo conozco mucho de árboles.
 str_npc1_signup_2|Sólo necesitaría un momento para hablar con mi capitán y recoger mis cosas.
-str_npc2_signup_2|Tendré que hablar primero con mi sargento y después nos podremos ir - ¡tenemos grandes batallas en las que combatir y toda clase de criaturas extrañas que ver!
+str_npc2_signup_2|Tendré que hablar primero con mi sargento y después nos podremos ir, ¡tenemos grandes batallas en las que combatir y toda clase de extrañas criaturas dignas de ser vistas!
 str_npc3_signup_2|He estado esperando a que alguien me llevara consigo, así que sólo necesito ensillar mi caballo y estaremos listos para partir.
-str_npc4_signup_2|He cazado muchas veces con arcos y jabalinas. Ahora cazaré orcos bajo vuestro mando. Y tengo algunas habilidades curativas que estoy segura serán necesarias.
-str_npc5_signup_2|Quizás uniéndome a tu compañía y golpeando duro donde no se lo esperen, el Enemigo quede desequilibrado. Iré.      
-str_npc6_signup_2|Quizás pueda enseñarte a moverte más deprisa y a hacer menos ruido. Vamos.
-str_npc7_signup_2|Si puedes mantener a la gente grande de tu compañía a raya, sobre todo a esos escurridizos elfos, me uniré gustosamente a vosotros.
-str_npc8_signup_2|Debo advertirte sin embargo, que soy bastante inútil en una batalla. Pero estoy segura de que puedes mantener a una mujer de mi edad a salvo del peligro.
-str_npc9_signup_2|Pero debes decidirte rápido, los guardias están comenzando a sospechar. 
+str_npc4_signup_2|He cazado muchas veces con arco y jabalina. Ahora cazaré orcos bajo vuestro mando, además poseo varias habilidades curativas que estoy segura serán necesarias.
+str_npc5_signup_2|Quizás pueda ayudar a debilitar al Enemigo uniéndome a tu compañía y golpeando duro allá donde no lo esperen. Iré contigo.
+str_npc6_signup_2|Quizás pueda enseñarte a moverte más deprisa y a hacer menos ruido. Vayamos pues.
+str_npc7_signup_2|Si puedes mantener a la gente grande de tu compañía a raya, sobre todo a esos escurridizos elfos, me uniré gustosamente a tu grupo.
+str_npc8_signup_2|No obstante debo advertirte que soy bastante inútil en batalla. Pero estoy segura de que puedes mantener a una mujer de mi edad a salvo del peligro.
+str_npc9_signup_2|Pero debes decidirte rápido, los guardias están empezando a sospechar. 
 str_npc10_signup_2|No te arrepentirás de llevarme contigo.
 str_npc11_signup_2|Hay muchas cosas ahí fuera que mi nariz puede oler, y que mi cuchillo puede cortar. No saben muchas cosas ahora mismo pero aprenden rápido. ¿Qué me dices?
-str_npc12_signup_2|Enseñaré a tus gusanos a obedecer a base de latigazos y les daré tanto castigo como sus pieles permitan. Si lo soportan bien eso debería hacerles marchar a buen trote. ¿Qué me dices?
-str_npc13_signup_2|Debes saber, sin embargo, que siempre seré leal a la gente de mi raza. He luchado mucho y he perdido demasiado por ellos. No les daré la espalda ya que su destino será el mío.
-str_npc14_signup_2|Es una suerte que los que ya no pertenecen a este mundo no tengan necesidad de los tesoros mundanos y yo tengo la suerte de ser capaz de aliviar de sus necesidades mundanas a los dueños de esos tesoros.  
+str_npc12_signup_2|Enseñaré a tus gusanos a obedecer a base de latigazos y les daré tanto castigo como sus pieles permitan. Si lo soportan bien debería hacerles marchar a buen trote. ¿Qué me dices?
+str_npc13_signup_2|Debes saber, sin embargo, que siempre seré leal a la gente de mi raza. He luchado mucho y perdido demasiado por ellos. No les daré la espalda ya que su destino será el mío.
+str_npc14_signup_2|Es una suerte que los que ya no pertenecen a este mundo no necesiten mundanos tesoros. Y yo tengo la suerte y capacidad de liberar a los dueños de esos mismos tesoros de tan imperiosa necesidad.
 str_npc15_signup_2|¡Oh, este es un gran momento para Bolzog El Prodigio, y para ti, Gran Señor! Conquistaremos el mundo juntos, contigo, indestructible gracias a mi poder sanador, y conmigo, el Gran Brujo Orco que te apoyará siempre!
-str_npc16_signup_2|Me temo que no puedo esperar más. Pretendo unirme al próximo grupo que abandone el campamento, ya sea con la venia de mi caudillo o no. Temo que la guerra termine antes de partir para unirme a ella.
-str_npc17_signup_2|Cogeré algunas de mis herramientas, y podremos irnos. ¡Hay un roble en este mismo camino que tengo que enseñarte!
-str_npc1_signup_response_1|Me sería muy útil un montaraz habilidoso, eres bienvenido si quieres unirte.
-str_npc2_signup_response_1|Muy bien. Nos vendría bien alguna alegría en estos tiempos oscuros.
-str_npc3_signup_response_1|Muy bien. Ensilla tu caballo - partiremos pronto.
-str_npc4_signup_response_1|Impresionante. Estaremos listos para partir cuando vos estéis lista, mi señora.
-str_npc5_signup_response_1|Estaremos honrados de tener la compañía de un señor de los Elfos.
+str_npc16_signup_2|Ya no puedo esperar más. Me uniré al p...próximo grupo que abandone el campamento, ya sea con la venia de mi caudillo o no. Temo que la guerra termine antes de que p...pueda unirme a ella.
+str_npc17_signup_2|Cogeré algunas de mis herramientas y podremos irnos. ¡Hay un roble en este mismo camino que tengo que enseñarte!
+str_npc1_signup_response_1|Un buen montaraz me sería útil, si quieres unirte a mi grupo.
+str_npc2_signup_response_1|Muy bien. Nunca viene mal alguna alegría en estos tiempos oscuros.
+str_npc3_signup_response_1|Muy bien. Ensilla tu caballo, partiremos en breve.
+str_npc4_signup_response_1|Impresionante. Estamos listos para partir al momento, mi señora.
+str_npc5_signup_response_1|Nos honra la compañía de un Señor de los Elfos.
 str_npc6_signup_response_1|Muy bien. Espero que no huyas del primer orco que nos encontremos.
-str_npc7_signup_response_1|De acuerdo, Maestro Enano, eres bienvenido a nuestro grupo.
+str_npc7_signup_response_1|Que así sea, maese enano. Bienvenido a nuestro grupo.
 str_npc8_signup_response_1|Estarás a salvo con nosotros, lo prometo. Partiremos pronto.
 str_npc9_signup_response_1|Muy bien. Haz lo que se te ordena y te alimentaré bien.
 str_npc10_signup_response_1|Muy bien. Vamos.
 str_npc11_signup_response_1|Muy bien. Vamos.
-str_npc12_signup_response_1|Creo que encontraremos un buen uso para ti.
-str_npc13_signup_response_1|Creo que encontraremos un buen uso para ti.
+str_npc12_signup_response_1|Seguro que te encontramos un buen uso.
+str_npc13_signup_response_1|Seguro que te encontramos un buen uso.
 str_npc14_signup_response_1|Muy bien. Vamos.
 str_npc15_signup_response_1|Mmmm. Admiro tu... confianza. Recoge tus cosas.
-str_npc16_signup_response_1|¿Qué te parecería seguirme?
-str_npc17_signup_response_1|¡Genial! Pero espero que no estés todo el tiempo hablando de árboles.
-str_npc1_signup_response_2|No tengo necesidad de tu compañía en este momento, te deseo buena suerte.
+str_npc16_signup_response_1|¿Quieres acompañarme en mi camino?
+str_npc17_signup_response_1|¡Genial! Pero espero que no estés todo el rato hablando de árboles.
+str_npc1_signup_response_2|No te necesito de momento, adiós y buena suerte.
 str_npc2_signup_response_2|Lo siento, he cambiado de opinión.
-str_npc3_signup_response_2|Lo siento, he cambiado de opinión - quizás la próxima vez.
+str_npc3_signup_response_2|Lo siento, he cambiado de opinión, quizá la próxima vez.
 str_npc4_signup_response_2|Lo siento, mi señora, quizás en otra ocasión.
 str_npc5_signup_response_2|Pensándolo mejor, quizás necesitemos ayudar a Lothlórien por nuestra cuenta.
 str_npc6_signup_response_2|Lo siento, pero simplemente no puedo imaginarte en un campo de batalla.
@@ -517,22 +517,22 @@ str_npc13_signup_response_2|He cambiado de opinión.
 str_npc14_signup_response_2|He cambiado de opinión.
 str_npc15_signup_response_2|La verdad, creo que buscaré un verdadero sanador y no un charlatán. 
 str_npc16_signup_response_2|Ya he tenido suficiente.
-str_npc17_signup_response_2|Por otro lado, creo que acabo de cambiar de opinión. Estás algo loco, ¿no? 
+str_npc17_signup_response_2|Pensándolo bien, mejor no. Estás algo loco, ¿a que sí?
 str_npc1_payment|Me uniría a ti, pero el Capitán Faramir echaría en falta mi presencia aquí. [cuesta {reg14} de Influencia con {s14}]
 str_npc2_payment|El sargento de la guardia no me dejaría marchar, me temo. [cuesta {reg14} de Influencia con {s14}]
-str_npc3_payment|Ejem, parece que tengo algunas deudas acumuladas en esta bonita taberna, así que tendré que saldarlas antes de poder irme.  [cuesta {reg14} de Influencia con {s14}]
-str_npc4_payment|Me uniría a vos, pero ¿quién se encargará de los heridos si la ciudad es asediada?  [cuesta {reg14} de Influencia con {s14}]
+str_npc3_payment|Ejem, por lo visto tengo algunas deudas acumuladas en esta bonita taberna, así que tendré que saldarlas antes de poder irme.  [cuesta {reg14} de Influencia con {s14}]
+str_npc4_payment|Me uniría a tu compañía, pero ¿quién se encargará de los heridos si asedian la ciudad?  [cuesta {reg14} de Influencia con {s14}]
 str_npc5_payment|Deberíamos partir pronto. Mi poder de acción se verá mermado si el Enemigo detecta mi presencia antes de que le hayamos atacado. Pero Lothlórien también me necesita aquí.  [cuesta {reg14} de Influencia con {s14}]
-str_npc6_payment|Me uniría a ti, pero mi deber está aquí.  [cuesta {reg14} de Influencia con {s14}]
-str_npc7_payment|Me uniría a ti, pero me temo que mi venerable padre Dwalin no entenderá que deje la ciudad en un tiempo de necesidad. [cuesta {reg14} de Influencia con {s14}]
-str_npc8_payment|No puedo abandonar mis obligaciones aquí, mi Rey todavía me necesita. Me preocupa su salud. [cuesta {reg14} de Influencia con {s14}]
-str_npc9_payment|Me gustaría irme contigo, pero los guardias de la puerta no me dejarán marchar.^Creeme, lo he intentado. [cuesta {reg14} de Influencia con {s14}]
+str_npc6_payment|Me uniría a ti, pero mi deber está aquí, con los míos.  [cuesta {reg14} de Influencia con {s14}]
+str_npc7_payment|Me uniría a ti, pero me temo que mi venerable padre Dwalin no entenderá que deje la ciudad en tiempos de necesidad. [cuesta {reg14} de Influencia con {s14}]
+str_npc8_payment|Tengo obligaciones aquí, mi Rey todavía me necesita. Me preocupa su salud. [cuesta {reg14} de Influencia con {s14}]
+str_npc9_payment|Me gustaría irme contigo, pero los guardias de la puerta no me dejarán marchar.^Créeme, lo he intentado. [cuesta {reg14} de Influencia con {s14}]
 str_npc10_payment|Me uniría a ti, pero tengo obligaciones aquí. [cuesta {reg14} de Influencia con {s14}]
-str_npc11_payment|Sólo necesito que alguien se encargue del jefe. Podríamos esperar a que se fuera a dormir para largarnos, pero supongo que alguien de alto rango podría obligarle a hacer la vista gorda.  [cuesta {reg14} de Influencia con {s14}]
-str_npc12_payment|¡Ey! ¡Sí! Tendré que recordar a los chicos que mantengan sus sucias bocas cerradas o los de arriba se me echarán encima.  [cuesta {reg14} de Influencia con {s14}]
+str_npc11_payment|Sólo necesito que alguien se encargue del jefe. Podríamos esperar a que se fuera a dormir para largarnos, pero supongo que algún imp...importante de esos podría obligarle a hacer la vista gorda.  [cuesta {reg14} de Influencia con {s14}]
+str_npc12_payment|¡Jij! ¡Sí! Tendré que engrasar a los chicos para que mantengan sus sucias bocas a cal y canto... o los de arriba se me echarán encima.  [cuesta {reg14} de Influencia con {s14}]
 str_npc13_payment|Ay, los jefes de aquí no me dejan marchar. ¿Serías capaz de convencerlos?  [cuesta {reg14} de Influencia con {s14}]
-str_npc14_payment|Necesitarás emplearte a fondo para persuadir al capitán del fondeadero para que me deje marchar. Convéncelo y podremos zarpar a través de esta tormenta.  [cuesta {reg14} de Influencia con {s14}]
-str_npc15_payment|Ah, sí. ¡Noble Señor Guerrero! ¡Hay un pequeño impedimento! He sufrido una grave injusticia, al dueño de esta cueva no le gustó mi propuesta de curación, y me ha robado todas mis cosas! ¡Maldito sea! ¡Atreverse a robar al Gran Bolzog! Señor, ¡no puedo recuperar mis preciadas herramientas de sus sucias manos!  [cuesta {reg14} de Influencia con {s14}]
+str_npc14_payment|Necesitarás emplearte a fondo persuadiendo al capitán del fondeadero para que me deje marchar. Convéncelo y navegaremos con bravío a través de esta tempestad.  [cuesta {reg14} de Influencia con {s14}]
+str_npc15_payment|Ah, sí. ¡Noble Amo Guerrero! ¡Hay un pequeño problema! He sufrido una grave injusticia, al dueño de esta cueva no le gustó mi propuesta de curación, y me ha robado todas mis cosas! ¡Maldito sea! ¡Atreverse a robar al Gran Bolzog! Amo, amo, ¡no puedo recuperar mis preciadas herramientas de sus sucias manos!  [cuesta {reg14} de Influencia con {s14}]
 str_npc16_payment|No te seguiré, me iré por mi propio camino; pero es posible que nuestros caminos se crucen durante un tiempo. Aunque, antes de viajar por estas tierras debo recordar a aquellos que murieron en el intento. Preséntales tus respetos y entonces podremos partir. No debemos nunca olvidar a nuestros ancestros. Ellos no se han olvidado de nosotros.  [cuesta {reg14} de Influencia con {s14}]
 str_npc17_payment|Me gustan los árboles, pero mi viejo tío me necesita aquí.  [cuesta {reg14} de Influencia con {s14}]
 str_npc1_payment_response|No te preocupes, me encargaré de que te dé licencia. [cuesta {reg14}/{reg15} de Influencia]
@@ -583,7 +583,7 @@ str_npc4_2ary_morality_speech|Disculpad señor, pero las mujeres de mi linaje pr
 
 
 
-str_npc15_2ary_morality_speech|¡Ji-Ji-Ji! ¡Eres astuto, señor! ¡Coges el oro, y asientes, y dices "sí señor" pero tienes planeado esto desde hace tiempo! Ji-Ji! Sólo que, tenemos que ir con cuidado, para que el Grande no se de cuenta de que lo estás engañando...
+str_npc15_2ary_morality_speech|¡Ji-Ji-Ji! ¡Eres un Amo astuto! ¡Coges el oro, y asientes, y dices «sí señor» pero ya lo tenías planeado desde hace tiempo! ¡Ji- Ji! Sólo que, tenemos que ir con cuidado, para que el Grande no se de cuenta de que lo estás engañando...
 
 
 str_npc1_personalityclash_speech|¿Había mencionado que odio a {s11}?
@@ -591,7 +591,7 @@ str_npc2_personalityclash_speech|¿Había mencionado que odio a {s11}?
 str_npc3_personalityclash_speech|Señor, ¿cómo es que {s11} forma parte de nuestra compañía? Reconozco que es un soldado ágil a pie, pero pienso que habla demasiado sobre emboscadas - algo acorde con la naturaleza de su gente.
 str_npc4_personalityclash_speech|¿Había mencionado que odio a {s11}?
 str_npc5_personalityclash_speech|¿Había mencionado que odio a {s11}?
-str_npc6_personalityclash_speech|{playername}, acabo de ver a {s11} pisar de forma descarada un nido de pájaros jóvenes. Su torpeza ha destrozado las vidas de unas criaturas inocentes.
+str_npc6_personalityclash_speech|{playername}, acabo de ver a {s11} pisar de forma descarada un nido de tiernos pajaritos. Su torpeza ha destrozado las vidas de unas criaturas inocentes.
 str_npc7_personalityclash_speech|El señor {s11} se apaña bien en una batalla, pero me pregunto si su truco está en cegar al enemigo con el brillo de su pelo. ¿O quizás caen admirados por su fama y sus modales refinados?
 str_npc8_personalityclash_speech|Señor, tengo una queja contra {s11}. Me hostiga continuamente para que le haga un brebaje llamado "el hada verde".
 str_npc9_personalityclash_speech|¿Había mencionado que odio a {s11}?
@@ -1077,7 +1077,7 @@ str_lord_follow_refusal_martial|Quizás si algún día probáis ser un guerrero 
 str_lord_follow_refusal_quarrelsome|¿Seguir a alguien como vos? No lo creo.
 str_lord_follow_refusal_pitiless|Los nobles como yo no seguimos a plebeyos como vos, {sir/madame}.
 str_lord_follow_refusal_cunning|Primero demostradme que sois el tipo de {man/woman} que no me guiará hacia una catástrofe, y entonces quizás os seguiré.
-str_lord_follow_refusal_sadistic|¡No lo creo! En vez de eso, vos deberíais seguirme a mí, como un perro que sigue a {his/her} dueño.
+str_lord_follow_refusal_sadistic|¡No lo creo! En vez de eso, deberías seguirme a mí, como perro que sigue a su dueño.
 str_lord_follow_refusal_goodnatured|Um, estoy bastante ocupado ahora mismo. Quizá más adelante.
 str_lord_follow_refusal_upstanding|Primero demostradme que sois digno de guiarme, y después quizá os siga.
 str_lord_insult_default|inepto
@@ -1186,7 +1186,7 @@ str_party_greet_enemy_rohan|¡Los Jinetes de Rohan han venido aquí para desafia
 str_party_greet_friend_mordor|¡Victoria para el Ojo de Sauron!
 str_party_greet_enemy_mordor|¡Vuestras cabezas quedarán bien clavadas en las puertas de Morannon!
 str_party_greet_friend_isengard|¡Saludos a la Mano Blanca!
-str_party_greet_enemy_isengard|¡El Sabio Maestro estará encantado cuando le enseñe vuestros cadáveres!
+str_party_greet_enemy_isengard|¡Al Sabio Maestro le encantará ver el color de vuestras mortajas!
 str_party_greet_friend_lorien|¡Saludos, amigo de Lothlórien!
 str_party_greet_enemy_lorien|¡Monstruo, pondremos fin a tu sufrimiento!
 str_party_greet_friend_imladris|¡Saludos, amigo de Imladris y de Elrond!
@@ -1253,7 +1253,7 @@ str_gondor_rumor_9|La guerra debe continuar, mientras defendemos nuestras vidas 
 str_gondor_rumor_10|Gil-Galad fue un rey elfo. Sobre él los bardos cantaban esto tristemente: el último cuyo reino era libre y justo entre las Montañas y el Mar.
 str_gondor_rumor_11|¿Dol Guldur? Nunca he oído hablar de ello.
 str_gondor_rumor_12|¿Moria? Los enanos excavan allí, ¿verdad?
-str_gondor_rumor_13|No le digáis a nadie que he dicho esto, pero creo que el Príncipe Imrahil debería de ser Rey. Lord Denethor es un hombre íntegro, pero Gondor se ha debilitado mucho durante su regencia. Y no sólo desde que su hijo mayor nos dejó.
+str_gondor_rumor_13|No le digáis a nadie que he dicho esto, pero creo que el Príncipe Imrahil debería convertirse en Rey. El Senescal Denethor es un hombre íntegro, pero Gondor se ha debilitado mucho durante su regencia... y no sólo desde que su hijo mayor nos dejó.
 str_gondor_rumor_14|La gente dice que los Nueve salieron de Minas Morgul de nuevo. Ojalá tuviéramos más valientes capitanes como Boromir para guiar a nuestros hombres en la batalla contra enemigos tan antiguos como esos.
 str_gondor_rumor_15|Los Sureños nos han echado de Harondor. Han estado realizando muchas incursiones contra nosotros durante bastante tiempo. Desearía poder pasear de nuevo por los verdes campos de Lebennin de nuevo. Pero se nos dice "No", nuestros soldados deben proteger el centro del reino.
 str_gondor_rumor_16|El primo de mi amigo es un arquero al servicio de Hirluin el Hermoso. Tienen de lejos, los uniformes más bonitos en mi opinión.
@@ -1357,7 +1357,7 @@ str_beorn_rumor_12|Beorn fue un gran hombre. No, un hombre no, ¡un gigante!
 str_beorn_rumor_13|*RUGE* ¿Tienes algo de miel?
 str_beorn_rumor_14|¡No deambules sólo por las montañas! Osos y lobos se mantienen alejados de grandes grupos de hombres. Pero el hambre, o, como algunos dicen, los espíritus sombríos, les dirigen suficientemente cerca como para atacarte.
 str_lorien_rumor_begin|¡Oh Lothlórien! El Invierno se acerca, el día de las hojas desnudas y secas; Las hojas caen al agua, la corriente las aleja lentamente.
-str_lorien_rumor_2|¡No os atreváis a hablar mal de Lady Galadriel! No hay en ella ni en esta tierra ninguna traza de maldad, a no ser que un hombre lo traiga en él mismo. ¡En ese caso que se prepare!
+str_lorien_rumor_2|¡No os atreváis a hablar mal de la Señora Galadriel! No hay en ella ni en esta tierra ninguna traza de maldad, a no ser que algún hombre la traiga consigo. ¡En ese caso, que se prepare!
 str_lorien_rumor_3|El mundo está lleno de grandes peligros, y en él hay muchos lugares oscuros; pero aún hay muchos lugares bellos, y aunque ahora en muchas tierras el amor se mezcla con el dolor, crece incluso más fuerte.
 str_lorien_rumor_4|El bien y el mal no han cambiado desde antaño; ni varían mucho entre Elfos y Enanos y entre los Hombres. Es el deber de un hombre saber distinguirlos, tanto en el Bosque Dorado como en su propia casa.
 str_lorien_rumor_5|¡A menudo el odio se hace daño a sí mismo!
@@ -1492,7 +1492,7 @@ str_dwarf_rank_1|Minero Enano
 str_dwarf_rank_2|Guerrero Enano
 str_dwarf_rank_3|Enano Barbalarga
 str_dwarf_rank_4|Guerrero Enano con Hacha
-str_dwarf_rank_5|Maestro del Hacha Enano
+str_dwarf_rank_5|Maese Hachero Enano
 str_dwarf_rank_6|Enano Barbagrís
 str_dwarf_rank_7|Capitán Enano
 str_dwarf_rank_8|Jefe Enano
@@ -1534,7 +1534,7 @@ str_lorien_rank_3|Thindirith, Guardia Gris de Lothlórien
 str_lorien_rank_4|Thangyl, Portador del Escudo de Lothlórien
 str_lorien_rank_5|Maglagyl, Portador de la Espada de Lothlórien
 str_lorien_rank_6|Tiribrannon, Guardián de Lothlórien
-str_lorien_rank_7|Glaurchir, Gran Maestre de Lothlórien
+str_lorien_rank_7|Glaurchir, Gran Maese de Lothlórien
 str_lorien_rank_8|Galadhîr, Gran Señor de Lothlórien
 str_lorien_rank_9|Thalion, Héroe de Lothlórien
 str_imladris_rank_0|Háno, Hermano de Imladris
@@ -1554,7 +1554,7 @@ str_woodelf_rank_3|Calendirith, Guardia del Bosque Verde
 str_woodelf_rank_4|Thangyl, Portador del Escudo del Bosque Verde
 str_woodelf_rank_5|Maglagyl, Portador de la Espada del Bosque Verde
 str_woodelf_rank_6|Tiribrannon, Guardián del Bosque Verde
-str_woodelf_rank_7|Pengherdir, Maestro Arquero del Bosque Verde
+str_woodelf_rank_7|Pengherdir, Maese Arquero del Bosque Verde
 str_woodelf_rank_8|Armagor, Espadachín Real del Bosque Verde
 str_woodelf_rank_9|Thalion, Héroe del Bosque Verde
 str_dale_rank_0|Habitante de Valle
@@ -1565,7 +1565,7 @@ str_dale_rank_4|Portador del Escudo de Valle
 str_dale_rank_5|Portador de la Espada de Valle
 str_dale_rank_6|Bardinga, Arquero de Valle
 str_dale_rank_7|Capitán de Valle
-str_dale_rank_8|Maestro del Lago de Valle
+str_dale_rank_8|Encargado del Lago de Valle
 str_dale_rank_9|Héroe de Valle
 str_harad_rank_0|Iniciado de la Tribu
 str_harad_rank_1|Adulto de la Tribu

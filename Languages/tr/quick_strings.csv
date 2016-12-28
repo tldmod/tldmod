@@ -86,7 +86,7 @@ qstr_Friend_of_{s5}|{s5}'in arkadaşı
 qstr_Familiar_to_{s5}|{s5}'e benzer
 qstr_Known_to_{s5}|Biliniyor
 qstr_Stranger_to_{s5}|{s5}'e yabancı
-; qstr_Great_Enforcer_of_{s|Great Enforcer of {s5}
+qstr_Great_Enforcer_of_{s|Büyük İmparator {s5}
 qstr_Enforcer_of_{s5}|{s5}'in Kiralık Katili 
 qstr_Important_Ally_of_{s|{s5}'in Sadık Müttefiği
 qstr_Ally_of_{s5}|{s5}'in müttefiki
@@ -106,7 +106,7 @@ qstr_Short_of_Resource_Po|Kaynak Birimi Azlığı
 ; qstr_{s10}_will_soon_reas|{s10} will soon reassign some of {s12} troops away from your party!
 ; qstr_Superior_orders_from|Superior orders from {s11} to reassign troops:
 qstr_{reg12}_{s10}_left_t|{reg12} {s10} takımdan ayrıldı!
-; qstr_Fangorn_claimed_{reg|Fangorn claimed {reg0} killed and {reg1} wounded among your troops!
+qstr_Fangorn_claimed_{reg|Fangorn ele gecirildi birliklerinden {reg0} ölü {reg1} yaralı var!
 qstr_You_were_wounded_in_|Sen Fangorn'da yaralandın!
 qstr_Volunteers|Gönüllüler
 qstr_{s1}_of_{s3}_was_def|{s1} of {s3} was savaşta yenildi.
@@ -135,7 +135,7 @@ qstr_+1_to_Trainer|Talimciliğe +1
 qstr_Recruits_Tribal_Orcs|Kabile Orklarını Topla
 qstr_rally|toparla
 qstr_rallies|toparlamak
-; qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} in battle
+qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} Savaşta
 qstr_+1_to_Charisma|Karizmaya +1
 qstr_+1_to_Surgery|Cerrahlığa +1
 qstr_+1_to_Persuasion|+1 İknaya
@@ -170,8 +170,8 @@ qstr_in_sight_of_the_maje|Minas Tirith görkemli şehir duvarları gözünün ö
 qstr_in_sight_of_the_entr|Erebor'un görünen girişinde, cüce hisarı
 qstr_in_sight_of_the_dark|Kara Orthanc Kulesi'nin görünüründe
 qstr_near_the_Old_Ford_wh|Old Ford'un yanında, Eski Orman Yoluyla Anduin Nehrinin kesiştiği yerde
-; qstr_near_a_big_ford_cros|near a big ford crossing the River {s15}
-; qstr_near_a_small_ford_cr|near a small ford crossing the River {s15}
+qstr_near_a_big_ford_cros|Nehri geçerken büyük bir Ford {s15}
+qstr_near_a_small_ford_cr|Nehri geçerken küçük bir Ford {s15}
 qstr_Battle_Advantage:_{r|Savaş Avantajı: {reg0}.
 qstr_{s9}_wants_you_to_re|{s9} sizden sonraki bildiriye kadar onu ordusunu takip etmenizi istiyor.
 qstr_Rohan_capital_moved_|Rohan Başkenti Edoras'tan Miğferdibi'ne taşındı!
@@ -210,7 +210,7 @@ qstr_Of_course.|Tabiki.
 qstr_I_don_t_like_this._W|Bunu sevmedim.Seni {s21}'den buraya onca yolu bu kadar fazla getirten nedir?
 qstr_Do_you_fear_us_{play|Bizden korkuyor musun, {s20}'lı {playername}? Mmm, {s22}'dan ne gizliyorsun?^^Bizi yalnız bırak, ve kimsenin canı yanmasın.
 qstr_It_s_a_servant_of_{s|O bir {s22} hizmetkârı.{s23}'dan sakın, {playername}!
-; qstr_Our_allies_are_you?_|Our allies, are you? I guess you can pass. 
+qstr_Our_allies_are_you?_|Sen müttefikimiz misin ? Müttefiksen geçebilirsin.
 qstr_And_we_shall_not_kil|Ve bizde seni öldürmeyeceğiz,şimdilik.
 qstr_This_land_belongs_to|Burası {s20} ait... {s23} burda işi yok
 qstr_We_will_stay_as_long|Efendimiz emrettikçe kalacağız! Şansına dua et senin için gelmedik.
@@ -264,7 +264,7 @@ qstr_{s14}Kill_these_hors|{s14} Bu at hırsızlarını öldürün!
 qstr_Kill_them_all!_Take_|Hepsini öldür! Bizim olanı geri al!
 qstr_Tonight_there_will_b|Bu gece bir {s16} düşmanı eksilecek.
 qstr_{s14}Riders_of_Rohan|{s14}Rohan'ın Süvarileri! Ne için savaştığınızı hatırlayın!
-; qstr_{s14}More_{s19}heads|{s14}More {s19}heads to decorate the gates of Morannon!
+qstr_{s14}More_{s19}heads|{s14}Morannon'un {s19}kapılarını süslemek için bir kaç kafa!
 qstr_The_Wise_Master_shal|Bilge efendi, ona {playername}'ın vücudunu gösterdiğimde memnun kalacak.
 qstr_{s14}Now_we_will_put|{s14} biz şimdi yanlış işlerden dolayı acı çekenlere son vereceğiz.
 qstr_{s14}Today_we_shall_|{s14} 
@@ -274,18 +274,18 @@ qstr_Men_of_{s16}_charge!|{s16}'ın İnsanları, hücum! Ülkeniz için savaşı
 qstr_{s14}Grind_their_bod|{s14}Bedenleri kuma dönüşene kadar ezin.
 ; qstr_{s14}Dwarves_or_men_|{s14}Dwarves or men, they are no match for our fierceness!
 ; qstr_{s14}Elves_or_men_th|{s14}Elves or men, they are no match for our fierceness!
-; qstr_{s14}Flesh_to_shatte|{s14}Flesh to shatter, throats to cut, blood to spill!
-; qstr_Put_on_the_masks_of_|Put on the masks of warriors, men! Today the doom falls upon our enemies from {s18}!
-; qstr_They_seek_the_tempes|They seek the tempest, and they shall have it! Men, prepare to fight!
-; qstr_Draw_your_weapons_me|Draw your weapons, men, for tempest is unleashed upon our enemies!
-; qstr_Orcs_of_{s16}_get_re|Orcs of {s16}, get ready! Here are a few throats for you to cut!
+qstr_{s14}Flesh_to_shatte|{s14}Parçalayacağız,boğazlarını kesip,kan dökeceğiz!
+qstr_Put_on_the_masks_of_|Savaş maskelerinizi takın yiğit savaşçılar!Bugün lanet düşmanlarınızın üzerine yağıyor {s18}!
+qstr_They_seek_the_tempes|Fırtınayı almak istiyorlar,belli ki alacaklar!Askerler savaşa hazırlanın!
+qstr_Draw_your_weapons_me|Kılıçlarınızı çekin bügün fırtına düşmanlarımız için çakacak!
+qstr_Orcs_of_{s16}_get_re|Ork'lar {s16}Hazır olun! İşte kesmeniz gereken bir kaç boğaz!
 qstr_These_friend_of_elve|Elflerin dostları kılıçlarımızın altında can verecek!
 qstr_These_Elves_will_fal|Elfler kılıçlarımızın altında can verecek!
-; qstr_Raahh!_Draw_your_wea|Raahh! Draw your weapons, scum of {s16}! Tonight we feast on {s15} entrails!
-; qstr_Rha!_{s14}More_{s15}|Rha! {s14}More {s15} bodies to disfigure with our twisted weapons!
-; qstr_Slaughter_these_puny|Slaughter these puny thieves of {s18} now! Then we burn their homes and cut down their families.
+qstr_Raahh!_Draw_your_wea|Raahh! Silahlarınızı çekin pislikler{s16}! Bu gece siz orospular üstünde  {s15} bayram yapacağız!
+qstr_Rha!_{s14}More_{s15}|Rha! {s14}Bilenmiş silahlarımızla can verecek bir kaç {s15} ceset daha!
+qstr_Slaughter_these_puny|Şu lanet hırsızları hemen {s18} öldürün ! Sonra evlerini ateşe verip ailelerini kılıçtan geçirin !
 qstr_Death_to_the_trespas|{s16} diyarına izinsiz girenlere ölüm!
-; qstr_CHARGE!_Let_s_clear_|CHARGE! Let's clear the {s18} {s19}scum from {s17}!
+qstr_CHARGE!_Let_s_clear_|HÜCUUUM! Şu {s18} lanet {s19}pislikleri yeryüzünden silelim {s17}!
 ; qstr_{s14}Now_that_{s19}s|{s14}Now that {s19}scum will taste the fury of the bear people!
 qstr_Attack!|Saldırın!
 qstr_You_are_attacked_by_|Bir grup goblin tarafından saldırıya uğradın!
@@ -306,7 +306,7 @@ qstr_Archers__{reg2}_|Okçular ({reg2})
 qstr_Cavalry__{reg3}_|Süvari ({reg3})
 ; qstr_Orc_brew_finished!|Orc brew finished!
 qstr_Given_by:_{s62}|{s62} tarafından verildi
-; qstr_Given_on:_{s60}|Given on: {s60}
+qstr_Given_on:_{s60}|Verilir: {s60}
 qstr_You_have_{reg0}_days|Bu görevi bitirmek için {reg0} günün kaldı.
 qstr_This_quest_has_been_|Bu görev sonuçlandı.Bitirmek için {s59} ile konuş.
 qstr_This_quest_has_been_s|Bu görev başarıyla bitirildi.Ödülünü almak için {s59} ile konuş.
@@ -356,8 +356,8 @@ qstr_Ally_party_is_presen|Müttefik parti hazır
 ; qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
 ; qstr_Event_#{reg5}_type_{reg|Event #{reg5}, type {reg6}, time {reg8}. No relevant kingdom relation
 ; qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Player unaffiliated
-; qstr_Elapsed_hours:_{reg7|Elapsed hours: {reg7}
-; qstr_Reputation_type:_{s1|Reputation type: {s15}
+qstr_Elapsed_hours:_{reg7|Geçen saatler: {reg7}
+qstr_Reputation_type:_{s1|İtibar türü: {s15}
 ; qstr_Entries_up_to_#{reg5|Entries up to #{reg5} skipped
 qstr_A_new_location_is_no|Şimdi haritada yeni bir konum mevcut!
 qstr_New_trait_gained:_{s|Kişisel özellik kazanıldı: {s5}.
@@ -376,7 +376,7 @@ qstr_Gained_permanent_+2_to|+2 Demirvücud kalıcı olarak kazanıldı.
 qstr_Gained_permanent_+1_to_T|+1 Taktik Kalıcı olarak kazanıldı.
 qstr_You_have|Sahipsin
 qstr_{s1}_has|{s1} sahip
-; qstr_{s11}_suffered_a_ser|{s11} suffered a serious wound.
+qstr_{s11}_suffered_a_ser|{s11} Ciddi bir yara aldılar.
 qstr_The_leg_has_been_bad|Bacak muharebede kötü bir şekilde sakatlandı.
 qstr___2_athletics__1_rid|(-2 atletik, -1 binicilik, -2 çeviklik, -15 Yakın dövüş)
 qstr_The_arm_has_been_bad|Kol muharebede kötü bir şekilde sakatlandı.
@@ -389,19 +389,19 @@ qstr_{s1}_has_been_killed|{s1} öldürüldü.
 qstr_You_were_killed.|Öldürüldün.
 qstr_{s1}_recovered_from_|{s1} ağır bir yaradan kurtuldu.
 qstr_The_leg_wound_has_he|Bacak yarası iyileşti.
-; qstr__+2_athletics_+1_rid|(+2 athletics, +1 riding, +2 agility, +15 melee skill)
+qstr__+2_athletics_+1_rid|(+2 Atletizm, +1 Binicilik, +2 Çeviklik, +15 silah yeteneği)
 qstr_The_arm_wound_has_he|Kol yarası iyileşti.
-; qstr__+20_weapon_skill_+2|(+20 weapon skill, +2 strength, +1 power attacks)
+qstr__+20_weapon_skill_+2|(+20 silah yeteneği, +2 dayanıklılık, +1 güç saldırısı)
 qstr_The_head_wound_has_h|Kafadaki darbe yarası iyileşti.
-; qstr__+1_intelligence_ski|(+1 intelligence skills, +15 missile skill)
+qstr__+1_intelligence_ski|(+1 zeka yeteneği, +15 füze becerisi)
 qstr_The_cracked_ribs_hav|Kırık kaburgalar iyileşti.
 qstr__+20_weapon_skill_|(+20 silah hüneri)
-; qstr_{s1}_has_had_his_hea|{s1} has had his health boosted
-; qstr_News_has_arrived_tha|News has arrived that {s1} of {s2} was killed in battle!
+qstr_{s1}_has_had_his_hea|{s1} sağlığını geliştirdi
+qstr_News_has_arrived_tha|Yeni haberler geldi {s1} of {s2} savaşta öldürüldü!
 qstr_{s1}_s_Burial_Mound|{s1}'in Höyüğü
-; qstr_{s1}_s_Funeral_Pyre|{s1}'s Funeral Pyre
-; qstr_{s1}_is_logged_as_de|{s1} is logged as dead
-; qstr_You_have_been_discov|You have been discovered before scaling the wall.
+qstr_{s1}_s_Funeral_Pyre|{s1} Ölü yakılan odun yığını
+qstr_{s1}_is_logged_as_de|{s1} ölü olarak kaydedildi
+qstr_You_have_been_discov|Duvarı genişletmeden önce keşfedildi.
 qstr_The_enemy_is_coming_|Düşman büyük bir güçle geliyor,kaçmalısınız!
 qstr_Scout_this_area_alon|Bu alanı tek başına gözetle ve ötesinde adamlarınla buluş!
 qstr_Be_stealthy_but_elim|Gizli ol ama tüm tehlikeleri de hızlıca hallet!
@@ -414,15 +414,15 @@ qstr_Gondor_takes_a_capti|Gondor bir esir alıyor
 qstr_Rohan_takes_a_captiv|Rohan bir esir alıyor
 qstr_Mordor_takes_a_capti|Mordor bir esir alıyor
 qstr_Isengard_takes_a_cap|Isengard bir esir alıyor
-; qstr_You_were_grievously_|You were grievously wounded and your body piled with the dead. Picking your moment you managed to escape over the wall but the enemy may have seen your movements. Best to be quickly away.
-; qstr_You_were_grievously_w|You were grievously wounded in battle. Your men managed to drag you away but took horrific casualties in the effort.
-; qstr_You_were_grievously_wo|You were grievously wounded in battle. Your men managed to drag you away but took horrific casualties in the effort. Unfortunately, some of your companions have been captured and dragged to {s2}.
-; qstr_You_were_grievously_wou|You were grievously wounded in battle. Your men managed to drag you away from the fighting, but unfortunately the sorcerer has managed to escape.
-; qstr_You_were_grievously_woun|You were grievously wounded and your body piled with the dead. Picking the right moment you managed to escape, but unfortunately the sorcerer has managed to escape.
+qstr_You_were_grievously_|Ağır yaraların vardı ve vücudun ölülere yığılmıştı. Bir anı kolladın ve duvardan kaçmayı başardın ama düşman hareketlerini görmüş olabilir. Bir an önce oradan uzaklaşmalısın.
+qstr_You_were_grievously_w|Savaşta acımasızca yaralandın. Adamların seni sürüklemeyi başardı. Ama çabanın içinde dehşet verici kayıplar vardı.
+qstr_You_were_grievously_wo|Savaşta acımazsızca yaralandın. Adamların seni sürüklemeyi başardı. Ama çabanın içinde dehşet verici kayıplar vardı. Ne yazık ki, arkadaşlarından bazıları ele geçirildi ve konumuna sürüklendi {s2}.
+qstr_You_were_grievously_wou|Savaşta acımazsızca yaralandın. Adamların seni dövüşmekten alıkoymayı başardı, ne yazık ki büyücü kaçmayı başardı.
+qstr_You_were_grievously_woun|Ağır yaraların vardı ve vücudun ölülerle yığılmıştı. Kaçmayı başardınız, doğru anı seçerken büyücü kaçmayı başardı.
 qstr_Some_of_your_compani|Yoldaşlarınızdan bazıları eski yaraları yüzünden kıvranıyorlar.
-; qstr_Item_you_just_equipp|Item you just equipped does not fit characters of this race and will be removed into player inventory shortly^^Make sure your equipment has space for the item, or it will be lost
+qstr_Item_you_just_equipp|Yeni teçhizadınız eşyalar bu yarışın kurallarına uymuyor ve kısa bir süre sonra oyuncu envanterine atılacak. ^^ Envanterinizin eşya için yer açıldığından emin olun, yoksa eşyalar kaybolacak
 qstr_Inappropriate_equipm|Uygunsuz ekipman
-; qstr_The_mount_you_just_e|The mount you just equipped does not fit characters of this race. Be warned that there will be problems with the animal behaviour on the battlefield, if you leave it as this
+qstr_The_mount_you_just_e|Yeni teçhiz ettiğiniz taş bu ırkın karakterine uymuyor. Savaş alanında hayvan davranışlarıyla ilgili sorunlar olacağı konusunda uyarıda bulunun.\n
 qstr_Inappropriate_mount|Uygunsuz binek
 qstr_{s24}:_Some_of_your_|{s24}: Yaralarınızdan bazıları iyileşti.
 qstr_{s24}:_Your_infantry|{s24}: Piyaden daha iyi hissediyor!
@@ -727,7 +727,7 @@ qstr_destroyed._Only_smol|yerlebir edilmiş. Sadece yanan kalıntılar kalmış.
 qstr_Breaking_camp...|Kamp kaldırılıyor...
 qstr_You_have_left_{s1}.|Ayrıldın {s1}.
 qstr_You_are_entering_{s1|({s2}) {s1}  giriyorsun.
-qstr_You_are_entering_{s1}|Giriyorsun {s1}.
+qstr_You_are_entering_{s1}|{S1} giriyorsunuz.
 ; qstr_The_war_expands_comm|The war expands, commanders are getting bolder! (siege requirements reduced)
 qstr_Your_party_is_spotte|Grubun {s1} tarafından tespit edildin.
 qstr_Party_has_nothing_to|Partinin yiyecek hiç bir şeyi yok!

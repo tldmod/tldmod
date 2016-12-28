@@ -50,8 +50,8 @@ trp_woodmen_skilled_forester|Guardián Experto de los Bosques
 trp_woodmen_skilled_forester_pl|Guardianes Expertos de los Bosques
 trp_woodmen_axemen|Hachero de los Bosques 
 trp_woodmen_axemen_pl|Hacheros de los Bosques 
-trp_woodmen_master_axemen|Hachero Maestro de los Bosques
-trp_woodmen_master_axemen_pl|Hacheros Maestros de los Bosques 
+trp_woodmen_master_axemen|Maese Hachero de los Bosques
+trp_woodmen_master_axemen_pl|Maeses Hacheros de los Bosques 
 trp_woodmen_tracker|Rastreador de los Bosques 
 trp_woodmen_tracker_pl|Rastreadores de los Bosques
 trp_woodmen_scout|Explorador de los Bosques 
@@ -98,8 +98,8 @@ trp_dale_pikeman|Lancero de Valle
 trp_dale_pikeman_pl|Lanceros de Valle
 trp_dale_billman|Archero de Valle
 trp_dale_billman_pl|Archeros de Valle
-trp_dale_bill_master|Maestro Archero de Valle
-trp_dale_bill_master_pl|Maestros Archeros de Valle
+trp_dale_bill_master|Maese Archero de Valle
+trp_dale_bill_master_pl|Maeses Archeros de Valle
 trp_merchant_squire_or_dale|Escudero Mercader de Valle
 trp_merchant_squire_or_dale_pl|Escuderos Mercaderes de Valle
 trp_merchant_guard_of_dale|Guardia Mercader de Valle
@@ -222,8 +222,8 @@ trp_ranger_of_ithilien|Montaraz de Ithilien
 trp_ranger_of_ithilien_pl|Montaraces de Ithilien
 trp_veteran_ranger_of_ithilien|Montaraz Veterano de Ithilien
 trp_veteran_ranger_of_ithilien_pl|Montaraces Veteranos de Ithilien
-trp_master_ranger_of_ithilien|Maestro Montaraz de Ithilien
-trp_master_ranger_of_ithilien_pl|Maestros Montaraces de Ithilien
+trp_master_ranger_of_ithilien|Maese Montaraz de Ithilien
+trp_master_ranger_of_ithilien_pl|Maeses Montaraces de Ithilien
 trp_ithilien_leader|Capitán de los Montaraces de Ithilien
 trp_ithilien_leader_pl|Capitanes de los Montaraces de Ithilien
 trp_woodsman_of_lossarnach|Leñador de Lossarnach
@@ -234,8 +234,8 @@ trp_vet_axeman_of_lossarnach|Hachero Veterano de Lossarnach
 trp_vet_axeman_of_lossarnach_pl|Hacheros Veteranos de Lossarnach
 trp_heavy_lossarnach_axeman|Hachero Pesado de Lossarnach
 trp_heavy_lossarnach_axeman_pl|Hacheros Pesados de Lossarnach 
-trp_axemaster_of_lossarnach|Maestro Hachero de Lossarnach
-trp_axemaster_of_lossarnach_pl|Maestros Hacheros de Lossarnach
+trp_axemaster_of_lossarnach|Maese Hachero de Lossarnach
+trp_axemaster_of_lossarnach_pl|Maeses Hacheros de Lossarnach
 trp_lossarnach_leader|Capitán de Lossarnach
 trp_lossarnach_leader_pl|Capitanes de Lossarnach
 trp_pelargir_watchman|Vigía de Pelargir
@@ -312,8 +312,8 @@ trp_lothlorien_archer|Arquero de Lórien
 trp_lothlorien_archer_pl|Arqueros de Lórien
 trp_lothlorien_veteran_archer|Arquero Veterano de Lórien
 trp_lothlorien_veteran_archer_pl|Arqueros Veteranos de Lórien
-trp_lothlorien_master_archer|Maestro Arquero de Lórien
-trp_lothlorien_master_archer_pl|Maestros Arqueros de Lórien
+trp_lothlorien_master_archer|Maese Arquero de Lórien
+trp_lothlorien_master_archer_pl|Maeses Arqueros de Lórien
 trp_galadhrim_royal_archer|Arquero Real Galadhrim
 trp_galadhrim_royal_archer_pl|Arqueros Reales Galadhrim
 trp_galadhrim_royal_marksman|Tirador Real Galadhrim
@@ -398,8 +398,8 @@ trp_dunedain_trained_scout|Rastreador Dúnadan
 trp_dunedain_trained_scout_pl|Rastreadores Dúnedain
 trp_arnor_man_at_arms|Hombre de Armas de Arnor
 trp_arnor_man_at_arms_pl|Hombres de Armas de Arnor
-trp_arnor_master_at_arms|Maestro de Armas de Arnor
-trp_arnor_master_at_arms_pl|Maestros de Armas de Arnor
+trp_arnor_master_at_arms|Soldado Experto de Arnor
+trp_arnor_master_at_arms_pl|Soldados Expertos de Arnor
 trp_high_swordsman_of_arnor|Alto Espadachín de Arnor
 trp_high_swordsman_of_arnor_pl|Altos Espadachines de Arnor
 trp_arnor_horsemen|Jinete de Arnor
@@ -410,8 +410,8 @@ trp_dunedain_ranger|Montaraz Dúnadan
 trp_dunedain_ranger_pl|Montaraces Dúnedain
 trp_dunedain_veteran_ranger|Montaraz Dúnadan Veterano
 trp_dunedain_veteran_ranger_pl|Montaraces Dúnedain Veteranos
-trp_dunedain_master_ranger|Maestro Montaraz Dúnadan
-trp_dunedain_master_ranger_pl|Maestros Montaraces Dúnedain
+trp_dunedain_master_ranger|Maese Montaraz Dúnadan
+trp_dunedain_master_ranger_pl|Maeses Montaraces Dúnedain
 trp_rohan_youth|Joven de Rohan
 trp_rohan_youth_pl|Jóvenes de Rohan
 trp_guardsman_of_rohan|Guardián de Rohan
@@ -528,8 +528,8 @@ trp_easterling_axeman|Hachero Variag
 trp_easterling_axeman_pl|Hacheros Variag
 trp_easterling_veteran_axeman|Hachero Veterano Variag
 trp_easterling_veteran_axeman_pl|Hacheros Veteranos Variag
-trp_easterling_axe_master|Maestro Hachero Variag
-trp_easterling_axe_master_pl|Maestros Hacheros Variag
+trp_easterling_axe_master|Hachero experto Variag
+trp_easterling_axe_master_pl|Hacheros expertos Variag
 trp_easterling_rider|Jinete de Poni Variag
 trp_easterling_rider_pl|Jinetes de Poni Variag
 trp_easterling_horseman|Jinete Variag
@@ -560,10 +560,10 @@ trp_corsair_youth|Marinero de Umbar
 trp_corsair_youth_pl|Marineros de Umbar
 trp_corsair_warrior|Guerrero de Umbar
 trp_corsair_warrior_pl|Guerreros de Umbar
-trp_corsair_pikeman|Piquero Corsario de Umbar
-trp_corsair_pikeman_pl|Piqueros Corsarios de Umbar
-trp_corsair_veteran_raider|Asaltante Corsario Veterano
-trp_corsair_veteran_raider_pl|Asaltantes Corsarios Veteranos
+trp_corsair_pikeman|Piquero de Umbar
+trp_corsair_pikeman_pl|Piqueros de Umbar
+trp_corsair_veteran_raider|Incursor Corsario Veterano
+trp_corsair_veteran_raider_pl|Incursores Corsarios Veteranos
 trp_corsair_night_raider|Incursor Corsario Nocturno
 trp_corsair_night_raider_pl|Incursores Corsarios Nocturnos
 trp_militia_of_umbar|Miliciano de Umbar
@@ -572,14 +572,14 @@ trp_marksman_of_umbar|Escaramuzador de Umbar
 trp_marksman_of_umbar_pl|Escaramuzadores de Umbar
 trp_veteran_marksman_of_umbar|Escaramuzador Veterano de Umbar
 trp_veteran_marksman_of_umbar_pl|Escaramuzadores Veteranos de Umbar
-trp_master_marksman_of_umbar|Escaramuzador Corsario Maestro
-trp_master_marksman_of_umbar_pl|Escaramuzadores Corsarios Maestros
-trp_corsair_marauder|Espadachín de Umbar
-trp_corsair_marauder_pl|Espadachines de Umbar
-trp_corsair_veteran_marauder|Espadachín Veterano de Umbar
-trp_corsair_veteran_marauder_pl|Espadachines Veteranos de Umbar
-trp_corsair_elite_marauder|Maestro Espadachín de Umbar
-trp_corsair_elite_marauder_pl|Maestros Espadachines de Umbar
+trp_master_marksman_of_umbar|Escaramucero Corsario Maestro
+trp_master_marksman_of_umbar_pl|Escaramuceros Corsarios Maestros
+trp_corsair_marauder|Combatiente de Umbar
+trp_corsair_marauder_pl|Combatientes de Umbar
+trp_corsair_veteran_marauder|Combatiente Veterano de Umbar
+trp_corsair_veteran_marauder_pl|Combatientes Veteranos de Umbar
+trp_corsair_elite_marauder|Gran Combatiente Corsario
+trp_corsair_elite_marauder_pl|Grandes Combatientes Corsarios
 trp_assassin_of_umbar|Asesino de Umbar
 trp_assassin_of_umbar_pl|Asesinos de Umbar
 trp_master_assassin_of_umbar|Asesino Corsario
@@ -588,8 +588,8 @@ trp_pikeman_of_umbar|Piquero de Umbar
 trp_pikeman_of_umbar_pl|Piqueros de Umbar
 trp_veteran_pikeman_of_umbar|Piquero Veterano de Umbar
 trp_veteran_pikeman_of_umbar_pl|Piqueros Veteranos de Umbar
-trp_pike_master_of_umbar|Maestro Piquero Corsario
-trp_pike_master_of_umbar_pl|Maestros Piqueros Corsarios
+trp_pike_master_of_umbar|Gran Piquero Corsario
+trp_pike_master_of_umbar_pl|Grandes Piqueros Corsarios
 trp_orc_snaga_of_isengard|Orco Snaga de Isengard
 trp_orc_snaga_of_isengard_pl|Orcos Snagae de Isengard
 trp_orc_of_isengard|Orco de Isengard
@@ -764,8 +764,8 @@ trp_black_numenorean_assassin|Númenóreano Negro Asesino
 trp_black_numenorean_assassin_pl|Númenóreanos Negros Asesinos
 trp_black_numenorean_veteran_horseman|Númenóreano Negro Jinete
 trp_black_numenorean_veteran_horseman_pl|Númenóreanos Negros Jinetes
-trp_black_numenorean_horsemaster|Númenóreano Negro Caballero
-trp_black_numenorean_horsemaster_pl|Númenóreanos Negros Caballeros
+trp_black_numenorean_horsemaster|Númenóreano Negro a caballo
+trp_black_numenorean_horsemaster_pl|Númenóreanos Negros a caballo
 trp_noldorin_commander|Comandante Noldorin
 trp_noldorin_commander_pl|Comandantes Noldorin
 trp_elf_captain_of_lothlorien|Capitán Elfo de Lórien
@@ -851,7 +851,7 @@ trp_refugee_pl|Refugiados
 trp_peasant_woman|Campesina
 trp_peasant_woman_pl|Campesinas
 trp_caravan_master|Capataz de Caravana
-trp_caravan_master_pl|Capateces de Caravana
+trp_caravan_master_pl|Capataces de Caravana
 trp_caravan_guard|Guardia de Caravana
 trp_caravan_guard_pl|Guardias de Caravana
 trp_messenger_man|Mensajero
@@ -1050,7 +1050,7 @@ trp_knight_5_11|Jefe Fudreim
 trp_knight_5_12|Jefe Wulf
 trp_smith_mtirith|Berethor el Herrero
 trp_smith_mtirith_pl|herreros del Senescal
-trp_smith_pelargir|Maestro del Metal Hallatan
+trp_smith_pelargir|Maese del Metal Hallatan
 trp_smith_pelargir_pl|herrero
 trp_smith_linhir|Bor el Armero
 trp_smith_linhir_pl|herrero

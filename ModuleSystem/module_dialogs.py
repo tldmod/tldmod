@@ -2009,7 +2009,7 @@ I was expecting you to tell me something about Fangorn by now, but you know noth
                          (eq,":lords_quest","qst_capture_troll"),
                          (check_quest_failed, "qst_capture_troll")],
 "Too long ago, I asked you to take me one troll alive. But I should have known. \
-How could I expect someone like {playername} to be up to the challange. My servant was not skilled or faithful enough.", "close_window",[
+How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.", "close_window",[
    (call_script,"script_stand_back"),
    (call_script, "script_end_quest", "qst_capture_troll"),
    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",-5)]],

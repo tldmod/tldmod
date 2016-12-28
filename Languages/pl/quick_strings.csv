@@ -851,7 +851,7 @@ qstr_Please_return_them_i|Proszę tylko byś zwrócił{/a} ich w jednym kawałku
 qstr_Don_t_let_them_all_d|Nie pozwól by wszyscy padli w jednym miejsu. Z wyjątkiem tchórzy. Ustaw wszystkich w pierwszym szeregu,.
 qstr_Thank_you_commander.|Dzięki, dowódco.^
 qstr_^{s22}_is_grateful_t|^{s22} jest ci wdzięczny, {s23}, {s29}^
-; qstr_{s31}{reg28?Those:Th|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
+qstr_{s31}{reg28?Those:Th|{s31}{reg28?Those:That} odważny {reg28?soldiers:soldier} z pewnością pomoże nam obronić {s21}.{s32}^^[earned {reg14} Punkty Surowców{s14}]
 qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Those:That} pożyteczny {reg28?troops:troop} nam pomoże utrzymać {s21}.{s32}^^[earned {reg14} Punkty Surowców {s14}]
 qstr_{s4}_^Oh_and_take_ba|{s4} ^Aha, i zabierz z powrotem tych żołnierzy, którzy nie są naszymi krewniakami.
 qstr_I_don_t_need_them_an|Nie potrzebuję ich, więc ich zatrzymaj.
@@ -880,7 +880,7 @@ qstr_Give_me_that!_Hrmph!_|Daj mi to! Hrmph! Jesteś dobrym sługą dla swego pa
 qstr_Do_you_need_reinforc|Potrzebujesz wsparcia?
 qstr_You_don_t_look_too_s|Nie wyglądasz na zbyt silnego, potrzebujesz żołnierzy?
 qstr_^{s14}_is_grateful_t|^{s14} jest ci wdzięczny, {playername}, {s29}^
-; qstr_{s31}{reg28?Those:That|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^^[earned {reg14} Resource Points of {s14}]
+qstr_{s31}{reg28?Those:That|{s31}{reg28?Those:That} odważny {reg28?soldiers:soldier} z pewnością pomoże nam obronić nasze ziemie.{s32}^^[earned {reg14} Punkty Surowców {s14}]
 qstr_{s31}{reg28?Those:That}|{s31}{reg28?Ta:Te} {reg28?przydatna:przydatne} {reg28?jednostka:jednostki} {reg28?pomogą:pomoże}nam spowodować większy bajzel.{s32}^^[Otrzymano {reg14} Punktów {s14}]
 qstr_{s4}_^Oh_and_take_bac|{s4} ^Aha, i zabierz z powrotem tych żołnierzy, którzy nie są naszymi krewniakami. Nie mam z nich pożytku.
 qstr_It_is_my_duty_to_hel|Moim obowiązkiem jest pomoc naszym ludziom.
@@ -990,7 +990,7 @@ qstr_Greetings_do_you_nee|Witam, potrzebujesz wsparcia?
 qstr_Goodbye_friends.|Do zobaczenia, przyjaciele.
 qstr_See_you_later_if_you|Do zobaczenia, o ile nie zginiesz.
 qstr__^Oh_and_take_back_t| ^Och, i zabierz tych, którzy nie są z naszego ludu.
-; qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32} {s23}^^[earned {reg14} Resource Points of {s14}]
-; qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^{s23}^^[earned {reg14} Resource Points of {s14}]
+qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:That} odważny {reg28?soldiers:soldier} z pewnością pomoże nam obronić nasze ziemie.{s32} {s23}^^[earned {reg14} Punkty Surowców {s14}]
+qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:That} przydatny {reg28?troops:troop} nam spowodować większy bajzel.{s32}^{s23}^^[earned {reg14} Punkty Surowców {s14}]
 qstr_Good_luck_in_your_tr|Powodzenia.
 qstr_Try_not_getting_your|Spróbuj nie zginąć.
