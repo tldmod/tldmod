@@ -756,7 +756,7 @@ float _contour( float d, float w ){
 
 PS_OUTPUT ps_font_outline(VS_OUTPUT_FONT In)
 {
- /* supersampled signed font distance technique (with partial derivatives) by /u/glacialthinker on reddit
+ /* supersampled signed distance field fonts; technique (with partial derivatives) by /u/glacialthinker on reddit
     https://www.reddit.com/r/gamedev/comments/2879jd/just_found_out_about_signed_distance_field_text/cicatot/ */
 
     PS_OUTPUT Output;
@@ -774,24 +774,24 @@ PS_OUTPUT ps_font_outline(VS_OUTPUT_FONT In)
     float2 duv = dscale * (ddx(uv) + ddy(uv));
     float4 box = float4(uv-duv, uv+duv);
 
-    /*float asum = samp( box.xy, width )
+    float asum = samp( box.xy, width )
                + samp( box.zw, width )
                + samp( box.xw, width )
                + samp( box.zy, width );
 
     // weighted average, with 4 extra points having 0.5 weight each,
     // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + 0.5 * asum) / 3.;  */
+    alpha = (alpha + asum/4);
     // -------
 
     float i_ntour = _intour( dist, width );
 
-   /* float isum = intsamp( box.xy, width )
+    float isum = intsamp( box.xy, width )
                + intsamp( box.zw, width )
                + intsamp( box.xw, width )
                + intsamp( box.zy, width );
 
-    i_ntour = (i_ntour + 0.5 * isum) / 3.; */
+    i_ntour = (i_ntour + isum/4);
 
     Output.RGBColor = float4
     ( /* mix pure black and the text color using the inner contour mask.
@@ -5702,7 +5702,7 @@ float contour( float d, float w ){
 
 PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
 {
- /* supersampled signed font distance technique (with partial derivatives) by /u/glacialthinker on reddit
+ /* supersampled signed distance field fonts; technique (with partial derivatives) by /u/glacialthinker on reddit
     https://www.reddit.com/r/gamedev/comments/2879jd/just_found_out_about_signed_distance_field_text/cicatot/ */
 
     PS_OUTPUT Output;
@@ -5719,7 +5719,7 @@ PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
     const float dscale = 0.354; // half of 1/sqrt2; you can play with this
     float2 duv = dscale * (ddx(uv) + ddy(uv));
     float4 box = float4(uv-duv, uv+duv);
-/*
+
     float asum = samp( box.xy, width )
                + samp( box.zw, width )
                + samp( box.xw, width )
@@ -5727,17 +5727,17 @@ PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
 
     // weighted average, with 4 extra points having 0.5 weight each,
     // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + 0.5 * asum) / 3.; */
+    alpha = (alpha + 0.5 * asum);
     // -------
 
-   float i_ntour = intour( dist, width );
+    float i_ntour = intour( dist, width );
 
-  /*   float isum = intsamp( box.xy, width )
+    float isum = intsamp( box.xy, width )
                + intsamp( box.zw, width )
                + intsamp( box.xw, width )
                + intsamp( box.zy, width );
 
-    i_ntour = (i_ntour + 0.5 * isum) / 3.; */
+    i_ntour = (i_ntour + 0.5 * isum);
 
     /* this basically is a boolean variable from the vertex shader that makes
        the outline/shadow either black or white, depending on the font color. */

@@ -1414,8 +1414,8 @@ str_gunda_rumor_3|Ne abbiamo abbastanza di nasconderci fra le fredde montagne ! 
 str_gunda_rumor_4|Abbiamo visto un essere viscido che ci spiava nei tunnel delle nostre montagne, ma non siamo riusciti a prenderlo. E' scomparso mentre ci avvicinavamo.
 str_gunda_rumor_5|Quelli di Isengard pensano di essere qualcosa di speciale, perché usano le cose degli antichi uomini.
 str_gunda_rumor_6|Bruceremo i villaggi degli uomini per tenerci caldi.
-; str_gunda_rumor_7|Manlings will feel the frostbite we will bring to them. And afterwards the fire. Ha ha ha!
-; str_gunda_rumor_8|Azog and Bolg almost defeated dwarves, elves and manlings last time. But bird-monsters and bear-men saved them. *spit*
+str_gunda_rumor_7|I manling sentiranno il freddo che gli provocheremo e successivamente il calore. Ha ha ha!
+str_gunda_rumor_8|Azog e Bolg hanno quasi sconfitto i nani,gli elfi e i manling l'ultima volta.Ma i mostri-uccello e gli uomini-orso li hanno salvati. *sputa*
 str_gunda_rumor_9|La carne dei Nani è dura e filacciosa. La carne degli Uomini è meglio.
 str_gunda_rumor_10|Gli Uomini-Orso vengono dalle foreste e odiano Boldush. Che sfortuna per Boldush ! Ha ha ha !
 str_gunda_rumor_11|Alcuni si sono spostati a Moria, c'è molto spazio là. Ma anche Ghâsh nelle profondità. Meglio stare alla larga !
@@ -1432,7 +1432,7 @@ str_moria_rumor_10|Non c'è molto cibo a Moria. Siamo affamati. Dobbiamo cattura
 str_moria_rumor_11|Alcuni sono entrati nella foresta a sud. Nessuno è tornato.
 str_umbar_rumor_begin|Tutti i mari apparterranno alle vele nere!
 str_umbar_rumor_2|Non ci sono più navi di Gondor da affondare, ora andiamo a predare l'entroterra.
-; str_umbar_rumor_3|Umbar is our fate! And it will be Gondor's too.
+str_umbar_rumor_3|Umbar è il nostro destino e anche quello di Gondor!
 str_umbar_rumor_4|I Gondoriani non possono navigare ! Hanno gambe per stare a terra.
 str_umbar_rumor_5|Abbiamo già ucciso re di Gondor in passato. Ora non hanno nemmeno un re per noi da uccidere.
 str_umbar_rumor_6|I perfidi Gondoriani hanno dato alle fiamme la nostra flotta, anni fa. Ora sarà Gondor a bruciare.
@@ -1661,7 +1661,7 @@ str_tld_introduction|Introduzione a TLD - Dovresti andare a Edoras.
 str_tld_erebor_dungeon|L'odore di morte circonda questo posto. Farei meglio ad essere cauto.
 str_tld_spear_hit|Ouch!
 str_fullname_region_unknown|una regione senza nome, da qualche parte nella Terra di Mezzo
-; str_fullname_region_pelennor|Pelennor Fields, the plains around Minas Tirith, capital of the Realm of Gondor
+str_fullname_region_pelennor|I campi Pelennor,le pianure intorno Minas Tirith,capitale del Regno di Gondor.
 str_fullname_region_subfac_pelargir|il Feudo di Lebennin, parte del Regno di Gondor
 str_fullname_region_subfac_dol_amroth|Belfalas, la regione costiera nel Sud di Gondor
 str_fullname_region_subfac_ethring|Ringló Vale, una valle del Regno di Gondor
@@ -1672,57 +1672,57 @@ str_fullname_region_n_ithilien|l'Ithilien del Nord, la provincia più orientale 
 str_fullname_region_c_ithilien|Emyn Arnen, una catena di colline nelle regioni centrali dell'Ithilien, attraverso il Grande Fiume da Minas Tirith
 str_fullname_region_s_ithilien|l'Ithilien del Sud, la provincia più orientale del Regno di Gondor
 str_fullname_region_druadan_forest|la Foresta di Drúadan, la foresta di Gondor dei Drúedain
-; str_fullname_region_firien_wood|Firien wood, the Whispering Wood, a Gondor forest of oaks
-; str_fullname_region_anorien|Anórien, the Sun-land, a valley between the White Mountains and the Anduin river
-; str_fullname_region_rohan0|the Folde, the heart of Rohan
-; str_fullname_region_rohan1|the Eastemnet, a part of Rohan, the Riddermark
-; str_fullname_region_rohan2|the Westemnet, a part of Rohan, the Riddermark
-; str_fullname_region_rohan3|the Eastfold, a part of Rohan, the Riddermark
-; str_fullname_region_rohan4|the Westfold, a part of Rohan, the Riddermark
-; str_fullname_region_rohan5|Helm's Deep, a valley of the White Mountains, in Rohan
-; str_fullname_region_the_wold|the Wold, the Northeastern area of the Riddermark of Rohan
-; str_fullname_region_gap_of_rohan|the Gap of Rohan, the eastermost border of Rohan, a contested area between the Rohirrim and the Dunlendings.
-; str_fullname_region_entwash|the Mouths of the Entwash, where the Rohan river Entwash joins the Anduin
-; str_fullname_region_wetwang|Nindalf, the swamps of Wetwang
-; str_fullname_region_dead_marshes|the Dead Marshes, the ancient battlefield of the great Battle of Dagor Dagorlad, now a cursed place
+str_fullname_region_firien_wood|Le foreste sussurranti di Firien,una foresta di querce vicino Gondor.
+str_fullname_region_anorien|Anórien,la Terra del Sole,una vallata tra le Montagne Bianche e il fiume Anduin.
+str_fullname_region_rohan0|il Folde,il cuore di Rohan
+str_fullname_region_rohan1|Eastemnet,una parte di Rohan,Riddermark
+str_fullname_region_rohan2|Westemnet,una parte di Rohan,Riddermark
+str_fullname_region_rohan3|Eastfold,una parte di Rohan,Riddermark
+str_fullname_region_rohan4|Westfold,una parte di Rohan,Riddermark
+str_fullname_region_rohan5|La gola del Timone,una vallata delle Montagne Bianche,a Rohan
+str_fullname_region_the_wold|Wold,l'area più a Nord-est della Riddermark di Rohan
+str_fullname_region_gap_of_rohan|la Breccia di Rohan,la più a est dei confini di Rohan,un'area contesa da i Rohirrim e i Dunlendings.
+str_fullname_region_entwash|le foci di Entwash,dove il fiume di Rohan, Entwash incontra Anduin
+str_fullname_region_wetwang|Nindalf,le paludi di Wetwang
+str_fullname_region_dead_marshes|le Paludi della Morte,l'antico luogo della leggendaria Battaglia di Dagor Dagorlad,adesso maledette
 str_fullname_region_isengard|Le pianure circostanti Isengard
-; str_fullname_region_fangorn|the Fangorn forest, where trees are said to talk.
-; str_fullname_region_brown_lands|the Brown Lands, covering the expanse between the Emyn Muil and Mirkwood
-; str_fullname_region_dagorlad|the Dagorlad, the great, treeless, expanse of The Battle Plain, before the gates of Mordor
-; str_fullname_region_n_undeep|the North Undeep, the larger of the two Anduin meanders
-; str_fullname_region_s_undeep|the South Undeep, the lesser of the two large Anduin bends
-; str_fullname_region_emyn_muil|Emyn Muil, the rocky hills above the inflow of the Entwash
+str_fullname_region_fangorn|la foresta di Fangorn,dove si dice che gli alberi parlino.
+str_fullname_region_brown_lands|le Terre Marroni,che coprono il territorio tra Emyn Muil e Mirkwood
+str_fullname_region_dagorlad|Dagorlad, il grande territorio privo di alberi,luogo della Battaglia della Pianura,prima delle porte di Mordor
+str_fullname_region_n_undeep|l'Altopiano del Nord,il più grande dei due meandri di Anduin
+str_fullname_region_s_undeep|l'Altopiano del Sud,la più piccola delle due curve principali di Anduin
+str_fullname_region_emyn_muil|Emynn Muil,le montagne rocciose oltre l'affluente dell'Entwash
 str_fullname_region_misty_mountains|le colline delle Montagne Nebbiose
-; str_fullname_region_lorien|Lothlórien, the forest of the Sindar elves, where the golden Mallorns grow
-; str_fullname_region_anduin_banks|the valley of Anduin, between Misty Mountains and Mirkwood
-; str_fullname_region_n_mirkwood|the dense forests of northern Mirkwood, home of the Woodelves
-; str_fullname_region_s_mirkwood|the dense forest of southern Mirkwood, said to be infested by strange creatures
-; str_fullname_region_above_mirkwook|Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North
-; str_fullname_region_grey_mountains|the foothills of Grey Mountains, where Dwarves dwell
+str_fullname_region_lorien|Lothlórien,la foresta degli elfi di Sindar,dove cresce il Mallorns d'oro 
+str_fullname_region_anduin_banks|la valle di Anduin,tra le Montagne Nebbiose e Mirkwood
+str_fullname_region_n_mirkwood|le fitte foreste della parte più a Nord di Mirkwood,la casa degli Elfi delle Foreste
+str_fullname_region_s_mirkwood|le fitte foreste della parte più a Sud di Mirkwood,che si dice siano infestate da strane creature
+str_fullname_region_above_mirkwook|Northen Rhovanion,l'area tra Mirkwood e le Montagne Grigie a Nord
+str_fullname_region_grey_mountains|le pendici delle Montagne Grigie,dove abitano i Nani
 str_fullname_region_mordor|Mordor, le oscure terre di Sauron
 str_shortname_region_unknown|una regione senza nome
 str_shortname_region_pelennor|Campi di Pelennor
-; str_shortname_region_subfac_pelargir|Fiefdom of Lebennin
+str_shortname_region_subfac_pelargir|Feudo di Lebennin
 str_shortname_region_subfac_dol_amroth|Belfalas
 str_shortname_region_subfac_ethring|Valle del Ringló
-; str_shortname_region_subfac_lossarnach|Fiefdom of Lossarnach
-; str_shortname_region_subfac_pinnath_gelin|the region of Pinnath Gelin
-; str_shortname_region_subfac_blackroot|the Fiefdom of Lamedon
+str_shortname_region_subfac_lossarnach|Feudo di Lossarnach
+str_shortname_region_subfac_pinnath_gelin|la regione delle Pinnath Gelin
+str_shortname_region_subfac_blackroot|il Feudo di Lamedon
 str_shortname_region_n_ithilien|Nord Ithilien
-; str_shortname_region_c_ithilien|Emyn Arnen
+str_shortname_region_c_ithilien|Emyn Arnen
 str_shortname_region_s_ithilien|Sud Ithilien
 str_shortname_region_druadan_forest|Foresta di Drúadan
-; str_shortname_region_firien_wood|Firien wood
+str_shortname_region_firien_wood|la foresta di Firien
 str_shortname_region_anorien|Anórien
-; str_shortname_region_rohan0|the Folde
-; str_shortname_region_rohan1|Eastemnet
-; str_shortname_region_rohan2|Westemnet
+str_shortname_region_rohan0|Folde
+str_shortname_region_rohan1|Eastemnet
+str_shortname_region_rohan2|Westemnet
 str_shortname_region_rohan3|Estfalda
 str_shortname_region_rohan4|Ovestfalda
 str_shortname_region_rohan5|Il Fosso di Helm
-; str_shortname_region_the_wold|the Wold
+str_shortname_region_the_wold|Wold
 str_shortname_region_gap_of_rohan|La breccia di Rohan
-; str_shortname_region_entwash|the Mouths of the Entwash
+str_shortname_region_entwash|le Foci di Entwash
 str_shortname_region_wetwang|Nindalf
 str_shortname_region_dead_marshes|le Paludi Morte
 str_shortname_region_isengard|Le pianure circostanti Isengard
@@ -1733,47 +1733,47 @@ str_shortname_region_lorien_|Lorien
 str_shortname_region_anduin_banks_|La Valle di Anduin
 str_shortname_region_n_mirkwood_|Nord Mirkwood
 str_shortname_region_s_mirkwood_|Sud Mirkwood
-; str_shortname_region_above_mirkwook|Northen Rhovanion
-; str_shortname_region_grey_mountains|the foothills of Grey Mountains
+str_shortname_region_above_mirkwook|Rhovaniano del Nord
+str_shortname_region_grey_mountains|le colline delle Montagne Grigie
 str_shortname_region_mordor|La terra di Mordor
 str_trait_title_elf_friend|Amico Elfo
 str_trait_desc_elf_friend|Si diventato altamente stimato dagli Elfi e ora ti vedono come un fidato alleato. Il costo di reclutamento degli Elfi e ridotto e ora puoi anche provare a dare ordini alle armate elfiche.
 str_trait_title_gondor_friend|Benedizione dello Steward
-; str_trait_desc_gondor_friend|You have become highly esteemed by the Steward Denethor and your status has risen among the men of Gondor as a result. The cost to recruit Gondorians has been reduced and you may now attempt to give orders to Gondorian armies.
+str_trait_desc_gondor_friend|Sei diventato altamente stimato dall'assistente Denethor e come risultato il tuo status è cresciuto tra gli uomini di Gondor.Il costo di reclutamento dei Gondoriani è stato ridotto e puoi provare a dare ordini alle armate Gondoriane.
 str_trait_title_rohan_friend|Uomo del Re
 str_trait_desc_rohan_friend|Sei diventato altamente stimato dal Re Theoden di Rohan e il tuo status e' cresciuto tra gli uomini di Rohan come risultato. Il costo per reclutare gli uomini di Rohirrim e' ora calato e puoi anche provare a dare ordini alle armate del Riddermark.
 str_trait_title_brigand_friend|Campione Barbaro
 str_trait_desc_brigand_friend|Sei diventato altamente stimato tra le tribù Barbariche servitrici di Sauron e come risultato delle tue impressive azioni nell' arena. Ora puoi reclutare Barbari ad un costo ridotto.
 str_trait_title_blessed|Benedetto
-; str_trait_desc_blessed|You sense that you have been blessed by powers from beyond the sea, and perhaps further away still. You do not know why this has happened or what it may mean but you are certain that it is so.
+str_trait_desc_blessed|Senti che sei stato benedetto da poteri che giungono dall'altra parte del mare e forse da ancora più lontano.Non sai perchè sia successo o cosa potrebbe significare,ma sei certo che sia così.
 str_trait_title_reverent|Riverente
-; str_trait_desc_reverent|You have acquired a reputation for reverence and wisdom. Men and Elves are more likely to listen to your counsel.
+str_trait_desc_reverent|Hai acquisito una reputazione di rispetto e saggezza.Gli Uomini e gli Elfi ascoltano la tua opinione con più piacere.
 str_trait_title_merciful|Misericordioso
-; str_trait_desc_merciful|You have aquired a reputation for merciful treatment towards the evil men who serve the Enemy. Many of the hardened men who serve you are conflicted by your behavior and suffer a morale penalty. Among the wise, however, your mercy is seen as evidence of high character and you recieve an influence bonus.
+str_trait_desc_merciful|Hai acquisito una reputazione di trattamento misericordioso presso gli uomini malvagi che servono il Nemico.Molti degli uomini temprati che ti servono sono infastiditi dal tuo comportamento e soffrono una penalità di morale.Tra i saggi,però,la tua misericordia è vista come una prova di alta considerazione e ricevi un bonus d'influenza.
 str_trait_title_bravery|Coraggio
-; str_trait_desc_bravery|You have aquired a reputation for bravery in the face of great danger. Your courage is spoken of in both quiet taverns and the halls of the wise. Your deeds inspire your men and they recieve a weekly morale bonus.
+str_trait_desc_bravery|Hai acquisito una reputazione per il coraggio di affrontare grandi pericoli.Del tuo coraggio di parla sia nelle tranquille taverne che nelle sale dei saggi.Le tue gesta ispirano i tuoi uomini e ricevi un bonus di morale settimanale.
 str_trait_title_oathkeeper|Custode del Giuramento
-; str_trait_desc_oathkeeper|You have sworn grim oaths and lived to see them fulfilled. Subsequently you have aquired a reputation as a man of his word. You receive a weekly influence bonus.
+str_trait_desc_oathkeeper|Hai fatto risoluti giuramenti e sei vissuto abbastanza da vederli compiuti.Di conseguenza hai ottenuto una reputazione di uomo di parola.Ricevi un bonus d'influenza settimanale.
 str_trait_title_oathbreaker|Violatore del Giuramento
-; str_trait_desc_oathbreaker|You have sworn grim oaths and failed to see them through to their conclusion. Subsequently you have aquired a reputation as a man whose passion outstrips his prowess. You receive a weekly influence penalty.
+str_trait_desc_oathbreaker|Hai fatto risoluti giuramenti e non sei riuscito a vederli giungere a buon fine.Di conseguenza hai acquisito una reputazione di uomo la cui passione supera il suo valore.Ricevi una penalità d'influenza settimanale.
 str_trait_title_orc_pit_champion|Orco campione della fossa
-; str_trait_desc_orc_pit_champion|You have become renowned as a brutal warrior who was able to survive the cruelest of the orcish fighting contests. Such strength is both respected and feared by your black hearted followers and they now receive a weekly morale bonus.
-; str_trait_title_despoiler|Despoiler
-; str_trait_desc_despoiler|You have aquired a reputation for leaving behind wanton destruction wherever you travel. Such behavior is valued by the dark powers you serve and your receive a weekly influence bonus.
-; str_trait_title_accursed|Accursed
-; str_trait_desc_accursed|You sense that you have drawn the ire of powers beyond the sea. Your followers sense this doom as well and fear being around you. They receive a weekly morale penalty.
+str_trait_desc_orc_pit_champion|Sei diventato famoso come guerriero brutale in grado di sopravvivere alle più crudeli battaglie con gli orchi.Tanta forza è sia rispettata che temuta dai tuoi più malvagi sostenitori e ricevono un bonus di morale settimanale.
+str_trait_title_despoiler|Saccheggiatore
+str_trait_desc_despoiler|Hai acquisito la reputazione di portare sfrenata distruzione dovunque tu vada.Questo comportamento è tenuto in considerazione dagli oscuri poteri che servi e ricevi un bonus d'influenza settimanale.
+str_trait_title_accursed|Maledetto
+str_trait_desc_accursed|Senti che hai provocato la collera delle potenze aldilà del mare.I tuoi sostenitori sentono bene questa condanna e la paura vi assale.Ricevono una penalità di morale settimanale.
 str_trait_title_stealthy|Silenziosamente
-; str_trait_desc_stealthy|You have developed uncanny skill in the art of stealthy infiltration. You receive a bonus to your stealth rating when undertaking such missions.
+str_trait_desc_stealthy|Hai sviluppato una sconcertante abilità nell'arte dell'infiltrarsi silenziosamente.Ricevi un bonus per la tua silenziosità valutato quando intraprendi missioni stealth.
 str_trait_title_berserker|Berserker 
-; str_trait_desc_berserker|After many battles where you eschewed the use of armor your ferocious will has become like iron. In battles where you are gravely wounded you will receive a health bonus once per battle. This will not restore you to full strength but may keep you going long after others would have succumbed to their wounds.
+str_trait_desc_berserker|Dopo tante battaglie dove hai evitato di usare un'armatura per la ferocia sei diventato come di ferro.Nelle battaglie dove sei gravemente ferito riceverai un bonus di vita una volta a battaglia.Questo non ti riporterà al pieno delle tue forze,ma potresti continuare a lottare anche quando gli altri sarebbero stati sopraffati dal dolore.
 str_trait_title_infantry_captain|Capitano di Fanteria
-; str_trait_desc_infantry_captain|You have developed uncanny skill in the command of infantry troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
+str_trait_desc_infantry_captain|Hai sviluppato una sconcertante abilità nel comando della fanteria.Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
 str_trait_title_archer_captain|Capitano degli Arcieri
-; str_trait_desc_archer_captain|You have developed uncanny skill in the command of missile troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
+str_trait_desc_archer_captain|Hai sviluppato una sconcertante abilità nel comandare le truppe missile.Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
 str_trait_title_cavalry_captain|Capitano di Cavalleria
-; str_trait_desc_cavalry_captain|You have developed uncanny skill in the command of mounted troops. Due to rigorous and specialized training such troops will receive a small health boost, once per battle.
-; str_trait_title_command_voice|Command Voice
-; str_trait_desc_command_voice|Your experience with commanding men in the field has lent you an air of authority. The influence cost to give orders to armies in the field has been reduced.
+str_trait_desc_cavalry_captain|Hai sviluppato una sconcertante abilità nel comandare le truppe a cavallo.Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
+str_trait_title_command_voice|Comando Vocale
+str_trait_desc_command_voice|La tua esperienza nel comandare gli uomini in battaglia ti ha garantito un aria di autorevolezza.Il costo dell'influenza per dare ordini alle armate in battaglia è ridotto.
 str_trait_title_foe_hammer|Martello nemico
 str_trait_desc_foe_hammer|Avendo ucciso molti dei grandi capitani nemici capisci di aver ottenuto una fama da spietato guerriero. Ora i soldati sotto il tuo comando ricevono un bonus morale settimanale. La tua esperienza ha anche affinato le tue abilità in battaglia.
 str_trait_title_battle_scarred|Cicatrici di battaglia

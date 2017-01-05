@@ -64,7 +64,7 @@ qstr_Minas_Morgul___City_|Minas Morgul - Nazgul'un İni
 qstr_Sauron_s_armies_marc|Sauron'un orduları  Savaş'a yürüyor
 qstr_Adventurers_at_audie|Steward Denethor ile seyirci maceracılar ...
 qstr___What_business_do_y|Burada ne işiniz var,ricacılar?
-; qstr___Your_Stewardship_w| 'Your Stewardship, we have come from distant lands to... jump!'
+qstr___Your_Stewardship_w|Senin kâhyan, çok uzak topraklardan geldik şey için... ATLA!
 qstr___Enough_of_this_mad|'Bu kadar delilik yeter! Gardiyanlar!'
 qstr___I_ve_had_enough_of|Bu şakalardan yeterince çektim...  Sıradaki grup eğilmek zorunda
 qstr_Chest|Sandık
@@ -94,7 +94,7 @@ qstr_Accomplice_of_{s5}|{s5}'in Suç Ortağı
 qstr_Useful_Tool_of_{s5}|{s5}'in Kullanışlı Aracı
 qstr_Servant_of_{s5}|{s5}'in Hizmetkarı
 qstr_Unknown_to_{s5}|{s5}'in bilmediği
-; qstr_You_have_been_{reg1?|You have been {reg1?promoted:demoted} to {s24} ({reg0})!
+qstr_You_have_been_{reg1?|{s24} e Terfi Edildin.\nRütben {s24} e düşürüldü.
 ; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.
 ; qstr_You_spent_{reg10}_of|You spent {reg10} of your influence with {s1}, with {reg11} remaining.
 qstr_Troop_upkeep:|Asker bakımı:
@@ -104,7 +104,7 @@ qstr_its|onun
 qstr_[no_upkeep_costs]|[bakım maliyeti yok]
 qstr_Short_of_Resource_Po|Kaynak Birimi Azlığı
 ; qstr_{s10}_will_soon_reas|{s10} will soon reassign some of {s12} troops away from your party!
-; qstr_Superior_orders_from|Superior orders from {s11} to reassign troops:
+qstr_Superior_orders_from|Birlikleri yeniden atamak için {s11}'den gelen üstün emirler:
 qstr_{reg12}_{s10}_left_t|{reg12} {s10} takımdan ayrıldı!
 qstr_Fangorn_claimed_{reg|Fangorn ele gecirildi birliklerinden {reg0} ölü {reg1} yaralı var!
 qstr_You_were_wounded_in_|Sen Fangorn'da yaralandın!
@@ -112,8 +112,8 @@ qstr_Volunteers|Gönüllüler
 qstr_{s1}_of_{s3}_was_def|{s1} of {s3} was savaşta yenildi.
 qstr_{s2}_have_razed_{s1}|{s2} {s1}'i yerle bir etti.
 ; qstr_Left_for_dead_but_mi|Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}
-; qstr_1_Res.Pt__{s2}_|1 Res.Pt ({s2})
-; qstr_{reg1}_Res.Pts__{s2}|{reg1} Res.Pts ({s2})
+qstr_1_Res.Pt__{s2}_|1 Kay.Pn ({s2})
+qstr_{reg1}_Res.Pts__{s2}|{reg1} Kay.Pnları ({s2})
 qstr_+30_to_Party_Morale|Parti Moraline +30
 qstr_+20_to_Party_Morale|Parti Moraline +20
 qstr_+1_to_Riding_Skill|Biniş Becerisine +1
@@ -272,8 +272,8 @@ qstr_All_who_enter_Mirkwo|Kuyutorman'a kötü niyetle girenler asla ayrılamayac
 qstr_Men_of_{s16}_the_ene|{s16}'ın İnsanları, düşman burada! Ülkeniz için savaşın!
 qstr_Men_of_{s16}_charge!|{s16}'ın İnsanları, hücum! Ülkeniz için savaşın!
 qstr_{s14}Grind_their_bod|{s14}Bedenleri kuma dönüşene kadar ezin.
-; qstr_{s14}Dwarves_or_men_|{s14}Dwarves or men, they are no match for our fierceness!
-; qstr_{s14}Elves_or_men_th|{s14}Elves or men, they are no match for our fierceness!
+qstr_{s14}Dwarves_or_men_|{s14}Cüceler veya erkekler, bizim şiddetimiz için bir maç değiller!
+qstr_{s14}Elves_or_men_th|{s14}Elfler veya erkekler, bizim sertlik için maç!
 qstr_{s14}Flesh_to_shatte|{s14}Parçalayacağız,boğazlarını kesip,kan dökeceğiz!
 qstr_Put_on_the_masks_of_|Savaş maskelerinizi takın yiğit savaşçılar!Bugün lanet düşmanlarınızın üzerine yağıyor {s18}!
 qstr_They_seek_the_tempes|Fırtınayı almak istiyorlar,belli ki alacaklar!Askerler savaşa hazırlanın!
@@ -304,7 +304,7 @@ qstr_Blunt_Weapons|Sadece bayıltıcı silahlar
 qstr_Infantry__{reg1}_|Piyade ({reg1})
 qstr_Archers__{reg2}_|Okçular ({reg2})
 qstr_Cavalry__{reg3}_|Süvari ({reg3})
-; qstr_Orc_brew_finished!|Orc brew finished!
+qstr_Orc_brew_finished!|Ork mayası bitti!
 qstr_Given_by:_{s62}|{s62} tarafından verildi
 qstr_Given_on:_{s60}|Verilir: {s60}
 qstr_You_have_{reg0}_days|Bu görevi bitirmek için {reg0} günün kaldı.
@@ -350,7 +350,7 @@ qstr_Center:_{s4}|Merkez: {s4}
 qstr_Troop:_{s4}|Birlik: {s4}
 qstr_Lord:_{s4}|Lord: {s4}
 qstr_Ally_party_is_presen|Müttefik parti hazır
-; qstr_{s4}_is_present_at_e|{s4} is present at event
+qstr_{s4}_is_present_at_e|{s4} olayda mevcut
 ; qstr_Event_#{reg5}_type_{|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to troop object = {reg7}
 ; qstr_Event_#{reg5}_type_{r|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to center object faction = {reg7}
 ; qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
@@ -372,7 +372,7 @@ qstr_Gained_permanent_+1_to_|+1 Demirvücud kalıcı olarak kazanıldı.
 qstr_Gained_permanent_+5_|+5 Güç Kalıcı olarak kazanıldı.
 qstr_Lost_permanent__2_to|-2 Karizma Kalıcı olarak kaybedildi.
 qstr_Gained_permanent_+2_to|+2 Demirvücud kalıcı olarak kazanıldı.
-; qstr_Gained_permanent_+10|Gained permanent +10 to weapon proficiencies.
+qstr_Gained_permanent_+10|Silah becerilerine kalıcı +10 kazandı.
 qstr_Gained_permanent_+1_to_T|+1 Taktik Kalıcı olarak kazanıldı.
 qstr_You_have|Sahipsin
 qstr_{s1}_has|{s1} sahip
@@ -459,7 +459,7 @@ qstr_All..._must..._submi|Hepsi... boyun... eğip... hizmet... etmeli...
 qstr_I_serve_the_Eye!|Göze hizmet ediyorum
 qstr_I_shall_serve_the_Ey|Göze hizmet edeceğim
 ; qstr_{s1}_has_been_besieg|{s1} has been besieged by {s2} of {s3}.
-; qstr_The_forces_of_{s2}_m|The forces of {s2} march to {s15}!
+qstr_The_forces_of_{s2}_m|Askerlerim{s2} ileri{s15}!
 ; qstr_The_hosts_of_{s2}_ma|The hosts of {s2} march back to defend their homes!
 qstr____Ruins_of_{s1}___|{s1} Harabeleri
 qstr_ranks|rütbeler
@@ -476,7 +476,7 @@ qstr___Archers_forming_{s|Okçu dizilimi {s1}.
 qstr___Infantry_formation|Piyadelerin dizilimini bozun
 qstr___Cavalry_formation_|Süvarilerin dizilimini bozun
 qstr___Archer_formation_d|Okçuların dizilimini bozun
-; qstr_{s1}_has_fled_the_ba|{s1} has fled the battle!
+qstr_{s1}_has_fled_the_ba|{s1} savaştan kaçtı!
 ; qstr_Your_troops_are_at_{|Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!
 qstr_Morale_of_your_troop|Birliklerinizin morali kırıldı
 qstr_Morale_of_your_enemi|Düşmanın morali kırıldı.
@@ -494,18 +494,18 @@ qstr_You_weigh_too_much_f|Bir midilli için çok ağırsın
 qstr_Your_mount_rears_ref|Bineğiniz şahlanıyor, emirlerinize itaat etmeyi reddediyor!
 qstr_Cannot_leave_now.|Şimdi ayrılamazsın
 qstr_You_have_found_the_l|Yerli demirciyi buldun...
-; qstr_You_have_found_the_lo|You have found the local authority...
-; qstr_You_have_found_the_loc|You have found the local warehouse...
+qstr_You_have_found_the_lo|İdareyi buldun.
+qstr_You_have_found_the_loc|Ambarı buldun.
 ; qstr__cancelled_the_{reg1|(cancelled the {reg10} exp pts earned from killing prisoners)
-; qstr_Forming_ranks.|Forming ranks.
+qstr_Forming_ranks.|Sıralamalar.
 qstr_You_fall_off_of_your|Bineğinden düştün
 qstr_Received_{reg0}_dama|{reg0} alınan hasar.
-; qstr_{s1}_fell_unconsciou|{s1} fell unconscious.
+qstr_{s1}_fell_unconsciou|{s1} bayıldı.
 qstr_Three_Nazguls_are_ci|3 tane Nazgul  savaş alanının yukarısında daire çiziyor.
 qstr_Two_Nazguls_are_circ|2 tane Nazgul  savaş alanının yukarısında daire çiziyor.
 qstr_A_Nazgul_is_circling|bir tane Nazgul  savaş alanının yukarısında daire çiziyor.
 qstr_Your_mount_is_scared|Bineğin  {reg5?ent:troll} tarafından korkutuldu!
-; qstr_Nazgul_sweep!|Nazgul sweep!
+qstr_Nazgul_sweep!|Nazgul salınıyor!
 qstr_You_and_your_horse_p|Sen ve atın paniklediniz, Nazgul ağlaması dayanılmaz.
 qstr_Your_horse_panics_th|Atın panikledi, Nazgul ağlaması dayanılmaz.
 ; qstr_You_cower_in_terror_|You cower in terror, the Nazgul cries are unbearable!
@@ -513,8 +513,8 @@ qstr_knocked_unconscious|bayıltıldı
 qstr_Nazgul_diving_attack|Nazgul {s11} e dalış saldırısı yapıyor.
 ; qstr_{s11}_is_{s10}_in_th|{s11} is {s10} in the Nazgul attack!
 qstr_{s1}_s_morale:_{reg1|{s1}'in morali: {reg1}
-; qstr_You_rally_your_troop|You rally your troops!
-; qstr_{s5}_rallies_his_tro|{s5} rallies his troops!
+qstr_You_rally_your_troop|Birlikleri topla!
+qstr_{s5}_rallies_his_tro|{s5} birliklerini topluyor!
 qstr_You_have_killed_{reg|Sen savaşta {reg1} düşman öldürdün!
 qstr_Your_bravery_inspire|Cesaret birliklerine ilham veriyor
 qstr_Everyone|Herkes
@@ -525,7 +525,7 @@ qstr_{s1}_and_{s2}|{s1} ve {s2}
 qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} ve {s3}
 qstr_{s10}_Move_over_ther|{s10}, Oraya git!
 ; qstr_You_have_a_clear_per|You have a clear perception of great imminent danger, from all around you!
-; qstr_New_ent_reached_batt|New ent reached battle scene...
+qstr_New_ent_reached_batt|Yeni ent savaş sahnesine ulaştı.
 qstr_On_your_positions_bi|Pozisyon alın, kızlar!!
 qstr_Defenders:_infantry_|Savunanlar: piyade HÜCUM!!
 qstr_Defenders:_everyone_|Savunanlar: herkes HÜCUM!!
@@ -534,28 +534,28 @@ qstr_Attackers:_{reg1}/{r|Saldıranlar: {reg1}/{reg3}/{reg5} Savunanlar: {reg0}/
 qstr_Ballista:_out_of_amm|Mancınık:mermimiz bitti
 qstr_Ballista:_turn_CURSO|Ballista: dondürmek CURSOR, nişan almak LSHIFT, ateş etmek SPACE, hazırlamak T, çıukmak F
 qstr_Ballista:_out_of_ammo|Mancınık:mermimiz bitti!
-; qstr_The_ladders_on_Deepi|The ladders on Deeping Wall! Watch out!
+qstr_The_ladders_on_Deepi|Derin Duvardaki merdivenler! Dikkat et!
 qstr_You_yell_for_your_ho|Atın için sesleniyorsun
 qstr_THREE.._TWO..._ONE..|ÜÇ.. İKİ... BİR.... DÖVÜŞ!
 qstr_Leave_the_place_in_s|Bölgeden sükutla ayrıl?
 qstr_Leave_scene?|Sahneden ayrıl?
-; qstr_Trace_back_your_step|Trace back your steps and go back in the open now?
+qstr_Trace_back_your_step|Geriye çekil ve şimdi açık havaya dön mü?
 qstr_There_is_no_way_out!|Hiç bir yol yok! Orklara teslim ol!
-; qstr_Stealth_mini_game_tu|Stealth mini-game tutorial: There are two alarm levels. Level 1 is set off by the guards seeing a dead body or by them spotting you. Level 2 is set off by the guards spotting you when level 1 is already active. Level two is dangerous because guards will continue to arrive. You can avoid being spotted by staying hidden. To hid simply move behind various bits of cover.
+qstr_Stealth_mini_game_tu|Gizli mini oyun öğretici: İki alarm seviyesi vardır. Seviye 1, korucular tarafından ölen ceset görüldüğünde ya da sizi tespit edinceye kadar yola çıkar. Seviye 2, seviye 1 zaten aktifken sizi gören muhafızlar tarafından kapatılır. İkinci seviye tehlikelidir çünkü muhafızlar gelmeye devam edecektir. Gizli kalıp kalmanızın önüne geçebilirsiniz. Saklanmak sadece çeşitli bit kapakların arkasında hareket ettirmektir.
 qstr_You_are_now_hidden.|Şimdi gizlisin.
-; qstr_You_move_out_of_hidi|You move out of hiding.
+qstr_You_move_out_of_hidi|Sığınağın dışına yürüdün.
 qstr_The_guards_have_spot|Gardiyan ölü bedeni tespit etti!
 qstr_Alarm_Level_is_now_a|Alarm Seviyesi şimdi 1'de!
 qstr_Alarm_Level_is_now_at|Alarm Seviyesi şimdi 0'da!
 qstr_The_guards_have_spott|Gardiyanlar seni fark etti
 qstr_Alarm_Level_is_now_at_|Alarm Seviyesi şimdi 2'de!
 qstr_The_sorcerer_has_fle|Büyücü kaçtı!
-; qstr_Report_this_ill_news|Report this ill news to the Lady at once.
+qstr_Report_this_ill_news|Bu kötü haberi hemen Leydi'ye bildir.
 qstr_The_sorcerer_is_flee|Büyücü kaçıyor! Öldürün!
 qstr_The_sorcerer_is_dead|Büyücü öldü!
 qstr_The_battle_is_won!|Çarpışma kazanıldı
 ; qstr_Look_at_my_over_the_|Look at my over-the-shoulder shot, {playername}! I'm so beautiful from a distance!
-; qstr_You_wish_old_man_my_|You wish, old man, my over-the-shoulder view is much prettier!
+qstr_You_wish_old_man_my_|Sen istedin yaşlı adam, omuz omuza görüşmek güzeldi!
 qstr_You_should_really_se|Sen gerçekten Vekilharç Denethor'un Facebook fotoğrafını görmelisin, o inanılmaz!
 qstr_Press_Space_to_conti|Boşluk tuşuna basıp ilerle
 qstr_{s24}__{reg13}_|{s24} ({reg13})
@@ -635,7 +635,7 @@ qstr_evil_man|kötü adam
 qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Yalnızca düzenli birlikler.
 qstr_Heroes_only|Sadece kahramanlar
-; qstr_Regulars_and_Heroes|Regulars and Heroes
+qstr_Regulars_and_Heroes|Askerler ve Kahramanlar
 qstr_HP_lost_from_poisoni|Zehirlenmeden kaybedilen HP
 qstr__{s17}.|, {s17}.
 ; qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
@@ -645,7 +645,7 @@ qstr_You_are_attacking_a_|Sen {s1}'in grubuna saldırıyorsun.
 ; qstr_{s13}_ordered_you_to|{s13} ordered you to join the assault against {s14}.
 qstr_You_were_victorious!|Zafer senin !
 qstr_The_battle_was_lost.|Savaş kaybedildi. Kuvvetlerin tamamen ezildi.
-; qstr_Your_companions_carr|Your companions carry you away from the fighting.
+qstr_Your_companions_carr|Yoldaşın seni savaş alanından uzaklaştırıyor
 qstr_You_have_defeated_th|Düşmanı mağlup ettiniz.
 qstr_You_have_retreated_f|Son savaştan geri çekildiniz.
 qstr_^^Ally_Casualties:{s|^^Müttefik Kayıpları:{s0}
@@ -657,11 +657,11 @@ qstr_^^Ally_Casualties:{s|^^Müttefik Kayıpları:{s0}
 ; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
 ; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
 ; qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
-; qstr_Some_of_your_tendons|Some of your tendons have been damaged in the battle. You lose 1 strength.
+qstr_Some_of_your_tendons|Bazı tendonların savaşta zarar gördü. 1 güç kaybettin.
 ; qstr_You_took_a_nasty_wou|You took a nasty wound which will cause you to limp slightly even after it heals. Your lose 1 agility.
 ; qstr_You_have_trouble_thi|You have trouble thinking straight after the battle, perhaps from a particularly hard hit to your head, and frequent headaches now plague your existence. Your intelligence is reduced by 1.
 qstr_Perhaps_I_m_getting_|Belki de şansızlaşıyorum...
-; qstr_Retirement_is_starti|Retirement is starting to sound better and better.
+qstr_Retirement_is_starti|Emeklilik kulağa daha hoş gelmeye başlıyor.
 qstr_No_matter!_I_will_pe|Önemi yok! Ben direneceğim!
 qstr_What_did_I_do_to_des|Bunu hakedecek ne yaptım?
 qstr_I_suppose_it_ll_make|En azından anlatılacak güzel bir hikaye olacak.
@@ -690,7 +690,7 @@ qstr_The_siege_tower_is_b|Kuşatma kulesi inşa edildi ve saldırı yapmaya haz�
 ; qstr_The_town_centre_is_y|The town centre is yours, but the remaining defenders have retreated to the castle. It must fall before you can complete your victory.
 ; qstr_The_remaining_defend|The remaining defenders have retreated to the castle as a last defense. You must go in and crush any remaining resistance.
 ; qstr_However_since_you_ar|However, since you are not a sworn {man/follower} of {s9}, there is no chance he would recognize you as the {lord/lady} of this {reg8?town:castle}.
-; qstr_The_enemy_has_been_f|The enemy has been forced to retreat. The assault is over, but the siege continues.
+qstr_The_enemy_has_been_f|Düşman geri çekilmeye zorlandı. Saldırı bitti, ama kuşatma devam ediyor
 qstr_The_assasins_beat_yo|Suikastçi seni yendi ve ölüme terketti
 ; qstr_You_have_fallen._The|You have fallen. The bandits quickly search your body for valuables they can find, then vanish into the night. They have left you alive, if only barely.
 ; qstr_Luckily_some_of_your|Luckily some of your companions came to search for you when you did not return, and find you lying in the ditch. They carried you to safety and dressed your wounds.
@@ -723,7 +723,7 @@ qstr_Kill_him_quickly_bef|Çabuk öldürün o kaçamadan!
 qstr_destroyed._Only_smol|yerlebir edilmiş. Sadece yanan kalıntılar kalmış.
 ; qstr_^^^You_lost_your_fig|^^^You lost your fight against the mutiny! ^Seems like your orcs have a new commander now.
 ; qstr_^^^You_have_slain_th|^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure.
-; qstr_You_cover_up_your_tr|You cover up your tracks and move onward.
+qstr_You_cover_up_your_tr|Ekibi koru ve hareket halinde kal.
 qstr_Breaking_camp...|Kamp kaldırılıyor...
 qstr_You_have_left_{s1}.|Ayrıldın {s1}.
 qstr_You_are_entering_{s1|({s2}) {s1}  giriyorsun.
@@ -795,30 +795,30 @@ qstr_I_m_sure_the_TLD_tea|TLD gelmeye çalışacak, bundan eminim.
 ; qstr_I_don_t_think_there_|I don't think there's multiplayer in TLD, but elephants would be nice.
 ; qstr_There_is_a_hidden_el|There is a hidden elephant deathmatch mode in TLD, but you need to remove all your savegames first, play for a 100 game days without saving then go to the character screen and press Alt+F4. Totally worth it!
 ; qstr_Did_you_bring_your_z|Did you bring your zupdog?
-; qstr_What_s_zupdog?|What's zupdog?
-; qstr_My_zupdog_is_ill_but|My zupdog is ill, but I brought my zupmaiass.
+qstr_What_s_zupdog?|Zupdog'da ne?
+qstr_My_zupdog_is_ill_but|Zupdog'um hasta, ama zupmaiamass satın alacağım.
 ; qstr_Wai_no_plate_armour_|Wai no plate armour in mod???
 ; qstr_What_is_plate_armour|What is plate armour? Never heard of it.
-; qstr_Wai_no_female_trolls|Wai no female trolls? Eh? Eh? You ma biatch!
+qstr_Wai_no_female_trolls|Bekle bayan troller mi? Eh?Eh? Or... çocuğu!
 ; qstr_WHEN_U_REALSE_MOD?!!|WHEN U REALSE MOD?!!?
-; qstr_But_we_did_release._|But we did release. You're in it. And why are you shouting?
-; qstr_YES!_ALSO_SOMETIMES_|YES! ALSO SOMETIMES IS!
+qstr_But_we_did_release._|Ama geri çekildik. Bunu içindeydin. ve neden ateş ediyorsun?
+qstr_YES!_ALSO_SOMETIMES_|EVET! BAZEN!
 ; qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
 ; qstr_Every_mod_team_works|Every mod team works according to their standards, you can't make mods cooperate if their vision is different.
 ; qstr_Because_we_don_t_hav|Because we don't have a sense of humour and most of them are just too funny for us.
 qstr_In_movies_trolls_are|Filmlerde troller büyük ve şişman, Ben niye inceciğim ?
 ; qstr_We_interpreted_Tolki|We interpreted Tolkien like this.
 ; qstr_But_we_did_make_you_|But we did make you as stupid as in the movies. That's gotta count for something.
-; qstr_What_is_news?_Got_an|What is news? Got any screenshots?
+qstr_What_is_news?_Got_an|Yeni haberler var mı? Herhangi bir fotoğraf verecek misin?
 ; qstr_Well_just_look_aroun|Well just look around you, what do you need screenshots for?
 qstr_Say_cheese!|Peynir de!
 ; qstr_Why_did_you_make_mod|Why did you make mod installation so complex?
 ; qstr_Well_if_you_are_here|Well, if you are here and talking to me, you must've RTFM successfully after all
-; qstr_You_just_got_windyfl|You just got windyflorated!
+qstr_You_just_got_windyfl|Sadece  windyflorated' a git!
 qstr_Treebeard_wants_you_|Ağaçsakal, Fangorn'da ağaçları kesen orkları bulmanı ve yok etmeni istiyor
-; qstr_Something_wrong_not_|Something wrong, not enought troops for scout party
+qstr_Something_wrong_not_|Bazı şeyler yanlış, keşif ekibi için hiç birliğimiz yok. 
 qstr_my_home_town|benim memleketim
-; qstr_I_am_in_perfect_heal|I am in perfect health.
+qstr_I_am_in_perfect_heal|Çok sağlıklıyım.
 ; qstr_I_am_suffering_from_|I am suffering from {s1}.
 ; qstr_I_am_suffering_from_{|I am suffering from {s1} and {s2}.
 ; qstr_I_am_suffering_from_{s|I am suffering from {s1}, {s2}, and {s3}.
@@ -839,7 +839,7 @@ qstr_Nicely_done_{s23}.|Güzel olmuş, {s23}
 qstr_Good_work_{s23}.|İyi iş, {s23}
 ; qstr_The_more_you_capture|The more you capture, the better, {s23}.
 ; qstr_Caught_a_few_straggl|Caught a few stragglers, {s23}?
-; qstr_I_am_sorry_no_one_el|I am sorry, no one else is ready to go.^They will serve {s22} by holding the defences here.
+qstr_I_am_sorry_no_one_el|Üzgünüm , Hiçkimse gitmeye hazır değil
 ; qstr_Tough_luck_but_we_do|Tough luck, but we don't have any. Come back later.
 ; qstr_There_are_brave_sold|There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here.^^^[not enough Resource Points]
 ; qstr_We_have_some_spare_t|We have some spare troops, but we can't afford to lose them to the likes of you.^^^[not enough Resource Points]
@@ -862,7 +862,7 @@ qstr_I_am_{s4}_a_commande|Ben {s4}, {s6}'ın/in kumandanıyım.
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? ve {s8}.:. yöneticisi
 ; qstr_Very_well_done_{play|Very well done, {playername}! You captured both the spy and his handler, just as I'd hoped, and the pair are now safely locked up, waiting to be questioned. They will have some explaining to do! Anyway, I'm very pleased with your success, {playername}, and I give you this purse as a token of my appreciation.
 ; qstr_Beautiful_work_{play|Beautiful work, {playername}! You captured both the spy and his handler, just as you were told, and the pair are now safely locked up in my dungeon, waiting to be questioned. My torturer shall be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you this purse as a token of my appreciation.
-; qstr_Your_mission_is_comp|Your mission is complete, {s9} wants you to resume following his army until further notice.
+qstr_Your_mission_is_comp|Görevin tamamlandı, {s9} 
 ; qstr_{s13}_asked_you_to_g|{s13} asked you to gather {reg3} units of {s4} and deliver them back to him.
 qstr_{s9}_asked_you_to_sc|{s9} senden {s13}, {s14} ve {s15}'i gözetlemeni ve ona rapor vermeni istedi.
 ; qstr_You_have_been_most_h|You have been most helpful, {playername}. My thanks.
@@ -878,7 +878,7 @@ qstr_we_are_not_fighting_|Şu anda kimse ile savaş durumunda değiliz
 qstr_What?_Let_me_see_tha|Ne? Şuna bir bakayım... Hmmm. Bana {playername}'i getirdiğin iyi oldu. Şimdi Defol.
 ; qstr_Give_me_that!_Hrmph!_|Give me that! Hrmph! You are a useful servant to your masters, {playername}, but all of you will be dead before long. Not now though, so scurry off.
 qstr_Do_you_need_reinforc|Takviye kuvvetlerine ihtiyacınız var mı?
-; qstr_You_don_t_look_too_s|You don't look too strong, do you need troops?
+qstr_You_don_t_look_too_s|Çok güçlü değilsin, biraz askere ihtiyacın var mı ?
 ; qstr_^{s14}_is_grateful_t|^{s14} is grateful to you, {playername}, {s29}^
 ; qstr_{s31}{reg28?Those:That|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32}^^[earned {reg14} Resource Points of {s14}]
 ; qstr_{s31}{reg28?Those:That}|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^^[earned {reg14} Resource Points of {s14}]
@@ -976,21 +976,21 @@ qstr_I_don_t_like_your_fa|Senin yüzünü beğenmedim. Bence biraz düzeltilmeye
 qstr_What_are_you_looking|Neye bakıyorsun? NEYE?
 qstr_the_white_hand|ak el
 qstr_the_lidless_eye|uykusuz göz
-; qstr_I_have_some_of_your_|I have some of your people with me. I'll let them join you, to help your cause.
-; qstr_Some_of_your_stinky_|Some of your stinky kin are with me. I'm sure they'd rather go with you.
-; qstr_{s4}_It_is_always_go|{s4} It is always good to see one of our own.
+qstr_I_have_some_of_your_|Benimle birlikte olan biraz insan var. Onları sana katılıp yardım etmeleri için ikna edeceğim.
+qstr_Some_of_your_stinky_|Kokuşmuş akrabalarınızın bir kısmı benimle. Eminim seninle gelmek isterler.
+qstr_{s4}_It_is_always_go|{s4} Senin olan bir tanesini görmek her zaman çok güzel.
 qstr_a_nearby_town|yakın bir kasaba
 qstr_that_town_over_there|Şuradaki Kale
-; qstr_{s4}^We_are_from_{s1|{s4}^We are from {s11}, scouting in the direction of {s12}.
+qstr_{s4}^We_are_from_{s1|{s4}^Bizler {s11}'den geliyoruz ve {s12}'ye doğru keşif yapıyoruz.
 qstr_{s4}^We_are_{reg1?fo|{s4}^Biz {reg1?foraging:raiding} etrafında {s11}.
-qstr_{s4}^We_are_patrolli|{s4}^Çevresinde devriye geziyorsunuz {s11}.
-qstr_{s4}^We_are_carrying|{s4}^Biz aletler taşıyoruz {s11} oraya {s12}.
-qstr_{s4}^We_are_escortin|{s4}^Esirlere refakat ediyorsunuz {s12}.
+qstr_{s4}^We_are_patrolli|{s4}^ {s11} Çevresinde devriye geziyoruz .
+qstr_{s4}^We_are_carrying|{s4}^ {s11}'den aletler taşıyoruz, taşıdığımız yer: {s12}
+qstr_{s4}^We_are_escortin|{s4}^Esirlere refakat ediyoruz {s12}.
 qstr_Greetings_do_you_nee|Selamlar! Desteğe mi ihtiyacınız var?
 qstr_Goodbye_friends.|Görüşmek üzere, arkadaşlar.
 qstr_See_you_later_if_you|Görüşürüz. Tabi ki ölmezsen!
-qstr__^Oh_and_take_back_t|^Oh, ve şu bizim insanlarımız olmayanları geri alın.
-; qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:That} brave {reg28?soldiers:soldier} will surely help us defend our lands.{s32} {s23}^^[earned {reg14} Resource Points of {s14}]
-; qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us wreak more havoc.{s32}^{s23}^^[earned {reg14} Resource Points of {s14}]
+qstr__^Oh_and_take_back_t|^Oh, ve şu bizim insanımız olmayanları geri alın.
+qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Those:That} cesur olmak {reg28?soldiers:soldier} Bize daha çok tahribat kazandırmada yardımcı olur.{s32} {s23}^^[earned {reg14} Resource Points of {s14}]
+qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Those:That} Kullanışlı {reg28?troops:troop} Bize daha çok tahribat kazandırmada yardımcı olur.{s32}^{s23}^^[earned {reg14} Resource Points of {s14}]
 qstr_Good_luck_in_your_tr|Seyahatlerinde bol şans.
 qstr_Try_not_getting_your|Kendini öldürtmemeye çalış!
