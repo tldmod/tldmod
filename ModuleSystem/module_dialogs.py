@@ -2310,6 +2310,21 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (call_script, "script_finish_quest", "qst_defend_village", 100),
     ]],
 
+[anyone,"lord_start", [
+    (check_quest_active, "qst_defend_village"),
+    (check_quest_failed, "qst_defend_village"),
+    (quest_slot_eq, "qst_defend_village", slot_quest_giver_troop,"$g_talk_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_defend_village", slot_quest_object_center),
+    (str_store_party_name,12,":quest_target_center")],
+"We have heard from our scouts near {s12} that you have failed to defend the village. The villagers were either slaughtered or made into slaves. These raiders are becoming bolder every day... ^^We sense that war is surely coming.", "defend_village_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+    (cancel_quest, "qst_defend_village"),
+    ]],
+
+[anyone|plyr, "defend_village_failed",[],
+  "I will do better next time.", "close_window",[],
+  ],
+
 
 [anyone,"lord_start", [
     (check_quest_active, "qst_raid_village"),    
@@ -2321,6 +2336,22 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 "We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.", "lord_generic_mission_completed",[
     (call_script, "script_finish_quest", "qst_raid_village", 100),
     ]],
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_raid_village"),
+    (check_quest_failed, "qst_raid_village"),
+    (quest_get_slot, ":giver_troop", "qst_raid_village", slot_quest_giver_troop),
+    (eq, "$g_talk_troop", ":giver_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_raid_village", slot_quest_object_center),
+    (str_store_party_name,12,":quest_target_center")],
+"We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.", "raid_village_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+    (cancel_quest, "qst_raid_village"),
+    ]],
+
+[anyone|plyr, "raid_village_failed",[],
+  "I will do better next time.", "close_window",[],
+  ],
 
 
 #### Kham Defend / Raid  Village Quests Completion End ####
@@ -3547,6 +3578,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    (str_store_string, s2, "@You must return and report back that you have defeated the Ring Hunter party, but the leaders may have acquired what they were looking for."),
    (call_script,"script_start_quest","qst_ring_hunters2","$qst_ring_hunter_lord"),
    (quest_set_slot,"qst_ring_hunters2",slot_quest_current_state,10),
+   (disable_party,"p_ring_hunter_lair"),
    (assign,"$g_leave_encounter",1),
    (change_screen_map),
    (remove_party,":beorn_m"),
@@ -4675,7 +4707,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
 
-#### Kham Village Quests Start ########
+#### Kham Defend / Raid Village Quests Start ########
 #### Kham Defend Village - Good Start
 
 

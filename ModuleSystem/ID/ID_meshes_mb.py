@@ -367,5 +367,7 @@ mesh_mp_inventory_choose = 365
 mesh_inv_slot = 366
 mesh_draw_lumberjack_orcs = 367
 mesh_draw_mound_kneel = 368
+mesh_draw_ring_hunters_army = 369
+mesh_draw_ring_hunters_lair = 370
 
 

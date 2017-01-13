@@ -4115,7 +4115,7 @@ game_menus = [
       (set_background_mesh, "mesh_draw_wild_troll"),
     (else_try),
     	(eq, "$g_encountered_party_template", "pt_ring_hunters"),
-    	(set_background_mesh, "mesh_draw_victory_evilman"),
+    	(set_background_mesh, "mesh_draw_ring_hunters_army"),
     (try_end),
 		
 		
@@ -7789,7 +7789,7 @@ game_menus = [
 ("ring_hunter_lair",0,
     "^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.",
     "none",
-    [(set_background_mesh, "mesh_town_evilcamp"), 
+    [(set_background_mesh, "mesh_draw_ring_hunters_lair"), 
      (str_store_party_name, s1, "$g_encountered_party")],
     [("attack_lair",[],"Attack them now",
        [(set_jump_mission, "mt_bandit_lair"),
@@ -8330,6 +8330,8 @@ game_menus = [
 	("village_quest",0,
 	   "{s9}.",
 	   "none",[
+
+	 #Check which quest (Evil / Good)
 	   (try_begin),
 	   	(check_quest_active,"qst_defend_village"),
 	   	(set_background_mesh, "mesh_town_goodcamp"),
@@ -8338,9 +8340,13 @@ game_menus = [
 	    (set_background_mesh,"mesh_town_evilcamp"),
 	    (str_store_string,s9,"@You see the village you were tasked to raid. You get ready to attack them."),
 	   (try_end)],
+
+	 #If Good (Defend Village)
 	 [("defend_villagers",[(check_quest_active,"qst_defend_village")], "Defend the Villagers!",
 	     [  
 	     	(quest_get_slot, ":quest_object_faction","qst_defend_village", slot_quest_object_faction),
+	  
+	 #Randomize Raiders
 	        (store_random_in_range, ":random_no", 0, 2),
 	        (try_begin),
 	          (eq, ":quest_object_faction","fac_gondor"),
@@ -8362,6 +8368,8 @@ game_menus = [
 	          (assign, ":bandit_troop_1", "trp_orc_of_mordor"),
 	          (assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),
 	        (try_end),
+
+	 #Randomize Scene
 	        (store_random_in_range, ":random_scene", 1, 3),
 	        (try_begin),
 	        	(eq, ":random_scene",1),
@@ -8369,6 +8377,8 @@ game_menus = [
 	        (else_try),
 	        	(modify_visitors_at_site, "scn_village_3"),
 	        (try_end),
+
+	 #Set Entry and Number of Enemies / Villagers
 	        (reset_visitors),
 	        (store_character_level, ":level", "trp_player"),
 	        (val_div, ":level", 2),
@@ -8393,15 +8403,20 @@ game_menus = [
 	        	(jump_to_scene, "scn_village_1"),
 	        (else_try),
 	        	(jump_to_scene,"scn_village_3"),
-	        (end_try),
-	        (assign, "$g_next_menu", "mnu_village_quest_result"),
-	        (jump_to_menu, "mnu_battle_debrief"),
-	     	(assign, "$g_mt_mode", vba_normal),
+	        (try_end),
+	        #(assign, "$g_next_menu", "mnu_village_quest_result"),
+	        #(jump_to_menu, "mnu_battle_debrief"),
+	     	#(assign, "$g_mt_mode", vba_normal),
 	        (change_screen_mission),
 	       ]),
+
+	 #If Evil (Raid Village)
+
 	 ("raid_villagers",[(check_quest_active,"qst_raid_village")], "Raid the Village!",
 	     [  
 	     	(quest_get_slot, ":raid_village_faction", "qst_raid_village", slot_quest_target_faction),
+	     	
+	 #Set Village Defender Faction
 	     	(try_begin), ## Elves are not likely to be guarding villages. Make an exception
 			    (this_or_next|eq,":raid_village_faction", "fac_imladris"),
 			    (this_or_next|eq,":raid_village_faction", "fac_lorien"),
@@ -8419,6 +8434,8 @@ game_menus = [
 	        (else_try),
 	        	(modify_visitors_at_site, "scn_village_3"),
 	        (try_end),
+	
+	#Set Entry and Number of Defenders   
 	        (reset_visitors),
 	        (store_character_level, ":level", "trp_player"),
 	        (val_div, ":level", 2),
@@ -8440,9 +8457,9 @@ game_menus = [
 	        (else_try),
 	        	(jump_to_scene,"scn_village_3"),
 	        (end_try),
-	        (assign, "$g_next_menu", "mnu_village_quest_result"),
-	        (jump_to_menu, "mnu_battle_debrief"),
-	     	(assign, "$g_mt_mode", vba_normal),
+	       # (assign, "$g_next_menu", "mnu_village_quest_result"),
+	       # (jump_to_menu, "mnu_battle_debrief"),
+	     #	(assign, "$g_mt_mode", vba_normal),
 	        (change_screen_mission),
 	       ]),
 	   ("go_away",[],"Leave them alone",[(change_screen_map)]),
@@ -8462,7 +8479,7 @@ game_menus = [
 			(remove_party,"$qst_defend_village_party"),
 	      (else_try),
 	      	(check_quest_active,"qst_defend_village"),
-	      	(eq, "$g_battle_result", -1),
+	      	(neq, "$g_battle_result", 1),
 	        (call_script, "script_fail_quest", "qst_defend_village"),
 	        (str_store_string, s9, "@Try as you might, you could not defeat the raiders. They raze the village to the ground and enslave the remaining peasants."),
 	      #  (set_background_mesh, "mesh_draw_victory_orc"),
@@ -8478,7 +8495,7 @@ game_menus = [
 			(remove_party,"$qst_raid_village_party"),
 		  (else_try),
 			(check_quest_active,"qst_raid_village"),
-	      	(eq, "$g_battle_result", -1),
+	      	(neq, "$g_battle_result", 1),
 	        (call_script, "script_fail_quest", "qst_raid_village"),
 	        (str_store_string, s9, "@You failed to raid the village and you were sent scurrying with your men. You hear the victors cheering as you feel the disapproving gaze of the Eye."),
 	       # (set_background_mesh, "mesh_draw_victory_gondor"),
