@@ -1,21 +1,41 @@
-sudo apt-get install p7zip tree
+sudo apt-get install p7zip tree git
 
 echo HI THERE!
 
-tree -h .
+# as seen here <https://github.com/travis-ci/travis-ci/issues/2285>
+# but made prettier
+_fold_begin_() {
+  echo $1 && echo -en "travis_fold:start:script.$(( ++fold_count ))\\r"
+}
+
+_fold_end_() {
+  echo -en "travis_fold:end:script.$fold_count\\r"
+}
+
+_fold_begin_ '[Initial tree view]'
+  tree -h .
+_fold_end_
 
 SVNREV=$(git rev-list --count HEAD)
 
-echo Compiling retail revision $SVNREV!
+_fold_begin_ "Compiling retail revision $SVNREV!"
+  curl https://ccrma.stanford.edu/~craig/utility/flip/flip.cpp -O -J && sudo g++ flip.cpp -o /usr/bin/flip
 
-curl https://ccrma.stanford.edu/~craig/utility/flip/flip.cpp -O -J && sudo g++ flip.cpp -o /usr/bin/flip
+  cd ModuleSystem && sed -i 's/cheat_switch = 1/cheat_switch = 0/' module_constants.py
 
-cd ModuleSystem && sed -i 's/cheat_switch = 1/cheat_switch = 0/' module_constants.py
+  title() {
+    true
+  }
 
-./build_module.sh
-./build_module_wb.sh
+  ./build_module.sh
+  ./build_module_wb.sh
 
-cd .. && echo Building revision $SVNREV!
+  echo -en 'travis_fold:end:script.2\\r'
+_fold_end_
+
+cd ..
+
+_fold_begin_ "Packaging revision $SVNREV!"
 
 git config --global core.quotepath false
 git diff --name-status --diff-filter=ACMRTUXB TLD3.3REL ./ > diff.txt
@@ -84,19 +104,24 @@ PS: For more info and official support/updates take a look to <https://tldmod.gi
 
 cp notice "THIS IS AN AUTOMATED RELEASE OF TLD FOR M&B 1.011, REVISION $SVNREV"
 cp notice "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
+_fold_end_
 
+_fold_begin_ 'Compressing finished packages...'
+  7zr a -mx9 -r -y $bbfile TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR M&B 1.011, REVISION $SVNREV"
 
-7zr a -mx9 -r -y $bbfile TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR M&B 1.011, REVISION $SVNREV"
+  rm -rf TLD
+  mv TLD_WB TLD
 
-rm -rf TLD
-mv TLD_WB TLD
+  7zr a -mx9 -r -y $bbfilewb TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
+_fold_end_
 
-7zr a -mx9 -r -y $bbfilewb TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
+_fold_begin_ '[Final tree view]'
+  ls -ra
+_fold_end_
 
-curl https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh -O -J
-chmod +x ./upload-to-bitbucket.sh
+_fold_begin_ 'Uploading finished packages...'
+  curl https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh -O -J && chmod +x ./upload-to-bitbucket.sh
 
-ls -ra
-
-sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"
-sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb"
+  sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"
+  sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb"
+_fold_end_
