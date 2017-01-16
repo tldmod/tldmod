@@ -15,14 +15,14 @@ _fold_final_
 
 cd ModuleSystem
 
-_fold_start_ "[Compiling retail revision $SVNREV!]"
+_fold_start_ "[Compiling retail revision $SVNREV]"
     curl https://ccrma.stanford.edu/~craig/utility/flip/flip.cpp -O -J && sudo g++ flip.cpp -o /usr/bin/flip
 
     # disable cheat mode for the generated nightly builds...
     sed -i 's/cheat_switch = 1/cheat_switch = 0/' module_constants.py
 
     # add a placeholder 'title' program to avoid log spam...
-    echo '#/usr/bin/bash' > /usr/bin/title && chmod +x /usr/bin/title
+    sudo sh -c 'echo "#/usr/bin/bash" > /usr/bin/title && chmod +x /usr/bin/title'
 
     ./build_module.sh
     ./build_module_wb.sh
@@ -32,7 +32,7 @@ _fold_final_
 
 cd ..
 
-_fold_start_ "[Packaging revision $SVNREV!]"
+_fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental patches]"
     git config --global core.quotepath false
     git diff --name-status --diff-filter=ACMRTUXB TLD3.3REL ./ > diff.txt
 
@@ -102,7 +102,7 @@ PS: For more info and official support/updates take a look to <https://tldmod.gi
     cp notice "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
 _fold_final_
 
-_fold_start_ '[Compressing finished TLD packages...]'
+_fold_start_ '[Compressing finished TLD packages with 7-Zip]'
     7zr a -mx9 -r -y $bbfile TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR M&B 1.011, REVISION $SVNREV"
 
     # swap the M&B 1.011 folder by the Warband one
@@ -112,10 +112,10 @@ _fold_start_ '[Compressing finished TLD packages...]'
 _fold_final_
 
 _fold_start_ '[Final tree view]'
-    ls -ra
+    ls -lash
 _fold_final_
 
-_fold_start_ '[Uploading finished TLD packages...]'
+_fold_start_ '[Uploading finished TLD packages]'
     curl https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh -O -J && chmod +x ./upload-to-bitbucket.sh
 
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"
