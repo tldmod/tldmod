@@ -1,4 +1,4 @@
-sudo apt-get install p7zip tree python
+sudo apt-get install p7zip tree
 
 echo HI THERE!
 
