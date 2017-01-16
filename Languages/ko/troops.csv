@@ -1,5 +1,5 @@
-trp_unarmed_troop|무장갑 보병
-trp_unarmed_troop_pl|무장갑 보병
+trp_unarmed_troop|비무장 보병
+trp_unarmed_troop_pl|비무장 보병
 trp_tutorial_maceman|철퇴병
 trp_tutorial_maceman_pl|철퇴병
 trp_tutorial_archer|궁수
@@ -44,10 +44,10 @@ trp_watchman|보초병
 trp_watchman_pl|보초병
 trp_woodmen_youth|나무꾼
 trp_woodmen_youth_pl|나무꾼
-; trp_woodmen_forester|Woodmen Forester
-; trp_woodmen_forester_pl|Woodmen Foresters
-; trp_woodmen_skilled_forester|Woodmen Skilled Forester
-; trp_woodmen_skilled_forester_pl|Woodmen Skilled Foresters
+trp_woodmen_forester|나무꾼 숲지기
+trp_woodmen_forester_pl|나무꾼 숲지기
+trp_woodmen_skilled_forester|숙련된 나무꾼 숲지기
+trp_woodmen_skilled_forester_pl|숙련된 나무꾼 숲지기
 trp_woodmen_axemen|나무꾼 도끼병
 trp_woodmen_axemen_pl|나무꾼 도끼병
 trp_woodmen_master_axemen|나무꾼 정예 도끼병
@@ -92,8 +92,8 @@ trp_dale_warrior|너른골 전사
 trp_dale_warrior_pl|너른골 전사
 trp_dale_veteran_warrior|너른골 고참 전사
 trp_dale_veteran_warrior_pl|너른골 고참 전사
-; trp_dale_marchwarden|Marchwarden of Dale
-; trp_dale_marchwarden_pl|Marchwardens of Dale
+trp_dale_marchwarden|너른골 행진병
+trp_dale_marchwarden_pl|너른골 행진병
 trp_dale_pikeman|너른골 창병
 trp_dale_pikeman_pl|너른골 창병
 trp_dale_billman|너른골 미늘창병
@@ -864,22 +864,22 @@ trp_messenger_orc|전령
 trp_messenger_orc_pl|전령
 trp_messenger_evil_man|전령
 trp_messenger_evil_man_pl|전령
-trp_town_walker_1|마을주민
-trp_town_walker_1_pl|마을주민
-trp_town_walker_2|마을 주민
-trp_town_walker_2_pl|마을 주민
-trp_village_walker_1|마을 주민
-trp_village_walker_1_pl|마을 주민
-trp_village_walker_2|마을 주민
-trp_village_walker_2_pl|마을 주민
-trp_spy_walker_1|마을 주민
-trp_spy_walker_1_pl|마을 주민
-trp_spy_walker_2|마을 주민
-trp_spy_walker_2_pl|마을 주민
-trp_walker_man_gondor_black|마을 주민
-trp_walker_man_gondor_white|마을 주민
-trp_walker_man_gondor_blue|마을 주민
-trp_walker_man_gondor_green|마을 주민
+trp_town_walker_1|마을 남자
+trp_town_walker_1_pl|마을 남자들
+trp_town_walker_2|마을 여자
+trp_town_walker_2_pl|마을 여자들
+trp_village_walker_1|마을 사람
+trp_village_walker_1_pl|마을 사람들
+trp_village_walker_2|마을 사람
+trp_village_walker_2_pl|마을 사람들
+trp_spy_walker_1|마을 남자
+trp_spy_walker_1_pl|마을 남자들
+trp_spy_walker_2|마을 여자
+trp_spy_walker_2_pl|마을 여자들
+trp_walker_man_gondor_black|마을 남자
+trp_walker_man_gondor_white|마을 남자
+trp_walker_man_gondor_blue|마을 남자
+trp_walker_man_gondor_green|마을 남자
 trp_walker_man_rohan_t|로한 마을 주민
 trp_walker_man_rohan_d|로한 마을 주민
 trp_walker_woman_rohan_t|로한 여성 주민
@@ -891,7 +891,7 @@ trp_ramun_the_slave_trader|노예상인 라문
 trp_guide|퀵 지미
 trp_galeas|갈레아스
 trp_farmer_from_bandit_village|농부
-trp_farmer_from_bandit_village_pl|농부
+trp_farmer_from_bandit_village_pl|농부들
 trp_trainer_1|훈련교관
 trp_trainer_2|훈련교관
 trp_trainer_3|훈련교관
@@ -930,34 +930,34 @@ trp_tavern_traveler_9|여행자
 trp_tavern_traveler_10|여행자
 trp_tavern_minstrel_1|음유시인
 trp_npc1|마블룽
-; trp_npc2|Cirdil
-; trp_npc3|Ulfas
-; trp_npc4|Galmyne
+trp_npc2|시르딜
+trp_npc3|울파스
+trp_npc4|갈마인
 trp_npc5|글로르핀델
-; trp_npc6|Luevanna
-; trp_npc7|Kili Goldfinger
-; trp_npc8|Faniul
-; trp_npc9|Gulm
-; trp_npc10|Durgash
-; trp_npc11|Ufthak
-; trp_npc12|Gorbag
-; trp_npc13|Lykyada
-; trp_npc14|Fuldimir
-; trp_npc15|Bolzog
-; trp_npc16|Varfang
-; trp_npc17|Dimborn
-; trp_gondor_lord|Steward Denethor
-; trp_gondor_lord_pl|Steward
-; trp_rohan_lord|King Theoden
-; trp_rohan_lord_pl|King
-; trp_isengard_lord|Saruman
-; trp_isengard_lord_pl|Master
-; trp_mordor_lord|Mouth of Sauron
-; trp_mordor_lord_pl|Satrap
-; trp_harad_lord|Chief Ul-Ulcari
-; trp_harad_lord_pl|Chief
-; trp_rhun_lord|Jarl Helcaroth
-; trp_rhun_lord_pl|Jarl
+trp_npc6|루에바나
+trp_npc7|킬리 골드핑거
+trp_npc8|파니울
+trp_npc9|글룸
+trp_npc10|더가쉬
+trp_npc11|우프트학
+trp_npc12|고바그
+trp_npc13|리캬다
+trp_npc14|훌드미르
+trp_npc15|볼조그
+trp_npc16|발팽
+trp_npc17|딤본
+trp_gondor_lord|스튜어드 데네소르
+trp_gondor_lord_pl|스튜어드
+trp_rohan_lord|시오든 국왕
+trp_rohan_lord_pl|국왕
+trp_isengard_lord|사루만
+trp_isengard_lord_pl|마스터
+trp_mordor_lord|사우론의 입
+trp_mordor_lord_pl|사트랍
+trp_harad_lord|울-울카리 족장
+trp_harad_lord_pl|족장
+trp_rhun_lord|헬카로스 수령
+trp_rhun_lord_pl|수령
 ; trp_khand_lord|Shibh Krukmahur
 ; trp_khand_lord_pl|Shibh
 ; trp_umbar_lord|Admiral Tulmir
@@ -967,21 +967,21 @@ trp_npc5|글로르핀델
 ; trp_imladris_lord|Lord Elrond
 ; trp_imladris_lord_pl|Lord
 ; trp_woodelf_lord|King Thranduil
-; trp_woodelf_lord_pl|King
+trp_woodelf_lord_pl|국왕
 ; trp_moria_lord|Master Bolg the Lesser
-; trp_moria_lord_pl|Master
+trp_moria_lord_pl|마스터
 ; trp_guldur_lord|Master Fuinur
-; trp_guldur_lord_pl|Master
+trp_guldur_lord_pl|마스터
 ; trp_gundabad_lord|Master Burza Krual
-; trp_gundabad_lord_pl|Master
+trp_gundabad_lord_pl|마스터
 ; trp_dale_lord|King Brand
-; trp_dale_lord_pl|King
+trp_dale_lord_pl|국왕
 ; trp_dwarf_lord|King Dain II Ironfoot
-; trp_dwarf_lord_pl|King
+trp_dwarf_lord_pl|국왕
 ; trp_dunland_lord|Chief Daeglaf the Black
-; trp_dunland_lord_pl|Chief
+trp_dunland_lord_pl|족장
 ; trp_beorn_lord|Chief Grimbeorn the Old
-; trp_beorn_lord_pl|Chief
+trp_beorn_lord_pl|족장
 ; trp_lorien_marshall|Celeborn
 ; trp_pippin_notmet|halfling
 ; trp_merry_notmet|halfling

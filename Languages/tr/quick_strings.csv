@@ -96,7 +96,7 @@ qstr_Servant_of_{s5}|{s5}'in Hizmetkarı
 qstr_Unknown_to_{s5}|{s5}'in bilmediği
 qstr_You_have_been_{reg1?|{s24} e Terfi Edildin.\nRütben {s24} e düşürüldü.
 ; qstr_You_{reg1?earned:los|You {reg1?earned:lost} {reg11} rank points {reg12?and {reg12} influence :}with {s11}.
-; qstr_You_spent_{reg10}_of|You spent {reg10} of your influence with {s1}, with {reg11} remaining.
+qstr_You_spent_{reg10}_of|Kararların sonucunda {reg10} ikna gücünü {s1}, ile harcadın kalan puanın {reg11}
 qstr_Troop_upkeep:|Asker bakımı:
 qstr_{s11}_and_{s10}|{s11} ve {s10}
 qstr_their|onların
@@ -111,7 +111,7 @@ qstr_You_were_wounded_in_|Sen Fangorn'da yaralandın!
 qstr_Volunteers|Gönüllüler
 qstr_{s1}_of_{s3}_was_def|{s1} of {s3} was savaşta yenildi.
 qstr_{s2}_have_razed_{s1}|{s2} {s1}'i yerle bir etti.
-; qstr_Left_for_dead_but_mi|Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}
+qstr_Left_for_dead_but_mi|Ölüme terk edildin ama şans eseri hayattasın: {reg1?{reg1} time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1 Kay.Pn ({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1} Kay.Pnları ({s2})
 qstr_+30_to_Party_Morale|Parti Moraline +30
@@ -332,7 +332,7 @@ qstr_The_last_time_you_sa|En son {s1} da {reg1?her:him} yı gördün
 qstr_The_last_time_you_he|En son {s1} da {reg1?her:him} hakkında bir şeyler duydun.
 qstr_The_{s50}|{s50}
 ; qstr_{s50}_belongs_to_{s1|{s50} belongs to {s1} of {s2}.^
-; qstr_Current_garrison_con|Current garrison consists of {reg5} men.^Has food stock for {reg6} days.
+qstr_Current_garrison_con|Su anki garnizondaki {reg5} kisiye, {reg6} gün yetecek kadar yiyecek stogun kaldı.
 qstr_Very_Poor|Çok fakir
 qstr_Poor|Fakir
 qstr_Average|Ortalama
@@ -343,19 +343,19 @@ qstr_{s50}_Mines|{s50} Madenleri
 qstr_{s50}_Woods|{s50} Odunları
 qstr_{s4}_looks_upset.|{s4} üzgün görünüyor.
 qstr_your_party|senin birliğin
-; qstr_{reg0?One_of_your_pr|{reg0?One of your prisoners, :}{s1} of {s3} has escaped from captivity!
+qstr_{reg0?One_of_your_pr|{reg0?Esirlerinizden biri, :}{s1} of {s3} esaretten kurtuldu!
 qstr_You_brought_{reg3}_h|{s1}'e {reg3} baş sığır getirdin.
-; qstr_Log_entry_{reg3}:_ty|Log entry {reg3}: type {reg4}
+qstr_Log_entry_{reg3}:_ty|Günlüğe giriliyor {reg3}: model  {reg4}
 qstr_Center:_{s4}|Merkez: {s4}
 qstr_Troop:_{s4}|Birlik: {s4}
 qstr_Lord:_{s4}|Lord: {s4}
 qstr_Ally_party_is_presen|Müttefik parti hazır
 qstr_{s4}_is_present_at_e|{s4} olayda mevcut
-; qstr_Event_#{reg5}_type_{|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to troop object = {reg7}
+qstr_Event_#{reg5}_type_{|Event #{reg5}, type {reg6}, time {reg8}: Oyuncunun krallığının askeri hedefleri ile uygunluğu = {reg7}
 ; qstr_Event_#{reg5}_type_{r|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to center object faction = {reg7}
 ; qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
 ; qstr_Event_#{reg5}_type_{reg|Event #{reg5}, type {reg6}, time {reg8}. No relevant kingdom relation
-; qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Player unaffiliated
+qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Bağımsız Oyuncu
 qstr_Elapsed_hours:_{reg7|Geçen saatler: {reg7}
 qstr_Reputation_type:_{s1|İtibar türü: {s15}
 ; qstr_Entries_up_to_#{reg5|Entries up to #{reg5} skipped
@@ -430,17 +430,17 @@ qstr_{s24}:_Your_archers_|{s24}: Okçuların daha iyi hissediyor!
 qstr_{s24}:_Your_cavalry_|{s24}: Süvarilerin daha iyi hissediyor!
 qstr_Ah_what_a_coincidenc|Ah, seninle karşılaşmam büyük tesadüf {playername}! Sen beni tanımıyor olabilirsin ama ben seni tanıyorum. Yolum {s4}'e düşüyor fakat daha şimdi {s3}'ün yanındaydım ve ismin anıldı. {s3} bu tehlikeli günlerde {s3} sana güveniyor. Eğer başka işler kovalamayı düşünüyorsan tekrar düşün ve tüm gücünle {s3}'e yardım et.
 qstr_Who_are_you?|Sen kimsin?
-; qstr_A_friend_of_{s3}_and|A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, lest we make count our every action to oppose it!
+qstr_A_friend_of_{s3}_and|{s3} dostu ve {s2} halkı. Acele edin! Mordor tüm kötülüklerini ortaya çıkarıyor ve onları karanlığın altında tek bir hedef için topluyor. Bu dünyada iyi olan her şey için zaman azalıyor, buna karşı durmak için yapabileceğimiz her şeyi yapmalıyız.
 qstr_What_should_I_do?|Ne yapmalıyım?
-; qstr_Find_{s3}_s_whereabo|Find {s3}'s whereabouts immediately and speak with him. Good luck!
+qstr_Find_{s3}_s_whereabo|Her neredeyse {s3}'ü en kısa sürede bul ve onunla konuş. Bol şans!
 qstr_Good_to_see_the_Shad|Gölgenin daha seni alt etmeyi başaramadığını görmek güzel {playername}.
 qstr_You_are_the_one_they|Sen Gandalf yada Mithrandir olmalısın.
 ; qstr_That_is_what_some_ca|That is what some call me. In my times I have also been called other things, but unless the Darkness is stopped, soon there may not be anyone left to call me anything at all.
 qstr_What_do_you_mean?|Ne demek istiyorsun?
 ; qstr_In_spite_of_their_va|In spite of their valiant resistance, {s3} has been overwhelmed by the forces of evil. {s3}'s people are scattered and the good {s4} is no more.
 qstr_You_bring_dismal_new|Üzücü haber getirdiniz, sihirbaz. 
-; qstr_But_I_also_bring_a_m|But I also bring a message of hope. The people of {s5} are still holding firm. Their warriors are fearless and their leaders resolute.
-; qstr_Help_them_fight_the_|Help them fight the enemy as best as you can. Never relent! But be on your guard! There are older and fouler things than Orcs in the world.
+qstr_But_I_also_bring_a_m|Aynı zamanda umudunda mesajını getirdim. {s5} insanları hala sıkı bir şekilde direniyor. Savaşçıları korkusuz, liderleri ise kararlı.
+qstr_Help_them_fight_the_|Elinden gelen en iyi şekilde savaşmalarına yardım et. Asla acıma! Teyakkuzda kal! Dünyada Orklardan daha eski ve hilekar şeyler var.
 qstr_Beware_{playername}_|Sakın ey {playername}! Karanlığın gücü çöküyor. {s3} düştü, {s4} liderinin düştüğü gibi.
 qstr_What_do_you_want_of_|Benden ne istiyorsun, yaşlı adam?
 ; qstr_Just_know_that_a_Daw|Just know that a Dawn is coming. It is inevitable. And should you still be alive to see it, consider what you shall have to say for yourself then.

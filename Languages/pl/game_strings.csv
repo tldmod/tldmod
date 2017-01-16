@@ -1441,10 +1441,10 @@ str_umbar_rumor_8|Przejdziemy przez Gondor niczym gigantyczna fala i zdobędziem
 ; str_umbar_rumor_9|Haradrim don't drink rum. Did you know that? We like some, to steady the harpoon hand.
 ; str_umbar_rumor_10|I saw some Variags of Khand fighting. I wouldn't want to be facing them in battle. It is a good thing they are on our side.
 ; str_khand_rumor_begin|A fight is a fight, no matter how bloody. But retreat is the greatest shame!
-; str_khand_rumor_2|Our swords once drawn, must have blood!
+str_khand_rumor_2|Nasze miecze wyciągnięte, musi polać się krew!
 ; str_khand_rumor_3|The ground trembles under our heavy cataphract cavalry, but our enemies tremble at the mere mention of us!
 ; str_khand_rumor_4|This time we left the Wainriders behind, our attack will catch the enemies off guard.
-; str_khand_rumor_5|We are the Variags of Khand, the fiercest warriors anywhere!
+str_khand_rumor_5|Jesteśmy Variagami z Khand, najokrutniejszymi wojownikami!
 ; str_khand_rumor_6|Rhun warriors are fierce too, but they fight on horseback, we rather maul our enemies on foot.
 ; str_khand_rumor_7|We have fought Gondorians in the past, this time we will finish them for good!
 ; str_khand_rumor_8|The West is weak and decadent. They have no warrior spirit. They will fall to our swords and axes.
@@ -1471,10 +1471,10 @@ str_evil_rumor_2|Zwalczaj kawalerię piką, piechotę strzalą a łucznika tarcz
 str_legendary_rumor_begin|Legenda głosi, iż te drzewa spotkały się by rozmawiać w Fangorn.
 ; str_legendary_rumor_amonhen|They say there is a special place on the Anduin, somewhere where the big statues stand.
 ; str_legendary_rumor_deadmarshes|It is rumoured all dead seems alive in the middle of Dead Marshes.
-; str_legendary_rumor_mirkwood|Creatures other than orcs crawl around Mirkwood.
-; str_legendary_rumor_fangorn|Fangorn is a forest best avoided. Unusual things happen there.
+str_legendary_rumor_mirkwood|Kreatury inne niż orkowie pełzają naokoło Mirkwood.
+str_legendary_rumor_fangorn|Fangorn to las, który lepiej omijać. Dzieją się tam niecodzienne rzeczy.
 str_last_rumor|Ostatnio nie słyszałem niczego interesującego.
-; str_ent_rumor_begin|Do not be hasty now...
+str_ent_rumor_begin|Nie bądź taki pochopny...
 ; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
 ; str_ent_rumor_3|The Old Entish is a lovely language, but it takes a very long time to say anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.
 str_gondor_rank_0|Poddany Gondoru
@@ -1695,7 +1695,7 @@ str_fullname_region_emyn_muil|do Emyn Muil, skalistych wzgórz nad dopływem Rze
 str_fullname_region_misty_mountains|na podnóża Gór Mglistych
 str_fullname_region_lorien|do Lothlórien, lasu Sindarskich elfów
 str_fullname_region_anduin_banks|do doliny Anduiny, między Górami Mglistymi i Mroczną Puszczą
-; str_fullname_region_n_mirkwood|the dense forests of northern Mirkwood, home of the Woodelves
+str_fullname_region_n_mirkwood|gęste lasy północnego Mirkwood, dom Leśnych Elfów
 str_fullname_region_s_mirkwood|do gęstwiny lasów południowej Mrocznej Puszczy, podobno zamieszkałych przez dziwne stworzenia
 str_fullname_region_above_mirkwook|do Północnego Rhovanionu, krainy pomiędzy Mroczną Puszczą a Szarymi Górami na Północy
 str_fullname_region_grey_mountains|na podnóża Gór Szarych, zamieszkałych przez Krasnoludy
@@ -1780,18 +1780,18 @@ str_trait_title_battle_scarred|Naznaczon{y/a}
 str_trait_desc_battle_scarred|Cierpisz od straszliwych ran, otrzymanych w trakcie wielu kampanii i mimo wszystko pozostając przy życiu. Twe blizny i ciężkie doświadczenia zwiększają odporność na kolejne rany. Podczas gdy inni twój wygląd uznają za szokujący, twoi zwolennicy utwierdzają się w bitewnym doświadczeniu. Otrzymują cotygodniową premię do morale.
 str_trait_title_fell_beast|Dzika Bestia
 str_trait_desc_fell_beast|Twa skóra poznaczona jest wieloma bliznami z niezliczonych bitew, a zło trawi cię od środka. Nawet na standardy orków, uruków oraz troli jesteś ocenian{y/a} jako dzika i niebezpieczna bestia. Którzy ci służą płaczą z zachwytu gdy stajesz w polu. Jesteś nieustraszonym wcieleniem wojny.
-; str_wound_head|a heavy blow to the head
-; str_wound_chest|some cracked ribs
-; str_wound_arm|a badly maimed arm
-; str_wound_leg|a badly maimed leg
+str_wound_head|mocne uderzenie w głowę
+str_wound_chest|popękane niektóre żebra
+str_wound_arm|mocno okaleczona ręka
+str_wound_leg|mocno okaleczona noga
 str_gondor_gift0|Świeże owoce oraz wino.
-; str_gondor_gift1|Richly Dyed Cloth
+str_gondor_gift1|Wspaniale barwione płótno
 ; str_gondor_gift2|Ancient Tomes and Family Trees
 ; str_gondor_gift3|Spices and Incense
 ; str_gondor_gift4|Auroch War Horns
 str_dwarf_gift0|Mocne Piwo i Kamienna Sól\n
 ; str_dwarf_gift1|Hardened Shovels and Axes
-; str_dwarf_gift2|Harps and Flutes
+str_dwarf_gift2|Harfy i Flety
 ; str_dwarf_gift3|Robes Embroidered With Golden Thread and Gems
 ; str_dwarf_gift4|Marvellous Jewelry
 str_rohan_gift0|Miód i Wino jabłkowe 
@@ -1808,9 +1808,9 @@ str_isengard_gift0|Wysuszone ludzkie mięso
 str_isengard_gift1|Czarne żelazne łańcuchy 
 str_isengard_gift2|Narzędzia tortur 
 ; str_isengard_gift3|Alchemist Glasswork
-; str_isengard_gift4|Saruman's Petty Rings
+str_isengard_gift4|Ulubione pierścienie Sarumana
 str_lorien_gift0|Nasiona, orzechy oraz jagody
-; str_lorien_gift1|Cold Lanterns and Strong Rope
+str_lorien_gift1|Zimne Latarnie i Mocny Sznur
 str_lorien_gift2|Lembas
 str_lorien_gift3|Srebrny pas i broszka
 str_lorien_gift4|Elficki płaszcz
