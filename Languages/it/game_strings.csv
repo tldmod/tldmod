@@ -536,7 +536,7 @@ str_npc15_payment|Oh, certo, Nobile Lord-Guerriero ! C'è solo un piccolo impedi
 str_npc16_payment|Non vi seguirò, andrò per la mia strada; ma il vostro cammino potrà accompagnare il mio per un tratto. Comunque, prima di attraversare queste terre devo prima rendere omaggio a coloro che hanno perso la vita provandoci prima di noi. Mostrate loro il vostro tributo e potremo partire. Non dobbiamo mai dimenticare i nostri antenati. Loro non hanno dimenticato noi. [costi {reg14} Influenza con {s14}]
 str_npc17_payment|Mi piacciono gli alberi, ma il mio vecchio zio a bisogno di me. [costo {reg14} di influenza con {s14}]
 str_npc1_payment_response|Non preoccuparti, organizzerò la tua partenza con lui.  [costi {reg14}/{reg15} Influenza]
-str_npc2_payment_response|Non preoccuparti, parlerò con il tuo Sergenet. [costi {reg14}/{reg15} Influenza]
+str_npc2_payment_response|Non preoccuparti, parlerò con il tuo Sergente. [costo {reg14}/{reg15} Influenza]
 str_npc3_payment_response|Spero che ne valga la pena. Mi accorderò con l'oste. [costi {reg14}/{reg15} Influenza]
 str_npc4_payment_response|E' una causa nobile, ma sono sicuro che si possa trovare un sostituto. [costi {reg14}/{reg15} Influenza]
 str_npc5_payment_response|Fidati di me, sarai più utile al mio fianco. [costi {reg14}/{reg15} Influenza]
@@ -1091,7 +1091,7 @@ str_lord_insult_upstanding|disgraziata canaglia
 str_rebellion_dilemma_default|[feudatario]
 str_rebellion_dilemma_martial|{s45} ha chiaramente subito un torto. Anche se ho prestato giuramento a {s46}, non mi lega a fornirgli supporto se ha usurpato il trono.
 str_rebellion_dilemma_quarrelsome|Hmm. {s46} non mi ha mai dato ciò che mi spetta, quindi non credo di dovergli molto. Tuttavia, magari {s45} non sarà tanto meglio, e {s46} si è almeno mostrato.
-str_rebellion_dilemma_pitiless|Hmm. {s45} dice che {reg3?she:he} è il legittimo erede al trono.  Questo è un bene -- mi ascioglie dal mio giuramento a {s46}. Ma nonostante ciò, devo comunque soppesare le mie decisioni con attenzione.
+str_rebellion_dilemma_pitiless|Hmm. {s45} dice che {reg3?lei:lui} è il legittimo erede al trono.  Questo è un bene -- mi ascioglie dal mio giuramento a {s46}. Ma nonostante ciò, devo comunque soppesare le mie decisioni con attenzione.
 str_rebellion_dilemma_cunning|Hmm. Ho fatto un giuramento di rispetto a {s46}, tuttavia i potenti non sono legati ai loro giuramenti come le nostre normali persone. Il nostro compito ci è dato dalla nostra stessa capacità di governare, di imporre l'ordine e prevenire la guerra totale.
 str_rebellion_dilemma_sadistic|Hmm. in questo vile mondo un'uomo saggio deve pensare solo a se stesso. Quindi, che ci guadagno? 
 str_rebellion_dilemma_goodnatured|Non so cosa dire. Ho giurato fedeltà a {s46} , ma se non regnasse in modo legale, allora non so il mio giuramento valga ancora.
@@ -1100,7 +1100,7 @@ str_rebellion_dilemma_2_default|[feudatario]
 str_rebellion_dilemma_2_martial|D'altro canto, {s46} ci ha guidato in guerra e in pace, e detesterei dover rinunciare alla mia alleanza.
 str_rebellion_dilemma_2_quarrelsome|Perciò dimmi, perché mai dovrei voltare le spalle al bastardo che conosco, in favore di {reg3?a woman:the bastard} che non conosco?
 str_rebellion_dilemma_2_pitiless|E' una posizione alquanto precaria nella cui trovarsi, che mi sia chiesto chi io debba rendere {reg3?ruler:king} di questa terra. Tuttavia è anche un'opportunità per me di cogliere i frutti di quella che è sempre stata la mia causa!
-str_rebellion_dilemma_2_cunning|{s46} è stato sfidato, e perciò non sarà mai in grado di governare fortemente come uno la cui la cui rivendicazione non è mai stata messa in discussione. Tuttavia se {s45} dovesse prendere il trono con la forza, {reg3?she:he} non sarà mai forte come quello che è susseguito in modo pacifico.
+str_rebellion_dilemma_2_cunning|{s46} è stato sfidato, e perciò non sarà mai in grado di governare fortemente come uno la cui la cui rivendicazione non è mai stata messa in discussione. Tuttavia se {s45} dovesse prendere il trono con la forza, {reg3?lei:lui} non sarà mai forte come quello che è susseguito in modo pacifico.
 str_rebellion_dilemma_2_sadistic|Forse se mi unissi a {s45} mentre {reg3?lei:lui} è ancora debole {reg3?lei:lui} potrebbe arricchirmi, ma forse se porto a {s46} la tua testa mi darà una maggior ricompensa.
 str_rebellion_dilemma_2_goodnatured|{s46} mi ha sempre trattato bene, anche se è vero che ha avuto un pessimo comportamento con {s45} Sono esitante a recedere la mia obbedienza a {s46}, tuttavia non penso che sia giusto sostenere un'ingiustizia.
 str_rebellion_dilemma_2_upstanding|Ritengo di dover fare quello che è meglio per il regno, in modo da evitare che sia devastato dalla guerra civile e distrutto dai suoi nemici.

@@ -5,7 +5,7 @@ ui_explanation_agility|Agilidad: Cada punto proporciona cinco puntos de armas e 
 ui_retreated_battle|%s ha huido del campo de batalla.
 ui_riding_skill_not_adequate_to_mount|(Habilidad de cabalgar no adecuada para montar)
 ui_camp|Acciones
-ui_tutorial_inventory|En The Last Days, necesitas Puntos de Recursos para conseguir equipamiento. Los Puntos de Recursos miden el apoyo de una facción para mantenerte bien surtido, y cuantos de los recursos de dicha facción te corresponden utilizar.
+ui_tutorial_inventory|En «The Last Days» necesitas Puntos de Recursos para conseguir equipamiento. Estos Puntos miden el apoyo de una facción para mantenerte bien surtido y limitan los recursos obtenibles dependiendo de tus proezas.
 ui_you_dont_have_value|No tienes: %s.
 ui_merchant_cant_afford_value|¡%s: Nos estás dando más de lo que necesitamos! Tal vez sea mejor que compres algo más (estás ofreciendo bienes valorados en %s, nosotros sólo podemos tener %s).
 ui_merchant_pay_whatever|No, no necesito para nada, quédatelo.
@@ -37,7 +37,7 @@ ui_has_deserted_the_party|ha dejado el grupo.
 ui_have_deserted_the_party|han dejado el grupo.
 ui_loading_textures|Cargando texturas... (ten paciencia)
 ui_order_hold_fire_toggle|Ordenar alto el fuego/fuego a discreción (Intercam.)
-ui_order_dismount_toggle|Ordenar desmontar/montar (Intercam.)
+ui_order_dismount_toggle|Ordenar des/montar (Intercambio)
 ui_mount_horses_e_|¡%s, montad!
 ui_hold_fire_e_|¡%s, no disparéis!
 ui_fire_at_will_e_|¡%s, disparad!

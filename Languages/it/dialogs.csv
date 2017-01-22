@@ -244,7 +244,7 @@ dlga_lord_start:lord_talk|Che cos'è?
 dlga_lord_pretalk:lord_talk|Qualcos'altro?
 dlga_lord_talk:lord_lend_companion_end|Mi piacerebbe che {s14} tornasse al mio servizio, {s65}, se non necessiti più dei suoi servigi.
 dlga_lord_lend_companion_end:lord_pretalk|Hai già troppi uomini nella tua compagnia, {playername}. Non puoi guidarne di più al momento.
-dlga_lord_lend_companion_end:lord_pretalk.1|Certamente, {playername}. {reg3?She:He} è un brillante {reg3?girl:fellow}, sei un comandante fortunato ad avere dei compagni così degni.
+dlga_lord_lend_companion_end:lord_pretalk.1|Certamente, {playername}. {reg3?Lei:Lui} è un brillante {reg3?ragazza:ragazzo}, sei un comandante fortunato ad avere dei compagni così degni.
 dlga_lord_talk:lord_message_delivered|Porto un messaggio da {s9}.
 dlga_lord_talk:lord_message_delivered_enemy|Porto un messaggio da {s9}.
 dlga_lord_talk:lord_active_mission_1|Riguardo al compito che mi avevi dato...
@@ -402,7 +402,7 @@ dlga_lord_mission_deliver_message_accepted:close_window|Lo apprezzo, {playername
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah, va bene allora. Beh, sono sicuro che troverò qualcun altro.
 dlga_lord_tell_mission:lord_mission_deliver_message.1|Devo consegnare una lettera a {s13} di {s15}, che dovrebbe attualmente essere a {s4}. Se vi state dirigendo là, potreste consegnargli la mia lettera? La lettera deve raggiungerlo entro 40 giorni.
 dlga_lord_tell_mission:lord_mission_told|C'è una questione urgente... Il mio messaggero deve fare rapporto sui nostri piani di battaglia ai comandanti in {s14}. Il suo viaggio è stato posticipato già diverse volte a causa di tutte le difficoltà sulle strade, ma questa volta deve andare. Quindi, voglio almeno assicurarmi che sia ben protetto. Mi fido molto di voi, {playername} quindi vi sarei molto grato se poteste scortarlo a {s14} e assicurarvi che arrivi sano e salvo.
-dlga_lord_tell_mission:lord_mission_told.1|Ho un amico qua, un vecchio guerriero, che sta molto male. La pestilenza ha infettato una sua vecchia ferita di battaglia, e a meno che non venga visto da un chirurgo, morirà sicuramente. Questo uomo mi è molto caro, {playername}, ma è anche testardo come un mulo e si rifiuta di avere qualcuno che dia un'occhiata a quella ferita perché non si fida dei medici di qua. Ho sentito che avete un abile chirurgo con voi. Se poteste portare il vostro chirurgo qua e dargli un'occhiata, {reg3?she:he} potrebbe essere capace di convincerlo ad acconsentire all'operazione. Vi prego, sarò profondamente in debito con voi se acconsentite a questa richiesta.
+dlga_lord_tell_mission:lord_mission_told.1|Ho un amico qua, un vecchio guerriero, che sta molto male. La pestilenza ha infettato una sua vecchia ferita di battaglia, e a meno che non venga visto da un chirurgo, morirà sicuramente. Questo uomo mi è molto caro, {playername}, ma è anche testardo come un mulo e si rifiuta di avere qualcuno che dia un'occhiata a quella ferita perché non si fida dei medici di qua. Ho sentito che avete un abile chirurgo con voi. Se poteste portare il vostro chirurgo qua e dargli un'occhiata, {reg3?lei:lui} potrebbe essere capace di convincerlo ad acconsentire all'operazione. Vi prego, sarò profondamente in debito con voi se acconsentite a questa richiesta.
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Di quanti uomini avete bisogno?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Se potete raccogliere {reg1} {s14} e portarli da me, questo sarà probabilmente sufficiente.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Certamente, {s65}. Datemi {reg1} reclute fresche e le addestrerò per diventare {s14}.
@@ -427,7 +427,7 @@ dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_r
 dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|Mi piace il tuo spirito! Va e portami uno dei nostri nemici, e brinderò al tuo nome nella mia sala quando farai ritorno! E ricompenserò il tuo impegno, naturalmente..
 dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Chiaramente non possiedi il coraggio che ritenevo avessi. Molto bene, {playername}, troverò qualcun altro.
 dlga_lord_tell_mission:lord_tell_mission_lend_companion|Non ho un incarico per te adesso, ma un componente del tuo esercito, {s3}, mostra di essere abile come {reg3?lass:fellow} e ho bisogno di qualcuno dotato di queste capacità. Potresti concedermi i suoi servigi per un periodo ?
-dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Per quanto tempo avrai bisogno di {reg3?her:him}?
+dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Per quanto tempo avrai bisogno di {reg3?lei:lui}?
 dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|Solo per qualche giorno, una settimana al massimo.
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|Allora lascerò {s3} con te per una settimana
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|Mi spiace, ma non posso restare senza {s3} per un'intera settimana.
@@ -456,7 +456,7 @@ dlga_prison_guard_players:close_window.1|No, non ora.
 dlga_start:prison_guard_talk|Si? Cosa volete?
 dlga_prison_guard_talk:prison_guard_ask_prisoners|Chi é imprigionato qui?
 dlga_prison_guard_talk:prison_guard_visit_prison|Vorrei parlare con il prigioniero.
-dlga_prison_guard_ask_prisoners:prison_guard_talk|Attualmente, {s51} {reg1?are:is} in custodia presso questa prigione.
+dlga_prison_guard_ask_prisoners:prison_guard_talk|Attualmente, {s51} {reg1?sono:è} in custodia presso questa prigione.
 dlga_prison_guard_visit_prison:close_window|Ma certo, Comandante. Entri.
 dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|Dovete ottenere il permesso dal lord per parlare ai prigionieri.
 dlga_prison_guard_visit_prison_2:close_window|Bene allora. Ci proverò.
@@ -623,8 +623,8 @@ dlga_trainer_begin_training:close_window|Molto bene, ecco qui. Quando avrai fini
 dlga_start:close_window.20|Ne ho abbastanza di te,  vile pezzente.
 dlga_start:mayor_begin|Buon giorno, mio signore.
 dlga_start:mayor_talk|Ciao straniero, sembri essere nuovo a {s9}. Io sono il maestro della gilda della città.
-dlga_start:mayor_begin.1|Buon giorno, {nomedelgiocatore}.
-dlga_mayor_begin:lord_deal_with_night_bandits_completed|Ottimo lavoro, {nomedelgiocatore}, ti sei sbarazzato velocemente di quei cani senza legge!^^[guadagnati {reg14} Punti Risorsa di {s14}]
+dlga_start:mayor_begin.1|Buon giorno, {playername}.
+dlga_mayor_begin:lord_deal_with_night_bandits_completed|Ottimo lavoro, {playername}, ti sei sbarazzato velocemente di quei cani senza legge!^^[guadagnati {reg14} Punti Risorsa di {s14}]
 dlga_lord_deal_with_night_bandits_completed:close_window|Se la sono cercata.
 dlga_mayor_talk:mayor_deliver_iron|Ti ho portato metallo di migliore qualità, {reg9} unità di {s4}, quando lo hai richiesto {s3}.
 dlga_mayor_talk:mayor_deliver_iron.1|Ecco qui la tua fornitura di metallo, {reg9} unità di {s4}.
@@ -638,7 +638,7 @@ dlga_mayor_begin:mayor_looters_quest_response|Ah, {playername}. Hai qualche prog
 dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|Ho ucciso alcuni orchi tribali.
 dlga_mayor_looters_quest_response:close_window|Non ancora, signore. Addio.
 dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, i miei esploratori hanno visto tutto. Questo dovrebbe tenere quegli orchi tribali a bada!^^[guadagnati {reg14}x{reg15} Punti Risorsa di {s14}]
-dlga_mayor_looters_quest_destroyed_2:close_window|E questa non è l'unica buona notizia! Grazie a te, gli orchi tribali hanno smesso di essere una minaccia. Non abbiamo avuto notizia di un singolo attacco da un po di tempo ormai. Se ne sono rimasti alcuni, o sono scappati o sono andati a nascondersi in profondità. E' un'ottima notizia per la sicurezza del posto. Credo che questo concluda i tuoi compiti, {nomedelgiocatore}. Grazie e addio.
+dlga_mayor_looters_quest_destroyed_2:close_window|E questa non è l'unica buona notizia! Grazie a te, gli orchi tribali hanno smesso di essere una minaccia. Non abbiamo avuto notizia di un singolo attacco da un po di tempo ormai. Se ne sono rimasti alcuni, o sono scappati o sono andati a nascondersi in profondità. E' un'ottima notizia per la sicurezza del posto. Credo che questo concluda i tuoi compiti, {playername}. Grazie e addio.
 dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Hai bisogno di qualcos'altro?
 dlga_mayor_begin:close_window|E' bello rivederti {playername}. Ho sentito che sei riuscito a consegnare quella gente. Dirò al tuo comandante quanto ti sei dimostrato affidabile.^^[guadagnati {reg14} Punti Risorsa di {s14}]
 dlga_mayor_begin:move_cattle_herd_failed|Ho sentito che hai perso quella gente sulla via di {s9}. Ho passato un brutto momento a spiegare il tuo fallimento al comandante qui. Hai qualcosa da dire?

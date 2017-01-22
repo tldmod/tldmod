@@ -327,9 +327,9 @@ qstr_no_holdings|nessun possedimento
 qstr_{s57}_and_{s58}|{s57} e {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Lei:Lui}
-qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} serve {s55} of {s56}.^}}{reg9?{reg3?She:He} è {reg3?lady:lord} di {s58}.:}{s59}{reg10?^{reg3?She:He} caduto in battaglia!:}
-qstr_The_last_time_you_sa|L'ultima volta che l'ho visto {reg1?her:him}, {s1}
-qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?her:him}, {s1}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} serve {s55} di {s56}.^}}{reg9?{reg3?Lei:Lui} è {reg3?lady:lord} di {s58}.:}{s59}{reg10?^{reg3?Lei:Lui} è caduto in battaglia!:}
+qstr_The_last_time_you_sa|L'ultima volta che l'ho vist{reg1?a lei:o lui}, {s1}
+qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?lei:lui}, {s1}
 qstr_The_{s50}|Il {s50}
 qstr_{s50}_belongs_to_{s1|{s50} appartiene a {s1} of {s2}.^
 qstr_Current_garrison_con|La guarnigione attuale consiste in {reg5} uomini.^Possiede scorte di cibo per {reg6} giorni.
@@ -559,7 +559,7 @@ qstr_You_wish_old_man_my_|Te lo sogni, vecchio, la mia vista in terza persona è
 qstr_You_should_really_se|Dovresti vedere le foto di Steward Denetor su facebook, è fantastico!
 qstr_Press_Space_to_conti|Premi spazio per continuare
 qstr_{s24}__{reg13}_|{s24} ({reg13})
-qstr_Influence:^_{reg11}_|Influenza:^ {reg11} (with {s16})
+qstr_Influence:^_{reg11}_|Influenza:^ {reg11} (con {s16})
 qstr_Resource_Points:^_{r|Punti Risorsa:^ {reg12} (in {s16})
 qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
@@ -787,7 +787,7 @@ qstr_Um..._by_enchanting_|Um... dal ferro incantato?
 qstr_Magnets_are_made_of_|I magneti sono fatti di metallo, che viene estratto dal terreno . Sono magnetici perché il metallo contiene ancora pezzi di gravità all'interno di esso.
 qstr_i_wont_a_bonerlrord_|Io non...un comdnte...al prto...!!11!
 qstr_I_m_sure_the_TLD_tea|Sono sicuro che la squadra di TLD arriverà quando può.
-qstr_Install_TLD_in_your_|Installare TLD nella cartella Moduli Bannerlord, aggiungere la riga 'compatible_with_wfas = 1' a module.ini, e si può giocare sia su Warband e Warrider 0.202!\n
+qstr_Install_TLD_in_your_|Installa TLD nella cartella Modules di Warband, aggiungere la riga 'compatible_with_wfas = 1' in module.ini, e puoi giocare sia su Warband che Warrider 0.202!
 qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
 qstr_Well_there_s_a_lot_o|Beh, ci sono un sacco di nuove grafiche e roba, penso che richiede tempo.
 qstr_It_has_been_recently|Di recente è stato rilasciato, se vi siete persi il link, è possibile scaricarlo a lemonparty.org.
@@ -931,7 +931,7 @@ qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di 
 qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
 qstr_We_have_reports_of_s|Abbiamo notizie di attività nemica vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficenza al nemico per vederne i movimenti. Voglio che tu assembli una squadra di esploratori, ti avvicinati abbastanza a {s13}, e mandi in azione gli scout.
 qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino !
-qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una squadra di esplorazione vicino a {s13}.^Ottieni 7 soldati di {s15}, di cui almeno 1 é {s14}, avvicinati a {s13} e parla a {s14} per inviare la squadra.
+qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una pattuglia di esplorazione vicino a {s13}.^Ottieni 7 soldati di {s15}, di cui almeno 1 é {s14}, avvicinati a {s13} e parla a {s14} per inviare la pattuglia.
 qstr_We_need_to_take_the_|Doppiamo portare la guerra al nemico, {playername}. In questo momento, possiamo farlo colpendo le loro pattuglie e messaggieri. Voglio che tu elimini {reg1} {s13} , questo ci aiuterà a riprenderci.
 qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. Le loro pattuglie e carovane stanno crescendo troppo coraggiosamente per i miei gusti. Voglio che tu elimini {reg1} {s13}, così incominceranno a capire cosa gli aspetta.
 qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di occuparti delle compagnie di {reg1} {s13}.

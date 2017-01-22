@@ -83,8 +83,8 @@ ui_m_ultra_high|Ultra alto
 ui_force_single_threading|Forzar Single Threading
 ui_not_enough_memory|Parece que tienes %d MB de espacio en tu memoria virtual. Mount&Blade requiere al menos 700 MB de memoria para poder funcionar sin problema. Si Mount&Blade salta al escritorio continuamente mientras juegas, por favor, cierra algunos otros programas antes de comenzar a jugar Mount&Blade o incrementa tu memoria virtual en Panel de Control -> Menú sistema.
 ui_install|Instalar Mount&Blade
-DirectXText|"Mount&Blade requiere DiractX 9.0c o suparior para funcionar. Este ordenador no cumple dicho requerimiento. Para solucionar el problema debes descargar e instalar la última versión de DirectX desde la web de Microsoft. ¿Quieres visitar la web de descarga de DirectX ahora?"
-NoMountAndBladeText|"Mount&Blade no ha sido instalado en este ordenador. Por favor, descarga el instalador completo desde www.taleworlds.com y utilízalo para instalar el juego."
+DirectXText|Mount&Blade requiere DiractX 9.0c o suparior para funcionar. Este ordenador no cumple dicho requerimiento. Para solucionar el problema debes descargar e instalar la última versión de DirectX desde la web de Microsoft. ¿Quieres visitar la web de descarga de DirectX ahora?"
+NoMountAndBladeText|Mount&Blade no ha sido instalado en este ordenador. Por favor, descarga el instalador completo desde www.taleworlds.com y utilízalo para instalar el juego."
 ui_SavegamesText|¿Quieres conservar tus partidas guardadas?
 ui_trialmode_online|Mount&&Blade está ejecutándose en modo de prueba. En este modo, puedes jugar libremente hasta que tu personaje llegue a nivel 7. Para continuar, por favor, compra una licencia en TaleWorlds.com. Te llevará solamente un minuto comprarla online y desbloquear el modo completo.
 ui_launch_activate|Introducir el número de serie

@@ -423,37 +423,37 @@ str_npc2_backstory_response_1|Haklısın, Bir kaç gönüllü arıyorum.
 ; str_npc5_backstory_response_1|It may be presumptuous of me to ask, but my company could use your skill in the coming battles.
 ; str_npc6_backstory_response_1|We travel the world, but to defend all that is fair, we give battle to the enemy.
 ; str_npc7_backstory_response_1|Indeed, a dwarven warrior would be welcome in my company.
-; str_npc8_backstory_response_1|We can use a healer and a herbalist.
+str_npc8_backstory_response_1|Sağlıkçıyı ve şifacıyı kullanabiliriz.
 ; str_npc9_backstory_response_1|I reckon we could put a berserker to a good use.
 str_npc10_backstory_response_1|Yapıcaksın.
-; str_npc11_backstory_response_1|How 'bout loping off with me?
-; str_npc12_backstory_response_1|How 'bout slippin' off with me.
+str_npc11_backstory_response_1|Nasıl gidiyor benimle?
+str_npc12_backstory_response_1|Nasıl benimle dalga geçersin.
 str_npc13_backstory_response_1|Beni takip etmeye ne dersin ?
 str_npc14_backstory_response_1|Bana katılmaya ne dersin ?
 str_npc15_backstory_response_1|Aha ... Bir şifacı , ha ? Ve bu işte iyiyim , diyorsun? Senin gibi birini kullanabilirim.
 str_npc16_backstory_response_1|Burada Ne Yapıyorsun?
-; str_npc17_backstory_response_1|Well, one can always learn more about trees. We'd be glad to have you along.
+str_npc17_backstory_response_1|Peki, her zaman ağaçlar hakkında daha fazla bilgi edinebilirsiniz. Sizinle birlikte yaşadığımız için mutluyuz.
 str_npc1_backstory_response_2|Bunu duyduğuma üzüldüm. Umarım inancın cesaretini güçlendirir.
 str_npc2_backstory_response_2|Hayır, üzgünüm. Ben tecrübeli savaşçılara bakıyorum.
 str_npc3_backstory_response_2|Hayır, üzgünüm. Ben Daha Güvenilir Birisini Aramıştım. 
 str_npc4_backstory_response_2|Üzgünüm , leydim. Ama yapabileceğim hiçbir şey yok.
 str_npc5_backstory_response_2|Lothlórien daha ez tehlikede olduğu zaman döneceğim.
-; str_npc6_backstory_response_2|No, sorry. We cannot take hangers-on.
-; str_npc7_backstory_response_2|No, sorry. We do well on our own.
+str_npc6_backstory_response_2|Hayır, üzgünüm. Askı takamayız.
+str_npc7_backstory_response_2|Hayır, üzgünüm. Kendi başımıza iyiyiz.
 str_npc8_backstory_response_2|Hayır, üzgünüm. Biz şifacıları sadece ihtiyaç duyduğumuzda ziyaret ederiz.
 str_npc9_backstory_response_2|Hah. Ben hainlere güvenmem.
 str_npc10_backstory_response_2|Sana ihtiyacım yok, köle.
-; str_npc11_backstory_response_2|I don't want to hear your skulking.
-; str_npc12_backstory_response_2|The Big Bosses know best. You better follow orders.
-; str_npc13_backstory_response_2|That is your fate to suffer.
+str_npc11_backstory_response_2|Seni duymak istemiyorum korkak.
+str_npc12_backstory_response_2|Büyük Patronlar en iyisini bilir. Sen en iyisi emirleri takip et.
+str_npc13_backstory_response_2|Bu acı çekmek için olan kaderin.
 str_npc14_backstory_response_2|Ben bunlardan yeterince aldım.
 str_npc15_backstory_response_2|Hayır! Bizim savaşçılara ihtiyacımız var, kundakçılara değil.
 str_npc16_backstory_response_2|Ben bunlardan yeterince aldım.
-; str_npc17_backstory_response_2|No, I'm sorry. We're off to war, not to a botanical journey.
+str_npc17_backstory_response_2|Hayır, üzgünüm. Savaşa çıkıyoruz, botanik yolculuğa değil.
 ; str_npc1_signup|I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage.
-; str_npc2_signup|Oh, a happy day! I would be glad to join your company.
+str_npc2_signup|Ah, ne güzel bir gün! Senin birliğine katılmaktan memnun olurum.
 ; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
-; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
+str_npc4_signup|Bu hoş bir teklif, ve beni birliğine davet edebilirsin, komutanım.
 ; str_npc5_signup|I see. I admit I have heard of you and your exploits.
 ; str_npc6_signup|I dislike violence and weapons of war, but I know how to defend myself in a hurry.
 ; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.

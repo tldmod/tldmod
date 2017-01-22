@@ -279,10 +279,10 @@ dlga_lord_give_troops_check_1:lord_pretalk|所以你改變主意了..^我知道�
 ; dlga_send_gift_1:lord_pretalk.1|Unfortunately, you cannot afford to send a gift right now {playername}.^^[not enough Resource Points]
 ; dlga_send_gift_1:send_gift_2|Very well. To whom would you like to deliver a gift?
 ; dlga_send_gift_1:send_gift_2.1|Very Well. Who do you want to give a bribe to?
-; dlga_send_gift_2:lord_pretalk|Nevermind.
+dlga_send_gift_2:lord_pretalk|别放心上。
 ; dlga_send_gift_3:send_gift_4|Which gift would you like to give to them?
 ; dlga_send_gift_3:send_gift_4.1|What bribe do you want to give them?
-; dlga_send_gift_4:lord_pretalk|Nevermind.
+dlga_send_gift_4:lord_pretalk|别放心上。
 ; dlga_send_gift_5:lord_pretalk|All right {playername}. Good Luck.
 ; dlga_lord_talk:lord_give_order_ask|I have a new task for you.
 dlga_lord_give_order_ask:lord_give_order|什麼?
@@ -557,8 +557,8 @@ dlga_defeat_hero_answer:defeat_hero_answer_1|現在你是我的奴隸。
 ; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now!
 ; dlga_start:runaway_serf_talk_again_return|We are on our way back to {s5} master.
 ; dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Make haste now. The sooner you return the better.
-; dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|Good. Keep going.
-; dlga_runaway_serf_talk_again_return_2:close_window|Yes master. As you wish.
+dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|好的，保持前进。
+dlga_runaway_serf_talk_again_return_2:close_window|是的主人，如你所愿。
 ; dlga_mayor_talk:mayor_deliver_wine|I was told to deliver you {reg9} units of {s4}.
 ; dlga_mayor_deliver_wine:mayor_pretalk|At last! Our stocks were almost depleted. I had arranged for the delivery of the {s4} in advance. And give {s9} my regards.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_mayor_talk:mayor_deliver_wine_incomplete|I was on a mission to deliver you {reg9} units of {s4}, but I lost some of the cargo to the enemy.
@@ -569,12 +569,12 @@ dlga_mercenary_after_recruited:mercenary_after_recruited_2|做好準備，我們
 dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|別着急，我們會在小鎮里呆一段時間
 dlga_mercenary_after_recruited_2:close_window|好的，指揮官。我們會準備好如果你告訴我們要出發
 dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|好吧，我會雇傭你，給你 {reg5} 第納爾
-; dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|All right. But I can only hire {reg6} of you. Here is {reg5} denars.
-; dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|That sounds good. But I can't afford to hire any more men right now.
+dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|不错，但是我只能雇佣你们中的{reg6}个，这是 {reg5} 第纳尔。
+dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|听上去不错，但是我现在不能再雇用更多的人了。
 ; dlga_tavern_mercenary_cant_lead:close_window|That's a pity. Well, {reg3?we will:I will} be lingering around here for a while, if you need to hire anyone.
-; dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|That sounds good. But I can't lead any more men right now.
-; dlga_mercenary_tavern_talk:close_window|Sorry. I don't need any other men right now.
-; dlga_start:trainer_pretalk|You have survived up to Gauntlet wave {reg2}. {s4}
+dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|听上去不错，但是我现在不能再带领更多的人了。
+dlga_mercenary_tavern_talk:close_window|抱歉。我现在不需要任何人了。
+dlga_start:trainer_pretalk|你在一波箭雨中活下来了 {reg2}。{s4}
 dlga_start:trainer_pretalk.1|非常好，你擊倒了所有的對手
 dlga_start:trainer_talk|美好的一天，你準備好訓練了嗎？
 dlga_trainer_pretalk:trainer_talk|你準備好做一些訓練了嗎？
@@ -592,16 +592,16 @@ dlga_trainer_talk_combat:trainer_pretalk|我想我瞭解了我需要的理論。
 ; dlga_trainer_explain_defense_3:trainer_explain_defense_4|What if I don't have shield?
 ; dlga_trainer_explain_defense_4:trainer_combat_pretalk|Then you will have to use your weapon to block your opponent. This is a bit more difficult than defending with a shield. Defending with a weapon, you can block against only ONE attack direction. That is, you block against either overhead swings, side swings or thrusts. Therefore you must watch your opponent carefully and start to block AFTER he starts his attack. In this way you will be able to block against the direction of his current attack. If you start to block BEFORE he makes his move, he may just attack in another direction than the one you are blocking against and score a hit.
 ; dlga_trainer_explain_attack:trainer_explain_attack_2|Good question. Attacking is the best defence, they say. A tactic many fighters find useful is taking an offensive stance and readying your weapon for attack, waiting for the right moment for swinging it. [You can ready your weapon for attack by pressing and holding down the left mouse button.]
-; dlga_trainer_explain_attack_2:trainer_explain_attack_3|That sounds useful.
+dlga_trainer_explain_attack_2:trainer_explain_attack_3|听上去挺有用。
 ; dlga_trainer_explain_attack_3:trainer_explain_attack_4|It is a good tactic, but remember that, your opponent may see that and take a defensive stance against the direction you are swinging your weapon. If that happens, you must break your attack and quickly attack from another direction [You may cancel your current attack by quickly tapping the right mouse button].
 ; dlga_trainer_explain_attack_4:trainer_explain_attack_5|If my opponent is defending against the direction I am attacking from, I will break and use another direction.
 ; dlga_trainer_explain_attack_5:trainer_combat_pretalk|Yes, selecting the direction you swing your weapon is a crucial skill. There are four main directions you may use: right swing, left swing, overhead swing and thrust. You must use each one wisely. [to control your swing direction with default controls, move your mouse in the direction you want to swing from as you press the left mouse button].
 ; dlga_trainer_explain_horseback:trainer_combat_pretalk|Very good question. A horse may be a warrior's most powerful weapon in combat. It gives you speed, height, power and initiative. A lot of deadly weapons will become even deadlier on horseback. However you must pay particular attention to horse-mounted enemies couching their lances, as they may take down any opponent in one hit. [To use the couched lance yourself, wield a lance or similar weapon, and speed up your horse without pressing attack or defense buttons. after you reach a speed, you'll lower your lance. Then try to target your enemies by maneuvering your horse.]
 ; dlga_trainer_choose_mode:trainer_choose_mode_player|We have several training modes to improve our soldiers' skills. Single combat will pit you against one to four opponents, in team combat your team of four will face four, eight or twelve combatants, and, finally, Gauntlet is the ultimate challenge for any warrior - you'll face waves of increasing number of opponents all by yourself. Mass melee is a simple brawl.^Which one do you prefer?
-; dlga_trainer_choose_mode_player:trainer_choose_opponents|Single combat.
-; dlga_trainer_choose_mode_player:trainer_choose_opponents.1|Team combat.
-; dlga_trainer_choose_mode_player:trainer_choose_weapon|Gauntlet.
-; dlga_trainer_choose_mode_player:trainer_choose_weapon.1|Mass melee.
+dlga_trainer_choose_mode_player:trainer_choose_opponents|单人战斗。
+dlga_trainer_choose_mode_player:trainer_choose_opponents.1|团队战斗。
+dlga_trainer_choose_mode_player:trainer_choose_weapon|射击。
+dlga_trainer_choose_mode_player:trainer_choose_weapon.1|近战为主。
 ; dlga_trainer_choose_mode_player:trainer_pretalk|None of that, I've changed my mind.
 ; dlga_trainer_choose_opponents:trainer_choose_opponents_player|Now choose the number of opponents.
 ; dlga_trainer_choose_opponents_player:trainer_choose_weapon|One.
@@ -669,7 +669,7 @@ dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|如果我不能完�
 ; dlga_merchant_quest_stall:mayor_pretalk|Well, I'll see to find someone else. But tell me if you change your mind.
 ; dlga_merchant_quest_requested:merchant_quest_brief|Well, you look able enough. I think I might have something you could do.
 ; dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near the {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion. I need somebody to teach those orcs a lesson. Sound like your kind of work?
-; dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Aye, I'll do it.
+dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|嗯，我会做的。
 ; dlga_merchant_quest_looters_choice:merchant_quest_stall|I'm afraid you have to find someone else for that.
 ; dlga_merchant_quest_looters_brief:close_window|Excellent! You'll find the tribal orcs roaming around the countryside, probably looking to raid more farms. Kill the tribal orcs, and rid us of their presence. I'll pass a word to our supply chief, and you will get rewarded for every band of tribal orcs you destroy, until all the orcs are dealt with.
 ; dlga_merchant_quest_requested:merchant_quest_brief.1|Thanks for offering to help. Actually I was looking for someone to deliver some {s4}. Perhaps you can do that...
