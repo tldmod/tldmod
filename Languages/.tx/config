@@ -2,97 +2,97 @@
 host = https://www.transifex.com
 
 [tld.dialogs]
-file_filter = <lang>\dialogs.csv
-source_file = _base\dialogs.csv
+file_filter = <lang>/dialogs.csv
+source_file = _base/dialogs.csv
 source_lang = en
 type = INI
 
 [tld.factions]
-file_filter = <lang>\factions.csv
-source_file = _base\factions.csv
+file_filter = <lang>/factions.csv
+source_file = _base/factions.csv
 source_lang = en
 type = INI
 
 [tld.game_menus]
-file_filter = <lang>\game_menus.csv
-source_file = _base\game_menus.csv
+file_filter = <lang>/game_menus.csv
+source_file = _base/game_menus.csv
 source_lang = en
 type = INI
 
 [tld.game_strings]
-file_filter = <lang>\game_strings.csv
-source_file = _base\game_strings.csv
+file_filter = <lang>/game_strings.csv
+source_file = _base/game_strings.csv
 source_lang = en
 type = INI
 
 [tld.info_pages]
-file_filter = <lang>\info_pages.csv
-source_file = _base\info_pages.csv
+file_filter = <lang>/info_pages.csv
+source_file = _base/info_pages.csv
 source_lang = en
 type = INI
 
 [tld.hints]
-file_filter = <lang>\hints.csv
-source_file = en\hints.csv
+file_filter = <lang>/hints.csv
+source_file = en/hints.csv
 source_lang = en
 type = INI
 
 [tld.item_kinds]
-file_filter = <lang>\item_kinds.csv
-source_file = _base\item_kinds.csv
+file_filter = <lang>/item_kinds.csv
+source_file = _base/item_kinds.csv
 source_lang = en
 type = INI
 
 [tld.item_modifiers]
-file_filter = <lang>\item_modifiers.csv
-source_file = _base\item_modifiers.csv
+file_filter = <lang>/item_modifiers.csv
+source_file = _base/item_modifiers.csv
 source_lang = en
 type = INI
 
 [tld.parties]
-file_filter = <lang>\parties.csv
-source_file = _base\parties.csv
+file_filter = <lang>/parties.csv
+source_file = _base/parties.csv
 source_lang = en
 type = INI
 
 [tld.party_templates]
-file_filter = <lang>\party_templates.csv
-source_file = _base\party_templates.csv
+file_filter = <lang>/party_templates.csv
+source_file = _base/party_templates.csv
 source_lang = en
 type = INI
 
 [tld.quests]
-file_filter = <lang>\quests.csv
-source_file = _base\quests.csv
+file_filter = <lang>/quests.csv
+source_file = _base/quests.csv
 source_lang = en
 type = INI
 
 [tld.quick_strings]
-file_filter = <lang>\quick_strings.csv
-source_file = _base\quick_strings.csv
+file_filter = <lang>/quick_strings.csv
+source_file = _base/quick_strings.csv
 source_lang = en
 type = INI
 
 [tld.skills]
-file_filter = <lang>\skills.csv
-source_file = _base\skills.csv
+file_filter = <lang>/skills.csv
+source_file = _base/skills.csv
 source_lang = en
 type = INI
 
 [tld.skins]
-file_filter = <lang>\skins.csv
-source_file = _base\skins.csv
+file_filter = <lang>/skins.csv
+source_file = _base/skins.csv
 source_lang = en
 type = INI
 
 [tld.troops]
-file_filter = <lang>\troops.csv
-source_file = _base\troops.csv
+file_filter = <lang>/troops.csv
+source_file = _base/troops.csv
 source_lang = en
 type = INI
 
 [tld.ui]
-file_filter = <lang>\ui.csv
-source_file = _base\ui.csv
+file_filter = <lang>/ui.csv
+source_file = _base/ui.csv
 source_lang = en
 type = INI
