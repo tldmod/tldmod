@@ -497,6 +497,6 @@ meshes+=[
   ("draw_lumberjack_orcs",   0, "draw_lumberjack_orcs",   0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_mound_kneel",       0, "draw_mound_kneel",       0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-  ("draw_ring_hunters_army",       0, "draw_ring_hunters_army",       0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("draw_ring_hunters_lair",       0, "draw_ring_hunters_lair",       0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_ring_hunters_army", 0, "draw_ring_hunters_army", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_ring_hunters_lair", 0, "draw_ring_hunters_lair", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

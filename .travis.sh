@@ -5,12 +5,14 @@ _fold_final_() { echo -en "travis_fold:end:script.$fold_count\\r"; }
 _fold_start_ '[Turning original shallow clone into a full one and installing dependencies]'
     sudo apt-get install p7zip tree git
     git fetch --unshallow
+
 _fold_final_
 
 echo HI THERE! && SVNREV=$(git rev-list --count HEAD)
 
 _fold_start_ '[Initial TLD tree view]'
     tree -h .
+
 _fold_final_
 
 cd ModuleSystem
@@ -27,7 +29,6 @@ _fold_start_ "[Compiling retail revision $SVNREV]"
     ./build_module.sh
     ./build_module_wb.sh
 
-    echo -en 'travis_fold:end:script.2\\r'
 _fold_final_
 
 cd ..
@@ -100,6 +101,7 @@ PS: For more info and official support/updates take a look to <https://tldmod.gi
 
     cp notice "THIS IS AN AUTOMATED RELEASE OF TLD FOR M&B 1.011, REVISION $SVNREV"
     cp notice "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
+
 _fold_final_
 
 _fold_start_ '[Compressing finished TLD packages with 7-Zip]'
@@ -109,10 +111,12 @@ _fold_start_ '[Compressing finished TLD packages with 7-Zip]'
     rm -rf TLD && mv TLD_WB TLD
 
     7zr a -mx9 -r -y $bbfilewb TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
+
 _fold_final_
 
 _fold_start_ '[Final tree view]'
     ls -lash
+
 _fold_final_
 
 _fold_start_ '[Uploading finished TLD packages]'
@@ -120,4 +124,5 @@ _fold_start_ '[Uploading finished TLD packages]'
 
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"
     sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb"
+
 _fold_final_

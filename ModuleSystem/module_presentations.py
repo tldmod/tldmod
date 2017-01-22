@@ -2946,18 +2946,14 @@ if wb_compile_switch==1:
         (overlay_set_position, "$g_presentation_obj_1", pos1),
         # factions
         (store_sub, ":num_factions", npc_kingdoms_end, npc_kingdoms_begin),
-        (store_add, ":num_pages", ":num_factions", 3),
         
         ## page names, from bottom to top
-        (overlay_add_item, "$g_presentation_obj_1", "@<N/A>"),
-        (overlay_add_item, "$g_presentation_obj_1", "@<N/A>"),
-        (overlay_add_item, "$g_presentation_obj_1", "@<N/A>"),
         (try_for_range_backwards, ":page_no", 0, ":num_factions"),
           (store_add, ":faction_no", ":page_no", npc_kingdoms_begin),
           (str_store_faction_name, s0, ":faction_no"),
           (overlay_add_item, "$g_presentation_obj_1", s0),
         (try_end),
-        (store_sub, ":presentation_obj_val", ":num_pages", "$g_selected_page"),
+        (store_sub, ":presentation_obj_val", ":num_factions", "$g_selected_page"),
         (val_sub, ":presentation_obj_val", 1),
         (overlay_set_val, "$g_presentation_obj_1", ":presentation_obj_val"),
         
@@ -3308,7 +3304,6 @@ if wb_compile_switch==1:
         (try_begin),
           (eq, ":object", "$g_presentation_obj_1"),
           (store_sub, ":num_pages", npc_kingdoms_end, npc_kingdoms_begin),
-          (val_add, ":num_pages", 3),
           (store_sub, "$g_selected_page", ":num_pages", ":value"),
           (val_sub, "$g_selected_page", 1),
           (assign, "$g_selected_troop", 0), 
