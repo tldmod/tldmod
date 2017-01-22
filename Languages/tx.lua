@@ -33,7 +33,7 @@ function load(fi)
       --Fix the stubborn /\\ to /\
       if l:find([[/\\]]) ~= nil then x[#x]=(x[#x]):gsub([[/\\]],[[/\]]) end
       --Fix the occasional |" to |
-      x[#x]=(x[#x]):gsub([[|"]],[[|]])
+      --x[#x]=(x[#x]):gsub([[|"]],[[|]])
 
   end
   f:close(); f = io.open(fi,'w')
