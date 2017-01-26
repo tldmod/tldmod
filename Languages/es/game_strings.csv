@@ -583,12 +583,12 @@ str_npc4_2ary_morality_speech|Disculpad señor, pero las mujeres de mi linaje pr
 
 
 
-str_npc15_2ary_morality_speech|¡Ji-Ji-Ji! ¡Eres un Amo astuto! ¡Coges el oro, y asientes, y dices «sí señor» pero ya lo tenías planeado desde hace tiempo! ¡Ji- Ji! Sólo que, tenemos que ir con cuidado, para que el Grande no se de cuenta de que lo estás engañando...
+str_npc15_2ary_morality_speech|¡Ji Ji Ji! ¡Eres un Amo astuto! ¡Coges el oro, y asientes, y dices «sí Amo» pero ya lo tenías planeado desde hace tiempo! ¡Ji Ji! Sólo que, tenemos que ir con cuidado, para que el Grandote no se de cuenta de que lo estás engañando...
 
 
 str_npc1_personalityclash_speech|¿Había mencionado que odio a {s11}?
 str_npc2_personalityclash_speech|¿Había mencionado que odio a {s11}?
-str_npc3_personalityclash_speech|Señor, ¿cómo es que {s11} forma parte de nuestra compañía? Reconozco que es un soldado ágil a pie, pero pienso que habla demasiado sobre emboscadas - algo acorde con la naturaleza de su gente.
+str_npc3_personalityclash_speech|Señor, ¿cómo es que {s11} forma parte de nuestra compañía? Reconozco que es un soldado ágil a pie, pero creo que habla demasiado sobre emboscadas, algo acorde con la naturaleza de su gente.
 str_npc4_personalityclash_speech|¿Había mencionado que odio a {s11}?
 str_npc5_personalityclash_speech|¿Había mencionado que odio a {s11}?
 str_npc6_personalityclash_speech|{playername}, acabo de ver a {s11} pisar de forma descarada un nido de tiernos pajaritos. Su torpeza ha destrozado las vidas de unas criaturas inocentes.
@@ -626,7 +626,7 @@ str_npc3_personalityclash2_speech|¿Había mencionado que odio a {s11}?
 str_npc4_personalityclash2_speech|¿Había mencionado que odio a {s11}?
 str_npc5_personalityclash2_speech|¿Había mencionado que odio a {s11}?
 str_npc6_personalityclash2_speech|¿Había mencionado que odio a {s11}?
-str_npc7_personalityclash2_speech|Una buena pieza de chatarra, ¿eh capitán? Aunque ligeramente dañada por la conducta de esa mujer elfo {s11}.
+str_npc7_personalityclash2_speech|Una buena pieza de chatarra, ¿eh capitán? Aunque ligeramente dañada por la conducta de esa elfa, {s11}.
 str_npc8_personalityclash2_speech|¿Había mencionado que odio a {s11}?
 str_npc9_personalityclash2_speech|¿Había mencionado que odio a {s11}?
 str_npc10_personalityclash2_speech|¿Había mencionado que odio a {s11}?
@@ -661,7 +661,7 @@ str_npc4_personalitymatch_speech|Una batalla llena de grandes hazañas, señor, 
 str_npc5_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
 str_npc6_personalitymatch_speech|{playername}, a pesar de que odio las guerras, no he podido dejar de admirar a mi señor {s11} cabalgando en todo su esplendor y abalanzándose sobre el enemigo como un halcón.
 str_npc7_personalitymatch_speech|¡Una sangrienta victoria, como a mí me gusta! Recibí, sin embargo, una herida que {s11} tuvo la amabilidad de vendar de inmediato.
-str_npc8_personalitymatch_speech|Otra gran victoria para ti, señor. Admiro tu habilidad para salvar las vidas de nuestros hombres. Guerreros como {s11} parecen muy útiles para tus planes de batalla.
+str_npc8_personalitymatch_speech|Otra gran victoria para ti, mi señor. Admiro tu habilidad para salvar las vidas de nuestros hombres. Guerreros como {s11} parecen muy útiles para tus planes de batalla.
 str_npc9_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
 str_npc10_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
 str_npc11_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
@@ -672,8 +672,8 @@ str_npc15_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
 str_npc16_personalitymatch_speech|¿Había dicho que me cae bien {s11}?
 str_npc17_personalitymatch_speech|Umm, señor. Creo que {s11} podría desenvolverse bien en el bosque. Sabe diferenciar un fresno de un sauce.
 str_npc1_personalitymatch_speech_b|Encuentro la compañía de {s11} muy agradable y su artesanía con la madera es de las pocas muestras de habilidad Sindarin que quedan en la Tierra Media. Sabes, mi padre me llamó como el legendario capitán de los elfos Sindarin que sirvió al Rey Thingol de Doriath y siempre he sentido una conexión especial con esa raza.
-str_npc2_personalitymatch_speech_b|Mis paisanos siempre me habían contado historias sobre los montaraces de Ithilien y ahora veo que todas son ciertas. Si todos son como {s11}, pienso que Gondor puede sentirse seguro.
-str_npc3_personalitymatch_speech_b|Señor, me gustaría pedirte como un favor personal que ordenes a {s11} que se mantenga en la retaguardia en la próxima batalla. No soportaría que fuera herida, y no es la cerveza la que habla por mi boca.
+str_npc2_personalitymatch_speech_b|Mis paisanos siempre me habían contado historias sobre los montaraces de Ithilien y ahora veo que todas son ciertas. Si todos son como {s11} creo que Gondor puede sentirse seguro.
+str_npc3_personalitymatch_speech_b|Señor, me gustaría pedirte como un favor personal que ordenes a {s11} que se mantenga en la retaguardia en la próxima batalla. No soportaría que la hirieran, y no es la cerveza la que habla por mi boca.
 str_npc4_personalitymatch_speech_b|Salvar vidas es el más noble de los actos, y siento amistad por esa alma caritativa, incluso siendo de mundos tan diferentes. 
 str_npc5_personalitymatch_speech_b|Me cae bien {s11}.
 str_npc6_personalitymatch_speech_b|Me pregunto que edad tendrá él. ¿Quizás una docena de siglos más que yo? No importa, nunca lo comprenderías.
@@ -721,7 +721,7 @@ str_npc13_rehire_speech|¿Puedo servirte de nuevo?
 str_npc14_rehire_speech|¿Puedo servirte de nuevo?
 str_npc15_rehire_speech|¡Ahhh, Gran Señor! ¡Te llevo buscando desde hace mucho tiempo, ya que las historias sobre tus hazañas se propagan por toda la Tierra Media! ¿No te acuerdas de mis habilidades? ¿Me dejarás unirme a ti nuevamente para completar tu gran ejército?
 str_npc16_rehire_speech|¿Puedo servirte de nuevo?
-str_npc17_rehire_speech|Vaya. ¿Es hora de partir de nuevo? Los árboles no se mueven muchoo. Pero a mí me gusta moverme. Pero también me gustan los árboles.
+str_npc17_rehire_speech|Vaya. ¿Es hora de partir de nuevo? Los árboles no se mueven muchoo. Pero a mí me gusta moverme. Pero eso sí, también me gustan los árboles.
 str_npc1_home_intro|Capitán, nos estamos acercando a Osgiliath, así que estemos alerta, podemos encontrar tanto amigos como enemigos.
 str_npc2_home_intro|Tened cuidado, señor, eso de ahí debe de ser Minas Morgul. ¿No notáis cómo si algo nos estuviera espiando?
 str_npc3_home_intro|Déjame darte un consejo, señor. Nos estamos acercando mucho al bosque de Ent y los caballos están empezando a ponerse nerviosos. Algunos también llaman a este bosque Fangorn. 
@@ -764,7 +764,7 @@ str_npc5_home_description_2|Que esto sirva como recordatorio de que hasta la mej
 str_npc6_home_description_2|Siento la presencia de malvados ejércitos tras sus muros, listos para marchar a la guerra... ¿Contra la bella Lothlórien? ¿Contra los ciudadanos de Valle? ¿Contra mi tierra natal del Bosque Verde? No puedo saberlo, pero te ruego que hagas todo lo posible para frustrar sus planes.
 str_npc7_home_description_2|Si la suerte de la guerra nos propiciara un numeroso ejército deberíamos arriesgarnos entrando en las Minas y recuperar sus grandes riquezas.
 str_npc8_home_description_2|Huelo la delicada fragancia del manto floral y veo cómo las azarosas abejas se afanan en recolectar su rico néctar. Si no te importa recogeré algunas hierbas, sólo será un momento.
-str_npc9_home_description_2|No deberíamos deambular por aquí si no nos apoya una gran horda Uruk-hai. A no ser que quieras hacerles muecas a los vigilas de las murallas, claro.
+str_npc9_home_description_2|No deberíamos deambular por aquí sin que nos apoye una gran horda Uruk-hai. A no ser que quieras hacerles muecas a los vigilas de las murallas, claro.
 str_npc10_home_description_2|¡Minas Morgul; donde los Nazgûl beben durante todo el día, jar jar jar!
 str_npc11_home_description_2|¿No crees que Orthanc parece una gigantesca... cosa?
 str_npc12_home_description_2|¿No crees que Orthanc parece una gigantesca... cosa?

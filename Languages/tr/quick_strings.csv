@@ -468,11 +468,11 @@ qstr_wedge|takoz
 qstr_square|kare
 qstr_up|yukarı
 qstr___Infantry_forming_{|Piyade dizilimi {s1}.
-; qstr___Not_enough_infantr|  Not enough infantry to form {s1}, holding instead.
+qstr___Not_enough_infantr|{s1} 'yi oluşturmak için yeterli piyade yok, birimler yerinde kalıcak.
 qstr___Cavalry_forming_{s|Süvari dizilimi {s1}.
-; qstr___Not_enough_cavalry|  Not enough cavalry to form {s1}, holding instead.
+qstr___Not_enough_cavalry|{s1} 'yi oluşturmak için yeterli Süvari yok. Birimler yerinde kalıcak.
 qstr___Archers_forming_{s|Okçu dizilimi {s1}.
-; qstr___Not_enough_archers|  Not enough archers to form {s1}, holding instead.
+qstr___Not_enough_archers|{s1} 'yi oluşturmak için yeterli Okçular yok. Birimler yerinde kalıcak.
 qstr___Infantry_formation|Piyadelerin dizilimini bozun
 qstr___Cavalry_formation_|Süvarilerin dizilimini bozun
 qstr___Archer_formation_d|Okçuların dizilimini bozun
@@ -582,7 +582,7 @@ qstr_You_are_suffering_fr|{s1} den acı çekiyorsun.
 ; qstr_Weekly_upkeep_for_tr|Weekly upkeep for troops:^{reg5} Resource Points^
 ; qstr_{s12}^__{s4}:_{reg4}|{s12}^  {s4}: {reg4} Resource points ({reg5})
 qstr_No_upkeep_costs|Bakım masrafları yok
-; qstr_Orc_hiring_bonus:_+2|Orc hiring bonus: +2/3 for each orc^
+qstr_Orc_hiring_bonus:_+2|Orc işe alma bonusu: Her ork için +2/3
 ; qstr_Current_party_size_l|Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}
 ; qstr_{s2}^_________{s4}:_|{s2}^         {s4}: {reg1} ({s23})
 qstr__________Faction_str|Devlet güçleri raporu:^{s2}
@@ -692,7 +692,7 @@ qstr_The_siege_tower_is_b|Kuşatma kulesi inşa edildi ve saldırı yapmaya haz�
 ; qstr_However_since_you_ar|However, since you are not a sworn {man/follower} of {s9}, there is no chance he would recognize you as the {lord/lady} of this {reg8?town:castle}.
 qstr_The_enemy_has_been_f|Düşman geri çekilmeye zorlandı. Saldırı bitti, ama kuşatma devam ediyor
 qstr_The_assasins_beat_yo|Suikastçi seni yendi ve ölüme terketti
-; qstr_You_have_fallen._The|You have fallen. The bandits quickly search your body for valuables they can find, then vanish into the night. They have left you alive, if only barely.
+qstr_You_have_fallen._The|Düşmüşsün. Haydutlar bulabilecekleri değerli eşya için vücudunuzu çabucak arayıp, sonra da geceye karışır. Hayatta kaldıysanız, ayağa kalkmanız baya zor.
 ; qstr_Luckily_some_of_your|Luckily some of your companions came to search for you when you did not return, and find you lying in the ditch. They carried you to safety and dressed your wounds.
 ; qstr_Luckily_some_passing|Luckily some passing locals found you lying in the ditch, and recognised you as someone other than a simple beggar. They carried you to safety and dressed your wounds.
 qstr_{s13}^^You_have_succ|{s13}^^Başarıyla gizlendin.
@@ -961,7 +961,7 @@ qstr_refugees|Mülteciler
 qstr_slaves|esirler
 qstr_{s1}_Refugees|{s1} Mültecileri
 qstr_{s1}_Slaves|{s1} Slaves
-; qstr_The_{s11}_of_{s10}_a|The {s11} of {s10} asked you to escort some {s12} to {s13}.
+qstr_The_{s11}_of_{s10}_a|{s10}'nün yaşlısı senden {s13}'e biraz {s12} götürmeni istedi.\n
 qstr__Guards_slaughter_hi|Muhafızlar, onu katledin!
 qstr_Slaughter_him_for_fr|Taze İnsan eti için onu katledin!
 qstr_This_is_{s5}_Command|Bu {s5}, Komutanım.

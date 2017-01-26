@@ -53,7 +53,7 @@ dlga_treebeard_talk_response:close_window|不要緊,再見.
 dlga_start:close_window.1|嗯。。。？
 dlga_start:close_window.2|嗯。。。。。。？
 dlga_start:close_window.3|嗯。。。。。。。。？
-; dlga_start:looters_2_join|Bow to the power of the {s4} and serve me!
+dlga_start:looters_2_join|在 {s4}的力量面前屈服吧！
 dlga_looters_2_join:close_window|遵从您的吩咐，我的主人。
 dlga_start:close_window.4|^^咆哮!^^
 dlga_start:member_castellan_talk|嗯？{playername}。需要我做些什么？
@@ -169,27 +169,27 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window.1|我們將血戰到�
 dlga_party_encounter_offer_dont_fight:close_window|我欠你一个人情，不是吗。嗯。。。好吧。这一次我会放你走的。
 dlga_party_encounter_offer_dont_fight:close_window.1|哈哈.但是我想和你戰鬥.
 dlga_start:close_window.7|随时恭候，肮脏的乞丐。
-; dlga_start:lord_start|If it isn't my brave champion, {playername}...
+dlga_start:lord_start|你来了我勇敢的英雄，｛playername｝...
 dlga_start:lord_start.1|很开心再见到你 {playername}。。。
 dlga_start:lord_start.2|又见面了， {playername}。。。
 dlga_start:lord_meet_neutral|我們認識嗎?
 dlga_lord_meet_neutral:lord_intro|我是 {玩家姓名}.
 dlga_lord_meet_neutral:lord_intro.1|我的名字是 {playername}。遵从您的吩咐。
 dlga_lord_meet_enemy:lord_intro|我是 {playername}.
-; dlga_lord_meet_enemy:lord_intro.1|They know me as {playername}. Mark it down, you shall be hearing of me a lot.
+dlga_lord_meet_enemy:lord_intro.1|其他人称我｛playername｝.记好了，你以后会经常听到这个名字的
 dlga_start:lord_start.3|好吧。。。{playername}。
 ; dlga_lord_start:lord_generic_mission_completed|Your surgeon managed to convince my friend and made the operation.  All we can do now is pray for his recovery. Anyway, I thank you for lending your surgeon to me, {playername}. You have a noble spirit. I will not forget it.
 dlga_lord_start:lord_investigate_fangorn_completed0|那么，{playername}，你从Fangorn归来，发现了什么？
-; dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|The trees are alive! They assault our troops!
+dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|那些树活过来了！它们袭击了我们的军队！
 ; dlga_lord_investigate_fangorn_completed1:close_window|I suspected that all along. You have been of good service to me, {playername}.
-; dlga_lord_start:close_window|My patience is over. I was expecting you to tell me something about Fangorn by now, but you know nothing.
-; dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|Master, I hereby give you not one, but a pair of beasts!
+dlga_lord_start:close_window|我的耐心已经耗完了。我本期待你能告诉点法贡森林的情报，但看上去你一无所知。
+dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|大人，我在此给您献上一对野兽
 dlga_lord_active_mission_2:lord_capture_troll_completed_one_troll|主人，我制服了你说的那头野兽
-; dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|Two beasts! Excellent, {playername}. You proved worthy, and skill and dedication must be rewarded. With your two trolls, We can now make without one of those We were using for Our experiments. It is a fully trained slave, ready to fight under command. We mean YOUR command, {playername}.
+dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|两只！太棒了，{playername}。你证明了你的价值和技能，而做出贡献必须得到奖励。我赐予你两只巨魔，
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_info|一头凶猛的野兽能服从命令么？
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Thank you, Master. You will be pleased by the way this troll will be put in good use.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Thank you, master. But I'm not worth of your great gift. It is too dangerous for me.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Thank you, master. But I'm not worth of your great gift. [no room in party!]
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|感谢您，大人。这些巨魔会被好好利用的。
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|感谢您，大人。但我配不上这份大礼，它对我来说太危险了。
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|感谢您，大人。但我无法接受这份大礼。 [no room in party!]
 ; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].
 ; dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|是时候用你的礼物来给我们的敌人点厉害看看了
@@ -204,7 +204,7 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|是时
 ; dlga_lord_start:lord_follow_spy_failed|Truly, {playername}, you are nothing short of totally incompetent. Failing to capture both the spy AND his handler plumbs astonishing new depths of failure. Forget any reward I offered you. You've done nothing to earn it.
 dlga_lord_follow_spy_half_completed:lord_pretalk|我尽力了，{s65}。
 dlga_lord_follow_spy_completed:lord_pretalk|谢谢你，{s65}。
-; dlga_lord_follow_spy_failed:lord_pretalk|Hrm. As you like, {s65}.
+dlga_lord_follow_spy_failed:lord_pretalk|嗯，随你的便， {s65}。
 ; dlga_lord_start:lord_generic_mission_completed.2|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.
 ; dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. I have been waiting patiently for my slaves, yet none have returned. Have you an explanation? Were you outwitted by simple animals, or are you merely incompetent?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|原谅我, {s65},那些奴隶狡猾的像条泥鳅
@@ -245,71 +245,71 @@ dlga_lord_pretalk:lord_talk|還要別的嗎?
 dlga_lord_talk:lord_lend_companion_end|我需要 {s14} 回到我身边, {s65}, 如果你不需要 {reg3?her:his} 的服务.
 ; dlga_lord_lend_companion_end:lord_pretalk|You've too many men in your company already, {playername}. You could not lead any more at the moment.
 ; dlga_lord_lend_companion_end:lord_pretalk.1|Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.
-; dlga_lord_talk:lord_message_delivered|I bring a message from {s9}.
-; dlga_lord_talk:lord_message_delivered_enemy|I bring a message from {s9}.
-; dlga_lord_talk:lord_active_mission_1|About the task you gave me...
-; dlga_lord_talk:lord_request_mission_ask|Do you have any tasks for me?
-; dlga_lord_talk:find_lost_spears_permission|My lord, I wish to enter into the lonely mountains, in search of King Bladorthin's lost spears.
-; dlga_find_lost_spears_permission:lord_pretalk|I already gave you permission, {playername}.
-; dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Alright, {playername}, you may enter into the mountains.
-; dlga_find_lost_spears_permission:lord_pretalk.1|I'm sorry, but I don't know or trust you well enough, {playername}.
-; dlga_find_lost_spears_permission_yes:lord_pretalk|I thank you, my Lord.
+dlga_lord_talk:lord_message_delivered|我从{s9}那带来一条消息。
+dlga_lord_talk:lord_message_delivered_enemy|我从{s9}那带来一条消息。
+dlga_lord_talk:lord_active_mission_1|关于那件你给我的任务...
+dlga_lord_talk:lord_request_mission_ask|你有什么任务可以给我吗？
+dlga_lord_talk:find_lost_spears_permission|大人，我希望能进入孤山寻找Bladorthin国王丢失的矛
+dlga_find_lost_spears_permission:lord_pretalk|我已经给了你许可了， {playername}。
+dlga_find_lost_spears_permission:find_lost_spears_permission_yes|好吧， {playername}，你可以进入孤山。
+dlga_find_lost_spears_permission:lord_pretalk.1|我很抱歉，但我并不了解你和足够信任你，{playername}.
+dlga_find_lost_spears_permission_yes:lord_pretalk|感谢您，大人
 ; dlga_lord_give_troops:lord_give_troops_check|Reinforce my party? I can always use a few more soldiers.
 ; dlga_lord_give_troops:lord_pretalk|Unfortunately you don't have any {s14} soldiers to reinforce me with.
 ; dlga_lord_give_troops_check:lord_give_troops_check_1|Let me check the soldier roster...
 dlga_lord_give_troops_check_1:lord_pretalk|所以你改變主意了..^我知道了.
-; dlga_lord_give_troops_check_1:lord_pretalk.1|I don't have use for those troops here...^Take them back.
+dlga_lord_give_troops_check_1:lord_pretalk.1|我们用不着这些部队，把他们带回去。
 ; dlga_lord_talk:lord_get_reward_item_ask|I want to request a special item.
 ; dlga_lord_get_reward_item_ask:lord_talk|Seems like you have no place in your inventory for anything else. Make some room, then return.
 ; dlga_lord_get_reward_item_ask:lord_get_reward_item|Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?
 ; dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [costs {reg14}/{reg15} Influence]
-; dlga_lord_get_reward_item:lord_pretalk|Never mind then.
-; dlga_lord_get_reward_item_answer:lord_pretalk|Very well. May you use it to vanquish our enemies.
+dlga_lord_get_reward_item:lord_pretalk|别在意
+dlga_lord_get_reward_item_answer:lord_pretalk|很好，愿你能利用它战胜你的敌人。
 ; dlga_lord_talk:marshall_ask|I would like to have a council with you about the War.
 ; dlga_marshall_ask:lord_pretalk|I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.
 ; dlga_marshall_ask:lord_pretalk.1|You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]
 ; dlga_marshall_ask:lord_pretalk.2|We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.
 ; dlga_marshall_ask:lord_pretalk.3|We are on a campaign, {playername}, your advice would have to wait.
-; dlga_marshall_ask:marshall_suggest|I'm listening, {playername}. What do you suggest?
+dlga_marshall_ask:marshall_suggest|我聽著呢， {playername}，你有什麼建議？
 ; dlga_marshall_suggest:marshall_answer|We should ride to besiege {s1} at once.
-; dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.
+dlga_marshall_suggest:lord_pretalk|不要緊，我相信你的判斷。
 ; dlga_marshall_answer:close_window|Very well, {playername}, I shall defer to your judgement. I shall send messengers to gather our forces.^Follow me and stay close - we ride to {s4}!
 ; dlga_lord_talk:deliver_gift_1|I bring a gift of {s1} from {s3} to the people of {s2}.
 ; dlga_send_gift_1:lord_pretalk|You are already {s4}, {playername}. It would be wise to deliver that one first.
 ; dlga_send_gift_1:lord_pretalk.1|Unfortunately, you cannot afford to send a gift right now {playername}.^^[not enough Resource Points]
 ; dlga_send_gift_1:send_gift_2|Very well. To whom would you like to deliver a gift?
-; dlga_send_gift_1:send_gift_2.1|Very Well. Who do you want to give a bribe to?
+dlga_send_gift_1:send_gift_2.1|那麼，你想要給誰一些好處？
 dlga_send_gift_2:lord_pretalk|别放心上。
-; dlga_send_gift_3:send_gift_4|Which gift would you like to give to them?
-; dlga_send_gift_3:send_gift_4.1|What bribe do you want to give them?
+dlga_send_gift_3:send_gift_4|你想要給他們什麼禮物？
+dlga_send_gift_3:send_gift_4.1|你想要給他們什麼好處？
 dlga_send_gift_4:lord_pretalk|别放心上。
-; dlga_send_gift_5:lord_pretalk|All right {playername}. Good Luck.
-; dlga_lord_talk:lord_give_order_ask|I have a new task for you.
+dlga_send_gift_5:lord_pretalk|好吧{playername}，祝你好運。
+dlga_lord_talk:lord_give_order_ask|我這有些任務可以給你去做。
 dlga_lord_give_order_ask:lord_give_order|什麼?
-; dlga_lord_give_order:lord_give_order_answer|Follow me. [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask|Go to... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask.1|Patrol around... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask.2|Engage enemies around... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_stop|I won't need you for some time. You are free to do as you like.
+dlga_lord_give_order:lord_give_order_answer|隨我來， [Costs {reg1}/{reg2} influence]
+dlga_lord_give_order:lord_give_order_details_ask|去 [Costs {reg1}/{reg2} influence]
+dlga_lord_give_order:lord_give_order_details_ask.1|去 [Costs {reg1}/{reg2} influence]巡邏
+dlga_lord_give_order:lord_give_order_details_ask.2|吸引 [Costs {reg1}/{reg2} influence]附近的敵人
+dlga_lord_give_order:lord_give_order_stop|我暫時不需要你，你可以隨便去哪了。
 dlga_lord_give_order:lord_pretalk| 不要緊。
-; dlga_lord_give_order_details_ask:lord_give_order_details|Where?
+dlga_lord_give_order_details_ask:lord_give_order_details|哪？
 dlga_lord_give_order_details:lord_pretalk| 不要緊。
-; dlga_lord_give_order_stop:lord_pretalk|All right. I will do that.
-; dlga_lord_give_order_answer:lord_pretalk|I am sorry. I am needed somewhere else at the moment.
-; dlga_lord_give_order_answer_2:close_window|I will do that.
-; dlga_lord_give_order_answer_2:lord_pretalk|I am sorry, it is not possible for me to do that.
-; dlga_lord_talk:lord_talk_ask_something|I wish to ask you something.
-; dlga_lord_talk_ask_something:lord_talk_ask_something_2|Aye? What is it?
-; dlga_lord_talk_ask_something_2:lord_talk_ask_location|I want to know the location of someone.
-; dlga_lord_talk_ask_something_2:lord_tell_objective|What are you and your men doing?
-; dlga_lord_talk_ask_something_2:lord_talk_ask_about_war|How goes the war?
+dlga_lord_give_order_stop:lord_pretalk|好的，照你說的辦。
+dlga_lord_give_order_answer:lord_pretalk|我很抱歉，我還有別的事情
+dlga_lord_give_order_answer_2:close_window|我會去做的。
+dlga_lord_give_order_answer_2:lord_pretalk|我很抱歉，但我無法做到
+dlga_lord_talk:lord_talk_ask_something|我想問你些事
+dlga_lord_talk_ask_something:lord_talk_ask_something_2|嗯？什麼？
+dlga_lord_talk_ask_something_2:lord_talk_ask_location|我想知道某人的位置
+dlga_lord_talk_ask_something_2:lord_tell_objective|你和你的手下在做什麼？
+dlga_lord_talk_ask_something_2:lord_talk_ask_about_war|戰事如何？
 dlga_lord_talk_ask_something_2:lord_pretalk| 不要緊。
-; dlga_lord_talk_ask_location:lord_talk_ask_location_2|Very well, I may or may not have an answer for you. About whom do you wish to hear?
+dlga_lord_talk_ask_location:lord_talk_ask_location_2|好吧，但我可能答不上來。你想了解誰的位置？
 dlga_lord_talk_ask_location_2:lord_pretalk| 不要緊。
-; dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Tell me more about the war with {s1}.
-; dlga_lord_talk_ask_about_war_2:lord_pretalk|That's all I wanted to know. Thank you.
+dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|告訴我更多關於與 {s1}的戰爭
+dlga_lord_talk_ask_about_war_2:lord_pretalk|那就是所有我想問的，謝謝
 ; dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|We are {s22} and they are {s23}. Overall, {s9}.
-; dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|Today is a good day for battle, {s4}!
+dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|真是適合打仗的一天，{s4}！
 ; dlga_lord_tell_objective:lord_pretalk|What am I doing? What does it look like I'm doing?! I'm a prisoner here!
 ; dlga_lord_tell_objective:lord_pretalk.1|I am not commanding any men at the moment.
 ; dlga_lord_tell_objective:lord_pretalk.2|We are resting at {s1}{s5}.
@@ -447,7 +447,7 @@ dlga_lord_leave:close_window|我们会看到的，{playername}.
 dlga_lord_leave:close_window.1|当然，{playername}. 再见.
 ; dlga_lord_leave:close_window.2|Good journeys to you, {playername}.
 ; dlga_lord_leave:close_window.3|Yes, yes. Farewell.
-; dlga_lord_leave:close_window.4|We will meet again.
+dlga_lord_leave:close_window.4|我们会再见的
 ; dlga_start:lady_escort_lady_succeeded|Thank you for escorting me here, {playername}, and ensuring my safe passage. Your services will be duly noted. 
 ; dlga_lady_escort_lady_succeeded:close_window|It was an honor to serve.
 ; dlga_start:prison_guard_players|Good day, Commander. Will you be visiting the prison?
@@ -467,42 +467,42 @@ dlga_lord_leave:close_window.1|当然，{playername}. 再见.
 ; dlga_prison_guard_visit_prison_5:close_window|Ah! I was looking for this all day. How good of you to bring it back {sir/madam}. Well, now that I know what an honest {man/lady} you are, there can be no harm in letting you inside. Go in.
 dlga_prison_guard_talk:close_window| 不要緊。
 dlga_start:castle_guard_players|你的指令，指挥官？
-; dlga_castle_guard_players:close_window|Open the door. I'll go in.
+dlga_castle_guard_players:close_window|開門,我要進去
 dlga_castle_guard_players:close_window.1| 不要緊。
-; dlga_start:castle_guard_sneaked_intro_1|Get out of my sight, beggar! You stink!
-; dlga_start:close_window.8|Get lost before I lose my temper you vile beggar!
-; dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|I want to enter the hall and speak to the lord.
+dlga_start:castle_guard_sneaked_intro_1|滾開，要飯的！你臭死了！
+dlga_start:close_window.8|趁我失去耐心前給我滾你個臭要飯的！
+dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|我想進入城堡去和領主談話
 dlga_castle_guard_sneaked_intro_1:close_window|[我]
-; dlga_castle_guard_sneaked_intro_2:close_window|Are you out of your mind, {man/woman}? Beggars are not allowed into the hall. Now get lost or I'll beat you bloody.
+dlga_castle_guard_sneaked_intro_2:close_window|你瘋了嗎， {man/woman}？乞丐不准進入大廳，現在給我滾不然我就要幫你滾了。
 dlga_start:castle_guard_intro_1|你需要什麼?
-; dlga_castle_guard_intro_1:castle_guard_intro_2|I want to enter the hall and speak to the lord.
+dlga_castle_guard_intro_1:castle_guard_intro_2|我想進入大廳去和領主談話
 dlga_castle_guard_intro_1:close_window| 不要緊。
-; dlga_castle_guard_intro_2:castle_guard_intro_2|You can go in after leaving your weapons with me. No one is allowed to carry arms into the lord's hall.
-; dlga_castle_guard_intro_2:close_window|Here, take my arms. I'll go in.
-; dlga_castle_guard_intro_2:castle_guard_intro_2b|No, I give my arms to no one.
-; dlga_castle_guard_intro_2b:close_window|Then you can't go in.
+dlga_castle_guard_intro_2:castle_guard_intro_2|你可以進去，但是武器必須交給我們保管，沒人能帶著武器進入領主的城堡
+dlga_castle_guard_intro_2:close_window|給你，拿走我的武器，我要進去了
+dlga_castle_guard_intro_2:castle_guard_intro_2b|不行，我劍不離身
+dlga_castle_guard_intro_2b:close_window|那你不能進去
 dlga_start:castle_gate_guard_talk|你需要什麼?
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|什麼?
-; dlga_castle_gate_guard_talk:castle_gate_open|We need shelter for the night. Will you let us in?
-; dlga_castle_gate_guard_talk:request_meeting_castle_lord|I want to speak with the lord of the castle.
-; dlga_castle_gate_guard_talk:request_meeting_other|I want to speak with someone in the castle.
+dlga_castle_gate_guard_talk:castle_gate_open|我們想要找個地方過夜，可以讓我們進去嗎？
+dlga_castle_gate_guard_talk:request_meeting_castle_lord|我想和城堡的領主談話
+dlga_castle_gate_guard_talk:request_meeting_other|我想和城堡裡的某人談話
 dlga_castle_gate_guard_talk:close_window|[我]
-; dlga_request_meeting_castle_lord:close_window|Wait here. {s2} will see you.
-; dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|My lord is not here now.
-; dlga_request_meeting_other:request_meeting_3|Who is that?
+dlga_request_meeting_castle_lord:close_window|等著，{s2}會來見你的
+dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|我的領主現在不在這
+dlga_request_meeting_other:request_meeting_3|那是誰？
 dlga_request_meeting_3:close_window| 不要緊。
 ; dlga_request_meeting_4:request_meeting_5|Wait there. I'll send him your request.
-; dlga_request_meeting_5:request_meeting_6|I'm waiting...
-; dlga_request_meeting_6:close_window|All right. {s2} will talk to you now.
-; dlga_request_meeting_6:close_window.1|{s2} says he will not see you. Begone now.
-; dlga_castle_gate_open:close_window|My lord {s2} will be happy to see you {sir/madam}. Come on in. I am opening the gates for you.
+dlga_request_meeting_5:request_meeting_6|我會等的..
+dlga_request_meeting_6:close_window|好吧， {s2} 現在會和你談話的
+dlga_request_meeting_6:close_window.1|{s2}說他不想見你，現在給我滾
+dlga_castle_gate_open:close_window|我的大人{s2}很高興見到您 {sir/madam}，進來吧，我來給您開門。
 ; dlga_castle_gate_open:close_window.1|My lord {s2} is not in the castle now. But I think he would approve of you taking shelter here. Come on in. I am opening the gates for you.
-; dlga_castle_gate_open:close_window.2|Come on in. I am opening the gates for you.
+dlga_castle_gate_open:close_window.2|進來吧，我來給你開門。
 ; dlga_castle_gate_open:close_window.3|Come on in. But make sure your men behave sensibly within the walls.  My lord {s2} does not want trouble here.
 ; dlga_castle_gate_open:close_window.4|My lord {s2} does not want you here. Begone now.
-; dlga_party_relieved:caravan_help0|Thank you for helping! We are safe now.
+dlga_party_relieved:caravan_help0|謝謝你的幫助！現在我們安全了
 ; dlga_caravan_help0:caravan_help1|Thank you for helping! We are safe now. Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. Dire things are afoot.. War is coming! I advise you to go to Edoras, the capital of your people, and deliver the message about what you've seen to whomever is in command there. It's an important matter, so please make haste.
-; dlga_caravan_help1:caravan_help2|Yeah, I never seen such a large orc before. Nasty things.
+dlga_caravan_help1:caravan_help2|是啊，我從沒見過這麼大的獸人，真惡心人
 ; dlga_caravan_help2:caravan_help3|Also, I see you are a capable warrior. I have a personal business I would like your help with. There is a small fort near Nindalf swamps, where common people and travellers can find food and lodge. It's run by a local chief who does not answer neither to Gondor, nor to Rohan. I'm a merchant traveller myself, so I have respect for people wishing to be free from lordship bonds, as long as they behave. But being independent, they are also powerless before enemy onslaught. War outbreak in next several days looks like a certain thing to me. I want you to get to those people and see if you can help them survive. Tell the chief, Balan, that Torbal asked you to deliver 'a fishslap'. He will recognize it was me who sent you.
 ; dlga_caravan_help3:close_window|I'll deliver your message. Safe journey to you, Torbal. I'm sure we will meet again.
 ; dlga_start:close_window.9|You have come just in time. Let us join our forces now and teach our enemy a lesson.
@@ -510,45 +510,45 @@ dlga_request_meeting_3:close_window| 不要緊。
 ; dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
 ; dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
 ; dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
-; dlga_ally_thanks_meet:ally_thanks_meet_2|My name is {playername}.
+dlga_ally_thanks_meet:ally_thanks_meet_2|我叫 {playername}
 ; dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
 ; dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
 ; dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
 ; dlga_start:close_window.11|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
 ; dlga_start:close_window.12|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
 ; dlga_start:close_window.13|You turned up just in time, {playername}. I will not forget your help. {s43}
-; dlga_start:close_window.14|Good to see you here, {playername}. {s43}
-; dlga_start:close_window.17|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
-; dlga_start:close_window.18|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
-; dlga_start:close_window.19|Thank you for your help, Commander. It was fortunate to have you nearby.
-; dlga_start:freed_hero_answer|I am in your debt for freeing me friend.
-; dlga_freed_hero_answer:freed_hero_answer_1|You're not going anywhere. You'll be my prisoner now!
-; dlga_freed_hero_answer_1:close_window|Alas. Will my luck never change?
-; dlga_freed_hero_answer:freed_hero_answer_2|You're free to go, {s65}.
-; dlga_freed_hero_answer_2:close_window|Thank you, Commander. I never forget someone who's done me a good turn.
-; dlga_freed_hero_answer:freed_hero_answer_3|Would you like to join me?
-; dlga_freed_hero_answer_3:close_window|All right I will join you.
-; dlga_freed_hero_answer_3:close_window.1|No, I want to go on my own.
+dlga_start:close_window.14|很高兴见到你 {playername}，{s43}
+dlga_start:close_window.17|谢谢您的帮助，指挥官。你在那救了{reg1?我们的命:我的命} 
+dlga_start:close_window.18|谢谢您的帮助，指挥官。您扭转了战局。
+dlga_start:close_window.19|谢谢您的帮助，指挥官，有你在身边真是荣幸
+dlga_start:freed_hero_answer|我向你赎买我的同伴
+dlga_freed_hero_answer:freed_hero_answer_1|你哪都别想去，你是我的俘虏了！
+dlga_freed_hero_answer_1:close_window|唉，我的运气是永远都别想变了吧？
+dlga_freed_hero_answer:freed_hero_answer_2|你自由了，{s65}
+dlga_freed_hero_answer_2:close_window|感谢您，指挥官，我永远不会忘记你的恩情
+dlga_freed_hero_answer:freed_hero_answer_3|想要加入我吗？
+dlga_freed_hero_answer_3:close_window|好吧，我会加入你的
+dlga_freed_hero_answer_3:close_window.1|不了，我更喜欢单干
 ; dlga_start:defeat_hero_answer|You'll not live long to enjoy your victory. My kinsmen will soon wipe out the stain of this defeat.
 dlga_defeat_hero_answer:defeat_hero_answer_1|現在你是我的奴隸。
-; dlga_defeat_hero_answer_1:close_window|Damn you. You will regret this.
-; dlga_defeat_hero_answer:defeat_hero_answer_2|You're free to go this time, but don't cross my path again.
-; dlga_defeat_hero_answer_2:close_window|We will meet again.
-; dlga_start:fugitive_1|Yes, what do you want?
+dlga_defeat_hero_answer_1:close_window|去你的，我不会原谅这个的
+dlga_defeat_hero_answer:defeat_hero_answer_2|你可以随便去哪了，只是别再闯入我的领地
+dlga_defeat_hero_answer_2:close_window|我们会再见的
+dlga_start:fugitive_1|是的，你想干什么？
 ; dlga_fugitive_1:fugitive_2|I am looking for a fugitive by the name of {s4}. You fit his description.
-; dlga_fugitive_1:close_window|Nothing. Sorry to trouble you.
+dlga_fugitive_1:close_window|没事，麻烦你了
 ; dlga_fugitive_2:fugitive_3|I do not know what you are talking about. You must have confused me with someone else.
 ; dlga_fugitive_3:fugitive_4|Then drop your sword. If you are innocent, you have nothing to fear. We'll go now and talk to the guard captain to see who is confused.
-; dlga_fugitive_4:close_window|Damn you! You will not be going anywhere!
+dlga_fugitive_4:close_window|去你的，你哪都别想去！
 ; dlga_start:follow_spy_talk|Good day. Such fine weather don't you think? If you'll excuse me now I must go on my way.
 ; dlga_follow_spy_talk:follow_spy_talk_2|In the name of {s1}, you are under arrest!
-; dlga_follow_spy_talk_2:close_window|You won't get me alive!
-; dlga_follow_spy_talk:close_window|Never mind me. I was just passing by.
-; dlga_start:spy_partners_talk|Greetings.
-; dlga_spy_partners_talk:spy_partners_talk_2|In the name of {s1} You are under arrest!
-; dlga_spy_partners_talk_2:close_window|You will have to fight us first!
-; dlga_spy_partners_talk:close_window|Never mind me. I was just passing by.
-; dlga_start:runaway_serf_intro_1|Good day master.
+dlga_follow_spy_talk_2:close_window|你活捉不到我的！
+dlga_follow_spy_talk:close_window|别在意我，我只是路过
+dlga_start:spy_partners_talk|幸会
+dlga_spy_partners_talk:spy_partners_talk_2|以{s1}之名，你被逮捕了！
+dlga_spy_partners_talk_2:close_window|你得先踏过我们的尸体！
+dlga_spy_partners_talk:close_window|别在意我，我只是路过
+dlga_start:runaway_serf_intro_1|日安，大人
 ; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by your {s4} whom you are running from. He will not punish you if you return now.
 ; dlga_runaway_serf_intro_2:runaway_serf_intro_3|My good master. Our lives at {s1} was unbearable. We worked all day long and still went to bed hungry. We are going to {s6} to start a new life, where we will be treated like humans.
 ; dlga_runaway_serf_intro_3:runaway_serf_go_back|You have gone against our laws by running from slavery. You will go back to {s1} now!
@@ -589,7 +589,7 @@ dlga_trainer_talk_combat:trainer_explain_horseback|告訴我關於在馬上戰�
 dlga_trainer_talk_combat:trainer_pretalk|我想我瞭解了我需要的理論。讓我們聊一些別的。
 ; dlga_trainer_explain_defense:trainer_explain_defense_2|Good question. The first thing you should know as a fighter is how to defend yourself. Keeping yourself out of harm's way is the first rule of combat, and it is much more important than giving harm to others. Everybody can swing a sword around and hope to cut some flesh, but only those fighters that are experts at defense live to tell of it.
 ; dlga_trainer_explain_defense_2:trainer_explain_defense_3|Now. Defending yourself is easiest if you are equipped with a shield. Just block with your shield. [Hold down the right mouse button to defend yourself with the shield.] In this state, you will be able to deflect all attacks that come from your front. However, you will still be open to strikes from your sides or your back.
-; dlga_trainer_explain_defense_3:trainer_explain_defense_4|What if I don't have shield?
+dlga_trainer_explain_defense_3:trainer_explain_defense_4|如果我没有盾牌呢？
 ; dlga_trainer_explain_defense_4:trainer_combat_pretalk|Then you will have to use your weapon to block your opponent. This is a bit more difficult than defending with a shield. Defending with a weapon, you can block against only ONE attack direction. That is, you block against either overhead swings, side swings or thrusts. Therefore you must watch your opponent carefully and start to block AFTER he starts his attack. In this way you will be able to block against the direction of his current attack. If you start to block BEFORE he makes his move, he may just attack in another direction than the one you are blocking against and score a hit.
 ; dlga_trainer_explain_attack:trainer_explain_attack_2|Good question. Attacking is the best defence, they say. A tactic many fighters find useful is taking an offensive stance and readying your weapon for attack, waiting for the right moment for swinging it. [You can ready your weapon for attack by pressing and holding down the left mouse button.]
 dlga_trainer_explain_attack_2:trainer_explain_attack_3|听上去挺有用。
@@ -602,41 +602,41 @@ dlga_trainer_choose_mode_player:trainer_choose_opponents|单人战斗。
 dlga_trainer_choose_mode_player:trainer_choose_opponents.1|团队战斗。
 dlga_trainer_choose_mode_player:trainer_choose_weapon|射击。
 dlga_trainer_choose_mode_player:trainer_choose_weapon.1|近战为主。
-; dlga_trainer_choose_mode_player:trainer_pretalk|None of that, I've changed my mind.
-; dlga_trainer_choose_opponents:trainer_choose_opponents_player|Now choose the number of opponents.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon|One.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|Two.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|Three.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|Four, I feel lucky today.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|Four.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|Eight.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|Twelve, me and my companions can take on anyone.
-; dlga_trainer_choose_opponents_player:trainer_pretalk|None, I've changed my mind.
-; dlga_trainer_choose_weapon:trainer_choose_weapon_player|And finally choose your preferred weapon type.
-; dlga_trainer_choose_weapon_player:trainer_begin_training|One-handed weapons.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.1|Two-handed weapons.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.2|Polearms.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.3|Bows.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.4|Thrown weapons.
-; dlga_trainer_choose_weapon_player:trainer_pretalk|None, I've changed my mind.
-; dlga_trainer_begin_training:close_window|Very well, here we go. Once you finish training, come back and speak to me.
+dlga_trainer_choose_mode_player:trainer_pretalk|算了，我改主意了
+dlga_trainer_choose_opponents:trainer_choose_opponents_player|现在选择对手的数量
+dlga_trainer_choose_opponents_player:trainer_choose_weapon|一个
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|两个
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|三个
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|四个，我感觉今天运势不错
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|四个
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|八个
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|十二个，我和我的弟兄能抵挡所有人
+dlga_trainer_choose_opponents_player:trainer_pretalk|不了，我改主意了
+dlga_trainer_choose_weapon:trainer_choose_weapon_player|最后，选择你偏爱的武器类型
+dlga_trainer_choose_weapon_player:trainer_begin_training|单手武器
+dlga_trainer_choose_weapon_player:trainer_begin_training.1|双手武器
+dlga_trainer_choose_weapon_player:trainer_begin_training.2|长柄武器
+dlga_trainer_choose_weapon_player:trainer_begin_training.3|弓
+dlga_trainer_choose_weapon_player:trainer_begin_training.4|投掷武器
+dlga_trainer_choose_weapon_player:trainer_pretalk|不了，我改主意了
+dlga_trainer_begin_training:close_window|很好，咱们走吧，等你完成了训练再回来找我
 dlga_start:close_window.20|随时恭候，肮脏的乞丐。
-; dlga_start:mayor_begin|Good day, my lord.
-; dlga_start:mayor_talk|Hello stranger, you seem to be new to {s9}. I am the guild master of the town.
-; dlga_start:mayor_begin.1|Good day, {playername}.
-; dlga_mayor_begin:lord_deal_with_night_bandits_completed|Very nice work, {playername}, you made short work of those lawless curs!^^[earned {reg14} Resource Points of {s14}]
-; dlga_lord_deal_with_night_bandits_completed:close_window|They had it coming.
-; dlga_mayor_talk:mayor_deliver_iron|I've brought you better quality metal, {reg9} units of {s4}, when you requested {s3}.
-; dlga_mayor_talk:mayor_deliver_iron.1|Here's your metal supply, {reg9} units of {s4}.
-; dlga_mayor_talk:mayor_deliver_iron.2|I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.
-; dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Very nice work, {playername}. Our smiths will find ways to put everything they are given to good use.
-; dlga_mayor_deliver_iron_completed:close_window|I do what I can.
-; dlga_mayor_talk:mayor_deliver_food|Here's your food, {reg9} units.
-; dlga_mayor_deliver_food:mayor_deliver_food_completed|Very nice work, {playername}, our food stores are full again and nobody will starve for now.
-; dlga_mayor_deliver_food_completed:close_window|I do what I can.
-; dlga_mayor_begin:mayor_looters_quest_response|Ah, {playername}. Have you any progress to report?
-; dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|I've killed some tribal orcs.
-; dlga_mayor_looters_quest_response:close_window|Not yet, sir. Farewell.
+dlga_start:mayor_begin|日安，大人
+dlga_start:mayor_talk|你好，陌生人，你看上去是刚来 {s9}的，我是这个镇的镇长
+dlga_start:mayor_begin.1|日安，{playername}
+dlga_mayor_begin:lord_deal_with_night_bandits_completed|干得漂亮{playername}，你教训了这帮无赖！^[获得{s14}的{reg14}点支援点 ]
+dlga_lord_deal_with_night_bandits_completed:close_window|他们活该
+dlga_mayor_talk:mayor_deliver_iron|我给你买了更高质量的金属，{reg9} 单位的{s4}，当你需要{s3}的时候
+dlga_mayor_talk:mayor_deliver_iron.1|这是你的金属补给，{reg9}单位的 {s4}
+dlga_mayor_talk:mayor_deliver_iron.2|我已经购买了更多的金属，{reg8}单位的{s4}，当你需要{reg9}个单位的时候
+dlga_mayor_deliver_iron:mayor_deliver_iron_completed|干得漂亮 {playername}，我们的史密斯会好好利用他们给的东西的
+dlga_mayor_deliver_iron_completed:close_window|我尽我的全力
+dlga_mayor_talk:mayor_deliver_food|这里是你的口粮， {reg9}单位
+dlga_mayor_deliver_food:mayor_deliver_food_completed|干得漂亮 {playername}，我们的食物商店又满仓了，现在没人会挨饿了
+dlga_mayor_deliver_food_completed:close_window|我尽我的全力
+dlga_mayor_begin:mayor_looters_quest_response|啊， {playername}.你有什么进展吗？
+dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|我刚杀了些部落兽人
+dlga_mayor_looters_quest_response:close_window|还没呢，长官，再会了
 ; dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, my scouts saw the whole thing. That should keep those tribal orcs at bay!^^[earned {reg14}x{reg15} Resource Points of {s14}]
 ; dlga_mayor_looters_quest_destroyed_2:close_window|And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now.  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!  I think that concludes your task, {playername}. Thank you, and farewell.
 ; dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Anything else you need?
@@ -646,28 +646,28 @@ dlga_start:close_window.20|随时恭候，肮脏的乞丐。
 ; dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|I am sorry. Those people wandered off during the night.
 ; dlga_move_cattle_herd_failed_2:close_window|Well, it was your responsibility to deliver them safely, no matter what.  You should know that the commander demanded to know who is responsible for this failure.  So I told him it was you.
 ; dlga_mayor_begin:mayor_friendly_pretalk|I have heard about your deeds. You have given those goblins the punishment they deserved.  You are really as good as they say.^^[earned {reg14} Resource Points of {s14}]
-; dlga_mayor_begin:mayor_talk|What can I do for you?
-; dlga_mayor_friendly_pretalk:mayor_talk|Now... What else may I do for you?
+dlga_mayor_begin:mayor_talk|我能为你做什么？
+dlga_mayor_friendly_pretalk:mayor_talk|我还能为你做什么？
 dlga_mayor_pretalk:mayor_talk|什麼?
-; dlga_mayor_talk:mayor_info_begin|Can you tell me about what you do?
-; dlga_mayor_talk:merchant_quest_requested|How can I serve our cause?
-; dlga_mayor_talk:merchant_quest_last_offered_job|About that task you needed me to do...
-; dlga_mayor_talk:merchant_quest_about_job|About the task you gave me...
+dlga_mayor_talk:mayor_info_begin|你能告诉我你是做什么的吗？
+dlga_mayor_talk:merchant_quest_requested|我该怎么做？
+dlga_mayor_talk:merchant_quest_last_offered_job|关于那件您给我的任务...
+dlga_mayor_talk:merchant_quest_about_job|关于那件你给我的任务...
 dlga_mayor_talk:close_window|[我]
 ; dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
-; dlga_mayor_info_talk:mayor_info_lord|Who rules this town?
-; dlga_mayor_info_lord:mayor_info_talk|Our lord is {s10}.
-; dlga_mayor_info_talk:mayor_pretalk|That's all I need to know. Thanks.
+dlga_mayor_info_talk:mayor_info_lord|谁统治着这个城镇？
+dlga_mayor_info_lord:mayor_info_talk|我们的领主是{s10}
+dlga_mayor_info_talk:mayor_pretalk|那就是全部我想知道的了，谢谢
 dlga_merchant_quest_about_job:merchant_quest_about_job_2|怎麼了?
 dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|如果我不能完成它?
-; dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|Well, I'm still working on it.
-; dlga_merchant_quest_about_job_working:mayor_pretalk|Good. I'm sure you will handle it.
-; dlga_merchant_quest_last_offered_job:merchant_quest_brief|Eh, you want to reconsider that. Good...
-; dlga_merchant_quest_what_if_fail:mayor_pretalk|I hope you don't fail. We cannot afford to lose the cargo you were carrying.
-; dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Well, just do your best to finish it.
-; dlga_merchant_quest_taken:mayor_pretalk|Excellent. I am counting on you then. Good luck.
-; dlga_merchant_quest_stall:mayor_pretalk|Well, I'll see to find someone else. But tell me if you change your mind.
-; dlga_merchant_quest_requested:merchant_quest_brief|Well, you look able enough. I think I might have something you could do.
+dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|我正在办
+dlga_merchant_quest_about_job_working:mayor_pretalk|好的，我相信你能处理好
+dlga_merchant_quest_last_offered_job:merchant_quest_brief|嗯，你想考虑一下，好吧...
+dlga_merchant_quest_what_if_fail:mayor_pretalk|我希望你不要失败，我们无法背负你失败的负担
+dlga_merchant_quest_what_if_fail:mayor_pretalk.1|好吧，那你尽力吧
+dlga_merchant_quest_taken:mayor_pretalk|太好了，我就指望着你了，祝你好运
+dlga_merchant_quest_stall:mayor_pretalk|好吧，我会找找其他人的，但如果你回心转意了就跟我说
+dlga_merchant_quest_requested:merchant_quest_brief|嗯，你看起来有点实力，我想我有些工作可以给你
 ; dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near the {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion. I need somebody to teach those orcs a lesson. Sound like your kind of work?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|嗯，我会做的。
 ; dlga_merchant_quest_looters_choice:merchant_quest_stall|I'm afraid you have to find someone else for that.

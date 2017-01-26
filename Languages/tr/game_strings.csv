@@ -367,7 +367,7 @@ str_npc10_backstory_a|Ben Durgash'ım
 ; str_npc17_backstory_a|They call me Dímborn and I work in the woods. It is nice there. I like the woods. Many trees in the woods. I like trees. I've worked in the woods all my life, because I am strong and because I like trees.
 ; str_npc1_backstory_b|You should know that I am an Ithilien Ranger of Dúnedain descent and valor. I know much of tracking and scouting and my skill with bow and sword is known to the orc. I can also train any soul that's willing to fight the coming Shadow.
 str_npc2_backstory_b|Minas Tirith bekçisi olarak, Beyaz Şehri'nde düzen tutmak ve efendim Steward'a hizmet etmek için eğitildim.
-; str_npc3_backstory_b|I am a Rider of the West Emnet éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
+str_npc3_backstory_b|Ben Batı Emnet'in bir binicisiyim - beni arkada bırakıp Isen ford'larında devriyeye çıktılar. Davranışlarının yeşil bayrağa layık olduğunu biliyorum, fakat birçoğunun geri dönmemesinden korkuyorum.
 str_npc4_backstory_b|Ben asil bir aileden geliyorum ve küçüklüğümden beri nedime olarak Leydi Eowyn'a hizmet etmişimdir. Babam bize bir gün Rohan'ın kalkan kardeşleri olmamız için erkek kardeşlerimizle beraber talim yapmamıza izin verecek bilgeliğe sahipti. Böylece savaşmayı öğrendim.
 str_npc5_backstory_b|Lord Elrond beni Lord Celeborn'a göndererek, Rhovanion'un bu bölümünde Savaşta ihtiyaç duyduğu gibi yardım ve tavsiye vermeye çağırdı.
 ; str_npc6_backstory_b|I like to walk the hidden paths in our beautiful forest. Sometimes I move quietly through the trees and observe the habits of the many woodland animals. The song of a rare bird, the nesting of a wild boar are as beautiful to me as the clash of weapons and great walls are to the Edain.
@@ -458,7 +458,7 @@ str_npc4_signup|Bu hoş bir teklif, ve beni birliğine davet edebilirsin, komuta
 ; str_npc6_signup|I dislike violence and weapons of war, but I know how to defend myself in a hurry.
 ; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
 ; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
-; str_npc9_signup|A fighting Uruk is worth more than all your snagas. A fighting Uruk never runs from battle.
+str_npc9_signup|Bir savaşçı uruk siz bütün snagalardan daha değerlidir. Bir savaşçı uruk asla savaştan kaçmaz.
 ; str_npc10_signup|Really? You would do well to enlist me.
 ; str_npc11_signup|Follow your mob Ai? Ar! I hear about all these goings-ons out west, raids and all, and hundreds of our lads done in. I'll come and have a look with you all the same, and see what you're up to.
 ; str_npc12_signup|Follow your rabble, 'ay? I may 'ave struck a bit of luck at last. I give a good rumble, I reckon, and my whip is vigilant. It's tasted its fair share of my lads' orc hide.
@@ -935,7 +935,7 @@ str_npc17_honorific|Şef
 ; str_comment_you_let_go_a_lord_allied_upstanding|I heard that you captured {s54}, but then let him go. Well, that was an honourable course of action, if possibly also a dangerous one.
 ; str_comment_you_let_go_a_lord_allied_coldblooded|I heard that you captured {s54}, but then let him go. That was most chivalrous of you, but chivalry does not win wars.
 ; str_comment_you_let_go_a_lord_allied_unfriendly_spiteful|I heard that you captured {s54}, but then let him go. How very chivalrous of you! No doubt the widows and orphans he leaves in his wake will want to commend you in person.
-; str_comment_you_let_go_a_lord_allied|I heard that you captured {s54}, but then let him go. Well, I will not tell you what to do with your own prisoners.
+str_comment_you_let_go_a_lord_allied|Duyduğuma göre {s54} sana teslim olmuş, ama onun gitmesine izin vermişsin. Peki, sana kendi esirlerine ne yapman gerektiğini söyleyemem tabi.
 ; str_comment_you_let_me_go_spiteful|When last we met, you had me at your mercy and allowed me to go free. I hope you enjoyed toying with me, like a cat with a mouse, because soon I will have you at my mercy, to slay or humiliate according to my fancy.
 ; str_comment_you_let_me_go_enemy_chivalrous|When last we met, you had me at your mercy and allowed me to go free. That was most chivalrous of you, and I will not forget. But I also must remember my oath to my liege, and our kingdoms are still at war.
 ; str_comment_you_let_me_go_enemy_coldblooded|When last we met, you had me at your mercy and allowed me to go free. But we are still enemies, and I cannot promise to repay your mercy in kind.
@@ -984,12 +984,12 @@ str_surrender_demand_default|Teslim Ol Yada Öl !
 ; str_surrender_demand_sadistic|Surrender or I'll gut you like a fish!
 ; str_surrender_demand_goodnatured|We have the advantage of you. Yield, and you will be well-treated.
 ; str_surrender_demand_upstanding|You may fight us, but many of your men will be killed, and you will probably lose. Yield, and spare us both the unnecessary bloodshed.
-; str_surrender_offer_default|Stop! I yield!
-; str_surrender_offer_martial|Stop! I yield!
+str_surrender_offer_default|Dur! teslim oluyorum!
+str_surrender_offer_martial|Dur! teslim oluyorum!
 ; str_surrender_offer_quarrelsome|Enough! You win today, you dog! Ach, the shame of it!
 ; str_surrender_offer_pitiless|I yield! You have won. Cursed be this day!
 ; str_surrender_offer_cunning|Stop! I yield to you!
-; str_surrender_offer_sadistic|I give up! I give up! Call back your dogs!
+str_surrender_offer_sadistic|Teslim oluyorum! teslim oluyorum! Köpeklerini geri çağır!
 ; str_surrender_offer_goodnatured|I yield! Congratulations on your victory, {sir/madame}!
 ; str_surrender_offer_upstanding|I yield! Grant me the honours of war, and do yourself credit!
 ; str_prisoner_released_default|You have my gratitude, {sir/madame}. I shall not forget your kindness.
@@ -1014,14 +1014,14 @@ str_enemy_meet_sadistic|Sen de kismin? Dilini sökmeden önce hızlı konuş.
 ; str_battle_won_pitiless|Together, we will make the foe learn to fear our names, and to quail at our coming!
 ; str_battle_won_cunning|Now, we must be sure to press our advantage, so that the blood shed today is not wasted.
 ; str_battle_won_sadistic|Now let us strip their dead and leave them for the crows, so that all will know the fate of those who come against us.
-; str_battle_won_goodnatured|That was a good scrap! No joy like the joy of victory, eh?
+str_battle_won_goodnatured|Bu iyi bir hurda! Zaferin sevinci gibi bir sevinç daha yok, ha?
 ; str_battle_won_upstanding|Now, let us give thanks to the heavens for our victory, and mourn the many fine men who have fallen today.
 ; str_battle_won_grudging_default|You helped turn the tide on the field, today. Whatever I may think of you, I cannot fault you for your valor.
 ; str_battle_won_grudging_martial|{playername} -- you have shown yourself a worthy {man/woman} today, whatever your misdeeds in the past.
 ; str_battle_won_grudging_quarrelsome|Hmf. Yours is not a face which I normally like to see, but I suppose today I should thank you for your help.
 ; str_battle_won_grudging_pitiless|Your help was most valuable today. I would not imagine that you came to help me out of kindness, but I nonetheless thank you.
 ; str_battle_won_grudging_cunning|It would be unwise of me not to thank you for coming to help me in my hour of need. So... You have my gratitude.
-; str_battle_won_grudging_sadistic|Well! How touching! {playername} has come to rescue me.
+str_battle_won_grudging_sadistic|İyi! Ne kadar dokunaklı! {Playername} beni kurtarmak için geldi ha!
 ; str_battle_won_grudging_goodnatured|{playername}! I can't say that we've always gotten along in the past, but you fought well today. My thanks to you!
 ; str_battle_won_grudging_upstanding|Perhaps I was wrong about you. Your arrival was most timely. You have my gratitude.
 ; str_battle_won_unfriendly_default|So you're here. Well, better late than never, I suppose.
@@ -1030,11 +1030,11 @@ str_enemy_meet_sadistic|Sen de kismin? Dilini sökmeden önce hızlı konuş.
 ; str_battle_won_unfriendly_pitiless|You have come here, like a jackal to a lion's kill. Very well then, help yourself to the spoils. I shall not stop you.
 ; str_battle_won_unfriendly_cunning|{playername}... Well, I suppose your arrival didn't hurt, although I won't pretend that I'm happy to see you.
 ; str_battle_won_unfriendly_sadistic|Back off, carrion fowl! This was my victory, however hard you try to steal the glory for yourself.
-; str_battle_won_unfriendly_goodnatured|Oh, it's you. Well, I suppose I should thank you for your help.
+str_battle_won_unfriendly_goodnatured|Oh, bu sensin. Pekala, Sanırım yardımınız için teşekkür etmeliyim.
 ; str_battle_won_unfriendly_upstanding|Thank you for coming to my support. Now I will be off, before I say something that I regret.
 ; str_troop_train_request_default|I need someone like you to knock them into shape.
 ; str_troop_train_request_martial|They need someone to show them the meaning of valor.
-; str_troop_train_request_quarrelsome|Fat lazy bastards. They make me puke.
+str_troop_train_request_quarrelsome|Yağlı tembel Piçler. Beni kusturuyorlar.
 ; str_troop_train_request_pitiless|They are more afraid of the enemy than they are of me, and this will not do.
 ; str_troop_train_request_cunning|But men, like swords, are tempered and hardened by fire.
 ; str_troop_train_request_sadistic|They need someone with steel in his back to flog some courage into them, or kill them trying.
@@ -1164,38 +1164,38 @@ str_but_comma_1|, ama
 ; str_faction_strength_spent_and_wavering|spent and wavering
 ; str_faction_strength_weakened|weakened
 ; str_faction_strength_fair|fair
-; str_faction_strength_average|average
+str_faction_strength_average|Ortalama
 str_faction_strength_strong|güçlü
-; str_faction_strength_quite_strong|quite strong
-; str_faction_strength_very_strong|very strong
+str_faction_strength_quite_strong|oldukça güçlü
+str_faction_strength_very_strong|Çok güçlü
 ; str_faction_strength_unmatched|unmatched
-; str_faction_strength_last|INVALID
+str_faction_strength_last|GEÇERSİZ
 str_theater_se|Gondor
 str_theater_sw|Rohan
-; str_theater_c|South Rhovanion
-; str_theater_n|North Rhovanion
-; str_faction_side_name|the Free People
-; str_faction_side_name1|the Naked Eye
-; str_faction_side_name2|the White Hand
-; str_party_greet_friend_gondor|Hail, friend of the White Tree!
+str_theater_c|Güney Rhovanion
+str_theater_n|Kuzey Rhovanion
+str_faction_side_name|Özgür İnsanlar
+str_faction_side_name1|Açık Göz
+str_faction_side_name2|Ak El
+str_party_greet_friend_gondor|Selamlar, Ak Ağacın dostu!
 ; str_party_greet_enemy_gondor|Draw your swords if you dare, enemies of Gondor!
-; str_party_greet_friend_dwarf|Hail from the Durin's folk, dwarf-friend!
-; str_party_greet_enemy_dwarf|Baruk Khazâd! Khazâd ai-mênu!
+str_party_greet_friend_dwarf|Durin soyundan selamlar, Cüce dostu!
+str_party_greet_enemy_dwarf|Baruk Khazâd! Khazâd ai-mênu!
 ; str_party_greet_friend_rohan|Hail and well met, Rohirrim friend!
 ; str_party_greet_enemy_rohan|The Riders of Rohan are here to challenge you!
 ; str_party_greet_friend_mordor|Victory for the Eye!
 ; str_party_greet_enemy_mordor|Your heads will look nice on the gates of Morannon!
-; str_party_greet_friend_isengard|Hail the White Hand!
+str_party_greet_friend_isengard|Beyaz El'e selam olsun!
 ; str_party_greet_enemy_isengard|The Wise Master shall be pleased when I show him your bodies!
 ; str_party_greet_friend_lorien|Hail, friend of fair Lorien!
 ; str_party_greet_enemy_lorien|Foul thing, we will put an end to your suffering!
 ; str_party_greet_friend_imladris|Hail, friend of Imladris and Elrond!
 ; str_party_greet_enemy_imladris|Today we make battle, enemies of Imladris and all that is fair!
-; str_party_greet_friend_woodelf|Hail, friend of the Silvan Elves of Mirkwood!
+str_party_greet_friend_woodelf|Selamlar, Silvan Elfleri'nin ve KuyutOrman'ın dostu!
 str_party_greet_enemy_woodelf|Kuyutorman'a kötü niyetle girenler asla ayrılamayacaklar!
 ; str_party_greet_friend_dale|Hail, friend of proud Dale!
-; str_party_greet_enemy_dale|Draw your swords, we are the Men of Dale!
-; str_party_greet_friend_harad|Welcome, friend of the Haradrim!
+str_party_greet_enemy_dale|Kılıçlarınızı indirin, Biz Dale insanlarıyız!
+str_party_greet_friend_harad|Hoşgeldin, Haradrimin dostu!
 ; str_party_greet_enemy_harad|Your many bodies shall be ground into the sand!
 ; str_party_greet_friend_rhun|Greetings, friend of the Easterling tribes and Dorwinion!
 ; str_party_greet_enemy_rhun|Dwarves and Men are no match for our fierceness!
@@ -1203,15 +1203,15 @@ str_party_greet_enemy_woodelf|Kuyutorman'a kötü niyetle girenler asla ayrılam
 ; str_party_greet_enemy_khand|Put on the masks of warriors, for today you shall meet your doom!
 ; str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad, friend of the Corsairs!
 ; str_party_greet_enemy_umbar|If we were at sea, you would dance on a plank soon enough!
-; str_party_greet_friend_moria|Hail the White Hand!
+str_party_greet_friend_moria|Beyaz El'e selam olsun!
 ; str_party_greet_enemy_moria|You shall have your throats cut by the orcs of Moria!
 ; str_party_greet_friend_guldur|Victory for the Eye!
 ; str_party_greet_enemy_guldur|The Elves and their friends shall fall under our blades!
-; str_party_greet_friend_gundabad|Fear the power of Angmar!
+str_party_greet_friend_gundabad|Angmar'ın gücünden Kork!
 ; str_party_greet_enemy_gundabad|We shall descend on you and feast on your entrails!
 ; str_party_greet_friend_dunland|Hail, enemy of the horse-people!
 ; str_party_greet_enemy_dunland|Your homes will burn and your families shall be cut down!
-; str_party_greet_friend_beorn|Hail, friend of Beorn!
+str_party_greet_friend_beorn|Selam, Beorn'un dostu!
 ; str_party_greet_enemy_beorn|You will taste the fury of the bear people!
 str_subfaction_gondor_name_begin|Gondor
 str_subfaction_gondor_name1|Pelargir
@@ -1220,8 +1220,8 @@ str_subfaction_gondor_name2|Dol Amroth
 str_subfaction_gondor_name4|Lossarnach
 str_subfaction_gondor_name5|Pinnath Gelin
 ; str_subfaction_gondor_name6|Blackroot Vale
-; str_subfaction_gondor_name7|Ithilien
-; str_default_rumor|The War. Everybody is talking about the war.
+str_subfaction_gondor_name7|Ithilien
+str_default_rumor|Savaş. Herkes savaş hakkında konuşuyor.
 ; str_rohan_rumor_begin|It breaks my heart to see my babies off to war! But without them the men would have to walk.
 ; str_rohan_rumor_2|I hear orcs eat horses. Foul beasts! They also eat prisoners. That is bad too, of course.
 ; str_rohan_rumor_3|There are no horses finer than Rohan's. Even the Elves get their horses from us!
@@ -1231,7 +1231,7 @@ str_subfaction_gondor_name5|Pinnath Gelin
 ; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superiour but require a more experienced rider to handle.
 ; str_rohan_rumor_8|Wargs are slower than horses but can turn faster. They are also quite fragile compared to a well-bred warhorse.
 ; str_rohan_rumor_9|Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over.
-; str_rohan_rumor_10|Being the best horsemen in the realm starts with raising the best horses.
+str_rohan_rumor_10|Krallıktaki en iyi atlı olmak için, en iyi atları sürmekten başlaman gerekir.
 ; str_rohan_rumor_11|Most of the horses you see in Gondor came from us. They prefer a slightly stronger, slower horse that can carry their heavy armour.
 ; str_rohan_rumor_12|We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small.
 ; str_rohan_rumor_13|Saruman's orcs are nasty but don't wear much protection. They're no match for a good axe.
@@ -1251,8 +1251,8 @@ str_subfaction_gondor_name5|Pinnath Gelin
 ; str_gondor_rumor_8|Why does Umbar keep invading us? Their Corsairs would have profited far more from trading with us. What plunder could match the riches they'd have hauled away selling old Numenorian artifacts to Gondorian nobles?
 ; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
 ; str_gondor_rumor_10|Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea.
-; str_gondor_rumor_11|Dol Guldur? Never heard of it.
-; str_gondor_rumor_12|Moria? The dwarves mine there, don't they?
+str_gondor_rumor_11|Dol Guldur mu? hiç duymamıştım.
+str_gondor_rumor_12|Moria mı? Cüce madenleri orada, değil mi?
 ; str_gondor_rumor_13|Don't tell anyone I said this, but I think Prince Imrahil should perhaps become king. Lord Denethor is a noble man, but Gondor has faded much during his reign. And not only since his older son left.
 ; str_gondor_rumor_14|People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes.
 ; str_gondor_rumor_15|The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm.
@@ -1277,10 +1277,10 @@ str_subfaction_gondor_name5|Pinnath Gelin
 ; str_mordor_rumor_begin|Lugbúrz commands!
 ; str_mordor_rumor_2|Nazgûl will defeat the world of men!
 ; str_mordor_rumor_3|Why aren't you working, glob! The Eye is watching!
-; str_mordor_rumor_4|Soon, darkness comes! Durb-burz!
-; str_mordor_rumor_5|Hungry! Where is food?
+str_mordor_rumor_4|Yakında, Karanlık geliyor! Durb-burz!
+str_mordor_rumor_5|Acıktım! Yemek nerde?
 ; str_mordor_rumor_6|We will feast on men of the White city!
-; str_mordor_rumor_7|Master trains Olog-hai for war!
+str_mordor_rumor_7|Üstat Olog-hai'leri savaş için eğitiyor!
 ; str_mordor_rumor_8|Warg bit my finger. And it really hurts! Warg-filth!
 ; str_mordor_rumor_9|Don't trust Saruman-glob!
 ; str_mordor_rumor_10|Mountain orcs are weak! We are strong! We will eat tribal snagas!
@@ -1353,7 +1353,7 @@ str_beorn_rumor_8|Baltanın gücü ağzında değil, sapındandır.
 str_beorn_rumor_9|Geçen kış boyunca uyudık. Ne? Evet, sonbaharda kışa kadar böyle devam etmeniz için çok yemek yemeniz gerekir.
 str_beorn_rumor_10|Rohan'ın adamları bizim akrabalarımızdır, ayıları kanımızdır, goblinleri avımız!
 ; str_beorn_rumor_11|Turn into bears? Of course we don't. Who told you that? Ha ha ha!
-; str_beorn_rumor_12|Beorn was a great man. No, not a man, a giant!
+str_beorn_rumor_12|Beorn Büyük bir insan. Hayır, insan değil, bir dev!
 ; str_beorn_rumor_13|*GROWLS*   Do you have any honey?
 ; str_beorn_rumor_14|Don't wander off alone in the mountains! Bears and wolves stay away from larger groups of men. But hunger, or as some say - shadow spirits, may drive them close enough to attack you.
 ; str_lorien_rumor_begin|O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. 
@@ -1383,7 +1383,7 @@ str_beorn_rumor_10|Rohan'ın adamları bizim akrabalarımızdır, ayıları kan�
 ; str_woodelf_rumor_7|Oduleg hi am man theled? We need to know your purpose here. Sorcerer's spies are everywhere.
 ; str_woodelf_rumor_8|Edain of Dale make intricate toys these days! They've learnt much from the Naugrim.
 ; str_woodelf_rumor_9|The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!
-; str_dale_rumor_begin|First there was the dragon, now this...
+str_dale_rumor_begin|Öncelerde burada bir ejderha vardı, ama şimdi...
 ; str_dale_rumor_2|As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!
 ; str_dale_rumor_3|Ever since the defeat of the dragon, we know how to look for the enemy's weak spot.
 ; str_dale_rumor_4|Easterlings will never make it past us and our dwarven allies.
@@ -1422,11 +1422,11 @@ str_beorn_rumor_10|Rohan'ın adamları bizim akrabalarımızdır, ayıları kan�
 str_moria_rumor_begin|Davulları duyunca, koş ve saklan!
 str_moria_rumor_2|Ghâsh derinlerde!
 str_moria_rumor_3|Doom! Doom! Doom! Davullar derinlerden geliyor.
-; str_moria_rumor_4|Moria is big, but no dwarves hide in it anymore.
+str_moria_rumor_4|Moria büyük, ama cüceler artık burada saklanamıyor. 
 str_moria_rumor_5|Cüceler çok derin kazdı. Bizim için her şey daha iyi. Ha ha ha!
 str_moria_rumor_6|Moria'da birçok tünel var. hepsinden gidemeyiz.
 ; str_moria_rumor_7|Some manlings and dwarves sneaked past our sentries in the mines a while ago. We doubled the watch since.
-; str_moria_rumor_8|Dwarves will never set foot here again! Ever!
+str_moria_rumor_8|Cüceler buraya birdaha ayak basamayacak! Hiç bir zaman!
 ; str_moria_rumor_9|When we gather enough troops, we will go and burn down woods of elves.
 ; str_moria_rumor_10|Not much food in Moria. We're hungry. Must catch men and elves!
 ; str_moria_rumor_11|Some go to the forest in the south. None come out.
@@ -1448,7 +1448,7 @@ str_khand_rumor_2|Kılıçlarımızı bir kere çizdiğimizde kan bulması lazı
 ; str_khand_rumor_6|Rhun warriors are fierce too, but they fight on horseback, we rather maul our enemies on foot.
 ; str_khand_rumor_7|We have fought Gondorians in the past, this time we will finish them for good!
 ; str_khand_rumor_8|The West is weak and decadent. They have no warrior spirit. They will fall to our swords and axes.
-; str_khand_rumor_9|We do not fight for gold or slaves, we fight for honour and glory!
+str_khand_rumor_9|Bizler altın yada köleler için değil, Bizler onur ve şan için savaşırız!
 ; str_khand_rumor_10|The men of the West are arrogant, they do not know what might they are facing!
 str_khand_rumor_11|Bazen Rhun, Mordor ve Harad la ticaret yaparız. Bazen de savaşırız. Bu bizim kanımızda var.
 ; str_khand_rumor_12|Have you made your warrior mask yet? You'll need one soon! If the enemy can't see your face, his spirit won't be able to find you.
@@ -1465,10 +1465,10 @@ str_neutral_rumor_begin|Yarın her şey değişebilir ...
 str_neutral_rumor_2|Ölü Denizler ... kirli ve hastalıklı bir yer.
 ; str_neutral_rumor_3|The land used to be much different once.
 str_neutral_rumor_4|Fangorn ormanından uzak durun.
-; str_evil_rumor_begin|Orcs fight better at night, men fight better by day.
+str_evil_rumor_begin|Orklar geceleri, İnsanlar ise gündüzleri daha iyi savaşır.
 ; str_evil_rumor_2|Fight horseman with pike, footman with arrow and archer with shield!
 ; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
-; str_legendary_rumor_begin|Legend says that trees meet to talk in Fangorn.
+str_legendary_rumor_begin|Efsaneler, Fangornda ağaçların birbirleriyle konuştuklarını söyler.
 str_legendary_rumor_amonhen|Anduin'de, büyük heykellerin bulunduğu bir yerde özel bir yer olduğunu söylüyorlar.
 str_legendary_rumor_deadmarshes|Ölü Sazların ortasında ölülerin hayatta olduğu söylentileri dolaşıyor.
 str_legendary_rumor_mirkwood|Orklardan farklı yaratıklar Mirkwood çevresinde gezinirler.
@@ -1489,10 +1489,10 @@ str_gondor_rank_8|Gondor Şampiyonu
 str_gondor_rank_9|Gondor Kahramanı
 str_dwarf_rank_0|Cüce Yeşil Sakal
 str_dwarf_rank_1|Cüce Madenci
-; str_dwarf_rank_2|Dwarven Warrior
+str_dwarf_rank_2|Cüce savaşçısı
 ; str_dwarf_rank_3|Dwarven Longbeard
 str_dwarf_rank_4|Cüce baltası
-; str_dwarf_rank_5|Dwarven Master Axe
+str_dwarf_rank_5|Cüce Balta üstadı
 ; str_dwarf_rank_6|Dwarven Greybeard
 str_dwarf_rank_7|Cüce Kaptanı
 str_dwarf_rank_8|Cüce Şef
@@ -1500,17 +1500,17 @@ str_dwarf_rank_9|Salon Kahramanları
 ; str_rohan_rank_0|Ceorl, Commoner of Rohan
 ; str_rohan_rank_1|Thain, Servant of Rohan
 ; str_rohan_rank_2|Léod, Freeman of Rohan
-; str_rohan_rank_3|Rohir, Rider of Rohan
+str_rohan_rank_3|Rohir, Rohan Binicisi
 ; str_rohan_rank_4|Scyldbora, Shieldbearer of Rohan
 ; str_rohan_rank_5|Swéordbora, Swordbearer of Rohan
 ; str_rohan_rank_6|Frumgar, First Spear of Rohan
 ; str_rohan_rank_7|Bealdoraed, Master Adviser of Rohan
-; str_rohan_rank_8|Eorl, Nobleman of Rohan
+str_rohan_rank_8|Rohan Soylusu, Eorl
 ; str_rohan_rank_9|Haleth, Hero of Rohan
 str_mordor_rank_0|Solucan
 ; str_mordor_rank_1|Snaga
 ; str_mordor_rank_2|Backstabber of Gorgoroth
-; str_mordor_rank_3|Sentry of Cirith Ungol
+str_mordor_rank_3|Cirith Ungol gözcüsü
 ; str_mordor_rank_4|Slavedriver of Udûn
 ; str_mordor_rank_5|Despoiler of Durthang
 str_mordor_rank_6|Morannon Gözcüsü
@@ -1520,11 +1520,11 @@ str_mordor_rank_8|Barad-dûr Komutanı
 str_isengard_rank_0|Fare
 ; str_isengard_rank_1|Snaga
 ; str_isengard_rank_2|Crankturner
-; str_isengard_rank_3|Treeburner
-; str_isengard_rank_4|Wargfeeder
-; str_isengard_rank_5|Ironsmelter
-; str_isengard_rank_6|Forgemaster
-; str_isengard_rank_7|Captain of Orthanc
+str_isengard_rank_3|Ağaç yakıcı
+str_isengard_rank_4|Warg besleyici
+str_isengard_rank_5|DemirOcağı
+str_isengard_rank_6|Ocak ustası
+str_isengard_rank_7|Orthanc Kaptanı
 str_isengard_rank_8|Lejyonların Komutanı
 str_isengard_rank_9|Ak Büyücünün sağ eli
 ; str_lorien_rank_0|Sador, Faithful to Lorien
@@ -1536,7 +1536,7 @@ str_isengard_rank_9|Ak Büyücünün sağ eli
 ; str_lorien_rank_6|Tiribrannon, Warden of Lorien
 ; str_lorien_rank_7|Glaurchir, Grandmaster of Lorien
 ; str_lorien_rank_8|Galadhîr, Radiant Lord of Lorien
-; str_lorien_rank_9|Thalion, Hero of Lorien
+str_lorien_rank_9|Thalion, Lorienin Kahramanı
 ; str_imladris_rank_0|Háno, Brother of Imladris
 str_imladris_rank_1|Macar, Imadris savaşçısı
 ; str_imladris_rank_2|Sindacollo, Grey Cloak of Imladris
@@ -1544,9 +1544,9 @@ str_imladris_rank_1|Macar, Imadris savaşçısı
 ; str_imladris_rank_4|Turmacolindo, Shieldbearer of Imladris
 ; str_imladris_rank_5|Langocolindo, Swordbearer of Imladris
 str_imladris_rank_6|Aráto, Imladris Şampiyonu
-; str_imladris_rank_7|Hesto, Captain of Imladris
+str_imladris_rank_7|Hesto, Imladris Kaptanı
 ; str_imladris_rank_8|Runando, Redeemer of Imladris
-; str_imladris_rank_9|Callo, Hero of Imladris
+str_imladris_rank_9|Callo, Imladris Kahramanı
 ; str_woodelf_rank_0|Sador, Faithful to Greenwood
 ; str_woodelf_rank_1|Tauron, Forester of Greenwood
 ; str_woodelf_rank_2|Hirfaron, Master Hunter of Greenwood
@@ -1555,10 +1555,10 @@ str_imladris_rank_6|Aráto, Imladris Şampiyonu
 ; str_woodelf_rank_5|Maglagyl, Swordbearer of Greenwood
 ; str_woodelf_rank_6|Tiribrannon, Warden of Greenwood
 ; str_woodelf_rank_7|Pengherdir, Bowmaster of Greenwood
-; str_woodelf_rank_8|Armagor, Royal Swordsman of Greenwood
-; str_woodelf_rank_9|Thalion, Hero of Greenwood
+str_woodelf_rank_8|Armagor, YeşilOrman'ın Kraliyet kılıç ustası
+str_woodelf_rank_9|Thalion, YeşilOrman ın Kahramanı
 str_dale_rank_0|Dale halkı
-; str_dale_rank_1|Freeman of Dale
+str_dale_rank_1|Dale Hür adamı
 str_dale_rank_2|Dale Askeri
 str_dale_rank_3|Dale botcusu
 ; str_dale_rank_4|Shieldbearer of Dale
@@ -1620,7 +1620,7 @@ str_moria_rank_9|Derinlerdeki Terör
 str_guldur_rank_0|Solucan
 ; str_guldur_rank_1|Snaga
 ; str_guldur_rank_2|Backstabber of Gorgoroth
-; str_guldur_rank_3|Sentry of Cirith Ungol
+str_guldur_rank_3|Cirith Ungol gözcüsü
 ; str_guldur_rank_4|Slavedriver of Udûn
 ; str_guldur_rank_5|Despoiler of Durthang
 str_guldur_rank_6|Morannon Gözcüsü
@@ -1634,7 +1634,7 @@ str_gundabad_rank_2|Tünel faresi
 ; str_gundabad_rank_4|Plunderer of the Hills
 ; str_gundabad_rank_5|Despoiler of the Mountains
 ; str_gundabad_rank_6|Dwarfbane
-; str_gundabad_rank_7|Wargrider Warlord
+str_gundabad_rank_7|KurtBinicisi Savaşlordu
 str_gundabad_rank_8|Büyük goblin
 ; str_gundabad_rank_9|Pillager of the North
 ; str_dunland_rank_0|Pup
@@ -1645,7 +1645,7 @@ str_dunland_rank_4|Güçlü kurt
 str_dunland_rank_5|Ulu kurt
 str_dunland_rank_6|Büyük kurt
 ; str_dunland_rank_7|Wolfpack Leader
-; str_dunland_rank_8|Chief of the Clans
+str_dunland_rank_8|Klanların Şefi
 ; str_dunland_rank_9|Freca's Avenger
 ; str_beorn_rank_0|Forest Cub
 ; str_beorn_rank_1|Forest Tracker
@@ -1656,7 +1656,7 @@ str_beorn_rank_2|Orman Avcısı
 str_beorn_rank_6|Orman ayısı
 ; str_beorn_rank_7|Forest Great Bear
 str_beorn_rank_8|Orman devi
-; str_beorn_rank_9|Hero of the Forests
+str_beorn_rank_9|Ormanların Kahramanı
 ; str_tld_introduction|TLD Introduction - you should go to Edoras.
 ; str_tld_erebor_dungeon|The smell of death surrounds this place. I'd better be careful.
 ; str_tld_spear_hit|Ouch!
@@ -1706,7 +1706,7 @@ str_shortname_region_pelennor|Pelennor çayırları
 str_shortname_region_subfac_dol_amroth|Belfalas
 str_shortname_region_subfac_ethring|Ringló Vale
 ; str_shortname_region_subfac_lossarnach|Fiefdom of Lossarnach
-; str_shortname_region_subfac_pinnath_gelin|the region of Pinnath Gelin
+str_shortname_region_subfac_pinnath_gelin|Pinnath Gelin Bölgesi
 ; str_shortname_region_subfac_blackroot|the Fiefdom of Lamedon
 str_shortname_region_n_ithilien|Kuzey Ithilien
 str_shortname_region_c_ithilien|Emyn-Arnen
@@ -1716,7 +1716,7 @@ str_shortname_region_druadan_forest|Drúadan ormanı
 str_shortname_region_anorien|Anorien
 ; str_shortname_region_rohan0|the Folde
 str_shortname_region_rohan1|Doğu emnet
-; str_shortname_region_rohan2|Westemnet
+str_shortname_region_rohan2|Batı Emnet
 str_shortname_region_rohan3|Doğufold
 str_shortname_region_rohan4|Batıağıl
 str_shortname_region_rohan5|Miğfer Dibi

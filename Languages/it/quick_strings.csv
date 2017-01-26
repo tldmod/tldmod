@@ -331,7 +331,7 @@ qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} s
 qstr_The_last_time_you_sa|L'ultima volta che l'ho vist{reg1?a lei:o lui}, {s1}
 qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?lei:lui}, {s1}
 qstr_The_{s50}|Il {s50}
-qstr_{s50}_belongs_to_{s1|{s50} appartiene a {s1} of {s2}.^
+qstr_{s50}_belongs_to_{s1|{s50} appartiene a {s1} di {s2}.^
 qstr_Current_garrison_con|La guarnigione attuale consiste in {reg5} uomini.^Possiede scorte di cibo per {reg6} giorni.
 qstr_Very_Poor|Molto povero
 qstr_Poor|Povero
@@ -458,7 +458,7 @@ qstr_Noone..._oppossssses|Nessuuuno... può oppooorssi..  a Barad Dur... e vivee
 qstr_All..._must..._submi|Tutti... devono... sottomettersi... e... servire...
 qstr_I_serve_the_Eye!|Servo il grande Occhio!
 qstr_I_shall_serve_the_Ey|Servirò il Grande Occhio!
-qstr_{s1}_has_been_besieg|{s1} è sotto assedio da parte di {s2} of {s3}.
+qstr_{s1}_has_been_besieg|{s1} è sotto assedio da parte di {s2} di {s3}.
 qstr_The_forces_of_{s2}_m|Le forze di {s2} marciano su {s15}!
 qstr_The_hosts_of_{s2}_ma|I proprietari terrieri di {s2} rientrano per difendere le loro case!
 qstr____Ruins_of_{s1}___|Rovine di {s1}
@@ -565,7 +565,7 @@ qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
 qstr_^No_food:___{reg7}|^Niente cibo: -{reg7}
-qstr_Current_party_morale|L'attuale morale del gruppo è {reg5}.^I modificatori correnti del morale del gruppo sono:^^ morale di Base: +50^Dimensione del gruppo: {s2} {reg1}^Leadership: {s3} {reg2}^varietà di cibo: {s4} {reg3} {s5}^oggetti speciali: {s6} {reg6}^eventi recenti: {s7} {reg4}^TOTALE: {reg5}
+qstr_Current_party_morale|L'attuale morale del gruppo è {reg5}.^I modificatori correnti del morale del gruppo sono:^^ morale di Base: +50^Dimensione del gruppo: {s2}{reg1}^Comando: {s3}{reg2}^Varietà di cibo: {s4}{reg3}{s5}^Oggetti speciali: {s6}{reg6}^Eventi recenti: {s7}{reg4}^TOTALE: {reg5}
 qstr_Defending|Difendendo
 qstr_Gathering_army|Raccogliendo esercito
 qstr_Besieging_{s11}|Assediando {s11}
@@ -583,7 +583,7 @@ qstr_Weekly_upkeep_for_tr|Salario settimanale per le truppe:^{reg5} Punti Risors
 qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} Punti Risorsa ({reg5})
 qstr_No_upkeep_costs|Nessun costo di mantenimento
 qstr_Orc_hiring_bonus:_+2|Bonus orchi arruolati: +2/3 per ogni orco^
-qstr_Current_party_size_l|L'attuale limite della dimensione del gruppo è {reg5}.^I modificatori in uso sono:^^Dimensiona inziale: +10^Leadership: {s2}{reg1}^Carisma: {s3}{reg2}^Gradi: {s4}{reg3}^{s5}TOTALE: {reg5}
+qstr_Current_party_size_l|L'attuale limite della dimensione del gruppo è {reg5}.^I modificatori in uso attuali sono:^^Dimensione inziale: +10^Comando: {s2}{reg1}^Carisma: {s3}{reg2}^Grado: {s4}{reg3}^{s5}TOTALE: {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|Rapporto forza fazione:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Le fazioni sono normalmente assediate quando sotto forza {reg1}.
@@ -737,7 +737,7 @@ qstr_{s1}_was_killed_on_t|{s1} è stato ucciso sul campo di battaglia. La missio
 qstr_{s1}_has_been_defeat|{s1} è stato sconfitto. La missione è cancellata.
 qstr_You_must_follow_{s1}|Devi seguire {s1}!
 qstr_You_must_follow_{s1}!|Devi seguire {s1}! Questo è il tuo ultimo avviso!
-qstr_Parties_defeated:_{r|Le compagnie sono sconfitte: {reg1}
+qstr_Parties_defeated:_{r|Compagnie sconfitte: {reg1}
 qstr_{s1}_is_scouted.|{s1} è esplorato.
 qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l' unico sovrano della Terra di Mezzo!
 qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata!
@@ -934,7 +934,7 @@ qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qu
 qstr_{s9}_asked_you_to_di|{s9} ti ha chiesto di inviare una pattuglia di esplorazione vicino a {s13}.^Ottieni 7 soldati di {s15}, di cui almeno 1 é {s14}, avvicinati a {s13} e parla a {s14} per inviare la pattuglia.
 qstr_We_need_to_take_the_|Doppiamo portare la guerra al nemico, {playername}. In questo momento, possiamo farlo colpendo le loro pattuglie e messaggieri. Voglio che tu elimini {reg1} {s13} , questo ci aiuterà a riprenderci.
 qstr_We_need_to_grind_dow|Dobbiamo colpire i nostri vili nemici, {playername}. Le loro pattuglie e carovane stanno crescendo troppo coraggiosamente per i miei gusti. Voglio che tu elimini {reg1} {s13}, così incominceranno a capire cosa gli aspetta.
-qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di occuparti delle compagnie di {reg1} {s13}.
+qstr_{s9}_asked_you_to_el|{s9} ti ha chiesto di eliminare {reg1} compagnie di {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} ti ha chiesto di liberare {s13} dalla minacca di un Troll furioso nella sua periferia.
 qstr_You_chose_well_{sir/|Ha scelto bene, {sir/madam}. I miei ragazzi sanno mantenere la parola e guadagnarsi la paga.
 qstr_Well_done_{sir/madam|Ben Fatto, {sir/madam}. Continua a mandarci soldi e vino, e non dovrai aver paura di nessun tuo nemico.
