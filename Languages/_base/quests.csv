@@ -28,6 +28,8 @@ qst_mirkwood_sorcerer|Slay a sorcerer in Mirkwood
 qst_mirkwood_sorcerer_text|Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him.
 qst_find_lost_spears|Find the lost spears of king Bladorthin
 qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
+qst_defend_village|Defend Village
+qst_raid_village|Raid Village
 qst_rescue_prisoners|Rescue {reg1} Prisoners
 qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
 qst_scout_enemy_town|Scout Enemy Town
@@ -72,3 +74,6 @@ qst_oath_of_vengeance|Oath of Vengeance
 qst_oath_of_vengeance_text|Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
 qst_deliver_gift|Deliver a {s4} of {s1} from {s2} to {s3}
 qst_deliver_gift_text|You have requested to deliver a {s4} of {s1} to {s3} from {s2}.
+qst_ring_hunters|Ring Hunters
+qst_ring_hunters2|Ring Hunters - Completed
+qst_quests_end|Quests End

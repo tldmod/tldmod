@@ -254,6 +254,43 @@ dlga_find_lost_spears_permission:lord_pretalk|I already gave you permission, {pl
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Alright, {playername}, you may enter into the mountains.
 dlga_find_lost_spears_permission:lord_pretalk.1|I'm sorry, but I don't know or trust you well enough, {playername}.
 dlga_find_lost_spears_permission_yes:lord_pretalk|I thank you, my Lord.
+dlga_lord_talk:tell_dorwinion_sack|My lord, I found a sack with a fading emblem of grapes and some shards of wood and metal inside that could have belong to a spear.
+dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Very interesting. This ancient sack could have born the mark of the finest wines that could only come from Dorwinion.
+dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|I also found this Rhun helm in the sack. Could this tell us more about what happened to the Spears?
+dlga_tell_dorwinion_sack_3:lord_pretalk|Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for. NOTE: THIS QUEST IS NOT YET COMPLETED. TO BE CONTINUED.
+dlga_lord_talk:ring_hunters_start|My lord, I am prepared to take more arduous tasks to serve you better and end this war. What would you have me do?
+dlga_ring_hunters_start:ring_hunters_check|{playername}, I have heard of your exploits and you have made a name for yourself. I have a task specifically for such as yourself. You can deal with it however you wish.  Bloodshed cannot be avoided, especially against this group I am about to send you of to. Do you have sufficient men?
+dlga_ring_hunters_check:ring_hunters_1|Yes, my lord. I have a group of well-trained, battlehardened men. We are ready for anything.
+dlga_ring_hunters_check:ring_hunters_check_failed|I am afraid not, my lord.
+dlga_ring_hunters_check_failed:lord_pretalk|Then you are not ready for this task yet,{playername}. Go and gather more troops.
+dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.   One with their loot moving towards Mirkwood Forest. The other, a considerable size, towards Beorn's House, perhaps to continue their destructive search.
+dlga_ring_hunters_2:ring_hunters_what|My lord, what could they be searching for?
+dlga_ring_hunters_2:ring_hunters_accept|My lord, I will do what is necessary to stop these... 'Ring Hunters'
+dlga_ring_hunters_2:ring_hunters_reject|I am not ready for such a task just yet.
+dlga_ring_hunters_accept:close_window|You are brave, General. We will await news of your success
+dlga_ring_hunters_reject:lord_pretalk|I see. Let me know when you are, but make haste, we do not want them to succeed.
+dlga_ring_hunters_what:ring_hunters_2|It is hard to know exactly what they want with this, but we can see that they are going through great lengths to find what they are looking for.   All we can surmise is that this must be a powerful weapon of sorts, a weapon to be used to cause more destruction under the Dark Lord's name.
+dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for these..   Whether true or not, these must not fall into the Dark Lord's hands.
+dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news.. Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
+dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news,{playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something.. a disturbance.
+dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|I am glad, then. Whatever this weapon may have been... they may still be looking for it. I will remain vigilant and remain on the lookout for more of these Ring Hunters.
+dlga_ring_hunter_quest_end:close_window|We all will. Thank you once more for your service, {playername}.
+dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. I also came across this
+dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|This is a minor ring of power.
+dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we have prevented the Dark Lord from obtaining this, which he will undoubtly use to end more lives.
+dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use against the Dark Lord's forces. We know you will use it well.
+dlga_ring_hunter_lair_quest_end:close_window|This is a tremendous honour, my Lord. Thank you. I shall continue the battle against the Dark lord, and this will help tremendously.
+dlga_start:ring_hunters_party_attack|Look here, men. Another group to slaughter.
+dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampaging has come to an end.
+dlga_ring_hunters_party_attack_2:close_window|Everyone, make sure you search their packs and their fingers. Save one to torture. Everything else you can eat.
+dlga_start:ring_hunter_lair_defeat|That ring belongs to the Dark Lord! You can not have it!
+dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|This belongs to me now.
+dlga_ring_hunter_lair_defeat2:close_window|This defeat does not matter... our war party raged on! You are too late to save them!
+dlga_start:beorn_message|General, we received a message from {s1} that a large bandit party was headed our way! We had no time to gather enough forces, and when we heard the sound of battle, we prepared for the worse!
+dlga_beorn_message:beorn_message2|That was no ordinary bandit party. They were a collection of the Dark Lord's best...however, their leaders were not here...They have a lair near Mirkwood Forest and I must make haste.
+dlga_beorn_message2:beorn_message_end|Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory
+dlga_beorn_message_end:beorn_message_close|Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.
+dlga_beorn_message_close:close_window|Yes, General. We will remain vigilant. We will continue our efforts to recruit more men from surrounding villages. Your victory today has inspired us all.
 dlga_lord_give_troops:lord_give_troops_check|Reinforce my party? I can always use a few more soldiers.
 dlga_lord_give_troops:lord_pretalk|Unfortunately you don't have any {s14} soldiers to reinforce me with.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Let me check the soldier roster...
