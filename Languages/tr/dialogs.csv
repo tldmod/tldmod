@@ -1,5 +1,5 @@
-dlga_start:mutiny_pretalk_1|Hey, {playername}. Bak sana ne diyeceğiz.. ^Burdaki adamlar homurdanıyorlar! Daha mutlu olmak, daha az yürümek istiyorlar.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Derhal yerine geç aptal ! Şu anda savaştayız seninle uğraşacak vaktim yok !
+dlga_start:mutiny_pretalk_1|Hey, {playername}. Bak sana ne diyeceğiz.. Buradaki adamlar homurdanıyor! Daha mutlu olmak, daha az yürümek istiyorlar.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Sıraya geri dön,aptal! Şu an savaştayız ve ben senin komutanınım.
 dlga_mutiny_pretalk_2:close_window|Nasıl isterseniz komutanım, dilediğiniz gibi...
 dlga_start:mutiny_talk_1|Merhaba komutan. Bak sana ne diyeceğiz... Burdaki adamlar mutlu değil, hem de hiç değil. ^Yeterli insan eti yoksa yeterli eğlence de yoktur. ^Buradakiler senin yeterince iyi olmadığını düşünüyor, komutan!
 dlga_mutiny_talk_1:mutiny_talk_2|Ne?Savaş sırasında isyan mı? ^Bunun cezası ölümdür,sülük!
@@ -7,16 +7,16 @@ dlga_mutiny_talk_2:close_window|Sana ne diyeğeciz... ^Burdaki adamlar SENİ ÖL
 dlga_start:troll_introduce_1|Sorun mu var?
 dlga_start:troll_talk_1|Sinirlendin mi?
 dlga_troll_introduce_1:troll_goodbye|Oha! Konuşan bir troll?!
-dlga_troll_introduce_1:close_window|Benim atım var.
+dlga_troll_introduce_1:close_window|Benim bir atım var.
 dlga_troll_talk_1:troll_talk_2|Trolle beni, troll.
-dlga_troll_talk_1:close_window|Benim atım var.
-dlga_troll_talk_2:troll_talk_3|Hodri meydan!^^{s4}
+dlga_troll_talk_1:close_window|Benim bir atım var.
+dlga_troll_talk_2:troll_talk_3|Meydan okuma kabul edildi!^^{4}
 dlga_troll_beaten:troll_talk_1|Zekanızın önünde diz çöküyorum, Trollerin Usta Tuzakçısı!
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Tekrar merhaba, {playername}!
 dlga_start:hobbit_pippin_talk_met|Tekrar merhaba, {playername}!
-dlga_start:hobbit_general_talk_1|Merhaba, {sir/madam}! Benim adım Meriadoc Brandybuck ama bana Merry diyebilirsiniz!
-dlga_start:hobbit_general_talk_1.1|Merhaba, {sir/madam}! Benim adım Peregrin Took ama bana Pippin diyebilirsiniz!
+dlga_start:hobbit_general_talk_1|Merhaba, {sir/madam}! Benim adım Meriadoc Brandybuck fakat sen bana Merry diyebilirsin!
+dlga_start:hobbit_general_talk_1.1|Merhaba, {sir/madam}! Benim adım Peregrin Took fakat sen bana Pippin diyebilirsin!
 dlga_hobbit_general_talk_1:close_window|Şimdi zamanım yok.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Konuş. Senin ırkından birini daha önce hiç görmemiştim.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Konuş.Sanırım sana benzeyen birini Edoras'ta görmüştüm.

@@ -276,7 +276,7 @@ dlga_marshall_suggest:lord_pretalk|Non importa, mi fido del tuo giudizio.
 dlga_marshall_answer:close_window|Molto bene, {playername}, mi fido del tuo consiglio. Manderò dei messaggeri a radunare le nostre forze.^Seguimi e stammi vicino - cavalchiamo a {s4}!
 dlga_lord_talk:deliver_gift_1|Porto in dono del {s1}, da parte di {s3}, al popolo di {s2}.
 dlga_send_gift_1:lord_pretalk|Sei già {s4}, {playername}. Sarbbe saggio conegnare prima questo.
-dlga_send_gift_1:lord_pretalk.1|Sfortunatamente non puoi permetterti di inviare un dono proprio ora, {playername}.^^[not enough Resource Points]
+dlga_send_gift_1:lord_pretalk.1|Sfortunatamente non puoi permetterti di inviare un dono proprio ora, {playername}.^^[Punti Risorsa non sufficenti]
 dlga_send_gift_1:send_gift_2|Molto bene. A chi vorresti consegnare un dono?
 dlga_send_gift_1:send_gift_2.1|Molto bene. Chi vorresti corrompere?
 dlga_send_gift_2:lord_pretalk|Non importa.
