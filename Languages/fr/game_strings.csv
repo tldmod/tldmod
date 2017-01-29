@@ -1,6 +1,7 @@
 str_yes|Oui.
 str_no|Non.
 str_noone|personne
+; str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} et {s51}
 str_s5_s_party| Troupe de {s5}
 str_s5_s_host|Armée de {s51}
@@ -20,7 +21,7 @@ str_blunt_hold_fire|N'engagez l'ennemi que sur mon ordre!
 str_tutorial_ammo_refilled|Vous disposez à nouveau de projectiles
 str_custom_battle_1|Le captaine Malvogil et sa compagnie du Gondor ont intercepté un groupe de renforts du Harad. Poussant son cri de guerre, il éperonne son cheval et mène sans faillir ses loyaux soldats dans un affrontement féroce.
 str_custom_battle_2|Celeborn de la Lòrien mène une patrouille de cavaliers et d'archers,  quand l'avant garde de ses éclaireurs l'avertissent qu'une force de mauvais hommes aux visages sombres approche. Ce sont les redoutés Númenóréens Noirs! Ceux-ci n'ont pas été vu depuis des âges près de la Lothlórien, mais maintenant ils doivent être repoussés dans le néant .
-str_custom_battle_3|Le seigneur Grimbold du Rohan mène la dernière défense devant les murs contre une armée de l'Isengard. Maintenant, puisque les assiégeants se préparent pour un assaut final des murs, il doit tenir fermement car de sa bravour dépendra l'avenir du Royaume de ses ancêtres.
+; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
 str_custom_battle_4|Alors que les éclaireurs informent le seigneur Breanhelm de l'approche d'une bande armé de Rhûn, Il décide de préparer rapidement les défenses du camp et d'essayer de tenir contre un ennemi supérieur en nombre.
 str_custom_battle_5|Ugluk a amené ses féroces Orques dans l'Ouest, avec une promesse de pillage. S'il peut faire tomber cette forteresse naine aujourd'hui, ses maîtres de Barad-Dûr seront extrêmement satisfaits.
 str_custom_battle_6|Ugluk et ses groupes de pilleurs orques étaient aussi vifs que possible en fuyant les patrouilles elfes. Mais les bonnes fortunes ne peuvent durer éternellement,  et il semble que les sales peaux-pâles aient maintenant leur part.
@@ -203,7 +204,7 @@ str_persuasion_summary_very_bad|Vous faites de votre mieux pour convaincre {s50}
 str_persuasion_summary_bad|Vous essayez de convaincre {s50}, mais {reg51?elle:il} vous discrédite depuis le début. Même vos meilleurs arguments sonnent faux à vos propres oreilles. {s50} n'a pas eu une très bonne impression de votre discours.
 str_persuasion_summary_average|{s50} se révèle être un bon orateur à l'esprit vif, et vous n'arrivez pas à répondre quelque chose de concret qu'{reg51?elle:il} ne puisse pas contredire avec un argument rationnel. En fin de compte, aucun de vous ne parvient à gagner du terrain pendant cette discussion.
 str_persuasion_summary_good|Grâce votre vivacité d'esprit et une argumentation soignée, vous parvenez à exposer votre cause, forçant {s50} à céder sur plusieurs points. Cependant, {reg51?elle:il} continue à douter de votre requête.
-str_persuasion_summary_very_good|Vous livrez un discours passionné qui résonne aux oreilles de tout le monde comme une poésie. Le monde lui-même semble se calmer afin de mieux vous entendre. Les mots utilisés ont touché {s50} profondément, et {reg51?elle:il} semble bien mieux disposé à vous apporter son aide.
+; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} d'Erech
@@ -1090,7 +1091,7 @@ str_lord_insult_goodnatured|camarade désagréable
 str_lord_insult_upstanding|scélérat indigne
 str_rebellion_dilemma_default|[suzerain]
 str_rebellion_dilemma_martial|{s45} a clairement été lésé. Bien que j'ai prêté serment à {s46}, il ne m'engage pas à le soutenir s'il a usurpé illégalement le trône.
-str_rebellion_dilemma_quarrelsome|Hmm. {s46} ne m'a jamais donné mon dû, alors je ne pense pas lui devoir beaucoup. Cependant, peut-être que {s45} ne sera pas meilleur, et {s46} s'est au moins dévoilé lui-même.
+; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
 str_rebellion_dilemma_pitiless|Hmm. {s45} dit qu'{reg3?qu'elle est l'héritière:il est l'héritier} légitime du trône. Ce qui est bien -- cela m'absout de mon serment à {s46}. Mais je dois quand même soupeser ma décision avec précaution.
 str_rebellion_dilemma_cunning|Hmm. J'ai prêté allégeance à {s46}, mais les puissants ne sont pas liés par leurs serments comme les gens ordinaires. Notre devoir est envers notre propre capacité à régner, à imposer l'ordre et à empêcher la guerre de tous contre tous.
 str_rebellion_dilemma_sadistic|Hmm. Dans ce bas-monde, un homme avisé doit penser par lui-même, car personne ne le fera. Ainsi -- qu'y a-t-il pour moi ?
@@ -1818,7 +1819,7 @@ str_imladris_gift0|Pain blanc et beurre d'herbes
 str_imladris_gift1|Verrerie en cristal
 str_imladris_gift2|Miruvor
 str_imladris_gift3|Bannières brodées et cors incrustés d'argent
-str_imladris_gift4|Plantes médicinales et onguents
+; str_imladris_gift4|Healing Herbs and Ointments
 str_woodelf_gift0|Douces peaux d'animaux
 str_woodelf_gift1|Pointes de flèches et archerie
 str_woodelf_gift2|Lances de chasse
@@ -1874,3 +1875,4 @@ str_beorn_gift1|Cire d'abeille et tissu de chanvre
 str_beorn_gift2|Ruches
 str_beorn_gift3|Colliers d'ambre
 str_beorn_gift4|Poneys bien entraînés
+; str_cmenu_follow|Accompany

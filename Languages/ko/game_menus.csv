@@ -3,23 +3,23 @@ mno_start_good|새로운 시대의 새벽
 mno_start_evil|인간의 황혼
 mno_go_bback|돌아가기
 menu_start_phase_2|^^^^^가운데땅. 그림자는 동쪽에서 커 나가고 있고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이 때까지 보지 못했던 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
-mno_go_forth|당신이 선택한 길로 출발합니다.
-menu_start_game_3            |^^^^^^^당신의 이야기를 선택하세요:
-mno_custom_battle_scenario_1 |교전, 곤도르 vs 하라드
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^당신의 이야기를 선택하세요:
+mno_custom_battle_scenario_1|교전, 곤도르 vs 하라드
 mno_custom_battle_scenario_12|전투를 위한 진영을 선택하세요.
-mno_custom_battle_scenario_3 |교전, 요정 vs 검은 누메노르인
-mno_custom_battle_scenario_4 |헬름 협곡 방어전, 로한 vs 아이센가드
-mno_custom_battle_scenario_5 |교전, 북부인 vs 룬
-mno_custom_battle_scenario_6 |공성 공격, 오크 vs 난쟁이
-mno_custom_battle_scenario_7 |기습, 오크 vs 어둠숲
+mno_custom_battle_scenario_3|교전, 요정 vs 검은 누메노르인
+mno_custom_battle_scenario_4|헬름 협곡 방어전, 로한 vs 아이센가드
+mno_custom_battle_scenario_5|교전, 북부인 vs 룬
+mno_custom_battle_scenario_6|공성 공격, 오크 vs 난쟁이
+mno_custom_battle_scenario_7|기습, 오크 vs 어둠숲
 mno_custom_battle_scenario_11|연습 전투(밸런스 조정!)
 mno_custom_battle_scenario_10|배경 연습 전투
-mno_troll_battle_scenario    |연습 트롤 전투
-mno_warg_battle_scenario     |연습 와르그 전투
-mno_build_your_own_scene     |**제 3시대에서 당신만의 이야기를 만드세요 **
-mno_go_back                  |돌아가기
+mno_troll_battle_scenario|연습 트롤 전투
+mno_warg_battle_scenario|연습 와르그 전투
+mno_build_your_own_scene|**제 3시대에서 당신만의 이야기를 만드세요 **
 menu_tutorial|^^제 3시대 모드는 마운트 앤 블레이드 원작에서는 없는 많은 특징을 갖고 있습니다. 그것들은 발매될 때 PDF에 포함되었으나 스포일러 되지 않고 묘사된 것들입니다. 원작 모듈을 사용하기 위해 기본적인 게임 기능을 튜토리얼 할 것입니다.
 mno_go_back_dot|돌아가기
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|유지비 보기
 mno_view_character_report|캐릭터 정보 보기
 mno_view_party_size_report|부대크기 보기
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|도망자들로부터의 무거운 타�
 menu_town_bandits_succeeded|고블린은 당신앞에 낙엽처럼 쓰러졌습니다! 이내 당신은 공격자 대부분이 의식을 잃고 죽거나 죽어가는 가운데 홀로 서 있었습니다. 위협으로부터 그들을 구원함으로서 지역 주민들은 확실히 매우 감사히 여길 것입니다.
 menu_town_brawl_lost|^^^^^^당신은 의식을 잃고 쓰러졌습니다. 당신을 공격한 이들은 그들의 일상으로 돌아가기 전 빠르게 당신 품을 뒤져 값나가는 것을 챙겨갔습니다.
 menu_town_brawl_won|^^^^당신은 모든 상대를 두들겨 팬 후 소요를 진압하기 위해 경비병을 보냈습니다. 당신은 빠르게 품 속을 뒤져 값 나가는 물건을 챙기고 사라졌습니다.^다음 번에 만났을 때 아마 그들은 더 많은 존경을 표하고 물러갈 것입니다.
+; menu_close|Nothing.
 menu_town|당신은 {s60}에 도착했습니다.{s12}{s13}
 mno_town_menu_0|들어가기
 mno_town_menu_0_door|입구
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|말 상인과 거래
 mno_town_prison_door|감옥에 입장
 mno_dungeon_enter|산 속에서 잃어버린 창들을 찾기
 mno_dungeon_enter_door|문 열기
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|{s61}의 병영을 방문
 mno_speak_with_elder|{s6}와(과) 대화
 mno_isengard_underground|지하 선술집에 들어가기
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^{s1} 는 패배했습니다!^{s1}은 {s1
 menu_ruins|^^^^당신은 {s1} 가까이 접근했습니다. 비록 강력한 주둔지가 파괴되었지만, 당신은 여전히 요새의 흔적과 녹슨 무기를 볼 수 있습니다.
 menu_legendary_place|^^^^당신은 소문을 따라 {s1}을 찾아냈다. 당신은 이 장소를 탐험하고 소문이 진실인지 직접 확인할 수 있다.
 mno_explore|이 장소 탐험하기
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^당신은 오크 무리에 공격 받고 있는 작은 상단을 발견했습니다. 당신은 무엇을 하겠습니까?
 mno_help|이방인을 돕기
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|놔 둔 채로 떠나기
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|놔 둔 채로 떠나기
 menu_custom_battle_choose_faction1|^^^^^^^^^^당신의 진영과 이점을 선택하세요:
 mno_good_equal|선한 진영
 mno_bad_equal|사악한 진영
@@ -366,3 +379,5 @@ menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은
 ; mno_scene4|Battlefield8 (file scn battlefield8.sco)
 ; mno_scene5|Battlefield9 (file scn battlefield9.sco)
 ; mno_back_3dot|Back...
+mno_back|돌아가기
+; mno_next|Next...

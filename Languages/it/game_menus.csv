@@ -4,22 +4,22 @@ mno_start_evil|Il tramonto degli Uomini
 mno_go_bback|Torna Indietro
 menu_start_phase_2|Terra di Mezzo. Un'ombra cresce a oriente, ^ oscure entità da lungo tempo nascoste, emergono  nuovamente. ^ I popoli liberi si preparano alla guerra, di una portata tale come non se n'era vista da un'era. ^ Uomini, Elfi, Nani e Orchi; tutti ne saranno parte. ^^ Cosa avverrà, comunque, è tutto da vedere... 
 mno_go_forth|Prosegui per il sentiero che hai scelto...
-menu_start_game_3            |^^^^^^^^Scegli il tuo scenario:
-mno_custom_battle_scenario_1 |Schermaglia, Fazioni di Gondor vs Harad
+menu_start_game_3|^^^^^^^^Scegli il tuo scenario:
+mno_custom_battle_scenario_1|Schermaglia, Fazioni di Gondor vs Harad
 mno_custom_battle_scenario_12|Scegli le fazioni per la battaglia
-mno_custom_battle_scenario_3 |Schermaglia, Elfi vs Númenóreani Neri 
-mno_custom_battle_scenario_4 |Difesa del Fosso di Helm, Rohan vs Isengard
-mno_custom_battle_scenario_5 |Schermaglia, Fazioni del Nord vs Rhûn
-mno_custom_battle_scenario_6 |Assedio, Orchi vs Nani
-mno_custom_battle_scenario_7 |Imboscata, Orchi vs Bosco Atro
+mno_custom_battle_scenario_3|Schermaglia, Elfi vs Númenóreani Neri 
+mno_custom_battle_scenario_4|Difesa del Fosso di Helm, Rohan vs Isengard
+mno_custom_battle_scenario_5|Schermaglia, Fazioni del Nord vs Rhûn
+mno_custom_battle_scenario_6|Assedio, Orchi vs Nani
+mno_custom_battle_scenario_7|Imboscata, Orchi vs Bosco Atro
 mno_custom_battle_scenario_11|Testa Battaglie (Bilanciamento!)
 mno_custom_battle_scenario_10|Testa Scenario Battaglia
-mno_troll_battle_scenario    |Testa Battaglie con Troll
-mno_warg_battle_scenario     |Testa Battaglie con Mannari
-mno_build_your_own_scene     |** Costruisci il tuo personale scenario per TLD **
-mno_go_back                  |Torna Indietro
+mno_troll_battle_scenario|Testa Battaglie con Troll
+mno_warg_battle_scenario|Testa Battaglie con Mannari
+mno_build_your_own_scene|** Costruisci il tuo personale scenario per TLD **
 menu_tutorial|^^TLD ha molte features sconosciute al M&B nativo. Queste sono descritte in alcuni dettagli nel file PDF incluso nel file scaricato. Per il tutorial sulle meccaniche base di gioco, fare riferimento al native.
 mno_go_back_dot|Torna Indietro
+mno_action_view_troop_trees|Visualizza alberi truppe.
 mno_view_upkeep_costs|Guarda costi di mantenimento
 mno_view_character_report|Consulta il rapporto sul personaggio
 mno_view_party_size_report|Consulta il rapporto sulle dimensioni della compagnia
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^ Un duro colpo da parte del fuggit
 menu_town_bandits_succeeded|^^^^^ I goblin cadono davanti a voi come il grano sotto la falce! Presto scopri di essere l'unico rimasto in piedi, mentre la maggior parte dei tuoi nemici si trova privo di sensi, morto\no moribondo. Certamente le genti del posto ti saranno molto grate per averle salvate da questa minaccia.
 menu_town_brawl_lost|^^^^^^Sei stato colpito a tradimento. Coloro che ti hanno attaccato si affrettano a frugarti in cerca di cose di valore, prima di darsi alla fuga.
 menu_town_brawl_won|^^^^^Hai battuto tutti gli avversari e le guardie hanno riportato l'ordine. Velocemente cerchi oggetti di valore per poi sparire finchè non si calmano le acque.^Magari la prossima volta mostreranno più rispetto e faranno marcia indietro.
+menu_close|Niente.
 menu_town|Sei arrivato a {s60}.{s12}{s13}
 mno_town_menu_0|Vai da qualche parte.
 mno_town_menu_0_door|Porta che conduce verso un luogo.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Visita {s41}.
 mno_town_prison_door|Porta della prigione.
 mno_dungeon_enter|Cerca le lance perdute all'interno delle montagne.
 mno_dungeon_enter_door|Apri la porta.
+mno_dwarven_warehouse|Visita il Magazzino dei Nani
+mno_dwarven_warehouse_door|Entra nel Magazzino dei Nani
 mno_talk_to_castle_commander|Visita le caserme di {s61}.
 mno_speak_with_elder|Parla con {s6}.
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^{s1} È stato sconfitto!^{s1} non c'è p
 menu_ruins|^^^^Ti avvicini a {s1}. In questo luogo, un tempo, un grande accampamento è stato raso al suolo, è ancora possibile vedere tracce di fortificazioni e vecchie armi arrugginite.
 menu_legendary_place|^^^^Hai seguito le tracce ed hai trovato {s1}. Puoi esplorare questo posto e verificare da te se le indiscrezioni che hai sentito sono vere.
 mno_explore|Esplora questo posto.
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+mno_attack_lair|Attaccali adesso
+mno_leave_bandit_lair|Lascia per ora.
 menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da parte di una banda di orchi. Cosa fai?
 mno_help|Aiuta gli stranieri!
+mno_start_defend_caravan|Difendi la Carovana!
+mno_start_raid_caravan|Razzia la Carovana!
+mno_start_ambush_orcs|Un'imboscata degli Orchi!
+mno_start_kill_scouts|Ferma gli esploratori dal segnalare il tuo arrivo!
 mno_go_your_way|Lasciali al loro destino
+mno_defend_villagers|Difendi gli abitanti del villaggio!
+mno_raid_villagers|Razzia il Villaggio!
+mno_go_away|Lasciali al loro destino
 menu_custom_battle_choose_faction1|^^^^^^^^^^Scegli il tuo lato e il vantaggio:
 mno_good_equal|Fazione buona
 mno_bad_equal|Fazione malvagia
@@ -366,3 +379,5 @@ mno_scene3|Campo di battaglia 7 (scn_battlefield7.sco)
 mno_scene4|Campo di battaglia 8 (scn_battlefield8.sco)
 mno_scene5|Campo di battaglia 9 (scn_battlefield9.sco)
 mno_back_3dot|Indietro...
+mno_back|Torna Indietro
+; mno_next|Next...

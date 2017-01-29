@@ -1,6 +1,7 @@
 str_yes|Tak.
 str_no|Nie.
 str_noone|nikt
+; str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} i {s51}
 str_s5_s_party|{s5} z oddziałem
 str_s5_s_host| {s5} z zastępem
@@ -20,7 +21,7 @@ str_blunt_hold_fire|Broń Obuchowa / Wstrzymać Ogień
 str_tutorial_ammo_refilled|Amunicja uzupełniona.
 str_custom_battle_1|Kapitan Malvogil podróżuje wraz z kompanią Gondoru gdy nagle trafia na posiłki Haradu. Wznosi okrzyk bojowy, spina konia i rusza naprzód, prowadząc swych ludzi do szaleńczej walki.
 str_custom_battle_2|Lord Mleza prowadzi patrol złożony z jeźdźców i łuczników, w poszukiwaniu grupy bandytów, którzy splądrowali karawanę i uciekli w stronę wzgórz. Niestety bandyci napotkali dwie inne duże grupy, które chciały wydrzeć im łup, ale po zauważeniu nowego zagrożenia, zdecydowały się połączyć swe siły.
-str_custom_battle_3|Lord Grimbold z Rohanu dowodzi obroną murów przed armią Isengardu. Teraz, gdy oblegający przygotowują się do ostatecznego szturmu, musi utrzymać mury przy pomocy odwagi i stali.
+; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
 str_custom_battle_4|Kiedy zwiadowcy informują Lorda Grainwada o obecności oddziału wojennego Rhunu, decyduje się szybko przygotować obronę obozu i utrzymać pozycje mimo wielkiej liczebności wroga.
 str_custom_battle_5|Kapitan Ugluk przyprowadził swych niepohamowanych orków na zachód z obietnicą plądrowania. Jeśli rozbiją dziś krasnoludów ich pan w Barad-Dur będzie bardzo zadowolony.
 str_custom_battle_6|Grishnakh i jego orkowie nękali uciekający Elficki patrol. Ale szczęście nie może trwać wiecznie, i wygląda na to, że brudne elfy wezmą teraz odwet.
@@ -203,7 +204,7 @@ str_persuasion_summary_very_bad|Starasz się jak najlepiej przedstawić sprawę,
 str_persuasion_summary_bad|Starasz się mówić przekonywująco, ale {reg51?a:} przechytrza cię od samego początku. Nawet twoje najlepsze argumenty brzmią pusto i niedorzecznie nawet dla ciebie. {s50}, też nie ma najlepszego zdania o ty, co masz do powiedzenia.
 str_persuasion_summary_average|{s50} okazuje się mieć bystry umysł oraz talent mówcy i nie udaje ci się podać ani jednego mocnego argumentu, którego {reg51?ona:on} by nie obalił{reg51?a:} racjonalnym myśleniem. W końcu, ani tobie, ani {reg51?jej:jemu} nie udaje się przekonać strony przeciwnej do swych racji.
 str_persuasion_summary_good|Dzięki szybkiemu myśleniu i dobrej argumentacji, udało ci się świetnie przedstawić sprawę, a {s50} przyznaje ci rację w kilku przypadkach. Dalej jednak wyraża wątpliwości co twej prośby.
-str_persuasion_summary_very_good|Wygłaszasz namiętną przemowę, która w uszach wszystkich słuchających osób odbija się echem, niczym poezja. Cały świat zdał się na chwilę zamilknąć, by lepiej cię usłyszeć. {s50} wydaje się poruszon{reg51?a:y} twymi słowami i znacznie bardziej skłonn{reg51?a:y} ci pomóc.
+; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
 str_surname_1|{s50} z Tarnost
 str_surname_2|{s50} z Lossarnach
 str_surname_3|{s50} z Erech
@@ -1090,7 +1091,7 @@ str_lord_insult_goodnatured|zbir
 str_lord_insult_upstanding|łajdak
 str_rebellion_dilemma_default|[suzeren]
 str_rebellion_dilemma_martial|{s45} bez wątpienia został{reg3?a:} pokrzywdzon{reg3?a:y}. Mimo iż ślubowałem wierność naszemu obecnemu władcy, przysięga jest nieważna, skoro {s46} objął tron bezprawnie.
-str_rebellion_dilemma_quarrelsome|Hmm. {s46} nigdy nie dał mi tego, co mi się należało, więc raczej niewiele mu zawdzięczam. Jednakże {s45} może wcale nie być lepsz{reg3?a:y}, a {s46} przynajmniej okazał się dość zdolnym przywódcą.
+; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
 str_rebellion_dilemma_pitiless|Hmm. {s45} mówi, że jest prawowit{reg3?ą spadkobierczynią:ym spadkobiercą} tronu. Dobrze -- jeśli to prawda i {s46} rzeczywiście przywłaszczył sobie tron, to czuję się zwolniony od mojej dawnej przysięgi. Nadal jednak muszę dokładnie przemyśleć moją decyzję.
 str_rebellion_dilemma_cunning|Hmm. Ślubowałem wierność naszemu władcy, {s46}, jednakże potężnych ślubowania nie wiążą tak bardzo, jak pospolitych ludzi. Naszym obowiązkiem jest posiadanie możliwości rządzenia, narzucanie ładu i nie dopuszczanie do wojny, gdzie wszyscy walczą ze wszystkimi.
 str_rebellion_dilemma_sadistic|Hmm. W tym podłym świecie, mądry człowiek myśli tylko i wyłącznie o sobie, bo nikt inny z pewnością nie będzie o nim myślał. Więc -- co za to dostanę?
@@ -1818,7 +1819,7 @@ str_imladris_gift0|Biały chleb oraz masło ziołowe
 str_imladris_gift1|Kryształowa ceramika
 str_imladris_gift2|Miruvor
 ; str_imladris_gift3|Embroidered Banners and Silver-Inlaid Horns
-; str_imladris_gift4|Healing Herbs and Oitments
+; str_imladris_gift4|Healing Herbs and Ointments
 str_woodelf_gift0|Miękkie zwierzęce skóry 
 ; str_woodelf_gift1|Arrow Heads and Fletching
 str_woodelf_gift2|Włócznie myśliwskie 
@@ -1874,3 +1875,4 @@ str_beorn_gift1|Pszczeli Wosk i Tkaniny Konopne
 str_beorn_gift2|Ule
 str_beorn_gift3|Bursztynowe Naszyjniki
 str_beorn_gift4|Dobrze Wyszkolone Kucyki
+; str_cmenu_follow|Accompany

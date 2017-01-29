@@ -1,6 +1,7 @@
 str_yes|Evet
 str_no|Hayır
 str_noone|hiç kimse
+; str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} ve {s51}
 str_s5_s_party|{s5}'in partisi
 str_s5_s_host|{s5}'in Ordusu
@@ -20,7 +21,7 @@ str_blunt_hold_fire|Kör silahlar / Ateşi Kes
 str_tutorial_ammo_refilled|Cephane yenilendi
 str_custom_battle_1|Kaptan Malvogil ve Gondor bölüğü Harad takviye grubunun yolunu kesti. Savaş narasını atarken, atını ileri doğru sürdü, ve sadık adamlarını çetin bir savaşa götürdü.
 str_custom_battle_2|Lorien'li Celeborn bir atlı ve okçu devriyesine öncülük ederken gözcü, soluk yüzlü, kötü bir insan birliğinin yaklaştığının uyarısını veriyor. Bunlar korkunç Kara Numenorlular! Lothlorien'de yıllarca görülmemişlerdi ama şimdi öteki taraftan sürülmüş olmalılar.
-str_custom_battle_3|Rohanlı Lord Grimbold, Isengard'ın ordusuna kaşı son savunmayı yönetiyor. Şimdi, kuşatmacılar duvarlara son saldırıya hazırlanırken, o cesaret ve parlak çelikle duvarı tutmalı.
+; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
 str_custom_battle_4|Gözcüler Rhun savaşçılarının yaklaştığını Lord Beranhelm'e bildirdiklerinde, kamp yerinin defansını çabucak hazırlamaya ve daha kalabalık sayılara karşı ayakta tutmaya karar verdi.
 str_custom_battle_5|Ugluk, azılı orksielerini  yağma sözüyle batıya getirdi.Eğer onun için bu cüce kalesini bugün düşürmeyi başarabilirse,Barad-Dur'daki efendileri çokça memnun olacaktı.
 str_custom_battle_6|Ugluk ve onun ork akıncı grubu elf devriyelerinden kaçmakta oldukça istekli.Ancak görünen bu ki, o iyi şans sonsuza kadar sürmeyeceğinden, lanet soluk derililer paylarını şimdi alacaklar.
@@ -203,7 +204,7 @@ str_persuasion_summary_very_bad|{s50} ı ikna etmek için elinden geleni yaptın
 str_persuasion_summary_bad|{S50} 'yi ikna etmeye çalıştınız, ancak {reg51? She: he} en başından beri sana karşı üstünlük sağlıyordu. En iyi argümanların bile kendi kulaklarına boş geliyordu. {S50}, aynı şekilde, ne söylemen gerektiğine dair bir görüş oluşturamadı
 str_persuasion_summary_average|Anlaşılan {s50} keskin zekasıyla yetenekli bir konuşmacı, ortaya koyduğun her argümanı {reg51?she:he} bir şekilde etkisiz hale getirdi. Konuşmanın sonunda kimse bir şey kazanıp kaybetmedi.
 str_persuasion_summary_good|Hızlı düşünme ve akıcı konuşmanla durumu çok iyi açıkladın, bazı konularda {s50} ile aynı görüşte olabildiniz. Fakat {reg51?she:he} bazı noktalarda hala şüpheleri var.
-str_persuasion_summary_very_good|Dinleyenlerin kulaklarına şiir gibi gelen tutkulu bir konuşma yaptın. Sanki bütün dünya  konuşmayı daha iyi dinleyebilmek için sessizleşti. İlham verici sözlerin {s50} i derin duygulara daldırdı. {reg51?she:he} yardım konusunda istekli görünüyor.
+; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
 str_surname_1|{s50} Tarnost
 str_surname_2|Lossarnach'dan {s50}
 str_surname_3|Erech'den {s50}
@@ -1090,7 +1091,7 @@ str_lord_challenged_cunning|Pekala,eğer bana hiç şans bırakmazsan...
 ; str_lord_insult_upstanding|disgraceful scoundrel
 ; str_rebellion_dilemma_default|[liege]
 ; str_rebellion_dilemma_martial|{s45} was clearly wronged. Although I gave an oath to {s46}, it does not bind me to support him if he usurped his throne illegally.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself .
+; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
 ; str_rebellion_dilemma_pitiless|Hmm. {s45} says {reg3?she:he} is the rightful heir to the throne. That is good -- it absolves me of my oath to {s46}. But still I must weight my decision carefully.
 ; str_rebellion_dilemma_cunning|Hmm. I gave an oath of homage to {s46}, yet the powerful are not bound by their oaths as our ordinary people. Our duty is to our own ability to rule, to impose order and prevent the war of all against all.
 ; str_rebellion_dilemma_sadistic|Hmm. In this vile world, a wise man must think of himself, for no one else will. So -- what's in it for me?
@@ -1818,7 +1819,7 @@ str_imladris_gift0|Beyaz Ekmek ve Bitkisel Yağ
 str_imladris_gift1|Kristal Cam Eşya
 str_imladris_gift2|Miruvor
 str_imladris_gift3|Nakışlı Afişler ve Gümüş işlemeli Boynuzlar
-str_imladris_gift4|Şifalı Otlar ve Merhemler
+; str_imladris_gift4|Healing Herbs and Ointments
 str_woodelf_gift0|Yumuşak hayvan derisi
 ; str_woodelf_gift1|Arrow Heads and Fletching
 str_woodelf_gift2|Av mızrakları
@@ -1874,3 +1875,4 @@ str_beorn_gift1|Bal mumu ve kenevir bezi
 str_beorn_gift2|Arı Kovanları
 str_beorn_gift3|Kehribar kolye
 str_beorn_gift4|İyi eğitilmiş poniler
+; str_cmenu_follow|Accompany

@@ -3,23 +3,23 @@ mno_start_good|O AMANHECER de uma nova Era
 mno_start_evil|O CREPÚSCULO do Homem
 mno_go_bback|Volte
 menu_start_phase_2|^^^^^ A Terra Média. Uma sombra está crescendo ao Leste, ^ e coisas obscuras têm saído de onde vinham se escondendo há muito tempo. ^ As pessoas livres se preparam para uma guerra do tipo que não se vê há uma era. ^ Homens, Elfos, Anões, e Orcs; todos farão a sua parte. ^^  Qual parte, no entanto, está para ser vista...
-mno_go_forth|Vá em frente e escolha seu caminho...
-menu_start_game_3            |^^^^^^^^Escolha o seu cenário:
-mno_custom_battle_scenario_1 |Skirmish, facções de Gondor vs Harad
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^Escolha o seu cenário:
+mno_custom_battle_scenario_1|Skirmish, facções de Gondor vs Harad
 mno_custom_battle_scenario_12|Escolha as facções para a batalha
-mno_custom_battle_scenario_3 |Skirmish, Elfos vs Numenorianos Negros
-mno_custom_battle_scenario_4 |Abismo de Helm, Rohan vs Isengard
-mno_custom_battle_scenario_5 |Skirmish, facções do Norte vs Rhun
-mno_custom_battle_scenario_6 |Cerco, Orcs vs Anões
-mno_custom_battle_scenario_7 |Emboscada, Orcs vs Floresta das Trevas
+mno_custom_battle_scenario_3|Skirmish, Elfos vs Numenorianos Negros
+mno_custom_battle_scenario_4|Abismo de Helm, Rohan vs Isengard
+mno_custom_battle_scenario_5|Skirmish, facções do Norte vs Rhun
+mno_custom_battle_scenario_6|Cerco, Orcs vs Anões
+mno_custom_battle_scenario_7|Emboscada, Orcs vs Floresta das Trevas
 mno_custom_battle_scenario_11|Batalhas teste (Tune Balancing!)
 mno_custom_battle_scenario_10|Batalha teste de cenário
-mno_troll_battle_scenario    |Batalha teste do Troll
-mno_warg_battle_scenario     |Batalha teste dos wargs
-mno_build_your_own_scene     |** Construa o seu próprio cenário para TLD **
-mno_go_back                  |Voltar
+mno_troll_battle_scenario|Batalha teste do Troll
+mno_warg_battle_scenario|Batalha teste dos wargs
+mno_build_your_own_scene|** Construa o seu próprio cenário para TLD **
 menu_tutorial|^^TLD possui um monte de conteúdo desconhecido pelo nativo M&B. Podem-se encontrar descrições,  com detalhes e sem spoilers, no PDF incluso nesta versão. Para um tutorial dos mecanismos básicos do jogo, por favor, utilize o modo Nativo.
 mno_go_back_dot|Volte.
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|Ver custos de manutenção.
 mno_view_character_report|Ver relatório do personagem.
 mno_view_party_size_report|Ver tamanho do grupo.
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Um pesado golpe do fugitivo o derr
 menu_town_bandits_succeeded|^^^^^Os goblins caem antes de você como o trigo pronto para a ceifa! Logo você se fica em pé, sozinho, enquanto a maior parte dos seus atacantes estão inconscientes,  mortos ou morrendo. Certamente os moradores locais ficarão muito agradecidos por você tê-los salvo desta ameaça.
 menu_town_brawl_lost|^^^^^^Você foi nocauteado friamente. As pessoas que você atacou, rapidamente procuraram pelos seus pertences antes de irem embora cuidar de suas atividades diárias.
 menu_town_brawl_won|^^^^^Você derrotou todos os oponentes e guardas mandados para reprimir a confusão. Você rapidamente revistou-os em busca de objetos de valor e foi embora antes dos nervos se acalmarem. ^Talvez na próxima eles mostrem um pouco mais de respeito e se retirem.
+; menu_close|Nothing.
 menu_town|Você chegou em {s60}.{s12}{s13}
 mno_town_menu_0|Ir para algum lugar.
 mno_town_menu_0_door|Entrada para algum lugar.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Visitar {s41}.
 mno_town_prison_door|Entrada para a prisão.
 mno_dungeon_enter|Procurar pelas lanças perdidas dentro das montanhas.
 mno_dungeon_enter_door|Abrir a porta. 
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|Visitar o {s61} Quartel.
 mno_speak_with_elder|Conversar com o {s6}.
 mno_isengard_underground|Ir para as cavernas subterrâneas.
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^{s1} Derrotado^{s1} não está mais, der
 menu_ruins|^^^^Você se aproxima de {s1}. Onde um dia um forte acampamento foi levado ao chão, mesmo assim você ainda consegue ver traços de fortificações e armas enferrujadas espalhadas.
 menu_legendary_place|^^^^Você seguiu os rumores e encontrou {s1}. Agora você pode explorar este lugar e ver por si mesmo se os rumores são verdadeiros.
 mno_explore|Explorar o lugar.
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^Você descobre uma pequena caravana sendo atacada por um bando de orcs. O que você irá fazer?
 mno_help|Ajudar os estranhos!
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|Deixá-los sozinhos.
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|Deixá-los sozinhos.
 menu_custom_battle_choose_faction1|^^^^^^^^^^Escolha o seu lado e as vantagens:
 mno_good_equal|Facção do bem.
 mno_bad_equal|Facção do mal.
@@ -366,3 +379,5 @@ mno_scene3|Campo de Batalha 7 (file scn battlefield7.sco)
 mno_scene4|Campo de Batalha 8 (file scn battlefield8.sco)
 mno_scene5|Campo de Batalha 9 (file scn battlefield9.sco)
 mno_back_3dot|Voltar...
+mno_back|Volte.
+; mno_next|Next...

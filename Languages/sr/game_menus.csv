@@ -3,23 +3,23 @@ mno_start_good|Zora nove ere
 mno_start_evil|Sumrak covecanstva
 mno_go_bback|Idi nazad
 menu_start_phase_2|^^^^^ Srednja Zemlja. Senka se nadzire na istoku, ^ i mracne stvari izlaze na povrsinu koje nisu vidjene dosta vremena. ^ Slobodni ljudo se spemaju za rat,rat koji nisu mogucni ni zamisliti. ^ Ljudi, Vilenjaci, Patuljci i Orkovi; svi ce ucestvvati. ^^ Kako? To cemo tek videti...
-mno_go_forth|Nastavi svojim putem...
-menu_start_game_3            |^^^^^^^^Izaberite vas scenario:
-mno_custom_battle_scenario_1 |Btika, Gondor vs Harad
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^Izaberite vas scenario:
+mno_custom_battle_scenario_1|Btika, Gondor vs Harad
 mno_custom_battle_scenario_12|Izaberite frakcije za bitku
-mno_custom_battle_scenario_3 |Bitka, Vilenjaci vs Black Numenoreans
-mno_custom_battle_scenario_4 |Helmov ponor, Rohan vs Isendard
-mno_custom_battle_scenario_5 |Btika, Severne fakcije vs Rhuna
-mno_custom_battle_scenario_6 |Opsada - napad, Orkovi vs Patuljaka
-mno_custom_battle_scenario_7 |Zaseda, Orkovi vs Mirkwood
+mno_custom_battle_scenario_3|Bitka, Vilenjaci vs Black Numenoreans
+mno_custom_battle_scenario_4|Helmov ponor, Rohan vs Isendard
+mno_custom_battle_scenario_5|Btika, Severne fakcije vs Rhuna
+mno_custom_battle_scenario_6|Opsada - napad, Orkovi vs Patuljaka
+mno_custom_battle_scenario_7|Zaseda, Orkovi vs Mirkwood
 mno_custom_battle_scenario_11|Test bitke (Treba izbalansirati!)
 mno_custom_battle_scenario_10|Scenska test bitka
-mno_troll_battle_scenario    |Troll test bitke
-mno_warg_battle_scenario     |Warg test bitke
-mno_build_your_own_scene     |** Napravi tvoju scenu za TLD **
-mno_go_back                  |Idi nazad
+mno_troll_battle_scenario|Troll test bitke
+mno_warg_battle_scenario|Warg test bitke
+mno_build_your_own_scene|** Napravi tvoju scenu za TLD **
 menu_tutorial|^^TLD ime dosta stvari koje nisu poznate u nativu. Mozete ih procitati u PDF fajlu. Za tutorijal,molim koristite native modul.
 mno_go_back_dot|Nazad
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|Pogledaj cenu.
 mno_view_character_report|Pogledaj raport.
 mno_view_party_size_report|Pogledaj velicinu vojske.
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Jak udarac od doticne osobe poslao
 menu_town_bandits_succeeded|^^^^^Uspesno si savladao gobline! Ubrzo si stajao kao jedini preziveli dok su vecina napadaca lezana mrtva ili ranjena. Sigurno ce lokalci biti srecni sto si ih spasao od ovog problema.
 menu_town_brawl_lost|^^^^^^Pao si na zemlju. Oni koji su te napali, brzo su te pretrazili, da nemas nesto vredno kod sebe, pre nego sto su otisli dalje.
 menu_town_brawl_won|^^^^^Pobedio si protivnike, i strazar dolazi da izvidi situaciju. Brzo si uzeo nesto od vrednih stvari koje su imali i pobegao si.^Mozda ce sledeci put pokazati vise postovanja, i udaljiti se na vreme.
+; menu_close|Nothing.
 menu_town|Dosao si u {s60}.{s12}{s13}
 mno_town_menu_0|Idi na neku lokaciju.
 mno_town_menu_0_door|Vrata za neku lokaciju.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Poseti {s41}.
 mno_town_prison_door|Vrata od zatvora.
 mno_dungeon_enter|Trazi izgubljena koplja unutar planine.
 mno_dungeon_enter_door|Otvori vrata.
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|Poseti {s61} kasarnu.
 mno_speak_with_elder|Razgovaraj sa {s6}.
 mno_isengard_underground|Idi u podzemne pecine.
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^{s1} je pobedjen\\pobedjena^{s1} vise je
 menu_ruins|^^^^Prisao si {s1}. Nekada jako mesto je sada razruseno do temelja, iako se idalje obrisi bitke mogu videti.
 menu_legendary_place|^^^^Pratio si price, i nasao si {s1}. Sada mozes da istrazis ovo mesto i da vidis da li su price tacne.
 mno_explore|Istrazi lokaciju.
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^Vidis mali karavan koji je napadnut od strane orkova. Sta ces da uradis?
 mno_help|Pomozi strancima!
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|Ostavi ih
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|Ostavi ih
 menu_custom_battle_choose_faction1|^^^^^^^^^^Izaberi svoju stranu i prednost:
 mno_good_equal|Dobra frakcija
 mno_bad_equal|Zla frakcija
@@ -366,3 +379,5 @@ mno_scene3|Bojno polje7 (file scn battlefield7.sco)
 mno_scene4|Bojno polje8 (file scn battlefield8.sco)
 mno_scene5|Bojno polje9 (file scn battlefield9.sco)
 mno_back_3dot|Nazad...
+mno_back|Nazad
+; mno_next|Next...

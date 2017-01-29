@@ -3,23 +3,23 @@ mno_start_good|新 紀 元 的 黎 明
 mno_start_evil|人 類 的 黃 昏 
 mno_go_bback|後 退 
 menu_start_phase_2|^^^^^ 中 土 世 界。 黑 暗 的 陰 影 正 在 東 方 蔓 延 ·· ^潛 伏 了 近 一 個 紀 元 的 邪 惡 勢 力 重 現 世 間 。 ^中 土 的 自 由 之 人 類 是 否 可 以 再 一 次 戰 勝 黑 暗 。 ^人 類 、 精 靈 、 矮 人 和 獸 人 ， 各 種 勢 力 在 這 里 繼 續 角 逐 ^^現 在， 正 義 與 邪 惡 的 戰 爭 即 將 拉 開 帷 幕 ... 
-mno_go_forth|往 前 選 擇 你 的 道 路 ...
-menu_start_game_3            |^^^^^^^^選 擇 你 的 戰 役 ： 
-mno_custom_battle_scenario_1 |小 規 模 戰 役 ， 剛 鐸 vs哈 拉 德 
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^選 擇 你 的 戰 役 ： 
+mno_custom_battle_scenario_1|小 規 模 戰 役 ， 剛 鐸 vs哈 拉 德 
 mno_custom_battle_scenario_12|選 擇 戰 鬥 派 系 
-mno_custom_battle_scenario_3 |小 規 模 戰 役 ， 精 靈 vs黑 努 美 諾 爾 人 
-mno_custom_battle_scenario_4 |聖 盔 谷 防 禦 戰 , 洛 汗 vs艾 辛 格 
-mno_custom_battle_scenario_5 |小 規 模 戰 役 ， 北 方 自 由 民 vs魯 恩 
-mno_custom_battle_scenario_6 |攻 城 戰 ， 半 獸 人 vs矮 人 
-mno_custom_battle_scenario_7 |伏 擊 戰 ， 半 獸 人 vs幽 暗 密 林 精 靈 
+mno_custom_battle_scenario_3|小 規 模 戰 役 ， 精 靈 vs黑 努 美 諾 爾 人 
+mno_custom_battle_scenario_4|聖 盔 谷 防 禦 戰 , 洛 汗 vs艾 辛 格 
+mno_custom_battle_scenario_5|小 規 模 戰 役 ， 北 方 自 由 民 vs魯 恩 
+mno_custom_battle_scenario_6|攻 城 戰 ， 半 獸 人 vs矮 人 
+mno_custom_battle_scenario_7|伏 擊 戰 ， 半 獸 人 vs幽 暗 密 林 精 靈 
 mno_custom_battle_scenario_11|測 試 戰 鬥 (調 整 平 衡 ！ )
 mno_custom_battle_scenario_10|風 景 測 試 戰 鬥 
-mno_troll_battle_scenario    |測 試 巨 魔 戰 鬥 
-mno_warg_battle_scenario     |測 試 坐 狼 戰 鬥 
-mno_build_your_own_scene     |** 建 造 你 自 己 的 TLD場 景 **
-mno_go_back                  |後 退 
+mno_troll_battle_scenario|測 試 巨 魔 戰 鬥 
+mno_warg_battle_scenario|測 試 坐 狼 戰 鬥 
+mno_build_your_own_scene|** 建 造 你 自 己 的 TLD場 景 **
 menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 看 到。 遊 戲 教 程 同 原 版 一 樣。 
 mno_go_back_dot|後 退 
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|查 看 維 護 成 本 
 mno_view_character_report|查 看 人 物 報 告 
 mno_view_party_size_report|查 看 部 隊 上 限 
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^敵 人 的 沉 重 打 擊 將 �
 menu_town_bandits_succeeded|^^^^^哥 布 林 在 你 面 前 倒 下 如 同 割 下 的 小 麥 ！很 快 只 剩 你 獨 自 站 著 ， 而 大 部 分 的 攻 擊 者 都 昏 迷 ， 死 亡 或 瀕 死 。 當 然 ， 當 地 人 會 很 感 激 你 從 這 種 威 脅 中 拯 救 他 們 。 
 menu_town_brawl_lost|^^^^^^你 被 擊 昏 倒 下 。 人 們 迅 速 洗 劫 了 你 身 上 所 有 的 貴 重 財 物 。 
 menu_town_brawl_won|^^^^^你 擊 敗 了 你 的 對 手 ， 守 衛 已 經 發 出 警 號 。 你 迅 速 地 搜 刮 它 們 身 上 的 貴 重 物 品 並 消 失 直 到 情 緒 穩 定 。 ^也 許 ， 下 次 他 們 會 給 你 更多 尊 重 而 離 開 。  
+; menu_close|Nothing.
 menu_town|你 抵 達 {s60}。 {s12}{s13}
 mno_town_menu_0|前 往 某 處 位 置 
 mno_town_menu_0_door|進 入 某 處 
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|訪 問  {s41}
 mno_town_prison_door|進 入 監 獄 
 mno_dungeon_enter|搜 索 山 內 遺 失 的 長 矛 
 mno_dungeon_enter_door|開 門 
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|訪 問 {s61}兵 營 
 mno_speak_with_elder|與 {s6}談 話 
 mno_isengard_underground|前 往 地 底 洞 穴 
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^{s1}被 擊 敗 了 ！ ^{s1}從 此 將
 menu_ruins|^^^^你 來 到 了{s1}。 昔 日 兵 力 強 盛 的 營 地 現 在 已 經 是 一 片 廢 墟 ， 但 你 仍 可 看 到 防 禦 工 事 的 殘 餘 及 各 種 生 銹 的 武 器 碎 片 被 胡 亂 丟 棄 在 地 上 。 
 menu_legendary_place|^^^^你 遵 循 傳 聞 從 而 發 現 了 {s1}。 現 在 ， 你 可 以 探 索 下 這 地 方 ， 看 看 傳 聞 是 真 是 假 。 
 mno_explore|探 索 這 個 地 方 
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^你 看 到 一 支 小 商 隊 正 被 一 隊 半 獸 人 攻 擊 。 你 決 定 怎 麽 做 ？ 
 mno_help|幫 助 陌 生 人 ！ 
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|遠 離 他 們 
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|遠 離 他 們 
 menu_custom_battle_choose_faction1|^^^^^^^^^^選 擇 你 的 傾 向 和 優 點 ： 
 mno_good_equal|良 善 陣 營 
 mno_bad_equal|邪 惡 陣 營 
@@ -366,3 +379,5 @@ mno_scene3|場 景 7 (file scn battlefield7.sco)
 mno_scene4|場 景 8 (file scn battlefield8.sco)
 mno_scene5|場 景 9 (file scn battlefield9.sco)
 mno_back_3dot|後 退 ...
+mno_back|後 退 
+; mno_next|Next...

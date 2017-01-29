@@ -1,6 +1,7 @@
 str_yes|Sí.
 str_no|No.
 str_noone|nadie
+str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} y {s51}
 str_s5_s_party| Grupo de {s5}
 str_s5_s_host| Hueste de {s5}
@@ -20,7 +21,7 @@ str_blunt_hold_fire|Armas contundentes / Alto el fuego
 str_tutorial_ammo_refilled|Munición recargada.
 str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Lanzando su grito de batalla, espolea a su caballo y lidera a sus leales hombres a una feroz batalla.
 str_custom_battle_2|Celeborn de Lórien lidera una patrulla de caballeros y arqueros cuando sus exploradores de vanguardia le avisan de que una fuerza de hombres malvados de rostro ceniciento se están acercando. ¡Son los terribles Númenóreanos Negros! No se les había visto cerca de Lothlórien desde hacía muchos siglos, pero ahora deben ser enviados de vuelta a la oscuridad.      
-str_custom_battle_3|El señor Grimbold de Rohan lidera la última defensa de los muros contra un ejército de Isengard. Ahora, mientras los sitiadores se preparan para su asalto final a los muros, él debe defenderlos con su coraje y brillante acero.
+; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
 str_custom_battle_4|Cuando los exploradores informan al señor Beranhelm de que una banda de guerreros de Rhûn se está acercando, decide construir rápidamente defensas en su campamento e intentar resistir contra un enemigo más numeroso.
 str_custom_battle_5|Ugluk ha traido a sus fieros orcos al oeste con promesas de saqueo. Si consigue hacerse con esta fortaleza enana hoy, sus amos en Barad-Dûr estarán contentos.
 str_custom_battle_6|Ugluk y su pelotón de orcos hacían todo lo posible para escapar de las patrullas élficas. Pero la suerte no dura eternamente y por lo que parece ahora es el turno de los sucios pieles-pálidas para vengarse.
@@ -203,7 +204,7 @@ str_persuasion_summary_very_bad|Haces todo lo posible para persuadir a {s50}, pe
 str_persuasion_summary_bad|Intentas persuadir a {s50}, pero {reg51?she:he} te supera desde el comienzo. Tus argumentos parecen vacíos incluso a tus propios oídos. {s50}, tampoco se ha formado una buena opinión de lo que has dicho.
 str_persuasion_summary_average|{s50} resulta ser un hábil orador con una mente brillante y tu no consigues esbozar aningún argumento concreto que {reg51?she:he} no pueda contrarrestar con su razonamiento. Al final, ninguno consigue ganar terreno en esta discusión.
 str_persuasion_summary_good|Con pensamiento rápido y una buena argumentación consigues exponer bien tu caso, forzando a {s50} a darte la razón. No obstante, {reg51?she:he} todavía tiene dudas sobre tu petición.
-str_persuasion_summary_very_good|Das un apasionado discurso que resuena en los oídos de todos los que te escuchan como si fuera poesía. El mundo parece silenciarse para escucharte mejor. Las inspiradas palabras han conmovido profundamente a {s50}  y {reg51?she:he} parece mucho más dispuesto a ayudarte.
+; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} de Erech
@@ -1090,7 +1091,7 @@ str_lord_insult_goodnatured|tipo desagradable
 str_lord_insult_upstanding|sinvergüenza
 str_rebellion_dilemma_default|[liege]
 str_rebellion_dilemma_martial|{s45} estaba claramente equivocado. Aunque juré fidelidad a {s46}, nadie me puede obligar a apoyarle si es cierto que usurpó un trono que no le correspondía.
-str_rebellion_dilemma_quarrelsome|Mmm. {s46} nunca me ha dado lo que me corresponde, así que no creo que le deba mucha fidelidad. Sin embargo, quizás {s45} no sea mejor, y {s46} por lo menos se ha dejado ver.
+; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
 str_rebellion_dilemma_pitiless|Mmm. {s45} dice que {reg3?she:he} es aspirante legítimo al trono. Eso está bien -- me absuelve de mi juramento a {s46}. Pero todavía necesito meditar mi decisión con cuidado.
 str_rebellion_dilemma_cunning|Mmm. Juré fidelidad a {s46}, aunque los poderosos no están atados por sus juramentos como la gente común. Nuestro deber es gobernar, preservar el orden y prevenir la guerra entre todos.
 str_rebellion_dilemma_sadistic|Mmm. En este mundo vil, un hombre juicioso debe pensar en sí mismo, porque nadie va a hacerlo por mí. Así que -- ¿qué hay para mí?
@@ -1874,3 +1875,4 @@ str_beorn_gift1|Cera de Abejas y Telas de Cáñamo
 str_beorn_gift2|Colmena de Abejas
 str_beorn_gift3|Collares de Ámbar
 str_beorn_gift4|Ponis Bien Entrenados
+str_cmenu_follow|Acompañar

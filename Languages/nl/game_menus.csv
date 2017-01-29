@@ -3,23 +3,23 @@ mno_start_good|De OPKOMST van een nieuw Tijdperk
 mno_start_evil|De SCHEMERING van Mensheid
 mno_go_bback|Ga Terug
 menu_start_phase_2|Midden Aarde. Een schaduw is groeiende in het Oosten, en donkere zaken komen naar voren die lang zijn verborgen. De vrije mensheid bereidt zich voor op oorlog, wat lange tijd niet is gezien. Mensen, Elven, Dwergen en Orks; allen spelen hun rol. Welke rol, blijft echter nog te bezien...
-mno_go_forth|Ga voort naar je verkozen bestemming
-menu_start_game_3            |^^^^^^^^Kies je scenario:
-mno_custom_battle_scenario_1 |Skirmish, Gondor facties vs Harad
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^Kies je scenario:
+mno_custom_battle_scenario_1|Skirmish, Gondor facties vs Harad
 mno_custom_battle_scenario_12|Kies facties voor gevecht
-mno_custom_battle_scenario_3 |Skirmish, Elven vs Zwarte Numenoreanen
-mno_custom_battle_scenario_4 |Helms Diep Verdediging, Rohan vs Isengard
-mno_custom_battle_scenario_5 |Skirmish, Noordelijke partijen vs Rhûn
-mno_custom_battle_scenario_6 |Beleg Aanval, Orks vs Dwergen
-mno_custom_battle_scenario_7 |Valstrik, Orks vs Demsterwold
+mno_custom_battle_scenario_3|Skirmish, Elven vs Zwarte Numenoreanen
+mno_custom_battle_scenario_4|Helms Diep Verdediging, Rohan vs Isengard
+mno_custom_battle_scenario_5|Skirmish, Noordelijke partijen vs Rhûn
+mno_custom_battle_scenario_6|Beleg Aanval, Orks vs Dwergen
+mno_custom_battle_scenario_7|Valstrik, Orks vs Demsterwold
 mno_custom_battle_scenario_11|Test Gevechten (toon balans!)
 mno_custom_battle_scenario_10|Landschap test gevecht
-mno_troll_battle_scenario    |Test Trollen Gevecht
-mno_warg_battle_scenario     |Test Warg Gevecht
-mno_build_your_own_scene     |** Maak je eigen scenario voor TLD **
-mno_go_back                  |Ga terug
+mno_troll_battle_scenario|Test Trollen Gevecht
+mno_warg_battle_scenario|Test Warg Gevecht
+mno_build_your_own_scene|** Maak je eigen scenario voor TLD **
 menu_tutorial|^^TLD heeft veel opties die er niet zijn in de originele M&B. Die opties staan in een PDF die bij deze release zit. Voor een handleiding van de basis game mechanics gebruik de Native module
 mno_go_back_dot|Ga terug.
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|Bekijk onderhoud kosten.
 mno_view_character_report|Bekijk karakter verslag.
 mno_view_party_size_report|Bekijk partij grootte verslag.
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Een zware klap van de voortvluchti
 menu_town_bandits_succeeded|^^^^^De goblins vallen voor u als tarwe aan een zeis! Binnekort sta je alleen, terwijl de meeste van uw aanvallers bewusteloos, dood of stervend zijn. Nu moet de lokale bevolking je wel zeer dankbaar zijn want je hebt ze gered van deze dreiging.
 menu_town_brawl_lost|^^^^^^Je bent bewusteloos geslagen. De mensen die je aanvielen zoeken snel naar je bezittingen, waarna ze weer gewoontjes verder gaan met hun dagelijkse gang van zaken. 
 menu_town_brawl_won|^^^^^Je hebt alle tegenstanders verslagen en de bewakers komen naar je toe om het gevecht te sussen. Je zoekt snel naar hun bezittingen daarna verdwijn je totdat de gemoederen bedaren. Misschien laten ze de volgende keer meer respect zien en trekken ze terug.
+; menu_close|Nothing.
 menu_town|Je arriveerde in {s60}.{s12}{s13}
 mno_town_menu_0|Ga naar een locatie.
 mno_town_menu_0_door|Deur naar een locatie.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Bezoek de {s41}.
 mno_town_prison_door|Deur naar de gevangenis.
 mno_dungeon_enter|Zoek naar verloren speren in de bergen.
 mno_dungeon_enter_door|Open de deur.
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|Bezoek de {s61} Barakken.
 mno_speak_with_elder|Spreek met de {s6}.
 mno_isengard_underground|Ga naar de ondergrondse grotten.
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^{s1} Verslagen!^{s1} is niet meer, versl
 menu_ruins|^^^^Je benadert de {s1}. Een eenmaal sterke kampement werd met de grond gelijkgemaakt, hoewel je nog steeds sporen van de vestingwerken en roestige wapens kunt zien.
 menu_legendary_place|^^^^Je hebt de geruchten gevolgd en vond {s1}. Je kunt de plek nu verkennen en erachter komen of de geruchten waar zijn.
 mno_explore|Verken deze plaats.
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^Je ziet een kleine caravan onder aanval van een band orks. Wat ga je doen?
 mno_help|Help de vreemdelingen!
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|Laat ze alleen
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|Laat ze alleen
 menu_custom_battle_choose_faction1|^^^^^^^^^^Kies een kant en voordeel:
 mno_good_equal|Goede factie
 mno_bad_equal|Kwade factie
@@ -366,3 +379,5 @@ mno_scene3|Slachtveld7 (file scn battlefield6.sco)
 mno_scene4|Slachtveld8 (file scn battlefield6.sco)
 mno_scene5|Slachtveld9 (file scn battlefield6.sco)
 mno_back_3dot|Terug...
+mno_back|Ga terug.
+; mno_next|Next...

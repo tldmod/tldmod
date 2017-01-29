@@ -1,6 +1,7 @@
 str_yes|Si.
 str_no|No.
 str_noone|nessuno
+str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} e {s51}
 str_s5_s_party|Compagnia di {s5}
 str_s5_s_host|Armata di {s5}
@@ -1874,3 +1875,4 @@ str_beorn_gift1|Cera d'api e abiti di canapa.
 str_beorn_gift2|Alveari di Api
 str_beorn_gift3|Collane di Ambra
 str_beorn_gift4|Pony ben addestrati
+str_cmenu_follow|Scorta

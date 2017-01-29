@@ -3,23 +3,23 @@ mno_start_good|uuden aikakauden KOITE
 mno_start_evil|ihmisen HÄMÄRÄ
 mno_go_bback|Mene takaisin
 menu_start_phase_2|^^^^^ Keski-Maa. Varjo kasvaa idässä^ ja esiin tulevat pimeät asiat, jotka ovat pitkän aikaa olleet piilossa. ^ Vapaat ihmiset valmistautuvat sotaan, jonka kaltaista ei olla nähty sukupolveen. ^ Ihmiset, haltiat, kääpiöt ja örkit; kaikki haluavat esittää heidän osaansa. ^^ Mitä osaa, kuitenkin jää nähtäväksi...
-mno_go_forth|Mene eteenpäin kohti valitsemaasi reittiä...
-menu_start_game_3            |^^^^^^^^^Valitse sinun käsikirjoitus:
-mno_custom_battle_scenario_1 |Yhteenotto, Gondorin ryhmittymä vs Harad
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^^Valitse sinun käsikirjoitus:
+mno_custom_battle_scenario_1|Yhteenotto, Gondorin ryhmittymä vs Harad
 mno_custom_battle_scenario_12|Valitse ryhmittymät taisteluun
-mno_custom_battle_scenario_3 |Yhteenotto, haltiat vs mustat Númenórilaiset
-mno_custom_battle_scenario_4 |Helmin syvänteen puolustus, Rohan vs Isengard
-mno_custom_battle_scenario_5 |Yhteenotto, pohjoisen ryhmittymät vs Rhûn
-mno_custom_battle_scenario_6 |Piirityshyökkäys, örkit vs kääpiöt
-mno_custom_battle_scenario_7 |Väijytys, örkit vastaan Mirkwood
+mno_custom_battle_scenario_3|Yhteenotto, haltiat vs mustat Númenórilaiset
+mno_custom_battle_scenario_4|Helmin syvänteen puolustus, Rohan vs Isengard
+mno_custom_battle_scenario_5|Yhteenotto, pohjoisen ryhmittymät vs Rhûn
+mno_custom_battle_scenario_6|Piirityshyökkäys, örkit vs kääpiöt
+mno_custom_battle_scenario_7|Väijytys, örkit vastaan Mirkwood
 mno_custom_battle_scenario_11|Testitaistelut (Säädön tasapainottamista)
 mno_custom_battle_scenario_10|Maisemien testitaistelu
-mno_troll_battle_scenario    |Testi peikkotaistelut
-mno_warg_battle_scenario     |Testi villisusitaistelut
-mno_build_your_own_scene     |** Rakenna oma taistelupaikkasi TLD:tä varten **
-mno_go_back                  |Mene takaisin
+mno_troll_battle_scenario|Testi peikkotaistelut
+mno_warg_battle_scenario|Testi villisusitaistelut
+mno_build_your_own_scene|** Rakenna oma taistelupaikkasi TLD:tä varten **
 menu_tutorial|^^ TLD:llä on paljon tuntemattomia ominaisuuksia alkuperäispeliin nähden. Nämä ovat kuvattuna joissakin ei-paljastavissa kuvailuissa PDF:n sisällä, joka tulee julkaisun kanssa. Peruspelimekanismien kurssissa käytä perusmoduulia kiitos
 mno_go_back_dot|Mene takaisin.
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|Katso ylläpitokustannukset.
 mno_view_character_report|Katso henkilöraportti.
 mno_view_party_size_report|Katso seurueen kokonaismääräraportti.
@@ -263,6 +263,7 @@ menu_siege_join_defense|{s4}^^Sinun tappiot: {s8}^^Liittolaisiesi tappiot: {s9}^
 ; menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Surely the locals would be very grateful that you saved them from this menace.
 ; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
+; menu_close|Nothing.
 menu_town|Saavuit {s60}.{s12}{s13}een
 mno_town_menu_0|Mene jonnekkin.
 mno_town_menu_0_door|Ovu jonnekkin.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Vieraile {s41}.
 mno_town_prison_door|Ovi vankilaan.
 mno_dungeon_enter|Etsi kadonneita keihäitä vuorien uumenista.
 mno_dungeon_enter_door|Avaa ovi.
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|Vieraile {s61} baraakeilla.
 mno_speak_with_elder|Puhu  {s6}n kanssa.
 mno_isengard_underground|Mene maanalaisiin luolastoihin.
@@ -311,9 +314,19 @@ menu_notification_one_side_left|^^^^^Sormuksen sota on ohi!^^{s1} ovat kukistane
 ; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 ; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Tutki tämä paikka.
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^Huomaat pienen karavaanin, joka on joutunut örkki joukkion hyökkäyksen kohteeksi. Miten menettelet?
 mno_help|Auta muukalaisia!
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|Jätä heidät oman onnensa nojaan.
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|Jätä heidät oman onnensa nojaan.
 menu_custom_battle_choose_faction1|^^^^^^^^^^Valitse puolesi ja etusi
 mno_good_equal|Hyvien ryhmittymä
 mno_bad_equal|Pahojen ryhmittymä
@@ -366,3 +379,5 @@ mno_scene3|Taistelukenttä7 (file scn battlefield7.sco)
 mno_scene4|Taistelukenttä8 (file scn battlefield8.sco)
 mno_scene5|Taistelukenttä9 (file scn battlefield9.sco)
 mno_back_3dot|Takaisin...
+mno_back|Mene takaisin.
+; mno_next|Next...

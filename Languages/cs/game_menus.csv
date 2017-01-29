@@ -3,23 +3,23 @@ mno_start_good|pro ÚSVIT nového věku
 mno_start_evil|pro SOUMRAK lidstva
 mno_go_bback|Zpět
 menu_start_phase_2|^^^^^ Stredozem. Na Vychode se zvedá Stin, ^ prichazi odtamtud dlouho skryte a  temne veci. ^ Svobodne narody se pripravuji na valku. Valku jakou nezazily po cely vek. ^ Lide, elfove, trpaslici a skreti - vsichni budou hrat svou roli. ^^ Jakou roli, to se teprve ukaze...
-mno_go_forth|Vydej se svou zvolenou cestou...
-menu_start_game_3            |^^^^^^^^Zvol si scénář:
-mno_custom_battle_scenario_1 |Šarvátka, Gondor proti Haradu
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^Zvol si scénář:
+mno_custom_battle_scenario_1|Šarvátka, Gondor proti Haradu
 mno_custom_battle_scenario_12|Vyber frakce pro bitvu
-mno_custom_battle_scenario_3 |Šarvátka, Elfové proti Černým Númenorejcům
-mno_custom_battle_scenario_4 |Obrana Helmova žlebu, Rohan proti Železnému pasu
-mno_custom_battle_scenario_5 |Šarvátka, Seveřané proti Rhûnu
-mno_custom_battle_scenario_6 |Dobývání, skřeti proti trpaslíkům
-mno_custom_battle_scenario_7 |Přepadení, skřeti proti elfům z Temného hvozdu
+mno_custom_battle_scenario_3|Šarvátka, Elfové proti Černým Númenorejcům
+mno_custom_battle_scenario_4|Obrana Helmova žlebu, Rohan proti Železnému pasu
+mno_custom_battle_scenario_5|Šarvátka, Seveřané proti Rhûnu
+mno_custom_battle_scenario_6|Dobývání, skřeti proti trpaslíkům
+mno_custom_battle_scenario_7|Přepadení, skřeti proti elfům z Temného hvozdu
 mno_custom_battle_scenario_11|Testovací bitvy (pro balancováni statu)
 mno_custom_battle_scenario_10|Testovací bitva pro procedurálně generovanou scénu
-mno_troll_battle_scenario    |Testovaci bitvy se zlobry
-mno_warg_battle_scenario     |Testovaci bitvy s vrrky
-mno_build_your_own_scene     |**Postav svou vlastni scenu pro TLD**
-mno_go_back                  |Zpět
+mno_troll_battle_scenario|Testovaci bitvy se zlobry
+mno_warg_battle_scenario|Testovaci bitvy s vrrky
+mno_build_your_own_scene|**Postav svou vlastni scenu pro TLD**
 menu_tutorial|^^TLD má mnoho funkcí neznámých z původního M&B. Jsou popsané detailně bez prozrazení zápletky v PDF přibaleném s modem. Pokud chcete projít tutoriál, udělejte to prosím v Native - základní hře, ne v modu.
 mno_go_back_dot|Jdi zpět.
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|Zobrazit náklady družiny.
 mno_view_character_report|Zobrazit přehled postavy.
 mno_view_party_size_report|Zobrazit prehled velikosti druziny.
@@ -263,6 +263,7 @@ menu_siege_join_defense|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^
 menu_town_bandits_succeeded|^^^^^Goblini před tebou padají jako obílí před kosou! Brzy stojíš sám, zatímco většina útočníků leží v bezvědomí, mrtvá nebo umírající. Místní obyvatelé by byli jistě velmi vděční za to, že jsi je zachránil před tímto nebezpečím.
 ; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
+; menu_close|Nothing.
 ; menu_town|You arrived in {s60}.{s12}{s13}
 mno_town_menu_0|Jdi na nějeké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Navštiv {s41}.
 mno_town_prison_door|Dveře do vězení.
 mno_dungeon_enter|Hledej ztracená kopí v horách.
 mno_dungeon_enter_door|Otevřít dveře.
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|Navštiv {s61} Kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
 mno_isengard_underground|Jdi do podzemních jeskyň.
@@ -311,9 +314,19 @@ mno_whatever|Vstaň!
 ; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 ; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Prozkoumej toto místo.
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^Vidíš malý karavan pod útokem skupiny orků. Co uděláš?
 mno_help|Pomož cizincům!
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|Nech je na pokoji.
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|Nech je na pokoji.
 menu_custom_battle_choose_faction1|^^^^^^^^^^Vyber si svoji stranu a výhod:
 mno_good_equal|Frakce dobra
 mno_bad_equal|Frakce zla
@@ -366,3 +379,5 @@ menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 ; mno_scene4|Battlefield8 (file scn battlefield8.sco)
 ; mno_scene5|Battlefield9 (file scn battlefield9.sco)
 mno_back_3dot|Zpět...
+mno_back|Jdi zpět.
+; mno_next|Next...

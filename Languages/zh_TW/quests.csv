@@ -28,6 +28,8 @@ qst_mirkwood_sorcerer|殺 死 幽 暗 森 林 的 巫 師
 qst_mirkwood_sorcerer_text|凱 蘭 崔 爾 保 衛 羅 斯 洛 立 安 的 力 量 已 經 被 多 爾 哥 多 的 巫 師 的 骯 髒 儀 式 破 壞 。  儘 管 他 是 凡 人 ， 代 表 了 他 對 精 靈 們 是 很 大 的 威 脅 。 在 幽 暗 密 林 中 尋 找 他 ， 其 實 離 多 爾 哥 多 并 不 遠 。 請 秘 密 行 動 來 避 免 引 發 警 報 ， 畢 竟 衹 有 一 次 機 會 去 擊 敗 他 （ 注 意 存 檔 ） 
 qst_find_lost_spears|尋 找 布 拉 多 辛 國 王 丟 失 的 長 矛 
 qst_find_lost_spears_text|{s9}讓 你 去 尋 找 丟 失 的 長 矛 ， 長 矛 是 矮 人 爲 布 拉 多 辛 國 王 打 造 的 。 你 需 要 尋  求 矮 人 的 許 可  去 尋 找 長 矛 在 孤 山 的深 處 。 
+; qst_defend_village|Defend Village
+; qst_raid_village|Raid Village
 qst_rescue_prisoners|營 救 {reg1}的 囚 犯 
 qst_rescue_prisoners_text|{s9}想 要 你 去 營 救 {reg1}的 囚 犯 。 
 qst_scout_enemy_town|偵 查 敵 人 的 城 鎮 

@@ -3,23 +3,23 @@ mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
 mno_go_bback|戻る
 menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
-mno_go_forth|運命の道を踏み出すのだ・・・
-menu_start_game_3            |^^^^^^^^シナリオを選んでください:
-mno_custom_battle_scenario_1 |小規模戦闘、 ゴンドール勢 vs ハラド
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^シナリオを選んでください:
+mno_custom_battle_scenario_1|小規模戦闘、 ゴンドール勢 vs ハラド
 mno_custom_battle_scenario_12|ファクションを選んでください
-mno_custom_battle_scenario_3 |小規模戦闘、 エルフ vs 黒きヌーメノール人
-mno_custom_battle_scenario_4 |ヘルム峡谷の攻防戦、 ローハン vs アイゼンガルド
-mno_custom_battle_scenario_5 |小規模戦闘、 北方の民 vs リューン
-mno_custom_battle_scenario_6 |攻城戦、 オーク vs ドワーフ
-mno_custom_battle_scenario_7 |待ち伏せ攻撃、 オーク vs 闇の森のエルフ
+mno_custom_battle_scenario_3|小規模戦闘、 エルフ vs 黒きヌーメノール人
+mno_custom_battle_scenario_4|ヘルム峡谷の攻防戦、 ローハン vs アイゼンガルド
+mno_custom_battle_scenario_5|小規模戦闘、 北方の民 vs リューン
+mno_custom_battle_scenario_6|攻城戦、 オーク vs ドワーフ
+mno_custom_battle_scenario_7|待ち伏せ攻撃、 オーク vs 闇の森のエルフ
 mno_custom_battle_scenario_11|戦闘のテスト(バランス調整をしてください！)
 mno_custom_battle_scenario_10|シーナリーのテスト
-mno_troll_battle_scenario    |トロルのテスト
-mno_warg_battle_scenario     |ワーグのテスト
-mno_build_your_own_scene     |** 自分だけのTLDのシーンを作ろう **
-mno_go_back                  |戻る
+mno_troll_battle_scenario|トロルのテスト
+mno_warg_battle_scenario|ワーグのテスト
+mno_build_your_own_scene|** 自分だけのTLDのシーンを作ろう **
 menu_tutorial|^^TLDには、M&Bにはない多くの機能が追加されています。 詳細はこのリリースの配布パッケージに含まれているPDFファイルに、 できるだけネタバレを避ける形で記載されています。 ゲームの基本的な操作方法を学ぶチュートリアルをプレイする場合は、 Nativeモジュールを利用してください。
 mno_go_back_dot|戻る
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|パーティの維持費を見る
 mno_view_character_report|キャラクター情報を見る
 mno_view_party_size_report|パーティの人数上限を確認する
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^逃亡者の強烈な一撃を食�
 menu_town_bandits_succeeded|^^^^^鎌に刈られる小麦のように、 ゴブリンどもはなぎ倒されました！ 立っているのはあなただけで、 ゴブリンどもは残らず気を失ったか、 死んだか、 または虫の息です。 このような脅威を取り除いたあなたに対し、 地元の民はとても感謝することでしょう。
 menu_town_brawl_lost|^^^^^^あなたは倒され、 完全に気を失いました。 彼らは素早くあなたの体から 金目の物を抜き取ると、 何食わぬ顔で普段の生活へと 戻っていきました。
 menu_town_brawl_won|^^^^^あなたが敵をすべて倒すと、 騒動を聞きつけた衛兵が 駆けつけてきました。 あなたは素早く倒れている者たちから 金目の物を抜き取ると、 騒ぎが落ち着くまで身を隠しました。^次に連中と顔を合わせる機会があれば、 彼らはもう少しあなたに敬意を払うでしょう。
+; menu_close|Nothing.
 menu_town|{s60}に到着しました。{s12}{s13}
 mno_town_menu_0|その辺をうろうろする。
 mno_town_menu_0_door|どこかへ通じる扉。
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|{s41}に行く。
 mno_town_prison_door|牢獄へ行く。
 mno_dungeon_enter|失われた槍を探しに山の内部へ行く。
 mno_dungeon_enter_door|扉を開ける。
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|{s61}の兵舎へ行く。
 mno_speak_with_elder|{s6}に会う。
 mno_isengard_underground|地下の洞窟へ行く。
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^{s1}は敗れました！^{s1}は{s13}�
 menu_ruins|^^^^あなたは{s1}へと近づいていきました。 かつて強固を誇った陣地は完全に破壊され、 わずかに残る城壁や 散乱するさびた武器に、 かろうじてその面影を見ることができる。
 menu_legendary_place|^^^^あなたは噂話を頼りに{s1}を発見しました。 さっそく探索し、 噂が本当かどうか、 自らの手で確かめましょう。
 mno_explore|探索を始める。
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^あなたはオークの一団の襲撃を受けている、 小規模な隊商を見つけました。 どうしますか？
 mno_help|彼らを助けろ！
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|放っておく
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|放っておく
 menu_custom_battle_choose_faction1|^^^^^^^^^^陣営とアドバンテージを選んでください
 mno_good_equal|光のファクション
 mno_bad_equal|闇のファクション
@@ -366,3 +379,5 @@ mno_scene3|Battlefield7 (file scn battlefield7.sco)
 mno_scene4|Battlefield8 (file scn battlefield8.sco)
 mno_scene5|Battlefield9 (file scn battlefield9.sco)
 mno_back_3dot|戻る・・・
+mno_back|戻る
+; mno_next|Next...

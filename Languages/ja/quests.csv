@@ -28,6 +28,8 @@ qst_mirkwood_sorcerer|闇の森の妖術師を殺せ
 qst_mirkwood_sorcerer_text|ドル・グルドゥアの妖術師が行っている邪悪な儀式によって、 ロスロリエンを護るガラドリエルの力が弱められている。 妖術師は生身の人間だが、 その存在はエルフにとっての大きな脅威となっている。 闇の森にいる妖術師を探し出せ。 ドル・グルドゥアからそう遠くない場所にいるはずだ。 妖術師を倒す機会は一度きりしかない。 警戒をさけるため、 隠密な行動が要求されるだろう。
 qst_find_lost_spears|ブラードルシン王の失われた槍を見つけ出せ
 qst_find_lost_spears_text|かつてドワーフがブラードルシン王のために 鍛えたと伝わる失われた槍を見つけるよう、 {s9}に頼まれた。 はなれ山の奥深くを探索するには、 ドワーフの許可を得なければならない。
+; qst_defend_village|Defend Village
+; qst_raid_village|Raid Village
 qst_rescue_prisoners|捕虜を{reg1}名救出せよ
 qst_rescue_prisoners_text|捕虜を{reg1}名救出するよう、 {s9}に頼まれた。
 qst_scout_enemy_town|敵の拠点を偵察せよ

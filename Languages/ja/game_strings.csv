@@ -1,6 +1,7 @@
 str_yes|する
 str_no|しない
 str_noone|空
+; str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50}、 および{s51}
 str_s5_s_party|{s5}の部隊
 str_s5_s_host|{s5}の部隊
@@ -20,7 +21,7 @@ str_blunt_hold_fire|殴打 / 攻撃止め
 str_tutorial_ammo_refilled|矢弾が補充されました。
 str_custom_battle_1|マルヴォギル隊長率いるゴンドールの部隊は、増援に向う途中の^ハラドの部隊の行く手を阻んだ。隊長はときの声を上げて彼の馬に^ムチを当てると、忠実な部下たちを率いて激しい戦いの火蓋を切った。
 str_custom_battle_2|ロリエンのケレボルンが騎兵と弓兵からなる巡察隊を率いていると、^先行していた斥候から、灰色の顔をした男たちの一群が^接近していると報告を受けた。悪名高い、黒きヌーメノール人だ！^ロスロリエンの近くでは彼らを長いこと見ることがなかったが、^再びこの世界へと追い払われてきたのだろう。
-str_custom_battle_3|ローハンのグリムボルド卿は一隊を率い、アイゼンガルド軍による^包囲のなか、絶対防御線である城壁を死守していた。攻城軍が^仕上げの総攻撃にかかろうとする今、彼は勇気と磨き上げた剣を^もって、この城壁を守り通さねばならない。
+; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
 str_custom_battle_4|リューンの軍勢が接近しているとの報告を斥候から受けると、^ベランヘルム卿は数に優る敵勢を食い止めるべく、彼の野営地の^守備を固める準備に素早くとりかかった。
 str_custom_battle_5|ウグルクは獰猛なオークどもに思うさまの略奪を約束すると、^彼らを率いて西方へと遠征した。もしこのドワーフの要塞を今日^落とすことができれば、バラド＝ドゥアの主人たちは大いに^お喜びになるだろう。
 str_custom_battle_6|ウグルク率いるオーク遊撃隊は、彼らから逃げるエルフの巡察隊を^夢中になって追撃していた。だが、運とはいづれ尽きるものなのだ。^どうやら、狡猾な青白い顔の連中が攻勢に出る番が来たようだ。
@@ -203,7 +204,7 @@ str_persuasion_summary_very_bad|あなたは{s50}をなんとか説得しよう�
 str_persuasion_summary_bad|あなたは{s50}を説得しようと試みたが、 のっけから厳しい反論にさらされた。 あなたが快心の論だと内心感じたものでさえ、 吐き出してみると、 {reg51?彼女:彼}の前では、 我ながら虚しい話に聞こえた。 {s50}があなたの意見を高く評価してくれるとは、 とても思えない。
 str_persuasion_summary_average|議論を始めてみると、 {s50}は頭の切れる、 弁舌の達者な人物であることが判明した。 あなたがどう論じてみても、 {reg51?彼女:彼}からの的確な反論に遭ってしまうのだった。 終わってみれば、 議論は平行線のままだった。
 str_persuasion_summary_good|とっさの機転と流れるような論証により、 あなたの弁論は {s50}のいくつかの考えを改めさせるのに 充分な効果を発揮した。 しかしながら、 {reg51?彼女:彼}はあなたの要望に対する懸念を 完全には捨てきれない様子だ。
-str_persuasion_summary_very_good|あなたの情熱のほとばしる言葉の数々は、 聴く者の耳に力強い詩のように響いた。 あたりは静まり返り、 まるで世界中のすべてのものが、 息をひそめてあなたの話に聴き入っているかのようだった。 あなたの美しい弁論は、 {s50}を大いに感動させた。 {reg51?彼女:彼}はあなたを支持することに対して 意欲的になったようだ。
+; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
 str_surname_1|タルノストの{s50}
 str_surname_2|ロスサールナッハの{s50}
 str_surname_3|エレヒの{s50}
@@ -1090,7 +1091,7 @@ str_lord_insult_goodnatured|不快な男
 str_lord_insult_upstanding|恥ずべき悪党
 str_rebellion_dilemma_default|[臣従をうながす]
 str_rebellion_dilemma_martial|{s45}が不当な扱いを受けたのは間違いない。 私は{s46}に忠誠を誓っているが、 もし王位が不当に奪われたものだとしたら、 私も誓いを守る義務はないと考える。
-str_rebellion_dilemma_quarrelsome|フム。 {s46}に大した恩を受けた覚えはない。 しかし、 だからといって、 {s45}を支持するという話にはならぬ。 少なくとも、 {s46}は自身を証明されておる。
+; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
 str_rebellion_dilemma_pitiless|なるほど。 {s45}は、 {reg3?彼女:彼}こそが正当なる王である、 と主張するのだな。 それはいい。 私の{s46}に対して誓った忠誠も、 正当性を失うというわけだ。 しかし、 ここは慎重に判断せねばなるまい。
 str_rebellion_dilemma_cunning|うむ。わしは{s46}に臣従の誓いを立てておる。 だがの、力ある者は市井の民ほどには誓いに縛られぬのだ。 我らが務めはあたう限りをもって支配し、秩序をもたらし、 万人の万人に対する戦いを阻むことにあるのだ。
 str_rebellion_dilemma_sadistic|さてね。この末法の世にあっては、 賢き者は自分の身を考えるのよ。 自分以外の誰も気になど掛けてくれぬからな。 さて、そこで問うが、わしに何の得があるのだ？
@@ -1818,7 +1819,7 @@ str_imladris_gift0|食パンとハーブ入りバター
 str_imladris_gift1|クリスタルガラスの食器
 str_imladris_gift2|ミルヴォール
 str_imladris_gift3|刺繍入りの軍旗と銀をちりばめた角笛
-str_imladris_gift4|薬草と軟膏
+; str_imladris_gift4|Healing Herbs and Ointments
 str_woodelf_gift0|柔らかい動物の毛皮
 str_woodelf_gift1|矢じりと矢羽
 str_woodelf_gift2|狩猟用の槍
@@ -1874,3 +1875,4 @@ str_beorn_gift1|蜜蝋と麻織物
 str_beorn_gift2|はちの巣
 str_beorn_gift3|こはくの首飾り
 str_beorn_gift4|よく調教されたポニー
+; str_cmenu_follow|Accompany

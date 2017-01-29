@@ -3,23 +3,23 @@ mno_start_good|ŚWIT nowej Ery
 mno_start_evil|ZMIERZCH Ludzi
 mno_go_bback|Wróć
 menu_start_phase_2|^^^^^Śródziemie. Cień rośnie na Wschodzie.^Wolne ludy gotują się do wojny, wojny której nie widziano od wieków.^Ludzie, Ely, Krasnoludy i Orkowie; wszyscy odegrają swoją rolę.^^Jaką, to się okaże... 
-mno_go_forth|Idź naprzód na wybrany szlak.
-menu_start_game_3            |^^^^^^^^    Wybierz scenariusz:
-mno_custom_battle_scenario_1 |            Potyczka, Gondor vs Harad
+; mno_go_forth|          Go forth upon your chosen path...
+menu_start_game_3|^^^^^^^^    Wybierz scenariusz:
+mno_custom_battle_scenario_1|            Potyczka, Gondor vs Harad
 mno_custom_battle_scenario_12|Wybierz frakcje do bitwy
-mno_custom_battle_scenario_3 |Potyczka, Elfy vs Czarni Numenorejczycy
-mno_custom_battle_scenario_4 |Obrona Helmowego Jaru, Rohan vs Isengard
-mno_custom_battle_scenario_5 |Potyczka, Ludy Północy vs Rhun
-mno_custom_battle_scenario_6 |Atak podczas oblężenia, Orkowie vs Krasnoludy
-mno_custom_battle_scenario_7 |Zasadzka, Orkowie vs Elfy z Mrocznej Puszczy
+mno_custom_battle_scenario_3|Potyczka, Elfy vs Czarni Numenorejczycy
+mno_custom_battle_scenario_4|Obrona Helmowego Jaru, Rohan vs Isengard
+mno_custom_battle_scenario_5|Potyczka, Ludy Północy vs Rhun
+mno_custom_battle_scenario_6|Atak podczas oblężenia, Orkowie vs Krasnoludy
+mno_custom_battle_scenario_7|Zasadzka, Orkowie vs Elfy z Mrocznej Puszczy
 mno_custom_battle_scenario_11|Testowe bitwy (Ciągle Balansowane!)
 mno_custom_battle_scenario_10|Test bitwy krajobrazowej
-mno_troll_battle_scenario    |Test bitew troli.
-mno_warg_battle_scenario     |Test walki wargów
-mno_build_your_own_scene     |** Zbuduj własną scenę dla TLD **
-mno_go_back                  |Wróć
+mno_troll_battle_scenario|Test bitew troli.
+mno_warg_battle_scenario|Test walki wargów
+mno_build_your_own_scene|** Zbuduj własną scenę dla TLD **
 menu_tutorial|^^TLD posiada wiele nowych opcji niedostępnych w podstawowej wersji M&B. Część jest opisanych w manualu PDF. Aby poznać podstawy mechaniki M&B proszę skorzystać z samouczka zawartego w Native
 mno_go_back_dot|Wróć.
+; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|Zobacz koszt utrzymania
 mno_view_character_report|Zobacz raport postaci
 mno_view_party_size_report|Obejrzyj raport rozmiaru oddziału.
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Uciekinier powala cię na ziemię 
 menu_town_bandits_succeeded|^^^^^The goblins fall before you as wheat to a scythe! Soon you stand alone while most of your attackers lie unconscious, dead or dying. Searching the bodies, you find a purse which must have belonged to a previous victim of these brutes. Or perhaps, it was given to them by someone who wanted to arrange a suitable ending to your life.
 menu_town_brawl_lost|^^^^^^Został[eś/aś] znokautowan[y/a]. Ludzie których zaatakował[eś/aś] szybko sprawdzili czy masz coś wartościowego, po czym powrócili do codziennego życia.
 menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
+menu_close|Zamknij.
 menu_town|Przybywasz do {s60}.{s12}{s13}
 mno_town_menu_0|Go to some location.
 mno_town_menu_0_door|Door to some location.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Odwiedź magazyny.
 mno_town_prison_door|Drzwi do więzienia.
 mno_dungeon_enter|Enter the cellars.
 mno_dungeon_enter_door|Otwórz drzwi.
+; mno_dwarven_warehouse|Visit the Dwarven Warehouse
+; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
 mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 mno_isengard_underground|Go to the underground caverns.
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^Pokonano {s1}!^{s1} już nie istnieje!
 menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Explore this place.
+; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+; mno_attack_lair|Attack them now
+; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?
 mno_help|Help the strangers!
+; mno_start_defend_caravan|Defend the Caravan!
+; mno_start_raid_caravan|Raid the Caravan!
+; mno_start_ambush_orcs|Ambush the Orcs!
+; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|Leave them alone
+; mno_defend_villagers|Defend the Villagers!
+; mno_raid_villagers|Raid the Village!
+mno_go_away|Leave them alone
 menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:
 mno_good_equal|Dobra frakcja.
 mno_bad_equal|Wroga frakcja
@@ -366,3 +379,5 @@ mno_scene3|Pole Bitwy 7 (plik scn battlefield7.sco)
 mno_scene4|Pole Bitwy 8 (plik scn battlefield8.sco)
 mno_scene5|Pole Bitwy 9 (plik scn battlefield9.sco)
 mno_back_3dot|Wróć...
+mno_back|Wróć.
+; mno_next|Next...

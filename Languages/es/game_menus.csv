@@ -7,19 +7,19 @@ mno_go_forth|Sigue adelante por el camino elegido...
 menu_start_game_3|^^^^^^^^Elige tu escenario:
 mno_custom_battle_scenario_1|Escaramuza, Facciones de Gondor contra Harad
 mno_custom_battle_scenario_12|Elegir facciones para la batalla
-mno_custom_battle_scenario_3 |Escaramuza, Elfos contra Numenóreanos Negros
-mno_custom_battle_scenario_4 |Defensa del Abismo de Helm, Rohan contra Isengard
-mno_custom_battle_scenario_5 |Escaramuza, Facciones norteñas contra Rhûn
-mno_custom_battle_scenario_6 |Asedio, Orcos contra Enanos
-mno_custom_battle_scenario_7 |Emboscada, Orcos contra Bosque Negro
+mno_custom_battle_scenario_3|Escaramuza, Elfos contra Numenóreanos Negros
+mno_custom_battle_scenario_4|Defensa del Abismo de Helm, Rohan contra Isengard
+mno_custom_battle_scenario_5|Escaramuza, Facciones norteñas contra Rhûn
+mno_custom_battle_scenario_6|Asedio, Orcos contra Enanos
+mno_custom_battle_scenario_7|Emboscada, Orcos contra Bosque Negro
 mno_custom_battle_scenario_11|Batallas de prueba (¡Para equilibrar el juego!)
 mno_custom_battle_scenario_10|Batalla de prueba de escenarios
 mno_troll_battle_scenario|Batallas de prueba de trolls
 mno_warg_battle_scenario|Batallas de prueba de huargos
 mno_build_your_own_scene|** Construir tu propio escenario para TLD **
-mno_go_back|Volver atrás
 menu_tutorial|^^TLD tiene varias características desconocidas para aquellos que provienen de M&B Native. Estas están descritas detalladamente sin revelar sorpresas en un PDF incluido con el mod. Para el tutorial de iniciación sobre la mecánica básica del juego, practica con el módulo Native.
 mno_go_back_dot|Volver atrás.
+mno_action_view_troop_trees|Ver árboles de tropas.
 mno_view_upkeep_costs|Ver costes de mantenimiento.
 mno_view_character_report|Ver informe del personaje.
 mno_view_party_size_report|Ver informe del tamaño del grupo.
@@ -263,6 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Un poderoso golpe de las manos del
 menu_town_bandits_succeeded|Los trasgos caen ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. Seguramente la gente del lugar estará muy agradecida de que les hayas salvado de esta amenaza.
 menu_town_brawl_lost|^^^^^^Te han derribado y dejado inconsciente. La gente que atacaste te registra en busca de objetos de valor, antes de seguir con sus vidas como si tal cosa.
 menu_town_brawl_won|^^^^^Has dejado inertes en el suelo a todos los oponentes restantes, además de todos los guardias enviados para calmar el alboroto. Les registras rápidamente en busca de algo de valor y desapareces de la vista hasta que se bajan los ánimos.^Puede que a la próxima te demuestren más respeto y retrocedan.
+menu_close|Nada.
 menu_town|Has llegado a {s60}.{s12}{s13}
 mno_town_menu_0|Ir a algún sitio.
 mno_town_menu_0_door|Puerta a algún sitio.
@@ -277,6 +278,8 @@ mno_trade_with_horse_merchant|Visitar {s41}.
 mno_town_prison_door|Puerta a la prisión.
 mno_dungeon_enter|Buscar las lanzas perdidas dentro de la montaña.
 mno_dungeon_enter_door|Abrir la puerta.
+mno_dwarven_warehouse|Visitar el Almacén Enano
+mno_dwarven_warehouse_door|Entrar en el Almacén Enano.
 mno_talk_to_castle_commander|Visitar el cuartel de {s61}.
 mno_speak_with_elder|Hablar con el {s6}.
 mno_isengard_underground|Ir a las cavernas subterráneas.
@@ -311,9 +314,19 @@ menu_notification_faction_defeated|^^^^^¡{s1} ha sido derrotado!^{s1} ya no exi
 menu_ruins|^^^^Te acercas a las {s1}. El que una vez fuera un fuerte campamento fortificado se encuentra ahora arrasado hasta los cimientos, pasto de las llamas, aunque todavía puedes ver los restos de edificaciones y armas oxidadas a ambos lados de tu campo de visión.
 menu_legendary_place|^^^^Has seguido los rumores y encontrado {s1}. A partir de ahora puedes explorar este lugar y comprobar por tu cuenta y riesgo si los rumores de los que tanto has oído hablar son ciertos.
 mno_explore|Explorar el lugar.
+menu_ring_hunter_lair|^^^^Has seguido el rastro de los Cazanillos por el Bosque Negro y llegado a {s1}. Ves que se disponen a huir con un cofre.
+mno_attack_lair|Empieza el ataque
+mno_leave_bandit_lair|Dejarlo por el momento.
 menu_starting_quest_good|^^^^^^Divisas una pequeña caravana bajo el arduo ataque de una banda de orcos. ¿Qué piensas hacer?
 mno_help|¡Ayudar a los desconocidos!
+mno_start_defend_caravan|¡Defiende la caravana!
+mno_start_raid_caravan|¡Asalta la caravana!
+mno_start_ambush_orcs|¡Tiende una emboscada a los orcos!
+mno_start_kill_scouts|¡Impide que los exploradores informen de tu llegada!
 mno_go_your_way|Dejarlos en paz
+mno_defend_villagers|¡Defiende el Poblado!
+mno_raid_villagers|¡Saquea el Poblado!
+mno_go_away|Dejarlos en paz
 menu_custom_battle_choose_faction1|^^^^^^^^^^Elige en qué lado combatirás y qué ventajas activarás:
 mno_good_equal|Facción del bien
 mno_bad_equal|Facción del mal
@@ -366,3 +379,5 @@ mno_scene3|Battlefield7 (archivo scn_battlefield7.sco)
 mno_scene4|Battlefield8 (archivo scn_battlefield8.sco)
 mno_scene5|Battlefield9 (archivo scn_battlefield9.sco)
 mno_back_3dot|Atrás...
+mno_back|Volver atrás.
+mno_next|Siguiente...

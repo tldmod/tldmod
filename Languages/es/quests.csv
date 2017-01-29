@@ -28,6 +28,8 @@ qst_mirkwood_sorcerer|Mata a un hechicero en el Bosque Negro.
 qst_mirkwood_sorcerer_text|El poder de Galadriel para defender Lothlórien ha sido debilitado por los viles rituales de un hechicero de Dol Guldur. A pesar de que es un mortal, representa una gran amenaza para los Elfos. Búscalo por el Bosque Negro, no lejos de Dol Guldur. Usa el sigilo para evitar que se dé la alarma, ya que solo habrá una oportunidad para derrotarlo.
 qst_find_lost_spears|Encuentra las lanzas perdidas del Rey Bladorthin
 qst_find_lost_spears_text|{s9} te ha pedido encontrar las lanzas perdidas que los enanos hicieron para el Rey Bladorthin. Deberás pedir permiso a los enanos para buscar las lanzas en las profundidades de la Montaña Solitaria.
+qst_defend_village|Defende el Poblado
+qst_raid_village|Saquea el Poblado
 qst_rescue_prisoners|Rescata {reg1} prisioneros.
 qst_rescue_prisoners_text|{s9} quiere que rescates {reg1} prisioneros.
 qst_scout_enemy_town|Explora la ciudad enemiga.
