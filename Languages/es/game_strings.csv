@@ -21,7 +21,7 @@ str_blunt_hold_fire|Armas contundentes / Alto el fuego
 str_tutorial_ammo_refilled|Munición recargada.
 str_custom_battle_1|El Capitán Malvogil y su compañía de Gondor han interceptado un grupo de refuerzos de Harad. Lanzando su grito de batalla, espolea a su caballo y lidera a sus leales hombres a una feroz batalla.
 str_custom_battle_2|Celeborn de Lórien lidera una patrulla de caballeros y arqueros cuando sus exploradores de vanguardia le avisan de que una fuerza de hombres malvados de rostro ceniciento se están acercando. ¡Son los terribles Númenóreanos Negros! No se les había visto cerca de Lothlórien desde hacía muchos siglos, pero ahora deben ser enviados de vuelta a la oscuridad.      
-; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
+str_custom_battle_3|El señor Grimbold de Rohan lidera la última defensa de los muros contra el ejército de Isengard. Y ahora, mientras el enemigo se prepara para su asalto final a los muros, debe defender la fortaleza con aguerrido coraje y acerino hierro.
 str_custom_battle_4|Cuando los exploradores informan al señor Beranhelm de que una banda de guerreros de Rhûn se está acercando, decide construir rápidamente defensas en su campamento e intentar resistir contra un enemigo más numeroso.
 str_custom_battle_5|Ugluk ha traido a sus fieros orcos al oeste con promesas de saqueo. Si consigue hacerse con esta fortaleza enana hoy, sus amos en Barad-Dûr estarán contentos.
 str_custom_battle_6|Ugluk y su pelotón de orcos hacían todo lo posible para escapar de las patrullas élficas. Pero la suerte no dura eternamente y por lo que parece ahora es el turno de los sucios pieles-pálidas para vengarse.
@@ -36,23 +36,23 @@ str_cant_use_inventory_disguised|No se puede acceder al inventario mientrás est
 str_cant_use_inventory_tutorial|No se puede acceder al inventario en el campo de entrenamiento.
 str_1_denar|1 Punto de recursos.        
 str_reg1_denars|{reg1} Puntos de recursos.           
-str_january_reg1_reg2|{reg2} T.E., {reg1} Narvinyë (Ene)          
-str_february_reg1_reg2|{reg2} T.E., {reg1} Nénimë (Feb)           
-str_march_reg1_reg2|{reg2} T.E., {reg1} Súlìmë (Mar)             
-str_april_reg1_reg2|{reg2} T.E., {reg1} Víressë (Abr)          
-str_may_reg1_reg2|{reg2} T.E., {reg1} Lótessë (May)            
-str_june_reg1_reg2|{reg2} T.E., {reg1} Náríë (Jun)             
-str_july_reg1_reg2|{reg2} T.E., {reg1} Cermië (Jul)              
-str_august_reg1_reg2|{reg2} T.E., {reg1} Urimë (Ago)            
-str_september_reg1_reg2|{reg2} T.E., {reg1} Yavannië (Sep)           
-str_october_reg1_reg2|{reg2} T.E., {reg1} Narquelië (Oct)           
-str_november_reg1_reg2|{reg2} T.E., {reg1} Hísimë (Nov)            
-str_december_reg1_reg2|{reg2} T.E., {reg1} Ringarë (Dic)            
-str_calendar_spec_day_1|{reg2} T.E., Yestarë (Primer Día)            
-str_calendar_spec_day_2|{reg2} T.E., Tuilérë (Día de Primavera)       
-str_calendar_spec_day_3|{reg2} T.E., Loëndë (Día de Año Medio)          
-str_calendar_spec_day_4|{reg2} T.E., Yáviérë (Día de la Cosecha)          
-str_calendar_spec_day_5|{reg2} T.E., Mettarë (Último Día)             
+str_january_reg1_reg2|{reg2} T.E., {reg1} de Narvinyë (Ene)
+str_february_reg1_reg2|{reg2} T.E., {reg1} de Nénimë (Feb)
+str_march_reg1_reg2|{reg2} T.E., {reg1} de Súlìmë (Mar)
+str_april_reg1_reg2|{reg2} T.E., {reg1} de Víressë (Abr)
+str_may_reg1_reg2|{reg2} T.E., {reg1} de Lótessë (May)
+str_june_reg1_reg2|{reg2} T.E., {reg1} de Náríë (Jun)
+str_july_reg1_reg2|{reg2} T.E., {reg1} de Cermië (Jul)
+str_august_reg1_reg2|{reg2} T.E., {reg1} de Urimë (Ago)
+str_september_reg1_reg2|{reg2} T.E., {reg1} de Yavannië (Sep)
+str_october_reg1_reg2|{reg2} T.E., {reg1} de Narquelië (Oct)
+str_november_reg1_reg2|{reg2} T.E., {reg1} de Hísimë (Nov)
+str_december_reg1_reg2|{reg2} T.E., {reg1} de Ringarë (Dic)
+str_calendar_spec_day_1|{reg2} T.E., Yestarë (Primer Día)
+str_calendar_spec_day_2|{reg2} T.E., Tuilérë (Día de Primavera)
+str_calendar_spec_day_3|{reg2} T.E., Loëndë (Día de Año Medio)
+str_calendar_spec_day_4|{reg2} T.E., Yáviérë (Día de la Cosecha)
+str_calendar_spec_day_5|{reg2} T.E., Mettarë (Último Día)
 str_town_nighttime|Es noche cerrada.
 str_door_locked|La puerta está cerrada.
 str_castle_is_abondened|El castillo parece abandonado.
@@ -204,7 +204,7 @@ str_persuasion_summary_very_bad|Haces todo lo posible para persuadir a {s50}, pe
 str_persuasion_summary_bad|Intentas persuadir a {s50}, pero {reg51?she:he} te supera desde el comienzo. Tus argumentos parecen vacíos incluso a tus propios oídos. {s50}, tampoco se ha formado una buena opinión de lo que has dicho.
 str_persuasion_summary_average|{s50} resulta ser un hábil orador con una mente brillante y tu no consigues esbozar aningún argumento concreto que {reg51?she:he} no pueda contrarrestar con su razonamiento. Al final, ninguno consigue ganar terreno en esta discusión.
 str_persuasion_summary_good|Con pensamiento rápido y una buena argumentación consigues exponer bien tu caso, forzando a {s50} a darte la razón. No obstante, {reg51?she:he} todavía tiene dudas sobre tu petición.
-; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
+str_persuasion_summary_very_good|Das un apasionado discurso que resuena como poesía en los oídos de todos los presentes. El mundo parece silenciarse para escucharte mejor. Tus inspiradas palabras han conmovido profundamente a {s50} y {reg51?:} parece mucho más dispuesto a ayudarte.
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} de Erech
@@ -1091,7 +1091,7 @@ str_lord_insult_goodnatured|tipo desagradable
 str_lord_insult_upstanding|sinvergüenza
 str_rebellion_dilemma_default|[liege]
 str_rebellion_dilemma_martial|{s45} estaba claramente equivocado. Aunque juré fidelidad a {s46}, nadie me puede obligar a apoyarle si es cierto que usurpó un trono que no le correspondía.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
+str_rebellion_dilemma_quarrelsome|Mmm. {s46} nunca me ha dado lo que me corresponde, así que no creo que le deba mucha fidelidad. Sin embargo, puede que {s45} no sea mejor, y {s46} por lo menos se ha dejado ver.
 str_rebellion_dilemma_pitiless|Mmm. {s45} dice que {reg3?she:he} es aspirante legítimo al trono. Eso está bien -- me absuelve de mi juramento a {s46}. Pero todavía necesito meditar mi decisión con cuidado.
 str_rebellion_dilemma_cunning|Mmm. Juré fidelidad a {s46}, aunque los poderosos no están atados por sus juramentos como la gente común. Nuestro deber es gobernar, preservar el orden y prevenir la guerra entre todos.
 str_rebellion_dilemma_sadistic|Mmm. En este mundo vil, un hombre juicioso debe pensar en sí mismo, porque nadie va a hacerlo por mí. Así que -- ¿qué hay para mí?
@@ -1392,7 +1392,7 @@ str_dale_rumor_5|¿Habéis visto alguna vez un amanecer en el Gran Lago? Los col
 str_dale_rumor_6|Los Enanos se encariñan demasiado de sus tesoros. Todavía no sabemos que pensar sobre Thorin Escudo de Roble.
 str_dale_rumor_7|Los hombres de Rohan son nuestros primos y nuestra propia lengua es muy similar a la suya.
 str_dale_rumor_8|Esgaroth obtuvo su nombre de la palabra élfica para los juncos, por sus campos de juncos. ¿Lo sabíais?
-str_dale_rumor_9|El dragón fue un monstruo que nadie querría ver de vuelta.
+str_dale_rumor_9|Nadie quiere volver a ver un dragón por esta zona, bastante daño han causado ya estos monstruos.
 str_dale_rumor_10|Nuestra prosperidad se debe al comercio con los Enanos y los Elfos. Pero es difícil negociar con los Enanos. Se obtiene muy poca ganancia ahí.
 str_harad_rumor_begin|La Serpiente Negra golpeará rápidamente y sin piedad.
 str_harad_rumor_2|¡Por la Serpiente! Nuestros caballos pisotearán a los soldados de Gondor.
