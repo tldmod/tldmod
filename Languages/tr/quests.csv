@@ -28,8 +28,8 @@ qst_mirkwood_sorcerer|Mirkwood'daki büyücüyü yok et.
 qst_mirkwood_sorcerer_text|Galadriel'in Lothlorien'i koruma gücü bir Dol Guldur büyücüsünün karanlık ritüelleri sonucunda sarsıldı. Bir ölümlü olmasına rağmen Elfler için büyük bir tehdit o. Mirkwood Ormanı'nda onu ara, Dol Guldur'dan çok uzak sayılmaz. Onu malup etmek için tek bir fırsatın olacağı için onlar fark etmeden, gizliliğini kullan.
 qst_find_lost_spears|Kral Bladorthin'in kayıp mızrağını bul.
 qst_find_lost_spears_text|{s9} senden bir zamanlar Kral Bladorthin için yapılan mızrakları bulmanı istedi. Lonely Mountain derinliklerinde mızrakları aramak için cücelerden izin almalısın.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
+qst_defend_village|Köyü Savun
+qst_raid_village|Köyü Yağmala
 qst_rescue_prisoners|Kurtar {reg1} esirleri
 qst_rescue_prisoners_text|{s9} senden {reg1} mahkumlarını kurtarmanı istedi.
 qst_scout_enemy_town|Düşman şehrini gözetle.

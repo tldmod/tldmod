@@ -262,36 +262,36 @@ dlga_find_lost_spears_permission:lord_pretalk.1|Lo siento, pero no confío en ti
 dlga_find_lost_spears_permission_yes:lord_pretalk|Y te doy las gracias por ello, mi señor.
 ; dlga_lord_talk:tell_dorwinion_sack|My lord, I found a sack with a fading emblem of grapes and some shards of wood and metal inside that could have belong to a spear.
 ; dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Very interesting. This ancient sack could have born the mark of the finest wines that could only come from Dorwinion.
-; dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|I also found this Rhun helm in the sack. Could this tell us more about what happened to the Spears?
+dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|También he encontrado este casco de Rhûn en el saco. ¿Puede ser una pista que nos conduzca a las Lanzas?
 ; dlga_tell_dorwinion_sack_3:lord_pretalk|Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for.
-; dlga_lord_talk:ring_hunters_start|My lord, I am prepared to take more arduous tasks to serve you better and end this war. What would you have me do?
+dlga_lord_talk:ring_hunters_start|Estoy preparado para embarcarme en misiones más complejas que ayuden a poner fin a la Guerra, mi señor. ¿Qué quieres que haga?
 ; dlga_ring_hunters_start:ring_hunters_check|{playername}, I have heard of your exploits and you have made a name for yourself. I have a task specifically for such as yourself. You can deal with it however you wish.  Bloodshed cannot be avoided, especially against this group I am about to send you of to. Do you have sufficient men?
 ; dlga_ring_hunters_check:ring_hunters_1|Yes, my lord. I have a group of well-trained, battlehardened men. We are ready for anything.
 dlga_ring_hunters_check:ring_hunters_check_failed|Me temo que no, mi señor.
 ; dlga_ring_hunters_check_failed:lord_pretalk|Then you are not ready for this task yet, {playername}. Go and gather more troops.
 ; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.   One with their loot moving towards Mirkwood Forest. The other, a considerable size, towards Beorn's House, perhaps to continue their destructive search.
-; dlga_ring_hunters_2:ring_hunters_what|My lord, what could they be searching for?
-; dlga_ring_hunters_2:ring_hunters_accept|My lord, I will do what is necessary to stop these... 'Ring Hunters'
-; dlga_ring_hunters_2:ring_hunters_reject|I am not ready for such a task just yet.
-; dlga_ring_hunters_accept:close_window|You are brave, General. We will await news of your success
-; dlga_ring_hunters_reject:lord_pretalk|I see. Let me know when you are, but make haste, we do not want them to succeed.
+dlga_ring_hunters_2:ring_hunters_what|¿Qué es lo que podrían estar buscando, mi señor?
+dlga_ring_hunters_2:ring_hunters_accept|Haré lo necesario para detener a estos... «Cazanillos».
+dlga_ring_hunters_2:ring_hunters_reject|Todavía no puedo realizar semejante tarea.
+dlga_ring_hunters_accept:close_window|Eres valiente, General. Esperamos que tengas suerte en tu empresa.
+dlga_ring_hunters_reject:lord_pretalk|Ya veo. Date prisa en decírmelo, no queremos perder.
 ; dlga_ring_hunters_what:ring_hunters_2|It is hard to know exactly what they want with this, but we can see that they are going through great lengths to find what they are looking for.   All we can surmise is that this must be a powerful weapon of sorts, a weapon to be used to cause more destruction under the Dark Lord's name.
 ; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for these..   Whether true or not, these must not fall into the Dark Lord's hands.
 ; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news.. Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
 ; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news, {playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something.. a disturbance.
 ; dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|I am glad, then. Whatever this weapon may have been... they may still be looking for it. I will remain vigilant and remain on the lookout for more of these Ring Hunters.
-; dlga_ring_hunter_quest_end:close_window|We all will. Thank you once more for your service, {playername}.
+dlga_ring_hunter_quest_end:close_window|Como todos. Gracias de nuevo por tus servicios, {playername}.
 ; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. I also came across this
-; dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|This is a minor ring of power.
+dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Esto es un Anillo de Poder menor.
 ; dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we have prevented the Dark Lord from obtaining this, which he will undoubtly use to end more lives.
 ; dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use against the Dark Lord's forces. We know you will use it well.
 ; dlga_ring_hunter_lair_quest_end:close_window|This is a tremendous honour, my Lord. Thank you. I shall continue the battle against the Dark lord, and this will help tremendously.
-; dlga_start:ring_hunters_party_attack|Look here, men. Another group to slaughter.
-; dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampaging has come to an end.
+dlga_start:ring_hunters_party_attack|Mirad, allí. Más carnaza.
+dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Pondremos fin a vuestra desbocada cacería.
 ; dlga_ring_hunters_party_attack_2:close_window|Everyone, make sure you search their packs and their fingers. Save one to torture. Everything else you can eat.
-; dlga_start:ring_hunter_lair_defeat|That ring belongs to the Dark Lord! You can not have it!
+dlga_start:ring_hunter_lair_defeat|¡El Anillo es propiedad del Señor Oscuro! ¡No os pertenece!
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Ahora es mío.
-; dlga_ring_hunter_lair_defeat2:close_window|This defeat does not matter... our war party raged on! You are too late to save them!
+dlga_ring_hunter_lair_defeat2:close_window|Nuestra derrota es irrelevante...  ¡Tu ayuda llega demasiado tarde, ya no puedes salvarlos!
 ; dlga_start:beorn_message|General, we received a message from {s1} that a large bandit party was headed our way! We had no time to gather enough forces, and when we heard the sound of battle, we prepared for the worse!
 ; dlga_beorn_message:beorn_message2|That was no ordinary bandit party. They were a collection of the Dark Lord's best...however, their leaders were not here...They have a lair near Mirkwood Forest and I must make haste.
 ; dlga_beorn_message2:beorn_message_end|Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory
@@ -367,17 +367,17 @@ dlga_lord_tell_objective:lord_pretalk.10|Estamos acompañando a {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.11|Estamos reconsiderando nuestro próximo objetivo.
 dlga_lord_tell_objective:lord_pretalk.12|No sé: {reg1} {s1}
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.
-; dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Are you able to send men?
+dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|¿Puedes enviar tropas?
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
-; dlga_lord_mission_defend_question:lord_mission_defend_accept|My men and I are ready. We shall ride out at once.
+dlga_lord_mission_defend_question:lord_mission_defend_accept|Mis tropas están listas. Saldremos en breve.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|Me temo que no puedo acometer este encargo.
 dlga_lord_mission_defend_accept:close_window|Gracias, {playername}. ¡Venga, date prisa!
-; dlga_lord_mission_defend_reject:close_window|I see. Then I will send what troops I can. Let us hope we are not too late.
+dlga_lord_mission_defend_reject:close_window|Ya veo. Les enviaremos tantas tropas como podamos, esperemos que no sea demasiado tarde.
 ; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
-; dlga_lord_mission_raid_village_a:lord_raid_village_accept|I will raid that village, kill every man we see, and enslave all women and children!
-; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I do not have the time to raid puny villages!
+dlga_lord_mission_raid_village_a:lord_raid_village_accept|Arrasaré el poblado matando a todo hombre que encuentre y convertiré a sus mujeres e hijos en esclavos.
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|¡No tengo tiempo para saquear aldeuchas!
 dlga_lord_raid_village_accept:close_window|¿Entonces qué es lo que estás haciendo aquí?
-; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting
+dlga_lord_raid_village_reject:close_window|Excusas de cobarde. Fuera de mi vista, encuentro tu cobardía insultante.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Hemos acabado con el hechicero del Bosque Negro, mi señora.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Perdonadme, mi Señora, pero causas de mayor importancia me han impedido acabar con el hechicero, y ha conseguido huir.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|El hechicero del Bosque Negro todavía vive. Interrumpimos sus rituales, pero ha conseguido huir.
@@ -560,16 +560,16 @@ dlga_caravan_help1:caravan_help2|Así es, jamás había visto orcos de ese tama�
 ; dlga_caravan_help2:caravan_help3|You are? Of course you are! I have seen that you are a capable warrior. ^^I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. ^^Here, have some of the local currency used by {s10}
 dlga_caravan_help3:caravan_help4|Buen viaje, Torbal. Seguro que nos encontramos de nuevo.
 ; dlga_caravan_help4:caravan_help5|I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!
-; dlga_caravan_help5:close_window|I will remember that. Thank you Torbal, and stay safe.
+dlga_caravan_help5:close_window|Lo recordaré. Te lo agradezco, Torbal. Ten cuidado.
 dlga_start:caravan_attack1|¿Quién eres? No necesitaba tu ayuda.
 dlga_caravan_attack3:close_window|¿Debilucho? Ya te enseñaré quién es el débil aquí (Difícil)
 dlga_caravan_attack3:close_window.1|Venga, huye, cobarde. Ya me encontraré tu mortaja.
 ; dlga_start:caravan_duel1|Hehe...He's a grumpy one, isn't he? Never mind him! You saved my skin out there! Some of the men's lives too! ^^Here, we grabbed the money in our dead men's pockets. {s10}
 ; dlga_start:caravan_duel1.1|I guess I am promoted, then. You are a fierce warrior. Here, take some of our loot from the caravan. The guards were also betting against you, but I wasn't..hehe... I saw what you did out there.... ^^{s10}
-; dlga_caravan_duel1:caravan_duel2|I could just kill you and take everything... but I have proven enough. Leave.
+dlga_caravan_duel1:caravan_duel2|Podría matarte y hacerme con todo... pero ya me has dado la razón. Fuera de aquí.
 ; dlga_caravan_duel2:caravan_duel3|The men definitely respects you now! Or they are afraid! No matter what,  they will tell their Lords what you did here. Maybe if you keep impressing them, they'll give you special things! The horse people of Rhun once gave me a horse! I ATE IT! HA HA HA HA!
 ; dlga_woodelf_help_6:woodelf_help_7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
-; dlga_woodelf_help_7:close_window.1|(Raise your hand and leave without a word)
+dlga_woodelf_help_7:close_window.1|(Alza la mano y vete sin decir palabra)
 ; dlga_start:beorn_help1|*He sizes you up with a frown.* ^^Shiny things like you is what draws goblins from the mountains into our forest. But you kill them good, for that we give thanks.
 ; dlga_beorn_help1:beorn_help2|Well met! Even though we seldom leave our woods, I would not refuse aid to any who oppose servants of the Enemy.
 dlga_beorn_help1:beorn_help2a|(asiente en silencio)
@@ -590,9 +590,9 @@ dlga_beorn_help7:close_window.1|(alza la mano y vete sin decir palabra)
 ; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill?! We'd rather be drinking our own piss!
 ; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I've won my bet against Gothmog! haha!^^ I'll definitely tell him and the rest of the Mordor commands all about you! They'll definitely keep an eye on you.^^ If they like you, you'll get rewarded nicely. ^^MORE ORC BREW! AHAHA!
 ; dlga_kill_scout_6:kill_scout_7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
-; dlga_kill_scout_7:kill_scout_8|You disgust me, Orc! Onward to Mordor, before we decorate our spears with your head!
-; dlga_kill_scout_8:close_window|Yea yea... piss drinking foreigner...!
-; dlga_woodelf_help_1:woodelf_help_2.1|I have never seen such a large orc before. Nasty things. Do not fret. I am a Soldier in this coming war that we have all been sensing.
+dlga_kill_scout_7:kill_scout_8|¡Eres un orco despreciable! Corre a Mordor, antes de que te encasquete una lanza en la mollera.
+dlga_kill_scout_8:close_window|Claro, claro... ¡extraño maloliente!
+dlga_woodelf_help_1:woodelf_help_2.1|Jamás había visto orcos de ese tamaño. Malas bestias. Soy un soldado en esta guerra que todos sabíamos que estaba por venir.
 ; dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.
 dlga_woodelf_help_3:close_window|Buen viaje, Torbal. Seguro que nos encontramos de nuevo.
 dlga_start:close_window.9|Habéis llegado justo a tiempo. Unamos nuestras fuerzas y demos una lección de valía a nuestros enemigos.

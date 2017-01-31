@@ -1,9 +1,9 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
-mno_start_good|Yeni bir çağın şafağı
+mno_start_good|Yeni bir çagın şafagı
 mno_start_evil|İnsanların alacakaranlığı
 mno_go_bback|Geri dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve ve karanlık şeyler uzun süredir saklandıkları yerlerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
-; mno_go_forth|          Go forth upon your chosen path...
+mno_go_forth|Seçtiğin yolda ilerle...
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Gondor ile Harad arasında çatışma
 mno_custom_battle_scenario_12|Savaş için grupları seç
@@ -19,7 +19,7 @@ mno_warg_battle_scenario|Warg savaşını test et
 mno_build_your_own_scene|**TLD ile kendi Sahneni Oluştur**
 menu_tutorial|TLD native M&B'nin sahip olmadığı bir çok içeriğe sahip. Bunlardan spoiler olmayacaklar yayınlanan PDF dosyası ile belirtildi . Tutorial ve basit oyun mekanikleri için lütfen Native modulü oynayınız.
 mno_go_back_dot|Geri dön
-; mno_action_view_troop_trees|View troop trees.
+mno_action_view_troop_trees|Birim agacını göster
 mno_view_upkeep_costs|Bakım ücretini gör
 mno_view_character_report|Karakter raporunu gör
 mno_view_party_size_report|parti boyutu raporunu görüntüle
@@ -263,7 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Bir kaçak tarafından gelen sert 
 menu_town_bandits_succeeded|^^^^^Goblin'ler önünde buğdayların orağa karşı yığılması gibi yere yığılırlar. Az bir zaman sonra kendini tek başına , askerlerini ise bilinçsiz, ölü ve ölmek üzere bulursun. Hiç şüphesiz yerliler, onları bu saldırıdan kurtardığın için minnettar olacaklar.
 menu_town_brawl_lost|^^^^^^Şuurunu kaybettin. Saldırdığın kişiler günlük işlerine dönmeden önce çabucak değerli eşyalar için üzerini ararlar.
 menu_town_brawl_won|^^^^^Rahatsızlığı yatıştırmak için gönderilen tüm gardiyanları ve rakipleri yendin. Hızlıca değerli eşyalar için onları arıyor ve ardından ortalık sakinleşene kadar ortadan kayboluyorsun.^Belki gelecek sefere daha fazla saygı gösterir ve kenara çekilirler.
-; menu_close|Nothing.
+menu_close|Hiçbirşey.
 menu_town|{s60}.{s12}{s13} ' içinde vardın.
 mno_town_menu_0|Bir yere git.
 mno_town_menu_0_door|Bir yerin kapısı.
@@ -278,8 +278,8 @@ mno_trade_with_horse_merchant|{s41}'i ziyaret et.
 mno_town_prison_door|Hapishane kapısı.
 mno_dungeon_enter|Kayıp mızraklar için dağları ara.
 mno_dungeon_enter_door|Kapıyı aç.
-; mno_dwarven_warehouse|Visit the Dwarven Warehouse
-; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
+mno_dwarven_warehouse|Cüce erzak deposunu ziyaret et
+mno_dwarven_warehouse_door|Cüce erzak deposuna gir
 mno_talk_to_castle_commander|{s61} kışlasını ziyaret et.
 mno_speak_with_elder| {s6} ile konuş
 mno_isengard_underground|Yeraltı mağaralarına git.
@@ -315,17 +315,17 @@ menu_ruins|^^^^{s1}'e yaklaşıyorsun. Güçlü bir yerleşim yerle bir edilmiş
 menu_legendary_place|^^^^Söylentileri takip ettin ve {s1}'i buldun. Şimdi burayı gezebilir ve söylentilerin doğru olup olmadığını kendin görebilirsin.
 mno_explore|Etrafı keşfet
 ; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
-; mno_leave_bandit_lair|Leave for now.
+mno_attack_lair|Onlara Şimdi saldır
+mno_leave_bandit_lair|şimdi ayrılıyoruz.
 menu_starting_quest_good|^^^^^^Bir grup orkun saldırısı altında bir küçük karavan görüyorsun. Ne yapacaksın?
 mno_help|Yabancılara yardım et!
-; mno_start_defend_caravan|Defend the Caravan!
-; mno_start_raid_caravan|Raid the Caravan!
-; mno_start_ambush_orcs|Ambush the Orcs!
-; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
+mno_start_defend_caravan|Karavanı Savun!
+mno_start_raid_caravan|Karavanı Yagmala!
+mno_start_ambush_orcs|Ork Pususu!
+mno_start_kill_scouts|Onlar gelişimizi rapor etmeden izcileri durdurun!
 mno_go_your_way|Onları yalnız bırak
-; mno_defend_villagers|Defend the Villagers!
-; mno_raid_villagers|Raid the Village!
+mno_defend_villagers|Köylüleri Savun!
+mno_raid_villagers|Köyü Yağmala!
 mno_go_away|Onları yalnız bırak
 menu_custom_battle_choose_faction1|^^^^^^^^^^Tarafını ve avantajını seç:
 mno_good_equal|İyi taraf
@@ -380,4 +380,4 @@ mno_scene4|Savaşalanı8 (file scn battlefield8.sco)
 mno_scene5|Savaşalanı9 (file scn battlefield9.sco)
 mno_back_3dot|Geri...
 mno_back|Geri dön
-; mno_next|Next...
+mno_next|Sonraki...

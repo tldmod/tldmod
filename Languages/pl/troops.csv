@@ -1541,16 +1541,16 @@ trp_bear_pl|Niedźwiedzi
 trp_wolf|Wilk
 trp_wolf_pl|Wilków
 ; trp_dorwinion_sack|Dorwinion Sack
-; trp_ring_hunter_captain|Ring Hunter Captain
-; trp_ring_hunter_lt|Ring Hunter Captain
-; trp_ring_hunter_one|Ring Hunter
-; trp_ring_hunter_one_pl|Ring Hunters
-; trp_ring_hunter_two|Ring Hunter
-; trp_ring_hunter_two_pl|Ring Hunters
-; trp_ring_hunter_three|Ring Hunter
-; trp_ring_hunter_three_pl|Ring Hunters
-; trp_ring_hunter_four|Ring Hunter
-; trp_ring_hunter_four_pl|Ring Hunters
+trp_ring_hunter_captain|Kapitan łowców pierścienia
+trp_ring_hunter_lt|Kapitan łowców pierścienia
+trp_ring_hunter_one|Łowca pierścienia
+trp_ring_hunter_one_pl|Łowcy pierścienia
+trp_ring_hunter_two|Łowca pierścienia
+trp_ring_hunter_two_pl|Łowcy pierścienia
+trp_ring_hunter_three|Łowca pierścienia
+trp_ring_hunter_three_pl|Łowcy pierścienia
+trp_ring_hunter_four|Łowca pierścienia
+trp_ring_hunter_four_pl|Łowcy pierścienia
 ; trp_start_quest_uruk|Mordor Uruk Captain
 ; trp_start_quest_orc|Mordor Orc Lieutenant
 trp_start_quest_orc_pl|Mordorskich Wielkich Orków

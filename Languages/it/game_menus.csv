@@ -314,7 +314,7 @@ menu_notification_faction_defeated|^^^^^{s1} È stato sconfitto!^{s1} non c'è p
 menu_ruins|^^^^Ti avvicini a {s1}. In questo luogo, un tempo, un grande accampamento è stato raso al suolo, è ancora possibile vedere tracce di fortificazioni e vecchie armi arrugginite.
 menu_legendary_place|^^^^Hai seguito le tracce ed hai trovato {s1}. Puoi esplorare questo posto e verificare da te se le indiscrezioni che hai sentito sono vere.
 mno_explore|Esplora questo posto.
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso la foresta di Mirkwood e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
 mno_attack_lair|Attaccali adesso
 mno_leave_bandit_lair|Lascia per ora.
 menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da parte di una banda di orchi. Cosa fai?
@@ -380,4 +380,4 @@ mno_scene4|Campo di battaglia 8 (scn_battlefield8.sco)
 mno_scene5|Campo di battaglia 9 (scn_battlefield9.sco)
 mno_back_3dot|Indietro...
 mno_back|Torna Indietro
-; mno_next|Next...
+mno_next|Successivamente...

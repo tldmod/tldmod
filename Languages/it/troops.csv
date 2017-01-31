@@ -1540,23 +1540,23 @@ trp_bear|Orso
 trp_bear_pl|Orsi
 trp_wolf|Lupo
 trp_wolf_pl|Lupi
-; trp_dorwinion_sack|Dorwinion Sack
-; trp_ring_hunter_captain|Ring Hunter Captain
-; trp_ring_hunter_lt|Ring Hunter Captain
-; trp_ring_hunter_one|Ring Hunter
-; trp_ring_hunter_one_pl|Ring Hunters
-; trp_ring_hunter_two|Ring Hunter
-; trp_ring_hunter_two_pl|Ring Hunters
-; trp_ring_hunter_three|Ring Hunter
-; trp_ring_hunter_three_pl|Ring Hunters
-; trp_ring_hunter_four|Ring Hunter
-; trp_ring_hunter_four_pl|Ring Hunters
-; trp_start_quest_uruk|Mordor Uruk Captain
-; trp_start_quest_orc|Mordor Orc Lieutenant
+trp_dorwinion_sack|Fiordo di Dorwinion
+trp_ring_hunter_captain|Capitano dei Cacciatori dell'Anello
+trp_ring_hunter_lt|Capitano dei Cacciatori dell'Anello
+trp_ring_hunter_one|Cacciatore dell'Anello
+trp_ring_hunter_one_pl|Cacciatori dell'Anello
+trp_ring_hunter_two|Cacciatore dell'Anello
+trp_ring_hunter_two_pl|Cacciatori dell'Anello
+trp_ring_hunter_three|Cacciatore dell'Anello
+trp_ring_hunter_three_pl|Cacciatori dell'Anello
+trp_ring_hunter_four|Cacciatore dell'Anello
+trp_ring_hunter_four_pl|Cacciatori dell'Anello
+trp_start_quest_uruk|Capitano Uruk di Mordor
+trp_start_quest_orc|Tenente Orco di Mordor
 trp_start_quest_orc_pl|Grandi Orchi di Mordor
 trp_start_quest_woodelf|Tiratore scelto di Galadhrim
 trp_start_quest_woodelf_pl|Tiratori scelti di Galadhrim
-; trp_start_quest_mordor_scout|Mordor Guide
-; trp_start_quest_mordor_scout_pl|Mordor Guides
+trp_start_quest_mordor_scout|Guida di Mordor
+trp_start_quest_mordor_scout_pl|Guide di Mordor
 trp_start_quest_beorning|Berserker Beorniano della Carroccia
 trp_start_quest_beorning_pl|Berserker Beorniani della Carroccia

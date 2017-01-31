@@ -312,14 +312,14 @@ dlga_lord_get_reward_item_answer:lord_pretalk|很好，愿你能利用它战胜�
 ; dlga_marshall_ask:lord_pretalk|I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.
 ; dlga_marshall_ask:lord_pretalk.1|You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]
 ; dlga_marshall_ask:lord_pretalk.2|We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.
-; dlga_marshall_ask:lord_pretalk.3|We are on a campaign, {playername}, your advice would have to wait.
+dlga_marshall_ask:lord_pretalk.3|我们正进行着一场战役， {playername}，你的建议得等等了
 dlga_marshall_ask:marshall_suggest|我聽著呢， {playername}，你有什麼建議？
-; dlga_marshall_suggest:marshall_answer|We should ride to besiege {s1} at once.
+dlga_marshall_suggest:marshall_answer|我们应当第一时间包围{s1}
 dlga_marshall_suggest:lord_pretalk|不要緊，我相信你的判斷。
-; dlga_marshall_answer:close_window|Very well, {playername}, I shall defer to your judgement. I shall send messengers to gather our forces.^Follow me and stay close - we ride to {s4}!
-; dlga_lord_talk:deliver_gift_1|I bring a gift of {s1} from {s3} to the people of {s2}.
-; dlga_send_gift_1:lord_pretalk|You are already {s4}, {playername}. It would be wise to deliver that one first.
-; dlga_send_gift_1:lord_pretalk.1|Unfortunately, you cannot afford to send a gift right now {playername}.^^[not enough Resource Points]
+dlga_marshall_answer:close_window|很好， {playername}，我应该尊重你的意见。我会召集我们的部队，跟紧我，我们去{s4}！
+dlga_lord_talk:deliver_gift_1|我从 {s3}的{s1}那里带来了礼物给{s2}的人民
+dlga_send_gift_1:lord_pretalk|你已经在{s4}了，{playername}，最好第一时间去交付
+dlga_send_gift_1:lord_pretalk.1|很不幸，我们暂时无法负担得起这份礼物{playername}。^^[没有足够的资源点]
 ; dlga_send_gift_1:send_gift_2|Very well. To whom would you like to deliver a gift?
 dlga_send_gift_1:send_gift_2.1|那麼，你想要給誰一些好處？
 dlga_send_gift_2:lord_pretalk|别放心上。

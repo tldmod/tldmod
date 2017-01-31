@@ -73,16 +73,16 @@ qstr_Arms|Ramiona
 qstr_Thighs|Uda
 qstr_Legs|Nogi
 qstr_Rotate|Obrót
-; qstr_Close|Close
+qstr_Close|Zamknij
 ; qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
-; qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
-; qstr_Attributes|Attributes
-; qstr_STR^AGI^INT^CHA|STR^AGI^INT^CHA
-; qstr_Skills|Skills
+qstr_Level:_{reg3}^Health|Poziom: {reg3}^Zdrowie: {reg4}
+qstr_Attributes|Atrybuty
+qstr_STR^AGI^INT^CHA|SIŁ^ZRĘ^INT^CHA
+qstr_Skills|Umiejętności
 ; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
-; qstr_Proficiencies|Proficiencies
+qstr_Proficiencies|Biegłości
 ; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
-; qstr_Equipments|Equipments
+qstr_Equipments|Ekwipunek
 qstr_You_gained_{reg0}_Re|Zyskujesz {reg0} Punktów Prestiżu ({s0}).
 qstr_You_lost_{reg0}_Reso|Tracisz {reg0} Punktów Prestiżu ({s0}).
 qstr_{s24}:|{s24}:
@@ -273,7 +273,7 @@ qstr_{s14}Double_rations_t|{s14}Podwójne racje dla tego, który przyniesie mi n
 qstr_{s14}Kill_these_hors|{s14}Zabić tych złodziei koni!
 qstr_Kill_them_all!_Take_|Zabić ich wszystkich! Zabrać to co ich!
 qstr_Tonight_there_will_b|Wieczorem będzie jednego mniej wroga {s16}!
-; qstr_Baruk_Khazâd!_Khazâd|Baruk Khazâd! Khazâd ai-mênu!
+qstr_Baruk_Khazâd!_Khazâd|Baruk Khazâd! Khazâd ai-mênu!
 qstr_{s14}Riders_of_Rohan|{s14}Jeźdźcy Rohanu! Pamiętajcie o co walczycie!
 qstr_{s14}More_{s19}heads|{s14}Więcej głów {s19} do udekorowania bram Morannonu!
 qstr_The_Wise_Master_shal|Mój Pan będzie zadowolony gdy pokażę mu twe ciało, {playername}!
@@ -505,13 +505,13 @@ qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
 qstr_You_weigh_too_much_f|Masz zbyt dużą masę na kuca!
 qstr_Your_mount_rears_ref|Twój wierzchowiec siada, nie słucha twoich poleceń!
 ; qstr_Fixed_Custom_Camera|Fixed Custom Camera
-; qstr_Press_Left_/_Right_A|Press Left / Right Arrow Keys to Switch Shoulders
+qstr_Press_Left_/_Right_A|Naciśnij Lewą / Prawą strzałkę aby zmienić ramiona
 ; qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
-; qstr_Use_+/__to_zoom_in/o|Use +/- to zoom in/out
+qstr_Use_+/__to_zoom_in/o|Użyj +/- aby przybliżyć/oddalić
 ; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
-; qstr_Default_Camera|Default Camera
-; qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
-; qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
+qstr_Default_Camera|Kamera domyślna
+qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
+qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
 qstr_You_have_found_the_l|Znalazł{e/a}ś miejscowego kowala...
 qstr_You_have_found_the_lo|Znalazł{e/a}ś miejscowy autorytet...
@@ -560,7 +560,7 @@ qstr_The_ladders_on_Deepi|Drabiny! Uważać!
 qstr_You_yell_for_your_ho|Krzyczysz na swego konia.
 qstr_THREE.._TWO..._ONE..|TRZY.. DWA... JEDEN.... WALKA!
 ; qstr_You_have_found_the_D|You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}
-; qstr_Leave_the_Warehouse?|Leave the Warehouse?
+qstr_Leave_the_Warehouse?|Opuść magazyn?
 qstr_Leave_the_place_in_s|Opuścić scenę?
 qstr_Leave_scene?|Opuścić scenę?
 qstr_Trace_back_your_step|Prześledzić twoje kroki, a następnie wrócić?
@@ -732,11 +732,11 @@ qstr_Forces_of_Isengard|Siły Isengardu
 qstr_their_enemies|ich wrogowie
 qstr_{s11}_and_{s13}|{s11} i {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
-; qstr_On_your_way_to_your_|On your way to your faction's capital, you set upon some orcs raiding a caravan.
+qstr_On_your_way_to_your_|W drodze do stolicy swojej frakcji, natknąłeś się na grupę orków napadających na karawanę.
 ; qstr_On_your_way_to_your_f|On your way to your faction's capital, you set upon some troops waiting to ambush orcs in the forest.
 ; qstr_On_your_way_to_Mordo|On your way to Mordor, you hear rustling nearby. You see some Gondor Scouts and ready yourself to warn your party.
-; qstr_You_see_the_village_|You see the village being raided by bandits. You get ready to defend them.
-; qstr_You_see_the_village_y|You see the village you were tasked to raid. You get ready to attack them.
+qstr_You_see_the_village_|Widzisz właśnie wioskę plądrowaną przez bandytów. Przygotowujesz się by ich bronić.
+qstr_You_see_the_village_y|Zauważasz wioskę, którą miałeś napaść. Przygotowujesz się do ataku na nią.
 ; qstr_The_raiders_are_defe|The raiders are defeated! Those few who remain alive and conscious scurry off to the darkness from whence they came, terrified of the villagers and their new champion.
 ; qstr_Try_as_you_might_you|Try as you might, you could not defeat the raiders. They raze the village to the ground and enslave the remaining peasants.
 ; qstr_The_village_has_been|The village has been razed, villagers killed or taken as slaves. The Dark Lord will be pleased.
@@ -946,8 +946,8 @@ qstr_We_are_at_war_with_{|Naszym wrogiem w wojnie jest {s12}. Jednakże, główn
 qstr_We_are_at_war_with_{s|Naszym wrogiem w wojnie jest {s12}. Jednakże, w tym momencie dochodzi tylko do niewielkich potyczek.
 qstr_we_are_not_too_conce|nie jesteśmy nimi zainteresowani w tym momencie, gdyż walczymy teraz z innymi wrogami bliżej domu
 qstr__under_your_orders|, pod twymi rozkazami
-; qstr_{s9}_asked_you_to_de|{s9} asked you to defend a village under attack.
-; qstr_{s9}_asked_you_to_ra|{s9} asked you to raid a village.
+qstr_{s9}_asked_you_to_de|{s9} prosił cię abyś obronił wioskę, która jest atakowana.
+qstr_{s9}_asked_you_to_ra|{s9} prosił cię abyś splądrował wioskę
 qstr_These_soldiers_may_w|Ci żołnierze bardzo mi się przydadzą, {playername}. Jestem pewien, że bardzo dobrze ich wyszkolił{e/a}ś. Dziękuję.
 qstr_Good_work_in_shaping|Dobra robota w szkoleniu tych rekrutów, {playername}, przydał{e/a}ś się do czegoś. Mam nadzieję, że przetrwają dłużej aniżeli ostatnia partia, ale jeśli nie przyjdź ponownie.
 qstr_Well_the_soldiers_ar|Zostawiam więc tych chłopców pod twoją komendą, Panie. Jestem pew{ien/na}, że dobrze się nimi zajmiesz.
@@ -1010,7 +1010,7 @@ qstr_{s9}_asked_you_to_fr|{s9} poprosił cię o uwolnienie {s13} od rozszalałeg
 ; qstr__*growl*_I_know_your|(*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks... 
 ; qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Deep are my master’s designs, not for all to see and understand.
 ; qstr_Alae!_Our_green_wood|Alae! Our green woods are heavily patrolled, our thick gates stand firm, king Thranduil’s halls secure. It would be wise to follow our example.
-; qstr__say_nothing_|(say nothing)
+qstr__say_nothing_|(nic nie mów)
 ; qstr_Alas_it_is_not_a_plea|Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands. ^^An ancient evil stirred in the dark places and now it swarms into the light. Wise ones across the Mountains answered the call and hosts of Imladris march to battle, to fight for the North.
 ; qstr_You_wouldn_t_have_nee|You wouldn't have need of our aid if you kept your borders shut! ^^Tales of the Forest Witch only scare away witless fools - not so the orc filth we just slew.
 ; qstr_*growl*_I_know_your_|*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks.^^ Stars had none to do with it - I sensed the filth and followed a trail. I would have slain them were you in danger or not.
@@ -1030,11 +1030,11 @@ qstr_{s9}_asked_you_to_fr|{s9} poprosił cię o uwolnienie {s13} od rozszalałeg
 ; qstr_Our_bees_make_honey_a|Our bees make honey and wax, our herds give milk, butter and cheese.^^ Bread we make ourselves, a sharp axe I can trade for with dwarves when they pass through.^^ What else would I need, what more than a pair of strong hands?
 ; qstr_If_fate_wills_it_I_s|If fate wills it, I shall walk your lands again, and know all their secrets.
 ; qstr_If_I_ever_have_need_|If I ever have need for the kind of help Lorien can offer, I shall come for it. Whatever use it may be.
-; qstr__nod_and_say_nothing|(nod and say nothing)
+qstr__nod_and_say_nothing|(przytaknij i nic nie mów)
 ; qstr_Oh_there_are_many_an|Oh, there are many and any friend of Lorien is welcome to these gifts! ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your kindness with all you would require - bright weapons, hard corselets of mail, white-feathered arrows and provisions for your troops. ^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who could offer council to others, or ask favours of them.
 ; qstr_The_joys_of_the_Gold|The joys of the Golden Valley are many and a true friend of Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your effort with all you would require - bright weapons, hard corselets of mail, deadly arrows and nourishing food for your troops.^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who would share wisdom with others, or ask favours of them.
 ; qstr_Our_Golden_Valley_gi|Our Golden Valley gives goods aplenty and a friend to Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you aid the designs of our Lady and her lords, our people will reward your effort with all you would require while far away from home.
-; qstr_I_shall_keep_that_in|I shall keep that in mind.^^ Hantanyel, áva márië!
+qstr_I_shall_keep_that_in|Zapamiętam to sobie.^^ Hantanyel, áva márië!
 ; qstr_That_may_be_so_some_|That may be so, some paths of the world run crooked.^^ Boe i 'waen!
 ; qstr_I_seldom_wander_far_|I seldom wander far away from home. Be off now, as fast as you can. There may be more goblins prowling around.
 qstr_You_chose_well_{sir/|Dobry wybór, {Panie/Pani}. Moi chłopcy umieją dotrzymywać danego słowa i wiedzą, za co im się płaci.

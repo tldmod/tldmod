@@ -78,11 +78,11 @@ qstr_Rotate|Döndür
 ; qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
 ; qstr_Attributes|Attributes
 ; qstr_STR^AGI^INT^CHA|STR^AGI^INT^CHA
-; qstr_Skills|Skills
-; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
+qstr_Skills|Yetenekler
+qstr_Ironflesh^Power_Stri|Demir Vücut^Güçlü Darbe^Power Throw^Güçlü Germe^Kalkan^Atletizm^Binicilik^Atlı Okçuluk
 ; qstr_Proficiencies|Proficiencies
 ; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
-; qstr_Equipments|Equipments
+qstr_Equipments|Ekipmanlar
 qstr_You_gained_{reg0}_Re|{s0} kadar beceri puanının {reg0} kadarını topladın
 qstr_You_lost_{reg0}_Reso|{s0} kadar beceri puanının {reg0} kadarını kaybettin
 qstr_{s24}:|{s24}:
@@ -499,15 +499,15 @@ qstr_Your_troops_flee_in_|Birliklerin korku ile kaçıyor
 qstr_Many_of_your_troops_|Birliklerinizin çoğu muharebeden kaçıyor.
 qstr_Some_of_your_troops_|Birliklerinizin bazıları muharebeden kaçıyor.
 qstr_A_few_of_your_troops|Birliklerinizin birazı muharebeden kaçıyor.
-; qstr_No_Troops_Left.|No Troops Left.
+qstr_No_Troops_Left.|hiç birlik kalmadı.
 qstr_Your_mount_stumbles!|Bineğiniz tökezliyor! Sakatlanmış gibi görünüyor.
 qstr_Bitten_by_your_own_w|Kendi wargın tarafından ısırıldın
 qstr_You_weigh_too_much_f|Bir midilli için çok ağırsın
 qstr_Your_mount_rears_ref|Bineğiniz şahlanıyor, emirlerinize itaat etmeyi reddediyor!
-; qstr_Fixed_Custom_Camera|Fixed Custom Camera
+qstr_Fixed_Custom_Camera|Rastgele Kamerayı Düzelt
 ; qstr_Press_Left_/_Right_A|Press Left / Right Arrow Keys to Switch Shoulders
-; qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
-; qstr_Use_+/__to_zoom_in/o|Use +/- to zoom in/out
+qstr_Free_Mode_Custom_Cam|Serbest-mod Rastgele Kamera
+qstr_Use_+/__to_zoom_in/o|+/- kullan yaklaş/uzaklaş
 ; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
 ; qstr_Default_Camera|Default Camera
 ; qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
@@ -588,7 +588,7 @@ qstr_{s24}__{reg13}_|{s24} ({reg13})
 ; qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 ; qstr_{s13}_{reg11}__with_|{s13}, {reg11} (with {s16})
 ; qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
-; qstr_^No_food:___{reg7}|^No food:  -{reg7}
+qstr_^No_food:___{reg7}|^Yemek yok: -{reg7}
 ; qstr_Current_party_morale|Current party morale is {reg5}.^Current party morale modifiers are:^^Base morale:  +50^Party size: {s2}{reg1}^Leadership: {s3}{reg2}^Food variety: {s4}{reg3}{s5}^Special items: {s6}{reg6}^Recent events: {s7}{reg4}^TOTAL:  {reg5}
 qstr_Defending|Savunma
 qstr_Gathering_army|Ordu toplama
@@ -637,7 +637,7 @@ qstr_Tripled|Üç Katına
 qstr_Quadrupled|Dört Katına
 qstr_You_drank_the_Ent_Wa|Ent suyunu içiyorsun...
 qstr_Fangorn_search:_fail|Fangorn araştırması: başarısız.
-; qstr_Troll_caged_in_wheel|Troll caged in wheeled cage.
+qstr_Troll_caged_in_wheel|Trol tekerlekli kafese hapsedildi.
 ; qstr_A_second_troll_is_ca|A second troll is caged in wheeled cage.
 qstr_Here_you_are.|İşte buradasın.
 qstr_Player_was_moved_to_|Oyuncu {s10} taşındı.
@@ -692,7 +692,7 @@ qstr_I_suppose_it_ll_make|En azından anlatılacak güzel bir hikaye olacak.
 qstr__{s17}|, {s17}
 qstr_You_retreated_from_b|Savaştan geri çekildin.
 ; qstr_{s9}_wants_you_to_fo|{s9} wants you to follow his army until further notice.
-; qstr_{s8}_of_{s9}|{s8} of {s9}
+qstr_{s8}_of_{s9}|{S9} 'dan {s8}
 ; qstr__Your_own_banner_fli| Your own banner flies over the castle gate.
 ; qstr__You_see_the_banner_| You see the banner of {s7} over the castle gate.
 qstr__This_castle_seems_t|Bu kalenin hiçbir sahibi yok gibi gözüküyor.
@@ -722,7 +722,7 @@ qstr_You_have_fallen._The|Düşmüşsün. Haydutlar bulabilecekleri değerli eş
 qstr_{s13}^^You_have_succ|{s13}^^Başarıyla gizlendin.
 qstr_the_place|yer
 qstr_the_castle|kale
-; qstr_Stay_indoors_for_som|Stay indoors for some time ({reg1} Resource points per night)
+qstr_Stay_indoors_for_som|Burada bir süre bekle ({reg1} kaynak puanı)
 qstr_Camp_outside_for_som|Bir süre kamp dışarısında (bedava)
 qstr_{s1}_s_Ship|{s1}'in Gemisi
 qstr_Time_passes...|Zaman geçiyor...
@@ -732,8 +732,8 @@ qstr_Forces_of_Isengard|Isengard'ın Kuvvetleri
 qstr_their_enemies|düşmanları
 qstr_{s11}_and_{s13}|{s11} ve {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
-; qstr_On_your_way_to_your_|On your way to your faction's capital, you set upon some orcs raiding a caravan.
-; qstr_On_your_way_to_your_f|On your way to your faction's capital, you set upon some troops waiting to ambush orcs in the forest.
+qstr_On_your_way_to_your_|Krallığın başkentine giderken, Bazı orkların bir kervana baskın yaptığını görürsün
+qstr_On_your_way_to_your_f|Krallığın başkentine giderken, bazı ork birliklerinin ormanda pusuya yattığını görürsün.
 ; qstr_On_your_way_to_Mordo|On your way to Mordor, you hear rustling nearby. You see some Gondor Scouts and ready yourself to warn your party.
 ; qstr_You_see_the_village_|You see the village being raided by bandits. You get ready to defend them.
 ; qstr_You_see_the_village_y|You see the village you were tasked to raid. You get ready to attack them.
@@ -746,7 +746,7 @@ qstr_{s11}_{s13}|{s11}, {s13}
 ; qstr_You_approach_a_heavi|You approach a heavily guarded region of the forest...
 qstr_You_wait_for_darknes|Karanlığın düşüşünü bekliyorsun...
 qstr_You_are_quickly_disc|Düşman tarafından çabuk fark edildin.
-; qstr_You_advance_stealthi|You advance stealthily far into the forest.
+qstr_You_advance_stealthi|Gizlice ormanın içlerine doğru ilerlediniz. 
 ; qstr_You_have_evaded_the_|You have evaded the patrols and crept close to the ruins!
 qstr_You_have_found_the_s|Büyücüyü buldun!
 qstr_You_cannot_leave_unt|Muhafızlar seni kaybedene kadar buradan ayrılamazsın.
@@ -775,8 +775,8 @@ qstr_{s1}_is_scouted.|{s1} gözlendi.
 ; qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth!
 qstr_The_War_of_the_Two_T|İki Kulenin savaşı başladı!
 qstr_{s2}_was_defeated!|{s2} mağlup edildi.
-; qstr_The_forces_of_{s22}_|The forces of {s22} have rallied! {s22} is now {s23}.
-; qstr_The_might_of_{s22}_h|The might of {s22} has diminished! {s22} is now {s23}.
+qstr_The_forces_of_{s22}_|{s22} Tarafının kuvveti arttı! {s22} Şu an {s23}.
+qstr_The_might_of_{s22}_h|{s22} Tarafının gücü Zayıfladı! {s22} Şu an {s23}.
 ; qstr_In_a_desperate_attem|In a desperate attempt to defend against his enemies, Sauron sends out his legions of Mordor!
 qstr_Guardians_of_{s6}|{s6}'nın Muhafızları
 qstr_Guard_Legion_of_{s6}|{s6}'ın Muhafız Lejyonu
@@ -789,11 +789,11 @@ qstr_Info|İnfo.
 qstr_Obtained:_Ent_water.|Elde edildi: Ent Suyu.
 ; qstr_A_little_after_you_f|A little after you fully recover from drinking the poisoned water you got from the walking trees, you start noticing a strange side effect. The worms in your group seem to... respect you and fear you more, as if you turned... bigger. And you would swear that you are, indeed, a bit taller. Is that really possible?
 qstr_Ent_water_effect.|Ent suyu efekti.
-; qstr_The_water_you_drank_|The water you drank from the Ents had a strange effect on your body. Initially you didn't believe it possible, but now,  in front of evidence, you must admit it: somehow, you grew taller! Still, the poison almost killed you. You will never take that risk again.
-; qstr_Ent_water_effect:_in|Ent water effect: increase stature!
+qstr_The_water_you_drank_|Ent diyarından içtiğin su vücudunda garip bir etkiye sahipti. Başlangıçta bunun mümkün olduğuna inanmıyordun, ama şimdi gerçek karşısında itiraf etmelisinki: bir şekilde büyüdün! Yine de, zehir neredeyse seni öldürdü. Bu riski asla bir daha asla alamazsın.
+qstr_Ent_water_effect:_in|Ent suyu etkisi: Boy artışı!
 qstr__+1_to_Strength__per|Güce +1 (kalıcı)
 qstr__+1_to_Charisma__per|Karizmaya +1 (kalıcı)
-; qstr_The_dark_shadow_fina|The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.
+qstr_The_dark_shadow_fina|Karanlık gölgenin fırtınası sonunda başladı, ve kötülüğün orduları Orta Dünya'nın özgür insanlarına karşı yürüyüşe geçti. Mordor Güney'de Gondor'a karşı, Isengard Batı'da Rohan'a, Dol Guldur tekrar Elflere Karşı... Uzak Kuzey'de bile savaş var artık.
 qstr_The_War_has_started!|Savaş başladı!
 qstr_The_forest_seems_pea|Orman barışçıl gözüküyor.
 qstr_There_is_a_sense_of_|Havada tehlike kokusu var.
@@ -810,7 +810,7 @@ qstr_{s27}:_Party_morale_d|{s27}: Parti morali düştü.
 ; qstr_You_have_failed_to_f|You have failed to fulfill your oath of vengeance for {s1}'s heroic death!
 ; qstr_You_have_fulfilled_y|You have fulfilled your oath of vengeance for {s1}'s heroic death!
 ; qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
-; qstr_Custom_Camera|Custom Camera
+qstr_Custom_Camera|Özel kamera
 qstr_{reg65?my_Lady:my_Lo|{reg65?Leydim:Lordum}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Leydim:Lordum}
 ; qstr_{reg65?mistress:mast|{reg65?mistress:master}

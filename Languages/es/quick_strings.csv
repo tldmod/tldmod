@@ -444,7 +444,7 @@ qstr_Who_are_you?|¿Quién eres?
 qstr_A_friend_of_{s3}_and|Un amigo de {s3} y de las gentes de {s2}. ¡Ahora, apresúrate! Mordor atrae a todos los agentes del mal y el Poder Oscuro está redoblando esfuerzos para doblar su voluntad y reunirlos allí. ¡El tiempo se agota para el bien de este mundo, debemos hacer valer cualquier baza en su contra!
 qstr_What_should_I_do?|¿Que quieres que haga?
 qstr_Find_{s3}_s_whereabo|Encuentra el paradero de {s3} y habla con él. ¡Buena suerte!
-; qstr_Good_to_see_the_Shad|Good to see the Shadow has not yet managed to defeat you, {playername}.
+qstr_Good_to_see_the_Shad|Es bueno ver que la Sombra todavía no conseguido derrotarte, {playername}.
 qstr_You_are_the_one_they|Tu al que llaman Gandalf o Mithrandir.
 qstr_That_is_what_some_ca|Así me llaman algunos. En otros tiempos también tuve otros nombres, pero a menos que la Oscuridad sea detenida, puede que no quede nadie para llamarme nada en absoluto.
 qstr_What_do_you_mean?|¿Que quieres decir?
@@ -506,12 +506,12 @@ qstr_You_weigh_too_much_f|¡Pesas demasiado para montar un pony!
 qstr_Your_mount_rears_ref|¡Tu montura se encabrita, rechazando obedecer tus órdenes!
 qstr_Fixed_Custom_Camera|Cámara personalizada fija
 ; qstr_Press_Left_/_Right_A|Press Left / Right Arrow Keys to Switch Shoulders
-; qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
+qstr_Free_Mode_Custom_Cam|Cámara personalizada libre
 ; qstr_Use_+/__to_zoom_in/o|Use +/- to zoom in/out
 ; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
 qstr_Default_Camera|Cámara predeterminada
-; qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
-; qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
+qstr_Fixed_Camera___Right|Cámara fija en el hombro derecho
+qstr_Fixed_Camera___Left_|Cámara fija en el hombro izquierdo
 qstr_Cannot_leave_now.|No puedes abandonar ahora.
 qstr_You_have_found_the_l|Has encontrado al herrero local...
 qstr_You_have_found_the_lo|Has encontrado a la autoridad local...

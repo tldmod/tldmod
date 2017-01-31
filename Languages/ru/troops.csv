@@ -650,14 +650,14 @@ trp_fighting_uruk_hai_pikeman|Бойцовый пикинёр урук-хай
 trp_fighting_uruk_hai_pikeman_pl|Бойцовые пикинёры урук-хай
 trp_urukhai_standard_bearer|Знаменосец урук-хай
 trp_urukhai_standard_bearer_pl|Знаменосцы урук-хай
-trp_uruk_snaga_of_mordor|Урук-снага Мордора
+trp_uruk_snaga_of_mordor|Мордорский урук снага
 trp_uruk_snaga_of_mordor_pl|Уруки-снаги Мордора
-trp_uruk_of_mordor|Урук Мордора
-trp_uruk_of_mordor_pl|Уруки Мордора
-trp_large_uruk_of_mordor|Крупный урук Мордора
-trp_large_uruk_of_mordor_pl|Крупные уруки Мордора
-trp_fell_uruk_of_mordor|Свирепый урук Мордора
-trp_fell_uruk_of_mordor_pl|Свирепые уруки Мордора
+trp_uruk_of_mordor|Мордорский урук
+trp_uruk_of_mordor_pl|Мордорские уруки
+trp_large_uruk_of_mordor|Мордорский крупный урук
+trp_large_uruk_of_mordor_pl|Мордорские крупные уруки
+trp_fell_uruk_of_mordor|Мордорский урук-рубака
+trp_fell_uruk_of_mordor_pl|Мордорские уруки-рубаки
 trp_uruk_slayer_of_mordor|Мордорский урук-убийца
 trp_uruk_slayer_of_mordor_pl|Мордорские уруки-убийцы
 trp_fell_uruk_slayer_of_mordor|Смертоносный урук Мордора
@@ -670,22 +670,22 @@ trp_troll_of_moria|Морийский тролль
 trp_troll_of_moria_pl|Морийские тролли
 trp_armoured_troll|Тролль в доспехах
 trp_armoured_troll_pl|Тролли в доспехах
-trp_olog_hai|Олог-хай Мордора
-trp_olog_hai_pl|Олог-хай Мордора
+trp_olog_hai|Мордорский олог-хай
+trp_olog_hai_pl|Мордорские олог-хай
 trp_ent|Энт
 trp_ent_pl|Энты
 trp_orc_snaga_of_guldur|Орк-снага Дол-Гулдура
 trp_orc_snaga_of_guldur_pl|Орки-снаги Дол-Гулдура
 trp_orc_of_guldur|Орк Дол-Гулдура
 trp_orc_of_guldur_pl|Орки Дол-Гулдура
-trp_orc_snaga_of_mordor|Орк-снага Мордора
+trp_orc_snaga_of_mordor|Мордорский орк снага
 trp_orc_snaga_of_mordor_pl|Орки-снаги Мордора
-trp_orc_of_mordor|Орк Мордора
-trp_orc_of_mordor_pl|Орки Мордора
-trp_large_orc_of_mordor|Крупный орк Мордора
-trp_large_orc_of_mordor_pl|Крупные орки Мордора
-trp_fell_orc_of_mordor|Свирепый орк Мордора
-trp_fell_orc_of_mordor_pl|Свирепые орки Мордора
+trp_orc_of_mordor|Мордорский орк
+trp_orc_of_mordor_pl|Мордорские орки
+trp_large_orc_of_mordor|Крупный мордорский орк
+trp_large_orc_of_mordor_pl|Крупные мордорские орки
+trp_fell_orc_of_mordor|Мордорский орк-рубака
+trp_fell_orc_of_mordor_pl|Мордорские орки-рубаки
 trp_warg_rider_of_gorgoroth|Волчий всадник Горгорота
 trp_warg_rider_of_gorgoroth_pl|Волчьи всадники Горгорота
 trp_great_warg_rider_of_mordor|Удунский всадник на варге
@@ -694,12 +694,12 @@ trp_morgul_orc|Моргульский орк
 trp_morgul_orc_pl|Моргульские орки
 trp_fell_morgul_orc|Свирепый моргульский орк
 trp_fell_morgul_orc_pl|Свирепые моргульские орки
-trp_orc_tracker_of_mordor|Орк-следопыт Мордора
-trp_orc_tracker_of_mordor_pl|Орки-следопыты Мордора
+trp_orc_tracker_of_mordor|Мордорский орк-следопыт
+trp_orc_tracker_of_mordor_pl|Мордорские орки-следопыты
 trp_fell_orc_tracker_of_mordor|Свирепый орк-следопыт Мордора
 trp_fell_orc_tracker_of_mordor_pl|Свирепые орки-следопыты Мордора
-trp_orc_archer_of_mordor|Орк-лучник Мордора
-trp_orc_archer_of_mordor_pl|Орки-лучники Мордора
+trp_orc_archer_of_mordor|Мордорский орк-лучник
+trp_orc_archer_of_mordor_pl|Мордорские орки-лучники
 trp_large_orc_archer_of_mordor|Крупный орк-лучник Мордора
 trp_large_orc_archer_of_mordor_pl|Крупные орки-лучники Мордора
 trp_fell_orc_archer_of_mordor|Свирепый орк-лучник Мордора
@@ -1540,23 +1540,23 @@ trp_bear|Медведь
 trp_bear_pl|Медведи
 trp_wolf|Волк
 trp_wolf_pl|Волки
-; trp_dorwinion_sack|Dorwinion Sack
-; trp_ring_hunter_captain|Ring Hunter Captain
-; trp_ring_hunter_lt|Ring Hunter Captain
-; trp_ring_hunter_one|Ring Hunter
-; trp_ring_hunter_one_pl|Ring Hunters
-; trp_ring_hunter_two|Ring Hunter
-; trp_ring_hunter_two_pl|Ring Hunters
-; trp_ring_hunter_three|Ring Hunter
-; trp_ring_hunter_three_pl|Ring Hunters
-; trp_ring_hunter_four|Ring Hunter
-; trp_ring_hunter_four_pl|Ring Hunters
-; trp_start_quest_uruk|Mordor Uruk Captain
-; trp_start_quest_orc|Mordor Orc Lieutenant
+trp_dorwinion_sack|Дорвинионский грабитель
+trp_ring_hunter_captain|Командир Охотников за Кольцом
+trp_ring_hunter_lt|Командир Охотников за Кольцом
+trp_ring_hunter_one|Охотник за Кольцом
+trp_ring_hunter_one_pl|Охотники за Кольцом
+trp_ring_hunter_two|Охотник за Кольцом
+trp_ring_hunter_two_pl|Охотники за Кольцом
+trp_ring_hunter_three|Охотник за Кольцом
+trp_ring_hunter_three_pl|Охотники за Кольцом
+trp_ring_hunter_four|Охотник за Кольцом
+trp_ring_hunter_four_pl|Охотники за Кольцом
+trp_start_quest_uruk|Мордорский урук-капитан
+trp_start_quest_orc|Мордорский орк-лейтенант
 trp_start_quest_orc_pl|Крупные орки Мордора
 trp_start_quest_woodelf|Меткий стрелок галадрим
 trp_start_quest_woodelf_pl|Меткие стрелки галадрим
-; trp_start_quest_mordor_scout|Mordor Guide
-; trp_start_quest_mordor_scout_pl|Mordor Guides
+trp_start_quest_mordor_scout|Мордорский проводник
+trp_start_quest_mordor_scout_pl|Мордорские проводники
 trp_start_quest_beorning|Беорнингский берсерк Каррока
 trp_start_quest_beorning_pl|Беорнингские берсерки Каррока

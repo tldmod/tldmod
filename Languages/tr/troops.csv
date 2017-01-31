@@ -1541,18 +1541,18 @@ trp_bear_pl|Ayılar
 trp_wolf|Kurt
 trp_wolf_pl|Kurtlar
 ; trp_dorwinion_sack|Dorwinion Sack
-; trp_ring_hunter_captain|Ring Hunter Captain
-; trp_ring_hunter_lt|Ring Hunter Captain
-; trp_ring_hunter_one|Ring Hunter
-; trp_ring_hunter_one_pl|Ring Hunters
-; trp_ring_hunter_two|Ring Hunter
-; trp_ring_hunter_two_pl|Ring Hunters
-; trp_ring_hunter_three|Ring Hunter
-; trp_ring_hunter_three_pl|Ring Hunters
-; trp_ring_hunter_four|Ring Hunter
-; trp_ring_hunter_four_pl|Ring Hunters
-; trp_start_quest_uruk|Mordor Uruk Captain
-; trp_start_quest_orc|Mordor Orc Lieutenant
+trp_ring_hunter_captain|Yüzük Avcısı Kaptanı
+trp_ring_hunter_lt|Yüzük Avcısı Kaptanı
+trp_ring_hunter_one|Yüzük Avcısı
+trp_ring_hunter_one_pl|Yüzük Avcıları
+trp_ring_hunter_two|Yüzük Avcısı
+trp_ring_hunter_two_pl|Yüzük Avcıları
+trp_ring_hunter_three|Yüzük Avcısı
+trp_ring_hunter_three_pl|Yüzük Avcıları
+trp_ring_hunter_four|Yüzük Avcısı
+trp_ring_hunter_four_pl|Yüzük Avcıları
+trp_start_quest_uruk|Mordor Uruk Kaptanı
+trp_start_quest_orc|Mordor Ork Teğmen
 trp_start_quest_orc_pl|Büyük Mordor Orkları
 trp_start_quest_woodelf|Galadhrim Kraliyet Nişancısı
 trp_start_quest_woodelf_pl|Galadhrim Kraliyet Nişancıları

@@ -673,7 +673,7 @@ str_npc15_personalitymatch_speech|Ho già detto che mi piace {s11}?
 str_npc16_personalitymatch_speech|Ho già detto che mi piace {s11}?
 str_npc17_personalitymatch_speech|Umm, capo. Penso che {s11} possa cavarsela bene nei boschi. Sa distinguere un frassino da un salice.
 str_npc1_personalitymatch_speech_b|Trovo molto piacevole la compagnia di {s11} e la sua innata abilità nel lavorare il legno è un raro spiraglio di quanto rimane dell'abilità Sindarin nel mondo. Sai, mio padre mi diede il nome del leggendario capitano, Elfo Sindarin, che servì Re Thingol del Doriath ed io ho sempre percepito un legame speciale con la bella razza.
-str_npc2_personalitymatch_speech_b|I miei mi raccontavano sempre storie sui ranger di Ithilien e ora posso vedere da me che sono tutte vere. Se tutte lo sono {11}, sento che Gondor è più al sicuro.
+str_npc2_personalitymatch_speech_b|I miei mi raccontavano sempre storie sui Ranger di Ithilien e ora posso vedere da me che sono tutte vere. Se tutte lo sono {s11}, sento che Gondor è più al sicuro.
 str_npc3_personalitymatch_speech_b|Comandante, come favore personale, posso chiederti di ordinare a {s11} di rimanere più vicino alla retroguardia, nella prossima battaglia? Non sopporterei di vederla ferita, e non è la birra che parla.
 str_npc4_personalitymatch_speech_b|Salvare vite è l'atto più nobile che ci sia, e mi sento parentela con quell'anima gentile, anche se i nostri mondi sono distanti tra loro.
 str_npc5_personalitymatch_speech_b|Mi piace {s11}.
@@ -1164,7 +1164,7 @@ str_latest_rumor|Le ultime indiscrezioni che hai sentito su {s6} sono le seguent
 str_faction_strength_crushed|Schiacciato
 str_faction_strength_spent_and_wavering|Esaurito e vacillante
 str_faction_strength_weakened|Indebolito
-str_faction_strength_fair|Giusto
+str_faction_strength_fair|Discreto
 str_faction_strength_average|Scarso
 str_faction_strength_strong|Forte
 str_faction_strength_quite_strong|Abbastanza forte
