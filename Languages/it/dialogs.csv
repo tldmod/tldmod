@@ -608,7 +608,7 @@ dlga_start:close_window.11|Ancora una volta ci hai salvato il collo, {playername
 dlga_start:close_window.12|Sei arrivato proprio al momento giusto {playername} ! Hai i miei più profondi ringraziamenti ! {s43}
 dlga_start:close_window.13|Sei sbucato giusto in tempo, {playername}. Non dimenticherò il tuo aiuto. {s43}
 dlga_start:close_window.14|E' bello rivederti, {playername}. {s43}
-dlga_start:close_window.17|Grazie per il tuo aiuto, Comandante. Hai salvato {reg1?our lives:my life} là fuori.
+dlga_start:close_window.17|Grazie per il tuo aiuto, Comandante. Hai salvato {reg1?le nostre vite:la mia vita} là fuori.
 dlga_start:close_window.18|Grazie per il tuo aiuto, Comandante. Le cose si stavano mettendo male, ma con il tuo arrivo tutto è cambiato.
 dlga_start:close_window.19|Grazie per il tuo aiuto, Comandante. E' stata una fortuna che tu fossi nelle vicinanze.
 dlga_start:freed_hero_answer|Sono in debito con te per avermi liberato, amico mio.

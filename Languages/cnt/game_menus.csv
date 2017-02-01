@@ -3,7 +3,7 @@ mno_start_good|新紀元的黎明
 mno_start_evil|人類的黃昏
 mno_go_bback|返回
 menu_start_phase_2|^^^^^ 中土世界. 黑暗的陰影正在東方蔓延, ^潛伏了近一個紀元的邪惡勢力重現世間. ^中土的自由之人類是否可以再一次戰勝黑暗. ^人類, 精靈, 矮人和獸人, 各種勢力在這裡繼續角逐^^現在, 正義與邪惡的戰爭即將拉開帷幕...
-; mno_go_forth|          Go forth upon your chosen path...
+mno_go_forth|向你選擇的路前進吧...
 menu_start_game_3|^^^^^^^^選擇你的戰役:
 mno_custom_battle_scenario_1|小規模戰役, 剛鐸VS哈拉德.
 mno_custom_battle_scenario_12|選擇你的戰鬥陣營
@@ -19,7 +19,7 @@ mno_warg_battle_scenario|座狼測試戰
 mno_build_your_own_scene|**建立你自己的TLD場景**
 menu_tutorial|^^ TLD有部分功能是M＆乙所沒有的. 一些細節可以在遊戲提示中看到. 遊戲教程同原版一樣. 
 mno_go_back_dot|返回.
-; mno_action_view_troop_trees|View troop trees.
+mno_action_view_troop_trees|查看兵种树。
 mno_view_upkeep_costs|查看維修費用.
 mno_view_character_report|查看人物報告.
 mno_view_party_size_report|查看部隊上限.
@@ -263,7 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^整個世界在你眼前一黑 , �
 menu_town_bandits_succeeded|^^^^^你如同割麥子一般幹掉了強盜! 你再次孤身一人站在街頭 , 在你的週圍散布著強盜們的屍體 , 看到這一幕 , 他們的殘黨驚慌地四散而去 , 消失在街道深處. 搜尋屍體後你發現了一袋錢 , 或者它屬於前一個無辜的犧牲者 , 或者是有人想要買你的命.
 menu_town_brawl_lost|^^^^^^你被擊昏倒下 , 人們迅速洗劫了你身上所有的貴重財物.
 menu_town_brawl_won|^^^^^你擊敗了你的對手 , 守衛已經發出警號. 你迅速地從對手屍體身上搜刮出一點貴重物品消失在街口.^也許 , 下次他們會給你帶來更多的麻煩了.
-; menu_close|Nothing.
+menu_close|没有什么。
 menu_town|你抵達 {s60}.{s12}{s13}
 mno_town_menu_0|定位某處位置.
 mno_town_menu_0_door|進入某處.
@@ -314,18 +314,18 @@ menu_notification_faction_defeated|^^^^^{s1} 被擊敗了!^{s1} 從此將不复�
 menu_ruins|^^^^你來到了 {s1}. 昔日兵力強盛的營地現在已經是一片廢墟 , 但你仍可看到防禦工事的殘餘及各種生銹的武器碎片被胡亂丟棄在地上.
 menu_legendary_place|^^^^你遵循傳聞從而發現了 {s1}. 現在你可以探索下這地方，看看傳聞是真是假.
 mno_explore|探索這個地方.
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
-; mno_leave_bandit_lair|Leave for now.
+menu_ring_hunter_lair|^^^^你跟随魔戒猎手们的踪迹穿越了幽暗密林到达了{s1}。你看到他们正准备留下一个箱子。
+mno_attack_lair|马上攻击他们
+mno_leave_bandit_lair|立即离开
 menu_starting_quest_good|^^^^^^你看到一支小商隊正被一隊半獸人攻擊. 你決定怎麼做?
 mno_help|幫助陌生人!
-; mno_start_defend_caravan|Defend the Caravan!
-; mno_start_raid_caravan|Raid the Caravan!
-; mno_start_ambush_orcs|Ambush the Orcs!
-; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
+mno_start_defend_caravan|保护这支商队！
+mno_start_raid_caravan|掠夺这支商队!
+mno_start_ambush_orcs|伏击这些半兽人！
+mno_start_kill_scouts|阻止侦察兵报告你的到来！
 mno_go_your_way|別理他們
-; mno_defend_villagers|Defend the Villagers!
-; mno_raid_villagers|Raid the Village!
+mno_defend_villagers|保护这些村民！
+mno_raid_villagers|掠夺村庄！
 mno_go_away|別理他們
 menu_custom_battle_choose_faction1|^^^^^^^^^^選擇你的陣營和優勢:
 mno_good_equal|正義陣營
@@ -380,4 +380,4 @@ mno_scene4|場景8 (file scn battlefield8.sco)
 mno_scene5|場景9 (file scn battlefield9.sco)
 mno_back_3dot|返回...
 mno_back|返回.
-; mno_next|Next...
+mno_next|接下来……

@@ -35,21 +35,21 @@ dlga_treebeard_introduce_2:treebeard_introduce_3|很抱歉我如此突兀的出�
 dlga_treebeard_introduce_3:treebeard_introduce_4|(四肢僵硬的巨大樹人慢慢張開它那被枝葉及青苔覆蓋的嘴。它緩慢的用低沉且非常有權威的聲音說:)^'呼嗯...哼嗯...*我*不會告訴你名子...總之不會是現在，因為那會花上很長的時間。我的名子隨時間一直在增加，而我已經活了非常，非常久，所以我的名子長得就像一個故事。在我的語言裡，也就是你們所謂的古安特語，真正的名子告訴你它代表的事物背後的故事。這是個很美麗的語言，但要用這語言說話需要相當長的時間，因為我們通常不用這語言說話，除非內容值得花上很長的時間去說，而且值得聆聽。'
 dlga_treebeard_introduce_4:treebeard_introduce_5|噢，你是樹人安特! 傳說裡記載著你們的事蹟，見到你讓我感到非常榮幸。我不希望強迫你，如果你要求的話我會馬上離開。
 dlga_treebeard_introduce_5:treebeard_questtalk|(四肢僵硬的巨大樹人以及它的同伴不發一語，矗立不動好幾分鐘，微風輕輕吹拂著它們充滿樹葉的頭髮及鬍鬚。樹人們接著對看了更長一段時間，直到一個異常急躁，形似歐洲山梨樹的樹人似乎想要說話，但它在四肢僵硬的巨大樹人開口前一直保持沉默。)
-; dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?As I said before...:Hroom... We appreciate the courteous manners that you display. It is {reg1?unusual from your race:nice to speak with elves again}.} Times are not good, ever since the Entwives disappeared - and now there are many evil creatures released by the Dark Lord himself who are trying to destroy our homes. We seek someone who is fast but not hasty. Someone who can help us while we discuss our next moves.^Many bands of orcs have raided the woods and burned down our trees with fire arrows - if you were to defeat the orcs and make sure that they do not threaten the woods we would be grateful and consider you a true friend. Do this and we will talk again.
+dlga_treebeard_questtalk:treebeard_quest_brief|正如我先前所说...嗯~~我们对于你礼貌的举止十分欣慰，当然，我很高兴再次与一个精灵交谈。自从树妻消失以来，这个世道就变得不太好了。现在，黑暗领主手下的众多邪恶生物正试图破坏我们的家园，我们正在寻找一个身手敏捷但不急躁的人在我们讨论下一步行动的时候可以帮助我们。许多兽人小队经常在我们的树林恣意破坏、焚烧树木。如果你能解决他们并且保护森林不受破坏，我们将非常感激你，并且把你当做我们的挚友。好吧，当你做完这些我们再接着谈...
 dlga_treebeard_quest_brief:close_window|半兽人绝对是毫无价值的生物，我保证他们不会再在森林里肆虐了。
 dlga_treebeard_quest_brief:treebeard_pretalk|對不起，我現在沒有時間來做這個.
-; dlga_treebeard_questtalk:close_window|(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'
-; dlga_treebeard_questtalk:close_window.1|(The stiff-limped giant and his fellow Ents stand still in silence while a breeze passes through their leafy hairs and beards.)
+dlga_treebeard_questtalk:close_window|（那个树人首领缓缓地开了口，其他的树人也注视着你。他们开始缓慢地发出一个深沉的声音，大地也隐隐震动。你似乎意识到，他们是在用树人的方式笑着。一个相对年轻的花楸树人在地面上晃动着它那七个脚趾的大脚，这几乎令你跌倒）^'放松点，快枝伙计，我可不想我们年轻的勇士朋友受了伤。嗯~~~~我叫树胡,最年长的树人,我们都非常感谢你对我们的帮助，嗯~~~~让我来给你点礼物，树人圣水，来庆祝你的胜利.'
+dlga_treebeard_questtalk:close_window.1|(当微风拂过他们枝叶般的胡须和发丝的时候,僵硬的树人和他的树人同伴们仍然沉默了许久。)
 dlga_treebeard_pretalk:treebeard_talk_response|嗯。。你想知道什麼，年輕的朋友？
 dlga_treebeard_talk_response:treebeard_about_himself|告訴我更多關於你的事情.
 dlga_treebeard_talk_response:treebeard_about_entwives|告訴我關於樹妻的事情.
 dlga_treebeard_talk_response:treebeard_about_ents|告訴我關於樹人的事情.
 dlga_treebeard_talk_response:close_window|不要緊,再見.
-; dlga_treebeard_about_himself:treebeard_pretalk|(The Ent leader looks distant and solemn. After a while he slowly says:)^'Don't be hasty... we can talk more about this when the woods are safe from the orcs.'
-; dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... I am the oldest of my kind hmmm... I am known as Treebeard by a few mortals and the Elves call me Fangorn. Hummm... I, Skinbark and Leaflock are the only Ents who have walked the forests before the Darkness. I am no longer very bendable as I used to be... young Quickbeam can bend and sway, like a slender tree in the wind... Hummm... If the Entwives were here...
-; dlga_treebeard_about_entwives:treebeard_pretalk|(The Ent leader suddenly gets an expression of sadness and his voice is unusually deep.)^'Hummm... This is a sad tale... when the woods are free from the orcs we can discuss this.'
-; dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... the beautiful Entwives... they like to plant and grow... we should have listened more to them... Hrooom... then they left to the Brown Lands to plant gardens and they taught mortals about making the lands fertile... we used to visit them... until... Sauron attacked... the Entwives are now lost... Hummm... Fimbrethil... her hue of ripe grain... we have looked for them... but not found them... yet...
-; dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... We are shepherds of the Trees and we protect them from perils. We are older than any of the mortal races but not as old as the Elves who cured us from dumbness. Things have changed over the ages. In the beginning we were more hasty and flexible. Over time many of us have been lost. Some of us are still true Ents, and lively enough in our fashion, but many are growing sleepy, going tree-ish, as you might say. Most of the trees are just trees, of course; but many are half awake. Some are quite wide awake, and a few are, well, ah, well getting Entish. That is going on all the time. When that happens to a tree, you find that some have bad hearts. Still, we do what we can. We keep off strangers and the foolhardy; and we train and we teach, we walk and we weed.
+dlga_treebeard_about_himself:treebeard_pretalk|(树人领袖看起来有些威严，过了一会儿他缓慢的说:)^'别急...把那些兽人从我的森林赶走之后我们可以再谈这个问题。'
+dlga_treebeard_about_himself:treebeard_pretalk.1|呼~~~我是树人之中最年长的一个~嗯~~~我知道我树胡被一些凡人和精灵称为法贡。嗯~~~在黑暗降临之前，我、树皮还有叶锁是这片树林里唯一的树人。我已经不能像从前那样轻松的弯曲我的身体了...年轻的快枝则可以弯曲、摇摆，就像一个在风中摇曳的树那样...嗯~~~~要是树妻也在这就好了....
+dlga_treebeard_about_entwives:treebeard_pretalk|(树人首领的表情突然变得悲伤并且深沉的说.)^'嗯~~~~这是个悲伤的故事...把那些兽人从我的森林赶走之后我们可以再谈这个。'
+dlga_treebeard_about_entwives:treebeard_pretalk.1|嗯~~~我美丽的树妻...她们喜欢植物...我应该多听听她们的话....呼~~~之后她们去了褐地去种植植物并且交给那些凡人如何使土地变得肥沃....我们也曾经去看望她们...直到...直到索伦发动攻击....树妻就这样与我们失散了...呼~我的菲泊瑟尔...她可爱的肤色...我们一直在找寻她们...但...始终找不到...现在...
+dlga_treebeard_about_ents:treebeard_pretalk|呼~~~我们这些牧树人负责保护那些树木免遭危险。我们比任何凡人种族都要年长，但是，我们没有那些唤醒我们的精灵年迈。然而，时光荏苒岁月如梭。起初，我们的身体还比较灵活，但是随着时间的推移，我们中的一些渐渐的消失了。我们中的一些仍然是树人，并且生机盎然。但是，其中的一些树人越来越困乏，就要变成树一般。大部分的树木仍然是树木，但其中的一些处于半梦半醒，更有一些非常清醒，极少部分树越来越变得如树人一样。这些变化每天都会发生。尽管如此，我们仍然竭尽所能去驱赶那些陌生人和莽夫，我们训练，我们传授,我们散步，我们去除杂草。
 dlga_start:close_window.1|嗯。。。？
 dlga_start:close_window.2|嗯。。。。。。？
 dlga_start:close_window.3|嗯。。。。。。。。？
@@ -115,14 +115,14 @@ dlga_companion_rehire_refused:close_window|好吧...如果你改变主意了再�
 dlga_companion_objection_response:close_window|謝謝,感謝你對我的支持!
 dlga_companion_objection_response:close_window.1|希望這種事情不會在發生了.
 dlga_companion_objection_response:close_window.2|你的意见很有价值，但我的脑袋里还有比这更重要的事情。
-; dlga_companion_personalityclash2_response:close_window|I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.
-; dlga_companion_personalityclash2_response:close_window.1|You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.
+dlga_companion_personalityclash2_response:close_window|告诉{s11}对于这件事情我支持你，并且{reg11?她:他}应该闭上{reg11?她的:他的}嘴了。
+dlga_companion_personalityclash2_response:close_window.1|告诉{s11}对于这件事情我支持你，并且{reg11?她:他}应该闭上{reg11?她的:他的}嘴了。
 dlga_companion_personalityclash2_response:close_window.2|我没时间在乎这些没用的争吵。
-; dlga_companion_personalityclash_response:close_window|I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.
-; dlga_companion_personalityclash_response:close_window.1|You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.
+dlga_companion_personalityclash_response:close_window|告诉{s11}对于这件事情我支持你，并且{reg11?她:他}应该闭上{reg11?她的:他的}嘴了。
+dlga_companion_personalityclash_response:close_window.1|告诉{s11}对于这件事情我支持你，并且{reg11?她:他}应该闭上{reg11?她的:他的}嘴了。
 dlga_companion_personalityclash_response:close_window.2|我没时间在乎这些没用的争吵。
 dlga_companion_personalitymatch_response:close_window|非常好.
-; dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.
+dlga_event_triggered:companion_faction_demolished|{s5},{reg6?our:my}{s6}现在家园正在被战火侵袭，我恳求您帮我们一下{reg6?our:my}我的人需要休整。
 dlga_companion_faction_demolished:close_window|然后我们立即骑马去援助{s6}。
 dlga_companion_faction_demolished:close_window.1|我很抱歉，但是其他地方需要我们。
 dlga_companion_home_description:companion_home_description_2|請告訴我更多.
@@ -178,10 +178,10 @@ dlga_lord_meet_neutral:lord_intro.1|我的名字是 {playername}。遵从您的�
 dlga_lord_meet_enemy:lord_intro|我是 {playername}.
 dlga_lord_meet_enemy:lord_intro.1|其他人称我｛playername｝.记好了，你以后会经常听到这个名字的
 dlga_start:lord_start.3|好吧。。。{playername}。
-; dlga_lord_start:lord_generic_mission_completed|Your surgeon managed to convince my friend and made the operation.  All we can do now is pray for his recovery. Anyway, I thank you for lending your surgeon to me, {playername}. You have a noble spirit. I will not forget it.
+dlga_lord_start:lord_generic_mission_completed|你的手下，那个医生正在设法说服我的朋友进行手术，而我们现在能做的就是祈祷他早日恢复，不管怎么样，我感谢你借给我这个医生，{playername}。你的精神真的很崇高，我这辈子都不会忘记的！
 dlga_lord_start:lord_investigate_fangorn_completed0|那么，{playername}，你从Fangorn归来，发现了什么？
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|那些树活过来了！它们袭击了我们的军队！
-; dlga_lord_investigate_fangorn_completed1:close_window|I suspected that all along. You have been of good service to me, {playername}.
+dlga_lord_investigate_fangorn_completed1:close_window|你的所作所为我都看到了，你很好地服侍了我，{playername}。
 dlga_lord_start:close_window|我的耐心已经耗完了。我本期待你能告诉点法贡森林的情报，但看上去你一无所知。
 dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|大人，我在此给您献上一对野兽
 dlga_lord_active_mission_2:lord_capture_troll_completed_one_troll|主人，我制服了你说的那头野兽
@@ -190,38 +190,38 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_complet
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|感谢您，大人。这些巨魔会被好好利用的。
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|感谢您，大人。但我配不上这份大礼，它对我来说太危险了。
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|感谢您，大人。但我无法接受这份大礼。 [no room in party!]
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|主人，如果能提供一个装甲巨兽的话，我将为我们的敌人带来更大的破坏！
+dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|难道你能质疑你自己的主人么？{playername}?这只野兽平时很听话。但在战场上可就没那么容易控制了。你和你的人千万不要站到他和敌人之间，否则会被一棍砸成肉泥的。。。
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|是时候用你的礼物来给我们的敌人点厉害看看了
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|How dare you ask Us for more than We have planned for you in our great Wisdom? {playername}, you proved a mighty Servant today, but don't let your insolence test Our patience any further.
-; dlga_lord_capture_troll_completed_one_troll:close_window|Excellent, {playername}. You are a most faithful and useful servant. This troll will be most useful for our purposes. That it is taken to the dungeons!
-; dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
-; dlga_lord_start:lord_generic_mission_completed.1|News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.
-; dlga_lord_start:lord_generic_mission_completed.2|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
+dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|好，就像你说的那样，那么别人我不管，我的仆人，要知道如何使用这个强大的战争工具才行。
+dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|你敢要求一个完全装甲化的战斗巨魔，{playername}，一直听你的话？这可不是一个小东西。但是你是一个有能力的仆人。我们也知道你心里在想着如为你的主人多争一些利益，我还是决定答应你。
+dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|小子你怎么能质疑伟大智慧的我所制订的计划？{playername},你可以证明你是一个有能力的仆人，但是不要再用你的傲慢来挑战我们的耐心了，当我的耐心耗尽的那一天你的末日就到了！
+dlga_lord_capture_troll_completed_one_troll:close_window|很好,{playername}.你是一个可靠而有用的仆人。这个巨魔将是达成我们的意愿时最有用的东西了。现在把它带到地牢里。
+dlga_lord_start:close_window.1|不久前，我让你给我带一个活着的巨魔。但是我应该预料到的，我怎么会想到让{playername}这种垃圾去完成这么大的任务。你还不滚回去好好反省！
+dlga_lord_start:lord_generic_mission_completed.1|当我听说了你关于野生巨魔的事迹后我少了一些对于{s12}的恐惧和担心,谢谢{playername}.
+dlga_lord_start:lord_generic_mission_completed.2|啊哈，你居然做到了，{playername}。所有的农奴都回来了，他们正准备着收割呢。你应该拿到你的那份奖励，这些归你了，拿好！
 ; dlga_lord_start:defend_village_failed|We have heard from our scouts near {s12} that you have failed to defend the village. The villagers were either slaughtered or made into slaves. These raiders are becoming bolder every day... ^^We sense that war is surely coming.
-; dlga_defend_village_failed:close_window|I will do better next time.
+dlga_defend_village_failed:close_window|下一次我会做得更好。
 ; dlga_lord_start:lord_generic_mission_completed.3|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
 ; dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
-; dlga_raid_village_failed:close_window|I will do better next time.
-; dlga_lord_start:lord_follow_spy_half_completed|Blast and damn you! I wanted TWO prisoners, {playername} -- what you've brought me is one step short of useless! I already know everything the spy knows, it was the handler I was after. Here, half a job gets you half a reward. Take it and begone.
-; dlga_lord_start:lord_follow_spy_half_completed.1|I asked you for two prisoners, {playername}, not one. Two. Still, I suppose you did capture the spy's handler, the more important one of the pair. The spy will not dare return here and will prove quite useless to whatever master he served. 'Tis better than nothing. However, you'll understand if I pay you half the promised reward for what is but half a success.
-; dlga_lord_start:lord_follow_spy_failed|Truly, {playername}, you are nothing short of totally incompetent. Failing to capture both the spy AND his handler plumbs astonishing new depths of failure. Forget any reward I offered you. You've done nothing to earn it.
+dlga_raid_village_failed:close_window|下一次我会做得更好。
+dlga_lord_start:lord_follow_spy_half_completed|诅咒你这个蠢蛋！我想要的两个囚犯中,{playername}--你给我带的几乎是残废，废物！我通过我的探子已经知道了这些。工作一半就只能拿到一半的奖励，拿着你的臭钱滚！
+dlga_lord_start:lord_follow_spy_half_completed.1|说实话，{playername}，你简直太让我失望了。那两个间谍你竟然一个也没有抓到，你知道你的失败对我们来说意味着什么吗！你什么奖励也别想从我这里得到！
+dlga_lord_start:lord_follow_spy_failed|{playername}，在这些人当中你真是不称职的。没截住那些逃离的农奴是你最大的失败。忘了你的工钱吧！
 dlga_lord_follow_spy_half_completed:lord_pretalk|我尽力了，{s65}。
 dlga_lord_follow_spy_completed:lord_pretalk|谢谢你，{s65}。
 dlga_lord_follow_spy_failed:lord_pretalk|嗯，随你的便， {s65}。
 ; dlga_lord_start:lord_generic_mission_completed.4|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.
-; dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. I have been waiting patiently for my slaves, yet none have returned. Have you an explanation? Were you outwitted by simple animals, or are you merely incompetent?
+dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}。我一直在耐心的等待着我的农奴们列队出现在我面前，但是看你现在摊着双手的样子我估计他们是回不来了。要我说你什么好呢。。。
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|原谅我, {s65},那些奴隶狡猾的像条泥鳅
-; dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, that is hardly an excuse for failure, {playername}. Now if you will excuse me, I need to capture new men to work these fields before we all starve.
-; dlga_lord_start:lord_runaway_serf_half_completed|You disappoint me, {playername}. There were 3 groups of slaves that I charged you to return. 3. Not {reg17}. I suppose the ones who did come back shall have to work twice as hard to make up for those that got away. As for your reward, {playername}, I'll only pay you for the slaves you returned, not the ones you let fly. Here. Take it, and let this business be done.
+dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|唔，你觉得这也能当借口吗，{playername}？现在如果你不介意，我得在我们的人都挨饿之前去自己抓些人来种田了。
+dlga_lord_start:lord_runaway_serf_half_completed|你让我失望了，{playername}。总共有3组农奴，而不是{reg17}组。我只好让那些回来的农奴们加大工作量来，弥补损失的农奴的工作了。现在，我只能按照你完成任务的情况来给你报酬了，这些是你的，拿去。我们的交易做完了。
 dlga_lord_runaway_serf_half_completed:lord_pretalk|谢谢你, {s65}. 你真慷慨。
 dlga_lord_runaway_serf_half_completed:lord_pretalk.1|呸，这简直是浪费我的时间。
-; dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. I am pleased that you delivered {reg13} units of {s4}, as I requested. I'm impressed.
+dlga_lord_start:lord_deliver_cattle_to_army_thank|啊,{playername}。我很高兴你能够给我{reg13}单位的{s4}，正如你所答应的。你的信守诺言让我深深的记住了你。
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|没问题，{s65}。
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.1|很高兴为您服务。
-; dlga_lord_start:lord_scout_waypoints_thank|You make a good scout, {playername}. My runner just brought me your reports of the mission to {s13}, {s14} and {s15}. Well done.
+dlga_lord_start:lord_scout_waypoints_thank|你的侦察工作做得不错，{playername}。我的人刚才把你侦察{s13}，{s14}和{s15}的情报交给我了，你干的很漂亮。
 dlga_lord_scout_waypoints_thank:lord_pretalk|一个简单的任务, {s65}.
 dlga_lord_scout_waypoints_thank:lord_pretalk.1|没有什么是我解决不了的
 dlga_lord_scout_waypoints_thank:lord_pretalk.2|那是我的荣幸，先生.
@@ -245,12 +245,12 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|嗯,他都是你的.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|我恐怕我有对他有其他的计划.
 dlga_lord_buy_prisoner_accept:lord_pretalk|非常棒!我会派我的部下赶快把他送到监狱.这将有助于我们的事业.
 dlga_lord_buy_prisoner_deny:lord_pretalk|太糟糕了,他对我们来说很有价值, {playername}.
-; dlga_lord_start:lord_pretalk|Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there.
+dlga_lord_start:lord_pretalk|啊，欢迎你，{s24}。^你应该知道{s12}了。你的职责是在战争中协助我们，{playername}。当你有了一定实力【{reg1}级后】，你还有进入那个金库的权利。
 dlga_lord_start:lord_talk|那是什么?
 dlga_lord_pretalk:lord_talk|還要別的嗎?
 dlga_lord_talk:lord_lend_companion_end|我需要 {s14} 回到我身边, {s65}, 如果你不需要 {reg3?her:his} 的服务.
-; dlga_lord_lend_companion_end:lord_pretalk|You've too many men in your company already, {playername}. You could not lead any more at the moment.
-; dlga_lord_lend_companion_end:lord_pretalk.1|Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.
+dlga_lord_lend_companion_end:lord_pretalk|你的队伍满员了，{playername}。你现在不能带更多的人了。
+dlga_lord_lend_companion_end:lord_pretalk.1|当然,{playername}.{reg3?She:He}是一个不错的{reg3?girl:fellow},你真幸运有这样值得欣赏的指挥官。
 dlga_lord_talk:lord_message_delivered|我从{s9}那带来一条消息。
 dlga_lord_talk:lord_message_delivered_enemy|我从{s9}那带来一条消息。
 dlga_lord_talk:lord_active_mission_1|关于那件你给我的任务...
@@ -297,21 +297,21 @@ dlga_find_lost_spears_permission_yes:lord_pretalk|感谢您，大人
 ; dlga_beorn_message2:beorn_message_end|Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory
 ; dlga_beorn_message_end:beorn_message_close|Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.
 ; dlga_beorn_message_close:close_window|Yes, General. We will remain vigilant. We will continue our efforts to recruit more men from surrounding villages. Your victory today has inspired us all.
-; dlga_lord_give_troops:lord_give_troops_check|Reinforce my party? I can always use a few more soldiers.
-; dlga_lord_give_troops:lord_pretalk|Unfortunately you don't have any {s14} soldiers to reinforce me with.
-; dlga_lord_give_troops_check:lord_give_troops_check_1|Let me check the soldier roster...
+dlga_lord_give_troops:lord_give_troops_check|强化我的队伍么？看来我运气不错，总是能得到支援。
+dlga_lord_give_troops:lord_pretalk|很遗憾我只需要{s22}的士兵，其他种族的人并不能被我们所接受。
+dlga_lord_give_troops_check:lord_give_troops_check_1|你等我看一下士兵名单。
 dlga_lord_give_troops_check_1:lord_pretalk|所以你改變主意了..^我知道了.
 dlga_lord_give_troops_check_1:lord_pretalk.1|我们用不着这些部队，把他们带回去。
-; dlga_lord_talk:lord_get_reward_item_ask|I want to request a special item.
-; dlga_lord_get_reward_item_ask:lord_talk|Seems like you have no place in your inventory for anything else. Make some room, then return.
-; dlga_lord_get_reward_item_ask:lord_get_reward_item|Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?
-; dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [costs {reg14}/{reg15} Influence]
+dlga_lord_talk:lord_get_reward_item_ask|我想得到种族特殊物品。
+dlga_lord_get_reward_item_ask:lord_talk|看来你装不下任何东西了，整理一下背包再来吧。
+dlga_lord_get_reward_item_ask:lord_get_reward_item|你确定么？要知道，这些东西都是很珍贵且独一无二的。你必须达到一定的等级并付出一些影响力才能获得这些东西，越好的东西需要的等级和影响力越高，希望你好好考虑后再做决定。
+dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}:{s20}【花费{reg14}/{reg15}影响力】
 dlga_lord_get_reward_item:lord_pretalk|别在意
 dlga_lord_get_reward_item_answer:lord_pretalk|很好，愿你能利用它战胜你的敌人。
-; dlga_lord_talk:marshall_ask|I would like to have a council with you about the War.
-; dlga_marshall_ask:lord_pretalk|I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.
-; dlga_marshall_ask:lord_pretalk.1|You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]
-; dlga_marshall_ask:lord_pretalk.2|We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.
+dlga_lord_talk:marshall_ask|关于战事我想给你一点建议。
+dlga_marshall_ask:lord_pretalk|你只是{s25}，很抱歉这样的话我不能接受你的任何建议，{playername}。等你达到{s24}的时候我会认真听取你的意见的。
+dlga_marshall_ask:lord_pretalk.1|你是一个值得赞赏的指挥官，{playername}，但是你的影响力正在越来越小。说实话听取你的意见可能不是一个很好的主意。【需要{reg15}点影响力，拥有{reg14}点】
+dlga_marshall_ask:lord_pretalk.2|我们现在很难正面对抗我们的敌人，{playername}。我们需要加强我们的部队，建立起一道防线。如果我们的国力仅仅是{s23}的话是无法对敌人发起进攻的。
 dlga_marshall_ask:lord_pretalk.3|我们正进行着一场战役， {playername}，你的建议得等等了
 dlga_marshall_ask:marshall_suggest|我聽著呢， {playername}，你有什麼建議？
 dlga_marshall_suggest:marshall_answer|我们应当第一时间包围{s1}
@@ -354,18 +354,18 @@ dlga_lord_talk_ask_about_war_2:lord_pretalk|那就是所有我想問的，謝謝
 ; dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|We are {s22} and they are {s23}. Overall, {s9}.
 dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|真是適合打仗的一天，{s4}！
 ; dlga_lord_tell_objective:lord_pretalk|What am I doing? What does it look like I'm doing?! I'm a prisoner here!
-; dlga_lord_tell_objective:lord_pretalk.1|I am not commanding any men at the moment.
-; dlga_lord_tell_objective:lord_pretalk.2|We are resting at {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.3|We are travelling to {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.4|We are recruiting new soldiers from {s1}.
-; dlga_lord_tell_objective:lord_pretalk.5|We are scouting for the enemy around {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.6|We are laying waste to the village of {s1}.
-; dlga_lord_tell_objective:lord_pretalk.7|We are retreating to {s1}.
-; dlga_lord_tell_objective:lord_pretalk.8|We are besieging {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.9|We are fighting against {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.10|We are accompanying {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.11|We are reconsidering our next objective.
-; dlga_lord_tell_objective:lord_pretalk.12|I don't know: {reg1} {s1}
+dlga_lord_tell_objective:lord_pretalk.1|我现在没有发布任何命令。
+dlga_lord_tell_objective:lord_pretalk.2|我们在韬光养晦{s1}{s5}。
+dlga_lord_tell_objective:lord_pretalk.3|我们正要到{s1}{s5}。
+dlga_lord_tell_objective:lord_pretalk.4|我们正在从{s1}雇佣新兵。
+dlga_lord_tell_objective:lord_pretalk.5|我们正在{s1}{s5}周围寻找敌人
+dlga_lord_tell_objective:lord_pretalk.6|我们正去破坏{s1}村。
+dlga_lord_tell_objective:lord_pretalk.7|我们在向{s1}撤退。
+dlga_lord_tell_objective:lord_pretalk.8|我们正在围攻{s1}{s5}.
+dlga_lord_tell_objective:lord_pretalk.9|我们反对{s1}{s5}。
+dlga_lord_tell_objective:lord_pretalk.10|我们尾行{s1}{s5}。
+dlga_lord_tell_objective:lord_pretalk.11|我们在考虑下一个目标。
+dlga_lord_tell_objective:lord_pretalk.12|我不知道：{reg1}{s1}。
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.
 ; dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Are you able to send men?
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
@@ -383,63 +383,63 @@ dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|真是適合打�
 ; dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|The sorcerer of Mirkwood still lives. We interrupted his rituals but he has fled.
 ; dlga_lord_mission_sorcerer_completed:lord_pretalk|Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. You have performed a great service for our people and as such you are entitled to a gift. Take this...
 ; dlga_lord_mission_sorcerer_failed:lord_pretalk|Yes {playername}, I sense the dark arts of enemy still pressing upon us. His efforts seem greater now. It is unfortunate that you could not stop him. No doubt he will take additional precautions in future to ward against our efforts. He will likely never be found while Dol Guldur still stands. Thank you for your efforts but leave me now. I grow tired.
-; dlga_lord_active_mission_1:lord_lend_companion_end|Oh, you want your companion back? I see...
-; dlga_lord_active_mission_1:lord_pretalk|{playername}, I must beg your patience, I still have need of your companion. Please return later when things have settled.
-; dlga_lord_active_mission_1:lord_active_mission_2|Yes, have you made any progress on it?
-; dlga_lord_active_mission_2:lord_generic_mission_thank|Indeed. I brought you {reg1} prisoners.
-; dlga_lord_active_mission_2:lord_generic_mission_thank_extra|Why, I have brought you {reg2} prisoners, in case {reg1} are not enough.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.1|Indeed. I have rescued {reg1} allied prisoners and they joined my party.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.2|Indeed. I have scouted {s13}.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.3|Indeed. I have dispatched the scouts.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.4|Indeed. I have defeated enough enemy parties.
-; dlga_lord_active_mission_2:capture_enemy_hero_thank|Oh, indeed. I've captured an enemy commander for you.
+dlga_lord_active_mission_1:lord_lend_companion_end|呃，你想让你的同伴归队？我理解。。。
+dlga_lord_active_mission_1:lord_pretalk|{playername}，请你耐心的再等一阵好么，我现在还需要你的伙伴。等事情解决了，你再回来找我吧。
+dlga_lord_active_mission_1:lord_active_mission_2|是啊，有什么进展吗？
+dlga_lord_active_mission_2:lord_generic_mission_thank|那倒是，我现在把俘虏给你{reg1}。
+dlga_lord_active_mission_2:lord_generic_mission_thank_extra|我觉得{reg1}名俘虏肯定不够，把这{reg2}个带走吧，这样效果更好。
+dlga_lord_active_mission_2:lord_generic_mission_thank.1|我拯救了{reg1}名盟军战俘并且他们已经加入我的队伍了。
+dlga_lord_active_mission_2:lord_generic_mission_thank.2|我已经侦察过{s13}了。
+dlga_lord_active_mission_2:lord_generic_mission_thank.3|嗯，我已经派出了我的侦查小队。
+dlga_lord_active_mission_2:lord_generic_mission_thank.4|没错，我有足够的军力把敌人打垮！
+dlga_lord_active_mission_2:capture_enemy_hero_thank|哦是的，我为您俘虏了一名敌军指挥官。
 ; dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Many thanks, my friend. He will serve very well for questioning. You've done a fine work here.
 dlga_capture_enemy_hero_thank_2:lord_pretalk|当然, {s65}.
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|那没有什么
-; dlga_lord_active_mission_2:lord_raise_troops_thank|Indeed. I have raised {reg1} {s13}. You can take them.
-; dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|I found {s4} hiding in {s3} and gave him his punishment.
+dlga_lord_active_mission_2:lord_raise_troops_thank|当然，我培养好了{reg1}名{s13}。你现在可以收编他们了。
+dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|我发现{s4}躲在{s3}，现在我们要给他惩罚。
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|我恐怕他逃跑了.
-; dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|And we'll all be a lot better off without him! Thank you, {playername},  for removing this long-festering thorn from my side. 'Tis good to know you can be trusted to handle things  with an appropriate level of tactfulness.  I've sent a note to our intendants already, and you can count on additional supplies from us.
+dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|我们会更好的，只要那个人渣不在的话，谢谢你,{playername},帮我把身边这个刺头拔掉，这让我知道你是可以信赖的并且有处理事情的水平和能力，.我会给些补助你的。
 dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|谢谢你，{s65}。
-; dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|I'll notify our intendants of your service, {playername}. Once again, you've my thanks for ridding me of that {s44}.
-; dlga_lord_hunt_down_fugitive_fail:lord_pretalk|It is a sad day when that {s44} manages to avoid my grasp yet again. I thought you would be able to do this, {playername}. Clearly I was wrong.
+dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|我会通知我们的士兵为你开道,{playername}。再次感谢你为我解决{s44}。
+dlga_lord_hunt_down_fugitive_fail:lord_pretalk|这是悲伤逆流成河的一天，当{s44}设法避免我再次犯错.我认为你会做到这一点的,{playername}.显然我眼瞎了，看错人了。
 dlga_lord_active_mission_2:lord_active_mission_3|我仍然在工作.
-; dlga_lord_active_mission_2:lord_mission_failed|I am afraid I won't be able to do this quest.
-; dlga_lord_active_mission_3:lord_pretalk|Good. Remember, I am counting on you.
-; dlga_lord_request_mission_ask:lord_pretalk|You still haven't finished the last task I gave you, {playername}. You should be working on that, not asking me for other things to do.
+dlga_lord_active_mission_2:lord_mission_failed|很抱歉，大人。我没有能力完成这个任务。
+dlga_lord_active_mission_3:lord_pretalk|很好。就全靠你了。
+dlga_lord_request_mission_ask:lord_pretalk|你还没有完成我上次交给你的任务，{playername}。你应该继续做那个，而不是要求做别的事情。
 dlga_lord_request_mission_ask:lord_pretalk.1|我现在并没有任何任务可以交给你去做.
 dlga_lord_request_mission_ask:lord_tell_mission|任务?
-; dlga_lord_tell_mission:lord_mission_capture_troll_1|You are a brave servant, {playername}, and we will give you a glimpse of our plans. We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strengthen our own breeds of colossal warriors!
+dlga_lord_tell_mission:lord_mission_capture_troll_1|你是一个勇敢的仆人，{playername}，我会让你了解一下我们的伟大计划。我们需要新鲜、强壮的血液。我们需要扭曲折磨刺激它，再锻炼它，使它最终成为我们最强壮的战士。
 dlga_lord_mission_capture_troll_1:lord_mission_capture_troll_2|我能为你做什么,我的主人?
-; dlga_lord_mission_capture_troll_2:lord_mission_capture_troll_3|A wild cave troll, {playername}. Capture one strong exemplar for me and bring it to me, alive. We need one more of them for Our experiments! Two, would be better. The more we have, the better.
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoa|Where can such a beast be found?
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infob|How can such a beast be captured?
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoc|How can such a beast be transported to you?
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_accepted|You shall have your wild troll, Master.
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_rejected|Mercy, Master! That beast will smash me like a bug!
-; dlga_lord_mission_capture_troll_infoa:lord_mission_capture_troll_3|In these time of blood and shadows, wild cave trolls are growing excited and they are spreading from their lairs in the Misty Mountains... the best place where to look would be around the caves there.
-; dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|You shall find one, and take it down in combat. Fear not of killing it during the fight: a troll is too coriaceous a beast for your weapons to kill it right away... and they do recover, more than you would expect. After it falls over its own black blood, you shall carry it to our feet, still breathing.
-; dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|You will be provided with a robust wheeled cage. It harbours more than enough space for a troll, and it can be pulled around. Hasten your steps on the way back: not even the metal of the cage is totally safe against the fury of a troll blinded by rage and pain. Make sure it does not break free and kill you.
-; dlga_lord_mission_capture_troll_rejected:lord_pretalk|Only now you reveal what you are really worth, but I knew that of you all along. Weak, coward {playername}. Now begone.
-; dlga_lord_mission_capture_troll_accepted:lord_pretalk|I knew I could count on your strength and bravery. Slaves, give to {playername} one of our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.
-; dlga_lord_tell_mission:lord_tell_mission_kill_troll|Our land is facing dangers that were unheard of in our times. People are disappearing in the outskirts of {s3}. Not only commoners, but even small armed groups who venture outside the walls never return. There have been the strangest rumors, but I know what we are facing.
-; dlga_lord_tell_mission_kill_troll:lord_mission_told|Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I don't know what witchery has caused this, but I need that thing to be dispatched.
-; dlga_lord_mission_told:lord_mission_kill_troll_info_a|How can those beasts be fought?
-; dlga_lord_mission_kill_troll_info_a:lord_mission_told|A troll is a dangerous creature indeed. A giant monster which possesses an incredible strength in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wielded in their hands. It is rumored that a single troll can easily best a group of half a dozen well armed and trained men, wasting each of them with a single blow. Not only men but horses too fear trolls. Be careful if you plan to charge one while mounted.
-; dlga_lord_mission_told:lord_mission_kill_troll_info_b|Do you think it comes from Mordor, or Isengard?
-; dlga_lord_mission_kill_troll_info_b:lord_mission_told|No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember, there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.
-; dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|Here is a mission for a trusted and brave servant like you, {playername}. The strangest rumors reach my ears from the forest of Fangorn. Minions sent to harvest wood, and even my commanders traversing the place, occasionally fail to return. Other times, they report of mysterious losses among their troops. They blame ghosts, spirits of the wood, ancient curses... Nonsense! Puny excuses for their own cowardice or ineptitude!
-; dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_1|What do you command me to do about it, Master?
-; dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_rejected|But Master, there is danger and pain in Fangorn! I've felt it myself!
-; dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|Maybe it is just that my other servants are unable to prevent the most cowardly worms in their troops from deserting.  Fools, blinded by superstitions.   Or, maybe, it is the treacherous ambushes of elven scum, hiding in the putrid trees as they usually do.   It could even be lowborn traitors from Rohan.  Or who knows what else. I want you to find out, {playername}.
+dlga_lord_mission_capture_troll_2:lord_mission_capture_troll_3|一个野生的巨魔，{playername}。给我带来一个强壮的野生巨魔，记住，要活的。我还需要一个来做实验，两个最好。。。不，越多越好。
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoa|在哪儿可以找到这样的野生巨魔啊？
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infob|怎么才能抓到他？
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoc|怎么把这个巨魔送给您？
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_accepted|您应该拥有自己的巨魔的，主人！
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_rejected|饶恕我啊，主人。我打不过那个怪物，它能像对付一条虫一般蹂躏我们。
+dlga_lord_mission_capture_troll_infoa:lord_mission_capture_troll_3|在血液和阴影包围的岁月里，野生洞穴巨魔越来越暴躁，他们的活动范围是从自己的洞穴到迷雾山脉。。。要讲最好的地方，还是它们的洞穴周围。
+dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|你将会找到一个，并和它开战。在于它战斗时可别想着要留活口，否则死的就是你了。野生巨魔不是你们的武器能轻易打到的，而且它们恢复得速度比你想象的要快很多。等到它倒在了自己的血泊里后，你要把它带到我这里——在它还在呼吸时。
+dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|你要提供一个强大的轮式笼。它有有足够多的空间让一个巨魔可以关在里面。回来的路上加快你的脚步：即使金属笼子是完全安全的，狂暴巨魔愤怒和痛苦，也不确保它不能打破自由并杀了你。
+dlga_lord_mission_capture_troll_rejected:lord_pretalk|现在我知道你的价值了，{playername}。废物，蛆虫，现赶紧给我滚！
+dlga_lord_mission_capture_troll_accepted:lord_pretalk|我知道我可以指望你的力量和勇气，{playername}。来人，给{playername}一个轮式的笼子！当你拿到了我的礼物后回来，我希望在{reg1}个黄昏过去之前见到我要的东西。
+dlga_lord_tell_mission:lord_tell_mission_kill_troll|我们的家园面临危险，这在以前是闻所未闻的。人们都消失在{s3}.不仅仅是平民,但仅仅是很小的武装团体现在也不能确保就不会突破我们的墙壁，曾经有过奇怪的谣言，但我知道我们将面对会很艰巨。
+dlga_lord_tell_mission_kill_troll:lord_mission_told|野生巨魔——一种巨大的，存在于山林之间的怪物。它们从不离开它们的洞穴，然而一天人们在{s3}发现了它们的踪迹。我不知道是什么导致了这奇怪现象的发生，但我知道那个东西——巨魔——是应该过来听我号令的。
+dlga_lord_mission_told:lord_mission_kill_troll_info_a|如何和这些野兽战斗？
+dlga_lord_mission_kill_troll_info_a:lord_mission_told|事实上巨魔是危险的生物。一个巨大的怪物，其变形的肌肉拥有不可思议的力量。他们的皮肤坚硬如铁。据传说，一个野生巨魔曾轻松杀死了人类一个王国最精锐的六名战士。不仅是人类，马匹也害怕巨魔。如果你要计划收服一个，一定要小心。
+dlga_lord_mission_told:lord_mission_kill_troll_info_b|你认为它来自魔多，还是艾辛格？
+dlga_lord_mission_kill_troll_info_b:lord_mission_told|不，我想不会.我收到消息，他们的阵营里白和黑塔里有各种怪物，但是自从我听到野兽可怕的叫声{s3}是一个野蛮人,未驯服的野兽。记住，可以有一个以上。但可以肯定的是，这些敌人已经像一种新的瘟疫降临在我们周围了。
+dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|这是交给你的一个勇敢的任务,{playername}.奇怪的谣言从法贡森林传到了我的耳边，我的手下发现了木材，甚至我的指挥官也去了那个地方，偶尔失败返回，其他时候，他们报告的神秘的现象损失他们的军队。他们指责鬼，精灵的木材，古老的诅咒……胡说。微不足道的借口为自己的懦弱和无能！
+dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_1|你有什么任务要吩咐啊，头儿？
+dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_rejected|但是主人，在充满危险和痛苦的法贡森林，我能感受到的只有我自己！
+dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|也许这是我的手下都无法阻止军队里懦弱的蛆虫投降，傻瓜，盲目相信那些迷信。或许他是奸诈的伏击精灵的败类，他们通常躲在腐烂的树木后，谁知道呢，我要你找出我们中的奸细，{playername}。
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepted|我不害怕侏儒和精灵.把这个交给我,主人.
-; dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|Master, pity your servant! Don't ask me to venture in that cursed place!
-; dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|So you are like the other worms: a superstitious, worthless coward.  I overestimated you. Now, begone!
-; dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|Good. Go there and shed some light on this matter. Then return to me and report. I expect to see you back with news before {reg1} dawns are passed.
-; dlga_lord_tell_mission:lord_mission_find_lost_spears|Here is a mission for a trusted and brave commander like you, {playername}. We are ill equipped to fight off the Rhun hordes. Our armies are losing battles one by one. A legend tells that once upon a time, there were spears made by Dwarves for the armies of the great King Bladorthin (long since dead), each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..
+dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|头儿，体谅体谅我吧，不要问我关于那个被诅咒的地方！
+dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|你就像其他蠕虫一样：一个迷信的，没用的废柴。我高估了你。现在，在我发怒之前快滚！
+dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|很好，调查这个问题然后给我报告，我期望在{reg1}之前收到你的好消息。
+dlga_lord_tell_mission:lord_mission_find_lost_spears|这是一个团队的信任和勇敢的指挥官一样,{playername}。我们无力抵御洛汗成群的部队。我们的军队失去了战斗力，有一个传说，很久以前，枪是由矮人军队伟大的国王布拉多辛创造的，每一个上面都镶有黄金，但是他们从来不给钱。
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|主人，你吩咐我做什么呢？
-; dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|These weapons would increase the effectiveness of our armies, but above all they will lift the spirits of our men. You'll have to find these spears. You'll have to go ask the dwarves for permission to search for the spears in the deeps of the Lonely Mountain. Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?
-; dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|I fear no orcs nor trolls! I will find these spears for you, my lord.
+dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|这些武器将增加我们军队的威力，但首先他们将需要这些矛。你得去在深处的孤独的山问矮人是否允许搜索长矛。当心，你会遇到一些有兽人和巨魔的隧道。你确定要接受这任务？
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|我不害怕兽人和巨魔！我会为你找到这些矛的，我的老大。
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|我恐怕帮不了你.我的主人.
 dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|我知道稳重是你勇气的一部分。也许你应该坚持侦察任务.
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|那祝你好运吧!
@@ -453,73 +453,73 @@ dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|我在哪
 ; dlga_lord_tell_mission:lord_mission_deliver_message|I need to send a letter to {s13} who should be currently at {s4}. If you will be heading towards there, would you deliver it to him? The letter needs to be in his hands in 30 days.
 ; dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certainly, I intend to pass by {s4} and it would be no trouble.
 ; dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|I doubt I'll be seeing {s13} anytime soon, {s65}. You'd best send it with someone else.
-; dlga_lord_mission_deliver_message_accepted:close_window|I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see him.
-; dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah, all right then. Well, I am sure I will find someone else.
-; dlga_lord_tell_mission:lord_mission_deliver_message.1|I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently. If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.
-; dlga_lord_tell_mission:lord_mission_told|There is an urgent matter... My messenger is due to report on our battle plans to commanders in {s14}. His trip has been postponed several times already with all the trouble on the roads, but this time he must get through. So, I want to at least make sure he's well-guarded. I trust you well, {playername} so I would be very grateful if you could escort him to {s14} and make sure he arrives safe and sound.
-; dlga_lord_tell_mission:lord_mission_told.1|I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look, {reg3?she:he} may be able to convince him to give his consent to an operation.Please, I will be deeply indebted to you if you grant me this request.
+dlga_lord_mission_deliver_message_accepted:close_window|真是太好了，{playername}。这就是那封信。而这是给你的一点盘缠。当你见到{s13}的时候，替我向他致意。
+dlga_lord_mission_deliver_message_rejected:lord_pretalk|啊，好吧。我相信我能找到其他人去做的。
+dlga_lord_tell_mission:lord_mission_deliver_message.1|我需要你送一封信给{s15}的{s13}，他现在应该在{s4}。如果你向那里去的话，能帮我送信给他吗？这封信需要在40天内送到他的手里。
+dlga_lord_tell_mission:lord_mission_told|有急事...我的使者要去{s14}向指挥官报告战况.他的旅程因为麻烦的路况所以推迟了几次,但是这一次他必须通过.我想至少让他安然无恙.我完全信任你,{playername}如果让他安然无恙的到达{s14}我会用我的方法感谢你的！
+dlga_lord_tell_mission:lord_mission_told.1|我有一个朋友，一个老战士，得了重病。除非有一个外科医生，不然他肯定会死的，{playername}。但他还固执如牛地拒绝任何人看他受伤，因为他不信任这里的医生。我听说你的医生和你。如果你想让你的外科医生来这儿看一看，{reg3?她:他}可能能够说服他放弃他的同意的行动。如果你答应我，我将非常感谢你！
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|你需要多少人?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|如果你能训练出{reg1} {s14} 带给我,那就够了.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|当然, {s65}. 给我{reg1} 新兵,我会把他们训练成{s14}.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|我这些天很忙没时间训练他们.
-; dlga_lord_mission_raise_troops_accepted:close_window|You've taken a weight off my shoulders, {playername}. I shall tell my sergeants to send you the recruits and attach them to your command. Also, I'll advance you some money to help with expenses. Here, this purse should do it. Thank you for your help.
-; dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, of course. I had expected as much. Well, good luck to you then.
-; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There were news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
-; dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Then I will hunt him down and execute the law.
-; dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|I am too busy to go after him at the moment.
-; dlga_lord_mission_hunt_down_fugitive_accepted:close_window|That's excellent, {playername}.  I will be grateful, and of course your prowess wil be duly noted.  Well, good hunting to you.
-; dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|As you wish, {playername}.I suppose there are plenty of bounty hunters around to get the job done . . .
-; dlga_lord_tell_mission:lord_mission_told.2|Well, some of the slaves working in {s4} have run away.  The ungrateful swine, whose lives we spared!  From what I've been hearing, they're running to {s3} as fast as they can, and have split up into three groups to try and avoid capture. I want you to capture all three groups and fetch them back to {s4} by whatever means necessary. I should really have them hanged for attempting to escape, but we need hands now, so I'll let them go off this time with a good beating.
-; dlga_lord_tell_mission:lord_tell_mission_follow_spy|I have good information that a man in this very town is actually an enemy spy. He should be seized and hanged for his impudence, but we also believe that very soon he will leave town to meet with his master, the man to whom the spy feeds all his little whispers. The spy himself is of little import, but the master is a dangerous man, and could tell us a great deal if we could only get our hands on him...
-; dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|I want you to wait here until the spy leaves town. Then you must follow him, stealthily, to the meeting place. You must take absolute care not to be seen by the spy on your way, else he may suspect foul play and turn back. When the master appears, you must ambush and arrest them and bring the pair back to me. Alive, if you please.
-; dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|I'll do it, {s65}.
-; dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|No, this skulking is not for me.
-; dlga_lord_tell_mission_follow_spy_accepted:close_window|Good, I'm sure you'll do a fine job of it. One of my men will point the spy out to you when he leaves, so you will know the man to follow. Remember, I want them both, and I want them alive.
-; dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|A shame. Well, carry on as you were, {playername}...
-; dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|There is a difficult job I need done, {playername}, and you may be the one who can carry it off. I need someone to capture one of the enemy commanders and bring him to me. Afterwards, I'll be able to question him on the enemy battle plans. It is a simple enough job, but whomever you choose will be guarded by an elite band of personal retainers. Are you up for a fight?
-; dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_accepted|Consider it done, {s65}.
-; dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_rejected|I must refuse, {s65}. I don't want to get close to any of them.
-; dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|I like your spirit! Go and bring me one of our enemies, and I'll toast your name in my hall when you return! And reward you for your efforts, of course...
-; dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Clearly you lack the mettle I had thought you possessed. Very well, {playername}, I will find someone else.
-; dlga_lord_tell_mission:lord_tell_mission_lend_companion|I don't have a task for you right now, but your companion {s3} is a skilled {reg3?lass:fellow} and I need someone with {reg3?her:his} talents. Will you lend {reg3?her:him} to me for a while?
-; dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|How long will you be needing {reg3?her:him}?
-; dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|Just a few days, a week at most.
-; dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|Then I will leave {s3} with you for one week.
-; dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|I am sorry, but I cannot do without {s3} for a whole week.
-; dlga_lord_tell_mission_lend_companion_accepted:close_window|I cannot thank you enough, {playername}. Worry not, your companion shall be returned to you with due haste.
-; dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|Well, that's damned unfortunate, but I suppose I cannot force you or {s3} to agree. I shall have to make do without.
-; dlga_lord_tell_mission:lord_mission_told.3|Our scouts have noticed a recent increase in enemy activity. Unfortunately they almost never succeed in capturing live prisoners and bring them in for questioning, so we can piece together what the enemy is up to. So, I need a good warrior to find me {reg1} enemy prisoners, that I may question them.
-; dlga_lord_tell_mission:lord_pretalk|No, {playername}. I do not need your help at this time.
-; dlga_lord_mission_told:lord_mission_accepted|You can count on me, {s65}.
-; dlga_lord_mission_told:lord_mission_rejected|I fear I cannot accept such a mission at the moment.
-; dlga_lord_mission_accepted:close_window|Excellent, {playername}, excellent. I have every confidence in you.
-; dlga_lord_mission_rejected:close_window|Is that so? Well, I suppose you're just not up to the task. I shall have to look for somebody with more mettle.
-; dlga_lord_talk:lord_leave_prison|I must leave now.
-; dlga_lord_talk:lord_leave|This little chat is over. I leave now.
-; dlga_lord_talk:lord_leave.1|I must beg my leave.
+dlga_lord_mission_raise_troops_accepted:close_window|你已经减轻了我肩膀上的压力，{playername}。我要告诉兵营那边送给你新兵并且保证听你的指挥。还有一些是他们的军费和给你的报酬，拿去。谢谢你能帮我这个忙！
+dlga_lord_mission_raise_troops_rejected:lord_pretalk|啊，当然。我很期待，好的，祝你好运。
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|有个小问题需要你帮忙。一个小人，他叫{s4}.他谋杀了我的一个贴身保镖并且逃避了我的惩罚。有内线给我消息说他现在在{s3}。你可以找到他并给他尝尝你的厉害，死活不论。我会给你奖励的！
+dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|我马上去追捕他，并给他以惩罚。
+dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|非常抱歉，我太忙了，没有时间去追捕他。
+dlga_lord_mission_hunt_down_fugitive_accepted:close_window|我会非常感激的，{playername}.而且你出的每一份力都不会被国家或我忘掉。好吧，祝你马到成功！
+dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|那好吧，{playername}。我相信迟早会有人将他绳之以法的。
+dlga_lord_tell_mission:lord_mission_told.2|嗯，一些在{s4}工作的奴隶跑了。他们都逃向{s3}。有三组奴隶，把他们都抓回来，抓到{s4}。我真应该把这些农奴吊死在城门口来警告那些奴隶，不过我急需人手。所以你一定要把他们活着带回来，记住，他们不会轻易放弃逃跑的念头，千万别被这些乡巴佬的小把戏耍了。
+dlga_lord_tell_mission:lord_tell_mission_follow_spy|可靠情报表明这个城镇里有一个人很可能是敌人的间谍。我相信他会在不久离开城镇去找人接头。这个间谍说实话价值不高，但是那个接头人一定是敌国里掌管谍报的人，也就是说他的价值非常大。只要我们能抓到他，那将会对国家有极大的利益。。。
+dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|你要等着知道那个间谍离开了城镇，然后你要悄悄地跟着他，直到他们的接头点。你必须保证那个间谍不会再路上发现你，否则他就会逃开。等到那个接头者出现了，你要突然袭击他们并且把他们都抓回来，记住，要活的。
+dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|交给我吧，{s65}。
+dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|抱歉，我不能做这种偷偷摸摸的工作。
+dlga_lord_tell_mission_follow_spy_accepted:close_window|很好，我相信你一定会漂亮的完成任务。我的手下会在那个间谍离城的时候把他指出来，以便你确定跟踪的目标。记住，我要你把他们两个都抓住，而且要活口。
+dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|耻辱啊。你自己背着吧，{playername}……
+dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|这里有一件麻烦事我要处理，{playername}，或许你就是最佳人选。我需要一个勇敢的战士去抓回一个敌人的指挥官并把他带回到我这来。我可以通过审问来知道敌军的行动。这对你来说是个简单的任务吧。但是无论你准备去找谁的麻烦，他都有一群精英守护着，实话告诉你，我的派出了几支突袭队，但是都有去无回。你和你的部队准备好迎接这场有风险的站斗吗？
+dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_accepted|我会带回一个回来的，{s65}。
+dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_rejected|我必须拒绝，{s65}。我不想靠近他们中的任何一人。
+dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|我喜欢你的精神！出发，并把一个敌人指挥官带回来。当你凯旋时，我们会在大厅中颂扬你的名字，并奖赏你对国家的贡献。
+dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|看起来你缺少战士的勇气，而我却以为你具备了它。好吧，{playername}。我会找到其他人做这件事的。
+dlga_lord_tell_mission:lord_tell_mission_lend_companion|我现在不想麻烦你，但是你的同伴，{s3}是一个能干的{reg3?小姑娘:小伙子}，我需要{reg3?她:他}的才干。你能把{reg3?她:他}借给我用一段时间吗？
+dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|你要{reg3?她:他}帮你多久的忙？
+dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|就几天而已，至多一周。
+dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|好吧，我会让{s3}帮你一周的忙的。
+dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|抱歉，但我的队伍不能没有{s3}整整一周。
+dlga_lord_tell_mission_lend_companion_accepted:close_window|我对你的感激难以言表！别担心，{playername}，你的伙伴很快就会回到你队伍中的。
+dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|哦，这还真是不走运，不过我想我不能强迫你或者{s3}同意。看来我得在劣势中赌一把了。
+dlga_lord_tell_mission:lord_mission_told.3|我的侦察兵发现了敌人部队的活动。但是他们没能抓回个俘虏来审问啥的。所以说我需要一名有能力的军事家去俘虏{reg1}名敌人，好让我们审问他们并知道敌人的计划。
+dlga_lord_tell_mission:lord_pretalk|不了，{playername}。我现在不需要你的帮助。
+dlga_lord_mission_told:lord_mission_accepted|交给我吧，{s65}。
+dlga_lord_mission_told:lord_mission_rejected|恐怕现在我不能接受这个任务。
+dlga_lord_mission_accepted:close_window|非常好！{playername}，我对你很有信心！
+dlga_lord_mission_rejected:close_window|是吗？我想大概只是你没能力做这个任务吧……我会去找更有勇气的人来完成它的。
+dlga_lord_talk:lord_leave_prison|我必须得走了。
+dlga_lord_talk:lord_leave|我的话说完了，我要走了。
+dlga_lord_talk:lord_leave.1|请让我离开。
 dlga_lord_leave_prison:close_window|我们会再次见面的
 dlga_lord_leave:close_window|我们会看到的，{playername}.
 dlga_lord_leave:close_window.1|当然，{playername}. 再见.
-; dlga_lord_leave:close_window.2|Good journeys to you, {playername}.
-; dlga_lord_leave:close_window.3|Yes, yes. Farewell.
+dlga_lord_leave:close_window.2|我们会再见面的，{playername}。
+dlga_lord_leave:close_window.3|哦，好的好的，再见。
 dlga_lord_leave:close_window.4|我们会再见的
-; dlga_start:lady_escort_lady_succeeded|Thank you for escorting me here, {playername}, and ensuring my safe passage. Your services will be duly noted. 
-; dlga_lady_escort_lady_succeeded:close_window|It was an honor to serve.
-; dlga_start:prison_guard_players|Good day, Commander. Will you be visiting the prison?
-; dlga_prison_guard_players:close_window|Yes. Unlock the door.
-; dlga_prison_guard_players:close_window.1|No, not now.
-; dlga_start:prison_guard_talk|Yes? What do you want?
-; dlga_prison_guard_talk:prison_guard_ask_prisoners|Who is imprisoned here?
-; dlga_prison_guard_talk:prison_guard_visit_prison|I want to speak with a prisoner.
-; dlga_prison_guard_ask_prisoners:prison_guard_talk|Currently, {s51} {reg1?are:is} imprisoned here.
-; dlga_prison_guard_visit_prison:close_window|Of course, Commander. Go in.
-; dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|You need to get permission from the lord to talk to prisoners.
+dlga_start:lady_escort_lady_succeeded|谢谢你送我到这里,{playername},并保护了我的人身安全，我会记住你的。
+dlga_lady_escort_lady_succeeded:close_window|很高兴为您服务！
+dlga_start:prison_guard_players|今天天气真好。大人，你要去地牢？
+dlga_prison_guard_players:close_window|是的。开门吧。
+dlga_prison_guard_players:close_window.1|不，现在不用。
+dlga_start:prison_guard_talk|是吗？你想要什么？
+dlga_prison_guard_talk:prison_guard_ask_prisoners|谁被关在这里？
+dlga_prison_guard_talk:prison_guard_visit_prison|我想和一个犯人说话。
+dlga_prison_guard_ask_prisoners:prison_guard_talk|现在，{s51}{reg1?被:被}关押在这里。
+dlga_prison_guard_visit_prison:close_window|当然，头儿，您请。
+dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|您需要从领主那里得到许可来带走犯人。
 ; dlga_prison_guard_visit_prison_2:close_window|All right then. I'll try that.
-; dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Come on now. I thought you were the boss here.
-; dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. You got that right. Still, I can't let you into the prison.
-; dlga_prison_guard_visit_prison_4:close_window|All right then. I'll leave now.
-; dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|I found a purse with 100 denars a few paces away. I reckon it belongs to you.
-; dlga_prison_guard_visit_prison_5:close_window|Ah! I was looking for this all day. How good of you to bring it back {sir/madam}. Well, now that I know what an honest {man/lady} you are, there can be no harm in letting you inside. Go in.
+dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|快过来。我想你是这儿的老大。
+dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|嘿——嗨。您猜对了。我还是不能让您进这个监狱。
+dlga_prison_guard_visit_prison_4:close_window|那好的。我会离开。
+dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|我在不远处发现一个钱包里面有100第纳尔。我想应该是你的。
+dlga_prison_guard_visit_prison_5:close_window|啊！我找这个找了一整天。你能把它找回来真是太好了{先生/女士}。好了，现在我知道你是多么诚实的一个{绅士/小姐}了，让像你这样的人进来不会有任何危险的。进来吧。
 dlga_prison_guard_talk:close_window| 不要緊。
 dlga_start:castle_guard_players|你的指令，指挥官？
 dlga_castle_guard_players:close_window|開門,我要進去
@@ -546,18 +546,18 @@ dlga_request_meeting_castle_lord:close_window|等著，{s2}會來見你的
 dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|我的領主現在不在這
 dlga_request_meeting_other:request_meeting_3|那是誰？
 dlga_request_meeting_3:close_window| 不要緊。
-; dlga_request_meeting_4:request_meeting_5|Wait there. I'll send him your request.
+dlga_request_meeting_4:request_meeting_5|在这等一下。我会向他禀报你的求见。
 dlga_request_meeting_5:request_meeting_6|我會等的..
 dlga_request_meeting_6:close_window|好吧， {s2} 現在會和你談話的
 dlga_request_meeting_6:close_window.1|{s2}說他不想見你，現在給我滾
 dlga_castle_gate_open:close_window|我的大人{s2}很高興見到您 {sir/madam}，進來吧，我來給您開門。
-; dlga_castle_gate_open:close_window.1|My lord {s2} is not in the castle now. But I think he would approve of you taking shelter here. Come on in. I am opening the gates for you.
+dlga_castle_gate_open:close_window.1|我的{s2}大人现在不在城堡里。不过我想他应该会接受你今晚待在这里。请进。我为你打开大门。
 dlga_castle_gate_open:close_window.2|進來吧，我來給你開門。
-; dlga_castle_gate_open:close_window.3|Come on in. But make sure your men behave sensibly within the walls.  My lord {s2} does not want trouble here.
-; dlga_castle_gate_open:close_window.4|My lord {s2} does not want you here. Begone now.
+dlga_castle_gate_open:close_window.3|进来吧，但是要确保你的人在墙外，我可{s2}不想惹麻烦
+dlga_castle_gate_open:close_window.4|我的{s2}大人不允许你待在这里。滚吧。
 ; dlga_start:caravan_help1|Thank you for helping! We are safe now. My name is Torbal, and I was just delivering some goods when we were attacked.^^ Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. ^^Dire things are afoot.. War is coming! ^^I advise you to go to the nearest town and warn everyone about what you've seen to whomever is in command there. It's an important matter, so please make haste.
-; dlga_caravan_help1:caravan_help2|No, I have never seen such a large orc before. Nasty things... ^^I am a Soldier in this coming war that we have all been sensing.
-; dlga_caravan_help2:caravan_help3|You are? Of course you are! I have seen that you are a capable warrior. ^^I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. ^^Here, have some of the local currency used by {s10}
+dlga_caravan_help1:caravan_help2|是啊，我从没见过如此大的兽人。恶心的东西。
+dlga_caravan_help2:caravan_help3|翻译错误，删除翻译
 ; dlga_caravan_help3:caravan_help4|Safe journey to you, Torbal. I'm sure we will meet again.
 ; dlga_caravan_help4:caravan_help5|I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!
 ; dlga_caravan_help5:close_window|I will remember that. Thank you Torbal, and stay safe.
@@ -596,17 +596,17 @@ dlga_castle_gate_open:close_window.2|進來吧，我來給你開門。
 ; dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.
 ; dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
 ; dlga_start:close_window.9|You have come just in time. Let us join our forces now and teach our enemy a lesson.
-; dlga_start:close_window.10|You are making a big mistake by fighting against us.
-; dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
-; dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
-; dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
+dlga_start:close_window.10|和我们打仗是你犯的一个大错。
+dlga_start:ally_thanks_meet|我觉得我们还没有正式认识，我的朋友。你刚刚救了我的命，但我还不知道你的名字。
+dlga_start:ally_thanks_meet.1|你的出手很受用，陌生人。我叫{s1}。可以问下阁下大名么？
+dlga_start:ally_thanks_meet.2|多谢相助，陌生人。我们还没有来个合适的自我介绍，有么？你叫什么名字？
 dlga_ally_thanks_meet:ally_thanks_meet_2|我叫 {playername}
-; dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
-; dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
-; dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
-; dlga_start:close_window.11|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
-; dlga_start:close_window.12|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
-; dlga_start:close_window.13|You turned up just in time, {playername}. I will not forget your help. {s43}
+dlga_ally_thanks_meet_2:close_window|的确{playername}。我的名字是{s1}我欠你个人情。如果有任何需要我帮助的，请告诉我……
+dlga_ally_thanks_meet_2:close_window.1|你好{playername}。刚刚的事算我欠你一个人情。希望有一天我能找到机会还你这个人情。
+dlga_ally_thanks_meet_2:close_window.2|你好{playername}。我叫{s1}。谢谢你的援助，我希望下次我们还能再见面。
+dlga_start:close_window.11|你又一次拯救了我们，{playername}。你是我们最好的朋友！{s43}
+dlga_start:close_window.12|真是千钧一发啊，{playername}。向你献上我最深的祝福。{s43}
+dlga_start:close_window.13|你来的还真是及时啊，{playername}。我不会忘记你的帮助的。{s43}
 dlga_start:close_window.14|很高兴见到你 {playername}，{s43}
 dlga_start:close_window.17|谢谢您的帮助，指挥官。你在那救了{reg1?我们的命:我的命} 
 dlga_start:close_window.18|谢谢您的帮助，指挥官。您扭转了战局。
@@ -619,19 +619,19 @@ dlga_freed_hero_answer_2:close_window|感谢您，指挥官，我永远不会忘
 dlga_freed_hero_answer:freed_hero_answer_3|想要加入我吗？
 dlga_freed_hero_answer_3:close_window|好吧，我会加入你的
 dlga_freed_hero_answer_3:close_window.1|不了，我更喜欢单干
-; dlga_start:defeat_hero_answer|You'll not live long to enjoy your victory. My kinsmen will soon wipe out the stain of this defeat.
+dlga_start:defeat_hero_answer|你不会活到胜利来临的那天的。我的卫兵们很快将会抹去这次失败的污点。
 dlga_defeat_hero_answer:defeat_hero_answer_1|現在你是我的奴隸。
 dlga_defeat_hero_answer_1:close_window|去你的，我不会原谅这个的
 dlga_defeat_hero_answer:defeat_hero_answer_2|你可以随便去哪了，只是别再闯入我的领地
 dlga_defeat_hero_answer_2:close_window|我们会再见的
 dlga_start:fugitive_1|是的，你想干什么？
-; dlga_fugitive_1:fugitive_2|I am looking for a fugitive by the name of {s4}. You fit his description.
+dlga_fugitive_1:fugitive_2|我在找一个叫{s4}的逃犯。很悲剧地告诉您，您符合那逃犯的一切特征。
 dlga_fugitive_1:close_window|没事，麻烦你了
-; dlga_fugitive_2:fugitive_3|I do not know what you are talking about. You must have confused me with someone else.
-; dlga_fugitive_3:fugitive_4|Then drop your sword. If you are innocent, you have nothing to fear. We'll go now and talk to the guard captain to see who is confused.
+dlga_fugitive_2:fugitive_3|唔，我不知道您在说些什么，但是你一定是看错了人不是吗？
+dlga_fugitive_3:fugitive_4|抛下你的剑，如果你是无辜的，你不用如此害怕！我们可以去和这里的保安长谈谈，他会证明你是否无辜！
 dlga_fugitive_4:close_window|去你的，你哪都别想去！
-; dlga_start:follow_spy_talk|Good day. Such fine weather don't you think? If you'll excuse me now I must go on my way.
-; dlga_follow_spy_talk:follow_spy_talk_2|In the name of {s1}, you are under arrest!
+dlga_start:follow_spy_talk|哈，天气不错啊，您认为呢？如果您不介意我有些事情现在必须离开了。
+dlga_follow_spy_talk:follow_spy_talk_2|以{s1}的名义，你被捕了！
 dlga_follow_spy_talk_2:close_window|你活捉不到我的！
 dlga_follow_spy_talk:close_window|别在意我，我只是路过
 dlga_start:spy_partners_talk|幸会
@@ -639,20 +639,20 @@ dlga_spy_partners_talk:spy_partners_talk_2|以{s1}之名，你被逮捕了！
 dlga_spy_partners_talk_2:close_window|你得先踏过我们的尸体！
 dlga_spy_partners_talk:close_window|别在意我，我只是路过
 dlga_start:runaway_serf_intro_1|日安，大人
-; dlga_runaway_serf_intro_1:runaway_serf_intro_2|I have been sent by your {s4} whom you are running from. He will not punish you if you return now.
-; dlga_runaway_serf_intro_2:runaway_serf_intro_3|My good master. Our lives at {s1} was unbearable. We worked all day long and still went to bed hungry. We are going to {s6} to start a new life, where we will be treated like humans.
-; dlga_runaway_serf_intro_3:runaway_serf_go_back|You have gone against our laws by running from slavery. You will go back to {s1} now!
-; dlga_runaway_serf_go_back:close_window|All right master. As you wish. We'll head back to {s5} now.
-; dlga_start:runaway_serf_talk_caught|Good day master. We were heading back to {s5}, but I am afraid we lost our way.
-; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now!
-; dlga_start:runaway_serf_talk_again_return|We are on our way back to {s5} master.
-; dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Make haste now. The sooner you return the better.
+dlga_runaway_serf_intro_1:runaway_serf_intro_2|我是有人派来抓你的，{s4}。如果你现在跟我回去，他将不会惩罚你的。
+dlga_runaway_serf_intro_2:runaway_serf_intro_3|我英明的大人！我们在{s1}的生活简直猪狗不如！我们每天天不亮起来工作，半夜却饿着肚子倒在睡毯上。我们想去{s6}开始一个新的生活，或许我们在那儿能得到人的待遇。
+dlga_runaway_serf_intro_3:runaway_serf_go_back|嘿，你们这些贱奴已经触犯了法律！立刻回到{s1}!
+dlga_runaway_serf_go_back:close_window|好吧，我的大人，如您所愿。我们现在将回{s5}.
+dlga_start:runaway_serf_talk_caught|您好啊，大人。我们在去{s5}的路上迷路了。
+dlga_runaway_serf_talk_caught:runaway_serf_go_back|不要考验我的耐性。你们现在最好马上回去！
+dlga_start:runaway_serf_talk_again_return|我们在回{s5}的路上，我的大人。
+dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|赶快啊，越快越好。
 dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|好的，保持前进。
 dlga_runaway_serf_talk_again_return_2:close_window|是的主人，如你所愿。
-; dlga_mayor_talk:mayor_deliver_wine|I was told to deliver you {reg9} units of {s4}.
-; dlga_mayor_deliver_wine:mayor_pretalk|At last! Our stocks were almost depleted. I had arranged for the delivery of the {s4} in advance. And give {s9} my regards.^^[earned {reg14} Resource Points of {s14}]
-; dlga_mayor_talk:mayor_deliver_wine_incomplete|I was on a mission to deliver you {reg9} units of {s4}, but I lost some of the cargo to the enemy.
-; dlga_mayor_deliver_wine_incomplete:mayor_pretalk|They will pay for this! Well, at least we have some {s4}. Thank you anyway.^^[earned {reg14} Resource Points of {s14}]
+dlga_mayor_talk:mayor_deliver_wine|有人叫我带{reg9}单位的{s4}给你。
+dlga_mayor_deliver_wine:mayor_pretalk|终于！我们的货物还是几乎没了。我只好去{s4}协调下了。。。你可以多拿{reg5}的资源点。那你可以免去麻烦了吧。把我的致意传达给{s9}。我下次会帮你说好话的。【得到{s14}的{reg14}资源点】
+dlga_mayor_talk:mayor_deliver_wine_incomplete|我本要带{reg9}单位的{s4}给你，可是我在路上损失了一些货物。
+dlga_mayor_deliver_wine_incomplete:mayor_pretalk|他们会为此付出代价的！嗯，至少我们还有一些{s4}。谢谢你！【得到{s14}的{reg14}资源点】
 ; dlga_start:mercenary_tavern_talk|Do you have a need for mercenaries, Commander? {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master. We'll join you for {reg5} denars.
 dlga_start:mercenary_after_recruited|有指令嗎？指揮官
 dlga_mercenary_after_recruited:mercenary_after_recruited_2|做好準備，我們將要在黃昏時動身
@@ -661,7 +661,7 @@ dlga_mercenary_after_recruited_2:close_window|好的，指揮官。我們會準�
 dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|好吧，我會雇傭你，給你 {reg5} 第納爾
 dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire.1|不错，但是我只能雇佣你们中的{reg6}个，这是 {reg5} 第纳尔。
 dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead|听上去不错，但是我现在不能再雇用更多的人了。
-; dlga_tavern_mercenary_cant_lead:close_window|That's a pity. Well, {reg3?we will:I will} be lingering around here for a while, if you need to hire anyone.
+dlga_tavern_mercenary_cant_lead:close_window|那就很遗憾了。好吧，{reg3?我们会:我会}在这附近逗留一会的，如果你需要雇佣兵的话。
 dlga_mercenary_tavern_talk:tavern_mercenary_cant_lead.1|听上去不错，但是我现在不能再带领更多的人了。
 dlga_mercenary_tavern_talk:close_window|抱歉。我现在不需要任何人了。
 dlga_start:trainer_pretalk|你在一波箭雨中活下来了 {reg2}。{s4}
@@ -677,17 +677,17 @@ dlga_trainer_talk_combat:trainer_explain_defense|告訴我關於自衛的事情
 dlga_trainer_talk_combat:trainer_explain_attack|告訴我關於利用武器攻擊的事情
 dlga_trainer_talk_combat:trainer_explain_horseback|告訴我關於在馬上戰鬥的事情
 dlga_trainer_talk_combat:trainer_pretalk|我想我瞭解了我需要的理論。讓我們聊一些別的。
-; dlga_trainer_explain_defense:trainer_explain_defense_2|Good question. The first thing you should know as a fighter is how to defend yourself. Keeping yourself out of harm's way is the first rule of combat, and it is much more important than giving harm to others. Everybody can swing a sword around and hope to cut some flesh, but only those fighters that are experts at defense live to tell of it.
-; dlga_trainer_explain_defense_2:trainer_explain_defense_3|Now. Defending yourself is easiest if you are equipped with a shield. Just block with your shield. [Hold down the right mouse button to defend yourself with the shield.] In this state, you will be able to deflect all attacks that come from your front. However, you will still be open to strikes from your sides or your back.
+dlga_trainer_explain_defense:trainer_explain_defense_2|不错，初学者的第一步是学会是自己不要倒下，也就是保护自己尽量不被击倒。远离危险是初学者在战场上的法则，多学习，沉住气，别白白送死。你要跟在经验老道的战士后面协助他，同时注意他的一举一动。这里不是什么“原版”，这里是“魔戒最后之日”,明白吗，这里的主角也是会死的！
+dlga_trainer_explain_defense_2:trainer_explain_defense_3|现在，用一面盾来保护你自己。当你有一面盾时，挡住对方的攻击就再简单不过了。只要举起你的盾牌[按住鼠标右键]就行了。在这时，一切正面的攻击都会被盾挡住，然而，你的背部和侧面还是露在保护之外并有可能被敌人砍中的。
 dlga_trainer_explain_defense_3:trainer_explain_defense_4|如果我没有盾牌呢？
-; dlga_trainer_explain_defense_4:trainer_combat_pretalk|Then you will have to use your weapon to block your opponent. This is a bit more difficult than defending with a shield. Defending with a weapon, you can block against only ONE attack direction. That is, you block against either overhead swings, side swings or thrusts. Therefore you must watch your opponent carefully and start to block AFTER he starts his attack. In this way you will be able to block against the direction of his current attack. If you start to block BEFORE he makes his move, he may just attack in another direction than the one you are blocking against and score a hit.
-; dlga_trainer_explain_attack:trainer_explain_attack_2|Good question. Attacking is the best defence, they say. A tactic many fighters find useful is taking an offensive stance and readying your weapon for attack, waiting for the right moment for swinging it. [You can ready your weapon for attack by pressing and holding down the left mouse button.]
+dlga_trainer_explain_defense_4:trainer_combat_pretalk|那你就要用你的武器来挡住敌人的攻击了。这比用盾格挡难多了！我以前就花了苦功在练习格挡。用你的脚后跟去想都能知道你手中的武器只能为你挡住一个方向的攻击。所以说你的反应一定要快。在对方的手举起时你就要准备好把你的武器迎上去。不过有些厉害的战士会耍一些花招，要千万小心。
+dlga_trainer_explain_attack:trainer_explain_attack_2|非常好的问题。进攻就是最好的防御。一名战士的基本意念就是时刻保持自己的武器准备好击打敌人。而对于你来说掌握攻击时机很重要。[按住左键不放，可以摆出架势但不攻击，释放左键即按照当前架势攻]
 dlga_trainer_explain_attack_2:trainer_explain_attack_3|听上去挺有用。
-; dlga_trainer_explain_attack_3:trainer_explain_attack_4|It is a good tactic, but remember that, your opponent may see that and take a defensive stance against the direction you are swinging your weapon. If that happens, you must break your attack and quickly attack from another direction [You may cancel your current attack by quickly tapping the right mouse button].
-; dlga_trainer_explain_attack_4:trainer_explain_attack_5|If my opponent is defending against the direction I am attacking from, I will break and use another direction.
-; dlga_trainer_explain_attack_5:trainer_combat_pretalk|Yes, selecting the direction you swing your weapon is a crucial skill. There are four main directions you may use: right swing, left swing, overhead swing and thrust. You must use each one wisely. [to control your swing direction with default controls, move your mouse in the direction you want to swing from as you press the left mouse button].
-; dlga_trainer_explain_horseback:trainer_combat_pretalk|Very good question. A horse may be a warrior's most powerful weapon in combat. It gives you speed, height, power and initiative. A lot of deadly weapons will become even deadlier on horseback. However you must pay particular attention to horse-mounted enemies couching their lances, as they may take down any opponent in one hit. [To use the couched lance yourself, wield a lance or similar weapon, and speed up your horse without pressing attack or defense buttons. after you reach a speed, you'll lower your lance. Then try to target your enemies by maneuvering your horse.]
-; dlga_trainer_choose_mode:trainer_choose_mode_player|We have several training modes to improve our soldiers' skills. Single combat will pit you against one to four opponents, in team combat your team of four will face four, eight or twelve combatants, and, finally, Gauntlet is the ultimate challenge for any warrior - you'll face waves of increasing number of opponents all by yourself. Mass melee is a simple brawl.^Which one do you prefer?
+dlga_trainer_explain_attack_3:trainer_explain_attack_4|记住，敌人是会试着格挡你的攻击的。当你发现你的攻击会击在敌人的武器上而不是他的身上时，你要迅速停住攻击并立刻换一个方向再次攻击。只有速度快、看得准才能把敌人置于死地。[停住攻击：迅速点击右键]
+dlga_trainer_explain_attack_4:trainer_explain_attack_5|如果我的对手封住了我攻击的方向，我就立刻换一个方向发起进攻。
+dlga_trainer_explain_attack_5:trainer_combat_pretalk|是的，控制你攻击的方向是一个非常重要的技巧。你主要从四个方向攻击你的敌人：左挥砍、右挥砍、竖劈、直刺。你必须对每种打法都掌握才能将敌人砍倒。
+dlga_trainer_explain_horseback:trainer_combat_pretalk|你问到了点子上！一匹马或许是许多战士所拥有最给力的武器。一匹精良的战马可以给你速度、高度、力量上的优势。许多不错的武器在马上会变得更加致命！但是你需要尤其注意其它的枪骑兵。他们安静地抓着手中的长枪，不做任何动作，但每当马的四蹄开始翻飞，这些长枪将会是一触即死的武器。[如何变成一名枪骑兵呢，你首先要去搞把骑枪，然后上马，加速，当马的速度上来后，你要放下骑枪并控制好骑枪的指向。]
+dlga_trainer_choose_mode:trainer_choose_mode_player|我们有几种训练模式来提高战士的战斗技巧。一人战斗会让你与一到四个对手进行搏击训练。组队作战你会和四个队友一起对付四到十二名对手。坚守训练是你要一个人应对一波又一波无穷无尽的敌人（生存模式），考验战士的耐力和心理。还用一种是多人混战，锻炼你在混乱中的生存技巧。
 dlga_trainer_choose_mode_player:trainer_choose_opponents|单人战斗。
 dlga_trainer_choose_mode_player:trainer_choose_opponents.1|团队战斗。
 dlga_trainer_choose_mode_player:trainer_choose_weapon|射击。
@@ -727,15 +727,15 @@ dlga_mayor_deliver_food_completed:close_window|我尽我的全力
 dlga_mayor_begin:mayor_looters_quest_response|啊， {playername}.你有什么进展吗？
 dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|我刚杀了些部落兽人
 dlga_mayor_looters_quest_response:close_window|还没呢，长官，再会了
-; dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, my scouts saw the whole thing. That should keep those tribal orcs at bay!^^[earned {reg14}x{reg15} Resource Points of {s14}]
-; dlga_mayor_looters_quest_destroyed_2:close_window|And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now.  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!  I think that concludes your task, {playername}. Thank you, and farewell.
-; dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Anything else you need?
-; dlga_mayor_begin:close_window|Good to see you again {playername}. I have heard that you have delivered those people successfully.  I will tell our commander how reliable you are.^^[earned {reg14} Resource Points of {s14}]
-; dlga_mayor_begin:move_cattle_herd_failed|I heard that you have lost those people on your way to {s9}.  I had a very difficult time explaining your failure to the commander here.  Do you have anything to say?
-; dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|I am sorry. But I was attacked on the way.
-; dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|I am sorry. Those people wandered off during the night.
-; dlga_move_cattle_herd_failed_2:close_window|Well, it was your responsibility to deliver them safely, no matter what.  You should know that the commander demanded to know who is responsible for this failure.  So I told him it was you.
-; dlga_mayor_begin:mayor_friendly_pretalk|I have heard about your deeds. You have given those goblins the punishment they deserved.  You are really as good as they say.^^[earned {reg14} Resource Points of {s14}]
+dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|嘿，我的侦察兵看到了全过程！你的举动会让那些准备冲上这片土地的兽人们仔细想想他们能在这里保住他们的头多长时间，干得漂亮我的勇士。每个兽人算你40资源点，所以说。。。你一共可以获得{reg1}资源点。给，这是你的。
+dlga_mayor_looters_quest_destroyed_2:close_window|嘿，我听到了不少关于你的好消息！因为你，那些兽人群已经对掠夺我们感到害怕了！我们已经有一段时间没有收到被攻击报告了。如果还有一些落网之鱼，他们也会立刻夹着尾巴逃离我们的国土的！你为我们的治安做了太多，我会立刻通知仓库，让他们给你奖励的资源点。再次谢谢你，再见！
+dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|现在还有什么我能效劳的吗？
+dlga_mayor_begin:close_window|很高兴再次见到你，{playername}。我已经知道了你成功地把那些人们送到了他们要去的地方。我会告诉我的领导你有多么值得信任！【得到{s14}的{reg14}资源点】
+dlga_mayor_begin:move_cattle_herd_failed|嗯，我听说了那些人在你的保护下还是死了。死在了你们去{s9}的路上。我很费力地向我的上级解释了你的错误。你还有什么想说的吗？
+dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|对不起。但是我在路上被人袭击了。
+dlga_move_cattle_herd_failed:move_cattle_herd_failed_2.1|对不起，那些人们在半夜时被袭击了。
+dlga_move_cattle_herd_failed_2:close_window|怎么说呢，保证他们的安全是你的责任，你应该知道我们的头已经知道了这是谁的错。。。你自己看着办吧。。。
+dlga_mayor_begin:mayor_friendly_pretalk|我已经听说了你的那些功绩了，你给了那些哥布林应有的惩罚。你果然名不虚传~[得到{s14}的{reg14}资源点]
 dlga_mayor_begin:mayor_talk|我能为你做什么？
 dlga_mayor_friendly_pretalk:mayor_talk|我还能为你做什么？
 dlga_mayor_pretalk:mayor_talk|什麼?
@@ -744,7 +744,7 @@ dlga_mayor_talk:merchant_quest_requested|我该怎么做？
 dlga_mayor_talk:merchant_quest_last_offered_job|关于那件您给我的任务...
 dlga_mayor_talk:merchant_quest_about_job|关于那件你给我的任务...
 dlga_mayor_talk:close_window|[我]
-; dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
+dlga_mayor_info_begin:mayor_info_talk|我是{s9}的平民导师。我处理每天的一些琐事。我可以帮你找份工作如果你愿意，当然是有回报的。
 dlga_mayor_info_talk:mayor_info_lord|谁统治着这个城镇？
 dlga_mayor_info_lord:mayor_info_talk|我们的领主是{s10}
 dlga_mayor_info_talk:mayor_pretalk|那就是全部我想知道的了，谢谢
@@ -758,30 +758,30 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk.1|好吧，那你尽力吧
 dlga_merchant_quest_taken:mayor_pretalk|太好了，我就指望着你了，祝你好运
 dlga_merchant_quest_stall:mayor_pretalk|好吧，我会找找其他人的，但如果你回心转意了就跟我说
 dlga_merchant_quest_requested:merchant_quest_brief|嗯，你看起来有点实力，我想我有些工作可以给你
-; dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near the {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion. I need somebody to teach those orcs a lesson. Sound like your kind of work?
+dlga_merchant_quest_brief:merchant_quest_looters_choice|我们在{s5}发生了一些冲突。那些愚蠢的兽人把事情搞得一团混乱。我们需要一个有能力的军士去给他们上一课。看上去你就是最佳人选。你知道我们的首领是英明的，他会给你慷慨的回报！
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|嗯，我会做的。
-; dlga_merchant_quest_looters_choice:merchant_quest_stall|I'm afraid you have to find someone else for that.
-; dlga_merchant_quest_looters_brief:close_window|Excellent! You'll find the tribal orcs roaming around the countryside, probably looking to raid more farms. Kill the tribal orcs, and rid us of their presence. I'll pass a word to our supply chief, and you will get rewarded for every band of tribal orcs you destroy, until all the orcs are dealt with.
-; dlga_merchant_quest_requested:merchant_quest_brief.1|Thanks for offering to help. Actually I was looking for someone to deliver some {s4}. Perhaps you can do that...
-; dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|I have a cargo of {s6} that needs to be delivered to the {s10} in {s4}. We need {reg5} units of {s6} to reach {s4} in {reg6} days. Can you do that?^^[you will earn {reg14} Resource Points of {s14}]
-; dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|Alright. I will make the delivery.
-; dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|I am afraid I can't carry all that cargo now.
+dlga_merchant_quest_looters_choice:merchant_quest_stall|恐怕我现在不能为您服务。
+dlga_merchant_quest_looters_brief:close_window|非常好！你会在乡间找到那些兽人群，或许他们正在抢劫更多农户。每当你干掉一队，给我带句话，我会告诉我们的首领，他会为你的每一份劳动奖赏你的！直到所有的兽人都被清除掉。
+dlga_merchant_quest_requested:merchant_quest_brief.1|你在找事情做吗？事实上我在找人给我运送一些{s4}。希望你能帮帮忙……
+dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|我有一支在{s6}的商队要送到{s4}的{s10}。如果你能在{reg6}天之内把{reg5}单位的{s6}送到{s4}，你可以挣到{reg8}资源点。你觉得怎么样?
+dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|好吧，我会跑这趟商的。
+dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|恐怕我现在带不了这么多货物。
 dlga_merchant_quest_requested:merchant_quest_brief.2|感谢你提供帮助。事实上，我正在寻找一个能够为我们提供食物的人。 也许你可以做到...
-; dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve.Maybe nearby friendly towns have enough for us too. What do you say?
+dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|我们的食物补给紧缺并且补给队伍被敌人扫荡一空。我需要有人能在{reg6}天之内给我们带来{reg5}单位的食物，否则我们都会饿死的。也许，这附近的友邦城镇有足够的食物可以分给我们。你觉得呢？
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|好吧，我会找到食物并将它带回给你.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|我们抱歉，你得找其他人去干这件事
-; dlga_merchant_quest_requested:merchant_quest_brief.3|A task, you say? Actually I am looking for someone to supply us with ore and metals. Mines and roads are not safe anymore, and getting resupplied with raw materials is more and more difficult. The enemy must have its own obscure, but efficient ways of extracting ore, as we've seen even orcs and other lowly beasts in their ranks go around covered with metal. Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times. But in these times our smelters learnt how to deal with poor materials too, if necessary. Every little bit helps.
-; dlga_merchant_quest_requested:merchant_quest_brief.4|A task, you say? The Master demands more troops every day, and they are never battle-worthy enough for Him... but armours don't just grow on skins, you know?^The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials. But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to their lowest-born...^Scavenge their corpses and bring me the metal, {playername}. With a pound of that iron, our smelter can make enough material to cover an entire pack of warriors.
-; dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|We need {reg5} units of {s6} in {reg6} days, before our weaponsmiths run out of raw materials. What do you say?
+dlga_merchant_quest_requested:merchant_quest_brief.3|一个任务？你觉得呢！事实上，我正期待着有人可以提供我们一些矿石金属呢。矿井和道路已经不再安全了，原料的补给越来越难。那些敌人肯定也有他们的短板，但是对于有效的提取矿石的方法我相信他们已然掌握，我们可以看到，那些该死的兽人和他们的野兽身上也穿着着一些盔甲，尽管那些金属品质极差。通常我们不会选用这样的材料，但是今非昔比，我们的冶炼厂也必须通过处理这样粗制的金属来获得必要的材料，聊胜于无啊。
+dlga_merchant_quest_requested:merchant_quest_brief.4|一个任务？你觉得呢！主人每天都要更多更多的军队，但是他们并没有强大到足够为主人而战...但是，你知道么？他们的皮肤上可不会长出盔甲。那些负责供应矿石的蛆虫太他妈的软弱了，轻而易举的就被宰了，因此我们的资源极其短缺。但是那些该死的人类和长耳朵的混蛋,上至国王下至奴隶都他妈的有曾明瓦亮的盔甲保护着。{playername},只要一磅重的的铁，一磅,就足够咱爷们的冶炼厂造出一大堆武装到屁眼的盔甲！！！
+dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|在{reg6}天之内，我需要{reg5}个{s6}，否则我们的铁匠的原料就都用光了。你觉得如何？
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|好的。 我会得到金属废料，并把它们给你。
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|我太忙了，以至于不能处理它。
-; dlga_merchant_quest_requested:merchant_quest_brief.5|Thanks for offering to help. Actually I was looking for someone to escort a supply train. Perhaps you can do that...
-; dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send a supply train to {s8}. However with all those enemy patrols out there, I don't want to send them without an extra escort. A group at least {reg4} would offer them adequate protection. Can you lead that supply train to {s8} in 7 days?^^[you will earn {reg14} Resource Points of {s14}]
+dlga_merchant_quest_requested:merchant_quest_brief.5|你想找个活儿干？事实上，我正在为我的补给队征集护卫呢，也许，你可以做这个。
+dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|我要派遣一支补给队去{s8}。然而，路上也许会遇到袭击，我可不希望我的人任人宰割。如果你能在七天之内将我的人护送到{s8}，你将会赚到{reg8}块钱。当然，你的手下至少要有{reg4}个人来保护我的补给队。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|好的。 我将护送供应车。
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|恐怕我没有那么多的士兵跟我在一起
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|抱歉。 我现在不能这样做
-; dlga_start:close_window.21|We can cover the rest of the way ourselves. Thanks.
-; dlga_start:close_window.22|Well, we have almost reached {s21}. We can cover the rest of the way ourselves. Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
+dlga_start:close_window.21|看来我们已经接近目的地了，剩下的路自己就可以搞定了。谢谢你。
+dlga_start:close_window.22|好吧，看来我们马上就到{s21}了，我想我们可以自己过去了。向您致敬指挥官，祝您一路顺风。[得到{s14}的{reg14}资源点]
 dlga_start:merchant_caravan_intro_1|您好. 你一定是我們的護衛, 對不對?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|是的。我的名字是{playername}。 我会带你到{s1}。
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|好，我很高兴得知我们不会单独上路。 你想要我们现在做什么？
@@ -790,13 +790,13 @@ dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|你跟着我的�
 dlga_merchant_caravan_follow_lead:close_window|好的。 我们会在你身后。
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|你在这里呆一会儿。 我去看看路。
 dlga_merchant_caravan_stay_here:close_window|好的。 我们会在这里等你。
-; dlga_merchant_quest_requested:merchant_quest_brief.6|Actually, I was looking for an able commander like you. There's this group of particularly troublesome goblins. They have infested the neighbourhood and are preying on supply trains and stray warriors. They have avoided all our patrols up to now. If someone doesn't stop them soon, I would need to request serious military action...
-; dlga_merchant_quest_brief:troublesome_bandits_quest_brief|I need someone to hunt down those troublesome goblins. It's dangerous work. But I believe that you are the one for it. What do you say?^^[you will earn {reg14} Resource Points of {s14}]
+dlga_merchant_quest_requested:merchant_quest_brief.6|事实上，我正在寻找一位想你一样卓越的指挥官。这附近有一群非常恼人的哥布林，他们时常在这附近出没，袭击补给队伍以及过往旅人。到目前为止，他们能够避开我们所有的巡逻队。如果仍然没有人能阻止他们，我将向上级请求,进行一次大扫荡。
+dlga_merchant_quest_brief:troublesome_bandits_quest_brief|我需要有人来清理掉这些麻烦的家伙。这可是个危险的任务，不过我相信你没问题,你觉得呢？[将得到{s14}的{reg14}资源点]
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|好的。 我将会猎杀地精。
 dlga_merchant_quest_taken_bandits:close_window|你将要？我非常开心听到这个。祝你好运。
 dlga_troublesome_bandits_quest_brief:merchant_quest_stall|對不起，我現在沒有時間來做這個.
-; dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|Do I indeed! There's a group of rogue goblins harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these goblins alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
-; dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|There's a group of rogue goblins harassing the place, and I'm at the end of my rope as to how to deal with them. They've been ambushing and robbing drunken recruits under the cover of night, and then fading away quick as lightning when the guards finally show up. We've not been able to catch a one of them. They only attack lone people, never daring to show themselves when there's a group about. I need someone who can take on these goblins alone and win. That seems to be the only way of getting rid of them. Are you up to the task?
+dlga_merchant_quest_requested:merchant_quest_deal_with_night_bandits|是的！在这儿有一伙儿哥布林盗贼时常侵扰我们，我已经束手无策了。他们经常在夜幕的掩护下伏击一些我们的新兵蛋子,抢完钱就跑,我们的卫兵刚露面他们就跑的没影了。我们甚至连一个人都抓不住。他们只袭击那些落单的人,人多的时候他们从不露面。我需要有人可以单枪匹马的干掉这些哥布林,这似乎是唯一的方法了。你愿意接受这个任务么？
+dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|在这儿有一伙儿哥布林盗贼时常侵扰我们，我已经束手无策了。他们经常在夜幕的掩护下伏击一些我们的新兵蛋子,抢完钱就跑,我们的卫兵刚露面他们就跑的没影了。我们甚至连一个人都抓不住。他们只袭击那些落单的人,人多的时候他们从不露面。我需要有人可以单枪匹马的干掉这些哥布林,这似乎是唯一的方法了。你愿意接受这个任务么？
 dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|杀了这些流氓地精？为什么，当然！
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|不，我不感兴趣。
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|那会为我减轻负担，{playername}。如果你成功回来会得到丰厚的报酬。一定要活着，嗯？
