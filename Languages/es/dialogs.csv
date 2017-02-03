@@ -277,15 +277,15 @@ dlga_ring_hunters_accept:close_window|Eres valiente, General. Esperamos que teng
 dlga_ring_hunters_reject:lord_pretalk|Ya veo. Date prisa en decírmelo, no queremos perder.
 dlga_ring_hunters_what:ring_hunters_2|No es fácil determinar con exactitud lo que están buscando, pero está claro que no pararán hasta encontrarlo. Lo que podemos decir es que debe de ser un tipo de arma poderosa, una con la que causar destrucción bajo el estandarte del Señor Oscuro.
 dlga_ring_hunters_what:ring_hunters_2.1|El Señor Oscuro envió emisarios a varios clanes enanos en busca de sus anillos de poder, y los bandidos pueden estar haciendo lo mismo. Asegurémonos de que no caigan en las manos del Señor Oscuro.
-dlga_lord_talk:ring_hunter_party_defeated|Traigo terribles noticias, mi señor... Aún acabando con la amenaza de los Cazanillos no he dado con sus líderes. Me temo que pueden haber conseguido su objetivo.
-; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news, {playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something.. a disturbance.
-; dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|I am glad, then. Whatever this weapon may have been... they may still be looking for it. I will remain vigilant and remain on the lookout for more of these Ring Hunters.
+dlga_lord_talk:ring_hunter_party_defeated|Traigo terribles noticias, mi señor... Aún acabando con la amenaza de los Cazanillos no he dado con sus líderes. Temo que puedan haber conseguido su objetivo.
+dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|Para nada son malas noticias, {playername}. ¡Sabemos de tu gran victoria! Las vidas de esos pueblerinos aportan más valor a nuestra causa que cualquier arma. En este momento los beórnidas son más fuertes, inspirados por tu proeza. Es más, no estamos seguros de que esos Cazanillos encontraran lo que estaban buscando. Si hubiera sido el arma que temíamos habríamos notado... una gran perturbación.
+dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Me alegro, puede que todavía sigan detrás del arma misteriosa. Seguiré vigilante y atento a cualquier rastro de los Cazanillos.
 dlga_ring_hunter_quest_end:close_window|Como todos. Gracias de nuevo por tus servicios, {playername}.
-; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. I also came across this
+dlga_lord_talk:ring_hunter_lair_defeated_elf|No fui capaz de interceptar a los Cazanillos que sembraban terror en las aldeas, mi señor. Pero sí pude derrotar a los líderes en su guarida, y nos hemos encontrado esto...
 dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Esto es un Anillo de Poder menor.
 dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Entonces hemos evitado que el Señor Oscuro se haga con él, algo que utilizaría para segar aún más vidas.
 dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Quédate con el anillo y úsalo contra las fuerzas del Señor Oscuro. Sabemos que harás lo correcto.
-; dlga_ring_hunter_lair_quest_end:close_window|This is a tremendous honour, my Lord. Thank you. I shall continue the battle against the Dark lord, and this will help tremendously.
+dlga_ring_hunter_lair_quest_end:close_window|Es un gran honor, mi señor. Te lo agradezco. Seguiré combatiendo al Señor Oscuro, ahora con renovadas fuerzas y la inestimable ayuda del anillo.
 dlga_start:ring_hunters_party_attack|Mirad, allí. Más carnaza.
 dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Pondremos fin a vuestra desbocada cacería.
 dlga_ring_hunters_party_attack_2:close_window|Oídme, aseguraos de que rebuscáis en cada bolsillo y dedo. Dejadme uno para tortura y comeos al resto.

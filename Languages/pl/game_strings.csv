@@ -1260,7 +1260,7 @@ str_gondor_rumor_12|Moria? Krasnoludy tutaj kopią, czyż nie?
 ; str_gondor_rumor_16|My friend's cousin is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me.
 ; str_gondor_rumor_17|There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock.
 ; str_gondor_rumor_18|We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt.
-; str_dwarf_rumor_begin|They ask us if dwarves have any friends. Of course we have friends. But we don't like them.
+str_dwarf_rumor_begin|Oni pytają nas, czy krasnoludy mają jakichś przyjaciół. Oczywiście, że mamy przyjaciół. Tylko ich nie lubimy.
 ; str_dwarf_rumor_2|Orcs? Pfft! Axe-grease, all they are.
 ; str_dwarf_rumor_3|What's that you're wearing? It doesn't look like it would protect you from a bee sting. And it looks funny.
 str_dwarf_rumor_4|Oczywiście, że potrafimy jeździć konno. Po prostu nam się nie chce!
@@ -1428,7 +1428,7 @@ str_moria_rumor_5|Krasnoludy kopały zbyt głęboko. Tym lepiej dla nas. HA HA H
 str_moria_rumor_6|Jest wiele tunelów w Morii. Nie odwiedzamy każdego z nich. 
 ; str_moria_rumor_7|Some manlings and dwarves sneaked past our sentries in the mines a while ago. We doubled the watch since.
 str_moria_rumor_8|Krasnoludy już nigdy nie postawią tu stopy! Nigdy!
-; str_moria_rumor_9|When we gather enough troops, we will go and burn down woods of elves.
+str_moria_rumor_9|Kiedy zbierzemy wystarczająco dużo żołnierzy, pójdziemy i spalimy lasy elfów.
 str_moria_rumor_10|Niewiele jedzenia znajduje się w Morii. Jesteśmy głodni. Musimy złapać ludzi i elfów!
 str_moria_rumor_11|Niektórzy udają się do lasu na południe. Nikt nie powrócił.
 str_umbar_rumor_begin|Wszystkie morza będą należeć do czarnych żagli!

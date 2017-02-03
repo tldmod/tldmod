@@ -53,7 +53,7 @@ str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (Primavera)
 str_calendar_spec_day_3|T.A.{reg2}, Loëndë (Festa di mezzo Anno)
 str_calendar_spec_day_4|T.A.{reg2}, Yáviérë (Festa del Raccolto)
 str_calendar_spec_day_5|T.A.{reg2}, Mettarë (Vigilia di Capodanno)
-str_town_nighttime|È notte profonda.
+str_town_nighttime| È notte fonda.
 str_door_locked|La porta è chiusa a chiave.
 str_castle_is_abondened|Il castello sembra essere disabitato.
 str_town_is_abondened|La città non è protetta da nessuna guarnigione.
@@ -1368,13 +1368,13 @@ str_lorien_rumor_8|Si dice che il mare chiama ciascuno, presto o tardi. Anche io
 str_lorien_rumor_9|Av-'osto - non temere ! Ci sono più cose a proteggerci qui dei nostri mantelli grigi.
 str_imladris_rumor_begin|Che la benedizione degli Elfi e degli Uomini e di tutti i popoli liberi ti accompagnino.
 str_imladris_rumor_2|Che le stelle possano brillare sui vostri volti !
-str_imladris_rumor_3|Colui che rompe qualcosa per scoprire cosa é rimasto della via della saggezza.
+str_imladris_rumor_3|Chi rompe qualcosa per scoprirne la natura, ha abbandonato la via della saggezza
 str_imladris_rumor_4|Dobbiamo intraprendere un duro percorso, una strada imprevista. Li si trovano le nostre speranze, se ancora ne abbiamo.
 str_imladris_rumor_5|La disperazione é per quelli che vedono la fine senza dubbio. Noi no.
 str_imladris_rumor_6|Anche dopo il più freddo degli inverni i fiori sbocciano. E dopo la notte più lunga, arriva una nuova alba.
 str_imladris_rumor_7|In molti si sono riuniti quando li guidai in guerra. La luce scaturita dallo sguainare delle nostre spade e' stato come un fuoco in un campo di canne. Adesso in così pochi hanno lasciato Imladris.
 str_imladris_rumor_8|Áva rucë! Gli Eldar si sono messi in combattimento con il nemico alleandosi con i coraggiosi Edain ancora una volta. Forse per l'ultima volta, chi lo sa ? Noi cantiamo di guerra, di fuoco e della fine della Notte.
-str_imladris_rumor_9|Riesco a vedere gli uomini dal sentiero ad Est sotto le insegne del Signore Oscuro come se avessi rivisto i loro antenati- Ondate di cavalieri fanno breccia nel muro di scudi dell'Ultima Alleanza.Se solo la memoria di Edain fosse più lunga della nostra.
+str_imladris_rumor_9|Riesco a vedere gli uomini dal sentiero ad Est sotto le insegne del Signore Oscuro come se avessi rivisto i loro antenati. Ondate di cavalieri fanno breccia nel muro di scudi dell'Ultima Alleanza. Se solo la memoria di Edain fosse più lunga della nostra..
 str_woodelf_rumor_begin|Un'elfa d'altri tempi, /Una stella splendente nel giorno: /Il suo mantello bianco era ornato d'oro, /Le sue scarpe d'argento.
 str_woodelf_rumor_2|Non è mai il tempo per indugiare, ma i cambiamenti e la crescita non sono la stessa cosa in ogni luogo.  Per gli Elfi il mondo ha un suo movimento, e si muove sia molto velocemente che molto lentamente. Cambia, perché essi stessi cambiano un poco, mentre tutto il resto si allontana. Lentamente, perché essi non contano il passare degli anni, non riguardo a se stessi.
 str_woodelf_rumor_3|L'oscurita e il male hanno avuto la meglio su queste foreste che erano un tempo bellissime.Fino a che non saranno fermati soffocheranno tutte le speranze,tutte le luci.
@@ -1499,7 +1499,7 @@ str_dwarf_rank_7|Capitano Nanico
 str_dwarf_rank_8|Nano Capo
 str_dwarf_rank_9|Eroe delle sale
 str_rohan_rank_0|Ceorl, Borghese di Rohan
-str_rohan_rank_1|Thain, Servitore di Rohan
+str_rohan_rank_1|Conte, Servitore di Rohan
 str_rohan_rank_2|Léod, Uomo libero di Rohan
 str_rohan_rank_3|Rohir, Cavaliere di Rohan
 str_rohan_rank_4|Scyldbora, Portatore dello Scudo di Rohan
@@ -1764,7 +1764,7 @@ str_trait_desc_despoiler|Hai acquisito la reputazione di portare sfrenata distru
 str_trait_title_accursed|Maledetto
 str_trait_desc_accursed|Senti che hai provocato la collera delle potenze aldilà del mare.I tuoi sostenitori sentono bene questa condanna e la paura vi assale.Ricevono una penalità di morale settimanale.
 str_trait_title_stealthy|Silenziosamente
-str_trait_desc_stealthy|Hai sviluppato una sconcertante abilità nell'arte dell'infiltrarsi silenziosamente.Ricevi un bonus per la tua silenziosità valutato quando intraprendi missioni stealth.
+str_trait_desc_stealthy|Hai sviluppato una sconcertante abilità nell'arte dell'infiltrarsi silenziosamente. Ricevi un bonus per la tua silenziosità valutato quando intraprendi missioni stealth.
 str_trait_title_berserker|Berserker 
 str_trait_desc_berserker|Dopo tante battaglie dove hai evitato di usare un'armatura per la ferocia sei diventato come di ferro.Nelle battaglie dove sei gravemente ferito riceverai un bonus di vita una volta a battaglia.Questo non ti riporterà al pieno delle tue forze,ma potresti continuare a lottare anche quando gli altri sarebbero stati sopraffati dal dolore.
 str_trait_title_infantry_captain|Capitano di Fanteria

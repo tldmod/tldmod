@@ -126,7 +126,7 @@ mno_camp_action|Usa un oggetto.
 mno_camp_wait_here|Accampati qui per qualche tempo.
 mno_camp_options|Cambia le opzioni di TLD.
 mno_Cheat_enable|Abilita opzioni cheat/modding.
-menu_game_options|^^^^^^^^Clicca su un'opzione per attivare:
+menu_game_options|^^^^^^^^Clicca su un'opzione per attivarla:
 mno_game_options_restrict_items|Equipaggiamento del giocatore limitato: {s7}
 mno_game_options_formations|Formazioni di battaglia e IA: {s7}
 mno_game_options_town_menu|PNG delle città sempre accessibili dal Menu: {s7}
@@ -161,7 +161,7 @@ menu_assasins_attack_player_won|Hai sconfitto con successo gli assassini da {s2}
 menu_assasins_attack_player_retreat|Sei scappato, salvandoti la vita!
 menu_fangorn_danger|^^^^^^Strano, senti rumori minacciosi intorno a te.^Sono gli alberi a parlare? C'è un senso di profonda ira e di dolore nell'aria.^I tuoi ordini?
 mno_be_quiet_elf|Rispetta l'odio degli alberi. Allontanati silenziosamente.
-mno_be_quiet|Abbassa le armi e rimani calmo! Ora via da qui!
+mno_be_quiet|Abbassa le armi e rimani calmo ! Ora via da qui !
 mno_be_bold|Continua! Non ho paura delle piante e di vecchie leggende!
 mno_fight_back|Mettetevi a cercare! Ispezionare l'area! Abbattete e bruciate un albero o due!
 menu_fangorn_search_fails|^^^^^^Esplori l'oscura, fitta foresta ma non trovi niente.^Eppure, ti senti osservato e minacciato, sempre di più.
@@ -189,7 +189,7 @@ menu_simple_encounter|^^^^^{s2}^Hai {reg22} truppe pronte per la battaglia contr
 mno_encounter_attack|{reg21?Caricateli:Prepariamoci ad affrontarli}.
 mno_encounter_order_attack|Ordina alle tue truppe di {reg21?attaccare:affrontarli} senza di te.
 mno_special_whip|Corri in avanti verso di loro rompendo il {s4}.
-mno_encounter_leave|Disimpegna.
+mno_encounter_leave|Ritirati.
 mno_encounter_retreat|Ritirati, lasciando alcuni soldati dietro di te per coprire la ritirata.
 menu_encounter_retreat_confirm|Come membro della compagnia con le abilità di tattica più elevate,  ({reg2}), {reg3? escogiti:{s3} escogita} un piano che permetterà a te e i tuoi uomini di scappare con le vostre vite, ma dovrai lasciare {reg4} soldati indietro per coprirvi la ritirata.
 mno_leave_behind|Procedi. Il sacrificio di questi uomini salverà molte vite.
@@ -210,13 +210,13 @@ menu_kingdom_army_follow_failed|Hai disobbedito agli ordini e non sei riuscito a
 menu_battle_debrief|{s11}^Le tue perdite:{s8}{s10}^^Perdite nemiche:{s9}
 mno_inspect_troll|Esamina il troll abbattuto
 menu_pre_join|^^^^^Ti imbatti in una battaglia che vede come avversari {s2} e {s1}. Decidi di...
-mno_pre_join_help_attackers|Muoviti in aiuto di {s2}.
+mno_pre_join_help_attackers|Muoviti in aiuto di: {s2}.
 mno_pre_join_help_defenders|Corri in soccorso di {s1}.
 mno_pre_join_leave|Non farti coinvolgere.
-menu_join_battle|^^^Stai assistendo {s2} contro {s1}.^ Hai {reg22} truppe pronte per affrontare le {reg11} del nemico.^^La battaglia sta avendo luogo a {s3}{s4}.
+menu_join_battle|^^^Assisti {s2} contro {s1}.^ Hai {reg22} truppe pronte per affrontare le {reg11} del nemico.^^Luogo dello scontro: {s3}{s4}.
 mno_join_attack|Carica il nemico.
 mno_join_order_attack|Ordina alle tue truppe di attaccare al fianco degli alleati mentre tu rimani nelle retrovie.
-mno_join_leave|Disimpegna.
+mno_join_leave|Ritirati.
 menu_join_order_attack|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti nemici: {s10}
 mno_enter|Entra.
 menu_battlefields|^^^^^^^^^Seleziona un campo...
@@ -259,7 +259,7 @@ menu_siege_started_defender|{s1} sta lanciando l'assalto contro le mure di {s2}.
 mno_siege_defender_join_battle|Unirti alla battaglia.
 mno_siege_defender_troops_join_battle|Ordinare ai tuoi uomini di partecipare alla battaglia senza di te.
 menu_siege_join_defense|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti nemici: {s10}
-menu_village_hunt_down_fugitive_defeated|^^^^^ Un duro colpo da parte del fuggitivo ti manda a terra, mentre la testa ti gira vorticosamente la tua vista si spegne. Il tempo passa. Quando apre nuovamente gli occhi ti ritrovi malconcio e sanguinante, ma per fortuna nessuna delle ferite sembra essere letale.
+menu_village_hunt_down_fugitive_defeated|^^^^^ Un duro colpo da parte del fuggitivo ti manda a terra, mentre la testa ti gira vorticosamente la tua vista si spegne. Il tempo passa. Quando apri nuovamente gli occhi ti ritrovi malconcio e sanguinante, ma per fortuna nessuna delle ferite sembra essere letale.
 menu_town_bandits_succeeded|^^^^^ I goblin cadono davanti a voi come il grano sotto la falce! Presto scopri di essere l'unico rimasto in piedi, mentre la maggior parte dei tuoi nemici si trova privo di sensi, morto\no moribondo. Certamente le genti del posto ti saranno molto grate per averle salvate da questa minaccia.
 menu_town_brawl_lost|^^^^^^Sei stato colpito a tradimento. Coloro che ti hanno attaccato si affrettano a frugarti in cerca di cose di valore, prima di darsi alla fuga.
 menu_town_brawl_won|^^^^^Hai battuto tutti gli avversari e le guardie hanno riportato l'ordine. Velocemente cerchi oggetti di valore per poi sparire finchè non si calmano le acque.^Magari la prossima volta mostreranno più rispetto e faranno marcia indietro.
@@ -267,8 +267,8 @@ menu_close|Niente.
 menu_town|Sei arrivato a {s60}.{s12}{s13}
 mno_town_menu_0|Vai da qualche parte.
 mno_town_menu_0_door|Porta che conduce verso un luogo.
-mno_town_approach|Avvicinati {s1}...
-mno_town_castle|Vai a {s1}.
+mno_town_approach|Avvicinati a: {s1}...
+mno_town_castle|Vai a: {s1}.
 mno_town_castle_door|Portone del castello.
 mno_town_center|Passeggia per la piazza principale...
 mno_town_center_door|Porta per il centro della città.
@@ -281,7 +281,7 @@ mno_dungeon_enter_door|Apri la porta.
 mno_dwarven_warehouse|Visita il Magazzino dei Nani
 mno_dwarven_warehouse_door|Entra nel Magazzino dei Nani
 mno_talk_to_castle_commander|Visita le caserme di {s61}.
-mno_speak_with_elder|Parla con {s6}.
+mno_speak_with_elder|Parla con il {s6}.
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
 mno_tirith_toplevel|Raggiungi il livello più alto
 mno_town_leave|Abbandona...
@@ -299,7 +299,7 @@ mno_sneak_caught_fight|Prova a farti largo combattendo!
 mno_sneak_caught_surrender|Arrenditi.
 menu_sneak_into_town_caught_dispersed_guards|Ti liberi delle guardie e cancelli le tue tracce per non farti trovare, semini facilmente gli inseguitori nel dedalo di strade.
 menu_sneak_into_town_caught_ran_away|Trovi una via di fuga attraverso il cancello e ti ritiri prontamente verso la salvezza sulle colline.
-menu_tld_player_defeated|^^^^^ Improvvisamente senti un dolore dirompente alla nuca! \\ Il tuo corpo è scosso dai brividi mentre tutto si oscura attorno a te... ^ E' questa la tua fine?
+menu_tld_player_defeated|^^^^^ Improvvisamente senti un dolore dirompente alla nuca! Il tuo corpo è scosso dai brividi mentre tutto si oscura attorno a te... ^ E' questa la tua fine?
 menu_recover_after_death_fangorn|Ti svegli. La foresta ti circonda ancora e ogni osso ti fa male. Sei vivo, per miracolo.^^ E' stata una sconfitta, ma almeno sei in grado di vedere quello che è successo. ^Ora sai che cosa accade in questa foresta maledetta,^e sei sopravvissuto per raccontarlo. ^^Ti crederà mai qualcuno, quando lo farai?
 menu_recover_after_death_moria|^^^^^Riprendi conoscenza. Sei sdraiato su di un soffice manto erboso, una fresca brezza ti accarezza il volto. Sei all'esterno!^Gli orchi devono averti creduto morto e hanno scaricato il tuo corpo dentro un pozzo profondo.^Devi essere stato trasportato in superficie da un torrente sotterraneo.
 mno_whatever|Alzati!

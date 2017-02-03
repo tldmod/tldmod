@@ -65,7 +65,7 @@ dlga_member_review_castellan_equipment:member_castellan_pretalk|Certo, è tutto 
 dlga_member_castellan_talk:member_castellan_join|Voglio che tu abbandoni il castello e che ti unisca alla mia compagnia.
 dlga_member_castellan_join:close_window|Sono stato bene qui.. Ma se questo è il tuo volere, {playername}, verrò con te.
 dlga_member_castellan_join:member_castellan_pretalk|Ma dove dormiremo ? Stai portando un intero esercito con te, {playername}, non c'è spazio per noi.
-dlga_member_castellan_talk:close_window|[Parti]
+dlga_member_castellan_talk:close_window|[Vattene]
 dlga_member_chat_00:member_lady_1|{playername}, quando pensi che raggiungeremo la nostra destinazione ?
 dlga_member_lady_1:close_window|Abbiamo ancora un lungo cammino dinnanzi a noi.
 dlga_member_lady_1:close_window.1|Molto presto. Ci siamo quasi.
@@ -246,7 +246,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Temo di avere altri piani per lui.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Eccellente! Manderò i miei uomini a scortarlo in prigione rapidamente. Questo aiuterà di sicuro la nostra causa. 
 dlga_lord_buy_prisoner_deny:lord_pretalk|Male, sarebbe stato prezioso per noi, {playername}.
 dlga_lord_start:lord_pretalk|Ah benvenuto, {s24}.^Dovresti già sapere che {s12}. Il tuo dovere è aiutarci nella nostra lotta, {playername}. Quando ti sarai dimostrato degno della mia fiducia [level {reg1}], ti lascerò accedere a quello scrigno lassù.      
-dlga_lord_start:lord_talk|Che cos'è?
+dlga_lord_start:lord_talk|Che c'è ?
 dlga_lord_pretalk:lord_talk|Qualcos'altro?
 dlga_lord_talk:lord_lend_companion_end|Mi piacerebbe che {s14} tornasse al mio servizio, {s65}, se non necessiti più dei suoi servigi.
 dlga_lord_lend_companion_end:lord_pretalk|Hai già troppi uomini nella tua compagnia, {playername}. Non puoi guidarne di più al momento.
@@ -402,7 +402,7 @@ dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|Temo sia fuggito.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|Ora le nostre condizioni economiche miglioreranno senza di lui! Ti ringrazio, {playername}, per aver rimosso quella spina dal mio didietro. È bello sapere che sai gestire certe situazioni col giusto tatto. Ho già inviato una nota al nostro castaldo, ora potrai contare su scorte supplementari da parte nostra.
 dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|Grazie, {s65}.
 dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|Segnalerò ai nostri castaldi il servizio che ci hai reso, {playername}. Ancora una volta, hai i miei ringraziamenti per avermi liberato da quel {s44}.
-dlga_lord_hunt_down_fugitive_fail:lord_pretalk|È stato un giorno triste quando quel {s44} è riuscito ancora una volta a sfuggire alla mia stretta. Pensavo saresti stato in grado di occupartene, {playername}. Chiaramente avevo torto.
+dlga_lord_hunt_down_fugitive_fail:lord_pretalk|È stato un giorno triste quando quella {s44} è riuscita ancora una volta a sfuggire alla mia stretta. Pensavo saresti stato in grado di occupartene, {playername}. Chiaramente avevo torto.
 dlga_lord_active_mission_2:lord_active_mission_3|Ci sto ancora lavorando.
 dlga_lord_active_mission_2:lord_mission_failed|Temo di non poter completare la missione.
 dlga_lord_active_mission_3:lord_pretalk|Bene. Ricorda, conto su di te.
@@ -464,10 +464,10 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Certament
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Sono troppo occupato in questi giorni per addestrare chiunque.
 dlga_lord_mission_raise_troops_accepted:close_window|Mi hai tolto un peso dalla schiena, {playername}. Dirò ai miei sergenti di mandarti le reclute e unirle sotto il vostro comando. Inoltre, vi anticiperò del denaro per aiutarvi con le spese. Ecco, questa borsa dovrebbe essere sufficiente. Grazie per il vostro aiuto.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, certamente. Me lo aspettavo. Beh, buona fortuna allora.
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Ho qui qualcosa per cui potresti aiutare, un problema con un malvagio fuorilegge conosciuto come {s4}. Ha assassinato una delle mie guardie del corpo, ed sta scappando dal suo giudizio da quel momento. Da notizie recenti il fuggitivo è stato visto a {s3}. Potresti essere capace di stanarlo e consegnargli una rapida giustizia, ed io ti ricompenserò per il disturbo.
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Ho qui qualcosa per cui potresti aiutare, un problema con un malvagio fuorilegge conosciuto come {s4}. Ha assassinato una delle mie guardie del corpo, e sta scappando alla giustizia da quel momento. Da notizie recenti il fuggitivo è stato visto a {s3}. Potresti essere capace di stanarlo e fare rapidamente giustizia, ed io ti ricompenserò per il disturbo.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Allora gli darò la caccia e farò rispettare la legge.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Sono troppo impegnato per inseguirlo al momento.
-dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Eccellente, {playername}. I sarò molto grato, e ovviamente la vostra prodezza sarà puntualmente resa nota. Beh, vi auguro buona caccia.
+dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Eccellente, {playername}. Vi sarò molto grato, e ovviamente la vostra prodezza sarà puntualmente resa nota. Beh, vi auguro buona caccia.
 dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|Come desiderate, {playername}. Suppongo ci siano cacciatori di taglie in abbondanza per finire il lavoro . . .
 dlga_lord_tell_mission:lord_mission_told.2|Beh, alcuni degli schiavi che lavoravano presso {s4} sono scappati. Porci ingrati a cui era stata risparmiata la vita! Da quel che ho saputo, stanno fuggendo verso {s3} più veloce che possono, e si sono divisi in tre gruppi per tentare di evitare la cattura. Quello che voglio è che tu raggiunga tutti i tre gruppi e li riporti indietro a {s4} con ogni mezzo necesario. Dovrei impiccarli per aver tentato la fuga, ma abbiamo bisogno di braccia adesso, quindi li castigherò solo con un po' di frustate.
 dlga_lord_tell_mission:lord_tell_mission_follow_spy|Ho un'informazione valida secondo cui un uomo in questa stessa città è in realtà una spia. Dovrebbe essere imprigionato e impiccato per la sua impudenza, ma abbiamo motivo di ritenere che presto lascerà la città per incontrare il suo capo, l'uomo a cui la spia riferisce ogni sussurro. La spia stessa è di poca importanza, ma il suo capo è un uomo pericoloso, e potrebbe dirci molto se potessimo mettergli le mani addosso..
@@ -675,7 +675,7 @@ dlga_trainer_combat_begin:trainer_talk_combat|Cosa ti interessa sapere?
 dlga_trainer_combat_pretalk:trainer_talk_combat|Che altro vuoi sapere?
 dlga_trainer_talk_combat:trainer_explain_defense|Insegnami a difendermi.
 dlga_trainer_talk_combat:trainer_explain_attack|Parlami di armi d'attacco.
-dlga_trainer_talk_combat:trainer_explain_horseback|Parlami del combattimento su cavallo.
+dlga_trainer_talk_combat:trainer_explain_horseback|Parlami del combattimento a cavallo.
 dlga_trainer_talk_combat:trainer_pretalk|Credo di sapere abbastanza sulla teoria. Parliamo di qualcos'altro.
 dlga_trainer_explain_defense:trainer_explain_defense_2|Buona domanda. La prima cosa che dovresti sapere come combattente è come difenderti. Tenerti lontano dai pericoli è la prima regola di ogni combattimento, ed è molto più importante che ferire gli altri. Chiunque può roteare una spada e sperare che tagli della carne, ma solo quei combattenti che sono esperti nel difendersi vivono per raccontarlo.
 dlga_trainer_explain_defense_2:trainer_explain_defense_3|Ora. Difenderti è molto più semplice se hai equipaggiato uno scudo. Devi solo bloccare i colpi con esso. [Tieni premuto il tasto destro del mouse per difenderti con il tuo scudo]. In questo stato, sarai in grado di deviare tutti gli attacchi che arrivano da davanti. Tuttavia, sarai comunque vulnerabile agli attacchi dai lati o alle spalle.
@@ -840,7 +840,7 @@ dlga_trade_requested_weapons:merchant_trade|Ah, si comandante. Questi articoli s
 dlga_trade_requested_horse:merchant_trade|Comandante, avete buon occhio. Non troverete bestie migliori di queste in nessun altro posto.
 dlga_merchant_trade:town_merchant_talk|Qualcos'altro?
 dlga_town_merchant_talk:merchant_gossip|Ditemi. Di cosa parla la gente in questi giorni?
-dlga_town_merchant_talk:close_window|Alla prossima.
+dlga_town_merchant_talk:close_window|Arrivederci.
 dlga_start:town_dweller_talk|Scusami?
 dlga_start:town_dweller_talk.1|Buon giorno, Comandante.
 dlga_town_dweller_talk:town_dweller_ask_fugitive|Sto cercando un fuggitivo di nome {s4}. Mi hanno detto che forse si nasconde qui.

@@ -1,0 +1,1878 @@
+str_yes|是
+str_no|否
+str_noone|沒有人
+str_s50_comma_s51|{s50}, {s51}
+str_s50_and_s51|{s50} 和 {s51}
+str_s5_s_party|{s5} 的隊伍
+str_s5_s_host|{s5} 的隊長
+str_given_by_s1_at_s2|{s2} 的 {s1} 給予
+str_given_by_s1_in_wilderness|野外的 {s1} 給予
+str_s7_raiders|{s7} 掠奪者
+str_bandits_eliminated_by_another|難對付的強盜被別的隊伍消滅了.
+str_msg_battle_won|戰鬥勝利! 按TAB鍵離開......
+str_tutorial_map1|你現在是在地圖模式中. 在地圖上按左鍵可以旅行/進入鎮子/或與其他隊伍遭遇. 如果你的隊伍停止不動, 時間不會流逝. 如果你想在某處等待, 按住空格鍵一直不動. (再按住Ctrl鍵可以使時間加速流逝).
+str_accept|接受
+str_charge|收費
+str_color|顏色
+str_flip_horizontal|水平翻轉
+str_flip_vertical|垂直翻轉
+str_hold_fire|停止攻擊
+str_blunt_hold_fire|鈍器 / 停止射擊
+str_tutorial_ammo_refilled|填滿彈藥.
+str_custom_battle_1|马维吉尔皇帝和那些刚铎部队正在集结部队准备攻击哈拉德。他发出了战场上的怒吼，骑着马，带领着那些对他衷心的战士加入了这场艰难的战斗。
+str_custom_battle_2|从罗瑞安出发的凯勒鹏带领着一支由骑手和弓箭手组成的巡逻队追赶一队强盗。强盗们落荒而逃，上了一座小山。可是就当他策马追赶时，却发现那队强盗与另外两大队强盗会合在一起。他们已经结合成为一队现在正从山上攻下来。
+str_custom_battle_3|葛林伯元帅正带着最后一些军士们守着洛汗国的最后一道城墙，号角堡城墙。艾辛格的白掌军正发动最后总攻。他必须用他勇敢的心和明亮的剑守住这道城墙。
+str_custom_battle_4|当格兰沃德领主的侦察兵发现了敌军部队后向他报告后，他下令所有战士迅速集结并就地死守在营地。他所面对的是敌人的精锐部队。
+str_custom_battle_5|乌骨陆队长把他强大的兽人军团屯在了西方，很明显，他决心要进行一次攻击性的行动，比如掠夺。如果他能拿下这个矮人的要塞，他的主人一定会非常高兴的。
+str_custom_battle_6|吉尔纳克和他的兽人部队正拼命地逃离精灵的巡逻队。他们已经避开了几次，但是终于，他们还是和厄运交手。
+str_custom_battle_7|敌人已经把他们的营地建在了刚铎边岸上。让我们抢在他们变得更强之间打击他们，并把那些杂种推下水。是的，那正是他们的归宿。
+str_finished|(完成)
+str_delivered_damage|施加了 {reg60} 點傷害.
+str_archery_target_hit|距離: {reg61}碼. 得分: {reg60}
+str_use_baggage_for_inventory|在戰鬥中你的行李在你開始的地方. 通過行李打開你的物品欄 (這是在你的起始位置). 
+str_cant_use_inventory_now|現在不能打開物品欄. 
+str_cant_use_inventory_arena|不能在這裡打開物品欄. 
+str_cant_use_inventory_disguised|不能在偽裝時打開物品欄. 
+str_cant_use_inventory_tutorial|在訓練營不能打開物品欄. 
+str_1_denar|1個資源點. 
+str_reg1_denars|{reg1} 資源點. 
+str_january_reg1_reg2|T.A.{reg2}, Narvinyë {reg1} (一月)
+str_february_reg1_reg2|T.A.{reg2}, Nénimë {reg1} (二月)
+str_march_reg1_reg2|T.A.{reg2}, Súlìmë {reg1} (三月)
+str_april_reg1_reg2|T.A.{reg2}, Víressë {reg1} (四月)
+str_may_reg1_reg2|T.A.{reg2}, Lótessë {reg1} (五月)
+str_june_reg1_reg2|T.A.{reg2}, Náríë {reg1} (六月)
+str_july_reg1_reg2|T.A.{reg2}, Cermië {reg1} (七月)
+str_august_reg1_reg2|T.A.{reg2}, Urimë {reg1} (八月)
+str_september_reg1_reg2|T.A.{reg2}, Yavannië {reg1} (九月)
+str_october_reg1_reg2|T.A.{reg2}, Narquelië {reg1} (十月)
+str_november_reg1_reg2|T.A.{reg2}, Hísimë {reg1} (十一月)
+str_december_reg1_reg2|T.A.{reg2}, Ringarë {reg1} (十二月)
+str_calendar_spec_day_1|T.A.{reg2}, Yestarë (第一天)
+str_calendar_spec_day_2|T.A.{reg2}, Tuilérë (春日)
+str_calendar_spec_day_3|T.A.{reg2}, Loëndë (年中)
+str_calendar_spec_day_4|T.A.{reg2}, Yáviérë (豐收日)
+str_calendar_spec_day_5|T.A.{reg2}, Mettarë (最後一天)
+str_town_nighttime|現在是深夜, 街上冷清清的. 
+str_door_locked|門鎖上了. 
+str_castle_is_abondened|城堡裡似乎沒人. 
+str_town_is_abondened|鎮子無人駐防. 
+str_place_is_occupied_by_player|這裡被你自己的部隊把守著. 
+str_place_is_occupied_by_enemy|這裡被敵人軍隊所佔據.
+str_place_is_occupied_by_friendly|這裡是盟友所佔據.
+str_do_you_want_to_retreat|你確定要撤退?
+str_give_up_fight|放棄戰鬥嗎?
+str_do_you_wish_to_leave_tutorial|你要離開本教程嗎?
+str_do_you_wish_to_surrender|你要投降嗎?
+str_can_not_retreat|附近還有敵人,不能撤退!
+str_s1_joined_battle_enemy|敌方{s1}加入战斗。
+str_s1_joined_battle_friend|{s1} 加入了你身边的战斗。
+str_entrance_to_town_forbidden|这里的守卫正在搜寻敌人，你没法轻易从大门溜进去。
+str_sneaking_to_town_impossible|这里的守卫警惕性很高，不管你怎么伪装都没法溜进去。
+str_battle_won|你赢得了战斗！
+str_battle_lost|你输掉了战斗！
+str_player_down|你已经倒下了，但是你的部队仍在战斗！
+str_attack_walls_success|在血腥的战斗之后，你的勇敢的士兵们设法爬上敌人的城墙
+str_attack_walls_failure|你的士兵们像狂浪一般冲击着城墙，少数活着的人很快会被打败然后逃跑，永远不会再见到。
+str_attack_walls_continue|血腥的战斗随即而来，双方以同样的勇气来参加战斗。尽管你的部队很努力然而城堡仍在敌人的手中。
+str_order_attack_success|你的勇士勇敢地战斗然后击败敌人。
+str_order_attack_failure|你看着敌人砍翻了你最后一个战士。
+str_order_attack_continue|你的士兵与敌人遭遇，却无法将他们击退。
+str_join_order_attack_success|你的士兵和你的盟军合力打败了敌人。
+str_join_order_attack_failure|你看着敌人砍翻了你最后一个战士。
+str_join_order_attack_continue|你的士兵和盟友一起与敌厮杀，却无法将他们杀光。
+str_siege_defender_order_attack_success|防守方奋勇杀敌，击败了敌人。
+str_siege_defender_order_attack_failure|你绝望的看着围攻的敌人杀死了最后的一个抵抗者。
+str_siege_defender_order_attack_continue|防守方迎击敌人，但最终还是败下阵来。
+str_hero_taken_prisoner|{s3}的{s1}被{s2}俘虏。
+str_hero_freed|{s3}的{s1}被{s2}成功解救。
+str_center_captured|{s2}从{s3}那里夺取了{s1}。
+str_troop_relation_increased|你与{s1}的关系从{reg1}提升到{reg2}。
+str_troop_relation_detoriated|你与{s1}的关系从{reg1}恶化为{reg2}。
+str_faction_relation_increased|你与{s1}的关系从{reg1}提升到{reg2}。
+str_faction_relation_detoriated|你与{s1}的关系从{reg1}恶化为{reg2}。
+str_party_gained_morale|你的部隊獲得了{reg1}士氣
+str_party_lost_morale|你的部隊失去了{reg1}士氣
+str_qst_follow_spy_noticed_you|間諜發現了你！他正在逃跑！
+str_father|父親
+str_husband|丈夫
+str_wife|妻子
+str_daughter|女兒
+str_mother|母親
+str_son|兒子
+str_brother|兄弟
+str_sister|姐妹
+str_he|他
+str_she|她
+str_s3s_s2|{s3}的{s2}
+str_s5_is_s51|{s5}是{s51}
+str_s5_is_the_ruler_of_s51|{s5}是 {s51}的統治者
+str_s5_is_a_nobleman_of_s6|{s5}是 {s6}的貴族
+str_relation_mnus_100|仇恨的
+str_relation_mnus_90|仇恨的
+str_relation_mnus_80|仇恨的
+str_relation_mnus_70|憎恶的
+str_relation_mnus_60|憎恶的
+str_relation_mnus_50|敌对的
+str_relation_mnus_40|生气的
+str_relation_mnus_30|不满的
+str_relation_mnus_20|抱怨的
+str_relation_mnus_10|可疑的
+str_relation_plus_0|冷漠的
+str_relation_plus_10|合作的
+str_relation_plus_20|赞同的
+str_relation_plus_30|善意的
+str_relation_plus_40|支持的
+str_relation_plus_50|友好的
+str_relation_plus_60|亲切的
+str_relation_plus_70|爱慕的
+str_relation_plus_80|忠诚的
+str_relation_plus_90|专注的
+str_relation_mnus_100_ns|{s60}向你报复。
+str_relation_mnus_90_ns|{s60}向你报复。
+str_relation_mnus_80_ns|{s60}向你报复。
+str_relation_mnus_70_ns|{s60}对你很厌恶。
+str_relation_mnus_60_ns|{s60}对你很厌恶。
+str_relation_mnus_50_ns|{s60}对你怀有敌意。
+str_relation_mnus_40_ns|{s60}对你表示很生气。
+str_relation_mnus_30_ns|{s60}对你不满。
+str_relation_mnus_20_ns|{s60}对你有怨言。
+str_relation_mnus_10_ns|{s60}对你表示很怀疑。
+str_relation_plus_0_ns|{s60}对你很冷漠。
+str_relation_plus_10_ns|{s60} 对你有合作的意向。
+str_relation_plus_20_ns|{s60}对你表示欢迎。
+str_relation_plus_30_ns|{s60} 对你很赞许.
+str_relation_plus_40_ns|{s60}对你表示很支持。
+str_relation_plus_50_ns|{s60}对你很友好。
+str_relation_plus_60_ns|{s60}对你很仁慈。
+str_relation_plus_70_ns|{s60}很爱慕你。
+str_relation_plus_80_ns|{s60}忠于你。
+str_relation_plus_90_ns|{s60}专注于你。
+str_relation_reg1|关系：{reg1}
+str_center_relation_mnus_100|民眾十分憎恨你
+str_center_relation_mnus_90|民眾非常憎恨你
+str_center_relation_mnus_80|民眾很憎恨你
+str_center_relation_mnus_70|民眾恨你
+str_center_relation_mnus_60|民眾比較討厭你
+str_center_relation_mnus_50|当地居民狠狠地盯着你
+str_center_relation_mnus_40|当地居民非常讨厌你
+str_center_relation_mnus_30|当地居民开始厌恶你
+str_center_relation_mnus_20|当地居民警惕地看着你
+str_center_relation_mnus_10|当地居民意味深长地看着你
+str_center_relation_plus_0|当地居民面无表情地看着你
+str_center_relation_plus_10|当地居民开始接受你
+str_center_relation_plus_20|当地居民友善地看着你
+str_center_relation_plus_30|当地居民亲切地看着你
+str_center_relation_plus_40|当地居民热切地望着你
+str_center_relation_plus_50|当地居民对你交口称赞
+str_center_relation_plus_60|当地居民非常支持你
+str_center_relation_plus_70|当地居民非常尊敬你
+str_center_relation_plus_80|当地居民为你欢呼
+str_center_relation_plus_90|当地居民对你忠心耿耿
+str_town_prosperity_0|{s60}镇的贫穷到了不可忍受的地步。
+str_town_prosperity_10|{s60}镇看起来相当贫穷且凄凉。
+str_town_prosperity_20|{s60}镇看起来非常贫穷且荒芜。
+str_town_prosperity_30|{s60}镇看起来很贫穷且被忽视。
+str_town_prosperity_40|{s60}镇看起来有点贫穷且在奋斗中。
+str_town_prosperity_50|{s60}镇似乎很不起眼。
+str_town_prosperity_60|{s60}镇似乎很繁荣。
+str_town_prosperity_70|{s60}镇似乎非常有活力。
+str_town_prosperity_80|{s60}镇看起来很富有而且很气派。
+str_town_prosperity_90|{s60}镇看起来非常富有而且物质丰富。
+str_town_prosperity_100|{s60}镇看起来极其富有而且富丽堂皇。
+str_village_prosperity_0|{s60}村的贫穷到了不可忍受的地步。
+str_village_prosperity_10|{s60}村看起来相当贫穷且凄凉。\n
+str_village_prosperity_20|{s60}村看起来非常贫穷且荒芜。\n
+str_village_prosperity_30|{s60}村看起来很贫穷且被忽视。
+str_village_prosperity_40|{s60}村看起来有点贫穷且在奋斗中。
+str_village_prosperity_50|{s60}村似乎很不起眼。
+str_village_prosperity_60|{s60}村似乎很繁荣。
+str_village_prosperity_70|{s60}村似乎非常有活力。
+str_village_prosperity_80|{s60}村看起来很富有而且很气派。
+str_village_prosperity_90|{s60}村看起来非常富有而且物质丰富。
+str_village_prosperity_100|{s60}村看起来极其富有而且物质丰富。
+str_war_report_minus_4|我们几乎要输掉这场战争了
+str_war_report_minus_3|现在的形势看起来有些严峻
+str_war_report_minus_2|事情進展得不太順利
+str_war_report_minus_1|如果我們振作起來依舊能贏得這場戰爭
+str_war_report_0|我們與敵人打得不相上下
+str_war_report_plus_1|我們有等同的機會贏得戰爭
+str_war_report_plus_2|事態正變得好轉
+str_war_report_plus_3|打敗他們不費吹灰之力
+str_war_report_plus_4|我們快要贏得戰爭了
+str_persuasion_summary_very_bad|你尽最大努力去说服{s50}，但是你没有一个论证是正确的。每次你开始想使表达的东西变得有意义，但是你说的东西似乎都是彻底错误的，以至于使你自己的思路都断了。当你结束交涉的时候，你都没能把你认同的某一个观点表达清楚，而且你意识到你所做的一切是在把自己推进一个越挖越深的大坑里。毫不奇怪，{s50}完全不为你动。
+str_persuasion_summary_bad|你试着说服{s50}，但是{reg51?她:他}从最开始起就提防着你。你再好的辩论对于你自己的耳朵而言也还是那么空洞。{s50}同样也没能从你说的东西看出什么高见。
+str_persuasion_summary_average|{s50}被证实是一个有着尖锐思想且很能辩论的人，你基本就没有办法使{reg51?她:他}反过来接受你的任何观点。最终，在这场辩论中，你们两人都没能使对方偏向各自的立场。
+str_persuasion_summary_good|凭借敏捷的思维和流畅的辩论，你设法把你的观点论证得很好，迫使{s50}认同你的一些观点。然而{reg51?她:他}仍然对你的要求表示怀疑。
+str_persuasion_summary_very_good|你富有激情的演讲像诗歌一样在听众耳朵里回想。整个世界似乎都安静下来以便更清楚地听你演讲。这些激励人心的话语把{s50}深深打动了，{reg51?她:他}看起来非常乐意帮助你。
+str_surname_1|{s50}个泰诺斯特
+str_surname_2|{s50}个罗萨那奇
+str_surname_3|{s50}个伊尔特
+str_surname_4|{s50}个埃德和洛戈
+str_surname_5|{s50}个欧洛莱基尔
+str_surname_6|{s50}个林希尔
+str_surname_7|{s50}个厄特林
+str_surname_8|{s50}个奥尔伯格
+str_surname_9|{s50}个艾辛格
+str_surname_10|{s50}个西安诺瑞安
+str_surname_11|{s50}个依鲁伯
+str_surname_12|{s50}个东安诺瑞安
+str_surname_13|{s50}个摩拉南
+; str_surname_14|{s50} of Cirith Ungol
+; str_surname_15|{s50} of Osgiliath
+str_surname_16|{s50}个摩瑞亚
+; str_surname_17|{s50} of Dale
+; str_surname_18|{s50} of Esgaroth
+str_surname_19|{s50}个多尔戈多
+str_surname_20|{s50}个刚达巴山
+str_surname_21|高个的{s50}
+str_surname_22|瘦弱的{s50}
+str_surname_23|苗条的{s50}
+str_surname_24|精瘦的{s50}
+str_surname_25|贫穷的{s50}
+str_surname_26|丑陋的{s50}
+str_surname_27|诚实的{s50}
+str_surname_28|可怕的{s50}
+str_surname_29|激进的{s50}
+str_surname_30|阴险的{s50}
+str_surname_31|高个的{s50}
+; str_surname_32|{s50} the Star-Eyed
+; str_surname_33|{s50} the Fearless
+; str_surname_34|{s50} the Tree-biter
+str_surname_35|狡猾的{s50}
+; str_surname_36|{s50} the Coward
+; str_surname_37|{s50} the Bright
+; str_surname_38|{s50} the Quick
+; str_surname_39|{s50} the Minstrel
+; str_surname_40|{s50} the Bold
+; str_surname_41|{s50} the Hot-Head
+str_number_of_troops_killed_reg1|杀敌数：{reg1}
+str_number_of_troops_wounded_reg1|伤敌数：{reg1}
+str_number_of_own_troops_killed_reg1|我方阵亡：{reg1}
+str_number_of_own_troops_wounded_reg1|我方受伤：{reg1}
+str_retreat|撤！
+str_siege_continues|继续战斗……
+str_casualty_display|我方伤亡：{s10}^敌方伤亡：{s11}^{s12}
+str_casualty_display_hp|你受到{reg1}点伤害。
+str_quest_log_updated|任务日志更新……
+str_banner_selection_text|你被授予携带旗帜的权利。旗帜是身份与荣耀的象征。你想选择哪种旗帜？
+str_retirement_text_1|当你意识到你将入不敷出的时候已经晚了。即使精打细算你也很快花光了身上所有的钱，而你在窘困中进行了几次令人绝望的努力企图重新开始自己的冒险。最后你在{s9}城里当了个乞丐，靠接济和教堂的施舍过活。
+str_retirement_text_2|当你意识到你将入不敷出的时候已经晚了。即使精打细算你也很快花光了身上所有的钱。当你的钱很快地在你的手中消失你被迫开始了在{s9}城的后街小巷里的犯罪生涯，用你的那点能耐靠打劫妇女以及贫穷的市民勉强维持生活。
+str_retirement_text_3|当你意识到你将入不敷出的时候已经晚了。即使精打细算你也很快花光了身上所有的钱，最后作为一个身无分文的流浪者，从一个酒馆漂流到另一个酒馆，靠讲些没人相信的战争故事来讨口酒喝。
+str_retirement_text_4|你存下来的钱并不能维持多久，但是你想办法凑了足够的钱在{s7}村庄的附近买了一小片地。当上了自由农。很快你就吸引了未来的{妻子/丈夫}。现在你就成了当地的英雄。你时常在宴会上得到人们的尊重，而你的冒险经历在酒馆和客栈一遍又一遍地被人们口口相传，所以孩子们将永远记得你的事迹。
+str_retirement_text_5|你存下来的钱并不能维持多久，不过还是够用来在{s9}城买个小酒馆。尽管当地人一开始对你有所提防，他们很快就接受容纳了你。现在你让酒馆成了一个受欢迎的宴会和见面场所。人们从数英里以外赶来吃饭和留宿，因为他们都被你绝对的声望和你所说的那些冒险岁月里眼花缭乱的故事迷住了。
+str_retirement_text_6|你在你的冒险生涯中精明地存下钱来，而现在你的银子和你的聪明才智让你进行了一些极好的投资来巩固你的未来。收购了{s9}城的几个铺子和仓库之后，你的机智让你成为城里最为卓越的商人之一，并且你很快成为一个富有的{人/人}，你的贸易帝国就像你的战争事迹一样闻名。
+str_retirement_text_7|作为一个有封地的贵族，不管封地有多小，你的未来也差不多可以确定了。你迁入了你的领地{s7}，主宰着村庄和农田，支配着地方法院并且向你的君主履行着你的义务。有时候你的君主召集你并且在他的战役中听命，但是这些日常工作还是简单的，而你再也没有真正回到你年轻时候的冒险经历。你已经置下大笔财富。因为拥有自己的领主大厅和领地，除了你健康的体魄和自己的领地所能给予给你的以外，你也没有别的奢求了。
+str_retirement_text_8|毫无疑问，你为你自己做的非常好。你广阔的领地和积累的财富足够保证你在余下的日子里过着富足而省心的生活。退休在你的封地{s8}，你改变你的冒险生涯而转向政治，很快你就在你君主的王国里面建立了自己相当可观的权威。随着自己的兴趣爱好忙碌，在自己的林地里打猎，在领主大厅里大摆宴席，以及吹嘘着上百个耐听的战争事迹，你无忧无虑地让剩余的每一年都过的有滋有味。
+str_retirement_text_9|作为你得力和忠心服务的回报，你的君主宣布你被授予一个世袭的头衔，加入了士族最显赫的贵族圈。很快你完成了作为{s7}男爵的授勋仪式，并且你成为了你君主的近臣和副手之一。你蕴藏的声望给予了你很多无形的影响力进而成为你公开的政治能力。现在你在权力游戏之中消磨时光，管理着你巨大的封地，并且叙述着当年的冒险与光荣。
+str_retirement_text_10|尽管你出身卑微，你的君主却对你尊重有加，当他赐予你{s9}城的{伯爵/女伯爵}世袭头衔的时候在当地士族中引起了轩然大波。巨大的封地和财富现在供你支配。你很快成为了你的君主最信任的谋臣，几乎和他平起平坐并且处理他领土的大部分事务，而且作为中土大陆最有权势的角色你在你那光彩夺目的宫殿里安放了一个与之相配的王座。
+str_loot_village|攻击无辜的村民
+str_steal_from_villagers|偷窃贫穷村民的东西
+str_rob_caravan|抢夺商队
+str_sell_slavery|买卖人口
+str_men_hungry|部队缺少食物
+str_men_unpaid|不够支付薪水给部队
+str_excessive_casualties|让每场战斗在我方来说只是用敌人鲜血洗澡
+str_surrender|投降
+str_flee_battle|逃跑
+str_pay_bandits|缴过路费
+str_fail_quest|一个以荣誉担保的任务失败了
+str_squander_money|托管的钱被浪费了
+str_murder_merchant|我们将自己陷于冷血的谋杀
+str_round_up_serfs|代表贵族围捕奴隶
+str_battle_fate_1|战斗最激烈的时刻我们分散了
+str_battle_fate_2|我受了重伤，躺着等死
+str_battle_fate_3|我被击昏了
+str_battle_fate_4|我被俘虏并悬出赎金
+str_battle_fate_5|我被俘虏，不久找了个机会逃跑了
+str_npc_morale_report|我{s6}你选择的同伴，{s7}你的领导风格，{s8}现在总体的情况
+str_happy|喜欢
+str_content|满足于
+str_concerned|关心
+str_not_happy|一点都不喜欢
+str_miserable|特别害怕
+str_morale_reg1|士气：{reg1}
+str_bar_enthusiastic|热情
+str_bar_content|满足
+str_bar_weary|厌倦
+str_bar_disgruntled|不满
+str_bar_miserable|害怕
+str_here_plus_space|这里
+str_npc1_intro|你好，战士，欢迎来到落日之窗！
+str_npc2_intro|你好！请允许我问你来这儿的目的。
+str_npc3_intro|哦噢！请保持安静，旅行者。
+str_npc4_intro|欢迎来到黄金宫，战士！
+str_npc5_intro|嘿！你好，{playername}。
+str_npc6_intro|离我远点，陌生人！我可不希望和你说话！
+str_npc7_intro|我是凯利，德瓦林的儿子。为您服务是我的荣幸！
+str_npc8_intro|迎来到伊顿河谷，旅行者！有什么我可以做的吗？
+str_npc9_intro|嘘。。。如果你引来什么治安官，我会先把你切成肉丝去喂虫！
+str_npc10_intro|你！
+; str_npc11_intro|Ar! You're not from around here are you? I can smell it, an' if you say I can't in front of the Bosses I'll squeeze your eyes out!
+; str_npc12_intro|Oho! What are you doing, lurking up here?
+; str_npc13_intro|Hold there! What brings you to the Chieftain's tent?
+; str_npc14_intro|You have the walk of a man whose legs have seen too few days at sea, stranger.
+; str_npc15_intro|Praise the Eye, oh Warrior!
+; str_npc16_intro|It is not often one strange to my eyes walks among tents of the eastern lands. What brings you here? Speak now and be swift.
+; str_npc17_intro|Hey. Fancy them woods there?
+; str_npc1_intro_response_1|Hail, Master Tracker. How fare the Rangers of the South?
+; str_npc2_intro_response_1|My business is Gondor's business, and who are you?
+; str_npc3_intro_response_1|And a good day to you too, is there something amiss?
+; str_npc4_intro_response_1|Greetings, my Lady. With whom do I have the honour to speak?
+; str_npc5_intro_response_1|Hail Elf-lord! It's a great honour to meet you.
+; str_npc6_intro_response_1|Is this how the Silvan Elves greet their guests?
+str_npc7_intro_response_1|为您服务{playername}。都灵的人们怎么样？
+str_npc8_intro_response_1|您好！我在想这里有没有一些志愿者想要加入到我们的冒险旅途里？
+str_npc9_intro_response_1|不要来威胁我，强兽人！我不是个告密者！
+str_npc10_intro_response_1|你是谁？
+str_npc11_intro_response_1|你是谁？
+str_npc12_intro_response_1|你是谁？
+str_npc13_intro_response_1|你是谁？
+str_npc14_intro_response_1|你是谁？
+; str_npc15_intro_response_1|Praise the Eye, Snaga. What's your story?
+str_npc16_intro_response_1|你是谁？
+; str_npc17_intro_response_1|Mirkwood is a magnificent forest. Who are you? Do you know much about the woods?
+str_npc1_intro_response_2|嗯，算了。我不喜欢这样的洞穴，也不想在这儿说话。
+str_npc2_intro_response_2|算了，我可没时间和一个守卫说话。
+str_npc3_intro_response_2|算了，我会在其他地方找到我要的。
+str_npc4_intro_response_2|对不起，我还有事。
+str_npc5_intro_response_2|对不起，我还有其他的安排。
+str_npc6_intro_response_2|嗯。。。我觉得我该走了。再见！
+str_npc7_intro_response_2|别在意，我只是想呼吸下新鲜空气。
+str_npc8_intro_response_2|别在意，我只不过在这转转，看看风景。
+str_npc9_intro_response_2|我必须上路了，否则我握着剑的手臂会发痒，所以我还是走吧！
+str_npc10_intro_response_2|[无视并离开]
+; str_npc11_intro_response_2|Mind your business, maggot!
+; str_npc12_intro_response_2|Mind your business, maggot!
+; str_npc13_intro_response_2|Mind your business!
+; str_npc14_intro_response_2|Mind your business!
+; str_npc15_intro_response_2|Hmmf. Keep your little claws to yourself, Snaga.
+; str_npc16_intro_response_2|Mind your business!
+str_npc17_intro_response_2|是的，这片森林很讨我喜欢，不过我还有事，必须走了。
+str_npc1_backstory_a|你来得不是时候啊，我的朋友。伊西立安被敌人的部队“淹没”了。有些人看到兽人庞大的战队正在有所行动。我们要试着越过大河并对敌人采取行动。我会带领一队精锐的游侠部队来完成这次行动。我的长官法拉墨先生有着许多雄伟的计划来使正义的一方取得优势，而我不会在这时躲在后面的！
+str_npc2_backstory_a|啊，您居然如此优雅想来了解我！我是刚刚加入他的麾下，成为了一个守卫兼管理员。我非常骄傲我能为他效力！
+str_npc3_backstory_a|唔……我怎么觉得今天我的头盔那么不舒服……或许是我的头不舒服……看来现在我不适合去舞剑啥的。唉，如果我昨天晚上没有喝那么多酒……我的酒量一向不错啊，那酒里说不定掺杂了什么半兽人的东西……
+str_npc4_backstory_a|我的名字是格拉密尔。让我告诉你我的故事吧！
+str_npc5_backstory_a|你或许听说过我的事迹。这场战争给精灵族带来了很多的危险。而我相信这将是最后一场战争，我们这族的兴衰就看此一役。
+str_npc6_backstory_a|原谅我的直率，陌生人。不过我们这里没有太多访客，而来的似乎都对我们不怀好意。上周，这个矮人出现。。。对不起，我说多了。我的名字叫做鲁瓦纳。幽暗森林的一个精灵。
+str_npc7_backstory_a|你非常有礼貌，{playername}。我们正在与兽人们战斗，不过到现在我们的军队和河谷镇的盟友们还可以掌握局势。
+str_npc8_backstory_a|我相信你会找到一些你正需要的志愿者，去问问兵营的长官，他们总是乐意把一些待命的新兵交给一些有经验且值得信任的军士。不过我和那些新兵不同，我是一个擅长草药学的医生，或许我会加入一支军队来完成我的事业，赚取一些名利。。。
+str_npc9_backstory_a|好啊！我的名字叫古拉姆。我以前带着一些战士在外游击。有一次我们撞上了人类的部队，我记得那个不要脸的懦夫从前面夹着尾巴逃回来，嘴里大喊着：“快跑！！！”我和其他几个坚守者在敌人冲锋时刺倒了他们的马，然后后来他们被迫后撤，我也扛着几个敌人的尸体全身而退。哈哈！要不是我的坚持，我们可要全军覆没，成了那些食腐虫的食物了。哈哈！
+str_npc10_backstory_a|我是
+; str_npc11_backstory_a|Nar! Not a tracker, that's who. They threw me out! I tell you they've lost their heads, that's what it is. Curse 'em! First they say I shoot wild, then I run too slow, and then I have a useless snuffler. Garn! If they don't find a rabble for me soon I'll be for the Black Pits, if what I hear is true. I'll make sure some of those Bosses lose their skins sooner than putting me in there!
+; str_npc12_backstory_a|I'm in command of a band of lads up here. I'm Gorbag and you'd best learn quick lubber us Uruks are the real bosses 'round here. The Big Bosses makes slips, 'ay, even the Biggest can make mistakes, and always the poor Uruks to put slips right, and small thanks. They don't even tell us all they know, do they? Not by half. Grr!
+; str_npc13_backstory_a|I? I am a grain of soil from southern sands, blown north by cold and dark night winds. I am Lykyada, a Serpent Lord of Haradwaith. Lord of the Gold Serpent, bane of the Black Serpent Tribe, now allied to serve the will of the Dark Lord.
+; str_npc14_backstory_a|I am Fuldimir, son of the southern realm of Umbar, south of Harondor, and the Bay of Belfalas, for both are home to my heart and my people. We are the lords of sea and sail, corsairs to some, kin of the Bay of Belfalas for her waters we tame.
+; str_npc15_backstory_a|I am Bolzog the Gifted, Setter of Bones, Closer of Cuts, and Shaman of Healing. If you go to war for The Eye, you will no doubt have one or other of your little fellows cut about a bit by pale-faced foresters or the horse-lovers. Now, -nar-nar-nar! - Orcs are easy to replace, Oh Great Leader, but can you replace a Warg? A Giant? A Cave Troll? Shi-shi! No! You need me, the Great Bolzog!
+; str_npc16_backstory_a|Well now, it is the stranger who should declare himself first. Nevertheless, I am Varfang of the Balcoth kin... I can tell that you have not yet heard the songs or tales of my land that speak the name of the Balcoth, for the very name would check your courage and fill your heart with woe.
+; str_npc17_backstory_a|They call me Dímborn and I work in the woods. It is nice there. I like the woods. Many trees in the woods. I like trees. I've worked in the woods all my life, because I am strong and because I like trees.
+; str_npc1_backstory_b|You should know that I am an Ithilien Ranger of Dúnedain descent and valor. I know much of tracking and scouting and my skill with bow and sword is known to the orc. I can also train any soul that's willing to fight the coming Shadow.
+; str_npc2_backstory_b|I have been trained as a Minas Tirith watchman, to keep order in the White City and serve my lord Steward.
+; str_npc3_backstory_b|I am a Rider of the West Emnet éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
+; str_npc4_backstory_b|I was born into a noble family and I have been serving Lady Éowyn as a maid of honour ever since we were little girls. Our fathers were wise enough to allow us to train alongside our brothers in matters of combat, to become shieldmaidens of Rohan.
+; str_npc5_backstory_b|Lord Elrond sent me as an emissary to Lord Celeborn, to give aid and advice as it's needed in the War in this part of Rhovanion.
+; str_npc6_backstory_b|I like to walk the hidden paths in our beautiful forest. Sometimes I move quietly through the trees and observe the habits of the many woodland animals. The song of a rare bird, the nesting of a wild boar are as beautiful to me as the clash of weapons and great walls are to the Edain.
+; str_npc7_backstory_b|I helped improve the Erebor defenses and trained some younger dwarven folk, under the direction of my venerated father Dwalin, as is our custom.
+; str_npc8_backstory_b|I have treated my King Brand for constipation, a common malaise affecting men going to war. A light brew of wormwood, and both the bowels and the mind are put at ease.
+; str_npc9_backstory_b|So I said to myself, 'Gulm, you want end up as carrion?' and I answered, 'No'.^Next battle, I fell back pretending I was injured. Then, with no one watching, I fell upon my sergeant! Cleaved him almost in half, gharr! Then cut his sidekick snaga nicely^^...Turned out that bloody creeper survived somehow, and started waggling his tongue about all this. Next time I make sure his head is off, gharr...
+str_npc10_backstory_b|我是艾辛格的一个狼骑士，或者说我是一个跟踪专家。
+; str_npc11_backstory_b|Ar! It's only 'cause my nose was snotty. An' what good is it wearing my nose out on stones anyhow? Nar! It was those filthy Uruks! Those cursed peaching sneakthiefs! I only lost the scent through giving way to them. They messed up the scent back there, pinching anything they found, and stomping all round the place before I could get there.
+; str_npc12_backstory_b|And those Nazgul give me the creeps. And they skin the body off you as soon as look at you, and leave you all cold in the dark on the other side. But He likes 'em; they're His favourites nowadays, so it's no use grumbling. I tell you, it's no game serving in the city. I'd like to try somewhere where there's none of 'em.
+; str_npc13_backstory_b|I saw of late the word of the Dark Lord spread among my kin, and in their hearts and minds his will crept. Most were drawn to his darkness, and in place of their courage grew an insatiable lust for slaughter so that when their ears heard his call few puppets were so willing to answer.
+; str_npc14_backstory_b|There is much change in a man who rides the tumult of the winds and seas of the Belfalas waters, and those yet to battle her will are but children. For stout men are they who meet her tempest and ride her storm. I have laid eyes on her darkest tide and yet remain her master.
+; str_npc15_backstory_b|Many moons ago, when I was just a fresh little thing, my Grandsire led the tribe down into the mines, where the dwarves had recently died. A Fire Wraith had passed through, and it was comfortable and warm. We prospered, but every so often some cruel adventurer, or Dwarf hero, would come and kill and maim us in our peaceful tunnels. My hands learned to close the wound of sword or axe, and my mind learned to see the outline of bone and sinew below any hide. These days, I can work a potion or set a break with equal skill.
+; str_npc16_backstory_b|The Balcoth were a fierce race of men from my home land, slaughtered by these westerlings to all but a few men. Chased down like beasts of burden as food for their blades. The blood spilt by those blades is the same blood that flows within me, for within me their house continues.
+; str_npc17_backstory_b|You can make many things out of the trees, you know. It's what I do. I work with trees and make things out of trees. Sometimes bushes also. But I like trees more.
+; str_npc1_backstory_c|However, I fear we are hopelessly outnumbered here in Ithilien and we won't last long without reinforcements or bolder action by our Steward. I might as well help where my actions would account for more, if my Captain Faramir gives me leave.
+; str_npc2_backstory_c|However important my duty here is, I'm quite anxious to see real combat and... elves and talking trees and oliphaunts! You seem well-travelled, commander, and I don't mean that as a slight on your appearance, not by a fathom. I learn quickly and can cook... well, good enough for soldiers that is. Am I not mistaken that you are looking for volunteers?
+; str_npc3_backstory_c|So, here I am, disgraced and bitter. My éored must be miles away now, and I wouldn't have a fair chance of catching up with them, not with all the orcs and wildmen roaming the plains. Are you by any chance in need of a fine Rohirrim rider?
+; str_npc4_backstory_c|You might know that women, however skilled, are not allowed to ride with the éoredas. However, I do not think that waiting by the hearth for the warriors to return is my fate. I will not sit idle until all chance of great deeds is gone in this War, and I would welcome your assistance, warrior.
+; str_npc5_backstory_c|However, if the enemies of Lothlórien are on the run, I might consider joining you for a while, {playername}. I sense our fates in this War are interwoven.
+; str_npc6_backstory_c|You wouldn't understand that, I think, seeing you prepared for war. But you must have travelled far and wide - have you seen the other great forests? Can you take me there?
+; str_npc7_backstory_c|There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival.
+; str_npc8_backstory_c|I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all.
+; str_npc9_backstory_c|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.^^I would come with you and hunt men in the south, while the snagas of Isengard gnash their teeth.
+str_npc10_backstory_c|或许您能当我的下一位主人！
+; str_npc11_backstory_c|All right, all right! My nose isn't much use. I reckon my eyes are better than my nose. Ai! But my nose is only no good cause it don't know what nothing smells like. It don't even know what it's looking for, I tell you. Ar! I just need to go lopin' off and start sniffing places.
+; str_npc12_backstory_c|Eh, if I get a chance, I'll slip off and set up somewhere on my own with a few trusty lads, somewhere there's good loot nice and handy, and no big bosses. I'd like to try somewhere where there's none of 'em, like old times.
+; str_npc13_backstory_c|I followed my kin north, and heeded his dark call, to fulfill the duty I have to my people. But in them I see his darkness dwell and I seek to do my part in this war elsewhere, until the sands of my time no longer fall. Even now I feel them begin to trickle where before there was a cascade.
+; str_npc14_backstory_c|But there comes yet the darkest tide, a black tide of shadow, which will rise over these lands such as which no mortal eyes will have seen. This is the tide I seek to master, but I am without a crew hardy enough to ride this storm.
+; str_npc15_backstory_c|After many winters I came up out of the tunnels, and looked about in the Dark Forests for a good place to live and practice my arts. I was doing fine, until some big ugly bastards with white tattoos – eugh! White! Like an elf face! – big bastards, they were. They fired my little place in the Forest, and I had to hide in the caves again... In here... Say, have you anything to eat? Maybe a nice horse?
+; str_npc16_backstory_c|That was many lives of men ago, a different time, but the time for grief and tales are over. The time for my people's retribution has come and I will carve my people's vengeance on the face of these western lands. By my hand, their homes will waste and wither until their clan is no more!
+; str_npc17_backstory_c|If you're going into the forest, maybe I come along and tell you about the trees there? Many very interesting trees there, you know.
+str_npc1_backstory_later|我之前带着一队侦查队去了南方。那里有许多活跃的敌人，我们也袭击了不少落单的小股敌人。不过我们发现了敌人集结的一个大队。只要那支大部队不解散，它可以打下任何一个人类或精灵的孤立无援的城堡。我对我们和我们的盟友刚铎、洛汗感到不安。
+str_npc2_backstory_later|我们最近只来了几个访客，而且越来越少，上次和您的对话我依然记忆犹新。
+str_npc3_backstory_later|唉，我还是没什么成就，不过我倒是碾碎了不少的兽人。
+str_npc4_backstory_later|更多的骑手拖着他们残破的身躯回来了，我一直尽我所能去救治他们。不过我还是觉得我太无所事事了，我还是该走出这里,出去征战。
+str_npc5_backstory_later|您重新考虑过了吗？我们的时间不多了。
+str_npc6_backstory_later|我在过去的一段时间观察了大蜘蛛的巢穴。啊，那个好丑。。。您是回来问我要不要加入您的吗？
+str_npc7_backstory_later|建起防御的城墙对所有矮人都有好处。不过我还是不想就这样抛下我的战斧！我随时都准备好跟随一个像您这样的战士出去战斗。
+str_npc8_backstory_later|哎，我还是有胃痛和呕吐的病啊。医生说我需要多活动，或许您愿意带上我。我不会成为累赘的。
+str_npc9_backstory_later|你觉得我该干什么。古拉姆正坐在这儿等着他的奴隶出现。带上我吧，我会好好服侍你的。
+str_npc10_backstory_later|您回心转意了吗？我会好好服侍您的！
+; str_npc11_backstory_later|Ar! It was you! I smelt you, I knew you were coming. Tell the Bosses that, will ya? They think since I was kicked out of the trackers that it's safe to flout me, well they're mistaken, I'll put an arrow in their guts first. And whose blames was that? Not mine!
+; str_npc12_backstory_later|I have my orders. Any trespasser found by my lads up here are to be stripped; teeth, nails, hair and all. But I've got my watchers. We know there are funny things going on: with the big bosses going off to war, and all that. Big things going on away west, they say. Sitting here doin' nothing is more than my belly's worth.
+; str_npc13_backstory_later|My role here goes well for the dark cause, and once more the Northerners fear the south. I see great victories ahead, and rivers of blood left in our wake. But with each victory I see my kin corrupted, their hearts twisted to his evil will. The sight of it leads me to despair.
+; str_npc14_backstory_later|You have returned stranger, it is perhaps an omen. I have been reading the waters, and I have seen them darken. The sea changes the eyes of a man, and teaches him to use his eyes to listen to her language.
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions.   Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
+; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balcoth before us.
+; str_npc17_backstory_later|I've seen a very old pine the other day. Pines can get very old. You have to respect old trees. But I've also seen some that don't respect trees at all. You respect trees, don't you?
+str_npc1_backstory_response_1|如果你能离开这儿，我很乐意拥有一个经验老到的战士在我的队伍中。
+str_npc2_backstory_response_1|你是对的，我正在找像你这样的志愿者。
+str_npc3_backstory_response_1|如果你以后不再喝那么多的酒，我很乐意带上你这样好的骑手。
+str_npc4_backstory_response_1|我欢迎一个洛汗女盾手的加入，如果您乐意。
+str_npc5_backstory_response_1|可能我对你的要求有些冒昧，但是我的部队在接下来的战役中需要你的才能。
+str_npc6_backstory_response_1|我们环游整个中土大陆，不过当邪恶想要打破平衡时，我们给他们带去战争！
+str_npc7_backstory_response_1|诚然，一个矮人战士是我们非常欢迎的。
+str_npc8_backstory_response_1|我们需要你这样的医生。
+str_npc9_backstory_response_1|噢，狂战士，只要你乐意，欢迎入伍！
+str_npc10_backstory_response_1|你会的。
+; str_npc11_backstory_response_1|How 'bout loping off with me?
+; str_npc12_backstory_response_1|How 'bout slippin' off with me.
+str_npc13_backstory_response_1|跟随我如何？
+str_npc14_backstory_response_1|加入我如何？
+; str_npc15_backstory_response_1|Aha... A healer, heh? And you are good at it, you say? I could use someone like you.
+; str_npc16_backstory_response_1|What are you doing here?
+str_npc17_backstory_response_1|嗯，一个人永远都可以多了解了解树，我们欢迎你的加入。
+str_npc1_backstory_response_2|噢，我很对此很抱歉。祝你好运！
+str_npc2_backstory_response_2|抱歉，我在找经验丰富的战士。
+str_npc3_backstory_response_2|对不起，我需要一个更能信赖的人。
+str_npc4_backstory_response_2|对不起，我的女士，我什么都做不了。
+str_npc5_backstory_response_2|我会等到洛丝萝林更加安全时再回来的。
+str_npc6_backstory_response_2|抱歉，我必须走了。
+; str_npc7_backstory_response_2|No, sorry. We do well on our own.
+; str_npc8_backstory_response_2|No, sorry. We only visit healers when we need them.
+; str_npc9_backstory_response_2|Bah. I don't trust traitors.
+str_npc10_backstory_response_2|我不需要你，奴隶。
+; str_npc11_backstory_response_2|I don't want to hear your skulking.
+; str_npc12_backstory_response_2|The Big Bosses know best. You better follow orders.
+; str_npc13_backstory_response_2|That is your fate to suffer.
+str_npc14_backstory_response_2|我想我们谈够了。
+; str_npc15_backstory_response_2|Bah! I need fighters, not skulkers.
+str_npc16_backstory_response_2|我想我们谈够了。
+; str_npc17_backstory_response_2|No, I'm sorry. We're off to war, not to a botanical journey.
+; str_npc1_signup|I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage.
+; str_npc2_signup|Oh, a happy day! I would be glad to join your company.
+; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
+; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
+; str_npc5_signup|I see. I admit I have heard of you and your exploits.
+; str_npc6_signup|I dislike violence and weapons of war, but I know how to defend myself in a hurry.
+; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
+; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
+; str_npc9_signup|A fighting Uruk is worth more than all your snagas. A fighting Uruk never runs from battle.
+; str_npc10_signup|Really? You would do well to enlist me.
+; str_npc11_signup|Follow your mob Ai? Ar! I hear about all these goings-ons out west, raids and all, and hundreds of our lads done in. I'll come and have a look with you all the same, and see what you're up to.
+; str_npc12_signup|Follow your rabble, 'ay? I may 'ave struck a bit of luck at last. I give a good rumble, I reckon, and my whip is vigilant. It's tasted its fair share of my lads' orc hide.
+; str_npc13_signup|I may follow you if you will have me. My legs make good heading of a horse between them and my hands know well the feel of blades of the crescent moon. My fingers can make fall arrows like the plight of stars upon our enemy, be it on horse or feet, though how I fight will be at your command.
+; str_npc14_signup|Perhaps, know though that I am no thief or brigand. I will not steal, nor take that which other lives may find needed.
+; str_npc15_signup|Heh-heh. You are right! Yeesss! You are wise, Great Captain.
+; str_npc16_signup|I wait for orders, with every second passing darkening my heart. I can no longer stand to wait for the plans of far away lords and captains so unseen their existence is believed more in legend than in flesh. Lords whose whispered orders are brought forth and shouted by lesser men. I wait, and with me, my people's vengeance waits also.
+; str_npc17_signup|Very good! I know many trees. Soon you will know many trees too. Like me. Because I know many trees.
+; str_npc1_signup_2|It would take a moment to talk to my Captain and gather my things.
+; str_npc2_signup_2|I'll need to talk to my Sergeant first and then off we go - there are glorious battles to be fought and all manners of strange creatures to see!
+; str_npc3_signup_2|I've been waiting for someone to take me on, so I only need to saddle up my horse and we are ready to ride.
+; str_npc4_signup_2|I have hunted game many times with bows and throwing spears. I will hunt orc under your command. And I have some skill in healing I'm certain will be needed.
+; str_npc5_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
+; str_npc6_signup_2|Perhaps I can teach you to move faster and make less noise. Let's go.
+; str_npc7_signup_2|If you can keep the tall-folk in your company in line, especially the sneaky Elves, I'll gladly join you.
+; str_npc8_signup_2|I must warn you though, I am fairly useless in battle. But I'm sure you are able to keep a woman of my age safe.
+; str_npc9_signup_2|But you must decide quickly, the guards here are getting suspicious.
+; str_npc10_signup_2|You won't regret taking me on.
+; str_npc11_signup_2|Lots of stuff out there for my nose to smell too, and my knife to taste. They don't know too much now but they're quick learners alright. What d'you say?
+; str_npc12_signup_2|I'll show your slugs where there's a whip there's a will and give 'em as much lash as their skins will carry. If your lads take it well it should put 'em in a good trot. What d'you say?
+; str_npc13_signup_2|Know, though, that my loyalty lie always with my kin. I have fought this far and lost too much for them. I will not turn my back on them for their fate will be my own.
+; str_npc14_signup_2|It is just fortunate that those no longer of this world find no need of this world's treasures and I am fortunate to be skilled in ways that I may assist in relieving the worldly needs of the owners of those treasures.
+; str_npc15_signup_2|Oh, this is a great moment for Bolzog The Gifted, and for you, Great Lord! We shall conquer together, you, indestructible with my healing touch, and I, the Great Orc Sage who shall support you!
+; str_npc16_signup_2|I fear that I will not wait any longer. I intend on joining the next party to leave camp, with my Chieftain's approval or not. I fear the war will be over long ere I leave to join it.
+; str_npc17_signup_2|I'll just get some of my tools, and we can be off. There is this oak just down the road I must show you!
+str_npc1_signup_response_1|我会需要一个经验丰富的游侠的，欢迎您的加入。
+str_npc2_signup_response_1|非常好，我们需要你
+str_npc3_signup_response_1|太棒了，准备好，我们就要开拔了。
+str_npc4_signup_response_1|这太感人了我的女士，我们马上就出发。
+str_npc5_signup_response_1|我们的部队很荣幸有您的存在。
+str_npc6_signup_response_1|非常好，不过我可不想看到你一见半兽人就跑了。
+str_npc7_signup_response_1|非常好，矮人先生，我们欢迎您。
+str_npc8_signup_response_1|您与我们在一起非常安全。准备好，我们就要出发了。
+str_npc9_signup_response_1|非常好，如果你能做到你所说的，我会好好犒劳你的。
+str_npc10_signup_response_1|非常好，我们走吧。
+str_npc11_signup_response_1|非常好，我们走吧。
+; str_npc12_signup_response_1|I reckon we could put you to good use.
+; str_npc13_signup_response_1|I reckon we could put you to good use.
+str_npc14_signup_response_1|非常好，我们走吧。
+; str_npc15_signup_response_1|Hmmm. I admire your... confidence. Get your gear together.
+str_npc16_signup_response_1|跟随我如何？
+; str_npc17_signup_response_1|Great! I hope you won't talk of trees all the time though.
+; str_npc1_signup_response_2|I have no need of your company at the moment, good luck to you.
+str_npc2_signup_response_2|对不起，我改主意了。
+str_npc3_signup_response_2|对不起，我改主意了——也许下一次吧。
+str_npc4_signup_response_2|向您道歉，我的女士，或许下次我们会有更好的机缘。
+str_npc5_signup_response_2|三思之后，我觉得您还是守在这里吧。
+str_npc6_signup_response_2|对不起，我还是不能想象您上战场的样子。
+str_npc7_signup_response_2|对不起，我们还是不能让您加入。
+str_npc8_signup_response_2|对不起，我的部队里人人都会战斗。
+str_npc9_signup_response_2|我改主意了，不过我相信很快就会有人再来找你的。
+str_npc10_signup_response_2|我改主意了。
+str_npc11_signup_response_2|我不需要你，奴隶。
+str_npc12_signup_response_2|我改主意了。
+str_npc13_signup_response_2|我改主意了。
+str_npc14_signup_response_2|我改主意了。
+str_npc15_signup_response_2|其实我想找一名真正的医生而不是一个吹牛大王。
+str_npc16_signup_response_2|我想我们谈够了。
+str_npc17_signup_response_2|在另一方面，我觉得我不能带上你。你有点疯啊……
+str_npc1_payment|我很想加入你，可是法拉墨大人会想我的。[需要{reg14}{s14}影响力]
+str_npc2_payment|我怕守备长不会答应我离开的。[需要{reg14}{s14}影响力]
+str_npc3_payment|啊哈，我在这里的酒吧欠了不少帐，看来在付清之前我是走不了了。[需要{reg14}{s14}影响力]
+str_npc4_payment|我很想加入你，可是我走了谁来照顾伤员？[需要{reg14}{s14}影响力]
+str_npc5_payment|虽然我很想跟你走，可是洛丝萝林还需要我。[需要{reg14}{s14}影响力]
+str_npc6_payment|我应该加入你，可是我必须守卫这里。[需要{reg14}{s14}影响力]
+str_npc7_payment|我应该跟您走，可是我怕父亲不能原谅我在需要的时刻离开镇子。[需要{reg14}{s14}影响力]
+str_npc8_payment|我还是不能放弃我的职责，我的国王仍然需要我在这里守卫他。[需要{reg14}{s14}影响力]
+str_npc9_payment|我非常想跟你走，可是我怕门口的守卫不会放行。[需要{reg14}{s14}影响力]
+str_npc10_payment|我很想加入您的队伍，不过我的职责是守卫这里。[需要{reg14}{s14}影响力]
+str_npc11_payment|我的领导恐怕不会安安静静的放我离开的。[需要{reg14}{s14}影响力]
+; str_npc12_payment|Hai! Yoi! I'll need to remind the boys to keep their mangy gobs shut or the High Ups will get my number and 'ave it out for me, they will. [costs {reg14} Influence with {s14}]
+str_npc13_payment|领导不放人啊，你有什么办法说服他们么？[需要{reg14}{s14}影响力]
+; str_npc14_payment|The captain of the Haven will require much persuasion for my leave. Convince him and we shall set sail through this storm. [costs {reg14} Influence with {s14}]
+str_npc15_payment|啊，对，伟大的战士。不过有一点小小的问题需要解决，我在这收到了不公正待遇。有一个不要脸的洞主偷走了我所有的装备，但是我却找不到他。[需要{reg14}{s14}影响力]
+str_npc16_payment|我不能跟你走，我想走自己的路。不过可能我会陪伴你一段时间。不过在此之前我们还需要祭拜一下死去的人们。我们不能忘记祖辈，因为他们没有忘记我们。[需要{reg14}{s14}影响力]
+str_npc17_payment|我很喜欢树，可是我的老叔叔需要我。[需要{reg14}{s14}影响力]
+str_npc1_payment_response|不要紧，我来帮你解决。[需要{reg14}/{reg15}影响力]
+str_npc2_payment_response|别担心，我会向你的上司说明的。[花费{reg14}/{reg15}影响力]
+str_npc3_payment_response|我会解决酒吧老板的，不过这最好值得。[花费{reg14}/{reg15}影响力]
+str_npc4_payment_response|这很伟大，不过一定有办法找到代替你的人。[花费{reg14}/{reg15}影响力]
+str_npc5_payment_response|相信我，你和我在一起更有用。[花费{reg14}/{reg15}影响力]
+str_npc6_payment_response|从今以后，你的职责就是保护我。[花费{reg14}/{reg15}影响力]
+; str_npc7_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
+str_npc8_payment_response|国王的安危虽然重要，可是跟我走你能拯救更多的人。[花费{reg14}/{reg15}影响力]
+str_npc9_payment_response|噢，放心吧，和我在一起的话守卫不会为难你的。[花费{reg14}/{reg15}影响力]
+str_npc10_payment_response|从今往后你的职责就是效忠我。[花费{reg14}/{reg15}影响力]
+str_npc11_payment_response|不用担心你的领导，我会解决的。[花费{reg14}/{reg15}影响力]
+str_npc12_payment_response|我会找人照顾你的孩子的。[花费{reg14}/{reg15}影响力]
+str_npc13_payment_response|他们会明白的，从现在开始我就是你的长官。[花费{reg14}/{reg15}影响力]
+str_npc14_payment_response|你不需要担心你的长官，放心来吧。[花费{reg14}/{reg15}影响力]
+str_npc15_payment_response|装备么？我来帮你拿回来。[花费{reg14}/{reg15}影响力]
+str_npc16_payment_response|我们的祖先的确值得我们尊重。[花费{reg14}/{reg15}影响力]
+str_npc17_payment_response|你的叔叔会过的很好的，现在跟我一起走吧。[花费{reg14}/{reg15}影响力]
+str_npc1_morality_speech|队长，我不能明白你怎能{s21}并抛弃我们的人。法拉墨大人决不会丢下他的游侠们自己逃命。
+str_npc2_morality_speech|我希望您不会介意我说下面的话。但是我实在难以忍受看到我们{s21}。或许我要变得更加冷血一些，但是如果您能。。。更多地关心您的属下，我们都会更加舒心的。
+str_npc3_morality_speech|指挥官，我们从不{s21}。下次希望您能考虑清楚您在做什么。
+; str_npc4_morality_speech|Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor.
+str_npc5_morality_speech|您必须注意您的行动和其后果。{s21}使我和其他战士们脸面无存，而我们的盟友知道了也会失去自信。
+
+str_npc7_morality_speech|我很不高兴您决定{21}。在战场上逃亡使我们这里的所有人都丢了一个战士的荣誉。作为一个矮人，我们是很看重气节的，我不知道我的兄弟们听说了会怎么评价我和您。
+str_npc8_morality_speech|指挥官，我必须说，刚刚您决定{s21}了。我认为您这样落荒而逃反而会折兵损将，而这也是没必要的。我尽一切所能来保护那些受伤的军士们，但愿您以后也会注意一些。
+str_npc9_morality_speech|一个会打仗的强兽人从不{s21}。如果主人您现在还有勇气……或许您就快要失去这宝贵的东西了。这就是我要说的。
+
+
+
+
+
+; str_npc15_morality_speech|You may think that Bolzog the Great can cure all, {playername}, but even I have my limits! If you continue to {s21} even my talent will struggle! You must give me some support! I cannot resurrect the dead, whether they starve or are hacked to pieces!
+
+
+str_npc1_2ary_morality_speech|队长，我已经成为您队伍中的一员了，而我强烈认为您不该{s21}。
+
+
+str_npc4_2ary_morality_speech|向您致意，指挥官。但是即使是一个女人，我也是个战士，我宁可死也不会{s21}。您的决定给我的家族带来了羞耻。希望您能接受我的建议。
+
+
+
+
+
+
+
+
+
+
+; str_npc15_2ary_morality_speech|Hi-hi-hi! You are cunning, Oh Lord! You take the gold, and nod, and say 'yes master' but all the time you planned this! Hi-Hi! Only, we must be careful, that The Big One does not see you deceiving him...
+
+
+str_npc1_personalityclash_speech|我有没有提到我讨厌{ s11 } ?\n
+str_npc2_personalityclash_speech|我有没有提到我讨厌{ s11 } ?\n
+str_npc3_personalityclash_speech|指挥官，我们怎么能拥有像{s11}这样的垃圾在队伍里？他在战场上缩头缩脑，在营地里又大谈该如何袭击敌人，太烦了！
+str_npc4_personalityclash_speech|我有没有提到我讨厌{ s11 } ?\n
+str_npc5_personalityclash_speech|我有没有提到我讨厌{ s11 } ?\n
+str_npc6_personalityclash_speech|{playername}，我刚刚看到{s11}走过一个鸟窝，他居然……哎，他怎么能很得下心去杀害这样的生灵呢？
+str_npc7_personalityclash_speech|{s11}大人在战场上非常英勇。但是我认为他把自己看得太高了。他应该稍微谦虚一些，至少对他的同伴。
+str_npc8_personalityclash_speech|指挥官，我刚与{s11}吵了一架。他还在给我起绰号，他叫我“绿精灵”。
+str_npc9_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc10_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc11_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc12_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc13_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc14_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc15_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc16_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc17_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc1_personalityclash_speech_b|我讨厌 {s11}.
+str_npc2_personalityclash_speech_b|我讨厌 {s11}.
+str_npc3_personalityclash_speech_b|我不是要对刚铎人恶意中伤，但是我觉得还是一个骑手更能在战场上发挥威力，而不是一个“爬地者”。
+str_npc4_personalityclash_speech_b|我讨厌 {s11}.
+str_npc5_personalityclash_speech_b|我讨厌 {s11}.
+str_npc6_personalityclash_speech_b|他的矮人之魂或许使他骄傲，但是这也不能让他有权来对他的同伴苛刻！
+str_npc7_personalityclash_speech_b|我们应该拥有一个矮人的英雄在队伍里，而不是现在的那个。我只敬佩像都灵那样的大英雄。
+str_npc8_personalityclash_speech_b|或许我不该上战场，我该自己在后方研究研究草药。不过看着您的士兵在战场上追风，还是非常赏心悦目的。
+str_npc9_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc10_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc11_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc12_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc13_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc14_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc15_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc16_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc17_personalityclash_speech_b|我不喜欢 {s11}.
+str_npc1_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc2_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc3_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc4_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc5_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc6_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc7_personalityclash2_speech|一场不错的小站斗，不是吗指挥官？但愿下次那位精灵女士{s11}能够和敌人有些接触吧！
+str_npc8_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc9_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc10_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc11_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc12_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc13_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc14_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc15_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc16_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc17_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc1_personalityclash2_speech_b|我不喜欢 {s11}.
+str_npc2_personalityclash2_speech_b|我不喜欢 {s11}.
+str_npc3_personalityclash2_speech_b|我不喜欢 {s11}.
+str_npc4_personalityclash2_speech_b|我不喜欢 {s11}.
+str_npc5_personalityclash2_speech_b|我不喜欢 {s11}.
+str_npc6_personalityclash2_speech_b|我不喜欢 {s11}.
+str_npc7_personalityclash2_speech_b|我看见她在部队的后方慢慢移动，只朝着敌人的大致方向放了一两箭，我告诉她最好留在后方管好那些事……这样我们才能尽全力去宰了敌人。
+str_npc8_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc9_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc10_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc11_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc12_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc13_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc14_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc15_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc16_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc17_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc1_personalitymatch_speech|您看到了{s11}在战场上的优雅吗？她的下手不想狂战士那么快但是她在敌人旁边的走位十分巧妙。她对敌人的致命一击又是那么精准。就像故事讲的那样，精灵的女战士像跳舞一样在战场上杀敌。
+str_npc2_personalitymatch_speech|打扰您了，指挥官。我在前面那场小战斗技术后去帮{s11}修理他的装备，他竟然答应教我一些格斗技巧。他可真热心啊。
+str_npc3_personalitymatch_speech|我以前一直不看好那位洛汗的女战士，但是直到她用全力冲锋打破了敌人的防线后，我明白了{s11}当之无愧是队伍中最优秀的一员。
+str_npc4_personalitymatch_speech|一场完美的战斗，指挥官。我注意到了在击溃敌人后{s11}治疗伤员的认真与细致。我们正需要这样的战友。
+str_npc5_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc6_personalitymatch_speech|{playername}，虽然我非常讨厌战斗，但是{s11}大人在战场摧枯拉朽地消灭敌军之举还是令人钦佩。
+str_npc7_personalitymatch_speech|啊，又一个胜利。在胜利中您可以见证{s11}的出色。
+str_npc8_personalitymatch_speech|又一场胜利，恭喜您。我对您的战术安排非常赞赏，而像{s11}那样的精英战士也把您的战术发挥得淋漓尽致。
+str_npc9_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc10_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc11_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc12_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc13_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc14_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc15_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc16_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc17_personalitymatch_speech|嗯……领导。我觉得{s11}是个好人。
+; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse in what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
+str_npc2_personalitymatch_speech_b|曾几何时，我的老乡们向我诉说伊西利安游侠的伟大事迹，现在我深切体会到了他们的伟大。{s11}就是刚铎游侠的表率，刚铎会因为这些有游侠变得安全许多对吧。
+str_npc3_personalitymatch_speech_b|指挥官，我个人强烈建议您在下次战斗中别让{s11}冲在太前面。我不是鄙视她的战斗能力，我实在不忍心看到一个女孩子在战场上受伤。还有，这些可不是酒后胡言，请您一定仔细斟酌考虑。
+str_npc4_personalitymatch_speech_b|虽说许多人认为生命是最可贵的，不过我可以为那善良的灵魂去死，在这个阴暗的世界里那样的人太少见了。
+str_npc5_personalitymatch_speech_b|我喜欢{s11}。
+str_npc6_personalitymatch_speech_b|我在想他有多大年龄，或许比我大几千岁？算了，您不会明白的。
+str_npc7_personalitymatch_speech_b|{s11}的战斗技术虽然不能与矮人相比，不过她还是一个非常可靠的战友，我非常乐意与她并肩战斗。
+str_npc8_personalitymatch_speech_b|我们队伍里的一些人非常好，他们主动保护他们的战友。
+str_npc9_personalitymatch_speech_b|我喜欢{s11}。
+str_npc10_personalitymatch_speech_b|我喜欢{s11}。
+str_npc11_personalitymatch_speech_b|我喜欢{s11}。
+str_npc12_personalitymatch_speech_b|我喜欢{s11}。
+str_npc13_personalitymatch_speech_b|我喜欢{s11}。
+str_npc14_personalitymatch_speech_b|我喜欢{s11}。
+str_npc15_personalitymatch_speech_b|我喜欢{s11}。
+str_npc16_personalitymatch_speech_b|我喜欢{s11}。
+str_npc17_personalitymatch_speech_b|我的朋友们都喜欢树。大家都喜欢。
+str_npc1_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc2_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc3_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc4_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc5_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc6_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc7_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc8_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc9_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc10_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc11_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc12_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc13_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc14_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc15_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc16_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc17_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc1_rehire_speech|嘿，好久不见啊，您觉得我还要加入您的部队吗？
+str_npc2_rehire_speech|祝您愉快，您能再次带我吗？
+str_npc3_rehire_speech|嘿，我们要再一次一起历险吗？
+str_npc4_rehire_speech|很高兴再次见到您。我们要不要再次一起走？
+str_npc5_rehire_speech|见到您太好了{playername}，我们要一起走吗？
+str_npc6_rehire_speech|见到您太好了{playername}，我们要一起走吗？
+str_npc7_rehire_speech|我的斧子已经磨利了， {playername}.您要我重新加入您吗？
+str_npc8_rehire_speech|您是一个厉害的队长，我该再次加入您吗？
+str_npc9_rehire_speech|古拉姆准备好为您杀敌了，我们要一起出发吗？
+str_npc10_rehire_speech|我能再次为您服务吗？
+str_npc11_rehire_speech|我能再次为您服务吗？
+str_npc12_rehire_speech|我能再次为您服务吗？
+str_npc13_rehire_speech|我能再次为您服务吗？
+str_npc14_rehire_speech|我能再次为您服务吗？
+; str_npc15_rehire_speech|Aah, Great Lord! I have searched so long for you, as word of your glorious deeds rings across Middle Earth! Surely you have missed my skills? You will welcome me once more to complete your Great Army?
+str_npc16_rehire_speech|我能再次为您服务吗？
+str_npc17_rehire_speech|嘿，又要踏上征途了？树人们很少动，不过我喜欢多动动。但是我也很喜欢树。
+str_npc1_home_intro|队长，我们正接近奥吉力亚斯，那里有我们的朋友和老乡。
+str_npc2_home_intro|小心点啊，指挥官。瞧远处那绿色，那里是米纳斯魔窟啊。您不觉得有什么正看着我们吗？
+str_npc3_home_intro|一句建议，大人，我们接近森林了，让马儿们休息一下吧。对了，这片森林叫法贡森林，里面有树人。
+str_npc4_home_intro|嘿，指挥官，我们在这里停一下吧！看那里，在安都因河口和林莱河之间是凯勒布兰特平原。曾经洛汗的开国王伊欧年轻时在这里集结部队支援刚铎。
+; str_npc5_home_intro|Daro! That's Isengard and the black tower of Orthanc ahead. Much have changed since I last saw them, and none for the better.
+str_npc6_home_intro|打扰一下,{playername}，看样子这里就是多尔戈多附近了啊。
+; str_npc7_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
+; str_npc8_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
+str_npc9_home_intro|嘿，那里一定是圣盔谷了。看呐！我们靠近号角堡了，这可是洛汗最坚固的堡垒。
+str_npc10_home_intro|嘿！看啊！
+str_npc11_home_intro|嘿！看啊！
+str_npc12_home_intro|嘿！看啊！
+str_npc13_home_intro|嘿！看啊！
+str_npc14_home_intro|嘿！看啊！
+str_npc15_home_intro|嘿！看啊！
+str_npc16_home_intro|嘿！看啊！
+str_npc17_home_intro|哦。。。这花好漂亮，我们应该采一朵。。。算了，花儿也是有生命的！
+str_npc1_home_description|这里曾是一个完美的城市，安度因河穿过城市。这里曾一度成为刚铎的首都。直到半兽人抢占了一半的城市。
+str_npc2_home_description|很久以前，这里叫米纳斯伊希尔。在魔多打下这里之前，这里终日沐浴着银色的阳光，而不是戒灵入住后的绿光。
+str_npc3_home_description|这里全是树，似乎隐藏着危机，不过只要没有敌人躲着，这里是很安全的。
+str_npc4_home_description|那些骑士和战马们呢；那嘹亮的冲锋号角声呢；那在马上飘逸潇洒的洛汗战士们呢？他们像风和雨一样掠过山岭。但是现在的西方却被黑暗笼罩。
+str_npc5_home_description|这里是南方的王国建立的，那个白袍巫师的家。他现在正躲在这里面妄想凭他的强兽人统治世界呢。
+str_npc6_home_description|我从没来过这么远的地方，我以前远远地看到敌人的小股侦察队就逃走了。那里的城防很坚固，难以攻打，听说不少精灵们在这里吃过大亏。
+; str_npc7_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
+str_npc8_home_description|上次我在这里遇到了一支商队，他们见我孤身一人旅行就送了我一点面包和蜂蜜，啊，那是我吃过最好吃的蜂蜜。
+str_npc9_home_description|这里的城墙非常坚固，不是我所见过的攻城器可以打破的，攻城方只能冒着箭雨很被动地搭云梯。这堵城墙救过不少洛汗和他们盟友的命。
+str_npc10_home_description|您知道那里吗？
+str_npc11_home_description|您知道那里吗？
+str_npc12_home_description|您知道那里吗？
+str_npc13_home_description|您知道那里吗？
+str_npc14_home_description|您知道那里吗？
+str_npc15_home_description|您知道那里吗？
+str_npc16_home_description|您知道那里吗？
+str_npc17_home_description|我不知道这里也有这么美丽的自然风景。啊，看那棵树，多么美丽啊。
+str_npc1_home_description_2|当年刚铎并没有多还不甚强大的魔多采取强硬措施，导致西奥吉力亚斯的失守。城市被分为两半，只好迁都。而有了戒备的刚铎守军加强了戒备，就没再让半兽人越过那条河。不过现在那美丽的城市已经被毁了。索伦之眼的旗子高高挂在对面，双方经常互掷石块，城市满目疮痍。
+str_npc2_home_description_2|这里现在全是魔多的守军，但愿刚铎能早日重新打下这里，把白树之旗挂在这里的塔顶。
+str_npc3_home_description_2|但是如果我们真的要进入这片森林的话，我们最好安静点，树人可不喜欢被打扰。
+str_npc4_home_description_2|我们会愈战愈勇，而洛汗与刚铎的联盟将再次把我们的人民从水深火热中解救出来。
+str_npc5_home_description_2|这里是艾辛格的重兵把守之地，不过我相信光明迟早会驱走这里的黑暗。
+str_npc6_home_description_2|我感觉这里又有大军要出发了。。。去洛丝萝林？我也不知道，但为了我们的家乡请您务必拦住这支大军，如果它真的存在的话。
+str_npc7_home_description_2|如果我们能能打下这里的话，我们也就能拥有一个矿井，也就以为这我们将获得很大的财富。
+str_npc8_home_description_2|我能闻到这里甜美的花香，我能听到这里蜜蜂的声音。。。如果您不介意，我回去搞些蜂蜜，顺便给您也带些。那只要一会儿时间。
+str_npc9_home_description_2|号角堡的城墙非常坚固，守城军士们一般头也不抬就可以从墙后扔出投掷武器。他们一般都不把脸放到城墙之上，除非他们要对无可奈何的强兽人作鬼脸。
+str_npc10_home_description_2|米纳斯魔窟，哈哈，当年我们都在那里喝酒吃肉，哈哈！
+str_npc11_home_description_2|欧散克塔很大，不是吗？
+str_npc12_home_description_2|欧散克塔很大，不是吗？
+str_npc13_home_description_2|米纳斯魔窟，哈哈，当年我们都在那里喝酒吃肉，哈哈！
+str_npc14_home_description_2|米纳斯魔窟，哈哈，当年我们都在那里喝酒吃肉，哈哈！
+str_npc15_home_description_2|米纳斯魔窟，哈哈，当年我们都在那里喝酒吃肉，哈哈！
+str_npc16_home_description_2|米纳斯魔窟，哈哈，当年我们都在那里喝酒吃肉，哈哈！
+str_npc17_home_description_2|我能给你一个做一个烟斗，用这里花儿的叶子晒干作烟草，您要吗?这可是自然的味道！
+str_npc1_home_recap|我在伊西利安出生并长大，我曾经在小时候去过奥吉力亚斯，我们偷偷从旁边渡过河去米纳斯蒂里斯。
+str_npc2_home_recap|我出生在米纳斯伊希尔，我出生在一个不富裕但我所引以为傲的家庭。
+; str_npc3_home_recap|I am one of the Eorlingas, or Rohirrim, as foreigners call us.
+; str_npc4_home_recap|I don't find it amusing that you should forget so easily.
+; str_npc5_home_recap|I'll indulge your curiosity, but let us not tarry.
+str_npc6_home_recap|我出生在幽暗密林，作为这里的精灵，我们的木工技术无人能敌。
+str_npc7_home_recap|我是都灵大人忠诚的守护者。
+str_npc8_home_recap|我是一个从河谷镇来的医生和草药学家。
+str_npc9_home_recap|古拉姆会告诉您如果您一定要听，不过讲故事杀不了敌人。
+str_npc10_home_recap|我会很快搞定的。
+str_npc11_home_recap|我会很快搞定的。
+str_npc12_home_recap|我会很快搞定的。
+str_npc13_home_recap|我会很快搞定的。
+str_npc14_home_recap|我会很快搞定的。
+str_npc15_home_recap|我会很快搞定的。
+str_npc16_home_recap|我会很快搞定的。
+str_npc17_home_recap|虽然我出生在这片树林的边缘，但是一生都居住在森林里。您想听我说说树吗？
+str_npc1_honorific|队长
+str_npc2_honorific|指挥官
+str_npc3_honorific|指挥官
+str_npc4_honorific|指挥官
+str_npc5_honorific|指挥官
+str_npc6_honorific|战士
+str_npc7_honorific|队长
+str_npc8_honorific|指挥官
+str_npc9_honorific|主人
+str_npc10_honorific|主人
+str_npc11_honorific|主人
+str_npc12_honorific|主人
+str_npc13_honorific|领导
+str_npc14_honorific|队长
+str_npc15_honorific|主人
+str_npc16_honorific|领导
+str_npc17_honorific|酋長
+str_comment_intro_liege_affiliated|有人告诉我你已经向某个质疑我王位的人起誓。但是我们仍然可以谈谈。
+str_comment_intro_famous_liege|你的名声来的比你的人快！也许你该寻求一个配得上你的英勇的君主了。
+str_comment_intro_famous_martial|你的名声来的比你的人快！或许我们该在竞技场上，或者战场上来较量一下，看看谁更勇猛！
+str_comment_intro_famous_badtempered|我听说过你。我不喜欢无用的争执，有什么话你就直说吧。
+str_comment_intro_famous_pitiless|我知道你的名字，它让很多人从心里感到害怕。很好，或许我们该找个时间好好谈谈。
+str_comment_intro_famous_cunning|哈，我们终于又见面了，{伙计/姑娘}。让我们好好谈谈吧。
+str_comment_intro_famous_sadistic|我知道你的名字，我担保也有很多悲伤的寡妇知道它。不过跟我没关系。
+str_comment_intro_famous_goodnatured|早就听说过你了。总算能够认识你，还真不赖。
+str_comment_intro_famous_upstanding|我听说过你，他们说你是最英勇的战士。我只希望你的荣誉和仁慈能与你的勇猛相配。
+str_comment_intro_noble_liege|我看你带着面贵族的旗子，不过我不认得这个徽标。你该知道我总在寻找能为我而战的勇士，如果他们能够证明自己值得我信任的话。
+str_comment_intro_noble_martial|我看你带着面贵族的旗子，不过我不认得这个徽标。或许我们该在竞技场上，或者战场上来较量一下，看看谁更勇猛！
+str_comment_intro_noble_badtempered|我不认得你旗子上的这个徽标。一定又是个外乡人到这里来了，好像这里还不够多似的。
+str_comment_intro_noble_pitiless|看你带着面贵族的旗子，不过我不认得这个徽标。毫无疑问，又一只秃鹰盯上了战争的尸体。
+str_comment_intro_noble_cunning|我看你带着面贵族的旗子，不过我不认得这个徽标。可能有一天你这个{伙计/姑娘}会证明自己是一个伟大的战士，交上这样的朋友总是很划算的。
+str_comment_intro_noble_sadistic|我看你带着面贵族的旗子，不过我不认得这个徽标。或者你是那个该死的浑身浮肿的偷牛贼的{儿子/女儿}？或者是你偷了它们？
+str_comment_intro_noble_goodnatured|我看你带着面贵族的旗子，不过我不认得这个徽标。原谅我的无知，{先生/夫人}。很高兴认识你。
+str_comment_intro_noble_upstanding|我看你带着面贵族的旗子，不过我不认得这个徽标。毫无疑问你是来中土大陆寻找财富和荣誉。真是这样的话我只请求你对那些战争中无辜的灵魂仁慈一些罢。
+str_comment_intro_common_liege|也许你的出身很平常。但你该知道我总在寻找能为我而战的勇士，如果他们能够证明自己值得我信任的话。
+str_comment_intro_common_martial|也许你的出身很平常。但如果你想证明一个{伙计/姑娘}的勇敢，我很愿意跟你在竞技场上，或者战场上来较量一下。
+str_comment_intro_common_badtempered|有话快说，我可不想浪费时间去跟一名雇佣军士兵扯淡。
+str_comment_intro_common_pitiless|你长的一副雇佣军的样子，又一只秃鹰盯上了战争的尸体。
+str_comment_intro_common_cunning|嗯，我没听说过你，不过你看起来就像个有那么一天也许会出人头地的{伙计/姑娘}。
+str_comment_intro_common_sadistic|对那些不请自来的，放肆无礼的无名之辈，通常我会直接切开他们的喉咙。不过大爷我今天心情不错。
+str_comment_intro_common_goodnatured|嗯，你看起来蛮像一个好人。
+str_comment_intro_common_upstanding|冷静下来，并永远记住，英勇也要有与之相称的仁慈，而胆识要用于磊落之处。
+str_comment_you_raided_my_village_enemy_benevolent|你竟然在我保护下的{s51}村庄屠杀无辜的平民。现在，你将为你的罪行遭到惩罚。
+str_comment_you_raided_my_village_enemy_spiteful|你掠夺了我的{s51}村庄，毁坏我的产业并杀害我的租户。我要你用血来偿还！
+str_comment_you_raided_my_village_enemy_coldblooded|你掠夺了我的{s51}村庄，毁坏我的产业并杀害我的租户。在你想再次这样做之前，我劝你三思。
+str_comment_you_raided_my_village_enemy|你掠夺了我的{s51}村庄，毁坏我的产业并杀害我保护下的租户。你必须为自己的罪行付出代价！
+str_comment_you_raided_my_village_unfriendly_spiteful|你掠夺了我的{s51}村庄，如果你再这样我就像收拾鱼那样捏爆你的鱼泡！
+str_comment_you_raided_my_village_friendly|你掠夺了我的{s51}村庄，彻底毁掉了我们之间的关系。
+str_comment_you_raided_my_village_default|你掠夺了我的{s51}村庄，如果你再这样，我们真的会打起来。
+str_comment_you_robbed_my_village_enemy_coldblooded|你在我的{s51}村庄抢夺我的租户，我认为这是对我个人的侮辱。
+str_comment_you_robbed_my_village_enemy|你竟然在我保护下的{s51}村庄屠杀无辜的平民。我来是为你犯下的严重罪行为惩罚你。
+str_comment_you_robbed_my_village_friendly_spiteful|我听说你在我的{s51}村庄，抢夺我租户的口粮。我不在乎让你拿走点东西，但是记住，我也是那些村民的申诉对象。
+str_comment_you_robbed_my_village_friendly|我听说你在我的{s51}村庄强行征粮。我相信如果不是迫不得已你是不会这么做的。
+str_comment_you_robbed_my_village_default|你在我的{s51}村庄强行征粮。如果你再这样，我们真的会打起来。
+str_comment_you_accosted_my_caravan_enemy|你竟然想对我保护下的商队下手，看来你的盗匪生涯就要结束了。
+str_comment_you_accosted_my_caravan_default|你竟然想对我保护下的商队下手，这种行为必须结束了。
+str_comment_you_helped_villagers_benevolent|我听说你在我的{s51}村庄行善。作为领主和保护者我却忽略了自己的责任，非常感激你为我做的这些。
+str_comment_you_helped_villagers_friendly_cruel|我听说你在我的{s51}村庄行善。我想你的意图是好的，但我不想你再这样随意损害我的威信。
+str_comment_you_helped_villagers_friendly|我听说你在我的{s51}村庄行善。我不反对你对他们提供帮助。
+str_comment_you_helped_villagers_unfriendly_spiteful|我听说你在我的{s51}村庄行善。看你在我的附庸民中间赚取好感真是有趣，不过我劝你还是去忙你自己的事情吧。
+str_comment_you_helped_villagers_cruel|我听说你在我的{s51}村庄行善。作为领主和保护者，那些是我的责任。世道艰难，我也认为你的意图是好的，但你这样还是在损害我的威信。我要谢谢你，并请你别管他们。
+str_comment_you_helped_villagers_default|我听说你在我的{s51}村庄行善。世道艰难，我也认为你的意图是好的，但别养成这样的习惯。作为领主和保护者，我不想让他们去盼望一个陌生人的帮助。
+str_comment_you_captured_a_castle_allied_friendly|我听说你包围并攻下了{s51}。这也太突然了吧，我很骄傲能称你为我的朋友。
+str_comment_you_captured_a_castle_allied_spiteful|我听说你包围并攻下了{s51}。干得好！很快，我们就能去占他们的城堡，抢他们的财宝，还有他们的女人和酒……哈哈！
+str_comment_you_captured_a_castle_allied_unfriendly_spiteful|我听说你包围并攻下了{s51}。你一定交上了狗屎运，这是他们说的。好好享受吧，在你被赶出来之前。
+str_comment_you_captured_a_castle_allied_unfriendly|我听说你包围并攻下了{s51}。不管我们以前有多少分歧，我还是奉上我的祝贺。
+str_comment_you_captured_a_castle_allied|我听说你包围并攻下了{s51}。我们把他们打跑了！
+; str_comment_you_captured_my_castle_enemy_spiteful|I hear that you have broken into my home at {s51}. I hope the dungeon is to your liking, as you will be spending much time there in the years to come.
+str_comment_you_captured_my_castle_enemy_chivalrous|你占领了我的封地{s51}，希望你能给我机会赢它回来。
+str_comment_you_captured_my_castle_enemy|你有些东西是属于我的——{s51}。我会让你放弃它。
+str_comment_we_defeated_a_lord_unfriendly_spiteful|我想你会为我们对{s54}的胜利干一杯。不过还是省省你的酒——让我们在你洗净前耻之后再喝吧。
+str_comment_we_defeated_a_lord_unfriendly|我不会忘记当初我们如何并肩作战，对抗{s54}，但我也不会忘记那些横在我们之间的过节。
+str_comment_we_defeated_a_lord_cruel|{s54}之战是一场伟大的胜利，对吧？我们把敌人的部队变成了一场乌鸦的盛宴！
+str_comment_we_defeated_a_lord_quarrelsome|我不会忘记我们是如何攻破{s54}的。我很享受那个。
+str_comment_we_defeated_a_lord_upstanding|我不会忘记我们对{s54}的胜利。让我们再次感谢上帝，并且祈祷我们不会变得太骄傲。
+str_comment_we_defeated_a_lord_default|那是一个伟大的胜利，不是吗？和你一起战斗我感到很荣耀。
+str_comment_we_fought_in_siege_unfriendly_spiteful|我想你会为我们攻下{s51}干一杯。不过还是省省你的酒——让我们在你洗净前耻之后再喝吧。
+str_comment_we_fought_in_siege_unfriendly|我不会忘记我们紧密合作暴风雨般的席卷了{s51}，不过，我也不会忘记我们之间存在的过节。
+str_comment_we_fought_in_siege_cruel|我不会忘记我们是如何攻破{s51}的城墙并让守卫者都倒在剑下的。这是个美好的回忆。
+str_comment_we_fought_in_siege_quarrelsome|记得敌人在我们攻下{s51}的城墙的时候是怎么尖叫的吗？他们以为很安全！我们扇去了他们脸上自鸣得意的笑！
+str_comment_we_fought_in_siege_upstanding|我不会忘记我们攻占了{s51}。让我们再次感谢上帝，并且祈祷我们不会变得太骄傲。
+str_comment_we_fought_in_siege_default|我不会忘记我们紧密合作攻占了{s51}。和你一起战斗我感到荣耀。
+str_comment_we_fought_in_major_battle_unfriendly_spiteful|我想你会为我们在{s51}附近的伟大胜利干杯。不过还是省省你的酒——让我们在你洗净前耻之后再喝吧。
+str_comment_we_fought_in_major_battle_unfriendly|我不会忘记我们在{s51}附近的伟大战役中的紧密合作，不过，我也不会忘记我们之间存在的过节。
+str_comment_we_fought_in_major_battle_cruel|我不会忘记在{s51}附近的伟大战役，当我们攻破敌人的防线之后他们尖叫着在我们面前溃散。这是一个美好的回忆。
+str_comment_we_fought_in_major_battle_quarrelsome|在{s51}附近的战斗很棒，我们把那些混蛋赶跑了！
+str_comment_we_fought_in_major_battle_upstanding|我不会忘记在{s51}附近的伟大战役中我们并肩战斗。让我们再次感谢上帝，并祈祷我们不会变得太骄傲。
+str_comment_we_fought_in_major_battle_default|我不会忘记在{s51}附近的伟大战役中我们并肩战斗。和你一起战斗我感到荣耀。
+str_comment_you_defeated_a_lord_allied_liege|这么说，你和那个流氓{s54}交锋并获得了胜利。我非常高兴听到这个消息。
+str_comment_you_defeated_a_lord_allied_unfriendly_spiteful|我听说你击败了{s54}。我估计是走了狗屎运。
+str_comment_you_defeated_a_lord_allied_spiteful|我听说过你击败了狗娘养的{s54}。啊，我要是能亲耳听到他求饶就好了。
+str_comment_you_defeated_a_lord_allied_unfriendly_chivalrous|我听说你击败了{s54}。我希望你没有使用卑鄙的手段。
+str_comment_you_defeated_a_lord_allied|我听说你击败了{s54}。我希望你对胜利感到高兴。
+str_comment_you_defeated_me_enemy_chivalrous|我不会愤恨上次你击败了我，但是我渴望下一次交手！
+str_comment_you_defeated_me_enemy_spiteful|我正期待与你再次见面。你的小诡计不会再让我上当了，我将很享受你的求饶。
+str_comment_you_defeated_me_enemy|当我们上次遇到的时候，{playername}，你比我强。但是我保证再也不会出现那种事了！
+str_comment_i_defeated_you_enemy_spiteful|还没打够？那让我们再干一仗，我会用你的肠子喂狗。
+str_comment_i_defeated_you_enemy_chivalrous|让我再试试你有多勇猛，{playername}?
+str_comment_i_defeated_you_enemy_benevolent|你这么快又来了？你在家练习了么？
+str_comment_i_defeated_you_enemy_coldblooded|你很坚持不懈，但是很讨厌。
+str_comment_i_defeated_you_enemy|要我教训你多少次你才能学会走远点？
+str_comment_we_were_defeated_unfriendly_spiteful|最后看到你的时候，你已经被{s54}的人打倒了。我认为你应该对那个灾难负责。看到你还活着真是太遗憾了。
+str_comment_we_were_defeated_unfriendly|最后看到你的时候，你已经被{s54}的人打倒了。好吧，我发现你还活着。
+str_comment_we_were_defeated_cruel|最后看到你的时候，你已经被{s54}的人打倒了。不用担心——我们会找到他，然后让他被自己的胜利噎死。
+str_comment_we_were_defeated_default|最后看到你的时候，你已经被{s54}的人打倒了。很高兴看到你还活得好好的。
+str_comment_you_were_defeated_allied_friendly_spiteful|我听说{s54}让你很难过。不用担心，朋友——我会为你找到他，并把他的头送给你作礼物。
+str_comment_you_were_defeated_allied_unfriendly_cruel|我听说{s54}嘲笑你的人都象绵羊。但是你还活生生的站在这里，真是让人失望！
+str_comment_you_were_defeated_allied_spiteful|我听说{s54}就像蚂蚁一样踩在了脚下。哈！小孩子不应该玩大人的游戏，小{伙子/姑娘}！
+str_comment_you_were_defeated_allied_pitiless|我听说{s54}打败了你，击溃了你的军队。真让人沮丧……
+str_comment_you_were_defeated_allied_unfriendly_upstanding|我听说{s54}打败了你。也许你应该考虑你是否忏悔过自己的任何罪过，这可能是上天用这种方式来惩罚你。
+str_comment_you_were_defeated_allied_unfriendly|我听说{s54}打败了你，我说，不要让我们太多的兵被干掉，好不好？
+str_comment_you_were_defeated_allied|我听说{s54}打败了你。但是放宽心——很快就要时来运转了！
+str_comment_you_helped_my_ally_unfriendly_chivalrous|我听说你从一场很危急的战斗中解救了{s54}。不管我怎么看你这个人，我至少很赞赏你做到了这个。
+; str_comment_you_helped_my_ally_unfriendly|[revelance should be zero, and this message should not appear]
+str_comment_you_helped_my_ally_liege|我听说你很危急的时候解救了我的下属。
+str_comment_you_helped_my_ally_unfriendly_spiteful|我听说你拍马赶来救了我们可怜的{s54}。你是不是认为他是一个悲惨的女人？别担心——这不是什么了不起的错误。
+str_comment_you_helped_my_ally_spiteful|我听说你把{s54}从鞭打中解救了出来。我觉得你本来应该让他得到教训。
+str_comment_you_helped_my_ally_chivalrous|我听说你在紧要关头把{s54}救了出来。这真是骑士风度。
+str_comment_you_helped_my_ally_default|我听说你在紧要关头把{s54}救了出来。干的漂亮！
+str_comment_you_abandoned_us_unfriendly_spiteful|你这个卑鄙的家伙！你让我们单独抵抗{s54}，是不是？我唾弃你。
+str_comment_you_abandoned_us_unfriendly_pitiless|恩……你在战斗中把我抛弃给{s54}，是不是？我将看到你的墓碑上写着叛国者。
+str_comment_you_abandoned_us_spiteful|你在和{s54}的战斗中消失了……我希望你有一个好的解释。是不是你的肠胃有了情况？是否因为颤抖得太厉害拿不住武器了？
+str_comment_you_abandoned_us_chivalrous|发生什么事了？你在对{s54}的战斗中失踪了。我只能希望是你受重伤倒下了，因为我会为和胆小鬼一起战斗而感到羞愧。
+str_comment_you_abandoned_us_benefitofdoubt|发生什么事了？你在对{s54}的战斗中失踪了。我估计你一定是受伤了，但是现在看起来很可疑。
+str_comment_you_abandoned_us_default|发生什么事了？刚刚你还和我们一起与{s54}战斗，一会功夫就找不到你了？
+str_comment_you_ran_from_me_enemy_spiteful|上次我们遇到的时候，你象一条挨了鞭子的狗从我这里逃走了。你现在来是再次向我咆哮，还是请求宽恕？
+str_comment_you_ran_from_me_enemy_chivalrous|上次我们遇到的时候，你逃跑了，要象个绅士一样不屈的战斗！
+str_comment_you_ran_from_me_enemy_benevolent|当上次我们遇到的时候看到你逃跑，我就希望不再与你战斗。
+str_comment_you_ran_from_me_enemy_coldblooded|上次我们遇到的时候，你逃跑了。这是个英明的决定。
+str_comment_you_ran_from_me_enemy|上次我们遇到的时候你能够逃走，但是下次我怀疑你还能那么走运么。
+str_comment_you_ran_from_foe_allied_chivalrous|他们说你从{s54}那里逃跑了，把你的部下留在后面。我希望这不是真的，因为这种行为让我们大家蒙羞。
+str_comment_you_ran_from_foe_allied_upstanding|他们说你从{s54}那里逃跑了，把你的部下留在后面。我一般是不相信这些谣言的，并且我也知道让人绝望的困境产生让人绝望的压力。但是我请求你还是要注意你的好名誉，因为如果民众听到我们在战场上抛弃他们，他们就不会为我军而战。
+str_comment_you_ran_from_foe_allied_spiteful|顺便说一下，他们说你从{s54}那里象受惊的小兔子一样逃走了，丢下你的部下被屠宰。哈！多么壮观的场面！
+str_comment_you_defeated_my_friend_enemy_pragmatic|你也许可以打败{s54}，但是你不可能打败我们所有人。
+str_comment_you_defeated_my_friend_enemy_chivalrous|我听说你打败了{s54}，从那时候起他就渴望与你再次交锋。
+str_comment_you_defeated_my_friend_enemy_spiteful|你有点名过其实，{playername}。{s54}也许败在你的花招之下，但是如果你跟我打，你将发现我是一个更加难对付的对手。
+str_comment_you_defeated_my_friend_enemy|听说你打败了{s54}。而我将会真正测试你的能力。
+str_comment_you_captured_a_lord_allied_friendly_spiteful|我听说你抓住{s54}了。我希望你能从他身上勒索到每个资源点。
+str_comment_you_captured_a_lord_allied_unfriendly_spiteful|我听说你抓住{s54}了。你的箱子里现在一定装满了赎金。但是很可惜钱不能使你从一个低贱的野狗变成绅士的！
+str_comment_you_captured_a_lord_allied_chivalrous|我听说你抓住{s54}了。干得不错，当然我认为，他现在应该受到了与他身份相称的待遇。
+str_comment_you_captured_a_lord_allied|我听说你抓住{s54}了。干得不错，他的赎金一定很丰厚。
+str_comment_you_let_go_a_lord_allied_chivalrous|我听说你抓住{s54}了，但是你把他放走了。这样的骑士精神对我来说是一种荣誉。
+str_comment_you_let_go_a_lord_allied_upstanding|我听说你抓住{s54}了，但是你把他放走了。很好，这是一个光荣的做法，但是同时也可能是一种危险的做法。
+str_comment_you_let_go_a_lord_allied_coldblooded|我听说你抓住{s54}了，但是你把他放走了。对你来说，这是一件富有骑士精神的做法，但是骑士精神赢不了战争。
+str_comment_you_let_go_a_lord_allied_unfriendly_spiteful|我听说你抓住{s54}了，但是你把他放走了。你是多么富有骑士精神啊！不用怀疑他遗留在家的孤儿寡妇一定想来亲自称赞你。
+str_comment_you_let_go_a_lord_allied|我听说你抓住{s54}了，但是你把他放走了。我不会干涉你会怎样处理你自己的俘虏。
+str_comment_you_let_me_go_spiteful|我们上次遇到的时候，你对我很仁慈，并放我走了。我希望你喜欢跟我玩类似猫捉老鼠的游戏，因为很快我将让你乞求我的仁慈，杀死或者羞辱都由我的想法决定。
+str_comment_you_let_me_go_enemy_chivalrous|我们上次遇到的时候，你对我很仁慈，并放我走了。你太有骑士精神了，我不会忘记你的。但是我同时也必须牢记我对我的君主发过的誓言，而且我们的国家还在交战中。
+str_comment_you_let_me_go_enemy_coldblooded|我们上次遇到的时候，你对我很仁慈，并放我走了。但是我们仍然是敌人，我不会以同样的方式对你仁慈的。
+str_comment_you_let_me_go_enemy|我们上次遇到的时候，你对我很仁慈，并放我走了。你很仁慈，但是我们仍然在交战中。
+str_comment_you_let_me_go_default|我们上次遇到的时候，你对我很仁慈，并放我走了。你很仁慈，而且我很高兴我们的国家不再交战了。
+str_comment_pledged_allegiance_allied_martial_unfriendly|我听说你已经发誓效忠我们的国王{s54}了。祈祷你不会表现出懦弱的样子而使我们都感到丢脸。
+str_comment_pledged_allegiance_allied_martial|我听说你已经发誓效忠我们的国王{s54}了。我一直都想和你并肩对抗我们的敌人
+str_comment_pledged_allegiance_allied_quarrelsome_unfriendly|我听说你已经发誓效忠我们的国王{s54}了。呸！你就自重吧，离我远点。
+str_comment_pledged_allegiance_allied_quarrelsome|我听说你已经发誓效忠我们的国王{s54}了。努力和我们的敌人战斗，尊敬你的前辈，而且不要妨碍我。这样我们就能和谐相处了。
+str_comment_pledged_allegiance_allied_selfrighteous_unfriendly|我听说你已经发誓效忠我们的国王{s54}了。如果我是他，我就不会信任你能当好火头军。
+str_comment_pledged_allegiance_allied_selfrighteous|我听说你已经发誓效忠我们的国王{s54}了。勇敢地战斗，你将会获得更多的报酬。背叛我们的话，我们会一辈子记仇的。
+str_comment_pledged_allegiance_allied_cunning_unfriendly|我听说你已经发誓效忠我们的国王{s54}了。我不会假意地对他的决定表示高兴，但是也许让你加入我们的阵营比加入别的好多了。
+str_comment_pledged_allegiance_allied_cunning|我听说你已经发誓效忠我们的国王{s54}了。太好了，在这个动乱的年代，你这样的能干的战士越多越好。我将看着你成长。
+str_comment_pledged_allegiance_allied_debauched_unfriendly|我听说你已经发誓效忠我们的国王{s54}了。不用怀疑，你很快就会背叛他，而我很乐意看到你受到叛国者应该受到的下场。
+str_comment_pledged_allegiance_allied_debauched|我听说你已经发誓效忠我们的国王{s54}了。非常棒……我确信你和我将会成为很好的朋友。但记住，如果你出卖我们，这将是你犯的最大的错误。
+str_comment_pledged_allegiance_allied_goodnatured_unfriendly|我听说你已经发誓效忠我们的国王{s54}了。好吧，我不能说我将信任你，但是也许在没有确实证据之前是这样。
+str_comment_pledged_allegiance_allied_goodnatured|我听说你已经发誓效忠我们的国王{s54}了。我们的国王是一个高尚的人，他会慷慨仁慈地奖励忠心且英勇的人。
+str_comment_pledged_allegiance_allied_upstanding_unfriendly|我听说你已经发誓效忠我们的国王{s54}了。唉，自从我认识你开始，我就担心你给我们丢脸，但是我希望你能证明我是错的。
+str_comment_pledged_allegiance_allied_upstanding|我听说你已经发誓效忠我们的国王{s54}了。勇敢地和我们的敌人战斗，但是也要保持荣誉和怜悯。一个好的名声对于部队来说就像利刃和千里马那样有价值。
+str_comment_our_king_granted_you_a_fief_allied_friendly_cruel|我听说{s54}把{s51}封给你了。不要忘记，不要鞭打和搜刮这些农民
+str_comment_our_king_granted_you_a_fief_allied_friendly_cynical|我听说{s54}把{s51}封给你了。我很高兴看到你的繁荣，但要当心。人心险恶，嫉妒和贪婪是财富的左右邻居。和我靠近些，我会给你支援。
+str_comment_our_king_granted_you_a_fief_allied_friendly|我听说{s54}把{s51}封给你了。希望你的新封地变得繁荣起来。
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_upstanding|我听说{s54}把{s51}封给你了。但是要记得，骄兵必败。
+str_comment_our_king_granted_you_a_fief_allied_unfriendly_spiteful|我听说{s54}把{s51}封给你了。我怀疑，不管怎么说，这笔巨大的财富只是使你暂时暴发，当他突然把你丢进粪坑中，你的身份就越发显得低微。
+str_comment_our_king_granted_you_a_fief_allied_spiteful|我听说{s54}把{s51}封给你了。我希望你能确实得到我们国王的称赞。
+str_comment_our_king_granted_you_a_fief_allied|我听说{s54}把{s51}封给你了。你一个人似乎干得挺不错的。
+str_comment_you_renounced_your_alliegance_enemy_friendly|我听说你放弃了对我们国王{s54}的效忠。这令我很伤心，因为我们得在战场上兵戎相见了
+str_comment_you_renounced_your_alliegance_friendly|我听说你放弃了对我们国王{s54}的效忠。让我们祈祷我们不要开始互相厮杀。
+str_comment_you_renounced_your_alliegance_unfriendly_spiteful|我一直在{s54}面前把你形容成一个叛国者，而现在似乎我的观点被证明是正确的。我希望你准备接受一个叛国者应该接受的下场。
+str_comment_you_renounced_your_alliegance_unfriendly_moralizing|我听说你放弃了对我们国王{s54}的效忠。我不得不把你看作是一个叛国者。
+str_comment_you_renounced_your_alliegance_enemy|我听说你放弃了对我们国王{s54}的效忠。好吧，世界的发展总是使老同伴变成敌人。
+; str_comment_you_renounced_your_alliegance_default|I heard that you renounced your allegiance to our lord, {s54}. Well, that is your decision, but do not expect me to go easy on you when we meet on the battlefield.
+str_personality_archetypes|君主
+str_martial|好战的
+str_quarrelsome|脾气暴躁的
+str_selfrighteous|冷酷的
+str_cunning|狡诈的
+str_debauched|残酷成性的
+str_goodnatured|温厚的
+str_upstanding|正直的
+str_surrender_demand_default|投降或者去死！
+str_surrender_demand_martial|今天你的好运到头了。你可以和我们死拼，但是现在就投降一样不是什么耻辱的事情。
+str_surrender_demand_quarrelsome|我已经把你逼到绝路了。投降吧，否则我会骑马把你像条狗一样碾过。
+str_surrender_demand_pitiless|你赢不了我的，你如果想试试的话，我会好好教训你一顿。投降吧！
+str_surrender_demand_cunning|你今天输定了。放弃吧，不为自己着想，也得为你的部下着想吧！
+str_surrender_demand_sadistic|投降！不然我会把你当鱼一样挖出你的内脏！
+str_surrender_demand_goodnatured|我军有绝对优势。投降吧，我们优待俘虏。
+str_surrender_demand_upstanding|你可以和我们死拼，但是你的许多部下都将被杀死，你也会战败。投降，尽量避免我们双方不必要的流血牺牲吧。
+str_surrender_offer_default|停！我投降！
+str_surrender_offer_martial|停！我投降！
+str_surrender_offer_quarrelsome|够了！今天你赢了，混蛋！啊，多么耻辱啊！
+str_surrender_offer_pitiless|我投降！你赢了。今天见鬼了！
+str_surrender_offer_cunning|我投降！我向你投降！
+str_surrender_offer_sadistic|我投降！我投降！叫你的走狗停手吧！
+str_surrender_offer_goodnatured|我投降！祝贺你，你赢了，{先生/夫人}！
+str_surrender_offer_upstanding|我投降！保证我军人的荣誉，也请你遵守信用！
+str_prisoner_released_default|我很感激你，{先生/夫人}，我不会忘记你的恩情的。
+str_prisoner_released_martial|你确实是一个值得尊敬的{人/人}，{先生/夫人}。我不会忘记你的恩情的。
+str_prisoner_released_quarrelsome|我自由了？呃……那，再见吧。
+str_prisoner_released_pitiless|谢谢你。当你最终被打败的时候，我就让你死得痛快一些。除非……除非你愿意加入我们……再见了。
+str_prisoner_released_cunning|我？你是一个善良的{人/人}。我以后会想个方法报答你的。
+str_prisoner_released_sadistic|我？你的残酷表现得多优雅啊，宁愿看到我自由并受到羞辱，也不愿看到我关在枷锁里。你就自己耀武扬威吧！
+str_prisoner_released_goodnatured|你确实是一个值得尊敬的{人/人}，{先生/夫人}。我不会忘记你的恩情的。
+str_prisoner_released_upstanding|你确实是一个值得尊敬的{人/人}，{先生/夫人}。我不会忘记你的恩情的。
+str_enemy_meet_default|敢跟我较量，你是谁啊？
+str_enemy_meet_martial|你叫什么名字{先生/夫人}？如果我们开战了，我要知道我是和谁在打仗。
+str_enemy_meet_quarrelsome|你他妈的是谁？
+str_enemy_meet_pitiless|你是谁？快说，好让我知道我杀的是谁。
+str_enemy_meet_cunning|告诉我你的名字。了解敌人的名字总是有好处的。
+str_enemy_meet_sadistic|你是谁？趁我还没有割掉你的舌头之前快点说。
+str_enemy_meet_goodnatured|你叫什么名字{先生/夫人}？如果我们开战了，我要知道我是和谁在打仗。
+str_enemy_meet_upstanding|你是谁？我想知道是谁想用武力阻止我们正义的事业。
+str_battle_won_default|今天，你证明了你自己是一个可靠的盟友。
+str_battle_won_martial|没有什么比在战场上展现个人的勇武更加有成就感！
+str_battle_won_quarrelsome|啊哈，我们好好教训了这些混蛋了，是吧？
+str_battle_won_pitiless|我们只要联合起来，就能让敌人闻风丧胆！
+str_battle_won_cunning|现在，我们得保持我们的优势，那样我们今天的鲜血就不算白流。
+str_battle_won_sadistic|现在让我们剥光这些尸体丢去喂乌鸦，好让他们知道对抗我们的人将会是什么下场。
+str_battle_won_goodnatured|这一仗打得不错！没有什么比打了胜仗更加令人高兴，是吧？
+str_battle_won_upstanding|现在，让我们感谢上帝让我们获胜，同时让我们也沉痛悼念那些今天在战场上牺牲的战友。
+str_battle_won_grudging_default|今天，你在战场上帮忙扭转了局势。不管我怎么样看你，不过你的勇武是无可挑剔的。
+str_battle_won_grudging_martial|{playername}，不管你以前做得怎样，但是今天你证明了你是一个有价值的{人/人}。
+str_battle_won_grudging_quarrelsome|哼，我通常都不想看到你的那张脸，但是我今天还是得感谢你的帮忙。
+str_battle_won_grudging_pitiless|你今天的帮忙很受用。我完全没有想到你会这么好心地来帮我，但是我还是得谢谢你。
+str_battle_won_grudging_cunning|你在我最需要帮忙的时候来帮了我，如果我不感谢你，我就显的太不厚道了。所以……我很感激你。
+str_battle_won_grudging_sadistic|啊！多么令人感动啊！{playername}居然来救我了。
+str_battle_won_grudging_goodnatured|{playername}！我不想说过去我们相处得如何，但是你今天在战场上的表现不错。非常感谢你！
+str_battle_won_grudging_upstanding|也许过去我对你有些误解。你的到来非常及时。我很感激你。
+str_battle_won_unfriendly_default|你来了。好吧，我认为晚点来总比不来的好。
+str_battle_won_unfriendly_martial|我以前对你说了很多难听且尖锐的话，但是现在，就让我们享受胜利的喜悦吧。
+str_battle_won_unfriendly_quarrelsome|如果你站在这里想等我来感谢你，你可以继续等下去。我们根本不需要你的帮忙，但是我想比起这个你也没有什么别的事情好做了，是吧？
+str_battle_won_unfriendly_pitiless|你到这里来就像是一头豺狼来抢狮子的口食。很好，你自己拿吧，我不会阻止你的
+str_battle_won_unfriendly_cunning|{playername}……虽然我不打算装出一副我很喜欢见到你的样子，但是我认为你的到来没有危害。
+str_battle_won_unfriendly_sadistic|滚开，吃腐肉的禽兽！这是我个人的胜利，你竟然想窃取我的胜利果实。
+str_battle_won_unfriendly_goodnatured|哦，是你啊。好吧，我认为我应该感谢你的帮助。
+str_battle_won_unfriendly_upstanding|谢谢你过来帮忙。现在在我要说出一些会令我后悔的话之前，我得离开了。
+str_troop_train_request_default|我需要像你这样的人把他们训练得像个样子。
+str_troop_train_request_martial|他们需要有人向他们展示一下勇猛的含义。
+str_troop_train_request_quarrelsome|又肥又懒的杂种。他们让我想吐。
+str_troop_train_request_pitiless|他们怕敌人胜过怕我，但以后不会这样。
+str_troop_train_request_cunning|但是人就像剑一样，经过火的锻炼才能变得坚强起来。
+str_troop_train_request_sadistic|他们需要有人拿着铁鞭在他们背后抽打以激起他们的勇气，或者扼杀他们的努力。
+str_troop_train_request_goodnatured|他们是不错的小伙子，但是我认为现在让他们上战场好像太早了。
+str_troop_train_request_upstanding|以他们现在的状况带领他们去打仗的话，等于是要我谋杀他们。
+str_unprovoked_attack_default|什么？为什么你要攻击我们？快讲，你这个混蛋！
+str_unprovoked_attack_martial|我不反对使用武力解决问题，但是我要问你为什么攻击我们？
+str_unprovoked_attack_quarrelsome|你犯了一个大错误，{小伙子/小姑娘}。你知道你在干什么吗？
+str_unprovoked_attack_pitiless|是吗？如果你今天想死的话，我将很高兴成全你。但是我很想了解你到底有何目的。
+str_unprovoked_attack_cunning|真的吗？我认为你的做法很不明智。你想从中得到什么呢？
+str_unprovoked_attack_sadistic|你在干什么？你喜欢你的眼睛被挖出来吗？
+str_unprovoked_attack_goodnatured|为什么你要这么做？我们似乎没有仇啊，{先生/夫人}。
+str_unprovoked_attack_upstanding|我认为这是一个无故的袭击，我要向你的国王抗议。你为什么要这么做？
+str_unnecessary_attack_default|不是时间紧的话，我将毫不犹豫地砍翻你，但是我给你机会，你现在就从这里消失。
+str_unnecessary_attack_martial|我非常渴望接受你的挑战，{先生/夫人}，然而我还是要给你一分钟的时候考虑一下。
+str_unnecessary_attack_quarrelsome|呸！今天我没有心情跟你胡闹，滚开。
+str_unnecessary_attack_pitiless|我今天心情很好，我就装做没有听见你说的话。
+str_unnecessary_attack_cunning|我没有看出你与我为敌能得到什么好处。也许你应该骑着马从我面前走开。
+str_unnecessary_attack_sadistic|我不想把时间浪费到你这样的鼠辈上，滚开。
+str_unnecessary_attack_goodnatured|我没有看出你挑起战争能得到什么好处，{先生/夫人}，你还是走开吧。
+str_unnecessary_attack_upstanding|如果你想打的话，{先生/夫人}，那我就成全你，但我还是给你打消这个念头的机会。
+str_lord_challenged_default|如你所愿，准备去死吧！
+str_lord_challenged_martial|好吧，准备自卫吧！
+str_lord_challenged_quarrelsome|你，放肆的家伙！我要你将你碎尸万段！
+str_lord_challenged_pitiless|如果你一心要找死的话，那我也只能成全你。
+str_lord_challenged_cunning|好吧，如果你不给我机会……
+str_lord_challenged_sadistic|你这个肮脏的家伙！我会让你希望自己没有出生在这个世界上。
+str_lord_challenged_goodnatured|很好。我本希望我们可以避免战斗，但是我明白那是不可能的了。
+str_lord_challenged_upstanding|就这样吧。你不去了解原因令我感到悲哀。
+str_lord_mission_failed_default|好吧，我很失望，但是我确信你以后会有很多机会去弥补你的过失。
+str_lord_mission_failed_martial|试图为你的任务失败找理由是不光荣的，但我还是接受你所说的。
+str_lord_mission_failed_quarrelsome|你失败了？呸！我早就该猜到会是这样的。
+str_lord_mission_failed_pitiless|你失败了？好吧，你令我感到很失望。你做事太欠考虑了。
+str_lord_mission_failed_cunning|好吧，我很失望，但是没有人能保证总是顺风顺水的。
+str_lord_mission_failed_sadistic|真的吗？那些令我失望的人，我通常都不会让他们活着为此事后悔的。
+str_lord_mission_failed_goodnatured|哦，好吧。不管怎么说，那件事成功的希望不大。谢谢你付出的努力。
+str_lord_mission_failed_upstanding|很好，我确信你已经尽全力了。
+str_lord_follow_refusal_default|跟随你？你忘了你的身份了吧，{先生/夫人}。
+str_lord_follow_refusal_martial|也许有一天你能成为一个勇敢且值得尊敬的战士，那时候我将跟随你。但是不是今天。
+str_lord_follow_refusal_quarrelsome|跟随像你这样的人？我可不想这么做。
+str_lord_follow_refusal_pitiless|像我这样的领主不会跟随像你这样的人，{先生/夫人}。
+str_lord_follow_refusal_cunning|首先你要向我证明一下你不是那种会把我带进灾难的{人/人}，然后我也许会跟随你。
+str_lord_follow_refusal_sadistic|不行！相反，你得跟着我就像条被调教的恶狗跟着{his/her}主人一样。
+str_lord_follow_refusal_goodnatured|呃，我现在正好有任务在身。以后再说吧。
+str_lord_follow_refusal_upstanding|你得先证明你是个好的领导者，然后我才会跟着你。
+str_lord_insult_default|低级混混
+str_lord_insult_martial|不光彩的流氓
+str_lord_insult_quarrelsome|道德败坏的杂种
+str_lord_insult_pitiless|出身低微的小人物
+str_lord_insult_cunning|粗心的白痴
+str_lord_insult_sadistic|流鼻涕的坏蛋
+str_lord_insult_goodnatured|讨厌的家伙
+str_lord_insult_upstanding|可耻的恶棍
+str_rebellion_dilemma_default|【君主】
+str_rebellion_dilemma_martial|{s45}显然搞错了。虽然我向{s46}宣誓，但如果他的王位是篡夺而来的话，这并不能约束我一定得帮助他。
+str_rebellion_dilemma_quarrelsome|嗯。{s46}从来没有给我我应得的东西，所以我并不认为我欠他很多。无论如何，也许{s45}不是更好，而{s46}至少人们都知道。
+str_rebellion_dilemma_pitiless|嗯。{s45}说他是真正的王位继承人。这很好——这让我对{s46}不再忠诚。但我还是得仔细掂量我的决定。
+str_rebellion_dilemma_cunning|嗯。我向{s46}宣誓效忠，对于我们这些普通人来说，那样的誓言并没有什么力量。我们的责任是用我们自己的才能管理，不折不扣执行命令，以及防止所有可能的战争
+str_rebellion_dilemma_sadistic|嗯。在这个坏透了的世界，一个贤人必须要为他自己考虑，就和其他人一样。那么——从这里面我能得到什么？
+str_rebellion_dilemma_goodnatured|我不知道该说什么。我向{s46}宣誓认可他为法定的统治者，但如果他不是法定的统治者，我不知道我是否还受誓言的限制。
+str_rebellion_dilemma_upstanding|很麻烦。宣布我对{s46}的效忠无效且没用是件很严重的事情，而解除联盟会让我们的领地从没落成为无政府状态。我还是保证会支持继承的合法，而{s45}依然对王位拥有有效的主张。
+str_rebellion_dilemma_2_default|【君主】
+str_rebellion_dilemma_2_martial|另一方面，{s46}曾经领导着我们，而我讨厌背信弃义。
+str_rebellion_dilemma_2_quarrelsome|那么告诉我，我为什么要对我所认识的{reg3?人:那杂种}倒戈，让我所不认识的{reg3?人:那杂种}获利？
+str_rebellion_dilemma_2_pitiless|被询问我将立谁为这片领土的{reg3?统治者:国王} ，会让我处于一种非常危险的境地。然而那也将成为大好的时机，对我来说获取回报也是我的权益！
+str_rebellion_dilemma_2_cunning|{s46}已被质疑，因此他将不能像那些统治权没有被质疑的人那样政权稳定。然而如果{s45}用武力取得王位，{reg3?她:他}将不会像那些和平取得王位的人那样政权稳定。
+str_rebellion_dilemma_2_sadistic|如果我在{reg3?她:他}还暗弱的时候加入{s45}，{reg3?她:他}将让我发一笔，但如果我把你的人头带给{s46}他将给我更多的回报。
+str_rebellion_dilemma_2_goodnatured|{s46}待我不薄，然而他的确对{s45}做的不对。我在犹豫断绝我对{s46}的效忠，然而我还是不认为支持非正义的一方是正确的。
+str_rebellion_dilemma_2_upstanding|我觉得我必须为了领地尽力做任何事情，来避免它因为内战而被敌人掠夺并且荒废掉。
+str_rebellion_prior_argument_very_favorable|我已经听到了一些支持你的候选人获得王位的意见，而我有意倾向这些意见。
+str_rebellion_prior_argument_favorable|我已经听到了一些支持你的候选人获得王位的意见，而我有意倾向这些意见。
+str_rebellion_prior_argument_unfavorable|我已经听到了一些支持你的候选人获得王位的意见，而我并不认可这些意见。
+str_rebellion_prior_argument_very_unfavorable|我已经听到了一些支持你的候选人获得王位的意见，但是我不同意其中大部分的意见。
+str_rebellion_rival_default|【君主】
+str_rebellion_rival_martial|{s49}你的盟友{s44}曾经怀疑我的荣耀与勇气。我好不容易得到了在战场上和他面对面的机会，并让他收回他说的话。
+str_rebellion_rival_quarrelsome|{s49}你在帮{s44}工作。他是个狡猾的狐狸，我一点也不相信他。
+str_rebellion_rival_pitiless|{s49}你似乎在谋求{s44}的帮助——那个人很软弱，并且一点也不适合统治封地，而且我一直很讨厌那个人。
+str_rebellion_rival_cunning|{s49}{s44}，那个人已经加入了你，是个既不听命令又爱吵架，而且没有责任心的人。
+str_rebellion_rival_sadistic|{s49}我不想和你的盟友{s44}一起作战，那个人的道德表现令人恶心。
+str_rebellion_rival_goodnatured|{s49}我不想勉强和{s44}在同一方，那个人有点残忍的名声。
+str_rebellion_rival_upstanding|{s49}你的盟友{s44}在我看来是个危险，不可靠，而且非常不道德的人。
+str_rebellion_argument_favorable|我尊重你的一系列意见
+str_rebellion_argument_neutral|我发现你的一系列意见不是很吸引人
+str_rebellion_argument_unfavorable|我没有觉得你的一系列意见吸引人
+str_rebellion_persuasion_favorable|你的陈述有说服力
+str_rebellion_persuasion_neutral|你的陈述有道理
+str_rebellion_persuasion_unfavorable|你的陈述不令人相信
+str_rebellion_relation_very_favorable|我对你本人极为敬重。
+str_rebellion_relation_favorable|我了解并且敬重你本人。
+str_rebellion_relation_neutral|我不了解也不想了解你。
+str_rebellion_relation_unfavorable|我不信任你。
+str_and_comma_3|此外，
+str_but_comma_3|可是，
+str_and_comma_1|，并且
+str_but_comma_1|，但是
+str_and_comma_2|。而且，
+str_but_comma_2|。虽然如此，
+str_rebellion_agree_default|【君主】
+str_rebellion_agree_martial|我已经决定。我要支持{s45}作为合法的继承人。
+str_rebellion_agree_quarrelsome|啊哈，我已经考虑了很久。我不是很喜欢{s46}。让我们去夺走他的王位。
+str_rebellion_agree_pitiless|翻译错误，删除翻译【】【】
+; str_rebellion_agree_cunning|This is a most dangerous decision, but after careful consideration, I have decided that I will join you. Let's hope it is for the best.
+; str_rebellion_agree_sadistic|I have decided. I will back your {reg3?woman:man} {s45}. But you'd best make sure that {reg3?she:he} rewards me well!
+; str_rebellion_agree_goodnatured|All right. I think your {reg3?woman:man} will be a good ruler. I'll join you.
+; str_rebellion_agree_upstanding|So be it. My first duty is to this realm, and to save it from lawlessness I will back {s45} and renounce my homage to {s46}. May the Heavens forgive me if I do wrong.
+str_rebellion_refuse_default|【君主】
+str_rebellion_refuse_martial|对不起。{s45}的主张并不足以让我发动这片领土上可怜的穷人进行全民骚乱。我还是会继续支持{s46}。就算我做错了上天也会原谅我。
+str_rebellion_refuse_quarrelsome|不。你拥护的{s45}太嫩了，没有能力管理这片领地。我还是紧随{s46}。
+str_talk_later_default|【君主】
+str_talk_later_martial|现在不是谈政治的时候！我今天带着许多追随我的领主来，他们都全副武装准备战斗。你最好做好准备开始作战。
+str_talk_later_quarrelsome|你指望现在和我谈背叛我君主的事情，就在这四周都是他的军队的时候？你当我是什么？一个地道的白痴？
+str_talk_later_pitiless|闭嘴！现在四周都是我方的军队，此时此地，我怎么会讨论这件事。
+str_talk_later_cunning|此时此地完全不适合进行这样一场谈话。也许我们可以过一会或者在其它地方再谈，但现在我们依然是敌人。
+str_talk_later_sadistic|你应该闭上你的鸟嘴！你能想像如果其他的封臣听到我们讨论叛国的事情，那个后果有多严重吗？
+str_talk_later_goodnatured|你想和我谈叛国的事情是吗？还是等我们未被我君主的军队包围的时候再谈吧，那时候我将听听你要说什么。
+str_talk_later_upstanding|不管我对王位更替的合法性怎么看，我也不会在此时此地拿出来讨论。如果我们下次能私下见面的话，我将好好听听你的想法。但是现在，请把我当作是你的敌人。
+str_gossip_about_character_default|据说{s6}没什么有趣的个性。
+str_gossip_about_character_martial|据说{s6}是个战争狂。
+str_gossip_about_character_quarrelsome|据说{s6}很快就要和另一个领主开战，因为那个人拿他的鼻子开玩笑。
+str_gossip_about_character_selfrighteous|我听说{s6}处死了一名随从因为那个不幸的家伙在他的猎场里杀死了一头鹿。
+str_gossip_about_character_cunning|据说{s6}是个狡猾的对手。
+str_gossip_about_character_sadistic|据说{s6}喜欢折磨他的敌人。我可不想和他作对。
+str_gossip_about_character_goodnatured|据说{s6}是个好人，很善待他领地上的人民。所作所为比大多数贵族都好。
+str_gossip_about_character_upstanding|人们都说替{s6}工作是件不错的事。他对他的属下很好，如果他们干的好还会有回报。
+str_latest_rumor|你听到关于{s6}的最近一次传闻是：
+str_faction_strength_crushed|被毁灭
+str_faction_strength_spent_and_wavering|摇摇欲坠
+str_faction_strength_weakened|被削弱了的
+str_faction_strength_fair|一般
+str_faction_strength_average|平均水平
+str_faction_strength_strong|比较强大
+str_faction_strength_quite_strong|很强大
+str_faction_strength_very_strong|十分强大
+str_faction_strength_unmatched|无敌的
+str_faction_strength_last|无效
+str_theater_se|剛鐸
+str_theater_sw|洛汗
+str_theater_c|南罗马尼安
+str_theater_n|北罗马尼安
+str_faction_side_name|自由之民
+str_faction_side_name1|索伦之眼
+str_faction_side_name2|白袍巫师
+str_party_greet_friend_gondor|向您致意，刚铎的朋友！
+str_party_greet_enemy_gondor|如果你敢就举起你的烂刀吧，刚铎的敌人！
+str_party_greet_friend_dwarf|您好啊都灵的盟友，矮人的朋友。
+; str_party_greet_enemy_dwarf|Baruk Khazâd! Khazâd ai-mênu!
+str_party_greet_friend_rohan|向您致意，洛汗的盟友！
+str_party_greet_enemy_rohan|今天，你们将面对洛汗的骑士！
+str_party_greet_friend_mordor|为索伦之眼的胜利而战！
+str_party_greet_enemy_mordor|你的头很适合被挂在摩拉南大门的顶上!
+str_party_greet_friend_isengard|白掌万岁！
+str_party_greet_enemy_isengard|英明的主人很高兴看到你们的尸体！
+str_party_greet_friend_lorien|您好，罗瑞安之友！
+str_party_greet_enemy_lorien|没灵魂的东西，你们将在痛苦中死去！
+str_party_greet_friend_imladris|您好，瑞文戴尔和埃尔隆德的朋友！
+str_party_greet_enemy_imladris|今天，你们将会倒在我们的剑下！
+; str_party_greet_friend_woodelf|Hail, friend of the Silvan Elves of Mirkwood!
+str_party_greet_enemy_woodelf|凡是带着恶意进入幽暗密林者将永远无法离开这里!
+; str_party_greet_friend_dale|Hail, friend of proud Dale!
+; str_party_greet_enemy_dale|Draw your swords, we are the Men of Dale!
+str_party_greet_friend_harad|欢迎，哈拉德的朋友！
+str_party_greet_enemy_harad|你们的尸体应该被沙子埋没！
+; str_party_greet_friend_rhun|Greetings, friend of the Easterling tribes and Dorwinion!
+; str_party_greet_enemy_rhun|Dwarves and Men are no match for our fierceness!
+; str_party_greet_friend_khand|Jus jívati jyók, friend of the Variags! Your battle scars honour you.
+; str_party_greet_enemy_khand|Put on the masks of warriors, for today you shall meet your doom!
+; str_party_greet_friend_umbar|Ni-yôzi zirbîth kiyad, friend of the Corsairs!
+str_party_greet_enemy_umbar|如果我们在海上，你们很快就会成为鲨鱼的饲料！
+str_party_greet_friend_moria|白掌万岁！
+str_party_greet_enemy_moria|你的喉咙将会被莫利亚的刀切断！
+str_party_greet_friend_guldur|为索伦之眼的胜利而战！
+; str_party_greet_enemy_guldur|The Elves and their friends shall fall under our blades!
+; str_party_greet_friend_gundabad|Fear the power of Angmar!
+; str_party_greet_enemy_gundabad|We shall descend on you and feast on your entrails!
+; str_party_greet_friend_dunland|Hail, enemy of the horse-people!
+; str_party_greet_enemy_dunland|Your homes will burn and your families shall be cut down!
+; str_party_greet_friend_beorn|Hail, friend of Beorn!
+; str_party_greet_enemy_beorn|You will taste the fury of the bear people!
+str_subfaction_gondor_name_begin|剛鐸
+str_subfaction_gondor_name1|佩拉格
+str_subfaction_gondor_name2|多爾安姆羅斯
+; str_subfaction_gondor_name3|Lamedon
+str_subfaction_gondor_name4|洛薩那奇
+str_subfaction_gondor_name5|皮那斯傑林
+; str_subfaction_gondor_name6|Blackroot Vale
+; str_subfaction_gondor_name7|Ithilien
+; str_default_rumor|The War. Everybody is talking about the war.
+; str_rohan_rumor_begin|It breaks my heart to see my babies off to war! But without them the men would have to walk.
+; str_rohan_rumor_2|I hear orcs eat horses. Foul beasts! They also eat prisoners. That is bad too, of course.
+str_rohan_rumor_3|全天下就属洛汗的战马最好了，就连那些长耳朵的都从洛汗买马。
+str_rohan_rumor_4|如果您会治疗，希望您治疗一下我的战马们。
+str_rohan_rumor_5|他让我给他带8匹马，他在昨天对我说的。
+; str_rohan_rumor_6|Gondor prefers sturdier horses. Our riders enjoy speed. The Elves get only the best. And our enemies steal them!
+; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superiour but require a more experienced rider to handle.
+; str_rohan_rumor_8|Wargs are slower than horses but can turn faster. They are also quite fragile compared to a well-bred warhorse.
+; str_rohan_rumor_9|Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over.
+; str_rohan_rumor_10|Being the best horsemen in the realm starts with raising the best horses.
+; str_rohan_rumor_11|Most of the horses you see in Gondor came from us. They prefer a slightly stronger, slower horse that can carry their heavy armour.
+str_rohan_rumor_12|在洛汗马就像人一样。一匹好马就像一个好人，一匹坏马就像一个坏人。一匹马饿了就像一个人饿了，一匹马伤心了就像一个人难过了。我们说一匹马很快乐，就像一个人很幸福，一匹马走起来就好像一个人在步行。一匹马老了就像一个人老了，一匹马还年轻就像一个人还年轻。所以一匹老马就是一个老人，一匹马驹就是一个小孩。
+str_rohan_rumor_13|萨鲁曼的兽人很烦人，但是不用穿太精良的护具。因为它们没有什么好武器。
+str_rohan_rumor_14|我们的投斧和投矛看起看似笨重，不过你在马战的时候能有几次机会进行投掷呢？珍惜每次机会投一些有分量的东西吧。
+; str_rohan_rumor_15|Hitting an orc with an arrow loosed from horseback looks difficult because it is, but the price of charging a rank of long pikes is higher.
+str_rohan_rumor_16|刚铎有弓箭手，我们有弓骑兵，登兰德什么也没有。
+str_rohan_rumor_17|有的萨鲁曼的兽人弓箭手很厉害，有的却很怂。一位明智的指挥官是不会等到分辨清楚它们后才下命令的。
+str_rohan_rumor_18|现在我们都是战友！如果我们内讧的话，魔多的笑声会是我们唯一的礼物。
+str_rohan_rumor_19|我们一直在照看牲口和田地，建造我们的房子，打造我们的工具，或者驰骋在米纳斯提力斯的战场上。这就是我们说的男人的生活，男人的行事方式。
+str_gondor_rumor_begin|刚铎没有国王，而且敌人已经打到了家门口。东部的阴影越来越大，事情看起来很不妙啊。
+; str_gondor_rumor_2|In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?
+str_gondor_rumor_3|魔多的土地又干燥又贫瘠，它们在里面能吃什么？不会是吃同胞吧？可能真是……
+str_gondor_rumor_4|我们祖祖辈辈都在这片土地上劳作。我们的历史是光荣勇敢的，可是未来却充满了迷雾。
+str_gondor_rumor_5|索伦的大军的战备资源看起来是无穷无尽的，其实这些压力都背在他奴役的千千万万奴隶身上！
+str_gondor_rumor_6|我们都知道精灵在北方，但是现在谁也没有再见过他们。
+str_gondor_rumor_7|我看到了圣白树重新开花，国王头戴银冠回归，和平降临米纳斯提力斯。米那斯雅诺再次充满了光明和平公正，王后也越来越美丽！
+str_gondor_rumor_8|为什么昂巴要一直侵略我们？他们用海盗船来进行贸易多好。什么掠夺也比不上用从海上弄来的文物与刚铎贵族们交易所获得的利益多啊！
+; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
+str_gondor_rumor_10|吉尔加拉德是精灵之王。他的吟游诗人伤心的唱：世界上最后一片净土就在那山和海的尽头！
+str_gondor_rumor_11|多尔戈多？我从来没听说过这种地方。
+str_gondor_rumor_12|摩瑞亚？不是矮人的矿坑么？
+str_gondor_rumor_13|千万别告诉别人我说的这些话。我认为印拉希尔王子应该成为国王，摄政王迪耐瑟是个不错的人，不过刚铎在他的统治下已经渐渐没落。并不单单是因为他的大儿子离开了。
+str_gondor_rumor_14|有人说那九个戒灵又出现在米纳斯魔窟了。我希望能有像波罗莫一样勇敢的长官率领我们与这种古老的敌人对战！
+str_gondor_rumor_15|我们被南方人赶出了哈隆铎，他们在路上不停的袭击我们。我们希望能够不提心吊胆的通过兰班宁的绿色原野，可是却被告知这是不可能的。所有的战士都被调走去保护我们的国都了！
+str_gondor_rumor_16|我朋友的表弟在为贺路恩鲍曼干活，如果你问我的话，我认为他们的制服最好看了。
+str_gondor_rumor_17|伊瑞奇附近有一个奇怪的黑岩。我父亲叫我去看过一次。人们都说这是海国王的最后一个儿子睡的地方。而我却认为它不过是一块普通的石头而已。
+; str_gondor_rumor_18|We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt.
+str_dwarf_rumor_begin|他们问我矮人是否有朋友。我们当然有了！不过我们不太喜欢他们。
+str_dwarf_rumor_2|兽人？呸！他们只配为我们的斧头上油而已！
+; str_dwarf_rumor_3|What's that you're wearing? It doesn't look like it would protect you from a bee sting. And it looks funny.
+str_dwarf_rumor_4|我们当然可以骑马！只不过我们不想而已。
+; str_dwarf_rumor_5|Bugger off! We don't need your sort around here, the orcs are bad enough.
+str_dwarf_rumor_6|你说谁矮呢
+str_dwarf_rumor_7|你应该看过号角堡吧。有的时候我想，如果我们能在那挖掘的话……
+str_dwarf_rumor_8|我兄弟现在还在摩瑞亚，简直没法形容他了！不过我敢打赌他只是想保护自己的财产而已！
+str_dwarf_rumor_9|精灵？他们能为我们做什么？好吧，治疗，除了这个还能有什么呢？好吧，还有一点点的锻造技艺，还有什么么？确实他们抵抗黑暗大军，但是他们没有为我们做任何事！喂，我正跟你说话呢。
+str_dwarf_rumor_10|满满的一杯酒，烤的流油的猪和长满茂密胡子的女孩都是我的最爱！！
+; str_dwarf_rumor_11|Well, Brian, I'm opening a mine! What? Ugh? Well, Brian, I'm opening a mine!
+str_dwarf_rumor_12|我们矮人不会只挖掘一个通道通向矿山。还会有一个秘密通道。
+str_dwarf_rumor_13|冷酷是真男人的行事方式。
+; str_dwarf_rumor_14|Unwearied then were Durin's folk beneath the mountains music woke: The harpers harped, the minstrels sang, and at the gates the trumpets rang.
+; str_dwarf_rumor_15|*humms quietly* Kill the Men! Kill the Elves! Save the gold for ourselves!
+; str_mordor_rumor_begin|Lugbúrz commands!
+str_mordor_rumor_2|戒灵会攻占人类世界的！
+str_mordor_rumor_3|你为什么不去工作伙计！小心魔眼一直在盯着呢。
+; str_mordor_rumor_4|Soon, darkness comes! Durb-burz!
+str_mordor_rumor_5|我肚子饿了！食物在哪里？
+str_mordor_rumor_6|我们将在白城享用人类大餐！
+; str_mordor_rumor_7|Master trains Olog-hai for war!
+str_mordor_rumor_8|我靠！我的手指被座狼咬了！疼死我了！肮脏的该死的座狼！
+str_mordor_rumor_9|不要相信萨鲁曼养的蠢货！
+str_mordor_rumor_10|山地兽人都是垃圾，我们才最厉害！我们以部落奴隶为食！
+; str_mordor_rumor_11|Uruk glob ishi krimp shar-kûk.
+; str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
+; str_mordor_rumor_13|Snaga stole my meat, pushdug!
+; str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
+; str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
+str_mordor_rumor_16|谁侮辱了你就宰了他！谁和你打架就宰了他！谁瞪着你就宰了他！如果他死了，就吃掉他！
+; str_mordor_rumor_17|Saruman's uruk-hai say they don't mind the sun. Bûbhosh skai!
+str_mordor_rumor_18|全都死了，都烂掉了！无论精灵人类还是兽人，谁也不能活着通过死亡沼泽！
+; str_mordor_rumor_19|Come not between the Nazgûl and his prey!
+; str_mordor_rumor_20|Isengarders? The muck-rakers of a dirty little wizard! It's orc-flesh they eat, I'll warrant.
+str_mordor_rumor_21|幽暗密林其实已经被我们占领了，只不过精灵们不知道而已。
+; str_mordor_rumor_22|Crank up yer spotting if you don't want to get ambushed in Ithilien. Those damn greenhoods...
+; str_mordor_rumor_23|Where there's a whip there's a way.
+; str_isengard_rumor_begin|Sharkû commands!
+; str_isengard_rumor_2|Horse-men are food! Bubhosh!
+str_isengard_rumor_3|洛汗人会喜欢我们的长矛的！哈哈哈！
+; str_isengard_rumor_4|Saruman has many tricks! Strong steel and fire-stone!
+; str_isengard_rumor_5|Wild-men stink! But Sharkû is wise. He knows how to use them.
+; str_isengard_rumor_6|Moria-scum breed olog-hai! Big! Skai!
+str_isengard_rumor_7|萨鲁曼大人让强兽人更强！
+; str_isengard_rumor_8|Warg is faster than horse! Warg eats horse!
+str_isengard_rumor_9|强兽人将踏平洛汗！
+str_isengard_rumor_10|碾碎！碾碎！碾碎！
+; str_isengard_rumor_11|Uruk glob ishi krimp shar-kûk.
+str_isengard_rumor_12|烧毁森林！制造武器！干掉洛汗人！
+str_isengard_rumor_13|在狂战士把我们砍成碎片前离他们远点！
+; str_isengard_rumor_14|I saw a berserker get speared through by a horse-man lance. He pulled the manling off his horse by the lance through his guts.
+; str_isengard_rumor_15|I don't trust those little mountain orc swines. Isengarders will win this war, with or without them.
+; str_isengard_rumor_16|By the White Hand! What's the use of sending mountain-maggots to fight for us, only half-trained! Cursed goblins and orcs of the North!
+; str_isengard_rumor_17|I'd tickle some prisoners with my knife. Sometimes you need to make those miserable rats squeak!
+; str_isengard_rumor_18|There's only one thing the maggots and rats of Lugbúrz can do: they can see like gimlets in the dark.
+; str_isengard_rumor_19|We're cutting down the forest, but many orcs that go in, never come out.
+; str_isengard_rumor_20|Where there's a whip there's a way.
+; str_rhun_rumor_begin|Ride like the wind of the steppes!
+; str_rhun_rumor_2|The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us.
+; str_rhun_rumor_3|Three wizards came to our lands a while ago. I wonder what they are up to.
+; str_rhun_rumor_4|Our lands are vast and sparsely populated. But we know how to survive there.
+; str_rhun_rumor_5|We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!
+; str_rhun_rumor_6|Our cousins from Khand prefer to fight on foot, but we know being on a horse is better.
+; str_rhun_rumor_7|We have defeated Gondor legions before, and we will do it again!
+; str_rhun_rumor_8|We fight to the death! Never retreat, never turn and run! Not a step backwards!
+; str_rhun_rumor_9|A red dawn has risen in the east. A red dusk awaits the west!
+; str_rhun_rumor_10|Elven women? Nah. Too fragile!
+; str_rhun_rumor_11|Each of my sons has already brought me a head of an enemy. And my daughter the testicles of one. Ha ha ha!
+; str_rhun_rumor_12|Orcs are filthy beasts with no skill or courage. They have no place on the field of battle.
+; str_rhun_rumor_13|What's best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women.
+; str_dunland_rumor_begin|We won't rest until we are avenged and the strawheads are on their knees!
+; str_dunland_rumor_2|Rohirrim bastards are friendly with their horses at night! Ha ha ha!
+; str_dunland_rumor_3|Strawheads will cough out our land! Together with their blood! Gah!
+; str_dunland_rumor_4|Death to the Forgoil! Death to the Strawheads! Death to the robbers from the North!
+; str_dunland_rumor_5|They call it Rohan now, but it's our ancestral land! We will avenge our forfathers and chase off the dirty land-thieves.
+; str_dunland_rumor_6|Don't let the Forgoil catch you, or they will torture and burn you alive!
+; str_dunland_rumor_7|We are the bloodlust of the wolf and the strength of the boar!
+; str_dunland_rumor_8|Forgoil think we are savage and stupid. Let's see what they think after their horsemen meet our pikemen.
+; str_dunland_rumor_9|Isengard's crows will peck out Strawheads' eyes, Dunland's wolves will bite their throats.
+; str_dunland_rumor_10|I caught and killed a wolf with my bare hands. I will snap a horse-man's neck like a twig! Grrr!
+; str_dunland_rumor_11|Our chief found an old bronze sword in a barrow. He bent it and threw it in the marsh. Spirits of the hills will be on our side for sure. It is the old way.
+; str_dunland_rumor_12|My forefathers fought with Freca and later Wulf against the bloodied Forgoil. We remember their courage.
+str_beorn_rumor_begin|森林是广袤的，在他内部居住了数不清的生物。
+str_beorn_rumor_2|野蜂蜜简直棒呆了！
+str_beorn_rumor_3|精灵们是神秘的，矮人们是开朗的，河谷的人们是勤劳的。
+str_beorn_rumor_4|我们看到很多奇怪的野兽经过我们的土地！
+str_beorn_rumor_5|我睡了一整晚，工作了一整天！
+str_beorn_rumor_6|邪恶来自于山的另一边！
+; str_beorn_rumor_7|The great forest is not as it used to be anymore!
+str_beorn_rumor_8|斧头的强度并不在于斧刃，而在于斧柄。
+str_beorn_rumor_9|我们一般用睡眠来度过寒冬。什么？是的，如果冬天不睡觉的话会消耗更多的食物。
+str_beorn_rumor_10|洛汗人是我们的兄弟，熊人是我们的骨肉，兽人是我们的猎物！
+str_beorn_rumor_11|变熊？我们当然不会了！谁告诉你的，真搞笑哈哈哈哈哈！
+str_beorn_rumor_12|比翁是一个伟大的人。不，不是人，是巨人！
+str_beorn_rumor_13|（咆哮着）你有蜂蜜么！？
+; str_beorn_rumor_14|Don't wander off alone in the mountains! Bears and wolves stay away from larger groups of men. But hunger, or as some say - shadow spirits, may drive them close enough to attack you.
+; str_lorien_rumor_begin|O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. 
+str_lorien_rumor_2|永远不要和凯兰崔尔女王提什么邪恶。在她的土地上没有邪恶，除非有人把邪恶带进来。那样的话这个人要当心了。
+str_lorien_rumor_3|这的确是一个危险的世界，虽然有很多黑暗和邪恶，但也有许多公平和正义；虽然很多地方都充满了血泪，但是希望永不消失。
+; str_lorien_rumor_4|Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house.
+str_lorien_rumor_5|不要让复仇蒙蔽了双眼。
+str_lorien_rumor_6|古老的魔法一直守护着洛丝萝林，他是如此的强大，任何黑暗都无法战胜他。
+; str_lorien_rumor_7|Nathlo i nathal! You are safe within the golden woods. Posto vae - rest now, eat and drink. If you must leave then, carry with you a memory of how Lorien once was.
+; str_lorien_rumor_8|It is said that the sea calls to everyone, sooner or later. I too shall hear the gulls one day, leave Laurelindórenan for good. I Harthon an lend and. 
+; str_lorien_rumor_9|Av-'osto - do not be afraid! More than our grey cloaks protect us from the enemy here.
+str_imladris_rumor_begin|愿人类，精灵和所有追寻自由的民族与你同在！
+str_imladris_rumor_2|愿星尘照耀着你！
+; str_imladris_rumor_3|He that breaks a thing to find out what it is has left the path of wisdom.
+str_imladris_rumor_4|我们要走的路很艰难，并且前路充满了不可预知的危险。但是只要心存希望，我们必将成功。
+str_imladris_rumor_5|绝望的人将被黑暗吞噬，我们绝不能放弃希望。
+str_imladris_rumor_6|春天到来前的冬日是最寒冷的，黎明前的黑夜是最漫长的。
+; str_imladris_rumor_7|So many had gathered when last I rode to war. The light of the drawing of our swords was like a fire in a field of reeds. So few have left Imladris now. 
+; str_imladris_rumor_8|Áva rucë! The Eldar have taken arms to fight the enemy alongside brave Edain once more.  Perhaps for the last time, who knows? We sing of war, of fire and the end of the Night.
+; str_imladris_rumor_9|I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours.
+; str_woodelf_rumor_begin|An Elven-maid there was of old, /A shining star by day: /Her mantle white was hemmed with gold, /Her shoes of silver-grey.
+str_woodelf_rumor_2|时间的流逝永不停息，但并不是所有的东西和地方都会随着时间的推移而改变。时间对于精灵来说虽然也有作用，但是却很小。因为他们自己变化不大。对他们来说这其实是一个悲剧，因为他们从不去计算走过了多少岁月。
+str_woodelf_rumor_3|黑暗和邪恶正在逐渐玷污这座森林。除非阻止他们，否则他们将毁灭所有的光明和希望。
+; str_woodelf_rumor_4|Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?
+str_woodelf_rumor_5|嘘……不要大声说话。半兽人可能正在某处监视我们，我们需要保持警惕。
+str_woodelf_rumor_6|（这个精灵一动不动的瞪着你，你的到来显然惹恼了他）
+str_woodelf_rumor_7|你是从何处前来？我们需要知道你来这的目的，要知道萨鲁曼的间谍到处都是。
+; str_woodelf_rumor_8|Edain of Dale make intricate toys these days! They've learnt much from the Naugrim.
+; str_woodelf_rumor_9|The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!
+str_dale_rumor_begin|原来是龙，现在又是这……
+str_dale_rumor_2|来自北方的兽人威胁还不够，现在东边又来了一群不不速之客！
+str_dale_rumor_3|自从打败了龙以后，我们学会了如何寻找敌人的弱点。
+str_dale_rumor_4|我和我们的矮人盟友绝对不会让那些野蛮人越雷池一步的。
+str_dale_rumor_5|你在长湖看过日出么？那种美景简直无法形容。但是现在我只能看到天边的血色。这可不是什么好兆头。
+str_dale_rumor_6|矮人有点过于重视他们的宝藏了。到现在我们仍然不知道索林在想些什么。
+str_dale_rumor_7|洛汗人与我们是近亲，他们的语言和我们的很相似。
+str_dale_rumor_8|你知道吗？伊斯卡拉斯的名字来自于精灵语的“芦苇”，因为这的河岸长满了芦苇。
+str_dale_rumor_9|龙是一种可怕的怪物，没人希望再次遇见它们。
+str_dale_rumor_10|我们的经济来源于和精灵，矮人的贸易。不过你要知道，和矮人讨价还价简直自讨苦吃，所以和矮人交易获利很少。
+str_harad_rumor_begin|黑蛇的行动是迅速而致命的！
+; str_harad_rumor_2|By the Serpent! Our beasts will trample Gondorians into the dirt.
+; str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus!
+; str_harad_rumor_4|There is much gold and gems in Gondor. And even more in the lands beyond.
+; str_harad_rumor_5|We will catch many western weaklings and sacrifice them to the Serpent God.
+; str_harad_rumor_6|Corsairs have their uses, they sail well, but are rowdy and unclean in appearance and sneaky in behaviour.
+; str_harad_rumor_7|I'd never set foot on a ship. Corsairs can have all the seas as far as I am concerned.
+str_harad_rumor_8|侃德的战士是凶猛,无所畏惧的,但他们的头脑太简单了。
+; str_harad_rumor_9|I'm counting on good loot in the West. We were promised it. Then I can return home and run my carpet shop in peace.
+; str_harad_rumor_10|Keep away from the Mumakil. They are ill-tempered beasts and will squash you in an instant.
+; str_harad_rumor_11|In Harad we have deserts and jungles, mountains and sea. Our peoples are as diverse as our lands and as numerous as the grains of sand.
+; str_harad_rumor_12|Many knights from Harondor prefer sabres over straight blades. They're quite good for cutting down running peasants, but you need a spear or a good sword to penetrate strong armour.
+; str_harad_rumor_13|My blood brother signed up with the Karka - he's a scout now. Riders of 'The Fang' lead a dangerous life, but it is good experience for young hot-headed boys.
+; str_harad_rumor_14|Don't ever pick a fight with the Lion brotherhood! Their reputation is well earned.
+; str_harad_rumor_15|I wish we had more weapons made of black iron. Many still have to manage with bronze, some even with wooden clubs and javelins of black glass, running into battle naked.
+; str_gunda_rumor_begin|Take warm lands from men we come!
+; str_gunda_rumor_2|Sharkû promised warm caves.
+; str_gunda_rumor_3|Enough hiding in the cold mountains! Now we march into warm lands of men.
+; str_gunda_rumor_4|We saw a slimy skulker in our mountain tunnels, but could never catch him. He just disappeared when we got close.
+; str_gunda_rumor_5|The Isengarders think they're something special because the old man is equipping them.
+; str_gunda_rumor_6|We will burn the villages of men to keep us warm.
+; str_gunda_rumor_7|Manlings will feel the frostbite we will bring to them. And afterwards the fire. Ha ha ha!
+; str_gunda_rumor_8|Azog and Bolg almost defeated dwarves, elves and manlings last time. But bird-monsters and bear-men saved them. *spit*
+; str_gunda_rumor_9|Dwarf-flesh is tough and stringy. Man-flesh is better.
+; str_gunda_rumor_10|Bear-men came from the woods and ate Boldush. Bad luck for Boldush! Ha ha ha!
+; str_gunda_rumor_11|Some moved to Moria, much room there. But also Ghâsh in the deep. Best stay away!
+; str_moria_rumor_begin|When you hear drums - run and hide!
+; str_moria_rumor_2|Ghâsh is in the deep!
+; str_moria_rumor_3|Doom! Doom! Doom! Drums of the deep.
+; str_moria_rumor_4|Moria is big, but no dwarves hide in it anymore.
+str_moria_rumor_5|矮人挖得越深。就对我们越有利。哈哈哈!
+; str_moria_rumor_6|Many tunnels in Moria. We don't go to all.
+; str_moria_rumor_7|Some manlings and dwarves sneaked past our sentries in the mines a while ago. We doubled the watch since.
+str_moria_rumor_8|矮人永远不会涉足到这儿来了!永远！
+str_moria_rumor_9|当我们聚集足够的部队，我们将去烧毁精灵树林。
+str_moria_rumor_10|在摩瑞亚没有多少食物。我们很饿。必须抓一些人类和精灵！
+str_moria_rumor_11|有些家伙去了南方的森林。没有一个出来。
+str_umbar_rumor_begin|所有的海域都属于黑帆！
+str_umbar_rumor_2|刚铎已经没有船让我们抢，现在我们将去岸上掠夺！
+; str_umbar_rumor_3|Umbar is our fate! And it will be Gondor's too.
+; str_umbar_rumor_4|Gondorians can't sail! They've got land-legs.
+; str_umbar_rumor_5|We've killed Gondorian kings in the past. Now they don't even have a king for us to kill.
+; str_umbar_rumor_6|The sneaky Gondorians burned our fleet years ago. Now it's Gondor that'll burn.
+; str_umbar_rumor_7|Nothing the sea can throw at us frightens a corsair. But we heard some disturbing rumours about abominations on land.
+; str_umbar_rumor_8|We will spill over Gondor like a giant wave and reclaim our long lost lands.
+str_umbar_rumor_9|你知道么，哈拉德人可不喜欢喝朗姆酒。不过，咱爷们倒是喜欢的很，喝完之后啊，老子握鱼叉的手都稳当的很！
+str_umbar_rumor_10|我看到了一些侃德人和维瑞亚人的战斗。我可不想在战场上遇到他们，还好他们和我们是一伙的。
+str_khand_rumor_begin|无论多么血腥，战斗就是战斗。但是撤退是最大的耻辱！
+str_khand_rumor_2|我们的剑一旦拔出，必须见血！
+str_khand_rumor_3|大地在我们的重骑兵脚下颤抖，敌人一提起我们就发抖。
+; str_khand_rumor_4|This time we left the Wainriders behind, our attack will catch the enemies off guard.
+str_khand_rumor_5|我们来自侃德的维瑞亚地方，最英勇的战士！
+str_khand_rumor_6|卢恩战士太猛了，但他们在马背上战斗，我们宁愿步行打伤敌人。
+; str_khand_rumor_7|We have fought Gondorians in the past, this time we will finish them for good!
+; str_khand_rumor_8|The West is weak and decadent. They have no warrior spirit. They will fall to our swords and axes.
+str_khand_rumor_9|我们不抢金钱和奴隶,我们想要的是有尊荣和威严!
+str_khand_rumor_10|西部的人们都是傲慢的，他们不知道可能将面对的是什么！
+; str_khand_rumor_11|We trade with Rhun, Mordor and Harad. And sometimes we fight them too. It is the way of our people.
+; str_khand_rumor_12|Have you made your warrior mask yet? You'll need one soon! If the enemy can't see your face, his spirit won't be able to find you.
+; str_good_rumor_begin|From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.
+str_good_rumor_2|兽人夜战很强悍，但白天就比较弱了。
+str_good_rumor_3|强兽人是不同种类的兽人,不害怕阳光!
+; str_good_rumor_4|Always after a defeat and a respite, the Shadow takes another shape and grows again.
+; str_good_rumor_5|The Dead Marshes... a land defiled, diseased beyond all healing.
+; str_good_rumor_6|The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them.
+; str_good_rumor_7|Greenwood it used to be called and full of elves it was. Greatest of the forests of the Northern world. But now it's Mirkwood. Crawling with all manner of evil creatures.
+; str_good_rumor_8|The Argonath, The Pillars of the Kings, great guardians of the old northern border of Gondor.
+; str_good_rumor_9|Amon Hen is the westernmost of the three peaks at the southern end of Nen Hithoel.
+str_neutral_rumor_begin|明天任何事都可能改变…
+str_neutral_rumor_2|死亡沼泽…一个肮脏和容易患病的地方。
+; str_neutral_rumor_3|The land used to be much different once.
+; str_neutral_rumor_4|Stay clear of Fangorn forest.
+str_evil_rumor_begin|兽人习惯夜间作战，人类擅长白天作战。
+str_evil_rumor_2|对付骑兵用长枪，对付步兵用弓箭，对付弓箭用盾牌！
+; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
+str_legendary_rumor_begin|据说法贡森林的树会窃窃私语。
+str_legendary_rumor_amonhen|有人说在安都因河谷的巨型雕像附近有一处隐秘地点。
+; str_legendary_rumor_deadmarshes|It is rumoured all dead seems alive in the middle of Dead Marshes.
+; str_legendary_rumor_mirkwood|Creatures other than orcs crawl around Mirkwood.
+str_legendary_rumor_fangorn|最好不要靠近法贡森林。那里经常发生一些奇怪的事情。
+str_last_rumor|最近没什么特别的情况。
+str_ent_rumor_begin|现在不要着急……
+; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
+str_ent_rumor_3|古树人语是一种很可爱的语言，但是想用它说什么事情都需要很长时间。所以我们一般不说话，除非这件事值得花费我们很长时间去听和说。
+str_gondor_rank_0|刚铎平民
+str_gondor_rank_1|刚铎士兵
+str_gondor_rank_2|刚铎军士
+str_gondor_rank_3|剛鐸騎士
+str_gondor_rank_4|刚铎高塔卫士
+str_gondor_rank_5|刚铎堡垒骑士
+str_gondor_rank_6|刚铎斯图尓德卫队
+str_gondor_rank_7|剛鐸隊長
+str_gondor_rank_8|刚铎队长
+str_gondor_rank_9|刚铎英雄
+str_dwarf_rank_0|矮人青年
+str_dwarf_rank_1|矮人矿工
+str_dwarf_rank_2|矮人武士
+str_dwarf_rank_3|长须矮人
+str_dwarf_rank_4|矮人斧手
+str_dwarf_rank_5|矮人斧手大师
+str_dwarf_rank_6|灰胡矮人
+str_dwarf_rank_7|矮人队长
+str_dwarf_rank_8|矮人首领
+str_dwarf_rank_9|山丘之王
+; str_rohan_rank_0|Ceorl, Commoner of Rohan
+; str_rohan_rank_1|Thain, Servant of Rohan
+; str_rohan_rank_2|Léod, Freeman of Rohan
+; str_rohan_rank_3|Rohir, Rider of Rohan
+; str_rohan_rank_4|Scyldbora, Shieldbearer of Rohan
+; str_rohan_rank_5|Swéordbora, Swordbearer of Rohan
+; str_rohan_rank_6|Frumgar, First Spear of Rohan
+; str_rohan_rank_7|Bealdoraed, Master Adviser of Rohan
+; str_rohan_rank_8|Eorl, Nobleman of Rohan
+; str_rohan_rank_9|Haleth, Hero of Rohan
+str_mordor_rank_0|虫子
+str_mordor_rank_1|奴隶
+str_mordor_rank_2|葛哥洛斯阴谋者
+str_mordor_rank_3|西力斯昂哥哨兵
+str_mordor_rank_4|乌顿的奴隶
+str_mordor_rank_5|德桑城堡掠夺者
+str_mordor_rank_6|魔拉南看守者
+str_mordor_rank_7|米纳斯魔窟队长
+str_mordor_rank_8|巴拉多指挥官
+str_mordor_rank_9|人类毁灭者
+str_isengard_rank_0|鼠
+str_isengard_rank_1|奴隶
+str_isengard_rank_2|车工
+str_isengard_rank_3|焚树者
+str_isengard_rank_4|座狼饲养者
+str_isengard_rank_5|融铁者
+str_isengard_rank_6|铸造大师
+str_isengard_rank_7|欧散克塔队长
+str_isengard_rank_8|白掌军团司令
+str_isengard_rank_9|白袍巫师的右手
+; str_lorien_rank_0|Sador, Faithful to Lorien
+; str_lorien_rank_1|Tauron, Forester of Lorien
+; str_lorien_rank_2|Mifaron, Grey Hunter of Lorien
+; str_lorien_rank_3|Thindirith, Grey Guard of Lorien
+; str_lorien_rank_4|Thangyl, Shieldbearer of Lorien
+; str_lorien_rank_5|Maglagyl, Swordbearer of Lorien
+; str_lorien_rank_6|Tiribrannon, Warden of Lorien
+; str_lorien_rank_7|Glaurchir, Grandmaster of Lorien
+; str_lorien_rank_8|Galadhîr, Radiant Lord of Lorien
+; str_lorien_rank_9|Thalion, Hero of Lorien
+; str_imladris_rank_0|Háno, Brother of Imladris
+; str_imladris_rank_1|Macar, Warrior of Imladris
+; str_imladris_rank_2|Sindacollo, Grey Cloak of Imladris
+; str_imladris_rank_3|Luinëcollo, Blue Cloak of Imladris
+; str_imladris_rank_4|Turmacolindo, Shieldbearer of Imladris
+; str_imladris_rank_5|Langocolindo, Swordbearer of Imladris
+; str_imladris_rank_6|Aráto, Champion of Imladris
+; str_imladris_rank_7|Hesto, Captain of Imladris
+; str_imladris_rank_8|Runando, Redeemer of Imladris
+; str_imladris_rank_9|Callo, Hero of Imladris
+; str_woodelf_rank_0|Sador, Faithful to Greenwood
+; str_woodelf_rank_1|Tauron, Forester of Greenwood
+; str_woodelf_rank_2|Hirfaron, Master Hunter of Greenwood
+; str_woodelf_rank_3|Calendirith, Green Guard of Greenwood
+; str_woodelf_rank_4|Thangyl, Shieldbearer of Greenwood
+; str_woodelf_rank_5|Maglagyl, Swordbearer of Greenwood
+; str_woodelf_rank_6|Tiribrannon, Warden of Greenwood
+; str_woodelf_rank_7|Pengherdir, Bowmaster of Greenwood
+; str_woodelf_rank_8|Armagor, Royal Swordsman of Greenwood
+; str_woodelf_rank_9|Thalion, Hero of Greenwood
+str_dale_rank_0|河谷市民
+str_dale_rank_1|河谷自由民
+str_dale_rank_2|河谷士兵
+str_dale_rank_3|河谷船员
+str_dale_rank_4|河谷负盾者
+str_dale_rank_5|河谷持剑者
+str_dale_rank_6|河谷射手
+str_dale_rank_7|河谷队长
+str_dale_rank_8|河谷大师
+str_dale_rank_9|河谷英雄
+str_harad_rank_0|部落新丁
+str_harad_rank_1|部落青年
+str_harad_rank_2|部落勇士
+str_harad_rank_3|弑狮者
+str_harad_rank_4|耍蛇者
+str_harad_rank_5|猛犸骑手
+str_harad_rank_6|黑蛇卫队
+str_harad_rank_7|哈隆多卫队长
+str_harad_rank_8|沙漠将军
+str_harad_rank_9|金蛇战士
+str_rhun_rank_0|卢恩居民
+str_rhun_rank_1|卢恩农奴
+str_rhun_rank_2|卢恩勇士
+str_rhun_rank_3|卢恩斗牛勇士
+str_rhun_rank_4|卢恩负盾者
+str_rhun_rank_5|卢恩持剑者
+str_rhun_rank_6|卢恩马术大师
+str_rhun_rank_7|卢恩军阀
+str_rhun_rank_8|草原部落酋长
+str_rhun_rank_9|可汗右手
+str_khand_rank_0|侃德居民
+str_khand_rank_1|侃德农奴
+str_khand_rank_2|侃德勇士
+str_khand_rank_3|侃德雄鹰勇士
+str_khand_rank_4|侃德负盾者
+str_khand_rank_5|侃德持剑者
+str_khand_rank_6|侃德军阀
+str_khand_rank_7|维瑞亚军阀
+str_khand_rank_8|维瑞亚部族首领
+str_khand_rank_9|传说征服者
+str_umbar_rank_0|旱鸭子
+str_umbar_rank_1|甲板员
+str_umbar_rank_2|水手
+str_umbar_rank_3|鱼叉手
+str_umbar_rank_4|割喉刀
+str_umbar_rank_5|割喉刀2个一样？！wtf
+str_umbar_rank_6|船长
+str_umbar_rank_7|昂巴队长
+str_umbar_rank_8|舰队指挥官
+str_umbar_rank_9|海军统领
+str_moria_rank_0|蛆虫
+str_moria_rank_1|奴隶
+str_moria_rank_2|通道老鼠
+str_moria_rank_3|掘洞者
+str_moria_rank_4|矿工掠夺者
+str_moria_rank_5|大厅掠夺者
+str_moria_rank_6|矮人克星
+str_moria_rank_7|哥布林军阀
+str_moria_rank_8|哥布林族长
+str_moria_rank_9|深渊恐惧
+str_guldur_rank_0|虫子
+str_guldur_rank_1|奴隶
+str_guldur_rank_2|葛哥洛斯阴谋者
+str_guldur_rank_3|西力斯昂哥哨兵
+str_guldur_rank_4|乌顿的奴隶
+str_guldur_rank_5|德桑城堡掠夺者
+str_guldur_rank_6|魔拉南看守者
+str_guldur_rank_7|米纳斯魔窟队长
+str_guldur_rank_8|巴拉多指挥官
+str_guldur_rank_9|人类毁灭者
+str_gundabad_rank_0|粪便
+str_gundabad_rank_1|奴隶
+str_gundabad_rank_2|通道老鼠
+str_gundabad_rank_3|掘洞者
+str_gundabad_rank_4|丘陵掠夺者
+str_gundabad_rank_5|山脉掠夺者
+str_gundabad_rank_6|矮人克星
+str_gundabad_rank_7|座狼骑手督军
+str_gundabad_rank_8|巨型哥布林
+str_gundabad_rank_9|北部掠夺者
+str_dunland_rank_0|小狗
+str_dunland_rank_1|狗
+str_dunland_rank_2|军犬
+str_dunland_rank_3|狼
+str_dunland_rank_4|强壮的狼
+str_dunland_rank_5|恐狼
+str_dunland_rank_6|恐狼
+str_dunland_rank_7|巨狼
+str_dunland_rank_8|氏族首领
+str_dunland_rank_9|费瑞卡复仇者
+str_beorn_rank_0|森林小子
+str_beorn_rank_1|森林寻路者
+str_beorn_rank_2|森林猎人
+str_beorn_rank_3|森林游侠
+str_beorn_rank_4|森林负盾者
+str_beorn_rank_5|森林持斧者
+str_beorn_rank_6|森林之熊
+str_beorn_rank_7|森林巨熊
+str_beorn_rank_8|森林巨人
+str_beorn_rank_9|森林英雄
+str_tld_introduction|TLD介绍：你应该去伊多拉斯！
+str_tld_erebor_dungeon|这里有死亡的气味，我应该小心一些。
+str_tld_spear_hit|啊噢！
+str_fullname_region_unknown|不名之地,中土的某个地方
+str_fullname_region_pelennor|帕兰诺平原，米纳斯提里斯就位于那里，自由人民的国家——刚铎的首都所在。
+str_fullname_region_subfac_pelargir|兰班宁，刚铎的一部分。
+str_fullname_region_subfac_dol_amroth|贝尔法拉斯，刚铎南部就在这里崛起。
+str_fullname_region_subfac_ethring|林罗谷，刚铎领地内的一个峡谷。
+str_fullname_region_subfac_lossarnach|罗萨那其，许多人叫它花之谷，也是刚铎的一部分。
+str_fullname_region_subfac_pinnath_gelin|皮纳斯杰林的一座小山，这里是刚铎的地方。
+str_fullname_region_subfac_blackroot|这里是刚铎领地拉密顿。
+str_fullname_region_n_ithilien|北伊西利安，刚铎的领地。
+str_fullname_region_c_ithilien|艾明亚南，一个离刚铎首都隔了一条河的地方，这里有些部分属于伊西利安。
+str_fullname_region_s_ithilien|南伊西利安，这里是刚铎最远的城市，与其说是城市，不如说是前哨。
+str_fullname_region_druadan_forest|督伊顿森林，刚铎的森林。
+str_fullname_region_firien_wood|费理安森林,刚铎所有的一片安静的林子，这里全是橡树。
+str_fullname_region_anorien|安诺瑞尔，许多人叫它太阳之地，这里是个小村子，在白山和安都因河之间。
+; str_fullname_region_rohan0|the Folde, the heart of Rohan
+str_fullname_region_rohan1|东洛汗，洛汗国的一部分，骑士的据点。
+str_fullname_region_rohan2|西洛汗，洛汗国的一部分，骑士的据点。
+str_fullname_region_rohan3|安诺瑞安东境，洛汗国的一部分，骑士的据点。
+str_fullname_region_rohan4|安诺瑞安西境，洛汗国的一部分，骑士的据点。
+str_fullname_region_rohan5|圣盔谷，白山脉的一部分，洛汗领地。
+str_fullname_region_the_wold|沃德，北边的骑士据点，洛汗领地。
+; str_fullname_region_gap_of_rohan|the Gap of Rohan, the eastermost border of Rohan, a contested area between the Rohirrim and the Dunlendings.
+str_fullname_region_entwash|树沐河河口，在这里这条洛汗的河与安都因河相汇。
+; str_fullname_region_wetwang|Nindalf, the swamps of Wetwang
+str_fullname_region_dead_marshes|死亡沼泽，曾经的达哥拉之战就在这里开战，而现在这里是一块受诅咒的地方
+str_fullname_region_isengard|艾辛格周边的平原。
+str_fullname_region_fangorn|法贡森林，据说这里的树会说话，而这里也因此闻名。
+str_fullname_region_brown_lands|褐地,在艾明莫尔与幽暗密林之间。
+; str_fullname_region_dagorlad|the Dagorlad, the great, treeless, expanse of The Battle Plain, before the gates of Mordor
+; str_fullname_region_n_undeep|the North Undeep, the larger of the two Anduin meanders
+; str_fullname_region_s_undeep|the South Undeep, the lesser of the two large Anduin bends
+; str_fullname_region_emyn_muil|Emyn Muil, the rocky hills above the inflow of the Entwash
+str_fullname_region_misty_mountains|迷雾山脉
+str_fullname_region_lorien|罗瑞安，辛达精灵之森林，黄金梅隆树生长的地方
+str_fullname_region_anduin_banks|安都因河谷，在灰色山脉与幽暗密林之间
+str_fullname_region_n_mirkwood|北部幽暗密林中，木精灵在那里居住
+str_fullname_region_s_mirkwood|南部幽暗密林中，说是存在几个奇怪的种族
+str_fullname_region_above_mirkwook|北罗马尼安荒原，幽暗密林与灰色山脉之间区域的北方
+str_fullname_region_grey_mountains|灰色山脉，矮人们的领地
+str_fullname_region_mordor|魔多，黑暗魔君索伦的领地
+str_shortname_region_unknown|不名之地
+str_shortname_region_pelennor|帕兰诺平原
+str_shortname_region_subfac_pelargir|兰班宁
+str_shortname_region_subfac_dol_amroth|贝尔法拉斯
+str_shortname_region_subfac_ethring|林罗谷
+str_shortname_region_subfac_lossarnach|罗萨那奇
+str_shortname_region_subfac_pinnath_gelin|皮那斯杰林
+str_shortname_region_subfac_blackroot|拉密顿
+str_shortname_region_n_ithilien|北伊西利安
+str_shortname_region_c_ithilien|艾明亚南
+str_shortname_region_s_ithilien|南伊西立安
+str_shortname_region_druadan_forest|德鲁阿丹森林
+str_shortname_region_firien_wood|费理安森林
+str_shortname_region_anorien|安诺瑞安
+str_shortname_region_rohan0|佛德
+str_shortname_region_rohan1|东洛汗
+str_shortname_region_rohan2|西洛汗
+str_shortname_region_rohan3|東谷
+str_shortname_region_rohan4|西谷
+str_shortname_region_rohan5|圣盔谷
+str_shortname_region_the_wold|荒原
+str_shortname_region_gap_of_rohan|洛汗隘口
+; str_shortname_region_entwash|the Mouths of the Entwash
+str_shortname_region_wetwang|宁道夫沼泽
+str_shortname_region_dead_marshes|死亡沼泽
+str_shortname_region_isengard|艾辛格周边的平原。
+str_shortname_region_fangorn|法贡森林
+str_shortname_region_brown_lands|褐地
+str_shortname_region_misty_mountains|迷雾山脉
+str_shortname_region_lorien_|罗瑞安
+str_shortname_region_anduin_banks_|安杜因河谷
+str_shortname_region_n_mirkwood_|北幽暗密林
+str_shortname_region_s_mirkwood_|南幽暗密林
+str_shortname_region_above_mirkwook|北罗马尼安荒原
+str_shortname_region_grey_mountains|灰山山峦
+str_shortname_region_mordor|魔多之地
+str_trait_title_elf_friend|精灵之挚
+str_trait_desc_elf_friend|您受到精灵们的高度尊重，他们把您当作可森林的挚友。这将影响到征募精灵部队的费用以及您将可能对精灵部队下命令。
+str_trait_title_gondor_friend|总理之赞
+str_trait_desc_gondor_friend|您受到斯图尔特·迪耐瑟摄政王的高度敬重，您在钢铎的地位将获得提升。这将影响到征募有经验的钢铎部队的费用以及您将可能对钢铎部队下达命令。
+str_trait_title_rohan_friend|国王之信
+str_trait_desc_rohan_friend|您受到洛汗的希优顿国王的高度信任，您在洛汗的地位将获得提升。这将影响到征募有经验的洛汗部队的费用以及您将可能对洛汗部队下达命令。
+str_trait_title_brigand_friend|蛮人之尊
+str_trait_desc_brigand_friend|您受到野蛮人部落的高度敬重，这是因为您在他们的竞技场中给大家带来了深刻的印象。这将降低野蛮人的费用.
+str_trait_title_blessed|神眷之祝
+str_trait_desc_blessed|您看起来受到深海处所传来的神力的祝福，或许这种情况将依然持续一段时间。你不知道为什么会有这种事情发生，或者说，这将意味着您是可靠的。
+str_trait_title_reverent|众望之敬
+str_trait_desc_reverent|您被传颂为威严与智慧的化身。人族和精灵们总喜欢聆听您的教诲。
+str_trait_title_merciful|仁慈之名
+str_trait_desc_merciful|你因为仁慈的对待敌人而声名远播.然而一些强硬派对你的仁慈颇有意见,部队的士气因此受到影响.从好的方面来看,你的仁慈仍然被视作是高贵人格的体现,你在影响力方面获得奖励.
+str_trait_title_bravery|临危之勇
+str_trait_desc_bravery|您在巨大危难中挺身而出，被众人传颂为勇者。您的英姿深深吸引着您的部下，让他们在每周的战斗中获得更强的士气。
+str_trait_title_oathkeeper|信守之誓
+str_trait_desc_oathkeeper|您曾立下严酷的誓言，却没有让其兑现。最后，您被嘲笑为言过其实之人。您的影响力都将以周的速度降低。
+str_trait_title_oathbreaker|群兽之拥
+str_trait_desc_oathbreaker|您在残酷的兽人之间的战斗中存活下来，并获得狂暴勇士的称号。这样的实力让追随您的部下兽血沸腾，并使他们在每周的战斗中获得更强的士气。
+str_trait_title_orc_pit_champion|三光之掠
+str_trait_desc_orc_pit_champion|您在残酷的兽人之间的战斗中存活下来，并获得狂暴勇士的称号。这样的实力让追随您的部下兽血沸腾，并使他们在每周的战斗中获得更强的士气。
+str_trait_title_despoiler|三光之掠
+str_trait_desc_despoiler|您每到一处，总是留在队伍后面肆意地破坏，您的这种暴行在队伍中广为流传。这样的举止被您所臣服的黑暗势力所赞扬。您的影响力将每周提高。
+str_trait_title_accursed|神怒之咒
+str_trait_desc_accursed|您感受到大海深处传来了神的忿怒。您的追随者们也感应到这些，并害怕在您的身边停留。他们每周都会士气低沉。
+str_trait_title_stealthy|无间之道
+str_trait_desc_stealthy|您学到了秘密潜行的不凡技艺。您获得了每次秘密行动任务都能保证的潜行级别。
+str_trait_title_berserker|兽血之狂
+str_trait_desc_berserker|在后来的许多场战斗之中，您总在狂暴的驱使下仅以肉躯冲锋陷阵。您将获得在战斗中面临巨创的时候拥有临时生命奖励。这样，虽然不会让您补满所有力气，却能让您在所有人都因伤不能动弹的时候仍然在战场上活跃。
+str_trait_title_infantry_captain|肉搏之掌
+str_trait_desc_infantry_captain|您学到了统领步战部队的不凡技能。在严格而系统的训练下，士兵们获得一些细小的体质改善，这将体现在每一场战斗中他们受伤的时候。
+str_trait_title_archer_captain|射击之司
+str_trait_desc_archer_captain|您学到了统领箭术部队的不凡技能。在严格而系统的训练下，士兵们获得一些细小的体质改善，这将体现在每一场战斗中他们受伤的时候。
+str_trait_title_cavalry_captain|陷阵之控
+str_trait_desc_cavalry_captain|您学到了统领骑乘部队的不凡技能。在严格而系统的训练下，士兵们获得一些细小的体质改善，这将体现在每一场战斗中他们受伤的时候。
+str_trait_title_command_voice|号令之威
+str_trait_desc_command_voice|您在战场上的领军经验，再加上您总是临场指挥，这些成就让您身周环绕着名为权威的光环。这将导致您能在战场上更好地指挥您的部队。
+str_trait_title_foe_hammer|破敌之锤
+str_trait_desc_foe_hammer|你杀了大量的敌方高级首领,令敌人胆颤心寒.你指挥的部队每周会获得士气奖励.你丰富的作战经验也使你的战斗技巧有所提升.
+str_trait_title_battle_scarred|战争之痕
+str_trait_desc_battle_scarred|多年的征战在你身上留下了许多无法磨灭的伤痕,它向人们诉说着你传奇般的过去.伤疤和肉结使你更有效的避免再次受伤.你骇人的容貌让你的追随者深信你的战斗经验是如此的丰富,每周获得士气奖励.
+str_trait_title_fell_beast|凶猛之兽
+str_trait_desc_fell_beast|无数的征战和交错的伤疤令你的皮肤开裂,但你邪恶的意志始终不灭.即便是兽人,强兽人或食人妖那样残暴的种族,仍然视你为洪水猛兽.你的部下在战场上呼喊着你的名字.你是战斗的化身,没有什么能令你感到害怕.
+; str_wound_head|a heavy blow to the head
+; str_wound_chest|some cracked ribs
+; str_wound_arm|a badly maimed arm
+; str_wound_leg|a badly maimed leg
+; str_gondor_gift0|Fresh Fruit and Wine
+; str_gondor_gift1|Richly Dyed Cloth
+; str_gondor_gift2|Ancient Tomes and Family Trees
+; str_gondor_gift3|Spices and Incense
+; str_gondor_gift4|Auroch War Horns
+; str_dwarf_gift0|Strong Beer and Rock Salt
+; str_dwarf_gift1|Hardened Shovels and Axes
+; str_dwarf_gift2|Harps and Flutes
+; str_dwarf_gift3|Robes Embroidered With Golden Thread and Gems
+; str_dwarf_gift4|Marvellous Jewelry
+; str_rohan_gift0|Mead and Apple Wine
+; str_rohan_gift1|Embroided Tunics and Silver-Studded Belts
+; str_rohan_gift2|Golden Torcs and Engraved Drinking Horns
+; str_rohan_gift3|Fine Horse Barding
+; str_rohan_gift4|Rohan Horses
+; str_mordor_gift0|Weak Peat Beer
+; str_mordor_gift1|Snaga Oil
+; str_mordor_gift2|Mordor Fly Larvae
+; str_mordor_gift3|Orodruin Obsidian
+; str_mordor_gift4|Farmer Slaves
+; str_isengard_gift0|Dried Human Meat
+; str_isengard_gift1|Black Iron Chains
+; str_isengard_gift2|Tools of Torture
+; str_isengard_gift3|Alchemist Glasswork
+; str_isengard_gift4|Saruman's Petty Rings
+; str_lorien_gift0|Seeds, Nuts and Berries
+; str_lorien_gift1|Cold Lanterns and Strong Rope
+str_lorien_gift2|精靈餅幹
+; str_lorien_gift3|Silver Belts and Broaches
+; str_lorien_gift4|Elven Cloaks
+; str_imladris_gift0|White Bread and Herbal Butter
+; str_imladris_gift1|Crystal Glassware
+; str_imladris_gift2|Miruvor
+; str_imladris_gift3|Embroidered Banners and Silver-Inlaid Horns
+; str_imladris_gift4|Healing Herbs and Ointments
+; str_woodelf_gift0|Soft Animal Hides
+; str_woodelf_gift1|Arrow Heads and Fletching
+; str_woodelf_gift2|Hunting Spears
+; str_woodelf_gift3|Trained Birds of Prey
+; str_woodelf_gift4|Drinking Cups of Red Gold
+; str_dale_gift0|Semi-Precious Stones and Glass Beads
+; str_dale_gift1|Codexes of Heroic Sagas
+; str_dale_gift2|Dorwinion Wine
+; str_dale_gift3|Luxurious Furs
+; str_dale_gift4|Intricate Toys and Instruments
+; str_harad_gift0|Figs and Pomegranates
+; str_harad_gift1|Warrior Necklaces
+; str_harad_gift2|Carved Ivory
+; str_harad_gift3|Sacred Snake Wine
+; str_harad_gift4|Golden Serpent Statues
+; str_rhun_gift0|Waterskins
+; str_rhun_gift1|Tattoo Ink
+; str_rhun_gift2|Headgear with Horns and Antlers
+; str_rhun_gift3|Horsehair Whips
+; str_rhun_gift4|Horse Meat and Milk
+; str_khand_gift0|Colourful Spices
+; str_khand_gift1|Rolls of Silk
+; str_khand_gift2|Hunting Falcons
+; str_khand_gift3|Ingots of Water Steel
+; str_khand_gift4|Sacred Warrior Masks
+; str_umbar_gift0|Oysters and Sea Salt
+; str_umbar_gift1|Whalebone Combs and Fishing Hooks
+; str_umbar_gift2|Pleasure Slaves
+; str_umbar_gift3|Sailing Maps of the Southern Seas
+; str_umbar_gift4|Mysterious Numenorean Schematics
+; str_moria_gift0|Putrid Dwarven Ale
+; str_moria_gift1|Coal
+; str_moria_gift2|Luminescent Deep-Worms
+; str_moria_gift3|Black Cave Pearls
+; str_moria_gift4|Dwarven Metal Scraps
+; str_guldur_gift0|Black Liquor
+; str_guldur_gift1|Poisonous Vines of Torture
+; str_guldur_gift2|Wheeled Slave Cages
+; str_guldur_gift3|Giant Spider Eggs
+; str_guldur_gift4|Tomes of Dark Sorcery
+; str_gundabad_gift0|Spiky Bone Piercings
+; str_gundabad_gift1|Protective Warpaints
+; str_gundabad_gift2|Boiled Dwarven Lard
+; str_gundabad_gift3|Mummified Corpse Idols
+; str_gundabad_gift4|Black Wargs
+; str_dunland_gift0|Stinky Goat Cheese
+; str_dunland_gift1|Flint Sacrificial Knives
+; str_dunland_gift2|Bronze Arm Rings
+; str_dunland_gift3|Goats
+; str_dunland_gift4|Wolf Skulls and Claws
+; str_beorn_gift0|Honey Cakes and Mead
+; str_beorn_gift1|Bee Wax and Hemp Cloth
+; str_beorn_gift2|Bee Hives
+; str_beorn_gift3|Amber Necklaces
+; str_beorn_gift4|Well Trained Ponies
+str_cmenu_follow|伴随

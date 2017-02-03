@@ -79,7 +79,7 @@ qstr_Level:_{reg3}^Health|Livello: {reg3}^Punti Ferita: {reg4}
 qstr_Attributes|Attributi
 qstr_STR^AGI^INT^CHA|FOR^AGI^INT^CAR
 qstr_Skills|Abilità
-qstr_Ironflesh^Power_Stri|Resistenza^Forza del Colpo^Forza di Lancio^Scudo^Atletica^Cavalcare^Arco a Cavallo
+qstr_Ironflesh^Power_Stri|Resistenza^Forza del Colpo^Potenza di Lancio^Scudo^Atletica^Cavalcare^Tiro con l'arco a Cavallo
 qstr_Proficiencies|Competenze
 qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi ad Asta^Tiro con l'Arco^Balestre^Lancio
 qstr_Equipments|Equipaggiamento
@@ -123,7 +123,7 @@ qstr_{s1}_of_{s3}_was_def|{s1} di {s3} ha subito una sconfitta in battaglia.
 qstr_{s2}_have_razed_{s1}|{s2} ha razziato {s1}!
 qstr_Left_for_dead_but_mi|Creduto morto ma miracolosamente sopravvissuto: {reg1?{reg1} tempo {reg2?s:}:MAI}
 qstr_1_Res.Pt__{s2}_|1 Pt.Ris ({s2})
-qstr_{reg1}_Res.Pts__{s2}|{reg1} Pti.Ris. ({s2})
+qstr_{reg1}_Res.Pts__{s2}|{reg1} Pt.Ris. ({s2})
 qstr_+30_to_Party_Morale|+30 Al Morale della Compagnia
 qstr_+20_to_Party_Morale|+20 Al Morale della Compagnia
 qstr_+1_to_Riding_Skill|+1 Abilità nel cavalcare
@@ -168,7 +168,7 @@ qstr_{reg4}_killed_{reg5}|{reg4} uccisi, {reg5} feriti, {reg6} in rotta
 qstr_{reg4}_killed_{reg5}_|{reg4} uccisi, {reg5} feriti
 qstr_{reg4}_killed_{reg5}_r|{reg4} uccisi, {reg5} in rotta
 qstr_{reg4}_wounded_{reg5|{reg4} feriti, {reg5} in rotta
-qstr_killed|uccisi
+qstr_killed|ucciso
 qstr_routed|in rotta
 qstr_wounded|feriti
 qstr_None|Nessuno
@@ -269,7 +269,7 @@ qstr_Gharr!_Kill!_Kill!_K|Gharr! Uccidi! Uccidi! Uccidi!
 qstr_Slaughter_these_half|Fate a pezzi questi mezzi uomini!
 qstr_Fear_no_elven_ghosts|Non abbiate paura di questi spettri elfici!
 qstr_{s14}Double_rations_|{s14}Doppia razione a chi mi porta più teste!
-qstr_{s14}Double_rations_t|{s14}Doppia razione per chi mi porta più teste {s15}!
+qstr_{s14}Double_rations_t|{s14}Doppia razione per chi mi porta più teste di {s15}!
 qstr_{s14}Kill_these_hors|{s14}Uccidete questi ladri di cavalli!
 qstr_Kill_them_all!_Take_|Uccideteli tutti! Riprendiamoci ciò che ci appartiene!
 qstr_Tonight_there_will_b|Stanotte ci sarà un nemico di {s16} in meno!
@@ -318,7 +318,7 @@ qstr_Cavalry__{reg3}_|Cavalleria ({reg3})
 qstr_Orc_brew_finished!|Birra degli orchi terminata!
 qstr_Given_by:_{s62}|Dato da: {s62}
 qstr_Given_on:_{s60}|Dare il : {s60}
-qstr_You_have_{reg0}_days|Hai {reg0} giori per finire questo incarico.
+qstr_You_have_{reg0}_days|Hai {reg0} giorni per completare questo incarico.
 qstr_This_quest_has_been_|Questo incarico è stato completato. Parla con {s59} per terminarlo. 
 qstr_This_quest_has_been_s|Questo incarico è stato completato con successo. Parla con {s59} per ottenere la tua ricompensa.
 qstr_This_quest_has_faile|L'incarico è fallito. Parla con {s59} per spiegare la situazione.
@@ -351,7 +351,7 @@ qstr_Rich|Ricco
 qstr_Very_Rich|Molto ricco
 qstr_{s50}_Caves|{s50} Caverne
 qstr_{s50}_Mines|{s50} Miniere
-qstr_{s50}_Woods|{s50} Boschi
+qstr_{s50}_Woods|Boschi {s50}
 qstr_{s4}_looks_upset.|{s4} sembra turbato
 qstr_your_party|la tua compagnia
 qstr_{reg0?One_of_your_pr|{reg0?Uno dei tuoi prigionieri, :}{s1} di {s3} è fuggito dalla prigionia!
@@ -531,7 +531,7 @@ qstr_Your_horse_panics_th|Il tuo cavallo va in panico, le urla dei Nazgul sono i
 qstr_You_cower_in_terror_|Ti accasci in preda al terrore, le urla dei Nazgul sono insopportabili!
 qstr_knocked_unconscious|ha perso i sensi
 qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11}!
-qstr_{s11}_is_{s10}_in_th|{s11} è {s10} nell'attacco dei Nazgul!
+qstr_{s11}_is_{s10}_in_th|{s11} è stato {s10} nell'attacco dei Nazgul!
 qstr_{s1}_s_morale:_{reg1|morale di {s1}: {reg1}
 qstr_You_rally_your_troop|Raduni le tue truppe!
 qstr_{s5}_rallies_his_tro|{s5} raduna le sue truppe!
@@ -662,7 +662,7 @@ qstr_Heroes_only|Solo per gli eroi
 qstr_Regulars_and_Heroes|Regolari e Eroi
 qstr_HP_lost_from_poisoni|HP persi per il veleno
 qstr__{s17}.|, {s17}.
-qstr_A_group_of_{s1}_is_{|Un gruppo di {s1} si sta {s10} verso di te.
+qstr_A_group_of_{s1}_is_{|Un gruppo di {s1} sta {s10} verso di te.
 qstr_You_are_attacking_a_|Stai attaccando un gruppo di {s1}.
 qstr_The_battle_against_t|La battaglia contro il gruppo di {s1} continua.
 qstr_{s13}_asked_you_to_r|{s13} Ti ha chiesto di fare rapporto da lui con almeno {reg13} truppe.
@@ -758,8 +758,8 @@ qstr_^^^You_lost_your_fig|^^^Hai avuto la peggio contro l'ammutinamento! ^Sembra
 qstr_^^^You_have_slain_th|^^^Hai ucciso l'autore del reato, e gli altri orchi rapidamente tornano in linea. ^Per qualche tempo queste spregevoli creature saranno tranquille di sicuro.
 qstr_You_cover_up_your_tr|Copri le tue tracce e continui a muoverti.
 qstr_Breaking_camp...|Smantellamento del campo...
-qstr_You_have_left_{s1}.|Hai lasciato {s1}.
-qstr_You_are_entering_{s1|Stai entrando {s1} ({s2}).
+qstr_You_have_left_{s1}.|Lasci: {s1}.
+qstr_You_are_entering_{s1|Accedi a: {s1} ({s2}).
 qstr_You_are_entering_{s1}|Sei entrato {s1}.
 qstr_The_war_expands_comm|La guerra si espande, i comandanti sono sempre più audaci! (Ridotti i requisiti di assedio)
 qstr_Your_party_is_spotte|La tua compagnia è controllata da {s1}.
@@ -1038,7 +1038,7 @@ qstr_I_shall_keep_that_in|Devo tenerelo a mente. ^^ Hantanyel, áva márië !
 qstr_That_may_be_so_some_|Così può essere, alcune strade del mondo sono contorte.^^ Boe i 'waen !
 qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Allontaniamoci da qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
 qstr_You_chose_well_{sir/|Ha scelto bene, {sir/madam}. I miei ragazzi sanno mantenere la parola e guadagnarsi la paga.
-qstr_Well_done_{sir/madam|Ben Fatto, {sir/madam}. Continua a mandarci soldi e vino, e non dovrai aver paura di nessun tuo nemico.
+qstr_Well_done_{sir/madam|Ben Fatto, {sire/signora}. Continua a mandarci soldi e vino, e non dovrai aver paura di nessun tuo nemico.
 qstr_We_are_at_your_servi|Siamo al tuo servizio, {sir/madam}. Ci direzioni verso coloro che devono essere uccisi, noi faremo il resto.
 qstr_You_will_not_be_diss|Non vi deluderemo {signore/signora}. Non troverete guerrieri migliori in tutta Calradia.
 qstr_What_an_amazing_feat|Che enorme quantità di armi!

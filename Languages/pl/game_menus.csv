@@ -3,7 +3,7 @@ mno_start_good|ŚWIT nowej Ery
 mno_start_evil|ZMIERZCH Ludzi
 mno_go_bback|Wróć
 menu_start_phase_2|^^^^^Śródziemie. Cień rośnie na Wschodzie.^Wolne ludy gotują się do wojny, wojny której nie widziano od wieków.^Ludzie, Ely, Krasnoludy i Orkowie; wszyscy odegrają swoją rolę.^^Jaką, to się okaże... 
-; mno_go_forth|          Go forth upon your chosen path...
+mno_go_forth|Podążaj naprzód na twoją wybraną ścieżkę.
 menu_start_game_3|^^^^^^^^    Wybierz scenariusz:
 mno_custom_battle_scenario_1|            Potyczka, Gondor vs Harad
 mno_custom_battle_scenario_12|Wybierz frakcje do bitwy
@@ -314,7 +314,7 @@ menu_notification_faction_defeated|^^^^^Pokonano {s1}!^{s1} już nie istnieje!
 menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Explore this place.
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+menu_ring_hunter_lair|^^^^Podążałeś za Łowcami Pierścienia przez las Mirkwood i dotarłeś do {s1}. Widzisz ich przygotowujących się do opuszczenia z skrzynią.
 mno_attack_lair|Zaatakuj teraz.
 mno_leave_bandit_lair|Odejdź.
 menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?

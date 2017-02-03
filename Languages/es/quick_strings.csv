@@ -738,8 +738,8 @@ qstr_On_your_way_to_Mordo|En tu camino a Mordor oyes el susurro del follaje. Ves
 qstr_You_see_the_village_|Ves que la aldea está siendo asaltada por bandidos. Te preparas para defenderla.
 qstr_You_see_the_village_y|Ves la aldea que te han encomendado saquear. Te preparas para atacarla.
 ; qstr_The_raiders_are_defe|The raiders are defeated! Those few who remain alive and conscious scurry off to the darkness from whence they came, terrified of the villagers and their new champion.
-; qstr_Try_as_you_might_you|Try as you might, you could not defeat the raiders. They raze the village to the ground and enslave the remaining peasants.
-; qstr_The_village_has_been|The village has been razed, villagers killed or taken as slaves. The Dark Lord will be pleased.
+qstr_Try_as_you_might_you|Ya, pero no has acabado con los incursores. Redujeron la aldea a cenizas y condenaron a los supervivientes a una vida de esclavitud.
+qstr_The_village_has_been|La aldea está hecha cenizas; los pueblerinos muertos o entre rejas. Buenas noticias para el Señor Oscuro.
 ; qstr_You_failed_to_raid_t|You failed to raid the village and you were sent scurrying with your men. You hear the victors cheering as you feel the disapproving gaze of the Eye.
 qstr_Now_that_the_sorcere|Ahora que el hechicero está muerto, ya no queda más nada que hacer aquí.
 qstr_Now_that_the_sorcerer|Ahora que el hechicero ha huido, ya no queda nada más que hacer aquí.
@@ -809,7 +809,7 @@ qstr_{s27}:_Party_morale_|{s27}: La moral del grupo aumenta.
 qstr_{s27}:_Party_morale_d|{s27}: La moral del grupo baja.
 qstr_You_have_failed_to_f|¡Has fallado tu juramento de venganza por la heroica muerte de {s1}!
 qstr_You_have_fulfilled_y|¡Has cumplido con tu juramento de venganza por la heroica muerte de {s1}!
-; qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
+qstr_As_an_Orc_or_a_Dwarf|Al ser un orco o enano puedes beneficiarte de la nueva cámara personalizada que hemos añadido a TLD para mejorar la experiencia de las razas más bajitas. Abre «Conceptos del Juego» para aprender a usarla.
 qstr_Custom_Camera|Cámara personalizada
 qstr_{reg65?my_Lady:my_Lo|{reg65?mi Señora:mi Señor}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Mi Señora:Mi Señor}
@@ -914,7 +914,7 @@ qstr_What?_Let_me_see_tha|¿Qué? Déjame verlo... Hummm. Ha estado muy listo al
 qstr_Give_me_that!_Hrmph!_|¡Dame eso! ¡Jmurm! eres un sirviente útil para con tus Amos, {playername}, pero todos vosotros moriréis tarde o temprano. Aunque no ahora, así que ¡fuera de mi vista!
 ; qstr_The_search_for_the_L|The search for the Lost Spears has led you to Dorwinion, the site of the ancient northern kingdom of King Bladorthin. TO BE CONTINUED
 qstr_You_need_to_have_a_p|Necesitas contar con al menos 30 tropas en tu grupo para empezar la misión.
-; qstr_You_were_tasked_to_h|You were tasked to hunt down the bandits that have been recently wreaking havoc in the North. You can either attack them in their hideout near Mirkwood Forest or intercept them near Beorn's House.
+qstr_You_were_tasked_to_h|Se te ha encomendado acabar con los bandidos causantes de tanto daño en el Norte. Puedes combatirles en su guarida del Bosque Negro o cerca de la casa de Beorn.
 qstr_Mordor_Gains_Faction|La facción de Mordor gana fuerza al recibir un arma desconocida.
 qstr_Beornings_gain_Facti|La facción de los beórnidas gana fuerza al conocerse la victoria.
 qstr_Beornings_loses_Fact|La facción de los beórnidas pierde fuerza al conocerse la derrota.
@@ -982,14 +982,14 @@ qstr_We_need_to_take_the_|Tenemos que llevar la batalla al enemigo, {playername}
 qstr_We_need_to_grind_dow|Tenemos que aplastar someramente a nuestros cobardes enemigos, {playername}. sus patrullas y caravanas de suministros están creciendo demasiado para mi gusto. Quiero que elimines {reg1} grupos de {s13}, para que aprendan a temer lo que viene.
 qstr_{s9}_asked_you_to_el|{s9} te ha pedido que elimines {reg1} grupos de {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} te ha pedido liberar a {s13} de la amenaza de un Troll furioso que circula por sus cercanías.
-; qstr_the_Dwarves_so_that_|the Dwarves, so that if you pass by Erebor or the Iron Hills, you can try to arm yourself with the fabled Dwarven weaponry
-; qstr_Gondor_so_that_if_yo|Gondor, so that if you pass by their lands, you can try to purchase some of their well-known armours
-; qstr_Rohan_so_that_if_you|Rohan, so that if you pass by their lands, you can try to purchase some of their fabled horses
-; qstr_Dale_so_that_if_you_|Dale, so that if you pass by their lands, you can try to purchase some of their well-known bows
+qstr_the_Dwarves_so_that_|los Enanos, si pasas por Erebor o las Colinas de Hierro puedes hacerte con una legendaria arma enana
+qstr_Gondor_so_that_if_yo|Gondor, si pasas por sus tierras puedes hacerte con una de sus legendarias armaduras
+qstr_Rohan_so_that_if_you|Rohan, si pasas por sus tierras puedes hacerte con uno de sus legendarios caballos
+qstr_Dale_so_that_if_you_|Valle, si pasas por sus tierras puedes hacerte con uno de sus poderosos arcos
 ; qstr_It_sure_look_like_yo|It sure look like you did, Mordor scum.. ^^I have heard the call by the Great Hand, to bring fear to the realm of men, and to kill as many of the horse-men as we can.
-; qstr_It_sure_look_like_you|It sure look like you did. ^^The Dark Lord has called, and I am here to answer it and destroy the realm of men
-; qstr_*Snort*_There_is_onl|*Snort* There is only ONE Lord, and that is the The Dark Lord. You have no place in this war, weakling. Leave me to my mission
-; qstr_*Snort*_Another_weak|*Snort* Another weakling to reinforce our meat shield. Leave me to my mission.
+qstr_It_sure_look_like_you|Parece que sí.^^El Señor Oscuro me llama, y he respondido viniendo aquí para destruir el reino de los Hombres.
+qstr_*Snort*_There_is_onl|Sólo existe un señor; el Señor Oscuro. No pintas nada en esta Guerra, debilucho. Déjame en paz.
+qstr_*Snort*_Another_weak|Vaya, otro debilucho reforzando nuestro muro de carne. Déjame en paz.
 ; qstr_It_s_their_local_mon|It's their local money.. not worth anything in Mordor. Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs...
 ; qstr_It_s_their_local_mone|It's their local money.. not worth anything in Mordor. Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!
 ; qstr_It_s_their_local_money|It's their local money.. not worth anything in Mordor. Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs.
@@ -1004,15 +1004,15 @@ qstr_That_is_not_a_smart_|Tu comentario no me parece pertinente para alguien en 
 qstr_They_will_all_know_m|Conocerán mi nombre... Aprenderán a temerlo.
 qstr_Suilad_mellon!_It_is|¡Suilad, mellon! Rara es la vez que alguien del Valle Oculto se adentra en nuestras tierras. Gracias al cielo estrellado por guiarte hasta nuestra salvación, y gracias a ti por seguirlo, ¡le hannon!
 qstr_Suilad_mellon!_It_is_|¡Suilad, mellon! Raro es ver a un amigo de los bosques acudir en nuestra ayuda, ¡le hannon!
-; qstr_Suilad_mellon!_That_|Suilad, mellon! That is - thank you, friend!^^ At first I wasn’t sure if a goblin sabre, or a raging bear would be our doom. Alas, the stars were kind to send you to our aid.
+qstr_Suilad_mellon!_That_|¡Suilad, mellon! Ehm... ¡gracias, amigo!^^Al principio me temía que un sable trasgo u oso enloquecido fuera nuestro fin, pero el cielo estrellado te envía en nuestra ayuda.
 qstr_Alas_it_is_not_a_ple|Me temo que tanto a mí como al resto de sirvientes de Elrond nos traen a estas tierras otros menesteres aparte del pausado paseo y las dulces vistas...
 qstr_You_wouldn_t_have_ne|¡No necesitaríais nuestra ayuda si hubierais cerrado a cal y canto las fronteras!
-; qstr__*growl*_I_know_your|(*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks... 
-; qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Deep are my master’s designs, not for all to see and understand.
-; qstr_Alae!_Our_green_wood|Alae! Our green woods are heavily patrolled, our thick gates stand firm, king Thranduil’s halls secure. It would be wise to follow our example.
+qstr__*growl*_I_know_your|Conozco bien tu lengua, elfo. Lo suficiente para saber quién se ríe o no de mí...
+qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Inescrutables son los designios de mi señor, incomprensibles para muchos.
+qstr_Alae!_Our_green_wood|¡Alae! Patrullamos sin demora nuestros verdes bosques, firmes nuestras gruesas puertas, los Salones de Thranduil intactos. Ya podrían otros seguir nuestro ejemplo.
 qstr__say_nothing_|(no digas nada)
-; qstr_Alas_it_is_not_a_plea|Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands. ^^An ancient evil stirred in the dark places and now it swarms into the light. Wise ones across the Mountains answered the call and hosts of Imladris march to battle, to fight for the North.
-; qstr_You_wouldn_t_have_nee|You wouldn't have need of our aid if you kept your borders shut! ^^Tales of the Forest Witch only scare away witless fools - not so the orc filth we just slew.
+qstr_Alas_it_is_not_a_plea|Me temo que tanto a mí como al resto de sirvientes de Elrond nos traen a estas tierras otros menesteres aparte del pausado paseo y las dulces vistas.^^Un antiguo mal que se debatía entre las sombras ha salido a la luz. Los Sabios de más allá de las montañas han respondido a la llamada y ahora batallones de Imladris marchan hacia el Norte.
+qstr_You_wouldn_t_have_nee|¡No habríamos de prestar ayuda si cerrarais vuestras fronteras! ^^Las historias de la bruja silvana sólo asustan a los más necios, aunque no al orco que acabamos de tajar.
 ; qstr_*growl*_I_know_your_|*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks.^^ Stars had none to do with it - I sensed the filth and followed a trail. I would have slain them were you in danger or not.
 ; qstr_Keep_your_secrets_th|Keep your secrets then, friend, but the Golden Woods whisper of your kin’s arrival. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold.
 ; qstr_We_walk_under_the_su|We walk under the sun and the stars, to dwell in caves is not our desire. Still, your undoubtedly well meant council is well received. ^^Your wisdom and brave deeds shall be known, your needs met whenever you wander into our domain.
