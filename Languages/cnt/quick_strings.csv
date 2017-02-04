@@ -810,7 +810,7 @@ qstr_{s27}:_Party_morale_d|{s27}:部队士气降低。
 qstr_You_have_failed_to_f|你未能履行为{s1}复仇的誓言！
 qstr_You_have_fulfilled_y|你履行了为{s1}复仇的誓言！
 ; qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
-; qstr_Custom_Camera|Custom Camera
+qstr_Custom_Camera|自定义视角
 qstr_{reg65?my_Lady:my_Lo|{reg65?尊敬的女士:我的大人}
 qstr_{reg65?My_Lady:My_Lo|{reg65?尊敬的女士:我的大人}
 qstr_{reg65?mistress:mast|{reg65?女士:主人}

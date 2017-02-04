@@ -157,8 +157,8 @@ itm_dunedain_helm_a|Cappuccio Dúnedain
 itm_dunedain_helm_b|Elmo Arnor decorato
 itm_arnor_armor_a|Armatura Arnoriana
 itm_arnor_armor_b|Armatura Arnoriana
-itm_arnor_armor_c|Cinghia Dúnedain in cuoio 
-itm_arnor_armor_d|Cinghia Dúnedain in cuoio 
+itm_arnor_armor_c|Veste di cuoio Dúnedain
+itm_arnor_armor_d|Veste di cuoio Dúnedain
 itm_arnor_armor_e|Gilet rinforzato Arnoriano
 itm_arnor_armor_f|Alta armatura Arnoriana 
 itm_arnor_greaves|Gambiere Arnoriane
@@ -201,7 +201,7 @@ itm_gon_squire|Maglia con mantello di Gondor
 itm_gon_knight|Maglia pesante con mantello di Gondor
 itm_gon_ranger_cloak|Mantello da ramingo di Gondor
 itm_gon_ranger_skirt|Gonnella da ramingo di Gondor
-itm_gon_steward_guard|Armatura della guardia del Siniscalco
+itm_gon_steward_guard|Armatura della guardia del Tenutario
 itm_gon_tower_guard|Armatura da guardia della torre di Gondor
 itm_gon_tower_knight|Armatura da cavaliere della torre di Gondor
 itm_gon_leader_surcoat_cloak|Sopravveste da comandante di Gondor
@@ -233,12 +233,12 @@ itm_blackroot_leader|Armatura da comandante della valle della Radice Nera
 itm_blackroot_hood|Cappuccio della valle della Radice Nera
 itm_dol_hauberk|Usbergo di Dol Amroth
 itm_dol_heavy_mail|Maglia pesante di Dol Amroth
-itm_dol_padded_coat|Cappotto Imbottito di Dol Amroth
+itm_dol_padded_coat|Mantello Imbottito di Dol Amroth
 itm_dol_shirt|Maglia di Dol Amroth
 itm_dol_very_heavy_mail|Maglia molto pesante di Dol Amroth
 itm_dol_greaves|Stivali di Dor Amroth
 itm_dol_shoes|Stivali leggeri di Dol Amroth
-itm_lamedon_clansman|Armatura dell'uomo del clan del Lamedon
+itm_lamedon_clansman|Armatura clan di Lamedon
 itm_lamedon_footman|Armatura da appiedato del Lamedon
 itm_lamedon_knight|Armatura da cavaliere del Lamedon
 itm_lamedon_leader_surcoat_cloak|Armatura da condottiero del Lamedon
@@ -892,7 +892,7 @@ itm_khamul_helm|Elmo di Khamul
 itm_gandstaff|Bastone dello Stregone
 itm_sarustaff|Bastone dello Stregone
 itm_rohan_armor_th|Armatura Reale di Rohan
-itm_denethor_robe|Vesti del Siniscalco
+itm_denethor_robe|Vesti del Tenutario
 itm_prisoner_coll_chain|Catene del Prigioniero
 itm_witchking_helmet|Elmo Maledetto
 itm_lorien_royal_armor|Armatura Reale di Lorien

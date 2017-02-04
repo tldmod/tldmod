@@ -1541,22 +1541,22 @@ trp_bear_pl|Ours
 trp_wolf|Wolf
 trp_wolf_pl|Loups
 ; trp_dorwinion_sack|Dorwinion Sack
-; trp_ring_hunter_captain|Ring Hunter Captain
-; trp_ring_hunter_lt|Ring Hunter Captain
-; trp_ring_hunter_one|Ring Hunter
-; trp_ring_hunter_one_pl|Ring Hunters
-; trp_ring_hunter_two|Ring Hunter
-; trp_ring_hunter_two_pl|Ring Hunters
-; trp_ring_hunter_three|Ring Hunter
-; trp_ring_hunter_three_pl|Ring Hunters
-; trp_ring_hunter_four|Ring Hunter
-; trp_ring_hunter_four_pl|Ring Hunters
-; trp_start_quest_uruk|Mordor Uruk Captain
-; trp_start_quest_orc|Mordor Orc Lieutenant
+trp_ring_hunter_captain|Capitaine Chasseur d'Anneau
+trp_ring_hunter_lt|Capitaine Chasseur d'Anneau
+trp_ring_hunter_one|Chasseur d'Anneau
+trp_ring_hunter_one_pl|Chasseurs d'Anneau
+trp_ring_hunter_two|Chasseur d'Anneau
+trp_ring_hunter_two_pl|Chasseurs d'Anneau
+trp_ring_hunter_three|Chasseur d'Anneau
+trp_ring_hunter_three_pl|Chasseurs d'Anneau
+trp_ring_hunter_four|Chasseur d'Anneau
+trp_ring_hunter_four_pl|Chasseurs d'Anneau
+trp_start_quest_uruk|Capitaine Uruk du Mordor
+trp_start_quest_orc|Lieutenant Orc du Mordor
 trp_start_quest_orc_pl|Grands Orques du Mordor
 trp_start_quest_woodelf|Archer royal d'élite des Galadhrim
 trp_start_quest_woodelf_pl|Archers royaux d'élite des Galadhrim
-; trp_start_quest_mordor_scout|Mordor Guide
-; trp_start_quest_mordor_scout_pl|Mordor Guides
+trp_start_quest_mordor_scout|Guide du Mordor
+trp_start_quest_mordor_scout_pl|Guides du Mordor
 trp_start_quest_beorning|Berserker beornide du Carrock
 trp_start_quest_beorning_pl|Berserkers beornides du Carrock 

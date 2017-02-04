@@ -28,8 +28,8 @@ qst_mirkwood_sorcerer|殺死幽暗森林的巫師
 qst_mirkwood_sorcerer_text|Galadriel保衛 Lothlorien的力量已經被 Dol Guldur的巫師的骯髒儀式破壞。儘管他是凡人，他代表了很大的威脅對精靈們。在Mirkwood森林尋找他，其實離Dol Guldur并不遠。請秘密行動來避免引發警報，畢竟衹有一次機會去擊敗他（注意存檔）
 qst_find_lost_spears|尋找Bladorthin國王丟失的長矛
 qst_find_lost_spears_text|{s9} 讓你去尋找丟失的長矛，長矛是矮人爲Bladorthin國王打造的。你需要尋求矮人的許可去尋找長矛在孤山的深處。
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
+qst_defend_village|保衛村莊
+qst_raid_village|掠奪村莊
 qst_rescue_prisoners|營救{reg1} 的囚犯
 qst_rescue_prisoners_text|{s9}想要你去營救{reg1}的囚犯
 qst_scout_enemy_town|偵查敵人的城鎮

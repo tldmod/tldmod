@@ -737,10 +737,10 @@ qstr_On_your_way_to_your_f|Te encuentras de frente con un grupo de hombres prepa
 qstr_On_your_way_to_Mordo|En tu camino a Mordor oyes el susurro del follaje. Ves un grupo de exploradores de Gondor y te apresuras a dar la alarma.
 qstr_You_see_the_village_|Ves que la aldea está siendo asaltada por bandidos. Te preparas para defenderla.
 qstr_You_see_the_village_y|Ves la aldea que te han encomendado saquear. Te preparas para atacarla.
-; qstr_The_raiders_are_defe|The raiders are defeated! Those few who remain alive and conscious scurry off to the darkness from whence they came, terrified of the villagers and their new champion.
+qstr_The_raiders_are_defe|¡Hemos acabado con los incursores! Los pocos que quedan con vida se alejan renqueantes hacia la oscuridad que los vio venir, aterrados de los aldeanos... y de su nuevo campeón.
 qstr_Try_as_you_might_you|Ya, pero no has acabado con los incursores. Redujeron la aldea a cenizas y condenaron a los supervivientes a una vida de esclavitud.
 qstr_The_village_has_been|La aldea está hecha cenizas; los pueblerinos muertos o entre rejas. Buenas noticias para el Señor Oscuro.
-; qstr_You_failed_to_raid_t|You failed to raid the village and you were sent scurrying with your men. You hear the victors cheering as you feel the disapproving gaze of the Eye.
+qstr_You_failed_to_raid_t|No has podido asaltar la aldea y te alejas renqueante junto con las tropas que te quedan. Escuchas los gritos de celebración mientras notas la mirada reprobadora del Ojo.
 qstr_Now_that_the_sorcere|Ahora que el hechicero está muerto, ya no queda más nada que hacer aquí.
 qstr_Now_that_the_sorcerer|Ahora que el hechicero ha huido, ya no queda nada más que hacer aquí.
 qstr_You_approach_a_heavi|Te acercas a una región fuertemente protegida del bosque...
@@ -912,7 +912,7 @@ qstr_Oh?_Let_me_see_that.|¿Oh? Déjame verlo... ¡Bien, bien, bien! Has hecho b
 qstr_Give_me_that!_Hrmph!|¡Dame eso! ¡Humrm! Has hecho bien en traerme esto, {playername}, eres un sirviente útil. Espero que hagas saber a {s9} que haga uso de ti más a menudo
 qstr_What?_Let_me_see_tha|¿Qué? Déjame verlo... Hummm. Ha estado muy listo al traérmelo, {playername}. Ahora, fuera.
 qstr_Give_me_that!_Hrmph!_|¡Dame eso! ¡Jmurm! eres un sirviente útil para con tus Amos, {playername}, pero todos vosotros moriréis tarde o temprano. Aunque no ahora, así que ¡fuera de mi vista!
-; qstr_The_search_for_the_L|The search for the Lost Spears has led you to Dorwinion, the site of the ancient northern kingdom of King Bladorthin. TO BE CONTINUED
+qstr_The_search_for_the_L|La búsqueda de las lanzas perdidas te ha traído a Dorwinion, hogar del antiguo reino norteño del rey Bladorthin. CONTINUARÁ
 qstr_You_need_to_have_a_p|Necesitas contar con al menos 30 tropas en tu grupo para empezar la misión.
 qstr_You_were_tasked_to_h|Se te ha encomendado acabar con los bandidos causantes de tanto daño en el Norte. Puedes combatirles en su guarida del Bosque Negro o cerca de la casa de Beorn.
 qstr_Mordor_Gains_Faction|La facción de Mordor gana fuerza al recibir un arma desconocida.
@@ -986,7 +986,7 @@ qstr_the_Dwarves_so_that_|los Enanos, si pasas por Erebor o las Colinas de Hierr
 qstr_Gondor_so_that_if_yo|Gondor, si pasas por sus tierras puedes hacerte con una de sus legendarias armaduras
 qstr_Rohan_so_that_if_you|Rohan, si pasas por sus tierras puedes hacerte con uno de sus legendarios caballos
 qstr_Dale_so_that_if_you_|Valle, si pasas por sus tierras puedes hacerte con uno de sus poderosos arcos
-; qstr_It_sure_look_like_yo|It sure look like you did, Mordor scum.. ^^I have heard the call by the Great Hand, to bring fear to the realm of men, and to kill as many of the horse-men as we can.
+qstr_It_sure_look_like_yo|Ya lo creo, escoria de Mordor... ^^Yo también he oído la llamada de la Gran Mano; instauremos el miedo en el reino de los Hombres y hendamos las corazas de esos apestosos jinetes de Rohan.
 qstr_It_sure_look_like_you|Parece que sí.^^El Señor Oscuro me llama, y he respondido viniendo aquí para destruir el reino de los Hombres.
 qstr_*Snort*_There_is_onl|Sólo existe un señor; el Señor Oscuro. No pintas nada en esta Guerra, debilucho. Déjame en paz.
 qstr_*Snort*_Another_weak|Vaya, otro debilucho reforzando nuestro muro de carne. Déjame en paz.

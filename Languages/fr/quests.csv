@@ -28,8 +28,8 @@ qst_mirkwood_sorcerer|Tuer un sorcier dans la Forêt Noire.
 qst_mirkwood_sorcerer_text|Le pouvoir de Galadriel pour défendre la Lothlórien a été gêné par les rituels maléfiques d'un sorcier de Dol Guldur. Tant qu'il est vivant, il représente un grand danger pour les Elfes. Recherchez-le dans la Forêt Noire, pas très loin de Dol Guldur. Utilisez la furtivité pour empêcher que l'alarme ne soit donnée car il n'y aura qu'une seule occasion de le vaincre.
 qst_find_lost_spears|Trouver les lances perdues du Roi Bladorthin.
 qst_find_lost_spears_text|{s9} vous a demandé de trouver les lances naines perdues jadis forgées pour le Roi Bladorthin. Vous devez demander la permission aux nains de chercher les lances dans les entrailles de la Montagne Solitaire.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
+qst_defend_village|Défendre le Village
+qst_raid_village|Piller le Village
 qst_rescue_prisoners|Secourer {reg1} prisonniers
 qst_rescue_prisoners_text|{s9} veut que vous sauviez {reg1} prisonniers.
 qst_scout_enemy_town|Espionnez une ville ennemie.

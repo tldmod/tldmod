@@ -73,16 +73,16 @@ qstr_Arms|Bras
 qstr_Thighs|Cuisses
 qstr_Legs|Jambes
 qstr_Rotate|Pivoter
-; qstr_Close|Close
+qstr_Close|Fermer
 ; qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 ; qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
-; qstr_Attributes|Attributes
-; qstr_STR^AGI^INT^CHA|STR^AGI^INT^CHA
-; qstr_Skills|Skills
+qstr_Attributes|Attributs 
+qstr_STR^AGI^INT^CHA|FOR^AGI^INT^CHA
+qstr_Skills|Talents
 ; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 ; qstr_Proficiencies|Proficiencies
 ; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
-; qstr_Equipments|Equipments
+qstr_Equipments|Équipements
 qstr_You_gained_{reg0}_Re|Vous avez gagné {reg0} Points de Ressource de {s0}.
 qstr_You_lost_{reg0}_Reso|Vous avez perdu {reg0} Points de Ressource de {s0}.
 qstr_{s24}:|{s24} :
@@ -499,7 +499,7 @@ qstr_Your_troops_flee_in_|Vos troupes sont en déroutes !
 qstr_Many_of_your_troops_|La majorité de vos troupes fuie la bataille.
 qstr_Some_of_your_troops_|Bon nombre de vos troupes fuient la bataille.
 qstr_A_few_of_your_troops|Certaines de vos troupes fuient la bataille.
-; qstr_No_Troops_Left.|No Troops Left.
+qstr_No_Troops_Left.|Plus de troupes restantes.
 qstr_Your_mount_stumbles!|Votre monture trébuche ! Elle semble boiter.
 qstr_Bitten_by_your_own_w|Mordu par votre propre Warg !
 qstr_You_weigh_too_much_f|Vous êtes trop lourd pour un poney !
@@ -509,7 +509,7 @@ qstr_Your_mount_rears_ref|Votre monture se cabre, elle refuse d'obéir à vos or
 ; qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
 ; qstr_Use_+/__to_zoom_in/o|Use +/- to zoom in/out
 ; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
-; qstr_Default_Camera|Default Camera
+qstr_Default_Camera|Camera par défaut 
 ; qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
 ; qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Cannot_leave_now.|Impossible de partir maintenant.
@@ -560,7 +560,7 @@ qstr_The_ladders_on_Deepi|Les échelles sur le Mur du Gouffre ! Attention !
 qstr_You_yell_for_your_ho|Vous criez pour votre cheval.
 qstr_THREE.._TWO..._ONE..|TROIS.. DEUX... UN.... BATTEZ VOUS !
 ; qstr_You_have_found_the_D|You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}
-; qstr_Leave_the_Warehouse?|Leave the Warehouse?
+qstr_Leave_the_Warehouse?|Sortir de l’entrepôt ?
 qstr_Leave_the_place_in_s|Quitter l'endroit en silence ?
 qstr_Leave_scene?|Quitter l'endroit ?
 qstr_Trace_back_your_step|Retourner sur vos pas et revenir à l'air libre ?
