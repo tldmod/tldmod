@@ -54,7 +54,6 @@ qstr_Days_Passed:_{reg0}|Days Passed: {reg0}
 qstr_Difficulty:_{reg0}%|Difficulty: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|TOTAL SCORE: {reg0}
-qstr_______|      
 qstr_A_peaceful_village_n|A peaceful village not far from Westfold...
 qstr_The_War_is_upon_Roha|The War is upon Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith - The White City
