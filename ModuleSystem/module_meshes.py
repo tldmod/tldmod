@@ -481,7 +481,7 @@ meshes+=[
   ("tp_lorien_arrows",       0, "draw_lorien_arrows",     0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_rivendell",   0, "draw_victory_rivendell", 0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_mirkwood",    0, "draw_victory_mirkwood",  0, 0, 0, 0, 0, 0, 3, 3, 3),
-  ("tp_war_starts",          0, "draw_war_starts",        0, 0, 0, 0, 0, 0, 3, 3, 3),
+  ("tp_war_starts",          0, "draw_victory_dale",      0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_harad",       0, "draw_victory_harad",     0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_rhun",        0, "draw_victory_rhun",      0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_khand",       0, "draw_victory_khand",     0, 0, 0, 0, 0, 0, 3, 3, 3),
@@ -493,10 +493,13 @@ meshes+=[
   ("tp_victory_beornings",   0, "draw_victory_beornings", 0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("mp_inventory_choose",    0, "mp_inventory_choose",    0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("inv_slot",               0, "inv_slot",               0, 0, 0, 0, 0, 0, 1, 1, 1),
-
+# Kham - Troop Presentation dupes end
+# Add new meshes here
   ("draw_lumberjack_orcs",   0, "draw_lumberjack_orcs",   0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_mound_kneel",       0, "draw_mound_kneel",       0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   ("draw_ring_hunters_army", 0, "draw_ring_hunters_army", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_ring_hunters_lair", 0, "draw_ring_hunters_lair", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+  ("draw_victory_dale",      0, "draw_victory_dale",      0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

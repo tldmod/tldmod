@@ -232,10 +232,10 @@ sounds = [
 #tf_troll = 10
 ("troll_die",sf_priority_10,  ["troll_death_1.wav"]),
 ("troll_hit",sf_priority_7|sf_vol_10, ["troll_hit_1.wav","troll_hit_1.wav","troll_hit_1.wav"]), 
-("troll_grunt",sf_priority_6|sf_vol_4, ["troll_grunt_1.wav","troll_grunt_2.wav"]), 
-("troll_grunt_long",sf_priority_5|sf_vol_8, ["troll_grunt_2.wav","troll_hit_2.wav"]), 
-("troll_yell",sf_priority_6|sf_vol_8, ["troll_grunt_2.wav","troll_hit_2.wav"]), 
-("troll_victory",sf_priority_5|sf_vol_10, ["troll_grunt_2.wav","troll_hit_2.wav","troll_death_1.wav"]), 
+("troll_grunt",sf_priority_6|sf_vol_4, ["troll_grunt_1.wav","troll_grunt_2.wav", "troll_growl.wav", "troll_roar.wav"]), 
+("troll_grunt_long",sf_priority_5|sf_vol_8, ["troll_grunt_2.wav","troll_hit_2.wav","troll_roar.wav"]), 
+("troll_yell",sf_priority_6|sf_vol_8, ["troll_grunt_2.wav","troll_hit_2.wav","troll_roar.wav"]), 
+("troll_victory",sf_priority_5|sf_vol_10, ["troll_grunt_2.wav","troll_hit_2.wav","troll_death_1.wav","troll_roar.wav"]), 
 #troll_grunt_long = grunt, yell = grunt, 
 #tf_dunedain = 11
 ("dunedain_yell",sf_priority_6|sf_vol_8|sf_stream_from_hd, ["dunedain_yell_1.wav","dunedain_yell_2.wav","dunedain_yell_3.wav","dunedain_yell_4.wav","dunedain_yell_5.wav","dunedain_yell_6.wav","dunedain_yell_7.wav","dunedain_yell_8.wav","dunedain_yell_9.wav","dunedain_yell_10.wav","man_yell_4.wav","man_yell_4_2.wav","man_yell_7.wav","man_yell_9.wav","man_yell_11.wav","man_yell_13.wav","man_yell_15.wav","man_yell_16.wav","man_yell_17.wav","man_yell_20.wav","man_shortyell_4.wav","man_shortyell_5.wav","man_shortyell_6.wav","man_shortyell_9.wav","man_shortyell_11.wav","man_shortyell_11b.wav"]),
