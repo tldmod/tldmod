@@ -1,4 +1,4 @@
-menu_start_game_1|^^^^^^^^^^Per cosa combatti?
+menu_start_game_1|^^^^^^^^^^Per cosa combatti ?
 mno_start_good|L'alba di una nuova Era
 mno_start_evil|Il tramonto degli Uomini
 mno_go_bback|Torna Indietro
@@ -62,7 +62,7 @@ mno_start_ma|UOMO
 mno_start_el|ELFO
 mno_start_dw|NANO
 mno_go_back|Torna Indietro
-menu_start_evil|^^^^^^^^^^Chi servi?
+menu_start_evil|^^^^^^^^^^Chi servi ?
 mno_start_eye|Sauron di Mordor, il Signore degli Anelli
 mno_start_hand|Saruman di Isengard, la Mano Bianca
 menu_start_eye|^^^^^^^^^Il tuo signore è il Grande Occhio^Scegli la tua razza
@@ -79,7 +79,7 @@ mno_start_ro|Rohan, i Signori dei Cavalli
 mno_start_du|Dúnedain, l'antica dinastia degli Uomini
 mno_start_be|Beorniani, gli uomini Orso
 mno_start_da|Il Regno di Dale
-menu_start_good_elf|^^^^^^^^^^In quale foresta vivi, Elfo?
+menu_start_good_elf|^^^^^^^^^^In quale foresta vivi, Elfo ?
 mno_start_ri|Gran Burrone, di Lord Elrond
 mno_start_lo|Lothlórien, di Lady Galadriel
 mno_start_mi|Bosco Atro, terre degli Elfi Silvani
@@ -100,10 +100,10 @@ mno_start_bn|Númenóreani Neri, i rinnegati dell'Ovest
 mno_start_um|Umbar, i pirati dei Mari del Sud
 mno_start_rh|Rhûn, i barbari dell'Est
 mno_start_kh|Khand, i selvaggi popoli del Sud-Est
-menu_start_eye_orc|^^^^^^^^^^Dove ti nascondi?
+menu_start_eye_orc|^^^^^^^^^^Dove ti nascondi ?
 mno_start_arm|Nelle armate ammassate a Mordor
 mno_start_cav|nelle caverne di Dol Guldur
-menu_start_hand_orc|^^^^^^^^^^Dove ti nascondi?
+menu_start_hand_orc|^^^^^^^^^^Dove ti nascondi ?
 mno_start_armis|Nelle armate ammassate a Isengard
 mno_start_minmo|Nelle miniere di Moria
 mno_start_cliff|Tra le rocce del monte Gundabad
@@ -113,13 +113,13 @@ mno_start_2_hib|Alto Lignaggio
 menu_start_haradrim|^^^^^^^Sei un Haradrim,^un Uomo del Deserto.^Seleziona il tuo lignaggio:
 mno_start_1_des|Uomo del Deserto
 mno_start_2_far|Uomo delle Tribù del Lontano Harad
-menu_choose_gender|^^^^^^^^^^Il tuo sesso?
+menu_choose_gender|^^^^^^^^^^Il tuo sesso ?
 mno_start_male|Uomo
 mno_start_female|Donna
 mno_proc|Prosegui
 mno_continue|Continua...
 menu_character_report|^^^^^Morale della Compagnia: {reg8}^Limite Dimensioni Compagnia: {reg7}^{s5}
-menu_camp|^^^^Sei a {s1}.{s2}^^Cosa vuoi fare?
+menu_camp|^^^^Sei a {s1}.{s2}^^Cosa vuoi fare ?
 mno_camp_scene|Ispeziona la zona.
 mno_camp_troop|Rassegna{reg10? truppe:}{reg12? e:}{reg11? prigionieri:}.
 mno_camp_action|Usa un oggetto.
@@ -150,16 +150,16 @@ mno_strat_tweaks_siege_reqs|Forza richiesta per assedi: {s7}
 mno_strat_tweaks_siege_relax_rate|Relazione della richiesta di forza per assediare: {reg1}
 mno_strat_tweaks_regen_rate|Tasso di rigenerazione della forza: {s7}
 mno_strat_tweaks_siege_regen_limit|Le fazioni non si rigenerano sotto: {reg1}
-mno_strat_tweaks_influence_gain_rate|Tasso dell'influenza guadagnata: {s7}
-mno_strat_tweaks_rank_gain_rate|Tasso del Rango guadagnato: {s7}
+mno_strat_tweaks_influence_gain_rate|Tasso d'influenza guadagnata: {s7}
+mno_strat_tweaks_rank_gain_rate|Tasso di Rango guadagnato: {s7}
 mno_strat_tweaks_back|Ritorna al menu delle modifiche.
-menu_camp_action|^^^^^^^^^ Quale oggetto?
+menu_camp_action|^^^^^^^^^ Quale oggetto ?
 mno_camp_customize_defilement|Personalizza armatura corrotta
 mno_camp_drink_water|Bevi l'acqua Ent !
 mno_camp_action_4|Indietro.
 menu_assasins_attack_player_won|Hai sconfitto con successo gli assassini da {s2}, inviati da {s3}.
 menu_assasins_attack_player_retreat|Sei scappato, salvandoti la vita!
-menu_fangorn_danger|^^^^^^Strano, senti rumori minacciosi intorno a te.^Sono gli alberi a parlare? C'è un senso di profonda ira e di dolore nell'aria.^I tuoi ordini?
+menu_fangorn_danger|^^^^^^Strano, senti rumori minacciosi intorno a te.^Sono gli alberi a parlare ? C'è un senso di profonda ira e di dolore nell'aria.^I tuoi ordini ?
 mno_be_quiet_elf|Rispetta l'odio degli alberi. Allontanati silenziosamente.
 mno_be_quiet|Abbassa le armi e rimani calmo ! Ora via da qui !
 mno_be_bold|Continua ! Non ho paura delle piante e di vecchie leggende !
@@ -185,13 +185,13 @@ menu_cattle_herd|Incontri alcune persone.
 mno_cattle_drive_away|Ordinagli di seguirti.
 mno_cattle_stop|Conducili ad accamparsi.
 mno_leave|Abbandona.
-menu_simple_encounter|^^^^^{s2}^Hai {reg22} truppe pronte per la battaglia contro {reg11} delle loro.^^La battaglia sta avendo luogo a {s3}{s4}.^^I tuoi ordini?
-mno_encounter_attack|{reg21?Caricateli:Prepariamoci ad affrontarli}.
+menu_simple_encounter|^^^^^{s2}^Hai {reg22} truppe pronte per la battaglia contro {reg11} delle loro.^^Luogo della battaglia: {s3}{s4}.^^I tuoi ordini ?
+mno_encounter_attack|{reg21?Carica !:Prepariamoci ad affrontarli}.
 mno_encounter_order_attack|Ordina alle tue truppe di {reg21?attaccare:affrontarli} senza di te.
 mno_special_whip|Corri in avanti verso di loro rompendo il {s4}.
 mno_encounter_leave|Ritirati.
 mno_encounter_retreat|Ritirati, lasciando alcuni soldati dietro di te per coprire la ritirata.
-menu_encounter_retreat_confirm|Come membro della compagnia con le abilità di tattica più elevate,  ({reg2}), {reg3? escogiti:{s3} escogita} un piano che permetterà a te e i tuoi uomini di scappare con le vostre vite, ma dovrai lasciare {reg4} soldati indietro per coprirvi la ritirata.
+menu_encounter_retreat_confirm|Come membro della compagnia con le abilità di tattica più elevate,  ({reg2}), {reg3? escogiti:{s3} escogita} un piano che permetterà a te e i tuoi uomini di scappare in salvo, ma dovrai lasciare {reg4} soldati indietro a coprire la ritirata.
 mno_leave_behind|Procedi. Il sacrificio di questi uomini salverà molte vite.
 mno_dont_leave_behind|No. Noi non lasciamo nessuno indietro.
 menu_encounter_retreat|^^^^^Ordini a {reg4} delle tue truppe di impegnare il nemico mentre ti ritiri con il resto della compagnia.
@@ -233,7 +233,7 @@ menu_besiegers_camp_with_allies|{s1} rimane sotto assedio. Gli stendardi di {s2}
 mno_talk_to_siege_commander|Richiedi un incontro con il comandante.
 mno_join_siege_with_allies|Unisciti al prossimo assalto.
 mno_join_siege_stay_back|Ordina ai tuoi soldati di unirsi al prossimo assalto senza di te.
-menu_moria_must_escape|^^Il libro sembra essere un resoconto dell'ultimo tentativo dei nani di ristabilirsi a Moria. Tentativo che apparentemente sembra essersi concluso con una morte terribile per tutti i soggetti coinvolti. Sfogliando le pagine, ti imbatti nelle parole 'vero argento ! Studiando il libro improvvisamente comprendi che si tratta della descrizione delle scorte segrete naniche e che queste dovrebbero trovarsi nei livelli inferiori. Hah! Non sarebbe fantastico riportare alla luce il Mithril nanico da tempo perduto !? ^Con entusiasmo cerchi di seguire la strada, scendendo in uno stretto e tortuoso tunnel... ^...^Dopo un paio d'ore d'infruttuosa ricerca capisci che ti sei perso nelle profondità di Moria e che ora devi cercare la via per uscirne.
+menu_moria_must_escape|^^Il libro sembra essere un resoconto dell'ultimo tentativo dei nani di ristabilirsi a Moria. Tentativo che apparentemente sembra essersi concluso con una morte terribile per tutti i soggetti coinvolti. Sfogliando le pagine, ti imbatti nelle parole 'vero argento ! Studiando il libro improvvisamente comprendi che si tratta della descrizione delle scorte segrete naniche e che queste dovrebbero trovarsi nei livelli inferiori. Hah ! Non sarebbe fantastico riportare alla luce il Mithril nanico da tempo perduto !? ^Con entusiasmo cerchi di seguire la strada, scendendo in uno stretto e tortuoso tunnel... ^...^Dopo un paio d'ore d'infruttuosa ricerca capisci che ti sei perso nelle profondità di Moria e che ora devi cercare la via per uscirne.
 mno_moria_exit_scene|Trova la via d'uscita !
 menu_castle_outside|Sei fuori da {s2}.{s11} {s3} {s4}
 mno_moria_enter|Ritorna nel salone principale di Moria attraverso l'entrata segreta
@@ -286,10 +286,10 @@ mno_isengard_underground|Dirigiti verso le caverne sotterranee
 mno_tirith_toplevel|Raggiungi il livello più alto
 mno_town_leave|Abbandona...
 mno_town_leave_door|Abbandona l'area
-menu_disembark|Desideri sbarcare?
+menu_disembark|Desideri sbarcare ?
 mno_disembark_yes|Si.
 mno_disembark_no|No.
-menu_ship_reembark|Desideri imbarcarti?
+menu_ship_reembark|Desideri imbarcarti ?
 mno_reembark_yes|Si.
 mno_reembark_no|No.
 menu_center_reports|Nome della Città: {s1}^Entrate da rendite: {reg1} denari^Entrate da tariffe: {reg2} denari^Scorte di cibo: per {reg3} giorni
@@ -300,7 +300,7 @@ mno_sneak_caught_surrender|Arrenditi.
 menu_sneak_into_town_caught_dispersed_guards|Ti liberi delle guardie e cancelli le tue tracce per non farti trovare, semini facilmente gli inseguitori nel dedalo di strade.
 menu_sneak_into_town_caught_ran_away|Trovi una via di fuga attraverso il cancello e ti ritiri prontamente verso la salvezza sulle colline.
 menu_tld_player_defeated|^^^^^ Improvvisamente senti un dolore dirompente alla nuca ! Il tuo corpo è scosso dai brividi mentre tutto si oscura attorno a te... ^ E' questa la tua fine ?
-menu_recover_after_death_fangorn|Ti svegli. La foresta ti circonda ancora e ogni osso ti fa male. Sei vivo, per miracolo.^^ E' stata una sconfitta, ma almeno sei in grado di vedere quello che è successo. ^Ora sai che cosa accade in questa foresta maledetta,^e sei sopravvissuto per raccontarlo. ^^Ti crederà mai qualcuno, quando lo farai?
+menu_recover_after_death_fangorn|Ti svegli. La foresta ti circonda ancora e ogni osso ti fa male. Sei vivo, per miracolo.^^ E' stata una sconfitta, ma almeno sei in grado di vedere quello che è successo. ^Ora sai che cosa accade in questa foresta maledetta,^e sei sopravvissuto per raccontarlo. ^^Ti crederà mai qualcuno, quando lo farai ?
 menu_recover_after_death_moria|^^^^^Riprendi conoscenza. Sei sdraiato su di un soffice manto erboso, una fresca brezza ti accarezza il volto. Sei all'esterno !^Gli orchi devono averti creduto morto e hanno scaricato il tuo corpo dentro un pozzo profondo.^Devi essere stato trasportato in superficie da un torrente sotterraneo.
 mno_whatever|Alzati !
 menu_recover_after_death_default|^^^^^Riprendi conoscenza. Giaci nel posto in cui sei caduto. I nemici devono averti creduto morto e ti hanno lasciato lì. Comunque, pare che nessuna delle tue ferite sia letale, e anche se ti senti in modo orribile, ti rendi conto di essere in grado di camminare. Ti alzi e cerchi altri sopravvissuti della tua compagnia.
@@ -317,15 +317,15 @@ mno_explore|Esplora questo posto.
 menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso la foresta di Mirkwood e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
 mno_attack_lair|Attaccali adesso
 mno_leave_bandit_lair|Lascia per ora.
-menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da parte di una banda di orchi. Cosa fai?
+menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da parte di una banda di orchi. Cos'hai intenzione di fare ?
 mno_help|Aiuta gli stranieri !
-mno_start_defend_caravan|Difendi la Carovana!
-mno_start_raid_caravan|Razzia la Carovana!
-mno_start_ambush_orcs|Un'imboscata degli Orchi!
-mno_start_kill_scouts|Ferma gli esploratori dal segnalare il tuo arrivo!
+mno_start_defend_caravan|Difendi la Carovana !
+mno_start_raid_caravan|Saccheggia la Carovana !
+mno_start_ambush_orcs|Un'imboscata degli Orchi !
+mno_start_kill_scouts|Ferma gli esploratori dal segnalare il tuo arrivo !
 mno_go_your_way|Lasciali al loro destino
-mno_defend_villagers|Difendi gli abitanti del villaggio!
-mno_raid_villagers|Razzia il Villaggio!
+mno_defend_villagers|Difendi gli abitanti del villaggio !
+mno_raid_villagers|Razzia il Villaggio !
 mno_go_away|Lasciali al loro destino
 menu_custom_battle_choose_faction1|^^^^^^^^^^Scegli il tuo lato e il vantaggio:
 mno_good_equal|Fazione buona
@@ -353,7 +353,7 @@ mno_cb_mordor8|Corsari
 mno_rescue_mission|Intrufolati nel covo dello stregone con il favore della notte.
 mno_next_rescue_scene_door|Prosegui !
 mno_pick_troops1|Scegli compagni per la missione, {reg0} selezionati
-menu_pick_troops|Chi sceglierai a venire insieme a te nella missione? Fino ad ora hai scelto {reg0} compagni. Puoi scegliere fino a 10 truppe.
+menu_pick_troops|Chi sceglierai a venire insieme a te nella missione ? Fino ad ora hai scelto {reg0} compagni. Puoi scegliere fino a 10 truppe.
 mno_go_forward|Chiudi la selezione dei compagni e procedi.
 menu_burial_mound|Ti avvicini al al tumulo di {s1} da {s2}. Sopra di esso è possibile vedere moltissime armi abbandonate dai suoi nemici caduti.
 mno_pay_respects|Inginocchiati e rendi omaggio.
@@ -361,9 +361,9 @@ mno_swear_oath|Presta un giuramento di vendetta !
 mno_despoil|Dissacra il sito
 mno_leave_mound|Abbandona il tumulo.
 menu_burial_mound_respects|Ti inginocchi e rendi omaggio a {s1}, sussurri silenziosamente una preghiera per un veloce viaggio verso l'aldilà. Non c'è più niente da fare qui.
-menu_burial_mound_oath|Pronunci ad alta voce un giuramento per vendicare la morte di {s4}. Cercherai implacabilmente le forze di {s3} fino a quando non le avrai annientate. Le tue parole vengono portate lontano dal vento, chi può dire che non siano state udite persino oltre il mare? 
-menu_burial_mound_despoil|Fai a pezzi il monumento a {s1} con le tue stesse mani e maledici perfino le sue pietre con maledizioni, canti crudeli e gesti inenarrabili. I tuoi seguaci si fanno da parte per paura dei morti, ma sembra che tu sia riuscito a rinnovare il loro rispetto per la tua malvagità.
-menu_funeral_pyre|Ti avvicini ai resti bruciati della pira di {s3} di {s2}. Qui il suo corpo è stato bruciato in modo cerimonioso dalle sue guardie personali. Non è rimasto niente di valore.  
+menu_burial_mound_oath|Pronunci ad alta voce un giuramento per vendicare la morte di {s4}. Cercherai implacabilmente le forze di {s3} fino a quando non le avrai annientate. Le tue parole vengono portate lontano dal vento, chi può dire che non siano state udite persino oltre il mare ? 
+menu_burial_mound_despoil|Fai a pezzi il monumento a {s1} con le tue stesse mani e maledici perfino le sue pietre con anatemi, canti crudeli e gesti inenarrabili. I tuoi seguaci si fanno da parte per paura dei morti, ma sembra che tu sia riuscito a rinnovare il loro rispetto per la tua malvagità.
+menu_funeral_pyre|Ti avvicini ai resti bruciati della pira di {s3} di {s2}. Qui il suo corpo è stato dato alle fiamme in modo cerimonioso dalle sue guardie personali. Non è rimasto niente di valore.  
 mno_leave_pyre|Abbandona la pira.
 menu_town_ruins|Quando ti avvicini, vedi che {s1} è {s2}
 mno_ruin_menu_0|Esplora il luogo.
@@ -371,7 +371,7 @@ mno_ruin_leave|Abbandona...
 menu_death|Sei stato ucciso. Anche se la guerra continua ad infuriare, tu non potrai più farne parte.
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 menu_animal_ambush_success|I {s2} {reg0?fall:falls} cadono davanti a te come spighe di grano davanti alla falce ! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}
-menu_animal_ambush_fail|Gli animali ti mordono e feriscono te {reg0?,: and your companion{reg2?s,:,}} ma fortunatamente riuscite a difendervi. Si spera che non vi attaccheranno di nuovo.
+menu_animal_ambush_fail|Gli animali mordono e feriscono te {reg0?,: and your companion{reg2?s,:,}} ma fortunatamente riuscite a respingerli. Forse non vi attaccheranno ancora.
 menu_build_your_scene|Qui puoi costruire la tua propria scena da battaglia, usando una delle slot qua sotto e l'Editor del gioco (Devi prima scrocettare il quadratino "Edit Mode" nelle opzioni del launcher di M&B).^Poi, puoi verificare le tue scene che hai costruito (nominate file sco dalla cartella TLD/SceneObj) al team di sviluppo di TLD, e, se la tua scena è buona abbastanza, potrà apparire nelle prossime versioni della mod come un luogo da battaglia a caso !^^ Prova anche in specificare quale regione della mappa vuoi che la tua scena appaia.^ Un paio di suggerimenti: prova ad evitare acqua profonda, montagne troppo grandi o appuntite e altri sentieri in cui non si può passare, eccetto se sei uno sceneggiatore con molta esperienza e sai come cambiare l'AI delle truppe per non andare in un posto dove non vuoi ch vadano, e quindi mettere l'AI a vagare in altri posti.^ (Gruppi #0-1 sono per gli attaccanti, #4 per i difensori, non toccare #5-8
 mno_scene1|Campo di battaglia 5 (scn_battlefield5.sco)
 mno_scene2|Campo di battaglia 6 (scn_battlefield6.sco)

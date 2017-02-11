@@ -291,7 +291,7 @@ itm_gondor_ranger_sword|Spada da Ramingo di Gondor
 itm_gondor_bastard|Spada Bastarda di Gondor
 itm_gondor_citadel_sword|Spada della Cittadella di Gondor
 itm_gondor_cav_sword|Spada da Cavalleria di Gondor
-itm_gondor_spear|Lacia da Fanteria di Gondor
+itm_gondor_spear|Lancia da Fanteria di Gondor
 itm_gondor_tower_spear|Lancia della torre di Gondor
 itm_gondor_lance|Lancia da Cavalleria di Gondor
 itm_loss_axe|Ascia da Battaglia di Lossarnach
@@ -455,9 +455,9 @@ itm_uruk_helm_f|Elmo Uruk
 itm_mordor_cap_helm|Elmo da Capitano di Mordor
 itm_mordor_helm|Elmo di Mordor
 itm_black_num_helm|Elmo Numenoreano Nero
-itm_mordor_sword|Bastarda di Mordor
+itm_mordor_sword|Spada Bastarda di Mordor
 itm_mordor_longsword|Spada di Mordor
-itm_moria_armor_a|Imbracatura Pettorale di Moria
+itm_moria_armor_a|Finimenti Pettorali di Moria
 itm_moria_armor_b|Pettorale con Spallacci di Moria
 itm_moria_armor_c|Cotta di Maglia Orchesca di Moria
 itm_moria_armor_d|Pelle Borchiata di Moria
@@ -467,14 +467,14 @@ itm_moria_orc_shield_b|Scudo Orchesco di Moria
 itm_moria_orc_shield_c|Scudo Orchesco di Moria
 itm_gundabad_armor_a|Stracci da Orco di Gundabad
 itm_gundabad_armor_b|Pelliccia Orchesca di Gundabad
-itm_gundabad_armor_c|Armatura da Orco Gundabad
-itm_gundabad_armor_d|Armatura da Orco Gundabad
+itm_gundabad_armor_c|Armatura da Orco di Gundabad
+itm_gundabad_armor_d|Armatura da Orco di Gundabad
 itm_gundabad_armor_e|Armatura Orchesca Pesante di Gundabad
 itm_gundabad_helm_a|Calotta di Gundabad
-itm_gundabad_helm_b|Elmo Gundabad
-itm_gundabad_helm_c|Elmo Gundabad
-itm_gundabad_helm_d|Elmo Gundabad
-itm_gundabad_helm_e|Elmo da Cavalcawarg
+itm_gundabad_helm_b|Elmo di Gundabad
+itm_gundabad_helm_c|Elmo di Gundabad
+itm_gundabad_helm_d|Elmo di Gundabad
+itm_gundabad_helm_e|Elmo da CavalcaMannari
 itm_dunland_wolfboots|Stivali del Lupo Dunlandiani
 itm_dunland_armor_a|Armatura di Pelliccia Grigia 
 itm_dunland_armor_b|Armatura di pelle Grigia 
@@ -491,17 +491,17 @@ itm_dun_helm_b|Copricapo con corna Dunn
 itm_dun_helm_c|Elmo Alto Grigio
 itm_dun_helm_d|Elmo Alto Grigio
 itm_dun_helm_e|Elmo Alto da Battaglia Grigio
-itm_dun_shield_a|Scudo Dunniano
-itm_dun_shield_b|Scudo Dunniano
+itm_dun_shield_a|Scudo Dunnish
+itm_dun_shield_b|Scudo Dunnish
 itm_dun_berserker|Spada da Capoclan Dunlandiano
 itm_dunnish_antler_axe|Ascia in osso Dunn
-itm_dunnish_war_axe|Scure da Guerra Grigia
-itm_dunnish_axe|Scure Grigia
-itm_dunland_spear|Lancia Grigia
-itm_dunnish_pike|Picca Grigia
-itm_rohan_armor_a|Camicia di Rohan
-itm_rohan_armor_b|Camicia con Cappa di Rohan
-itm_rohan_armor_c|Camicia Lunga di Rohan
+itm_dunnish_war_axe|Scure da Guerra Dunnish
+itm_dunnish_axe|Scure Dunnish
+itm_dunland_spear|Lancia Dunnish
+itm_dunnish_pike|Picca Dunnish
+itm_rohan_armor_a|Veste di Rohan
+itm_rohan_armor_b|Veste con Cappa di Rohan
+itm_rohan_armor_c|Veste Lunga di Rohan
 itm_rohan_armor_d|Usbergo di Rohan
 itm_rohan_armor_e|Usbergo di Rohan
 itm_rohan_armor_f|Usbergo di Rohan
@@ -728,33 +728,33 @@ itm_dale_shield_a|Scudo di Dale
 itm_dale_shield_b|Scudo di Dale
 itm_dale_shield_c|Scudo di Dale
 itm_dale_shield_d|Scudo di Dale
-itm_umb_armor_a|Armatura in Cuoio da Corsaro
-itm_umb_armor_a1|Armatura Pesante in Cuoio da Corsaro
-itm_umb_armor_b|Armatura da Predone Corsaro
-itm_umb_armor_c|Gambesone da Corsaro
-itm_umb_armor_d|Gambesone Pesante da Corsaro
-itm_umb_armor_e|Gambesone da Predone Corsaro
+itm_umb_armor_a|Armatura in Cuoio da Pirata
+itm_umb_armor_a1|Armatura Pesante in Cuoio da Pirata
+itm_umb_armor_b|Armatura da Predone Pirata
+itm_umb_armor_c|Gambesone da Pirata
+itm_umb_armor_d|Gambesone Pesante da Pirata
+itm_umb_armor_e|Gambesone da Predone Pirata
 itm_umb_armor_f|Usbergo da Corsaro
-itm_umb_armor_g|Usbergo con Spallacci da Corsaro
-itm_umb_armor_h|Armatura pesante da Predone Corsaro
-itm_umb_helm_a|Elmo a Conchiglia da Corsaro
-itm_umb_helm_b|Elmo a Conchiglia da Corsaro
+itm_umb_armor_g|Usbergo con Spallacci da Pirata
+itm_umb_armor_h|Armatura pesante da Predone Pirata
+itm_umb_helm_a|Elmo a Conchiglia da Pirata
+itm_umb_helm_b|Elmo a Conchiglia da Pirata
 itm_umb_helm_c|Elmo da Corsaro Miliziano
 itm_umb_helm_d|Elmo da Corsaro Miliziano
-itm_umb_helm_e|Elmo da Predone Corsaro
-itm_umb_helm_f|Elmo da Predone Corsaro
+itm_umb_helm_e|Elmo da Predone Pirata
+itm_umb_helm_f|Elmo da Predone Pirata
 itm_umb_hood|Cappuccio Di Humbar
 itm_corsair_boots|Stivali da corsaro
-itm_umb_shield_a|Brocchiero da corsaro
-itm_umb_shield_b|Brocchiero da corsaro
-itm_umb_shield_c|Brocchiero da corsaro
-itm_umb_shield_d|Brocchiero da corsaro
-itm_umb_shield_e|Brocchiero da corsaro
+itm_umb_shield_a|Brocchiero da Pirata
+itm_umb_shield_b|Brocchiero da Pirata
+itm_umb_shield_c|Brocchiero da Pirata
+itm_umb_shield_d|Brocchiero da Pirata
+itm_umb_shield_e|Brocchiero da Pirata
 itm_umbar_cutlass|Sciabola Pirata di Humbar
 itm_kraken|Sciabola Pirata del Kraken
 itm_umbar_rapier|Spada di Humbar
-itm_corsair_harpoon|Arpione da corsaro
-itm_corsair_sword|Eket da Corsaro
+itm_corsair_harpoon|Arpione da Pirata
+itm_corsair_sword|Eket da Pirata
 itm_corsair_throwing_dagger|Coltelli da Lancio di Humbar
 itm_umbar_pike|Picca di Humbar
 itm_woodman_tunic|Tunica da Uomo dei Boschi
@@ -863,7 +863,7 @@ itm_mirkwood_sword_reward|Spada reliquia di Boscoverde
 itm_nazgul_sword|Spada Nazgul
 itm_cooking_cauldron|Calderone
 itm_eorl_cavalry_sword|Spada di Eorl
-itm_garlic_reward|Garlico
+itm_garlic_reward|Aglio
 itm_silmarillion_reward|Silmarillion
 itm_herbarium_reward|Erbario della Terra di Mezzo
 itm_book_of_moria|Libro di Mazarbul
@@ -901,6 +901,6 @@ itm_feet_chains_dwarf|Catene per le Caviglie
 itm_spider|Ragno
 itm_bear|Orso
 itm_wolf|Lupo
-itm_defiled_armor_gondor|Mantello da Condottiero Corrotto di Gondor
-itm_defiled_armor_rohan|Usbergo Corrotto di Rohan
-itm_defiled_armor_dale|Armatura da Nobile di Dale Corrotta
+itm_defiled_armor_gondor|Mantello da Condottiero Contaminato di Gondor
+itm_defiled_armor_rohan|Usbergo Contaminato di Rohan
+itm_defiled_armor_dale|Armatura da Nobile di Dale Corrotta 

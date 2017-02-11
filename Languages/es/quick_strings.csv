@@ -54,19 +54,18 @@ qstr_Days_Passed:_{reg0}|Días transcurridos: {reg0}
 qstr_Difficulty:_{reg0}%|Dificultad: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|PUNTUACIÓN TOTAL: {reg0}
-qstr_______|      
-qstr_A_peaceful_village_n|Un pueblo pacífico no lejos del Folde Oeste...
+qstr_A_peaceful_village_n|En un pueblo pacífico no lejos del Folde Oeste...
 qstr_The_War_is_upon_Roha|¡La Guerra ha llegado a Rohan!
-qstr_Minas_Tirith___The_W|Minas Tirith - La Ciudad Blanca
+qstr_Minas_Tirith___The_W|Minas Tirith; La Ciudad Blanca
 qstr_The_White_Tree_stand|El Árbol Blanco permanece muerto desde que el linaje de Reyes se marchitó...
 qstr_The_Shadow_grows_eve|La Sombra se hace cada vez más fuerte en el Este.
-qstr_Minas_Morgul___City_|Minas Morgul - Ciudad de los Nazgûl
+qstr_Minas_Morgul___City_|Minas Morgul; Ciudad de los Nazgûl
 qstr_Sauron_s_armies_marc|¡Los ejércitos de Sauron marchan hacia la Guerra!
 qstr_Adventurers_at_audie|Aventureros en una audiencia con el Senescal Denethor...
-qstr___What_business_do_y| '¿Qué negocio os trae aquí, peticionarios?'
-qstr___Your_Stewardship_w|'Senescal, hemos venido de tierras lejanas para.... ¡saltar!'
-qstr___Enough_of_this_mad| '¡Cejad ésta locura! ¡Guardias!'
-qstr___I_ve_had_enough_of|'Ya he tenido suficientes de estas bromas... ¡Los siguientes tendrán que arrodillarse!'
+qstr___What_business_do_y| «¿Qué os trae a mis dominios, peticionarios?»
+qstr___Your_Stewardship_w|«Senescal, hemos venido de tierras lejanas para.... ¡saltar!»
+qstr___Enough_of_this_mad|«¡Cejad ésta locura! ¡Guardias!»
+qstr___I_ve_had_enough_of|«Ya he tenido suficientes de estas bromas... ¡Los siguientes tendrán que arrodillarse!»
 qstr_Chest|Cofre
 qstr_Cape|Capa
 qstr_Arms|Brazos
@@ -171,6 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} heridos, {reg5} huidos
 qstr_killed|muertos
 qstr_routed|huidos
 qstr_wounded|heridos
+qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|Nada
 qstr_^None|^Ninguna
 qstr_near_the_Great_East_|cerca del Gran Camino del Este, la vieja ruta abandonada
@@ -308,7 +308,7 @@ qstr_Falling_Back|Retrocediendo
 qstr_Standing_Closer|Concentrándose
 qstr_Spreading_Out|Separándose
 qstr_Standing|En pie
-qstr_N/A|N/D
+qstr_N/A|No disp.
 qstr_Free|Libre
 qstr_Any_Weapon|Cualquier Arma
 qstr_Blunt_Weapons|Armas Contundentes
@@ -817,37 +817,37 @@ qstr_{reg65?mistress:mast|{reg65?ama:amo}
 qstr_{reg65?Mistress:Mast|{reg65?Ama:Amo}
 qstr_{reg65?madame:sir}|mi {reg65?señora:señor}
 qstr_{reg65?Madame:Sir}|Mi {reg65?Señora:Señor}
-qstr_How_do_magnets_work?|¿Cómo funcionan los imanes?
+qstr_How_do_magnets_work?|¿komo funsionan los imanes??'
 qstr_Um..._by_enchanting_|Em... ¿Encantando el hierro?
 qstr_Magnets_are_made_of_|Los imanes están hechos de metal, que se extrae de la tierra. Son magnéticos porque el metal todavía contiene piezas de gravedad en su interior.
-qstr_i_wont_a_bonerlrord_|yo quero qe lo psaseis a bonerlrord haora mesmo!11
+qstr_i_wont_a_bonerlrord_|kiero k paceis el mod a bonerlrord haora mizmo!11
 qstr_I_m_sure_the_TLD_tea|Estoy seguro que el Equipo de TLD se pondrá a ello cuando pueda.
 qstr_Install_TLD_in_your_|Instala TLD en la carpeta Modules de Bannerlord, agrega la línea 'compatible_with_wfas = 1' en el module.ini, y podrás jugar en Warband y... ¡en Warrider 0.202!
-qstr_dis_mod_takes_2_long|eztee mod tardda muxo tempo pa salir y apezta!!11
-qstr_Well_there_s_a_lot_o|Bueno, viene con un montón de mejoras gráficas y contenido. No sé porqué pero me da que lleva tiempo.
+qstr_dis_mod_takes_2_long|eztee mod tardda muxo tempo pa salir y apezta un webo!!11!
+qstr_Well_there_s_a_lot_o|Bueno, viene con un montón de mejoras gráficas y contenido. No sé por qué pero me da que lleva tiempo.
 qstr_It_has_been_recently|Ha salido hace poco, si no sabes donde encontrarlo puedes descargarlo desde lemonparty.org.
-qstr_i_wont_decapitated_e|yo queero cortar cabezas de chachielefantees en el multi, aoda!!11
+qstr_i_wont_decapitated_e|yo kiero cortar kavesas de xaxielefantees en el multi, aoda mizmo!!11!
 qstr_I_don_t_think_there_|No creo que nunca haya una versión multijugador de TLD, pero tener elefantes estaría chulo.
-qstr_There_is_a_hidden_el|Hay un nivel secreto de todos contra todos online de ''elefantes'', pero primero tienes que borrar todas tus partidas guardadas, luego jugar durante cien días en el juego sin guardar, luego ve a la pantalla del personaje y presiona Alt+F4. ¡Vale la pena!
-qstr_Did_you_bring_your_z|¿T'as traido a tu psaperra? 
+qstr_There_is_a_hidden_el|Hay un nivel secreto multijugador todos contra todos de ''elefantes'', pero primero tienes que borrar todas tus partidas guardadas, luego jugar durante cien días en el juego sin guardar, luego ve a la pantalla del personaje y presiona Alt+F4. ¡Vale la pena!
+qstr_Did_you_bring_your_z|¿T'as traio a tu psaperra? 
 qstr_What_s_zupdog?|¡¿Qué pasa,.. perra?!
 qstr_My_zupdog_is_ill_but|Mi psaperra está mala, pero me eh' traio mihculito.
-qstr_Wai_no_plate_armour_|Por ke no ay armadura chaxi de plakas en ell , mod, moreno???
-qstr_What_is_plate_armour|¿Armadura de placas? Ni idea de qué me estás hablando.
-qstr_Wai_no_female_trolls|sperah no jay trolazas jembras po' aquí? Eh? Eh? Tu ereh mah perra, moreno!
+qstr_Wai_no_plate_armour_|Por ke no ay armadura chaxi de plakas en ell ., mod, moreno???
+qstr_What_is_plate_armour|¿Armadura de... placas? Ni idea, chato.
+qstr_Wai_no_female_trolls|sperah no jay trolasas jembras po' aquí? Ee? Ee? Tu ereh mah perra, moreno!
 qstr_WHEN_U_REALSE_MOD?!!|PA' KUANDO PEDO DEZCARGAR EL MOD JEJE ?!!?
 qstr_But_we_did_release._|Pero si ya lo puedes descargar. Estás en él. ¿Y por qué gritas?
 qstr_YES!_ALSO_SOMETIMES_|¡ZII! ¡TMBIEN A BEZES SI!
-qstr_Wai_u_no_work_wiht_o|'perah pque no rtabaajas ocn otors mods chachis pa' acer un susuper chachimod de ESDLA?
+qstr_Wai_u_no_work_wiht_o|'perah pque no rtabaajas ocn otors mods xachis pa' aser un zuzuper xachimod de ESDLA?
 qstr_Every_mod_team_works|Cada equipo de modding trabaja siguiendo sus propias normas, no puedes hacer que los mods cooperen si su visión difiere.
-qstr_Because_we_don_t_hav|Porque no tenemos sentido del humor y la mayoría de ellos son demasiado divertidos para nosotros.
-qstr_In_movies_trolls_are|En las pelis los trolls eran grandotes y gordis, ¿'perah poke me as hecho tirillas?
-qstr_We_interpreted_Tolki|Interpretamos Tolkien así.
-qstr_But_we_did_make_you_|Pero te hemos hecho tan tonto como en las pelis. Eso tiene que contar para algo.
-qstr_What_is_news?_Got_an|¿Komo van las cozas? ¿Tenes imagenes nuuevs?
-qstr_Well_just_look_aroun|Bueno, hecha un vistazo a tu alrededor, ¿para que necesitas imágenes nuevas?
-qstr_Say_cheese!|¡Dí, pa... ta... ta..!
-qstr_Why_did_you_make_mod|¿Por qué el mod es tan difícil de instalar?
+qstr_Because_we_don_t_hav|Porque no tenemos sentido del humor y la mayoría de ellos son demasiado chachi pistachis.
+qstr_In_movies_trolls_are|En las pelis los trolls eran grandotes y gordis, ¿'perah poke me as hesho un tirillas?
+qstr_We_interpreted_Tolki|Interpretamos Tolkien así. Ajo y agua.
+qstr_But_we_did_make_you_|Pero te hemos hecho tan tonto como en las pelis. Eso tiene que contar para algo, trolazo.
+qstr_What_is_news?_Got_an|¿Komo van las cozas? ¿Tenes imágenes nuuevs de al mod?
+qstr_Well_just_look_aroun|Bueno, echa un vistazo a tu alrededor, ¿para que necesitas imágenes nuevas del mod, moreno?
+qstr_Say_cheese!|¡Venga. Preparados; listos; ya! ¡Dí, pa... ta... ta..!
+qstr_Why_did_you_make_mod|¿Porké el MmOD es tan complicao de istalar, peñita??'
 qstr_Well_if_you_are_here|¡Bueno, si has terminado hablando conmigo al final te has tenido que leer el maldito manual de instalación!
 qstr_You_just_got_windyfl|¡Toma error de windyflora, por tonto!
 qstr_Treebeard_wants_you_|Bárbol quiere que encuentres y elimines a los orcos que están talando árboles en Fangorn.
@@ -980,7 +980,7 @@ qstr_My_spies_tell_me_the|Mis espías me dicen que el enemigo está maquinando a
 qstr_{s9}_asked_you_to_di|{s9} te ha pedido que despliegues un grupo de exploradores cerca de {s13}.^Toma 7 soldados de {s15}, de los cúales al menos 1 sea {s14}, acercate a {s13} y habla con {s14} para desplegarlos.
 qstr_We_need_to_take_the_|Tenemos que llevar la batalla al enemigo, {playername}. Ahora mismo, podemos empezar golpeando sus patrullas y fragmentar su comunicación. Quiero que elimines a {reg1} grupos de {s13}, eso nos ayudaría a recuperar la iniciativa.
 qstr_We_need_to_grind_dow|Tenemos que aplastar someramente a nuestros cobardes enemigos, {playername}. sus patrullas y caravanas de suministros están creciendo demasiado para mi gusto. Quiero que elimines {reg1} grupos de {s13}, para que aprendan a temer lo que viene.
-qstr_{s9}_asked_you_to_el|{s9} te ha pedido que elimines {reg1} grupos de {s13}.
+qstr_{s9}_asked_you_to_el|{s9} te ha pedido que acabes con {reg1} grupos de {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} te ha pedido liberar a {s13} de la amenaza de un Troll furioso que circula por sus cercanías.
 qstr_the_Dwarves_so_that_|los Enanos, si pasas por Erebor o las Colinas de Hierro puedes hacerte con una legendaria arma enana
 qstr_Gondor_so_that_if_yo|Gondor, si pasas por sus tierras puedes hacerte con una de sus legendarias armaduras
@@ -990,16 +990,16 @@ qstr_It_sure_look_like_yo|Ya lo creo, escoria de Mordor... ^^Yo también he oíd
 qstr_It_sure_look_like_you|Parece que sí.^^El Señor Oscuro me llama, y he respondido viniendo aquí para destruir el reino de los Hombres.
 qstr_*Snort*_There_is_onl|Sólo existe un señor; el Señor Oscuro. No pintas nada en esta Guerra, debilucho. Déjame en paz.
 qstr_*Snort*_Another_weak|Vaya, otro debilucho reforzando nuestro muro de carne. Déjame en paz.
-; qstr_It_s_their_local_mon|It's their local money.. not worth anything in Mordor. Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs...
-; qstr_It_s_their_local_mone|It's their local money.. not worth anything in Mordor. Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!
-; qstr_It_s_their_local_money|It's their local money.. not worth anything in Mordor. Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs.
+qstr_It_s_their_local_mon|Es su moneda local, pero no vale nada en Mordor. ¡Toma, puede que consigas que te sigan unos cuantos orcos de Moria! Y con un poco de suerte cargarte a esos idiotas... ¡ja, ja! maldita sea su sombra...
+qstr_It_s_their_local_mone|Es su moneda local, pero no vale nada en Mordor. ¡Toma, consigue unas cuantas armas de Isengard! ¡Extraños planes se cuecen por allí... en esa torre! ¡La humareda no para un segundo, pero no son rival para el poder del Señor Oscuro!
+qstr_It_s_their_local_money|Aquí no vale nada, pero puedes usarlas para hacerte con pieles de Gundabad. Esos condenados orcos son duros de mollera y feos de ver, pero buenos peleteros.
 qstr_Take_it!_You_can_use|¡Toma, quédatelo! Puedes utilizarlo para adquirir armas de Mordor. ¡Tenemos sólo lo mejor!
-; qstr_It_s_their_local_money.|It's their local money.. not worth anything in Mordor. Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!
-; qstr_Here_s_some_of_their|Here's some of their own local money that I won...not worth anything in Mordor...Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs...
-; qstr_Here_s_some_of_their_|Here's some of their own local money that I won..not worth anything in Mordor...Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!
-; qstr_Here_s_some_of_their_o|Here's some of their own local money that I won..not worth anything in Mordor...Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs.
+qstr_It_s_their_local_money.|Aquí no vale nada, pero puedes usarlas para hacerte con armas de los jinetes de Rhûn... ¡o un rico, rico caballete! ¡Pero puede que te hagan picadillo! ¡Ja, ja, ja, ja!
+qstr_Here_s_some_of_their|He ganado algo de moneda local, pero no vale nada en Mordor. ¡Toma, puede que consigas que te sigan unos cuantos orcos de Moria! Y con un poco de suerte cargarte a esos idiotas... ¡ja, ja! maldita sea su sombra...
+qstr_Here_s_some_of_their_|He ganado algo de moneda local, pero no vale nada en Mordor. ¡Toma, consigue unas cuantas armas de Isengard! ¡Extraños planes se cuecen por allí... en esa torre! ¡La humareda no para un segundo, pero no son rival para el poder del Señor Oscuro!
+qstr_Here_s_some_of_their_o|He ganado algo de moneda local. Aquí no vale nada, pero puedes usarlas para hacerte con pieles de Gundabad. Esos condenados orcos son duros de mollera y feos de ver, pero buenos peleteros.
 qstr_Here_s_some_money_th|Aquí tienes algo de dinero, ¡quédatelo! Puedes utilizarlo para adquirir armas de Mordor. ¡Tenemos sólo lo mejor!
-; qstr_Here_s_some_of_their_ow|Here's some of their own local money that I won..not worth anything in Mordor...Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!
+qstr_Here_s_some_of_their_ow|He ganado algo de moneda local. Aquí no vale nada, pero puedes usarlas para hacerte con armas de los jinetes de Rhûn... ¡o un rico, rico caballete! ¡Pero puede que te hagan picadillo! ¡Ja, ja, ja, ja!
 qstr_That_is_not_a_smart_|Tu comentario no me parece pertinente para alguien en frente de un guerrero de Rhûn... En el próximo encuentro te despiezaremos.
 qstr_They_will_all_know_m|Conocerán mi nombre... Aprenderán a temerlo.
 qstr_Suilad_mellon!_It_is|¡Suilad, mellon! Rara es la vez que alguien del Valle Oculto se adentra en nuestras tierras. Gracias al cielo estrellado por guiarte hasta nuestra salvación, y gracias a ti por seguirlo, ¡le hannon!
@@ -1013,27 +1013,27 @@ qstr_Alae!_Our_green_wood|¡Alae! Patrullamos sin demora nuestros verdes bosques
 qstr__say_nothing_|(no digas nada)
 qstr_Alas_it_is_not_a_plea|Me temo que tanto a mí como al resto de sirvientes de Elrond nos traen a estas tierras otros menesteres aparte del pausado paseo y las dulces vistas.^^Un antiguo mal que se debatía entre las sombras ha salido a la luz. Los Sabios de más allá de las montañas han respondido a la llamada y ahora batallones de Imladris marchan hacia el Norte.
 qstr_You_wouldn_t_have_nee|¡No habríamos de prestar ayuda si cerrarais vuestras fronteras! ^^Las historias de la bruja silvana sólo asustan a los más necios, aunque no al orco que acabamos de tajar.
-; qstr_*growl*_I_know_your_|*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks.^^ Stars had none to do with it - I sensed the filth and followed a trail. I would have slain them were you in danger or not.
-; qstr_Keep_your_secrets_th|Keep your secrets then, friend, but the Golden Woods whisper of your kin’s arrival. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold.
-; qstr_We_walk_under_the_su|We walk under the sun and the stars, to dwell in caves is not our desire. Still, your undoubtedly well meant council is well received. ^^Your wisdom and brave deeds shall be known, your needs met whenever you wander into our domain.
-; qstr_*he_sighs_and_smiles|*he sighs and smiles slightly* ^^Very well. For our common purpose we are happy to share all, even if words are in short supply where you come from.
-; qstr_For_some_months_we_h|For some months we have watched the orc filth multiplying and staining our woods. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold.
-; qstr_Calm_yourself_friend|Calm yourself, friend. Pedin i phith in aniron, a nin u-cheniathog. ^^We shall speak of you to all our people. Your valour and deeds shall be known, your needs met whenever you come to bask in the light of our Golden Valley.
-; qstr_Stars_sail_through_t|Stars sail through the heavenly seas, men tread the earth. Truly, who can say if their paths follow each other? We shall speak of you to all our people. Your deeds shall be known and your needs met, were you to chase a star to the Golden Valley.
+qstr_*growl*_I_know_your_|Sé suficiente élfico como para distinguir cuando se ríen de mi o me dan las gracias. ^^Nada tienen que ver las estrellas en seguir un rastro de hedionda podredumbre. Habría acabado con ellos aunque no hubierais estado en peligro.
+qstr_Keep_your_secrets_th|Protege tus secretos cuanto quieras, amigo mío. Oímos con voz diáfana cómo el bosque susurra al paso de los tuyos.^^Daremos parte a nuestra Señora Galadriel de la venida del Señor Elrond, aunque puede que sea en vano. También relataremos tus proezas a nuestra gente. ^^¡Le maethor veleg a gornui! El valle del oro que canta sabrá de tu valor y te recibirá como te mereces.
+qstr_We_walk_under_the_su|Viajamos raudos bajo el sol y las estrellas, no pertenecemos al mundo subterráneo. Aún así, apreciamos tu bienintencionado consejo. ^^Hablarán de tu sabiduría y gestas, y se te proporcionará cobijo en nuestros dominios cuando sea necesario.
+qstr_*he_sighs_and_smiles|*suspira sonriendo* ^^Que así sea, lo compartiremos todo por nuestro objetivo común, incluso cuando las palabras son materia escasa allí donde vienes.
+qstr_For_some_months_we_h|Llevamos unos meses viendo como la escoria orca ensucia nuestros bosques más y más. ^^Daremos parte a nuestra Señora Galadriel de la venida del Señor Elrond, aunque puede que sea en vano. También relataremos tus proezas a nuestra gente. ^^¡Le maethor veleg a gornui! El valle del oro que canta sabrá de tu valor y te recibirá como te mereces.
+qstr_Calm_yourself_friend|Calma, amigo mío. Pedin i phith in aniron, a nin u-cheniathog. ^^Nuestra gente sabrá de tus proezas y maestría a la hora de acabar con los sirvientes de la Sombra. Serás bien recibido cuando decidas recrearte en la aterciopelada luz de nuestro valle dorado.
+qstr_Stars_sail_through_t|Estrellas que sin rumbo navegan por el mar celestial, mientras Hombres hacen lo propio en el lodazal. Nadie sabe si se cruzarán nuestros caminos, pero nuestra gente sabrá de tus proezas. Serás bien recibido cuando decidas seguir las estrellas hasta el valle dorado.
 qstr__RESOURCE_POINT_TUTO|(TUTORIAL DE PUNTOS DE RECURSOS)^^ Los puntos de recursos de las gentes de Lórien los puedes gastar sólo comprando en Lórien, ya que cambian de facción en facción y no valen para el resto de facciones. ^^Para más información visita el menú de Informes.
 qstr__RESOURCE_POINT_TUTOR|(TUTORIAL DE PUNTOS DE RECURSOS)^^ Los puntos de recursos de las gentes de Beorn los puedes gastar sólo comprando en los asentamientos Beórnidas, ya que cambian de facción en facción y no valen para el resto de facciones. ^^Para más información visita el menú de Informes.
 qstr_I_have_long_wished_t|Me gustaría visitar a las gentes del bosque algún día...
-qstr_What_form_shall_the_|Cómo debe Lórien responder el favor...
+qstr_What_form_shall_the_|¿Cómo debe Lórien responder el favor...?
 qstr_Our_bees_make_honey_|Nuestras abejas hacen miel y cera, nuestros rebaños leche, manteca y queso...
-; qstr_I_have_long_wished_to|I have long wished to visit the woodland folk, taste your lembas and hear your songs! ^^We brought sparkling golden wines, dusty tomes and proud ancient banners to remind us of our stream-singing valley, but I’m curious what unique wonders are to be found in Laurelindorenan.
-; qstr_What_form_shall_the_f|What form shall the favour of Lorien take? ^^Gold that turns into leaves come morning? Clear tasteless drink and dusty fairy-bread for my troops? ^^Blood-red wine, freshly hunted deer, armouries filled with sharp spears and keen arrows! That is hospitality I prefer.
+qstr_I_have_long_wished_to|Siempre he querido visitar a las gentes de los bosques, probar vuestras lembas y oír tan bellas canciones. ^^Hemos traído vinos dorados, tomos antiguos y orgullosos estandartes de antaño que nos traen recuerdos del sonoro río del valle, pero ansío ver qué maravillas se ocultan en Laurelindórenan.
+qstr_What_form_shall_the_f|¿Cómo deberá recompensarlo Lórien? ^^¿Bello oro que se convierte en verdes hojas con la llegada del nuevo día? ¿Claro y desabrido vino acompañado de harinoso pan mágico como alimento de tropa?^^¿Vino rojo sangre? ¿Ciervo recién cazado? ¿Arsenales con puntiagudas lanzas y cortantes flechas? Tal es la hospitalidad que prefiero.
 qstr_Our_bees_make_honey_a|Nuestras abejas nos proporcionan cera y miel, y las ovejas leche, queso y manteca.^^El pan lo hacemos a mano, y a menudo lo cambiamos por un hacha afilada cuando se nos cruza un enano.^^¿Qué más necesito, aparte de un par de fuertes manos?
 qstr_If_fate_wills_it_I_s|Si el destino así lo quiere caminaré por tus tierras de nuevo, y desvelaré todos sus secretos.
 qstr_If_I_ever_have_need_|Si alguna vez necesito la ayuda de Lórien, la pediré. Sin dudarlo un segundo.
 qstr__nod_and_say_nothing|(asiente en silencio)
-; qstr_Oh_there_are_many_an|Oh, there are many and any friend of Lorien is welcome to these gifts! ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your kindness with all you would require - bright weapons, hard corselets of mail, white-feathered arrows and provisions for your troops. ^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who could offer council to others, or ask favours of them.
-; qstr_The_joys_of_the_Gold|The joys of the Golden Valley are many and a true friend of Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your effort with all you would require - bright weapons, hard corselets of mail, deadly arrows and nourishing food for your troops.^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who would share wisdom with others, or ask favours of them.
-; qstr_Our_Golden_Valley_gi|Our Golden Valley gives goods aplenty and a friend to Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you aid the designs of our Lady and her lords, our people will reward your effort with all you would require while far away from home.
+qstr_Oh_there_are_many_an|Vaya, vaya. Muchos son los regalos a los que los amigos de Lórien tienen acceso. ^^Si volvemos a combatir hombro con hombro, o cumples las tareas encomendadas por nuestra Señora y sus subalternos, nuestra gente recompensará tus esfuerzos cubriendo cualquier necesidad; brillantes armas, duras cotas de malla, flechas de blanca plumada y provisiones para tus tropas. ^^Y quién sabe, puede que llegues a convertirte en {un digno Señor/una digna Señora} de Lórien, con suficiente altura como para ofrecer consejo o pedir favores.
+qstr_The_joys_of_the_Gold|Los placeres del valle dorado son muchos, y como amigo de Lórien que eres se te recibirá con los brazos abiertos. ^^Si volvemos a combatir hombro con hombro, o cumples las tareas encomendadas por nuestra Señora y sus subalternos, nuestra gente recompensará tus esfuerzos cubriendo cualquier necesidad; brillantes armas, duras cotas de malla, flechas de blanca plumada y provisiones para tus tropas. ^^Y quién sabe, puede que llegues a convertirte en {un digno Señor/una digna Señora} de Lórien, con suficiente altura como para ofrecer consejo o pedir favores.
+qstr_Our_Golden_Valley_gi|Nuestro valle dorado nos proporciona innumerables recursos a los que, como amigo de Lórien que eres, tienes acceso. ^^Si volvemos a combatir hombro con hombro, o cumples las tareas encomendadas por nuestra Señora y sus subalternos, nuestra gente recompensará tus esfuerzos cubriendo todo lo que necesites lejos de tu hogar.
 qstr_I_shall_keep_that_in|Lo tendré en cuenta.^^ ¡Hantanyel, áva márië!
 qstr_That_may_be_so_some_|Es posible, algunos caminos nos llevan por recodos tortuosos.^^ ¡Boe i 'waen!
 qstr_I_seldom_wander_far_|Raramente me alejo de mi hogar. Aléjate tan rápido como puedas, puede haber más orcos al acecho.
@@ -1088,10 +1088,10 @@ qstr_{s4}^We_are_patrolli|{s4}^Estamos patruyando alrededor de {s11}.
 qstr_{s4}^We_are_carrying|{s4}^Estamos llevando suministros de {s11} a {s12}.
 qstr_{s4}^We_are_escortin|{s4}^Estamos escoltando prisioneros hasta {s12}.
 qstr_Greetings_do_you_nee|Saludos, ¿Necesitas refuerzos?
-qstr_Goodbye_friends.|Hasta luego, amigos.
+qstr_Goodbye_friends.|Buen viaje, amigos míos.
 qstr_See_you_later_if_you|Nos veremos más tarde si no mueres antes.
 qstr__^Oh_and_take_back_t|^Ah, y quédate con todos aquellos que no son de nuestra gente.
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Esos bravos:Ese bravo} {reg28?soldados ayudarán:soldado ayudará} seguramente a defender nuestras tierras.{s32} {s23}^^[gana {reg14} Puntos de Recursos de {s14}]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Esas útiles:Esa útil} {reg28?tropas ayudarán:tropa ayudará} seguramente en el ataque.{s32}^{s23}^^[gana {reg14} Puntos de Recursos de {s14}]
 qstr_Good_luck_in_your_tr|Buena suerte en vuestros viajes.
-qstr_Try_not_getting_your|Intenta que no te maten.
+qstr_Try_not_getting_your|Intenta que no te deslomen.

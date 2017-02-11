@@ -54,7 +54,6 @@ qstr_Days_Passed:_{reg0}|Verstrichene Tage: {reg0}
 qstr_Difficulty:_{reg0}%|Schwierigkeitsgrad: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|GESAMTPUNKTE: {reg0}
-qstr_______|Platzhalter
 qstr_A_peaceful_village_n|Ein friedliches Dorf nicht weit von der Westfold...
 qstr_The_War_is_upon_Roha|Der Krieg kommt über Rohan!
 qstr_Minas_Tirith___The_W|Minas Tirith - Die Weiße Stadt
@@ -73,16 +72,16 @@ qstr_Arms|Arme
 qstr_Thighs|Hüften
 qstr_Legs|Beine
 qstr_Rotate|Drehen
-; qstr_Close|Close
-; qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
-; qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
-; qstr_Attributes|Attributes
-; qstr_STR^AGI^INT^CHA|STR^AGI^INT^CHA
-; qstr_Skills|Skills
-; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
-; qstr_Proficiencies|Proficiencies
-; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
-; qstr_Equipments|Equipments
+qstr_Close|Schließen
+qstr_Click_the_center_but|Klicke auf die Fraktionsanzeige, um die Fraktion zu wechseln^Klicke auf die Truppen, um Details zu sehen
+qstr_Level:_{reg3}^Health|Stufe: {reg3}^Gesundheit: {reg4}
+qstr_Attributes|Attribute
+qstr_STR^AGI^INT^CHA|STR^AGI^INT^CHA
+qstr_Skills|Fähigkeiten
+qstr_Ironflesh^Power_Stri|Eisenhaut^Schlagkraft^Wurfkraft^Bogenzugkraft^Schild^Athletik^Reiten^Berittenes Bogenschießen
+qstr_Proficiencies|Waffenfertigkeiten
+qstr_1H_Weapons^2H_Weapon|Einhandwaffen^Zweihandwaffen^Stangenwaffen^Bogenschießen^Armbust^Werfen
+qstr_Equipments|Ausrüstung
 qstr_You_gained_{reg0}_Re|Du erhältst {reg0} Ressourcenpunkte von {s0}.
 qstr_You_lost_{reg0}_Reso|Du verlierst {reg0} Ressourcenpunkte von {s0}.
 qstr_{s24}:|{s24}:
@@ -171,6 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} verwundet, {reg5} geflohen
 qstr_killed|getötet
 qstr_routed|geflohen
 qstr_wounded|verwundet
+; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|Nichts
 qstr_^None|^Nichts
 qstr_near_the_Great_East_|nahe der Großen Oststraße, der verlassenen alten Straße
@@ -439,12 +439,12 @@ qstr_{s24}:_Some_of_your_|{s24}: Einige deiner Wunden sind verheilt!
 qstr_{s24}:_Your_infantry|{s24}: Deine Fußtruppen fühlen sich besser!
 qstr_{s24}:_Your_archers_|{s24}: Deine Schützen fühlen sich besser!
 qstr_{s24}:_Your_cavalry_|{s24}: Deine Reiter fühlen sich besser!
-; qstr_Ah_what_a_coincidenc|Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities.
+qstr_Ah_what_a_coincidenc|Ah, welch ein Zufall, Euch hier anzutreffen, {playername}! Ihr kennt mich vielleicht nicht, aber mir seid Ihr nicht unbekannt. Ich bin auf dem Weg nach {s4}, aber komme gerade von {s3} und Euer Name ist dort gefallen. {s3} zählt auf Euch in diesen gefährlichen Zeiten und falls Ihr gerade einer anderen Aufgabe nachzugehen gedachtet, solltet Ihr das vielleicht überdenken und all Eure Kraft aufwenden, um {s3} zu unterstützen.
 qstr_Who_are_you?|Wer bist du?
 qstr_A_friend_of_{s3}_and|Ein Freund von {s3} und dem Volk vom {s2}. Eilt nun! Mordor zieht alles Böse zu sich und die Dunkle Macht wendet all ihren Willen auf, um es um sich zu sammeln. Die Zeit läuft aus für alles Gute in dieser Welt, wenn wir nicht all unser Handeln dagegen richten!
 qstr_What_should_I_do?|Was soll ich tun?
 qstr_Find_{s3}_s_whereabo|Findet {s3} sobald wie möglich und sprecht mit ihm. Viel Glück!
-; qstr_Good_to_see_the_Shad|Good to see the Shadow has not yet managed to defeat you, {playername}.
+qstr_Good_to_see_the_Shad|Es freut mich, dass der Schatten Euch noch nicht besiegt hat, {playername}.
 qstr_You_are_the_one_they|Ihr seid der, den sie Gandalf oder Mithrandir nennen.
 qstr_That_is_what_some_ca|So nennen sie mich. In meiner Zeit hier bin ich schon vieles genannt worden, aber wenn die Dunkelheit nicht aufgehalten wird, wird es bald niemanden mehr geben, der mich irgendetwas nennen könnte.
 qstr_What_do_you_mean?|Was meint Ihr?
@@ -452,10 +452,10 @@ qstr_In_spite_of_their_va|Trotz tapferen Widerstands wurde {s3} von den Mächten
 qstr_You_bring_dismal_new|Ihr bringt bedrückende Neuigkeiten, Zauberer.
 qstr_But_I_also_bring_a_m|Aber ich bringe auch Kunde von Hoffnung. Das Volk von {s5} hält immer noch stand. Seine Krieger sind furchtlos und seine Führer entschlossen.
 qstr_Help_them_fight_the_|Helft ihnen und bekämpft den Feind so gut Ihr könnt. Gebt nicht nach! Seid auf der Hut! Es gibt in der Welt noch ältere und gemeinere Geschöpfe als Orks.
-; qstr_Beware_{playername}_|Beware, {playername}, the might of Darkness crumbles. {s3} has fallen, as has its leader {s4}.
+qstr_Beware_{playername}_|Wisst, {playername}, dass die Macht der Dunkelheit schwindet. {s3} ist gefallen wie auch sein Herr {s4}.
 qstr_What_do_you_want_of_|Was wollt Ihr von mir, alter Mann?
 qstr_Just_know_that_a_Daw|Wisst einfach, dass die Dämmerung heraufzieht. Es ist unumgänglich. Und solltet Ihr noch lange genug leben, um sie zu sehen, bedenkt, was Ihr zu Euch dann sagen solltet.
-; qstr_Well_met_{playername|Well met, {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!
+qstr_Well_met_{playername|Eine freudige Begegnung, {playername}, {s24}. Mein Vertrauen in Euch war nicht umsonst. Die Macht des Schattens wurde gebrochen und Eure Bemühungen haben darin eine nicht unwichtige Rolle gespielt.
 qstr_Thank_you_Mithrandir|Habt Dank, Mithrandir!
 qstr_The_wizard_Saruman_i|Der Zauberer Saruman ist besiegt und Barad-dur wurde zu Staub zerschmettert, gemeinsam mit seinem Dunklen Herrn! Alle Völker Mittelerdes sind nun frei von der Bedrohung, die beinahe all das, was gut und rein in dieser Welt ist, verschlungen hätte. Der Feind ist vernichtet und der König zurückgekehrt!
 qstr_It_was_a_long_and_bl|Es war ein langer und blutiger Krieg und viele unserer besten Freunde weilen nicht mehr unter uns.
@@ -499,19 +499,19 @@ qstr_Your_troops_flee_in_|Alle eigenen Truppen fliehen!
 qstr_Many_of_your_troops_|Viele eigene Truppen fliehen.
 qstr_Some_of_your_troops_|Einige eigene Truppen fliehen.
 qstr_A_few_of_your_troops|Wenige eigene Truppen fliehen.
-; qstr_No_Troops_Left.|No Troops Left.
+qstr_No_Troops_Left.|Keine Truppen mehr.
 qstr_Your_mount_stumbles!|Dein Reittier stolpert! Es scheint zu lahmen.
 qstr_Bitten_by_your_own_w|Dein eigener Warg hat dich gebissen!
 qstr_You_weigh_too_much_f|Du bist zu schwer für ein Pony!
 qstr_Your_mount_rears_ref|Dein Reittier bockt. Es gehorcht dir nicht!
-; qstr_Fixed_Custom_Camera|Fixed Custom Camera
-; qstr_Press_Left_/_Right_A|Press Left / Right Arrow Keys to Switch Shoulders
-; qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
-; qstr_Use_+/__to_zoom_in/o|Use +/- to zoom in/out
-; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
-; qstr_Default_Camera|Default Camera
-; qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
-; qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
+qstr_Fixed_Custom_Camera|Feste Kamera
+qstr_Press_Left_/_Right_A|Drücke Pfeiltasten Rechts / Links um die Schulteransicht zu wechseln
+qstr_Free_Mode_Custom_Cam|Freier Modus
+qstr_Use_+/__to_zoom_in/o|Drücke +/- um zu zoomen
+qstr_Use_Up/Down_arrow_ke|Drücke Pfeiltasten Hoch/Runter, um den Winkel zu verändern
+qstr_Default_Camera|Standartkamera
+qstr_Fixed_Camera___Right|Feste Kamera - Rechte Schulter
+qstr_Fixed_Camera___Left_|Feste Kamera - Linke Schulter
 qstr_Cannot_leave_now.|Du kannst jetzt nicht gehen.
 qstr_You_have_found_the_l|Örtliche Schmiede gefunden...
 qstr_You_have_found_the_lo|Örtliche Amtsgewalt gefunden...
@@ -546,8 +546,8 @@ qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} und {s3}
 qstr_{s10}_Move_over_ther|{s10}, dort hin!
 qstr_You_have_a_clear_per|Du spürst deutlich unmittelbare Gefahr von allen Seiten!
 qstr_New_ent_reached_batt|Neuer Ent betritt das Schlachtfeld...
-; qstr_You_receive_word_tha|You receive word that Beorning villages were attacked. Beornings lose faction strength.
-; qstr_You_receive_word_that|You receive word that the Ring Hunter Leaders were seen travelling towards Mordor, a chest in tow. Mordor gains faction strength.
+qstr_You_receive_word_tha|Du erhältst Berichte, dass eine Dörfer der Beorninger angegriffen wurden. Die Beorninger verlieren an Stärke.
+qstr_You_receive_word_that|Du erhältst Berichte, dass die Ringjäger auf dem Weg nach Mordor gesichtet wurden und eine Truhe bei sich trugen. Mordor wird stärker.
 qstr_On_your_positions_bi|Auf eure Positionen, Bitches!!
 qstr_Defenders:_infantry_|Verteidiger: Fußsoldaten ANGRIFF!
 qstr_Defenders:_everyone_|Verteidiger: Alle zusammen, ANGRIFF!
@@ -559,8 +559,8 @@ qstr_Ballista:_out_of_ammo|Balliste: keine Munition
 qstr_The_ladders_on_Deepi|Leitern am Klammwall! Gebt Acht!
 qstr_You_yell_for_your_ho|Du rufst nach deinem Pferd.
 qstr_THREE.._TWO..._ONE..|DREI.. ZWEI... EINS.... KÄMPFT!
-; qstr_You_have_found_the_D|You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}
-; qstr_Leave_the_Warehouse?|Leave the Warehouse?
+qstr_You_have_found_the_D|Du hast das Warenlager gefunden, in dem die legendären Speere liegen könnten. Melde {s3} alles, was du findest.
+qstr_Leave_the_Warehouse?|Das Warenlager verlassen?
 qstr_Leave_the_place_in_s|Den Ort still verlassen?
 qstr_Leave_scene?|Ort verlassen?
 qstr_Trace_back_your_step|Deinen Weg zurückverfolgen und wieder ins Freie gehen?
@@ -732,15 +732,15 @@ qstr_Forces_of_Isengard|Mächte von Isengart
 qstr_their_enemies|ihre Feinde
 qstr_{s11}_and_{s13}|{s11} und {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
-; qstr_On_your_way_to_your_|On your way to your faction's capital, you set upon some orcs raiding a caravan.
-; qstr_On_your_way_to_your_f|On your way to your faction's capital, you set upon some troops waiting to ambush orcs in the forest.
-; qstr_On_your_way_to_Mordo|On your way to Mordor, you hear rustling nearby. You see some Gondor Scouts and ready yourself to warn your party.
-; qstr_You_see_the_village_|You see the village being raided by bandits. You get ready to defend them.
-; qstr_You_see_the_village_y|You see the village you were tasked to raid. You get ready to attack them.
-; qstr_The_raiders_are_defe|The raiders are defeated! Those few who remain alive and conscious scurry off to the darkness from whence they came, terrified of the villagers and their new champion.
-; qstr_Try_as_you_might_you|Try as you might, you could not defeat the raiders. They raze the village to the ground and enslave the remaining peasants.
-; qstr_The_village_has_been|The village has been razed, villagers killed or taken as slaves. The Dark Lord will be pleased.
-; qstr_You_failed_to_raid_t|You failed to raid the village and you were sent scurrying with your men. You hear the victors cheering as you feel the disapproving gaze of the Eye.
+qstr_On_your_way_to_your_|Auf dem Weg in die Hauptstadt deines Volks stößt du auf einige Orks, die eine Kaufmannskarawane überfallen.
+qstr_On_your_way_to_your_f|Auf dem Weg in die Hauptstadt deines Volks stößt du auf einige Truppen, die im Wald Orks auflauern.
+qstr_On_your_way_to_Mordo|Auf deinem Weg nach Mordor hörst du in der Nähe ein Rascheln. Du siehst einige Späher von Gondor und machst dich bereit, deinen Trupp zu warnen.
+qstr_You_see_the_village_|Du siehst, dass das Dorf von Banditen überfallen wird. Mach dich bereit, es zu verteidigen.
+qstr_You_see_the_village_y|Du siehst nun vor dir das Dorf, das du überfallen sollst. Mach dich bereit für den Angriff.
+qstr_The_raiders_are_defe|Die Angreifer sind besiegt! Jene, die noch leben und bei Bewusstsein sind, verstreuen sich in die Dunkelheit aus der sie kamen, schlotternd vor Furcht vor den Dorfbewohnern und ihrem neuen Helden.
+qstr_Try_as_you_might_you|Was du auch versuchtest, du konntest die Angreifer nicht besiegen. Sie machen das Dorf dem Erdboden gleich und versklaven die überlebenden Bauern.
+qstr_The_village_has_been|Das Dorf wurde niedergebrannt, die Bauern getötet oder versklavt. Der Dunkle Herrscher wird zufrieden sein.
+qstr_You_failed_to_raid_t|Du hast versagt. Du und deine Männer verstreuen sich. Du hörst die Jubelschreie der Sieger und spürst den unzufriedenen Blick des Roten Auges auf dir.
 qstr_Now_that_the_sorcere|Nun da der Zauberer tot ist, gibt es hier nichts mehr zu tun.
 qstr_Now_that_the_sorcerer|Nun da der Zauberer geflohen ist, gibt es hier nichts mehr zu tun.
 qstr_You_approach_a_heavi|Du näherst dich einem schwer bewachten Teil des Waldes...
@@ -809,8 +809,8 @@ qstr_{s27}:_Party_morale_|{s27}: Truppenmoral gesteigert.
 qstr_{s27}:_Party_morale_d|{s27}: Truppenmoral gesenkt.
 qstr_You_have_failed_to_f|Du hast deinen Racheschwur für {s1}s heldenhaften Tod nicht erfüllt!
 qstr_You_have_fulfilled_y|Du hast deinen Racheschwur für {s1}s heldenhaften Tod erfüllt!
-; qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
-; qstr_Custom_Camera|Custom Camera
+qstr_As_an_Orc_or_a_Dwarf|Als Orc oder Zwerg kannst du die einstellbaren Kamermodi nutzen. Siehe 'Spielkonzepte' für weitere Informationen.
+qstr_Custom_Camera|The Last Days of the Third Age verfügt über eine angepasste 'Kamera'-Perspektive für kleine Charaktere (Orks und Zwerge). Sie ist einfach zu verwenden, verlangt aber möglicherweise eine gewisse Eingewöhnung.^^Es gibt (zusätzlich zur alten Standartposition) zwei neue Modi: Feste Kameraposition und Freier Modus.^^Die feste Kameraposition ist optimal für alle Rassen, kann aber nicht konfiguriert werden.^^Der freie Modus positioniert den Charakter in der Mitte des Bildschirms. Diese Kamera kann den Wünschen des Spielers angepasst werden. Beim Benutzen eines Bogens oder einer Wurfwaffe springt die Kamera an die Standartposition, um das Zielen zu erleichtern (was anfangs ziemlich schwierig sein kann, aber Gewöhnungssache ist). Sobald das Geschoss losgelassen wurde, springt die Kamera zurück auf die selbst eingestellte Position.^^^Steuerung:^^Drücke gleichzeitig Strg+Ende, um die Kamera zwischen den drei Modi umzuschalten: Standartposition / Feste Position / Freier Modus.^^ Freier Modus - Kamerahöhe (Tilt): Drücke und halte Strg+"Page Up" / "Page Down", um die Kamerahöhe einzustellen.^^Freier Modus - Kamerabstand (Zoom): Drücke und halte Strg+ "+" (Nummernblock) / "-" (Nummerblock), um den Kamerabstand einzustellen.^^Halte zusätzlich die Umschalttaste, um eine feinere Einstellung der Kamerahöhe / des Kameraabstands zu ermöglichen.
 qstr_{reg65?my_Lady:my_Lo|{reg65?meine Herrin:mein Herr}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Meine Herrin:Mein Herr}
 qstr_{reg65?mistress:mast|{reg65?Gebieterin:Gebieter}
@@ -912,15 +912,15 @@ qstr_Oh?_Let_me_see_that.|Oh? Lasst mich sehen... Gut, gut! Es war gut von Euch,
 qstr_Give_me_that!_Hrmph!|Gib her! Hrmpf! Gut, dass du mir das überbracht hast, {playername}, du bist ein nützlicher Diener. Bitte {s9} von mir, deine Dienste öfter in Anspruch zu nehmen.
 qstr_What?_Let_me_see_tha|Was? Lasst es mich sehen... Hmmm. Es war gut von Euch, mir das zu überbringen, {playername}. Geht nun.
 qstr_Give_me_that!_Hrmph!_|Gib mir das! Hrmpf! Du bist deinen Gebietern ein nützlicher Diener, {playername}, aber ihr alle werdet in nicht zu ferner Zeit sowieso tot sein. Aber jetzt noch nicht, also verzieh dich.
-; qstr_The_search_for_the_L|The search for the Lost Spears has led you to Dorwinion, the site of the ancient northern kingdom of King Bladorthin. TO BE CONTINUED
-; qstr_You_need_to_have_a_p|You need to have a party of at least 30 strong to begin this quest
-; qstr_You_were_tasked_to_h|You were tasked to hunt down the bandits that have been recently wreaking havoc in the North. You can either attack them in their hideout near Mirkwood Forest or intercept them near Beorn's House.
-; qstr_Mordor_Gains_Faction|Mordor Gains Faction Strength as they received an unknown weapon
-; qstr_Beornings_gain_Facti|Beornings gain Faction Strength as news of your victory spreads.
-; qstr_Beornings_loses_Fact|Beornings loses Faction strength when they were attacked.
-; qstr__{s14}_gains_faction| {s14} gains faction strength as news of the Ring of Power spreads.
-; qstr_You_must_return_and_|You must return and report back that you have defeated the Ring Hunter leaders and have taken a magical ring.
-; qstr_You_must_return_and_r|You must return and report back that you have defeated the Ring Hunter party, but the leaders may have acquired what they were looking for.
+qstr_The_search_for_the_L|Die Suche nach den verlorenen Speeren hat dich nach Dorwinion geführt, jene Gegend, in der früher das nördliche Reich König Bladorthins lag. TO BE CONTINUED
+qstr_You_need_to_have_a_p|Du benötigst mindestens 30 Männer in deiner Truppe um diesen Auftrag zu starten.
+qstr_You_were_tasked_to_h|Du hast die Aufgabe erhalten, die Räuber zu jagen, die im Norden ihr Unwesen treiben. Du kannst sie entweder in ihrem Schlupfwinkel nahe dem Düsterwald angreifen oder sie nahe Beorns Haus abfangen.
+qstr_Mordor_Gains_Faction|Mordor wird stärker, weil es eine unbekannte Waffe erhalten hat.
+qstr_Beornings_gain_Facti|Die Beorninger werden stärker, als sich die Neuigkeiten deiner Siege verbreiten.
+qstr_Beornings_loses_Fact|Die Beorninger werden unter der Last der Angriffe schwächer.
+qstr__{s14}_gains_faction|{s14} wird stärker, als sich Neuigkeiten über den Ring der Macht verbreiten.
+qstr_You_must_return_and_|Kehre nun zurück und berichte, dass du die Anführer der Ringjäger besiegt und ihnen einen magischen Ring abgenommen hast.
+qstr_You_must_return_and_r|Kehre nun zurück und erstatte Bericht, dass dudie Ringjäger zwar besiegt hast, aber ihre Anführer möglicherweise fanden, was sie suchten.
 qstr_Do_you_need_reinforc|Braucht Ihr Verstärkung?
 qstr_You_don_t_look_too_s|Ihr seht nicht allzu kräftig aus, braucht ihr mehr Truppen?
 qstr_^{s14}_is_grateful_t|^{s14} ist dir dankbar, {playername}, {s29}^
@@ -946,8 +946,8 @@ qstr_We_are_at_war_with_{|Wir sind im Krieg mit {s12}. Allerdings kämpfen wir v
 qstr_We_are_at_war_with_{s|Wir sind im Krieg mit {s12}. Allerdings finden im Moment nur Scharmützel statt.
 qstr_we_are_not_too_conce|wir beschäftigen uns damit im Moment nicht so sehr, denn wir bekämpfen andere Feinde näher unserer Heimat.
 qstr__under_your_orders|, unter deinem Befehl
-; qstr_{s9}_asked_you_to_de|{s9} asked you to defend a village under attack.
-; qstr_{s9}_asked_you_to_ra|{s9} asked you to raid a village.
+qstr_{s9}_asked_you_to_de|{s9} bat dich, ein Dorf zu verteidigen.
+qstr_{s9}_asked_you_to_ra|{s9} befahl dir, ein Dorf anzugreifen.
 qstr_These_soldiers_may_w|Diese Soldaten könnten die entscheidenden Figuren in meinen Plänen werden, {playername}. Ich bin mir sicher, dass Ihr sie gut ausgebildet habt. Meinen Dank und meine Anerkennung an Euch.
 qstr_Good_work_in_shaping|Gute Arbeit mit diesen Rekruten, {playername}, du hast dich als äußerst nützlich erwiesen. Hoffentlich halten sie länger durch als der letzte Stoß, aber wir sprechen uns erneut, falls sie es nicht tun.
 qstr_Well_the_soldiers_ar|Nun, die Soldaten stehen unter Eurem Befehl, Herr. Ich bin mir sicher, dass Ihr gut auf sie achten werdet.
@@ -982,61 +982,61 @@ qstr_We_need_to_take_the_|Wir müssen die Schlacht zum Feind tragen, {playername
 qstr_We_need_to_grind_dow|Wir müssen unsere wertlosen Feinde niederringen, {playername}. Ihre Patrouillen und Versorgungszüge werden für meinen Geschmack zu selbstbewusst. Ich will, dass Ihr {reg1} {s13}-Trupps vernichtet, damit sie wieder fürchten lernen, was sie erwartet.
 qstr_{s9}_asked_you_to_el|{s9} beauftragte dich, {reg1} {reg13}-Trupps zu vernichten.
 qstr_{s9}_asked_you_to_fr|{s9} bat dich, {s13} von der Bedrohung des Trolls zu befreien, der in der Umgebung wütet.
-; qstr_the_Dwarves_so_that_|the Dwarves, so that if you pass by Erebor or the Iron Hills, you can try to arm yourself with the fabled Dwarven weaponry
-; qstr_Gondor_so_that_if_yo|Gondor, so that if you pass by their lands, you can try to purchase some of their well-known armours
-; qstr_Rohan_so_that_if_you|Rohan, so that if you pass by their lands, you can try to purchase some of their fabled horses
-; qstr_Dale_so_that_if_you_|Dale, so that if you pass by their lands, you can try to purchase some of their well-known bows
-; qstr_It_sure_look_like_yo|It sure look like you did, Mordor scum.. ^^I have heard the call by the Great Hand, to bring fear to the realm of men, and to kill as many of the horse-men as we can.
-; qstr_It_sure_look_like_you|It sure look like you did. ^^The Dark Lord has called, and I am here to answer it and destroy the realm of men
-; qstr_*Snort*_There_is_onl|*Snort* There is only ONE Lord, and that is the The Dark Lord. You have no place in this war, weakling. Leave me to my mission
-; qstr_*Snort*_Another_weak|*Snort* Another weakling to reinforce our meat shield. Leave me to my mission.
-; qstr_It_s_their_local_mon|It's their local money.. not worth anything in Mordor. Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs...
-; qstr_It_s_their_local_mone|It's their local money.. not worth anything in Mordor. Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!
-; qstr_It_s_their_local_money|It's their local money.. not worth anything in Mordor. Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs.
-; qstr_Take_it!_You_can_use|Take it! You can use these to buy weapons from Mordor. We only have the best!
-; qstr_It_s_their_local_money.|It's their local money.. not worth anything in Mordor. Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!
-; qstr_Here_s_some_of_their|Here's some of their own local money that I won...not worth anything in Mordor...Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs...
-; qstr_Here_s_some_of_their_|Here's some of their own local money that I won..not worth anything in Mordor...Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!
-; qstr_Here_s_some_of_their_o|Here's some of their own local money that I won..not worth anything in Mordor...Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs.
-; qstr_Here_s_some_money_th|Here's some money that I won. Take it! You can use these to buy weapons from Mordor. We only have the best!
-; qstr_Here_s_some_of_their_ow|Here's some of their own local money that I won..not worth anything in Mordor...Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!
-; qstr_That_is_not_a_smart_|That is not a smart thing to say in front of a Rhun Warrior...Next time I see you, I will kill you.
-; qstr_They_will_all_know_m|They will all know my name... They will know to fear it
-; qstr_Suilad_mellon!_It_is|Suilad, mellon! It is not oft we meet folk from the Hidden Valley in our realm. We give thanks to the stars they lead you to our aid, and to you as well - le hannon!
-; qstr_Suilad_mellon!_It_is_|Suilad, mellon! It is rare to have one of our woodland kin come to our aid - le hannon!
-; qstr_Suilad_mellon!_That_|Suilad, mellon! That is - thank you, friend!^^ At first I wasn’t sure if a goblin sabre, or a raging bear would be our doom. Alas, the stars were kind to send you to our aid.
-; qstr_Alas_it_is_not_a_ple|Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands... 
-; qstr_You_wouldn_t_have_ne|You wouldn't have need of our aid if you kept your borders shut!
-; qstr__*growl*_I_know_your|(*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks... 
-; qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Deep are my master’s designs, not for all to see and understand.
-; qstr_Alae!_Our_green_wood|Alae! Our green woods are heavily patrolled, our thick gates stand firm, king Thranduil’s halls secure. It would be wise to follow our example.
-; qstr__say_nothing_|(say nothing)
-; qstr_Alas_it_is_not_a_plea|Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands. ^^An ancient evil stirred in the dark places and now it swarms into the light. Wise ones across the Mountains answered the call and hosts of Imladris march to battle, to fight for the North.
-; qstr_You_wouldn_t_have_nee|You wouldn't have need of our aid if you kept your borders shut! ^^Tales of the Forest Witch only scare away witless fools - not so the orc filth we just slew.
-; qstr_*growl*_I_know_your_|*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks.^^ Stars had none to do with it - I sensed the filth and followed a trail. I would have slain them were you in danger or not.
-; qstr_Keep_your_secrets_th|Keep your secrets then, friend, but the Golden Woods whisper of your kin’s arrival. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold.
-; qstr_We_walk_under_the_su|We walk under the sun and the stars, to dwell in caves is not our desire. Still, your undoubtedly well meant council is well received. ^^Your wisdom and brave deeds shall be known, your needs met whenever you wander into our domain.
-; qstr_*he_sighs_and_smiles|*he sighs and smiles slightly* ^^Very well. For our common purpose we are happy to share all, even if words are in short supply where you come from.
-; qstr_For_some_months_we_h|For some months we have watched the orc filth multiplying and staining our woods. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold.
-; qstr_Calm_yourself_friend|Calm yourself, friend. Pedin i phith in aniron, a nin u-cheniathog. ^^We shall speak of you to all our people. Your valour and deeds shall be known, your needs met whenever you come to bask in the light of our Golden Valley.
-; qstr_Stars_sail_through_t|Stars sail through the heavenly seas, men tread the earth. Truly, who can say if their paths follow each other? We shall speak of you to all our people. Your deeds shall be known and your needs met, were you to chase a star to the Golden Valley.
-; qstr__RESOURCE_POINT_TUTO|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Lorien are not the ones you earned in your own faction, but the ones you will earn in Lothlorien. ^^See REPORTS for more information.
-; qstr__RESOURCE_POINT_TUTOR|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Beorn are not the ones you earned in Lothlorien, but the ones you will earn in Beorn. ^^See REPORTS for more information.
-; qstr_I_have_long_wished_t|I have long wished to visit the woodland folk...
-; qstr_What_form_shall_the_|What form shall the favour of Lorien take...
-; qstr_Our_bees_make_honey_|Our bees make honey and wax, our herds give milk, butter and cheese...
-; qstr_I_have_long_wished_to|I have long wished to visit the woodland folk, taste your lembas and hear your songs! ^^We brought sparkling golden wines, dusty tomes and proud ancient banners to remind us of our stream-singing valley, but I’m curious what unique wonders are to be found in Laurelindorenan.
-; qstr_What_form_shall_the_f|What form shall the favour of Lorien take? ^^Gold that turns into leaves come morning? Clear tasteless drink and dusty fairy-bread for my troops? ^^Blood-red wine, freshly hunted deer, armouries filled with sharp spears and keen arrows! That is hospitality I prefer.
-; qstr_Our_bees_make_honey_a|Our bees make honey and wax, our herds give milk, butter and cheese.^^ Bread we make ourselves, a sharp axe I can trade for with dwarves when they pass through.^^ What else would I need, what more than a pair of strong hands?
-; qstr_If_fate_wills_it_I_s|If fate wills it, I shall walk your lands again, and know all their secrets.
-; qstr_If_I_ever_have_need_|If I ever have need for the kind of help Lorien can offer, I shall come for it. Whatever use it may be.
-; qstr__nod_and_say_nothing|(nod and say nothing)
-; qstr_Oh_there_are_many_an|Oh, there are many and any friend of Lorien is welcome to these gifts! ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your kindness with all you would require - bright weapons, hard corselets of mail, white-feathered arrows and provisions for your troops. ^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who could offer council to others, or ask favours of them.
-; qstr_The_joys_of_the_Gold|The joys of the Golden Valley are many and a true friend of Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your effort with all you would require - bright weapons, hard corselets of mail, deadly arrows and nourishing food for your troops.^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who would share wisdom with others, or ask favours of them.
-; qstr_Our_Golden_Valley_gi|Our Golden Valley gives goods aplenty and a friend to Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you aid the designs of our Lady and her lords, our people will reward your effort with all you would require while far away from home.
-; qstr_I_shall_keep_that_in|I shall keep that in mind.^^ Hantanyel, áva márië!
-; qstr_That_may_be_so_some_|That may be so, some paths of the world run crooked.^^ Boe i 'waen!
-; qstr_I_seldom_wander_far_|I seldom wander far away from home. Be off now, as fast as you can. There may be more goblins prowling around.
+qstr_the_Dwarves_so_that_|Zwergengold, sodass Ihr, wenn Ihr den Erebor oder die Eisenberge besucht, einige der sagenumwobenen Zwergenwaffen erstehen könnt.
+qstr_Gondor_so_that_if_yo|Geld aus Gondor, sodass Ihr, wenn Ihr einmal durch dieses Land ziehen solltet, dort einen der berühmten Harnische erwerben könnt.
+qstr_Rohan_so_that_if_you|Geld aus Rohan, sodass Ihr, wenn ihr einmal durch dieses Land ziehen solltet, eines seiner berühmten Pferde kaufen könnt.
+qstr_Dale_so_that_if_you_|Geld aus Thal, sodass Ihr, wenn Ihr einmal diese Stadt besucht, einen Ihrer weithin gerühmten Bögen kaufen könnt.
+qstr_It_sure_look_like_yo|Sieht ganz danach aus, Mordor-Dreck..^^ Die Große Hand hat befohlen, Furcht über die Länder der Menschen zu bringen und so viele Pferdemenschen zu töten wie wir können.
+qstr_It_sure_look_like_you|Sieht ganz danach aus. ^^Der Dunkle Herrscher hat gerufen und ich bin hier, um ihm zu folgen und die Reiche der Menschen zu zerstören.
+qstr_*Snort*_There_is_onl|*Grunz* Es gibt nur EINEN Herrn und das ist der Dunkle. Es gibt in diesem Krieg für dich nichts zu gewinnen, Schwächling. Lass mich jetzt meinen Auftrag ausführen.
+qstr_*Snort*_Another_weak|*Grunz* Noch ein Schwächling für unseren Fleischwolf. Lass mich jetzt meinen Auftrag ausführen.
+qstr_It_s_their_local_mon|Es ist denen ihre eigene Kohle.. nichts wert bei uns in Mordor. Nimm ruhig! Vielleicht kannst du es gebrauchen, um ein paar Moria-Orks anzuheuern... oder um sie loszuwerden! Harrharr! Dämliches Moria-Pack...
+qstr_It_s_their_local_mone|Es ist denen ihre eigene Kohle.. nichts wert bei uns in Mordor. Nimm ruhig! Vielleicht kannst du's gebrauchen, um dich in Isengart mit Waffen einzudecken... Komische Sachen laufen da ab, bei diesem Turm. Ständig steigt Rauch auf! Aber sie sind allesamt der Macht des Dunklen Herrn nicht gewachsen!
+qstr_It_s_their_local_money|Es ist denen ihre eigene Kohle.. nichts wert bei uns in Mordor. Nimm ruhig! Vielleicht kannst du's gebrauchen, um ein paar Felle in Gundabad  zu kriegen. Diese Orks da sind dämlich und hässlich, aber sie haben ganz gute Felle.
+qstr_Take_it!_You_can_use|Nimm ruhig! Kannst damit bei unseren Jungs in Mordor Waffen kriegen. Wir haben nur die besten!
+qstr_It_s_their_local_money.|Es ist denen ihre eigene Kohle.. nichts wert bei uns in Mordor. Nimm's ruhig! Kannst damit ja ein paar Waffen bei diesen Pferdestinkern in Rhun kaufen... oder auch ein ganzes Pferd zum fressen! Die würden dich dafür aufknüpfen! HARRHARRHARR!
+qstr_Here_s_some_of_their|Hier haste ein bisschen von denen ihrer eigenen Kohle.. nichts wert bei uns in Mordor. Nimm ruhig! Vielleicht kannst du es gebrauchen, um ein paar Moria-Orks anzuheuern... oder um sie loszuwerden! Harrharr! Dämliches Moria-Pack...
+qstr_Here_s_some_of_their_|Hier haste ein bisschen von denen ihrer eigenen Kohle.... nichts wert bei uns in Mordor. Nimm ruhig! Vielleicht kannst du's gebrauchen, um dich in Isengart mit Waffen einzudecken... Komische Sachen laufen da ab, bei diesem Turm. Ständig steigt Rauch auf! Aber sie sind allesamt der Macht des Dunklen Herrn nicht gewachsen!
+qstr_Here_s_some_of_their_o|Hier haste ein bisschen von denen ihrer eigenen Kohle.. nichts wert bei uns in Mordor. Nimm ruhig! Vielleicht kannst du's gebrauchen, um ein paar Felle in Gundabad  zu kriegen. Diese Orks da sind dämlich und hässlich, aber sie haben ganz gute Felle.
+qstr_Here_s_some_money_th|Hier haste ein bisschen Kohle....Nimm ruhig! Kannst damit bei unseren Jungs in Mordor Waffen kriegen. Wir haben nur die besten!
+qstr_Here_s_some_of_their_ow|Hier haste ein bisschen von denen ihrer eigenen Kohle... nichts wert bei uns in Mordor. Nimm's ruhig! Kannst damit ja ein paar Waffen bei diesen Pferdestinkern in Rhun kaufen... oder auch ein ganzes Pferd zum fressen! Die würden dich dafür aufknüpfen! HARRHARRHARR!
+qstr_That_is_not_a_smart_|Es ist nicht weise, so mit einem Krieger von Rhun zu sprechen... Wenn ich dich das nächste mal sehe, werde ich dich töten.
+qstr_They_will_all_know_m|Sie werden alle meinen Namen lernen... und sie werden ihn fürchten lernen.
+qstr_Suilad_mellon!_It_is|Suilad, mellon! Selten nur treffe ich auf Volk aus dem verborgenen Tal in unserem Reich. Wir danken den Sternen, dass sie euch hierher geführt haben, um uns zu helfen. Und wir danken Euch - le hannon!
+qstr_Suilad_mellon!_It_is_|Suilad, mellon! Welch seltene Freude, mit einem unserer Vettern aus dem Wald Seite and Seite zu kämpfen  - le hannon!
+qstr_Suilad_mellon!_That_|Suilad, mellon!  Dies heißt: Habt Danke, Freund!^^ Ich war mir zunächst nicht sicher, ob ein Orkschwert oder ein rasender Bär unser Schicksal besiegeln würde. Preiset die Sterne, die Euch zu unserer Hilfe gesandt haben.
+qstr_Alas_it_is_not_a_ple|Ach! Leider ist es kein angenehmer Grund oder reine Wanderlust, die mich und andere Diener des Herrn Elrond in diese Lande bringen...
+qstr_You_wouldn_t_have_ne|Ihr würdet unsere Hilfe nicht benötigen, wenn Ihr Eure Grenzen selbst besser bewachtet!
+qstr__*growl*_I_know_your|(*Knurrt* Ich kenne Eure Sprache gut genug, Elb, um zu wissen, ob Ihr  mir dankt oder mich verspottet...
+qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Die Gedanken meines Herrn reichen tief und nicht alle können ihnen folgen oder sie verstehen.
+qstr_Alae!_Our_green_wood|Alae! Unsere grünen Wälder sind gut bewacht, unsere dicken Toren halten stand, die Hallen König Thranduils sind äußerst sicher. Es wäre weise, unserem Beispiel zu folgen.
+qstr__say_nothing_|(nichts sagen)
+qstr_Alas_it_is_not_a_plea|Ach!, Leider ist es kein angenehmer Grund oder gar reine Wanderlust, die mich und andere Diener des Herrn Elrond in diese Lande führt. ^^Ein uraltes Übel regt sich in der Dunkelheit und drängt nun ins Licht. Die Weisen jenseits der Berge haben die Zeichen erkannt und das Heer von Imladris zieht nun für den Norden in die Schlacht.
+qstr_You_wouldn_t_have_nee|Ihr bräuchtet unsere Hilfe gar nicht, wenn Ihr Eure Grenzen verteidigen würdet!^^ Die Geschichten von der Hexe des Goldenen Walds verjagen nur ahnungslose Narren - nicht jedoch die abscheulichen Orks, die wir gerade erschlugen.
+qstr_*growl*_I_know_your_|*Knurrt* Ich kenne Eure Sprache gut genug, Elb, um zu wissen, ob Ihr mir dankt oder mich verspottet.^^ Die Sterne hatten damit nichts zu tun - ich roch den Gestank und folgte der Spur. Ich hätte sie so oder so alle erlegt, ob ihr in Gefahr gewesen wäret oder nicht.
+qstr_Keep_your_secrets_th|Dann behaltet Eure Geheimnisse für Euch, Freund, doch der Goldene Wald flüstert mir Nachricht zu über die Ankunft Eures Volks. ^^Wir werden unserer Herrin Galadriel über das Kommen Herrn Elronds berichten, obgleich ich vermute, dass sie bereits davon weiß. Und wir werden auch von Euch erzählen, und zwar all unseren Leuten. ^^ Le maethor veleg a gornui! Euer Mut und Eure Taten sollen bekannt gemacht werden und Ihr stets gut versorgt, wann immer Ihr unser Tal des Singenden Goldes besucht.
+qstr_We_walk_under_the_su|Wir wandeln unter der Sonne und unter den Sternen. In Höhlen zu leben, verlangt uns nicht. Dennoch, Euer fraglos gutgemeinter Ratschlag ist uns willkommen. ^^Eure Weisheit und eure tapferen Taten sollen bekannt gemacht werden und Ihr gut versorgt, wann immer ihr unsere Lande besucht.
+qstr_*he_sighs_and_smiles|*Er seufzt und lächelt* ^^Nun gut. Um unseres gemeinsamen Ziels Willen teilen wir gerne mit euch, selbst wenn in Eurer Heimat sogar die Worte knapp zu werden scheinen.
+qstr_For_some_months_we_h|Seit einigen Monaten schon beobachten wir, wie diese abscheulichen Orks sich vermehren und unsere Wälder beschmutzen. ^^Wir werden unserer Herrin Galadriel über das Kommen Herrn Elronds berichten, obgleich ich vermute, dass sie bereits davon weiß. Und wir werden auch von Euch erzählen, und zwar all unseren Leuten. ^^Le maethor veleg a gornui! Euer Mut und Eure Taten sollen bekannt gemacht werden und Ihr stets gut versorgt, wann immer Ihr unser Tal des Singenden Goldes besucht.
+qstr_Calm_yourself_friend|Beruhigt Euch, Freund.  Pedin i phith in aniron, a nin u-cheniathog. ^^Euer Mut und eure Taten sollen allen bekannt gemacht werden, und Ihr stets gut versorgt, wann immer Ihr uns besucht, um Euch am Lichte unseres Goldenen Tals zu laben.
+qstr_Stars_sail_through_t|Die Sterne befahren die Meere des Himmels, Menschen dagegen wandeln auf der Erde. Wahrlich, wer vermag zu sagen, ob ihre Wege einander folgen? Wir werden all unseren Leuten von Euch berichten. Eure Taten sollen bekannt gemacht werden und Ihr gut versorgt, wann immer Ihr einen Stern hier im Goldenen Tall jagt.
+qstr__RESOURCE_POINT_TUTO|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du in Lorien nutzen kannst, musst du hier vedienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
+qstr__RESOURCE_POINT_TUTOR|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du bei den Beorningern nutzen kannst, musst du hier vedienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
+qstr_I_have_long_wished_t|Ich hege schon lange den Wunsch, das Waldlandvolk zu besuchen...
+qstr_What_form_shall_the_|Wie soll Lorien sich erkenntlich zeigen?
+qstr_Our_bees_make_honey_|Unsere Bienen machen Honig und Wachs, unsere Herden geben uns Milch, Butter und Käse...
+qstr_I_have_long_wished_to|Ich hege schon lange den Wunsch, das Waldlandvolk zu besuchen, Euer Lembas zu kosten und Euren Liedern zu lauschen! ^^Wir bringen prickelnde goldene Weine, uralte Bücher und ehrwürdige Banner mit uns, welche uns an unser Tal des rauschenden Wasser erinnern, doch bin ich neugierig welche Wunder in Laurelindorenan auf mich warten.
+qstr_What_form_shall_the_f|Wie soll Lorien sich erkenntlich zeigen? ^^Gold, das sich in Blätter verwandelt, wenn der Morgen dämmert? Klarer, geschmackloser Trank und staubiges Feenbrot für meine Männer? ^^Blutroter Wein, frisches Wildbret, Waffenkammern gefüllt mit scharfen Klingen und spitzen Pfeilen! Das ist die Gastfreundschaft, die ich bevorzuge.
+qstr_Our_bees_make_honey_a|Unsere Bienen machen Honig und Wachs, unsere Herden geben uns Milch, Butter und Käse.^^ Brot backen wir selbst und eine scharfe Axt kann den Zwergen abkaufen, wenn sie vorbeikommen.^^ Was sonst sollte ich brauchen als zwei starke Hände?
+qstr_If_fate_wills_it_I_s|Wenn das Schicksal es so will, werde ich Euer Land wieder besuchen und Eure Geheimnisse in Erfahrung bringen.
+qstr_If_I_ever_have_need_|Wenn ich solche Hilfe benötige, wie Lorien sie bieten kann, werde ich darum bitten. Für welchen Zweck auch immer.
+qstr__nod_and_say_nothing|(Nicke und sage nichts)
+qstr_Oh_there_are_many_an|Oh, davon gibt es viele und jedem Freund Loriens stehen diese Geschenke offen! ^^Sollten wir wieder Seite an Seite auf dem Schlachtfeld stehen, oder solltet Ihr unserer Herrin oder unseren Fürsten einen Gefallen tun, so wird unser Volk Eure Güte mit allem vergelten, was Ihr verlangt: Blanke Waffen, harte RInghemden, weißgefiederte Pfeile und Proviant für Eure Männer. ^^Wer weiß, vielleicht werdet Ihr selbst einst {ein großer Fürst/eine große Fürstin} von Lorien, jemand, der anderen mit Rat beistehen oder sie um einen Gefallen bitten kann.
+qstr_The_joys_of_the_Gold|Der Freuden des Goldenen Tals sind es viele und einem wahrer Freund von Lorien stehen sie stets offen. ^^Sollten wir wieder Seite an Seite auf dem Schlachtfeld stehen, oder solltet Ihr unserer Herrin oder unseren Fürsten einen Gefallen tun, so wird unser Volk Euren Einsatz mit allem vergelten, was Ihr benötigt: Blanke Waffen, harte RInghemden, tödliche Pfeile und nährender Proviant für Eure Männer. ^^Wer weiß, vielleicht werdet Ihr selbst einst {ein großer Fürst/eine große Fürstin} von Lorien, jemand, der seine Weisheit mit anderen teilen oder sie um einen Gefallen bitten kann.
+qstr_Our_Golden_Valley_gi|Unser Goldenes Tal bietet alles im Überfluss und einem Freund von Lorien steht dies stets offen. ^^Sollten wir wieder einmal Seite an Seite auf dem Schlachtfeld stehen, oder solltet Ihr die Pläne unserer Herrin und ihrer Fürsten unterstützen, so wird unser Volk Euren Einsatz mit allem vergelten, was Ihr so fern der Heimat benötigt.
+qstr_I_shall_keep_that_in|Ich will es mir merken.^^ Hantanyel, áva márië!
+qstr_That_may_be_so_some_|Dies mag wohl geschehen, einige Pfade in dieser Welt verlaufen verworren.^^ Boe i 'waen!
+qstr_I_seldom_wander_far_|Ich wandere nur selten fern der Heimat. Geht nun, so rasch Ihr könnt. Es könnten noch mehr Orks auf der Pirsch sein.
 qstr_You_chose_well_{sir/|Wohl gewählt, {mein Herr/meine Dame}. Meine Jungs wissen, wie man sein Wort hält und seinen Lohn verdient.
 qstr_Well_done_{sir/madam|Gut gemacht, {mein Herr/meine Dame}. Lass Geld und Wein weiter fließen, und du brauchst in Calradia niemanden zu fürchten.
 qstr_We_are_at_your_servi|Wir stehen zu deinen Diensten, {mein Herr/meine Dame}. Zeig uns die, die eine Lektion brauchen, und wir übernehmen den Rest.

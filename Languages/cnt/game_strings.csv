@@ -237,10 +237,10 @@ str_surname_29|激进的{s50}
 str_surname_30|阴险的{s50}
 str_surname_31|高个的{s50}
 ; str_surname_32|{s50} the Star-Eyed
-; str_surname_33|{s50} the Fearless
+str_surname_33|无畏的{s50}
 ; str_surname_34|{s50} the Tree-biter
 str_surname_35|狡猾的{s50}
-; str_surname_36|{s50} the Coward
+str_surname_36|胆小的{s50}
 ; str_surname_37|{s50} the Bright
 ; str_surname_38|{s50} the Quick
 ; str_surname_39|{s50} the Minstrel
@@ -344,10 +344,10 @@ str_npc9_intro_response_2|我必须上路了，否则我握着剑的手臂会发
 str_npc10_intro_response_2|[无视并离开]
 ; str_npc11_intro_response_2|Mind your business, maggot!
 ; str_npc12_intro_response_2|Mind your business, maggot!
-; str_npc13_intro_response_2|Mind your business!
-; str_npc14_intro_response_2|Mind your business!
+str_npc13_intro_response_2|少管闲事！
+str_npc14_intro_response_2|少管闲事！
 ; str_npc15_intro_response_2|Hmmf. Keep your little claws to yourself, Snaga.
-; str_npc16_intro_response_2|Mind your business!
+str_npc16_intro_response_2|少管闲事！
 str_npc17_intro_response_2|是的，这片森林很讨我喜欢，不过我还有事，必须走了。
 str_npc1_backstory_a|你来得不是时候啊，我的朋友。伊西立安被敌人的部队“淹没”了。有些人看到兽人庞大的战队正在有所行动。我们要试着越过大河并对敌人采取行动。我会带领一队精锐的游侠部队来完成这次行动。我的长官法拉墨先生有着许多雄伟的计划来使正义的一方取得优势，而我不会在这时躲在后面的！
 str_npc2_backstory_a|啊，您居然如此优雅想来了解我！我是刚刚加入他的麾下，成为了一个守卫兼管理员。我非常骄傲我能为他效力！
@@ -502,7 +502,7 @@ str_npc14_signup_response_1|非常好，我们走吧。
 ; str_npc15_signup_response_1|Hmmm. I admire your... confidence. Get your gear together.
 str_npc16_signup_response_1|跟随我如何？
 ; str_npc17_signup_response_1|Great! I hope you won't talk of trees all the time though.
-; str_npc1_signup_response_2|I have no need of your company at the moment, good luck to you.
+str_npc1_signup_response_2|我暂时不需要你的加入，祝你好运。
 str_npc2_signup_response_2|对不起，我改主意了。
 str_npc3_signup_response_2|对不起，我改主意了——也许下一次吧。
 str_npc4_signup_response_2|向您道歉，我的女士，或许下次我们会有更好的机缘。

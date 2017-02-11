@@ -5,7 +5,7 @@ ui_explanation_agility|敏捷：每一点增加五点武器技能点并增加武
 ui_retreated_battle|%s逃跑了
 ui_riding_skill_not_adequate_to_mount|(骑术不够)
 ui_camp|做点什么
-ui_tutorial_inventory|在本游戏中，你需要用资源点来交易装备。资源点是衡量一个阵营支持你补给的程度，也代表了你能用多少阵营的资源。
+ui_tutorial_inventory|在本游戏中，你需要用资源点来交易装备。资源点的多少可以衡量一个派系支持你的程度，也决定了你能使用该派系的多少资源。
 ui_you_dont_have_value|缺少物品：%s
 ui_merchant_cant_afford_value|%你给了我们太多！也许你应该为你自己留下一些（你给与了%s，我们只能用到%s）
 ui_merchant_pay_whatever|不，我用不着那些东西了，留着吧。

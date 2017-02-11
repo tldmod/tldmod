@@ -54,7 +54,6 @@ qstr_Days_Passed:_{reg0}|Minęło dni: {reg0}
 qstr_Difficulty:_{reg0}%|Poziom trudności: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|CAŁKOWITY WYNIK: {reg0}
-qstr_______|      
 qstr_A_peaceful_village_n|Niedaleko Westfold znajduje się spokojna wioska...
 qstr_The_War_is_upon_Roha|Wojna wkroczyła do Rohanu!
 qstr_Minas_Tirith___The_W|Minas Tirith - Białe Miasto
@@ -171,6 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} raniono, {reg5} zbiegło
 qstr_killed|nie żyje
 qstr_routed|zbiegli
 qstr_wounded|odnosi rany
+qstr_{s0}^TOTAL:_{reg3}__|{s0}^RAZEM: {reg3} ({s2})
 qstr_None|None
 qstr_^None|^Brak
 qstr_near_the_Great_East_|przy Wspaniałej wschodniej ścieżce, stara opuszczona droga

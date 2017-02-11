@@ -1,6 +1,6 @@
 ui_at_learning_limit|(Bu Irk için öğrenme limitinde)
-ui_not_enough_skill_points_to_learn|öğrenmek için yeterli beceri puanınız yok
-ui_not_enough_attributetype_to_learn_this_skill|Bu beceriyi öğrenmek için yeterli %s yüzden yok
+ui_not_enough_skill_points_to_learn|(öğrenmek için yeterli beceri puanınız yok)
+ui_not_enough_attributetype_to_learn_this_skill|(Bu beceriyi öğrenmek için yeterli %s yok)
 ui_explanation_agility|Her puan 5 silah hüneri verir ve silah hızını %0.5 arttırır.Şu beceriler 1/3 çeviklik puanından yükseltilemez : Silah ustalığı,Kalkan,Atletik,Binicilik,Atlı Okçuluk,Yağma.
 ui_retreated_battle|%s savaş alanından kaçtı.
 ui_riding_skill_not_adequate_to_mount|Binicilik seviyesi düşük

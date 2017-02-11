@@ -28,8 +28,8 @@ qst_mirkwood_sorcerer|Erschlage einen Zauberer im Düsterwald
 qst_mirkwood_sorcerer_text|Galadriels Macht, die Lothlorien behütet, wird durch die widerwärtigen Rituale eines Zauberers von Dol Guldur bedroht. Obwohl er ein Sterblicher ist, stellt er eine große Bedrohung für die Elben dar. Suche nach ihm im Düsterwald, nicht fern von Dol Guldur selbst. Gehe im Verborgenen vor und ziehe keine Aufmerksamkeit auf dich, denn du hast nur eine einzige Gelegenheit, ihn zu vernichten.
 qst_find_lost_spears|Finde die verlorenen Speere des Königs Bladorthin
 qst_find_lost_spears_text|{s9} bat dich, die verlorenen Speere zu finden, welche die Zwerge einst für König Bladorthin  gefertigt haben. Du wirst die Erlaubnis der Zwerge brauchen, um in den Tiefen des Einsamen Berges nach den Speeren zu suchen.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
+qst_defend_village|Verteidige das Dorf
+qst_raid_village|Plündere das Dorf
 qst_rescue_prisoners|Befreie {reg1} Gefangene
 qst_rescue_prisoners_text|{s9} bat dich, {reg1} Gefangene zu befreien.
 qst_scout_enemy_town|Spähe die Stadt des Feindes aus

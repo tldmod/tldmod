@@ -54,7 +54,6 @@ qstr_Days_Passed:_{reg0}|哦，输了: {reg0}
 qstr_Difficulty:_{reg0}%|難度: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|总分数: {reg0}
-qstr_______|<blank>
 qstr_A_peaceful_village_n|距维斯特福德不远的一处幽静小镇...
 qstr_The_War_is_upon_Roha|戰爭是對洛汗
 qstr_Minas_Tirith___The_W|米那斯提力斯-The White City
@@ -171,6 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} 负伤, {reg5} 被击溃
 qstr_killed|杀死
 qstr_routed|击溃
 qstr_wounded|受傷的
+; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|無
 qstr_^None|^无
 qstr_near_the_Great_East_|靠近东大路的废弃小路
@@ -1021,7 +1021,7 @@ qstr_{s9}_asked_you_to_fr|{s9} 要你從近郊一隻狂暴的巨魔的威脅下�
 ; qstr_Calm_yourself_friend|Calm yourself, friend. Pedin i phith in aniron, a nin u-cheniathog. ^^We shall speak of you to all our people. Your valour and deeds shall be known, your needs met whenever you come to bask in the light of our Golden Valley.
 ; qstr_Stars_sail_through_t|Stars sail through the heavenly seas, men tread the earth. Truly, who can say if their paths follow each other? We shall speak of you to all our people. Your deeds shall be known and your needs met, were you to chase a star to the Golden Valley.
 ; qstr__RESOURCE_POINT_TUTO|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Lorien are not the ones you earned in your own faction, but the ones you will earn in Lothlorien. ^^See REPORTS for more information.
-; qstr__RESOURCE_POINT_TUTOR|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Beorn are not the ones you earned in Lothlorien, but the ones you will earn in Beorn. ^^See REPORTS for more information.
+qstr__RESOURCE_POINT_TUTOR|(资源点教程 )^^你可以用来向比翁的人购买东西的资源点不是你在罗斯洛立安赚取的资源点， 而是你在比翁赚取的资源点。 ^^有关详细信息， 请参阅REPORTS。
 ; qstr_I_have_long_wished_t|I have long wished to visit the woodland folk...
 ; qstr_What_form_shall_the_|What form shall the favour of Lorien take...
 ; qstr_Our_bees_make_honey_|Our bees make honey and wax, our herds give milk, butter and cheese...

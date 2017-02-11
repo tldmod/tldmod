@@ -54,7 +54,6 @@ qstr_Days_Passed:_{reg0}|Jours écoulés : {reg0}
 qstr_Difficulty:_{reg0}%|Difficulté : {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|SCORE TOTAL : {reg0}
-qstr_______| 
 qstr_A_peaceful_village_n|Un village paisible non loin de Ouestfolde
 qstr_The_War_is_upon_Roha|La guerre est sur le Rohan !
 qstr_Minas_Tirith___The_W|Minas Tirith - la Cité blanche 
@@ -171,6 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} blessés, {reg5} en déroute
 qstr_killed|tués
 qstr_routed|En déroute
 qstr_wounded|blessés
+; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|Aucune
 qstr_^None|^Aucun
 qstr_near_the_Great_East_|près de la Grande Route de l'Est, l'ancienne route abandonnée

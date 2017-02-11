@@ -3,7 +3,7 @@ mno_start_good|Den BEGINN eines neuen Zeitalters.
 mno_start_evil|Den UNTERGANG der Menschheit.
 mno_go_bback|Zurück.
 menu_start_phase_2|^^^^^ Mittelerde. Ein Schatten regt sich im Osten, ^ und dunkle Geheimnisse, die lange verborgen lagen, offenbaren sich. ^ Die freien Völker bereiten sich auf einen Krieg vor. Einen Krieg, wie ihn die Welt seit einem Zeitalter nicht gesehen hat. ^ Menschen, Elben, Zwerge und Orks; sie alle werden ihre Rolle spielen. ^^ Welche dies jedoch sein wird, kann nur die Zukunft zeigen...
-; mno_go_forth|          Go forth upon your chosen path...
+mno_go_forth|Betritt nun den Pfad deines Schicksals...
 menu_start_game_3|^^^^^^^^Wähle ein Szenario:
 mno_custom_battle_scenario_1|Gefecht; Reiche von Gondor vs. Harad
 mno_custom_battle_scenario_12|Wähle die Fraktionen für das Gefecht.
@@ -19,7 +19,7 @@ mno_warg_battle_scenario|Test: Wargschlachten
 mno_build_your_own_scene|** Erstelle deine eigene Szene für TLD **
 menu_tutorial|^^TLD führt gegenüber M&B einige neue Features ein. Diese finden sich (ohne Spoiler) in einer angefügten PDF-Datei. Grundlegende Spielmechaniken werden im Tutorial des Hauptspiels (Modul 'Native') erklärt.
 mno_go_back_dot|Zurück.
-; mno_action_view_troop_trees|View troop trees.
+mno_action_view_troop_trees|Truppenbäume ansehen.
 mno_view_upkeep_costs|Unterhaltskosten betrachten.
 mno_view_character_report|Betrachte Charakterbericht
 mno_view_party_size_report|Betrachte Truppengröße-Bericht
@@ -263,7 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Ein heftiger Schlag des Flüchtige
 menu_town_bandits_succeeded|^^^^^Die Orks fallen vor dir wie die Fliegen! Schon bald stehst du allein, während die meisten Angreifer bewusstlos, tot oder sterbend darniederliegen. Die Anwohner wären sicher äußerst dankbar, dass du sie vor dieser Bedrohung gerettet hast.
 menu_town_brawl_lost|^^^^^^Du wurdest bewusstlos geschlagen. Die Leute, die du angegriffen hast, durchsuchen dich schnell nach Wertgegenständen, bevor sie wieder mit ihrem Tagesgeschäft fortfahren.
 menu_town_brawl_won|^^^^^Du hast all deine Gegner und die Wachen, die zur Beseitigung der Unruhe geschickt wurden, besiegt. Du durchsuchst sie schnell nach Wertgegenständen und verschwindest dann bis sich die Lage beruhigt hat.^Vielleicht zeigen sie das nächste Mal mehr Respekt und halten sich zurück.
-; menu_close|Nothing.
+menu_close|Nichts.
 menu_town|Du bist in {s60} angekommen.{s12}{s13}
 mno_town_menu_0|Gehe irgendwo hin.
 mno_town_menu_0_door|Tür irgendwo hin.
@@ -278,8 +278,8 @@ mno_trade_with_horse_merchant|Besuche {s41}.
 mno_town_prison_door|Tür zum Gefängnis.
 mno_dungeon_enter|Suche die verlorenen Speere in den Bergen.
 mno_dungeon_enter_door|Öffne die Tür.
-; mno_dwarven_warehouse|Visit the Dwarven Warehouse
-; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
+mno_dwarven_warehouse|Suche das Warenlager der Zwerge auf.
+mno_dwarven_warehouse_door|Betritt das Warenlager
 mno_talk_to_castle_commander|Besuche die Kasernen von {s61}
 mno_speak_with_elder|Sprich mit dem {s6}.
 mno_isengard_underground|Gehe zu den unterirdischen Höhlen.
@@ -314,18 +314,18 @@ menu_notification_faction_defeated|^^^^^{s1} Besiegt!^{s1} ist nicht mehr, bezwu
 menu_ruins|^^^^Du näherst dich den {s1}. Ein einst solides Lager wurde dem Erdboden gleich gemacht, auch wenn du noch einige Spuren der Befestigungen und verstreut rostige Waffen erkennst.
 menu_legendary_place|^^^^Du bist den Gerüchten gefolgt and hast {s1} entdeckt. Du kannst diesen Ort nun erkunden und prüfen, ob die Gerüchte wahr sind.
 mno_explore|Erkunde diesen Ort.
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
-; mno_leave_bandit_lair|Leave for now.
+menu_ring_hunter_lair|^^^^Du bist der Spur durch den Düsterwald gefolgt und hast den {s1} gefunden. Sie bereiten sich gerade vor, mit einer Truhe aufzubrechen.
+mno_attack_lair|Jetzt angreifen!
+mno_leave_bandit_lair|Vorerst zurückziehen.
 menu_starting_quest_good|^^^^^Ihr sichtet eine kleine Karawane, die von einer Bande Orks angegriffen wird. Was werdet Ihr tun?
 mno_help|Helft den Fremden!
-; mno_start_defend_caravan|Defend the Caravan!
-; mno_start_raid_caravan|Raid the Caravan!
-; mno_start_ambush_orcs|Ambush the Orcs!
-; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
+mno_start_defend_caravan|Verteidige den Kaufmannszug!
+mno_start_raid_caravan|Überfalle den Kaufmannszug!
+mno_start_ambush_orcs|Lege den Orcs einen Hinterhalt!
+mno_start_kill_scouts|Hindere die Späher daran, deine Ankunft zu melden!
 mno_go_your_way|Überlasst sie ihrem Schicksal
-; mno_defend_villagers|Defend the Villagers!
-; mno_raid_villagers|Raid the Village!
+mno_defend_villagers|Verteidige das Dorf!
+mno_raid_villagers|Plündere das Dorf!
 mno_go_away|Überlasst sie ihrem Schicksal
 menu_custom_battle_choose_faction1|^^^^^^^^^^Wähle deine Seite und Vorteil:
 mno_good_equal|Gute Fraktion
@@ -380,4 +380,4 @@ mno_scene4|Schlachtfeld8 (Datei scn battlefield8.sco)
 mno_scene5|Schlachtfeld9 (Datei scn battlefield9.sco)
 mno_back_3dot|Zurück...
 mno_back|Zurück.
-; mno_next|Next...
+mno_next|Weiter...

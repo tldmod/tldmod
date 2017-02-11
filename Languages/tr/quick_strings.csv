@@ -54,7 +54,6 @@ qstr_Days_Passed:_{reg0}|Geçen Gün:  {reg0}
 qstr_Difficulty:_{reg0}%|Zorluk: {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|TOPLAM SKOR:  {reg0}
-qstr_______| 
 qstr_A_peaceful_village_n|Westfold'dan fazla uzak olmayan barışçıl bir köy...
 qstr_The_War_is_upon_Roha|Savaş Rohana geliyor
 qstr_Minas_Tirith___The_W|Minas Tirith - Ak Şehir
@@ -76,8 +75,8 @@ qstr_Rotate|Döndür
 qstr_Close|Kapat
 ; qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
 ; qstr_Level:_{reg3}^Health|Level: {reg3}^Health: {reg4}
-; qstr_Attributes|Attributes
-; qstr_STR^AGI^INT^CHA|STR^AGI^INT^CHA
+qstr_Attributes|Nitelikler
+qstr_STR^AGI^INT^CHA|GÜÇ^ÇVK^ZEKA^KRZ
 qstr_Skills|Yetenekler
 qstr_Ironflesh^Power_Stri|Demir Vücut^Güçlü Darbe^Power Throw^Güçlü Germe^Kalkan^Atletizm^Binicilik^Atlı Okçuluk
 ; qstr_Proficiencies|Proficiencies
@@ -171,6 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} yaralı, {reg5} kaçak
 qstr_killed|Öldürüldü
 qstr_routed|yönlendirilmiş
 qstr_wounded|yaralı
+; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|Hiçbiri
 qstr_^None|^Yok
 qstr_near_the_Great_East_|Büyük Doğu Yolunun yakınında, terkedilmiş eski yol

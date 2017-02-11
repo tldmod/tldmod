@@ -54,7 +54,6 @@ qstr_Days_Passed:_{reg0}|冒険日数:{reg0}
 qstr_Difficulty:_{reg0}%|難易度:{reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|トータルスコア:{reg0}
-qstr_______|      
 qstr_A_peaceful_village_n|ウェストフォルドから遠くない、とある平和な村・・・
 qstr_The_War_is_upon_Roha|戦争の魔の手がローハンを襲う！
 qstr_Minas_Tirith___The_W|ミナス・ティリス、白の都
@@ -171,6 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4}名負傷、{reg5}名離脱
 qstr_killed|死亡
 qstr_routed|離脱
 qstr_wounded|負傷
+; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
 qstr_None|なし
 qstr_^None|^なし
 qstr_near_the_Great_East_|東街道の近くにある、 荒れ果てたむかしの道

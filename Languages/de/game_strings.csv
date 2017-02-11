@@ -1,7 +1,7 @@
 str_yes|Ja.
 str_no|Nein.
 str_noone|Niemand
-; str_s50_comma_s51|{s50}, {s51}
+str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} und {s51}
 str_s5_s_party|{s5}s Trupp
 str_s5_s_host|{s5}'s Heer
@@ -21,7 +21,7 @@ str_blunt_hold_fire|Stumpfe Waffen / Nicht schießen
 str_tutorial_ammo_refilled|Munition aufgefüllt.
 str_custom_battle_1|Hauptmann Malvogil von Gondor und seine Kompanie fangen einen Verstärkungstrupp der Haradrim ab. Er lässt seinen Kriegsruf ertönen, spornt sein Pferd an und führt seine treuen Männer in eine wilde Schlacht.
 str_custom_battle_2|Celeborn von Lorien führt eine Patrouille mit Reitern und Bogenschützen, als ein Späher ihn vor einer herannahenden Streitmacht aschgesichtiger böser Menschen warnt. Es sind die gefürchteten Schwarzen Numenorer! Jene wurden um Lorien seit Ewigkeiten nicht gesehen, doch nun müssen sie zurück in die Schatten getrieben werden.
-; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
+str_custom_battle_3|Hauptmann Grimbold von Rohan führt die letzten Verteidiger des Klammwalls gegen die Armeen von Isengart. Nun, da die Belagerer sich zum letzten Angriff bereiten, muss er die Mauern mit Mut und blankem Stahl verteidigen.
 str_custom_battle_4|Als die Späher Fürst Beranhelm von einem herannahenden Kriegstrupp aus Rhun berichten, entscheidet er sich, rasch die Verteidigung seines Lagers vorzubereiten und dieses gegen die Überzahl zu halten.
 str_custom_battle_5|Ugluk hat seine wilden Orks mit dem Versprechen auf Beute in den Westen geführt. Wenn diese Zwergenfestung heute an ihn fällt, werden seine Gebieter in Barad-dur sehr zufrieden sein.
 str_custom_battle_6|Ugluk und sein Überfallkommando sind lange klug jeder Elbenpatrouille entkommen. Aber Glück hält nicht ewig und nun sind die dreckigen Fahlhäute am Zug.
@@ -204,7 +204,7 @@ str_persuasion_summary_very_bad|Du versuchst dein Bestes {s50} zu überzeugen, a
 str_persuasion_summary_bad|Du versuchst {s50} zu überzeugen, aber {reg51?sie:er} manövriert dich von Anfang an aus. Selbst deine besten Argumente klingen hohl in deinen Ohren. {s50} hat ebenfalls keine sehr hohe Meinung von deinen Ausführungen.
 str_persuasion_summary_average|{s50} stellt sich als geschickter Redner mit scharfem Verstand heraus, und du scheinst nichts Konkretes hervorbringen zu können, dass {reg51?sie:er} nicht mit einem rationalen Argument kontern könnte. Am Schluss gewinnt keiner von euch in dieser Diskussion an Boden.
 str_persuasion_summary_good|Durch rasches Denken und geschickte Argumentation schaffst du es, deine Sache gut darzulegen und {s50} zum Einlenken bei verschiedenen Punkten zu zwingen. Trotzdem hegt {reg51?sie:er} noch Zweifel über dein Ansinnen.
-; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
+str_persuasion_summary_very_good|Du hältst eine leidenschaftliche Rede, die in den Ohren aller wie reinste Poesie klingt. Die Welt selbst scheint zu verstummen, um dich besser hören zu können. Die inspirierenden Worte haben {s50} tief bewegt, und {reg51?sie:er} hat viel größeres Interesse daran, dir zu helfen.
 str_surname_1|{s50} von Tarnost
 str_surname_2|{s50} von Lossarnach
 str_surname_3|{s50} von Erech
@@ -1091,7 +1091,7 @@ str_lord_insult_goodnatured|unangenehmer Typ
 str_lord_insult_upstanding|erbärmlicher Haderlump
 str_rebellion_dilemma_default|[Lehen]
 str_rebellion_dilemma_martial|{s45} wurde ganz klar Unrecht getan. Obwohl ich {s46} einen Eid leistete, bindet dieser mich nicht, ihn zu unterstützen, wenn er seinen Thron auf unlautere Weise an sich gerissen hat.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
+str_rebellion_dilemma_quarrelsome|Hmm. {s46} hat mir nie gegeben, was er mir schuldet, also denke ich, dass ich ihm nicht viel schulde. Trotzdem, vielleicht wird {s45} nicht besser sein, und {s46} hat sich wenigstens selbst gezeigt.
 str_rebellion_dilemma_pitiless|Hmm. {s45} sagt, {reg3?sie:er} sei der rechtmäßige Thronfolger. Das ist gut, denn es entbindet mich meines Treueschwurs an {s46}. Dennoch muss ich meine Entscheidung sorgfältig abwägen.
 str_rebellion_dilemma_cunning|Hmm. Ich leistete {s46} einen Treueschwur, doch die Mächtigen sind nicht durch ihre Eide gebunden, wie unser gewöhnliches Volk. Unsere Pflicht ist, nach unseren eigenen Fähigkeiten zu herrschen, Ordnung zu schaffen und den Krieg aller gegen alle zu verhindern.
 str_rebellion_dilemma_sadistic|Hmm. In dieser üblen Welt muss ein kluger Mann zuerst an sich selbst denken, denn niemand wird es für ihn tun. Also -- was ist für mich drin?
@@ -1819,7 +1819,7 @@ str_imladris_gift0|Weißes Brot und Kräuterbutter
 str_imladris_gift1|Kristallglas
 str_imladris_gift2|Miruvor
 str_imladris_gift3|Bestickte Banner und silberverzierte Hörner
-; str_imladris_gift4|Healing Herbs and Ointments
+str_imladris_gift4|Heilende Kräuter und Salben
 str_woodelf_gift0|Weiche Tierfelle
 str_woodelf_gift1|Pfeilspitzen und Befiederung
 str_woodelf_gift2|Jagdspeere
@@ -1875,4 +1875,4 @@ str_beorn_gift1|Bienenwachs und Hanfstoffe
 str_beorn_gift2|Bienenstöcke
 str_beorn_gift3|Bernstein-Halsketten
 str_beorn_gift4|Ausgebildete Ponys
-; str_cmenu_follow|Accompany
+str_cmenu_follow|Begleiten

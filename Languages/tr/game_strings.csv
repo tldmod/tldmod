@@ -490,7 +490,7 @@ str_npc6_signup_2|Belki sana daha hızlı koşmayı ve daha az ses yapmayı öğ
 ; str_npc3_signup_response_1|Very well. Saddle up - we shall be leaving shortly.
 ; str_npc4_signup_response_1|Impressive. We are ready to leave, whenever you are, my Lady.
 ; str_npc5_signup_response_1|We will be honoured to have the company of an Elf-lord.
-; str_npc6_signup_response_1|Very well. I hope you won't run away from the first orc we see.
+str_npc6_signup_response_1|Tamam öyleyse. Umarım ilk gördüğün ork sürüsünde tabanları yağlayıp kaçmazsın.
 str_npc7_signup_response_1|Çok iyi öyleyse!, usta cüce, aramıza hoş geldin. 
 str_npc8_signup_response_1|Bizimle güvende olacaksın,söz veriyorum. kısa süre sonra ayrılıyoruz.
 ; str_npc9_signup_response_1|Very good. Do as you are told, and I'll feed you well.
@@ -510,7 +510,7 @@ str_npc4_signup_response_2|Özür dilerim leydim, belki daha sonra.
 str_npc6_signup_response_2|Üzgünüm, sadece seni savaş meydanında hayal edemedim.
 ; str_npc7_signup_response_2|Sorry, I happen to like Elves.
 str_npc8_signup_response_2|Özür dilerim, herkes benim şirkette savaşır.
-; str_npc9_signup_response_2|I've changed my mind. Whoever is looking for you might come for me next.
+str_npc9_signup_response_2|Fikrimi değiştirdim. Peşinde olanlar benim peşimden de gelebilir.
 str_npc10_signup_response_2|Fikrimi degiştirdim.\n
 str_npc11_signup_response_2|Sana ihtiyacım yok, köle.
 str_npc12_signup_response_2|Fikrimi degiştirdim.
@@ -518,7 +518,7 @@ str_npc13_signup_response_2|Fikrimi degiştirdim.\n
 str_npc14_signup_response_2|Fikrimi degiştirdim.\n
 ; str_npc15_signup_response_2|Actually, I think I'll look for a real healer and not a braggart.
 str_npc16_signup_response_2|Ben bunlardan yeterince aldım.
-; str_npc17_signup_response_2|On the other hand, I think I've changed my mind. You're a bit of a nut, aren't you?
+str_npc17_signup_response_2|Öte yandan , sanırım fikrimi değiştireceğim. Sen biraz delisin sanırım. Değil mi ?
 ; str_npc1_payment|I would join you, but my Captain Faramir would miss my presence here. [costs {reg14} Influence with {s14}]
 ; str_npc2_payment|The guard Sergeant would not let me go, I'm afraid. [costs {reg14} Influence with {s14}]
 ; str_npc3_payment|Ahem, it seems that I have ran up quite a tab in the fine tavern here, so I'll need to settle my account before I can leave. [costs {reg14} Influence with {s14}]
@@ -803,10 +803,10 @@ str_npc9_honorific|Usta
 str_npc10_honorific|Usta
 str_npc11_honorific|Usta
 str_npc12_honorific|Usta
-; str_npc13_honorific|Chieftain
+str_npc13_honorific|Kabile Şefi
 ; str_npc14_honorific|Captain
 str_npc15_honorific|Usta
-; str_npc16_honorific|Chieftain
+str_npc16_honorific|Kabile Şefi
 str_npc17_honorific|Şef
 ; str_comment_intro_liege_affiliated|I am told that you are pledged to one of the pretenders who disputes my claim to the crown of Calradia. But we may still talk.
 ; str_comment_intro_famous_liege|Your fame runs before you! Perhaps it is time that you sought a liege worthy of your valor.
@@ -982,7 +982,7 @@ str_surrender_demand_default|Teslim Ol Yada Öl !
 ; str_surrender_demand_quarrelsome|I've got you cornered. Give up, or I'll ride you down like a dog.
 ; str_surrender_demand_pitiless|You cannot defeat me, and I'll teach you a painful lesson if you try. Yield!
 ; str_surrender_demand_cunning|You are outmatched today. Give up -- if not for your own sake, then think of your men!
-; str_surrender_demand_sadistic|Surrender or I'll gut you like a fish!
+str_surrender_demand_sadistic|Teslim ol ya da ölümün sessizliğine gömül!
 ; str_surrender_demand_goodnatured|We have the advantage of you. Yield, and you will be well-treated.
 ; str_surrender_demand_upstanding|You may fight us, but many of your men will be killed, and you will probably lose. Yield, and spare us both the unnecessary bloodshed.
 str_surrender_offer_default|Dur! teslim oluyorum!
