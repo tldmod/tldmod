@@ -1,5 +1,5 @@
 scenesfile version 1
- 266
+ 283
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1064,3 +1064,71 @@ scn_village_3 village_3 256 none none 0 0 100 100 -100 0x000000023003dc4e0006118
   0 
   0 
  outer_terrain_plain 
+scn_scout_camp_mirk_evil_small scout_camp_mirk_evil_small 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
+  0 
+  0 
+ outer_terrain_forest 
+scn_scout_camp_mirk_evil_big scout_camp_mirk_evil_big 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
+  0 
+  0 
+ outer_terrain_forest 
+scn_scout_camp_mirk_good_small scout_camp_mirk_good_small 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
+  0 
+  0 
+ outer_terrain_forest 
+scn_scout_camp_mirk_good_big scout_camp_mirk_good_big 256 none none 0 0 100 100 -100 0x00000001b00a11bd8002b8b6000059ce000067f400007f2e 
+  0 
+  0 
+ outer_terrain_forest 
+scn_scout_camp_rohan_evil_small scout_camp_rohan_evil_small 256 none none 0 0 100 100 -100 0x00000000200f96d700025896000074ef000021f700007ddd 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_scout_camp_rohan_evil_big scout_camp_rohan_evil_big 256 none none 0 0 100 100 -100 0x00000000200f96d700025896000074ef000021f700007ddd 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_scout_camp_rohan_good_small scout_camp_rohan_good_small 256 none none 0 0 100 100 -100 0x00000000200f96d700025896000074ef000021f700007ddd 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_scout_camp_rohan_good_big scout_camp_rohan_good_big 256 none none 0 0 100 100 -100 0x00000000200f96d700025896000074ef000021f700007ddd 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_scout_camp_north_good_small scout_camp_north_good_small 256 none none 0 0 100 100 -100 0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2 
+  0 
+  0 
+ outer_mountains2north 
+scn_scout_camp_north_good_big scout_camp_north_good_big 256 none none 0 0 100 100 -100 0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2 
+  0 
+  0 
+ outer_mountains2north 
+scn_scout_camp_north_evil_small scout_camp_north_evil_small 256 none none 0 0 100 100 -100 0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2 
+  0 
+  0 
+ outer_mountains2north 
+scn_scout_camp_north_evil_big scout_camp_north_evil_big 256 none none 0 0 100 100 -100 0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2 
+  0 
+  0 
+ outer_mountains2north 
+scn_scout_camp_gondor_good_small scout_camp_gondor_good_small 256 none none 0 0 100 100 -100 0x00000001a6681da50003ccef00005c3000004b34000071fb 
+  0 
+  0 
+ outer_mountains2south 
+scn_scout_camp_gondor_good_big scout_camp_gondor_good_big 256 none none 0 0 100 100 -100 0x00000001a6681da50003ccef00005c3000004b34000071fb 
+  0 
+  0 
+ outer_mountains2south 
+scn_scout_camp_gondor_evil_small scout_camp_gondor_evil_small 256 none none 0 0 100 100 -100 0x00000001a6681da50003ccef00005c3000004b34000071fb 
+  0 
+  0 
+ outer_mountains2south 
+scn_scout_camp_gondor_evil_big scout_camp_gondor_evil_big 256 none none 0 0 100 100 -100 0x00000001a6681da50003ccef00005c3000004b34000071fb 
+  0 
+  0 
+ outer_mountains2south 
+scn_black_shield_fortress black_shield_fortress 1280 none none 84 457 339 532 -100 0x00000001200005000009325a00006ec70000053f00001892 
+  0 
+  0 
+ outer_terrain_tirith_1 

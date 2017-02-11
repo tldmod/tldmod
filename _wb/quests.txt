@@ -1,5 +1,5 @@
 questsfile version 1
-42
+43
 qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_him. 
@@ -17,6 +17,7 @@ qst_mirkwood_sorcerer Slay_a_sorcerer_in_Mirkwood 2 Galadriel's_power_to_defend_
 qst_find_lost_spears Find_the_lost_spears_of_king_Bladorthin 2 {s9}_asked_you_to_find_the_lost_spears_dwarves_once_made_for_king_Bladorthin._You_have_to_ask_the_dwarves_permission_to_search_for_the_spears_in_the_depths_of_the_Lonely_Mountain. 
 qst_defend_village Defend_Village 0 {!}None 
 qst_raid_village Raid_Village 0 {!}None 
+qst_destroy_scout_camp Destroy_Scout_Camp 0 {!}None 
 qst_rescue_prisoners Rescue_{reg1}_Prisoners 2 {s9}_wanted_you_to_rescue_{reg1}_prisoners. 
 qst_scout_enemy_town Scout_Enemy_Town 2 {s9}_asked_you_to_scout_around_{s13}. 
 qst_dispatch_scouts Dispatch_a_Scout_Party 2 {s9}_asked_you_to_dispatch_a_scout_party_near_{s13}. 

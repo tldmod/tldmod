@@ -4574,9 +4574,6 @@ game_menus = [
 			(eq, ":winning_side_faction", "fac_umbar" ),
 			(set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
 		(else_try),
-			(eq, ":winning_side_faction", "fac_dale" ),
-			(set_background_mesh, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
-		(else_try),
 			(eq, ":winning_side_race", tf_elf_begin),
 			(eq, ":losing_side_race_group", tf_orc ),
 			(set_background_mesh, "mesh_draw_lorien_arrows"),  # specific victory-loss image: elves VS orcs 
@@ -8514,6 +8511,197 @@ game_menus = [
 	      ]
 	    ),
 ###################### Defend / Raid Village Quest End (Kham) ##########################################
+
+
+
+###################### Destroy Scout Camp Quest Start (Kham) ##########################################
+	
+	("scout_camp_quest",0,
+	   "You see the scout camp nearby. You prepare your men to attack them",
+	   "none",[],
+
+	 #If Good
+	 [
+	 ("attack_scout_camp",[], "Attack the Scout Camp!",
+	     [  
+	     	(quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
+	     	
+	 #Set Scout Camp Defender Faction
+	 		(faction_get_slot, ":tier_2_troop", ":scout_camp_faction", slot_faction_tier_2_troop),
+	     	(faction_get_slot, ":tier_3_troop", ":scout_camp_faction", slot_faction_tier_3_troop),
+	     	(faction_get_slot, ":tier_4_troop", ":scout_camp_faction", slot_faction_tier_4_troop),
+	     	(faction_get_slot, ":tier_5_troop", ":scout_camp_faction", slot_faction_tier_5_troop),
+	        (assign, ":guard_troop_1", ":tier_3_troop"),
+	        (assign, ":guard_troop_2", ":tier_4_troop"),
+	        (assign, ":guard_troop_3", ":tier_5_troop"),
+	        (assign, ":watchtower_troop",":tier_2_troop"),
+
+	 #Set Which Scene Scout Camp is at
+	 	## Get Theater of Scout Camp
+	 		(faction_get_slot, ":home_theater", ":scout_camp_faction", slot_faction_home_theater),
+	 		(store_character_level, ":level", "trp_player"),
+		 		(try_begin),
+			 		(eq, ":home_theater", theater_SW),
+			
+			## Get Side of Player to check which scout camp to spawn 	
+			 		(try_begin),
+			 			(is_between, ":level", 11,17),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_rohan_evil_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_evil_small"),
+			 		(else_try),
+			 			(is_between, ":level", 11,17),
+			 			(modify_visitors_at_site, "scn_scout_camp_rohan_good_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_good_small"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_rohan_evil_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_evil_big"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+			 			(modify_visitors_at_site, "scn_scout_camp_rohan_good_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_good_big"),
+			 		(try_end),
+			 	(else_try),
+			## Get Theater of Scout Camp
+			 		(eq, ":home_theater", theater_SE),
+
+			## Get Side of Player to check which scout camp to spawn 	
+			 		(try_begin),
+			 			(is_between, ":level", 11,17),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_gondor_evil_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_evil_small"),
+			 		(else_try),
+			 			(is_between, ":level", 11,17),
+			 			(modify_visitors_at_site, "scn_scout_camp_gondor_good_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_good_small"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_gondor_evil_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_evil_big"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+			 			(modify_visitors_at_site, "scn_scout_camp_gondor_good_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_good_big"),
+			 		(try_end),
+			 	(else_try),
+
+			## Get Theater of Scout Camp
+			 		(eq, ":home_theater", theater_C,),
+
+
+			## Get Side of Player to check which scout camp to spawn 	
+			 		(try_begin),
+			 			(is_between, ":level", 11,17),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_mirk_evil_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_evil_small"),
+			 		(else_try),
+			 			(is_between, ":level", 11,17),
+			 			(modify_visitors_at_site, "scn_scout_camp_mirk_good_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_good_small"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_mirk_evil_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_evil_big"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+			 			(modify_visitors_at_site, "scn_scout_camp_mirk_good_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_good_big"),
+			 		(try_end),
+
+			##North is the only region left
+			 	(else_try),
+			 		(try_begin),
+			 			(is_between, ":level", 11,17),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_north_evil_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_evil_small"),
+			 		(else_try),
+			 			(is_between, ":level", 11,17),
+			 			(modify_visitors_at_site, "scn_scout_camp_north_good_small"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_good_small"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+			 			(modify_visitors_at_site, "scn_scout_camp_north_evil_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_evil_big"),
+			 		(else_try),
+			 			(is_between, ":level", 17,23),
+			 			(modify_visitors_at_site, "scn_scout_camp_north_good_big"),
+			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_good_big"),
+			 		(try_end),
+			 	(try_end),
+	#Set Entry and Number of Defenders   
+	        (reset_visitors),
+	        (set_jump_entry, 0), 
+	        (set_visitor, 0, "trp_player"),
+	        (try_begin),
+		        (is_between, ":level",11,17),
+		       	(val_div, ":level", 2),
+		        (store_add, ":min_guards", ":level", 5),
+		        (store_add, ":max_guards", ":min_guards", 6),
+		        (store_random_in_range, ":random_no", ":min_guards", ":max_guards"),
+		        (set_visitors, 18, ":guard_troop_1", ":random_no"),
+		        (val_div,":random_no",4),
+		        (set_visitors, 16, ":guard_troop_2", ":random_no"),
+	        (else_try),
+	        	(val_div, ":level", 4),
+		        (store_add, ":min_guards", ":level", 5),
+		        (store_add, ":max_guards", ":min_guards", 6),
+		        (store_random_in_range, ":random_no", ":min_guards", ":max_guards"),
+		        (set_visitors, 18, ":guard_troop_2", ":random_no"),
+		        (val_div,":random_no",4),
+		        (set_visitors, 16, ":guard_troop_3", ":random_no"),
+	        (try_end),
+	        (set_visitor, 20, ":watchtower_troop"),
+	        (set_visitor, 21, ":watchtower_troop"),
+	        (set_visitor, 22, ":watchtower_troop"),
+	        (set_visitor, 23, ":watchtower_troop"),
+	        (set_visitor, 24, ":watchtower_troop"),
+	        (set_party_battle_mode),
+	        (set_battle_advantage, 0),
+	        (assign, "$g_battle_result", 0),
+	        (set_jump_mission,"mt_destroy_scout_camp"),
+	        (jump_to_scene,":scout_camp_scene"),
+	        (change_screen_mission),
+	       ]),
+	   ("go_away",[],"Leave them alone",[(change_screen_map)]),
+	 ]),
+
+
+("destroy_scout_camp_quest_result",mnf_scale_picture|mnf_disable_all_keys,
+	    "{s9}",
+	    "none",
+	    [
+	      (try_begin),
+	        (eq, "$g_battle_result", 1),
+	        (str_store_string, s9, "@The Scout Camp has been razed, This will slow the advance of the enemy."),
+			(call_script, "script_succeed_quest", "qst_destroy_scout_camp"),
+			#(set_background_mesh, "mesh_draw_victory_orc"),
+			(party_is_active,"$qst_destroy_scout_camp_party"),
+			(remove_party,"$qst_destroy_scout_camp_party"),
+		  (else_try),
+	      	(neq, "$g_battle_result", 1),
+	        (call_script, "script_fail_quest", "qst_destroy_scout_camp"),
+	        (str_store_string, s9, "@You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck."),
+	       # (set_background_mesh, "mesh_draw_victory_gondor"),
+	        (party_is_active,"$qst_destroy_scout_camp_party"),
+	        (remove_party,"$qst_destroy_scout_camp_party"),
+	      (try_end),
+	     ],
+	    [
+	      ("continue", [], "Continue...",
+	       [
+	        (change_screen_map),
+		 ]),
+	      ]
+	    ),
+###################### Destroy Scout Camp Quest End (Kham) ##########################################
 
 ( "custom_battle_choose_faction1",0,
     "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01")],

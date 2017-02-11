@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-250
+252
 pt_none none 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 74 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -250,3 +250,5 @@ pt_legion_barad_dur Legion_of_Barad-Dur 844424930132049 0 6 238 419 1 1 0 418 5 
 pt_beorn_messenger Beorning_Messenger 281474980905036 0 20 183 45 1 1 0 -1 -1 -1 -1 -1 
 pt_village Village 2376839 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_ring_hunters Ring_Hunters 562949953683555 0 1 494 896 1 1 0 898 10 15 0 285 10 15 0 900 12 20 0 901 20 35 0 899 15 30 0 
+pt_scout_camp_small Scout_Camp 2376874 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
+pt_scout_camp_large Fortified_Scout_Camp 2376875 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 

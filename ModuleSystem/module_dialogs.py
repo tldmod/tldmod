@@ -2298,6 +2298,110 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 
 
+#### Kham Destroy Scout Camp Quests Completion Start ####
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_destroy_scout_camp"),    
+    (check_quest_succeeded, "qst_destroy_scout_camp"),
+    (quest_get_slot, ":giver_troop", "qst_destroy_scout_camp", slot_quest_giver_troop),
+    (eq, "$g_talk_troop", ":giver_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_destroy_scout_camp", slot_quest_object_center),
+    (str_store_party_name,12,":quest_target_center")],
+"We saw the flames coming from the camp near {s12}. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.", "lord_generic_mission_completed",[
+   
+   #Faction Strength Changes 
+    (str_clear, s3),
+    (str_clear,s4),
+    (quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
+    (faction_get_slot,":enemy",":scout_camp_faction",slot_faction_strength_tmp), 
+    (str_store_faction_name, s11, ":scout_camp_faction"),    
+    (store_character_level, ":level", "trp_player"),
+
+    ## Faction Strength Change depend on player level 
+    (try_begin),
+      (is_between, ":level", 11,17), #Small Scout Camp - Enemy Loss Min: 125; Max: 150 - Hero Win Min: 275; Max: 300
+      (val_mul, ":level",5),
+      (val_add, ":level", 70),
+      (val_sub, ":enemy", ":level"),
+      (display_message,"@{s11} Loses Faction Strength due to the destruction of their camp",color_good_news),
+      (store_troop_faction, ":quest_giver_faction", "$g_talk_troop"),
+      (faction_get_slot,":win",":quest_giver_faction",slot_faction_strength_tmp),
+      (str_store_faction_name, s13, ":quest_giver_faction"), 
+      (val_add, ":level", 150),
+      (val_add, ":win", ":level"),
+      (display_message,"@{s13} gain Faction Strength as news of your victory spreads.",color_good_news),
+    (else_try),
+      (is_between, ":level", 17,23), #Fortified Scout Camp - Enemy Loss Min: 270; Max: 320 - Hero Win Min: 420; Max: 470
+      (val_mul, ":level",10),
+      (val_add, ":level", 100),
+      (val_sub, ":enemy", ":level"),
+      (display_message,"@{s11} Loses Faction Strength due to the destruction of their camp",color_good_news),
+      (store_troop_faction, ":quest_giver_faction", "$g_talk_troop"),
+      (faction_get_slot,":win",":quest_giver_faction",slot_faction_strength_tmp),
+      (str_store_faction_name, s13, ":quest_giver_faction"), 
+      (val_add, ":level", 150),
+      (val_add, ":win", ":level"),
+      (display_message,"@{s13} gain Faction Strength as news of your victory spreads.",color_good_news),
+    (try_end),
+    (faction_set_slot,":quest_giver_faction",slot_faction_strength_tmp,":win"),
+    (faction_set_slot,":scout_camp_faction",slot_faction_strength_tmp,":enemy"),
+    (call_script, "script_finish_quest", "qst_destroy_scout_camp", 100),
+    ]],
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_destroy_scout_camp"),
+    (check_quest_failed, "qst_destroy_scout_camp"),
+    (quest_get_slot, ":giver_troop", "qst_destroy_scout_camp", slot_quest_giver_troop),
+    (eq, "$g_talk_troop", ":giver_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_destroy_scout_camp", slot_quest_object_center),
+    (str_store_party_name,12,":quest_target_center")],
+"We saw some of your men retreating from the scout camp near {s12}. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.", "destroy_scout_camp_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -2),
+  
+   #Faction Strength Changes 
+    (str_clear, s3),
+    (str_clear,s4),
+    (quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
+    (faction_get_slot,":enemy",":scout_camp_faction",slot_faction_strength_tmp), 
+    (str_store_faction_name, s11, ":scout_camp_faction"),    
+    (store_character_level, ":level", "trp_player"),
+    (try_begin),
+      (is_between, ":level", 11,17), #Small Scout Camp - Enemy Win Min: 125; Max: 150 - Hero Loss Min: 275; Max: 300
+      (val_mul, ":level",5),
+      (val_add, ":level", 70),
+      (val_add, ":enemy", ":level"),
+      (display_message,"@{s11} gains Faction Strength as they have taken measure of your faction's current strength",color_bad_news),
+      (store_troop_faction, ":quest_giver_faction", "$g_talk_troop"),
+      (faction_get_slot,":loss",":quest_giver_faction",slot_faction_strength_tmp),
+      (str_store_faction_name, s13, ":quest_giver_faction"), 
+      (val_add, ":level", 150),
+      (val_sub, ":loss", ":level"),
+      (display_message,"@{s13} loses Faction Strength as supply lines were disrupted.",color_bad_news),
+    (else_try),
+      (is_between, ":level", 17,23), #Fortified Scout Camp - Enemy Win Min: 270; Max: 320 - Hero Loss Min: 420; Max: 470
+      (val_mul, ":level",10),
+      (val_add, ":level", 100),
+      (val_add, ":enemy", ":level"),
+      (display_message,"@{s11} gains Faction Strength as they have taken measure of your faction's current strength",color_bad_news),
+      (store_troop_faction, ":quest_giver_faction", "$g_talk_troop"),
+      (faction_get_slot,":loss",":quest_giver_faction",slot_faction_strength_tmp),
+      (str_store_faction_name, s13, ":quest_giver_faction"), 
+      (val_add, ":level", 150),
+      (val_sub, ":loss", ":level"),
+      (display_message,"@{s13} loses Faction Strength as supply lines were disrupted.",color_bad_news),
+    (try_end),
+    (faction_set_slot,":quest_giver_faction",slot_faction_strength_tmp,":loss"),
+    (faction_set_slot,":scout_camp_faction",slot_faction_strength_tmp,":enemy"), 
+    (cancel_quest, "qst_destroy_scout_camp"),
+    ]],
+
+[anyone|plyr, "destroy_scout_camp_failed",[],
+  "I will do better next time.", "close_window",[],
+  ],
+
+
+#### Kham Destroy Scout Camp Quests Completion End ####
+
 #### Kham Defend / Raid Village Quests Completion Start ####
 
 [anyone,"lord_start", [
@@ -4706,6 +4810,51 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
+
+
+#### Kham Destroy Scout Camp Quests Start ####
+
+
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_destroy_scout_camp"),
+  (quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
+  (str_store_faction_name,s3,":scout_camp_faction")],
+    "{playername}, we have received word that {s3} has a scout camp nearby, Destroy it before they are able to learn about our plans.", "lord_mission_destroy_scout_camp_a",
+[]],
+
+[anyone|plyr,"lord_mission_destroy_scout_camp_a", [],
+    "Consider it done.", "lord_mission_destroy_scout_camp_accept",
+[]],
+
+[anyone|plyr,"lord_mission_destroy_scout_camp_a", [],
+    "I do not have the time for this.", "lord_mission_destroy_scout_camp_reject",
+[]],
+
+
+[anyone,"lord_mission_destroy_scout_camp_accept",[],
+  "We shall await news of your success","close_window",
+      [
+      (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
+      (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+      (set_spawn_radius, 25),
+      (spawn_around_party,":quest_object_center",":quest_target_party_template"),
+      (assign, "$qst_destroy_scout_camp_party", reg0),
+      (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
+      (str_store_troop_name_link,s9,"$g_talk_troop"),
+      (setup_quest_text,"$random_quest_no"),
+      (str_store_string, s2, "@{s9} asked you to destroy a scout camp."),
+      (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
+      (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+      (call_script, "script_stand_back"),
+      (assign, "$g_leave_encounter", 1),
+      ]],
+
+[anyone,"lord_mission_destroy_scout_camp_reject", [],
+    "I see. That is disappointing.", "close_window",
+[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+
+
+#### Kham Destroy Scout Camp Quest End #######
 
 #### Kham Defend / Raid Village Quests Start ########
 #### Kham Defend Village - Good Start

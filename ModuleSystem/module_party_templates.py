@@ -388,8 +388,10 @@ party_templates = [
 ("beorn_messenger"    ,"Beorning Messenger"      ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_beorning_carrock_berserker,1,1)]), 
 ("village","Village",icon_village_a| pf_quest_party| pf_hide_defenders|pf_is_static|pf_always_visible,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
 ("ring_hunters","Ring_Hunters",icon_harad_horseman|carries_goods(2)| pf_quest_party | ai_bhvr_hold  ,0,fac_commoners  ,bandit_personality,[(trp_ring_hunter_captain,1,1),(trp_ring_hunter_one,10,15),(trp_easterling_horsemaster,10,15),(trp_ring_hunter_three,12,20),(trp_ring_hunter_four,20,35),(trp_ring_hunter_two,15,30)]),
-
 ## Kham Ring Hunters End ####
 
+##Kham Destroy Scout Camp Start
+("scout_camp_small","Scout Camp",icon_nomadcamp_b| pf_quest_party| pf_hide_defenders|pf_is_static|pf_always_visible,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
+("scout_camp_large","Fortified Scout Camp",icon_orctower| pf_quest_party| pf_hide_defenders|pf_is_static|pf_always_visible,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
 
 ]

@@ -115,6 +115,10 @@ quests = [
   ("raid_village", "Raid Village", 0,
   "{!}None"
 ),
+
+  ("destroy_scout_camp", "Destroy Scout Camp", 0,
+  "{!}None"
+),
   
 #TLD lord missions begin (MV)
 ( "rescue_prisoners", "Rescue {reg1} Prisoners", qf_random_quest,

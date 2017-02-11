@@ -361,5 +361,27 @@ scenes = [
 ("village_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003007a21c0003ecfe000001f0000073b100000fd2",  [],[],"outer_terrain_plain"),
 ("village_3",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000023003dc4e0006118b000029f8000034670000105f",  [],[],"outer_terrain_plain"),
 
+("scout_camp_mirk_evil_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b00a11bd8002b8b6000059ce000067f400007f2e",  [],[],"outer_terrain_forest"),
+("scout_camp_mirk_evil_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b00a11bd8002b8b6000059ce000067f400007f2e",  [],[],"outer_terrain_forest"),
+("scout_camp_mirk_good_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b00a11bd8002b8b6000059ce000067f400007f2e",  [],[],"outer_terrain_forest"),
+("scout_camp_mirk_good_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b00a11bd8002b8b6000059ce000067f400007f2e",  [],[],"outer_terrain_forest"),
+
+("scout_camp_rohan_evil_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000200f96d700025896000074ef000021f700007ddd",  [],[],"outer_terrain_rohan"),
+("scout_camp_rohan_evil_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000200f96d700025896000074ef000021f700007ddd",  [],[],"outer_terrain_rohan"),
+("scout_camp_rohan_good_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000200f96d700025896000074ef000021f700007ddd",  [],[],"outer_terrain_rohan"),
+("scout_camp_rohan_good_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000200f96d700025896000074ef000021f700007ddd",  [],[],"outer_terrain_rohan"),
+
+("scout_camp_north_good_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2",  [],[],"outer_mountains2north"),
+("scout_camp_north_good_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2",  [],[],"outer_mountains2north"),
+("scout_camp_north_evil_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2",  [],[],"outer_mountains2north"),
+("scout_camp_north_evil_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000134cb9d0b0002c4ab00003efe00004b34000048a2",  [],[],"outer_mountains2north"),
+
+("scout_camp_gondor_good_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001a6681da50003ccef00005c3000004b34000071fb",  [],[],"outer_mountains2south"),
+("scout_camp_gondor_good_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001a6681da50003ccef00005c3000004b34000071fb",  [],[],"outer_mountains2south"),
+("scout_camp_gondor_evil_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001a6681da50003ccef00005c3000004b34000071fb",  [],[],"outer_mountains2south"),
+("scout_camp_gondor_evil_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001a6681da50003ccef00005c3000004b34000071fb",  [],[],"outer_mountains2south"),
+
+("black_shield_fortress" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x00000001200005000009325a00006ec70000053f00001892",[],[],"outer_terrain_tirith_1"),
+
 ]
 

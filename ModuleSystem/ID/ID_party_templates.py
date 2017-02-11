@@ -248,3 +248,5 @@ pt_legion_barad_dur = 246
 pt_beorn_messenger = 247
 pt_village = 248
 pt_ring_hunters = 249
+pt_scout_camp_small = 250
+pt_scout_camp_large = 251
