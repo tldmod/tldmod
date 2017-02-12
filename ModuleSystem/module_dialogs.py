@@ -2309,7 +2309,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (str_store_party_name,12,":quest_target_center")],
 "We saw the flames coming from the camp near {s12}. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.", "lord_generic_mission_completed",[
    
-   #Faction Strength Changes 
+   #Faction Strength Changes - Balance Document can be found on Google Drive: https://goo.gl/CErgSN
     (str_clear, s3),
     (str_clear,s4),
     (quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
@@ -2319,27 +2319,27 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
     ## Faction Strength Change depend on player level 
     (try_begin),
-      (is_between, ":level", 11,17), #Small Scout Camp - Enemy Loss Min: 125; Max: 150 - Hero Win Min: 275; Max: 300
-      (val_mul, ":level",5),
-      (val_add, ":level", 70),
+      (is_between, ":level", 11,17), #Small Scout Camp - Enemy Loss Min: 93; Max: 108 - Hero Win Min: 148; Max: 163
+      (val_mul, ":level",3),
+      (val_add, ":level", 60),
       (val_sub, ":enemy", ":level"),
       (display_message,"@{s11} Loses Faction Strength due to the destruction of their camp",color_good_news),
       (store_troop_faction, ":quest_giver_faction", "$g_talk_troop"),
       (faction_get_slot,":win",":quest_giver_faction",slot_faction_strength_tmp),
       (str_store_faction_name, s13, ":quest_giver_faction"), 
-      (val_add, ":level", 150),
+      (val_add, ":level", 55),
       (val_add, ":win", ":level"),
       (display_message,"@{s13} gain Faction Strength as news of your victory spreads.",color_good_news),
     (else_try),
-      (is_between, ":level", 17,23), #Fortified Scout Camp - Enemy Loss Min: 270; Max: 320 - Hero Win Min: 420; Max: 470
-      (val_mul, ":level",10),
-      (val_add, ":level", 100),
+      (is_between, ":level", 17,23), #Fortified Scout Camp - Enemy Loss Min: 145; Max: 170 - Hero Win Min: 200; Max: 225
+      (val_mul, ":level",5),
+      (val_add, ":level", 60),
       (val_sub, ":enemy", ":level"),
       (display_message,"@{s11} Loses Faction Strength due to the destruction of their camp",color_good_news),
       (store_troop_faction, ":quest_giver_faction", "$g_talk_troop"),
       (faction_get_slot,":win",":quest_giver_faction",slot_faction_strength_tmp),
       (str_store_faction_name, s13, ":quest_giver_faction"), 
-      (val_add, ":level", 150),
+      (val_add, ":level", 55),
       (val_add, ":win", ":level"),
       (display_message,"@{s13} gain Faction Strength as news of your victory spreads.",color_good_news),
     (try_end),
@@ -3435,11 +3435,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone|plyr,"lord_talk",[
  (this_or_next|eq, "$g_talk_troop","trp_dwarf_lord"),
  (eq, "$g_talk_troop","trp_imladris_lord"), 
- (ge, "$g_talk_troop_relation", 1),
+ (ge, "$g_talk_troop_relation", 5),
  (neg|check_quest_finished, "qst_ring_hunters"),
  (neg|quest_slot_ge,"qst_ring_hunters",slot_quest_current_state,10),
  (store_character_level, ":playerlvl", "trp_player"),
- (ge, ":playerlvl",1),],
+ (ge, ":playerlvl",11),],
   "My lord, I am prepared to take more arduous tasks to serve you better and end this war. What would you have me do?",
   "ring_hunters_start", []],
 
@@ -4836,7 +4836,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
       (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
-      (set_spawn_radius, 25),
+      (set_spawn_radius, 35),
       (spawn_around_party,":quest_object_center",":quest_target_party_template"),
       (assign, "$qst_destroy_scout_camp_party", reg0),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
