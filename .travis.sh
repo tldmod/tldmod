@@ -2,127 +2,214 @@
 _fold_start_() { echo -en "travis_fold:start:script.$(( ++fold_count ))\\r" && echo -ne '\033[1;33m' && echo $1 && echo -ne '\e[0m'; }
 _fold_final_() { echo -en "travis_fold:end:script.$fold_count\\r"; }
 
-_fold_start_ '[Turning original shallow clone into a full one and installing dependencies]'
-    sudo apt-get install p7zip tree git
+_fold_start_ '[Turning original shallow clone into a full one]'
     git fetch --unshallow
 
 _fold_final_
 
-echo HI THERE! && SVNREV=$(git rev-list --count HEAD)
 
-_fold_start_ '[Initial TLD tree view]'
-    tree -h .
+echo HI THERE!
+
+# grab the revision count of the latest merge commit,
+# parse the changelog page to find the previous one
+SVNREV=$(git rev-list --count "`git rev-list --min-parents=2 --max-count=1 HEAD`")
+PREREV=$(curl -s http://steamcommunity.com/sharedfiles/filedetails/changelog/299974223 | \
+         sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1)
+
+
+# prefix the new changelog with the standard introduction and
+# make the bullet points and em-dashes pretty
+echo -e "Submitted a new build. Equivalent to nightly r$SVNREV.\r\n\r\n\
+Main changes since the previous r$PREREV build are:\r\n\
+`git log -1 --pretty=%B`" > /tmp/desc.txt
+
+WORKSHOP_DESC="`cat '/tmp/desc.txt'`"
+
+echo "$WORKSHOP_DESC"
+echo "----"
+
+_fold_start_ "[Installing Wine Staging]"
+    sudo add-apt-repository ppa:wine/wine-builds -yy
+    sudo apt-get update -yy
+    sudo apt-get install --install-recommends wine-staging winehq-staging -yy --force-yes
 
 _fold_final_
 
 cd ModuleSystem
 
 _fold_start_ "[Compiling retail revision $SVNREV]"
-    curl https://ccrma.stanford.edu/~craig/utility/flip/flip.cpp -O -J && sudo g++ flip.cpp -o /usr/bin/flip
-
     # disable cheat mode for the generated nightly builds...
     sed -i 's/cheat_switch = 1/cheat_switch = 0/' module_constants.py
 
-    # add a placeholder 'title' program to avoid log spam...
-    sudo sh -c 'echo "#/usr/bin/bash" > /usr/bin/title && chmod +x /usr/bin/title'
-
-    ./build_module.sh
-    ./build_module_wb.sh
+    ./build_module.sh     2> /dev/null
+    ./build_module_wb.sh  2> /dev/null
 
 _fold_final_
 
 cd ..
 
-_fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental patches]"
-    git config --global core.quotepath false
-    git diff --name-status --diff-filter=ACMRTUXB TLD3.3REL ./ > diff.txt
-
-    cat diff.txt | sed -r -e  s/^D.+// \
-                          -e 's/.+modulesystem.+//I' \
-                          -e 's/.*unused.*//I' \
-                          -e 's/.*src.*//I' \
-                          -e 's/.*cmd.*//I' \
-                          -e 's/.*exe.*//I' \
-                          -e 's/.*\.yml.*//I' \
-                          -e 's/.*\.sh.*//I' \
-                          -e 's/.*\.git.*//I' \
-                          -e 's/.*\/[\_|\.][^wT][^b].*//' \
-                          -e '/^$/d' \
-                          -e 's/^.+TLD_GA\///' > diff_mod.txt
-
-    mkdir ../TLD
-
-    cat ./diff_mod.txt | while read i; do cp --parents "${i:2}" "../TLD/"; done
-
-    cd ../TLD
-    #tree -h .
+_fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop build]"
+    # override the M&B 1.011 files with the Warband counterparts
+    cp -rf ./_wb/* ./
+    rm -rf _wb
 
     # fixed Linux case-sensitive language files detection
     mv Languages languages
 
-    cd ..
-
-    # make a copy for the warband version
-    cp -rf TLD TLD_WB
-
-    # remove the now unneeded warband subfolder from the TLD dir
-    rm -rf TLD/_wb
-
-    # overwrite the content in the warband version with the files from the _wb subfolder
-    cp -rf TLD_WB/_wb/* TLD_WB/
-
-    # remove the now empty _wb subfolder from the warband version
-    rm -rf TLD_WB/_wb
-    rm -f  TLD_WB/Data/mb.fxo
-
     # paste the original optimized warband glsl shaders in GLShadersOptimized
     curl https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/vanilla_glsl_opt.zip -L -O
-    unzip vanilla_glsl_opt.zip -d ./TLD_WB
+    unzip vanilla_glsl_opt.zip -d ./ && rm vanilla_glsl_opt.zip
 
     # move our custom tld shaders into their rightful place
-    mv TLD_WB/GLShaders/*.glsl TLD_WB/GLShadersOptimized/
+    mv GLShaders/*.glsl GLShadersOptimized/
 
-    #tree -h .
+    # strip it accordingly
+   #rm -rf ./Data
+    rm -f  ./Data/*.py
+    rm -f  ./Data/*.log
+    rm -f  ./Data/*.exe
+    rm -f  ./Data/*.bik
+    rm -f  ./Data/*.fxo
+    rm -f  ./Data/*.bat
+    rm -f  ./Data/*_old.xml
+    rm -f  ./Data/*.xml.weapons_lay_down
 
-    #bbfile=TLD_3.3_nightly_patch_r$SVNREV.7z
-    #bbfilewb=TLD_3.3_wbcompat_nightly_patch_r$SVNREV.7z
-    bbfile=TLD_3.3_nightly_patch_$(date +%Y.%m.%d-%H.%M -u)_r$SVNREV.7z
-    bbfilewb=TLD_3.3_wbcompat_nightly_patch_$(date +%Y.%m.%d-%H.%M -u)_r$SVNREV.7z
+    rm -f  ./languages/*
+    rm -rf ./languages/.tx
+    rm -rf ./languages/_base
+    rm -rf ./languages/_base_new_language
+    rm -rf ./languages/_*
 
-    # a small notice
-    echo -e "This release has been churned out by an automated process, generated directly from our dev repository at revision $SVNREV,\r\n\
-that doesn't mean it has to be broken, but *may* not work as well as a stable release due to lack of testing and other things.\r\n\
-\r\n\
-They have not been supervised by a real person, treat them as such. Also, have fun! :)\r\n\
-\r\n\
---swyter\r\n\
-\r\n\
-PS: For more info and official support/updates take a look to <https://tldmod.github.io> and <http://moddb.com/mods/the-last-days>" > notice
+    rm -rf ./ModuleSystem
 
-    cp notice "THIS IS AN AUTOMATED RELEASE OF TLD FOR M&B 1.011, REVISION $SVNREV"
-    cp notice "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
+    rm -f  ./Music/Readme.txt
+    rm -rf ./Music/LowQualityTLDSoundtrack
+
+    rm -rf ./Resource/_*
+
+    rm -f  ./SceneObj/*.exe
+    rm -rf ./SceneObj/_*
+
+    rm -rf ./Sounds/_*
+    rm -f  ./Sounds/Readme.txt
+
+    rm -rf ./Textures/_*
+    rm -rf ./Textures/Merl\'s\ old\ original\ textures
+    rm -f  ./Textures/*.xcf
+    rm -f  ./Textures/*.psd
+    rm -f  ./Textures/*.jpg
+    rm -f  ./Textures/*.png
+    rm -f  ./Textures/Readme.txt
+
+
+    rm -f  ./*.bat
+    rm -f  ./*.cmd
+    rm -f  ./*.exe
+    rm -f  ./*.dll
+    rm -f  ./*.h
+    rm -f  ./*src*
+    rm -f  ./*.odt
+    rm -f  ./*.psd
+    rm -f  ./*.zip
+    rm -f  ./*.rar
+    rm -f  ./.*
+    rm -f  ./*.yml
+    rm -f  ./*.cdd
+    rm -f  ./*.lua
+    rm -f  ./*.htm
+    rm -f  ./*.nsi
+    rm -f  ./module-wb.ini
+    rm -f  ./game_variables-wb.txt
+    rm -f  ./*orc*
+    rm -rf ./_*.txt
+   #rm -rf ./_*
+
+    rm -rf .git
+    
+    # add a watermark to make it clear that this is not the official build
+    convert main.bmp -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' -type truecolor main.bmp
 
 _fold_final_
 
-_fold_start_ '[Compressing finished TLD packages with 7-Zip]'
-    7zr a -mx9 -r -y $bbfile TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR M&B 1.011, REVISION $SVNREV"
-
-    # swap the M&B 1.011 folder by the Warband one
-    rm -rf TLD && mv TLD_WB TLD
-
-    7zr a -mx9 -r -y $bbfilewb TLD "THIS IS AN AUTOMATED RELEASE OF TLD FOR WARBAND, REVISION $SVNREV"
-
-_fold_final_
 
 _fold_start_ '[Final tree view]'
     ls -lash
+    #tree .
 
 _fold_final_
 
-_fold_start_ '[Uploading finished TLD packages]'
-    curl https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh -O -J && chmod +x ./upload-to-bitbucket.sh
 
-    sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"
-    sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb"
+_fold_start_ '[Initializing Steamworks service]'
+    cd .. && mkdir steam && cd steam
+    
+    Xvfb :1 -screen 0 800x600x16 2> /dev/null &
+    export DISPLAY=:1
+    
+    curl -LOJs https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/Steam.exe && curl -LOJs "$STEAM_SS"
+
+    # initialize the Wine environment and disable the sound driver output (travis-ci doesn't have any dummy ALSA devices)
+    export WINEDLLOVERRIDES="mscoree,mshtml="
+    export WINEDEBUG=-all
+
+    # pre-generate the Wine environment, disable ALSA integration (Travis CI machines don't have virtual sound cards)
+    # and run the SteamWorks service in the background, parse the connection status and continue when finished
+    wineboot -u
+    winetricks sound=disabled
+    wine steam -silent -forceservice -no-browser -no-cef-sandbox -opengl -login "$STEAM_AC" "`openssl base64 -d <<< "$STEAM_TK"`" &
+
+    ((t = 290)); while ((t > 0)); do
+        grep --no-messages 'RecvMsgClientLogOnResponse()' logs/connection_log.txt | grep 'OK'                   && echo '>> OK'                   && break;
+        grep --no-messages 'RecvMsgClientLogOnResponse()' logs/connection_log.txt | grep 'Invalid Password'     && echo '>> Invalid Password'     && exit 1;
+        grep --no-messages 'RecvMsgClientLogOnResponse()' logs/connection_log.txt | grep 'Account Logon Denied' && echo '>> Account Logon Denied' && exit 1;
+
+        if ((t == 1)); then
+            curl -LOJ https://raw.githubusercontent.com/tremby/imgur.sh/master/imgur.sh && chmod +x ./imgur.sh
+            
+            ls -lash && scrot screenshot.png && ls -lash;
+            ./imgur.sh screenshot.png;
+            
+            exit 1;
+        fi;
+
+        sleep 1 && echo ' >>' $[ t-- ];
+    done
+    
+    # give it some seconds to settle down, slowpoke!
+    sleep 20
+
+_fold_final_
+
+
+_fold_start_ '[Uploading Steam Workshop build]'
+    cd .. && mv tldmod 'The Last Days of the Third Age (TEST THINGIE)'
+    
+    # get all we need
+    curl -LOJs https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/mbw_workshop_uploader_glsl_pdf_no_ogg.exe
+    curl -LOJs https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/steam_api.dll
+    curl -LOJs https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/tldmod.ini
+    curl -LOJs https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/tldmod.png
+
+    echo 48700 > steam_appid.txt
+    
+    # don't make the test entry public
+    sed -e 's/visibility = public/visibility = friends only/' tldmod.ini --in-place
+    sed -e 's/The Last Days of the Third Age/The Last Days of the Third Age (TEST THINGIE)/' tldmod.ini --in-place
+    
+    # add a watermark to make it clear that this is not the official build
+    convert tldmod.png -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' tldmod.png
+
+    # do the actual submission using this (totally stable) work of art
+    yes NO | wine mbw_workshop_uploader_glsl_pdf_no_ogg.exe update -mod tldmod.ini \
+                                                                    -id 742666341  \
+                                                                  -icon tldmod.png \
+                                                               -changes "$WORKSHOP_DESC" | tee workshop.log
+    
+    ls -lash && ps
+    
+    # get rid of the resident background processes, we don't want travis-ci to timeout
+    sleep 10 && killall -I steam.exe && killall -I Xvfb && rm -rf steam
+    
+    # fail the build if things didn't go as expected
+    grep --no-messages 'Uploading done!' workshop.log || exit 1;
 
 _fold_final_

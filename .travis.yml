@@ -2,4 +2,19 @@ sudo: required
 language: python
 python:
   - "2.7"
+cache:
+  apt: true
+addons:
+  apt:
+    packages:
+      - xvfb
+      - tree
+      - git
+      - winetricks
+      - scrot
+      - flip
+      - imagemagick
+      - curl
+      - sed
+
 script: bash ./.travis.sh
