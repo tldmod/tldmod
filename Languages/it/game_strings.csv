@@ -369,7 +369,7 @@ str_npc17_backstory_a|Mi chiamano Dímborn e lavoro nella foresta. Qui è bello.
 str_npc1_backstory_b|Devi sapere che sono un Ranger di Ithilien di discendenza e di valore Dúnedain. Ho esperienza nel seguire tracce e nell'esplorazione, le mie abilità con arco e spada sono ben note agli Orchi. Sono anche in grado di addestrare ogni anima che vorrà combattere l'Ombra che si approssima.
 str_npc2_backstory_b|Sono stato addestrato in qualità di guardiano di Minas Tirith, per mantenere l'ordine nella Città Bianca e servire il lord Sovrintendente.
 str_npc3_backstory_b|Sono un Cavaliere dell'éored di West Emnet - se ne sono andati senza di me per un pattugliamento verso il guado di Isen. So che la loro condotta sarà degna della verde bandiera, ma temo che molti non faranno ritorno.
-str_npc4_backstory_b|Sono nato in una nobile famiglia e ho servito Lady Éowyn come damigella d'onore da quando eravamo piccole. I nostri padri furono tanto saggi da permetterci di addestrarci con i nostri fratelli al combattimento, per diventare scudiere di Rohan.
+str_npc4_backstory_b|Ho avuto i miei natali in una nobile famiglia e ho servito Lady Éowyn come damigella d'onore da quando eravamo piccole. I nostri padri furono tanto saggi da permetterci di addestrarci con i nostri fratelli al combattimento, per diventare scudiere di Rohan.
 str_npc5_backstory_b|Lord Elrond mi ha inviato come emissario a Lord Celeborn, per avvisare che è richiesto il suo intervento in Guerra in questa parte del Rhovanion.
 str_npc6_backstory_b|Mi piace percorrere i sentieri nascosti nella nostra splendida foresta. Alle volte mi passo tranquillamente fra gli alberi e osservo le abitudini dei molti animali del bosco. Il canto di un raro volatile o i rumori di un cinghiale nella sua tana sono per me belli come il clangore delle armi e le alte mura di Edain.
 str_npc7_backstory_b|Ho collaborato al rinforzamento delle difese di Erebor e addestrato qualche giovane nano di queste zone, sotto la direzione del mio venerato padre Dwalin, com'è nella nostra tradizione.
@@ -386,7 +386,7 @@ str_npc17_backstory_b|Puoi fare uscire molte cose dagli alberi, sai. E' quello c
 str_npc1_backstory_c|Tuttavia, temo che la nostra condizione sia disperata - siamo sovrastati dagli avversari qui in Ithilien senza rinforzi o audaci azioni da parte del nostro Tenutario. Vorrei aiutare dove le mie azioni hanno più efficacia, se il mio Capitano Faramir mi lasciasse andare.
 str_npc2_backstory_c|Quali che siano i miei compiti qui, sono piuttosto ansioso di vedere il combattimento dal vivo e... Elfi e alberi parlanti e Olifanti ! Sembri una persona navigata, comandante, e non lo dico solo per l'aspetto, si capisce. Imparo in fretta e so cucinare.. Beh, quanto basta per i soldati, ecco. Sbaglio o stavate cercando dei volontari ?
 str_npc3_backstory_c|E cosi, eccomi qui, nella disgrazia e nell'amarezza. Il mio éored, la mia compagnia di Rohirrim, sarà lontana miglia adesso, e non ho nessuna possibilità di raggiungerli, non con tutti gli orchi e i selvaggi che si aggirano in queste pianure. Per caso, hai bisogno di un bravo cavaliere Rohirrim ?
-str_npc4_backstory_c|Dovresti sapere che alle donne, quale che sia la loro abilità, non è permesso cavalcare con gli éoredas, i cavalieri Rohirrim. Comunque, nel mio cuore non credo che aspettare il ritorno dei guerrieri sia nel mio destino. Non me ne starò seduto per vedere ogni possibilià di grandi imprese passarmi davanti in questa guerra, e il tuo aiuto sarebbe il benvenuto, guerriero.
+str_npc4_backstory_c|Dovresti sapere che alle donne, quale che sia la loro abilità, non è permesso cavalcare con gli éoredas, i cavalieri Rohirrim. Comunque, nel mio cuore non credo che aspettare il ritorno dei guerrieri sia nel mio destino. Non me ne starò in disparte per vedere ogni possibilià di grandi imprese passarmi davanti in questa guerra, e il tuo aiuto sarebbe il benvenuto, guerriero.
 str_npc5_backstory_c|Tuttavia, se i nemici di Lothlórien sono sul piede di guerra, dovrei considerare di unirmi a voi per un periodo di tempo, {playername}. Percepisco che i nostri destini in questa guerra s'intrecciano.
 str_npc6_backstory_c|Guardandoti preparato per la guerra, non capiresti, credo. Ma devi aver viaggiato in lungo e in largo - hai mai visto le altre grandi foreste ? Puoi condurmici ?
 str_npc7_backstory_c|C'è una pausa nel combattimento che mal si adatta ad un guerriero nano della mia discendenza e temperamento. Sbaglio o si vede molta più azione nei tuoi viaggi, e la tua causa è favorevole a quella dei nani ? Posso dirti per certo che avere un nano aumenta grandemente le possibilità di sopravvivenza.
@@ -471,7 +471,7 @@ str_npc17_signup|Molto bene! Conosco molti alberi. Presto imparerai a conoscere 
 str_npc1_signup_2|Ci vorrà un momento, il tempo di parlare al mio capitano e prendere le mie cose.
 str_npc2_signup_2|Avrò bisogno di parlare con il mio sergente prima di tutto, dopo potremo andare - ci sono gloriose battaglie da combattere e strane creature da vedere !
 str_npc3_signup_2|Ho  atteso qualcuno che mi portasse con sè, ho solo bisogno di sellare il mio cavallo e saremo pronti ad andare.
-str_npc4_signup_2|Sono andato a caccia molte volte con arco e giavellotto. Darò la caccia agli orchi sotto il tuo comando. Ho anche abilità e conoscenze in guarigione che certamente torneranno utili.
+str_npc4_signup_2|Ho fatto battute di caccia molte volte con arco e giavellotto. Darò la caccia agli orchi sotto il tuo comando. Ho anche abilità e conoscenze in guarigione, cose che certamente torneranno utili.
 str_npc5_signup_2|Forse unendomi alla tua compagnia e colpendo duro dove non se l'aspetta, il nemico sarà sbilanciato. Verrò.
 str_npc6_signup_2|Forse posso insegnarti a muoverti più rapidamente e a produrre meno rumore. Andiamo.
 str_npc7_signup_2|Se sarai in grado di tenere in riga i tipi alti nella tua compagnia, specialmente gli Elfi, sarò lieto di unirmi a voi.
@@ -1166,9 +1166,9 @@ str_faction_strength_spent_and_wavering|Esaurito e vacillante
 str_faction_strength_weakened|Indebolito
 str_faction_strength_fair|Discreto
 str_faction_strength_average|Medio
-str_faction_strength_strong|Forte
-str_faction_strength_quite_strong|Piuttosto forte
-str_faction_strength_very_strong|Molto forte
+str_faction_strength_strong|Forti
+str_faction_strength_quite_strong|Piuttosto forti
+str_faction_strength_very_strong|Molto forti
 str_faction_strength_unmatched|Imbattibile
 str_faction_strength_last|NON VALIDO
 str_theater_se|Gondor

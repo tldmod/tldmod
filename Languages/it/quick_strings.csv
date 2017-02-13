@@ -161,7 +161,7 @@ qstr_Move_here|Vai qui
 qstr_View_notes|Controlla le note
 qstr_nothing|Niente
 qstr_Good|Bene
-qstr_Med|Medio
+qstr_Med|Mediamente forti
 qstr_Bad|Cattivo
 qstr_{reg4}_killed_{reg5}|{reg4} uccisi, {reg5} feriti, {reg6} in rotta
 qstr_{reg4}_killed_{reg5}_|{reg4} uccisi, {reg5} feriti
@@ -775,8 +775,8 @@ qstr_{s1}_is_scouted.|{s1} è stato esplorato.
 qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l'unico sovrano della Terra di Mezzo !
 qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata !
 qstr_{s2}_was_defeated!|{s2} è stato sconfitto!
-qstr_The_forces_of_{s22}_|L'armata di {s22} si è radunata ! {s22} ora è {s23} 
-qstr_The_might_of_{s22}_h|La forza di {s22} è diminuita. {s22} ora è {s23}. 
+qstr_The_forces_of_{s22}_|L'armata di {s22} si è radunata ! {s22} ora è: {s23} 
+qstr_The_might_of_{s22}_h|La forza di {s22} è diminuita. {s22} ora è: {s23}. 
 qstr_In_a_desperate_attem|In un disperato tentativo di difendersi contro i suoi nemici, Sauron invia le sue legioni di Mordor !
 qstr_Guardians_of_{s6}|Guardiani di {s6}
 qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}

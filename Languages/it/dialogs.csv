@@ -95,7 +95,7 @@ dlga_do_member_view_char:member_talk|Qualcos'altro ?
 dlga_start:close_window.5|Partiamo appena vorrai.
 dlga_start:close_window.6|Ti prego di non sprecare ulteriormente il mio tempo, oggi. Forse ci potremo incontrare ancora.
 dlga_companion_recruit_signup_response:close_window|Sfortunatamente non posso assumere altre braccia per ora.
-dlga_companion_recruit_rank:close_window|A quanto pare non si molto stimato fra la mia gente, {playername}. Il tuo livello è {s29} e devi essere a {s24} perché io mi possa unire [{reg3} hai bisogno di più punti di merito]. Ne riparleremo quando sarai più esperto.
+dlga_companion_recruit_rank:close_window|A quanto pare non sei molto stimato fra la mia gente, {playername}. Il tuo livello è {s29} e devi essere a {s24} perché io mi possa unire [hai bisogno di più punti di merito - {reg3}]. Ne riparleremo quando sarai più esperto.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Mi fa piacere vedere che sei divenuto {s29}, e non vedo l'ora di unirmi a voi.
 dlga_companion_recruit_payment_response:close_window|Beh, c'è poco che possa fare allora..
 dlga_start:companion_recruit_meet_again|Ci incontreremo ancora.
@@ -245,7 +245,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Bene, è tutto vostro.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Temo di avere altri piani per lui.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Eccellente ! Manderò i miei uomini a scortarlo in prigione rapidamente. Questo aiuterà di sicuro la nostra causa. 
 dlga_lord_buy_prisoner_deny:lord_pretalk|Male, sarebbe stato prezioso per noi, {playername}.
-dlga_lord_start:lord_pretalk|Ah benvenuto, {s24}.^Dovresti già sapere che {s12}. Il tuo dovere è aiutarci nella nostra lotta, {playername}. Quando ti sarai dimostrato degno della mia fiducia [level {reg1}], ti lascerò accedere a quello scrigno lassù.      
+dlga_lord_start:lord_pretalk|Ah benvenuto, {s24}.^Dovresti già sapere che {s12}. Il tuo dovere è aiutarci nella nostra lotta, {playername}. Quando ti sarai dimostrato degno della mia fiducia [livello{reg1}], ti lascerò accedere a quello scrigno lassù.      
 dlga_lord_start:lord_talk|Che c'è ?
 dlga_lord_pretalk:lord_talk|Qualcos'altro ?
 dlga_lord_talk:lord_lend_companion_end|Mi piacerebbe che {s14} tornasse al mio servizio, {s65}, se non necessiti più dei suoi servigi.
