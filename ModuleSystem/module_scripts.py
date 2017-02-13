@@ -20401,16 +20401,38 @@ if is_a_wb_script==1:
       (store_script_param, ":troop_no", 1),
       (store_script_param, ":cur_tier", 2),
       
+    # (str_store_troop_name, s5, ":troop_no"),
+    # (assign,             reg4, ":cur_tier"),
+    # (display_message, "@TIER {reg4} / {s5}."),
+      
       (store_add, ":next_tier", ":cur_tier", 1),
       # upgrade_troop
       (troop_get_upgrade_troop, ":upgrade_troop_1", ":troop_no", 0),
       (troop_get_upgrade_troop, ":upgrade_troop_2", ":troop_no", 1),
       (try_begin),
+        (gt,  ":upgrade_troop_1", 0),
         (gt,  ":upgrade_troop_2", 0),
+        # swy: ensure this it doesn't return a self-reference, don't ask me why this happens
+        #      with farmers (which are at the start of the soldier block)
+        (neq, ":upgrade_troop_1", ":troop_no"),
+        (neq, ":upgrade_troop_2", ":troop_no"),
+        
+      # (str_store_troop_name, s5, ":upgrade_troop_1"),
+      # (str_store_troop_name, s6, ":upgrade_troop_2"),
+      # (display_message, "@  [2] {s5} / {s6}."),
+        
         (call_script, "script_troop_tree_recursive_detect_max_tier", ":upgrade_troop_2", ":next_tier"),
         (call_script, "script_troop_tree_recursive_detect_max_tier", ":upgrade_troop_1", ":next_tier"),
+
       (else_try),
         (gt,  ":upgrade_troop_1", 0),
+        # swy: ensure this it doesn't return a self-reference, don't ask me why this happens
+        #      with farmers (which are at the start of the soldier block)
+        (neq, ":upgrade_troop_1", ":troop_no"),
+        
+      # (str_store_troop_name, s5, ":upgrade_troop_1"),
+      # (display_message, "@  [1] {s5}."),
+      
         (call_script, "script_troop_tree_recursive_detect_max_tier", ":upgrade_troop_1", ":next_tier"),
       (try_end),
       
