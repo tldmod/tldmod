@@ -1,0 +1,108 @@
+ui_texture_detail|Dettagli texture:
+ui_max_frame_rate|Max. Frame Rate:
+ui_enable_bumpmap|Usa Bump Mapping
+ui_disable_blood|Nascondi sangue
+ui_disable_music|Disabilita musica
+ui_disable_sound|Disabilita suoni
+ui_enable_cheats|Abilita trucchi
+ui_enable_edit_mode|Abilita Edit Mode (Attenzione, questo potrebbe rallentare il gioco.)
+ui_enable_pixel_shaders|Usa Pixel Shaders
+ui_enable_sound_variation|Abilita variazione dei suoni
+ui_enable_vertex_shaders|Metodo render:
+ui_shadow_quality|Qualita' delle ombre:
+ui_directx_7|DirectX 7
+ui_directx_9|DirectX 9
+ui_show_framerate|Mostra Framerate
+ui_start_windowed|Esegui in modalita' finestra
+ui_trialmode_caption|Attivazione
+ui_trialmode|Ti preghiamo di attivare Warband con il tuo codice seriale. Il codice a 16 cifre è incluso nella tua copia del gioco. Se non vuoi attivare il gioco per qualsiasi ragione, puoi continuare a giocare la demo, tuttavia non sarai in grado di far avanzare il tuo personaggio oltre il livello 7.
+ui_launch_buy|Compra una licenza da TaleWorlds.com
+ui_launch_faq|FAQ relative all'attivazione
+ui_trialmode2|In attesa d'attivazione...
+ui_trialmode3|Oppure, puoi anche...
+ui_trialmode4|Se hai qualche domanda a proposito dell'attivazione, puoi leggere...
+ui_serial_key_caption|Codice d'attivazione
+ui_notification_serial_input|Inserisci il tuo codice seriale (puoi copiarlo e incollarlo) e clicca sul bottone d'attivazione
+ui_notification_serial_input_vc|Questo modulo richiede un seriale per funzionare. Inserisci il tuo codice seriale di Viking Conquest (puoi copiarlo e incollarlo) e clicca sul bottone d'attivazione
+ui_activate|Attivazione
+ui_paste|Incolla
+ui_notification_serial_internet_connection|L'attivazione richiede una connessione Internet!
+ui_notification_serial_offline|Se questo computer non ha accesso a Internet puoi anche eseguire:
+ui_manual_activation|Attivazione Manuale
+ui_offline_activation|Attivazione Offline 
+ui_manual_activation_caption|Attivazione Manuale
+ui_offline_activation_caption|Attivazione Offline 
+ui_cancel2|Esci
+ui_close|Chiudi
+ui_ok2|OK
+ui_activation_successful|Il gioco è stato attivato con successo.
+ui_activation_successful2|Per favore conserva il Codice d'attivazione per utilizzi futuri. Potrebbe servire ancora per installare Warband su un altro computer.
+ui_activation_denied|Attivazione negata!
+ui_notification_serial_already_used|Il codice d'attivazione è già in uso su un altro computer. Devi aspettare qualche settimana per riattivare il gioco su questo computer.
+ui_notification_unable_to_connect_to_activation_server|Impossibile connettersi al server d'attivazione! 
+ui_notification_unable_to_connect_to_activation_server2|Assicurati che la tua connessione sia attiva e funzionante quindi riprova. Se usi un firewall, devi impostarlo in modo da permettere al gioco di accedere a internet. Se i passaggi precedenti non funzionano dovrai attivare il gioco manualmente.
+ui_incorrect_serial_number|Codice non valido!
+ui_incorrect_hardware_hash|Errore Hardware!
+ui_incorrect_activation_code|Codice non valido!
+ui_cant_write_to_registry|Impossibile scrivere nel Registro!
+ui_video|Video
+ui_audio|Audio
+ui_game|Gioco
+ui_advanced|Avanzate
+ui_mount_and_blade_is_ready|Warband è pronto.
+ui_notification_trial_mode|Mount&&Blade è al momento in modalità demo. In questo modo puoi giocare liberamente fino a quando il tuo personaggio raggiunge il livello 7. Per continuare a giocare ti preghiamo di acquistare una licenza da TaleWorlds.com. Occorre poco tempo per acquistare una licenza online e sbloccare la modalità completa.
+ui_there_are_no_modules_installed|Non ci sono Mod installati!
+ui_notification_new_version|È stata trovata una nuova versione di Warband - Versione corrente installata %d.%d%d%d. L'ultima versione di Warband è la %d.%d%d%d. Puoi scaricare la nuova versione da www.taleworlds.com.
+ui_new_version_found|Aggiornamento disponibile!
+ui_notification_unable_to_retreive_new_version|Impossibile trovare informazioni sulla nuova versione. Prova in un altro momento.
+ui_new_version|Nuova Versione:
+ui_notification_latest_version|La versione installata di Warband è la più aggiornata.
+ui_mount_and_blade_is_up_to_date|Warband in aggiornamento!
+ui_off|Spento
+ui_continue_playing_the_trial_mode|Continua a giocare in modalità demo
+ui_faq_caption|FAQ
+ui_faq_text|"D: Cos'è l'attivazione?\r\nR: Il sistema d'attivazione è un semplice metodo di protezione delle copie basato sulla distribuzione di un unico codice per ogni copia. È necessario attivare il gioco con il proprio codice su ogni computer sul quale si voglia giocare. Dopo l'attivazione, non dovrai far altro che inserire il disco nel lettore e giocare. Finchè sarai in possesso del tuo codice d'attivazione, sarai in grado di attivare il gioco e giocare facilmente, anche dopo molti anni.\r\n\r\nD: Dove posso trovare un codice d'attivazione?\r\nR: Ogni copia contiene un proprio codice d'attivazione. Venditori diversi possono distribuire i codici in differenti modi, ma normalmente si trova  sulla copertina del tuo manuale cartaceo.\r\n\r\nD: Come funziona il processo d'attivazione?\r\nR: Il gioco crea un codice hash dalle specifiche del tuo computer e le invia a un server d'attivazione su internet assieme al tuo codice d'attivazione. Il servizio d'attivazione registra il tuo codice e invia un numero d'attivazione che sblocca la versione completa del gioco.\r\n\r\nD: Posso attivare il gioco su più computer?\r\nR: Si. Ma ricorda che la licenza del gioco è per uso personale. Il servizio d'attivazione rifiuta un codice se usato su computers diversi a breve distanza di tempo. \r\n\r\nD: Il programma si blocca se clicco sul pulsante d'attivazione.\r\nR: Qualche volta l'attivazione può richiedere svariati secondi. Attendi, il gioco eventualmente ti restituirà un messaggio.\r\n\r\nD: Il mio computer non ha accesso a Internet. Come posso attivare il gioco?\r\nR: In questo caso devi effettuare la registrazione manuale. Semplicemente cliccando su""Inserisci il tuo codice"", quindi sul pulsante""Attivazione Manuale"". Dovrai aprire la pagina Web d'attivazione da un altro computer collegato a Internet.\r\n"
+ui_auto_adjust|Autoconfig.
+ui_screen_size|Risoluzione schermo:
+ui_antialiasing|Antialiasing:
+ui_use_desktop_resolution|Usa la risoluzione del desktop
+ui_play|Gioca a Mount&&Blade Warband
+ui_check_for_new_version|Ricerca una nuova versione
+ui_configure|Configura
+ui_configure_caption|Configura
+ui_mountandblade_website|Sito web Warband Warband
+ui_current_setting|           Mod attuale:
+ui_manual_activation_text1|1) Sul tuo browser, apri il seguente indirizzo:
+ui_manual_activation_text2|2) Nella pagina che si apre inserisci il tuo codice...
+ui_manual_activation_text3|3) ...e il codice hash di questa macchina:
+ui_manual_activation_text4|4) La pagina fornirà il tuo codice d'attivazione. Inseriscilo o copialo e incollalo, quindi premi OK.
+ui_activation_code|Codice di Attivazione:
+ui_force_vsync|Forza Vertical Sync.
+ui_module_newer_than_application|Il modulo che hai selezionato non funziona con la versione corrente del gioco. Ti consigliamo di non eseguire questo modulo. Per rimediare a questo, puoi provare a cercare nuovi aggiornamenti per il gioco.
+ui_module_older_than_application|Il modulo che hai selezionato è stato creato per una versione precedente del gioco e non funziona con la versione corrente. Puoi continuare, ma c'è una forte probabilità che si incontrino degli errori. Per evitare inconvenienti, puoi cercare versioni aggiornate del modulo.
+ui_m_low|Basso
+ui_m_high|Alto
+ui_m_ultra_high|Molto alto
+ui_force_single_threading|Forza Single Threading
+ui_not_enough_memory|Sembra che tu abbia attualmente disponibile %d MB di memoria fisica e virtuale totale. Warband richiede almeno 700 MB di memoria disponibile per funzionare senza problemi. Se Warband si blocca continuamente durante le sessioni di gioco, chiudi qualche applicazione prima di avviare Warband o aumenta la memoria virtuale da Pannello di controllo -> Sistema.
+ui_install|Installa Warband
+DirectXText|"Warband richiede una versione DirectX 9.0c o superiore per funzionare. Questo computer non raggiunge i requisiti richiesti. Per risolvere il problema devi scaricare e installare l'ultima versione di DirectX dal sito Microsoft. Vuoi visitare la pagina di download della DirectX di TaleWorlds?"
+NoMountAndBladeText|"Warband non è installato su questo computer. Scarica l'installazione completa da www.taleworlds.com."
+ui_SavegamesText|"Vuoi mantenere i tuoi salvataggi?"
+ui_trialmode_online|Warband è in esecuzione in modalità demo. In questa modalità puoi giocare liberamente finché il tuo personaggio non raggiunge il livello 7. Per continuare a giocare ti preghiamo di acquistare una licenza da TaleWorlds.com. Occorre poco tempo per acquistare una licenza online e sbloccare la modalità completa!
+ui_launch_activate|Inserire il codice
+ui_trialmode2_online|Dopo aver acquistato una licenza, potrai ottenere il tuo codice. Per sbloccare il gioco completo devi solo...
+ui_trialmode3_online|Oppure, se non desideri acquistare il gioco per ora, puoi anche...
+ui_trialmode4_online|Il nostro sistema di vendita online è completamente sicuro! Rispettiamo il diritto dei nostri clienti alla sicurezza, alla privacy, di tenere copie di backup dei loro giochi e aggiornare i loro computers/hardware. Se vuoi sapere altro sulla nostra politica di vendita, dai un'occhiata a:
+ui_ondemand_textures|Caricamento textures a richiesta
+ui_language|Lingua:
+ui_steam_not_running|Steam potrebbe non essere inizializzato correttamente. Steam deve essere in funzione per giocare a questo gioco.
+ui_switch_to_turkish_explanation|Oyunun dilini TurkcÈye cevirmek ister misiniz?
+ui_switch_to_turkish_yes|Evet
+ui_switch_to_turkish_no|Hayir
+ui_new_version_message|È disponibile una nuova versione del gioco. Vuoi visitare la pagina del download adesso?
+ui_enable_version_check|Controllo versione attiva
+ui_disable|Disabilita
+ui_yes2|Sì
+ui_no2|No
+ui_new_version_message2|Una nuova versione del gioco è disponibile. Si prega di visitare il portale online dove è stato acquistato il gioco per scaricare la nuova versione.
