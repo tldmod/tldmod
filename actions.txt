@@ -326,7 +326,7 @@
  ready_thrust_twohanded 1677791232  1
   0.35 anim_human 26000 26010 7 0 0 0 0 0.0 
  release_thrust_twohanded 1677791232  1
-  0.61 anim_human 26010 26040 6 0 0 0 0 0.0 
+  0.46 anim_human 26010 26040 6 0 0 0 0 0.0 
  parry_thrust_twohanded 0  1
   0.45 anim_human 26015 26016 6 0 0 0 0 0.0 
  ready_overswing_twohanded 524288  1
@@ -338,13 +338,13 @@
  ready_thrust_onehanded 1677799936  1
   0.35 anim_human 28500 28510 7 0 0 0 0 0.0 
  release_thrust_onehanded 1677799936  1
-  0.61 anim_human 28510 28540 6 0 0 0 0 0.0 
+  0.46 anim_human 28510 28540 6 0 0 0 0 0.0 
  parry_thrust_onehanded 8704  1
   0.45 anim_human 28515 28513 6 0 0 0 0 0.0 
  ready_thrust_onehanded_lance 1677799936  1
   0.35 anim_human 29500 29510 7 0 0 0 0 0.0 
  release_thrust_onehanded_lance 1677799936  1
-  0.61 anim_human 29510 29540 6 0 0 0 0 0.0 
+  0.46 anim_human 29510 29540 6 0 0 0 0 0.0 
  parry_thrust_onehanded_lance 8704  1
   0.45 anim_human 29515 29513 6 0 0 0 0 0.0 
  ready_slashright_onehanded 1677856768  1
@@ -386,7 +386,7 @@
  ready_thrust_staff 1677791232  1
   0.35 anim_human 27300 27310 7 0 0 0 0 0.0 
  release_thrust_staff 1677791232  1
-  0.6 anim_human 27310 27340 3 0 0 0 0 0.0 
+  0.45 anim_human 27310 27340 3 0 0 0 0 0.0 
  parry_thrust_staff 1677725696  1
   0.45 anim_human 27316 27313 3 0 0 0 0 0.0 
  ready_slashleft_staff 1677725696  1

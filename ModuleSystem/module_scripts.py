@@ -1817,7 +1817,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 850), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize

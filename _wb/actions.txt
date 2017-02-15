@@ -467,7 +467,7 @@
  ready_thrust_twohanded 1678835712 1679818762  1
   0.35 anim_human 26000 26010 7 0 0 0 0 0.0 
  release_thrust_twohanded 1678835712 2183135242  1
-  0.61 anim_human 26010 26031 6 0 0 0 0 0.0 
+  0.46 anim_human 26010 26031 6 0 0 0 0 0.0 
  release_thrust_twohanded_continue 0 572522497  1
   0.1 anim_human 26031 26040 2 0 0 0 0 0.0 
  blocked_thrust_twohanded 0 35651599  1
@@ -487,7 +487,7 @@
  ready_thrust_onehanded 1679884800 1679843338  1
   0.35 attacks_thrust_onehanded 5 13 7 0 0 0 0 0.0 
  release_thrust_onehanded 1679884800 2183159818  1
-  0.62 attacks_thrust_onehanded 12 32 6 0 0 0 0 0.0 
+  0.47 attacks_thrust_onehanded 12 32 6 0 0 0 0 0.0 
  release_thrust_onehanded_continue 0 572547073  1
   0.3 attacks_thrust_onehanded 32 54 2 0 0 0 0 0.0 
  blocked_thrust_onehanded 512 35676175  1
@@ -497,7 +497,7 @@
  ready_thrust_onehanded_horseback 1679884800 1679843338  1
   0.35 attacks_thrust_onehanded 5 13 7 0 0 0 0 0.0 
  release_thrust_onehanded_horseback 1679884800 2183159818  1
-  0.62 attacks_thrust_onehanded 12 32 6 0 0 0 0 0.0 
+  0.47 attacks_thrust_onehanded 12 32 6 0 0 0 0 0.0 
  release_thrust_onehanded_horseback_continue 0 572547073  1
   0.3 attacks_thrust_onehanded 32 54 2 0 0 0 0 0.0 
  blocked_thrust_onehanded_horseback 512 35676175  1
@@ -507,7 +507,7 @@
  ready_thrust_onehanded_lance 1679884800 1679843338  1
   0.35 thrust_onehanded_lance_hb 5 8 7 0 0 0 0 0.0 
  release_thrust_onehanded_lance 1679884800 2183159818  1
-  0.62 thrust_onehanded_lance_hb 8 33 6 0 0 0 0 0.0 
+  0.47 thrust_onehanded_lance_hb 8 33 6 0 0 0 0 0.0 
  release_thrust_onehanded_lance_continue 0 572547073  1
   0.1 thrust_onehanded_lance_hb 33 45 2 0 0 0 0 0.0 
  blocked_thrust_onehanded_lance 512 35676175  1
@@ -597,7 +597,7 @@
  ready_thrust_staff 1678835712 1679818762  1
   0.35 attacks_staff_thrust 14 21 7 0 0 0 0 0.0 
  release_thrust_staff 1678835712 35651594  1
-  0.6 attacks_staff_thrust 21 40 6 0 0 0 0 0.0 
+  0.45 attacks_staff_thrust 21 40 6 0 0 0 0 0.0 
  release_thrust_staff_continue 1678835712 572522506  1
   0.6 attacks_staff_thrust 40 58 6 0 0 0 0 0.0 
  blocked_thrust_staff 1678770176 35651599  1
