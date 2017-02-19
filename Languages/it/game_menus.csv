@@ -20,7 +20,7 @@ mno_build_your_own_scene|** Costruisci il tuo personale scenario per TLD **
 menu_tutorial|^^TLD ha molte features sconosciute al M&B nativo. Queste sono descritte in alcuni dettagli nel file PDF incluso nel file scaricato. Per il tutorial sulle meccaniche base di gioco, fare riferimento al native.
 mno_go_back_dot|Torna Indietro
 mno_action_view_troop_trees|Visualizza alberi truppe.
-mno_view_upkeep_costs|Guarda costi di mantenimento
+mno_view_upkeep_costs|Controlla i costi di mantenimento
 mno_view_character_report|Consulta il rapporto sul personaggio
 mno_view_party_size_report|Consulta il rapporto sulle dimensioni della compagnia
 mno_view_morale_report|Consulta il rapporto sul morale della compagnia
@@ -97,7 +97,7 @@ mno_start_bl|La Valle della Radice Nera, il feudo degli Arcieri
 menu_start_eye_man|^^^^^^^^^^Seleziona la tua gente:
 mno_start_hr|Haradrim, il popolo del deserto del Sud
 mno_start_bn|Númenóreani Neri, i rinnegati dell'Ovest
-mno_start_um|Umbar, i pirati dei Mari del Sud
+mno_start_um|Umbar, i Corsari dei Mari del Sud
 mno_start_rh|Rhûn, i barbari dell'Est
 mno_start_kh|Khand, i selvaggi popoli del Sud-Est
 menu_start_eye_orc|^^^^^^^^^^Dove ti nascondi ?
@@ -204,7 +204,7 @@ mno_order_retreat|Fai ritirare i tuoi soldati.
 menu_kingdom_army_quest_report_to_army|{s8} manda a dire che vuole che tu ti unisca alla sua nuova campagna militare. È necessario portare almeno {reg13} truppe per l'esercito, e sei incaricato di arruolare più guerrieri con la dovuta rapidità se non ne hai abbastanza.
 mno_reject|Invia un messaggio in cui dichiari di essere troppo impegnato.
 mno_send_word|Fagli sapere che presto ti unirai a lui.
-menu_kingdom_army_quest_messenger|{s8} manda a dire che vuole parlare con voi di un compito che ha bisogno di eseguire. Egli chiede di andare a consultarlo al più presto possibile..
+menu_kingdom_army_quest_messenger|{s8} manda a dire che vuole parlare con te di un compito che ha bisogno di eseguire. Egli chiede di andare a consultarlo al più presto possibile..
 menu_kingdom_army_quest_join_siege_order|{s8}  manda a dire che si sta per unire l'assedio di {s9} in preparazione di un assalto. Le tue truppe devono prendere {s9} a tutti i costi.
 menu_kingdom_army_follow_failed|Hai disobbedito agli ordini e non sei riuscito a seguire {s8}.  Manda un messaggio che presuppone che tu hai questioni più urgenti, ma mettiti in guardia la sua pazienza non è illimitata.
 menu_battle_debrief|{s11}^Le tue perdite:{s8}{s10}^^Perdite nemiche:{s9}
@@ -372,7 +372,7 @@ menu_death|Sei stato ucciso. Anche se la guerra continua ad infuriare, tu non po
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 menu_animal_ambush_success|I {s2} {reg0?fall:falls} cadono davanti a te come spighe di grano davanti alla falce ! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}
 menu_animal_ambush_fail|Gli animali mordono e feriscono te {reg0?,: and your companion{reg2?s,:,}} ma fortunatamente riuscite a respingerli. Forse non vi attaccheranno ancora.
-menu_build_your_scene|Qui puoi costruire la tua propria scena da battaglia, usando una delle slot qua sotto e l'Editor del gioco (Devi prima scrocettare il quadratino "Edit Mode" nelle opzioni del launcher di M&B).^Poi, puoi verificare le tue scene che hai costruito (nominate file sco dalla cartella TLD/SceneObj) al team di sviluppo di TLD, e, se la tua scena è buona abbastanza, potrà apparire nelle prossime versioni della mod come un luogo da battaglia a caso !^^ Prova anche in specificare quale regione della mappa vuoi che la tua scena appaia.^ Un paio di suggerimenti: prova ad evitare acqua profonda, montagne troppo grandi o appuntite e altri sentieri in cui non si può passare, eccetto se sei uno sceneggiatore con molta esperienza e sai come cambiare l'AI delle truppe per non andare in un posto dove non vuoi ch vadano, e quindi mettere l'AI a vagare in altri posti.^ (Gruppi #0-1 sono per gli attaccanti, #4 per i difensori, non toccare #5-8
+menu_build_your_scene|Qui puoi costruire il tuo scenario di battaglia personalizzato, usando una delle slot qua sotto e l'Editor del gioco (Devi prima togliere il flag dal quadratino "Edit Mode" nelle opzioni del launcher di M&B).^Poi, puoi verificare gli scenari che hai costruito (con estensione .sco dalla cartella TLD/SceneObj) e inviarli al team di sviluppo di TLD e, se la tua scena risultasse valida, potrà essere inclusa nelle prossime versioni della mod come contesto di una battaglia !^^ Prova anche a specificare in quale regione della mappa vuoi che la tua scena appaia.^ Un paio di suggerimenti: Cerca di evitare di inserire acque troppo profonde, montagne troppo grandi o appuntite e altri sentieri in cui non si può passare, eccetto se sei uno sceneggiatore con molta esperienza e sai come cambiare l'AI delle truppe per non andare in un posto dove non vuoi che vadano, e quindi imporre alla IA di prendere altre direzioni.^ (Gruppi #0-1 sono per gli attaccanti, #4 per i difensori, non toccare #5-8).
 mno_scene1|Campo di battaglia 5 (scn_battlefield5.sco)
 mno_scene2|Campo di battaglia 6 (scn_battlefield6.sco)
 mno_scene3|Campo di battaglia 7 (scn_battlefield7.sco)

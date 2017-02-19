@@ -104,7 +104,7 @@ qstr_Useful_Tool_of_{s5}|Utile Strumento di {s5}
 qstr_Servant_of_{s5}|Servo di {s5}
 qstr_Unknown_to_{s5}|Sconosciuto a {s5}
 qstr_You_have_been_{reg1?|Sei stato {reg1?promosso:declassato} a {s24} ({reg0}) !
-qstr_You_{reg1?earned:los|Hai {reg1?guadagnato:perso} {reg11} punti di rango {reg12?e {reg12} di influenza :}con {s11}.
+qstr_You_{reg1?earned:los|Hai {reg1?guadagnato:perso} {reg11} Punti Rango {reg12?e {reg12} Punti Influenza :}di {s11}.
 qstr_You_spent_{reg10}_of|Hai speso {reg10} della tua influenza {s1}, con {reg11} rimanenti.
 qstr_Troop_upkeep:|Gestione truppe:
 qstr_{s11}_and_{s10}|{s11} e {s10}
@@ -210,7 +210,7 @@ qstr_riding|cavalcando
 qstr_marching|marciando
 qstr_charging|caricando
 qstr_We_know_this_is_your|Sappiamo che queste sono le tue terre, {playername}.^Fidati di noi, siamo qui per combattere il nostro nemico comune.
-qstr_I_trust_you._{s20}_a|Mi fido di voi. {s20} e {s21} dovrebbero essere amici e fidarsi l'uno dell'altro.
+qstr_I_trust_you._{s20}_a|Mi fido di te. {s20} e {s21} dovrebbero essere amici e fidarsi l'uno dell'altro.
 qstr_There_is_wisdom_in_y|C'è della saggezza nelle tue parole, {playername}.
 qstr_Why_should_I?_Better|Perché dovrei ? E' meglio che lasciate le terre di {s20}.
 qstr_We_will_go_in_peace_|Andremo in pace, non appena avremo completato la nostra missione, della quale temo, non possiamo parlarti.
@@ -220,7 +220,7 @@ qstr_Of_course.|Naturalmente.
 qstr_I_don_t_like_this._W|Tutto questo non mi piace. Cosa porta il tuo gruppo qui, fino a {s21} ?
 qstr_Do_you_fear_us_{play|Hai paura di noi, {playername} da {s20}? Mmm, cosa nascondi a {s22}?^^Lasciaci in pace e nessuno si farà male.
 qstr_It_s_a_servant_of_{s|E' un servo di {s22}. Temi {s23}, {playername} !
-qstr_Our_allies_are_you?_|Nostri alleati, siete voi ? Potete passare allora.
+qstr_Our_allies_are_you?_|Siete quindi nostri alleati ? Allora potete passare.
 qstr_And_we_shall_not_kil|E potremmo non ucciderti, per adesso.
 qstr_This_land_belongs_to|Queste terre appartengono a {s20}... {s23} non ha faccende qui.
 qstr_We_will_stay_as_long|Noi resteremo come il nostro capo ci ha comandato ! Ringrazia il fato che non siamo venuti per te.
@@ -238,7 +238,7 @@ qstr_What_are_you_doing_s|Che ci fai così lontano da casa, schiavo di {s22} ? D
 qstr_Quiet!_I_didn_t_came|Calmati ! Non sono venuto per te, questa volta.
 qstr_And_I_ve_orders_to_l|Ho ordine di farti passare, questa volta.
 qstr_None_of_your_business|Niente che ti riguardi.
-qstr_You_slaves_of_{s22}_|Voi, schiavi di {s22} siete dei deboli ! Siete solo fortunati che vi consideriamo alleati...
+qstr_You_slaves_of_{s22}_|Voi, schiavi di {s22} siete dei deboli ! Per vostra fortuna vi consideriamo alleati...
 qstr_Look_whom_we_meet_so|Guarda guarda chi troviamo tanto lontani da casa: soldati di {s20} ! Si tratta di buone o di cattive notizie ?
 qstr_{s20}_and_{s21}_figh|{s20} e {s21} combattono per una causa comune. Dovremmo cooperare in queste terre ostili.
 qstr_In_these_dark_times_|In questi tempi oscuri, ognuno bada a se stesso, {playername}.^Ma voglio augurarvi un viaggio sicuro verso casa.
@@ -293,7 +293,7 @@ qstr_Orcs_of_{s16}_get_re|Orchi di {s16}, state pronti ! Ci sono gole da tagliar
 qstr_These_friend_of_elve|Questi amici degli Elfi cadranno sotto le nostre lame !
 qstr_These_Elves_will_fal|Questi Elfi cadranno sotto le nostre lame !
 qstr_Raahh!_Draw_your_wea|Raaah ! Sguainate le armi, feccia di {s16} ! Stanotte festeggeremo con le interiora di {s15} !
-qstr_Rha!_{s14}More_{s15}|Rha ! {s14}Ancora {s15} corpi da sfigurare con le nostre terribili armi !
+qstr_Rha!_{s14}More_{s15}|Rha ! {s14}Ancora corpi  di {s15} da sfigurare con le nostre terribili armi !
 qstr_Slaughter_these_puny|Massacrate questi penosi ladri di {s18} adesso ! Poi metteremo a fuoco le loro case e uccidemo le lore famiglie. 
 qstr_Death_to_the_trespas|Morte ai trangressori sulle terre di {s16} !
 qstr_CHARGE!_Let_s_clear_|CARICA ! Ripuliamo {s17} dalla feccia {s18} {s19} !
@@ -722,7 +722,7 @@ qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentr
 qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
 qstr_the_place|il posto
 qstr_the_castle|il castello
-qstr_Stay_indoors_for_som|Attendi un po' di tempo ({reg1} punti risorsa per notte)
+qstr_Stay_indoors_for_som|Attendi un po' di tempo ({reg1} Punti Risorsa per notte)
 qstr_Camp_outside_for_som|Ti sei accampato all'aperto per un po' di tempo (nessun costo)
 qstr_{s1}_s_Ship|Nave di {s1}
 qstr_Time_passes...|Il tempo scorre...
@@ -769,7 +769,7 @@ qstr_The_troll_outside_{s|Il troll al di fuori {s2} è stato ucciso. La missione
 qstr_{s1}_was_killed_on_t|{s1} è stato ucciso sul campo di battaglia. La missione è cancellata.
 qstr_{s1}_has_been_defeat|{s1} è stato sconfitto. La missione è cancellata.
 qstr_You_must_follow_{s1}|Devi seguire {s1} !
-qstr_You_must_follow_{s1}!|Devi seguire {s1} ! Questo è il tuo ultimo avviso !
+qstr_You_must_follow_{s1}!|Devi seguire {s1} ! Questo è l'ultimo avvertimento !
 qstr_Parties_defeated:_{r|Compagnie sconfitte: {reg1}
 qstr_{s1}_is_scouted.|{s1} è stato esplorato.
 qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l'unico sovrano della Terra di Mezzo !
@@ -783,7 +783,7 @@ qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}
 qstr_Scouts_report_that_{|Gli esploratori riportano che {s6} si è riunito in una grande armata in prossimità di {s7}, in ultimo disperato tentativo di difendere la capitale.
 qstr_The_forces_of_{s2}_e|L'armata di {s2} ha costruito un campo avanzato in {s15} !
 qstr_{s1}_from_{s2}|{s1} da {s2}
-qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ricorda che non ti conoscono e non ti riconoscono necessariamente i meriti guadagnati in {s10}. ^^(I punti risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati in {s10}, ma solo quelli guadagnati in {s11})
+qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ricorda che non ti conoscono e non ti riconoscono necessariamente i meriti guadagnati in {s10}. ^^(I Punti Risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati in {s10}, ma solo quelli guadagnati in {s11})
 qstr_Info|Informazioni
 qstr_You_came_into_a_poss|Sei entrato in possesso di una strana, grande ciotola d'acqua fresca dove ci si specchia. C'è un piccolo odore di muschio.
 qstr_Obtained:_Ent_water.|Ottenuto: Acqua degli Ent.
@@ -885,9 +885,9 @@ qstr_Strenghten_defences_i|Rafforzare le difese a {s21} ? Beh, finchè non sono 
 qstr_Please_return_them_i|Per favore falli tornare tutti di interi. Conosco personalmente il valore di ognuno di loro. E qui abbiamo bisogno di ogni singola anima.
 qstr_Don_t_let_them_all_d|Non farli morire tutti in una volta sola. Eccetto i codardi. Quelli mettili nelle tue prime file, conosci l'addestramento ormai.
 qstr_Thank_you_commander.|Grazie, comandante.^
-qstr_^{s22}_is_grateful_t|^{s22} vi è grato, {s23}, {s29}^
-qstr_{s31}{reg28?Those:Th|{s31}{reg28?Questi:Questo} coraggios{reg28?i soldati:o soldato} ci aiuteranno sicuramente a difendere {s21}.{s32}^^[guadagnato {reg14} punti risorsa di {s14}]
-qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuterà a resistere {s21}.{s32}^^[guadagnato {reg14} punti risorsa di {s14}]
+qstr_^{s22}_is_grateful_t|^{s22} ti è grato, {s23}, {s29}^
+qstr_{s31}{reg28?Those:Th|{s31}{reg28?Questi:Questo} coraggios{reg28?i soldati:o soldato} ci aiuteranno sicuramente a difendere {s21}.{s32}^^[Hai guadagnato: {reg14} Punti Risorsa di {s14}]
+qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuterà a resistere {s21}.{s32}^^[Hai guadagnato {reg14} Punti Risorsa di {s14}]
 qstr_{s4}_^Oh_and_take_ba|{s4} ^Oh, e riprenditi quei tuoi soldati, che non sono della nostra gente.
 qstr_I_don_t_need_them_an|Non ho bisogno di loro comunque, quindi tienili con te.
 qstr_It_is_my_duty_to_pro|E' mio dovere proteggere la nostra gente.
@@ -924,8 +924,8 @@ qstr_You_must_return_and_r|Devi tornare e fare rapporto sul fatto che hai sconfi
 qstr_Do_you_need_reinforc|Hai bisogno di rinforzi?
 qstr_You_don_t_look_too_s|Non sembri troppo forte, hai bisogno di truppe?
 qstr_^{s14}_is_grateful_t|^{s14} ti è grato, {playername}, {s29}^
-qstr_{s31}{reg28?Those:That|{s31}{reg28?Quelli:Quel} coraggio{reg28?si soldati:so soldato} ci aiuterà sicuramente a difendere le nostre terre. {s32}^^[guadagnati {reg14} Punti Risorsa {s14}]
-qstr_{s31}{reg28?Those:That}|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuteranno a devastare.{s32}^^[guadagnato {reg14} punti risorsa di {s14}]
+qstr_{s31}{reg28?Those:That|{s31}{reg28?Quelli:Quel} coraggio{reg28?si soldati:so soldato} ci aiuterà sicuramente a difendere le nostre terre. {s32}^^[Guadagnati {reg14} Punti Risorsa di {s14}]
+qstr_{s31}{reg28?Those:That}|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuteranno a devastare.{s32}^^[Hai guadagnato {reg14} Punti Risorsa di {s14}]
 qstr_{s4}_^Oh_and_take_bac|{s4} ^Oh, e riprenditi quei soldati che non sono della nostra gente, non so cosa farmene di loro.
 qstr_It_is_my_duty_to_hel|È il mio dovere aiutare la nostra gente.
 qstr_It_is_my_duty_to_help|È il mio dovere aiutare i nostri alleati.
@@ -961,7 +961,7 @@ qstr_{s9}_asked_you_to_tak|{s9} ti ha chiesto di consegnare un messaggio a {s13}
 qstr_{s11}_asked_you_to_e|{s11} ti ha chiesto di scortare il suo messaggiero fino a {s14}
 qstr_Lend_your_experience|Presta il tuo chirurgo esperto {s3} a {s1}.
 qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername} , ma stavo ispezionando i miei soldati l'altro giorno e ci sono alcuni di loro che non sanno da quale lato impugnare una spada. Hanno bisogno di qualcuno che gli mostri il vero significato del valore. Sei un guerriero stimato,  {playername} . Addestrerai alcune truppe per me? Te ne sarei molto grato.
-qstr_No_commander_should_h|Nessun comandante dovrebbe mai ammetterlo, {playername}, però stavo ispezionando i miei soldati l'altro giorno e ne ho giustiziati alcuni per incompetenza. Hanno bisogno di qualcuno con una schiena di ferro per frustargli del coraggio dentro di loro, o ucciderli provandoci. Tu sei un guerriero di fama, {playername}. Addestreresti alcuni soldati per me? Posso renderlo utile per voi.
+qstr_No_commander_should_h|Nessun comandante dovrebbe mai ammetterlo, {playername}, però stavo ispezionando i miei soldati l'altro giorno e ne ho giustiziati alcuni per incompetenza. Hanno bisogno di qualcuno con una schiena di ferro per frustargli del coraggio dentro di loro, o ucciderli provandoci. Tu sei un guerriero di fama, {playername}. Addestreresti alcuni soldati per me? Posso ricompensarti.
 qstr_{s9}_asked_you_to_rai|{s9} ti ha chiesto di addestrare {reg1} {s14} e portarli da lui.
 qstr_{s9}_asked_you_to_hu|{s9} ti ha chiesto di cacciare un fuggitivo {s4}. Al momento si pensa possa essere a {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} ti ha chiesto di catturare i tre gruppi di schiavi fuggiaschi e di riportarli indietro a {s4}, vivi e vegeti. Ha detto che tutti i tre gruppi si stanno dirigendo verso {s3}.
@@ -972,7 +972,7 @@ qstr_{s9}_has_requested_y|{s9} ti ha chiesto di portargli dei {reg1} prigionieri
 qstr_We_have_reports_that|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni uomini potrebbero essere ancora vivi, catturati dal nemico. Il morale delle mie truppe ne risente perchè i prigionieri saranno probabilmente uccisi, imprigionati o peggio. Voglio che tu salvi {reg1} prigionieri e migliori così il morale delle nostre truppe.
 qstr_We_have_reports_that_|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni di vigliacchi potrebbero essere ancora vivi, catturati dal nemico. Per quanto siano sacrificabili, sarebbe uno spreco lasciarli morire in qualche gatta buia. Voglio che tu soccorra {reg1} prigionieri e che tu li rifaccia combattere per noi.
 qstr_{s9}_has_asked_you_to|{s9} Ti ha chiesto di salvare {reg1} prigionieri.
-qstr_We_have_reports_that_a|Abbiamo rapporti di gruppi di nemici in probabile adunata in {s13}. Ovviamente è un grave problema per me perché non so né quanti uomini abbia il nemico e né se i miei uomini saranno pronti per scontrarsi con loro sul campo di battaglia. Voglio che ti avvicini a {s13}, e che scopri più che puoi.
+qstr_We_have_reports_that_a|Abbiamo rapporti di gruppi di nemici in probabile adunata a {s13}. Ovviamente è un grave problema per me perché non so né quanti uomini abbia il nemico e né se i miei uomini saranno pronti per scontrarsi con loro sul campo di battaglia. Voglio che ti avvicini a {s13}, e che scopri più che puoi.
 qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di guerrieri raggruppati in{s13}. Non dovrebbero essere un problema per noi e i nostri servi, ma non farebbe male sapere quanti sono. Voglio che ti avvicini abbastanza a {s13}, e scopri quanto più riesci. 
 qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
 qstr_We_have_reports_of_s|Abbiamo notizie di attività nemica vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficenza al nemico per vederne i movimenti. Voglio che tu assembli una squadra di esploratori, ti avvicinati abbastanza a {s13}, e mandi in azione gli scout.
@@ -990,19 +990,19 @@ qstr_It_sure_look_like_yo|Sembra proprio come hai detto, feccia di Mordor.. ^^Ho
 qstr_It_sure_look_like_you|Sembra proprio come hai detto. ^^L'Oscuro Signore ha chiamato, e io sono qui per rispondere e distruggere il regno degli uomini
 qstr_*Snort*_There_is_onl|*Snort* C'è UN SOLO Signore, ed è L'Oscuro Signore. Tu non hai niente a che fare con questa guerra, mingherlino. Lasciami alla mia missione
 qstr_*Snort*_Another_weak|*Snort* Un altro debole per rinforzare il nostro scudo di carne. Lasciami alla mia missione.
-qstr_It_s_their_local_mon|E' la loro moneta locale.. non vale niente a Mordor. Prendetene ! Potrete usarli per fare in modo che alcuni Orchi di Moria vi seguano.. e forse poi per sbarazzarvi di loro ! haha ! Stupidi Orchi di Moria..
-qstr_It_s_their_local_mone|E' la loro moneta locale.. non vale niente a Mordor. Prendetene ! Potrete usarli per equipaggiarvi con le armi di Isengard.. Fanno strane cose da quelle parti, vicino alla torre. Il fumo non smette mai di salire ! Ma loro non reggono il confronto con la potenza dell'Oscuro Signore !
-qstr_It_s_their_local_money|E' la loro moneta locale.. non vale niente a Mordor. Prendetene ! Potrete usarli per comprare qualche pelliccia da Gundabad. Quegli orchi sono stupidi e orrendi, ma hanno delle buone pelli.
-qstr_Take_it!_You_can_use|Prendetelo ! Potrete usarlo per comprare armi da Mordor. Abbiamo solo il meglio !
-qstr_It_s_their_local_money.|E' la loro moneta locale.. ma non vale niente a Mordor. Prendetene ! Potrete usarla per comprare armi dal popolo dei cavalli di Rhun.. o forse per comprare un cavallo da mangiare ! Potrebbero uccidervi ! HAHAHA !
-qstr_Here_s_some_of_their|Ecco un po' della loro moneta che ho vinto.. Non vale niente a Mordor.. Prendetene ! Potrete usarla per convincere qualche Orco di Moria a seguirvi.. e forse poi potrete disfarvi di loro ! haha ! Stupidi Orchi di Moria.
-qstr_Here_s_some_of_their_|Ecco un po' della loro moneta locale che ho vinto.. però non vale niente a Mordor.. Prendetene ! Potrete usarla per comprare delle armi da Isengard.. Fanno strane cose laggiù, vicino alla torre. Il fumo non smette mai di salire ! Ma non potrebbero vincere la potenza dell'Oscuro Signore !
-qstr_Here_s_some_of_their_o|Ecco un po' della loro moneta locale.. non vale niente a Mordor.. Prendetene ! Potrete usarla per comprare delle pellicce da Gundabad. Quegli Orchi sono stupidi e fetidi, ma hanno buone pelli.
-qstr_Here_s_some_money_th|Ecco qualche soldo che ho vinto. Prendeteli ! Potrete usarli per comprare armi da Mordor. Noi abbiamo solo il meglio !
-qstr_Here_s_some_of_their_ow|Qui ci sono dei soldi della loro moneta locale che ho vinto.. ma a Mordor non valgono niente.. Prendetene ! Potrete usarli per comprare delle armi dal popolo dei cavalli di Rhun.. o magari per comprare un cavallo da mangiare ! Se lo sapessero vi potrebbero uccidere ! HAHAHA !
+qstr_It_s_their_local_mon|E' la loro moneta locale.. non vale niente a Mordor. Prendine ! Potrai usarli per fare in modo che alcuni Orchi di Moria ti seguano.. e forse poi per sbarazzarti di loro ! haha ! Stupidi Orchi di Moria..
+qstr_It_s_their_local_mone|E' la loro moneta locale.. non vale niente a Mordor. Prendila ! Potrai usarla per equipaggiarti con le armi di Isengard.. Fanno strane cose da quelle parti, vicino alla torre. Il fumo non smette mai di salire ! Ma loro non reggono il confronto con la potenza dell'Oscuro Signore !
+qstr_It_s_their_local_money|E' la loro moneta locale.. non vale niente a Mordor. Prendine ! Potrai usarla per comprare qualche pelliccia da Gundabad. Quegli orchi sono stupidi e orrendi, ma hanno delle buone pelli.
+qstr_Take_it!_You_can_use|Prendete ! Potrai usarlo per comprare armi da Mordor. Abbiamo solo il meglio !
+qstr_It_s_their_local_money.|E' la loro moneta locale.. ma non vale niente a Mordor. Prendila ! Potrai usarla per comprare armi dal popolo dei cavalli di Rhun.. o forse per comprare un cavallo da mangiare ! Potrebbero ucciderti ! HAHAHA !
+qstr_Here_s_some_of_their|Ecco un po' della loro moneta che ho vinto.. Non vale niente a Mordor.. Prendila ! Potrai usarla per convincere qualche Orco di Moria a seguirti.. e forse poi potrai disfarti di loro ! haha ! Stupidi Orchi di Moria.
+qstr_Here_s_some_of_their_|Ecco un po' della loro moneta locale che ho vinto.. però non vale niente a Mordor.. Prendila ! Potrai usarla per comprare delle armi da Isengard.. Fanno strane cose laggiù, vicino alla torre. Il fumo non smette mai di salire ! Ma non possono vincere la potenza dell'Oscuro Signore !
+qstr_Here_s_some_of_their_o|Ecco un po' della loro moneta locale.. non vale niente a Mordor.. Prendine ! Potrai usarla per comprare delle pellicce da Gundabad. Quegli Orchi sono stupidi e fetidi, ma hanno buone pelli.
+qstr_Here_s_some_money_th|Ecco qualche soldo che ho vinto. Prendili ! Potrai usarli per comprare armi da Mordor. Noi abbiamo solo il meglio !
+qstr_Here_s_some_of_their_ow|Qui ci sono dei soldi della loro moneta locale che ho vinto.. ma a Mordor non valgono niente.. Prendili ! Potrai usarli per comprare delle armi dal popolo dei cavalli di Rhun.. o magari per comprare un cavallo da mangiare ! Se lo sapessero ti potrebbero uccidere ! HAHAHA !
 qstr_That_is_not_a_smart_|Non è una cosa molto intelligente da dire di fronte ad un Guerriero di Rhun.. La prossima volta che ti vedo, ti uccido.
 qstr_They_will_all_know_m|Tutti sanno il mio nome.. Tutti sapranno temerlo
-qstr_Suilad_mellon!_It_is|Suilad, mellon ! Non capita spesso di incontrare amici della Valle Nascosta nel nostro regno. Ringraziamo le stelle che vi hanno guidato in nostro aiuto, e ringraziamo voi altrettanto - le hannon !
+qstr_Suilad_mellon!_It_is|Suilad, mellon ! Non capita spesso di incontrare amici della Valle Nascosta nel nostro regno. Ringraziamo le stelle che ti hanno guidato in nostro aiuto, e ringraziamo te altrettanto - le hannon !
 qstr_Suilad_mellon!_It_is_|Suilad, mellon ! E' raro avere uno dei nostri cugini delle woodland che giunge in nostro aiuto - le hannon !
 qstr_Suilad_mellon!_That_|Suilad, mellon ! Ti ringrazio per questo, amico !^^ Prima non ero certo se sarebbe stata la lama di un goblin o la rabbia di un orso nel nostro destino. Ahimé, le stelle sono state gentili a mandarti in nostro aiuto.
 qstr_Alas_it_is_not_a_ple|Ahimé, non è stato un viaggio di piacere o il mero vagabondaggio che ha portato me e gli altri servitori di Lord Elrond in queste lande..
@@ -1019,14 +1019,14 @@ qstr_We_walk_under_the_su|Camminiamo sotto il sole e le stelle, dimorare nelle c
 qstr_*he_sighs_and_smiles|*sospira e sorride lievemente* ^^Molto bene. Per i nostri comuni intenti siamo lieti di condividere ogni cosa, anche se le parole sono scarse nel luogo da dove vieni.
 qstr_For_some_months_we_h|Per alcuni mesi abbiamo osservato i luridi orchi che si moltiplicavano e sporcavano i nostri boschi. ^^Abbiamo informato Lady Galadriel dell'arrivo di Lord Elrond, anche se sospetto che ne fosse già a conoscenza. Parleremo anche di te, a tutto il nostro popolo. ^^Le maethor veleg a gornui ! Il tuo valore e le tue gesta devono essere conosciuti e le tue necessità soddisfatte ogni volta che visiti la nostra valle del Canto d'Oro.
 qstr_Calm_yourself_friend|Calmati, amico. Pedin i phith in aniron, a nin u-cheniathog. ^^Dobbiamo parlare di te al tutto il nostro popolo. Il tuo valore e le tue gesta devono essere conosciuti, le tue necessità devono essere soddisfatte ogni volta che ti crogiolerai alla luce della nostra Valle Dorata.
-qstr_Stars_sail_through_t|Le stelle navigano attraverso mari celesti, gli uomini percorrono la terra. In realtà.. chi può dire se le loro strade si susseguono ? Parleremo di voi al nostro popolo. Le tue gesta devono essere conosciute e le tue necessità soddisfatte, era destino che tu seguissi le stelle fino a giungere alla Valle Dorata.
+qstr_Stars_sail_through_t|Le stelle navigano attraverso mari celesti, gli uomini percorrono la terra. In realtà.. Chi può dire se le loro strade s'inseguono ? Parleremo di te al nostro popolo. Le tue gesta devono essere conosciute e le tue necessità soddisfatte, era destino che tu seguissi le stelle fino a giungere nella Valle Dorata.
 qstr__RESOURCE_POINT_TUTO|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che possono essere usati per acquistare dal popolo di Lorien non sono gli stessi che hai guadagnato relativi alla tua fazione, ma quelli che guadagnerai nel contee del Lothlorien. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
 qstr__RESOURCE_POINT_TUTOR|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per fare acquisti dal popolo di Beorn non sono gli stessi che hai guadagnato nel Lothlorien, ma sono quelli che guadagnerai a nelle contee di Beorn. ^^Controlla la sezione RAPPORTI per maggiori informazioni.
 qstr_I_have_long_wished_t|Da tempo desideravo visitare gli amici dei boschi..
 qstr_What_form_shall_the_|Quale forma deve assumere il favore di Lorien..
 qstr_Our_bees_make_honey_|Le nostre api fanno miele e cera, i nostri allevamenti ci danno latte, burro e formaggio...
 qstr_I_have_long_wished_to|Da tempo desideravo andare in visita agli amici del bosco, assaggiare il vostro Pan di Via e ascoltare le vostre canzoni ! ^^Abbiamo portato i nostri spumeggianti vini dorati, i nostri tomi polverosi e gli antichi stendardi di cui andiamo orgogliosi, che ci ricordano la nostra valle dai ruscelli che cantano, ma sono curioso di conoscere le meraviglie uniche che si trovano nel Laurelindorenan.
-qstr_What_form_shall_the_f|Quale forma deve assumere il favore di Lorien ? Gold che muta in foglie con l'arrivo del mattino ? Bevande chiare prive di sapore e polveroso pane magico per i miei uomini ? ^^Vino rosso sangue, carne di cervo appena cacciato, armerie piene di lance affilate e di frecce accuminate ! Questa è l'ospitalità che preferisco.
+qstr_What_form_shall_the_f|Quale forma deve assumere il favore di Lorien ? Oro che muta in foglie con l'arrivo del mattino ? Bevande chiare prive di sapore e polveroso pane magico per i miei uomini ? ^^Vino rosso sangue, carne di cervo appena cacciato, armerie piene di lance affilate e di frecce accuminate ! Questa è l'ospitalità che preferisco.
 qstr_Our_bees_make_honey_a|Le nostre api fanno il miele e la cera, i nostri allevamenti ci danno latte, burro e formaggio.^^ Il pane che facciamo da soli, un'ascia affilata che posso commerciare con i Nani quando passano da qui.^^ Di cos'altro posso avere bisogno, a parte un paio di mani forti ?
 qstr_If_fate_wills_it_I_s|Se il fato vorrà, tornerò nelle vostre terre ancora, e ne conoscerò tutti i segreti.
 qstr_If_I_ever_have_need_|Se mai avrò bisogno dell'aiuto che Lorien può offrire, verrò. Di qualsiasi utilità potrà essere.
@@ -1039,8 +1039,8 @@ qstr_That_may_be_so_some_|Così può essere, alcune strade del mondo sono contor
 qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Allontaniamoci da qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
 qstr_You_chose_well_{sir/|Ha scelto bene, {signore/signora}. I miei ragazzi sanno mantenere la parola e guadagnarsi la paga.
 qstr_Well_done_{sir/madam|Ben Fatto, {sire/signora}. Continua a mandarci soldi e vino, e non dovrai aver paura di nessun tuo nemico.
-qstr_We_are_at_your_servi|Siamo al vostro servizio, {signore/signora}. Ci mandi verso nella direzione di coloro che devono essere uccisi, noi faremo il resto.
-qstr_You_will_not_be_diss|Non vi deluderemo {signore/signora}. Non troverete guerrieri migliori in tutta Calradia.
+qstr_We_are_at_your_servi|Siamo al tuo servizio, {signore/signora}. Mandaci nella direzione di coloro che devono essere uccisi, noi faremo il resto.
+qstr_You_will_not_be_diss|Non ti deluderemo {signore/signora}. Non troverai guerrieri migliori in tutta Calradia.
 qstr_What_an_amazing_feat|Che enorme quantità di armi !
 qstr_Well_done!|Ben fatto !
 qstr_Nice_legwork.|Bel lavoro di gambe.
@@ -1048,7 +1048,7 @@ qstr_Heh.|Eh,
 qstr_Good_moves_but_you_m|Belle mosse, ma hai ancora del lavoro da fare.
 qstr_More_than_half_of_th|Più della metà degli avversari, non male.
 qstr_You_ll_need_to_try_h|Devi impegnarti di più di così.
-qstr_Well..._better_here_|Bene... meglio qui che in battaglia, è?
+qstr_Well..._better_here_|Bene... Meglio qui che in battaglia, Eh ?
 qstr_town|città
 qstr_village|villaggio 
 qstr_The_{s9}_of_{s13}_ha|Il {s9} di {s13} ti ha chiesto di occuparti delle tribù di orchi nelle campagne limitrofe.
@@ -1066,7 +1066,7 @@ qstr_The_{s11}_of_{s10}_a|Il {s11} di {s10} ti ha chiesto di scortate un po' {s1
 qstr__Guards_slaughter_hi|Guardie, squartatelo !
 qstr_Slaughter_him_for_fr|Squartatelo per avere fresca carne umana!
 qstr_This_is_{s5}_Command|Questo è {s5}, Comandante.
-qstr_{s6}_This_place_and_|{s6} Questo luogo e le terre circostanti appartengono a voi ovviamente, mi{o signore/a signora}.
+qstr_{s6}_This_place_and_|{s6} Questo luogo e le terre circostanti appartengono a te ovviamente, mi{o signore/a signora}.
 qstr_{s6}_This_place_and_t|{s6} Questo luogo e le terre circostanti appartengono a {s7} di {s8}.
 qstr_{s3}_and_{s5}|{s3} e {s5}
 qstr_{s3}_{s5}|{s3}, {s5}
@@ -1091,7 +1091,7 @@ qstr_Greetings_do_you_nee|Salute, ti servono rinforzi?
 qstr_Goodbye_friends.|Addio, amici.
 qstr_See_you_later_if_you|Ci vediamo più tardi, se non ti farai uccidere.
 qstr__^Oh_and_take_back_t|Oh, e prenditi indietro quelli che non sono dei nostri.
-qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Questi:Questo} coraggios{reg28?i soldati:o soldato} ci aiuteranno sicuramente a difendere le nostre terre.{s32} {s23}^^[guadagnato {reg14} Punti risorsa di {s14}]
-qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuteranno a creare più devastazione.{s32}^{s23}^^[guadagnato {reg14} Punti risorsa di {s14}]
+qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Questi:Questo} coraggios{reg28?i soldati:o soldato} ci aiuteranno sicuramente a difendere le nostre terre.{s32} {s23}^^[Hai guadagnato {reg14} Punti Risorsa di {s14}]
+qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuteranno a creare più devastazione.{s32}^{s23}^^[Hai guadagnato {reg14} Punti Risorsa di {s14}]
 qstr_Good_luck_in_your_tr|Buona fortuna nei tuoi viaggi.
 qstr_Try_not_getting_your|Prova a non farti uccidere.
