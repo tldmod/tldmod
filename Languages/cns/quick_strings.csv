@@ -63,7 +63,7 @@ qstr_Minas_Morgul___City_|米那斯魔窟—戒灵之城
 qstr_Sauron_s_armies_marc|索伦大军倾巢而出！
 qstr_Adventurers_at_audie|冒险者觐见刚铎摄政王迪耐瑟二世...
 qstr___What_business_do_y|'你来这儿有何请求？'
-qstr___Your_Stewardship_w|'尊敬的摄政王阁下，我从很远的地方来...跳跳！'
+qstr___Your_Stewardship_w|“尊敬的摄政王阁下，我从很远的地方来…跳跳！”
 qstr___Enough_of_this_mad|'我已经受够这些疯子了！卫兵！！'
 qstr___I_ve_had_enough_of|'我已经受够这些恶作剧了...下一批觐见者必须要跪下！'
 qstr_Chest|胸
@@ -114,7 +114,7 @@ qstr_[no_upkeep_costs]|[无维护费]
 qstr_Short_of_Resource_Po|资源点不足！
 qstr_{s10}_will_soon_reas|{s10}很快就会从你的部队中调走一些{s12}！
 qstr_Superior_orders_from|来自{s11}的上级命令要求重新分配士兵：
-qstr_{reg12}_{s10}_left_t|{reg12}{s10}离开了队伍
+qstr_{reg12}_{s10}_left_t|{reg12}{s10}离开了队伍！
 qstr_Fangorn_claimed_{reg|你的部队于法贡森林中死亡{reg0}人、受伤{reg1}人!
 qstr_You_were_wounded_in_|你在法贡森林受伤
 qstr_Volunteers|志愿者们
@@ -170,7 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4}受伤，{reg5}被击溃
 qstr_killed|被杀
 qstr_routed|被击溃
 qstr_wounded|受伤
-; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
+qstr_{s0}^TOTAL:_{reg3}__|{s0}^总计: {reg3} ({s2})
 qstr_None|无
 qstr_^None|^无
 qstr_near_the_Great_East_|东方大道（远古矮人横穿伊利雅德所建的道路）的不远处
@@ -276,7 +276,7 @@ qstr_Tonight_there_will_b|今夜{s16}的敌人又要少一个了！
 qstr_Baruk_Khazâd!_Khazâd|Baruk Khazâd！Khazâd ai-mênu！（矮人手斧！矮人冲锋！）
 qstr_{s14}Riders_of_Rohan|{s14}洛汗的骑兵们！铭记你为何而战！
 qstr_{s14}More_{s19}heads|{s14}黑门又要有更多的{s19}头颅来装饰啦！
-; qstr_The_Wise_Master_shal|The Wise Master shall be pleased when I show him the body of {playername}!
+qstr_The_Wise_Master_shal|智慧的主人（萨鲁曼）将会很高兴听到{playername}已经挂掉这件事！
 qstr_{s14}Now_we_will_put|{s14}我们将结束这些秽物的痛苦。
 qstr_{s14}Today_we_shall_|{s14}今天我们将与瑞文戴尔的敌人公平战斗。
 qstr_All_who_enter_Mirkwo|所有带着恶意进入幽暗密林之人都将永埋于此！
@@ -412,7 +412,7 @@ qstr_News_has_arrived_tha|最新战报！{s2}的{s1}战死沙场！
 qstr_{s1}_s_Burial_Mound|{s1}的埋骨地
 qstr_{s1}_s_Funeral_Pyre|{s1}的火葬堆
 qstr_{s1}_is_logged_as_de|{s1}被记录为死亡
-; qstr_You_have_been_discov|You have been discovered before scaling the wall.
+qstr_You_have_been_discov|你在爬上城墙之前就被发现了。
 qstr_The_enemy_is_coming_|大量的敌军正在接近！你必须马上撤离！
 qstr_Scout_this_area_alon|独自侦查这个地方并且和你的士兵在外汇合！
 qstr_Be_stealthy_but_elim|保持隐秘并迅速解决任何威胁！
@@ -454,36 +454,36 @@ qstr_But_I_also_bring_a_m|但我也但来了一丝希望。{s5}的人们仍然�
 qstr_Help_them_fight_the_|请你尽最大的努力帮助他们抵抗敌人，永不放松！但请保持警惕！这世上有比半兽人更加古老邪恶的东西。
 qstr_Beware_{playername}_|请注意，{playername}，黑暗的力量开始衰弱了。{s3}已经陷落，包括他的领导者{s4}。
 qstr_What_do_you_want_of_|你需要我做什么，老人家？
-qstr_Just_know_that_a_Daw|黎明的到来已成必然。如果你能活着看到那一刻的话，该考虑如何为自己辩护了。
+qstr_Just_know_that_a_Daw|黎明定将到来，这是必然，但我不知道你能否看到那一天了。如果你足够幸运，你也该考虑一下对自己良心的解释。
 qstr_Well_met_{playername|很高兴见到你，{playername}，{s24}。我当初果然没有错信你。魔多的阴影已被打破。其中你帮了大忙！
 qstr_Thank_you_Mithrandir|谢谢你，米斯兰达（辛达林语）！
 qstr_The_wizard_Saruman_i|堕落巫师萨鲁曼已死，邪黑塔连同其主黑暗魔君也已经被粉碎！中土世界的诸民击败了将吞噬所有的美好与圣洁的威胁。敌人被击败，诸王的血脉已回归！
 qstr_It_was_a_long_and_bl|这是一个漫长而残酷的战争，我们有许多挚友为此付出了生命。
 qstr_There_is_much_to_reg|我们有着许多的遗憾和悲哀，还有更多的事物等着我们去重建和修缮。但是现在，让我们跟身边的朋友一起欢呼吧！庆祝我们所做的，和第三纪的最后之日！
-qstr_Bagginsssss..._Ssssh|巴金斯...斯...夏...夏...尔...
-qstr_I..._don_t_know!|我...我不知道！
-qstr_It..._beckonsssssss.|它...在...在招...手...手...
-qstr_Treachery..._Unforgi|背信弃义...不可饶恕...
-qstr_But_I...|但我........
-qstr_Noone..._oppossssses|无人…人…能…阻挡…挡…邪黑塔……并存活…活…！
-qstr_All..._must..._submi|所有人...必须...屈从...且...臣服...
+qstr_Bagginsssss..._Ssssh|巴金斯…斯…夏…夏…尔…
+qstr_I..._don_t_know!|我…我不知道！
+qstr_It..._beckonsssssss.|它…在…在招…手…手…
+qstr_Treachery..._Unforgi|背信弃义…不可饶恕…
+qstr_But_I...|但我…
+qstr_Noone..._oppossssses|无人…人…能…阻挡…挡…邪黑塔…并存活…活…！
+qstr_All..._must..._submi|所有人…必须…屈从...且…臣服…
 qstr_I_serve_the_Eye!|我服从索伦之眼！
 qstr_I_shall_serve_the_Ey|我将臣服于索伦之眼！
 qstr_{s1}_has_been_besieg|{s1}正被{s3}的{s2}围困！
 qstr_The_forces_of_{s2}_m|{s2}的军队正向{s15}行军！
-qstr_The_hosts_of_{s2}_ma|{s2}的主人前来保卫他们的家园！
+qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
 qstr____Ruins_of_{s1}___|{s1}的废墟
-qstr_ranks|行阵
-qstr_shield_wall|盾墙
-qstr_wedge|楔形阵
-qstr_square|方阵
-; qstr_up|up
-qstr___Infantry_forming_{|步兵组成{s1}。
-qstr___Not_enough_infantr|没有足够的步兵组成{s1}，用坚守代替。
-qstr___Cavalry_forming_{s|骑兵组成{s1}
-qstr___Not_enough_cavalry|没有足够的骑兵组成{s1}，用坚守代替。
-qstr___Archers_forming_{s|射手组成{s1}。
-qstr___Not_enough_archers|没有足够的射手组成{s1}，用坚守代替。
+qstr_ranks|组成行阵
+qstr_shield_wall|组成盾墙
+qstr_wedge|组成楔形阵
+qstr_square|组成方阵
+qstr_up|没有阵型
+qstr___Infantry_forming_{|步兵{s1}。
+qstr___Not_enough_infantr|没有足够的步兵{s1}，用坚守代替。
+qstr___Cavalry_forming_{s|骑兵{s1}
+qstr___Not_enough_cavalry|没有足够的骑兵{s1}，用坚守代替。
+qstr___Archers_forming_{s|射手{s1}。
+qstr___Not_enough_archers|没有足够的射手{s1}，用坚守代替。
 qstr___Infantry_formation|步兵阵型解散
 qstr___Cavalry_formation_|骑兵阵型解散。
 qstr___Archer_formation_d|射手阵型解散。
@@ -713,7 +713,7 @@ qstr_You_ve_been_driven_a|你被敌人从城墙上面赶下去了，现在敌人
 qstr_You_ve_breached_the_|你已经突破了城墙，但是那些顽固的守军继续在街道上抵抗你的攻击！你得消灭他们才能攻击城镇中心的城堡。
 qstr_The_town_centre_is_y|这个城镇的镇广场是你的了，但是剩下的守军撤退到城堡里了。你要完全消灭他们才能取得完全的胜利。
 qstr_The_remaining_defend|剩下的守军撤退到城堡这个最后的防线。你必须冲进去清除剩余的抵抗力量。
-qstr_However_since_you_ar|然而，自从你放弃了向{s9}发的效忠誓言。他是绝对不会承认你是这个{reg8?城镇:城堡}的领主。
+qstr_However_since_you_ar|然而，自从你放弃了向{s9}发的{效忠/追随}誓言。他是绝对不会承认你是这个{reg8?城镇:城堡}的{主人/女主人}。
 qstr_The_enemy_has_been_f|敌人被迫撤退了。进攻停止了，但是围城还在继续。
 qstr_The_assasins_beat_yo|刺客击败了你，并留你在地上等死……
 qstr_You_have_fallen._The|你被击败了。强盗们迅速从你的身上搜刮钱财，然后消失在夜幕中。他们图财，仅仅是没害命而已。
@@ -1016,82 +1016,82 @@ qstr_You_wouldn_t_have_nee|如果你坚持关闭国境的话你是得不到我�
 qstr_*growl*_I_know_your_|吼！我知道你在说什么，精灵。至少足够清楚你是在嘲讽我还是在感谢我。^^群星与我的到来无关，我是循着线索和半兽人身上难闻的气味找到这里的。我现在开始怀疑，在你危机的时刻杀死他们是否是一个好注意了。
 qstr_Keep_your_secrets_th|吾友，黄金森林微风中的细语已告知了你的到来。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德王的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
 qstr_We_walk_under_the_su|我们行走于太阳与星光下，住在洞中非吾所愿，但你的善意已经传达。^^你的勇气与善行应当被知晓。我们的王国将永远是你最坚强的后盾。
-; qstr_*he_sighs_and_smiles|*he sighs and smiles slightly* ^^Very well. For our common purpose we are happy to share all, even if words are in short supply where you come from.
+qstr_*he_sighs_and_smiles|*他轻叹了一声并微微一笑* ^^好吧，由于有着共同的目标，我们愿意分享我们有的一切，即使你的言辞其实并没有打动我。
 qstr_For_some_months_we_h|在过去的数月里，半兽人伐木队的规模翻了五倍。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德王的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
-; qstr_Calm_yourself_friend|Calm yourself, friend. Pedin i phith in aniron, a nin u-cheniathog. ^^We shall speak of you to all our people. Your valour and deeds shall be known, your needs met whenever you come to bask in the light of our Golden Valley.
-; qstr_Stars_sail_through_t|Stars sail through the heavenly seas, men tread the earth. Truly, who can say if their paths follow each other? We shall speak of you to all our people. Your deeds shall be known and your needs met, were you to chase a star to the Golden Valley.
+qstr_Calm_yourself_friend|冷静，我的朋友。Pedin i phith in aniron, a nin u-cheniathog（辛达林语：我想说什么均可，而你却听不懂我在说什么。）^^我希望能把你介绍给黄金森林的人民们。你的勇气与善行应当被知晓。黄金谷（罗斯洛立安别名）阳光照耀处，我们都与你同在。
+qstr_Stars_sail_through_t|群星行于天海，人们脚踏大地。何人能知众人的命运是否汇聚？我希望能把你介绍给黄金森林的人民们。你的善行应当被知晓。每当你循着星光来到黄金谷（罗斯洛立安别名）的时候，我们都与你同在。
 qstr__RESOURCE_POINT_TUTO|(资源点教程)^^ 能在罗斯洛立安用于交易的资源点和你在初始派系取得的的资源点不同，你要在罗斯洛立安取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
 qstr__RESOURCE_POINT_TUTOR|(资源点教程)^^ 能于波宁人交易的资源点和你在罗斯洛立安取得的的资源点不同，你要在比翁之家取得波宁人派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
-; qstr_I_have_long_wished_t|I have long wished to visit the woodland folk...
-; qstr_What_form_shall_the_|What form shall the favour of Lorien take...
-; qstr_Our_bees_make_honey_|Our bees make honey and wax, our herds give milk, butter and cheese...
-; qstr_I_have_long_wished_to|I have long wished to visit the woodland folk, taste your lembas and hear your songs! ^^We brought sparkling golden wines, dusty tomes and proud ancient banners to remind us of our stream-singing valley, but I’m curious what unique wonders are to be found in Laurelindorenan.
-; qstr_What_form_shall_the_f|What form shall the favour of Lorien take? ^^Gold that turns into leaves come morning? Clear tasteless drink and dusty fairy-bread for my troops? ^^Blood-red wine, freshly hunted deer, armouries filled with sharp spears and keen arrows! That is hospitality I prefer.
-; qstr_Our_bees_make_honey_a|Our bees make honey and wax, our herds give milk, butter and cheese.^^ Bread we make ourselves, a sharp axe I can trade for with dwarves when they pass through.^^ What else would I need, what more than a pair of strong hands?
-; qstr_If_fate_wills_it_I_s|If fate wills it, I shall walk your lands again, and know all their secrets.
-; qstr_If_I_ever_have_need_|If I ever have need for the kind of help Lorien can offer, I shall come for it. Whatever use it may be.
-; qstr__nod_and_say_nothing|(nod and say nothing)
-qstr_Oh_there_are_many_an|哦，罗斯洛立安的任何朋友
-; qstr_The_joys_of_the_Gold|The joys of the Golden Valley are many and a true friend of Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your effort with all you would require - bright weapons, hard corselets of mail, deadly arrows and nourishing food for your troops.^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who would share wisdom with others, or ask favours of them.
-; qstr_Our_Golden_Valley_gi|Our Golden Valley gives goods aplenty and a friend to Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you aid the designs of our Lady and her lords, our people will reward your effort with all you would require while far away from home.
-; qstr_I_shall_keep_that_in|I shall keep that in mind.^^ Hantanyel, áva márië!
-; qstr_That_may_be_so_some_|That may be so, some paths of the world run crooked.^^ Boe i 'waen!
-; qstr_I_seldom_wander_far_|I seldom wander far away from home. Be off now, as fast as you can. There may be more goblins prowling around.
-; qstr_You_chose_well_{sir/|You chose well, {sir/madam}. My lads know how to keep their word and earn their pay.
-; qstr_Well_done_{sir/madam|Well done, {sir/madam}. Keep the money and wine coming our way, and there's no foe in Calradia you need fear.
-; qstr_We_are_at_your_servi|We are at your service, {sir/madam}. Point us in the direction of those who need hurting, and we'll do the rest.
-; qstr_You_will_not_be_diss|You will not be dissapointed {sir/madam}. You will not find better warriors in all Calradia.
-; qstr_What_an_amazing_feat|What an amazing feat of arms!
+qstr_I_have_long_wished_t|我很久以前就想来拜访木精灵了…
+qstr_What_form_shall_the_|罗斯洛立安是什么样的？
+qstr_Our_bees_make_honey_|我们的蜜蜂制作蜂蜜和蜂蜡，我们的牛群提供牛奶，黄油和芝士。
+qstr_I_have_long_wished_to|我很久以前就想来拜访幽暗密林了，尝尝精灵饼干，听听你们的歌唱！^^我带着黄金气泡酒以及满是尘土和荣耀的古老战旗作为我对瑞文戴尔的回忆，但我很好奇我能在Laurelindórenan（辛达林语：歌唱的黄金谷—罗斯洛立安）发现什么独一无二的奇景。
+qstr_What_form_shall_the_f|罗斯洛立安是什么样的？^^黄金在第二天早晨会变成树叶？清澈无味的水和多屑的仙女面包？^^血红色的葡萄酒，新猎的鹿，充满锐利箭矢长矛的军械库！ 这才是我想要的待客方式。
+qstr_Our_bees_make_honey_a|我们的蜜蜂制作蜂蜜和蜂蜡，我们的牛群提供牛奶，黄油和芝士。^^面包我们自己制作，锐利的战斧我们与路过矮人交易获得。^^除了一双健壮的双手之外，我还需要什么呢？
+qstr_If_fate_wills_it_I_s|循着命运的指引，我将再次踏上你的土地，探寻它的所有秘密。
+qstr_If_I_ever_have_need_|若我将来真有需要罗斯洛立安帮助的地方，定会不吝登门。
+qstr__nod_and_say_nothing|(点头但保持沉默)
+qstr_Oh_there_are_many_an|哦，这些礼物向罗斯洛立安的任何朋友开放！^^若我们再次肩并肩的奋战于战场，亦或是你完成凯兰崔尔女士和她手下领主的任务，我们的人民都将因你的善意满足你的需求：闪光的武器，坚硬的链甲，锋利的羽箭和士兵的食粮。 ^^谁也不知道，未来某日你是否会成为罗斯洛立安的一位伟大{领主/女领主}。
+qstr_The_joys_of_the_Gold|黄金谷（罗斯洛立安别名）的欢乐很多，它随时向着朋友们开放！^^若我们再次肩并肩的奋战于战场，亦或是你完成凯兰崔尔女士和她手下领主的任务，我们的人民都将因你的善意满足你的需求：闪光的武器，坚硬的链甲，锋利的羽箭和士兵的食粮。 ^^谁也不知道，未来某日你是否会成为罗斯洛立安的一位伟大{领主/女领主}。
+qstr_Our_Golden_Valley_gi|黄金谷（罗斯洛立安别名）有大量物资提供给朋友们。^^若我们再次肩并肩的奋战于战场，亦或是你完成凯兰崔尔女士和她手下领主的任务，我们的人民满足你的需求，以感谢你远离家乡前来帮助的善意。
+qstr_I_shall_keep_that_in|我会记住这点的。^^ Hantanyel, áva márië!（辛达林语：感谢你，再见！）
+qstr_That_may_be_so_some_|当是如此，路途总有弯曲。^^ Boe i 'waen!（我要走了！）
+qstr_I_seldom_wander_far_|我很少离家很远，但请快些，那里四处游荡的哥布林可能越来越多了。
+qstr_You_chose_well_{sir/|明智的选择，{先生/女士}。我的伙计们知道如何履行诺言，但他们也知道如何收取报酬。
+qstr_Well_done_{sir/madam|好的，{先生/女士}。拿着你的钱和红酒跟在我的身后，卡拉迪亚将没人让你感到畏惧。
+qstr_We_are_at_your_servi|听候差遣，{先生/女士}。请将目标的方向只给我，我们会完成剩下的部分的。
+qstr_You_will_not_be_diss|不会令您失望的，{先生/女士}。整个卡拉迪亚都找不出像我们这样精锐的战士。
+qstr_What_an_amazing_feat|多么惊人的战功啊！
 qstr_Well_done!|干的漂亮！
-; qstr_Nice_legwork.|Nice legwork.
+qstr_Nice_legwork.|出色的外勤。
 qstr_Heh.|哟
-; qstr_Good_moves_but_you_m|Good moves, but you may still need some work to do.
-; qstr_More_than_half_of_th|More than half of the opponents, not bad.
+qstr_Good_moves_but_you_m|进展良好，但你需要做的仍有很多。
+qstr_More_than_half_of_th|超过一半的敌军，不坏。
 qstr_You_ll_need_to_try_h|你应该更努力地尝试。
-; qstr_Well..._better_here_|Well... better here than in combat, eh?
+qstr_Well..._better_here_|好吧…在这儿总比在战场上好，不是么？
 qstr_town|城镇
 qstr_village|村庄
-; qstr_The_{s9}_of_{s13}_ha|The {s9} of {s13} has asked you to deal with tribal orcs in the surrounding countryside.
-; qstr_{s9}_of_{s3}_asked_y|{s9} of {s3} asked you to deliver {reg5} units of {s6} to the {s10} in {s4} in {reg6} days.
-; qstr_The_{s9}_of_{s3}_ask|The {s9} of {s3} asked you to bring him {reg5} units of food in {reg6} days.
-; qstr_The_{s9}_of_{s3}_aske|The {s9} of {s3} asked you to bring him {reg5} units of {s6} in {reg0} days.
+qstr_The_{s9}_of_{s13}_ha|{s13}的{s9}希望你能解决掉位于周边乡村的部落半兽人。
+qstr_{s9}_of_{s3}_asked_y|{s3}的{s9}希望你能在{reg6}天内带{reg5}单位的{s6}给位于{s4}的{s10}。
+qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}希望你在{reg6}天内带给他{reg5}单位的食物。
+qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}希望你在{reg0}天内带给他{reg5}单位的{s6}。
 qstr_Escort_the_supply_tr|护送补给队前往{s8}
 qstr_The_{s9}_of_{s4}_ask|{s4}的{s9}希望你在城镇周围追捕棘手的半兽人
-; qstr_The_{s9}_of_{s14}_ha|The {s9} of {s14} has asked you to deal with a group of goblins making trouble in {s14}. They only come out at night, and only attack lone people on the streets.
-; qstr_refugees|refugees
+qstr_The_{s9}_of_{s14}_ha|{s14}的{s9}希望你能解决肆虐{s14}的半兽人。这群半兽人只在夜间攻击街上的独行者。
+qstr_refugees|难民
 qstr_slaves|奴隶
-; qstr_{s1}_Refugees|{s1} Refugees
+qstr_{s1}_Refugees|{s1}难民
 qstr_{s1}_Slaves|{s1}奴隶
-; qstr_The_{s11}_of_{s10}_a|The {s11} of {s10} asked you to escort some {s12} to {s13}.
-; qstr__Guards_slaughter_hi| Guards, slaughter him!
-; qstr_Slaughter_him_for_fr|Slaughter him for fresh human meat!
+qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能护送一些{s12}到{s13}。
+qstr__Guards_slaughter_hi|守卫，解决掉他！
+qstr_Slaughter_him_for_fr|宰了他吃肉！
 qstr_This_is_{s5}_Command|这是[s5]，指挥官。
-; qstr_{s6}_This_place_and_|{s6} This place and the surrounding lands belong to you of course, my {lord/lady}.
-; qstr_{s6}_This_place_and_t|{s6} This place and the surrounding lands belong to {s7} of {s8}.
-; qstr_{s3}_and_{s5}|{s3} and {s5}
-; qstr_{s3}_{s5}|{s3}, {s5}
-; qstr_{reg20?We_mostly_pro|{reg20?We mostly produce {s5} here:We don't produce much here these days}. If you would like to learn more, you can speak with our {reg4?guildmaster:village elder}. He is nearby, right over there.
-; qstr_Hey_scum!_I_can_fix_|Hey scum! I can fix that jaw of yours.
-; qstr_Watch_where_you_re_g|Watch where you're going, maggot!
+qstr_{s6}_This_place_and_|{s6}这里和它的周边当然都属于你，{领主/夫人}大人。
+qstr_{s6}_This_place_and_t|{s6}这里和它的周边都属于{s8}的{s7}
+qstr_{s3}_and_{s5}|{s3}和{s5}
+qstr_{s3}_{s5}|{s3}，{s5}
+qstr_{reg20?We_mostly_pro|{reg20?我们这里主要是出产{s5}:这些天我们这里几乎什么都没有出产}。如果你想了解更多的情况，你可以去问{reg4?行政长官:村中长老}。他在附近，就在那边。
+qstr_Hey_scum!_I_can_fix_|嘿渣滓！看来你的下巴要修理修理了！
+qstr_Watch_where_you_re_g|看看你正朝哪个方向跑，渣滓！
 qstr_I_don_t_like_your_fa|我不喜欢你的长相，我认为该给你做个整容手术了。
 qstr_What_are_you_looking|你在看什么？什么？
 qstr_the_white_hand|白掌
 qstr_the_lidless_eye|索伦之眼
 qstr_I_have_some_of_your_|我手下有一些你的子民，我会让他们加入并帮助你。
-; qstr_Some_of_your_stinky_|Some of your stinky kin are with me. I'm sure they'd rather go with you.
-; qstr_{s4}_It_is_always_go|{s4} It is always good to see one of our own.
+qstr_Some_of_your_stinky_|你这帮臭烘烘的亲戚和我在一起。我肯定他们更愿意跟你走。
+qstr_{s4}_It_is_always_go|{s4}能见到自己人真是很好。
 qstr_a_nearby_town|附近的城镇
-; qstr_that_town_over_there|that town over there
-; qstr_{s4}^We_are_from_{s1|{s4}^We are from {s11}, scouting in the direction of {s12}.
-; qstr_{s4}^We_are_{reg1?fo|{s4}^We are {reg1?foraging:raiding} around {s11}.
-; qstr_{s4}^We_are_patrolli|{s4}^We are patrolling around {s11}.
-; qstr_{s4}^We_are_carrying|{s4}^We are carrying supplies from {s11} to {s12}.
-; qstr_{s4}^We_are_escortin|{s4}^We are escorting prisoners to {s12}.
-; qstr_Greetings_do_you_nee|Greetings, do you need reinforcements?
+qstr_that_town_over_there|城镇在那边
+qstr_{s4}^We_are_from_{s1|{s4}^我们来自{s11}，正往{s12}方向侦察。
+qstr_{s4}^We_are_{reg1?fo|{s4}^我们正在{s11}附近{reg1?觅食:掠夺}。
+qstr_{s4}^We_are_patrolli|{s4}^我们正在{s11}周围巡逻。
+qstr_{s4}^We_are_carrying|{s4}^我们正在从{s11}运送补给到{s12}。
+qstr_{s4}^We_are_escortin|{s4}^我们正在押送囚犯前往{s12}。
+qstr_Greetings_do_you_nee|向您问好，需要支援么？
 qstr_Goodbye_friends.|再见朋友
-; qstr_See_you_later_if_you|See you later if you don't get killed.
+qstr_See_you_later_if_you|如果你没有被杀的话，我们还会再见面的。
 qstr__^Oh_and_take_back_t|哦，带走这些不是我们的子民的人
 qstr_{s31}{reg28?Those:That}_|{s31}{reg28?这群:这名}勇敢的{reg28?士兵:士兵}定能极大地增强我方领土的防御。{s32}{s23}^^[获得{s14}的{reg14}资源点]
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?这群:这名}有用的{reg28?士兵们:士兵}定能带去更多的毁灭。{s32}^{s23}^^[获得{s14}的{reg14}资源点]
 qstr_Good_luck_in_your_tr|祝你一路顺风
-; qstr_Try_not_getting_your|Try not getting yourself killed.
+qstr_Try_not_getting_your|试着别让自己被杀了。

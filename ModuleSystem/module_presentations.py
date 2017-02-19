@@ -2989,6 +2989,9 @@ if wb_compile_switch==1:
         (assign, ":total_max_tier", 1),
         (try_for_range, ":cur_troop", soldiers_begin, soldiers_end),
           (neg|troop_is_hero, ":cur_troop"),
+          # swy: ensure that civil troops don't pass (e.g. farmers, that for some reason have upgrade paths to themselves)
+          (store_troop_faction, ":cur_troop_faction", ":cur_troop"),
+          (is_between,          ":cur_troop_faction", npc_kingdoms_begin, npc_kingdoms_end),
           # can upgrade
           (troop_get_upgrade_troop, ":upgrade_troop", ":cur_troop", 0),
           (gt, ":upgrade_troop", 0), 

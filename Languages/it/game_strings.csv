@@ -25,7 +25,7 @@ str_custom_battle_3|Lord Grimbold di Rohan sta guidando l'ultima disperata difes
 str_custom_battle_4|Quando gli esploratori informano Lord Beranheld dell'avvicinamento di un plotone da guerra del Rhun, egli decide di preparare velocemente la difesa del suo campo e di provare a resistere contro forze numericamente superiori.
 str_custom_battle_5|Ugluk ha portato i suoi feroci ochi da Ovest con la promessa di un bottino. Se quest'oggi riuscirà a far cadere questa roccaforte nanica, a Barad-Dur saranno enormemente soddisfatti.
 str_custom_battle_6|Ugluk e la sua squadra di orchi razziatori sono stati schivi il più possibile per evitare le pattuglie Elfiche. Ma la fortuna non può durare per sempre e sembra che quei luridi pelle-chiara avranno ciò che gli spetta ora.
-str_custom_battle_7|I corsari hanno allestito il loro campo sulle rive di Gondor ! Come hanno osato. Assaliamoli prima che possano stabilire una testa di ponte e possano ricevere rifornimenti, dobbiamo rispedirli in mare, al quale appartengono.
+str_custom_battle_7|I Corsari hanno allestito il loro campo sulle rive di Gondor ! Come hanno osato. Assaliamoli prima che possano stabilire una testa di ponte e possano ricevere rifornimenti, dobbiamo rispedirli in mare, al quale appartengono.
 str_finished|(Finito)
 str_delivered_damage|Inflitti {reg60} danni.
 str_archery_target_hit|Distanza: {reg61} iarde. Punteggio: {reg60}
@@ -279,13 +279,13 @@ str_pay_bandits|paga i comuni banditi
 str_fail_quest|si fallisca in una missione alla quale ci siamo impegnati dando la parola d'onore
 str_squander_money|sperpera i denari datici con fiducia
 str_murder_merchant|facci coinvolgere in assassinii a sangue freddo
-str_round_up_serfs|riunisci servi a nome di qualche nobile
+str_round_up_serfs|raduna servi per conto di qualche nobile
 str_battle_fate_1|Siamo stati separati nella foga della battaglia
 str_battle_fate_2|Sono stato ferito e scambiato per morto
 str_battle_fate_3|Un colpo nemico mi ha fatto perdere i sensi
 str_battle_fate_4|Ero in ostaggio, per un riscatto
 str_battle_fate_5|Sono stato imprigionato, ma sono riuscito a fuggire
-str_npc_morale_report|Sono {s6} la vostra scelta degli accompagnatori, {s7} il vostro stile di comando, e {s8} lo stato generale degli affari
+str_npc_morale_report|Sono {s6} la vostra scelta degli accompagnatori, {s7} il tuo stile di comando, e {s8} lo stato generale degli affari
 str_happy|felice riguardo
 str_content|mi accontento riguardo
 str_concerned|in ansia riguardo
@@ -356,20 +356,20 @@ str_npc4_backstory_a|Il mio nome è Gálmynë, e il mio compito è conoscere le 
 str_npc5_backstory_a|Forse hai sentito parlare delle mie gesta nelle battaglie passate e dimenticate dagli Uomini mortali. Nel pieno di questa guerra, gli Eldar sono nuovamente in pericolo, ma questa sarà l'ultima guerra.
 str_npc6_backstory_a|Scusa la mia sfrontatezza, straniero, ma non abbiamo molti visitatori qui e quelli che arrivano non sembrano molto affidabili. Solo la scorsa settimana, questo nano è apparso e....Lasciamo perdere. Il mio nome è Luevanna, degli Elfi Silvani di Bosco Atro.
 str_npc7_backstory_a|Perdonate, {playername}. Stiamo combattendo le incursioni degli Easterlings e degli Orchi di Gundabad, ma fino ad ora non è stato niente che noi o i nostri alleati di Dale non si possa gestire.
-str_npc8_backstory_a|Sono certo che potrete trovare buoni volontari se parlerete al borgomastro nelle caserme. In quanto a me, non sono che un guaritore e un erborista di modesto livello.
+str_npc8_backstory_a|Sono certo che potrai trovare buoni volontari se parlerai al comandante nelle caserme. In quanto a me, non sono che un guaritore e un erborista di modesto livello.
 str_npc9_backstory_a|Buon per te! Mi chiamano Gulm. Ho sgozzato il mio sergente e il suo snaga ora mi dà la caccia. Quell'inutile maialino farà il suo arrivo! Una volta, abbiamo subito un agguato da parte di una pattuglia di teste di paglia.. ed è riuscito a perdere lo scontro. "Ritirata" gridava, e poi è scappato. Solo io, Gulm e pochi altri, noi siamo restati al nostro posto e respinto la loro carica di cavalleria. Poi abbiamo preso a bastonate i capelli gialli fino a farne poltiglia (heh heh heh). Ma se non fosse stato per noi, i forti, tutti saremmo cibo per i vermi!
 str_npc10_backstory_a|Io sono Durgash!
 str_npc11_backstory_a|Nar! Non è un esploratore, ecco. Mi hanno sbattuto fuori! Ti dico che hanno perso la testa, ecco cosa. Maledetti loro! Prima si sono messi a dire che perdo il controllo, poi che corro troppo lento e dopo che sono un inutile ficcanaso. Garn! Se non troveranno della marmaglia per me, presto sarò buono solo per le Fosse Nere, se quel che ho sentito è vero. Mi accerterò che qualcuno dei capi perda la pelle prima che mi sbattano laggiù!
 str_npc12_backstory_a|Sono al comando di un gruppo di ragazzi qui. Il mio nome è Gorbag e sarà meglio che impari in fretta che noi Uruk siamo quelli che comandano da queste parti. I grandi capi fanno errori, certo, anche i più grandi sbagliano, e sono sempre i poveri Uruk a dover mettere a posto le cose, senza mai un ringraziamento. Non ci dicono mai quello che sanno, lo fanno forse qualche volta ? Nemmeno un po'. Grr !
 str_npc13_backstory_a|Io ? Sono un granello di terra dalle sabbie del sud, spinto a nord dai freddi e oscuri venti della notte. Mi chiamo Lykyada, sono un Lord Serpente di Haradwaith. Lord del Serpente d'Oro, veleno della tribù del Serpente Nero, ora alleato per servire i voleri dell'Oscuro Signore.
-str_npc14_backstory_a|Il mio nome è Fuldimir, figlio del regno meridionale di Umbar, a sud di Harondor, e della Baia di Belfalas; tutti e due sono casa per me e il mio popolo. Siamo i signori del mare e della vela, per alcuni siamo corsari, figli della Baia di Belfalas le cui acque dominiamo.
+str_npc14_backstory_a|Il mio nome è Fuldimir, figlio del regno meridionale di Umbar, a sud di Harondor, e della Baia di Belfalas; tutti e due sono casa per me e il mio popolo. Siamo i signori del mare e della vela, per alcuni siamo Corsari, figli della Baia di Belfalas le cui acque dominiamo.
 str_npc15_backstory_a|Sono Bolzog il Dotato, Incastonatore d'Ossa, Prossimo alle ferite e Sciamano della guarigione. Se andrai in guerra per l'Occhio, senza dubbio tu e i tuoi compagni sarete feriti dai volti pallidi o dagli amanti dei cavalli. Ora, -nar-nar-nar! - gli Orchi li rimpiazzi con facilità, Grande Capo, ma puoi rimpiazzare un Warg ? Un Gigante ? Un Troll delle caverne ? Shi-Shi ! No! Hai bisogno di me, del Grande Bolzog !
 str_npc16_backstory_a|Bene bene, ecco lo straniero che dichiara di essere il primo. Nondimeno, io sono Varfang della famiglia di Balcoth.. Posso dire che non avrai sentito ancora canzoni o racconti della mia terra che narrino del nome di Balcoth, perché il solo pronunciarlo metterebbe alla prova il tuo coraggio e riempirebbe il tuo cuore di calamità.
 str_npc17_backstory_a|Mi chiamano Dímborn e lavoro nella foresta. Qui è bello. Mi piacciono le foreste. Ci sono tanti alberi. A me piacciono gli alberi. Ho lavorato nelle foreste per tutta la vita, perché sono forte e perché mi piacciono gli alberi.
 str_npc1_backstory_b|Devi sapere che sono un Ranger di Ithilien di discendenza e di valore Dúnedain. Ho esperienza nel seguire tracce e nell'esplorazione, le mie abilità con arco e spada sono ben note agli Orchi. Sono anche in grado di addestrare ogni anima che vorrà combattere l'Ombra che si approssima.
 str_npc2_backstory_b|Sono stato addestrato in qualità di guardiano di Minas Tirith, per mantenere l'ordine nella Città Bianca e servire il lord Sovrintendente.
 str_npc3_backstory_b|Sono un Cavaliere dell'éored di West Emnet - se ne sono andati senza di me per un pattugliamento verso il guado di Isen. So che la loro condotta sarà degna della verde bandiera, ma temo che molti non faranno ritorno.
-str_npc4_backstory_b|Sono nato in una nobile famiglia e ho servito Lady Éowyn come damigella d'onore da quando eravamo piccole. I nostri padri furono tanto saggi da permetterci di addestrarci con i nostri fratelli al combattimento, per diventare scudiere di Rohan.
+str_npc4_backstory_b|Ho avuto i miei natali in una nobile famiglia e ho servito Lady Éowyn come damigella d'onore da quando eravamo piccole. I nostri padri furono tanto saggi da permetterci di addestrarci con i nostri fratelli al combattimento, per diventare scudiere di Rohan.
 str_npc5_backstory_b|Lord Elrond mi ha inviato come emissario a Lord Celeborn, per avvisare che è richiesto il suo intervento in Guerra in questa parte del Rhovanion.
 str_npc6_backstory_b|Mi piace percorrere i sentieri nascosti nella nostra splendida foresta. Alle volte mi passo tranquillamente fra gli alberi e osservo le abitudini dei molti animali del bosco. Il canto di un raro volatile o i rumori di un cinghiale nella sua tana sono per me belli come il clangore delle armi e le alte mura di Edain.
 str_npc7_backstory_b|Ho collaborato al rinforzamento delle difese di Erebor e addestrato qualche giovane nano di queste zone, sotto la direzione del mio venerato padre Dwalin, com'è nella nostra tradizione.
@@ -386,8 +386,8 @@ str_npc17_backstory_b|Puoi fare uscire molte cose dagli alberi, sai. E' quello c
 str_npc1_backstory_c|Tuttavia, temo che la nostra condizione sia disperata - siamo sovrastati dagli avversari qui in Ithilien senza rinforzi o audaci azioni da parte del nostro Tenutario. Vorrei aiutare dove le mie azioni hanno più efficacia, se il mio Capitano Faramir mi lasciasse andare.
 str_npc2_backstory_c|Quali che siano i miei compiti qui, sono piuttosto ansioso di vedere il combattimento dal vivo e... Elfi e alberi parlanti e Olifanti ! Sembri una persona navigata, comandante, e non lo dico solo per l'aspetto, si capisce. Imparo in fretta e so cucinare.. Beh, quanto basta per i soldati, ecco. Sbaglio o stavate cercando dei volontari ?
 str_npc3_backstory_c|E cosi, eccomi qui, nella disgrazia e nell'amarezza. Il mio éored, la mia compagnia di Rohirrim, sarà lontana miglia adesso, e non ho nessuna possibilità di raggiungerli, non con tutti gli orchi e i selvaggi che si aggirano in queste pianure. Per caso, hai bisogno di un bravo cavaliere Rohirrim ?
-str_npc4_backstory_c|Dovresti sapere che alle donne, quale che sia la loro abilità, non è permesso cavalcare con gli éoredas, i cavalieri Rohirrim. Comunque, nel mio cuore non credo che aspettare il ritorno dei guerrieri sia nel mio destino. Non me ne starò seduto per vedere ogni possibilià di grandi imprese passarmi davanti in questa guerra, e il tuo aiuto sarebbe il benvenuto, guerriero.
-str_npc5_backstory_c|Tuttavia, se i nemici di Lothlórien sono sul piede di guerra, dovrei considerare di unirmi a voi per un periodo di tempo, {playername}. Percepisco che i nostri destini in questa guerra s'intrecciano.
+str_npc4_backstory_c|Dovresti sapere che alle donne, quale che sia la loro abilità, non è permesso cavalcare con gli éoredas, i cavalieri Rohirrim. Comunque, nel mio cuore non credo che aspettare il ritorno dei guerrieri sia nel mio destino. Non me ne starò in disparte per vedere ogni possibilià di grandi imprese passarmi davanti in questa guerra, e il tuo aiuto sarebbe il benvenuto, guerriero.
+str_npc5_backstory_c|Tuttavia, se i nemici di Lothlórien sono sul piede di guerra, dovrei considerare di unirmi a te per un periodo di tempo, {playername}. Percepisco che i nostri destini in questa guerra s'intrecciano.
 str_npc6_backstory_c|Guardandoti preparato per la guerra, non capiresti, credo. Ma devi aver viaggiato in lungo e in largo - hai mai visto le altre grandi foreste ? Puoi condurmici ?
 str_npc7_backstory_c|C'è una pausa nel combattimento che mal si adatta ad un guerriero nano della mia discendenza e temperamento. Sbaglio o si vede molta più azione nei tuoi viaggi, e la tua causa è favorevole a quella dei nani ? Posso dirti per certo che avere un nano aumenta grandemente le possibilità di sopravvivenza.
 str_npc8_backstory_c|Ho sentito dire che ci sono combattimenti altrove e che le nostre terre fortunatamente ne sono escluse, per ora. Dai graffi sulla tua armatura intendo che ti sia trovato in pericolo molte volte. Forse le mie umili competenze potrebbero trovare miglior impiego nella tua compagnia, per in beneficio di tutti.
@@ -471,7 +471,7 @@ str_npc17_signup|Molto bene! Conosco molti alberi. Presto imparerai a conoscere 
 str_npc1_signup_2|Ci vorrà un momento, il tempo di parlare al mio capitano e prendere le mie cose.
 str_npc2_signup_2|Avrò bisogno di parlare con il mio sergente prima di tutto, dopo potremo andare - ci sono gloriose battaglie da combattere e strane creature da vedere !
 str_npc3_signup_2|Ho  atteso qualcuno che mi portasse con sè, ho solo bisogno di sellare il mio cavallo e saremo pronti ad andare.
-str_npc4_signup_2|Sono andato a caccia molte volte con arco e giavellotto. Darò la caccia agli orchi sotto il tuo comando. Ho anche abilità e conoscenze in guarigione che certamente torneranno utili.
+str_npc4_signup_2|Ho fatto battute di caccia molte volte con arco e giavellotto. Darò la caccia agli orchi sotto il tuo comando. Ho anche abilità e conoscenze in guarigione, cose che certamente torneranno utili.
 str_npc5_signup_2|Forse unendomi alla tua compagnia e colpendo duro dove non se l'aspetta, il nemico sarà sbilanciato. Verrò.
 str_npc6_signup_2|Forse posso insegnarti a muoverti più rapidamente e a produrre meno rumore. Andiamo.
 str_npc7_signup_2|Se sarai in grado di tenere in riga i tipi alti nella tua compagnia, specialmente gli Elfi, sarò lieto di unirmi a voi.
@@ -488,7 +488,7 @@ str_npc17_signup_2|Prenderò alcuni dei miei attrezzi e potremo partire. C'è qu
 str_npc1_signup_response_1|Potrei aver bisogno di un ranger esperto, sei il benvenuto.
 str_npc2_signup_response_1|Ottimo. Ci farebbe comodo un po' d'allegria in questi tempi bui.
 str_npc3_signup_response_1|Molto bene. Monta in sella - ce ne andremo a breve.
-str_npc4_signup_response_1|Impressionante. Saremo pronti a partire appena lo sarete voi, mia Signora.
+str_npc4_signup_response_1|Impressionante. Saremo pronti a partire appena lo sarai tu, mia Signora.
 str_npc5_signup_response_1|Saremmo onorati di avere nella nostra compagnia un Signore degli Elfi.
 str_npc6_signup_response_1|Molto bene. Spero che non scapperai con il primo orco che passa.
 str_npc7_signup_response_1|Molto bene, Mastro Nano, sei il benvenuto fra noi.
@@ -519,40 +519,40 @@ str_npc14_signup_response_2|Ho cambiato idea.
 str_npc15_signup_response_2|In realtà, penso che cercherò un vero guaritore e non un millantatore.
 str_npc16_signup_response_2|Ne ho avuto abbastanza.
 str_npc17_signup_response_2|D'altro canto, penso di aver cambiato idea. Sei un tipo tosto, non è così ?
-str_npc1_payment|Vorrei unirmi a voi, ma il mio Capitano Faramir sentirà la mia mancanza. [costo {reg14} di influenza con {s14}]
-str_npc2_payment|Il Sergente di guardia non mi lascerà andare, temo. [costo {reg14} di influenza con {s14}]
-str_npc3_payment|Ahem.. sembra che abbia accumulato un bel debito qui nella taverna, quindi.. avrò bisogno di saldare il conto prima di potermene andare.. [costo {reg14} di influenza con {s14}]
-str_npc4_payment|Vorrei unirmi a voi, ma chi si prenderà cura dei feriti se la città sarà attaccata ? [costo {reg14} di influenza con {s14}]
-str_npc5_payment|Dovremmo farcela in fretta. L'utilità del mio arrivo sarà diminuita se il nemico si accorge della mia presenza prima di averli raggiunti. Anche Lothlórien ha bisogno di me qui. [costo {reg14} di influenza con {s14}]
-str_npc6_payment|Vorrei unirmi a voi, ma il mio posto è qui. [costo {reg14} di influenza con {s14}]
-str_npc7_payment|Vorrei unirmi a voi, ma temo che mio padre Dwalin non comprenderebbe il motivo per cui lascio la città nel momento del bisogno. [costo {reg14} di influenza con {s14}]
-str_npc8_payment|Non posso abbandonare i miei incarichi, il mio Re ha ancora bisogno di me. Sono anche in ansia per la sua salute. [costo {reg14} di influenza con {s14}]
-str_npc9_payment|Vorrei partire con voi, ma le guardie al cancello non mi farebbero passare. Fidatevi, ho provato. [costo {reg14} di influenza con {s14}]
-str_npc10_payment|Vorrei unirmi a voi, ma il mio posto è qui. [costo {reg14} di influenza con {s14}]
-str_npc11_payment|Ho solo bisogno di qualcuno che si occupi del capo. Potremmo aspettare che dorma per farlo fuori, ma basterebbe uno ben messo per fargli chiudere gli occhi per sempre. Ah ! [costo {reg14} di influenza con {s14}]
-str_npc12_payment|Hai ! Yoi ! Dovrò ricordare ai ragazzi di tenere le loro bocche bavose chiuse, o ai piani alti mi verranno a cercare, so che lo faranno. [costo {reg14} di influenza con {s14}]
-str_npc13_payment|Ahimé, i capi qui non permetteranno che me ne vada. Sei abbastanza bravo da convincerli ? [costo {reg14} di influenza con {s14}]
-str_npc14_payment|Il capitano del porto richiederà molto sforzo per essere persuaso a lasciarmi andare. Convincilo e potremo issare le vele per attraversare questa tempesta. [costo {reg14} di influenza con {s14}]
-str_npc15_payment|Oh, certo, Nobile Lord-Guerriero ! C'è solo un piccolo impedimento ! Una grave ingiustizia si è abbattuta su di me, poiché al mastro di questa cava non è piaciuta la mia offerta di guarigione, e così ha preso tutti i miei attrezzi ! Che sfrontatezza ! Derubare il Grande Bolzog ! Padrone, non posso recuperare da solo il mio inestimabile equipaggiamento dai suoi sporchi artigli ! [costo {reg14} di influenza con {s14}]
-str_npc16_payment|Non vi seguirò, andrò per la mia strada; ma il vostro cammino potrà accompagnare il mio per un tratto. Comunque, prima di attraversare queste terre devo prima rendere omaggio a coloro che hanno perso la vita provandoci prima di noi. Mostrate loro il vostro tributo e potremo partire. Non dobbiamo mai dimenticare i nostri antenati. Loro non hanno dimenticato noi. [costi {reg14} Influenza con {s14}]
-str_npc17_payment|Mi piacciono gli alberi, ma il mio vecchio zio a bisogno di me. [costo {reg14} di influenza con {s14}]
-str_npc1_payment_response|Non preoccuparti, organizzerò la tua partenza con lui.  [costi {reg14}/{reg15} Influenza]
-str_npc2_payment_response|Non preoccuparti, parlerò con il tuo Sergente. [costo {reg14}/{reg15} Influenza]
-str_npc3_payment_response|Spero che ne valga la pena. Mi accorderò con l'oste. [costi {reg14}/{reg15} Influenza]
-str_npc4_payment_response|E' una causa nobile, ma sono sicuro che si possa trovare un sostituto. [costi {reg14}/{reg15} Influenza]
-str_npc5_payment_response|Fidati di me, sarai più utile al mio fianco. [costi {reg14}/{reg15} Influenza]
-str_npc6_payment_response|D'ora in avanti, obbedirai a me. [costi {reg14}/{reg15} Influenza]
-str_npc7_payment_response|Il Maestro Dwalin comprenderà che un nano degno di combattere non può essere tenuto lontano dai suoi nemici troppo a lungo. [costi {reg14}/{reg15} Influenza]
-str_npc8_payment_response|Il benessere del Re è importante, ma salverai più vite con me. [costi {reg14}/{reg15} Influenza]
-str_npc9_payment_response|Oh, ma le guardie non oseranno fermarti, se sei con me. [costi {reg14}/{reg15} Influenza]
-str_npc10_payment_response|D'ora in avanti, obbedirai a me. [costi {reg14}/{reg15} Influenza]
-str_npc11_payment_response|Dimentica il tuo capo, ora sei al mio servizio. [costi {reg14}/{reg15} Influenza]
-str_npc12_payment_response|I tuoi ragazzi avranno nuovi ordini, mi occuperò io dei vertici. [costi {reg14}/{reg15} Influenza]
-str_npc13_payment_response|La vedranno diversamente, perché ora sono io il tuo Capo. [costi {reg14}/{reg15} Influenza]
-str_npc14_payment_response|Non devi preoccuparti del vecchio comandante del porto. [costi {reg14}/{reg15} Influenza]
-str_npc15_payment_response|Inestimabile, non è vero ? Ti porto il tuo equipaggiamento. [costi {reg14}/{reg15} Influenza]
-str_npc16_payment_response|Onoro i nostri antenati, i miei e i tuoi. [costo {reg14}/{reg15} di influenza]
-str_npc17_payment_response|Tuo zio starà bene. Sei con me adesso. [costo {reg14}/{reg15} di influenza]
+str_npc1_payment|Vorrei unirmi a voi, ma il mio Capitano Faramir sentirà la mia mancanza. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc2_payment|Il Sergente di guardia non mi lascerà andare, temo. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc3_payment|Ahem.. sembra che abbia accumulato un bel debito qui nella taverna, quindi.. avrò bisogno di saldare il conto prima di potermene andare.. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc4_payment|Vorrei unirmi a voi, ma chi si prenderà cura dei feriti se la città sarà attaccata ? [Costo: {reg14} Punti Influenza di {s14}]
+str_npc5_payment|Dovremmo farcela in fretta. L'utilità del mio arrivo sarà diminuita se il nemico si accorge della mia presenza prima di averli raggiunti. Anche Lothlórien ha bisogno di me qui. [Costo: {reg14} Punti influenza di {s14}]
+str_npc6_payment|Vorrei unirmi a voi, ma il mio posto è qui. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc7_payment|Vorrei unirmi a te, ma temo che mio padre Dwalin non comprenderebbe il motivo per cui lascio la città nel momento del bisogno. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc8_payment|Non posso abbandonare i miei incarichi, il mio Re ha ancora bisogno di me. Sono anche in ansia per la sua salute. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc9_payment|Vorrei partire con voi, ma le guardie al cancello non mi farebbero passare. Fidati, ho provato. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc10_payment|Vorrei unirmi a voi, ma il mio posto è qui. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc11_payment|Ho solo bisogno di qualcuno che si occupi del capo. Potremmo aspettare che dorma per farlo fuori, ma basterebbe uno ben messo per fargli chiudere gli occhi per sempre. Ah ! [Costo: {reg14} Punti Influenza di {s14}]
+str_npc12_payment|Hai ! Yoi ! Dovrò ricordare ai ragazzi di tenere le loro bocche bavose chiuse, o ai piani alti mi verranno a cercare, so che lo faranno. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc13_payment|Ahimé, i capi qui non permetteranno che me ne vada. Sei abbastanza bravo da convincerli ? [Costo: {reg14} Punti Influenza di {s14}]
+str_npc14_payment|Il capitano del porto richiederà molto sforzo per essere persuaso a lasciarmi andare. Convincilo e potremo issare le vele per attraversare questa tempesta. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc15_payment|Oh, certo, Nobile Lord-Guerriero ! C'è solo un piccolo impedimento ! Una grave ingiustizia si è abbattuta su di me, poiché al mastro di questa cava non è piaciuta la mia offerta di guarigione, e così ha preso tutti i miei attrezzi ! Che sfrontatezza ! Derubare il Grande Bolzog ! Padrone, non posso recuperare da solo il mio inestimabile equipaggiamento dai suoi sporchi artigli ! [Costo: {reg14} Punti Influenza di {s14}]
+str_npc16_payment|Non ti seguirò, andrò per la mia strada; ma il tuo cammino potrà accompagnare il mio per un tratto. Comunque, prima di attraversare queste terre devo prima rendere omaggio a coloro che hanno perso la vita provandoci prima di noi. Mostra loro il tuo tributo e potremo partire. Non dobbiamo mai dimenticare i nostri antenati. Loro non hanno dimenticato noi. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc17_payment|Mi piacciono gli alberi, ma il mio vecchio zio a bisogno di me. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc1_payment_response|Non preoccuparti, organizzerò la tua partenza con lui.  [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc2_payment_response|Non preoccuparti, parlerò con il tuo Sergente. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc3_payment_response|Spero che ne valga la pena. Mi accorderò con l'oste. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc4_payment_response|E' una causa nobile, ma sono sicuro che si possa trovare un sostituto. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc5_payment_response|Fidati di me, sarai più utile al mio fianco. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc6_payment_response|D'ora in avanti, obbedirai a me. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc7_payment_response|Il Maestro Dwalin comprenderà che un nano degno di combattere non può essere tenuto lontano dai suoi nemici troppo a lungo. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc8_payment_response|Il benessere del Re è importante, ma salverai più vite con me. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc9_payment_response|Oh, ma le guardie non oseranno fermarti, se sei con me. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc10_payment_response|D'ora in avanti, obbedirai a me. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc11_payment_response|Dimentica il tuo capo, ora sei al mio servizio. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc12_payment_response|I tuoi ragazzi avranno nuovi ordini, mi occuperò io dei vertici. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc13_payment_response|La vedranno diversamente, perché ora sono io il tuo Capo. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc14_payment_response|Non devi preoccuparti del vecchio comandante del porto. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc15_payment_response|Inestimabile, non è vero ? Ti porto il tuo equipaggiamento. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc16_payment_response|Onoro i nostri antenati, i miei e i tuoi. [Costo: {reg14}/{reg15} Punti Influenza]
+str_npc17_payment_response|Tuo zio starà bene. Sei con me adesso. [Costo: {reg14}/{reg15} Punti Influenza]
 str_npc1_morality_speech|Comandante, non riesco a capire come puoi {s21} e abbandonare i nostri uomini. Il Capitano Faramir non avrebbe mai mancato di compassione nei confronti dei suoi Rangers, causando loro sofferenze non necessarie.
 str_npc2_morality_speech|Spero non ti spiaccia se lo dico, ma è un po' difficile per me vederci {s21}. Forse dovrei cercare di essere un soldato più temprato, ma se potessi essere più... Attento ai nostri soldati, dormirei meglio.
 str_npc3_morality_speech|Comandante, noi Eorlingas non siamo mai stati {s21}. I nostri cavalli non si stancano facilmente e, una volta radunati, nessuna carica fatta al momento giusto può non essere a nostro favore. Fate attenzione la prossima volta che combatterete contro il fato.
@@ -644,7 +644,7 @@ str_npc3_personalityclash2_speech_b|Io odio {s11}.
 str_npc4_personalityclash2_speech_b|Io odio {s11}.
 str_npc5_personalityclash2_speech_b|Io odio {s11}.
 str_npc6_personalityclash2_speech_b|Io odio {s11}.
-str_npc7_personalityclash2_speech_b|Ho visto quella codarda nelle retrovie, scagliare a malapena una freccia o due a casaccio contro il nemico. Ho detto lasciatela andare affinché si prenda cura degli uccelli e delle api, così noi potremo continuare con il maledetto compito di trucidare i nemici.
+str_npc7_personalityclash2_speech_b|Ho visto quella codarda nelle retrovie, scagliare a malapena una freccia o due a casaccio contro il nemico. Ho detto 'lasciatela andare affinché si prenda cura degli uccelli e delle api, così noi potremo continuare con il maledetto compito di trucidare i nemici'.
 str_npc8_personalityclash2_speech_b|Io odio {s11}.
 str_npc9_personalityclash2_speech_b|Io odio {s11}.
 str_npc10_personalityclash2_speech_b|Io odio {s11}.
@@ -661,8 +661,8 @@ str_npc3_personalitymatch_speech|Non è forse uno spettacolo inusuale vedere una
 str_npc4_personalitymatch_speech|Una battaglia con grandi gesta, comandante, le faccio le mie congratulazioni per la vittoria. Ho notato la fermezza e la calma con cui {s11} si è presa cura dei feriti e degli afflitti, e anche come anche l'ultimo dei nemici abbia avuto ciò che si meritava. 
 str_npc5_personalitymatch_speech|Ho già detto che mi piace {s11} ?
 str_npc6_personalitymatch_speech|{playername}, per quanto io detesti le battaglie, non ho potuto fare a meno di notare il mio Signore {s11} cavalcare in pieno splendore e avventarsi sulle orribili creature come un falco.
-str_npc7_personalitymatch_speech|Insaguinato e vittorioso, proprio come piace a me! Tuttavia, ho subito una ferita che {s11} ha gentilmente provveduto a bendare prontamente.  
-str_npc8_personalitymatch_speech|Un'altra vittoria per voi, comandante, e ammiro la vostra abilità nel risparmiare le vite dei nostri uomini. Guerrieri come {s11} sembrano essere di grande aiuto nei vostri piani di battaglia.
+str_npc7_personalitymatch_speech|Insaguinato e vittorioso, proprio come piace a me ! Tuttavia, ho subito una ferita che {s11} ha gentilmente provveduto a bendare prontamente.  
+str_npc8_personalitymatch_speech|Un'altra vittoria per te, comandante, e ammiro la tua abilità nel risparmiare le vite dei nostri uomini. Guerrieri come {s11} sembrano essere di grande aiuto nei tuoi piani di battaglia.
 str_npc9_personalitymatch_speech|Ho già detto che mi piace {s11} ?
 str_npc10_personalitymatch_speech|Ho già detto che mi piace {s11} ?
 str_npc11_personalitymatch_speech|Ho già detto che mi piace {s11} ?
@@ -715,13 +715,13 @@ str_npc6_rehire_speech|E' bello rivederti, {playername}. Continuiamo a seguire l
 str_npc7_rehire_speech|La mia ascia è pronta, {playername}. Devo riunirmi al tuo esercito ?
 str_npc8_rehire_speech|Qual buon vento ti porta? Devo riunirmi al tuo esercito ?
 str_npc9_rehire_speech|Gulm è di nuovo pronto ad uccidere per te. Stiamo partendo ?
-str_npc10_rehire_speech|Posso servirvi ancora una volta ?
-str_npc11_rehire_speech|Posso servirvi ancora una volta ?
-str_npc12_rehire_speech|Posso servirvi ancora una volta ?
-str_npc13_rehire_speech|Posso servirvi ancora una volta ?
-str_npc14_rehire_speech|Posso servirvi ancora una volta ?
+str_npc10_rehire_speech|Posso servirti ancora una volta ?
+str_npc11_rehire_speech|Posso servirti ancora una volta ?
+str_npc12_rehire_speech|Posso servirti ancora una volta ?
+str_npc13_rehire_speech|Posso servirti ancora una volta ?
+str_npc14_rehire_speech|Posso servirti ancora una volta ?
 str_npc15_rehire_speech|Aah, Gran Signore ! Ti ho cercato molto a lungo, mentre le voci delle tue gloriose imprese circolavano per la Terra di Mezzo ! Sicuramente hai sentito la mancanza delle mie abilità ? Mi accoglierai ancora una volta per completare il tuo Grande Esercito ?
-str_npc16_rehire_speech|Posso servirvi ancora una volta ?
+str_npc16_rehire_speech|Posso servirti ancora una volta ?
 str_npc17_rehire_speech|Hey. Tempo di rimettersi in marcia ? Gli alberi non si muovono tanto. Mi piace marciare, ma mi piacciono anche gli alberi.
 str_npc1_home_intro|Capitano, ci stiamo avvicinando ad Osgiliath, cerchiamo quindi di distinguere correttamente gli amici dai nemici.
 str_npc2_home_intro|Sii vigile comandante, quella dovrebbe essere Minas Morgul. Non senti qualcosa che ci sta osservando ?
@@ -762,7 +762,7 @@ str_npc2_home_description_2|E' triste che ci siano ovunque terribili orchi e spi
 str_npc3_home_description_2|Se dobbiamo attraversare Entwood, facciamo in fretta e di nascosto. Non so chi potrebbe sentire il rumore degli zoccoli dei nostri cavalli e non voglio saperlo.
 str_npc4_home_description_2|Faremmo bene a ricordare le grandi gesta del passato e i sacrifici che sono stati fatti. L'alleanza fra Rohan e Gondor salverà i nostri popoli da un destino avverso ancora una volta.
 str_npc5_home_description_2|Che sia un memoriale per ricordare che anche i più grandi, anche uno degli Istari, può essere corrotto e cadere. Coloro che bramano il potere possono essere sconfitti dal potere stesso, quindi cerchiamo di non indugiare più a lungo.
-str_npc6_home_description_2|Sento gli eserciti del male dietro le loro mura, pronti a marciare.. Verso la fiera Lothlórien ? Verso Dale ? Verso Greenwood, la mia terra natìa ? Non posso saperlo, ma vi prego di fare tutto quello che potete per contrastarli.
+str_npc6_home_description_2|Sento gli eserciti del male dietro le loro mura, pronti a marciare.. Verso la fiera Lothlórien ? Verso Dale ? Verso Greenwood, la mia terra natìa ? Non posso saperlo, ma ti prego di fare tutto quello che puoi per contrastarli.
 str_npc7_home_description_2|Se le sorti della guerra ci provvedessero una grande armata, dovremmo tentare di accedere alle Miniere e recuperarne i grandi tesori.
 str_npc8_home_description_2|Posso sentire il profumo di molti dolci fiori e vedere le api che ne raccolgono il nettare. Se non ti spiace, raccoglierò alcune erbe per noi tutti, ci vorrà solo un momento.
 str_npc9_home_description_2|Non ha senso arrancare qui attorno senza avere con noi una grossa orda di Uruk-hai. Sempre che non ti vada di fare delle smorfie alle guardie sulle mura, ecco.
@@ -778,11 +778,11 @@ str_npc1_home_recap|Sono nato e cresciuto in Ithilien , in una lunga fila di gue
 str_npc2_home_recap|Sono Nato a Minas Tirith, in una famiglia umile, ma orgogliosa.
 str_npc3_home_recap|Io sono uno degli Eorlingas, o Rohirrim, come gli stranieri ci chiamano.
 str_npc4_home_recap|Non trovo divertente il fatto che ti scordi le cose tanto facilmente.
-str_npc5_home_recap|Asseconderò la vostra curiosità, ma non perdiamo troppo tempo.
+str_npc5_home_recap|Asseconderò la tua curiosità, ma non perdiamo troppo tempo.
 str_npc6_home_recap|Sono nato e cresciuto a Bosco Atro, sono un Elfo Silvano. Le nostre abilità nel lavorare il legno sono note a tutti.
 str_npc7_home_recap|Sono figlio di Dwalin, della gente di Durin
 str_npc8_home_recap|Sono un guaritore ed erborista da Dale
-str_npc9_home_recap|Gulm vi dirà tutto ciò che vi serve sapere. Ma il continuare a parlare non ucciderà i nemici.
+str_npc9_home_recap|Gulm ti dirà tutto ciò che devi sapere. Ma parlare non ucciderà i nemici.
 str_npc10_home_recap|Farò questo a breve.
 str_npc11_home_recap|Farò questo a breve.
 str_npc12_home_recap|Farò questo a breve.
@@ -799,13 +799,13 @@ str_npc5_honorific|comandante
 str_npc6_honorific|guerriero 
 str_npc7_honorific|capitano
 str_npc8_honorific|comandante 
-str_npc9_honorific|Maestro
-str_npc10_honorific|Maestro
-str_npc11_honorific|Maestro
-str_npc12_honorific|Maestro
+str_npc9_honorific|Mastro
+str_npc10_honorific|Mastro
+str_npc11_honorific|Mastro
+str_npc12_honorific|Mastro
 str_npc13_honorific|Capo
 str_npc14_honorific|Capitano
-str_npc15_honorific|Maestro
+str_npc15_honorific|Mastro
 str_npc16_honorific|Comandante
 str_npc17_honorific|Capo
 str_comment_intro_liege_affiliated|Mi è stato riferito che sei uno dei contendenti che disputa sul mio diritto alla corona di Calradia. Tuttavia, possiamo ancora parlare.
@@ -918,7 +918,7 @@ str_comment_you_abandoned_us_benefitofdoubt|Che cosa è successo ? Sei scomparso
 str_comment_you_abandoned_us_default|Che è successo ? Un attimo prima stavi combattendo con noi contro {s54}, il momento dopo eri scomparso.
 str_comment_you_ran_from_me_enemy_spiteful|L'ultima volta che ci siamo incontrati, sei scappato via da me come un cane bastonato. Sei tornato per abbaiarmi contro o per piagnuccolare chiedendo pietà ?
 str_comment_you_ran_from_me_enemy_chivalrous|L'ultima volta che ci siamo incontrati, sei scappato. Impara a stare in piedi e a combattere da uomo !
-str_comment_you_ran_from_me_enemy_benevolent|L'ultima volta che ti ho visto sei scappato, speravo di non doverti incontrare ancora.
+str_comment_you_ran_from_me_enemy_benevolent|L'ultima volta che ti ho visto stavi scappando, speravo di non doverti incontrare ancora.
 str_comment_you_ran_from_me_enemy_coldblooded|La scorsa volta sei scappato. Fu una decisione saggia.
 str_comment_you_ran_from_me_enemy|Sei stato capace di fuggire l'ultima volta che le nostre strade si sono incrociate, ma dubito che tu possa essere ancora così fortunato.
 str_comment_you_ran_from_foe_allied_chivalrous|Mi hanno detto che sei fuggito di fronte a {s54}, abbandonando i tuoi uomini. Prego che questo non sia vero, perché una simile condotta ci disonorerebbe tutti.
@@ -1050,13 +1050,13 @@ str_unprovoked_attack_sadistic|Cos'è questo ? Ti piace l'idea di farti cavare g
 str_unprovoked_attack_goodnatured|Perchè fai questo ? Non abbiamo contese tra di noi, {mio signore/mia signora}
 str_unprovoked_attack_upstanding|Considero questo un attacco senza motivo, e protesterò presso il tuo re. Perchè lo fai ?
 str_unnecessary_attack_default|Non esiterò ad abbatterti se sarò costretto, ma ti offro la possibilità di andartene.
-str_unnecessary_attack_martial|Sono più che desideroso di accettare la vostra sfida, {milord/milady}, tuttavia vi darò un minuto per ripensarci.
+str_unnecessary_attack_martial|Sono più che desideroso di accettare la tua sfida, {mio signore/mia signora}, tuttavia ti darò un minuto per ripensarci.
 str_unnecessary_attack_quarrelsome|Bah! Non sono dell'umore per queste facezie oggi. Fuori dalla mia vista!
 str_unnecessary_attack_pitiless|Oggi mi sento particolarmente misericordioso. Fingerò di non averti sentito.
 str_unnecessary_attack_cunning|Non capisco cosa guadagneresti dal fare di me un tuo nemico. Magari dovresti solo andartene.
 str_unnecessary_attack_sadistic|Non ho tempo da perdere con un verme come te. Fuori dalla mia vista.
-str_unnecessary_attack_goodnatured|Non capisco cosa ci guadagnate dal cercare la lotta, {milord/milady}. Potete ancora andarvene.
-str_unnecessary_attack_upstanding|Se è un combattimento che cercate, {milord/milady}, allora ne avrete uno, ma vi offro ancora la possibilità di arrendervi.
+str_unnecessary_attack_goodnatured|Non capisco che ci guadagni nel cercare lo scontro, {mio signore/mia signora}. Puoi ancora andarvene.
+str_unnecessary_attack_upstanding|Se è un combattimento che cerchi, {mio signore/mia signora}, allora lo avrai, ma ti offro ancora la possibilità di arrenderti.
 str_lord_challenged_default|Come desideri. Preparati a morire!
 str_lord_challenged_martial|Così sia. In guardia!
 str_lord_challenged_quarrelsome|Moccioso insolente! Ti distruggerò!
@@ -1064,23 +1064,23 @@ str_lord_challenged_pitiless|Se desideri così tanto morire, non ho altra scelta
 str_lord_challenged_cunning|Beh, se non mi lasciate altra scelta..
 str_lord_challenged_sadistic|Tu, pila di sterco! Ti farò desiderare di non essere mai nato!
 str_lord_challenged_goodnatured|Molto bene. Speravo che avremmo potuto evitare di giungere allo scontro, ma vedo che non ho altra scelta.
-str_lord_challenged_upstanding|Così sia. Mi intristisce vedere che non vi si può far ragionare.
-str_lord_mission_failed_default|Beh,  sono deluso, ma sono sicuro che avrete moltre altre occasioni di redimervi.
+str_lord_challenged_upstanding|Così sia. Mi intristisce vedere che non ti si può far ragionare.
+str_lord_mission_failed_default|Beh,  sono deluso, ma sono sicuro che avrai moltre altre occasioni per redimerti.
 str_lord_mission_failed_martial|Non c'è onore nel fallire una missione che ti sei impegnato a completare, ma accetterò la tua parola.
-str_lord_mission_failed_quarrelsome|Hai fallito ? Bah, me lo sarei dovuto aspettare da uno come voi.
+str_lord_mission_failed_quarrelsome|Hai fallito ? Bah, me lo sarei dovuto aspettare da uno come te.
 str_lord_mission_failed_pitiless|Hai fallito ? Beh, mi deludi. Ed è una cosa molto poco saggia da fare.
 str_lord_mission_failed_cunning|Beh, sono deluso, ma nessuno può garantire che i venti della fortuna soffieranno sempre in proprio favore.
 str_lord_mission_failed_sadistic|Davvero ? Coloro che mi deludono, non sempre sopravvivono per pentirsene.
 str_lord_mission_failed_goodnatured|Oh beh, era comunque difficile. Grazie comunque di averci provato.
-str_lord_mission_failed_upstanding|Molto bene, sono sicuro che avete fatto del vostro meglio.
-str_lord_follow_refusal_default|Seguirvi ? Vi dimenticate il vosto posto, {milord/milady}.
-str_lord_follow_refusal_martial|Magari se un giorno vi dimostrerete un combattente valoroso ed onorevole, vi seguirò. Ma non oggi.
-str_lord_follow_refusal_quarrelsome|Seguire qualcuno come voi ? Non credo proprio.
-str_lord_follow_refusal_pitiless|I signori come me non seguono la gente come voi, {milord/milady}.
-str_lord_follow_refusal_cunning|Prima dimostratemi che non siete il tipo di {uomo/donna} che mi porterà al disastro, allora forse vi seguirò.
-str_lord_follow_refusal_sadistic|Non credo proprio! Piuttosto, voi dovreste seguire me, così come {un cane/una cagna} frustato segue il suo padrone!
+str_lord_mission_failed_upstanding|Molto bene, sono sicuro che hai fatto del vostro meglio.
+str_lord_follow_refusal_default|Seguirti ? Dimentichi qual'è il tuo posto, {mio signore/mia signora}.
+str_lord_follow_refusal_martial|Magari se un giorno ti dimostrerai un combattente onorevole e di valore, ti seguirò. Ma non oggi.
+str_lord_follow_refusal_quarrelsome|Seguire qualcuno come te ? Non credo proprio.
+str_lord_follow_refusal_pitiless|I signori come me non seguono la gente come te, {mio signore/mia signora}.
+str_lord_follow_refusal_cunning|Prima dimostrami che non sei il tipo di {uomo/donna} che mi porterà al disastro, allora forse ti seguirò.
+str_lord_follow_refusal_sadistic|Non credo proprio ! Piuttosto, tu dovresti seguire me, così come {un cane/una cagna} frustato segue il suo padrone !
 str_lord_follow_refusal_goodnatured|Uhm, sono un po' impegnato con delle commissioni al momento. Magari più avanti.
-str_lord_follow_refusal_upstanding|Prima dimostratemi di essere degno di condurre, e allora forse vi seguirò.
+str_lord_follow_refusal_upstanding|Prima dimostrami di saper comandare, allora forse ti seguirò.
 str_lord_insult_default|vile furfante
 str_lord_insult_martial|canaglia disonorevole
 str_lord_insult_quarrelsome|bastardo succhiasozzura
@@ -1100,7 +1100,7 @@ str_rebellion_dilemma_upstanding|Questo è una faccenda complessa. E' un serio p
 str_rebellion_dilemma_2_default|[feudatario]
 str_rebellion_dilemma_2_martial|D'altro canto, {s46} ci ha guidato in guerra e in pace, e detesterei dover rinunciare alla mia alleanza.
 str_rebellion_dilemma_2_quarrelsome|Perciò dimmi, perché mai dovrei voltare le spalle al bastardo che conosco, in favore di {reg3?a woman:the bastard} che non conosco ?
-str_rebellion_dilemma_2_pitiless|E' una posizione alquanto precaria nella cui trovarsi, che mi sia chiesto chi io debba rendere {reg3?ruler:king} di questa terra. Tuttavia è anche un'opportunità per me di cogliere i frutti di quella che è sempre stata la mia causa !
+str_rebellion_dilemma_2_pitiless|E' una posizione alquanto precaria nella cui trovarsi, che mi sia chiesto chi io debba rendere {reg3?governante:re} di questa terra. Tuttavia è anche un'opportunità per me di cogliere i frutti di quella che è sempre stata la mia causa !
 str_rebellion_dilemma_2_cunning|{s46} è stato sfidato, e perciò non sarà mai in grado di governare fortemente come uno la cui la cui rivendicazione non è mai stata messa in discussione. Tuttavia se {s45} dovesse prendere il trono con la forza, {reg3?lei:lui} non sarà mai forte come quello che è susseguito in modo pacifico.
 str_rebellion_dilemma_2_sadistic|Forse se mi unissi a {s45} mentre {reg3?lei:lui} è ancora debole {reg3?lei:lui} potrebbe arricchirmi, ma forse se porto a {s46} la tua testa mi darà una maggior ricompensa.
 str_rebellion_dilemma_2_goodnatured|{s46} mi ha sempre trattato bene, anche se è vero che ha avuto un pessimo comportamento con {s45} Sono esitante a recedere la mia obbedienza a {s46}, tuttavia non penso che sia giusto sostenere un'ingiustizia.
@@ -1126,7 +1126,7 @@ str_rebellion_persuasion_unfavorable|Sei stato poco convincente.
 str_rebellion_relation_very_favorable|Ho il più alto rispetto per la tua persona.
 str_rebellion_relation_favorable|Ti conosco e ti rispetto.
 str_rebellion_relation_neutral|Non ti conosco bene quanto vorrei.
-str_rebellion_relation_unfavorable|Io non ho fiducia in voi.
+str_rebellion_relation_unfavorable|Io non ho fiducia in te.
 str_and_comma_3|Inoltre, 
 str_but_comma_3|Comunque, 
 str_and_comma_1|, e
@@ -1164,11 +1164,11 @@ str_latest_rumor|Le ultime indiscrezioni che hai sentito su {s6} sono le seguent
 str_faction_strength_crushed|Schiacciato
 str_faction_strength_spent_and_wavering|Esaurito e vacillante
 str_faction_strength_weakened|Indebolito
-str_faction_strength_fair|Discreto
-str_faction_strength_average|Medio
-str_faction_strength_strong|Forte
-str_faction_strength_quite_strong|Piuttosto forte
-str_faction_strength_very_strong|Molto forte
+str_faction_strength_fair|Discreti
+str_faction_strength_average|Medi
+str_faction_strength_strong|Forti
+str_faction_strength_quite_strong|Piuttosto forti
+str_faction_strength_very_strong|Molto forti
 str_faction_strength_unmatched|Imbattibile
 str_faction_strength_last|NON VALIDO
 str_theater_se|Gondor
@@ -1249,9 +1249,9 @@ str_gondor_rumor_4|Ci affanniamo per le nostre terre, come abbiamo fatto per gen
 str_gondor_rumor_5|Le risorse dell'Ombra per la guerra sembrano illimitate, ma poggiano sulle spalle di un mare di schiavi.
 str_gondor_rumor_6|Abbiamo sentito parlare degli elfi del nord, ma oggigiorno nessuno li vede più.
 str_gondor_rumor_7|Vorrei vedere l'Albero Bianco fiorire ancora nel cortile dei Re, la Corona d'Argento ritornare e  Minas Tirith in pace: Minas Anor ai fasti antichi, piena di luce, alta e fiera, bellissima, come una regina circondata da altre regine.
-str_gondor_rumor_8|Perché Umbar continua ad invaderci ? I loro Pirati avrebbero tratto maggiore profitto commerciando con noi. Come si può paragonare questo bottino con la ricchezza che hanno accumulato in passato vendendo antichi artifatti Numenoriani ai nobili di Gondor ?
+str_gondor_rumor_8|Perché Umbar continua ad invaderci ? I loro Corsari avrebbero tratto maggiore profitto commerciando con noi. Come si può paragonare questo bottino con la ricchezza che hanno accumulato in passato vendendo antichi artifatti Numenoriani ai nobili di Gondor ?
 str_gondor_rumor_9|La guerra deve essere, mentre difendiamo le nostre vite contro un distruttore che vuole divorare tutto; ma io non amo la lucente spada per la sua lama affilata, né la freccia per la sua rapidità, o il guerriero per la sua gloria. Io amo solo ciò che essi difendono.
-str_gondor_rumor_10|Gil-galad era un Re degli Elfi. I suonatori d'arpa di lui cantano amaramente: l'ultimo il cui regno era giusto e libero, far le montagne e il mare.
+str_gondor_rumor_10|Gil-galad era un Re degli Elfi. I suonatori d'arpa di lui cantano amaramente: l'ultimo il cui regno era giusto e libero, fra le montagne e il mare.
 str_gondor_rumor_11|Dol Guldur? Mai sentito nominare.
 str_gondor_rumor_12|Moria ? Ci sono le miniere dei nani laggiù, non è così ?
 str_gondor_rumor_13|Non riferire a nessuno che ho detto questo, ma penso che il Principe Imrahil potrebbe un giorno diventare Re. Lord Denethor è un nobile uomo, ma Gondor ha perso molto del suo smalto durante la sua reggenza, e non solo da quando il suo figlio maggiore è scomparso.
@@ -1268,7 +1268,7 @@ str_dwarf_rumor_5|Sparisci ! Non abbiamo bisogno di gente come te da queste part
 str_dwarf_rumor_6|A chi hai detto "corto" ?
 str_dwarf_rumor_7|Dovresti vedere le miniere di Hornburg. Se solo potessimo raccogliere tutte le gemme che ci sono dentro..
 str_dwarf_rumor_8|Non ci è giunta nemmeno una parola dai nostri fratelli a Moria, da lungo tempo. Scommetto che vogliono tenere tutte le cose preziose per se stessi !
-str_dwarf_rumor_9|Elfi ? Che cosa hanno mai fatto gli Elfi per noi ? Certo, ci hanno dato le arti di guarigione, ma a parte questo ? Si, ci hanno insegnato qualche tecnica per i fabbri, cos'altro ? Va bene, combattono l'Ombra, ma a parte tutte queste cose, cosa hanno veramente fatto per noi, vi chiedo ?
+str_dwarf_rumor_9|Elfi ? Che cosa hanno mai fatto gli Elfi per noi ? Certo, ci hanno dato le arti di guarigione, ma a parte questo ? Si, ci hanno insegnato qualche tecnica per i fabbri, cos'altro ? Va bene, combattono l'Ombra, ma a parte tutte queste cose, cosa hanno veramente fatto per noi, ti chiedo ?
 str_dwarf_rumor_10|Datemi un boccale di birra, un maiale arrostito, una ragazza con la folta barba, e sarò un uomo felice !
 str_dwarf_rumor_11|Beh, Brian, sto scavando una miniera ! Cosa ! Ugh ? Beh, Brian, sto scavando una miniera !
 str_dwarf_rumor_12|Noi Nani scaviamo sempre più di un'entrata nelle nostre miniere. E comunque ce n'è sempre un'altra segreta.
@@ -1293,10 +1293,10 @@ str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh
 str_mordor_rumor_16|Se ti insulta - uccidilo. Se ti combatte - uccidilo. Se ti guarda storto - uccidilo. Se è morto - mangialo.
 str_mordor_rumor_17|Gli uruk-hai di Saruman dicono che il sole non gli da fastidio. Bûbhosh skai !
 str_mordor_rumor_18|Tutti morti, tutti marciti. Elfi, Uomini e Orchi. Nelle Paludi della Morte !
-str_mordor_rumor_19|Non mettetevi fra i Nazgûl e la loro preda !
+str_mordor_rumor_19|Meglio non mettersi fra i Nazgûl e la loro preda !
 str_mordor_rumor_20|Gli abitanti di Isengard ? I topi di fogna di un piccolo mago ! E la carne degli orchi che mangiano, lo garantisco.
 str_mordor_rumor_21|Mirkwood è già in mano nostra, ma gli Elfi ancora non lo sanno.
-str_mordor_rumor_22|Guardate verso l'alto per evitare agguati nell'Ithilien Dannati Elfi delle Foreste Verdi..
+str_mordor_rumor_22|Guarda verso l'alto per evitare agguati nell'Ithilien Dannati Elfi delle Foreste Verdi..
 str_mordor_rumor_23|Dove c'è una frusta si trova sempre un modo.
 str_isengard_rumor_begin|Ordine di Sharkû !
 str_isengard_rumor_2|Gli uomini dei cavalli sono cibo Bubhosh !
@@ -1399,8 +1399,8 @@ str_harad_rumor_2|Per il Serpente ! Le nostre bestie lanceranno i Gondoriani nel
 str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus ! 
 str_harad_rumor_4|C'è tanto oro e gemme prezione a Gondor e ancora di più nelle terre più lontane.
 str_harad_rumor_5|Cattureremo tanti codardi dell'Occidente e li sacrificheremo al dio Serpente !
-str_harad_rumor_6|I corsari hanno la loro utilità: navigano bene,ma sono litigiosi,all'apparenza disonesti e di comportamento scorretto.
-str_harad_rumor_7|Non ho mai messo piede su una nave. i Corsari possono avere tutti i mari,per quanto mi riguarda.
+str_harad_rumor_6|I Corsari hanno la loro utilità: navigano bene, ma sono litigiosi, all'apparenza disonesti e di comportamento scorretto.
+str_harad_rumor_7|Non ho mai messo piede su una nave. i Corsari possono ternersi tutti i mari, per quanto mi riguarda.
 str_harad_rumor_8|I guerrieri di Khand sono fieri e senza pietà, ma le loro tattiche sono troppo ingenue.
 str_harad_rumor_9|Conto di fare un buon bottino nell'Ovest. Ci è stato promesso. Poi potrò tornare a casa a condurre il mio negozio di tappeti in pace.
 str_harad_rumor_10|Sta lontano dai Mumakil. Sono bestie malsane che ti schiaccerebbero in un istante.
@@ -1437,7 +1437,7 @@ str_umbar_rumor_3|Umbar è il nostro destino e anche quello di Gondor !
 str_umbar_rumor_4|I Gondoriani non possono navigare ! Hanno gambe buone solo per stare a terra.
 str_umbar_rumor_5|Abbiamo già ucciso re di Gondor in passato. Ora non hanno nemmeno un re per noi da uccidere.
 str_umbar_rumor_6|I perfidi Gondoriani hanno dato alle fiamme la nostra flotta, anni fa. Ora sarà Gondor a bruciare.
-str_umbar_rumor_7|Non c'è mare che possa mettere paura a un pirata. Ma abbiamo udito di orribil abomini sulla terra.
+str_umbar_rumor_7|Non c'è mare che possa mettere paura a un Corsaro. Ma abbiamo udito di orribil abomini sulla terra.
 str_umbar_rumor_8|Irromperemo su Gondor come un'onda gigantesca, e reclameremo le nostre terre da lungo tempo perdute.
 str_umbar_rumor_9|Gli Haradrim non bevono rum. Non lo sai ? Ne prendiamo solo un po' per avere la mano ferma sulla lancia.
 str_umbar_rumor_10|Ho visto qualche Variag di Khand in combattimento. Non vorrei trovarmeli davanti in battaglia. E' una buona cosa che siano dalla nostra parte.
@@ -1584,7 +1584,7 @@ str_rhun_rank_2|Guerriero di Rhun
 str_rhun_rank_3|Guerriero Toro di Rhun
 str_rhun_rank_4|Scudiero di Rhun
 str_rhun_rank_5|Spada di Rhun
-str_rhun_rank_6|Maestro dei cavalli di Rhun
+str_rhun_rank_6|Mastro dei cavalli di Rhun
 str_rhun_rank_7|Signore della guerra di Rhun
 str_rhun_rank_8|Capoclan della Steppa
 str_rhun_rank_9|Braccio destro di Khamûl
@@ -1594,7 +1594,7 @@ str_khand_rank_2|Guerriero di Khand
 str_khand_rank_3|Guerriero Aquila di Khand
 str_khand_rank_4|Scudiero di Khand
 str_khand_rank_5|Spada di Khand
-str_khand_rank_6|Maestro dei cavalli di Khand
+str_khand_rank_6|Mastro dei cavalli di Khand
 str_khand_rank_7|Signore della guerra dei Variag
 str_khand_rank_8|Capoclan Variag
 str_khand_rank_9|Conquistatore leggendario
@@ -1682,7 +1682,7 @@ str_fullname_region_rohan3|Eastfold,una parte di Rohan,Riddermark
 str_fullname_region_rohan4|Westfold,una parte di Rohan,Riddermark
 str_fullname_region_rohan5|La gola del Timone,una vallata delle Montagne Bianche,a Rohan
 str_fullname_region_the_wold|Wold,l'area più a Nord-est della Riddermark di Rohan
-str_fullname_region_gap_of_rohan|la Breccia di Rohan,la più a est dei confini di Rohan,un'area contesa da i Rohirrim e i Dunlendings.
+str_fullname_region_gap_of_rohan|la Breccia di Rohan, la più a est dei confini di Rohan, un'area contesa da i Rohirrim e i Dunlendings.
 str_fullname_region_entwash|le foci di Entwash,dove il fiume di Rohan, Entwash incontra Anduin
 str_fullname_region_wetwang|Nindalf,le paludi di Wetwang
 str_fullname_region_dead_marshes|le Paludi della Morte,l'antico luogo della leggendaria Battaglia di Dagor Dagorlad,adesso maledette
@@ -1750,31 +1750,31 @@ str_trait_desc_blessed|Senti che sei stato benedetto da poteri che giungono dall
 str_trait_title_reverent|Riverente
 str_trait_desc_reverent|Hai acquisito una reputazione di rispetto e saggezza.Gli Uomini e gli Elfi ascoltano la tua opinione con più piacere.
 str_trait_title_merciful|Misericordioso
-str_trait_desc_merciful|Hai acquisito una reputazione di trattamento misericordioso presso gli uomini malvagi che servono il Nemico.Molti degli uomini temprati che ti servono sono infastiditi dal tuo comportamento e soffrono una penalità di morale.Tra i saggi,però,la tua misericordia è vista come una prova di alta considerazione e ricevi un bonus d'influenza.
+str_trait_desc_merciful|Hai acquisito una reputazione di trattamento misericordioso presso gli uomini malvagi che servono il Nemico. Molti degli uomini temprati che ti servono sono infastiditi dal tuo comportamento e soffrono una penalità di morale. Tra i saggi, però, la tua misericordia è vista come una prova di alta considerazione e ricevi un bonus in Punti Influenza.
 str_trait_title_bravery|Coraggio
-str_trait_desc_bravery|Hai acquisito una reputazione per il coraggio di affrontare grandi pericoli.Del tuo coraggio di parla sia nelle tranquille taverne che nelle sale dei saggi.Le tue gesta ispirano i tuoi uomini e ricevi un bonus di morale settimanale.
+str_trait_desc_bravery|Hai acquisito una reputazione per il coraggio di affrontare grandi pericoli. Del tuo coraggio di parla sia nelle tranquille taverne che nelle sale dei saggi. Le tue gesta ispirano i tuoi uomini e ricevi un bonus di morale settimanale.
 str_trait_title_oathkeeper|Custode del Giuramento
-str_trait_desc_oathkeeper|Hai fatto risoluti giuramenti e sei vissuto abbastanza da vederli compiuti.Di conseguenza hai ottenuto una reputazione di uomo di parola.Ricevi un bonus d'influenza settimanale.
+str_trait_desc_oathkeeper|Hai fatto risoluti giuramenti e sei vissuto abbastanza da vederli compiuti. Di conseguenza hai ottenuto una reputazione di uomo di parola. Ricevi un bonus in Punti Influenza settimanale.
 str_trait_title_oathbreaker|Violatore del Giuramento
-str_trait_desc_oathbreaker|Hai fatto risoluti giuramenti e non sei riuscito a vederli giungere a buon fine.Di conseguenza hai acquisito una reputazione di uomo la cui passione supera il suo valore.Ricevi una penalità d'influenza settimanale.
+str_trait_desc_oathbreaker|Hai fatto risoluti giuramenti e non sei riuscito a vederli giungere a buon fine. Di conseguenza hai acquisito una reputazione di uomo la cui passione supera il suo valore. Ricevi una penalità in Punti Influenza settimanale.
 str_trait_title_orc_pit_champion|Orco campione della fossa
-str_trait_desc_orc_pit_champion|Sei diventato famoso come guerriero brutale in grado di sopravvivere alle più crudeli battaglie con gli orchi.Tanta forza è sia rispettata che temuta dai tuoi più malvagi sostenitori e ricevono un bonus di morale settimanale.
+str_trait_desc_orc_pit_champion|Sei diventato famoso come guerriero brutale in grado di sopravvivere alle più crudeli battaglie con gli orchi. Tanta forza è sia rispettata che temuta dai tuoi più malvagi sostenitori ed essi ricevono ora un bonus di morale settimanale.
 str_trait_title_despoiler|Saccheggiatore
-str_trait_desc_despoiler|Hai acquisito la reputazione di portare sfrenata distruzione dovunque tu vada.Questo comportamento è tenuto in considerazione dagli oscuri poteri che servi e ricevi un bonus d'influenza settimanale.
+str_trait_desc_despoiler|Hai acquisito la reputazione di portare sfrenata distruzione dovunque tu vada. Questo comportamento è tenuto in considerazione dagli oscuri poteri che servi e ricevi un bonus in Punti Influenza settimanale.
 str_trait_title_accursed|Maledetto
-str_trait_desc_accursed|Senti che hai provocato la collera delle potenze aldilà del mare.I tuoi sostenitori sentono bene questa condanna e la paura vi assale.Ricevono una penalità di morale settimanale.
+str_trait_desc_accursed|Senti che hai provocato la collera delle potenze aldilà del mare. I tuoi sostenitori sentono bene questa condanna e la paura vi assale. Ricevono una penalità di morale settimanale.
 str_trait_title_stealthy|Silenziosamente
 str_trait_desc_stealthy|Hai sviluppato una sconcertante abilità nell'arte dell'infiltrarsi silenziosamente. Ricevi un bonus per la tua silenziosità valutato quando intraprendi missioni stealth.
 str_trait_title_berserker|Berserker 
-str_trait_desc_berserker|Dopo tante battaglie dove hai evitato di usare un'armatura per la ferocia sei diventato come di ferro.Nelle battaglie dove sei gravemente ferito riceverai un bonus di vita una volta a battaglia.Questo non ti riporterà al pieno delle tue forze,ma potresti continuare a lottare anche quando gli altri sarebbero stati sopraffati dal dolore.
+str_trait_desc_berserker|Dopo tante battaglie dove hai evitato di usare un'armatura per la ferocia sei diventato come di ferro. Nelle battaglie dove sei gravemente ferito riceverai un bonus di vita una volta a battaglia. Questo non ti riporterà al pieno delle tue forze, ma potresti continuare a lottare anche quando gli altri sarebbero stati sopraffati dal dolore.
 str_trait_title_infantry_captain|Capitano di Fanteria
-str_trait_desc_infantry_captain|Hai sviluppato una sconcertante abilità nel comando della fanteria.Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
+str_trait_desc_infantry_captain|Hai sviluppato una sconcertante abilità nel comando della fanteria. Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
 str_trait_title_archer_captain|Capitano degli Arcieri
-str_trait_desc_archer_captain|Hai sviluppato una sconcertante abilità nel comandare le truppe missile.Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
+str_trait_desc_archer_captain|Hai sviluppato una sconcertante abilità nel comandare le truppe missile. Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
 str_trait_title_cavalry_captain|Capitano di Cavalleria
-str_trait_desc_cavalry_captain|Hai sviluppato una sconcertante abilità nel comandare le truppe a cavallo.Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
+str_trait_desc_cavalry_captain|Hai sviluppato una sconcertante abilità nel comandare le truppe a cavallo. Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
 str_trait_title_command_voice|Comando Vocale
-str_trait_desc_command_voice|La tua esperienza nel comandare gli uomini in battaglia ti ha garantito un aria di autorevolezza.Il costo dell'influenza per dare ordini alle armate in battaglia è ridotto.
+str_trait_desc_command_voice|La tua esperienza nel comandare gli uomini in battaglia ti ha garantito un aria di autorevolezza. Il costo dei Punti Influenza per dare ordini alle armate in battaglia è ridotto.
 str_trait_title_foe_hammer|Martello nemico
 str_trait_desc_foe_hammer|Avendo ucciso molti dei grandi capitani nemici capisci di aver ottenuto una fama da spietato guerriero. Ora i soldati sotto il tuo comando ricevono un bonus morale settimanale. La tua esperienza ha anche affinato le tue abilità in battaglia.
 str_trait_title_battle_scarred|Cicatrici di battaglia

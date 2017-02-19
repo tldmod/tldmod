@@ -565,7 +565,7 @@ dlga_start:caravan_attack1|Wer bist du? Ich brauche deine Hilfe nicht.
 dlga_caravan_attack3:close_window|Schwächling? Ich werde dir zeigen, wer hier schwach ist! (Schwieriger Kampf)
 ; dlga_caravan_attack3:close_window.1|Go then, coward. I'll see your corpse in the fields
 ; dlga_start:caravan_duel1|Hehe...He's a grumpy one, isn't he? Never mind him! You saved my skin out there! Some of the men's lives too! ^^Here, we grabbed the money in our dead men's pockets. {s10}
-; dlga_start:caravan_duel1.1|I guess I am promoted, then. You are a fierce warrior. Here, take some of our loot from the caravan. The guards were also betting against you, but I wasn't..hehe... I saw what you did out there.... ^^{s10}
+dlga_start:caravan_duel1.1|Anscheinend bin ich dann wohl befördert. Du bist'n verdammt guter Kämpfer. Hier, nimm was von unserer Beute. Die Jungs haben gegen dich gewettet, aber nicht ich.. hehe... Ich hab' nämlich geseh'n, wie du da draußen gekämpft hast... ^^{s10}
 dlga_caravan_duel1:caravan_duel2|Ich könnte dich auch einfach töten und mir alles nehmen... aber ich muss hier nichts weiter beweisen. Fort mit dir!
 dlga_caravan_duel2:caravan_duel3|Die Männer respektier'n dich auf jed'n Fall! Oder sie ha'm Angst! Wie auch immer, sie werden ihren Herren jedenfalls erzähl'n was du hier gemacht hast. Wenn du die Bonzen weiter beeindruckst, könnten sie dir vielleicht irgendwas Wertvolles geben! Die Pferdenarren aus Rhun ha'm mir mal 'n Pferd gegeben! Ich hab's GEGESSEN! HARRHARRHARR!
 dlga_woodelf_help_6:woodelf_help_7|(TUTORIAL: RANGPUNKTE) ^^Rangpunkte erlauben dir, in der Hierarchie deiner Fraktion (und/oder anderer Fraktionen) aufzusteigen. ^^Dies beeinflusst deine maximale Truppengröße, dein wöchentliches Einkommen und schaltet außerdem fraktionsspezifische Belohnungen frei.
@@ -575,7 +575,7 @@ dlga_beorn_help1:beorn_help2|Freudige Begegnung! Obgleich wir nur selten unsere 
 dlga_beorn_help1:beorn_help2a|(Nicke schweigend)
 dlga_beorn_help2:beorn_help3|Es wäre klug, sich von jenen, die IHM dienen, fernzuhalten. Aber heutzutage scheint es, dass dies immer schwieriger wird. ^^Unser Volk wird erfahren, wie viele Orkköpfe Ihr heute habt rollen lassen! Und alle werden Euch mit Met und Brot willkommen heißen, wenn Ihr sie in einer unserer Heimstätten aufsucht.
 dlga_beorn_help2a:beorn_help3|*Brummt anerkennend* ^^Ein Elb der kappen Worte, wie? Ihr scheint mir eher wie einer von uns, kein öden elbischen Lieder oder langatmige Gedichte. ^^Eine gute Geschichte aus jenen Tagen als die Hügel noch jung und die Wälder endlos waren, das mögen wir am liebsten! ^^Und das ist, was ich meinem Volk über Euch berichten werden. Alle werden wissen, wie viele schändliche Orks Ihr heute erledigt habt. Met und warme Herzen werden Euch in jeder unserer hölzernen Hallen willkommen heißen.
-dlga_beorn_help3:beorn_help4|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du bei den Beorningern nutzen kannst, musst du hier vedienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
+dlga_beorn_help3:beorn_help4|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du bei den Beorningern nutzen kannst, musst du hier verdienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
 dlga_beorn_help4:beorn_help4a|*Lache mit hellem Klang* Haltet Ihr uns Elben etwa für Bären-Brüder wie Euch?...
 dlga_beorn_help4a:beorn_help5|*Lache mit hellem Klang* Haltet Ihr uns Elben etwa für Bären-Brüder wie Euch?... Goldener Met ist gut und wärmt das Herz, aber womöglich sind elbische Klingen und spitze Pfeile das, was wir in diesen Tagen eher benötigen...
 dlga_beorn_help4:beorn_help5|(Lege eine Hand aufs Herz, nicke und lächle)
@@ -583,17 +583,17 @@ dlga_beorn_help5:beorn_help6|Wir mögen roh und ungeschlachtet, grimmig und düs
 dlga_beorn_help6:beorn_help7|(TUTORIAL: RANGPUNKTE) ^^Rangpunkte erlauben dir, in der Hierarchie deiner Fraktion (und/oder anderer Fraktionen) aufzusteigen. ^^Dies beeinflusst deine maximale Truppengröße, dein wöchentliches Einkommen und schaltet außerdem fraktionsspezifische Belohnungen frei.
 dlga_beorn_help7:close_window|Le fael, Freund! Lebt wohl.
 dlga_beorn_help7:close_window.1|(Hebe die Hand und gehe, ohne ein Wort zu verlieren)
-; dlga_start:kill_scout_1|Great eyes and ears you have there! If you did not warn the group, those scouts would have escaped and have told their ugly lords that we are coming.
+dlga_start:kill_scout_1|Hast ziemlich gute Augen und Ohren! Wenn du die Truppe nicht gewarnt hättest, dann wären diese Späher entwischt und hätten ihren hässlichen Gebietern von uns erzählt.
 ; dlga_kill_scout_1:kill_scout_2|Watch where you are taking us, Orc... We did not travel this far to get stopped before the war begins!
-; dlga_kill_scout_2:kill_scout_3|And War we shall have! Here, take these. You can buy your men some food and drink when you get to Mordor.
-; dlga_kill_scout_3:kill_scout_4|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Mordor are not the ones you earned in your own faction, but the ones you will earn in Mordor. ^^See REPORTS for more information.
-; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill?! We'd rather be drinking our own piss!
-; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I've won my bet against Gothmog! haha!^^ I'll definitely tell him and the rest of the Mordor commands all about you! They'll definitely keep an eye on you.^^ If they like you, you'll get rewarded nicely. ^^MORE ORC BREW! AHAHA!
+dlga_kill_scout_2:kill_scout_3|Und Krieg werden wir haben! Hier, nimm das hier. Du kannst damit deinen Männern was zum Beißen und zum Saufen kaufen, wenn du nach Mordor kommst.
+dlga_kill_scout_3:kill_scout_4|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du in Mordor nutzen kannst, musst du hier verdienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
+dlga_kill_scout_4:kill_scout_5|Du willst, dass wir Orkgesöff trinken? Eher saufen wir unsere eigene Pisse!
+dlga_kill_scout_5:kill_scout_6|Ha! Ich wusste das ihr Ausländer sowas macht! Ich hab meine Wette gegen Gothmog gewonnen! Harrharr!^^ Ich werde auf jeden Fall ihm und den anderen Feldherren von Mordor von dir erzählen! Sie werden dich im Auge behalten. ^^Wenn sie dich mögen, wirst du gut belohnt: ^^NOCH  MEHR ORKGESÖFF! HARRHARRHARR!
 dlga_kill_scout_6:kill_scout_7|(TUTORIAL: RANGPUNKTE) ^^Rangpunkte erlauben dir, in der Hierarchie deiner Fraktion (und/oder anderer Fraktionen) aufzusteigen. ^^Dies beeinflusst deine maximale Truppengröße, dein wöchentliches Einkommen und schaltet außerdem fraktionsspezifische Belohnungen frei.
-; dlga_kill_scout_7:kill_scout_8|You disgust me, Orc! Onward to Mordor, before we decorate our spears with your head!
-; dlga_kill_scout_8:close_window|Yea yea... piss drinking foreigner...!
-; dlga_woodelf_help_1:woodelf_help_2.1|I have never seen such a large orc before. Nasty things. Do not fret. I am a Soldier in this coming war that we have all been sensing.
-; dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.
+dlga_kill_scout_7:kill_scout_8|Du widerst mich an, Ork! Auf, nach Mordor mit dir, bevor wir unsere Speere mit euren Köpfen verzieren!
+dlga_kill_scout_8:close_window|Jaja, sicher... pissesaufender Ausländer...!
+dlga_woodelf_help_1:woodelf_help_2.1|Ich habe noch nie einen so großen Ork gesehen. Widerliche Kreaturen. Aber fürchtet Euch nicht. Ich bin ein Soldat in diesem Krieg, dessen Heraufziehen wir spüren.
+dlga_woodelf_help_2:woodelf_help_3.1|Ihr seid ein Soldat? Aber natürlich! Ich habe gesehen, dass Ihr ein tüchtiger Krieger seid. ^^Ich habe großes Glück gehabt, also will ich dieses rasch nutzen und in mein Dorf eilen, um mein Volk vor diesen abscheulichen Kreaturen zu warnen.
 dlga_woodelf_help_3:close_window|Gute Reise Euch, Torbal. Ich bin mir sicher, dass wir uns wiedersehen werden.
 dlga_start:close_window.9|Ihr kommt gerade rechtzeitig. Lasst uns unsere Kräfte vereinen und dem Feind eine Lehre erteilen.
 dlga_start:close_window.10|Ihr macht einen großen Fehler, wenn Ihr gegen uns kämpft.

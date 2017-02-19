@@ -1,7 +1,7 @@
 qst_deliver_message|给{s13}送一封信
 qst_deliver_message_text|{s9}希望你给{s13}送一封信。你接受任务时{s13}正位于{s4}。
 qst_deliver_message_to_enemy_lord|给{s13}送一封信
-qst_deliver_message_to_enemy_lord_text|{s9}希望你给隶属于{s15}的{s13}送信。你接受任务时{s13}正位于{s4}。
+qst_deliver_message_to_enemy_lord_text|{s9}希望你给{s15}的{s13}送信。你接受任务时{s13}正位于{s4}。
 qst_raise_troops|在{s14}征{reg1}的税
 qst_raise_troops_text|{s9}希望你在{s14}征{reg1}的税并带给他。
 qst_escort_messenger|护送信使到{s14}
@@ -46,7 +46,7 @@ qst_report_to_army|向{s13}报告
 qst_report_to_army_text|无
 qst_deliver_cattle_to_army|将{reg3}单位的食物带给{s13}
 qst_deliver_cattle_to_army_text|无
-qst_join_siege_with_army|加入{s14}攻城战
+qst_join_siege_with_army|加入对{s14}的围攻
 qst_join_siege_with_army_text|无
 qst_scout_waypoints|侦察{s13}，{s14}和{s15}
 qst_scout_waypoints_text|无
@@ -63,9 +63,9 @@ qst_deal_with_looters_text|{s4}的长老希望你能解决掉位于{s4}附近的
 qst_deal_with_night_bandits|解决半兽人夜匪
 qst_deal_with_night_bandits_text|{s14}的长老希望你能解决肆虐{s14}的半兽人夜匪
 qst_deliver_food|向{s3}支援{reg5}单位的食物
-qst_deliver_food_text|隶属于{s3}的{s9}希望你在10天内带给他{reg5}单位的食物。
+qst_deliver_food_text|{s3}的{s9}希望你在10天内带给他{reg5}单位的食物。
 qst_deliver_iron|向{s3}支援{reg5}单位的{s6}
-qst_deliver_iron_text|隶属于{s3}的{s9}希望你带给他{reg5}单位的{s6}。
+qst_deliver_iron_text|{s3}的{s9}希望你带给他{reg5}单位的{s6}。
 qst_tld_introduction|将魔多半兽人的消息带给指挥官
 qst_tld_introduction_text|无
 qst_treebeard_kill_orcs|击败半兽人伐木队

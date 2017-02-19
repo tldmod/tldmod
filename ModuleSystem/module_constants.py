@@ -2167,10 +2167,10 @@ tld_rout_party_spawn_ratio_denominator	= 100
 # Party count option in tweaks menu
 
 tld_party_count_option_increment	= 10
-tld_party_count_option_max		= 900
-tld_party_count_option_min		= 600
-tld_party_count_option_high_crash	= 901
-tld_party_count_option_med_crash	= 850
+tld_party_count_option_max		= 1500
+tld_party_count_option_min		= 800
+tld_party_count_option_high_crash	= 1101
+tld_party_count_option_med_crash	= 950
 
 # Hero parties smaller than this will not siege...
 

@@ -589,7 +589,7 @@ qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (en {s16})
 qstr_^No_food:___{reg7}|^Sin comida:  -{reg7}
-qstr_Current_party_morale|La moral actual del grupo es de {reg5} puntos.^Los modificadores de la moral del grupo son:^^Base moral:  +50^Tamaño del Grupo: {s2}{reg1}^Liderazgo: {s3}{reg2}^Variedad de comida: {s4}{reg3}{s5}^Objetos Especiales: {s6}{reg6}^Sucesos recientes: {s7}{reg4}^TOTAL:  {reg5}
+qstr_Current_party_morale|La moral actual del grupo es de {reg5} puntos.^Los modificadores de la moral del grupo son:^^Moral inicial:  +50^Tamaño del Grupo: {s2}{reg1}^Liderazgo: {s3}{reg2}^Variedad de comida: {s4}{reg3}{s5}^Objetos Especiales: {s6}{reg6}^Sucesos recientes: {s7}{reg4}^TOTAL:  {reg5}
 qstr_Defending|Defendiendo
 qstr_Gathering_army|Reuniendo ejército
 qstr_Besieging_{s11}|Asediando {s11}
