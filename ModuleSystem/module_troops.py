@@ -4,6 +4,7 @@ import random
 from header_common import *
 from header_items import *
 from header_troops import *
+from header_item_modifiers import *
 from header_skills import *
 from ID_factions import *
 from ID_items import *
@@ -3197,6 +3198,27 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_beorn_berserk,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,itm_dale_helmet_b,itm_beorn_battle_axe,itm_dale_sword_long,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_6|knows_power_strike_3|knows_ironflesh_6,beorn_face1,beorn_face2],
 
+## Kham Amath Dollen's Troops
+
+["black_shield","Amath_Dollen","-",tf_hero| tf_evil_man| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rhun,
+   [itm_corsair_boots,itm_evil_gauntlets_a,itm_m_uruk_heavy_j,itm_rhun_helm_a,itm_rhun_sword,itm_mordor_uruk_shield_a,],
+      attr_tier_5,wp_tier_6,knows_common|knows_athletics_7|knows_shield_7|knows_power_strike_7|knows_ironflesh_7,0x000000003f00b30d2d2ea72ac902553500000000001d42300000000000000000],
+
+["black_shield_bandit","Amath_Dollen's_Bandit","Amath_Dollen's_Bandits",tf_evil_man| tf_randomize_face| tfg_shield| tfg_armor| tfg_boots,0,0,fac_rhun,
+   [itm_furry_boots,itm_leather_gloves,itm_dunland_armor_a,itm_dunland_armor_b,itm_dunland_armor_c,itm_dunland_armor_d,itm_dunland_armor_e,itm_dunland_armor_g,itm_dunland_armor_h,itm_orc_throwing_axes,itm_umb_hood,itm_orc_shield_a,itm_orc_shield_b,itm_orc_club_a,itm_orc_club_b,itm_orc_axe,],
+      attr_tier_3,wp_tier_3,knows_common|knows_athletics_3|knows_shield_3|knows_power_strike_3|knows_ironflesh_3|knows_power_throw_3,rhun_man1,rhun_man2],
+
+["black_shield_scout","Amath_Dollen's_Scout","Amath_Dollen's_Scouts",tf_evil_man| tf_randomize_face|tfg_helm|tfg_armor| tfg_boots|tfg_ranged,0,0,fac_rhun,
+   [itm_furry_boots,itm_leather_gloves,itm_dunland_armor_a,itm_dunland_armor_b,itm_dunland_armor_c,itm_dunland_armor_d,itm_dunland_armor_e,itm_dunland_armor_g,itm_dunland_armor_h,itm_umb_hood,itm_gondor_ranger_hood_mask,itm_orc_club_a,itm_orc_bow,],
+      attr_tier_3,wp_tier_3,knows_common|knows_athletics_3|knows_shield_3|knows_power_strike_3|knows_ironflesh_3|knows_power_draw_5,rhun_man1,rhun_man2],
+
+["black_shield_guard","Amath_Dollen's_Guard","Amath_Dollen's_Guards",tf_evil_man| tf_randomize_face|tfg_helm| tfg_shield| tfg_armor| tfg_boots,0,0,fac_rhun,
+   [itm_furry_boots,itm_leather_gloves,itm_dunland_armor_i,itm_dunland_armor_j,itm_corsair_harpoon,itm_rhun_helm_c,itm_mordor_uruk_shield_a,itm_rhun_falchion,itm_rhun_sword,itm_rhun_shortsword],
+      attr_tier_4,wp_tier_4,knows_common|knows_athletics_5|knows_shield_5|knows_power_strike_5|knows_ironflesh_5|knows_power_throw_5,rhun_man1,rhun_man2],
+
+["dorwinion_spirit_leader","Spirit","_", tf_uruk|tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+  [itm_dunland_armor_k,itm_empty_hands,itm_empty_legs,(itm_empty_head,imod_old)],
+    def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 

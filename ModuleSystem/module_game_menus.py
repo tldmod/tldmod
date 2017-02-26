@@ -1,4 +1,5 @@
-﻿from header_common import *
+# -*- coding: utf-8 -*-
+from header_common import *
 from header_game_menus import *
 from header_parties import *
 from header_items import *
@@ -241,6 +242,8 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 5),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_7" ,[],"Ambush, Orcs vs Mirkwood",
 		[(assign, "$g_custom_battle_scenario", 6),(jump_to_menu, "mnu_custom_battle_2"),]),
+	("dressing_room" ,[],"Dressing Room",
+		[(assign, "$g_custom_battle_scenario", 99),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_8",[],"           Attack, Gondor vs Corsairs",
 #		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_9",[],"Football fun        ",
@@ -430,6 +433,18 @@ game_menus = [
 		(str_store_string, s16, "str_custom_battle_1"),
 
 ############################################# "Elves kick ass"
+     (else_try),
+     (eq, "$g_custom_battle_scenario", 99),
+       (assign, "$g_custom_battle_scene", "scn_quick_battle_ambush"),
+       (assign, "$g_player_troop", "trp_knight_3_6"),
+       (set_player_troop, "$g_player_troop"),
+       (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (set_visitor, 0, "$g_player_troop"),
+       (set_visitor, 1, "trp_dorwinion_spirit_leader"),
+       (set_visitors,2, "trp_black_shield_bandit", 3),
+       (set_visitors,3, "trp_black_shield_scout", 3),
+       (set_visitors,4, "trp_black_shield_guard", 3),
+       (str_store_string, s16, "@Dressing Room"),
      (else_try),
        (eq, "$g_custom_battle_scenario", 2),
        (assign, "$g_custom_battle_scene", "scn_quick_battle_3"),
