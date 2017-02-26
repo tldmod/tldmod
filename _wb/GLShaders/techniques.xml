@@ -1107,5 +1107,11 @@
 			<vertex_shader name="vs_main.glsl"/>
 			<fragment_shader name="ps_main.glsl"/>
 		</technique>
+        
+		<!-- swy_simple_shader_spiritual [swy_simple_shader_spiritual] - copied from simple_shading with changes -->
+		<technique name="swy_simple_shader_spiritual">
+			<vertex_shader name="vs_font.glsl"/>
+			<fragment_shader name="ps_main_no_shadow.glsl"/>
+		</technique>
 	</techniques>
 </data>

@@ -3217,7 +3217,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_5|knows_shield_5|knows_power_strike_5|knows_ironflesh_5|knows_power_throw_5,rhun_man1,rhun_man2],
 
 ["dorwinion_spirit_leader","Spirit","_", tf_uruk|tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
-  [itm_dunland_armor_k,itm_empty_hands,itm_empty_legs,(itm_empty_head,imod_old)],
+  [(itm_dunland_armor_k,imod_old),itm_empty_hands,itm_empty_legs,(itm_empty_head,imod_old)],
     def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],

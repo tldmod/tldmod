@@ -719,7 +719,7 @@ items =[
 ["dunland_armor_h","Dun_Long_Fur_Armor",[("dunland_long_fur",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,900,weight(16)|head_armor(2)|body_armor(16)|leg_armor(9)|difficulty(0),imodbits_cloth,],
 ["dunland_armor_i","Dunnish_Hauberk",[("dunland_hauberk_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(23)|head_armor(2)|body_armor(22)|leg_armor(7)|difficulty(0),imodbits_armor,],
 ["dunland_armor_j","Dunland_Hauberk",[("dunland_hauberk_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(23)|head_armor(2)|body_armor(22)|leg_armor(10)|difficulty(0),imodbits_armor,],
-["dunland_armor_k","Dun_Chief_Armor",[("dunland_chieftain",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(26)|head_armor(2)|body_armor(25)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
+["dunland_armor_k","Dun_Chief_Armor",[("dunland_chieftain",0), ("dunland_chieftain_spirit",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(26)|head_armor(2)|body_armor(25)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
 #######HELMS##########
 ["dun_helm_a","Dunnish_Wolf_Cap",[("dunland_wolfcap",0)],itp_type_head_armor|itp_shop,0,300,weight(2)|head_armor(25)|difficulty(0),imodbits_cloth],
 ["dun_helm_b","Dunnish_Antler_Cap",[("dunland_antlercap",0)],itp_type_head_armor|itp_shop,0,200,weight(2)|head_armor(21)|difficulty(0),imodbits_cloth],

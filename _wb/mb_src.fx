@@ -643,6 +643,80 @@ PS_OUTPUT ps_main_no_shadow(VS_OUTPUT_FONT_X In, uniform const bool swy_is_ui = 
 	
 	return Output;
 }
+
+
+
+struct VS_OUTPUT_SPIRITUAL
+{
+	float4 Pos					: POSITION;
+	float4 Color					: COLOR0;
+	float2 Tex0					: TEXCOORD0;
+	float  Fog				    : FOG;
+};
+
+VS_OUTPUT_SPIRITUAL vs_font_spiritual(float4 vPosition : POSITION, float4 vColor : COLOR, float3 vNormal : NORMAL, float2 tc : TEXCOORD0)
+{
+	VS_OUTPUT_SPIRITUAL Out;
+    
+   Out.Pos = mul(matWorldViewProj, vPosition);
+   
+   float4 vWorldPos = (float4)mul(matWorld,vPosition);
+   float3 vWorldN = normalize(mul((float3x3)matWorld, vNormal)); //normal in world space
+   
+   // red eye effect begin:
+   float3 vViewN = normalize(mul((float3x3)matWorldView, vNormal)); //normal in view space
+   
+   
+   //tc += sin(time_var) // (1.0 - abs(vViewN.zzz * 2.)) * 3;
+   
+		//float seed = time_var + (vPosition.x/vPosition.y/vPosition.z);
+
+		//vPositionw.y += ((sin(seed+cos(vPosition.x))*0.4f)* vPosition.x)/vPosition.z;
+
+    
+    //vPosition.x += sin(sin(time_var+vPosition.x)) / vPosition.z;
+   // vPosition.y += cos(sin(time_var+vPosition.y)) / vPosition.z;
+   // vPosition.z += sin(cos(time_var+vPosition.z)) / vPosition.z;
+   
+   
+    vPosition.x += sin(vWorldPos.x + time_var*8.) / 50.;
+    vPosition.z += cos(vWorldPos.x + time_var*8.) / 50.;
+
+    vPosition.z += sin(vWorldPos.y + time_var*1.) / 50.;
+    vPosition.y += cos(vWorldPos.x + time_var*2.) / 50.;
+    
+
+	float3 P = mul(matWorldView, vPosition); //position in view space
+
+	Out.Tex0 = tc;
+	Out.Color.rgb = (1.0 - abs(vViewN.zzz * 2.)) * 3.;//vColor * vMaterialColor;
+
+    Out.Color.rgb -= vColor;
+    Out.Color.a = vWorldPos.y + 0.5;
+
+	//apply fog
+	float d = length(P);
+	
+	Out.Fog = get_fog_amount_new(d, vWorldPos.z);
+
+	return Out;
+}
+PS_OUTPUT ps_main_no_shadow_spiritual(VS_OUTPUT_SPIRITUAL In, uniform const bool swy_is_ui = false) 
+{ 
+	PS_OUTPUT Output;
+	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
+    
+	Output.RGBColor.rgb = tex_col.rgb + In.Color;
+    
+    Output.RGBColor.a =  min(0.7,1.0-In.Color) ;//1.0;// In.Color;//1.0;//0.5;
+   
+       
+    Output.RGBColor *= float4(198./255., 196./255., 158./255., .8);
+   
+	return Output;
+}
+
+
 PS_OUTPUT ps_simple_no_filtering(VS_OUTPUT_FONT_X In) 
 { 
 	PS_OUTPUT Output;
@@ -687,6 +761,16 @@ technique simple_shading //Uses gamma
 		PixelShader = compile ps_2_0 ps_main_no_shadow();
 	}
 }
+
+technique swy_simple_shading_spiritual //Uses gamma
+{
+	pass P0
+	{
+		VertexShader = compile vs_2_0 vs_font_spiritual();
+		PixelShader = compile ps_2_0 ps_main_no_shadow_spiritual();
+	}
+}
+
 /* swyter-- custom technique for controlling the opacity of the HP overlay */
 technique swy_tld_hp_overlay //Uses gamma
 {
