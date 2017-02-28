@@ -1,9 +1,9 @@
 menu_start_game_1|^^^^^^^^^^자네는 무엇을 위해 싸우는가?
-mno_start_good|새로운 시대의 새벽
+mno_start_good|새로운 시대의 시작
 mno_start_evil|인간의 황혼
 mno_go_bback|돌아가기
 menu_start_phase_2|^^^^^가운데땅. 그림자는 동쪽에서 커 나가고 있고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이 때까지 보지 못했던 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
-; mno_go_forth|          Go forth upon your chosen path...
+mno_go_forth|당신이 선택한 길을 따라 앞으로 가십시오...
 menu_start_game_3|^^^^^^^당신의 이야기를 선택하세요:
 mno_custom_battle_scenario_1|교전, 곤도르 vs 하라드
 mno_custom_battle_scenario_12|전투를 위한 진영을 선택하세요.
@@ -19,13 +19,13 @@ mno_warg_battle_scenario|연습 와르그 전투
 mno_build_your_own_scene|**제 3시대에서 당신만의 이야기를 만드세요 **
 menu_tutorial|^^제 3시대 모드는 마운트 앤 블레이드 원작에서는 없는 많은 특징을 갖고 있습니다. 그것들은 발매될 때 PDF에 포함되었으나 스포일러 되지 않고 묘사된 것들입니다. 원작 모듈을 사용하기 위해 기본적인 게임 기능을 튜토리얼 할 것입니다.
 mno_go_back_dot|돌아가기
-; mno_action_view_troop_trees|View troop trees.
+mno_action_view_troop_trees|부대 승급 트리 보기
 mno_view_upkeep_costs|유지비 보기
 mno_view_character_report|캐릭터 정보 보기
 mno_view_party_size_report|부대크기 보기
 mno_view_morale_report|부대 사기 보기
 mno_view_character_report_02|NPC 상태 확인
-mno_view_faction_strengths_report|진영 군사력 보고서 보기
+mno_view_faction_strengths_report|세력 군사력 보고서 보기
 mno_view_traits_report|특성 보기
 mno_resume_travelling|계속 여행한다
 mno_custom_battle_go|시작
@@ -150,8 +150,8 @@ mno_strat_tweaks_siege_reqs|공성에 필요한 힘 요구량:{s7}
 mno_strat_tweaks_siege_relax_rate|공성에 필요한 힘과 휴식 비율 : {reg1}
 mno_strat_tweaks_regen_rate|힘 회복 비율:{s7}
 mno_strat_tweaks_siege_regen_limit|각 진영은 이 아래로는 회복이 안됩니다:{reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
+mno_strat_tweaks_influence_gain_rate|영향력 획득 비율: {s7}
+mno_strat_tweaks_rank_gain_rate|지위 획득 비율: {s7}
 mno_strat_tweaks_back|조정 메뉴로 돌아가기
 menu_camp_action|^^^^^^^^^어떤 물건을 선택하시겠습니까?
 mno_camp_customize_defilement|더럽혀진 방어구 커스터마이징
@@ -263,7 +263,7 @@ menu_village_hunt_down_fugitive_defeated|도망자들로부터의 무거운 타�
 menu_town_bandits_succeeded|고블린은 당신앞에 낙엽처럼 쓰러졌습니다! 이내 당신은 공격자 대부분이 의식을 잃고 죽거나 죽어가는 가운데 홀로 서 있었습니다. 위협으로부터 그들을 구원함으로서 지역 주민들은 확실히 매우 감사히 여길 것입니다.
 menu_town_brawl_lost|^^^^^^당신은 의식을 잃고 쓰러졌습니다. 당신을 공격한 이들은 그들의 일상으로 돌아가기 전 빠르게 당신 품을 뒤져 값나가는 것을 챙겨갔습니다.
 menu_town_brawl_won|^^^^당신은 모든 상대를 두들겨 팬 후 소요를 진압하기 위해 경비병을 보냈습니다. 당신은 빠르게 품 속을 뒤져 값 나가는 물건을 챙기고 사라졌습니다.^다음 번에 만났을 때 아마 그들은 더 많은 존경을 표하고 물러갈 것입니다.
-; menu_close|Nothing.
+menu_close|아무 것도 안하기
 menu_town|당신은 {s60}에 도착했습니다.{s12}{s13}
 mno_town_menu_0|들어가기
 mno_town_menu_0_door|입구
@@ -278,8 +278,8 @@ mno_trade_with_horse_merchant|말 상인과 거래
 mno_town_prison_door|감옥에 입장
 mno_dungeon_enter|산 속에서 잃어버린 창들을 찾기
 mno_dungeon_enter_door|문 열기
-; mno_dwarven_warehouse|Visit the Dwarven Warehouse
-; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
+mno_dwarven_warehouse|드워프 창고 방문하기
+mno_dwarven_warehouse_door|드워프 창고에 들어가기
 mno_talk_to_castle_commander|{s61}의 병영을 방문
 mno_speak_with_elder|{s6}와(과) 대화
 mno_isengard_underground|지하 선술집에 들어가기
@@ -314,18 +314,18 @@ menu_notification_faction_defeated|^^^^^{s1} 는 패배했습니다!^{s1}은 {s1
 menu_ruins|^^^^당신은 {s1} 가까이 접근했습니다. 비록 강력한 주둔지가 파괴되었지만, 당신은 여전히 요새의 흔적과 녹슨 무기를 볼 수 있습니다.
 menu_legendary_place|^^^^당신은 소문을 따라 {s1}을 찾아냈다. 당신은 이 장소를 탐험하고 소문이 진실인지 직접 확인할 수 있다.
 mno_explore|이 장소 탐험하기
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
-; mno_leave_bandit_lair|Leave for now.
+menu_ring_hunter_lair|^^^^당신은 어둠숲 속 반지 추적자들의 흔적을 따라갔고 {s1}에 도착했고 그들이 상자를 들고 떠나려는 것을 목격했습니다.
+mno_attack_lair|지금 그들을 공격하자
+mno_leave_bandit_lair|지금은 떠나자
 menu_starting_quest_good|^^^^^^당신은 오크 무리에 공격 받고 있는 작은 상단을 발견했습니다. 당신은 무엇을 하겠습니까?
 mno_help|이방인을 돕기
-; mno_start_defend_caravan|Defend the Caravan!
-; mno_start_raid_caravan|Raid the Caravan!
-; mno_start_ambush_orcs|Ambush the Orcs!
-; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
+mno_start_defend_caravan|캐러밴을 지키자!
+mno_start_raid_caravan|캐러밴을 습격하자!
+mno_start_ambush_orcs|오크에게 기습을 가하자!
+mno_start_kill_scouts|정찰병들이 당신의 도착을 알리지 못하게 막자!
 mno_go_your_way|놔 둔 채로 떠나기
-; mno_defend_villagers|Defend the Villagers!
-; mno_raid_villagers|Raid the Village!
+mno_defend_villagers|마을 주민들을 지키자!
+mno_raid_villagers|마을을 습격하자!
 mno_go_away|놔 둔 채로 떠나기
 menu_custom_battle_choose_faction1|^^^^^^^^^^당신의 진영과 이점을 선택하세요:
 mno_good_equal|선한 진영
@@ -363,21 +363,21 @@ mno_leave_mound|봉분 떠나기
 menu_burial_mound_respects|당신은 무릎을 꿇어 {s1}에 경의를 표하고, 내세로의 빠른 여행을 위해 조용히 기도했습니다. 이 곳에서 수행할 행동이 더이상 남아있지 않습니다.
 menu_burial_mound_oath|당신은 큰 소리로 {s4}의 죽음에 대한 복수의 맹세를 했습니다. 당신은 끊임없이 {s3}의 힘을 추구하고 그들을 파괴합니다. 당신의 말은 저 멀리 바람에 실려가고 바다 너머 그들이 들었을지 누가 알겠습니까?
 menu_burial_mound_despoil|당신은 직접 {s1}의 기념비를 철거하고 그 돌덩이를 저주, 저속한 노래와 이루 말할 수 없는 행위들을 통해 더럽혔습니다. 당신의 부대원들은 죽은 자에 대한 두려움으로 뒤로 물러섰지만 당신의 사악함에 대한 경외감을 새로 갖게 된 것으로 보입니다.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
-; mno_leave_pyre|Leave the pyre.
-; menu_town_ruins|When you approach, you see that {s1} is {s2}
+menu_funeral_pyre|당신은 {s2}의 {s3}의 불타고 재만 남은 화장용 장작더미에 다가갑니다. 여기에서 그의 경호원들이 그의 시신으로 화장의식을 치뤘습니다. 가치있는 것은 남아있지 않습니다.
+mno_leave_pyre|장작더미를 떠나기
+menu_town_ruins|당신이 다가갔을때, 당신은 {s1}이 {s2}임을 확인했습니다.
 mno_ruin_menu_0|이 장소 탐험하기
 mno_ruin_leave|떠나기
 menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은 이제 거기에 끼지 못합니다.
-; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
-; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
-; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
-; menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
-; mno_scene1|Battlefield5 (file scn battlefield5.sco)
-; mno_scene2|Battlefield6 (file scn battlefield6.sco)
-; mno_scene3|Battlefield7 (file scn battlefield7.sco)
-; mno_scene4|Battlefield8 (file scn battlefield8.sco)
-; mno_scene5|Battlefield9 (file scn battlefield9.sco)
-; mno_back_3dot|Back...
+menu_animal_ambush|당신과 당신의 동료들은 나머지 일행과 떨어져 있다는 것을 알아차렸습니다, 그리고 갑자기...
+menu_animal_ambush_success|{s2}들은 당신 앞에 낫에 잘린 벼이삭마냥 {reg0?쓰러졌습니다:쓰러졌습니다} !  곧 당신을 공격한 이들은 전부 죽거나 기절해 쓰러져 있습니다. {s3}
+menu_animal_ambush_fail|짐승들이 당신{reg0?,: 그리고 당신 동료{reg2?들,:,}}을 물어뜯으며 공격하지만 운좋게도 그들을 물리치는데 성공했습니다. 바라건대 다시는 짐승들에게 공격받지 않기를.
+menu_build_your_scene|여기서 아래에 제공된 슬롯 중 하나와 게임 에디트 모드(그 전에 마운트 앤 블레이드 시작 스크린 옵션에서 에디트 모드를 키셔야합니다)를 사용해 당신만의 전장을 만들 수 있습니다. 당신이 만든 전장을 TLD의 dev team에게 보내주시고 (TLD/SceneObj 폴더의 sco 파일형태로), 그 전장이 멋지다면 다음 릴리즈에서 랜덤 전투장소 중에 하나로 나올 수 있습니다!^^ 지도의 어떤 장소에서 당신의 전장이 나타나게 할 지 확실하게 표시해 주십시오.^ 힌트: AI 부대가 어디로 움직이는 지 컨트롤 할 수 있는 경험 많은 분이 아니라면 깊은 물이나 높은 산 등 지나갈 수 없는 지형은 피해서 제작해 주세요. (입력은 공격자에게 #0-1, 방어자에게 #4, 그리고 #5-8는 건드리지 마십시오)
+mno_scene1|전장Battlefield5 (file scn battlefield5.sco)
+mno_scene2|전장Battlefield6 (file scn battlefield6.sco)
+mno_scene3|전장Battlefield7 (file scn battlefield7.sco)
+mno_scene4|전장Battlefield8 (file scn battlefield8.sco)
+mno_scene5|전장Battlefield9 (file scn battlefield9.sco)
+mno_back_3dot|돌아가기...
 mno_back|돌아가기
-; mno_next|Next...
+mno_next|다음으로...

@@ -61,9 +61,9 @@ qstr_The_White_Tree_stand|Il Bianco Albero giace morto da quando la linea dei Re
 qstr_The_Shadow_grows_eve|L'ombra cresce sempre più forte nell'est
 qstr_Minas_Morgul___City_|Minas Morgul - La Città dei Nazgul
 qstr_Sauron_s_armies_marc|Gli eserciti di Sauron marciano in guerra !
-qstr_Adventurers_at_audie|Avventurieri in udienza pubblica con il tenutario Denethor..
+qstr_Adventurers_at_audie|Avventurieri in udienza pubblica con il Sovrintendente Denethor..
 qstr___What_business_do_y|'Che affari avete qui, mendicanti ?
-qstr___Your_Stewardship_w|Tenutario, veniamo da terre distanti per.. Saltare !'
+qstr___Your_Stewardship_w|Sovrintendente, veniamo da terre distanti per.. Saltare !'
 qstr___Enough_of_this_mad|'Ne ho abbastanza di questa follia! Guardie !!'
 qstr___I_ve_had_enough_of|'Ne ho abbastanza di scherzi di questo genere.. Che i prossimi vengano in ginocchio !'
 qstr_Chest|Torace
@@ -82,8 +82,8 @@ qstr_Ironflesh^Power_Stri|Resistenza^Forza del Colpo^Potenza di Lancio^Scudo^Atl
 qstr_Proficiencies|Competenze
 qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi ad Asta^Tiro con l'Arco^Balestre^Lancio
 qstr_Equipments|Equipaggiamento
-qstr_You_gained_{reg0}_Re|Hai ottenuto {reg0} Punti Risorsa da {s0}.
-qstr_You_lost_{reg0}_Reso|Hai perso {reg0} Punti Risorsa da {s0}.
+qstr_You_gained_{reg0}_Re|Hai ottenuto {reg0} Punti Risorsa da: {s0}.
+qstr_You_lost_{reg0}_Reso|Hai perso {reg0} Punti Risorsa da: {s0}.
 qstr_{s24}:|{s24}:
 qstr_Great_Hope_of_{s5}|Grande Speranza di {s5}
 qstr_Hope_of_{s5}|Speranza di {s5}
@@ -178,7 +178,7 @@ qstr_near_what_is_left_of|vicino a quello che è rimasto della vecchia Strada de
 qstr_close_to_the_Hand_sh|vicino al segno a forma di mano di Saruman, puntando verso la torre di Orthanc
 qstr_in_sight_of_the_maje|in vista delle maestose mura della città di Minas Tirith, la Città Bianca
 qstr_in_sight_of_the_entr|in vista dell'ingresso di Erebor, la fortezza nanica
-qstr_in_sight_of_the_dark|in vista della Torre oscura di Orthanc
+qstr_in_sight_of_the_dark|in vista della Torre Oscura di Orthanc
 qstr_near_the_Old_Ford_wh|vicino al Vecchio Guado, dove la Vecchia Strada della Foresta attraversa il fiume Anduin
 qstr_near_a_big_ford_cros|vicino ad un grande guado che attraversa il fiume {s15}
 qstr_near_a_small_ford_cr|vicino ad un piccolo guado che attraversa il fiume {s15}
@@ -263,7 +263,7 @@ qstr_Death_to_men!|Morte agli uomini !
 qstr_Kill_the_maggots!|Uccidete questi vermi !
 qstr_Death_to_traitors_of|Morte ai traditori dell'occhio di Sauron !
 qstr_Death_to_traitors_of_|Morte ai traditori della Mano Bianca di Saruman !
-qstr_{s14}Kill_them_all!_|{s14} Uccideteli tutt i! Non prendete prigionieri 
+qstr_{s14}Kill_them_all!_|{s14} Uccideteli tutti ! Non prendete prigionieri !
 qstr_Tonight_we_feast_on_|Stasera festeggeremo con la carne di {s15} !
 qstr_Gharr!_Kill!_Kill!_K|Gharr ! Uccidi ! Uccidi ! Uccidi !
 qstr_Slaughter_these_half|Fate a pezzi questi mezzi uomini !
@@ -321,7 +321,7 @@ qstr_Given_on:_{s60}|Data incarico : {s60}
 qstr_You_have_{reg0}_days|Hai {reg0} giorni per completare questo incarico.
 qstr_This_quest_has_been_|Questo incarico è stato completato. Parla con {s59} per terminarlo. 
 qstr_This_quest_has_been_s|Questo incarico è stato completato con successo. Parla con {s59} per ottenere la tua ricompensa.
-qstr_This_quest_has_faile|L'incarico è fallito. Parla con {s59} per spiegare la situazione.
+qstr_This_quest_has_faile|Questa missione è stata un fallimento. Parla con {s59} per spiegare la situazione.
 qstr_At_the_time_quest_wa|Quando la missione ti è stata assegnata:^{s1}
 qstr_{s7}_and_{s8}|{s7} e {s8}
 qstr_{s7}_{s8}|{s7}, {s8}
@@ -653,8 +653,8 @@ qstr_dwarf|nano
 qstr_troll|troll
 qstr_dunedain|dunedain
 qstr_lothlorien|lothorien
-qstr_rivendell|rivendell
-qstr_mirkwood|mirkwood
+qstr_rivendell|Gran Burrone
+qstr_mirkwood|Bosco Atro
 qstr_evil_man|Uomo malvagio
 qstr_{reg11}0___{reg11}9|{reg11}0 - {reg11}9
 qstr_Regular_troops_only|Solo per le truppe regolari
@@ -720,7 +720,7 @@ qstr_You_have_fallen._The|Sei caduto. I banditi cercano sul tuo cadavere in cerc
 qstr_Luckily_some_of_your|Per fortuna alcuni dei tuoi compagni sono venuti a cercarti quando non sei tornato, e ti hanno trovato che giacevi nel fosso. Ti hanno portato in salvo e curato le ferite.
 qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentre menti nel fossato, e ti hanno riconosciuto come un semplice pezzente. Ti portano al sicuro e si prendono cura delle tue ferite
 qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
-qstr_the_place|il posto
+qstr_the_place|il luogo
 qstr_the_castle|il castello
 qstr_Stay_indoors_for_som|Attendi un po' di tempo ({reg1} Punti Risorsa per notte)
 qstr_Camp_outside_for_som|Ti sei accampato all'aperto per un po' di tempo (nessun costo)
@@ -760,7 +760,7 @@ qstr_You_cover_up_your_tr|Copri le tue tracce e continui a muoverti.
 qstr_Breaking_camp...|Smantellamento del campo...
 qstr_You_have_left_{s1}.|Lasci: {s1}.
 qstr_You_are_entering_{s1|Accedi a: {s1} ({s2}).
-qstr_You_are_entering_{s1}|Sei entrato {s1}.
+qstr_You_are_entering_{s1}|Accedi a: {s1}.
 qstr_The_war_expands_comm|La guerra si espande, i comandanti sono sempre più audaci ! (Ridotti i requisiti di assedio)
 qstr_Your_party_is_spotte|La tua compagnia è stata avvistata da {s1}.
 qstr_Party_has_nothing_to|Le scorte di cibo sono terminate !
@@ -862,7 +862,7 @@ qstr_I_don_t_have_any_ser|Non ho nessuna ferita grave, ti ringrazio.
 qstr_Good_day_to_you.|Buona giornata a te.
 qstr_Ah_it_s_you_again._G|Ah, sei tu di nuovo. Arrivederci.
 qstr_My_apologies_if_I_wa|Mi scuso se prima sono stato rude. Dimmi, qual'era la tua storia?
-qstr_I_was_reconsidering_|Stavo ripensando alla nostra ultima conversazione. Qual'era la tua storia puoi ricordarmela?
+qstr_I_was_reconsidering_|Stavo ripensando alla nostra ultima conversazione. Qual'era la tua storia.. Puoi ricordarmela ?
 qstr_Greetings_{s23}_{s24|Salve, {s23}, {s24}.
 qstr_Greetings_{s23}.|Salve, {s23}.
 qstr_So_you_are_{s23}._I_|Così, tu sei {s23}. Ho saputo che hai combattuto per i nostri amici {s25}, quindi credo che ti dovrei considerare un alleato.
@@ -914,7 +914,7 @@ qstr_What?_Let_me_see_tha|Cosa? Fammi vedere... Hmmm. E' un bene che me lo hai p
 qstr_Give_me_that!_Hrmph!_|Dammelo ! Hrmph ! Sei un buon servitore del tuo padrone, {playername}, ma sarai morto in breve tempo. Non ora, però, sparisci.
 qstr_The_search_for_the_L|La ricerca delle Lance Perdute ti ha portato a Dorwinion, il sito dell'antico regno nordico di Re Bladorthin. CONTINUA
 qstr_You_need_to_have_a_p|Hai bisogno di una compagnia con una forza minima di 30 per iniziare la quest
-qstr_You_were_tasked_to_h|Eri stato incaricato di dare la caccia ai banditi che hanno recentemente scatenato il caos nel Nord. Puoi attaccarli nel loro nascondiglio nei pressi della Foresta di Mirkwood o intercettarli vicino alla Casa di Beorn.
+qstr_You_were_tasked_to_h|Eri stato incaricato di dare la caccia ai banditi che hanno recentemente scatenato il caos nel Nord. Puoi attaccarli nel loro nascondiglio nei pressi di Bosco Atro o di intercettarli vicino alla Casa di Beorn.
 qstr_Mordor_Gains_Faction|Mordor acquisisce forza nel ricevere un'arma sconosciuta
 qstr_Beornings_gain_Facti|La fazione dei Beorning ottiene forza quando le notizie sulla tua vittoria iniziano a circolare.
 qstr_Beornings_loses_Fact|La fazione dei Beorning perde forza quando vengono attaccati.
@@ -955,7 +955,7 @@ qstr_Well_you_may_do_as_y|Bene, fai come vuoi. Io ed i miei compagni possiamo se
 qstr_{s9}_asked_you_to_br|{s9} ti ha chiesto di riportare un troll selvaggio da usare nella sua armata.
 qstr_{s9}_asked_you_to_fi|{s9} ti ha chiesto di scoprire cosa succede nella Foresta di Fangorn, e di fare rapporto.
 qstr_{s9}_asked_you_to_fin|{s9} ti ha chiesto di trovare le lance perdute che i nani fecero per il Re Bladorthin. Dovrai chiedere ad {s5} il permesso di cercare le lance nelle profondità dell Montagna Solitaria.
-qstr_{s9}_has_asked_you_t|{s9} ti ha chiesto di uccidere lo stregone Dol Guldur a Mirkwood.
+qstr_{s9}_has_asked_you_t|{s9} ti ha chiesto di uccidere lo stregone Dol Guldur a Bosco Atro.
 qstr_{s9}_asked_you_to_ta|{s9} ti ha chiesto di consegnare un messaggio a {s13}. {s13} é possibile si trovasse a {s4} quando ti è stato dato questo compito.
 qstr_{s9}_asked_you_to_tak|{s9} ti ha chiesto di consegnare un messaggio a {s13} di {s15}. {s13} é possibile si trovasse a {s4} quando ti è stato dato questo compito.
 qstr_{s11}_asked_you_to_e|{s11} ti ha chiesto di scortare il suo messaggiero fino a {s14}
@@ -972,7 +972,7 @@ qstr_{s9}_has_requested_y|{s9} ti ha chiesto di portargli dei {reg1} prigionieri
 qstr_We_have_reports_that|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni uomini potrebbero essere ancora vivi, catturati dal nemico. Il morale delle mie truppe ne risente perchè i prigionieri saranno probabilmente uccisi, imprigionati o peggio. Voglio che tu salvi {reg1} prigionieri e migliori così il morale delle nostre truppe.
 qstr_We_have_reports_that_|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni di vigliacchi potrebbero essere ancora vivi, catturati dal nemico. Per quanto siano sacrificabili, sarebbe uno spreco lasciarli morire in qualche gatta buia. Voglio che tu soccorra {reg1} prigionieri e che tu li rifaccia combattere per noi.
 qstr_{s9}_has_asked_you_to|{s9} Ti ha chiesto di salvare {reg1} prigionieri.
-qstr_We_have_reports_that_a|Abbiamo rapporti di gruppi di nemici in probabile adunata a {s13}. Ovviamente è un grave problema per me perché non so né quanti uomini abbia il nemico e né se i miei uomini saranno pronti per scontrarsi con loro sul campo di battaglia. Voglio che ti avvicini a {s13}, e che scopri più che puoi.
+qstr_We_have_reports_that_a|Abbiamo rapporti di gruppi di nemici in probabile adunata a {s13}. Ovviamente è un grave problema per me perché non so né quanti uomini abbia il nemico, né se i miei uomini saranno pronti per scontrarsi con loro sul campo di battaglia. Voglio che ti avvicini a {s13}, e che scopri più che puoi.
 qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di guerrieri raggruppati in{s13}. Non dovrebbero essere un problema per noi e i nostri servi, ma non farebbe male sapere quanti sono. Voglio che ti avvicini abbastanza a {s13}, e scopri quanto più riesci. 
 qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
 qstr_We_have_reports_of_s|Abbiamo notizie di attività nemica vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficenza al nemico per vederne i movimenti. Voglio che tu assembli una squadra di esploratori, ti avvicinati abbastanza a {s13}, e mandi in azione gli scout.
@@ -1004,14 +1004,14 @@ qstr_That_is_not_a_smart_|Non è una cosa molto intelligente da dire di fronte a
 qstr_They_will_all_know_m|Tutti sanno il mio nome.. Tutti sapranno temerlo
 qstr_Suilad_mellon!_It_is|Suilad, mellon ! Non capita spesso di incontrare amici della Valle Nascosta nel nostro regno. Ringraziamo le stelle che ti hanno guidato in nostro aiuto, e ringraziamo te altrettanto - le hannon !
 qstr_Suilad_mellon!_It_is_|Suilad, mellon ! E' raro avere uno dei nostri cugini delle woodland che giunge in nostro aiuto - le hannon !
-qstr_Suilad_mellon!_That_|Suilad, mellon ! Ti ringrazio per questo, amico !^^ Prima non ero certo se sarebbe stata la lama di un goblin o la rabbia di un orso nel nostro destino. Ahimé, le stelle sono state gentili a mandarti in nostro aiuto.
+qstr_Suilad_mellon!_That_|Suilad, mellon ! Ti ringrazio per questo, amico !^^ Prima non ero certo se ci potesse essere la lama di un goblin o la rabbia di un orso nel nostro destino. Invece, le stelle sono state gentili a mandarti in nostro aiuto.
 qstr_Alas_it_is_not_a_ple|Ahimé, non è stato un viaggio di piacere o il mero vagabondaggio che ha portato me e gli altri servitori di Lord Elrond in queste lande..
 qstr_You_wouldn_t_have_ne|Non avresti avuto bisogno del nostro aiuto, se solo avessi tenuto d'occhio i confini !
 qstr__*growl*_I_know_your|(*ringhio*) conosco la tua lingua, elfo, abbastanza bene da sapere se mi stai prendendo in giro o se mi ringrazi..
 qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Profondi sono i disegni del mio maestro, non per tutti da vedere o da capire.
 qstr_Alae!_Our_green_wood|Alae ! Le nostre foreste verdi sono pesantemente pattugliate, i nostri spessi cancelli sono saldi, le sale di Re Thranduil sono sicure. Fareste bene a seguire il nostro esempio.
 qstr__say_nothing_|(non dire niente)
-qstr_Alas_it_is_not_a_plea|Ahimé, non è per piacere o semplice gironzolare che io e gli altri servitori di Lord Elrond ci siamo trovati in queste terre. ^^Una malvagità antica si è suscitata nei luoghi oscuri e ora si diffonde nella luce. I saggi attraverso le montagne hanno risposto alla chiamata e ora le schiere di Imladris marciano in battaglia, a combattere per il Nord.
+qstr_Alas_it_is_not_a_plea|Ahimé, non è per piacere o semplice gironzolare che io e gli altri servitori di Lord Elrond ci siamo trovati in queste terre. ^^Una malvagità antica è sorta nei luoghi oscuri e ora si diffonde nella luce. I saggi attraverso le montagne hanno risposto alla chiamata e ora le schiere di Imladris marciano in battaglia, a combattere per il Nord.
 qstr_You_wouldn_t_have_nee|Non avreste avuto bisogno del nostro aiuto se aveste controllato i confini ! ^^Le storie delle Streghe della Foresta possono spaventare solo gli sciocchi ottusi - non gli sporchi orchi che abbiamo appena ucciso.
 qstr_*growl*_I_know_your_|*ringhio* conosco la tua lingua, elfo, abbastanza da capire se mi prendi in giro o mi ringrazi. ^^ Le stelle non hanno niente a che fare con questo - ho percepito il sudiciume e ho seguito un percorso. Potevo ucciderli sia che foste in pericolo o no.
 qstr_Keep_your_secrets_th|Tienti i tuoi segreti allora, amico, ma le Foreste Dorate sussurrano dell'arrivo dei nostri cugini. ^^Informeremo la nostra Lady Galadriel dell'arrivo di Lord Elrond, anche se sospetto che lei lo sappia già. E parleremo anche di te, a tutto il nostro popolo. ^^Le maethor veleg a gornui ! il tuo valore e le tue gesta devono essere conosciute e le tue necessitò soddisfatte ogni volta che visiti la nostra valle del Canto d'Oro.
@@ -1033,10 +1033,10 @@ qstr_If_I_ever_have_need_|Se mai avrò bisogno dell'aiuto che Lorien può offrir
 qstr__nod_and_say_nothing|(non dire niente)
 qstr_Oh_there_are_many_an|Oh, ce ne sono molti e ogni amico di Lorien è benvenuto a godere di questi doni ! ^^Dovremmo trovarci spalla a spalla sul campo di battaglia ancora, o dovremo ubbidire agli ordini della nostra Lady e dei suoi lords, il nostro popolo ricompenserà la tua gentilezza dandoti tutto ciò di cui hai bisogno - armi lucenti, corsetti di maglia robusti, frecce con piume bianche e provviste per le tue truppe. ^^Chi lo sa, col tempo potresti diventare Grande {Lord/Lady} di Lorien, una persona che potrebbe dare consigli ad altri, o chiedere i loro favori.
 qstr_The_joys_of_the_Gold|Le gioie della Valle d'Oro sono monte e i veri amici di Lorien sono bevenuti a goderne.  ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, oppure ci troveremo agli ordini della nostra Lady e dei suoi signori; il nostro popolo ti ricompenserà per il tuo sostegno con ogni cosa tu richieda - armi lucenti, vesti di maglia pesante, frecce letali e cibo nutriente per le tue truppe.^^Chissà, con il tempo potresti diventare Gran {Lord/Lady} di Lorien, una persona che potrebbe dare consiglio, o chiedere favori.
-qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di Loriene vi può attingere. ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, o accorrere alla chiamata della nostra Lady e dei suoi signori; il nostro popolo compenserà il tuo appoggio con tutto ciò che puoi desiderare, mentre sei lontano da casa.
+qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di Lorien vi può attingere. ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, o accorrere alla chiamata della nostra Lady e dei suoi signori; il nostro popolo compenserà il tuo appoggio con tutto ciò che puoi desiderare, mentre sei lontano da casa.
 qstr_I_shall_keep_that_in|Devo tenerelo a mente. ^^ Hantanyel, áva márië !
 qstr_That_may_be_so_some_|Così può essere, alcune strade del mondo sono contorte.^^ Boe i 'waen !
-qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Allontaniamoci da qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
+qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Andiamo via di qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
 qstr_You_chose_well_{sir/|Ha scelto bene, {signore/signora}. I miei ragazzi sanno mantenere la parola e guadagnarsi la paga.
 qstr_Well_done_{sir/madam|Ben Fatto, {sire/signora}. Continua a mandarci soldi e vino, e non dovrai aver paura di nessun tuo nemico.
 qstr_We_are_at_your_servi|Siamo al tuo servizio, {signore/signora}. Mandaci nella direzione di coloro che devono essere uccisi, noi faremo il resto.

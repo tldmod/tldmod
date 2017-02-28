@@ -28,8 +28,8 @@ qst_mirkwood_sorcerer|- Zabić czarownika
 qst_mirkwood_sorcerer_text|Moc Galadrieli wykorzystywana w obronie Lothlorien zostały bardzo osłabiona w wyniku przeklętych rytuałów czarownika z Dol Guldur.  Mimo swej śmiertelności stanowi wielkie niebezpieczeństwo dla Elfów. Znajdziejsz go w Mrocznej Puszczy, niedaleko Dol Guldur. Pamiętaj, że tylko skryte działanie pozwoli go pokonać.
 qst_find_lost_spears|- Włócznia króla Bladorthina
 qst_find_lost_spears_text|{s9} poprosił cię o odnalezienie krasnoludzkiej włóczni wykonanej dla króla Bladorthina. Musisz zapytać krasnoludów o zgodę na poszukiwania w głębi Samotnej Góry.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
+qst_defend_village|- Obroń wioskę.
+qst_raid_village|-Najedź wioskę.
 qst_rescue_prisoners|- Na ratunek
 qst_rescue_prisoners_text|{s9} chciał, byś uratował{/a} {reg1} więźniów.
 qst_scout_enemy_town|- Wrogie miasto

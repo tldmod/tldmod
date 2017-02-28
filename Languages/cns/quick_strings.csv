@@ -164,7 +164,7 @@ qstr_Good|好
 qstr_Med|中
 qstr_Bad|差
 qstr_{reg4}_killed_{reg5}|{reg4}被杀，{reg5}受伤，{reg6}被击溃
-qstr_{reg4}_killed_{reg5}_|{reg4}受伤，{reg5}负伤
+qstr_{reg4}_killed_{reg5}_|{reg4}被杀，{reg5}受伤
 qstr_{reg4}_killed_{reg5}_r|{reg4}被杀，{reg5}被击溃
 qstr_{reg4}_wounded_{reg5|{reg4}受伤，{reg5}被击溃
 qstr_killed|被杀
@@ -175,14 +175,14 @@ qstr_None|无
 qstr_^None|^无
 qstr_near_the_Great_East_|东方大道（远古矮人横穿伊利雅德所建的道路）的不远处
 qstr_near_what_is_left_of|旧林路（远古矮人横穿幽暗密林所建的道路）遗迹的不远处
-qstr_close_to_the_Hand_sh|萨鲁曼白手标记的附近，指着欧散克塔的方向
+qstr_close_to_the_Hand_sh|萨鲁曼白手标记的附近，指着奥桑克塔的方向
 qstr_in_sight_of_the_maje|能看到米那斯提力斯白色崇峻城墙的地方
 qstr_in_sight_of_the_entr|能看到矮人孤山堡垒的地方
-qstr_in_sight_of_the_dark|看得见艾辛格欧散克黑塔的地方
-qstr_near_the_Old_Ford_wh|靠近老渡口（旧林路横跨安度因河）的地方
+qstr_in_sight_of_the_dark|看得见艾辛格奥桑克黑塔的地方
+qstr_near_the_Old_Ford_wh|靠近老渡口（旧林路横跨安都因河）的地方
 qstr_near_a_big_ford_cros|靠近{s15}河对岸的大渡口
 qstr_near_a_small_ford_cr|靠近{s15}河对岸的小渡口
-qstr_Battle_Advantage:_{r|战场优势：[reg0]。
+qstr_Battle_Advantage:_{r|战场优势：{reg0}。
 qstr_{s9}_wants_you_to_re|{s9}希望你能够在接到进一步的指令以前跟着他的部队前进。
 qstr_Rohan_capital_moved_|洛汗首都已经从伊多拉斯移动到号角堡！
 qstr__Being_Raided_|(被掠夺中)
@@ -273,7 +273,7 @@ qstr_{s14}Double_rations_t|{s14}斩下{s15}首级最多者奖赏翻倍！
 qstr_{s14}Kill_these_hors|{s14}干掉这些马贼！
 qstr_Kill_them_all!_Take_|干掉他们！夺回属于我们的一切！
 qstr_Tonight_there_will_b|今夜{s16}的敌人又要少一个了！
-qstr_Baruk_Khazâd!_Khazâd|Baruk Khazâd！Khazâd ai-mênu！（矮人手斧！矮人冲锋！）
+qstr_Baruk_Khazâd!_Khazâd|Baruk Khazâd！Khazâd ai-mênu！（矮人战吼：矮人的战斧啊！矮人向你冲来了！）
 qstr_{s14}Riders_of_Rohan|{s14}洛汗的骑兵们！铭记你为何而战！
 qstr_{s14}More_{s19}heads|{s14}黑门又要有更多的{s19}头颅来装饰啦！
 qstr_The_Wise_Master_shal|智慧的主人（萨鲁曼）将会很高兴听到{playername}已经挂掉这件事！
@@ -734,7 +734,7 @@ qstr_{s11}_and_{s13}|{s11}和{s13}
 qstr_{s11}_{s13}|{s11}，{s13}
 qstr_On_your_way_to_your_|在你前往派系首都的路上，你派出了一些半兽人以掠夺商队。
 qstr_On_your_way_to_your_f|在你前往派系首都的路上，你派出了一些士兵以埋伏森林中的半兽人。
-qstr_On_your_way_to_Mordo|在你千万魔多的路上，你听到周围沙沙作响。你发现了一些刚铎斥候，准备警告你的部队。
+qstr_On_your_way_to_Mordo|在你前往魔多的路上，你听到周围沙沙作响。你发现了一些刚铎斥候，准备警告你的部队。
 qstr_You_see_the_village_|你看到一座小村庄正被土匪掠夺。你已准备好迎战他们。
 qstr_You_see_the_village_y|你看到了命令中要你掠夺的村庄，你已经准备好攻击了。
 qstr_The_raiders_are_defe|掠夺者被击败了！在村民们的新英雄的帮助下，凡是还保持清醒的土匪都带着巨大的恐惧摸黑向着来时的方向跑逃跑了。
@@ -939,7 +939,7 @@ qstr_Gift|礼物
 qstr_You_have_requested_t|你请求把{s1}的礼物从{s2}送给{s3}。{s3}的人民一定会很欢迎你的到来。
 qstr_Bribe|贿赂
 qstr_You_have_requested_to|你请求把{s1}的贿赂从{s2}带给{s3}。希望你能够得到一定的奖赏作为回报吧。
-; qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
+qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|你花费了对{s1}的{reg0}影响力。你还剩{reg1}影响力。
 qstr_The_War_is_over_{pla|战争结束了！{playername}，你还没听说么？
 qstr_We_are_at_war_with_{|我们正与{s12}交战。但交战的重心其实是在{s13}身上。
@@ -961,7 +961,7 @@ qstr_{s9}_asked_you_to_tak|{s9}希望你给隶属于{s15}的{s13}送信。你接
 qstr_{s11}_asked_you_to_e|{s11}希望你能护送他的信使到{s14}
 qstr_Lend_your_experience|将你部队中经验丰富的外科医生{s3}借给{s1}
 qstr_No_commander_should_|{playername}，这件事儿对于一名指挥官来说真是难以启齿。我前些天竟然发现我的一些士兵分不清剑的首尾。我希望有人能向他们展示何为勇气何为技艺。你是一位声名远扬的战士，{playername}。我能请求你能帮我训练一些士兵么？我将由衷的感激你。
-qstr_No_commander_should_h|{playername}，这件事儿对于一名指挥官来说真是难以启齿。我前些天才发现我的部分士兵特别的散漫。我希望有人能够重塑他们的风骨。不让我只好在他们影响大局之前杀掉他们了。你是一位声名远扬的战士，{playername}。我能请求你能帮我训练一些士兵么？我会支付你高额回报的。
+qstr_No_commander_should_h|{playername}，这件事儿对于一名指挥官来说真是难以启齿。我前些天才发现我的部分士兵特别的散漫。我希望有人能够重塑他们的风骨，或是及时终止他们无谓的努力。你是一位声名远扬的战士，{playername}。我能请求你能帮我训练一些士兵么？我会支付你高额回报的。
 qstr_{s9}_asked_you_to_rai|{s9}希望你在{s14}为{reg1}征税并带给他。
 qstr_{s9}_asked_you_to_hu|{s9}希望你去追捕名为{s4}的逃犯。根据报告他目前位于{s3}。
 qstr_{s9}_asked_you_to_ca|{s9}希望你把三队逃跑的奴隶带回{s4}。他说这三队人全都逃向{s3}。
@@ -1005,19 +1005,19 @@ qstr_They_will_all_know_m|他们都将知晓我的名号…他们也将知晓何
 qstr_Suilad_mellon!_It_is|向你致敬，我的朋友！来自瑞文戴尔的朋友在我们的国度可不常见。感谢群星对你的引到让你前来帮助我们。谢谢！
 qstr_Suilad_mellon!_It_is_|向你致敬，我的朋友！我们的木精灵表亲能前来帮助我们真的很少见。辛达林语：谢谢！
 qstr_Suilad_mellon!_That_|Suilad，mellon！在通用语中的含义是—向你致敬，我的朋友！^^一开始我不确定屋外究竟是一柄半兽人马刀，还是一头愤怒的公熊。哎！感谢群星将你带到了我的面前。
-qstr_Alas_it_is_not_a_ple|哎，漫无目的四处游荡并不是我和其他忠于埃尔隆德王之人来这里的目的。
+qstr_Alas_it_is_not_a_ple|哎，漫无目的四处游荡并不是我和其他忠于埃尔隆德大人之人来这里的目的。
 qstr_You_wouldn_t_have_ne|如果你坚持关闭国境的话你是得不到我们的援助的！
 qstr__*growl*_I_know_your|(吼！我知道你在说什么，精灵。至少足够清楚你是在嘲讽我还是在感谢我…
 qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen（辛达林语：我想说什么均可，而你却听不懂我在说什么。）深度是我主的设计，非所有人能见能明。
 qstr_Alae!_Our_green_wood|哎！我们的幽暗密林已经全面戒严，厚重的大门已经关稳，瑟兰迪尔王的殿堂更是层层把关。像我们这样做将会是一个明智的决定。
 qstr__say_nothing_|(什么也不说)
-qstr_Alas_it_is_not_a_plea|哎，漫无目的四处游荡并不是我和其他忠于埃尔隆德王之人来这里的目的。^^来自远古的邪恶征服了整个黑暗，现在他又向光明探出了魔掌。白手在山的另一边回应了他，而瑞文戴尔的主人们正赶往战场，帮助北方的战斗。
+qstr_Alas_it_is_not_a_plea|哎，漫无目的四处游荡并不是我和其他忠于埃尔隆德大人之人来这里的目的。^^来自远古的邪恶征服了整个黑暗，现在他又向光明探出了魔掌。白手在山的另一边回应了他，而瑞文戴尔的主人们正赶往战场，帮助北方的战斗。
 qstr_You_wouldn_t_have_nee|如果你坚持关闭国境的话你是得不到我们的援助的！^^深林女巫的故事只能吓跑糊涂的蠢蛋—而非我们刚刚拜托的污秽的半兽人。
 qstr_*growl*_I_know_your_|吼！我知道你在说什么，精灵。至少足够清楚你是在嘲讽我还是在感谢我。^^群星与我的到来无关，我是循着线索和半兽人身上难闻的气味找到这里的。我现在开始怀疑，在你危机的时刻杀死他们是否是一个好注意了。
-qstr_Keep_your_secrets_th|吾友，黄金森林微风中的细语已告知了你的到来。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德王的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
+qstr_Keep_your_secrets_th|吾友，黄金森林微风中的细语已告知了你的到来。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德大人的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
 qstr_We_walk_under_the_su|我们行走于太阳与星光下，住在洞中非吾所愿，但你的善意已经传达。^^你的勇气与善行应当被知晓。我们的王国将永远是你最坚强的后盾。
 qstr_*he_sighs_and_smiles|*他轻叹了一声并微微一笑* ^^好吧，由于有着共同的目标，我们愿意分享我们有的一切，即使你的言辞其实并没有打动我。
-qstr_For_some_months_we_h|在过去的数月里，半兽人伐木队的规模翻了五倍。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德王的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
+qstr_For_some_months_we_h|在过去的数月里，半兽人伐木队的规模翻了五倍。^^职责所在，虽然凯兰崔尔女士应早已知晓，但我会通知她埃尔隆德大人的到来。至于你，我希望能把你介绍给黄金森林的人民们。^^Le maethor veleg a gornui（辛达林语：你是一位强大勇敢的战士）！你的勇气与善行应当被知晓。歌唱的黄金谷（罗斯洛立安别名）将永远是你最坚强的后盾。
 qstr_Calm_yourself_friend|冷静，我的朋友。Pedin i phith in aniron, a nin u-cheniathog（辛达林语：我想说什么均可，而你却听不懂我在说什么。）^^我希望能把你介绍给黄金森林的人民们。你的勇气与善行应当被知晓。黄金谷（罗斯洛立安别名）阳光照耀处，我们都与你同在。
 qstr_Stars_sail_through_t|群星行于天海，人们脚踏大地。何人能知众人的命运是否汇聚？我希望能把你介绍给黄金森林的人民们。你的善行应当被知晓。每当你循着星光来到黄金谷（罗斯洛立安别名）的时候，我们都与你同在。
 qstr__RESOURCE_POINT_TUTO|(资源点教程)^^ 能在罗斯洛立安用于交易的资源点和你在初始派系取得的的资源点不同，你要在罗斯洛立安取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。

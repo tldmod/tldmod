@@ -419,13 +419,13 @@ str_npc16_backstory_later|Have you reconsidered? I will serve well.
 ; str_npc17_backstory_later|I've seen a very old pine the other day. Pines can get very old. You have to respect old trees. But I've also seen some that don't respect trees at all. You respect trees, don't you?
 ; str_npc1_backstory_response_1|If you can get leave, I have much need of an experienced warrior and a tracker.
 str_npc2_backstory_response_1|Właśnie tak, poszukuję ochotników.
-; str_npc3_backstory_response_1|If you can do without ale, I would welcome a good horseman.
-; str_npc4_backstory_response_1|I would welcome the help of a Rohan shieldmaiden, if offered.
+str_npc3_backstory_response_1|Jeśli umiesz obejść się bez alkoholu, to z chęcią przywitam dobrego kawalerzystę.
+str_npc4_backstory_response_1|Z miłą chęcią przyjąłbym pomoc od Rohańskiej tarczowniczki, jeśli byłaby zaoferowana.
 ; str_npc5_backstory_response_1|It may be presumptuous of me to ask, but my company could use your skill in the coming battles.
 ; str_npc6_backstory_response_1|We travel the world, but to defend all that is fair, we give battle to the enemy.
 str_npc7_backstory_response_1|W rzeczy samej, krasnoludzki wojownik byłby mile widziany w naszej kompanii.
 str_npc8_backstory_response_1|Możemy użyć medyka i zielarza.
-; str_npc9_backstory_response_1|I reckon we could put a berserker to a good use.
+str_npc9_backstory_response_1|Wydaję mi się, że przydałby się nam berserk.
 str_npc10_backstory_response_1|Zrobisz to
 str_npc11_backstory_response_1|You will do.
 str_npc12_backstory_response_1|You will do.
@@ -456,10 +456,10 @@ str_npc2_signup|Cóż za szczęśliwy dzień! Byłbym uradowany dołączając do
 ; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
 ; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
 str_npc5_signup|Rozumiem. Przyznam,że słyszałem o tobie i o twoich wyczynach.
-; str_npc6_signup|I dislike violence and weapons of war, but I know how to defend myself in a hurry.
+str_npc6_signup|Nie lubię przemocy i wojennego oręża, ale wiem jak się obronić.
 ; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
 ; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
-; str_npc9_signup|A fighting Uruk is worth more than all your snagas. A fighting Uruk never runs from battle.
+str_npc9_signup|Walczący Uruk jest wart więcej niż wy, snagi. Walczący Uruk nigdy nie ucieka z placu boju.
 str_npc10_signup|Naprawdę ? Postąpił byś słusznie zatrudniając mnie.
 str_npc11_signup|Really? You would do well to enlist me.
 str_npc12_signup|Really? You would do well to enlist me.
@@ -508,7 +508,7 @@ str_npc3_signup_response_2|Wybacz, zmieniłem zdanie - może następnym razem.
 str_npc4_signup_response_2|Przepraszam, moja Pani, może następnym razem.
 ; str_npc5_signup_response_2|On second thought, maybe we need to help Lothlórien on our own.
 str_npc6_signup_response_2|Przykro mi, ale nie wyobrażam sobie ciebie na polu bitwy.
-; str_npc7_signup_response_2|Sorry, I happen to like Elves.
+str_npc7_signup_response_2|Wybacz, ale lubię Elfy.
 str_npc8_signup_response_2|Wybacz, każdy walczy w mojej kompanii.
 str_npc9_signup_response_2|Zmieniłem zdanie. Ktokolwiek szuka ciebie, może następnie przyjść po mnie.
 str_npc10_signup_response_2|Zmieniłem zdanie.
@@ -782,7 +782,7 @@ str_npc5_home_recap|Zaspokoję twoją ciekawość, ale nie ociągajmy się.
 ; str_npc6_home_recap|I was born and raised in Mirkwood, a Silvan Elf. Our race's woodcraft skills are known to all.
 str_npc7_home_recap|Jestem synem Dwalina z ludu Durina.
 str_npc8_home_recap|Jestem uzdrowicielem oraz zielarzem z Dale 
-; str_npc9_home_recap|Gulm will tell you if you must know. But talk doesn't make enemies dead.
+str_npc9_home_recap|Gulm ci o tym opowie, jeśli musisz wiedzieć. Jednakże rozmowa nie sprawi, że wrogowie umrą.
 str_npc10_home_recap|Skrócę to.
 str_npc11_home_recap|Skrócę to.
 str_npc12_home_recap|Skrócę to.
@@ -1320,11 +1320,11 @@ str_isengard_rumor_14|Widziałem szaleńca przebitego kawaleryjską lancą. Wyci
 str_isengard_rumor_20|Tam gdzie bicz tam jest też droga.
 str_rhun_rumor_begin|Jedźcie niczym wiatr po stepach!
 ; str_rhun_rumor_2|The Dwarves are greedy and vile. And Dale-men help them exploit and cheat us.
-; str_rhun_rumor_3|Three wizards came to our lands a while ago. I wonder what they are up to.
+str_rhun_rumor_3|Niedawno na naszej ziemi zjawiło się trzech czarodziejów. Ciekawe co zamierzają.
 ; str_rhun_rumor_4|Our lands are vast and sparsely populated. But we know how to survive there.
 ; str_rhun_rumor_5|We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!
 ; str_rhun_rumor_6|Our cousins from Khand prefer to fight on foot, but we know being on a horse is better.
-; str_rhun_rumor_7|We have defeated Gondor legions before, and we will do it again!
+str_rhun_rumor_7|Już wcześniej pokonaliśmy legiony Gondoru, i zrobimy to kolejny raz!
 ; str_rhun_rumor_8|We fight to the death! Never retreat, never turn and run! Not a step backwards!
 str_rhun_rumor_9|Czerwony świt pojawił się na wschodzie. Czerwony zmierzch czeka na zachodzie!
 str_rhun_rumor_10|Elfickie kobiety? Nah. Zbyt kruche!
@@ -1827,7 +1827,7 @@ str_woodelf_gift2|Włócznie myśliwskie
 ; str_woodelf_gift4|Drinking Cups of Red Gold
 ; str_dale_gift0|Semi-Precious Stones and Glass Beads
 ; str_dale_gift1|Codexes of Heroic Sagas
-; str_dale_gift2|Dorwinion Wine
+str_dale_gift2|Wino z Dorwinion\n
 str_dale_gift3|Luksusowe Futra
 ; str_dale_gift4|Intricate Toys and Instruments
 str_harad_gift0|Figi i Granaty
@@ -1875,4 +1875,4 @@ str_beorn_gift1|Pszczeli Wosk i Tkaniny Konopne
 str_beorn_gift2|Ule
 str_beorn_gift3|Bursztynowe Naszyjniki
 str_beorn_gift4|Dobrze Wyszkolone Kucyki
-; str_cmenu_follow|Accompany
+str_cmenu_follow|Podążaj 

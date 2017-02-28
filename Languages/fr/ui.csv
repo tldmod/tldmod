@@ -45,4 +45,4 @@ ui_recent_messages|Derniers messages
 ui_value_denars|%d Points de Res.
 ui_cannot_be_used_on_horseback|Ne peut être utilisé sur une monture.
 ui_upgrade_to_value|Améliorer en %s
-ui_notification_cant_upgrade|(Ne peut pas mettre à niveau tout en donnant aux troupes)
+ui_notification_cant_upgrade|(impossible d'améliorer en donnant des troupes)

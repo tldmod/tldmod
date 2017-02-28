@@ -647,15 +647,15 @@ dlga_defeat_hero_answer_2:close_window|Znovu se setkáme.
 ; dlga_runaway_serf_talk_caught:runaway_serf_go_back|Do not test my patience. You are going back now!
 ; dlga_start:runaway_serf_talk_again_return|We are on our way back to {s5} master.
 ; dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2|Make haste now. The sooner you return the better.
-; dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|Good. Keep going.
-; dlga_runaway_serf_talk_again_return_2:close_window|Yes master. As you wish.
+dlga_runaway_serf_talk_again_return:runaway_serf_talk_again_return_2.1|dobrá, pokračujeme
+dlga_runaway_serf_talk_again_return_2:close_window|jistě můj pane, jak si přejete
 ; dlga_mayor_talk:mayor_deliver_wine|I was told to deliver you {reg9} units of {s4}.
 ; dlga_mayor_deliver_wine:mayor_pretalk|At last! Our stocks were almost depleted. I had arranged for the delivery of the {s4} in advance. And give {s9} my regards.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_mayor_talk:mayor_deliver_wine_incomplete|I was on a mission to deliver you {reg9} units of {s4}, but I lost some of the cargo to the enemy.
 ; dlga_mayor_deliver_wine_incomplete:mayor_pretalk|They will pay for this! Well, at least we have some {s4}. Thank you anyway.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_start:mercenary_tavern_talk|Do you have a need for mercenaries, Commander? {reg3?Me and {reg4?{reg3} of my mates:one of my mates} are:I am} looking for a master. We'll join you for {reg5} denars.
-; dlga_start:mercenary_after_recruited|Any orders, Commander?
-; dlga_mercenary_after_recruited:mercenary_after_recruited_2|Make your preparations. We'll be moving at dawn.
+dlga_start:mercenary_after_recruited|jaké jsou rozkazy veliteli ?
+dlga_mercenary_after_recruited:mercenary_after_recruited_2|připravte se, za úsvitu vyrazíme
 ; dlga_mercenary_after_recruited:mercenary_after_recruited_2.1|Take your time. We'll be staying in this town for a while.
 ; dlga_mercenary_after_recruited_2:close_window|Yes, Commander. We'll be ready when you tell us to leave.
 ; dlga_mercenary_tavern_talk:mercenary_tavern_talk_hire|All right. I will hire all of you. Here is {reg5} denars.
@@ -679,7 +679,7 @@ dlga_defeat_hero_answer_2:close_window|Znovu se setkáme.
 ; dlga_trainer_talk_combat:trainer_pretalk|I guess I know all the theory I need. Let's talk about something else.
 ; dlga_trainer_explain_defense:trainer_explain_defense_2|Good question. The first thing you should know as a fighter is how to defend yourself. Keeping yourself out of harm's way is the first rule of combat, and it is much more important than giving harm to others. Everybody can swing a sword around and hope to cut some flesh, but only those fighters that are experts at defense live to tell of it.
 ; dlga_trainer_explain_defense_2:trainer_explain_defense_3|Now. Defending yourself is easiest if you are equipped with a shield. Just block with your shield. [Hold down the right mouse button to defend yourself with the shield.] In this state, you will be able to deflect all attacks that come from your front. However, you will still be open to strikes from your sides or your back.
-; dlga_trainer_explain_defense_3:trainer_explain_defense_4|What if I don't have shield?
+dlga_trainer_explain_defense_3:trainer_explain_defense_4|co když nemám štít ? 
 ; dlga_trainer_explain_defense_4:trainer_combat_pretalk|Then you will have to use your weapon to block your opponent. This is a bit more difficult than defending with a shield. Defending with a weapon, you can block against only ONE attack direction. That is, you block against either overhead swings, side swings or thrusts. Therefore you must watch your opponent carefully and start to block AFTER he starts his attack. In this way you will be able to block against the direction of his current attack. If you start to block BEFORE he makes his move, he may just attack in another direction than the one you are blocking against and score a hit.
 ; dlga_trainer_explain_attack:trainer_explain_attack_2|Good question. Attacking is the best defence, they say. A tactic many fighters find useful is taking an offensive stance and readying your weapon for attack, waiting for the right moment for swinging it. [You can ready your weapon for attack by pressing and holding down the left mouse button.]
 ; dlga_trainer_explain_attack_2:trainer_explain_attack_3|That sounds useful.
@@ -698,21 +698,21 @@ dlga_defeat_hero_answer_2:close_window|Znovu se setkáme.
 ; dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|Two.
 ; dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|Three.
 ; dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|Four, I feel lucky today.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|Four.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|Eight.
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|čtyři
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|osm
 ; dlga_trainer_choose_opponents_player:trainer_choose_weapon.6|Twelve, me and my companions can take on anyone.
-; dlga_trainer_choose_opponents_player:trainer_pretalk|None, I've changed my mind.
-; dlga_trainer_choose_weapon:trainer_choose_weapon_player|And finally choose your preferred weapon type.
-; dlga_trainer_choose_weapon_player:trainer_begin_training|One-handed weapons.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.1|Two-handed weapons.
+dlga_trainer_choose_opponents_player:trainer_pretalk|změnil jsem názor.
+dlga_trainer_choose_weapon:trainer_choose_weapon_player|nyní si vyber svůj oblíbený typ zbraně
+dlga_trainer_choose_weapon_player:trainer_begin_training|jednoruční zbraně.
+dlga_trainer_choose_weapon_player:trainer_begin_training.1|obouruční zbraně
 ; dlga_trainer_choose_weapon_player:trainer_begin_training.2|Polearms.
 ; dlga_trainer_choose_weapon_player:trainer_begin_training.3|Bows.
 ; dlga_trainer_choose_weapon_player:trainer_begin_training.4|Thrown weapons.
-; dlga_trainer_choose_weapon_player:trainer_pretalk|None, I've changed my mind.
-; dlga_trainer_begin_training:close_window|Very well, here we go. Once you finish training, come back and speak to me.
+dlga_trainer_choose_weapon_player:trainer_pretalk|změnil jsem názor.
+dlga_trainer_begin_training:close_window|skvěle, až dokončíš trenink vrat se ke mě
 dlga_start:close_window.20|Táhni, odporný žebráku.
-; dlga_start:mayor_begin|Good day, my lord.
-; dlga_start:mayor_talk|Hello stranger, you seem to be new to {s9}. I am the guild master of the town.
+dlga_start:mayor_begin|dobrý den, můj pane
+dlga_start:mayor_talk|zdravím cizinče, vidím že jsi poprvé v {s9}. jsem gildmistr města
 ; dlga_start:mayor_begin.1|Good day, {playername}.
 ; dlga_mayor_begin:lord_deal_with_night_bandits_completed|Very nice work, {playername}, you made short work of those lawless curs!^^[earned {reg14} Resource Points of {s14}]
 ; dlga_lord_deal_with_night_bandits_completed:close_window|They had it coming.
@@ -720,16 +720,16 @@ dlga_start:close_window.20|Táhni, odporný žebráku.
 ; dlga_mayor_talk:mayor_deliver_iron.1|Here's your metal supply, {reg9} units of {s4}.
 ; dlga_mayor_talk:mayor_deliver_iron.2|I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.
 ; dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Very nice work, {playername}. Our smiths will find ways to put everything they are given to good use.
-; dlga_mayor_deliver_iron_completed:close_window|I do what I can.
+dlga_mayor_deliver_iron_completed:close_window|udělám co bude v mých silách
 ; dlga_mayor_talk:mayor_deliver_food|Here's your food, {reg9} units.
-; dlga_mayor_deliver_food:mayor_deliver_food_completed|Very nice work, {playername}, our food stores are full again and nobody will starve for now.
-; dlga_mayor_deliver_food_completed:close_window|I do what I can.
+dlga_mayor_deliver_food:mayor_deliver_food_completed|vyborně ! {playername}, naše sýpky jsou zase plné,nikdo už nehladoví 
+dlga_mayor_deliver_food_completed:close_window|udělám co bude v mých silách
 ; dlga_mayor_begin:mayor_looters_quest_response|Ah, {playername}. Have you any progress to report?
-; dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|I've killed some tribal orcs.
+dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|zbil jsem pár divokých skřetů
 ; dlga_mayor_looters_quest_response:close_window|Not yet, sir. Farewell.
 ; dlga_mayor_looters_quest_destroyed:mayor_looters_quest_destroyed_2|Aye, my scouts saw the whole thing. That should keep those tribal orcs at bay!^^[earned {reg14}x{reg15} Resource Points of {s14}]
 ; dlga_mayor_looters_quest_destroyed_2:close_window|And that's not the only good news! Thanks to you, the tribal orcs have ceased to be a threat. We've not had a single attack reported for some time now.  If there are any of them left, they've either run off or gone deep into hiding. That's good for the safety of the place!  I think that concludes your task, {playername}. Thank you, and farewell.
-; dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|Anything else you need?
+dlga_mayor_looters_quest_destroyed_2:mayor_looters_quest_response|potřebujete ještě něco ?
 ; dlga_mayor_begin:close_window|Good to see you again {playername}. I have heard that you have delivered those people successfully.  I will tell our commander how reliable you are.^^[earned {reg14} Resource Points of {s14}]
 ; dlga_mayor_begin:move_cattle_herd_failed|I heard that you have lost those people on your way to {s9}.  I had a very difficult time explaining your failure to the commander here.  Do you have anything to say?
 ; dlga_move_cattle_herd_failed:move_cattle_herd_failed_2|I am sorry. But I was attacked on the way.
@@ -746,7 +746,7 @@ dlga_mayor_talk:merchant_quest_about_job|Ohledně toho úkolu...
 dlga_mayor_talk:close_window|[Odejít.]
 ; dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
 dlga_mayor_info_talk:mayor_info_lord|Kdo vládne tomuto městu?
-; dlga_mayor_info_lord:mayor_info_talk|Our lord is {s10}.
+dlga_mayor_info_lord:mayor_info_talk|našim pánem je {s10}.
 ; dlga_mayor_info_talk:mayor_pretalk|That's all I need to know. Thanks.
 ; dlga_merchant_quest_about_job:merchant_quest_about_job_2|What about it?
 ; dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|What if I can't finish it?

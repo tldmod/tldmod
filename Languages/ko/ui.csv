@@ -1,21 +1,21 @@
-; ui_at_learning_limit|(at learning limit for this race)
+ui_at_learning_limit|( 이 종족의 능력 한계치입니다. )
 ui_not_enough_skill_points_to_learn|( 이것을 배우기엔 스킬 포인트가 부족합니다. )
 ui_not_enough_attributetype_to_learn_this_skill|( %s 가 이 스킬을 배우기에 부족합니다. )
 ui_explanation_agility|민첩: 각 포인트마다 무기 숙련도를 5 포인트 늘릴수 있으며 무기 속도가 0.5% 상승합니다. 다음과 같은 스킬은 민첩 스킬의 1/3 이상 올릴수가 없습니다. 무기 마스터, 방패, 운동, 승마, 승마궁술, 약탈.
-ui_retreated_battle|%s 가 후퇴하다.
+ui_retreated_battle|%s 가 궤멸당했습니다.
 ui_riding_skill_not_adequate_to_mount|승마술 스킬이 너무 낮습니다.
 ui_camp|행동
-; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
+ui_tutorial_inventory|제3시대의 말로에서는 자원 포인트를 이용해 장비들을 얻을 수 있습니다. 자원 포인트는 한 세력이 당신을 얼마나 지원하고 싶어하는 지, 그리고 세력 내에서 당신에게 할당된 자원을 표시해주는 척도입니다.
 ui_you_dont_have_value|가지고 있지 않음: %s
-; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
+ui_merchant_cant_afford_value|%s: 당신은 우리에게 필요한 것 보다 더 많은 양을 주었습니다! 혹시 모르니 나머지는 당신이 간직하시지요 (당신은 %s 에게 물자를 주었지만, 우리는 %s 만큼만 사용할 수 있습니다).
 ui_merchant_pay_whatever|아니, 그것들은 필요없습니다, 가지고 계십시오.
-ui_horse|산
-; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
-; ui_return_your_bought_goods|Return the goods you have taken before giving that!
-; ui_return_price|if returned: +%d Res.P.
-; ui_sell_price|if given: +%d Res.P.
-; ui_reclaim_price|to reclaim: -%d Res.P.
-; ui_buying_price|to claim: -%d Res.P.
+ui_horse|승마
+ui_reclaim_your_sold_goods|그것을 주기 전에 주었던 물건들을 돌려받으십시오!
+ui_return_your_bought_goods|그것을 주기 전에 가져간 물건들을 돌려주십시오!
+ui_return_price|돌려받았을 때: +%d 자원 포인트
+ui_sell_price|주었을 때: +%d 자원 포인트
+ui_reclaim_price|되찾을 때: -%d 자원 포인트
+ui_buying_price|요구할 때: -%d 자원 포인트
 ui_notification_riding_skill_not_enough|이것을 타기엔 승마술이 부족합니다.
 ui_notification_payment_value|%s 를 섭취 했다.
 ui_notification_payment_receive_value|%s 를 받다.
@@ -23,18 +23,18 @@ ui_weekly_cost_value|유지비: %s
 ui_sell|주기
 ui_hire|징병
 ui_notification_cant_hire|(징병 하기 위한 R.P. 가 부족합니다.)
-ui_joining_cost_weekly_wage|징병비: %d Res.Pts. -- 유지비: %d Res.Pts.
-ui_weekly_wage|유지비: %d Res.P.
-ui_price|가격: %d Res.P.
+ui_joining_cost_weekly_wage|징병비: %d 자원 포인트. -- 유지비: %d 자원포인트.
+ui_weekly_wage|유지비: %d 자원 포인트
+ui_price|가격: %d 자원 포인트
 ui_cant_reload_this_weapon_on_horseback|이 무기는 승마하고 있는 상태에서 장전을 할 수가 없습니다.
 ui_delivered_number_damage_to_horse|말에게 %d 만큼의 피해를 입혔습니다.
 ui_horse_charged_for_number_damage|돌격으로 %d 만큼의 피해를 입혔습니다.
 ui_horse_received_number_damage|말이 %d 만큼의 피해를 입었습니다.
-ui_horse_fell_dead|말이 쓰러져 죽음...
-ui_horse_crippled|말이 불구가 됨...
+ui_horse_fell_dead|말이 쓰러져 죽었습니다...
+ui_horse_crippled|말이 불구가 되었습니다...
 ui_you_got_value|%s 받음.
-ui_has_deserted_the_party|파티를 떠났다.
-ui_have_deserted_the_party|파티를 떠남.
+ui_has_deserted_the_party|파티를 떠났습니다.
+ui_have_deserted_the_party|파티를 떠났습니다.
 ui_loading_textures|텍스쳐 불러오는중... (기다려 주십시오)...
 ui_order_hold_fire_toggle|사격 중지/자유 사격 (토글)
 ui_order_dismount_toggle|승마/하마 명령 (토글)
@@ -42,7 +42,7 @@ ui_mount_horses_e_|%s, 승마!
 ui_hold_fire_e_|%s, 사격 중지!
 ui_fire_at_will_e_|%s, 사격 개시!
 ui_recent_messages|지난 메시지
-; ui_value_denars|%d Resource Pts.
+ui_value_denars|%d 자원 포인트
 ui_cannot_be_used_on_horseback|말을 타고 있는 상태에선 사용 할 수 없습니다.
 ui_upgrade_to_value|업그레이드 값 %s
-; ui_notification_cant_upgrade|(Can't upgrade while giving troops)
+ui_notification_cant_upgrade|(병력을 이동시키는 도중에 병사를 승진 시킬 수 없습니다.)

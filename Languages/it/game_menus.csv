@@ -26,7 +26,7 @@ mno_view_party_size_report|Consulta il rapporto sulle dimensioni della compagnia
 mno_view_morale_report|Consulta il rapporto sul morale della compagnia
 mno_view_character_report_02|Controlla stato dei PNG
 mno_view_faction_strengths_report|Consulta il resoconto sulla potenza delle fazioni
-mno_view_traits_report|Consulta i tratti
+mno_view_traits_report|Consulta i tratti personali.
 mno_resume_travelling|Riprendi il viaggio
 mno_custom_battle_go|Inizia
 mno_leave_custom_battle_2|Annulla
@@ -90,10 +90,10 @@ menu_start_gondor|^^^^^^^^^^Da quale parte di Gondor provieni ?
 mno_start_mt|Minas Tirith, la Capitale
 mno_start_ls|Lossarnach, il feudo della Valle dei Fiori
 mno_start_la|Lamedon, il feudo degli uomini della Montagna
-mno_start_pg|Pinnath Gelin, il feudo dei Verdi Colli
+mno_start_pg|Pinnath Gelin, il feudo delle Verdi Colline
 mno_start_do|Dol Amroth, il feudo dei Cavalieri del Cigno
 mno_start_pe|Pelargir, il feudo Costiero
-mno_start_bl|La Valle della Radice Nera, il feudo degli Arcieri
+mno_start_bl|La Valle Cepponero, il feudo degli Arcieri
 menu_start_eye_man|^^^^^^^^^^Seleziona la tua gente:
 mno_start_hr|Haradrim, il popolo del deserto del Sud
 mno_start_bn|Númenóreani Neri, i rinnegati dell'Ovest
@@ -271,7 +271,7 @@ mno_town_approach|Vai verso: {s1}...
 mno_town_castle|Vai a: {s1}.
 mno_town_castle_door|Portone del castello.
 mno_town_center|Passeggia per la piazza principale...
-mno_town_center_door|Porta per il centro della città.
+mno_town_center_door|Porta per il centro dell'insediamento.
 mno_aw_chamber_door|Apri la porta.
 mno_trade_with_arms_merchant|Visita {s40}.
 mno_trade_with_horse_merchant|Visita {s41}.
@@ -313,8 +313,8 @@ menu_notification_your_faction_collapsed|^^^^^La tua {s11} madrepatria è stata 
 menu_notification_faction_defeated|^^^^^{s1} È stato sconfitto !^{s1} non c'è più, essendo sconfitto dal esercito di {s13} !
 menu_ruins|^^^^Ti avvicini a {s1}. In questo luogo, un tempo, un grande accampamento è stato raso al suolo, è ancora possibile vedere tracce di fortificazioni e vecchie armi arrugginite.
 menu_legendary_place|^^^^Hai seguito le tracce ed hai trovato {s1}. Puoi esplorare questo posto e verificare da te se le indiscrezioni che hai sentito sono vere.
-mno_explore|Esplora questo posto.
-menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso la foresta di Mirkwood e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
+mno_explore|Esplora questo luogo.
+menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso Bosco Atro e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
 mno_attack_lair|Attaccali adesso
 mno_leave_bandit_lair|Lascia per ora.
 menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da parte di una banda di orchi. Cos'hai intenzione di fare ?

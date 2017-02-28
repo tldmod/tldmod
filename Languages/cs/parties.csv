@@ -20,9 +20,9 @@ p_town_west_emnet|Zapadni polonina
 p_town_eastfold|Vychodni uval
 p_town_morannon|Morannon
 p_town_minas_morgul|Minas Morgul
-p_town_cirith_ungol|Skreti hlidkovy tabor
+p_town_cirith_ungol|Tabor skreti hlidky
 p_town_east_osgiliath|Vychodni Osgiliath
-p_town_orc_sentry_camp|Skreti strazny tabor
+p_town_orc_sentry_camp|Tábor skretich strazi
 p_town_isengard|Zelezny pas
 p_town_urukhai_outpost|Tabor Skurut-hai
 p_town_urukhai_h_camp|Lovecky tabor Skurut-hai
@@ -41,21 +41,21 @@ p_town_troll_cave|Zlobri jeskyne
 p_town_dale|Dol
 p_town_esgaroth|Esgaroth
 p_town_dunland_camp|Tabor Vrchovcu
-p_town_harad_camp|Tabor Haradanu
-p_town_khand_camp|Tabor Variagu
-p_town_umbar_camp|Tabor Korzaru
-p_town_imladris_camp|Tabor elfu z Roklinky
+p_town_harad_camp|Tabor Haradskych
+p_town_khand_camp|Tabor Varjagu
+p_town_umbar_camp|Tábor Korzarů
+p_town_imladris_camp|Tábor elfu z Roklinky
 p_town_dol_guldur|Dol Guldur
-p_town_dol_guldur_north_outpost|Severni pevnustka Dol Gulduru
+p_town_dol_guldur_north_outpost|Severni hlidka Dol Gulduru
 p_town_rhun_main_camp|Hlavni tabor Vychodnanu
 p_town_rhun_south_camp|Jizni tabor Vychodnanu
 p_town_rhun_north_camp|Severni tabor Vychodnanu
 p_town_gundabad|Gundabad
-p_town_gundabad_ne_outpost|SV pevnustka Gundabadu
-p_town_gundabad_nw_outpost|SZ Pevnustkla Gundabadu
-p_town_goblin_north_outpost|Severni goblini pevnustka
-p_town_goblin_south_outpost|Jizni goblini pevnustka
-p_town_gundabad_m_outpost|Temna pevnost Gundabadu
+p_town_gundabad_ne_outpost|SV hlidka Gundabadu
+p_town_gundabad_nw_outpost|SZ hlidka Gundabadu
+p_town_goblin_north_outpost|Severni goblini hlidka
+p_town_goblin_south_outpost|Jizni goblini hlidka
+p_town_gundabad_m_outpost|Gundabadska hlidka v Temnem Hvozdu
 p_town_erebor|Erebor
 p_town_ironhill_camp|Lom Zeleznych Hor
 p_advcamp_gondor|Pochodovy tabor Gondoru
@@ -102,5 +102,5 @@ p_legend_amonhen|Amon Hen
 p_legend_deadmarshes|Mrtve mocaly
 p_legend_mirkwood|Temny hvozd
 p_legend_fangorn|Enti snem
-; p_ring_hunter_lair|Ring Hunters Lair
+p_ring_hunter_lair|doupě hledačů prstenu
 p_ancient_ruins|Prastara zricenina

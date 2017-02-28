@@ -1,8 +1,8 @@
-dlga_start:mutiny_pretalk_1|Hey, {playername}. Bak sana ne diyeceğiz.. Buradaki hanımlar homurdanıyor! Daha çok eğlence isteyip daha az yürüyorlar.
+dlga_start:mutiny_pretalk_1|Hey, {playername}. Bak sana ne diyeceğiz.. ^Burdaki adamlar homurdanıyor! Daha çok eğlence ve daha az yürümek istiyorlar.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Sıraya geri dön,aptal! Şu an savaştayız ve ben senin komutanınım.
 dlga_mutiny_pretalk_2:close_window|Emredersiniz, Kumandanım. Nasıl arzu ederseniz.
 dlga_start:mutiny_talk_1|Merhaba komutan. Bak sana ne diyeceğiz... Burdaki adamlar mutlu değil, hem de hiç değil. ^Yeterli insan eti yoksa yeterli eğlence de yoktur. ^Buradakiler senin yeterince iyi olmadığını düşünüyor, komutan!
-dlga_mutiny_talk_1:mutiny_talk_2|Ne?Savaş sırasında isyan mı? ^Bunun cezası ölümdür,sülük!
+dlga_mutiny_talk_1:mutiny_talk_2|Ne? Savaş sırasında isyan mı? ^Bunun cezası ölümdür,sülük!
 dlga_mutiny_talk_2:close_window|Sana ne diyeğeciz... ^Burdaki adamlar SENİ ÖLDÜRDÜĞÜM zaman onlar için daha iyi bir komutan olabileceğimi düşünüyor!
 dlga_start:troll_introduce_1|Sorun mu var?
 dlga_start:troll_talk_1|Sinirlendin mi?
@@ -10,7 +10,7 @@ dlga_troll_introduce_1:troll_goodbye|Oha! Konuşan bir troll?!
 dlga_troll_introduce_1:close_window|Benim bir atım var.
 dlga_troll_talk_1:troll_talk_2|Trolle beni, troll.
 dlga_troll_talk_1:close_window|Benim bir atım var.
-dlga_troll_talk_2:troll_talk_3|Meydan okuma kabul edildi!^^{4}
+dlga_troll_talk_2:troll_talk_3|Hodri meydan!^^{s4}
 dlga_troll_beaten:troll_talk_1|Zekanızın önünde diz çöküyorum, Trollerin Usta Tuzakçısı!
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Tekrar merhaba, {playername}!
@@ -38,7 +38,7 @@ dlga_treebeard_introduce_5:treebeard_questtalk|(Sert kabuklu dev Ent ve yanında
 dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Daha önceden de söylediğim gibi...:Hroom...Bize gösterdiğiniz nazik davranışlardan dolayı teşekkürler. Elflerle tekrar güzel konuşmak {reg1?alışılmadık bir durum  senin race:nice için}.} Entwives kaybolduğundan beri, zaman hiç iyi değil ve şimdi birçok kötü yaratık, evimizi yıkmak isteyen Karanlıkların efendisi tarafından serbest bırakıldı.Biz hızlı ama aceleci olmayan birini arıyoruz.Bir sonraki hareketlerimizi tartışırken yardım edebilecek birisi.Birçok ork grubu ormanlarımıza akın edip ateşli oklarla ağaçlarımızı yaktılar.Eğer sen orkları öldürmek için orada olup bir daha evlerimizin tehlikede olmayacağından emin olsaydın, bizde seni gerçek dost olarak düşünürdük.Bunu yaptıktan sonra seninle tekrar kouşuruz.
 dlga_treebeard_quest_brief:close_window|Evet, Orklar acımasız yaratıklar. Ormana bir daha zarar vermelerinden emin olacağım.
 dlga_treebeard_quest_brief:treebeard_pretalk|Üzgünüm,bunun için zamanım yok.
-dlga_treebeard_questtalk:close_window|(Ent lideri yavaşça mühürlenmiş ağzını açıyor ve diğer Entler sana bakıp yavaşça derinden gelen ve yeri sarsan bir ses çıkartıyorlar- Onların seninle Entish dilinde alay ettiklerini anlıyorsun. Genç gözüken bir Üvez ağacı 7 parmaklı dev ayağını yere basıyor ve sallantısı neredeyse seni yere düşürüyor.)\n^Yavaş ol, Hızlıkiriş, Küçük savaşçı arkadaşımıza zarar vermek istemeyiz. Hrrrm... Benim adım Ağaçsakal, Entlerin en yaşlısı, ve servislerinden dolayı sana minnettarız... Hrrrm.... İzninle Ent suyunu başaranın bir kutlaması olarak sana vereyim.
+dlga_treebeard_questtalk:close_window|(Ent lideri yavaşça mühürlenmiş ağzını açıyor ve diğer Entler sana bakıp yavaşça derinden gelen ve yeri sarsan bir ses çıkartıyorlar- Onların seninle Entish dilinde alay ettiklerini anlıyorsun. Genç gözüken bir Üvez ağacı 7 parmaklı dev ayağını yere basıyor ve sallantısı neredeyse seni yere düşürüyor.)^Yavaş ol, Hızlıkiriş, Küçük savaşçı arkadaşımıza zarar vermek istemeyiz. Hrrrm... Benim adım Ağaçsakal, Entlerin en yaşlısı, ve servislerinden dolayı sana minnettarız... Hrrrm.... İzninle Ent suyunu başaranın bir kutlaması olarak sana vereyim.
 dlga_treebeard_questtalk:close_window.1|(Hafif esinti, yaprak şeklindeki saçları ve sakalları arasından süzülürken Sert Kabuklu Dev ve yoldaş Ent'leri kıpırmadan sessizce bekledi.)
 dlga_treebeard_pretalk:treebeard_talk_response|Hrooom... Ne bilmek istersin, genç arkadaşım?
 dlga_treebeard_talk_response:treebeard_about_himself|Kendin hakkında daha fazla şey anlat.
@@ -46,7 +46,7 @@ dlga_treebeard_talk_response:treebeard_about_entwives|Bana Dişi-Entleri anlat.
 dlga_treebeard_talk_response:treebeard_about_ents|Bana Entleri anlat.
 dlga_treebeard_talk_response:close_window|Boşver,güle güle.
 dlga_treebeard_about_himself:treebeard_pretalk|(Ent lideri soğuk ve ağır başlı görünür.Bir süre sonra konuşmaya başlar:)^'Aceleci olma... ağaçlar orklardan güvenlü bir hale gelince bunun hakkında daha fazla konuşabiliriz.'
-dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Ben Türümün en yaşılışıyım hmmm... Bazı ölümlüler tarafından ağaçsakal olarak bilinirim ve elfer bana Fangorn diye seslenir. Hummm...  Ben, Ciltkabuğu ve Yapraklüle karanlıktan önce ormandan geçen tek entleriz. Eskisi kadar kıvrılabilir değilim... Gençkiriş kıvrılabilir ve sallanabilir ince bir ağaç gibi rüzgarda...\nHummm...  Eğer Ent eşler buradalar ise...
+dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Ben Türümün en yaşılışıyım hmmm... Bazı ölümlüler tarafından ağaçsakal olarak bilinirim ve elfer bana Fangorn diye seslenir. Hummm...  Ben, Ciltkabuğu ve Yapraklüle karanlıktan önce ormandan geçen tek entleriz. Eskisi kadar kıvrılabilir değilim... Gençkiriş kıvrılabilir ve sallanabilir ince bir ağaç gibi rüzgarda...Hummm...  Eğer Ent eşler buradalar ise...
 dlga_treebeard_about_entwives:treebeard_pretalk|(Ent Lideri'ni aniden üzgün bir ifade kapladı ve sesi alışılmadık biçimde derinleşti.)^'Hummm... Bu üzücü bir masal... Orman, orklardan tamamen kurtarıldığında bunu tartışabiliriz.'
 dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... Güzel Ent eşler... Ekilmeyi ve büyümeyi severler... Onları daha çok dinlemeliydik... Hrooom... sonra bahçeler hazırlamak üzere Kahverengi Topraklar'a gittiler ve ölümlülere toprağı nasıl verimli yapacaklarını öğrettiler... Onları ziyaret ederdik.. Taa ki... Sauron saldırana kadar... Ent eşler şimdi kayıp... Hummm... Fimbrethil... Onun olgun tanelerinin renkleri... Onları aradık... fakat bulamadık... henüz...
 dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... Biz ağaçların çobanlarıyız ve onları tehlikelerden koruruz. Herhangi bir ölümlü ırktan çok daha yaşlıyız fakat aptallığımızı düzelten Elfler kadar değil. Yıllar boyunca çok şey değişti. Başlarda hızlı ve esnektik. Zamanla çoğumuz kayboldu. Bazılarımız hala gerçek birer Ent ve usullerimiz için yeterince canlı fakat çoğumuz sizin deyişinizle uykuya daldı ve ağaçlaştı. Elbette, pek çok ağaç sadece ağaç fakat çoğu da yarı uyanık. Bazıları büyük oranda uyanık ve birazı da, ah yani, Ent'leşiyor. Bu her zaman oluyordu. Bu bir ağaca olduğunda, anlayabilirsiniz ki bazıları kötü kalpli olabiliyor. Yine de biz elimizden geleni yapıyoruz. Yabancıları ve delidolu kişileri buradan uzak tutuyoruz; ve eğitiyoruz ve öğretiyoruz, yürüyoruz ve yabani otları temizliyoruz. 
@@ -161,7 +161,7 @@ dlga_player_siege_ask_leave_unmolested_reject:close_window|O zaman bu kaleyi hay
 dlga_defeat_lord_answer:defeat_lord_answer_1|Artık benim esirimsin.
 dlga_defeat_lord_answer_1:close_window|Merhametinize kaldım.
 dlga_defeat_lord_answer:defeat_lord_answer_2|Güzel savaştın. Gitmekte özgürsün.
-dlga_start:party_encounter_lord_hostile_attacker|{oyuncu ismi}!
+dlga_start:party_encounter_lord_hostile_attacker|{playername}!
 dlga_start:party_encounter_lord_hostile_attacker.1|Dur!
 dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|Savaşı durdurmanın bir yolu yok mu? Seninle savaşmak istemiyorum.
 dlga_party_encounter_lord_hostile_attacker_2:close_window|Saldırmayın! Teslim oluyoruz.
@@ -170,16 +170,16 @@ dlga_party_encounter_offer_dont_fight:close_window|Sana iyilik borçluyum değil
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. Ama ben savaşmak istiyorum.
 dlga_start:close_window.7|Uzak dur, aşşağlık dilenci.
 dlga_start:lord_start|Eğer benim cesur şampiyonum değilse, {playername}...
-dlga_start:lord_start.1|Seni tekrar görmek güzel {oyuncu ismi}...
-dlga_start:lord_start.2|Tekrar karşılaştık, {oyuncu ismi}...
+dlga_start:lord_start.1|Seni tekrar görmek güzel {playername}...
+dlga_start:lord_start.2|Tekrar karşılaştık, {playername}...
 dlga_start:lord_meet_neutral|Seni tanıyor muyum?
-dlga_lord_meet_neutral:lord_intro|Ben {oyuncu ismi}.
-dlga_lord_meet_neutral:lord_intro.1|Benim adım {oyuncu ismi}. Hizmetinizdeyim.
-dlga_lord_meet_enemy:lord_intro|Ben {oyuncu ismi}.
-dlga_lord_meet_enemy:lord_intro.1|Beni {oyuncu ismi} diye bilirler. Bunu kafana kazısan iyi olur,çünkü daha çok duyacaksın.
-dlga_start:lord_start.3|Peki, {oyuncu ismi}...
+dlga_lord_meet_neutral:lord_intro|Ben {playername}.
+dlga_lord_meet_neutral:lord_intro.1|Benim adım {playername}. Hizmetinizdeyim.
+dlga_lord_meet_enemy:lord_intro|Ben {playername}.
+dlga_lord_meet_enemy:lord_intro.1|Beni {playername} diye bilirler. Bunu kafana kazısan iyi olur,çünkü daha çok duyacaksın.
+dlga_start:lord_start.3|Peki, {playername}...
 dlga_lord_start:lord_generic_mission_completed|Cerrahın arkadaşımı ikna etmeyi başardı ve ameliyatı yaptı. Bundan sonra tekrar yapabileceğimiz iyileşmesi için dua etmek. Neyse, cerrahını bana gönderdiğin için sana teşekkür ederim, {playername}. Yüce bir ruha sahipsin. Bunu unutmayacağım.
-dlga_lord_start:lord_investigate_fangorn_completed0|Yani, {oyuncu ismi}, Fangorn'dan döndün. Peki ne buldun?
+dlga_lord_start:lord_investigate_fangorn_completed0|Yani, {playername}, Fangorn'dan döndün. Peki ne buldun?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|Ağaçlar canlılar! Askerlerimize saldırıyorlar!
 dlga_lord_investigate_fangorn_completed1:close_window|Bunu uzun zamandır düşünüyordum. Bana hep iyi hizmet ettin, {playername}.
 dlga_lord_start:close_window|Sabrım taştı. Senden şuana kadar bana Fangorn hakkında bahsetmeni bekliyordum, ama hiçbir şey bilmiyorsun.
@@ -261,42 +261,42 @@ dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Pekala, {player
 dlga_find_lost_spears_permission:lord_pretalk.1|Üzgünüm, ama seni yeteri kadar tanımıyorum, {playername}.
 dlga_find_lost_spears_permission_yes:lord_pretalk|Teşekkür ederim, lordum.
 dlga_lord_talk:tell_dorwinion_sack|Lordum, üstünde üzümlerin olduğu solmuş bir amblemli çuval buldum içinde ise odun parçaları ve metal vardı bunlar bir mızrağa ait olabilir
-; dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Very interesting. This ancient sack could have born the mark of the finest wines that could only come from Dorwinion.
-dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|Ayrıca çuvalın içinde bu Rhun kafalığı da buldum. Bu bize Spears'a ne olduğu hakkında daha çok bilgi verebilir mi?
-; dlga_tell_dorwinion_sack_3:lord_pretalk|Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for.
+dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Çok ilginç. Bu eski çuval, yalnızca en iyi şarapları yapan Dorwinion'dan gelmiş olabilir.
+dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|Ayrıca çuvalın içinde bu Rhun miğferini de buldum. Bu bize Spears'a ne olduğu hakkında daha çok bilgi verebilir mi?
+dlga_tell_dorwinion_sack_3:lord_pretalk|Karavanlar sık sık yol boyunca soyulurlar. Bu miğfer, Rhun İzcilerinin. Nehir boyunca Rhun Denizi'ni takip et ve Dorwinion ticaret yollarını ara, belki aradığını bulabilirsin.
 dlga_lord_talk:ring_hunters_start|Lordum, size ve savaşa hizmet etmek için daha çetin görevlere hazırladım. Ne yapmamı istersiniz?
-; dlga_ring_hunters_start:ring_hunters_check|{playername}, I have heard of your exploits and you have made a name for yourself. I have a task specifically for such as yourself. You can deal with it however you wish.  Bloodshed cannot be avoided, especially against this group I am about to send you of to. Do you have sufficient men?
+dlga_ring_hunters_start:ring_hunters_check|{Playername}, Kahramanlıklarınızı duydum ve ününüzü biliniyorum. Sizin gibi biri için özel bir görevim var.İsterseniz kabul edebilirsiniz. Özellikle sizi göndermeyi düşünüyorum bu gruba karşı, kan dökülmesi kaçınılmaz bunun için yeterli adamın var mı?
 dlga_ring_hunters_check:ring_hunters_1|Evet efendim. İyi eğitimli,dayanıklı adamlardan oluşan bir birliğim var. Her şey için hazırız.
 dlga_ring_hunters_check:ring_hunters_check_failed|Korkarım efendim.
 dlga_ring_hunters_check_failed:lord_pretalk|O zaman bu görev için henüz hazır değilsin, {playername}. Git ve daha fazla birlik topla.
-; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.   One with their loot moving towards Mirkwood Forest. The other, a considerable size, towards Beorn's House, perhaps to continue their destructive search.
+dlga_ring_hunters_1:ring_hunters_2|Mükemmel. Kuzey, son zamanlarda köyleri yağmalayan ve yüzük arayan, pusuya yatan kanunsuz kişilerden oluşan bir grup tarafından çok sıkıntı çekti. Bu eşkıyaları avlayacaksınız ve onların yaptıkları yıkımı sona erdireceksiniz. Son yağmalarından kurtulanlar iki grup bildirdiler. Biri Kuyutorman'a doğru hareket etmiş. Sayıca çok olan diğeri ise büyük ihtimalle yüzüğü aramaya devam etmek için Beorn'un Evine doğru gitmiş.
 dlga_ring_hunters_2:ring_hunters_what|Efendim, neyi arıyor olabilirler?
 dlga_ring_hunters_2:ring_hunters_accept|'Yüzük Hırsızları'nı durdurmak için ne gerekiyorsa yapacağım, Lordum.
 dlga_ring_hunters_2:ring_hunters_reject|Henüz böyle bir göreve hazır değilim.
 dlga_ring_hunters_accept:close_window|Sen cesur birisin, General. Başarı haberlerini bekleyeceğiz
 dlga_ring_hunters_reject:lord_pretalk|Anlıyorum.Hazır olduğunda bana haber ver, ama çabuk ol, başarılı olmalarını istemeyiz.
-; dlga_ring_hunters_what:ring_hunters_2|It is hard to know exactly what they want with this, but we can see that they are going through great lengths to find what they are looking for.   All we can surmise is that this must be a powerful weapon of sorts, a weapon to be used to cause more destruction under the Dark Lord's name.
-; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for these..   Whether true or not, these must not fall into the Dark Lord's hands.
-; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news.. Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
-; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news, {playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something.. a disturbance.
-; dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|I am glad, then. Whatever this weapon may have been... they may still be looking for it. I will remain vigilant and remain on the lookout for more of these Ring Hunters.
+dlga_ring_hunters_what:ring_hunters_2|Bununla tam olarak ne istediklerini bilmek zor, ancak aradıklarını bulmak için çok fazla uğraştıklarını söyleyebiliriz. Tahmin edebileceğimiz tek şey, bir tür güçlü bir silah olmalı, Dark Lord'un adı altında daha fazla tahribata neden olmak için kullanılacak bir silah.
+dlga_ring_hunters_what:ring_hunters_2.1|Karanlık Lord, daha önce farklı cüce klanlararına elçiler göndererek, halkımıza verilen güç yüzüklerini sordu. Bu haydutlar bunları arıyor olabilirler .. Doğru olsun veya olmasın, bunlar Karanlık Lord'un ellerine düşmemelidir.
+dlga_lord_talk:ring_hunter_party_defeated|Efendim, kötü haberlereim var... Köyleri yağmalayan Yüzük Avcılarını yendim fakat liderleri orada değildi. Aradıklarını bulmuş olabilirler
+dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|Bu kötü haber değil {playername}. Büyük zaferimizin haberini aldık! Bu köylülerin hayatları davamız için herhangi bir silahtan daha önemli. Konuştuğumuz gibi, Beorningler zaferinizi sağlamada yardımcı olacak güçlerini topluyor. Üstelik, bu Yüzük Avcılarının aradıklarını bulduğuna inanmıyoruz. Korktuğumuz silah bu olsaydı,bunu hisssederdik.
+dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Öyleyse buna sevindim. Bu silah ne olursa olsun ... hala arıyor olabilirler. Uyanık olmaya devam edeceğim ve Yüzük Avcılarından daha fazla arayacağım.
 dlga_ring_hunter_quest_end:close_window|Hepimiz yapacağız. Bir kez daha hizmetlerin için teşekkür ederiz, {Playername}.
-; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. I also came across this
+dlga_lord_talk:ring_hunter_lair_defeated_elf|Lordum, köyleri yakıp yıkan Yüzük Avcılarını yakalayamadıysam da, liderlerini sığınağında yenebildim. Buradan geldim.
 dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Bu küçük bir güç yüzüğü.
-; dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we have prevented the Dark Lord from obtaining this, which he will undoubtly use to end more lives.
-; dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use against the Dark Lord's forces. We know you will use it well.
-; dlga_ring_hunter_lair_quest_end:close_window|This is a tremendous honour, my Lord. Thank you. I shall continue the battle against the Dark lord, and this will help tremendously.
+dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Sonra Karanlık Lord'un bunu ele geçirmesini engelledik, kuşkusuz bunu daha fazla yaşamı sona erdirmek için kullanacaktı.
+dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Bu yüzüğü korumalısın ve Kara Lord'un ordusuna karşı kullanmalısın. Yüzüğü iyi kullanacağını biliyoruz.
+dlga_ring_hunter_lair_quest_end:close_window|Bu büyük bir onurdur, Lordum. Teşekkür ederiz. Karanlık Lord'a karşı savaşa devam etmeliyim ve bu muazzam yardımcı olacaktır.
 dlga_start:ring_hunters_party_attack|Şuraya bak. Parçalayabileceğimiz bir grup daha.
-; dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampaging has come to an end.
-; dlga_ring_hunters_party_attack_2:close_window|Everyone, make sure you search their packs and their fingers. Save one to torture. Everything else you can eat.
+dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Senin yağmaların artık sona erdi.
+dlga_ring_hunters_party_attack_2:close_window|Herkes, onların çantalarını ve ellerindekileri iyice aradığından emin olsun. İşkence için saklayın. Yiyebileceği şeyler haricinde her şeyi.
 dlga_start:ring_hunter_lair_defeat|Yüzük Karanlık Lord'a ait! Senin olamaz!
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Şimdi bana ait.
 dlga_ring_hunter_lair_defeat2:close_window|Bu hezimet önemli değil... Bizim savaşçılarımız öfkelendi! Onları kurtarmak için çok geç!
-; dlga_start:beorn_message|General, we received a message from {s1} that a large bandit party was headed our way! We had no time to gather enough forces, and when we heard the sound of battle, we prepared for the worse!
-; dlga_beorn_message:beorn_message2|That was no ordinary bandit party. They were a collection of the Dark Lord's best...however, their leaders were not here...They have a lair near Mirkwood Forest and I must make haste.
-; dlga_beorn_message2:beorn_message_end|Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory
-; dlga_beorn_message_end:beorn_message_close|Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.
-; dlga_beorn_message_close:close_window|Yes, General. We will remain vigilant. We will continue our efforts to recruit more men from surrounding villages. Your victory today has inspired us all.
+dlga_start:beorn_message|General, {s1} tarafından büyük bir haydut grubunun yola çıktığına dair bir mesaj aldık! Yeterli güç toplamak için vaktimiz olmadı ve savaş sesini duyduğumuzda en kötüsü için hazırlandık!
+dlga_beorn_message:beorn_message2|Bu sıradan bir haydut grubu değildi.Onlar Karanlık Lord'un en iyi adamlarıydı... Fakat liderleri orada değildi...Kuyutorman'ın yakınında bir inleri var acele etmeliyim.
+dlga_beorn_message2:beorn_message_end|Evet, mesaj İnden bahsetti ve ona doğru gözcülerimizi gönderdik. Onları yakıp Mordor'a doğru bıraktıklarını gördük ... Önce oraya gittiysen, bize yardım edememiş olabilirsin. Zaferiniz için gerçekten minnettarız.
+dlga_beorn_message_end:beorn_message_close|O halde, geri bildirimde bulunmalı ve {s1} 'e burada neler olduğunu anlatmalıyım. Köyüne dön ve keşifçileri hazırla. Stragglers olabilir.
+dlga_beorn_message_close:close_window|Evet General. Biz uyanık olacağız. Çevredeki köylerden daha fazla erkek toplamaya yönelik çabalarımıza devam edeceğiz. Zaferiniz bugün hepimize ilham verdi.
 dlga_lord_give_troops:lord_give_troops_check|Asker vermek mi? Biraz asker işime yarar.
 dlga_lord_give_troops:lord_pretalk|Ne yazık ki bana birlikte destek sağlayabileceğin hiç {s14} askerlerin yok.
 dlga_lord_give_troops_check:lord_give_troops_check_1|İzin ver asker listesini kontrol edeyim...
@@ -366,18 +366,18 @@ dlga_lord_tell_objective:lord_pretalk.9| {s1}{s5}'e karşı savaşıyoruz.
 dlga_lord_tell_objective:lord_pretalk.10|{s1}{s5} 'e refakat ediyoruz.
 dlga_lord_tell_objective:lord_pretalk.11|Sonraki hedefimizi düşünüyoruz.
 dlga_lord_tell_objective:lord_pretalk.12|Bilmiyorum: {reg1} {s1}
-; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.
+dlga_lord_tell_mission:lord_mission_defend_village_a|{Playername}, izcilerimizden {s12} yakınlarındaki bir köye giden bir baskın grubunun olduğunu bildiren bir rapor aldık.
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Adam gönderebilecek durumda mısın?
-; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
-dlga_lord_mission_defend_question:lord_mission_defend_accept|ben ve adamlarım hazır. Tek seferde atlamalıyız.
+dlga_lord_mission_defend_village_b:lord_mission_defend_question|Yapabiliriz, ancak harekete geçmek için hazırlanmamız zaman alacaktır. Korktuğumuzdan çok geç orada olabiliriz. ^^ Siz ve adamlarınız görünüşe göre hızla dışarı çıkabiliyorlar. Bu köyü savunur musun?
+dlga_lord_mission_defend_question:lord_mission_defend_accept|Ben ve adamlarım hazır. Hemen yola koyulmalıyız.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|Korkarım ama bu görevi yapamam.
 dlga_lord_mission_defend_accept:close_window|Teşekkürler,{playername}. şimdi git, Çabuk!
 dlga_lord_mission_defend_reject:close_window|Anlıyorum. O zaman oraya birliklerimi yollayacağım. Umalım da çok geç olmasın.
-; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
+dlga_lord_tell_mission:lord_mission_raid_village_a|{Playername},toplama için uygun olan yakınlarda bir köy var. İzcilerimiz {s3} tarafından koruntuklarını söylüyor, ancak sayıca çok azlar ve kolayca yenilebilirler ^^ Söylediklerimin ilk komutanı oldun. Bu bilgi ile ne yapmak istiyorsun?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Bu kasabaya saldıracağım, gördüğüm her adamı öldürüp tüm kadın ve çocukları esir alacağım!
 dlga_lord_mission_raid_village_a:lord_raid_village_reject|Bu sıkıcı kasabalara saldıracak kadar boş vaktim yok!
 dlga_lord_raid_village_accept:close_window|O zaman burada dikilip ne yapıyorsun?
-; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting
+dlga_lord_raid_village_reject:close_window|Korkakların bahaneleri. Git buradan, korkaklığın midemi bulandırıyor.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Kuyutorman büyücüsü katledildi, Leydim.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Beni affedin, Leydim, ama acil meseleler büyücüyü öldürmemi engelledi, ve bu süre içerisinde büyücü kaçtı.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Kuyutorman büyücüsü halen yaşıyor. Ritüellerini böldük ama büyücü kaçtı.
@@ -425,7 +425,7 @@ dlga_lord_mission_capture_troll_accepted:lord_pretalk|Senin cesaretin ve gücün
 dlga_lord_tell_mission:lord_tell_mission_kill_troll|Topraklarımız bizim zamanımızda duyulmamış tehlikelerle karşı karşıya. İnsanlar {s3} eteklerinde ortadan kayboluyor. Yalnızca basit halk değil, duvarın dışına çıkmaya teşebbüs eden küçük silahlı gruplar bile geri dönemiyorlar. Çok garip söylentiler yayıldı, ama ben neyle karşı karşıya olduğumuzu biliyorum.
 dlga_lord_tell_mission_kill_troll:lord_mission_told|Vahşi troller, {playername}. Dev canavarlar, korkunç yaratıklar. Daha önce hiç dağlardaki karanlık mağaralarından dışarı çıkmamışlardı, ama en az bir tanesi {s3} civarında görülmüş. Hangi kara büyü buna sebep oldu bilmiyorum ama o şeyin öldürülmesi gerekiyor.
 dlga_lord_mission_told:lord_mission_kill_troll_info_a|Bu güzellikler nasıl kavga edebilir?
-; dlga_lord_mission_kill_troll_info_a:lord_mission_told|A troll is a dangerous creature indeed. A giant monster which possesses an incredible strength in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wielded in their hands. It is rumored that a single troll can easily best a group of half a dozen well armed and trained men, wasting each of them with a single blow. Not only men but horses too fear trolls. Be careful if you plan to charge one while mounted.
+dlga_lord_mission_kill_troll_info_a:lord_mission_told|Bir troll gerçekten tehlikeli bir yaratıktır. Biçimsiz kaslarında inanılmaz bir kuvvete sahip dev bir canavar. Derileri demir kadar serttir, ve bir ağaç kütüğü onların ellerinde sadece küçük bir sopadır. Rivayete göre tek bir troll kolaylıkla yarım düzine iyi silahlı ve eğitimli askeri yenebilir, her birini tek bir darbeyle yıkarak. Sadece insanlar değil atlar da trollerden korkar. Atlı halde birine saldırmayı planlıyorsan dikkatli ol.
 dlga_lord_mission_told:lord_mission_kill_troll_info_b|Sizce bu şey Mordor'dan mı geliyor yoksa Isengard'dan mı?
 dlga_lord_mission_kill_troll_info_b:lord_mission_told|Hayır, sanmıyorum. Hem Ak Büyücü'nün hem de Kara Kule'nin saflarında çeşit çeşit yaratıklar olduğu haberini aldık, ama duyduğum kadarıyla {s3} civarına korku salan canavar vahşi ve ehlileştirilmemiş. Unutma, birden fazla canavar olabilir. Ama şuna emin olabilirsin ki; bu yeni belayı başmıza salan belirsiz bir zanaatkar.
 dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|İşte senin gibi güvenilir ve cesur bir hizmetkar için bir görev, {playername}. Kulağıma Fangorn Ormanı'ndan çok tuhaf bir söylenti ulaştı. Odun toplamaya giden köleler, ve hatta o bölgeden geçen komutanlarım, bazen geri dönemiyorlar. Bazen de birliklerinden gizemli bir şekilde kaybolan adamlarını rapor ediyorlar. Bunun için hayaletleri, ağaç ruhlarını, antik lanetleri suçluyorlar. Saçmalık! Kendi korkaklıkları ve beceriksizlikleri için basit bahaneler.
@@ -446,7 +446,7 @@ dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|İyi şanslar o zaman.
 dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|Halkımıza verebileceğin önemli bir görev var {playername}.
 dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|Lothlorien'i koruyup kollayacak gücüm, düşmanın makineleriyle yok ediliyor. Dol guldur'un usta büyücülerinden biri, savunmamızı kısıtlamak için güçlü büyüler yapıyor. Kendisi bir ölümlü olmasına karşın büyülü ritüellerin kullanımında düşmanın en önemli silahı haline geldi ve insanlarımıza karşı büyük tehdit oluşturuyor. Onu avlamalı ve yok etmelisin!
 dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Leydim, Büyücüyü nerede bulabilirim?
-dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Onu Mirkwood Ormanı'nda ara, Dol Guldur'a çok uzak sayılmaz. Kendisi hem iyi korunmuş hem de tedbirli bir düşman, alarmı tetiklememek için gizliliğini kullanmalısın. Eğer kaçarsa bizim bilmediğimiz başka bir karanlık yere gider ve kötülüklerine karşı koyulamaz bir şekilde devam eder. Onu yok etmek için sadece bir şansımız olacak. Çok fazla şey senin başarına bağlı. İyi dileklerimizle git.
+dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Onu Kuyutorman'da ara, Dol Guldur'a çok uzak sayılmaz. Kendisi hem iyi korunmuş hem de tedbirli bir düşman, alarmı tetiklememek için gizliliğini kullanmalısın. Eğer kaçarsa bizim bilmediğimiz başka bir karanlık yere gider ve kötülüklerine karşı koyulamaz bir şekilde devam eder. Onu yok etmek için sadece bir şansımız olacak. Çok fazla şey senin başarına bağlı. İyi dileklerimizle git.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Emredersiniz, Leydim. bu kötülüğü ortadan kaldırmak için elimden geleni yapacağım.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Bağışlayın, leydim. İnsanlarınızın bu derdine yardım etmeden önce ilgilenmem gereken acil işlerim var.
 dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Anlıyorum, {playername}. Ama çok uzun sürmesin, Ben onun kara büyüsüne karşı yorgun büyüyorum.
@@ -457,7 +457,7 @@ dlga_lord_mission_deliver_message_accepted:close_window|Sana bir teşekkür bor�
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah peki, eminim bir başkasını bulurum.
 dlga_lord_tell_mission:lord_mission_deliver_message.1|{s15}'ten {s13}'e bir mektup göndermem gerekiyor. Kendisi şu an {s4} topraklarında olmalı. Eğer o yöne gideceksen, mektubu ona teslim edebilir misin? 40 gün içerisinde elinde olmalı.
 dlga_lord_tell_mission:lord_mission_told|Acil bir mesele var... Ulağımın {s14}'deki komutanlarıma savaş planlarımızla ilgili rapor ulaştırması gerekiyor. Yolculuğu yoldaki bir çok tehlike yüzünden bir kaç kez ertelendi, ancak bu kez gitmek zorunda. Yani, en azından iyi korunduğundan emin olmak istiyorum. Sana fazlasıyla güveniyorum, {playername}. Eğer ona {s14}'e kadar eşlik edip sağ salim vardığından emin olursan, sana minnettar olurum.
-; dlga_lord_tell_mission:lord_mission_told.1|I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look, {reg3?she:he} may be able to convince him to give his consent to an operation.Please, I will be deeply indebted to you if you grant me this request.
+dlga_lord_tell_mission:lord_mission_told.1|Burada eski bir arkadaşım var, yaşlı bir savaşçı, kendisi çok hasta. Eski bir savaş yarasından hastalık kapmış, ve eğer bir cerraha görünmezse kurtulmasına imkan yok. Bu adam benim için değerli, {playername}, ama aynı zamanda bir domuz kadar inatçı. Doktorlara güvenmediği için hiç kimsenin yarasına bakmasın izin vermiyor. Duyduğuma göre yanında yetenekli bir cerrah varmış. Eğer cerrahının gelip bakmasına izin verirsen, belki {reg3?o:o} bir operasyon için rızasını alabilir. Lütfen, eğer bu isteğimi yerine getirirsen sana borçlu kalırım.
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Ne kadar adama ihtiyacın var?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Eğer {reg1} tane {s14} yetiştirip bana getirebilirsen, sanırım bu yeterli olacaktır.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Tabii ki, {s65}. Bana {reg1} yeni gönüllü ver ben de onları {s14} olmaya eğiteyim.
@@ -472,7 +472,7 @@ dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|İstediğin gibi olsu
 dlga_lord_tell_mission:lord_mission_told.2|{s4}'te çalışan kölelerden bazıları kaçmış. Hayatlarını bağışladığımız, nankör domuzlar. Duyduğum kadarıyla {s3}'e kaçıyorlarmış, ve yakalanmamak için üç gruba ayrılmışlar. Üç grubu da yakalayıp {s4}'e geri getirmek için ne gerekirse yapmanı istiyorum. Kaçmaya çalıştıkları için hepsini astırmalıyım, ama şu an çalışanlara ihtiyacımız var, iyi bir dayakla bu seferlik yırtmalarını sağlayacağım.
 dlga_lord_tell_mission:lord_tell_mission_follow_spy|Bu şehirdeki bir adamın aslında düşman casusu olduğuna dair sağlam istihbarat aldım. İhaneti için yakalanıp asılmalı aslında, ama yakında şehirden ayrılıp efendisiyle buluşacağına inanıyoruz. Bütün o küçük fısıltıları götürdüğü adamla. Casusun kendisi çok önemli değil, ama efendisi tehlikeli bir adam, ve eğer onu ele geçirebilirsek bize bir çok şey anlatabilir.
 dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|Senden casus şehri terk edene kadar burada beklemeni istiyorum. Ardından onu takip etmelisin, gizlice, buluşma noktasına kadar. Casusun yolda seni görmemesi için çok dikkat etmelisin, aksi takdirde bir şeylerin ters gittiğini anlayıp geri gelebilir. Efendisi ortaya çıktığında, onları pusuya düşürüp bana getirmelisin. Canlı, eğer mümkünse.
-dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|Yapacağım, {s65}.\n
+dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|Yapacağım, {s65}.
 dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|Hayır.Bu korkak benim için değil.
 dlga_lord_tell_mission_follow_spy_accepted:close_window|Güzel, eminim iyi iş çıkaracaksın. Adamlarımdan biri casus ayrılırken sana onu gösterecek, böylece takip etmen gereken adamı bileceksin. Unutma, ikisini de istiyorum, canlı.
 dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|Utanç verici. Tamam 
@@ -507,7 +507,7 @@ dlga_start:lady_escort_lady_succeeded|Buraya kadar eşlik ettiğin için teşekk
 dlga_lady_escort_lady_succeeded:close_window|Hizmet etmek bir onurdu.
 dlga_start:prison_guard_players|İyi günler, Kumandan. Hapishaneyi ziyaret edicek misiniz?
 dlga_prison_guard_players:close_window|Evet. Kapının kilidini aç.
-dlga_prison_guard_players:close_window.1|Hayır, şimdi değil.\n
+dlga_prison_guard_players:close_window.1|Hayır, şimdi değil.
 dlga_start:prison_guard_talk|Evet? Ne istiyorsun?
 dlga_prison_guard_talk:prison_guard_ask_prisoners|Kim burada tutuklu bulunuyor?
 dlga_prison_guard_talk:prison_guard_visit_prison|Bir esirle konuşmak istiyorum.
@@ -557,44 +557,44 @@ dlga_castle_gate_open:close_window.3|İçeri girin. Fakat adamlarınızın bu du
 dlga_castle_gate_open:close_window.4|Lordum {s2} seni burada istemiyor. Şimdi defol.
 dlga_start:caravan_help1|Yardımınız için teşekkürler! Şimdi güvendeyiz. Benim adım Torbal saldırıya uğradığımda yükleri teslim ediyordum.^^ Daha önce bu kadar büyük orklar gördün mü? Bunlar normal ilk dağındakiler kolayca defettiğimiz gibi değil. Ve kalkanlarındaki boya antik Mordor işareti. Bu nehirin diğer tarafını uzun zamandır görmemiştim.^^Korkunç şeyler ayaklanıyor.. Savaş yaklaşıyor! ^^Sana en yakındaki şehre gidip oradaki yetkiliyi ve herkesi uyarmanı öneririm. Bu çok önemli, yani lütfen acele et.
 dlga_caravan_help1:caravan_help2|Hayır, daha önce böyle büyük bir Ork görmedim. İğrenç 'şey'ler... ^^Hissettiklerimize göre, yaklaşmakta olan savaşta bir askerim.
-; dlga_caravan_help2:caravan_help3|You are? Of course you are! I have seen that you are a capable warrior. ^^I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. ^^Here, have some of the local currency used by {s10}
-dlga_caravan_help3:caravan_help4|sana İyi yolculuklar dilerim, torbal. Eminimki tekrar karşılaşacağız
-; dlga_caravan_help4:caravan_help5|I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!
+dlga_caravan_help2:caravan_help3|Sen? Tabiki öylesin! Yetenekli bir savaşçı olduğunu gördüm. ^^ Bugün gerçekten şanslıyım, bu yüzden bu iyi şanstan yararlanıp  acilen köyüme gidip halkımı bu iğrenç yaratıklara karşı uyarayım. ^^ Buyur, {s10} tarafından kullanılan paramızdan al.
+dlga_caravan_help3:caravan_help4|Sana İyi yolculuklar dilerim, Torbal. Eminim ki tekrar karşılaşacağız.
+dlga_caravan_help4:caravan_help5|Bunu sabırsızlıkla bekliyorum. Muhafızlarım burada savaşınızı gördüler ve kesinlikle Bunu Lordlarına anlatacaklar. ^^ Onların insanlarına yeteri kadar yardımcı olursanız, aralarında çok ünlü olursunuz ki bu çok güzel şeylere yol açabilir! ^ Ben bunu yaptığımdan biliyorum bunun için bana aylık maaş bile veriyorlar!
 dlga_caravan_help5:close_window|Bunu unutmayacağım. Sağol Torbal ve güvende kal.
 dlga_start:caravan_attack1|Sen kimsin? Senin yardımına ihtiyacım yoktu
 dlga_caravan_attack3:close_window|Zayıf mı? Sana kimin zayıf olduğunu göstereceğim! (Zor)
 dlga_caravan_attack3:close_window.1|Git o halde, korkak.Senin cesedi kırlarda göreceğim.
-; dlga_start:caravan_duel1|Hehe...He's a grumpy one, isn't he? Never mind him! You saved my skin out there! Some of the men's lives too! ^^Here, we grabbed the money in our dead men's pockets. {s10}
-; dlga_start:caravan_duel1.1|I guess I am promoted, then. You are a fierce warrior. Here, take some of our loot from the caravan. The guards were also betting against you, but I wasn't..hehe... I saw what you did out there.... ^^{s10}
-dlga_caravan_duel1:caravan_duel2|Seni öldürüp her şeyini alabilirim... ama yeterince kanıtladım\nDefol.
-; dlga_caravan_duel2:caravan_duel3|The men definitely respects you now! Or they are afraid! No matter what,  they will tell their Lords what you did here. Maybe if you keep impressing them, they'll give you special things! The horse people of Rhun once gave me a horse! I ATE IT! HA HA HA HA!
-; dlga_woodelf_help_6:woodelf_help_7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
+dlga_start:caravan_duel1|Hehe ... O huysuz biri, değil mi? Onu boşver! orada kellemi kurtardın! Bazı adamların hayatlarını da! ^^ İşte, parayı ölü adamlarımızın ceplerinden bulduk. {s10}
+dlga_start:caravan_duel1.1|Sanırım desteklendim. Sen cesur bir savaşçısın. İşte, karavandan yağmaladıklarımızdan bir miktarını al. Muhafızlar da sana karşı bahis oynamışlardı, ama ben o değil..hehe... Orada ne yaptığını gördüm .... ^ ^{s10}
+dlga_caravan_duel1:caravan_duel2|Seni öldürüp her şeyini alabilirim... ama yeterince kanıtladım.Defol.
+dlga_caravan_duel2:caravan_duel3|İnsanlar kesinlikle sana saygı duyuyor! Ya da korkuyorlar! Ne olursa olsun, burada ne yaptıklarını Lordlarına söyleyecekler. Belki onları etkilemeye devam edersen, sana özel şeyler verirler! Rhun'lu adamlar bana bir kez at vermişti! BEN DE ONU YEMİŞTİM! HA HA HA HA!
+dlga_woodelf_help_6:woodelf_help_7|(FACTION RANKS TUTORIAL) ^^ Seviye puanları, grubunuzun (ve / veya diğer grupların) yükselmesini sağlar. ^^ Bu, maksimum parti büyüklüğünüzü, haftalık grup kaynak gelirinizi ve diğer grup özellikli ödüllerin açılmasını belirleyecektir.
 dlga_woodelf_help_7:close_window.1|(elini kaldır ve tek bir şey demeden ayrıl.)
-; dlga_start:beorn_help1|*He sizes you up with a frown.* ^^Shiny things like you is what draws goblins from the mountains into our forest. But you kill them good, for that we give thanks.
-; dlga_beorn_help1:beorn_help2|Well met! Even though we seldom leave our woods, I would not refuse aid to any who oppose servants of the Enemy.
-; dlga_beorn_help1:beorn_help2a|(nod without saying a word)
-; dlga_beorn_help2:beorn_help3|It is wise not to go near those who serve him, but today it seems we can not get far enough. ^^All our people will know how many goblin heads you let roll today! And all will welcome you with mead and bread, were you to arrive at one of our steads.
-; dlga_beorn_help2a:beorn_help3|*grunts appreciatively* ^^An elf of a few words, eh? You seem more like our kind, none of that dull elven singing or boring poetry. ^^A good story, from the days when the hills were young and forests without end, that’s what we like best! ^^And that’s what I’ll tell my people about you. All will know how many orc filth you rid them of today. Mead and warm hearts will welcome you in any of our wooden halls.
-; dlga_beorn_help3:beorn_help4|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Beorn are not the ones you earned in Lothlorien, but the ones you will earn in Beorn. ^^See REPORTS for more information.
-; dlga_beorn_help4:beorn_help4a|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?...
-; dlga_beorn_help4a:beorn_help5|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?... Golden mead is sweet and warms the heart, but perhaps elven blades and keen arrows are needed more in these dark days..
-; dlga_beorn_help4:beorn_help5|(place a hand on your heart, nod and smile)
-; dlga_beorn_help5:beorn_help6|We may be rough and hairy, grim and dark. But we help our friends, those who help us. ^^If our chiefs think you and your actions worthy, we will follow you to battle.
-; dlga_beorn_help6:beorn_help7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
-; dlga_beorn_help7:close_window|Le fael, friend! Farewell. 
+dlga_start:beorn_help1|* Seni kaşlarını çatarak karşılıyor. * ^^ Goblinleri dağlardan ormana çeken şeyler senin gibi parlak şeylerdir. Ama onları iyi öldürdün, bu yüzden sana teşekkür ediyoruz.
+dlga_beorn_help1:beorn_help2|Merhaba! Ormanlarımızdan nadiren ayrılsak da, Düşmanımın düşmanına yardım etme fırsatını reddedemezdim.
+dlga_beorn_help1:beorn_help2a|(başını sallayıp selamlama)
+dlga_beorn_help2:beorn_help3|Ona hizmet edenlere yaklaşmamak akıllıca olur, ancak sanırım bugün daha fazla ileri gidemeyeceğiz. ^^ Bütün halkımız bugün kaç goblin kellesi aldığınızı biliyor! Bizim topraklarımızda  artık bal likörü ve ekmekle karşılanacaksın.
+dlga_beorn_help2a:beorn_help3|* Minnetle mırıldanıyor * ^^ Birkaç kelimelik elf, ha? Sen bizim türümüze çok daha fazla benziyorsun, o donuk elf şarkıları ve sıkıcı şiirler söyleyenlere değil. ^^ Tepelerin genç olduğu ve ormanların bitmediği günlerden kalan iyi bir hikaye, en çok sevdiğimiz şey budur! ^^ Ve bunu halkıma anlatacağım. Bugün, kaç tane ork temizlediğini bilecekler. Bal likörümüz ve sıcak kalplerimizle ahşap salonlarımızda sizi ağırlamaktan mutluluk duyacağız.
+dlga_beorn_help3:beorn_help4|(RESOURCE POINT TUTORIAL) ^ ^ Beorn halkını geliştirmek için kullanabileceğiniz Kaynak Puanları, Lothlórien'de kazandığınız kaynaklar değil, Beorn'da kazanacağınız Kaynaklar olmalıdır. ^^ Daha fazla bilgi için RAPORLAR bölümüne bakınız.
+dlga_beorn_help4:beorn_help4a|* Hoş bir yüz ifadesiyle güle güle * Elflerin de ayı-kardeşi olduğuna inanıyor musun?
+dlga_beorn_help4a:beorn_help5|* Hoş bir yüz ifadesiyle güle güle * Elflerin de ayı-kardeşi olduğuna inanıyor musun? ... Altın bal likörü, kalbi sıcak ve tatlı tutar belki ama bu karanlık günlerde, elf bıçakları ve keskin oklara daha çok ihtiyaç duyuluyor ..
+dlga_beorn_help4:beorn_help5|(elini kalbini koydu, kafasını salladı ve gülümsedi)
+dlga_beorn_help5:beorn_help6|Kaba ve kıllı, acımasız ve karanlık olabiliriz. Ancak bize yardım eden dostlarımıza yardım ediyoruz. ^^ Eğer şeflerimiz sizi ve davranışlarınızı değerli görürse sizi savaşa kadar takip ederiz.
+dlga_beorn_help6:beorn_help7|(FACTION RANKS TUTORIAL) ^^ Seviye puanları, grubunuzun (ve / veya diğer grupların) yükselmesini sağlar. ^^ Bu, maksimum parti büyüklüğünüzü, haftalık grup kaynak gelirinizi ve diğer grup özellikli ödüllerin açılmasını belirleyecektir.
+dlga_beorn_help7:close_window|Le fael -Teşekkür ederim-, dostum. Elveda.
 dlga_beorn_help7:close_window.1|(elini kaldır ve tek bir şey demeden ayrıl.)
-; dlga_start:kill_scout_1|Great eyes and ears you have there! If you did not warn the group, those scouts would have escaped and have told their ugly lords that we are coming.
-; dlga_kill_scout_1:kill_scout_2|Watch where you are taking us, Orc... We did not travel this far to get stopped before the war begins!
-dlga_kill_scout_2:kill_scout_3|Ve savaş olacak! İşte, al bunları. Mordor'a vardığında adamlarına yiyecek içecek alabilirsin
-; dlga_kill_scout_3:kill_scout_4|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Mordor are not the ones you earned in your own faction, but the ones you will earn in Mordor. ^^See REPORTS for more information.
-dlga_kill_scout_4:kill_scout_5|Ork pisliğini içmemizi mi istiyorsun? Kendi sidiğimizi içmeyi yeğleriz!
-; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I've won my bet against Gothmog! haha!^^ I'll definitely tell him and the rest of the Mordor commands all about you! They'll definitely keep an eye on you.^^ If they like you, you'll get rewarded nicely. ^^MORE ORC BREW! AHAHA!
-; dlga_kill_scout_6:kill_scout_7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
+dlga_start:kill_scout_1|Harika gözler ve kulakların var orada! Grubu uyarmasaydınız, bu izci kaçmış olur ve onların çirkin efendilerine bizlerin geldiğini söylemiş olurdu.
+dlga_kill_scout_1:kill_scout_2|Bizi nereye götürdüğüne dikkat et, Orc ... Savaş bittikten sonra oraya varmak için bu kadar yolculuk etmedik!
+dlga_kill_scout_2:kill_scout_3|Ve istediğimiz savaş olacak! İşte, al bunları. Mordor'a vardığında adamlarına yiyecek içecek alabilirsin
+dlga_kill_scout_3:kill_scout_4|(RESOURCE POINT TUTORIAL) ^^ Mordor halklarını geliştirmek için kullanabileceğiniz Kaynak Puanları Mordor'da kazanılablir . ^^ Daha fazla bilgi için RAPORLAR bölümüne bakınız.
+dlga_kill_scout_4:kill_scout_5|Ork pisliğini içmemizi mi istiyorsun?! Kendi sidiğimizi içmeyi yeğleriz!
+dlga_kill_scout_5:kill_scout_6|Ha! Yabancıların böyle şeyler yaptığını biliyordum! Gothmog'a karşı girdiğim bahsi kazandım! Haha! ^^ Ona kesinlikle senden bahsedeceğim ve Mordor'un tüm komutanları, hakkındaki her şeyi bilecek! Kesinlikle gözleri üzerinde olacak. ^^ Eğer senden hoşlanırlarsa çok iyi ödüllendirileceksin. ^^ DAHA FAZLA ORC! AHAHA!
+dlga_kill_scout_6:kill_scout_7|(FACTION RANKS TUTORIAL) ^^ Seviye puanları, grubunuzun (ve / veya diğer grupların) yükselmesini sağlar. ^^ Bu, maksimum parti büyüklüğünüzü, haftalık grup kaynak gelirinizi ve diğer grup özellikli ödüllerin açılmasını belirleyecektir.
 dlga_kill_scout_7:kill_scout_8|Beni iğrendiriyorsun, Ork! Mızraklarımızı kafanla dekore etmeden önce doğru Mordor'a!
-; dlga_kill_scout_8:close_window|Yea yea... piss drinking foreigner...!
-; dlga_woodelf_help_1:woodelf_help_2.1|I have never seen such a large orc before. Nasty things. Do not fret. I am a Soldier in this coming war that we have all been sensing.
-; dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.
-dlga_woodelf_help_3:close_window|sana İyi yolculuklar dilerim, torbal. Eminimki tekrar karşılaşacağız
+dlga_kill_scout_8:close_window|Evet, evet ... sidik içen yabancı...!
+dlga_woodelf_help_1:woodelf_help_2.1|Daha önce hiç böyle büyük ork görmemiştim. Pis şeyler. Üzülmek yok. Ben herkesin geldiğini hissettiği bu büyük savaşın bir askeriyim.
+dlga_woodelf_help_2:woodelf_help_3.1|Sen? Tabi ki öylesin! Yetenekli bir savaşçı olduğunu gördüm. Bugün gerçekten çok şanslıyım, hemen köyüme gidip halkımı bu iğrenç canavarlara karşı uyaracağım.
+dlga_woodelf_help_3:close_window|Sana İyi yolculuklar dilerim, Torbal. Eminim ki tekrar karşılaşacağız.
 dlga_start:close_window.9|Tam zamanında geldin.Şimdi birliklerimize katıl ve düşmana bir ders verelim.
 dlga_start:close_window.10|Bize karşı savaşarak büyük bir hata yapıyorsun.
 dlga_start:ally_thanks_meet|Düzgünce tanıştığımızı düşünmüyorum arkadaşım.Sen benim hayarımı kurtardın ve ben hala senin ismini bilmiyorum...
@@ -903,7 +903,7 @@ dlga_start:routed_allies_talk|{reg1?Lordum:Efendim}, hayatta kalmışsınız! Si
 dlga_routed_allies_talk:close_window|Evet, birlikte bir kere daha {s1} için savaşacağız.
 dlga_routed_allies_talk:close_window.1|Daha değil, asker.
 dlga_start:routed_allies_talk_troll|^^HIRRR!^^
-dlga_routed_allies_talk_troll:close_window|[Onları tekrar katmak mı]\n
+dlga_routed_allies_talk_troll:close_window|[Onları tekrar katmak mı]
 dlga_routed_allies_talk_troll:close_window.1|[Ayrıl]
 dlga_start:party_encounter_friend|{s4} Seni buraya getiren nedir, {s24}?
 dlga_party_reinforce:party_reinforce_end|Çok fazla düşman hareketi görmedik henüz. Belki daha sonra, teşekkürler.
