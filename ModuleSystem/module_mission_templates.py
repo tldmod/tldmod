@@ -44,6 +44,15 @@ af_prisoner       = af_override_horse | af_override_weapons | af_override_head |
 ####################################################################################################################
 ## CUSTOM CAMERA by dunde, modified to add fixed-camera + implemented by Kham (WB Only)
 ####################################################################################################################
+
+fade =  ((is_a_wb_mt==1) and [
+
+        (ti_after_mission_start, 0, 0, [],
+          [(mission_cam_set_screen_color,        0xFF000000), 
+           (mission_cam_animate_to_screen_color, 0x00000000, 2500)])
+        
+        ] or [])
+
 khams_custom_player_camera = ((is_a_wb_mt==1) and [
 
   #-- numeric constants
@@ -314,7 +323,7 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-] + tld_morale_triggers + khams_custom_player_camera #Custom Cam triggers
+] + tld_morale_triggers + fade + khams_custom_player_camera #Custom Cam triggers +
 
 
 tld_siege_battle_scripts = [
@@ -326,15 +335,14 @@ tld_siege_battle_scripts = [
 	custom_troll_hitting,
 	tld_remove_galadriel,
 	#common_battle_kill_underwater,
-] + khams_custom_player_camera #Custom Cam triggers
+] + fade + khams_custom_player_camera #Custom Cam triggers
 
 
 tld_common_peacetime_scripts = [
 	#tld_fix_viewpoint,
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
-] + custom_tld_bow_to_kings + khams_custom_player_camera #Custom Cam triggers
-
+] + custom_tld_bow_to_kings +  fade + khams_custom_player_camera #Custom Cam triggers
 
 
 tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
@@ -531,7 +539,7 @@ mission_templates = [ # not used in game
      ],
     tld_common_wb_muddy_water+
     tld_common_peacetime_scripts +[
-
+       
 	(1, 0, ti_once, [],[ # set walkers, music and ambient sounds
 			(get_player_agent_no, "$current_player_agent"),
 			(try_begin),
@@ -1577,7 +1585,7 @@ mission_templates = [ # not used in game
 	
    # Triggers
   tld_common_wb_muddy_water+
-  khams_custom_player_camera+
+  tld_common_battle_scripts+
   common_deathcam_triggers + [
   
 
@@ -1717,7 +1725,7 @@ mission_templates = [ # not used in game
    ],
   # Triggers
   tld_common_wb_muddy_water+
-  khams_custom_player_camera+
+  tld_common_battle_scripts+
   common_deathcam_triggers + [
   
 
@@ -1807,7 +1815,7 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       # Player
-      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,6,[]),
+      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,12,[]),
 
       # Companions (Add more for more companions)
       (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
@@ -1819,8 +1827,8 @@ mission_templates = [ # not used in game
       (7,mtef_visitor_source|mtef_team_0,0,0,1,[]),
       (8,mtef_visitor_source|mtef_team_0,0,0,1,[]),
       (9,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (11,mtef_visitor_source|mtef_team_0,0,0,1,[]),
       (12,mtef_visitor_source|mtef_team_0,0,0,1,[]),
       (13,mtef_visitor_source|mtef_team_0,0,0,1,[]),
       (14,mtef_visitor_source|mtef_team_0,0,0,1,[]),
@@ -1833,10 +1841,10 @@ mission_templates = [ # not used in game
       (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (21,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (22,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (23,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (24,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (21,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (22,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (23,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (24,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
       (25,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
       (27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
@@ -1846,7 +1854,7 @@ mission_templates = [ # not used in game
    ],
   # Triggers
   tld_common_wb_muddy_water+
-  khams_custom_player_camera+
+  tld_common_battle_scripts+
   common_deathcam_triggers + [
   
 
@@ -2078,7 +2086,7 @@ mission_templates = [ # not used in game
     (try_begin),  #Siege Order Exceptions (Kham)
       (eq, "$g_encountered_party", "p_town_umbar_camp"),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
-      (display_message, "@Charge", color_bad_news),
+      #(display_message, "@Charge", color_bad_news),
     (else_try),
       (eq, "$g_encountered_party", "p_town_dol_amroth"),
       (entry_point_get_position, pos10, 62),
@@ -3651,7 +3659,9 @@ mission_templates = [ # not used in game
  ],
 	# Triggers
   tld_common_wb_muddy_water+
-	common_deathcam_triggers + [
+	common_deathcam_triggers +
+  khams_custom_player_camera+
+  fade+ [
 	
 	custom_warg_sounds,
 	common_battle_on_player_down,

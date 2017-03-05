@@ -202,3 +202,5 @@ menu_choose_scenes_234 = 200
 menu_choose_scenes_247 = 201
 menu_choose_scenes_260 = 202
 menu_choose_scenes_273 = 203
+menu_choose_scenes_286 = 204
+menu_choose_scenes_299 = 205

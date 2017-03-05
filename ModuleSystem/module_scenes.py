@@ -381,7 +381,34 @@ scenes = [
 ("scout_camp_gondor_evil_small",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001a6681da50003ccef00005c3000004b34000071fb",  [],[],"outer_mountains2south"),
 ("scout_camp_gondor_evil_big",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001a6681da50003ccef00005c3000004b34000071fb",  [],[],"outer_mountains2south"),
 
-("black_shield_fortress" ,sf_generate|sf_auto_entry_points,"none","none",(84,457),( 339, 532),-100.0,"0x00000001200005000009325a00006ec70000053f00001892",[],[],"outer_terrain_tirith_1"),
+("black_shield_fortress" ,sf_generate,"none","none",(84,457),( 339, 532),-100.0,"0x00000001200005000009325a00006ec70000053f00001892",[],[],"outer_mountains2north"),
+("black_shield_fortress_siege_easterlings" ,sf_generate,"none","none",(84,457),( 339, 532),-100.0,"0x00000001200005000009325a00006ec70000053f00001892",[],[],"outer_mountains2north"),
+("black_shield_fortress_siege_player" ,sf_generate,"none","none",(84,457),( 339, 532),-100.0,"0x00000001200005000009325a00006ec70000053f00001892",[],[],"outer_mountains2north"),
+
+## In Vain Dale / Esgaroth interiors
+("dale_castle"          ,sf_indoors|sf_force_skybox, "interior_castle_dale",   "bo_interior_castle_m", (-100,-100),(100,100),-100,"0",["exit"],["player_chest"]),
+("esgaroth_castle"      ,sf_indoors|sf_force_skybox, "interior_castle_rohan_a", "bo_interior_castle_i",(-100,-100),(100,100),-100,"0",[],[]),
+
+## In Vain New Ambience Scenes
+("osgiliath_outskirts" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7 ",[],[],"outer_terrain_flat"),
+
+
+## In Vain New Siege Scenes
+
+("esgaroth_siege"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000730000500000c8f2100002ca5000022aa000031a8",[],[],"JB_outer_terrain_seaside_1"),
+("woodelf_camp_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
+("woodsmen_village_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
+("woodelf_west_camp_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
+("rivendell_camp_siege"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_plain"),
+("woodsmen_village2_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
+("beorning_village_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
+("troll_cave_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+("dunland_camp_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
+("harad_camp_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
+("khand_camp_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],["player_chest"],"outer_terrain_flat"),
+("north_rhun_camp_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
+("rhun_south_camp_siege"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
+("rhun_north_camp_siege"         ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_terrain_flat"),
 
 ]
 

@@ -1206,7 +1206,7 @@ items =[
 ["galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique|itp_civilian,0,1,weight(225)|head_armor(60)|body_armor(80)|leg_armor(60)|difficulty(0),0,],
 ["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
 ["empty_legs","empty_legs",[("0",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
-["empty_head","empty head",[("chieftainhelm",imodbit_old)],itp_type_head_armor|itp_unique|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
+["empty_head","empty head",[("0",0),("chieftainhelm",imodbit_old)],itp_type_head_armor|itp_unique|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
 ["ent_water","Strange_bowl_of_water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],

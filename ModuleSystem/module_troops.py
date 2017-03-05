@@ -3220,6 +3220,10 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
   [(itm_dunland_armor_k,imod_old),itm_empty_hands,itm_empty_legs,(itm_empty_head,imod_old)],
     def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
 
+["dorwinion_spirit","Lesser Spirit","_", tf_uruk|tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+  [(itm_dunland_armor_k,imod_poor),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_poor)],
+    def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
+
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],

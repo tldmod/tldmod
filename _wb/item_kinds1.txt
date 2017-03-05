@@ -1476,7 +1476,7 @@ itemsfile version 2
  itm_dunland_armor_j Dunland_Hauberk Dunland_Hauberk 1  dunland_hauberk_b 0  16842765 0 1200 704643236 23 100 2 22 10 0 0 0 0 0 0 0 0
 0
 
- itm_dunland_armor_k Dun_Chief_Armor Dun_Chief_Armor 1  dunland_chieftain 0  16842765 0 2000 704643072 26 100 2 25 13 0 0 0 0 0 0 0 0
+ itm_dunland_armor_k Dun_Chief_Armor Dun_Chief_Armor 2  dunland_chieftain 0  dunland_chieftain_spirit 256  16842765 0 2000 704643072 26 100 2 25 13 0 0 0 0 0 0 0 0
 0
 
  itm_dun_helm_a Dunnish_Wolf_Cap Dunnish_Wolf_Cap 1  dunland_wolfcap 0  65548 0 300 123731968 2 100 25 0 0 0 0 0 0 0 0 0 0
@@ -2496,7 +2496,7 @@ itemsfile version 2
 1
 -50  1 1981 2 43 0 
 
- itm_nazgulrobe Nazgul_Robe Nazgul_Robe 1  nazgulrobe 0  553648141 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
+ itm_nazgulrobe Nazgul_Robe Nazgul_Robe 2  nazgulrobe 0  old_nazgulrobe 256  553648141 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
 0
 
  itm_whiterobe White_Robe White_Robe 1  whiterobe 0  553648141 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
@@ -2562,7 +2562,7 @@ itemsfile version 2
  itm_empty_legs empty_legs empty_legs 1  dummy_mesh 0  137438957582 0 130 0 33 100 0 0 1 0 0 0 0 0 0 0 0
 0
 
- itm_empty_head empty_head empty_head 1  dummy_mesh 0  139586441228 0 1 0 58 100 50 0 0 0 0 0 0 0 0 0 0
+ itm_empty_head empty_head empty_head 2  dummy_mesh 0  chieftainhelm 256  139586441228 0 1 0 58 100 50 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_ent_water Strange_bowl_of_water Strange_bowl_of_water 1  ent_water 0  4107 0 200 0 2 100 0 0 0 0 0 0 0 0 0 0 0
