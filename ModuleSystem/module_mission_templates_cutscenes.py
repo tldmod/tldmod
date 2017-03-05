@@ -8,6 +8,7 @@ from module_constants import *
 
 from module_info import wb_compile_switch as is_a_wb_cutscene
 
+
 #swy-- macro to select exit mode on all the cutscenes, that way we maintain compatibility and still works well in both games.
 #swy-- this also makes the HP UI visible again, controlled by shader uniforms.
 return_exit_macro = (is_a_wb_cutscene==1 and [ (set_shader_param_float, "@swy_ui_opacity", 100), #rustic equivalent to 1.0f = 0xff = 255 alpha = show it!
@@ -22,13 +23,22 @@ guard_against_esc = (is_a_wb_cutscene==1 and [ (try_begin),
                                                (try_end) ]
                                           or [])
 
+
+fade_cutscene =  ((is_a_wb_cutscene==1) and [
+
+        (ti_after_mission_start, 0, 0, [],
+          [(mission_cam_set_screen_color,        0xFF000000), 
+           (mission_cam_animate_to_screen_color, 0x00000000, 1500)])
+        
+        ] or [])
+
 mission_templates_cutscenes = [
 
 ("intro_rohan", 0, -1,
     "Intro cutscene mission",
     [(0,mtef_visitor_source|mtef_team_2,0,0,1,[]),
      (1,mtef_visitor_source|mtef_team_2,0,0,1,[]),
-    ],
+    ], fade_cutscene+
     [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_gondor"),]),
     
@@ -216,7 +226,7 @@ mission_templates_cutscenes = [
     "Intro cutscene mission",
     [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-    ],
+    ], fade_cutscene+
     [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0),(jump_to_menu, "mnu_auto_intro_mordor"),]),
     
@@ -397,7 +407,7 @@ mission_templates_cutscenes = [
     "Intro cutscene mission",
     [(0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-    ],
+    ],fade_cutscene+
     [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),
     
@@ -787,7 +797,7 @@ mission_templates_cutscenes = [
     "Gandalf cutscene mission",
     [( 0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-    ],
+    ],fade_cutscene+
     [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),
     
@@ -991,7 +1001,7 @@ mission_templates_cutscenes = [
     "Gandalf/Nazgul conversation cutscene mission",
     [( 0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
      (17,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-    ],
+    ],fade_cutscene+
     [
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]+return_exit_macro),
     
