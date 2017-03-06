@@ -82,6 +82,14 @@ knight_skills_3 = knows_riding_4|knows_ironflesh_4|knows_power_strike_5|knows_at
 knight_skills_4 = knows_riding_4|knows_ironflesh_5|knows_power_strike_6|knows_athletics_4|knows_tactics_5|knows_prisoner_management_3|knows_leadership_7
 knight_skills_5 = knows_riding_4|knows_ironflesh_6|knows_power_strike_7|knows_athletics_5|knows_tactics_6|knows_prisoner_management_3|knows_leadership_9
  
+
+#Kham Gondor Buff Test
+gondor_skills_1 = knows_riding_4|knows_ironflesh_2|knows_power_strike_3|knows_athletics_1|knows_tactics_2|knows_prisoner_management_1|knows_leadership_5
+gondor_skills_2 = knows_riding_4|knows_ironflesh_3|knows_power_strike_4|knows_athletics_2|knows_tactics_3|knows_prisoner_management_2|knows_leadership_7
+gondor_skills_3 = knows_riding_4|knows_ironflesh_4|knows_power_strike_5|knows_athletics_3|knows_tactics_4|knows_prisoner_management_2|knows_leadership_8
+gondor_skills_4 = knows_riding_4|knows_ironflesh_5|knows_power_strike_6|knows_athletics_4|knows_tactics_5|knows_prisoner_management_3|knows_leadership_9
+gondor_skills_5 = knows_riding_4|knows_ironflesh_6|knows_power_strike_7|knows_athletics_5|knows_tactics_6|knows_prisoner_management_3|knows_leadership_10
+
 #TLD troop attributes
 attr_tier_1 =  str_7| agi_5| int_4| cha_4|level(5)
 attr_tier_2 = str_10| agi_7| int_4| cha_4|level(10)
@@ -2136,30 +2144,31 @@ troops = [
 
 	   #Swadian civilian clothes: itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit itm_short_tunic itm_tabard
 #Gondor Angbor 
-["knight_1_1","Angbor","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+["knight_1_1","Angbor_the_Fearless","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_lam_horse,itm_lamedon_leader_surcoat_cloak,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_lamedon_leader_helm,itm_gondor_citadel_sword,],
-      attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_1|knows_trainer_3,0x00000008bf00524435d36db7536db6db00000000001db6dd0000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_4|knows_trainer_4,0x00000008bf00524435d36db7536db6db00000000001db6dd0000000000000000],
 ["knight_1_2","Baranor","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_lam_horse,itm_gon_leader_surcoat_cloak,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
-      attr_tier_6,wp_tier_6,knight_skills_5,0x00000007f700550919da9135148e24e500000000001db9110000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_5,0x00000007f700550919da9135148e24e500000000001db9110000000000000000],
 ["knight_1_3","Prince_Imrahil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_dol_amroth_warhorse,itm_dol_very_heavy_mail,itm_gondor_heavy_greaves,itm_mail_mittens,itm_swan_knight_helm,itm_gondor_citadel_sword,],
-      attr_tier_6,wp_tier_6,knight_skills_5,0x0000000e7f00259419da9135148e24e500000000001db9110000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_5|knows_trainer_7,0x0000000e7f00259419da9135148e24e500000000001db9110000000000000000],
 ["knight_1_4","Orthalion","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_pel_leader,itm_pelargir_greaves,itm_mail_mittens,itm_pelargir_helmet_heavy,itm_pelargir_sword],
-      attr_tier_6,wp_tier_6,knight_skills_4,0x0000000fff0035d218946ec91266652b00000000001cc6f90000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_4|knows_trainer_7,0x0000000fff0035d218946ec91266652b00000000001cc6f90000000000000000],
 ["knight_1_5","Duinhir","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_blackroot_leader,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,itm_gondor_bow,itm_gondor_arrows,],
-      attr_tier_6,wp_tier_6,knight_skills_5|knows_horse_archery_7|knows_power_draw_7,0x000000003f0021544b246a471b65572400000000001cc6ed0000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_5|knows_horse_archery_7|knows_power_draw_7,0x000000003f0021544b246a471b65572400000000001cc6ed0000000000000000],
 ["knight_1_6","Hirluin_the_Fair","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_pinnath_leader,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
-      attr_tier_6,wp_tier_6,knight_skills_3,0x000000043a0020944aa46a451261533300000000001ec6af0000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_3,0x000000043a0020944aa46a451261533300000000001ec6af0000000000000000],
 ["knight_1_7","Faramir","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_courser,itm_gon_leader_surcoat_cloak,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,itm_gondor_bow,itm_ithilien_arrows,],
-      attr_tier_6,wp_tier_6,knight_skills_5|knows_horse_archery_7|knows_power_draw_7,0x000000043f00200f49248ac99481d72c00000000001d48de0000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_5|knows_horse_archery_7|knows_power_draw_7,0x000000043f00200f49248ac99481d72c00000000001d48de0000000000000000],
 ["knight_1_8","Forlong_the_Fat","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_lossarnach_leader,itm_lossarnach_greaves,itm_mail_mittens,itm_mordor_helm,itm_gondor_citadel_sword,itm_loss_axe,itm_loss_throwing_axes,],
-      attr_tier_6,wp_tier_6,knight_skills_3|knows_power_throw_7,0x00000008b70052935b1b8f4ae9ee793e00000000001f4cad0000000000000000],
+      attr_tier_6,wp_tier_6,gondor_skills_3|knows_power_throw_7,0x00000008b70052935b1b8f4ae9ee793e00000000001f4cad0000000000000000],
+
 #Rohan
 ["knight_1_9","Grimbold","_",tf_hero| tf_rohan| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_rohan,
    [itm_rohan_warhorse,itm_rohan_armor_s,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_rohirrim_long_hafted_axe,itm_strong_bow,itm_khergit_arrows,itm_rohan_shield_g,],
@@ -3224,6 +3233,17 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["dorwinion_spirit","Lesser Spirit","_", tf_uruk|tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
   [(itm_dunland_armor_k,imod_poor),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_poor)],
     def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
+
+## Kham - New Gondor Lords
+
+["knight_6_1","Derovin","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+   [itm_gondor_lance, itm_lamedon_leader_surcoat_cloak,itm_gondor_cav_sword,itm_gondor_heavy_greaves,itm_gondor_lam_horse,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondor_lamedon_leader_helm,],
+      attr_tier_5,wp_tier_5,gondor_skills_1|knows_shield_9,0x0000000340003004250c85a90f6868f500000000001ed96a0000000000000000],
+["knight_6_2","Golasgil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+   [itm_gondor_lance, itm_pinnath_leader,itm_good_mace,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_pelargir_helmet_light,],
+      attr_tier_5,wp_tier_5,gondor_skills_1|knows_trainer_7,0x0000000e800021465e856dd74321355600000000001c58a50000000000000000],
+
+
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 

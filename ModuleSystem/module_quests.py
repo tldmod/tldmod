@@ -19,7 +19,7 @@ quests = [
   "{s9} asked you to take a message to {s13} of {s15}. {s13} was at {s4} when you were given this quest."
   ),
 ("raise_troops", "Raise {reg1} {s14}", qf_random_quest,
-  "{s9} asked you to raise {reg1} {s14} and bring them to him."
+  "{s9} asked you to raise {reg1} {s14} and bring them to {him/her}."
   ),
 ("escort_messenger", "Escort the messenger to {s14}", qf_random_quest,
   "None"

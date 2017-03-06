@@ -1182,7 +1182,7 @@ simple_triggers = [
 	]),
 
 # (41) Spawn some bandits.
-(36,[(call_script, "script_spawn_bandits")]),
+(24,[(call_script, "script_spawn_bandits")]), ## Kham Edit - 24 hours instead of 36, to give player a bit more bandits to fight pre-war.
 
 # (42) Make parties larger as game progresses.
 (24,[(call_script, "script_update_party_creation_random_limits")]),
@@ -2611,9 +2611,158 @@ simple_triggers = [
 
 ] or []) + [
 
+##Kham - Eff it, lets buff Gondor completely by triggering hiring more often just for the special snowflakes -- Tested, they still suck, but they will be hard to defeat.
+
+#(12,[(try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+#        (store_troop_faction, ":faction"),
+#        (eq, ":faction", "fac_gondor"),
+#        (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+#        (ge, ":party_no", 1),
+#        (party_is_active, ":party_no"), #MV
+        #(party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party), #TLD: only hosts reinforce
+#        (party_get_attached_to, ":cur_attached_party", ":party_no"),
+#        (is_between, ":cur_attached_party", centers_begin, centers_end),
+#        (party_slot_eq, ":cur_attached_party", slot_center_is_besieged_by, -1), #center not under siege
+#        (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men up to lord-specific limit
+#      (try_end),
+#      (display_message, "@Gondor Reinforces!", color_good_news),
+#      ]),
+
+
+## Kham Gondor Reinforcement Event - Original / deprecated
+## (6, 
+##  [(eq, "$tld_war_began", 1),
+##   (assign, "$gondor_reinforcement_event", 0),
+##   (eq, "$gondor_reinforcement_event",0),
+##    (try_for_range,       ":cur_troop_fiefs", "trp_knight_1_1", "trp_knight_1_9"), ## Gondor Fiefs Troops
+##      (this_or_next|eq,   ":cur_troop_fiefs", "trp_knight_1_3"),
+##      (this_or_next|eq,   ":cur_troop_fiefs", "trp_knight_1_5"),
+##      (             eq,   ":cur_troop_fiefs", "trp_knight_1_6"),
+##      (troop_get_slot,    ":cur_party_fiefs", ":cur_troop_fiefs", slot_troop_leaded_party),
+##      (party_is_active,   ":cur_party_fiefs"),
+##      (party_slot_eq,     ":cur_party_fiefs", slot_party_type, spt_kingdom_hero_party), 
+##      (neg|party_slot_eq, ":cur_party_fiefs", slot_party_ai_state, spai_accompanying_army),
+##      (call_script, "script_party_set_ai_state", ":cur_party_fiefs", spai_holding_center, "p_town_linhir"),
+##      (party_set_ai_behavior, ":cur_party_fiefs",ai_bhvr_travel_to_party),
+##      (party_set_ai_object,   ":cur_party_fiefs", "p_town_linhir"),      
+##    (try_end),
+##    (try_for_range,       ":cur_troop_center", "trp_knight_1_1", "trp_knight_1_9"), ## Gondor Center Troops
+##      (this_or_next|eq,   ":cur_troop_center", "trp_knight_1_1"),
+##      (this_or_next|eq,   ":cur_troop_center", "trp_knight_1_4"),
+##      (this_or_next|eq,   ":cur_troop_center", "trp_knight_1_7"),
+##      (             eq,   ":cur_troop_center", "trp_knight_1_8"),
+##      (troop_get_slot,    ":cur_party_center", ":cur_party_fiefs", slot_troop_leaded_party),
+##      (party_is_active,   ":cur_party_center"),
+##      (party_slot_eq,     ":cur_party_center", slot_party_type, spt_kingdom_hero_party), 
+##      (neg|party_slot_eq,   ":cur_party_center", slot_party_ai_state, spai_accompanying_army),
+##      (call_script, "script_party_set_ai_state", ":cur_party_center", spai_holding_center, "p_town_minas_tirith"), 
+##      (party_set_ai_behavior, ":cur_party_center",ai_bhvr_travel_to_party),
+##      (party_set_ai_object,   ":cur_party_center", "p_town_minas_tirith"),  
+##    (try_end),
+##    (display_message, "@Gondor has called for aide!"),
+##    (assign, "$gondor_reinforcement_event", 1),
+##   ]),
+
+
+
+## Kham Gondor Reinforcement Event - Via script_succeed_quest
+
+(24,
+  [
+     (eq, "$cheat_mode",1),
+     (eq, "$tld_war_began", 1),
+     (eq, "$gondor_reinforcement_event",0), 
+
+     (faction_get_slot, ":strength", "fac_mordor", slot_faction_strength),
+     (ge, ":strength", 3500),
+
+     (try_begin),
+       (party_is_active, "p_town_minas_tirith"),
+       (call_script, "script_defend_center", "trp_knight_1_1", "p_town_minas_tirith"),
+       (call_script, "script_defend_center", "trp_knight_1_2", "p_town_minas_tirith"),
+       (call_script, "script_defend_center", "trp_knight_1_3", "p_town_minas_tirith"),
+       (call_script, "script_defend_center", "trp_knight_1_4", "p_town_minas_tirith"),
+       (call_script, "script_defend_center", "trp_knight_1_5", "p_town_minas_tirith"),
+       (call_script, "script_defend_center", "trp_knight_1_6", "p_town_minas_tirith"), 
+       (call_script, "script_defend_center", "trp_knight_1_7", "p_town_minas_tirith"), 
+       (call_script, "script_defend_center", "trp_knight_1_8", "p_town_minas_tirith"),  
+     (try_end),
+
+    (display_message, "@Gondor has called for aide!"),
+    (assign, "$gondor_reinforcement_event",1),
+  ]),
+
+
+(12,
+  [  
+     (eq, "$cheat_mode",1),  
+     (eq, "$tld_war_began", 1),
+     (eq, "$gondor_reinforcement_event",1), 
+
+     (faction_get_slot, ":strength", "fac_mordor", slot_faction_strength),
+     (ge, ":strength", 3500),
+
+     (try_begin),
+       (troop_get_slot, ":party", "trp_knight_1_3", slot_troop_leaded_party),
+       (party_is_active, ":party"),
+       (call_script, "script_accompany_marshall", "trp_knight_1_1", "trp_knight_1_3"),
+       (call_script, "script_accompany_marshall", "trp_knight_1_2", "trp_knight_1_3"),
+       (call_script, "script_accompany_marshall", "trp_knight_1_4", "trp_knight_1_3"),
+       (call_script, "script_accompany_marshall", "trp_knight_1_5", "trp_knight_1_3"),
+       (call_script, "script_accompany_marshall", "trp_knight_1_6", "trp_knight_1_3"), 
+       (call_script, "script_accompany_marshall", "trp_knight_1_7", "trp_knight_1_3"), 
+       (call_script, "script_accompany_marshall", "trp_knight_1_8", "trp_knight_1_3"),  
+     (try_end),
+
+    (display_message, "@Gondor is accompanying the marshall!"),
+    (assign, "$gondor_reinforcement_event",0),
+  ]),
+
+
+## Kham Gondor Reinforcement Event - Let them patrol around the center
+
+## Kham Denethor Sends Faramir to West Osgiliath
+
+## Kham Gondor hero hears  the Horn of Gondor (Lore Trigger)
+
+## Kham Isengard Hero sees Isengards Crebains (Lore Trigger)
+
+
+
+
+
 ##############################################
 #trigger reserved for future save game compatibility
 
+#trigger reserved for future save game compatibility
+#(999,[]),   #Replaced by Gondor Reinforcement Event
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
+#trigger reserved for future save game compatibility
+(999,[]),   
 #trigger reserved for future save game compatibility
 (999,[]),   
 #trigger reserved for future save game compatibility

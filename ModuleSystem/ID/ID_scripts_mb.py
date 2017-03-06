@@ -498,5 +498,14 @@ script_rout_enemies = 496
 script_coherence = 497
 script_cf_shift_pos1_along_y_axis_to_ground = 498
 script_shift_pos1_along_y_axis_to_ground_aux = 499
+script_defend_center = 500
+script_defend_center_aux = 501
+script_defend_center_aux_ai = 502
+script_patrol_center = 503
+script_patrol_center_aux = 504
+script_patrol_center_aux_ai = 505
+script_accompany_marshall = 506
+script_accompany_marshall_aux = 507
+script_accompany_marshall_aux_ai = 508
 
 

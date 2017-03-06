@@ -39,6 +39,7 @@ from module_info import wb_compile_switch as is_a_wb_menu
 # Note: The first Menu is the initial character creation menu.
 ####################################################################################################################
 
+
 # just stuff to make search for troop cheat (mtarini)
 tmp_menu_steps = 5 # how many entries per meny page
 tmp_menu_max_fac = 21
@@ -242,8 +243,6 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 5),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_7" ,[],"Ambush, Orcs vs Mirkwood",
 		[(assign, "$g_custom_battle_scenario", 6),(jump_to_menu, "mnu_custom_battle_2"),]),
-	("dressing_room" ,[],"Dressing Room",
-		[(assign, "$g_custom_battle_scenario", 99),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_8",[],"           Attack, Gondor vs Corsairs",
 #		[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
 #	("custom_battle_scenario_9",[],"Football fun        ",
@@ -267,6 +266,8 @@ game_menus = [
 	] for ct in range(cheat_switch)])+[
     ("build_your_own_scene"     ,[],"** Build your own scene for TLD **",
 		[                                         (jump_to_menu, "mnu_build_your_scene"),]),
+	("dressing_room" ,[],"Dressing Room",
+		[(assign, "$g_custom_battle_scenario", 99),(jump_to_menu, "mnu_custom_battle_2"),]),
     ("go_back"                  ,[],"Go back",[(change_screen_quit)])]
  ),
 # This needs to be the fourth window!!!
@@ -441,9 +442,9 @@ game_menus = [
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
        (set_visitor, 1, "trp_dorwinion_spirit_leader"),
-       (set_visitors,2, "trp_black_shield_bandit", 3),
-       (set_visitors,3, "trp_black_shield_scout", 3),
-       (set_visitors,4, "trp_black_shield_guard", 3),
+       (set_visitors,2, "trp_dorwinion_spirit", 2),
+       (set_visitor,3, "trp_knight_6_1"),
+       (set_visitor,4, "trp_knight_6_2"),
        (str_store_string, s16, "@Dressing Room"),
      (else_try),
        (eq, "$g_custom_battle_scenario", 2),
@@ -1713,6 +1714,8 @@ game_menus = [
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
   ## MadVader test end
      ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
+  ## Kham Test begin
+  	 ("camp_test_kham",[],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
  ] for ct in range(cheat_switch)])+[
      ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
     ]
@@ -2996,6 +2999,20 @@ game_menus = [
     ]
  ),
 ## MadVader test end
+## Kham Test Begin
+( "camp_khamtest",0,
+	"^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur","none",[],
+    [
+    ("kham_gondor_ai_test",[(str_clear, s7),(try_begin),(neq, "$gondor_ai_testing", 1),(str_store_string, s7, "@OFF"),
+								(else_try),(str_store_string, s7, "@ON"),(try_end),
+        ],"Gondor AI Test Tweaks:  {s7}",[
+        (store_sub, "$gondor_ai_testing", 1, "$gondor_ai_testing"),(val_clamp, "$gondor_ai_testing", 0, 2)]),
+    ("give_imod_test", [],"Give IMOD Test Mesh",[(troop_add_item, "trp_player","itm_nazgulrobe",imod_old),(troop_add_item, "trp_player","itm_nazgulrobe",0),(display_message, "@IMOD test mesh given")]),
+    ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
+    ("give_moria_book",[],"Give Moria Book", [(troop_add_item, "trp_player","itm_book_of_moria"),(display_message, "@Moria Book given")]),
+    ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
+ ]),
+
 ( "game_options",0,
 	"^^^^^^^^Click on an option to toggle:","none",[],
     [
@@ -3589,6 +3606,7 @@ game_menus = [
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
 #	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
 #	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
+	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
     ]+[("mi21",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   
@@ -7842,6 +7860,190 @@ game_menus = [
 
 ###Ring Hunters - Bandit Lair - End
 
+## Kham - Spears of Bladorthin - Raft Men - Start
+
+("raftmen",0,
+    "^^^^You follow the River Running southeast towards Rhûn, hoping to find the old merchant road.^^ After some time, you arrive at a small village nestled along the riverbank.^^You ask the villagers how you might reach the road and are directed towards a pair of men who navigate the river by raft.^^It takes some negotiating but you arrange for the men to bring you downriver.",
+    "none",
+    [(set_background_mesh, "mesh_town_goodcamp"), 
+    ],
+    [("go_with_the_raftmen",[],"Take the raft to Dorwinion",
+       [(jump_to_menu, "mnu_ride_to_dorwinion"),
+       ]),
+     ("leave_bandit_lair",[],"Leave for now.",[(change_screen_return)]),
+	]
+),
+
+("ride_to_dorwinion",0,
+    "^^^^You relax and enjoy the fair weather as the men steer the raft downriver. The River Running, cold and clear amidst the falls and rapids of the Lonely Mountain, here is tepid, gentle, and muddy.^^ In the afternoon sun, you watch rolling plains and verdant woodlands drift by as the raft floats along the winding meanders. The region is sparsely dotted with small farmsteads and vineyards with low stone walls and you pass the occasional stilted cottage tucked away in the reeds.^^The peaceful motion of the raft helps you drift off to sleep...",
+    "none",
+    [(set_background_mesh, "mesh_town_goodcamp"), 
+    ],
+    [("ride_to_dorwinion_next",[],"Next...",
+       [(jump_to_menu, "mnu_amath_dollen_fortress"),
+       ]),
+	]
+),
+
+### Amath Dollen Fortress Entry Points
+### 0, 1 player
+### 2 bandit captain
+### 3-13 archer guards
+### 14-23 infantry guards
+### 24-28 walkers
+
+("amath_dollen_fortress",0,
+    "^^^^You awake from your nap late in the afternoon and shortly reach a jetty where the men moor the raft. They direct you to a narrow track that disappears into the marsh grass and set up camp to await your return.^^You follow the track, which ascends quickly from the wetlands onto a grassy plain, and walk until it meets the old merchant road.^^After some time, you see a bandit fortress.",
+    "none",
+    [(set_background_mesh, "mesh_town_evilcamp"), 
+    ],
+    [("bandit_fortress_with_companions",[],"Approach the Bandit Fortress with only your companions and attempt to talk with their leader.",
+       [(set_jump_mission, "mt_amath_dollen_peace"),
+				(eq, "$g_encountered_party", "p_raft"),
+				(assign, ":lp_scene", "scn_black_shield_fortress"),
+				#(assign, "$bs_day_sound", "snd_"),
+				#(assign, "$bs_night_sound", "snd_"),
+				(modify_visitors_at_site,":lp_scene"),
+		    (reset_visitors),
+		    (set_visitor, 0, "trp_player"),
+		    (set_visitor, 2, "trp_black_shield"),
+		    (assign, ":cur_entry", 3),
+				(try_for_range, ":unused", 0, 11),
+					(set_visitor, ":cur_entry", "trp_black_shield_scout"),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+				(assign, ":cur_entry", 14),
+				(try_for_range, ":unused", 0, 10),
+					(set_visitor, ":cur_entry", "trp_black_shield_bandit"),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+        (set_visitor, 24, "trp_black_shield_bandit"),
+        (set_visitor, 25, "trp_black_shield_bandit"),
+        (set_visitor, 26, "trp_black_shield_guard"),
+        (set_visitor, 27, "trp_black_shield_guard"),
+        (set_visitor, 28, "trp_black_shield_guard"),
+        (jump_to_menu, "mnu_amath_dollen_fortress"),
+        (jump_to_scene,":lp_scene"),
+        (change_screen_mission),
+       ]),
+
+# Siege by player: 0 player
+# 1-15 team_0 infantry/archers
+# 16-18 team_1 infantry
+# 19-31 team_1 archers (best 2 each)
+ 
+     ("bandit_fortress_with_army",[],"Attack the bandit fortress with all your men.",
+       [(eq, "$g_encountered_party", "p_raft"),
+			(assign, ":lp_scene", "scn_black_shield_fortress_siege_player"),
+			#(assign, "$bs_day_sound", "snd_"),
+			#(assign, "$bs_night_sound", "snd_"),
+			(modify_visitors_at_site,":lp_scene"),
+	        (reset_visitors),
+	        (set_jump_entry, 0),
+	        (set_visitor, 0, "trp_player"),
+	        (store_character_level, ":level", "trp_player"),
+			(val_div, ":level", 4),
+			(store_add, ":min_guards", ":level", 1),
+			(store_add, ":max_guards", ":min_guards", 5),
+	        (store_random_in_range, ":random_no", ":min_guards", ":max_guards"),
+	        (val_clamp, ":random_no", 1, 71),
+	        (store_random_in_range, ":watchtower", 1, 3),
+	        (set_visitors, 16, "trp_black_shield_bandit",":random_no"),
+	        (set_visitors, 17, "trp_black_shield_bandit",":random_no"),
+	        (set_visitors, 18, "trp_black_shield_guard", ":random_no"),
+			(set_visitors, 19, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 20, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 21, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 22, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 23, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 24, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 25, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 26, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 27, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 28, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 29, "trp_black_shield_scout", ":watchtower"),
+			(set_visitors, 30, "trp_black_shield_scout", ":watchtower"),
+			(set_party_battle_mode),
+	      (set_battle_advantage, 0),
+	      (assign, "$g_battle_result", 0),
+	      (set_jump_mission, "mt_amath_dollen_attack"),
+        (jump_to_scene,":lp_scene"),
+        (change_screen_mission),
+       ]),
+
+# Siege by Easterlings: 0 player
+# 1,2 team_0 infantry
+# 3-15 team_0 archers (1 or 2 each)
+# 16-31 team_1 infantry
+
+      ("bandit_fortress_against_easterlings",[],"Defend the Fortress against the Siege",
+       [(eq, "$g_encountered_party", "p_raft"),
+				(assign, ":lp_scene", "scn_black_shield_fortress_siege_easterlings"),
+				#(assign, "$bs_day_sound", "snd_"),
+				#(assign, "$bs_night_sound", "snd_"),
+				(modify_visitors_at_site,"scn_black_shield_fortress_siege_easterlings"),
+        (reset_visitors),
+        (set_jump_entry, 0),
+      #  (set_visitor, 0, "trp_player"),
+      	(assign, ":cur_entry", 16),
+				(try_for_range, ":unused", 0, 5),
+					(set_visitors, ":cur_entry", "trp_rhun_tribal_warrior",2),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+				(assign, ":cur_entry", 21),
+				(try_for_range, ":unused", 0, 5),
+					(set_visitors, ":cur_entry", "trp_rhun_vet_infantry",2),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+				(assign, ":cur_entry", 26),
+				(try_for_range, ":unused", 0, 3),
+					(set_visitors, ":cur_entry", "trp_infantry_of_the_ox",2),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+				(assign, ":cur_entry", 29),
+				(try_for_range, ":unused", 0, 3),
+					(set_visitor, ":cur_entry", "trp_dorwinion_noble_of_rhun"),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+	      (set_battle_advantage, 0),
+	      (assign, "$g_battle_result", 0),
+	      (set_jump_mission, "mt_amath_dollen_defend"),
+        (jump_to_scene,":lp_scene"),
+        (change_screen_mission),
+       ]),
+
+		("bandit_fortress_spirits",[(is_currently_night)],"Go talk with the spirits.",
+       [(set_jump_mission, "mt_amath_dollen_spirit"),
+				(eq, "$g_encountered_party", "p_raft"),
+				(assign, ":lp_scene", "scn_black_shield_fortress"),
+				(modify_visitors_at_site,":lp_scene"),
+		    (reset_visitors),
+		    (set_jump_entry, 1),
+		    (set_visitor, 1, "trp_player"),
+		    (assign, ":cur_entry", 3),
+				(try_for_range, ":unused", 0, 10),
+					(set_visitor, ":cur_entry", "trp_black_shield_scout"),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+				(assign, ":cur_entry", 14),
+				(try_for_range, ":unused", 0, 10),
+					(set_visitor, ":cur_entry", "trp_black_shield_bandit"),
+					(val_add, ":cur_entry", 1),
+				(try_end),
+        (set_visitor, 29, "trp_dorwinion_spirit_leader"),
+        (set_visitors, 30, "trp_dorwinion_spirit",2),
+        (set_visitors, 31, "trp_dorwinion_spirit",2),
+        (jump_to_menu, "mnu_amath_dollen_fortress"),
+        (jump_to_scene,":lp_scene"),
+        (change_screen_mission),
+       ]),
+
+     ("leave_amath_dollen_fortress",[],"Leave for now.",[(change_screen_return)]),
+	]
+),
+	
+## Kham - Spears of bladorthin - Raft Men - End
+
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations
 ( "auto_player_garrison",0,"stub","none",
@@ -8542,14 +8744,14 @@ game_menus = [
 	     	(quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
 	     	
 	 #Set Scout Camp Defender Faction
-	 		(faction_get_slot, ":tier_2_troop", ":scout_camp_faction", slot_faction_tier_2_troop),
-	     	(faction_get_slot, ":tier_3_troop", ":scout_camp_faction", slot_faction_tier_3_troop),
-	     	(faction_get_slot, ":tier_4_troop", ":scout_camp_faction", slot_faction_tier_4_troop),
-	     	(faction_get_slot, ":tier_5_troop", ":scout_camp_faction", slot_faction_tier_5_troop),
+	 		(faction_get_slot, ":tier_ranged_troop", 	 ":scout_camp_faction", slot_faction_ranged_troop),
+	     	(faction_get_slot, ":tier_3_troop", 		 ":scout_camp_faction", slot_faction_tier_3_troop),
+	     	(faction_get_slot, ":tier_4_troop", 		 ":scout_camp_faction", slot_faction_tier_4_troop),
+	     	(faction_get_slot, ":tier_5_troop", 		 ":scout_camp_faction", slot_faction_tier_5_troop),
 	        (assign, ":guard_troop_1", ":tier_3_troop"),
 	        (assign, ":guard_troop_2", ":tier_4_troop"),
 	        (assign, ":guard_troop_3", ":tier_5_troop"),
-	        (assign, ":watchtower_troop",":tier_2_troop"),
+	        (assign, ":watchtower_troop",":tier_ranged_troop"),
 
 	 #Set Which Scene Scout Camp is at
 	 	## Get Theater of Scout Camp
@@ -8557,7 +8759,7 @@ game_menus = [
 	 		(store_character_level, ":level", "trp_player"),
 		 		(try_begin),
 			 		(eq, ":home_theater", theater_SW),
-			
+				
 			## Get Side of Player to check which scout camp to spawn 	
 			 		(try_begin),
 			 			(is_between, ":level", 11,17),
@@ -8652,22 +8854,25 @@ game_menus = [
 			 		(try_end),
 			 	(try_end),
 	#Set Entry and Number of Defenders   
+	#0, player
+	#16 & 18 - where at least 10 troops will spawn per spawn point
+	#20,21,22,23,24 - Watchtower / Archer guards (1 troop per spawn point)
 	        (reset_visitors),
 	        (set_jump_entry, 0), 
 	        (set_visitor, 0, "trp_player"),
 	        (try_begin),
 		        (is_between, ":level",11,17),
 		       	(val_div, ":level", 3),
-		        (store_add, ":min_guards", ":level", 5),
-		        (store_add, ":max_guards", ":min_guards", 6),
+		        (store_add, ":min_guards", ":level", 3),
+		        (store_add, ":max_guards", ":min_guards", 3),
 		        (store_random_in_range, ":random_no", ":min_guards", ":max_guards"),
 		        (set_visitors, 18, ":guard_troop_1", ":random_no"),
 		        (val_div,":random_no",4),
 		        (set_visitors, 16, ":guard_troop_2", ":random_no"),
 	        (else_try),
 	        	(val_div, ":level", 5),
-		        (store_add, ":min_guards", ":level", 5),
-		        (store_add, ":max_guards", ":min_guards", 6),
+		        (store_add, ":min_guards", ":level", 3),
+		        (store_add, ":max_guards", ":min_guards", 3),
 		        (store_random_in_range, ":random_no", ":min_guards", ":max_guards"),
 		        (set_visitors, 18, ":guard_troop_2", ":random_no"),
 		        (val_div,":random_no",4),

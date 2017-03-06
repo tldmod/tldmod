@@ -4216,6 +4216,7 @@ formAI_scripts = [
       (assign, ":new_leader", ":team_leader"),
       
       (try_begin),
+      	(neq, ":team_leader", -1), #Kham - fix for horse agent
         (agent_get_troop_id, ":troop_id", ":team_leader"),
         (troop_get_type, ":troop_type", ":troop_id"),
         (eq, ":troop_type", tf_troll), # is it a troll?

@@ -9,6 +9,7 @@ from ID_troops import *
 from ID_party_templates import *
 from header_troops import *
 from header_items import * #TLD
+from header_terrain_types import * #TLD
 
 from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_dialog
@@ -2305,7 +2306,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (check_quest_succeeded, "qst_destroy_scout_camp"),
     (quest_get_slot, ":giver_troop", "qst_destroy_scout_camp", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
-    (quest_get_slot, ":quest_target_center", "qst_destroy_scout_camp", slot_quest_object_center),
+    (quest_get_slot, ":quest_target_center", "qst_destroy_scout_camp", slot_quest_target_center),
     (str_store_party_name,12,":quest_target_center")],
 "Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.", "lord_generic_mission_completed",[
    
@@ -3346,12 +3347,107 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                              (lt,":lords_quest",0)], 
 "Do you have any tasks for me?", "lord_request_mission_ask",[]],
 
-# TLD: Dwarf Lord takes Moria book, and gives player lotsa rank pts. Placeholder for now... (CppCoder)
+# TLD: Dwarf Lord takes Moria book, and gives player lotsa rank pts. Placeholder for now... (CppCoder) -- Reinplemented by Kham, Dialogue by Yarrum
 
-#[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(player_has_item, "itm_book_of_moria"),(eq, cheat_switch, 1)], "My lord, I found this book...", "dwarf_lord_book", []],
-#[anyone,"dwarf_lord_book", [(troop_remove_item, "trp_player", "itm_book_of_moria"),(call_script, "script_increase_rank", "fac_dwarf", 100)], "Give it to me, raw and wwwwrrrrigling...", "lord_pretalk", []],
+[anyone|plyr,"lord_talk", 
+  [(eq, "$g_talk_troop", "trp_dwarf_lord"),
+   (player_has_item, "itm_book_of_moria"),
+   (store_troop_faction, ":faction", "trp_player"),
+   (str_clear, s3),
+   (try_begin),
+      (eq, ":faction", "fac_dwarf"),
+      (str_store_string, s3, "@My king"),
+    (else_try),
+      (str_store_string, s3, "@Lord"),
+    (try_end)], 
+      "{s3}, I have a matter which I must bring to your attention.", "dwarf_lord_book", []],
 
-# TLD: End Dwarf Lord takes Moria book
+[anyone,"dwarf_lord_book", 
+  [], "Speak freely, {playername}.", "dwarf_lord_book_give", []],
+
+[anyone|plyr,"dwarf_lord_book_give", 
+  [], "I ventured deep into the Mines of Moria and found record of Balin's company.", "dwarf_lord_book_give_a", []],
+
+[anyone,"dwarf_lord_book_give_a", 
+  [], "You speak of my kin as though they are a memory. Is it so?", "dwarf_lord_book_give_b", []],
+
+[anyone|plyr,"dwarf_lord_book_give_b", 
+  [], "I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...", "dwarf_lord_book_give_c", 
+    [(troop_remove_item, "trp_player", "itm_book_of_moria")]],
+
+[anyone,"dwarf_lord_book_give_c", 
+  [], "'We cannot get out. We cannot get out...They are coming.'", "dwarf_lord_book_give_d", []],
+
+[anyone,"dwarf_lord_book_give_d", 
+  [], "So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.", "dwarf_lord_book_give_e", []],
+
+[anyone,"dwarf_lord_book_give_e", 
+  [], "You have done Erebor a great service, {playername}, and your deed will not go unrewarded.", "dwarf_lord_book_give_f", 
+    [(call_script, "script_increase_rank",   "fac_dwarf", 50),
+     (call_script, "script_add_faction_rps", "fac_dwarf", 300),]],
+
+[anyone|plyr,"dwarf_lord_book_give_f", 
+  [(store_troop_faction, ":faction", "trp_player"),
+   (str_clear, s3),
+   (try_begin),
+      (eq, ":faction", "fac_dwarf"),
+      (str_store_string, s3, "@my king"),
+    (else_try),
+      (str_store_string, s3, "@lord"),
+    (try_end)], 
+      "Thank you, {s3}.", "dwarf_lord_book_give_g", []],
+
+[anyone|plyr,"dwarf_lord_book_give_g", 
+  [], "What will you do now?", "dwarf_lord_book_give_h", []],
+
+[anyone,"dwarf_lord_book_give_h", 
+  [], "We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.", "dwarf_lord_book_give_i", []],
+
+[anyone|plyr,"dwarf_lord_book_give_i", 
+  [(check_quest_active|neg, "qst_oath_of_vengeance"),
+   (party_is_active, "p_town_moria"),
+   (store_troop_faction, ":faction", "trp_player"),
+   (str_clear, s3),
+   (str_clear, s4),
+   (try_begin),
+      (eq, ":faction", "fac_dwarf"),
+      (str_store_string, s3, "@my king"),
+      (str_store_string, s4, "@our"),
+    (else_try),
+      (str_store_string, s3, "@lord"),
+      (str_store_string, s4, "@your"),
+    (try_end)], 
+      "{s3}, I wish to help {s4} people avenge Balin and his company.", "dwarf_lord_avenge", []],
+
+[anyone|plyr,"dwarf_lord_book_give_i", 
+  [], "I wish you good luck with that.", "lord_pretalk", []],
+
+[anyone,"dwarf_lord_avenge", 
+  [], "Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.", "close_window", 
+    [(str_clear, s4),(str_clear, s3),(str_clear, s2),
+     (str_store_troop_name, s4, "$g_talk_troop"),
+     (store_troop_faction, ":target", "$g_talk_troop"),
+     (quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
+     (quest_set_slot, "qst_oath_of_vengeance", 5, "trp_dwarf_lord"), # CppCoder: remember source hero
+     (str_store_faction_name, s3, "fac_moria"),
+     (store_current_day, ":day"),
+     (quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
+     (quest_set_slot, "qst_oath_of_vengeance", 2, "fac_moria"), # target faction
+     (assign,":count", 0), # count and store initial killcount of target faction' parties
+     (try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+        (spawn_around_party,"p_main_party",":ptemplate"),
+        (store_faction_of_party,":fac", reg0),
+        (remove_party, reg0),
+        (this_or_next|eq, ":fac", "fac_moria"),
+        (store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+        (val_add,":count",":n"),
+     (try_end),
+     (quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+        (setup_quest_text, "qst_oath_of_vengeance"),
+        (str_store_string, s2, "@You swear an oath of vengeance against Moria. You must now destroy as many of the armies of Moria as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^(You must be the one to initiate the battles in order for it to count)."),
+        (call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player")]],
+
+# TLD: End Dwarf Lord takes Moria book - Implemented by Kham
 
 #TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder) -- begin
 
@@ -4825,8 +4921,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_tell_mission", [
   (eq,"$random_quest_no","qst_destroy_scout_camp"),
-  (quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
-  (str_store_faction_name,s3,":scout_camp_faction")],
+  (quest_get_slot, ":target_center", "qst_destroy_scout_camp", slot_quest_target_center),
+  (str_store_party_name,s3,":target_center")],
     "{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.", "lord_mission_destroy_scout_camp_a",
 []],
 
@@ -4843,14 +4939,34 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   "We shall await news of your success","close_window",
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
-      (set_spawn_radius, 35),
-      (spawn_around_party,":quest_object_center",":quest_target_party_template"),
-      (assign, "$qst_destroy_scout_camp_party", reg0),
+      #(quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+      (assign, ":terrain_check", 0), # Check if spawned camp is not in weird terrain
+      (try_for_range, ":unused", 0, 10),
+        (eq, ":terrain_check",0),
+        (set_spawn_radius, 15),
+        (spawn_around_party,"$g_talk_troop",":quest_target_party_template"),
+        (try_begin),
+          (party_get_current_terrain, ":terrain_type", reg0),
+          (neq, ":terrain_type", rt_water),
+          (neq, ":terrain_type", rt_mountain),
+          (neq, ":terrain_type", rt_river),
+          (assign, "$qst_destroy_scout_camp_party", reg0),
+          (assign, ":terrain_check", 1),
+        (else_try),
+          (remove_party, reg0),
+        (try_end),
+      (try_end),
+      (try_begin), #last ditch effort, if 10 iterations of the above doesnt work, just spawn it, and hope for the best
+        (party_is_active, "$qst_destroy_scout_camp_party"),
+      (else_try),
+        (set_spawn_radius, 15),
+        (spawn_around_party,"$g_talk_troop",":quest_target_party_template"),
+        (assign, "$qst_destroy_scout_camp_party", reg0),
+      (try_end),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),
       (setup_quest_text,"$random_quest_no"),
-      (str_store_string, s2, "@{s9} asked you to destroy a scout camp."),
+      (str_store_string, s2, "@{s9} asked you to destroy a scout camp nearby."),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
       (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
       (call_script, "script_stand_back"),

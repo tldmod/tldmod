@@ -1,4 +1,4 @@
-1234
+1258
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -134,6 +134,8 @@ qstr_DEBUG:_{s1}_is_now_a_ DEBUG:_{s1}_is_now_a_prisoner_of_{s2}.
 qstr_Left_for_dead_but_mi Left_for_dead_but_miraculously_survived:_{reg1?{reg1}_time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_ 1_Res.Pt_({s2})
 qstr_{reg1}_Res.Pts__{s2} {reg1}_Res.Pts_({s2})
+qstr_Gondor_AI_Tweaks___M Gondor_AI_Tweaks_-_Make_Gondor_marshall_a_bit_stronger
+qstr_Gondor_AI_Tweaks___G Gondor_AI_Tweaks_-_Gondro_Party_Size_Boost
 qstr_+30_to_Party_Morale +30_to_Party_Morale
 qstr_+20_to_Party_Morale +20_to_Party_Morale
 qstr_+1_to_Riding_Skill +1_to_Riding_Skill
@@ -194,6 +196,7 @@ qstr_near_the_Great_East_ near_the_Great_East_Road,_the_abandoned_old_road
 qstr_near_what_is_left_of near_what_is_left_of_the_Old_Forest_Road,_the_ancient_dwarven_path_that_used_to_cross_the_thick_forest
 qstr_close_to_the_Hand_sh close_to_the_Hand-shaped_sign_of_Saruman,_pointing_toward_the_tower_of_Orthanc
 qstr_in_sight_of_the_maje in_sight_of_the_majestic_City_Walls_of_Minas_Tirith,_the_White_City
+qstr_in_the_outskirts_of_ in_the_outskirts_of_Osgiliath,_the_former_capital_of_Gondor
 qstr_in_sight_of_the_entr in_sight_of_the_entrance_to_Erebor,_the_dwarven_fortress
 qstr_in_sight_of_the_dark in_sight_of_the_dark_Tower_of_Orthanc
 qstr_near_the_Old_Ford_wh near_the_Old_Ford,_where_the_Old_Forest_Road_crosses_the_River_Anduin
@@ -291,7 +294,7 @@ qstr_{s14}Double_rations_t {s14}Double_rations_to_the_one_bringing_me_the_most_{
 qstr_{s14}Kill_these_hors {s14}Kill_these_horse_thieves!
 qstr_Kill_them_all!_Take_ Kill_them_all!_Take_back_what_is_ours!
 qstr_Tonight_there_will_b Tonight_there_will_be_one_less_enemy_of_{s16}!
-qstr_Baruk_Khaz‚d!_Khaz‚d Baruk_Khaz‚d!_Khaz‚d_ai-mÍnu!
+qstr_Baruk_Khaz√¢d!_Khaz√ Baruk_Khaz√¢d!_Khaz√¢d_ai-m√™nu!
 qstr_{s14}Riders_of_Rohan {s14}Riders_of_Rohan!_Remember_what_do_you_fight_for!
 qstr_{s14}More_{s19}heads {s14}More_{s19}heads_to_decorate_the_gates_of_Morannon!
 qstr_The_Wise_Master_shal The_Wise_Master_shall_be_pleased_when_I_show_him_the_body_of_{playername}!
@@ -501,7 +504,10 @@ qstr_Noone..._oppossssses Noone..._oppossssses..._Barad_Dur..._and_livessss!
 qstr_All..._must..._submi All..._must..._submit..._and..._serve...
 qstr_I_serve_the_Eye! I_serve_the_Eye!
 qstr_I_shall_serve_the_Ey I_shall_serve_the_Eye!
+qstr_Gondor_AI_Tweaks___Go Gondor_AI_Tweaks_-_Gondor_waits_longer
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
+qstr_Gondor_AI_Tweaks___Gi Gondor_AI_Tweaks_-_Give_more_hosts
+qstr_Gondor_AI_Tweaks___Mo Gondor_AI_Tweaks_-_More_frequent_hosts
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR
@@ -534,6 +540,12 @@ qstr_Your_troops_flee_in_ Your_troops_flee_in_terror!
 qstr_Many_of_your_troops_ Many_of_your_troops_are_fleeing_from_battle.
 qstr_Some_of_your_troops_ Some_of_your_troops_are_fleeing_from_battle.
 qstr_A_few_of_your_troops A_few_of_your_troops_are_fleeing_from_battle.
+qstr_lord_{reg1}:_{s1}_is lord_{reg1}:_{s1}_is_defending_{s2}
+qstr_lord_{reg1}:_{s1}_NO lord_{reg1}:_{s1}_NOT_defending_{s2}
+qstr_lord_{reg1}:_{s1}_is_ lord_{reg1}:_{s1}_is_patrolling_around_{s2}
+qstr_lord_{reg1}:_{s1}_NOT lord_{reg1}:_{s1}_NOT_patrolling_around_{s2}
+qstr_lord_{reg1}:_{s1}_is_a lord_{reg1}:_{s1}_is_accompanying_{s2}
+qstr_lord_{reg1}:_{s1}_NOT_ lord_{reg1}:_{s1}_NOT_accompanying_{s2}
 qstr_{s1} {s1}
 qstr_No_Troops_Left. No_Troops_Left.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
@@ -744,9 +756,12 @@ qstr_SE_advance_camps_spaw SE_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
-qstr_ON ON
-qstr_OFF__cheat_ OFF_(cheat)
 qstr_OFF OFF
+qstr_ON ON
+qstr_IMOD_test_mesh_given IMOD_test_mesh_given
+qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
+qstr_Moria_Book_given Moria_Book_given
+qstr_OFF__cheat_ OFF_(cheat)
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)
 qstr_Normal Normal
@@ -913,6 +928,8 @@ qstr_Guardians_of_{s6} Guardians_of_{s6}
 qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
 qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
+qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
+qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
@@ -1049,6 +1066,13 @@ qstr_Oh?_Let_me_see_that. Oh?_Let_me_see_that..._Well_well_well!_It_was_good_of_
 qstr_Give_me_that!_Hrmph! Give_me_that!_Hrmph!_Good_that_you_brought_me_this,_{playername},_you_are_a_useful_servant._Tell_{s9}_to_employ_you_more_often.
 qstr_What?_Let_me_see_tha What?_Let_me_see_that..._Hmmm._It_was_good_of_you_to_bring_me_this,_{playername}._Now_begone.
 qstr_Give_me_that!_Hrmph!_ Give_me_that!_Hrmph!_You_are_a_useful_servant_to_your_masters,_{playername},_but_all_of_you_will_be_dead_before_long._Not_now_though,_so_scurry_off.
+qstr_My_king My_king
+qstr_Lord Lord
+qstr_my_king my_king
+qstr_lord lord
+qstr_our our
+qstr_your your
+qstr_You_swear_an_oath_of You_swear_an_oath_of_vengeance_against_Moria._You_must_now_destroy_as_many_of_the_armies_of_Moria_as_possible_in_the_coming_days._You_are_keenly_aware_that_your_followers_have_witnessed_this_oath_and_you_do_not_wish_to_become_known_as_an_oathbreaker._An_orgy_of_bloodletting_must_now_begin!^(You_must_be_the_one_to_initiate_the_battles_in_order_for_it_to_count).
 qstr_The_search_for_the_L The_search_for_the_Lost_Spears_has_led_you_to_Dorwinion,_the_site_of_the_ancient_northern_kingdom_of_King_Bladorthin._TO_BE_CONTINUED
 qstr_You_need_to_have_a_p You_need_to_have_a_party_of_at_least_30_strong_to_begin_this_quest
 qstr_You_were_tasked_to_h You_were_tasked_to_hunt_down_the_bandits_that_have_been_recently_wreaking_havoc_in_the_North._You_can_either_attack_them_in_their_hideout_near_Mirkwood_Forest_or_intercept_them_near_Beorn's_House.
@@ -1083,7 +1107,7 @@ qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fight
 qstr_We_are_at_war_with_{s We_are_at_war_with_{s12}._However,_there_are_only_skirmishes_at_the_moment.
 qstr_we_are_not_too_conce we_are_not_too_concerned_with_them_at_the_moment,_since_we_are_fighting_other_enemies_closer_to_home
 qstr__under_your_orders ,_under_your_orders
-qstr_{s9}_asked_you_to_de {s9}_asked_you_to_destroy_a_scout_camp.
+qstr_{s9}_asked_you_to_de {s9}_asked_you_to_destroy_a_scout_camp_nearby.
 qstr_{s9}_asked_you_to_def {s9}_asked_you_to_defend_a_village_under_attack.
 qstr_{s9}_asked_you_to_ra {s9}_asked_you_to_raid_a_village.
 qstr_These_soldiers_may_w These_soldiers_may_well_turn_the_tide_in_my_plans,_{playername}._I_am_confident_you've_trained_them_well._My_thanks_and_my_compliments_to_you.

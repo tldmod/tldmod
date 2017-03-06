@@ -260,7 +260,8 @@ parties = [
 
  ## Ring Hunters Addition - Kham
   ("ring_hunter_lair","Ring_Hunters_Lair",  icon_nomadcamp_b|pf_disabled|pf_hide_defenders|pf_is_static|pf_always_visible|pf_label_small|pf_disabled, no_menu, pt_none,fac_neutral,0,ai_bhvr_hold,0,(-30.04,-129.54),[],170),
-
+ ## Spears of Bladorthin Quest - Kham
+  ("raft","Raft Men",  icon_ship|pf_hide_defenders|pf_is_static|pf_disabled|pf_always_visible|pf_label_small, no_menu, pt_none,fac_neutral,0,ai_bhvr_hold,0,(-82.05,-197.48),[],170),
 
  # add extra towns before this point 
   ("spawn_points_end","last_spawn_point",pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(-7.746731,1.880096),[(trp_looter,15,0)]),
