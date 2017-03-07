@@ -318,11 +318,11 @@ str_npc17_intro|嘿，你喜欢我们这儿的树么？
 str_npc1_intro_response_1|你好，追踪者大师。南方的游侠过得如何？
 str_npc2_intro_response_1|我的事情就是刚铎的事情，那你是谁？
 str_npc3_intro_response_1|同样祝你有个美好的一天，有什么问题么？
-str_npc4_intro_response_1|向您致敬，我的女士。我是否有幸得知您的芳名？
+str_npc4_intro_response_1|向你问好，我的女士。我是否有幸得知您的芳名？
 str_npc5_intro_response_1|您好，精灵贵族！与您相见真是三生有幸。（注：葛罗芬戴尔是诺多精灵王族，在魔戒魔戒同盟卷二第一章中被甘道夫评价为：‘首生儿女中大有力量的人物之一’‘隶属王侯家族的精灵领主’；首生儿女是精灵族别称）
 str_npc6_intro_response_1|这是西尔凡精灵（木精灵别称）向客人打招呼的方式？
 str_npc7_intro_response_1|{playername}竭诚为您服务。都灵的子民们过得如何？
-str_npc8_intro_response_1|你好，我还在想是否有志愿者加入我们的旅程呢。
+str_npc8_intro_response_1|向你问好，我还在想是否有志愿者可以加入我们的旅程呢。
 str_npc9_intro_response_1|把你的敌意放下，强兽人！我不是告密者。
 str_npc10_intro_response_1|你是谁？
 str_npc11_intro_response_1|你是谁？
@@ -376,11 +376,11 @@ str_npc7_backstory_b|在我尊敬的父亲德瓦林的指挥下，也正如我�
 str_npc8_backstory_b|我曾治愈了吾王布兰德的便秘，一个常见但影响男人上战场的不适。一杯轻酿蒿木酒，肠道和精神就都放心了。
 str_npc9_backstory_b|于是我问我自己：‘葛玛，你打算以一坨烂肉的身份结束此生么？’然后我回答：‘绝不！’^之后的一场战斗，我假装受伤退到了部队最后面，在没人注意的情况下把我的头儿几乎劈成了两半，又把他的助手下仆杀个精光^^…让我没想到的是，那个该死的爬行动物竟然没死，还四处嚼舌根。下次遇到他我会保证把他的头拧下来，啊哈哈…
 str_npc10_backstory_b|我是艾辛格的一名狼骑兵，也是一名追踪者。
-str_npc11_backstory_b|啊！这只不过是因为我的鼻子当时有点堵。你问我为什么在鼻子上垫石片？不是我弄得！是那群该死的强兽人！那群挨千刀的贼！我的嗅觉是借给他们用之后才给弄坏的！那群混蛋四处挖四处嗅，把我的鼻子给弄坏了。
+str_npc11_backstory_b|啊！这只不过是因为我的鼻子当时有点堵。你问我连石头都嗅不了为什么还带着鼻子？这不怪我！要怪那群该死的强兽人！那群挨千刀的贼！我的嗅觉就是因为他们才不好使的！那群混蛋四处挖四处嗅，我根本就没机会闻什么东西，一切就被他们清走了。
 str_npc12_backstory_b|另外那些戒灵可把我吓坏了。被他们注视就好像你的肉身被剥了下来似得，而你的灵魂则在另一边的黑暗中冻结。但他（指黑暗魔君）喜欢它们；它们是他的最爱。抱怨是没有用的！实话跟你说，在这座城市里干活可不是说着玩儿的。要是我能选择的话，我肯定会选择一个没有戒灵的地方。
 str_npc13_backstory_b|我看到了黑暗魔君的话语开始在我族民中间传播，他们的内心与思想都已经被他蔓延。大多数人已经堕入黑暗当中，而替代之前勇气的则是永不停歇的杀戮欲望。所以当他们的耳边传来黑暗魔君的号召之时，太多太多的提线木偶愿意响应。
 str_npc14_backstory_b|乘风破浪于贝尔法拉斯湾中会极大地改变任何人；那些反抗她的人也会，但他们现在不过是孩童罢了。真正的男人只会直面暴雨并在风口浪尖骑行。我早已见过贝尔法拉斯湾最黑暗的时刻，但依旧征服了她。
-str_npc15_backstory_b|许多月亮之前，当我还只是一个新鲜小东西的时候，家里的老家伙带领着整个部落深入矿山，因为那里的矮人最近都死了。有一个火焰幽魂曾经从这里经过，它可真是舒适和温暖！从此我们就在那里扎下了根，但经常有一些残暴的冒险者或矮人英雄来到这里，打破我们隧道的平静，伤害或杀死我们。渐渐地，我的手学会了缝合剑斧造成的伤口，而我的头脑则学会了只通过外表来观察骨头。现在，我的制药和修复创口技艺同样厉害！
+str_npc15_backstory_b|许多月亮之前，当我还只是一个新鲜小东西的时候，家里的老家伙带领着整个部落深入矿山，因为那里的矮人最近都死了。有一个火焰幽魂（这里特指摩瑞亚炎魔）曾经从这里经过，它可真是舒适和温暖！从此我们就在那里扎下了根，但经常有一些残暴的冒险者或矮人英雄来到这里，打破我们隧道的平静，伤害或杀死我们。渐渐地，我的手学会了缝合剑斧造成的伤口，而我的头脑则学会了只通过外表来观察骨头。现在，我的制药和修复创口技艺同样厉害！
 str_npc16_backstory_b|毕额丘斯在我的故乡是一个凶猛的民族，但却被西方人杀得只剩下包括我在内的孤魂野鬼。他们的利刃就好像进食一样一个个撕碎我族人的躯体，而剑上残留的血迹和我身上的同出一源，但只要我在一日，毕额丘斯的血脉就不会断绝。（注：洛汗人在凯勒布兰特平原战役帮助刚铎逆转了战局并击退了毕额丘斯人的进攻，促成了洛汗王国的建立和刚铎洛汗的永世盟约，但毕额丘斯族灭，哪怕少数留存也加入了东方人部落）
 str_npc17_backstory_b|你可以从树中取得很多有用的东西，你知道的。这就是我的工作。我的工作围绕树，我从树中取东西。有时灌木丛也可以，但我更喜欢树。
 str_npc1_backstory_c|然而在伊西力安，敌人有着让人绝望的人数优势。如果没有摄政王派来的援军或是更大胆的行动的话，我估计我们坚持不了多久了。如果在其他地方我对这场战争的贡献比现在还大的话，我很高兴去帮忙，不过前提是法拉墨队长许可。
@@ -706,14 +706,14 @@ str_npc14_retirement_speech|我似乎对战士的生活有些厌倦了，我准�
 str_npc15_retirement_speech|我似乎对战士的生活有些厌倦了，我准备退伍。
 str_npc16_retirement_speech|我似乎对战士的生活有些厌倦了，我准备退伍。
 str_npc17_retirement_speech|我似乎对战士的生活有些厌倦了，我准备退伍。
-str_npc1_rehire_speech|好久不见，队长。你需要我再次加入你的队伍么？
+str_npc1_rehire_speech|好久不见，队长。我能再次加入你的队伍么？
 str_npc2_rehire_speech|希望您今天过得愉快，我能请求再一次加入你的队伍么？
-str_npc3_rehire_speech|哈！再次一起奔驰与草原如何？
+str_npc3_rehire_speech|哈！再次一起奔驰于草原如何？
 str_npc4_rehire_speech|再次欢迎。我们要从上次停止得地方继续开始么？
 str_npc5_rehire_speech|很高兴见到你，{playername}。让我们再一次一起旅行。
 str_npc6_rehire_speech|很高兴见到你，{playername}。我们要一同踏上旅途么？
-str_npc7_rehire_speech|我的斧子已经准备好了，{playername}。您要我重新加入么？
-str_npc8_rehire_speech|您的出现真让我受宠若惊，我能再次加入您的队伍么？
+str_npc7_rehire_speech|我的斧子已经准备好了，{playername}。你要我重新加入么？
+str_npc8_rehire_speech|你的出现真让我受宠若惊，我能再次加入你的队伍么？
 str_npc9_rehire_speech|葛玛准备好再次为你杀敌了，走么？
 str_npc10_rehire_speech|我能再次为你服务吗？
 str_npc11_rehire_speech|我能再次为你服务吗？
@@ -977,7 +977,7 @@ str_cunning|狡诈的
 str_debauched|残酷的
 str_goodnatured|敦厚的
 str_upstanding|正直的
-str_surrender_demand_default|投降或者去死！
+str_surrender_demand_default|屈服或是去死！
 str_surrender_demand_martial|你今天的好运到头儿了。你可以和我们死拼，但是现在就投降一样不是什么耻辱的事情。
 str_surrender_demand_quarrelsome|我已经把你逼到绝路了。投降吧，否则我会骑马把你像条狗一样碾过。
 str_surrender_demand_pitiless|你赢不了我的，你如果想试试的话，我不介意好好教训你一顿。投降吧！
@@ -1198,7 +1198,7 @@ str_party_greet_friend_dale|你好，河谷镇之友！
 str_party_greet_enemy_dale|拔出你的剑吧，我们是河谷镇之民！
 str_party_greet_friend_harad|欢迎！欢迎！哈拉德林人的朋友！
 str_party_greet_enemy_harad|你们的尸体将被沙漠吞噬！
-str_party_greet_friend_rhun|你好，东方人部落和多温尼安的朋友！
+str_party_greet_friend_rhun|向你问好，东方人部落和多温尼安的朋友！
 str_party_greet_enemy_rhun|矮人和人类根本及不上我们的勇猛！
 str_party_greet_friend_khand|Jus jívati jyók（古梵文：祝你长寿），维瑞亚的朋友！你的疤痕荣耀了你。
 str_party_greet_enemy_khand|把你的战士面具带上吧，今天你将见到末日！
@@ -1286,7 +1286,7 @@ str_mordor_rumor_8|座狼把我的手指咬了！疼啊！该死的座狼！
 str_mordor_rumor_9|别相信萨鲁曼那边的蠢货们！
 str_mordor_rumor_10|山地半兽人都太弱！我们才强壮！我们要吃掉那些部落下仆！
 str_mordor_rumor_11|Uruk glob ishi krimp shar-kûk（黑语：半兽人把所有老人绑在泥里）
-str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag（黑语：戒灵们在坑里找到了巨魔下水和半兽人粪。）哈哈哈！
+str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag（黑语：戒灵们在坑里找到了食人妖下水和半兽人粪。）哈哈哈！
 str_mordor_rumor_13|下仆偷走了我的肉，pushdug！（注：pushdug在黑暗语中译为非常讨厌的/发出恶臭的）
 str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum（黑语：无人能存活于黑暗中，冰冷中。虚空中唯有死亡。）
 str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai！（黑语：猪下水啊！叫强兽人和萨鲁曼那些臭烘烘的下流坯一起掉进粪坑里！靠！）

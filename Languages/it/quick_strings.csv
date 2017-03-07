@@ -152,7 +152,7 @@ qstr_+1_to_Ironflesh|+1 in Resistenza
 qstr_+1_to_Prisoner_Mgmt|+1 in Controllo prigionieri
 qstr_+2_to_Crafting|+2 in Lavorazione
 qstr_+3_to_Spotting|+3 in Osservare
-qstr_Less_Beorning_upkeep|Minore gestione Beorning
+qstr_Less_Beorning_upkeep|Sostentamento minimo di Beorn
 qstr_Less_Dunnish_upkeep|Minore gestione Dunnish
 qstr_Less_Wargs_upkeep|Minore gestione Wargs
 qstr_+{reg1}_to_Party_Mor|+{reg1} al morale della compagnia
@@ -331,7 +331,7 @@ qstr_{s9}_{s10}|{s9}, {s10}
 qstr_no_one|nessuno
 qstr_{s11}_and_{s12}|{s11} e {s12}
 qstr_{s11}_{s12}|{s11}, {s12}
-qstr_{s5}_is_ruled_by_{s6|{s5} è governato da {s6}.^Controlla {s8}.^Isuoi comandanti sono {s10}.^{s5} è in guerra con {s12}.
+qstr_{s5}_is_ruled_by_{s6|{s5} Capo: {s6}.^Controlla: {s8}.^Isuoi comandanti sono: {s10}.^{s5} in guerra con: {s12}.
 qstr_{s5}_has_been_defeat|{s5} è stato sconfitto !
 qstr_{s5}_has_a_strength_|{s5} ha una forza di {reg1} uomini in tutto.
 qstr_no_holdings|nessun possedimento
@@ -546,7 +546,7 @@ qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} e {s3}
 qstr_{s10}_Move_over_ther|{s10}, verso quella direzione !
 qstr_You_have_a_clear_per|Hai la chiara percezione di un grande pericolo imminente, lo senti intorno a te !
 qstr_New_ent_reached_batt|Un nuovo ent ha raggiunto il campo di battaglia...
-qstr_You_receive_word_tha|Ti giungono voci secondo cui dei villaggi Beorning sono stati attaccati. La fazione Beorning perde forza.
+qstr_You_receive_word_tha|Ti giungono voci secondo cui dei villaggi di Beorn sono stati attaccati. La fazione Beorning perde forza.
 qstr_You_receive_word_that|Ti giungono notizie secondo cui i Capi dei Cacciatori dell'Anello sono stati visti viaggiare per Mordor, trasportando una cassa. La fazione di Mordor acquisisce potenza.
 qstr_On_your_positions_bi|Alle vostre posizioni, fecce ! 
 qstr_Defenders:_infantry_|Difensori: fanteria CARICA !
@@ -589,7 +589,7 @@ qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (con {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
 qstr_^No_food:___{reg7}|^Niente cibo: -{reg7}
-qstr_Current_party_morale|L'attuale morale del gruppo è {reg5}.^I modificatori correnti del morale del gruppo sono:^^ morale di Base: +50^Dimensione del gruppo: {s2}{reg1}^Comando: {s3}{reg2}^Varietà di cibo: {s4}{reg3}{s5}^Oggetti speciali: {s6}{reg6}^Eventi recenti: {s7}{reg4}^TOTALE: {reg5}
+qstr_Current_party_morale|L'attuale morale del gruppo è {reg5}.^I qualificatori correnti del morale del gruppo sono:^^ morale di Base: +50^Dimensione del gruppo: {s2}{reg1}^Comando: {s3}{reg2}^Varietà di cibo: {s4}{reg3}{s5}^Oggetti speciali: {s6}{reg6}^Eventi recenti: {s7}{reg4}^TOTALE: {reg5}
 qstr_Defending|Difendendo
 qstr_Gathering_army|Raccogliendo esercito
 qstr_Besieging_{s11}|Assediando {s11}
@@ -607,7 +607,7 @@ qstr_Weekly_upkeep_for_tr|Salario settimanale per le truppe:^{reg5} Punti Risors
 qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} Punti Risorsa ({reg5})
 qstr_No_upkeep_costs|Nessun costo di mantenimento
 qstr_Orc_hiring_bonus:_+2|Bonus orchi arruolati: +2/3 per ogni orco^
-qstr_Current_party_size_l|L'attuale limite della dimensione del gruppo è {reg5}.^I modificatori in uso attuali sono:^^Dimensione inziale: +10^Comando: {s2}{reg1}^Carisma: {s3}{reg2}^Grado: {s4}{reg3}^{s5}TOTALE: {reg5}
+qstr_Current_party_size_l|L'attuale limite di dimensione della compagnia è {reg5}.^I qualificatori in uso attuali sono:^^Dimensione inziale: +10^Comando: {s2}{reg1}^Carisma: {s3}{reg2}^Grado: {s4}{reg3}^{s5}TOTALE: {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|Rapporto forza fazione:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Le fazioni sono normalmente assediate quando sotto forza {reg1}.
@@ -711,7 +711,7 @@ qstr_The_siege_tower_is_b|La torre d'assedio è costruita e pronta per assaltare
 qstr_As_a_last_defensive_|Come ultimo sforzo difensivo, vi ritirate nella sala principale del castello. Tu e i soldati rimanenti tenterete una resistenza disperata qui. Se sarete sconfitti, non ci sarà un'altra possibilità.
 qstr_You_ve_been_driven_a|Sei stato allontanato dalle mura. Adesso gli attaccanti si stanno aggirando per le strade. Se riesci a sconfiggerli, potresti forse svoltare le sorti della battaglia e salvare il giorno
 qstr_You_ve_breached_the_|Hai oltrepassato le mura della città, ma i difensori tenacemente continuano a resistere per le strade ! Dovete sconfiggere loro prima di poter attaccare il torrione nel cuore della città.
-qstr_The_town_centre_is_y|Il centro città è tuo, ma i difensori rimanenti si sono ritirati al castello. Dovrà cadere prima che tu completi la tua vittoria
+qstr_The_town_centre_is_y|Il centro dell'insediamento è tuo, ma i difensori rimanenti si sono ritirati al castello. Dovrà cadere prima che tu completi la tua vittoria
 qstr_The_remaining_defend|I difensori rimanenti si sono ritirati nel castello come ultima difesa. Devi entrare e distruggere ogni resistenza rimanente.
 qstr_However_since_you_ar|Comunque, dal momento che non hai prestato giuramento {vassallo/seguace} di {s9}, non c'è alcuna possibilità che ti riconoscerà come {signore/signora} di quest{reg8?a città:o castello}.
 qstr_The_enemy_has_been_f|Il nemico è stato forzato alla ritirata. L'assalto è finito, ma l'assedio continua.
@@ -722,7 +722,7 @@ qstr_Luckily_some_passing|Fortunatamente alcuni passanti locali ti trovano mentr
 qstr_{s13}^^You_have_succ|Con successo sei entrato di nascosto in {s13}^^
 qstr_the_place|il luogo
 qstr_the_castle|il castello
-qstr_Stay_indoors_for_som|Attendi un po' di tempo ({reg1} Punti Risorsa per notte)
+qstr_Stay_indoors_for_som|Alloggia qui per un po' ({reg1} Punti Risorsa per notte)
 qstr_Camp_outside_for_som|Ti sei accampato all'aperto per un po' di tempo (nessun costo)
 qstr_{s1}_s_Ship|Nave di {s1}
 qstr_Time_passes...|Il tempo scorre...
@@ -794,7 +794,7 @@ qstr_Ent_water_effect:_in|Effetto dell'acqua degli Ent: aumenta la statura !
 qstr__+1_to_Strength__per|+1 di Forza (permanente)
 qstr__+1_to_Charisma__per|+1 di Carisma (permanente)
 qstr_The_dark_shadow_fina|L'ombra oscura finalmente sorge in una tempesta, e le orde del male iniziano la loro marcia verso il popolo libero della Terra di Mezzo. Mordor affronterà Gondor a Sud, Isengard contro Rohan ad Ovest, Dol Guldur contro gli elfi...Anche nel lontano Nord c'è una guerra a sé stante
-qstr_The_War_has_started!|La Guerra è scoppiata !
+qstr_The_War_has_started!|La guerra è scoppiata !
 qstr_The_forest_seems_pea|La foresta appare tranquilla.
 qstr_There_is_a_sense_of_|Si percepisce un senso di pericolo nell'aria.
 qstr_You_have_a_feeling_y|Hai la sensazione di aver disturbato la foresta abbastanza a lungo.
@@ -851,7 +851,7 @@ qstr_Why_did_you_make_mod|Perche' avete reso l'installazione della mod cosi' com
 qstr_Well_if_you_are_here|Bene, se sei arrivato fin qui e mi stai parlando, allora hai RTFM dopotutto
 qstr_You_just_got_windyfl|Sei appena stato windyflorato !
 qstr_Treebeard_wants_you_|Barbalbero vuole che trovi e sconfiggi gli orchi che stanno disturbando Fangorn.
-qstr_Something_wrong_not_|Qualcosa è andato storto, truppe insufficienti per formare un gruppo di ricognizione
+qstr_Something_wrong_not_|Qualcosa è andato storto, non hai truppe sufficienti per formare un gruppo di ricognizione
 qstr_my_home_town|La mia città natale.
 qstr_I_am_in_perfect_heal|Sono in perfetta forma.
 qstr_I_am_suffering_from_|Sto soffrendo da {s1}.
@@ -894,7 +894,7 @@ qstr_It_is_my_duty_to_pro|E' mio dovere proteggere la nostra gente.
 qstr_It_is_my_duty_to_prot|Il mio dovere è proteggere i nostri alleati.
 qstr_I_am_{s4}_{s15}_of_{|Io sono {s4}, {s15} di {s6}
 qstr_I_am_{s4}_a_commande|Io sono {s4}, un comandante di {s6}
-qstr_{s9}{reg5?_and_the_r|{s9}{reg5? e il sovrano di {s8}.:.
+qstr_{s9}{reg5?_and_the_r|{s9}{reg5? e governante di {s8}.:.
 qstr_Very_well_done_{play|Ben fatto, {playername} ! Hai catturato sia la spia e il suo mandatario, proprio come avevo sperato, ed entrambi sono ora bloccati in modo sicuro, in attesa di essere interrogati. Avranno qualche spiegazione! In ogni caso sono molto contento del tuo successo, {playername}, e ti do questa borsa come segno del mio apprezzamento.
 qstr_Beautiful_work_{play|Bel lavoro, {playername} ! Hai catturato sia la spia che il suo mandatario, proprio come speravo, e  la coppia ora è al sicuro nella mia caverna, aspettando di essere interrogati ! Il mio aguzzino sarà occupato questa notte ! Ad ogni modo, sono veramente contento del tuo successo, {playername}, e ti do questa borsa come segno del mio apprezzamento.
 qstr_Your_mission_is_comp|La tua missione è completa, {s9} vuole te per riprendere a seguire la sua armata fino a nuovo avviso.
@@ -916,8 +916,8 @@ qstr_The_search_for_the_L|La ricerca delle Lance Perdute ti ha portato a Dorwini
 qstr_You_need_to_have_a_p|Hai bisogno di una compagnia con una forza minima di 30 per iniziare la quest
 qstr_You_were_tasked_to_h|Eri stato incaricato di dare la caccia ai banditi che hanno recentemente scatenato il caos nel Nord. Puoi attaccarli nel loro nascondiglio nei pressi di Bosco Atro o di intercettarli vicino alla Casa di Beorn.
 qstr_Mordor_Gains_Faction|Mordor acquisisce forza nel ricevere un'arma sconosciuta
-qstr_Beornings_gain_Facti|La fazione dei Beorning ottiene forza quando le notizie sulla tua vittoria iniziano a circolare.
-qstr_Beornings_loses_Fact|La fazione dei Beorning perde forza quando vengono attaccati.
+qstr_Beornings_gain_Facti|La fazione di Beorn ottiene forza quando le notizie sulla tua vittoria iniziano a circolare.
+qstr_Beornings_loses_Fact|La fazione di Beorn perde forza quando vengono attaccati.
 qstr__{s14}_gains_faction|{s14} ottiene forza quando le notizie sull'Anello del Potere si diffondono.
 qstr_You_must_return_and_|Devi tornare e fare rapporto sul fatto che hai sconfitto i Capi dei Cacciatori dell'Anello e hai preso l'anello magico.
 qstr_You_must_return_and_r|Devi tornare e fare rapporto sul fatto che hai sconfitto il gruppo dei Cacciatori dell'Anello, ma che i loro Capi potrebbero aver preso ciò che stavi cercando.
@@ -1060,7 +1060,7 @@ qstr_The_{s9}_of_{s4}_ask|Il {s9} di {s4} ti ha chiesto di abbattere alcuni gobl
 qstr_The_{s9}_of_{s14}_ha|Il {s9} di {s14} ti ha chiesto di eliminare un gruppo di goblin che creano problemi a {s14}. Loro escono solo di notte, e attaccano persone sole per le strade.
 qstr_refugees|rifugiati
 qstr_slaves|schiavi
-qstr_{s1}_Refugees|{s1} Rifugiati
+qstr_{s1}_Refugees|Rifugiati di {s1}
 qstr_{s1}_Slaves|{s1} Schiavi
 qstr_The_{s11}_of_{s10}_a|Il {s11} di {s10} ti ha chiesto di scortate un po' {s12} di a {s13}.
 qstr__Guards_slaughter_hi|Guardie, squartatelo !

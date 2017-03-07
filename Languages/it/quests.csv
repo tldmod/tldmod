@@ -32,10 +32,10 @@ qst_defend_village|Difendi il Villaggio
 qst_raid_village|Razzia il Villaggio
 qst_rescue_prisoners|Salva {reg1} prigionieri
 qst_rescue_prisoners_text|{s9} vuole che salvi {reg1} prigionieri.
-qst_scout_enemy_town|Osserva la città nemica
+qst_scout_enemy_town|Esplora la posizione nemica
 qst_scout_enemy_town_text|{s9} ti ha chiesto di esplorare intorno a {s13}.
-qst_dispatch_scouts|Spedisci una pattuglia ricognitiva
-qst_dispatch_scouts_text|{s9} ti ha chiesto di spedire la pattuglia ricognitiva vicino a {s13}.
+qst_dispatch_scouts|Spedisci una pattuglia in ricognizione
+qst_dispatch_scouts_text|{s9} ti ha chiesto di spedire una pattuglia in ricognizione vicino a {s13}.
 qst_eliminate_patrols|Elimina {reg1} compagnie nemiche
 qst_eliminate_patrols_text|{s9} ti ha chiesto di eliminare {reg1} {s13} compagnie nemiche.
 qst_lend_surgeon|Offri temporaneamente il tuo cerusico {s3} a {s1}

@@ -197,7 +197,7 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Comme 
 dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Vous osez demander un troll de combat complètement armuré,  {playername}, pour garder sous votre commandement ? Ce n'est pas une petite chose à demander. Mais vous êtes un serviteur compétent, et nous connaissons vos motivations. Nous aimons ça. Nous vous l'accorderons.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Comment osez-vous nous demander plus que nous avions prévu pour vous dans notre grande Sagesse ? {playername}, vous vous êtes révélé un puissant serviteur aujourd'hui, mais ne laissez pas votre insolence éprouver davantage Notre patience.
 dlga_lord_capture_troll_completed_one_troll:close_window|Excellent, {playername}. Vous êtes un serviteur utile et loyal. Ce troll sera plus utile pour vos actions. Il vient des donjons !
-dlga_lord_start:close_window.1|Il y a trop longtemps déjà, je t'ai ordonné de prendre un troll vif et de me l'apporter. Pourtant je savais qu'il était inutile d’espérer que quelqu'un comme toi, {playername}, ne serait pas capable de relever un tel défi. Mon serviteur n'était pas suffisamment habile ou chanceux.
+dlga_lord_start:close_window.1|Il y a trop longtemps déjà, je t'ai ordonné de prendre un troll vivant et de me l'apporter. Pourtant je savais qu'il était inutile d’espérer que quelqu'un comme toi, {playername}, serait capable de relever un tel défi. Mon serviteur n'était pas suffisamment habile ou chanceux.
 dlga_lord_start:lord_generic_mission_completed.1|Les nouvelles de vos prouesses face aux Trolls sauvages me sont parvenues. {s12} a un souci en moins, merci à vous {playername}.
 dlga_lord_start:lord_generic_mission_completed.2|Les éclaireurs qui se trouvaient dans la région de {s12} nous ont rapporté votre vaillante défense du village. Ces pillards deviennent plus agressifs de jour en jour... ^^La guerre semble inéluctable. Toutefois vos actent montrent à tous que nous sommes prêts à nous défendre, merci {playername}.
 dlga_lord_start:defend_village_failed|Les éclaireurs près de {s12} nous ont rapporté que vous aviez faillit à défendre le village. Ses habitants sont désormais morts, ou esclaves de nos ennemis. Chaque jour qui passe voit ces pillards devenirs plus audacieux... ^^La guerre semble devenir inéluctable.
@@ -369,9 +369,9 @@ dlga_lord_tell_objective:lord_pretalk.12| Je ne sais pas : {reg1} {s1}
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.
 ; dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Are you able to send men?
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
-; dlga_lord_mission_defend_question:lord_mission_defend_accept|My men and I are ready. We shall ride out at once.
-; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I cannot do this task.
-; dlga_lord_mission_defend_accept:close_window|Thank you, {playername}. Now go, quickly!
+dlga_lord_mission_defend_question:lord_mission_defend_accept|Mes hommes et moi sommes prêt. Nous devrions y'aller.
+dlga_lord_mission_defend_question:lord_mission_defend_reject|J'ai peur de ne pas pouvoir accomplir cette tâche.
+dlga_lord_mission_defend_accept:close_window|Merci,  {playername}. Maintenant pars, vite!
 ; dlga_lord_mission_defend_reject:close_window|I see. Then I will send what troops I can. Let us hope we are not too late.
 ; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
 ; dlga_lord_mission_raid_village_a:lord_raid_village_accept|I will raid that village, kill every man we see, and enslave all women and children!

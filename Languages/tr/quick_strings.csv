@@ -80,7 +80,7 @@ qstr_STR^AGI^INT^CHA|GÜÇ^ÇVK^ZEKA^KRZ
 qstr_Skills|Yetenekler
 qstr_Ironflesh^Power_Stri|Demir Vücut^Güçlü Darbe^Power Throw^Güçlü Germe^Kalkan^Atletizm^Binicilik^Atlı Okçuluk
 qstr_Proficiencies|Yeterlilikler
-; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
+qstr_1H_Weapons^2H_Weapon|Tek elli silahlar^Çift elli silahlar^Gönderli silahlar^Okçuluk^Arbalet^Fırlatmalı silahlar
 qstr_Equipments|Ekipmanlar
 qstr_You_gained_{reg0}_Re|{s0} kadar beceri puanının {reg0} kadarını topladın
 qstr_You_lost_{reg0}_Reso|{s0} kadar beceri puanının {reg0} kadarını kaybettin
@@ -103,7 +103,7 @@ qstr_Accomplice_of_{s5}|{s5}'in Suç Ortağı
 qstr_Useful_Tool_of_{s5}|{s5}'in Kullanışlı Aracı
 qstr_Servant_of_{s5}|{s5}'in Hizmetkarı
 qstr_Unknown_to_{s5}|{s5}'in bilmediği
-; qstr_You_have_been_{reg1?|You have been {reg1?promoted:demoted} to {s24} ({reg0})!
+qstr_You_have_been_{reg1?|Bulundun {reg1?promoted:demoted} to {s24} ({reg0})!
 qstr_You_{reg1?earned:los|Sen {reg1?earned:lost} {reg11} rütbe puanı {reg12?and {reg12} influence :}ile {s11}.
 qstr_You_spent_{reg10}_of|Kararların sonucunda {reg10} ikna gücünü {s1}, ile harcadın kalan puanın {reg11}
 qstr_Troop_upkeep:|Asker bakımı:
@@ -342,7 +342,7 @@ qstr_{reg3?She:He}|{reg3?She:He}
 qstr_The_last_time_you_sa|En son {s1} da {reg1?her:him} yı gördün
 qstr_The_last_time_you_he|En son {s1} da {reg1?her:him} hakkında bir şeyler duydun.
 qstr_The_{s50}|{s50}
-; qstr_{s50}_belongs_to_{s1|{s50} belongs to {s1} of {s2}.^
+qstr_{s50}_belongs_to_{s1|{s50} ait olmak {s1} of {s2}.^
 qstr_Current_garrison_con|Su anki garnizondaki {reg5} kisiye, {reg6} gün yetecek kadar yiyecek stogun kaldı.
 qstr_Very_Poor|Çok fakir
 qstr_Poor|Fakir
@@ -363,9 +363,9 @@ qstr_Lord:_{s4}|Lord: {s4}
 qstr_Ally_party_is_presen|Müttefik parti hazır
 qstr_{s4}_is_present_at_e|{s4} olayda mevcut
 qstr_Event_#{reg5}_type_{|Event #{reg5}, type {reg6}, time {reg8}: Oyuncunun krallığının askeri hedefleri ile uygunluğu = {reg7}
-; qstr_Event_#{reg5}_type_{r|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to center object faction = {reg7}
-; qstr_Event_#{reg5}_type_{re|Event #{reg5}, type {reg6}, time {reg8}: player's kingdom relation to faction object = {reg7}
-; qstr_Event_#{reg5}_type_{reg|Event #{reg5}, type {reg6}, time {reg8}. No relevant kingdom relation
+qstr_Event_#{reg5}_type_{r|Olay #{reg5}, type {reg6}, zaman  {reg8}: oyuncun kralığının diğer krallıklarla ilişkisi = {reg7}
+qstr_Event_#{reg5}_type_{re|Olay #{reg5}, type {reg6}, zaman  {reg8}:  oyuncun kralığının bulunduğu taraf ile görev ilişkisi = {reg7}
+qstr_Event_#{reg5}_type_{reg|Olay #{reg5}, type {reg6}, zaman {reg8}. İlgili krallıkla ilişkisi yok.
 qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Bağımsız Oyuncu
 qstr_Elapsed_hours:_{reg7|Geçen saatler: {reg7}
 qstr_Reputation_type:_{s1|İtibar türü: {s15}
@@ -583,8 +583,8 @@ qstr_You_wish_old_man_my_|Sen istedin yaşlı adam, omuz omuza görüşmek güze
 qstr_You_should_really_se|Sen gerçekten Vekilharç Denethor'un Facebook fotoğrafını görmelisin, o inanılmaz!
 qstr_Press_Space_to_conti|Boşluk tuşuna basıp ilerle
 qstr_{s24}__{reg13}_|{s24} ({reg13})
-; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})
-; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})
+qstr_Influence:^_{reg11}_|Etkisi: ^ {reg11} (ile {s16})
+qstr_Resource_Points:^_{r|Hammadde puanları: ^ {reg12} (içinde {s16})
 qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (with {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})

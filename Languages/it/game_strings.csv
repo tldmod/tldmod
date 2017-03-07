@@ -319,7 +319,7 @@ str_npc1_intro_response_1|I miei saluti, Mastro Inseguitore.  Come va con i Rami
 str_npc2_intro_response_1|I miei affari sono gli affari di Gondor, e tu chi sei ?
 str_npc3_intro_response_1|E una buona giornata anche a te, c'è qualcosa che non va ?
 str_npc4_intro_response_1|Saluti, mia Signora. Con chi ho l'onore di parlare ?
-str_npc5_intro_response_1|I miei saluti Signore degli Elfi! È un grande onore incontrarti.
+str_npc5_intro_response_1|I miei saluti Signore degli Elfi ! È un grande onore incontrarti.
 str_npc6_intro_response_1|È così che gli Elfi Silvani accolgono i loro ospiti ?
 str_npc7_intro_response_1|{playername} al tuo servizio. Come sta il popolo di Durin ?
 str_npc8_intro_response_1|I miei saluti. Mi chiedevo se ci fosse qualche volontario che voglia unirsi a noi nei nostri viaggi.
@@ -368,10 +368,10 @@ str_npc16_backstory_a|Bene bene, ecco lo straniero che dichiara di essere il pri
 str_npc17_backstory_a|Mi chiamano Dímborn e lavoro nella foresta. Qui è bello. Mi piacciono le foreste. Ci sono tanti alberi. A me piacciono gli alberi. Ho lavorato nelle foreste per tutta la vita, perché sono forte e perché mi piacciono gli alberi.
 str_npc1_backstory_b|Devi sapere che sono un Ranger di Ithilien di discendenza e di valore Dúnedain. Ho esperienza nel seguire tracce e nell'esplorazione, le mie abilità con arco e spada sono ben note agli Orchi. Sono anche in grado di addestrare ogni anima che vorrà combattere l'Ombra che si approssima.
 str_npc2_backstory_b|Sono stato addestrato in qualità di guardiano di Minas Tirith, per mantenere l'ordine nella Città Bianca e servire il lord Sovrintendente.
-str_npc3_backstory_b|Sono un Cavaliere dell'éored di West Emnet - se ne sono andati senza di me per un pattugliamento verso il guado di Isen. So che la loro condotta sarà degna della verde bandiera, ma temo che molti non faranno ritorno.
+str_npc3_backstory_b|Sono un Cavaliere dell'éored di Emnet Ovest - se ne sono andati senza di me per un pattugliamento verso il guado di Isen. So che la loro condotta sarà degna della verde bandiera, ma temo che molti non faranno ritorno.
 str_npc4_backstory_b|Ho avuto i miei natali in una nobile famiglia e ho servito Lady Éowyn come damigella d'onore da quando eravamo piccole. I nostri padri furono tanto saggi da permetterci di addestrarci con i nostri fratelli al combattimento, per diventare scudiere di Rohan.
-str_npc5_backstory_b|Lord Elrond mi ha inviato come emissario a Lord Celeborn, per avvisare che è richiesto il suo intervento in Guerra in questa parte del Rhovanion.
-str_npc6_backstory_b|Mi piace percorrere i sentieri nascosti nella nostra splendida foresta. Alle volte passeggio tranquillamente fra gli alberi e osservo la vita dei molti animali del bosco. Il canto di un raro volatile o i rumori di un cinghiale nella sua tana sono per me belli come il clangore delle armi o le alte mura di Edain.
+str_npc5_backstory_b|Lord Elrond mi ha inviato come emissario a Lord Celeborn, per avvisare che è richiesto il suo intervento in guerra in questa parte del Rhovanion.
+str_npc6_backstory_b|Mi piace percorrere i sentieri nascosti nella nostra splendida foresta. Alle volte passeggio tranquillamente fra gli alberi e osservo la vita dei molti animali del bosco. Il canto di un raro volatile o i rumori di un cinghiale nella sua tana, sono per me belli come il clangore delle armi o le alte mura di Edain.
 str_npc7_backstory_b|Ho collaborato al rinforzamento delle difese di Erebor e addestrato qualche giovane nano di queste zone, sotto la direzione del mio venerato padre Dwalin, com'è nella nostra tradizione.
 str_npc8_backstory_b|Ho curato il  mio Re Brand per la sua costipazione, un malessere comune che affligge gli uomini che vanno in guerra. Una leggera bevanda a base di assenzio, e sia le viscere che la mente tornano a loro agio.
 str_npc9_backstory_b|Così mi sono detto, 'Gulm, vuoi finire come una carogna morta nel campo ?' e mi sono risposto, 'No. Nella battaglia successiva mi sono gettato a terra fingendo di essere ferito. Poi, quando nessuno guardava, sono piombato sul mio sergente ! L'ho quasi tagliato in due, gharr ! Poi ho tagliuzzato per bene il suo secondo.. E' saltato fuori che quel rettile sanguinante in qualche modo è sopravvissuto, e ha iniziato a raccontare tutto. La prossima volta mi assicurerò che la sua testa sia staccata dal collo, gharr...
@@ -399,7 +399,7 @@ str_npc13_backstory_c|Ho seguito il mio parente a nord, ho risposto alla sua osc
 str_npc14_backstory_c|Ma ecco arrivare ancora la marea oscura, una nera ondata di ombre, che si ergerà su queste terre come nessun occhio mortale ha mai visto. Queste sono le onde che cerco di dominare, ma non ho un equipaggio abbastanza temprato per cavalcare questa tempesta.
 str_npc15_backstory_c|Dopo molti inverni sono risalito fuori dalle gallerie, ho cercato nelle Foreste Oscure per trovare un buon posto dove vivere e praticare le mie arti. Andava bene, fino a quando non sono arrivati dei grossi bastardi con tatuaggi bianchi - eugh ! Bianchi ! Come la faccia di un elfo ! - grossi bastardi, ecco cos'erano. Hanno bruciato la mia casa nella foresta, e mi sono dovuto nascondere ancora nelle caverne.. Qui.. Dimmi, hai qualcosa da mangiare ? Magari un bel cavallo ?
 str_npc16_backstory_c|E' successo molte vite degli uomini fa, un tempo differente, ma il tempo del dolore e dei ricordi è terminato. E' giunto il tempo della ricompensa per il mio popolo, e io inciderò la vendetta della mia gente su queste terre. Per mano mia, le loro case saranno devastate e tutto appassirà fino a quando saranno spariti tutti i loro clan !
-str_npc17_backstory_c|Se stai andando nella foresta, forse potre venire anche io e parlarti degli alberi che la popolano ? Ci sono molti alberi interessanti laggiù, sai.
+str_npc17_backstory_c|Se stai andando nella foresta, potrei venire anche io e parlarti degli alberi che la popolano ? Ci sono molti alberi interessanti laggiù, sai.
 str_npc1_backstory_later|Ho guidato compagnie d'esploratori a sud, fino a Emyn Arnen. C'è molta attività nemica e parecchi orchi sono caduti nelle nostre imboscate. Purtroppo, sono poche le teste d'orco rotolate giù per le colline, abbiamo visto miriadi di folli creature in marcia- Temo per la mia Ithilien e per il destino di Gondor.
 str_npc2_backstory_later|Abbiamo ricevuto pochi visitatori  ultimamente, e temo che ne verranno ancora meno. Mi sa che non si mette bene..
 str_npc3_backstory_later|Ancora nessuna notizia del mio éored, e io continuo a cavalcare abbattendo qualche orco.
@@ -448,7 +448,7 @@ str_npc11_backstory_response_2|Non ho voglia di ascoltare i tuoi problemi.
 str_npc12_backstory_response_2|I comandanti sanno quello che fanno. Farai meglio a seguire gli ordini.
 str_npc13_backstory_response_2|Il tuo destino è soffrire.
 str_npc14_backstory_response_2|Ne ho avuto abbastanza.
-str_npc15_backstory_response_2|Bah! Ho bisogno di combattenti, non di codardi.
+str_npc15_backstory_response_2|Bah ! Ho bisogno di combattenti, non di codardi.
 str_npc16_backstory_response_2|Ne ho avuto abbastanza.
 str_npc17_backstory_response_2|No, mi dispiace. Ci stiamo preparando per la guerra, non per una spedizione botanica.
 str_npc1_signup|Sono sicuro che il capitano Faramir capirebbe che altri potrebbero tenere il nemico alla baia con più valore e coraggio.
@@ -711,7 +711,7 @@ str_npc2_rehire_speech|Salve comandante ! Potrei riunirmi al tuo esercito ?
 str_npc3_rehire_speech|Ho ! Dobbiamo nuovamente cavalcare assieme ?
 str_npc4_rehire_speech|Bentornato. Riprendiamo da dove c' eravamo lasciati ?
 str_npc5_rehire_speech|E' bello ritrovarti, {playername}. Viaggiamo di nuovo assieme.
-str_npc6_rehire_speech|E' bello rivederti, {playername}. Continuiamo a seguire la stessa via.
+str_npc6_rehire_speech|E' bello rivederti, {playername}. Proseguiamo insieme il cammino.
 str_npc7_rehire_speech|La mia ascia è pronta, {playername}. Devo riunirmi al tuo esercito ?
 str_npc8_rehire_speech|Qual buon vento ti porta? Devo riunirmi al tuo esercito ?
 str_npc9_rehire_speech|Gulm è di nuovo pronto ad uccidere per te. Stiamo partendo ?
@@ -728,9 +728,9 @@ str_npc2_home_intro|Sii vigile comandante, quella dovrebbe essere Minas Morgul. 
 str_npc3_home_intro|Una parola, comandante. Iniziamo ad avvicinarci nell'Entobosco... i cavalli sono sempre più irrequieti, mio signore. Alcuni la chiamano la foresta di Fangorn.
 str_npc4_home_intro|Fermiamoci qui per un minuto, comandante. Davanti di noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
 str_npc5_home_intro|Daro! Quelle davanti a noi sono Isengard e la nera torre di Orthanc. Molte cose sono cambiate dall'ultima volta che le ho viste, e nessuna di queste per il meglio.
-str_npc6_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcuni di questi portano a vicoli ciechi. Dovremmo avvicinarci a Dol Guldur.
+str_npc6_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcuni di questi portano a vicoli ciechi. Ci stiamo avvicinando a Dol Guldur.
 str_npc7_home_intro|Hey, capitano! Questo dev'essere il vecchio sentiero che va fino all'entrata orientale di Khazad-dûm, o Moria, se preferisci. Si può vedere in lontananza il lago scintillante di Kheled-zâram, e attraverso le nuvole, i tre picchi, conosciuti da queste parti come le Montagne Nebbiose.
-str_npc8_home_intro|Oh, un fatto curioso ! Ho sentito storie di questo posto, dove robusti boscaioli vivono in armonia con piante e animali. Si chiamano Beornings, credo.
+str_npc8_home_intro|Oh, un fatto curioso ! Ho sentito storie di questo posto, dove robusti boscaioli vivono in armonia con piante e animali. Si chiamano Beorniani, credo.
 str_npc9_home_intro|Maledizione! Capitano. quella deve essere Hornburg!
 str_npc10_home_intro|Ehi, guarda!
 str_npc11_home_intro|Ehi, guarda!
@@ -739,13 +739,13 @@ str_npc13_home_intro|Ehi, guarda!
 str_npc14_home_intro|Ehi, guarda!
 str_npc15_home_intro|Ehi, guarda!
 str_npc16_home_intro|Ehi, guarda!
-str_npc17_home_intro|Ooooo, qui crescono i mallorn! Nessuno dovremme mai tagliare una pianta di mallorn, è semplicemente stupenda!
+str_npc17_home_intro|Ooooo, qui crescono i mallorn ! Nessuno dovrebbe mai tagliare una pianta di mallorn, è semplicemente stupenda !
 str_npc1_home_description|Era una bella città una volta, la vecchia capitale di Gondor, piena di gente e di risa. Ora giace disabitata e in rovina, il vecchio Anduin scorre stancamente attraverso una città fantasma.
 str_npc2_home_description|Venne chiamata Minas Ithil molti anni fa, le storie raccontano di come i chiari di luna riempissero le sue corti con la loro luce argentea, facendo brillare le pareti d'argento e bianco. Scrutando l'orizzonte dalle mura ad est, le sentinelle di Gondor riuscivano a vedere al di là di Ephel Dùath.
 str_npc3_home_description|È fatta di tronchi e rami e di ogni sorta di alberi, e io non voglio avventurarmi lì dove ci sono strane creature che vagano per la foresta, soprattutto se non tutte sono innocue.
 str_npc4_home_description|' Dove sono ora il cavallo ed il cavaliere ? dove si trova il corno che soffiava ? ^ dove si trova il timone e l'usbergo e i brillanti capelli ?... ^ sono passati come pioggia sulla montagna, come vento nel prato; ^ i giorni sono passati nell'ovest all'ombra delle colline... '
 str_npc5_home_description|Fu costruita dal Regno del sud, ora è la casa di uno che abbiamo chiamato lo Stregone Bianco, e il come faccia ad aumentare così tanto il suo potere a scapito degli altri è intrigante, senza dubbio.
-str_npc6_home_description|Non mi sono mai spinto così lontano, alcuni degli esploratori di Boscoverde dicono che qui ci sono dei Nazgul. Riesco a sentire una strana presenza, ma non riesco a descriverla. Tuttavia è potente, dobbiamo essere preparati.
+str_npc6_home_description|Non mi sono mai spinta così lontano, alcuni degli esploratori di Boscoverde dicono che qui ci sono dei Nazgul. Riesco a sentire una strana presenza, ma non riesco a descriverla. Tuttavia è potente, dobbiamo essere pronti.
 str_npc7_home_description|A giudicare dalla desolazione e a tutte queste tracce di orchi, ho paura per il destino del coraggioso Balin e della sua spedizione. Sembra che Moria sia caduta nell'ombra, dovremmo procedere con cautela.
 str_npc8_home_description|Non troppo spesso, un mercante itinerante arriva al mercato di Dale e offre il più buon miele che abbia mai assaggiato. Per qualche curioso motivo, dice che "è stato fatto dagli orsi", e ride.
 str_npc9_home_description|Le sue dannate mura sono troppo alte e resistenti per essere abbattute dal mio martello. Ritengo che se dovessimo mai scacciare gli ometti dai loro porcili in Edoras, fuggirebbero quaggiù per rifugiarsi dietro le mura.
@@ -762,24 +762,24 @@ str_npc2_home_description_2|E' triste che ci siano ovunque terribili orchi e spi
 str_npc3_home_description_2|Se dobbiamo attraversare l'Entobosco, facciamo in fretta e di nascosto. Non so chi potrebbe sentire il rumore degli zoccoli dei nostri cavalli e non voglio saperlo.
 str_npc4_home_description_2|Faremmo bene a ricordare le grandi gesta del passato e i sacrifici che sono stati fatti. L'alleanza fra Rohan e Gondor salverà i nostri popoli da un destino avverso ancora una volta.
 str_npc5_home_description_2|Che sia un memoriale per ricordare che anche i più grandi, anche uno degli Istari, può essere corrotto e cadere. Coloro che bramano il potere possono essere sconfitti dal potere stesso, quindi cerchiamo di non indugiare più a lungo.
-str_npc6_home_description_2|Sento gli eserciti del male dietro le loro mura, pronti a marciare.. Verso la fiera Lothlórien ? Verso Dale ? Verso Boscoverde, la mia terra natìa ? Non posso saperlo, ma ti prego di fare tutto quello che puoi per contrastarli.
+str_npc6_home_description_2|Sento gli eserciti del male dietro le loro mura, pronti a marciare.. Verso dove ? La fiera Lothlórien ? Verso Dale ? Verso Boscoverde, la mia terra natìa ? Non posso saperlo, ma ti prego di fare tutto quello che puoi per contrastarli.
 str_npc7_home_description_2|Se le sorti della guerra ci provvedessero una grande armata, dovremmo tentare di accedere alle Miniere e recuperarne i grandi tesori.
 str_npc8_home_description_2|Posso sentire il profumo di molti dolci fiori e vedere le api che ne raccolgono il nettare. Se non ti spiace, raccoglierò alcune erbe per noi tutti, ci vorrà solo un momento.
 str_npc9_home_description_2|Non ha senso arrancare qui attorno senza avere con noi una grossa orda di Uruk-hai. Sempre che non ti vada di fare delle smorfie alle guardie sulle mura, ecco.
-str_npc10_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
+str_npc10_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il giorno, har-har!
 str_npc11_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
 str_npc12_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
-str_npc13_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
-str_npc14_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
-str_npc15_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
-str_npc16_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il girono, har-har!
+str_npc13_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il giorno, har-har!
+str_npc14_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il giorno, har-har!
+str_npc15_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il giorno, har-har!
+str_npc16_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il giorno, har-har!
 str_npc17_home_description_2|Potrei fabbricare un bel tubo. Lo vuoi un tubo ?
-str_npc1_home_recap|Sono nato e cresciuto in Ithilien , in una lunga fila di guerrieri risalente alla Dúnedain meridionale.
+str_npc1_home_recap|Sono nato e cresciuto in Ithilien , da una lunga stirpe di guerrieri risalente al Dúnedain meridionale.
 str_npc2_home_recap|Sono Nato a Minas Tirith, in una famiglia umile, ma orgogliosa.
 str_npc3_home_recap|Io sono uno degli Eorlingas, o Rohirrim, come gli stranieri ci chiamano.
 str_npc4_home_recap|Non trovo divertente il fatto che ti scordi le cose tanto facilmente.
 str_npc5_home_recap|Asseconderò la tua curiosità, ma non perdiamo troppo tempo.
-str_npc6_home_recap|Sono nato e cresciuto a Bosco Atro, sono un Elfo Silvano. Le nostre abilità nel lavorare il legno sono note a tutti.
+str_npc6_home_recap|Sono nata e cresciuta a Bosco Atro, sono un' Elfa Silvana. Le nostre abilità nel lavorare il legno sono note a tutti.
 str_npc7_home_recap|Sono figlio di Dwalin, della gente di Durin
 str_npc8_home_recap|Sono un guaritore ed erborista da Dale
 str_npc9_home_recap|Gulm ti dirà tutto ciò che devi sapere. Ma parlare non ucciderà i nemici.
@@ -1250,11 +1250,11 @@ str_gondor_rumor_5|Le risorse dell'Ombra per la guerra sembrano illimitate, ma p
 str_gondor_rumor_6|Abbiamo sentito parlare degli elfi del nord, ma oggigiorno nessuno li vede più.
 str_gondor_rumor_7|Vorrei vedere l'Albero Bianco fiorire ancora nel cortile dei Re, la Corona d'Argento ritornare e  Minas Tirith in pace: Minas Anor ai fasti antichi, piena di luce, alta e fiera, bellissima, come una regina circondata da altre regine.
 str_gondor_rumor_8|Perché Umbar continua ad invaderci ? I loro Corsari avrebbero tratto maggiore profitto commerciando con noi. Come si può paragonare questo bottino con la ricchezza che hanno accumulato in passato vendendo antichi artifatti Numenoriani ai nobili di Gondor ?
-str_gondor_rumor_9|La guerra deve essere, mentre difendiamo le nostre vite contro un distruttore che vuole divorare tutto; ma io non amo la lucente spada per la sua lama affilata, né la freccia per la sua rapidità, o il guerriero per la sua gloria. Io amo solo ciò che essi difendono.
+str_gondor_rumor_9|Ci deve essere anche la guerra, mentre difendiamo le nostre vite contro un distruttore che vuole divorare tutto; ma io non amo la lucente spada per la sua lama affilata, né la freccia per la sua rapidità, o il guerriero per la sua gloria. Io amo solo ciò che essi difendono.
 str_gondor_rumor_10|Gil-galad era un Re degli Elfi. I suonatori d'arpa di lui cantano amaramente: l'ultimo il cui regno era giusto e libero, fra le montagne e il mare.
 str_gondor_rumor_11|Dol Guldur? Mai sentito nominare.
 str_gondor_rumor_12|Moria ? Ci sono le miniere dei nani laggiù, non è così ?
-str_gondor_rumor_13|Non riferire a nessuno che ho detto questo, ma penso che il Principe Imrahil potrebbe un giorno diventare Re. Lord Denethor è un nobile uomo, ma Gondor ha perso molto del suo smalto durante la sua reggenza, e non solo da quando il suo figlio maggiore è scomparso.
+str_gondor_rumor_13|Non riferire a nessuno che ho detto questo, ma penso che il Principe Imrahil potrebbe un giorno diventare Re. Sire Denethor è un nobile uomo, ma Gondor ha perso molto del suo smalto durante la sua reggenza, e non solo da quando il suo figlio maggiore è scomparso.
 str_gondor_rumor_14|La gente dice che i Nove sono usciti da Minas Morgul ancora una volta. Vorrei che avessimo più comandanti coraggiosi come Boromir per comandare i nostri uomini in battaglia contro questi antichi nemici.
 str_gondor_rumor_15|Gli Uomini del Sud ci stanno spingendo fuori da Harondor. Hanno compiuto pesanti razzie per un periodo di tempo. Vorrei poter passeggiare di nuovo in sicurezza per i campi di Lebennin. Ma ci è stato detto "No.", perché i nostri soldati devono proteggere il cuore del regno.
 str_gondor_rumor_16|L'amico di mio cugino è un arciere al servizio di Hirluin il Giusto. Hanno di gran lunga le più belle uniformi, lascia che te lo dica.
@@ -1585,7 +1585,7 @@ str_rhun_rank_3|Guerriero Toro di Rhun
 str_rhun_rank_4|Scudiero di Rhun
 str_rhun_rank_5|Spada di Rhun
 str_rhun_rank_6|Mastro dei cavalli di Rhun
-str_rhun_rank_7|Signore della guerra di Rhun
+str_rhun_rank_7|Signore della Guerra di Rhun
 str_rhun_rank_8|Capoclan della Steppa
 str_rhun_rank_9|Braccio destro di Khamûl
 str_khand_rank_0|Uomo delle pianure di Khand
@@ -1595,7 +1595,7 @@ str_khand_rank_3|Guerriero Aquila di Khand
 str_khand_rank_4|Scudiero di Khand
 str_khand_rank_5|Spada di Khand
 str_khand_rank_6|Mastro dei cavalli di Khand
-str_khand_rank_7|Signore della guerra dei Variag
+str_khand_rank_7|Signore della Guerra dei Variag
 str_khand_rank_8|Capoclan Variag
 str_khand_rank_9|Conquistatore leggendario
 str_umbar_rank_0|Marinaio d'acqua dolce
@@ -1640,7 +1640,7 @@ str_gundabad_rank_8|Grande Goblin
 str_gundabad_rank_9|Saccheggiatore del Nord
 str_dunland_rank_0|Allievo
 str_dunland_rank_1|Cane
-str_dunland_rank_2|Mastino della guerra
+str_dunland_rank_2|Mastino della Guerra
 str_dunland_rank_3|Lupo
 str_dunland_rank_4|Lupo Vigoroso
 str_dunland_rank_5|Metalupo
@@ -1662,7 +1662,7 @@ str_tld_introduction|Introduzione a TLD - Dovresti andare a Edoras.
 str_tld_erebor_dungeon|L'odore di morte circonda questo posto. Farei meglio ad essere cauto.
 str_tld_spear_hit|Ouch !
 str_fullname_region_unknown|una regione senza nome, da qualche parte nella Terra di Mezzo
-str_fullname_region_pelennor|I campi Pelennor,le pianure intorno Minas Tirith,capitale del Regno di Gondor.
+str_fullname_region_pelennor|I campi Pelennor, le pianure intorno Minas Tirith, capitale del Regno di Gondor.
 str_fullname_region_subfac_pelargir|il Feudo di Lebennin, parte del Regno di Gondor
 str_fullname_region_subfac_dol_amroth|Belfalas, la regione costiera nel Sud di Gondor
 str_fullname_region_subfac_ethring|Ringló Vale, una valle del Regno di Gondor
@@ -1673,33 +1673,33 @@ str_fullname_region_n_ithilien|l'Ithilien del Nord, la provincia più orientale 
 str_fullname_region_c_ithilien|Emyn Arnen, una catena di colline nelle regioni centrali dell'Ithilien, attraverso il Grande Fiume da Minas Tirith
 str_fullname_region_s_ithilien|l'Ithilien del Sud, la provincia più orientale del Regno di Gondor
 str_fullname_region_druadan_forest|la Foresta di Drúadan, la foresta di Gondor dei Drúedain
-str_fullname_region_firien_wood|Le foreste sussurranti di Firien,una foresta di querce vicino Gondor.
-str_fullname_region_anorien|Anórien,la Terra del Sole,una vallata tra le Montagne Bianche e il fiume Anduin.
+str_fullname_region_firien_wood|Le foreste sussurranti di Firien, una foresta di querce vicino Gondor.
+str_fullname_region_anorien|Anórien, la Terra del Sole, una vallata tra le Montagne Bianche e il fiume Anduin.
 str_fullname_region_rohan0|Falda, il cuore di Rohan
-str_fullname_region_rohan1|EstEmnet, una parte di Rohan, nel Riddermark
-str_fullname_region_rohan2|Westemnet,una parte di Rohan,Riddermark
+str_fullname_region_rohan1|Emnet Est, una parte di Rohan, nel Riddermark
+str_fullname_region_rohan2|Emnet Ovest, una parte di Rohan, nel Riddermark
 str_fullname_region_rohan3|Estfalda, una parte di Rohan, nel Riddermark
-str_fullname_region_rohan4|Westfold,una parte di Rohan,Riddermark
+str_fullname_region_rohan4|Ovestfalda, una parte di Rohan, nel Riddermark
 str_fullname_region_rohan5|La gola del Timone, una vallata delle Montagne Bianche, a Rohan
-str_fullname_region_the_wold|Wold,l'area più a Nord-est della Riddermark di Rohan
-str_fullname_region_gap_of_rohan|la Breccia di Rohan, la più a est dei confini di Rohan, un'area contesa da i Rohirrim e i Dunlendings.
-str_fullname_region_entwash|le foci di Entwash,dove il fiume di Rohan, Entwash incontra Anduin
-str_fullname_region_wetwang|Nindalf,le paludi di Wetwang
-str_fullname_region_dead_marshes|le Paludi Morte,l'antico luogo della leggendaria Battaglia di Dagor Dagorlad,adesso maledette
+str_fullname_region_the_wold|Wold, l'area più a Nord-est del Riddermark di Rohan
+str_fullname_region_gap_of_rohan|la Breccia di Rohan, la più a est dei confini di Rohan, un'area contesa dai Rohirrim e i Dunlendings.
+str_fullname_region_entwash|le foci di Entwash, dove il fiume Entwash di Rohan incontra l'Anduin
+str_fullname_region_wetwang|Nindalf, le paludi di Wetwang
+str_fullname_region_dead_marshes|le Paludi Morte, l'antico luogo della leggendaria Battaglia di Dagor Dagorlad, adesso maledette
 str_fullname_region_isengard|Le pianure circostanti Isengard
-str_fullname_region_fangorn|la foresta di Fangorn,dove si dice che gli alberi parlino.
-str_fullname_region_brown_lands|le Terre Marroni,che coprono il territorio tra Emyn Muil e Bosco Atro
-str_fullname_region_dagorlad|Dagorlad, il grande territorio privo di alberi,luogo della Battaglia della Pianura,prima delle porte di Mordor
-str_fullname_region_n_undeep|l'Altopiano del Nord,il più grande dei due meandri di Anduin
-str_fullname_region_s_undeep|l'Altopiano del Sud,la più piccola delle due curve principali di Anduin
-str_fullname_region_emyn_muil|Emynn Muil,le montagne rocciose oltre l'affluente dell'Entwash
+str_fullname_region_fangorn|la foresta di Fangorn, dove si dice che gli alberi parlino.
+str_fullname_region_brown_lands|le Terre Marroni, che coprono il territorio tra Emyn Muil e Bosco Atro
+str_fullname_region_dagorlad|Dagorlad, il grande territorio privo di alberi, luogo della Battaglia della Pianura, prima delle porte di Mordor
+str_fullname_region_n_undeep|l'Altopiano del Nord, la più grande delle due anse dell'Anduin
+str_fullname_region_s_undeep|l'Altopiano del Sud, la più piccola delle due curve principali dell'Anduin
+str_fullname_region_emyn_muil|Emynn Muil, le montagne rocciose oltre l'affluente dell'Entwash
 str_fullname_region_misty_mountains|le colline delle Montagne Nebbiose
-str_fullname_region_lorien|Lothlórien,la foresta degli elfi di Sindar,dove cresce il Mallorns d'oro 
+str_fullname_region_lorien|Lothlórien, la foresta degli elfi di Sindar, dove cresce il Mallorns d'oro 
 str_fullname_region_anduin_banks|la valle di Anduin, tra le Montagne Nebbiose e Bosco Atro
 str_fullname_region_n_mirkwood|le fitte foreste della parte più a Nord di Bosco Atro, la casa degli Elfi delle Foreste
 str_fullname_region_s_mirkwood|le fitte foreste della parte più a Sud di Bosco Atro, che si dice siano infestate da strane creature
-str_fullname_region_above_mirkwook|Northen Rhovanion,l'area tra Mirkwood e le Montagne Grigie a Nord
-str_fullname_region_grey_mountains|le pendici delle Montagne Grigie,dove abitano i Nani
+str_fullname_region_above_mirkwook|Northen Rhovanion, l'area tra Mirkwood e le Montagne Grigie a Nord
+str_fullname_region_grey_mountains|le pendici delle Montagne Grigie, dove abitano i Nani
 str_fullname_region_mordor|Mordor, l'oscuro regno di Sauron
 str_shortname_region_unknown|una regione senza nome
 str_shortname_region_pelennor|Campi di Pelennor
@@ -1716,8 +1716,8 @@ str_shortname_region_druadan_forest|Foresta di Drúadan
 str_shortname_region_firien_wood|la foresta di Firien
 str_shortname_region_anorien|Anórien
 str_shortname_region_rohan0|Falda
-str_shortname_region_rohan1|EstEmnet
-str_shortname_region_rohan2|Westemnet
+str_shortname_region_rohan1|Emnet Est
+str_shortname_region_rohan2|Emnet Ovest
 str_shortname_region_rohan3|Estfalda
 str_shortname_region_rohan4|Ovestfalda
 str_shortname_region_rohan5|Il Fosso di Helm
@@ -1740,7 +1740,7 @@ str_shortname_region_mordor|La terra di Mordor
 str_trait_title_elf_friend|Amico Elfo
 str_trait_desc_elf_friend|Si diventato altamente stimato dagli Elfi e ora ti vedono come un fidato alleato. Il costo di reclutamento degli Elfi e ridotto e ora puoi anche provare a dare ordini alle armate elfiche.
 str_trait_title_gondor_friend|Benedizione dello Steward
-str_trait_desc_gondor_friend|Sei diventato altamente stimato dall'assistente Denethor e come risultato il tuo status è cresciuto tra gli uomini di Gondor.Il costo di reclutamento dei Gondoriani è stato ridotto e puoi provare a dare ordini alle armate Gondoriane.
+str_trait_desc_gondor_friend|Sei diventato altamente stimato dal Sire Denethor e come risultato il tuo status è cresciuto tra gli uomini di Gondor. Il costo di reclutamento degli uomini di Gondor è stato ridotto e puoi provare a dare ordini alle sue armate.
 str_trait_title_rohan_friend|Uomo del Re
 str_trait_desc_rohan_friend|Sei diventato altamente stimato dal Re Theoden di Rohan e il tuo status e' cresciuto tra gli uomini di Rohan come risultato. Il costo per reclutare gli uomini di Rohirrim e' ora calato e puoi anche provare a dare ordini alle armate del Riddermark.
 str_trait_title_brigand_friend|Campione Barbaro
@@ -1789,7 +1789,7 @@ str_gondor_gift0|Vino e Frutta Fresca
 str_gondor_gift1|Tessuto riccamente tinto
 str_gondor_gift2|Antichi tomi e alberi di famiglia
 str_gondor_gift3|Spezie ed incenso
-str_gondor_gift4|Corna da guerra di Uro
+str_gondor_gift4|Corna da Guerra di Uro
 str_dwarf_gift0|Birra forte e sale di scoglio
 str_dwarf_gift1|Pale ed Ascie induriti
 str_dwarf_gift2|Arpe e Flauti
@@ -1861,16 +1861,16 @@ str_guldur_gift2|Gabbie di schiavi con ruote
 str_guldur_gift3|Uova di Ragno Gigante
 str_guldur_gift4|Tomi di Stregoneria Oscura
 str_gundabad_gift0|Piercings di osso appuntito
-str_gundabad_gift1|Pitture di guerra protettive
+str_gundabad_gift1|Pitture di Guerra protettive
 str_gundabad_gift2|Lardo di nano bollito
 str_gundabad_gift3|Idoli di cadavere mummificato
-str_gundabad_gift4|Warg neri
+str_gundabad_gift4|Mannari Neri
 str_dunland_gift0|Formaggio di capra puzzolente
 str_dunland_gift1|Coltelli sacrificali di pietra focaia
 str_dunland_gift2|Bracciali di bronzo
 str_dunland_gift3|Capre
 str_dunland_gift4|Teschi e artigli di lupo
-str_beorn_gift0|torte con miele e alcool
+str_beorn_gift0|Torte con miele e idromele
 str_beorn_gift1|Cera d'api e abiti di canapa.
 str_beorn_gift2|Alveari di Api
 str_beorn_gift3|Collane di Ambra

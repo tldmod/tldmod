@@ -60,22 +60,22 @@ trp_woodmen_archer|Arciere dei Boschi
 trp_woodmen_archer_pl|Arcieri dei Boschi
 trp_fell_huntsmen_of_mirkwood|Cacciatore Esperto di Bosco Atro
 trp_fell_huntsmen_of_mirkwood_pl|Cacciatori Esperti di Bosco Atro
-trp_beorning_vale_man|Beorniano
-trp_beorning_vale_man_pl|Beorniani
-trp_beorning_warrior|Guerriero Beorniano
-trp_beorning_warrior_pl|Guerrieri Beorniani
-trp_beorning_tolltacker|Gabelliere Beorniano
-trp_beorning_tolltacker_pl|Gabellieri Beorniani
-trp_beorning_sentinel|Sentinella Beorniana
-trp_beorning_sentinel_pl|Sentinelle Beorniane
-trp_beorning_warden_of_the_ford|Guardiani Beorniani del Guado
-trp_beorning_warden_of_the_ford_pl|Guardiani Beorniani del Guado
-trp_beorning_carrock_lookout|Osservatore Beorniano della Carroccia
-trp_beorning_carrock_lookout_pl|Vedette Beorniane della Carroccia 
-trp_beorning_carrock_fighter|Combattente Beorniano della Carroccia
-trp_beorning_carrock_fighter_pl|Combattenti Beorniani della Carroccia
-trp_beorning_carrock_berserker|Berserker Beorniano della Carroccia
-trp_beorning_carrock_berserker_pl|Berserker Beorniani della Carroccia
+trp_beorning_vale_man|di Beorn
+trp_beorning_vale_man_pl|di Beorn
+trp_beorning_warrior|Guerriero di Beorn
+trp_beorning_warrior_pl|Guerrieri di Beorn
+trp_beorning_tolltacker|Gabelliere di Beorn
+trp_beorning_tolltacker_pl|Gabellieri di Beorn
+trp_beorning_sentinel|Sentinella di Beorn
+trp_beorning_sentinel_pl|Sentinelle di Beorn
+trp_beorning_warden_of_the_ford|Guardiani del Guado di Beorn
+trp_beorning_warden_of_the_ford_pl|Guardiani del Guado di Beorn
+trp_beorning_carrock_lookout|Vedetta della Carroccia di Beorn
+trp_beorning_carrock_lookout_pl|Vedette della Carroccia di Beorn
+trp_beorning_carrock_fighter|Combattente della Carroccia di Beorn
+trp_beorning_carrock_fighter_pl|Combattenti della Carroccia di Beorn
+trp_beorning_carrock_berserker|Berserker della Carroccia di Beorn
+trp_beorning_carrock_berserker_pl|Berserker della Carroccia di Beorn
 trp_dale_militia|Miliziano di Dale
 trp_dale_militia_pl|Miliziani di Dale
 trp_dale_man_at_arms|Uomo d'Arme di Dale
@@ -1060,7 +1060,7 @@ trp_smith_edhellond|Ryis, Piegatore di Ferro
 trp_smith_edhellond_pl|Fucina
 trp_smith_lossarnach|Berin, l'armaiolo
 trp_smith_lossarnach_pl|Fucina
-trp_smith_tarnost|Harandil, Martello d'acciacio
+trp_smith_tarnost|Harandil, Martello d'acciaio
 trp_smith_tarnost_pl|Fucina
 trp_smith_erech|Lorne, il Nero
 trp_smith_erech_pl|Fucina
@@ -1241,7 +1241,7 @@ trp_barman_dale_pl|Il Castello
 trp_barman_esgaroth|Taverniere
 trp_barman_esgaroth_pl|La Sala
 trp_barman_erebor|Taverniere
-trp_barman_erebor_pl|La Camera del Re
+trp_barman_erebor_pl|La Sala del Re
 trp_barman_dolguldur|Taverniere
 trp_barman_dolguldur_pl|Il Castello
 trp_merchant_mtirith|Cibo e Cavalli
@@ -1307,13 +1307,13 @@ trp_merchant_urcamp_pl|Fossa dei Mannari e Provvist
 trp_merchant_cgaladhon|Cibo e Cavalli
 trp_merchant_cgaladhon_pl|Provviste Elfiche
 trp_merchant_cdolen|Cibo e Cavalli
-trp_merchant_cdolen_pl|Provviste Elfich
+trp_merchant_cdolen_pl|Provviste Elfiche
 trp_merchant_camroth|Cibo e Cavalli
-trp_merchant_camroth_pl|Provviste Elfich
+trp_merchant_camroth_pl|Provviste Elfiche
 trp_merchant_thranduils_halls|Cibo e Cavalli
-trp_merchant_thranduils_halls_pl|Provviste Elfich
+trp_merchant_thranduils_halls_pl|Provviste Elfiche
 trp_merchant_woodelf_camp|Cibo e Cavalli
-trp_merchant_woodelf_camp_pl|Provviste Elfich
+trp_merchant_woodelf_camp_pl|Provviste Elfiche
 trp_merchant_woodmen|Cibo e Cavalli
 trp_merchant_woodmen_pl|La stalla e il Magazzino
 trp_merchant_beorn|Cibo e Cavalli
@@ -1380,11 +1380,11 @@ trp_elder_aldburg|Conte di Aldburg
 trp_elder_aldburg_pl|La città
 trp_elder_hornburg|Conte di Hornburg
 trp_elder_hornburg_pl|La Fortezza
-trp_elder_eastemnet|Conte di East Emnet
+trp_elder_eastemnet|Conte di Emnet Est
 trp_elder_eastemnet_pl|La città
 trp_elder_westfold|Conte di Westfold
 trp_elder_westfold_pl|La città
-trp_elder_westemnet|Conte di West Emnet
+trp_elder_westemnet|Conte di Emnet Ovest
 trp_elder_westemnet_pl|La città
 trp_elder_eastfold|Conte di Estfalda
 trp_elder_eastfold_pl|La città
@@ -1558,5 +1558,5 @@ trp_start_quest_woodelf|Tiratore scelto di Galadhrim
 trp_start_quest_woodelf_pl|Tiratori scelti di Galadhrim
 trp_start_quest_mordor_scout|Guida di Mordor
 trp_start_quest_mordor_scout_pl|Guide di Mordor
-trp_start_quest_beorning|Berserker Beorniano della Carroccia
-trp_start_quest_beorning_pl|Berserker Beorniani della Carroccia
+trp_start_quest_beorning|Berserker della Carroccia di Beorn
+trp_start_quest_beorning_pl|Berserker della Carroccia di Beorn

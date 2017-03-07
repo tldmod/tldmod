@@ -26,13 +26,13 @@ itm_steppe_horse|Cavallo delle steppe
 itm_courser|Corsiero
 itm_hunter|Cacciatore
 itm_pony|Pony
-itm_arnor_warhorse|Cavallo da guerra Arnoriano
-itm_dunedain_warhorse|Cavallo da guerra Dúnedain
+itm_arnor_warhorse|Cavallo da Guerra Arnoriano
+itm_dunedain_warhorse|Cavallo da Guerra Dúnedain
 itm_rohirrim_courser|Corsiero Rohirrim
 itm_rohirrim_hunter|Cacciatore Rohirrim
 itm_rohirrim_courser2|Corsiero Rohirrim
-itm_rohan_warhorse|Cavallo da guerra Rohirrim
-itm_thengel_warhorse|Cavallo da guerra della guardia di Thengel
+itm_rohan_warhorse|Cavallo da Guerra Rohirrim
+itm_thengel_warhorse|Cavallo da Guerra della Guardia di Thengel
 itm_rhun_horse_a|Cavallo di Rhûn
 itm_rhun_horse_b|Cavallo di Rhûn
 itm_rhun_horse_d|Cavallo di Rhûn
@@ -41,22 +41,22 @@ itm_rhun_horse_f|Cavallo pesante di Rhûn
 itm_rhun_horse_g|Cavallo pesante di Rhûn
 itm_rhun_horse_h|Cavallo pesante di Rhûn
 itm_dale_horse|Cavallo di Dale
-itm_dale_warhorse|Cavallo da guerra di Dale
-itm_riv_warhorse|Cavallo da guerra di Gran Burrone
+itm_dale_warhorse|Cavallo da Guerra di Dale
+itm_riv_warhorse|Cavallo da Guerra di Gran Burrone
 itm_riv_warhorse2|Destriero di Imladris
-itm_mordor_warhorse|Cavallo da guerra di Mordor
-itm_mordor_warhorse2|Cavallo malvagio da guerra di Mordor
+itm_mordor_warhorse|Cavallo da Guerra di Mordor
+itm_mordor_warhorse2|Cavallo Malvagio da Guerra di Mordor
 itm_gondor_courser|Corsiero di Gondor
 itm_gondor_hunter|Cacciatore di Gondor
-itm_dol_amroth_warhorse|Cavallo da guerra di Dol Amroth
-itm_dol_amroth_warhorse2|Cavallo pesante da guerra di Dol Amroth
-itm_gondor_warhorse|Cavallo da guerra di Gondor
+itm_dol_amroth_warhorse|Cavallo da Guerra di Dol Amroth
+itm_dol_amroth_warhorse2|Cavallo pesante da Guerra di Dol Amroth
+itm_gondor_warhorse|Cavallo da Guerra di Gondor
 itm_gondor_lam_horse|Cavallo corazzato del Lamedon
-itm_lorien_warhorse|Cavallo da guerra di Lothlórien
+itm_lorien_warhorse|Cavallo da Guerra di Lothlórien
 itm_harad_horse|Cavallo dell'Harad
-itm_harad_warhorse|Cavallo da guerra dell'Harad
+itm_harad_warhorse|Cavallo da Guerra dell'Harad
 itm_variag_pony|Pony Variag
-itm_variag_kataphrakt|Cavallo da guerra Easterling
+itm_variag_kataphrakt|Cavallo da Guerra Easterling
 itm_warg_1b|Mannaro
 itm_warg_1c|Mannaro
 itm_warg_1d|Mannaro
@@ -314,7 +314,7 @@ itm_lorien_helm_a|Elmo da Arciere di Lorien
 itm_lorien_helm_b|Elmo da Arciere di Lorien
 itm_lorien_helm_c|Elmo da Fanteria di Lorien
 itm_orc_chain_greaves|Gambali Orcheschi
-itm_orc_coif|Cuffia Orchesca
+itm_orc_coif|Elmo Orchesco
 itm_orc_greaves|Stivali di Maglia di Ferro Orcheschi
 itm_orc_ragwrap|Stracci Orcheschi
 itm_orc_furboots|Stivali di Pelliccia Orcheschi
@@ -760,16 +760,16 @@ itm_umbar_pike|Picca di Humbar
 itm_woodman_tunic|Tunica da Uomo dei Boschi
 itm_woodman_scout|Cappuccio da Uomo dei Boschi Esploratore
 itm_woodman_padded|Armatura Imbottita degli Uomini dei Boschi
-itm_beorn_tunic|Tunica dei Beorniani
-itm_beorn_padded|Armatura Imbottita dei Beorniani
-itm_beorn_heavy|Armatura Pesante dei Beorniani
-itm_beorn_berserk|Equipaggiamento da Berserker Beorniano
-itm_beorn_chief|Tunica del Capoclan Beorniano
-itm_beorn_helmet|Cuffia da Uomo del Nord
+itm_beorn_tunic|Tunica di Beorn
+itm_beorn_padded|Armatura Imbottita di Beorn
+itm_beorn_heavy|Armatura Pesante di Beorn
+itm_beorn_berserk|Equipaggiamento da Berserker di Beorn
+itm_beorn_chief|Tunica da Capoclan di Beorn
+itm_beorn_helmet|Elmo da Uomo del Nord
 itm_beorn_shield|Scudo degli Uomini del Nord 
-itm_beorn_axe|Ascia da Beorniano
+itm_beorn_axe|Ascia di Beorn
 itm_beorn_staff|Bastone da Uomo dei Boschi
-itm_beorn_battle_axe|Ascia da guerra dei Beorniani 
+itm_beorn_battle_axe|Ascia da Guerra di Beorn
 itm_dwarf_shield_a|Scudo Nanico
 itm_dwarf_shield_b|Scudo Nanico
 itm_dwarf_shield_c|Scudo Nanico
@@ -795,8 +795,8 @@ itm_dwarf_throwing_axe|Accette da Lancio Naniche
 itm_dwarf_spear|Lancia Nanica
 itm_dwarf_spear_b|Picca Nanica
 itm_dwarf_spear_c|Picca Nanica
-itm_dwarf_helm_a|Cuffia Nanica
-itm_dwarf_helm_b|Cuffia d'Arme con Maschera Nanica
+itm_dwarf_helm_a|Elmo Nanico
+itm_dwarf_helm_b|Elmo d'Arme con Maschera Nanica
 itm_dwarf_helm_c|Elmo con Maschera Nanico
 itm_dwarf_helm_h|Elmo Nanico
 itm_dwarf_helm_i|Elmo Frigio Nanico
