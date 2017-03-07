@@ -4,6 +4,8 @@ from header_triggers import *
 from header_scenes import *
 from module_constants import *
 
+from module_info import wb_compile_switch as is_a_wb_scene
+
 ####################################################################################################################
 #  Each scene record contains the following fields:
 #  1) Scene id {string}: used for referencing scenes in other files. The prefix scn_ is automatically added before each scene-id.
@@ -106,8 +108,15 @@ scenes = [
   ("woodsmen_village_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
   ("moria_center"           ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],["player_chest"]),
   ("troll_cave_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+ 
+  ] + (is_a_wb_scene==1 and [  
+  ("dale_center"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d2348000006810000219700002120",[],[],"JB_outer_terrain_tirith_1"),
+  ("esgaroth_center"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000730000500000c8f2100002ca5000022aa000031a8",[],[],"JB_outer_terrain_seaside_1"),
+  ] or [
   ("dale_center"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200005000007a9ea000006810000219700002120",[],[],"outer_terrain_plain"),
   ("esgaroth_center"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000730000500000c8f2100002ca5000022aa000031a8",[],[],"outer_terrain_seaside_1"),
+  ]) + [  
+  
   ("erebor_center"          ,sf_indoors ,"hallfini", "bo_hallfini_inner_tld",(-100,-200),(100,200),-100,"0",[],[]),
   ("dunland_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
   ("harad_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
@@ -229,7 +238,13 @@ scenes = [
 
 # Siege scenes  
 ("cair_andros_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
+
+] + (is_a_wb_scene==1 and [  
+("dale_siege"          ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000330000500000d2348000006810000219700002120",[],[],"JB_outer_terrain_tirith_1"),
+] or [
 ("dale_siege"          ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000003200005000007a9ea000006810000219700002120",[],[],"outer_terrain_plain"),
+]) + [ 
+
 ("west_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
 ("minas_tirith_siege"  ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
 ("pelargir_siege"      ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000006300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_seaside_1"),

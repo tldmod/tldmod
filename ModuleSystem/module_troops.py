@@ -503,7 +503,7 @@ troops = [
 ["beorning_warrior","Beorning_Warrior","Beorning_Warriors",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_beorn_padded,itm_rohan_shoes,itm_beorn_axe,itm_beorn_axe,itm_beorn_battle_axe,],
       attr_tier_2,wp_tier_2,knows_common|knows_athletics_2|knows_power_strike_1|knows_ironflesh_1,beorn_face1,beorn_face2],
-["beorning_tolltacker","Beorning_Tolltacker","Beorning_Tolltackers",tfg_armor| tfg_boots,0,0,fac_beorn,
+["beorning_tolltacker","Beorning_Toll-Taker","Beorning_Toll-Takers",tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_beorn_padded,itm_rohan_shoes,itm_leather_gloves,itm_dwarf_sword_a,itm_beorn_shield,],
       attr_tier_3,wp_tier_3,knows_common|knows_athletics_2|knows_power_strike_2|knows_ironflesh_2,beorn_face1,beorn_face2],
 ["beorning_sentinel","Beorning_Sentinel","Beorning_Sentinels",tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
@@ -3236,9 +3236,9 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham - New Gondor Lords
 
-["knight_6_1","Derovin","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
-   [itm_gondor_lance, itm_lamedon_leader_surcoat_cloak,itm_gondor_cav_sword,itm_gondor_heavy_greaves,itm_gondor_lam_horse,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondor_lamedon_leader_helm,],
-      attr_tier_5,wp_tier_5,gondor_skills_1|knows_shield_9,0x0000000340003004250c85a90f6868f500000000001ed96a0000000000000000],
+["knight_6_1","Dervorin","_",tf_hero| tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
+   [itm_lamedon_leader_surcoat_cloak,itm_loss_war_axe,itm_gondor_heavy_greaves,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondorian_light_helm,itm_loss_throwing_axes],
+      attr_tier_5,wp_tier_5,gondor_skills_1|knows_power_throw_5|knows_shield_9,0x0000000340003004250c85a90f6868f500000000001ed96a0000000000000000],
 ["knight_6_2","Golasgil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_lance, itm_pinnath_leader,itm_good_mace,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_pelargir_helmet_light,],
       attr_tier_5,wp_tier_5,gondor_skills_1|knows_trainer_7,0x0000000e800021465e856dd74321355600000000001c58a50000000000000000],

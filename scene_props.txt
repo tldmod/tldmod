@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1545
+ 1563
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4226,13 +4226,13 @@ spr_mist_a 65536 0 mist_a 0 0
 spr_mist_b 65536 0 mist_b 0 0
 
 
-spr_treeline_a 0 0 treeline_a 0 0
+spr_treeline_a 0 0 treeline_a bo_treeline_b 0
 
 
-spr_treeline_b 0 0 treeline_b 0 0
+spr_treeline_b 0 0 treeline_b bo_treeline_b 0
 
 
-spr_treeline_c 0 0 treeline_c 0 0
+spr_treeline_c 0 0 treeline_c bo_treeline_b 0
 
 
 spr_ruins_amon_hen 0 0 ruins_amon_hen bo_ruins_amon_hen 0
@@ -4673,6 +4673,66 @@ spr_smaug_skeleton 0 0 smaug_skeleton 0 0
 
 
 spr_dorwinion_sack 5 0 dorwinion_sack bo_dorwinion_sack 0
+
+
+spr_osgiliath_far_f 0 0 osgiliath_far 0 0
+
+
+spr_hill 0 0 hill bo_hill 0
+
+
+spr_water_river 0 0 JB_water_plane 0 0
+
+
+spr_water_fall 0 0 water_fall 0 0
+
+
+spr_distant_street_a 0 0 distant_street_a bo_village_wall_a 0
+
+
+spr_distant_street_b 0 0 distant_street_b bo_village_wall_b 0
+
+
+spr_distant_mountain_a 0 0 distant_mountain3 bo_cliff_distant_3 0
+
+
+spr_distant_mountain_b 0 0 distant_mountain8 bo_cliff_distant_8 0
+
+
+spr_distant_mountain_c 0 0 distant_mountain4 bo_cliff_distant_4 0
+
+
+spr_distant_soldiers_a 0 0 distant_soldiers_men_a 0 0
+
+
+spr_distant_orcs_a 0 0 distant_soldiers_orcs_a 0 0
+
+
+spr_distant_soldiers_uruks_a 0 0 distant_soldiers_uruks_a 0 0
+
+
+spr_water_splash_a 0 0 0 0 1
+-40  1 1965 1 51 
+
+
+spr_water_splash_b 0 0 0 0 1
+-40  1 1965 1 52 
+
+
+spr_water_splash_c 0 0 0 0 1
+-40  1 1965 1 53 
+
+
+spr_water_fall_2 0 0 0 0 1
+-40  1 1965 1 54 
+
+
+spr_water_foam 0 0 0 0 1
+-40  1 1965 1 55 
+
+
+spr_water_run 0 0 0 0 1
+-40  1 1965 1 56 
 
 
 spr_save_compartibility1 0 0 0 0 0
