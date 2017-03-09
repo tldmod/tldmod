@@ -206,7 +206,7 @@ tld_morale_triggers = [
 					(assign, reg2, ":times_rallied"),
 					(agent_get_troop_id, ":troop", ":agent"),
 					(str_store_troop_name, s5, ":troop"),
-					(display_message, "@{s5} rallies his troops!", color_bad_news),
+					(display_message, "@{s5} rallies the troops!", color_bad_news),
 					(val_add, ":times_rallied", 1),
 					(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
 					(call_script, "script_troop_get_cheer_sound", ":troop"),

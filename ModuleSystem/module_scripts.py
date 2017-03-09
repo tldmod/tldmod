@@ -1821,7 +1821,8 @@ scripts = [
 	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
-	#(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
+	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
+	(assign, "$first_time_town", 0), #kham - rumour tutorial box
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
@@ -11797,6 +11798,15 @@ scripts = [
 				(this_or_next|is_between, 			"$current_town", 		   moria_centers_begin, 		  moria_centers_end),
 				(			  is_between, 			"$current_town", 		gundabad_centers_begin, 	   gundabad_centers_end),	
 				(set_visitors, ":entry_no", ":walker_troop_id",6), #entry points 32-39 
+			(else_try),
+				(this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
+				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
+				(this_or_next|eq, "$current_town", "p_town_woodelf_west_camp"),
+				(this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
+				(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
+				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
+				(			  eq, "$current_town", "p_town_imladris_camp"),
+				(set_visitors, ":entry_no", ":walker_troop_id",1),
 			(else_try),
 				(set_visitors, ":entry_no", ":walker_troop_id",4),
 			(try_end), ## Kham Edit for more town walkers! - END

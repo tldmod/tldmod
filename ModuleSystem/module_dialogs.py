@@ -4936,7 +4936,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 
 [anyone,"lord_mission_destroy_scout_camp_accept",[],
-  "We shall await news of your success","close_window",
+  "We shall await news of your success.","close_window",
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
       #(quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
@@ -5015,7 +5015,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   "Thank you, {playername}. Now go, quickly!","close_window",[
       (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (set_spawn_radius, 20),
+      (set_spawn_radius, 10),
       (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
       (assign, "$qst_defend_village_party", reg0),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
@@ -5066,7 +5066,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
       (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
-      (set_spawn_radius, 25),
+      (set_spawn_radius, 20),
       (spawn_around_party,":quest_object_center",":quest_target_party_template"),
       (assign, "$qst_raid_village_party", reg0),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
@@ -5080,7 +5080,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       ]],
 
 [anyone,"lord_raid_village_reject", [],
-    "The excuses of cowards. Go away, your cowardly stench is insulting", "close_window",
+    "The excuses of cowards. Go away, your cowardly stench is insulting.", "close_window",
 [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
 
 

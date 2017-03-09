@@ -566,8 +566,15 @@ mission_templates = [ # not used in game
 				(try_begin),(gt,":a",0),(play_sound, ":a", sf_looping),(try_end),
 			(else_try),
 				(play_sound, "$bs_night_sound", sf_looping),
-			(try_end),			
+			(try_end),
 			]),
+  (10, 0, ti_once, [], [ # Kham - Set Tutorial Message RE: Rumours
+      (try_begin),
+        (eq, "$first_time_town", 0),
+        (tutorial_message, "@While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.",0,15),
+        (assign, "$first_time_town",1),
+      (try_end),
+      ]),
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
 			(try_begin),# remove beam bridges in osgiliath (for non battle scenes)
@@ -670,6 +677,7 @@ mission_templates = [ # not used in game
 			(party_set_slot, "$current_town", slot_weaponsmith_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
 			(display_message, "@You_have_found_the_local_smithy..."),
+      (add_xp_as_reward, 50),
 		(try_end),      
 		(try_begin),
 			(party_slot_eq, "$current_town", slot_elder_visited, 0),
@@ -680,6 +688,7 @@ mission_templates = [ # not used in game
 			(party_set_slot, "$current_town", slot_elder_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
 			(display_message, "@You_have_found_the_local_authority..."),
+      (add_xp_as_reward, 50),
 		(try_end),      
 		(try_begin),
 			(party_slot_eq, "$current_town", slot_merchant_visited, 0),
@@ -690,6 +699,7 @@ mission_templates = [ # not used in game
 			(party_set_slot, "$current_town", slot_merchant_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
 			(display_message, "@You_have_found_the_local_warehouse..."),
+      (add_xp_as_reward, 50),
 		(try_end)]),
 ]),
 ( "visit_town_castle",0,-1,
@@ -3388,7 +3398,7 @@ mission_templates = [ # not used in game
      (4,mtef_visitor_source|mtef_team_1,af_override_horse,0,1,[]),
      (5,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
      (6,mtef_scene_source|mtef_team_0,af_override_horse,0,1,[]),
-	 ],tld_common_wb_muddy_water+[
+	 ],tld_common_wb_muddy_water+fade+[
 	#(ti_tab_pressed, 0, 0, [(set_trigger_result,1)], []),
 	#(ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1),], []),
 	#(1, 0, ti_once, [], [(tutorial_box,"str_tld_erebor_dungeon"),]),
@@ -3427,13 +3437,25 @@ mission_templates = [ # not used in game
 # Spears Quest - Dwarven Warehouse (Kham)
 
 ( "tld_dwarven_warehouse",0,-1,"Default town visit",
-    [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,() ),],tld_common_wb_muddy_water+[
-	(0, 2, ti_once,  [],
-        [
-          (quest_slot_eq,"qst_find_lost_spears",slot_quest_current_state, 10),
-          (quest_set_slot,"qst_find_lost_spears",slot_quest_current_state, 15),
-          (str_store_troop_name, s3, "trp_dwarf_lord"),
-		  (display_message, "@You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}",color_good_news),
+    [(0,mtef_scene_source|mtef_team_0,af_override_horse,0,1,() ),],tld_common_wb_muddy_water+fade+[
+	   (0, 0, ti_once,  
+      [
+        (quest_slot_eq,"qst_find_lost_spears",slot_quest_current_state, 10),
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_position, pos1, ":player_agent"),
+        (entry_point_get_position,pos2,15),
+        (get_distance_between_positions, ":cur_distance", pos1, pos2),
+        (le, ":cur_distance", 100),
+        #(display_message, "@DEBUG:Trigger occured"),
+      ],
+      [ 
+       (str_store_troop_name, s3, "trp_dwarf_lord"),
+       #(tutorial_message_set_size, 17, 17),
+       #(tutorial_message_set_position, 500, 650),
+       #(tutorial_message_set_center_justify, 0),
+       #(tutorial_message_set_background, 1),
+       (tutorial_message, "@You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}", 0, 8),
+       (quest_set_slot,"qst_find_lost_spears",slot_quest_current_state, 15),
       ]),
 	(ti_tab_pressed, 0, 0, [], [(question_box,"@Leave the Warehouse?")]),
 	(ti_question_answered, 0, 0, [], [(store_trigger_param_1,":answer"), (eq,":answer",0), (finish_mission)])

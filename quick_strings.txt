@@ -1,4 +1,4 @@
-1241
+1243
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -537,6 +537,7 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
+qstr_While_visiting_towns While_visiting_towns,_settlements_and_camps,_you_can_talk_to_people_walking_around._Members_of_different_factions_have_different_things_to_say_-_some_will_let_you_in_on_their_own_thoughts,_others_will_share_rumours._Both_could_merely_give_you_a_better_understanding_of_the_person's_culture_and_faction,_or_they_might_hold_clues_to_finding_secret_locations,_or_tips_and_tricks_for_travelling_through_the_Wilderness_and_fighting_in_the_War_of_the_Ring.
 qstr_Cannot_leave_now. Cannot_leave_now.
 qstr_You_have_found_the_l You_have_found_the_local_smithy...
 qstr_You_have_found_the_lo You_have_found_the_local_authority...
@@ -562,6 +563,7 @@ qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
 qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_his_tro {s5}_rallies_his_troops!
+qstr_{s5}_rallies_the_tro {s5}_rallies_the_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
 qstr_Everyone Everyone
