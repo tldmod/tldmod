@@ -1,0 +1,48 @@
+ui_at_learning_limit|(فى مرحلة تعلم الحدود فى هذا السباق)
+ui_not_enough_skill_points_to_learn|(ليس هناك نقاط خبرة كافية للتعلم)
+ui_not_enough_attributetype_to_learn_this_skill|(لايكفى %s لكى تتعلم هذه المهارة)
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
+ui_retreated_battle|%s قد هرب من المعركة.
+ui_riding_skill_not_adequate_to_mount|(مهارة ركوب الحصان قليلة جداً)
+ui_camp|أفعال
+; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
+; ui_you_dont_have_value|Don't have: %s
+; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
+; ui_merchant_pay_whatever|No, I don't need any of that, keep it.
+ui_horse|امتطاء 
+; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
+; ui_return_your_bought_goods|Return the goods you have taken before giving that!
+; ui_return_price|if returned: +%d Res.P.
+; ui_sell_price|if given: +%d Res.P.
+; ui_reclaim_price|to reclaim: -%d Res.P.
+; ui_buying_price|to claim: -%d Res.P.
+ui_notification_riding_skill_not_enough|مهارة ركوب الحصان ليست عالية كافية لامتطاء هذا الحصان.
+ui_notification_payment_value|يستهلك %s
+ui_notification_payment_receive_value|يُحصل %s
+ui_weekly_cost_value|قيمة الإبقاء: %s
+ui_sell|اعطى
+ui_hire|تجنيد
+ui_notification_cant_hire|(ليس هناك نقاط خبرة كافية للتجنيد)
+ui_joining_cost_weekly_wage|تجنيد:%d نقاط خبرة. -- قيمة الإبقاء: %d نقاط خبرة.
+ui_weekly_wage|قيمة الابقاء: %d نقاط خبرة.
+ui_price|القيمة: %d نقاط خبرة.
+ui_cant_reload_this_weapon_on_horseback|لا يمكنك اعادة تحميل هذا السلاح حينما تكون على صهوة الحصان.
+ui_delivered_number_damage_to_horse|أحدثت %d ضرر على الحصان.
+ui_horse_charged_for_number_damage|الحصان سببَ %d ضرر؟
+ui_horse_received_number_damage|الحصان استقبل %d ضرر.
+ui_horse_fell_dead|الحصان وقع ميتً
+ui_horse_crippled|الفرس أُعرج
+ui_you_got_value|%s اُكتسِبَت.
+ui_has_deserted_the_party|ترك المجموعة
+ui_have_deserted_the_party|لقد ترك المجموعة
+ui_loading_textures|يُحمل الرسومات (كن صبوراً)
+ui_order_hold_fire_toggle|لاتطلق/اطلق كما تشاء (تبديل)
+ui_order_dismount_toggle|ركوب/نزول من على الحصان (تبديل)
+ui_mount_horses_e_|%s, إركب!
+ui_hold_fire_e_|%s, لا تطلق النار!
+ui_fire_at_will_e_|%s, اطلاق النار بحرية!
+ui_recent_messages|أخر الرسائل
+ui_value_denars|%d نقاط الموارد.
+ui_cannot_be_used_on_horseback|لا يمكن استخدامه حينما يكون مُركب
+ui_upgrade_to_value| يطور إلى %s
+ui_notification_cant_upgrade|(لا يمكن التطوير حينما يعطى للجنود)

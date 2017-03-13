@@ -864,4 +864,90 @@ particle_systems = [
     ),
 ###command_cursor_minimod)end###
 
+   
+    ("water_splash_1", psf_billboard_3d|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prtcl_drop",
+     20, 0.85, 0.25, 0.9, 10.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 0.5), (1, 0.0),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 0.3),   (1.0, 0.18),   #scale keys
+     (0.3, 0.2, 0.1),           #emit box size
+     (0, 1.2, 2.3),               #emit velocity
+     0.3,                       #emit dir randomness
+     50,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+   
+    ("water_splash_2", psf_billboard_3d|psf_randomize_size|psf_always_emit|psf_randomize_rotation, "prtcl_splash_b",
+     22, 0.4, 0.7, 0.5, 10.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 1.0), (1, 0.3),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 0.25),   (1.0, 0.7),   #scale keys
+     (0.4, 0.3, 0.1),           #emit box size
+     (0, 1.3, 1.1),               #emit velocity
+     0.1,                       #emit dir randomness
+     50,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+
+    ("water_splash_3", psf_always_emit , "prt_mesh_water_wave_1",
+     5, 2.0, 0, 0.0, 10.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.03, 0.2), (1, 0.0),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 4),   (1.0, 5.2),   #scale keys
+     (0.0, 0.0, 0.0),           #emit box size
+     (0, 0, 0),                 #emit velocity
+     0.0,                       #emit dir randomness
+     0,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+
+    ("water_fall_2", psf_billboard_3d|psf_randomize_size|psf_randomize_rotation|psf_always_emit , "prtcl_splash_b",
+     120, 1.3, 1.0, 1.0, 1.0, 0.1,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 1.0), (1, 0.6),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 0.50),   (1.0, 1.8),   #scale keys
+     (2.0, 0.1, 0.35),           #emit box size
+     (0, 1.4, 0.1),               #emit velocity
+     0.1,                       #emit dir randomness
+     50,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+    
+    ("water_foam",  psf_turn_to_velocity | psf_always_emit|psf_randomize_size, "prt_foam_a",
+     1, 1.7, 1, 0.0, 0.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.7, 0.7), (1, 0.0),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 4),   (1.0, 4.5),   #scale keys
+     (1.0, 1.0, 0),           #emit box size
+     (0, 1, 0),                 #emit velocity
+     0.0,                       #emit dir randomness
+     0,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+    
+    ("water_run", psf_randomize_size|psf_always_emit , "prtcl_water_run",
+     12, 0.7, -0.1, 0.0, 1.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.3, 0.5), (1, 0.1),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 1.1),   (0.6, 0.6),   #scale keys
+     (0.1, 0.1, 0.1),           #emit box size
+     (0, 1.5, 0),               #emit velocity
+     0.1,                       #emit dir randomness
+     0.5,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+
+
 ]

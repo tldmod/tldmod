@@ -1540,7 +1540,7 @@ trp_bear|Niedźwiedź
 trp_bear_pl|Niedźwiedzi
 trp_wolf|Wilk
 trp_wolf_pl|Wilków
-; trp_dorwinion_sack|Dorwinion Sack
+trp_dorwinion_sack|Dorwiniański 
 trp_ring_hunter_captain|Kapitan łowców pierścienia
 trp_ring_hunter_lt|Kapitan łowców pierścienia
 trp_ring_hunter_one|Łowca pierścienia
@@ -1551,12 +1551,12 @@ trp_ring_hunter_three|Łowca pierścienia
 trp_ring_hunter_three_pl|Łowcy pierścienia
 trp_ring_hunter_four|Łowca pierścienia
 trp_ring_hunter_four_pl|Łowcy pierścienia
-; trp_start_quest_uruk|Mordor Uruk Captain
-; trp_start_quest_orc|Mordor Orc Lieutenant
+trp_start_quest_uruk|Uruk Kapitan z Mordoru
+trp_start_quest_orc|Ork Porucznik z Mordoru
 trp_start_quest_orc_pl|Mordorskich Wielkich Orków
 trp_start_quest_woodelf|Galadhrimski Królewski Mistrz Łuku
 trp_start_quest_woodelf_pl|Galadhrimskich Królewskich Mistrzów Łuku
-; trp_start_quest_mordor_scout|Mordor Guide
-; trp_start_quest_mordor_scout_pl|Mordor Guides
+trp_start_quest_mordor_scout|Przewodnik Mordoru
+trp_start_quest_mordor_scout_pl|Przewodnicy Mordoru
 trp_start_quest_beorning|Beorninski Berserker Carrock
 trp_start_quest_beorning_pl|Beorninskich Berserkerów Carrock

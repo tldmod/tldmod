@@ -423,7 +423,7 @@ dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|你要提供�
 dlga_lord_mission_capture_troll_rejected:lord_pretalk|现在我知道你的价值了，{playername}。废物，蛆虫，现赶紧给我滚！
 dlga_lord_mission_capture_troll_accepted:lord_pretalk|我知道我可以指望你的力量和勇气，{playername}。来人，给{playername}一个轮式的笼子！当你拿到了我的礼物后回来，我希望在{reg1}个黄昏过去之前见到我要的东西。
 dlga_lord_tell_mission:lord_tell_mission_kill_troll|我们的家园面临危险，这在以前是闻所未闻的。人们都消失在{s3}.不仅仅是平民,但仅仅是很小的武装团体现在也不能确保就不会突破我们的墙壁，曾经有过奇怪的谣言，但我知道我们将面对会很艰巨。
-dlga_lord_tell_mission_kill_troll:lord_mission_told|野生巨魔——一种巨大的，存在于山林之间的怪物。它们从不离开它们的洞穴，然而一天人们在{s3}发现了它们的踪迹。我不知道是什么导致了这奇怪现象的发生，但我知道那个东西——巨魔——是应该过来听我号令的。
+dlga_lord_tell_mission_kill_troll:lord_mission_told|野生巨魔， {playername}。一种巨大的，存在于山林之间的怪物。它们从不离开它们的洞穴，然而一天人们在{s3}发现了它们的踪迹。我不知道是什么导致了这奇怪现象的发生，但我知道那个东西——巨魔——是应该过来听我号令的。
 dlga_lord_mission_told:lord_mission_kill_troll_info_a|如何和这些野兽战斗？
 dlga_lord_mission_kill_troll_info_a:lord_mission_told|事实上巨魔是危险的生物。一个巨大的怪物，其变形的肌肉拥有不可思议的力量。他们的皮肤坚硬如铁。据传说，一个野生巨魔曾轻松杀死了人类一个王国最精锐的六名战士。不仅是人类，马匹也害怕巨魔。如果你要计划收服一个，一定要小心。
 dlga_lord_mission_told:lord_mission_kill_troll_info_b|你认为它来自魔多，还是艾辛格？
@@ -436,7 +436,7 @@ dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepte
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|头儿，体谅体谅我吧，不要问我关于那个被诅咒的地方！
 dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|你就像其他蠕虫一样：一个迷信的，没用的废柴。我高估了你。现在，在我发怒之前快滚！
 dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|很好，调查这个问题然后给我报告，我期望在{reg1}之前收到你的好消息。
-dlga_lord_tell_mission:lord_mission_find_lost_spears|这是一个团队的信任和勇敢的指挥官一样,{playername}。我们无力抵御洛汗成群的部队。我们的军队失去了战斗力，有一个传说，很久以前，枪是由矮人军队伟大的国王布拉多辛创造的，每一个上面都镶有黄金，但是他们从来不给钱。
+dlga_lord_tell_mission:lord_mission_find_lost_spears|这是一个团队的信任和勇敢的指挥官一样,{playername}。我们无力抵御洛汗成群的部队。我们的军队失去了战斗力，有一个传说，很久以前，枪是由矮人军队伟大的国王布拉多辛创造的(很久就死了)，每一个上面都镶有黄金，但是他们从来不给钱。
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|主人，你吩咐我做什么呢？
 dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|这些武器将增加我们军队的威力，但首先他们将需要这些矛。你得去在深处的孤独的山问矮人是否允许搜索长矛。当心，你会遇到一些有兽人和巨魔的隧道。你确定要接受这任务？
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|我不害怕兽人和巨魔！我会为你找到这些矛的，我的老大。
@@ -588,12 +588,12 @@ dlga_kill_scout_1:kill_scout_2|看看你把我们带到了哪里， 半兽人…
 dlga_kill_scout_2:kill_scout_3|还有， 我们将会迎来一场战争！ 来， 拿着这些。 当你到达魔多时， 你可以给你的人买些食物和饮料。
 dlga_kill_scout_3:kill_scout_4|(资源点教程 )^^你可以用来向魔多的人购买东西的资源点，不是你在自己阵营赚取的资源点， 而是你在魔多赚取的资源点。 ^^有关详细信息， 请参阅报告。
 dlga_kill_scout_4:kill_scout_5|你想让我们喝半兽人的劣质垃圾？ 我们宁愿喝自己的小便！
-dlga_kill_scout_5:kill_scout_6|哈！ 我知道你这样的外国人做过这样的事情！ 我赢了和葛斯摩的打赌！ 哈哈！^^我肯定会告诉他和其他的魔多人关于你的一切！ 他们一定会保持关注你。^^如果他们喜欢你，你会得到很不错的奖励。 ^^——更多半兽人的“啤酒”！ AHAHA！
+dlga_kill_scout_5:kill_scout_6|哈！ 我知道你这样的外国人做过这样的事情！ 我赢了和葛斯摩的打赌！ 哈哈！^^我肯定会告诉他和其他的魔多人关于你的一切！ 他们一定会保持关注你。^^如果他们喜欢你，你会得到很不错的奖励。 ^^——更多半兽人的“啤酒”！ 哈哈哈！
 dlga_kill_scout_6:kill_scout_7|(等级点数教程) ^^等级点数允许你提升在你的阵营 (和/或者其它的阵营) 中的等级. ^^这将决定你的部队上限，每周的阵营资源收入，并解锁一些其它的阵营特殊奖励。
 dlga_kill_scout_7:kill_scout_8|你让我恶心， 半兽人！ 给我向魔多前进， 在我们拿你的头颅装饰长枪之前！
 dlga_kill_scout_8:close_window|Yea yea… 喝尿的外国佬…！
 dlga_woodelf_help_1:woodelf_help_2.1|我从来都没有见过这么大的半兽人。 肮脏的东西。 不要烦恼。 我是一个在这场即将到来的战争中的士兵，而我们都感觉到过战争的到来。
-dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？噢你当然是！我已经看见了你是一位多么能干的战士。 我今天真的很幸运， 所以我该从这份好运里得到点裨益。 赶快去我的村庄， 警告我的人民那些横行无忌的野兽。 来，带些可以在 {s10} 使用的当地货币。
+dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？噢你当然是！我已经看见了你是一位多么能干的战士。 我今天真的很幸运， 所以我该从这份好运里得到点裨益。 赶快去我的村庄， 警告我的人民那些横行无忌的野兽。
 dlga_woodelf_help_3:close_window|一路平安， Torbal。 我很确定我们能再次见面。
 dlga_start:close_window.9|你来得正好。 加入我们的军队， 让我们给敌人好好上一课。
 dlga_start:close_window.10|和我们打仗是你犯的一个大错。

@@ -810,7 +810,7 @@ qstr_{s27}:_Party_morale_d|{s27} : Moral des troupes en baisse.
 qstr_You_have_failed_to_f|Vous avez échoué à tenir votre serment de vengeance pour la mort héroïque de {s1} !
 qstr_You_have_fulfilled_y|Vous avez rempli votre serment de vengeance pour la mort héroïque de {s1} !
 ; qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
-; qstr_Custom_Camera|Custom Camera
+qstr_Custom_Camera|Camera personnalisé
 qstr_{reg65?my_Lady:my_Lo|{reg65?ma Dame:mon Seigneur}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Ma Dame:Mon Seigneur}
 qstr_{reg65?mistress:mast|{reg65?maîtresse:maître}

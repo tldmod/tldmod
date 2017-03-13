@@ -563,8 +563,8 @@ dlga_caravan_help4:caravan_help5|Ich freue mich darauf. Meine Begleiter haben Eu
 dlga_caravan_help5:close_window|Ich werde es mir merken. Habt Dank, Torbal, und achtet auf Euch.
 dlga_start:caravan_attack1|Wer bist du? Ich brauche deine Hilfe nicht.
 dlga_caravan_attack3:close_window|Schwächling? Ich werde dir zeigen, wer hier schwach ist! (Schwieriger Kampf)
-; dlga_caravan_attack3:close_window.1|Go then, coward. I'll see your corpse in the fields
-; dlga_start:caravan_duel1|Hehe...He's a grumpy one, isn't he? Never mind him! You saved my skin out there! Some of the men's lives too! ^^Here, we grabbed the money in our dead men's pockets. {s10}
+dlga_caravan_attack3:close_window.1|Dann verzieh dich, Feigling. Ich freue mich darauf, da draußen irgendwann auf deine Leiche zu stoßen.
+dlga_start:caravan_duel1|Hehe... Er ist 'n bisschen grimmig, was? Mach dir nichts draus! Du hast mir da draußen die Haut gerettet. Und einigen der Jungs auch! ^^Hier, wir ha'm uns die Kohle aus den Taschen der toten Jungs geschnappt. {s10}
 dlga_start:caravan_duel1.1|Anscheinend bin ich dann wohl befördert. Du bist'n verdammt guter Kämpfer. Hier, nimm was von unserer Beute. Die Jungs haben gegen dich gewettet, aber nicht ich.. hehe... Ich hab' nämlich geseh'n, wie du da draußen gekämpft hast... ^^{s10}
 dlga_caravan_duel1:caravan_duel2|Ich könnte dich auch einfach töten und mir alles nehmen... aber ich muss hier nichts weiter beweisen. Fort mit dir!
 dlga_caravan_duel2:caravan_duel3|Die Männer respektier'n dich auf jed'n Fall! Oder sie ha'm Angst! Wie auch immer, sie werden ihren Herren jedenfalls erzähl'n was du hier gemacht hast. Wenn du die Bonzen weiter beeindruckst, könnten sie dir vielleicht irgendwas Wertvolles geben! Die Pferdenarren aus Rhun ha'm mir mal 'n Pferd gegeben! Ich hab's GEGESSEN! HARRHARRHARR!
@@ -584,7 +584,7 @@ dlga_beorn_help6:beorn_help7|(TUTORIAL: RANGPUNKTE) ^^Rangpunkte erlauben dir, i
 dlga_beorn_help7:close_window|Le fael, Freund! Lebt wohl.
 dlga_beorn_help7:close_window.1|(Hebe die Hand und gehe, ohne ein Wort zu verlieren)
 dlga_start:kill_scout_1|Hast ziemlich gute Augen und Ohren! Wenn du die Truppe nicht gewarnt hättest, dann wären diese Späher entwischt und hätten ihren hässlichen Gebietern von uns erzählt.
-; dlga_kill_scout_1:kill_scout_2|Watch where you are taking us, Orc... We did not travel this far to get stopped before the war begins!
+dlga_kill_scout_1:kill_scout_2|Pass auf, wo du uns hinführst, Ork... Wir sind nicht so weit gereist, um jetzt aufgehalten zu werden, bevor der Krieg beginnt!
 dlga_kill_scout_2:kill_scout_3|Und Krieg werden wir haben! Hier, nimm das hier. Du kannst damit deinen Männern was zum Beißen und zum Saufen kaufen, wenn du nach Mordor kommst.
 dlga_kill_scout_3:kill_scout_4|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du in Mordor nutzen kannst, musst du hier verdienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
 dlga_kill_scout_4:kill_scout_5|Du willst, dass wir Orkgesöff trinken? Eher saufen wir unsere eigene Pisse!

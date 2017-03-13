@@ -1,8 +1,8 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
-mno_start_good|Yeni bir çagın şafagı
+mno_start_good|Yeni bir çağın şafağı
 mno_start_evil|İnsanların alacakaranlığı
-mno_go_bback|Geri dön
-menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve ve karanlık şeyler uzun süredir saklandıkları yerlerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
+mno_go_bback|Geri Dön
+menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtiğin yolda ilerle...
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Gondor ile Harad arasında çatışma
@@ -11,7 +11,7 @@ mno_custom_battle_scenario_3|Elfler ve Kara Numenoryanlar arasındaki çarpışm
 mno_custom_battle_scenario_4|Miğfer Dibi Savunması, Rohan Isengard'a Karşı
 mno_custom_battle_scenario_5|Çatışma, Kuzey, Rhûn'e karşı.
 mno_custom_battle_scenario_6|Kuşatma, Orklar, Cücelere karşı.
-mno_custom_battle_scenario_7|Pusu, Orklar, Mirkwood'a karşı.
+mno_custom_battle_scenario_7|Pusu, Orklar, Kyutorman'a karşı.
 mno_custom_battle_scenario_11|Test Savaşı ( Uyum Dengelemesi!)
 mno_custom_battle_scenario_10|Manzara Test Savaşı
 mno_troll_battle_scenario|Troll savaşını test et
@@ -80,9 +80,9 @@ mno_start_du|DUNEDAIN, İnsanların kadim hanedanlığı
 mno_start_be|BEORNINGLER, Ayı Halkı
 mno_start_da|DALE'in kuzey krallığı
 menu_start_good_elf|Hangi ormanlıkta yaşıyorsun, yaşlı?
-mno_start_ri|RIVENDELL'den, Lord Elrond
+mno_start_ri|Ayrıkvadi'den, Lord Elrond
 mno_start_lo|LOTHLORIEN'den Leydi Galadriel
-mno_start_mi|MIRKWOOD, Silvan elflerin toprakları
+mno_start_mi|KUYUTORMAN, Silvan elflerin toprakları
 menu_start_good_dwarf|Soyunu seç:
 mno_start_er|Bir Erebor sakini
 mno_start_ih|DEMİR TEPELER'in madencisi
@@ -314,7 +314,7 @@ menu_notification_faction_defeated|^^^^^{s1} yenildi!^{s1} artık yok, {s13} kuv
 menu_ruins|^^^^{s1}'e yaklaşıyorsun. Güçlü bir yerleşim yerle bir edilmiş, yine de istihkam izlerini ve parçalanmış paslı silahları görebiliyorsun.
 menu_legendary_place|^^^^Söylentileri takip ettin ve {s1}'i buldun. Şimdi burayı gezebilir ve söylentilerin doğru olup olmadığını kendin görebilirsin.
 mno_explore|Etrafı keşfet
-menu_ring_hunter_lair|^^^^Yüzük avcılarının izini Mirkwood Ormanının içinden takip ettin ve {s1}e vardın. Bir sandıkla gitmeye hazırlandıklarını görüyorsun.
+menu_ring_hunter_lair|^^^^Yüzük avcılarının izini Kuyutormanı'nın içinden takip ettin ve {s1}'e vardın. Bir sandıkla gitmeye hazırlandıklarını görüyorsun.
 mno_attack_lair|Onlara Şimdi saldır
 mno_leave_bandit_lair|Şimdilik ayrıl
 menu_starting_quest_good|^^^^^^Bir grup orkun saldırısı altında bir küçük karavan görüyorsun. Ne yapacaksın?

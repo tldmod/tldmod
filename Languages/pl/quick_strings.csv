@@ -499,7 +499,7 @@ qstr_Your_troops_flee_in_|Twoi ludzie uciekają w popłochu!
 qstr_Many_of_your_troops_|Wielu twoich ludzi ucieka z bitwy!
 qstr_Some_of_your_troops_|Znaczna część twoich ludzi ucieka z bitwy.
 qstr_A_few_of_your_troops|Kilku twoich ludzi ucieka z bitwy.
-; qstr_No_Troops_Left.|No Troops Left.
+qstr_No_Troops_Left.|Brak jednostek
 qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
 qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
 qstr_You_weigh_too_much_f|Masz zbyt dużą masę na kuca!
@@ -546,7 +546,7 @@ qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} i {s3}
 qstr_{s10}_Move_over_ther|{s10}, Ruszać się tu!
 qstr_You_have_a_clear_per|Jasno domyślasz się wielkiego niebezpieczeństwa, wszędzie wokół Ciebie! 
 qstr_New_ent_reached_batt|Na pole bitwy przybył nowy Ent...
-; qstr_You_receive_word_tha|You receive word that Beorning villages were attacked. Beornings lose faction strength.
+qstr_You_receive_word_tha|Otrzymałeś wiadomość, że wioski Beorningów zostały zaatakowane. Frakcja Beorningów traci siły.
 ; qstr_You_receive_word_that|You receive word that the Ring Hunter Leaders were seen travelling towards Mordor, a chest in tow. Mordor gains faction strength.
 qstr_On_your_positions_bi|Na swoje pozycje, dziwki!!
 qstr_Defenders:_infantry_|Obrońcy: piechota ATAK!!
@@ -810,7 +810,7 @@ qstr_{s27}:_Party_morale_d|{s27}: Morale oddziału spadło.
 qstr_You_have_failed_to_f|Nie udało ci się wypełnić obietnicy i pomścić heroicznej śmierci {s1}!
 qstr_You_have_fulfilled_y|Udało ci się wypełnić obietnicę i pomścić heroiczną śmierć {s1}!
 ; qstr_As_an_Orc_or_a_Dwarf|As an Orc or a Dwarf, you can take advantage of the Custom Camera we have implemented in order to improve your experience with TLD's shorter races. See Game Concepts for more information about how to use this.
-; qstr_Custom_Camera|Custom Camera
+qstr_Custom_Camera|Kamera niestandardowa
 qstr_{reg65?my_Lady:my_Lo|{reg65?moja Pani:mój Panie}
 qstr_{reg65?My_Lady:My_Lo|{reg65?Moja Pani:Mój Panie}
 qstr_{reg65?mistress:mast|{reg65?mistrzyni:mistrzu}
@@ -913,9 +913,9 @@ qstr_Give_me_that!_Hrmph!|Daj mi to! Hrmph! Dobrze, że mi to przyniosł{e/a}ś,
 qstr_What?_Let_me_see_tha|Co? Niech to obejrzę... Hmmm. Dobrze, że mi to przyniosł{e/a}ś, {playername}. A teraz odejdź.
 qstr_Give_me_that!_Hrmph!_|Daj mi to! Hrmph! Jesteś dobrym sługą dla swego pana, {playername}, ale niedługo wszyscy będziecie martwi. Nie teraz oczywiście, więc przestań uciekać.
 ; qstr_The_search_for_the_L|The search for the Lost Spears has led you to Dorwinion, the site of the ancient northern kingdom of King Bladorthin. TO BE CONTINUED
-; qstr_You_need_to_have_a_p|You need to have a party of at least 30 strong to begin this quest
+qstr_You_need_to_have_a_p|Aby rozpocząć to zadanie, potrzebujesz przynajmniej 30 silnych ludzi.
 ; qstr_You_were_tasked_to_h|You were tasked to hunt down the bandits that have been recently wreaking havoc in the North. You can either attack them in their hideout near Mirkwood Forest or intercept them near Beorn's House.
-; qstr_Mordor_Gains_Faction|Mordor Gains Faction Strength as they received an unknown weapon
+qstr_Mordor_Gains_Faction|Siła Frakcji Mordoru została zwiększona po tym, gdy otrzymali nieznaną broń.
 ; qstr_Beornings_gain_Facti|Beornings gain Faction Strength as news of your victory spreads.
 ; qstr_Beornings_loses_Fact|Beornings loses Faction strength when they were attacked.
 ; qstr__{s14}_gains_faction| {s14} gains faction strength as news of the Ring of Power spreads.
@@ -989,11 +989,11 @@ qstr_{s9}_asked_you_to_fr|{s9} poprosił cię o uwolnienie {s13} od rozszalałeg
 ; qstr_It_sure_look_like_yo|It sure look like you did, Mordor scum.. ^^I have heard the call by the Great Hand, to bring fear to the realm of men, and to kill as many of the horse-men as we can.
 ; qstr_It_sure_look_like_you|It sure look like you did. ^^The Dark Lord has called, and I am here to answer it and destroy the realm of men
 ; qstr_*Snort*_There_is_onl|*Snort* There is only ONE Lord, and that is the The Dark Lord. You have no place in this war, weakling. Leave me to my mission
-; qstr_*Snort*_Another_weak|*Snort* Another weakling to reinforce our meat shield. Leave me to my mission.
+qstr_*Snort*_Another_weak|*Chrząknięcie* Przybył kolejny słabeusz do umocnienia naszej mięsnej tarczy. Zostaw mnie.
 ; qstr_It_s_their_local_mon|It's their local money.. not worth anything in Mordor. Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs...
 ; qstr_It_s_their_local_mone|It's their local money.. not worth anything in Mordor. Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!
 ; qstr_It_s_their_local_money|It's their local money.. not worth anything in Mordor. Take it!  You can use these to buy some furs from Gundabad. Those orcs are dumb and ugly, but they do have good furs.
-; qstr_Take_it!_You_can_use|Take it! You can use these to buy weapons from Mordor. We only have the best!
+qstr_Take_it!_You_can_use|Weź to! Możesz tego użyć do kupienia broni z Mordoru. Tylko my mamy najlepszą broń!
 ; qstr_It_s_their_local_money.|It's their local money.. not worth anything in Mordor. Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!
 ; qstr_Here_s_some_of_their|Here's some of their own local money that I won...not worth anything in Mordor...Take it! You can use these to get some Moria Orcs to follow you...and maybe to get rid of them! haha! Stupid Moria orcs...
 ; qstr_Here_s_some_of_their_|Here's some of their own local money that I won..not worth anything in Mordor...Take it!  You can use these to arm yourself with the weapons of Isengard... They do strange things over there, near that tower. The smoke never ends! But they are all no match to the might of The Dark Lord!

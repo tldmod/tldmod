@@ -170,7 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} verwundet, {reg5} geflohen
 qstr_killed|getötet
 qstr_routed|geflohen
 qstr_wounded|verwundet
-; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
+qstr_{s0}^TOTAL:_{reg3}__|{s0}^GESAMT: {reg3} ({s2})
 qstr_None|Nichts
 qstr_^None|^Nichts
 qstr_near_the_Great_East_|nahe der Großen Oststraße, der verlassenen alten Straße

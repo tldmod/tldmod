@@ -60,22 +60,22 @@ trp_woodmen_archer|Arciere dei Boschi
 trp_woodmen_archer_pl|Arcieri dei Boschi
 trp_fell_huntsmen_of_mirkwood|Cacciatore Esperto di Bosco Atro
 trp_fell_huntsmen_of_mirkwood_pl|Cacciatori Esperti di Bosco Atro
-trp_beorning_vale_man|Beorniano
-trp_beorning_vale_man_pl|Beorniani
-trp_beorning_warrior|Guerriero Beorniano
-trp_beorning_warrior_pl|Guerrieri Beorniani
-trp_beorning_tolltacker|Gabelliere Beorniano
-trp_beorning_tolltacker_pl|Gabellieri Beorniani
-trp_beorning_sentinel|Sentinella Beorniana
-trp_beorning_sentinel_pl|Sentinelle Beorniane
-trp_beorning_warden_of_the_ford|Guardiani Beorniani del Guado
-trp_beorning_warden_of_the_ford_pl|Guardiani Beorniani del Guado
-trp_beorning_carrock_lookout|Osservatore Beorniano della Carroccia
-trp_beorning_carrock_lookout_pl|Osservatori Beorniani della Carroccia 
-trp_beorning_carrock_fighter|Combattente Beorniano della Carroccia
-trp_beorning_carrock_fighter_pl|Combattenti Beorniani della Carroccia
-trp_beorning_carrock_berserker|Berserker Beorniano della Carroccia
-trp_beorning_carrock_berserker_pl|Berserker Beorniani della Carroccia
+trp_beorning_vale_man|di Beorn
+trp_beorning_vale_man_pl|di Beorn
+trp_beorning_warrior|Guerriero di Beorn
+trp_beorning_warrior_pl|Guerrieri di Beorn
+trp_beorning_tolltacker|Gabelliere di Beorn
+trp_beorning_tolltacker_pl|Gabellieri di Beorn
+trp_beorning_sentinel|Sentinella di Beorn
+trp_beorning_sentinel_pl|Sentinelle di Beorn
+trp_beorning_warden_of_the_ford|Guardiani del Guado di Beorn
+trp_beorning_warden_of_the_ford_pl|Guardiani del Guado di Beorn
+trp_beorning_carrock_lookout|Vedetta della Carroccia di Beorn
+trp_beorning_carrock_lookout_pl|Vedette della Carroccia di Beorn
+trp_beorning_carrock_fighter|Combattente della Carroccia di Beorn
+trp_beorning_carrock_fighter_pl|Combattenti della Carroccia di Beorn
+trp_beorning_carrock_berserker|Berserker della Carroccia di Beorn
+trp_beorning_carrock_berserker_pl|Berserker della Carroccia di Beorn
 trp_dale_militia|Miliziano di Dale
 trp_dale_militia_pl|Miliziani di Dale
 trp_dale_man_at_arms|Uomo d'Arme di Dale
@@ -161,7 +161,7 @@ trp_dwarven_expert_axeman_pl|Nani Esperti con Ascia
 trp_longbeard_axeman|Nano Barbuto con Ascia 
 trp_longbeard_axeman_pl|Nani Barbuti con Ascia
 trp_dwarven_lookout|Osservatore Nano
-trp_dwarven_lookout_pl|Osservatori Nani
+trp_dwarven_lookout_pl|Vedette dei Nani
 trp_dwarven_scout|Esploratore Nano
 trp_dwarven_scout_pl|Esploratori Nani
 trp_dwarven_bowman|Arciere Novizio Nano
@@ -216,8 +216,8 @@ trp_veteran_archer_of_gondor|Arciere Veterano di Gondor
 trp_veteran_archer_of_gondor_pl|Arcieri Veterani di Gondor
 trp_archer_of_the_tower_guard|Arciere della torre di Guardia
 trp_archer_of_the_tower_guard_pl|Arcieri della torre di Guardia
-trp_steward_guard|Guardia del Tenutario
-trp_steward_guard_pl|Guardie del Tenutario
+trp_steward_guard|Guardia del Sovrintendente
+trp_steward_guard_pl|Guardie del Sovrintendente
 trp_ranger_of_ithilien|Ramingo dell'Ithilien
 trp_ranger_of_ithilien_pl|Raminghi dell'Ithilien
 trp_veteran_ranger_of_ithilien|Ramingo veterano dell'Ithilien
@@ -239,7 +239,7 @@ trp_axemaster_of_lossarnach_pl|Mastri d'ascia di Lossarnach
 trp_lossarnach_leader|Capitano di Lossanarch
 trp_lossarnach_leader_pl|Capitani di Lossarnach
 trp_pelargir_watchman|Osservatore di Pelargir
-trp_pelargir_watchman_pl|Osservatori di Pelargir
+trp_pelargir_watchman_pl|Vedette di Pelargir
 trp_pelargir_marine|Fante di Marina di Pelargir
 trp_pelargir_marine_pl|Fanti di Marina di Pelargir
 trp_pelargir_vet_marine|Fante di Marina veterano di Pelargir
@@ -278,18 +278,18 @@ trp_pinnath_gelin_archer|Arciere delle Pinnath Gelin
 trp_pinnath_gelin_archer_pl|Arcieri delle Pinnath Gelin
 trp_pinnath_leader|Capitano delle Pinnath Gelin
 trp_pinnath_leader_pl|Capitani delle Pinnath Gelin
-trp_blackroot_vale_archer|Cacciatore di Blackroot Vale
-trp_blackroot_vale_archer_pl|Cacciatore di Blackroot Vale
-trp_veteran_blackroot_vale_archer|Arco lungo della valle della Radice Nera
-trp_veteran_blackroot_vale_archer_pl|Archi lunghi di Blackroot Vale
-trp_master_blackroot_vale_archer|Arciere di Blackroot Vale
-trp_master_blackroot_vale_archer_pl|Arcieri di Blackroot Vale
-trp_footman_of_blackroot_vale|Fante di Blackroot Vale
-trp_footman_of_blackroot_vale_pl|Fanti di Blackroot Vale
-trp_spearman_of_blackroot_vale|Picchiere di Blackroot Vale
-trp_spearman_of_blackroot_vale_pl|Picchieri di Blackroot Vale
-trp_blackroot_leader|Capitano di Blackroot Vale
-trp_blackroot_leader_pl|Capitani di Blackroot Vale
+trp_blackroot_vale_archer|Cacciatore di Valle Cepponero
+trp_blackroot_vale_archer_pl|Cacciatore di Valle Cepponero
+trp_veteran_blackroot_vale_archer|Arco lungo della Valle Cepponero
+trp_veteran_blackroot_vale_archer_pl|Archi lunghi di Valle Cepponero
+trp_master_blackroot_vale_archer|Arciere di Valle Cepponero
+trp_master_blackroot_vale_archer_pl|Arcieri di Valle Cepponero
+trp_footman_of_blackroot_vale|Fante di Valle Cepponero
+trp_footman_of_blackroot_vale_pl|Fanti di Valle Cepponero
+trp_spearman_of_blackroot_vale|Picchiere di Valle Cepponero
+trp_spearman_of_blackroot_vale_pl|Picchieri di Valle Cepponero
+trp_blackroot_leader|Capitano di Valle Cepponero
+trp_blackroot_leader_pl|Capitani di Valle Cepponero
 trp_dol_amroth_youth|Recluta di Dol Amroth
 trp_dol_amroth_youth_pl|Reclute di Dol Amroth
 trp_squire_of_dol_amroth|Nobile di Dol Amroth
@@ -336,62 +336,62 @@ trp_galadhrim_royal_warden|Guardiano reale di Galadhrim
 trp_galadhrim_royal_warden_pl|Guardiani reali di Galadhrim
 trp_lothlorien_standard_bearer|Portatore comune di Lothlorien
 trp_lothlorien_standard_bearer_pl|Portatori comuni di Lothlorien
-trp_greenwood_scout|Esploratore di Greenwood
-trp_greenwood_scout_pl|Esploratori di Greenwood
-trp_greenwood_veteran_scout|Esploratore veterano di Greenwood
-trp_greenwood_veteran_scout_pl|Esploratori veterani di Greenwood
-trp_greenwood_archer|Arco lungo di Greenwood
-trp_greenwood_archer_pl|Archi lunghi di Greenwood
-trp_greenwood_veteran_archer|Arciere di Greenwood
-trp_greenwood_veteran_archer_pl|Arcieri di Greenwood
-trp_greenwood_master_archer|Arciere veterano di Greenwood
-trp_greenwood_master_archer_pl|Arcieri veterani di Greenwood
+trp_greenwood_scout|Esploratore di Boscoverde
+trp_greenwood_scout_pl|Esploratori di Boscoverde
+trp_greenwood_veteran_scout|Esploratore veterano di Boscoverde
+trp_greenwood_veteran_scout_pl|Esploratori veterani di Boscoverde
+trp_greenwood_archer|Arco lungo di Boscoverde
+trp_greenwood_archer_pl|Archi lunghi di Boscoverde
+trp_greenwood_veteran_archer|Arciere di Boscoverde
+trp_greenwood_veteran_archer_pl|Arcieri di Boscoverde
+trp_greenwood_master_archer|Arciere veterano di Boscoverde
+trp_greenwood_master_archer_pl|Arcieri veterani di Boscoverde
 trp_thranduils_royal_marksman|Tiratore scelto reale di Thranduil
 trp_thranduils_royal_marksman_pl|Tiratori scelti reali di Thranduil
-trp_greenwood_sentinel|Sentinella di Greenwood
-trp_greenwood_sentinel_pl|Sentinelle di Greenwood
-trp_greenwood_vet_sentinel|Sentinella veterana di Greenwood
-trp_greenwood_vet_sentinel_pl|Sentinelle veterane di Greenwood
-trp_mirkwood_guardsman|Guardia di Greenwood
-trp_mirkwood_guardsman_pl|Guardie di Greenwood
+trp_greenwood_sentinel|Sentinella di Boscoverde
+trp_greenwood_sentinel_pl|Sentinelle di Boscoverde
+trp_greenwood_vet_sentinel|Sentinella veterana di Boscoverde
+trp_greenwood_vet_sentinel_pl|Sentinelle veterane di Boscoverde
+trp_mirkwood_guardsman|Guardia di Boscoverde
+trp_mirkwood_guardsman_pl|Guardie di Boscoverde
 trp_greenwood_spearman|Fante di Greenwood
-trp_greenwood_spearman_pl|Fanteria di Greenwood
-trp_greenwood_veteran_spearman|Fante veterano di Greenwood
-trp_greenwood_veteran_spearman_pl|Fanteria veterana di Greenwood
-trp_greenwood_royal_spearman|Fante d'élite di Greenwood
-trp_greenwood_royal_spearman_pl|Fanteria d'élite di Greenwood
+trp_greenwood_spearman_pl|Fanteria di Boscoverde
+trp_greenwood_veteran_spearman|Fante veterano di Boscoverde
+trp_greenwood_veteran_spearman_pl|Fanteria veterana di Boscoverde
+trp_greenwood_royal_spearman|Fante d'élite di Boscoverde
+trp_greenwood_royal_spearman_pl|Fanteria d'élite di Boscoverde
 trp_thranduils_royal_swordsman|Spadaccino reale di Thranduil
 trp_thranduils_royal_swordsman_pl|Spadaccini reali di Thranduil
 trp_thranduils_spearman|Picchiere reale di Thranduil
 trp_thranduils_spearman_pl|Picchieri reali di Thranduil
-trp_greenwood_standard_bearer|Portatore comune di Greenwood
-trp_greenwood_standard_bearer_pl|Portatori comuni di Greenwood
-trp_rivendell_scout|Esploratore di Rivendell
-trp_rivendell_scout_pl|Esploratori di Rivendell
-trp_rivendell_veteran_scout|Esploratore veterano di Rivendell
-trp_rivendell_veteran_scout_pl|Esploratori veterani di Rivendell
-trp_rivendell_sentinel|Sentinella di Rivendell
-trp_rivendell_sentinel_pl|Sentinelle di Rivendell
-trp_rivendell_veteran_sentinel|Sentinella veterana di Rivendell
-trp_rivendell_veteran_sentinel_pl|Sentinelle veterane di Rivendell
-trp_rivendell_elite_sentinel|Sentinella d'élite di Rivendell
-trp_rivendell_elite_sentinel_pl|Sentinelle d'élite di Rivendell
-trp_rivendell_guardian|Guardiano di Rivendell
-trp_rivendell_guardian_pl|Guardiani di Rivendell
-trp_rivendell_infantry|Fante di Rivendell
-trp_rivendell_infantry_pl|Fanteria di Rivendell
-trp_rivendell_veteran_infantry|Fante veterano di Rivendell
-trp_rivendell_veteran_infantry_pl|Fanteria veterana di Rivendell
-trp_rivendell_elite_infantry|Fante d'élite di Rivendell
-trp_rivendell_elite_infantry_pl|Fanteria d'élite di Rivendell
-trp_rivendell_royal_infantry|Fante reale di Rivendell
-trp_rivendell_royal_infantry_pl|Fanteria reale di Rivendell
-trp_rivendell_cavalry|Uomo a cavallo di Rivendell
-trp_rivendell_cavalry_pl|Uomini a cavallo di Rivendell
-trp_knight_of_rivendell|Cavaliere di Rivendell
-trp_knight_of_rivendell_pl|Cavalieri di Rivendell
-trp_rivendell_standard_bearer|Portatore comune di Rivendell
-trp_rivendell_standard_bearer_pl|Portatori comuni di Rivendell
+trp_greenwood_standard_bearer|Portatore comune di Boscoverde
+trp_greenwood_standard_bearer_pl|Portatori comuni di Boscoverde
+trp_rivendell_scout|Esploratore di Gran Burrone
+trp_rivendell_scout_pl|Esploratori di Gran Burrone
+trp_rivendell_veteran_scout|Esploratore veterano di Gran Burrone
+trp_rivendell_veteran_scout_pl|Esploratori veterani di Gran Burrone
+trp_rivendell_sentinel|Sentinella di Gran Burrone
+trp_rivendell_sentinel_pl|Sentinelle di Gran Burrone
+trp_rivendell_veteran_sentinel|Sentinella veterana di Gran Burrone
+trp_rivendell_veteran_sentinel_pl|Sentinelle veterane di Gran Burrone
+trp_rivendell_elite_sentinel|Sentinella d'élite di Gran Burrone
+trp_rivendell_elite_sentinel_pl|Sentinelle d'élite di Gran Burrone
+trp_rivendell_guardian|Guardiano di Gran Burrone
+trp_rivendell_guardian_pl|Guardiani di Gran Burrone
+trp_rivendell_infantry|Fante di Gran Burrone
+trp_rivendell_infantry_pl|Fanteria di Gran Burrone
+trp_rivendell_veteran_infantry|Fante veterano di Gran Burrone
+trp_rivendell_veteran_infantry_pl|Fanteria veterana di Gran Burrone
+trp_rivendell_elite_infantry|Fante d'élite di Gran Burrone
+trp_rivendell_elite_infantry_pl|Fanteria d'élite di Gran Burrone
+trp_rivendell_royal_infantry|Fante reale di Gran Burrone
+trp_rivendell_royal_infantry_pl|Fanteria reale di Gran Burrone
+trp_rivendell_cavalry|Uomo a cavallo di Gran Burrone
+trp_rivendell_cavalry_pl|Uomini a cavallo di Gran Burrone
+trp_knight_of_rivendell|Cavaliere di Gran Burrone
+trp_knight_of_rivendell_pl|Cavalieri di Gran Burrone
+trp_rivendell_standard_bearer|Portatore comune di Gran Burrone
+trp_rivendell_standard_bearer_pl|Portatori comuni di Gran Burrone
 trp_dunedain_scout|Esploratore Dunedain
 trp_dunedain_scout_pl|Esploratori Dunedain
 trp_dunedain_trained_scout|Inseguitore Dunedain
@@ -772,13 +772,13 @@ trp_elf_captain_of_lothlorien|Capitano Elfo di Lothlorien
 trp_elf_captain_of_lothlorien_pl|Capitani Elfi di Lothlorien
 trp_lothlorien_lieutenant|Tenente di Lothlorien
 trp_lothlorien_lieutenant_pl|Tenenti di Lothlorien
-trp_elf_captain_of_mirkwood|Capitano Elfo di Greenwood
-trp_elf_captain_of_mirkwood_pl|Capitani Elfi di Greenwood
-trp_mirkwood_lieutenant|Tenente di Greenwood
-trp_mirkwood_lieutenant_pl|Tenenti di Greenwood
-trp_elf_captain_of_rivendell|Capitano Elfo di Rivendell
-trp_elf_captain_of_rivendell_pl|Capitani Elfi di Rivendell
-trp_rivendell_lieutenant|Tenente di Rivendell
+trp_elf_captain_of_mirkwood|Capitano Elfo di Boscoverde
+trp_elf_captain_of_mirkwood_pl|Capitani Elfi di Boscoverde
+trp_mirkwood_lieutenant|Tenente di Boscoverde
+trp_mirkwood_lieutenant_pl|Tenenti di Boscoverde
+trp_elf_captain_of_rivendell|Capitano Elfo di Gran Burrone
+trp_elf_captain_of_rivendell_pl|Capitani Elfi di Gran Burrone
+trp_rivendell_lieutenant|Tenente di Gran Burrone
 trp_rivendell_lieutenant_pl|Tenenti di Rivendell
 trp_lieutenant_of_rohan|Tenente di Rohan
 trp_lieutenant_of_rohan_pl|Tenenti di Rohan
@@ -946,8 +946,8 @@ trp_npc14|Fuldimir
 trp_npc15|Bolzog
 trp_npc16|Varfang
 trp_npc17|Dimborn
-trp_gondor_lord|Denethor, il Tenutario
-trp_gondor_lord_pl|Tenutario
+trp_gondor_lord|Denethor, il Sovrintendente
+trp_gondor_lord_pl|Sovrintendente
 trp_rohan_lord|Re Theoden
 trp_rohan_lord_pl|Re
 trp_isengard_lord|Saruman
@@ -1049,7 +1049,7 @@ trp_knight_5_7|Thorin, Elmo di Pietra
 trp_knight_5_11|Capo Fudreim
 trp_knight_5_12|Capo Wulf
 trp_smith_mtirith|Berethor, il Fabbro
-trp_smith_mtirith_pl|Fabbro del Tenutario
+trp_smith_mtirith_pl|Fabbro del Sovrintendente
 trp_smith_pelargir|Mastro del Metallo Hallatan
 trp_smith_pelargir_pl|Fucina
 trp_smith_linhir|Bor, il Corazziere
@@ -1060,7 +1060,7 @@ trp_smith_edhellond|Ryis, Piegatore di Ferro
 trp_smith_edhellond_pl|Fucina
 trp_smith_lossarnach|Berin, l'armaiolo
 trp_smith_lossarnach_pl|Fucina
-trp_smith_tarnost|Harandil, Martello d'acciacio
+trp_smith_tarnost|Harandil, Martello d'acciaio
 trp_smith_tarnost_pl|Fucina
 trp_smith_erech|Lorne, il Nero
 trp_smith_erech_pl|Fucina
@@ -1201,7 +1201,7 @@ trp_barman_hannun_pl|La Caverna Segreta
 trp_barman_calembel|Taverniere
 trp_barman_calembel_pl|Il Castello
 trp_barman_edoras|Taverniere
-trp_barman_edoras_pl|Meduseld, la Sala d'Oro
+trp_barman_edoras_pl|Meduseld, il Palazzo d'Oro
 trp_barman_aldburg|Taverniere
 trp_barman_aldburg_pl|Il Castello
 trp_barman_hornburg|Taverniere
@@ -1241,42 +1241,42 @@ trp_barman_dale_pl|Il Castello
 trp_barman_esgaroth|Taverniere
 trp_barman_esgaroth_pl|La Sala
 trp_barman_erebor|Taverniere
-trp_barman_erebor_pl|La Camera del Re
+trp_barman_erebor_pl|La Sala del Re
 trp_barman_dolguldur|Taverniere
 trp_barman_dolguldur_pl|Il Castello
-trp_merchant_mtirith|Forniture
+trp_merchant_mtirith|Cibo e Cavalli
 trp_merchant_mtirith_pl|La stalla e il Magazzino
-trp_merchant_pelargir|Forniture
+trp_merchant_pelargir|Cibo e Cavalli
 trp_merchant_pelargir_pl|La stalla e il Magazzino
-trp_merchant_linhir|Forniture
+trp_merchant_linhir|Cibo e Cavalli
 trp_merchant_linhir_pl|La stalla e il Magazzino
-trp_merchant_dolamroth|Forniture
+trp_merchant_dolamroth|Cibo e Cavalli
 trp_merchant_dolamroth_pl|La stalla e il Magazzino
-trp_merchant_edhellond|Forniture
+trp_merchant_edhellond|Cibo e Cavalli
 trp_merchant_edhellond_pl|La stalla e il Magazzino
-trp_merchant_lossarnach|Forniture
+trp_merchant_lossarnach|Cibo e Cavalli
 trp_merchant_lossarnach_pl|La stalla e il Magazzino
-trp_merchant_tarnost|Forniture
+trp_merchant_tarnost|Cibo e Cavalli
 trp_merchant_tarnost_pl|La stalla e il Magazzino
-trp_merchant_erech|Forniture
+trp_merchant_erech|Cibo e Cavalli
 trp_merchant_erech_pl|La stalla e il Magazzino
-trp_merchant_pinnath|Forniture
+trp_merchant_pinnath|Cibo e Cavalli
 trp_merchant_pinnath_pl|La stalla e il Magazzino
-trp_merchant_eosgiliath|Forniture
+trp_merchant_eosgiliath|Cibo e Cavalli
 trp_merchant_eosgiliath_pl|La stalla e il Magazzino
-trp_merchant_wosgiliath|Forniture
+trp_merchant_wosgiliath|Cibo e Cavalli
 trp_merchant_wosgiliath_pl|La stalla e il Magazzino
-trp_town_12_horse_merchant|Forniture
+trp_town_12_horse_merchant|Cibo e Cavalli
 trp_town_12_horse_merchant_pl|La stalla e il Magazzino
-trp_town_13_horse_merchant|Forniture
+trp_town_13_horse_merchant|Cibo e Cavalli
 trp_town_13_horse_merchant_pl|La stalla e il Magazzino
 trp_merchant_edoras|Fanciulla delle Provviste
 trp_merchant_edoras_pl|Lo Stabile e il Magazzino
-trp_merchant_aldburg|Forniture
+trp_merchant_aldburg|Cibo e Cavalli
 trp_merchant_aldburg_pl|Stabile e Magazzino del Re
-trp_merchant_hornburg|Forniture
+trp_merchant_hornburg|Cibo e Cavalli
 trp_merchant_hornburg_pl|La stalla e il Magazzino
-trp_merchant_eastemnet|Forniture
+trp_merchant_eastemnet|Cibo e Cavalli
 trp_merchant_eastemnet_pl|La Stalla e il Magazzino
 trp_merchant_westfold|Fanciulla delle Provviste
 trp_merchant_westfold_pl|La Stalla e il Magazzino
@@ -1284,47 +1284,47 @@ trp_merchant_westemnet|Fanciulla delle Provviste
 trp_merchant_westemnet_pl|La Stalla e il Magazzino
 trp_merchant_eastfold|Fanciulla delle Provviste
 trp_merchant_eastfold_pl|La stalla e il Magazzino
-trp_town_21_horse_merchant|Forniture
+trp_town_21_horse_merchant|Cibo e Cavalli
 trp_town_21_horse_merchant_pl|La Fossa e il Magazzino
-trp_merchant_morannon|Forniture
+trp_merchant_morannon|Cibo e Cavalli
 trp_merchant_morannon_pl|La Fossa e il Magazzino
-trp_merchant_mmorgul|Forniture
+trp_merchant_mmorgul|Cibo e Cavalli
 trp_merchant_mmorgul_pl|La Fossa e il Magazzino
-trp_town_24_horse_merchant|Forniture
+trp_town_24_horse_merchant|Cibo e Cavalli
 trp_town_24_horse_merchant_pl|La Fossa e il Magazzino
-trp_merchant_orc_patrol|Forniture
+trp_merchant_orc_patrol|Cibo e Cavalli
 trp_merchant_orc_patrol_pl|Campo delle Scorte
-trp_merchant_isengard|Forniture
+trp_merchant_isengard|Cibo e Cavalli
 trp_merchant_isengard_pl|Campo delle Scorte
-trp_town_27_horse_merchant|Forniture
+trp_town_27_horse_merchant|Cibo e Cavalli
 trp_town_27_horse_merchant_pl|Fossa dei Mannari e Provviste
-trp_merchant_uoutpost|Forniture
+trp_merchant_uoutpost|Cibo e Cavalli
 trp_merchant_uoutpost_pl|Fossa dei Mannari e Provvist
-trp_merchant_uhcamp|Forniture
+trp_merchant_uhcamp|Cibo e Cavalli
 trp_merchant_uhcamp_pl|Fossa dei Mannari e Provvist
-trp_merchant_urcamp|Forniture
+trp_merchant_urcamp|Cibo e Cavalli
 trp_merchant_urcamp_pl|Fossa dei Mannari e Provvist
-trp_merchant_cgaladhon|Forniture
+trp_merchant_cgaladhon|Cibo e Cavalli
 trp_merchant_cgaladhon_pl|Provviste Elfiche
-trp_merchant_cdolen|Forniture
-trp_merchant_cdolen_pl|Provviste Elfich
-trp_merchant_camroth|Forniture
-trp_merchant_camroth_pl|Provviste Elfich
-trp_merchant_thranduils_halls|Forniture
-trp_merchant_thranduils_halls_pl|Provviste Elfich
-trp_merchant_woodelf_camp|Forniture
-trp_merchant_woodelf_camp_pl|Provviste Elfich
-trp_merchant_woodmen|Forniture
+trp_merchant_cdolen|Cibo e Cavalli
+trp_merchant_cdolen_pl|Provviste Elfiche
+trp_merchant_camroth|Cibo e Cavalli
+trp_merchant_camroth_pl|Provviste Elfiche
+trp_merchant_thranduils_halls|Cibo e Cavalli
+trp_merchant_thranduils_halls_pl|Provviste Elfiche
+trp_merchant_woodelf_camp|Cibo e Cavalli
+trp_merchant_woodelf_camp_pl|Provviste Elfiche
+trp_merchant_woodmen|Cibo e Cavalli
 trp_merchant_woodmen_pl|La stalla e il Magazzino
-trp_merchant_beorn|Forniture
+trp_merchant_beorn|Cibo e Cavalli
 trp_merchant_beorn_pl|La stalla e il Magazzino
-trp_merchant_moria|Forniture
+trp_merchant_moria|Cibo e Cavalli
 trp_merchant_moria_pl|Fossa dei Mannari e Provvist
-trp_merchant_dale|Forniture
+trp_merchant_dale|Cibo e Cavalli
 trp_merchant_dale_pl|La stalla e il Magazzino
-trp_merchant_esgaroth|Forniture
+trp_merchant_esgaroth|Cibo e Cavalli
 trp_merchant_esgaroth_pl|La stalla e il Magazzino
-trp_merchant_erebor|Forniture
+trp_merchant_erebor|Cibo e Cavalli
 trp_merchant_erebor_pl|Provviste Naniche
 trp_merchant_dunland|Mastro delle Scorte di Dun
 trp_merchant_dunland_pl|Campo delle Scorte
@@ -1332,23 +1332,23 @@ trp_merchant_harad|Mastro delle Scorte di Harad
 trp_merchant_harad_pl|Campo delle Scorte
 trp_merchant_khand|Mastro delle Scorte di Khand
 trp_merchant_khand_pl|Campo delle Scorte
-trp_merchant_umbar|Forniture
+trp_merchant_umbar|Cibo e Cavalli
 trp_merchant_umbar_pl|Campo delle Scorte
-trp_merchant_imladris|Forniture
+trp_merchant_imladris|Cibo e Cavalli
 trp_merchant_imladris_pl|Rifornimenti del Campo
-trp_merchant_dolguldur|Forniture
+trp_merchant_dolguldur|Cibo e Cavalli
 trp_merchant_dolguldur_pl|La stalla e il Magazzino
-trp_merchant_north_rhun|Forniture
+trp_merchant_north_rhun|Cibo e Cavalli
 trp_merchant_north_rhun_pl|Campo delle Scorte
-trp_merchant_south_rhun|Forniture
+trp_merchant_south_rhun|Cibo e Cavalli
 trp_merchant_south_rhun_pl|Campo delle Scorte
-trp_merchant_gundabad|Forniture
+trp_merchant_gundabad|Cibo e Cavalli
 trp_merchant_gundabad_pl|Campo delle Scorte
-trp_merchant_ironhill|Forniture
+trp_merchant_ironhill|Cibo e Cavalli
 trp_merchant_ironhill_pl|Provviste Naniche
-trp_town_50_horse_merchant|Forniture
+trp_town_50_horse_merchant|Cibo e Cavalli
 trp_town_50_horse_merchant_pl|La stalla e il Magazzino
-trp_merchant_calembel|Forniture
+trp_merchant_calembel|Cibo e Cavalli
 trp_merchant_calembel_pl|La stalla e il Magazzino
 trp_elder_mtirith|Borgomastro di Tirith
 trp_elder_mtirith_pl|La Città Bianca
@@ -1380,13 +1380,13 @@ trp_elder_aldburg|Conte di Aldburg
 trp_elder_aldburg_pl|La città
 trp_elder_hornburg|Conte di Hornburg
 trp_elder_hornburg_pl|La Fortezza
-trp_elder_eastemnet|Conte di East Emnet
+trp_elder_eastemnet|Conte di Emnet Est
 trp_elder_eastemnet_pl|La città
 trp_elder_westfold|Conte di Westfold
 trp_elder_westfold_pl|La città
-trp_elder_westemnet|Conte di West Emnet
+trp_elder_westemnet|Conte di Emnet Ovest
 trp_elder_westemnet_pl|La città
-trp_elder_eastfold|Conte di Eastfold
+trp_elder_eastfold|Conte di Estfalda
 trp_elder_eastfold_pl|La città
 trp_elder_morannon|Capo del Morannon
 trp_elder_morannon_pl|le grotte che si affacciano sul Grande Cancello
@@ -1402,9 +1402,9 @@ trp_elder_cdolen|Sapiente di Lorien
 trp_elder_cdolen_pl|L'accampamento
 trp_elder_camroth|Sapiente di Lorien
 trp_elder_camroth_pl|L'accampamento
-trp_elder_thalls|Anziano di Mirkwood
+trp_elder_thalls|Anziano di Bosco Atro
 trp_elder_thalls_pl|Le caverne Elfiche
-trp_elder_imladris|Comandante del campo di Rivendell
+trp_elder_imladris|Comandante del campo di Gran Burrone
 trp_elder_imladris_pl|Il Campo
 trp_elder_wvillage|Pierre Woodman
 trp_elder_wvillage_pl|Il Villaggio
@@ -1527,15 +1527,15 @@ trp_black_numenorean_sorcerer|Numenoreano Nero Stregone
 trp_black_numenorean_sorcerer_pl|Numenoreano Nero Stregone
 trp_black_numenorean_acolyte|Accolito Numenoreano Nero
 trp_black_numenorean_acolyte_pl|Accoliti Numenoreano Neri
-trp_wolf_rider_of_mirkwood|Cavalca-lupo di Mirkwood
-trp_wolf_rider_of_mirkwood_pl|Cavalca-lupi di Mirkwood
-trp_warg_rider_of_mirkwood|Cavalca-mannaro di Mirkwood
-trp_warg_rider_of_mirkwood_pl|Cavalca-mannari di Mirkwood
+trp_wolf_rider_of_mirkwood|Cavalca-lupo di Bosco Atro
+trp_wolf_rider_of_mirkwood_pl|Cavalca-lupi di Bosco Atro
+trp_warg_rider_of_mirkwood|Cavalca-mannaro di Bosco Atro
+trp_warg_rider_of_mirkwood_pl|Cavalca-mannari di Bosco Atro
 trp_gate_aggravator|Il cancello è ancora in piedi
 trp_orc_pretender|Orco Impostore
 trp_human_prisoner|Prigioniero Umano
-trp_spider|Ragno di Mirkwood
-trp_spider_pl|Ragni di Mirkwood
+trp_spider|Ragno di Bosco Atro
+trp_spider_pl|Ragni di Bosco Atro
 trp_bear|Orso
 trp_bear_pl|Orsi
 trp_wolf|Lupo
@@ -1558,5 +1558,5 @@ trp_start_quest_woodelf|Tiratore scelto di Galadhrim
 trp_start_quest_woodelf_pl|Tiratori scelti di Galadhrim
 trp_start_quest_mordor_scout|Guida di Mordor
 trp_start_quest_mordor_scout_pl|Guide di Mordor
-trp_start_quest_beorning|Berserker Beorniano della Carroccia
-trp_start_quest_beorning_pl|Berserker Beorniani della Carroccia
+trp_start_quest_beorning|Berserker della Carroccia di Beorn
+trp_start_quest_beorning_pl|Berserker della Carroccia di Beorn

@@ -200,7 +200,7 @@ dlga_lord_capture_troll_completed_one_troll:close_window|Excelente , {playername
 ; dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
 dlga_lord_start:lord_generic_mission_completed.1|A notícia da sua realização contra os trolls selvagens me alcançou . {s12} tem um medo menos para se preocupar , graças a você , {playername}.
 ; dlga_lord_start:lord_generic_mission_completed.2|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
-; dlga_lord_start:defend_village_failed|We have heard from our scouts near {s12} that you have failed to defend the village. The villagers were either slaughtered or made into slaves. These raiders are becoming bolder every day... ^^We sense that war is surely coming.
+dlga_lord_start:defend_village_failed|Nossos batedores próximos de {s12} nos contaram que você fracassou em proteger a aldeia. Os aldeões foram todos massacrados ou escravizados. Esses saqueadores estão cada dia mais audaciosos...  ^^ Sentimos que a guerra está próxima. 
 ; dlga_defend_village_failed:close_window|I will do better next time.
 ; dlga_lord_start:lord_generic_mission_completed.3|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
 ; dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
@@ -272,9 +272,9 @@ dlga_find_lost_spears_permission_yes:lord_pretalk|Agradeço-lhe, meu Senhor .
 ; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.   One with their loot moving towards Mirkwood Forest. The other, a considerable size, towards Beorn's House, perhaps to continue their destructive search.
 ; dlga_ring_hunters_2:ring_hunters_what|My lord, what could they be searching for?
 ; dlga_ring_hunters_2:ring_hunters_accept|My lord, I will do what is necessary to stop these... 'Ring Hunters'
-; dlga_ring_hunters_2:ring_hunters_reject|I am not ready for such a task just yet.
-; dlga_ring_hunters_accept:close_window|You are brave, General. We will await news of your success
-; dlga_ring_hunters_reject:lord_pretalk|I see. Let me know when you are, but make haste, we do not want them to succeed.
+dlga_ring_hunters_2:ring_hunters_reject|Ainda não estou preparado para tal tarefa.
+dlga_ring_hunters_accept:close_window|Você é corajoso general. Aguardaremos notícias do seu sucesso.
+dlga_ring_hunters_reject:lord_pretalk|Entendo. Me avise quando estiver, mas se apresse pois não queremos que eles tenham êxito.
 ; dlga_ring_hunters_what:ring_hunters_2|It is hard to know exactly what they want with this, but we can see that they are going through great lengths to find what they are looking for.   All we can surmise is that this must be a powerful weapon of sorts, a weapon to be used to cause more destruction under the Dark Lord's name.
 ; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for these..   Whether true or not, these must not fall into the Dark Lord's hands.
 ; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news.. Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
@@ -371,7 +371,7 @@ dlga_lord_tell_objective:lord_pretalk.12|Eu não sei: {reg1} {s1}
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
 ; dlga_lord_mission_defend_question:lord_mission_defend_accept|My men and I are ready. We shall ride out at once.
 ; dlga_lord_mission_defend_question:lord_mission_defend_reject|I am afraid I cannot do this task.
-; dlga_lord_mission_defend_accept:close_window|Thank you, {playername}. Now go, quickly!
+dlga_lord_mission_defend_accept:close_window|Obrigado, {playername}. Agora vá, rápido!
 ; dlga_lord_mission_defend_reject:close_window|I see. Then I will send what troops I can. Let us hope we are not too late.
 ; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
 ; dlga_lord_mission_raid_village_a:lord_raid_village_accept|I will raid that village, kill every man we see, and enslave all women and children!
@@ -569,7 +569,7 @@ dlga_castle_gate_open:close_window.4|Meu senhor {s2} não quero você aqui . Beg
 ; dlga_caravan_duel1:caravan_duel2|I could just kill you and take everything... but I have proven enough. Leave.
 ; dlga_caravan_duel2:caravan_duel3|The men definitely respects you now! Or they are afraid! No matter what,  they will tell their Lords what you did here. Maybe if you keep impressing them, they'll give you special things! The horse people of Rhun once gave me a horse! I ATE IT! HA HA HA HA!
 ; dlga_woodelf_help_6:woodelf_help_7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
-; dlga_woodelf_help_7:close_window.1|(Raise your hand and leave without a word)
+dlga_woodelf_help_7:close_window.1|(Levante sua mão e saia sem dizer uma palavra)
 ; dlga_start:beorn_help1|*He sizes you up with a frown.* ^^Shiny things like you is what draws goblins from the mountains into our forest. But you kill them good, for that we give thanks.
 ; dlga_beorn_help1:beorn_help2|Well met! Even though we seldom leave our woods, I would not refuse aid to any who oppose servants of the Enemy.
 ; dlga_beorn_help1:beorn_help2a|(nod without saying a word)
@@ -584,7 +584,7 @@ dlga_castle_gate_open:close_window.4|Meu senhor {s2} não quero você aqui . Beg
 ; dlga_beorn_help7:close_window|Le fael, friend! Farewell. 
 ; dlga_beorn_help7:close_window.1|(raise your hand and leave without a word)
 ; dlga_start:kill_scout_1|Great eyes and ears you have there! If you did not warn the group, those scouts would have escaped and have told their ugly lords that we are coming.
-; dlga_kill_scout_1:kill_scout_2|Watch where you are taking us, Orc... We did not travel this far to get stopped before the war begins!
+dlga_kill_scout_1:kill_scout_2|Cuide aonde você nos leva Orc... Não viajamos tão longe para sermos impedidos antes de a guerra começar!
 ; dlga_kill_scout_2:kill_scout_3|And War we shall have! Here, take these. You can buy your men some food and drink when you get to Mordor.
 ; dlga_kill_scout_3:kill_scout_4|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Mordor are not the ones you earned in your own faction, but the ones you will earn in Mordor. ^^See REPORTS for more information.
 ; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill?! We'd rather be drinking our own piss!
@@ -922,14 +922,14 @@ dlga_start:party_encounter_hostile_defender|O que você quer?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Renda-se ou morra!
 dlga_party_encounter_hostile_defender:close_window|Nada. Vamos deixá-lo em paz.
 dlga_start:close_window.29|* Olha para você silenciosamente *
-dlga_start:battle_reason_stated.1|Renda-se ou morrer. Faça a sua escolha.
+dlga_start:battle_reason_stated.1|Renda-se ou morra. Faça a sua escolha.
 dlga_battle_reason_stated:close_window|Eu não tenho medo de você . Eu vou lutar..
-dlga_start:free|Olá. O que posso fazer para você?
+dlga_start:free|Olá. Como posso ajudá-lo?
 dlga_free:view_char_requested|Fale-me sobre você
 dlga_view_char_requested:view_char|Muito bem , ouvir isso ...
 dlga_view_char:free|Algo mais?
 dlga_end:close_window|[Feito]
-dlga_start:threaten_1|Larguem as armas e render- se você quer viver
-dlga_threaten_1:end|Vamos lutar pela primeira vez
+dlga_start:threaten_1|Larguem as armas e rendam-se, se desejam viver
+dlga_threaten_1:end|Lutaremos primeiro
 dlga_free:close_window|Adeus.
 dlga_free:close_window.1|[Sair].

@@ -74,13 +74,13 @@ mno_start_whor|半獸人，白手奴僕
 mno_start_isur|强兽人，繁衍于艾辛格
 mno_start_duma|登兰德人，来自西部平原
 menu_start_good_man|^^^^^^^^^^选择你的人类派系：
-mno_start_go|刚铎 , 圣白塔王国
+mno_start_go|刚铎，圣白塔王国
 mno_start_ro|洛汗，骠骑之国
 mno_start_du|登丹人，古努曼诺尔王朝后裔
 mno_start_be|波宁人，熊人
 mno_start_da|河谷镇，北方城邦
 menu_start_good_elf|^^^^^^^^^^精灵，你居住在哪个森林里？
-mno_start_ri|瑞文戴尔，由气之戒维雅的守护者，艾尔隆德王统治
+mno_start_ri|瑞文戴尔，由气之戒维雅的守护者，埃尔隆德领主统治
 mno_start_lo|罗斯洛立安，由水之戒南雅的守护者，凯兰崔尔女士统治
 mno_start_mi|幽暗密林，西尔凡精灵（木精灵别称）的土地
 menu_start_good_dwarf|^^^^^^^^^^选择你的族系：
@@ -208,8 +208,8 @@ menu_kingdom_army_quest_messenger|{s8} 派来信使，说要指定一个任务�
 menu_kingdom_army_quest_join_siege_order|{s8}派来信使，命令你加入对{s9}围攻。无论付出多大代价 , 必须拿下{s9} 。
 menu_kingdom_army_follow_failed|在远征中你违反了军令—和{s8}走散了。他姑且相信你有更重要的事情要做，但给予你严重警告。
 menu_battle_debrief|{s11}^我军伤亡：{s8}{s10}^^敌军伤亡：{s9}
-mno_inspect_troll|检查倒下的巨魔。
-menu_pre_join|^^^^^你遇到了{s2}和{s1}的战斗。你決定…
+mno_inspect_troll|检查倒下的食人妖。
+menu_pre_join|^^^^^你遇到了{s2}和{s1}的战斗。你决定…
 mno_pre_join_help_attackers|对{s2}施以援手。
 mno_pre_join_help_defenders|对{s1}施以援手。
 mno_pre_join_leave|不卷入纷争。
@@ -240,7 +240,7 @@ mno_moria_enter|利用秘密入口重新进入摩瑞亚大厅
 mno_moria_enter_door|进入摩瑞亚
 mno_castle_start_siege|围攻{reg6?城镇:城堡}。
 mno_castle_leave|离开
-menu_castle_besiege|你已經在圍攻{s1}。 {s2} {s3}
+menu_castle_besiege|你正在围攻{s1}。 {s2} {s3}
 mno_siege_request_meeting|要求和城堡的指挥官会面。
 mno_wait_24_hours|等到明天
 mno_castle_lead_attack|亲自率领攻城。
@@ -293,19 +293,19 @@ menu_ship_reembark|你想上船吗？
 mno_reembark_yes|是
 mno_reembark_no|否
 menu_center_reports|城镇名：{s1} ^租金收入：{reg1}第纳尔^税收：{reg2}第纳尔^食物储备：供应{reg3}日
-menu_sneak_into_town_suceeded|乔装成衣着破烂的朝圣者，你骗过了守卫，顺利的混入城里。
+menu_sneak_into_town_suceeded|乔装成衣着破烂的朝圣者，你骗过了守卫，顺利地混入城里。
 menu_sneak_into_town_caught|在你尝试溜进去时，一名守卫发现了你并发出了警报！ 你必须在所有守卫都开始搜捕你之前从大门逃出去。
 mno_sneak_caught_fight|杀出一条血路！
 mno_sneak_caught_surrender|投降。
-menu_sneak_into_town_caught_dispersed_guards|你轻易的甩掉了守卫，消失在街道的深处。
+menu_sneak_into_town_caught_dispersed_guards|你轻易地甩掉了守卫，消失在街道的深处。
 menu_sneak_into_town_caught_ran_away|你杀开一条血路后终于夺路而逃，迅速逃到了附近的安全地带。
 menu_tld_player_defeated|^^^^^突然你的头部一阵剧痛！\\你全身颤抖，眼前越来越黑…^这就是你在中土世界的终点了？
-menu_recover_after_death_fangorn|你醒了过来，发现四周依旧是一片森林。 你的每个骨头都痛得厉害，你竟然般地还活着。^^你被击败了，但至少你还活着。 ^你现在弄清了这该死树林中发生的一切^而且你还能活着汇报。^^但真有人会相信你么？
-menu_recover_after_death_moria|^^^^^你渐渐恢复意识，带着泥土气息的微风吹在你的脸上，你竟然还活着！^那些半兽人总喜欢挖个坑把死人的尸体丢进去放，它们当时肯定把你当成尸体丢到了最底下。^却不想他们挖的坑底下有条地下河，这就样，你掉进了地下河，河流把你带来出来。
+menu_recover_after_death_fangorn|你醒了过来，发现四周依旧是一片森林。 你的每根骨头都痛得厉害，你竟然奇迹般地还活着。^^你被击败了，但至少你还活着。 ^你现在弄清了这该死的树林中发生的一切^而且你还能活着汇报。^^但真有人会相信你么？
+menu_recover_after_death_moria|^^^^^你渐渐恢复意识，带着泥土气息的微风吹在你的脸上，你竟然还活着！^那些半兽人总喜欢挖个坑把死人的尸体丢进去放，它们当时肯定把你当成尸体丢到了最底下。^却不想他们挖的坑底下有条地下河，这就样，你掉进了地下河，河流把你带了出来。
 mno_whatever|站起来！
 menu_recover_after_death_default|^^^^^你渐渐恢复意识，发现四周静悄悄的。 你的敌人一定认为你已经死了，就这样把你丢在这里。 看起来你的伤口似乎并不致命；你感觉很糟糕，但你依然活着。 你慢慢站了起来，开始寻找其他幸存者。
 menu_recover_after_death_town|^^^^你渐渐恢复了意识，发现自己身处在城郊。 你还活着！ 周围一个人都没有。你拖着满是伤痕的身体离开了城镇。你感觉糟糕透顶，但幸好浑身没有一处致命伤，你还能走。
-menu_recover_after_death_town_alone|你渐渐恢复了意识，发现自己身处在城郊。 你还活着！ 周围一个人都没有。你拖着满是伤痕的身体离开了城镇。你感觉糟糕透顶，但幸好浑身没有一处致命伤，你还能走。
+menu_recover_after_death_town_alone|你渐渐恢复了意识，发现自己身处在城郊。 你还活着！ 周围一个人都没有。你拖着满是伤痕的身体离开了城镇。你的同伴找到了你。你感觉糟糕透顶，但幸好浑身没有一处致命伤，你还能走。
 menu_notification_center_under_siege|{s1}正被{s3}的{s2}围攻！
 menu_notification_one_side_left|^^^^^漫长的魔戒战争结束了^^ {s1}败败了所有敌人并取得最终的胜利！ 让我们欢呼吧！
 menu_notification_total_defeat|^^^^^对于你来说，魔戒战争结束了！^^ {s1}被他们的敌人所击败，而你彻底失败了！
@@ -340,7 +340,7 @@ mno_cb_gondor4|幽暗密林
 mno_cb_gondor5|矮人
 mno_cb_gondor6|河谷镇
 mno_cb_gondor7|波宁人
-menu_custom_battle_choose_faction3|^^^^^^^^^^选择正义派系
+menu_custom_battle_choose_faction3|^^^^^^^^^^选择邪恶派系
 mno_cb_mordor|魔多
 mno_cb_mordor1|艾辛格
 mno_cb_mordor2|登兰德
@@ -360,9 +360,9 @@ mno_pay_respects|跪下并献上你的敬意。
 mno_swear_oath|复仇誓言！
 mno_despoil|亵渎这里
 mno_leave_mound|离开这里
-menu_burial_mound_respects|你满怀敬意的在{s1}之墓前跪下，默默得为其祈祷，愿其往生极乐。现在是时候继续你的旅途了。
-menu_burial_mound_oath|你高声宣誓，一定要为{s4}的死复仇。你将坚持不懈的追逐超越{s3}的力量，并会亲会将其杀死。 你的誓言随风而漾，四海皆知。
-menu_burial_mound_despoil|你亲手推倒了{s1}的墓碑，恶毒地诅咒和谩骂，对这个石块做了一些无法形容的暴行。你的追随者因感到恐惧而后退，但他们为你的恶行再一次对你到敬畏。
+menu_burial_mound_respects|你满怀敬意地在{s1}之墓前跪下，默默地为其祈祷，愿其往生极乐。现在是时候继续你的旅途了。
+menu_burial_mound_oath|你高声宣誓，一定要为{s4}的死复仇。你将坚持不懈地追逐超越{s3}的力量，并会亲手将其杀死。 你的誓言随风而漾，四海皆知。
+menu_burial_mound_despoil|你亲手推倒了{s1}的墓碑，恶毒地诅咒和谩骂，对这个石块做了一些无法形容的暴行。你的追随者因感到恐惧而后退，但他们为你的恶行再一次对你感到敬畏。
 menu_funeral_pyre|你来到一处属于{s3}的{s2}的火葬堆。 他的遗体被他的亲卫隆重地火葬， 没有一丝残余。
 mno_leave_pyre|离开火葬堆
 menu_town_ruins|当你靠近，你看到{s1}实际上是{s2}

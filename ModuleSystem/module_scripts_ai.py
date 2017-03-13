@@ -210,9 +210,18 @@ ai_scripts = [
 #         (this_or_next|lt, ":offensive_hours", 60),
 #         (lt, ":faction_marshall_num_followers", 4),
         #TLD: not many hosts in TLD
-         (lt, ":offensive_hours", 48), #wait for lords for two days max
-         (lt, ":faction_marshall_num_followers", 2), #if we have two+ lords in tow, go and do something creative
-         (assign, ":chance_gathering_army", 300), #was 3000, caused too much waiting when there were other interesting opportunities
+         (try_begin),
+          #(eq, "$gondor_ai_testing", 1),
+          (eq, ":faction_no", "fac_gondor"),
+          (lt, ":offensive_hours", 60), #Kham - Lets make Gondor lords wait a bit longer
+          (lt, ":faction_marshall_num_followers", 3), #Kham - Gondor needs more lords when they start walking around
+          (assign, ":chance_gathering_army", 1000), ##Kham - Lets make gondor wait longer
+          (display_message, "@Gondor AI Tweaks - Gondor waits longer"),
+         (else_try),
+          (lt, ":offensive_hours", 48), #wait for lords for two days max
+          (lt, ":faction_marshall_num_followers", 2), #if we have two+ lords in tow, go and do something creative
+          (assign, ":chance_gathering_army", 300), #was 3000, caused too much waiting when there were other interesting opportunities
+         (try_end),
        (try_end),
 ## Attacking center
        (try_begin),
@@ -2179,6 +2188,9 @@ ai_scripts = [
              (party_is_active, ":adv_camp"),
              (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, ":adv_camp"),
            (else_try),
+             (eq, ":faction_no", "fac_gondor"),
+             (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, "p_town_minas_tirith"), ##TLD: Improving Gondor Situation Patch - Have Marshall gather in MT.
+           (else_try),
              (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_undefined, -1),
            (try_end),
            (party_set_ai_initiative, ":faction_marshall_party", 100),
@@ -2229,14 +2241,26 @@ ai_scripts = [
 
 		  (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
 		  (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
-		  (val_div, ":strength", 1000), #MV: 3.15 tweak, was 1300 - to get more hosts
-		  (val_add, ":strength", 1),
+      (try_begin), ## Kham - Lets give Gondor more Hosts - Let's hide it in a menu for testing
+        (eq, "$gondor_ai_testing", 1),
+        (val_div, ":strength", 700), 
+        (display_message, "@Gondor AI Tweaks - Give more hosts"),
+      (else_try),
+		    (val_div, ":strength", 1000), #MV: 3.15 tweak, was 1300 - to get more hosts
+		  (try_end),
+      (val_add, ":strength", 1),
 		  (lt, ":hosts", ":strength"), # faction passes strength check 
 
 		  (store_random_in_range,":rnd",0,100),
           (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
-		  (lt,":rnd",10),              # faction passes random check 
-
+		  (try_begin),
+        (eq, "$gondor_ai_testing", 1),
+        (eq, ":faction_no", "fac_gondor"),
+        (lt,":rnd",20),              # Kham - lets give Gondor more hosts frequently
+        (display_message, "@Gondor AI Tweaks - More frequent hosts"),
+      (else_try),
+        (lt,":rnd",10),              # faction passes random check 
+      (try_end),
 			(val_add, ":hosts",1),
             (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
 			

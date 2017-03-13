@@ -50,7 +50,10 @@ def save_troops():
 #    inventory_list.append(itm_corsair_arrows)
     for inventory_item in inventory_list:
 #      add_tag_use(tag_uses,tag_item,inventory_item)
-      file.write("%d 0 "%inventory_item)
+      if(type(inventory_item) == types.ListType) or (type(inventory_item) == types.TupleType):
+        file.write("%d %d "%(inventory_item[0], inventory_item[1]<<24))
+      else:
+        file.write("%d 0 "%inventory_item)
     for i in xrange(max_inventory_items - len(inventory_list)):
       file.write("-1 0 ")
     file.write("\n ")

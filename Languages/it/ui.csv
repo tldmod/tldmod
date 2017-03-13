@@ -769,7 +769,7 @@ ui_horse|Monta
 ui_reclaim_your_sold_goods|Recupera i beni già dati, prima di dare questo !
 ui_return_your_bought_goods|Restituisci i beni presi, prime di cedere questo !
 ui_return_price|se restituito: +%d P.R.
-ui_sell_price|se dato: +%d P.R.
+ui_sell_price|Prezzo vendita: +%d P.R.
 ui_reclaim_price|per recuperare: -%d P.R.
 ui_buying_price|Costo: -%d P.R.
 ui_notification_riding_skill_not_enough|Non hai abbastanza abilità per cavalcarlo.
@@ -780,7 +780,7 @@ ui_sell|Dài
 ui_hire|Arruola
 ui_notification_cant_hire|(non abbastanza P.R. per arruolare)
 ui_joining_cost_weekly_wage|Arruola: %d P.R. -- Mantieni: %d P.R.
-ui_weekly_wage|Mantieni: %d P.R.
+ui_weekly_wage|Mantenimento: %d P.R.
 ui_price|Valore: %d P.R.
 ui_cant_reload_this_weapon_on_horseback|Non puoi ricaricare questa arma mentre cavalchi.
 ui_delivered_number_damage_to_horse|Inflitti %d danni alla cavalcatura.

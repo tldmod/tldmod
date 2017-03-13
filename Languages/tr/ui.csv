@@ -20,7 +20,7 @@ ui_notification_riding_skill_not_enough|Binebilmek için yeterli binicilik becer
 ui_notification_payment_value|%s ödenecek
 ui_notification_payment_receive_value|%s alınacak
 ui_weekly_cost_value|Haftalık ücret: %s
-ui_sell|Ver\n
+ui_sell|Ver
 ui_hire|Alındı
 ui_notification_cant_hire|yeterli R.P. alınmadı
 ui_joining_cost_weekly_wage|Alım: %d Res.Pts. -- Bakım: %d Res.Pts.
@@ -30,8 +30,8 @@ ui_cant_reload_this_weapon_on_horseback|Bu Silah Binek Üzerindeyken Yeniden Dol
 ui_delivered_number_damage_to_horse|Bineğe %d hasar verildi
 ui_horse_charged_for_number_damage|Atla Saldırarak Hasar Verildi %d damage.
 ui_horse_received_number_damage|Binek %d hasar aldı
-ui_horse_fell_dead|At öldü
-ui_horse_crippled|At yaralandı
+ui_horse_fell_dead|At öldü...
+ui_horse_crippled|At yaralandı...
 ui_you_got_value|%s kazandı
 ui_has_deserted_the_party|partiden çıktı.
 ui_have_deserted_the_party|Partiden ayrıldı
@@ -42,7 +42,7 @@ ui_mount_horses_e_|%s, Atlı
 ui_hold_fire_e_|%s, Ateş etme!
 ui_fire_at_will_e_|%s, Ateş serbest!
 ui_recent_messages|Son Msjlar
-ui_value_denars|%d Araştırma puanları
+ui_value_denars|%d Araştırma Puanları
 ui_cannot_be_used_on_horseback|Binek üzerinde kullanılamaz
 ui_upgrade_to_value|%s'e geliştir
 ui_notification_cant_upgrade|(Birlik veriyorken yükseltme yapılamaz)

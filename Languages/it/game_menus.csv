@@ -26,7 +26,7 @@ mno_view_party_size_report|Consulta il rapporto sulle dimensioni della compagnia
 mno_view_morale_report|Consulta il rapporto sul morale della compagnia
 mno_view_character_report_02|Controlla stato dei PNG
 mno_view_faction_strengths_report|Consulta il resoconto sulla potenza delle fazioni
-mno_view_traits_report|Consulta i tratti
+mno_view_traits_report|Consulta i tratti personali.
 mno_resume_travelling|Riprendi il viaggio
 mno_custom_battle_go|Inizia
 mno_leave_custom_battle_2|Annulla
@@ -90,10 +90,10 @@ menu_start_gondor|^^^^^^^^^^Da quale parte di Gondor provieni ?
 mno_start_mt|Minas Tirith, la Capitale
 mno_start_ls|Lossarnach, il feudo della Valle dei Fiori
 mno_start_la|Lamedon, il feudo degli uomini della Montagna
-mno_start_pg|Pinnath Gelin, il feudo dei Verdi Colli
+mno_start_pg|Pinnath Gelin, il feudo delle Verdi Colline
 mno_start_do|Dol Amroth, il feudo dei Cavalieri del Cigno
 mno_start_pe|Pelargir, il feudo Costiero
-mno_start_bl|La Valle della Radice Nera, il feudo degli Arcieri
+mno_start_bl|La Valle Cepponero, il feudo degli Arcieri
 menu_start_eye_man|^^^^^^^^^^Seleziona la tua gente:
 mno_start_hr|Haradrim, il popolo del deserto del Sud
 mno_start_bn|Númenóreani Neri, i rinnegati dell'Ovest
@@ -182,9 +182,9 @@ mno_i_shall_surv|Io...devo...sopravvivere !
 menu_end_game|^^^^^La decisione è presa, e consiste nell'abbandonare la tua vita da avventuriero insieme a tutto il resto. Vendi le tue armi e le tue armature, insieme a tutti i tuoi averi, e cavalchi verso il tramonto...
 mno_end_game_bye|Addio.
 menu_cattle_herd|Incontri alcune persone.
-mno_cattle_drive_away|Ordinagli di seguirti.
-mno_cattle_stop|Conducili ad accamparsi.
-mno_leave|Abbandona.
+mno_cattle_drive_away|Ordina di seguirti.
+mno_cattle_stop|Falli accampare.
+mno_leave|Vattene.
 menu_simple_encounter|^^^^^{s2}^Hai {reg22} truppe pronte per la battaglia contro {reg11} delle loro.^^Luogo della battaglia: {s3}{s4}.^^I tuoi ordini ?
 mno_encounter_attack|{reg21?Carica !:Prepariamoci ad affrontarli}.
 mno_encounter_order_attack|Ordina alle tue truppe di {reg21?attaccare:affrontarli} senza di te.
@@ -211,7 +211,7 @@ menu_battle_debrief|{s11}^Le tue perdite:{s8}{s10}^^Perdite nemiche:{s9}
 mno_inspect_troll|Esamina il troll abbattuto
 menu_pre_join|^^^^^Ti imbatti in una battaglia che vede come avversari {s2} e {s1}. Decidi di...
 mno_pre_join_help_attackers|Muoviti in aiuto di: {s2}.
-mno_pre_join_help_defenders|Corri in soccorso di {s1}.
+mno_pre_join_help_defenders|Soccorri: {s1}.
 mno_pre_join_leave|Non farti coinvolgere.
 menu_join_battle|^^^Assisti {s2} contro {s1}.^ Hai {reg22} truppe pronte per affrontare le {reg11} del nemico.^^Luogo dello scontro: {s3}{s4}.
 mno_join_attack|Carica il nemico.
@@ -239,7 +239,7 @@ menu_castle_outside|Sei fuori da {s2}.{s11} {s3} {s4}
 mno_moria_enter|Ritorna nel salone principale di Moria attraverso l'entrata segreta
 mno_moria_enter_door|Entra a Moria.
 mno_castle_start_siege|Assedia {reg6?}.
-mno_castle_leave|Abbandona.
+mno_castle_leave|Vattene.
 menu_castle_besiege|Stai assediando {s1}. {s2} {s3}
 mno_siege_request_meeting|Richiedi un incontro con il comandante del castello.
 mno_wait_24_hours|Aspetta fino a domani.
@@ -264,17 +264,17 @@ menu_town_bandits_succeeded|^^^^^ I goblin cadono davanti a voi come il grano so
 menu_town_brawl_lost|^^^^^^Sei stato colpito a tradimento. Coloro che ti hanno attaccato si affrettano a frugarti in cerca di cose di valore, prima di darsi alla fuga.
 menu_town_brawl_won|^^^^^Hai battuto tutti gli avversari e le guardie hanno riportato l'ordine. Velocemente cerchi oggetti di valore per poi sparire finchè non si calmano le acque.^Magari la prossima volta mostreranno più rispetto e faranno marcia indietro.
 menu_close|Niente.
-menu_town|Sei arrivato a {s60}.{s12}{s13}
+menu_town|Sei arrivato a: {s60}.{s12}{s13}
 mno_town_menu_0|Vai da qualche parte.
 mno_town_menu_0_door|Porta che conduce verso un luogo.
 mno_town_approach|Vai verso: {s1}...
 mno_town_castle|Vai a: {s1}.
 mno_town_castle_door|Portone del castello.
 mno_town_center|Passeggia per la piazza principale...
-mno_town_center_door|Porta per il centro della città.
+mno_town_center_door|Porta per il centro dell'insediamento.
 mno_aw_chamber_door|Apri la porta.
-mno_trade_with_arms_merchant|Visita {s40}.
-mno_trade_with_horse_merchant|Visita {s41}.
+mno_trade_with_arms_merchant|Ispeziona {s40}.
+mno_trade_with_horse_merchant|Ispeziona {s41}.
 mno_town_prison_door|Porta della prigione.
 mno_dungeon_enter|Cerca le lance perdute all'interno delle montagne.
 mno_dungeon_enter_door|Apri la porta.
@@ -284,7 +284,7 @@ mno_talk_to_castle_commander|Visita le caserme di {s61}.
 mno_speak_with_elder|Parla con il {s6}.
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
 mno_tirith_toplevel|Raggiungi il livello più alto
-mno_town_leave|Abbandona...
+mno_town_leave|Vattene...
 mno_town_leave_door|Abbandona l'area
 menu_disembark|Desideri sbarcare ?
 mno_disembark_yes|Si.
@@ -313,15 +313,15 @@ menu_notification_your_faction_collapsed|^^^^^La tua {s11} madrepatria è stata 
 menu_notification_faction_defeated|^^^^^{s1} È stato sconfitto !^{s1} non c'è più, essendo sconfitto dal esercito di {s13} !
 menu_ruins|^^^^Ti avvicini a {s1}. In questo luogo, un tempo, un grande accampamento è stato raso al suolo, è ancora possibile vedere tracce di fortificazioni e vecchie armi arrugginite.
 menu_legendary_place|^^^^Hai seguito le tracce ed hai trovato {s1}. Puoi esplorare questo posto e verificare da te se le indiscrezioni che hai sentito sono vere.
-mno_explore|Esplora questo posto.
-menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso la foresta di Mirkwood e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
+mno_explore|Esplora questo luogo.
+menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso Bosco Atro e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
 mno_attack_lair|Attaccali adesso
-mno_leave_bandit_lair|Lascia per ora.
+mno_leave_bandit_lair|Vattene per ora.
 menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da parte di una banda di orchi. Cos'hai intenzione di fare ?
 mno_help|Aiuta gli stranieri !
 mno_start_defend_caravan|Difendi la Carovana !
 mno_start_raid_caravan|Saccheggia la Carovana !
-mno_start_ambush_orcs|Un'imboscata degli Orchi !
+mno_start_ambush_orcs|Tendi un'imboscata agli Orchi !
 mno_start_kill_scouts|Ferma gli esploratori dal segnalare il tuo arrivo !
 mno_go_your_way|Lasciali al loro destino
 mno_defend_villagers|Difendi gli abitanti del villaggio !
@@ -367,7 +367,7 @@ menu_funeral_pyre|Ti avvicini ai resti bruciati della pira di {s3} di {s2}. Qui 
 mno_leave_pyre|Abbandona la pira.
 menu_town_ruins|Quando ti avvicini, vedi che {s1} è {s2}
 mno_ruin_menu_0|Esplora il luogo.
-mno_ruin_leave|Abbandona...
+mno_ruin_leave|Vattene...
 menu_death|Sei stato ucciso. Anche se la guerra continua ad infuriare, tu non potrai più farne parte.
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 menu_animal_ambush_success|I {s2} {reg0?fall:falls} cadono davanti a te come spighe di grano davanti alla falce ! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}

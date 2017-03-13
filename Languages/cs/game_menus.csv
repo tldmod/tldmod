@@ -1,7 +1,7 @@
-menu_start_game_1|^^^^^^^^^^Pro koho bojuješ?
-mno_start_good|pro ÚSVIT nového věku
+menu_start_game_1|pro co bojuješ ?
+mno_start_good|usvit nového věku
 mno_start_evil|pro SOUMRAK lidstva
-mno_go_bback|Zpět
+mno_go_bback|jdi zpět
 menu_start_phase_2|^^^^^ Stredozem. Na Vychode se zvedá Stin, ^ prichazi odtamtud dlouho skryte a  temne veci. ^ Svobodne narody se pripravuji na valku. Valku jakou nezazily po cely vek. ^ Lide, elfove, trpaslici a skreti - vsichni budou hrat svou roli. ^^ Jakou roli, to se teprve ukaze...
 ; mno_go_forth|          Go forth upon your chosen path...
 menu_start_game_3|^^^^^^^^Zvol si scénář:
@@ -19,7 +19,7 @@ mno_warg_battle_scenario|Testovaci bitvy s vrrky
 mno_build_your_own_scene|**Postav svou vlastni scenu pro TLD**
 menu_tutorial|^^TLD má mnoho funkcí neznámých z původního M&B. Jsou popsané detailně bez prozrazení zápletky v PDF přibaleném s modem. Pokud chcete projít tutoriál, udělejte to prosím v Native - základní hře, ne v modu.
 mno_go_back_dot|Jdi zpět.
-; mno_action_view_troop_trees|View troop trees.
+mno_action_view_troop_trees|přehled stromu jednotek
 mno_view_upkeep_costs|Zobrazit náklady družiny.
 mno_view_character_report|Zobrazit přehled postavy.
 mno_view_party_size_report|Zobrazit prehled velikosti druziny.
@@ -201,19 +201,19 @@ mno_call_back|Zavolat zpet
 menu_order_attack_2|^{s4}^Tvoje ztráty: {s8}^^Ztráty nepřítele: {s9}
 mno_order_attack_continue|Rozkaž svým vojákům, aby dál útočili.
 mno_order_retreat|Povolej své vojáky zpět.
-; menu_kingdom_army_quest_report_to_army|{s8} sends word that he wishes you to join his new military campaign.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+menu_kingdom_army_quest_report_to_army|{s8} ti poslal zprávu že si přeje aby jsi se připojil k novému tažení. máš sebou vzít nejméně {reg13} jednotek. jestli nemáš dostatek jednotek, máš je co nejdříve naverbovat
 mno_reject|Pošli zprávu, že jsi příliš zaneprázdněný
 mno_send_word|Pošli zprávu, že se k němu brzy připojíš.
 ; menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
 ; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
 ; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
 ; menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
-; mno_inspect_troll|Inspect downed troll
-; menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
-; mno_pre_join_help_attackers|Move in to help the {s2}.
-; mno_pre_join_help_defenders|Rush to the aid of the {s1}.
+mno_inspect_troll|prohledat padlého trola
+menu_pre_join|přišel jsi k bitvě mezi {s2} a {s1}. rozhodneš se k
+mno_pre_join_help_attackers|jít na pomoc {s2}.
+mno_pre_join_help_defenders|přiběhneš na pomoc  {s1}.
 mno_pre_join_leave|Nezapojit se.
-; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
+menu_join_battle|^^^pomáháš {s2} proti {s1}.^ máš {reg22} připravených proti {reg11}.^^ 
 mno_join_attack|Zaútočit na nepřítele.
 mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenic, mezitím co ty zůstaneš vzadu.
 mno_join_leave|Uvolnit se od nepřítele.
@@ -247,7 +247,7 @@ mno_castle_lead_attack|Veď tvé vojáky do útoku.
 mno_attack_stay_back|Nařiď svým vojákům, aby zaútočili, mezitím co se budeš držet zpátky.
 mno_build_ladders|Připravit žebříky na útok na zdi.
 mno_lift_siege|zrušit obléhání
-; menu_siege_attack_meets_sally|^^^^^^The defenders sally out to meet your assault.
+menu_siege_attack_meets_sally|obránci provedli protiútok
 ; menu_construct_ladders|As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to build enough scaling ladders for the assault.
 mno_build_ladders_cont|Udělej to.
 menu_castle_attack_walls_simulate|{s4}^^Tvoje ztráty:{s8}^^Nepřátelské ztráty: {s9}
@@ -263,7 +263,7 @@ menu_siege_join_defense|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^
 menu_town_bandits_succeeded|^^^^^Goblini před tebou padají jako obílí před kosou! Brzy stojíš sám, zatímco většina útočníků leží v bezvědomí, mrtvá nebo umírající. Místní obyvatelé by byli jistě velmi vděční za to, že jsi je zachránil před tímto nebezpečím.
 ; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
-; menu_close|Nothing.
+menu_close|nic
 ; menu_town|You arrived in {s60}.{s12}{s13}
 mno_town_menu_0|Jdi na nějeké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
@@ -278,8 +278,8 @@ mno_trade_with_horse_merchant|Navštiv {s41}.
 mno_town_prison_door|Dveře do vězení.
 mno_dungeon_enter|Hledej ztracená kopí v horách.
 mno_dungeon_enter_door|Otevřít dveře.
-; mno_dwarven_warehouse|Visit the Dwarven Warehouse
-; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
+mno_dwarven_warehouse|Navštivte trpasličí sklad
+mno_dwarven_warehouse_door|vstup do trpasličího skladu
 mno_talk_to_castle_commander|Navštiv {s61} Kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
 mno_isengard_underground|Jdi do podzemních jeskyň.
@@ -298,7 +298,7 @@ mno_reembark_no|Ne.
 mno_sneak_caught_fight|Pokus se probojovat ven!
 mno_sneak_caught_surrender|vzdát se.
 ; menu_sneak_into_town_caught_dispersed_guards|You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.
-; menu_sneak_into_town_caught_ran_away|You make your way back through the gates and quickly retreat to the safety out of town.
+menu_sneak_into_town_caught_ran_away|probil jsi si cestu zpět k bráně a rychle se stahuješ z města
 ; menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \\ You shiver, as all the world goes black around you...^Is this your end?
 ; menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
 ; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.
@@ -314,18 +314,18 @@ mno_whatever|Vstaň!
 ; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
 ; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Prozkoumej toto místo.
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
+menu_ring_hunter_lair|sledoval jsi stopy lovců prstenu skrz Temný hvozd a došel si k (s1). vidíš je jak se chystají odejít s truhlou
+mno_attack_lair|zaútoč 
 ; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^Vidíš malý karavan pod útokem skupiny orků. Co uděláš?
 mno_help|Pomož cizincům!
-; mno_start_defend_caravan|Defend the Caravan!
-; mno_start_raid_caravan|Raid the Caravan!
-; mno_start_ambush_orcs|Ambush the Orcs!
+mno_start_defend_caravan|braň karavanu
+mno_start_raid_caravan|přepadni karavanu
+mno_start_ambush_orcs|Přepadni skřety
 ; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
 mno_go_your_way|Nech je na pokoji.
-; mno_defend_villagers|Defend the Villagers!
-; mno_raid_villagers|Raid the Village!
+mno_defend_villagers|braň vesničany !
+mno_raid_villagers|přepadni vesnici
 mno_go_away|Nech je na pokoji.
 menu_custom_battle_choose_faction1|^^^^^^^^^^Vyber si svoji stranu a výhod:
 mno_good_equal|Frakce dobra
@@ -356,7 +356,7 @@ mno_next_rescue_scene_door|Pokračuj vpřed!
 ; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
 ; mno_go_forward|End selecting companions and proceed.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
-; mno_pay_respects|Kneel and pay your respects.
+mno_pay_respects|Poklekněte
 ; mno_swear_oath|Swear an oath of vengeance!
 ; mno_despoil|Desecrate the site
 ; mno_leave_mound|Leave the mound.
@@ -369,7 +369,7 @@ mno_leave_pyre|Odejít od vatry.
 mno_ruin_menu_0|Prozkoumat to místo.
 mno_ruin_leave|Opusť...
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
-; menu_animal_ambush|You and your companions find yourselves separated from the rest of your party, when suddenly...
+menu_animal_ambush|ty a tví přátelé jste se ocitli mimo vaši skupinu, když najednou...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
 ; menu_animal_ambush_fail|The animals bite and tear at you{reg0?,: and your companion{reg2?s,:,}} but luckily you managed to fend them off. Hopefully they won't attack you again.
 ; menu_build_your_scene|You can build your own battlescene here, using one of the slots provided below and game Edit mode  (you need to switch edit mode ON in M&B lauching screen Options first).  You can then submit scenes you constructed (namely, sco files from TLD/SceneObj folder)  to the dev team of TLD, and if your scene is good,  it can appear in later releases as one of random battlegrounds!^^ Try to specify which region on map you want your scene to appear.^ Couple hints: avoid deep water, steep mountains and other impassable places,  unless you are experienced scene-maker and know how to bar AI troops  from walking where you don't want them, and make AI mesh in other places.^ (Entries #0-1 are for attackers, #4 for defenders, do not touch #5-8
@@ -380,4 +380,4 @@ menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 ; mno_scene5|Battlefield9 (file scn battlefield9.sco)
 mno_back_3dot|Zpět...
 mno_back|Jdi zpět.
-; mno_next|Next...
+mno_next|další...

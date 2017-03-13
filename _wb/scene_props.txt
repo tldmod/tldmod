@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1545
+ 1627
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3189,7 +3189,7 @@ spr_lktn_building_f 0 0 dale_passage_house_a bo_passage_house_a_tld 0
 spr_lktn_building_g 0 0 dale_passage_house_b 0 0
 
 
-spr_lktn_building_h 0 0 dale_town_house_a 0 0
+spr_lktn_building_h 0 0 dale_town_house_a bo_dale_town_house_a 0
 
 
 spr_lktn_building_i 0 0 dale_town_house_b 0 0
@@ -3201,7 +3201,7 @@ spr_lktn_building_j 0 0 dale_town_house_c 0 0
 spr_lktn_building_k 0 0 dale_town_house_d 0 0
 
 
-spr_lktn_building_l 0 0 dale_town_house_e 0 0
+spr_lktn_building_l 0 0 dale_town_house_e bo_dale_town_house_e 0
 
 
 spr_lktn_building_m 0 0 dale_town_house_f 0 0
@@ -3210,16 +3210,16 @@ spr_lktn_building_m 0 0 dale_town_house_f 0 0
 spr_lktn_building_n 0 0 dale_town_house_g 0 0
 
 
-spr_lktn_building_o 0 0 dale_town_house_h 0 0
+spr_lktn_building_o 0 0 dale_town_house_h bo_dale_town_house_h 0
 
 
-spr_lktn_building_p 0 0 dale_town_house_i 0 0
+spr_lktn_building_p 0 0 dale_town_house_i bo_dale_town_house_i 0
 
 
 spr_lktn_building_q 0 0 dale_town_house_j 0 0
 
 
-spr_lktn_building_r 0 0 dale_town_house_l 0 0
+spr_lktn_building_r 0 0 dale_town_house_l bo_dale_town_house_l 0
 
 
 spr_lktn_building_s 0 0 dale_town_house_m 0 0
@@ -3240,7 +3240,7 @@ spr_lktn_building_w 0 0 dale_town_house_q 0 0
 spr_lktn_building_x 0 0 dale_town_house_s 0 0
 
 
-spr_lktn_building_y 0 0 dale_town_house_t 0 0
+spr_lktn_building_y 0 0 dale_town_house_t bo_dale_town_house_t 0
 
 
 spr_lktn_building_z 0 0 dale_town_house_u 0 0
@@ -3252,7 +3252,7 @@ spr_lktn_building_aa 0 0 dale_town_house_v 0 0
 spr_lktn_building_ab 0 0 dale_town_house_y 0 0
 
 
-spr_lktn_building_ac 0 0 dale_town_house_z 0 0
+spr_lktn_building_ac 0 0 dale_town_house_z bo_dale_town_house_z 0
 
 
 spr_lktn_building_ad 0 0 dale_town_house_za 0 0
@@ -4226,13 +4226,13 @@ spr_mist_a 65536 0 mist_a 0 0
 spr_mist_b 65536 0 mist_b 0 0
 
 
-spr_treeline_a 0 0 treeline_a 0 0
+spr_treeline_a 0 0 treeline_a bo_treeline_b 0
 
 
-spr_treeline_b 0 0 treeline_b 0 0
+spr_treeline_b 0 0 treeline_b bo_treeline_b 0
 
 
-spr_treeline_c 0 0 treeline_c 0 0
+spr_treeline_c 0 0 treeline_c bo_treeline_b 0
 
 
 spr_ruins_amon_hen 0 0 ruins_amon_hen bo_ruins_amon_hen 0
@@ -4673,6 +4673,258 @@ spr_smaug_skeleton 0 0 smaug_skeleton 0 0
 
 
 spr_dorwinion_sack 5 0 dorwinion_sack bo_dorwinion_sack 0
+
+
+spr_fake_house_a 0 0 MT_fake_house_a bo_fake_house_a 0
+
+
+spr_fake_house_b 0 0 MT_fake_house_b bo_fake_house_b 0
+
+
+spr_fake_house_c 0 0 MT_fake_house_c bo_fake_house_c 0
+
+
+spr_fake_house_d 0 0 MT_fake_house_d bo_fake_house_d 0
+
+
+spr_fake_house_e 0 0 MT_fake_house_e bo_fake_house_e 0
+
+
+spr_fake_house_f 0 0 MT_fake_house_f bo_fake_house_f 0
+
+
+spr_fake_house_far_a 0 0 MT_fake_house_far_a bo_fake_house_far_a 0
+
+
+spr_fake_house_far_b 0 0 MT_fake_house_far_b bo_fake_house_far_b 0
+
+
+spr_fake_house_far_c 0 0 MT_fake_house_far_c bo_fake_house_far_c 0
+
+
+spr_fake_house_far_d 0 0 MT_fake_house_far_d bo_fake_house_far_d 0
+
+
+spr_fake_house_far_e 0 0 MT_fake_house_far_e bo_fake_house_far_e 0
+
+
+spr_fake_house_far_f 0 0 MT_fake_house_far_f bo_fake_house_far_f 0
+
+
+spr_Dale_fake_house_a 0 0 Dale_fake_house_a bo_fake_house_a 0
+
+
+spr_Dale_fake_house_b 0 0 Dale_fake_house_b bo_fake_house_b 0
+
+
+spr_Dale_fake_house_c 0 0 Dale_fake_house_c bo_fake_house_c 0
+
+
+spr_Dale_fake_house_d 0 0 Dale_fake_house_d bo_fake_house_d 0
+
+
+spr_Dale_fake_house_e 0 0 Dale_fake_house_e bo_fake_house_e 0
+
+
+spr_Dale_fake_house_f 0 0 Dale_fake_house_f bo_fake_house_f 0
+
+
+spr_Dale_fake_house_far_a 0 0 Dale_fake_house_far_a bo_fake_house_far_a 0
+
+
+spr_Dale_fake_house_far_b 0 0 Dale_fake_house_far_b bo_fake_house_far_b 0
+
+
+spr_Dale_fake_house_far_c 0 0 Dale_fake_house_far_c bo_fake_house_far_c 0
+
+
+spr_Dale_fake_house_far_d 0 0 Dale_fake_house_far_d bo_fake_house_far_d 0
+
+
+spr_Dale_castle_small_round_tower 0 0 Dale_small_round_tower_a bo_arabian_castle_corner_b 0
+
+
+spr_Dale_castle_small_round_tower_roof 0 0 Dale_small_round_tower_roof_a bo_small_round_tower_roof_a 0
+
+
+spr_Dale_castle_Stone_Stairs 0 0 Dale_stone_stairs_b bo_stone_stairs_b 0
+
+
+spr_Dale_tower_top_a 0 0 dale_tower_top_1 0 0
+
+
+spr_Dale_tower_top_c 0 0 dale_tower_top_3 0 0
+
+
+spr_Dale_castle_Gate_House 0 0 Dale_gate_house_b bo_Dale_gate_house_b 0
+
+
+spr_Dale_castle_High_Tower 0 0 Dale_castle_e_tower bo_castle_e_tower 0
+
+
+spr_Dale_Bell_Tower 0 0 Dale_church_tower_a bo_Dale_church_tower_a 0
+
+
+spr_Dale_Minaret 0 0 Dale_stone_minaret_a bo_stone_minaret_a 0
+
+
+spr_Dale_Hall 0 0 novgorod_sofiya bo_novgorod_sofiya 0
+
+
+spr_Dale_Palace 0 0 sobor bo_sobor 0
+
+
+spr_Dale_Market 0 0 Dale_castle_courtyard_a bo_castle_courtyard_a 0
+
+
+spr_Dale_castle_Gaillard 0 0 Dale_castle_gaillard bo_castle_gaillard 0
+
+
+spr_Dale_castle_Battlement 0 0 Dale_castle_battlement_b bo_arabian_castle_battlement_a 0
+
+
+spr_Dale_copula_1 0 0 dale_cupola_1 0 0
+
+
+spr_Dale_town_house_b 0 0 Dale_town_house_b bo_town_house_b 0
+
+
+spr_Dale_copula_2 0 0 dale_cupola_2 0 0
+
+
+spr_Dale_town_house_d 0 0 Dale_town_house_d bo_town_house_d 0
+
+
+spr_Dale_town_house_f 0 0 Dale_town_house_f bo_town_house_f 0
+
+
+spr_Dale_copula_3 0 0 dale_cupola_3 0 0
+
+
+spr_Dale_tower_top_b 0 0 dale_tower_top_2 0 0
+
+
+spr_Dale_copula_4 0 0 dale_cupola_5 0 0
+
+
+spr_Dale_copula_5 0 0 dale_cupola_7 0 0
+
+
+spr_Dale_copula_6 0 0 dale_cupola_8 0 0
+
+
+spr_Dale_small_wall 0 0 Dale_small_wall bo_small_wall_d 0
+
+
+spr_Dale_passage_house_b 0 0 Dale_new_passage_house bo_passage_house_b 0
+
+
+spr_Dale_Plaza 0 0 Dale_Plaza bo_Dale_Plaza 0
+
+
+spr_Dale_street_short 0 0 Dale_street_short bo_Dale_street_short 0
+
+
+spr_Dale_castle_battlement_d 0 0 Dale_castle_battlement_d bo_arabian_castle_battlement_d 0
+
+
+spr_Dale_castle_courtyard_house_extension_a_E 0 0 Dale_castle_courtyard_house_extension_a 0 0
+
+
+spr_Dale_castle_courtyard_house_extension_b_E 0 0 Dale_castle_courtyard_house_extension_b 0 0
+
+
+spr_Dale_castle_courtyard_entry_b 0 0 Dale_courtyard_entry_b bo_Dale_courtyard_entry_b 0
+
+
+spr_Dale_castle_courtyard_house_b 0 0 Dale_castle_courtyard_house_a bo_castle_courtyard_house_b 0
+
+
+spr_distant_mountain_snow_1 0 0 distant_mountain_snow_1 0 0
+
+
+spr_distant_mountain_snow_2 0 0 distant_mountain_snow_2 0 0
+
+
+spr_ship 0 0 ship bo_ship 0
+
+
+spr_ship_b 0 0 ship_b bo_ship_b 0
+
+
+spr_ship_d 0 0 ship_d bo_ship_d 0
+
+
+spr_ship_c 0 0 ship_c bo_ship_c 0
+
+
+spr_ship_sail_off 0 0 ship_sail_off bo_ship_sail_off 0
+
+
+spr_ship_sail_off_b 0 0 ship_sail_off_b bo_ship_sail_off 0
+
+
+spr_ship_c_sail_off 0 0 ship_c_sail_off bo_ship_c_sail_off 0
+
+
+spr_osgiliath_far_f 0 0 osgiliath_far 0 0
+
+
+spr_hill 0 0 hill bo_hill 0
+
+
+spr_water_river 0 0 JB_water_plane 0 0
+
+
+spr_water_fall 0 0 water_fall 0 0
+
+
+spr_distant_street_a 0 0 distant_street_a bo_village_wall_a 0
+
+
+spr_distant_street_b 0 0 distant_street_b bo_village_wall_b 0
+
+
+spr_distant_mountain_a 0 0 distant_mountain3 bo_cliff_distant_3 0
+
+
+spr_distant_mountain_b 0 0 distant_mountain8 bo_cliff_distant_8 0
+
+
+spr_distant_mountain_c 0 0 distant_mountain4 bo_cliff_distant_4 0
+
+
+spr_distant_soldiers_a 0 0 distant_soldiers_men_a 0 0
+
+
+spr_distant_orcs_a 0 0 distant_soldiers_orcs_a 0 0
+
+
+spr_distant_soldiers_uruks_a 0 0 distant_soldiers_uruks_a 0 0
+
+
+spr_water_splash_a 0 0 0 0 1
+-40  1 1965 1 51 
+
+
+spr_water_splash_b 0 0 0 0 1
+-40  1 1965 1 52 
+
+
+spr_water_splash_c 0 0 0 0 1
+-40  1 1965 1 53 
+
+
+spr_water_fall_2 0 0 0 0 1
+-40  1 1965 1 54 
+
+
+spr_water_foam 0 0 0 0 1
+-40  1 1965 1 55 
+
+
+spr_water_run 0 0 0 0 1
+-40  1 1965 1 56 
 
 
 spr_save_compartibility1 0 0 0 0 0

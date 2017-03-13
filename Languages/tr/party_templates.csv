@@ -1,49 +1,49 @@
-pt_rescued_prisoners|Salınmış Mahkumlar.
+pt_rescued_prisoners|Salınmış Mahkumlar
 pt_enemy|Düşman
-pt_hero_party|Kahramanın Grubu.
-pt_cattle_herd|Sığır Sürüsü.
-pt_ruins|Kalıntılar.
-pt_legendary_place|Efsanevi Bölge.
-pt_mound|Kahraman Höyük.
+pt_hero_party|Kahramanın Grubu
+pt_cattle_herd|Sığır Sürüsü
+pt_ruins|Kalıntılar
+pt_legendary_place|Efsanevi Bölge
+pt_mound|Kahraman Höyük
 pt_pyre|Kahraman Külleri
-pt_wild_troll|Vahşi Trol.
-pt_raging_trolls|Azgın Trol.
+pt_wild_troll|Vahşi Trol
+pt_raging_trolls|Azgın Trol
 pt_looters|Kabile Orkları
 pt_forest_bandits|Ork Kaçaklar
 pt_mountain_bandits|Vahşi Goblinler
 pt_steppe_bandits|Dunland Serserileri
 pt_sea_raiders|Hain Korsanlar
 pt_deserters|Kaçaklar
-pt_merchant_caravan|Tüccar Karavanı.
+pt_merchant_caravan|Tüccar Karavanı
 pt_troublesome_bandits|Belalı Goblinler
-pt_fangorn_orcs|Ağaç kesen Orklar.
-pt_village_farmers|Çiftlik Köylüleri.
+pt_fangorn_orcs|Ağaç Kesen Orklar
+pt_village_farmers|Çiftlik Köylüleri
 pt_spy_partners|Şüpheli Seyyahlar
 pt_spy_partners_evil|Şüpheli Seyyahlar
-pt_runaway_serfs|Kaçak köleler
-pt_spy|Yalnız sürücü.
-pt_spy_evil|Yalnız sürücü.
-pt_sacrificed_messenger|Kurban edilmiş Elçi
-pt_gandalf|Yalnız sürücü
-pt_nazgul|Yalnız sürücü.
-pt_gondor_scouts|Gondor İzcileri.
-pt_blackroot_auxila|Blackroot Yardımcı
-pt_lamedon_auxila|Lamedon Yardımcı
-pt_lossarnach_auxila|Lossarnach Yardımcı
-pt_pinnath_gelin_auxila|Pinnath Gelin Yardımcı
+pt_runaway_serfs|Kaçak Köleler
+pt_spy|Yalnız Sürücü
+pt_spy_evil|Yalnız Sürücü
+pt_sacrificed_messenger|Kurban Edilmiş Elçi
+pt_gandalf|Yalnız Sürücü
+pt_nazgul|Yalnız Sürücü
+pt_gondor_scouts|Gondor İzcileri
+pt_blackroot_auxila|Blackroot Destek Birliği
+pt_lamedon_auxila|Lamedon Destek Birliği
+pt_lossarnach_auxila|Lossarnach Destek Birliği
+pt_pinnath_gelin_auxila|Pinnath Gelin Destek Birliği
 pt_ranger_scouts|Korucu İzciler
-pt_rohan_scouts|Rohirim İzcileri.
+pt_rohan_scouts|Rohirim İzcileri
 pt_lorien_scouts|Lothlorien İzcileri
-pt_woodelf_scouts|Kutuorman Elf İzcileri
-pt_imladris_scouts|Rivendell Elf İzcileri
+pt_woodelf_scouts|Kuyutorman Elf İzcileri
+pt_imladris_scouts|Ayrıkvadi Elf İzcileri
 pt_dale_scouts|Dale İzcileri
 pt_esgaroth_scouts|Esgeroth İzcileri
 pt_dwarf_scouts|Cüce Gözcüler
 pt_beorn_scouts|Beorning İzcileri
 pt_woodmen_scouts|Gözcü Korucular
-pt_mordor_scouts|Mordor İzcileri.
+pt_mordor_scouts|Mordor İzcileri
 pt_morgul_scouts|Morgul İzcileri
-pt_isengard_scouts|İsengard İzcileri.
+pt_isengard_scouts|İsengard İzcileri
 pt_isengard_scouts_warg|İsengard Warg Binicileri
 pt_harad_scouts|Haradrim İzcileri
 pt_dunland_scouts|Dunlending İzcileri
@@ -55,9 +55,9 @@ pt_gundabad_scouts|Gundabad İzcileri
 pt_rhun_scouts|Rhun İzciler
 pt_gondor_raiders|Gondor Toplayıcıları
 pt_rohan_raiders|Rohirrim Toplayıcıları
-pt_imladris_raiders|Rivendell Toplayıcıları
+pt_imladris_raiders|Ayrıkvadi Toplayıcıları
 pt_lorien_raiders|Lothlorien Toplayıcıları
-pt_woodelf_raiders|Kuytuorman Toplayıcıları
+pt_woodelf_raiders|Kuyutorman Toplayıcıları
 pt_dale_raiders|Dale Toplayıcıları
 pt_dwarf_raiders|Cüce Toplayıcıları
 pt_ranger_raiders|Korucu Akıncılar
@@ -76,13 +76,13 @@ pt_gondor_patrol|Gondor Devriyesi
 pt_rohan_patrol|Rohirrim Devriyesi
 pt_imladris_patrol|Dunedain Devriyesi
 pt_lorien_patrol|Lothlorien Devriyesi
-pt_woodelf_patrol|Mirkwood Devriyesi
+pt_woodelf_patrol|Kuyutorman Devriyesi
 pt_dale_patrol|Dale Devriyesi
 pt_esgaroth_patrol|Esgeroth Devriyesi
 pt_dwarf_patrol|Cüce Devriyesi
 pt_ranger_patrol|Korucu Devriyesi
 pt_amroth_patrol|Dol Amroth Devriyesi
-pt_pelargir_patrol|Pelargır Devriyesi
+pt_pelargir_patrol|Pelargir Devriyesi
 pt_lossarnach_patrol|Lossarnach Devriyesi
 pt_brv_patrol|Blackroot Devriyesi
 pt_pinnath_patrol|Pinnath Devriyesi
@@ -97,7 +97,7 @@ pt_dale_war_party|Dale Savaş Partisi
 pt_rhun_war_party|Rhun Savaş Partisi
 pt_gondor_company|Minas Tirith Savaş Partisi
 pt_rohan_company|Rohan Birliği
-pt_imladris_company|Rivendell Birliği
+pt_imladris_company|Ayrıkvadi Birliği
 pt_lorien_company|Lothlorien Birliği
 pt_woodelf_company|Kuyutorman Birliği
 pt_dale_company|Dale Birliği
@@ -128,7 +128,7 @@ pt_dale_p_train|Dale Esir Kafilesi
 pt_dwarf_p_train|Cüce Esir Kafilesi
 pt_mordor_p_train|Mordor Esir Kafilesi
 pt_isengard_p_train|Isengard Esir Kafilesi
-pt_kingdom_hero_party|Savaş Grubu.
+pt_kingdom_hero_party|Savaş Grubu
 pt_caravan_survivors|Karavandan Kurtulanlar
 pt_routed_allies|Yenilmiş İttifaklar
 pt_routed_enemies|Yenilmiş Düşmanlar

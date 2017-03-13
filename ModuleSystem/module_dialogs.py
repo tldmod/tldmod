@@ -9,6 +9,7 @@ from ID_troops import *
 from ID_party_templates import *
 from header_troops import *
 from header_items import * #TLD
+from header_terrain_types import * #TLD
 
 from module_constants import *
 from module_info import wb_compile_switch as is_a_wb_dialog
@@ -2305,7 +2306,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (check_quest_succeeded, "qst_destroy_scout_camp"),
     (quest_get_slot, ":giver_troop", "qst_destroy_scout_camp", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
-    (quest_get_slot, ":quest_target_center", "qst_destroy_scout_camp", slot_quest_object_center),
+    (quest_get_slot, ":quest_target_center", "qst_destroy_scout_camp", slot_quest_target_center),
     (str_store_party_name,12,":quest_target_center")],
 "Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.", "lord_generic_mission_completed",[
    
@@ -3346,12 +3347,107 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                              (lt,":lords_quest",0)], 
 "Do you have any tasks for me?", "lord_request_mission_ask",[]],
 
-# TLD: Dwarf Lord takes Moria book, and gives player lotsa rank pts. Placeholder for now... (CppCoder)
+# TLD: Dwarf Lord takes Moria book, and gives player lotsa rank pts. Placeholder for now... (CppCoder) -- Reinplemented by Kham, Dialogue by Yarrum
 
-#[anyone|plyr,"lord_talk", [(eq, "$g_talk_troop", "trp_dwarf_lord"),(player_has_item, "itm_book_of_moria"),(eq, cheat_switch, 1)], "My lord, I found this book...", "dwarf_lord_book", []],
-#[anyone,"dwarf_lord_book", [(troop_remove_item, "trp_player", "itm_book_of_moria"),(call_script, "script_increase_rank", "fac_dwarf", 100)], "Give it to me, raw and wwwwrrrrigling...", "lord_pretalk", []],
+[anyone|plyr,"lord_talk", 
+  [(eq, "$g_talk_troop", "trp_dwarf_lord"),
+   (player_has_item, "itm_book_of_moria"),
+   (store_troop_faction, ":faction", "trp_player"),
+   (str_clear, s3),
+   (try_begin),
+      (eq, ":faction", "fac_dwarf"),
+      (str_store_string, s3, "@My king"),
+    (else_try),
+      (str_store_string, s3, "@Lord"),
+    (try_end)], 
+      "{s3}, I have a matter which I must bring to your attention.", "dwarf_lord_book", []],
 
-# TLD: End Dwarf Lord takes Moria book
+[anyone,"dwarf_lord_book", 
+  [], "Speak freely, {playername}.", "dwarf_lord_book_give", []],
+
+[anyone|plyr,"dwarf_lord_book_give", 
+  [], "I ventured deep into the Mines of Moria and found record of Balin's company.", "dwarf_lord_book_give_a", []],
+
+[anyone,"dwarf_lord_book_give_a", 
+  [], "You speak of my kin as though they are a memory. Is it so?", "dwarf_lord_book_give_b", []],
+
+[anyone|plyr,"dwarf_lord_book_give_b", 
+  [], "I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...", "dwarf_lord_book_give_c", 
+    [(troop_remove_item, "trp_player", "itm_book_of_moria")]],
+
+[anyone,"dwarf_lord_book_give_c", 
+  [], "'We cannot get out. We cannot get out...They are coming.'", "dwarf_lord_book_give_d", []],
+
+[anyone,"dwarf_lord_book_give_d", 
+  [], "So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.", "dwarf_lord_book_give_e", []],
+
+[anyone,"dwarf_lord_book_give_e", 
+  [], "You have done Erebor a great service, {playername}, and your deed will not go unrewarded.", "dwarf_lord_book_give_f", 
+    [(call_script, "script_increase_rank",   "fac_dwarf", 50),
+     (call_script, "script_add_faction_rps", "fac_dwarf", 300),]],
+
+[anyone|plyr,"dwarf_lord_book_give_f", 
+  [(store_troop_faction, ":faction", "trp_player"),
+   (str_clear, s3),
+   (try_begin),
+      (eq, ":faction", "fac_dwarf"),
+      (str_store_string, s3, "@my king"),
+    (else_try),
+      (str_store_string, s3, "@lord"),
+    (try_end)], 
+      "Thank you, {s3}.", "dwarf_lord_book_give_g", []],
+
+[anyone|plyr,"dwarf_lord_book_give_g", 
+  [], "What will you do now?", "dwarf_lord_book_give_h", []],
+
+[anyone,"dwarf_lord_book_give_h", 
+  [], "We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.", "dwarf_lord_book_give_i", []],
+
+[anyone|plyr,"dwarf_lord_book_give_i", 
+  [(check_quest_active|neg, "qst_oath_of_vengeance"),
+   (party_is_active, "p_town_moria"),
+   (store_troop_faction, ":faction", "trp_player"),
+   (str_clear, s3),
+   (str_clear, s4),
+   (try_begin),
+      (eq, ":faction", "fac_dwarf"),
+      (str_store_string, s3, "@my king"),
+      (str_store_string, s4, "@our"),
+    (else_try),
+      (str_store_string, s3, "@lord"),
+      (str_store_string, s4, "@your"),
+    (try_end)], 
+      "{s3}, I wish to help {s4} people avenge Balin and his company.", "dwarf_lord_avenge", []],
+
+[anyone|plyr,"dwarf_lord_book_give_i", 
+  [], "I wish you good luck with that.", "lord_pretalk", []],
+
+[anyone,"dwarf_lord_avenge", 
+  [], "Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.", "close_window", 
+    [(str_clear, s4),(str_clear, s3),(str_clear, s2),
+     (str_store_troop_name, s4, "$g_talk_troop"),
+     (store_troop_faction, ":target", "$g_talk_troop"),
+     (quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
+     (quest_set_slot, "qst_oath_of_vengeance", 5, "trp_dwarf_lord"), # CppCoder: remember source hero
+     (str_store_faction_name, s3, "fac_moria"),
+     (store_current_day, ":day"),
+     (quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
+     (quest_set_slot, "qst_oath_of_vengeance", 2, "fac_moria"), # target faction
+     (assign,":count", 0), # count and store initial killcount of target faction' parties
+     (try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+        (spawn_around_party,"p_main_party",":ptemplate"),
+        (store_faction_of_party,":fac", reg0),
+        (remove_party, reg0),
+        (this_or_next|eq, ":fac", "fac_moria"),
+        (store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+        (val_add,":count",":n"),
+     (try_end),
+     (quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+        (setup_quest_text, "qst_oath_of_vengeance"),
+        (str_store_string, s2, "@You swear an oath of vengeance against Moria. You must now destroy as many of the armies of Moria as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^(You must be the one to initiate the battles in order for it to count)."),
+        (call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player")]],
+
+# TLD: End Dwarf Lord takes Moria book - Implemented by Kham
 
 #TLD Dain II Ironfoot dialogue (Kolba, modified by CppCoder) -- begin
 
@@ -3453,8 +3549,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"ring_hunters_start",
 [],
-  "{playername}, I have heard of your exploits and you have made a name for yourself. I have a task specifically for such as yourself. You can deal with it however you wish.\
-  Bloodshed cannot be avoided, especially against this group I am about to send you of to. Do you have sufficient men?","ring_hunters_check",[]],
+  "{playername}, you have done great deeds and proven yourself worthy of the task I will now request of you. I trust you to deal with this matter as best you see fit, but know that our foe is dangerous and bloodshed will be unavoidable. Is your company strong enough for battle?","ring_hunters_check", []],
 
 [anyone|plyr,"ring_hunters_check",[
   (party_get_num_companions, ":party_size", "p_main_party"),(ge, ":party_size", 30),],
@@ -3468,7 +3563,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"ring_hunters_check_failed",
 [],
   "Then you are not ready for this task yet,{playername}. Go and gather more troops.","lord_pretalk",
-  [(display_message, "@You need to have a party of at least 30 strong to begin this quest", color_neutral_news),]],
+  [(display_message, "@Your party must be at least 30 strong to begin this quest", color_neutral_news),]],
  
 
 [anyone, "ring_hunters_1",
@@ -3495,7 +3590,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"ring_hunters_accept", ### Spawns Ring Hunter party near Beorn's House & Spawns Bandit Hideout near Mirkwood Forest
 [],
-  "You are brave, General. We will await news of your success","close_window",[
+  "With bravery in your heart and sharp steel in your hands you will, {playername}. We will await news of your success.","close_window",[
   (quest_set_slot,"qst_ring_hunters",slot_quest_target_troop,"$g_talk_troop"),
   (setup_quest_text, "qst_ring_hunters"),
   (str_store_string, s2, "@You were tasked to hunt down the bandits that have been recently wreaking havoc in the North. You can either attack them in their hideout near Mirkwood Forest or intercept them near Beorn's House."),
@@ -3515,15 +3610,15 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"ring_hunters_what",  ### Elf Lord Question
   [(eq,"$g_talk_troop","trp_imladris_lord"),],
-  "It is hard to know exactly what they want with this, but we can see that they are going through great lengths to find what they are looking for.\
-   All we can surmise is that this must be a powerful weapon of sorts, a weapon to be used to cause more destruction under the Dark Lord's name.",
+  "Designs of the Enemy are hidden from us, but we can see thes ruffians are bent on finding what they are looking for.\
+  I cannot reveal all that we know, for much hangs in the balance and secrecy is paramount. Whatever they seek must be a powerful weapon, one to be used to cause more destruction in the Dark Lord's name.",
    "ring_hunters_2",
    []],
 
 [anyone,"ring_hunters_what",  ### Dwarf Lord Question
   [(eq,"$g_talk_troop","trp_dwarf_lord"),],
-  "The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for these..\
-   Whether true or not, these must not fall into the Dark Lord's hands.",
+  "The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for them, or others like them...\
+   Whether true or not, they must not fall into the Dark Lord's hands.",
    "ring_hunters_2",
    []],
 
@@ -3533,13 +3628,13 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
  (eq, "$g_talk_troop","trp_imladris_lord"), 
  (check_quest_active,"qst_ring_hunters2"),
  (quest_slot_eq, "qst_ring_hunters2", slot_quest_current_state, 10)],
-  "My lord, I come bearing ill news.. Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for", "ring_hunter_party_defeated",
+  "My lord, I come bearing ill news... Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for", "ring_hunter_party_defeated",
  []],
 
 [anyone,"ring_hunter_party_defeated",
   [],
     "This is not ill news,{playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.\
-     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something.. a disturbance.", "ring_hunter_party_defeated2",
+     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something... a disturbance.", "ring_hunter_party_defeated2",
     []],
 
 [anyone|plyr,"ring_hunter_party_defeated2",
@@ -3569,27 +3664,27 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
  (eq, "$g_talk_troop","trp_imladris_lord"), 
  (check_quest_active,"qst_ring_hunters2"),
  (quest_slot_eq, "qst_ring_hunters2", slot_quest_current_state, 20)],
-  "My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. I also came across this", "ring_hunter_lair_defeated_elf",
+  "My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. They had this in their possession.", "ring_hunter_lair_defeated_elf",
  []],
 
 [anyone,"ring_hunter_lair_defeated_elf",
 [],
-  "This is a minor ring of power.", "ring_hunter_lair_defeated",
+  "I see, a ring, but not THE ring. Not even one of the great rings, yet not a mere trinket either. There is some power woven into it.", "ring_hunter_lair_defeated",
   []],
 
 [anyone|plyr,"ring_hunter_lair_defeated",
   [],
-  "Then we have prevented the Dark Lord from obtaining this, which he will undoubtly use to end more lives.","ring_hunter_lair_defeated2",
+  "Then we were right to snatch it from the Dark Lord’s fingers, before he could use it to spread his Shadow over the land and have it seep into the hearts of many.","ring_hunter_lair_defeated2",
   []],
 
 [anyone,"ring_hunter_lair_defeated2",
   [],
-    "You must keep this ring and use against the Dark Lord's forces. We know you will use it well.", "ring_hunter_lair_quest_end",
+    "You must keep this ring and use it to fight the Enemy and his armies. We trust you to use it well.", "ring_hunter_lair_quest_end",
   []],
 
 [anyone|plyr,"ring_hunter_lair_quest_end",
   [],
-    "This is a tremendous honour, my Lord. Thank you. I shall continue the battle against the Dark lord, and this will help tremendously.","close_window",
+    "This is an honour, my Lord, thank you! My heart will stay true and my arm strong.","close_window",
     [ (call_script,"script_increase_rank","$g_talk_troop_faction",20),
       (str_store_faction_name, s14, "$g_talk_troop_faction"),
       (add_xp_as_reward,500),
@@ -3613,16 +3708,16 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   [(check_quest_active, "qst_ring_hunters"),
    (eq,"$g_encountered_party","$qst_ring_hunter_party"),
   ],
-    "Look here, men. Another group to slaughter.","ring_hunters_party_attack",
+    "Look here, men. More lambs to the slaughter.","ring_hunters_party_attack",
   []],
 [anyone|plyr,"ring_hunters_party_attack",
   [],
-    "Your rampaging has come to an end.","ring_hunters_party_attack_2",
+    "Your rampage has come to an end.","ring_hunters_party_attack_2",
   []],
 
 [anyone,"ring_hunters_party_attack_2",
   [],
-    "Everyone, make sure you search their packs and their fingers. Save one to torture. Everything else you can eat.","close_window",
+    "Check their packs and their fingers. Save one to torture. Everyone else is for eating!","close_window",
   [
    (quest_set_slot,"qst_ring_hunters",slot_quest_current_state,14),
    (encounter_attack),
@@ -3637,7 +3732,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"ring_hunter_lair_defeat",
   [],
-    "This belongs to me now.","ring_hunter_lair_defeat2",
+    "It belongs to me now.","ring_hunter_lair_defeat2",
   [ (store_random_in_range, ":ring", 1, 3),
     (try_begin),
       (eq,":ring",1),
@@ -3649,7 +3744,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"ring_hunter_lair_defeat2",
   [],
-    "This defeat does not matter... our war party raged on! You are too late to save them!","close_window",
+    "Do you think you’ve won a great victory? A pale tattered shade of one, perhaps. Bah! Our warband marched out long before you arrived. You are too late to save those they went after!","close_window",
   [   (call_script,"script_end_quest","qst_ring_hunters"),
       (setup_quest_text, "qst_ring_hunters2"),
       (str_store_string, s2, "@You must return and report back that you have defeated the Ring Hunter leaders and have taken a magical ring."),
@@ -3664,24 +3759,24 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [party_tpl|pt_beorn_messenger,"start",
   [(str_store_troop_name,s1,"$qst_ring_hunter_lord")],
-    "General, we received a message from {s1} that a large bandit party was headed our way! We had no time to gather enough forces, and when we heard the sound of battle, we prepared for the worse!","beorn_message",
+    "My lord/lady, we received a warning from {s1} that a large outlaw warband was headed our way! Alas, there was no time to gather enough warriors. Having heard the sound of battle, we prepared for the worst!","beorn_message",
     []],
 [anyone|plyr,"beorn_message",
   [],
-    "That was no ordinary bandit party. They were a collection of the Dark Lord's best...however, their leaders were not here...They have a lair near Mirkwood Forest and I must make haste.","beorn_message2",
+    "That was no band of ordinary outlaws. They were the Dark Lord's worst of the worst, at least here in the North. Their leaders, however, were not here. Their den lies near Mirkwood Forest and I must make haste.","beorn_message2",
   []],
 [anyone,"beorn_message2",
   [],
-    "Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory","beorn_message_end",
+    "Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!","beorn_message_end",
     []],
 
 [anyone|plyr,"beorn_message_end",
-  [],
-    "Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.","beorn_message_close",
+  [(str_store_troop_name,s1,"$qst_ring_hunter_lord")],
+    "I must report back and tell {s1} about the battle. Go back to your village and dispatch scouts. There may be stragglers.","beorn_message_close",
     []],
 [anyone,"beorn_message_close",
   [],
-    "Yes, General. We will remain vigilant. We will continue our efforts to recruit more men from surrounding villages. Your victory today has inspired us all.","close_window",     
+    "Yes, commander. We shall remain vigilant and send for more men from the distant hamlets. Your victory today has inspired us all.","close_window",     
   [(store_encountered_party, ":beorn_m"),
    (call_script,"script_stand_back"),
    (call_script,"script_increase_rank","$g_talk_troop_faction",55),
@@ -4825,8 +4920,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_tell_mission", [
   (eq,"$random_quest_no","qst_destroy_scout_camp"),
-  (quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
-  (str_store_faction_name,s3,":scout_camp_faction")],
+  (quest_get_slot, ":target_center", "qst_destroy_scout_camp", slot_quest_target_center),
+  (str_store_party_name,s3,":target_center")],
     "{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.", "lord_mission_destroy_scout_camp_a",
 []],
 
@@ -4840,17 +4935,37 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 
 [anyone,"lord_mission_destroy_scout_camp_accept",[],
-  "We shall await news of your success","close_window",
+  "We shall await news of your success.","close_window",
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
-      (set_spawn_radius, 35),
-      (spawn_around_party,":quest_object_center",":quest_target_party_template"),
-      (assign, "$qst_destroy_scout_camp_party", reg0),
+      #(quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+      (assign, ":terrain_check", 0), # Check if spawned camp is not in weird terrain
+      (try_for_range, ":unused", 0, 10),
+        (eq, ":terrain_check",0),
+        (set_spawn_radius, 15),
+        (spawn_around_party,"$g_talk_troop",":quest_target_party_template"),
+        (try_begin),
+          (party_get_current_terrain, ":terrain_type", reg0),
+          (neq, ":terrain_type", rt_water),
+          (neq, ":terrain_type", rt_mountain),
+          (neq, ":terrain_type", rt_river),
+          (assign, "$qst_destroy_scout_camp_party", reg0),
+          (assign, ":terrain_check", 1),
+        (else_try),
+          (remove_party, reg0),
+        (try_end),
+      (try_end),
+      (try_begin), #last ditch effort, if 10 iterations of the above doesnt work, just spawn it, and hope for the best
+        (party_is_active, "$qst_destroy_scout_camp_party"),
+      (else_try),
+        (set_spawn_radius, 15),
+        (spawn_around_party,"$g_talk_troop",":quest_target_party_template"),
+        (assign, "$qst_destroy_scout_camp_party", reg0),
+      (try_end),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),
       (setup_quest_text,"$random_quest_no"),
-      (str_store_string, s2, "@{s9} asked you to destroy a scout camp."),
+      (str_store_string, s2, "@{s9} asked you to destroy a scout camp nearby."),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
       (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
       (call_script, "script_stand_back"),
@@ -4899,13 +5014,14 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   "Thank you, {playername}. Now go, quickly!","close_window",[
       (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (set_spawn_radius, 20),
+      (set_spawn_radius, 10),
       (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
       (assign, "$qst_defend_village_party", reg0),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),
       (setup_quest_text,"$random_quest_no"),
-      (str_store_string, s2, "@{s9} asked you to defend a village under attack."),
+      (str_store_party_name, s3, ":quest_giver_center"),
+      (str_store_string, s2, "@{s9} asked you to defend a village under attack near {s3}."),
       (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
       (call_script, "script_stand_back"),
@@ -4949,14 +5065,15 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   "Then what are you doing standing around here?","close_window",
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
-      (set_spawn_radius, 25),
-      (spawn_around_party,":quest_object_center",":quest_target_party_template"),
+      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+      (set_spawn_radius, 20),
+      (spawn_around_party,":quest_target_center",":quest_target_party_template"),
       (assign, "$qst_raid_village_party", reg0),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),
+      (str_store_party_name, s3, ":quest_target_center"),
       (setup_quest_text,"$random_quest_no"),
-      (str_store_string, s2, "@{s9} asked you to raid a village."),
+      (str_store_string, s2, "@{s9} asked you to raid a village near {s3}."),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
       (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
       (call_script, "script_stand_back"),
@@ -4964,7 +5081,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       ]],
 
 [anyone,"lord_raid_village_reject", [],
-    "The excuses of cowards. Go away, your cowardly stench is insulting", "close_window",
+    "The excuses of cowards. Go away, your cowardly stench is insulting.", "close_window",
 [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
 
 
@@ -9143,6 +9260,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                             (quest_get_slot, ":quest_target_amount", "qst_deliver_food", slot_quest_target_amount),
 							(assign, ":item_count",0),
 							(try_for_range, ":food_item", food_begin, food_end),
+                (neq, ":food_item", "itm_lembas"), # Lembas don't get counted - Kham
 								(store_item_kind_count, ":item_count_i", ":food_item"),
 								(val_add, ":item_count", ":item_count_i"),
 							(try_end),
@@ -9156,6 +9274,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 	  # remove a total of :to_give food items
 	  (try_for_range, ":food_item", food_begin, food_end),
 			(ge, ":to_give", 0),
+      (neq, ":food_item", "itm_lembas"), # Lembas don't get taken - Kham
 			(store_item_kind_count, ":item_count_i", ":food_item"),
 			(val_min, ":item_count_i", ":to_give" ),
 			(troop_remove_items, "trp_player", ":food_item", ":item_count_i"),

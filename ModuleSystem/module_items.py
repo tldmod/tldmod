@@ -25,6 +25,9 @@ from header_factions import *
 ####################################################################################################################
 #
 ###Some constants for ease of use.
+### Kham - Unused imods for mesh hack
+### Poor, Old, Cheap, Well_Made, Sharp, Deadly, Exquisite, Powerful, Rough, Robust, Tough, Trophy, Fresh, Day Old, Two-Day Old, Rotten
+
 imodbits_none = 0
 imodbits_polearm =        0#imodbit_cracked | imodbit_bent | imodbit_balanced
 imodbits_sword   =         0#imodbit_rusty | imodbit_chipped | imodbit_balanced |imodbit_tempered
@@ -80,7 +83,7 @@ items =[
 ["human_meat","Human_Flesh",[("human_flesh",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(50)|food_quality(80)|max_ammo(30),imodbits_none],
 ["maggoty_bread","Maggoty_Bread",[("maggoty_bread",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,32,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
 ["cram","Cram_Ration",[("cram",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,44,weight(10)|abundance(100)|food_quality(50)|max_ammo(50),imodbits_none],
-["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_unique|itp_consumable,0,200,weight(1.3)|abundance(10)|food_quality(80)|max_ammo(30),imodbits_none],
+["lembas","Lembas",[("lembas",0)],itp_type_goods|itp_unique|itp_consumable,0,200,weight(1.3)|abundance(10)|food_quality(80)|max_ammo(100),imodbits_none],
 ["smoked_fish","Smoked_Fish",[("smoked_fish",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,59,weight(15)|abundance(110)|food_quality(50)|max_ammo(50),imodbits_none],
 ["dried_meat","Dried_Meat",[("smoked_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,72,weight(15)|abundance(100)|food_quality(60)|max_ammo(50),imodbits_none],
 ["cattle_meat","Beef",[("raw_meat",0)],itp_shop|itp_type_goods|itp_consumable|itp_food,0,103,weight(20)|abundance(100)|food_quality(70)|max_ammo(70),imodbits_none],
@@ -204,7 +207,7 @@ items =[
 #["pilgrim_hood", "Pilgrim Hood",[("pilgrim_hood",0)], 0|itp_type_head_armor |itp_civilian  ,0, 35 , weight(1.25)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ###ARMOR
 #handwear
-["leather_gloves","Leather_Gloves",[("lthr_glove_L",0)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_cloth,[]],
+["leather_gloves","Leather_Gloves",[("lthr_glove_L",0), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_cloth,[]],
 ["mail_mittens","Mail_Mittens",[("mail_mitten_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(0.5)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
 # TLD civilian wear
@@ -716,7 +719,7 @@ items =[
 ["dunland_armor_h","Dun_Long_Fur_Armor",[("dunland_long_fur",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,900,weight(16)|head_armor(2)|body_armor(16)|leg_armor(9)|difficulty(0),imodbits_cloth,],
 ["dunland_armor_i","Dunnish_Hauberk",[("dunland_hauberk_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(23)|head_armor(2)|body_armor(22)|leg_armor(7)|difficulty(0),imodbits_armor,],
 ["dunland_armor_j","Dunland_Hauberk",[("dunland_hauberk_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(23)|head_armor(2)|body_armor(22)|leg_armor(10)|difficulty(0),imodbits_armor,],
-["dunland_armor_k","Dun_Chief_Armor",[("dunland_chieftain",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(26)|head_armor(2)|body_armor(25)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
+["dunland_armor_k","Dun_Chief_Armor",[("dunland_chieftain",0), ("dunland_chieftain_spirit",imodbit_old),("barf_skeleton_greaves", imodbit_poor)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(26)|head_armor(2)|body_armor(25)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
 #######HELMS##########
 ["dun_helm_a","Dunnish_Wolf_Cap",[("dunland_wolfcap",0)],itp_type_head_armor|itp_shop,0,300,weight(2)|head_armor(25)|difficulty(0),imodbits_cloth],
 ["dun_helm_b","Dunnish_Antler_Cap",[("dunland_antlercap",0)],itp_type_head_armor|itp_shop,0,200,weight(2)|head_armor(21)|difficulty(0),imodbits_cloth],
@@ -1177,7 +1180,7 @@ items =[
 ["good_mace","Mace",[("good_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,blunt)|thrust_damage(15,blunt),imodbits_weapon_bad],
 ["far_harad_shield_paint","Wicker_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])]],
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
-["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
+["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0), ("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
 ["whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
 #BANNERS 
 # TODO: PLEASE DO NOT CHANGE BANNER ORDER, THIS IS A PLANNED FEATURE FOR THE MORALE SYSTEM. -CC #
@@ -1203,7 +1206,7 @@ items =[
 ["galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique|itp_civilian,0,1,weight(225)|head_armor(60)|body_armor(80)|leg_armor(60)|difficulty(0),0,],
 ["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
 ["empty_legs","empty_legs",[("0",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
-["empty_head","empty head",[("0",0)],itp_type_head_armor|itp_unique|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
+["empty_head","empty head",[("0",0),("chieftainhelm",imodbit_old)],itp_type_head_armor|itp_unique|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],
 #### TLD REWARD ITEMS BEGIN
 # magic items begin
 ["ent_water","Strange_bowl_of_water",[("ent_water",0)],itp_unique|itp_type_goods,0,200,weight(2)|abundance(0)|0,imodbits_none],
@@ -1218,7 +1221,7 @@ items =[
 ["harad_totem_reward","Harad_Totem",[("harad_totem",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["elven_amulet_reward","Elven_Amulet",[("elven_amulet",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
 ["torque_reward","Evil_Torque",[("reward_torque",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|0,imodbits_none],
-["orc_brew","Orc_Brew",[("orc_brew",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|max_ammo(100),imodbits_none],
+["orc_brew","Orc_Brew",[("orc_brew",0)],itp_unique|itp_type_goods,0,1000,weight(0.2)|abundance(0)|max_ammo(150),imodbits_none],
 ["rohan_saddle","Saddle_of_Thengel",[("RohanSaddle",0)],itp_unique|itp_type_goods,0,5000,weight(4)|abundance(0)|0,imodbits_none],
 ["mearas_reward","Mearh_Stallion",[("mearh",0)],itp_type_horse|itp_unique,0,400,hit_points(180)|body_armor(60)|difficulty(2)|horse_speed(45)|horse_maneuver(40)|horse_charge(40),imodbits_horse_basic|0],
 ["sword_of_arathorn","Arathorn's_Sword",[("aragorn_sword",0),("scab_aragorn_sword",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_bonus_against_shield|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,2000,weight(2.05)|difficulty(15)|spd_rtng(110)|weapon_length(120)|swing_damage(40,pierce)|thrust_damage(30,pierce),imodbits_weapon_good],

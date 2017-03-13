@@ -80,7 +80,7 @@ qstr_Attributes|属性
 qstr_Skills|技能
 ; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 qstr_Proficiencies|熟练度
-; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
+qstr_1H_Weapons^2H_Weapon|1H武器^ 2H武器^弩弓^射箭^弩弓^投掷
 qstr_Equipments|装备
 qstr_You_gained_{reg0}_Re|你获得了来自 {s0}的 {reg0}点资源点
 qstr_You_lost_{reg0}_Reso|你失去了来自 {s0}的 {reg0}点资源点
@@ -120,7 +120,7 @@ qstr_You_were_wounded_in_|你在Fangorn受伤了！
 qstr_Volunteers|志愿者
 qstr_{s1}_of_{s3}_was_def| {s3}的{s1}  在戰場上被擊敗了
 qstr_{s2}_have_razed_{s1}|{s2}已经被{s1}夷为平地！
-; qstr_Left_for_dead_but_mi|Left for dead but miraculously survived: {reg1?{reg1} time{reg2?s:}:NEVER}
+qstr_Left_for_dead_but_mi|离开了死亡，但奇迹般生存: {reg1?{reg1} time{reg2?s:}:NEVER}
 qstr_1_Res.Pt__{s2}_|1资源点({s2})
 qstr_{reg1}_Res.Pts__{s2}|{reg1}资源点({s2})
 qstr_+30_to_Party_Morale|+30 团队士气
@@ -153,8 +153,8 @@ qstr_+1_to_Prisoner_Mgmt|+1 俘虏管理
 qstr_+2_to_Crafting|+2 工程学
 qstr_+3_to_Spotting|+3 侦查
 qstr_Less_Beorning_upkeep|缺乏波宁给养
-; qstr_Less_Dunnish_upkeep|Less Dunnish upkeep
-; qstr_Less_Wargs_upkeep|Less Wargs upkeep
+qstr_Less_Dunnish_upkeep|减少丹尼斯维护
+qstr_Less_Wargs_upkeep|减少维护
 qstr_+{reg1}_to_Party_Mor|+{reg1}部队士气
 qstr_Do_you_want_to_disem|你想登陆？
 qstr_Move_here|移动到这里
@@ -170,7 +170,7 @@ qstr_{reg4}_wounded_{reg5|{reg4} 负伤, {reg5} 被击溃
 qstr_killed|杀死
 qstr_routed|击溃
 qstr_wounded|受傷的
-; qstr_{s0}^TOTAL:_{reg3}__|{s0}^TOTAL: {reg3} ({s2})
+qstr_{s0}^TOTAL:_{reg3}__|{s0}^共计: {reg3} ({s2})
 qstr_None|無
 qstr_^None|^无
 qstr_near_the_Great_East_|靠近东大路的废弃小路
@@ -315,7 +315,7 @@ qstr_Blunt_Weapons|钝击武器
 qstr_Infantry__{reg1}_|近战部队({reg1})
 qstr_Archers__{reg2}_|远程部队({reg2})
 qstr_Cavalry__{reg3}_|骑乘部队({reg3})
-; qstr_Orc_brew_finished!|Orc brew finished!
+qstr_Orc_brew_finished!|兽人酿造完成！
 qstr_Given_by:_{s62}|给予人：{s62}
 qstr_Given_on:_{s60}|开始于：{s60}
 qstr_You_have_{reg0}_days|你还有{reg0}天来完成这个任务。
@@ -334,14 +334,14 @@ qstr_{s11}_{s12}|{s11}，{s12}
 qstr_{s5}_is_ruled_by_{s6|{s5}由{s6}统治。^它占据着{s8}。^它的封臣分别是{s10}。^{s5}正与{s12}交战。
 qstr_{s5}_has_been_defeat|{s5}被击败了！
 qstr_{s5}_has_a_strength_|{s5}的军队共有{reg1}人。
-; qstr_no_holdings|no holdings
+qstr_no_holdings|没有持有
 qstr_{s57}_and_{s58}|{s57}和{s58}
 qstr_{s57}_{s58}|{s57}，{s58}
 qstr_{reg3?She:He}|{reg3?她:他}
 qstr_{reg6?:{reg4?{s54}_i|{reg4?{s54}是{s56}的统治者.^:{s54}是{s56}的{s55}的一位封臣。^}.^}}{reg9?{reg3?她:他}是{s58}的{reg3?女领主:领主}.:}{s59}{reg10?^{reg3?她:他}已经战死!:}
 qstr_The_last_time_you_sa|上一次你见到{reg1?她:他}，{s1}
 qstr_The_last_time_you_he|上一次你听说到{reg1?她:他}，{s1}
-; qstr_The_{s50}|The {s50}
+qstr_The_{s50}|这个{s50}
 qstr_{s50}_belongs_to_{s1|{s50}属于{s2}的{s1}.^
 qstr_Current_garrison_con|当前的守城部队有{reg5}人。^共有{reg6}天的存粮。
 qstr_Very_Poor|非常贫穷
@@ -433,7 +433,7 @@ qstr_You_were_grievously_woun|你在战斗中受伤了，你的身边堆满了�
 qstr_Some_of_your_compani|你的一些同伴正遭受的旧伤的困扰.
 qstr_Item_you_just_equipp|刚才的物品不适合这个种族的人物，它将从装备栏移除，请保持物品栏有足够的空位否则您将失去这个物品。
 qstr_Inappropriate_equipm|不合适的装备
-; qstr_The_mount_you_just_e|The mount you just equipped does not fit characters of this race. Be warned that there will be problems with the animal behaviour on the battlefield, if you leave it as this
+qstr_The_mount_you_just_e|你刚刚装备的座位不适合这个种族的人物。警告，如果你把它留在这里，战场上的动物行为会有问题
 qstr_Inappropriate_mount|正确的安装
 qstr_{s24}:_Some_of_your_|{s24}:你的一些伤口痊愈了!
 qstr_{s24}:_Your_infantry|{s24}:你的步兵感觉好多了!
@@ -499,19 +499,19 @@ qstr_Your_troops_flee_in_|你的部队因恐惧而临阵脱逃！
 qstr_Many_of_your_troops_|大部分你的部队临阵脱逃了。
 qstr_Some_of_your_troops_|一些你的部队临阵脱逃了。
 qstr_A_few_of_your_troops|几个你的部队临阵脱逃了。
-; qstr_No_Troops_Left.|No Troops Left.
+qstr_No_Troops_Left.|没有队伍。
 qstr_Your_mount_stumbles!|你的坐骑绊倒了！看起来像是瘸腿了.
 qstr_Bitten_by_your_own_w|你被你的座狼咬了!
 qstr_You_weigh_too_much_f|你太重了，骑不起小型马!
 qstr_Your_mount_rears_ref|你的坐骑受到惊吓！不服从你的命令！
-; qstr_Fixed_Custom_Camera|Fixed Custom Camera
-; qstr_Press_Left_/_Right_A|Press Left / Right Arrow Keys to Switch Shoulders
-; qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
-; qstr_Use_+/__to_zoom_in/o|Use +/- to zoom in/out
-; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
-; qstr_Default_Camera|Default Camera
-; qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
-; qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
+qstr_Fixed_Custom_Camera|固定相机
+qstr_Press_Left_/_Right_A|按向左/向右箭头键切换肩位
+qstr_Free_Mode_Custom_Cam|自由模式相机
+qstr_Use_+/__to_zoom_in/o|使用+/-可放大/缩小
+qstr_Use_Up/Down_arrow_ke|使用向上/向下箭头键向上/向下倾斜
+qstr_Default_Camera|默认相机
+qstr_Fixed_Camera___Right|固定相机 - 右肩
+qstr_Fixed_Camera___Left_|固定相机 - 左肩
 qstr_Cannot_leave_now.|现在不能离开。
 qstr_You_have_found_the_l|你找到当地的铁匠...
 qstr_You_have_found_the_lo|你找到当地的权威人士...
@@ -532,7 +532,7 @@ qstr_You_cower_in_terror_|你在戒灵恐怖的叫声中退缩!
 qstr_knocked_unconscious|撞晕
 qstr_Nazgul_diving_attack|戒灵正在攻击{s11}！
 qstr_{s11}_is_{s10}_in_th|{s11}和{s10}正在被戒灵攻击！
-; qstr_{s1}_s_morale:_{reg1|{s1}'s morale: {reg1}
+qstr_{s1}_s_morale:_{reg1|{s1}的士气：{reg1}
 qstr_You_rally_your_troop|你集合了你的部队！
 qstr_{s5}_rallies_his_tro|{s5}集合了他的部队！
 qstr_You_have_killed_{reg|你在战斗中杀死了{reg1}名敌人！
@@ -546,7 +546,7 @@ qstr_{s1}_{s2}_and_{s3}|{s1}，{s2}还有{s3}
 qstr_{s10}_Move_over_ther|{s10}，去那边！
 qstr_You_have_a_clear_per|你必须清楚在你身边有一个大危机。
 qstr_New_ent_reached_batt|新的树人加入战斗...
-; qstr_You_receive_word_tha|You receive word that Beorning villages were attacked. Beornings lose faction strength.
+qstr_You_receive_word_tha|你收到的讯息，比翁人村庄被攻击。比翁人失去派系力量。
 ; qstr_You_receive_word_that|You receive word that the Ring Hunter Leaders were seen travelling towards Mordor, a chest in tow. Mordor gains faction strength.
 qstr_On_your_positions_bi|守住阵地，混蛋！
 qstr_Defenders:_infantry_|守军:步兵，向前冲锋!!
@@ -560,7 +560,7 @@ qstr_The_ladders_on_Deepi|梯子从城墙上掉下来了！小心！
 qstr_You_yell_for_your_ho|你对你的马大喊
 qstr_THREE.._TWO..._ONE..|三...二...一...上！
 ; qstr_You_have_found_the_D|You have found the Dwarven Warehouse where the Legendary Spears could be. Report what you find to {s3}
-; qstr_Leave_the_Warehouse?|Leave the Warehouse?
+qstr_Leave_the_Warehouse?|离开仓库？
 qstr_Leave_the_place_in_s|悄悄的离开此地？
 qstr_Leave_scene?|离开现场？
 ; qstr_Trace_back_your_step|Trace back your steps and go back in the open now?
@@ -606,7 +606,7 @@ qstr_You_are_suffering_from_|你遭遇了{s1}{s2}{s3}和{s4}.
 qstr_Weekly_upkeep_for_tr|每周兵种工资:^{reg5}资源点^
 qstr_{s12}^__{s4}:_{reg4}|{s12}^{s4}:{reg4}资源点({reg5})
 qstr_No_upkeep_costs|没有工资支出
-; qstr_Orc_hiring_bonus:_+2|Orc hiring bonus: +2/3 for each orc^
+qstr_Orc_hiring_bonus:_+2|兽人招聘奖金：+2/3每个兽人 ^
 qstr_Current_party_size_l|当前部队上限的修正为：^^因基础人数：+10^因玩家统御：{s2}{reg1}^因玩家魅力：{s3}{reg2}^Ranks:{s4}{reg3}^总计:{reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|阵营实力报告:^{s2}
@@ -1043,15 +1043,15 @@ qstr__RESOURCE_POINT_TUTOR|(资源点教程 )^^你可以用来向比翁的人购
 ; qstr_You_will_not_be_diss|You will not be dissapointed {sir/madam}. You will not find better warriors in all Calradia.
 qstr_What_an_amazing_feat|多么华丽的武器！
 qstr_Well_done!|做得好！
-; qstr_Nice_legwork.|Nice legwork.
+qstr_Nice_legwork.|跑腿工作做得不错。
 qstr_Heh.|嗨
-; qstr_Good_moves_but_you_m|Good moves, but you may still need some work to do.
-; qstr_More_than_half_of_th|More than half of the opponents, not bad.
-; qstr_You_ll_need_to_try_h|You'll need to try harder than that.
+qstr_Good_moves_but_you_m|好的举动，但你可能仍需要一些工作来做。
+qstr_More_than_half_of_th|超过一半的对手，不错。
+qstr_You_ll_need_to_try_h|你需要更努力尝试。
 qstr_Well..._better_here_|好吧...在这里好过在战场，对吧？
 qstr_town|城鎮
 qstr_village|村莊
-; qstr_The_{s9}_of_{s13}_ha|The {s9} of {s13} has asked you to deal with tribal orcs in the surrounding countryside.
+qstr_The_{s9}_of_{s13}_ha|{s9} {s13}要求您在周围乡村处理部落兽人。
 qstr_{s9}_of_{s3}_asked_y|{s3}的{s9}请你在{reg6}天内带{reg5}单位的{s6}给{s4}的{s10}。
 qstr_The_{s9}_of_{s3}_ask|{s3}的{s9}让您在{reg6}天之内给他带去{reg5}单位的食物。
 qstr_The_{s9}_of_{s3}_aske|{s3}的{s9}让您在{reg0}天之内带给他{reg5}单位的{s6}。
