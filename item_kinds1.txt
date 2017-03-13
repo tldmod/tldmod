@@ -30,7 +30,7 @@ itemsfile version 2
  itm_cram Cram_Ration Cram_Ration 1  cram 0  34144267 0 44 0 10 100 50 0 0 0 0 0 0 0 50 0 0
 0
 
- itm_lembas Lembas Lembas 1  lembas 0  33558539 0 200 0 1.25 10 80 0 0 0 0 0 0 0 30 0 0
+ itm_lembas Lembas Lembas 1  lembas 0  33558539 0 200 0 1.25 10 80 0 0 0 0 0 0 0 100 0 0
 0
 
  itm_smoked_fish Smoked_Fish Smoked_Fish 1  smoked_fish 0  34144267 0 59 0 15 110 50 0 0 0 0 0 0 0 50 0 0
@@ -2601,7 +2601,7 @@ itemsfile version 2
  itm_torque_reward Evil_Torque Evil_Torque 1  reward_torque 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 100 0 0
+ itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 150 0 0
 0
 
  itm_rohan_saddle Saddle_of_Thengel Saddle_of_Thengel 1  RohanSaddle 0  4107 0 5000 0 4 100 0 0 0 0 0 0 0 0 0 0 0

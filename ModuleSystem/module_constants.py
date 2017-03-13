@@ -2195,7 +2195,7 @@ tld_gifts_per_faction			= 5
 # These are for the Warband command cursor to work with formations
 tld_cursor_undefined			= -1
 tld_cursor_arrow_mode			= -2
-tld_cursor_time				= 20
+tld_cursor_time				= 10
 
 
 ##### Kham Constant Additions ######

@@ -536,6 +536,20 @@ formAI_scripts = [
 				(call_script, "script_formation_end", ":team_no", grc_infantry),
 				(team_give_order, ":team_no", grc_infantry, mordr_charge),
 				#(display_message, "@Infantry decided to whelm."), #############
+
+			(else_try), #Kham - Make infantry charge when enemy is close
+		        (get_distance_between_positions, reg0, Infantry_Pos, Nearest_Enemy_Troop_Pos),
+		        (this_or_next|le, ":enemy_from_infantry", 1300), # Start charge if enemy infantry formation is close
+		        (this_or_next|le, ":enemy_from_archers", 1300), # Start charge if enemy archer group is close.
+		        (le, reg0, 800), # Start charge if any enemies are really close.
+		        (call_script, "script_formation_end", ":team_no", grc_infantry),
+						(team_get_movement_order, reg0, ":team_no", grc_infantry),
+		        (team_give_order, ":team_no", grc_infantry, mordr_hold_fire), # Hold fire while charging to keep infantry together.
+						(try_begin),
+							(neq, reg0, mordr_charge),
+							(team_give_order, ":team_no", grc_infantry, mordr_charge),
+						(try_end),  #Kham - changes end
+						#(display_message, "@DEBUG: Infantry decides to charge!"),
 				
 			#else attempt to form formation somewhere
 			(else_try),
@@ -2063,35 +2077,69 @@ formAI_scripts = [
 		(store_div, ":wedge_adj", ":distance", 2),
 		(store_div, ":neg_wedge_adj", ":neg_distance", 2),
 		(val_add, ":max_level", 1),
-		(try_for_range_backwards, ":rank_level", 0, ":max_level"),	#put troops with highest exp in front
-			(try_for_agents, ":agent"),
-				(agent_get_troop_id, ":troop_id", ":agent"),
-				(store_character_level, ":troop_level", ":troop_id"),
-				(eq, ":troop_level", ":rank_level"),				
-				(call_script, "script_cf_valid_formation_member", ":fteam", grc_infantry, ":fleader", ":agent"),
-				(agent_set_scripted_destination, ":agent", pos1, 1),
-				(try_begin),
-					(eq, ":form_left", 1),
-					(position_move_x, pos1, ":neg_distance", 0),
-				(else_try),
-					(position_move_x, pos1, ":distance", 0),
+		(try_begin), #kham - orc troops go in front
+			(try_for_range, ":rank_level", 0, ":max_level"),	#put troops with lowest exp in front
+				(try_for_agents, ":agent"),
+					(agent_get_troop_id, ":troop_id", ":agent"),
+					(troop_get_type, ":race", ":troop_id"),
+					(is_between, ":race", tf_orc_begin, tf_orc_end),
+					(store_character_level, ":troop_level", ":troop_id"),
+					(eq, ":troop_level", ":rank_level"),				
+					(call_script, "script_cf_valid_formation_member", ":fteam", grc_infantry, ":fleader", ":agent"),
+					(agent_set_scripted_destination, ":agent", pos1, 1),
+					(try_begin),
+						(eq, ":form_left", 1),
+						(position_move_x, pos1, ":neg_distance", 0),
+					(else_try),
+						(position_move_x, pos1, ":distance", 0),
+					(try_end),
+					(val_add, ":column", 1),
+					(gt, ":column", ":rank_dimension"),
+					(position_move_y, pos1, ":neg_distance", 0),
+					(try_begin),
+						(neq, ":form_left", 1),
+						(assign, ":form_left", 1),
+						(position_move_x, pos1, ":neg_wedge_adj", 0),
+					(else_try),
+						(assign, ":form_left", 0),
+						(position_move_x, pos1, ":wedge_adj", 0),
+					(try_end),			
+					(assign, ":column", 1),
+					(val_add, ":rank_dimension", 1),
 				(try_end),
-				(val_add, ":column", 1),
-				(gt, ":column", ":rank_dimension"),
-				(position_move_y, pos1, ":neg_distance", 0),
-				(try_begin),
-					(neq, ":form_left", 1),
-					(assign, ":form_left", 1),
-					(position_move_x, pos1, ":neg_wedge_adj", 0),
-				(else_try),
-					(assign, ":form_left", 0),
-					(position_move_x, pos1, ":wedge_adj", 0),
-				(try_end),			
-				(assign, ":column", 1),
-				(val_add, ":rank_dimension", 1),
+			(try_end),
+		(else_try),
+			(try_for_range_backwards, ":rank_level", 0, ":max_level"),	#put troops with highest exp in front
+				(try_for_agents, ":agent"),
+					(agent_get_troop_id, ":troop_id", ":agent"),
+					(troop_get_type, ":race", ":troop_id"),
+					(neg|is_between, ":race", tf_orc_begin, tf_orc_end),
+					(store_character_level, ":troop_level", ":troop_id"),
+					(eq, ":troop_level", ":rank_level"),				
+					(call_script, "script_cf_valid_formation_member", ":fteam", grc_infantry, ":fleader", ":agent"),
+					(agent_set_scripted_destination, ":agent", pos1, 1),
+					(try_begin),
+						(eq, ":form_left", 1),
+						(position_move_x, pos1, ":neg_distance", 0),
+					(else_try),
+						(position_move_x, pos1, ":distance", 0),
+					(try_end),
+					(val_add, ":column", 1),
+					(gt, ":column", ":rank_dimension"),
+					(position_move_y, pos1, ":neg_distance", 0),
+					(try_begin),
+						(neq, ":form_left", 1),
+						(assign, ":form_left", 1),
+						(position_move_x, pos1, ":neg_wedge_adj", 0),
+					(else_try),
+						(assign, ":form_left", 0),
+						(position_move_x, pos1, ":wedge_adj", 0),
+					(try_end),			
+					(assign, ":column", 1),
+					(val_add, ":rank_dimension", 1),
+				(try_end),
 			(try_end),
 		(try_end),
-		
 	(else_try),
 		(eq, ":infantry_formation", formation_ranks),
 		(store_div, ":rank_dimension", ":num_troops", 3),		#basic three ranks
@@ -2107,9 +2155,12 @@ formAI_scripts = [
 
 		(assign, ":column", 1),
 		(val_add, ":max_level", 1),
-		(try_for_range_backwards, ":rank_level", 0, ":max_level"),	#put troops with highest exp in front
+		(try_begin), #Kham - Orcs go in front
+		(try_for_range, ":rank_level", 0, ":max_level"),	#put troops with lowest exp in front
 			(try_for_agents, ":agent"),
 				(agent_get_troop_id, ":troop_id", ":agent"),
+				(troop_get_type, ":race", ":troop_id"),
+				(is_between, ":race", tf_orc_begin, tf_orc_end),
 				(store_character_level, ":troop_level", ":troop_id"),
 				(eq, ":troop_level", ":rank_level"),				
 				(call_script, "script_cf_valid_formation_member", ":fteam", grc_infantry, ":fleader", ":agent"),
@@ -2134,7 +2185,37 @@ formAI_scripts = [
 				(assign, ":column", 1),
 			(try_end),
 		(try_end),
-		
+		(else_try),
+		(try_for_range_backwards, ":rank_level", 0, ":max_level"),	#put troops with highest exp in front
+			(try_for_agents, ":agent"),
+				(agent_get_troop_id, ":troop_id", ":agent"),
+				(troop_get_type, ":race", ":troop_id"),
+				(neg|is_between, ":race", tf_orc_begin, tf_orc_end),
+				(store_character_level, ":troop_level", ":troop_id"),
+				(eq, ":troop_level", ":rank_level"),				
+				(call_script, "script_cf_valid_formation_member", ":fteam", grc_infantry, ":fleader", ":agent"),
+				(agent_set_scripted_destination, ":agent", pos1, 1),
+				(try_begin),
+					(eq, ":form_left", 1),
+					(position_move_x, pos1, ":neg_distance", 0),
+				(else_try),
+					(position_move_x, pos1, ":distance", 0),
+				(try_end),
+				(val_add, ":column", 1),
+				(gt, ":column", ":rank_dimension"),
+				(position_move_y, pos1, ":neg_distance", 0),
+				(try_begin),
+					(neq, ":form_left", 1),
+					(assign, ":form_left", 1),
+					(position_move_x, pos1, ":neg_distance", 0),
+				(else_try),
+					(assign, ":form_left", 0),
+					(position_move_x, pos1, ":distance", 0),
+				(try_end),			
+				(assign, ":column", 1),
+			(try_end),
+		(try_end),
+		(try_end),
 	(else_try),
 		(eq, ":infantry_formation", formation_shield),
 		(store_div, ":rank_dimension", ":num_troops", 3),		#basic three ranks
@@ -2147,6 +2228,34 @@ formAI_scripts = [
 			(gt, ":agent_weapon", -1),
 			(item_get_type, ":agent_weapon_type", ":agent_weapon"),
 			(eq, ":agent_weapon_type", itp_type_shield),
+			(agent_set_scripted_destination, ":agent", pos1, 1),
+			(try_begin),
+				(eq, ":form_left", 1),
+				(position_move_x, pos1, ":neg_distance", 0),
+			(else_try),
+				(position_move_x, pos1, ":distance", 0),
+			(try_end),
+			(val_add, ":column", 1),
+			(gt, ":column", ":rank_dimension"),
+			(position_move_y, pos1, ":neg_distance", 0),
+			(try_begin),
+				(neq, ":form_left", 1),
+				(assign, ":form_left", 1),
+				(position_move_x, pos1, ":neg_distance", 0),
+			(else_try),
+				(assign, ":form_left", 0),
+				(position_move_x, pos1, ":distance", 0),
+			(try_end),			
+			(assign, ":column", 1),
+		(try_end),
+	#Low Level Orcs - Kham
+		(try_for_agents, ":agent"),
+			(call_script, "script_cf_valid_formation_member", ":fteam", grc_infantry, ":fleader", ":agent"),
+			(agent_get_troop_id, ":troop_id", ":agent"),
+			(troop_get_type, ":race", ":troop_id"),
+			(is_between, ":race", tf_orc_begin, tf_orc_end),
+			(store_character_level, ":troop_level", ":troop_id"),
+			(le, ":troop_level", 9),
 			(agent_set_scripted_destination, ":agent", pos1, 1),
 			(try_begin),
 				(eq, ":form_left", 1),
@@ -2774,6 +2883,8 @@ formAI_scripts = [
 				(assign, "$infantry_space", formation_start_spread_out),	#spread out for ease of forming up
 			(try_end),
 			(try_begin),
+				(call_script, "script_formation_end", "$fplayer_team_no", grc_infantry), #Kham - Band-aid Fix for Troops being unresponsive after forming up by breaking formations first, before forming up.
+				#(display_message, "@DEBUG: Infantry breaking formation before forming up again"),
 				(call_script, "script_cf_formation", "$fplayer_team_no", grc_infantry, "$infantry_space", "$infantry_formation_type"),
 				(try_begin),
 					(eq, ":new_formation", 1),
@@ -2800,6 +2911,8 @@ formAI_scripts = [
 				(assign, "$cavalry_space", formation_start_spread_out),	#spread out for ease of forming up
 			(try_end),
 			(try_begin),
+				(call_script, "script_formation_end", "$fplayer_team_no", grc_cavalry),  #Kham - Band-aid Fix for Troops being unresponsive after forming up by breaking formations first, before forming up.
+				#(display_message, "@DEBUG: Cavalry breaking formation before forming up again"),
 				(call_script, "script_cf_formation", "$fplayer_team_no", grc_cavalry, "$cavalry_space", "$cavalry_formation_type"),
 				(try_begin),
 					(eq, ":new_formation", 1),
@@ -2826,6 +2939,8 @@ formAI_scripts = [
 				(assign, "$archer_space", formation_start_spread_out),	#spread out for ease of forming up
 			(try_end),
 			(try_begin),
+				(call_script, "script_formation_end", "$fplayer_team_no", grc_archers),  #Kham - Band-aid Fix for Troops being unresponsive after forming up by breaking formations first, before forming up.
+				#(display_message, "@DEBUG: Archers breaking formation before forming up again"),
 				(call_script, "script_cf_formation", "$fplayer_team_no", grc_archers, "$archer_space", "$archer_formation_type"),
 				(try_begin),
 					(eq, ":new_formation", 1),
@@ -4093,7 +4208,9 @@ formAI_scripts = [
           (this_or_next|lt, ":min_dist", 1000),
           (lt, ":avg_dist", 4000),
           (assign, ":battle_tactic", 0),
-		  (call_script, "script_formation_end", ":team_no", grc_everyone),	#formations
+		  (call_script, "script_formation_end", ":team_no", grc_infantry),	#formations code
+		  (call_script, "script_formation_end", ":team_no", grc_archers),	#formations code
+		  (call_script, "script_formation_end", ":team_no", grc_cavalry),	#formations code
           (team_give_order, ":team_no", grc_everyone, mordr_charge),
         (try_end),
       (else_try),
@@ -4144,13 +4261,17 @@ formAI_scripts = [
             (lt, ":distance_to_enemy", 50),
             (ge, ":mission_time", 30),
             (assign, ":battle_tactic", 0),
-			(call_script, "script_formation_end", ":team_no", grc_everyone),	#formations code
+			(call_script, "script_formation_end", ":team_no", grc_infantry),#formations code
+			(call_script, "script_formation_end", ":team_no", grc_archers),	#formations code
+			(call_script, "script_formation_end", ":team_no", grc_cavalry),	#formations code
             (team_give_order, ":team_no", grc_everyone, mordr_charge),
             (agent_set_speed_limit, ":ai_leader", 60),
           (try_end),
         (else_try),
           (assign, ":battle_tactic", 0),
-		  (call_script, "script_formation_end", ":team_no", grc_everyone),	#formations code
+		  (call_script, "script_formation_end", ":team_no", grc_infantry),	#formations code
+		  (call_script, "script_formation_end", ":team_no", grc_archers),	#formations code
+		  (call_script, "script_formation_end", ":team_no", grc_cavalry),	#formations code
           (team_give_order, ":team_no", grc_everyone, mordr_charge),
         (try_end),
       (try_end),
@@ -4159,7 +4280,9 @@ formAI_scripts = [
         (neq, ":battle_tactic", 0),
         (ge, ":mission_time", 300),
         (assign, ":battle_tactic", 0),
-		(call_script, "script_formation_end", ":team_no", grc_everyone),	#formations code
+	 	(call_script, "script_formation_end", ":team_no", grc_infantry),#formations code
+		(call_script, "script_formation_end", ":team_no", grc_archers),	#formations code
+		(call_script, "script_formation_end", ":team_no", grc_cavalry),	#formations code
         (team_give_order, ":team_no", grc_everyone, mordr_charge),
         (team_get_leader, ":ai_leader", ":team_no"),
         (agent_set_speed_limit, ":ai_leader", 60),

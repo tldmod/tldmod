@@ -300,3 +300,5 @@ scn_khand_camp_siege = 298
 scn_north_rhun_camp_siege = 299
 scn_rhun_south_camp_siege = 300
 scn_rhun_north_camp_siege = 301
+scn_village_gondor = 302
+scn_village_rohan = 303

@@ -676,7 +676,7 @@ mission_templates = [ # not used in game
 			(lt, ":dist", 300),
 			(party_set_slot, "$current_town", slot_weaponsmith_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
-			(display_message, "@You_have_found_the_local_smithy..."),
+			(display_message, "@You_have_found_the_local_smithy... (+50 XP)"),
       (add_xp_as_reward, 50),
 		(try_end),      
 		(try_begin),
@@ -687,7 +687,7 @@ mission_templates = [ # not used in game
 			(lt, ":dist", 300),
 			(party_set_slot, "$current_town", slot_elder_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
-			(display_message, "@You_have_found_the_local_authority..."),
+			(display_message, "@You_have_found_the_local_authority...(+50 XP)"),
       (add_xp_as_reward, 50),
 		(try_end),      
 		(try_begin),
@@ -698,7 +698,7 @@ mission_templates = [ # not used in game
 			(lt, ":dist", 300),
 			(party_set_slot, "$current_town", slot_merchant_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
-			(display_message, "@You_have_found_the_local_warehouse..."),
+			(display_message, "@You_have_found_the_local_warehouse...(+50 XP)"),
       (add_xp_as_reward, 50),
 		(try_end)]),
 ]),
@@ -1696,7 +1696,7 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       # Player
-      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,10,[]),
+      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
 
       # Companions (Add more for more companions)
       (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
@@ -1746,9 +1746,6 @@ mission_templates = [ # not used in game
 
   (0, 0, ti_once, 
   [
-    #(str_store_troop_name, s1, reg20),
-    #(display_message, "@DEBUG: Enemy to spawn: {s1}"),
-    #(display_message, "@DEBUG: Enemies to spawn: {reg21}"),
 
     # Make enemies charge...
     (set_show_messages, 0),
@@ -3165,9 +3162,86 @@ mission_templates = [ # not used in game
 	common_siege_assign_men_to_belfry,
 	common_siege_ai_trigger_init_2,
 ]),
+
+( "custom_battle_form_test",mtf_battle_mode,-1,
+  "You lead your men into battle",
+ [
+  # Player
+  (0,mtef_team_0|mtef_use_exact_number,af_override_horse,aif_start_alarmed,30,[]),
+
+  # Companions (Add more for more companions)
+  (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (2,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (3,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (4,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (5,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (6,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (7,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (8,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (9,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (10,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (11,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (12,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (13,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (14,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (15,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+  (16,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+
+  # Enemies:
+  (17,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (18,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (19,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (20,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (21,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (22,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (23,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (24,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (25,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (26,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (27,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (28,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (29,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+  (30,mtef_visitor_source|mtef_team_1,0,0,1,[]),
+
+ ],
+  # Triggers
+  tld_common_wb_muddy_water +
+  formations_triggers + 
+  AI_triggers + 
+  common_deathcam_triggers + 
+  tld_common_battle_scripts + 
+  command_cursor_sub_mod + [
+  common_battle_tab_press,
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_battle_on_player_down,
+  common_battle_inventory,
+
+  # Make the teams enemies...
+  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0)]),
+
+  (0, 0, ti_once, 
+  [
+    #(str_store_troop_name, s1, reg20),
+    #(display_message, "@DEBUG: Enemy to spawn: {s1}"),
+    #(display_message, "@DEBUG: Enemies to spawn: {reg21}"),
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 1, grc_everyone, mordr_hold),
+      (team_give_order, 1, grc_everyone, mordr_stand_ground),
+    (set_show_messages, 1),
+  ], 
+  []),    
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+]),
+
 ( "custom_battle_5",mtf_battle_mode,-1,
   "You lead your men to battle.",
-    [ (0 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(1 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+    [ (0 ,mtef_attackers|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),     (1 ,mtef_attackers|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,20,[]),
       (2 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(3 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
       (4 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(5 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
       (6 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),(7 ,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
