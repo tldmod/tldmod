@@ -4,6 +4,7 @@ from header_items import  *
 from header_operations import *
 from header_triggers import *
 from header_factions import *
+from module_info import wb_compile_switch as is_a_wb_item
 #
 #
 ####################################################################################################################
@@ -1120,7 +1121,15 @@ items =[
 #["dwarf_shield_m", "Dwarven Shield",[("dwarf_shield_m",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #["dwarf_shield_n", "Dwarven Shield",[("dwarf_shield_n",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #WEAPONS###########
-["dwarf_sword_a","Dwarf_Sword",[("dwarf_sword_a",0),("scab_dwarf_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(62)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
+
+##Shield Bear Seax imod Hack Start
+] + (is_a_wb_item==1 and [
+["dwarf_sword_a","Dwarf_Sword",[("dwarf_sword_a",0),("scab_dwarf_sword_a",ixmesh_carry),("beorning_seax", imodbit_fine),("beorning_seax_sheath",imodbit_fine|ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(62)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
+] or [
+["dwarf_sword_a","Dwarf_Sword",[("dwarf_sword_a",0),("scab_dwarf_sword_a",ixmesh_carry),("beorning_seax_mb", imodbit_fine),("beorning_seax_sheath_mb",imodbit_fine|ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(62)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
+]) + [ 
+##Shield Bear Seax imod Hack END
+
 ["dwarf_sword_b","Dwarf_Sword",[("dwarf_sword_b",0),("scab_dwarf_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(66)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
 ["dwarf_sword_c","Dwarf_Sword",[("dwarf_sword_c",0),("scab_dwarf_sword_c",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(66)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
 ["dwarf_sword_d","Dwarf_Sword",[("dwarf_sword_d",0),("scab_dwarf_sword_d",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(58)|swing_damage(29,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
@@ -1177,7 +1186,15 @@ items =[
 ###VARIOUS RANDOM MESHES FROM OLD TLD NEEDED FOR TROOPS
 #["woodsman_jerkin", "Woodsman's Jerkin",[("woodsman_jerkin",0)], itp_shop|itp_type_body_armor |itp_civilian |itp_covers_legs ,0, 321 , weight(6)|abundance(100)|head_armor(0)|body_armor(23)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 #["white_robe", "White_Robe",[("robe",0)],itp_type_body_armor  |itp_covers_legs |itp_civilian,0, 31 , weight(1.5)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
-["good_mace","Mace",[("good_mace",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,blunt)|thrust_damage(15,blunt),imodbits_weapon_bad],
+
+## Shield Bear Club Imod Hack Start
+] + (is_a_wb_item==1 and [
+["good_mace","Mace",[("good_mace",0), ("beorning_club", imodbit_masterwork)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,blunt)|thrust_damage(15,blunt),imodbits_weapon_bad],
+] or [
+["good_mace","Mace",[("good_mace",0), ("beorning_club_mb", imodbit_masterwork)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(25,blunt)|thrust_damage(15,blunt),imodbits_weapon_bad],
+]) + [
+## Shield Bear Club Imod Hack End
+
 ["far_harad_shield_paint","Wicker_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])]],
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 ["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0), ("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
@@ -1254,7 +1271,15 @@ items =[
 ["dale_sword_reward","Marchwarden_Sword",[("dale_sword_a",0),("scab_dale_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(98)|weapon_length(95)|swing_damage(41,cut)|thrust_damage(24,pierce),imodbits_weapon],
 ["dale_armor_reward","Esgaroth_Noble_Gorget",[("dale_noble_gorget_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(22)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["leather_gloves_reward","Hunting_Gloves",[("lthr_glove_L",0)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_cloth,[]],
-["beorn_shield_reward","Woodmen_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_kite_shield,200,weight(3)|hit_points(550)|body_armor(9)|spd_rtng(118)|weapon_length(60),imodbits_shield,],
+
+##Shield Bear Shield imod Hack Start
+] + (is_a_wb_item==1 and [
+["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
+] or [
+["beorn_shield_reward","Beorning_Shield",[("beorning_shield_mb",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
+]) + [ 
+##Shield Bear Shield imod Hack END
+
 ["beorn_axe_reward","Bear_Axe",[("beorning_war_axe",0)],itp_type_polearm|itp_unique|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,300,weight(6)|difficulty(0)|spd_rtng(110)|weapon_length(71)|swing_damage(65,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],
 

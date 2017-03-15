@@ -3243,6 +3243,9 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_gondor_lance, itm_pinnath_leader,itm_good_mace,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_pelargir_helmet_light,],
       attr_tier_5,wp_tier_5,gondor_skills_1|knows_trainer_7,0x0000000e800021465e856dd74321355600000000001c58a50000000000000000],
 
+["beorning_shield_bear","Beorning_Shield_Bear","Beorning_Shield_Bears",tfg_gloves| tfg_shield| tfg_armor| tfg_boots,0,0,fac_beorn,
+   [itm_beorn_chief,itm_beorn_heavy,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,(itm_beorn_shield_reward,imod_reinforced), (itm_dwarf_sword_a,imod_fine), (itm_good_mace,imod_masterwork)],
+      attr_tier_6,wp_tier_6,knows_common|knows_athletics_6|knows_power_strike_5|knows_ironflesh_7|knows_shield_7,beorn_face1,beorn_face2],
 
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
@@ -3277,6 +3280,7 @@ upgrade(troops,"beorning_vale_man","beorning_warrior")
 upgrade2(troops,"beorning_warrior","beorning_tolltacker","beorning_carrock_lookout")
 upgrade(troops,"beorning_tolltacker","beorning_sentinel")
 upgrade(troops,"beorning_sentinel","beorning_warden_of_the_ford")
+upgrade(troops,"beorning_warden_of_the_ford","beorning_shield_bear")
 upgrade(troops,"beorning_carrock_lookout","beorning_carrock_fighter")
 upgrade(troops,"beorning_carrock_fighter","beorning_carrock_berserker")
 ##LOSSARNACH

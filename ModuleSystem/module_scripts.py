@@ -1823,6 +1823,7 @@ scripts = [
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
+	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize

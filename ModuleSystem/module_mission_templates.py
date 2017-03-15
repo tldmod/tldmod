@@ -1041,6 +1041,13 @@ mission_templates = [ # not used in game
 			],[
 			(add_reinforcements_to_entry,3,7),
 			(val_add,"$attacker_reinforcement_stage",1)]),
+  (6, 0 , ti_once, [
+      (eq, "$tld_option_formations", 1),
+      (le, "$formations_tutorial", 4)],
+      [
+        (tutorial_message, "@In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.", 0 , 15),
+        (val_add, "$formations_tutorial", 1),
+      ]),
 	#AI Triggers
 	(0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
 			(call_script, "script_select_battle_tactic"),
@@ -2413,7 +2420,10 @@ mission_templates = [ # not used in game
 		(call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
 		(assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
 		(assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
-		(assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5)]),	
+		(assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),
+    (call_script, "script_store_battlegroup_data"),
+    (assign, "$siege_attackers_infantry",100),
+    (assign, "$siege_attackers_cavalry",100)]),	
 		common_battle_tab_press,
 	(ti_question_answered, 0, 0, [],[
 		(store_trigger_param_1,":answer"),
@@ -2521,15 +2531,29 @@ mission_templates = [ # not used in game
 		(try_end)]),
 	(2, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
-	# (5, 0, 0, [], #Make sure attackers do not stall on the ladders...
-	# [(try_for_agents, ":agent_no"),  
-	# (agent_is_human, ":agent_no"),
-	# (agent_is_alive, ":agent_no"),
-	# (agent_get_team, ":agent_team", ":agent_no"),
-	# (this_or_next|eq, ":agent_team", "$attacker_team"),(this_or_next|eq, ":agent_team", "$attacker_team_2"),(eq, ":agent_team", "$attacker_team_3"),
-	# (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
-	# (try_end),
-	# ]),
+  (30, 0, 0, [(eq, "$cheat_mode",1)], ## Kham - Store How many non-archer attacker troops there are
+    [
+    (call_script, "script_battlegroup_get_size", 1, grc_infantry),
+    (assign, "$siege_attackers_infantry", reg0),
+    (call_script, "script_battlegroup_get_size", 1, grc_cavalry),
+    (assign, "$siege_attackers_cavalry", reg0),
+    (display_message, "@DEBUG: Siege Attacker Non-Archer Counted"),
+  ]),
+
+	 (5, 0, 0, [  #Make sure attackers do not stall on the ladders...
+     (eq, "$cheat_mode",1),
+     (le, "$siege_attackers_infantry", 5),
+     (le, "$siege_attackers_cavalry", 5)],
+  	 [
+     (try_for_agents, ":agent_no"),  
+  	 (agent_is_human, ":agent_no"),
+  	 (agent_is_alive, ":agent_no"),
+  	 (agent_get_team, ":agent_team", ":agent_no"),
+  	 (this_or_next|eq, ":agent_team", "$attacker_team"),(this_or_next|eq, ":agent_team", "$attacker_team_2"),(eq, ":agent_team", "$attacker_team_3"),
+  	 (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
+  	 (try_end),
+     (display_message, "@DEBUG: Attackers do not stall on ladders triggered"),
+	 ]),
 	common_battle_check_friendly_kills,
 	common_battle_check_victory_condition,
 	common_battle_victory_display,

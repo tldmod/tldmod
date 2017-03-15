@@ -427,7 +427,7 @@ scenes = [
 
 ## In Vain Village Scenes
 
-("village_gondor",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003007a21c0003ecfe000001f0000073b100000fd2",  [],[],"outer_mountains2south"),
+("village_gondor",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000a00005000006118400005c3000004b3400005792",  [],[],"outer_mountains2south"),
 ("village_rohan",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000200a98d00009aa68000069df000021f700001290",  [],[],"outer_terrain_rohan"),
 
 ]

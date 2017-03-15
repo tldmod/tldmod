@@ -2278,7 +2278,7 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		
 		(agent_get_horse,":horse",":ghost"),
 		(this_or_next|eq,":horse",-1), # remove wargless riders 
-		(             gt, reg1, 25),   # or wargs running from battle for 45 sec
+		(             gt, reg1, 15),   # or wargs running from battle for 45 sec ##Kham - reduce it by 10 seconds, see what happens...
 		#--
 		(call_script, "script_remove_agent", ":ghost"),
 	(try_end),
