@@ -20439,7 +20439,7 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-      #  (eq, "$cheat_mode", 1),
+        (eq, "$cheat_mode", 1),
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),
@@ -20502,7 +20502,7 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-      #  (eq, "$cheat_mode", 1),
+        (eq, "$cheat_mode", 1),
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),
@@ -20565,7 +20565,7 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-      #  (eq, "$cheat_mode", 1),
+        (eq, "$cheat_mode", 1),
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),

@@ -216,7 +216,10 @@ ai_scripts = [
           (lt, ":offensive_hours", 60), #Kham - Lets make Gondor lords wait a bit longer
           (lt, ":faction_marshall_num_followers", 3), #Kham - Gondor needs more lords when they start walking around
           (assign, ":chance_gathering_army", 1000), ##Kham - Lets make gondor wait longer
-          (display_message, "@Gondor AI Tweaks - Gondor waits longer"),
+          (try_begin),
+            (eq, "$cheat_mode",1),
+            (display_message, "@Gondor AI Tweaks - Gondor waits longer"),
+          (end_try),
          (else_try),
           (lt, ":offensive_hours", 48), #wait for lords for two days max
           (lt, ":faction_marshall_num_followers", 2), #if we have two+ lords in tow, go and do something creative
