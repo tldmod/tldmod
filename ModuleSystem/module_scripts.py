@@ -1822,6 +1822,7 @@ scripts = [
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
+	(assign, "$gondor_reinforcement_event_menu",0), #kham - Gondor Reinforcement Event
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
 	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
 
@@ -20470,6 +20471,7 @@ command_cursor_scripts = [
     
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_accompanying_army),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_engaging_army),
+    (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_holding_center, ":center_to_defend"),
 
@@ -20533,6 +20535,7 @@ command_cursor_scripts = [
     
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_accompanying_army),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_engaging_army),
+    (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_patrolling_around_center, ":center_to_patrol"),
 
@@ -20596,6 +20599,7 @@ command_cursor_scripts = [
     
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_accompanying_army),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_engaging_army),
+    (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, ":lord_to_follow"),
 

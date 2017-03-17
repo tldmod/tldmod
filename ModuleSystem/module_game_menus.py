@@ -8067,6 +8067,21 @@ game_menus = [
 	
 ## Kham - Spears of bladorthin - Raft Men - End
 
+## Kham - Gondor Reinforcement Event Menu - Start
+
+("gondor_reinforcement_event",0,
+   "^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (set_fixed_point_multiplier, 100),
+        (position_set_x, pos0, 65),
+        (position_set_y, pos0, 30),
+        (position_set_z, pos0, 170),
+        (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "fac_gondor", pos0)],
+   	[("gondor_reinforcement_event_close", [], "Close", [(change_screen_return)]),
+   	
+]),
+
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations
 ( "auto_player_garrison",0,"stub","none",

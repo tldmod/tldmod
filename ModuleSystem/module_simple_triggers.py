@@ -2688,6 +2688,12 @@ simple_triggers = [
        (call_script, "script_defend_center", "trp_knight_1_8", "p_town_minas_tirith"),  
      (try_end),
 
+     (try_begin),
+        (eq, "$gondor_reinforcement_event_menu",0),
+        (jump_to_menu, "mnu_gondor_reinforcement_event"),
+        (assign, "$gondor_reinforcement_event_menu",1),
+     (try_end),
+
     (try_begin),
       (eq, "$cheat_mode",1),
       (display_message, "@Gondor has called for aide!"),
