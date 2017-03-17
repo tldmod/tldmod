@@ -353,7 +353,7 @@ tld_track_riders = (ti_on_agent_spawn, 0, 0, [],
 			])
 
 # This trigger damages agents that have fallen off their horse. :) -CC
-tld_damage_fallen_riders = (0.1, 0, 0, [], 
+tld_damage_fallen_riders = (1, 0, 0, [], 
 				[
 				(try_for_agents, ":mount"),
 					(agent_is_human|neg, ":mount"),

@@ -857,6 +857,15 @@ ai_scripts = [
       (store_script_param, ":new_ai_state", 2),
       (store_script_param, ":new_ai_object", 3),
 
+      ##Kham fix for invalid parties
+       (try_begin),
+        (ge, ":new_ai_object", 0),
+        (neg|party_is_active, ":new_ai_object"),
+        (assign, ":new_ai_object", -1),
+        (assign, ":new_ai_state", spai_undefined),
+      (try_end),
+      ##Kham fix for invalid parties end
+
       (party_get_slot, ":old_ai_state", ":party_no", slot_party_ai_state),
       (party_get_slot, ":old_ai_object", ":party_no", slot_party_ai_object),
       (party_get_attached_to, ":attached_to_party", ":party_no"),
@@ -875,6 +884,7 @@ ai_scripts = [
       (else_try),
         (try_begin),
           (eq, ":new_ai_state", spai_accompanying_army),
+          (party_is_active, ":new_ai_object"), #Kham Fix
           (party_set_ai_behavior, ":party_no", ai_bhvr_escort_party),
           (party_set_ai_object, ":party_no", ":new_ai_object"),
           (party_set_flags, ":party_no", pf_default_behavior, 0),
