@@ -67,7 +67,7 @@ imodbits_weapon_wood   = imodbit_bent | imodbit_crude | imodbit_fine | imodbit_h
 #
 items =[
 ###item_name, mesh_name, item_properties, item_capabilities, slot_no, cost, bonus_flags, weapon_flags, scale, view_dir, pos_offset
-["no_item","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
+["no_item","INVALID_ITEM",[("invalid_item",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 ["horse_meat","Horse_Meat",[("raw_meat",0)],itp_type_goods|itp_consumable|itp_food,0,12,weight(40)|abundance(0)|food_quality(30)|max_ammo(40),imodbits_none],
 ###Items before this point are hardwired and their order should not be changed!
 ["practice_sword","Practice_Sword",[("practice_sword",0)],itp_primary|itp_wooden_parry|itp_type_one_handed_wpn|itp_secondary|itp_wooden_attack,itc_longsword,1,weight(1.5)|difficulty(0)|spd_rtng(103)|weapon_length(90)|swing_damage(16,blunt)|thrust_damage(12,blunt),0],

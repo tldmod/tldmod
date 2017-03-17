@@ -3194,7 +3194,7 @@ if wb_compile_switch==1:
           (overlay_set_size, reg1, pos2),
           
           # Equipments
-          (create_text_overlay, reg1, "@Equipments", tf_left_align),
+          (create_text_overlay, reg1, "@Equipment", tf_left_align),
           (position_set_x, pos1, 840),
           (position_set_y, pos1, 235),
           (overlay_set_position, reg1, pos1),

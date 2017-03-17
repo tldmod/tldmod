@@ -5913,7 +5913,7 @@ scripts = [
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-            (ge, ":dist", 20),
+           # (ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
            # (assign, ":quest_object_center", ":cur_object_center"),
             (assign, ":quest_target_center", ":cur_target_center"),
