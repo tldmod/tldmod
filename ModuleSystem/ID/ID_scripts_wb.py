@@ -507,14 +507,15 @@ script_patrol_center_aux_ai = 505
 script_accompany_marshall = 506
 script_accompany_marshall_aux = 507
 script_accompany_marshall_aux_ai = 508
-script_game_get_upgrade_cost = 509
-script_game_get_morale_of_troops_from_faction = 510
-script_troop_tree_recursive_backtracking = 511
-script_troop_tree_recursive_detect_max_tier = 512
-script_prsnt_line = 513
-script_get_page_no_of_troop_tree_for_troop_on = 514
-script_init_camera = 515
-script_dmod_cycle_forwards = 516
-script_dmod_cycle_backwards = 517
+script_find_theater = 509
+script_game_get_upgrade_cost = 510
+script_game_get_morale_of_troops_from_faction = 511
+script_troop_tree_recursive_backtracking = 512
+script_troop_tree_recursive_detect_max_tier = 513
+script_prsnt_line = 514
+script_get_page_no_of_troop_tree_for_troop_on = 515
+script_init_camera = 516
+script_dmod_cycle_forwards = 517
+script_dmod_cycle_backwards = 518
 
 

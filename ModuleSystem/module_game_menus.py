@@ -3021,6 +3021,12 @@ game_menus = [
     ("give_imod_test", [],"Give IMOD Test Mesh",[(troop_add_item, "trp_player","itm_dwarf_sword_a", imod_fine),(troop_add_item, "trp_player","itm_beorn_shield_reward", imod_reinforced), (troop_add_item, "trp_player", "itm_good_mace", imod_masterwork),(display_message, "@IMOD test mesh given")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("give_moria_book",[],"Give Moria Book", [(troop_add_item, "trp_player","itm_book_of_moria"),(display_message, "@Moria Book given")]),
+    ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
+    ("what_region",[], "What Region am I in?", 
+    	[(store_add, reg1, str_shortname_region_begin , "$current_player_region"),
+		 (str_store_string, s1, reg1),
+		 (display_message, "@{s1}"),
+    	]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -8626,12 +8632,11 @@ game_menus = [
 
 		#Set Which Scene Village is at
 	 	## Get Theater of Village
-	 		(faction_get_slot, ":home_theater", ":quest_object_faction", slot_faction_home_theater),
 		 	(try_begin),
-			 	(eq, ":home_theater", theater_SW),
+			 	(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 	        	(assign, ":village_scene", "scn_village_rohan"),
 	        (else_try),
-	        	(eq, ":home_theater", theater_SE),
+	        	(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 	        	(assign, ":village_scene", "scn_village_gondor"),
 	 #Randomize Scene
 	 		(else_try),
@@ -8802,14 +8807,12 @@ game_menus = [
 	        (assign, ":guard_troop_3", ":tier_5_troop"),
 	        (assign, ":watchtower_troop",":tier_ranged_troop"),
 
-	 #Set Which Scene Scout Camp is at
-	 	## Get Theater of Scout Camp
-	 		(faction_get_slot, ":home_theater", ":scout_camp_faction", slot_faction_home_theater),
-	 		(store_character_level, ":level", "trp_player"),
-		 		(try_begin),
-			 		(eq, ":home_theater", theater_SW),
+	 #Get Player Level
+	       	(store_character_level, ":level", "trp_player"),
 				
-			## Get Side of Player to check which scout camp to spawn 	
+	 ## Get Side & Region of Scout Camp to check which scene to spawn 	
+			(try_begin),
+				(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 			 		(try_begin),
 			 			(is_between, ":level", 11,17),
 		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
@@ -8829,9 +8832,11 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_rohan_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_good_big"),
 			 		(try_end),
+			 		(display_message, "@DEBUG: Rohan Region"),
 			 	(else_try),
-			## Get Theater of Scout Camp
-			 		(eq, ":home_theater", theater_SE),
+			
+			## Get Region of Scout Camp
+				(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 
 			## Get Side of Player to check which scout camp to spawn 	
 			 		(try_begin),
@@ -8853,10 +8858,11 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_gondor_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_good_big"),
 			 		(try_end),
+			 		(display_message, "@DEBUG: Gondor Region"),
 			 	(else_try),
-
-			## Get Theater of Scout Camp
-			 		(eq, ":home_theater", theater_C,),
+			
+			## Get Region of Scout Camp
+				(is_between, "$current_player_region", region_n_mirkwood, region_above_mirkwook),
 
 
 			## Get Side of Player to check which scout camp to spawn 	
@@ -8879,6 +8885,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_mirk_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_good_big"),
 			 		(try_end),
+			 		(display_message, "@DEBUG: Mirkwood Region"),
 
 			##North is the only region left
 			 	(else_try),
@@ -8901,6 +8908,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_north_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_good_big"),
 			 		(try_end),
+			 		(display_message, "@DEBUG: North Region"),
 			 	(try_end),
 	#Set Entry and Number of Defenders   
 	#0, player

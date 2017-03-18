@@ -5903,7 +5903,7 @@ scripts = [
         ##Kham: Destroy Scout Camp
           (eq, ":quest_no", "qst_destroy_scout_camp"), 
           (try_begin),
-          	(eq, 1, cheat_switch), ## Cheat Switch on for testing purposes
+          	#(eq, 1, cheat_switch), ## Cheat Switch on for testing purposes
           	(neg|check_quest_active,"qst_destroy_scout_camp"),
 	        (ge, "$g_talk_troop_faction_relation", 1),
 	        (is_between, ":player_level", 11,23),
@@ -18117,7 +18117,7 @@ scripts = [
 ]),
 ("TLD_gondor_kite_shield_banner",
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
-    (assign, ":bm", "mesh_banner_e03"), #default tableau black
+    (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
       (try_begin),(is_between,":tr","trp_blackroot_vale_archer"  ,"trp_dol_amroth_youth"     ),(assign, ":bm", "mesh_banner_e04"),
       (else_try) ,(is_between,":tr","trp_pinnath_gelin_plainsman","trp_blackroot_vale_archer"),(assign, ":bm", "mesh_banner_e07"),
@@ -18155,7 +18155,7 @@ scripts = [
 ]),
 ("TLD_gondor_tower_shield_banner",
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
-    (assign, ":bm", "mesh_banner_e03"), #default tableau black
+    (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
       (try_begin),(is_between,":tr","trp_blackroot_vale_archer"   ,"trp_dol_amroth_youth"        ),(assign, ":bm", "mesh_banner_e03"),
       (else_try) ,(is_between,":tr","trp_pinnath_gelin_plainsman","trp_blackroot_vale_archer"   ),(assign, ":bm", "mesh_banner_e06"),
@@ -18190,7 +18190,7 @@ scripts = [
 ]),
 ("TLD_gondor_square_shield_banner",
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
-    (assign, ":bm", "mesh_banner_e03"), #default tableau black
+    (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
       (try_begin),(is_between,":tr","trp_pelargir_watchman","trp_clansman_of_lamedon"),(assign, ":bm", "mesh_banner_e13"),
       (else_try) ,(is_between,":tr","trp_steward_guard"    ,"trp_ranger_of_ithilien" ),(assign, ":bm", "mesh_banner_e15"),
@@ -20610,6 +20610,57 @@ command_cursor_scripts = [
   
   ]),
 ### Kham Gondor Reinforcement Event Scripts End
+
+
+#script_find_theater
+# Script: Which theater am I in? (Kham)
+#    INPUT: party to test
+#    OUTPUT: reg0  = theater_SW, theater_SE, theater_C, theater_N, 0
+("find_theater",
+   [(set_fixed_point_multiplier, 100),
+    (store_script_param_1, ":party"),
+    (assign, ":OK", 0),
+    (try_for_range, ":center", centers_begin, centers_end), 
+	    (party_is_active, ":center"),
+	    (store_faction_of_party, ":faction",":center"),
+	    (faction_get_slot, ":home_theater", ":faction", slot_faction_home_theater),
+	    (party_get_position, pos1, ":party"),
+		(party_get_position, pos2, ":center"),
+		(get_distance_between_positions, ":dist", pos1, pos2),
+	    (lt, ":dist", 2400), #MV: was 3200
+	    (try_begin),
+	    	(eq, ":OK",0),
+	    	(eq, ":home_theater",theater_SE),
+	      	(assign, reg0, theater_SE),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_SE"),
+	    (else_try),
+	    	(eq, ":OK",0),
+	    	(eq, ":home_theater",theater_SW),
+	      	(assign, reg0, theater_SW),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_SW"),
+	    (else_try),
+	        (eq, ":OK",0),
+	    	(eq, ":home_theater",theater_C),
+	      	(assign, reg0, theater_C),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_C"),
+	    (else_try),
+	    	(eq, ":home_theater",theater_C),
+	      	(assign, reg0, theater_N),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_N"),
+	    (else_try),
+	    	(eq, ":OK",0),
+	    	(assign, reg0, 0),
+	    	(assign, ":OK",1),
+	    	(display_message, "@Debug: Can't Find"),
+	    (try_end),
+    (try_end),
+]),
+
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts

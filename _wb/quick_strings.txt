@@ -1,4 +1,4 @@
-1263
+1272
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -546,6 +546,11 @@ qstr_lord_{reg1}:_{s1}_is_ lord_{reg1}:_{s1}_is_patrolling_around_{s2}
 qstr_lord_{reg1}:_{s1}_NOT lord_{reg1}:_{s1}_NOT_patrolling_around_{s2}
 qstr_lord_{reg1}:_{s1}_is_a lord_{reg1}:_{s1}_is_accompanying_{s2}
 qstr_lord_{reg1}:_{s1}_NOT_ lord_{reg1}:_{s1}_NOT_accompanying_{s2}
+qstr_Debug:_Theater_SE Debug:_Theater_SE
+qstr_Debug:_Theater_SW Debug:_Theater_SW
+qstr_Debug:_Theater_C Debug:_Theater_C
+qstr_Debug:_Theater_N Debug:_Theater_N
+qstr_Debug:_Can_t_Find Debug:_Can't_Find
 qstr_{s1} {s1}
 qstr_No_Troops_Left. No_Troops_Left.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
@@ -890,6 +895,10 @@ qstr_The_raiders_are_defe The_raiders_are_defeated!_Those_few_who_remain_alive_a
 qstr_Try_as_you_might_you Try_as_you_might,_you_could_not_defeat_the_raiders._They_raze_the_village_to_the_ground_and_enslave_the_remaining_peasants.
 qstr_The_village_has_been The_village_has_been_razed,_villagers_killed_or_taken_as_slaves._The_Dark_Lord_will_be_pleased.
 qstr_You_failed_to_raid_t You_failed_to_raid_the_village_and_you_were_sent_scurrying_with_your_men._You_hear_the_victors_cheering_as_you_feel_the_disapproving_gaze_of_the_Eye.
+qstr_DEBUG:_Rohan_Region DEBUG:_Rohan_Region
+qstr_DEBUG:_Gondor_Region DEBUG:_Gondor_Region
+qstr_DEBUG:_Mirkwood_Regi DEBUG:_Mirkwood_Region
+qstr_DEBUG:_North_Region DEBUG:_North_Region
 qstr_The_Scout_Camp_has_b The_Scout_Camp_has_been_razed,_This_will_slow_the_advance_of_the_enemy.
 qstr_You_failed_to_destro You_failed_to_destroy_the_Scout_Camp._The_enemy_has_taken_measure_of_your_faction_and_has_decidedly_stuck.
 qstr_Now_that_the_sorcere Now_that_the_sorcerer_is_dead,_there_is_nothing_left_to_be_done_here.

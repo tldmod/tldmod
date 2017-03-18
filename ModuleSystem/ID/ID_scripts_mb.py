@@ -507,5 +507,6 @@ script_patrol_center_aux_ai = 505
 script_accompany_marshall = 506
 script_accompany_marshall_aux = 507
 script_accompany_marshall_aux_ai = 508
+script_find_theater = 509
 
 
