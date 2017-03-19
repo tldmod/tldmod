@@ -2222,4 +2222,4 @@ npc_kingdoms_end = kingdoms_end
 ## Troop Presentation constants End ##
 
 ## Kham Oath of Vengeance Constant
-tld_oath_kills = 50
+tld_oath_kills = 150
