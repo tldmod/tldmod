@@ -3433,19 +3433,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (store_current_day, ":day"),
      (quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
      (quest_set_slot, "qst_oath_of_vengeance", 2, "fac_moria"), # target faction
-     (assign,":count", 0), # count and store initial killcount of target faction' parties
-     (try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
-        (spawn_around_party,"p_main_party",":ptemplate"),
-        (store_faction_of_party,":fac", reg0),
-        (remove_party, reg0),
-        (this_or_next|eq, ":fac", "fac_moria"),
-        (store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
-        (val_add,":count",":n"),
-     (try_end),
-     (quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
-        (setup_quest_text, "qst_oath_of_vengeance"),
-        (str_store_string, s2, "@You swear an oath of vengeance against Moria. You must now destroy as many of the armies of Moria as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^(You must be the one to initiate the battles in order for it to count)."),
-        (call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player")]],
+     (quest_set_slot, "qst_oath_of_vengeance", 7, "fac_gundabad"), # target faction 2
+     (quest_set_slot, "qst_oath_of_vengeance", 6, 1),
+     (setup_quest_text, "qst_oath_of_vengeance"),
+     (str_store_string, s2, "@You swear an oath of vengeance against Moria and Gundabad. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^."),
+     (call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player")]],
 
 # TLD: End Dwarf Lord takes Moria book - Implemented by Kham
 

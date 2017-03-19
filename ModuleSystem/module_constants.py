@@ -2219,5 +2219,7 @@ kingdoms_end = "fac_kingdoms_end"
 npc_kingdoms_begin = kingdoms_begin
 npc_kingdoms_end = kingdoms_end
 
-
 ## Troop Presentation constants End ##
+
+## Kham Oath of Vengeance Constant
+tld_oath_kills = 50

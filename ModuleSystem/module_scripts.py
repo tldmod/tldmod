@@ -1825,6 +1825,7 @@ scripts = [
 	(assign, "$gondor_reinforcement_event_menu",0), #kham - Gondor Reinforcement Event
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
 	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
+	(assign, "$total_kills",0), #Kham - Kill Counter
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
@@ -5909,7 +5910,7 @@ scripts = [
 	        (is_between, ":player_level", 11,23),
 	        #(gt, ":giver_center_no", 0),#Skip if lord is outside the center
 	       # (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", 50),
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops

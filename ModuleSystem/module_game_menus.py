@@ -5125,6 +5125,35 @@ game_menus = [
 				(call_script,"script_injury_routine", ":npc"), # chances to get injury halved when victory
 			(try_end),
 		(try_end),
+		## Kham - Oath of Vengeance Kills Start
+		(try_begin),
+			(check_quest_active, "qst_oath_of_vengeance"),
+			(quest_get_slot, ":target","qst_oath_of_vengeance", 2),
+			(quest_get_slot, ":moria", "qst_oath_of_vengeance",6),
+			(try_begin),
+				(gt, ":moria",0),
+				(quest_get_slot, ":gundabad", "qst_oath_of_vengeance",7),
+				(this_or_next|eq, ":defeated_faction",  ":target"),
+				(eq, ":defeated_faction", ":gundabad"),
+				(get_player_agent_kill_count, ":temp_kills"),
+				(val_sub, ":temp_kills", "$total_kills"),
+				(val_add, "$oath_kills", ":temp_kills"),
+			(else_try),
+				(eq, ":defeated_faction",  ":target"),
+				(get_player_agent_kill_count, ":temp_kills"),
+				(val_sub, ":temp_kills", "$total_kills"),
+				(val_add, "$oath_kills", ":temp_kills"),
+			(try_end),
+			(try_begin),
+				(eq, "$cheat_mode",1),
+				(assign, reg1, "$oath_kills"),
+				(assign, reg0, "$total_kills"),
+				(str_store_faction_name, s1, ":target"),
+				(display_message, "@{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}"),
+			(try_end),
+		(try_end),
+		(get_player_agent_kill_count, "$total_kills"),
+		## Kham - Oath of Vengeance Kills END
       ],
     [("continue",[],"Continue...",[(change_screen_return)]),]
  ),
@@ -8832,7 +8861,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_rohan_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_good_big"),
 			 		(try_end),
-			 		(display_message, "@DEBUG: Rohan Region"),
+			 		#(display_message, "@DEBUG: Rohan Region"),
 			 	(else_try),
 			
 			## Get Region of Scout Camp
@@ -8858,7 +8887,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_gondor_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_good_big"),
 			 		(try_end),
-			 		(display_message, "@DEBUG: Gondor Region"),
+			 		#(display_message, "@DEBUG: Gondor Region"),
 			 	(else_try),
 			
 			## Get Region of Scout Camp
@@ -8885,7 +8914,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_mirk_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_good_big"),
 			 		(try_end),
-			 		(display_message, "@DEBUG: Mirkwood Region"),
+			 		#(display_message, "@DEBUG: Mirkwood Region"),
 
 			##North is the only region left
 			 	(else_try),
@@ -8908,7 +8937,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_north_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_good_big"),
 			 		(try_end),
-			 		(display_message, "@DEBUG: North Region"),
+			 		#(display_message, "@DEBUG: North Region"),
 			 	(try_end),
 	#Set Entry and Number of Defenders   
 	#0, player
@@ -9282,19 +9311,25 @@ game_menus = [
 	(store_current_day, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
-	(assign,":count", 0), # count and store initial killcount of target faction' parties
-	(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
-		(spawn_around_party,"p_main_party",":ptemplate"),
-		(store_faction_of_party,":fac", reg0),
-		(remove_party, reg0),
-		(eq, ":fac", ":target"),
-		(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
-		(val_add,":count",":n"),
-	(try_end),
-	(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+	
+	#Kham - Oath of Vengeance Refactor Start
+	#(assign,":count", 0), # count and store initial killcount of target faction' parties
+	#(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+	#	(spawn_around_party,"p_main_party",":ptemplate"),
+	#	(store_faction_of_party,":fac", reg0),
+	#	(remove_party, reg0),
+	#	(eq, ":fac", ":target"),
+	#	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+	#	(val_add,":count",":n"),
+	#(try_end),
+	#(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+	
+	(assign, "$oath_kills",0),
+	#Kham - Oath of Vengeance Refactor END
+
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
         (setup_quest_text, "qst_oath_of_vengeance"),
-        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the armies of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
 	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
 	],[
     ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
