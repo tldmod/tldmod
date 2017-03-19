@@ -467,7 +467,7 @@ dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, certamente. Me lo aspet
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Ho qui qualcosa per cui potresti aiutare, un problema con un malvagio fuorilegge conosciuto come {s4}. Ha assassinato una delle mie guardie del corpo, e sta scappando alla giustizia da quel momento. Da notizie recenti il fuggitivo è stato visto a {s3}. Forse potresti essere capace di stanarlo e fare rapidamente giustizia, e io ti ricompenserò per il disturbo.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Allora gli darò la caccia e farò rispettare la legge.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Sono troppo impegnato per inseguirlo al momento.
-dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Eccellente, {playername}. Vi sarò molto grato, e ovviamente la tua prodezza sarà puntualmente resa nota. Bene, ti auguro buona caccia.
+dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Eccellente, {playername}. Ti sarò molto grato, e ovviamente la tua prodezza sarà puntualmente resa nota. Bene, ti auguro buona caccia.
 dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|Come desiderate, {playername}. Suppongo ci siano cacciatori di taglie in abbondanza per finire il lavoro . . .
 dlga_lord_tell_mission:lord_mission_told.2|Beh, alcuni degli schiavi che lavoravano presso {s4} sono scappati. Porci ingrati a cui era stata risparmiata la vita ! Da quel che ho saputo, stanno fuggendo verso {s3} più veloce che possono, e si sono divisi in tre gruppi per tentare di evitare la cattura. Quello che voglio è che tu raggiunga tutti i tre gruppi e li riporti indietro a {s4} con ogni mezzo necesario. Dovrei impiccarli per aver tentato la fuga, ma abbiamo bisogno di braccia adesso, quindi li castigherò solo con un po' di frustate.
 dlga_lord_tell_mission:lord_tell_mission_follow_spy|Ho un'informazione valida secondo cui un uomo in questa stessa città è in realtà una spia. Dovrebbe essere imprigionato e impiccato per la sua impudenza, ma abbiamo motivo di ritenere che presto lascerà la città per incontrare il suo capo, l'uomo a cui la spia riferisce ogni sussurro. La spia stessa è di poca importanza, ma il suo capo è un uomo pericoloso, e potrebbe dirci molto se potessimo mettergli le mani addosso..
@@ -774,7 +774,7 @@ dlga_merchant_quest_requested:merchant_quest_brief.3|Un compito dici ? In realt�
 dlga_merchant_quest_requested:merchant_quest_brief.4|Un compito, dici? Il Maestro richiede nuove truppe ogni giorno, e non sono mai abbastanza degne di combattere secondo lui... ma le armature non crescono da sole sulla pelle, giusto ?^Quei vermi incaricati di portarci più rifornimenti sono infidi e deboli, si fanno massacrare troppo facilmente e siamo rimasti senza materiali. Ma questi uomini, questi elfi... se ne vanno sempre in giro ricoperti da luccicanti metalli preziosi che li proteggono, come se fossero tutti dei re, fino al più umile di loro...^Ripulisci i loro cadaveri e portami il metallo, {playername}. Con una libbra di quel ferro, la nostra fonderia può creare abbastanza materiale per un intero reggimento di guerrieri.
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|Abbiamo bisogno di {reg5} unità di {s6} in {reg6} giorni, prima che i nostri armaioli esauriscano le materie prime. Che ne dici ?
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|D'accordo. Recupererò i frammenti di metallo e te li porterò.
-dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Sono troppo occupato per occuparmene.
+dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Al momento sono troppo occupato.
 dlga_merchant_quest_requested:merchant_quest_brief.5|Grazie per aver offerto il tuo aiuto. In effetti stavo cercando qualcuno per scortare un convoglio di rifornimenti. Forse puoi farlo tu...
 dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Ho intenzione di inviare un convoglio di rifornimenti a {s8}. Tuttavia con tutte quelle pattuglie nemiche là fuori, non voglio farli partire senza una scorta supplementare. Un gruppo almeno {reg4} soldati offrirebbe loro una protezione adeguata. Puoi condurre questo convoglio di rifornimenti a {s8} in 7 giorni?^^[guadagnerai {reg14} Punti Risorsa di {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|D'accordo. Scorterò il convoglio di rifornimenti.
@@ -861,14 +861,14 @@ dlga_town_dweller_ask_situation:town_dweller_talk.2|Non ci possiamo lamentare {s
 dlga_town_dweller_talk:town_dweller_ask_rumor|Quali sono le ultime voci nei dintorni ?
 dlga_town_dweller_ask_rumor:town_dweller_talk|Non sono a conoscenza di nulla che potrebbe interessarti.
 dlga_town_dweller_brawl:town_dweller_brawl_confirm|Mi stai minacciando ? Le guardie non vedono l'ora di incontrare gente come te.
-dlga_town_dweller_brawl_confirm:close_window|Ah davvero ? Fatemi vedere di cosa sei capace.
+dlga_town_dweller_brawl_confirm:close_window|Ah davvero ? Fammi vedere di cosa sei capace.
 dlga_town_dweller_brawl_confirm:close_window.1|No, ti ho scambiato per un'altra persona.
 dlga_town_dweller_talk:close_window|[Ti allontani]
 dlga_start:player_castle_guard_talk|Sì, comandante ?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|Come va la ronda, soldato ?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Tutto tranquillo Comandante. Niente da segnalare.
 dlga_player_castle_guard_talk_3:close_window|Bene. Tenete gli occhi aperti.
-dlga_start:close_window.24|Buongiorno, Comandante. E bello averti qui a {s10}.
+dlga_start:close_window.24|Buongiorno, Comandante. E' bello averti qui a {s10}.
 dlga_start:close_window.25|Comportati bene e non avremo problemi.
 dlga_start:hall_guard_easter_egg|Ah, è appena passata la mezzanotte. Sai, di recente è accaduto uno spiacevole incidente - lo vuoi sentire ?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Si, continua ti prego.

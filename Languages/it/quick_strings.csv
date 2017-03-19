@@ -78,7 +78,7 @@ qstr_Level:_{reg3}^Health|Livello: {reg3}^Punti Ferita: {reg4}
 qstr_Attributes|Attributi
 qstr_STR^AGI^INT^CHA|FOR^AGI^INT^CAR
 qstr_Skills|Abilità
-qstr_Ironflesh^Power_Stri|Resistenza^Forza del Colpo^Potenza di Lancio^Scudo^Atletica^Cavalcare^Tiro con l'arco a Cavallo
+qstr_Ironflesh^Power_Stri|Resistenza^Potenza d'Attacco^Potenza di Lancio^Scudo^Atletica^Cavalcare^Tiro con l'arco a Cavallo
 qstr_Proficiencies|Competenze
 qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi ad Asta^Tiro con l'Arco^Balestre^Lancio
 qstr_Equipments|Equipaggiamento
@@ -132,7 +132,7 @@ qstr_Use_from|Usa da
 qstr_Action_Menu|Menu azioni
 qstr_+1_to_First_Aid|+1 in Primo soccorso
 qstr_+1_to_Weapon_Mastery|+1 in Maestria nelle armi
-qstr_+1_to_Wound_Treatmen|+1 in Trattamento delle ferite
+qstr_+1_to_Wound_Treatmen|+1 in Cura delle ferite
 qstr_+1_to_Tactics|+1 in Tattica
 qstr_+1_to_Power_Strike|+1 in Colpo potente
 qstr_when_equipped|Se equipaggiato
@@ -202,8 +202,8 @@ qstr_{s6}_has_joined_your|{s6} ha aggiunto il suo nome alla tua compagnia
 qstr_elven|elfo
 qstr_dwarven|nano
 qstr_orc|orco
-qstr_uruk|uruk
-qstr_uruk_hai|uruk-hai
+qstr_uruk|Uruk
+qstr_uruk_hai|Uruk-Hai
 qstr_trollish|Troll
 qstr_man|uomo
 qstr_riding|cavalcando
@@ -294,7 +294,7 @@ qstr_These_friend_of_elve|Questi amici degli Elfi cadranno sotto le nostre lame 
 qstr_These_Elves_will_fal|Questi Elfi cadranno sotto le nostre lame !
 qstr_Raahh!_Draw_your_wea|Raaah ! Sguainate le armi, feccia di {s16} ! Stanotte festeggeremo con le interiora di {s15} !
 qstr_Rha!_{s14}More_{s15}|Rha ! {s14}Ancora corpi  di {s15} da sfigurare con le nostre terribili armi !
-qstr_Slaughter_these_puny|Massacrate questi penosi ladri di {s18} adesso ! Poi metteremo a fuoco le loro case e uccidemo le lore famiglie. 
+qstr_Slaughter_these_puny|Massacrate questi penosi di {s18} adesso ! Poi metteremo a fuoco le loro case e uccideremo le lore famiglie. 
 qstr_Death_to_the_trespas|Morte ai trangressori sulle terre di {s16} !
 qstr_CHARGE!_Let_s_clear_|CARICA ! Ripuliamo {s17} dalla feccia {s18} {s19} !
 qstr_{s14}Now_that_{s19}s|{s14} Ora la feccia {s19} assaggerà la furia della gente orso !
@@ -607,7 +607,7 @@ qstr_Weekly_upkeep_for_tr|Salario settimanale per le truppe:^{reg5} Punti Risors
 qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} Punti Risorsa ({reg5})
 qstr_No_upkeep_costs|Nessun costo di mantenimento
 qstr_Orc_hiring_bonus:_+2|Bonus orchi arruolati: +2/3 per ogni orco^
-qstr_Current_party_size_l|L'attuale limite di dimensione della compagnia è {reg5}.^I qualificatori in uso attuali sono:^^Dimensione inziale: +10^Comando: {s2}{reg1}^Carisma: {s3}{reg2}^Grado: {s4}{reg3}^{s5}TOTALE: {reg5}
+qstr_Current_party_size_l|L'attuale limite di dimensione della compagnia è {reg5}.^I qualificatori in uso attuali sono:^^Dimensione inziale: +10^Comando: {s2}{reg1}^Persuasione: {s3}{reg2}^Grado: {s4}{reg3}^{s5}TOTALE: {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|Rapporto forza fazione:^{s2}
 qstr_{s1}^^Factions_are_n|{s1}^^Le fazioni sono normalmente assediate quando sotto forza {reg1}.
@@ -679,7 +679,7 @@ qstr_{s1}_of_{s3}_managed|{s1} di {s3} sono riusciti a scappare.
 qstr_Prisoners_rescued_so|Prigionieri salvati per ora: {reg1}
 qstr_Victory_comment._Pla|Commento della vittoria. Il giocatore era solo
 qstr_Ordinary_victory_com|Commento di vittoria ordinario. Il giocatore ha provveduto almeno il 40 percento delle forze.
-qstr_Player_participation|Commento di partecipazione del giocatore. Il nemico ha almeno 1k potenza iniziale
+qstr_Player_participation|Commento di partecipazione del giocatore. Il nemico ha almeno 1k di potenza iniziale
 qstr_No_victory_comment._|Nessuno commento di vittoria. La battaglia era piccola, e il giocatore a provveduto a meno del 40 percento della forza alleata
 qstr_Some_of_your_tendons|Parte dei tuoi tendini sono stati danneggiati durante la battaglia. Perdi 1 punto in Forza
 qstr_You_took_a_nasty_wou|Hai subito una grave ferita che ti lascerà leggermente zoppo anche dopo la sua guarigione. Perdi 1 di agiltà.
@@ -783,7 +783,7 @@ qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}
 qstr_Scouts_report_that_{|Gli esploratori riportano che {s6} si è riunito in una grande armata in prossimità di {s7}, in ultimo disperato tentativo di difendere la capitale.
 qstr_The_forces_of_{s2}_e|L'armata di {s2} ha costruito un campo avanzato in {s15} !
 qstr_{s1}_from_{s2}|{s1} da {s2}
-qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ricorda che non ti conoscono e non ti riconoscono necessariamente i meriti guadagnati in {s10}. ^^(I Punti Risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati in {s10}, ma solo quelli guadagnati in {s11})
+qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ricorda che non ti conoscono e non ti riconoscono necessariamente i meriti guadagnati presso {s10}. ^^(I Punti Risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati presso {s10}, ma solo quelli guadagnati con {s11})
 qstr_Info|Informazioni
 qstr_You_came_into_a_poss|Sei entrato in possesso di una strana, grande ciotola d'acqua fresca dove ci si specchia. C'è un piccolo odore di muschio.
 qstr_Obtained:_Ent_water.|Ottenuto: Acqua degli Ent.
@@ -826,14 +826,14 @@ qstr_Install_TLD_in_your_|Installa TLD nella cartella Modules di Warband, aggiun
 qstr_dis_mod_takes_2_long|fratè c'hanno messo troopo pè sta mod! fa cagare !!11!
 qstr_Well_there_s_a_lot_o|Beh, ci sono un sacco di nuove grafiche e roba, penso che richiede tempo.
 qstr_It_has_been_recently|Di recente è stato rilasciato, se vi siete persi il link, è possibile scaricarlo a lemonparty.org.
-qstr_i_wont_decapitated_e|Voglio gli elefanti decapitati in multi, ora !!!
-qstr_I_don_t_think_there_|Non penso che ci sia il multyplayer in TDL, ma gli elefanti sarebbero fighi.
+qstr_i_wont_decapitated_e|Voglio gli elefanti decapitati in multi, ora !!11!
+qstr_I_don_t_think_there_|Non penso che ci sia il multyplayer in TLD, ma gli elefanti sarebbero fighi.
 qstr_There_is_a_hidden_el|In TLD c'è una modalità deathmatch elefanti, ma prima devi rimuovere tutti i tuoi salvataggi, giocare per 100 giorni di gioco senza salvare poi andare alla schermata del personaggio e premere Alt+F4. Ne vale la pena !
 qstr_Did_you_bring_your_z|Hai preso il tuo zupdog ?
 qstr_What_s_zupdog?|Cos' è uno zupdog ?
 qstr_My_zupdog_is_ill_but|Il mio zupdog e' malato, pero' ho portato il mio zupmaiass.
 qstr_Wai_no_plate_armour_|Aspè.. niente armature a piastre nella mod ???
-qstr_What_is_plate_armour|Cos'è un' armatura a piastre ?\nMai sentita.
+qstr_What_is_plate_armour|Cos'è un'armatura a piastre ?\nMai sentita.
 qstr_Wai_no_female_trolls|Aspè niente Troll femmina ? Eh? Eh ? Tu sei la mia puttanella !
 qstr_WHEN_U_REALSE_MOD?!!|QUANDO RILASCERAI LA MOD ?!!?
 qstr_But_we_did_release._|Ma noi l'abbiamo pubblicata. Ci sei dentro. E perchè gridi ?

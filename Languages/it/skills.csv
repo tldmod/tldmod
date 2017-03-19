@@ -2,9 +2,9 @@ skl_trade|Commercio
 skl_trade_desc|Ogni livello di questa abilità riduce la penalità nelle compravendite. (Abilità di Gruppo)
 skl_leadership|Comando
 skl_leadership_desc|Ogni punto incrementa di cinque unità il numero massimo di truppe che puoi comandare, incrementa il morale della tua Compagnia e riduce i salari del 5%%. (Abilità del Comandante)
-skl_prisoner_management|Gestione Prigionieri
+skl_prisoner_management|Controllo Prigionieri
 skl_prisoner_management_desc|Ogni livello incrementa di %d il numero massimo di prigionieri. (Abilità del Comandante)
-skl_persuasion|Carisma
+skl_persuasion|Persuasione
 skl_persuasion_desc|Questa abilità ti aiuta a convincere le persone ad accettare il tuo punto di vista. (Abilità Personale)
 skl_engineer|Ingegneria
 skl_engineer_desc|Ogni punto di questa abilità diminuirà il tempo per aggiornare o riparare l'equipaggiamento, e permetterà inoltre aggiornamenti di migliore qualità. (Abilità di Gruppo)
@@ -12,9 +12,9 @@ skl_first_aid|Pronto Soccorso
 skl_first_aid_desc|Per ogni punto in questa abilità gli eroi recuperano il 5%% di salute persa in battaglia. (Abilità di Gruppo)
 skl_surgery|Chirurgia
 skl_surgery_desc|Ogni punto in questa abilità aumenta del 4%% la probabilità che un membro della Compagnia, colpito violentemente, venga ferito anzichè ucciso. (Abilità di Gruppo)
-skl_wound_treatment|Trattamento Ferite
+skl_wound_treatment|Cura Ferite
 skl_wound_treatment_desc|Per ogni punto in questa abilità la velocità di guarigione dei membri della Compagnia aumenta del 20%%. (Abilità di Gruppo)
-skl_inventory_management|Gestione dell'Inventario
+skl_inventory_management|Gestione Inventario
 skl_inventory_management_desc|Per ogni punto in questa abilità la capacità dell'inventario viene aumentata di 6. (Abilità del Comandante)
 skl_spotting|Osservare
 skl_spotting_desc|Per ogni punto in questa abilità la capacità visiva della Compagnia aumenta del 10%%. (Abilità di Gruppo)
@@ -24,16 +24,16 @@ skl_tactics|Tattica
 skl_tactics_desc|Ogni due punti di questa abilità incrementano il vantaggio iniziale in battaglia di 1. (Abilità di Gruppo)
 skl_tracking|Seguire Tracce
 skl_tracking_desc|Le orme sul terreno forniscono più informazioni. (Abilità di Gruppo)
-skl_trainer|Addestratore
+skl_trainer|Addestramento
 skl_trainer_desc|Ogni giorno, tutti gli eroi con questa abilità trasmettono esperienza ai membri della Compagnia di livello inferiore. L'esperienza guadagnata ha questa progressione: {0,4,10,16,23,30,38,46,55,65,80}. (Abilità Personale)
 skl_looting|Saccheggiare
 skl_looting_desc|Per ogni punto in questa abilità, la quantità della refurtiva ottenuta aumenta del 10%%. (Abilità di Gruppo)
-skl_horse_archery|Tiro con l'arco a cavallo
+skl_horse_archery|Arco a cavallo
 skl_horse_archery_desc|Riduce la penalità del danno e della precisione nell'uso degli archi mentre si cavalca. (Abilità Personale)
 skl_riding|Cavalcare
 skl_riding_desc|Permette di montare cavalli (o altre bestie cavalcabili) che richiedono un'abilità maggiore e incrementa la velocità e la capacità di manovra. (Abilità Personale)
 skl_athletics|Atletica
-skl_athletics_desc|Migliora la velocità di corsa. (Abilità Personale)
+skl_athletics_desc|Migliora la velocità della corsa. (Abilità Personale)
 skl_shield|Scudo
 skl_shield_desc|Riduce i danni allo scudo (dell'8%% per punto Abilità) e migliora la copertura e la velocità nell'uso dello scudo. (Abilità Personale)
 skl_weapon_master|Maestria nelle armi
@@ -42,7 +42,7 @@ skl_power_draw|Potenza di tiro
 skl_power_draw_desc|Permette l'utilizzo di archi più potenti. Ogni punto abilità (fino a 4 oltre al livello richiesto dall'arco) incrementa i danni provocati del 14%%. (Abilità Personale)
 skl_power_throw|Potenza di lancio
 skl_power_throw_desc|Ogni punto incrementa del 10%% i danni provocati con armi da lancio. (Abilità Personale)
-skl_power_strike|Potenza di colpo
+skl_power_strike|Potenza d'Attacco
 skl_power_strike_desc|Ogni punto incrementa dell'8%% i danni provocati nei combattimenti corpo a corpo. (Abilità Personale)
 skl_ironflesh|Resistenza
 skl_ironflesh_desc|Ogni punto in questa abilità incrementa i punti ferita di +2. (Abilità Personale)

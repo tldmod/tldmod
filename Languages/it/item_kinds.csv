@@ -331,16 +331,16 @@ itm_isen_orc_armor_d|Armatura Orchesca di Isengard
 itm_isen_orc_armor_e|Armatura Orchesca di Isengard
 itm_isen_orc_armor_f|Armatura Orchesca di Isengard
 itm_isen_orc_armor_g|Armatura Orchesca di Isengard
-itm_isen_uruk_light_a|Bardatura Leggera Uruk-hai
-itm_isen_uruk_light_b|Armatura di Cuoio Uruk-hai
-itm_isen_uruk_light_c|Armatura di Cuoio Uruk-hai
-itm_isen_uruk_light_d|Armatura in Cuoio e Maglia di Ferro Uruk-hai
-itm_isen_uruk_light_e|Bardatura in Maglia di Ferro Uruk-hai
-itm_isen_uruk_heavy_a|Armatura in Cuoio e Maglia di Ferro Uruk-hai
-itm_isen_uruk_heavy_b|Armatura Pesante Uruk-hai
-itm_isen_uruk_heavy_c|Armatura Pesante Uruk-hai
-itm_isen_uruk_heavy_d|Pelle da Braccatore Uruk Hai
-itm_isen_uruk_heavy_e|Pelle da Braccatore Uruk Hai
+itm_isen_uruk_light_a|Bardatura Leggera Uruk--Hai
+itm_isen_uruk_light_b|Armatura di Cuoio Uruk-Hai
+itm_isen_uruk_light_c|Armatura di Cuoio Uruk-Hai
+itm_isen_uruk_light_d|Armatura in Cuoio e Maglia di Ferro Uruk-Hai
+itm_isen_uruk_light_e|Bardatura in Maglia di Ferro Uruk-Hai
+itm_isen_uruk_heavy_a|Armatura in Cuoio e Maglia di Ferro Uruk-Hai
+itm_isen_uruk_heavy_b|Armatura Pesante Uruk-Hai
+itm_isen_uruk_heavy_c|Armatura Pesante Uruk-Hai
+itm_isen_uruk_heavy_d|Pelle da Braccatore Uruk-Hai
+itm_isen_uruk_heavy_e|Pelle da Braccatore Uruk-Hai
 itm_uruk_tracker_boots|Stivali da Braccatore Uruk
 itm_uruk_greaves|Gambali Uruk
 itm_uruk_chain_greaves|Gambali in Maglia di Ferro Uruk
@@ -352,8 +352,8 @@ itm_isen_uruk_helm_a|Elmo Uruk-Hai
 itm_isen_uruk_helm_b|Elmo Uruk-Hai
 itm_isen_uruk_helm_c|Elmo Uruk-Hai
 itm_isen_uruk_helm_d|Elmo da Capitano Uruk-Hai
-itm_isen_uruk_helm_e|Elmo da Braccatore Uruk Hai
-itm_isen_uruk_helm_f|Elmo da Braccatore Uruk Hai
+itm_isen_uruk_helm_e|Elmo da Braccatore Uruk-Hai
+itm_isen_uruk_helm_f|Elmo da Braccatore Uruk-Hai
 itm_uruk_pike_a|Picca Uruk
 itm_uruk_pike_b|Picca Uruk
 itm_uruk_falchion_a|Falcione Uruk
@@ -449,7 +449,7 @@ itm_evil_light_armor|Vestito Losco
 itm_uruk_helm_a|Elmo Uruk
 itm_uruk_helm_b|Elmo Uruk
 itm_uruk_helm_c|Elmo a Becco Uruk
-itm_uruk_helm_d|Elmo a Griglia Uruk 
+itm_uruk_helm_d|Elmo a Griglia Uruk
 itm_uruk_helm_e|Elmo Uruk Chiuso
 itm_uruk_helm_f|Elmo Uruk
 itm_mordor_cap_helm|Elmo da Capitano di Mordor
@@ -879,7 +879,7 @@ itm_orc_throwing_axes_reward|Accette Volanti di Gundabad
 itm_corsair_throwing_dagger_reward|Daghe da Lancio Avvelenate
 itm_dwarf_shield_reward|Scudo in Mithril Nanico
 itm_dwarf_great_axe_reward|Accetta Nanica Affilata
-itm_isen_uruk_heavy_reward|Armatura da generale Uruk-hai
+itm_isen_uruk_heavy_reward|Armatura da generale Uruk-Hai
 itm_lorien_bow_reward|Arco Noldor
 itm_lorien_sword_reward|Spada dei Galadhrim 
 itm_dale_sword_reward|Spada da Guardiano del Confine di Dale

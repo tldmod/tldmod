@@ -626,42 +626,42 @@ trp_warg_ghost_a3a|Mannaro corazzato
 trp_warg_ghost_a3a_pl|Mannari Corazzati
 trp_warg_ghost_h|Mannaro enorme
 trp_warg_ghost_h_pl|Mannari Enormi
-trp_uruk_hai_tracker|Inseguitore Uruk Hai
-trp_uruk_hai_tracker_pl|Inseguitori Uruk Hai
-trp_large_uruk_hai_tracker|Grande Braccatore Uruk Hai
-trp_large_uruk_hai_tracker_pl|Grandi Braccatori Uruk Hai
-trp_fighting_uruk_hai_tracker|Braccatore Combattente Uruk Hai
-trp_fighting_uruk_hai_tracker_pl|Braccatori Combattenti Uruk Hai
-trp_fighting_uruk_hai_berserker|Combattente Berserker Uruk Hai
-trp_fighting_uruk_hai_berserker_pl|Combattenti Berserker Uruk Hai
-trp_uruk_snaga_of_isengard|Uruk Hai Rinato
-trp_uruk_snaga_of_isengard_pl|Uruk Hai Rinati
-trp_uruk_hai_of_isengard|Uruk Hai di Isengard
-trp_uruk_hai_of_isengard_pl|Uruk Hai di Isengard
-trp_large_uruk_hai_of_isengard|Grande Uruk Hai di Isengard
-trp_large_uruk_hai_of_isengard_pl|Grandi Uruk Hai di Isengard
-trp_fighting_uruk_hai_warrior|Combattente Guerriero Uruk Hai
-trp_fighting_uruk_hai_warrior_pl|Combattenti Guerrieri Uruk Hai
-trp_fighting_uruk_hai_champion|Campione Combattente Uruk Hai
-trp_fighting_uruk_hai_champion_pl|Campioni Combattenti Uruk Hai
-trp_uruk_hai_pikeman|Picchiere Uruk Hai
-trp_uruk_hai_pikeman_pl|Picchieri Uruk Hai
-trp_fighting_uruk_hai_pikeman|Picchiere Combattente Uruk Hai
-trp_fighting_uruk_hai_pikeman_pl|Picchieri Combattenti Uruk Hai
-trp_urukhai_standard_bearer|Portabandiera Uruk Hai
-trp_urukhai_standard_bearer_pl|Portabandiere Uruk Hai
+trp_uruk_hai_tracker|Inseguitore Uruk-Hai
+trp_uruk_hai_tracker_pl|Inseguitori Uruk-Hai
+trp_large_uruk_hai_tracker|Grande Braccatore Uruk-Hai
+trp_large_uruk_hai_tracker_pl|Grandi Braccatori Uruk-Hai
+trp_fighting_uruk_hai_tracker|Braccatore Combattente Uruk-Hai
+trp_fighting_uruk_hai_tracker_pl|Braccatori Combattenti Uruk-Hai
+trp_fighting_uruk_hai_berserker|Combattente Berserker Uruk-Hai
+trp_fighting_uruk_hai_berserker_pl|Combattenti Berserker Uruk-Hai
+trp_uruk_snaga_of_isengard|Uruk-Hai Rinato
+trp_uruk_snaga_of_isengard_pl|Uruk-Hai Rinati
+trp_uruk_hai_of_isengard|Uruk-Hai di Isengard
+trp_uruk_hai_of_isengard_pl|Uruk-Hai di Isengard
+trp_large_uruk_hai_of_isengard|Grande Uruk-Hai di Isengard
+trp_large_uruk_hai_of_isengard_pl|Grandi Uruk-Hai di Isengard
+trp_fighting_uruk_hai_warrior|Combattente Guerriero Uruk-Hai
+trp_fighting_uruk_hai_warrior_pl|Combattenti Guerrieri Uruk-Hai
+trp_fighting_uruk_hai_champion|Campione Combattente Uruk-Hai
+trp_fighting_uruk_hai_champion_pl|Campioni Combattenti Uruk-Hai
+trp_uruk_hai_pikeman|Picchiere Uruk-Hai
+trp_uruk_hai_pikeman_pl|Picchieri Uruk-Hai
+trp_fighting_uruk_hai_pikeman|Picchiere Combattente Uruk-Hai
+trp_fighting_uruk_hai_pikeman_pl|Picchieri Combattenti Uruk-Hai
+trp_urukhai_standard_bearer|Portabandiera Uruk-Hai
+trp_urukhai_standard_bearer_pl|Portabandiere Uruk-Hai
 trp_uruk_snaga_of_mordor|Uruk Snaga di Mordor
 trp_uruk_snaga_of_mordor_pl|Uruk Snaga di Mordor
 trp_uruk_of_mordor|Uruk di Mordor
 trp_uruk_of_mordor_pl|Uruk di Mordor
 trp_large_uruk_of_mordor|Grande Uruk di Mordor
 trp_large_uruk_of_mordor_pl|Grandi Uruk di Mordor
-trp_fell_uruk_of_mordor|Uruk Caduto di Mordor
-trp_fell_uruk_of_mordor_pl|Uruk Caduti di Mordor
+trp_fell_uruk_of_mordor|Abbattitore Uruk di Mordor
+trp_fell_uruk_of_mordor_pl|Abbattitori Uruk di Mordor
 trp_uruk_slayer_of_mordor|Uruk Assassino di Mordor
 trp_uruk_slayer_of_mordor_pl|Uruk Assassino di Mordor
-trp_fell_uruk_slayer_of_mordor|Uruk Abbattitore Assassino di Mordor
-trp_fell_uruk_slayer_of_mordor_pl|Uruk Abbattitori Assassini di Mordor
+trp_fell_uruk_slayer_of_mordor|Abbattitore Assassino Uruk di Mordor
+trp_fell_uruk_slayer_of_mordor_pl|Abbattitori Assassini Uruk di Mordor
 trp_black_uruk_of_barad_dur|Uruk Nero di Barad Dur
 trp_black_uruk_of_barad_dur_pl|Uruk Neri di Barad Dur
 trp_uruk_mordor_standard_bearer|Portabandiera di Mordor
@@ -1392,7 +1392,7 @@ trp_elder_morannon|Capo del Morannon
 trp_elder_morannon_pl|le grotte che si affacciano sul Grande Cancello
 trp_elder_mmorgul|Capo dei Morgul
 trp_elder_mmorgul_pl|La città Sinistra
-trp_elder_cungol|Campo dei Comandanti
+trp_elder_cungol|Capo del Campo
 trp_elder_cungol_pl|Il Campo
 trp_elder_isengard|Grima Linguaverme
 trp_elder_isengard_pl|La Città
@@ -1422,7 +1422,7 @@ trp_elder_umbar|Quartiermastro di Umbar
 trp_elder_umbar_pl|Il campo fortificato
 trp_elder_moria|Capo di Moria
 trp_elder_moria_pl|Le Miniere
-trp_elder_gunda|La Madre delle Caverne
+trp_elder_gunda|Capo delle Caverne
 trp_elder_gunda_pl|Le Caverne
 trp_elder_dale|Quartiermastro di Dale
 trp_elder_dale_pl|La Città
@@ -1521,8 +1521,8 @@ trp_city_guard|Guardia di Città
 trp_city_guard_pl|Guardia di Città
 trp_orc_sentry|Orco Sentinella
 trp_orc_sentry_pl|Orco Sentinella
-trp_uruk_hai_sentry|Sentinella Uruk Hai
-trp_uruk_hai_sentry_pl|Sentinella Uruk Hai
+trp_uruk_hai_sentry|Sentinella Uruk-Hai
+trp_uruk_hai_sentry_pl|Sentinelle Uruk-Hai
 trp_black_numenorean_sorcerer|Numenoreano Nero Stregone
 trp_black_numenorean_sorcerer_pl|Numenoreano Nero Stregone
 trp_black_numenorean_acolyte|Accolito Numenoreano Nero
