@@ -502,4 +502,5 @@ meshes+=[
   ("draw_ring_hunters_lair", 0, "draw_ring_hunters_lair", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   ("draw_victory_dale",      0, "draw_victory_dale",      0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_lorien",    0, "draw_victory_lorien",    0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]
