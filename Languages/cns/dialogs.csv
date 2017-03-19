@@ -15,15 +15,15 @@ dlga_troll_beaten:troll_talk_1|向您的智慧致敬，食人妖钓鱼大师！
 dlga_troll_goodbye:close_window|食人妖妖妖妖妖妖！
 dlga_start:hobbit_merry_talk_met|{playername}，我们又见面了！
 dlga_start:hobbit_pippin_talk_met|{playername}，我们又见面了！
-dlga_start:hobbit_general_talk_1|您好，{sir/madam}！我是梅里雅达克·烈酒鹿。您叫我梅里就可以了。
-dlga_start:hobbit_general_talk_1.1|您好，{sir/madam}！我是皮瑞格林·图克。您叫我皮平就可以了。
+dlga_start:hobbit_general_talk_1|您好，{先生/女士}！我是梅里雅达克·烈酒鹿。您叫我梅里就可以了。
+dlga_start:hobbit_general_talk_1.1|您好，{先生/女士}！我是皮瑞格林·图克。您叫我皮平就可以了。
 dlga_hobbit_general_talk_1:close_window|我现在正忙。
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|话说，你这一族我还是第一次见到。
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|我想我曾在洛汗首都伊多拉斯见过你的族人。
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|我想我曾在刚铎首都米那斯提力斯见过你的族人。
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|我明白，我来自很远的地方！我是一个霍比特人，{sir/madam}，来自夏尔。
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|啊，那一定是我亲爱的表弟！皮瑞格林·图克，我们都叫他皮平。我们都是霍比特人，{sir/madam}，我们都来自夏尔。好个老皮平，真好奇他正在米那斯提力斯做什么。
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|啊，那一定是我亲爱的堂兄！梅里雅达克·烈酒鹿，我们都叫他梅里。我们都是霍比特人，{sir/madam}，我们都来自夏尔。好个老梅里，真好奇他正在伊多拉斯做什么。
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|我明白，我来自很远的地方！我是一个霍比特人，{先生/女士}，来自夏尔。
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|啊，那一定是我亲爱的表弟！皮瑞格林·图克，我们都叫他皮平。我们都是霍比特人，{先生/女士}，我们都来自夏尔。好个老皮平，真好奇他正在米那斯提力斯做什么。
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|啊，那一定是我亲爱的堂兄！梅里雅达克·烈酒鹿，我们都叫他梅里。我们都是霍比特人，{先生/女士}，我们都来自夏尔。好个老梅里，真好奇他正在伊多拉斯做什么。
 dlga_hobbit_general_talk_3:close_window|再会！
 dlga_start:hobbit_merry_talk_met.1|{playername}，我们又见面了
 dlga_start:hobbit_pippin_talk_met.1|{playername}，我们又见面了
@@ -557,7 +557,7 @@ dlga_castle_gate_open:close_window.3|进来吧，但只有你一人获得了批�
 dlga_castle_gate_open:close_window.4|{s2}大人不允许你待在这里。立刻离开。
 dlga_start:caravan_help1|感谢你的帮助！现在终于安全了。我叫托巴尔，受到袭击的时候正在运输一些货物。^^你见过那么大的半兽人么？看起来可不像是我们平时轻松搞定的普通山地种。他们盾牌的战纹貌似是一种古老的魔多标志，很久没在大河（安都因河）的这一边看到过了。^^恐怖正在踏步，战争就要来了^^我希望你能去最近的城镇，把你在这里所先到的一切告知掌权者。这很重要，请尽快。
 dlga_caravan_help1:caravan_help2|你说得对，我从没见过如此大的半兽人。真是些肮脏的东西…^^我是一名正为未来大战做准备的士兵。
-dlga_caravan_help2:caravan_help3|你是士兵？哦，你当然是！你精湛的技艺我之前已经见识到了。^^我今天的确是很走运，我应该趁着运头正旺做些什么，比如跑到我的村庄警告村民这些野兽的来袭。^^接好，这是一些可以在{s10}使用的货币。
+dlga_caravan_help2:caravan_help3|你是一名士兵？毫无疑问！你精湛的武艺我刚刚已经见识过了。^^看来今天的确走运，我应该趁此机会返回村庄，把这群肮脏野兽的消息通知给我的村民们。^^接着，这是一些可以在{s10}。
 dlga_caravan_help3:caravan_help4|祝你一路平安，托巴尔。我想我们会再见面的。
 dlga_caravan_help4:caravan_help5|我对此十分期待。我的护卫在这里见证了你的战斗，他们肯定会把你的消息告诉他们的领主的。^^如果你多次帮助了领主们的人民，你肯定会在他们之中声名大噪，而这将会给你带来很多好处！ ^^比如我，作为一个名人，每个月都能因为我的贡献得到一次额外收入！
 dlga_caravan_help5:close_window|我会铭记的。谢谢你，托巴尔，注意安全。
@@ -593,7 +593,7 @@ dlga_kill_scout_6:kill_scout_7|(派系军衔教程) ^^军衔点允许你提升�
 dlga_kill_scout_7:kill_scout_8|你恶心到我了，半兽人！在我们拿你的脑袋装饰长枪之前，赶快滚回魔多吧！
 dlga_kill_scout_8:close_window|好呀好呀…喝尿的外地佬…！
 dlga_woodelf_help_1:woodelf_help_2.1|我从没见过如此大的半兽人。真是些肮脏的东西…不用担心，我是一名正为未来大战做准备的士兵。
-dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？噢你当然是！我已经看见了你是一位多么能干的战士。 我今天真的很幸运， 所以我该从这份好运里得到点裨益。 赶快去我的村庄， 警告我的人民那些横行无忌的野兽。
+dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？毫无疑问！你精湛的武艺我刚刚已经见识过了。看来今天的确走运，我应该趁此机会返回村庄，把这群肮脏野兽的消息通知给我的村民们。
 dlga_woodelf_help_3:close_window|祝你一路平安，托巴尔。我想我们会再见面的。
 dlga_start:close_window.9|你来得正好。让我们合并我们的军队给敌人好好上一课。
 dlga_start:close_window.10|跟我们战斗你可真是愚蠢透顶。
@@ -869,13 +869,13 @@ dlga_player_castle_guard_talk:player_castle_guard_talk_2|士兵，有什么不�
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|一切正常，指挥官。
 dlga_player_castle_guard_talk_3:close_window|好。保持警惕。
 dlga_start:close_window.24|日安，指挥官。很高兴在{s10}见到你。
-dlga_start:close_window.25|在这周围注意点形象，这样我们就不会有麻烦了。
+dlga_start:close_window.25|你要是不想惹麻烦的话就老实点。
 dlga_start:hall_guard_easter_egg|啊，午夜才刚刚过去。最近发生一件很不寻常的事儿—你想听听么？
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|嗯，你继续。
 dlga_hall_guard_easter_egg:close_window|我对流言蜚语一点兴趣都没有。
 dlga_hall_guard_easter_egg_scene:close_window|得嘞…最近出现了一队与众不同的冒险者：一个人类，一个矮人还有一个精灵，除此之外…
 dlga_start:hall_guard_talk|听候差遣！指挥官。
-dlga_start:close_window.26|在警戒的时候我们不应该交谈的，指挥官。
+dlga_start:close_window.26|在站岗的时候我们不应交谈，指挥官阁下。
 dlga_hall_guard_talk:hall_guard_duty|继续站岗，如果有人来找我就转告我一声。
 dlga_hall_guard_duty:close_window|好的，指挥官。如你所愿。
 dlga_hall_guard_talk:hall_guard_arrest|我想让你立即去逮捕这个人！

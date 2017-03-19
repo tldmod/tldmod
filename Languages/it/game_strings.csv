@@ -323,7 +323,7 @@ str_npc5_intro_response_1|I miei saluti Signore degli Elfi ! È un grande onore 
 str_npc6_intro_response_1|È così che gli Elfi Silvani accolgono i loro ospiti ?
 str_npc7_intro_response_1|{playername} al tuo servizio. Come sta il popolo di Durin ?
 str_npc8_intro_response_1|I miei saluti. Mi chiedevo se ci fosse qualche volontario che voglia unirsi a noi nei nostri viaggi.
-str_npc9_intro_response_1|Tieni per te le minacce, Uruk, prima che finisca male - non sono una spia.
+str_npc9_intro_response_1|Tieni per te le minacce, Uruk-Hai, prima che finisca male - non sono una spia.
 str_npc10_intro_response_1|Chi sei ?
 str_npc11_intro_response_1|Chi sei ?
 str_npc12_intro_response_1|Chi sei ?
@@ -360,10 +360,10 @@ str_npc8_backstory_a|Di sicuro potrai trovare buoni volontari se parlerai al com
 str_npc9_backstory_a|Buon per te! Mi chiamano Gulm. Ho sgozzato il mio sergente e il suo snaga ora mi dà la caccia. Quell'inutile maialino farà il suo arrivo! Una volta, abbiamo subito un agguato da parte di una pattuglia di teste di paglia.. ed è riuscito a perdere lo scontro. "Ritirata" gridava, e poi è scappato. Solo io, Gulm e pochi altri, noi siamo restati al nostro posto e respinto la loro carica di cavalleria. Poi abbiamo preso a bastonate i capelli gialli fino a farne poltiglia (heh heh heh). Ma se non fosse stato per noi, i forti, tutti saremmo cibo per i vermi!
 str_npc10_backstory_a|Io sono Durgash!
 str_npc11_backstory_a|Nar! Non è un esploratore, ecco. Mi hanno sbattuto fuori! Ti dico che hanno perso la testa, ecco cosa. Maledetti loro! Prima si sono messi a dire che perdo il controllo, poi che corro troppo lento e dopo che sono un inutile ficcanaso. Garn! Se non troveranno della marmaglia per me, presto sarò buono solo per le Fosse Nere, se quel che ho sentito è vero. Mi accerterò che qualcuno dei capi perda la pelle prima che mi sbattano laggiù!
-str_npc12_backstory_a|Sono al comando di un gruppo di ragazzi qui. Il mio nome è Gorbag e sarà meglio che impari in fretta che noi Uruk siamo quelli che comandano da queste parti. I grandi capi fanno errori, certo, anche i più grandi sbagliano, e sono sempre i poveri Uruk a dover mettere a posto le cose, senza mai un ringraziamento. Non ci dicono mai quello che sanno, lo fanno forse qualche volta ? Nemmeno un po'. Grr !
+str_npc12_backstory_a|Sono al comando di un gruppo qui. Il mio nome è Gorbag e sarà meglio che impari in fretta che noi Uruk siamo quelli che comandano da queste parti. I grandi capi fanno errori, certo, anche i più grandi sbagliano, e sono sempre i poveri Uruk a dover mettere a posto le cose, senza mai un ringraziamento. Non ci dicono mai quello che sanno, lo fanno forse qualche volta ? Nemmeno un po'. Grrr !
 str_npc13_backstory_a|Io ? Sono un granello di terra dalle sabbie del sud, spinto a nord dai freddi e oscuri venti della notte. Mi chiamo Lykyada, sono un Lord Serpente di Haradwaith. Lord del Serpente d'Oro, veleno della tribù del Serpente Nero, ora alleato per servire i voleri dell'Oscuro Signore.
 str_npc14_backstory_a|Il mio nome è Fuldimir, figlio del regno meridionale di Umbar, a sud di Harondor, e della Baia di Belfalas; tutti e due sono casa per me e il mio popolo. Siamo i signori del mare e della vela, per alcuni siamo Corsari, figli della Baia di Belfalas le cui acque dominiamo.
-str_npc15_backstory_a|Sono Bolzog il Dotato, Incastonatore d'Ossa, Prossimo alle ferite e Sciamano della guarigione. Se andrai in guerra per l'Occhio, senza dubbio tu e i tuoi compagni sarete feriti dai volti pallidi o dagli amanti dei cavalli. Ora, -nar-nar-nar! - gli Orchi li rimpiazzi con facilità, Grande Capo, ma puoi rimpiazzare un Warg ? Un Gigante ? Un Troll delle caverne ? Shi-Shi ! No! Hai bisogno di me, del Grande Bolzog !
+str_npc15_backstory_a|Sono Bolzog il Dotato, Incastonatore d'Ossa, Prossimo alle ferite e Sciamano della guarigione. Se andrai in guerra per l'Occhio, senza dubbio tu e i tuoi compagni sarete feriti dai volti pallidi o dagli amanti dei cavalli. Ora, -nar-nar-nar! - gli Orchi li rimpiazzi con facilità, Grande Capo, ma puoi rimpiazzare un Warg ? Un Gigante ? Un Troll delle caverne ? Shi-Shi ! No ! Hai bisogno di me, del Grande Bolzog !
 str_npc16_backstory_a|Bene bene, ecco lo straniero che dichiara di essere il primo. Nondimeno, io sono Varfang della famiglia di Balcoth.. Posso dire che non avrai sentito ancora canzoni o racconti della mia terra che narrino del nome di Balcoth, perché il solo pronunciarlo metterebbe alla prova il tuo coraggio e riempirebbe il tuo cuore di calamità.
 str_npc17_backstory_a|Mi chiamano Dímborn e lavoro nella foresta. Qui è bello. Mi piacciono le foreste. Ci sono tanti alberi. A me piacciono gli alberi. Ho lavorato nelle foreste per tutta la vita, perché sono forte e perché mi piacciono gli alberi.
 str_npc1_backstory_b|Devi sapere che sono un Ranger di Ithilien di discendenza e di valore Dúnedain. Ho esperienza nel seguire tracce e nell'esplorazione, le mie abilità con arco e spada sono ben note agli Orchi. Sono anche in grado di addestrare ogni anima che vorrà combattere l'Ombra che si approssima.
@@ -376,7 +376,7 @@ str_npc7_backstory_b|Ho collaborato al rinforzamento delle difese di Erebor e ad
 str_npc8_backstory_b|Ho curato il  mio Re Brand per la sua costipazione, un malessere comune che affligge gli uomini che vanno in guerra. Una leggera bevanda a base di assenzio, e sia le viscere che la mente tornano a loro agio.
 str_npc9_backstory_b|Così mi sono detto, 'Gulm, vuoi finire come una carogna morta nel campo ?' e mi sono risposto, 'No. Nella battaglia successiva mi sono gettato a terra fingendo di essere ferito. Poi, quando nessuno guardava, sono piombato sul mio sergente ! L'ho quasi tagliato in due, gharr ! Poi ho tagliuzzato per bene il suo secondo.. E' saltato fuori che quel rettile sanguinante in qualche modo è sopravvissuto, e ha iniziato a raccontare tutto. La prossima volta mi assicurerò che la sua testa sia staccata dal collo, gharr...
 str_npc10_backstory_b|Sono un cavalca-lupi di Isengard e so seguire le tracce.
-str_npc11_backstory_b|Ar ! E' stato solo perché il mio naso era tappato. E a che cosa sarebbe servito portare il naso sulle pietre comunque ? Nar ! E' stata tutta colpa di quei luridi Uruk! Quei maledetti ladri spioni! Ho solo perso la scia a causa del loro passaggio. Hanno confuso gli odori laggiù, rubando tutto quello che trovavano, e lasciando impronte tutto intorno al posto prima che arrivassi.
+str_npc11_backstory_b|Ar ! E' stato solo perché il mio naso era tappato. E a che cosa sarebbe servito portare il naso sulle pietre comunque ? Nar ! E' stata tutta colpa di quei luridi Uruk ! Quei maledetti ladri spioni! Ho solo perso la scia a causa del loro passaggio. Hanno confuso gli odori laggiù, rubando tutto quello che trovavano, e lasciando impronte tutto intorno al posto prima che arrivassi.
 str_npc12_backstory_b|Quei Nazgul mi danno i brividi. Ti fanno uscire il corpo dalla pelle appena ti vedono, e ti lasciano nel freddo oscuro dell'altra parte. Ma a lui piacciono; sono i suoi preferiti ultimamente, quindi brontolare sulla cosa è inutile. Te lo dico, non vale la pena prestare servizio in città. Mi piacerebbe stare altrove, dove non c'è nessuno di loro.
 str_npc13_backstory_b|Ho visto di recente come la parola dell'Oscuro Signore si è sparsa nella mia famiglia, e come si è insinuata nelle loro menti e nei loro cuori. Molti sono stati portati nelle sue tenebre, e al posto del loro coraggio è cresciuto un insaziabile appetito per la violenza, così che quando le loro orecchie udirono la sua chiamata, questi burattini furono pronti a rispondere.
 str_npc14_backstory_b|Molti cose mutano in un uomo che cavalca i tumulti dei venti e dei mari delle acque di Belfalas, e coloro che restano a combattere contro di lei saranno come bambini. E' per uomini robusti l'andare incontro alla tempesta e cavalcarla. Ho posato i miei occhi sulla sua marea più scura e ne sono rimasto il dominatore.
@@ -391,7 +391,7 @@ str_npc5_backstory_c|Tuttavia, se i nemici di Lothlórien sono sul piede di guer
 str_npc6_backstory_c|Guardandoti preparato per la guerra, non capiresti, credo. Ma devi aver viaggiato in lungo e in largo - hai mai visto le altre grandi foreste ? Puoi condurmici ?
 str_npc7_backstory_c|C'è una pausa nel combattimento che mal si adatta ad un guerriero nano della mia discendenza e temperamento. Sbaglio o si vede molta più azione nei tuoi viaggi, e la tua causa è favorevole a quella dei nani ? Posso dirti per certo che avere un nano aumenta grandemente le possibilità di sopravvivenza.
 str_npc8_backstory_c|Ho sentito dire che ci sono combattimenti altrove e che le nostre terre fortunatamente ne sono escluse, per ora. Dai graffi sulla tua armatura intendo che ti sia trovato in pericolo molte volte. Forse le mie umili competenze potrebbero trovare miglior impiego nella tua compagnia, per il beneficio di tutti.
-str_npc9_backstory_c|Sono un Uruk-hai combattente, e un berserker ! Quello che c'è da sapere per uccidere uomini, io lo so. Servivo la Mano Bianca, ma ora la Mano è come se mi volesse gettare nel fuoco. Verrei con te a cacciare gli uomini nel sud, mentre gli snagas di Isengard digrignano i loro denti.
+str_npc9_backstory_c|Sono un Uruk-Hai combattente, e un berserker ! Quello che c'è da sapere per uccidere uomini, io lo so. Servivo la Mano Bianca, ma ora la Mano è come se mi volesse gettare nel fuoco. Verrei con te a cacciare gli uomini nel sud, mentre gli snagas di Isengard digrignano i loro denti.
 str_npc10_backstory_c|Forse puoi essere il mio nuovo padrone.
 str_npc11_backstory_c|Va bene, va bene ! Forse il mio naso non è di grande utilità. Riconosco che i miei occhi sono meglio del mio naso. Ai ! Ma il mio naso non funziona solo perché non so di cosa sa il nulla. Non so nemmeno cosa stiamo cercando, ti dico. Ar ! Ho solo bisogno di gironzolare un po' e annusare nuovi posti.
 str_npc12_backstory_c|Beh, se ne avessi la possibilità, me ne andrei con qualche amico fidato da qualche parte dove non manca il bottino facile, dove non ci sono grandi capi da affrontare. Mi piacerebbe provare ad andare dove non c'è gente del genere, come ai vecchi tempi.
@@ -479,7 +479,7 @@ str_npc8_signup_2|Ti devo avvertire, sono abbastanza scarsa in battaglia. Ma so 
 str_npc9_signup_2|Però devi decidere rapidamente, le guardie si stanno insospettendo.
 str_npc10_signup_2|Non ti pentirai di avermi scelto.
 str_npc11_signup_2|Ci sono molte cose là fuori da odorare con il mio naso e da far assaggiare al mio coltello. Loro non lo sanno ancora, ma siamo rapidi a imparare. Che ne dici ?
-str_npc12_signup_2|Farò vedere alle vostre lumache che dove c'è una frusta salta fuori la voglia di trasportare quanto le loro schiene sono in grado di portare. Se la prendono bene potranno mantenere un buon ritmo. Cosa ne dici ?
+str_npc12_signup_2|Farò vedere alle vostre lumache che dove c'è una frusta salta fuori la voglia di trasportare quanto le loro schiene sono in grado di sollevare. Se la prendono bene potranno mantenere un buon ritmo. Cosa ne dici ?
 str_npc13_signup_2|Sappi, comunque, che la mia lealtà va sempre prima al mio casato. Ho combattuto fino a qui e perso molto per loro. Non volterò a loro la schiena, perché il mio destino è anche il loro.
 str_npc14_signup_2|E' una fortuna che coloro che non fanno più parte di questo mondo, non abbiano più bisogno dei tesori di questo mondo, e sono fortunato ad essere abile nell'aiutare queste persone a sollevarsi da questi pesi.
 str_npc15_signup_2|Oh, questo è un grande momento per 'Bolzog il dotato', e per te Grande Signore ! Conquisteremo insieme, tu indistruttibile grazie al mio tocco di guarigione e io, il Grande Orco Saggio che ti sostiene !
@@ -516,7 +516,7 @@ str_npc11_signup_response_2|Non ho bisogno di te, schiavo.
 str_npc12_signup_response_2|Ho cambiato idea.
 str_npc13_signup_response_2|Ho cambiato idea.
 str_npc14_signup_response_2|Ho cambiato idea.
-str_npc15_signup_response_2|In realtà, penso che cercherò un vero guaritore e non un millantatore.
+str_npc15_signup_response_2|In realtà, penso che cercherò un vero guaritore e non un pallone gonfiato.
 str_npc16_signup_response_2|Ne ho avuto abbastanza.
 str_npc17_signup_response_2|D'altro canto, penso di aver cambiato idea. Sei un tipo tosto, non è così ?
 str_npc1_payment|Vorrei unirmi a voi, ma il mio Capitano Faramir sentirà la mia mancanza. [Costo: {reg14} Punti Influenza di {s14}]
@@ -561,7 +561,7 @@ str_npc5_morality_speech|Devi riconsiderare le tue azioni, comandante. {s21} non
 
 str_npc7_morality_speech|Non ho gradito la tua decisione di {s21}. Cadere in battaglia è un onore per ogni nano con la testa sulle spalle, ma combattere in una compagnia guidata da un codardo è una vera disgrazia. Cosa diranno i miei cugini, se dovessero venirlo a sapere ?
 str_npc8_morality_speech|Comandante, devo obiettare. {s21} è crudele e inutile per gli uomini. Faccio quello che posso per alleviare le loro sofferenze, ma ti prego di non fare altri dispendiosi errori.
-str_npc9_morality_speech|Gli Uruk-hai combattenti decidono mai di {s21}. Se il capo mostra poco coraggio, potrebbe trovarsi senza nessuno nel giro di una notte. Gulm ha parlato.
+str_npc9_morality_speech|Gli Uruk-Hai combattenti decidono mai di {s21}. Se il capo mostra poco coraggio, potrebbe trovarsi solo nel cuore della notte. Gulm ha parlato.
 
 
 
@@ -729,7 +729,7 @@ str_npc3_home_intro|Una parola, comandante. Iniziamo ad avvicinarci nell'Entobos
 str_npc4_home_intro|Fermiamoci qui per un minuto, comandante. Davanti di noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
 str_npc5_home_intro|Daro! Quelle davanti a noi sono Isengard e la nera torre di Orthanc. Molte cose sono cambiate dall'ultima volta che le ho viste, e nessuna di queste per il meglio.
 str_npc6_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcuni di questi portano a vicoli ciechi. Ci stiamo avvicinando a Dol Guldur.
-str_npc7_home_intro|Hey, capitano! Questo dev'essere il vecchio sentiero che va fino all'entrata orientale di Khazad-dûm, o Moria, se preferisci. Si può vedere in lontananza il lago scintillante di Kheled-zâram, e attraverso le nuvole, i tre picchi, conosciuti da queste parti come le Montagne Nebbiose.
+str_npc7_home_intro|Hey, capitano ! Questo dev'essere il vecchio sentiero che va fino all'entrata orientale di Khazad-dûm, o Moria, se preferisci. Si può vedere in lontananza il lago scintillante di Kheled-zâram, e attraverso le nuvole, i tre picchi, conosciuti da queste parti come le Montagne Nebbiose.
 str_npc8_home_intro|Oh, un fatto curioso ! Ho sentito storie di questo posto, dove robusti boscaioli vivono in armonia con piante e animali. Si chiamano Beorniani, credo.
 str_npc9_home_intro|Maledizione! Capitano. quella deve essere Hornburg!
 str_npc10_home_intro|Ehi, guarda!
@@ -765,7 +765,7 @@ str_npc5_home_description_2|Che sia un memoriale per ricordare che anche i più 
 str_npc6_home_description_2|Sento gli eserciti del male dietro le loro mura, pronti a marciare.. Verso dove ? La fiera Lothlórien ? Verso Dale ? Verso Boscoverde, la mia terra natìa ? Non posso saperlo, ma ti prego di fare tutto quello che puoi per contrastarli.
 str_npc7_home_description_2|Se le sorti della guerra ci provvedessero una grande armata, dovremmo tentare di accedere alle Miniere e recuperarne i grandi tesori.
 str_npc8_home_description_2|Posso sentire il profumo di molti dolci fiori e vedere le api che ne raccolgono il nettare. Se non ti spiace, raccoglierò alcune erbe per noi tutti, ci vorrà solo un momento.
-str_npc9_home_description_2|Non ha senso arrancare qui attorno senza avere con noi una grossa orda di Uruk-hai. Sempre che non ti vada di fare delle smorfie alle guardie sulle mura, ecco.
+str_npc9_home_description_2|Non ha senso arrancare qui attorno senza avere con noi una grossa orda di Uruk-Hai. Sempre che non ti vada di fare delle smorfie alle guardie sulle mura, ecco.
 str_npc10_home_description_2|Minas Morgul, dove i Nazguls bevono tutto il giorno, har-har!
 str_npc11_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
 str_npc12_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
@@ -1289,9 +1289,9 @@ str_mordor_rumor_11|Feccia Uruk ishi krimp shar-kûk.
 str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
 str_mordor_rumor_13|Uno Snaga mi ha rubato la carne, pushdug !
 str_mordor_rumor_14|Gu kibum kelkum-ishi, burzum-ishi. Akha-gum-ishi ashi gurum.
-str_mordor_rumor_15|Isengard uruk-hai u bagronk sha pushdug Saruman-glob bubhosh skai!
+str_mordor_rumor_15|Isengard Uruk-Hai u bagronk sha pushdug Saruman-glob bubhosh skai!
 str_mordor_rumor_16|Se ti insulta - uccidilo. Se ti combatte - uccidilo. Se ti guarda storto - uccidilo. Se è morto - mangialo.
-str_mordor_rumor_17|Gli uruk-hai di Saruman dicono che il sole non gli da fastidio. Bûbhosh skai !
+str_mordor_rumor_17|Gli Uruk-Hai di Saruman dicono che il sole non gli da fastidio. Bûbhosh skai !
 str_mordor_rumor_18|Tutti morti, tutti marciti. Elfi, Uomini e Orchi. Nelle Paludi Morte !
 str_mordor_rumor_19|Meglio non mettersi fra i Nazgûl e la loro preda !
 str_mordor_rumor_20|Gli abitanti di Isengard ? I topi di fogna di un piccolo mago ! E la carne degli orchi che mangiano, lo garantisco.
@@ -1304,9 +1304,9 @@ str_isengard_rumor_3|Gli uomini dei cavalli avranno un'amara sorpresa ! Ha ha ha
 str_isengard_rumor_4|Saruman conosce molti trucchi ! Acciao forte e pietra di fuoco !
 str_isengard_rumor_5|Gli uomini selvaggi puzzano ! Ma Sharkû è saggio. Sa come farne uso.
 str_isengard_rumor_6|Moria feccia della razza olog-hai ! Grande ! Skai !
-str_isengard_rumor_7|Saggio maestro, rendi forti gli uruk-hai !
+str_isengard_rumor_7|Saggio maestro, rendi forti gli Uruk-Hai !
 str_isengard_rumor_8|Un Warg è più veloce di un cavallo ! I Warg mangiano i cavalli !
-str_isengard_rumor_9|Gli uruk-hai calpesteranno gli uomini dei cavalli !
+str_isengard_rumor_9|Gli Uruk-Hai calpesteranno gli uomini dei cavalli !
 str_isengard_rumor_10|Frantumare ! Frantumare ! Frantumare !
 str_isengard_rumor_11|Feccia Uruk ishi krimp shar-kûk.
 str_isengard_rumor_12|Bruciate la foresta ! Fabbricate armi ! Uccidete gli uomini dei cavalli !
@@ -1455,7 +1455,7 @@ str_khand_rumor_11|Noi commerciamo con Rhun, Mordor e Harad. Qualche volta li co
 str_khand_rumor_12|Non hai ancora fatto la tua maschera da guerriero ? Ne avrai bisogno presto ! Se il nemico non riesce a vedere la tua faccia, il suo spirito non ti troverà.
 str_good_rumor_begin|Dalle ceneri rinascerà un fuoco, L'ombra sprigionerà una scintilla; Nuova sarà la lama ora rotta, E re quei ch'è senza corona sono.
 str_good_rumor_2|Gli orchi combattono meglio di notte, ma sono più deboli di giorno.
-str_good_rumor_3|Gli Uruk-hai sono una differente razza di orchi che non teme la luce del sole !
+str_good_rumor_3|Gli Uruk-Hai sono una differente razza di orchi che non teme la luce del sole !
 str_good_rumor_4|Dopo una sconfitta e una pausa, l'Oscurità prende un'altra forma e risorge ancora.
 str_good_rumor_5|Le Paludi Morte.. una terra contaminata, malata al di là di ogni guarigione.
 str_good_rumor_6|L'Ombra può allevare solo una finzione, non è in grado di creare: non può generare cose da se stessa. Non credo che abbia dato vita agli Orchi, ha solo rovinato e ingannato delle creature.
@@ -1780,7 +1780,7 @@ str_trait_desc_foe_hammer|Avendo ucciso molti dei grandi capitani nemici capisci
 str_trait_title_battle_scarred|Cicatrici di battaglia
 str_trait_desc_battle_scarred|Hai riportato orrende ferite durante le tue campagne, ma sei ancora vivo per raccontarne la storia. Le tue membra piene di cicatrici compensano la tua abilità nel subire ferite. La gente normale potrebbe trovare il tuo aspetto orribile, ma tra coloro che ti seguono è un'affermazione della tua capacità in battaglia; essi di conseguenza, ricevono un bonus morale settimanale.
 str_trait_title_fell_beast|Animale abbattuto
-str_trait_desc_fell_beast|La tua pelle e' lacerata dalle cicatrici di innumerevoli battaglie e il tuo spirito e' duro ed inflessibile. Anche per lo standard degli orchi, uruk e i troll tu sei giudicato una bestia pericolosa e brutale. I tuoi servitori piangono il tuo nome di gioia quando li guidi sul campo. Tu sei la manifestazione della guerra in se e non temi praticamente nessuno.
+str_trait_desc_fell_beast|La tua pelle e' lacerata dalle cicatrici di innumerevoli battaglie e il tuo spirito e' duro ed inflessibile. Anche per lo standard degli orchi, degli Uruk e dei troll tu sei giudicato una bestia pericolosa e brutale. I tuoi servitori piangono il tuo nome di gioia quando li guidi sul campo. Tu sei la manifestazione della guerra in sè e non temi praticamente nessuno.
 str_wound_head|un colpo pesante alla testa
 str_wound_chest|alcune costole rotte
 str_wound_arm|un braccio malamente storpiato

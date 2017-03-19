@@ -3,7 +3,7 @@ qstr_Gate_opens..._You_ha|大门缓缓打开…你已经站在了中土最神圣
 qstr_Secret_place_discove|发现密地
 qstr_Next_Page|下一页
 qstr_Action|互动
-qstr_Mount|乘骑
+qstr_Mount|骑乘
 qstr_Attack_Type|攻击方式
 qstr_Hold_This_Position|坚守此地
 qstr_Follow_Me|跟我来
@@ -31,7 +31,7 @@ qstr_Opponents_Beaten:_{r|被击败的敌人: {reg1}
 qstr_Opponents_Remaining:|剩余敌人：{reg1}
 qstr_Gauntlet_wave:_1|第1波
 qstr_Gauntlet_wave:_{reg1|第{reg1}波
-qstr_Remain_in_retirement|坚持退休
+qstr_Remain_in_retirement|确定退休
 qstr_Go_back_to_the_adven|回到冒险
 qstr_You_have_retired_at_|你从长达{reg5}天的冒险中退休了，等级为{reg4}。
 qstr_Effect_on_Score|有效分数
@@ -771,7 +771,7 @@ qstr_{s1}_has_been_defeat|{s1}已被击败。任务取消。
 qstr_You_must_follow_{s1}|你必须跟随{s1} ！
 qstr_You_must_follow_{s1}!|你必须跟随{s1}！这是最后的警告！
 qstr_Parties_defeated:_{r|军队被击败： {reg1}
-qstr_{s1}_is_scouted.|{s1} 被偵察了
+qstr_{s1}_is_scouted.|{s1} 被侦查了
 qstr_The_Age_of_Men_has_f|人类的时代终于结束了。现在邪黑塔和欧散克塔都在集结他的军队和盟友，决定谁才是中土唯一的统治者！
 qstr_The_War_of_the_Two_T|双塔之间的战争打响了！
 qstr_{s2}_was_defeated!|{s2}被击败了！
@@ -893,7 +893,7 @@ qstr_I_don_t_need_them_an|我不再需要他们了，你留着吧。
 qstr_It_is_my_duty_to_pro|保护人民是我的天职。
 qstr_It_is_my_duty_to_prot|保护盟友是我的天职。
 qstr_I_am_{s4}_{s15}_of_{|我是{s4}，{s6}的{s15}
-qstr_I_am_{s4}_a_commande|我是{s4}，{s6}的指揮官
+qstr_I_am_{s4}_a_commande|我是{s4}，{s6}的指挥官
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5?和{s8}的统治者。:}
 qstr_Very_well_done_{play|做得很好！{playername}！正如我所期望的，你抓住了间谍和他的接头人。他们现在正拷在一起等待问询；他们有很多事情要好好的解释一下了。{playername}，我非常高兴你能完成这个任务。请收下这袋钱，这是你应得的奖赏。
 qstr_Beautiful_work_{play|做得很好！{playername}！你抓住了间谍和他的接头人。他们现在正关在牢里等待问询；很显然今晚的我检察官有的要忙了。{playername}，我非常高兴你能完成这个任务。请收下这袋钱，这是你应得的奖赏。
@@ -906,7 +906,7 @@ qstr_Superb_work_{playern|精湛的工作，{playername}。你的态度值得赞
 qstr_Your_efficiency_is_p|你的效率令人惊讶，{playername}。坚持下去，你将会走得很远。
 qstr_It_was_an_honour_to_|乐意效劳。
 qstr_Your_wish_is_my_comm|悉听吩咐。
-qstr_we_are_fighting_agai|我们目前正于{s13}交战
+qstr_we_are_fighting_agai|我们目前正与{s13}交战
 qstr_we_are_not_fighting_|我们目前没有与任何人交战
 qstr_Oh?_Let_me_see_that.|哦？让我看看…很好很好！非常感谢你把这封信带给我，{playername}。拿着徽章作为我收到信的证物，下次见到{s9}的时候请代我向他问好。
 qstr_Give_me_that!_Hrmph!|给我的？哇啊！很好！{playername}。你能把这个带给我，说明你是个有用的仆人。告诉{s9}，让他多用用你。
@@ -982,10 +982,10 @@ qstr_We_need_to_take_the_|我们要把战斗带向敌人，{playername}。为了
 qstr_We_need_to_grind_dow|我们要把没用的敌人碾碎，{playername}。他们的巡逻队和补给队比我预料中的还要大胆。我希望你去消灭{reg1}队{s13}，教会他们什么叫做恐惧。
 qstr_{s9}_asked_you_to_el|{s9}希望你去消灭{reg1}队{s13}。
 qstr_{s9}_asked_you_to_fr|{s9}希望你解决{s13}近郊游荡着的一只狂暴的食人妖。
-qstr_the_Dwarves_so_that_|矮人，如果你途径铁丘陵或孤山的话，你可以试着用传说中的矮人武器武装自己
-qstr_Gondor_so_that_if_yo|刚铎，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的护甲
-qstr_Rohan_so_that_if_you|洛汗，如果你途径他们的领土的话，你可以试着购买一些他们传说中的战马
-qstr_Dale_so_that_if_you_|河谷镇，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的战弓
+qstr_the_Dwarves_so_that_|矮人使用的货币，如果你途径铁丘陵或孤山的话，你可以试着用传说中的矮人武器武装自己
+qstr_Gondor_so_that_if_yo|刚铎使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的护甲
+qstr_Rohan_so_that_if_you|洛汗使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们传说中的战马
+qstr_Dale_so_that_if_you_|河谷镇使用的货币，如果你途径他们的领土的话，你可以试着购买一些他们远近闻名的战弓
 qstr_It_sure_look_like_yo|看起来是你做的，魔多的渣滓…^^我已经听到了伟大白手的征召，将恐惧带给人类的国度，并尽可能多的杀死骠骑之民。
 qstr_It_sure_look_like_you|看起来是你做的。^^黑暗魔君正在号召，而我在这里回应。毁灭人类的国度
 qstr_*Snort*_There_is_onl|哼！这个世界上只有一个至尊—黑暗魔君。这场战斗中没有你的位置，懦夫。别挡了我的路。
@@ -1002,7 +1002,7 @@ qstr_Here_s_some_money_th|这是我之前赢来的钱。拿着！你可以用它
 qstr_Here_s_some_of_their_ow|这是我之前赢来的当地货币…在魔多一文不值。拿着！你能用它去买卢恩游牧民的武器…或是买一匹马去吃！他们肯定会杀了你的！哈哈哈！
 qstr_That_is_not_a_smart_|在一名卢恩战士面前说这种话可不明智…下次我见到你，我一定会干掉你。
 qstr_They_will_all_know_m|他们都将知晓我的名号…他们也将知晓何为恐惧
-qstr_Suilad_mellon!_It_is|向你致敬，我的朋友！来自瑞文戴尔的朋友在我们的国度可不常见。感谢群星对你的引到让你前来帮助我们。谢谢！
+qstr_Suilad_mellon!_It_is|向你致敬，我的朋友！来自瑞文戴尔的朋友在我们的国度可不常见。感谢群星对你的指引让你前来帮助我们。谢谢！
 qstr_Suilad_mellon!_It_is_|向你致敬，我的朋友！我们的木精灵表亲能前来帮助我们真的很少见。辛达林语：谢谢！
 qstr_Suilad_mellon!_That_|Suilad，mellon！在通用语中的含义是—向你致敬，我的朋友！^^一开始我不确定屋外究竟是一柄半兽人马刀，还是一头愤怒的公熊。哎！感谢群星将你带到了我的面前。
 qstr_Alas_it_is_not_a_ple|哎，漫无目的四处游荡并不是我和其他忠于埃尔隆德大人之人来这里的目的。
@@ -1065,7 +1065,7 @@ qstr_{s1}_Slaves|{s1}奴隶
 qstr_The_{s11}_of_{s10}_a|{s10}的{s11}希望你能护送一些{s12}到{s13}。
 qstr__Guards_slaughter_hi|守卫，解决掉他！
 qstr_Slaughter_him_for_fr|宰了他吃肉！
-qstr_This_is_{s5}_Command|这是[s5]，指挥官。
+qstr_This_is_{s5}_Command|这里是{s5}，指挥官。
 qstr_{s6}_This_place_and_|{s6}这里和它的周边当然都属于你，{领主/夫人}大人。
 qstr_{s6}_This_place_and_t|{s6}这里和它的周边都属于{s8}的{s7}
 qstr_{s3}_and_{s5}|{s3}和{s5}

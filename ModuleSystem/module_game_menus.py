@@ -3018,9 +3018,15 @@ game_menus = [
 								(else_try),(str_store_string, s7, "@ON"),(try_end),
         ],"Gondor AI Test Tweaks:  {s7}",[
         (store_sub, "$gondor_ai_testing", 1, "$gondor_ai_testing"),(val_clamp, "$gondor_ai_testing", 0, 2)]),
-    ("give_imod_test", [],"Give IMOD Test Mesh",[(troop_add_item, "trp_player","itm_nazgulrobe",imod_old),(troop_add_item, "trp_player","itm_nazgulrobe",0),(display_message, "@IMOD test mesh given")]),
+    ("give_imod_test", [],"Give IMOD Test Mesh",[(troop_add_item, "trp_player","itm_dwarf_sword_a", imod_fine),(troop_add_item, "trp_player","itm_beorn_shield_reward", imod_reinforced), (troop_add_item, "trp_player", "itm_good_mace", imod_masterwork),(display_message, "@IMOD test mesh given")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("give_moria_book",[],"Give Moria Book", [(troop_add_item, "trp_player","itm_book_of_moria"),(display_message, "@Moria Book given")]),
+    ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
+    ("what_region",[], "What Region am I in?", 
+    	[(store_add, reg1, str_shortname_region_begin , "$current_player_region"),
+		 (str_store_string, s1, reg1),
+		 (display_message, "@{s1}"),
+    	]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -5119,6 +5125,35 @@ game_menus = [
 				(call_script,"script_injury_routine", ":npc"), # chances to get injury halved when victory
 			(try_end),
 		(try_end),
+		## Kham - Oath of Vengeance Kills Start
+		(try_begin),
+			(check_quest_active, "qst_oath_of_vengeance"),
+			(quest_get_slot, ":target","qst_oath_of_vengeance", 2),
+			(quest_get_slot, ":moria", "qst_oath_of_vengeance",6),
+			(try_begin),
+				(gt, ":moria",0),
+				(quest_get_slot, ":gundabad", "qst_oath_of_vengeance",7),
+				(this_or_next|eq, ":defeated_faction",  ":target"),
+				(eq, ":defeated_faction", ":gundabad"),
+				(get_player_agent_kill_count, ":temp_kills"),
+				(val_sub, ":temp_kills", "$total_kills"),
+				(val_add, "$oath_kills", ":temp_kills"),
+			(else_try),
+				(eq, ":defeated_faction",  ":target"),
+				(get_player_agent_kill_count, ":temp_kills"),
+				(val_sub, ":temp_kills", "$total_kills"),
+				(val_add, "$oath_kills", ":temp_kills"),
+			(try_end),
+			(try_begin),
+				(eq, "$cheat_mode",1),
+				(assign, reg1, "$oath_kills"),
+				(assign, reg0, "$total_kills"),
+				(str_store_faction_name, s1, ":target"),
+				(display_message, "@{reg1} kills of {s1} faction troops counted towards Oath. TOTAL Kills: {reg0}"),
+			(try_end),
+		(try_end),
+		(get_player_agent_kill_count, "$total_kills"),
+		## Kham - Oath of Vengeance Kills END
       ],
     [("continue",[],"Continue...",[(change_screen_return)]),]
  ),
@@ -8067,6 +8102,21 @@ game_menus = [
 	
 ## Kham - Spears of bladorthin - Raft Men - End
 
+## Kham - Gondor Reinforcement Event Menu - Start
+
+("gondor_reinforcement_event",0,
+   "^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (set_fixed_point_multiplier, 100),
+        (position_set_x, pos0, 65),
+        (position_set_y, pos0, 30),
+        (position_set_z, pos0, 170),
+        (set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", "fac_gondor", pos0)],
+   	[("gondor_reinforcement_event_close", [], "Close", [(change_screen_return)]),
+   	
+]),
+
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations
 ( "auto_player_garrison",0,"stub","none",
@@ -8611,13 +8661,12 @@ game_menus = [
 
 		#Set Which Scene Village is at
 	 	## Get Theater of Village
-	 		(faction_get_slot, ":home_theater", ":quest_object_faction", slot_faction_home_theater),
 		 	(try_begin),
-			 	(eq, ":home_theater", theater_SW),
+			 	(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 	        	(assign, ":village_scene", "scn_village_rohan"),
-	       # (else_try),
-	       # 	(eq, ":home_theater", theater_SE),
-	       # 	(assign, ":village_scene", "scn_village_gondor"),
+	        (else_try),
+	        	(is_between, "$current_player_region", region_pelennor, region_harrowdale),
+	        	(assign, ":village_scene", "scn_village_gondor"),
 	 #Randomize Scene
 	 		(else_try),
 		        (store_random_in_range, ":random_scene", 1, 3),
@@ -8642,7 +8691,7 @@ game_menus = [
 	        (set_visitors, 16, ":bandit_troop_1", ":random_no"),
 	        (set_visitors, 10, "trp_farmer", 8),
 	        (set_visitors, 11, "trp_peasant_woman", 8),
-	        (val_div,":random_no",4),
+	        (val_div,":random_no",3),
 	        (set_visitors, 18, ":bandit_troop_2", ":random_no"),
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
@@ -8678,9 +8727,9 @@ game_menus = [
 		 	(try_begin),
 			 	(eq, ":home_theater", theater_SW),
 	        	(assign, ":village_scene", "scn_village_rohan"),
-	   #      (else_try),
-	   #     	(eq, ":home_theater", theater_SE),
-	   #     	(assign, ":village_scene", "scn_village_gondor"),
+	        (else_try),
+	   	    	(eq, ":home_theater", theater_SE),
+	        	(assign, ":village_scene", "scn_village_gondor"),
 	 #Randomize Scene
 	 		(else_try),
 		        (store_random_in_range, ":random_scene", 1, 3),
@@ -8787,14 +8836,12 @@ game_menus = [
 	        (assign, ":guard_troop_3", ":tier_5_troop"),
 	        (assign, ":watchtower_troop",":tier_ranged_troop"),
 
-	 #Set Which Scene Scout Camp is at
-	 	## Get Theater of Scout Camp
-	 		(faction_get_slot, ":home_theater", ":scout_camp_faction", slot_faction_home_theater),
-	 		(store_character_level, ":level", "trp_player"),
-		 		(try_begin),
-			 		(eq, ":home_theater", theater_SW),
+	 #Get Player Level
+	       	(store_character_level, ":level", "trp_player"),
 				
-			## Get Side of Player to check which scout camp to spawn 	
+	 ## Get Side & Region of Scout Camp to check which scene to spawn 	
+			(try_begin),
+				(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 			 		(try_begin),
 			 			(is_between, ":level", 11,17),
 		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
@@ -8814,9 +8861,11 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_rohan_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_good_big"),
 			 		(try_end),
+			 		#(display_message, "@DEBUG: Rohan Region"),
 			 	(else_try),
-			## Get Theater of Scout Camp
-			 		(eq, ":home_theater", theater_SE),
+			
+			## Get Region of Scout Camp
+				(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 
 			## Get Side of Player to check which scout camp to spawn 	
 			 		(try_begin),
@@ -8838,10 +8887,11 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_gondor_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_good_big"),
 			 		(try_end),
+			 		#(display_message, "@DEBUG: Gondor Region"),
 			 	(else_try),
-
-			## Get Theater of Scout Camp
-			 		(eq, ":home_theater", theater_C,),
+			
+			## Get Region of Scout Camp
+				(is_between, "$current_player_region", region_n_mirkwood, region_above_mirkwook),
 
 
 			## Get Side of Player to check which scout camp to spawn 	
@@ -8864,6 +8914,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_mirk_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_good_big"),
 			 		(try_end),
+			 		#(display_message, "@DEBUG: Mirkwood Region"),
 
 			##North is the only region left
 			 	(else_try),
@@ -8886,6 +8937,7 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_north_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_good_big"),
 			 		(try_end),
+			 		#(display_message, "@DEBUG: North Region"),
 			 	(try_end),
 	#Set Entry and Number of Defenders   
 	#0, player
@@ -9259,19 +9311,25 @@ game_menus = [
 	(store_current_day, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
 	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
-	(assign,":count", 0), # count and store initial killcount of target faction' parties
-	(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
-		(spawn_around_party,"p_main_party",":ptemplate"),
-		(store_faction_of_party,":fac", reg0),
-		(remove_party, reg0),
-		(eq, ":fac", ":target"),
-		(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
-		(val_add,":count",":n"),
-	(try_end),
-	(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+	
+	#Kham - Oath of Vengeance Refactor Start
+	#(assign,":count", 0), # count and store initial killcount of target faction' parties
+	#(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+	#	(spawn_around_party,"p_main_party",":ptemplate"),
+	#	(store_faction_of_party,":fac", reg0),
+	#	(remove_party, reg0),
+	#	(eq, ":fac", ":target"),
+	#	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+	#	(val_add,":count",":n"),
+	#(try_end),
+	#(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+	
+	(assign, "$oath_kills",0),
+	#Kham - Oath of Vengeance Refactor END
+
 	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
         (setup_quest_text, "qst_oath_of_vengeance"),
-        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the armies of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
 	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
 	],[
     ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),

@@ -338,7 +338,7 @@ qstr_no_holdings|Mülk yok.
 qstr_{s57}_and_{s58}|{s57} ve {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?She:He}
-; qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} is the ruler of {s56}.^:{s54} serves {s55} of {s56}.^}}{reg9?{reg3?She:He} is the {reg3?lady:lord} of {s58}.:}{s59}{reg10?^{reg3?She:He} died on the battlefield!:}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54}, {s56}nın hakimi.^:{s54}, {s56}ndan {s55}'a hizmet ediyor.^}}{reg9?{reg3?O:o} {s58} {reg3?hanımıdır:lordudur}.:} {s59}{reg10?^{reg3?O:o} savaş alanında öldü!:}
 qstr_The_last_time_you_sa|En son {s1} da {reg1?her:him} yı gördün
 qstr_The_last_time_you_he|En son {s1} da {reg1?her:him} hakkında bir şeyler duydun.
 qstr_The_{s50}|{s50}
@@ -369,7 +369,7 @@ qstr_Event_#{reg5}_type_{reg|Olay #{reg5}, type {reg6}, zaman {reg8}. İlgili kr
 qstr_Event_#{reg5}_type_{reg6|Event #{reg5}, type {reg6}, time {reg8}. Bağımsız Oyuncu
 qstr_Elapsed_hours:_{reg7|Geçen saatler: {reg7}
 qstr_Reputation_type:_{s1|İtibar türü: {s15}
-; qstr_Entries_up_to_#{reg5|Entries up to #{reg5} skipped
+qstr_Entries_up_to_#{reg5|#{reg5} kadar kayıt atlandı.
 qstr_A_new_location_is_no|Şimdi haritada yeni bir konum mevcut!
 qstr_New_trait_gained:_{s|Kişisel özellik kazanıldı: {s5}.
 qstr_Gained_permanent_+1_|+1 Güç Kalıcı olarak kazanıldı.
@@ -448,14 +448,14 @@ qstr_Good_to_see_the_Shad|Karanlığın henüz sizi yenmeyi başaramadığını 
 qstr_You_are_the_one_they|Sen Gandalf yada Mithrandir olmalısın.
 qstr_That_is_what_some_ca|Bazıları bana böyle seslenir.Başka zamanlarda başka şekilde çağrıldığım da olur.Fakat eğer karanlık durmazsa.Bana her hangi bir şekilde seslenecek kimse kalmayacak.
 qstr_What_do_you_mean?|Ne demek istiyorsun?
-; qstr_In_spite_of_their_va|In spite of their valiant resistance, {s3} has been overwhelmed by the forces of evil. {s3}'s people are scattered and the good {s4} is no more.
+qstr_In_spite_of_their_va|Onların cesur direncine rağmen {s3}, kötülük kuvvetleri tarafından boğulmuştu. {s3} 'nin insanları dağınık ve iyi {s4} artık yok
 qstr_You_bring_dismal_new|Üzücü haber getirdiniz, sihirbaz. 
 qstr_But_I_also_bring_a_m|Aynı zamanda umudunda mesajını getirdim. {s5} insanları hala sıkı bir şekilde direniyor. Savaşçıları korkusuz, liderleri ise kararlı.
 qstr_Help_them_fight_the_|Elinden gelen en iyi şekilde savaşmalarına yardım et. Asla acıma! Teyakkuzda kal! Dünyada Orklardan daha eski ve hilekar şeyler var.
 qstr_Beware_{playername}_|Sakın ey {playername}! Karanlığın gücü çöküyor. {s3} düştü, {s4} liderinin düştüğü gibi.
 qstr_What_do_you_want_of_|Benden ne istiyorsun, yaşlı adam?
 qstr_Just_know_that_a_Daw|Sadece Şafağın geldiğini bil. Bu kaçınılmaz. Ve bunu görmek için hayatta kalmaya çalışmalısın, o zaman bunu yapabilmek için kendine ne söyleyebileceğini düşün.
-; qstr_Well_met_{playername|Well met, {playername}, {s24}. My trust in you has not been misplaced. The might of the forces of the Shadow has been broken and your efforts played no small part in it!
+qstr_Well_met_{playername|Tanıştığımıza göre, {playername}, {s24}. Sana olan güvenim yanlış değil. Gölge Kuvvetlerinin gücü kırıldı ve çabalarınızda küçük bir rol oynamadı! 
 qstr_Thank_you_Mithrandir|Teşekkürler, Mithrandir!
 qstr_The_wizard_Saruman_i|Saruman gitti ve Barad Dur karanlık Lord'la birlikte toz haline geldi! Orta Dünya'daki tüm insanlar, Onların bu dünyada iyi ve saf olan her şeyi neredeyse yok edecek olan tehdidinden kurtuldular. Düşman yenildi ve Kral geri döndü!
 qstr_It_was_a_long_and_bl|Bu uzun ve kanlı bir savaştı ve yakın arkadaşlarımızın çoğu artık bizlerle değil.
@@ -488,7 +488,7 @@ qstr___Infantry_formation|Piyadelerin dizilimini bozun
 qstr___Cavalry_formation_|Süvarilerin dizilimini bozun
 qstr___Archer_formation_d|Okçuların dizilimini bozun
 qstr_{s1}_has_fled_the_ba|{s1} savaştan kaçtı!
-; qstr_Your_troops_are_at_{|Your troops are at {reg1}% cohesion (+{reg3}% bonus), the enemy at {reg2}%!
+qstr_Your_troops_are_at_{|Birlikleriniz {reg1}% c uyumludur. (+%{reg3} bonus), Düşman %{reg2}!
 qstr_Morale_of_your_troop|Birliklerinizin morali kırıldı
 qstr_Morale_of_your_enemi|Düşmanın morali kırıldı.
 qstr_Your_enemies_flee_in|Düşmanların korkuyla kaçıyor
@@ -516,7 +516,7 @@ qstr_Cannot_leave_now.|Şimdi ayrılamazsın
 qstr_You_have_found_the_l|Yerli demirciyi buldun...
 qstr_You_have_found_the_lo|İdareyi buldun.
 qstr_You_have_found_the_loc|Ambarı buldun.
-; qstr__cancelled_the_{reg1|(cancelled the {reg10} exp pts earned from killing prisoners)
+qstr__cancelled_the_{reg1|(Mahkumları öldürmekten kazanılan {reg10} tecrübe puanları iptal edildi)
 qstr_Forming_ranks.|Sıralamalar.
 qstr_You_fall_off_of_your|Bineğinden düştün
 qstr_Received_{reg0}_dama|{reg0} alınan hasar.
@@ -547,12 +547,12 @@ qstr_{s10}_Move_over_ther|{s10}, Oraya git!
 qstr_You_have_a_clear_per|Her yerden gelebilecek bir tehlike içinde olduğuna dair içinde net bir his var!
 qstr_New_ent_reached_batt|Yeni ent savaş sahnesine ulaştı.
 qstr_You_receive_word_tha|Beorning köylerine saldırı yapıldığına dair bir haber var. Boeringler grup dayanıklıklarını kaybediyorlar.
-; qstr_You_receive_word_that|You receive word that the Ring Hunter Leaders were seen travelling towards Mordor, a chest in tow. Mordor gains faction strength.
+qstr_You_receive_word_that|Yüzük avcılarının Mordor'a doğru yol aldığını biliyorsunuz. Mordor fraksiyon gücü kazanıyor.
 qstr_On_your_positions_bi|Pozisyon alın, kızlar!!
 qstr_Defenders:_infantry_|Savunanlar: piyade HÜCUM!!
 qstr_Defenders:_everyone_|Savunanlar: herkes HÜCUM!!
 qstr_Attackers:_{reg1}/{r|Saldıranlar: {reg1}/{reg3}/{reg5} Savunanlar: {reg0}/{reg2}/{reg4}
-; qstr_Reached_Gauntlet_wav|Reached Gauntlet wave {reg1}!
+qstr_Reached_Gauntlet_wav|{reg1} Gauntlet bölümüne ulaşıldı.
 qstr_Ballista:_out_of_amm|Mancınık:mermimiz bitti!
 qstr_Ballista:_turn_CURSO|Ballista: dondürmek CURSOR, nişan almak LSHIFT, ateş etmek SPACE, hazırlamak T, çıukmak F
 qstr_Ballista:_out_of_ammo|Mancınık:mermimiz bitti!
@@ -662,7 +662,7 @@ qstr_Heroes_only|Sadece kahramanlar
 qstr_Regulars_and_Heroes|Askerler ve Kahramanlar
 qstr_HP_lost_from_poisoni|Zehirlenmeden kaybedilen HP
 qstr__{s17}.|, {s17}.
-; qstr_A_group_of_{s1}_is_{|A group of {s1} is {s10} toward you.
+qstr_A_group_of_{s1}_is_{|{s1} Grubu sana karşı {s10}
 qstr_You_are_attacking_a_|Sen {s1}'in grubuna saldırıyorsun.
 qstr_The_battle_against_t|{S1} grubuna karşı savaş devam ediyor.
 qstr_{s13}_asked_you_to_r|{s13}, senden en az {reg13} birlikle kendisine haber vermenizi rica etti.
@@ -676,11 +676,11 @@ qstr_^^Ally_Casualties:{s|^^Müttefik Kayıpları:{s0}
 qstr_News_of_your_victory|{s4}'e karşı kazandığın zafer haberi {s3}'e ulaştı.
 qstr_{s3}_witnesses_your_|{s3} , {s4} karşısında kazandığın zaferine tanık oluyor.
 qstr_{s1}_of_{s3}_managed|{s1} of {s3} kaçmana yardım etti.
-; qstr_Prisoners_rescued_so|Prisoners rescued so far: {reg1}
+qstr_Prisoners_rescued_so|{reg1} adet Mahkum kurtarıldı. 
 qstr_Victory_comment._Pla|Zafer yorumu. Oyuncu yalnızdı
-; qstr_Ordinary_victory_com|Ordinary victory comment. The player provided at least 40 percent forces.
-; qstr_Player_participation|Player participation comment. The enemy had at least 1k starting strength.
-; qstr_No_victory_comment._|No victory comment. The battle was small, and the player provided less than 40 percent of allied strength
+qstr_Ordinary_victory_com|Sıradan bir zafer açıkladı. Oyuncu en az %40 güçlendi.
+qstr_Player_participation|Oyuncu katılım açıkladı. Düşmanın en azından 1k gücü vardı.
+qstr_No_victory_comment._|Zafer yorumu yok. Savaş küçüktü ve Oyuncu, müttefik gücün yüzde 40'ından daha azını sağladı
 qstr_Some_of_your_tendons|Bazı tendonların savaşta zarar gördü. 1 güç kaybettin.
 qstr_You_took_a_nasty_wou|İyileştikten sonra bile hafifçe topallamana neden olacak kötü bir yara aldın. Çevikliğini 1 kaybettin.
 qstr_You_have_trouble_thi|Savaştan sonra, belki de kafanıza gelen sert bir vuruştan dolayı sık sık baş ağrıları çekiyorsunuz ve artık eskisi gibi düşünmekte zorlanıyorsunuz. İstihbarat 1 azaldı.
@@ -740,7 +740,7 @@ qstr_You_see_the_village_y|Baskın için görevlendirildiğiniz köyü görüyor
 qstr_The_raiders_are_defe|Akıncılar yenildi! Canlı ve bilinçli kalabilen az sayıdaki kişi, köylülerden ve yeni şampiyonlarından korkarak geldiği yer olan karanlığa doğru koşarak uzaklaştılar.
 qstr_Try_as_you_might_you|Elinden geldiği kadar çabala, akıncıları yenemezsin. Köyü yerle bir edip köylüleri köle yapacaklar.
 qstr_The_village_has_been|Köy yıkıldı, köylüler öldürüldü ya da köle olarak alındı. Karanlık Lord memnuniyet duyacaktır.
-; qstr_You_failed_to_raid_t|You failed to raid the village and you were sent scurrying with your men. You hear the victors cheering as you feel the disapproving gaze of the Eye.
+qstr_You_failed_to_raid_t|Köy baskınında için başarısız oldun ve adamlarınla birlikte hızlıca kaçtın. Gözün kınayan bakışını hissettiğinizde galip gelenleri duyarsınız.
 qstr_Now_that_the_sorcere|Artık büyücü öldü, burada yapılması gereken hiçbir şey kalmadı.
 qstr_Now_that_the_sorcerer|Şimdi büyücü kaçtı, burada yapılması gereken hiçbir şey kalmadı.
 qstr_You_approach_a_heavi|Ormanın çok korunan bir bölgesine yaklaşıyorsun...
@@ -820,7 +820,7 @@ qstr_{reg65?Madame:Sir}|{reg65?Madame:Sir}
 qstr_How_do_magnets_work?|Mıknatıslar nasıl çalışır?
 qstr_Um..._by_enchanting_|Hmm...Büyüleyici demir tarafından mı?
 qstr_Magnets_are_made_of_|Mıknatıs yer altından çıkarılan metallerle yapılır. Onlar manyetik çünkü içinde yerçekimi parçaları bulunur.
-; qstr_i_wont_a_bonerlrord_|i wont a bonerlrord port nao!!11!
+qstr_i_wont_a_bonerlrord_|bonnerlord istiyorom port nao!!11!
 qstr_I_m_sure_the_TLD_tea|TLD gelmeye çalışacak, bundan eminim.
 ; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
 ; qstr_dis_mod_takes_2_long|dis mod takes 2 long 2 releaze! it sux!!11!
@@ -873,7 +873,7 @@ qstr_Excellent_job_{s23}!|Harika iş, {s23}! Keşke tüm komutanlarımız da siz
 qstr_Nicely_done_{s23}.|Güzel olmuş, {s23}
 qstr_Good_work_{s23}.|İyi iş, {s23}
 qstr_The_more_you_capture|Ne kadar çok yakalarsanız, o kadar iyi, {s23}.
-; qstr_Caught_a_few_straggl|Caught a few stragglers, {s23}?
+qstr_Caught_a_few_straggl|Birkaç serseri mi yakaladın, {s23}?
 qstr_I_am_sorry_no_one_el|Üzgünüm , Hiçkimse gitmeye hazır değil
 qstr_Tough_luck_but_we_do|İyi şans, fakat biz o kadar şanslı değiliz.Daha sonra yine gel.
 ; qstr_There_are_brave_sold|There are brave soldiers willing to risk their life, but in these dark times I cannot afford to let them leave the defences here.^^^[not enough Resource Points]
@@ -1052,7 +1052,7 @@ qstr_Well..._better_here_|Peki... burada olmak savaşta olmaktan daha iyi değil
 qstr_town|kasaba
 qstr_village|köy
 qstr_The_{s9}_of_{s13}_ha|{S9} 'un {s13}'ü, sizden çevredeki kırsaldaki orkları halletmenizi istedi.
-; qstr_{s9}_of_{s3}_asked_y|{s9} of {s3} asked you to deliver {reg5} units of {s6} to the {s10} in {s4} in {reg6} days.
+qstr_{s9}_of_{s3}_asked_y|{s3} ün {s9} u sana {reg5} sayısınca {s6} yı {reg6} gün içinde {s4} deki {s10} a teslim etmeni istedi.
 ; qstr_The_{s9}_of_{s3}_ask|The {s9} of {s3} asked you to bring him {reg5} units of food in {reg6} days.
 ; qstr_The_{s9}_of_{s3}_aske|The {s9} of {s3} asked you to bring him {reg5} units of {s6} in {reg0} days.
 qstr_Escort_the_supply_tr|Yardım trenini {s8}'e kadar koru.

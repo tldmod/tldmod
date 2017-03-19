@@ -3433,19 +3433,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (store_current_day, ":day"),
      (quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
      (quest_set_slot, "qst_oath_of_vengeance", 2, "fac_moria"), # target faction
-     (assign,":count", 0), # count and store initial killcount of target faction' parties
-     (try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
-        (spawn_around_party,"p_main_party",":ptemplate"),
-        (store_faction_of_party,":fac", reg0),
-        (remove_party, reg0),
-        (this_or_next|eq, ":fac", "fac_moria"),
-        (store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
-        (val_add,":count",":n"),
-     (try_end),
-     (quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
-        (setup_quest_text, "qst_oath_of_vengeance"),
-        (str_store_string, s2, "@You swear an oath of vengeance against Moria. You must now destroy as many of the armies of Moria as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^(You must be the one to initiate the battles in order for it to count)."),
-        (call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player")]],
+     (quest_set_slot, "qst_oath_of_vengeance", 7, "fac_gundabad"), # target faction 2
+     (quest_set_slot, "qst_oath_of_vengeance", 6, 1),
+     (setup_quest_text, "qst_oath_of_vengeance"),
+     (str_store_string, s2, "@You swear an oath of vengeance against Moria and Gundabad. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^."),
+     (call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player")]],
 
 # TLD: End Dwarf Lord takes Moria book - Implemented by Kham
 
@@ -4943,7 +4935,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (try_for_range, ":unused", 0, 10),
         (eq, ":terrain_check",0),
         (set_spawn_radius, 15),
-        (spawn_around_party,"$g_talk_troop",":quest_target_party_template"),
+        (spawn_around_party,"$g_encountered_party",":quest_target_party_template"),
         (try_begin),
           (party_get_current_terrain, ":terrain_type", reg0),
           (neq, ":terrain_type", rt_water),
@@ -4956,10 +4948,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
         (try_end),
       (try_end),
       (try_begin), #last ditch effort, if 10 iterations of the above doesnt work, just spawn it, and hope for the best
-        (party_is_active, "$qst_destroy_scout_camp_party"),
+      (party_is_active, "$qst_destroy_scout_camp_party"),
       (else_try),
         (set_spawn_radius, 15),
-        (spawn_around_party,"$g_talk_troop",":quest_target_party_template"),
+        (spawn_around_party,"$g_encountered_party",":quest_target_party_template"),
         (assign, "$qst_destroy_scout_camp_party", reg0),
       (try_end),
       (quest_get_slot, reg1, "$random_quest_no", slot_quest_expiration_days),

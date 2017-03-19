@@ -1820,6 +1820,7 @@ routes_list = [
  (p_town_caras_galadhon,   p_town_thranduils_halls, p_town_imladris_camp, p_town_cerin_dolen, p_town_cerin_amroth, p_advcamp_lorien),
  (p_town_thranduils_halls, p_town_imladris_camp, p_town_woodelf_camp, p_town_woodelf_west_camp, p_advcamp_woodelf),
  (p_town_imladris_camp,    p_advcamp_imladris),
+ (p_town_beorn_house,	   p_town_woodsmen_village, p_town_beorning_village),
 ]
 
 lords_spawn = [ (trp_knight_1_1, p_town_calembel),
@@ -2218,5 +2219,7 @@ kingdoms_end = "fac_kingdoms_end"
 npc_kingdoms_begin = kingdoms_begin
 npc_kingdoms_end = kingdoms_end
 
-
 ## Troop Presentation constants End ##
+
+## Kham Oath of Vengeance Constant
+tld_oath_kills = 50

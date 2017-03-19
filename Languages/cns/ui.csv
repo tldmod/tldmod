@@ -44,5 +44,5 @@ ui_fire_at_will_e_|%s，自由射击！
 ui_recent_messages|最后的信息
 ui_value_denars|%d资源点。
 ui_cannot_be_used_on_horseback|乘骑状态无法使用
-ui_upgrade_to_value|晋升为%s
-ui_notification_cant_upgrade|(交出士兵时无法晋升)
+ui_upgrade_to_value|升级为%s
+ui_notification_cant_upgrade|(给出士兵时无法升级)

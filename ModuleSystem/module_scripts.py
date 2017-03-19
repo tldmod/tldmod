@@ -1822,7 +1822,10 @@ scripts = [
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
+	(assign, "$gondor_reinforcement_event_menu",0), #kham - Gondor Reinforcement Event
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
+	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
+	(assign, "$total_kills",0), #Kham - Kill Counter
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
@@ -5901,18 +5904,18 @@ scripts = [
         ##Kham: Destroy Scout Camp
           (eq, ":quest_no", "qst_destroy_scout_camp"), 
           (try_begin),
-          	(eq, 1, cheat_switch), ## Cheat Switch on for testing purposes
+          	#(eq, 1, cheat_switch), ## Cheat Switch on for testing purposes
           	(neg|check_quest_active,"qst_destroy_scout_camp"),
 	        (ge, "$g_talk_troop_faction_relation", 1),
 	        (is_between, ":player_level", 11,23),
 	        #(gt, ":giver_center_no", 0),#Skip if lord is outside the center
 	       # (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", 50),
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-            (ge, ":dist", 20),
+           # (ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
            # (assign, ":quest_object_center", ":cur_object_center"),
             (assign, ":quest_target_center", ":cur_target_center"),
@@ -18115,7 +18118,7 @@ scripts = [
 ]),
 ("TLD_gondor_kite_shield_banner",
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
-    (assign, ":bm", "mesh_banner_e03"), #default tableau black
+    (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
       (try_begin),(is_between,":tr","trp_blackroot_vale_archer"  ,"trp_dol_amroth_youth"     ),(assign, ":bm", "mesh_banner_e04"),
       (else_try) ,(is_between,":tr","trp_pinnath_gelin_plainsman","trp_blackroot_vale_archer"),(assign, ":bm", "mesh_banner_e07"),
@@ -18153,7 +18156,7 @@ scripts = [
 ]),
 ("TLD_gondor_tower_shield_banner",
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
-    (assign, ":bm", "mesh_banner_e03"), #default tableau black
+    (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
       (try_begin),(is_between,":tr","trp_blackroot_vale_archer"   ,"trp_dol_amroth_youth"        ),(assign, ":bm", "mesh_banner_e03"),
       (else_try) ,(is_between,":tr","trp_pinnath_gelin_plainsman","trp_blackroot_vale_archer"   ),(assign, ":bm", "mesh_banner_e06"),
@@ -18188,7 +18191,7 @@ scripts = [
 ]),
 ("TLD_gondor_square_shield_banner",
   [ (store_script_param, ":tableau_no",1),(store_script_param, ":agent_no", 2),(store_script_param, ":tr", 3),
-    (assign, ":bm", "mesh_banner_e03"), #default tableau black
+    (assign, ":bm", "mesh_banner_gondor"), #default tableau black
     (try_begin),(neq,":agent_no",-1),
       (try_begin),(is_between,":tr","trp_pelargir_watchman","trp_clansman_of_lamedon"),(assign, ":bm", "mesh_banner_e13"),
       (else_try) ,(is_between,":tr","trp_steward_guard"    ,"trp_ranger_of_ithilien" ),(assign, ":bm", "mesh_banner_e15"),
@@ -20438,7 +20441,7 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-      #  (eq, "$cheat_mode", 1),
+        (eq, "$cheat_mode", 1),
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),
@@ -20469,6 +20472,7 @@ command_cursor_scripts = [
     
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_accompanying_army),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_engaging_army),
+    (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_holding_center, ":center_to_defend"),
 
@@ -20501,7 +20505,7 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-      #  (eq, "$cheat_mode", 1),
+        (eq, "$cheat_mode", 1),
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),
@@ -20532,6 +20536,7 @@ command_cursor_scripts = [
     
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_accompanying_army),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_engaging_army),
+    (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_patrolling_around_center, ":center_to_patrol"),
 
@@ -20564,7 +20569,7 @@ command_cursor_scripts = [
     (try_end),
 
     (try_begin),
-      #  (eq, "$cheat_mode", 1),
+        (eq, "$cheat_mode", 1),
 
         (assign, reg1, ":lord"),
         (str_store_troop_name, s1, ":lord"),
@@ -20595,6 +20600,7 @@ command_cursor_scripts = [
     
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_accompanying_army),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_engaging_army),
+    (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, ":lord_to_follow"),
 
@@ -20605,6 +20611,57 @@ command_cursor_scripts = [
   
   ]),
 ### Kham Gondor Reinforcement Event Scripts End
+
+
+#script_find_theater
+# Script: Which theater am I in? (Kham)
+#    INPUT: party to test
+#    OUTPUT: reg0  = theater_SW, theater_SE, theater_C, theater_N, 0
+("find_theater",
+   [(set_fixed_point_multiplier, 100),
+    (store_script_param_1, ":party"),
+    (assign, ":OK", 0),
+    (try_for_range, ":center", centers_begin, centers_end), 
+	    (party_is_active, ":center"),
+	    (store_faction_of_party, ":faction",":center"),
+	    (faction_get_slot, ":home_theater", ":faction", slot_faction_home_theater),
+	    (party_get_position, pos1, ":party"),
+		(party_get_position, pos2, ":center"),
+		(get_distance_between_positions, ":dist", pos1, pos2),
+	    (lt, ":dist", 2400), #MV: was 3200
+	    (try_begin),
+	    	(eq, ":OK",0),
+	    	(eq, ":home_theater",theater_SE),
+	      	(assign, reg0, theater_SE),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_SE"),
+	    (else_try),
+	    	(eq, ":OK",0),
+	    	(eq, ":home_theater",theater_SW),
+	      	(assign, reg0, theater_SW),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_SW"),
+	    (else_try),
+	        (eq, ":OK",0),
+	    	(eq, ":home_theater",theater_C),
+	      	(assign, reg0, theater_C),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_C"),
+	    (else_try),
+	    	(eq, ":home_theater",theater_C),
+	      	(assign, reg0, theater_N),
+	      	(assign, ":OK",1),
+	      	(display_message, "@Debug: Theater_N"),
+	    (else_try),
+	    	(eq, ":OK",0),
+	    	(assign, reg0, 0),
+	    	(assign, ":OK",1),
+	    	(display_message, "@Debug: Can't Find"),
+	    (try_end),
+    (try_end),
+]),
+
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts

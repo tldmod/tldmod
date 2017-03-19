@@ -2669,7 +2669,7 @@ simple_triggers = [
 
 (24,
   [
-     (eq, "$cheat_mode",1),
+     #(eq, "$cheat_mode",1),
      (eq, "$tld_war_began", 1),
      (eq, "$gondor_reinforcement_event",0), 
 
@@ -2688,14 +2688,23 @@ simple_triggers = [
        (call_script, "script_defend_center", "trp_knight_1_8", "p_town_minas_tirith"),  
      (try_end),
 
-    (display_message, "@Gondor has called for aide!"),
+     (try_begin),
+        (eq, "$gondor_reinforcement_event_menu",0),
+        (jump_to_menu, "mnu_gondor_reinforcement_event"),
+        (assign, "$gondor_reinforcement_event_menu",1),
+     (try_end),
+
+    (try_begin),
+      (eq, "$cheat_mode",1),
+      (display_message, "@Gondor has called for aide!"),
+    (try_end),
     (assign, "$gondor_reinforcement_event",1),
   ]),
 
 
 (12,
   [  
-     (eq, "$cheat_mode",1),  
+     #(eq, "$cheat_mode",1),  
      (eq, "$tld_war_began", 1),
      (eq, "$gondor_reinforcement_event",1), 
 
@@ -2714,7 +2723,10 @@ simple_triggers = [
        (call_script, "script_accompany_marshall", "trp_knight_1_8", "trp_knight_1_3"),  
      (try_end),
 
-    (display_message, "@Gondor is accompanying the marshall!"),
+    (try_begin),
+      (eq, "$cheat_mode",1), 
+      (display_message, "@Gondor is accompanying the marshall!"),
+    (try_end),
     (assign, "$gondor_reinforcement_event",0),
   ]),
 

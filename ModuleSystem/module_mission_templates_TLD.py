@@ -353,7 +353,7 @@ tld_track_riders = (ti_on_agent_spawn, 0, 0, [],
 			])
 
 # This trigger damages agents that have fallen off their horse. :) -CC
-tld_damage_fallen_riders = (0.1, 0, 0, [], 
+tld_damage_fallen_riders = (1, 0, 0, [], 
 				[
 				(try_for_agents, ":mount"),
 					(agent_is_human|neg, ":mount"),
@@ -2278,7 +2278,7 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		
 		(agent_get_horse,":horse",":ghost"),
 		(this_or_next|eq,":horse",-1), # remove wargless riders 
-		(             gt, reg1, 25),   # or wargs running from battle for 45 sec
+		(             gt, reg1, 15),   # or wargs running from battle for 45 sec ##Kham - reduce it by 10 seconds, see what happens...
 		#--
 		(call_script, "script_remove_agent", ":ghost"),
 	(try_end),

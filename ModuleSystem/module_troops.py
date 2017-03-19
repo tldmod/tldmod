@@ -2094,13 +2094,13 @@ troops = [
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_trainer_5,0x0000000c00003002189d6e454c6465a500000000001c68f20000000000000000],
 ["moria_lord","Master_Bolg_the_Lesser","Master",tf_hero| tf_uruk| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
    [itm_wargarmored_3a,itm_moria_armor_e,itm_leather_boots,itm_evil_gauntlets_a,itm_orc_helm_c,itm_orc_throwing_axes,itm_orc_slasher,],
-      attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4|knows_leadership_10,0x00000000260010010038c51051df5f5800000000000000000000000000000000],
+      attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4|knows_leadership_10|knows_tactics_8,0x00000000260010010038c51051df5f5800000000000000000000000000000000],
 ["guldur_lord","Master_Fuinur","Master",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_evil_man,0,0,fac_guldur,
    [itm_mordor_warhorse,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_6,0x0000000fcd0005c03586a83d4223b2c200000000001c58e00000000000000000],
 ["gundabad_lord","Master_Burza Krual","Master",tf_hero| tf_uruk| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
    [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
-      attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_5|knows_leadership_10,0x0000000026002085003f006fe95aae4000000000000000000000000000000000],
+      attr_tier_6,wp_tier_6,knight_skills_4|knows_trainer_5|knows_leadership_10|knows_tactics_8,0x0000000026002085003f006fe95aae4000000000000000000000000000000000],
 ["dale_lord","King_Brand","King",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dale,
    [itm_dale_warhorse,itm_dale_armor_l,itm_leather_boots,itm_leather_gloves,itm_dale_helmet_f,itm_dale_sword_long,itm_dale_shield_d,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_5,0x0000000e3f00018436db75b79b6eb6db00000000001db6eb0000000000000000],
@@ -2292,10 +2292,10 @@ troops = [
 #Moria
 ["knight_4_1","Whip_Snog","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
    [itm_wargarmored_3a,itm_moria_armor_e,itm_moria_armor_e,itm_evil_gauntlets_a,itm_orc_helm_c,itm_orc_throwing_axes,itm_orc_slasher,],
-      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10,0x0000000fff00100936db6db6db6db6db00000000001db6db0000000000000000],
+      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_tactics_8,0x0000000fff00100936db6db6db6db6db00000000001db6db0000000000000000],
 ["knight_4_2","Whip_Snotgor","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
    [itm_wargarmored_3a,itm_moria_armor_e,itm_moria_armor_e,itm_evil_gauntlets_a,itm_orc_helm_c,itm_orc_throwing_axes,itm_orc_slasher,],
-      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10,0x000000087f00000e36db6db6db6db6db00000000001db6db0000000000000000],
+      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_tactics_8,0x000000087f00000e36db6db6db6db6db00000000001db6db0000000000000000],
 #Dol Guldur
 ["knight_4_6","General_Tuskim","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_guldur,
    [itm_m_uruk_heavy_k,itm_m_uruk_heavy_k,itm_uruk_chain_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_uruk_helm_f,itm_mordor_uruk_shield_c,itm_mordor_longsword,],
@@ -2313,13 +2313,13 @@ troops = [
 #Mt. Gundabad
 ["knight_4_16","Whip_Brolgukhsh","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
    [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
-      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10,0x0000000fc000000536db6db6db6db6db00000000001db6db0000000000000000],
+      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_tactics_8,0x0000000fc000000536db6db6db6db6db00000000001db6db0000000000000000],
 ["knight_4_17","Whip_Grumrunt","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
    [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
-      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10,0x00000009bf00000736db6db6db6db6db00000000001db6db0000000000000000],
+      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_tactics_8,0x00000009bf00000736db6db6db6db6db00000000001db6db0000000000000000],
 ["knight_4_18","Whip_Grimsob","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
    [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
-      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10,0x000000083f00200a36db6db6db6db6db00000000001db6db0000000000000000],
+      attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_tactics_8,0x000000083f00200a36db6db6db6db6db00000000001db6db0000000000000000],
 #Dale
 ["knight_5_1","Lord_Halward","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dale,
    [itm_dale_warhorse,itm_dale_armor_l,itm_dale_armor_l,itm_leather_boots,itm_leather_boots,itm_leather_gloves,itm_dale_helmet_f,itm_dale_sword_long,itm_dale_shield_d,],
@@ -3243,6 +3243,9 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_gondor_lance, itm_pinnath_leader,itm_good_mace,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_pelargir_helmet_light,],
       attr_tier_5,wp_tier_5,gondor_skills_1|knows_trainer_7,0x0000000e800021465e856dd74321355600000000001c58a50000000000000000],
 
+["beorning_shield_bear","Beorning_Shield_Bear","Beorning_Shield_Bears",tfg_gloves| tfg_shield| tfg_armor| tfg_boots,0,0,fac_beorn,
+   [itm_beorn_chief,itm_beorn_heavy,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,(itm_beorn_shield_reward,imod_reinforced), (itm_dwarf_sword_a,imod_fine), (itm_good_mace,imod_masterwork)],
+      attr_tier_6,wp_tier_6,knows_common|knows_athletics_6|knows_power_strike_5|knows_ironflesh_7|knows_shield_7,beorn_face1,beorn_face2],
 
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
@@ -3277,6 +3280,7 @@ upgrade(troops,"beorning_vale_man","beorning_warrior")
 upgrade2(troops,"beorning_warrior","beorning_tolltacker","beorning_carrock_lookout")
 upgrade(troops,"beorning_tolltacker","beorning_sentinel")
 upgrade(troops,"beorning_sentinel","beorning_warden_of_the_ford")
+upgrade(troops,"beorning_warden_of_the_ford","beorning_shield_bear")
 upgrade(troops,"beorning_carrock_lookout","beorning_carrock_fighter")
 upgrade(troops,"beorning_carrock_fighter","beorning_carrock_berserker")
 ##LOSSARNACH
