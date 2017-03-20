@@ -7072,6 +7072,7 @@ scripts = [
             (ge, ":player_level", 10),
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
+            (store_faction_of_party, ":quest_target_faction", ":quest_target_center"), #Kham - keep track of faction to check if it is active/inactive
             #(assign, ":dist", reg1),
             #find a random enemy scout/raider/patrol/caravan spawned in the enemy center
             (party_get_slot, ":center_scouts", ":quest_target_center", slot_center_spawn_scouts),
