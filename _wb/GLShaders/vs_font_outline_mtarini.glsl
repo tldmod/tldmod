@@ -23,6 +23,14 @@ void main ()
   tmpvar_3 = (matWorldView * tmpvar_2).xyz;
   outColor0 = inColor0.bgra * vMaterialColor;
 
+   /* swy: turn pure blue text into something less unsightly,
+           and do it here because tracking down every instance is a pain in places */
+   if (inColor0.r == 0.0 && inColor0.g == 0.0 && inColor0.b == 1.0)
+       outColor0.rgb = vec3(
+           127.0 / 255.0,
+           076.0 / 255.0,
+           033.0 / 255.0
+       );
   // compute border color
   outTexCoord.xy = inTexCoord;
   outTexCoord.z = float( (max(outColor0.r, max( outColor0.g, outColor0.b ) ) >0.5)?0:1 );

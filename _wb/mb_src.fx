@@ -5756,6 +5756,15 @@ VS_OUTPUT_FONT_MTARINI vs_font_mtarini(float4 vPosition : POSITION, float4 vColo
    Out.Tex0.xy = tc;
    Out.Color = vColor * vMaterialColor;
    
+   /* swy: turn pure blue text into something less unsightly,
+           and do it here because tracking down every instance is a pain in places */
+   if (vColor.r == 0.f && vColor.g == 0.f && vColor.b == 1.f)
+       Out.Color.rgb = float3(
+           127.f / 255.f,
+           076.f / 255.f,
+           033.f / 255.f
+       );
+   
    // compute border color
    Out.Tex0.z = (max(Out.Color.r, max( Out.Color.g, Out.Color.b ) ) >0.5)?0:1;
    
