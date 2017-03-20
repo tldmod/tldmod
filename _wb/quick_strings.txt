@@ -590,7 +590,7 @@ qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
 qstr_You_rally_your_troop You_rally_your_troops!
-qstr_{s5}_rallies_{his/he {s5}_rallies_{his/her}_troops!
+qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
 qstr_In_The_Last_Days_of_ In_The_Last_Days_of_the_Third_Age,_your_troops_will_position_themselves_and_hold_at_the_beginning_of_each_battle,_instead_of_blindly_charging.^^To_order_your_troops_into_formation,_press_'J'_for_Ranks,_'K'_for_Shield-Wall,_'L'_for_Wedge,_';'_for_Square._To_undo_the_formation,_press_'U'._^If_your_troops_are_fleeing,_you_can_press_'V'_to_rally_them._You_get_only_a_limited_amount_of_rallies_per_battle,_and_the_amount_depends_on_your_leadership_and_charisma.

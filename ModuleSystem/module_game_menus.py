@@ -5982,7 +5982,51 @@ game_menus = [
 			(try_end),
 	  ]
 	  ,"Get the book"),
-
+	  ##Kham - Player Initiated Siege BEGIN
+	  ("player_castle_initiate_siege",
+	 	[(eq, "$cheat_mode",1),
+	 	 #(eq, "$player_allowed_siege",1),
+	 	 (neg|troop_is_wounded, "trp_player"),
+	 	 (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
+	     (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
+	     (lt, ":reln", 0),
+	     (lt, "$g_encountered_party_2", 1),
+	     (call_script, "script_party_count_fit_for_battle","p_main_party"),
+	     (gt, reg(0), 1),
+	     (try_begin),
+	    	 (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+	           (assign, reg6, 1),
+	         (else_try),
+	           (assign, reg6, 0),
+	         (try_end),
+	 	 (store_faction_of_party, ":faction_no"),
+	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #TLD
+	 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability),
+	     (this_or_next|neq, ":siegable", tld_siegable_never), #some places are never siegable
+	     (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
+	     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+	     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+	     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+	    ],
+	    "Attack the {reg6?town:castle}...",
+	    [
+	     (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
+	     (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
+	     (call_script, "script_calculate_battle_advantage"),
+		 (val_mul, reg0, 2),
+		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
+		 (set_battle_advantage, reg0),
+		 (set_party_battle_mode),
+		 (set_jump_mission,"mt_castle_attack_walls_ladder"),
+		 (jump_to_scene,":battle_scene"),
+		 (assign, "$g_siege_final_menu", "mnu_player_initiated_siege_result"),
+		 (assign, "$g_siege_battle_state", 1),
+		 (assign, "$g_next_menu", "mnu_player_initiated_siege_result"),
+		 (jump_to_menu, "mnu_battle_debrief"),
+		 (change_screen_mission),
+		],
+	),
+	 ##Kham - Player Initiated Siege END
 	  
       # ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),
                           # (party_slot_eq,"$g_encountered_party", slot_party_type,spt_castle)],
@@ -6024,6 +6068,8 @@ game_menus = [
            (jump_to_menu,"mnu_sneak_into_town_caught"),
          (try_end)
          ]),
+
+      ##KHAM_SIEGE_TEST (ctrl-f shortcut)
       ("castle_start_siege",
        [ (eq, cheat_switch, 1),(eq, 0, 1), #MV: player can't start a sieg
            (this_or_next|party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
@@ -7250,7 +7296,7 @@ game_menus = [
 		
 		
 	 #Enter dungeon in Erebor begin (Kolba)
-      ("dungeon_enter",[(eq, cheat_switch, 1), # not done yet
+      ("dungeon_enter",[#(eq, cheat_switch, 1), # not done yet
 	    (party_slot_eq,"$current_town",slot_party_type, spt_town),
         (eq, "$current_town", "p_town_erebor"),
         (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
@@ -7335,6 +7381,53 @@ game_menus = [
            (rest_for_hours_interactive, 24 * 7, 5, 0), #rest while not attackable
            (change_screen_return),
           ]),
+
+	  ##Kham - Player Initiated Siege Begin
+	    ("player_initiate_siege",		
+		 	[(eq, "$cheat_mode",1),
+		 	 #(eq, "$player_allowed_siege",1),
+		 	 (neg|troop_is_wounded, "trp_player"),
+		 	 (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
+		     (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
+		     (lt, ":reln", 0),
+		     (lt, "$g_encountered_party_2", 1),
+		     (call_script, "script_party_count_fit_for_battle","p_main_party"),
+		     (gt, reg(0), 1),
+		     (try_begin),
+		    	 (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+		           (assign, reg6, 1),
+		         (else_try),
+		           (assign, reg6, 0),
+		         (try_end),
+		 	 (store_faction_of_party, ":faction_no"),
+		 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #TLD
+		 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability),
+		     (this_or_next|neq, ":siegable", tld_siegable_never), #some places are never siegable
+		     (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
+		     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+		     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+		     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+		    ],
+		    "Attack the {reg6?town:castle}...",
+		    [
+		     (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
+		     (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
+		     (call_script, "script_calculate_battle_advantage"),
+			 (val_mul, reg0, 2),
+			 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
+			 (set_battle_advantage, reg0),
+			 (set_party_battle_mode),
+			 (set_jump_mission,"mt_castle_attack_walls_ladder"),
+			 (jump_to_scene,":battle_scene"),
+			 (assign, "$g_siege_final_menu", "mnu_player_initiated_siege_result"),
+			 (assign, "$g_siege_battle_state", 1),
+			 (assign, "$g_next_menu", "mnu_player_initiated_siege_result"),
+			 (jump_to_menu, "mnu_battle_debrief"),
+			 (change_screen_mission),
+			],
+		),
+
+		 ##Kham - Player Initiated Siege END
 
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
  ]+concatenate_scripts([[ 
@@ -7433,6 +7526,58 @@ game_menus = [
 
     ]
  ),
+
+
+##### Kham - Player Initiate Siege Result Begin
+("player_initiated_siege_result",mnf_enable_hot_keys,  
+    "You attacked {s1} ",
+    "none",
+    code_to_set_city_background + [
+        (str_store_party_name, s1, "$g_encountered_party"),
+        (assign, "$g_enemy_party", "$g_encountered_party"),
+        #(select_enemy, 0),
+        (try_begin),
+          (assign, ":enemy_finished", 0),
+          (try_begin),
+            (eq, "$g_battle_result", 1),
+            (assign, ":enemy_finished", 1),
+            (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
+				(party_slot_ge, "$g_enemy_party", slot_center_destroy_on_capture, 1),
+				(call_script, "script_destroy_center", "$g_enemy_party"),
+			(else_try),
+				(store_faction_of_party, ":winner_faction", "p_main_party"),
+				(call_script, "script_give_center_to_faction", "$g_enemy_party", ":winner_faction"),
+				(call_script, "script_order_best_besieger_party_to_guard_center", "$g_enemy_party", ":winner_faction"),
+					# add a small garrison
+					(try_for_range, ":unused", 0, 5),
+						(call_script, "script_cf_reinforce_party", "$g_enemy_party"),
+					(try_end),
+		    (try_end),
+          (else_try),
+            (le, "$g_enemy_fit_for_battle", 0),
+            (ge, "$g_friend_fit_for_battle", 1),
+            (assign, ":enemy_finished", 1),
+          (try_end),
+          (eq, ":enemy_finished", 1),
+          (call_script, "script_party_wound_all_members", "$g_enemy_party"),
+          (leave_encounter),
+          (change_screen_return),
+        (else_try),
+          #(call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
+         # (assign, ":ally_num_soldiers", reg0),
+          (eq, "$g_battle_result", -1),
+          #(eq, ":ally_num_soldiers", 0), #battle lost
+          #(assign, "$player_allowed_siege",0),
+          (leave_encounter),
+          (change_screen_return),
+        (try_end),
+        ],
+    [
+          ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
+    ]
+ ),
+
+##### Kham - Player Initiate Siege Result END
 
 ( "disembark",0,
     "Do you wish to disembark?",

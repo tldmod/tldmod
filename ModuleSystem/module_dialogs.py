@@ -3562,7 +3562,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   [],
   "Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind\
    You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.\
-   One with their loot moving towards Mirkwood Forest. The other, a considerable size, towards Beorn's House, perhaps to continue their destructive search.","ring_hunters_2",
+   The first is returning with their loot to their encampment on th eeaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.","ring_hunters_2",
   []],
 
 [anyone|plyr,"ring_hunters_2",
@@ -3656,7 +3656,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
  (eq, "$g_talk_troop","trp_imladris_lord"), 
  (check_quest_active,"qst_ring_hunters2"),
  (quest_slot_eq, "qst_ring_hunters2", slot_quest_current_state, 20)],
-  "My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. They had this in their possession.", "ring_hunter_lair_defeated_elf",
+  "My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able to defeat their leaders in their lair. They had this in their possession.", "ring_hunter_lair_defeated_elf",
  []],
 
 [anyone,"ring_hunter_lair_defeated_elf",
@@ -3671,7 +3671,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"ring_hunter_lair_defeated2",
   [],
-    "You must keep this ring and use it to fight the Enemy and his armies. We trust you to use it well.", "ring_hunter_lair_quest_end",
+    "You must keep this ring and use it to fight the Enemy and his armies. I trust you to use it well.", "ring_hunter_lair_quest_end",
   []],
 
 [anyone|plyr,"ring_hunter_lair_quest_end",
