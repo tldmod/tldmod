@@ -2827,10 +2827,10 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("shortname_region_unknown", "an unnamed region"), # -1
 
 ("shortname_region_pelennor", "Pelennor Fields"), #0
-("shortname_region_subfac_pelargir", "Fiefdom of Lebennin"), # pelargir
+("shortname_region_subfac_pelargir", "the Fiefdom of Lebennin"), # pelargir
 ("shortname_region_subfac_dol_amroth", "Belfalas"), #subfac_dol_amroth
 ("shortname_region_subfac_ethring", "Ringló Vale"), # subfac_ethring
-("shortname_region_subfac_lossarnach", "Fiefdom of Lossarnach"),
+("shortname_region_subfac_lossarnach", "the Fiefdom of Lossarnach"),
 ("shortname_region_subfac_pinnath_gelin", "the region of Pinnath Gelin"),
 ("shortname_region_subfac_blackroot", "the Fiefdom of Lamedon"), # subfac_blackroot
 ("shortname_region_n_ithilien", "North Ithilien"),
