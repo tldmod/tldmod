@@ -127,7 +127,7 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop bu
     rm -rf .git
     
     # add a watermark to make it clear that this is not the official build
-    convert main.bmp -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' -type truecolor main.bmp
+#   convert main.bmp -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' -type truecolor main.bmp
 
 _fold_final_
 
@@ -181,7 +181,8 @@ _fold_final_
 
 
 _fold_start_ '[Uploading Steam Workshop build]'
-    cd .. && mv tldmod 'The Last Days of the Third Age (TEST THINGIE)'
+    cd .. && mv tldmod 'The Last Days of the Third Age'
+ #  cd .. && mv tldmod 'The Last Days of the Third Age (TEST THINGIE)'
     
     # get all we need
     curl -LOJs https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/mbw_workshop_uploader_glsl_pdf_no_ogg.exe
@@ -192,15 +193,15 @@ _fold_start_ '[Uploading Steam Workshop build]'
     echo 48700 > steam_appid.txt
     
     # don't make the test entry public
-    sed -e 's/visibility = public/visibility = friends only/' tldmod.ini --in-place
-    sed -e 's/The Last Days of the Third Age/The Last Days of the Third Age (TEST THINGIE)/' tldmod.ini --in-place
+ #  sed -e 's/visibility = public/visibility = friends only/' tldmod.ini --in-place
+ #  sed -e 's/The Last Days of the Third Age/The Last Days of the Third Age (TEST THINGIE)/' tldmod.ini --in-place
     
     # add a watermark to make it clear that this is not the official build
-    convert tldmod.png -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' tldmod.png
+ #  convert tldmod.png -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' tldmod.png
 
     # do the actual submission using this (totally stable) work of art
     yes NO | wine mbw_workshop_uploader_glsl_pdf_no_ogg.exe update -mod tldmod.ini \
-                                                                    -id 742666341  \
+                                                                    -id 299974223  \
                                                                   -icon tldmod.png \
                                                                -changes "$WORKSHOP_DESC" | tee workshop.log
     
