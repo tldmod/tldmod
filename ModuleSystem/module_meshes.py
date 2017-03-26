@@ -478,7 +478,7 @@ meshes+=[
   ("tp_victory_rohan",       0, "draw_victory_rohan",     0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_evilman",     0, "draw_victory_evilman",   0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_uruk",        0, "draw_victory_uruk",      0, 0, 0, 0, 0, 0, 3, 3, 3),
-  ("tp_lorien_arrows",       0, "draw_lorien_arrows",     0, 0, 0, 0, 0, 0, 3, 3, 3),
+  ("tp_lorien_arrows",       0, "draw_victory_lorien",    0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_rivendell",   0, "draw_victory_rivendell", 0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_victory_mirkwood",    0, "draw_victory_mirkwood",  0, 0, 0, 0, 0, 0, 3, 3, 3),
   ("tp_war_starts",          0, "draw_victory_dale",      0, 0, 0, 0, 0, 0, 3, 3, 3),
@@ -502,4 +502,5 @@ meshes+=[
   ("draw_ring_hunters_lair", 0, "draw_ring_hunters_lair", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   ("draw_victory_dale",      0, "draw_victory_dale",      0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("draw_victory_lorien",    0, "draw_victory_lorien",    0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

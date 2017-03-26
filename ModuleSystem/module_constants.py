@@ -1033,19 +1033,19 @@ names_orc_end = surnames_begin
 #secret_signs_begin = "str_secret_sign_1"
 #secret_signs_end = countersigns_begin
 
-kingdoms_begin = fac_gondor
+kingdoms_begin   = fac_gondor
 kingdoms_begin_i = fac_gondor
-kingdoms_end = fac_kingdoms_end
-kingdoms_end_i = fac_kingdoms_end
+kingdoms_end     = fac_kingdoms_end
+kingdoms_end_i   = fac_kingdoms_end
 
-kingdom_heroes_begin = trp_gondor_lord
-kingdom_heroes_end = trp_heroes_end
+kingdom_heroes_begin = trp_knight_6_2       # was: trp_gondor_lord
+kingdom_heroes_end   = trp_knight_6_1 + 1   # was: trp_heroes_end
 
 heroes_begin = kingdom_heroes_begin
-heroes_end = kingdom_heroes_end
+heroes_end   = kingdom_heroes_end
 
 companions_begin = trp_npc1
-companions_end = trp_kingdom_heroes_including_player_begin
+companions_end   = trp_npc17 + 1
 
 soldiers_begin = trp_farmer
 soldiers_end = trp_town_walker_1
@@ -1310,7 +1310,7 @@ fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" 
 fac_str_ok = 4000 # lesser or equal can attack around enemy centers, higher can siege
 fac_str_max = 8000
 
-fac_str_guardian = 1000 # less than this, spawn the guardian party
+fac_str_guardian = 1700 # was: 1000 # less than this, spawn the guardian party
 
 
 # faction ,initial strength,culture,faction lord,  faction marshall,    [5 tiers of troops],                                                                                                                               [reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                     faction capital         side              home theater, advance camp
@@ -1589,7 +1589,7 @@ center_list = [
 (p_town_cirith_ungol, [scn_cirith_ungol_center, -1, scn_mordor_prison,scn_mordor_tavern, -1, scn_cirith_ungol_center, mesh_town_evilcamp],
 	[trp_barman_cungol, trp_smith_orc_patrol, trp_merchant_orc_patrol, trp_elder_cungol, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
 	[icon_mfc_mordor],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
-(p_town_orc_sentry_camp, [scn_orc_sentry_camp_center, -1, -1, -1, -1, scn_orc_sentry_camp_center, mesh_town_evilcamp],
+(p_town_orc_sentry_camp, [scn_orc_sentry_camp_center, -1, -1, -1, -1, scn_orc_sentry_camp_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_oscamp, trp_no_troop, trp_no_troop, pt_mordor_recruits, trp_mordor_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
 	[icon_mfc_mordor],[900],[2,1,4,1,4,1], str_income_none, garrison_limit_evil_low, 2, tld_siegable_always),
 (p_town_east_osgiliath, [scn_east_osgiliath_center, scn_east_osgiliath_castle, -1, -1, -1, scn_east_osgiliath_siege, mesh_town_osgilliath],
@@ -1599,13 +1599,13 @@ center_list = [
 (p_town_isengard, [scn_isengard_center, scn_isengard_castle, scn_mordor_prison,scn_mordor_tavern, scn_isengard_arena, -1,mesh_town_isengard],
 	[trp_barman_isengard, trp_smith_isengard, trp_merchant_isengard, trp_elder_isengard, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_high, 1, tld_siegable_never),
-(p_town_urukhai_outpost, [scn_uruk_hai_outpost_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_outpost_center, mesh_town_evilcamp],
+(p_town_urukhai_outpost, [scn_uruk_hai_outpost_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_uoutpost, trp_merchant_uoutpost, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
-(p_town_urukhai_h_camp, [scn_uruk_hai_h_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_h_camp_center, mesh_town_evilcamp],
+(p_town_urukhai_h_camp, [scn_uruk_hai_h_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_h_camp_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_uhcamp, trp_merchant_uhcamp,trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_always),
-(p_town_urukhai_r_camp, [scn_uruk_hai_r_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_r_camp_center, mesh_town_evilcamp],
+(p_town_urukhai_r_camp, [scn_uruk_hai_r_camp_center, -1, -1, -1, scn_isengard_arena, scn_uruk_hai_r_camp_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_urcamp, trp_merchant_urcamp, trp_no_troop, pt_isengard_recruits,  trp_isengard_lord,trp_orc_of_isengard,trp_large_orc_of_isengard,trp_uruk_hai_tracker,trp_uruk_hai_of_isengard], 
 	[icon_mfc_isengard],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 2, tld_siegable_always),
 # Elf centers
@@ -1671,7 +1671,7 @@ center_list = [
 (p_town_dol_guldur, [scn_dol_guldur_center, scn_mordor_castle, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_dol_guldur_siege,mesh_town_dol_guldur],
 	[trp_barman_dolguldur, trp_smith_dolguldur, trp_merchant_dolguldur, trp_elder_dolguldur, pt_guldur_recruits, trp_guldur_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
 	[icon_mfc_guldur],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 1, tld_siegable_capital),
-(p_town_dol_guldur_north_outpost, [scn_dol_guldur_north_outpost_center, -1, -1,-1,-1,scn_dol_guldur_north_outpost_center, mesh_town_evilcamp],
+(p_town_dol_guldur_north_outpost, [scn_dol_guldur_north_outpost_center, -1, -1,-1,-1,scn_dol_guldur_north_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_dolguldur, trp_merchant_dolguldur, trp_no_troop, pt_guldur_recruits, trp_guldur_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
 	[icon_mfc_guldur],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_low, 2, tld_siegable_normal),
 
@@ -1688,19 +1688,19 @@ center_list = [
 (p_town_gundabad,     [scn_gundabad_camp_center, -1, -1,-1, scn_mordor_arena,scn_gundabad_siege, mesh_town_gundabad],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_elder_gunda, pt_gundabad_cap_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med, 2, tld_siegable_capital),
-(p_town_gundabad_ne_outpost, [scn_gundabad_ne_outpost_center, -1, -1,-1,-1,scn_gundabad_ne_outpost_center, mesh_town_evilcamp],
+(p_town_gundabad_ne_outpost, [scn_gundabad_ne_outpost_center, -1, -1,-1,-1,scn_gundabad_ne_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_no_troop, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_normal),
-(p_town_gundabad_nw_outpost, [scn_gundabad_nw_outpost_center, -1, -1,-1,-1,scn_gundabad_nw_outpost_center, mesh_town_evilcamp],
+(p_town_gundabad_nw_outpost, [scn_gundabad_nw_outpost_center, -1, -1,-1,-1,scn_gundabad_nw_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_no_troop, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_none, garrison_limit_evil_med, 2, tld_siegable_normal),
-(p_town_goblin_north_outpost, [scn_goblin_north_outpost_center, -1, -1,-1,-1,scn_goblin_north_outpost_center, mesh_town_evilcamp],
+(p_town_goblin_north_outpost, [scn_goblin_north_outpost_center, -1, -1,-1,-1,scn_goblin_north_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
-(p_town_goblin_south_outpost, [scn_goblin_south_outpost_center, -1, -1,-1,-1,scn_goblin_south_outpost_center, mesh_town_evilcamp],
+(p_town_goblin_south_outpost, [scn_goblin_south_outpost_center, -1, -1,-1,-1,scn_goblin_south_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_low, 2, tld_siegable_always),
-(p_town_gundabad_m_outpost, [scn_gundabad_mirkwood_outpost, -1, -1,-1,-1,scn_gundabad_mirkwood_outpost, mesh_town_evilcamp],
+(p_town_gundabad_m_outpost, [scn_gundabad_mirkwood_outpost, -1, -1,-1,-1,scn_gundabad_mirkwood_outpost_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_med, 2, tld_siegable_always),
 (p_town_erebor, [scn_erebor_center, scn_erebor_castle, scn_rohan_prison,-1,scn_dwarf_arena,scn_erebor_siege, mesh_town_erebor],
@@ -2222,4 +2222,7 @@ npc_kingdoms_end = kingdoms_end
 ## Troop Presentation constants End ##
 
 ## Kham Oath of Vengeance Constant
-tld_oath_kills = 50
+tld_oath_kills = 150
+
+## Kham Player Initiated Sieges Constants
+tld_player_siege_resp_cost = 100000

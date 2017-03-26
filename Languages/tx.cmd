@@ -6,6 +6,11 @@ MODE CON: COLS=110
 rename cnt zh
 rename cns zh-Hans
 
+:: the italian ui.csv file has manual additions from the M&B third-party translation project
+:: don't replace it, or entries will be lost
+@move it\ui.csv it\ui.csv_bak
+
+
 ::convert everything to Joomla INI format
 luajit tx.lua convert
 
@@ -24,6 +29,11 @@ luajit tx.lua revert
 :: mab calls zh => cnt and zh-Hans => cns
 rename zh      cnt
 rename zh-Hans cns
+
+:: the italian ui.csv file has manual additions from the M&B third-party translation project
+:: don't replace it, or entries will be lost
+del it\ui.csv
+@move it\ui.csv_bak it\ui.csv
 
 pause
 cls && goto :up

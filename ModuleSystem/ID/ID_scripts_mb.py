@@ -508,5 +508,6 @@ script_accompany_marshall = 506
 script_accompany_marshall_aux = 507
 script_accompany_marshall_aux_ai = 508
 script_find_theater = 509
+script_find_closest_enemy_town_or_host_only = 510
 
 

@@ -1,4 +1,4 @@
-1271
+1275
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -590,7 +590,7 @@ qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
 qstr_You_rally_your_troop You_rally_your_troops!
-qstr_{s5}_rallies_{his/he {s5}_rallies_{his/her}_troops!
+qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
 qstr_In_The_Last_Days_of_ In_The_Last_Days_of_the_Third_Age,_your_troops_will_position_themselves_and_hold_at_the_beginning_of_each_battle,_instead_of_blindly_charging.^^To_order_your_troops_into_formation,_press_'J'_for_Ranks,_'K'_for_Shield-Wall,_'L'_for_Wedge,_';'_for_Square._To_undo_the_formation,_press_'U'._^If_your_troops_are_fleeing,_you_can_press_'V'_to_rally_them._You_get_only_a_limited_amount_of_rallies_per_battle,_and_the_amount_depends_on_your_leadership_and_charisma.
@@ -771,6 +771,7 @@ qstr_ON ON
 qstr_IMOD_test_mesh_given IMOD_test_mesh_given
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_Moria_Book_given Moria_Book_given
+qstr_Target_Party_and_All Target_Party_and_Ally_Spawned!
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)
@@ -835,6 +836,8 @@ qstr_Ordinary_victory_com Ordinary_victory_comment._The_player_provided_at_least
 qstr_Player_participation Player_participation_comment._The_enemy_had_at_least_1k_starting_strength.
 qstr_No_victory_comment._ No_victory_comment._The_battle_was_small,_and_the_player_provided_less_than_40_percent_of_allied_strength
 qstr_{reg1}_kills_of_{s1} {reg1}_kills_of_{s1}_faction_troops_counted_towards_Oath._TOTAL_Kills:_{reg0}
+qstr_DEBUG:_Target_Party_ DEBUG:_Target_Party_-_YES
+qstr_DEBUG:_Target_Party__ DEBUG:_Target_Party_-_NO
 qstr_Some_of_your_tendons Some_of_your_tendons_have_been_damaged_in_the_battle._You_lose_1_strength.
 qstr_You_took_a_nasty_wou You_took_a_nasty_wound_which_will_cause_you_to_limp_slightly_even_after_it_heals._Your_lose_1_agility.
 qstr_You_have_trouble_thi You_have_trouble_thinking_straight_after_the_battle,_perhaps_from_a_particularly_hard_hit_to_your_head,_and_frequent_headaches_now_plague_your_existence._Your_intelligence_is_reduced_by_1.
@@ -927,7 +930,8 @@ qstr_{s1}_was_killed_on_t {s1}_was_killed_on_the_battlefield._Mission_canceled.
 qstr_{s1}_has_been_defeat {s1}_has_been_defeated._Mission_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
-qstr_Parties_defeated:_{r Parties_defeated:_{reg1}
+qstr_DEBUG:_Eliminate_Par DEBUG:_Eliminate_Parties_-_Current:_{reg0},_New:_{reg1}
+qstr_Parties_defeated:_{r Parties_defeated:_{reg1}_out_of_{reg2}
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
@@ -1120,9 +1124,9 @@ qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fight
 qstr_We_are_at_war_with_{s We_are_at_war_with_{s12}._However,_there_are_only_skirmishes_at_the_moment.
 qstr_we_are_not_too_conce we_are_not_too_concerned_with_them_at_the_moment,_since_we_are_fighting_other_enemies_closer_to_home
 qstr__under_your_orders ,_under_your_orders
-qstr_{s9}_asked_you_to_de {s9}_asked_you_to_destroy_a_scout_camp_nearby.
-qstr_{s9}_asked_you_to_def {s9}_asked_you_to_defend_a_village_under_attack_near_{s3}.
-qstr_{s9}_asked_you_to_ra {s9}_asked_you_to_raid_a_village_near_{s3}.
+qstr_{s9}_asked_you_to_de {s9}_asked_you_to_destroy_a_scout_camp_near_{s1}.
+qstr_{s9}_asked_you_to_def {s9}_asked_you_to_defend_a_village_under_attack_near_{s1}.
+qstr_{s9}_asked_you_to_ra {s9}_asked_you_to_raid_a_village_near_{s1}.
 qstr_These_soldiers_may_w These_soldiers_may_well_turn_the_tide_in_my_plans,_{playername}._I_am_confident_you've_trained_them_well._My_thanks_and_my_compliments_to_you.
 qstr_Good_work_in_shaping Good_work_in_shaping_up_those_recruits,_{playername},_you_have_been_most_useful._Hopefully_they'll_last_longer_than_the_last_batch,_but_come_see_me_again_if_they_don't.
 qstr_Well_the_soldiers_ar Well,_the_soldiers_are_at_your_command_now,_sir._I_am_sure_you_will_take_good_care_of_them.

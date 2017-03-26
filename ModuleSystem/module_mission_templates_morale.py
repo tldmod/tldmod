@@ -147,8 +147,13 @@ tld_morale_triggers = [
 					#(assign, reg1, ":die_roll"),
 					#(assign, reg2, ":times_rallied"),
 					(agent_get_troop_id, ":troop", ":agent"),
+					(troop_get_type, reg65, ":troop"),
+                    (try_begin),
+                       (neq, reg65, 1), #not female
+                       (assign, reg65, 0), #make it male for strings
+                    (try_end),
 					(str_store_troop_name, s5, ":troop"),
-					(display_message, "@{s5} rallies {his/her} troops!", color_good_news),
+					(display_message, "@{s5} rallies {reg65?her:his} troops!", color_good_news),
 					(val_add, ":times_rallied", 1),
 					(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
 					(call_script, "script_troop_get_cheer_sound", ":troop"),
@@ -205,8 +210,13 @@ tld_morale_triggers = [
 					(assign, reg1, ":die_roll"),
 					(assign, reg2, ":times_rallied"),
 					(agent_get_troop_id, ":troop", ":agent"),
+					(troop_get_type, reg65, ":troop"),
+                    (try_begin),
+                       (neq, reg65, 1), #not female
+                       (assign, reg65, 0), #make it male for strings
+                    (try_end),
 					(str_store_troop_name, s5, ":troop"),
-					(display_message, "@{s5} rallies {his/her} troops!", color_bad_news),
+					(display_message, "@{s5} rallies {reg65?her:his} troops!", color_bad_news),
 					(val_add, ":times_rallied", 1),
 					(agent_set_slot, ":agent", slot_agent_rallied, ":times_rallied"),
 					(call_script, "script_troop_get_cheer_sound", ":troop"),

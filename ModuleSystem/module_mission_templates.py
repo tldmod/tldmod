@@ -1043,7 +1043,7 @@ mission_templates = [ # not used in game
 			(val_add,"$attacker_reinforcement_stage",1)]),
   (6, 0 , ti_once, [
       (eq, "$tld_option_formations", 1),
-      (le, "$formations_tutorial", 4)],
+      (le, "$formations_tutorial", 2)],
       [
         (tutorial_message, "@In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.", 0 , 15),
         (val_add, "$formations_tutorial", 1),
@@ -3498,9 +3498,14 @@ mission_templates = [ # not used in game
      (17,mtef_scene_source|mtef_team_0,0,0,1,[]),(18,mtef_scene_source|mtef_team_0,0,0,1,[]),(19,mtef_scene_source|mtef_team_0,0,0,1,[]),
      ],tld_common_wb_muddy_water+[
     (ti_tab_pressed, 0, 0, [],[(finish_mission,0)]),
-	(0,0,ti_once,[],[(try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
-					  (else_try),					  (play_sound, "$bs_day_sound",   sf_looping),
-					 (try_end)]),
+	  
+    (0,0,ti_once,[],
+      [(try_begin),
+        (is_currently_night),
+        (play_sound, "$bs_night_sound", sf_looping),
+			 (else_try),
+         (play_sound, "$bs_day_sound",   sf_looping),
+			 (try_end)]),
 ]),
 ( "tld_erebor_dungeon",0,-1,"Default town visit",
     [(0,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),

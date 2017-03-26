@@ -1498,9 +1498,9 @@ triggers = [
     (try_end),
 		(call_script, "script_cf_gain_trait_oathbreaker"),
 	(else_try),
-		(faction_slot_eq|neg|this_or_next, ":target", slot_faction_state, sfs_active), # CC: If faction is not active, you have completed the quest.
 		#(ge, ":count", ":start_killcount"), #Kham Refactor Commented Out
-		(ge, "$oath_kills", tld_oath_kills),
+		(this_or_next|ge, "$oath_kills", tld_oath_kills),
+    (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: If faction is not active, you have completed the quest.
     (call_script, "script_succeed_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 0),
 		(call_script, "script_end_quest", "qst_oath_of_vengeance"),

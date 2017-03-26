@@ -3027,6 +3027,22 @@ game_menus = [
 		 (str_store_string, s1, reg1),
 		 (display_message, "@{s1}"),
     	]),
+    ("eliminate_party",[], "Create Party + Ally for Eliminate Party Quest",
+    	[(check_quest_active, "qst_eliminate_patrols"),
+    	 (quest_get_slot, ":target", "qst_eliminate_patrols", slot_quest_target_party_template),
+    	 (set_spawn_radius, 5),
+    	 (spawn_around_party, "p_main_party", ":target"),
+    	 (assign, ":target_party", reg0),
+    	 (store_faction_of_party, ":fac" ,":target_party"),
+    	 (try_begin),
+    	 	(faction_slot_eq, ":fac",slot_faction_side, faction_side_good),
+    	 	(set_spawn_radius, 5),
+    	 	(spawn_around_party, ":target_party", "pt_mordor_war_party"),
+    	 (else_try),
+    	 	(set_spawn_radius, 5),
+    	 	(spawn_around_party, ":target_party", "pt_gondor_company"),
+    	 (try_end),
+    	 (display_message, "@Target Party and Ally Spawned!")]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -3626,6 +3642,7 @@ game_menus = [
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("defend_village", [], "Defend Village", [(assign, "$cheat_imposed_quest", "qst_defend_village")]),
 	("raid_village", [], "Raid Village", [(assign, "$cheat_imposed_quest", "qst_raid_village")]),
+    ("eliminate_patrols", [], "Eliminate Patrols", [(assign, "$cheat_imposed_quest", "qst_eliminate_patrols")])
     ]+[("mi21",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   
@@ -4626,9 +4643,15 @@ game_menus = [
 			(eq, ":winning_side_faction", "fac_umbar" ),
 			(set_background_mesh, "mesh_draw_victory_corsairs"), # specific victory-loss image: umbar VS anything
 		(else_try),
+			(eq, ":winning_side_faction", "fac_dale" ),
+			(set_background_mesh, "mesh_draw_victory_dale"), # specific victory-loss image: dale VS anything
+		(else_try),
 			(eq, ":winning_side_race", tf_elf_begin),
 			(eq, ":losing_side_race_group", tf_orc ),
 			(set_background_mesh, "mesh_draw_lorien_arrows"),  # specific victory-loss image: elves VS orcs 
+		(else_try),
+			(eq, ":winning_side_faction", "fac_lorien" ),
+			(set_background_mesh, "mesh_draw_victory_lorien"), # specific victory-loss image: lórien VS anything
 		(else_try),
 			# generic  defeat image: orcs....
 			(eq, "$g_battle_result", -1), (eq, "$player_looks_like_an_orc", 1),
@@ -5154,6 +5177,24 @@ game_menus = [
 		(try_end),
 		(get_player_agent_kill_count, "$total_kills"),
 		## Kham - Oath of Vengeance Kills END
+		## Kham - Eliminate Patrols Assist START
+		(try_begin),
+			(check_quest_active, "qst_eliminate_patrols"),
+			(quest_get_slot, ":target_pt", "qst_eliminate_patrols", slot_quest_target_party_template),
+			(party_get_template_id, ":current_target", "$g_enemy_party"),
+			(eq, ":current_target", ":target_pt"),
+			(quest_set_slot, "qst_eliminate_patrols", slot_quest_target_troop, ":current_target"), #slot to store target template 
+			(try_begin),
+				(eq, "$cheat_mode",1),
+				(eq, ":current_target",":target_pt"),
+				(display_message, "@DEBUG: Target Party - YES"),
+			(else_try),
+				(eq, "$cheat_mode",1),
+				(display_message, "@DEBUG: Target Party - NO"),
+			(try_end),
+		(try_end),
+		## Kham - Eliminate Patrols Assist END
+
       ],
     [("continue",[],"Continue...",[(change_screen_return)]),]
  ),
@@ -5976,7 +6017,53 @@ game_menus = [
 			(try_end),
 	  ]
 	  ,"Get the book"),
-
+	  ##Kham - Player Initiated Siege BEGIN
+	  ("player_castle_initiate_siege",
+	 	[(eq, "$cheat_mode",1),
+	 	 (eq, "$player_allowed_siege",1), #Kham - Global Var that allows player to siege. Set in Dialogues.
+	 	 (store_faction_of_party, ":faction_no", "$g_encountered_party"),
+	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #Check Faction Strength
+	 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability), #Check if we can siege
+	     (this_or_next|neq, ":siegable", tld_siegable_never), #some places are never siegable
+	     (neq, ":siegable", tld_siegable_capital), #We won't allow players to siege capitals
+	     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+	     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+	     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+	 	 (neg|troop_is_wounded, "trp_player"),
+	 	 (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1), #if besieged by Marshall, player can't attack.
+	     (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
+	     (lt, ":reln", 0),
+	     (lt, "$g_encountered_party_2", 1),
+	     (call_script, "script_party_count_fit_for_battle","p_main_party"),
+	     (gt, reg(0), 1),
+	     (try_begin),
+	    	 (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+	           (assign, reg6, 1),
+	         (else_try),
+	           (assign, reg6, 0),
+	         (try_end),
+	    ],
+	    "Attack the {reg6?town:castle}...",
+	    [
+	     (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
+	     (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
+	     (call_script, "script_let_nearby_parties_join_current_battle", 0, 0), #Kham - Let nearby lords join the battle
+         (call_script, "script_encounter_init_variables"),
+	     (call_script, "script_calculate_battle_advantage"),
+		 (val_mul, reg0, 2),
+		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
+		 (set_battle_advantage, reg0),
+		 (set_party_battle_mode),
+		 (set_jump_mission,"mt_castle_attack_walls_ladder"),
+		 (jump_to_scene,":battle_scene"),
+		 (assign, "$g_siege_final_menu", "mnu_player_initiated_siege_result"),
+		 (assign, "$g_siege_battle_state", 1),
+		 (assign, "$g_next_menu", "mnu_player_initiated_siege_result"),
+		 (jump_to_menu, "mnu_battle_debrief"),
+		 (change_screen_mission),
+		],
+	),
+	 ##Kham - Player Initiated Siege END
 	  
       # ("approach_gates",[(this_or_next|eq,"$entry_to_town_forbidden",1),
                           # (party_slot_eq,"$g_encountered_party", slot_party_type,spt_castle)],
@@ -6018,6 +6105,8 @@ game_menus = [
            (jump_to_menu,"mnu_sneak_into_town_caught"),
          (try_end)
          ]),
+
+      ##KHAM_SIEGE_TEST (ctrl-f shortcut)
       ("castle_start_siege",
        [ (eq, cheat_switch, 1),(eq, 0, 1), #MV: player can't start a sieg
            (this_or_next|party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1),
@@ -7244,7 +7333,7 @@ game_menus = [
 		
 		
 	 #Enter dungeon in Erebor begin (Kolba)
-      ("dungeon_enter",[(eq, cheat_switch, 1), # not done yet
+      ("dungeon_enter",[#(eq, cheat_switch, 1), # not done yet
 	    (party_slot_eq,"$current_town",slot_party_type, spt_town),
         (eq, "$current_town", "p_town_erebor"),
         (quest_slot_ge, "qst_find_lost_spears", slot_quest_current_state, 1),
@@ -7329,6 +7418,54 @@ game_menus = [
            (rest_for_hours_interactive, 24 * 7, 5, 0), #rest while not attackable
            (change_screen_return),
           ]),
+
+	  ##Kham - Player Initiated Siege BEGIN
+	  ("player_initiate_siege",
+	 	[(eq, "$cheat_mode",1),
+	 	 (eq, "$player_allowed_siege",1), #Kham - Global Var that allows player to siege. Set in Dialogues.
+	 	 (store_faction_of_party, ":faction_no", "$g_encountered_party"),
+	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #Check Faction Strength
+	 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability), #Check if we can siege
+	     (this_or_next|neq, ":siegable", tld_siegable_never), #some places are never siegable
+	     (neq, ":siegable", tld_siegable_capital), #We won't allow players to siege capitals
+	     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+	     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+	     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+	 	 (neg|troop_is_wounded, "trp_player"),
+	 	 (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1), #if besieged by Marshall, player can't attack.
+	     (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
+	     (lt, ":reln", 0),
+	     (lt, "$g_encountered_party_2", 1),
+	     (call_script, "script_party_count_fit_for_battle","p_main_party"),
+	     (gt, reg(0), 1),
+	     (try_begin),
+	    	 (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+	           (assign, reg6, 1),
+	         (else_try),
+	           (assign, reg6, 0),
+	         (try_end),
+	    ],
+	    "Attack the {reg6?town:castle}...",
+	    [
+	     (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
+	     (party_get_slot, ":battle_scene", "$g_encountered_party", slot_town_walls),
+	     (call_script, "script_let_nearby_parties_join_current_battle", 0, 0), #Kham - Let nearby lords join the battle
+         (call_script, "script_encounter_init_variables"),
+	     (call_script, "script_calculate_battle_advantage"),
+		 (val_mul, reg0, 2),
+		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
+		 (set_battle_advantage, reg0),
+		 (set_party_battle_mode),
+		 (set_jump_mission,"mt_castle_attack_walls_ladder"),
+		 (jump_to_scene,":battle_scene"),
+		 (assign, "$g_siege_final_menu", "mnu_player_initiated_siege_result"),
+		 (assign, "$g_siege_battle_state", 1),
+		 (assign, "$g_next_menu", "mnu_player_initiated_siege_result"),
+		 (jump_to_menu, "mnu_battle_debrief"),
+		 (change_screen_mission),
+		],
+	),
+	 ##Kham - Player Initiated Siege END
 
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
  ]+concatenate_scripts([[ 
@@ -7427,6 +7564,58 @@ game_menus = [
 
     ]
  ),
+
+
+##### Kham - Player Initiate Siege Result Begin
+("player_initiated_siege_result",mnf_enable_hot_keys,  
+    "You attacked {s1} ",
+    "none",
+    code_to_set_city_background + [
+        (str_store_party_name, s1, "$g_encountered_party"),
+        (assign, "$g_enemy_party", "$g_encountered_party"),
+        #(select_enemy, 0),
+        (try_begin),
+          (assign, ":enemy_finished", 0),
+          (try_begin),
+            (eq, "$g_battle_result", 1),
+            (assign, ":enemy_finished", 1),
+            (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
+				(party_slot_ge, "$g_enemy_party", slot_center_destroy_on_capture, 1),
+				(call_script, "script_destroy_center", "$g_enemy_party"),
+			(else_try),
+				(store_faction_of_party, ":winner_faction", "p_main_party"),
+				(call_script, "script_give_center_to_faction", "$g_enemy_party", ":winner_faction"),
+				(call_script, "script_order_best_besieger_party_to_guard_center", "$g_enemy_party", ":winner_faction"),
+					# add a small garrison
+					(try_for_range, ":unused", 0, 5),
+						(call_script, "script_cf_reinforce_party", "$g_enemy_party"),
+					(try_end),
+		    (try_end),
+          (else_try),
+            (le, "$g_enemy_fit_for_battle", 0),
+            (ge, "$g_friend_fit_for_battle", 1),
+            (assign, ":enemy_finished", 1),
+          (try_end),
+          (eq, ":enemy_finished", 1),
+          (call_script, "script_party_wound_all_members", "$g_enemy_party"),
+          (leave_encounter),
+          (change_screen_return),
+        (else_try),
+          #(call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
+         # (assign, ":ally_num_soldiers", reg0),
+          (eq, "$g_battle_result", -1),
+          #(eq, ":ally_num_soldiers", 0), #battle lost
+          #(assign, "$player_allowed_siege",0),
+          (leave_encounter),
+          (change_screen_return),
+        (try_end),
+        ],
+    [
+          ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
+    ]
+ ),
+
+##### Kham - Player Initiate Siege Result END
 
 ( "disembark",0,
     "Do you wish to disembark?",
@@ -8277,9 +8466,9 @@ game_menus = [
 		(try_end),
 		(try_begin),
 			(this_or_next|eq, "$players_kingdom", "fac_gondor"),
-			(this_or_next|eq, "$players_kingdom", 	 "fac_dale"),
-			(this_or_next|eq, "$players_kingdom", 	"fac_dwarf"),
-			(			   eq, "$players_kingdom", 	"fac_rohan"),
+			(this_or_next|eq, "$players_kingdom", "fac_dale"),
+			(this_or_next|eq, "$players_kingdom", "fac_dwarf"),
+			(             eq, "$players_kingdom", "fac_rohan"),
 			(str_store_string, s10, "@On your way to your faction's capital, you set upon some orcs raiding a caravan."),
 		(else_try),
 			(this_or_next|eq, "$players_kingdom", "fac_isengard"),
@@ -8289,26 +8478,26 @@ game_menus = [
 			(this_or_next|eq, "$players_kingdom", "fac_dunland"),
 			(this_or_next|eq, "$players_kingdom", "fac_rhun"),
 			(this_or_next|eq, "$players_kingdom", "fac_umbar"),
-			(			   eq, "$players_kingdom", "fac_guldur"),
+			(             eq, "$players_kingdom", "fac_guldur"),
 			(str_store_string, s10, "@On your way to your faction's capital, you set upon some orcs raiding a caravan."),
 		(else_try),
 			(this_or_next|eq, "$players_kingdom", "fac_imladris"),
-		 	(this_or_next|eq, "$players_kingdom", 	 "fac_lorien"),
-		 	(this_or_next|eq, "$players_kingdom", 	"fac_woodelf"),
-		 	(			   eq, "$players_kingdom", 	"fac_beorn"),
+		 	(this_or_next|eq, "$players_kingdom", "fac_lorien"),
+		 	(this_or_next|eq, "$players_kingdom", "fac_woodelf"),
+		 	(             eq, "$players_kingdom", "fac_beorn"),
 			(str_store_string,s10,"@On your way to your faction's capital, you set upon some troops waiting to ambush orcs in the forest."),
 		(else_try),
 			(this_or_next|eq, "$players_kingdom", "fac_harad"),
-			(			   eq, "$players_kingdom", 	"fac_khand"),
+			(             eq, "$players_kingdom", "fac_khand"),
 			(str_store_string,s10,"@On your way to Mordor, you hear rustling nearby. You see some Gondor Scouts and ready yourself to warn your party."),
 		(else_try),
 			(str_store_string,s10,"@BUG"),
 		(try_end)],
 	[("start_defend_caravan",
 		[(this_or_next|eq, "$players_kingdom", "fac_gondor"),
-		 (this_or_next|eq, "$players_kingdom", 	 "fac_dale"),
-		 (this_or_next|eq, "$players_kingdom", 	"fac_dwarf"),
-		 (			   eq, "$players_kingdom", 	"fac_rohan")],
+		 (this_or_next|eq, "$players_kingdom", "fac_dale"),
+		 (this_or_next|eq, "$players_kingdom", "fac_dwarf"),
+		 (             eq, "$players_kingdom", "fac_rohan")],
 		"Defend the Caravan!", [
 			(set_jump_mission,"mt_tld_caravan_help"),
 		    (modify_visitors_at_site,"scn_starting_quest"),
@@ -8327,7 +8516,7 @@ game_menus = [
 		      	(try_end),
 		      (faction_get_slot, ":tier_1_troop", "$assist", slot_faction_tier_1_troop),
 		      (faction_get_slot, ":tier_2_troop", "$assist", slot_faction_tier_2_troop),
-		      (set_visitor,0,"trp_player"),
+		      (set_visitor, 0,"trp_player"),
 		      (set_visitors,2,":tier_1_troop", 7),
 		      (set_visitors,4,":tier_2_troop", 4),
 		      (set_visitors,6,"trp_start_quest_caravaneer", 1),
@@ -8352,7 +8541,7 @@ game_menus = [
 		 (this_or_next|eq, "$players_kingdom", "fac_dunland"),
 		 (this_or_next|eq, "$players_kingdom", "fac_rhun"),
 		 (this_or_next|eq, "$players_kingdom", "fac_umbar"),
-		 (			   eq, "$players_kingdom", "fac_guldur"),],
+		 (             eq, "$players_kingdom", "fac_guldur"),],
 		"Raid the Caravan!", [
 			(set_jump_mission,"mt_tld_caravan_help"),
 		    (modify_visitors_at_site,"scn_starting_quest"),

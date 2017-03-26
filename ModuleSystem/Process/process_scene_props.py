@@ -32,7 +32,11 @@ def save_scene_props(variable_list,variable_uses,tag_uses,quick_strings):
 
 
 def save_python_header():
-  file = open("./ID/ID_scene_props.py","w")
+  from module_info import wb_compile_switch as is_wb
+  if (is_wb):
+    file = open("./ID/ID_scene_props_wb.py","w")
+  else:
+    file = open("./ID/ID_scene_props_mb.py","w")
   for i_scene_prop in xrange(len(scene_props)):
     file.write("spr_%s = %d\n"%(scene_props[i_scene_prop][0],i_scene_prop))
   file.close()

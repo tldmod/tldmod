@@ -2200,6 +2200,9 @@ ai_scripts = [
              (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
              (party_is_active, ":adv_camp"),
              (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, ":adv_camp"),
+          # (else_try),
+          #   (eq, ":faction_no", "fac_gondor"),
+          #   (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, "p_town_minas_tirith"), ##Kham: Improving Gondor Situation Patch - Have Marshall gather in MT - nope, nvm.
            (else_try),
              (eq, ":faction_no", "fac_gondor"),
              (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, "p_town_minas_tirith"), ##TLD: Improving Gondor Situation Patch - Have Marshall gather in MT.

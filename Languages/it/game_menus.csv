@@ -235,7 +235,7 @@ mno_join_siege_with_allies|Unisciti al prossimo assalto.
 mno_join_siege_stay_back|Ordina ai tuoi soldati di unirsi al prossimo assalto senza di te.
 menu_moria_must_escape|^^Il libro sembra essere un resoconto dell'ultimo tentativo dei nani di ristabilirsi a Moria. Tentativo che apparentemente sembra essersi concluso con una morte terribile per tutti i soggetti coinvolti. Sfogliando le pagine, ti imbatti nelle parole 'vero argento ! Studiando il libro improvvisamente comprendi che si tratta della descrizione delle scorte segrete naniche e che queste dovrebbero trovarsi nei livelli inferiori. Hah ! Non sarebbe fantastico riportare alla luce il Mithril nanico da tempo perduto !? ^Con entusiasmo cerchi di seguire la strada, scendendo in uno stretto e tortuoso tunnel... ^...^Dopo un paio d'ore d'infruttuosa ricerca capisci che ti sei perso nelle profondità di Moria e che ora devi cercare la via per uscirne.
 mno_moria_exit_scene|Trova la via d'uscita !
-menu_castle_outside|Sei fuori da {s2}.{s11} {s3} {s4}
+menu_castle_outside|Sei fuori da: {s2}. {s11} {s3} {s4}
 mno_moria_enter|Ritorna nel salone principale di Moria attraverso l'entrata segreta
 mno_moria_enter_door|Entra a Moria.
 mno_castle_start_siege|Assedia {reg6?}.
@@ -321,7 +321,7 @@ menu_starting_quest_good|^^^^^^Avvisti una piccola carovana sotto attacco da par
 mno_help|Aiuta gli stranieri !
 mno_start_defend_caravan|Difendi la Carovana !
 mno_start_raid_caravan|Saccheggia la Carovana !
-mno_start_ambush_orcs|Tendi un'imboscata agli Orchi !
+mno_start_ambush_orcs|Attacca gli Orchi !
 mno_start_kill_scouts|Ferma gli esploratori dal segnalare il tuo arrivo !
 mno_go_your_way|Lasciali al loro destino
 mno_defend_villagers|Difendi gli abitanti del villaggio !

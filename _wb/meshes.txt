@@ -1,4 +1,4 @@
-379
+380
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -358,7 +358,7 @@ mesh_tp_victory_dwarf 0 draw_victory_dwarf 0 0 0 0 0 0 3 3 3
 mesh_tp_victory_rohan 0 draw_victory_rohan 0 0 0 0 0 0 3 3 3
 mesh_tp_victory_evilman 0 draw_victory_evilman 0 0 0 0 0 0 3 3 3
 mesh_tp_victory_uruk 0 draw_victory_uruk 0 0 0 0 0 0 3 3 3
-mesh_tp_lorien_arrows 0 draw_lorien_arrows 0 0 0 0 0 0 3 3 3
+mesh_tp_lorien_arrows 0 draw_victory_lorien 0 0 0 0 0 0 3 3 3
 mesh_tp_victory_rivendell 0 draw_victory_rivendell 0 0 0 0 0 0 3 3 3
 mesh_tp_victory_mirkwood 0 draw_victory_mirkwood 0 0 0 0 0 0 3 3 3
 mesh_tp_war_starts 0 draw_victory_dale 0 0 0 0 0 0 3 3 3
@@ -378,3 +378,4 @@ mesh_draw_mound_kneel 0 draw_mound_kneel 0 0 0 0 0 0 1 1 1
 mesh_draw_ring_hunters_army 0 draw_ring_hunters_army 0 0 0 0 0 0 1 1 1
 mesh_draw_ring_hunters_lair 0 draw_ring_hunters_lair 0 0 0 0 0 0 1 1 1
 mesh_draw_victory_dale 0 draw_victory_dale 0 0 0 0 0 0 1 1 1
+mesh_draw_victory_lorien 0 draw_victory_lorien 0 0 0 0 0 0 1 1 1

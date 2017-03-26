@@ -1,3 +1,97 @@
+
+TLD 3.5 changes:
+- Swyter:
+ - Added to Steam Workshop
+ - Ported TLD to Mac / Linux
+ - Fixed animated wavy banners
+ - Fixed lone warg fork-bomb
+ - Fix ghost-owned wargs respawning again and again
+ - Mitigate player teleporting to Mordor on defeat
+ - Limit crafting to 0, as the feature is unfinished
+ - Comment out music checker thing
+ - Update Iron Launcher
+ - Workaround viewport popping of ancillary skybox elements in WB
+ - Fix Custom Camera keys by masking them behind Ctrl modifier
+ - Added a brand new signed distance font bitmap
+ - Fix party troop number in overall map
+ - Added high-res signed distance font
+ - Spirit Shader
+
+- Merlkir:
+ - Added female frame to Woodsmen, Beorning, Khand, and Rhun Armours
+ - Dialogues for Starting Quests
+ - Dialogues for Ring Hunters
+ - Added Lumberjack Orcs drawing overlay
+ - Added Kneel at Mound drawing overlay
+ - Added Ring Hunter Quest drawings
+ - Added Dale Victory Drawings
+ - Add more troll sounds
+ - Design Black Shield, Black Shield's Men, Vengeful Spirit troops for Spears quest
+ - Concept art for Shield Bear Shield & Club
+ - Add Lorien Victory drawing overlay
+
+- Kham:
+ - Implement Troop Tree Viewer under Reports
+ - Implement Custom Camera to improve Orc/Dwarf gameplay
+ - Added validator to CppCoder's Morale Code to fix a script error
+ - Hooked up Dwarven Fortress for Spears quest
+ - Added Viking Conquest Module.ini changes to WB module.ini
+ - Added Ring Hunters Quest
+ - Added More Town Walkers to certain towns
+ - Make Elves slightly taller using scale
+ - Fix to Siege Doors so that they are properly attacked by troops
+ - Added Faction Starting Quests to tutorialize resource points & influence, and overall add immersion.
+ - Added Defend / Raid Village Pre-War quests
+ - Added Destroy Scout Camp War quest
+ - Improve Thrust Speed of Spears (VC)
+ - Added restrictions to Orc Mutiny
+ - Bumped up the number of parties
+ - Prepare Mission Templates and Menus for Spears quest completion
+ - Added XP for discovering town NPCs
+ - Added town mission message about rumours
+ - Added battle mission message about formations
+ - Added Shield Bear troop for Beornings
+ - Added fix to siege mission templates to prevent archers from stalling on ladders (In Vain's suggestion)
+ - Gondor Reinforcement Event scripts and triggers
+ - Refactor Oath Of Vengeance to Troop Kills instead of Party Kills
+ - Eliminate Patrol Quest gets cancelled when target faction is defeated
+ - Fixes to Formations
+ - Eliminate Patrols Refactor
+ - Player Initiated Siege
+
+- In Vain:
+ - Multiple Siege Scene fixes
+ - New Dale / Esgaroth Scenes (WB only)
+ - Scout Camp Scenes (Good, Evil, North, Mirkwood + Large / Small versions of each)
+ - Multiple Scene fixes
+ - Black Shield Fortress for the Spears quest
+ - Added new Dale map icon
+ - Added CWE Flora for Scening
+ - Added temporary siege scenes for future use
+
+- Yarrum
+ - Spears Quest - Black Shield Menu Descriptions
+ - Lore consultation & descriptions
+ - Rohan reward helm
+ - Dialogue fixes
+
+- Mandible
+ - 3D models of Shield Bear Shield, Shield Bear Club
+
+- Multiple Translations
+ - Chinese Simplified
+ - German
+ - Italian
+ - Russian
+ - Spanish
+ - French
+ - Turkish
+ - Japanese
+ - Polish
+ - and many more!
+
+
+
 TLD 3.3.1 changes:
 - Swyter:
  - Reimplement the death camera in Warband using MadVader's code as reference.
