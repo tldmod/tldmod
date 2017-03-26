@@ -13804,6 +13804,9 @@ scripts = [
       
       #swy-- this is needed to show by default the note entries on Warband...
       (faction_set_note_available, ":faction_no", 1),
+
+      #swy-- don't show this, it's useless...
+      (faction_set_note_available, "fac_player_faction", 0),
        
       ] or [])
 ),

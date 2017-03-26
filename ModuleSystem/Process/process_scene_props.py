@@ -32,7 +32,8 @@ def save_scene_props(variable_list,variable_uses,tag_uses,quick_strings):
 
 
 def save_python_header():
-  if (wb_compile_switch):
+  from module_info import wb_compile_switch as is_wb
+  if (is_wb):
     file = open("./ID/ID_scene_props_wb.py","w")
   else:
     file = open("./ID/ID_scene_props_mb.py","w")
