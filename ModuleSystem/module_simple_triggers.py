@@ -1509,10 +1509,27 @@ simple_triggers = [
         (neg|faction_slot_eq, ":quest_target_faction", slot_faction_state, sfs_active),
         (call_script, "script_end_quest", "qst_eliminate_patrols"),
       (else_try),
-        (store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
-        (party_template_get_slot, ":previous_num_destroyed", ":quest_target_party_template", slot_party_template_num_killed),
-        (store_sub, reg1, ":num_destroyed", ":previous_num_destroyed"),
-        (str_store_string, s2, "@Parties defeated: {reg1}"),
+        #Kham - Eliminate Patrols Refactor START
+        #(store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
+        #(party_template_get_slot, ":previous_num_destroyed", ":quest_target_party_template", slot_party_template_num_killed),
+        #(store_sub, ":parties_defeated", ":num_destroyed", ":previous_num_destroyed"),
+        #(assign, reg1, ":parties_defeated"),
+        (quest_slot_eq, "qst_eliminate_patrols", slot_quest_target_troop, ":quest_target_party_template"), #Check if last enemy party attacked was target (set in mnu_total_victory)
+        (quest_get_slot,":current_defeated", "qst_eliminate_patrols", slot_quest_current_state), #Check how many player has defeated
+        (store_add, ":total_defeated",":current_defeated",1), #Add one
+        (quest_set_slot, "qst_eliminate_patrols", slot_quest_target_troop, 0), #Revert back to 0 state for target troop until encountered again
+        (quest_set_slot, "qst_eliminate_patrols", slot_quest_current_state, ":total_defeated"), #Set # of troops defeated
+        (assign, reg1, ":total_defeated"),
+        (quest_get_slot, ":amount", "qst_eliminate_patrols", slot_quest_target_amount), #Keep track of target
+        (assign, reg2,":amount"),
+        (val_clamp, reg1, 0,reg2),
+        (try_begin),
+          (eq, "$cheat_mode",1),
+          (assign, reg0, ":current_defeated"),
+          (display_message, "@DEBUG: Eliminate Parties - Current: {reg0}, New: {reg1}"),
+        (try_end),
+         #Kham - Eliminate Patrols Refactor END
+        (str_store_string, s2, "@Parties defeated: {reg1} out of {reg2}"),
         (add_quest_note_from_sreg, "qst_eliminate_patrols", 3, s2, 0),
       (try_end),
     (try_end),

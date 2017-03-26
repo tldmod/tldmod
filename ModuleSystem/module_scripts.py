@@ -1826,6 +1826,7 @@ scripts = [
 	(assign, "$first_time_town", 0), #kham - rumour tutorial box
 	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
 	(assign, "$total_kills",0), #Kham - Kill Counter
+	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
@@ -7080,34 +7081,34 @@ scripts = [
             (party_get_slot, ":center_patrol", ":quest_target_center", slot_center_spawn_patrol),
             (party_get_slot, ":center_caravan", ":quest_target_center", slot_center_spawn_caravan),
             (store_random_in_range, ":random_no", 0, 4),
-            (assign, ":min_amount", 0),
+            (assign, ":min_amount", 0), ##Kham - added + 1 to min amount as it is a bit easier now, when we allow for assists.
             (assign, ":done", 0),
             (try_begin),
               (eq, ":random_no", 0),
               (gt, ":center_caravan", 0),
               (assign, ":done", 1),
               (assign, ":quest_target_party_template", ":center_caravan"),
-              (assign, ":min_amount", 3),
+              (assign, ":min_amount", 4),
             (else_try),
               (eq, ":done", 0),
               (le, ":random_no", 1),
               (gt, ":center_patrol", 0),
               (assign, ":done", 1),
               (assign, ":quest_target_party_template", ":center_patrol"),
-              (assign, ":min_amount", 3),
+              (assign, ":min_amount", 4),
             (else_try),
               (eq, ":done", 0),
               (le, ":random_no", 2),
               (gt, ":center_raiders", 0),
               (assign, ":done", 1),
               (assign, ":quest_target_party_template", ":center_raiders"),
-              (assign, ":min_amount", 4),
+              (assign, ":min_amount", 5),
             (else_try),
               (eq, ":done", 0),
               (gt, ":center_scouts", 0),
               (assign, ":done", 1),
               (assign, ":quest_target_party_template", ":center_scouts"),
-              (assign, ":min_amount", 5),
+              (assign, ":min_amount", 6),
             (try_end),
             
             (eq, ":done", 1), #should never happen, but who knows
@@ -7123,6 +7124,7 @@ scripts = [
             
             (store_num_parties_destroyed_by_player, ":num_already_destroyed", ":quest_target_party_template"),
             (party_template_set_slot, ":quest_target_party_template", slot_party_template_num_killed, ":num_already_destroyed"),
+            (quest_set_slot, "qst_eliminate_patrols", slot_quest_current_state, 0), #Kham - Use Current State to track # kills.
             
             (assign, ":quest_importance", 12),
             (store_mul, ":quest_gold_reward", ":quest_target_amount", 100),
@@ -20662,6 +20664,35 @@ command_cursor_scripts = [
     (try_end),
 ]),
 
+# script_find_closest_enemy_town_or_host_only 
+# Kham - removed FRIEND of player condition to make it apply to non-player parties
+# input: faction f,  party x
+# output: reg0 = closest party to x enemy of f, NOT a friend of player, reg1 = its distance
+("find_closest_enemy_town_or_host_only",[
+	(store_script_param, ":fac", 1),
+	(store_script_param, ":target", 2),
+	(assign, ":mindist", 100000),
+	(assign, ":res", -1),
+    (try_for_parties, ":party"),
+       (party_is_active, ":party"),
+	   
+       (party_slot_eq, ":party", slot_center_destroyed, 0), # TLD
+       (this_or_next|party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),  # its a host
+       (this_or_next|party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone),  # or a lone hero
+	   (is_between, ":party", centers_begin, centers_end),  #or a town
+	   
+	   (store_faction_of_party, ":pfac", ":party"),
+	   (store_relation, ":relation", ":pfac", ":fac"),
+	   (lt, ":relation", 0), # it's an enemy...
+ 
+       (store_distance_to_party_from_party, ":dist", ":party", ":target"),
+       (lt, ":dist", ":mindist"),
+	   (assign, ":mindist", ":dist"),
+	   (assign, ":res", ":party"),
+     (try_end),
+	 (assign, reg0, ":res"),
+	 (assign, reg1, ":dist"),
+]),
 
 ]
 

@@ -4032,6 +4032,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    ], "We are on a campaign, {playername}, your advice would have to wait.", "lord_pretalk",[]],
 [anyone, "marshall_ask", [], "I'm listening, {playername}. What do you suggest?", "marshall_suggest",[]],
 
+##Kham - Player initiated sieges BEGIN
+[anyone|plyr, "marshall_suggest", [(eq, "$cheat_mode", 1)],
+  "I wish to lead our men in an assault on an enemy settlement.", "player_siege_ask",
+  []],
+##Kham - Player Initiated Sieges cont'd below
+
 [anyone|plyr|repeat_for_parties, "marshall_suggest",
    [ (store_repeat_object, ":party_no"),
      (party_is_active, ":party_no"), #TLD
@@ -4066,6 +4072,68 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (str_store_party_name, s1, ":party_no")],
    "We should ride to besiege {s1} at once.", "marshall_answer",[(store_repeat_object, "$temp")]],
 [anyone|plyr, "marshall_suggest", [], "Never mind, I trust your judgement.", "lord_pretalk",[]],
+
+##Kham - Player initiated sieges CONTINUED
+
+[anyone, "player_siege_ask", [],
+  "Indeed? That is no small undertaking and there are matters which we must discuss before I can give you leave to go.", "player_siege_discuss",
+  []],
+
+[anyone|plyr, "player_siege_discuss", [],
+  "I am listening, my Lord.", "player_siege_discuss_1",
+  []],
+
+[anyone, "player_siege_discuss_1", [(store_add, reg3, tld_player_siege_resp_cost,0),],
+  "Firstly, we must think to the hindrances of this task. Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended—a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide {reg3} resources to keep your army operational in a siege.", "player_siege_discuss_2",
+  []],
+
+[anyone, "player_siege_discuss_2", [],
+  "Secondly, you do not have permission to lead our people against an enemy capital. The evil there can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be overcome.", "player_siege_discuss_3",
+  []],
+
+[anyone, "player_siege_discuss_3", [(store_troop_faction,":fac", "$g_talk_troop"), (str_store_faction_name, s2, ":fac")],
+  "Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope—you may well be forced to stand alone.", "player_siege_discuss_4",
+  []],
+
+[anyone, "player_siege_discuss_4", [
+  (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
+  (store_troop_faction,":fac", "$g_talk_troop"), 
+  (str_store_faction_name, s2, ":fac")],
+  "Finally, remember that as a {s25} of {s2}, you may bask in the glory of a victory hard-won and call that victory your own but all who dwell in {s2} will pay the price of your failure. You carry the fate of {s2} into battle with you—bring ruin upon it and the consequences will be severe.", "player_siege_discuss_5",
+  []],
+
+[anyone, "player_siege_discuss_5", [],
+  "Knowing what I have told you, do you still wish to proceed?", "player_siege_resource_check",
+  []],
+
+
+[anyone|plyr, "player_siege_resource_check", [
+  (call_script,"script_update_respoint"),
+  (faction_get_slot, ":rps", "$g_talk_troop_faction", slot_faction_respoint),
+  (ge,":rps",tld_player_siege_resp_cost)],
+  "Yes, my lord. Let me carry our banner into battle.", "player_siege_check_passed",
+  []],
+
+[anyone|plyr, "player_siege_resource_check", [],
+  "No, the time is not yet right.", "lord_pretalk",
+  []],
+
+[anyone, "player_siege_check_passed", [(store_troop_faction,":fac", "$g_talk_troop"), (str_store_faction_name, s2, ":fac")],
+  "Very well. Go, {playername}, and march with the blessings of {s2}. We are counting on you to lead our people to victory.","player_siege_accept",
+  [
+  (call_script, "script_add_faction_rps", "$g_talk_troop_faction", -tld_player_siege_resp_cost),
+  (assign, ":siege_command_cost", tld_command_cost_siege),
+     (try_begin),
+       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+       (val_mul, ":siege_command_cost", 2),
+       (val_div, ":siege_command_cost", 3), # 33 for tld_command_cost_siege=50
+     (try_end),
+     (call_script, "script_spend_influence_of", ":siege_command_cost", "$g_talk_troop_faction"),
+     (assign, "$player_allowed_siege",1)]],
+
+[anyone|plyr, "player_siege_accept",[(store_troop_faction,":fac", "$g_talk_troop"), (str_store_faction_name, s2, ":fac")],
+  "Thank you, my Lord. I will not let you and {s2} down.", "close_window",
+  []],
 
 [anyone, "marshall_answer", [],
    "Very well, {playername}, I shall defer to your judgement. I shall send messengers to gather our forces.^Follow me and stay close - we ride to {s4}!", "close_window",
@@ -5276,12 +5344,14 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),                           
 	(check_quest_active, "qst_eliminate_patrols"),
 	(quest_slot_eq, "qst_eliminate_patrols", slot_quest_giver_troop, "$g_talk_troop"),
-	(quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
-	(store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
-	(party_template_get_slot, ":previous_num_destroyed", ":quest_target_party_template", slot_party_template_num_killed),
-	(val_sub, ":num_destroyed", ":previous_num_destroyed"),
+	#Kham - Eliminate Patrols Refactor START
+  #(quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
+	#(store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
+	#(party_template_get_slot, ":previous_num_destroyed", ":quest_target_party_template", slot_party_template_num_killed),
+	#(val_sub, ":num_destroyed", ":previous_num_destroyed"),
 	(quest_get_slot, ":to_destroy", "qst_eliminate_patrols", slot_quest_target_amount),
-	(le, ":to_destroy", ":num_destroyed")],
+	(quest_get_slot, ":num_destroyed","qst_eliminate_patrols",slot_quest_current_state),
+  (le, ":to_destroy", ":num_destroyed")],
 "Indeed. I have defeated enough enemy parties.", "lord_generic_mission_thank", [(call_script, "script_finish_quest", "qst_eliminate_patrols", 100)]],
 
 [anyone|plyr,"lord_active_mission_2",

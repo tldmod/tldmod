@@ -2223,3 +2223,6 @@ npc_kingdoms_end = kingdoms_end
 
 ## Kham Oath of Vengeance Constant
 tld_oath_kills = 150
+
+## Kham Player Initiated Sieges Constants
+tld_player_siege_resp_cost = 100000
