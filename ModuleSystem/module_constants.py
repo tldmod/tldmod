@@ -1834,6 +1834,8 @@ lords_spawn = [ (trp_knight_1_1, p_town_calembel),
                 (trp_knight_5_3, p_town_esgaroth),
                 (trp_knight_5_1, p_town_dale),
                 (trp_knight_5_2, p_town_dale),
+                (trp_knight_6_1, p_town_calembel),
+                (trp_knight_6_2, p_town_pinnath_gelin),
 ]
 
 #### banner colors #0-130
