@@ -63,7 +63,7 @@ dlga_member_review_castle_garrison:member_castellan_pretalk|当然，这是驻�
 dlga_member_castellan_talk:member_review_castellan_equipment|让我看看你的装备。
 dlga_member_review_castellan_equipment:member_castellan_pretalk|没问题，全都在这里了。
 dlga_member_castellan_talk:member_castellan_join|我想让你放弃你的城堡并且加入我的队伍。
-dlga_member_castellan_join:close_window|我已经有点喜欢这个地方了，但如果你想，{playername}，我会跟你走。
+dlga_member_castellan_join:close_window|我已经有点喜欢这个地方了…但如果这是你的命令，{playername}，我会跟你走。
 dlga_member_castellan_join:member_castellan_pretalk|我们要睡在哪儿？你可是带着一整支军队，{playername}，你根本就没有足够的空位放下我们所有人。
 dlga_member_castellan_talk:close_window|离开。
 dlga_member_chat_00:member_lady_1|{playername}，你觉得我们什么时候能到达目的地？
@@ -103,7 +103,7 @@ dlga_companion_recruit_meet_again:companion_recruit_backstory_delayed|那么…�
 dlga_start:companion_recruit_secondchance|什么事儿？
 dlga_companion_recruit_secondchance:close_window|没什么。
 dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|我的队伍应该能用得上你。
-dlga_companion_recruit_backstory_delayed_response:close_window|没什么，兴许下次的。
+dlga_companion_recruit_backstory_delayed_response:close_window|没什么，下次吧。
 dlga_companion_recruit_signup_confirm:close_window|好！给我一点时间来准备，然后我就可以出发了。
 dlga_start:companion_rehire|我依然希望重新加入你队伍，如果你还需要我。
 dlga_start:companion_rehire.1|你还活着我真的很高兴，{s5}！{s6}，我不清楚你是被抓了还是被杀了亦或是逃跑了。从那时起我就在这里等你了，一直在期待着听到你的消息。我可以收拾行囊重新加入你的队伍么？
@@ -149,7 +149,7 @@ dlga_player_siege_castle_commander_1:player_siege_ask_surrender|投降！这种�
 dlga_player_siege_castle_commander_1:close_window|没什么，我现在就走。
 dlga_player_siege_ask_surrender:player_siege_ask_surrender_treatment|也许吧…你会用你的名誉担保给我相应的待遇么？
 dlga_player_siege_ask_surrender:player_siege_ask_leave_unmolested|如果你用名誉担保，让我们平安离开的话，我们会让出这座城堡。
-dlga_player_siege_ask_surrender:close_window|投降？哈哈！我们都老死你也攻不破这城墙。
+dlga_player_siege_ask_surrender:close_window|投降？哈哈！我们都老死你也攻不破这道城墙。
 dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_reject|你什么都得不到。投降或去死！
 dlga_player_siege_ask_surrender_treatment_reject:close_window|混账，我们会战斗到最后一人！
 dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_accept|你将被赎回而你的士兵将会生还。我用名誉担保。
@@ -287,7 +287,7 @@ dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|看来我们成功的�
 dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|你必须留着这个戒指用来对抗黑暗魔君的军队。我们相信你会很好的使用它的。
 dlga_ring_hunter_lair_quest_end:close_window|这是无上的荣耀，大人。谢谢你！我会继续和黑暗魔君战斗，这枚戒指无疑会起很大作用。
 dlga_start:ring_hunters_party_attack|快看这边，老兄。又是一群待宰羔羊。
-dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|你的暴行已经到了头了。
+dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|你的暴行已经到头了。
 dlga_ring_hunters_party_attack_2:close_window|所有人听好，包裹和手指都检查仔细了。留下一个人严刑拷打，剩下的你们可以当晚餐。
 dlga_start:ring_hunter_lair_defeat|那个戒指属于黑暗魔君！你无权持有！
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|但它现在是我的了。
@@ -297,7 +297,7 @@ dlga_beorn_message:beorn_message2|那可不是一股的土匪。他们是黑暗�
 dlga_beorn_message2:beorn_message_end|没错，信中提到了那个巢穴，我们已经派斥候去那里查看了。他们烧毁了巢穴并往魔多的方向赶去…如果你打算先去那边，你可能就帮不到我们了。我们真心感激你的胜利
 dlga_beorn_message_end:beorn_message_close|接下来我必须回去向{s1}报告这里所发生的一切。先回你的村庄准备好斥候。这周围可能会有残余的土匪游荡。
 dlga_beorn_message_close:close_window|好的，将军。我们会保持警惕得。我们将继续尝试从周边的村庄里招募更多的人。你今天的胜利鼓励了我们所有人。
-dlga_lord_give_troops:lord_give_troops_check|增强我的部队？看来我运气不错，总是能得到支援。
+dlga_lord_give_troops:lord_give_troops_check|增强我的部队？没问题，士兵总是多多益善。
 dlga_lord_give_troops:lord_pretalk|很遗憾你没有任何来自{s14}的士兵能加入我…
 dlga_lord_give_troops_check:lord_give_troops_check_1|我要检查一下部队花名册…
 dlga_lord_give_troops_check_1:lord_pretalk|所以你已经改变主意了…^明白。
@@ -359,7 +359,7 @@ dlga_lord_tell_objective:lord_pretalk.2|我们正在{s1}{s5}休息。
 dlga_lord_tell_objective:lord_pretalk.3|我们正要前往{s1}{s5}。
 dlga_lord_tell_objective:lord_pretalk.4|我们正在从{s1}招募新兵。
 dlga_lord_tell_objective:lord_pretalk.5|我们正在{s1}{s5}周围寻找敌人
-dlga_lord_tell_objective:lord_pretalk.6|我们正去破坏{s1}村。
+dlga_lord_tell_objective:lord_pretalk.6|我们正在破坏{s1}。
 dlga_lord_tell_objective:lord_pretalk.7|我们在向{s1}撤退。
 dlga_lord_tell_objective:lord_pretalk.8|我们正在围攻{s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.9|我们正在与{s1}{s5}战斗。
@@ -453,7 +453,7 @@ dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|我理解你， {playe
 dlga_lord_tell_mission:lord_mission_deliver_message|我需要你送一封信给{s13}，他现在应该在{s4}。如果你去那个方向的话，能帮我送信给他吗？这封信需要在30天内送到他的手里。
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|当然，我正打算经过{s4}，应该没有问题。
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|我恐怕最近不会见到{s13}，{s65}。你最好另外找人去送。
-dlga_lord_mission_deliver_message_accepted:close_window|真是太好了，{playername}。这就是那封信。而这是给你的一点盘缠。当你见到{s13}的时候，替我向他致意。
+dlga_lord_mission_deliver_message_accepted:close_window|真是太好了，{playername}。拿好这封信，并代我向{s13}问好。
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|啊，好吧。我相信我能找到其他人去做的。
 dlga_lord_tell_mission:lord_mission_deliver_message.1|我需要你送一封信给{s15}的{s13}，他现在应该在{s4}。如果你向那里去的话，能帮我送信给他吗？这封信需要在40天内送到他的手里。
 dlga_lord_tell_mission:lord_mission_told|我的确有件急事儿…我的信差要去{s14}向指挥官报告战况。他的行程因为路上的各种麻烦事儿已经推迟了几次了，但这次他必须立即出发。我希望能至少确保他的人身安全。我完全信任你，{playername}。如果你能护送他前往{s14}的话，我会很感激你的。
@@ -562,10 +562,10 @@ dlga_caravan_help3:caravan_help4|祝你一路平安，托巴尔。我想我们�
 dlga_caravan_help4:caravan_help5|我对此十分期待。我的护卫在这里见证了你的战斗，他们肯定会把你的消息告诉他们的领主的。^^如果你多次帮助了领主们的人民，你肯定会在他们之中声名大噪，而这将会给你带来很多好处！ ^^比如我，作为一个名人，每个月都能因为我的贡献得到一次额外收入！
 dlga_caravan_help5:close_window|我会铭记的。谢谢你，托巴尔，注意安全。
 dlga_start:caravan_attack1|你是谁？ 我并不需要你的帮助。
-dlga_caravan_attack3:close_window|变弱？让我来告诉你谁才是真的弱！ (困难)
+dlga_caravan_attack3:close_window|懦夫？让我来告诉你谁才是真的懦弱！ (困难)
 dlga_caravan_attack3:close_window.1|滚吧， 懦夫。 总有一天我会看见你那被弃荒野的尸体的。
 dlga_start:caravan_duel1|呵呵...他就是这么一个脾气暴躁的人，不是吗？你无须在意他的！你在那里帮了我一个大忙！当然还救了一些人的性命！^^看，我们从死人的口袋里弄了点钱出来。{s10}
-dlga_start:caravan_duel1.1|看来我要升迁了。你是位凶猛的战士。来，拿点我们从商队那得到的战利品。守卫们当时也赌你输的，但是我没有…呵呵…你之前在哪儿做的我可全都看到了…^^{s10}
+dlga_start:caravan_duel1.1|看来我要晋升了。你是位凶猛的战士。来，拿点我们从商队那得到的战利品。守卫们当时也赌你输的，但是我没有…呵呵…你之前在哪儿做的我可全都看到了…^^{s10}
 dlga_caravan_duel1:caravan_duel2|我可以直接杀了你然后带走一切的…但我已经有足够的证明了。离开。
 dlga_caravan_duel2:caravan_duel3|这群人现在绝对尊敬你！或者他们是在害怕！不管怎样，他们会告诉他们的领主你在这里所做的一切。如果你能继续给他们留下好印象，他们还会给你特殊的东西！那个卢恩的骑兵给了我一匹马！然后我把它吃—掉—了！哈哈哈哈！
 dlga_woodelf_help_6:woodelf_help_7|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
@@ -625,7 +625,7 @@ dlga_defeat_hero_answer_1:close_window|该死的！你会后悔的。
 dlga_defeat_hero_answer:defeat_hero_answer_2|这次就放你走，不过下次可要记着别挡路。
 dlga_defeat_hero_answer_2:close_window|我们还会再见面的。
 dlga_start:fugitive_1|嗯，你想要做什么？
-dlga_fugitive_1:fugitive_2|我正在追捕一位名为{s4}的逃犯。你长得和对他面部特征的描述一模一样。
+dlga_fugitive_1:fugitive_2|我正在追捕一位名为{s4}的逃犯。你和通缉上的画像一模一样。
 dlga_fugitive_1:close_window|没事。对不起打扰你了。
 dlga_fugitive_2:fugitive_3|我不知道你在说些什么。你一定是把我跟其他人搞混了。
 dlga_fugitive_3:fugitive_4|那就把你的剑放下。如果你是无辜的，那就没必要害怕！我们可以去和这里的护卫长谈谈，看看这里是不是还有符合描述的另外一人。
@@ -748,7 +748,7 @@ dlga_mayor_info_begin:mayor_info_talk|我是{s9}的地方长官，或者说我�
 dlga_mayor_info_talk:mayor_info_lord|谁统治这个城镇？
 dlga_mayor_info_lord:mayor_info_talk|我们的领主是{s10}.
 dlga_mayor_info_talk:mayor_pretalk|我已经了解到我需要知道的东西了，谢谢。
-dlga_merchant_quest_about_job:merchant_quest_about_job_2|又怎么了？
+dlga_merchant_quest_about_job:merchant_quest_about_job_2|怎么了？
 dlga_merchant_quest_about_job_2:merchant_quest_what_if_fail|如果我完成不了怎么办？
 dlga_merchant_quest_about_job_2:merchant_quest_about_job_working|嗯，我还在做呢。
 dlga_merchant_quest_about_job_working:mayor_pretalk|好，我相信你能搞定的。

@@ -63,7 +63,7 @@ mno_start_el|精灵
 mno_start_dw|矮人
 mno_go_back|返回
 menu_start_evil|^^^^^^^^^^你向何人效忠？
-mno_start_eye|魔多的索伦，魔戒之王
+mno_start_eye|魔多的索伦，众戒之王
 mno_start_hand|艾辛格的萨鲁曼，白手
 menu_start_eye|你的主人是索伦之眼^选择你的种族
 mno_start_or|半兽人，索伦之眼的奴仆
@@ -75,7 +75,7 @@ mno_start_isur|强兽人，繁衍于艾辛格
 mno_start_duma|登兰德人，来自西部平原
 menu_start_good_man|^^^^^^^^^^选择你的人类派系：
 mno_start_go|刚铎，圣白塔王国
-mno_start_ro|洛汗，骠骑之乡
+mno_start_ro|洛汗，骠骑之国
 mno_start_du|登丹人，古努曼诺尔王朝后裔
 mno_start_be|波宁人，熊人
 mno_start_da|河谷镇，北方城邦
@@ -105,7 +105,7 @@ mno_start_arm|在魔多集结的军队中
 mno_start_cav|在多尔哥多的洞穴中
 menu_start_hand_orc|^^^^^^^^^^你在何处待命？
 mno_start_armis|在艾辛格集结的军队中
-mno_start_minmo|在摩瑞亚的军队中
+mno_start_minmo|在摩瑞亚矿井中
 mno_start_cliff|在刚巴达山的悬崖峭壁上
 menu_start_gondor_mt|^^^^^^^^^^选择你的出身
 mno_start_1_com|平民
@@ -204,7 +204,7 @@ mno_order_retreat|召回你的士兵。
 menu_kingdom_army_quest_report_to_army|{s8}派来信使，他希望你能一起参加他的远征。你至少需要带 {reg13}名战士。如果现在不够的话，你要尽快征召新兵以达到人数要求。
 mno_reject|让信使回去报告，说你现在很忙 , 抽不开身。
 mno_send_word|让信使回去报告，告诉他你很快就会过去。
-menu_kingdom_army_quest_messenger|{s8} 派来信使，说要指定一个任务给你，并要求你尽快去见他。
+menu_kingdom_army_quest_messenger|{s8}派来信使，说要指定一个任务给你，并要求你尽快去见他。
 menu_kingdom_army_quest_join_siege_order|{s8}派来信使，命令你加入对{s9}围攻。无论付出多大代价 , 必须拿下{s9} 。
 menu_kingdom_army_follow_failed|在远征中你违反了军令—和{s8}走散了。他姑且相信你有更重要的事情要做，但给予你严重警告。
 menu_battle_debrief|{s11}^我军伤亡：{s8}{s10}^^敌军伤亡：{s9}
@@ -248,7 +248,7 @@ mno_attack_stay_back|坐镇指挥，让你的部队攻击。
 mno_build_ladders|准备攻击城墙所用的云梯
 mno_lift_siege|放弃围攻
 menu_siege_attack_meets_sally|^^^^^^守城方派了部队出城应战。
-menu_construct_ladders|隊員中最高工程技能為({reg2})級，由此{reg3?你預期:{s3}預期}需要 {reg4}小時來安設雲梯。
+menu_construct_ladders|队伍中最高工程技能为({reg2})级，由此{reg3?你预期:{s3}预期}需要{reg4}小时来安设云梯。
 mno_build_ladders_cont|就这么做
 menu_castle_attack_walls_simulate|{s4} ^^我军伤亡：{s8} ^^敌军伤亡：{s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^我军伤亡：{s8}^^盟军伤亡：{s9}^^敌军伤亡：{s10}
@@ -330,7 +330,7 @@ mno_go_away|别理他们
 menu_custom_battle_choose_faction1|^^^^^^^^^^选择你的阵营和优势：
 mno_good_equal|正义阵营
 mno_bad_equal|邪恶阵营
-mno_replay_prev|重選之前的設置
+mno_replay_prev|重选之前的设置
 menu_custom_battle_choose_faction2|^^^^^^^^^^选择正义派系
 mno_cb_gondor|刚铎
 mno_cb_gondor1|洛汗
@@ -372,7 +372,7 @@ menu_death|你被杀害了。 尽管战争仍旧如火如荼，但这已经不�
 menu_animal_ambush|你和你的同伴在休息的时候，突然分开了…
 menu_animal_ambush_success|你面前的{s2}{reg0?堕落者：堕落者}如小麦般被你收割。很快，所有的攻击者都躺倒在地，重伤或死亡。 {s3}
 menu_animal_ambush_fail|动物咬撕你{reg0?，:和你的同伴{reg2?们，:，}}但幸运的是，你设法避开他们。希望他们不会再攻击你。
-menu_build_your_scene|你可以在这里编辑你自己的战斗场景。 首先请打开编辑模式，接着选择下一个槽（存放位置）。 你可以把自己的作品提交给最后之日开发制作组，如果你做的很好，你的场景会在下一版本中的随机战斗中出现。 (提交时请写出名字，并提交SCO文件或SceneObj文件夹)。 如果可能，你可以试着做一个位于中土大陆上的场景。^提示：不要做深水或高山，以及任何无法经过的东西 - 除非你是一个资深的场景制作师并且明白如何用路点使 AI自己绕开那些东西。(＃0-1项是给攻击者，＃4是给守城，别碰＃5-8
+menu_build_your_scene|你可以在这里编辑你自己的战斗场景。 首先在设置中打开编辑模式，接着选择一个槽位(存放位置)。你可以把自己的作品提交给最后之日开发制作组，如果你做的很好，你的场景会在下一版本中的随机战斗中出现。(提交时请重命名，并把TLD/SceneObj文件夹下的sco文件发给制作组)。^^请尽量细化场景在中土世界中出现的位置。^友情提示：不要做深水或高山，以及任何无法经过的东西 - 除非你是一个资深的场景制作师并且明白如何用路点使AI自己绕开那些东西。^(＃0-1项是给攻击方，＃4是给防守方，别碰＃5-8
 mno_scene1|场景5 (file scn battlefield5.sco)
 mno_scene2|场景6 (file scn battlefield6.sco)
 mno_scene3|场景7 (file scn battlefield7.sco)

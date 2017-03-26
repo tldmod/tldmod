@@ -451,13 +451,13 @@ str_npc14_backstory_response_2|Ben bunlardan yeterince aldım.
 str_npc15_backstory_response_2|Hayır! Bizim savaşçılara ihtiyacımız var, kundakçılara değil.
 str_npc16_backstory_response_2|Ben bunlardan yeterince aldım.
 str_npc17_backstory_response_2|Hayır, üzgünüm. Savaşa çıkıyoruz, botanik yolculuğa değil.
-; str_npc1_signup|I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage.
+str_npc1_signup|Eminim ki Kaptan Faramir ondan daha cesaretli ve yürekli kişilerin düşmanı körfezde tutabileceğini anlıyordur.
 str_npc2_signup|Ah, ne güzel bir gün! Senin birliğine katılmaktan memnun olurum.
-; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
+str_npc3_signup|Güven bana komutan, ihtiyacım olan sadece zaferin tatlı birasıdır. Eğer beni düşmana karşı öne sürebilirsen, yakın zamanda Rohirrim mızrağının sonuçlarını hissedeceklerdir!
 str_npc4_signup|Bu hoş bir teklif, ve beni birliğine davet edebilirsin, komutanım.
 str_npc5_signup|Anlıyorum. İtiraf ediyorum, sizi ve sömürgelerinizi duymuştum.
 str_npc6_signup|Şiddetten ve savaş silahlarından hoşlanmam, ama kendimi hızlıca nasıl savunacağımı biliyorum.
-; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
+str_npc7_signup|Benim yeteneklerim balta ile, hem fırlatır hem savururum. Eğer tüccarlar ile konuşmama izin verirsen faturalarının düşük gelmesini de sağlarım. Ve savaş alanında düşmandan düşen eşyaların en değerlilerini bulacak göze sahibim.
 str_npc8_signup|Aslında? Öyleyse, sadece otlarimi ve tariflerimi toplamam gerekiyor.
 str_npc9_signup|Bir savaşçı uruk siz bütün snagalardan daha değerlidir. Bir savaşçı uruk asla savaştan kaçmaz.
 str_npc10_signup|Gerçekten mi? Beni katmak için iyi oynadın.
@@ -470,7 +470,7 @@ str_npc15_signup|Heh-heh. Haklısın! Ve çok akıllısın, Büyük Kaptan.
 str_npc17_signup|Çok iyi! Bir sürü ağaç tanıyorum. Çok geçmeden bir sürü ağaç tanıyacaksın.Aynı benim gibi. Çünkü ben bir sürü ağaç tanıyorum.
 str_npc1_signup_2|Kaptanımla konuşmak ve eşyalarımı toplamak biraz zaman alacak.
 ; str_npc2_signup_2|I'll need to talk to my Sergeant first and then off we go - there are glorious battles to be fought and all manners of strange creatures to see!
-; str_npc3_signup_2|I've been waiting for someone to take me on, so I only need to saddle up my horse and we are ready to ride.
+str_npc3_signup_2|Uzun zamandır birinin gelip beni almasını bekliyordum, yani sadece atımı hazırlamam lazım ondan sonra yolculuğa hazırım.
 ; str_npc4_signup_2|I have hunted game many times with bows and throwing spears. I will hunt orc under your command. And I have some skill in healing I'm certain will be needed.
 ; str_npc5_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
 str_npc6_signup_2|Belki sana daha hızlı koşmayı ve daha az ses yapmayı öğretebilirim. Hadi gidelim

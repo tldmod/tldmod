@@ -5,7 +5,7 @@ dlga_start:mutiny_talk_1|Merhaba komutan. Bak sana ne diyeceğiz... Burdaki adam
 dlga_mutiny_talk_1:mutiny_talk_2|Ne? Savaş sırasında isyan mı? ^Bunun cezası ölümdür,sülük!
 dlga_mutiny_talk_2:close_window|Sana ne diyeğeciz... ^Burdaki adamlar SENİ ÖLDÜRDÜĞÜM zaman onlar için daha iyi bir komutan olabileceğimi düşünüyor!
 dlga_start:troll_introduce_1|Sorun mu var?
-dlga_start:troll_talk_1|Sinirlendin mi?
+dlga_start:troll_talk_1|Çıldırdın mı?
 dlga_troll_introduce_1:troll_goodbye|Oha! Konuşan bir troll?!
 dlga_troll_introduce_1:close_window|Benim bir atım var.
 dlga_troll_talk_1:troll_talk_2|Trolle beni, troll.

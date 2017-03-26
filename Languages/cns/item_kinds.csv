@@ -122,7 +122,7 @@ itm_fine_hat|精美帽子
 itm_shortened_spear|短柄枪
 itm_spear|长枪
 itm_light_lance|轻型骑枪
-itm_lance|发射
+itm_lance|骑枪
 itm_tab_shield_small_round_b|圆形骑兵盾
 itm_short_bow|短弓
 itm_regular_bow|弓
@@ -134,7 +134,7 @@ itm_corsair_bow|海盗弓
 itm_dwarf_horn_bow|矮人角弓
 itm_dwarf_short_bow|矮人短弓
 itm_harad_bow|哈拉德弯弓
-itm_lg_bow|哈拉德雕卫弓
+itm_lg_bow|雕卫弓
 itm_riv_bow|瑞文戴尔弓
 itm_glorfi_bow|葛罗芬戴尔弓
 itm_lorien_bow|罗斯洛立安皇家卫队弓
@@ -159,7 +159,7 @@ itm_arnor_armor_a|亚尔诺铠甲
 itm_arnor_armor_b|亚尔诺铠甲
 itm_arnor_armor_c|登丹游侠皮甲
 itm_arnor_armor_d|登丹游侠皮甲
-itm_arnor_armor_e|亚尔诺强化短上衣
+itm_arnor_armor_e|亚尔诺加厚短上衣
 itm_arnor_armor_f|亚尔诺重甲
 itm_arnor_greaves|亚尔诺胫甲
 itm_arnor_splinted|亚尔诺夹板胫甲
@@ -579,8 +579,8 @@ itm_black_snake_armor|马兰卡甲
 itm_harad_champion|远哈拉德轻甲
 itm_panther_guard|远哈拉德豹卫甲
 itm_harad_scale|哈拉德鳞甲
-itm_harad_tiger_scale|哈拉德虎卫甲
-itm_harad_lion_scale|哈拉德狮卫甲
+itm_harad_tiger_scale|虎卫甲
+itm_harad_lion_scale|狮卫甲
 itm_harad_dragon_helm|凯洛卡盔
 itm_harad_cav_helm_a|哈隆铎骑兵盔
 itm_harad_cav_helm_b|哈隆铎骑兵盔
@@ -588,9 +588,9 @@ itm_black_snake_helm|马兰卡盔
 itm_harad_finhelm|哈拉德巨型盔
 itm_harad_heavy_inf_helm|哈拉德巨型盔
 itm_harad_wavy_helm|哈拉德巨型盔
-itm_harad_eaglehelm|哈拉德雕卫盔
-itm_lion_helm|哈拉德狮卫盔
-itm_harad_pantherhelm|远哈拉德豹卫帽
+itm_harad_eaglehelm|雕卫盔
+itm_lion_helm|狮卫盔
+itm_harad_pantherhelm|豹卫帽
 itm_harad_khopesh|哈拉德镰剑
 itm_black_snake_sword|哈拉德重型刀
 itm_harad_heavy_sword|哈拉德重剑
@@ -891,7 +891,7 @@ itm_moria_arrow_reward|摩瑞亚萃毒箭
 itm_khamul_helm|戒灵克哈穆尔的头盔
 itm_gandstaff|巫师法杖
 itm_sarustaff|巫师法杖
-itm_rohan_armor_th|罗翰皇家盔甲
+itm_rohan_armor_th|洛汗皇家盔甲
 itm_denethor_robe|摄政王长袍
 itm_prisoner_coll_chain|俘虏手链
 itm_witchking_helmet|邪盔

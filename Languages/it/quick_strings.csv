@@ -700,7 +700,7 @@ qstr__Your_own_banner_flie|Il tuo stendardo sventola sui cancelli della città
 qstr__You_see_the_banner_o|Vedi lo stendardo di {s7} sui cancelli della città
 qstr__The_townsfolk_here_|Gli abitanti di questo luogo hanno dichiarato la loro indipendenza
 qstr_Go_to_the_secret_ent|Vai all'entrata segreta di Moria
-qstr_Search_for_a_secret_|Cerchi un'entrata segreta per Moria
+qstr_Search_for_a_secret_|Cerca un'entrata segreta per Moria
 qstr_Get_book.|Prendi il libro.
 qstr_The_{reg6?town_s:cas|Le scorte alimentari {reg6?della città:del castello} possono resistere per altri {reg3} giorni.
 qstr_The_{reg6?town_s:cast|Le scorte alimentari {reg6?town's:castle's} si sono esaurite e i difensori hanno fame.
@@ -733,10 +733,10 @@ qstr_their_enemies|i loro nemici
 qstr_{s11}_and_{s13}|{s11} e {s13}
 qstr_{s11}_{s13}|{s11}, {s13}
 qstr_On_your_way_to_your_|Sulla strada per la capitale della tua fazione, ti imbatti in alcuni orchi che stanno per razziare una carovana.
-qstr_On_your_way_to_your_f|Sulla strada per la capitale della tua fazione, ti imbatti in alcune truppe che stanno per tendere un imboscata a degli orchi nella foresta.
+qstr_On_your_way_to_your_f|Sulla strada per la capitale della tua fazione, ti imbatti in alcune truppe che stanno per tendere un'imboscata a degli orchi nella foresta.
 qstr_On_your_way_to_Mordo|Sulla tua strada verso Mordor, senti un fruscio nelle vicinanze. Vedi alcuni esploratori di Gondor e ti prepari ad avvertire la tua compagnia.
-qstr_You_see_the_village_|Il villaggio è sotto razzia da parte dei banditi. Ti prepari per difenderlo.
-qstr_You_see_the_village_y|Vedi il villaggio che sei stato incaricato di predare. Ti prepari ad attaccare.
+qstr_You_see_the_village_|Il villaggio è sotto razzia da parte dei banditi.
+qstr_You_see_the_village_y|Vedi il villaggio che sei stato incaricato di predare.
 qstr_The_raiders_are_defe|I predatori sono sconfitti ! I pochi che restano vivi e coscienti si affrettano a tornare nell'oscurità da cui sono usciti, terrorizzati dagli abitanti del villaggio e dal loro nuovo campione.
 qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a sconfiggere i predoni. Essi radono il villaggio al suolo e rendono schiavi gil abitanti che restano.
 qstr_The_village_has_been|Il villaggio è stato razziato, gli abitanti sono stati uccisi o resi schiavi. L'Oscuro Signore ne sarà compiaciuto.
