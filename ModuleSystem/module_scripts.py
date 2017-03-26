@@ -13732,11 +13732,13 @@ scripts = [
        (try_end),
        (assign, ":num_members", 0),
        (str_store_string, s10, "@noone"),
-       (try_for_range_backwards, ":loop_var", "trp_kingdom_heroes_including_player_begin", kingdom_heroes_end),
+       (try_for_range_backwards, ":loop_var", kingdom_heroes_begin - 1, kingdom_heroes_end),
          (assign, ":cur_troop", ":loop_var"),
          (try_begin),
-           (eq, ":loop_var", "trp_kingdom_heroes_including_player_begin"),
-           (assign, ":cur_troop", "trp_player"),
+           #swy: this seems to add an additional initial dummy
+           #     entry to the heroes range and replace that by the player. was hardcoded.
+           (eq, ":loop_var", kingdom_heroes_begin - 1),
+           (assign, ":cur_troop",     "trp_player"),
            (assign, ":troop_faction", "$players_kingdom"),
          (else_try),
            (store_troop_faction, ":troop_faction", ":cur_troop"),
@@ -19331,7 +19333,9 @@ scripts = [
 			(faction_get_slot, ":local5", ":comp", slot_fcomp_kia),
 			(faction_get_slot, ":troop_comp", ":comp", slot_fcomp_troopid),
 			(eq, ":local5", 1),
-			(try_for_range, ":npc", "trp_npc1", "trp_heroes_end"),
+
+			#swy: both lists are contiguous, that's why this seems to work. was hardcoded
+			(try_for_range, ":npc", companions_begin, heroes_end),
 				(eq, ":troop_comp", ":npc"),
 				(assign, ":local8", ":local0"),
 				(val_add, ":local8", 5),

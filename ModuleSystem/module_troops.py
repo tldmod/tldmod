@@ -2055,9 +2055,14 @@ troops = [
       str_17|agi_13|int_3|cha_3|level(8),wp(95),knows_riding_1|knows_athletics_3|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_3|knows_pathfinding_2,0x00000009f50001c97ac16e65f3ecf7de00000000001cc7080000000000000000],
 #NPC system changes end
  
-["kingdom_heroes_including_player_begin","bug","_",tf_hero,0,0,fac_gondor,
-   [],
-      lord_attrib,0,0,0],
+ 
+# <--- swy: heroes_begin --->
+ 
+## Kham - New Gondor Lord
+["knight_6_2","Golasgil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+   [itm_gondor_lance, itm_pinnath_leader,itm_good_mace,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_pelargir_helmet_light,],
+      attr_tier_5,wp_tier_5,gondor_skills_1|knows_trainer_7,0x0000000e800021465e856dd74321355600000000001c58a50000000000000000],
+
 #governors (plural contains how player refers to the guy
 ["gondor_lord","Steward_Denethor","Steward",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_warhorse,itm_denethor_robe,itm_gondor_light_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,],
@@ -2345,9 +2350,13 @@ troops = [
    [itm_saddle_horse,itm_dunland_armor_k,itm_dunland_armor_k,itm_dunland_wolfboots,itm_dunland_wolfboots,itm_evil_gauntlets_a,itm_dun_helm_e,itm_dun_berserker,itm_dun_shield_b,itm_dunland_javelin,],
       attr_tier_6,wp_tier_6,knight_skills_1,0x0000000e3b00324305f858f1606bbfff00000000001f7ce80000000000000000],
 
-["heroes_end","bug","_",tf_hero,0,0,fac_neutral,
-   [],
-      0,0,0,0x000000000008318101f390c515555594],
+## Kham - New Gondor Lord
+["knight_6_1","Dervorin","_",tf_hero| tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
+   [itm_lamedon_leader_surcoat_cloak,itm_loss_war_axe,itm_gondor_heavy_greaves,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondorian_light_helm,itm_loss_throwing_axes],
+      attr_tier_5,wp_tier_5,gondor_skills_1|knows_power_throw_5|knows_shield_9,0x0000000340003004250c85a90f6868f500000000001ed96a0000000000000000],
+
+# <--- swy: heroes_end --->
+      
 #Healers
 #["morannon_healer","Okstuk_the_healer","_",tf_hero,scn_tld_morannon_castle|entry(5),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
 #["minas_tirith_healer","Ioreth","_",tf_female|tf_hero,scn_town_1_castle|entry(5),0,fac_gondor,[itm_white_robe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x10500501d14886db69d699],
@@ -3234,15 +3243,9 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
   [(itm_dunland_armor_k,imod_poor),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_poor)],
     def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
 
-## Kham - New Gondor Lords
-
-["knight_6_1","Dervorin","_",tf_hero| tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_gondor,
-   [itm_lamedon_leader_surcoat_cloak,itm_loss_war_axe,itm_gondor_heavy_greaves,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondorian_light_helm,itm_loss_throwing_axes],
-      attr_tier_5,wp_tier_5,gondor_skills_1|knows_power_throw_5|knows_shield_9,0x0000000340003004250c85a90f6868f500000000001ed96a0000000000000000],
-["knight_6_2","Golasgil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
-   [itm_gondor_lance, itm_pinnath_leader,itm_good_mace,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_pelargir_helmet_light,],
-      attr_tier_5,wp_tier_5,gondor_skills_1|knows_trainer_7,0x0000000e800021465e856dd74321355600000000001c58a50000000000000000],
-
+["dummy_troop",  "bug","_", tf_hero, 0, 0, fac_gondor, [], lord_attrib,0,0,0],
+["dummy_troop_b","bug","_", tf_hero, 0, 0, fac_gondor, [], lord_attrib,0,0,0],
+    
 ["beorning_shield_bear","Beorning_Shield_Bear","Beorning_Shield_Bears",tfg_gloves| tfg_shield| tfg_armor| tfg_boots,0,0,fac_beorn,
    [itm_beorn_chief,itm_beorn_heavy,itm_leather_boots,itm_leather_gloves,itm_beorn_helmet,(itm_beorn_shield_reward,imod_reinforced), (itm_dwarf_sword_a,imod_fine), (itm_good_mace,imod_masterwork)],
       attr_tier_6,wp_tier_6,knows_common|knows_athletics_6|knows_power_strike_5|knows_ironflesh_7|knows_shield_7,beorn_face1,beorn_face2],

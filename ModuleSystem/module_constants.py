@@ -1033,19 +1033,19 @@ names_orc_end = surnames_begin
 #secret_signs_begin = "str_secret_sign_1"
 #secret_signs_end = countersigns_begin
 
-kingdoms_begin = fac_gondor
+kingdoms_begin   = fac_gondor
 kingdoms_begin_i = fac_gondor
-kingdoms_end = fac_kingdoms_end
-kingdoms_end_i = fac_kingdoms_end
+kingdoms_end     = fac_kingdoms_end
+kingdoms_end_i   = fac_kingdoms_end
 
-kingdom_heroes_begin = trp_gondor_lord
-kingdom_heroes_end = trp_heroes_end
+kingdom_heroes_begin = trp_knight_6_2       # was: trp_gondor_lord
+kingdom_heroes_end   = trp_knight_6_1 + 1   # was: trp_heroes_end
 
 heroes_begin = kingdom_heroes_begin
-heroes_end = kingdom_heroes_end
+heroes_end   = kingdom_heroes_end
 
 companions_begin = trp_npc1
-companions_end = trp_kingdom_heroes_including_player_begin
+companions_end   = trp_npc17 + 1
 
 soldiers_begin = trp_farmer
 soldiers_end = trp_town_walker_1
