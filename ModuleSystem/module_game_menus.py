@@ -6019,7 +6019,7 @@ game_menus = [
 	  ,"Get the book"),
 	  ##Kham - Player Initiated Siege BEGIN
 	  ("player_castle_initiate_siege",
-	 	[(eq, "$cheat_mode",1),
+	 	[#(eq, "$cheat_mode",1),
 	 	 (eq, "$player_allowed_siege",1), #Kham - Global Var that allows player to siege. Set in Dialogues.
 	 	 (store_faction_of_party, ":faction_no", "$g_encountered_party"),
 	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #Check Faction Strength

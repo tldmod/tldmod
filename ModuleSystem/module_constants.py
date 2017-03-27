@@ -1282,7 +1282,7 @@ tld_command_cost_follow = 20
 tld_command_cost_goto   = 5
 tld_command_cost_patrol = 10
 tld_command_cost_engage = 25
-tld_command_cost_siege =  50 #marshalls only
+tld_command_cost_siege =  35 #marshalls only #kham - reduced from 50
 
 
 ####################################################
@@ -1456,17 +1456,19 @@ ws_party_spawns_list = [
 ]
 
 # TLD Party base probability to spawn daily per center (0-100), for average faction strength (3500); modified by strength/100-35
-ws_scout_chance = 40
-ws_raider_chance = 30 # no chance below str. 500
-ws_patrol_chance = 20 # no chance below str. 1500
-ws_caravan_chance = 15 # no chance below str. 2000
+# Kham - Increased by 10 (March 2017)
+ws_scout_chance = 50
+ws_raider_chance = 40 # no chance below str. 500
+ws_patrol_chance = 30 # no chance below str. 1500
+ws_caravan_chance = 25 # no chance below str. 2000
 #ws_host_chance = 35
 
 # TLD Party limit multiplier. Maximum number of parties for faction strength 3500 (double that for 7000). (Namely strength*multiplier/3500 is the party number limit)
-ws_scout_limit_multiplier = 14
-ws_raider_limit_multiplier = 9
-ws_patrol_limit_multiplier = 6
-ws_caravan_limit_multiplier = 5
+# Kham - Increased by varied amount (March 2017)
+ws_scout_limit_multiplier = 25 #+11 from 14
+ws_raider_limit_multiplier = 15 #+6 from 9
+ws_patrol_limit_multiplier = 12 #+6 from 6
+ws_caravan_limit_multiplier = 10 #+5 from 5
 #ws_host_limit_multiplier = 4
 
 # TLD Party victory points. Faction strength decreased by these when party is killed, winner gets half of it. (slot_party_victory_value)

@@ -4033,7 +4033,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone, "marshall_ask", [], "I'm listening, {playername}. What do you suggest?", "marshall_suggest",[]],
 
 ##Kham - Player initiated sieges BEGIN
-[anyone|plyr, "marshall_suggest", [(eq, "$cheat_mode", 1)],
+[anyone|plyr, "marshall_suggest", [
+  #(eq, "$cheat_mode", 1)
+  ],
   "I wish to lead our men in an assault on an enemy settlement.", "player_siege_ask",
   []],
 ##Kham - Player Initiated Sieges cont'd below
