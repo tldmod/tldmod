@@ -884,8 +884,9 @@ slot_trait_command_voice     = 19
 slot_trait_foe_hammer        = 20
 slot_trait_battle_scarred    = 21
 slot_trait_fell_beast        = 22
+slot_trait_butcher			 = 23 #Kham
 slot_trait_first             = slot_trait_elf_friend
-slot_trait_last              = slot_trait_fell_beast
+slot_trait_last              = slot_trait_butcher
 
 
 ########################################################

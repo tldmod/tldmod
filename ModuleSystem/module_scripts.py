@@ -1827,6 +1827,7 @@ scripts = [
 	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
 	(assign, "$total_kills",0), #Kham - Kill Counter
 	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
+	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
@@ -20699,6 +20700,12 @@ command_cursor_scripts = [
      (try_end),
 	 (assign, reg0, ":res"),
 	 (assign, reg1, ":dist"),
+]),
+
+#script_cf_gain_trait_butcher
+("cf_gain_trait_butcher",[
+    (troop_slot_eq, "trp_traits", slot_trait_butcher, 0),
+    (call_script, "script_gain_trait", slot_trait_butcher),
 ]),
 
 ]
