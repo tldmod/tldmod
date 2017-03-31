@@ -1503,7 +1503,7 @@ formAI_scripts = [
 ] or [
 
 # MB Version of Field Melee Tactics - Kham
-# script_team_field_melee_tactics by motomataru
+  # script_team_field_melee_tactics by motomataru
   # Input: AI team, size relative to largest team in %, size relative to battle in %
   # Output: none
   ("team_field_melee_tactics", [
@@ -2063,7 +2063,8 @@ formAI_scripts = [
 		#JL: don't place leader with infantry if there are more than 1 cavalry on the map:
 		(try_begin),
 			(gt, ":num_cavalry", 1),
-			(assign, ":place_leader_by_infantry", 0), #JL, Kham
+			(assign, ":place_leader_by_infantry", 0), #JL, Kham 
+		(try_end),
 		
 		#JL Patrol Mode Control
 		(store_random_in_range, ":chance", 1, 101),	#chance value that is used to assign cavalry patrols and extra aggressivness while on patrol. JL
@@ -2681,6 +2682,7 @@ formAI_scripts = [
 		(try_end),
 	(try_end)
 	]),
+
 
 ]) + [
 	  
@@ -4145,7 +4147,7 @@ formAI_scripts = [
 		(agent_get_class, reg0, ":agent"),
 	(try_end)
   ]),
-  
+
 ] or [
 
 	

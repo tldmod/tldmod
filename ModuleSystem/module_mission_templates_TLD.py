@@ -1673,7 +1673,10 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
     
     (try_end),
   (else_try), # normal team assignment
-    (call_script, "script_agent_reassign_team", ":agent"),
+  	(try_begin),
+	  	(eq, "$player_control_allies",0),
+	    (call_script, "script_agent_reassign_team", ":agent"),
+	(try_end),
   (try_end),
   
   #(try_begin),

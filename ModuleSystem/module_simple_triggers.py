@@ -1100,6 +1100,12 @@ simple_triggers = [
     (neq, ":new_icon", "$g_player_party_icon"),
     (assign, "$g_player_party_icon", ":new_icon"),
     (party_set_icon, "p_main_party", ":new_icon"),
+    
+    ##Kham - Piggyback on trigger for Player Controlled allies
+    (try_begin),
+      (eq, "$player_control_allies",1),
+      (assign, "$player_control_allies",0),
+    (try_end),
     ]),
   
 # (38) Update how good a target player is for bandits
@@ -2718,6 +2724,8 @@ simple_triggers = [
        (call_script, "script_defend_center", "trp_knight_1_6", "p_town_minas_tirith"), 
        (call_script, "script_defend_center", "trp_knight_1_7", "p_town_minas_tirith"), 
        (call_script, "script_defend_center", "trp_knight_1_8", "p_town_minas_tirith"),  
+       (call_script, "script_defend_center", "trp_knight_6_1", "p_town_minas_tirith"),  
+       (call_script, "script_defend_center", "trp_knight_6_2", "p_town_minas_tirith"),  
      (try_end),
 
      (try_begin),
@@ -2752,7 +2760,9 @@ simple_triggers = [
        (call_script, "script_accompany_marshall", "trp_knight_1_5", "trp_knight_1_3"),
        (call_script, "script_accompany_marshall", "trp_knight_1_6", "trp_knight_1_3"), 
        (call_script, "script_accompany_marshall", "trp_knight_1_7", "trp_knight_1_3"), 
-       (call_script, "script_accompany_marshall", "trp_knight_1_8", "trp_knight_1_3"),  
+       (call_script, "script_accompany_marshall", "trp_knight_1_8", "trp_knight_1_3"),
+       (call_script, "script_accompany_marshall", "trp_knight_6_1", "trp_knight_1_3"), 
+       (call_script, "script_accompany_marshall", "trp_knight_6_2", "trp_knight_1_3"),   
      (try_end),
 
     (try_begin),

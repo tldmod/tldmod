@@ -1828,6 +1828,7 @@ scripts = [
 	(assign, "$total_kills",0), #Kham - Kill Counter
 	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
 	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
+	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
