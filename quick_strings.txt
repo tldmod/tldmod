@@ -916,7 +916,7 @@ qstr_{s1}_has_been_defeat {s1}_has_been_defeated._Mission_canceled.
 qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_DEBUG:_Eliminate_Par DEBUG:_Eliminate_Parties_-_Current:_{reg0},_New:_{reg1}
-qstr_Parties_defeated:_{r Parties_defeated:_{reg1}_out_of_{reg2}
+qstr_{s1}_parties_defeate {s1}_parties_defeated:_{reg1}_out_of_{reg2}
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!

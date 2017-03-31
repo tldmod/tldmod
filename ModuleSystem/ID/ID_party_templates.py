@@ -250,3 +250,4 @@ pt_village = 248
 pt_ring_hunters = 249
 pt_scout_camp_small = 250
 pt_scout_camp_large = 251
+pt_beorn_caravan = 252

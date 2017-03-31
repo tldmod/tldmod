@@ -15,6 +15,9 @@ from header_terrain_types import *
 from header_music import *
 from ID_animations import *
 
+from module_info import wb_compile_switch as is_a_wb_script
+
+
 ####################################################################################################################
 # scripts is a list of script records.
 # Each script record contns the following two fields:
@@ -38,7 +41,7 @@ formAI_scripts = [
 	]),
 	
 
-  # script_team_field_ranged_tactics by motomataru
+  # script_team_field_ranged_tactics by motomataru #Kham - Edited
   # Input: AI team, size relative to largest team in %, size relative to battle in %
   # Output: none
   ("team_field_ranged_tactics", [
@@ -49,7 +52,7 @@ formAI_scripts = [
 	(try_begin),
 		(gt, reg0, 0),
 		(call_script, "script_battlegroup_get_position", Archers_Pos, ":team_no", grc_archers),
-		(call_script, "script_team_get_position_of_enemies", Enemy_Team_Pos, ":team_no", grc_everyone),
+		(call_script, "script_team_get_position_of_enemies", Enemy_Team_Pos, ":team_no"),
 		(call_script, "script_point_y_toward_position", Archers_Pos, Enemy_Team_Pos),
 		(call_script, "script_get_nearest_enemy_battlegroup_location", Nearest_Enemy_Battlegroup_Pos, ":team_no", Archers_Pos),
 		(assign, ":distance_to_enemy", reg0),
@@ -173,7 +176,7 @@ formAI_scripts = [
 						(eq, "$battle_phase", BP_Setup),
 						(assign, ":shot_distance", AI_long_range),
 					(else_try),
-						(assign, ":shot_distance", AI_firing_distance),
+						(assign, ":shot_distance",  AI_firing_distance),
 						(try_begin),
 							(eq, ":team_no", 0),
 							(assign, reg0, "$team0_percent_ranged_throw"),
@@ -221,8 +224,1286 @@ formAI_scripts = [
 	(try_end)
 	]),
 
-	  
-  # script_team_field_melee_tactics by motomataru
+] + (is_a_wb_script==1 and [
+
+  # WB Only as it has some operations that are WB only - Kham
+  # script_team_field_melee_tactics by motomataru KHAM - Edited
+  # Input: AI team, size relative to largest team in %, size relative to battle in %
+  # Output: none
+  ("team_field_melee_tactics", [
+	(store_script_param, ":team_no", 1),
+#	(store_script_param, ":rel_army_size", 2),
+	(store_script_param, ":battle_presence", 3),
+	(call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"),
+	
+	##JL code for checking disengagement by reinforcements:
+	(try_begin),
+		(eq, "$formai_disengage", 0), #if we have no disengagement ordered yet then
+		
+		(store_normalized_team_count, ":num_attackers", 1), #added by JL to use for determining reinforcements (and possibly future other factors)
+		(store_normalized_team_count, ":num_defenders", 0), #added by JL to use for determining reinforcements (and possibly future other factors)
+
+		(try_begin), #for attackers:
+			(lt, ":num_attackers", 6), #if number of attackers are 5 or less
+			(eq, "$att_reinforcements_arrived", 0), #and attacker reinforcements have not arrived
+			(assign, "$att_reinforcements_needed", 1), #set attacker reinforcements are needed
+		(try_end),
+		(try_begin),
+			(ge, ":num_attackers", 6), #if number of attacker or defenders are more than 5
+			(eq, "$att_reinforcements_needed", 1), # and attacker reinforcements were needed
+			(assign, "$att_reinforcements_arrived", 1), #set attacker reinforcements to have arrived
+			(assign, "$att_reinforcements_needed", 0), #set attacker reinforcements are not needed
+			(assign, "$formai_disengage", 1), #set flag that disengagement is ok
+			#(display_message, "@Attacker reinforcements have arrived"), #############
+		(try_end),
+		
+		(try_begin), #for defenders:
+			(lt, ":num_defenders",6), #if number of defenders are 5 or less
+			(eq, "$def_reinforcements_arrived", 0), #and defender reinforcements have not arrived
+			(assign, "$def_reinforcements_needed", 1), #set defender reinforcements are needed
+		(try_end),
+		(try_begin),
+			(ge, ":num_defenders", 6), #if number of defenders are more than 5
+			(eq, "$def_reinforcements_needed", 1), # and defender reinforcements were needed
+			(assign, "$def_reinforcements_arrived", 1), #set defender reinforcements to have arrived
+			(assign, "$def_reinforcements_needed", 0), #set defender reinforcements are not needed
+			(assign, "$formai_disengage", 1), #set flag that disengagement is ok
+			#(display_message, "@Defender reinforcements have arrived"), #############
+		(try_end),
+	(try_end),
+	##End JL code
+	
+	
+	#mop up if outnumber enemies more than 6:1
+	(try_begin),
+		(gt, reg0, 86),
+		(call_script, "script_formation_end", ":team_no", grc_infantry),
+		(team_give_order, ":team_no", grc_infantry, mordr_charge),
+		(call_script, "script_formation_end", ":team_no", grc_cavalry),
+		(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+
+	(else_try),
+		#find closest distance of enemy to infantry, cavalry troops
+		(assign, ":inf_closest_dist", Far_Away),
+		(assign, ":inf_closest_non_cav_dist", Far_Away),
+		(assign, ":cav_closest_dist", Far_Away),
+		(assign, ":num_enemies_in_melee", 0),
+		(assign, ":num_enemies_supporting_melee", 0),
+		(assign, ":num_enemy_infantry", 0),
+		(assign, ":num_enemy_cavalry", 0),
+		(assign, ":num_enemy_others", 0),
+		(assign, ":sum_level_enemy_infantry", 0),
+		(assign, ":x_enemy", 0),
+		(assign, ":y_enemy", 0),
+		(try_for_agents, ":enemy_agent"),
+			(agent_is_alive, ":enemy_agent"),
+			(agent_is_human, ":enemy_agent"),
+			(agent_get_team, ":enemy_team_no", ":enemy_agent"),
+			(teams_are_enemies, ":enemy_team_no", ":team_no"),
+           # (agent_slot_eq, ":enemy_agent", slot_agent_is_running_away, 0),
+            (agent_get_troop_id, ":enemy_troop", ":enemy_agent"),
+            (troop_get_type, ":enemy_race", ":enemy_troop"),
+			(neq, ":enemy_race", tf_troll), #disregard trolls
+
+			(agent_get_class, ":enemy_class_no", ":enemy_agent"),
+			(try_begin),
+				(eq, ":enemy_class_no", grc_infantry),
+				(val_add, ":num_enemy_infantry", 1),
+				(agent_get_troop_id, ":enemy_troop", ":enemy_agent"),
+				(store_character_level, ":enemy_level", ":enemy_troop"),
+				(val_add, ":sum_level_enemy_infantry", ":enemy_level"),
+			(else_try),
+				(eq, ":enemy_class_no", grc_cavalry),
+				(val_add, ":num_enemy_cavalry", 1),
+			(else_try),
+				(val_add, ":num_enemy_others", 1),
+			(try_end),
+			(agent_get_position, pos0, ":enemy_agent"),
+			(position_get_x, ":value", pos0),
+			(val_add, ":x_enemy", ":value"),
+			(position_get_y, ":value", pos0),
+			(val_add, ":y_enemy", ":value"),
+			(assign, ":enemy_in_melee", 0),
+			(assign, ":enemy_supporting_melee", 0),
+			(try_for_agents, ":cur_agent"),
+				(agent_is_alive, ":cur_agent"),
+				(agent_is_human, ":cur_agent"),
+				(agent_get_team, ":cur_team_no", ":cur_agent"),
+				(eq, ":cur_team_no", ":team_no"),
+				#(agent_slot_eq, ":cur_agent", slot_agent_is_running_away, 0),
+				(agent_get_class, ":cur_class_no", ":cur_agent"),
+				(try_begin),
+					(eq, ":cur_class_no", grc_infantry), #this block will not be traversed if there is no Infantry ... JL
+					(agent_get_position, pos1, ":cur_agent"),
+					(get_distance_between_positions, ":distance_of_enemy", pos0, pos1),
+					(try_begin),
+						(gt, ":inf_closest_dist", ":distance_of_enemy"),
+						(assign, ":inf_closest_dist", ":distance_of_enemy"),
+						(copy_position, Nearest_Enemy_Troop_Pos, pos0),
+						(assign, ":enemy_nearest_troop_distance", ":distance_of_enemy"),
+						(assign, ":enemy_nearest_agent", ":enemy_agent"),
+					(try_end),
+					(try_begin),
+						(neq, ":enemy_class_no", grc_cavalry),
+						(gt, ":inf_closest_non_cav_dist", ":distance_of_enemy"),
+						(assign, ":inf_closest_non_cav_dist", ":distance_of_enemy"),
+						(copy_position, Nearest_Non_Cav_Enemy_Troop_Pos, pos0),
+						(assign, ":enemy_nearest_non_cav_troop_distance", ":distance_of_enemy"),
+						(assign, ":enemy_nearest_non_cav_agent", ":enemy_agent"),
+					(try_end),
+					(try_begin),
+						(lt, ":distance_of_enemy", 150),
+						(assign, ":enemy_in_melee", 1),
+					(try_end),
+					(try_begin),
+						(lt, ":distance_of_enemy", 350),
+						(assign, ":enemy_supporting_melee", 1),
+					(try_end),
+				(else_try),
+					(eq, ":cur_class_no", grc_cavalry),
+					(agent_get_position, pos1, ":cur_agent"),
+					(get_distance_between_positions, ":distance_of_enemy", pos0, pos1),
+					(try_begin),
+						(gt, ":cav_closest_dist", ":distance_of_enemy"),
+						(assign, ":cav_closest_dist", ":distance_of_enemy"),
+					(try_end),
+				(try_end),
+			(try_end),
+			(try_begin),
+				(eq, ":enemy_in_melee", 1),
+				(val_add, ":num_enemies_in_melee", 1),
+			(try_end),
+			(try_begin),
+				(eq, ":enemy_supporting_melee", 1),
+				(val_add, ":num_enemies_supporting_melee", 1),
+			(try_end),
+		(try_end),
+		
+		(store_add, ":num_enemies", ":num_enemy_infantry", ":num_enemy_cavalry"),
+		(val_add, ":num_enemies", ":num_enemy_others"),
+		(gt, ":num_enemies", 0),
+		#JL get percentage of enemy others (archers, commpanions)
+		(assign, ":perc_enemy_others", ":num_enemy_others"), #assign enemy others percentage JL
+		(val_mul, ":perc_enemy_others", 100), #multiply by 100 to get percent JL
+		(val_div, ":perc_enemy_others", ":num_enemies"), #divide by total enemies to get ratio in percent JL
+		
+		(init_position, Enemy_Team_Pos),
+		(val_div, ":x_enemy", ":num_enemies"),
+		(position_set_x, Enemy_Team_Pos, ":x_enemy"),
+		(val_div, ":y_enemy", ":num_enemies"),
+		(position_set_y, Enemy_Team_Pos, ":y_enemy"),
+		(position_set_z_to_ground_level, Enemy_Team_Pos),
+
+		(call_script, "script_battlegroup_get_size", ":team_no", grc_archers),
+		(assign, ":num_archers", reg0),
+		#(display_message, "@{reg0} archers"),
+		(try_begin),
+			(eq, ":num_archers", 0),
+			(assign, ":enemy_from_archers", Far_Away),
+			(assign, ":archer_order", mordr_charge),
+		(else_try),
+			(call_script, "script_battlegroup_get_position", Archers_Pos, ":team_no", grc_archers),
+			(call_script, "script_point_y_toward_position", Archers_Pos, Enemy_Team_Pos),
+			(call_script, "script_get_nearest_enemy_battlegroup_location", pos0, ":team_no", Archers_Pos),
+			(assign, ":enemy_from_archers", reg0),
+			(team_get_movement_order, ":archer_order", ":team_no", grc_archers),
+		(try_end),
+
+		(call_script, "script_battlegroup_get_size", ":team_no", grc_infantry),
+		(assign, ":num_infantry", reg0),
+		#(display_message, "@{reg0} infantry"),
+		(try_begin),
+			(eq, ":num_infantry", 0),
+			(assign, ":enemy_from_infantry", Far_Away),
+		(else_try),
+			(call_script, "script_battlegroup_get_position", Infantry_Pos, ":team_no", grc_infantry),
+			(call_script, "script_get_nearest_enemy_battlegroup_location", pos0, ":team_no", Infantry_Pos),
+			(assign, ":enemy_from_infantry", reg0),
+		(try_end),
+
+		(call_script, "script_battlegroup_get_size", ":team_no", grc_cavalry),
+		(assign, ":num_cavalry", reg0),
+		#(display_message, "@{reg0} cavalry"),
+		(try_begin),
+			(eq, ":num_cavalry", 0),
+			(assign, ":enemy_from_cavalry", Far_Away),
+		(else_try),
+			(call_script, "script_battlegroup_get_position", Cavalry_Pos, ":team_no", grc_cavalry),
+			(call_script, "script_get_nearest_enemy_battlegroup_location", pos0, ":team_no", Cavalry_Pos),
+			(assign, ":enemy_from_cavalry", reg0),
+		(try_end),
+
+		(try_begin),
+			(lt, "$battle_phase", BP_Fight),
+			(this_or_next|le, ":enemy_from_infantry", AI_charge_distance),
+			(this_or_next|le, ":enemy_from_cavalry", AI_charge_distance),
+			(le, ":enemy_from_archers", AI_charge_distance),
+			(assign, "$battle_phase", BP_Fight),
+		(else_try),
+			(lt, "$battle_phase", BP_Jockey),
+			(this_or_next|le, ":inf_closest_dist", AI_long_range),
+			(le, ":cav_closest_dist", AI_long_range),
+			(assign, "$battle_phase", BP_Jockey),
+		(try_end),
+		
+		#(team_get_leader, ":team_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":team_leader", reg0),
+		
+		#infantry AI
+		#(assign, ":place_leader_by_infantry", 0), #Kham -  removed all these
+		
+		# JL DISENGAGEMENT OF ARCHERS:
+		(try_begin),
+			(gt, ":num_archers", 0), #if there are any archers
+			(eq, "$arc_charge_activated", 1), #and archers are in charge mode
+			(ge, ":enemy_from_archers", AI_charge_distance), #and enemies are not immediately near
+			(assign, "$arc_charge_activated", 0), #then deactivate inf charge mode
+			#(display_message, "@Archers ordered to resume shooting."), #######################
+		(try_end),
+		
+		#JL ADVANCE Archers closer to infantry if they are too far away:
+		(try_begin),
+			(gt, ":num_archers", 0), #if there are any archers
+			(gt, ":num_infantry", 0), #and if there is infantry
+			(get_distance_between_positions, ":archer_dist_to_inf", Infantry_Pos, Archers_Pos),
+			(gt, ":archer_dist_to_inf", 4000), #allied inf are not within 40m
+			(gt, ":enemy_from_archers", 4000), #and enemies are not within 40m 
+			(ge, ":enemy_from_archers", ":enemy_from_infantry"), #and enemies are closer or equally close to infantry than they are to archers
+			(team_give_order, ":team_no", grc_archers, mordr_charge), #charge the archers forward
+			#(display_message, "@Archers ordered to charge to keep close with infantry."), #######################
+		(try_end),
+		
+		(try_begin),
+			(le, ":num_infantry", 0),
+			(assign, ":infantry_order", ":archer_order"),
+		(else_try),
+			(try_begin), ## JL CHARGE ACTIVATION to force inf Charge Mode when inf AI has been deemed to need charge mode (--for use if inf charge has been ordered earlier in the code or from archers code)
+				(eq, "$inf_charge_activated", 1), #if inf AI has been told to Charge
+				(eq, "$inf_charge_ongoing", 0), #and switch is false
+				(call_script, "script_formation_end", ":team_no", grc_infantry), #end any formations
+				(team_give_order, ":team_no", grc_infantry, mordr_charge), #do a Native Charge
+				(assign, "$inf_charge_ongoing", 1), #switch set to true so this function is not needed to be called again until charge mode has been disabled and a new charge has been set
+				#(display_message, "@Infantry orders are Charge, Formations Inf AI disabled"), ################
+			(try_end),	
+			
+			(try_begin), ## JL RULES OF DISENGAGEMENT: to Remove AI Infantry Charge Mode when infantry is not in melee any more
+				(eq, ":num_enemies_supporting_melee", 0), #infantry is currently not in melee
+				(gt, ":enemy_from_infantry", 2000), #JL Kham - and nearest enemy is further away than 20m
+				(eq, "$inf_charge_ongoing", 1), # flag to see if we have a regular charge ongoing
+				(assign, "$inf_charge_activated", 0), #then deactivate inf charge mode
+				(assign, "$inf_charge_ongoing", 0), #and reset switch to open up for future charge orders
+				#(display_message, "@Infantry AI is not in melee and decides to resume maneuver"), #######################
+			(try_end),
+
+			#JL Control to Continue form AI
+			(eq, "$inf_charge_activated", 0), #If infantry charge has not been activated then continue Inf AI, JL
+			
+			(store_mul, ":percent_level_enemy_infantry", ":sum_level_enemy_infantry", 100),
+			(val_div, ":percent_level_enemy_infantry", ":num_enemies"),
+			(try_begin),
+				(teams_are_enemies, ":team_no", "$fplayer_team_no"),
+				(assign, ":combined_level", 0),
+				(assign, ":combined_team_size", 0),
+				(assign, ":combined_num_infantry", ":num_infantry"),
+			(else_try),
+				(call_script, "script_battlegroup_get_level", "$fplayer_team_no", grc_infantry),
+				(assign, ":combined_level", reg0),
+				(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_everyone),
+				(assign, ":combined_team_size", reg0),
+				(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_infantry),
+				(store_add, ":combined_num_infantry", ":num_infantry", reg0),
+			(try_end),
+			(store_mul, ":percent_level_infantry", ":combined_num_infantry", 100),
+			(call_script, "script_battlegroup_get_level", ":team_no", grc_infantry),
+			(assign, ":level_infantry", reg0),
+			(val_add, ":combined_level", reg0),
+			(val_mul, ":percent_level_infantry", ":combined_level"),
+			(call_script, "script_battlegroup_get_size", ":team_no", grc_everyone),
+			(val_add, ":combined_team_size", reg0),
+			(val_div, ":percent_level_infantry", ":combined_team_size"),
+
+			(assign, ":infantry_order", mordr_charge),
+			(try_begin),	#enemy far away AND ranged not charging
+				(gt, ":enemy_from_archers", AI_charge_distance),
+				(gt, ":inf_closest_dist", AI_charge_distance),
+				(neq, ":archer_order", mordr_charge),
+				(try_begin),	#fighting not started OR not enough infantry
+					(this_or_next|le, "$battle_phase", BP_Jockey),
+					(lt, ":percent_level_infantry", ":percent_level_enemy_infantry"),
+					(assign, ":infantry_order", mordr_hold),
+				(try_end),
+			(try_end),
+
+			#if low level troops outnumber enemies in melee by 2:1, attempt to whelm
+			(try_begin),
+				(le, ":level_infantry", 12),
+				(gt, ":num_enemies_in_melee", 0),
+				(store_mul, reg0, ":num_enemies_supporting_melee", 2),
+				(is_between, reg0, 1, ":num_infantry"),
+				(get_distance_between_positions, reg0, Infantry_Pos, Nearest_Enemy_Troop_Pos),
+				(le, reg0, AI_charge_distance),
+				(call_script, "script_formation_end", ":team_no", grc_infantry),
+				(team_give_order, ":team_no", grc_infantry, mordr_charge),
+				#(display_message, "@Infantry decided to whelm."), #############
+
+			(else_try), #Kham - Make infantry charge when enemy is close
+		        (get_distance_between_positions, reg0, Infantry_Pos, Nearest_Enemy_Troop_Pos),
+		        (this_or_next|le, ":enemy_from_infantry", 1300), # Start charge if enemy infantry formation is close
+		        (this_or_next|le, ":enemy_from_archers", 1300), # Start charge if enemy archer group is close.
+		        (le, reg0, 800), # Start charge if any enemies are really close.
+		        (call_script, "script_formation_end", ":team_no", grc_infantry),
+						(team_get_movement_order, reg0, ":team_no", grc_infantry),
+		        (team_give_order, ":team_no", grc_infantry, mordr_hold_fire), # Hold fire while charging to keep infantry together.
+						(try_begin),
+							(neq, reg0, mordr_charge),
+							(team_give_order, ":team_no", grc_infantry, mordr_charge),
+						(try_end),  #Kham - changes end
+						#(display_message, "@DEBUG: Infantry decides to charge!"),
+				
+			#else attempt to form formation somewhere
+			(else_try),
+				(try_begin),
+					(eq, ":team_no", 0),
+					(try_begin),
+						(eq, "$team0_default_formation", formation_default),
+						(call_script, "script_get_default_formation", 0),
+						(assign, "$team0_default_formation", reg0),
+					(try_end),
+					(assign, ":infantry_formation", "$team0_default_formation"),
+				(else_try),
+					(eq, ":team_no", 1),
+					(try_begin),
+						(eq, "$team1_default_formation", formation_default),
+						(call_script, "script_get_default_formation", 1),
+						(assign, "$team1_default_formation", reg0),
+					(try_end),
+					(assign, ":infantry_formation", "$team1_default_formation"),
+				(else_try),
+					(eq, ":team_no", 2),
+					(try_begin),
+						(eq, "$team2_default_formation", formation_default),
+						(call_script, "script_get_default_formation", 2),
+						(assign, "$team2_default_formation", reg0),
+					(try_end),
+					(assign, ":infantry_formation", "$team2_default_formation"),
+				(else_try),
+					(eq, ":team_no", 3),
+					(try_begin),
+						(eq, "$team3_default_formation", formation_default),
+						(call_script, "script_get_default_formation", 3),
+						(assign, "$team3_default_formation", reg0),
+					(try_end),
+					(assign, ":infantry_formation", "$team3_default_formation"),
+				(try_end),
+				
+				(call_script, "script_classify_agent", ":enemy_nearest_agent"),
+				(assign, ":enemy_nearest_troop_division", reg0),
+				(agent_get_class, ":enemy_nearest_troop_class", ":enemy_nearest_agent"), 
+
+				(agent_get_team, ":enemy_nearest_troop_team", ":enemy_nearest_agent"),
+				#(team_get_leader, ":enemy_leader", ":enemy_nearest_troop_team"),
+				(call_script, "script_team_get_nontroll_leader", ":enemy_nearest_troop_team"),
+				(assign, ":enemy_leader", reg0),
+
+				(store_mul, ":percent_enemy_cavalry", ":num_enemy_cavalry", 100),
+				(val_div, ":percent_enemy_cavalry", ":num_enemies"),
+				(try_begin),
+					(neq, ":infantry_formation", formation_none),
+					(try_begin),
+						(gt, ":percent_enemy_cavalry", 66),
+						(assign, ":infantry_formation", formation_square),
+						#(display_message, "@Infantry decided to form square"),	#############
+					(else_try),
+						(neq, ":enemy_nearest_troop_class", grc_cavalry),
+						(neq, ":enemy_nearest_troop_class", grc_archers),
+						(neq, ":enemy_nearest_agent", ":enemy_leader"),
+						(call_script, "script_battlegroup_get_size", ":enemy_nearest_troop_team", ":enemy_nearest_troop_division"),
+						(gt, reg0, ":num_infantry"),	#got fewer troops?
+						(call_script, "script_battlegroup_get_level", ":team_no", grc_infantry),
+						(assign, ":average_level", reg0),
+						(call_script, "script_battlegroup_get_level", ":enemy_nearest_troop_team", ":enemy_nearest_troop_division"),
+						(gt, ":average_level", reg0),	#got better troops?
+						(assign, ":infantry_formation", formation_wedge),
+						#(display_message, "@Infantry decided to form wedge"),	#############
+					(try_end),
+				(try_end),
+				
+				#hold near archers?
+				(try_begin),
+					(eq, ":infantry_order", mordr_hold),
+					(gt, ":num_archers", 0),
+					(copy_position, pos1, Archers_Pos),
+					(position_move_x, pos1, "$formai_rand8", 0), #changed -100 to rand8 (-100 to 100) JL
+					(try_begin),
+						(this_or_next|eq, ":enemy_nearest_troop_division", grc_cavalry),
+						(gt, ":percent_level_infantry", ":percent_level_enemy_infantry"),
+						(position_move_y, pos1, "$formai_rand2", 0),	#move ahead of archers in anticipation of charges -- changed 1000 to rand2 JL
+					(else_try),
+						(position_move_y, pos1, "$formai_rand5", 0), #changed -1000 to rand5 JL
+					(try_end),
+					(assign, ":spacing", 1),
+					#(display_message, "@Infantry decided to hold near archers"),	#############
+
+				#advance to nearest (preferably unmounted) enemy
+				(else_try),
+					#(display_message, "@Infantry decides to advance"), #############
+					(try_begin),
+						(eq, ":num_enemies_in_melee", 0),	#not engaged?
+						(gt, ":enemy_from_archers", "$formai_rand4"), #changed AI_charge_distance to rand4 (10-30m) JL
+						(lt, ":percent_enemy_cavalry", 100),
+						(assign, ":distance_to_enemy_troop", ":enemy_nearest_non_cav_troop_distance"),
+						(copy_position, pos60, Nearest_Non_Cav_Enemy_Troop_Pos),
+						(agent_get_team, ":enemy_non_cav_team", ":enemy_nearest_non_cav_agent"),
+						#(team_get_leader, reg0, ":enemy_non_cav_team"),
+						(call_script, "script_team_get_nontroll_leader", ":enemy_non_cav_team"),
+						(try_begin),
+							(eq, reg0, -1),
+							(assign, ":distance_to_enemy_group", Far_Away),
+						(else_try),
+							(call_script, "script_classify_agent", ":enemy_nearest_non_cav_agent"),
+							(call_script, "script_battlegroup_get_position", pos0, ":enemy_non_cav_team", reg0),
+							(get_distance_between_positions, ":distance_to_enemy_group", Infantry_Pos, pos0),
+						(try_end),
+					(else_try),
+						(assign, ":distance_to_enemy_troop", ":enemy_nearest_troop_distance"),
+						(copy_position, pos60, Nearest_Enemy_Troop_Pos),
+						(try_begin),
+							(eq, ":enemy_nearest_agent", ":enemy_leader"),
+							(assign, ":distance_to_enemy_group", Far_Away),
+						(else_try),
+							(call_script, "script_battlegroup_get_position", pos0, ":enemy_nearest_troop_team", ":enemy_nearest_troop_division"),
+							(get_distance_between_positions, ":distance_to_enemy_group", Infantry_Pos, pos0),
+						(try_end),
+					(try_end),
+					
+					(try_begin),	#attack troop if its unit is far off
+						(gt, ":distance_to_enemy_group", AI_charge_distance),
+						(this_or_next|neq, ":enemy_nearest_agent", ":enemy_leader"), #added by JL to ignore leader
+						(neq,"$cur_casualties","$prev_casualties"), # added by JL to have the AI not ignore the leader (5 secs) if there have been any recent losses
+						(copy_position, pos0, pos60),
+						(assign, ":distance_to_move", ":distance_to_enemy_troop"),
+						#(display_message, "@Infantry decides to MOVE to attack enemy troop"), #############
+						
+					(else_try),	#attack unit
+						(this_or_next|neq, ":enemy_nearest_agent", ":enemy_leader"), #added by JL to ignore leader
+						(neq,"$cur_casualties","$prev_casualties"), # added by JL to have the AI not ignore the leader (5 secs) if there have been any recent losses
+						(assign, ":distance_to_move", ":distance_to_enemy_group"),
+						#(display_message, "@Infantry decides to attack enemy troop"), #############
+						#wedge pushes through to last enemy infantry rank
+						(try_begin),
+							(eq, ":infantry_formation", formation_wedge),
+							(val_add, ":distance_to_move", formation_minimum_spacing),
+						# #non-wedge stops before first rank of enemy
+						# (else_try),
+							# (store_mul, reg0, formation_minimum_spacing, 2),
+							# (val_sub, ":distance_to_move", reg0),
+							#(display_message, "@Infantry decided to move to attack in wedge formation"), #############
+						(try_end),
+					(try_end),
+
+					(copy_position, pos1, Infantry_Pos),
+					(call_script, "script_point_y_toward_position", pos1, pos0),
+					(try_begin),
+						(le, ":distance_to_move", 1600),
+						(position_move_y, pos1, ":distance_to_move"),
+					(else_try),
+						(position_move_y, pos1, 1500),
+					(try_end),
+					(call_script, "script_get_centering_amount", ":infantry_formation", ":num_infantry", 0),
+					(position_move_x, pos1, reg0),
+					(store_div, reg0, formation_minimum_spacing, 2),
+					(position_move_x, pos1, reg0),	#combat tendency of fighting formations to rotate left
+					(assign, ":spacing", 0),
+				(try_end),
+				
+				(copy_position, pos61, pos1),	#copy for possible leader positioning
+				(position_copy_rotation, pos61, pos1),
+				(try_begin),
+					(neq, ":infantry_formation", formation_none),
+					(ge, ":num_infantry", formation_min_foot_troops),
+					(call_script, "script_set_formation_position", ":team_no", grc_infantry, pos1),
+					(call_script, "script_form_infantry", ":team_no", ":team_leader", ":spacing", ":infantry_formation"),		
+					(team_give_order, ":team_no", grc_infantry, mordr_hold),
+					#(assign, ":place_leader_by_infantry", 1), #Kham
+				(else_try),
+					(call_script, "script_formation_end", ":team_no", grc_infantry),
+					(team_give_order, ":team_no", grc_infantry, ":infantry_order"),
+					(team_set_order_position, ":team_no", grc_infantry, pos61),
+					#(eq, ":infantry_order", mordr_hold), #Kham
+					#(assign, ":place_leader_by_infantry", 1), #Kham
+				(try_end),
+			(try_end),
+			
+			 #GENERAL RULES OF ENGAGEMENT for Infantry, by JL:
+			 #If Engaged in melee and order is charge, then full Charge Infantry (without affecting cavalry) and maybe affecting archers
+			(try_begin),
+				(gt, ":num_enemies_supporting_melee", 0),	 #If melee is occurring
+				(try_begin), #then if
+					(this_or_next|eq, ":infantry_order", mordr_charge), #infantry order is to charge
+					(eq, ":archer_order", mordr_charge), #or archer orders are to charge
+					(assign, "$inf_charge_activated",1), #then Charge infantry
+					#(display_message,"@Infantry ordered to charge because infantry is in melee."), ##############
+					(gt, ":num_archers",0),
+					(eq, "$arc_charge_activated", 0),
+					(call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"), #call to see the odds JL
+					(le, reg0, 56), #AI is not overwhelmingly strong, so they need to throw in extra support in close combat
+					(le, ":enemy_from_archers", "$formai_rand3"), #and enemy is 20-30 meters from archers
+					(team_give_order, ":team_no", grc_archers, mordr_charge), #do a Native Charge
+					(assign, "$arc_charge_activated", 1), #then Charge archers
+					#(display_message,"@Archers ordered to charge to support melee!"), ##############
+				(try_end),
+			(try_end),
+			
+			#If Infantry is Holding and Nearest Enemy is within Self Defence range, enemy is not leader or troops have fallen then Charge (charge infantry and cavalry).
+			(try_begin),
+				(eq, ":infantry_order", mordr_hold), #if Orders are Hold
+				(le, ":enemy_nearest_troop_distance", AI_Self_Defence_Distance), #and any enemy is within self defence distance
+				(this_or_next|neq, ":enemy_nearest_agent", ":enemy_leader"), #nearest target is not the player
+				(neq, "$cur_casualties","$prev_casualties2"), #troops have fallen during last second
+				(assign, "$inf_charge_activated", 1), #then Charge Infantry
+				(assign, "$charge_activated", 1), #and Charge Cavalry
+				#(display_message,"@Infantry ordered general charge because enemy is too near and casualties inflicted."), ##############				
+			(try_end),
+
+			#JL If enemy constitutes more than 40% then charge towards archers
+			(try_begin),
+				(eq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and infantry needs to close in with them quickly
+				(call_script, "script_formation_end", ":team_no", grc_infantry), #JL Kham added
+				(team_give_order, ":team_no", grc_infantry, mordr_charge), #charge the infantry forward towards cavalry and enemy				
+			(try_end),
+				
+			 ##JL ACTIVATION of Inf Charge Mode when Inf AI has been deemed to need charge mode. Put here to activate charge immediately (not wait until next trigger).
+			(try_begin),
+				(eq, "$inf_charge_activated", 1), #if inf AI has been told to Charge
+				(eq, "$inf_charge_ongoing", 0), #and switch is false
+				(call_script, "script_formation_end", ":team_no", grc_infantry), #end any formations
+				(team_give_order, ":team_no", grc_infantry, mordr_charge), #do a Native Charge
+				(assign, "$inf_charge_ongoing", 1), #switch set to true so this function is not needed to be called again until charge mode has been disabled and a new charge has been set
+				#(display_message, "@Infantry orders are Charge, Formations Inf AI disabled"), ################
+			(try_end),
+			
+		(try_end),	#end of Infantry AI
+		
+		#cavalry AI
+		(call_script, "script_battlegroup_get_size", ":team_no", grc_cavalry),
+		(assign, ":num_cavalry", reg0),
+		(call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"), #added by JL to control grand charge and move around threat charge
+		(assign, ":grand_charge", reg0), #added by JL
+		(val_sub, ":grand_charge", 5), #added JL 6/14/2011 Grand charge lowered so that it will prefer to do flank attacks with cav.
+		(assign, ":around_charge", reg0), #added by JL
+		
+		#JL: don't place leader with infantry if there are more than 1 cavalry on the map:
+		#(try_begin),
+			#(gt, ":num_cavalry", 1),
+			#(assign, ":place_leader_by_infantry", 0), #JL, added on 2/20/2011 Kham - removed
+		#(try_end),
+		
+		#JL Patrol Mode Control
+		(store_random_in_range, ":chance", 1, 101),	#chance value that is used to assign cavalry patrols and extra aggressivness while on patrol. JL
+		(try_begin),
+			(ge, ":chance", 97), #There is 3% chance that patrol mode will activate each second
+			(neq, "$formai_patrol_mode", 1), #and if it is not already active
+			(assign, "$formai_patrol_mode", 1), #assign patrol mode to 1
+		(try_end), #End of Patrol Mode Control
+		#(val_sub, ":around_charge", 5), #if needed use to increase the odds needed to execute the move around threat and charge routine. JL
+		
+		##JL ACTIVATION OF Cavalry CHARGE:
+		(try_begin), ## Added by JL to force charge when charge is active and cavalry exists
+			(gt, ":num_cavalry", 0),
+			(eq, "$charge_activated", 1), #if Cav AI has been told to Charge
+			(eq, "$charge_ongoing", 0), #switch check
+			(call_script, "script_formation_end", ":team_no", grc_cavalry),
+			(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+			(assign, "$charge_ongoing", 1), #setting switch so this function is not called again until charge mode is turned off
+		#	(display_message, "@Cavarly Orders are now in Charge Mode; Formations Cav AI is disabled"),
+		(try_end),	
+		
+		#cavalry AI
+		(try_begin),
+			(gt, ":num_cavalry", 0),
+			
+			(call_script, "script_battlegroup_get_size", ":team_no", grc_everyone), # added by JL
+			(assign, ":perc_cav", ":num_cavalry"), #JL
+			(val_mul, ":perc_cav", 100), #get percent JL
+			(val_div, ":perc_cav", reg0), #cavalry/everyone*100 JL : used for when executing certain tactics is allowed
+			
+			#JL CHECK IF Infantry should move forward in charge movement to support an already charging Cavalry:
+			(try_begin),
+				(eq, "$charge_ongoing", 1), #if Cav AI is in Charge mode
+				(this_or_next|gt, ":enemy_from_archers", "$formai_rand3"), #and if enemy is at least 20-30 meters away from archers
+				(lt, ":perc_cav", 60), #or if there are less than 60% cavalry on the field
+				(get_distance_between_positions, ":inf_dist_to_cav", Infantry_Pos, Cavalry_Pos), #get the distance between infantry and cavalry
+				(this_or_next|le, ":enemy_from_infantry", "$formai_rand3"), #if enemy is less than or equal to 20-30m from infantry
+				(le, ":inf_dist_to_cav", 8000), #or allied cav is within 80m JL to make infantry support cavalry better (was 40m)
+				(le, ":enemy_from_cavalry", ":enemy_from_infantry"), #and enemies are closer or equally close to cavalry than they are to infantry
+				(call_script, "script_formation_end", ":team_no", grc_infantry), #Kham
+				(team_give_order, ":team_no", grc_infantry, mordr_charge), #charge the infantry	forward towards cavalry and enemy
+			(try_end),	#End JL check		
+			
+			#get distance to nearest enemy battlegroup(s)
+			(call_script, "script_battlegroup_get_level", ":team_no", grc_cavalry),
+			(assign, ":average_level", reg0),
+			(assign, ":nearest_threat_distance", Far_Away),
+			(assign, ":nearest_target_distance", Far_Away),
+			(assign, ":num_targets", 0),
+			(assign, ":num_threats", 0), # added by JL
+			(try_for_range, ":enemy_team_no", 0, 4),
+				(call_script, "script_battlegroup_get_size", ":enemy_team_no", grc_everyone),
+				(gt, reg0, 0),
+				(teams_are_enemies, ":enemy_team_no", ":team_no"),
+				(try_begin),
+					(eq, ":enemy_team_no", "$fplayer_team_no"),
+					(assign, ":num_groups", 9),
+				(else_try),
+					(assign, ":num_groups", 3),
+				(try_end),
+				(try_for_range, ":enemy_battle_group", 0, ":num_groups"),
+					(call_script, "script_battlegroup_get_size", ":enemy_team_no", ":enemy_battle_group"),
+					(assign, ":size_enemy_battle_group", reg0),
+					(gt, ":size_enemy_battle_group", 0),
+					(call_script, "script_battlegroup_get_position", pos0, ":enemy_team_no", ":enemy_battle_group"),
+					(get_distance_between_positions, ":distance_of_enemy", Cavalry_Pos, pos0),
+					(try_begin),	#threat or target?
+						(call_script, "script_battlegroup_get_weapon_length", ":enemy_team_no", ":enemy_battle_group"),
+						(assign, ":decision_index", reg0),
+						(call_script, "script_battlegroup_get_level", ":enemy_team_no", ":enemy_battle_group"),
+						(val_mul, ":decision_index", reg0),
+						(val_mul, ":decision_index", ":size_enemy_battle_group"),
+						(val_div, ":decision_index", ":average_level"),
+						(val_div, ":decision_index", ":num_cavalry"),
+						(try_begin),
+							(neq, ":enemy_battle_group", grc_cavalry),
+							(val_div, ":decision_index", 2),	#double count cavalry vs. foot soldiers
+						(try_end),
+						(gt, ":decision_index", 100),
+						(try_begin),
+							(val_add, ":num_threats", 1), #JL
+							(gt, ":nearest_threat_distance", ":distance_of_enemy"),
+							(copy_position, Nearest_Threat_Pos, pos0),
+							(assign, ":nearest_threat_distance", ":distance_of_enemy"),
+						(try_end),
+					(else_try),
+						(val_add, ":num_targets", 1),
+						(gt, ":nearest_target_distance", ":distance_of_enemy"),
+						(copy_position, Nearest_Target_Pos, pos0),
+						(assign, ":nearest_target_distance", ":distance_of_enemy"),
+					(try_end),
+				(try_end),
+			(try_end),
+			
+			(try_begin), #added by JL to eliminate {0,0} position bug when no target is detected
+				(eq, ":num_targets", 0),
+				(copy_position, Nearest_Target_Pos, Nearest_Threat_Pos),
+				(assign, ":nearest_target_distance", ":nearest_threat_distance"),
+			(try_end),
+			
+			(try_begin), #added by JL to eliminate a {0,0} Position bug when no threat is detected
+				(eq, ":num_threats", 0),
+				(copy_position, Nearest_Threat_Pos, Nearest_Target_Pos),
+				(assign, ":nearest_threat_distance", ":nearest_target_distance"),
+			(try_end),	
+
+			(try_begin), #JL Kham -  added to eliminate a {0,0} Position bug when no threat and no target is detected (e.g. the player has only companions or troops in other divisions)
+				(eq, ":num_threats", 0),
+				(eq, ":num_targets", 0),
+				(gt, ":num_cavalry", 0),
+				(assign, "$charge_activated", 1),
+				(call_script, "script_formation_end", ":team_no", grc_cavalry),
+				(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+				(assign, ":nearest_target_distance", AI_charge_distance),
+				(assign, ":nearest_threat_distance", AI_charge_distance),				
+			(try_end),
+			
+			##JL KHAM TEST -- Distances are no good in some cases (especially before casualties have occurred ...):
+			#(assign,reg10, ":cav_closest_dist"), (assign,reg11, ":nearest_target_distance"),(display_message, "@Enemy cavalry: {reg10} Target dist is: {reg11}"), ##########			
+			
+			(get_distance_between_positions, reg0, Nearest_Target_Pos, Nearest_Threat_Pos),
+			(store_div, reg1, AI_charge_distance, 2),
+			(try_begin),	#ignore target too close to threat
+				(le, reg0, reg1),
+				(gt, reg0, 0), #JL added to fix when there is no target and vice versa Kham
+				(assign, ":nearest_target_guarded", 1),
+			(else_try),
+				(assign, ":nearest_target_guarded", 0),
+			(try_end),
+
+			(assign, ":cavalry_order", mordr_charge),
+			(try_begin),
+				(teams_are_enemies, ":team_no", 0),
+				(lt, "$team1_reinforcement_stage", 2),
+				(neq, "$team1_reinforcement_stage", "$attacker_reinforcement_stage"),
+				(assign, ":cavalry_order", mordr_hold),
+			(else_try),
+				(teams_are_enemies, ":team_no", 1),
+				(lt, "$team0_reinforcement_stage", 2),
+				(neq, "$team0_reinforcement_stage", "$defender_reinforcement_stage"),
+				(assign, ":cavalry_order", mordr_hold),
+			(else_try),
+				(neq, ":infantry_order", mordr_charge),
+				(try_begin),
+					(le, "$battle_phase", BP_Jockey),
+					(assign, ":cavalry_order", mordr_hold),
+				(else_try),
+					(eq, ":nearest_target_distance", Far_Away),
+					(try_begin),
+						(eq, ":num_archers", 0),
+						(assign, ":distance_to_archers", 0),
+					(else_try),
+						(get_distance_between_positions, ":distance_to_archers", Cavalry_Pos, Archers_Pos),
+					(try_end),
+					(try_begin),
+						(this_or_next|gt, ":cav_closest_dist", AI_charge_distance),
+						(gt, ":distance_to_archers", AI_charge_distance),
+						(assign, ":cavalry_order", mordr_hold),
+					(try_end),
+				(try_end),
+			(try_end),
+			
+			
+			(try_begin), #added by JL since the above code doesn't seem to work
+				(eq, "$formai_disengage", 1), #disengage has been assigned
+				(assign, ":cavalry_order", mordr_hold),
+			(try_end),
+			
+			#JL DISENGAGEMENT RULES:
+			(try_begin), ## when any reinforcements arrive:
+				(eq, "$formai_disengage", 1), #disengage has been assigned
+				(assign, "$formai_disengage", 0), #turn off disengagement so next reinforcement checks can resume
+				(eq, "$charge_ongoing", 1), #charge is currently ongoing
+				(assign, "$charge_activated", 0), #deactivates charge mode
+				(assign, "$charge_ongoing", 0), #charge no longer ongoing
+			#	(display_message, "@AI Cavalry decided to resume maneuver because of reinforcements"),
+			(try_end),
+			
+			(try_begin), ## When there are no targets or threats near
+				(eq,"$charge_ongoing", 1),
+				(gt, ":nearest_target_distance", AI_charge_distance),
+				(gt, ":nearest_threat_distance", AI_charge_distance),
+				(assign, "$charge_activated", 0), #deactivates charge mode
+				(assign, "$charge_ongoing", 0), #resetting switch
+			#	(display_message, "@AI Cavalry decided to resume maneuver because no enemies are near"),
+			(try_end),
+			
+			#JL CONTINUE form AI IF NOT IN CHARGE MODE:
+			(eq,"$charge_activated", 0), #if charge mode is off then continue to do Cav AI, JL
+			
+			(try_begin),
+				(eq, ":team_no", 0),
+				(assign, ":cav_destination", Team0_Cavalry_Destination),
+				(assign, reg0, "$team0_percent_cavalry_are_archers"),
+			(else_try),
+				(eq, ":team_no", 1),
+				(assign, ":cav_destination", Team1_Cavalry_Destination),
+				(assign, reg0, "$team1_percent_cavalry_are_archers"),
+			(else_try),
+				(eq, ":team_no", 2),
+				(assign, ":cav_destination", Team2_Cavalry_Destination),
+				(assign, reg0, "$team2_percent_cavalry_are_archers"),
+			(else_try),
+				(eq, ":team_no", 3),
+				(assign, ":cav_destination", Team3_Cavalry_Destination),
+				(assign, reg0, "$team3_percent_cavalry_are_archers"),
+			(try_end),
+			
+			(assign, ":charging_through_target", 0), #charging through flag by JL
+			#horse archers don't use wedge
+			(try_begin),
+				(neq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and cav AI should move around threat to engage instead, even if they are horse archers.
+				(assign, ":percent_horse_archers", reg0), #Added by JL to be used for horse archer self defense further down
+				(gt, reg0, 50),
+				#(call_script, "script_formation_end", ":team_no", grc_cavalry),
+				(team_give_order, ":team_no", grc_cavalry, mordr_fire_at_will), #added by JL 3/12/11
+				(try_begin), #Kham - Removed the below block to reduce charging
+				#	(eq, ":num_archers", 0),
+				#	(assign, ":cavalry_order", mordr_charge), #added by JL
+				#	(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+				#	(display_message, "@Charging CavArch because no foot archers are present"), ################
+				#(else_try), #this else block added by JL
+					(this_or_next|gt, ":num_enemies_in_melee", 0),	 #If infantry melee is occurring
+					(this_or_next|le, ":enemy_from_infantry", AI_Self_Defence_Distance), #or if enemy is less than or equal to 10m from infantry
+					(le, ":enemy_from_archers", AI_Self_Defence_Distance),	#or enemy is less than or equal to 10m from archers
+					(assign, "$charge_activated", 1), #activate charge order
+					#(assign, ":cavalry_order", mordr_charge), #added soft charge (alert mode) JL
+					#(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+				#	(display_message, "@Alerting horse archers because melee is ongoing"), ################					
+				(else_try),
+					(team_give_order, ":team_no", grc_cavalry, ":cavalry_order"),
+					(copy_position, ":cav_destination", Archers_Pos),
+					(position_move_y, ":cav_destination", -500, 0),
+					(position_move_x, ":cav_destination", "$formai_rand0", 0), #added by JL Horse archers place themselves -10m to 10m beside the Archers. Unless in patrol then they are at -20 to 20m
+					(team_set_order_position, ":team_no", grc_cavalry, ":cav_destination"),
+				#	(display_message, "@Directing Ranged Cavalry near Archers"), ################
+				(try_end),
+				
+			#close in with no unguarded target farther off, free fight
+			(else_try),
+				(eq, ":cavalry_order", mordr_charge),
+				(le, ":cav_closest_dist", AI_charge_distance),
+				(try_begin),
+					(eq, ":num_targets", 1),
+					(eq, ":nearest_target_guarded", 0),
+					(gt, ":nearest_target_distance", ":nearest_threat_distance"),
+					(assign, reg0, 0),
+				(else_try),
+					(ge, ":num_targets", 2),
+					(eq, ":nearest_target_guarded", 1),
+					(assign, reg0, 0),
+				(else_try),
+					(assign, reg0, 1),
+				(try_end),
+				(eq, reg0, 1),
+				(team_get_movement_order, reg0, ":team_no", grc_cavalry),
+				(try_begin),
+					(neq, reg0, mordr_charge),
+					(this_or_next|eq, ":nearest_target_guarded", 1), #cav should not be distracted by enemy solo targets (unless there are new casualties) JL
+					(neq, "$cur_casualties", "$prev_casualties2"), #JL casualties incurred during last second
+					(assign, "$charge_activated", 1), #added by JL for charge control
+					(call_script, "script_formation_end", ":team_no", grc_cavalry),
+					(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+				#	(display_message, "@Closing in and charging Cav (free fight)"), ################
+				(try_end),
+				
+			#grand charge if target closer than threat AND not guarded AND odds are in favour AND we have a good sized amount of cavalry:
+			
+			(else_try),
+				(neq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and cav AI should move around threat to engage instead.
+				(ge, ":grand_charge", "$formai_rand7"), # added by JL --> decision number = battle presence + ([avg_lvl]/3)
+				(ge, ":perc_cav", 50), #if >= 50% of total AI troop size is Cavalry JL
+				(le, ":nearest_target_distance", ":nearest_threat_distance"), #JL changed lt to le in case there are no targets/threats.
+				(eq, ":nearest_target_guarded", 0),
+				(call_script, "script_formation_end", ":team_no", grc_cavalry),
+				(team_give_order, ":team_no", grc_cavalry, mordr_hold),
+			#	(display_message, "@Holding Cav before 'Grand charge'"), ################
+				#lead archers up to firing point
+				(try_begin),
+					(gt, ":nearest_target_distance", "$formai_rand6"), #changed AI_firing_distance (65m) to 40-50m to get the AI closer JL
+					(eq, ":cavalry_order", mordr_hold),
+					(try_begin),
+						(eq, ":num_archers", 0),
+						(copy_position, ":cav_destination", Cavalry_Pos),	#must be reinforcements, so gather at average position
+					(else_try),						
+						(copy_position, ":cav_destination", Archers_Pos),
+						(position_move_y, ":cav_destination", "$formai_rand3", 0), #changed AI_charge_distance to rand3 JL
+					#	(display_message, "@Leading archers up to firing point to the 'Grand charge'"), ################
+					(try_end),
+					
+				#then CHARRRRGE!
+				(else_try),
+					(copy_position, ":cav_destination", Cavalry_Pos),
+					(call_script, "script_point_y_toward_position", ":cav_destination", Nearest_Target_Pos),
+					(position_move_y, ":cav_destination", ":nearest_target_distance", 0),
+				#	(display_message, "@Grand charging cavalry agains target!"), ################
+				(try_end),
+				(team_set_order_position, ":team_no", grc_cavalry, ":cav_destination"),
+				
+				
+			#make a wedge somewhere
+			(else_try),	
+				#JL Change the odds criterion for charge around to low value if enemies are near so that the cavalry starts "surprise" flanking
+				(try_begin),
+					(neq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and cav AI should move around threat to engage instead.
+					(le, ":nearest_target_distance", 30), #if there is a target within 30m distance
+					(lt, ":around_charge", "$formai_rand7"), #and odds are bad so the cavalry will not try a flank attack on the target.
+					#(neq, "$formai_rand7", 30), #and if charge odds comparator has not been lowered already
+					(assign, "$formai_rand7", 40), #assign odds comparator to 40
+				(else_try), #otherwise:
+					(eq, "$formai_rand7", 40), #if charge odds has been lowered already
+					(store_random_in_range, "$formai_rand7", 55, 66), #put the odds comparator back to random higher value
+				(try_end), #JL
+				
+				#JL Set cavalry to aggressively move towards archers if there are 45% or more of them:
+				(try_begin),
+					(gt, ":perc_enemy_others", 60), #if enemy others constitute more than 45% of total enemy #kham - changed to 60%
+					(assign, ":cavalry_order", mordr_charge),
+					(assign, "$formai_rand7", 35), #lower the odds requirement for around charge to 35
+				(else_try),
+					(eq, "$formai_rand7", 35), #if the odds have been lowered to 35 before
+					(store_random_in_range, "$formai_rand7", 55, 66), #put the odds comparator back to random higher value
+				(try_end),
+				
+				(try_begin),
+					(gt, ":num_targets", 0), #JL Kham - To charge through a target there needs to be a target
+					(eq, ":cavalry_order", mordr_charge),
+					(copy_position, ":cav_destination", Cavalry_Pos),
+					(this_or_next|ge, ":perc_cav", 80), #if Cav size >= 80% of total AI troop size JL
+					(ge, ":around_charge", "$formai_rand7"), #or if odds are good (if odds are not good (lower than 55-65) and there are less than 80 cav --> try other tactics) added by JL					
+					(call_script, "script_point_y_toward_position", ":cav_destination", Nearest_Target_Pos),
+					(position_move_y, ":cav_destination", ":nearest_target_distance", 0), 
+					(position_move_y, ":cav_destination", AI_charge_distance, 0),
+					(assign, ":charging_through_target", 1), #charging through flag by JL
+				#	(display_message, "@'Charging' Cav through target to other side"), ################
+				(else_try),
+					(neq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and cav AI should move around threat to engage instead.
+					(gt, ":num_archers", 0),
+					(copy_position, ":cav_destination", Archers_Pos),	#hold near archers
+					(position_move_x, ":cav_destination", "$formai_rand0", 0), #changed 500 to $formai_rand0 (-10m to 10m right/left) JL
+					(position_move_y, ":cav_destination", "$formai_rand1", 0), #added (0m to 5m infront) JL
+					(try_begin), #move cavalry as a patrol 3% chance every second JL
+						(ge, ":chance", 97), #JL
+						(store_random_in_range, "$formai_rand0", -2000, 2000), #x-factor update to -20/20 JL
+						(position_move_x, ":cav_destination", "$formai_rand0", 0), #patrol positioning JL
+						(position_move_y, ":cav_destination", "$formai_rand1", 0), #added another temporary (0m to 5m infront) JL
+					(try_end),
+				#	(display_message, "@Holding Cav near archers"), ################
+				(else_try), #if no archers are present hold near infantry JL
+					(neq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and cav AI should move around threat to engage instead.
+					(gt, ":num_infantry", 0),
+					(copy_position, ":cav_destination", Infantry_Pos),	#hold near infantry JL
+					(position_move_x, ":cav_destination", "$formai_rand0", 0), #changed 500 to $formai_rand0 (-10m to 10m right/left) JL
+					(position_move_y, ":cav_destination", "$formai_rand1", 0), #added (0m to 5m infront) JL
+					(try_begin), #move cavalry as a patrol 3% every scond JL
+						(ge, ":chance", 97), #JL
+						(store_random_in_range, "$formai_rand0", -2000, 2000), #x-factor update JL
+						(position_move_x, ":cav_destination", "$formai_rand0", 0), #patrol positioning JL
+						(position_move_y, ":cav_destination", "$formai_rand1", 0), #added another (0m to 5m infront) JL
+					(try_end),					
+				#	(display_message, "@Holding Cav near infantry"), ################
+				(else_try), #JL
+					(gt, ":num_targets", 0), #JL Kham - To charge through a target there needs to be a target
+					(eq, ":cavalry_order", mordr_charge), #cavalry are in charge order JL
+					(lt, ":around_charge", "$formai_rand7"), #and odds are bad (but there is only cavalry on the field) JL
+					(call_script, "script_point_y_toward_position", ":cav_destination", Nearest_Target_Pos),
+					(position_move_y, ":cav_destination", ":nearest_target_distance", 0), 
+					(position_move_y, ":cav_destination", AI_charge_distance, 0),
+					(assign, ":charging_through_target", 1), #charging through flag by JL
+				#	(display_message, "@'Charging' Cav through target to other side despite low odds"), ################
+				(else_try), #JL Kham
+					(eq, ":num_targets", 0), #JL Kham - if there are no targets, then move straight at the threat to engage
+					(assign, ":charging_through_target", 2), #JL Kham- new to make sure the silly Cav actually charges the threat better
+					(call_script, "script_point_y_toward_position", ":cav_destination", Nearest_Threat_Pos),
+					(position_move_y, ":cav_destination", ":nearest_threat_distance", 0), 
+					(position_move_y, ":cav_destination", AI_charge_distance, 0),	#charge on through to the other side of threat		
+				#	(display_message, "@'Charging' Cav through threat because there are no targets!!"), ################
+				(else_try), #cavalry order must be mordr_hold, so:
+					(copy_position, ":cav_destination", Cavalry_Pos), #must be reinforcements, so gather at average position
+				#	(display_message, "@Cav moving to average position"), ################	
+				(try_end),			
+
+				#move around threat in the way to destination
+				(try_begin),
+					(gt, ":num_threats", 0), #there must be a threat if we are to move around it -- JL
+					(gt, ":num_targets",0), #and if there needs to be a target, otherwise it is not good to go around because the cav will veer and be at disadvantage! Kham
+					(call_script, "script_point_y_toward_position", Cavalry_Pos, Nearest_Threat_Pos),
+					(call_script, "script_point_y_toward_position", Nearest_Threat_Pos, ":cav_destination"),
+					(position_get_rotation_around_z, reg0, Cavalry_Pos),
+					(position_get_rotation_around_z, reg1, Nearest_Threat_Pos),
+					(store_sub, ":rotation_diff", reg0, reg1),
+					(try_begin),
+						(lt, ":rotation_diff", -180),
+						(val_add, ":rotation_diff", 360),
+					(else_try),
+						(gt, ":rotation_diff", 180),
+						(val_sub, ":rotation_diff", 360),
+					(try_end),
+					
+					(try_begin),
+						(is_between, ":rotation_diff", -135, 136),
+						(copy_position, ":cav_destination", Cavalry_Pos),
+						(assign, ":distance_to_move", AI_firing_distance),
+					#	(display_message, "@Rotation is between -135 and 135"), ################
+						(try_begin),	#target is left of threat
+							(is_between, ":rotation_diff", -135, 0),
+							(val_mul, ":distance_to_move", -1),
+					#		(display_message, "@Move around: target is left of threat"), ################
+						(try_end),
+						(position_move_x, ":cav_destination", ":distance_to_move", 0),
+						(store_sub, ":distance_to_move", ":nearest_threat_distance", AI_firing_distance),
+						(position_move_y, ":cav_destination", ":distance_to_move", 0),
+						(call_script, "script_point_y_toward_position", ":cav_destination", Cavalry_Pos),
+						(position_rotate_z, ":cav_destination", 180),
+					(try_end),
+				(try_end),
+				(get_scene_boundaries, pos0, pos1),
+				(position_get_x, reg0, ":cav_destination"),
+				(position_get_x, reg1, pos0),
+				(val_max, reg0, reg1),
+				(position_get_x, reg1, pos1),
+				(val_min, reg0, reg1),
+				(position_set_x, ":cav_destination", reg0),
+				(position_get_y, reg0, ":cav_destination"),
+				(position_get_y, reg1, pos0),
+				(val_max, reg0, reg1),
+				(position_get_y, reg1, pos1),
+				(val_min, reg0, reg1),
+				(position_set_y, ":cav_destination", reg0),
+	
+				(position_set_z_to_ground_level, ":cav_destination"),
+				(call_script, "script_set_formation_position", ":team_no", grc_cavalry, ":cav_destination"),
+				(copy_position, pos1, ":cav_destination"),
+				(call_script, "script_form_cavalry", ":team_no", ":team_leader", 0),
+				(try_begin),
+					(ge, reg0, formation_min_cavalry_troops),
+					(team_give_order, ":team_no", grc_cavalry, mordr_hold),
+				#	(display_message, "@Gathering Cavalry to go around threat"), ################
+				(else_try),
+					(call_script, "script_formation_end", ":team_no", grc_cavalry),
+					(team_give_order, ":team_no", grc_cavalry, ":cavalry_order"),
+					(team_set_order_position, ":team_no", grc_cavalry, ":cav_destination"),
+				#	(display_message, "@Directing Cav Around Threat"), ################
+				(try_end),
+			(try_end),
+			
+			 #GENERAL RULES of ENGAGEMENT by JL:			 
+			# (store_random_in_range, ":imp_charge", 1, 101), #Impetousness factor (random value between 1 to 100) JL 
+			 
+			 #If Target is Near And [Charge Ordered] and not charging through target then if ... Start offensive Charge otherwise let Cavalry charge through
+			(try_begin),
+				(le, ":nearest_target_distance", AI_charge_distance), #if there is a target within charge distance (or threat if there is no target)
+				(eq, ":cavalry_order", mordr_charge), #and cav orders are to charge
+				(eq, ":charging_through_target", 0), #and not charging through target -- take this away if cavalry is suddenly stopping Kham - added
+				(try_begin),  # if AI has 50% or more cavalry
+					(this_or_next|gt, ":nearest_threat_distance", AI_charge_distance), #if there is no threat within charge distance
+					(ge, ":perc_cav", 50), #or if Cavalry >= 50% of total AI troop size JL
+					(assign, "$charge_activated", 1), #then charge
+				#	(display_message,"@Cavalry charge ordered because target is within charge distance."), ##############
+				(else_try), #if AI has 20% or more cavalry and one of its other troop types is close to the enemy
+					(ge, ":perc_cav", 20), #if Cavalry >= 20% of total AI troop size JL
+					(try_begin), #then if
+						(this_or_next|le, ":enemy_from_infantry", "$formai_rand3"), #if enemy is less than or equal to 20m to 30m from infantry
+						(this_or_next|le, ":enemy_from_archers", "$formai_rand3"),	#or enemy is less than or equal to 20m to 30m from archers
+					#	(ge, ":imp_charge", 97), #there is 4% chance every second that the cavalry will charge anyway because of impetousness
+						(assign, "$charge_activated", 1), #then charge
+					#	(display_message,"@Cavalry charge ordered because target is within charge distance."), ##############
+					(try_end),
+				(else_try), #if less than 20% cavalry only counter charge if other troops are ordered to charge or melee is ongoing
+					(this_or_next|gt, ":num_enemies_in_melee", 0),	 #If inf melee is occurring
+					(this_or_next|eq, ":infantry_order", mordr_charge), #or infantry order is to charge
+					(this_or_next|eq, ":archer_order", mordr_charge), #or archer orders are to charge
+					(this_or_next|le, ":enemy_from_infantry", AI_Self_Defence_Distance), #if enemy is less than or equal to 10m from infantry
+					(this_or_next|le, ":enemy_from_archers", AI_Self_Defence_Distance),	#or enemy is less than or equal to 10m from archers					
+				#	(ge, ":imp_charge", 99), #there is 2% chance every second that the cavalry will charge anyway because of impetousness
+					(assign, "$charge_activated", 1), #then charge
+				#	(display_message,"@Cavalry charge ordered because target is within charge distance."), ##############
+				(try_end),
+			(try_end),
+			
+			#If a threat or a target is within charge distance And ([casualties have been inflicted recently] Or [nearest target is guarded And Cavalry is holding]), then start a Counter Charge
+			(try_begin),
+				(this_or_next|le, ":nearest_target_distance", AI_charge_distance), #if there is a target within charge distance
+				(this_or_next|le, ":nearest_threat_distance", AI_charge_distance), #or if there is a threat within charge distance
+				(le, ":cav_closest_dist","$formai_rand3"), #nearest enemy cavalry is within charge distance JL Jun28b
+				(eq, ":charging_through_target", 0), #and not charging through target - if AI is too passive, then remove this line <-- Kham
+				(try_begin),
+					(neq, "$cur_casualties","$prev_casualties2"), #if there are very recent casualties then charge because someone is harming someone
+					#(ge, ":imp_charge", 50), #there is 50% chance that the cavalry will charge because of impetousness
+					(assign, "$charge_activated", 1),
+				#	(display_message,"@Enemies are close to cavalry and casualties have recently been inflicted. Counter-Charging cavalry."), #############
+				(else_try), #if no casualties have occurred recently then immobile cavalry still needs to charge
+					(neq, ":nearest_target_guarded", 0), #if the nearest target is not an unguarded target
+					(eq, ":cavalry_order", mordr_hold), #and if Cav order is hold
+					(assign, "$charge_activated", 1),
+				#	(display_message,"@Enemies are close to cavalry and cavalry is standing still. Ordering cavalry to do a counter charge."), #############
+				#(else_try), <-- This block removed - Kham
+					#(ge, ":imp_charge", 97), #there is 4% chance every second that the cavalry will charge anyway because of impetousness
+					#(eq, ":cavalry_order", mordr_hold), #and if Cav order is hold
+					#(assign, "$charge_activated", 1),					
+				(try_end),
+			(try_end),
+			
+			#extra pre-emptive defence for cavalry if cavalry is holding (defensive stance) or odds are low:
+			(try_begin),
+				(this_or_next|eq, ":cavalry_order", mordr_hold), #if Cav order is hold
+				(lt, ":around_charge", 50), #or the odds are low
+				#(eq, ":nearest_target_guarded", 1), #and if the nearest target is guarded
+				(try_begin),
+					(this_or_next|le, ":enemy_from_infantry", "$formai_rand3"), #if enemy is less than or equal to 20-30m from infantry
+					(this_or_next|le, ":enemy_from_cavalry", "$formai_rand3"), #or enemy is less than or equal to 20-30m from cavalry	
+					(le, ":enemy_from_archers", "$formai_rand3"),	#or enemy is less than or equal to 20-30m from archers	
+					(assign, "$charge_activated", 1),
+				#	(display_message,"@Enemies are close to AI and cavalry is standing still. Ordering cavalry to do a counter charge."), #############
+				#JL Patrol Mode if cavalry is on hold:
+				(else_try), #if chance >= 97 then cavalry is in patrol mode. 
+					(eq, "$formai_patrol_mode", 1), #cavalry is in patrol mode with heightened alert against enemy cavalry
+					(try_begin),
+						(le, ":cav_closest_dist", 4000), #any enemy cavalry is less than or equal to 40m from
+						(le, ":cav_closest_dist", ":enemy_from_cavalry"), #and nearest [enemy cavalry] is less than or at equal distance as the nearest enemy group is from the VI cavalry
+						(this_or_next|gt, ":enemy_from_infantry", "$formai_rand3"), #and enemy is at least 20-30m away from VI infantry
+						(gt, ":enemy_from_archers", "$formai_rand3"),	#or enemy is less than or equal to 20-30m from archers						
+						(try_begin), #start moving to either nearest threat or nearest target:
+							(eq, ":nearest_threat_distance", ":cav_closest_dist"), #if nearest threat distance is equal to nearest enemy cavalry
+							(copy_position, ":cav_destination", Cavalry_Pos),
+							(call_script, "script_point_y_toward_position", ":cav_destination", Nearest_Threat_Pos),
+							(position_move_y, ":cav_destination", ":nearest_threat_distance", 0),
+							(position_move_y, ":cav_destination", AI_Self_Defence_Distance, 0),	#"charge" on through to the other side of the threat/target cavalry--	changed 20m to 10m Kham
+						(else_try),
+							(call_script, "script_point_y_toward_position", ":cav_destination", Nearest_Target_Pos),
+							(position_move_y, ":cav_destination", ":nearest_target_distance", 0),
+							(position_move_y, ":cav_destination", AI_Self_Defence_Distance, 0),	#"charge" on through to the other side of the threat/target cavalry--	changed 20m to 10m Kham					
+						(try_end),
+						(try_begin), #charge if in patrol mode and enemy is near
+							(this_or_next|le, ":cav_closest_dist", AI_charge_distance), #if enemy cav is within charge distance, then charge
+							(this_or_next|le, ":nearest_target_distance", AI_charge_distance), #or if enemy target is within charge distance, then charge
+							(le, ":nearest_threat_distance", AI_charge_distance), #or if enemy threat is within charge distance, then charge
+							(assign, "$charge_activated", 1), #do a full charge	
+						(try_end),
+					(else_try),
+						(assign, "$formai_patrol_mode", 0), #puts patrol mode back to 0 if the conditions are not met
+						(this_or_next|le, ":cav_closest_dist", AI_charge_distance), #if enemy cav is within charge distance, then charge
+						(this_or_next|le, ":nearest_target_distance", AI_charge_distance), #or if enemy target is within charge distance, then charge
+						(le, ":nearest_threat_distance", AI_charge_distance), #or if enemy threat is within charge distance, then charge
+						(assign, "$charge_activated", 1), #do a full charge							
+					(try_end),
+				(try_end),	#JL					
+			(try_end),
+			
+			#JL Extra self defense/offense for Archer Cavalry: If enemy is near Then Charge
+			(try_begin),
+				#(eq, ":cavalry_order", mordr_hold), #if Cav order is hold
+				(gt, ":percent_horse_archers",50),
+				#(display_message,"@Checking Held Cavalry for Self-Defense."), ##############
+				(try_begin),
+					(this_or_next|le, ":nearest_target_distance", "$formai_rand3"), #Nearest threat is 20-30m away
+					(this_or_next|le, ":nearest_threat_distance", "$formai_rand3"), #or nearest target is 20-30m away
+					(this_or_next|le, ":enemy_from_cavalry", "$formai_rand3"), #or enemy is less than or equal to 20-30m from cavalry
+					(this_or_next|le, ":enemy_from_infantry", "$formai_rand3"), #or enemy is less than or equal to 20-30m away from infantry
+					(this_or_next|le, ":enemy_from_archers", "$formai_rand3"),	#or enemy is less than or equal to 20-30m away from archers						
+					(le, ":cav_closest_dist","$formai_rand3"), #nearest enemy cavalry is within charge distance JL Kham
+					(assign, "$charge_activated", 1),
+				#	(display_message,"@Horse Archers ordered to Charge because enemy is within self defense distance."), ##############
+				(try_end),
+			(try_end),			
+			
+			#JL start charge mode if charging through and target is within 20 m and threat is not as close as target:
+			(try_begin),
+				(eq, ":charging_through_target", 1), #cavalry is set to charge through (around threat and towards target)
+				(le, ":nearest_target_distance", AI_charge_distance), #if there is a target within charge distance (or threat if there is no target)
+				(ge, ":nearest_threat_distance", ":nearest_target_distance"), #and the target is closer than the threat
+				(call_script, "script_formation_end", ":team_no", grc_cavalry),
+				(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+			#	(display_message,"@Targets are close to cav: Charging cavalry into and through target."), #############
+				#permanent charge if infantry or archers are in charge mode, added Kham
+				(try_begin),
+					(this_or_next|eq, "$inf_charge_activated", 1), #if infantry is hard charging
+					(this_or_next|eq, "$arc_charge_activated", 1), #or archers are hard charging
+					#(ge, ":imp_charge", 90), #there is a 10% chance that they will perma charge in this situation so around 10 seconds of activity and then a charge ensues. <-Jun18 update
+					(assign, "$charge_activated", 1), #tell cavalry to stop formations and charge hard 
+				#	(display_message,"@Targets are close to cav and foot soldiers need support. Charging through permanently."), #############
+				(try_end),				
+			(try_end),
+			
+			#JL added Jun28 3.303: If the enemy number of alive agents on the field are 10 or fewer then charge cavalry fully (regardless of other circumstances).
+			(try_begin),			
+				(lt, ":num_enemies", 11),
+				(assign, "$charge_activated", 1), #tell cavalry to charge hard
+			#	(display_message,"@Less than 10 enemies. Charging all cavalry."), #############
+			(try_end),
+			
+			#JL added Jun28 3.303 start charge mode if charging through threat (no targets avaialble) and threat is within 40 m:
+			(try_begin),
+				(eq, ":charging_through_target", 2), #cavalry is set to charge through (around threat and towards target)
+				(this_or_next|le, ":nearest_threat_distance", "$formai_rand3"), #nearest threat is 20-30m away
+				(le, ":cav_closest_dist","$formai_rand3"), #nearest enemy cavalry is within charge distance Jun28b
+				(assign, "$charge_activated", 1), #tell cavalry to charge hard
+			#	(display_message,"@No targets available and threat is 40m away. Charging cavalry to meet threat properly."), #############
+			(try_end),
+			
+			
+			# JL Charge mode ACTIVATOR to make charge take effect immediately:
+			(try_begin), ## Charge mode controller to make charge take effect immediately:
+				(gt, ":num_cavalry", 0),
+				(eq, "$charge_activated", 1),
+				(eq, "$charge_ongoing", 0), #switch check
+				(call_script, "script_formation_end", ":team_no", grc_cavalry),
+				(team_give_order, ":team_no", grc_cavalry, mordr_charge),
+				(assign, "$charge_ongoing", 1), #setting switch so this function is not called again until charge mode is turned off
+			#	(display_message, "@Cavalry Charge Mode Active Formations Cav AI is disabled"),
+			(try_end), #JL		
+		(try_end), #end of Cav AI
+
+
+
+		#put leader in duel or place leader -- JL added code for put leader in duel
+		(try_begin),
+			#basic conditions:
+			(ge, ":team_leader", 0), #The current team must have a leader
+			(agent_is_alive, ":team_leader"), #and the team leader must be alive
+			#(agent_slot_eq, ":team_leader", slot_agent_is_running_away, 0), #and the leader must not be running away ... will never happen
+			(store_agent_hit_points, ":leader_hp", ":team_leader"), #gets leaders hit point percent
+			(ge, ":leader_hp", 25), #and AI leader has more than 25% hit points (- he'll not want to duel any more when he's too wounded)
+			(get_player_agent_no, "$fplayer_agent_no"), #get the player agent ID
+			(agent_is_alive, "$fplayer_agent_no"), #and the player has to be alive
+			(teams_are_enemies, "$fplayer_team_no", ":team_no"), #JL: the current VI team needs to be a hostile to the player's team
+			#(gt, ":nearest_threat_distance", 3000), #and if there is no cavalry threat within 30m
+			#(eq, ":enemy_nearest_gen_agent", "$fplayer_agent_no"), #and the nearest enemy unit (in relation to either AI inf or cav) must be the player character
+			#(eq, ":nearest_target_guarded", 0), #and the nearest cavalry target is unguarded
+			#if basic conditions are met then 
+			(agent_get_position, pos17, "$fplayer_agent_no"), #get the position of the player
+			(agent_get_position, pos18, ":team_leader"),	#get position of AI leader
+			(get_distance_between_positions, ":duel_distance", pos18, pos17), #get the (duel) distance between AI leader and player
+			(le, ":duel_distance", 3000), #if duel distance is 30m or less
+		#	(display_message, "@Team leader moves towards the player"),
+			(agent_set_scripted_destination, ":team_leader", pos17, 1),
+			(try_begin),
+				(le, ":duel_distance",2500), #if duel distance is 25m or less
+				#(agent_ai_set_always_attack_in_melee, ":team_leader", 1), #set the leader to offensive mode?
+				(agent_clear_scripted_mode, ":team_leader"),
+				(agent_set_division, ":team_leader", grc_heroes), #set the leader to group 3 (= grc_heroes)
+				(team_give_order, ":team_no", grc_heroes, mordr_charge), #charge any heroes (the leader). This overrides the movement to player position.
+		#		(display_message, "@Team leader charges the player"),
+			(try_end),
+		(else_try),
+			#---------------Normal form AI code for placing leader -- JL: let leader be in scripted mode before the fight starts only. And the leader primarily follows his cavalry if leader is on horse and has cavalry
+			(ge, ":team_leader", 0),
+			(agent_is_alive, ":team_leader"),
+
+				(try_begin), #JL Kham added block to get rid of straying lords				
+					(agent_get_horse, ":agent_horse_id", ":team_leader"),
+					(ge, ":agent_horse_id", 0),			
+					(agent_set_division, ":team_leader", grc_cavalry), #set the leader to cav
+				(else_try),
+					(agent_set_division, ":team_leader", grc_infantry), #set the leader to inf
+				(try_end),
+			
+			(try_begin),
+				(lt, "$battle_phase", BP_Fight), #JL
+				(gt, ":num_cavalry", 1), #JL: at least 2 cavalry (including leader)
+				(agent_get_horse, ":agent_horse_id", ":team_leader"), #JL
+				(ge, ":agent_horse_id", 0), #JL
+				(copy_position, pos18, Cavalry_Pos), #JL
+				(position_copy_rotation, pos18, Cavalry_Pos), #JL Kham
+				#(position_move_x, pos18, "$formai_rand8", 0), #JL: put leader -1m to +1 in x-direction relative to cavalry position
+				(agent_set_scripted_destination, ":team_leader", pos18, 1), #JL
+			#	(display_message, "@Team leader positions with cavalry"),
+			(else_try),
+				(lt, "$battle_phase", BP_Fight), #JL
+				(gt, ":num_infantry", 0),
+				#(neq, ":place_leader_by_infantry", 0), #MAY HAVE TO REMOVE THIS LINE IF BUG PERSISTS.
+				#(agent_slot_eq, ":team_leader", slot_agent_is_running_away, 0), #THIS LINE CAN BE COMMENTED OUT
+				(copy_position, pos18, Infantry_Pos), #JL Kham: commented out the lines that were using pos61 because pos61 may be corrupted by other code
+				(position_copy_rotation, pos18, Infantry_Pos), #JL Kham
+				(agent_set_scripted_destination, ":team_leader", pos18, 1), #JL Kham: commented out the lines that were using pos61 because pos61 may be corrupted by other code
+				#(position_move_x, pos61, 100, 0),
+				#(agent_set_scripted_destination, ":team_leader", pos61, 1),
+			(else_try), #JL Kham: simplified and moved after checking on infantry
+				(lt, "$battle_phase", BP_Fight),
+				(gt, ":num_archers", 0),
+				(copy_position, pos18, Archers_Pos),
+				(position_copy_rotation, pos18, Archers_Pos),
+				(position_move_y, pos18, 1000, 0),
+				(agent_set_scripted_destination, ":team_leader", pos18, 1),			
+			(else_try), #if we are in battle phase or if none of the above applied
+				(agent_clear_scripted_mode, ":team_leader"),
+				(agent_get_division, ":leader_div", ":team_leader"), #JL Kham added the following code for the team leader:
+				(eq, ":leader_div", grc_heroes),
+				(try_begin),				
+					(agent_get_horse, ":agent_horse_id", ":team_leader"),
+					(ge, ":agent_horse_id", 0),			
+					(agent_set_division, ":team_leader", grc_cavalry), #set the leader to cav
+				(else_try),
+					(agent_set_division, ":team_leader", grc_infantry), #set the leader to inf
+				(try_end),
+		#		(display_message, "@Team leader cleared of scripted mode"),
+			(try_end),
+			#--------------End Original form AI code
+		(try_end),
+	(try_end)
+	]),
+
+] or [
+
+# MB Version of Field Melee Tactics - Kham
+# script_team_field_melee_tactics by motomataru
   # Input: AI team, size relative to largest team in %, size relative to battle in %
   # Output: none
   ("team_field_melee_tactics", [
@@ -782,8 +2063,7 @@ formAI_scripts = [
 		#JL: don't place leader with infantry if there are more than 1 cavalry on the map:
 		(try_begin),
 			(gt, ":num_cavalry", 1),
-			(assign, ":place_leader_by_infantry", 0), #JL, added on 2/20/2011 PoP3.3
-		(try_end),
+			(assign, ":place_leader_by_infantry", 0), #JL, Kham
 		
 		#JL Patrol Mode Control
 		(store_random_in_range, ":chance", 1, 101),	#chance value that is used to assign cavalry patrols and extra aggressivness while on patrol. JL
@@ -1402,6 +2682,7 @@ formAI_scripts = [
 	(try_end)
 	]),
 
+]) + [
 	  
   # script_field_tactics by motomataru
   # Input: flag 1 to include ranged
@@ -1551,6 +2832,7 @@ formAI_scripts = [
 	(try_for_agents,":cur_agent"),
 	    (try_begin),
 			(this_or_next|agent_is_wounded, ":cur_agent"),
+			#(this_or_next|agent_slot_eq, ":cur_agent", slot_agent_is_running_away, 1),
 			(neg|agent_is_alive, ":cur_agent"),
 			(val_add, ":num_casualties", 1),
 		(try_end),
@@ -1844,8 +3126,8 @@ formAI_scripts = [
 	(assign, reg0, ":distance_to_nearest_enemy_battlegoup")
   ]),
 
-# #Formations Scripts	  
-  # script_cf_formation v2 by motomataru
+# #Formations Scripts - EDITED by Kham to implement WB versions
+  # script_cf_formation v2 by motomataru #Kham - Edited
   # Input: team, troop class, spacing, formation type
   # Output: reg0 number of troops in formation, pos61 formation position
   # Formation(s) form near team leader (player)
@@ -1861,12 +3143,10 @@ formAI_scripts = [
 	(agent_get_position, pos1, ":fleader"),
 	(try_begin),
 		(eq, "$autorotate_at_player", 1),
-		(call_script, "script_team_get_position_of_enemies", pos60, ":fteam", grc_everyone),
+		(call_script, "script_team_get_average_position_of_enemies_augmented", pos60, ":fteam", grc_everyone),
 		(neq, reg0, 0),	#more than 0 enemies still alive?
 		(call_script, "script_point_y_toward_position", pos1, pos60),
 	(try_end),
-	(call_script, "script_battlegroup_get_size", ":fteam", ":fclass"),
-	(assign, ":num_troops", reg0),
 	(try_begin),
 		(eq, ":fclass", grc_cavalry),
 		(position_move_x, pos1, 500),		#cavalry set up 5m RIGHT of leader
@@ -1877,42 +3157,41 @@ formAI_scripts = [
 		(position_move_x, pos1, -100),		#infantry set up 1m LEFT of leader
 		(copy_position, pos61, pos1),
 		(call_script, "script_form_infantry", ":fteam", ":fleader", ":formation_extra_spacing", ":fformation"),
-		(call_script, "script_get_centering_amount", ":fformation", ":num_troops", ":formation_extra_spacing"),
-		(val_mul, reg0, -1),
-		(position_move_x, pos61, reg0, 0),
 	(else_try),
 		(position_move_y, pos1, 1000),		#archers set up 10m FRONT of leader
-		(copy_position, pos61, pos1),
+		#preadjust in order to use sequential algorithm
+		(assign, ":num_troops", 0),
+		(try_for_agents, ":agent"),
+			(call_script, "script_cf_valid_formation_member", ":fteam", grc_archers, ":fleader", ":agent"),
+			(val_add, ":num_troops", 1),
+		(try_end),	
 		(call_script, "script_get_centering_amount", formation_default, ":num_troops", ":formation_extra_spacing"),
 		(val_mul, reg0, -1),
 		(position_move_x, pos1, reg0, 0),
+		(copy_position, pos61, pos1),
 		(call_script, "script_form_archers", ":fteam", ":fleader", ":formation_extra_spacing", "$archer_formation_type"),
 	(try_end),
 	(try_begin),
 		(eq, ":fclass", grc_cavalry),
 		(try_begin),
-			(ge, ":num_troops", formation_min_cavalry_troops),
+			(ge, reg0, formation_min_cavalry_troops),
 			(assign, ":formed_up", 1),
 		(else_try),
 			(assign, ":formed_up", 0),
 		(try_end),
 	(else_try),
-		(this_or_next|eq, ":fclass", grc_infantry),
-		(eq, ":fclass", grc_archers),
 		(try_begin),
-			(ge, ":num_troops", formation_min_foot_troops),
+			(ge, reg0, formation_min_foot_troops),
 			(assign, ":formed_up", 1),
 		(else_try),
 			(assign, ":formed_up", 0),
 		(try_end),
-	(else_try),	#unsupported division
-		(assign, ":formed_up", 0),
 	(try_end),
 #	(team_set_order_position, ":fteam", ":fclass", pos61),
 	(call_script, "script_set_formation_position", ":fteam", ":fclass", pos61),
-	(assign, reg0, ":num_troops"),
 	(eq, ":formed_up", 1),
   ]),
+
    
   # script_form_cavalry v2 by motomataru
   # Input: team, agent number of team leader, spacing
@@ -2009,7 +3288,7 @@ formAI_scripts = [
 	(assign, reg0, ":troop_count")
   ]),
 	   
-  # script_form_infantry v2 by motomataru
+  # script_form_infantry v2 by motomataru #Kham - edited
   # Input: (pos1), team, agent number of team leader, spacing, formation
   # Output: reg0 troop count
   # If input "formation" is formation_default, will select a formation based on faction
@@ -2022,9 +3301,12 @@ formAI_scripts = [
 	(store_mul, ":extra_space", ":formation_extra_spacing", 50),
 	(store_add, ":distance", formation_minimum_spacing, ":extra_space"),		#minimum distance between troops	
 	(store_mul, ":neg_distance", ":distance", -1),
-	(call_script, "script_battlegroup_get_size", ":fteam", grc_infantry),
-	(assign, ":num_troops", reg0),	
-	(assign, ":troop_count", reg0),
+	(assign, ":num_troops", 0),
+    (try_for_agents, ":agent"),
+		(call_script, "script_cf_valid_formation_member", ":fteam", grc_infantry, ":fleader", ":agent"),
+		(val_add, ":num_troops", 1),
+	(try_end),
+	(assign, ":troop_count", ":num_troops"),	
 	(try_begin),
 		(eq, ":infantry_formation", formation_default),
 		(call_script, "script_get_default_formation", ":fteam"),
@@ -2447,15 +3729,14 @@ formAI_scripts = [
   ]),
 
 
-  # script_formation_current_position by motomataru
-  # Input: destination position, team, troop class, formation type, extra spacing
+ # script_formation_current_position by motomataru #Kham - Edited
+  # Input: destination position, team, troop class, team leader, formation type
   # Output: in destination position
   ("formation_current_position", [
 	(store_script_param, ":fposition", 1),
 	(store_script_param, ":fteam", 2),
 	(store_script_param, ":fclass", 3),
 	(store_script_param, ":fformation", 4),
-	(store_script_param, ":formation_extra_spacing", 5),
 	(call_script, "script_get_first_formation_member", ":fteam", ":fclass", ":fformation"),
 	(assign, ":first_agent_in_formation", reg0),
 	(call_script, "script_get_formation_position", pos0, ":fteam", ":fclass"),
@@ -2465,23 +3746,12 @@ formAI_scripts = [
 	(else_try),
 		(agent_get_position, ":fposition", ":first_agent_in_formation"),
 		(position_copy_rotation, ":fposition", pos0),
-		(call_script, "script_battlegroup_get_size", ":fteam", ":fclass"),
-		(assign, ":num_troops", reg0),
-		(try_begin),
-			(eq, ":fclass", grc_archers),
-			(call_script, "script_get_centering_amount", formation_default, ":num_troops", ":formation_extra_spacing"),
-		(else_try),
-			(call_script, "script_get_centering_amount", ":fformation", ":num_troops", ":formation_extra_spacing"),
-			(val_mul, reg0, -1),
-		(try_end),
-		(position_move_x, ":fposition", reg0, 0),
 	(try_end),
   ]),
-  
-  
-  # script_get_centering_amount by motomataru
+
+
+  # script_get_centering_amount by motomataru #Kham - Edited
   # Input: formation type, number of infantry, extra spacing
-  #        Use formation type formation_default to use script for archer line
   # Output: reg0 number of centimeters to adjust x-position to center formation
   ("get_centering_amount", [
 	(store_script_param, ":troop_formation", 1),
@@ -2493,9 +3763,9 @@ formAI_scripts = [
 	(try_begin),
 		(eq, ":troop_formation", formation_square),
 		(convert_to_fixed_point, ":num_troops"),
-		(store_sqrt, reg0, ":num_troops"),
-		(val_mul, reg0, ":troop_space"),
-		(convert_from_fixed_point, reg0),
+		(store_sqrt, ":square_dimension", ":num_troops"),
+		(convert_from_fixed_point, ":square_dimension"),
+		(store_mul, reg0, ":square_dimension", ":troop_space"),
 		(val_sub, reg0, ":troop_space"),
 	(else_try),
 		(this_or_next|eq, ":troop_formation", formation_ranks),
@@ -2511,6 +3781,28 @@ formAI_scripts = [
   ]),
 
   
+ ] + (is_a_wb_script==1 and [
+
+ # script_formation_end #Kham - Edited
+  # Input: team, troop class
+  # Output: none
+  ("formation_end", [
+	(store_script_param, ":fteam", 1),
+	(store_script_param, ":fclass", 2),
+	(try_for_agents, ":agent"),
+		(agent_is_alive, ":agent"),
+		(agent_is_human, ":agent"),
+		(agent_get_team, ":team", ":agent"),
+		(eq, ":team", ":fteam"),
+		(call_script, "script_classify_agent", ":agent"),
+		(this_or_next|eq, reg0, ":fclass"), 
+		(eq, ":fclass", grc_everyone), 
+		(agent_clear_scripted_mode, ":agent"),
+	(try_end)
+  ]),
+
+] or [
+
   # script_formation_end
   # Input: team, troop class
   # Output: none
@@ -2529,24 +3821,26 @@ formAI_scripts = [
 	(try_end)
   ]),
 
+]) + [
 
-  # script_formation_move_position v2 by motomataru
-  # Input: team, troop class, formation current position, formation type, extra spacing, (1 to advance or -1 to withdraw or 0 to redirect)
-  # Output: pos1 (offset for centering)
+ # script_formation_move_position v2 by motomataru #Kham - Edited
+  # Input: team, troop class, formation type, formation current position, (1 to advance or -1 to withdraw or 0 to redirect)
+  # Output: pos1
   ("formation_move_position", [
 	(store_script_param, ":fteam", 1),
 	(store_script_param, ":fclass", 2),
 	(store_script_param, ":fcurrentpos", 3),
-	(store_script_param, ":fformation", 4),
-	(store_script_param, ":formation_extra_spacing", 5),
-	(store_script_param, ":direction", 6),
+	(store_script_param, ":direction", 4),
 	(copy_position, pos1, ":fcurrentpos"),
-	(call_script, "script_team_get_position_of_enemies", pos60, ":fteam", grc_everyone),
+	(call_script, "script_team_get_average_position_of_enemies_augmented", pos60, ":fteam", grc_everyone),
 	(try_begin),
 		(neq, reg0, 0),	#more than 0 enemies still alive?
-		(copy_position, pos1, ":fcurrentpos"),	#restore current formation "position"
-		(call_script, "script_point_y_toward_position", pos1, pos60),	#record angle from center to enemy
+		(call_script, "script_cf_team_get_average_position_of_agents_with_type_to_pos1", ":fteam", ":fclass"),
+		(call_script, "script_point_y_toward_position", pos60, pos1),	#record angle from center to enemy
 		(assign, ":distance_to_enemy", reg0),
+		(copy_position, pos1, ":fcurrentpos"),	#restore current formation "position"
+		(position_copy_rotation, pos1, pos60),	#copy angle from center of angle (to center approach)
+		(position_rotate_z, pos1, 180),
 #		(team_get_order_position, pos61, ":fteam", ":fclass"),
 		(call_script, "script_get_formation_position", pos61, ":fteam", ":fclass"),
 		(get_distance_between_positions, ":move_amount", pos1, pos61),	#distance already moving from previous orders
@@ -2564,19 +3858,8 @@ formAI_scripts = [
 		(try_end),
 #		(team_set_order_position, ":fteam", ":fclass", pos1),
 		(call_script, "script_set_formation_position", ":fteam", ":fclass", pos1),
-		(call_script, "script_battlegroup_get_size", ":fteam", ":fclass"),
-		(assign, ":num_troops", reg0),
-		(try_begin),
-			(neq, ":fclass", grc_archers),
-			(call_script, "script_get_centering_amount", ":fformation", ":num_troops", ":formation_extra_spacing"),
-		(else_try),
-			(call_script, "script_get_centering_amount", formation_default, ":num_troops", ":formation_extra_spacing"),
-			(val_mul, reg0, -1),
-		(try_end),
-		(position_move_x, pos1, reg0, 0),
 	(try_end),
   ]),
-
 
   # script_set_formation_position by motomataru
   # Input: team, troop class, position
@@ -2820,6 +4103,51 @@ formAI_scripts = [
 	(assign, reg0, ":first_agent_in_formation")
   ]),
   
+ ] + (is_a_wb_script==1 and [	
+
+ # script_cf_valid_formation_member by motomataru #Kham - Edited
+  # Input: team, troop class, agent number of team leader, test agent
+  # Output: failure indicates agent is not member of formation
+  ("cf_valid_formation_member", [
+	(store_script_param, ":fteam", 1),
+	(store_script_param, ":fclass", 2),
+	# (store_script_param, ":fleader", 3),
+	(store_script_param, ":agent", 4),
+	(call_script, "script_classify_agent", ":agent"),
+	(eq, reg0, ":fclass"),
+	(agent_get_team, ":team", ":agent"),
+	(eq, ":team", ":fteam"),
+	(agent_is_alive, ":agent"),
+	(agent_is_human, ":agent"),
+    #MV: troll check - they don't belong to formations
+    (agent_get_troop_id, ":agent_troop", ":agent"),
+    (troop_get_type, ":agent_race", ":agent_troop"),
+    (neq, ":agent_race", tf_troll),
+  ]),
+
+# Kham - Warband Formations Addition
+# script_classify_agent by motomataru
+  # Input: agent
+  # Output: reg0 (-1 if leader)
+  # Assigns a "division" to the agent
+
+  ("classify_agent", [
+	(store_script_param, ":agent", 1),
+	(agent_get_team, ":ateam", ":agent"),
+	(team_get_leader, ":aleader", ":ateam"),
+	(try_begin),
+		(eq, ":agent", ":aleader"),
+		(assign, reg0, -1),
+	(else_try),
+		(eq, ":ateam", "$fplayer_team_no"),
+		(agent_get_division, reg0, ":agent"),
+	(else_try),
+		(agent_get_class, reg0, ":agent"),
+	(try_end)
+  ]),
+  
+] or [
+
 	
   # script_cf_valid_formation_member by motomataru
   # Input: team, troop class, agent number of team leader, test agent
@@ -2843,7 +4171,10 @@ formAI_scripts = [
     (neq, ":agent_race", tf_troll),
   ]),
 
-	
+]) + [
+
+# Kham - Warband Formations Addition END
+
 # #Player team formations functions
 
   # script_player_attempt_formation
@@ -2962,7 +4293,7 @@ formAI_scripts = [
   ]),
   
   
-  # script_player_order_formations by motomataru
+  # script_player_order_formations by motomataru #Kham - edited
   # Inputs:	arg1: order to formation (mordr_*)
   # Output: none
   ("player_order_formations", [
@@ -3039,39 +4370,39 @@ formAI_scripts = [
 		(try_begin),
 			(neq, "$infantry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_infantry),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_infantry, "$infantry_formation_type", "$infantry_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_infantry, "$infantry_formation_type"),
 			(try_begin),	#on change of orders cancel order position
 				(neq, "$infantry_formation_move_order", mordr_advance),
 				# (team_set_order_position, "$fplayer_team_no", grc_infantry, pos63),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos63),
 			(try_end),
-			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_infantry, pos63, "$infantry_formation_type", "$infantry_space", 1),			
+			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_infantry, pos63, 1),			
 			(call_script, "script_form_infantry", "$fplayer_team_no", "$fplayer_agent_no", "$infantry_space", "$infantry_formation_type"),
 			(assign, "$infantry_formation_move_order", mordr_advance),
 		(try_end),
 		(try_begin),
 			(neq, "$cavalry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_cavalry),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_cavalry, "$cavalry_formation_type", "$cavalry_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_cavalry, "$cavalry_formation_type"),
 			(try_begin),	#on change of orders cancel order position
 				(neq, "$cavalry_formation_move_order", mordr_advance),
 				# (team_set_order_position, "$fplayer_team_no", grc_cavalry, pos63),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_cavalry, pos63),
 			(try_end),
-			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_cavalry, pos63, "$cavalry_formation_type", "$cavalry_space", 1),
+			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_cavalry, pos63, 1),
 			(call_script, "script_form_cavalry", "$fplayer_team_no", "$fplayer_agent_no", "$cavalry_space"),
 			(assign, "$cavalry_formation_move_order", mordr_advance),
 		(try_end),
 		(try_begin),
 			(neq, "$archer_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_archers),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_archers, "$archer_formation_type", "$archer_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_archers, "$archer_formation_type"),
 			(try_begin),	#on change of orders cancel order position
 				(neq, "$archer_formation_move_order", mordr_advance),
 				# (team_set_order_position, "$fplayer_team_no", grc_archers, pos63),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos63),
 			(try_end),
-			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_archers, pos63, "$archer_formation_type", "$archer_space", 1),
+			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_archers, pos63, 1),
 			(call_script, "script_form_archers", "$fplayer_team_no", "$fplayer_agent_no", "$archer_space", "$archer_formation_type"),
 			(assign, "$archer_formation_move_order", mordr_advance),
 		(try_end),
@@ -3081,39 +4412,39 @@ formAI_scripts = [
 		(try_begin),
 			(neq, "$infantry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_infantry),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_infantry, "$infantry_formation_type", "$infantry_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_infantry, "$infantry_formation_type"),
 			(try_begin),	#on change of orders cancel order position
 				(neq, "$infantry_formation_move_order", mordr_fall_back),
 				# (team_set_order_position, "$fplayer_team_no", grc_infantry, pos63),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos63),
 			(try_end),
-			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_infantry, pos63, "$infantry_formation_type", "$infantry_space", -1),
+			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_infantry, pos63, -1),
 			(call_script, "script_form_infantry", "$fplayer_team_no", "$fplayer_agent_no", "$infantry_space", "$infantry_formation_type"),
 			(assign, "$infantry_formation_move_order", mordr_fall_back),
 		(try_end),
 		(try_begin),
 			(neq, "$cavalry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_cavalry),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_cavalry, "$cavalry_formation_type", "$cavalry_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_cavalry, "$cavalry_formation_type"),
 			(try_begin),	#on change of orders cancel order position
 				(neq, "$cavalry_formation_move_order", mordr_fall_back),
 				# (team_set_order_position, "$fplayer_team_no", grc_cavalry, pos63),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_cavalry, pos63),
 			(try_end),
-			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_cavalry, pos63, "$cavalry_formation_type", "$cavalry_space", -1),
+			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_cavalry, pos63, -1),
 			(call_script, "script_form_cavalry", "$fplayer_team_no", "$fplayer_agent_no", "$cavalry_space"),
 			(assign, "$cavalry_formation_move_order", mordr_fall_back),
 		(try_end),
 		(try_begin),
 			(neq, "$archer_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_archers),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_archers, "$archer_formation_type", "$archer_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_archers, "$archer_formation_type"),
 			(try_begin),	#on change of orders cancel order position
 				(neq, "$archer_formation_move_order", mordr_fall_back),
 				# (team_set_order_position, "$fplayer_team_no", grc_archers, pos63),
 				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos63),
 			(try_end),
-			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_archers, pos63, "$archer_formation_type", "$archer_space", -1),
+			(call_script, "script_formation_move_position", "$fplayer_team_no", grc_archers, pos63, -1),
 			(call_script, "script_form_archers", "$fplayer_team_no", "$fplayer_agent_no", "$archer_space", "$archer_formation_type"),
 			(assign, "$archer_formation_move_order", mordr_fall_back),
 		(try_end),
@@ -3124,13 +4455,27 @@ formAI_scripts = [
 			(neq, "$infantry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_infantry),
 			(gt, "$infantry_space", 0),
-			(val_sub, "$infantry_space", 1),
-#			(team_get_order_position, pos1, "$fplayer_team_no", grc_infantry),
-			(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_infantry),			
-			(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_infantry),
-			(assign, ":troop_count", reg0),			
+			(assign, ":troop_count", 0),
+			(try_for_agents, reg0),
+				(call_script, "script_cf_valid_formation_member", "$fplayer_team_no", grc_infantry, "$fplayer_agent_no", reg0),
+				(val_add, ":troop_count", 1),
+			(try_end),
 			(call_script, "script_get_centering_amount", "$infantry_formation_type", ":troop_count", "$infantry_space"),
-			(position_move_x, pos1, reg0),
+			(assign, ":adjust_amount", reg0),
+			(val_sub, "$infantry_space", 1),
+			(call_script, "script_get_centering_amount", "$infantry_formation_type", ":troop_count", "$infantry_space"),
+			(val_sub, ":adjust_amount", reg0),
+#			(team_get_order_position, pos1, "$fplayer_team_no", grc_infantry),
+			(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_infantry),
+			(agent_get_position, pos0, "$fplayer_agent_no"),
+			(get_distance_between_positions, reg0, pos1, pos0),
+			(val_sub, reg0, 100),
+			(try_begin),	#not close to player?
+				(lt, ":adjust_amount", reg0),
+				(val_mul, ":adjust_amount", -1),
+				(position_move_x, pos1, ":adjust_amount"),
+				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos1),
+			(try_end),
 			(call_script, "script_form_infantry", "$fplayer_team_no", "$fplayer_agent_no", "$infantry_space", "$infantry_formation_type"),
 		(try_end),
 		(try_begin),
@@ -3146,14 +4491,20 @@ formAI_scripts = [
 			(neq, "$archer_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_archers),
 			(gt, "$archer_space", 0),
+			(assign, ":troop_count", 0),
+			(try_for_agents, reg0),
+				(call_script, "script_cf_valid_formation_member", "$fplayer_team_no", grc_archers, "$fplayer_agent_no", reg0),
+				(val_add, ":troop_count", 1),
+			(try_end),
+			(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
+			(assign, ":adjust_amount", reg0),
 			(val_sub, "$archer_space", 1),
+			(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
+			(val_sub, ":adjust_amount", reg0),
 #			(team_get_order_position, pos1, "$fplayer_team_no", grc_archers),
 			(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_archers),
-			(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_archers),
-			(assign, ":troop_count", reg0),
-			(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
-			(val_mul, reg0, -1),
-			(position_move_x, pos1, reg0),
+			(position_move_x, pos1, ":adjust_amount"),
+			(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos1),
 			(call_script, "script_form_archers", "$fplayer_team_no", "$fplayer_agent_no", "$archer_space", "$archer_formation_type"),
 		(try_end),
 
@@ -3162,13 +4513,26 @@ formAI_scripts = [
 		(try_begin),
 			(neq, "$infantry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_infantry),
-			(val_add, "$infantry_space", 1),
-#			(team_get_order_position, pos1, "$fplayer_team_no", grc_infantry),
-			(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_infantry),			
-			(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_infantry),
-			(assign, ":troop_count", reg0),			
+			(assign, ":troop_count", 0),
+			(try_for_agents, reg0),
+				(call_script, "script_cf_valid_formation_member", "$fplayer_team_no", grc_infantry, "$fplayer_agent_no", reg0),
+				(val_add, ":troop_count", 1),
+			(try_end),
 			(call_script, "script_get_centering_amount", "$infantry_formation_type", ":troop_count", "$infantry_space"),
-			(position_move_x, pos1, reg0),
+			(store_mul, ":adjust_amount", reg0, -1),
+			(val_add, "$infantry_space", 1),
+			(call_script, "script_get_centering_amount", "$infantry_formation_type", ":troop_count", "$infantry_space"),
+			(val_add, ":adjust_amount", reg0),
+#			(team_get_order_position, pos1, "$fplayer_team_no", grc_infantry),
+			(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_infantry),
+			(agent_get_position, pos0, "$fplayer_agent_no"),
+			(get_distance_between_positions, reg0, pos1, pos0),
+			(val_sub, reg0, 100),
+			(try_begin),	#not close to player?
+				(lt, ":adjust_amount", reg0),
+				(position_move_x, pos1, ":adjust_amount"),
+				(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos1),
+			(try_end),
 			(call_script, "script_form_infantry", "$fplayer_team_no", "$fplayer_agent_no", "$infantry_space", "$infantry_formation_type"),
 		(try_end),
 		(try_begin),
@@ -3182,14 +4546,21 @@ formAI_scripts = [
 		(try_begin),
 			(neq, "$archer_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_archers),
+			(assign, ":troop_count", 0),
+			(try_for_agents, reg0),
+				(call_script, "script_cf_valid_formation_member", "$fplayer_team_no", grc_archers, "$fplayer_agent_no", reg0),
+				(val_add, ":troop_count", 1),
+			(try_end),
+			(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
+			(store_mul, ":adjust_amount", reg0, -1),
 			(val_add, "$archer_space", 1),
+			(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
+			(val_add, ":adjust_amount", reg0),
 #			(team_get_order_position, pos1, "$fplayer_team_no", grc_archers),
 			(call_script, "script_get_formation_position", pos1, "$fplayer_team_no", grc_archers),
-			(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_archers),
-			(assign, ":troop_count", reg0),
-			(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
-			(val_mul, reg0, -1),
-			(position_move_x, pos1, reg0),
+			(val_mul, ":adjust_amount", -1),
+			(position_move_x, pos1, ":adjust_amount"),
+			(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos1),
 			(call_script, "script_form_archers", "$fplayer_team_no", "$fplayer_agent_no", "$archer_space", "$archer_formation_type"),
 		(try_end),
 
@@ -3198,12 +4569,8 @@ formAI_scripts = [
 		(try_begin),
 			(neq, "$infantry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_infantry),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_infantry, "$infantry_formation_type", "$infantry_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_infantry, "$infantry_formation_type"),
 			(copy_position, pos1, pos63),
-			(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_infantry),
-			(assign, ":troop_count", reg0),			
-			(call_script, "script_get_centering_amount", "$infantry_formation_type", ":troop_count", "$infantry_space"),
-			(position_move_x, pos1, reg0),
 			(call_script, "script_form_infantry", "$fplayer_team_no", "$fplayer_agent_no", "$infantry_space", "$infantry_formation_type"),
 			(assign, "$infantry_formation_move_order", mordr_stand_ground),
 			(call_script, "script_set_formation_position", "$fplayer_team_no", grc_infantry, pos63),
@@ -3211,7 +4578,7 @@ formAI_scripts = [
 		(try_begin),
 			(neq, "$cavalry_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_cavalry),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_cavalry, "$cavalry_formation_type", "$cavalry_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_cavalry, "$cavalry_formation_type"),
 			(copy_position, pos1, pos63),
 			(call_script, "script_form_cavalry", "$fplayer_team_no", "$fplayer_agent_no", "$cavalry_space"),
 			(assign, "$cavalry_formation_move_order", mordr_stand_ground),
@@ -3220,13 +4587,8 @@ formAI_scripts = [
 		(try_begin),
 			(neq, "$archer_formation_type", formation_none),
 			(class_is_listening_order, "$fplayer_team_no", grc_archers),
-			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_archers, "$archer_formation_type", "$archer_space"),
+			(call_script, "script_formation_current_position", pos63, "$fplayer_team_no", grc_archers, "$archer_formation_type"),
 			(copy_position, pos1, pos63),
-			(call_script, "script_battlegroup_get_size", "$fplayer_team_no", grc_archers),
-			(assign, ":troop_count", reg0),
-			(call_script, "script_get_centering_amount", formation_default, ":troop_count", "$archer_space"),
-			(val_mul, reg0, -1),
-			(position_move_x, pos1, reg0),
 			(call_script, "script_form_archers", "$fplayer_team_no", "$fplayer_agent_no", "$archer_space", "$archer_formation_type"),
 			(assign, "$archer_formation_move_order", mordr_stand_ground),
 			(call_script, "script_set_formation_position", "$fplayer_team_no", grc_archers, pos63),
@@ -3238,27 +4600,16 @@ formAI_scripts = [
 # #Utilities used by formations
   # script_point_y_toward_position by motomataru
   # Input: from position, to position
-  # Output: reg0 fixed point distance
+  # Output: pos62 normalized vector, reg0 fixed point distance
   ("point_y_toward_position", [
 	(store_script_param, ":from_position", 1),
 	(store_script_param, ":to_position", 2),
-	(position_get_x, ":dist_x_to_cosine", ":to_position"),
-	(position_get_x, ":from_coord", ":from_position"),
-	(val_sub, ":dist_x_to_cosine", ":from_coord"),
-	(store_mul, ":sum_square", ":dist_x_to_cosine", ":dist_x_to_cosine"),
-	(position_get_y, ":dist_y_to_sine", ":to_position"),
-	(position_get_y, ":from_coord", ":from_position"),
-	(val_sub, ":dist_y_to_sine", ":from_coord"),
-	(store_mul, reg0, ":dist_y_to_sine", ":dist_y_to_sine"),
-	(val_add, ":sum_square", reg0),
-	(convert_from_fixed_point, ":sum_square"),
-	(store_sqrt, ":distance_between", ":sum_square"),
-	(convert_to_fixed_point, ":dist_x_to_cosine"),
-	(val_div, ":dist_x_to_cosine", ":distance_between"),
-	(convert_to_fixed_point, ":dist_y_to_sine"),
-	(val_div, ":dist_y_to_sine", ":distance_between"),
+	(position_transform_position_to_local, pos62, ":from_position", ":to_position"),
+	(position_normalize_origin, ":distance_between", pos62),
+	(position_get_x, ":dir_x", pos62),
+	(position_get_y, ":dir_y", pos62),
 	(try_begin),
-		(lt, ":dist_x_to_cosine", 0),
+		(lt, ":dir_x", 0),
 		(assign, ":bound_a", 90),
 		(assign, ":bound_b", 270),
 		(assign, ":theta", 180),
@@ -3274,18 +4625,16 @@ formAI_scripts = [
 	(try_for_range, reg0, 0, 6),	#precision 90/2exp6 (around 2 degrees)
 		(store_sin, ":sine_theta", ":theta"),
 		(try_begin),
-			(gt, ":sine_theta", ":dist_y_to_sine"),
+			(gt, ":sine_theta", ":dir_y"),
 			(assign, ":bound_a", ":theta"),
 		(else_try),
-			(lt, ":sine_theta", ":dist_y_to_sine"),
+			(lt, ":sine_theta", ":dir_y"),
 			(assign, ":bound_b", ":theta"),
 		(try_end),
 		(store_add, ":angle_sum", ":bound_b", ":bound_a"),
 		(store_div, ":theta", ":angle_sum", 2),
 	(try_end),
 	(convert_from_fixed_point, ":theta"),
-	(position_get_rotation_around_z, reg0, ":from_position"),
-	(val_sub, ":theta", reg0),
 	(val_sub, ":theta", 90),	#point y-axis at destination
 	(position_rotate_z, ":from_position", ":theta"),
 	(assign, reg0, ":distance_between"),
@@ -3401,8 +4750,20 @@ formAI_scripts = [
 	(try_for_agents, ":cur_agent"),
 		(agent_is_alive, ":cur_agent"),      
 		(agent_is_human, ":cur_agent"), 
+		#(agent_slot_eq, ":cur_agent", slot_agent_is_running_away, 0),
 		(agent_get_team, ":bgteam", ":cur_agent"),
+		
+		] + (is_a_wb_script==1 and [
+
+		(call_script, "script_classify_agent", ":cur_agent"),
+		(assign, ":bgroup", reg0),
+		
+		] or [
+		
 		(agent_get_class, ":bgroup", ":cur_agent"),
+		
+		]) + [
+		
 		(agent_get_troop_id, ":cur_troop", ":cur_agent"),
         
 		(troop_get_type, ":cur_race", ":cur_troop"),
@@ -3536,7 +4897,8 @@ formAI_scripts = [
 				(val_add, "$team0_weapon_length_cavalry", ":cur_weapon_length"),
 				(try_begin),
 					(gt, ":cur_ammo", 0),
-					(neq, ":cur_weapon_type", itp_type_thrown), #added by JL to exclude throwing weapons from being horse archers					(val_add, "$team0_percent_cavalry_are_archers", 1),
+					(neq, ":cur_weapon_type", itp_type_thrown), #added by JL to exclude throwing weapons from being horse archers
+					(val_add, "$team0_percent_cavalry_are_archers", 1),
 				(try_end),
 			(else_try),
 				(eq, ":bgteam", 1),
@@ -3547,6 +4909,7 @@ formAI_scripts = [
 				(val_add, "$team1_weapon_length_cavalry", ":cur_weapon_length"),
 				(try_begin),
 					(gt, ":cur_ammo", 0),
+					(neq, ":cur_weapon_type", itp_type_thrown), #added by JL to exclude throwing weapons from being horse archers
 					(val_add, "$team1_percent_cavalry_are_archers", 1),
 				(try_end),
 			(else_try),
@@ -3558,6 +4921,7 @@ formAI_scripts = [
 				(val_add, "$team2_weapon_length_cavalry", ":cur_weapon_length"),
 				(try_begin),
 					(gt, ":cur_ammo", 0),
+					(neq, ":cur_weapon_type", itp_type_thrown), #added by JL to exclude throwing weapons from being horse archers
 					(val_add, "$team2_percent_cavalry_are_archers", 1),
 				(try_end),
 			(else_try),
@@ -3569,6 +4933,7 @@ formAI_scripts = [
 				(val_add, "$team3_weapon_length_cavalry", ":cur_weapon_length"),
 				(try_begin),
 					(gt, ":cur_ammo", 0),
+					(neq, ":cur_weapon_type", itp_type_thrown), #added by JL to exclude throwing weapons from being horse archers
 					(val_add, "$team3_percent_cavalry_are_archers", 1),
 				(try_end),
 			(try_end),
@@ -4074,74 +5439,103 @@ formAI_scripts = [
   ]),	
 
  
-  # script_team_get_position_of_enemies by motomataru
-  # Input: destination position, team, troop class/division
-  # Output: destination position: average position if reg0 > 0
-  #			reg0: number of enemies
+  # script_team_get_position_of_enemies by motomataru # Kham - Edited
+  # Input: destination position, team
+  # Output:	enemy team position
   # Run script_store_battlegroup_data before calling!
   ("team_get_position_of_enemies", [
-	(store_script_param, ":enemy_position", 1),
-	(store_script_param, ":team_no", 2),
-	(store_script_param, ":troop_type", 3),
+	(store_script_param, ":bgposition", 1),
+	(store_script_param, ":bgteam", 2),
 	(assign, ":pos_x", 0),
 	(assign, ":pos_y", 0),
 	(assign, ":total_size", 0),
 	
 	(try_for_range, ":other_team", 0, 4),
-		(teams_are_enemies, ":other_team", ":team_no"),
-		(try_begin),
-			(eq, ":troop_type", grc_everyone),
-			(call_script, "script_battlegroup_get_size", ":other_team", grc_everyone),
-			(assign, ":team_size", reg0),
-			(try_begin),
-				(gt, ":team_size", 0),
-				(call_script, "script_battlegroup_get_position", ":enemy_position", ":other_team", grc_everyone),
-				(position_get_x, reg0, ":enemy_position"),
-				(val_mul, reg0, ":team_size"),
-				(val_add, ":pos_x", reg0),
-				(position_get_y, reg0, ":enemy_position"),
-				(val_mul, reg0, ":team_size"),
-				(val_add, ":pos_y", reg0),
-			(try_end),
-		(else_try),
-			(assign, ":team_size", 0),
-			(try_begin),
-				(eq, ":other_team", "$fplayer_team_no"),
-				(assign, ":num_groups", 9),
-			(else_try),
-				(assign, ":num_groups", 3),
-			(try_end),
-			(try_for_range, ":enemy_battle_group", 0, ":num_groups"),
-				(eq, ":enemy_battle_group", ":troop_type"),
-				(call_script, "script_battlegroup_get_size", ":other_team", ":troop_type"),
-				(gt, reg0, 0),
-				(val_add, ":team_size", reg0),
-				(call_script, "script_battlegroup_get_position", ":enemy_position", ":other_team", ":troop_type"),
-				(position_get_x, reg0, ":enemy_position"),
-				(val_mul, reg0, ":team_size"),
-				(val_add, ":pos_x", reg0),
-				(position_get_y, reg0, ":enemy_position"),
-				(val_mul, reg0, ":team_size"),
-				(val_add, ":pos_y", reg0),
-			(try_end),
-		(try_end),
+		(neq, ":other_team", ":bgteam"),
+		(call_script, "script_battlegroup_get_size", ":other_team", grc_everyone),
+		(assign, ":team_size", reg0),
+		(gt, ":team_size", 0),
+		(teams_are_enemies, ":other_team", ":bgteam"),
+		
+		(call_script, "script_battlegroup_get_position", ":bgposition", ":other_team", grc_everyone),
+		(position_get_x, reg0, ":bgposition"),
+		(val_mul, reg0, ":team_size"),
+		(val_add, ":pos_x", reg0),
+		(position_get_y, reg0, ":bgposition"),
+		(val_mul, reg0, ":team_size"),
+		(val_add, ":pos_y", reg0),
 		(val_add, ":total_size", ":team_size"),
 	(try_end),
 	
 	(try_begin),
 		(eq, ":total_size", 0),
-		(init_position, ":enemy_position"),
+		(init_position, ":bgposition"),
 	(else_try),
 		(val_div, ":pos_x", ":total_size"),
-		(position_set_x, ":enemy_position", ":pos_x"),
+		(position_set_x, ":bgposition", ":pos_x"),
 		(val_div, ":pos_y", ":total_size"),
-		(position_set_y, ":enemy_position", ":pos_y"),
-		(position_set_z_to_ground_level, ":enemy_position"),
+		(position_set_y, ":bgposition", ":pos_y"),
+		(position_set_z_to_ground_level, ":bgposition"),
 	(try_end),
-
-	(assign, reg0, ":total_size"),
   ]),
 
+
+ #Kham - Warband Formations AI by Motomataru addition
+ # script_team_get_average_position_of_enemies_augmented
+  # Inputs:	arg1: destination position number
+  #			arg2: team_no
+  #			arg3: troop class (grc_*)
+  # Output: destination position: average position if reg0 > 0
+  #			reg0: number of enemies
+  ("team_get_average_position_of_enemies_augmented", [
+	(store_script_param, ":position_no", 1),
+	(store_script_param, ":team_no", 2),
+	(store_script_param, ":troop_type", 3),
+	(assign, ":num_enemies", 0),
+	(assign, ":accum_x", 0),
+	(assign, ":accum_y", 0),
+	(assign, ":accum_z", 0),
+	(try_for_agents, ":enemy_agent"),
+		(agent_is_alive, ":enemy_agent"),
+		(agent_is_human, ":enemy_agent"),
+		(agent_get_team, ":enemy_team", ":enemy_agent"),
+		(teams_are_enemies, ":team_no", ":enemy_team"),
+		] + (is_a_wb_script==1 and [
+
+		(call_script, "script_classify_agent", ":enemy_agent"),
+		(this_or_next|eq, ":troop_type", reg0),
+
+		] or [
+
+		(agent_get_class, ":troop_type", ":enemy_agent"),
+
+		]) + [
+
+		(eq, ":troop_type", grc_everyone),
+
+		(agent_get_position, ":position_no", ":enemy_agent"),
+		(position_get_x, ":x", ":position_no"),
+		(position_get_y, ":y", ":position_no"),
+		(position_get_z, ":z", ":position_no"),
+		(val_add, ":accum_x", ":x"),
+		(val_add, ":accum_y", ":y"),
+		(val_add, ":accum_z", ":z"),
+		(val_add, ":num_enemies", 1),
+	(try_end),
+	(init_position, ":position_no"),
+	(try_begin),
+		(gt, ":num_enemies", 0),
+		(store_div, ":average_x", ":accum_x", ":num_enemies"),
+		(store_div, ":average_y", ":accum_y", ":num_enemies"),
+		(store_div, ":average_z", ":accum_z", ":num_enemies"),
+		(position_set_x, ":position_no", ":average_x"),
+		(position_set_y, ":position_no", ":average_y"),
+		(position_set_z, ":position_no", ":average_z"),
+	(try_end),
+	(assign, reg0, ":num_enemies"),
+  ]),
+
+ #Kham - Warband Formations AI by Motomataru addition END
 
 # # M&B Standard AI with changes for formations
   # script_formation_battle_tactic_init_aux
@@ -4168,7 +5562,9 @@ formAI_scripts = [
         (team_give_order, ":team_no", grc_archers, mordr_advance),
       (else_try),
         (eq, ":battle_tactic", btactic_follow_leader),
-        #(team_get_leader, ":ai_leader", ":team_no"),
+       #(team_get_leader, ":ai_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":ai_leader", reg0),
         (ge, ":ai_leader", 0),
         (agent_set_speed_limit, ":ai_leader", 8),
         (agent_get_position, pos60, ":ai_leader"),
@@ -4243,7 +5639,7 @@ formAI_scripts = [
           (team_set_order_position, ":team_no", grc_everyone, pos63),
 #formations code
 		  (call_script, "script_point_y_toward_position", pos63, pos60),
-		  (agent_get_position, pos49, ":ai_leader"),
+		  (agent_get_position, pos22, ":ai_leader"),
 		  (agent_set_position, ":ai_leader", pos63),	#fake out script_cf_formation
 		  (try_begin),
 			(call_script, "script_cf_formation", ":team_no", grc_infantry, 0, formation_default),
@@ -4254,7 +5650,7 @@ formAI_scripts = [
 		  (try_begin),
 			(call_script, "script_cf_formation", ":team_no", grc_archers, 2, formation_default),
 		  (try_end),
-		  (agent_set_position, ":ai_leader", pos49),
+		  (agent_set_position, ":ai_leader", pos22),
 #end formations code
           (agent_get_position, pos1, ":ai_leader"),
           (try_begin),
@@ -4387,5 +5783,68 @@ formAI_scripts = [
 	(try_end),
     ]),
 	
+
+] + (is_a_wb_script==1 and [
+
+# script_troop_default_division MOTO chief
+# Input: troop_id, flag 0 for expanded divisions
+# Output: reg0 default division
+("troop_default_division", [(store_script_param, ":troop_no", 1),
+  
+  (assign, ":target_division", grc_infantry),
+  (troop_get_inventory_capacity, ":inv_cap", ":troop_no"),
+  
+  (try_begin),
+    (troop_is_guarantee_horse, ":troop_no"),
+    (assign, ":has_horse", 0),
+    (try_for_range, reg0, 0, ":inv_cap"),
+      (troop_get_inventory_slot, ":item", ":troop_no", reg0),
+      (gt, ":item", 0),
+      (item_get_type, reg1, ":item"),
+      (eq, reg1, itp_type_horse),
+      (assign, ":has_horse", 1),
+    (try_end),
+    (neq, ":has_horse", 0),
+    (assign, ":target_division", grc_cavalry),
+    
+  (else_try),
+    (troop_is_guarantee_ranged, ":troop_no"),
+    (assign, ":has_ranged", 0),
+    (try_for_range, reg0, 0, ":inv_cap"),
+      (troop_get_inventory_slot, ":item", ":troop_no", reg0),
+      (call_script, "script_cf_is_weapon_ranged", ":item", 1),
+      (item_get_type, reg1, ":item"),
+      (assign, ":target_division", grc_archers),
+      (assign, ":has_ranged", 1),
+    (try_end),
+    (neq, ":has_ranged", 0),
+  (try_end),
+  
+  (assign, reg0, ":target_division"),]),
+
+# script_cf_is_weapon_ranged by motomataru
+  # Input: weapon ID, flag 0/1 to consider thrown weapons
+  # Output: T/F
+  ("cf_is_weapon_ranged", [(store_script_param, ":weapon", 1),
+      (store_script_param, ":include_thrown", 2),
+      
+      (assign, ":test_val", 0),
+      (try_begin),
+        (ge, ":weapon", 0),
+        (item_get_type, ":type", ":weapon"),
+        (try_begin),
+          (this_or_next | eq, ":type", 		itp_type_bow),
+          (				  eq, ":type", itp_type_crossbow),
+          (assign, ":test_val", 1),
+        (else_try),
+          (eq, ":type", itp_type_thrown),
+          (neq, ":include_thrown", 0),
+          (assign, ":test_val", 1),
+        (try_end),
+      (try_end),
+      
+      (neq, ":test_val", 0),]),
+
+] or []) + [
 
 ]

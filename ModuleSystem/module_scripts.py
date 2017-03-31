@@ -1818,7 +1818,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 1000), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
@@ -1831,6 +1831,13 @@ scripts = [
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
+    #Kham -  Reassign divisions
+	(try_for_range, ":troop_no", soldiers_begin, soldiers_end),
+	  (call_script, "script_troop_default_division", ":troop_no", 0),
+	  (troop_get_class, ":division", ":troop_no"),
+	  (neq, ":division", reg0),
+	  (troop_set_class, ":troop_no", reg0),
+	(try_end),
 	] or []) + [
 ]),    
 
