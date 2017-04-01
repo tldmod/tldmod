@@ -3059,7 +3059,16 @@ game_menus = [
     	 	(spawn_around_party, ":target_party", "pt_gondor_company"),
     	 (try_end),
     	 (display_message, "@Target Party and Ally Spawned!")]),
-    ("player_control_allies",[], "Let Player Command Allies", [(assign, "$player_control_allies",1), (display_message, "@Player will now command allies!"),]),
+    ("player_control_allies",[
+    	(try_begin),
+    		(eq, "$player_control_allies",0),
+    		(str_store_string, s7, "@OFF"),
+    	(else_try),
+    		(str_store_string, s7, "@ON"),
+    	(try_end),
+    	],"Let Player Command Allies: {s7}", [
+    	(store_sub, "$player_control_allies",1, "$player_control_allies"), 
+    	(val_clamp, "$player_control_allies",0,2)]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -8887,13 +8896,20 @@ game_menus = [
 	        (try_end),
 
 		#Set Which Scene Village is at
-	 	## Get Theater of Village
+	 	## Get Region of Village
 		 	(try_begin),
 			 	(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 	        	(assign, ":village_scene", "scn_village_rohan"),
 	        (else_try),
 	        	(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 	        	(assign, ":village_scene", "scn_village_gondor"),
+	        (else_try),
+	        	(eq, "$current_player_region", region_anduin_banks),
+	        	(assign, ":village_scene", "scn_village_anduin"),
+	        (else_try),
+	        	(this_or_next|eq, "$current_player_region", region_above_mirkwook),
+	        	(			  eq, "$current_player_region", region_grey_mountains),
+	        	(assign, ":village_scene", "scn_village_north"),
 	 #Randomize Scene
 	 		(else_try),
 		        (store_random_in_range, ":random_scene", 1, 3),
@@ -8949,14 +8965,20 @@ game_menus = [
 	        (assign, ":guard_troop_3", "trp_farmer"),
 		
 		#Set Which Scene Village is at
-	 	## Get Theater of Village
-	 		(faction_get_slot, ":home_theater", ":raid_village_faction", slot_faction_home_theater),
+	 	## Get Region of Village
 		 	(try_begin),
-			 	(eq, ":home_theater", theater_SW),
+			 	(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 	        	(assign, ":village_scene", "scn_village_rohan"),
 	        (else_try),
-	   	    	(eq, ":home_theater", theater_SE),
+	        	(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 	        	(assign, ":village_scene", "scn_village_gondor"),
+	        (else_try),
+	        	(eq, "$current_player_region", region_anduin_banks),
+	        	(assign, ":village_scene", "scn_village_anduin"),
+	        (else_try),
+	        	(this_or_next|eq, "$current_player_region", region_above_mirkwook),
+	        	(			  eq, "$current_player_region", region_grey_mountains),
+	        	(assign, ":village_scene", "scn_village_north"),
 	 #Randomize Scene
 	 		(else_try),
 		        (store_random_in_range, ":random_scene", 1, 3),

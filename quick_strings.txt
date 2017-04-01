@@ -758,7 +758,6 @@ qstr_IMOD_test_mesh_given IMOD_test_mesh_given
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_Moria_Book_given Moria_Book_given
 qstr_Target_Party_and_All Target_Party_and_Ally_Spawned!
-qstr_Player_will_now_comm Player_will_now_command_allies!
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)
@@ -912,6 +911,7 @@ qstr_You_are_entering_{s1} You_are_entering_{s1}.
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
+qstr_DEBUG:_Player_Contro DEBUG:_Player_Control_Allies_RESET
 qstr_You_pay_for_accommod You_pay_for_accommodation.
 qstr_The_troll_outside_{s The_troll_outside_{s2}_was_killed._Mission_canceled.
 qstr_{s1}_was_killed_on_t {s1}_was_killed_on_the_battlefield._Mission_canceled.

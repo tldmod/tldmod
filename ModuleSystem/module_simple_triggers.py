@@ -1105,6 +1105,10 @@ simple_triggers = [
     (try_begin),
       (eq, "$player_control_allies",1),
       (assign, "$player_control_allies",0),
+        (try_begin),
+          (eq, "$cheat_mode",1),
+          (display_message, "@DEBUG: Player Control Allies RESET"),
+        (try_end),
     (try_end),
     ]),
   

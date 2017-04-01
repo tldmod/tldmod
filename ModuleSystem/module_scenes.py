@@ -441,5 +441,9 @@ scenes = [
 ("goblin_north_outpost_center_siege",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
 ("goblin_south_outpost_center_siege",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
 
+## In Vain Village Scenes Cont'd
+("village_anduin",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000037220db18006a5aa000061bc80003a9600004852",  [],[],"outer_terrain_plain"),
+("village_north",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003926c9370007b5ed00006fbf0000026d00001a96",  [],[],"outer_terrain_plain"),
+
 ]
 

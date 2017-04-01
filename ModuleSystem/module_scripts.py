@@ -5859,9 +5859,10 @@ scripts = [
           (try_begin),
       	    (neg|check_quest_active,"qst_defend_village"),
             (faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
-            (neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
+            (this_or_next|neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
+            (neq, ":giver_faction_no", "fac_lorien"), #No villages near Lorien
             (ge, "$g_talk_troop_faction_relation", 2),
-            (is_between, ":player_level", 2,8),
+            (is_between, ":player_level", 3,8),
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
             (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
@@ -5880,7 +5881,7 @@ scripts = [
             (assign, ":quest_rank_reward", 10),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 5),
-            (assign, ":quest_dont_give_again_period", 5),
+            (assign, ":quest_dont_give_again_period", 7),
           (try_end),
         (else_try),
         ##Kham: Raid village
@@ -5889,15 +5890,44 @@ scripts = [
           	(neg|check_quest_active,"qst_raid_village"),
 	        (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
 	        (ge, "$g_talk_troop_faction_relation", 2),
-	        (is_between, ":player_level", 2,8),
+	        (is_between, ":player_level", 3,8),
 	        (gt, ":giver_center_no", 0),#Skip if lord is outside the center
 	        (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+ 	    ##Kham - lets force the faction
+	        (try_begin),
+		        (this_or_next|eq, ":giver_center_no", "p_town_morannon"),
+		        (this_or_next|eq, ":giver_center_no", "p_town_cirith_ungol"),
+		        (		      eq, ":giver_center_no", "p_town_khand_camp"),
+		        (assign, reg0, "p_town_minas_tirith"),
+		    (else_try),
+		    	(this_or_next|eq, ":giver_center_no", "p_town_troll_cave"),
+		        (			  eq, ":giver_center_no", "p_town_moria"),
+		        (store_random_in_range, ":town", 0,2),
+		        (try_begin),
+		        	(eq, ":town", 0),
+		        	(assign, reg0, "p_town_urukhai_h_camp"),
+		        (else_try),
+		        	(assign, reg0, "p_town_beorning_village"),
+		        (try_end),
+		    (else_try),
+		        (this_or_next|eq, ":giver_center_no", "p_town_dol_guldur_north_outpost"),
+		        (this_or_next|eq, ":giver_center_no", "p_town_gundabad"),
+		        (			  eq, ":giver_center_no", "p_town_rhun_main_camp"),
+		        (store_random_in_range, ":town", 0,2),
+		        (try_begin),
+		        	(eq, ":town", 0),
+		        	(assign, reg0, "p_town_dale"),
+		        (else_try),
+		        	(assign, reg0, "p_town_ironhill_camp"),
+		        (try_end),
+		    (else_try),
+            	(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (try_end),
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-            (ge, ":dist", 20),
+            #(ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
             (assign, ":quest_object_center", ":cur_object_center"),
@@ -5908,7 +5938,7 @@ scripts = [
             (assign, ":quest_rank_reward", 10),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 5),
-            (assign, ":quest_dont_give_again_period", 5),
+            (assign, ":quest_dont_give_again_period", 7),
           (try_end),
         (else_try), 
         ##Kham: Destroy Scout Camp

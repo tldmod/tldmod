@@ -4006,9 +4006,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone, "marshall_ask", [ #insufficient rank
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
-      (lt, ":rank", 9),
+      (lt, ":rank", 8), #kham - reduced from 9
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
-      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 9), #to s24 (highest rank)
+      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 8), #to s24 (highest rank) #kham - reduced from 9
    ], "I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.", "lord_pretalk",[]],
 [anyone, "marshall_ask", [ #insufficient influence
      (assign, ":siege_command_cost", tld_command_cost_siege),
@@ -4090,7 +4090,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   []],
 
 [anyone, "player_siege_discuss_2", [],
-  "Secondly, you do not have permission to lead our people against an enemy capital. The evil there can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be overcome.", "player_siege_discuss_3",
+  "Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be overcome.", "player_siege_discuss_3",
   []],
 
 [anyone, "player_siege_discuss_3", [(store_troop_faction,":fac", "$g_talk_troop"), (str_store_faction_name, s2, ":fac")],
@@ -5133,9 +5133,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   "Then what are you doing standing around here?","close_window",
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
-      (set_spawn_radius, 25),
-      (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
+      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+      (set_spawn_radius, 15),
+      (spawn_around_party,":quest_target_center",":quest_target_party_template"),
       (assign, "$qst_raid_village_party", reg0),
       (call_script, "script_get_region_of_party", "$qst_raid_village_party"),
       (store_add, reg2, str_shortname_region_begin , reg1),
