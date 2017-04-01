@@ -12,10 +12,10 @@ float contour( in float d, in float w ){
 
 /* just simple macros, could be a bit less messy */
 float samp( in vec2 uv, float w ){
-    return contour( texture2D(diffuse_texture,uv).r, w );
+    return contour( 1.0 - texture2D(diffuse_texture,uv).r, w );
 }
 float intsamp( in vec2 uv, float w ){
-    return intour( texture2D(diffuse_texture,uv).r, w );
+    return intour( 1.0 - texture2D(diffuse_texture,uv).r, w );
 }
 
 
@@ -26,7 +26,7 @@ void main ()
 
     vec2 uv = outTexCoord.xy;
 
-    float dist = texture2D( diffuse_texture, uv ).r;
+    float dist = 1.0 - texture2D( diffuse_texture, uv ).r;
     float width = fwidth(dist);
 
     float alpha = contour( dist, width );
