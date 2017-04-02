@@ -1830,7 +1830,8 @@ scripts = [
 	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
 	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
-	#	(party_add_particle_system, ":beacon", "psys_beacon_fire"),
+	#	(set_position_delta, -3.0,6.0,65.0),
+	#	(party_add_particle_system, ":beacon", "psys_lamp_fire"),
 	#(try_end),
 
 	] + (is_a_wb_script==1 and [
@@ -2035,7 +2036,7 @@ scripts = [
 		 (else_try),(this_or_next|eq, "$g_encountered_party_template", "pt_scout_camp_small"),(eq, "$g_encountered_party_template", "pt_scout_camp_large"),(jump_to_menu, "mnu_scout_camp_quest"), ## TLD Destroy Scout Camp Quests- Kham
 		 (else_try),(eq, "$g_encountered_party", "p_ring_hunter_lair"),(jump_to_menu, "mnu_ring_hunter_lair"), ## TLD Ring Hunters Quest - Lair (kham)
 		 (else_try),(eq, "$g_encountered_party", "p_raft"),(jump_to_menu, "mnu_raftmen"), ## TLD Raftmen - Amath Dollen (Kham)
-		 (else_try),(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"), (eq, "$g_encountered_party", ":beacon"), (jump_to_menu, "mnu_gondor_beacons"),(try_end), ## TLD Gondor Beacons - Kham
+		# (else_try),(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"), (eq, "$g_encountered_party", ":beacon"), (jump_to_menu, "mnu_gondor_beacons"),(try_end), ## TLD Gondor Beacons - Kham
 		 (else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
 		 (else_try),(eq, "$g_encountered_party_template", "pt_mound"),(jump_to_menu, "mnu_burial_mound"), #TLD 808
 		 (else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808

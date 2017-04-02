@@ -264,13 +264,14 @@ parties = [
   ("raft","Raft Men",  icon_ship|pf_hide_defenders|pf_is_static|pf_disabled|pf_always_visible|pf_label_small, no_menu, pt_none,fac_neutral,0,ai_bhvr_hold,0,(-82.05,-197.48),[],170),
 
 ## Gondor Beacons
-  ("amon_din","Amon_Din",icon_gondor_beacon    |pf_is_static|pf_label_small|pf_disabled|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-46.15, 19.18),[],170),
-  ("eilenach","Eilenach",icon_gondor_beacon    |pf_is_static|pf_label_small|pf_disabled|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-36.61, 14.34),[],170),
-  ("nardol","Nardol",icon_gondor_beacon        |pf_is_static|pf_label_small|pf_disabled|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-33.03, 12.83),[],170),
-  ("erelas","Erelas",icon_gondor_beacon        |pf_is_static|pf_label_small|pf_disabled|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-27.33, 11.06),[],170),
-  ("min_rimmon","Min_Rimmon",icon_gondor_beacon|pf_is_static|pf_label_small|pf_disabled|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-24.05, 11.32),[],170),
-  ("calenhad","Calenhad",icon_gondor_beacon    |pf_is_static|pf_label_small|pf_disabled|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-18.36, 10.32),[],170),
-  ("amon_anwar","Amon_Anwar",icon_gondor_beacon|pf_is_static|pf_label_small|pf_disabled|pf_always_visible|pf_hide_defenders, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-13.57, 6.69), [],170),
+  
+  ("amon_din","Amon_Din",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-46.15, 19.18),[],170),
+  ("eilenach","Eilenach",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-36.61, 14.34),[],170),
+  ("nardol","Nardol",icon_gondor_beacon        |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-33.03, 12.83),[],170),
+  ("erelas","Erelas",icon_gondor_beacon        |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-27.33, 11.06),[],170),
+  ("min_rimmon","Min_Rimmon",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-24.05, 11.32),[],170),
+  ("calenhad","Calenhad",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-18.36, 10.32),[],170),
+  ("amon_anwar","Amon_Anwar",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-13.57, 6.69), [],170),
 
 
  # add extra towns before this point 
