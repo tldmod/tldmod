@@ -55,3 +55,4 @@ psys_water_splash_3 = 53
 psys_water_fall_2 = 54
 psys_water_foam = 55
 psys_water_run = 56
+psys_beacon_fire = 57

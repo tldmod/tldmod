@@ -1107,6 +1107,12 @@ triggers = [
 			(eq, "$tld_option_cutscenes",1),
 			(jump_to_menu, "mnu_auto_intro_rohan"),
 		(try_end),
+
+    # Reveal Gondor Beacons
+    (try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
+      (enable_party, ":beacon"),
+    (try_end),
+    
 ]),
 	
 (0.5, 0, 0, [],[#(gt,"$g_fangorn_rope_pulled",-100)],[

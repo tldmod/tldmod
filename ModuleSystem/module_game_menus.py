@@ -8353,6 +8353,21 @@ game_menus = [
    	
 ]),
 
+## Kham - Gondor Reinforcement Event Menu - END
+## Kham - Gondor Beacons Menu - Start
+
+("gondor_beacons",0,
+   "You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (str_store_party_name, s1, "$g_encountered_party"),
+    ],
+   	[("gondor_beacons_close", [], "Leave...", [(change_screen_return)]),
+   	
+]),
+
+## Kham - Gondor Beacons Menu - END
+
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations
 ( "auto_player_garrison",0,"stub","none",

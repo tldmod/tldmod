@@ -174,6 +174,9 @@ slot_agent_mount_orig_rider = 24
 slot_agent_warg_pouncing		= 13
 slot_agent_warg_pounce_time		= 14
 
+# Kham 
+slot_agent_is_running_away		= 25
+
 ########################################################
 ##  FACTION SLOTS          #############################
 ########################################################
