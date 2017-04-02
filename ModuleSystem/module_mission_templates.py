@@ -978,8 +978,8 @@ mission_templates = [ # not used in game
 
 ( "lead_charge",mtf_battle_mode,charge,
   "You lead your men to battle.",
-	[(1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,12,[]),(0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),(4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
+	[(1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,18,[]),(0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,18,[]),(4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
      (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 5th entry, for WARGS
      (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 6th entry, for WARGS
      (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 7th entry, for WARGS
@@ -1024,22 +1024,22 @@ mission_templates = [ # not used in game
 			(troop_get_inventory_slot_modifier,"$horse_mod","trp_player",8),
 			]),
 	(1, 0, 5,  [
-			(lt,"$defender_reinforcement_stage",2),
+			(lt,"$defender_reinforcement_stage",8),
 			(store_mission_timer_a,":mission_time"),
 			(ge,":mission_time",10),
 			(store_normalized_team_count,":num_defenders", 0),
-			(lt,":num_defenders",6)
+			(lt,":num_defenders",10)
 			],[
-			(add_reinforcements_to_entry,0,7),
+			(add_reinforcements_to_entry,0,10),
 			(val_add,"$defender_reinforcement_stage",1)]),
 	(1, 0, 5, [
-			(lt,"$attacker_reinforcement_stage",2),
+			(lt,"$attacker_reinforcement_stage",8),
 			(store_mission_timer_a,":mission_time"),
 			(ge,":mission_time",10),
 			(store_normalized_team_count,":num_attackers", 1),
-			(lt,":num_attackers",6)
+			(lt,":num_attackers",10)
 			],[
-			(add_reinforcements_to_entry,3,7),
+			(add_reinforcements_to_entry,3,10),
 			(val_add,"$attacker_reinforcement_stage",1)]),
   (6, 0 , ti_once, [
       (eq, "$tld_option_formations", 1),
@@ -2379,32 +2379,32 @@ mission_templates = [ # not used in game
 ( "castle_attack_walls_ladder",mtf_battle_mode,-1,
   "You attack the walls of the castle...",
     [# Attacker initial spawn point (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,8,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),
      # Initial defender spawn point (was 11)
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,12,[]),
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
      (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
      (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry
-     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
-     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), #entry 5 for add_reinforcements_to_entry
+     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
+     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
      # Attacker reinforcements (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry
      (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
      (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
      # defender archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
-     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-	 (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-	 (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
-     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
-	 (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]), # team left flank
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
+	 (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
+	 (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,6,[]), # team center
+     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,6,[]),
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]), # team right flank
+	 (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
+     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
+     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
 	],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
@@ -2492,8 +2492,8 @@ mission_templates = [ # not used in game
 			(store_normalized_team_count,":num_attackers",":atkteam"),
 			(val_add,":atkteam",2),
 			(val_add,":entry",1),
-			(lt,":num_attackers",6),
-			(add_reinforcements_to_entry, ":entry", 8),
+			(lt,":num_attackers",10),
+			(add_reinforcements_to_entry, ":entry", 12),
 			(val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
 		(try_end)]),
@@ -2504,8 +2504,8 @@ mission_templates = [ # not used in game
 			(store_normalized_team_count,":num_defenders",":defteam"),
 			(val_add,":defteam",2),
 			(val_add,":entry",1),
-			(lt,":num_defenders",10),
-			(add_reinforcements_to_entry, ":entry", 7), #TLD, was 4, 7
+			(lt,":num_defenders",14),
+			(add_reinforcements_to_entry, ":entry", 10), #TLD, was 4, 7
 			(val_add,"$defender_reinforcement_stage",1),
 		(try_end),
 		(try_begin),

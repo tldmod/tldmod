@@ -835,8 +835,8 @@ float _contour( float d, float w ){
 }
 
 /* just simple macros, could be a bit less messy */
-#define    samp(uv, w)  _contour( tex2D(FontTextureSampler,uv).r, w );
-#define intsamp(uv, w)   _intour( tex2D(FontTextureSampler,uv).r, w );
+#define    samp(uv, w)  _contour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
+#define intsamp(uv, w)   _intour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
 
 PS_OUTPUT ps_font_outline(VS_OUTPUT_FONT In)
 {
@@ -847,7 +847,7 @@ PS_OUTPUT ps_font_outline(VS_OUTPUT_FONT In)
 
     float2 uv = In.Tex0.xy;
 
-    float dist = tex2D( FontTextureSampler, uv ).r;
+    float dist = 1.0 - tex2D( FontTextureSampler, uv ).r;
     float width = fwidth(dist);
 
     float alpha = _contour( dist, width );
@@ -5790,8 +5790,8 @@ float contour( float d, float w ){
 }
 
 /* just simple macros, could be a bit less messy */
-#define    samp(uv, w)  contour( tex2D(FontTextureSampler,uv).r, w );
-#define intsamp(uv, w)   intour( tex2D(FontTextureSampler,uv).r, w );
+#define    samp(uv, w)  contour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
+#define intsamp(uv, w)   intour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
 
 PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
 {
@@ -5802,7 +5802,7 @@ PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
 
     float2 uv = In.Tex0.xy;
 
-    float dist = tex2D( FontTextureSampler, uv ).r;
+    float dist = 1.0 - tex2D( FontTextureSampler, uv ).r;
     float width = fwidth(dist);
 
     float alpha = contour( dist, width );

@@ -950,4 +950,17 @@ particle_systems = [
     ),
 
 
+    ("beacon_fire", psf_billboard_3d|psf_global_emit_dir|psf_always_emit|psf_randomize_size|psf_randomize_rotation, "prt_mesh_beacon_fire",
+     1, 0.35, -0.2, 0.03, 0.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.5, 0.8), (1, 0),        #alpha keys
+     (0.5, 1.0), (1, 0.9),      #red keys
+     (0.5, 0.7),(1, 0.3),       #green keys
+     (0.5, 0.2), (1, 0.0),      #blue keys
+     (0, 0.15),   (0.4, 0.3),   #scale keys
+     (0.04, 0.04, 0.01),      #emit box size
+     (0, 0, 0.5),               #emit velocity
+     0.0,                       #emit dir randomness
+     0,                       #rotation speed
+     0.5                        #rotation damping
+    ),
 ]

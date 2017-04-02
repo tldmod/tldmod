@@ -174,6 +174,9 @@ slot_agent_mount_orig_rider = 24
 slot_agent_warg_pouncing		= 13
 slot_agent_warg_pounce_time		= 14
 
+# Kham 
+slot_agent_is_running_away		= 25
+
 ########################################################
 ##  FACTION SLOTS          #############################
 ########################################################
@@ -884,8 +887,9 @@ slot_trait_command_voice     = 19
 slot_trait_foe_hammer        = 20
 slot_trait_battle_scarred    = 21
 slot_trait_fell_beast        = 22
+slot_trait_butcher			 = 23 #Kham
 slot_trait_first             = slot_trait_elf_friend
-slot_trait_last              = slot_trait_fell_beast
+slot_trait_last              = slot_trait_butcher
 
 
 ########################################################
@@ -1282,7 +1286,7 @@ tld_command_cost_follow = 20
 tld_command_cost_goto   = 5
 tld_command_cost_patrol = 10
 tld_command_cost_engage = 25
-tld_command_cost_siege =  50 #marshalls only
+tld_command_cost_siege =  35 #marshalls only #kham - reduced from 50
 
 
 ####################################################
@@ -1312,7 +1316,7 @@ fac_str_max = 8000
 
 fac_str_guardian = 1700 # was: 1000 # less than this, spawn the guardian party
 
-
+# Kham - Increased Beorn + Moria Fac Strength by 500
 # faction ,initial strength,culture,faction lord,  faction marshall,    [5 tiers of troops],                                                                                                                               [reinforcement templates, prisoner trains],                                       main banner,  map party banner, [slot_faction: deserter_troop, guard_troop, messenger_troop, prison_guard_troop, castle_guard_troop]                                                     faction capital         side              home theater, advance camp
 faction_init = [
 (fac_gondor  ,4500,mtf_culture_gondor       ,[trp_gondor_lord  ,trp_knight_1_3    ],[trp_gondor_commoner,     trp_gondor_militiamen,       trp_footmen_of_gondor,       trp_gondor_swordsmen,          trp_veteran_knight_of_gondor, 			trp_archer_of_gondor  	  		 ],[pt_gondor_reinf_a,  pt_gondor_reinf_b,  pt_gondor_reinf_c,  pt_gondor_p_train],  spr_banner_a, icon_mfp_gondor,  [-1,                      trp_gondor_militiamen,         trp_ranger_of_ithilien,       trp_gondor_swordsmen,           trp_swordsmen_of_the_tower_guard],p_town_minas_tirith,    faction_side_good,theater_SE,p_advcamp_gondor),
@@ -1326,13 +1330,13 @@ faction_init = [
 (fac_lorien  ,4500,mtf_culture_elves        ,[trp_lorien_lord ,trp_lorien_marshall],[trp_lothlorien_scout,    trp_lothlorien_veteran_scout,trp_lothlorien_archer,       trp_lothlorien_veteran_archer, trp_lothlorien_master_archer, 			trp_lothlorien_scout       		 ],[pt_lorien_reinf_a,  pt_lorien_reinf_b,  pt_lorien_reinf_c,  pt_lorien_p_train],  spr_banner_h, icon_mfp_lorien,  [-1,                      trp_lothlorien_infantry,       trp_lothlorien_veteran_scout, trp_lothlorien_veteran_infantry,trp_galadhrim_royal_swordsman],   p_town_caras_galadhon,  faction_side_good,theater_C ,p_advcamp_lorien),
 (fac_imladris,3500,mtf_culture_elves        ,[trp_imladris_lord,trp_imladris_lord ],[trp_rivendell_scout,     trp_rivendell_veteran_scout, trp_rivendell_sentinel,      trp_rivendell_veteran_sentinel,trp_knight_of_rivendell, 				trp_rivendell_scout        		 ],[pt_imladris_reinf_a,pt_imladris_reinf_b,pt_imladris_reinf_c,pt_imladris_p_train],spr_banner_i, icon_mfp_imladris,[-1,                      trp_rivendell_infantry,        trp_rivendell_scout,          trp_rivendell_sentinel,         trp_knight_of_rivendell],         p_town_imladris_camp,   faction_side_good,theater_C ,p_advcamp_imladris),
 (fac_woodelf ,3500,mtf_culture_elves        ,[trp_woodelf_lord ,trp_woodelf_lord  ],[trp_greenwood_scout,     trp_greenwood_veteran_scout, trp_greenwood_archer,        trp_greenwood_veteran_archer,  trp_thranduils_royal_swordsman, 			trp_greenwood_veteran_scout		 ],[pt_woodelf_reinf_a, pt_woodelf_reinf_b, pt_woodelf_reinf_c, pt_woodelf_p_train], spr_banner_j, icon_mfp_woodelf, [-1,                      trp_greenwood_sentinel,        trp_greenwood_scout,          trp_greenwood_veteran_spearman, trp_greenwood_royal_spearman],    p_town_thranduils_halls,faction_side_good,theater_N ,p_advcamp_woodelf),
-(fac_moria   ,2500,mtf_culture_orcs         ,[trp_moria_lord   ,trp_moria_lord    ],[trp_snaga_of_moria,      trp_goblin_of_moria,         trp_large_goblin_of_moria,   trp_fell_goblin_of_moria,      trp_bolg_clan_rider, 					trp_large_goblin_archer_of_moria ],[pt_moria_reinf_a,   pt_moria_reinf_b,   pt_moria_reinf_c,   -1],                 spr_banner_k, icon_mfp_moria,   [trp_snaga_of_moria,      trp_goblin_of_moria,           trp_large_goblin_of_moria,    trp_fell_goblin_of_moria,       trp_fell_goblin_of_moria],        p_town_moria,           faction_side_hand,theater_C ,p_advcamp_moria),
+(fac_moria   ,3000,mtf_culture_orcs         ,[trp_moria_lord   ,trp_moria_lord    ],[trp_snaga_of_moria,      trp_goblin_of_moria,         trp_large_goblin_of_moria,   trp_fell_goblin_of_moria,      trp_bolg_clan_rider, 					trp_large_goblin_archer_of_moria ],[pt_moria_reinf_a,   pt_moria_reinf_b,   pt_moria_reinf_c,   -1],                 spr_banner_k, icon_mfp_moria,   [trp_snaga_of_moria,      trp_goblin_of_moria,           trp_large_goblin_of_moria,    trp_fell_goblin_of_moria,       trp_fell_goblin_of_moria],        p_town_moria,           faction_side_hand,theater_C ,p_advcamp_moria),
 (fac_guldur  ,4500,mtf_culture_orcs         ,[trp_guldur_lord  ,trp_guldur_lord   ],[trp_orc_snaga_of_guldur, trp_orc_of_guldur,           trp_large_orc_of_mordor,     trp_fell_orc_of_mordor,        trp_great_warg_rider_of_mordor, 			trp_orc_archer_of_mordor 		 ],[pt_guldur_reinf_a,  pt_guldur_reinf_b,  pt_guldur_reinf_c,  -1],                 spr_banner_l, icon_mfp_guldur,  [trp_orc_snaga_of_guldur, trp_orc_of_guldur,             trp_orc_of_guldur,            trp_orc_tracker_of_mordor,      trp_fell_orc_tracker_of_mordor],  p_town_dol_guldur,      faction_side_eye ,theater_C ,p_advcamp_guldur),
 (fac_gundabad,3500,mtf_culture_orcs         ,[trp_gundabad_lord,trp_gundabad_lord ],[trp_goblin_gundabad,     trp_orc_gundabad,            trp_orc_fighter_gundabad,    trp_fell_goblin_archer_gundabad,trp_goblin_north_clan_rider,			trp_goblin_bowmen_gundabad  	 ],[pt_gundabad_reinf_a,pt_gundabad_reinf_b,pt_gundabad_reinf_c,-1],                 spr_banner_n, icon_mfp_gundabad,[trp_goblin_gundabad,     trp_orc_gundabad,              trp_fell_orc_warrior_gundabad,trp_goblin_bowmen_gundabad,     trp_goblin_rider_gundabad],       p_town_gundabad,        faction_side_hand,theater_N ,p_advcamp_gundabad),
 (fac_dale    ,3500,mtf_culture_rohan_goodmen,[trp_dale_lord    ,trp_dale_lord     ],[trp_dale_militia,        trp_laketown_scout,          trp_laketown_bowmen,         trp_laketown_archer,           trp_girions_guard_of_dale, 				trp_laketown_scout     			 ],[pt_dale_reinf_a,    pt_dale_reinf_b,    pt_dale_reinf_c,    pt_dale_p_train],    spr_banner_o, icon_mfp_dale,    [-1,                      trp_dale_man_at_arms,          trp_laketown_archer,          trp_dale_warrior,               trp_dale_marchwarden],            p_town_dale,            faction_side_good,theater_N ,p_advcamp_dale),
 (fac_dwarf   ,3500,mtf_culture_rohan_goodmen,[trp_dwarf_lord   ,trp_dwarf_lord    ],[trp_dwarven_apprentice,  trp_dwarven_warrior,         trp_dwarven_hardened_warrior,trp_dwarven_axeman,            trp_grors_guard, 						trp_dwarven_bowman               ],[pt_dwarf_reinf_a,   pt_dwarf_reinf_b,   pt_dwarf_reinf_c,   pt_dwarf_p_train],   spr_banner_p, icon_mfp_dwarf,   [-1,                      trp_dwarven_warrior,           trp_dwarven_spearman,         trp_dwarven_lookout,            trp_dwarven_bowman],              p_town_erebor,          faction_side_good,theater_N ,p_advcamp_dwarf),
 (fac_dunland ,3500,mtf_culture_evilmen      ,[trp_dunland_lord ,trp_dunland_lord  ],[trp_dunnish_wildman,     trp_dunnish_warrior,         trp_dunnish_vet_warrior,     trp_dunnish_wolf_warrior,      trp_dunnish_wolf_guard, 					trp_dunnish_pikeman        		 ],[pt_dunland_reinf_a, pt_dunland_reinf_b, pt_dunland_reinf_c, -1],                 spr_banner_r, icon_mfp_dunland, [trp_dunnish_warrior,     trp_dunnish_pikeman,           trp_dunnish_pikeman,          trp_dunnish_pikeman,            trp_dunnish_pikeman],             p_town_dunland_camp,    faction_side_hand,theater_SW,p_advcamp_dunland),
-(fac_beorn   ,2500,mtf_culture_rohan_goodmen,[trp_beorn_lord   ,trp_beorn_lord    ],[trp_beorning_vale_man,   trp_beorning_warrior,        trp_beorning_carrock_lookout,trp_beorning_carrock_fighter,  trp_beorning_carrock_berserker, 			trp_woodmen_archer 				 ],[pt_beorn_reinf_a,   pt_beorn_reinf_b,   pt_beorn_reinf_c,   -1],                 spr_banner_m, icon_mfp_northmen,[-1,                      trp_beorning_warrior,          trp_beorning_carrock_fighter, trp_woodmen_scout,              trp_woodmen_master_axemen],       p_town_beorn_house,     faction_side_good,theater_N ,p_advcamp_beorn),
+(fac_beorn   ,3000,mtf_culture_rohan_goodmen,[trp_beorn_lord   ,trp_beorn_lord    ],[trp_beorning_vale_man,   trp_beorning_warrior,        trp_beorning_carrock_lookout,trp_beorning_carrock_fighter,  trp_beorning_carrock_berserker, 			trp_woodmen_archer 				 ],[pt_beorn_reinf_a,   pt_beorn_reinf_b,   pt_beorn_reinf_c,   -1],                 spr_banner_m, icon_mfp_northmen,[-1,                      trp_beorning_warrior,          trp_beorning_carrock_fighter, trp_woodmen_scout,              trp_woodmen_master_axemen],       p_town_beorn_house,     faction_side_good,theater_N ,p_advcamp_beorn),
 ]
 
 # feudal troops guarding some Gondor centers
@@ -1402,9 +1406,9 @@ ws_party_spawns_list = [
 (p_town_woodelf_camp    ,pt_woodelf_scouts,       pt_woodelf_raiders,    pt_woodelf_patrol,   pt_woodelf_caravan),
 (p_town_woodelf_west_camp,pt_woodelf_scouts,      pt_woodelf_raiders,    pt_woodelf_patrol,   pt_woodelf_caravan),
 
-(p_town_woodsmen_village,pt_woodmen_scouts,       -1,                      -1,                    -1),
-(p_town_beorning_village,pt_beorn_scouts,         -1,                      -1,                    -1),
-(p_town_beorn_house     ,pt_beorn_scouts,         -1,                      -1,                    -1),
+(p_town_woodsmen_village,pt_woodmen_scouts,       -1,                      -1,                    pt_beorn_caravan),
+(p_town_beorning_village,pt_beorn_scouts,         -1,                      -1,                    pt_beorn_caravan),
+(p_town_beorn_house     ,pt_beorn_scouts,         -1,                      -1,                    pt_beorn_caravan),
 
 (p_town_dale            ,pt_dale_scouts,          pt_dale_raiders,    pt_dale_patrol,      pt_dale_caravan),
 (p_town_esgaroth        ,pt_dale_scouts,          pt_dale_raiders,    pt_esgaroth_patrol,  pt_dale_caravan),
@@ -1456,17 +1460,19 @@ ws_party_spawns_list = [
 ]
 
 # TLD Party base probability to spawn daily per center (0-100), for average faction strength (3500); modified by strength/100-35
-ws_scout_chance = 40
-ws_raider_chance = 30 # no chance below str. 500
-ws_patrol_chance = 20 # no chance below str. 1500
-ws_caravan_chance = 15 # no chance below str. 2000
+# Kham - Increased by 10 (March 2017)
+ws_scout_chance = 50
+ws_raider_chance = 40 # no chance below str. 500
+ws_patrol_chance = 30 # no chance below str. 1500
+ws_caravan_chance = 25 # no chance below str. 2000
 #ws_host_chance = 35
 
 # TLD Party limit multiplier. Maximum number of parties for faction strength 3500 (double that for 7000). (Namely strength*multiplier/3500 is the party number limit)
-ws_scout_limit_multiplier = 14
-ws_raider_limit_multiplier = 9
-ws_patrol_limit_multiplier = 6
-ws_caravan_limit_multiplier = 5
+# Kham - Increased by varied amount (March 2017)
+ws_scout_limit_multiplier = 25 #+11 from 14
+ws_raider_limit_multiplier = 15 #+6 from 9
+ws_patrol_limit_multiplier = 12 #+6 from 6
+ws_caravan_limit_multiplier = 10 #+5 from 5
 #ws_host_limit_multiplier = 4
 
 # TLD Party victory points. Faction strength decreased by these when party is killed, winner gets half of it. (slot_party_victory_value)
@@ -1478,7 +1484,7 @@ ws_alone_vp   = 20  # for hero-led parties (bodyguards only).
 ws_host_vp    = 80  # for hero-led parties (hosts). strength about 1000
 ws_p_train_vp = 30  # strength 150-250
 ws_center_vp  = 100 # loss of center
-ws_guard_vp   = 1000 # guardian party, spawned when str<500, so it can be used to defeat a faction
+ws_guard_vp   = 1850 # guardian party, spawned when str<500, so it can be used to defeat a faction
 
 # Center strength daily incomes (slot_center_strength_income), for easy mass tweaking
 str_income_none = 0
@@ -1834,6 +1840,8 @@ lords_spawn = [ (trp_knight_1_1, p_town_calembel),
                 (trp_knight_5_3, p_town_esgaroth),
                 (trp_knight_5_1, p_town_dale),
                 (trp_knight_5_2, p_town_dale),
+                (trp_knight_6_1, p_town_calembel),
+                (trp_knight_6_2, p_town_pinnath_gelin),
 ]
 
 #### banner colors #0-130
@@ -1971,6 +1979,8 @@ formation_wedge		= 4
 formation_square	= 5
 
 #Formation tweaks
+formation_minimum_spacing_horse_length	= 300
+formation_minimum_spacing_horse_width	= 200
 formation_minimum_spacing	= 67
 formation_start_spread_out	= 2
 formation_min_foot_troops	= 12
@@ -1987,12 +1997,27 @@ key_for_wedge	= key_l
 key_for_square	= key_semicolon
 key_for_undo	= key_u
 
+#Kham - Formations Additions START
+slot_team_d0_type                       = 185 
+#Presentations Constants Moto chief
+Screen_Border_Width = 24
+Screen_Width = 1024-Screen_Border_Width
+Screen_Height = 768-Screen_Border_Width
+Screen_Text_Height = 35
+Screen_Checkbox_Height_Adj = 4
+Screen_Numberbox_Width = 64
+Screen_Title_Height = Screen_Height-Screen_Border_Width-Screen_Text_Height
+Screen_Check_Box_Dimension = 20
+Screen_Undistort_Width_Num = 7  #distortion midway between 1024x768 and 1366x768 -- things will appear a little narrow on thin screens and vice versa
+Screen_Undistort_Width_Den = 8
+
+#Kham - Formations Additions END
 
 ###FormAI_constants:
 #AI variables
-AI_long_range	= 13000	#do not put over 130m if you want archers to always fire
+AI_long_range	= 8000	#do not put over 130m if you want archers to always fire
 AI_firing_distance	= AI_long_range / 2
-AI_charge_distance	= 2000
+AI_charge_distance	= 1700
 AI_Self_Defence_Distance = 1000 #range for preparing for self defense, JL
 AI_for_kingdoms_only	= 1
 Weapon_Length_Proxy	= 100
@@ -2169,10 +2194,10 @@ tld_rout_party_spawn_ratio_denominator	= 100
 # Party count option in tweaks menu
 
 tld_party_count_option_increment	= 10
-tld_party_count_option_max		= 1500
-tld_party_count_option_min		= 800
-tld_party_count_option_high_crash	= 1101
-tld_party_count_option_med_crash	= 950
+tld_party_count_option_max		= 2000
+tld_party_count_option_min		= 950
+tld_party_count_option_high_crash	= 1501
+tld_party_count_option_med_crash	= 1200
 
 # Hero parties smaller than this will not siege...
 

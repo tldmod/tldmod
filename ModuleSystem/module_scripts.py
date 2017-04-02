@@ -1818,7 +1818,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 1000), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
@@ -1827,9 +1827,22 @@ scripts = [
 	(assign, "$formations_tutorial", 0), #Kham - Formations Tutorial.
 	(assign, "$total_kills",0), #Kham - Kill Counter
 	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
+	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
+	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
+	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
+	#	(set_position_delta, -3.0,6.0,65.0),
+	#	(party_add_particle_system, ":beacon", "psys_lamp_fire"),
+	#(try_end),
 
 	] + (is_a_wb_script==1 and [
 	(call_script, "script_init_camera"),	 #Custom Camera Initialize
+    #Kham -  Reassign divisions
+	(try_for_range, ":troop_no", soldiers_begin, soldiers_end),
+	  (call_script, "script_troop_default_division", ":troop_no", 0),
+	  (troop_get_class, ":division", ":troop_no"),
+	  (neq, ":division", reg0),
+	  (troop_set_class, ":troop_no", reg0),
+	(try_end),
 	] or []) + [
 ]),    
 
@@ -2023,6 +2036,7 @@ scripts = [
 		 (else_try),(this_or_next|eq, "$g_encountered_party_template", "pt_scout_camp_small"),(eq, "$g_encountered_party_template", "pt_scout_camp_large"),(jump_to_menu, "mnu_scout_camp_quest"), ## TLD Destroy Scout Camp Quests- Kham
 		 (else_try),(eq, "$g_encountered_party", "p_ring_hunter_lair"),(jump_to_menu, "mnu_ring_hunter_lair"), ## TLD Ring Hunters Quest - Lair (kham)
 		 (else_try),(eq, "$g_encountered_party", "p_raft"),(jump_to_menu, "mnu_raftmen"), ## TLD Raftmen - Amath Dollen (Kham)
+		# (else_try),(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"), (eq, "$g_encountered_party", ":beacon"), (jump_to_menu, "mnu_gondor_beacons"),(try_end), ## TLD Gondor Beacons - Kham
 		 (else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
 		 (else_try),(eq, "$g_encountered_party_template", "pt_mound"),(jump_to_menu, "mnu_burial_mound"), #TLD 808
 		 (else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808
@@ -5850,9 +5864,10 @@ scripts = [
           (try_begin),
       	    (neg|check_quest_active,"qst_defend_village"),
             (faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
-            (neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
+            (this_or_next|neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
+            (neq, ":giver_faction_no", "fac_lorien"), #No villages near Lorien
             (ge, "$g_talk_troop_faction_relation", 2),
-            (is_between, ":player_level", 2,8),
+            (is_between, ":player_level", 3,8),
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
             (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
@@ -5870,8 +5885,8 @@ scripts = [
             (assign, ":quest_gold_reward", 200),
             (assign, ":quest_rank_reward", 10),
             (assign, ":result", ":quest_no"),
-            (assign, ":quest_expiration_days", 5),
-            (assign, ":quest_dont_give_again_period", 5),
+            (assign, ":quest_expiration_days", 2),
+            (assign, ":quest_dont_give_again_period", 7),
           (try_end),
         (else_try),
         ##Kham: Raid village
@@ -5880,15 +5895,88 @@ scripts = [
           	(neg|check_quest_active,"qst_raid_village"),
 	        (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
 	        (ge, "$g_talk_troop_faction_relation", 2),
-	        (is_between, ":player_level", 2,8),
+	        (is_between, ":player_level", 3,8),
 	        (gt, ":giver_center_no", 0),#Skip if lord is outside the center
 	        (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+ 	    ##Kham - lets force the faction
+	        (try_begin),
+		        (this_or_next|eq, ":giver_center_no", "p_town_morannon"),
+		        (this_or_next|eq, ":giver_center_no", "p_town_cirith_ungol"),
+		        (		      eq, ":giver_center_no", "p_town_khand_camp"),
+		        (store_random_in_range, ":town", 0,2),
+		        (try_begin),
+		        	(eq, ":town", 0),
+		        	(assign, reg0, "p_town_minas_tirith"),
+		        (else_try),
+		        	(assign, reg0, "p_town_east_emnet"),
+		        (try_end),
+		    (else_try),
+		        (this_or_next|eq, ":giver_faction_no", "fac_moria"),
+		        (			  eq, ":giver_center_no", "p_town_dol_guldur"),
+		        (assign, reg0, "p_town_urukhai_h_camp"),
+		    (else_try),
+		        (eq, ":giver_center_no", "p_town_rhun_main_camp"),
+		        (store_random_in_range, ":town", 0,2),
+		        (try_begin),
+		        	(eq, ":town", 0),
+		        	(assign, reg0, "p_town_dale"),
+		        (else_try),
+		        	(assign, reg0, "p_town_ironhill_camp"),
+		        (try_end),
+		    (else_try),
+		    	(eq, ":giver_center_no", "p_town_gundabad"),
+		        (store_random_in_range, ":town", 0,2),
+		        (try_begin),
+		        	(eq, ":town", 0),
+		        	(assign, reg0, "p_town_beorning_village"),
+		        (else_try),
+		        	(assign, reg0, "p_town_ironhill_camp"),
+		        (try_end),
+		    (else_try),
+		    	(this_or_next|eq, ":giver_faction_no", "fac_isengard"),
+		    	(			  eq, ":giver_faction_no", "fac_dunland"),
+		    	(store_random_in_range, ":town", 0,3),
+		    	(try_begin),
+		    		(eq,":town", 0),
+		    		(assign, reg0, "p_town_edoras"),
+		    	(else_try),
+		    		(eq, ":town",1),
+		    		(assign, reg0, "p_town_west_emnet"),
+		    	(else_try),
+		    		(assign, reg0, "p_town_east_emnet"),
+		    	(try_end),
+		    (else_try),
+		    	(eq, ":giver_faction_no", "fac_harad"),
+		    	(store_random_in_range, ":town", 0,3),
+		    	(try_begin),
+		    		(eq,":town", 0),
+		    		(assign, reg0, "p_town_pelargir"),
+		    	(else_try),
+		    		(eq, ":town",1),
+		    		(assign, reg0, "p_town_lossarnach"),
+		    	(else_try),
+		    		(assign, reg0, "p_town_linhir"),
+		    	(try_end),
+		    (else_try),
+		    	(eq, ":giver_faction_no", "fac_umbar"),
+		    	(store_random_in_range, ":town", 0,3),
+		    	(try_begin),
+		    		(eq,":town", 0),
+		    		(assign, reg0, "p_town_pelargir"),
+		    	(else_try),
+		    		(eq, ":town",1),
+		    		(assign, reg0, "p_town_tarnost"),
+		    	(else_try),
+		    		(assign, reg0, "p_town_linhir"),
+		    	(try_end),
+		    (else_try),
+            	(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+            (try_end),
             (assign, ":cur_target_center", reg0),
             (assign, ":dist", reg1),
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-            (ge, ":dist", 20),
+            #(ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
             (assign, ":quest_target_party_template", "pt_village"),
             (assign, ":quest_object_center", ":cur_object_center"),
@@ -5898,8 +5986,8 @@ scripts = [
             (assign, ":quest_gold_reward", 200),
             (assign, ":quest_rank_reward", 10),
             (assign, ":result", ":quest_no"),
-            (assign, ":quest_expiration_days", 5),
-            (assign, ":quest_dont_give_again_period", 5),
+            (assign, ":quest_expiration_days", 3),
+            (assign, ":quest_dont_give_again_period", 7),
           (try_end),
         (else_try), 
         ##Kham: Destroy Scout Camp
@@ -20699,6 +20787,12 @@ command_cursor_scripts = [
      (try_end),
 	 (assign, reg0, ":res"),
 	 (assign, reg1, ":dist"),
+]),
+
+#script_cf_gain_trait_butcher
+("cf_gain_trait_butcher",[
+    (troop_slot_eq, "trp_traits", slot_trait_butcher, 0),
+    (call_script, "script_gain_trait", slot_trait_butcher),
 ]),
 
 ]

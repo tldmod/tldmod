@@ -2663,6 +2663,22 @@ game_menus = [
         (display_message, "@Gothmog besieges Edoras!", 0x30FFC8),
         (change_screen_map),
       ]),
+     ("order_siege_cairandros",[
+        (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_is_active, ":king_party"),
+     ],"Order Gothmog to besiege Cair Andros.",
+      [ (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
+        (party_detach, ":king_party"),
+        (party_relocate_near_party, ":king_party", "p_town_cair_andros", 0),
+        (party_set_slot, "p_town_cair_andros", slot_center_is_besieged_by, ":king_party"),
+        (call_script, "script_party_set_ai_state", ":king_party", spai_besieging_center, "p_town_cair_andros"),
+        (party_set_ai_behavior, ":king_party", ai_bhvr_attack_party),
+        (party_set_ai_object, ":king_party", "p_town_cair_andros"),
+        (party_set_flags, ":king_party", pf_default_behavior, 1),
+        (party_set_slot, ":king_party", slot_party_ai_substate, 1),
+        (display_message, "@Gothmog besieges Cair Andros!", 0x30FFC8),
+        (change_screen_map),
+      ]),
 	("order_siege_pelargir",[
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
         (party_is_active, ":king_party"),
@@ -3043,6 +3059,16 @@ game_menus = [
     	 	(spawn_around_party, ":target_party", "pt_gondor_company"),
     	 (try_end),
     	 (display_message, "@Target Party and Ally Spawned!")]),
+    ("player_control_allies",[
+    	(try_begin),
+    		(eq, "$player_control_allies",0),
+    		(str_store_string, s7, "@OFF"),
+    	(else_try),
+    		(str_store_string, s7, "@ON"),
+    	(try_end),
+    	],"Let Player Command Allies: {s7}", [
+    	(store_sub, "$player_control_allies",1, "$player_control_allies"), 
+    	(val_clamp, "$player_control_allies",0,2)]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -3642,7 +3668,16 @@ game_menus = [
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("defend_village", [], "Defend Village", [(assign, "$cheat_imposed_quest", "qst_defend_village")]),
 	("raid_village", [], "Raid Village", [(assign, "$cheat_imposed_quest", "qst_raid_village")]),
-    ("eliminate_patrols", [], "Eliminate Patrols", [(assign, "$cheat_imposed_quest", "qst_eliminate_patrols")])
+    ("eliminate_patrols", [], "Eliminate Patrols", [(assign, "$cheat_imposed_quest", "qst_eliminate_patrols")]),
+    ("eliminate_troll", [], "Dispatch Troll", [
+    	(try_begin),
+    		(store_faction_of_party, ":fac", "p_main_party"),
+    		(faction_slot_eq, ":fac",slot_faction_side, faction_side_good),
+    		(assign, "$cheat_imposed_quest", "qst_kill_troll"),
+    	(else_try),
+    		(assign, "$cheat_imposed_quest", "qst_capture_troll"),
+    	(try_end)
+    ])
     ]+[("mi21",[(str_store_quest_name,s21,x)],"{s21}",[(assign,"$cheat_imposed_quest",x),(jump_to_menu, "mnu_cheat_impose_quest")]) for x in range(qst_quests_end) ]+[
   ]),
   
@@ -4097,6 +4132,8 @@ game_menus = [
 			#(str_store_string, s2,"@A group of {s1}  are {reg10?riding:marching} toward you."),
           (else_try),
 			(eq, "$new_encounter", 1),
+			(this_or_next|eq, "$g_encountered_party_template", "pt_wild_troll"),
+			(this_or_next|eq, "$g_encountered_party_template", "pt_raging_trolls"),
 			(eq, "$encountered_party_hostile", 1),
 			(neg|encountered_party_is_attacker),
             (str_store_string, s2,"@You are attacking a group of {s1}."),
@@ -6019,7 +6056,7 @@ game_menus = [
 	  ,"Get the book"),
 	  ##Kham - Player Initiated Siege BEGIN
 	  ("player_castle_initiate_siege",
-	 	[(eq, "$cheat_mode",1),
+	 	[#(eq, "$cheat_mode",1),
 	 	 (eq, "$player_allowed_siege",1), #Kham - Global Var that allows player to siege. Set in Dialogues.
 	 	 (store_faction_of_party, ":faction_no", "$g_encountered_party"),
 	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #Check Faction Strength
@@ -7074,6 +7111,12 @@ game_menus = [
         (try_end),
 		(assign, "$current_town","$g_encountered_party"),   # mtarini...  was:(store_encountered_party,"$current_town"),
 		
+		(try_begin),
+			(eq, "$cheat_mode",1),
+			(str_store_party_name, s29, "$current_town"),
+			(display_message, "@{s29}"),
+		(try_end),
+		
         (call_script, "script_update_center_recon_notes", "$current_town"),
         (assign, "$g_defending_against_siege", 0),
         (str_clear, s3),
@@ -7200,8 +7243,12 @@ game_menus = [
        ("town_approach",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
           (this_or_next|eq,"$entry_to_town_forbidden",0),
           (eq, "$sneaked_into_town",1),
-		  (try_begin),   # elder troop stores center common name in plural register
-		    (neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
+		  (try_begin), #kham fix for some weird elder switching that occurs...
+		  	(eq, "$current_town", "p_town_cair_andros"),
+		  	(party_set_slot, "p_town_cair_andros", slot_town_elder, "trp_elder_cairandros"),
+		  	(str_store_troop_name_plural, s1, "trp_elder_cairandros"),
+		  (else_try), # elder troop stores center common name in plural register
+		  	(neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
 			(party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
 		    (str_store_troop_name_plural, s1, ":elder_troop"),
 		  (else_try),
@@ -8306,6 +8353,21 @@ game_menus = [
    	
 ]),
 
+## Kham - Gondor Reinforcement Event Menu - END
+## Kham - Gondor Beacons Menu - Start
+
+("gondor_beacons",0,
+   "You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (str_store_party_name, s1, "$g_encountered_party"),
+    ],
+   	[("gondor_beacons_close", [], "Leave...", [(change_screen_return)]),
+   	
+]),
+
+## Kham - Gondor Beacons Menu - END
+
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations
 ( "auto_player_garrison",0,"stub","none",
@@ -8849,13 +8911,20 @@ game_menus = [
 	        (try_end),
 
 		#Set Which Scene Village is at
-	 	## Get Theater of Village
+	 	## Get Region of Village
 		 	(try_begin),
 			 	(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 	        	(assign, ":village_scene", "scn_village_rohan"),
 	        (else_try),
 	        	(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 	        	(assign, ":village_scene", "scn_village_gondor"),
+	        (else_try),
+	        	(eq, "$current_player_region", region_anduin_banks),
+	        	(assign, ":village_scene", "scn_village_anduin"),
+	        (else_try),
+	        	(this_or_next|eq, "$current_player_region", region_above_mirkwook),
+	        	(			  eq, "$current_player_region", region_grey_mountains),
+	        	(assign, ":village_scene", "scn_village_north"),
 	 #Randomize Scene
 	 		(else_try),
 		        (store_random_in_range, ":random_scene", 1, 3),
@@ -8911,14 +8980,20 @@ game_menus = [
 	        (assign, ":guard_troop_3", "trp_farmer"),
 		
 		#Set Which Scene Village is at
-	 	## Get Theater of Village
-	 		(faction_get_slot, ":home_theater", ":raid_village_faction", slot_faction_home_theater),
+	 	## Get Region of Village
 		 	(try_begin),
-			 	(eq, ":home_theater", theater_SW),
+			 	(is_between, "$current_player_region", region_harrowdale, region_misty_mountains),
 	        	(assign, ":village_scene", "scn_village_rohan"),
 	        (else_try),
-	   	    	(eq, ":home_theater", theater_SE),
+	        	(is_between, "$current_player_region", region_pelennor, region_harrowdale),
 	        	(assign, ":village_scene", "scn_village_gondor"),
+	        (else_try),
+	        	(eq, "$current_player_region", region_anduin_banks),
+	        	(assign, ":village_scene", "scn_village_anduin"),
+	        (else_try),
+	        	(this_or_next|eq, "$current_player_region", region_above_mirkwook),
+	        	(			  eq, "$current_player_region", region_grey_mountains),
+	        	(assign, ":village_scene", "scn_village_north"),
 	 #Randomize Scene
 	 		(else_try),
 		        (store_random_in_range, ":random_scene", 1, 3),
@@ -8938,12 +9013,12 @@ game_menus = [
 	        (store_add, ":min_guards", ":level", 10),
 	        (store_add, ":max_guards", ":min_guards", 6),
 	        (store_random_in_range, ":random_no", ":min_guards", ":max_guards"),
-	        (set_jump_entry, 0), 
-	        (set_visitor, 0, "trp_player"),
-	        (set_visitors, 18, ":guard_troop_1", ":random_no"),
+	        (set_jump_entry, 16), 
+	        (set_visitor, 16, "trp_player"),
+	        (set_visitors, 10, ":guard_troop_1", ":random_no"),
 	        (val_div,":random_no",6),
-	        (set_visitors, 16, ":guard_troop_2", ":random_no"),
-	        (set_visitors, 16, ":guard_troop_3", 6),
+	        (set_visitors,11, ":guard_troop_2", ":random_no"),
+	        (set_visitors, 11, ":guard_troop_3", 6),
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
 	        (assign, "$g_battle_result", 0),

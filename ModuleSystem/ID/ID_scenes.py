@@ -312,3 +312,5 @@ scn_gundabad_mirkwood_outpost_siege = 310
 scn_dol_guldur_north_outpost_center_siege = 311
 scn_goblin_north_outpost_center_siege = 312
 scn_goblin_south_outpost_center_siege = 313
+scn_village_anduin = 314
+scn_village_north = 315

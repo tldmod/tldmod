@@ -321,4 +321,7 @@ map_icons = map_icons_scribbler + [
   ("nazgul" , 0, "black_rider", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("shrubbery",0,"icon_shrubbery", 1,0), # for designating impassable forest
 
+# Gondor Beacons
+  ("gondor_beacon",mcn_no_shadow,"gondor_beacon_1", 1,0),
+
 ]

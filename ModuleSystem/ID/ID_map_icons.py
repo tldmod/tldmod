@@ -249,3 +249,4 @@ icon_empty = 247
 icon_gandalf = 248
 icon_nazgul = 249
 icon_shrubbery = 250
+icon_gondor_beacon = 251

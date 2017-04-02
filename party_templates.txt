@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-252
+253
 pt_none none 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 74 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -9,8 +9,8 @@ pt_ruins Ruins 141 0 1 7 25 1 1 0 -1 -1 -1 -1 -1
 pt_legendary_place Legendary_Place 136 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_mound Hero_Mound 2114735 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_pyre Hero_Pyre 2114735 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
-pt_wild_troll Wild_Troll 262271 0 1 494 352 1 2 0 -1 -1 -1 -1 -1 
-pt_raging_trolls Raging_Trolls 262271 0 1 494 352 1 3 0 -1 -1 -1 -1 -1 
+pt_wild_troll Wild_Troll 262271 0 26 494 352 1 2 0 -1 -1 -1 -1 -1 
+pt_raging_trolls Raging_Trolls 262271 0 26 494 352 1 3 0 -1 -1 -1 -1 -1 
 pt_looters Tribal_Orcs 1125899906842747 0 2 494 395 0 1 0 394 2 25 0 -1 -1 -1 -1 
 pt_forest_bandits Orc_Stragglers 1125899906842747 0 2 494 396 0 1 0 395 0 8 0 394 3 40 0 393 1 30 0 -1 -1 
 pt_mountain_bandits Wild_Goblins 1125899906842747 0 2 494 393 2 40 0 -1 -1 -1 -1 -1 
@@ -92,7 +92,7 @@ pt_pinnath_patrol Pinnath_Patrol 562949957615721 0 3 238 150 1 1 0 149 3 6 0 147
 pt_lamedon_patrol Lamedon_Patrol 562949957615726 0 3 238 144 1 1 0 143 3 6 0 142 3 6 0 141 8 20 0 140 10 24 0 -1 
 pt_mordor_war_party Mordor_War_Party 844424934326353 0 6 238 351 1 2 0 346 10 22 0 345 16 36 0 359 20 40 0 368 40 60 0 354 0 3 0 
 pt_isengard_war_party Isengard_War_Party 844424934326354 0 7 238 343 1 2 0 335 3 6 0 340 3 6 0 334 15 25 0 320 5 10 0 353 0 3 0 
-pt_harad_war_party Harad_War_Party 844424934326361 0 12 238 250 2 4 0 259 2 4 0 262 2 4 0 254 8 16 0 257 10 20 0 247 20 40 0 
+pt_harad_war_party Harad_War_Party 844424934326359 0 12 238 250 2 4 0 259 2 4 0 262 2 4 0 254 8 16 0 257 10 20 0 247 20 40 0 
 pt_dunland_war_party Dunlending_Warband 844424934326366 0 19 238 274 2 4 0 270 6 12 0 268 12 24 0 271 10 20 0 267 20 50 0 -1 
 pt_khand_war_party Variag_War_Party 844424934326361 0 14 238 281 2 4 0 285 2 4 0 280 5 10 0 279 8 16 0 282 10 20 0 278 20 40 0 
 pt_moria_war_party Moria_War_Party 844424934326363 0 16 238 377 5 10 0 379 10 20 0 376 12 24 0 375 15 30 0 374 20 50 0 352 1 2 0 
@@ -252,3 +252,4 @@ pt_village Village 2376839 0 1 7 25 1 1 0 -1 -1 -1 -1 -1
 pt_ring_hunters Ring_Hunters 562949953683555 0 1 494 896 1 1 0 898 10 15 0 285 10 15 0 900 12 20 0 901 20 35 0 899 15 30 0 
 pt_scout_camp_small Scout_Camp 2376874 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
 pt_scout_camp_large Fortified_Scout_Camp 2376875 0 1 7 25 1 1 0 -1 -1 -1 -1 -1 
+pt_beorn_caravan Woodsmen_Caravan 2814749771301004 0 20 14 41 1 5 0 36 5 10 0 32 4 8 0 35 8 16 0 31 18 30 0 -1 

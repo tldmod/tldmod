@@ -43,8 +43,8 @@ party_templates = [
 # ("manhunters","Manhunters",icon_generic_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,9,40)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
-("wild_troll",       "Wild Troll",          icon_wild_troll   |pf_quest_party,  0,fac_commoners,bandit_personality,[(trp_troll_of_moria,1,2),]),
-("raging_trolls",    "Raging Trolls",       icon_wild_troll   |pf_quest_party,  0,fac_outlaws  ,bandit_personality,[(trp_troll_of_moria,1,3),]),
+("wild_troll",       "Wild Troll",          icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_troll_of_moria,1,2),]),
+("raging_trolls",    "Raging Trolls",       icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_troll_of_moria,1,3),]),
 ("looters",          "Tribal Orcs",         icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
 ("forest_bandits",   "Orc Stragglers",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
 ("mountain_bandits", "Wild Goblins",        icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_mountain_goblin,2,40)]),
@@ -149,7 +149,7 @@ party_templates = [
 # Used as patrols, except Dale 
 ("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x4          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_uruk_mordor_standard_bearer,1,2),(trp_large_uruk_of_mordor,10,22),(trp_uruk_of_mordor,16,36),(trp_orc_of_mordor,20,40),(trp_orc_archer_of_mordor,40,60),(trp_olog_hai,0,3)]), #310-658
 ("isengard_war_party","Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_urukhai_standard_bearer,1,2),(trp_fighting_uruk_hai_berserker,3,6),(trp_fighting_uruk_hai_champion,3,6),(trp_fighting_uruk_hai_tracker,15,25),(trp_wolf_rider_of_isengard,5,10),(trp_armoured_troll,0,3)]), #275-550
-("harad_war_party"   ,"Harad_War_Party"   ,icon_cataphract_x3    |carries_goods(3)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_harad_tiger_guard,2,4),(trp_fang_heavy_cavalry,2,4),(trp_gold_serpent_horse_archer,2,4),(trp_harad_archer,8,16),(trp_harondor_rider,10,20),(trp_harad_desert_warrior,20,40)]), #268-536
+("harad_war_party"   ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_harad_tiger_guard,2,4),(trp_fang_heavy_cavalry,2,4),(trp_gold_serpent_horse_archer,2,4),(trp_harad_archer,8,16),(trp_harondor_rider,10,20),(trp_harad_desert_warrior,20,40)]), #268-536
 ("dunland_war_party" ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3)|pf_show_faction,0,fac_dunland ,soldier_personality,[(trp_dunnish_wolf_guard,2,4),(trp_dunnish_veteran_pikeman,6,12),(trp_dunnish_warrior,12,24),(trp_dunnish_raven_rider,10,20),(trp_dunnish_wildman,20,50)]), #214-448 weak
 ("khand_war_party"   ,"Variag_War_Party"   ,icon_cataphract_x3   |carries_goods(3)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_easterling_axe_master,2,4),(trp_easterling_horsemaster,2,4),(trp_easterling_veteran_axeman,5,10),(trp_easterling_axeman,8,16),(trp_easterling_rider,10,20),(trp_easterling_warrior,20,40)]), #277-554
 #("corsair_war_party" ,"Corsair_War_Party" ,icon_umbar_corsair_x3 |carries_goods(3),0,fac_umbar   ,soldier_personality,[(trp_pike_master_of_umbar   ,20,50),(trp_corsair_veteran_raider,15,30),(trp_veteran_pikeman_of_umbar,13,36),(trp_master_marksman_of_umbar,5,30),(trp_corsair_veteran_marauder,5,40),(trp_master_assassin_of_umbar,5,20)]),
@@ -394,4 +394,6 @@ party_templates = [
 ("scout_camp_small","Scout Camp",icon_nomadcamp_b| pf_quest_party| pf_hide_defenders|pf_is_static|pf_always_visible,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
 ("scout_camp_large","Fortified Scout Camp",icon_orctower| pf_quest_party| pf_hide_defenders|pf_is_static|pf_always_visible,0,fac_commoners,merchant_personality,[(trp_farmer,1,1)]),
 
+##Kham Beorning Caravans Start
+("beorn_caravan"    ,"Woodsmen Caravan"      ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_beorn    ,prisoner_train_personality,[(trp_beorning_sentinel,1,5),(trp_woodmen_archer,5,10),(trp_woodmen_axemen,4,8),(trp_woodmen_scout,8,16),(trp_woodmen_skilled_forester,18,30)]), # strength 198-399
 ]

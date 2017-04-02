@@ -4006,9 +4006,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone, "marshall_ask", [ #insufficient rank
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
-      (lt, ":rank", 9),
+      (lt, ":rank", 8), #kham - reduced from 9
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
-      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 9), #to s24 (highest rank)
+      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 8), #to s24 (highest rank) #kham - reduced from 9
    ], "I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.", "lord_pretalk",[]],
 [anyone, "marshall_ask", [ #insufficient influence
      (assign, ":siege_command_cost", tld_command_cost_siege),
@@ -4033,7 +4033,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone, "marshall_ask", [], "I'm listening, {playername}. What do you suggest?", "marshall_suggest",[]],
 
 ##Kham - Player initiated sieges BEGIN
-[anyone|plyr, "marshall_suggest", [(eq, "$cheat_mode", 1)],
+[anyone|plyr, "marshall_suggest", [
+  #(eq, "$cheat_mode", 1)
+  ],
   "I wish to lead our men in an assault on an enemy settlement.", "player_siege_ask",
   []],
 ##Kham - Player Initiated Sieges cont'd below
@@ -4088,7 +4090,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   []],
 
 [anyone, "player_siege_discuss_2", [],
-  "Secondly, you do not have permission to lead our people against an enemy capital. The evil there can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be overcome.", "player_siege_discuss_3",
+  "Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be overcome.", "player_siege_discuss_3",
   []],
 
 [anyone, "player_siege_discuss_3", [(store_troop_faction,":fac", "$g_talk_troop"), (str_store_faction_name, s2, ":fac")],
@@ -5080,13 +5082,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (set_spawn_radius, 10),
       (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
       (assign, "$qst_defend_village_party", reg0),
-      (call_script, "script_get_region_of_party", "$qst_defend_village_party"),
-      (store_add, reg2, str_shortname_region_begin , reg1),
-      (str_store_string,s1,reg2),
+      (str_store_party_name, s1, ":quest_giver_center"),
       (quest_get_slot, reg3, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),
       (setup_quest_text,"$random_quest_no"),
-      #(str_store_party_name, s3, ":quest_giver_center"),
       (str_store_string, s2, "@{s9} asked you to defend a village under attack near {s1}."),
       (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
       (call_script, "script_change_player_relation_with_troop","$g_talk_troop",1),
@@ -5131,13 +5130,11 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   "Then what are you doing standing around here?","close_window",
       [
       (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
-      (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
-      (set_spawn_radius, 25),
-      (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
+      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+      (set_spawn_radius, 15),
+      (spawn_around_party,":quest_target_center",":quest_target_party_template"),
       (assign, "$qst_raid_village_party", reg0),
-      (call_script, "script_get_region_of_party", "$qst_raid_village_party"),
-      (store_add, reg2, str_shortname_region_begin , reg1),
-      (str_store_string,s1,reg2),
+      (str_store_party_name, s1, ":quest_target_center"),
       (quest_get_slot, reg3, "$random_quest_no", slot_quest_expiration_days),
       (str_store_troop_name_link,s9,"$g_talk_troop"),
       (str_store_party_name, s3, ":quest_target_center"),
@@ -10115,7 +10112,20 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		#(agent_deliver_damage_to_agent, reg1, ":agent"),
 	(try_end),
 	(party_remove_prisoners, "p_main_party", "$g_talk_troop", 1),
-	(troop_add_item,"trp_player", "itm_human_meat",imod_fresh)]],
+  (try_begin),
+    (lt, "$butcher_trait_kills",35),
+    (val_add, "$butcher_trait_kills",1),
+  (else_try),
+    (eq, "$butcher_trait_kills", 35),
+    (call_script, "script_cf_gain_trait_butcher"),
+  (try_end),
+  (try_begin),
+    (troop_slot_eq, "trp_traits",  slot_trait_butcher,1),
+	  (troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
+    (troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
+  (else_try),
+    (troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
+  (try_end)]],
 
 [anyone,"start", [(this_or_next|is_between,"$g_talk_troop",weapon_merchants_begin,weapon_merchants_end),
                     #(this_or_next|is_between,"$g_talk_troop",armor_merchants_begin, armor_merchants_end),

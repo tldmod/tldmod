@@ -1,5 +1,5 @@
 scenesfile version 1
- 314
+ 316
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1256,3 +1256,11 @@ scn_goblin_south_outpost_center_siege goblin_south_outpost_center_siege 256 none
   0 
   0 
  outer_mountains2west 
+scn_village_anduin village_anduin 256 none none 0 0 100 100 -100 0x0000000037220db18006a5aa000061bc80003a9600004852 
+  0 
+  0 
+ outer_terrain_plain 
+scn_village_north village_north 256 none none 0 0 100 100 -100 0x000000003926c9370007b5ed00006fbf0000026d00001a96 
+  0 
+  0 
+ outer_terrain_plain 
