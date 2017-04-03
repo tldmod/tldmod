@@ -350,4 +350,5 @@ sounds = [
 ("new_rank_evil", sf_2d|sf_vol_7, ["new_rank_evil.wav"]),
 ("new_rank_good", sf_2d|sf_vol_7, ["new_rank_good.wav"]),
 
+("woman_yell",sf_priority_5|sf_vol_10, ["woman_yell_1.ogg", "woman_yell_2.ogg"]),  
 ]

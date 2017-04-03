@@ -1697,7 +1697,7 @@ mission_templates = [ # not used in game
 
 #kham - Ring Hunters - End
 
-### Defend / Raid Village MT Start (kham)###
+### Defend Village MT Start (kham)###
 
  (
     "village_attack_bandits",mtf_battle_mode|mtf_synch_inventory,charge,
@@ -1766,7 +1766,7 @@ mission_templates = [ # not used in game
   [
     (store_mission_timer_a,reg(1)),
     (ge,reg(1),10),
-    (all_enemies_defeated, 5),
+    (all_enemies_defeated, 1),
     (set_mission_result,1),
     (display_message,"str_msg_battle_won"),
     (assign,"$battle_won",1),
@@ -1821,6 +1821,130 @@ mission_templates = [ # not used in game
     ],
   ),
 
+
+### Raid Village MT Start (kham)###
+
+ (
+    "village_attack_farmers",mtf_battle_mode|mtf_synch_inventory,charge,
+    "You lead your men to battle.",
+    [
+      # Enemies
+      (0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (3,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (5,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (7,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (9,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[itm_practice_staff]),
+      (11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[itm_practice_staff]),
+      (12,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (13,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (15,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+     
+
+      # Player:
+      (16,mtef_team_1|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+     
+      # Companions (Add more for more companions)
+      (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (21,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (22,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (23,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (24,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (25,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+
+   ],
+  # Triggers
+  tld_common_wb_muddy_water+
+  tld_common_battle_scripts+
+  common_deathcam_triggers + [
+  
+
+  common_battle_on_player_down,
+
+  # Make the teams enemies...
+  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0)]),
+
+  (0, 0, ti_once, 
+  [
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 1, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+  ], 
+  []),
+
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 0),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1)
+  ]),
+
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (jump_to_menu, "mnu_village_quest_result"),
+      (finish_mission),
+    (else_try),
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_village_quest_result"),
+      (finish_mission),
+    (try_end),
+    # Apply health changes...
+    (try_begin),
+      (this_or_next|eq, "$battle_won", 1),
+      (main_hero_fallen),
+      (try_for_agents, ":agent"),
+        (gt, ":agent",0),
+        (agent_is_human, ":agent"),
+        (agent_get_troop_id, ":troop", ":agent"),
+        (troop_is_hero, ":troop"),
+        (this_or_next|eq, ":troop", "trp_player"),
+        (is_between, ":troop", companions_begin, companions_end),
+        (store_agent_hit_points,":hp",":agent",0),
+        (call_script, "script_get_max_skill_of_player_party", "skl_wound_treatment"),
+        (store_mul, ":medic", reg0, 5),
+        (val_add, ":hp", ":medic"),
+        (val_clamp, ":hp", 0, 100),
+        (troop_set_health, ":troop", ":hp"),
+      (try_end),
+    (try_end),
+  ]),
+  
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_battle_inventory,      
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+      
+    ],
+  ),
 
 ### Defend / Raid Village MT End (kham)###
 

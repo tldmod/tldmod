@@ -7613,12 +7613,13 @@ game_menus = [
  ),
 
 
-##### Kham - Player Initiate Siege Result Begin
+##### Kham - Player Initiated Siege Result Begin
 ("player_initiated_siege_result",mnf_enable_hot_keys,  
-    "You attacked {s1} ",
+    "You attacked this center under the banner of {s2}.",
     "none",
     code_to_set_city_background + [
-        (str_store_party_name, s1, "$g_encountered_party"),
+    	(str_clear, s2),
+        (str_store_faction_name, s2, "$players_kingdom"),
         (assign, "$g_enemy_party", "$g_encountered_party"),
         #(select_enemy, 0),
         (try_begin),
@@ -7630,9 +7631,8 @@ game_menus = [
 				(party_slot_ge, "$g_enemy_party", slot_center_destroy_on_capture, 1),
 				(call_script, "script_destroy_center", "$g_enemy_party"),
 			(else_try),
-				(store_faction_of_party, ":winner_faction", "p_main_party"),
-				(call_script, "script_give_center_to_faction", "$g_enemy_party", ":winner_faction"),
-				(call_script, "script_order_best_besieger_party_to_guard_center", "$g_enemy_party", ":winner_faction"),
+				(call_script, "script_give_center_to_faction", "$g_enemy_party", "$players_kingdom"),
+				(call_script, "script_order_best_besieger_party_to_guard_center", "$g_enemy_party", "$players_kingdom"),
 					# add a small garrison
 					(try_for_range, ":unused", 0, 5),
 						(call_script, "script_cf_reinforce_party", "$g_enemy_party"),
@@ -9022,7 +9022,7 @@ game_menus = [
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
 	        (assign, "$g_battle_result", 0),
-	        (set_jump_mission,"mt_village_attack_bandits"),
+	        (set_jump_mission,"mt_village_attack_farmers"),
 	        (jump_to_scene, ":village_scene"),
 	        (change_screen_mission),
 	       ]),

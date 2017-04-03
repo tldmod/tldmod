@@ -1,5 +1,5 @@
 soundsfile version 2
-633
+635
  drum_3.wav 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -633,7 +633,9 @@ soundsfile version 2
  spider_death.wav 8
  new_rank_evil.wav 1793
  new_rank_good.wav 1793
-277
+ woman_yell_1.ogg 2640
+ woman_yell_2.ogg 2640
+278
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -911,3 +913,4 @@ snd_spider 8 2 628 629
 snd_spider_die 8 1 630 
 snd_new_rank_evil 1793 1 631 
 snd_new_rank_good 1793 1 632 
+snd_woman_yell 2640 2 633 634 
