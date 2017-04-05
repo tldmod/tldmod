@@ -323,7 +323,7 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-] + tld_morale_triggers + fade + khams_custom_player_camera #Custom Cam triggers +
+] + tld_morale_triggers + fade + khams_custom_player_camera #Custom Cam triggers 
 
 
 tld_siege_battle_scripts = [
@@ -1043,10 +1043,14 @@ mission_templates = [ # not used in game
 			(val_add,"$attacker_reinforcement_stage",1)]),
   (6, 0 , ti_once, [
       (eq, "$tld_option_formations", 1),
-      (le, "$formations_tutorial", 2)],
-      [
+      (le, "$formations_tutorial", 1)],
+      [(try_begin),
+        (eq, "$formations_tutorial", 0),
         (tutorial_message, "@In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.", 0 , 15),
-        (val_add, "$formations_tutorial", 1),
+       (else_try),
+        (tutorial_message, "@The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.", 0 , 15),
+      (try_end),
+      (val_add, "$formations_tutorial", 1),
       ]),
 	#AI Triggers
 	(0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[

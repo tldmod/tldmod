@@ -135,6 +135,24 @@ slot_item_tableau_5		  = 5
 slot_item_tableau_6		  = 6
 slot_item_tableau_7		  = 7
 
+#Kham - Item Slots for Weapon check
+
+slot_item_needs_two_hands	= 41
+slot_item_length	        = 42
+slot_item_speed	            = 43
+slot_item_thrust_damage	= 44
+slot_item_swing_damage	= 45
+slot_item_couchable     = 46
+slot_item_pike          = 47
+
+slot_item_head_armor	= slot_item_needs_two_hands
+slot_item_body_armor	= slot_item_thrust_damage
+slot_item_leg_armor	    = slot_item_swing_damage
+
+slot_item_horse_speed	= slot_item_needs_two_hands
+slot_item_horse_armor	= slot_item_thrust_damage
+slot_item_horse_charge	= slot_item_swing_damage
+
 ########################################################
 ##  AGENT SLOTS            #############################
 ########################################################
@@ -1996,9 +2014,11 @@ key_for_shield	= key_k
 key_for_wedge	= key_l
 key_for_square	= key_semicolon
 key_for_undo	= key_u
+key_for_skirmish = key_comma #Kham - Skirmish Key Toggle
 
 #Kham - Formations Additions START
 slot_team_d0_type                       = 185 
+
 #Presentations Constants Moto chief
 Screen_Border_Width = 24
 Screen_Width = 1024-Screen_Border_Width
@@ -2251,3 +2271,55 @@ tld_oath_kills = 150
 
 ## Kham Player Initiated Sieges Constants
 tld_player_siege_resp_cost = 100000
+
+## Kham PBOD Additions
+## Prebattle Orders & Deployment Begin
+#PBOD General
+##Settings
+skirmish_min_distance = 1500 #Min distance you wish maintained, in cm. Where agent will retreat
+skirmish_max_distance = 2500 #Max distance to maintain, in cm. Where agent will stop retreating
+#pbod_debug            = 0    #On/Off for debug messages
+
+slot_party_skirmish_d0 = slot_town_arena_melee_mission_tpl
+slot_party_skirmish_d1 = slot_town_arena_torny_mission_tpl
+slot_party_skirmish_d2 = slot_town_arena_melee_1_num_teams
+slot_party_skirmish_d3 = slot_town_arena_melee_1_team_size
+slot_party_skirmish_d4 = slot_town_arena_melee_2_num_teams
+slot_party_skirmish_d5 = slot_town_arena_melee_2_team_size
+slot_party_skirmish_d6 = slot_town_arena_melee_3_num_teams
+slot_party_skirmish_d7 = slot_town_arena_melee_3_team_size
+slot_party_skirmish_d8 = slot_town_arena_melee_cur_tier
+slot_agent_is_skirmisher = 32
+
+#PBOD Preference Slots (used for p_main_party; available 72 - 108)
+slot_party_pref_div_dehorse  = 400        
+slot_party_pref_div_no_ammo  = 401     
+slot_party_pref_wu_lance     = 402 
+slot_party_pref_wu_harcher   = 403 
+slot_party_pref_wu_spear     = 404 
+slot_party_pref_dmg_tweaks   = 405 
+
+
+#Agent Slots
+slot_agent_lance         = 33
+slot_agent_horsebow      = 34
+slot_agent_spear         = 35
+slot_agent_horse         = 36
+slot_agent_volley_fire   = 37
+slot_agent_alt_div_check = 40
+slot_agent_new_division  = 41
+
+#Order Constants
+no_order  = -1
+clear     = 0
+onehand   = 1
+twohands  = 2
+polearm   = 3
+ranged    = 4
+free      = 5 #shield
+shield    = 6
+noshield  = 7
+begin     = 1
+end       = 0
+
+##Kham PBOD Additions END

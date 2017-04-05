@@ -523,5 +523,12 @@ script_get_page_no_of_troop_tree_for_troop_on = 521
 script_init_camera = 522
 script_dmod_cycle_forwards = 523
 script_dmod_cycle_backwards = 524
+script_agent_fix_division = 525
+script_weapon_use_backup_weapon = 526
+script_weapon_use_classify_agent = 527
+script_get_closest3_distance_of_enemies_at_pos1 = 528
+script_cf_order_skirmish_check = 529
+script_order_skirmish_begin_end = 530
+script_order_skirmish_skirmish = 531
 
 
