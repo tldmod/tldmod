@@ -1959,7 +1959,7 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       # Player
-      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,12,[]),
+      (0,mtef_team_0|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,12,[]),
 
       # Companions (Add more for more companions)
       (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
@@ -3634,6 +3634,26 @@ mission_templates = [ # not used in game
 			 (else_try),
          (play_sound, "$bs_day_sound",   sf_looping),
 			 (try_end)]),
+     (10, 0, ti_once, [], [ # Kham - Give legendary place description
+        (try_begin),
+          (eq, "$g_encountered_party", "p_legend_amonhen"),
+          (party_slot_eq, "p_legend_amonhen", slot_legendary_visited, 0),
+          (tutorial_message, "@You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing.^^You sense that this place was once great but has long been forgotten",0,12),
+          (add_xp_as_reward, 250),
+          (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 1),
+        (else_try),
+          (eq, "$g_encountered_party", "p_legend_deadmarshes"),
+          (party_slot_eq, "p_legend_deadmarshes", slot_legendary_visited, 0),
+          (tutorial_message, "@You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance.^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters.^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths.^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface",0,12),
+          (add_xp_as_reward, 250),
+          (party_set_slot, "p_legend_deadmarshes", slot_legendary_visited, 1),
+        (else_try),
+          (eq, "$g_encountered_party", "p_legend_mirkwood"),
+          (party_slot_eq, "p_legend_mirkwood", slot_legendary_visited, 0),
+          (tutorial_message, "@You have entered the woods of Southern Mirkwood, once known as Greenwood the Great.^^The fortress of Dol Guldur is nearby and it casts a dark shadow over the forest. The forest feels sickly and full of decay. Ancient oak trees are overrun with rot and fungus and great tangling webs stretch from trunk to trunk. The air is everlastingly still and dark and stuffy, and it feels like you are slowly being suffocated.",0,12),
+          (add_xp_as_reward, 250),
+          (party_set_slot, "p_legend_mirkwood", slot_legendary_visited, 1),
+        (try_end)]),
 ]),
 ( "tld_erebor_dungeon",0,-1,"Default town visit",
     [(0,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),

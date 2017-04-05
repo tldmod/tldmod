@@ -1872,7 +1872,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 1000), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
@@ -5933,7 +5933,7 @@ scripts = [
             (this_or_next|neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
             (neq, ":giver_faction_no", "fac_lorien"), #No villages near Lorien
             (ge, "$g_talk_troop_faction_relation", 2),
-            (is_between, ":player_level", 3,8),
+            (is_between, ":player_level", 3,13),
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
             (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
@@ -5961,7 +5961,7 @@ scripts = [
           	(neg|check_quest_active,"qst_raid_village"),
 	        (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
 	        (ge, "$g_talk_troop_faction_relation", 2),
-	        (is_between, ":player_level", 3,8),
+	        (is_between, ":player_level", 3,13),
 	        (gt, ":giver_center_no", 0),#Skip if lord is outside the center
 	        (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
  	    ##Kham - lets force the faction
@@ -11962,6 +11962,7 @@ scripts = [
 				(this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
 				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
 				(this_or_next|eq, "$current_town", "p_town_woodelf_west_camp"),
+				(this_or_next|eq, "$current_town", "p_town_caras_galadhon"),
 				(this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
 				(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
 				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
@@ -18442,16 +18443,22 @@ scripts = [
            (neg|party_is_active, "p_legend_amonhen"),
            (enable_party, "p_legend_amonhen"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (else_try),
            (eq, ":string", "str_legendary_rumor_deadmarshes"),
            (neg|party_is_active, "p_legend_deadmarshes"),
            (enable_party, "p_legend_deadmarshes"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (else_try),
            (eq, ":string", "str_legendary_rumor_mirkwood"),
            (neg|party_is_active, "p_legend_mirkwood"),
            (enable_party, "p_legend_mirkwood"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (else_try),
            (this_or_next|eq, ":string", "str_legendary_rumor_begin"),
            (eq, ":string", "str_legendary_rumor_fangorn"),
@@ -18459,6 +18466,8 @@ scripts = [
            (neg|party_is_active, "p_legend_fangorn"),
            (enable_party, "p_legend_fangorn"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (try_end),
        (try_end),
        (str_store_string, s61, ":string"),

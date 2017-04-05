@@ -7328,8 +7328,14 @@ game_menus = [
 	  (this_or_next|eq,"$tld_option_crossdressing", 1),(eq,"$entry_to_town_forbidden",0), #  crossdresser can get in
       (this_or_next|eq,"$tld_option_town_menu_hidden",0),(party_slot_eq, "$current_town", slot_weaponsmith_visited, 1), #check if weaponsmith has been visited before to allow entry from menu. Otherwise scene will only be accessible from the town center.
       (neg|party_slot_eq, "$current_town", slot_town_weaponsmith, "trp_no_troop"),
-	  (party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
-	  (str_store_troop_name_plural, s40, ":troop"),],
+      (try_begin),
+      	(eq, "$current_town", "p_town_cair_andros"), ##Kham fix for weird slot switching
+	  	(party_set_slot, "p_town_cair_andros", slot_town_weaponsmith, "trp_smith_candros"),
+	  	(str_store_troop_name_plural, s40, "trp_smith_candros"),
+	  (else_try),
+	  	(party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),
+	  	(str_store_troop_name_plural, s40, ":troop"),
+	  	(try_end),],
        "Visit the {s40}.",
        [(party_get_slot, ":troop", "$current_town", slot_town_weaponsmith),(change_screen_trade, ":troop")]),
 		
