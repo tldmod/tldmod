@@ -2496,7 +2496,16 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(try_begin),
 			(eq, reg1, 15),
 			(init_position, pos0), #send them to 0,0
+
+		## WB has a routing operation we can use - Kham
+		] + ((is_a_wb_mt==1) and [
+			(agent_start_running_away, ":ghost"),
+			#(display_message, "@DEBUG: Warg has started running away"),
+
+		] or [
 			(agent_set_scripted_destination, ":ghost", pos0, 1),
+		]) + [
+
 		(try_end),
 		
 		(agent_get_horse,":horse",":ghost"),

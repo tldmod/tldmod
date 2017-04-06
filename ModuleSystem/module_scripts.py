@@ -6063,14 +6063,11 @@ scripts = [
           	(neg|check_quest_active,"qst_destroy_scout_camp"),
 	        (ge, "$g_talk_troop_faction_relation", 1),
 	        (is_between, ":player_level", 11,23),
-	        #(gt, ":giver_center_no", 0),#Skip if lord is outside the center
-	       # (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", 50),
+	        (faction_get_slot, ":faction_side", ":giver_faction_no", slot_faction_side),
+	        (call_script, "script_force_faction_center_by_region", ":giver_party_no", ":faction_side"),
             (assign, ":cur_target_center", reg0),
-            (assign, ":dist", reg1),
-            (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
+            (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-           # (ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
            # (assign, ":quest_object_center", ":cur_object_center"),
             (assign, ":quest_target_center", ":cur_target_center"),
@@ -20869,6 +20866,206 @@ command_cursor_scripts = [
     (troop_slot_eq, "trp_traits", slot_trait_butcher, 0),
     (call_script, "script_gain_trait", slot_trait_butcher),
 ]),
+
+
+#script_force_faction_center_by_region - Kham
+#Used to force faction center for spawning quest party templates
+#input = faction_side_good, faction_side_eye, faction_side_hand
+#output = reg0, target_center
+("force_faction_center_by_region",[
+	(store_script_param_1, ":party_no"),
+	(store_script_param_2, ":side"),
+	
+	## Get Region 
+	(call_script, "script_get_region_of_party", ":party_no"),
+	(assign, ":region", reg1),
+
+	## Start with Evil Side Targets`
+	(try_begin),
+		(this_or_next|eq, ":side", faction_side_eye),
+		(			  eq, ":side", faction_side_hand),
+
+	## Rohan Region
+		(try_begin),
+	        (is_between, ":region", region_harrowdale, region_misty_mountains),
+	        (store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_edoras"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_east_emnet"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_eastfold"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_west_emnet"),
+	        	(try_end),
+
+	## Gondor Region
+	    (else_try),
+	    	(is_between, ":region", region_pelennor, region_harrowdale),
+	    	(store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_minas_tirith"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_pelargir"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_linhir"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_lossarnach"),
+	        	(try_end),
+
+	## Center Region
+	   	(else_try),
+	   		(is_between, ":region", region_misty_mountains, region_n_mirkwood),
+	   			(store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_caras_galadhon"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_imladris_camp"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_beorn_house"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_cerin_dolen"),
+	        	(try_end),
+
+	## Mirkwood Region
+	    (else_try),
+	    	(is_between, ":region", region_n_mirkwood, region_above_mirkwook),
+	    		(store_random_in_range, ":town", 0,3),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_thranduils_halls"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_woodelf_camp"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_woodelf_west_camp"),
+	        	(try_end),
+
+	## North Region
+	    (else_try),
+	    	(is_between, ":region", region_above_mirkwook, region_grey_mountains),
+	    	(store_random_in_range, ":town", 0,4),
+	    		(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_dale"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_erebor"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_esgaroth"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_ironhill_camp"),
+	        	(try_end),
+	    (else_try),
+
+	## Everything else, target Gondor
+	    	(assign, reg0, "p_town_minas_tirith"),
+	    (try_end), 
+
+ ## End Evil side
+
+ ## Good Side Targets
+	(else_try),
+
+    ##Isengard Area
+		(try_begin), 
+	        (is_between, ":region", region_harrowdale, region_misty_mountains),
+	        (store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_isengard"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_dunland_camp"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_urukhai_outpost"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_urukhai_r_camp"),
+	        	(try_end),
+
+	## Mordor / Khand / Umbar
+	    (else_try),
+	    	(is_between, ":region", region_pelennor, region_harrowdale),
+	    	(store_random_in_range, ":town", 0,3),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_minas_morgul"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_umbar_camp"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_khand_camp"),
+	        	(try_end),
+
+	## Center Region
+	   	(else_try),
+	   		(is_between, ":region", region_misty_mountains, region_n_mirkwood),
+	   			(store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_dol_guldur"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_gundabad"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_moria"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_goblin_south_outpost"),
+	        	(try_end),
+
+	## Mirkwood Region
+	    (else_try),
+	    	(is_between, ":region", region_n_mirkwood, region_above_mirkwook),
+	    		(store_random_in_range, ":town", 0,3),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_gundabad_m_outpost"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_dol_guldur"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_rhun_south_camp"),
+	        	(try_end),
+
+	## North
+	    (else_try),
+	    	(is_between, ":region", region_above_mirkwook, region_grey_mountains),
+	    	(store_random_in_range, ":town", 0,4),
+	    		(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_morannon"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_rhun_main_camp"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_goblin_north_outpost"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_rhun_north_camp"),
+	        	(try_end),
+
+	## Everything else, target Mordor
+		(else_try),
+			(assign, reg0, "p_town_morannon"),
+		(try_end), 
+	## End Good Side Targets
+	(try_end), #end Script
+]),
+
+
+        
 
 ]
 

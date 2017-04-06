@@ -6,6 +6,8 @@ from header_sounds import *
 from header_music import *
 from module_constants import *
 
+from module_info import wb_compile_switch as is_a_wb_mt
+
 # This file contains a heavily modified and improved version
 # of Chel's morale scripts. If you modify it, please leave a 
 # note telling what you did. -CC
@@ -283,8 +285,18 @@ tld_morale_triggers = [
 			(agent_is_alive, ":cur_agent"),
 			(try_begin),
 				(agent_slot_eq,":cur_agent",slot_agent_routed,1),
+				
+				] + ((is_a_wb_mt==1) and [
+
+		        ## WB has an operation for fleeing - Kham
+		        (agent_start_running_away, ":cur_agent"),
+		            
+		        ] or [
 				(call_script, "script_find_exit_position_at_pos4", ":cur_agent"),
 				(agent_set_scripted_destination, ":cur_agent", pos4, 1),
+				
+				]) + [
+
 				(agent_get_position, pos2, ":cur_agent"),
 				(get_distance_between_positions, ":dist", pos4, pos2),
 				(lt, ":dist", 300),
