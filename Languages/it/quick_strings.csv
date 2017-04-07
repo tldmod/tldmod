@@ -198,7 +198,7 @@ qstr_{s2}_{reg3?was:is}_i|{s2} {reg3?stava:sta} vagando nelle terre selvagge e..
 qstr_{s2}_{reg3?was:is}_b|{s2} {reg3?era:è} prigioniero a {s3}.
 qstr_{s2}_{reg3?was:has_b|{s2} {reg3?era:era stato} fatto prigioniero da {reg4?i suoi:i suoi} nemici.
 qstr_{reg3?{s2}_s_locatio|Non so dove {reg3?{s2} sia:è diretto, {s2}}.
-qstr_{s6}_has_joined_your|{s6} ha aggiunto il suo nome alla tua compagnia
+qstr_{s6}_has_joined_your|{s6} fa ora parte della tua compagnia
 qstr_elven|elfo
 qstr_dwarven|nano
 qstr_orc|orco
@@ -212,14 +212,14 @@ qstr_charging|caricando
 qstr_We_know_this_is_your|Sappiamo che queste sono le tue terre, {playername}.^Fidati di noi, siamo qui per combattere il nostro nemico comune.
 qstr_I_trust_you._{s20}_a|Mi fido di te. {s20} e {s21} dovrebbero essere amici e fidarsi l'uno dell'altro.
 qstr_There_is_wisdom_in_y|C'è della saggezza nelle tue parole, {playername}.
-qstr_Why_should_I?_Better|Perché dovrei ? E' meglio che lasciate le terre di {s20}.
+qstr_Why_should_I?_Better|Perché dovrei ? È meglio che lasciate le terre di {s20}.
 qstr_We_will_go_in_peace_|Andremo in pace, non appena avremo completato la nostra missione, della quale temo, non possiamo parlarti.
-qstr_Is_this_your_land_{p|E' questa la tua terra, {playername} ? Questo posto puzza.^Ma rilassati, siamo a {s20} solo per eseguire gli ordini del nostro comune Maestro.
+qstr_Is_this_your_land_{p|È questa la tua terra, {playername} ? Questo posto puzza.^Ma rilassati, siamo a {s20} solo per eseguire gli ordini del nostro comune Maestro.
 qstr_Yes_go_on_do_whateve|Bene, andate, fate ciò che {s22} dice.
 qstr_Of_course.|Naturalmente.
 qstr_I_don_t_like_this._W|Tutto questo non mi piace. Cosa porta il tuo gruppo qui, fino a {s21} ?
 qstr_Do_you_fear_us_{play|Hai paura di noi, {playername} da {s20}? Mmm, cosa nascondi a {s22}?^^Lasciaci in pace e nessuno si farà male.
-qstr_It_s_a_servant_of_{s|E' un servo di {s22}. Temi {s23}, {playername} !
+qstr_It_s_a_servant_of_{s|È un servo di {s22}. Temi {s23}, {playername} !
 qstr_Our_allies_are_you?_|Siete quindi nostri alleati ? Allora potete passare.
 qstr_And_we_shall_not_kil|E potremmo non ucciderti, per adesso.
 qstr_This_land_belongs_to|Queste terre appartengono a {s20}... {s23} non ha faccende qui.
@@ -228,7 +228,7 @@ qstr_You_wear_the_colors_|Portate i colori di {s20}. Cosa vi porta a {s21} ?^Par
 qstr_We_are_pursuing_our_|Stiamo inseguendo i nostri nemici, che sono anche i vostri !
 qstr_Maybe._Or_maybe_you_|Forse. O forse siete spie.^Tornate da dove siete venuti, soldati di {s20}.
 qstr_We_are_friends_of_{s|Siamo amici di {s21}.
-qstr_Time_will_tell_if_yo|Il tempo dirà se parlate con verità. E' arduo distinguere gli amici dai nemici in questi tempi.
+qstr_Time_will_tell_if_yo|Il tempo dirà se parlate con verità. È arduo distinguere gli amici dai nemici in questi tempi.
 qstr_What_are_you_doing_h|Cosa state facendo qui a {s21}, feccia di {s20} ? Questo posto è nostro, non vostro !
 qstr_You_dare_question_di|Osi mettere in discussione gli ordini diretti di {s23} ?
 qstr_Guess_not._But_I_sti|Penso di no. Comunque non mi piace avervi attorno.^Ti terrò d'occhio, {playername} di {s20}.
@@ -248,7 +248,7 @@ qstr_What_are_you_trying_|Cosa stai cercando di fare, feccia di {s20}? Predare i
 qstr_Ha!_Soon_there_will_|Ha ! Presto ci sarà bottino per tutti.
 qstr_Yes._Unless_you_get_|Si. A meno che tu non venga ucciso prima.
 qstr_You_don_t_get_any_sp|Non avrai alcuna parte di bottino se TU verrai ucciso, feccia di {s21}.
-qstr_Is_that_a_threat?_Be|E' una minaccia? Sii grato che abbiamo nemici tutto attorno da macellare, prima che venga il tuo turno.
+qstr_Is_that_a_threat?_Be|È una minaccia? Sii grato che abbiamo nemici tutto attorno da macellare, prima che venga il tuo turno.
 qstr_The_enemy_is_upon_us|Il nemico è su di noi ! ^
 qstr_They_are_upon_us!_^|Ci sono addosso ! ^
 qstr_{playername}_and_{hi|{playername} e {la sua/la sua} gentaglia da {s18} ci sta venendo addosso ! ^
@@ -339,7 +339,7 @@ qstr_{s57}_and_{s58}|{s57} e {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Lei:Lui}
 qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} è il governante di {s56}.^:{s54} serve {s55} di {s56}.^}}{reg9?{reg3?Lei:Lui} è {reg3?la signora:il signore} di {s58}.:}{s59}{reg10?^{reg3?Lei:Lui} è caduto in battaglia !:}
-qstr_The_last_time_you_sa|L'ultima volta che l'ho vist{reg1?a lei:o lui}, {s1}
+qstr_The_last_time_you_sa|L'ultima volta che ho visto {reg1?lei:lui}, {s1}
 qstr_The_last_time_you_he|L'ultima volta che hai sentito parlare di {reg1?lei:lui}, {s1}
 qstr_The_{s50}|Il {s50}
 qstr_{s50}_belongs_to_{s1|{s50} appartiene a {s1} di {s2}.^
@@ -444,7 +444,7 @@ qstr_Who_are_you?|Chi sei ?
 qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora affrettati ! Mordor sta richiamando a sé ogni creatura malvagia. il Potere Oscuro sta concentrando tutta la sua volontà per adunare i suoi servitori. Il tempo per tutto ciò che c'è di buono in questo mondo sta per scadere, troppo tardi dedichiamo ogni nostra sforzo per opporci ad esso !
 qstr_What_should_I_do?|Cosa dovrei fare ?
 qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parlagli. Buona Fortuna !
-qstr_Good_to_see_the_Shad|E' un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
+qstr_Good_to_see_the_Shad|È un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
 qstr_You_are_the_one_they|Tu sei quello che chiamano Gandalf o Mithrandir.
 qstr_That_is_what_some_ca|Quello è il nome con cui alcuni mi chiamano. Nel tempo mi hanno dato nomi diversi, ma a meno che l'Oscurità non sia fermata, presto potrebbe non rimanere nessuno a chiamarmi in alcun modo.
 qstr_What_do_you_mean?|Cosa intendi dire ?
@@ -454,7 +454,7 @@ qstr_But_I_also_bring_a_m|Ma porto anche un messaggio di speranza. Il popolo di 
 qstr_Help_them_fight_the_|Aiutali a combattere il nemico meglio che puoi. Non cedere mai, ma fai la tua guardia ! Ci sono cose più antiche e più malvagie degli orchi al mondo.
 qstr_Beware_{playername}_|Attento, {playername}, la Forza dell'oscurità sta crollando. {s3} è caduta, come il suo signore {s4} .
 qstr_What_do_you_want_of_|Che vuoi da me, vecchio ?
-qstr_Just_know_that_a_Daw|Sappi solo che l'Alba è in arrivo. E' inevitabile. E dovresti essere ancora in vita per poterla vedere, pensa cosa dovrai dire a tua discolpa allora.
+qstr_Just_know_that_a_Daw|Sappi solo che l'Alba è in arrivo. È inevitabile. E dovresti essere ancora in vita per poterla vedere, pensa cosa dovrai dire a tua discolpa allora.
 qstr_Well_met_{playername|Ben incontrato, {playername}, {s24}. La mia fiducia nei tuoi confronti non era mal riposta. La potenza delle forze dell'Ombra è in frantumi e i tuoi sforzi hanno avuto un ruolo non indifferente in tutto questo !
 qstr_Thank_you_Mithrandir|Grazie, Mithrandir !
 qstr_The_wizard_Saruman_i|Saruman non c'è più e Barad Dur è stata ridotta in polvere insieme al suo Signore Oscuro ! Tutte le popolazioni della Terra di Mezzo sono alleviate dalla minaccia che ha quasi cancellato quanto c'era di buono in questo mondo. Il nemico è sconfitto e il Re è tornato !
@@ -531,7 +531,7 @@ qstr_Your_horse_panics_th|Il tuo cavallo va nel panico, le urla dei Nazgul sono 
 qstr_You_cower_in_terror_|Ti accasci in preda al terrore, le urla dei Nazgul sono insopportabili !
 qstr_knocked_unconscious|ha perso i sensi
 qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11} !
-qstr_{s11}_is_{s10}_in_th|{s11} è stato {s10} nell'attacco dei Nazgul !
+qstr_{s11}_is_{s10}_in_th|{s11}  {s10} nell'attacco dei Nazgul !
 qstr_{s1}_s_morale:_{reg1|morale di {s1}: {reg1}
 qstr_You_rally_your_troop|Sproni le tue truppe !
 qstr_{s5}_rallies_his_tro|{s5} sprona le sue truppe !
@@ -735,7 +735,7 @@ qstr_{s11}_{s13}|{s11}, {s13}
 qstr_On_your_way_to_your_|Sulla strada per la capitale della tua fazione, ti imbatti in alcuni orchi che stanno per razziare una carovana.
 qstr_On_your_way_to_your_f|Sulla strada per la capitale della tua fazione, ti imbatti in alcune truppe che stanno per tendere un'imboscata a degli orchi nella foresta.
 qstr_On_your_way_to_Mordo|Sulla tua strada verso Mordor, senti un fruscio nelle vicinanze. Vedi alcuni esploratori di Gondor e ti prepari ad avvertire la tua compagnia.
-qstr_You_see_the_village_|Il villaggio è sotto razzia da parte dei banditi.
+qstr_You_see_the_village_|Il villaggio è sotto razzia da parte del nemico.
 qstr_You_see_the_village_y|Vedi il villaggio che sei stato incaricato di predare.
 qstr_The_raiders_are_defe|I predatori sono sconfitti ! I pochi che restano vivi e coscienti si affrettano a tornare nell'oscurità da cui sono usciti, terrorizzati dagli abitanti del villaggio e dal loro nuovo campione.
 qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a sconfiggere i predoni. Essi radono il villaggio al suolo e rendono schiavi gil abitanti che restano.
@@ -787,7 +787,7 @@ qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ric
 qstr_Info|Informazioni
 qstr_You_came_into_a_poss|Sei entrato in possesso di una strana, grande ciotola d'acqua fresca dove ci si specchia. C'è un piccolo odore di muschio.
 qstr_Obtained:_Ent_water.|Ottenuto: Acqua degli Ent.
-qstr_A_little_after_you_f|Poco dopo che recuperi completamente le forze bevendo l'acqua avvelenata che hai ottenuto dagli alberi che camminano, accusi uno strano effetto collaterale. Le creature spregevoli nel tuo gruppo sembrano che...ti rispettano e ti temono di più, come se fossi diventato... più possente. E si potrebbe dire, in effetti, che sembri più alto. E' davvero possibile ?
+qstr_A_little_after_you_f|Poco dopo che recuperi completamente le forze bevendo l'acqua avvelenata che hai ottenuto dagli alberi che camminano, accusi uno strano effetto collaterale. Le creature spregevoli nel tuo gruppo sembrano che...ti rispettano e ti temono di più, come se fossi diventato... più possente. E si potrebbe dire, in effetti, che sembri più alto. È davvero possibile ?
 qstr_Ent_water_effect.|Effetto dell'acqua degli Ent.
 qstr_The_water_you_drank_|L'acqua che hai bevuto dagli Ents hanno uno strano effetto sul tuo corpo. Inizialmente non lo reputi possibile, ma ora, in evidenza dei fatti, bisogna ammetterlo: in qualche modo, sei più alto ! Eppure il veleno ti ha quasi ucciso. Non potrai rischiare di nuovo.
 qstr_Ent_water_effect:_in|Effetto dell'acqua degli Ent: aumenta la statura !
@@ -831,7 +831,7 @@ qstr_I_don_t_think_there_|Non penso che ci sia il multyplayer in TLD, ma gli ele
 qstr_There_is_a_hidden_el|In TLD c'è una modalità deathmatch elefanti, ma prima devi rimuovere tutti i tuoi salvataggi, giocare per 100 giorni di gioco senza salvare poi andare alla schermata del personaggio e premere Alt+F4. Ne vale la pena !
 qstr_Did_you_bring_your_z|Hai preso il tuo zupdog ?
 qstr_What_s_zupdog?|Cos' è uno zupdog ?
-qstr_My_zupdog_is_ill_but|Il mio zupdog e' malato, pero' ho portato il mio zupmaiass.
+qstr_My_zupdog_is_ill_but|Il mio zupdog è malato, pero' ho portato il mio zupmaiass.
 qstr_Wai_no_plate_armour_|Aspè.. niente armature a piastre nella mod ???
 qstr_What_is_plate_armour|Cos'è un'armatura a piastre ?\nMai sentita.
 qstr_Wai_no_female_trolls|Aspè niente Troll femmina ? Eh? Eh ? Tu sei la mia puttanella !
@@ -840,14 +840,14 @@ qstr_But_we_did_release._|Ma noi l'abbiamo pubblicata. Ci sei dentro. E perchè 
 qstr_YES!_ALSO_SOMETIMES_|SI ! ANCHE QUALCHE VOLTA !
 qstr_Wai_u_no_work_wiht_o|Aspè voi nun state a lavorà ad altre mods per fare una LOTR super mod ?
 qstr_Every_mod_team_works|Ogni gruppo di modding lavora a seconda dei loro standards, non si puo' far cooperare i modder se hanno visioni differenti.
-qstr_Because_we_don_t_hav|Perche' noi non abbiamo il senso dell' umorismo e la maggior parte e troppo divertente per noi.
+qstr_Because_we_don_t_hav|Perché noi non abbiamo il senso dell' umorismo e la maggior parte e troppo divertente per noi.
 qstr_In_movies_trolls_are|Nei film i troll sono grandi e grossi, perché mi avete fatto così smilzo ?
 qstr_We_interpreted_Tolki|Abbiamo interpretato Tolkien così.
 qstr_But_we_did_make_you_|Ma ti abbiamo fatto stupido come nei film. Qualcosa conterà. 
 qstr_What_is_news?_Got_an|Quali nuove ? Hai qualche screenshot ?
 qstr_Well_just_look_aroun|Beh guardati attorno, a che ti servono degli screenshots ?
 qstr_Say_cheese!|Sorridi !
-qstr_Why_did_you_make_mod|Perche' avete reso l'installazione della mod cosi' complessa ?
+qstr_Why_did_you_make_mod|Perché avete reso l'installazione della mod cosi' complessa ?
 qstr_Well_if_you_are_here|Bene, se sei arrivato fin qui e mi stai parlando, allora hai RTFM dopotutto
 qstr_You_just_got_windyfl|Sei appena stato windyflorato !
 qstr_Treebeard_wants_you_|Barbalbero vuole che trovi e sconfiggi gli orchi che stanno disturbando Fangorn.
@@ -874,8 +874,8 @@ qstr_Nicely_done_{s23}.|Ben fatto, {s23}.
 qstr_Good_work_{s23}.|Ottimo lavoro, {s23}.
 qstr_The_more_you_capture|Più ne catturi, meglio è, {s23}.
 qstr_Caught_a_few_straggl|Acciuffati alcuni dispersi, {s23}?
-qstr_I_am_sorry_no_one_el|Mi dispiace, nessun'altro è pronto per andare.^Serviranno {s22} mantenendo le difese qui.
-qstr_Tough_luck_but_we_do|E' una sfortuna, ma non ne abbiamo. Torna più tardi.
+qstr_I_am_sorry_no_one_el|Mi dispiace, non ho nessuno pronto per andare.^Serviranno {s22} mantenendo le difese qui.
+qstr_Tough_luck_but_we_do|È una sfortuna, ma non ne abbiamo. Torna più tardi.
 qstr_There_are_brave_sold|Ci sono soldati coraggiosi disposti a rischiare le loro vite, ma in questi tempi bui non posso permettere loro di lasciare le difese qui.^^^[Punti Risorsa non sufficienti] 
 qstr_We_have_some_spare_t|Abbiamo delle truppe di riserva, ma non possiamo perderle per darle a gente come te.^^^[Punti Risorse insufficenti]
 qstr_There_are_brave_soldi|Ci sono dei soldati coraggiosi qui che si sono offerti volontari per compiti sul campo.^^Penso di poter lasciare che alcuni di loro vengano con te.
@@ -890,7 +890,7 @@ qstr_{s31}{reg28?Those:Th|{s31}{reg28?Questi:Questo} coraggios{reg28?i soldati:o
 qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Queste:Questa} util{reg28?i truppe:e truppa} ci aiuterà a resistere {s21}.{s32}^^[Hai guadagnato {reg14} Punti Risorsa di {s14}]
 qstr_{s4}_^Oh_and_take_ba|{s4} ^Oh, e riprenditi quei tuoi soldati, che non sono della nostra gente.
 qstr_I_don_t_need_them_an|Non ho bisogno di loro comunque, quindi tienili con te.
-qstr_It_is_my_duty_to_pro|E' mio dovere proteggere la nostra gente.
+qstr_It_is_my_duty_to_pro|È mio dovere proteggere la nostra gente.
 qstr_It_is_my_duty_to_prot|Il mio dovere è proteggere i nostri alleati.
 qstr_I_am_{s4}_{s15}_of_{|Io sono {s4}, {s15} di {s6}
 qstr_I_am_{s4}_a_commande|Io sono {s4}, un comandante di {s6}
@@ -904,13 +904,13 @@ qstr_You_have_been_most_h|Sei stato di grande aiuto, {playername}. I miei ringra
 qstr_You_are_a_good_serva|Sei un buon servitore, {playername}. Continua così.
 qstr_Superb_work_{playern|Che lavoro superbo, {playername}. Ammiro il tuo spirito di sacrificio.
 qstr_Your_efficiency_is_p|La tua efficienza è piacevole, {playername}. Continua così ed arriverai lontano.
-qstr_It_was_an_honour_to_|E' un onore servire.
+qstr_It_was_an_honour_to_|È un onore servire.
 qstr_Your_wish_is_my_comm|Ogni tuo desiderio è un ordine per me.
 qstr_we_are_fighting_agai|stiamo combattendo contro {s13}
 qstr_we_are_not_fighting_|non stiamo combattendo nessuno al momento
-qstr_Oh?_Let_me_see_that.|Oh ? Fammi dare un'occhiata...Bene, bene, bene! E' un bene che me lo hai portato, {playername}. Prendi il mio sigillo come prova che l'ho ricevuto, e porta i miei saluti a {s9} quando lo vedrai ancora.
+qstr_Oh?_Let_me_see_that.|Oh ? Fammi dare un'occhiata...Bene, bene, bene! È un bene che me lo hai portato, {playername}. Prendi il mio sigillo come prova che l'ho ricevuto, e porta i miei saluti a {s9} quando lo vedrai ancora.
 qstr_Give_me_that!_Hrmph!|Dammelo ! Hrmph ! Meglio che me lo hai portato, {playername}, sei un buon aiutante. Dillo a {s9} di impiegarti più spesso.
-qstr_What?_Let_me_see_tha|Cosa? Fammi vedere... Hmmm. E' un bene che me lo hai portato, {playername}. Adesso vattene.
+qstr_What?_Let_me_see_tha|Cosa? Fammi vedere... Hmmm. È un bene che me lo hai portato, {playername}. Adesso vattene.
 qstr_Give_me_that!_Hrmph!_|Dammelo ! Hrmph ! Sei un buon servitore del tuo padrone, {playername}, ma sarai morto in breve tempo. Non ora, però, sparisci.
 qstr_The_search_for_the_L|La ricerca delle Lance Perdute ti ha portato a Dorwinion, il sito dell'antico regno nordico di Re Bladorthin. CONTINUA
 qstr_You_need_to_have_a_p|Hai bisogno di una compagnia con una forza minima di 30 per iniziare la quest
@@ -968,12 +968,12 @@ qstr_{s9}_asked_you_to_ca|{s9} ti ha chiesto di catturare i tre gruppi di schiav
 qstr_{s11}_asked_you_to_f|{s11} ti ha chiesto di seguire la spia che lascerà {s12}. Fai attenzione a non farti notare durante il pedinamento, o potrebbe insospettirsi e tornare indietro. Quando la spia incontrerà il suo complice, dovrai catturarli e riportarli a {s11}.
 qstr_{s11}_asked_you_to_c|{s11} ti ha chiesto di catturare un comandante nemico e di riportarglielo indietro per un'interrogatorio.
 qstr_{s9}_asked_you_to_le|{s9} ti ha chiesto di prestargli il tuo compagno {s3} per una settimana.
-qstr_{s9}_has_requested_y|{s9} ti ha chiesto di portargli dei {reg1} prigionieri.
+qstr_{s9}_has_requested_y|{s9} ti ha chiesto di portargli {reg1} prigionieri.
 qstr_We_have_reports_that|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni uomini potrebbero essere ancora vivi, catturati dal nemico. Il morale delle mie truppe ne risente perchè i prigionieri saranno probabilmente uccisi, imprigionati o peggio. Voglio che tu salvi {reg1} prigionieri e migliori così il morale delle nostre truppe.
 qstr_We_have_reports_that_|Abbiamo rapporti di molte pattuglie alleate cadute in imboscate e sconfitte. Alcuni di vigliacchi potrebbero essere ancora vivi, catturati dal nemico. Per quanto siano sacrificabili, sarebbe uno spreco lasciarli morire in qualche gatta buia. Voglio che tu soccorra {reg1} prigionieri e che tu li rifaccia combattere per noi.
 qstr_{s9}_has_asked_you_to|{s9} Ti ha chiesto di salvare {reg1} prigionieri.
 qstr_We_have_reports_that_a|Abbiamo rapporti di gruppi di nemici in probabile adunata a {s13}. Ovviamente è un grave problema per me perché non so né quanti uomini abbia il nemico, né se i miei uomini saranno pronti per scontrarsi con loro sul campo di battaglia. Voglio che ti avvicini a {s13}, e che scopri più che puoi.
-qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di guerrieri raggruppati in{s13}. Non dovrebbero essere un problema per noi e i nostri servi, ma non farebbe male sapere quanti sono. Voglio che ti avvicini abbastanza a {s13}, e scopri quanto più riesci. 
+qstr_My_spies_tell_me_of_|Le mie spie mi hanno allertato di un grande gruppo di guerrieri raggruppati presso {s13}. Non dovrebbero essere un problema per noi e i nostri servi, ma non farebbe male sapere quanti sono. Voglio che ti avvicini abbastanza alla zona di {s13}, e scopri quanto più riesci. 
 qstr_{s9}_asked_you_to_sco|{s9} ti ha chiesto di perlustrare {s13}.
 qstr_We_have_reports_of_s|Abbiamo notizie di attività nemica vicino a {s13}. Finora i nostri esploratori hanno fallito nell' avvicinarsi a sufficenza al nemico per vederne i movimenti. Voglio che tu assembli una squadra di esploratori, ti avvicinati abbastanza a {s13}, e mandi in azione gli scout.
 qstr_My_spies_tell_me_the|Le mie spie mi hanno detto che il nemico vuole fare qualcosa a {s13}. I nostri esploratori hanno vigliaccamente fallito nell' esplorare le zone nemiche. Voglio che tu recluti una tua squadra di esploratori, ti avvicini abbastanza a {s13}, e li lasci li. Pero', assicurati che non scappino !
@@ -990,11 +990,11 @@ qstr_It_sure_look_like_yo|Sembra proprio come hai detto, feccia di Mordor.. ^^Ho
 qstr_It_sure_look_like_you|Sembra proprio come hai detto. ^^L'Oscuro Signore ha chiamato, e io sono qui per rispondere e distruggere il regno degli uomini
 qstr_*Snort*_There_is_onl|*Snort* C'è UN SOLO Signore, ed è L'Oscuro Signore. Tu non hai niente a che fare con questa guerra, mingherlino. Lasciami alla mia missione
 qstr_*Snort*_Another_weak|*Snort* Un altro debole per rinforzare il nostro scudo di carne. Lasciami alla mia missione.
-qstr_It_s_their_local_mon|E' la loro moneta locale.. non vale niente a Mordor. Prendine ! Potrai usarli per fare in modo che alcuni Orchi di Moria ti seguano.. e forse poi per sbarazzarti di loro ! haha ! Stupidi Orchi di Moria..
-qstr_It_s_their_local_mone|E' la loro moneta locale.. non vale niente a Mordor. Prendila ! Potrai usarla per equipaggiarti con le armi di Isengard.. Fanno strane cose da quelle parti, vicino alla torre. Il fumo non smette mai di salire ! Ma loro non reggono il confronto con la potenza dell'Oscuro Signore !
-qstr_It_s_their_local_money|E' la loro moneta locale.. non vale niente a Mordor. Prendine ! Potrai usarla per comprare qualche pelliccia da Gundabad. Quegli orchi sono stupidi e orrendi, ma hanno delle buone pelli.
+qstr_It_s_their_local_mon|È la loro moneta locale.. non vale niente a Mordor. Prendine ! Potrai usarli per fare in modo che alcuni Orchi di Moria ti seguano.. e forse poi per sbarazzarti di loro ! haha ! Stupidi Orchi di Moria..
+qstr_It_s_their_local_mone|È la loro moneta locale.. non vale niente a Mordor. Prendila ! Potrai usarla per equipaggiarti con le armi di Isengard.. Fanno strane cose da quelle parti, vicino alla torre. Il fumo non smette mai di salire ! Ma loro non reggono il confronto con la potenza dell'Oscuro Signore !
+qstr_It_s_their_local_money|È la loro moneta locale.. non vale niente a Mordor. Prendine ! Potrai usarla per comprare qualche pelliccia da Gundabad. Quegli orchi sono stupidi e orrendi, ma hanno delle buone pelli.
 qstr_Take_it!_You_can_use|Prendete ! Potrai usarlo per comprare armi da Mordor. Abbiamo solo il meglio !
-qstr_It_s_their_local_money.|E' la loro moneta locale.. ma non vale niente a Mordor. Prendila ! Potrai usarla per comprare armi dal popolo dei cavalli di Rhun.. o forse per comprare un cavallo da mangiare ! Potrebbero ucciderti ! HAHAHA !
+qstr_It_s_their_local_money.|È la loro moneta locale.. ma non vale niente a Mordor. Prendila ! Potrai usarla per comprare armi dal popolo dei cavalli di Rhun.. o forse per comprare un cavallo da mangiare ! Potrebbero ucciderti ! HAHAHA !
 qstr_Here_s_some_of_their|Ecco un po' della loro moneta che ho vinto.. Non vale niente a Mordor.. Prendila ! Potrai usarla per convincere qualche Orco di Moria a seguirti.. e forse poi potrai disfarti di loro ! haha ! Stupidi Orchi di Moria.
 qstr_Here_s_some_of_their_|Ecco un po' della loro moneta locale che ho vinto.. però non vale niente a Mordor.. Prendila ! Potrai usarla per comprare delle armi da Isengard.. Fanno strane cose laggiù, vicino alla torre. Il fumo non smette mai di salire ! Ma non possono vincere la potenza dell'Oscuro Signore !
 qstr_Here_s_some_of_their_o|Ecco un po' della loro moneta locale.. non vale niente a Mordor.. Prendine ! Potrai usarla per comprare delle pellicce da Gundabad. Quegli Orchi sono stupidi e fetidi, ma hanno buone pelli.
@@ -1003,7 +1003,7 @@ qstr_Here_s_some_of_their_ow|Qui ci sono dei soldi della loro moneta locale che 
 qstr_That_is_not_a_smart_|Non è una cosa molto intelligente da dire di fronte ad un Guerriero di Rhun.. La prossima volta che ti vedo, ti uccido.
 qstr_They_will_all_know_m|Tutti sanno il mio nome.. Tutti sapranno temerlo
 qstr_Suilad_mellon!_It_is|Suilad, mellon ! Non capita spesso di incontrare amici della Valle Nascosta nel nostro regno. Ringraziamo le stelle che ti hanno guidato in nostro aiuto, e ringraziamo te altrettanto - le hannon !
-qstr_Suilad_mellon!_It_is_|Suilad, mellon ! E' raro avere uno dei nostri cugini delle woodland che giunge in nostro aiuto - le hannon !
+qstr_Suilad_mellon!_It_is_|Suilad, mellon ! È raro avere uno dei nostri cugini delle woodland che giunge in nostro aiuto - le hannon !
 qstr_Suilad_mellon!_That_|Suilad, mellon ! Ti ringrazio per questo, amico !^^ Prima non ero certo se ci potesse essere la lama di un goblin o la rabbia di un orso nel nostro destino. Invece, le stelle sono state gentili a mandarti in nostro aiuto.
 qstr_Alas_it_is_not_a_ple|Ahimé, non è stato un viaggio di piacere o il mero vagabondaggio che ha portato me e gli altri servitori di Lord Elrond in queste lande..
 qstr_You_wouldn_t_have_ne|Non avresti avuto bisogno del nostro aiuto, se solo avessi tenuto d'occhio i confini !
@@ -1070,7 +1070,7 @@ qstr_{s6}_This_place_and_|{s6} Questo luogo e le terre circostanti appartengono 
 qstr_{s6}_This_place_and_t|{s6} Questo luogo e le terre circostanti appartengono a {s7} di {s8}.
 qstr_{s3}_and_{s5}|{s3} e {s5}
 qstr_{s3}_{s5}|{s3}, {s5}
-qstr_{reg20?We_mostly_pro|{reg20?Noi produciamo maggiormente {s5} qui:Noi non produciamo molto qui ultimamente}. Se vuoi saperne di più, puoi parlarne con il nostro {reg4?Capogilda:Vecchio del villaggio}. E' qui vicino, proprio laggiù.
+qstr_{reg20?We_mostly_pro|{reg20?Noi produciamo maggiormente {s5} qui:Noi non produciamo molto qui ultimamente}. Se vuoi saperne di più, puoi parlarne con il nostro {reg4?Capogilda:Vecchio del villaggio}. È qui vicino, proprio laggiù.
 qstr_Hey_scum!_I_can_fix_|Hey farabutto ! Posso aggiustarti quella mandibola.
 qstr_Watch_where_you_re_g|Guarda dove vai, verme !
 qstr_I_don_t_like_your_fa|Non mi piace la tua faccia ! Penso abbia bisogno di un'aggiustata.
@@ -1078,7 +1078,7 @@ qstr_What_are_you_looking|Cos'hai da guardare? COSA?
 qstr_the_white_hand|la mano bianca
 qstr_the_lidless_eye|il grande occhio
 qstr_I_have_some_of_your_|Ho alcune delle mie genti con me. Lascerò che ti seguano, per sostenere la tua causa. 
-qstr_Some_of_your_stinky_|Qualcuno della tua gente puzzolente e' con me. Sono sicuro che preferirebbero andare con te.
+qstr_Some_of_your_stinky_|Qualcuno della tua gente puzzolente è con me. Sono sicuro che preferirebbero andare con te.
 qstr_{s4}_It_is_always_go|{s4} è sempre bello vedere uno dei nostri.
 qstr_a_nearby_town|una città vicina
 qstr_that_town_over_there|quella città laggiù

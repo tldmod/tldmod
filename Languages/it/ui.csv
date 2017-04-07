@@ -101,9 +101,9 @@ ui_explanation_archery|Competenza nell'uso degli Archi.
 ui_explanation_crossbow|Competenza nell'uso delle Balestre.
 ui_explanation_throwing|Competenza nell'uso delle armi da lancio quali Giavellotti, Coltelli, Pietre, ecc.
 ui_explanation_firearms|Competenza nell'uso di Pistole e Moschetti.
-ui_explanation_strength|Forza: Ogni punto da +1 ai punti ferita. Queste abilità non possono essere sviluppate oltre 1/3 della Forza: Resistenza, Potenza di Colpo, Potenza di Lancio, Potenza di Tiro.
+ui_explanation_strength|Forza: Ogni punto da +1 ai punti ferita. Queste abilità non possono essere sviluppate oltre 1/3 della Forza: Resistenza, Potenza d'Attacco, Potenza di Lancio, Potenza di Tiro.
 ui_explanation_agility|Agilita' : Ogni punto da +5 punti arma e aumenta la velocità dell'arma del 0.5%. Queste abilità non possono essere sviluppate oltre 1/3 dell'agilità: Maestria nelle armi, Scudi, Atletica, Cavalcare, Tirare a cavallo, Saccheggiare.
-ui_explanation_intelligence|Intelligenza: Ogni punto dà un punto abilità extra. Queste abilità non possono essere sviluppate oltre 1/3 dell'intelligenza: Addestratore, Seguire tracce, Tattica, Viaggiare, Osservare, Gestione inventario, Trattare ferite, Chirurgia, Pronto soccorso, Ingegneria, Persuasione.
+ui_explanation_intelligence|Intelligenza: Ogni punto dà un punto abilità extra. Queste abilità non possono essere sviluppate oltre 1/3 dell'intelligenza: Addestramento, Seguire tracce, Tattica, Orientamento, Osservare, Gestione inventario, Curare ferite, Chirurgia, Pronto soccorso, Ingegneria, Persuasione.
 ui_explanation_charisma|Carisma: Ogni punto aumenta il limite di truppe di +1. Queste abilità non possono essere sviluppate oltre 1/3 del Carisma: Controllo prigionieri, Comando, Commercio.
 ui_level|Livello: %d
 ui_xp|Esperienza: %d
@@ -189,7 +189,7 @@ ui_travelling_to|Viaggia verso
 ui_following|Segue 
 ui_accompanying|Accompagna 
 ui_running_from|Scappa da 
-ui_patrolling|Sorveglia 
+ui_patrolling|Pattuglia
 ui_patrolling_around|Osserva intorno 
 ui_holding|Staziona 
 ui_travelling|Viaggia 
@@ -500,7 +500,7 @@ ui_loading_module_info_file|Caricamento del file module info in corso...
 ui_processing_ini_file|Elaborazione del File Ini in corso...
 ui_loading_music|Caricamento delle musiche in corso...
 ui_loading_data|Caricamento dei dati in corso...
-ui_loading_setting_data|Caricamento delle impostazioni dei dati in corso...
+ui_loading_setting_data|Caricamento delle impostazioni dati in corso...
 ui_loading_textures|Caricamento delle textures in corso...
 ui_finished|Completato.
 ui_creating_game|Creazione della partita in corso...
@@ -537,7 +537,7 @@ ui_order_button_movement_orders|Ordini di movimento
 ui_order_button_formation_orders|Ordini di formazione
 ui_order_button_fire_orders|Ordini d'attacco
 ui_follow_me_e_|%s, Seguitemi!
-ui_charge_e_|%s, Carica!!!
+ui_charge_e_|%s, Carica !!!
 ui_stand_ground_e_|%s, Per terra!
 ui_retreat_e_|%s, Ritirata!
 ui_mount_horses_e_|%s, Montare a cavallo!
