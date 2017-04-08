@@ -5104,7 +5104,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_mission_destroy_scout_camp_reject", [],
     "I see. That is disappointing.", "close_window",
-[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+ (call_script, "script_stand_back"),
+ (assign, "$g_leave_encounter", 1),
+]],
 
 
 #### Kham Destroy Scout Camp Quest End #######
@@ -5161,7 +5164,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"lord_mission_defend_reject",
   [],
     "I see. Then I will send what troops I can. Let us hope we are not too late.", "close_window",
-  [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]
+  [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+   (call_script, "script_stand_back"),
+   (assign, "$g_leave_encounter", 1),]
 ],
 
 ##### Kham Defend Village End
@@ -5212,7 +5217,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_raid_village_reject", [],
     "The excuses of cowards. Go away, your cowardly stench is insulting.", "close_window",
-[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+ (call_script, "script_stand_back"),
+ (assign, "$g_leave_encounter", 1),]],
 
 
 ##### Raid Village - Kham - End #######

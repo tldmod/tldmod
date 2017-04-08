@@ -311,7 +311,6 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
 	#tld_wargs_attack_horses, # WIP (CppCoder)
-	tld_damage_fallen_riders, tld_track_riders,
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
@@ -323,7 +322,7 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged #Custom Cam triggers 
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged
 
 
 tld_siege_battle_scripts = [
@@ -1833,26 +1832,26 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       # Enemies
-      (0,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (2,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (3,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (4,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (5,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (6,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (7,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (8,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (9,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[itm_practice_staff]),
+      (0,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
       (11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[itm_practice_staff]),
-      (12,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (13,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (14,mtef_visitor_source|mtef_team_0,0,0,1,[]),
-      (15,mtef_visitor_source|mtef_team_0,0,0,1,[]),
+      (12,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (13,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (15,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
      
 
       # Player:
-      (16,mtef_team_1|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+      (16,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
      
       # Companions (Add more for more companions)
       (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
@@ -1879,14 +1878,14 @@ mission_templates = [ # not used in game
   common_battle_on_player_down,
 
   # Make the teams enemies...
-  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0)]),
+  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 1, 0, -1),(assign, "$battle_won", 0)]),
 
   (0, 0, ti_once, 
   [
 
     # Make enemies charge...
     (set_show_messages, 0),
-      (team_give_order, 1, grc_everyone, mordr_charge),
+      (team_give_order, 0, grc_everyone, mordr_charge),
     (set_show_messages, 1),
   ], 
   []),

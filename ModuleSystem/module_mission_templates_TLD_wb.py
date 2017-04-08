@@ -759,7 +759,7 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     (store_div, ":minimum_weighted", ":weight", 2),
     (val_max, ":weighted_damage", ":minimum_weighted"),
     (store_mul, ":damage", ":weighted_damage", ":speed"),
-    (val_div, ":damage", 100),
+    (val_div, ":damage", 110),
     (assign, reg31, ":damage"), ### DIAGNOSTIC ### - Raw Damage
     (store_skill_level, ":skill_riding", "skl_riding", ":troop_no"),
     (assign, reg32, ":skill_riding"), ### DIAGNOSTIC ### - Riding Skill
@@ -799,13 +799,16 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     (str_store_troop_name, s22, ":troop_killer"),
     ## script error
     (troop_get_type, reg23, ":troop_no"),
+    (try_begin),
+        (neq, reg23, 1), #not female
+        (assign, reg23, 0), #make it male for strings
+    (try_end),
     (get_player_agent_no, ":agent_player"),
     (agent_get_team, ":team_player", ":agent_player"),
     #(agent_get_team, ":team_killer", ":agent_killer"),
     (agent_get_team, ":team_victim", ":agent_rider"),
     (assign, reg22, ":damage"),
     (try_begin),
-      (eq, "$display_extra_xp_prof", 1), # combat messages turned ON.
       (troop_get_class, ":class", ":troop_no"),
       (this_or_next|troop_is_hero, ":troop_no"),
       (eq, ":class", 2), # Cavalry
@@ -848,7 +851,7 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
       (try_end),
     (try_end),
     #(ge, DEBUG_COMBAT_EFFECTS, 2),
-    # (assign, reg35, ":weight"),
-    # (assign, reg36, ":speed"),
-    # (display_message, "@DEBUG: {reg31} [({reg35}wt^2/100 * {reg36}% speed)] raw -> {reg32} ride = -{reg34}% -> {reg33} given", color_bad_news),
+    #(assign, reg35, ":weight"),
+    #(assign, reg36, ":speed"),
+    #(display_message, "@DEBUG: {reg31} [({reg35}wt^2/100 * {reg36}% speed)] raw -> {reg32} ride = -{reg34}% -> {reg33} given", color_bad_news),
   ])
