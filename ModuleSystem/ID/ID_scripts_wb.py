@@ -527,9 +527,9 @@ script_dmod_cycle_backwards = 525
 script_agent_fix_division = 526
 script_weapon_use_backup_weapon = 527
 script_weapon_use_classify_agent = 528
-script_get_closest3_distance_of_enemies_at_pos1 = 529
-script_cf_order_skirmish_check = 530
-script_order_skirmish_begin_end = 531
-script_order_skirmish_skirmish = 532
+script_cf_order_skirmish_check = 529
+script_order_skirmish_begin_end = 530
+script_order_skirmish_skirmish = 531
+script_ce_get_troop_encumbrance = 532
 
 

@@ -1,4 +1,4 @@
-1310
+1323
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -558,6 +558,12 @@ qstr_stand_and_fight stand_and_fight
 qstr_{!}{s2}_{s3} {!}{s2},_{s3}
 qstr_Everyone Everyone
 qstr_{!}{s2}_{s1}! {!}{s2},_{s1}!
+qstr_Shield___{reg31}_ Shield_(-{reg31})
+qstr_Power_Draw___{reg31} Power_Draw_(-{reg31})
+qstr_Riding___{reg31}_ Riding_(-{reg31})
+qstr_Horse_Archery___{reg Horse_Archery_(-{reg31})
+qstr_Athletics___{reg31}_ Athletics_(-{reg31})
+qstr_No_Skill_Penalty_Ass No_Skill_Penalty_Assigned
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
@@ -600,6 +606,11 @@ qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
+qstr_Your_mount_has_falle Your_mount_has_fallen_to_the_ground_beneath_you!
+qstr_Receive_{reg22}_dama Receive_{reg22}_damage.
+qstr_You_have_been_knocke You_have_been_knocked_unconscious_by_{s22}.
+qstr_{s21}_has_been_knock {s21}_has_been_knocked_off_of_{reg23?her:his}_mount.
+qstr_{s21}_{reg24?killed: {s21}_{reg24?killed:knocked_unconscious}_by_{s22}.
 qstr_In_The_Last_Days_of_ In_The_Last_Days_of_the_Third_Age,_your_troops_will_position_themselves_and_hold_at_the_beginning_of_each_battle,_instead_of_blindly_charging.^^To_order_your_troops_into_formation,_press_'J'_for_Ranks,_'K'_for_Shield-Wall,_'L'_for_Wedge,_';'_for_Square._To_undo_the_formation,_press_'U'._^If_your_troops_are_fleeing,_you_can_press_'V'_to_rally_them._You_get_only_a_limited_amount_of_rallies_per_battle,_and_the_amount_depends_on_your_leadership_and_charisma.
 qstr_The_Last_Days_of_the The_Last_Days_of_the_Third_Age_has_implemented_a_Custom_Camera_in_order_to_bypass_the_current_camera_limitation_with_regards_to_shorter_races_(e.g_Orcs_and_Dwarves).^^Press_CTRL_+_END_to_cycle_through_the_2_camera_modes:_Fixed_Position_and_Free-Mode.^^Fixed_position_is_the_optimal_position_for_all_races,_however_it_cannot_be_configured._You_can_press_CTRL+Left/Right_Arrow_Keys_to_switch_shoulders.^^Free-Mode_Camera_puts_the_character_in_the_middle_of_the_screen._You_can_press_CTRL+Up/Down_arrow_keys_to_tilt_the_camera_and_CTRL+_Numpad_+/-_to_zoom.^^See_Info_Pages_for_how_to_control_the_different_camera_modes.
 qstr_You_have_a_clear_per You_have_a_clear_perception_of_great_imminent_danger,_from_all_around_you!
@@ -784,6 +795,8 @@ qstr_IMOD_test_mesh_given IMOD_test_mesh_given
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_Moria_Book_given Moria_Book_given
 qstr_Target_Party_and_All Target_Party_and_Ally_Spawned!
+qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
+qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)

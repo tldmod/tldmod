@@ -728,7 +728,7 @@ kham_track_riders = (ti_after_mission_start, 0, ti_once, [],
         (agent_set_slot, ":agent_no", slot_agent_rider_agent, reg1),
       (try_end),
     (try_end),
-  ]),
+  ])
 
 
 kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
@@ -851,4 +851,4 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     # (assign, reg35, ":weight"),
     # (assign, reg36, ":speed"),
     # (display_message, "@DEBUG: {reg31} [({reg35}wt^2/100 * {reg36}% speed)] raw -> {reg32} ride = -{reg34}% -> {reg33} given", color_bad_news),
-  ]),
+  ])

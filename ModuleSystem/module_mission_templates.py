@@ -323,7 +323,7 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-] + tld_morale_triggers + fade + khams_custom_player_camera #Custom Cam triggers 
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged #Custom Cam triggers 
 
 
 tld_siege_battle_scripts = [
