@@ -2267,7 +2267,7 @@ npc_kingdoms_end = kingdoms_end
 ## Troop Presentation constants End ##
 
 ## Kham Oath of Vengeance Constant
-tld_oath_kills = 150
+tld_oath_kills = 120
 
 ## Kham Player Initiated Sieges Constants
 tld_player_siege_resp_cost = 100000

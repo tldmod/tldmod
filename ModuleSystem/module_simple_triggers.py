@@ -1591,7 +1591,8 @@ simple_triggers = [
         (assign, reg1, ":total_defeated"),
         (quest_get_slot, ":amount", "qst_eliminate_patrols", slot_quest_target_amount), #Keep track of target
         (assign, reg2,":amount"),
-        (val_clamp, reg1, 0,reg2+1),
+        (val_add, ":amount", 1),
+        (val_clamp, ":total_defeated", 0,":amount"),
 
         (try_begin),
           (eq, "$cheat_mode",1),
