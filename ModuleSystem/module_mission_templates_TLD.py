@@ -426,6 +426,20 @@ tld_damage_fallen_riders = (0.1, 0, 0, [],
 				])
 
 
+tld_fallen_riders_get_damaged = (is_a_wb_mt==1 and 
+
+[
+	kham_track_riders,
+	kham_damage_fallen_riders
+
+] or  [
+
+	tld_damage_fallen_riders, 
+	tld_track_riders
+	
+]),
+		
+
 # This trigger makes wounded agents move slower. -CC
 tld_slow_wounded  = (1, 0, 0, [],
 	[
@@ -471,7 +485,7 @@ tld_slow_wounded  = (1, 0, 0, [],
 				(try_end),
 	])
 			
-			
+	
 
 # CC: This trigger prevents galadriel (maybe other non-battle heroes?) from fighting in battles.
 tld_remove_galadriel = 	(0.1,0,0,
@@ -767,6 +781,9 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
   
   common_move_deathcam_wb,
   common_rotate_deathcam_wb,
+  oliveran_archer_has_released,
+  oliveran_archer_bone_target
+
 ])
 ## MadVader deathcam end
 

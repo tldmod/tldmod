@@ -3069,6 +3069,8 @@ game_menus = [
     	],"Let Player Command Allies: {s7}", [
     	(store_sub, "$player_control_allies",1, "$player_control_allies"), 
     	(val_clamp, "$player_control_allies",0,2)]),
+    ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_orc_horde"),(display_message, "@Orc Horde Spawned!")]),
+    ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!")]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -7490,7 +7492,7 @@ game_menus = [
 	     (lt, ":reln", 0),
 	     (lt, "$g_encountered_party_2", 1),
 	     (call_script, "script_party_count_fit_for_battle","p_main_party"),
-	     (gt, reg(0), 1),
+	     (gt, reg0, 1),
 	     (try_begin),
 	    	 (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 	           (assign, reg6, 1),

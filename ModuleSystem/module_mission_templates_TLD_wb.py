@@ -621,3 +621,234 @@ field_ai_triggers = [
  ] 
 
 
+#### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran)
+oliveran_archer_has_released = (0, 0, 0, [],
+    [
+        (try_for_agents, ":agent1"),
+            (agent_is_active,":agent1"),
+            (agent_is_alive,":agent1"),
+            (agent_is_non_player, ":agent1"),
+
+            #TLD Check
+            (agent_get_troop_id, ":troop", ":agent1"),
+            (store_proficiency_level, ":prof", ":troop", wpt_archery),
+            (ge, ":prof", 200),
+        
+            (agent_get_slot, ":is_aiming", ":agent1", agent_is_aiming),
+            (eq, ":is_aiming", 1),
+            (agent_get_attack_action, ":action", ":agent1"),
+            (eq, ":action", 0),
+            
+            (agent_set_slot, ":agent1", agent_is_aiming, 0),
+        (try_end),
+    ])
+
+oliveran_archer_bone_target = (0, 0, 0, [],
+    [
+        (try_for_agents, ":agent1"),
+            (agent_is_active,":agent1"),
+            (agent_is_alive,":agent1"),
+            (agent_is_non_player, ":agent1"),
+
+            #TLD Check
+            (agent_get_troop_id, ":troop1", ":agent1"),
+            (store_proficiency_level, ":prof", ":troop1", wpt_archery),
+            (ge, ":prof", 200),
+            
+            (agent_get_slot, ":is_aiming", ":agent1", agent_is_aiming),
+            (eq, ":is_aiming", 0),
+            
+            (agent_get_wielded_item, ":weapon", ":agent1", 0),
+            (ge, ":weapon", 0),
+            (this_or_next|item_has_property, ":weapon", itp_type_bow),
+            (item_has_property, ":weapon", itp_type_crossbow),
+            
+            (agent_get_combat_state, ":state", ":agent1"),
+            (eq, ":state", 3),
+            
+            (agent_ai_get_look_target,":agent2", ":agent1"),
+            (agent_is_active,":agent2"),
+            (agent_is_alive,":agent2"),
+            
+            (agent_get_position, pos2, ":agent2"),
+            (agent_set_attack_action, ":agent1", -2, 0),
+            
+           # (assign, ":move_x", 0),
+            (assign, ":move_z", 0),
+            #(store_random_in_range, ":chance", 0, 2),
+            #(agent_get_troop_id, ":troop2", ":agent2"),
+            #(troop_get_type, ":race", ":troop2"),
+            (agent_get_position, pos3, ":agent1"),
+            (agent_get_bone_position, pos4, ":agent2", 0, 1),
+            (get_distance_between_positions, ":distance", pos3, pos4),
+            (assign, reg2, ":distance"),
+           # (display_message, "@Distance: {reg2}"),
+            (try_begin),
+                (gt, ":distance", 2000),
+                (store_div, ":move_z", ":distance", 100),
+                (assign, reg3, ":move_z"),
+            #    (display_message, "@Adjustment on Z: {reg3}"),
+                (store_random_in_range, ":bone", 7, 10),
+            (else_try),
+                (assign, ":bone", 9),
+            (try_end),
+            
+            (agent_is_in_line_of_sight, ":agent1", pos2),
+            
+            (agent_get_bone_position, pos1, ":agent2", ":bone", 1),
+            (assign, reg1, ":bone"),
+         #   (display_message, "@Target: {reg1}"),
+            #(position_move_x, pos1, ":move_x", 0),#If aiming for feet, move slightly left or right
+            (position_move_z, pos1, ":move_z", 0),
+            (agent_set_attack_action, ":agent1", 0, 0),
+            (agent_set_look_target_position, ":agent1", pos1),
+            
+            (agent_set_slot, ":agent1", agent_is_aiming, 1),
+        (try_end),
+    ])
+
+#### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran) END
+
+#### Kham Improved Track & Damage Fallen Riders
+
+kham_track_riders = (ti_after_mission_start, 0, ti_once, [],
+  [
+    (try_for_agents, ":agent_no"),
+      (agent_set_slot, ":agent_no", slot_agent_horse_agent, -1),
+      (agent_set_slot, ":agent_no", slot_agent_rider_agent, -1),
+      (try_begin),
+        ## Humans - Get the horse they're attached to and store it.
+        (agent_is_human, ":agent_no"),
+        (agent_get_horse, reg1, ":agent_no"),
+        (agent_set_slot, ":agent_no", slot_agent_horse_agent, reg1),
+      (else_try),
+        ## Mounts - Get the human they're attached to and store it.
+        (neg|agent_is_human, ":agent_no"),
+        (agent_get_rider, reg1, ":agent_no"),
+        (agent_set_slot, ":agent_no", slot_agent_rider_agent, reg1),
+      (try_end),
+    (try_end),
+  ]),
+
+
+kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
+  [
+    (store_trigger_param_1, ":agent_victim"),
+    (store_trigger_param_2, ":agent_killer"),
+    (agent_is_active, ":agent_killer"), # Put in to prevent script errors on bodysliding.
+    (neg|agent_is_human, ":agent_victim"),
+    (agent_get_slot, ":agent_rider", ":agent_victim", slot_agent_rider_agent),
+    (ge, ":agent_rider", 0),
+    (agent_is_active, ":agent_rider"),
+    (agent_is_alive, ":agent_rider"),
+    (agent_get_troop_id, ":troop_no", ":agent_rider"),
+    (neg|is_between, ":troop_no", warg_ghost_begin, warg_ghost_end), # Dont allow wargs to fall unconscious
+    
+    
+    (agent_get_speed, pos4, ":agent_rider"),
+    (position_get_y, reg21, pos2),
+    (store_div, ":speed", reg21, 2000), # Seems to usually produce a number in the mid 100's.
+    (call_script, "script_ce_get_troop_encumbrance", ":troop_no", -1),
+    (assign, ":weight", reg1),
+    # (try_begin),
+      # (gt, ":weight", 100),
+      # (val_div, ":weight", 10),
+    # (try_end),
+    (store_mul, ":weighted_damage", ":weight", ":weight"),
+    (val_div, ":weighted_damage", 100),
+    (store_div, ":minimum_weighted", ":weight", 2),
+    (val_max, ":weighted_damage", ":minimum_weighted"),
+    (store_mul, ":damage", ":weighted_damage", ":speed"),
+    (val_div, ":damage", 100),
+    (assign, reg31, ":damage"), ### DIAGNOSTIC ### - Raw Damage
+    (store_skill_level, ":skill_riding", "skl_riding", ":troop_no"),
+    (assign, reg32, ":skill_riding"), ### DIAGNOSTIC ### - Riding Skill
+    (val_mul, ":skill_riding", 8),
+    (assign, reg34, ":skill_riding"), ### DIAGNOSTIC ### - Damage Reduction %
+    (store_mul, ":damage_reduction", ":damage", ":skill_riding"),
+    (val_div, ":damage_reduction", 100),
+    (val_sub, ":damage", ":damage_reduction"),
+    
+    (assign, reg33, ":damage"), ### DIAGNOSTIC ### - Raw Reduced Damage
+    
+    (set_show_messages, 0),
+    (store_agent_hit_points, ":health", ":agent_rider", 1),
+    (val_sub, ":health", ":damage"),
+    (try_begin),
+      (lt, ":health", 1),
+      (assign, ":agent_killed", 1),
+      (assign, ":health", 1),
+      (agent_set_hit_points, ":agent_rider", ":health", 1),
+      (agent_get_kill_count, ":kills_before", ":agent_killer"),
+      (agent_deliver_damage_to_agent_advanced, reg0, ":agent_killer", ":agent_rider", ":damage"), # WSE
+      (agent_get_kill_count, ":kills_after", ":agent_killer"),
+      (try_begin),
+        (gt, ":kills_after", ":kills_before"), # If it is higher than the victim was killed.
+        (assign, reg24, 1),
+      (else_try),
+        (assign, reg24, 0),
+      (try_end),
+    (else_try),
+      (assign, ":agent_killed", 0),
+      (agent_set_hit_points, ":agent_rider", ":health", 1),
+    (try_end),
+    (set_show_messages, 1),
+    (str_store_troop_name, s21, ":troop_no"),
+    ## script error
+    (agent_get_troop_id, ":troop_killer", ":agent_killer"),
+    (str_store_troop_name, s22, ":troop_killer"),
+    ## script error
+    (troop_get_type, reg23, ":troop_no"),
+    (get_player_agent_no, ":agent_player"),
+    (agent_get_team, ":team_player", ":agent_player"),
+    #(agent_get_team, ":team_killer", ":agent_killer"),
+    (agent_get_team, ":team_victim", ":agent_rider"),
+    (assign, reg22, ":damage"),
+    (try_begin),
+      (eq, "$display_extra_xp_prof", 1), # combat messages turned ON.
+      (troop_get_class, ":class", ":troop_no"),
+      (this_or_next|troop_is_hero, ":troop_no"),
+      (eq, ":class", 2), # Cavalry
+      (try_begin),
+        ## PLAYER - Horse killed.
+        (eq, ":agent_rider", ":agent_player"),
+        (display_message, "@Your mount has fallen to the ground beneath you!", color_bad_news),
+        (display_message, "@Receive {reg22} damage."), # due to falling from your mount.", color_bad_news),
+        (try_begin),
+          (eq, ":agent_killed", 1),
+          (display_message, "@You have been knocked unconscious by {s22}.", color_bad_news),
+        (try_end),
+      (else_try),
+        ## ANYONE - Killed someone's horse (teammate)
+        (eq, ":team_player", ":team_victim"),
+        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount.", 0xB48211),
+        #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0xB48211),
+        (try_begin),
+          (eq, ":agent_killed", 1),
+          (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0xB48211),
+        (try_end),
+      (else_try),
+        ## ANYONE - Killed someone's horse (ally)
+        (agent_is_ally, ":agent_rider"),
+        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount.", 0xB06EDA),
+        #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0xB06EDA),
+        (try_begin),
+          (eq, ":agent_killed", 1),
+          (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0xB06EDA),
+        (try_end),
+      (else_try),
+        ## ANYONE - Killed someone's horse (enemy)
+        (teams_are_enemies, ":team_player", ":team_victim"),
+        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount.", 0x42D8A6),
+        #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0x42D8A6),
+        (try_begin),
+          (eq, ":agent_killed", 1),
+          (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0x42D8A6),
+        (try_end),
+      (try_end),
+    (try_end),
+    #(ge, DEBUG_COMBAT_EFFECTS, 2),
+    # (assign, reg35, ":weight"),
+    # (assign, reg36, ":speed"),
+    # (display_message, "@DEBUG: {reg31} [({reg35}wt^2/100 * {reg36}% speed)] raw -> {reg32} ride = -{reg34}% -> {reg33} given", color_bad_news),
+  ]),

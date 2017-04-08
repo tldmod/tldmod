@@ -2037,7 +2037,7 @@ Screen_Undistort_Width_Den = 8
 #AI variables
 AI_long_range	= 8000	#do not put over 130m if you want archers to always fire
 AI_firing_distance	= AI_long_range / 2
-AI_charge_distance	= 1700
+AI_charge_distance	= 2000
 AI_Self_Defence_Distance = 1000 #range for preparing for self defense, JL
 AI_for_kingdoms_only	= 1
 Weapon_Length_Proxy	= 100
@@ -2215,7 +2215,7 @@ tld_rout_party_spawn_ratio_denominator	= 100
 
 tld_party_count_option_increment	= 10
 tld_party_count_option_max		= 1500
-tld_party_count_option_min		= 800
+tld_party_count_option_min		= 600
 tld_party_count_option_high_crash	= 1101
 tld_party_count_option_med_crash	= 950
 
@@ -2327,3 +2327,11 @@ end       = 0
 #Legendary Places Slots
 slot_legendary_visited = 300
 slot_legendary_explored = 301
+
+#Aiming slots
+agent_is_aiming = 302
+
+#Track Mount and Rider Slots
+slot_agent_horse_agent = 303
+slot_agent_rider_agent = 304
+

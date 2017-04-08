@@ -11497,7 +11497,7 @@ scripts = [
 #      (assign, "$g_enemy_fit_for_battle_old",  "$g_enemy_fit_for_battle"),
 #      (assign, "$g_friend_fit_for_battle_old", "$g_friend_fit_for_battle"),
 #      (assign, "$g_main_party_fit_for_battle_old", "$g_main_party_fit_for_battle"),
-      (call_script, "script_party_count_fit_for_battle", "p_main_party"),
+#		(call_script, "script_party_count_fit_for_battle", "p_main_party"), ## Commenting out - Kham 
  #     (assign, "$g_main_party_fit_for_battle", reg(0)),
       (call_script, "script_collect_friendly_parties"),
       (call_script, "script_party_count_fit_for_battle", "p_collective_friends"),
@@ -21563,69 +21563,7 @@ if is_a_wb_script==1:
 		(try_end), #Human v Horse
 	(try_end), #prevent failure
     ]),
-   
-
-
-# script_get_closest3_distance_of_enemies_at_pos1
-  # Input: arg1: team_no, pos1
-  # Output: reg0: distance in cms.
-  ("get_closest3_distance_of_enemies_at_pos1",
-    [
-      (assign, ":min_distance_1", 100000),
-      (assign, ":min_distance_2", 100000),
-      (assign, ":min_distance_3", 100000),
-
-      (store_script_param, ":team_no", 1),
-      (try_for_agents,":cur_agent"),
-        (agent_is_alive, ":cur_agent"),
-        (agent_is_human, ":cur_agent"),
-        (agent_get_team, ":agent_team", ":cur_agent"),
-        (teams_are_enemies, ":agent_team", ":team_no"),
-
-        (agent_get_position, pos2, ":cur_agent"),
-        (get_distance_between_positions,":cur_dist",pos2,pos1),
-        (try_begin),
-          (lt, ":cur_dist", ":min_distance_1"),
-          (assign, ":min_distance_3", ":min_distance_2"),
-          (assign, ":min_distance_2", ":min_distance_1"),
-          (assign, ":min_distance_1", ":cur_dist"),
-        (else_try),
-          (lt, ":cur_dist", ":min_distance_2"),
-          (assign, ":min_distance_3", ":min_distance_2"),
-          (assign, ":min_distance_2", ":cur_dist"),
-        (else_try),
-          (lt, ":cur_dist", ":min_distance_3"),
-          (assign, ":min_distance_3", ":cur_dist"),
-        (try_end),
-      (try_end),
-
-      (assign, ":total_distance", 0),
-      (assign, ":total_count", 0),
-      (try_begin),
-        (lt, ":min_distance_1", 100000),
-        (val_add, ":total_distance", ":min_distance_1"),
-        (val_add, ":total_count", 1),
-      (try_end),
-      (try_begin),
-        (lt, ":min_distance_2", 100000),
-        (val_add, ":total_distance", ":min_distance_2"),
-        (val_add, ":total_count", 1),
-      (try_end),
-      (try_begin),
-        (lt, ":min_distance_3", 100000),
-        (val_add, ":total_distance", ":min_distance_3"),
-        (val_add, ":total_count", 1),
-      (try_end),
-      (assign, ":average_distance", 100000),
-      (try_begin),
-        (gt, ":total_count", 0),
-        (store_div, ":average_distance", ":total_distance", ":total_count"),
-      (try_end),
-      (assign, reg0, ":average_distance"),
-      (assign, reg1, ":min_distance_1"),
-      (assign, reg2, ":min_distance_2"),
-      (assign, reg3, ":min_distance_3"),
-  ]),
+ 
 
   # script_cf_order_skirmish_check
   # Input: Nothing
@@ -21954,7 +21892,194 @@ if is_a_wb_script==1:
     ]),
 ## Caba'drin Orders End
 
- ## Kham Field AI & Skirmish Order Changes (Credit: Caba'drin PBDO & Diplomacy - Modified for TLD) START 
-  ]
+## Kham Field AI & Skirmish Order Changes (Credit: Caba'drin PBDO & Diplomacy - Modified for TLD) START 
 
+## Kham Get Troop Encumberance - For Fallen Riders trigger (Credit: Windyplains - Silverstag)
 
+# script_ce_get_troop_encumbrance
+("ce_get_troop_encumbrance",
+    [
+		(store_script_param, ":troop_no", 1),
+		(store_script_param, ":skill_no", 2),
+		
+		(assign, ":total_weight", 0),
+		(assign, ":encumbrance", 0),
+		(assign, ":encumbrance_skill_penalty", 0),
+		(assign, ":encumbrance_speed_penalty", 0),
+		
+		(set_fixed_point_multiplier, 1000),
+		
+		## WEAPON SLOT #0
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_0),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #0 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## WEAPON SLOT #1
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_1),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #1 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## WEAPON SLOT #2
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_2),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #2 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## WEAPON SLOT #3
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_3),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #3 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## HEAD
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_head),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Head item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## BODY
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_body),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Body item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## FOOT
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_foot),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Foot item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## HAND
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_gloves),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Glove item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		(val_div, ":total_weight", 10), # Bring the size down due to raising fixed point multiplier to 1000.
+		
+		## DETERMINE ENCUMBRANCE
+		(try_begin),
+			(store_div, ":encumbrance", ":total_weight", 100),
+			(val_sub, ":encumbrance", 15),
+		(try_end),
+		
+		## DETERMINE SKILL PENALTIES
+		(store_attribute_level, ":STR", ":troop_no", ca_strength),
+		(val_div, ":STR", 2),
+		(store_attribute_level, ":AGI", ":troop_no", ca_agility),
+		(val_div, ":AGI", 2),
+		
+		(try_begin), ### SHIELD ###
+			(eq, ":skill_no", "skl_shield"),
+			(store_sub, ":penalty", ":encumbrance", ":STR"),
+			(val_div, ":penalty", 8),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Shield (-{reg31})"),
+		(else_try), ### POWER DRAW ###
+			(eq, ":skill_no", "skl_power_draw"),
+			(store_add, ":combined", ":STR", ":AGI"),
+			(val_div, ":combined", 2),
+			(store_sub, ":penalty", ":encumbrance", ":combined"),
+			(val_div, ":penalty", 6),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Power Draw (-{reg31})"),
+		(else_try), ### RIDING ###
+			(eq, ":skill_no", "skl_riding"),
+			(store_sub, ":penalty", ":encumbrance", ":AGI"),
+			(val_div, ":penalty", 12),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Riding (-{reg31})"),
+		(else_try), ### HORSE ARCHERY ###
+			(eq, ":skill_no", "skl_horse_archery"),
+			(store_sub, ":penalty", ":encumbrance", ":AGI"),
+			(val_div, ":penalty", 6),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Horse Archery (-{reg31})"),
+		(else_try), ### ATHLETICS ###
+			(eq, ":skill_no", "skl_athletics"),
+			(store_add, ":combined", ":STR", ":AGI"),
+			(val_div, ":combined", 2),
+			(store_sub, ":penalty", ":encumbrance", ":combined"),
+			(val_div, ":penalty", 8),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Athletics (-{reg31})"),
+		(else_try),
+			(str_store_string, s32, "@No Skill Penalty Assigned"),
+		(try_end),
+		(val_max, ":encumbrance_skill_penalty", 0), # No beneficial penalties.
+		
+		(store_div, reg1, ":total_weight", 100),
+		(store_mod, reg5, ":total_weight", 100),
+		(assign, reg2, ":encumbrance"),
+		(assign, reg3, ":encumbrance_skill_penalty"),
+		(assign, reg4, ":encumbrance_speed_penalty"),
+		
+		### DIAGNOSTIC ###
+		# (try_begin),
+			# (eq, ":troop_no", "trp_player"),
+			# (str_store_troop_name, s31, ":troop_no"),
+			# (display_message, "@{s31}, weight = {reg1}.{reg5}, encumbrance = {reg2}, {s32}"),
+		# (try_end),
+	]),
+
+   ]

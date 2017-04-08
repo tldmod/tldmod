@@ -551,7 +551,7 @@ formAI_scripts = [
 		        (get_distance_between_positions, reg0, Infantry_Pos, Nearest_Enemy_Troop_Pos),
 		        (this_or_next|le, ":enemy_from_infantry", 1300), # Start charge if enemy infantry formation is close
 		        (this_or_next|le, ":enemy_from_archers", 1300), # Start charge if enemy archer group is close.
-		        (le, reg0, 800), # Start charge if any enemies are really close.
+		        (le, reg0, 900), # Start charge if any enemies are really close.
 		        (call_script, "script_formation_end", ":team_no", grc_infantry),
 						(team_get_movement_order, reg0, ":team_no", grc_infantry),
 		        (team_give_order, ":team_no", grc_infantry, mordr_hold_fire), # Hold fire while charging to keep infantry together.
@@ -758,7 +758,7 @@ formAI_scripts = [
 			#If Infantry is Holding and Nearest Enemy is within Self Defence range, enemy is not leader or troops have fallen then Charge (charge infantry and cavalry).
 			(try_begin),
 				(eq, ":infantry_order", mordr_hold), #if Orders are Hold
-				(le, ":enemy_nearest_troop_distance", AI_Self_Defence_Distance), #and any enemy is within self defence distance
+				(le, ":enemy_nearest_troop_distance", AI_charge_distance), #and any enemy is within self defence distance
 				(this_or_next|neq, ":enemy_nearest_agent", ":enemy_leader"), #nearest target is not the player
 				(neq, "$cur_casualties","$prev_casualties2"), #troops have fallen during last second
 				(assign, "$inf_charge_activated", 1), #then Charge Infantry
