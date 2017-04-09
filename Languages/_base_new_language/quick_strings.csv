@@ -86,7 +86,7 @@ qstr_Skills|Skills
 qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 qstr_Proficiencies|Proficiencies
 qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
-qstr_Equipments|Equipments
+qstr_Equipment|Equipment
 qstr_You_gained_{reg0}_Re|You gained {reg0} Resource Points of {s0}.
 qstr_You_lost_{reg0}_Reso|You lost {reg0} Resource Points of {s0}.
 qstr_{s24}:|{s24}:
@@ -193,6 +193,7 @@ qstr_near_the_Great_East_|near the Great East Road, the abandoned old road
 qstr_near_what_is_left_of|near what is left of the Old Forest Road, the ancient dwarven path that used to cross the thick forest
 qstr_close_to_the_Hand_sh|close to the Hand-shaped sign of Saruman, pointing toward the tower of Orthanc
 qstr_in_sight_of_the_maje|in sight of the majestic City Walls of Minas Tirith, the White City
+qstr_in_the_outskirts_of_|in the outskirts of Osgiliath, the former capital of Gondor
 qstr_in_sight_of_the_entr|in sight of the entrance to Erebor, the dwarven fortress
 qstr_in_sight_of_the_dark|in sight of the dark Tower of Orthanc
 qstr_near_the_Old_Ford_wh|near the Old Ford, where the Old Forest Road crosses the River Anduin
@@ -548,9 +549,9 @@ qstr_Default_Camera|Default Camera
 qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
 qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Cannot_leave_now.|Cannot leave now.
-qstr_You_have_found_the_l|You have found the local smithy...
-qstr_You_have_found_the_lo|You have found the local authority...
-qstr_You_have_found_the_loc|You have found the local warehouse...
+qstr_You_have_found_the_l|You have found the local smithy... (+50 XP)
+qstr_You_have_found_the_lo|You have found the local authority...(+50 XP)
+qstr_You_have_found_the_loc|You have found the local warehouse...(+50 XP)
 qstr__cancelled_the_{reg1|(cancelled the {reg10} exp pts earned from killing prisoners)
 qstr_Forming_ranks.|Forming ranks.
 qstr_You_fall_off_of_your|You fall off of your mount!
@@ -571,7 +572,7 @@ qstr_CHEAT:_SELF_mind_bla|CHEAT: SELF mind blast!!! (ctrl+s)
 qstr_CHEAT:_player_team:_|CHEAT: player team: "A-a-a-a-argh!" (ctrl+s)
 qstr_{s1}_s_morale:_{reg1|{s1}'s morale: {reg1}
 qstr_You_rally_your_troop|You rally your troops!
-qstr_{s5}_rallies_his_tro|{s5} rallies his troops!
+qstr_{s5}_rallies_{reg65?|{s5} rallies {reg65?her:his} troops!
 qstr_You_have_killed_{reg|You have killed {reg1} enemies in this battle!
 qstr_Your_bravery_inspire|Your bravery inspires your troops!
 qstr_You_have_a_clear_per|You have a clear perception of great imminent danger, from all around you!
@@ -897,7 +898,8 @@ qstr_{s1}_was_killed_on_t|{s1} was killed on the battlefield. Mission canceled.
 qstr_{s1}_has_been_defeat|{s1} has been defeated. Mission canceled.
 qstr_You_must_follow_{s1}|You must follow {s1}!
 qstr_You_must_follow_{s1}!|You must follow {s1}! This is your last warning!
-qstr_Parties_defeated:_{r|Parties defeated: {reg1}
+qstr_DEBUG:_Eliminate_Par|DEBUG: Eliminate Parties - Current: {reg0}, New: {reg1}
+qstr_{s1}_parties_defeate|{s1} parties defeated: {reg1} out of {reg2}
 qstr_{s1}_is_scouted.|{s1} is scouted.
 qstr_The_Age_of_Men_has_f|The Age of Men has finally passed. Now the Two Towers gather their remaining hosts and allies to decide who will be the sole ruler of Middle Earth!
 qstr_The_War_of_the_Two_T|The War of the Two Towers has started!

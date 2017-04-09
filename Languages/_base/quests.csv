@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} asked you to take a message to {s13}. {s13} was at
 qst_deliver_message_to_enemy_lord|Deliver Message to {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} asked you to take a message to {s13} of {s15}. {s13} was at {s4} when you were given this quest.
 qst_raise_troops|Raise {reg1} {s14}
-qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to him.
+qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
 qst_escort_messenger|Escort the messenger to {s14}
 qst_escort_messenger_text|None
 qst_hunt_down_fugitive|Hunt down {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Find the lost spears of king Bladorthin
 qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
 qst_defend_village|Defend Village
 qst_raid_village|Raid Village
+qst_destroy_scout_camp|Destroy Scout Camp
 qst_rescue_prisoners|Rescue {reg1} Prisoners
 qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
 qst_scout_enemy_town|Scout Enemy Town
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|None
 qst_move_cattle_herd|Move {s12} to {s13}
 qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
 qst_escort_merchant_caravan|Escort Supply Train to {s8}
-qst_escort_merchant_caravan_text|Escort the supply train to {s8}.
+qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|Deliver {reg5} Units of {s6} to {s4}
 qst_deliver_wine_text|The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days.
 qst_troublesome_bandits|Hunt Down Troublesome Goblins
