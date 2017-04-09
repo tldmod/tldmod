@@ -426,6 +426,19 @@ tld_damage_fallen_riders = (1, 0, 0, [],
 				])
 
 
+tld_fallen_riders_get_damaged = (is_a_wb_mt==1 and 
+[
+	kham_track_riders,
+	kham_damage_fallen_riders
+
+] or [
+
+	tld_damage_fallen_riders, 
+	tld_track_riders
+	
+])
+		
+
 # This trigger makes wounded agents move slower. -CC
 tld_slow_wounded  = (1, 0, 0, [],
 	[
@@ -471,7 +484,7 @@ tld_slow_wounded  = (1, 0, 0, [],
 				(try_end),
 	])
 			
-			
+	
 
 # CC: This trigger prevents galadriel (maybe other non-battle heroes?) from fighting in battles.
 tld_remove_galadriel = 	(0.1,0,0,
@@ -759,12 +772,17 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
 	common_start_deathcam,
   
 	common_move_deathcam,
-] or [
+] or  
+
+  field_ai_triggers +[
   common_init_deathcam_wb,
   common_start_deathcam_wb,
   
   common_move_deathcam_wb,
   common_rotate_deathcam_wb,
+  oliveran_archer_has_released,
+  oliveran_archer_bone_target
+
 ])
 ## MadVader deathcam end
 
@@ -884,6 +902,18 @@ AI_triggers = [
 		
 		(val_add, "$ranged_clock", 1),
 	]),
+
+ (2, 0, ti_once, [(store_mission_timer_a, reg0),(gt, reg0, 2)], [ #Force Cav to Stay Mounted - Kham
+    (set_show_messages, 0),   
+    (try_for_range, ":team", 0, 4),		
+		(try_for_range, ":division", 0, 9),
+			(team_get_riding_order, reg0, ":team", ":division"),
+			(eq, reg0, rordr_free),
+			(team_give_order, ":team", ":division", mordr_mount),
+		(try_end),		
+	(try_end),
+	(set_show_messages, 1),
+   ]),
 ]
 
 # Formations triggers v3 by motomataru, Warband port
@@ -1073,8 +1103,23 @@ formations_triggers = [
 #end formation command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_undo)], [(call_script, "script_player_order_formations", mordr_charge)]),
 
-
 	] + ((is_a_wb_mt==1) and [
+
+#Skirmish
+	(0, 0, 1, [(eq, "$tld_option_formations",1), (eq, "$cheat_mode",1), (key_clicked, key_for_skirmish)],[(call_script, "script_order_skirmish_begin_end")]), 
+
+	(0.5, 0, 0, [(eq, "$cheat_mode",1), (call_script, "script_cf_order_skirmish_check")], [(call_script, "script_order_skirmish_skirmish")]), 
+	(ti_after_mission_start, 0, 0, [(eq, "$cheat_mode",1) ], [
+	          (get_player_agent_no, ":player"),
+	          (agent_get_party_id, ":player_party", ":player"),
+	          (try_for_range, ":i", slot_party_skirmish_d0, slot_party_skirmish_d8 + 1),
+	               (party_set_slot, ":player_party", ":i", 0),
+	          (try_end),]),
+
+##Fix Divisions
+	(ti_on_agent_spawn, 0, 0, [], [(store_trigger_param_1, ":agent"),(call_script, "script_agent_fix_division", ":agent")]),
+
+## Formation Key Command Fixes
 
 	(0, .3, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_1)], [
 		(eq, "$gk_order", gk_order_1),	#next trigger set MOVE menu?
@@ -2467,7 +2512,16 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(try_begin),
 			(eq, reg1, 15),
 			(init_position, pos0), #send them to 0,0
+
+		## WB has a routing operation we can use - Kham
+		] + ((is_a_wb_mt==1) and [
+			(agent_start_running_away, ":ghost"),
+			#(display_message, "@DEBUG: Warg has started running away"),
+
+		] or [
 			(agent_set_scripted_destination, ":ghost", pos0, 1),
+		]) + [
+
 		(try_end),
 		
 		(agent_get_horse,":horse",":ghost"),

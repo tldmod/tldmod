@@ -13,6 +13,8 @@ from ID_troops import *
 from ID_factions import *
 from module_troops import *
 
+from module_info import wb_compile_switch as is_a_wb_script
+
 # This file contains a heavily modified and improved version
 # of Chel's morale scripts. If you modify it, please leave a 
 # note telling what you did. -CC
@@ -916,9 +918,20 @@ morale_scripts = [
 			(agent_get_position,pos2,":agent"),
 			(position_move_z,pos2,200,0),
                 	(agent_clear_scripted_mode,":agent"),
+
+            ] + ((is_a_wb_script==1) and [
+            
+            ## WB has an operation for fleeing - Kham
+            (agent_start_running_away, ":agent"),
+            
+            ] or [
+			
 			(call_script, "script_find_exit_position_at_pos4", ":agent"),
 			(agent_set_scripted_destination,":agent",pos4,1),
-               	(try_end),
+
+			]) + [
+
+        (try_end),
 	(end_try),	
      ]),
 
@@ -943,11 +956,22 @@ morale_scripts = [
 	 	(try_begin),
                    	(le,":routed",":chance_ply"),
                 	(agent_get_position,pos2,":agent"),
-		 	(position_move_z,pos2,200,0),
-                        (agent_clear_scripted_mode,":agent"),
-			(call_script, "script_find_exit_position_at_pos4", ":agent"),
-                        (agent_set_scripted_destination,":agent",pos4,1),
-               (try_end),
+		 			(position_move_z,pos2,200,0),
+                    (agent_clear_scripted_mode,":agent"),
+
+					] + ((is_a_wb_script==1) and [
+
+		            ## WB has an operation for fleeing - Kham
+		            (agent_start_running_away, ":agent"),
+		            
+		            ] or [
+					
+					(call_script, "script_find_exit_position_at_pos4", ":agent"),
+					(agent_set_scripted_destination,":agent",pos4,1),
+					
+					]) + [
+
+        (try_end),
 	(end_try),	
 	]),
 
@@ -980,8 +1004,19 @@ morale_scripts = [
               		(agent_get_position,pos2,":agent"),
 		 	(position_move_z,pos2,200,0),
                         (agent_clear_scripted_mode,":agent"),
-			(call_script, "script_find_exit_position_at_pos4", ":agent"),
-                        (agent_set_scripted_destination,":agent",pos4,1),
+                    
+                    ] + ((is_a_wb_script==1) and [
+						
+		            ## WB has an operation for fleeing - Kham
+		            (agent_start_running_away, ":agent"),
+		            
+		            ] or [
+					
+					(call_script, "script_find_exit_position_at_pos4", ":agent"),
+					(agent_set_scripted_destination,":agent",pos4,1),
+
+					]) + [
+
            	(try_end),
 		(try_begin),
 		   	(agent_slot_eq, ":agent", slot_agent_routed, 1),
@@ -1022,8 +1057,19 @@ morale_scripts = [
                 	(agent_get_position,pos2,":agent"),
 		 	(position_move_z,pos2,200,0),
                         (agent_clear_scripted_mode,":agent"),
-			(call_script, "script_find_exit_position_at_pos4", ":agent"), 
-                        (agent_set_scripted_destination,":agent",pos4,1),
+			        
+			        ] + ((is_a_wb_script==1) and [
+						
+		            ## WB has an operation for fleeing - Kham
+		            (agent_start_running_away, ":agent"),
+		            
+		            ] or [
+					
+					(call_script, "script_find_exit_position_at_pos4", ":agent"),
+					(agent_set_scripted_destination,":agent",pos4,1),
+
+					]) + [
+					
                	(try_end),
 		(try_begin),
 		   	(agent_slot_eq, ":agent", slot_agent_routed, 1),

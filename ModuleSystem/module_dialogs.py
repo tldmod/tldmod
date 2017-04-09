@@ -4034,9 +4034,14 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ##Kham - Player initiated sieges BEGIN
 [anyone|plyr, "marshall_suggest", [
-  #(eq, "$cheat_mode", 1)
+  (try_begin),
+    (eq, "$player_looks_like_an_orc",1),
+    (str_store_string, s4, "@I wish to raze an enemy settlement to the ground."),
+  (else_try),
+    (str_store_string, s4, "@I wish to lead our men in an assault on an enemy settlement."),
+  (try_end),
   ],
-  "I wish to lead our men in an assault on an enemy settlement.", "player_siege_ask",
+  "{s4}", "player_siege_ask",
   []],
 ##Kham - Player Initiated Sieges cont'd below
 
@@ -4077,43 +4082,103 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 ##Kham - Player initiated sieges CONTINUED
 
-[anyone, "player_siege_ask", [],
-  "Indeed? That is no small undertaking and there are matters which we must discuss before I can give you leave to go.", "player_siege_discuss",
+[anyone, "player_siege_ask", [
+  (try_begin),
+    (eq, "$player_looks_like_an_orc", 1),
+    (str_store_string, s4, "@More snaga who will throw themselves at the enemy’s walls? Listen close and I might let you try."),
+  (else_try),
+    (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s4, "@Indeed? Few men are so quick to volunteer to die on the battlements. There is much we must discuss before I can give you leave to go"),
+  (else_try),
+    (str_store_string, s4, "@Indeed? That is no small undertaking and there are matters which we must discuss before I can give you leave to go."),
+  (try_end),
+  ], 
+    "{s4}", "player_siege_discuss",
   []],
 
 [anyone|plyr, "player_siege_discuss", [],
   "I am listening, my Lord.", "player_siege_discuss_1",
   []],
 
-[anyone, "player_siege_discuss_1", [(store_add, reg3, tld_player_siege_resp_cost,0),],
-  "Firstly, we must think to the hindrances of this task. Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended—a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide {reg3} resources to keep your army operational in a siege.", "player_siege_discuss_2",
+[anyone, "player_siege_discuss_1", [
+  (store_add, reg3, tld_player_siege_resp_cost,0),
+  (try_begin),
+    (eq, "$player_looks_like_an_orc", 1),
+    (str_store_string, s4, "@First, sieges are only an option for the strongest! You need sharp weapons, fresh meat for your troops and wargs, wood to fuel the fires, and draughts to make the weaklings keep up. You also have to keep your scum in line or they’ll all kill each other before you’ve even got to walls. We’re too busy with our own fights to take care of your lot— be prepared to provide {reg3} resources to keep the maggots moving"),
+  (else_try),
+    (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s4, "@Firstly, we must think to the hindrances of this task. Steel must be kept sharp, men and horses fed, fires kept burning, water fetched, wounds tended—you and your men are no use to us if you can’t maintain your campaign. As we are spread too thin already to give you what is required, you must be prepared to provide {reg3} resources to keep your army operational in a siege"),
+  (else_try),
+    (str_store_string, s4, "@Firstly, we must think to the hindrances of this task. Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended—a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide {reg3} resources to keep your army operational in a siege."),
+  (try_end),],
+  "{s4}", "player_siege_discuss_2",
   []],
 
-[anyone, "player_siege_discuss_2", [],
-  "Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be overcome.", "player_siege_discuss_3",
+[anyone, "player_siege_discuss_2", [
+  (try_begin),
+    (eq, "$player_looks_like_an_orc", 1),
+    (str_store_string, s4, "@Next, if you try to attack an enemy capital, I’ll stick you if you ain’t dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten."),
+  (else_try),
+    (str_store_string, s4, "@Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be defeated."),
+  (try_end)],
+  "{s4}", "player_siege_discuss_3",
   []],
 
-[anyone, "player_siege_discuss_3", [(store_troop_faction,":fac", "$g_talk_troop"), (str_store_faction_name, s2, ":fac")],
-  "Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope—you may well be forced to stand alone.", "player_siege_discuss_4",
+[anyone, "player_siege_discuss_3", [
+  (store_troop_faction,":fac", "$g_talk_troop"), 
+  (str_store_faction_name, s2, ":fac"),
+  (try_begin),
+    (eq, "$player_looks_like_an_orc", 1),
+    (str_store_string, s4, "@Third, {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long."),
+  (else_try),
+    (str_store_string, s4, "@Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope—you may well be forced to stand alone."),
+  (try_end)],
+  "{s4}", "player_siege_discuss_4",
   []],
 
 [anyone, "player_siege_discuss_4", [
   (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
   (store_troop_faction,":fac", "$g_talk_troop"), 
-  (str_store_faction_name, s2, ":fac")],
-  "Finally, remember that as a {s25} of {s2}, you may bask in the glory of a victory hard-won and call that victory your own but all who dwell in {s2} will pay the price of your failure. You carry the fate of {s2} into battle with you—bring ruin upon it and the consequences will be severe.", "player_siege_discuss_5",
+  (str_store_faction_name, s2, ":fac"),
+  (try_begin),
+    (eq, "$player_looks_like_an_orc", 1),
+    (str_store_string, s4, "@Last, remember that as a {s25} of {s2}, the Master has got no time for failure. You risk much for {s2} when you fight—bring us defeat and we’ll make sure you wish you’d never been born."),
+  (else_try),
+    (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s4, "@Finally, remember that as a {s25} of {s2}, you live and die by your successes and failures. You risk much for {s2} when you march into battle—bring ruin upon it and the consequences will be severe."),
+  (else_try),
+    (str_store_string, s4, "@Finally, remember that as a {s25} of {s2}, you may bask in the glory of a victory hard-won and call that victory your own but all who dwell in {s2} will pay the price of your failure. You carry the fate of {s2} into battle with you—bring ruin upon it and the consequences will be severe."),
+  (try_end),
+  ],
+  "{s4}", "player_siege_discuss_5",
   []],
 
-[anyone, "player_siege_discuss_5", [],
-  "Knowing what I have told you, do you still wish to proceed?", "player_siege_resource_check",
+[anyone, "player_siege_discuss_5", [
+  (try_begin),
+    (eq, "$player_looks_like_an_orc",1),
+    (str_store_string, s4, "@Still think you can handle it?"),
+  (else_try),
+    (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s4, "@Knowing what I have told you, do you still think yourself capable?"),
+  (else_try),
+    (str_store_string, s4, "@Knowing what I have told you, do you still wish to proceed?"),
+  (try_end)],
+  "{s4}", "player_siege_resource_check",
   []],
 
 
 [anyone|plyr, "player_siege_resource_check", [
   (call_script,"script_update_respoint"),
   (faction_get_slot, ":rps", "$g_talk_troop_faction", slot_faction_respoint),
-  (ge,":rps",tld_player_siege_resp_cost)],
-  "Yes, my lord. Let me carry our banner into battle.", "player_siege_check_passed",
+  (ge,":rps",tld_player_siege_resp_cost),
+  (try_begin),
+    (eq, "$player_looks_like_an_orc",1),
+    (str_store_string, s4, "@Give me the banner of the Master!"),
+  (else_try),
+    (str_store_string, s4, "@Yes, my lord. Let me carry our banner into battle."),
+  (try_end),
+  ],
+  "{s4}", "player_siege_check_passed",
   []],
 
 [anyone|plyr, "player_siege_resource_check", [],
@@ -5039,7 +5104,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_mission_destroy_scout_camp_reject", [],
     "I see. That is disappointing.", "close_window",
-[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+ (call_script, "script_stand_back"),
+ (assign, "$g_leave_encounter", 1),
+]],
 
 
 #### Kham Destroy Scout Camp Quest End #######
@@ -5096,7 +5164,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 [anyone,"lord_mission_defend_reject",
   [],
     "I see. Then I will send what troops I can. Let us hope we are not too late.", "close_window",
-  [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]
+  [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+   (call_script, "script_stand_back"),
+   (assign, "$g_leave_encounter", 1),]
 ],
 
 ##### Kham Defend Village End
@@ -5148,7 +5218,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_raid_village_reject", [],
     "The excuses of cowards. Go away, your cowardly stench is insulting.", "close_window",
-[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
+[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1),
+ (call_script, "script_stand_back"),
+ (assign, "$g_leave_encounter", 1),]],
 
 
 ##### Raid Village - Kham - End #######

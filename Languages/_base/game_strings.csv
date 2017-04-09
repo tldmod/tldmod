@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|the foothills of Grey Mountains, where Dwarve
 str_fullname_region_mordor|Mordor, the dark Realm of Sauron
 str_shortname_region_unknown|an unnamed region
 str_shortname_region_pelennor|Pelennor Fields
-str_shortname_region_subfac_pelargir|Fiefdom of Lebennin
+str_shortname_region_subfac_pelargir|the Fiefdom of Lebennin
 str_shortname_region_subfac_dol_amroth|Belfalas
 str_shortname_region_subfac_ethring|Ringló Vale
-str_shortname_region_subfac_lossarnach|Fiefdom of Lossarnach
+str_shortname_region_subfac_lossarnach|the Fiefdom of Lossarnach
 str_shortname_region_subfac_pinnath_gelin|the region of Pinnath Gelin
 str_shortname_region_subfac_blackroot|the Fiefdom of Lamedon
 str_shortname_region_n_ithilien|North Ithilien
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|Battle Scars
 str_trait_desc_battle_scarred|You have suffered horrific wounds during your many campaigns yet you still live to tell the tale. Your scarred and knotted flesh now conspires with hard experience to increase your resistance to injury. While others may find your appearance somewhat shocking your followers consider it an affirmation of your battle experience. They subsequently receive a weekly morale bonus.
 str_trait_title_fell_beast|Fell Beast
 str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
+str_trait_title_butcher|Butcher
+str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat.
 str_wound_head|a heavy blow to the head
 str_wound_chest|some cracked ribs
 str_wound_arm|a badly maimed arm

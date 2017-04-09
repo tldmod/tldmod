@@ -67,13 +67,67 @@ def set_item_faction():
 
 companionPriceMult = 100 # this is used to multiply old hiring praces for companions (in res point) to new prices (in influence) - MV: nerfed down to 50, was 20 - another nerf, Glorfindel now 50, others reasonable
 
+def set_item_score():
+  item_score = []
+  for i_item in xrange(len(items)):
+    # ## weight
+    # item_score.append((item_set_slot, i_item, slot_item_weight, get_hrd_weight(items[i_item][6])))
+    
+    # ## difficulty
+    # item_score.append((item_set_slot, i_item, slot_item_difficulty, get_difficulty(items[i_item][6])))
+    
+    # ## two hand/one hand
+    # type = items[i_item][3] & 0x000000ff
+    # if type == itp_type_two_handed_wpn and items[i_item][3] & itp_two_handed == 0:
+      # item_score.append((item_set_slot, i_item, slot_item_two_hand_one_hand, 1))
+    
+    ## needs two hands
+    item_score.append((item_set_slot, i_item, slot_item_needs_two_hands, items[i_item][3] & itp_two_handed))
+    
+    # ## cant on horseback
+    # if items[i_item][3] & itp_cant_use_on_horseback == itp_cant_use_on_horseback:
+      # item_score.append((item_set_slot, i_item, slot_item_cant_on_horseback, 1))
+	  
+	# ## couchable - CABA addition
+    if items[i_item][3] & itp_couchable == itp_couchable:
+      item_score.append((item_set_slot, i_item, slot_item_couchable, 1))	
+    
+    type = items[i_item][3] & 0x000000ff
+    if type == itp_type_shield:
+      item_score.append((item_set_slot, i_item, slot_item_length, get_weapon_length(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_body_armor, get_body_armor(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_speed, get_speed_rating(items[i_item][6])))
+    elif type == itp_type_bow or type == itp_type_crossbow:
+      item_score.append((item_set_slot, i_item, slot_item_thrust_damage, get_thrust_damage(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_swing_damage, get_swing_damage(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_speed, get_speed_rating(items[i_item][6])))
+    elif type >= itp_type_one_handed_wpn and type <= itp_type_thrown:
+      item_score.append((item_set_slot, i_item, slot_item_thrust_damage, get_thrust_damage(items[i_item][6])&0xff))
+      item_score.append((item_set_slot, i_item, slot_item_swing_damage, get_swing_damage(items[i_item][6])&0xff))
+      item_score.append((item_set_slot, i_item, slot_item_speed, get_speed_rating(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_length, get_weapon_length(items[i_item][6])))
+    elif type >= itp_type_head_armor and type <= itp_type_hand_armor:
+      item_score.append((item_set_slot, i_item, slot_item_head_armor, get_head_armor(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_body_armor, get_body_armor(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_leg_armor, get_leg_armor(items[i_item][6])))
+    elif type == itp_type_horse:
+      item_score.append((item_set_slot, i_item, slot_item_horse_speed, get_missile_speed(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_horse_armor, get_body_armor(items[i_item][6])))
+      item_score.append((item_set_slot, i_item, slot_item_horse_charge, get_thrust_damage(items[i_item][6])))
+	  
+	## pike definition - CABA addition
+    if type == itp_type_polearm and get_weapon_length(items[i_item][6]) >= 150 and (get_thrust_damage(items[i_item][6]) % 256) > (get_swing_damage(items[i_item][6]) % 256):
+        item_score.append((item_set_slot, i_item, slot_item_pike, 1))
+    
+  return item_score[:]
+
 scripts = [
 
 ("troop_get_cheer_sound", [
 	(store_script_param_1, ":trp"),		
 	(troop_get_type, ":race",":trp"),
 	(try_begin),(eq,":race",0x0),(assign,reg1,"snd_man_victory"),
-	(else_try), (eq,":race",0x1),(assign,reg1,-1), # woman
+	(else_try), (eq,":race",0x1),(assign,reg1,"snd_woman_yell"), # woman
 	(else_try), (eq,":race",0x2),(assign,reg1,"snd_gondor_victory_player"),
 	(else_try), (eq,":race",0x3),(assign,reg1,"snd_rohan_victory"),
 	(else_try), (eq,":race",0x4),(assign,reg1,"snd_dunlender_victory"),
@@ -1818,7 +1872,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 1000), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
@@ -1835,7 +1889,10 @@ scripts = [
 	#(try_end),
 
 	] + (is_a_wb_script==1 and [
-	(call_script, "script_init_camera"),	 #Custom Camera Initialize
+
+	#Custom Camera Initialize	
+	(call_script, "script_init_camera"),	
+
     #Kham -  Reassign divisions
 	(try_for_range, ":troop_no", soldiers_begin, soldiers_end),
 	  (call_script, "script_troop_default_division", ":troop_no", 0),
@@ -1843,6 +1900,15 @@ scripts = [
 	  (neq, ":division", reg0),
 	  (troop_set_class, ":troop_no", reg0),
 	(try_end),
+
+	#For Field AI Triggers
+	(party_set_slot, "p_main_party", slot_party_pref_wu_lance, 1),
+	(party_set_slot, "p_main_party", slot_party_pref_wu_harcher, 1),
+	(party_set_slot, "p_main_party", slot_party_pref_wu_spear, 1),
+	(party_set_slot, "p_main_party", slot_party_pref_dmg_tweaks, 1),
+	(party_set_slot, "p_main_party", slot_party_pref_div_dehorse, 9),
+    (party_set_slot, "p_main_party", slot_party_pref_div_no_ammo, 9),
+
 	] or []) + [
 ]),    
 
@@ -5867,7 +5933,7 @@ scripts = [
             (this_or_next|neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
             (neq, ":giver_faction_no", "fac_lorien"), #No villages near Lorien
             (ge, "$g_talk_troop_faction_relation", 2),
-            (is_between, ":player_level", 3,8),
+            (is_between, ":player_level", 3,13),
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
             (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
@@ -5895,7 +5961,7 @@ scripts = [
           	(neg|check_quest_active,"qst_raid_village"),
 	        (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
 	        (ge, "$g_talk_troop_faction_relation", 2),
-	        (is_between, ":player_level", 3,8),
+	        (is_between, ":player_level", 3,13),
 	        (gt, ":giver_center_no", 0),#Skip if lord is outside the center
 	        (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
  	    ##Kham - lets force the faction
@@ -5997,14 +6063,11 @@ scripts = [
           	(neg|check_quest_active,"qst_destroy_scout_camp"),
 	        (ge, "$g_talk_troop_faction_relation", 1),
 	        (is_between, ":player_level", 11,23),
-	        #(gt, ":giver_center_no", 0),#Skip if lord is outside the center
-	       # (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
-            (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", 50),
+	        (faction_get_slot, ":faction_side", ":giver_faction_no", slot_faction_side),
+	        (call_script, "script_force_faction_center_by_region", ":giver_party_no", ":faction_side"),
             (assign, ":cur_target_center", reg0),
-            (assign, ":dist", reg1),
-            (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target Village - So that we can set up appropriate guards/troops
+            (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target - So that we can set up appropriate guards/troops
             (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-           # (ge, ":dist", 20),
             (assign, ":quest_target_faction", ":cur_target_faction"),
            # (assign, ":quest_object_center", ":cur_object_center"),
             (assign, ":quest_target_center", ":cur_target_center"),
@@ -11434,7 +11497,7 @@ scripts = [
 #      (assign, "$g_enemy_fit_for_battle_old",  "$g_enemy_fit_for_battle"),
 #      (assign, "$g_friend_fit_for_battle_old", "$g_friend_fit_for_battle"),
 #      (assign, "$g_main_party_fit_for_battle_old", "$g_main_party_fit_for_battle"),
-      (call_script, "script_party_count_fit_for_battle", "p_main_party"),
+#		(call_script, "script_party_count_fit_for_battle", "p_main_party"), ## Commenting out - Kham 
  #     (assign, "$g_main_party_fit_for_battle", reg(0)),
       (call_script, "script_collect_friendly_parties"),
       (call_script, "script_party_count_fit_for_battle", "p_collective_friends"),
@@ -11896,6 +11959,7 @@ scripts = [
 				(this_or_next|eq, "$current_town", "p_town_woodelf_camp"),
 				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
 				(this_or_next|eq, "$current_town", "p_town_woodelf_west_camp"),
+				(this_or_next|eq, "$current_town", "p_town_caras_galadhon"),
 				(this_or_next|eq, "$current_town", "p_town_cerin_dolen"),
 				(this_or_next|eq, "$current_town", "p_town_cerin_amroth"),
 				(this_or_next|eq, "$current_town", "p_town_thranduils_halls"),
@@ -18376,16 +18440,22 @@ scripts = [
            (neg|party_is_active, "p_legend_amonhen"),
            (enable_party, "p_legend_amonhen"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (else_try),
            (eq, ":string", "str_legendary_rumor_deadmarshes"),
            (neg|party_is_active, "p_legend_deadmarshes"),
            (enable_party, "p_legend_deadmarshes"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (else_try),
            (eq, ":string", "str_legendary_rumor_mirkwood"),
            (neg|party_is_active, "p_legend_mirkwood"),
            (enable_party, "p_legend_mirkwood"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (else_try),
            (this_or_next|eq, ":string", "str_legendary_rumor_begin"),
            (eq, ":string", "str_legendary_rumor_fangorn"),
@@ -18393,6 +18463,8 @@ scripts = [
            (neg|party_is_active, "p_legend_fangorn"),
            (enable_party, "p_legend_fangorn"),
            (display_log_message, "@A new location is now available on the map!", color_good_news),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 0),
+           (party_set_slot, "p_legend_amonhen", slot_legendary_explored, 0),
          (try_end),
        (try_end),
        (str_store_string, s61, ":string"),
@@ -20795,6 +20867,206 @@ command_cursor_scripts = [
     (call_script, "script_gain_trait", slot_trait_butcher),
 ]),
 
+
+#script_force_faction_center_by_region - Kham
+#Used to force faction center for spawning quest party templates
+#input = faction_side_good, faction_side_eye, faction_side_hand
+#output = reg0, target_center
+("force_faction_center_by_region",[
+	(store_script_param_1, ":party_no"),
+	(store_script_param_2, ":side"),
+	
+	## Get Region 
+	(call_script, "script_get_region_of_party", ":party_no"),
+	(assign, ":region", reg1),
+
+	## Start with Evil Side Targets`
+	(try_begin),
+		(this_or_next|eq, ":side", faction_side_eye),
+		(			  eq, ":side", faction_side_hand),
+
+	## Rohan Region
+		(try_begin),
+	        (is_between, ":region", region_harrowdale, region_misty_mountains),
+	        (store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_edoras"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_east_emnet"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_eastfold"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_west_emnet"),
+	        	(try_end),
+
+	## Gondor Region
+	    (else_try),
+	    	(is_between, ":region", region_pelennor, region_harrowdale),
+	    	(store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_minas_tirith"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_pelargir"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_linhir"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_lossarnach"),
+	        	(try_end),
+
+	## Center Region
+	   	(else_try),
+	   		(is_between, ":region", region_misty_mountains, region_n_mirkwood),
+	   			(store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_caras_galadhon"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_imladris_camp"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_beorn_house"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_cerin_dolen"),
+	        	(try_end),
+
+	## Mirkwood Region
+	    (else_try),
+	    	(is_between, ":region", region_n_mirkwood, region_above_mirkwook),
+	    		(store_random_in_range, ":town", 0,3),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_thranduils_halls"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_woodelf_camp"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_woodelf_west_camp"),
+	        	(try_end),
+
+	## North Region
+	    (else_try),
+	    	(is_between, ":region", region_above_mirkwook, region_grey_mountains),
+	    	(store_random_in_range, ":town", 0,4),
+	    		(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_dale"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_erebor"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_esgaroth"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_ironhill_camp"),
+	        	(try_end),
+	    (else_try),
+
+	## Everything else, target Gondor
+	    	(assign, reg0, "p_town_minas_tirith"),
+	    (try_end), 
+
+ ## End Evil side
+
+ ## Good Side Targets
+	(else_try),
+
+    ##Isengard Area
+		(try_begin), 
+	        (is_between, ":region", region_harrowdale, region_misty_mountains),
+	        (store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_isengard"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_dunland_camp"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_urukhai_outpost"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_urukhai_r_camp"),
+	        	(try_end),
+
+	## Mordor / Khand / Umbar
+	    (else_try),
+	    	(is_between, ":region", region_pelennor, region_harrowdale),
+	    	(store_random_in_range, ":town", 0,3),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_minas_morgul"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_umbar_camp"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_khand_camp"),
+	        	(try_end),
+
+	## Center Region
+	   	(else_try),
+	   		(is_between, ":region", region_misty_mountains, region_n_mirkwood),
+	   			(store_random_in_range, ":town", 0,4),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_dol_guldur"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_gundabad"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_moria"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_goblin_south_outpost"),
+	        	(try_end),
+
+	## Mirkwood Region
+	    (else_try),
+	    	(is_between, ":region", region_n_mirkwood, region_above_mirkwook),
+	    		(store_random_in_range, ":town", 0,3),
+	        	(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_gundabad_m_outpost"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_dol_guldur"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_rhun_south_camp"),
+	        	(try_end),
+
+	## North
+	    (else_try),
+	    	(is_between, ":region", region_above_mirkwook, region_grey_mountains),
+	    	(store_random_in_range, ":town", 0,4),
+	    		(try_begin),
+	        		(eq, ":town", 0),
+	        		(assign, reg0, "p_town_morannon"),
+	        	(else_try),
+	        		(eq, ":town", 1),
+	        		(assign, reg0, "p_town_rhun_main_camp"),
+	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(assign, reg0, "p_town_goblin_north_outpost"),
+	        	(else_try),
+	        		(assign, reg0, "p_town_rhun_north_camp"),
+	        	(try_end),
+
+	## Everything else, target Mordor
+		(else_try),
+			(assign, reg0, "p_town_morannon"),
+		(try_end), 
+	## End Good Side Targets
+	(try_end), #end Script
+]),
+
+
+        
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts
@@ -21129,6 +21401,685 @@ if is_a_wb_script==1:
   (try_end), ]),
 
 ### Custom camera end 
-  ]
 
 
+## Kham Field AI & Skirmish Order Changes (Credit: Caba'drin PBDO & Diplomacy - Modified for TLD) START 
+
+#script_agent_fix_division by Caba'drin
+  #Input: agent_id
+  #Output: nothing (agent divisions changed, slot set) 
+  
+  #To fix AI troop divisions from the engine applying player's party divisions on all agents
+  #This is called after agent_reassign_team, so can safely assume correct team is set
+  
+  ("agent_fix_division",
+   [
+    (store_script_param_1, ":agent"),	
+	(agent_set_slot, ":agent", slot_agent_new_division, -1),	
+	(get_player_agent_no, ":player"),	#after_mission_start triggers are called after spawn, so globals can't be used yet
+	
+	(try_begin),
+	    (ge, ":player", 0),
+		(neq, ":agent", ":player"),
+		(agent_is_human, ":agent"),
+		(agent_get_team, ":player_team", ":player"),
+		(agent_get_team, ":team", ":agent"),
+		(this_or_next|main_hero_fallen),
+		(neq, ":team", ":player_team"),
+		(agent_get_troop_id, ":troop", ":agent"),
+		(try_begin),
+			(troop_is_guarantee_horse, ":troop"),
+			(assign, ":target_division", grc_cavalry),
+		(else_try),
+			(troop_is_guarantee_ranged, ":troop"),
+			(assign, ":target_division", grc_archers),
+		(else_try),
+			(assign, ":target_division", grc_infantry),		
+		(try_end),
+		(agent_get_division, ":division", ":agent"),
+		(neq, ":division", ":target_division"),
+		(agent_set_division, ":agent", ":target_division"),
+		(agent_set_slot, ":agent", slot_agent_new_division, ":target_division"),
+	(try_end),
+   ]),
+
+ # script_weapon_use_backup_weapon
+ # Input: arg1: agent; arg2: 1 - Include Two-Handers, 2 - One-hand only
+ # Output: none
+ # Allows Agents to use backup weapons (neg|lance or bow) when enemies are close by
+
+ ("weapon_use_backup_weapon",   
+    [    
+     # Find non-lance/spear/bow item in inventory
+    (store_script_param_1, ":agent"),
+	(store_script_param_2, ":inc_two_handers"),
+	
+    (assign,":has_choice",0),
+	(assign, ":end", ek_head),
+	(try_for_range, ":i", ek_item_0, ":end"),
+		(agent_get_item_slot, ":item", ":agent",":i"),
+		(gt, ":item", 0),
+		(item_get_type, ":weapontype", ":item"),
+		(try_begin),
+			(eq, ":inc_two_handers", 0),
+			(eq, ":weapontype", itp_type_one_handed_wpn),
+			(assign, ":has_choice", 1),
+			(assign, ":end", ek_item_0), #Loop breaker
+		(else_try),
+			(is_between, ":weapontype", itp_type_one_handed_wpn, itp_type_polearm),#one or two handed
+			(assign,":has_choice",1),
+			(assign, ":end", ek_item_0),#loop breaker
+		(try_end),
+	(try_end),
+    (try_begin),# Equip their backup weapon.
+        (eq, ":has_choice",1),
+        (agent_set_wielded_item, ":agent", ":item"),
+    (try_end),
+    ]),    
+   
+# script_weapon_use_classify_agent
+  # Input: agent_no
+  # Output: None
+  # Used to check what weapon the agent is wielding, and sets the slots appropriately.
+
+ ("weapon_use_classify_agent", [ 
+    (store_script_param_1, ":agent"),
+    (try_begin),
+		(agent_is_alive, ":agent"),
+		(agent_is_non_player, ":agent"),
+		(try_begin),
+			(agent_is_human, ":agent"),
+			(agent_get_troop_id, ":troop",":agent"),
+			(agent_get_wielded_item, ":wielded", ":agent", 0),
+			(neg|troop_is_guarantee_ranged, ":troop"), #Not an archer
+			(neg|troop_is_guarantee_horse, ":troop"), #Not Mounted
+			(agent_get_ammo, ":has_ammo", ":agent", 0), #Double-check this one doesn't have throwing weapons, etc
+			(le, ":has_ammo", 0), #Doesn't have ammo
+			(try_begin),
+				(gt, ":wielded", 0),
+				(item_get_type, ":wielded_type", ":wielded"),
+				(eq, ":wielded_type", itp_type_polearm),  # Is it a polearm?
+				(agent_set_slot, ":agent", slot_agent_spear, ":wielded"), #Mark spearmen
+			(else_try), #Check if there's a spear equipped, if not wielded
+				(assign, ":end", ek_head),
+				(try_for_range, ":i", ek_item_0, ":end"),
+					(agent_get_item_slot, ":item", ":agent", ":i"),
+					(gt, ":item", 0),
+					(item_get_type, ":weapontype", ":item"),
+					(eq, ":weapontype", itp_type_polearm),  # Is it a spear?
+					(agent_set_slot, ":agent", slot_agent_spear, ":item"), #Mark spearmen
+					(assign, ":end", ek_item_0), #loop Break
+				(try_end),
+			(try_end),
+		(else_try),	
+			(neg|agent_is_human, ":agent"), #Is Horse
+			(assign, ":horse", ":agent"),
+			(agent_get_rider, ":agent", ":horse"),
+			(agent_is_active, ":agent"), 
+			(agent_get_troop_id, ":troop",":agent"),
+			(agent_get_wielded_item, ":wielded", ":agent", 0),
+			(try_begin),
+				(neg|troop_is_guarantee_ranged, ":troop"), # Not a horsearcher
+				(try_begin),
+					#(this_or_next|is_between, ":wielded", "itm_jousting_lance","itm_glaive"), # Is it a lance?
+					#(is_between, ":wielded", "itm_light_lance","itm_pike"), # Is it a lance?
+					(gt, ":wielded", 0),
+					(item_slot_eq, ":wielded", slot_item_couchable, 1),
+					(agent_set_slot, ":agent", slot_agent_lance, ":wielded"),
+					(agent_set_slot, ":agent", slot_agent_spear, 0), #double-check
+				(else_try),    
+	   # Force the NPC to wield a lance, but this will only happen if they
+	   # actually have a lance equipped.  Otherwise this does nothing.
+					(assign, ":end", ek_head),
+					(try_for_range, ":i", ek_item_0, ":end"),
+						(agent_get_item_slot, ":item", ":agent", ":i"),
+						(gt, ":item", 0),
+						(item_slot_eq, ":item", slot_item_couchable, 1),
+						(agent_set_slot, ":agent", slot_agent_lance, ":item"),
+						(agent_set_slot, ":agent", slot_agent_spear, 0), #double-check
+						(agent_set_wielded_item, ":agent", ":item"),
+						(assign, ":end", ek_item_0),
+					(try_end),
+				(try_end),
+			(else_try),
+				(troop_is_guarantee_ranged, ":troop"), # Is a horsearcher...redundant, but making sure
+				(try_begin),
+					(is_between, ":wielded", "itm_short_bow", "itm_dunland_javelin"), # Is it a bow or a horse-useful crossbow?
+					(agent_set_slot, ":agent", slot_agent_horsebow, ":wielded"),
+					(agent_set_slot, ":agent", slot_agent_spear, 0), #double-check
+				(else_try), 
+	   # Force the NPC to wield their bow, but this will only happen if they
+	   # actually have a bow equipped.  Otherwise this does nothing.
+					(assign, ":end", "itm_dunland_javelin"),  # adjust as needed
+					(try_for_range, ":item", "itm_short_bow",":end"),
+						(agent_has_item_equipped, ":agent", ":item"),
+						(agent_set_wielded_item, ":agent", ":item"),
+						(agent_set_slot, ":agent", slot_agent_horsebow, ":item"), #Mark horse archers for later use
+						(agent_set_slot, ":agent", slot_agent_spear, 0), #double-check
+						(assign, ":end", "itm_short_bow"),#loop breaker      
+					(try_end),
+				(try_end),				
+			(try_end), #Lancer or Horse Archer
+		(try_end), #Human v Horse
+	(try_end), #prevent failure
+    ]),
+ 
+
+  # script_cf_order_skirmish_check
+  # Input: Nothing
+  # Output: Nothing    
+  # Check for an active Skirmish Order, in lieu of global variables
+("cf_order_skirmish_check", [ 
+   (get_player_agent_no, ":player"),
+   (agent_get_party_id, ":player_party", ":player"),
+   
+   (assign, ":skirmish", 0),
+   (try_for_range, ":i", slot_party_skirmish_d0, slot_party_skirmish_d8 + 1),
+         (party_slot_eq, ":player_party", ":i", 1),
+         (assign, ":skirmish", 1),
+   (try_end),
+   (eq, ":skirmish", 1),
+    ]),   
+
+   # script_order_skirmish_begin_end
+  # Input: Nothing
+  # Output: Nothing
+  # On key depression, determine if beginning or ending skirmish
+  # If ending, stop any retreating. If beginning, call order_skirmish_skirmish
+  # Display appropriate order text on screen.
+("order_skirmish_begin_end", [ 
+     (get_player_agent_no, ":player"),
+     (agent_get_team, ":playerteam", ":player"),
+     (agent_get_party_id, ":player_party", ":player"),
+     
+     (assign, ":skirmish", 0),
+     
+     (try_for_range, ":class", 0, 8),
+          (class_is_listening_order, ":playerteam", ":class"), #Listening to Order
+         (store_add, ":class_ordered", ":class", slot_party_skirmish_d0),
+         (party_slot_eq, ":player_party", ":class_ordered", 0), 
+         (party_set_slot, ":player_party", ":class_ordered", 1),
+         (assign, ":skirmish", 1),
+         (str_store_string, s1, "@avoid melee"),
+             (try_begin), #Mark class as selected--used for display text
+                 (eq, ":class", 0),
+                 (assign, ":group0_is_selected", 1),
+             (else_try),
+                 (eq, ":class", 1),
+                 (assign, ":group1_is_selected", 1),   
+             (else_try),
+                 (eq, ":class", 2),
+                 (assign, ":group2_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 3),
+                 (assign, ":group3_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 4),
+                 (assign, ":group4_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 5),
+                 (assign, ":group5_is_selected", 1),   
+             (else_try),
+                 (eq, ":class", 6),
+                 (assign, ":group6_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 7),
+                 (assign, ":group7_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 8),
+                 (assign, ":group8_is_selected", 1),                       
+             (try_end),
+     (try_end), #Class Loop
+       
+     (try_for_agents, ":agent"),
+         (agent_is_alive, ":agent"),
+         (agent_is_human, ":agent"),
+         (agent_is_non_player, ":agent"),
+         (agent_get_team, ":team", ":agent"),
+         (eq, ":team", ":playerteam"), #On Player's side?
+         (agent_get_division, ":class", ":agent"),
+         (try_begin), #Mark class as in battle--used for display text
+             (eq, ":class", 0),
+             (assign, ":group0_in_battle", 1),
+         (else_try),
+             (eq, ":class", 1),
+             (assign, ":group1_in_battle", 1),   
+         (else_try),
+             (eq, ":class", 2),
+             (assign, ":group2_in_battle", 1),         
+         (else_try),
+             (eq, ":class", 3),
+             (assign, ":group3_in_battle", 1),         
+         (else_try),
+             (eq, ":class", 4),
+             (assign, ":group4_in_battle", 1),         
+         (else_try),
+             (eq, ":class", 5),
+             (assign, ":group5_in_battle", 1),   
+         (else_try),
+             (eq, ":class", 6),
+             (assign, ":group6_in_battle", 1),         
+         (else_try),
+             (eq, ":class", 7),
+             (assign, ":group7_in_battle", 1),         
+         (else_try),
+             (eq, ":class", 8),
+             (assign, ":group8_in_battle", 1),                       
+         (try_end),
+         (class_is_listening_order, ":team", ":class"), #Is the agent's division selected?
+         (eq, ":skirmish", 0),
+         (store_add, ":class_ordered", ":class", slot_party_skirmish_d0),
+         (party_set_slot, ":player_party", ":class_ordered", 0),
+         (try_begin),
+             (agent_slot_eq, ":agent", slot_agent_is_running_away, 0), #Is not routing or ordered to retreat         
+             (agent_stop_running_away, ":agent"),
+         (try_end),
+         (str_store_string, s1, "@stand and fight"),
+             (try_begin), #Mark class as selected--used for display text
+                 (eq, ":class", 0),
+                 (assign, ":group0_is_selected", 1),
+             (else_try),
+                 (eq, ":class", 1),
+                 (assign, ":group1_is_selected", 1),   
+             (else_try),
+                 (eq, ":class", 2),
+                 (assign, ":group2_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 3),
+                 (assign, ":group3_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 4),
+                 (assign, ":group4_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 5),
+                 (assign, ":group5_is_selected", 1),   
+             (else_try),
+                 (eq, ":class", 6),
+                 (assign, ":group6_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 7),
+                 (assign, ":group7_is_selected", 1),         
+             (else_try),
+                 (eq, ":class", 8),
+                 (assign, ":group8_is_selected", 1),                       
+             (try_end),
+     (try_end), #Agent loop
+          
+     (str_clear, s2),
+     (str_clear, s3),
+     (assign, ":count_possible", 0),
+     (assign, ":count_selected", 0),
+     (try_begin),
+         (eq, ":group0_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group0_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (str_store_class_name, s2, 0),
+     (try_end),
+     (try_begin),
+          (eq, ":group1_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group1_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 1),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 1),
+         (try_end),
+     (try_end),
+     (try_begin),
+          (eq, ":group2_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group2_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 2),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 2),
+         (try_end),
+     (try_end),
+     (try_begin),
+          (eq, ":group3_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group3_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 3),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 3),
+         (try_end),
+     (try_end),
+     (try_begin),
+          (eq, ":group4_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group4_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 4),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 4),
+         (try_end),
+     (try_end),
+     (try_begin),
+          (eq, ":group5_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group5_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 5),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 5),
+         (try_end),
+     (try_end),
+     (try_begin),
+          (eq, ":group6_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group6_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 6),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 6),
+         (try_end),
+     (try_end),
+     (try_begin),
+          (eq, ":group7_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group7_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),   
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 7),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 7),
+         (try_end),
+     (try_end),
+     (try_begin),
+          (eq, ":group8_in_battle", 1),
+         (val_add, ":count_possible", 1),
+         (eq, ":group8_is_selected", 1),
+         (val_add, ":count_selected", 1),
+         (try_begin),
+             (neg|str_is_empty, s2),
+             (str_store_class_name, s3, 8),
+             (str_store_string, s2, "@{!}{s2}, {s3}"),
+         (else_try),
+             (str_store_class_name, s2, 8),
+         (try_end),
+     (try_end),    
+     (try_begin),
+         (eq, ":count_selected", ":count_possible"),
+         (str_store_string, s2, "@Everyone"),
+     (try_end),
+     (try_begin),
+         (gt, ":count_selected", 0),
+         (display_message, "@{!}{s2}, {s1}!", 0xFFDDDD66),
+     (try_end),
+     (str_clear, s2),
+     (str_clear, s3),
+     (try_begin),
+         (eq, ":skirmish", 1),
+         (call_script, "script_order_skirmish_skirmish"),
+     (try_end),     
+    ]),
+
+ # script_order_skirmish_skirmish
+  # Input: Nothing 
+  # Output: Nothing
+  # Cycle through agents, checking and maintaining distance
+ ("order_skirmish_skirmish", [ 
+	
+	(set_fixed_point_multiplier, 1),
+	(get_scene_boundaries, pos2, pos3),
+	(position_get_x, ":bound_right", pos2),
+	(position_get_y, ":bound_top", pos2),
+	(position_get_x, ":bound_left", pos3),
+	(position_get_y, ":bound_bottom", pos3),
+	 
+    (try_for_agents, ":agent"),
+        (agent_is_alive, ":agent"),
+        (agent_is_human, ":agent"),
+        (agent_is_non_player, ":agent"),
+        (agent_get_team, ":team", ":agent"),
+        #(eq, ":team", "$fplayer_team_no"), #On Player's side?
+		(agent_slot_eq, ":agent", slot_agent_is_running_away, 0), #Is not routing or ordered to retreat
+		(agent_get_division, ":class", ":agent"),
+		(store_add, ":slot", slot_party_skirmish_d0, ":class"),
+		(team_slot_eq, ":team", ":slot", 1), #Division is skirmishing
+		 
+		(agent_get_position, pos1, ":agent"),   
+		(position_get_x, ":agent_x", pos1),
+		(position_get_y, ":agent_y", pos1),
+		(store_sub, ":dist_right", ":agent_x", ":bound_right"),
+		(store_sub, ":dist_top", ":agent_y", ":bound_top"),
+		(store_sub, ":dist_left", ":bound_left", ":agent_x"),
+		(store_sub, ":dist_bottom", ":bound_bottom", ":agent_y"),
+		(agent_get_ammo, ":ammo", ":agent"),             
+        (try_begin), #If agent is too close to edge of map, stop skirmishing. Will resume when back into map             
+            (this_or_next|le, ":ammo", 0), #Stop skirmishing and resume orders if out of ammo
+		    (this_or_next|le, ":dist_right", 25),  #Limits accidental routing, of cav in particular
+			(this_or_next|le, ":dist_top", 25),
+			(this_or_next|le, ":dist_left", 25),
+			(le, ":dist_bottom", 25),
+			(agent_stop_running_away, ":agent"),
+		(else_try),
+	        (call_script, "script_get_closest3_distance_of_enemies_at_pos1", ":team", pos1), # Find distance of nearest 3 enemies
+            (assign, ":avg_dist", reg0),
+	        (assign, ":closest_dist", reg1),
+	        (try_begin),
+		        (this_or_next|lt, ":avg_dist", skirmish_min_distance),
+			    (lt, ":closest_dist", 700), #If enemy group is getting near or an enemy is on top of agent
+			    (agent_start_running_away, ":agent"),		 
+		    (else_try),
+		        (ge, ":avg_dist", skirmish_max_distance), #If distance from enemy is (too) large, resume previous order
+                (agent_stop_running_away, ":agent"),		 
+		    (try_end), #Distance to enemy
+		(try_end), #Distance from edge
+	(try_end), #Agent loop
+    ]),
+## Caba'drin Orders End
+
+## Kham Field AI & Skirmish Order Changes (Credit: Caba'drin PBDO & Diplomacy - Modified for TLD) START 
+
+## Kham Get Troop Encumberance - For Fallen Riders trigger (Credit: Windyplains - Silverstag)
+
+# script_ce_get_troop_encumbrance
+("ce_get_troop_encumbrance",
+    [
+		(store_script_param, ":troop_no", 1),
+		(store_script_param, ":skill_no", 2),
+		
+		(assign, ":total_weight", 0),
+		(assign, ":encumbrance", 0),
+		(assign, ":encumbrance_skill_penalty", 0),
+		(assign, ":encumbrance_speed_penalty", 0),
+		
+		(set_fixed_point_multiplier, 1000),
+		
+		## WEAPON SLOT #0
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_0),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #0 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## WEAPON SLOT #1
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_1),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #1 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## WEAPON SLOT #2
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_2),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #2 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## WEAPON SLOT #3
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_item_3),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Weapon #3 weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## HEAD
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_head),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Head item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## BODY
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_body),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Body item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## FOOT
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_foot),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Foot item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		## HAND
+		(try_begin),
+			(troop_get_inventory_slot, ":item_no", ":troop_no", ek_gloves),
+			(ge, ":item_no", 1),
+			(item_get_weight, ":item_weight", ":item_no"),
+			(val_add, ":total_weight", ":item_weight"),
+			###
+			# (assign, reg1, ":item_weight"),
+			# (assign, reg2, ":total_weight"),
+			# (display_message, "@DEBUG: Glove item weighs {reg1}.  Total weight {reg2}.", color_bad_news),
+		(try_end),
+		
+		(val_div, ":total_weight", 10), # Bring the size down due to raising fixed point multiplier to 1000.
+		
+		## DETERMINE ENCUMBRANCE
+		(try_begin),
+			(store_div, ":encumbrance", ":total_weight", 100),
+			(val_sub, ":encumbrance", 15),
+		(try_end),
+		
+		## DETERMINE SKILL PENALTIES
+		(store_attribute_level, ":STR", ":troop_no", ca_strength),
+		(val_div, ":STR", 2),
+		(store_attribute_level, ":AGI", ":troop_no", ca_agility),
+		(val_div, ":AGI", 2),
+		
+		(try_begin), ### SHIELD ###
+			(eq, ":skill_no", "skl_shield"),
+			(store_sub, ":penalty", ":encumbrance", ":STR"),
+			(val_div, ":penalty", 8),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Shield (-{reg31})"),
+		(else_try), ### POWER DRAW ###
+			(eq, ":skill_no", "skl_power_draw"),
+			(store_add, ":combined", ":STR", ":AGI"),
+			(val_div, ":combined", 2),
+			(store_sub, ":penalty", ":encumbrance", ":combined"),
+			(val_div, ":penalty", 6),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Power Draw (-{reg31})"),
+		(else_try), ### RIDING ###
+			(eq, ":skill_no", "skl_riding"),
+			(store_sub, ":penalty", ":encumbrance", ":AGI"),
+			(val_div, ":penalty", 12),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Riding (-{reg31})"),
+		(else_try), ### HORSE ARCHERY ###
+			(eq, ":skill_no", "skl_horse_archery"),
+			(store_sub, ":penalty", ":encumbrance", ":AGI"),
+			(val_div, ":penalty", 6),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Horse Archery (-{reg31})"),
+		(else_try), ### ATHLETICS ###
+			(eq, ":skill_no", "skl_athletics"),
+			(store_add, ":combined", ":STR", ":AGI"),
+			(val_div, ":combined", 2),
+			(store_sub, ":penalty", ":encumbrance", ":combined"),
+			(val_div, ":penalty", 8),
+			(assign, ":encumbrance_skill_penalty", ":penalty"),
+			# Diagnostic
+			(assign, reg31, ":encumbrance_skill_penalty"),
+			(str_store_string, s32, "@Athletics (-{reg31})"),
+		(else_try),
+			(str_store_string, s32, "@No Skill Penalty Assigned"),
+		(try_end),
+		(val_max, ":encumbrance_skill_penalty", 0), # No beneficial penalties.
+		
+		(store_div, reg1, ":total_weight", 100),
+		(store_mod, reg5, ":total_weight", 100),
+		(assign, reg2, ":encumbrance"),
+		(assign, reg3, ":encumbrance_skill_penalty"),
+		(assign, reg4, ":encumbrance_speed_penalty"),
+		
+		### DIAGNOSTIC ###
+		# (try_begin),
+			# (eq, ":troop_no", "trp_player"),
+			# (str_store_troop_name, s31, ":troop_no"),
+			# (display_message, "@{s31}, weight = {reg1}.{reg5}, encumbrance = {reg2}, {s32}"),
+		# (try_end),
+	]),
+
+   ]

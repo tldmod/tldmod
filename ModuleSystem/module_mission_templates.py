@@ -311,7 +311,6 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
 tld_common_battle_scripts = [
 	#tld_fix_viewpoint,
 	#tld_wargs_attack_horses, # WIP (CppCoder)
-	tld_damage_fallen_riders, tld_track_riders,
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	custom_tld_horses_hate_trolls, custom_troll_hitting,
@@ -323,7 +322,7 @@ tld_common_battle_scripts = [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-] + tld_morale_triggers + fade + khams_custom_player_camera #Custom Cam triggers +
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged
 
 
 tld_siege_battle_scripts = [
@@ -1043,10 +1042,14 @@ mission_templates = [ # not used in game
 			(val_add,"$attacker_reinforcement_stage",1)]),
   (6, 0 , ti_once, [
       (eq, "$tld_option_formations", 1),
-      (le, "$formations_tutorial", 2)],
-      [
+      (le, "$formations_tutorial", 1)],
+      [(try_begin),
+        (eq, "$formations_tutorial", 0),
         (tutorial_message, "@In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.", 0 , 15),
-        (val_add, "$formations_tutorial", 1),
+       (else_try),
+        (tutorial_message, "@The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.", 0 , 15),
+      (try_end),
+      (val_add, "$formations_tutorial", 1),
       ]),
 	#AI Triggers
 	(0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
@@ -1697,7 +1700,7 @@ mission_templates = [ # not used in game
 
 #kham - Ring Hunters - End
 
-### Defend / Raid Village MT Start (kham)###
+### Defend Village MT Start (kham)###
 
  (
     "village_attack_bandits",mtf_battle_mode|mtf_synch_inventory,charge,
@@ -1766,7 +1769,7 @@ mission_templates = [ # not used in game
   [
     (store_mission_timer_a,reg(1)),
     (ge,reg(1),10),
-    (all_enemies_defeated, 5),
+    (all_enemies_defeated, 1),
     (set_mission_result,1),
     (display_message,"str_msg_battle_won"),
     (assign,"$battle_won",1),
@@ -1822,6 +1825,130 @@ mission_templates = [ # not used in game
   ),
 
 
+### Raid Village MT Start (kham)###
+
+ (
+    "village_attack_farmers",mtf_battle_mode|mtf_synch_inventory,charge,
+    "You lead your men to battle.",
+    [
+      # Enemies
+      (0,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[itm_practice_staff]),
+      (12,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (13,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (15,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+     
+
+      # Player:
+      (16,mtef_team_1|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+     
+      # Companions (Add more for more companions)
+      (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (21,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (22,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (23,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (24,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (25,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+
+   ],
+  # Triggers
+  tld_common_wb_muddy_water+
+  tld_common_battle_scripts+
+  common_deathcam_triggers + [
+  
+
+  common_battle_on_player_down,
+
+  # Make the teams enemies...
+  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 1, 0, -1),(assign, "$battle_won", 0)]),
+
+  (0, 0, ti_once, 
+  [
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 0, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+  ], 
+  []),
+
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 0),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1)
+  ]),
+
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (jump_to_menu, "mnu_village_quest_result"),
+      (finish_mission),
+    (else_try),
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_village_quest_result"),
+      (finish_mission),
+    (try_end),
+    # Apply health changes...
+    (try_begin),
+      (this_or_next|eq, "$battle_won", 1),
+      (main_hero_fallen),
+      (try_for_agents, ":agent"),
+        (gt, ":agent",0),
+        (agent_is_human, ":agent"),
+        (agent_get_troop_id, ":troop", ":agent"),
+        (troop_is_hero, ":troop"),
+        (this_or_next|eq, ":troop", "trp_player"),
+        (is_between, ":troop", companions_begin, companions_end),
+        (store_agent_hit_points,":hp",":agent",0),
+        (call_script, "script_get_max_skill_of_player_party", "skl_wound_treatment"),
+        (store_mul, ":medic", reg0, 5),
+        (val_add, ":hp", ":medic"),
+        (val_clamp, ":hp", 0, 100),
+        (troop_set_health, ":troop", ":hp"),
+      (try_end),
+    (try_end),
+  ]),
+  
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_battle_inventory,      
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+      
+    ],
+  ),
+
 ### Defend / Raid Village MT End (kham)###
 
 ### Destroy Scout Camp MT Start (kham)###
@@ -1831,7 +1958,7 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       # Player
-      (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,12,[]),
+      (0,mtef_team_0|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,12,[]),
 
       # Companions (Add more for more companions)
       (1,mtef_visitor_source|mtef_team_0,0,0,1,[]),
@@ -3506,6 +3633,26 @@ mission_templates = [ # not used in game
 			 (else_try),
          (play_sound, "$bs_day_sound",   sf_looping),
 			 (try_end)]),
+     (10, 0, ti_once, [], [ # Kham - Give legendary place description
+        (try_begin),
+          (eq, "$g_encountered_party", "p_legend_amonhen"),
+          (party_slot_eq, "p_legend_amonhen", slot_legendary_visited, 0),
+          (tutorial_message, "@You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing^^You sense that this place was once great but has long been forgotten",0,12),
+          (add_xp_as_reward, 250),
+          (party_set_slot, "p_legend_amonhen", slot_legendary_visited, 1),
+        (else_try),
+          (eq, "$g_encountered_party", "p_legend_deadmarshes"),
+          (party_slot_eq, "p_legend_deadmarshes", slot_legendary_visited, 0),
+          (tutorial_message, "@You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface",0,12),
+          (add_xp_as_reward, 250),
+          (party_set_slot, "p_legend_deadmarshes", slot_legendary_visited, 1),
+        (else_try),
+          (eq, "$g_encountered_party", "p_legend_mirkwood"),
+          (party_slot_eq, "p_legend_mirkwood", slot_legendary_visited, 0),
+          (tutorial_message, "@You have entered the woods of Southern Mirkwood, once known as Greenwood the Great^^The fortress of Dol Guldur is nearby and it casts a dark shadow over the forest. The woods here feel sickly and full of decay. Ancient oak trees are overrun with rot and fungus and great tangling webs stretch from trunk to trunk^^ The air is everlastingly still and dark and stuffy, and it feels like you are slowly being suffocated",0,12),
+          (add_xp_as_reward, 250),
+          (party_set_slot, "p_legend_mirkwood", slot_legendary_visited, 1),
+        (try_end)]),
 ]),
 ( "tld_erebor_dungeon",0,-1,"Default town visit",
     [(0,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),

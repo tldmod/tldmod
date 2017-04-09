@@ -251,3 +251,5 @@ pt_ring_hunters = 249
 pt_scout_camp_small = 250
 pt_scout_camp_large = 251
 pt_beorn_caravan = 252
+pt_orc_horde = 253
+pt_vet_archer = 254

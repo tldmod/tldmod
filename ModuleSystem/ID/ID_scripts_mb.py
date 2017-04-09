@@ -511,5 +511,6 @@ script_accompany_marshall_aux_ai = 509
 script_find_theater = 510
 script_find_closest_enemy_town_or_host_only = 511
 script_cf_gain_trait_butcher = 512
+script_force_faction_center_by_region = 513
 
 

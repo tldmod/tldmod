@@ -396,4 +396,10 @@ party_templates = [
 
 ##Kham Beorning Caravans Start
 ("beorn_caravan"    ,"Woodsmen Caravan"      ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_beorn    ,prisoner_train_personality,[(trp_beorning_sentinel,1,5),(trp_woodmen_archer,5,10),(trp_woodmen_axemen,4,8),(trp_woodmen_scout,8,16),(trp_woodmen_skilled_forester,18,30)]), # strength 198-399
+
+##Kham Orc Horde
+("orc_horde"   ,"Orc Horde"     ,icon_orc_x4           |carries_goods(6)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_large_goblin_of_moria,40,50),(trp_snaga_of_moria,50,80)]), 
+
+("vet_archer"  ,"Veteran Archer",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_woodelf ,scout_personality,[(trp_test_vet_archer,1,1)]),
+
 ]
