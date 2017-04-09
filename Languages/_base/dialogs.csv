@@ -199,10 +199,13 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|Excellent, {playername}. You are a most faithful and useful servant. This troll will be most useful for our purposes. That it is taken to the dungeons!
 dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
 dlga_lord_start:lord_generic_mission_completed.1|News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.
-dlga_lord_start:lord_generic_mission_completed.2|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
+dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
+dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
+dlga_destroy_scout_camp_failed:close_window|I will do better next time.
+dlga_lord_start:lord_generic_mission_completed.3|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
 dlga_lord_start:defend_village_failed|We have heard from our scouts near {s12} that you have failed to defend the village. The villagers were either slaughtered or made into slaves. These raiders are becoming bolder every day... ^^We sense that war is surely coming.
 dlga_defend_village_failed:close_window|I will do better next time.
-dlga_lord_start:lord_generic_mission_completed.3|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
+dlga_lord_start:lord_generic_mission_completed.4|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
 dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
 dlga_raid_village_failed:close_window|I will do better next time.
 dlga_lord_start:lord_follow_spy_half_completed|Blast and damn you! I wanted TWO prisoners, {playername} -- what you've brought me is one step short of useless! I already know everything the spy knows, it was the handler I was after. Here, half a job gets you half a reward. Take it and begone.
@@ -211,7 +214,7 @@ dlga_lord_start:lord_follow_spy_failed|Truly, {playername}, you are nothing shor
 dlga_lord_follow_spy_half_completed:lord_pretalk|I did my best, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Thank you, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm. As you like, {s65}.
-dlga_lord_start:lord_generic_mission_completed.4|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.
+dlga_lord_start:lord_generic_mission_completed.5|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. I have been waiting patiently for my slaves, yet none have returned. Have you an explanation? Were you outwitted by simple animals, or are you merely incompetent?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Forgive me, {s65}, those slaves were slippery as eels.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, that is hardly an excuse for failure, {playername}. Now if you will excuse me, I need to capture new men to work these fields before we all starve.
