@@ -2335,3 +2335,5 @@ agent_is_aiming = 302
 slot_agent_horse_agent = 303
 slot_agent_rider_agent = 304
 
+#War Council Slots
+slot_faction_war_council = 305

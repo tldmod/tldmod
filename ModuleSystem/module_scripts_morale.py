@@ -923,6 +923,7 @@ morale_scripts = [
             
             ## WB has an operation for fleeing - Kham
             (agent_start_running_away, ":agent"),
+            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
             
             ] or [
 			
@@ -963,6 +964,7 @@ morale_scripts = [
 
 		            ## WB has an operation for fleeing - Kham
 		            (agent_start_running_away, ":agent"),
+		            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
 		            
 		            ] or [
 					
@@ -1009,6 +1011,7 @@ morale_scripts = [
 						
 		            ## WB has an operation for fleeing - Kham
 		            (agent_start_running_away, ":agent"),
+		            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
 		            
 		            ] or [
 					
@@ -1062,6 +1065,7 @@ morale_scripts = [
 						
 		            ## WB has an operation for fleeing - Kham
 		            (agent_start_running_away, ":agent"),
+		            (agent_set_slot, ":agent", slot_agent_is_running_away, 1),
 		            
 		            ] or [
 					

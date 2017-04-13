@@ -2266,6 +2266,7 @@ ai_scripts = [
 
 		  (store_random_in_range,":rnd",0,100),
           (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
+          (lt, ":rnd", 10),  # faction passes random check 
 		  (try_begin),
         (eq, "$gondor_ai_testing", 1),
         (eq, ":faction_no", "fac_gondor"),

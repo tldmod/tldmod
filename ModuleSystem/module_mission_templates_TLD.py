@@ -780,8 +780,9 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
   
   common_move_deathcam_wb,
   common_rotate_deathcam_wb,
-  oliveran_archer_has_released,
-  oliveran_archer_bone_target
+  kham_archer_has_released,
+  kham_archer_bone_target,
+  kham_archer_hold_fire
 
 ])
 ## MadVader deathcam end
