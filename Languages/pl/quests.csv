@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} poprosił cię o dostarczenie wiadomości. Ma ją 
 qst_deliver_message_to_enemy_lord|- List, który ma otrzymać {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} poprosił cię o dostarczenie wiadomości. Ma ją otrzymać {s13} ({s15}). {s13} odwiedzał {s4}, gdy otrzymał{e/a}ś to zadanie.
 qst_raise_troops|- Szkolenie {reg1} {s14}
-qst_raise_troops_text|{s9} poprosił cię o wyszkolenie {reg1} {s14} i przyprowadzenie ich do niego.
+; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
 qst_escort_messenger|- Eskorta
 qst_escort_messenger_text|Odeskortuj posłańca do {s14}.
 qst_hunt_down_fugitive|- Łotr {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|- Włócznia króla Bladorthina
 qst_find_lost_spears_text|{s9} poprosił cię o odnalezienie krasnoludzkiej włóczni wykonanej dla króla Bladorthina. Musisz zapytać krasnoludów o zgodę na poszukiwania w głębi Samotnej Góry.
 qst_defend_village|- Obroń wioskę.
 qst_raid_village|-Najedź wioskę.
+; qst_destroy_scout_camp|Destroy Scout Camp
 qst_rescue_prisoners|- Na ratunek
 qst_rescue_prisoners_text|{s9} chciał, byś uratował{/a} {reg1} więźniów.
 qst_scout_enemy_town|- Wrogie miasto
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Rusz na zwiad pod {s13}, {s14} i {s15}
 qst_move_cattle_herd|- {s12}
 qst_move_cattle_herd_text|Starszy {s10} poprosił cię o przyprowadzenie {s12} do {s13}.
 qst_escort_merchant_caravan|- Transport
-qst_escort_merchant_caravan_text|Eskortuj transport zapasów do {s8}.
+; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|- {s6}
 qst_deliver_wine_text|{s9} z {s3} poprosił cię, byś dostarczył{/a} im {reg5} szt {s6} do {s4} w ciągu 7 dni.
 qst_troublesome_bandits|- Kłopotliwe gobliny

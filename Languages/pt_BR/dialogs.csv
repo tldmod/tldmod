@@ -199,10 +199,13 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|Excelente , {playername}  . Você é um servo mais fiel e útil. Este trolls será mais útil para nossos propósitos. Isso é levado para as masmorras !
 ; dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
 dlga_lord_start:lord_generic_mission_completed.1|A notícia da sua realização contra os trolls selvagens me alcançou . {s12} tem um medo menos para se preocupar , graças a você , {playername}.
-; dlga_lord_start:lord_generic_mission_completed.2|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
+; dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
+; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
+; dlga_destroy_scout_camp_failed:close_window|I will do better next time.
+; dlga_lord_start:lord_generic_mission_completed.3|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
 dlga_lord_start:defend_village_failed|Nossos batedores próximos de {s12} nos contaram que você fracassou em proteger a aldeia. Os aldeões foram todos massacrados ou escravizados. Esses saqueadores estão cada dia mais audaciosos...  ^^ Sentimos que a guerra está próxima. 
 ; dlga_defend_village_failed:close_window|I will do better next time.
-; dlga_lord_start:lord_generic_mission_completed.3|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
+; dlga_lord_start:lord_generic_mission_completed.4|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
 ; dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
 ; dlga_raid_village_failed:close_window|I will do better next time.
 dlga_lord_start:lord_follow_spy_half_completed|Explosão e raios te partam! Eu queria dois prisioneiros, {playername}..--o que você me trouxe é um passo aquém inútil! Já sei de tudo o espião sabe, foi o manipulador que eu procurava. Aqui, um trabalho meia você obtém metade uma recompensa. Pegue e vá embora.
@@ -211,7 +214,7 @@ dlga_lord_start:lord_follow_spy_failed|Verdadeiramente, {playername}, você não
 dlga_lord_follow_spy_half_completed:lord_pretalk|eu fiz o meu melhor, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Obrigado, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm . Como você quiser,, {s65}.
-dlga_lord_start:lord_generic_mission_completed.4|Porra me, mas você conseguiu, {playername}. Todos os escravos estão de volta e eles estão ocupados preparando-se para a colheita. Você certamente ganhou sua recompensa. Tome, com os meus cumprimentos.
+dlga_lord_start:lord_generic_mission_completed.5|Porra me, mas você conseguiu, {playername}. Todos os escravos estão de volta e eles estão ocupados preparando-se para a colheita. Você certamente ganhou sua recompensa. Tome, com os meus cumprimentos.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. Eu esperei pacientemente meus escravos, no entanto, nenhum retornou. Tem uma explicação? Foram você mais esperto do que por animais simples, ou você está meramente incompetente?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Perdoe-me, {s65}  , aqueles escravos estavam escorregadios como enguias .
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph , que é quase uma desculpa para o fracasso , {playername} playername . Agora, se me dão licença , eu preciso para capturar novos homens para trabalhar esses campos antes de todos nós passamos fome .

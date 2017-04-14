@@ -81,7 +81,7 @@ qstr_Skills|Yetenekler
 qstr_Ironflesh^Power_Stri|Demir Vücut^Güçlü Darbe^Power Throw^Güçlü Germe^Kalkan^Atletizm^Binicilik^Atlı Okçuluk
 qstr_Proficiencies|Yeterlilikler
 qstr_1H_Weapons^2H_Weapon|Tek elli silahlar^Çift elli silahlar^Gönderli silahlar^Okçuluk^Arbalet^Fırlatmalı silahlar
-qstr_Equipments|Ekipmanlar
+qstr_Equipment|Ekipman
 qstr_You_gained_{reg0}_Re|{s0} kadar beceri puanının {reg0} kadarını topladın
 qstr_You_lost_{reg0}_Reso|{s0} kadar beceri puanının {reg0} kadarını kaybettin
 qstr_{s24}:|{s24}:
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|Büyük Doğu Yolunun yakınında, terkedilmiş eski y
 qstr_near_what_is_left_of|Yaşlı Orman Yolu'ndan kalanların yakınında, sisli ormanı geçmek için kullanılan antik cüce yolu
 qstr_close_to_the_Hand_sh|Saruman'ın el şeklindeki simgesine yakın, Orthanc Kulesi'ne karşı işaret ediyor
 qstr_in_sight_of_the_maje|Minas Tirith görkemli şehir duvarları gözünün önümde, Ak Şehir
+qstr_in_the_outskirts_of_|Gondor'un eski başkenti Osgiliath'in eteğinde
 qstr_in_sight_of_the_entr|Erebor'un görünen girişinde, cüce hisarı
 qstr_in_sight_of_the_dark|Kara Orthanc Kulesi'nin görünüründe
 qstr_near_the_Old_Ford_wh|Old Ford'un yanında, Eski Orman Yoluyla Anduin Nehrinin kesiştiği yerde
@@ -513,9 +514,9 @@ qstr_Default_Camera|Varsayılan Kamera
 qstr_Fixed_Camera___Right|Sabit Kamera - Sağ Omuz
 qstr_Fixed_Camera___Left_|Sabit Kamera - Sol Omuz
 qstr_Cannot_leave_now.|Şimdi ayrılamazsın
-qstr_You_have_found_the_l|Yerli demirciyi buldun...
-qstr_You_have_found_the_lo|İdareyi buldun.
-qstr_You_have_found_the_loc|Ambarı buldun.
+qstr_You_have_found_the_l|Yerli demirciyi buldun...(+50 XP)
+qstr_You_have_found_the_lo|Yerli idareyi buldun...(+50 XP)
+qstr_You_have_found_the_loc|Yerli ambarı buldun...(+50 XP)
 qstr__cancelled_the_{reg1|(Mahkumları öldürmekten kazanılan {reg10} tecrübe puanları iptal edildi)
 qstr_Forming_ranks.|Sıralamalar.
 qstr_You_fall_off_of_your|Bineğinden düştün
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|Nazgul {s11} e dalış saldırısı yapıyor.
 qstr_{s11}_is_{s10}_in_th|{s11} 'a {s10} de Nazgul saldırıyor!
 qstr_{s1}_s_morale:_{reg1|{s1}'in morali: {reg1}
 qstr_You_rally_your_troop|Birlikleri topla!
-qstr_{s5}_rallies_his_tro|{s5} birliklerini topluyor!
+qstr_{s5}_rallies_{reg65?|{s5} {reg65?her:his} birliklerini topluyor!
 qstr_You_have_killed_{reg|Sen savaşta {reg1} düşman öldürdün!
 qstr_Your_bravery_inspire|Cesaret birliklerine ilham veriyor
 qstr_Everyone|Herkes
@@ -607,7 +608,7 @@ qstr_Weekly_upkeep_for_tr|Birliklerin haftalık masrafı:^{reg5} Resource Points
 qstr_{s12}^__{s4}:_{reg4}|{s12}^ {s4}: {reg4} Kaynak Puanları ({reg5})
 qstr_No_upkeep_costs|Bakım masrafları yok
 qstr_Orc_hiring_bonus:_+2|Orc işe alma bonusu: Her ork için +2/3
-; qstr_Current_party_size_l|Current party size limit is {reg5}.^Current party size modifiers are:^^Base size:  +10^Leadership: {s2}{reg1}^Charisma: {s3}{reg2}^Ranks: {s4}{reg3}^{s5}TOTAL:  {reg5}
+qstr_Current_party_size_l|Grup büyüklüğü limiti {reg5}.^Grup büyüklüğü bileşenleri:^^Temel büyüklük:  +10^Liderlik: {s2}{reg1}^Karizma: {s3}{reg2}^Nam: {s4}{reg3}^{s5}TOPLAM:  {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|Devlet güçleri raporu:^{s2}
 qstr_{s1}^^Factions_are_n|{s1} ^^ Gruplar normalde {reg1} gücünün altına düştüğünde kuşatılırlar.
@@ -749,14 +750,14 @@ qstr_You_are_quickly_disc|Düşman tarafından çabuk fark edildin.
 qstr_You_advance_stealthi|Gizlice ormanın içlerine doğru ilerlediniz. 
 qstr_You_have_evaded_the_|Devriyelerin ve kalıntıların yakınından sürünüyorsunuz!
 qstr_You_have_found_the_s|Büyücüyü buldun!
-qstr_You_cannot_leave_unt|Muhafızlar seni kaybedene kadar buradan ayrılamazsın.
-qstr_Kill_him_quickly_bef|Çabuk öldürün o kaçamadan!
+qstr_You_cannot_leave_unt|Muhafızlara izini kaybettirmeden buradan ayrılamazsın!
+qstr_Kill_him_quickly_bef|Çabuk kaçamadan öldürün onu!
 qstr_Enraged_by_the_death|{s4}'in ölümüyle çılgına dönmüş bir halde, {s3}'nin ordularına intikam yemini ettin. Önündeki günlerde yok edebildiğin kadar {s3}'nin ordularını yok etmelisin. Yoldaşlarının bu yeminine tanık olduklarının farkındasın, ve yemin-bozan olarak tanınmak istemezsin. Hiç olmadığı kadar kan akmalı!
 qstr_flooded._Somebody_or|sular altında. Birisi ya da bir şey Isen barajlarını mahvetmiş olmalı.
 qstr_destroyed._Only_smol|yerlebir edilmiş. Sadece yanan kalıntılar kalmış.
 qstr_^^^You_lost_your_fig|^^^Ayaklanmaya karşı savaşımı kaybettin! ^Orkların yeni bir komutan varmış gibi görünüyor.
 qstr_^^^You_have_slain_th|^^^ Sen suçluyu öldürdün ve diğer orklar çabucak geri çekildiler. ^ Bir süre solucanlar sessizleşecektir.
-qstr_You_cover_up_your_tr|Ekibi koru ve hareket halinde kal.
+qstr_You_cover_up_your_tr|İzlerini silip yoluna devam ediyorsun.
 qstr_Breaking_camp...|Kamp kaldırılıyor...
 qstr_You_have_left_{s1}.|{s1} 'dan ayrıldın 
 qstr_You_are_entering_{s1|({s2}) {s1}  giriyorsun.
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1} savaş alanında katledildi. Görev iptal edildi.
 qstr_{s1}_has_been_defeat|{s1} mağlup edildi. Görev iptal edildi.
 qstr_You_must_follow_{s1}|{s1}'i takip etmek zorundasın!
 qstr_You_must_follow_{s1}!|{s1}'i takip etmek zorundasın! Bu sizin son uyarınız!
-qstr_Parties_defeated:_{r|Partiler yenildi: {reg1}
+qstr_{s1}_parties_defeate|{s1} Grubunuz yenildi: {reg1} out of {reg2}
 qstr_{s1}_is_scouted.|{s1} gözlendi.
 qstr_The_Age_of_Men_has_f|İnsanların çağı sonunda geçti. Şimdi İki Kule, Orta Dünya'nın tek hükümdarının kim olacağına karar vermek için kalan ordularını ve müttefiklerini topluyor!
 qstr_The_War_of_the_Two_T|İki Kulenin savaşı başladı!
@@ -783,7 +784,7 @@ qstr_Guard_Legion_of_{s6}|{s6}'ın Muhafız Lejyonu
 qstr_Scouts_report_that_{|İzciler {s6}, başkenti savunmak için yapılan son hendekte {s7} civarında büyük bir ordu topladığını bildirdi.
 qstr_The_forces_of_{s2}_e|{s2} güçleri {s15} içinde gelişmiş bir kamp kurdular!
 qstr_{s1}_from_{s2}|{s2}'den geliyor {s1}
-; qstr_When_dealing_with_lo|When dealing with locals in {s11}, remember that they do not know you and they don't necessarily acknowledge the merits you've earned in {s10}.^^(the Resource Points which you can dispose of among people from {s11} are not the ones you earned in {s10}, but the ones you will earn in {s11} -- see also the Report screen)
+qstr_When_dealing_with_lo|{s11}'in yerlileriyle konuşurken unutma ki seni tanımıyorlar ve senin {s10}'da kazandığın değerleri bilmiyorlar. ({s11} bölgesinden olan kişilere dağıtabileceğin beceri puanları {s10} bölgesinde kazandıklarınla aynı değil. {s11} bölgesinden kazandıklarını sadece {s11} bölgesinden olan kişilere dağıtabilirsin, -- devamı için rapor ekranına göz at.)
 qstr_Info|İnfo.
 qstr_You_came_into_a_poss|Tuhaf, büyük bir kase su buldunuz. Misk gibi kokuyor.
 qstr_Obtained:_Ent_water.|Elde edildi: Ent Suyu.
@@ -822,7 +823,7 @@ qstr_Um..._by_enchanting_|Hmm...Büyüleyici demir tarafından mı?
 qstr_Magnets_are_made_of_|Mıknatıs yer altından çıkarılan metallerle yapılır. Onlar manyetik çünkü içinde yerçekimi parçaları bulunur.
 qstr_i_wont_a_bonerlrord_|bonnerlord istiyorom port nao!!11!
 qstr_I_m_sure_the_TLD_tea|TLD gelmeye çalışacak, bundan eminim.
-; qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
+qstr_Install_TLD_in_your_|Install TLD in your Bannerlord Modules folder, add the line 'compatible_with_wfas = 1' to module.ini, and you can play it both on Warband AND Warrider 0.202!
 qstr_dis_mod_takes_2_long|modun güncellenmesi çok uzun zaman alıyor! çok kötü!!11!
 qstr_Well_there_s_a_lot_o|Çok fazla yeni grafik ve diğer şeyler var.Sanırım bu zaman alacak.
 qstr_It_has_been_recently|Kısa bir süre önce yayımlandı, linki kaçırdıysanız, lemonparty.org adresinden indirebilirsiniz.
@@ -838,7 +839,7 @@ qstr_Wai_no_female_trolls|Bekle bayan troller mi? Eh?Eh? Or... çocuğu!
 qstr_WHEN_U_REALSE_MOD?!!|MODU NE ZAMAN YAYINLAYACAKSIN?!!?
 qstr_But_we_did_release._|Ama geri çekildik. Bunu içindeydin. ve neden ateş ediyorsun?
 qstr_YES!_ALSO_SOMETIMES_|EVET! BAZEN!
-; qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
+qstr_Wai_u_no_work_wiht_o|Wai u no work wiht otehr mods to make a super LOTR mod?
 qstr_Every_mod_team_works|Her mod ekibi standartlarına göre çalışır, mod yapanların görüşleri farklıysa işbirliği yapamazsınız.
 qstr_Because_we_don_t_hav|Çünkü bizde mizah duygusu yok ve çoğu da bizim için çok komik.
 qstr_In_movies_trolls_are|Filmlerde troller büyük ve şişman, Ben niye inceciğim ?
@@ -887,7 +888,7 @@ qstr_Don_t_let_them_all_d|Hepsinin tek bir yerde ölmesine izin verme. Korkaklar
 qstr_Thank_you_commander.|Teşekkürler, kumandan.^
 qstr_^{s22}_is_grateful_t|^{s22} sana minnettar, {s23}, {s29}^
 qstr_{s31}{reg28?Those:Th|{s31}{reg28?Those:That} cesur olmak {reg28?soldiers:soldier} Bize defans için yardımcı olur.{s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
-qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Those:That} useful {reg28?troops:troop} will help us hold {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
+qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Those:That} faydalı olur {reg28?troops:troop} burayı tutmamızda {s21}.{s32}^^[earned {reg14} Resource Points of {s14}]
 qstr_{s4}_^Oh_and_take_ba|{s4} ^ Oh, askerlerinizi geri alın, bizim soyumuzdan değiller.
 qstr_I_don_t_need_them_an|Onlara zaten ihtiyacım yok, o yüzden senin olsun.
 qstr_It_is_my_duty_to_pro|Halkımızı korumak benim görevimdir.
@@ -949,7 +950,7 @@ qstr__under_your_orders|,senin emrin altında
 qstr_{s9}_asked_you_to_de|{s9}, saldırı altındaki köyü savunmanızı rica etti.
 qstr_{s9}_asked_you_to_ra|{s9}, bir köy baskını istemişti.
 qstr_These_soldiers_may_w|Bu askerler planlarımda kötü gidebilecek şeyleri tamamen değiştirebilirler, {playername}.Onları iyi eğittiğinden şüphem yok.Sana teşekkürlerimi ve sayılarımı sunarım.
-; qstr_Good_work_in_shaping|Good work in shaping up those recruits, {playername}, you have been most useful. Hopefully they'll last longer than the last batch, but come see me again if they don't.
+qstr_Good_work_in_shaping|Acemileri eğiterek iyi iş çıkardın, {playername}, çok işimize yaradın. Umarım geçen sefer ki gruptan daha uzun süre dayanabilirler, fakat eğer dayanamazlarsa gel bana uğra.
 qstr_Well_the_soldiers_ar|Askerler artık sizin emrinizde, efendim. Eminim onlara iyi bakarsınız.
 qstr_Well_you_may_do_as_y|Eh, istediğiniz gibi yapabilirsiniz. Arkadaşlarım ve ben, ne zaman gerekirse yeniden sertleşebiliriz.
 qstr_{s9}_asked_you_to_br|{s9} senden ordusunda kullanmak üzere bir vahşi trol istedi.
@@ -977,16 +978,16 @@ qstr_My_spies_tell_me_of_|Casuslarım bana {s13} 'te toplanan büyük bir savaş
 qstr_{s9}_asked_you_to_sco|{s9} senden {s13} civarında gözcülük yapmanı istedi.
 qstr_We_have_reports_of_s|{s13} yakınlarındaki bazı düşman aktiviteleri hakkında raporlar var. İzcilerimiz şu ana kadar yeterince yakınlaşamadı ve düşman aktivitelerini gözlemleyemedi. İzci grubu hazırlamanı, {s13} 'e yeteri kadar yaklaşmanı ve izcileri göndermeni istiyorum.
 qstr_My_spies_tell_me_the|{s13} yakınlarındaki bazı düşman aktiviteleri hakkında raporlar var.Korkak izcilerimiz şu ana kadar yeterince yakınlaşamadı ve düşman aktivitelerini gözlemleyemedi. İzci grubu hazırlamanı, {s13} 'e yeteri kadar yaklaşmanı ve izcileri göndermeni istiyorum.Onların da kaçmayacaklarına emin ol!
-; qstr_{s9}_asked_you_to_di|{s9} asked you to dispatch a scout party near {s13}.^Obtain 7 soldiers of {s15}, of which at least 1 is {s14}, get close to {s13} and talk to the {s14} to dispatch the party.
-; qstr_We_need_to_take_the_|We need to take the battle to the enemy, {playername}. At this moment, we can do this by striking at his patrols and communications. I want you to eliminate {reg1} {s13} parties, that would help us regain initiative.
-; qstr_We_need_to_grind_dow|We need to grind down our worthless enemies, {playername}. Their patrols and supply trains are growing too bold for my liking. I want you to eliminate {reg1} {s13} parties, so they'll learn to fear what's coming.
+qstr_{s9}_asked_you_to_di|{s9}, {s13} yakınlarında bir keşif grubu göndermenizi rica etti.7  {s15} askeri bulunan,En az biri {s14} olacak. {s13}'e yaklaş ve {s14} ile grubu sevk etmek için konuş.
+qstr_We_need_to_take_the_|Düşmanlarımızı ezip geçmeliyiz {playername}. Şu anda, bunu devriyelerine ve iletişim araçlarına saldırarak yapabiliriz. Senden {reg1} {s13} gruplarını yok etmeni istiyorum, Bu savaşta inisiyatifin yeniden kazanılmasına yardımcı olur.
+qstr_We_need_to_grind_dow|Değersiz düşmanlarımızı ezip geçmeliyiz {playername}. Devriyeleri ve erzak karavanları çok cesur davramaya başladılar. Senden {reg1} {s13} partilerini yok etmeni istiyorum, böylece başlarına geleceklerden korkmayı öğrenecekler.
 qstr_{s9}_asked_you_to_el|{s9} senden {reg1} {s13} gruplarını yok etmeni istedi.
 qstr_{s9}_asked_you_to_fr|{s9} senden {s13} çevresinde kol gezen Trollün gaddarlıklarını durdurmanı istedi.
 qstr_the_Dwarves_so_that_|Cüceler, Erebor veya Iron Hills'e uğrarsanız, kendinizi efsanevi Cüce silahlarıyla silahlandırmayı deneyebilirsiniz
 qstr_Gondor_so_that_if_yo|Gondor, eğer onların topraklarından geçerseniz, onların ünlü zırhlarından bazılarını satın almayı deneyebilirsiniz
 qstr_Rohan_so_that_if_you|Rohan, eğer topraklarından geçerseniz, efsanevi atlarından birkaçını satın almaya çalışabilirsiniz
 qstr_Dale_so_that_if_you_|Dale, eğer topraklarından geçerseniz, tanınmış yaylarından bazılarını satın alabilirsiniz.
-; qstr_It_sure_look_like_yo|It sure look like you did, Mordor scum.. ^^I have heard the call by the Great Hand, to bring fear to the realm of men, and to kill as many of the horse-men as we can.
+qstr_It_sure_look_like_yo|Elbette siz yapmışsınız gibi görünüyor, Mordor pislikği .. ^^ Büyük Elin çağrısını duydum, insanlara korku saldım ve birçok atlıyı öldürdüm.
 qstr_It_sure_look_like_you|Elbette sen yapmışsın gibi görünüyor. ^^Karanlık Lord beni çağırdı ve ben çağrıya cevap vererek insanların topraklarını yok etmeye geldim.
 qstr_*Snort*_There_is_onl|* homurdanma * Sadece bir Lord var, ve o da Karanlık Lord. Bu savaşta senin gibi zayıfların yeri yok. Beni görevimle baş başa bırak.
 qstr_*Snort*_Another_weak|* Homurdanma * Etten kalkanımızı güçlendirecek bir başka cılız yaratık. Beni görevimle baş başa bırak.
@@ -1002,38 +1003,38 @@ qstr_Here_s_some_money_th|Al şunu! Bunları Mordor'dan silah almak için kullan
 qstr_Here_s_some_of_their_ow|İşte, burada onlardan kazandığım yerel paraları var...Mordor'da bunların hiç bir değeri yoktur...Al şunu! Bu paraları Rhunlu at adamlardan silah almak için kullanabilirsin...ya da yemek için at almak alabilirsin! Bu yüzden seni öldürebilirler! HAHAHA!
 qstr_That_is_not_a_smart_|Bu bir Rhun Savaşçısı önünde söylenecek zekice bir şey değil...Bir dahaki sefere seni gördüğümde seni öldüreceğim.
 qstr_They_will_all_know_m|Hepsi benim adımı ve benim adımdan korkmayı öğrenecek...
-; qstr_Suilad_mellon!_It_is|Suilad, mellon! It is not oft we meet folk from the Hidden Valley in our realm. We give thanks to the stars they lead you to our aid, and to you as well - le hannon!
-; qstr_Suilad_mellon!_It_is_|Suilad, mellon! It is rare to have one of our woodland kin come to our aid - le hannon!
-; qstr_Suilad_mellon!_That_|Suilad, mellon! That is - thank you, friend!^^ At first I wasn’t sure if a goblin sabre, or a raging bear would be our doom. Alas, the stars were kind to send you to our aid.
-; qstr_Alas_it_is_not_a_ple|Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands... 
+qstr_Suilad_mellon!_It_is|Suilad, mellon! Gizli Vadiden gelenlerin bize yardım etmesi nadir görülür, yıldızlara seni bize yönlendirdikleri için teşekkür ediyoruz, sana da teşekkürler - le hannon!
+qstr_Suilad_mellon!_It_is_|Suilad, mellon! Ormanlarda ki akrabalarımızın bizlere yardım etmesi çok nadir görülür. - le hannon!
+qstr_Suilad_mellon!_That_|Suilad, mellon! Teşekkür ederim, dostum! ^^ İlk başlarda, bir goblin kılıcının mı ya da öfkeli bir ayının mı bizim sonumuz olacağından emin değildim. Neyse ki, yıldızlar sizi yardıma gönderdiler.
+qstr_Alas_it_is_not_a_ple|Ne yazık ki beni ve Lord Elrond'a hizmet eden diğer adamları bu topraklara getiren şey merak ya da hoş bir amaç değil.
 qstr_You_wouldn_t_have_ne|Sınırlarınızı kapalı tutsaydınız yardımımıza ihtiyacınız olmayacaktı!
 qstr__*growl*_I_know_your|(* hırlama * Benimle alay mı ettiğini yoksa teşekkür mü ettiğini anlayacak kadar dilini biliyorum elf...
-; qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Deep are my master’s designs, not for all to see and understand.
-; qstr_Alae!_Our_green_wood|Alae! Our green woods are heavily patrolled, our thick gates stand firm, king Thranduil’s halls secure. It would be wise to follow our example.
+qstr_Istan_quete_ya_merin|Istan quete ya merin, ar lá hanyuvatyen. Derinlikler benim efendimin tasarımıdır, herkesin görüp anlayacağı şeyler değildirler.
+qstr_Alae!_Our_green_wood|Alae! Yeşil ormanlarımızda sürekli devriyeler gezer, kalın kapılarımız sağlamdır, Kral Thranduil'in salonu güvenli ve korunaklıdır. Bizi örnek almanız sizin için akıllıca olur.
 qstr__say_nothing_|(Hiçbir şey deme)
-; qstr_Alas_it_is_not_a_plea|Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands. ^^An ancient evil stirred in the dark places and now it swarms into the light. Wise ones across the Mountains answered the call and hosts of Imladris march to battle, to fight for the North.
-; qstr_You_wouldn_t_have_nee|You wouldn't have need of our aid if you kept your borders shut! ^^Tales of the Forest Witch only scare away witless fools - not so the orc filth we just slew.
-; qstr_*growl*_I_know_your_|*growl* I know your tongue, elf, well enough to know if you mock me or if you give thanks.^^ Stars had none to do with it - I sensed the filth and followed a trail. I would have slain them were you in danger or not.
-; qstr_Keep_your_secrets_th|Keep your secrets then, friend, but the Golden Woods whisper of your kin’s arrival. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold.
-; qstr_We_walk_under_the_su|We walk under the sun and the stars, to dwell in caves is not our desire. Still, your undoubtedly well meant council is well received. ^^Your wisdom and brave deeds shall be known, your needs met whenever you wander into our domain.
-; qstr_*he_sighs_and_smiles|*he sighs and smiles slightly* ^^Very well. For our common purpose we are happy to share all, even if words are in short supply where you come from.
-; qstr_For_some_months_we_h|For some months we have watched the orc filth multiplying and staining our woods. ^^We will inform our lady Galadriel of lord Elrond’s coming, though I suspect she knows of it already. And we shall speak of you too, to all our people. ^^Le maethor veleg a gornui! Your valour and deeds shall be known and your needs met whenever you visit our Valley of Singing Gold.
-; qstr_Calm_yourself_friend|Calm yourself, friend. Pedin i phith in aniron, a nin u-cheniathog. ^^We shall speak of you to all our people. Your valour and deeds shall be known, your needs met whenever you come to bask in the light of our Golden Valley.
-; qstr_Stars_sail_through_t|Stars sail through the heavenly seas, men tread the earth. Truly, who can say if their paths follow each other? We shall speak of you to all our people. Your deeds shall be known and your needs met, were you to chase a star to the Golden Valley.
+qstr_Alas_it_is_not_a_plea|Ne yazık ki beni ve Lord Elrond'a hizmet eden diğer adamları bu topraklara getiren şey merak ya da hoş bir amaç değil. ^^ Eski bir kötülük karanlık yerlerde karıştı ve şimdi ışık saçıyor. Dağlar boyunca bilge olanlar çağrıya cevap verdi ve Imladris Kuzey için savaşmak için yürümeye başladı.
+qstr_You_wouldn_t_have_nee|Eğer sınırlarınızı kapalı tutsaydınız bizim yardımımıza ihtiyacınız olmazdı! ^^Orman cadıları hurafeleri sadece akılsız aptalları korkutur, az önce öldürdüğümüz orkları korkutmaz.
+qstr_*growl*_I_know_your_|* Homurtu * Benimle dalga mı geçtiğini yoksa bana teşekkür mü ettiğini anlayacak kadar dilini biliyorum Elf.^^ Yıldızların onunla hiçbir ilgisi yok - pisliği hissettim ve izi takip ettim. Tehlikede olsaydın da olmasaydın da onları öldürürdüm.
+qstr_Keep_your_secrets_th|Sırrınızı saklayın o zaman dostum, ancak Golden Woods akrabanızın geldiğini fısıldıyor.^^ Efendimiz Elrond'un gelişi hakkında Galadriel'i bilgilendireceğiz, bundan zaten haberi olup olmadığı konusunda şüpheliyim. Ve biz de sizinle, tüm halkımız için konuşacağız. ^^ Le maethor veleg a gornui! Değeriniz ve yaptıklarınız bilinmeli.Singing Gold Vadisi'ni her ziyaretinizde her türlü ihtiyacınız karşılanacaktır.
+qstr_We_walk_under_the_su|Yıldızların ve güneşin altında yürürüz.Mağaralarda yaşamak bizim arzumuz değil. Yine de şüphesiz iyi niyetli temsilciniz iyi karşılandı. ^^ Bilgece ve cesurca işleriniz bilinecek, alanımıza girdiğinizde her türlü gereksiniminiz yerine getirilecek.
+qstr_*he_sighs_and_smiles|* İç çekiyor ve hafifçe gülümsüyor * ^^iyi. Ortak amaçlarımız için, nereden geldiğinizi belirtmede kelimeleriniz yetersiz olsa bile her şeyimizi paylaşmaktan mutluluk duyuyoruz.
+qstr_For_some_months_we_h|Birkaç ay boyunca ork pisliklerinin çoğalmasını ve ormanlarımızın lekelenmesini izledik. ^^ Efendimiz Elrond'un gelişi hakkında Galadriel'i bilgilendireceğiz, bundan zaten haberi olup olmadığı konusunda şüpheliyim. Ve biz de sizinle, tüm halkımız için konuşacağız. ^^ Le maethor veleg a gornui! Değeriniz ve yaptıklarınız bilinmeli.Singing Gold Vadisi'ni her ziyaretinizde her türlü ihtiyacınız karşılanacaktır.
+qstr_Calm_yourself_friend|Sakin ol dostum. Pedin i phith in aniron, a nin u-cheniathog. ^^ Seninle tüm halkımıza konuşacağız. Seninle tüm halkımız adına konuşacağız. Altın vadi ihtiyaçlarınızı karşılayacak.
+qstr_Stars_sail_through_t|Yıldızlar göksel denizlerde yol alırlar, insanlar yeryüzünde yol alırlar. Gerçekten, onların yollarının birbirlerini takip edip etmeyeceğini kim söyleyebilir? Seninle tüm halkımız adına konuşacağız. Altın vadi ihtiyaçlarınızı karşılayacak.
 qstr__RESOURCE_POINT_TUTO|(RESOURCE POINT TUTORIAL) ^^ Lorien halklarını geliştirmek için kullanabileceğiniz Kaynak Puanları Lorien'de kazanılablir . ^^ Daha fazla bilgi için RAPORLAR bölümüne bakınız.
 qstr__RESOURCE_POINT_TUTOR|(RESOURCE POINT TUTORIAL) ^ ^ Beorn halkını geliştirmek için kullanabileceğiniz Kaynak Puanları, Lothlórien'de kazandığınız kaynaklar değil, Beorn'da kazanacağınız Kaynaklar olmalıdır. ^^ Daha fazla bilgi için RAPORLAR bölümüne bakınız.
 qstr_I_have_long_wished_t|Uzun zamandır orman halkını ziyaret etmek istemiştim...
 qstr_What_form_shall_the_|Lorien'in lehine ne gibi şeyler olur ...
 qstr_Our_bees_make_honey_|Arılarımız bal ve balmumu yapıyor, sürülerimiz süt, yağ ve peynir veriyor...
-; qstr_I_have_long_wished_to|I have long wished to visit the woodland folk, taste your lembas and hear your songs! ^^We brought sparkling golden wines, dusty tomes and proud ancient banners to remind us of our stream-singing valley, but I’m curious what unique wonders are to be found in Laurelindorenan.
-; qstr_What_form_shall_the_f|What form shall the favour of Lorien take? ^^Gold that turns into leaves come morning? Clear tasteless drink and dusty fairy-bread for my troops? ^^Blood-red wine, freshly hunted deer, armouries filled with sharp spears and keen arrows! That is hospitality I prefer.
+qstr_I_have_long_wished_to|Ormandaki halkı ziyaret etmek, lembazların tadına bakmak ve şarkılarınızı dinlemek için uzun zamandır bekliyordum! ^^ Altın gibi parlayan şaraplar,tozlu kitaplar ve Akarsuların şarkı söylediği vadimizi hatırlatmak için eski bayraklar getirdim.Laurelindorenan'da ne gibi eşsiz harikalar bulunduğunu merak ediyorum.
+qstr_What_form_shall_the_f|Lorien'den istedikleriniz neler ? ^^Yapraklar gibi dökülen altınlar mı?Yiyecekler mi? ^^Şarap,taze geyik eti yada keskin oklar mı? Tercih ettiğim konukseverlik budur.
 qstr_Our_bees_make_honey_a|Arılarmız bal ve balmumu yapar, sürülerimiz süt, tereyağı ve peynir verirler. ^^ Ekmeği biz kendimiz yaparız,Keskin bir balta için cücelerle geçtikleri zaman ticaret yapabiliyoruz. ^^ Başka ne isteyebilirim ki, güçlü bir çift elde başka?
 qstr_If_fate_wills_it_I_s|Eğer kader bunu istiyor ise, Topraklarında yeniden yürüyeceğim ve onların tüm sırlarını öğreneceğim.
-; qstr_If_I_ever_have_need_|If I ever have need for the kind of help Lorien can offer, I shall come for it. Whatever use it may be.
+qstr_If_I_ever_have_need_|Lorien'in sunabileceği yardıma her ne kadar ihtiyacım olursa, onun için geleceğim. Ne olursa olsun.
 qstr__nod_and_say_nothing|(Başını salladı ve hiçbir şey söylemedi)
-; qstr_Oh_there_are_many_an|Oh, there are many and any friend of Lorien is welcome to these gifts! ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your kindness with all you would require - bright weapons, hard corselets of mail, white-feathered arrows and provisions for your troops. ^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who could offer council to others, or ask favours of them.
-; qstr_The_joys_of_the_Gold|The joys of the Golden Valley are many and a true friend of Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your effort with all you would require - bright weapons, hard corselets of mail, deadly arrows and nourishing food for your troops.^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who would share wisdom with others, or ask favours of them.
-; qstr_Our_Golden_Valley_gi|Our Golden Valley gives goods aplenty and a friend to Lorien is welcome to them. ^^Should we stand shoulder to shoulder on the field of battle again, or should you aid the designs of our Lady and her lords, our people will reward your effort with all you would require while far away from home.
+qstr_Oh_there_are_many_an|Altın Vadinin nimetleri çoktur ve Lorien'in gerçek dostlarına karşı kapımız her zaman açıktır. ^^ Savaş alanında tekrar omuz omuza mücadele ederek mi yoksa Leydi ve Lordların başka planlarına mı yardım edersiniz, halkımız çabalarınızı parlak silahlar, sert zırhlar, ölümcül oklar ile ödüllendirecektir ve birliklerin için gerekli yiyeceklerle. ^^Kim bilir belki de bir gün başkalarıyla bilgeliğini paylaşacak ya da onlardan iyilik isteyecek Lorien'in büyük bir {lordu/leydisi} haline gelebilirsin.
+qstr_The_joys_of_the_Gold|Altın Vadinin nimetleri çoktur ve Lorien'in gerçek dostlarına karşı kapımız her zaman açıktır. ^^ Savaş alanında tekrar omuz omuza mücadele ederek mi yoksa Leydi ve Lordların başka planlarına mı yardım edersiniz, halkımız çabalarınızı parlak silahlar, sert zırhlar, ölümcül oklar ile ödüllendirecektir ve birliklerin için gerekli yiyeceklerle. ^^Kim bilir belki de bir gün başkalarıyla bilgeliğini paylaşacak ya da onlardan iyilik isteyecek Lorien'in büyük bir {lordu/leydisi} haline gelebilirsin.
+qstr_Our_Golden_Valley_gi|Altın Vadimiz ürünleri ve Lorien'in hoşça karşılayacağı misafirleri bize bol bol verir. ^^ Savaş alanında tekrar omuz omuza mücadele ederek mi yoksa Leydi ve Lordların başka planlarına mı yardım edersiniz, halkımız evinizden uzakta iken ihtiyaç duyacağınız her şey için çaba gösterecektir.
 qstr_I_shall_keep_that_in|Bunu aklında tutacağım.^^ Hantanyel, áva márië!
 qstr_That_may_be_so_some_|Bu olabilir, dünyanın bazı yolları eğridir.^^ Boe i 'waen!
 qstr_I_seldom_wander_far_|Nadiren evden uzaklaşırım.Toz ol, hala yapabiliyorken. Etrafda daha fazla goblin olabilir.

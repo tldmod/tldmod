@@ -314,7 +314,7 @@ str_npc13_intro|Orada dur!  Seni Chieftain'in çadırına getirende nedir?
 str_npc14_intro|Sende bacakları denizde çok az zaman geçirmiş birinin yürüyüşü var yabancı.
 str_npc15_intro|Göz'e övgülerimi iletirim, ah Savaşçı!
 str_npc16_intro|Doğu topraklarındaki çadırlar arasında yürüyen bir yabancıyı görmek sık başıma gelen bir şey değil. Buraya ne getirdin? Şimdi konuş ve çabuk ol.
-; str_npc17_intro|Hey. Fancy them woods there?
+str_npc17_intro|Hey, buradaki ormanları sever misin?
 str_npc1_intro_response_1|Selamlar, Usta takipçi. Güney Rangers'ı nasıl buldun?
 str_npc2_intro_response_1|Benim işlerim Gondor'un işleridir, ve sen kimsin?
 str_npc3_intro_response_1|Ve sana da iyi günler, yanlış bir şey mi vardı?
@@ -388,7 +388,7 @@ str_npc17_backstory_b|Biliyorsun, ağaçlardan bir sürü şey yapabilirsin.Beni
 ; str_npc3_backstory_c|So, here I am, disgraced and bitter. My éored must be miles away now, and I wouldn't have a fair chance of catching up with them, not with all the orcs and wildmen roaming the plains. Are you by any chance in need of a fine Rohirrim rider?
 ; str_npc4_backstory_c|You might know that women, however skilled, are not allowed to ride with the éoredas. However, I do not think that waiting by the hearth for the warriors to return is my fate. I will not sit idle until all chance of great deeds is gone in this War, and I would welcome your assistance, warrior.
 str_npc5_backstory_c|Bununla birlikte, eğer Lothlórien'in düşmanları kaçarsa, bir süre sana katılmayı düşünebilirim {playername}. Bu Savaşta kaderlerimizin birbiriyle örtüştüğünü hissediyorum.
-; str_npc6_backstory_c|You wouldn't understand that, I think, seeing you prepared for war. But you must have travelled far and wide - have you seen the other great forests? Can you take me there?
+str_npc6_backstory_c|Senin savaş için hazırlık yapmanı anlamıyor. Ancak uzun yoldan gelmiş olmalısınız - diğer büyük ormanları gördünüz mü? Beni oraya götürür müsünüz?
 ; str_npc7_backstory_c|There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival.
 ; str_npc8_backstory_c|I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all.
 ; str_npc9_backstory_c|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.^^I would come with you and hunt men in the south, while the snagas of Isengard gnash their teeth.
@@ -408,7 +408,7 @@ str_npc5_backstory_later|İyi düşündün mü? Eldar için zaman azalıyor.
 ; str_npc6_backstory_later|I've been observing a nest of giant spiders for a couple of days. Ugly creatures, they seem at first, but they keep intruders at bay. Did you come to ask me to travel with you?
 str_npc7_backstory_later|Surları inşa etmek her cüce için değerlidir. Ama benim biraz da baltamı kullanmam gerek. Bırak seninle geleyim.
 ; str_npc8_backstory_later|I made another call to our King, this time for vomiting. I hope his resolve to engage the enemy is not related to his conditions. Do you suffer from constipation and vomiting too?
-; str_npc9_backstory_later|What do you think I do? Gulm is sitting here and waiting for some sneaky snaga to stick him in the dark. Take me with you - I will serve well.
+str_npc9_backstory_later|Ne yaptığımı düşünüyorsun? Gulm burada oturuyor ve  sinsi bir yılanın onu karanlıkta sokmasını bekliyor. Beni de yanına al - Sana iyi hizmet edeceğim.
 str_npc10_backstory_later|Yeniden inceledin mi? Ben iyi hizmet edeceğim.
 ; str_npc11_backstory_later|Ar! It was you! I smelt you, I knew you were coming. Tell the Bosses that, will ya? They think since I was kicked out of the trackers that it's safe to flout me, well they're mistaken, I'll put an arrow in their guts first. And whose blames was that? Not mine!
 ; str_npc12_backstory_later|I have my orders. Any trespasser found by my lads up here are to be stripped; teeth, nails, hair and all. But I've got my watchers. We know there are funny things going on: with the big bosses going off to war, and all that. Big things going on away west, they say. Sitting here doin' nothing is more than my belly's worth.
@@ -471,7 +471,7 @@ str_npc17_signup|Çok iyi! Bir sürü ağaç tanıyorum. Çok geçmeden bir sür
 str_npc1_signup_2|Kaptanımla konuşmak ve eşyalarımı toplamak biraz zaman alacak.
 str_npc2_signup_2|Önce çavuşla konuşmalıyım, sonra gideriz - savaşılacak görkemli savaşlar ve görülecek  garip yaratıkların görgü kuralları var!
 str_npc3_signup_2|Uzun zamandır birinin gelip beni almasını bekliyordum, yani sadece atımı hazırlamam lazım ondan sonra yolculuğa hazırım.
-; str_npc4_signup_2|I have hunted game many times with bows and throwing spears. I will hunt orc under your command. And I have some skill in healing I'm certain will be needed.
+str_npc4_signup_2|Ben defalarca yaylarla ve mızraklarla avlandım. Emrinde orkları avlayacağım. Ve ihtiyaç duyacağından emin olduğum bazı şifa yeteneklerim var.
 ; str_npc5_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
 str_npc6_signup_2|Belki sana daha hızlı koşmayı ve daha az ses yapmayı öğretebilirim. Hadi gidelim
 str_npc7_signup_2|Grubunuzdaki uzun boylu halkları, özellikle de sinsi Elfleri hizada tutabilirseniz, memnuniyetle size katılırım.
@@ -508,7 +508,7 @@ str_npc3_signup_response_2|Üzgünüm, fikrimi değiştirdim - belki başka zama
 str_npc4_signup_response_2|Özür dilerim leydim, belki daha sonra.
 str_npc5_signup_response_2|Yeniden düşündüm de, belki Lothlórien'e kendi başımıza yardım etmeliyiz.
 str_npc6_signup_response_2|Üzgünüm, sadece seni savaş meydanında hayal edemedim.
-; str_npc7_signup_response_2|Sorry, I happen to like Elves.
+str_npc7_signup_response_2|Üzgünüm,Elfleri sevmeye başladım
 str_npc8_signup_response_2|Özür dilerim, herkes benim şirkette savaşır.
 str_npc9_signup_response_2|Fikrimi değiştirdim. Peşinde olanlar benim peşimden de gelebilir.
 str_npc10_signup_response_2|Fikrimi degiştirdim.
@@ -548,7 +548,7 @@ str_npc9_payment_response|Oh, Fakat eğer benimle olursan bekçiler beni durdurm
 str_npc10_payment_response|Şu andan itibaren seninle birlikte görev yapıyorum. [costs {reg14}/{reg15} Influence]
 str_npc11_payment_response|Patronunu boşver, şimdi bana hizmet ediyorsun.  [costs {reg14}/{reg15} Influence]
 str_npc12_payment_response|Sizin çocuklar yeni siparişler alacak, Yüksek artışlar için endişeleniyorum.[costs {reg14}/{reg15} Influence]
-; str_npc13_payment_response|They will see otherwise, for I'm your Chieftain now. [costs {reg14}/{reg15} Influence]
+str_npc13_payment_response|Aksini görecekler, çünkü ben şimdi senin Şefinim [costs {reg14}/{reg15} Influence]
 str_npc14_payment_response|Eski Liman ustası hakkında endişelenmenize gerek yok. [costs {reg14}/{reg15} Influence]
 str_npc15_payment_response|Para ile satın alınamaz değil mi ? Aletleri sana getireceğim. [costs {reg14}/{reg15} Influence] 
 str_npc16_payment_response|Ataları onurlandırıyorum.Senin ve benim atalarımı [costs {reg14}/{reg15} Influence]
@@ -610,7 +610,7 @@ str_npc2_personalityclash_speech_b|{s11} den nefret ediyorum.
 str_npc4_personalityclash_speech_b|{s11} den nefret ediyorum.
 str_npc5_personalityclash_speech_b|{s11} den nefret ediyorum.
 ; str_npc6_personalityclash_speech_b|His dwarven ways may serve him well underground, albeit it's a wonder he hasn't fallen down an ugly shaft. Maybe he should have.
-; str_npc7_personalityclash_speech_b|We would do better with a dwarven hero, someone like Durin the Deathless of old, and let the Elves prance around their forests.
+str_npc7_personalityclash_speech_b|Cüce kahraman, eski Ölümsüz Durin gibi biriyle daha iyi oluruz. Bırak elfler ormanlarında dolansınlar.
 ; str_npc8_personalityclash_speech_b|It is made from wormwood soaked in liquor and apparently favored by minstrels and vagrants for seeing things that are not there. I doubt you'll approve of your soldiers chasing air on the battlefield, as much as it may be amusing to watch.
 str_npc9_personalityclash_speech_b|{s11} den nefret ediyorum.
 str_npc10_personalityclash_speech_b|{s11} den nefret ediyorum.
@@ -1236,7 +1236,7 @@ str_rohan_rumor_10|Krallıktaki en iyi atlı olmak için, en iyi atları sürmek
 str_rohan_rumor_11|Gondor'da gördüğün atların çoğu bizden gönderildi. Onlar Ağır zırhlarını taşıyabilen, biraz daha güçlü, ancak biraz daha yavaş atları tercih ederler.
 ; str_rohan_rumor_12|We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small.
 str_rohan_rumor_13|Saruman'ın orkları kötü ama çok fazla koruma giymiyorlar. İyi bir balta darbesi için uygun değiller.
-; str_rohan_rumor_14|Our throwing axes and spears may seem bulky, but how many chances do you have to throw a missile before you ride down the foe? Make it count by throwing something with some heft.
+str_rohan_rumor_14|Fırlatma baltalarımız ve mızraklarımız hantal görünebilir, ancak düşmana at sırtında isabet ettirme olasılın ne kadar ki? İsabet ettirdiğine değecek ağırlıkta olsun bari.
 ; str_rohan_rumor_15|Hitting an orc with an arrow loosed from horseback looks difficult because it is, but the price of charging a rank of long pikes is higher.
 str_rohan_rumor_16|Gondor okçuluk talimleri yapar. Biz atlı okçulara talim yaptırırız. Dunlendingler ise ikisini de yapmaz.
 str_rohan_rumor_17|Saruman'ın orklarının birçoğu ölümcül okçular. Birçoğu değil. Bilge bir süvari komutanı kimin hangisi olduğunu keşfetmek için beklememelidir.
@@ -1359,12 +1359,12 @@ str_beorn_rumor_13|*Homurtu* Hiç balın var mı?
 str_beorn_rumor_14|Dağlarda yalnız dolaşma! Ayılar ve kurtlar genelde insan gruplardan uzak duruyorlar. Ancak açlık veya bazılarının söylediği gibi kötü ruhlar, onları sana saldırtabilirler.
 str_lorien_rumor_begin|Lórien! Kış geliyor, çıplak ve kurak olmayan Gün; Yapraklar akıma düşüyor, nehir akıyor.
 str_lorien_rumor_2|Lady Galadriel'e hiçbir kötülük söyleme! Bir adam ona getirmediği sürece, onda ve bu topraklarda hiç kötülük yoktur. O zaman dikkat etmeye çalış!
-; str_lorien_rumor_3|The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.
+str_lorien_rumor_3|Dünya gerçekten de tehlikeyle doludur ve içinde pek çok karanlık yer vardır; Ama yine de adil olan çok şey var ve sevginin artık kederle karıştığı tüm topraklarda belki de sevgi eskisinden daha büyük oluyor.
 ; str_lorien_rumor_4|Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house.
 str_lorien_rumor_5|Genelde nefret kendine zarar verir!
 str_lorien_rumor_6|Antik büyü, Lothlórien'i korur; Karanlığın gücü henüz buna karşı koymaya yetmez.
 str_lorien_rumor_7|Nathlo i Nathal! Altın ormanlarda güvendesin. Posto vae - şimdi dinlen , ye ve iç. Eğer ayrılmak zorunda kalırsan, Lorien'in eskiden nasıl olduğunu hatırla.
-; str_lorien_rumor_8|It is said that the sea calls to everyone, sooner or later. I too shall hear the gulls one day, leave Laurelindórenan for good. I Harthon an lend and. 
+str_lorien_rumor_8|Denizin herkesi er ya da geç çağıracağı söylenir. Ben de bir gün martıları duyacağım ve Laurelindórenan'ı bırakacağım. Harthon'a bir borç vermiştim ve.
 str_lorien_rumor_9|Av-'osto - korkma! Gri pelerinlerimiz bizi düşmanlardan koruyor.
 str_imladris_rumor_begin|Elflerin ve İnsanların ve tüm Özgür Halkların duaları sizinle birlikte olsun.
 str_imladris_rumor_2|Yıldızlar yüzlerine parlasın!
@@ -1458,7 +1458,7 @@ str_good_rumor_2|Orklar geceleri daha iyi dövüşürler, ancak gündüz zayıfl
 str_good_rumor_3|Uruk-Hai farklıdır, orklar gibi güneş ışığı korkusu yok !
 str_good_rumor_4|Yenilgi ve dinlenme sonrasında,  Gölge her zaman başka bir şekil alır ve tekrar büyür.
 str_good_rumor_5|Ölü Denizler ... tüm iyileşmenin ötesinde hasta, kirlenmiş bir toprak.
-; str_good_rumor_6|The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them.
+str_good_rumor_6|Gölge yalnızca taklit edebilir,yeni bir şey yapamaz: yeni şeyler ona ait değil. Orklara hayat verdiğini sanmıyorum, sadece onları değiştirdi ve oanları mahvetti.
 str_good_rumor_7|Eskiden buraya Greenwood denilirdi ve burası elfler ile doluydu. Kuzey dünyanın en büyük ormanları. Ama şimdi Kuyutorman olarak biliniyor. Her türden kötü yaratığın etrafta süründüğü yer.
 str_good_rumor_8|Argonath, Kralların Sütunları, Gondor'un kuzeydeki eski sınırının büyük koruyucuları.
 str_good_rumor_9|Amon Hen, Nen Hithoel'in güney ucundaki üç doruğun en batı ucudur.
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|Savaş Yaraları
 ; str_trait_desc_battle_scarred|You have suffered horrific wounds during your many campaigns yet you still live to tell the tale. Your scarred and knotted flesh now conspires with hard experience to increase your resistance to injury. While others may find your appearance somewhat shocking your followers consider it an affirmation of your battle experience. They subsequently receive a weekly morale bonus.
 str_trait_title_fell_beast|Fell Beast
 ; str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
+str_trait_title_butcher|Kasap
+str_trait_desc_butcher|Düşmanlarınından daha fazla et çıkarma yeteneğin geliştirmiştir. Tutuklulardan birini et için her kesdiğinizde ekstra bir kilo alırsınız.
 str_wound_head|kafaya sert bir darbe
 str_wound_chest|birkaç kırılmış kaburga kemiği
 str_wound_arm|Kötü, sakat bir kol.

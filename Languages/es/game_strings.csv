@@ -308,7 +308,7 @@ str_npc7_intro|¡Kíli, hijo de Dwalin, a su servicio!
 str_npc8_intro|Bienvenido a Valle, viajero. ¿Cómo puedo ayudaros?
 str_npc9_intro|¡Ssh! ¡Si se te ocurre siquiera saludar a los guardias te cortaré la molleja y se la daré de comer a los huargos!
 str_npc10_intro|¡Tú!          
-str_npc11_intro|¡Arrg! No eres de aquí, ¿verdad? Puedo olerlo y si dices que no enfrente de los jefes, ¡te sacaré los ojos!
+str_npc11_intro|¡Arrg! No eres de aquí, ¿eh? Puedo olerlo y si lo niegas enfrente de los amos, ¡te sacaré los ojos!
 str_npc12_intro|¡Eh! ¿Qué haces merodeando por aquí?
 str_npc13_intro|¡Alto! ¿Qué te trae a la tienda del Caudillo?
 str_npc14_intro|Tienes los andares de un hombre cuyas piernas han visto pocos días en el mar, forastero. 
@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|las faldas de las Montañas Grises, donde hab
 str_fullname_region_mordor|Mordor, el Reino Oscuro de Sauron
 str_shortname_region_unknown|una región sin nombre
 str_shortname_region_pelennor|Los Campos de Pelennor
-str_shortname_region_subfac_pelargir|El feudo de Lebennin
+str_shortname_region_subfac_pelargir|el Feudo de Lebennin
 str_shortname_region_subfac_dol_amroth|Belfalas
 str_shortname_region_subfac_ethring|El Valle del Ringló
-str_shortname_region_subfac_lossarnach|El feudo de Lossarnach
+str_shortname_region_subfac_lossarnach|el Feudo de Lossarnach
 str_shortname_region_subfac_pinnath_gelin|la región de Pinnath Gelin
 str_shortname_region_subfac_blackroot|el feudo de Lamedon
 str_shortname_region_n_ithilien|el Norte de Ithilien
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|Cicatrices de Guerra
 str_trait_desc_battle_scarred|En el pasado habéis sufrido terribles heridas de guerra durante innumerables campañas militares y sin embargo, habéis sobrevivido. Vuestra piel endurecida por la guerra y llena de cicatrices, junto con vuestra gran experiencia en el campo de batalla, os hace más resistente a los golpes enemigos. Aunque algunos puedan considerar vuestra apariencia como algo estremecedora, vuestros soldados la consideran como una evidencia de vuestra gran experiencia de guerra. Por tanto, reciben semanalmente un incremento en puntos de moral.
 str_trait_title_fell_beast|Bestia Temible
 str_trait_desc_fell_beast|Vuestro pellejo está lleno de numerosas cicatrices de incontables batallas y vuestra maligna voluntad es dura e inquebrantable. Incluso para los estándares de los orcos, los uruk y los trolls, se os ve como una bestia salvaje y peligrosa. Aquellos que os sirven gritan vuestro nombre con júbilo cuando os ven en el campo de batalla. Sois la encarnación de la guerra y apenas conocéis el temor.
+str_trait_title_butcher|Carnicero
+str_trait_desc_butcher|Te has vuelto más experimentado a la hora de descuartizar a tus enemigos. Ahora consigues un puñado más de carne cada vez que sacrificas a uno de tus prisioneros.
 str_wound_head|un duro golpe en la cabeza
 str_wound_chest|algunas costillas rotas
 str_wound_arm|una herida en el brazo
@@ -1847,7 +1849,7 @@ str_khand_gift3|Lingotes de Acero
 str_khand_gift4|Máscaras Sagradas de Guerra
 str_umbar_gift0|Ostras y Sal Marina
 str_umbar_gift1|Peines de Hueso de Ballena y Anzuelos
-str_umbar_gift2|Esclavos para el Placer
+str_umbar_gift2|Esclavos complacientes
 str_umbar_gift3|Mapas de Navegación de los Mares del Sur
 str_umbar_gift4|Misteriosos Diagramas Númenóreanos
 str_moria_gift0|Cerveza Enana Podrida
