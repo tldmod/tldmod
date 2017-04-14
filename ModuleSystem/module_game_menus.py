@@ -5494,6 +5494,7 @@ game_menus = [
             (eq, "$g_battle_result", 1),
             (this_or_next|le, ":num_enemy_regulars_remaining", 0), #battle won
           	(le, ":num_enemy_regulars_remaining", "$num_routed_enemies"), #Kham - routed enemies don't get spawned
+          	(assign, ":enemy_finished", 1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),
             (le, "$g_enemy_fit_for_battle",0),
