@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} ti ha chiesto di consegnare un messaggio a {s13}. 
 qst_deliver_message_to_enemy_lord|Consegna un messaggio a {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} ti ha chiesto di consegnare un messaggio a {s13} di {s15}. {s13} si trovava a {s4} quando ti è stato dato questo compito.
 qst_raise_troops|Istruisci {reg1} {s14}
-qst_raise_troops_text|{s9} ti ha chiesto di istruire {reg1} {s14} e riportarglieli.
+qst_raise_troops_text|{s9} ti ha chiesto di addestrare {reg1} {s14} e di consegnargli a {lui/lei}.
 qst_escort_messenger|Scorta il messaggero fino a {s14}
 qst_escort_messenger_text|Nessuno
 qst_hunt_down_fugitive|Dai la caccia a {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Cerca le lance perdute di re Bladorthin
 qst_find_lost_spears_text|{s9} ti ha chiesto di trovare le lance perdute che i nani donarono a re Bladorthin. Devi chiedere il permesso ai nani per cercare le lance nelle profondità della Motagna Solitaria.
 qst_defend_village|Difendi il Villaggio
 qst_raid_village|Razzia il Villaggio
+qst_destroy_scout_camp|Distruggi il Campo degli Esploratori
 qst_rescue_prisoners|Salva {reg1} prigionieri
 qst_rescue_prisoners_text|{s9} vuole che salvi {reg1} prigionieri.
 qst_scout_enemy_town|Esplora la posizione nemica
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Nessuno
 qst_move_cattle_herd|Sposta {s12} a {s13}
 qst_move_cattle_herd_text|L'Anziano di {s10} ti ha chiesto di spostare un po' di {s12} a {s13}.
 qst_escort_merchant_caravan|Scorta il convoglio dei rifornimenti fino a {s8}
-qst_escort_merchant_caravan_text|Scorta il convoglio dei rifornimenti fino a {s8}
+qst_escort_merchant_caravan_text|Scorta la carovana dei rifornimenti a {s8} e parla con loro quando sei nei pressi della destinazione.
 qst_deliver_wine|Consegna {reg5} unità di {s6} a {s4}
 qst_deliver_wine_text|Il {s9} di {s3} ti ha chiesto di consegnare {reg5} unità di {s6} a {s4} in 7 giorni.
 qst_troublesome_bandits|Dai la caccia ai Goblin molesti

@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9}希望你给{s13}送一封信。你接受任务时{
 qst_deliver_message_to_enemy_lord|给{s13}送一封信
 qst_deliver_message_to_enemy_lord_text|{s9}希望你给{s15}的{s13}送信。你接受任务时{s13}正位于{s4}。
 qst_raise_troops|在{s14}征{reg1}的税
-qst_raise_troops_text|{s9}希望你在{s14}征{reg1}的税并带给他。
+qst_raise_troops_text|{s9}希望你能训练{reg1}名{s14}并带给{他/她}。
 qst_escort_messenger|护送信使到{s14}
 qst_escort_messenger_text|无
 qst_hunt_down_fugitive|追捕{s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|寻找丢失的布拉多辛王长枪
 qst_find_lost_spears_text|{s9}希望你去寻找丢失的布拉多辛王长枪，该长枪是孤山矮人为国王布拉多辛的部队打造，每柄长枪都拥有经过三次锻造的枪尖，柄上则镶着精雕细琢的黄金。你需要得到矮人的许可，去寻找深藏在孤山的深处的长枪。
 qst_defend_village|保护村庄
 qst_raid_village|掠夺村庄
+qst_destroy_scout_camp|摧毁斥候营地
 qst_rescue_prisoners|营救{reg1}名囚犯
 qst_rescue_prisoners_text|{s9}希望你去营救{reg1}名囚犯
 qst_scout_enemy_town|侦察敌军城镇
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|无
 qst_move_cattle_herd|带着{s12}前往{s13}
 qst_move_cattle_herd_text|{s10}的长老希望你带这{s12}前往{s13}
 qst_escort_merchant_caravan|护送补给队前往{s8}
-qst_escort_merchant_caravan_text|护送补给队前往{s8}
+qst_escort_merchant_caravan_text|护送补给队前往{s8}并在目的地附近与他们交谈。
 qst_deliver_wine|给{s4}带{reg5}单位的{s6}
 qst_deliver_wine_text|{s3}的{s9}希望你能在7天内带{reg5}单位的{s6}到{s4}。
 qst_troublesome_bandits|追捕棘手的半兽人
@@ -71,6 +72,6 @@ qst_tld_introduction_text|无
 qst_treebeard_kill_orcs|击败半兽人伐木队
 qst_treebeard_kill_orcs_text|树胡希望你找到并击败位于法贡森林的半兽人伐木队。
 qst_oath_of_vengeance|复仇誓言
-qst_oath_of_vengeance_text|{s1}的死亡彻底激怒了你，你赌咒发誓：你要向{s2}复仇，在外来的日子里你将尽可能多的消灭{s2}的军队。你很清楚你的跟随者是你复仇誓言的见证者，而且你不想成为破誓者。一个血腥复仇已经开始了！
+qst_oath_of_vengeance_text|{s1}的死亡彻底激怒了你，你赌咒发誓：要向{s2}复仇，在未来的日子里你将尽可能多的消灭{s2}的军队。你很清楚你的跟随者是你复仇誓言的见证者，而且你不想成为破誓者。一个血腥复仇已经开始了！
 qst_deliver_gift|从{s2}将{s1}的{s4}带给{s3}
 qst_deliver_gift_text|你已经请求了从{s2}将{s1}的{s4}带给{s3}。

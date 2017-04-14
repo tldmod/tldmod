@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|le pendici delle Montagne Grigie, dove abitan
 str_fullname_region_mordor|Mordor, l'oscuro regno di Sauron
 str_shortname_region_unknown|una regione senza nome
 str_shortname_region_pelennor|Campi di Pelennor
-str_shortname_region_subfac_pelargir|Feudo di Lebennin
+str_shortname_region_subfac_pelargir|il feudo di Lebennin
 str_shortname_region_subfac_dol_amroth|Belfalas
 str_shortname_region_subfac_ethring|Valle del Ringló
-str_shortname_region_subfac_lossarnach|Feudo di Lossarnach
+str_shortname_region_subfac_lossarnach|il feudo di Lossarnach
 str_shortname_region_subfac_pinnath_gelin|la regione delle Pinnath Gelin
 str_shortname_region_subfac_blackroot|il Feudo di Lamedon
 str_shortname_region_n_ithilien|Nord Ithilien
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|Cicatrici di battaglia
 str_trait_desc_battle_scarred|Hai riportato orrende ferite durante le tue campagne, ma sei ancora vivo per raccontarne la storia. Le tue membra piene di cicatrici compensano la tua abilità nel subire ferite. La gente normale potrebbe trovare il tuo aspetto orribile, ma tra coloro che ti seguono è un'affermazione della tua capacità in battaglia; essi di conseguenza, ricevono un bonus morale settimanale.
 str_trait_title_fell_beast|Animale abbattuto
 str_trait_desc_fell_beast|La tua pelle è lacerata dalle cicatrici di innumerevoli battaglie e il tuo spirito è duro ed inflessibile. Anche per lo standard degli orchi, degli Uruk e dei troll tu sei giudicato una bestia pericolosa e brutale. I tuoi servitori piangono il tuo nome di gioia quando li guidi sul campo. Tu sei la manifestazione della guerra in sè e non temi praticamente nessuno.
+str_trait_title_butcher|Macellaio
+str_trait_desc_butcher|L'esperienza ha affinato la tua capacità di estrarre più carne dai corpi dei tuoi nemici. Guadangni mezzo chilo in più ogni volta che squarti uno dei tuoi prigionieri.
 str_wound_head|un colpo pesante alla testa
 str_wound_chest|alcune costole rotte
 str_wound_arm|un braccio malamente storpiato

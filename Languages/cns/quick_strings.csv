@@ -58,7 +58,7 @@ qstr_A_peaceful_village_n|一个距洛汗西谷不远的宁静小村
 qstr_The_War_is_upon_Roha|战争正在接近洛汗！
 qstr_Minas_Tirith___The_W|米那斯提力斯—白城
 qstr_The_White_Tree_stand|圣白树在刚铎诸王血脉终结时就枯萎了。
-qstr_The_Shadow_grows_eve|西方的阴影前所未有的强大。
+qstr_The_Shadow_grows_eve|东方的阴影前所未有的强大。
 qstr_Minas_Morgul___City_|米那斯魔窟—戒灵之城
 qstr_Sauron_s_armies_marc|索伦大军倾巢而出！
 qstr_Adventurers_at_audie|冒险者觐见刚铎摄政王迪耐瑟二世...
@@ -81,7 +81,7 @@ qstr_Skills|能力
 qstr_Ironflesh^Power_Stri|铁骨^强击^强掷^强弓^盾防^跑动^骑术^骑射
 qstr_Proficiencies|熟练度
 qstr_1H_Weapons^2H_Weapon|单手武器^双手武器^长杆武器^弓箭^弩^投掷
-qstr_Equipments|装备
+qstr_Equipment|装备
 qstr_You_gained_{reg0}_Re|你获得了{s0}的{reg0}资源点
 qstr_You_lost_{reg0}_Reso|你失去了{s0}的{reg0}资源点
 qstr_{s24}:|{s24}：
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|东方大道（远古矮人横穿伊利雅德所建的
 qstr_near_what_is_left_of|旧林路（远古矮人横穿幽暗密林所建的道路）遗迹的不远处
 qstr_close_to_the_Hand_sh|萨鲁曼白手标记的附近，指着奥桑克塔的方向
 qstr_in_sight_of_the_maje|能看到米那斯提力斯白色崇峻城墙的地方
+qstr_in_the_outskirts_of_|奥斯吉力亚斯的郊外，刚铎的前首都
 qstr_in_sight_of_the_entr|能看到矮人孤山堡垒的地方
 qstr_in_sight_of_the_dark|看得见艾辛格奥桑克黑塔的地方
 qstr_near_the_Old_Ford_wh|靠近老渡口（旧林路横跨安都因河）的地方
@@ -513,9 +514,9 @@ qstr_Default_Camera|默认相机
 qstr_Fixed_Camera___Right|固定相机—右肩
 qstr_Fixed_Camera___Left_|固定相机—左肩
 qstr_Cannot_leave_now.|现在不能离开。
-qstr_You_have_found_the_l|你找到了当地铁匠...
-qstr_You_have_found_the_lo|你找到了地方长官...
-qstr_You_have_found_the_loc|你找到了当地杂货商...
+qstr_You_have_found_the_l|你找到了当地铁匠…(+50 经验)
+qstr_You_have_found_the_lo|你找到了地方长官…(+50 经验)
+qstr_You_have_found_the_loc|你找到了当地仓库…(+50 经验)
 qstr__cancelled_the_{reg1|(取消了杀囚获得的{reg10}经验值)
 qstr_Forming_ranks.|正在列阵。
 qstr_You_fall_off_of_your|你从坐骑上跌落了！
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|戒灵正在攻击{s11}！
 qstr_{s11}_is_{s10}_in_th|{s11}在戒灵的攻击中{s10}！
 qstr_{s1}_s_morale:_{reg1|{s1}的士气：{reg1}
 qstr_You_rally_your_troop|你集结了部队！
-qstr_{s5}_rallies_his_tro|{s5}集结了他的部队！
+qstr_{s5}_rallies_{reg65?|{s5}集结了{reg65?她的:他的}的部队！
 qstr_You_have_killed_{reg|你在战斗中杀死了{reg1}名敌人！
 qstr_Your_bravery_inspire|你的英勇鼓舞了你的部队！
 qstr_Everyone|所有人
@@ -751,7 +752,7 @@ qstr_You_have_evaded_the_|你躲过了巡逻队,并且悄悄地接近废墟！
 qstr_You_have_found_the_s|你已经找到了巫师！
 qstr_You_cannot_leave_unt|直到警卫失去你的踪迹前你不能离开！
 qstr_Kill_him_quickly_bef|在他逃脱前迅速杀了他！
-qstr_Enraged_by_the_death|{s4}的死亡彻底激怒了你，你赌咒发誓：你要向{s3}复仇，在外来的日子里你将尽可能多的消灭{s3}的军队。你很清楚你的跟随者是你复仇誓言的见证者，而且你不想成为破誓者。一个血腥复仇已经开始了！
+qstr_Enraged_by_the_death|{s4}的死亡彻底激怒了你，你赌咒发誓：要向{s3}复仇，在未来的日子里你将尽可能多的消灭{s3}的军队。你很清楚你的跟随者是你复仇誓言的见证者，而且你不想成为破誓者。一个血腥复仇已经开始了！
 qstr_flooded._Somebody_or|已经被淹没了。一定有人破坏了艾辛河水坝。
 qstr_destroyed._Only_smol|已经被摧毁了。只留有冒着浓烟的废墟。
 qstr_^^^You_lost_your_fig|^^^你在和叛乱者的决斗中失败了！^看来你的半兽人现在有新头儿了。
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1}已经战死沙场。任务取消。
 qstr_{s1}_has_been_defeat|{s1}已被击败。任务取消。
 qstr_You_must_follow_{s1}|你必须跟随{s1} ！
 qstr_You_must_follow_{s1}!|你必须跟随{s1}！这是最后的警告！
-qstr_Parties_defeated:_{r|军队被击败： {reg1}
+qstr_{s1}_parties_defeate|{s1}军队被击败：占总数{reg2}中的{reg1}
 qstr_{s1}_is_scouted.|{s1} 被侦查了
 qstr_The_Age_of_Men_has_f|人类的时代终于结束了。现在邪黑塔和欧散克塔都在集结他的军队和盟友，决定谁才是中土唯一的统治者！
 qstr_The_War_of_the_Two_T|双塔之间的战争打响了！

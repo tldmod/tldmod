@@ -200,9 +200,12 @@ dlga_lord_capture_troll_completed_one_troll:close_window|Excelente, {playername}
 dlga_lord_start:close_window.1|Hace mucho tiempo te pedí que me trajeras un troll vivo. Pero debería de haberlo sabido... ¿Cómo podría esperar de alguien como {playername} algo tan grande? Mi sirviente no ha sido lo suficientemente habilidoso, ni leal.
 dlga_lord_start:lord_generic_mission_completed.1|Las noticias sobre tus hazañas contra los trolls salvajes han llegado a mis oídos. {s12} tiene un problema menos del que preocuparse, gracias a ti, {playername}.
 dlga_lord_start:lord_generic_mission_completed.2|Nuestros exploradores en las cercanías de {s12} nos han contado que has defendido valientemente el poblado. Estos incursores se están acercando cada día más y más...^^Creemos que una gran guerra está por venir, pero bueno... Gracias de corazón, {playername}.
+dlga_lord_start:destroy_scout_camp_failed|Nuestros exploradores en las cercanías de {s12} han presenciado tu retirada. Gran decepción,  {playername}. ^^Tu fracaso nos ha costado varias líneas de suministros que llevará tiempo recuperar.
+dlga_destroy_scout_camp_failed:close_window|Intentaré hacerlo mejor la próxima vez.
+dlga_lord_start:lord_generic_mission_completed.3|Nuestros exploradores en las cercanías de {s12} nos han contado que has defendido valientemente el poblado. Estos incursores se están acercando cada día más y más...^^Creemos que una gran guerra está por venir, pero bueno... Gracias de corazón, {playername}.
 dlga_lord_start:defend_village_failed|Nuestros exploradores en las cercanías de {s12} nos han contado que no has podido defender el poblado. Sus habitantes han sido masacrados o avocados a una vida de esclavitud. Estos incursores se están acercando cada día más y más...^^Creemos que una gran guerra está por venir.
 dlga_defend_village_failed:close_window|Intentaré hacerlo mejor la próxima vez.
-dlga_lord_start:lord_generic_mission_completed.3|Vimos aflorar las llamas en el poblado de {s12}. Oímos sus alaridos. Esto es el comienzo de algo más, {playername}. ^^La guerra se acerca.
+dlga_lord_start:lord_generic_mission_completed.4|Vimos aflorar las llamas en el poblado de {s12}. Oímos sus alaridos. Esto es el comienzo de algo más, {playername}. ^^La guerra se acerca.
 dlga_lord_start:raid_village_failed|Vimos cómo algunos de tus tropas huían despavoridas del poblado de {s12}. ¿Y ahora tienes las agallas de volver aquí, {playername}? ^^Habrá guerra, pero con fallos como este puede que tú seas la primera víctima.
 dlga_raid_village_failed:close_window|Intentaré hacerlo mejor la próxima vez.
 dlga_lord_start:lord_follow_spy_half_completed|¡Maldito seas! Te pedí DOS prisioneros, {playername} -- ¡lo que me has traído es poco más que inútil! Ya sé todo lo que el espía podía saber, mi objetivo era su jefe. Aquí tienes, por la mitad del trabajo cobras la mitad de la recompensa. Cógela y fuera de mi vista.
@@ -211,7 +214,7 @@ dlga_lord_start:lord_follow_spy_failed|En verdad, {playername}, eres totalmente 
 dlga_lord_follow_spy_half_completed:lord_pretalk| Lo hice lo mejor que pude, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Gracias, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Humrm. Como quieras, {s65}.
-dlga_lord_start:lord_generic_mission_completed.4|Resulta increíble, pero lo has conseguido, {playername}. Todos los esclavos están de vuelta y se están preparando para la cosecha. Te has ganado con creces la recompensa. Quédate con ella, junto con mi admiración.
+dlga_lord_start:lord_generic_mission_completed.5|Resulta increíble, pero lo has conseguido, {playername}. Todos los esclavos están de vuelta y se están preparando para la cosecha. Te has ganado con creces la recompensa. Quédate con ella, junto con mi admiración.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. He estado esperando pacientemente el retorno de mis esclavos, pero ninguno ha vuelto. ¿Tienes alguna explicación para esto? ¿Has sido engañado por simples bestias, o es que directamente eres un incompetente?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Perdóname, {s65}, pero esos esclavos son resbaladizos como anguilas.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Mmff, eso no es excusa para tu fracaso, {playername}. Ahora si me disculpas, necesito capturar a más hombres para que trabajen estos campos antes de que todos muramos de hambre.
