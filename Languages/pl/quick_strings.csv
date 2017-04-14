@@ -81,7 +81,7 @@ qstr_Skills|Umiejętności
 ; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 qstr_Proficiencies|Biegłości
 ; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
-qstr_Equipments|Ekwipunek
+; qstr_Equipment|Equipment
 qstr_You_gained_{reg0}_Re|Zyskujesz {reg0} Punktów Prestiżu ({s0}).
 qstr_You_lost_{reg0}_Reso|Tracisz {reg0} Punktów Prestiżu ({s0}).
 qstr_{s24}:|{s24}:
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|przy Wspaniałej wschodniej ścieżce, stara opuszczon
 qstr_near_what_is_left_of|przy pozostałościach starej leśnej drogi, starożytna krasnolódzka droga która była wykorzystywana żeby przedostać się przez gęsty las
 qstr_close_to_the_Hand_sh|blisko znaku wyglądającego jak Reką znaku Sarumana, wskazująca w strone wieży Orthanc
 qstr_in_sight_of_the_maje|w zasięgu wzroku wspalniałych Murów Miasta Minas Tirith, białe Miasto
+; qstr_in_the_outskirts_of_|in the outskirts of Osgiliath, the former capital of Gondor
 qstr_in_sight_of_the_entr|w zasięgu wzroku wejścia do Erebor, krasnolódzkiego królestwa
 qstr_in_sight_of_the_dark|w zasięgu wzroku czarnej wieży Orthanc
 qstr_near_the_Old_Ford_wh|Niedaleko Starego Fortu, gdzie Stara Leśna Droga krzyżuje się z rzeką Anduin.
@@ -513,9 +514,9 @@ qstr_Default_Camera|Kamera domyślna
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
-qstr_You_have_found_the_l|Znalazł{e/a}ś miejscowego kowala...
-qstr_You_have_found_the_lo|Znalazł{e/a}ś miejscowy autorytet...
-qstr_You_have_found_the_loc|Znalazł{e/a}ś miejscowy magazyn...
+; qstr_You_have_found_the_l|You have found the local smithy... (+50 XP)
+; qstr_You_have_found_the_lo|You have found the local authority...(+50 XP)
+; qstr_You_have_found_the_loc|You have found the local warehouse...(+50 XP)
 qstr__cancelled_the_{reg1|(Anulowano {reg10} punktów doświadczenia za zabijanie więźniów)
 qstr_Forming_ranks.|Formować szeregi!
 qstr_You_fall_off_of_your|Spadłeś ze swojego wierzchowca!
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|Nazgul przypuszcza atak na {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} {s10} w wyniku ataku Nazgula!
 qstr_{s1}_s_morale:_{reg1|Morale {s1}: {reg1}
 qstr_You_rally_your_troop|Prowadzisz swoje wojska!
-qstr_{s5}_rallies_his_tro|{s5} prowadzi swoje wojska!
+; qstr_{s5}_rallies_{reg65?|{s5} rallies {reg65?her:his} troops!
 qstr_You_have_killed_{reg|Zabiłeś w walce {reg1} wrogów!
 qstr_Your_bravery_inspire|Odwagą inspirujesz swoje wojska!
 qstr_Everyone|Wszyscy
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1} został/a zabity/a podczas bitwy. Misja anulowana
 qstr_{s1}_has_been_defeat|{s1} został/a pokonany/a. Misja anulowana.
 qstr_You_must_follow_{s1}|{s1} żąda, byś za nim podążał{/a}!
 qstr_You_must_follow_{s1}!|{s1} żąda, byś za nim podążał{/a}! To twoje ostatnie ostrzeżenie!
-qstr_Parties_defeated:_{r|Drużyny pokonane: {reg1}
+; qstr_{s1}_parties_defeate|{s1} parties defeated: {reg1} out of {reg2}
 qstr_{s1}_is_scouted.|Spatrolowano {s1} i okolice.
 qstr_The_Age_of_Men_has_f|Era Ludzi w końcu minęła. Teraz Dwie Wieże zbierają rozproszone zastępy i sojuszników by zadecydować kto będzie rządził Śródziemiem!
 qstr_The_War_of_the_Two_T|Wojna Dwóch Wież się rozpoczęła!

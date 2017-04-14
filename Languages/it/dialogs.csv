@@ -199,10 +199,13 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|Eccellente, {playername}. Sei un servitore utile e fedele. Questo troll sarà molto utile per i nostri scopi. Portatelo nelle segrete !
 dlga_lord_start:close_window.1|Troppo tempo fa ti chiesi ti portarmi un troll vivo. Avrei dovuto saperlo. Come potevo aspettarmi che qualcuno come {playername} fosse all'altezza della sfida. Il mio servo non è abbastanza fedele o esperto.
 dlga_lord_start:lord_generic_mission_completed.1|Notizie dei tuoi successi contro i troll selvaggi mi sono giunte all'orecchio. Grazie a te, {playername}, {s12}  ha un problema in meno di cui preoccuparsi.
-dlga_lord_start:lord_generic_mission_completed.2|Abbiamo sentito dai nostri esploratori vicino a {s12} che hai difeso valorosamente il villaggio. Questi predoni diventano più audaci ogni giorno che passa.. ^^Sentiamo che la guerra sta per scoppiare. Grazie ancora, {playername}.
+dlga_lord_start:lord_generic_mission_completed.2|I nostri esploratori nei pressi di {s12} ci hanno riferito del tuo successo. Questo gli insegnerà a non spiarci.^^La distruzione di questo campo frenerà certamente l'avanzata del nemico.
+dlga_lord_start:destroy_scout_camp_failed|I nostri esploratori vicino a {s12} hanno visto la ritirata tua e dei tuoi uomini. Ciò è deludente, {playername}.^^Il tuo fallimento ha portato ad attacchi alle linee di rifornimento. Ci vorrà del tempo per recuperare.
+dlga_destroy_scout_camp_failed:close_window|Farò meglio la prossima volta.
+dlga_lord_start:lord_generic_mission_completed.3|Abbiamo sentito dai nostri esploratori vicino a {s12} che hai difeso valorosamente il villaggio. Questi predoni diventano più audaci ogni giorno che passa.. ^^Sentiamo che la guerra sta per scoppiare. Grazie ancora, {playername}.
 dlga_lord_start:defend_village_failed|Abbiamo saputo dai nostri esploratori vicino a {s12} che hai fallito nel difendere il villaggio. Gli abitanti sono stati macellati o resi schiavi. Questi predoni diventano più audaci di giorno in giorno.. ^^Tutti sentiamo che la guerra sta per scoppiare.
 dlga_defend_village_failed:close_window|Farò meglio la prossima volta.
-dlga_lord_start:lord_generic_mission_completed.3|Abbiamo visto le fiamme salire dal villaggio vicino a {s12}. Abbiamo udito le urla. Questo è solo l'inizio, {playername}. ^^La guerra sta arrivando.
+dlga_lord_start:lord_generic_mission_completed.4|Abbiamo visto le fiamme salire dal villaggio vicino a {s12}. Abbiamo udito le urla. Questo è solo l'inizio, {playername}. ^^La guerra sta arrivando.
 dlga_lord_start:raid_village_failed|Abbiamo visto qualcuno dei tuoi uomini fuggire dal villaggio vicino a {s12}. Osi venire qui a mostrare la tua faccia, {playername} ? ^^Ci sarà una guerra, ma con fallimenti come questo, probabilmente sarai tra le prime vittime.
 dlga_raid_village_failed:close_window|Farò meglio la prossima volta.
 dlga_lord_start:lord_follow_spy_half_completed|Che tu sia maledetto ! Mi servivano DUE prigionieri, {playername} -- Ciò che mi hai portato mi è utile appena ! So già tutto ciò che conosce la spia, era l'informatore a cui ero interessato ! Tieni, per aver fatto mezzo lavoro, ti meriti mezza ricompensa. Prendila e sparisci.
@@ -211,7 +214,7 @@ dlga_lord_start:lord_follow_spy_failed|Davvero, {playername}, non sei altro che 
 dlga_lord_follow_spy_half_completed:lord_pretalk|Ho fatto del mio meglio, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Grazie, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm. Come vuoi, {s65}.
-dlga_lord_start:lord_generic_mission_completed.4|Che io sia dannato, ce l'hai fatta, {playername}. Tutti gli schiavi sono di nuovo al loro posto e occupati a preparare il raccolto. Ti sei meritato certamente la tua ricompensa. Ecco, prendila, con i miei complimenti.
+dlga_lord_start:lord_generic_mission_completed.5|Che io sia dannato, ce l'hai fatta, {playername}. Tutti gli schiavi sono di nuovo al loro posto e occupati a preparare il raccolto. Ti sei meritato certamente la tua ricompensa. Ecco, prendila, con i miei complimenti.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}.  Ho aspettato pazientemente per i miei schiavi, ma non ne è tornato ancora nessuno. Hai qualche spiegazione per questo? Sei stato fregato da dei semplici animali o sei solo un incompetente ?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Perdonami, {s65}, quegli schiavi erano scivolosi come anguille.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, questa una scusa debole per il tuo fallimento, {playername}. Ora, se vuoi scusarmi, devo andare a catturare nuovi schiavi per farli lavorare nei campi, prima che tutti noi moriamo di fame. 

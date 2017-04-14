@@ -81,7 +81,7 @@ qstr_Skills|Abilità
 qstr_Ironflesh^Power_Stri|Resistenza^Potenza d'Attacco^Potenza di Lancio^Scudo^Atletica^Cavalcare^Tiro con l'arco a Cavallo
 qstr_Proficiencies|Competenze
 qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi ad Asta^Tiro con l'Arco^Balestre^Lancio
-qstr_Equipments|Equipaggiamento
+qstr_Equipment|Equipaggiamento
 qstr_You_gained_{reg0}_Re|Hai ottenuto {reg0} Punti Risorsa da: {s0}.
 qstr_You_lost_{reg0}_Reso|Hai perso {reg0} Punti Risorsa da: {s0}.
 qstr_{s24}:|{s24}:
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|vicino alla Grande Strada dell'Est, la vecchia strada 
 qstr_near_what_is_left_of|vicino a quello che è rimasto della vecchia Strada della Foresta, l'antico sentiero dei nani che consente di attraversare la fitta foresta
 qstr_close_to_the_Hand_sh|vicino al segno a forma di mano di Saruman, puntando verso la torre di Orthanc
 qstr_in_sight_of_the_maje|in vista delle maestose mura della città di Minas Tirith, la Città Bianca
+qstr_in_the_outskirts_of_|nella periferia di Osgiliath, l'antica capitale di Gondor
 qstr_in_sight_of_the_entr|in vista dell'ingresso di Erebor, la fortezza nanica
 qstr_in_sight_of_the_dark|in vista della Torre Oscura di Orthanc
 qstr_near_the_Old_Ford_wh|vicino al Vecchio Guado, dove la Vecchia Strada della Foresta attraversa il fiume Anduin
@@ -513,9 +514,9 @@ qstr_Default_Camera|Inquadratura di default
 qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
-qstr_You_have_found_the_l|Hai trovato il fabbro locale...
-qstr_You_have_found_the_lo|Hai appena incontrato l'autorità locale..
-qstr_You_have_found_the_loc|Hai trovato il magazzino locale...
+qstr_You_have_found_the_l|Hai trovato il fabbro... (+50 ESP)
+qstr_You_have_found_the_lo|Hai appena incontrato l'autorità locale... (+50 ESP)
+qstr_You_have_found_the_loc|Hai trovato il magazzino locale... (+50 ESP)
 qstr__cancelled_the_{reg1|(Cancellati i {reg10} exp guadagnati uccidendo prigionieri)
 qstr_Forming_ranks.|Formare i ranghi.
 qstr_You_fall_off_of_your|Cadi dalla tua cavalcatura !
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|Nazgul attacca in picchiata su {s11} !
 qstr_{s11}_is_{s10}_in_th|{s11}  {s10} nell'attacco dei Nazgul !
 qstr_{s1}_s_morale:_{reg1|morale di {s1}: {reg1}
 qstr_You_rally_your_troop|Sproni le tue truppe !
-qstr_{s5}_rallies_his_tro|{s5} sprona le sue truppe !
+qstr_{s5}_rallies_{reg65?|{s5} sprona {reg65?le sue:le sue} truppe !
 qstr_You_have_killed_{reg|Hai ucciso {reg1} nemici in questa battaglia !
 qstr_Your_bravery_inspire|Il tuo coraggio ispira le tue truppe !
 qstr_Everyone|Tutti
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1} è stato ucciso sul campo di battaglia. La missio
 qstr_{s1}_has_been_defeat|{s1} è stato sconfitto. La missione è cancellata.
 qstr_You_must_follow_{s1}|Devi seguire {s1} !
 qstr_You_must_follow_{s1}!|Devi seguire {s1} ! Questo è l'ultimo avvertimento !
-qstr_Parties_defeated:_{r|Compagnie sconfitte: {reg1}
+qstr_{s1}_parties_defeate|{s1} gruppi sconfitti: {reg1} di {reg2}
 qstr_{s1}_is_scouted.|{s1} è stato esplorato.
 qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l'unico sovrano della Terra di Mezzo !
 qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata !

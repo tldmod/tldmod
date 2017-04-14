@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|na podnóża Gór Szarych, zamieszkałych prz
 str_fullname_region_mordor|do Mordoru, mrocznego Królestwa Saurona
 str_shortname_region_unknown|do nienazwanej krainy
 str_shortname_region_pelennor|na Pola Pelennoru
-str_shortname_region_subfac_pelargir|na Lanno Lebenninu
+; str_shortname_region_subfac_pelargir|the Fiefdom of Lebennin
 str_shortname_region_subfac_dol_amroth|do Belfalasu
 str_shortname_region_subfac_ethring|do Ringló Vale
-str_shortname_region_subfac_lossarnach|na Lenno Lossarnach
+; str_shortname_region_subfac_lossarnach|the Fiefdom of Lossarnach
 str_shortname_region_subfac_pinnath_gelin|na obszar Pinnath Gelin
 str_shortname_region_subfac_blackroot|na Lenno Lamedonu
 str_shortname_region_n_ithilien|do Północnego Ithilien
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|Naznaczon{y/a}
 str_trait_desc_battle_scarred|Cierpisz od straszliwych ran, otrzymanych w trakcie wielu kampanii i mimo wszystko pozostając przy życiu. Twe blizny i ciężkie doświadczenia zwiększają odporność na kolejne rany. Podczas gdy inni twój wygląd uznają za szokujący, twoi zwolennicy utwierdzają się w bitewnym doświadczeniu. Otrzymują cotygodniową premię do morale.
 str_trait_title_fell_beast|Dzika Bestia
 str_trait_desc_fell_beast|Twa skóra poznaczona jest wieloma bliznami z niezliczonych bitew, a zło trawi cię od środka. Nawet na standardy orków, uruków oraz troli jesteś ocenian{y/a} jako dzika i niebezpieczna bestia. Którzy ci służą płaczą z zachwytu gdy stajesz w polu. Jesteś nieustraszonym wcieleniem wojny.
+; str_trait_title_butcher|Butcher
+; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat.
 str_wound_head|mocne uderzenie w głowę
 str_wound_chest|popękane niektóre żebra
 str_wound_arm|mocno okaleczona ręka

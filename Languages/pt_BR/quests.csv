@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} pediu-lhe para dar uma mensagem para {s13}. {s13} 
 qst_deliver_message_to_enemy_lord|Entregar a mensagem para {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} pediu-lhe para dar uma mensagem para {s13} do {s15}. {s13} \nestava em {s4} quando lhe foi dada a missão.
 qst_raise_troops|Levantar {reg1} {s14}
-qst_raise_troops_text|{s9} pediu para levantar {reg1} {s14} e trazê-los para ele.
+; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
 qst_escort_messenger|Escolte o mensageiro para {s14}
 qst_escort_messenger_text|Nenhum.
 qst_hunt_down_fugitive|Cace {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Encontrar as lanças perdidas do rei Bladorthin
 qst_find_lost_spears_text|{s9} pediu para encontrar os perdidos lanças anões feitas uma vez para o rei Bladorthin. Você tem que perguntar os anões permissão para procurar as lanças nas profundezas da montanha solitária.
 ; qst_defend_village|Defend Village
 ; qst_raid_village|Raid Village
+; qst_destroy_scout_camp|Destroy Scout Camp
 qst_rescue_prisoners|Resgatar os prisioneiros {reg1}
 qst_rescue_prisoners_text|{s9} queria que você resgatar prisioneiros {reg1} .
 qst_scout_enemy_town|Escoteiro Inimigo 
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Nenhum.
 qst_move_cattle_herd|Mover {s12} para {s13}
 qst_move_cattle_herd_text|O ancião de {s10} pediu para mover alguns {s12} para {s13}.
 qst_escort_merchant_caravan|Escolte o vagão de suprimentos para {s8}
-qst_escort_merchant_caravan_text|Escoltar o comboio de abastecimento para {s8}.
+; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|\nentregar {reg5} unidades de {s6} para {s4}
 qst_deliver_wine_text|O {s9} de {s3}pediu -lhe para entregar {reg5} unidades de  {s6} para {s4} em 7 dias .
 qst_troublesome_bandits|Caçar os goblins problemáticos
