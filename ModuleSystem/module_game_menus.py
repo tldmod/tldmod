@@ -1208,13 +1208,13 @@ game_menus = [
  ),
 ( "start_gondor",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where are you from, in Gondor?", "none",[(assign, "$last_menu", "mnu_start_gondor")],[
- ("start_mt",[],"MINAS TIRITH, the Capital"                    ,[(jump_to_menu,"mnu_start_gondor_mt"),]),
- ("start_ls",[],"LOSSARNACH, the Fiefdom of the Axemen"        ,[(call_script,"script_start_as_one","trp_woodsman_of_lossarnach"),(jump_to_menu,"mnu_choose_gender"),]),
- ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_clansman_of_lamedon"),   (jump_to_menu,"mnu_choose_gender"),]),
- ("start_pg",[],"PINNATH GELIN, the Fiefdom of Green Hills"    ,[(call_script,"script_start_as_one","trp_pinnath_gelin_plainsman"), (jump_to_menu,"mnu_choose_gender"),]),
- ("start_do",[],"DOL AMROTH, the Fiefdom of Swan Knights"      ,[(call_script,"script_start_as_one","trp_dol_amroth_youth"),      (jump_to_menu,"mnu_choose_gender"),]),
- ("start_pe",[],"PELARGIR, the Coastal Fiefdom"                ,[(call_script,"script_start_as_one","trp_pelargir_watchman"), (jump_to_menu,"mnu_choose_gender"),]),
- ("start_bl",[],"BLACKROOT VALE, the Fiefdom of Archers"       ,[(call_script,"script_start_as_one","trp_blackroot_vale_archer"), (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_mt",[],"MINAS TIRITH, the Capital"                    ,[(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_regular),(jump_to_menu,"mnu_start_gondor_mt"),]),
+ ("start_ls",[],"LOSSARNACH, the Fiefdom of the Axemen"        ,[(call_script,"script_start_as_one","trp_woodsman_of_lossarnach"),  (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_lossarnach),  	   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_la",[],"LAMEDON, the Fiefdom of the Mountain Clansmen",[(call_script,"script_start_as_one","trp_clansman_of_lamedon"),     (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_ethring),   	   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_pg",[],"PINNATH GELIN, the Fiefdom of Green Hills"    ,[(call_script,"script_start_as_one","trp_pinnath_gelin_plainsman"), (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pinnath_gelin),   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_do",[],"DOL AMROTH, the Fiefdom of Swan Knights"      ,[(call_script,"script_start_as_one","trp_dol_amroth_youth"),        (troop_set_slot, "trp_player", slot_troop_subfaction, subfac_dol_amroth),	   (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_pe",[],"PELARGIR, the Coastal Fiefdom"                ,[(call_script,"script_start_as_one","trp_pelargir_watchman"), 		(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pelargir),        (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_bl",[],"BLACKROOT VALE, the Fiefdom of Archers"       ,[(call_script,"script_start_as_one","trp_blackroot_vale_archer"), 	(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_blackroot),	   (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
@@ -2038,7 +2038,7 @@ game_menus = [
    ("camp_mvtest_wait",[(eq, cheat_switch, 1),],"Fast forward for 30 days.",[
          (assign, "$g_camp_mode", 1),
          (assign, "$g_player_icon_state", pis_camping),
-         (rest_for_hours_interactive, 24 * 30, 40), #30 day rest while not attackable with 40x speed
+         (rest_for_hours_interactive, 24 * 30, 60), #30 day rest while not attackable with 40x speed #kham x 60
          (change_screen_return),
    ]), 
    # ("camp_mvtest_notes",[],"Update lord locations.",[
@@ -3071,6 +3071,10 @@ game_menus = [
     	(val_clamp, "$player_control_allies",0,2)]),
     ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_orc_horde"),(display_message, "@Orc Horde Spawned!")]),
     ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!")]),
+    ("set_player_subfac",[],"Test Player Subfaction", [
+    	(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pelargir),
+    	(troop_add_item, "trp_player", "itm_gon_tab_shield_b"),
+    	(display_message, "@Subfac Blackroot set, player given shield!")]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -4152,11 +4156,13 @@ game_menus = [
           (assign, ":enemy_finished",0),
           (try_begin),
             (eq, "$g_battle_result", 1),
-            (eq, ":num_enemy_regulars_remaining", 0), #battle won
+            (this_or_next|le, ":num_enemy_regulars_remaining", 0), #battle won #Kham - edited from eq
+            (le, ":num_enemy_regulars_remaining",  "$num_routed_enemies"),  #Kham - we don't want routed enemies to spawn
             (assign, ":enemy_finished",1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),
-            (le, "$g_enemy_fit_for_battle",0),
+            (this_or_next|le, ":num_enemy_regulars_remaining", 0),
+            (le, "$g_enemy_fit_for_battle","$num_routed_enemies"), #Kham - we don't want routed enemies to spawn.
             (ge, "$g_friend_fit_for_battle",1),
             (assign, ":enemy_finished",1),
           (try_end),
@@ -4171,7 +4177,8 @@ game_menus = [
           (assign, ":friends_finished",0),
           (try_begin),
             (eq, "$g_battle_result", -1),
-            (eq, reg3, 0), #battle lost
+            #(eq, reg3, 0), #battle lost
+            (le, reg3,  "$num_routed_us"), #Kham - we don't want routed allies to spawn
             (assign,  ":friends_finished",1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),
@@ -4241,7 +4248,7 @@ game_menus = [
           (this_or_next|eq, 		"$encountered_party_friendly", 0),
 		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
 		  (				eq, 		"$g_encountered_party_template", "pt_ring_hunters"),
-           (neg|troop_is_wounded, "trp_player"), #a test: what happes if I let player partecipate?
+##           (neg|troop_is_wounded, "trp_player"), #a test: what happes if I let player partecipate? #Kham - let's have the player participate
 ##          (store_troop_health,reg(5)),
 ##          (ge,reg(5),5),
           ],
@@ -4450,12 +4457,16 @@ game_menus = [
 		(assign, "$no_soldiers_left", 0),
 		(try_begin),
 		  (call_script, "script_party_count_members_with_full_health","p_main_party"),
-		  (le, reg(0), 0),
+		  (assign, ":num_our_regulars_remaining", reg0),
+          (store_add, ":num_routed_us_plus_one", "$num_routed_us", 1),
+          (le, ":num_our_regulars_remaining", ":num_routed_us_plus_one"), #Kham - don't let routed enemies spawn
 		  (assign, "$no_soldiers_left", 1),
 		  (str_store_string, s4, "str_order_attack_failure"),
 		(else_try),
 		  (call_script, "script_party_count_members_with_full_health","p_collective_enemy"),
-		  (le, reg(0), 0),
+		  (assign, ":num_enemy_regulars_remaining", reg0),
+          (this_or_next|le, ":num_enemy_regulars_remaining", 0),
+          (le, ":num_enemy_regulars_remaining", "$num_routed_enemies"), #Kham - don't let routed enemies spawn
 		  (assign, ":continue", 0),
 		  (party_get_num_companion_stacks, ":party_num_stacks", "p_collective_enemy"),
 		  (try_begin),
@@ -5481,8 +5492,9 @@ game_menus = [
           (assign, ":enemy_finished",0),
           (try_begin),
             (eq, "$g_battle_result", 1),
-            (eq, ":num_enemy_regulars_remaining", 0), #battle won
-            (assign, ":enemy_finished",1),
+            (this_or_next|le, ":num_enemy_regulars_remaining", 0), #battle won
+          	(le, ":num_enemy_regulars_remaining", "$num_routed_enemies"), #Kham - routed enemies don't get spawned
+          	(assign, ":enemy_finished", 1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),
             (le, "$g_enemy_fit_for_battle",0),
@@ -5500,7 +5512,8 @@ game_menus = [
           (assign, ":battle_lost", 0),
           (try_begin),
             (eq, "$g_battle_result", -1),
-            (eq, ":ally_num_soldiers", 0), #battle lost
+            #(eq, ":ally_num_soldiers", 0), #battle lost
+            (le, ":ally_num_soldiers",  "$num_routed_allies"), #kham - routed enemies don't get spawned
             (assign, ":battle_lost",1),
           (try_end),
           (this_or_next|eq, ":battle_lost",1),
@@ -5614,12 +5627,15 @@ game_menus = [
 		(assign, "$no_soldiers_left", 0),
 		(try_begin),
 		  (call_script, "script_party_count_members_with_full_health","p_main_party"),
-		  (le, reg(0), 0),
+		  (assign, ":num_our_regulars_remaining", reg0),
+          (le, ":num_our_regulars_remaining", "$num_routed_us"), #Kham - routed allies do not spawn again
 		  (assign, "$no_soldiers_left", 1),
 		  (str_store_string, s4, "str_join_order_attack_failure"),
 		(else_try),
 		  (call_script, "script_party_count_members_with_full_health","p_collective_enemy"),
-		  (le, reg(0), 0),
+		  (assign, ":num_enemy_regulars_remaining", reg0),
+          (this_or_next|le, ":num_enemy_regulars_remaining", 0),
+          (le, ":num_enemy_regulars_remaining", "$num_routed_enemies"), #Kham - routed allies do not spawn again
 		  (assign, "$g_battle_result", 1),
 		  (assign, "$no_soldiers_left", 1),
 		  (str_store_string, s4, "str_join_order_attack_success"),
@@ -5718,8 +5734,8 @@ game_menus = [
             (eq, "$g_battle_result", 1),
             (assign, ":enemy_finished", 1),
           (else_try),
-            (le, "$g_enemy_fit_for_battle", 0),
-            (ge, "$g_friend_fit_for_battle", 1),
+            (this_or_next|le, "$g_enemy_fit_for_battle",0),
+          	(le, "$g_enemy_fit_for_battle", "$num_routed_enemies"),  #Kham - don't let routed enemies spawn again
             (assign, ":enemy_finished", 1),
           (try_end),
           (this_or_next|eq, ":enemy_finished", 1),
@@ -5727,13 +5743,16 @@ game_menus = [
 ##          (assign, "$g_next_menu", -1),#"mnu_castle_taken_by_friends"),
 ##          (jump_to_menu, "mnu_total_victory"),
           (call_script, "script_party_wound_all_members", "$g_enemy_party"),
+          (assign, ":root_defeated_party", "$g_enemy_party"), #Kham - fix
+          (call_script, "script_lift_siege", ":root_defeated_party", 0), #Kham - Fix
           (leave_encounter),
           (change_screen_return),
         (else_try),
           (call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
           (assign, ":ally_num_soldiers", reg0),
           (eq, "$g_battle_result", -1),
-          (eq, ":ally_num_soldiers", 0), #battle lost
+          (this_or_next|eq, ":ally_num_soldiers", 0), #battle lost 
+          (le, ":ally_num_soldiers",  "$num_routed_allies"), #Kham - don't let routed allies spawn again
           (leave_encounter),
           (change_screen_return),
         (try_end),
@@ -6331,7 +6350,8 @@ game_menus = [
             (eq, "$g_battle_result", 1),
             (assign, ":enemy_finished", 1),
           (else_try),
-            (le, "$g_enemy_fit_for_battle", 0),
+            (this_or_next|le, "$g_enemy_fit_for_battle",0),
+         	(le, "$g_enemy_fit_for_battle", "$num_routed_enemies"), #kham - don't let routed enemies spawn again
             (ge, "$g_friend_fit_for_battle", 1),
             (assign, ":enemy_finished", 1),
           (try_end),
@@ -6829,12 +6849,13 @@ game_menus = [
             (assign, ":enemy_finished", 0),
             (try_begin),
               (eq, "$g_battle_result", 1),
-              (eq, ":num_enemy_regulars_remaining", 0), #battle won
+              (this_or_next|le, ":num_enemy_regulars_remaining", 0), #battle won
+           	  (le, ":num_enemy_regulars_remaining",  "$num_routed_enemies"), #kham - don't let routed enemies spawn
               (assign, ":enemy_finished",1),
             (else_try),
               (eq, "$g_engaged_enemy", 1),
-              (le, "$g_enemy_fit_for_battle",0),
-              (ge, "$g_friend_fit_for_battle",1),
+              (this_or_next|le, "$g_enemy_fit_for_battle", 0),
+              (le, "$g_enemy_fit_for_battle", "$num_routed_enemies"), #kham - don't let routed enemies spawn
               (assign, ":enemy_finished",1),
             (try_end),
             (this_or_next|eq, ":enemy_finished",1),
@@ -6846,7 +6867,8 @@ game_menus = [
             (try_begin),
               (this_or_next|eq, "$g_battle_result", -1),
               (troop_is_wounded,  "trp_player"),
-              (eq, ":num_ally_regulars_remaining", 0),
+              (this_or_next|eq, ":num_ally_regulars_remaining", 0), 
+              (le, ":num_ally_regulars_remaining",  "$num_routed_allies"), #Kham = don't let routed allies spawn
               (assign, ":battle_lost",1),
             (try_end),
             (this_or_next|eq, ":battle_lost",1),
@@ -7631,6 +7653,8 @@ game_menus = [
         (assign, "$g_enemy_party", "$g_encountered_party"),
         #(select_enemy, 0),
         (try_begin),
+          (call_script, "script_party_count_members_with_full_health", "p_collective_enemy"),
+          (assign, ":num_enemy_regulars_remaining", reg0),
           (assign, ":enemy_finished", 0),
           (try_begin),
             (eq, "$g_battle_result", 1),
@@ -7647,7 +7671,8 @@ game_menus = [
 					(try_end),
 		    (try_end),
           (else_try),
-            (le, "$g_enemy_fit_for_battle", 0),
+            (this_or_next|le, ":num_enemy_regulars_remaining", 0),
+            (le, "$g_enemy_fit_for_battle", "$num_routed_enemies"), #kham - don't let routed enemies spawn
             (ge, "$g_friend_fit_for_battle", 1),
             (assign, ":enemy_finished", 1),
           (else_try),
@@ -8381,6 +8406,30 @@ game_menus = [
 ]),
 
 ## Kham - Gondor Beacons Menu - END
+## Kham - Player Added to War Council Start
+
+("player_added_to_war_council",0,
+   "^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (set_fixed_point_multiplier, 100),
+        (position_set_x, pos0, 65),
+        (position_set_y, pos0, 30),
+        (position_set_z, pos0, 170),
+    	(try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
+    		(faction_slot_eq, ":faction_wc", slot_faction_war_council, 1),
+        	(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction_wc", pos0),
+			(call_script, "script_get_rank_title_to_s24", ":faction_wc"),
+			(faction_get_slot, ":fac_marshall", ":faction_wc", slot_faction_marshall), 
+			(str_store_troop_name, s2, ":fac_marshall"),
+        (try_end)
+    ],
+
+   	[("player_added_to_war_council_close", [], "Close", [(change_screen_return)]),
+
+]),
+
+## Kham - Player Added to War Council END
 
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations

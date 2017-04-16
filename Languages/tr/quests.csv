@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} senden {s13}'e bir mesaj götürmeni istedi. {s13}
 qst_deliver_message_to_enemy_lord|{s13}' e mesajı ilet
 qst_deliver_message_to_enemy_lord_text|{s9} senden {s15}li {s13}'e bir mesaj götürmeni istedi. {s13} görev sana verildiğinde {s4}'te idi.
 qst_raise_troops|{reg1} tane {s14} yetiştir.
-qst_raise_troops_text|{s9} senden {reg1} tane {s14} yetiştirmeni ve ona getirmeni istedi.
+qst_raise_troops_text|{s9} senden {reg1} tane {s14} yetiştirmeni ve {ona/ona} getirmeni istedi.
 qst_escort_messenger|Haberciyi {s14} e kadar koru
 qst_escort_messenger_text|Hiçbiri
 qst_hunt_down_fugitive|Peşine düşün {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Kral Bladorthin'in kayıp mızrağını bul.
 qst_find_lost_spears_text|{s9} senden bir zamanlar Kral Bladorthin için yapılan mızrakları bulmanı istedi. Lonely Mountain derinliklerinde mızrakları aramak için cücelerden izin almalısın.
 qst_defend_village|Köyü Savun
 qst_raid_village|Köyü Yağmala
+qst_destroy_scout_camp|İzci Kampını yok et
 qst_rescue_prisoners|Kurtar {reg1} esirleri
 qst_rescue_prisoners_text|{s9} senden {reg1} mahkumlarını kurtarmanı istedi.
 qst_scout_enemy_town|Düşman şehrini gözetle.
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Hiçbiri
 qst_move_cattle_herd|{s12}'den {s13}'e hareket et
 qst_move_cattle_herd_text|{s10}'nün yaşlası senden {s13}'e biraz {s12} götürmeni istedi.
 qst_escort_merchant_caravan|{s8} e kadar Yardım Trenini koru
-qst_escort_merchant_caravan_text|Yardım trenini {s8}'e kadar koru.
+qst_escort_merchant_caravan_text|Tedarik trenini {s8} e götürün ve yakınınızdayken onlarla konuşun.
 qst_deliver_wine|{reg5} tane {s6}'yı {s4}'e götür.
 qst_deliver_wine_text|{s3} ün {s9} u sana {reg5} sayısınca {s6} yı 7 gün içinde {s4} e teslim etmeni istedi.
 qst_troublesome_bandits|Sıkıntılı goblinleri avla.

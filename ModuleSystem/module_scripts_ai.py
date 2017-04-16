@@ -2266,6 +2266,7 @@ ai_scripts = [
 
 		  (store_random_in_range,":rnd",0,100),
           (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
+          (lt, ":rnd", 10),  # faction passes random check 
 		  (try_begin),
         (eq, "$gondor_ai_testing", 1),
         (eq, ":faction_no", "fac_gondor"),
@@ -2558,18 +2559,22 @@ ai_scripts = [
      
      (assign, ":radius", 5),
      (assign, ":continue", 1),
-     (try_for_range, ":tries", 0, 1000),
+     (try_for_range, ":tries", 0, 10),
        (eq, ":continue", 1),
        (map_get_random_position_around_position, pos1, pos2, ":radius"), # random circle with 5+ clicks radius
        (assign, ":too_close", 0),
        # check for suitable terrain
        (try_begin),
          #use a fake party to check the terrain
-         (spawn_around_party, "p_main_party", "pt_none"),
-         (assign, ":fake_party", reg0),
-         (party_set_position, ":fake_party", pos1),
-         (party_get_current_terrain, ":terrain_type", ":fake_party"),
-         (remove_party, ":fake_party"),
+         #EDIT - Kham - use temp party instead
+        
+         #(spawn_around_party, "p_main_party", "pt_none"),
+         #(assign, ":fake_party", reg0),
+         #(party_set_position, ":fake_party", pos1),
+        
+         (party_set_position, "p_temp_party", pos1),
+         (party_get_current_terrain, ":terrain_type", "p_temp_party"),
+         #(remove_party, ":fake_party"),
          #check for impassable terrain
          (this_or_next|eq, ":terrain_type", rt_water),
          (this_or_next|eq, ":terrain_type", rt_mountain),

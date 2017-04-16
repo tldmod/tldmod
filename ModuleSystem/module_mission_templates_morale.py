@@ -290,6 +290,7 @@ tld_morale_triggers = [
 
 		        ## WB has an operation for fleeing - Kham
 		        (agent_start_running_away, ":cur_agent"),
+		        (agent_set_slot, ":cur_agent", slot_agent_is_running_away, 1),
 		            
 		        ] or [
 				(call_script, "script_find_exit_position_at_pos4", ":cur_agent"),

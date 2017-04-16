@@ -660,6 +660,7 @@ mission_templates = [ # not used in game
 	(2, 0, 0, [],     # check for different checkpoints reach (merchants, center of town etc)
        [(get_player_agent_no, "$current_player_agent"),
 	    (agent_get_position, pos1, "$current_player_agent"),
+    (assign, reg3, 50),
 		(try_begin),
 			(party_slot_eq, "$current_town", slot_center_visited, 0),
 			(entry_point_get_position, pos2, 0),
@@ -675,7 +676,7 @@ mission_templates = [ # not used in game
 			(lt, ":dist", 300),
 			(party_set_slot, "$current_town", slot_weaponsmith_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
-			(display_message, "@You_have_found_the_local_smithy... (+50 XP)"),
+			(display_message, "@You_have_found_the_local_smithy... (+{reg3} XP)"),
       (add_xp_as_reward, 50),
 		(try_end),      
 		(try_begin),
@@ -686,7 +687,7 @@ mission_templates = [ # not used in game
 			(lt, ":dist", 300),
 			(party_set_slot, "$current_town", slot_elder_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
-			(display_message, "@You_have_found_the_local_authority...(+50 XP)"),
+			(display_message, "@You_have_found_the_local_authority...(+{reg3} XP)"),
       (add_xp_as_reward, 50),
 		(try_end),      
 		(try_begin),
@@ -697,7 +698,7 @@ mission_templates = [ # not used in game
 			(lt, ":dist", 300),
 			(party_set_slot, "$current_town", slot_merchant_visited, 1),
 			(party_set_slot, "$current_town", slot_center_visited, 1), # assume visited when found at least 1 merchant
-			(display_message, "@You_have_found_the_local_warehouse...(+50 XP)"),
+			(display_message, "@You_have_found_the_local_warehouse...(+{reg3} XP)"),
       (add_xp_as_reward, 50),
 		(try_end)]),
 ]),

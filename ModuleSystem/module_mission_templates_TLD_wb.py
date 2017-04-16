@@ -390,6 +390,7 @@ field_ai_triggers = [
     (store_trigger_param_2, ":attacker"),
     (store_trigger_param_3, ":damage"),
     (assign, ":weapon", reg0),
+    (ge, ":weapon",0), #Kham - Fix
     
     (assign, ":orig_damage", ":damage"),
     
@@ -622,7 +623,56 @@ field_ai_triggers = [
 
 
 #### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran)
-oliveran_archer_has_released = (0, 0, 0, [],
+kham_archer_hold_fire = (1, 0, ti_once, [],
+  [
+    (assign, ":counter", 0),
+
+    (try_for_agents, ":agent1"),
+        (agent_is_active,":agent1"),
+        (agent_is_alive,":agent1"),
+        (agent_is_non_player, ":agent1"),
+
+        #TLD Check
+        (agent_get_troop_id, ":troop1", ":agent1"),
+        (store_proficiency_level, ":prof", ":troop1", wpt_archery),
+        (ge, ":prof", 200),
+
+        (agent_ai_get_look_target,":agent2", ":agent1"),
+        (agent_is_active,":agent2"),
+        (agent_is_alive,":agent2"),
+
+        (agent_get_position, pos2, ":agent2"),
+        (agent_get_position, pos3, ":agent1"),
+        (get_distance_between_positions, ":distance", pos3, pos2),
+
+        (agent_get_team , ":team", ":agent1"),
+
+        (try_begin),
+          (eq, "$cheat_mode",1),
+          (eq,":counter",0),
+          (assign, reg1, ":distance"),
+          (display_message, "@DEBUG: Distance: {reg1}"),
+        (end_try),
+
+        (ge, ":distance", 7000),
+
+        (try_begin),
+          (eq, ":counter", 0),
+          (set_show_messages, 0),
+          (team_give_order, ":team", grc_archers, mordr_hold_fire),
+          (set_show_messages, 1),
+          (display_message, "@Your high-level archers determines that the enemy is too far away. They are holding their fire to conserve arrows until ordered otherwise.", color_good_news),
+          (assign, ":counter", 1),
+        (try_end),
+    (try_end),
+  ])
+
+
+        
+
+
+
+kham_archer_has_released = (0, 0, 0, [],
     [
         (try_for_agents, ":agent1"),
             (agent_is_active,":agent1"),
@@ -643,8 +693,10 @@ oliveran_archer_has_released = (0, 0, 0, [],
         (try_end),
     ])
 
-oliveran_archer_bone_target = (0, 0, 0, [],
+kham_archer_bone_target = (0, 0, 0, [],
     [
+      (assign, ":counter", 0),
+
         (try_for_agents, ":agent1"),
             (agent_is_active,":agent1"),
             (agent_is_alive,":agent1"),
@@ -669,37 +721,53 @@ oliveran_archer_bone_target = (0, 0, 0, [],
             (agent_ai_get_look_target,":agent2", ":agent1"),
             (agent_is_active,":agent2"),
             (agent_is_alive,":agent2"),
-            
+
+            (agent_get_troop_id, ":troop2", ":agent2"),
+            (gt, ":troop2", 0),
+            (troop_get_type, ":race", ":troop2"),
+
+             (try_begin),
+                (eq, "$cheat_mode",1),
+                (eq, ":counter",0),
+                (neq, ":race", tf_orc),
+                (display_message, "@DEBUG: Enemy not an orc, not using advanced aiming"),
+                (assign, ":counter",1),
+             (try_end),
+
+            (eq, ":race", tf_orc),
+
+             
+
             (agent_get_position, pos2, ":agent2"),
             (agent_set_attack_action, ":agent1", -2, 0),
             
            # (assign, ":move_x", 0),
-            (assign, ":move_z", 0),
+          #  (assign, ":move_z", 0),
             #(store_random_in_range, ":chance", 0, 2),
             #(agent_get_troop_id, ":troop2", ":agent2"),
             #(troop_get_type, ":race", ":troop2"),
-            (agent_get_position, pos3, ":agent1"),
-            (agent_get_bone_position, pos4, ":agent2", 0, 1),
-            (get_distance_between_positions, ":distance", pos3, pos4),
-            (assign, reg2, ":distance"),
+          #  (agent_get_position, pos3, ":agent1"),
+          #  (agent_get_bone_position, pos4, ":agent2", 0, 1),
+          #  (get_distance_between_positions, ":distance", pos3, pos4),
+          #  (assign, reg2, ":distance"),
            # (display_message, "@Distance: {reg2}"),
-            (try_begin),
-                (gt, ":distance", 2000),
-                (store_div, ":move_z", ":distance", 100),
-                (assign, reg3, ":move_z"),
+           # (try_begin),
+           #     (gt, ":distance", 2000),
+           #     (store_div, ":move_z", ":distance", 100),
+            #    (assign, reg3, ":move_z"),
             #    (display_message, "@Adjustment on Z: {reg3}"),
-                (store_random_in_range, ":bone", 7, 10),
-            (else_try),
-                (assign, ":bone", 9),
-            (try_end),
+          #      (store_random_in_range, ":bone", 7, 10),
+          #  (else_try),
+            (assign, ":bone", 9),
+          #  (try_end),
             
             (agent_is_in_line_of_sight, ":agent1", pos2),
             
             (agent_get_bone_position, pos1, ":agent2", ":bone", 1),
-            (assign, reg1, ":bone"),
+         #   (assign, reg1, ":bone"),
          #   (display_message, "@Target: {reg1}"),
             #(position_move_x, pos1, ":move_x", 0),#If aiming for feet, move slightly left or right
-            (position_move_z, pos1, ":move_z", 0),
+          #  (position_move_z, pos1, ":move_z", 0),
             (agent_set_attack_action, ":agent1", 0, 0),
             (agent_set_look_target_position, ":agent1", pos1),
             

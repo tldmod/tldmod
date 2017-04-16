@@ -780,8 +780,9 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
   
   common_move_deathcam_wb,
   common_rotate_deathcam_wb,
-  oliveran_archer_has_released,
-  oliveran_archer_bone_target
+  kham_archer_has_released,
+  kham_archer_bone_target,
+  kham_archer_hold_fire
 
 ])
 ## MadVader deathcam end
@@ -1583,11 +1584,11 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 		(try_begin),
 			(gt, ":die_roll", 95),
 			(assign,"$nazgul_in_battle",3),	
-			(display_log_message, "@Three Nazguls are circling in the sky above the battlefield!"),
+			(display_log_message, "@Three Nazgul are circling in the sky above the battlefield!"),
 		(else_try),
 			(gt, ":die_roll", 70),
 			(assign,"$nazgul_in_battle",2),	
-			(display_log_message, "@Two Nazguls are circling in the sky above the battlefield!"),
+			(display_log_message, "@Two Nazgul are circling in the sky above the battlefield!"),
 		(else_try),
 			(gt, ":die_roll", 55),
 			(assign,"$nazgul_in_battle",1),	

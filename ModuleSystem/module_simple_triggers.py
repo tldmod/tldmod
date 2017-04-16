@@ -249,10 +249,13 @@ simple_triggers = [
     ]),
 
 # (15) Converging center prosperity to ideal prosperity once in every 15 days - MV: removed this and replaced with this:
-# (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain, remove routed parties that are too far from player.
-(23*3,
+# (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain, remove routed parties that are too far from player. 
+
+(23*2, #Kham - from *3, changed to *2 to run it more often.
    [
     (set_spawn_radius, 3),
+    (assign, ":removed_empty_parties", 0), #For debugging - Kham
+
     (try_for_parties, ":cur_party"),
       (gt, ":cur_party", "p_scribble_242"), #avoid static map parties
       (party_is_active, ":cur_party"),
@@ -263,7 +266,7 @@ simple_triggers = [
       #remove empty parties
       (party_get_num_companion_stacks, ":num_stacks", ":cur_party"),
       (try_begin),
-        (eq, ":num_stacks", 0),
+        (le, ":num_stacks", 0), #kham - changed from eq
         (party_get_battle_opponent, ":opponent", ":cur_party"),
         (lt, ":opponent", 0),
         (party_get_template_id, ":cur_party_template", ":cur_party"),
@@ -271,7 +274,17 @@ simple_triggers = [
         (neq, ":cur_party_template", "pt_mound"),
         (neq, ":cur_party_template", "pt_pyre"),
         (neq, ":cur_party_template", "pt_legendary_place"),
+        (party_detach, ":cur_party"),
         (remove_party, ":cur_party"),
+        (val_add, ":removed_empty_parties", 1),
+      (else_try), #Kham - let's just nuke all Volunteer parties when depleted.
+        (party_get_template_id, ":cur_party_template", ":cur_party"),
+        (eq, ":cur_party_template", "pt_none"),
+        (party_get_num_companions, ":num_companions", ":cur_party"),
+        (le, ":num_companions", 0),
+        (party_detach, ":cur_party"),
+        (remove_party, ":cur_party"),
+        (val_add, ":removed_empty_parties",1),
       (else_try), # remove distant routed parties
         (party_get_battle_opponent, ":opponent", ":cur_party"),
         (lt, ":opponent", 0),
@@ -289,7 +302,31 @@ simple_triggers = [
           (this_or_next|eq, ":terrain_type", rt_river),
           (this_or_next|eq, ":terrain_type", rt_mountain_forest),
           (gt, ":terrain_type", rt_desert_forest),
-          (assign, ":max_tries", 1000),
+        
+        ] + (is_a_wb_trigger==1 and [
+        
+          (party_get_position, pos1, ":cur_party"),
+          (assign, ":max_range", 100),
+          (try_for_range, ":unused", 0 , ":max_range"),
+            (map_get_land_position_around_position, pos2, pos1, 5),
+            (party_set_position, "p_temp_party", pos2),
+            (party_get_current_terrain, ":temp_terrain", "p_temp_party"),
+              (try_begin),
+                (this_or_next|is_between, ":temp_terrain", rt_plain, rt_river),
+                (             eq,         ":temp_terrain", rt_forest),
+                (party_set_position, ":cur_party", pos2),
+                (assign, ":max_range", 0),
+              (try_end), #End for Temp Party
+          (try_end), # End for Range
+          (try_begin),
+            (eq, "$cheat_mode", 1),
+            (str_store_party_name, s1, ":cur_party"),
+            (display_message, "@DEBUG: {s1} was stuck, repositioning somewhere else!", color_good_news),
+          (try_end),
+        
+        ] or [
+        
+          (assign, ":max_tries", 10),
           (try_for_range, ":unused", 0, ":max_tries"),
             # check for suitable terrain
             (spawn_around_party, ":cur_party", "pt_none"),
@@ -314,9 +351,31 @@ simple_triggers = [
               (assign, ":max_tries", 0),
             (try_end),
           (try_end), # try_for_range :unused
+        
+        ]) + [
+        
         (try_end),
       (try_end), #unstick
     (try_end), #try_for_parties
+
+    #Kham - Lets nuke all empty parties attached to centers, just in case
+    (try_for_parties, ":centers"), 
+      (neq,":centers", "p_main_party"),
+      (party_get_attached_to, ":attached_center", ":centers"),
+      (is_between, ":attached_center", centers_begin, centers_end),
+      (party_get_num_companion_stacks, ":num_stacks2", ":centers"),
+      (le, ":num_stacks2", 0),
+      (party_detach, ":centers"),
+      (remove_party, ":centers"),
+      (val_add, ":removed_empty_parties", 1),
+    (try_end),
+
+    (try_begin),
+      (eq, "$cheat_mode",1),
+      (assign, reg3, ":removed_empty_parties"),
+      (display_message, "@DEBUG: Removed Parties: {reg3}", color_bad_news),
+    (try_end),
+    
     ]),
 
 # (16) Checking if the troops are resting at a half payment point (this has to stay, in TLD!)
@@ -592,7 +651,7 @@ simple_triggers = [
           (try_end),
           (store_mul, ":strength_ratio", ":attacker_strength", 100),
           (val_div, ":strength_ratio", ":defender_strength"),
-          (store_sub, ":random_up_limit", ":strength_ratio", 200),
+          (store_sub, ":random_up_limit", ":strength_ratio", 250), #Kham - was 200 (TLD 3.5 Apr 2017)
           (try_begin),
             (neg|faction_slot_ge, ":center_faction", slot_faction_strength, fac_str_very_weak),
             (val_max, ":random_up_limit", 0), #MV: if the defending faction is on its knees, even a suicidal siege attack is welcome, as it will lower the garrison and defending lord strength for the next siege; but mostly we hope that the player will intervene and win
@@ -608,6 +667,7 @@ simple_triggers = [
           (val_max, ":random_down_limit", 0),
           (try_begin),
             (store_random_in_range, ":rand", 0, 100),
+            (val_add, ":random_up_limit", 20), #kham - lets start sieges earlier
             (lt, ":rand", ":random_up_limit"),
             (gt, ":siege_begin_hours", 24),#initial preparation
             (assign, ":launch_attack", 1),
@@ -627,6 +687,7 @@ simple_triggers = [
             (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
             (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
             (gt, ":party_no", 0),
+            (party_is_active, ":party_no"), #Kham - Fix
 
             (assign, ":continue", 0),
             (try_begin),
@@ -658,6 +719,7 @@ simple_triggers = [
             (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
             (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
             (gt, ":party_no", 0),
+            (party_is_active, ":party_no"), #Kham - fix
             (party_slot_eq, ":party_no", slot_party_ai_state, spai_besieging_center),
             (party_slot_eq, ":party_no", slot_party_ai_object, ":center_no"),
             (party_slot_eq, ":party_no", slot_party_ai_substate, 1),
@@ -733,7 +795,7 @@ simple_triggers = [
     ]),
 
 # (30) Respawn hero party after kingdom hero is released from captivity.
-(24,  # changed from 48 to 24 in TLD, GA
+(48,  # changed from 48 to 24 in TLD, GA # Changed again to 48, but gave them reinforcements - Kham (TLD 3.5 - Apr 2017)
    [  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
          (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
@@ -747,6 +809,7 @@ simple_triggers = [
            (assign, ":center_no", reg0),
            (call_script, "script_create_kingdom_hero_party", ":troop_no", ":center_no"),
            (party_attach_to_party, "$pout_party", ":center_no"),
+           (call_script, "script_cf_reinforce_party", "$pout_party"), #Kham  (TLD 3.5 Apr 2017)
          (else_try),
            (neg|faction_slot_eq, ":cur_faction", slot_faction_state, sfs_active),
            (troop_set_slot, ":troop_no", slot_troop_change_to_faction, "fac_commoners"), #TLD: defeated faction lords simply disappear
@@ -1191,8 +1254,26 @@ simple_triggers = [
 	(try_end),
 	]),
 
-# (41) Spawn some bandits.
-(24,[(call_script, "script_spawn_bandits")]), ## Kham Edit - 24 hours instead of 36, to give player a bit more bandits to fight pre-war.
+# (41) Spawn some bandits & quest party templates 
+(24,[
+  (call_script, "script_spawn_bandits"), ## Kham Edit - 24 hours instead of 36, to give player a bit more bandits to fight pre-war.
+  
+  (try_begin),
+    (check_quest_active, "qst_eliminate_patrols"),
+    (quest_get_slot, ":target", "qst_eliminate_patrols", slot_quest_target_party_template),
+    (quest_get_slot, ":center", "qst_eliminate_patrols", slot_quest_target_center),
+    (set_spawn_radius, 5),
+    (spawn_around_party, ":center", ":target"),
+    (str_store_party_name, s2, reg0),
+    (str_store_party_name, s3, ":center"),
+    (store_random_in_range, ":random", 0, 100), #40% chance for the message to come up, just to make it less spammy.
+    (try_begin),
+      (le, ":random", 40),
+      (display_message, "@Your scouts have reported that there is a {s2} near {s3}."),
+    (try_end),
+  (try_end),
+
+  ]), 
 
 # (42) Make parties larger as game progresses.
 (24,[(call_script, "script_update_party_creation_random_limits")]),
@@ -1399,6 +1480,7 @@ simple_triggers = [
 	(quest_set_slot, "qst_report_to_army", slot_quest_expiration_days, 4),
 	(quest_set_slot, "qst_report_to_army", slot_quest_dont_give_again_period, 28),
 	(jump_to_menu, "mnu_kingdom_army_quest_report_to_army"),
+
 	]),
 
 
@@ -2829,6 +2911,20 @@ simple_triggers = [
   ]),
 
 
+
+## Kham - War Council Trigger
+
+(12,[
+  (try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
+    (faction_slot_eq, ":faction_wc", slot_faction_war_council, 0),
+    (call_script, "script_get_faction_rank", ":faction_wc"), 
+    (assign, ":rank", reg0), #rank points to rank number 0-9
+    (ge, ":rank",8),
+    (jump_to_menu, "mnu_player_added_to_war_council"),
+    (faction_set_slot, ":faction_wc", slot_faction_war_council, 1),
+  (try_end), #End Range
+]),
+
 ## Kham Gondor Reinforcement Event - Let them patrol around the center
 
 ## Kham Denethor Sends Faramir to West Osgiliath
@@ -2847,7 +2943,7 @@ simple_triggers = [
 #trigger reserved for future save game compatibility
 #(999,[]),   #Replaced by Gondor Reinforcement Event
 #trigger reserved for future save game compatibility
-(999,[]),   
+#(999,[]),   # replaced by War council trigger
 #trigger reserved for future save game compatibility
 (999,[]),   
 #trigger reserved for future save game compatibility

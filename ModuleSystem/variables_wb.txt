@@ -701,3 +701,6 @@ butcher_trait_kills
 gk_order_hold_over_there
 gk_order
 player_control_allies
+num_routed_us
+num_routed_allies
+num_routed_enemies

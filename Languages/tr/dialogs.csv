@@ -199,10 +199,13 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|Mükemmel, {playername}. Sen en inançlı ve kullanışlı hizmetkarsın. Bu trol de amaçlarımız için en kullanışlı şey olacak. Zindanlara götürün onu!
 dlga_lord_start:close_window.1|Çok uzun zaman önce senden canlı bir troll yakalamanı istedim. Ama bilmeliydim. {Playername} gibi birinden bu görevi becermesini nasıl bekleyebilirim? Hizmetçim yeterince yetenekli ya da bana sadık değil.
 dlga_lord_start:lord_generic_mission_completed.1|Yabani trollere karşı başarılarının haberleri bana ulaştı. {s12}'nin endişeleneceği şeylerden biri daha eksildi, teşekkürler, {playername}.
-dlga_lord_start:lord_generic_mission_completed.2|{s12} yakınlarındaki keşif erlerimizden köyü cesurca savunduğunu duyduk. Bu çapulcular her gün cesur oluyorlar... Savaşın kesinlikle patlak vereceğini hissediyoruz. Bir kez daha teşekkürler {playername}.
+dlga_lord_start:lord_generic_mission_completed.2|{S12} yakınlarındaki gözlemcimiz bize başarılarınızdan bahsetti. Bu, onlara bizi bir daha gözetlememeleri gerektiğini öğretecektir.^^ Bu kampın imhası, düşmanlarımızın ilerlemesini kesinlikle durduracaktır.
+dlga_lord_start:destroy_scout_camp_failed|{S12} yakınlarındaki gözcülerimiz sizin ve adamlarınızın geri çekildiğini gördü.Beni hayal kırıklığına uğrattın, {playername}. ^^Başarısızlığınız çok önemli olan destek hatlarımızın saldırıya uğramasına neden oldu. Toparlanmamız biraz zaman alacaktır.
+dlga_destroy_scout_camp_failed:close_window|Bir daha ki sefer daha iyi yapacağım.
+dlga_lord_start:lord_generic_mission_completed.3|{s12} yakınlarındaki keşif erlerimizden köyü cesurca savunduğunu duyduk. Bu çapulcular her gün cesur oluyorlar... Savaşın kesinlikle patlak vereceğini hissediyoruz. Bir kez daha teşekkürler {playername}.
 dlga_lord_start:defend_village_failed|{s12} yakınlarındaki keşif erlerimizden kasabayı korumakta başarısız olduğunu duyduk.Kasabalılar ya katledildi ya da köle oldular.Bu çapulcular her gün daha cesur oluyorlar... ^^Savaşın kesinlikle patlak vereceğini hissediyoruz.
 dlga_defend_village_failed:close_window|Bir daha ki sefer daha iyi yapacağım
-dlga_lord_start:lord_generic_mission_completed.3|{s12} yakınlarındaki köyden alevlerin yükseldiğini gördük. Bağırışları duyduk. Bu sadece başlangıç, {playername}. ^^Savaş yaklaşıyor.
+dlga_lord_start:lord_generic_mission_completed.4|{s12} yakınlarındaki köyden alevlerin yükseldiğini gördük. Bağırışları duyduk. Bu sadece başlangıç, {playername}. ^^Savaş yaklaşıyor.
 dlga_lord_start:raid_village_failed|{s12} yakınındaki köyün yanından adamlarının kaçtığını gördük. Buraya gelip yüzünü göstermeye mi kalkışıyorsun {playername}?. ^^Bir savaş olacak, ama böyle hatalarla, ilk zaiyatı sen olabilirsin.
 dlga_raid_village_failed:close_window|Bir daha ki sefer daha iyi yapacağım.
 dlga_lord_start:lord_follow_spy_half_completed|Seni aptal! İKİ mahkum istedim,  {playername} --- bana getirdiğin şey yarasız kısa bir adım! Bu casusun bildiği her şeyi zaten biliyorum, peşinde olduğum elebaşıydı. İşte burada, yarım iş yarım ödüle layıktır. Al onu ve kaybol.
@@ -211,7 +214,7 @@ dlga_lord_start:lord_follow_spy_failed|Gerçekten, {playername}, koca bir beceri
 dlga_lord_follow_spy_half_completed:lord_pretalk|Elimden gelenin en iyisini yaptım, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Teşekkür ederim, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hımm, siz nasıl isterseniz, {s65}.
-dlga_lord_start:lord_generic_mission_completed.4|Kahretsin, fakat bunu yaptın, {playername}. Tüm köleler geri döndü ve hasat için hazırlanmakla meşguller. Ödülünü kesinlikle hak ettin. Övgülerimle beraber işte burada, al onu.
+dlga_lord_start:lord_generic_mission_completed.5|Kahretsin, fakat bunu yaptın, {playername}. Tüm köleler geri döndü ve hasat için hazırlanmakla meşguller. Ödülünü kesinlikle hak ettin. Övgülerimle beraber işte burada, al onu.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}, sabırlı bir şekilde kölelerimi bekledim, ama hala hiçbiri geri dönmedi. Bir açıklaman var mı? Önemsiz hayvanlar tarafından alt edildin mi yoksa yalnızca beceriksiz misin?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Beni affedin, {s65}, köleler yılan balığı kadar sıvışkanlardı.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, başarısızlık için buna bahane denemez bile, {playername}. Şimdi izninle, hepimiz açlıktan ölmeden önce tarlaları sürecek yeni adamlar yakalamalıyım.

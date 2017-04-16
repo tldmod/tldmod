@@ -2747,9 +2747,22 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 [anyone|plyr,"lord_report_to_army_asked", [],
    "I don't have the sufficient number of troops yet. I will need some more time.", "lord_report_to_army_continue",[]],
 
-[anyone,"lord_report_to_army_completed", [], "Excellent. I will send the word when I have a task for you. For the moment, just follow us and stay close. We'll be moving soon.", "close_window",[
+[anyone,"lord_report_to_army_completed", [
+  (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+  (assign, ":rank", reg0), #rank points to rank number 0-9
+  (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), 
+  (str_store_string_reg, s25, s24), #to s25 (current rank)
+  (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 8), #to s24 (highest rank) #kham - reduced from 9
+  (try_begin),
+    (lt, ":rank", 8), #kham - reduced from 9
+    (str_store_string, s3, "@Moreover, should you become {s24}, you will be welcomed to my War Council, where you can make decisions that will affect the course of our campaign. For the moment, as a {s25}, just follow us and stay close. We'll be moving soon."),
+  (else_try),
+    (str_store_string, s3, "@For the moment, just follow us and stay close. We'll be moving soon."),
+  (try_end),
+  ], 
+  "Excellent. I will send the word when I have a task for you. {s3}", "close_window",[
      (call_script,"script_stand_back"),
-	 (call_script, "script_increase_rank", "$g_talk_troop_faction", 1),
+	   (call_script, "script_increase_rank", "$g_talk_troop_faction", 1),
      (call_script, "script_end_quest", "qst_report_to_army"),
      (quest_set_slot, "qst_report_to_army", slot_quest_giver_troop, "$g_talk_troop"),
      #TODO: Change this value
@@ -4101,15 +4114,35 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   []],
 
 [anyone, "player_siege_discuss_1", [
-  (store_add, reg3, tld_player_siege_resp_cost,0),
   (try_begin),
     (eq, "$player_looks_like_an_orc", 1),
-    (str_store_string, s4, "@First, sieges are only an option for the strongest! You need sharp weapons, fresh meat for your troops and wargs, wood to fuel the fires, and draughts to make the weaklings keep up. You also have to keep your scum in line or they’ll all kill each other before you’ve even got to walls. We’re too busy with our own fights to take care of your lot— be prepared to provide {reg3} resources to keep the maggots moving"),
+    (str_store_string, s4, "@First, sieges are only an option for the strongest! Here is all that needs doing:"),
   (else_try),
     (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-    (str_store_string, s4, "@Firstly, we must think to the hindrances of this task. Steel must be kept sharp, men and horses fed, fires kept burning, water fetched, wounds tended—you and your men are no use to us if you can’t maintain your campaign. As we are spread too thin already to give you what is required, you must be prepared to provide {reg3} resources to keep your army operational in a siege"),
+    (str_store_string, s4, "@Here is all that needs doing:"),
   (else_try),
-    (str_store_string, s4, "@Firstly, we must think to the hindrances of this task. Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended—a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide {reg3} resources to keep your army operational in a siege."),
+    (str_store_string, s4, "@Firstly, we must think to the hindrances of this task:"),
+  (try_end),],
+  "{s4}", "player_siege_discuss_1a",
+  []],
+
+[anyone, "player_siege_discuss_1a", [
+  (store_add, reg3, tld_player_siege_resp_cost,0),
+  (assign, ":siege_command_cost", tld_command_cost_siege),
+     (try_begin),
+       (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+       (val_mul, ":siege_command_cost", 2),
+       (val_div, ":siege_command_cost", 3), # 33 for tld_command_cost_siege=50
+     (try_end),
+     (assign, reg15, ":siege_command_cost"),
+  (try_begin),
+    (eq, "$player_looks_like_an_orc", 1),
+    (str_store_string, s4, "@You need sharp weapons, fresh meat for your troops and wargs, wood to fuel the fires, and draughts to make the weaklings keep up. You also have to keep your scum in line or they’ll all kill each other before you’ve even got to walls. We’re too busy with our own fights to take care of your lot— be prepared to provide what is needed to keep the maggots moving.^[requires {reg3} resources, {reg15} influence]"),
+  (else_try),
+    (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s4, "@Firstly, we must think to the hindrances of this task. Steel must be kept sharp, men and horses fed, fires kept burning, water fetched, wounds tended—you and your men are no use to us if you can’t maintain your campaign. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]"),
+  (else_try),
+    (str_store_string, s4, "@Firstly, we must think to the hindrances of this task. Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended—a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]"),
   (try_end),],
   "{s4}", "player_siege_discuss_2",
   []],

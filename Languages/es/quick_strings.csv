@@ -81,7 +81,7 @@ qstr_Skills|Habilidades
 qstr_Ironflesh^Power_Stri|Piel curtida^Pot. de golpe^Lanzamiento^Arquería^Escudo^Atletismo^Cabalgar^Arqu. montada
 qstr_Proficiencies|Competencias
 qstr_1H_Weapons^2H_Weapon|Armas 1m^Armas 2m^Enastadas^Arquería^Ballesta^Tiro
-qstr_Equipments|Equipamiento
+qstr_Equipment|Equipamiento
 qstr_You_gained_{reg0}_Re|Has conseguido {reg0} Puntos de Recursos de {s0}.
 qstr_You_lost_{reg0}_Reso|Has perdido {reg0} Puntos de Recursos de {s0}.
 qstr_{s24}:|{s24}:
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|cerca del Gran Camino del Este, la vieja ruta abandona
 qstr_near_what_is_left_of|cerca de lo que queda del Camino Viejo del Bosque, el antiguo camino enano utilizado para cruzar la espesa foresta del Bosque Negro
 qstr_close_to_the_Hand_sh|cerca de la señal de la Mano Blanca de Saruman, que apunta hacia la torre de Orthanc
 qstr_in_sight_of_the_maje|a la vista de las majestuosas murallas de Minas Tirith, la Ciudad Blanca
+qstr_in_the_outskirts_of_|en las afueras de Osgiliath, antigua capital de Gondor
 qstr_in_sight_of_the_entr|a la vista de la entrada a Erebor, la fortaleza enana
 qstr_in_sight_of_the_dark|a la vista de la oscura Torre de Orthanc
 qstr_near_the_Old_Ford_wh|cerca del Viejo Vado, donde el Camino del Bosque Viejo cruza el río Anduin
@@ -513,9 +514,9 @@ qstr_Default_Camera|Cámara predeterminada
 qstr_Fixed_Camera___Right|Cámara fija en el hombro derecho
 qstr_Fixed_Camera___Left_|Cámara fija en el hombro izquierdo
 qstr_Cannot_leave_now.|No puedes abandonar ahora.
-qstr_You_have_found_the_l|Has encontrado al herrero local...
-qstr_You_have_found_the_lo|Has encontrado a la autoridad local...
-qstr_You_have_found_the_loc|Has encontrado el almacén local...
+qstr_You_have_found_the_l|Has encontrado al herrero local... (+50 de EXP)
+qstr_You_have_found_the_lo|Has encontrado a la autoridad local...  (+50 de EXP)
+qstr_You_have_found_the_loc|Has encontrado el almacén local... (+50 de EXP)
 qstr__cancelled_the_{reg1|({reg10} cancelado pts. de exp. ganados por matar prisioneros)
 qstr_Forming_ranks.|Formando filas.
 qstr_You_fall_off_of_your|¡Te caes de tu montura!
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|¡Nazgûl ataca en picado en {s11}!
 qstr_{s11}_is_{s10}_in_th|¡{s11} es {s10} en el ataque del Nazgûl!
 qstr_{s1}_s_morale:_{reg1|Moral de {s1}: {reg1}
 qstr_You_rally_your_troop|¡Reagrupas tus tropas!
-qstr_{s5}_rallies_his_tro|¡{s5} reagrupa sus tropas!
+qstr_{s5}_rallies_{reg65?|¡{s5} reagrupa a {reg65?sus:sus} tropas!
 qstr_You_have_killed_{reg|¡Has matado {reg1} enemigos en esta batalla!
 qstr_Your_bravery_inspire|¡Tu valentía inspira a tus tropas!
 qstr_Everyone|Todos
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1} ha caído en el campo de batalla. Misión cancela
 qstr_{s1}_has_been_defeat|{s1} ha sido derrotado. Misión cancelada.
 qstr_You_must_follow_{s1}|¡Debes seguir a {s1}!
 qstr_You_must_follow_{s1}!|¡Debes seguir a {s1}! ¡Este es tu último aviso!
-qstr_Parties_defeated:_{r|Grupos derrotados: {reg1}
+qstr_{s1}_parties_defeate|Has acabado con {reg1} destacamentos de {s1}, quedan {reg2}.
 qstr_{s1}_is_scouted.|Has rastreado {s1}.
 qstr_The_Age_of_Men_has_f|La Edad de los Hombres ha llegado a su fin. A partir de ahora las Dos Torres reunirán lo que queda de sus huestes y aliados para decidir quién será el único e indiscutible gobernante de la Tierra Media.
 qstr_The_War_of_the_Two_T|¡La Guerra de las Dos Torres ha comenzado!

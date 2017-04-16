@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} te ha pedido que entregues un mensaje a {s13}. {s1
 qst_deliver_message_to_enemy_lord|Entega el mensaje a {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} te ha pedido que entregues un mensaje a {s13} de {s15}. {s13} estaba en {s4} cuando te fue asignada esta misión.
 qst_raise_troops|Reúne {reg1} {s14}
-qst_raise_troops_text|{s9} te ha pedido que reunas {reg1} {s14} y le hagas entrega de ellos.
+qst_raise_troops_text|{s9} te ha pedido que le lleves {reg1} {s14}.
 qst_escort_messenger|Escolta al mensajero a {s14}
 qst_escort_messenger_text|Nada
 qst_hunt_down_fugitive|Da caza a {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Encuentra las lanzas perdidas del Rey Bladorthin
 qst_find_lost_spears_text|{s9} te ha pedido encontrar las lanzas perdidas que los enanos hicieron para el Rey Bladorthin. Deberás pedir permiso a los enanos para buscar las lanzas en las profundidades de la Montaña Solitaria.
 qst_defend_village|Defende el Poblado
 qst_raid_village|Saquea el Poblado
+qst_destroy_scout_camp|Destruye el Campamento de los Exploradores
 qst_rescue_prisoners|Rescata {reg1} prisioneros.
 qst_rescue_prisoners_text|{s9} quiere que rescates {reg1} prisioneros.
 qst_scout_enemy_town|Explora la ciudad enemiga.
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Nada
 qst_move_cattle_herd|Traslada {s12} a {s13}
 qst_move_cattle_herd_text|El Anciano de {s10} te ha pedido trasladar {s12} a {s13}.
 qst_escort_merchant_caravan|Escolta Caravana de Suministros a {s8}
-qst_escort_merchant_caravan_text|Escolta una Caravana de Suministros a {s8}
+qst_escort_merchant_caravan_text|Escolta una Caravana de Suministros a {s8} y habla con ellos cuando estéis cerca.
 qst_deliver_wine|Entrega {reg5} unidades de {s6} a {s4}.
 qst_deliver_wine_text|El {s9} de {s3} te ha pedido que entregues {reg5} unidades de {s6} en {s4} en 7 días.
 qst_troublesome_bandits|Da caza a los Trasgos problemáticos.

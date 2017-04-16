@@ -199,10 +199,13 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|Doskonale, {playername}. Jesteś najwierniejszym i najużyteczniejszym z naszych sług. Trol bardzo nam się przyda.
 dlga_lord_start:close_window.1|Dawno temu prosiłem cie o sprowadzenie jednego żywego trola. Ale powinienem wiedzieć. Jak mogłem się spodziewać po kimś takim jak {playername} wykonania zadania. Mój sługa nie był wystarczająco doświadczony ani wierny.
 dlga_lord_start:lord_generic_mission_completed.1|Dotarła do mnie wiadomość o dzikim trolu. {s12} ma jeden powód do zmartwień mniej, dzięki tobie, {playername}.
-dlga_lord_start:lord_generic_mission_completed.2|Słyszeliśmy od naszych zwiadowców, że niedaleko {s12} dzielnie broniłeś wioski. Ci bandyci stają się coraz odważniejsi. ^^Czujemy, że wojna na pewno przyjdzie. Dziękuję jeszcze raz {playername}.
+; dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
+; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
+dlga_destroy_scout_camp_failed:close_window|Postaram się lepiej następnym razem
+dlga_lord_start:lord_generic_mission_completed.3|Słyszeliśmy od naszych zwiadowców, że niedaleko {s12} dzielnie broniłeś wioski. Ci bandyci stają się coraz odważniejsi. ^^Czujemy, że wojna na pewno przyjdzie. Dziękuję jeszcze raz {playername}.
 dlga_lord_start:defend_village_failed|Słyszeliśmy od naszych zwiadowców niedaleko {s12}, że nie udało się obronić wioski. Wieśniacy albo zostały zabici albo zniewoleni. Ci bandyci są coraz odważniejsi ... ^^ Czujemy, że wojna się zbliża.
 dlga_defend_village_failed:close_window|Postaram się lepiej następnym razem
-dlga_lord_start:lord_generic_mission_completed.3|Widzieliśmy płomienie pochodzących ze wsi niedaleko {s12}. Słyszeliśmy krzyki. To dopiero początek, {playername}. ^^ Wojna nadchodzi.
+dlga_lord_start:lord_generic_mission_completed.4|Widzieliśmy płomienie pochodzących ze wsi niedaleko {s12}. Słyszeliśmy krzyki. To dopiero początek, {playername}. ^^ Wojna nadchodzi.
 dlga_lord_start:raid_village_failed|Widzieliśmy niektórych z twoich ludzi uciekających z wioski nieopodal {s12}. Jak śmiesz tu wracać i pokazywać swoją twarz, {playername} ?. ^^ To oznacza wojnę, ale z powodów, takich jak ten, możesz być jej pierwszą ofiarą.
 dlga_raid_village_failed:close_window|Postaram się lepiej następnym razem
 dlga_lord_start:lord_follow_spy_half_completed|Niech cię piekło pochłonie {playername}! Miał{e/a}ś mi dostarczyć DWÓCH jeńców. Ten, którego mi przywiozł{e/a}ś jest dla mnie bezużyteczny, wiem wszystko to co wie ten szpieg. To łącznik był tym ważniejszym. Masz, bierz połowę obiecanej nagrody i zmykaj mi z oczu.
@@ -211,7 +214,7 @@ dlga_lord_start:lord_follow_spy_failed|Naprawdę, {playername}, jesteś niczym w
 dlga_lord_follow_spy_half_completed:lord_pretalk|Starał{e/a}m się jak mogł{e/a}m, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Dziękuję, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm. Jak wolisz, {s65}.
-dlga_lord_start:lord_generic_mission_completed.4|Niech mnie licho {playername}, udało ci się! Wszyscy niewolnicy wrócili i powoli przygotowują się do tegorocznych zbiorów. Zasłużył{e/a}ś sobie na nagrodę. Proszę, przyjmij to z moimi gratulacjami.
+dlga_lord_start:lord_generic_mission_completed.5|Niech mnie licho {playername}, udało ci się! Wszyscy niewolnicy wrócili i powoli przygotowują się do tegorocznych zbiorów. Zasłużył{e/a}ś sobie na nagrodę. Proszę, przyjmij to z moimi gratulacjami.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. Czekałem cierpliwie na któregoś z moich niewolników, lecz jak dotąd żaden nie powrócił. Masz na to jakieś wytłumaczenie?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Wybacz, {s65}, ci niewolnicy wymknęli mi się.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, kiepska wymówka, {playername}. A teraz jeśli pozwolisz, muszę złapać nowych ludzi do pracy na tych polach, zanim wszyscy umrzemy z głodu.
