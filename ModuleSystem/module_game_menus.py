@@ -2038,7 +2038,7 @@ game_menus = [
    ("camp_mvtest_wait",[(eq, cheat_switch, 1),],"Fast forward for 30 days.",[
          (assign, "$g_camp_mode", 1),
          (assign, "$g_player_icon_state", pis_camping),
-         (rest_for_hours_interactive, 24 * 30, 40), #30 day rest while not attackable with 40x speed
+         (rest_for_hours_interactive, 24 * 30, 60), #30 day rest while not attackable with 40x speed #kham x 60
          (change_screen_return),
    ]), 
    # ("camp_mvtest_notes",[],"Update lord locations.",[

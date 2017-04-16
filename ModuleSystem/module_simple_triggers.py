@@ -249,10 +249,13 @@ simple_triggers = [
     ]),
 
 # (15) Converging center prosperity to ideal prosperity once in every 15 days - MV: removed this and replaced with this:
-# (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain, remove routed parties that are too far from player.
-(23*3,
+# (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain, remove routed parties that are too far from player. 
+
+(23*2, #Kham - from *3, changed to *2 to run it more often.
    [
     (set_spawn_radius, 3),
+    (assign, ":removed_empty_parties", 0), #For debugging - Kham
+
     (try_for_parties, ":cur_party"),
       (gt, ":cur_party", "p_scribble_242"), #avoid static map parties
       (party_is_active, ":cur_party"),
@@ -263,7 +266,7 @@ simple_triggers = [
       #remove empty parties
       (party_get_num_companion_stacks, ":num_stacks", ":cur_party"),
       (try_begin),
-        (eq, ":num_stacks", 0),
+        (le, ":num_stacks", 0), #kham - changed from eq
         (party_get_battle_opponent, ":opponent", ":cur_party"),
         (lt, ":opponent", 0),
         (party_get_template_id, ":cur_party_template", ":cur_party"),
@@ -271,7 +274,17 @@ simple_triggers = [
         (neq, ":cur_party_template", "pt_mound"),
         (neq, ":cur_party_template", "pt_pyre"),
         (neq, ":cur_party_template", "pt_legendary_place"),
+        (party_detach, ":cur_party"),
         (remove_party, ":cur_party"),
+        (val_add, ":removed_empty_parties", 1),
+      (else_try), #Kham - let's just nuke all Volunteer parties when depleted.
+        (party_get_template_id, ":cur_party_template", ":cur_party"),
+        (eq, ":cur_party_template", "pt_none"),
+        (party_get_num_companions, ":num_companions", ":cur_party"),
+        (le, ":num_companions", 0),
+        (party_detach, ":cur_party"),
+        (remove_party, ":cur_party"),
+        (val_add, ":removed_empty_parties",1),
       (else_try), # remove distant routed parties
         (party_get_battle_opponent, ":opponent", ":cur_party"),
         (lt, ":opponent", 0),
@@ -344,6 +357,25 @@ simple_triggers = [
         (try_end),
       (try_end), #unstick
     (try_end), #try_for_parties
+
+    #Kham - Lets nuke all empty parties attached to centers, just in case
+    (try_for_parties, ":centers"), 
+      (neq,":centers", "p_main_party"),
+      (party_get_attached_to, ":attached_center", ":centers"),
+      (is_between, ":attached_center", centers_begin, centers_end),
+      (party_get_num_companion_stacks, ":num_stacks2", ":centers"),
+      (le, ":num_stacks2", 0),
+      (party_detach, ":centers"),
+      (remove_party, ":centers"),
+      (val_add, ":removed_empty_parties", 1),
+    (try_end),
+
+    (try_begin),
+      (eq, "$cheat_mode",1),
+      (assign, reg3, ":removed_empty_parties"),
+      (display_message, "@DEBUG: Removed Parties: {reg3}", color_bad_news),
+    (try_end),
+    
     ]),
 
 # (16) Checking if the troops are resting at a half payment point (this has to stay, in TLD!)

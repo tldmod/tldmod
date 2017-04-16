@@ -1,4 +1,4 @@
-1296
+1297
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -917,6 +917,7 @@ qstr_Breaking_camp... Breaking_camp...
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.
+qstr_DEBUG:_Removed_Parti DEBUG:_Removed_Parties:_{reg3}
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!

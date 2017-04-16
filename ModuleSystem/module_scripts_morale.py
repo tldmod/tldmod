@@ -468,7 +468,8 @@ morale_scripts = [
 					(party_set_ai_behavior, ":routed_party", ai_bhvr_travel_to_party),
 					(party_set_ai_object, ":routed_party", ":target_center"),
 					(party_set_slot, ":routed_party", slot_party_ai_state, spai_undefined),
-					(party_set_slot, ":routed_party", slot_party_ai_object, ":target_center"),					
+					(party_set_slot, ":routed_party", slot_party_ai_object, ":target_center"),
+					(party_set_flags, ":routed_party", pf_default_behavior, 1), #kham - fix						
 				(try_end),	
 				(party_clear, "p_routed_troops"),
 				(party_clear, "p_routed_allies"),
@@ -504,6 +505,7 @@ morale_scripts = [
 				(set_spawn_radius, 3),
             			(spawn_around_party, "p_main_party", "pt_routed_enemies"),
             			(assign, ":routed_party", reg0),
+            			(party_set_slot, ":routed_party", slot_party_commander_party, -1), #Kham - fix
 				(call_script, "script_party_add_party", ":routed_party", "p_routed_enemies"),
 				(party_stack_get_troop_id, ":troop", ":routed_party", 0),
 				(store_troop_faction, ":faction", ":troop"),
@@ -537,7 +539,8 @@ morale_scripts = [
 					(party_set_ai_behavior, ":routed_party", ai_bhvr_travel_to_party),
 					(party_set_ai_object, ":routed_party", ":target_center"),
 					(party_set_slot, ":routed_party", slot_party_ai_state, spai_undefined),
-					(party_set_slot, ":routed_party", slot_party_ai_object, ":target_center"),					
+					(party_set_slot, ":routed_party", slot_party_ai_object, ":target_center"),	
+					(party_set_flags, ":routed_party", pf_default_behavior, 1), #kham - fix			
 				(try_end),				
 				(party_clear, "p_routed_enemies"),
 				(assign, "$g_spawn_enemies_routed", 0),
