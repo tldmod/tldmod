@@ -1941,6 +1941,7 @@ scripts = [
 	
 	(try_begin),
 		(eq, ":volunteers", 0),
+		(party_is_active, ":town"),
 		(spawn_around_party, ":town", "pt_volunteers"), #Kham - use actual party template instead of 'none'
 		(assign, ":volunteers", reg0),
 		(party_attach_to_party, ":volunteers", ":town"),
@@ -1986,6 +1987,7 @@ scripts = [
 	
 	(party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
 	(try_begin),
+		(party_is_active, ":town"),
 		(gt, ":to_add", 0), # add volunteers!
         # this is to simulate slower growth for smaller templates (e.g. rangers)
         (store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
@@ -18286,11 +18288,11 @@ scripts = [
 
 # script_set_item_faction
 ("set_item_faction",  set_item_faction()+[
-	(item_set_slot, "itm_wood_club", slot_item_faction,0xFFFF), # mtarini: make a few items all factions
-	(item_set_slot, "itm_twohand_wood_club", slot_item_faction,0xFFFF),
-	(item_set_slot, "itm_metal_scraps_bad", slot_item_faction,0xFFFF), # scraps needed for selling w/o faction discount
-	(item_set_slot, "itm_metal_scraps_medium", slot_item_faction,0xFFFF),
-	(item_set_slot, "itm_metal_scraps_good", slot_item_faction,0xFFFF), 
+	(item_set_slot, "itm_wood_club", slot_item_faction,0xFFFFFFFF), # mtarini: make a few items all factions
+	(item_set_slot, "itm_twohand_wood_club", slot_item_faction,0xFFFFFFFF),
+	(item_set_slot, "itm_metal_scraps_bad", slot_item_faction,0xFFFFFFFF), # scraps needed for selling w/o faction discount
+	(item_set_slot, "itm_metal_scraps_medium", slot_item_faction,0xFFFFFFFF),
+	(item_set_slot, "itm_metal_scraps_good", slot_item_faction,0xFFFFFFFF), 
 	
 	# CC: Easiest way to make this work...
 	(faction_get_slot, ":mordor_mask", "fac_mordor", slot_faction_mask),
