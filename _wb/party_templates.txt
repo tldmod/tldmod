@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-255
+256
 pt_none none 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 74 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -255,3 +255,4 @@ pt_scout_camp_large Fortified_Scout_Camp 2376875 0 1 7 25 1 1 0 -1 -1 -1 -1 -1
 pt_beorn_caravan Woodsmen_Caravan 2814749771301004 0 20 14 41 1 5 0 36 5 10 0 32 4 8 0 35 8 16 0 31 18 30 0 -1 
 pt_orc_horde Orc_Horde 1688849864458332 0 16 238 376 40 50 0 374 50 80 0 -1 -1 -1 -1 
 pt_vet_archer Veteran_Archer 281474980905076 0 10 183 916 1 1 0 -1 -1 -1 -1 -1 
+pt_volunteers Reserves 1098 0 1 7 917 1 1 0 -1 -1 -1 -1 -1 

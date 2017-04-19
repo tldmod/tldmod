@@ -259,6 +259,10 @@ quests = [
   "{!}None"
 ),
 
+ ("deliver_message_hobbit", "Concerning Hobbits", 0,
+  "{!}None"
+),
+
  # ### TLD traits
 # ( "trait_elf_friend", "*TRAIT*_-Elf_Friend", 0, 
   # "You_have_become_highly_esteemed_by_the_Elves_and_they_now_regard_you_as_a_trusted_ally._The_influence_cost_to_recruit_elves_has_been_reduced_and_you_may_now_attempt_to_give_orders_to_elven_armies."

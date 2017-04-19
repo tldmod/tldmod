@@ -1,4 +1,4 @@
-1334
+1350
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -124,7 +124,6 @@ qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
-qstr_Volunteers Volunteers
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle.
 qstr_{s2}_have_razed_{s1} {s2}_have_razed_{s1}!
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
@@ -1053,6 +1052,23 @@ qstr_Say_cheese! Say_cheese!
 qstr_Why_did_you_make_mod Why_did_you_make_mod_installation_so_complex?
 qstr_Well_if_you_are_here Well,_if_you_are_here_and_talking_to_me,_you_must've_RTFM_successfully_after_all
 qstr_You_just_got_windyfl You_just_got_windyflorated!
+qstr_Merry Merry
+qstr_Pippin Pippin
+qstr_the_Citadel the_Citadel
+qstr_Minas_Tirith Minas_Tirith
+qstr_Steward_Denethor Steward_Denethor
+qstr_Golden_Hall Golden_Hall
+qstr_Edoras Edoras
+qstr_King_Theoden King_Theoden
+qstr_Merry_asked_you_to_d Merry_asked_you_to_deliver_a_message_to_his_cousin,_Pippin,_in_Minas_Tirith.
+qstr_Pippin_asked_you_to_ Pippin_asked_you_to_deliver_a_message_to_his_cousin,_Merry,_in_Edoras.
+qstr_Tell_him_I_ve_grown_ Tell_him_I've_grown_another_inch!
+qstr_Tell_Pip_he_smokes_t Tell_Pip_he_smokes_too_much!
+qstr_Tell_him_I_can_ride_ Tell_him_I_can_ride_a_grown_horse_now!
+qstr_Ask_him_if_he_has_an Ask_him_if_he_has_any_pipe-weed_left!
+qstr_Tell_him_I_ll_be_the Tell_him_I'll_be_the_tall_one_when_we_see_each_other_again!
+qstr_Ask_if_he_s_seen_Gan Ask_if_he's_seen_Gandalf!
+qstr_You_gained_250_exper You_gained_250_experience.
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
 qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
 qstr_my_home_town my_home_town

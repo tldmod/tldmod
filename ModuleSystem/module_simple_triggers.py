@@ -277,7 +277,7 @@ simple_triggers = [
         (party_detach, ":cur_party"),
         (remove_party, ":cur_party"),
         (val_add, ":removed_empty_parties", 1),
-      (else_try), #Kham - let's just nuke all Volunteer parties when depleted.
+      (else_try), #Kham - let's just nuke all Volunteer / fake parties when depleted.
         (party_get_template_id, ":cur_party_template", ":cur_party"),
         (eq, ":cur_party_template", "pt_none"),
         (party_get_num_companions, ":num_companions", ":cur_party"),
@@ -2868,6 +2868,8 @@ simple_triggers = [
 
      (try_begin),
         (eq, "$gondor_reinforcement_event_menu",0),
+        (store_faction_of_party, ":fac_player", "p_main_party"),
+        (eq, ":fac_player", "fac_gondor"),
         (jump_to_menu, "mnu_gondor_reinforcement_event"),
         (assign, "$gondor_reinforcement_event_menu",1),
      (try_end),

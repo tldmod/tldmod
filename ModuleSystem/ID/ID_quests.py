@@ -40,7 +40,8 @@ qst_oath_of_vengeance = 38
 qst_deliver_gift = 39
 qst_ring_hunters = 40
 qst_ring_hunters2 = 41
-qst_quests_end = 42
+qst_deliver_message_hobbit = 42
+qst_quests_end = 43
 qsttag_deliver_message = 504403158265495552
 qsttag_deliver_message_to_enemy_lord = 504403158265495553
 qsttag_raise_troops = 504403158265495554
@@ -83,6 +84,7 @@ qsttag_oath_of_vengeance = 504403158265495590
 qsttag_deliver_gift = 504403158265495591
 qsttag_ring_hunters = 504403158265495592
 qsttag_ring_hunters2 = 504403158265495593
-qsttag_quests_end = 504403158265495594
+qsttag_deliver_message_hobbit = 504403158265495594
+qsttag_quests_end = 504403158265495595
 
 

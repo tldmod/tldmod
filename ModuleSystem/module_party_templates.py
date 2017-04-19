@@ -402,4 +402,7 @@ party_templates = [
 
 ("vet_archer"  ,"Veteran Archer",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_woodelf ,scout_personality,[(trp_test_vet_archer,1,1)]),
 
+##Kham - Replacement Volunteer party template
+("volunteers","Reserves",icon_generic_knight|pf_is_static,0,fac_commoners,merchant_personality,[(trp_volunteers, 1, 1)]),
+
 ]

@@ -714,9 +714,14 @@ scripts = [
       (val_mul, ":join_cost", 3),
       (val_div, ":join_cost", 4),
     (try_end),
-     
-    (assign, reg0, ":join_cost"),
-	(set_trigger_result, reg0),
+    
+    (try_begin),
+      (eq, ":troop_id", "trp_volunteers"),
+      (set_trigger_result, -1),
+    (else_try), 
+	    (assign, reg0, ":join_cost"),
+		(set_trigger_result, reg0),
+	(try_end),
 ]),
   
 # script_get_troop_disband_cost
@@ -1926,19 +1931,21 @@ scripts = [
 	(store_relation, ":rel", ":fac", "$players_kingdom"), #MV fixed
  	(ge, ":rel", 0),
 
-	(try_begin),
-		(                 gt, ":volunteers", 0),
-		(neg|party_is_active, ":volunteers"   ), # depleted
+## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
+	#(try_begin),
+		#(                 gt, ":volunteers", 0),
+		#(neg|party_is_active, ":volunteers"   ), # depleted
 		# --
-		(assign, ":volunteers", 0),
-	(try_end),
+		#(assign, ":volunteers", 0),
+#	(try_end),
+	
 	(try_begin),
 		(eq, ":volunteers", 0),
-		(spawn_around_party, ":town", "pt_none"),
+		(spawn_around_party, ":town", "pt_volunteers"), #Kham - use actual party template instead of 'none'
 		(assign, ":volunteers", reg0),
 		(party_attach_to_party, ":volunteers", ":town"),
 		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
-		(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_"
+		#(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_" # Kham - no need to rename as we created an actual party template
 		(party_set_flags, ":volunteers", pf_no_label),
 		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
 	(try_end),
@@ -2013,6 +2020,11 @@ scripts = [
 		(val_mul, ":to_add", -1),
 		(try_for_range, ":unused", 0, ":to_add"),
 			(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
+			(try_begin), #Kham - When the chosen one is Volunteer, let us run the script again
+				(eq, ":guy", "trp_volunteers"), 
+				(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),
+			(try_end),
+			(neq, ":guy", "trp_volunteers"), #Kham - If it is still the volunteer, then just prevent him from being moved.
 			(party_remove_members_wounded_first, ":volunteers", ":guy", 1),
 			(party_add_members, ":town", ":guy", 1),
 		(try_end),
@@ -8034,6 +8046,16 @@ scripts = [
 ("give_center_to_faction",
     [ (store_script_param_1, ":center_no"),
       (store_script_param_2, ":faction_no"),
+
+    # first remove any volunteers - Kham
+    (party_get_slot, ":volunteers", ":center_no", slot_town_volunteer_pt),
+    (try_begin),
+        (gt, ":volunteers", 0),
+        (party_is_active, ":volunteers"),
+        (party_detach, ":volunteers"),
+        (remove_party, ":volunteers"),
+	(try_end),
+
       (try_begin),
         (check_quest_active, "qst_join_siege_with_army"),
         (quest_slot_eq, "qst_join_siege_with_army", slot_quest_target_center, ":center_no"),
@@ -10482,17 +10504,24 @@ scripts = [
 	(assign, "$ai_team_1_battle_tactic", reg0),
 	(try_begin),
 		(ge, "$ai_team_2", 0),
-		(call_script, "script_select_battle_tactic_aux", "$ai_team_2"),
-		(assign, "$ai_team_2_battle_tactic", reg0),
+		(assign, ":defense_not_an_option", 0),
+		(try_begin),
+          (eq, "$ai_team_1_battle_tactic", btactic_hold),
+          (assign, ":defense_not_an_option", 1), #don't let two AI defend at the same time
+        (try_end),
+        (call_script, "script_select_battle_tactic_aux", "$ai_team_2", ":defense_not_an_option"),
+        (assign, "$ai_team_2_battle_tactic", reg0),
 	(try_end),
 ]),
+
 # script_select_battle_tactic_aux
-# Input: team_no
-# Output: battle_tactic
-("select_battle_tactic_aux",
-    [ (store_script_param, ":team_no", 1),
+  # Input: team_no
+  # Output: battle_tactic
+  ("select_battle_tactic_aux",
+    [
+      (store_script_param, ":team_no", 1),
+      (store_script_param, ":defense_not_an_option", 2),
       (assign, ":battle_tactic", 0),
-      (assign, ":defense_not_an_option", 0),
       (get_player_agent_no, ":player_agent"),
       (agent_get_team, ":player_team", ":player_agent"),
       (try_begin),
@@ -10501,17 +10530,16 @@ scripts = [
         (assign, ":defense_not_an_option", 1),
       (try_end),
       (call_script, "script_team_get_class_percentages", ":team_no", 0),
-      #(assign, ":ai_perc_infantry", reg0),
+      #      (assign, ":ai_perc_infantry", reg0),
       (assign, ":ai_perc_archers",  reg1),
       (assign, ":ai_perc_cavalry",  reg2),
       (call_script, "script_team_get_class_percentages", ":team_no", 1),#enemies of the ai_team
-      #(assign, ":enemy_perc_infantry", reg0),
-      (assign, ":enemy_perc_archers",  reg1),
-      #(assign, ":enemy_perc_cavalry",  reg2),
-
-      (store_random_in_range, ":rand", 0, 100),      
+      #      (assign, ":enemy_perc_infantry", reg0),
+      #      (assign, ":enemy_perc_archers",  reg1),
+      #      (assign, ":enemy_perc_cavalry",  reg2),
+      
+      (store_random_in_range, ":rand", 0, 100),
       (try_begin),
-        (this_or_next|lt, ":rand", 20),
         (assign, ":continue", 0),
         (try_begin),
           (teams_are_enemies, ":team_no", ":player_team"),
@@ -10523,23 +10551,20 @@ scripts = [
           (party_slot_eq, "$g_ally_party", slot_party_type, spt_kingdom_hero_party),
           (assign, ":continue", 1),
         (try_end),
+        #(this_or_next|lt, ":rand", 20),
         (eq, ":continue", 1),
         (try_begin),
           (eq, ":defense_not_an_option", 0),
           (gt, ":ai_perc_archers", 50),
           (lt, ":ai_perc_cavalry", 35),
           (assign, ":battle_tactic", btactic_hold),
-        (else_try),							# charge enemy archers!
-		  (gt, ":enemy_perc_archers", 50),
-          (lt, ":ai_perc_archers", 25),
-		  (assign, ":battle_tactic", btactic_charge),
         (else_try),
           (lt, ":rand", 80),
           (assign, ":battle_tactic", btactic_follow_leader),
         (try_end),
       (try_end),
       (assign, reg0, ":battle_tactic"),
-]),
+  ]),
 # script_battle_tactic_init
 ("battle_tactic_init",
     [ (call_script, "script_battle_tactic_init_aux", "$ai_team_1", "$ai_team_1_battle_tactic"),
@@ -10774,10 +10799,11 @@ scripts = [
 ]),
 
 # script_team_get_average_position_of_enemies
-# Input: arg1: team_no, 
-# Output: pos0: average position.
-("team_get_average_position_of_enemies",
-    [ (store_script_param_1, ":team_no"),
+  # Input: arg1: team_no,
+  # Output: pos0: average position.
+  ("team_get_average_position_of_enemies",
+    [
+      (store_script_param_1, ":team_no"),
       (init_position, pos0),
       (assign, ":num_enemies", 0),
       (assign, ":accum_x", 0),
@@ -10788,27 +10814,34 @@ scripts = [
         (agent_is_human, ":enemy_agent"),
         (agent_get_team, ":enemy_team", ":enemy_agent"),
         (teams_are_enemies, ":team_no", ":enemy_team"),
-      
+        
         (agent_get_position, pos62, ":enemy_agent"),
-      
+        
         (position_get_x, ":x", pos62),
         (position_get_y, ":y", pos62),
         (position_get_z, ":z", pos62),
-      
+        
         (val_add, ":accum_x", ":x"),
         (val_add, ":accum_y", ":y"),
         (val_add, ":accum_z", ":z"),
         (val_add, ":num_enemies", 1),
       (try_end),
+      
+      (try_begin), #to avoid division by zeros at below division part.
+        (le, ":num_enemies", 0),
+        (assign, ":num_enemies", 1),
+      (try_end),
+      
       (store_div, ":average_x", ":accum_x", ":num_enemies"),
       (store_div, ":average_y", ":accum_y", ":num_enemies"),
       (store_div, ":average_z", ":accum_z", ":num_enemies"),
-
+      
       (position_set_x, pos0, ":average_x"),
       (position_set_y, pos0, ":average_y"),
       (position_set_z, pos0, ":average_z"),
+      
       (assign, reg0, ":num_enemies"),
-]),
+  ]),
 
 # script_search_troop_prisoner_of_party
 # Input: arg1 = troop_no

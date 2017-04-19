@@ -626,11 +626,19 @@ field_ai_triggers = [
 kham_archer_hold_fire = (1, 0, ti_once, [],
   [
     (assign, ":counter", 0),
+    (get_player_agent_no, ":player"),
+    (agent_get_team, ":team", ":player"),
 
     (try_for_agents, ":agent1"),
+
         (agent_is_active,":agent1"),
         (agent_is_alive,":agent1"),
         (agent_is_non_player, ":agent1"),
+
+        (agent_get_wielded_item, ":weapon", ":agent1", 0),
+        (ge, ":weapon", 0),
+        (this_or_next|item_has_property, ":weapon", itp_type_bow),
+        (item_has_property, ":weapon", itp_type_crossbow),
 
         #TLD Check
         (agent_get_troop_id, ":troop1", ":agent1"),
@@ -645,7 +653,7 @@ kham_archer_hold_fire = (1, 0, ti_once, [],
         (agent_get_position, pos3, ":agent1"),
         (get_distance_between_positions, ":distance", pos3, pos2),
 
-        (agent_get_team , ":team", ":agent1"),
+        (agent_get_team, ":agent_team", ":agent1"),
 
         (try_begin),
           (eq, "$cheat_mode",1),
@@ -660,9 +668,10 @@ kham_archer_hold_fire = (1, 0, ti_once, [],
           (eq, ":counter", 0),
           (set_show_messages, 0),
           (team_give_order, ":team", grc_archers, mordr_hold_fire),
+          (assign, ":counter", 1),
+          (eq, ":agent_team", ":team"),
           (set_show_messages, 1),
           (display_message, "@Your high-level archers determines that the enemy is too far away. They are holding their fire to conserve arrows until ordered otherwise.", color_good_news),
-          (assign, ":counter", 1),
         (try_end),
     (try_end),
   ])
