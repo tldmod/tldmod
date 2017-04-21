@@ -887,6 +887,7 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     (agent_get_team, ":team_victim", ":agent_rider"),
     (assign, reg22, ":damage"),
     (try_begin),
+      (eq, "$show_mount_ko_message",1),
       (troop_get_class, ":class", ":troop_no"),
       (this_or_next|troop_is_hero, ":troop_no"),
       (eq, ":class", 2), # Cavalry

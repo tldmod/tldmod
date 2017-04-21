@@ -36,6 +36,7 @@ ai_scripts = [
         (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_hero),
         (troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
         (ge, ":cur_party", 0),
+        (party_is_active, ":cur_party"), #Kham - fix
         (call_script, "script_party_calculate_strength", ":cur_party", 0), #will update slot_party_cached_strength for hero parties
       (try_end),
       (call_script, "script_party_calculate_strength", "p_main_party", 0), #will update slot_party_cached_strength for player party
@@ -104,6 +105,7 @@ ai_scripts = [
          (gt, ":faction_marshall", 0),
          (troop_get_slot, ":faction_marshall_party", ":faction_marshall", slot_troop_leaded_party),
          (gt, ":faction_marshall_party", 0),
+         (party_is_active, ":faction_marshall_party"),
          (party_get_slot, ":faction_marshall_army_strength", ":faction_marshall_party", slot_party_cached_strength),
          (party_get_slot, ":follower_strength", ":faction_marshall_party", slot_party_follower_strength),
          (val_add, ":faction_marshall_army_strength", ":follower_strength"),

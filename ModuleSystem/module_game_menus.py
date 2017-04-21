@@ -361,7 +361,10 @@ game_menus = [
       ("resume_travelling"            ,[],"Resume travelling."            ,[(change_screen_return),]),
     ]
  ),
-( "custom_battle_2",mnf_disable_all_keys,
+
+###CUSTOMBATTLE2###
+
+("custom_battle_2",mnf_disable_all_keys,
     "^^^^^^{s16}",
     "none",
     [(assign, "$g_battle_result", 0),
@@ -3075,6 +3078,19 @@ game_menus = [
     	(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pelargir),
     	(troop_add_item, "trp_player", "itm_gon_tab_shield_b"),
     	(display_message, "@Subfac Blackroot set, player given shield!")]),
+     ("spawn_static_party",[], "Spawn Static Party Near Player", [
+     	(party_relocate_near_party, "p_scout_party", "p_main_party", 5),
+     	(display_message, "@Static Scou Party Spawned!")]),
+     ("remove_static_party",[], "Clear Static Party Near Player", [
+     	(party_clear, "p_scout_party"),
+     	(display_message, "@Static Party Clear Attempted!")]),
+     ("check_if_party_is_active",[], "Is Scout Party Active?", [
+     	(try_begin),
+     		(party_is_active, "p_scout_party"),
+     		(display_message, "@Scout Party is ACTIVE!", color_good_news),
+     	(else_try),
+     		(display_message, "@Scout Party is NOT ACTIVE", color_bad_news),
+     	(try_end)]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -3125,6 +3141,11 @@ game_menus = [
 									(else_try),(str_store_string, s7, "@OFF"),(try_end),
         ],"Animal ambushes:  {s7}",[
         (store_sub, "$tld_option_animal_ambushes", 1, "$tld_option_animal_ambushes"),(val_clamp, "$tld_option_animal_ambushes", 0, 2)]),
+
+    ("game_options_horse_ko",[(try_begin),(eq,"$show_mount_ko_message",1),(str_store_string, s7, "@ON"),
+									(else_try),(str_store_string, s7, "@OFF"),(try_end),
+        ],"Show fallen rider damage messages:  {s7}",[
+        (store_sub, "$show_mount_ko_message", 1, "$show_mount_ko_message"),(val_clamp, "$show_mount_ko_message", 0, 2)]),
 
     ("game_options_tweaks",[],"Gameplay tweaks...",[(jump_to_menu, "mnu_camp_tweaks")]),
 
@@ -9183,12 +9204,12 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_rohan_good_small"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_good_small"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
 			 			(modify_visitors_at_site, "scn_scout_camp_rohan_evil_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_evil_big"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 			 			(modify_visitors_at_site, "scn_scout_camp_rohan_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_rohan_good_big"),
 			 		(try_end),
@@ -9209,12 +9230,12 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_gondor_good_small"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_good_small"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
 			 			(modify_visitors_at_site, "scn_scout_camp_gondor_evil_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_evil_big"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 			 			(modify_visitors_at_site, "scn_scout_camp_gondor_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_gondor_good_big"),
 			 		(try_end),
@@ -9236,12 +9257,12 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_mirk_good_small"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_good_small"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
 			 			(modify_visitors_at_site, "scn_scout_camp_mirk_evil_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_evil_big"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 			 			(modify_visitors_at_site, "scn_scout_camp_mirk_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_mirk_good_big"),
 			 		(try_end),
@@ -9259,12 +9280,12 @@ game_menus = [
 			 			(modify_visitors_at_site, "scn_scout_camp_north_good_small"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_good_small"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 		 				(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
 			 			(modify_visitors_at_site, "scn_scout_camp_north_evil_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_evil_big"),
 			 		(else_try),
-			 			(is_between, ":level", 17,23),
+			 			(gt, ":level", 17),
 			 			(modify_visitors_at_site, "scn_scout_camp_north_good_big"),
 			 			(assign, ":scout_camp_scene", "scn_scout_camp_north_good_big"),
 			 		(try_end),
