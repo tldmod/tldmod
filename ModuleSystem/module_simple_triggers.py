@@ -275,16 +275,8 @@ simple_triggers = [
         (neq, ":cur_party_template", "pt_pyre"),
         (neq, ":cur_party_template", "pt_legendary_place"),
         (party_detach, ":cur_party"),
-        (remove_party, ":cur_party"),
+        (call_script, "script_safe_remove_party", ":cur_party"),
         (val_add, ":removed_empty_parties", 1),
-      (else_try), #Kham - let's just nuke all Volunteer parties when depleted.
-        (party_get_template_id, ":cur_party_template", ":cur_party"),
-        (eq, ":cur_party_template", "pt_none"),
-        (party_get_num_companions, ":num_companions", ":cur_party"),
-        (le, ":num_companions", 0),
-        (party_detach, ":cur_party"),
-        (remove_party, ":cur_party"),
-        (val_add, ":removed_empty_parties",1),
       (else_try), # remove distant routed parties
         (party_get_battle_opponent, ":opponent", ":cur_party"),
         (lt, ":opponent", 0),
@@ -293,7 +285,7 @@ simple_triggers = [
 	(eq, ":cur_party_template", "pt_routed_enemies"),
 	(store_distance_to_party_from_party, ":routed_distance", "p_main_party", ":cur_party"),
 	(gt, ":routed_distance", 50),
-        (remove_party, ":cur_party"),	
+        (call_script, "script_safe_remove_party", ":cur_party"),	
       (else_try), #unstick stuck parties
         (party_get_current_terrain, ":terrain_type", ":cur_party"),
         (try_begin),
@@ -337,7 +329,7 @@ simple_triggers = [
             # ----
             (party_get_position, pos1, ":fake_party"),
             (party_get_current_terrain, ":terrain_type", ":fake_party"),
-            (remove_party, ":fake_party"),
+            (call_script, "script_safe_remove_party", ":fake_party"),
             #check for impassable terrain
             (try_begin),
               (this_or_next|eq, ":terrain_type", rt_water),
@@ -358,22 +350,10 @@ simple_triggers = [
       (try_end), #unstick
     (try_end), #try_for_parties
 
-    #Kham - Lets nuke all empty parties attached to centers, just in case
-    (try_for_parties, ":centers"), 
-      (neq,":centers", "p_main_party"),
-      (party_get_attached_to, ":attached_center", ":centers"),
-      (is_between, ":attached_center", centers_begin, centers_end),
-      (party_get_num_companion_stacks, ":num_stacks2", ":centers"),
-      (le, ":num_stacks2", 0),
-      (party_detach, ":centers"),
-      (remove_party, ":centers"),
-      (val_add, ":removed_empty_parties", 1),
-    (try_end),
-
     (try_begin),
       (eq, "$cheat_mode",1),
       (assign, reg3, ":removed_empty_parties"),
-      (display_message, "@DEBUG: Removed Parties: {reg3}", color_bad_news),
+      #(display_message, "@DEBUG: Removed Parties: {reg3}", color_bad_news),
     (try_end),
     
     ]),
@@ -831,6 +811,7 @@ simple_triggers = [
 # (31) Troop AI: Merchants thinking
 (8,[(try_for_parties, ":party_no"),
 		(party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan),
+    (party_is_active, ":party_no"),
 		#(assign, reg0, ":party_no"),
 		#(display_message, "@DEBUG: Caravan {reg0}", 0xff00fd33),
 		(party_is_in_any_town, ":party_no"),
@@ -839,7 +820,7 @@ simple_triggers = [
 		(faction_get_slot, ":num_towns", ":merchant_faction", slot_faction_num_towns),
 		(try_begin),
 			(le, ":num_towns", 0),
-			(remove_party, ":party_no"),
+			(call_script, "script_safe_remove_party", ":party_no"),
 			#(display_message, "@DEBUG: removed", 0xff00fd33),
 		(else_try),
 			(store_random_in_range, ":random_no", 0, 100),
@@ -872,7 +853,7 @@ simple_triggers = [
 			  (call_script, "script_cf_select_random_town_at_peace_with_faction_in_trade_route", ":cur_center", ":merchant_faction"),
 			  (assign, ":target_center", reg0),
 			  (eq, ":target_center", -1),
-			  (remove_party, ":party_no"), #MV: no towns to travel to, remove
+			  (call_script, "script_safe_remove_party", ":party_no"), #MV: no towns to travel to, remove
 		    (try_end),
             
 			(is_between, ":target_center", centers_begin, centers_end),
@@ -1262,6 +1243,7 @@ simple_triggers = [
     (check_quest_active, "qst_eliminate_patrols"),
     (quest_get_slot, ":target", "qst_eliminate_patrols", slot_quest_target_party_template),
     (quest_get_slot, ":center", "qst_eliminate_patrols", slot_quest_target_center),
+    (gt, ":center", 0),
     (set_spawn_radius, 5),
     (spawn_around_party, ":center", ":target"),
     (str_store_party_name, s2, reg0),
@@ -1281,10 +1263,11 @@ simple_triggers = [
 # (43) Removing cattle herds if they are way out of range
 (12,[(try_for_parties, ":cur_party"),
 		(party_slot_eq, ":cur_party", slot_party_type, spt_cattle_herd),
+    (party_is_active, ":cur_party"),
 		(store_distance_to_party_from_party, ":dist",":cur_party", "p_main_party"),
 		(try_begin),
 			(gt, ":dist", 30),
-			(remove_party, ":cur_party"),
+			(call_script, "script_safe_remove_party", ":cur_party"),
 			(try_begin),
 				#Fail quest if the party is the quest party
 				(check_quest_active, "qst_move_cattle_herd"),
@@ -1365,11 +1348,11 @@ simple_triggers = [
 						(call_script, "script_fail_quest", ":cur_quest"),
           (else_try),
             (eq, ":cur_quest", "qst_defend_village"),
-            (remove_party, "$qst_defend_village_party"),
+            (call_script, "script_safe_remove_party", "$qst_defend_village_party"),
             (call_script, "script_fail_quest", ":cur_quest"),
           (else_try),
             (eq, ":cur_quest", "qst_raid_village"),
-            (remove_party, "$qst_raid_village_party"),
+            (call_script, "script_safe_remove_party", "$qst_raid_village_party"),
             (call_script, "script_fail_quest", ":cur_quest"),
           (else_try),
             (eq, ":cur_quest", "qst_destroy_scout_camp"),
@@ -1413,7 +1396,7 @@ simple_triggers = [
             (faction_set_slot,":quest_giver_faction",slot_faction_strength_tmp,":loss"),
             (faction_set_slot,":scout_camp_faction",slot_faction_strength_tmp,":enemy"), 
             (cancel_quest, "qst_destroy_scout_camp"),
-            (remove_party, "$qst_destroy_scout_camp_party"),
+            (call_script, "script_safe_remove_party", "$qst_destroy_scout_camp_party"),
 					(else_try),
 						(call_script, "script_abort_quest", ":cur_quest", 1),
 					(try_end),
@@ -1637,7 +1620,7 @@ simple_triggers = [
       (else_try),
         (store_distance_to_party_from_party, ":dist",":target_party", ":target_center"),
         (lt, ":dist", 3),
-        (remove_party, ":target_party"),
+        (call_script, "script_safe_remove_party", ":target_party"),
         (call_script, "script_succeed_quest", "qst_move_cattle_herd"),
       (try_end),
     (try_end),
@@ -1662,11 +1645,12 @@ simple_triggers = [
         (store_add, ":total_defeated",":current_defeated",1), #Add one
         (try_begin),
           (quest_slot_eq, "qst_eliminate_patrols", slot_quest_target_troop, ":quest_target_party_template"),
+          (gt, ":quest_target_party_template", 0),
           (set_spawn_radius,1),
           (spawn_around_party, "p_main_party",":quest_target_party_template"),
           (assign, ":spawn", reg0),
           (str_store_party_name, s1, ":spawn"),
-          (remove_party, ":spawn"),
+          (call_script, "script_safe_remove_party", ":spawn"),
         (try_end),
         (quest_set_slot, "qst_eliminate_patrols", slot_quest_target_troop, 0), #Revert back to 0 state for target troop until encountered again
         (quest_set_slot, "qst_eliminate_patrols", slot_quest_current_state, ":total_defeated"), #Set # of troops defeated
@@ -2174,7 +2158,7 @@ simple_triggers = [
           (try_end),
           (try_begin),
             (neg|is_between, ":cur_party", centers_begin, centers_end),
-            (remove_party, ":cur_party"),
+            (call_script, "script_safe_remove_party", ":cur_party"),
           (else_try),
             # Centers: destroy what you can, give the rest to the best enemy
             
@@ -2184,7 +2168,7 @@ simple_triggers = [
               (gt, ":volunteers", 0),
               (party_is_active, ":volunteers"),
               (party_detach,    ":volunteers"),
-              (remove_party,    ":volunteers"),
+              (call_script, "script_safe_remove_party",    ":volunteers"),
             (try_end),
             
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
@@ -2497,7 +2481,7 @@ simple_triggers = [
             
             (faction_get_slot, ":capital", ":faction", slot_faction_capital),
             (set_spawn_radius, 1),
-            (spawn_around_party, ":capital", pt_none),
+            (spawn_around_party, ":capital", "pt_none"),
             (assign, ":guard_party", reg0),
             (faction_set_slot, ":faction", slot_faction_guardian_party, ":guard_party"),
                         
@@ -2556,7 +2540,11 @@ simple_triggers = [
         		(party_get_template_id, ":template", ":party_no"),
 			(is_between, ":template", "pt_routed_allies", "pt_legion_minas_morgul"),
 			(party_is_in_any_town, ":party_no"),
-			(remove_party, ":party_no"),
+			
+      #Kham - We will use our dormant removal system instead. 
+      #(call_script, "script_safe_remove_party", ":party_no"),
+      (call_script, "script_remove_party", ":party_no"),
+
 		(try_end),
 		(party_is_active, ":party_no"),
 		(party_slot_eq, ":party_no", slot_party_type, spt_prisoner_train),
@@ -2575,7 +2563,10 @@ simple_triggers = [
 		#(position_get_y, reg2, pos1),
 		#(display_message, "@DEBUG: player at: {reg1}, {reg2}", debug_color),
 		(call_script, "script_party_prisoners_add_party_prisoners", ":cur_center", ":party_no"),
-		(remove_party, ":party_no"),
+
+     #Kham - We will use our dormant removal system instead. 
+		#(call_script, "script_safe_remove_party", ":party_no"),
+    (call_script, "script_remove_party", ":party_no"),
 	(try_end),
    ]),
 
@@ -2868,6 +2859,8 @@ simple_triggers = [
 
      (try_begin),
         (eq, "$gondor_reinforcement_event_menu",0),
+        (store_faction_of_party, ":fac_player", "p_main_party"),
+        (eq, ":fac_player", "fac_gondor"),
         (jump_to_menu, "mnu_gondor_reinforcement_event"),
         (assign, "$gondor_reinforcement_event_menu",1),
      (try_end),

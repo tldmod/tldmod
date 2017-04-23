@@ -3254,6 +3254,18 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_mirkwood_bow,(itm_woodelf_arrows,imod_large_bag),itm_mirkwood_armor_e,itm_mirkwood_leather_greaves,itm_woodelf_arrows,itm_mirkwood_helm_d,itm_woodelf_arrows,itm_woodelf_arrows,itm_woodelf_arrows],
       attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
 
+## Kham - Volunteers
+
+["volunteers","--- Reserves ---:","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+   [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
+      str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
+
+## Kham - Dormant Troop
+
+["dormant","Dormant","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+   [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
+      str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
+
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],

@@ -6709,7 +6709,7 @@ scripts = [
         (this_or_next|eq, ":local2", "pt_small_host_of_rohan"),
         (eq, ":local2", "pt_host_of_rohan"),
         (call_script, "script_party_add_party_companions", "$eohere_party_id", ":party"),
-        (remove_party, ":party"),
+        (call_script, "script_safe_remove_party", ":party"),
         (assign, "$host_of_rohan_active", 0),
         (assign, "$host_of_rohan_order_tracking", 0),
     (try_end),

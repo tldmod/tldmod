@@ -492,7 +492,8 @@ tld_remove_galadriel = 	(0.1,0,0,
 			[
 			(try_for_agents, ":cur_agent"),
 				(agent_get_troop_id,":troop", ":cur_agent"),
-				(eq, ":troop", "trp_lorien_lord"),
+				(this_or_next|eq, ":troop", "trp_lorien_lord"),
+				(			  eq, ":troop", "trp_volunteers"), #Kham - remove 'volunteer' agent
 				(call_script, "script_remove_agent", ":cur_agent"),
 			(try_end),
 			])

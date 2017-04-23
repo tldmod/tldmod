@@ -856,7 +856,7 @@ triggersfile version 1
     (party_get_slot, ":local20", ":party", 3),
     (store_distance_to_party_from_party, ":dist", ":party", ":local20"),
     (eq, ":dist", 0),
-    (remove_party, ":party"),
+    (call_script, "script_safe_remove_party", ":party"),
 (try_end),
 
 (assign, "$minas_tirith_healing", 0),
@@ -6426,7 +6426,7 @@ store_random, reg5, 1, 0),
 (assign, "$nobleman_quest_nobleman_active", 0),
 (display_message, "str_nobleman_reached_destination", 0),
 (fail_quest, "qst_generic_capture_nobleman"),
-(remove_party, "$nobleman_quest_party_id"),
+(call_script, "script_safe_remove_party", "$nobleman_quest_party_id"),
 ]),
 
 (0.1, 0, 0, [
@@ -6464,7 +6464,7 @@ store_random, reg5, 1, 0),
 (assign, "$raider_quest_active", 0),
 (display_message, "str_raiders_reached_base", 0),
 (fail_quest, "qst_generic_hunt_down_raiders"),
-(remove_party, "$raider_quest_party_id"),
+(call_script, "script_safe_remove_party", "$raider_quest_party_id"),
 ]),
 
 (168, 0, 0, [], [

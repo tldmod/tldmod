@@ -626,11 +626,22 @@ field_ai_triggers = [
 kham_archer_hold_fire = (1, 0, ti_once, [],
   [
     (assign, ":counter", 0),
+    (get_player_agent_no, ":player"),
+    (agent_get_team, ":team", ":player"),
 
     (try_for_agents, ":agent1"),
+
         (agent_is_active,":agent1"),
         (agent_is_alive,":agent1"),
         (agent_is_non_player, ":agent1"),
+
+        (agent_get_team, ":agent_team", ":agent1"),
+        (eq, ":agent_team", ":team"),
+
+        (agent_get_wielded_item, ":weapon", ":agent1", 0),
+        (ge, ":weapon", 0),
+        (this_or_next|item_has_property, ":weapon", itp_type_bow),
+        (item_has_property, ":weapon", itp_type_crossbow),
 
         #TLD Check
         (agent_get_troop_id, ":troop1", ":agent1"),
@@ -645,13 +656,12 @@ kham_archer_hold_fire = (1, 0, ti_once, [],
         (agent_get_position, pos3, ":agent1"),
         (get_distance_between_positions, ":distance", pos3, pos2),
 
-        (agent_get_team , ":team", ":agent1"),
 
         (try_begin),
           (eq, "$cheat_mode",1),
           (eq,":counter",0),
           (assign, reg1, ":distance"),
-          (display_message, "@DEBUG: Distance: {reg1}"),
+         # (display_message, "@DEBUG: Distance: {reg1}"),
         (end_try),
 
         (ge, ":distance", 7000),
@@ -730,7 +740,7 @@ kham_archer_bone_target = (0, 0, 0, [],
                 (eq, "$cheat_mode",1),
                 (eq, ":counter",0),
                 (neq, ":race", tf_orc),
-                (display_message, "@DEBUG: Enemy not an orc, not using advanced aiming"),
+                #(display_message, "@DEBUG: Enemy not an orc, not using advanced aiming"),
                 (assign, ":counter",1),
              (try_end),
 
@@ -882,6 +892,7 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
       (eq, ":class", 2), # Cavalry
       (try_begin),
         ## PLAYER - Horse killed.
+        (eq, "$show_mount_ko_message",1),
         (eq, ":agent_rider", ":agent_player"),
         (display_message, "@Your mount has fallen to the ground beneath you!", color_bad_news),
         (display_message, "@Receive {reg22} damage."), # due to falling from your mount.", color_bad_news),
@@ -890,27 +901,30 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
           (display_message, "@You have been knocked unconscious by {s22}.", color_bad_news),
         (try_end),
       (else_try),
+        (eq, "$show_mount_ko_message",0),
         ## ANYONE - Killed someone's horse (teammate)
         (eq, ":team_player", ":team_victim"),
-        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount.", 0xB48211),
+        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount when it fell.", 0xB48211),
         #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0xB48211),
         (try_begin),
           (eq, ":agent_killed", 1),
           (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0xB48211),
         (try_end),
       (else_try),
+        (eq, "$show_mount_ko_message",0),
         ## ANYONE - Killed someone's horse (ally)
         (agent_is_ally, ":agent_rider"),
-        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount.", 0xB06EDA),
+        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount when it fell.", 0xB06EDA),
         #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0xB06EDA),
         (try_begin),
           (eq, ":agent_killed", 1),
           (display_message, "@{s21} {reg24?killed:knocked unconscious} by {s22}.", 0xB06EDA),
         (try_end),
       (else_try),
+        (eq, "$show_mount_ko_message",0),
         ## ANYONE - Killed someone's horse (enemy)
         (teams_are_enemies, ":team_player", ":team_victim"),
-        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount.", 0x42D8A6),
+        (display_message, "@{s21} has been knocked off of {reg23?her:his} mount when it fell.", 0x42D8A6),
         #(display_message, "@{s21} receives {reg22} damage due to falling from {reg23?her:his} mount.", 0x42D8A6),
         (try_begin),
           (eq, ":agent_killed", 1),

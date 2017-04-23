@@ -714,9 +714,14 @@ scripts = [
       (val_mul, ":join_cost", 3),
       (val_div, ":join_cost", 4),
     (try_end),
-     
-    (assign, reg0, ":join_cost"),
-	(set_trigger_result, reg0),
+    
+    (try_begin),
+      (eq, ":troop_id", "trp_volunteers"),
+      (set_trigger_result, -1),
+    (else_try), 
+	    (assign, reg0, ":join_cost"),
+		(set_trigger_result, reg0),
+	(try_end),
 ]),
   
 # script_get_troop_disband_cost
@@ -1872,7 +1877,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 1000), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
@@ -1883,6 +1888,9 @@ scripts = [
 	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
 	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
 	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
+	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - ON by default
+	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
+
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
 	#	(set_position_delta, -3.0,6.0,65.0),
 	#	(party_add_particle_system, ":beacon", "psys_lamp_fire"),
@@ -1926,21 +1934,35 @@ scripts = [
 	(store_relation, ":rel", ":fac", "$players_kingdom"), #MV fixed
  	(ge, ":rel", 0),
 
-	(try_begin),
-		(                 gt, ":volunteers", 0),
-		(neg|party_is_active, ":volunteers"   ), # depleted
+## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
+	#(try_begin),
+		#(                 gt, ":volunteers", 0),
+		#(neg|party_is_active, ":volunteers"   ), # depleted
 		# --
-		(assign, ":volunteers", 0),
-	(try_end),
+		#(assign, ":volunteers", 0),
+#	(try_end),
+	
 	(try_begin),
 		(eq, ":volunteers", 0),
-		(spawn_around_party, ":town", "pt_none"),
+		(party_is_active, ":town"),
+		(spawn_around_party, ":town", "pt_volunteers"), #Kham - use actual party template instead of 'none'
 		(assign, ":volunteers", reg0),
 		(party_attach_to_party, ":volunteers", ":town"),
 		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
-		(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_"
+		#(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_" # Kham - no need to rename as we created an actual party template
 		(party_set_flags, ":volunteers", pf_no_label),
 		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
+		(store_faction_of_party, ":town_fac", ":town"),
+		(try_begin),
+			(faction_slot_eq, ":town_fac", slot_faction_side, faction_side_good),
+			(str_store_string, s4, "@Volunteers"),
+			(str_store_string, s3, "@--- Volunteers ---"),
+		(else_try),
+			(str_store_string, s4, "@Reserves"),
+			(str_store_string, s3, "@--- Reserves ---"),
+		(try_end),
+		(party_set_name, ":volunteers", "@{s4}"),
+		(troop_set_name,  "trp_volunteers", s3),
 	(try_end),
   
   # compute ideal number of volunteers
@@ -1979,6 +2001,7 @@ scripts = [
 	
 	(party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
 	(try_begin),
+		(party_is_active, ":town"),
 		(gt, ":to_add", 0), # add volunteers!
         # this is to simulate slower growth for smaller templates (e.g. rangers)
         (store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
@@ -2013,6 +2036,11 @@ scripts = [
 		(val_mul, ":to_add", -1),
 		(try_for_range, ":unused", 0, ":to_add"),
 			(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
+			(try_begin), #Kham - When the chosen one is Volunteer, let us run the script again
+				(eq, ":guy", "trp_volunteers"), 
+				(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),
+			(try_end),
+			(neq, ":guy", "trp_volunteers"), #Kham - If it is still the volunteer, then just prevent him from being moved.
 			(party_remove_members_wounded_first, ":volunteers", ":guy", 1),
 			(party_add_members, ":town", ":guy", 1),
 		(try_end),
@@ -2356,8 +2384,12 @@ scripts = [
 						(is_between, ":faction_receiving_prisoners", kingdoms_begin, kingdoms_end),
 						(faction_get_slot, ":prisoner_train_pt", ":faction_receiving_prisoners", slot_faction_prisoner_train),
 						(neq, ":prisoner_train_pt", -1),
-						(set_spawn_radius, 1),
-						(spawn_around_party, ":nonempty_winner_party", ":prisoner_train_pt"),
+						
+						## Kham - we will be using our new dormant party system for prisoner trains
+						#(set_spawn_radius, 1),
+						#(spawn_around_party, ":nonempty_winner_party", ":prisoner_train_pt"),
+
+						(call_script, "script_spawn_around_party", ":nonempty_winner_party", ":prisoner_train_pt"),
 						(assign, ":prisoner_train", reg0),
 						(party_set_faction, ":prisoner_train", ":faction_receiving_prisoners"),
 						(party_set_slot, ":prisoner_train", slot_party_victory_value, ws_p_train_vp),
@@ -7677,7 +7709,11 @@ scripts = [
 	  (try_begin),(eq, reg0, "p_town_minas_tirith"), (assign, ":sight_range", 4),
 	  (else_try), (eq, reg0,  "p_town_erebor"), (assign, ":sight_range", 4),
 	  (else_try), (eq, reg0,  "p_town_isengard"), (assign, ":sight_range", 6),
-	  (else_try), (assign, ":sight_range", 2.5),(try_end), # default
+	  (else_try), 
+			(this_or_next|eq, reg0,  "p_town_west_osgiliath"), 
+			(eq, reg0,  "p_town_east_osgiliath"),
+			(assign, ":sight_range", 2.0), #InVain: trying to get this right so that Osgiliath battle scenes only appear when very near on on the Osgiliath map icons, but also on the 'river' between both centers
+	  (else_try), (assign, ":sight_range", 3.5),(try_end), # default #InVain made this bigger, was 2.5
 	  
 	  (try_begin),
 		(gt, ":min_distance", ":sight_range"), # smaller sigth range of everything but minas thirit
@@ -7718,6 +7754,36 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),	
 		(str_store_string, s17, "@in sight of the majestic City Walls of Minas Tirith, the White City"),
+#InVain new landmark scenes start
+	(else_try),
+		(eq,":landmark","p_town_edoras"),	
+		(str_store_string, s17, "@in sight of Edoras, the capital of Rohan"),
+	(else_try),
+		(eq,":landmark","p_town_hornburg"),	
+		(str_store_string, s17, "@in sight of the Hornburg, the great fortress of Rohan"),
+	(else_try),
+		(eq,":landmark","p_town_dol_amroth"),	
+		(str_store_string, s17, "@in sight of Dol Amroth, the seat of the Princes of Belfalas"),
+	(else_try),
+		(eq,":landmark","p_town_morannon"),	
+		(str_store_string, s17, "@in sight of the Morannon, the Black Gate of Mordor"),
+	(else_try),
+		(eq,":landmark","p_town_dol_guldur"),	
+		(str_store_string, s17, "@in sight of Dol Guldur, Sauron's northern fortress"),
+	(else_try),
+		(eq,":landmark","p_town_beorn_house"),	
+		(str_store_string, s17, "@on the green pastures and many-flowered meadows surrounding Beorn's House"),
+	(else_try),
+		(eq,":landmark","p_town_moria"),	
+		(str_store_string, s17, "@on the shores of Lake Mirrormere, near the East Gate of Moria"),
+	(else_try),
+		(eq,":landmark","p_town_esgaroth"),	
+		(str_store_string, s17, "@on the shores of the Long Lake, in sight of Esgaroth, the Laketown"),
+#InVain new landmark scenes end
+	(else_try),
+		(this_or_next|eq,":landmark","p_town_west_osgiliath"),   ## Osgiliath - In Vain
+		(eq,":landmark","p_town_east_osgiliath"),	
+		(str_store_string, s17, "@in the outskirts of Osgiliath, the former capital of Gondor"),
 	(else_try),
 		(this_or_next|eq,":landmark","p_town_west_osgiliath"),   ## Osgiliath - In Vain
 		(eq,":landmark","p_town_east_osgiliath"),	
@@ -8034,6 +8100,16 @@ scripts = [
 ("give_center_to_faction",
     [ (store_script_param_1, ":center_no"),
       (store_script_param_2, ":faction_no"),
+
+    # first remove any volunteers - Kham
+    (party_get_slot, ":volunteers", ":center_no", slot_town_volunteer_pt),
+    (try_begin),
+        (gt, ":volunteers", 0),
+        (party_is_active, ":volunteers"),
+        (party_detach, ":volunteers"),
+        (call_script, "script_safe_remove_party", ":volunteers"),
+	(try_end),
+
       (try_begin),
         (check_quest_active, "qst_join_siege_with_army"),
         (quest_slot_eq, "qst_join_siege_with_army", slot_quest_target_center, ":center_no"),
@@ -8829,6 +8905,7 @@ scripts = [
      (try_for_parties, ":party_no"),
        (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
        (neg|party_is_in_any_town, ":party_no"),
+       (party_is_active, ":party_no"),
        (store_faction_of_party, ":party_faction", ":party_no"),
        (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
@@ -9947,6 +10024,14 @@ scripts = [
 		(is_between, ":x", -8005,-3026 ),(is_between, ":y",   -10668,  -5261),
 		(assign, reg1, region_brown_lands),
 	(else_try),
+		#  InVain Dimrill Dale?
+		(is_between, ":x", 3380, 5900 ),(is_between, ":y", -15396, -13843), 
+		(assign, reg1, region_dimrill),
+	(else_try),
+		#  InVain South of Erebor
+		(is_between, ":x", -6800, -5558 ),(is_between, ":y", -22800, -21875), 
+		(assign, reg1, region_s_erebor),
+	(else_try),
 		# evertything else, in a BIG region, is in rohan... 
 		(is_between, ":x", -3557,5893 ),(is_between, ":y",   -4782,  1057),
 		# pick emnet
@@ -10054,6 +10139,10 @@ scripts = [
 		(assign, reg1, fac_khand),
 	(else_try), (eq, ":region_id", 	region_s_mirkwood),
 		(assign, reg1, fac_guldur),
+	(else_try), (eq, ":region_id", 	region_dimrill), #InVain new regions
+		(assign, reg1, fac_moria),
+	(else_try), (eq, ":region_id", 	region_s_erebor), #InVain new regions
+		(assign, reg1, fac_dale),
 	(else_try), 
 		(this_or_next|eq, ":region_id", region_mordor ), 
 		(this_or_next|eq, ":region_id", region_dagorlad ), 
@@ -10092,6 +10181,68 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),
 		(assign,":scene_to_use","scn_minas_tirith_outside"), 
+#InVain new landmark scenes begin
+	(else_try),
+		(eq,":landmark","p_town_edoras"), 
+		(store_random_in_range, ":scene_to_use", "scn_edoras_outside_1", "scn_hornburg_outside_1"),
+	(else_try),
+		(eq,":landmark","p_town_hornburg"), 
+		(store_random_in_range, ":scene_to_use", "scn_hornburg_outside_1", "scn_dolamroth_outside_1"),
+	(else_try),
+		(eq,":landmark","p_town_dol_amroth"), 
+		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
+		(store_random_in_range, ":scene_to_use", "scn_dolamroth_outside_1", "scn_morannon_outside_1"),
+#		(assign, "$bs_day_sound", "snd_seaside_occasional"),
+	(else_try),
+		(eq,":landmark","p_town_morannon"), 
+		(store_random_in_range, ":scene_to_use", "scn_morannon_outside_1", "scn_dolguldur_outside_1"),
+		(assign, "$bs_day_sound", "snd_morgul_ambiance"),
+		(assign, "$bs_night_sound", "snd_morgul_ambiance"),
+	(else_try),
+		(eq,":landmark","p_town_dol_guldur"), 
+		(store_random_in_range, ":scene_to_use", "scn_dolguldur_outside_1", "scn_beorn_outside_1"),
+		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
+		(assign, "$bs_night_sound", "snd_evilforest_ambiance"),
+	(else_try),
+		(eq,":landmark","p_town_beorn_house"), 
+		(store_random_in_range, ":scene_to_use", "scn_beorn_outside_1", "scn_moria_outside_1"),
+#		(assign, "$bs_day_sound", "snd_beorn_occasional"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
+	(else_try),
+		(eq,":landmark","p_town_moria"), #InVain: Keep this BEFORE region_dimrill!
+		(assign, ":native_terrain_to_use", rt_mountain_forest),
+		(assign,":scene_to_use","scn_dimrill_dale"), #randomized
+		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
+	(else_try),
+		(eq,":region",region_dimrill), 
+		(assign, ":native_terrain_to_use", rt_mountain_forest),
+		(assign,":scene_to_use","scn_dimrill_dale"), #randomized
+		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
+	(else_try),
+		(eq,":landmark","p_town_esgaroth"), #InVain: Keep this BEFORE region_s_erebor!
+		(assign, ":native_terrain_to_use", rt_steppe),
+		(store_random_in_range, ":scene_to_use", "scn_esgaroth_outside_1", "scn_s_erebor"),
+	(else_try),
+		(eq,":region",region_s_erebor), 
+		(assign, ":native_terrain_to_use", rt_steppe),
+		(assign,":scene_to_use","scn_s_erebor"),
+	(else_try),
+		(this_or_next|eq,":landmark","p_town_west_osgiliath"), #InVain: Keep this BEFORE Ithilien / Emyn Arnen. Otherwise we get forest scenes in Osgiliath.
+		(eq,":landmark","p_town_east_osgiliath"),
+			(store_random_in_range, ":scene", 0, 4),
+	        (try_begin),
+	        	(eq, ":scene",0),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts"),
+	        (else_try),
+	        	(eq, ":scene",1),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts_2"),
+	        (else_try),
+	        	(eq, ":scene",2),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts_3"),
+	        (else_try),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts_4"),
+			(try_end),
+#InVain new landmark scenes end
 	(else_try),
 		(eq,":landmark","p_town_isengard"),
 		(assign, ":native_terrain_to_use", rt_steppe), 
@@ -10157,11 +10308,12 @@ scripts = [
 		(is_between,":region",region_pelennor, region_anorien+1),
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_plain_small"), # so that outer terrain of gondor is used
-		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
-	(else_try),
-		(this_or_next|eq,":landmark","p_town_west_osgiliath"), # Occasional Osgiliath - In Vain
-		(eq,":landmark","p_town_east_osgiliath"),
-		(assign,":scene_to_use","scn_osgiliath_outskirts"), 
+		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"), 
+#InVain: Moved Osgiliath up, landmarks must be before regions!
+#	(else_try),
+#		(this_or_next|eq,":landmark","p_town_west_osgiliath"), # Occasional Osgiliath - In Vain
+#		(eq,":landmark","p_town_east_osgiliath"),
+#		(assign,":scene_to_use","scn_osgiliath_outskirts"), 
 	(else_try),		# occasional forest terrain, in rohan: use forest battlefield regardless of region (but rohan outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(is_between,":region",region_harrowdale, region_westfold+1),
@@ -10482,17 +10634,24 @@ scripts = [
 	(assign, "$ai_team_1_battle_tactic", reg0),
 	(try_begin),
 		(ge, "$ai_team_2", 0),
-		(call_script, "script_select_battle_tactic_aux", "$ai_team_2"),
-		(assign, "$ai_team_2_battle_tactic", reg0),
+		(assign, ":defense_not_an_option", 0),
+		(try_begin),
+          (eq, "$ai_team_1_battle_tactic", btactic_hold),
+          (assign, ":defense_not_an_option", 1), #don't let two AI defend at the same time
+        (try_end),
+        (call_script, "script_select_battle_tactic_aux", "$ai_team_2", ":defense_not_an_option"),
+        (assign, "$ai_team_2_battle_tactic", reg0),
 	(try_end),
 ]),
+
 # script_select_battle_tactic_aux
-# Input: team_no
-# Output: battle_tactic
-("select_battle_tactic_aux",
-    [ (store_script_param, ":team_no", 1),
+  # Input: team_no
+  # Output: battle_tactic
+  ("select_battle_tactic_aux",
+    [
+      (store_script_param, ":team_no", 1),
+      (store_script_param, ":defense_not_an_option", 2),
       (assign, ":battle_tactic", 0),
-      (assign, ":defense_not_an_option", 0),
       (get_player_agent_no, ":player_agent"),
       (agent_get_team, ":player_team", ":player_agent"),
       (try_begin),
@@ -10501,17 +10660,16 @@ scripts = [
         (assign, ":defense_not_an_option", 1),
       (try_end),
       (call_script, "script_team_get_class_percentages", ":team_no", 0),
-      #(assign, ":ai_perc_infantry", reg0),
+      #      (assign, ":ai_perc_infantry", reg0),
       (assign, ":ai_perc_archers",  reg1),
       (assign, ":ai_perc_cavalry",  reg2),
       (call_script, "script_team_get_class_percentages", ":team_no", 1),#enemies of the ai_team
-      #(assign, ":enemy_perc_infantry", reg0),
-      (assign, ":enemy_perc_archers",  reg1),
-      #(assign, ":enemy_perc_cavalry",  reg2),
-
-      (store_random_in_range, ":rand", 0, 100),      
+      #      (assign, ":enemy_perc_infantry", reg0),
+      #      (assign, ":enemy_perc_archers",  reg1),
+      #      (assign, ":enemy_perc_cavalry",  reg2),
+      
+      (store_random_in_range, ":rand", 0, 100),
       (try_begin),
-        (this_or_next|lt, ":rand", 20),
         (assign, ":continue", 0),
         (try_begin),
           (teams_are_enemies, ":team_no", ":player_team"),
@@ -10523,23 +10681,20 @@ scripts = [
           (party_slot_eq, "$g_ally_party", slot_party_type, spt_kingdom_hero_party),
           (assign, ":continue", 1),
         (try_end),
+        #(this_or_next|lt, ":rand", 20),
         (eq, ":continue", 1),
         (try_begin),
           (eq, ":defense_not_an_option", 0),
           (gt, ":ai_perc_archers", 50),
           (lt, ":ai_perc_cavalry", 35),
           (assign, ":battle_tactic", btactic_hold),
-        (else_try),							# charge enemy archers!
-		  (gt, ":enemy_perc_archers", 50),
-          (lt, ":ai_perc_archers", 25),
-		  (assign, ":battle_tactic", btactic_charge),
         (else_try),
           (lt, ":rand", 80),
           (assign, ":battle_tactic", btactic_follow_leader),
         (try_end),
       (try_end),
       (assign, reg0, ":battle_tactic"),
-]),
+  ]),
 # script_battle_tactic_init
 ("battle_tactic_init",
     [ (call_script, "script_battle_tactic_init_aux", "$ai_team_1", "$ai_team_1_battle_tactic"),
@@ -10774,10 +10929,11 @@ scripts = [
 ]),
 
 # script_team_get_average_position_of_enemies
-# Input: arg1: team_no, 
-# Output: pos0: average position.
-("team_get_average_position_of_enemies",
-    [ (store_script_param_1, ":team_no"),
+  # Input: arg1: team_no,
+  # Output: pos0: average position.
+  ("team_get_average_position_of_enemies",
+    [
+      (store_script_param_1, ":team_no"),
       (init_position, pos0),
       (assign, ":num_enemies", 0),
       (assign, ":accum_x", 0),
@@ -10788,27 +10944,34 @@ scripts = [
         (agent_is_human, ":enemy_agent"),
         (agent_get_team, ":enemy_team", ":enemy_agent"),
         (teams_are_enemies, ":team_no", ":enemy_team"),
-      
+        
         (agent_get_position, pos62, ":enemy_agent"),
-      
+        
         (position_get_x, ":x", pos62),
         (position_get_y, ":y", pos62),
         (position_get_z, ":z", pos62),
-      
+        
         (val_add, ":accum_x", ":x"),
         (val_add, ":accum_y", ":y"),
         (val_add, ":accum_z", ":z"),
         (val_add, ":num_enemies", 1),
       (try_end),
+      
+      (try_begin), #to avoid division by zeros at below division part.
+        (le, ":num_enemies", 0),
+        (assign, ":num_enemies", 1),
+      (try_end),
+      
       (store_div, ":average_x", ":accum_x", ":num_enemies"),
       (store_div, ":average_y", ":accum_y", ":num_enemies"),
       (store_div, ":average_z", ":accum_z", ":num_enemies"),
-
+      
       (position_set_x, pos0, ":average_x"),
       (position_set_y, pos0, ":average_y"),
       (position_set_z, pos0, ":average_z"),
+      
       (assign, reg0, ":num_enemies"),
-]),
+  ]),
 
 # script_search_troop_prisoner_of_party
 # Input: arg1 = troop_no
@@ -10991,11 +11154,11 @@ scripts = [
         (assign, ":quest_expire_penalty", -3),
         (try_begin),
           (party_is_active, "$qst_follow_spy_spy_party"),
-          (remove_party, "$qst_follow_spy_spy_party"),
+          (call_script, "script_safe_remove_party", "$qst_follow_spy_spy_party"),
         (try_end),
         (try_begin),
           (party_is_active, "$qst_follow_spy_spy_partners_party"),
-          (remove_party, "$qst_follow_spy_spy_partners_party"),
+          (call_script, "script_safe_remove_party", "$qst_follow_spy_spy_partners_party"),
         (try_end),
       (else_try),
         (eq, ":quest_no", "qst_capture_enemy_hero"),
@@ -16447,7 +16610,7 @@ scripts = [
         (try_begin),
           (le, ":num_cattle", ":cur_req"),
           (assign, ":num_added", ":num_cattle"),
-          (remove_party, ":cur_party"),
+          (call_script, "script_safe_remove_party", ":cur_party"),
         (else_try),
           (assign, ":num_added", ":cur_req"),
           (party_remove_members, ":cur_party", "trp_cattle", ":cur_req"),
@@ -18253,11 +18416,11 @@ scripts = [
 
 # script_set_item_faction
 ("set_item_faction",  set_item_faction()+[
-	(item_set_slot, "itm_wood_club", slot_item_faction,0xFFFF), # mtarini: make a few items all factions
-	(item_set_slot, "itm_twohand_wood_club", slot_item_faction,0xFFFF),
-	(item_set_slot, "itm_metal_scraps_bad", slot_item_faction,0xFFFF), # scraps needed for selling w/o faction discount
-	(item_set_slot, "itm_metal_scraps_medium", slot_item_faction,0xFFFF),
-	(item_set_slot, "itm_metal_scraps_good", slot_item_faction,0xFFFF), 
+	(item_set_slot, "itm_wood_club", slot_item_faction,0xFFFFFFFF), # mtarini: make a few items all factions
+	(item_set_slot, "itm_twohand_wood_club", slot_item_faction,0xFFFFFFFF),
+	(item_set_slot, "itm_metal_scraps_bad", slot_item_faction,0xFFFFFFFF), # scraps needed for selling w/o faction discount
+	(item_set_slot, "itm_metal_scraps_medium", slot_item_faction,0xFFFFFFFF),
+	(item_set_slot, "itm_metal_scraps_good", slot_item_faction,0xFFFFFFFF), 
 	
 	# CC: Easiest way to make this work...
 	(faction_get_slot, ":mordor_mask", "fac_mordor", slot_faction_mask),
@@ -20613,7 +20776,7 @@ scripts = [
             (call_script, "script_remove_empty_parties_in_group", ":attached_party"),
             (try_begin),
                 (eq, ":troops", 0),
-                (remove_party,":attached_party"),# remove empty party after subtree iterations and prisoner stashing are done 
+                (call_script, "script_safe_remove_party",":attached_party"),# remove empty party after subtree iterations and prisoner stashing are done 
             (try_end),
         (try_end),
 	(try_end),
@@ -21127,15 +21290,22 @@ command_cursor_scripts = [
 	        (store_random_in_range, ":town", 0,4),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_edoras"),
 	        		(assign, reg0, "p_town_edoras"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_east_emnet"),
 	        		(assign, reg0, "p_town_east_emnet"),
 	        	(else_try),
 	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_eastfold"),
 	        		(assign, reg0, "p_town_eastfold"),
 	        	(else_try),
+	        		(eq, ":town",3),
+	        		(party_is_active, "p_town_eastfold"),
 	        		(assign, reg0, "p_town_west_emnet"),
+	        	(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## Gondor Region
@@ -21144,15 +21314,22 @@ command_cursor_scripts = [
 	    	(store_random_in_range, ":town", 0,4),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_minas_tirith"),
 	        		(assign, reg0, "p_town_minas_tirith"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_pelargir"),
 	        		(assign, reg0, "p_town_pelargir"),
 	        	(else_try),
 	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_linhir"),
 	        		(assign, reg0, "p_town_linhir"),
 	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_lossarnach"),
 	        		(assign, reg0, "p_town_lossarnach"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## Center Region
@@ -21161,15 +21338,22 @@ command_cursor_scripts = [
 	   			(store_random_in_range, ":town", 0,4),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_caras_galadhon"),
 	        		(assign, reg0, "p_town_caras_galadhon"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_imladris_camp"),
 	        		(assign, reg0, "p_town_imladris_camp"),
 	        	(else_try),
 	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_beorn_house"),
 	        		(assign, reg0, "p_town_beorn_house"),
 	        	(else_try),
+	        		(eq, ":town", 3),
+	        		(party_is_active, "p_town_cerin_dolen"),
 	        		(assign, reg0, "p_town_cerin_dolen"),
+    			(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## Mirkwood Region
@@ -21178,12 +21362,18 @@ command_cursor_scripts = [
 	    		(store_random_in_range, ":town", 0,3),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_thranduils_halls"),
 	        		(assign, reg0, "p_town_thranduils_halls"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_woodelf_camp"),
 	        		(assign, reg0, "p_town_woodelf_camp"),
 	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_woodelf_camp"),
 	        		(assign, reg0, "p_town_woodelf_west_camp"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## North Region
@@ -21192,20 +21382,33 @@ command_cursor_scripts = [
 	    	(store_random_in_range, ":town", 0,4),
 	    		(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_dale"),
 	        		(assign, reg0, "p_town_dale"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_erebor"),
 	        		(assign, reg0, "p_town_erebor"),
 	        	(else_try),
 	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_woodelf_camp"),
 	        		(assign, reg0, "p_town_esgaroth"),
 	        	(else_try),
+	        		(eq, ":town", 3),
+	        		(party_is_active, "p_town_ironhill_camp"),
 	        		(assign, reg0, "p_town_ironhill_camp"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 	    (else_try),
 
 	## Everything else, target Gondor
-	    	(assign, reg0, "p_town_minas_tirith"),
+			(try_begin),
+				(party_is_active, "p_town_minas_tirith"),
+		    	(assign, reg0, "p_town_minas_tirith"),
+	    	(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+	        (try_end),
+
 	    (try_end), 
 
  ## End Evil side
@@ -21219,15 +21422,22 @@ command_cursor_scripts = [
 	        (store_random_in_range, ":town", 0,4),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_isengard"),
 	        		(assign, reg0, "p_town_isengard"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_dunland_camp"),
 	        		(assign, reg0, "p_town_dunland_camp"),
 	        	(else_try),
 	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_urukhai_outpost"),
 	        		(assign, reg0, "p_town_urukhai_outpost"),
 	        	(else_try),
+	        		(eq, ":town", 3),
+	        		(party_is_active, "p_town_urukhai_outpost"),
 	        		(assign, reg0, "p_town_urukhai_r_camp"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## Mordor / Khand / Umbar
@@ -21236,12 +21446,18 @@ command_cursor_scripts = [
 	    	(store_random_in_range, ":town", 0,3),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_minas_morgul"),
 	        		(assign, reg0, "p_town_minas_morgul"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_umbar_camp"),
 	        		(assign, reg0, "p_town_umbar_camp"),
 	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_khand_camp"),
 	        		(assign, reg0, "p_town_khand_camp"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## Center Region
@@ -21250,15 +21466,22 @@ command_cursor_scripts = [
 	   			(store_random_in_range, ":town", 0,4),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_dol_guldur"),
 	        		(assign, reg0, "p_town_dol_guldur"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_gundabad"),
 	        		(assign, reg0, "p_town_gundabad"),
 	        	(else_try),
 	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_moria"),
 	        		(assign, reg0, "p_town_moria"),
 	        	(else_try),
+	        		(eq, ":town", 3),
+	        		(party_is_active, "p_town_moria"),
 	        		(assign, reg0, "p_town_goblin_south_outpost"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## Mirkwood Region
@@ -21267,12 +21490,18 @@ command_cursor_scripts = [
 	    		(store_random_in_range, ":town", 0,3),
 	        	(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_gundabad_m_outpost"),
 	        		(assign, reg0, "p_town_gundabad_m_outpost"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_dol_guldur"),
 	        		(assign, reg0, "p_town_dol_guldur"),
 	        	(else_try),
+	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_rhun_south_camp"),
 	        		(assign, reg0, "p_town_rhun_south_camp"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## North
@@ -21281,27 +21510,147 @@ command_cursor_scripts = [
 	    	(store_random_in_range, ":town", 0,4),
 	    		(try_begin),
 	        		(eq, ":town", 0),
+	        		(party_is_active, "p_town_morannon"),
 	        		(assign, reg0, "p_town_morannon"),
 	        	(else_try),
 	        		(eq, ":town", 1),
+	        		(party_is_active, "p_town_rhun_main_camp"),
 	        		(assign, reg0, "p_town_rhun_main_camp"),
 	        	(else_try),
 	        		(eq, ":town", 2),
+	        		(party_is_active, "p_town_goblin_north_outpost"),
 	        		(assign, reg0, "p_town_goblin_north_outpost"),
 	        	(else_try),
+	        		(eq, ":town", 3),
+	        		(party_is_active, "p_town_rhun_north_camp"),
 	        		(assign, reg0, "p_town_rhun_north_camp"),
+        		(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
 	        	(try_end),
 
 	## Everything else, target Mordor
 		(else_try),
-			(assign, reg0, "p_town_morannon"),
+			(try_begin),
+				(party_is_active, "p_town_morannon"),
+		    	(assign, reg0, "p_town_morannon"),
+	    	(else_try),
+	        		(call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
+	        (try_end),
 		(try_end), 
 	## End Good Side Targets
 	(try_end), #end Script
 ]),
 
+# script_safe_remove_party
+# kills a party, but checks that it is a spawned party, to avoid corruption
+# INPUT: param1: Party-id
 
-        
+  ("safe_remove_party", [
+  	(store_script_param_1, ":party_id"),
+
+  	(str_store_party_name, s1, ":party_id"),
+
+  	(try_begin),
+  		(eq, "$cheat_mode",1),
+  		(neg|party_is_active, ":party_id"),
+  		#(display_message, "@DEBUG: Removing INVALID party {s1}"),
+  	(try_end),
+
+  	(try_begin),
+  		(is_between, ":party_id","p_main_party", "p_scribble_242"),
+  		(disable_party, ":party_id"),
+  		(tutorial_box, "@INVALID PARTY BEING REMOVED! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
+		(try_begin),
+			(eq, "$cheat_mode",1),
+			#(display_message, "@{s1} disabled"),
+		(try_end),
+	(else_try),
+		(remove_party, ":party_id"),
+		(try_begin),
+			(eq, "$cheat_mode",1),
+			#(display_message, "@{s1} removed"),
+		(try_end),
+	(try_end),
+  ]),
+
+#############################  TLD CHEAP PARTY HANDLING  #############################?#
+# Objective: spawn fewer parties, to try avoiding corruption
+#
+# How to use:
+#   every time you want to "remove_party" a party, call "script_remove_party" instead.
+#   every time you want to "spawn_around_party" a party, call "script_spawn_around_party" instead.
+#
+# Effect: on removal, party aren't removed, they are just disabled and go dormant. 
+#         on creation, if there's a dormant parties of the same tamplate, it is revived and used.
+
+("remove_party",[
+    (store_script_param_1, ":party"),
+    
+    (party_set_slot, ":party", slot_party_dormant, 1),
+    (party_clear, ":party", slot_party_dormant, 1),
+    (party_add_members, ":party", "trp_dormant", 1),
+    (disable_party, ":party"), # hide it
+
+    #Debug
+    (try_begin),
+    	(eq, "$cheat_mode", 1),
+    	(str_store_party_name, s1, ":party"),
+    	(display_message, "@DEBUG: {s1} made dormant."),
+    (try_end),
+]),
+
+("spawn_around_party",[
+    (store_script_param_1, ":around"),
+    (store_script_param_2, ":pt"),
+    
+    # look for a suitable dormant party
+    (assign, ":found", -1),
+    (try_for_parties, ":party"),
+        (lt, ":found", 0),  # didn't find it yet
+        (neg|party_is_active, ":party"),  
+        (party_slot_eq, ":party", slot_party_dormant, 1),
+        (party_get_template_id, ":x", ":party"),(eq, ":x", ":pt"), 
+        (assign, ":found", ":party"),
+    (try_end),
+    
+    (try_begin), 
+        (ge, ":found", 0), 
+        # dormant party found: use it!
+        (party_clear, ":found"),
+        (party_add_template, ":found", ":pt"),
+        (party_set_slot, ":party", slot_party_dormant, 0),
+        (enable_party, ":found"), 
+        (assign, reg0, ":found"),
+        (party_relocate_near_party, reg0, ":around", 2), # use "$dormant_spawn_radius" instead of 2 when we start using the new script below
+
+        #Debug
+        (try_begin),
+        	(eq, "$cheat_mode", 1),
+        	(str_store_party_name, s1, reg0),
+        	(str_store_party_name, s2, ":around"),
+        	(display_message, "@DEBUG: Dormant {s1} spawned around {s2}"),
+        (try_end),
+
+    (else_try),
+        # dormant party not found
+        (spawn_around_party, ":around", ":pt"),
+
+        #Debug
+        (try_begin),
+        	(eq, "$cheat_mode", 1),
+        	(str_store_party_name, s1, reg0),
+        	(str_store_party_name, s2, ":around"),
+        	(display_message, "@DEBUG: No Dormant {s1} found. Creating one near {s2}"),
+        (try_end),
+    (try_end),
+]),
+
+("set_spawn_radius",[
+  (store_script_param_1, ":x"),
+  
+  (assign, "$dormant_spawn_radius", ":x"),
+  (set_spawn_radius, ":x"),
+]),
 
 ]
 

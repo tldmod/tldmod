@@ -211,7 +211,7 @@ scene_props = [
 ("destroy_bridge_b",0,"destroy_bridge_b","bo_destroy_bridge_b", []),  
   ("destroy_bridge_b_E",0,"destroy_bridge_b","0", []), 
   
-("Catapult",0,"Catapult","bo_Catapult", []),
+("Catapult",0,"catapult","bo_catapult", []),
 ("broom",0,"broom","0", []),
 ("garlic",0,"garlic","0", []),
 ("garlic_b",0,"garlic_b","0", []),
@@ -1840,7 +1840,7 @@ scene_props = [
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 ("troop_prison_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
@@ -2309,10 +2309,10 @@ scene_props = [
 ("rock_elf", 0, "rock_elf", "bo_rock_elf", []),
 ("rohan_horn", 0, "horn", "0", []),
 ("tunnel_stalactite", 0, "tunnel_stalactite", "bo_tunnel_stalactite", []),
-("fog_scene",sokf_invisible,"f0_pointer","0",[(ti_on_init_scene_prop,[
+("fog_scene",0,"0","0",[(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
   (prop_instance_get_position, pos1, ":instance_no"),
-  (particle_system_add_new,"psys_scene_fog",pos1)]),]),
+  (particle_system_add_new,"psys_scene_fog",pos1)]),]), #InVain changed this so the fog actually shows up!
 ("elf_galadriel_table", 0, "galadriel_table", "0", []),
 ("elf_lamp_lorien_1", 0, "lamp_lorien_1", "0", []),
 ("elf_lamp_lorien_2", 0, "lamp_lorien_2", "0", []),
@@ -2445,8 +2445,7 @@ scene_props = [
 ("Dale_castle_courtyard_house_extension_b_E",0,"Dale_castle_courtyard_house_extension_b","0", []),
 ("Dale_castle_courtyard_entry_b",0,"Dale_courtyard_entry_b","bo_Dale_courtyard_entry_b", []),
 ("Dale_castle_courtyard_house_b",0,"Dale_castle_courtyard_house_a","bo_castle_courtyard_house_b", []),
-("distant_mountain_snow_1",0,"distant_mountain_snow_1","0", []),
-("distant_mountain_snow_2",0,"distant_mountain_snow_2","0", []),
+
 
 # wb ships
   ( "ship"                                       ,0,"ship","bo_ship",[]),
@@ -2459,7 +2458,10 @@ scene_props = [
 
 ] or []) + [
 
-("osgiliath_far_f",0,"osgiliath_far","0", []),
+("distant_mountain_snow_1",0,"distant_mountain_snow_1","0", []), #InVain: These two were WB only before. Moved them out of the script to make them available in MB.
+("distant_mountain_snow_2",0,"distant_mountain_snow_2","0", []),
+
+("osgiliath_far_f",0,"osgiliath_far","0", []),   
 ("hill",0,"hill","bo_hill", []),
 ("water_river",0,"JB_water_plane","0", []),
 ("water_fall",0,"water_fall","0", []),
@@ -2512,6 +2514,28 @@ scene_props = [
     (particle_system_add_new, "psys_water_run"),
     ]),
     ]),
+
+#InVain re-used map icons for ambience scenes start
+("distant_place_dolamroth",0,"prop_dolamroth","0", []),
+("distant_place_edoras",0,"prop_Edoras","0", []),
+("distant_place_Helmsdeep",0,"prop_Helms_Deep","0", []),
+("distant_place_Morannon",0,"prop_Morannon","0", []),
+
+("distant_place_Dolguldur",0,"prop_dolguldur", "0", [(ti_on_scene_prop_init,
+            [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
+       (else_try),                      (set_fog_distance,700,0x77BBB2),
+       (try_end),])]),	   
+#InVain re-used map icons for ambience scenes end
+	
+#InVain from 'particles_2.brf': some vanilla M&B items/props
+	( "honey_pot"                                  ,0,"honey_pot","0",[]),
+	( "butter_pot"                                 ,0,"butter_pot","0",[]),
+	( "apple_basket"                               ,0,"apple_basket","bo_apple_basket",[]),
+	( "sausages"                                   ,0,"sausages","0",[]),
+	( "boat_sail_on"                               ,0,"boat_sail_on","0",[]),
+	( "boat_sail_off"                              ,0,"boat_sail_off","0",[]),
+
+
 #InVain props end
 
 ("save_compartibility1",0,"0","0", []),

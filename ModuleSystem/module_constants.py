@@ -106,6 +106,8 @@ region_s_mirkwood = 35
 region_above_mirkwook = 36
 region_grey_mountains = 37
 region_mordor = 38
+region_dimrill = 39 #InVain
+region_s_erebor = 40 #InVain
 
 
 
@@ -2337,3 +2339,9 @@ slot_agent_rider_agent = 304
 
 #War Council Slots
 slot_faction_war_council = 305
+
+#New Party Creation/Removal system
+slot_party_dormant = 306
+
+
+

@@ -253,3 +253,4 @@ pt_scout_camp_large = 251
 pt_beorn_caravan = 252
 pt_orc_horde = 253
 pt_vet_archer = 254
+pt_volunteers = 255

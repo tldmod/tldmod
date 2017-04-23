@@ -445,5 +445,29 @@ scenes = [
 ("village_anduin",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000037220db18006a5aa000061bc80003a9600004852",  [],[],"outer_terrain_plain"),
 ("village_north",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003926c9370007b5ed00006fbf0000026d00001a96",  [],[],"outer_terrain_plain"),
 
+## In Vain New Ambience Scenes Cont'd (Most versions are identical scenes with changed spawn positions)
+("osgiliath_outskirts_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
+("osgiliath_outskirts_3",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
+("osgiliath_outskirts_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
+("edoras_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
+("edoras_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
+("hornburg_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"JB_outer_mountains2south_helmsdeep"),
+("hornburg_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"JB_outer_mountains2south_helmsdeep"),
+("dolamroth_outside_1",sf_generate|sf_randomize|sf_auto_entry_points,"none", "none", (0,0),(100,100),-100,"0x00000002ab0794b10005153c00005c3000004b3400005792",  [],[],"outer_terrain_seaside_1"), #Dublicates for now, might make the scenes non-randomized, later, so I'll need two for variety
+("dolamroth_outside_2",sf_generate|sf_randomize|sf_auto_entry_points,"none", "none", (0,0),(100,100),-100,"0x00000002ab0794b10005153c00005c3000004b3400005792",  [],[],"outer_terrain_seaside_1"),
+("morannon_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b01489340005014000002601000021f700001290",  [],[],"JB_outer_mountains2south_morannon"),
+("morannon_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b01489340005014000002601000021f700001290",  [],[],"JB_outer_mountains2south_morannon"),
+("dolguldur_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b01917000004e93c00007b15000077bd00004d24",  [],[],"JB_outer_mountains2east_mordor"),
+("dolguldur_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001b01917000004e93c00007b15000077bd00004d24",  [],[],"JB_outer_mountains2east_mordor"),
+("beorn_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b322c90d0005a96a000048850000786900001ef5",  [],[],"outer_terrain_plain"),
+("beorn_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000b322c90d0005a96a000048850000786900001ef5",  [],[],"outer_terrain_plain"),
+("moria_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002000050000075dde00000863000041e20000070c",  [],[],"JB_outer_mountains2west"),
+("moria_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002000050000075dde00000863000041e20000070c",  [],[],"JB_outer_mountains2west"),
+("dimrill_dale" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 100, 100),-100.0,"0x00000002d00d16e38005c57300000863000041e20000739d",[],[],"JB_outer_mountains2west"),
+("carrock_nearby_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
+("carrock_nearby_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
+("esgaroth_outside_1",sf_generate|sf_randomize,"none", "none", (0,0),(100,100),-100,"0x00000003a7268ca70005715f00003feb00005bd50000739d",  [],[],"JB_outer_terrain_seaside_west"),
+("esgaroth_outside_2",sf_generate|sf_randomize,"none", "none", (0,0),(100,100),-100,"0x00000003a7268ca70005715f00003feb00005bd50000739d",  [],[],"JB_outer_terrain_seaside_west"),
+("s_erebor" ,sf_generate|sf_randomize|sf_auto_entry_points,"none","none",(0,0),( 100, 100),-100.0,"0x00000003a7268ca70005715f00003feb00005bd50000739d",[],[],"outer_terrain_plain"),
 ]
 

@@ -273,6 +273,8 @@ parties = [
   ("calenhad","Calenhad",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-18.36, 10.32),[],170),
   ("amon_anwar","Amon_Anwar",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-13.57, 6.69), [],170),
 
+  #Kham test
+  ("scout_party","Scout_Party",icon_footman_gondor, no_menu, pt_gondor_scouts,fac_gondor,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_squire_of_gondor,1,0)]),
 
  # add extra towns before this point 
   ("spawn_points_end","last_spawn_point",pf_disabled|pf_is_static, no_menu, pt_none, fac_commoners,0,ai_bhvr_hold,0,(-7.746731,1.880096),[(trp_looter,15,0)]),

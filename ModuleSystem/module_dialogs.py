@@ -344,21 +344,168 @@ dialogs = [
 [anyone|plyr, "hobbit_general_talk_1", [(troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 0),(troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 0),], 
 	"Say. I think I never seen one of your kind.","hobbit_general_talk_first_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
 
-[anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_pippin_notmet"), (troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Edoras.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
+#Kham Hobbit Changes Begin
 
-[anyone|plyr, "hobbit_general_talk_1", [(eq, "$g_talk_troop", "trp_merry_notmet"), (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 1),], "Say. I think I've met another one like you, in Minas Tirith.","hobbit_general_talk_second_met",[(troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] ],
+[anyone|plyr, "hobbit_general_talk_1", [
+  (eq, "$g_talk_troop", "trp_pippin_notmet"), 
+  (troop_slot_eq, "trp_merry_notmet", slot_troop_met_previously, 1)], 
+    "Say. I think I've met another one like you, in Edoras.","hobbit_general_talk_second_met",[
+      (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1)] 
+],
 
-[anyone,  "hobbit_general_talk_first_met", [], "I know. I came from afar! I'm a Hobbit, {sir/madam}, from the Shire.","hobbit_general_talk_3",[] ],
 
-[trp_merry_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Peregrin Took, or Pippin, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Pippin, I wonder how he is doing in Minas Tirith.","hobbit_general_talk_3",[] ],
+[anyone|plyr, "hobbit_general_talk_1", [
+  (eq, "$g_talk_troop", "trp_merry_notmet"), 
+  (troop_slot_eq, "trp_pippin_notmet", slot_troop_met_previously, 1)], 
+    "Say. I think I've met another one like you, in Minas Tirith.","hobbit_general_talk_second_met",[
+      (troop_set_slot, "$g_talk_troop", slot_troop_met_previously, 1),] 
+  ],
 
-[trp_pippin_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Meriadoc Brandybuck, or Merry, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Merry, I wonder how he is doing back in Edoras.","hobbit_general_talk_3",[] ],
+[anyone,  "hobbit_general_talk_first_met", [], 
+  "I know. I came from afar! I'm a Hobbit, {sir/madam}, from the Shire.","hobbit_general_talk_3",[] ],
+
+[trp_merry_notmet,   "hobbit_general_talk_second_met", [], 
+  "Oh, that must have been my dear cousin! Peregrin Took, or Pippin, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Pippin, I wonder how he is doing in Minas Tirith.","hobbit_general_talk_ask",[] ],
+
+[trp_pippin_notmet,   "hobbit_general_talk_second_met", [], "Oh, that must have been my dear cousin! Meriadoc Brandybuck, or Merry, how they call him. We are Hobbits, {sir/madam}, and we come from the Shire, both of us! Good old Merry, I wonder how he is doing back in Edoras.","hobbit_general_talk_ask",[] ],
+
+##Kham - Hobbit request START
+
+[anyone,   "hobbit_general_talk_ask", [], 
+  "May I ask a favour of you, {my lord/my lady}.","hobbit_general_talk_ask_1",[] ],
+
+[anyone|plyr,   "hobbit_general_talk_ask_1", [
+  (try_begin),
+    (eq, "$g_talk_troop", "trp_merry_notmet"),
+    (str_store_string, s1, "@Merry"),
+  (else_try),
+    (str_store_string, s1, "@Pippin"),
+  (try_end)], 
+    "Of course, {s1}. What is it?","hobbit_general_talk_ask_2",[] 
+],
+
+[anyone,   "hobbit_general_talk_ask_2", [
+  (try_begin),
+    (eq, "$g_talk_troop", "trp_merry_notmet"),
+    (str_store_string, s1, "@Pippin"),
+    (str_store_string, s2, "@the Citadel"),
+    (str_store_string, s3, "@Minas Tirith"),
+    (str_store_string, s4, "@Steward Denethor"),
+  (else_try),
+    (str_store_string, s1, "@Merry"),
+    (str_store_string, s2, "@Golden Hall"),
+    (str_store_string, s3, "@Edoras"),
+    (str_store_string, s4, "@King Theoden"),
+  (try_end)],
+    "Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.","hobbit_general_talk_ask_3",[] 
+],
+
+[anyone|plyr,   "hobbit_general_talk_ask_3", [
+  (try_begin),
+    (eq, "$g_talk_troop", "trp_merry_notmet"),
+    (str_store_string, s1, "@Minas Tirith"),
+  (else_try),
+    (str_store_string, s1, "@Edoras"),
+  (try_end)], 
+  "I will be passing by {s1} and will be glad to pass on this message to your cousin.","hobbit_general_talk_ask_accept",[
+    (setup_quest_text, "qst_deliver_message_hobbit"),
+    (try_begin),
+      (eq, "$g_talk_troop", "trp_merry_notmet"),
+      (str_store_string, s2, "@Merry asked you to deliver a message to his cousin, Pippin, in Minas Tirith."),
+    (else_try),
+      (str_store_string, s2, "@Pippin asked you to deliver a message to his cousin, Merry, in Edoras."),
+    (try_end),
+    (call_script, "script_start_quest", "qst_deliver_message_hobbit", "$g_talk_troop")] 
+],
+
+[anyone|plyr,   "hobbit_general_talk_ask_3", [
+  (try_begin),
+    (eq, "$g_talk_troop", "trp_merry_notmet"),
+    (str_store_string, s1, "@Merry"),
+  (else_try),
+    (str_store_string, s1, "@Pippin"),
+  (try_end)], 
+    "I'm sorry, {s1}, but I do not have the time.","hobbit_general_talk_ask_reject",[] 
+
+],
+
+
+[anyone,   "hobbit_general_talk_ask_accept", [
+  (store_random_in_range, ":random", 0, 3),
+  (try_begin),
+    (eq, "$g_talk_troop", "trp_merry_notmet"),
+    (try_begin),
+      (eq, ":random", 0),
+      (str_store_string, s1, "@Tell him I've grown another inch!"),
+    (else_try),
+      (eq, ":random", 1),
+      (str_store_string, s1, "@Tell Pip he smokes too much!"),
+    (else_try),
+      (str_store_string, s1, "@Tell him I can ride a grown horse now!"),
+    (try_end),
+  (else_try),
+    (try_begin),
+      (eq, ":random", 0),
+      (str_store_string, s1, "@Ask him if he has any pipe-weed left!"),
+    (else_try),
+      (eq, ":random", 1),
+      (str_store_string, s1, "@Tell him I'll be the tall one when we see each other again!"),
+    (else_try),
+      (eq, ":random", 2),
+      (str_store_string, s1, "@Ask if he's seen Gandalf!"),
+    (try_end),
+  (try_end)], 
+    "Thanks! {s1}","close_window",[(call_script, "script_stand_back")] 
+],
+
+
+[anyone,   "hobbit_general_talk_ask_reject", [
+  (try_begin),
+    (eq, "$g_talk_troop", "trp_merry_notmet"),
+    (str_store_string, s1, "@Minas Tirith"),
+  (else_try),
+    (str_store_string, s1, "@Edoras"),
+  (try_end)], 
+    "I understand. I'll send it to the next caravan to {s1} then.","hobbit_general_talk_3",[] 
+
+],
+
+## Kham - Hobbit Request END
 
 [anyone|plyr,  "hobbit_general_talk_3", [], "Well, goodbye now.","close_window",[  (call_script,"script_stand_back"), ] ],
 
 # phase 2: any other time
 [trp_merry, "start", [], "Welcome back, {playername}!","hobbit_merry_talk_met",[] ],
 [trp_pippin, "start", [], "Welcome back, {playername}!","hobbit_pippin_talk_met",[] ],
+
+##Kham - Hobbit Deliver Start
+
+[anyone|plyr, "hobbit_merry_talk_met", [
+  (check_quest_active, "qst_deliver_message_hobbit")], 
+    "Hello, messer Merry. I have a message here from your cousin, Pippin, in Minas Tirith.","hobbit_deliver_message",[]
+],
+
+[anyone|plyr, "hobbit_pippin_talk_met", [
+  (check_quest_active, "qst_deliver_message_hobbit")], 
+    "Hello, messer Pippin. I have a message here from your cousin, Merry, in Edoras.","hobbit_deliver_message",[]
+],
+
+[anyone, "hobbit_deliver_message", [], 
+  "Thank you, {playername}. It was good of you to bring this to me.","close_window",[
+    (agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand"),
+    (call_script, "script_finish_quest", "qst_deliver_message_hobbit", 100),
+    (add_xp_as_reward, 250),
+    (display_message, "@You gained 250 experience.", color_good_news),
+    (try_begin),
+      (eq, "$g_talk_troop", "trp_merry"),
+      (call_script, "script_add_faction_rps", "fac_rohan", 250),
+    (else_try),
+      (call_script, "script_add_faction_rps", "fac_gondor", 250),
+    (try_end)],
+],
+
+##Kham - Hobbit Deliver End
+##Kham - Hobbit Changes END
 
 [anyone|plyr, "hobbit_merry_talk_met", [], "Hello, messer Merry.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
 [anyone|plyr, "hobbit_pippin_talk_met", [], "Hello, messer Pippin.","close_window",[(agent_set_animation, "$current_player_agent", "anim_cancel_ani_stand")] ],
@@ -502,7 +649,7 @@ dialogs = [
 [anyone,"looters_2_join", [], "We will obey, Master.", "close_window", [
      (call_script,"script_stand_back"),
 	 (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
-     (remove_party, "$g_encountered_party"),
+     (call_script, "script_safe_remove_party", "$g_encountered_party"),
 	 (change_screen_return),
      (assign, "$g_leave_encounter", 1)]],
   
@@ -1415,17 +1562,20 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 	[ (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"), # keep troops only at faction's capital
       # check if first time or depleted, and initialize
       (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
-	  (try_begin),
-		(gt, ":reserve_party", 0),
-		(neg|party_is_active, ":reserve_party"), # depleted
-		(assign, ":reserve_party", 0),
-	  (try_end),
+	 
+    ## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
+    #(try_begin),
+  	#	(gt, ":reserve_party", 0),
+  	#	(neg|party_is_active, ":reserve_party"), # depleted
+   	#	(assign, ":reserve_party", 0),
+	  #(try_end),
+      
       (try_begin),
 		(eq, ":reserve_party", 0), #first time or depleted
-        (spawn_around_party, "$g_encountered_party"),
+        (spawn_around_party, "$g_encountered_party", "pt_volunteers"),
         (assign, ":reserve_party", reg0),
-        (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
-        (party_remove_members, ":reserve_party", "trp_looter", 1),
+        #(party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
+        #(party_remove_members, ":reserve_party", "trp_looter", 1),
         (troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party"),
         (party_attach_to_party, ":reserve_party", "$g_encountered_party"),
         (party_set_name, ":reserve_party", "@{playername}'s Reserves"),
@@ -3757,7 +3907,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (quest_set_slot,"qst_ring_hunters2",slot_quest_current_state,20),
       (call_script,"script_stand_back"),
       (disable_party,"p_ring_hunter_lair"),
-      (remove_party,"$qst_ring_hunter_party"),
+      (call_script, "script_safe_remove_party","$qst_ring_hunter_party"),
       (assign, "$g_leave_encounter",1),
       (change_screen_return),
       ]],
@@ -3793,7 +3943,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    (disable_party,"p_ring_hunter_lair"),
    (assign,"$g_leave_encounter",1),
    (change_screen_map),
-   (remove_party,":beorn_m"),
+   (call_script, "script_safe_remove_party",":beorn_m"),
   ]],
 
 #### Kham Ring Hunters End  ###########
@@ -5045,7 +5195,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       # (call_script, "script_recruit_troop_as_companion", "$g_talk_troop"),
       # (troop_get_slot, ":companions_party","$g_talk_troop", slot_troop_leaded_party),
       # (party_detach, ":companions_party"),
-      # (remove_party, ":companions_party"),
+      # (call_script, "script_safe_remove_party", ":companions_party"),
       # (assign, "$g_leave_encounter",1)]],
 
  #[anyone ,"knight_join_party_join", [], "Excellent.\
@@ -5056,7 +5206,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       # (assign, "$g_move_heroes", 1),
       # (call_script, "script_party_add_party", "p_main_party", ":companions_party"),
       # (party_detach, ":companions_party"),
-      # (remove_party, ":companions_party"),
+      # (call_script, "script_safe_remove_party", ":companions_party"),
       # (assign, "$g_leave_encounter",1)]],
 
  #[anyone ,"knight_join_party_lead_out", [], "Very well then.\
@@ -5112,7 +5262,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
           (assign, "$qst_destroy_scout_camp_party", reg0),
           (assign, ":terrain_check", 1),
         (else_try),
-          (remove_party, reg0),
+          (call_script, "script_safe_remove_party", reg0),
         (try_end),
       (try_end),
       (try_begin), #last ditch effort, if 10 iterations of the above doesnt work, just spawn it, and hope for the best
@@ -6762,7 +6912,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (spawn_around_party, "p_main_party", ":quest_target_party_template"),
        (assign, ":fake_party", reg0),
        (str_store_party_name, s13, ":fake_party"),
-       (remove_party, ":fake_party"),
+       (call_script, "script_safe_remove_party", ":fake_party"),
        (str_store_troop_name_link, s9, "$g_talk_troop"),
        (try_begin),
          (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
@@ -7227,7 +7377,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##[anyone|plyr,"player_old_garrison_encounter", [(party_can_join)],
 ##   "You have done well. You'll join my command now.", "close_window",[(assign, "$g_move_heroes", 1),
 ##                                        (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
-##                                        (remove_party, "$g_encountered_party"),
+##                                        (call_script, "script_safe_remove_party", "$g_encountered_party"),
 ##                                        (assign, "$g_leave_encounter", 1)]],
 ##[anyone|plyr,"player_old_garrison_encounter", [(assign, reg1, 0),
 ##                                                 (try_begin),
@@ -9504,6 +9654,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
       (call_script, "script_end_quest", "qst_deal_with_looters"),
       (try_for_parties, ":cur_party_no"),
+        (party_is_active, ":cur_party_no"),
         (party_get_template_id, ":cur_party_template", ":cur_party_no"),
         (eq, ":cur_party_template", ":looter_template"),
         (party_set_flags, ":cur_party_no", pf_quest_party, 0),
@@ -10594,7 +10745,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		[
 			(call_script, "script_party_add_party_companions", "p_main_party", "$g_encountered_party"),
 			(call_script, "script_party_add_party_prisoners", "p_main_party", "$g_encountered_party"),
-			(remove_party, "$g_encountered_party"),
+			(call_script, "script_safe_remove_party", "$g_encountered_party"),
 			(assign, "$g_leave_encounter",1),			
 		] 
 ],
@@ -10625,7 +10776,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		[
 			(call_script, "script_party_add_party_companions", "p_main_party", "$g_encountered_party"),
 			(call_script, "script_party_add_party_prisoners", "p_main_party", "$g_encountered_party"),
-			(remove_party, "$g_encountered_party"),
+			(call_script, "script_safe_remove_party", "$g_encountered_party"),
 			(assign, "$g_leave_encounter",1)
 		] ],
 

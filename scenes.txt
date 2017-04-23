@@ -1,5 +1,5 @@
 scenesfile version 1
- 316
+ 339
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1261,6 +1261,98 @@ scn_village_anduin village_anduin 256 none none 0 0 100 100 -100 0x0000000037220
   0 
  outer_terrain_plain 
 scn_village_north village_north 256 none none 0 0 100 100 -100 0x000000003926c9370007b5ed00006fbf0000026d00001a96 
+  0 
+  0 
+ outer_terrain_plain 
+scn_osgiliath_outskirts_2 osgiliath_outskirts_2 256 none none 0 0 100 100 -100 0x000000003001c80c0002308c000025df00004ec1000041e7 
+  0 
+  0 
+ outer_terrain_flat 
+scn_osgiliath_outskirts_3 osgiliath_outskirts_3 256 none none 0 0 100 100 -100 0x000000003001c80c0002308c000025df00004ec1000041e7 
+  0 
+  0 
+ outer_terrain_flat 
+scn_osgiliath_outskirts_4 osgiliath_outskirts_4 256 none none 0 0 100 100 -100 0x000000003001c80c0002308c000025df00004ec1000041e7 
+  0 
+  0 
+ outer_terrain_flat 
+scn_edoras_outside_1 edoras_outside_1 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_edoras_outside_2 edoras_outside_2 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_hornburg_outside_1 hornburg_outside_1 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
+  0 
+  0 
+ JB_outer_mountains2south_helmsdeep 
+scn_hornburg_outside_2 hornburg_outside_2 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
+  0 
+  0 
+ JB_outer_mountains2south_helmsdeep 
+scn_dolamroth_outside_1 dolamroth_outside_1 1792 none none 0 0 100 100 -100 0x00000002ab0794b10005153c00005c3000004b3400005792 
+  0 
+  0 
+ outer_terrain_seaside_1 
+scn_dolamroth_outside_2 dolamroth_outside_2 1792 none none 0 0 100 100 -100 0x00000002ab0794b10005153c00005c3000004b3400005792 
+  0 
+  0 
+ outer_terrain_seaside_1 
+scn_morannon_outside_1 morannon_outside_1 256 none none 0 0 100 100 -100 0x00000000b01489340005014000002601000021f700001290 
+  0 
+  0 
+ JB_outer_mountains2south_morannon 
+scn_morannon_outside_2 morannon_outside_2 256 none none 0 0 100 100 -100 0x00000000b01489340005014000002601000021f700001290 
+  0 
+  0 
+ JB_outer_mountains2south_morannon 
+scn_dolguldur_outside_1 dolguldur_outside_1 256 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
+  0 
+  0 
+ JB_outer_mountains2east_mordor 
+scn_dolguldur_outside_2 dolguldur_outside_2 256 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
+  0 
+  0 
+ JB_outer_mountains2east_mordor 
+scn_beorn_outside_1 beorn_outside_1 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a000048850000786900001ef5 
+  0 
+  0 
+ outer_terrain_plain 
+scn_beorn_outside_2 beorn_outside_2 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a000048850000786900001ef5 
+  0 
+  0 
+ outer_terrain_plain 
+scn_moria_outside_1 moria_outside_1 256 none none 0 0 100 100 -100 0x000000002000050000075dde00000863000041e20000070c 
+  0 
+  0 
+ JB_outer_mountains2west 
+scn_moria_outside_2 moria_outside_2 256 none none 0 0 100 100 -100 0x000000002000050000075dde00000863000041e20000070c 
+  0 
+  0 
+ JB_outer_mountains2west 
+scn_dimrill_dale dimrill_dale 1792 none none 0 0 100 100 -100 0x00000002d00d16e38005c57300000863000041e20000739d 
+  0 
+  0 
+ JB_outer_mountains2west 
+scn_carrock_nearby_1 carrock_nearby_1 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_carrock_nearby_2 carrock_nearby_2 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_esgaroth_outside_1 esgaroth_outside_1 768 none none 0 0 100 100 -100 0x00000003a7268ca70005715f00003feb00005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_seaside_west 
+scn_esgaroth_outside_2 esgaroth_outside_2 768 none none 0 0 100 100 -100 0x00000003a7268ca70005715f00003feb00005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_seaside_west 
+scn_s_erebor s_erebor 1792 none none 0 0 100 100 -100 0x00000003a7268ca70005715f00003feb00005bd50000739d 
   0 
   0 
  outer_terrain_plain 
