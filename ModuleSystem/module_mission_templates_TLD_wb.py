@@ -661,7 +661,7 @@ kham_archer_hold_fire = (1, 0, ti_once, [],
           (eq, "$cheat_mode",1),
           (eq,":counter",0),
           (assign, reg1, ":distance"),
-          (display_message, "@DEBUG: Distance: {reg1}"),
+         # (display_message, "@DEBUG: Distance: {reg1}"),
         (end_try),
 
         (ge, ":distance", 7000),

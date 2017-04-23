@@ -353,7 +353,7 @@ simple_triggers = [
     (try_begin),
       (eq, "$cheat_mode",1),
       (assign, reg3, ":removed_empty_parties"),
-      (display_message, "@DEBUG: Removed Parties: {reg3}", color_bad_news),
+      #(display_message, "@DEBUG: Removed Parties: {reg3}", color_bad_news),
     (try_end),
     
     ]),

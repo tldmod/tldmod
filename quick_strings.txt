@@ -1,4 +1,4 @@
-1339
+1335
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -551,10 +551,7 @@ qstr_Debug:_Theater_SW Debug:_Theater_SW
 qstr_Debug:_Theater_C Debug:_Theater_C
 qstr_Debug:_Theater_N Debug:_Theater_N
 qstr_Debug:_Can_t_Find Debug:_Can't_Find
-qstr_DEBUG:_Removing_INVA DEBUG:_Removing_INVALID_party_{s1}
 qstr_INVALID_PARTY_BEING_ INVALID_PARTY_BEING_REMOVED!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
-qstr_{s1}_disabled {s1}_disabled
-qstr_{s1}_removed {s1}_removed
 qstr_DEBUG:_{s1}_made_dor DEBUG:_{s1}_made_dormant.
 qstr_DEBUG:_Dormant_{s1}_ DEBUG:_Dormant_{s1}_spawned_around_{s2}
 qstr_DEBUG:_No_Dormant_{s DEBUG:_No_Dormant_{s1}_found._Creating_one_near_{s2}
@@ -942,7 +939,6 @@ qstr_Breaking_camp... Breaking_camp...
 qstr_You_have_left_{s1}. You_have_left_{s1}.
 qstr_You_are_entering_{s1 You_are_entering_{s1}_({s2}).
 qstr_You_are_entering_{s1} You_are_entering_{s1}.
-qstr_DEBUG:_Removed_Parti DEBUG:_Removed_Parties:_{reg3}
 qstr_The_war_expands_comm The_war_expands,_commanders_are_getting_bolder!_(siege_requirements_reduced)
 qstr_Your_party_is_spotte Your_party_is_spotted_by_{s1}.
 qstr_Party_has_nothing_to Party_has_nothing_to_eat!
