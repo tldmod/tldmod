@@ -10188,7 +10188,7 @@ scripts = [
 		(eq,":landmark","p_town_dol_amroth"), 
 		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
 		(store_random_in_range, ":scene_to_use", "scn_dolamroth_outside_1", "scn_morannon_outside_1"),
-		(assign, "$bs_day_sound", "snd_seaside_occasional"),
+#		(assign, "$bs_day_sound", "snd_seaside_occasional"),
 	(else_try),
 		(eq,":landmark","p_town_morannon"), 
 		(store_random_in_range, ":scene_to_use", "scn_morannon_outside_1", "scn_dolguldur_outside_1"),
@@ -10202,7 +10202,7 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_beorn_house"), 
 		(store_random_in_range, ":scene_to_use", "scn_beorn_outside_1", "scn_moria_outside_1"),
-		(assign, "$bs_day_sound", "snd_beorn_occasional"),
+#		(assign, "$bs_day_sound", "snd_beorn_occasional"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":landmark","p_town_moria"), #InVain: Keep this BEFORE region_dimrill!

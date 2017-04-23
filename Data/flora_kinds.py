@@ -984,7 +984,15 @@ fauna_kinds = [
   [['Jaakko_new_cypress', 'bo_Jaakko_new_cypress'],
    ['Jaakko_new_cypress2', 'bo_Jaakko_new_cypress2'],
    ]),    
-   
+
+ ('grass_flower_white_nofade',
+  0,
+  [['PW_grass_flower_c_xx', '0'], ['PW_grass_flower_c_xx', '0']]),
+
+ ('grass_flower_yellow_nofade',
+  0,
+  [['PW_grass_flower_e_xx', '0'], ['PW_grass_flower_e_xx', '0']]),
+      
   ]
 
 
