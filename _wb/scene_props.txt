@@ -219,7 +219,7 @@ spr_destroy_bridge_b 0 0 destroy_bridge_b bo_destroy_bridge_b 0
 spr_destroy_bridge_b_E 0 0 destroy_bridge_b 0 0
 
 
-spr_Catapult 0 0 Catapult bo_Catapult 0
+spr_Catapult 0 0 catapult bo_Catapult 0
 
 
 spr_broom 0 0 broom 0 0

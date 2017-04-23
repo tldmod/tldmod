@@ -1662,7 +1662,7 @@ mission_templates = [ # not used in game
       (faction_set_slot,"fac_beorn",slot_faction_strength_tmp,":loss"),
       (faction_set_slot,"fac_mordor",slot_faction_strength_tmp,":evil"),
       (disable_party,"p_ring_hunter_lair"),
-      (remove_party,"$qst_ring_hunter_party"),
+      (call_script, "script_safe_remove_party","$qst_ring_hunter_party"),
       (cancel_quest, "qst_ring_hunters"),
       (finish_mission),
     (try_end),

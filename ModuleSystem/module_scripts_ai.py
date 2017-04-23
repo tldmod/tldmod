@@ -2404,7 +2404,7 @@ ai_scripts = [
         			(gt, ":volunteers", 0),
         			(party_is_active, ":volunteers"),
         			(party_detach, ":volunteers"),
-        			(remove_party, ":volunteers"),
+        			(call_script, "script_safe_remove_party", ":volunteers"),
 			(try_end),
                     (disable_party, ":adv_camp"),
                   (try_end),
@@ -2576,7 +2576,7 @@ ai_scripts = [
         
          (party_set_position, "p_temp_party", pos1),
          (party_get_current_terrain, ":terrain_type", "p_temp_party"),
-         #(remove_party, ":fake_party"),
+         #(call_script, "script_safe_remove_party", ":fake_party"),
          #check for impassable terrain
          (this_or_next|eq, ":terrain_type", rt_water),
          (this_or_next|eq, ":terrain_type", rt_mountain),
@@ -2635,7 +2635,7 @@ ai_scripts = [
         (gt, ":volunteers", 0),
         (party_is_active, ":volunteers"),
         (party_detach, ":volunteers"),
-        (remove_party, ":volunteers"),
+        (call_script, "script_safe_remove_party", ":volunteers"),
 	(try_end),
     
     # remove player's reserves, if player's capital is destroyed
@@ -2645,7 +2645,7 @@ ai_scripts = [
       (gt, ":reserve_party", 0),
       (party_is_active, ":reserve_party"),
       (party_detach, ":reserve_party"),
-      (remove_party, ":reserve_party"),
+      (call_script, "script_safe_remove_party", ":reserve_party"),
 	(try_end),
     
 	# detach all attached parties, in case there are parties in the camp

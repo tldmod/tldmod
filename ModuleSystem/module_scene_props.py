@@ -211,7 +211,7 @@ scene_props = [
 ("destroy_bridge_b",0,"destroy_bridge_b","bo_destroy_bridge_b", []),  
   ("destroy_bridge_b_E",0,"destroy_bridge_b","0", []), 
   
-("Catapult",0,"Catapult","bo_Catapult", []),
+("Catapult",0,"catapult","bo_Catapult", []),
 ("broom",0,"broom","0", []),
 ("garlic",0,"garlic","0", []),
 ("garlic_b",0,"garlic_b","0", []),

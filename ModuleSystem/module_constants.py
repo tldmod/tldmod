@@ -2337,3 +2337,9 @@ slot_agent_rider_agent = 304
 
 #War Council Slots
 slot_faction_war_council = 305
+
+#New Party Creation/Removal system
+slot_party_dormant = 306
+
+
+

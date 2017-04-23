@@ -649,7 +649,7 @@ dialogs = [
 [anyone,"looters_2_join", [], "We will obey, Master.", "close_window", [
      (call_script,"script_stand_back"),
 	 (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
-     (remove_party, "$g_encountered_party"),
+     (call_script, "script_safe_remove_party", "$g_encountered_party"),
 	 (change_screen_return),
      (assign, "$g_leave_encounter", 1)]],
   
@@ -1562,17 +1562,20 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 	[ (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"), # keep troops only at faction's capital
       # check if first time or depleted, and initialize
       (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
-	  (try_begin),
-		(gt, ":reserve_party", 0),
-		(neg|party_is_active, ":reserve_party"), # depleted
-		(assign, ":reserve_party", 0),
-	  (try_end),
+	 
+    ## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
+    #(try_begin),
+  	#	(gt, ":reserve_party", 0),
+  	#	(neg|party_is_active, ":reserve_party"), # depleted
+   	#	(assign, ":reserve_party", 0),
+	  #(try_end),
+      
       (try_begin),
 		(eq, ":reserve_party", 0), #first time or depleted
-        (spawn_around_party, "$g_encountered_party"),
+        (spawn_around_party, "$g_encountered_party", "pt_volunteers"),
         (assign, ":reserve_party", reg0),
-        (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
-        (party_remove_members, ":reserve_party", "trp_looter", 1),
+        #(party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
+        #(party_remove_members, ":reserve_party", "trp_looter", 1),
         (troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party"),
         (party_attach_to_party, ":reserve_party", "$g_encountered_party"),
         (party_set_name, ":reserve_party", "@{playername}'s Reserves"),
@@ -3904,7 +3907,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (quest_set_slot,"qst_ring_hunters2",slot_quest_current_state,20),
       (call_script,"script_stand_back"),
       (disable_party,"p_ring_hunter_lair"),
-      (remove_party,"$qst_ring_hunter_party"),
+      (call_script, "script_safe_remove_party","$qst_ring_hunter_party"),
       (assign, "$g_leave_encounter",1),
       (change_screen_return),
       ]],
@@ -3940,7 +3943,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    (disable_party,"p_ring_hunter_lair"),
    (assign,"$g_leave_encounter",1),
    (change_screen_map),
-   (remove_party,":beorn_m"),
+   (call_script, "script_safe_remove_party",":beorn_m"),
   ]],
 
 #### Kham Ring Hunters End  ###########
@@ -5192,7 +5195,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       # (call_script, "script_recruit_troop_as_companion", "$g_talk_troop"),
       # (troop_get_slot, ":companions_party","$g_talk_troop", slot_troop_leaded_party),
       # (party_detach, ":companions_party"),
-      # (remove_party, ":companions_party"),
+      # (call_script, "script_safe_remove_party", ":companions_party"),
       # (assign, "$g_leave_encounter",1)]],
 
  #[anyone ,"knight_join_party_join", [], "Excellent.\
@@ -5203,7 +5206,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       # (assign, "$g_move_heroes", 1),
       # (call_script, "script_party_add_party", "p_main_party", ":companions_party"),
       # (party_detach, ":companions_party"),
-      # (remove_party, ":companions_party"),
+      # (call_script, "script_safe_remove_party", ":companions_party"),
       # (assign, "$g_leave_encounter",1)]],
 
  #[anyone ,"knight_join_party_lead_out", [], "Very well then.\
@@ -5259,7 +5262,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
           (assign, "$qst_destroy_scout_camp_party", reg0),
           (assign, ":terrain_check", 1),
         (else_try),
-          (remove_party, reg0),
+          (call_script, "script_safe_remove_party", reg0),
         (try_end),
       (try_end),
       (try_begin), #last ditch effort, if 10 iterations of the above doesnt work, just spawn it, and hope for the best
@@ -6908,7 +6911,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
        (spawn_around_party, "p_main_party", ":quest_target_party_template"),
        (assign, ":fake_party", reg0),
        (str_store_party_name, s13, ":fake_party"),
-       (remove_party, ":fake_party"),
+       (call_script, "script_safe_remove_party", ":fake_party"),
        (str_store_troop_name_link, s9, "$g_talk_troop"),
        (try_begin),
          (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
@@ -7373,7 +7376,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ##[anyone|plyr,"player_old_garrison_encounter", [(party_can_join)],
 ##   "You have done well. You'll join my command now.", "close_window",[(assign, "$g_move_heroes", 1),
 ##                                        (call_script, "script_party_add_party", "p_main_party", "$g_encountered_party"),
-##                                        (remove_party, "$g_encountered_party"),
+##                                        (call_script, "script_safe_remove_party", "$g_encountered_party"),
 ##                                        (assign, "$g_leave_encounter", 1)]],
 ##[anyone|plyr,"player_old_garrison_encounter", [(assign, reg1, 0),
 ##                                                 (try_begin),
@@ -9650,6 +9653,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (quest_get_slot, ":looter_template", "qst_deal_with_looters", slot_quest_target_party_template),
       (call_script, "script_end_quest", "qst_deal_with_looters"),
       (try_for_parties, ":cur_party_no"),
+        (party_is_active, ":cur_party_no"),
         (party_get_template_id, ":cur_party_template", ":cur_party_no"),
         (eq, ":cur_party_template", ":looter_template"),
         (party_set_flags, ":cur_party_no", pf_quest_party, 0),
@@ -10740,7 +10744,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		[
 			(call_script, "script_party_add_party_companions", "p_main_party", "$g_encountered_party"),
 			(call_script, "script_party_add_party_prisoners", "p_main_party", "$g_encountered_party"),
-			(remove_party, "$g_encountered_party"),
+			(call_script, "script_safe_remove_party", "$g_encountered_party"),
 			(assign, "$g_leave_encounter",1),			
 		] 
 ],
@@ -10771,7 +10775,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		[
 			(call_script, "script_party_add_party_companions", "p_main_party", "$g_encountered_party"),
 			(call_script, "script_party_add_party_prisoners", "p_main_party", "$g_encountered_party"),
-			(remove_party, "$g_encountered_party"),
+			(call_script, "script_safe_remove_party", "$g_encountered_party"),
 			(assign, "$g_leave_encounter",1)
 		] ],
 

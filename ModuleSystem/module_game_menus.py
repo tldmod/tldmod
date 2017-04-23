@@ -3080,10 +3080,10 @@ game_menus = [
     	(display_message, "@Subfac Blackroot set, player given shield!")]),
      ("spawn_static_party",[], "Spawn Static Party Near Player", [
      	(party_relocate_near_party, "p_scout_party", "p_main_party", 5),
-     	(display_message, "@Static Scou Party Spawned!")]),
+     	(display_message, "@Static Scout Party Spawned!")]),
      ("remove_static_party",[], "Clear Static Party Near Player", [
-     	(party_clear, "p_scout_party"),
-     	(display_message, "@Static Party Clear Attempted!")]),
+     	(disable_party, "p_scout_party"),
+     	(display_message, "@Static Party Remove Attempted!")]),
      ("check_if_party_is_active",[], "Is Scout Party Active?", [
      	(try_begin),
      		(party_is_active, "p_scout_party"),
@@ -3142,9 +3142,9 @@ game_menus = [
         ],"Animal ambushes:  {s7}",[
         (store_sub, "$tld_option_animal_ambushes", 1, "$tld_option_animal_ambushes"),(val_clamp, "$tld_option_animal_ambushes", 0, 2)]),
 
-    ("game_options_horse_ko",[(try_begin),(eq,"$show_mount_ko_message",1),(str_store_string, s7, "@ON"),
-									(else_try),(str_store_string, s7, "@OFF"),(try_end),
-        ],"Show fallen rider damage messages:  {s7}",[
+    ("game_options_horse_ko",[(try_begin),(eq,"$show_mount_ko_message",1),(str_store_string, s7, "@All messages"),
+									(else_try),(str_store_string, s7, "@Player damage only"),(try_end),
+        ],"Fallen rider damage messages:  {s7}",[
         (store_sub, "$show_mount_ko_message", 1, "$show_mount_ko_message"),(val_clamp, "$show_mount_ko_message", 0, 2)]),
 
     ("game_options_tweaks",[],"Gameplay tweaks...",[(jump_to_menu, "mnu_camp_tweaks")]),
@@ -8960,10 +8960,10 @@ game_menus = [
 	   (try_begin),
 	   	(check_quest_active,"qst_defend_village"),
 	   	(set_background_mesh, "mesh_town_goodcamp"),
-	   	(str_store_string,s9,"@You see the village being raided by bandits. You get ready to defend them."),
+	   	(str_store_string,s9,"@You see the village being raided by bandits. You ask most of your troops to watch out for other raiders while you take a small group and prepare to defend villagers."),
 	   (else_try),
 	    (set_background_mesh,"mesh_town_evilcamp"),
-	    (str_store_string,s9,"@You see the village you were tasked to raid. You get ready to attack them."),
+	    (str_store_string,s9,"@You see the village you were tasked to raid. You and a small group of your raiders prepare to attack the village so as not to be seen."),
 	   (try_end)],
 
 	 #If Good (Defend Village)
@@ -9114,7 +9114,7 @@ game_menus = [
 	        (jump_to_scene, ":village_scene"),
 	        (change_screen_mission),
 	       ]),
-	   ("go_away",[],"Leave them alone",[(change_screen_map)]),
+	   ("go_away",[],"Leave and regroup for now.",[(change_screen_map)]),
 	 ]),
 
 
@@ -9128,7 +9128,7 @@ game_menus = [
 	        (str_store_string, s9, "@The raiders are defeated! Those few who remain alive and conscious scurry off to the darkness from whence they came, terrified of the villagers and their new champion."),
 			(call_script, "script_succeed_quest", "qst_defend_village"),
 			(party_is_active,"$qst_defend_village_party"),
-			(remove_party,"$qst_defend_village_party"),
+			(call_script, "script_safe_remove_party","$qst_defend_village_party"),
 	      (else_try),
 	      	(check_quest_active,"qst_defend_village"),
 	      	(neq, "$g_battle_result", 1),
@@ -9136,7 +9136,7 @@ game_menus = [
 	        (str_store_string, s9, "@Try as you might, you could not defeat the raiders. They raze the village to the ground and enslave the remaining peasants."),
 	      #  (set_background_mesh, "mesh_draw_victory_orc"),
 	        (party_is_active,"$qst_defend_village_party"),
-	        (remove_party,"$qst_defend_village_party"),
+	        (call_script, "script_safe_remove_party","$qst_defend_village_party"),
 	      (else_try),
 	      	(check_quest_active,"qst_raid_village"),
 	        (eq, "$g_battle_result", 1),
@@ -9144,7 +9144,7 @@ game_menus = [
 			(call_script, "script_succeed_quest", "qst_raid_village"),
 			#(set_background_mesh, "mesh_draw_victory_orc"),
 			(party_is_active,"$qst_raid_village_party"),
-			(remove_party,"$qst_raid_village_party"),
+			(call_script, "script_safe_remove_party","$qst_raid_village_party"),
 		  (else_try),
 			(check_quest_active,"qst_raid_village"),
 	      	(neq, "$g_battle_result", 1),
@@ -9152,7 +9152,7 @@ game_menus = [
 	        (str_store_string, s9, "@You failed to raid the village and you were sent scurrying with your men. You hear the victors cheering as you feel the disapproving gaze of the Eye."),
 	       # (set_background_mesh, "mesh_draw_victory_gondor"),
 	        (party_is_active,"$qst_raid_village_party"),
-	        (remove_party,"$qst_raid_village_party"),
+	        (call_script, "script_safe_remove_party","$qst_raid_village_party"),
 	      (try_end),
 	     ],
 	    [
@@ -9333,7 +9333,7 @@ game_menus = [
 	        (jump_to_scene,":scout_camp_scene"),
 	        (change_screen_mission),
 	       ]),
-	   ("go_away",[],"Leave them alone",[(change_screen_map)]),
+	   ("go_away",[],"Leave and regroup for now.",[(change_screen_map)]),
 	 ]),
 
 
@@ -9347,14 +9347,14 @@ game_menus = [
 			(call_script, "script_succeed_quest", "qst_destroy_scout_camp"),
 			#(set_background_mesh, "mesh_draw_victory_orc"),
 			(party_is_active,"$qst_destroy_scout_camp_party"),
-			(remove_party,"$qst_destroy_scout_camp_party"),
+			(call_script, "script_safe_remove_party","$qst_destroy_scout_camp_party"),
 		  (else_try),
 	      	(neq, "$g_battle_result", 1),
 	        (call_script, "script_fail_quest", "qst_destroy_scout_camp"),
 	        (str_store_string, s9, "@You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck."),
 	       # (set_background_mesh, "mesh_draw_victory_gondor"),
 	        (party_is_active,"$qst_destroy_scout_camp_party"),
-	        (remove_party,"$qst_destroy_scout_camp_party"),
+	        (call_script, "script_safe_remove_party","$qst_destroy_scout_camp_party"),
 	      (try_end),
 	     ],
 	    [
@@ -9674,7 +9674,7 @@ game_menus = [
 	#(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
 	#	(spawn_around_party,"p_main_party",":ptemplate"),
 	#	(store_faction_of_party,":fac", reg0),
-	#	(remove_party, reg0),
+	#	(call_script, "script_safe_remove_party", reg0),
 	#	(eq, ":fac", ":target"),
 	#	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
 	#	(val_add,":count",":n"),

@@ -1877,7 +1877,7 @@ scripts = [
 	(assign, "$tld_option_siege_relax_rate", 100), #50/100/200 : Siege str. req. relaxation rate
 	(assign, "$tld_option_regen_rate", 0), #0,1,2,3 : Str. regen rate: Normal/Halved/Battles only/None
 	(assign, "$tld_option_regen_limit", 500), #500/1000/1500 : Factions don't regen below
-	(assign, "$tld_option_max_parties", 950), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
+	(assign, "$tld_option_max_parties", 1000), #300/350/400/450...900 : Parties don't spawn after this many parties are on map.
 	(assign, "$creature_ambush_counter", 5), # Starts out at 5 to give early game players some peace.	
 	(assign, "$gondor_ai_testing", 0), #kham - Gondor Ai Tweaks
 	(assign, "$gondor_reinforcement_event",0), #kham - Gondor Reinforcement Event
@@ -1889,6 +1889,8 @@ scripts = [
 	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
 	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
 	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - ON by default
+	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
+
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
 	#	(set_position_delta, -3.0,6.0,65.0),
 	#	(party_add_particle_system, ":beacon", "psys_lamp_fire"),
@@ -1950,6 +1952,17 @@ scripts = [
 		#(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_" # Kham - no need to rename as we created an actual party template
 		(party_set_flags, ":volunteers", pf_no_label),
 		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
+		(store_faction_of_party, ":town_fac", ":town"),
+		(try_begin),
+			(faction_slot_eq, ":town_fac", slot_faction_side, faction_side_good),
+			(str_store_string, s4, "@Volunteers"),
+			(str_store_string, s3, "@--- Volunteers ---"),
+		(else_try),
+			(str_store_string, s4, "@Reserves"),
+			(str_store_string, s3, "@--- Reserves ---"),
+		(try_end),
+		(party_set_name, ":volunteers", "@{s4}"),
+		(troop_set_name,  "trp_volunteers", s3),
 	(try_end),
   
   # compute ideal number of volunteers
@@ -2371,8 +2384,12 @@ scripts = [
 						(is_between, ":faction_receiving_prisoners", kingdoms_begin, kingdoms_end),
 						(faction_get_slot, ":prisoner_train_pt", ":faction_receiving_prisoners", slot_faction_prisoner_train),
 						(neq, ":prisoner_train_pt", -1),
-						(set_spawn_radius, 1),
-						(spawn_around_party, ":nonempty_winner_party", ":prisoner_train_pt"),
+						
+						## Kham - we will be using our new dormant party system for prisoner trains
+						#(set_spawn_radius, 1),
+						#(spawn_around_party, ":nonempty_winner_party", ":prisoner_train_pt"),
+
+						(call_script, "script_spawn_around_party", ":nonempty_winner_party", ":prisoner_train_pt"),
 						(assign, ":prisoner_train", reg0),
 						(party_set_faction, ":prisoner_train", ":faction_receiving_prisoners"),
 						(party_set_slot, ":prisoner_train", slot_party_victory_value, ws_p_train_vp),
@@ -8056,7 +8073,7 @@ scripts = [
         (gt, ":volunteers", 0),
         (party_is_active, ":volunteers"),
         (party_detach, ":volunteers"),
-        (remove_party, ":volunteers"),
+        (call_script, "script_safe_remove_party", ":volunteers"),
 	(try_end),
 
       (try_begin),
@@ -8854,6 +8871,7 @@ scripts = [
      (try_for_parties, ":party_no"),
        (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
        (neg|party_is_in_any_town, ":party_no"),
+       (party_is_active, ":party_no"),
        (store_faction_of_party, ":party_faction", ":party_no"),
        (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
@@ -11027,11 +11045,11 @@ scripts = [
         (assign, ":quest_expire_penalty", -3),
         (try_begin),
           (party_is_active, "$qst_follow_spy_spy_party"),
-          (remove_party, "$qst_follow_spy_spy_party"),
+          (call_script, "script_safe_remove_party", "$qst_follow_spy_spy_party"),
         (try_end),
         (try_begin),
           (party_is_active, "$qst_follow_spy_spy_partners_party"),
-          (remove_party, "$qst_follow_spy_spy_partners_party"),
+          (call_script, "script_safe_remove_party", "$qst_follow_spy_spy_partners_party"),
         (try_end),
       (else_try),
         (eq, ":quest_no", "qst_capture_enemy_hero"),
@@ -16483,7 +16501,7 @@ scripts = [
         (try_begin),
           (le, ":num_cattle", ":cur_req"),
           (assign, ":num_added", ":num_cattle"),
-          (remove_party, ":cur_party"),
+          (call_script, "script_safe_remove_party", ":cur_party"),
         (else_try),
           (assign, ":num_added", ":cur_req"),
           (party_remove_members, ":cur_party", "trp_cattle", ":cur_req"),
@@ -20649,7 +20667,7 @@ scripts = [
             (call_script, "script_remove_empty_parties_in_group", ":attached_party"),
             (try_begin),
                 (eq, ":troops", 0),
-                (remove_party,":attached_party"),# remove empty party after subtree iterations and prisoner stashing are done 
+                (call_script, "script_safe_remove_party",":attached_party"),# remove empty party after subtree iterations and prisoner stashing are done 
             (try_end),
         (try_end),
 	(try_end),
@@ -21414,7 +21432,116 @@ command_cursor_scripts = [
 	(try_end), #end Script
 ]),
 
+# script_safe_remove_party
+# kills a party, but checks that it is a spawned party, to avoid corruption
+# INPUT: param1: Party-id
 
+  ("safe_remove_party", [
+  	(store_script_param_1, ":party_id"),
+
+  	(str_store_party_name, s1, ":party_id"),
+
+  	(try_begin),
+  		(eq, "$cheat_mode",1),
+  		(neg|party_is_active, ":party_id"),
+  		(display_message, "@DEBUG: Removing INVALID party {s1}"),
+  	(try_end),
+
+  	(try_begin),
+  		(is_between, ":party_id","p_main_party", "p_scribble_242"),
+  		(disable_party, ":party_id"),
+  		(tutorial_box, "@INVALID PARTY BEING REMOVED! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
+		(try_begin),
+			(eq, "$cheat_mode",1),
+			(display_message, "@{s1} disabled"),
+		(try_end),
+	(else_try),
+		(remove_party, ":party_id"),
+		(try_begin),
+			(eq, "$cheat_mode",1),
+			(display_message, "@{s1} removed"),
+		(try_end),
+	(try_end),
+  ]),
+
+#############################  TLD CHEAP PARTY HANDLING  #############################?#
+# Objective: spawn fewer parties, to try avoiding corruption
+#
+# How to use:
+#   every time you want to "remove_party" a party, call "script_remove_party" instead.
+#   every time you want to "spawn_around_party" a party, call "script_spawn_around_party" instead.
+#
+# Effect: on removal, party aren't removed, they are just disabled and go dormant. 
+#         on creation, if there's a dormant parties of the same tamplate, it is revived and used.
+
+("remove_party",[
+    (store_script_param_1, ":party"),
+    
+    (party_set_slot, ":party", slot_party_dormant, 1),
+    (party_clear, ":party", slot_party_dormant, 1),
+    (party_add_members, ":party", "trp_dormant", 1),
+    (disable_party, ":party"), # hide it
+
+    #Debug
+    (try_begin),
+    	(eq, "$cheat_mode", 1),
+    	(str_store_party_name, s1, ":party"),
+    	(display_message, "@DEBUG: {s1} made dormant."),
+    (try_end),
+]),
+
+("spawn_around_party",[
+    (store_script_param_1, ":around"),
+    (store_script_param_2, ":pt"),
+    
+    # look for a suitable dormant party
+    (assign, ":found", -1),
+    (try_for_parties, ":party"),
+        (lt, ":found", 0),  # didn't find it yet
+        (neg|party_is_active, ":party"),  
+        (party_slot_eq, ":party", slot_party_dormant, 1),
+        (party_get_template_id, ":x", ":party"),(eq, ":x", ":pt"), 
+        (assign, ":found", ":party"),
+    (try_end),
+    
+    (try_begin), 
+        (ge, ":found", 0), 
+        # dormant party found: use it!
+        (party_clear, ":found"),
+        (party_add_template, ":found", ":pt"),
+        (party_set_slot, ":party", slot_party_dormant, 0),
+        (enable_party, ":found"), 
+        (assign, reg0, ":found"),
+        (party_relocate_near_party, reg0, ":around", 2), # use "$dormant_spawn_radius" instead of 2 when we start using the new script below
+
+        #Debug
+        (try_begin),
+        	(eq, "$cheat_mode", 1),
+        	(str_store_party_name, s1, reg0),
+        	(str_store_party_name, s2, ":around"),
+        	(display_message, "@DEBUG: Dormant {s1} spawned around {s2}"),
+        (try_end),
+
+    (else_try),
+        # dormant party not found
+        (spawn_around_party, ":around", ":pt"),
+
+        #Debug
+        (try_begin),
+        	(eq, "$cheat_mode", 1),
+        	(str_store_party_name, s1, reg0),
+        	(str_store_party_name, s2, ":around"),
+        	(display_message, "@DEBUG: No Dormant {s1} found. Creating one near {s2}"),
+        (try_end),
+    (try_end),
+]),
+
+("set_spawn_radius",[
+  (store_script_param_1, ":x"),
+  
+  (assign, "$dormant_spawn_radius", ":x"),
+  (set_spawn_radius, ":x"),
+]),
 
 ]
 

@@ -3256,10 +3256,15 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham - Volunteers
 
-["volunteers","Reserves:","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+["volunteers","--- Reserves ---:","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
    [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
       str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
 
+## Kham - Dormant Troop
+
+["dormant","Dormant","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+   [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
+      str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 

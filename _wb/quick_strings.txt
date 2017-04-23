@@ -1,4 +1,4 @@
-1354
+1367
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -124,6 +124,11 @@ qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
+qstr_Volunteers Volunteers
+qstr_____Volunteers____ ---_Volunteers_---
+qstr_Reserves Reserves
+qstr_____Reserves____ ---_Reserves_---
+qstr_{s4} {s4}
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle.
 qstr_{s2}_have_razed_{s1} {s2}_have_razed_{s1}!
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
@@ -551,6 +556,13 @@ qstr_Debug:_Theater_SW Debug:_Theater_SW
 qstr_Debug:_Theater_C Debug:_Theater_C
 qstr_Debug:_Theater_N Debug:_Theater_N
 qstr_Debug:_Can_t_Find Debug:_Can't_Find
+qstr_DEBUG:_Removing_INVA DEBUG:_Removing_INVALID_party_{s1}
+qstr_INVALID_PARTY_BEING_ INVALID_PARTY_BEING_REMOVED!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
+qstr_{s1}_disabled {s1}_disabled
+qstr_{s1}_removed {s1}_removed
+qstr_DEBUG:_{s1}_made_dor DEBUG:_{s1}_made_dormant.
+qstr_DEBUG:_Dormant_{s1}_ DEBUG:_Dormant_{s1}_spawned_around_{s2}
+qstr_DEBUG:_No_Dormant_{s DEBUG:_No_Dormant_{s1}_found._Creating_one_near_{s2}
 qstr_{s1} {s1}
 qstr_No_Troops_Left. No_Troops_Left.
 qstr_avoid_melee avoid_melee
@@ -585,7 +597,6 @@ qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_pri
 qstr_Forming_ranks. Forming_ranks.
 qstr_{reg2?You:Your_mount {reg2?You:Your_mount}_received_{reg1}_extra_damage!
 qstr_{reg2?You_strike:You {reg2?You_strike:Your_horse_charges}_for_{reg1}_bonus_damage!
-qstr_DEBUG:_Enemy_not_an_ DEBUG:_Enemy_not_an_orc,_not_using_advanced_aiming
 qstr_DEBUG:_Distance:_{re DEBUG:_Distance:_{reg1}
 qstr_Your_high_level_arch Your_high-level_archers_determines_that_the_enemy_is_too_far_away._They_are_holding_their_fire_to_conserve_arrows_until_ordered_otherwise.
 qstr_Three_Nazgul_are_cir Three_Nazgul_are_circling_in_the_sky_above_the_battlefield!
@@ -609,7 +620,7 @@ qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
 qstr_Your_mount_has_falle Your_mount_has_fallen_to_the_ground_beneath_you!
 qstr_Receive_{reg22}_dama Receive_{reg22}_damage.
 qstr_You_have_been_knocke You_have_been_knocked_unconscious_by_{s22}.
-qstr_{s21}_has_been_knock {s21}_has_been_knocked_off_of_{reg23?her:his}_mount.
+qstr_{s21}_has_been_knock {s21}_has_been_knocked_off_of_{reg23?her:his}_mount_when_it_fell.
 qstr_{s21}_{reg24?killed: {s21}_{reg24?killed:knocked_unconscious}_by_{s22}.
 qstr_In_The_Last_Days_of_ In_The_Last_Days_of_the_Third_Age,_your_troops_will_position_themselves_and_hold_at_the_beginning_of_each_battle,_instead_of_blindly_charging.^^To_order_your_troops_into_formation,_press_'J'_for_Ranks,_'K'_for_Shield-Wall,_'L'_for_Wedge,_';'_for_Square._To_undo_the_formation,_press_'U'._^If_your_troops_are_fleeing,_you_can_press_'V'_to_rally_them._You_get_only_a_limited_amount_of_rallies_per_battle,_and_the_amount_depends_on_your_leadership_and_charisma.
 qstr_The_Last_Days_of_the The_Last_Days_of_the_Third_Age_has_implemented_a_Custom_Camera_in_order_to_bypass_the_current_camera_limitation_with_regards_to_shorter_races_(e.g_Orcs_and_Dwarves).^^Press_CTRL_+_END_to_cycle_through_the_2_camera_modes:_Fixed_Position_and_Free-Mode.^^Fixed_position_is_the_optimal_position_for_all_races,_however_it_cannot_be_configured._You_can_press_CTRL+Left/Right_Arrow_Keys_to_switch_shoulders.^^Free-Mode_Camera_puts_the_character_in_the_middle_of_the_screen._You_can_press_CTRL+Up/Down_arrow_keys_to_tilt_the_camera_and_CTRL+_Numpad_+/-_to_zoom.^^See_Info_Pages_for_how_to_control_the_different_camera_modes.
@@ -799,11 +810,13 @@ qstr_Target_Party_and_All Target_Party_and_Ally_Spawned!
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Subfac_Blackroot_set Subfac_Blackroot_set,_player_given_shield!
-qstr_Static_Scou_Party_Sp Static_Scou_Party_Spawned!
-qstr_Static_Party_Clear_A Static_Party_Clear_Attempted!
+qstr_Static_Scout_Party_S Static_Scout_Party_Spawned!
+qstr_Static_Party_Remove_ Static_Party_Remove_Attempted!
 qstr_Scout_Party_is_ACTIV Scout_Party_is_ACTIVE!
 qstr_Scout_Party_is_NOT_A Scout_Party_is_NOT_ACTIVE
 qstr_OFF__cheat_ OFF_(cheat)
+qstr_All_messages All_messages
+qstr_Player_damage_only Player_damage_only
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)
 qstr_Normal Normal
@@ -926,8 +939,8 @@ qstr_On_your_way_to_your_ On_your_way_to_your_faction's_capital,_you_set_upon_so
 qstr_On_your_way_to_your_f On_your_way_to_your_faction's_capital,_you_set_upon_some_troops_waiting_to_ambush_orcs_in_the_forest.
 qstr_On_your_way_to_Mordo On_your_way_to_Mordor,_you_hear_rustling_nearby._You_see_some_Gondor_Scouts_and_ready_yourself_to_warn_your_party.
 qstr_BUG BUG
-qstr_You_see_the_village_ You_see_the_village_being_raided_by_bandits._You_get_ready_to_defend_them.
-qstr_You_see_the_village_y You_see_the_village_you_were_tasked_to_raid._You_get_ready_to_attack_them.
+qstr_You_see_the_village_ You_see_the_village_being_raided_by_bandits._You_ask_most_of_your_troops_to_watch_out_for_other_raiders_while_you_take_a_small_group_and_prepare_to_defend_villagers.
+qstr_You_see_the_village_y You_see_the_village_you_were_tasked_to_raid._You_and_a_small_group_of_your_raiders_prepare_to_attack_the_village_so_as_not_to_be_seen.
 qstr_The_raiders_are_defe The_raiders_are_defeated!_Those_few_who_remain_alive_and_conscious_scurry_off_to_the_darkness_from_whence_they_came,_terrified_of_the_villagers_and_their_new_champion.
 qstr_Try_as_you_might_you Try_as_you_might,_you_could_not_defeat_the_raiders._They_raze_the_village_to_the_ground_and_enslave_the_remaining_peasants.
 qstr_The_village_has_been The_village_has_been_razed,_villagers_killed_or_taken_as_slaves._The_Dark_Lord_will_be_pleased.

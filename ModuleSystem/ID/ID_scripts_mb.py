@@ -513,5 +513,9 @@ script_find_theater = 511
 script_find_closest_enemy_town_or_host_only = 512
 script_cf_gain_trait_butcher = 513
 script_force_faction_center_by_region = 514
+script_safe_remove_party = 515
+script_remove_party = 516
+script_spawn_around_party = 517
+script_set_spawn_radius = 518
 
 
