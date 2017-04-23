@@ -7709,7 +7709,11 @@ scripts = [
 	  (try_begin),(eq, reg0, "p_town_minas_tirith"), (assign, ":sight_range", 4),
 	  (else_try), (eq, reg0,  "p_town_erebor"), (assign, ":sight_range", 4),
 	  (else_try), (eq, reg0,  "p_town_isengard"), (assign, ":sight_range", 6),
-	  (else_try), (assign, ":sight_range", 2.5),(try_end), # default
+	  (else_try), 
+			(this_or_next|eq, reg0,  "p_town_west_osgiliath"), 
+			(eq, reg0,  "p_town_east_osgiliath"),
+			(assign, ":sight_range", 2.0), #InVain: trying to get this right so that Osgiliath battle scenes only appear when very near on on the Osgiliath map icons, but also on the 'river' between both centers
+	  (else_try), (assign, ":sight_range", 3.5),(try_end), # default #InVain made this bigger, was 2.5
 	  
 	  (try_begin),
 		(gt, ":min_distance", ":sight_range"), # smaller sigth range of everything but minas thirit
@@ -7750,6 +7754,32 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),	
 		(str_store_string, s17, "@in sight of the majestic City Walls of Minas Tirith, the White City"),
+#InVain new landmark scenes start
+	(else_try),
+		(eq,":landmark","p_town_edoras"),	
+		(str_store_string, s17, "@in sight of Edoras, the capital of Rohan"),
+	(else_try),
+		(eq,":landmark","p_town_hornburg"),	
+		(str_store_string, s17, "@in sight of the Hornburg, the great fortress of Rohan"),
+	(else_try),
+		(eq,":landmark","p_town_dol_amroth"),	
+		(str_store_string, s17, "@in sight of Dol Amroth, the seat of the Princes of Belfalas"),
+	(else_try),
+		(eq,":landmark","p_town_morannon"),	
+		(str_store_string, s17, "@in sight of the Morannon, the Black Gate of Mordor"),
+	(else_try),
+		(eq,":landmark","p_town_dol_guldur"),	
+		(str_store_string, s17, "@in sight of Dol Guldur, Sauron's northern fortress"),
+	(else_try),
+		(eq,":landmark","p_town_beorn_house"),	
+		(str_store_string, s17, "@on the green pastures and many-flowered meadows surrounding Beorn's House"),
+	(else_try),
+		(eq,":landmark","p_town_moria"),	
+		(str_store_string, s17, "@on the shores of Lake Mirrormere, near the East Gate of Moria"),
+	(else_try),
+		(eq,":landmark","p_town_esgaroth"),	
+		(str_store_string, s17, "@on the shores of the Long Lake, in sight of Esgaroth, the Laketown"),
+#InVain new landmark scenes end
 	(else_try),
 		(this_or_next|eq,":landmark","p_town_west_osgiliath"),   ## Osgiliath - In Vain
 		(eq,":landmark","p_town_east_osgiliath"),	
@@ -9990,6 +10020,14 @@ scripts = [
 		(is_between, ":x", -8005,-3026 ),(is_between, ":y",   -10668,  -5261),
 		(assign, reg1, region_brown_lands),
 	(else_try),
+		#  InVain Dimrill Dale?
+		(is_between, ":x", 3380, 5900 ),(is_between, ":y", -15396, -13843), 
+		(assign, reg1, region_dimrill),
+	(else_try),
+		#  InVain South of Erebor
+		(is_between, ":x", -6800, -5558 ),(is_between, ":y", -22800, -21875), 
+		(assign, reg1, region_s_erebor),
+	(else_try),
 		# evertything else, in a BIG region, is in rohan... 
 		(is_between, ":x", -3557,5893 ),(is_between, ":y",   -4782,  1057),
 		# pick emnet
@@ -10097,6 +10135,10 @@ scripts = [
 		(assign, reg1, fac_khand),
 	(else_try), (eq, ":region_id", 	region_s_mirkwood),
 		(assign, reg1, fac_guldur),
+	(else_try), (eq, ":region_id", 	region_dimrill), #InVain new regions
+		(assign, reg1, fac_moria),
+	(else_try), (eq, ":region_id", 	region_s_erebor), #InVain new regions
+		(assign, reg1, fac_dale),
 	(else_try), 
 		(this_or_next|eq, ":region_id", region_mordor ), 
 		(this_or_next|eq, ":region_id", region_dagorlad ), 
@@ -10135,6 +10177,68 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),
 		(assign,":scene_to_use","scn_minas_tirith_outside"), 
+#InVain new landmark scenes begin
+	(else_try),
+		(eq,":landmark","p_town_edoras"), 
+		(store_random_in_range, ":scene_to_use", "scn_edoras_outside_1", "scn_hornburg_outside_1"),
+	(else_try),
+		(eq,":landmark","p_town_hornburg"), 
+		(store_random_in_range, ":scene_to_use", "scn_hornburg_outside_1", "scn_dolamroth_outside_1"),
+	(else_try),
+		(eq,":landmark","p_town_dol_amroth"), 
+		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
+		(store_random_in_range, ":scene_to_use", "scn_dolamroth_outside_1", "scn_morannon_outside_1"),
+		(assign, "$bs_day_sound", "snd_seaside_occasional"),
+	(else_try),
+		(eq,":landmark","p_town_morannon"), 
+		(store_random_in_range, ":scene_to_use", "scn_morannon_outside_1", "scn_dolguldur_outside_1"),
+		(assign, "$bs_day_sound", "snd_morgul_ambiance"),
+		(assign, "$bs_night_sound", "snd_morgul_ambiance"),
+	(else_try),
+		(eq,":landmark","p_town_dol_guldur"), 
+		(store_random_in_range, ":scene_to_use", "scn_dolguldur_outside_1", "scn_beorn_outside_1"),
+		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
+		(assign, "$bs_night_sound", "snd_evilforest_ambiance"),
+	(else_try),
+		(eq,":landmark","p_town_beorn_house"), 
+		(store_random_in_range, ":scene_to_use", "scn_beorn_outside_1", "scn_moria_outside_1"),
+		(assign, "$bs_day_sound", "snd_beorn_occasional"),
+		(assign, "$bs_night_sound", "snd_night_ambiance"),
+	(else_try),
+		(eq,":landmark","p_town_moria"), #InVain: Keep this BEFORE region_dimrill!
+		(assign, ":native_terrain_to_use", rt_mountain_forest),
+		(assign,":scene_to_use","scn_dimrill_dale"), #randomized
+		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
+	(else_try),
+		(eq,":region",region_dimrill), 
+		(assign, ":native_terrain_to_use", rt_mountain_forest),
+		(assign,":scene_to_use","scn_dimrill_dale"), #randomized
+		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
+	(else_try),
+		(eq,":landmark","p_town_esgaroth"), #InVain: Keep this BEFORE region_s_erebor!
+		(assign, ":native_terrain_to_use", rt_steppe),
+		(store_random_in_range, ":scene_to_use", "scn_esgaroth_outside_1", "scn_s_erebor"),
+	(else_try),
+		(eq,":region",region_s_erebor), 
+		(assign, ":native_terrain_to_use", rt_steppe),
+		(assign,":scene_to_use","scn_s_erebor"),
+	(else_try),
+		(this_or_next|eq,":landmark","p_town_west_osgiliath"), #InVain: Keep this BEFORE Ithilien / Emyn Arnen. Otherwise we get forest scenes in Osgiliath.
+		(eq,":landmark","p_town_east_osgiliath"),
+			(store_random_in_range, ":scene", 0, 4),
+	        (try_begin),
+	        	(eq, ":scene",0),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts"),
+	        (else_try),
+	        	(eq, ":scene",1),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts_2"),
+	        (else_try),
+	        	(eq, ":scene",2),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts_3"),
+	        (else_try),
+	        	(assign,":scene_to_use","scn_osgiliath_outskirts_4"),
+			(try_end),
+#InVain new landmark scenes end
 	(else_try),
 		(eq,":landmark","p_town_isengard"),
 		(assign, ":native_terrain_to_use", rt_steppe), 
@@ -10200,11 +10304,12 @@ scripts = [
 		(is_between,":region",region_pelennor, region_anorien+1),
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_plain_small"), # so that outer terrain of gondor is used
-		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
-	(else_try),
-		(this_or_next|eq,":landmark","p_town_west_osgiliath"), # Occasional Osgiliath - In Vain
-		(eq,":landmark","p_town_east_osgiliath"),
-		(assign,":scene_to_use","scn_osgiliath_outskirts"), 
+		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"), 
+#InVain: Moved Osgiliath up, landmarks must be before regions!
+#	(else_try),
+#		(this_or_next|eq,":landmark","p_town_west_osgiliath"), # Occasional Osgiliath - In Vain
+#		(eq,":landmark","p_town_east_osgiliath"),
+#		(assign,":scene_to_use","scn_osgiliath_outskirts"), 
 	(else_try),		# occasional forest terrain, in rohan: use forest battlefield regardless of region (but rohan outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(is_between,":region",region_harrowdale, region_westfold+1),

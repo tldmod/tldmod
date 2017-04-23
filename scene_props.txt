@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1563
+ 1576
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -219,7 +219,7 @@ spr_destroy_bridge_b 0 0 destroy_bridge_b bo_destroy_bridge_b 0
 spr_destroy_bridge_b_E 0 0 destroy_bridge_b 0 0
 
 
-spr_Catapult 0 0 catapult bo_Catapult 0
+spr_Catapult 0 0 catapult bo_catapult 0
 
 
 spr_broom 0 0 broom 0 0
@@ -3467,7 +3467,7 @@ spr_minas_tirith_copy 0 0 minas_tirith_copy 0 0
 
 
 spr_troop_guard 16384 0 cabbage_b 0 1
--40  8 2071 1 1224979098644774912 2147483678 2 144115188075856307 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856029 250 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 297 
+-40  10 2071 1 1224979098644774912 2147483678 2 144115188075856307 0 1850 2 1 1224979098644774912 1970 1 1 521 3 1224979098644774913 144115188075856029 250 1972 1 1224979098644774913 1771 2 72057594037927936 0 1741 2 72057594037927936 297 2136 3 72057594037927942 0 100 1743 2 72057594037927936 72057594037927942 
 
 
 spr_troop_prison_guard 16384 0 cabbage_b 0 1
@@ -4550,7 +4550,7 @@ spr_rohan_horn 0 0 horn 0 0
 spr_tunnel_stalactite 0 0 tunnel_stalactite bo_tunnel_stalactite 0
 
 
-spr_fog_scene 16384 0 f0_pointer 0 1
+spr_fog_scene 0 0 0 0 1
 -40  3 2071 1 1224979098644774912 1850 2 1 1224979098644774912 1965 2 48 1 
 
 
@@ -4675,6 +4675,12 @@ spr_smaug_skeleton 0 0 smaug_skeleton 0 0
 spr_dorwinion_sack 5 0 dorwinion_sack bo_dorwinion_sack 0
 
 
+spr_distant_mountain_snow_1 0 0 distant_mountain_snow_1 0 0
+
+
+spr_distant_mountain_snow_2 0 0 distant_mountain_snow_2 0 0
+
+
 spr_osgiliath_far_f 0 0 osgiliath_far 0 0
 
 
@@ -4733,6 +4739,40 @@ spr_water_foam 0 0 0 0 1
 
 spr_water_run 0 0 0 0 1
 -40  1 1965 1 56 
+
+
+spr_distant_place_dolamroth 0 0 prop_dolamroth 0 0
+
+
+spr_distant_place_edoras 0 0 prop_Edoras 0 0
+
+
+spr_distant_place_Helmsdeep 0 0 prop_Helms_Deep 0 0
+
+
+spr_distant_place_Morannon 0 0 prop_Morannon 0 0
+
+
+spr_distant_place_Dolguldur 0 0 prop_dolguldur 0 1
+-40  6 4 0 2273 0 1798 2 450 469277 5 0 1798 2 700 7846834 3 0 
+
+
+spr_honey_pot 0 0 honey_pot 0 0
+
+
+spr_butter_pot 0 0 butter_pot 0 0
+
+
+spr_apple_basket 0 0 apple_basket bo_apple_basket 0
+
+
+spr_sausages 0 0 sausages 0 0
+
+
+spr_boat_sail_on 0 0 boat_sail_on 0 0
+
+
+spr_boat_sail_off 0 0 boat_sail_off 0 0
 
 
 spr_save_compartibility1 0 0 0 0 0

@@ -106,6 +106,8 @@ region_s_mirkwood = 35
 region_above_mirkwook = 36
 region_grey_mountains = 37
 region_mordor = 38
+region_dimrill = 39 #InVain
+region_s_erebor = 40 #InVain
 
 
 

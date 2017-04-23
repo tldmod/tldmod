@@ -2821,7 +2821,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_above_mirkwook", "Northen Rhovanion, the area between Mirkwood and the Grey Mountains in the North" ),#region_above_mirkwook = 35  (FOR LACK OF A BETTER GEOGRAPHICAL NAME)
 ("fullname_region_grey_mountains", "the foothills of Grey Mountains, where Dwarves dwell" ),#region_grey_mountains = 36
 ("fullname_region_mordor", "Mordor, the dark Realm of Sauron" ),#region_mordor = 37
-
+("fullname_region_dimrill", "Dimrill Dale, at the feet of the Mountains of Moria" ),#region_Dimrill = 38 InVain
+("fullname_region_s_rebor", "the realm of Dale, at the feet of the Lonely Mountain" ),#region_s_rebor = 39 InVain
 
 
 ("shortname_region_unknown", "an unnamed region"), # -1
@@ -2874,7 +2875,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("shortname_region_above_mirkwook", "Northen Rhovanion" ),#region_above_mirkwook = 35
 ("shortname_region_grey_mountains", "the foothills of Grey Mountains" ),#region_grey_mountains = 36
 ("shortname_region_mordor", "the Land of Mordor" ),#region_mordor = 37
-
+("shortname_region_dimrill", "Dimrill Dale" ),#region_Dimrill = 38 InVain
+("shortname_region_s_erebor", "the realm of Dale" ),#region_s_erebor = 39 InVain
 
 # Traits - titles and descriptions (the first is used in constants!)
 # Also note: these need to be of the same order and number as slot_trait_* in constants

@@ -1109,7 +1109,7 @@ triggers = [
 		(try_end),
 
     # Reveal Gondor Beacons
-    (try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
+    (try_for_range, ":beacon", "p_amon_din", "p_scout_party"),
       (enable_party, ":beacon"),
     (try_end),
     
