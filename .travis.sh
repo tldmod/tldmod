@@ -10,9 +10,12 @@ _fold_final_
 
 echo HI THERE!
 
+
 # grab the revision count of the latest merge commit,
 # parse the changelog page to find the previous one
-SVNREV=$(git rev-list --count "`git rev-list --min-parents=2 --max-count=1 HEAD`")
+SVNREV=$(curl -s https://api.bitbucket.org/2.0/repositories/Swyter/tld-downloads/downloads | \
+         sed -s 's/ /\n/g' | sed -n 's/.*_r\([0-9]*\)\.7z.*/\1/p' | head -1)
+
 PREREV=$(curl -s http://steamcommunity.com/sharedfiles/filedetails/changelog/299974223 | \
          sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1)
 
