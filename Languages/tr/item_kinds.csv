@@ -73,7 +73,7 @@ itm_troll_head_helm_c|Troll kafası
 itm_tree_trunk_club_a|Goblin Gövdesi
 itm_tree_trunk_club_b|Goblin Gövdesi
 itm_tree_trunk_invis|Goblin Gövdesi
-itm_giant_hammer|Devin Çelici
+itm_giant_hammer|Devin Çekici
 itm_giant_mace|Devin Topuzu
 itm_giant_mace_b|Devin Dikenli Topuzu
 itm_olog_feet_boots|Olag Hainin Ayağı
@@ -89,7 +89,7 @@ itm_gondor_auxila_arrows|Gondor Okları
 itm_khergit_arrows|Barbed Okları
 itm_rohan_arrows_2|Rohirrim Okları
 itm_harad_arrows|Haradrim Okları
-itm_corsair_arrows|Corsair Okları
+itm_corsair_arrows|KorsanOkları
 itm_ithilien_arrows|Ithilien Okları
 itm_woodelf_arrows|Orman Elfi Okları
 itm_elven_arrows|Elf Okları
@@ -108,7 +108,7 @@ itm_blue_tunic|Mavi Tunik
 itm_black_tunic|Siyah Tunik
 itm_green_tunic|Yeşil Tunik
 itm_red_tunic|Kırmızı Tunik
-itm_leather_apron|Deri göğüslük
+itm_leather_apron|Deri Göğüslük
 itm_leather_jerkin|Deri Yelek
 itm_fur_coat|Bol Ceket
 itm_green_dress|Yeşil Elbise
@@ -143,8 +143,8 @@ itm_dale_bow|Dere Yayı
 itm_uruk_bow|Ork Yayı
 itm_mirkwood_bow|Kuyutorman Yayı
 itm_dunland_javelin|Dunland Ciritleri
-itm_orc_throwing_arrow|Ork dartları
-itm_heavy_throwing_spear|Ağır Atma Mızrağı
+itm_orc_throwing_arrow|Ork Dartları
+itm_heavy_throwing_spear|Ağır Fırlatma Mızrağı
 itm_javelin|Cirit
 itm_harad_javelin|Harad Ciriti
 itm_gondor_javelin|Gondor Ciriti
@@ -170,27 +170,27 @@ itm_arnor_shield_d|Arnorian Süvari Kalkanı
 itm_arnor_sword_a|Arnorian Piç Kılıç
 itm_arnor_sword_c|Arnorian Piç Kılıç
 itm_arnor_sword_f|Arnor Kısa Kılıç
-itm_riv_helm_a|Rivendell Takkesi
-itm_riv_helm_b|Rivendell Okçu Miğferi
-itm_riv_helm_c|Rivendell Piyade Miğferi
+itm_riv_helm_a|Ayrıkvadi Takkesi
+itm_riv_helm_b|Ayrıkvadi Okçu Miğferi
+itm_riv_helm_c|Ayrıkvadi Piyade Miğferi
 itm_riv_helm_glorfi|Glorfi Saçı
 itm_riv_tiara|Elf Lordu Tiara
-itm_riv_shield_a|Rivendell Kalkanı
-itm_riv_shield_b|Rivendell Kalkanı
-itm_riv_bas_sword|Rivendell Piç Kılıcı
-itm_riv_1h_sword|Rivendell Kılıcı
-itm_riv_riding_sword|Rivendell Süveri Kılıcı
-itm_riv_archer_sword|Rivendell Okçusunun Kılıcı
-itm_riv_spear|Rivendell Mızrağı
-itm_riv_armor_light|Rivendell Zırhı
-itm_riv_armor_light_inf|Rivendell Zırhı
-itm_riv_armor_archer|Rivendell Zırhı
-itm_riv_armor_m_archer|Rivendell Zırhı
-itm_riv_armor_med|Rivendell Zırhı
-itm_riv_armor_heavy|Rivendell Zırhı
-itm_riv_armor_h_archer|Rivendell Zırhı
-itm_riv_armor_leader|Rivendell Lider Zırhı
-itm_riv_boots|Rivendell Çizmeleri
+itm_riv_shield_a|Ayrıkvadi Kalkanı
+itm_riv_shield_b|Ayrıkvadi Kalkanı
+itm_riv_bas_sword|Ayrıkvadi Piç Kılıcı
+itm_riv_1h_sword|Ayrıkvadi Kılıcı
+itm_riv_riding_sword|Ayrıkvadi Süveri Kılıcı
+itm_riv_archer_sword|Ayrıkvadi Okçusu Kılıcı
+itm_riv_spear|Ayrıkvadi Mızrağı
+itm_riv_armor_light|Ayrıkvadi Zırhı
+itm_riv_armor_light_inf|Ayrıkvadi Zırhı
+itm_riv_armor_archer|Ayrıkvadi Zırhı
+itm_riv_armor_m_archer|Ayrıkvadi Zırhı
+itm_riv_armor_med|Ayrıkvadi Zırhı
+itm_riv_armor_heavy|Ayrıkvadi Zırhı
+itm_riv_armor_h_archer|Ayrıkvadi Zırhı
+itm_riv_armor_leader|Ayrıkvadi Lider Zırhı
+itm_riv_boots|Ayrıkvadi Çizmeleri
 itm_gon_footman|Gondor Örgü Zırhı
 itm_gon_jerkin|Gondor Deri Yelek
 itm_gon_regular|Gondor Ağır Örgü Zırh
@@ -275,7 +275,7 @@ itm_gondor_shield_a|Gondor Kare Kalkan
 itm_gondor_shield_b|Kondor Uçurtma Kalkan
 itm_gondor_shield_c|Gondor Kule Kalkan
 itm_gondor_shield_d|Kondor Uçurtma Kalkan
-itm_gondor_shield_e|\nGondor Kraliyet Kalkanı
+itm_gondor_shield_e|Gondor Kraliyet Kalkanı
 itm_gon_tab_shield_a|Heraldic Gondor Yuvarlak Kalkan
 itm_gon_tab_shield_b|Heraldic Gondor Kare Kalkan
 itm_gon_tab_shield_c|Heraldic Gondor Uçurtma Kalkan
@@ -903,4 +903,4 @@ itm_bear|Ayı
 itm_wolf|Kurt
 itm_defiled_armor_gondor|Lekelenmiş Gondor Lideri Cüppesi
 itm_defiled_armor_rohan|Lekelenmiş Rohan Zırh Yeleği
-itm_defiled_armor_dale|Lekelenmiş Dale (Vadi) Soylusu Zırhı
+itm_defiled_armor_dale|Lekelenmiş Dale Soylusu Zırhı

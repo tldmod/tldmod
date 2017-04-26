@@ -467,7 +467,7 @@ str_npc13_signup|Potrei seguirti, se vuoi. Le mie gambe hanno la forza di un cav
 str_npc14_signup|Tutto può essere, ma sappi che non sono né un ladro né un brigante. Io non ruberò quello che serve ad altre vite.
 str_npc15_signup|Eheh. Hai ragione! Sì! Sei molto saggio, grande Capitano.
 str_npc16_signup|Aspetto ordini, ogni secondo che passa il mio cuore si appesantisce. Non posso più aspettare di conoscere i piani di lontani signori e capitani mai visti, tanto che la loro esistenza è più una leggenda che carne e ossa. Signori che sussurrano ordini portati urlando da uomini di bassa lega. Aspetto, e con me attende la vendetta del mio popolo.
-str_npc17_signup|Molto bene! Conosco molti alberi. Presto imparerai a conoscere molti alberi anche tu. Come me. Perché conosco molti alberi.
+str_npc17_signup|Molto bene ! Conosco molti alberi. Presto imparerai a conoscere molti alberi anche tu. Come me. Perché conosco molti alberi.
 str_npc1_signup_2|Ci vorrà un momento, il tempo di parlare al mio capitano e prendere le mie cose.
 str_npc2_signup_2|Avrò bisogno di parlare con il mio sergente prima di tutto, dopo potremo andare - ci sono gloriose battaglie da combattere e strane creature da vedere !
 str_npc3_signup_2|Ho  atteso qualcuno che mi portasse con sè, ho solo bisogno di sellare il mio cavallo e saremo pronti ad andare.
@@ -535,7 +535,7 @@ str_npc13_payment|Ahimé, i capi qui non permetteranno che me ne vada. Sei abbas
 str_npc14_payment|Il capitano del porto richiederà molto sforzo per essere persuaso a lasciarmi andare. Convincilo e potremo issare le vele per attraversare questa tempesta. [Costo: {reg14} Punti Influenza di {s14}]
 str_npc15_payment|Oh, certo, Nobile Lord-Guerriero ! C'è solo un piccolo impedimento ! Una grave ingiustizia si è abbattuta su di me, poiché al mastro di questa cava non è piaciuta la mia offerta di guarigione, e così ha preso tutti i miei attrezzi ! Che sfrontatezza ! Derubare il Grande Bolzog ! Padrone, non posso recuperare da solo il mio inestimabile equipaggiamento dai suoi sporchi artigli ! [Costo: {reg14} Punti Influenza di {s14}]
 str_npc16_payment|Non ti seguirò, andrò per la mia strada; ma il tuo cammino potrà accompagnare il mio per un tratto. Comunque, prima di attraversare queste terre devo prima rendere omaggio a coloro che hanno perso la vita provandoci prima di noi. Mostra loro il tuo tributo e potremo partire. Non dobbiamo mai dimenticare i nostri antenati. Loro non hanno dimenticato noi. [Costo: {reg14} Punti Influenza di {s14}]
-str_npc17_payment|Mi piacciono gli alberi, ma il mio vecchio zio a bisogno di me. [Costo: {reg14} Punti Influenza di {s14}]
+str_npc17_payment|Mi piacciono gli alberi, ma il mio vecchio zio ha bisogno di me. [Costo: {reg14} Punti Influenza di {s14}]
 str_npc1_payment_response|Non preoccuparti, organizzerò la tua partenza con lui.  [Costo: {reg14}/{reg15} Punti Influenza]
 str_npc2_payment_response|Non preoccuparti, parlerò con il tuo Sergente. [Costo: {reg14}/{reg15} Punti Influenza]
 str_npc3_payment_response|Spero che ne valga la pena. Mi accorderò con l'oste. [Costo: {reg14}/{reg15} Punti Influenza]

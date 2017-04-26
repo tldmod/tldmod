@@ -68,8 +68,8 @@ trp_beorning_tolltacker|Beorning Paralı Askeri
 trp_beorning_tolltacker_pl|Beorning Paralı Askerleri
 trp_beorning_sentinel|Beorning Nöbetçisi
 trp_beorning_sentinel_pl|Beorning Nöbetçileri
-trp_beorning_warden_of_the_ford|Beorning Ford Koruyucusu
-trp_beorning_warden_of_the_ford_pl|Beorning Ford Koruyucusu
+trp_beorning_warden_of_the_ford|Beorning Nehir Koruyucusu
+trp_beorning_warden_of_the_ford_pl|Beorning Nehir Koruyucusu
 trp_beorning_carrock_lookout|Beorning Carrock Gözcüsü
 trp_beorning_carrock_lookout_pl|Beorning Carrock Gözcüleri
 trp_beorning_carrock_fighter|Beorning Carrock Savaşçısı
@@ -86,14 +86,14 @@ trp_laketown_bowmen|Laketown Okçusu
 trp_laketown_bowmen_pl|Laketown Okçuları
 trp_laketown_archer|Gölkasabası Okçusu
 trp_laketown_archer_pl|Gölkasabası Okçuları
-trp_barding_bowmen_of_esgaroth|Esgaroth'un Barding Okçusu
-trp_barding_bowmen_of_esgaroth_pl|Esgaroth'un Barding Okçuları
+trp_barding_bowmen_of_esgaroth|Esgarothun Barding Okçusu
+trp_barding_bowmen_of_esgaroth_pl|Esgarothun Barding Okçuları
 trp_dale_warrior|Dale Savaşçısı
 trp_dale_warrior_pl|Dale Savaşçıları
 trp_dale_veteran_warrior|Emaktar Dale Savaşçısı
 trp_dale_veteran_warrior_pl|Emaktar Dale Savaşçıları
-trp_dale_marchwarden|Dale'ın Koruyucusu
-trp_dale_marchwarden_pl|Dale'ın Bekçileri
+trp_dale_marchwarden|Dale Koruyucusu
+trp_dale_marchwarden_pl|Dale Bekçileri
 trp_dale_pikeman|Dale Mızrakçısı
 trp_dale_pikeman_pl|Dale Mızrakçıları
 trp_dale_billman|Dale Baltacısı
@@ -106,10 +106,10 @@ trp_merchant_guard_of_dale|Dale'ın Tüccar Muhafızı
 trp_merchant_guard_of_dale_pl|Dale'ın Tüccar Muhafızları
 trp_merchant_protector_of_dale|Dale'ın Tüccar Koruyucusu
 trp_merchant_protector_of_dale_pl|Dale'ın Tüccar Koruyucuları
-trp_girions_guard_of_dale|Dale'lı Girion'nun Muhafızı
-trp_girions_guard_of_dale_pl|Dale'lı Girion'nun Muhafızları
-trp_rhun_tribesman|Rhun'lu Kabile Üyesi
-trp_rhun_tribesman_pl|Rhun'lu Kabile Üyeleri
+trp_girions_guard_of_dale|Dalelı Girion'nun Muhafızı
+trp_girions_guard_of_dale_pl|Dalelı Girion'nun Muhafızları
+trp_rhun_tribesman|Rhunlu Kabile Üyesi
+trp_rhun_tribesman_pl|Rhunlu Kabile Üyeleri
 trp_rhun_horse_scout|Rhun Gözcüsü
 trp_rhun_horse_scout_pl|Rhun Gözcüleri
 trp_rhun_horse_archer|Rhun Atlı Okçusu
@@ -120,28 +120,28 @@ trp_fell_balchoth_horse_archer|Balchoth Atlı Okçusu
 trp_fell_balchoth_horse_archer_pl|Balchoth Atlı Okçuları
 trp_rhun_swift_horseman|Rhun Hafif Süvarisi
 trp_rhun_swift_horseman_pl|Rhun Hafif Süvarileri
-trp_rhun_veteran_swift_horseman|Rhun'lu Kıdemli Çevik Süvari
-trp_rhun_veteran_swift_horseman_pl|Rhun'lu Kıdemli Çevik Süvariler
+trp_rhun_veteran_swift_horseman|Rhunlu Kıdemli Çevik Süvari
+trp_rhun_veteran_swift_horseman_pl|Rhunlu Kıdemli Çevik Süvariler
 trp_falcon_horseman|Şahin Atlısı
 trp_falcon_horseman_pl|Şahin Atlıları
-trp_rhun_tribal_warrior|Rhun'lu Kabile Savaşçısı
-trp_rhun_tribal_warrior_pl|Rhun'lu Kabile Savaşçıları
-trp_rhun_tribal_infantry|Rhun'lu Kabile Piyadesi
-trp_rhun_tribal_infantry_pl|Rhun'lu Kabile Piyadeleri
-trp_rhun_vet_infantry|Rhun'lu Kıdemli Piyade
-trp_rhun_vet_infantry_pl|Rhun'lu Kıdemli Piyadeler
-trp_infantry_of_the_ox|Ox'lu Piyade
-trp_infantry_of_the_ox_pl|Ox'lu Piyadeler
-trp_rhun_light_horseman|Rhun'lu Hafif Atlı
-trp_rhun_light_horseman_pl|Rhun'lu Hafif Atlılar
-trp_rhun_light_cavalry|Rhun'lu Hafif Süvari
-trp_rhun_light_cavalry_pl|Rhun'lu Hafif Süvariler
-trp_rhun_noble_cavalry|Rhun'lu Soylu Süvari
-trp_rhun_noble_cavalry_pl|Rhun'lu Soylu Süvariler
-trp_rhun_heavy_noble_cavalry|Rhun'lu Ağır Soylu Süvari
-trp_rhun_heavy_noble_cavalry_pl|Rhun'lu Ağır Soylu Süvariler
-trp_dorwinion_noble_of_rhun|Rhun'un Dorwinion Soylusu
-trp_dorwinion_noble_of_rhun_pl|Rhun'un Dorwinion Soyluları
+trp_rhun_tribal_warrior|Rhunlu Kabile Savaşçısı
+trp_rhun_tribal_warrior_pl|Rhunlu Kabile Savaşçıları
+trp_rhun_tribal_infantry|Rhunlu Kabile Piyadesi
+trp_rhun_tribal_infantry_pl|Rhunlu Kabile Piyadeleri
+trp_rhun_vet_infantry|Rhunlu Kıdemli Piyade
+trp_rhun_vet_infantry_pl|Rhunlu Kıdemli Piyadeler
+trp_infantry_of_the_ox|Oxlu Piyade
+trp_infantry_of_the_ox_pl|Oxlu Piyadeler
+trp_rhun_light_horseman|Rhunlu Hafif Atlı
+trp_rhun_light_horseman_pl|Rhunlu Hafif Atlılar
+trp_rhun_light_cavalry|Rhunlu Hafif Süvari
+trp_rhun_light_cavalry_pl|Rhunlu Hafif Süvariler
+trp_rhun_noble_cavalry|Rhunlu Soylu Süvari
+trp_rhun_noble_cavalry_pl|Rhunlu Soylu Süvariler
+trp_rhun_heavy_noble_cavalry|Rhunlu Ağır Soylu Süvari
+trp_rhun_heavy_noble_cavalry_pl|Rhunlu Ağır Soylu Süvariler
+trp_dorwinion_noble_of_rhun|Rhunun Dorwinion Soylusu
+trp_dorwinion_noble_of_rhun_pl|Rhunun Dorwinion Soyluları
 trp_dwarven_apprentice|Dwarf Çırağı
 trp_dwarven_apprentice_pl|Dwarf Çırakları
 trp_dwarven_warrior|Dwarf Savaşçısı
@@ -216,8 +216,8 @@ trp_veteran_archer_of_gondor|Kıdemli Gondor Nişancısı
 trp_veteran_archer_of_gondor_pl|Kıdemli Gondor Nişancıları
 trp_archer_of_the_tower_guard|Hisar Kılıç Ustaları
 trp_archer_of_the_tower_guard_pl|Hisar Kılıç Ustaları
-trp_steward_guard|Kahya Kaftanı
-trp_steward_guard_pl|Kahya Kaftanı
+trp_steward_guard|Vekilharç Koruması
+trp_steward_guard_pl|Vekilharç Koruması
 trp_ranger_of_ithilien|Ithilien Okçusu
 trp_ranger_of_ithilien_pl|Ithilien Okçuları
 trp_veteran_ranger_of_ithilien|Tecrübeli Ithilien Okçusu
@@ -366,32 +366,32 @@ trp_thranduils_spearman|Thranduil'in Kraliyet Mızrakçısı
 trp_thranduils_spearman_pl|Thranduil'in Kraliyet Mızrakçıları
 trp_greenwood_standard_bearer|Greenwood Bayrak Taşıyıcısı
 trp_greenwood_standard_bearer_pl|Greenwood Bayrak Taşıyıcıları
-trp_rivendell_scout|Rivendell Gözcüsü
-trp_rivendell_scout_pl|Rivendell Gözcüleri
-trp_rivendell_veteran_scout|Rivendell Kıdemli İzcisi
-trp_rivendell_veteran_scout_pl|Rivendell Kıdemli İzcileri
-trp_rivendell_sentinel|Rivendel Nöbetçisi
-trp_rivendell_sentinel_pl|Rivendel Nöbetçileri
-trp_rivendell_veteran_sentinel|Rivendel Kıdemli Nöbetçisi
-trp_rivendell_veteran_sentinel_pl|Rivendel Kıdemli Nöbetçileri
-trp_rivendell_elite_sentinel|Rivendel seçkin Nöbetçisi
-trp_rivendell_elite_sentinel_pl|Rivendel Seçkin Nöbetçileri
-trp_rivendell_guardian|Rivendel Koruyucusu
-trp_rivendell_guardian_pl|Rivendel Koruyucuları
-trp_rivendell_infantry|Rivendell Piyadesi
-trp_rivendell_infantry_pl|Rivendell Piyadesi
-trp_rivendell_veteran_infantry|Rivendel Kıdemli Piyadesi
-trp_rivendell_veteran_infantry_pl|Rivendel Kıdemli Piyadesi
-trp_rivendell_elite_infantry|Rivendell Seçkin Piyadesi
-trp_rivendell_elite_infantry_pl|Rivendell Seçkin Piyadesi
-trp_rivendell_royal_infantry|Rivendel Kraliyet Piyadesi
-trp_rivendell_royal_infantry_pl|Rivendel Kraliyet Piyadesi
-trp_rivendell_cavalry|Rivendel Süvarisi
-trp_rivendell_cavalry_pl|Rivendel Süvarisi
-trp_knight_of_rivendell|Rivendel Şovalyesi
-trp_knight_of_rivendell_pl|Rivendel Şovalyeleri
-trp_rivendell_standard_bearer|Rivendel Bayrak Taşıyıcısı
-trp_rivendell_standard_bearer_pl|Rivendel Bayrak Taşıyıcıları
+trp_rivendell_scout|Ayrıkvadi Gözcüsü
+trp_rivendell_scout_pl|Ayrıkvadi Gözcüleri
+trp_rivendell_veteran_scout|Ayrıkvadi Kıdemli İzcisi
+trp_rivendell_veteran_scout_pl|Ayrıkvadi Kıdemli İzcileri
+trp_rivendell_sentinel|Ayrıkvadi Nöbetçisi
+trp_rivendell_sentinel_pl|Ayrıkvadi Nöbetçileri
+trp_rivendell_veteran_sentinel|Ayrıkvadi Kıdemli Nöbetçisi
+trp_rivendell_veteran_sentinel_pl|Ayrıkvadi Kıdemli Nöbetçileri
+trp_rivendell_elite_sentinel|Ayrıkvadi seçkin Nöbetçisi
+trp_rivendell_elite_sentinel_pl|Ayrıkvadi Seçkin Nöbetçileri
+trp_rivendell_guardian|Ayrıkvadi Koruyucusu
+trp_rivendell_guardian_pl|Ayrıkvadi Koruyucuları
+trp_rivendell_infantry|Ayrıkvadi Piyadesi
+trp_rivendell_infantry_pl|Ayrıkvadi Piyadesi
+trp_rivendell_veteran_infantry|Ayrıkvadi Kıdemli Piyadesi
+trp_rivendell_veteran_infantry_pl|Ayrıkvadi Kıdemli Piyadesi
+trp_rivendell_elite_infantry|Ayrıkvadi Seçkin Piyadesi
+trp_rivendell_elite_infantry_pl|Ayrıkvadi Seçkin Piyadesi
+trp_rivendell_royal_infantry|Ayrıkvadi Kraliyet Piyadesi
+trp_rivendell_royal_infantry_pl|Ayrıkvadi Kraliyet Piyadesi
+trp_rivendell_cavalry|Ayrıkvadi Süvarisi
+trp_rivendell_cavalry_pl|Ayrıkvadi Süvarisi
+trp_knight_of_rivendell|Ayrıkvadi Şovalyesi
+trp_knight_of_rivendell_pl|Ayrıkvadi Şovalyeleri
+trp_rivendell_standard_bearer|Ayrıkvadi Bayrak Taşıyıcısı
+trp_rivendell_standard_bearer_pl|Ayrıkvadi Bayrak Taşıyıcıları
 trp_dunedain_scout|Dunedain İzcisi
 trp_dunedain_scout_pl|Dunedain İzcileri
 trp_dunedain_trained_scout|Dunedain İz Sürücü
@@ -590,8 +590,8 @@ trp_veteran_pikeman_of_umbar|Kıdemli Umbar Kargıcısı
 trp_veteran_pikeman_of_umbar_pl|Kıdemli Umbar Kargıcıları
 trp_pike_master_of_umbar|Korsan Kargı Ustası
 trp_pike_master_of_umbar_pl|Korsan Kargı Ustaları
-trp_orc_snaga_of_isengard|Isengard'lı Ork Snaga
-trp_orc_snaga_of_isengard_pl|Isengard'lı Ork Snagalar
+trp_orc_snaga_of_isengard|Isengardlı Ork Snaga
+trp_orc_snaga_of_isengard_pl|Isengardlı Ork Snagalar
 trp_orc_of_isengard|Isengard Orku
 trp_orc_of_isengard_pl|Isengard Orkları
 trp_large_orc_of_isengard|Büyük Isengard Orku
@@ -776,10 +776,10 @@ trp_elf_captain_of_mirkwood|Greenwood Elf Kaptanı
 trp_elf_captain_of_mirkwood_pl|Greenwood Elf Kaptanları
 trp_mirkwood_lieutenant|Greenwood Teğmeni
 trp_mirkwood_lieutenant_pl|Greenwood Teğmenleri
-trp_elf_captain_of_rivendell|Rivendell Elf Kaptanı
-trp_elf_captain_of_rivendell_pl|Rivendell Elf Kaptanları
-trp_rivendell_lieutenant|Rivendell Teğmeni
-trp_rivendell_lieutenant_pl|Rivendell Teğmenleri
+trp_elf_captain_of_rivendell|Ayrıkvadi Elf Kaptanı
+trp_elf_captain_of_rivendell_pl| Ayrıkvadi Elf Kaptanları
+trp_rivendell_lieutenant|Ayrıkvadi Teğmeni
+trp_rivendell_lieutenant_pl|Ayrıkvadi Teğmenleri
 trp_lieutenant_of_rohan|Rohan Teğmeni
 trp_lieutenant_of_rohan_pl|Rohan Teğmenleri
 trp_captain_of_rohan|Rohan Kaptanı
@@ -946,7 +946,7 @@ trp_npc14|Fuldimir
 trp_npc15|Bolzog
 trp_npc16|Varfang
 trp_npc17|Dimborn
-trp_gondor_lord|Kahya Denethor
+trp_gondor_lord|Vekilharç Denethor
 trp_gondor_lord_pl|Kahya
 trp_rohan_lord|Kral Theoden
 trp_rohan_lord_pl|Kral
