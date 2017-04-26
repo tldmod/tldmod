@@ -994,7 +994,7 @@ trp_knight_1_4|오르탈리온
 trp_knight_1_5|두이니르
 trp_knight_1_6|공정한 힐루인
 trp_knight_1_7|파라미르
-; trp_knight_1_8|Forlong the Fat
+trp_knight_1_8|뚱뚱한 포를롱
 trp_knight_1_9|그림볼드
 trp_knight_1_10|에르켄브랜드
 trp_knight_1_11|엘프헬름
@@ -1018,7 +1018,7 @@ trp_knight_2_6|사자 카르나 족장
 trp_knight_2_7|나만 족장
 trp_knight_2_8|하리스 족장
 trp_knight_2_11|쿠술라크
-; trp_knight_2_12|Ulwarth the Balchoth
+trp_knight_2_12|발코스의 재림,울아스
 trp_knight_2_13|브로다
 trp_knight_2_16|토라스크
 trp_knight_2_17|럼사쿤
@@ -1072,7 +1072,7 @@ trp_smith_wosgiliath|가르딜
 trp_smith_wosgiliath_pl|임시 대장간
 trp_smith_calembel|아그로놈
 trp_smith_calembel_pl|대장간
-; trp_smith_hannun|Fal the Ranger Smith
+trp_smith_hannun|순찰대 대장장이,팔
 ; trp_smith_hannun_pl|ranger gear stash
 trp_smith_candros|칼림도르
 trp_smith_candros_pl|대장간
@@ -1144,7 +1144,7 @@ trp_smith_dolguldur_pl|대장간
 trp_smith_north_rhun_pl|임시 대장간
 ; trp_smith_gundabad|Blurg Snowseller
 trp_smith_gundabad_pl|대장간
-; trp_smith_ironhill|Ironhill Smith
+trp_smith_ironhill|철산 대장장이
 trp_smith_ironhill_pl|드워프 야영지 대장장이
 trp_town_50_weaponsmith|병기제조자
 trp_town_50_weaponsmith_pl|대장간
@@ -1160,7 +1160,7 @@ trp_smith_lorien_ac|화살제조장인 디미리안
 trp_smith_lorien_ac_pl|엘프족 무기제작자
 trp_smith_woodelf_ac|도엘라스
 trp_smith_woodelf_ac_pl|대장간
-; trp_smith_dwarf_ac|Ironhill Smith
+trp_smith_dwarf_ac|철산 대장장이
 trp_smith_dwarf_ac_pl|드워프 야영지 대장장이
 ; trp_smith_gundabad_ac|Blurg Snowseller
 trp_smith_gundabad_ac_pl|대장간
