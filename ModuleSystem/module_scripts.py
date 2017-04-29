@@ -2385,11 +2385,11 @@ scripts = [
 						(faction_get_slot, ":prisoner_train_pt", ":faction_receiving_prisoners", slot_faction_prisoner_train),
 						(neq, ":prisoner_train_pt", -1),
 						
-						## Kham - we will be using our new dormant party system for prisoner trains
-						#(set_spawn_radius, 1),
-						#(spawn_around_party, ":nonempty_winner_party", ":prisoner_train_pt"),
+						
+						(set_spawn_radius, 1),
+						(spawn_around_party, ":nonempty_winner_party", ":prisoner_train_pt"),
 
-						(call_script, "script_spawn_around_party", ":nonempty_winner_party", ":prisoner_train_pt"),
+						
 						(assign, ":prisoner_train", reg0),
 						(party_set_faction, ":prisoner_train", ":faction_receiving_prisoners"),
 						(party_set_slot, ":prisoner_train", slot_party_victory_value, ws_p_train_vp),

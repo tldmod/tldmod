@@ -439,11 +439,11 @@ morale_scripts = [
       				(try_end),
       				(le, ":total_parties", "$tld_option_max_parties"),
 				
-				## Kham - we will use our dormant party system for routed parties instead
-				#(set_spawn_radius, 3),
-            	#		(spawn_around_party, "p_main_party", "pt_routed_allies"),
+				
+				(set_spawn_radius, 3),
+            			(spawn_around_party, "p_main_party", "pt_routed_allies"),
 
-            			(call_script, "script_spawn_around_party", "p_main_party", "pt_routed_allies"),
+            			
             			(assign, ":routed_party", reg0),
 				(call_script, "script_party_add_party", ":routed_party", "p_routed_troops"),
 				(call_script, "script_party_add_party", ":routed_party", "p_routed_allies"),
@@ -509,12 +509,12 @@ morale_scripts = [
       				(le, ":total_parties", "$tld_option_max_parties"),
 				(eq, "$g_spawn_enemies_routed", 1),
 				
-				## Kham - we will use our dormant party system for routed parties instead
+				
 
-				#(set_spawn_radius, 3),
-            			#(spawn_around_party, "p_main_party", "pt_routed_enemies"),
+				(set_spawn_radius, 3),
+            			(spawn_around_party, "p_main_party", "pt_routed_enemies"),
 
-            			(call_script, "script_spawn_around_party", "p_main_party", "pt_routed_enemies"),
+            	
             			(assign, ":routed_party", reg0),
             			(party_set_slot, ":routed_party", slot_party_commander_party, -1), #Kham - fix
 				(call_script, "script_party_add_party", ":routed_party", "p_routed_enemies"),

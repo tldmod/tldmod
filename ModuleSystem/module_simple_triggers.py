@@ -2541,9 +2541,9 @@ simple_triggers = [
 			(is_between, ":template", "pt_routed_allies", "pt_legion_minas_morgul"),
 			(party_is_in_any_town, ":party_no"),
 			
-      #Kham - We will use our dormant removal system instead. 
-      #(call_script, "script_safe_remove_party", ":party_no"),
-      (call_script, "script_remove_party", ":party_no"),
+      
+      (call_script, "script_safe_remove_party", ":party_no"),
+      
 
 		(try_end),
 		(party_is_active, ":party_no"),
@@ -2564,9 +2564,9 @@ simple_triggers = [
 		#(display_message, "@DEBUG: player at: {reg1}, {reg2}", debug_color),
 		(call_script, "script_party_prisoners_add_party_prisoners", ":cur_center", ":party_no"),
 
-     #Kham - We will use our dormant removal system instead. 
-		#(call_script, "script_safe_remove_party", ":party_no"),
-    (call_script, "script_remove_party", ":party_no"),
+    
+		(call_script, "script_safe_remove_party", ":party_no"),
+    
 	(try_end),
    ]),
 
