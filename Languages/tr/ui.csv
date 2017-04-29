@@ -5,7 +5,7 @@ ui_explanation_agility|Her puan 5 silah hüneri verir ve silah hızını %0.5 ar
 ui_retreated_battle|%s savaş alanından kaçtı.
 ui_riding_skill_not_adequate_to_mount|Binicilik seviyesi düşük
 ui_camp|Kamp
-ui_tutorial_inventory|The Last Days'de, Ekipman almak için araştırma puanına ihtiyacınız vardır.
+ui_tutorial_inventory|The Last Days'de, Ekipman almak için Kaynak puanına ihtiyacınız vardır.
 ui_you_dont_have_value|%s'ye sahip değilsin
 ui_merchant_cant_afford_value|%s: Bize ihtiyacımız olandan daha fazlasını veriyorsun! Belki birazını kendine saklamalısın ( %s için eşya veriyorsun, yalnızca %s kullanabiliriz )
 ui_merchant_pay_whatever|Hayır, bunlara ihtiyacım yok, sende kalsın.
@@ -22,7 +22,7 @@ ui_notification_payment_receive_value|%s alınacak
 ui_weekly_cost_value|Haftalık ücret: %s
 ui_sell|Ver
 ui_hire|Alındı
-ui_notification_cant_hire|yeterli R.P. alınmadı
+ui_notification_cant_hire|(kayıt için yeterli R.P. alınmadı)
 ui_joining_cost_weekly_wage|Alım: %d Res.Pts. -- Bakım: %d Res.Pts.
 ui_weekly_wage|Haftalık ücret: %s
 ui_price|Değer: %d Res.P.

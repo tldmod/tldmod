@@ -199,10 +199,13 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|Sehr gut, {playername}. Du bist ein äußerst treuer und nützlicher Diener. Dieser Troll wird sich für Unsere Absichten als sehr nutzbringend erweisen. In die Verliese mit ihm!
 dlga_lord_start:close_window.1|Vor allzu langer Zeit bat ich dich, mir einen lebenden Troll zu bringen. Aber ich hätte es wissen müssen. Wie konnte ich nur vermuten, jemand wie du, {playername}, wäre dieser Herausvorderung gewachsen. Mein Diener war nicht fähig oder treu genug.
 dlga_lord_start:lord_generic_mission_completed.1|Mich erreichte Nachricht über Eure Erfolge gegen die wilden Trolle. Dank euch muss sich {s12} nun um eine Sorge weniger kümmern, {playername}.
-dlga_lord_start:lord_generic_mission_completed.2|Unsere Späher in der Nähe von {s12} berichten, dass Ihr das Dorf tapfer verteidigt habt. DIese Plünderer werden jeden Tag wagemutiger... ^^Wir spüren, dass ein Krieg heranzieht. Habt Dank, {playername}.
+dlga_lord_start:lord_generic_mission_completed.2|Unsere Späher in der Nähe von {s12} haben von Eurem Erfolg berichtet. Das wird unseren Feinden eine Lehre sein und ihre Vorstöße verlangsamen.
+; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
+dlga_destroy_scout_camp_failed:close_window|Ich werde nicht noch einmal versagen.
+dlga_lord_start:lord_generic_mission_completed.3|Unsere Späher in der Nähe von {s12} berichten, dass Ihr das Dorf tapfer verteidigt habt. DIese Plünderer werden jeden Tag wagemutiger... ^^Wir spüren, dass ein Krieg heranzieht. Habt Dank, {playername}.
 dlga_lord_start:defend_village_failed|Unsere Späher in der Nähe von {s12} berichten, dass Ihr es nicht geschafft habt, das Dorf zu verteidigen. Die Bauern wurden entweder niedergeschlachtet oder versklavt. Diese Plünderer werden jeden Tag wagemutiger... ^^Wahrlich, wir spüren alle, dass ein Krieg heranzieht.
 dlga_defend_village_failed:close_window|Ich werde nicht noch einmal versagen.
-dlga_lord_start:lord_generic_mission_completed.3|Wir sahen die Flammen über dem Dorf nahe {s12}. Wir hörten die Schreie. Dies ist nur der Anfang, {playername}. ^^Der große Krieg naht.
+dlga_lord_start:lord_generic_mission_completed.4|Wir sahen die Flammen über dem Dorf nahe {s12}. Wir hörten die Schreie. Dies ist nur der Anfang, {playername}. ^^Der große Krieg naht.
 dlga_lord_start:raid_village_failed|Wir sahen einige deiner Krieger aus dem Dorf in der Nähe von {s12} fliehen. Du wagst es, hierher zurückzukommen und dein Gesicht zu zeigen, {playername}? ^^Es wird Krieg geben, aber wenn du weiterhin so versagst, wirst du der erste Tote.
 dlga_raid_village_failed:close_window|Ich werde nicht noch einmal versagen.
 dlga_lord_start:lord_follow_spy_half_completed|Verdammt! Ich wollte ZWEI Gefangene, {playername}. Was Ihr mir gebracht habt, ist nahezu völlig nutzlos! Ich weiß bereits alles, was der Spion weiß. Ich wollte den Kontaktmann. Hier, die Hälfte der Aufgabe gibt auch nur die Hälfte der Belohnung. Nehmt sie und geht.
@@ -211,7 +214,7 @@ dlga_lord_start:lord_follow_spy_failed|Wahrlich, {playername}, Ihr seid nichts a
 dlga_lord_follow_spy_half_completed:lord_pretalk|Ich habe mein Bestes gegeben, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Danke, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Wir Ihr wünscht, {s65}.
-dlga_lord_start:lord_generic_mission_completed.4|Verdammt, du hast es geschafft, {playername}. Alle Sklaven sind zurück und bereiten fleißig die Ernte vor. Du hast deine Belohnung verdient. Hier, nimm dies, mit meiner Empfehlung.
+dlga_lord_start:lord_generic_mission_completed.5|Verdammt, du hast es geschafft, {playername}. Alle Sklaven sind zurück und bereiten fleißig die Ernte vor. Du hast deine Belohnung verdient. Hier, nimm dies, mit meiner Empfehlung.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. Ich habe geduldig auf meine Sklaven gewartet, aber sie sind nicht zurückgekehrt. Hast du eine Erklärung? Wurdest du von schlichten Tieren überlistet, oder bist du einfach unfähig?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Vergebt mir, {s65}, diese Sklaven waren schlüpfrig wie Aale.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hrmph, das ist kaum eine Entschuldigung für dein Versagen, {playername}. Nun, wenn du mich entschuldigt, ich muss neue Männer fangen, um die Felder zu bebauen, bevor wir alle hungern.

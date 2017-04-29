@@ -1,15 +1,15 @@
-str_yes|Evet
-str_no|Hayır
-str_noone|hiç kimse
+str_yes|Evet.
+str_no|Hayır.
+str_noone|hiçkimse
 str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} ve {s51}
-str_s5_s_party|{s5}'in partisi
+str_s5_s_party|{s5}'in Grubu
 str_s5_s_host|{s5}'in Ordusu
 str_given_by_s1_at_s2|{s2} bölgesinde {s1} tarafından verildi
 str_given_by_s1_in_wilderness|Kırda {s1} tarafından verildi
 str_s7_raiders|{s7} Yağmacıları
 str_bandits_eliminated_by_another|Belalı eşkıyalar başka bir grup tarafından yok edildi.
-str_msg_battle_won|Savaş kazanıldı! Ayrılmak için Tab'a basın ...
+str_msg_battle_won|Savaş kazanıldı! Ayrılmak için Tab'a basın...
 str_tutorial_map1|Şu anda harita modundasınız. Seyahat etmek, kasabalara girmek ve başka gruplarla karşılaşmak için harita üzerinde bir yere farenin sol tuşuyla tıklayın. Normalde, grubunuz hareket etmedikçe zaman ilerlemez. Bir noktada beklemek istiyorsanız, boşluk tuşuna basılı tutun.
 str_accept|Kabul et
 str_charge|Hücum
@@ -19,12 +19,12 @@ str_flip_vertical|Dikey tersyüz et
 str_hold_fire|Ateşi Kes
 str_blunt_hold_fire|Kör silahlar / Ateşi Kes
 str_tutorial_ammo_refilled|Cephane yenilendi
-str_custom_battle_1|Kaptan Malvogil ve Gondor bölüğü Harad takviye grubunun yolunu kesti. Savaş narasını atarken, atını ileri doğru sürdü, ve sadık adamlarını çetin bir savaşa götürdü.
+str_custom_battle_1|Kaptan Malvogil ve Gondor bölüğü Harad takviye grubunun yolunu kesti. Savaş narasını atarak, atını ileri doğru sürdü, ve sadık adamlarını çetin bir savaşa götürdü.
 str_custom_battle_2|Lorien'li Celeborn bir atlı ve okçu devriyesine öncülük ederken gözcü, soluk yüzlü, kötü bir insan birliğinin yaklaştığının uyarısını veriyor. Bunlar korkunç Kara Numenorlular! Lothlorien'de yıllarca görülmemişlerdi ama şimdi öteki taraftan sürülmüş olmalılar.
 str_custom_battle_3|Rohanlı Lord Grimbold duvarların arkasında İsengard ordularına karşı son savunmasına hazırlanıyor. Şimdi kuşatmacılar son saldırılarına hazırlanırken, duvarlar cesaret ve parlak çeliğin ilhamıyla savunulmalıdır.
 str_custom_battle_4|Gözcüler Rhun savaşçılarının yaklaştığını Lord Beranhelm'e bildirdiklerinde, kamp yerinin defansını çabucak hazırlamaya ve daha kalabalık sayılara karşı ayakta tutmaya karar verdi.
-str_custom_battle_5|Ugluk, azılı orksielerini  yağma sözüyle batıya getirdi.Eğer onun için bu cüce kalesini bugün düşürmeyi başarabilirse,Barad-Dur'daki efendileri çokça memnun olacaktı.
-str_custom_battle_6|Ugluk ve onun ork akıncı grubu elf devriyelerinden kaçmakta oldukça istekli.Ancak görünen bu ki, o iyi şans sonsuza kadar sürmeyeceğinden, lanet soluk derililer paylarını şimdi alacaklar.
+str_custom_battle_5|Ugluk, azılı orksielerini  yağma sözüyle batıya getirdi.Eğer onun için bu cüce kalesini bugün düşürmeyi başarabilirse,Barad-Dur'daki efendileri oldukça memnun olacaktır.
+str_custom_battle_6|Ugluk ve onun ork akıncı grubu elf devriyelerinden kaçmakta oldukça istekli.Ancak görünen o ki, iyi şans sonsuza kadar sürmeyeceğinden, lanet soluk derililer paylarını şimdi alacaklar.
 str_custom_battle_7|Korsanlar kamplarını Gondor kıyılarına kurdular! Nasıl cüret ederler! Takviye almadan önce onlara saldıralım ve ait oldukları yere, denize sürelim onları.
 str_finished|(Bitti)
 str_delivered_damage|{reg60} hasar verdiniz.
@@ -35,7 +35,7 @@ str_cant_use_inventory_arena|Arena'daki envantere ulaşılamıyor
 str_cant_use_inventory_disguised|Eğitim kampındaki envantere ulaşılamıyor
 str_cant_use_inventory_tutorial|Eğitim kampındaki envantere ulaşılamıyor
 str_1_denar|1 Kaynak Birimi.
-str_reg1_denars|{reg1} Kaynak Birimleri.
+str_reg1_denars|{reg1} Kaynak Puanı.
 str_january_reg1_reg2|Ü.Ç.{reg2}, Narvinyë {reg1} (Ock)
 str_february_reg1_reg2|Ü.Ç.{reg2}, Nénimë {reg1} (Şub)
 str_march_reg1_reg2|Ü.Ç.{reg2}, Súlìmë {reg1} (Mar)
@@ -64,7 +64,7 @@ str_do_you_want_to_retreat|Geri çekilmek istediğinizden emin misiniz ?
 str_give_up_fight|Savaştan çekiliyor musunuz?
 str_do_you_wish_to_leave_tutorial|Eğitimden ayrılmak mı istiyorsun ?
 str_do_you_wish_to_surrender|Teslim mi olmak istiyorsun ?
-str_can_not_retreat|Geri çekinilmiyor , düşman birlikler yakında!
+str_can_not_retreat|Geri çekinilemiyor , düşman birlikler çok yakında!
 str_s1_joined_battle_enemy|{s1}, düşman tarafında savaşa katıldı.
 str_s1_joined_battle_friend|{s1}, sizin tarafınızda savaşa katıldı.
 str_entrance_to_town_forbidden|Şehir muhafızları davetsiz misafirleri gözlüyor ve görünüşe bakılırsa kasabaya sorunsuz girmeniz kolay olmayacak.
@@ -86,7 +86,7 @@ str_siege_defender_order_attack_failure|Düşman savunmadakileri katlederken üm
 str_siege_defender_order_attack_continue|Savunmadakiler düşmanla çarpıştı, fakat onları yenemedi.
 str_hero_taken_prisoner|{s1} krallığından {s3} , {s2} tarafından esir alındı.
 str_hero_freed|{s1} krallığından {s3} , {s2} tarafından esaretten kurtarıldı.
-str_center_captured|{s2} {s1} tarafından {s3}'ndan alındı !
+str_center_captured|{s2} {s1} tarafından {s3}'dan alındı !
 str_troop_relation_increased|{s1} ile ilişkiniz {reg1}'den {reg2}'e yükseldi.
 str_troop_relation_detoriated|{s1} ile ilişkiniz {reg1}'den {reg2}'ye geriledi.
 str_faction_relation_increased|{s1} ile ilişkiniz {reg1}'den {reg2}'e yükseldi.
@@ -104,7 +104,7 @@ str_brother|Erkek kardeş
 str_sister|Kız kardeş
 str_he|O
 str_she|O
-str_s3s_s2|{s3}'nin {s2}
+str_s3s_s2|{s3}'nin {s2}'si
 str_s5_is_s51|{s5}  {s51}.
 str_s5_is_the_ruler_of_s51|{s5} , {s51} topraklarının hükümdarıdır.
 str_s5_is_a_nobleman_of_s6|{s5} bir {s6} soylusudur. 
@@ -150,10 +150,10 @@ str_relation_plus_80_ns|{s60} sana sadık.
 str_relation_plus_90_ns|{s60} sana bağlı.
 str_relation_reg1|İlişki: {reg1}
 str_center_relation_mnus_100|Toplum senden ölümüne nefret ediyor.
-str_center_relation_mnus_90|Toplum senden derince nefret ediyor.
+str_center_relation_mnus_90|Toplum senden çok fazla nefret ediyor.
 str_center_relation_mnus_80|Toplum senden güçlüce nefret ediyor.
 str_center_relation_mnus_70|Toplum senden nefret ediyor.
-str_center_relation_mnus_60|Toplum sana karşı nefretçil.
+str_center_relation_mnus_60|Toplum sana karşı nefret dolu.
 str_center_relation_mnus_50|Toplum sana karşı son derece düşmanca
 str_center_relation_mnus_40|Toplum sana karşı çok düşmanca
 str_center_relation_mnus_30|Toplum sana karşı düşmanca
@@ -201,11 +201,11 @@ str_war_report_plus_2|işler gayet iyi gidiyor
 str_war_report_plus_3|Onları yenerken zorluk çekmemeliyiz
 str_war_report_plus_4|Savaşı kazanmak üzereyiz.
 str_persuasion_summary_very_bad|{s50} ı ikna etmek için elinden geleni yaptın, her denemende tam olacak derken bir şekilde kendini ele verdin. Konuşmanın sonucunda olarak tek bir tutarlı nokta yoktu. Tek yaptığın sonunda bindiğin dalı kesmek oldu. Sonuç olarak {s50} etkilenmişe benzemiyor.
-str_persuasion_summary_bad|{S50} 'yi ikna etmeye çalıştınız, ancak {reg51? She: he} en başından beri sana karşı üstünlük sağlıyordu. En iyi argümanların bile kendi kulaklarına boş geliyordu. {S50}, aynı şekilde, ne söylemen gerektiğine dair bir görüş oluşturamadı
-str_persuasion_summary_average|Anlaşılan {s50} keskin zekasıyla yetenekli bir konuşmacı, ortaya koyduğun her argümanı {reg51?she:he} bir şekilde etkisiz hale getirdi. Konuşmanın sonunda kimse bir şey kazanıp kaybetmedi.
-str_persuasion_summary_good|Hızlı düşünme ve akıcı konuşmanla durumu çok iyi açıkladın, bazı konularda {s50} ile aynı görüşte olabildiniz. Fakat {reg51?she:he} bazı noktalarda hala şüpheleri var.
-str_persuasion_summary_very_good|Dinleyen herkesin kulağında yankılanan, ateşli bir konuşma sergiliyorsun. Öyle ki, dünyanın kendisi seni daha iyi duymak için sesini kısmış gibi duruyor. {s50} ilham verici bu sözlerden  derinden etkiliyor ve {reg51?she:he} sana karşı yardıma çok daha hazır ve istekli görünüyor.
-str_surname_1|{s50} Tarnost
+str_persuasion_summary_bad|{S50} 'yi ikna etmeye çalıştın, ancak {reg51?o:o} en başından beri sana karşı üstünlük sağlıyordu. En iyi argümanların bile kendi kulaklarına boş geliyordu. {S50}, aynı şekilde, ne söylemen gerektiğine dair bir görüş oluşturamadı
+str_persuasion_summary_average|Anlaşılan {s50} keskin zekasıyla yetenekli bir konuşmacı, ortaya koyduğun her argümanı {reg51?o:o} bir şekilde etkisiz hale getirdi. Konuşmanın sonunda kimse bir şey kazanıp kaybetmedi.
+str_persuasion_summary_good|Hızlı düşünme ve akıcı konuşmanla durumu çok iyi açıkladın, bazı konularda {s50} ile aynı görüşte olabildiniz. Fakat {reg51?Onun:Onun} bazı noktalarda hala şüpheleri var.
+str_persuasion_summary_very_good|Dinleyen herkesin kulağında yankılanan, ateşli bir konuşma sergiliyorsun. Öyle ki, dünyanın kendisi seni daha iyi duymak için sesini kısmış gibi duruyor. {s50} ilham verici bu sözlerden  derinden etkiliyor ve {reg51?o:o} sana karşı yardıma çok daha hazır ve istekli görünüyor.
+str_surname_1|Tarnost'dan {s50}
 str_surname_2|Lossarnach'dan {s50}
 str_surname_3|Erech'den {s50}
 str_surname_4|Edhellond'dan {s50}
@@ -223,11 +223,11 @@ str_surname_15|Osgiliath'dan {s50}
 str_surname_16|Moria'dan {s50}
 str_surname_17|Dale'dan {s50}
 str_surname_18|Esgaroth'dan {s50}
-str_surname_19|{s50} Dol Guldur
+str_surname_19|Dol Guldur'dan {s50} 
 str_surname_20|Gundabad'dan {s50}
 str_surname_21|Long'dan {s50}
-str_surname_22|Sıska {s50}
-str_surname_23|{s50} Nazgûl
+str_surname_22|Gaunt'dan {s50}
+str_surname_23|Nazgûl {s50}
 str_surname_24|Serçe {s50}
 str_surname_25|Lanetli {s50}
 str_surname_26|Yara izli {s50}
@@ -235,12 +235,12 @@ str_surname_27|Adil {s50}
 str_surname_28|Gaddar {s50}
 str_surname_29|Kızıl {s50}
 str_surname_30|Kara {s50}
-str_surname_31|{s50} Uzun
+str_surname_31|Uzun {s50}
 str_surname_32|Yıldız gözlü {s50}
 str_surname_33|Korkusuz {s50}
 str_surname_34|Ağaçısıran {s50}
 str_surname_35|Kurnaz {s50}
-str_surname_36|{s50} Korkak
+str_surname_36|Korkak {s50}
 str_surname_37|Parlak {s50}
 str_surname_38|Atik {s50}
 str_surname_39|Ozan {s50}
@@ -255,17 +255,17 @@ str_siege_continues|Savaş devam ediyor...
 str_casualty_display|Kayıpların: {s10}^Düşman Kayıpları: {s11}{s12}
 str_casualty_display_hp|Şu kadar darbe puanına yaralandın: {reg1}
 str_quest_log_updated|Görev defteri güncellendi...
-str_banner_selection_text|Sancak taşıma hakkını kazandın.SAncağın mevkiini gösterecek ve sana saygınlık kazandıracak.Hangi sancağı seçmek istiyorsun?
-str_retirement_text_1|Paranın fazla daynmayacağını fark ettiğinde çok geç oldu. Kazandığın azıcık parayı boşa harcaman fazla zamanını almadı, ve bir kaç umutsuz maceracılık girişimi için zavallıca yola çıktın. {s9}'de yardım ve kilise sadakaları ile geçimini sağlayan bir dilenci olarak yaşamını sonlandırdın,
-str_retirement_text_2|Paranın fazla daynmayacağını fark ettiğinde çok geç oldu. Biriktirdiğin azıcık parayı boşa harcaman da fazla zamanını almadı.Elindeki tüm dinarlar buharlaştıktan sonra {s9} arka sokaklarında suç hayatına girmeye zorlandın ve yeteneklerini şehirli fakir adamlardan ve kadınlardan çaldığın bakırlarla sürdürdün.
-str_retirement_text_3|Paranın fazla dayanmayacağını fark ettiğinde çok geç oldu. Biriktirdiğin parayı bitirmen çok uzun sürmedi ve kuruşsuz kaldın. Meyhane meyhane dolaşıp içki dilenip ve karşılığında kimsenin inanmadığı savaş hikayeleri anlattın.
-str_retirement_text_4|Kazandığın gümüş çok dayanmadı,fakat {s7} köyünün yakınlarında toprak almana yetti. Burada özgür bir çiftçi oldun, ve kısa zaman sonra potansiyel {karıların/kocaların} dikkatini çekmeye başladın. Zamanla köylüler sana yerel bir kahramanmışsın  gibi davranmaya başladılar. Ziyafetlerde her zaman onur köşesinde oturdun, ve kahramanlıkların meyhaneler ve tavernalarda defalarca anlatıldı. Böylece çocukların zihninde sonsuza kadar yer tuttun,
+str_banner_selection_text|Sancak taşıma hakkını kazandın.Sancağın mevkini gösterecek ve sana saygınlık kazandıracak.Hangi sancağı seçmek istiyorsun?
+str_retirement_text_1|Paranın fazla daynamayacağını fark ettiğinde çok geç oldu. Kazandığın azıcık parayı da boşa harcaman fazla zamanını almadı, ve bir kaç umutsuz maceracılık girişimi için yeniden zavallıca yola çıktın. {s9}'de yardım ve sadakalar ile geçimini sağlayan bir dilenci olarak yaşamını sonlandırdın.
+str_retirement_text_2|Paranın fazla daynmayacağını fark ettiğinde çok geç oldu. Biriktirdiğin azıcık parayı boşa harcaman da fazla zamanını almadı.Elindeki tüm dinarlar buharlaştıkdan sonra {s9}'ın arka sokaklarında suç hayatına girmeye zorlandın ve hayatını şehirli fakir adamlardan ve kadınlardan çaldığın bakırlarla sürdürdün.
+str_retirement_text_3|Paranın fazla dayanmayacağını fark ettiğinde çok geç oldu. Biriktirdiğin parayı bitirmen çok uzun sürmedi ve sonunda beş kuruşsuz kaldın. Meyhane meyhane dolaşıp içki dilenip ve karşılığında kimsenin inanmadığı savaş hikayeleri anlattın.
+str_retirement_text_4|Biriktirdiğin gümüş çok fazla dayanmadı,fakat {s7} köyünün yakınlarında toprak almana yetti. Burada özgür bir çiftçi oldun, ve kısa zaman sonra potansiyel {karılarının/kocalarının} dikkatini çekmeye başladın. Zamanla köylüler sana yerel bir kahramanmışsın  gibi davranmaya başladılar. Ziyafetlerde her zaman onur köşesinde oturdun, ve kahramanlıkların meyhaneler ve tavernalarda defalarca anlatıldı. Böylece çocukların zihninde sonsuza kadar yer tuttun,
 str_retirement_text_5|Biriktirdiğin gümüş uzun süre dayanmadı fakat {s9} da küçük bir meyhane almaya yetti. Başta yerliler senden endişeliydi ama kısa zamanda alıştılar. Zaman içinde büyüyen meyhane popüler bir ziyafet ve buluşma mekanı haline geldi. İnsanlar uzun yollardan konaklama yemek ve anlattığın destansı maceralarının hikayeleri için geldiler.
-str_retirement_text_6|Kariyerin boyunca akıllıca para biriktirdin ve şimdi gümüşün ve zekan sayesinde akıllı yatırımlar yapıyorsun. {s9} da birkaç dükkan ve depo aldıktan sonra keskin zekan seni şehirdeki en ünlü tüccarlardan biri yapıyor, kısa zamanda varlıklı bir {man/woman} oldun ve savaş kahramanlıkların kadar ticaret imparatorluğunla da ün saldın.
-str_retirement_text_7|Yoluna armış bir soylu olarak, küçük de olsan, geleceğinden emindin. 
-str_retirement_text_8|Kendini çok iyi idare ettiğin su götürmez bir gerçek. Geniş toprakların ve maceracılıktan gelen servetin, hayatının sonuna kadar zengin ve rahat bir yaşamı garantilemen için yeterli. {s8}ndeki soylu makamına emekli olmanla, macera yerine politika geçiyor ve kısa zamanda hükümdaının krallığında dikkate alınıyor ve  güce sahip oluyorsun. Kendini oyalayacak entrikalar, avlanacak ormanların, ziyafet verecek salonların ve anlatacak onlarca güzel savaş hikayenle, sonraki yılların tadını çıkarman hiç de zor olmuyor.
+str_retirement_text_6|Kariyerin boyunca akıllıca para biriktirdin ve şimdi gümüşün ve zekan sayesinde akıllı yatırımlar yapıyorsun. {s9} da birkaç dükkan ve depo aldıktan sonra keskin zekan seni şehirdeki en ünlü tüccarlardan biri yapıyor, kısa zamanda varlıklı bir {adam/kadın} oldun ve savaşdaki kahramanlıkların kadar ticaret imparatorluğunla da ün saldın.
+str_retirement_text_7|Her ne kadar küçük de olsa soylu bir toprak sahibi olarak, geleceğini garanti altına aldın.{s7} yakınlarına yerleştin.Köy ve tarlaları idare etmek, yerel mahkemelere başkanlık etmek ve lordun için yükümlülüklerini yerine getirmek neredeyse tüm vaktini alıyor.Bazen arkadaşların seni kendi gruplarına komuta etmeye çağırıyor, ancak bu gibi olaylar kısa sürüyor ve bunlar asla gençlik günlerininki gibi heyecanlı olmuyor. Zaten servet yaptığın için böyle şeylere de artık ihtiyacın yok. Artık hayattan tek bir isteğin var o da kalan ömrünü sağlıklı bir şekilde tamamlamak.
+str_retirement_text_8|Kendini çok iyi idare ettiğin su götürmez bir gerçek. Geniş toprakların ve maceracılıktan gelen servetin, hayatının sonuna kadar zengin ve rahat bir yaşamı garantilemen için yeterli. {s8}ndeki soylu makamından emekli olmanla, macera yerine politikaya atıldın ve kısa zamanda hükümdarının krallığında dikkate alınır ve  güce sahip oldun. Kendini oyalayacak entrikalar, avlanacak ormanların, ziyafet verecek salonların ve anlatacak onlarca güzel savaş hikayenle, sonraki yılların tadını çıkarman hiç de zor olmuyor.
 str_retirement_text_9|Lordun, etkin ve sadık hizmetlerine ödül olarak sana bir soyluluk ünvanı verilmesinde karar kıldı. Bundan sonra eylemlerine {s7} Baronu olarak devam edeceksin ve efendinin en yakın danışmanlarından biri olacaksın. Şimdi günlerini güç oyunlarıyla, mülklerini yöneterek ve eski günlerdeki ihtişamı yad ederek geçireceksin.
-str_retirement_text_10|Mütevazi bir noktadan başladıysan da, lordunun gözünde büyük itibara sahipsin ve sana {s9} {kontu/kontesi} olarak soysal bir ünvan verdiğinde ülkede bir şok dalgası oluşuyor. Geniş topraklar ve servet artık senin ellerinde. Hızlıca lordunun en güvenilir müşaviri oluyorsun, neredeyse dengi ve toprak yönetimi adına çoğu işi yapıyorsun ve Orta Dünyanın en güçlü figürlerinden birisi olarak ihtişamlı sarayındaki tahtına oturuyorsun.
+str_retirement_text_10|Mütevazi bir noktadan başladıysan da, lordunun gözünde büyük itibara sahipsin ve sana {s9} {kontu/kontesi} olarak soysal bir ünvan verildiğinde ülkede bir şok dalgası oluşuyor. Geniş topraklar ve servet artık senin ellerinde. Hızlıca lordunun en güvenilir müşaviri oluyorsun, neredeyse dengi ve toprak yönetimi adına çoğu işi yapıyorsun ve Orta Dünyanın en güçlü figürlerinden birisi olarak ihtişamlı sarayındaki tahtına oturuyorsun.
 str_loot_village|suçsuz köylülere saldır.
 str_steal_from_villagers|Fakir Köylülerden Çal
 str_rob_caravan|Bir Tüccar Karavanı Soy.
@@ -285,10 +285,10 @@ str_battle_fate_2|Yaralandım ve ölüme terk edildim.
 str_battle_fate_3|Düşman tarafından duygusuzca bayıltıldım.
 str_battle_fate_4|Fidye için alıkonuldum.
 str_battle_fate_5|Esir alınmıştım, fakat daha sonra kaçmayı başardım.
-str_npc_morale_report|Ben {s6} yoldaşlarının seçimi, {s7} liderliğinin şekli, ve {s8} genel durum
+str_npc_morale_report|Ben {s6} seçilmiş yoldaşınız, {s7} liderlik şekliniz, ve {s8} eyaletlerinizin genel durumu
 str_happy|hakkında mutluyum
 str_content|iletişim kur
-str_concerned|endişe etmek
+str_concerned|endişe et
 str_not_happy|bununla ilgili herkes mutlu değil
 str_miserable|Dehteşe düştüm
 str_morale_reg1|Moral: {reg1} 
@@ -298,30 +298,30 @@ str_bar_weary|Yorgun
 str_bar_disgruntled|Hoşnutsuz
 str_bar_miserable|Sefil
 str_here_plus_space|Burada 
-str_npc1_intro|Selamlar savaşçı  Henneth Annûn e hoş geldin.
+str_npc1_intro|Selamlar savaşçı,  Henneth Annûn e hoş geldin.
 str_npc2_intro|Selamlar ziyaretçi! Burada ne işin olduğunu sorabilir miyim ?
-str_npc3_intro|Hey! Gürültüyü kesermisin lütfen, gezgin.
+str_npc3_intro|Hey! Gürültüyü keser misin lütfen, gezgin.
 str_npc4_intro|Meduseld'e Hoş geldin, Savaşçı!
-str_npc5_intro|Merhaba {playername}. Mae govannen! hoşgeldiniz!
+str_npc5_intro|Merhaba {playername}. Mae govannen!
 str_npc6_intro|Beni yalnız bırak, yabancı, Seninle konuşmak istemiyorum.
 str_npc7_intro|Kili, Dwalin oğlu, hizmetinizdeyim!
 str_npc8_intro|Dale'e hoşgeldin, gezgin! Sana nasıl yardımcı olabilirim?
-str_npc9_intro|Şşt! Muhafızlara dalarsan mideni kesip warg'lara gönderirim!
+str_npc9_intro|Şşt! Muhafızlara dalarsan mideni kesip warg'lara yem ederim!
 str_npc10_intro|Sen!
-str_npc11_intro|Ar! Sen buralardan değilsin değil mi? Bunu koklayabiliyorum, ve eğer Boss'ların karşısında olamazsın dersen senin gözünü  sıkarak patlatırım.
-str_npc12_intro|Oho! Burada saklanıp ne yapıyorsun?
-str_npc13_intro|Orada dur!  Seni Chieftain'in çadırına getirende nedir?
+str_npc11_intro|Ar! Sen buralardan değilsin değil mi? Bunu koklayabiliyorum, ve eğer Patronların karşısında durman dersen senin gözlerini sıkarak patlatırım.
+str_npc12_intro|Oh! Burada saklanıp ne yapıyorsun?
+str_npc13_intro|Orada dur!  Seni Şef'in çadırına getirende nedir?
 str_npc14_intro|Sende bacakları denizde çok az zaman geçirmiş birinin yürüyüşü var yabancı.
 str_npc15_intro|Göz'e övgülerimi iletirim, ah Savaşçı!
-str_npc16_intro|Doğu topraklarındaki çadırlar arasında yürüyen bir yabancıyı görmek sık başıma gelen bir şey değil. Buraya ne getirdin? Şimdi konuş ve çabuk ol.
+str_npc16_intro|Doğu topraklarındaki çadırlar arasında yürüyen bir yabancıyı görmek sık başıma gelen bir şey değil. Seni buraya ne getirdi? Şimdi konuş ve çabuk ol.
 str_npc17_intro|Hey, buradaki ormanları sever misin?
-str_npc1_intro_response_1|Selamlar, Usta takipçi. Güney Rangers'ı nasıl buldun?
+str_npc1_intro_response_1|Selamlar, Usta izci. Güney Rangers'ı nasıl buldun?
 str_npc2_intro_response_1|Benim işlerim Gondor'un işleridir, ve sen kimsin?
 str_npc3_intro_response_1|Ve sana da iyi günler, yanlış bir şey mi vardı?
 str_npc4_intro_response_1|Selamlar, hanımefendi. Kiminle konuşma şerefine nail oluyorum?
 str_npc5_intro_response_1|Elf-lorduna selam! Sizinle tanışmak bir onurdur.
 str_npc6_intro_response_1|Silvan Elfleri misafirlerini böyle mi selamlarlar?
-str_npc7_intro_response_1|{playername} servisinizdedir. Durin'in nüfusu ne kadar?
+str_npc7_intro_response_1|{playername} hizmetinizdedir. Durin'in sayısı ne kadar?
 str_npc8_intro_response_1|Selamlar. Merak ediyordumda bizim yolculuğumuza katılmak isteyen paralı askerler var mı diye. 
 str_npc9_intro_response_1|Tehditlerini geri al Uruk, yoksa canın yanabilir. - Ben hain değilim.
 str_npc10_intro_response_1|Sen kimsin?
@@ -331,7 +331,7 @@ str_npc13_intro_response_1|Sen kimsin?
 str_npc14_intro_response_1|Sen kimsin?
 str_npc15_intro_response_1|Göz'e övgülerimi iletirim, Snaga. Senin hikayen nedir?
 str_npc16_intro_response_1|Sen kimsin?
-str_npc17_intro_response_1|Kuyutorman büyüleyici bir yer.Siz kimsiniz?Orman hakkında birşey biliyor musunuz?
+str_npc17_intro_response_1|Kuyutorman büyüleyici bir yer. Siz kimsiniz? Orman hakkında bir şey biliyor musunuz?
 str_npc1_intro_response_2|Boş ver,korkarım mağaralar konuşma yapmak için iyi bir yer değil.
 str_npc2_intro_response_2|Boş ver, bekçilerle konuşacak vaktim yok.
 str_npc3_intro_response_2|Boş ver,ben başka bir yerde 'curcuna' çıkartırım,
@@ -351,18 +351,18 @@ str_npc16_intro_response_2|Kendi işine bak!
 str_npc17_intro_response_2|Evet ,orman güzel, fakat şimdi gitmem gerek
 str_npc1_backstory_a|Zor zamanlarda geldin dostum. Ithilien düşman gözcü ve yağmacılarıyla kaynıyor ve bazıları büyük ork ordularının harekette olduğunu söylüyor.Bu iğrenç yaratıkların büyük nehirden geçmemesi için ben ve yönettiğim korucular çoğunlukla başarıya ulaştık.Kaptanım Faramir cesur o yüzden gölgenin üzerimize düşeceğinden korkmuyorum.
 str_npc2_backstory_a|Ah, beni düşünmeniz çok zarif doğrusu. Kısa zaman önce onun yönetiminin güvenliğini sağlamak üzere atandım. Gurur verici bir görev,  tabi çok olaylı değilse...
-; str_npc3_backstory_a|Well, my old helmet here is getting smaller by the minute and the ground seems wobbly as if I rode a mischievous foil. Ah, if I only hadn't drank all that ale last night - I normally have a good head for drink, so it must have been some nasty orc brew.
+str_npc3_backstory_a|Eh, Miğferim gittikçe küçülüyor ve basdığım yer sanki huysuz bir ata binmişim gibi titriyor.Ah, keşke dün akşam o kadar içmeseydim - Normalde bu kadar içki kafamı biraz güzel yapar, yani bira kesin Ork mayasıyla yapılmış.
 str_npc4_backstory_a|Benim adım Gálmynë. Bildiğin gibi işimi yapıyorum,{playername}. Bırak da sebebini anlatayım.
-str_npc5_backstory_a|Ölümlü adamlardan, geçmişteki unutulmuş savaşlardaki işlerim hakkında hikayeler duymuş olabilirsiniz. Bu zamana kadar bu Eldar'ın tehlikeye düştüğü ikinci fakat son savaş olacak.
-str_npc6_backstory_a|Küstahlığımı mazur gör, yabancı, ama buraya fazla ziyaretçi uğramaz ve gelenlerde çok güvenilir görünmüyor. Sadece bir hafta önce, bir cüce göründü... Boşver. Benim adım Silvan elflerinden Luevanna.
-str_npc7_backstory_a|Sormanız çok nazik {playername}.Doğuluların ve Gundabad orklarının akınlarıyla savaşıyoruz, ama şu ana dek Dale'li müttefiklerimizin ve bizlerin halledemediği bir şey yok.
+str_npc5_backstory_a|Ölümlü adamlardan, geçmişteki unutulmuş savaşlardaki işlerim hakkında hikayeler duymuş olabilirsin.Bu savaş şimdiye kadar Eldar'ın tehlikeye düştüğü ikinci fakat son savaş olacak.
+str_npc6_backstory_a|Küstahlığımı mazur gör, yabancı, ama buraya fazla ziyaretçi uğramaz ve gelenler de çok güvenilir görünmüyor. Sadece bir hafta önce, bir cüce görünmüştü... Neyse boşver. Ben Silvan elflerinden Luebanna.
+str_npc7_backstory_a|Sormanız çok nazik {playername}.Doğuluların ve Gundabad orklarının akınlarıyla savaşıyoruz, ama şu ana dek Daleli müttefiklerimizin ve bizlerin halledemediği bir şey yok.
 str_npc8_backstory_a|Eminim ki barakalardaki subayla konuşursan, sağlam gönüllüler bulabilirsin. Bana gelince, ben sadece bir şifacı ve mütevazi yeteneklere sahip bir bitki uzmanıyım.
-str_npc9_backstory_a|Aferin! Bana Gulm derler. Çavuşumu geberttim ve şimdi o snagalar benim için ava çıktı. ^ Değersiz domuz yavrusu gelmişti! Bir keresinde, bir samanlık devriyesi tarafından tuzağa düşürüldük ... ve o kaybetti. "Geri çekilin" diye ciyaklıyor, sonra kaçmaya başlıyordu. Sadece Gulm ve birkaç kişi sıkı durdu ve atlı hücumunu kırdı. Daha sonra sarı saçlıları parçaladık (heh heh heh). Ama eğer bizim gibi güçlü olanlar olmasaydı, hepsi solucan yemeği olurdu!
+str_npc9_backstory_a|Aferin! Bana Gulm derler. Çavuşumu geberttim ve şimdi o snagalar benim için ava çıktı. ^Bir keresinde değersiz bir domuz yavrusu beni avlamaya gelmişti! Bir samanlık devriyesi tarafından tuzağa düşürüldük... ve o kaybetti. "Geri çekilin" diye ciyaklıyor, sonra kaçmaya başlıyordu. Sadece Gulm ve birkaç kişi sıkı durdu ve atlı hücumunu kırdı. Daha sonra sarı saçlıları parçaladık (heh heh heh). Ama eğer bizim gibi güçlü adamlar olmasaydı, hepsi solucan yemeği olurdu!
 str_npc10_backstory_a|Ben Durgash'ım
-; str_npc11_backstory_a|Nar! Not a tracker, that's who. They threw me out! I tell you they've lost their heads, that's what it is. Curse 'em! First they say I shoot wild, then I run too slow, and then I have a useless snuffler. Garn! If they don't find a rabble for me soon I'll be for the Black Pits, if what I hear is true. I'll make sure some of those Bosses lose their skins sooner than putting me in there!
+str_npc11_backstory_a|Nar! İyi bir iz sürücü olduğum söylenemez. Beni önceki grubumdan attılar. Bu yüzden kellelerini kaybedecekler ben sana diyeyim, Lanet herifler! Önce rasgele nişan aldığımı söylediler, sonra da burnumun berbat koku aldığını Garn! Eğer çok yakında kendime bir grup bulamazsam yakında sonum Kara Kuyular olacak eğer duyduklarım doğruysa. Bazı kodamanların beni o kuyulara sokamadan önce derilerinin yüzüldüğüne emin olmalıyım!
 str_npc12_backstory_a|Buradakilerin emirbaşı ve yönetimindeki kişi benim.Ben Gorbag ve Urukların buraların gerçek patronu olduğunu çabuk öğrensen iyi olur.Büyük patronlar hata yapar, hatta en büyükleri bile ve her zaman zavallı Uruklar hataları düzeltir ve küçük bir teşekkürü hakederler.Onlar bize bildiklerini söylemezler bile, söylerler mi? Hiç de bile.Grr!  
-; str_npc13_backstory_a|I? I am a grain of soil from southern sands, blown north by cold and dark night winds. I am Lykyada, a Serpent Lord of Haradwaith. Lord of the Gold Serpent, bane of the Black Serpent Tribe, now allied to serve the will of the Dark Lord.
-str_npc14_backstory_a|Ben Fuldimir, Umbar'ın güney diyarının,Harondor'un güneyinin ve Belfalas Koyu'nun oğluyum.Oralar benim ve halkımın kalplerinin yuvasıdır.Bizler denizlerin ve yelkenlerin efendileriyiz.Bazıları için korsanlarken,Belfalas Koyu'nun soyu için bizler suları evcilleştirdik.
+str_npc13_backstory_a|BEN? Ben güney kumlarından gelen, soğuk ve karanlık gece rüzgarları ile kuzeye uçan bir kum tanesiyim. Ben Lykyada, Haradwaith'in Yılan Efendisi. Altın Yılan Lordu, Kara Yılan Kabilesinin cezası ve Karanlık Lord'un iradesine hizmet eden  müttefik.
+str_npc14_backstory_a|Ben Fuldimir, Umbar'ın güney diyarının,Harondor'un güneyinin ve Belfalas Koyu'nun oğluyum.Oralar benim ve halkımın kalplerinin yuvasıdır.Bizler denizlerin ve yelkenlerin efendileri ve korsanlarıyız,Belfalas Koyu'nun soyu için bizler suları evcilleştirdik.
 str_npc15_backstory_a|Ben Yetenek Bahşedilmiş Bolzog,Kemiklerin Dizicisi,Kesiklerin Yaklaştırıcısı ve İyileştirme Şamanıyım.Eğer "Göz" için savaşa gidersen, şüphesiz ki küçük arkadaşlarından bir ya da birkaçı, soluk-yüzlü ormancılar ve at-seviciler tarafından birazcık "kesilebilir."Şimdi -nar-nar-nar! Orkların yerini doldurmak kolaydır! Oh, Büyük Lider, peki bir Warg'ın yerini doldurabilir misin? Ya da bir devin? Ya da bir mağara trolünün? Shi-shi! Hayır! Bana yani Büyük Bolzog'a ihtiyacın var!
 str_npc16_backstory_a|Şimdi,kendini tanıtması gereken ilk kişi sensin yabancı.Buna rağmen, ben Balcoth soyundan Varfang.Balcoth'un ismini konuşan topraklarımın şarkılarını ya da masallarını daha önce duymadığınızı söyleyebilirim, çünkü cesaretinizi yoklayıp,kalbinizi acıyla dolduracaktı.
 str_npc17_backstory_a|Bana Dimborn derler ve ormanda çalışırım.Oraları güzeldir.Ormanı severim.Ormanda çok fazla ağaç vardır.Ağaçları severim.Tüm hayatım boyunca ormanda çalıştım çünkü ben güçlüyüm ve ağaçları severim.
@@ -374,56 +374,56 @@ str_npc5_backstory_b|Lord Elrond beni Lord Celeborn'a göndererek, Rhovanion'un 
 str_npc6_backstory_b|Güzel ormanımızın gizli yollarına yürümeyi seviyorum.Bazen, ağaçların içinden, ormandaki canlıları ve yaşamları gözlemek için sessizce yürüyorum.Nadir bir kuşun şarkısı,bir yaban domuzunun yuvası; bana kılıçların ve silahların çarpışması ve Edain'in muhteşem duvarları kadar büyüleyici ve güzel geliyor.
 str_npc7_backstory_b|Erebor savunmalarının geliştirilmelerine yardım ettim ve saygıdeğer babam Dwalin'in yönetimi altında, -geleneğimiz olduğu gibi- genç cüce topluluğunu eğittim
 str_npc8_backstory_b|Savaşa giden erkekleri etkileyen yaygın bir rahatsızlık olan kabızlık için Kral Brand'ı tedavi ettim. Küçük bir demet pelin otu, hem bağırsakları ve zihni rahatlatır.
-str_npc9_backstory_b|Kendime dedim ki: "Gulm, sonunun bir leş gibi olmasını,gebermeyi istiyorsun?" sonra cevapladım."Hayır".Sonraki savaşta,yere düşüp yaralı taklidi yaptım.Sonra kimse izlemezken, çavuşumun üstüne düştüm ve onun neredeyse yarasını yaraladım, gharr! Sonra yardımcısı snaga'yı güzelce kestim.Sonra belli oldu ki, o lanet yaratık bir şekilde hayatta kalmış ve sürekli bunun hakkında dil döndürüp durmuş.Bir dahaki sefere kafasını kopardığımdan emin olacağım,gharr...
+str_npc9_backstory_b|Kendime dedim ki: "Gulm, sonunun bir leş gibi olmasını,gebermeyi mi istiyorsun?" sonra cevapladım."Hayır".Sonraki savaşta,yere düşüp yaralı taklidi yaptım.Sonra kimse izlemezken, çavuşumun üstüne düştüm ve onun neredeyse yaraladım, gharr! Sonra yardımcısı snaga'yı güzelce kestim.Sonra belli oldu ki, o lanet yaratık bir şekilde hayatta kalmış ve sürekli bunun hakkında dil döndürüp durmuş.Bir dahaki sefere kafasını kopardığımdan emin olacağım,gharr...
 str_npc10_backstory_b|Ben Isengard'tan Wolf Rideriyim ve izcicilik yapıyorum.
-; str_npc11_backstory_b|Ar! It's only 'cause my nose was snotty. An' what good is it wearing my nose out on stones anyhow? Nar! It was those filthy Uruks! Those cursed peaching sneakthiefs! I only lost the scent through giving way to them. They messed up the scent back there, pinching anything they found, and stomping all round the place before I could get there.
-; str_npc12_backstory_b|And those Nazgul give me the creeps. And they skin the body off you as soon as look at you, and leave you all cold in the dark on the other side. But He likes 'em; they're His favourites nowadays, so it's no use grumbling. I tell you, it's no game serving in the city. I'd like to try somewhere where there's none of 'em.
-; str_npc13_backstory_b|I saw of late the word of the Dark Lord spread among my kin, and in their hearts and minds his will crept. Most were drawn to his darkness, and in place of their courage grew an insatiable lust for slaughter so that when their ears heard his call few puppets were so willing to answer.
-; str_npc14_backstory_b|There is much change in a man who rides the tumult of the winds and seas of the Belfalas waters, and those yet to battle her will are but children. For stout men are they who meet her tempest and ride her storm. I have laid eyes on her darkest tide and yet remain her master.
-; str_npc15_backstory_b|Many moons ago, when I was just a fresh little thing, my Grandsire led the tribe down into the mines, where the dwarves had recently died. A Fire Wraith had passed through, and it was comfortable and warm. We prospered, but every so often some cruel adventurer, or Dwarf hero, would come and kill and maim us in our peaceful tunnels. My hands learned to close the wound of sword or axe, and my mind learned to see the outline of bone and sinew below any hide. These days, I can work a potion or set a break with equal skill.
-; str_npc16_backstory_b|The Balcoth were a fierce race of men from my home land, slaughtered by these westerlings to all but a few men. Chased down like beasts of burden as food for their blades. The blood spilt by those blades is the same blood that flows within me, for within me their house continues.
+str_npc11_backstory_b|Ar! Tek sebebi burnumun dolu olması. Ayrıca burnumu kayaların üzerine sürtmemin ne yararı var ki zaten? Nar! O pislik Uruklar olmalı? Lanet sinsi hırsızlar! Onlar geçtiği için kokuyu kaybettim. Oradaki kokuyu mahvetmişler, buldukları her şeyi  ellemişler, oraya varmadan önce her yerde tepinmişler.
+str_npc12_backstory_b|Şu Nazgul beni ürpertiyor. Seni görür görmez derini yüzebilir ve seni soğuk ve karanlık diğer tarafa gönderebilir. Fakat o onlardan hoşlanıyor; bu günlerde onun favorilerinden, yani sızlanmanın bir yararı yok. Sana söylüyorum burada çalışmak oyun değil, onların olmadığı bir yerde çalışmak isterdim.
+str_npc13_backstory_b|Sonunda Karanlık Lord'un akrabalarımın etrafında yayıldığını gördüm, onların yürekleri ve zihinlerinde iradesi süzüldü. Çoğu karanlığa çekildi ve cesaretlerinin yerine kesilemeyecek doyumsuz bir şehvetle dolduruldular. Kulakları onun çağrısını duyduğunda birkaç kukla cevap vermeye çok istekliydi.
+str_npc14_backstory_b|Belfalas sularının denizlerinde ve rüzgarlarında sarsılan ve hayatta kalan bir adam çok fazla değişir ve o sularda vasiyetnamesi ile savaşmayanlar yalnızca çocuklardır. O fırtınalarla ve rüzgarlarla uğraşmak sadece cesur bir adamın işidir. Gözün En karanlık fırtınalarıyla karşılaştım ve hep efendinin kim olduğunu ona hatırlattım.
+str_npc15_backstory_b|Aylar önce, ben daha küçük bir et parçasıyken dedem kabilemizin yakın bir zamanda Cücelerin öldürüldüğü madenlere gitmesine izin vermişti. Ateş Hayaleti oradan geçip gitmişti ve orası rahat ve sıcaktı. Orada huzur içinde yaşıyorduk, ama sık sık acımasız bir maceraperest veya Cüce gelip bizi barışçıl tünellerimizde öldürür veya sakat bırakırdı. Ellerim kılıç ve balta tutmayı ve aklım gizlenmeyi ve iz sürmeyi öğrendi. O günlerde, iksir hazırlamayı ve kırılan ekipmanları tamir etmeyi de öğrendim.
+str_npc16_backstory_b|Balcoth, Batılı adamlar, birkaç adam dışında herkesi katletmeden önce dayanıklı adamların yaşadığı memleketimdi. Onlar insanları vahşi hayvanlar gibi bıçaklarıyla kovaladılar. Bu bıçaklardan dökülen kanlar benim etrafımda, onların evlerinde akıttığım kanla aynı kanlardır.
 str_npc17_backstory_b|Biliyorsun, ağaçlardan bir sürü şey yapabilirsin.Benim yaptığım şey bu.Ben ağaçlarla çalışır ve ağaçlardan bir şeyler yaparım.Bazen çalılıklarla.Ama ağaçları daha çok severim.
-; str_npc1_backstory_c|However, I fear we are hopelessly outnumbered here in Ithilien and we won't last long without reinforcements or bolder action by our Steward. I might as well help where my actions would account for more, if my Captain Faramir gives me leave.
-; str_npc2_backstory_c|However important my duty here is, I'm quite anxious to see real combat and... elves and talking trees and oliphaunts! You seem well-travelled, commander, and I don't mean that as a slight on your appearance, not by a fathom. I learn quickly and can cook... well, good enough for soldiers that is. Am I not mistaken that you are looking for volunteers?
-; str_npc3_backstory_c|So, here I am, disgraced and bitter. My éored must be miles away now, and I wouldn't have a fair chance of catching up with them, not with all the orcs and wildmen roaming the plains. Are you by any chance in need of a fine Rohirrim rider?
-; str_npc4_backstory_c|You might know that women, however skilled, are not allowed to ride with the éoredas. However, I do not think that waiting by the hearth for the warriors to return is my fate. I will not sit idle until all chance of great deeds is gone in this War, and I would welcome your assistance, warrior.
-str_npc5_backstory_c|Bununla birlikte, eğer Lothlórien'in düşmanları kaçarsa, bir süre sana katılmayı düşünebilirim {playername}. Bu Savaşta kaderlerimizin birbiriyle örtüştüğünü hissediyorum.
-str_npc6_backstory_c|Senin savaş için hazırlık yapmanı anlamıyor. Ancak uzun yoldan gelmiş olmalısınız - diğer büyük ormanları gördünüz mü? Beni oraya götürür müsünüz?
-; str_npc7_backstory_c|There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival.
-; str_npc8_backstory_c|I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all.
-; str_npc9_backstory_c|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.^^I would come with you and hunt men in the south, while the snagas of Isengard gnash their teeth.
+str_npc1_backstory_c|Bununla birlikte, Korkarım ki Ithilien'de sayıca fazlayız ve erzaklarımız da gittikçe azalıyor. Kahya bize yardım göndermezse daha fazla dayanamayabiliriz. Eğer Faramir bana izin verirse eylemlerimle daha fazla yardımcı olabilirim.
+str_npc2_backstory_c|Buradaki görevim ne kadar önemli olursa olsun, gerçek mücadeleyi görmek, Elfler, konuşan ağaçlar ve dev filler için oldukça heyecanlıyım! Çok seyahat etmiş gibi görünüyorsun, komutan. Ben hızlı öğrenirim ve iyi yemek yaparım... Yani, askerler için yeterince iyi. Gönüllü arıyormuşsun bu doğru mı?
+str_npc3_backstory_c|İşte, buradayım, utanç verici ve acınası bir halde. Éoredu'im buradan uzakta kilometrelerce ötede olmalı ve benim Orklarla ve vahşi adamlarla dolu olan toprakları ve ovaları geçip ona ulaşma şansım yok. İyi bir Rohirrim sürücüsüne ihtiyacınız olma ihtimali var mı?
+str_npc4_backstory_c|Kadınlar ne kadar yetenekli olursa olsunlar éoredas'la -Rohan süvari bölükleri- at sürmelerine izin verilmez. Bununla birlikte, savaşçıların geri dönmesi için ocak beklemenin benim kaderim olduğunu sanmıyorum. Tüm o büyük savaşlar yapılırken burada öylece beklemek istemiyorum. Desteklerini hoş karşılayacağım, savaşçı.
+str_npc5_backstory_c|Bununla birlikte, eğer Lothlórien'in düşmanları peşine düşersen, bir süre sana katılmayı düşünebilirim {playername}. Bu Savaşta kaderlerimizin birbiriyle örtüştüğünü hissediyorum.
+str_npc6_backstory_c|Savaş için sürekli hazırlık yapmanı asla anlamayacağım sanırım. Ancak uzun yoldan gelmiş olmalısın - hiç buradakinden başka diğer büyük ormanları da gördü mü? Beni de oralara götürür müsün?
+str_npc7_backstory_c|Burada fazla aksiyon olmuyor. Senin yolculuklarında bol aksiyon oluyor ve davanla bizim davamız aynı değil mi? Savaşçı bir Cüce hayatta kalma şansını bayağı arttırır.
+str_npc8_backstory_c|Duyduğuma göre, başka yerlerde çok fazla dövüş var ve arazilerimiz şu ana kadar  korundu. Zırhındaki çiziklerden anladığım kadarıyla defalarca tehlike atlatmış olmalısın. Belki benim ufak becerilerim, grubunuzun iyiliği için kullanılabilir, herkesin iyiliği için.
+str_npc9_backstory_c|Ben savaşcı bir Uruk-Hai'yim! İnsan öldürmekle ilgili olan ne varsa biliyorum. Eskiden Beyaz elin hizmetindeydim fakat el beni ateş çukurlarına göndermek istiyordu.^^Seninle güneyde insan avlamaya gelirim.
 str_npc10_backstory_c|Belki benim yeni ustam sen olabilirsin.
-; str_npc11_backstory_c|All right, all right! My nose isn't much use. I reckon my eyes are better than my nose. Ai! But my nose is only no good cause it don't know what nothing smells like. It don't even know what it's looking for, I tell you. Ar! I just need to go lopin' off and start sniffing places.
-; str_npc12_backstory_c|Eh, if I get a chance, I'll slip off and set up somewhere on my own with a few trusty lads, somewhere there's good loot nice and handy, and no big bosses. I'd like to try somewhere where there's none of 'em, like old times.
-; str_npc13_backstory_c|I followed my kin north, and heeded his dark call, to fulfill the duty I have to my people. But in them I see his darkness dwell and I seek to do my part in this war elsewhere, until the sands of my time no longer fall. Even now I feel them begin to trickle where before there was a cascade.
-; str_npc14_backstory_c|But there comes yet the darkest tide, a black tide of shadow, which will rise over these lands such as which no mortal eyes will have seen. This is the tide I seek to master, but I am without a crew hardy enough to ride this storm.
-; str_npc15_backstory_c|After many winters I came up out of the tunnels, and looked about in the Dark Forests for a good place to live and practice my arts. I was doing fine, until some big ugly bastards with white tattoos – eugh! White! Like an elf face! – big bastards, they were. They fired my little place in the Forest, and I had to hide in the caves again... In here... Say, have you anything to eat? Maybe a nice horse?
-; str_npc16_backstory_c|That was many lives of men ago, a different time, but the time for grief and tales are over. The time for my people's retribution has come and I will carve my people's vengeance on the face of these western lands. By my hand, their homes will waste and wither until their clan is no more!
-str_npc17_backstory_c|Ormana giriyorsan, belki oraya gidip sana oradaki ağaçları anlatırım? Çok ilginç ağaçlar var, biliyorsun.
-; str_npc1_backstory_later|I have been leading scouting parties to the south, as far as Emyn Arnen. There is much Enemy activity and many an orc fell to our ambush. Alas, that's only so many orc heads rolling down the gullies, we saw a myriad of foul creatures on the march. I fear for my Ithilien and the fate of Gondor.
-str_npc2_backstory_later|Son zamanlarda birkaç ziyaretçimiz oldu,gelecekte çok az kişi var.İşler kesat gibi bu sıralar.
-str_npc3_backstory_later|Hala haber yok éored, ben orkları ezip geçmekte hevesliyim.
+str_npc11_backstory_c|Tamam tamam! Burnum fazla iyi değil. Sanırım gözlerim burnumdan daha iyi. Ha! Ama burnumun iyi olmamasının nedeni kokan hiçbir şey bilmemem. Şu an ne aradığımı bile bilmiyorum, sana söylüyorum ha! Sadece gidip bir kaç yeri koklamaya ihtiyacım var!
+str_npc12_backstory_c|Eh, eğer bir şans yakalarsam, buradan sıvışıp sağlam ganimetleri olan kodamanların olmadığı bir yerlere birkaç güvenilir çocukla gidebilirim. Eski zamanlarda olduğu gibi, kodamanların hiçbirinin olmadığı bir yerde şansımı denemek isterim.
+str_npc13_backstory_c|Akrabalarımı kuzeye kadar takip ettim ve halkıma karşı olan görevimi yerine getirmek için onun karanlık çağrısına kulak verdim. Fakat onlarlayken benim görevimin başka yerlerde olduğunu anladım.Şimdiden fırtınanın yaklaşdığını hissediyorum.
+str_npc14_backstory_c|Daha karanlık yeni çökmeye başladı çok yakında karanlığın gelgitleri önceden hiç bir ölümlünün görmediği kadar yükselecek. Fakat karanlığı yaymak için bir gruba ihtiyacım var.
+str_npc15_backstory_c|Tünellerin dışında geçirdiğim birçok kıştan sonra , Kara Ormanlarda yaşamımı sürdürmek tekniklerimi geliştirmek için iyi bir yer aradım. Gayet iyi idare ediyordum ta ki  Bazı beyaz dövmeli - ıyy! Beyaz! Tıpkı Elf yüzü gibi! -  büyük çirkin pislik yaratıklar gelene kadar. Benim ormandaki küçük kulübemi yaktılar ve ben de yeniden mağaralarda saklanmak sorunda kaldım... Yani burada... Söylesene, hiç yiyecek bir şeyin var mı? Belki güzel bir at?
+str_npc16_backstory_c|Bu uzun zaman önceydi, bundan çok farklı bir zamanda, daha keder ve masallar çağının sürdüğü zamanlar. Şimdi halkımın cezalandırma zamanı geldi. Halkımın intikamını Batı topraklarının yüzüne kazıyacağım. Benim ellerimle, klanları yok olana dek evleri yerle bir olacak!
+str_npc17_backstory_c|Eğer ormana giriyorsan, belki ben de oraya seninle gidip sana oradaki ağaçları anlatırım? Çok ilginç ağaçlar var, biliyorsun.
+str_npc1_backstory_later|Emyn Arnen'e kadar, güneye doğru keşif grupları yürütüyordum. Orada çok fazla düşman aktivitesi var ve birçok Ork bizim pusuya düştü. Onlarca Ork kellesi almamıza rağmen ne yazık ki ilerleyen sayısız yaratık taburu gördük. Ithilien ve Gondor'un kaderi için endişeleniyorum.
+str_npc2_backstory_later|Son zamanlarda sadece birkaç ziyaretçimiz oldu,gittikçe de sayıları azalıyor.İşler kesat bu sıralar.
+str_npc3_backstory_later|Hala haber yok éoredimden, Biraz Ork tepelemek içim can atıyorum.
 str_npc4_backstory_later|Atlılar yaralı bedenleriyle geri dönüyor, yardım edebildiğime yardım ediyorum. Ama hala kafeste kilitli gibi hissediyorum.
-str_npc5_backstory_later|İyi düşündün mü? Eldar için zaman azalıyor.
-; str_npc6_backstory_later|I've been observing a nest of giant spiders for a couple of days. Ugly creatures, they seem at first, but they keep intruders at bay. Did you come to ask me to travel with you?
-str_npc7_backstory_later|Surları inşa etmek her cüce için değerlidir. Ama benim biraz da baltamı kullanmam gerek. Bırak seninle geleyim.
-; str_npc8_backstory_later|I made another call to our King, this time for vomiting. I hope his resolve to engage the enemy is not related to his conditions. Do you suffer from constipation and vomiting too?
+str_npc5_backstory_later|İyi düşündün mü? Eldar için zaman daralıyor.
+str_npc6_backstory_later|Birkaç gün dev örümcek yuvasını gözlemledim. Çirkin yaratıklar, davetsiz misafirleri inlerinde tutuyorlar. Bana seninle birlikte gelmemi istemek için mi geldin?
+str_npc7_backstory_later|Surlar inşa etmek her cüce için değerlidir. Ama benim biraz da baltamı kullanmam gerek. Bırak seninle geleyim.
+str_npc8_backstory_later|Kralımızla geçen görüşmeye gittim, sürekli kusuyordu. Umarım düşmana karşı savaşa girişme kararıyla bu hali ilgili değildir. Siz de kabızlık ve kusmaktan çok muzdarip misiniz?
 str_npc9_backstory_later|Ne yaptığımı düşünüyorsun? Gulm burada oturuyor ve  sinsi bir yılanın onu karanlıkta sokmasını bekliyor. Beni de yanına al - Sana iyi hizmet edeceğim.
-str_npc10_backstory_later|Yeniden inceledin mi? Ben iyi hizmet edeceğim.
-; str_npc11_backstory_later|Ar! It was you! I smelt you, I knew you were coming. Tell the Bosses that, will ya? They think since I was kicked out of the trackers that it's safe to flout me, well they're mistaken, I'll put an arrow in their guts first. And whose blames was that? Not mine!
-; str_npc12_backstory_later|I have my orders. Any trespasser found by my lads up here are to be stripped; teeth, nails, hair and all. But I've got my watchers. We know there are funny things going on: with the big bosses going off to war, and all that. Big things going on away west, they say. Sitting here doin' nothing is more than my belly's worth.
-; str_npc13_backstory_later|My role here goes well for the dark cause, and once more the Northerners fear the south. I see great victories ahead, and rivers of blood left in our wake. But with each victory I see my kin corrupted, their hearts twisted to his evil will. The sight of it leads me to despair.
-; str_npc14_backstory_later|You have returned stranger, it is perhaps an omen. I have been reading the waters, and I have seen them darken. The sea changes the eyes of a man, and teaches him to use his eyes to listen to her language.
-; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions.   Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
-; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balcoth before us.
+str_npc10_backstory_later|Yeniden düşündün mü? Ben iyi hizmet ederim.
+str_npc11_backstory_later|Ar! Bu sensin! Kokundan yakınlarda bir yerde olduğunu anlamıştım zaten. Bunu patronlara söyle taam mı? Beni gruptan attıktan sonra beni küçük görebileceklerini sanıyorlar fakat yanılıyorlar. Fırsatını bulduğum anda onların boğazına oku yapıştıracağım. Ve bu kimin suçu olacak? Benim değil!
+str_npc12_backstory_later|Emirlerim var. Adamlarım tarafından yakalanan günahkarların tüm dişleri,tırnakları ve saçları çekilecek. Kendi gözcülerim var ve bazı garip şeylerin döndüğünü biliyorum. Batıda büyük şeyler olduğunu söylüyorlar. Burada oturup göbek büyütmekten başka yapacaklarım var.
+str_npc13_backstory_later|Yaptıklarım karanlığın büyümesine neden oluyor. Bir kez daha Kuzeyliler güneyden korkuyorlar. Önümüzde büyük zaferler görüyorum ve kan dolu nehirler. Ancak kazandığımız her zaferin benim türümü bozduğunu görüyorum, onların kalpleri onun kötülüğüyle çarpılmış durumda. Bunu görmek beni umutsuzluğa sevk ediyor.
+str_npc14_backstory_later|Geri döndün yabancı, belki de bu bir işarettir. Suları okudum ve karardığını gördüm. Deniz, bir adamın gözlerini değiştirir ve ona dilini anlaması için gözlerini kullanmasını öğretir.
+str_npc15_backstory_later|İksirlerim tarafından iyileştirilmek için bana yalvarılmış olanlar çoktur. Atlılar ve solgun yüzlü Elfler. Kulübemi daha önce de terk etmek zorunda kalmıştım ve yine terk etmeye hazırım... Peki, Büyük Lord, şu sıralar birlikte savaştığımız ve yeteneklerime minnettar olduğunuz zamanlar kadar şanslı değilim...
+str_npc16_backstory_later|Halkımın tarihi bu toprakları anlatır? Onların hain geçmişlerinin, halkımın bu topraklara girdiği günleri anlatmadığını biliyorum, ama üzgün ve karanlık geçmişleri halkımın şimdi bu topraklara girdiği gibi tekrar yaşanacak. Toynaklar, kılıçlar ve oklar fırtına gibi onları kasıp kavuracak, onlara eskiden Balcoth'un getirdiği  gibi azap getireceğiz.
 str_npc17_backstory_later|Geçen gün çok yaşlı bir çam gördüm. Çamlar çok yaşlı olabilir. Yaşlı ağaçlara saygı gösterilmeli. Ama ağaçlara hiç saygı duymayan bazı insanlar gördüm. Ağaçlara saygı duyuyorsun, değil mi?
-str_npc1_backstory_response_1|Eğer terk edersen, deneyimli  savaşçıya ve izleyiciye daha çok ihtiyacım olacak
+str_npc1_backstory_response_1|Eğer terk edersen, deneyimli  bir savaşçıya ve izleyiciye daha çok ihtiyacım olacak
 str_npc2_backstory_response_1|Haklısın, Bir kaç gönüllü arıyorum.
 str_npc3_backstory_response_1|Bira olmadan yapabiliyorsanız, iyi bir atlıya hoş geldiniz diyorum.
 str_npc4_backstory_response_1|Eğer teklif ederse, Rohan'lı bayan savaşçıya yardım ederim.
 str_npc5_backstory_response_1|Sormam biraz küstahça olabilir fakat birliğim, gelecek savaşlarda senin yeteneğini kullanabilir.
 str_npc6_backstory_response_1|Dünyayı dolaşıyoruz, sadece adaleti savunmak için düşmana karşı savaş veriyoruz.
-str_npc7_backstory_response_1|Gerçekten de, bir cüce savaşçı tarafımdan hoş karşılanacaktır.
+str_npc7_backstory_response_1|Gerçekten de, bir cüce savaşçı, tarafımdan hoş karşılanacaktır.
 str_npc8_backstory_response_1|Sağlıkçıyı ve şifacıyı kullanabiliriz.
 str_npc9_backstory_response_1|Sanırım bir Berserkeri iyi kullanabiliriz.
 str_npc10_backstory_response_1|Yapıcaksın.
@@ -433,12 +433,12 @@ str_npc13_backstory_response_1|Beni takip etmeye ne dersin ?
 str_npc14_backstory_response_1|Bana katılmaya ne dersin ?
 str_npc15_backstory_response_1|Aha ... Bir şifacı , ha ? Ve bu işte iyiyim , diyorsun? Senin gibi birini kullanabilirim.
 str_npc16_backstory_response_1|Burada Ne Yapıyorsun?
-str_npc17_backstory_response_1|Peki, her zaman ağaçlar hakkında daha fazla bilgi edinebilirsiniz. Sizinle birlikte yaşadığımız için mutluyuz.
+str_npc17_backstory_response_1|Peki, her zaman ağaçlar hakkında daha fazla bilgi edinebilirsiniz. Sizinle birlikte olduğumuz için mutluyuz.
 str_npc1_backstory_response_2|Bunu duyduğuma üzüldüm. Umarım inancın cesaretini güçlendirir.
 str_npc2_backstory_response_2|Hayır, üzgünüm. Ben tecrübeli savaşçılara bakıyorum.
 str_npc3_backstory_response_2|Hayır, üzgünüm. Ben Daha Güvenilir Birisini Aramıştım. 
 str_npc4_backstory_response_2|Üzgünüm , leydim. Ama yapabileceğim hiçbir şey yok.
-str_npc5_backstory_response_2|Lothlórien daha ez tehlikede olduğu zaman döneceğim.
+str_npc5_backstory_response_2|Lothlórien daha az tehlikede olduğu zaman döneceğim.
 str_npc6_backstory_response_2|Hayır, üzgünüm. Askı takamayız.
 str_npc7_backstory_response_2|Hayır, üzgünüm. Kendi başımıza iyiyiz.
 str_npc8_backstory_response_2|Hayır, üzgünüm. Biz şifacıları sadece ihtiyaç duyduğumuzda ziyaret ederiz.
@@ -456,34 +456,34 @@ str_npc2_signup|Ah, ne güzel bir gün! Senin birliğine katılmaktan memnun olu
 str_npc3_signup|Güven bana komutan, ihtiyacım olan sadece zaferin tatlı birasıdır. Eğer beni düşmana karşı öne sürebilirsen, yakın zamanda Rohirrim mızrağının sonuçlarını hissedeceklerdir!
 str_npc4_signup|Bu hoş bir teklif, ve beni birliğine davet edebilirsin, komutanım.
 str_npc5_signup|Anlıyorum. İtiraf ediyorum, sizi ve sömürgelerinizi duymuştum.
-str_npc6_signup|Şiddetten ve savaş silahlarından hoşlanmam, ama kendimi hızlıca nasıl savunacağımı biliyorum.
+str_npc6_signup|Şiddetten ve savaş aletlerinden hoşlanmam, ama kendimi hızlıca nasıl savunacağımı biliyorum.
 str_npc7_signup|Benim yeteneklerim balta ile, hem fırlatır hem savururum. Eğer tüccarlar ile konuşmama izin verirsen faturalarının düşük gelmesini de sağlarım. Ve savaş alanında düşmandan düşen eşyaların en değerlilerini bulacak göze sahibim.
-str_npc8_signup|Aslında? Öyleyse, sadece otlarimi ve tariflerimi toplamam gerekiyor.
+str_npc8_signup|Gerçekten mi? Öyleyse, bana biraz zaman ver sadece otlarımı ve tariflerimi toplamam gerekiyor.
 str_npc9_signup|Bir savaşçı uruk siz bütün snagalardan daha değerlidir. Bir savaşçı uruk asla savaştan kaçmaz.
-str_npc10_signup|Gerçekten mi? Beni katmak için iyi oynadın.
-; str_npc11_signup|Follow your mob Ai? Ar! I hear about all these goings-ons out west, raids and all, and hundreds of our lads done in. I'll come and have a look with you all the same, and see what you're up to.
-; str_npc12_signup|Follow your rabble, 'ay? I may 'ave struck a bit of luck at last. I give a good rumble, I reckon, and my whip is vigilant. It's tasted its fair share of my lads' orc hide.
-; str_npc13_signup|I may follow you if you will have me. My legs make good heading of a horse between them and my hands know well the feel of blades of the crescent moon. My fingers can make fall arrows like the plight of stars upon our enemy, be it on horse or feet, though how I fight will be at your command.
-; str_npc14_signup|Perhaps, know though that I am no thief or brigand. I will not steal, nor take that which other lives may find needed.
+str_npc10_signup|Gerçekten mi? Beni grubuna katmak için iyi oynadın.
+str_npc11_signup|Senin çeteni takip etmek ha? Ar! Batıdaki yağmaların ve yüzlerce ölünün haberini aldım. Seninle oralara bir göz atmak ve ne yapabileceğine bakmak istiyorum.
+str_npc12_signup|Senin çeteni takip etmek m, he? Sonunda şansım dönmüş olabilir. Ses çıkarmama konusunda pek iyi değilim, farkındayım, fakat kırbacım her zaman tetiktedir.
+str_npc13_signup|Seni takip edebilirim. Bacaklarım atlılara liderlik edebilir. Ellerim iyi bıçak kullamasını bilir. Parmaklarım kayan yıldızlar gibi düşmana ok yağdırabilir. At üstünde yada yaya olarak nasıl emredersen öyle savaşabilirim.
+str_npc14_signup|Benim bir hırsız yada soyguncu olmadığımı biliyorsundur.Ben başkalarının hayatlarını sürdürebilmek için ihtiyaç duydukları şeyleri çalmam veya el koymam.
 str_npc15_signup|Heh-heh. Haklısın! Ve çok akıllısın, Büyük Kaptan.
-; str_npc16_signup|I wait for orders, with every second passing darkening my heart. I can no longer stand to wait for the plans of far away lords and captains so unseen their existence is believed more in legend than in flesh. Lords whose whispered orders are brought forth and shouted by lesser men. I wait, and with me, my people's vengeance waits also.
+str_npc16_signup|Emirleri bekliyorum, her saniye kalbimi daha da karartıyor. Artık uzaktaki efendilerin ve kaptanların planlarını beklemekten bıktım; onların varlığı etten kemikten değil efsanelerden ibaret. Ben burada bir başıma bekliyorum, halkımın intikamının beklediği gibi.
 str_npc17_signup|Çok iyi! Bir sürü ağaç tanıyorum. Çok geçmeden bir sürü ağaç tanıyacaksın.Aynı benim gibi. Çünkü ben bir sürü ağaç tanıyorum.
 str_npc1_signup_2|Kaptanımla konuşmak ve eşyalarımı toplamak biraz zaman alacak.
-str_npc2_signup_2|Önce çavuşla konuşmalıyım, sonra gideriz - savaşılacak görkemli savaşlar ve görülecek  garip yaratıkların görgü kuralları var!
+str_npc2_signup_2|Önce çavuşla konuşmalıyım, sonra gideriz - savaşılacak görkemli savaşlar ve görülecek  garip yaratık adetleri var!
 str_npc3_signup_2|Uzun zamandır birinin gelip beni almasını bekliyordum, yani sadece atımı hazırlamam lazım ondan sonra yolculuğa hazırım.
-str_npc4_signup_2|Ben defalarca yaylarla ve mızraklarla avlandım. Emrinde orkları avlayacağım. Ve ihtiyaç duyacağından emin olduğum bazı şifa yeteneklerim var.
-; str_npc5_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
+str_npc4_signup_2|Ben defalarca yaylarla ve mızraklarla avlandım. Emrinde orkları da avlayacağım. Ve ihtiyaç duyacağından emin olduğum bazı şifa yeteneklerim var.
+str_npc5_signup_2|Belki de grubunuza katılmak ve beklenmedik yerlerde çarpışmak düşmanın dengesini bozacaktır. Geleceğim.
 str_npc6_signup_2|Belki sana daha hızlı koşmayı ve daha az ses yapmayı öğretebilirim. Hadi gidelim
 str_npc7_signup_2|Grubunuzdaki uzun boylu halkları, özellikle de sinsi Elfleri hizada tutabilirseniz, memnuniyetle size katılırım.
 str_npc8_signup_2|Seni uyarmak zorundayım, savaşta oldukça yararsızım. Ama eminim benim yaşlarımdaki bir kadını güvende tutabilirsin.
 str_npc9_signup_2|Ancak çabucak karar vermelisiniz, bekçiler şüpheleniyor.
 str_npc10_signup_2|Beni aldığına pişman olmayacaksın.
-; str_npc11_signup_2|Lots of stuff out there for my nose to smell too, and my knife to taste. They don't know too much now but they're quick learners alright. What d'you say?
-; str_npc12_signup_2|I'll show your slugs where there's a whip there's a will and give 'em as much lash as their skins will carry. If your lads take it well it should put 'em in a good trot. What d'you say?
-; str_npc13_signup_2|Know, though, that my loyalty lie always with my kin. I have fought this far and lost too much for them. I will not turn my back on them for their fate will be my own.
-; str_npc14_signup_2|It is just fortunate that those no longer of this world find no need of this world's treasures and I am fortunate to be skilled in ways that I may assist in relieving the worldly needs of the owners of those treasures.
-; str_npc15_signup_2|Oh, this is a great moment for Bolzog The Gifted, and for you, Great Lord! We shall conquer together, you, indestructible with my healing touch, and I, the Great Orc Sage who shall support you!
-; str_npc16_signup_2|I fear that I will not wait any longer. I intend on joining the next party to leave camp, with my Chieftain's approval or not. I fear the war will be over long ere I leave to join it.
+str_npc11_signup_2|Orada, burnumun koklayacağı ve bıçağımın tadına bakacağı çok şey var. Onlar bunu daha bilmiyorlar fakat zaten onlar hızlı öğrenirler değil mi.Ne diyosun?
+str_npc12_signup_2|Sülüklererine kırbacımı sevmeyi öğreteceğim. Eğer adamların kırbaca alışkınlarsa iyi olur. Ne diyosun?
+str_npc13_signup_2|Benim kendi halkıma her zaman sadık olduğumu bilmelisin. Şu zamana kadar insanlarımı birçok savaşta kaybettim.Onlara asla sırtımı dönmeyeceğim ve onların kaderi benim de kaderim olacak.
+str_npc14_signup_2|Bu dünyada artık olmayanların bu dünyanın hazinelerine ihtiyacı olmaması büyük şans. Bu hazineleri bulmak için yeteneklerimi kullanabilirsin.
+str_npc15_signup_2|Ah, bu Yetenekli Bolzog ve senin için büyük bir an, Büyük Lord! Birlikte fethetmeliyiz, benim iyileştirme yeteneklerim sayesinde bundan sonra artık yenilmez olacaksın!
+str_npc16_signup_2|Korkarım ki artık bekleyemeyeceğim. Şefin onaylasın ya da onaylamasın, bir sonraki gruba katılmayı planlıyorum. Korkarım ki savaşa katılmak için ayrıldıktan sonra buradaki savaş daha da uzayacak.
 str_npc17_signup_2|Aletlerimden bazılarını alacağım, sonra gidebiliriz. Sana göstereceğim yolun hemen aşağısında bir meşe var!
 str_npc1_signup_response_1|Vasıflı bir ranger kullanabilirim, katılabilirsiniz.
 str_npc2_signup_response_1|Çok iyi. Bu karanlık zamanlarda biraz neşelenebiliriz.
@@ -499,7 +499,7 @@ str_npc11_signup_response_1|Peki. Hadi Gidelim.
 str_npc12_signup_response_1|Sanırım seni iyi kullanabiliriz.
 str_npc13_signup_response_1|Sanırım seni iyi kullanabiliriz.
 str_npc14_signup_response_1|Peki. Hadi Gidelim.
-str_npc15_signup_response_1|Hmmm Senin güvenine... hayranım.Eşyalarını topla.
+str_npc15_signup_response_1|Hmmm Senin özgüvenine... hayranım.Eşyalarını topla.
 str_npc16_signup_response_1|Beni takip etmeye ne dersin ?
 str_npc17_signup_response_1|Harika! Umarım sürekli ağaçlardan bahsetmeyeceksin.
 str_npc1_signup_response_2|Şu anda grubunuza ihtiyacım yok, size sana bol şanslar.
@@ -509,7 +509,7 @@ str_npc4_signup_response_2|Özür dilerim leydim, belki daha sonra.
 str_npc5_signup_response_2|Yeniden düşündüm de, belki Lothlórien'e kendi başımıza yardım etmeliyiz.
 str_npc6_signup_response_2|Üzgünüm, sadece seni savaş meydanında hayal edemedim.
 str_npc7_signup_response_2|Üzgünüm,Elfleri sevmeye başladım
-str_npc8_signup_response_2|Özür dilerim, herkes benim şirkette savaşır.
+str_npc8_signup_response_2|Özür dilerim, herkes benim grupta savaşır.
 str_npc9_signup_response_2|Fikrimi değiştirdim. Peşinde olanlar benim peşimden de gelebilir.
 str_npc10_signup_response_2|Fikrimi degiştirdim.
 str_npc11_signup_response_2|Sana ihtiyacım yok, köle.
@@ -521,20 +521,20 @@ str_npc16_signup_response_2|Ben bunlardan yeterince aldım.
 str_npc17_signup_response_2|Öte yandan , sanırım fikrimi değiştireceğim. Sen biraz delisin sanırım. Değil mi ?
 str_npc1_payment|Sana katılırdım, ama Yüzbaşı Faramir yokluğumu arayacaktır. [costs {reg14} Influence with {s14}]
 str_npc2_payment|Korucu çavuş gitmeme izin vermeyecektir, korkuyorum. [costs {reg14} Influence with {s14}]
-; str_npc3_payment|Ahem, it seems that I have ran up quite a tab in the fine tavern here, so I'll need to settle my account before I can leave. [costs {reg14} Influence with {s14}]
+str_npc3_payment|Öhöm, görünüşe bakılırsa bu güzel meyhanede fazla çıkıntı duruyorum var, ayrılmadan önce hesabımı halletmeliyim. [costs {reg14} Influence with {s14}]
 str_npc4_payment|Sana katılırdım ama şehir saldırıya uğradığında yaralılarla kim ilgilenecek?  [costs {reg14} Influence with {s14}]
-; str_npc5_payment|We should be off soon. The value of my coming will be diminished if the Enemy senses my presence before we have struck. But Lothlórien also needs me here. [costs {reg14} Influence with {s14}]
+str_npc5_payment|Yakında gitmeliyiz. Düşmanla çarpışmadan önce burada olan varlığımı algılarsa, gelişimimin değeri azalacaktır. Ama Lothlórien'in de bana ihtiyacı var.  [costs {reg14} Influence with {s14}]
 str_npc6_payment|Sana katılırdım, ama görevim burada. [cost {reg14}, Infulance {s14}]
 str_npc7_payment|Sana katılırdım Fakat Dwalin böylesine ihtiyaç duyulan bir zamanda ayrılmamı anlayışla karşılayamaz.  [costs {reg14} Influence with {s14}]
 str_npc8_payment|Görevimi bırakamam, Kralımın hâlâ bana ihtiyacı var.Onun sağlığı için çok endişeliyim. [costs {reg14} Influence with {s14}]
 str_npc9_payment|Seninle gelmek istiyorum.Fakat kapıdaki gardiyanlar gitmeme izin vermeyecektir, korkuyorum. [costs {reg14} Influence with {s14}]
 str_npc10_payment|Sana katılırdım, ama görevim burada. [cost {reg14}, Infulance {s14} gerekli]
-; str_npc11_payment|I just need someone to do in the Boss. We could wait till he closes his eyes to lop off, but I reckon someone really high up can force his eyes shut. Ai! [costs {reg14} Influence with {s14}]
-; str_npc12_payment|Hai! Yoi! I'll need to remind the boys to keep their mangy gobs shut or the High Ups will get my number and 'ave it out for me, they will. [costs {reg14} Influence with {s14}]
+str_npc11_payment|Patronla ilgilenecek birine ihtiyacım var. Gözlerini kapayana kadar bekleyebiliriz, ama gerçekten onun gibi birinin gözlerini kapatabileceğini düşünüyorum. Of! [costs {reg14} Influence with {s14}]
+str_npc12_payment|Hai! Yoi! Çocuklara çenelerini kapalı tutmaları gerektiğini hatırlatmam lazım yoksa yüksek pırpırlı birisi benim numaramı alacak ve benim yerime yapacak. [costs {reg14} Influence with {s14}]
 str_npc13_payment|Şef Alas gitmeme izin vermeyecektir.Onu ikna edebilir misin ? [costs {reg14} Influence with {s14}]
-; str_npc14_payment|The captain of the Haven will require much persuasion for my leave. Convince him and we shall set sail through this storm. [costs {reg14} Influence with {s14}]
-str_npc15_payment|Ah evet. Soylu Savaşçı-Lord! Bir küçük engel var! Büyük bir haksızlıkla bana ateş etti, bu mağaranın efendisi iyileşme teklifimi beğenmedi ve bütün eşyalarımı çalmış! Yüzsüzlük! Büyük Bolzog'dan çalmak! Usta, paha biçilmez ekipmanımın pis pençelerinden kurtulamıyorum! [Masraflar {reg14} {s14} 'ye olan etki]
-; str_npc16_payment|I will not follow you, I will go my own path; but your path may go along with mine for a while. Though, before I travel these lands I must first pay tribute to those who died trying before us. Show them your tribute and we may make our leave. We must never forget our ancestors. They have not forgotten us. [costs {reg14} Influence with {s14}]
+str_npc14_payment|Haven kaptanı bana izin vermek için çok fazla nazlanacaktır. Onu ikna et ve fırtınaya beraber yelken açalım. [costs {reg14} Influence with {s14}]
+str_npc15_payment|Ah evet. Soylu Savaşçı-Lord! Bir küçük engel var! Başıma büyük bir talihsizlik geldi, bu mağaranın efendisi iyileşme teklifimi beğenmedi ve bütün eşyalarımı çalmış! Yüzsüzlük! Büyük Bolzog'dan çalmak! Usta, paha biçilmez ekipmanlarımı onun pis pençelerinden kurtaramıyorum! [costs {reg14} Influence with {s14}]
+str_npc16_payment|Seni takip etmeyeceğim, kendi yoluma gideceğim; Ama yolun bir süre benimkiyle birlikte kesişebilir. Ancak yola çıkmadan önce ölen atalarım için bir miktar haraç vermelisin. Onlara haracını ver ve biz de yola koyulalım. Atalarımızı asla unutmamalıyız. Onlar bizi unutmadılar. [costs {reg14} Influence with {s14}]
 str_npc17_payment|Ağaçlardan hoşlanırım, ancak yaşlı amcamın bana ihtiyacı var. [costs {reg14} Influence with {s14}]
 str_npc1_payment_response|Merak etme, ayrılışınızı ayarlıyacağım. [costs {reg14}/{reg15} Influence]
 str_npc2_payment_response|Endişelenme, Çavuşla konuşacağım. [costs {reg14}/{reg15} Influence]
@@ -551,16 +551,16 @@ str_npc12_payment_response|Sizin çocuklar yeni siparişler alacak, Yüksek art�
 str_npc13_payment_response|Aksini görecekler, çünkü ben şimdi senin Şefinim [costs {reg14}/{reg15} Influence]
 str_npc14_payment_response|Eski Liman ustası hakkında endişelenmenize gerek yok. [costs {reg14}/{reg15} Influence]
 str_npc15_payment_response|Para ile satın alınamaz değil mi ? Aletleri sana getireceğim. [costs {reg14}/{reg15} Influence] 
-str_npc16_payment_response|Ataları onurlandırıyorum.Senin ve benim atalarımı [costs {reg14}/{reg15} Influence]
+str_npc16_payment_response|Atalarımızı onurlandırıyorum.Senin ve benim atalarımı [costs {reg14}/{reg15} Influence]
 str_npc17_payment_response|Amcan iyi olacak. Şu an benimlesin.  [costs {reg14}/{reg15} Influence]
-; str_npc1_morality_speech|Captain, I can't understand how you can {s21} and forsake our men. Captain Faramir would have never lost sight of compassion for his Rangers and caused them to suffer without need.
-; str_npc2_morality_speech|I hope you don't mind my saying so, but it's a bit hard for me to see us {s21}. Maybe I ought to try to be more of a hardened soldier, but if you could try to be more... caring about our soldiers, I'd sleep better.
-; str_npc3_morality_speech|Commander, we Eorlingas never {s21}. Our horses don't tire easily and, once we regroup, there is no situation a well-timed charge can't decide in our favour. Take heed the next time we battle against the odds.
-; str_npc4_morality_speech|Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor.
-str_npc5_morality_speech|Hareketlerinizi yeniden düşünmelisiniz, komutan. {S21} bizi Düşman'dan daha şerefli yapmaz ve arkadaşlarımızın güveni azaltır.
+str_npc1_morality_speech|Yüzbaşı, adamlarımızdan nasıl {s21} yaptığınızı ve onlardan vazgeçebildiğinizi anlayamıyorum. Yüzbaşı Faramir, Rangerlarına olan merhametini asla kaybetmezdi ve gerekmedikçe onlara acı çektirmezdi.
+str_npc2_morality_speech|Umarım bunu söylememin bir  sakıncası yoktur, ama {s21}'e dayanmam biraz zor. Belki daha sert bir asker olma konusunda sana borçluyum fakat sen de askerlerle daha çok ilgilenmelisin bence.Böyle yaparsan daha rahat uyuyabilirim.
+str_npc3_morality_speech|Komutan, biz Eorlingalar asla {s21}. Bizim atlarımız kolayca yorulmazlar ve bir kez yeniden organize olduk mu iyi bir zamanlamayla saldırmak bizim lehimize olur.Her zaman savaş olasılığı için uyanık olun.
+str_npc4_morality_speech|Askerlerin söylediklerine dikkat etmeyin, bazen {s21} en akıllıca hareket biçimidir. Ben hayatlar kaybolmadığı ve kemikler kırılmadığı için şükrediyorum.Başka bir savaşta kader bize gülecek.
+str_npc5_morality_speech|Hareketlerinizi yeniden düşünmelisiniz, komutan. {s21} bizi Düşman'dan daha şerefli yapmaz ve arkadaşlarımızın güveni azaltır.
 
-str_npc7_morality_speech|{S21} 'e karar verdiğinizden dolayı memnun kalmadım. Savaşa katılmak doğru düşünen bir cüce için onurdur, ancak bir korkak tarafından yönetilen bir grupta savaşmak utanç verici. Kuzenlerim bunu öğrenirlerse ne derler?
-str_npc8_morality_speech|Komutan, itiraz etmek zorundayım. {S21}, adamlara karşı sert ve gereksiz birisi. Onların acısını hafifletmek için elimden gelen şeyi yaparım, ancak lütfen başka büyük bir hata yapmayın.
+str_npc7_morality_speech|{s21} 'e karar verdiğinizden dolayı memnun kalmadım. Savaşa katılmak doğru düşünen bir cüce için onurdur, ancak bir korkak tarafından yönetilen bir grupta savaşmak utanç verici. Kuzenlerim bunu öğrenirlerse ne derler?
+str_npc8_morality_speech|Komutan, itiraz etmek zorundayım. {s21}, adamlara karşı sert ve gereksiz birisi. Onların acısını hafifletmek için elimden gelen şeyi yaparım, ancak lütfen başka büyük bir hata yapmayın.
 str_npc9_morality_speech|Uruh-hai {s21}'yi yapmaz. Efendimizin cesareti az ise, bir gece kendilerini onlar olmadan bulabilir. Gulm konuştu.
 
 
@@ -589,12 +589,12 @@ str_npc15_2ary_morality_speech|Hi-hi-hi! Seni kurnaz, Aman Allahım! Altını al
 
 str_npc1_personalityclash_speech|senden nefret ettiğimi söylemiş miydim ?
 str_npc2_personalityclash_speech|senden nefret ettiğimi söylemiş miydim ?
-; str_npc3_personalityclash_speech|Commander, how come we ended up with {s11} in our company? He's nimble enough on foot, I reckon, but he talks of ambushes too often for my liking - not unlike the cautious nature of his people.
+str_npc3_personalityclash_speech|Komutan, {s11}'i nereden buldun? Düşünüyorum da, o fazla uyanık, Şunu fark ettim ki o halkının temkinli doğasından farklı, sık sık pusu kurmaktan çok hoşlandığından bahsediyor.
 str_npc4_personalityclash_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc5_personalityclash_speech|{s11} den nefret ettiğimi söylemiş miydim ?
-; str_npc6_personalityclash_speech|{playername}, I just saw {s11} walk brazenly over a nest of young birds. His clumsiness destroyed the young lives of innocent creatures.
-; str_npc7_personalityclash_speech|Lord {s11} does well in a battle, but I wonder if he blinds the enemy by the shine of his hair? Or they fall in awe of his fame and uppity demeanor?
-; str_npc8_personalityclash_speech|Commander, I must lodge a complaint against {s11}. He continues to pester me about making him a certain brew called 'the green fairy'.
+str_npc6_personalityclash_speech|{playername}, Geçen {s11}'in  yavru kuşların yuvasına yürüdüğünü gördüm. Onun sakarlığı masum yaratıkların genç hayatlarını yok etti.
+str_npc7_personalityclash_speech|Lord {s11} iyi savaşıyor, fakat düşmanlarını saçlarının parlaklığıyla mı kör etmeye çalışıyor merak ediyorum. Yoksa bayağılığından ve kibirli tavırlarından mı yerlere düşüyorlar?
+str_npc8_personalityclash_speech|Komutan, {s11} 'i size şikayet etmeliyim. Bana sürekli 'yeşil peri' denilen bir mayalama yöntemini anlatıp duruyor.İllallah ettim.
 str_npc9_personalityclash_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc10_personalityclash_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc11_personalityclash_speech|{s11} den nefret ettiğimi söylemiş miydim ?
@@ -606,12 +606,12 @@ str_npc16_personalityclash_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc17_personalityclash_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc1_personalityclash_speech_b|{s11} den nefret ediyorum.
 str_npc2_personalityclash_speech_b|{s11} den nefret ediyorum.
-; str_npc3_personalityclash_speech_b|I don't have a quarrel with the people of Gondor, but we would do better with more bold horsemen and less reluctant ground-huggers, if you catch my drift.
+str_npc3_personalityclash_speech_b|Gondor halkıyla bir anlaşmazlığım yok, Fakat daha çok atlı ve daha az piyadeyle daha iyi olabiliriz. Eğer beni dinlersen.
 str_npc4_personalityclash_speech_b|{s11} den nefret ediyorum.
 str_npc5_personalityclash_speech_b|{s11} den nefret ediyorum.
-; str_npc6_personalityclash_speech_b|His dwarven ways may serve him well underground, albeit it's a wonder he hasn't fallen down an ugly shaft. Maybe he should have.
+str_npc6_personalityclash_speech_b|Onun Cüceliği yer altında işe yarayabilir. Gerçi hala nasıl şimdiye kadar o çirkin kuyulardan birine düşmediğini merak ediyorum. Belki de çoktan düşmeliydi.
 str_npc7_personalityclash_speech_b|Cüce kahraman, eski Ölümsüz Durin gibi biriyle daha iyi oluruz. Bırak elfler ormanlarında dolansınlar.
-; str_npc8_personalityclash_speech_b|It is made from wormwood soaked in liquor and apparently favored by minstrels and vagrants for seeing things that are not there. I doubt you'll approve of your soldiers chasing air on the battlefield, as much as it may be amusing to watch.
+str_npc8_personalityclash_speech_b|Liköre batırılmış solucanlardan yapılmış ve görünüşe göre içinde ne olduğuna aldırmayan aşıklar ve serserilerin favori içeceği. Savaş alanında havayı kovalayan askerlerimizi izlemesinin eğlenceli olacağını onaylayacağınızdan şüpheliyim.
 str_npc9_personalityclash_speech_b|{s11} den nefret ediyorum.
 str_npc10_personalityclash_speech_b|{s11} den nefret ediyorum.
 str_npc11_personalityclash_speech_b|{s11} den nefret ediyorum.
@@ -627,7 +627,7 @@ str_npc3_personalityclash2_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc4_personalityclash2_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc5_personalityclash2_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc6_personalityclash2_speech|{s11} den nefret ettiğimi söylemiş miydim ?
-; str_npc7_personalityclash2_speech|A nice little scrap, eh captain? If only slightly ruined by the conduct of that Elf-woman {s11}.
+str_npc7_personalityclash2_speech|Güzel hurdaydi değil mi kaptan? Keşke Elf-Kadın {s11} onu mahvetmeseydi ?
 str_npc8_personalityclash2_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc9_personalityclash2_speech|{s11} den nefret ettiğimi söylemiş miydim ?
 str_npc10_personalityclash2_speech|{s11} den nefret ettiğimi söylemiş miydim ?
@@ -644,7 +644,7 @@ str_npc3_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc4_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc5_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc6_personalityclash2_speech_b|{s11} den nefret ediyorum.
-; str_npc7_personalityclash2_speech_b|I saw her cowering in the rear, barely releasing an arrow or two in the general direction of the enemy. I say let her go to take care of the birds and bees, so we can go on with the bloody work of slaying the enemy.
+str_npc7_personalityclash2_speech_b|Onu arkada çömelirken gördüm. Düşman yönüne bir ya da iki tane ok anca attı. Bence onu kuşlar ve arılarla ilgilenmesi için baş başa bırakalım ki düşmanı katletmeye devam edebilelim.
 str_npc8_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc9_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc10_personalityclash2_speech_b|{s11} den nefret ediyorum.
@@ -655,12 +655,12 @@ str_npc14_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc15_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc16_personalityclash2_speech_b|{s11} den nefret ediyorum.
 str_npc17_personalityclash2_speech_b|{s11} den nefret ediyorum.
-; str_npc1_personalitymatch_speech|Have you noticed the grace of {s11} in that last battle? The way she moves around the enemy just before striking the final blow? It's like the stories of old, when elven maidens displayed as much poise on the battlefield as in their beautiful forest courts.
-; str_npc2_personalitymatch_speech|Excuse me, commander. I was just helping {s11} with minor weapon repairs after that last scrap, and he even promised to teach me how to improve my strikes.
-; str_npc3_personalitymatch_speech|Is not a Rohan shieldmaiden in full charge a sight to behold? Granted, our womenfolk are better off by the hearth, but after seeing {s11} strike down the enemy in that last battle, I'm beginning to have doubts.
-; str_npc4_personalitymatch_speech|A battle of great deeds, commander, and my congratulations on the victory. I noticed how {s11} quietly and surely took care of the wounded and ailing, even as the last of the enemy got what they deserved.
+str_npc1_personalitymatch_speech|Son savaşta {s11}'ın zerafetini fark ettin mi? Son darbeyi vurmadan önce düşmanın etrafında dolaşması? Tıpkı eski hikayelerdeki gibi, Elf kızları savaş alanlarında bile saraylardaki kadar zarif olabiliyorlar.
+str_npc2_personalitymatch_speech|Afedersiniz, komutan. Son akından sonra {s11} 'e küçük silah onarımları yapıyordum.O bana saldırılarımı nasıl geliştireceğimi öğreteceğine  söz bile verdi.
+str_npc3_personalitymatch_speech|Rohan Kalkanlıları niye hiç tam saldırı sırasında ortada gözükmezler? Kabul edelim ki, bizim kadınlarımız bile onlardan daha yüreklidir.Fakat açıkcası {s11}'ı son saldırıda görünce eski düşüncelerim hakkında şüphelenmeye başladım.
+str_npc4_personalitymatch_speech|Büyük kahramanlıkların gösterildiği bir savaş oldu komutan, zafere yaptığım katkı için teşekkürler.Bununla birlikte {s11} 'in yaralılarla ve hastalarla hatta bakımı hak etmeyen düşmanla bile şevkatle ilgilenmesi dikkatimi çekti.
 str_npc5_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemiş miydim ?
-; str_npc6_personalitymatch_speech|{playername}, as much as I hate battles, I can't help but notice my Lord {s11} riding out in full splendor and bearing down on the ugly creatures like a hawk.
+str_npc6_personalitymatch_speech|{playername}, savaştan edebildiğim kadar nefret ediyorum. Sana yardım edemem fakat Lord {s11} tüm ihtişamıyla sürdüğü atıyla çirkin yaratıkları bir şahin gibi avlayabilir.
 str_npc7_personalitymatch_speech|Şef. Az önce {s11} ile konuşuyordum. Biraz vahşi olduğu doğru, ama aynı zamanda iyi bir de dost.
 str_npc8_personalitymatch_speech|Sizin için bir başka zafer komutanım ve adamlarımızın hayatlarını korumak için yaptığınız hamlelere hayranım. {S11} gibi savaşçılar savaş planlarınız için çok faydalı görünüyor.
 str_npc9_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemiş miydim ?
@@ -672,14 +672,14 @@ str_npc14_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemi
 str_npc15_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemiş miydim ?
 str_npc16_personalitymatch_speech|{s11} hoşuma gitmeye başladı, hiç söylemiş miydim ?
 str_npc17_personalitymatch_speech|Şef. Bence {s11} ormanda iyi yapabilir. Söğütten bir küle söyleyebilirim.
-; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse in what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
-str_npc2_personalitymatch_speech_b|Evdekiler bana her zaman Ithilien Rangers'la ilgili hikayeler anlatıyordu ve şimdi kendi gözlerimle bunların hepsinin doğru olduklarını görebiliyorum. Eğer hepsi {s11} gibiyse, Gondor'un kendisi için daha güvenli olduğunu hissediyorum.
+str_npc1_personalitymatch_speech_b|{S11} grubunu çok hoş buluyorum ve yerli ahşap sanatı, Sindarin'in becerilerini dünyaya ispatlıyor. Biliyor musunuz, babam bana efsanevi Sindarin Elf kaptanı Doriath'ın Kral Thingol'unun ismini verdi ve ben bu yüzden daima bu adil ırk için özel bir bağ hissederim.
+str_npc2_personalitymatch_speech_b|Evdekiler bana her zaman Ithilien Rangers'la ilgili hikayeler anlatıyordu ve şimdi kendi gözlerimle bunların hepsinin doğru olduklarını görebiliyorum. Eğer hepsi {s11} gibiyse, Gondor'un kendim için daha güvenli olduğunu hissediyorum.
 str_npc3_personalitymatch_speech_b|Komutanım, şahsi bir iyilik olarak, bir sonraki savaşta {s11} 'e daha geride kalması için emir verebilir misin? Onun zarar gördüğünü görmeye dayanamam,ve bu sadece bir sarhoş konuşması değil.
 str_npc4_personalitymatch_speech_b|Hayatları korumak en asil eylemdir ve dünyalarım çok uzak olsa bile, o tür ruhla akrabalık hissediyorum.
-str_npc5_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
+str_npc5_personalitymatch_speech_b|{s11}'in hareketlerini beğeniyorum.
 str_npc6_personalitymatch_speech_b|Kaç yaşında merak ediyorum. Belki benden yüzlerce yıl büyüktür? Boş ver, asla bilemeyeceksin.
-; str_npc7_personalitymatch_speech_b|{s11} and her Dale-kin, even if not quite up to dwarven warrior standards, have proven to be steadfast allies in this War. A good choice for a friend and companion among Men, if I may say so.
-; str_npc8_personalitymatch_speech_b|The people of Dale have a deep regard for the hardy Lonely Mountain Dwarven-folk, as friends and protectors despite our different race and customs.
+str_npc7_personalitymatch_speech_b|{S11} ve Dale-adamı, cüce savaşçı standartlarına uymasalar bile, bu savaşta müttefik olduklarını kanıtladılar. Diğer insanlara göre iyi bir arkadaş ve yoldaş olduklarını söyleyebilirim.Yani şu ana kadar.
+str_npc8_personalitymatch_speech_b|Dale insanları Yalnız Dağdaki dayanıklı Cüce halkına derin saygı duyarlar. Arkadaş ve koruyucular olarak farklılıklarımızı görmezlikden geliriz.
 str_npc9_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
 str_npc10_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
 str_npc11_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
@@ -688,7 +688,7 @@ str_npc13_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
 str_npc14_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
 str_npc15_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
 str_npc16_personalitymatch_speech_b|{s11} hareketlerini beğeniyorum.
-str_npc17_personalitymatch_speech_b|Halkım orman elfleri ile iyi geçiniyor. Onlar da ağaçlar gibi. Ben de ağaçları severim. Biz tüm ağaçlar gibi.\n
+str_npc17_personalitymatch_speech_b|Halkım orman elfleri ile iyi geçiniyor. Onlar da ağaçlar gibi. Ben de ağaçları severim. Biz hepimiz Ağaçlar gibiyizdir.
 str_npc1_retirement_speech|Savaşçı hayatından yorulmaya başladım, emekli olacağım.
 str_npc2_retirement_speech|Savaşçı hayatından yorulmaya başladım, emekli olacağım.
 str_npc3_retirement_speech|Savaşçı hayatından yorulmaya başladım, emekli olacağım.
@@ -720,17 +720,17 @@ str_npc11_rehire_speech|Size tekrar hizmet edebilir miym ?
 str_npc12_rehire_speech|Size tekrar hizmet edebilir miym ?
 str_npc13_rehire_speech|Size tekrar hizmet edebilir miym ?
 str_npc14_rehire_speech|Size tekrar hizmet edebilir miym ?
-; str_npc15_rehire_speech|Aah, Great Lord! I have searched so long for you, as word of your glorious deeds rings across Middle Earth! Surely you have missed my skills? You will welcome me once more to complete your Great Army?
+str_npc15_rehire_speech|Aah, Büyük Lord! Orta Dünya'da görkemli işlerinizin sözlerinin yayıldığı gibi sizi her yerde aradım durdum! Tabi ki yeteneklerimi özledin ve beni büyük ordunu tamamlamak için bir kez daha yanına alacaksın değil mi?
 str_npc16_rehire_speech|Size tekrar hizmet edebilir miym ?
 str_npc17_rehire_speech|Hey. Yine mi hareket etme zamanı? Ağaçlar fazla hareket etmez. Ama ben hareket etmeyi severim ayrıca ağaçları da.
 str_npc1_home_intro|Kaptan, şimdi Osgiliath'a yaklaşıyoruz, bu yüzden dost ve düşmanımız için gözlerimizi dört açalım.
 str_npc2_home_intro|Dikkatli olun, komutan, bu Minas Morgul olmalı. Bir şeylerin bizi izlediğini sen de hissediyor musun?
-; str_npc3_home_intro|A word of advice, commander. We are getting mighty close to Entwood now and the horses are getting restless. Some call the forest Fangorn, too.
-; str_npc4_home_intro|Let's stop here for a minute, commander. Ahead of us, between the Anduin and the Limlight, lies the Field of Celebrant, where Eorl the Young rode to the aid of our Gondor allies.
+str_npc3_home_intro|Sadece küçük bir tavsiye, komutan. Şu anda Entwood'a çok yakınlaşıyoruz ve atlar huzursuz oluyor. Fangorn'da bir şeyler bize sesleniyor sanki.
+str_npc4_home_intro|Bir dakika burada duralım komutan. Önümüzde, Anduin ile Limlight arasında, Eorl the Young'un Gondorlu müttefiklerimize yardım ettiği yer var.
 str_npc5_home_intro|Daro! Bu Isengard ve Orthanc'ın meşhur siyah kulesi. Onları son gördüğümden beri çok şey değişti ve değişen şeylerin hiçbiri iyiye gitmedi.
 str_npc6_home_intro|Affedersin, {playername}. Bu bölümdeki yollar daha da eğri büğrü ve bazıları çıkmaza götürüyor. Dol Guldur'a yaklaşmalıyız.
-; str_npc7_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
-; str_npc8_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
+str_npc7_home_intro|Oh Kaptan! Bu Khazad-dûm'un Doğu Kapıları olmalı ya da Moria hangisini tercih edersen. Bu mesafeden Kheled-zâram'ın parlak gölünü ve bulutlar arasından, Sisli Dağların bir bölümü olan Üç Tepeyi görebilirsin.
+str_npc8_home_intro|Ah, ne merak uyandırıcı bir manzara! Yetenekli ahşap işçileri olan, hayvanlarla ve bitkilerle uyum içinde yaşanan bir yer hakkında anlatılan hikayeler duymuştum. Bildiğim kadarıyla onlara Boerningler deniyor.
 str_npc9_home_intro|Lanet olsun! Orada Hornburg olmalı efendim.
 str_npc10_home_intro|Hey, şuraya bak !
 str_npc11_home_intro|Hey, şuraya bak !
@@ -741,14 +741,14 @@ str_npc15_home_intro|Hey, şuraya bak !
 str_npc16_home_intro|Hey, şuraya bak !
 str_npc17_home_intro|Ooooo, mallornlar burada büyür! Biri bir mallorn'u asla kesmemeli, çok güzeller!
 str_npc1_home_description|Bir zamanlar adaletli bir şehirdi, eski Gondor'un başkenti, insanlarla ve kahkahalarla doluydu. Artık tenha ve harap durumda, yaşlı Anduin artık bir hayalet kasaba boyunca akıyor.
-; str_npc2_home_description|It was called Minas Ithil many years ago, and stories are told of how moonlight filled its inner courts with silver light and its walls gleamed silver and white. Gondor watchmen peered over the walls to the east and kept watch beyond Ephel Dúath.
-; str_npc3_home_description|It's thick with trunks and branches and all manner of trees, and I wouldn't venture there as strange creatures roam the forest, not all of them harmless.
-; str_npc4_home_description|'Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...'
-; str_npc5_home_description|Once built by the Southern Kingdom, now home to one that we called the White Wizard, scheming, no doubt, how to increase his power further at the expense of others.
-; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazguls here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
-; str_npc7_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
-; str_npc8_home_description|Not too often, a travelling merchant comes to the Dale market and offers the finest honey I have ever tasted. For some curious reason, he says that 'it was made by bears' and laughs.
-; str_npc9_home_description|Its damned walls are too high and too hard for my hammer to break. I reckon if we ever chase away the manlings from their Edoras pig-sties, they'll run off here and cower behind the walls.
+str_npc2_home_description|Burası uzun yıllar önceden Minas Ithil olarak adlandırılırdı. Hikayeler ay ışığının nasıl avlusunu ve duvarlarını gümüşe ve beyaza boyadığını anlatır. Gondorlu gözcüler surlarında doğuyu ve Ephel Dúath'ın ötesini gözlerler.
+str_npc3_home_description|Buradaki dallar çalılar ve ağaçlara karşı kalın zırhlarımız var fakat ben o ormandaki yaratıklarla yüzleşmek istemem, onların hepsinin zararsız olduğunu söyleyemeyiz.
+str_npc4_home_description|"At ve binici şimdi nerede? Kükreyen boynuz nerede?^Miğfer, zırhlı yelek ve akıp giden parlak saçlar nerede?...^Dağlardan yağmur gibi çayırlardan rüzgar gibi geçip gittiler;^Batının tepelerindeki gölgelerin arasından günler geçip gitti...'
+str_npc5_home_description|Bir zamanlar Güney Krallığı tarafından inşa edilmişti, fakat şimdi hiç şüphesiz bizim Beyaz Büyücü olarak adlandırdığımız kişinin evi. Entrikacı herif başkalarının topraklarına el koymasa nasıl bu kadar güçlenebilirdi ki.
+str_npc6_home_description|Daha önce bu kadar uzaklara hiç gitmemiştim, ancak Greenwood izcilerinin Nazgüllerin burada olabileceğini söylediklerini duymuştum. Kötü bir şey hissediyorum, fakat ne olduğunu söyleyemem. Yine de güçlü bir kötülük olduğunu söyleyebilirim, bu yüzden hazır olalım.
+str_npc7_home_description|Bu dağınıklıktan ve bir sürü Ork izinden söylemeliyim ki, Balin ve yanındakilerin başına gelebilecekler hakkında endişeleniyorum. Görünen o ki Moria Gölgeye yenik düşmüş buralarda çok dikkatli yürümeliyiz.
+str_npc8_home_description|Çok sık olmamakla birlikte, gezici bir tüccar bir Dale marketine gelir ve hayatımda yediğim en iyi balı sunar. Anlamadığım bir sebeple, 'Bu bal ayılar tarafından yapıldı der' ve ardından kahkahalar.
+str_npc9_home_description|Lanet olası duvarlar çok yüksekler ve çekicimin onları kırması için fazla sağlamlar. Düşünüyorum da eğer insanları Edoras'taki domuz ağıllarından kovalarsak, buraya kaçıp duvarların arkasına sinecekler.
 str_npc10_home_description|Bu şehri biliyor musun ?
 str_npc11_home_description|Bu şehri biliyor musun ?
 str_npc12_home_description|Bu şehri biliyor musun ?
@@ -757,13 +757,13 @@ str_npc14_home_description|Bu şehri biliyor musun ?
 str_npc15_home_description|Bu şehri biliyor musun ?
 str_npc16_home_description|Bu şehri biliyor musun ?
 str_npc17_home_description|Burada bu kadar güzel ormanlar olduğunu bilmiyordum. Burada herhangi bir ormancının olup olmadığını merak ediyorum.
-; str_npc1_home_description_2|If Gondor is doomed, West Osgiliath shall fall first to the foul hordes of the Eye. I only hope Captain Faramir would be in command that day and stem the tide. If we could spare any men to bolster the defences here, I would be most grateful, Captain.
+str_npc1_home_description_2|Gondor karanlığa boğulursa,Batı Osgiliath Gözün kalabalık ordularınca işgal edilecek. Umarım, Kaptan Faramir o gün komutada olur ve düşman dalgasını önler. Burada savunmaları güçlendirmek buraya adam bırakabilirsek, minnettar olurdum, Kaptan.
 str_npc2_home_description_2|Şimdilik orasının korkunç orklarla, korkutucu ruhlar ve daha kötü şeylerle dolu olduğunu söyleyebilirim. Gondor'un orayı geri kazanacağı ve her şeyden arındırdığı gün için dua ediyorum.
 str_npc3_home_description_2|Eğer Ent Orman'ını geçmek zorundaysak, bunu acele gizlice yapalım. Ayaklarımızı kimin dinliyor olabileceğini bilmiyorum ve öğrenmek de istemiyorum.
 str_npc4_home_description_2|Geçmişin büyük olaylarını ve yapılan fedakarlıkları hatırlamak iyi olur. Rohan ile Gondor arasındaki ittifak halklarımızı bir kez daha azaptan kurtaracak.
-; str_npc5_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
+str_npc5_home_description_2|Şunu hatırlatmama izin ver, En yüce olanlar hatta Istari'den biri bile bozulabilir ve düşebilir. Daha fazla güç için yanıp tutuşanlar yanıp tutuştukları güç tarafından boğulabilirler. O yüzden fazla oyalanmayalım.
 str_npc6_home_description_2|Duvarlarının arkasındaki kötülük ordularının yürüyüşünü hissediyorum onlar nereyi işgale hazırlanıyorlar ... Güzel Lothlórien'i mi? Dale'i mi? Benim vatanım Greenwood'u mu ? Bunu bilemem, fakat lütfen bunun olmasını engellemek için elinizden gelen her şeyi yapın.
-; str_npc7_home_description_2|If the fates of war ever provide us with a large army, we should risk the entrance to the Mines and retrieve their mighty riches.
+str_npc7_home_description_2|Savaşın kaderi bize büyük bir ordu sunarsa, Madenlerdeki tehlikeyi göze atmalı ve onların güçlü zenginliklerini geri almalıyız.
 str_npc8_home_description_2|Bir sürü tatlı çiçeğin kokusunu alabiliyorum ve arıları, onların nektarlarını hasat ederken görüyorum. Eğer sakıncası yoksa, kişisel kullanım için biraz bitki toplayacağım, sadece biraz zaman alacak.
 str_npc9_home_description_2|Eğer büyük bir Uruh-hai kalabalığımız tarafından desteklenmiyorsa, burada dolaşmanın faydası yok. Eğer duvardaki gözcülere tanınmak istemiyorsan, tabii.
 str_npc10_home_description_2|Minas Morgul, Nazgüllerin tüm gün içtiği yerdir, hey-hey!
@@ -969,7 +969,7 @@ str_comment_you_renounced_your_alliegance_unfriendly_spiteful|Senin {s54}'a bir 
 str_comment_you_renounced_your_alliegance_unfriendly_moralizing|Duydum ki lordumuz {s54} adına ettiğin sadakat yeminini bozmuşsun. Seni bir hain olarak kabul etmek zorundayım.
 str_comment_you_renounced_your_alliegance_enemy|Duydum ki lordumuz {s54} adına ettiğin sadakat yeminini bozmuşsun. Eh, eski yoldaşların düşman olmaları bu dünyanın bir düzeni.
 str_comment_you_renounced_your_alliegance_default|Duydum ki lordumuz {s54} adına ettiğin sadakat yeminini bozmuşsun. Bu senin kararındır. Ama savaş meydanında karşılaştığımızda sana iyilik yapmamı bekleme!
-str_personality_archetypes|hükümdar
+str_personality_archetypes|sadık
 str_martial|Savaşçı
 str_quarrelsome|huysuz
 str_selfrighteous|acımasız
@@ -1089,7 +1089,7 @@ str_lord_insult_cunning|düşüncesiz ayı
 str_lord_insult_sadistic|sümüklü it
 str_lord_insult_goodnatured|nahoş adam
 str_lord_insult_upstanding|rezil dürzü
-str_rebellion_dilemma_default|[liege]
+str_rebellion_dilemma_default|[sadık]
 str_rebellion_dilemma_martial|{s45} açıkça haksızlığa uğramış. Sadakatimi {s46} namına bağlamış olsam da bu eğer tacını haksız şekilde kaptırdıysa onu desteklememe engel olmaz.
 str_rebellion_dilemma_quarrelsome|Hmm. {s46} asla hakkımı vermedi, yani ona pek bir borcum yok. Aynı şekilde belki {s45} daha iyi olmaz. {s46} en azından kendini göstermişti.
 str_rebellion_dilemma_pitiless|Hmm. {s45} {reg3?:} tahtın gerçek varisinin kendisi olduğunu söylüyor. Bu güzel, {s46}'a olan sadakat yeminimi kaldırmış oluyor. Ama yine de çok dikkatli karar vermeliyim.
@@ -1097,7 +1097,7 @@ str_rebellion_dilemma_cunning|Hmm, {s46} adına sadakat yemini ettim ama yeminle
 str_rebellion_dilemma_sadistic|Hmm. Bu acımasız dünyada insan herşeyden önce kendini düşünmelidir. Pekala, burada benim kazancım nedir?
 str_rebellion_dilemma_goodnatured|Ne diyeceğimi bilemiyorum. {s46} adına, onun yasal hükümdar olduğu üzerine yeminim var. Ancak gerçek hak sahibi o değilse, bu beni hala bağlar mı bilemiyorum.
 str_rebellion_dilemma_upstanding|Bu epey can sıkıcı. {s46} adına ettiğim bağlılık yemininin geçersiz olması ve ülkemizi bir arada tutan bağların bu şekilde çözüleceği fikri gerçekten çok can sıkıcı. Öte yandan verasetin meşruluğunu gözetmek de benim en birincil görevim ve {s45} yaptığı iddialarda meşruluğunu kanıtlamış görünüyor.
-str_rebellion_dilemma_2_default|[liege]
+str_rebellion_dilemma_2_default|[sadık]
 str_rebellion_dilemma_2_martial|Öte yandan, {s46} savaşta ve barışta önderimiz olmuştur. Yani yeminimi bozmaya gönülsüzüm.
 str_rebellion_dilemma_2_quarrelsome|Peki söylesene, neden tanımadığım bir {reg3?kadın:adi herif} için tanıdığım ve bildiğim adi herife sırtımı döneyim?
 str_rebellion_dilemma_2_pitiless|Kimi bu diyarın {reg3?yöneticisi:kralı} yapacağıma karar verme durumunda olmak bile çok ağır. Ancak aynı zamanda hakettiğim kazanımlara beni ulaştıracak fırsatları da yaratan bir zaman.
@@ -1109,7 +1109,7 @@ str_rebellion_prior_argument_very_favorable|Senin taht adayını destekleyen arg
 str_rebellion_prior_argument_favorable|Senin taht adayını destekleyen argümanları duydum ve aynı fikirde olmaya meyilliyim.
 str_rebellion_prior_argument_unfavorable|Senin taht adayını destekleyen argümanları duydum ama açıkcası ikna edici bulmadım.
 str_rebellion_prior_argument_very_unfavorable|Senin taht adayını destekleyen argümanları duydum ancak çoğuna katılmıyorum.
-str_rebellion_rival_default|[liege]
+str_rebellion_rival_default|[sadık]
 str_rebellion_rival_martial|{s49} müttefikin {s44} daha önce benim şerefimi ve cesaretimi sorgulamıştı. Savaşta onunla yüzleşip söylediklerini geri sağlama şansını her zaman bulamam.
 str_rebellion_rival_quarrelsome|{s49} {s44} ile beraber çalışıyorsun. Pek marifetli bir sansarcık, ama ona asla güvenmiyorum.
 str_rebellion_rival_pitiless|{s49} anladığım kadarıyla {s44} sana destek veriyor. Ancak o zayıf, yumuşak ve hükmetmeye layık biri değildir.
@@ -1133,24 +1133,24 @@ str_and_comma_1|, ve
 str_but_comma_1|, ama 
 str_and_comma_2|. Ayrıca, 
 str_but_comma_2|. Yine de, 
-str_rebellion_agree_default|[liege]
+str_rebellion_agree_default|[sadık]
 str_rebellion_agree_martial|Kararımı verdim. Haklı varis olarak desteklediğim taraf {s45} olacak.
 str_rebellion_agree_quarrelsome|Ahh, bu kadar düşündüğüm yeter. {s46} hiç beğenimi kazanamamıştı zaten. Haydi gidip tacını ondan alalım!
 str_rebellion_agree_pitiless|Sen şanslı birisin Sana katılmaya karar verdim. Bana bu karardan pişman olmamam için dua edin.
 str_rebellion_agree_cunning|Bu en tehlikeli bir karar, ancak dikkatle incelendikten sonra sana katılıma karar verdim. En iyisini umut edelim.
-str_rebellion_agree_sadistic|Kararımı verdim Seninleyim {reg3?woman:man} {s45}.Fakat {reg3?she:he} iyi ödüllendirdiğinden emin olmalısın!
-str_rebellion_agree_goodnatured|Tamam.Bence {reg3?woman:man} iyi bir yönetici olacak. Sana katılacağım.
+str_rebellion_agree_sadistic|Kararımı verdim Seninleyim {reg3?:} {s45}.Fakat {reg3?onun:onun} bizi iyi ödüllendirdiğinden emin olmalısın!
+str_rebellion_agree_goodnatured|Tamam.Bence {reg3?o:on} iyi bir yönetici olacak. Sana katılacağım.
 str_rebellion_agree_upstanding|Üzgünüm.  {s45} tarafından ortaya atılan hikaye bu diyarın halkının üzerine bir de iç savaş yükü bindirmem için yeterli değil. {s46} ile yola devam edeceğim. Eğer hatalıysam Gökler beni affetsin.
-str_rebellion_refuse_default|[liege]
+str_rebellion_refuse_default|[sadık]
 str_rebellion_refuse_martial|Üzgünüm. {s45} 'in iddası güçlü fakat {s46} sırtımı döneceğim biri değil. Ben, sadık kalmaya devam edeceğim.
 str_rebellion_refuse_quarrelsome|I-ıh. Şu senin {s45} bu diyarı yönetecek kapasitede değil. Ben {s46} ile kalıyorum bu durumda.
-str_talk_later_default|[liege]
-str_talk_later_martial|Şimdi politica konuşulacak zaman değil! Bugün burada silah kuşanmış lordlarımla beraber muharebe için gelmiş bulunuyorum. Savaşa hazırlansan iyi edersin.
+str_talk_later_default|[sadık]
+str_talk_later_martial|Şimdi politika konuşulacak zaman değil! Bugün burada silah kuşanmış lordlarımla beraber muharebe için gelmiş bulunuyorum. Savaşa hazırlansan iyi edersin.
 str_talk_later_quarrelsome|Gerçekten efendime ihanet edeip etmeyeceğimi mi tartışıyorsun benimle? Bütün ordusu tarafından kuşatılmışken! Beni ne sanıyorsun gerizekalı mı?
 str_talk_later_pitiless|Sesini alçak tut! Bu konuda söyleyeklerimi burada dillendiremem, ordunun ortasındayken olmaz.
 str_talk_later_cunning|Şimdi böyle bir tartışmaya girme zamanı değil. Belki bunu başka bir zamanda başka bir yerde gerçekleştirebiliriz ancak şimdilik hala düşmanız.
 str_talk_later_sadistic|Senin ağzını diktirmeliyim! Diğer vasallar seninle ihanet planları yaptığımı duyarlarsa olabilecekleri aklın alıyor mu?
-str_talk_later_goodnatured|emek başlattığın isyanla ilgili konuşmak istiyorsun benimle? Efendimin ordusu etrafımızı sarmamışken tekrar dene o zaman söyleyeceklerini dinleyebilirim.
+str_talk_later_goodnatured|Demek başlattığın isyanla ilgili konuşmak istiyorsun benimle? Efendimin ordusu etrafımızı sarmamışken tekrar dene o zaman söyleyeceklerini dinleyebilirim.
 str_talk_later_upstanding|Verasetin meşruluğuyla ilgili görüşüm ne olursa olsun, bunu burada ve şimdi tartışmayacağım. Özel konuşabileceğimiz bir imkanımımız olursa, bu konu üzerine diyeceklerini dinleyebilirim. Ancak şu an için beni düşmanın olarak düşün.
 str_gossip_about_character_default|Söylediklerine göre {s6} ilginç karakteristik özelliklere sahip değilmiş.
 str_gossip_about_character_martial|Söylentilere göre {s6} hiçbir şeyi savaşmak kadar sevmiyor.
@@ -1223,8 +1223,8 @@ str_subfaction_gondor_name5|Pinnath Gelin
 str_subfaction_gondor_name6|Blackroot Vadisi
 str_subfaction_gondor_name7|Ithilien
 str_default_rumor|Savaş. Herkes savaş hakkında konuşuyor.
-str_rohan_rumor_begin|Bu savaşta bebeklerimi görmek kalbimi kırıyor! Ama onlar olmasa Erkekler yürümek zorunda kalacaklardı.
-str_rohan_rumor_2|Orkların atları yediğini duydum. İğrenç yaratıklar! ayrıca esirleride yiyiyorlarmış. buda kötü elbette.
+str_rohan_rumor_begin|Bu savaşta bebeklerimi görmek kalbimi kırıyor! Ama onlar olmasaydı insanlar yürümek zorunda kalacaklardı.
+str_rohan_rumor_2|Orkların atları yediğini duydum. İğrenç yaratıklar! ayrıca esirleride yiyiyorlarmış. bu da kötü elbette.
 str_rohan_rumor_3|Rohan'ınkilerden daha harika atlar yok. Elfler bile kendi atlarını bizden alıyor!
 str_rohan_rumor_4|Lütfen, atlarım yaralandığında onları da tıpkı insanları tedavi ettiğin gibi tedavi et
 str_rohan_rumor_5|Bana sekiz tane Sumpter Atı getirin, diyor... Dün yedi tane istedi. Merak ettiriyor.
@@ -1234,23 +1234,23 @@ str_rohan_rumor_8|Warglar atlardan daha yavaştır, ancak daha hızlı dönebili
 str_rohan_rumor_9|Ordular kargı ve mızraklarla bizim atlılarımıza karşı yürürler. Hain Saruman, savaş bitmeden ordularını donatmak için bütün Fangorn ormanını kesecek.
 str_rohan_rumor_10|Krallıktaki en iyi atlı olmak için, en iyi atları sürmekten başlaman gerekir.
 str_rohan_rumor_11|Gondor'da gördüğün atların çoğu bizden gönderildi. Onlar Ağır zırhlarını taşıyabilen, biraz daha güçlü, ancak biraz daha yavaş atları tercih ederler.
-; str_rohan_rumor_12|We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small.
+str_rohan_rumor_12|Rohan'da insanlarla atların birbirlerinden hiçbir farkı olmadığını söyleriz.İnsanında iyisi kötüsü vardır atın da. İnsan da acıkır at da acıkır. İnsan da üzülür at da üzülür. İnsan da mutlu olur at da mutlu olur. İnsan da sinirlenir at da sinirlenir. İnsan da yürür at da yürür. İnsan da yaşlanır at da yaşlanır...
 str_rohan_rumor_13|Saruman'ın orkları kötü ama çok fazla koruma giymiyorlar. İyi bir balta darbesi için uygun değiller.
 str_rohan_rumor_14|Fırlatma baltalarımız ve mızraklarımız hantal görünebilir, ancak düşmana at sırtında isabet ettirme olasılın ne kadar ki? İsabet ettirdiğine değecek ağırlıkta olsun bari.
-; str_rohan_rumor_15|Hitting an orc with an arrow loosed from horseback looks difficult because it is, but the price of charging a rank of long pikes is higher.
+str_rohan_rumor_15|At üstünde giderken bir Ork vurmak zor görünüyor çünkü çok zor. Fakat uzun mızraklılarla göğüs göğüse çarpışmanın bedeli daha fazladır.
 str_rohan_rumor_16|Gondor okçuluk talimleri yapar. Biz atlı okçulara talim yaptırırız. Dunlendingler ise ikisini de yapmaz.
 str_rohan_rumor_17|Saruman'ın orklarının birçoğu ölümcül okçular. Birçoğu değil. Bilge bir süvari komutanı kimin hangisi olduğunu keşfetmek için beklememelidir.
 str_rohan_rumor_18|Hepimiz burada arkadaşız. Veya olmalıyız; Çünkü tartışırsak Mordor'un kahkahaları bizim tek ödülümüz olacak.
-; str_rohan_rumor_19|Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world.
+str_rohan_rumor_19|Uzun zamandır hayvanlarımıza ve tarlalarımıza baktık, evler yaptık, aletler yaptık ya da Minas Tirith'in savaşlarında için koşturduk. Ve tüm bunlara insanların hayatı dedik, dünyanın işleyiş şekli.
 str_gondor_rumor_begin|Gondor'un kralı yok ve kapıların dibinde düşmanlar var. Gölge doğudan büyüyor. İşler iyi gözükmüyor.
 str_gondor_rumor_2|Gondor'da doğan güneşin altında yapamayacağımız, inşa edemeyeceğimiz veya yetiştiremediğimiz hiçbir şey yok. Ama bu daha kadar sürecek?
 str_gondor_rumor_3|Mordor, kuru ve çorak bir arazidir. Orada yaratıklar ne yiyor? Bibbirlerini yemiyorlardır herhalde? Ya da belki de...
 str_gondor_rumor_4|Kuşaklar için uğraştığımız gibi ülkemiz için de uğraşıyoruz. Geçmişimiz görkemli ve cesur ama geleceğimiz belli değil.
 str_gondor_rumor_5|Gölge'nin savaşa verdiği kaynaklar sınırsız görünüyor, ancak onlar büyük bir köle gücü sayesinde hareket ediyorlar.
 str_gondor_rumor_6|Kuzeydeki elfleri biliyoruz, fakat bugünlerde artık kimse onları göremiyor.
-; str_gondor_rumor_7|I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens.
+str_gondor_rumor_7|Kralların avlusundaki Beyaz Ağacın yeniden çiçek açtığını göreceğim,gümüş tacın döndüğünü ve sonunda Minas Tirith'e Barışın geldiğini: Minas Anor yine eskisi gibi, ışık dolu, yüce ve adil, diğer kraliçeler arasındaki bir kraliçe gibi güzel.
 str_gondor_rumor_8|Umbar neden bize saldırmaya devam ediyor? Onların Korsanları bizimle ticaret yaparak bayağı iyi para kazanıyorlardı. Eski Numenor eserlerini Gondor soylularına satamadıkları için kaçırdıkları zenginlikler hangi yağma ile eşleştirebilir?
-; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
+str_gondor_rumor_9|Herkesi yiyip bitirecek bir yok ediciye karşı hayatlarımızı savunurken savaş kaçınılmaz; Fakat ben ne keskinliği için parlak kılıcı, ne hızlılığı için okları, ne de ihtişamları için savaşçıları sevmiyorum. Sadece onların savundukları şeyleri seviyorum.
 str_gondor_rumor_10|Gil-galad bir Elf Kralıydı. Harperler hakkında şarkılar söylerler: Dağlar ve deniz arasındaki Krallıkların içinde, adil ve özgür olan son kişi.
 str_gondor_rumor_11|Dol Guldur mu? hiç duymamıştım.
 str_gondor_rumor_12|Moria mı? Cüce madenleri orada, değil mi?
@@ -1259,21 +1259,21 @@ str_gondor_rumor_14|İnsanlar Dokuzların tekrar Minas Morgul'dan çıktığın�
 str_gondor_rumor_15|Güneyliler bizi Harondor'dan sürdüler. Bizi uzun bir süredir zorluyorlardı. Keşke Lebennin'in yeşil alanları üzerinden yine güvenle yürüyebilseydim. Ama 'hayır' diyeceğiz, askerlerimiz bölgenin kalbini korumak zorundalar.
 str_gondor_rumor_16|Arkadaşımın kuzeni Hirluin the Fair'de okçu. Bana sorarsan en güzel görünümlü üniformalar onlarda.
 str_gondor_rumor_17|Erech yakınlarında garip bir siyah kaya var. Bir keresinde babamla görmeye gittim. İnsanlar, deniz krallarının son oğlu tarafından uyuduğu bir odanın üzerine atıldığını söylüyorlar. Bence sadece bir taş.
-str_gondor_rumor_18|Biz sözünün eri adamlarız, biz Gondorlularız. Nadiren övünürüz fakat  sonra hemen sözümüzü tutarız veya bu uğurda ölürüz.
+str_gondor_rumor_18|Biz sözünün eri adamlarız, biz Gondorlularız. Arada sırada övünürüz fakat hemen her zaman  sözümüzü tutarız veya bu uğurda ölürüz.
 str_dwarf_rumor_begin|Cücelerin hiç arkadaşı olup olmadığını soruyorlar. Elbette arkadaşlarımız var. ama biz onları sevmiyoruz.
 str_dwarf_rumor_2|Orklar? Puff! Hepsi balta yağı.
 str_dwarf_rumor_3|Ne giyiyorsun böyle? Bu şey seni arı sokmasından bile koruyabilecekmiş gibi görünmüyor. Ayrıca komik görünüyor.
-str_dwarf_rumor_4|Tabiki biz atları sürebiliriz. Sadece sürmek istemiyoruz!
+str_dwarf_rumor_4|Tabi ki biz at sürebiliriz. Sadece sürmek istemiyoruz!
 str_dwarf_rumor_5|Yaylan bakalım! Senin gibilere burada ihtiyacımız yok, orklarla yeterince uğraşıyoruz zaten.
 str_dwarf_rumor_6|Sen kimi kısa diye çağırıyorsun?
-str_dwarf_rumor_7|Hornburg'da ki mağaraları görmelisin. Ah oradaki tüm mücevherleri alabilseydik...\n
-str_dwarf_rumor_8|Moria'daki kardeşlerimizin bir süredir sesi çıkmıyor. Eminim tüm zenginliklerini kendilerine saklamak istiyorlar!
+str_dwarf_rumor_7|Hornburg'da ki mağaraları görmelisin. Ah oradaki mücevherleri bi alabilseydik...
+str_dwarf_rumor_8|Moria'daki kardeşlerimizin bir süredir sesi soluğu çıkmıyor. Eminim tüm zenginliklerini kendilerine saklamak istiyorlar!
 str_dwarf_rumor_9|Elfler mi? Elfler bizim için ne yaptılar ki? Tamam, şifa verme becerileri var, ama bunun yanında başka neleri var ki? Tamam, demir işleme teknikleri var, ancak başka bir şeyleri var mı? Tamam, karanlık ile savaşıyorlar ediyorlar, fakat tüm bunların dışında gerçekten bizim için ne yaptılar sorarım sana?
-str_dwarf_rumor_10|Bira kupası, kızartılmış domuz, kalın sakallı bir kız ve ben mutluyum!
-str_dwarf_rumor_11|Brian, bir maden açıyorum! Ne? Ne oldu Brian, bir maden açıyorum!
-str_dwarf_rumor_12|Biz, Cüceler madenlerimize her zaman birden çok giriş inşa ederiz. Ve işte bu da gizli olanı.
+str_dwarf_rumor_10|Bir kupa bira, kızartılmış domuz, kalın sakallı bir kız ve ben mutluyum!
+str_dwarf_rumor_11|Tamam Brian, bir maden açıyorum! Ne? Ne oldu Brian,Ha? Tamam bir maden açıyorum!
+str_dwarf_rumor_12|Biz, Cüceler madenlerimize her zaman birden çok giriş inşa ederiz. Ve sonra da gizli girişler.
 str_dwarf_rumor_13|İnsanların yöntemleri tuhaf.
-; str_dwarf_rumor_14|Unwearied then were Durin's folk beneath the mountains music woke: The harpers harped, the minstrels sang, and at the gates the trumpets rang.
+str_dwarf_rumor_14|Durin'in dağlarının altındaki halk uyandı: Arplar sarsıldı, ozanlar şarkı söyledi ve kapılarda trompetler çaldı.
 str_dwarf_rumor_15|*Sessizce homurdanma* İnsanları öldür! Elfleri öldür! Altınlarını kendine sakla!
 str_mordor_rumor_begin|Lugbúrz'ün emirleri!
 str_mordor_rumor_2|Nazgûl, insanların dünyasını mahvedecek!
@@ -1282,8 +1282,8 @@ str_mordor_rumor_4|Yakında, Karanlık geliyor! Durb-burz!
 str_mordor_rumor_5|Acıktım! Yemek nerde?
 str_mordor_rumor_6|Ak şehrin insanlarıyla ziyafet çekeceğiz!
 str_mordor_rumor_7|Üstat Olog-hai'leri savaş için eğitiyor!
-str_mordor_rumor_8|Warg parmağımı ısırdı. Ve gerçekten acıyor! Pislik-Warg!
-str_mordor_rumor_9|Küreye güvenme Saruman!
+str_mordor_rumor_8|Warg parmağımı ısırdı. Ve gerçekten çok acıyor! Pislik-Warg!
+str_mordor_rumor_9|Saruman'ın küresine güvenme!
 str_mordor_rumor_10|Dağ orkları zayıftır! Biz güçlüyüz! Kabile snagalarını yiyeceğiz!
 str_mordor_rumor_11|Uruk glob ishi krimp shar-kûk.
 str_mordor_rumor_12|Nazgûl ronk ishi gimb olog-hosh sha uruk-bag. Ha ha ha!
@@ -1297,10 +1297,10 @@ str_mordor_rumor_19|Bir Nazgûl ile avı arasında asla girme!
 str_mordor_rumor_20|Isengardlılar? Kirli bir büyücünün çöplüğü! Onlar ork eti yiyiyorlar, garanti verebilirim.
 str_mordor_rumor_21|Kuyutorman zaten bizim elimizde, ama elfler bunu henüz bilmiyor.
 str_mordor_rumor_22|Eğer Ithilien'de pusu kurmak istemiyorsan kendini tanı.  O lanet greenhoods ...
-str_mordor_rumor_23|Nerede kamçı sesi varsa orada yol da vardır.
+str_mordor_rumor_23|Nerede kamçı sesi varsa orada bir yol da bulunur.
 str_isengard_rumor_begin|Sharkû emrediyor!
 str_isengard_rumor_2|at-adamlar yiğecektir! Bubhosh!
-str_isengard_rumor_3|Atlı bir sürpriz mızrak alıcak! Ha ha ha!
+str_isengard_rumor_3|At-Adam sürpriz olarak bir mızrak alıcak! Ha ha ha!
 str_isengard_rumor_4|Saruman'ın birçok hilesi var! Güçlü çelik ve ateş taşı!
 str_isengard_rumor_5|Vahşi insanlar kokuyor! Fakat Sharkû akıllıdır. Onların nasıl kullanılacağını biliyor.
 str_isengard_rumor_6|Moria kurtçukları Olog-hai yetiştiriyorlarmış! Büyük! Güçlü!
@@ -1311,17 +1311,17 @@ str_isengard_rumor_10|Eziyet! Eziyet! Eziyet!
 str_isengard_rumor_11|Uruk glob ishi krimp shar-kûk.
 str_isengard_rumor_12|Ormanı yak! Silahları hazırla! At halkını öldür !
 str_isengard_rumor_13|Bizi doğramaya başlamadan önce vahşilerden uzak durun!
-; str_isengard_rumor_14|I saw a berserker get speared through by a horse-man lance. He pulled the manling off his horse by the lance through his guts.
+str_isengard_rumor_14|Vahşi bir adamın bir At-Adamı mızrağıyla deştiğini gördüm. Önce atı indirdi sonra da mızrağıyla adamın bağırsaklarını deşti.
 str_isengard_rumor_15|O küçük dağdan inme ork domuzlara güvenmiyorum. Isengardlılar, bu savaşı onlarla veya onlarsız kazanacak.
 str_isengard_rumor_16|Beyaz El! Bizim mücadelemize dağ kurtçukları göndermenin anlamı nedir, sadece yarım eğitimli! Lanet goblinler ve Kuzey orklar!
 str_isengard_rumor_17|Mahkumları bıçağımla gıdıklamaktan hoşlanırım.Bazen o farelerin hala ciyakladığına emin olmak lazım!
-str_isengard_rumor_18|Lugbúrz'un kurbağaları ve sıçanları yapabilecekleri tek şey var: Karanlıkta mızraklar gibi görebilirler.
+str_isengard_rumor_18|Lugbúrz'un kurbağaları ve sıçanlarını bekleyen tek şey var: Karanlıktan çıkan mızraklar.
 str_isengard_rumor_19|Ormanı kesiyoruz, ancak içeri giren çoğu ork bir daha asla dışarı çıkmıyor.
-str_isengard_rumor_20|Nerede kamçı sesi varsa orada yol da vardır.
-str_rhun_rumor_begin|Bozkırlardaki rüzgar gibi sürün!
+str_isengard_rumor_20|Nerede kamçı sesi varsa orada bir yol da bulunur.
+str_rhun_rumor_begin|Bozkırda esen rüzgar gibi sürün!
 str_rhun_rumor_2|Cüceler açgözlülük ve aşağılıktır. Ve Dale-adamları onlara bizi sömürmek  aldatmak için yardım ediyor.
 str_rhun_rumor_3|Bir süre önce üç sihirbaz arazimize geldi. Neye baktıklarını merak ediyorum.
-str_rhun_rumor_4|Topraklarımız geniş ve seyrek nüfuslu. Ancak orada hayatta kalmayı biliyoruz.
+str_rhun_rumor_4|Topraklarımız geniş ve seyrek nüfuslu. Ancak burada hayatta kalmayı iyi biliyoruz.
 str_rhun_rumor_5|Elflerle ve Cücelerle ticaret yapıyorduk şaraplarımız ve bereketli topraklarda yetişen tütünümüz karşılığında.. Fakat onlar bizi aldatıyorlar ve yalan söylüyorlar!
 str_rhun_rumor_6|Khand'lı kuzenlerimiz ayakta savaşmayı tercih ediyor, ancak biz bir atın üstünde olmanın daha iyi biliyoruz.
 str_rhun_rumor_7|Gondor lejyonlarını bir defa mağlup ettik, Bir kez daha edeceğiz!
@@ -1330,16 +1330,16 @@ str_rhun_rumor_9|Doğudan bir kırmızı şafak doğuyor. Batı'yı kırmızı b
 str_rhun_rumor_10|Elf kadını mı? Peh. Çok kırılganlar!
 str_rhun_rumor_11|Oğullarımdan her biri bana bir düşman başı getirdi. Ve kızım birisinin testislerini. Ha ha ha!
 str_rhun_rumor_12|Orklar, beceri ya da cesareti olmayan pis hayvanlardır. Savaş alanında hiçbir işlevleri yok.
-str_rhun_rumor_13|Hayatta ki en güzel şey nedir? Düşmanları yer ile bir etmek, senden daha önce ezildiklerini görmek, ve kadınlarının feryatlarını dinlemek.
-str_dunland_rumor_begin|İntikamımızı alana ve strawheads'leri dizlleri dizleri üstüne çöktürene kadar dinlenmeyeceğiz!
-str_dunland_rumor_2|Rohirrim piçleri geceleri kendi atları ile arkadaşlar! Ha ha ha!
-str_dunland_rumor_3|Saman başlılar topraklarımızın dışına! Kanlarıyla birlikte! Gah!
-str_dunland_rumor_4|Forgoil'e ölüm! Strawheads için ölüm! Kuzeydeki soygunculara ölüm!
+str_rhun_rumor_13|Hayatta ki en güzel şey nedir? Düşmanları yerle bir etmek, senden daha önce ezildiklerini görmek, ve kadınlarının feryatlarını dinlemek.
+str_dunland_rumor_begin|İntikamımızı alana ve vahşileri dizleri üstüne çöktürene kadar dinlenmeyeceğiz!
+str_dunland_rumor_2|Rohirrim piçleri geceleri kendi atları ile arkadaş olurlar! Ha ha ha!
+str_dunland_rumor_3|Saman Kafalar topraklarımızı öksürecek! Kanlarıyla birlikte! Gah!
+str_dunland_rumor_4|Forgoil'e ölüm! Saman Kafalar için ölüm! Kuzeydeki soygunculara ölüm!
 str_dunland_rumor_5|Şimdilerde oraya Rohan diyorlar, ama orası atalarımızın toprakları! Atalarımızın intikamını alacağız ve toprak hırsızlarını kovacağız.
 str_dunland_rumor_6|Forgoil'in sizi yakalamasına müsaade etmeyin, yoksa size işkence edip canlı canlı yakarlar!
 str_dunland_rumor_7|Biz kurtların kana susamışlığı ve ayının gücüyüz.
 str_dunland_rumor_8|Forgoil bizim vahşi ve aptal olduğumuzu düşünüyor. Bir de atlıları bizim mızraklarımızla karşılaştığında görelim onları.
-str_dunland_rumor_9|Isengard'ın kargaları Strawheads'lerin gözlerini çıkartacak, Dunlad'ın kurtları boyunlarını ısıracak.
+str_dunland_rumor_9|Isengard'ın kargaları Saman Kafaların'lerin gözlerini çıkartacak, Dunlad'ın kurtları boyunlarını ısıracak.
 str_dunland_rumor_10|Çıplak elle bir kurt yakalayıp öldürdüm. Bir at adamının boynunu dal gibi kıracağım! Grrr!
 str_dunland_rumor_11|Şefimiz barrow da eski bir bronz kılıç buldu. Eğildi ve bataklığa attı. Tepelerin ruhları bizim tarafımızda olacaktır. Eski yol bu.
 str_dunland_rumor_12|Atalarım Freca ve sonra Wulf'la kanlı Forgoil'le savaştı. Onların cesaretini hatırlıyoruz.
@@ -1357,38 +1357,38 @@ str_beorn_rumor_11|Ayıya mı dönüşüyoruz? Tabi ki hayır.Bunu sana kim söy
 str_beorn_rumor_12|Beorn Büyük bir insan. Hayır, insan değil, bir dev!
 str_beorn_rumor_13|*Homurtu* Hiç balın var mı?
 str_beorn_rumor_14|Dağlarda yalnız dolaşma! Ayılar ve kurtlar genelde insan gruplardan uzak duruyorlar. Ancak açlık veya bazılarının söylediği gibi kötü ruhlar, onları sana saldırtabilirler.
-str_lorien_rumor_begin|Lórien! Kış geliyor, çıplak ve kurak olmayan Gün; Yapraklar akıma düşüyor, nehir akıyor.
-str_lorien_rumor_2|Lady Galadriel'e hiçbir kötülük söyleme! Bir adam ona getirmediği sürece, onda ve bu topraklarda hiç kötülük yoktur. O zaman dikkat etmeye çalış!
-str_lorien_rumor_3|Dünya gerçekten de tehlikeyle doludur ve içinde pek çok karanlık yer vardır; Ama yine de adil olan çok şey var ve sevginin artık kederle karıştığı tüm topraklarda belki de sevgi eskisinden daha büyük oluyor.
-; str_lorien_rumor_4|Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house.
-str_lorien_rumor_5|Genelde nefret kendine zarar verir!
+str_lorien_rumor_begin|Lórien! Kış geliyor, çıplak ve kurak günler; Yapraklar nehre düşüyor, nehir akıp uzaklara gidiyor.
+str_lorien_rumor_2|Lady Galadriel'e hiçbir kötü şey söyleme! Bir adam ona getirmediği sürece, onda ve bu topraklarda hiç kötülük yoktur. O zaman davranışlarına dikkat etmeye çalış!
+str_lorien_rumor_3|Dünya gerçekten de tehlikelerle doludur ve içinde pek çok karanlık yer vardır; Ama yine de adil olan çok şey de var ve sanırım sevginin artık kederle karıştığı tüm topraklarda belki de sevgi eskisinden daha büyük oluyor.
+str_lorien_rumor_4|İyi ve kötü, geçen seneden beri değişmedi; Elfler,Cüceler ve insanlar asında, bir fark yoktur.
+str_lorien_rumor_5|Unutma keskin sirke küpüne zarar verir!
 str_lorien_rumor_6|Antik büyü, Lothlórien'i korur; Karanlığın gücü henüz buna karşı koymaya yetmez.
 str_lorien_rumor_7|Nathlo i Nathal! Altın ormanlarda güvendesin. Posto vae - şimdi dinlen , ye ve iç. Eğer ayrılmak zorunda kalırsan, Lorien'in eskiden nasıl olduğunu hatırla.
-str_lorien_rumor_8|Denizin herkesi er ya da geç çağıracağı söylenir. Ben de bir gün martıları duyacağım ve Laurelindórenan'ı bırakacağım. Harthon'a bir borç vermiştim ve.
+str_lorien_rumor_8|Denizin herkesi er ya da geç çağıracağı söylenir. Ben de bir gün martıları duyacağım ve Laurelindórenan'ı bırakacağım. Harthon'a bir borç vermiştim ve ödeme vakti.
 str_lorien_rumor_9|Av-'osto - korkma! Gri pelerinlerimiz bizi düşmanlardan koruyor.
 str_imladris_rumor_begin|Elflerin ve İnsanların ve tüm Özgür Halkların duaları sizinle birlikte olsun.
 str_imladris_rumor_2|Yıldızlar yüzlerine parlasın!
-str_imladris_rumor_3|Bir şeyin ne olduğunu öğrenmek için onu kıran kişi, bilgelik yolunu bırakmıştır.
-str_imladris_rumor_4|Zor olan öngörülemeyen yoldan gitmeliyiz. Kaderimiz onların hangi yoldan gideceğine bağlı.
+str_imladris_rumor_3|Bir şeyin içinde ne olduğunu öğrenmek için onu kıran kişi, bilgelik yolunu bırakmıştır.
+str_imladris_rumor_4|Zor olan ve öngörülemeyen yoldan gitmeliyiz. Umudumuz hangi yollardan gideceğimize bağlı.Tabi eğer hala bir umut varsa.
 str_imladris_rumor_5|Umutsuzluk yalnızca başlarına gelebilecek her şeyi önceden görebilenler içindir. Bizim için değil.
 str_imladris_rumor_6|En soğuk kıştan sonra bile çiçekler açar. Ve en uzun geceden sonra bile şafak belirir.
 str_imladris_rumor_7|Savaşa son çıktığımda çok kişi bir araya gelmişti. Kılıçlarımızın ışığı sazlıkdaki yangın gibiydi. Şimdi ise Imladris'de bir avuç kişi kaldı.
 str_imladris_rumor_8|Ava rucë! Eldar, cesur Edain'in yanında düşmanla savaşmak için bir kez daha silahını aldı. Belki son kez kim bilir? Savaştan, ateşten ve Gecenin Sonundan şarkı söylüyoruz.
-; str_imladris_rumor_9|I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours.
-str_woodelf_rumor_begin|Eski bir Elf hizmetçisi yaşlıydı, / Gündüzleri parlayan bir yıldız: /Onun mantosu beyaz altın ile hemmed, / Gümüş-gri ayakkabıları.
-; str_woodelf_rumor_2|Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves.
-str_woodelf_rumor_3|Bir zamanlar güzel ormanlara karanlık ve kötülük uğramıştı. Eğer durdurulmazlarsa, tüm umutlarımızı, ışığımızı yok edecekler.
-str_woodelf_rumor_4|Hızlı ve Çevik, Sessiz ve Hassas, Karanlık'ı hala bölmesinde tutabiliriz. Ama bu daha ne kadar sürebilir?
+str_imladris_rumor_9|Doğuya yaptığım gezide Karanlık Lord'un bayrağı altında insanlar gördüm tıpkı eskiden onları atalarını da gördüğüm gibi - Atlılar son müttefiklerin ışıkdan kalkanları önünde dağılacaklar. Edain'in hatırası bizimle olduğu sürece.
+str_woodelf_rumor_begin|Eskiden bir Elf kızı yaşardı / Gündüzleri parlayan bir yıldız gibi: /Mantosunun beyaz kenarları altın işlemeli, / Ayakkabıları gümüş-gri 
+str_woodelf_rumor_2|Zaman hiçbir zaman geri kalmaz, ancak değişim ve büyüme her yerde aynı değildir. Elfler için dünya hem çok hızlı hem de çok yavaş ilerliyor. Hızlı, çünkü kendileri çok az değişirlerken etrafları çok hızlı değişiyor: Bu onlar için üzüntü kaynağı. Yavaş, çünkü onlar yılları kendileri için saymazlar.
+str_woodelf_rumor_3|Eskiden de bir zamanlar bu güzel ormanlara karanlık ve kötülük uğramıştı. Eğer durdurulmazlarsa, tüm umutlarımızı ve ışığımızı yok edecekler.
+str_woodelf_rumor_4|Hızlı ve çevik, sessiz ve hassas hareket ederek Karanlığı bir süre bölmesinde tutabiliriz. Ama bu daha ne kadar sürebilir?
 str_woodelf_rumor_5|Shhh, hayır dhinen! Orada dolaşan orklar olabilir. Beklemeliyiz!
 str_woodelf_rumor_6|* Sana bakıyor, açıkçası varlığından rahatsız *
 str_woodelf_rumor_7|Buradaki amacını bilmeliyiz. Büyücülerin casusu her yerdedir.
-str_woodelf_rumor_8|Dale'deki Edain bu günlerde karmaşık oyuncaklar yapıyor! Naugrim'den çok şey öğrendiler.
-str_woodelf_rumor_9|Dol Guldur'un gölgesi yayılıyor. Ormanda karanlık yaratıklar görüldü, karakollarımız saldırıya uğradı, avcılar kayboldu ve bir daha asla görülmediler. Devriyelerimiz şu an 35 kişiden az, korkuyoruz!
-str_dale_rumor_begin|Öncelerde burada bir ejderha vardı, ama şimdi...
+str_woodelf_rumor_8|Dalli Edain bu günlerde karmaşık oyuncaklar yapıyor! Naugrim'den çok şey öğrendiler.
+str_woodelf_rumor_9|Dol Guldur'un gölgesi yayılıyor. Ormanda karanlık yaratıklar görüldü, karakollarımız saldırıya uğradı, avcılar kayboldu ve bir daha asla görülmediler. Devriyelerimiz şu an 35 kişiden az, endişeliyiz!
+str_dale_rumor_begin|Eskiden buralarda bir ejderha yaşardı, ama şimdi...
 str_dale_rumor_2|Sanki kuzeyden gelen orklar yeterince kötü değilmiş gibi şimdi bir de doğudan gelen yağmacılar üzerimize geldi!
-str_dale_rumor_3|Ejderin yenilgisinden beri, düşmanın zayıf noktasını biliyoruz.
+str_dale_rumor_3|Ejderi yendiğimizden beridir, düşmanlarımızın zayıf noktalarını bulmayı biliyoruz.
 str_dale_rumor_4|Easterlings asla bizi ve cüce dostlarımızı geçirmeyecektir.
-str_dale_rumor_5|Hiç güneşin Uzun gölde yükseldiğini gördün mü? Renkler kalbime şarkı söyletirdi . Ama şimdi tek gördüğüm kırmızı şafak. Bu kötüye alamet.
+str_dale_rumor_5|Hiç güneşin Uzun gölde yükseldiğini gördün mü? Renkler kalbime şarkı söyletirdi . Ama şimdi tek gördüğüm renk kırmızı şafak. Bu kötüye alamet.
 str_dale_rumor_6|Cüceler hazinelere biraz fazla düşkündürler. Hâlâ Thorin Oakenshield'in ne düşündüğünü bilmiyoruz.
 str_dale_rumor_7|Rohanın insanları bizim kuzenimizdir ve bizim dilimiz onların dillerine çok benzer.
 str_dale_rumor_8|Esgaroth, adını sazlığın elfçe karşılığı olan sözcükten almıştır.Çünkü orada bir sürü sazlık kümesi bulunur.Bunu biliyor muydun?
@@ -1399,7 +1399,7 @@ str_harad_rumor_2|Serpent adına! Canavarlarımız Gondorluları yerlerde sürü
 str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus!
 str_harad_rumor_4|Gondor'da çok altın ve mücevher var. Ötesindeki topraklarda daha da fazlası.
 str_harad_rumor_5|Pek çok batılı zayıf cılız hayvan yakalayacağız ve onları Yılan Tanrısı'na kurban edeceğiz.
-str_harad_rumor_6|Korsanların faydaları,denizde iyi yol alıyorlar, ancak kabadayılar,görünüşleri çok pis ve davranışları da sinsi.
+str_harad_rumor_6|Korsanların iyi yönleri,denizde iyi yol alıyorlar, ancak kabadayılar,görünüşleri çok pis ve davranışları da sinsi.
 str_harad_rumor_7|Ben asla bir gemiye ayak basmazdım. Korsanlar benim için tüm denizlere sahip olabilirler.
 str_harad_rumor_8|Khand savaşçıları azgın ve korkusuzdur, ancak stratejileri çok basittir.
 str_harad_rumor_9|Batıdadan iyi ganimetler bekliyorum. Bize söz verildi. Ganimet geldikten sonra eve dönüp halı dükkânımı rahatça açabilirim.
@@ -1409,13 +1409,13 @@ str_harad_rumor_12|Harondor'dan gelen birçok şövalye, süvarı kılıcını d
 str_harad_rumor_13|Kan kardeşim Karka ile anlaştı - şimdi o bir gözcü. 'The Fang' adlı biniciler tehlikeli bir hayat sürüyor, ancak genç ve kızgın erkekler için iyi bir tecrübe.
 str_harad_rumor_14|Asla Aslan kardeşliğiyle kavga etmeyin! Onların itibarları haklı bir şekilde kazanılmışdır.
 str_harad_rumor_15|Keşke siyah demirden yapılmış daha fazla silahımız olsaydı. Birçoğumuz hala bronz savaş aleti kullanıyor,hatta bazıları tahta sopa ve siyah taştan yapılma mızraklarla çıplak bir şekilde savaşa gidiyor.
-str_gunda_rumor_begin|Sıcak topraklara geçin. geliriz!
+str_gunda_rumor_begin|İnsanların geldiği sıcak toprakları ele geçir!
 str_gunda_rumor_2|Sharkû sıcak mağara sözü verdi.
 str_gunda_rumor_3|Soğuk dağlarda yeterince saklandık! Şimdi insanların sıcak topraklarına yürüme zamanı.
 str_gunda_rumor_4|Dağ tünellerinde iğrenç bir sürüngen gördük, ancak onu yakalayamadık. Ona yaklaştığımız zaman ortadan kayboldu.
 str_gunda_rumor_5|Isengarlılar, özel olduklarını düşünüyorlar çünkü yaşlı adam onları donatıyor.
 str_gunda_rumor_6|Bizi sıcak tutması için insanların köylerini yakacağız.
-str_gunda_rumor_7|Manlings onlara getireceğimiz ürpertiyi hissedecek. Ve sonra da ateşi. Ha ha ha!
+str_gunda_rumor_7|İnsanlar onlara getireceğimiz ürpertiyi hissedecek. Ve sonra da ateşi. Ha ha ha!
 str_gunda_rumor_8|Azog ve Bolg, geçen sefer cüceleri, elfleri ve insanları neredeyse bertaraf ettiler. Ama kuş canavarlar ve ayı adamlar onları kurtardı. *tükürme*
 str_gunda_rumor_9|Cüce eti sert ve liflidir. İnsan eti daha iyi
 str_gunda_rumor_10|Ayı adamlar ormandan gelip Boldush'u yedi. Boldush için kötü şans! Ha ha ha!
@@ -1424,12 +1424,12 @@ str_moria_rumor_begin|Davulları duyunca, koş ve saklan!
 str_moria_rumor_2|Ghâsh derinlerde!
 str_moria_rumor_3|Doom! Doom! Doom! Davullar derinlerden geliyor.
 str_moria_rumor_4|Moria büyük, ama cüceler artık burada saklanamıyor. 
-str_moria_rumor_5|Cüceler çok derin kazdı. Bizim için her şey daha iyi. Ha ha ha!
+str_moria_rumor_5|Cüceler çok derin kazdı. Bizim için hava hoş. Ha ha ha!
 str_moria_rumor_6|Moria'da birçok tünel var. hepsinden gidemeyiz.
 str_moria_rumor_7|Bazı insanlar ve cüceler bir süre önce madenlerimizdeki gözcülerimizi atlattı. O zamandan beri adamlarımızı ikiye katladık.
-str_moria_rumor_8|Cüceler buraya birdaha ayak basamayacak! Hiç bir zaman!
+str_moria_rumor_8|Cüceler buraya bir daha ayak basamayacak! Hiç bir zaman!
 str_moria_rumor_9|Yeterli birlik topladığımızda gidip elflerin ormanlarını yakacağız.
-str_moria_rumor_10|Moria'da fazla yemek yok. Biz açız. İnsanları ve elfleri yakalamalısın!
+str_moria_rumor_10|Moria'da fazla yemek yok. Biz açız. İnsanları ve elfleri yakalamalıyız!
 str_moria_rumor_11|Bazıları güneydeki ormana gidiyorlar. Oradan hiç kimse çıkamaz.
 str_umbar_rumor_begin|Bütün denizler kara bayraklara ait olacak!
 str_umbar_rumor_2|Burada hiç batırabileceğimiz Gondor gemisi yok.Şimdi yağma için içerilere doğru yol alıyoruz.
@@ -1439,10 +1439,10 @@ str_umbar_rumor_5|Geçmişte Gondor Kralını öldürmüştük. Artık öldüreb
 str_umbar_rumor_6|Sinsi Gondorlular yıllar önce filomuzu yaktılar. Şimdi de Gondor  yanacak.
 str_umbar_rumor_7|Denizin fırlatacağı hiçbir şey bir korsanı korkutamaz. Ancak arazideki iğrençlikler hakkında rahatsız edici bazı söylentiler duyduk.
 str_umbar_rumor_8|Gondor'a dev bir dalga gibi dökülüp kaybettiğimiz topraklarımızı geri kazanacağız.
-str_umbar_rumor_9|Haradrim rom içmiyor. Bunu biliyor muydun? Biz biraz içmekten hoşlanırız, zıpkını sağlam tutmamıza yardımcı oluyor.
+str_umbar_rumor_9|Haradrim rom içmez. Bunu biliyor muydun? Biz biraz içmekten hoşlanırız, zıpkını daha sağlam tutmamıza yardımcı oluyor.
 str_umbar_rumor_10|Khand'ın savaştığı bazı Variaklar gördüm. Onlarla savaşta yüzleşmek istemem. Bizim tarafımızda olmaları güzel bir şey.
 str_khand_rumor_begin|Kavga, ne kadar kanlı olursa olsun, kavga demektir. Ancak geri çekilme en büyük utanç!
-str_khand_rumor_2|Kılıçlarımızı bir kere çizdiğimizde kan bulması lazım!
+str_khand_rumor_2|Kılıçlarımızı bir kere savurduğumuzda kana bulması lazım!
 str_khand_rumor_3|Zemin, ağır zırhlı süvarinin altında titriyor,düşmanlarımız bizden söz edildiğinde titriyorlar!
 str_khand_rumor_4|Wainriders'ı bu sefer geride bıraktığımız  saldırımız düşmanları gafil avlayacak.
 str_khand_rumor_5|Biz, Khand'ın Variagsları,gemiş geçmiş en ateşli savaşçılar!
@@ -1455,16 +1455,16 @@ str_khand_rumor_11|Bazen Rhun, Mordor ve Harad la ticaret yaparız. Bazen de sav
 str_khand_rumor_12|Savaş maskesini hazırladın mı? Yakında birine ihtiyacın olacak! Düşman yüzünü göremiyorsa, ruhu seni bulamaz.
 str_good_rumor_begin|Ateş küllerden yeniden uyanmalı, gölgelerden ışık yayılmalı; kırılmış olan kılıç yeniden bilenmeli, taçsız olan yine kral olacak.
 str_good_rumor_2|Orklar geceleri daha iyi dövüşürler, ancak gündüz zayıflarlar.
-str_good_rumor_3|Uruk-Hai farklıdır, orklar gibi güneş ışığı korkusu yok !
+str_good_rumor_3|Uruk-Hai farklıdır, onlarda orklar gibi güneş ışığı korkusu yok !
 str_good_rumor_4|Yenilgi ve dinlenme sonrasında,  Gölge her zaman başka bir şekil alır ve tekrar büyür.
 str_good_rumor_5|Ölü Denizler ... tüm iyileşmenin ötesinde hasta, kirlenmiş bir toprak.
-str_good_rumor_6|Gölge yalnızca taklit edebilir,yeni bir şey yapamaz: yeni şeyler ona ait değil. Orklara hayat verdiğini sanmıyorum, sadece onları değiştirdi ve oanları mahvetti.
+str_good_rumor_6|Gölge yalnızca taklit edebilir, yeni bir şey yapamaz: yeni şeyler ona ait değil. Orklara hayat verdiğini sanmıyorum, sadece onları değiştirdi ve mahvetti.
 str_good_rumor_7|Eskiden buraya Greenwood denilirdi ve burası elfler ile doluydu. Kuzey dünyanın en büyük ormanları. Ama şimdi Kuyutorman olarak biliniyor. Her türden kötü yaratığın etrafta süründüğü yer.
 str_good_rumor_8|Argonath, Kralların Sütunları, Gondor'un kuzeydeki eski sınırının büyük koruyucuları.
 str_good_rumor_9|Amon Hen, Nen Hithoel'in güney ucundaki üç doruğun en batı ucudur.
 str_neutral_rumor_begin|Yarın her şey değişebilir ...
-str_neutral_rumor_2|Ölü Denizler ... kirli ve hastalıklı bir yer.
-str_neutral_rumor_3|Arazi bir zamanlar çok farklıydı.
+str_neutral_rumor_2|Ölü Denizler... kirli ve hastalıklı bir yer.
+str_neutral_rumor_3|Buralar eskiden hep bostandı!
 str_neutral_rumor_4|Fangorn ormanından uzak durun.
 str_evil_rumor_begin|Orklar geceleri, İnsanlar ise gündüzleri daha iyi savaşır.
 str_evil_rumor_2|Atlı ile mızrakla,yaya ile okla ve okçu ile kalkanla savaş!
@@ -1473,25 +1473,25 @@ str_legendary_rumor_begin|Efsaneler, Fangornda ağaçların birbirleriyle konuş
 str_legendary_rumor_amonhen|Anduin'de, büyük heykellerin bulunduğu bir yerde özel bir yer olduğunu söylüyorlar.
 str_legendary_rumor_deadmarshes|Ölü Sazların ortasında ölülerin hayatta olduğu söylentileri dolaşıyor.
 str_legendary_rumor_mirkwood|Orklardan farklı yaratıklar Kuyutorman çevresinde gezinirler.
-str_legendary_rumor_fangorn|Fangorn, kaçınılması gereken bir ormandır. Olağandışı şeyler orda gerçekleşir.
-str_last_rumor|Son zamanlarda ilginç bir şey duymadım.
+str_legendary_rumor_fangorn|Fangorn, kaçınılması gereken bir ormandır. Olağan dışı şeyler orada olağandır.
+str_last_rumor|Son zamanlarda hiç ilginç bir şey duymadım.
 str_ent_rumor_begin|Şimdi acele etme...
-; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
-str_ent_rumor_3|Eski Ent dili çok hoş bir dildir, ancak bu dilde bir şey söylemek çok uzun zaman alıyor, çünkü söyleyecek uzun bir şeyimiz yoksa konuşmuyoruz.Dinleme için de aynısı geçerli.
+str_ent_rumor_2|Yaşayan yaratıkların bilgeliğini öğren! ilk öğreneceğin şey dört, dört özgür halk: En yaşlıları Elf-Çocuklar; Kara evlerde yaşayan Cüceler; Fani Entler, dağlar kadar yaşlılar ;Ölümlü insanlar, atların efendileri.
+str_ent_rumor_3|Eski Ent dili çok hoş bir dildir, ancak bu dilde bir şey söylemek çok uzun zaman alıyor, çünkü söyleyecek uzun bir şeyimiz yoksa konuşmuyoruz. Dinleme için de aynısı geçerli.
 str_gondor_rank_0|Gondor Kumandanı
-str_gondor_rank_1|Gondor askeri
-str_gondor_rank_2|Gondor'un çavuşu
+str_gondor_rank_1|Gondor Askeri
+str_gondor_rank_2|Gondor'un Çavuşu
 str_gondor_rank_3|Gondor Şövalyesi
-str_gondor_rank_4|Gondor Kule gardiyanı
-str_gondor_rank_5|Gondor Şehir şovalyesi
-str_gondor_rank_6|Gondor'un Koruyucusu Muhafızı
+str_gondor_rank_4|Gondor Kule Gardiyanı
+str_gondor_rank_5|Gondor Şehir Şövalyesi
+str_gondor_rank_6|Gondor'un Koruyucu Muhafızı
 str_gondor_rank_7|Gondor Kaptanı
 str_gondor_rank_8|Gondor Şampiyonu
 str_gondor_rank_9|Gondor Kahramanı
-str_dwarf_rank_0|Cüce Yeşil Sakal
-str_dwarf_rank_1|Cüce Madenci
-str_dwarf_rank_2|Cüce savaşçısı
-str_dwarf_rank_3|Cüce UzunSakal
+str_dwarf_rank_0|Yeşil Sakallı Cüce 
+str_dwarf_rank_1|Madenci Cüce
+str_dwarf_rank_2|Savaşçı Cüce
+str_dwarf_rank_3|Uzunsakallı Cüce
 str_dwarf_rank_4|Cüce baltası
 str_dwarf_rank_5|Cüce Balta üstadı
 str_dwarf_rank_6|İhtiyar Cüce
@@ -1503,11 +1503,11 @@ str_rohan_rank_1|Thain, Rohan hizmetkarı
 str_rohan_rank_2|Léod, Rohanlı Özgür Adam
 str_rohan_rank_3|Rohir, Rohan Binicisi
 str_rohan_rank_4|Scyldbora, Rohanlı Kalkanlı
-str_rohan_rank_5|Bealdoraed, Swéordboralı Kılıçlı
+str_rohan_rank_5|Swéordbora, Rohanlı Kılıçlı
 str_rohan_rank_6|Frumgar, Rohanın İlk Mızrağı
 str_rohan_rank_7|Bealdoraed, Rohanlı Danışman
-str_rohan_rank_8|Rohan Soylusu, Eorl
-str_rohan_rank_9|Haleth, Rohan kahramanı
+str_rohan_rank_8|Eorl, Rohan Soylusu
+str_rohan_rank_9|Haleth, Rohan Kahramanı
 str_mordor_rank_0|Solucan
 str_mordor_rank_1|Snaga
 str_mordor_rank_2|Gorgorothlu Hain
@@ -1523,22 +1523,22 @@ str_isengard_rank_1|Snaga
 str_isengard_rank_2|Çarkçı
 str_isengard_rank_3|Ağaç yakıcı
 str_isengard_rank_4|Warg besleyici
-str_isengard_rank_5|DemirOcağı
+str_isengard_rank_5|Demir Ocağı
 str_isengard_rank_6|Ocak ustası
 str_isengard_rank_7|Orthanc Kaptanı
 str_isengard_rank_8|Lejyonların Komutanı
-str_isengard_rank_9|Ak Büyücünün sağ eli
+str_isengard_rank_9|Ak Büyücünün Sağ Eli
 str_lorien_rank_0|Sador, Sadık Lorienli
 str_lorien_rank_1|Tauron, Lorienli Ormancı
-str_lorien_rank_2|Mifaron, Lorienli Kurt avcısı
+str_lorien_rank_2|Mifaron, Lorienli Kurt Avcısı
 str_lorien_rank_3|Thindirith, Lorienli Gri Muhafiz
 str_lorien_rank_4|Thangyl, Lorienli Kalkanlı
 str_lorien_rank_5|Maglagyl, Lorienli Kılıçlı
 str_lorien_rank_6|Tiribrannon, Lorien'li bekçi
 str_lorien_rank_7|Glaurchir, Lorien'li Büyük Usta
 str_lorien_rank_8|Galadhîr, Lorien'in Parlak Lordu
-str_lorien_rank_9|Thalion, Lorienin Kahramanı
-str_imladris_rank_0|Háno, Imladris'in kardeşi
+str_lorien_rank_9|Thalion, Lorien'in Kahramanı
+str_imladris_rank_0|Háno, Imladris'in Kardeşi
 str_imladris_rank_1|Macar, Imadris savaşçısı
 str_imladris_rank_2|Sindacollo, Imladris'in Gri Pelerinlisi
 str_imladris_rank_3|Luinëcollo, Imladris'in Gri Pelerinlisi
@@ -1550,28 +1550,28 @@ str_imladris_rank_8|Runando, Imladris'in Kurtarıcısı
 str_imladris_rank_9|Callo, Imladris Kahramanı
 str_woodelf_rank_0|Sador, Greenwood'a Sadık
 str_woodelf_rank_1|Tauron, Greenwoodlu Ormancı
-str_woodelf_rank_2|Hirfaron, YeşilOrman'ın en iyi avcısı
+str_woodelf_rank_2|Hirfaron, Greenwoodlu Usta Avcı
 str_woodelf_rank_3|Calendirith, Greenwoodlu Yeşil Muhafız
 str_woodelf_rank_4|Thangyl, Greenwoodlu Kalkanlı
 str_woodelf_rank_5|Maglagyl, Greenwoodlu Kılıçlı
 str_woodelf_rank_6|Tiribrannon, Greenwood'un Muhafızı
-str_woodelf_rank_7|Pengherdir, YeşilOrman'ın yay ustası
-str_woodelf_rank_8|Armagor, YeşilOrman'ın Kraliyet kılıç ustası
-str_woodelf_rank_9|Thalion, YeşilOrman ın Kahramanı
-str_dale_rank_0|Dale halkı
-str_dale_rank_1|Dale Hür adamı
+str_woodelf_rank_7|Pengherdir, Greenwoodlu Yay Ustası
+str_woodelf_rank_8|Armagor, Greenwoodlu Kraliyet Kılıç Ustası
+str_woodelf_rank_9|Thalion, Greenwood Kahramanı
+str_dale_rank_0|Sıradan Daleli
+str_dale_rank_1|Dale Hür Adamı
 str_dale_rank_2|Dale Askeri
-str_dale_rank_3|Dale botcusu
+str_dale_rank_3|Dale Botcusu
 str_dale_rank_4|Daleli Kalkanlı
 str_dale_rank_5|Daleli Kılıçlı
-str_dale_rank_6|Barding, Dale okçusu
-str_dale_rank_7|Dale kaptanı
-str_dale_rank_8|Dale göl ustası
+str_dale_rank_6|Barding, Dale Okçusu
+str_dale_rank_7|Dale Kaptanı
+str_dale_rank_8|Dale Göl Ustası
 str_dale_rank_9|Dale kahramanı
 str_harad_rank_0|Kabile Üyesi
 str_harad_rank_1|Kabilenin Yetişkini
 str_harad_rank_2|Kabile Savaşçısı
-str_harad_rank_3|AslanKatili
+str_harad_rank_3|Aslan Katili
 str_harad_rank_4|Yılan Terbiyecisi
 str_harad_rank_5|Mamut Terbiyecisi
 str_harad_rank_6|Kara Yılan Gardiyanı
@@ -1615,7 +1615,7 @@ str_moria_rank_3|Mağara kazıcı
 str_moria_rank_4|Mağden Yağmacıları
 str_moria_rank_5|Salon Yağmacıları
 str_moria_rank_6|Cüce Lordu
-str_moria_rank_7|Goblin SavaşLordu
+str_moria_rank_7|Goblin Savaş Lordu
 str_moria_rank_8|Goblin Şefi
 str_moria_rank_9|Derinlerdeki Terör
 str_guldur_rank_0|Solucan
@@ -1635,7 +1635,7 @@ str_gundabad_rank_3|Mağara Kazıcı
 str_gundabad_rank_4|Dağ Çapulcuları
 str_gundabad_rank_5|Dağ Yağmacıları
 str_gundabad_rank_6|Cüce Lordu
-str_gundabad_rank_7|KurtBinicisi Savaşlordu
+str_gundabad_rank_7|Kurt Binicisi Savaş lordu
 str_gundabad_rank_8|Büyük goblin
 str_gundabad_rank_9|Kuzey Yağmacıları
 str_dunland_rank_0|Bar
@@ -1703,12 +1703,12 @@ str_fullname_region_grey_mountains|Cücelerin yaşadığı Gri Dağ etekleri.
 str_fullname_region_mordor|Mordor, Sauron'un Kara Diyarları
 str_shortname_region_unknown|isimsiz bölge
 str_shortname_region_pelennor|Pelennor çayırları
-str_shortname_region_subfac_pelargir|Lebennin Derebeyi
+str_shortname_region_subfac_pelargir|Lebennin Derebeliği
 str_shortname_region_subfac_dol_amroth|Belfalas
 str_shortname_region_subfac_ethring|Ringló Vale
-str_shortname_region_subfac_lossarnach|Lossarnach Derebeyi
+str_shortname_region_subfac_lossarnach|Lossarnach Derebeyliği
 str_shortname_region_subfac_pinnath_gelin|Pinnath Gelin Bölgesi
-str_shortname_region_subfac_blackroot|a
+str_shortname_region_subfac_blackroot| Lamedon Derebeyliği
 str_shortname_region_n_ithilien|Kuzey Ithilien
 str_shortname_region_c_ithilien|Emyn-Arnen
 str_shortname_region_s_ithilien|Güney Ithilien
@@ -1716,7 +1716,7 @@ str_shortname_region_druadan_forest|Drúadan ormanı
 str_shortname_region_firien_wood|Frilen Ormanı
 str_shortname_region_anorien|Anorien
 str_shortname_region_rohan0|The Folde
-str_shortname_region_rohan1|Doğu emnet
+str_shortname_region_rohan1|Doğu Emnet
 str_shortname_region_rohan2|Batı Emnet
 str_shortname_region_rohan3|Doğufold
 str_shortname_region_rohan4|Batıağıl
@@ -1738,9 +1738,9 @@ str_shortname_region_above_mirkwook|Kuzey Rhovanion
 str_shortname_region_grey_mountains|Gri Dağların etekleri
 str_shortname_region_mordor|Mordor Toprakları
 str_trait_title_elf_friend|Elf Dostu
-str_trait_desc_elf_friend|Elfler sizi çok değerlendiler ve şimdi sizi güvenilir bir müttefik olarak görüyorlar. Elfleri toplama maliyeti azaltıldı ve artık elf ordularına emir vermeye çalışabilirsin.
+str_trait_desc_elf_friend|Elfler size çok değer verdiler ve şimdi sizi güvenilir bir müttefik olarak görüyorlar. Elfleri toplama maliyeti azaltıldı ve artık elf ordularına emir vermeye çalışabilirsin.
 str_trait_title_gondor_friend|Vekilharç'ın Kutsaması
-str_trait_desc_gondor_friend|Steward Denethor tarafından değer verilmiş durumdasınız ve sonuç olarak Gondor'lu erkekler arasındaki ününüz yükselişe geçti. Gondorlu'ları toplama maliyeti düşürüldü artık Gondor ordularına emir vermeye çalışabilirsin.
+str_trait_desc_gondor_friend|Vekilharç Denethor tarafından kutsanmış durumdasınız ve sonuç olarak Gondor'lu erkekler arasındaki ününüz yükselişe geçti. Gondorlu'ları toplama maliyeti düşürüldü artık Gondor ordularına emir vermeye çalışabilirsin.
 str_trait_title_rohan_friend|Kralın Adamı
 str_trait_desc_rohan_friend|Rohan'ın Kralı Theoden tarafından çok değer verilmiş durumdasınız ve sonuç olarak Rohan'ın adamları arasında itibarınız yükseldi. Rohirrim adamlarını toplama masrafları azaltıldı ve artık Riddermark ordularına emir vermeye çalışabilirsin.
 str_trait_title_brigand_friend|Barbarların Şampiyonu
@@ -1750,7 +1750,7 @@ str_trait_desc_blessed|Denizin ötesindeki güçler tarafından kutsanmış oldu
 str_trait_title_reverent|Saygılı
 str_trait_desc_reverent|Saygı ve bilgelik konusunda ün kazandınız. İnsanlar ve Elfler'in size olan saygıları arttı.
 str_trait_title_merciful|Merhametli
-str_trait_desc_merciful|Düşmana hizmet eden kötü adamlara karşı merhametli davrandığınız için şöhret elde ettiniz. Sana hizmet eden sert erkeklerin birçoğu bu davranışlarından dolayı seninle çatışır ve moral cezası çeker. Bununla birlikte bilgeler arasında merhametiniz yüksek karakterinize delil olarak görülür ve bir etki bonusu alırsınız.
+str_trait_desc_merciful|Düşmana hizmet eden kötü adamlara karşı bile merhametli davrandığınız için şöhret elde ettiniz. Sana hizmet eden sert erkeklerin birçoğu bu davranışlarından dolayı seninle çatışır ve moral cezası çeker. Bununla birlikte bilgeler arasında merhametiniz yüksek karakterinize delil olarak görülür ve bir etki bonusu alırsınız.
 str_trait_title_bravery|Yiğitlik
 str_trait_desc_bravery|Büyük tehlikeler karşısında bile cesaret gösterip şöhret sahibi oldunu. Cesaretin hem sessiz tavernalarda hem de bilge salonlarında konuşuluyor. Yaptığın işler adamlarınıa ilham verir ve haftalık moral bonusu alırlar.
 str_trait_title_oathkeeper|Yemin Tutan
@@ -1766,21 +1766,21 @@ str_trait_desc_accursed|Öfkenin denizleri aştığınızı hissediyorsun. Takip
 str_trait_title_stealthy|Gizli
 str_trait_desc_stealthy|Gizli sızma sanatında esrarengiz bir yetenek geliştirdiniz. Bu tür görevleri üstlenirken sızma becerinize bir bonus verilecek.
 str_trait_title_berserker|Vahşi Savaşçı
-str_trait_desc_berserker|Girdiğin birçok savaştan sonra artık vücudun demir gibi oldu.Ciddi derecede yaralandığın savaşlarda, savaş başına bir kez sağlık bonusu alacaksın. Bu gücünü tam olarak geri getirmez fakat eni diğerlerinden biraz daha dayanıklı yapar.
+str_trait_desc_berserker|Girdiğin birçok savaştan sonra artık vücudun demir gibi oldu.Ciddi derecede yaralandığın savaşlarda, savaş başına bir kez sağlık bonusu alacaksın. Bu gücünü tam olarak geri getirmez fakat en azından seni diğerlerinden biraz daha dayanıklı yapar.
 str_trait_title_infantry_captain|Piyade Kaptanı
-str_trait_desc_infantry_captain|Piyade birliklerinin emrine sıradan bir yetenek geliştirdiniz. Güçlü ve uzmanlaşmış eğitimler nedeniyle, bu birliklere savaş başında bir kez küçük bir sağlık desteği sağlanacaktır.
+str_trait_desc_infantry_captain|Piyade birliklerini komuta etmede bir yetenek geliştirdiniz. Güçlü ve uzmanlaşmış eğitimler nedeniyle, bu birliklere savaş başında küçük bir sağlık desteği sağlanacaktır.
 str_trait_title_archer_captain|Okçu Kaptanı
-str_trait_desc_archer_captain|Askere alınmış birliklerin komutasında esrarengiz bir yetenek geliştirdiniz. Titiz ve uzmanlaşmış eğitim nedeniyle birliklere bir kez savaş başına bir kere daha sağlıklı bir destek verilecektir.
+str_trait_desc_archer_captain|Askere alınmış birliklerin komutasında esrarengiz bir yetenek geliştirdiniz. Titiz ve uzmanlaşmış eğitim nedeniyle birliklere her savaş başına bir kere daha sağlık  desteği verilecektir.
 str_trait_title_cavalry_captain|Süvari Kaptanı
-str_trait_desc_cavalry_captain|Askere alınmış birliklerin komutasında esrarengiz bir yetenek geliştirdiniz. Titiz ve uzmanlaşmış eğitim nedeniyle birliklere bir kez savaş başına bir kere daha sağlıklı bir destek verilecektir.
+str_trait_desc_cavalry_captain|Askere alınmış birliklerin komutasın konusunda esrarengiz bir yetenek geliştirdiniz. Titiz ve uzmanlaşmış eğitim nedeniyle birliklere her savaş başına bir kez daha sağlık destek verilecektir.
 str_trait_title_command_voice|Komuta Sesi
 str_trait_desc_command_voice|Sahada insanlara komuta etme konusundaki deneyimleriniz size bir ayrı bir otoritesi havası sağladı. Orduya sahada emir vermek için verilen etki maliyeti azaltıldı.
 str_trait_title_foe_hammer|Düşman Çekici
 str_trait_desc_foe_hammer|Düşmanın büyük kaptanlarından birçoğunu öldürdükten sonra korkunç bir savaşçı olarak ün kazanmış olursunuz. Komutanlığındaki askerler şimdi haftalık bir moral bonusu alıyor. Deneyimleriniz savaştaki becerinizi de geliştirdi.
 str_trait_title_battle_scarred|Savaş Yaraları
-; str_trait_desc_battle_scarred|You have suffered horrific wounds during your many campaigns yet you still live to tell the tale. Your scarred and knotted flesh now conspires with hard experience to increase your resistance to injury. While others may find your appearance somewhat shocking your followers consider it an affirmation of your battle experience. They subsequently receive a weekly morale bonus.
-str_trait_title_fell_beast|Fell Beast
-; str_trait_desc_fell_beast|Your hide is riven with the knotted scars of countless battles and your evil will is likewise hard and unyielding. Even by the standards of orc, uruk and troll-kind you are judged a fell and dangerous beast. Those who serve you cry your name in joy when you take to the field. You are an avatar of war itself and there is little you fear.
+str_trait_desc_battle_scarred|Yaptığın birçok sefer sırasında korkunç yaralar aldın, ancak hikayeni anlatmak için hala yaşıyorsun. Yaralı ve düğümlü etin artık yaralanmaya direnmeni artırmak için iyice sertleşti. Diğerleri, görünüşünü biraz şok edici bulsa da, takipçilerin bunu savaş deneyiminin bir işareti olarak görüyor. Artık haftalık bir moral bonusu alacaklar.
+str_trait_title_fell_beast|Canavar Kesen
+str_trait_desc_fell_beast|Vücudunuz sayısız savaşta bir sürü iz aldı ve kabuk bağladı tıpkı içindeki kötülük gibi. Ork, Uruk ve Trol standartlarında bile onlardan çok daha tehlikeli bir canavar geldin.Sana hizmet edenler, savaş alanına çıkınca adını sevinçle anarlar. Sen artık savaşın bir simgesisin, ve artık korktuğun çok az şey var.
 str_trait_title_butcher|Kasap
 str_trait_desc_butcher|Düşmanlarınından daha fazla et çıkarma yeteneğin geliştirmiştir. Tutuklulardan birini et için her kesdiğinizde ekstra bir kilo alırsınız.
 str_wound_head|kafaya sert bir darbe

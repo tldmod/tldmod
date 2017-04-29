@@ -1,8 +1,8 @@
 dlga_start:mutiny_pretalk_1|Eeee, {playername}. Powiemy ci coś.. ^Chłopaki nie są zadowoleni! Chcą więcej zabawy, a mniej maszerowania.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Wracaj do szeregu, robaku! Trwa wojna, a ja jestem twoim dowódcą.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Wracaj do szeregu, czerwiu! Trwa wojna, a ja jestem twoim dowódcą.
 dlga_mutiny_pretalk_2:close_window|Jak każesz, dowódco. Jak każesz...
 dlga_start:mutiny_talk_1|Dowódco. Powiemy ci coś.. Chłopaki nie są zadowoleni, ani trochę. ^Nie ma dość ludzkiego mięsa, nie ma zabawy. ^Chłopaki mówią, że nie jesteś dość dobr{y/a}, dowódco!
-dlga_mutiny_talk_1:mutiny_talk_2|Co? Bunt? ^Karą jest śmierć, robaku!
+dlga_mutiny_talk_1:mutiny_talk_2|Co? Bunt? ^Karą jest śmierć, czerwiu!
 dlga_mutiny_talk_2:close_window|Powiemy ci coś.. ^Chłopaki mówią, że ja będę lepszym dowódcą, gdy CIĘ ZABIJĘ!
 dlga_start:troll_introduce_1|Jakiś problem?
 dlga_start:troll_talk_1|Ty szalon{y/a}?
@@ -53,7 +53,7 @@ dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... Jesteśmy pasterzami Drzew
 dlga_start:close_window.1|Mmmmm?
 dlga_start:close_window.2|Mmhhrmmm?
 dlga_start:close_window.3|Mmmrhrrhmm?
-dlga_start:looters_2_join|Pokłoń się przed potęgą, wesprzyj {s4} i służ mi!
+dlga_start:looters_2_join|Kłaniaj się przed potęgą, wesprzyj {s4} i służ mi!
 dlga_looters_2_join:close_window|Będziemy posłuszni, Panie.
 dlga_start:close_window.4|Wyruszymy gdy będziesz gotow{reg5?a:y}.
 dlga_start:member_castellan_talk|Tak, {playername}? Co mogę dla ciebie zrobić?
@@ -89,11 +89,11 @@ dlga_member_talk:close_window|Nieważne.
 dlga_member_question:member_question_2|Dobrze. O co chodzi?
 dlga_member_question_2:member_morale|Jakie masz odczucia odnośnie tego, jak rzeczy układają się w tej kompanii?
 dlga_member_question_2:member_health|Jak twoje zdrowie?
-dlga_member_question_2:member_background_recap|Opowiedz mi twoją historię raz jeszcze.
+dlga_member_question_2:member_background_recap|Opowiedz mi znów swoją historię.
 dlga_member_background_recap_3:do_member_trade|Krótko potem dane mi było przyłączyć się do ciebie.
 dlga_do_member_view_char:member_talk|Coś jeszcze?
 dlga_start:close_window.5|Proszę nie marnuj dziś już więcej mego czasu, Pani{e/}. Być może spotkamy się jeszcze kiedyś.
-dlga_start:close_window.6|Precz, podły żebraku.
+dlga_start:close_window.6|Proszę, nie marnuj dziś więcej mojego czasu. Może znowu się spotkamy.
 dlga_companion_recruit_signup_response:close_window|Niestety nie mogę przyłączyć już nikogo więcej do mego oddziału.
 dlga_companion_recruit_rank:close_window|Wygląda na to, że moi ludzie nie cenią cie zbytnio, {playername}. Posiadasz rangę {s29} a musisz mieć {s24} by do mnie dołączyć [brakuje {reg3} punktów rangowych].^Porozmawiamy ponownie gdy osiągniesz wyższy status.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Cieszę się widzieć cię jako {s29}, i nie mogę doczekać dołączenia do ciebie.
@@ -279,23 +279,23 @@ dlga_ring_hunters_2:ring_hunters_reject|Nie jestem jeszcze gotów na to zadanie.
 dlga_ring_hunters_accept:close_window|Jesteś odważny, Generale. Będziemy czekać na wiadomości o twoim sukcesie.
 dlga_ring_hunters_reject:lord_pretalk|Widzę. Daj mi znać, kiedy będziesz,  ale pośpisz się, nie chcemy żeby im się udało.
 ; dlga_ring_hunters_what:ring_hunters_2|It is hard to know exactly what they want with this, but we can see that they are going through great lengths to find what they are looking for.   All we can surmise is that this must be a powerful weapon of sorts, a weapon to be used to cause more destruction under the Dark Lord's name.
-; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for these..   Whether true or not, these must not fall into the Dark Lord's hands.
-; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news.. Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
-; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news, {playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something.. a disturbance.
-; dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|I am glad, then. Whatever this weapon may have been... they may still be looking for it. I will remain vigilant and remain on the lookout for more of these Ring Hunters.
-; dlga_ring_hunter_quest_end:close_window|We all will. Thank you once more for your service, {playername}.
-; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able defeat their leaders in their lair. I also came across this
-; dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|This is a minor ring of power.
-; dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we have prevented the Dark Lord from obtaining this, which he will undoubtly use to end more lives.
-; dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use against the Dark Lord's forces. We know you will use it well.
-; dlga_ring_hunter_lair_quest_end:close_window|This is a tremendous honour, my Lord. Thank you. I shall continue the battle against the Dark lord, and this will help tremendously.
-; dlga_start:ring_hunters_party_attack|Look here, men. Another group to slaughter.
-; dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampaging has come to an end.
-; dlga_ring_hunters_party_attack_2:close_window|Everyone, make sure you search their packs and their fingers. Save one to torture. Everything else you can eat.
-; dlga_start:ring_hunter_lair_defeat|That ring belongs to the Dark Lord! You can not have it!
+dlga_ring_hunters_what:ring_hunters_2.1|Czarny Pan wcześniej wysłał posłów do różnych klanów Dwarfów, pytając się o pierścienie mocy dane naszym ludziom. Ci bandyci może szukają ich... Prawda czy nie, one nie mogą wpaść w ręce Czarnego Pana
+dlga_lord_talk:ring_hunter_party_defeated|Mój panie, przychodzę ze złymi wiadomościami... Chociaż że pokonałem Łowców Pierścieni terroryzujących wioski, ich przywódcy nie byli tam. Może znaleźli czego szukali.
+dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|To nie są chore wieści, {playername}. Słyszeliśmy o twoim wielkim zwycięstwie! Życia tych mieszkańców znaczą dla nas więcej niż jakakolwiek broń. Gdy mówimy, Beorningi rosną z siłą, zmotywowani twoim zwycięstwem. Lecz, nie wierzymy że to ci Łowcy Pierścieni znaleźli tego co szukali. Jak była to broń której się baliśmy, to poczuliśmy by... niepokój.
+dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Więc jestem zadowolony. Czymkolwiek mogła być ta broń... mogą nadal ją szukać. Będę wypatrywać więcej tych Poszukiwaczy Pierścieni. 
+dlga_ring_hunter_quest_end:close_window|Podejrzewałem tego. Dziękuję ci jeszcze raz, {playername}.
+dlga_lord_talk:ring_hunter_lair_defeated_elf|Mój panie, chociaż że nie mogłem przeszkodić Łowcom Pierścieni w terroryzowaniu wiosek, zdołałem pokonać ich dowódców w ich norze. I też znalazłem to.
+dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|To jest słaby pierścień mocy.
+dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Więc powstrzymaliśmy Czarnego Pana od zdobycia tego, którego on użyje żeby zakończyć więcej żyć.
+dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Musisz zatrzymać pierścień i użyć go przeciwko armii Czarnego Pana. Wiemy że dobrze go użyjesz.
+dlga_ring_hunter_lair_quest_end:close_window|To jest wielki honor, mój Panie. Dziękuję ci. I będę kontynuować walkę przeciwko Czarnemu Panowi, i to bardzo pomoże. 
+dlga_start:ring_hunters_party_attack|Patrzcie, chłopaki. Kolejna grupa to zamordowania.
+dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Twoje szaleństwo dochodzi już do końca.
+dlga_ring_hunters_party_attack_2:close_window|Wszyscy upewnijcie się że przeszukacie ich ciała i zjecie ich palce. Zatrzymajcie jednego do tortur. Wszystko inne co chcecie zjedzcie. 
+dlga_start:ring_hunter_lair_defeat|Ten pierścień należy do Czarnego Pana! Nie możesz go mieć!
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|To należy teraz do mnie.
-; dlga_ring_hunter_lair_defeat2:close_window|This defeat does not matter... our war party raged on! You are too late to save them!
-; dlga_start:beorn_message|General, we received a message from {s1} that a large bandit party was headed our way! We had no time to gather enough forces, and when we heard the sound of battle, we prepared for the worse!
+dlga_ring_hunter_lair_defeat2:close_window|Ta przegrana nic nie znaczy... nasza armia idzie dalej! Jest już zbyt późno by ich uratować!
+dlga_start:beorn_message|Generale, otrzymaliśmy wiadomość od {s1} że wielka grupa bandytów zmierzała w naszą stronę! Nie mieliśmy czasu żeby zebrać siły, i kiedy usłyszeliśmy dźwięk walki, przygotowaliśmy się na najgorsze!
 ; dlga_beorn_message:beorn_message2|That was no ordinary bandit party. They were a collection of the Dark Lord's best...however, their leaders were not here...They have a lair near Mirkwood Forest and I must make haste.
 ; dlga_beorn_message2:beorn_message_end|Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory
 ; dlga_beorn_message_end:beorn_message_close|Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.
@@ -372,15 +372,15 @@ dlga_lord_tell_objective:lord_pretalk.12|Nie wiem: {reg1} {s1}
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Czy jesteś w stanie wysłać wojsko?
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
-; dlga_lord_mission_defend_question:lord_mission_defend_accept|My men and I are ready. We shall ride out at once.
+dlga_lord_mission_defend_question:lord_mission_defend_accept|Ja i moi ludzie jesteśmy gotowi. Pojedziemy razem.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|Obawiam się, że nie mogę wykonać tego zadania.
-; dlga_lord_mission_defend_accept:close_window|Thank you, {playername}. Now go, quickly!
-; dlga_lord_mission_defend_reject:close_window|I see. Then I will send what troops I can. Let us hope we are not too late.
-; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
-; dlga_lord_mission_raid_village_a:lord_raid_village_accept|I will raid that village, kill every man we see, and enslave all women and children!
-; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I do not have the time to raid puny villages!
-; dlga_lord_raid_village_accept:close_window|Then what are you doing standing around here?
-; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting
+dlga_lord_mission_defend_accept:close_window|Dziękuje ci, {playername}. Teraz ruszaj, szybko!
+dlga_lord_mission_defend_reject:close_window|Tego oczekiwałem. Więc wyślę jakichkolwiek żołnierzy jakich mogę. Módlmy się że nie jest za późno.
+dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, jest w pobliżu wioska która jest tak łatwa do zdobycia jak świeży owoc. Nasi zwiadowcy mówią nam że są bronieni przez {s3}. ale jest ich kilku i mogą być łatwo pokonani. ^^Ty jesteś pierwszym dowódcą któremu powiedziałem. Co chcesz zrobić z tą informacją?
+dlga_lord_mission_raid_village_a:lord_raid_village_accept|Napadnę na tą wioskę, zabije każdego mężczyznę którego zobaczę, i zniewolę wszystkie kobiety i dzieci!
+dlga_lord_mission_raid_village_a:lord_raid_village_reject|Nie mam czasu napadać na słabe wioski!
+dlga_lord_raid_village_accept:close_window|Więc co ty robisz stojąc tu?
+dlga_lord_raid_village_reject:close_window|Usprawiedliwienia tchórzy. Idź stąd, twój tchórzowski smród jest odrażający.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Czarownik Leśnych Elfów został zabity, moja Pani.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Wybacz mi, Pani, ale przez pilne sprawy nie znalazłem czasu na zabicie czarownika, a ten w międzyczasie uciekł.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Czarownik Leśnych Elfów wciąż żyje. Przerwaliśmy jego rytuał, ale uciekł.
@@ -563,10 +563,10 @@ dlga_caravan_help1:caravan_help2|Nie, Nigdy wcześniej nie widziałem tak dużeg
 dlga_caravan_help2:caravan_help3|Jesteś? Oczywiście, że jesteś! Widziałem, że staniesz się wojownikiem. ^^ Jestem rzeczywiście szczęśliwy dzisiaj, więc będę musiał skorzystać z tego szczęścia i udam się do mojej wioski i ostrzec moich ludzi przed tymi plugawymi bestiami. ^^ Trzymaj, masz trochę lokalnej waluty używanej przez {s10}
 dlga_caravan_help3:caravan_help4|Bezpiecznej podróży Torbal. Jestem pewny, że jeszcze się spotkamy.
 ; dlga_caravan_help4:caravan_help5|I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!
-; dlga_caravan_help5:close_window|I will remember that. Thank you Torbal, and stay safe.
+dlga_caravan_help5:close_window|Zapamiętam to. Dziękuje ci Torbal, i bądź bezpieczny.
 dlga_start:caravan_attack1|Kim że jesteś? Nie potrzebowałem twojej pomocy.
-; dlga_caravan_attack3:close_window|Weakling? I'll show you who is weak! (Difficult)
-; dlga_caravan_attack3:close_window.1|Go then, coward. I'll see your corpse in the fields
+dlga_caravan_attack3:close_window|Słabeusz? Pokaże ci kto jest słaby! (Trudne)
+dlga_caravan_attack3:close_window.1|Więc idź, tchórzu. Zobaczę twoje ciało na polach.
 ; dlga_start:caravan_duel1|Hehe...He's a grumpy one, isn't he? Never mind him! You saved my skin out there! Some of the men's lives too! ^^Here, we grabbed the money in our dead men's pockets. {s10}
 ; dlga_start:caravan_duel1.1|I guess I am promoted, then. You are a fierce warrior. Here, take some of our loot from the caravan. The guards were also betting against you, but I wasn't..hehe... I saw what you did out there.... ^^{s10}
 ; dlga_caravan_duel1:caravan_duel2|I could just kill you and take everything... but I have proven enough. Leave.
