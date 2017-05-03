@@ -514,7 +514,7 @@ morale_scripts = [
 				(set_spawn_radius, 3),
             			(spawn_around_party, "p_main_party", "pt_routed_enemies"),
 
-            	
+            			
             			(assign, ":routed_party", reg0),
             			(party_set_slot, ":routed_party", slot_party_commander_party, -1), #Kham - fix
 				(call_script, "script_party_add_party", ":routed_party", "p_routed_enemies"),

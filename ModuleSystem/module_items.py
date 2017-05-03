@@ -25,6 +25,7 @@ from module_info import wb_compile_switch as is_a_wb_item
 ### 9)[Optional] Triggers: List of simple triggers to be associated with the item.
 ####################################################################################################################
 #
+
 ###Some constants for ease of use.
 ### Kham - Unused imods for mesh hack
 ### Poor, Old, Cheap, Well_Made, Sharp, Deadly, Exquisite, Powerful, Rough, Robust, Tough, Trophy, Fresh, Day Old, Two-Day Old, Rotten

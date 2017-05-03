@@ -2017,6 +2017,7 @@ key_for_wedge	= key_l
 key_for_square	= key_semicolon
 key_for_undo	= key_u
 key_for_skirmish = key_comma #Kham - Skirmish Key Toggle
+key_for_skirmish_end = key_period
 
 #Kham - Formations Additions START
 slot_team_d0_type                       = 185 
@@ -2331,7 +2332,7 @@ slot_legendary_visited = 300
 slot_legendary_explored = 301
 
 #Aiming slots
-agent_is_aiming = 302
+agent_aim_overridden = 302
 
 #Track Mount and Rider Slots
 slot_agent_horse_agent = 303
@@ -2342,6 +2343,10 @@ slot_faction_war_council = 305
 
 #New Party Creation/Removal system
 slot_party_dormant = 306
+
+#AI Slots
+agent_is_free_of_pathing = 307
+
 
 
 

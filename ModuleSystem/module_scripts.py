@@ -2389,7 +2389,6 @@ scripts = [
 						(set_spawn_radius, 1),
 						(spawn_around_party, ":nonempty_winner_party", ":prisoner_train_pt"),
 
-						
 						(assign, ":prisoner_train", reg0),
 						(party_set_faction, ":prisoner_train", ":faction_receiving_prisoners"),
 						(party_set_slot, ":prisoner_train", slot_party_victory_value, ws_p_train_vp),
@@ -22663,4 +22662,62 @@ if is_a_wb_script==1:
 		# (try_end),
 	]),
 
-   ]
+#script_get_closest_melee_enemy
+#Input: Agent
+#Output: reg1 - closest melee enemy
+("get_closest_melee_enemy",
+        [
+            (store_script_param_1, ":agent1"),
+            (assign, reg1, 0),
+            (agent_get_position, pos1, ":agent1"),
+            
+            (agent_ai_get_num_cached_enemies, ":enemy_count", ":agent1"),
+            
+            (try_for_range, ":potential_new_target", 0, ":enemy_count"),
+                (agent_ai_get_cached_enemy, ":agent2", ":agent1", ":potential_new_target"),
+                (agent_is_active, ":agent2"),
+                (agent_is_alive, ":agent2"),
+                (agent_is_human, ":agent2"),
+                
+                (assign, reg1, ":agent2"),
+                
+                (assign, ":counter", 0),
+                (try_for_agents, ":agent3"),
+                    (neq, ":counter", 2),
+                    (neq, ":agent1", ":agent3"),
+                    (agent_is_active, ":agent3"),
+                    (agent_is_alive, ":agent3"),
+                    (agent_is_human, ":agent3"),
+                    
+                    (agent_ai_get_look_target, ":target", ":agent3"),
+                    (eq, ":agent2", ":target"),
+                    
+                    (val_add, ":counter", 1),
+                (try_end),
+                (neq, ":counter", 2),
+                
+                (assign, reg1, ":agent2"),
+            (try_end),
+        ]),
+
+
+("party_has_hero", 
+	[
+	 (party_get_num_companion_stacks, ":num_stacks", "p_encountered_party_backup"),
+     (assign, ":done",0),
+     (assign, ":num_heroes",0),
+          (try_for_range, ":stack_no", 0, ":num_stacks"),
+          	(eq, ":done",0),
+            (party_stack_get_troop_id,   ":stack_troop","p_encountered_party_backup",":stack_no"),
+	        (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+	        (val_add, ":num_heroes", 1),
+	        (assign, ":done",1),
+          (try_end),
+     (try_begin),
+     	(gt, ":num_heroes",0),
+     	(assign, reg12, 1),
+     (else_try),
+     	(assign, reg12, 0),
+     (try_end),
+   ]),
+]

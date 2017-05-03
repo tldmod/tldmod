@@ -2932,9 +2932,9 @@ ai_scripts = [
 			 (party_get_position, pos3, ":cur_center"),
 			 (get_distance_between_positions, ":cur_dist", pos1, pos3),
 			 (try_begin),
-			   (lt, ":cur_dist", 800), #at least 10(8 GA) clicks from enemy centers
+			   (lt, ":cur_dist", 500), #at least 10(8 GA, 5 Kham) clicks from enemy centers
 			   (this_or_next|lt, ":rel", 0),
-			   (lt, ":cur_dist", 400), #at least 5 (4 GA) clicks from friendly centers
+			   (lt, ":cur_dist", 200), #at least 5 (4 GA, 2 Kham) clicks from friendly centers
 			   (assign, ":too_close", 1),
 			 (try_end),
 		   (try_end),

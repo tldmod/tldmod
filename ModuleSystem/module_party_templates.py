@@ -400,7 +400,7 @@ party_templates = [
 ##Kham Orc Horde
 ("orc_horde"   ,"Orc Horde"     ,icon_orc_x4           |carries_goods(6)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_large_goblin_of_moria,40,50),(trp_snaga_of_moria,50,80)]), 
 
-("vet_archer"  ,"Veteran Archer",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_woodelf ,scout_personality,[(trp_test_vet_archer,1,1)]),
+("vet_archer"  ,"Killer Witcher",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_mordor ,scout_personality,[(trp_killer_witcher,1,1)]),
 
 ##Kham - Replacement Volunteer party template
 ("volunteers","Reserves",icon_generic_knight|pf_is_static,0,fac_commoners,merchant_personality,[(trp_volunteers, 1, 1)]),

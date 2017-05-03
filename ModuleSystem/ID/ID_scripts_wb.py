@@ -536,5 +536,7 @@ script_cf_order_skirmish_check = 534
 script_order_skirmish_begin_end = 535
 script_order_skirmish_skirmish = 536
 script_ce_get_troop_encumbrance = 537
+script_get_closest_melee_enemy = 538
+script_party_has_hero = 539
 
 

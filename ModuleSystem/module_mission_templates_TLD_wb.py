@@ -623,7 +623,7 @@ field_ai_triggers = [
 
 
 #### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran)
-kham_archer_hold_fire = (1, 0, ti_once, [],
+tld_archer_hold_fire = (1, 0, ti_once, [],
   [
     (assign, ":counter", 0),
     (get_player_agent_no, ":player"),
@@ -678,112 +678,116 @@ kham_archer_hold_fire = (1, 0, ti_once, [],
   ])
 
 
+
+
+# TLD: fix game bug: archers aim at hard-coded head/torax-position instead of real head/torax-position 
+# (e.g. elven archers consistently shooting ABOVE orc heads)
+tld_archer_aim_fix = (0, 0, 0, [],
+    [   
         
-
-
-
-kham_archer_has_released = (0, 0, 0, [],
-    [
-        (try_for_agents, ":agent1"),
-            (agent_is_active,":agent1"),
-            (agent_is_alive,":agent1"),
-            (agent_is_non_player, ":agent1"),
-
-            #TLD Check
-            (agent_get_troop_id, ":troop", ":agent1"),
-            (store_proficiency_level, ":prof", ":troop", wpt_archery),
-            (ge, ":prof", 200),
-        
-            (agent_get_slot, ":is_aiming", ":agent1", agent_is_aiming),
-            (eq, ":is_aiming", 1),
-            (agent_get_attack_action, ":action", ":agent1"),
-            (eq, ":action", 0),
-            
-            (agent_set_slot, ":agent1", agent_is_aiming, 0),
-        (try_end),
-    ])
-
-kham_archer_bone_target = (0, 0, 0, [],
-    [
-      (assign, ":counter", 0),
+        (assign, ":counter", 0),
 
         (try_for_agents, ":agent1"),
             (agent_is_active,":agent1"),
             (agent_is_alive,":agent1"),
             (agent_is_non_player, ":agent1"),
 
-            #TLD Check
             (agent_get_troop_id, ":troop1", ":agent1"),
+            
+            (agent_slot_eq, ":agent1", agent_aim_overridden, 0), # override only once (DISABLED for now)
+            
+
+            # is agent a very good shooter? (not necessary?)
             (store_proficiency_level, ":prof", ":troop1", wpt_archery),
             (ge, ":prof", 200),
-            
-            (agent_get_slot, ":is_aiming", ":agent1", agent_is_aiming),
-            (eq, ":is_aiming", 0),
-            
+         
+            # is agent a shooter? (i.e. wielding a ranged weapon)
             (agent_get_wielded_item, ":weapon", ":agent1", 0),
             (ge, ":weapon", 0),
             (this_or_next|item_has_property, ":weapon", itp_type_bow),
             (item_has_property, ":weapon", itp_type_crossbow),
+
+            # todo: add other ranged weapons... pistols, javelins...
             
+            # is shooter in the process of aiming?
             (agent_get_combat_state, ":state", ":agent1"),
-            (eq, ":state", 3),
-            
+            (eq, ":state", 1),  
             (agent_ai_get_look_target,":agent2", ":agent1"),
+            
+            # is target alive? (not necessary?)
             (agent_is_active,":agent2"),
             (agent_is_alive,":agent2"),
 
+            # is target short?
             (agent_get_troop_id, ":troop2", ":agent2"),
-            (gt, ":troop2", 0),
+            (ge, ":troop2", 0),  # not necessary?
+
             (troop_get_type, ":race", ":troop2"),
+            (this_or_next|eq, ":race", tf_orc), 
+            (eq, ":race", tf_dwarf),
 
-             (try_begin),
-                (eq, "$cheat_mode",1),
-                (eq, ":counter",0),
-                (neq, ":race", tf_orc),
-                #(display_message, "@DEBUG: Enemy not an orc, not using advanced aiming"),
-                (assign, ":counter",1),
-             (try_end),
-
-            (eq, ":race", tf_orc),
-
-             
-
-            (agent_get_position, pos2, ":agent2"),
-            (agent_set_attack_action, ":agent1", -2, 0),
+        
+            (val_add, ":counter",1), # book-keeping...
+  
+            (assign, ":bone", 8), # by default, aim at torax
+       
+          # consider current distance to target to decide stuff (e.g. aim at head or torax? shoot or not?)
+            (agent_get_position, pos2, ":agent2"),  # pos2 = target pos
+            (agent_get_position, pos3, ":agent1"),  # pos3 = shooter pos
+            (get_distance_between_positions, ":distance", pos3, pos2),
             
-           # (assign, ":move_x", 0),
-          #  (assign, ":move_z", 0),
-            #(store_random_in_range, ":chance", 0, 2),
-            #(agent_get_troop_id, ":troop2", ":agent2"),
-            #(troop_get_type, ":race", ":troop2"),
-          #  (agent_get_position, pos3, ":agent1"),
-          #  (agent_get_bone_position, pos4, ":agent2", 0, 1),
-          #  (get_distance_between_positions, ":distance", pos3, pos4),
-          #  (assign, reg2, ":distance"),
-           # (display_message, "@Distance: {reg2}"),
-           # (try_begin),
-           #     (gt, ":distance", 2000),
-           #     (store_div, ":move_z", ":distance", 100),
-            #    (assign, reg3, ":move_z"),
-            #    (display_message, "@Adjustment on Z: {reg3}"),
-          #      (store_random_in_range, ":bone", 7, 10),
-          #  (else_try),
-            (assign, ":bone", 9),
-          #  (try_end),
+            (try_begin),
+              (ge, ":distance", 6300),
+              (assign, ":continue", 0),
+            (else_try),
+              (is_between, ":distance", 1000, 6300),
+              (assign, ":bone", 8),  # aim at thorax if between than 20 - 50 meters (todo: adjust distance with proficency)
+              (assign, ":continue", 1),
+            (else_try),
+              (lt, ":distance", 1000),
+              (assign, ":bone", 7), #aim at head if distance is less than 20m
+              (assign, ":continue", 1),
+            (try_end),
             
+            (eq, ":continue", 1), #Do we modify aim? It will be based on distance
+
             (agent_is_in_line_of_sight, ":agent1", pos2),
+           
+            (agent_get_bone_position, pos1, ":agent2", ":bone", 1), # pos1 = target BONE pos
+            (agent_set_attack_action, ":agent1", 0, 0),      # enforce shooting (DISABLED)
+            (agent_set_look_target_position, ":agent1", pos1),      # override aimed location
+           # (agent_set_look_target_agent, ":agent1", ":agent2"),    # desperate attempt at making archer fight on and actually shoot
             
-            (agent_get_bone_position, pos1, ":agent2", ":bone", 1),
-         #   (assign, reg1, ":bone"),
-         #   (display_message, "@Target: {reg1}"),
-            #(position_move_x, pos1, ":move_x", 0),#If aiming for feet, move slightly left or right
-          #  (position_move_z, pos1, ":move_z", 0),
-            (agent_set_attack_action, ":agent1", 0, 0),
-            (agent_set_look_target_position, ":agent1", pos1),
-            
-            (agent_set_slot, ":agent1", agent_is_aiming, 1),
+        (try_end),
+
+        (try_begin),
+            (gt, ":counter",0),
+            (assign, reg10, ":counter"),
+            (assign, reg11, ":bone"),
+            #(assign, reg12, ":continue"),
+            #(display_message, "@DEBUG: OVERRRIDING AIM x{reg10}!. TARGETTING {reg11}."),
         (try_end),
     ])
+
+
+# fix part II: call on release arrow
+tld_archer_aim_fix_on_release = (0, 0, 0, [],
+    [
+        (try_for_agents, ":agent1"),
+            (agent_is_active,":agent1"),
+            (agent_is_alive,":agent1"),
+            (agent_is_non_player, ":agent1"),
+        
+            (agent_get_slot, ":is_aiming", ":agent1", agent_aim_overridden),
+            (eq, ":is_aiming", 1),
+            (agent_get_attack_action, ":action", ":agent1"),
+            (eq, ":action", 0),
+            
+            (agent_set_slot, ":agent1", agent_aim_overridden, 0),
+        (try_end),
+    ])
+
+
 
 #### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran) END
 
@@ -937,3 +941,321 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     #(assign, reg36, ":speed"),
     #(display_message, "@DEBUG: {reg31} [({reg35}wt^2/100 * {reg36}% speed)] raw -> {reg32} ride = -{reg34}% -> {reg33} given", color_bad_news),
   ])
+
+#AI kicking start
+tld_move_ai = (0.01, 0, 0, [],
+  [
+    (try_for_agents, ":agent1"),
+
+      #TLD Check
+      (agent_get_troop_id, ":lord", ":agent1"),
+      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+
+      (agent_is_active,":agent1"),
+      (agent_is_alive,":agent1"),
+      (agent_is_human,":agent1"),
+      (agent_get_animation, ":anim", ":agent1"),
+      (eq, ":anim", "anim_strike3_abdomen_front"),
+      (agent_get_position, pos1, ":agent1"),
+      (position_move_y, pos1, -1 , 0),
+      (agent_set_position, ":agent1", pos1),
+    (try_end),
+])
+
+tld_ai_kicking = (1, 0, 0, [],
+  [
+    (try_for_agents, ":agent1"),
+
+       #TLD Check
+      (agent_get_troop_id, ":lord", ":agent1"),
+      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+
+      (agent_is_active,":agent1"),
+      (agent_is_alive,":agent1"),
+      (agent_is_human, ":agent1"),
+      (agent_ai_get_look_target,":agent2", ":agent1"),
+      
+      (agent_is_active,":agent2"),
+      (agent_is_alive,":agent2"),
+      
+      (agent_get_team, ":team1", ":agent1"),
+      (agent_get_team, ":team2", ":agent2"),
+      (neq, ":team1", ":team2"),
+      
+      (agent_get_position, pos1, ":agent1"),
+      (agent_get_position, pos2, ":agent2"),
+      
+      (neg|position_is_behind_position, pos1, pos2),
+      (get_distance_between_positions, ":dist", pos1, pos2),
+      
+      (agent_get_attack_action, ":action1", ":agent1"),
+      (agent_get_attack_action, ":action2", ":agent2"),
+      (this_or_next|neq, ":action1", 2),
+      (this_or_next|neq, ":action1", 6),
+      (neq, ":action2", 2),
+      
+      (store_random_in_range, ":kick_chance", 0, 100),
+      
+      (agent_get_animation, ":anim", ":agent1"),
+      (neq, ":anim", "anim_kick_right_leg"),#Can't kick if you're already kickin'...
+      
+      (try_begin),#Kick attempt
+        (lt, ":dist", 100),
+        (is_between, ":kick_chance", 0, 10),#10% chance is enemy is in range of AI
+        (agent_set_attack_action, ":agent1", -2, 0),
+        (agent_set_defend_action, ":agent1", -2, 0),
+        (agent_set_animation, ":agent1", "anim_kick_right_leg"),#Attempt kick if agent is close enough...
+      (try_end),
+    (try_end),
+])
+
+tld_ai_is_kicked = (0.2, 0, 0, [],
+  [
+    (try_for_agents, ":agent1"),
+
+       #TLD Check
+      (agent_get_troop_id, ":lord", ":agent1"),
+      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+
+      (agent_is_active, ":agent1"),
+      (agent_is_alive, ":agent1"),
+      (agent_is_non_player, ":agent1"),
+      (agent_get_team, ":agent1_team", ":agent1"),
+      
+      (try_for_agents, ":agent2"),
+        (neq, ":agent1", ":agent2"),
+        (agent_is_active, ":agent2"),
+        (agent_is_alive, ":agent2"),
+        (agent_get_position, pos2, ":agent2"),
+        (agent_get_team, ":agent2_team", ":agent2"),
+        (neq, ":agent1_team", ":agent2_team"),
+        
+        (agent_get_bone_position, pos1, ":agent1", 6, 1),
+        
+        (assign, ":kicked", 0),
+        (try_for_range, ":bone", 0, 20),
+          (eq, ":kicked", 0),
+          
+          (agent_get_bone_position, pos2, ":agent2", ":bone", 1),
+          
+          (neg|position_is_behind_position, pos1, pos2),
+          (get_distance_between_positions, ":dist", pos1, pos2),
+          
+          (le, ":dist", 25),
+          
+          (agent_get_animation, ":anim", ":agent1", 0),
+          (eq, ":anim", "anim_kick_right_leg"),
+          
+          (agent_get_animation, ":anim", ":agent2", 0),
+          (neq,":anim","anim_strike3_abdomen_front"),#Prevents mass kicking
+          
+          (agent_set_animation, ":agent2", "anim_strike3_abdomen_front"),#kicked
+          (play_sound_at_position, 124, pos2),#Play dat phat bass boiz
+          
+          (store_random_in_range, ":dmg", 1, 6),
+          (agent_deliver_damage_to_agent, ":agent1", ":agent2", ":dmg"),
+          (assign, ":kicked", 1),
+        (try_end),
+      (try_end),
+    (try_end),
+])
+#AI kicking end
+
+#Attack/Block start
+tld_melee_ai = (0, 0, 0, [],
+  [
+    (try_for_agents,":agent1"),
+
+       #TLD Check
+      (agent_get_troop_id, ":lord", ":agent1"),
+      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+
+      (agent_is_active,":agent1"),
+      (agent_is_alive,":agent1"),
+      
+      (agent_ai_get_look_target, ":agent2", ":agent1"),
+      (agent_is_active,":agent2"),
+      (agent_is_alive,":agent2"),
+      
+      (agent_get_team, ":team1", ":agent1"),
+      (agent_get_team, ":team2", ":agent2"),
+      (neq, ":team1", ":team2"),
+      
+      (agent_get_position, pos1, ":agent1"),
+      (agent_get_position, pos2, ":agent2"),
+      
+      (neg|position_is_behind_position, pos1, pos2),
+      (get_distance_between_positions, ":dist", pos1, pos2),
+      
+      
+      #Must be a legit melee weapon used
+      (agent_get_wielded_item, ":agent1_weapon", ":agent1", 0),
+      
+      (try_begin),
+        (lt, ":agent1_weapon", 0),
+        (call_script, "script_weapon_use_backup_weapon", ":agent1", 1),
+      (try_end),
+
+      (gt, ":agent1_weapon",0),
+      
+      (item_get_weapon_length, ":agent1_weapon_length", ":agent1_weapon"),
+      
+      (assign, ":agent1_stab_allowed", 0),
+      (try_begin),
+        (assign, ":max_stab_dist", ":agent1_weapon_length"),
+        (val_mul, ":max_stab_dist", 2),
+        (is_between, ":dist", 120, ":max_stab_dist"),
+        (assign, ":agent1_stab_allowed", 0),
+      (else_try),
+        (assign, ":agent1_stab_allowed", 1),
+      (try_end),
+      
+      (agent_get_attack_action, ":agent1_attack_action", ":agent1"),
+      (agent_get_attack_action, ":agent2_attack_action", ":agent2"),
+      
+      (neq, ":agent1_attack_action", 2),#Prevents blocking while releasing an attack...
+      #If enemy is releasing an attack, agent must try to do a defensive maneuver
+      (try_begin),
+        (le, ":dist", 200),
+        (this_or_next|eq, ":agent2_attack_action", 2),
+        (eq, ":agent2_attack_action", 3),
+        
+        (agent_get_action_dir, ":agent2_attack_dir", ":agent2"),
+        (agent_set_defend_action, ":agent1", ":agent2_attack_dir"),
+        #If enemy has finished attacking (by being blocked, parried or after releasing his attack), attack back
+      (else_try),
+        (le, ":dist", 200),
+        
+        (agent_get_animation, ":anim", ":agent1", 0),
+        (neq, ":anim", "anim_kick_right_leg"),#Don't attack if you're kicking!
+        
+        (this_or_next|eq, ":agent2_attack_action", 6),
+        (this_or_next|eq, ":agent2_attack_action", 4),
+        (eq, ":agent1_attack_action", 3),
+        
+        (try_begin),
+          (eq, ":agent1_stab_allowed", 1),
+          (store_random_in_range, ":random_dir", 0, 3),
+        (else_try),
+          (store_random_in_range, ":random_dir", 1, 3),
+        (try_end),
+        (agent_set_attack_action, ":agent1", ":random_dir", 0),
+      (try_end),
+    (try_end),
+])
+#Attack/Block end
+
+#Footwork start
+tld_footwork_melee_ai = (0.25, 0, 0, [],
+  [
+    (try_for_agents, ":agent1"),
+
+       #TLD Check
+      (agent_get_troop_id, ":lord", ":agent1"),
+      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+
+
+      (agent_is_active,":agent1"),
+      (agent_is_alive,":agent1"),
+      
+      (try_begin),#Get potential new target
+        (call_script, "script_get_closest_melee_enemy", ":agent1"),
+        (gt, reg1, 0),
+        (agent_set_look_target_agent, ":agent1", reg1),
+      (try_end),
+      
+      #Get the closest attacking target
+      (agent_ai_get_look_target,":agent2", ":agent1"),
+      (agent_is_active,":agent2"),
+      (agent_is_alive,":agent2"),
+      
+      (agent_get_team, ":team1", ":agent1"),
+      (agent_get_team, ":team2", ":agent2"),
+      (neq, ":team1", ":team2"),
+      
+      (team_get_movement_order, ":order", ":team1", grc_everyone),#Only free if charging
+      (try_begin),
+        (agent_get_slot, ":free_pathing", ":agent1", agent_is_free_of_pathing),
+        (try_begin),
+          (neq, ":order", 2),
+          (neq, ":free_pathing", 1),
+          (assign, ":free_pathing", 1),
+          (agent_clear_scripted_mode, ":agent1"),
+          (agent_force_rethink, ":agent1"),
+          (agent_set_slot, ":agent1", agent_is_free_of_pathing, ":free_pathing"),
+        (else_try),
+          (eq, ":order", 2),
+          (eq, ":free_pathing", 1),
+          (assign, ":free_pathing", 0),
+          (agent_set_slot, ":agent1", agent_is_free_of_pathing, ":free_pathing"),
+        (try_end),
+        (eq, ":free_pathing", 1),
+      (else_try),
+        (agent_get_combat_state,":state",":agent1"),
+        (neq,":state",1),#Not targetting the enemy in a ranged state
+        
+        (agent_get_position, pos1, ":agent1"),
+        (agent_get_position, pos2, ":agent2"),
+        
+        (agent_get_wielded_item, ":agent1_weapon", ":agent1", 0),
+        
+        (neg|is_between, ":agent1_weapon", "itm_short_bow", "itm_dunland_javelin"),
+        (is_between, ":agent1_weapon", "itm_short_bow", "itm_witchking_helmet"),
+        
+        (neg|position_is_behind_position, pos1, pos2),
+        (get_distance_between_positions, ":dist", pos1, pos2),
+        
+        
+        (try_begin),#If it's too far away, get back in!
+          (is_between, ":dist", 250, 500),
+          (agent_set_scripted_destination, ":agent1", pos2, 1),
+        (else_try),#If it's in melee reach, RNG it baby!
+          (is_between, ":dist", 50, 250),
+          
+          (store_random_in_range, ":forward_backwards", 0, 2),
+          (store_random_in_range, ":left_right", 0, 2),
+          
+          (try_begin),
+            (eq, ":forward_backwards", 0),
+            (store_random_in_range, ":rand_y", -25, -5),
+          (else_try),
+            (store_random_in_range, ":rand_y", 25, 75),
+          (try_end),
+          
+          (try_begin),
+            (eq, ":left_right", 0),
+            (store_random_in_range, ":rand_x", -200, -150),
+          (else_try),
+            (store_random_in_range, ":rand_x", 150, 200),
+          (try_end),
+          
+          (position_move_x, pos1, ":rand_x", 0),
+          (position_move_y, pos1, ":rand_y", 0),
+          
+          (agent_set_scripted_destination, ":agent1", pos1, 1),
+        (else_try),#If it's too close, get out!
+          (lt, ":dist", 50),
+          (store_random_in_range, ":left_right", 0, 2),
+          (try_begin),
+            (eq, ":left_right", 0),
+            (store_random_in_range, ":rand_x", -150, -100),
+          (else_try),
+            (store_random_in_range, ":rand_x", 100, 150),
+          (try_end),
+          (position_move_x, pos1, ":rand_x", 0),
+          (position_move_y, pos1, -25, 0),
+          (agent_set_scripted_destination, ":agent1", pos1),
+        (else_try),#Otherwise, get back in there booooooy
+          (gt, ":dist", 500),
+          (agent_set_scripted_destination, ":agent1", pos2, 1),
+          (agent_set_look_target_agent, ":agent1", ":agent2"),
+        (try_end),
+      (try_end),
+    (try_end),
+])
+#Footwork end

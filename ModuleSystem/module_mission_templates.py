@@ -308,7 +308,20 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
 ] or [])
 ############## CUSTOM CAMERA END ###################################################################################
 
-tld_common_battle_scripts = [
+tld_common_battle_scripts = ((is_a_wb_mt==1) and [
+
+    ### WB only triggers 
+    tld_archer_aim_fix,
+    tld_archer_aim_fix_on_release,
+    tld_move_ai,
+    tld_ai_kicking,
+    tld_ai_is_kicked,
+    tld_melee_ai,
+    #tld_footwork_melee_ai,
+
+    
+] or [] ) + [
+
 	#tld_fix_viewpoint,
 	#tld_wargs_attack_horses, # WIP (CppCoder)
 	tld_slow_wounded,
@@ -333,6 +346,7 @@ tld_siege_battle_scripts = [
 	common_battle_healing,
 	custom_troll_hitting,
 	tld_remove_galadriel,
+  tld_remove_volunteer_troops,
 	#common_battle_kill_underwater,
 ] + fade + khams_custom_player_camera #Custom Cam triggers
 

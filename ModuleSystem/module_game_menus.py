@@ -3074,23 +3074,11 @@ game_menus = [
     	(val_clamp, "$player_control_allies",0,2)]),
     ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_orc_horde"),(display_message, "@Orc Horde Spawned!")]),
     ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!")]),
-    ("set_player_subfac",[],"Test Player Subfaction", [
-    	(troop_set_slot, "trp_player", slot_troop_subfaction, subfac_pelargir),
-    	(troop_add_item, "trp_player", "itm_gon_tab_shield_b"),
-    	(display_message, "@Subfac Blackroot set, player given shield!")]),
-     ("spawn_static_party",[], "Spawn Static Party Near Player", [
-     	(party_relocate_near_party, "p_scout_party", "p_main_party", 5),
-     	(display_message, "@Static Scout Party Spawned!")]),
-     ("remove_static_party",[], "Clear Static Party Near Player", [
-     	(disable_party, "p_scout_party"),
-     	(display_message, "@Static Party Remove Attempted!")]),
-     ("check_if_party_is_active",[], "Is Scout Party Active?", [
-     	(try_begin),
-     		(party_is_active, "p_scout_party"),
-     		(display_message, "@Scout Party is ACTIVE!", color_good_news),
-     	(else_try),
-     		(display_message, "@Scout Party is NOT ACTIVE", color_bad_news),
-     	(try_end)]),
+    ("melee_ai_test",[],"Melee AI Test", [
+    	(set_spawn_radius,1),
+    	(spawn_around_party, "p_main_party", "pt_vet_archer"),
+    	(party_add_members, "p_main_party", "trp_badass_theo",1), 
+    	(display_message, "@Killer WItcher Spawned, Badass King Theo added!")]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -5554,7 +5542,7 @@ game_menus = [
       ],
     [ ("join_attack",[
 #          (neq, "$encountered_party_hostile", 0),
-          (neg|troop_is_wounded, "trp_player"),
+          #(neg|troop_is_wounded, "trp_player"),
 ##          (store_troop_health,reg(5),"trp_player"),
 ##          (ge,reg(5),20),
           ],
@@ -5587,7 +5575,7 @@ game_menus = [
 #                                                             (change_screen_mission,0)]),
       ("join_leave",[],"Disengage.",[
         (try_begin),
-           (neg|troop_is_wounded, "trp_player"),
+           #(neg|troop_is_wounded, "trp_player"),
            (call_script, "script_objectionable_action", tmt_aristocratic, "str_flee_battle"),
            (party_stack_get_troop_id, ":enemy_leader","$g_enemy_party",0),
            (call_script, "script_add_log_entry", logent_player_retreated_from_lord, "trp_player",  -1, ":enemy_leader", -1),
@@ -6102,9 +6090,12 @@ game_menus = [
 	 	 (eq, "$player_allowed_siege",1), #Kham - Global Var that allows player to siege. Set in Dialogues.
 	 	 (store_faction_of_party, ":faction_no", "$g_encountered_party"),
 	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #Check Faction Strength
+	 	 
 	 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability), #Check if we can siege
-	     (this_or_next|neq, ":siegable", tld_siegable_never), #some places are never siegable
+	     
+	     (neq, ":siegable", tld_siegable_never), #some places are never siegable
 	     (neq, ":siegable", tld_siegable_capital), #We won't allow players to siege capitals
+
 	     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
 	     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
 	     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
@@ -7519,13 +7510,17 @@ game_menus = [
 
 	  ##Kham - Player Initiated Siege BEGIN
 	  ("player_initiate_siege",
-	 	[(eq, "$cheat_mode",1),
+	 	[#(eq, "$cheat_mode",1),
 	 	 (eq, "$player_allowed_siege",1), #Kham - Global Var that allows player to siege. Set in Dialogues.
+	 	 
 	 	 (store_faction_of_party, ":faction_no", "$g_encountered_party"),
 	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #Check Faction Strength
+	 	 
 	 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability), #Check if we can siege
-	     (this_or_next|neq, ":siegable", tld_siegable_never), #some places are never siegable
+	     
+	     (neq, ":siegable", tld_siegable_never), #some places are never siegable
 	     (neq, ":siegable", tld_siegable_capital), #We won't allow players to siege capitals
+	     
 	     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
 	     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
 	     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak

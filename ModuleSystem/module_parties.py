@@ -265,13 +265,13 @@ parties = [
 
 ## Gondor Beacons
   
-  ("amon_din","Amon_Din",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-46.15, 19.18),[],170),
-  ("eilenach","Eilenach",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-36.61, 14.34),[],170),
-  ("nardol","Nardol",icon_gondor_beacon        |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-33.03, 12.83),[],170),
-  ("erelas","Erelas",icon_gondor_beacon        |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-27.33, 11.06),[],170),
-  ("min_rimmon","Min_Rimmon",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-24.05, 11.32),[],170),
-  ("calenhad","Calenhad",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-18.36, 10.32),[],170),
-  ("amon_anwar","Amon_Anwar",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-13.57, 6.69), [],170),
+  ("amon_din","Amon_Din",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-46.15, 19.18),[],90),
+  ("eilenach","Eilenach",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-40.71, 16.12),[],50),
+  ("nardol","Nardol",icon_gondor_beacon        |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-34.86, 14.45),[],70),
+  ("erelas","Erelas",icon_gondor_beacon        |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-29.70, 11.16),[],110),
+  ("min_rimmon","Min_Rimmon",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-25.72, 10.01),[],60),
+  ("calenhad","Calenhad",icon_gondor_beacon    |pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-22.22, 8.84),[],120),
+  ("amon_anwar","Amon_Anwar",icon_gondor_beacon|pf_is_static|pf_no_label|pf_disabled|pf_always_visible, no_menu, pt_none, fac_neutral ,0,ai_bhvr_hold,0,(-16.65, 5.81), [],130),
 
   #Kham test
   ("scout_party","Scout_Party",icon_footman_gondor, no_menu, pt_gondor_scouts,fac_gondor,0,ai_bhvr_hold,0,(13.6,54.6),[(trp_squire_of_gondor,1,0)]),

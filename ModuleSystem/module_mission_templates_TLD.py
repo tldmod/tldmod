@@ -492,11 +492,20 @@ tld_remove_galadriel = 	(0.1,0,0,
 			[
 			(try_for_agents, ":cur_agent"),
 				(agent_get_troop_id,":troop", ":cur_agent"),
-				(this_or_next|eq, ":troop", "trp_lorien_lord"),
-				(			  eq, ":troop", "trp_volunteers"), #Kham - remove 'volunteer' agent
+				(eq, ":troop", "trp_lorien_lord"),
 				(call_script, "script_remove_agent", ":cur_agent"),
 			(try_end),
 			])
+
+tld_remove_volunteer_troops = (0.1,0,0, [(is_between, "$current_town", centers_begin, centers_end)], 
+			[
+			(try_for_agents, ":cur_agent"),
+				(agent_get_troop_id,":troop", ":cur_agent"),
+				(eq, ":troop", "trp_volunteers"), #Kham - remove 'volunteer' agent
+				(call_script, "script_remove_agent", ":cur_agent"),
+			(try_end),
+			])
+	
 
 # a trigger to fix viewpoint... not used. Too many drawbacks (mtarini)
 tld_fix_viewpoint = (0,0,0,[],[
@@ -781,10 +790,6 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
   
   common_move_deathcam_wb,
   common_rotate_deathcam_wb,
-  kham_archer_has_released,
-  kham_archer_bone_target,
-  kham_archer_hold_fire
-
 ])
 ## MadVader deathcam end
 
@@ -1108,7 +1113,8 @@ formations_triggers = [
 	] + ((is_a_wb_mt==1) and [
 
 #Skirmish
-	(0, 0, 1, [(eq, "$tld_option_formations",1), (eq, "$cheat_mode",1), (key_clicked, key_for_skirmish)],[(call_script, "script_order_skirmish_begin_end")]), 
+	#(0, 0, 1, [(eq, "$tld_option_formations",1), (eq, "$cheat_mode",1), (key_clicked, key_for_skirmish)],[(assign, "$archer_aim_active", 1), (display_message, "@Archer Aim Activated!")]),
+	#(0, 0, 1, [(eq, "$tld_option_formations",1), (eq, "$cheat_mode",1), (key_clicked, key_for_skirmish_end)],[(assign, "$archer_aim_active", 0), (display_message, "@Archer Aim DE-Activated!")]), 
 
 	(0.5, 0, 0, [(eq, "$cheat_mode",1), (call_script, "script_cf_order_skirmish_check")], [(call_script, "script_order_skirmish_skirmish")]), 
 	(ti_after_mission_start, 0, 0, [(eq, "$cheat_mode",1) ], [

@@ -1,4 +1,4 @@
-1370
+1365
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -602,7 +602,6 @@ qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_pri
 qstr_Forming_ranks. Forming_ranks.
 qstr_{reg2?You:Your_mount {reg2?You:Your_mount}_received_{reg1}_extra_damage!
 qstr_{reg2?You_strike:You {reg2?You_strike:Your_horse_charges}_for_{reg1}_bonus_damage!
-qstr_Your_high_level_arch Your_high-level_archers_determines_that_the_enemy_is_too_far_away._They_are_holding_their_fire_to_conserve_arrows_until_ordered_otherwise.
 qstr_Three_Nazgul_are_cir Three_Nazgul_are_circling_in_the_sky_above_the_battlefield!
 qstr_Two_Nazgul_are_circl Two_Nazgul_are_circling_in_the_sky_above_the_battlefield!
 qstr_A_Nazgul_is_circling A_Nazgul_is_circling_in_the_sky_above_the_battlefield!
@@ -813,11 +812,7 @@ qstr_Moria_Book_given Moria_Book_given
 qstr_Target_Party_and_All Target_Party_and_Ally_Spawned!
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
-qstr_Subfac_Blackroot_set Subfac_Blackroot_set,_player_given_shield!
-qstr_Static_Scout_Party_S Static_Scout_Party_Spawned!
-qstr_Static_Party_Remove_ Static_Party_Remove_Attempted!
-qstr_Scout_Party_is_ACTIV Scout_Party_is_ACTIVE!
-qstr_Scout_Party_is_NOT_A Scout_Party_is_NOT_ACTIVE
+qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_All_messages All_messages
 qstr_Player_damage_only Player_damage_only
