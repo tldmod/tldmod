@@ -3079,6 +3079,7 @@ game_menus = [
     	(spawn_around_party, "p_main_party", "pt_vet_archer"),
     	(party_add_members, "p_main_party", "trp_badass_theo",1), 
     	(display_message, "@Killer WItcher Spawned, Badass King Theo added!")]),
+    ("full_healing",[], "Heal all injuries FULL", [(call_script, "script_healing_routine_full", "trp_player")]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 

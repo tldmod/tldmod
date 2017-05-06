@@ -2347,6 +2347,9 @@ slot_party_dormant = 306
 #AI Slots
 agent_is_free_of_pathing = 307
 
+#Healer Slots
+slot_troop_needs_healing = 308
+
 
 
 

@@ -517,5 +517,6 @@ script_safe_remove_party = 515
 script_remove_party = 516
 script_spawn_around_party = 517
 script_set_spawn_radius = 518
+script_healing_routine_full = 519
 
 

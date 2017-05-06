@@ -401,6 +401,15 @@ kill_scout_5
 kill_scout_6
 kill_scout_7
 kill_scout_8
+healers_ask
+healer_who
+healer_wound_ask
+healer_injured_ask
+healers_wound_check
+healers_injured_check
+healers_injured_heal
+healers_wound_heal
+healers_wound_done
 ally_thanks_meet
 ally_thanks_meet_2
 freed_hero_answer

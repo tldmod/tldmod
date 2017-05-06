@@ -950,11 +950,16 @@ tld_move_ai = (0.01, 0, 0, [],
       #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+      (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
       (agent_is_alive,":agent1"),
       (agent_is_human,":agent1"),
+      
+      #Should not be riding a horse
+      (agent_get_horse, ":horse", ":agent1"),
+      (le, ":horse", 0),
+      
       (agent_get_animation, ":anim", ":agent1"),
       (eq, ":anim", "anim_strike3_abdomen_front"),
       (agent_get_position, pos1, ":agent1"),
@@ -970,15 +975,24 @@ tld_ai_kicking = (1, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+      (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
       (agent_is_alive,":agent1"),
       (agent_is_human, ":agent1"),
+
+      #Should not be riding a horse
+      (agent_get_horse, ":horse", ":agent1"),
+      (le, ":horse", 0),
+      
       (agent_ai_get_look_target,":agent2", ":agent1"),
       
       (agent_is_active,":agent2"),
       (agent_is_alive,":agent2"),
+
+      #Should not be riding a horse
+      (agent_get_horse, ":horse2", ":agent2"),
+      (le, ":horse2", 0),
       
       (agent_get_team, ":team1", ":agent1"),
       (agent_get_team, ":team2", ":agent2"),
@@ -1018,17 +1032,27 @@ tld_ai_is_kicked = (0.2, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+      (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active, ":agent1"),
       (agent_is_alive, ":agent1"),
       (agent_is_non_player, ":agent1"),
+
+      #Should not be riding a horse
+      (agent_get_horse, ":horse", ":agent1"),
+      (le, ":horse", 0),
+      
       (agent_get_team, ":agent1_team", ":agent1"),
       
       (try_for_agents, ":agent2"),
         (neq, ":agent1", ":agent2"),
         (agent_is_active, ":agent2"),
         (agent_is_alive, ":agent2"),
+
+        #Should not be riding a horse
+        (agent_get_horse, ":horse2", ":agent2"),
+        (le, ":horse2", 0),
+      
         (agent_get_position, pos2, ":agent2"),
         (agent_get_team, ":agent2_team", ":agent2"),
         (neq, ":agent1_team", ":agent2_team"),
@@ -1072,7 +1096,7 @@ tld_melee_ai = (0, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+      (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
       (agent_is_alive,":agent1"),
@@ -1157,7 +1181,7 @@ tld_footwork_melee_ai = (0.25, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-      (is_between, ":lord", "trp_badass_theo", "trp_last"),
+      (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
 
       (agent_is_active,":agent1"),

@@ -2357,11 +2357,7 @@ troops = [
 
 # <--- swy: heroes_end --->
       
-#Healers
-#["morannon_healer","Okstuk_the_healer","_",tf_hero,scn_tld_morannon_castle|entry(5),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
-#["minas_tirith_healer","Ioreth","_",tf_female|tf_hero,scn_town_1_castle|entry(5),0,fac_gondor,[itm_white_robe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x10500501d14886db69d699],
-#["edoras_healer","Freya_the_healer","_",tf_female|tf_hero,scn_town_11_castle|entry(5),0,fac_gondor,[itm_white_robe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x10500501d14886db69d699],
-#["isengard_healer","Nurgal_the_patcher","_",tf_hero,scn_tld_isengard_castle|entry(5),0,fac_mordor,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
+# Kham - move commented out healers to the end
 
 # Weapon merchants
 ["smith_mtirith","Berethor_the_Smith","Steward's_smiths",tf_hero| tf_randomize_face| tf_is_merchant| tf_gondor,0,0,fac_gondor,
@@ -2901,7 +2897,7 @@ troops = [
 ["elder_moria","Moria_Chief","the_Mines",tf_hero| tf_randomize_face| tf_orc,0,0,fac_moria,
    [itm_moria_armor_c,itm_orc_ragwrap,],
       def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
-["elder_gunda","Mater_of_the_Caves","the_caves",tf_hero| tf_randomize_face| tf_orc,0,0,fac_gundabad,
+["elder_gunda","Master_of_the_Caves","the_caves",tf_hero| tf_randomize_face| tf_orc,0,0,fac_gundabad,
    [itm_gundabad_armor_d,itm_orc_furboot_tall,],
       def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["elder_dale","Dale_Quartermaster","the_city",tf_hero| tf_randomize_face,0,0,fac_dale,
@@ -3275,6 +3271,17 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["killer_witcher","Ugly Mogly","Lieutenant",tf_hero| tf_uruk| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_m_uruk_heavy_k,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_uruk_helm_f,itm_mordor_uruk_shield_c,itm_mordor_longsword,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4,0x000000002c000104003fb3f407b83d0d00000000000000000000000000000000],
+
+## Kham - Healers
+
+["morannon_healer","Okstuk_the_healer","_",tf_hero|tf_orc,scn_morannon_center|entry(13),0,fac_mordor,[itm_moria_armor_b,itm_orc_greaves,itm_orc_helm_c],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
+["minas_tirith_healer","Ioreth","_",tf_female|tf_hero,scn_minas_tirith_center|entry(13),0,fac_gondor,[itm_whiterobe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x0000000fff0030064b3152c34d27231100000000001c986d0000000000000000],
+["edoras_healer","Freya_the_healer","_",tf_female|tf_hero,scn_edoras_center|entry(13),0,fac_gondor,[itm_whiterobe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x10500501d14886db69d699],
+["isengard_healer","Nurgal_the_patcher","_",tf_hero|tf_urukhai,scn_isengard_center|entry(13),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
+["guldur_healer","Mornagar_the_Gramaryer","_",tf_hero|tf_evil_man,scn_dol_guldur_center|entry(13),0,fac_guldur,[itm_leather_boots, (itm_nazgulrobe, imod_old)],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,0x000000047f0024d212014ac90032e05200000000001c84880000000000000000],
+["gundabad_healer","Lurgakh_Third_Eye","_",tf_orc|tf_hero,scn_gundabad_camp_center|entry(13),0,fac_gundabad,[itm_gundabad_armor_d,itm_orc_furboot_tall],def_attrib|level(2),wp(20),knows_common,0x0000000fc000200b5ff83e35e4f8ed8900000000001f6d470000000000000000],
+["mirkwood_healer","Corwiel_the_Soft-Handed","_",tf_female|tf_woodelf|tf_hero,scn_thranduils_halls_center|entry(13),0,fac_woodelf,[itm_mirkwood_armor_a,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x00000004bf00400a5b546a3682a4c2cb00000000001d268a0000000000000000],
+
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
