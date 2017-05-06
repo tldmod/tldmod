@@ -3276,7 +3276,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ["morannon_healer","Okstuk_the_healer","_",tf_hero|tf_orc,scn_morannon_center|entry(13),0,fac_mordor,[itm_moria_armor_b,itm_orc_greaves,itm_orc_helm_c],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
 ["minas_tirith_healer","Ioreth","_",tf_female|tf_hero,scn_minas_tirith_center|entry(13),0,fac_gondor,[itm_whiterobe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x0000000fff0030064b3152c34d27231100000000001c986d0000000000000000],
-["edoras_healer","Freya_the_healer","_",tf_female|tf_hero,scn_edoras_center|entry(13),0,fac_gondor,[itm_whiterobe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x10500501d14886db69d699],
+["edoras_healer","Freya_the_healer","_",tf_female|tf_hero,scn_edoras_center|entry(13),0,fac_rohan,[itm_whiterobe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x10500501d14886db69d699],
 ["isengard_healer","Nurgal_the_patcher","_",tf_hero|tf_urukhai,scn_isengard_center|entry(13),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
 ["guldur_healer","Mornagar_the_Gramaryer","_",tf_hero|tf_evil_man,scn_dol_guldur_center|entry(13),0,fac_guldur,[itm_leather_boots, (itm_nazgulrobe, imod_old)],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,0x000000047f0024d212014ac90032e05200000000001c84880000000000000000],
 ["gundabad_healer","Lurgakh_Third_Eye","_",tf_orc|tf_hero,scn_gundabad_camp_center|entry(13),0,fac_gundabad,[itm_gundabad_armor_d,itm_orc_furboot_tall],def_attrib|level(2),wp(20),knows_common,0x0000000fc000200b5ff83e35e4f8ed8900000000001f6d470000000000000000],

@@ -8214,7 +8214,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (neq, ":side", faction_side_good),
         (str_store_string, s1, "@Who are you? A mere {s25}? I do not have time for the likes of you! Leave me be! {s2}"),
       (else_try),
-        (str_store_string, s1, "@I am sorry. I cannot attend to {s25} as there are more pressing issues. {s2}"), 
+        (str_store_string, s1, "@I am sorry. I cannot attend to you as a {s25} as there are more pressing issues. {s2}"), 
       (try_end), ], 
           "{s1}", "close_window",[(call_script, "script_stand_back")]],
 
@@ -8236,37 +8236,51 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"healers_ask", [
   (eq, "$tld_option_injuries", 1),
   (troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
+  (assign, ":wounds", 0), 
 
   # Check If there are any wounds (player) before continuing with dialogue
   (try_begin),
     (neq, ":wound_mask", 0),
-    (assign, ":wounds", 0), 
+    
     (try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
     (troop_set_slot, "trp_player", slot_troop_needs_healing, 1), #Set the slot
-  (try_end),
+    #(display_message, "@DEBUG: Player is wounded"),
 
+  (else_try),
   # Check If any companions are wounded before continuing with dialogue
   (try_for_range, ":npc", companions_begin, companions_end),
     (main_party_has_troop, ":npc"),
     (troop_get_slot, ":wound_mask_npc", ":npc", slot_troop_wound_mask),
     (neq, ":wound_mask_npc", 0),
-    (assign, ":wounds_npc", 0), 
-    (try_begin),(store_and,":y",":wound_mask_npc",wound_head ),(neq,":y",0),(val_add,":wounds_npc",1),(try_end),
-    (try_begin),(store_and,":y",":wound_mask_npc",wound_chest),(neq,":y",0),(val_add,":wounds_npc",1),(try_end),
-    (try_begin),(store_and,":y",":wound_mask_npc",wound_arm  ),(neq,":y",0),(val_add,":wounds_npc",1),(try_end),
-    (try_begin),(store_and,":y",":wound_mask_npc",wound_leg  ),(neq,":y",0),(val_add,":wounds_npc",1),(try_end),
+    #(assign, ":wounds", 0), 
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_head ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_chest),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_arm  ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_leg  ),(neq,":y",0),(val_add,":wounds",1),(try_end),
     (troop_set_slot, ":npc", slot_troop_needs_healing, 1), #Set the slot
+    (str_store_troop_name, s3, ":npc"),
+    #(display_message, "@DEBUG:{s3} is wounded"),
+  (try_end),
   (try_end),
 
   #Do we continue?
-  (this_or_next|gt, ":wounds",0),
-  (gt, ":wounds_npc",0)], 
+  (gt, ":wounds",0),
+  ], 
     "My men and I have wounds that require more than just time to heal. Can you heal our wounds?", "healer_wound_ask",[]],
 
-[anyone|plyr,"healers_ask", [], 
+[anyone|plyr,"healers_ask", [
+  (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+  (assign, ":yes",0),
+  (try_for_range, ":stack", 0, ":num_stacks"),
+    (party_stack_get_num_wounded, ":wounded", "p_main_party", ":stack"),
+    (ge, ":wounded", 1),
+    (assign, ":yes",1),
+  (try_end),
+
+  (eq, ":yes", 1)], 
     "My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?", "healer_injured_ask",[]],
 
 [anyone|plyr,"healers_ask", [], 
