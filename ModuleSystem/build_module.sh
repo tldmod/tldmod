@@ -16,35 +16,39 @@ python()
     test -e /usr/bin/python2 && python2 "$@" || python "$@"
 }
 
-python -B -OO ./Process/process_init.py
-python -B -OO ./Process/process_global_variables.py
-python -B -OO ./Process/process_strings.py
-python -B -OO ./Process/process_skills.py
-python -B -OO ./Process/process_music.py
-python -B -OO ./Process/process_animations.py
-python -B -OO ./Process/process_meshes.py
-python -B -OO ./Process/process_sounds.py
-python -B -OO ./Process/process_skins.py
-python -B -OO ./Process/process_map_icons.py
-python -B -OO ./Process/process_factions.py
-python -B -OO ./Process/process_items.py
-python -B -OO ./Process/process_scenes.py
-python -B -OO ./Process/process_troops.py
-python -B -OO ./Process/process_particle_sys.py
-python -B -OO ./Process/process_scene_props.py
-python -B -OO ./Process/process_tableau_materials.py
-python -B -OO ./Process/process_presentations.py
-python -B -OO ./Process/process_party_tmps.py
-python -B -OO ./Process/process_parties.py
-python -B -OO ./Process/process_quests.py
-python -B -OO ./Process/process_info_pages.py # <-- just for wb
-python -B -OO ./Process/process_scripts.py
-python -B -OO ./Process/process_mission_tmps.py
-python -B -OO ./Process/process_game_menus.py
-python -B -OO ./Process/process_simple_triggers.py
-python -B -OO ./Process/process_dialogs.py
-python -B -OO ./Process/process_postfx.py     # <-- just for wb
-python -B -OO ./Process/process_global_variables_unused.py
+#swy-- make it fast by calling the python2 interpreter only once
+#      goes from 31.4s to 8.2s, a huge improvement in my book.
+python -B -OO ./Process/process_all.py
+
+# python -B -OO ./Process/process_init.py
+# python -B -OO ./Process/process_global_variables.py
+# python -B -OO ./Process/process_strings.py
+# python -B -OO ./Process/process_skills.py
+# python -B -OO ./Process/process_music.py
+# python -B -OO ./Process/process_animations.py
+# python -B -OO ./Process/process_meshes.pyddd
+# python -B -OO ./Process/process_sounds.py
+# python -B -OO ./Process/process_skins.py
+# python -B -OO ./Process/process_map_icons.py
+# python -B -OO ./Process/process_factions.py
+# python -B -OO ./Process/process_items.py
+# python -B -OO ./Process/process_scenes.py
+# python -B -OO ./Process/process_troops.py
+# python -B -OO ./Process/process_particle_sys.py
+# python -B -OO ./Process/process_scene_props.py
+# python -B -OO ./Process/process_tableau_materials.py
+# python -B -OO ./Process/process_presentations.py
+# python -B -OO ./Process/process_party_tmps.py
+# python -B -OO ./Process/process_parties.py
+# python -B -OO ./Process/process_quests.py
+# python -B -OO ./Process/process_info_pages.py # <-- just for wb
+# python -B -OO ./Process/process_scripts.py
+# python -B -OO ./Process/process_mission_tmps.py
+# python -B -OO ./Process/process_game_menus.py
+# python -B -OO ./Process/process_simple_triggers.py
+# python -B -OO ./Process/process_dialogs.py
+# python -B -OO ./Process/process_postfx.py     # <-- just for wb
+# python -B -OO ./Process/process_global_variables_unused.py
 # rm *.pyc -- not needed anymore
 
 
