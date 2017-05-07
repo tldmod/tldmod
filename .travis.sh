@@ -8,7 +8,7 @@ echo HI THERE!
 # grab the revision count between the oldest and the latest commit,
 # parse the changelog page to find the previous one on steam
 SVNREV=$(( `curl -s 'https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD' | \
-         grep total_commits | egrep -o '[0-9]+'` + 1 ))
+         grep total_commits | head -1 | egrep -o '[0-9]+'` + 1 ))
 
 PREREV=$(curl -s 'http://steamcommunity.com/sharedfiles/filedetails/changelog/299974223' | \
          sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1)
@@ -142,7 +142,12 @@ _fold_final_
 _fold_start_ '[Uploading finished TLD packages]'
     curl https://bitbucket.org/Swyter/bitbucket-curl-upload-to-repo-downloads/raw/default/upload-to-bitbucket.sh -O -J && chmod +x ./upload-to-bitbucket.sh
 
-    sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"
-    sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb"
+    sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfile"   | tee    bitbucket.log
+    sh ./upload-to-bitbucket.sh $bbuser $bbpass $bbpage "$bbfilewb" | tee -a bitbucket.log
+    
+    
+    # fail the build if things didn't go as expected
+    grep --no-messages 'error' bitbucket.log && exit 1;
+
 
 _fold_final_
