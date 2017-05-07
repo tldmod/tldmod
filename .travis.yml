@@ -1,5 +1,21 @@
-sudo: required
+sudo: false
 language: python
 python:
   - "2.7"
+cache:
+  apt: true
+addons:
+  apt:
+    packages:
+      - tree
+      - git
+      - flip
+      - imagemagick
+      - curl
+      - sed
+      - egrep
+      - lib32gcc1
+
 script: bash ./.travis.sh
+git:
+  depth: 1

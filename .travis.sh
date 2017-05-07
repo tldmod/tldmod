@@ -2,36 +2,56 @@
 _fold_start_() { echo -en "travis_fold:start:script.$(( ++fold_count ))\\r" && echo -ne '\033[1;33m' && echo $1 && echo -ne '\e[0m'; }
 _fold_final_() { echo -en "travis_fold:end:script.$fold_count\\r"; }
 
-_fold_start_ '[Turning original shallow clone into a full one and installing dependencies]'
-    sudo apt-get install p7zip tree git
-    git fetch --unshallow
+
+echo HI THERE!
+
+# grab the revision count between the oldest and the latest commit,
+# parse the changelog page to find the previous one on steam
+SVNREV=$(( `curl -s 'https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD' | \
+         grep total_commits | egrep -o '[0-9]+'` + 1 ))
+
+PREREV=$(curl -s 'http://steamcommunity.com/sharedfiles/filedetails/changelog/299974223' | \
+         sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1)
+
+
+# prefix the new changelog with the standard introduction and
+# make the bullet points and em-dashes pretty
+echo -e "Submitted a new build. Equivalent to nightly r$SVNREV.\r\n\r\n\
+Main changes since the previous r$PREREV build are:\r\n\
+`git log -1 --pretty=%B`" > /tmp/desc.txt
+
+WORKSHOP_DESC="`cat '/tmp/desc.txt'`"
+
+echo "$WORKSHOP_DESC"
+echo "----"
+
+cd ModuleSystem
+
+_fold_start_ "[Compiling retail revision $SVNREV]"
+    # disable cheat mode for the generated nightly builds...
+    sed -i 's/cheat_switch = 1/cheat_switch = 0/' module_constants.py
+
+    # redirect stderr to avoid log spam...
+    ./build_module.sh     2> /dev/null
+    ./build_module_wb.sh  2> /dev/null
 
 _fold_final_
 
-echo HI THERE! && SVNREV=$(git rev-list --count HEAD)
+cd ..
+
+
+# --- deploy to the steam workshop if a tag triggered this build, if not go on
+if [ ! -z $TRAVIS_TAG ]; then
+    source ./.travis.workshop.sh
+    exit
+fi
+# ---
 
 _fold_start_ '[Initial TLD tree view]'
     tree -h .
 
 _fold_final_
 
-cd ModuleSystem
-
-_fold_start_ "[Compiling retail revision $SVNREV]"
-    curl https://ccrma.stanford.edu/~craig/utility/flip/flip.cpp -O -J && sudo g++ flip.cpp -o /usr/bin/flip
-
-    # disable cheat mode for the generated nightly builds...
-    sed -i 's/cheat_switch = 1/cheat_switch = 0/' module_constants.py
-
-    # add a placeholder 'title' program to avoid log spam...
-    sudo sh -c 'echo "#/usr/bin/bash" > /usr/bin/title && chmod +x /usr/bin/title'
-
-    ./build_module.sh
-    ./build_module_wb.sh
-
-_fold_final_
-
-cd ..
 
 _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental patches]"
     git config --global core.quotepath false
