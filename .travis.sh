@@ -53,6 +53,12 @@ _fold_start_ '[Initial TLD tree view]'
 _fold_final_
 
 
+_fold_start_ '[Turning original shallow clone into a full one, this will take a while]'
+    git fetch --unshallow
+
+_fold_final_
+
+
 _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental patches]"
     git config --global core.quotepath false
     git diff --name-status --diff-filter=ACMRTUXB TLD3.3REL ./ > diff.txt
