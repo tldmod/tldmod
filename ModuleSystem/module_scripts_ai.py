@@ -34,6 +34,8 @@ ai_scripts = [
   ("init_ai_calculation",
     [ (try_for_range, ":cur_troop", heroes_begin, heroes_end),
         (troop_slot_eq, ":cur_troop", slot_troop_occupation, slto_kingdom_hero),
+        (neg|troop_slot_eq, ":cur_troop", slot_troop_wound_mask, wound_death), #Not dead - Kham
+
         (troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
         (ge, ":cur_party", 0),
         (party_is_active, ":cur_party"), #Kham - fix
@@ -2007,6 +2009,7 @@ ai_scripts = [
     [ (store_script_param, ":troop_no", 1),
       (try_begin),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+        (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #Not dead - Kham
 		(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),		
 		
         #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
@@ -2064,6 +2067,7 @@ ai_scripts = [
       (try_begin),
         (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
+        (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #Not dead - Kham
 		
 		(call_script, "script_cf_fails_if_sitting_king", ":troop_no"),
 		
