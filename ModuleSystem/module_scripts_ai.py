@@ -1790,6 +1790,7 @@ ai_scripts = [
 ("process_kingdom_parties_ai",
     [  (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
          (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),  # hero not prisoner and has party
+         (neg|troop_slot_eq, ":troop_no", slot_troop_wound_mask, wound_death), #Not dead - Kham
          (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
            (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
            (gt, ":party_no", 0),
@@ -2426,7 +2427,8 @@ ai_scripts = [
                     (faction_get_slot, ":enemy_adv_camp", ":enemy_faction", slot_faction_advance_camp),
                     (try_begin),
                       (party_is_active, ":enemy_adv_camp"),
-                      (call_script, "script_destroy_center", ":enemy_adv_camp"),
+                      #(call_script, "script_destroy_center", ":enemy_adv_camp"),
+                      (disable_party, ":enemy_adv_camp"), #Disable instead of using the "destroy" script - Kham
                     (try_end),
                     (str_store_faction_name, s2, ":enemy_faction"),
                     (try_begin),

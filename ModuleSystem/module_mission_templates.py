@@ -2585,9 +2585,10 @@ mission_templates = [ # not used in game
 		(else_try),
 			(str_store_string, s5, "str_retreat"),
 			(call_script, "script_simulate_retreat", 5, 20),
+    (try_end),
 			(call_script, "script_count_mission_casualties_from_agents"),
 			(finish_mission,0),
-		(try_end)]),
+		]),
 	(3, 0, 0, [(lt,"$telling_counter",3)],[ # need to repeat orders several times for the bitches to listen
 		(val_add, "$telling_counter",1),
 		(set_show_messages, 0),

@@ -2280,7 +2280,8 @@ simple_triggers = [
               (try_begin),
                 (faction_get_slot, ":adv_camp", ":some_faction", slot_faction_advance_camp),
                 (party_is_active, ":adv_camp"),
-                (call_script, "script_destroy_center", ":adv_camp"),
+                #(call_script, "script_destroy_center", ":adv_camp"),
+                (disable_party, ":adv_camp"), #Disable instead of destroy when faction is defeated - Kham
               (try_end),
             (try_end),
 		    (assign, "$tld_war_began", 2),

@@ -14905,6 +14905,7 @@ scripts = [
        (agent_is_human, ":cur_agent"),
        (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
        (neg|is_between, ":agent_troop_id", warg_ghost_begin, warg_ghost_end), # dont count riderless wargs
+       (neq, ":agent_troop_id", "trp_gate_aggravator"), # Don't count gate aggravator - Kham
        (agent_get_party_id, ":agent_party", ":cur_agent"),
 
     # Kham - Code added for WB fleeing operation
