@@ -224,17 +224,17 @@ simple_triggers = [
       (try_end),
       (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
-		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
+		     (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (neg|party_slot_eq, ":center_no", slot_town_lord, "trp_player"), #center does not belong to player.
          (party_slot_ge, ":center_no", slot_town_lord, 1), #center belongs to someone.
-         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant since (party_is_active, ":center_no")
+         # (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant since (party_is_active, ":center_no")
          # (party_get_slot, ":cur_wealth", ":center_no", slot_town_wealth),
          # (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
          # (assign, ":hiring_budget", ":cur_wealth"),
          # (val_div, ":hiring_budget", 5),
          # (gt, ":hiring_budget", reinforcement_cost),
          
-		 (call_script, "script_refresh_volunteers_in_town", ":center_no"),
+		     (call_script, "script_refresh_volunteers_in_town", ":center_no"),
          
          #TLD: above replaced by this
          (party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
@@ -251,7 +251,7 @@ simple_triggers = [
 # (15) Converging center prosperity to ideal prosperity once in every 15 days - MV: removed this and replaced with this:
 # (15) Party cleanup: remove empty parties, and unstick parties stuck in impassable terrain, remove routed parties that are too far from player. 
 
-(23*2, #Kham - from *3, changed to *2 to run it more often.
+(23*3,
    [
     (set_spawn_radius, 3),
     (assign, ":removed_empty_parties", 0), #For debugging - Kham
@@ -298,11 +298,11 @@ simple_triggers = [
         ] + (is_a_wb_trigger==1 and [
         
           (party_get_position, pos1, ":cur_party"),
-          (assign, ":max_range", 100),
+          (assign, ":max_range", 1000),
           (try_for_range, ":unused", 0 , ":max_range"),
             (map_get_land_position_around_position, pos2, pos1, 5),
-            (party_set_position, "p_temp_party", pos2),
-            (party_get_current_terrain, ":temp_terrain", "p_temp_party"),
+            (party_set_position, "p_terrain_party", pos2),
+            (party_get_current_terrain, ":temp_terrain", "p_terrain_party"),
               (try_begin),
                 (this_or_next|is_between, ":temp_terrain", rt_plain, rt_river),
                 (             eq,         ":temp_terrain", rt_forest),
@@ -2280,8 +2280,7 @@ simple_triggers = [
               (try_begin),
                 (faction_get_slot, ":adv_camp", ":some_faction", slot_faction_advance_camp),
                 (party_is_active, ":adv_camp"),
-                #(call_script, "script_destroy_center", ":adv_camp"),
-                (disable_party, ":adv_camp"), #Disable instead of destroy when faction is defeated - Kham
+                (call_script, "script_destroy_center", ":adv_camp"),
               (try_end),
             (try_end),
 		    (assign, "$tld_war_began", 2),

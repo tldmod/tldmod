@@ -2403,14 +2403,14 @@ ai_scripts = [
                       (party_is_active, ":attached_party"),
                       (party_detach, ":attached_party"),
                     (try_end),
-			# CC: Remove volunteers from the adv. camp.
-    			(party_get_slot, ":volunteers", ":adv_camp", slot_town_volunteer_pt),
-    			(try_begin),
-        			(gt, ":volunteers", 0),
-        			(party_is_active, ":volunteers"),
-        			(party_detach, ":volunteers"),
-        			(call_script, "script_safe_remove_party", ":volunteers"),
-			(try_end),
+          			# CC: Remove volunteers from the adv. camp.
+              			(party_get_slot, ":volunteers", ":adv_camp", slot_town_volunteer_pt),
+              			(try_begin),
+                  			(gt, ":volunteers", 0),
+                  			(party_is_active, ":volunteers"),
+                  			(party_detach, ":volunteers"),
+                  			(call_script, "script_safe_remove_party", ":volunteers"),
+          			    (try_end),
                     (disable_party, ":adv_camp"),
                   (try_end),
                                     
@@ -2567,7 +2567,7 @@ ai_scripts = [
      
      (assign, ":radius", 5),
      (assign, ":continue", 1),
-     (try_for_range, ":tries", 0, 10),
+     (try_for_range, ":tries", 0, 1000),
        (eq, ":continue", 1),
        (map_get_random_position_around_position, pos1, pos2, ":radius"), # random circle with 5+ clicks radius
        (assign, ":too_close", 0),
@@ -2580,8 +2580,8 @@ ai_scripts = [
          #(assign, ":fake_party", reg0),
          #(party_set_position, ":fake_party", pos1),
         
-         (party_set_position, "p_temp_party", pos1),
-         (party_get_current_terrain, ":terrain_type", "p_temp_party"),
+         (party_set_position, "p_terrain_party", pos1),
+         (party_get_current_terrain, ":terrain_type", "p_terrain_party"),
          #(call_script, "script_safe_remove_party", ":fake_party"),
          #check for impassable terrain
          (this_or_next|eq, ":terrain_type", rt_water),

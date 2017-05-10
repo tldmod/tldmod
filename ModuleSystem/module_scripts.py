@@ -10373,7 +10373,7 @@ scripts = [
 			(try_end),
 		(try_end),
 	(try_end),
-	(assign, reg10,":scene_to_use"), #(display_message,"@debug: using scene ID N. {reg10}"),
+	(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
 	(jump_to_scene,":scene_to_use"),
 
 ]),
