@@ -274,7 +274,7 @@ rohan_woman_face_2     = 0x00000004040020087ff7fbffefff6dff00000000001f6dbf00000
 #BEARD_BIT_remind      = 0x0000000000000110000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the beard bit -- GA
 #AGE_BITS_remind       = 0x0000000fc0000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
 #HAIR_COLOR_BITS_remind= 0x000000003f000000000000000000000000000000000000000000000000000000 # UNUSED: but just a reminder of which one is the age bits -- GA
-						 
+             
 
 beorn_face1 = rohan_face_young_1
 beorn_face2 = rohan_face_old_2
@@ -376,7 +376,7 @@ troops = [
    [itm_leather_boots,itm_black_tunic,itm_practice_sword],
       attr_tier_1,wp_tier_1,knows_common,mercenary_face_1,mercenary_face_2],
 ["novice_fighter","Novice_Fighter","Novice_Fighters",tfg_boots| tfg_armor,0,0,fac_commoners,
-   [itm_leather_boots,	],
+   [itm_leather_boots,  ],
       attr_tier_1,wp_tier_1,knows_common,mercenary_face_1,mercenary_face_2],
 ["regular_fighter","Regular_Fighter","Regular_Fighters",tfg_boots| tfg_armor,0,0,fac_commoners,
    [itm_leather_boots,],
@@ -790,13 +790,13 @@ troops = [
       attr_tier_6,wp_tier_6,knows_common|knows_riding_8|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face3],
 ####PELARGIR
 ["pelargir_watchman","Pelargir_Watchman","Pelargir_Watchmen",tf_gondor| tfg_armor| tfg_helm| tfg_boots,0,subfac_pelargir,fac_gondor,
-   [itm_pel_jerkin,itm_gondor_auxila_arrows,itm_short_bow,itm_gondor_light_greaves,itm_shortened_spear,itm_gondor_javelin,],
+   [itm_pel_jerkin,itm_gondor_arrows,itm_short_bow,itm_gondor_light_greaves,itm_shortened_spear,itm_gondor_javelin,],
       str_7| agi_5| int_4| cha_4|level(4),wp_tier_2,knows_common|knows_power_draw_2|knows_power_throw_2|knows_ironflesh_1,gondor_face1,gondor_face2],
 ["pelargir_marine","Pelargir_Marine","Pelargir_Marines",tf_gondor| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,subfac_pelargir,fac_gondor,
    [itm_pel_marine,itm_gondor_javelin,itm_gondor_light_greaves,itm_pelargir_eket,itm_gon_tab_shield_a,itm_pelargir_hood,],
       str_15|agi_15| int_4| cha_4|level(16),wp_tier_4,knows_common|knows_athletics_2|knows_power_throw_5|knows_power_draw_5|knows_ironflesh_1,gondor_face1,gondor_face2,],
 ["pelargir_vet_marine","Pelargir_Veteran_Marine","Pelargir_Veteran_Marine",tf_gondor| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,subfac_pelargir,fac_gondor,
-   [itm_pel_marine,itm_gondor_auxila_arrows,itm_short_bow,itm_regular_bow,itm_gondor_light_greaves,itm_pelargir_hood,itm_pelargir_eket,itm_gon_tab_shield_a,],
+   [itm_pel_marine,itm_gondor_arrows,itm_short_bow,itm_regular_bow,itm_gondor_light_greaves,itm_pelargir_hood,itm_pelargir_eket,itm_gon_tab_shield_a,],
       str_18|agi_18| int_4| cha_4|level(25),wp_tier_5,knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,gondor_face1,gondor_face2,],
 ["pelargir_infantry","Pelargir_Infantryman","Pelargir_Infantrymen",tf_gondor| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,subfac_pelargir,fac_gondor,
    [itm_pel_footman,itm_leather_gloves,itm_pelargir_helmet_light,itm_pelargir_sword,itm_gon_tab_shield_b,itm_pelargir_greaves,],
@@ -812,7 +812,7 @@ troops = [
       attr_tier_6,wp_tier_6,knows_common|knows_athletics_7|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face2,],
 #Lamedon#######
 ["clansman_of_lamedon","Clansman_of_Lamedon","Clansmen_of_Lamedon",tf_gondor| tfg_armor| tfg_boots,0,subfac_ethring,fac_gondor,
-   [itm_gondor_auxila_arrows,itm_lamedon_clansman,itm_gondor_javelin,itm_loss_axe,itm_gondor_light_greaves,itm_spear,itm_gondor_javelin,itm_short_bow,],
+   [itm_gondor_arrows,itm_lamedon_clansman,itm_gondor_javelin,itm_loss_axe,itm_gondor_light_greaves,itm_spear,itm_gondor_javelin,itm_short_bow,],
       str_7| agi_5| int_4| cha_4|level(4),wp_tier_1,knows_common|knows_power_throw_1,gondor_face1,gondor_face2,],
 ["footman_of_lamedon","Footman_of_Lamedon","Footmen_of_Lamedon",tf_gondor| tfg_shield| tfg_armor| tfg_boots| tfg_helm,0,subfac_ethring,fac_gondor,
    [itm_lamedon_footman,itm_gondor_light_greaves,itm_gondor_spear,itm_lamedon_hood,itm_gondor_javelin,itm_loss_axe,itm_loss_axe,itm_gon_tab_shield_a,],
@@ -834,7 +834,7 @@ troops = [
       attr_tier_6,wp_tier_6,knows_common|knows_riding_8|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face3,],
 #Pinnath Gelin####
 ["pinnath_gelin_plainsman","Plainsman_of_Pinnath_Gelin","Plainsmen_of_Pinnath_Gelin",tf_gondor| tfg_armor| tfg_boots,0,subfac_pinnath_gelin,fac_gondor,
-   [itm_pinnath_footman,itm_gondor_ranger_hood,itm_shortened_spear,itm_gondor_light_greaves,itm_gondor_auxila_arrows,itm_short_bow,],
+   [itm_pinnath_footman,itm_gondor_ranger_hood,itm_shortened_spear,itm_gondor_light_greaves,itm_gondor_arrows,itm_short_bow,],
       str_10| agi_7| int_4| cha_4|level(8),wp_tier_2,knows_common|knows_athletics_3|knows_power_throw_1|knows_power_strike_3|knows_ironflesh_3,gondor_face1,gondor_face2,],
 ["pinnath_gelin_spearman","Spearman_of_Pinnath_Gelin","Spearmen_of_Pinnath_Gelin",tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,subfac_pinnath_gelin,fac_gondor,
    [itm_pinnath_footman,itm_gondor_auxila_helm,itm_spear,itm_gon_tab_shield_a,itm_gondor_light_greaves,itm_leather_gloves,],
@@ -843,23 +843,23 @@ troops = [
    [itm_pinnath_warrior,itm_gondor_auxila_helm,itm_gon_tab_shield_d,itm_gondor_spear,itm_gondor_sword,itm_gondor_med_greaves,itm_leather_gloves,],
       str_18|agi_18| int_4| cha_4|level(25),wp_one_handed (200)|wp_two_handed (200)|wp_polearm (320),knows_common|knows_athletics_5|knows_power_throw_3|knows_power_strike_6|knows_ironflesh_5,gondor_face1,gondor_face2,],
 ["pinnath_gelin_bowman","Bowman_of_Pinnath_Gelin","Bowmen_of_Pinnath_Gelin",tf_gondor| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,subfac_pinnath_gelin,fac_gondor,
-   [itm_pinnath_vet_footman,itm_gondor_auxila_arrows,itm_regular_bow,itm_gondor_light_greaves,itm_gondor_sword,itm_gondor_ranger_hood,itm_gondor_short_sword,],
+   [itm_pinnath_vet_footman,itm_gondor_arrows,itm_regular_bow,itm_gondor_light_greaves,itm_gondor_sword,itm_gondor_ranger_hood,itm_gondor_short_sword,],
       str_15|agi_15| int_4| cha_4|level(16),wp_tier_4,knows_common|knows_athletics_2|knows_power_draw_4|knows_ironflesh_1,gondor_face1,gondor_face2,],
 ["pinnath_gelin_archer","Archer_of_Pinnath_Gelin","Archers_of_Pinnath_Gelin",tf_gondor| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,subfac_pinnath_gelin,fac_gondor,
-   [itm_pinnath_archer,itm_gondor_auxila_arrows,itm_regular_bow,itm_gondor_med_greaves,itm_gondor_ranger_hood,itm_gondor_sword,],
+   [itm_pinnath_archer,itm_gondor_arrows,itm_regular_bow,itm_gondor_med_greaves,itm_gondor_ranger_hood,itm_gondor_sword,],
       str_18|agi_18| int_4| cha_4|level(25),wp_tier_5,knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,gondor_face1,gondor_face2,],
 ["pinnath_leader","Captain_of_Pinnath_Gelin","Captains_of_Pinnath_Gelin",tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,subfac_pinnath_gelin,fac_gondor,
    [itm_pinnath_leader,itm_gondor_cav_sword,itm_gondor_med_greaves,itm_gondor_hunter,itm_gon_tab_shield_c,itm_mail_mittens,itm_gondor_leader_helm,],
       attr_tier_6,wp_tier_6,knows_common|knows_riding_8|knows_shield_9|knows_power_strike_8|knows_ironflesh_10,gondor_face1,gondor_face3,],
 #####Black Root Vale#####
 ["blackroot_vale_archer","Hunter_of_Blackroot_Vale","Hunter_of_Blackroot_Vale",tf_gondor|  tfg_armor|  tfg_boots,0,subfac_blackroot,fac_gondor,
-   [itm_blackroot_footman,itm_spear,itm_short_bow,itm_gondor_auxila_arrows,itm_gondor_light_greaves,],
+   [itm_blackroot_footman,itm_spear,itm_short_bow,itm_gondor_arrows,itm_gondor_light_greaves,],
       str_10| agi_7| int_4| cha_4|level(8),wp_tier_2,knows_common|knows_power_draw_3|knows_ironflesh_1,gondor_face1,gondor_face2,],
 ["veteran_blackroot_vale_archer","Bowman_of_Blackroot_Vale","Bowmen_of_Blackroot_Vale",tf_gondor| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,subfac_blackroot,fac_gondor,
-   [itm_blackroot_bowman,itm_gondor_auxila_arrows,itm_regular_bow,itm_gondor_sword,itm_gondor_light_greaves,itm_blackroot_hood,],
+   [itm_blackroot_bowman,itm_gondor_arrows,itm_regular_bow,itm_gondor_sword,itm_gondor_light_greaves,itm_blackroot_hood,],
       str_15|agi_15| int_4| cha_4|level(16),wp_tier_4,knows_common|knows_athletics_2|knows_power_draw_4|knows_ironflesh_1,gondor_face1,gondor_face2,],
 ["master_blackroot_vale_archer","Archer_of_Blackroot_Vale","Archers_of_Blackroot_Vale",tf_gondor| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,subfac_blackroot,fac_gondor,
-   [itm_gondor_auxila_arrows,itm_gondor_bow,itm_blackroot_archer,itm_gondor_short_sword,itm_gondor_med_greaves,itm_blackroot_hood,],
+   [itm_gondor_arrows,itm_gondor_bow,itm_blackroot_archer,itm_gondor_short_sword,itm_gondor_med_greaves,itm_blackroot_hood,],
       str_18|agi_18| int_4| cha_4|level(25),wp_tier_5,knows_common|knows_athletics_4|knows_power_draw_5|knows_power_strike_2|knows_ironflesh_3,gondor_face1,gondor_face2,],
 ["footman_of_blackroot_vale","Footman_of_Blackroot_Vale","Footmen_of_Blackroot_Vale",tf_gondor| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,subfac_blackroot,fac_gondor,
    [itm_blackroot_footman,itm_gondor_auxila_helm,itm_gondor_spear,itm_gon_tab_shield_a,itm_gondor_light_greaves,],
@@ -1415,7 +1415,7 @@ troops = [
    [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_warg_reward],
       str_30| agi_7| int_4| cha_4|level(9),wp_orc_tier_2,knows_riding_10|knows_ironflesh_10|knows_power_strike_2,orc_face1,orc_face2],
 
-	  
+    
 #Isengard
 # first non ghost-warg
 ["uruk_hai_tracker","Uruk_Hai_Tracker","Uruk_Hai_Trackers",tf_urukhai| tf_mounted| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_isengard,
@@ -2147,7 +2147,7 @@ troops = [
    [itm_empty_head,itm_empty_hands,itm_empty_legs,itm_merry_outfit],
        attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,mercenary_face_2],
 
-	   #Swadian civilian clothes: itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit itm_short_tunic itm_tabard
+     #Swadian civilian clothes: itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit itm_short_tunic itm_tabard
 #Gondor Angbor 
 ["knight_1_1","Angbor_the_Fearless","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_lam_horse,itm_lamedon_leader_surcoat_cloak,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_lamedon_leader_helm,itm_gondor_citadel_sword,],
@@ -2963,12 +2963,12 @@ troops = [
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["elder_guldur_ac","Guldur_Camp_Chief","the_camp",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_guldur,
    [itm_m_uruk_light_b,itm_uruk_greaves,],
-      def_attrib|level(2),wp(20),knows_common,mordor_man1,mordor_man2],	  
+      def_attrib|level(2),wp(20),knows_common,mordor_man1,mordor_man2],   
 ["elder_dwarf_ac","Dwarven_Campmaster","the_camp",tf_hero| tf_randomize_face| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_armor_a,itm_dwarf_pad_boots,],
       def_attrib|level(2),wp(20),knows_common_dwarf,dwarf_face_3,dwarf_face_4],
-	  
-	  
+    
+    
 #Village stores
 ["village_1_elder","Village_Elder","_",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_commoners,
    [],
@@ -3293,7 +3293,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["future_troop_8", "Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["future_troop_9", "Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["future_troop_10","Compatibility","_", tf_randomize_face,0,0,fac_neutral,[], def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
-	  
+    
 ]
  
 #

@@ -7939,7 +7939,7 @@ scripts = [
 # Input: arg1 = party_no
 ("party_wound_all_members",
     [ (store_script_param_1, ":party_no"),
-      (call_script, "script_party_wound_all_members", ":party_no"),
+      (call_script, "script_party_wound_all_members_aux", ":party_no"),
 ]),
 
 # script_calculate_battle_advantage
@@ -8097,13 +8097,13 @@ scripts = [
       (store_script_param_2, ":faction_no"),
 
     # first remove any volunteers - Kham
-    (party_get_slot, ":volunteers", ":center_no", slot_town_volunteer_pt),
-    (try_begin),
-        (gt, ":volunteers", 0),
-        (party_is_active, ":volunteers"),
-        (party_detach, ":volunteers"),
-        (call_script, "script_safe_remove_party", ":volunteers"),
-	(try_end),
+    #(party_get_slot, ":volunteers", ":center_no", slot_town_volunteer_pt),
+    #(try_begin),
+    #    (gt, ":volunteers", 0),
+    #    (party_is_active, ":volunteers"),
+    #    (party_detach, ":volunteers"),
+    #    (call_script, "script_safe_remove_party", ":volunteers"),
+	#(try_end),
 
       (try_begin),
         (check_quest_active, "qst_join_siege_with_army"),
@@ -8275,7 +8275,7 @@ scripts = [
       (try_for_range, ":other_center", centers_begin, centers_end),
         (party_is_active, ":other_center"), #TLD
 		(party_slot_eq, ":other_center", slot_center_destroyed, 0), # TLD
-        (party_slot_eq, ":other_center", slot_village_bound_center, ":center_no"),
+        #(party_slot_eq, ":other_center", slot_village_bound_center, ":center_no"), #TLD - Removed (kham)
         (call_script, "script_give_center_to_faction_aux", ":other_center", ":faction_no"),
       (try_end),
 ]),
