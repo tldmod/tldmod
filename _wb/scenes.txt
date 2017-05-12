@@ -1,5 +1,5 @@
 scenesfile version 1
- 339
+ 354
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1004,7 +1004,7 @@ scn_morannon_siege morannon_siege 256 none none 0 0 100 100 -100 0x0000000730000
   0 
   0 
  outer_mountains2west_mordor 
-scn_minas_tirith_outside minas_tirith_outside 1280 none none 84 457 339 532 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_minas_tirith_outside minas_tirith_outside 1280 none none 84 457 339 532 -100 0x00000003300005000009c5a20000348600005bd50000739d 
   0 
   0 
  outer_terrain_tirith_1 
@@ -1292,11 +1292,11 @@ scn_hornburg_outside_2 hornburg_outside_2 256 none none 0 0 100 100 -100 0x00000
   0 
   0 
  JB_outer_mountains2south_helmsdeep 
-scn_dolamroth_outside_1 dolamroth_outside_1 1792 none none 0 0 100 100 -100 0x00000002ab0794b10005153c00005c3000004b3400005792 
+scn_dolamroth_outside_1 dolamroth_outside_1 256 none none 0 0 100 100 -100 0x000000023c6794b10005153c00005c3000004b3400005792 
   0 
   0 
  outer_terrain_seaside_1 
-scn_dolamroth_outside_2 dolamroth_outside_2 1792 none none 0 0 100 100 -100 0x00000002ab0794b10005153c00005c3000004b3400005792 
+scn_dolamroth_outside_2 dolamroth_outside_2 1792 none none 0 0 100 100 -100 0x000000023c6794b10005153c00005c3000004b3400005792 
   0 
   0 
  outer_terrain_seaside_1 
@@ -1316,11 +1316,11 @@ scn_dolguldur_outside_2 dolguldur_outside_2 256 none none 0 0 100 100 -100 0x000
   0 
   0 
  JB_outer_mountains2east_mordor 
-scn_beorn_outside_1 beorn_outside_1 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a000048850000786900001ef5 
+scn_beorn_outside_1 beorn_outside_1 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a00001fb30000786900001ef5 
   0 
   0 
  outer_terrain_plain 
-scn_beorn_outside_2 beorn_outside_2 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a000048850000786900001ef5 
+scn_beorn_outside_2 beorn_outside_2 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a00001fb30000786900001ef5 
   0 
   0 
  outer_terrain_plain 
@@ -1356,3 +1356,63 @@ scn_s_erebor s_erebor 1792 none none 0 0 100 100 -100 0x00000003a7268ca70005715f
   0 
   0 
  outer_terrain_plain 
+scn_hornburg_near hornburg_near 256 none none 0 0 100 100 -100 0x000000002000056300075d6700004d84800053bf00004eb9 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_lebennin_1 lebennin_1 256 none none 0 0 100 100 -100 0x000000013c640c2d0007d1ef00007a7400005bd5000035b2 
+  0 
+  0 
+ outer_mountains2south 
+scn_lebennin_2 lebennin_2 256 none none 0 0 100 100 -100 0x000000013c640c2d0007d1ef0000339200005bd5000035b2 
+  0 
+  0 
+ outer_terrain_plain 
+scn_lebennin_3 lebennin_3 256 none none 0 0 100 100 -100 0x000000013c640c120007d1ef00007a7400005bd5000039bf 
+  0 
+  0 
+ outer_terrain_plain 
+scn_lebennin_4 lebennin_4 256 none none 0 0 100 100 -100 0x000000013c640c120007d1ef0000339200005bd5000039bf 
+  0 
+  0 
+ outer_mountains2south 
+scn_lebennin_coast_1 lebennin_coast_1 256 none none 0 0 100 100 -100 0x000000003c6005000006cdb000007a7400005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_seaside_north_1 
+scn_lebennin_coast_2 lebennin_coast_2 256 none none 0 0 100 100 -100 0x000000003c6005000006cdb00000339200005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_seaside_north_1 
+scn_lebennin_coast_3 lebennin_coast_3 768 none none 0 0 100 100 -100 0x000000003c6005000006cdb000007a7400005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_seaside_north_1 
+scn_lebennin_coast_4 lebennin_coast_4 768 none none 0 0 100 100 -100 0x000000003c6005000006cdb00000339200005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_seaside_north_1 
+scn_pelennor_1 pelennor_1 256 none none 0 0 100 100 -100 0x00000000338009b500058d63000062dc00005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_tirith_1 
+scn_pelennor_2 pelennor_2 256 none none 0 0 100 100 -100 0x00000000338009b500058d63000062dc00005bd50000739d 
+  0 
+  0 
+ JB_outer_terrain_tirith_1 
+scn_village_gondor_battlefield_1 village_gondor_battlefield_1 256 none none 0 0 100 100 -100 0x00000000a00005000006118400005c3000004b3400005792 
+  0 
+  0 
+ outer_mountains2south 
+scn_village_gondor_battlefield_2 village_gondor_battlefield_2 256 none none 0 0 100 100 -100 0x00000000a00005000006118400005c3000004b3400005792 
+  0 
+  0 
+ outer_mountains2south 
+scn_scout_camp_gondor_battlefield_1 scout_camp_gondor_battlefield_1 256 none none 0 0 100 100 -100 0x00000001a6681da50003ccef00005c3000004b34000071fb 
+  0 
+  0 
+ outer_mountains2south 
+scn_scout_camp_gondor_battlefield_2 scout_camp_gondor_battlefield_2 256 none none 0 0 100 100 -100 0x00000001a6681da50003ccef00005c3000004b34000071fb 
+  0 
+  0 
+ outer_mountains2south 

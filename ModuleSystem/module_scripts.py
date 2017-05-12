@@ -7705,9 +7705,14 @@ scripts = [
         (assign, reg0, ":center_no"),
       (try_end),
 	  
-	  (try_begin),(eq, reg0, "p_town_minas_tirith"), (assign, ":sight_range", 4),
+	  (try_begin),(eq, reg0, "p_town_minas_tirith"), (assign, ":sight_range", 3.5), #InVain: Slightly reduced, was 4
 	  (else_try), (eq, reg0,  "p_town_erebor"), (assign, ":sight_range", 4),
 	  (else_try), (eq, reg0,  "p_town_isengard"), (assign, ":sight_range", 6),
+	  (else_try), (eq, reg0,  "p_town_hornburg"), (assign, ":sight_range", 1.9), #InVain: Customised so we get both the Hornburg landmark and Hemls Deep region scenes.
+	  (else_try), (eq, reg0,  "p_town_dol_amroth"), (assign, ":sight_range", 5), #InVain
+	  (else_try), (eq, reg0,  "p_town_umbar_camp"), (assign, ":sight_range", 8), #InVain
+	  (else_try), (eq, reg0,  "p_town_linhir"), (assign, ":sight_range", 8), #InVain
+	  (else_try), (eq, reg0,  "p_town_tarnost"), (assign, ":sight_range", 8), #InVain
 	  (else_try), 
 			(this_or_next|eq, reg0,  "p_town_west_osgiliath"), 
 			(eq, reg0,  "p_town_east_osgiliath"),
@@ -7778,6 +7783,11 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_esgaroth"),	
 		(str_store_string, s17, "@on the shores of the Long Lake, in sight of Esgaroth, the Laketown"),
+	(else_try),
+		(this_or_next|eq,":landmark","p_town_linhir"),
+		(this_or_next|eq,":landmark","p_town_tarnost"),
+		(eq,":landmark","p_town_umbar_camp"),	
+		(str_store_string, s17, "@near the coast of Gondor. You can hear the distant sound of the waves and the cries of the seagulls."),
 #InVain new landmark scenes end
 	(else_try),
 		(this_or_next|eq,":landmark","p_town_west_osgiliath"),   ## Osgiliath - In Vain
@@ -7931,7 +7941,7 @@ scripts = [
       (party_get_num_attached_parties, ":num_attached_parties", ":party_no"),
       (try_for_range, ":attached_party_rank", 0, ":num_attached_parties"),
         (party_get_attached_party_with_rank, ":attached_party", ":party_no", ":attached_party_rank"),
-        (call_script, "script_party_wound_all_members", ":attached_party"),
+        (call_script, "script_party_wound_all_members_aux", ":attached_party"),
       (try_end),
 ]),
 
@@ -8143,17 +8153,19 @@ scripts = [
 ("give_center_to_faction_aux",
     [ (store_script_param_1, ":center_no"),
       (store_script_param_2, ":faction_no"),
+      
       (store_faction_of_party, ":old_faction", ":center_no"),
       (party_set_slot, ":center_no", slot_center_ex_faction, ":old_faction"),
       (party_set_faction, ":center_no", ":faction_no"),
 
-      (try_begin),
-        (party_slot_eq, ":center_no", slot_party_type, spt_village),
-        (party_get_slot, ":farmer_party", ":center_no", slot_village_farmer_party),
-        (gt, ":farmer_party", 0),
-        (party_is_active, ":farmer_party"),
-        (party_set_faction, ":farmer_party", ":faction_no"),
-      (try_end),
+      ## Not needed in TLD  - Kham
+      #(try_begin),
+      #  (party_slot_eq, ":center_no", slot_party_type, spt_village),
+      #  (party_get_slot, ":farmer_party", ":center_no", slot_village_farmer_party),
+      #  (gt, ":farmer_party", 0),
+      #  (party_is_active, ":farmer_party"),
+      #  (party_set_faction, ":farmer_party", ":faction_no"),
+      #(try_end),
 
       (party_get_slot, ":old_town_lord", ":center_no", slot_town_lord),
       
@@ -8274,6 +8286,8 @@ scripts = [
 
       (try_for_range, ":other_center", centers_begin, centers_end),
         (party_is_active, ":other_center"), #TLD
+        (store_faction_of_party, ":other_faction", ":other_center"),
+        (neq, ":other_faction", ":faction_no"),
 		(party_slot_eq, ":other_center", slot_center_destroyed, 0), # TLD
         #(party_slot_eq, ":other_center", slot_village_bound_center, ":center_no"), #TLD - Removed (kham)
         (call_script, "script_give_center_to_faction_aux", ":other_center", ":faction_no"),
@@ -10181,7 +10195,10 @@ scripts = [
 		(eq,":landmark","p_town_edoras"), 
 		(store_random_in_range, ":scene_to_use", "scn_edoras_outside_1", "scn_hornburg_outside_1"),
 	(else_try),
-		(eq,":landmark","p_town_hornburg"), 
+		(eq,":landmark","p_town_hornburg"), #Right outside Hornburg, this must be before region_hornburg
+		(assign,":scene_to_use","scn_hornburg_near"), 
+	(else_try), #Region Hornburg / Helms Deep
+		(eq,":region",region_hornburg),
 		(store_random_in_range, ":scene_to_use", "scn_hornburg_outside_1", "scn_dolamroth_outside_1"),
 	(else_try),
 		(eq,":landmark","p_town_dol_amroth"), 
@@ -10205,14 +10222,17 @@ scripts = [
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":landmark","p_town_moria"), #InVain: Keep this BEFORE region_dimrill!
-		(assign, ":native_terrain_to_use", rt_mountain_forest),
-		(assign,":scene_to_use","scn_dimrill_dale"), #randomized
-		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
+
+
+		(store_random_in_range, ":scene_to_use", "scn_moria_outside_1", "scn_dimrill_dale"),
+
+
+#		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
 	(else_try),
 		(eq,":region",region_dimrill), 
 		(assign, ":native_terrain_to_use", rt_mountain_forest),
 		(assign,":scene_to_use","scn_dimrill_dale"), #randomized
-		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
+#		(assign, "$bs_day_sound", "snd_tirith_top_occasional"),
 	(else_try),
 		(eq,":landmark","p_town_esgaroth"), #InVain: Keep this BEFORE region_s_erebor!
 		(assign, ":native_terrain_to_use", rt_steppe),
@@ -10237,6 +10257,58 @@ scripts = [
 	        (else_try),
 	        	(assign,":scene_to_use","scn_osgiliath_outskirts_4"),
 			(try_end),
+	(else_try), #coastal scenes
+		(this_or_next|eq,":landmark","p_town_linhir"), #InVain: Keep this BEFORE region_lebennin and the other Gondor regions
+		(this_or_next|eq,":landmark","p_town_tarnost"),
+		(eq,":landmark","p_town_umbar_camp"),
+			(store_random_in_range, ":scene", 0, 4),
+	        (try_begin),
+	        	(eq, ":scene",0),
+	        	(assign,":scene_to_use","scn_lebennin_coast_1"),
+	        (else_try),
+	        	(eq, ":scene",1),
+	        	(assign,":scene_to_use","scn_lebennin_coast_2"),
+	        (else_try),
+				(eq, ":scene",2),
+				(assign, ":native_terrain_to_use", rt_plain),
+	        	(assign,":scene_to_use","scn_lebennin_coast_3"), #randomized scene in half of tries
+	        (else_try),
+				(assign, ":native_terrain_to_use", rt_plain), 
+	        	(assign,":scene_to_use","scn_lebennin_coast_3"), #randomized scene in half of tries
+			(try_end),
+	(else_try), #Custom Lebennin scenes
+		(eq,":region",region_lebennin), #InVain: Keep this AFTER coastal scenes
+			(store_random_in_range, ":scene", 1, 100),
+	        (try_begin),
+	        	(is_between,":scene",1,10),
+	        	(assign,":scene_to_use","scn_lebennin_1"), #custom flower hills
+	        (else_try),
+	        	(is_between,":scene",10,20),
+	        	(assign,":scene_to_use","scn_lebennin_2"), #custom flower hills
+	        (else_try),
+	        	(is_between,":scene",20,30),
+	        	(assign,":scene_to_use","scn_lebennin_3"), #custom flower hills
+	        (else_try),
+	        	(is_between,":scene",30,40),
+	        	(assign,":scene_to_use","scn_lebennin_4"), #custom flower hills
+	        (else_try),
+	        	(is_between,":scene",40,45),
+	        	(assign,":scene_to_use","scn_village_gondor_battlefield_1"), # Gondor village
+	        (else_try),
+	        	(is_between,":scene",45,50),
+	        	(assign,":scene_to_use","scn_village_gondor_battlefield_2"), # Gondor village
+	        (else_try),
+	        	(is_between,":scene",50,55),
+	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_1"), # Gondor village ruins
+	        (else_try),
+	        	(is_between,":scene",55,60),
+	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_2"), # Gondor village ruins
+	        (else_try),
+				(assign, ":native_terrain_to_use", rt_plain),  # gondor default
+			(try_end),
+	(else_try), #Pelennor fields
+		(eq,":region",region_pelennor), #InVain: Keep this AFTER Minas_Tirith_outside and Osgiliath_Outskirts landmark scenes!
+		(store_random_in_range, ":scene_to_use", "scn_pelennor_1", "scn_hornburg_near"),
 #InVain new landmark scenes end
 	(else_try),
 		(eq,":landmark","p_town_isengard"),
@@ -10322,7 +10394,22 @@ scripts = [
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 	(else_try),		# gondor regions
 		(is_between,":region",region_pelennor, region_anorien+1),
-		(assign, ":native_terrain_to_use", rt_plain),  # gondor default
+			(store_random_in_range, ":scene", 1, 100),
+	        (try_begin),
+	        	(is_between,":scene",0,5),
+	        	(assign,":scene_to_use","scn_village_gondor_battlefield_1"), #InVain: Gondor village
+	        (else_try),
+	        	(is_between,":scene",5,10),
+	        	(assign,":scene_to_use","scn_village_gondor_battlefield_2"), #InVain: Gondor village
+	        (else_try),
+	        	(is_between,":scene",10,15),
+	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_1"), #InVain: Gondor village ruins
+	        (else_try),
+	        	(is_between,":scene",15,20),
+	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_2"), #InVain: Gondor village ruins
+	        (else_try),
+				(assign, ":native_terrain_to_use", rt_plain),  # gondor default
+			(try_end),
 	(else_try),		# dry-brown regions
 		(this_or_next|is_between,":region",region_n_undeep , region_s_undeep +1),
 		(this_or_next|eq,":region",region_dagorlad),
