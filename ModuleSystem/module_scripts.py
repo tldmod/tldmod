@@ -8284,14 +8284,13 @@ scripts = [
         (call_script, "script_update_troop_notes", ":old_town_lord"),
       (try_end),
 
-      (try_for_range, ":other_center", centers_begin, centers_end),
-        (party_is_active, ":other_center"), #TLD
-        (store_faction_of_party, ":other_faction", ":other_center"),
-        (neq, ":other_faction", ":faction_no"),
-		(party_slot_eq, ":other_center", slot_center_destroyed, 0), # TLD
-        #(party_slot_eq, ":other_center", slot_village_bound_center, ":center_no"), #TLD - Removed (kham)
-        (call_script, "script_give_center_to_faction_aux", ":other_center", ":faction_no"),
-      (try_end),
+      #(try_for_range, ":other_center", centers_begin, centers_end),
+      #  (party_is_active, ":other_center"), #TLD
+      #  (neq, ":other_center", ":center_no"),
+	  #	 (party_slot_eq, ":other_center", slot_center_destroyed, 0), # TLD
+      #  (party_slot_eq, ":other_center", slot_village_bound_center, ":center_no"), #TLD - Removed (kham)
+      #  (call_script, "script_give_center_to_faction_aux", ":other_center", ":faction_no"),
+      #(try_end),
 ]),
 
 # script_give_center_to_lord  # in TLD, used only at inital setup
