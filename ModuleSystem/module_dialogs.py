@@ -1563,12 +1563,12 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
       # check if first time or depleted, and initialize
       (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
 	 
-    ## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
-    #(try_begin),
-  	#	(gt, ":reserve_party", 0),
-  	#	(neg|party_is_active, ":reserve_party"), # depleted
-   	#	(assign, ":reserve_party", 0),
-	  #(try_end),
+   
+    (try_begin),
+  		(gt, ":reserve_party", 0),
+  		(neg|party_is_active, ":reserve_party"), # depleted
+   		(assign, ":reserve_party", 0),
+	  (try_end),
       
       (try_begin),
 		(eq, ":reserve_party", 0), #first time or depleted

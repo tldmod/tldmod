@@ -1934,13 +1934,12 @@ scripts = [
 	(store_relation, ":rel", ":fac", "$players_kingdom"), #MV fixed
  	(ge, ":rel", 0),
 
-## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
-	#(try_begin),
-		#(                 gt, ":volunteers", 0),
-		#(neg|party_is_active, ":volunteers"   ), # depleted
+	(try_begin),
+		(                 gt, ":volunteers", 0),
+		(neg|party_is_active, ":volunteers"   ), # depleted
 		# --
-		#(assign, ":volunteers", 0),
-#	(try_end),
+		(assign, ":volunteers", 0),
+	(try_end),
 	
 	(try_begin),
 		(eq, ":volunteers", 0),
