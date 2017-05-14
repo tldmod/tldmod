@@ -566,7 +566,7 @@ qstr_Debug:_Theater_SW Debug:_Theater_SW
 qstr_Debug:_Theater_C Debug:_Theater_C
 qstr_Debug:_Theater_N Debug:_Theater_N
 qstr_Debug:_Can_t_Find Debug:_Can't_Find
-qstr_INVALID_PARTY_BEING_ INVALID_PARTY_BEING_REMOVED!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
+qstr_INVALID_PARTY_BEING_ INVALID_PARTY_BEING_REMOVED_({s1})!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
 qstr_DEBUG:_{s1}_made_dor DEBUG:_{s1}_made_dormant.
 qstr_DEBUG:_Dormant_{s1}_ DEBUG:_Dormant_{s1}_spawned_around_{s2}
 qstr_DEBUG:_No_Dormant_{s DEBUG:_No_Dormant_{s1}_found._Creating_one_near_{s2}

@@ -21641,7 +21641,7 @@ command_cursor_scripts = [
   	(try_begin),
   		(is_between, ":party_id","p_main_party", "p_scribble_242"),
   		(disable_party, ":party_id"),
-  		(tutorial_box, "@INVALID PARTY BEING REMOVED! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
+  		(tutorial_box, "@INVALID PARTY BEING REMOVED ({s1})! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
 		(try_begin),
 			(eq, "$cheat_mode",1),
 			#(display_message, "@{s1} disabled"),
