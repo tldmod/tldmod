@@ -1430,6 +1430,7 @@ cheat_kill_self_on_ctrl_s = ( 1,1.5,1.5,[
 	(agent_get_team, ":player_team", ":player_agent"),
 	(display_message, "@CHEAT: SELF mind blast!!! (ctrl+s)"),
     (try_for_agents, ":agent"),
+   		(agent_is_human,":agent"),
         (agent_get_team, reg10, ":agent"), (neg|teams_are_enemies , reg10, ":player_team"),
 		(agent_get_horse,":horse",":agent"),
 		(try_begin), (gt, ":horse", -1), 

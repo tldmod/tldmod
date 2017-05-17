@@ -403,6 +403,6 @@ party_templates = [
 ("vet_archer"  ,"Killer Witcher",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_mordor ,scout_personality,[(trp_killer_witcher,1,1)]),
 
 ##Kham - Replacement Volunteer party template
-("volunteers","Reserves",icon_generic_knight|pf_is_static,0,fac_commoners,merchant_personality,[(trp_volunteers, 1, 1)]),
+("volunteers","Reserves",icon_generic_knight|pf_is_static,0,fac_commoners,merchant_personality,[]),
 
 ]

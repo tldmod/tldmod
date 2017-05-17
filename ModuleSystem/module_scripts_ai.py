@@ -2404,13 +2404,14 @@ ai_scripts = [
                       (party_detach, ":attached_party"),
                     (try_end),
           			# CC: Remove volunteers from the adv. camp.
-              			(party_get_slot, ":volunteers", ":adv_camp", slot_town_volunteer_pt),
-              			(try_begin),
-                  			(gt, ":volunteers", 0),
-                  			(party_is_active, ":volunteers"),
-                  			(party_detach, ":volunteers"),
-                  			(call_script, "script_safe_remove_party", ":volunteers"),
-          			    (try_end),
+                    (call_script,"script_delete_volunteers_party",":adv_camp"),
+              			#(party_get_slot, ":volunteers", ":adv_camp", slot_town_volunteer_pt),
+              			#(try_begin),
+                  	#		(gt, ":volunteers", 0),
+                  	#		(party_is_active, ":volunteers"),
+                  	#		(party_detach, ":volunteers"),
+                  	#		(call_script, "script_safe_remove_party", ":volunteers"),
+          			    #(try_end),
                     (disable_party, ":adv_camp"),
                   (try_end),
                                     
@@ -2636,13 +2637,14 @@ ai_scripts = [
     (party_set_slot, ":center", slot_center_is_besieged_by, -1),
     
     # first remove any volunteers
-    (party_get_slot, ":volunteers", ":center", slot_town_volunteer_pt),
-    (try_begin),
-        (gt, ":volunteers", 0),
-        (party_is_active, ":volunteers"),
-        (party_detach, ":volunteers"),
-        (call_script, "script_safe_remove_party", ":volunteers"),
-	(try_end),
+    (call_script,"script_delete_volunteers_party",":center"),
+    #(party_get_slot, ":volunteers", ":center", slot_town_volunteer_pt),
+    #(try_begin),
+    #    (gt, ":volunteers", 0),
+    #    (party_is_active, ":volunteers"),
+    #    (party_detach, ":volunteers"),
+    #    (call_script, "script_safe_remove_party", ":volunteers"),
+	  #(try_end),
     
     # remove player's reserves, if player's capital is destroyed
     (try_begin),
@@ -2652,7 +2654,18 @@ ai_scripts = [
       (party_is_active, ":reserve_party"),
       (party_detach, ":reserve_party"),
       (call_script, "script_safe_remove_party", ":reserve_party"),
-	(try_end),
+	  (try_end),
+
+  # If this is Edoras and Hornburg is still Rohan's, move capital
+  (try_begin),
+    (eq, ":center", "p_town_edoras"),
+    (eq, ":center_faction", "fac_rohan"),
+    (faction_slot_eq, "fac_rohan", slot_faction_capital, "p_town_edoras"),
+    (store_faction_of_party, ":hornburg_faction", "p_town_hornburg"),
+    (eq, ":hornburg_faction", "fac_rohan"),
+    (faction_set_slot, "fac_rohan", slot_faction_capital, "p_town_hornburg"),
+    (display_message, "@Rohan capital moved from Edoras to Hornburg!"),
+  (try_end),
     
 	# detach all attached parties, in case there are parties in the camp
 	(party_get_num_attached_parties, ":num_attached_parties", ":center"),

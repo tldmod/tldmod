@@ -1927,133 +1927,147 @@ scripts = [
 
 # script_refresh_volunteers_in_town (mtarini and others)
 ("refresh_volunteers_in_town",[
-   (store_script_param_1, ":town"),
-   (party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt),
-   (try_begin),
-	(store_faction_of_party, ":fac", ":town"), # friendly towns only
-	(store_relation, ":rel", ":fac", "$players_kingdom"), #MV fixed
- 	(ge, ":rel", 0),
+	(store_script_param_1, ":town"),
+	# Rafa note: notice town existence is not checked here
+	(party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt),
 
 	(try_begin),
-		(                 gt, ":volunteers", 0),
-		(neg|party_is_active, ":volunteers"   ), # depleted
-		# --
-		(assign, ":volunteers", 0),
-	(try_end),
+		(ge,":volunteers",0), # Rafa: if slot_town_volunteer_pt < 0 we don't reinforce
+		(store_faction_of_party, ":fac", ":town"), # friendly towns only
+		(store_relation, ":rel", ":fac", "$players_kingdom"), #MV fixed
+ 		(ge, ":rel", 0),
+
+ 		(assign,reg0,":town"),
+		#(display_message,"@Beginning the reinforcement phase for {reg0}"),
+
+		(try_begin),  # Rafa: Invalid volunteer party number correction, needed for legacy support
+			(gt, ":volunteers", 0),
+			(call_script,"script_cf_neg_1p","script_cf_party_exists",":volunteers"), # doesn't exists
+			#(neg|party_is_active,":volunteers"),
+			(assign, ":volunteers", 0),
+			#(display_message,"@Found an invalid party at {reg0}, fixing"),
+		(try_end),
 	
-	(try_begin),
-		(eq, ":volunteers", 0),
-		(party_is_active, ":town"),
-		(spawn_around_party, ":town", "pt_volunteers"), #Kham - use actual party template instead of 'none'
-		(assign, ":volunteers", reg0),
-		(party_attach_to_party, ":volunteers", ":town"),
-		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
-		#(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_" # Kham - no need to rename as we created an actual party template
-		(party_set_flags, ":volunteers", pf_no_label),
-		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
-		(store_faction_of_party, ":town_fac", ":town"),
+		(try_begin), # If a volunteer party still doesn't exists, create one
+			(eq, ":volunteers", 0),
+			#(display_message,"@Creating a party on {reg0}"),
+			(call_script, "script_create_volunteers_party",":town",0),
+			(assign,":volunteers",reg0),
+			#(display_message,"@Volunteers party id:{reg0}"),
+			#(party_is_active, ":town"),
+			#(spawn_around_party, ":town", "pt_volunteers"), #Kham - use actual party template instead of 'none'
+			#(assign, ":volunteers", reg0),
+			#(party_attach_to_party, ":volunteers", ":town"),
+			#(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
+			##(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_" # Kham - no need to rename as we created an actual party template
+			#(party_set_flags, ":volunteers", pf_no_label),
+			#(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
+			#(store_faction_of_party, ":town_fac", ":town"),
+			#(try_begin),
+			#	(faction_slot_eq, ":town_fac", slot_faction_side, faction_side_good),
+			#	(str_store_string, s4, "@Volunteers"),
+			#	(str_store_string, s3, "@--- Volunteers ---"),
+			#(else_try),
+			#	(str_store_string, s4, "@Reserves"),
+			#	(str_store_string, s3, "@--- Reserves ---"),
+			#(try_end),
+			#(party_set_name, ":volunteers", "@{s4}"),
+			#(troop_set_name,  "trp_volunteers", s3),
+		(try_end),
+  		
+  		#(eq,0,1), ## debug: failing on pourpose
+		(gt,":volunteers",0), # Rafa: a very crude handling of the volunteer's party not being created
+
+		# compute ideal number of volunteers
+		(store_party_size_wo_prisoners, ":to_add", ":town"),
+    	(val_div, ":to_add", 20), #   base: [num-garrison] / 20
+	    (call_script, "script_get_faction_rank", ":fac"),
+	    (assign, ":rank", reg0),
+	    (val_add, ":to_add", ":rank"), #  + rank
+	    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
+	    (val_div, ":lead_bonus", 2),
+	    (val_add, ":to_add", ":lead_bonus"),   # +leadership / 2
+	    # orc bonus
+	    (assign, ":is_orc_faction", 0),
+	    (try_begin),
+		    (this_or_next|eq, ":fac", "fac_mordor"),
+		    (this_or_next|eq, ":fac", "fac_isengard"),
+		    (this_or_next|eq, ":fac", "fac_moria"),
+		    (this_or_next|eq, ":fac", "fac_guldur"),
+		    (eq, ":fac", "fac_gundabad"),
+		    (assign, ":is_orc_faction", 1),
+	    	(val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions
+	  	(try_end),
+	    # town relations bonus +size*rel/100
+	    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
+	    (val_add, ":center_relation", 100),
+	    (val_mul, ":to_add", ":center_relation"), (val_div, ":to_add", 100),
+	    
+	    (assign, ":ideal_size", ":to_add"),
+		
+		# compute how many soldiers to add to volunteers
+		(store_party_size, ":vol_total", ":volunteers"),
+		(val_sub, ":to_add", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
+		(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill 2/3 of the gap per time
+		(store_random_in_range, ":rand", 0, 5), (val_add, ":rand", -2), (val_add, ":to_add", ":rand"), # plus random -2 .. +2
+		(store_add, ":target_size", ":vol_total", ":to_add"),
+		
+		(party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
 		(try_begin),
-			(faction_slot_eq, ":town_fac", slot_faction_side, faction_side_good),
-			(str_store_string, s4, "@Volunteers"),
-			(str_store_string, s3, "@--- Volunteers ---"),
-		(else_try),
-			(str_store_string, s4, "@Reserves"),
-			(str_store_string, s3, "@--- Reserves ---"),
-		(try_end),
-		(party_set_name, ":volunteers", "@{s4}"),
-		(troop_set_name,  "trp_volunteers", s3),
-	(try_end),
-  
-  # compute ideal number of volunteers
-  (store_party_size_wo_prisoners, ":to_add", ":town"),
-    (val_div, ":to_add", 20), #   base: [num-garrison] / 20
-    (call_script, "script_get_faction_rank", ":fac"),
-    (assign, ":rank", reg0),
-    (val_add, ":to_add", ":rank"), #  + rank
-    (store_skill_level, ":lead_bonus", "skl_leadership", "trp_player"),
-    (val_div, ":lead_bonus", 2),
-    (val_add, ":to_add", ":lead_bonus"),   # +leadership / 2
-    # orc bonus
-    (assign, ":is_orc_faction", 0),
-    (try_begin),
-      (this_or_next|eq, ":fac", "fac_mordor"),
-      (this_or_next|eq, ":fac", "fac_isengard"),
-      (this_or_next|eq, ":fac", "fac_moria"),
-      (this_or_next|eq, ":fac", "fac_guldur"),
-      (             eq, ":fac", "fac_gundabad"),
-      (assign, ":is_orc_faction", 1),
-      (val_mul, ":to_add", 120), (val_div, ":to_add", 100), #+20% for orc factions
-  (try_end),
-    # town relations bonus +size*rel/100
-    (party_get_slot, ":center_relation", ":town", slot_center_player_relation),
-    (val_add, ":center_relation", 100),
-    (val_mul, ":to_add", ":center_relation"), (val_div, ":to_add", 100),
-    
-    (assign, ":ideal_size", ":to_add"),
-	
-	# compute how many soldiers to add to volunteers
-	(store_party_size, ":vol_total", ":volunteers"),
-	(val_sub, ":to_add", ":vol_total"), # how many troops to add/remove to volunteers (in theory)
-	(val_mul, ":to_add", 2), (val_div, ":to_add", 3), # fill 2/3 of the gap per time
-	(store_random_in_range, ":rand", 0, 5), (val_add, ":rand", -2), (val_add, ":to_add", ":rand"), # plus random -2 .. +2
-	(store_add, ":target_size", ":vol_total", ":to_add"),
-	
-	(party_get_slot, ":recruit_template", ":town", slot_town_recruits_pt),
-	(try_begin),
-		(party_is_active, ":town"),
-		(gt, ":to_add", 0), # add volunteers!
-        # this is to simulate slower growth for smaller templates (e.g. rangers)
-        (store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
-        (try_for_range, ":unused", 0, ":reinf_rounds"),
-            (try_begin),
-              (store_party_size, ":current_size", ":volunteers"),
-              (le, ":target_size", ":current_size"),
-              (assign, ":reinf_rounds", 0), #stop reinforcing if already too many
-            (else_try),
-              (party_add_template, ":volunteers", ":recruit_template"),
-            (try_end),
+			(party_is_active, ":town"),
+			(gt, ":to_add", 0), # add volunteers!
+	        # this is to simulate slower growth for smaller templates (e.g. rangers)
+	        (store_div, ":reinf_rounds", ":to_add", 3), #average troops per template is 3-4; need minimum of 3 to actually reinforce
+	        (try_for_range, ":unused", 0, ":reinf_rounds"),
+	            (try_begin),
+	              	(store_party_size, ":current_size", ":volunteers"),
+	              	(le, ":target_size", ":current_size"),
+	              	(assign, ":reinf_rounds", 0), #stop reinforcing if already too many
+	            (else_try),
+	              	(party_add_template, ":volunteers", ":recruit_template"),
+	            (try_end),
 
-            #old code using garrison troops
-			# # select three potential volunteers
-			# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol0", reg0),  # can fail
-			# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol1", reg0),  # can fail
-			# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol2", reg0),  # can fail
-			# # select lower in grade
-			# (store_character_level, ":lvl0", ":vol0"),
-			# (store_character_level, ":lvl1", ":vol1"),
-			# (store_character_level, ":lvl2", ":vol2"),
-			# (try_begin), (lt, ":lvl1",":lvl0"), (assign,":vol0",":vol1"),(assign,":lvl0",":lvl1"),  (try_end),
-			# (try_begin), (store_random_in_range, ":tmp", 1,101), (le, ":tmp", 66),
-			   # (lt, ":lvl2",":lvl0"), (assign,":vol0",":vol2"),(try_end), 
-			# # move the guy from garrison to volunteers
-			# (party_remove_members_wounded_first, ":town", ":vol0", 1),
-			# (party_add_members, ":volunteers", ":vol0", 1),
-		(try_end),
-        (store_party_size, ":vol_total", ":volunteers"), # recompute for the benefit of puny orcs below
-	(else_try),
-		(lt, ":to_add", 0), # remove volunteers! #MV: kept this code, effect: a trickle of player recruits joins the garrison
-		(val_mul, ":to_add", -1),
-		(try_for_range, ":unused", 0, ":to_add"),
-			(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
-			(try_begin), #Kham - When the chosen one is Volunteer, let us run the script again
-				(eq, ":guy", "trp_volunteers"), 
-				(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),
+	            #old code using garrison troops
+				# # select three potential volunteers
+				# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol0", reg0),  # can fail
+				# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol1", reg0),  # can fail
+				# (call_script, "script_cf_party_select_random_regular_troop", ":town"),(assign,":vol2", reg0),  # can fail
+				# # select lower in grade
+				# (store_character_level, ":lvl0", ":vol0"),
+				# (store_character_level, ":lvl1", ":vol1"),
+				# (store_character_level, ":lvl2", ":vol2"),
+				# (try_begin), (lt, ":lvl1",":lvl0"), (assign,":vol0",":vol1"),(assign,":lvl0",":lvl1"),  (try_end),
+				# (try_begin), (store_random_in_range, ":tmp", 1,101), (le, ":tmp", 66),
+				   # (lt, ":lvl2",":lvl0"), (assign,":vol0",":vol2"),(try_end), 
+				# # move the guy from garrison to volunteers
+				# (party_remove_members_wounded_first, ":town", ":vol0", 1),
+				# (party_add_members, ":volunteers", ":vol0", 1),
 			(try_end),
-			(neq, ":guy", "trp_volunteers"), #Kham - If it is still the volunteer, then just prevent him from being moved.
-			(party_remove_members_wounded_first, ":volunteers", ":guy", 1),
-			(party_add_members, ":town", ":guy", 1),
-		(try_end),
-  (try_end),
+	        (store_party_size, ":vol_total", ":volunteers"), # recompute for the benefit of puny orcs below
+		(else_try),
+			(lt, ":to_add", 0), # remove volunteers! #MV: kept this code, effect: a trickle of player recruits joins the garrison
+			(val_mul, ":to_add", -1),
+			(try_for_range, ":unused", 0, ":to_add"),
+				(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),  # can fail
+				(try_begin), #Kham - When the chosen one is Volunteer, let us run the script again
+					(eq, ":guy", "trp_volunteers"), 
+					(call_script, "script_cf_party_select_random_regular_troop", ":volunteers"), (assign, ":guy", reg0),
+				(try_end),
+				(neq, ":guy", "trp_volunteers"), #Kham - If it is still the volunteer, then just prevent him from being moved.
+				(party_remove_members_wounded_first, ":volunteers", ":guy", 1),
+				(party_add_members, ":town", ":guy", 1),
+			(try_end),
+	  	(try_end),
     
-    # add a couple of orc volunteers each day
-    (try_begin),
-      (eq, ":is_orc_faction", 1),
-      (gt, ":ideal_size", ":vol_total"), #only if needed
-      (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
-      (gt, ":puny_orc", 0),
-      (party_add_members, ":volunteers", ":puny_orc", 2),
+	    # add a couple of orc volunteers each day
+	    (try_begin),
+		    (eq, ":is_orc_faction", 1),
+		    (gt, ":ideal_size", ":vol_total"), #only if needed
+		    (faction_get_slot, ":puny_orc", ":fac", slot_faction_tier_1_troop),
+		    (gt, ":puny_orc", 0),
+		    (party_add_members, ":volunteers", ":puny_orc", 2),
+		(try_end),
 	(try_end),
-   (try_end),
 ]),
 
 # script_game_event_party_encounter:
@@ -8113,7 +8127,7 @@ scripts = [
     #    (party_detach, ":volunteers"),
     #    (call_script, "script_safe_remove_party", ":volunteers"),
 	#(try_end),
-
+	  (call_script,"script_delete_volunteers_party",":center_no"),
       (try_begin),
         (check_quest_active, "qst_join_siege_with_army"),
         (quest_slot_eq, "qst_join_siege_with_army", slot_quest_target_center, ":center_no"),
@@ -8126,20 +8140,20 @@ scripts = [
         (call_script, "script_start_quest", "qst_follow_army", ":faction_marshall"),
         #(assign, "$g_player_follow_army_warnings", 0),
       (try_end),
-      (store_faction_of_party, ":old_faction", ":center_no"),
+      #(store_faction_of_party, ":old_faction", ":center_no"),
       (call_script, "script_give_center_to_faction_aux", ":center_no", ":faction_no"),
       #(call_script, "script_update_village_market_towns"),
       
       # If this is Edoras and Hornburg is still Rohan's, move capital
-      (try_begin),
-        (eq, ":center_no", "p_town_edoras"),
-        (eq, ":old_faction", "fac_rohan"),
-        (faction_slot_eq, "fac_rohan", slot_faction_capital, "p_town_edoras"),
-        (store_faction_of_party, ":hornburg_faction", "p_town_hornburg"),
-        (eq, ":hornburg_faction", "fac_rohan"),
-        (faction_set_slot, "fac_rohan", slot_faction_capital, "p_town_hornburg"),
-        (display_message, "@Rohan capital moved from Edoras to Hornburg!"),
-      (try_end),
+      #(try_begin),
+      #  (eq, ":center_no", "p_town_edoras"),
+      #  (eq, ":old_faction", "fac_rohan"),
+      #  (faction_slot_eq, "fac_rohan", slot_faction_capital, "p_town_edoras"),
+      #  (store_faction_of_party, ":hornburg_faction", "p_town_hornburg"),
+      #  (eq, ":hornburg_faction", "fac_rohan"),
+      #  (faction_set_slot, "fac_rohan", slot_faction_capital, "p_town_hornburg"),
+      #  (display_message, "@Rohan capital moved from Edoras to Hornburg!"),
+      #(try_end),
 
       (try_for_range, ":cur_faction", kingdoms_begin, kingdoms_end),
         (call_script, "script_faction_recalculate_strength", ":cur_faction"),
@@ -21815,12 +21829,186 @@ command_cursor_scripts = [
 	(try_end),
  ]), 
 
+#script_cf_party_exists
+#checks if a party exists, fails if not (Rafa)
+# INPUT: arg1 = party_no
+# OUTPUT: nothing (fails if party doesn't exists)
+("cf_party_exists",[
+	(store_script_param_1, ":checked_party_no"),
+	(assign,":tmp",reg0),
+	(assign,reg0,":checked_party_no"),
+	#(display_message, "@Party existence check got called for party {reg0}"),
+
+	(ge,":checked_party_no",0),
+	(try_begin),
+		# this try assumes that party_is_active is way faster than iterating through parties
+		# should be stress tested against a pure try_for_parties solution, someday
+		(party_is_active, ":checked_party_no"),
+		(assign, ":party_exists", 1),
+		#(display_message, "@Party {reg0} is active, finished"),
+	(else_try),
+		#(display_message, "@Party {reg0} is not active, checking if it exists"),
+		(assign, ":party_exists", 0),
+		(try_for_parties, ":party_no"),
+			(eq,":party_no",":checked_party_no"),
+			(assign,":party_exists",1),
+			#(display_message, "@Party {reg0} found"),
+		(try_end),
+	(try_end),
+	(assign,reg0,":tmp"),
+	(eq,":party_exists",1),
+]),
+
+#script_cf_neg_1p
+#inverts the fail condition of a script with 1 parameter (Rafa)
+# INPUT: arg1 = script to be called
+# INPUT: arg2 = script arg 1
+# OUTPUT: the same as the called script, plus succeeds if the script fails and fails if script succeeds
+("cf_neg_1p",[
+	(store_script_param_1, ":script_no"),
+	(store_script_param_2,":arg1"),
+
+	(assign,":result",0),
+	(try_begin),
+		(call_script,":script_no",":arg1"),
+		(assign,":result",1),
+	(end_try),
+	(eq,":result",0),
+]),
+
+#script_cf_party_is_disabled
+#checks if a party is disabled, fails if not (Rafa)
+# INPUT: arg1 = party_no
+# OUTPUT: nothing (fails if party is not disabled)
+("cf_party_is_disabled",[
+	(store_script_param_1, ":party_no"),
+
+	(neg|party_is_active,":party_no"),
+	(call_script, "script_cf_party_exists",":party_no"),
+
+]),
+
+
+#script_delete_volunteers_party
+#deletes a town volunteer party
+# INPUT: arg1 = town_no
+# OUTPUT: nothing
+("delete_volunteers_party",[
+	(store_script_param_1, ":town"),
+
+	(try_begin),
+		(is_between,":town", centers_begin, centers_end),
+		(call_script,"script_cf_party_exists",":town"),
+
+	    (party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt),
+
+	    (gt,":volunteers",0),
+		(party_set_slot,":town",slot_town_volunteer_pt,0),
+		(call_script,"script_cf_party_exists",":volunteers"), # we only remove valid parties
+		(call_script,"script_safe_remove_party",":volunteers"),
+	(try_end),
+]),
+
+#script_create_volunteers_party
+#creates or replaces a town volunteer party
+#overrides negative slot_town_volunteer_pt values
+# INPUT: arg1 = town_no,
+#        arg2: 0 to delete the old volunteer party
+#              any other value to keep it
+#        (if arg2!=0, always store the old volunteer party number before calling this script and delete it yourself after it's not longer used)
+# OUTPUT: reg0: the volunteer party id or -1 if wasn't created
+# dirties s4
+("create_volunteers_party",[
+	(store_script_param_1, ":town"),
+	(store_script_param_2, ":keep_old_party"),
+
+	(assign,":volunteers",-1),
+
+	(try_begin),
+		(is_between,":town", centers_begin, centers_end),
+		(call_script,"script_cf_party_exists",":town"),
+
+   		(party_get_slot, ":volunteers", ":town", slot_town_volunteer_pt),
+
+	    (try_begin),
+	    	(gt,":volunteers",0),
+	    	(eq,":keep_old_party",0),
+	    	(call_script,"script_delete_volunteers_party",":town"),
+	    (end_try),
+
+		(spawn_around_party, ":town", "pt_volunteers"), #Kham - use actual party template instead of 'none'
+		(assign, ":volunteers", reg0),
+		(party_attach_to_party, ":volunteers", ":town"),
+		(party_set_slot, ":town", slot_town_volunteer_pt, ":volunteers"),
+		#(party_set_name, ":volunteers", "@Volunteers"), # was "@_+_" # Kham - no need to rename as we created an actual party template
+		(party_set_flags, ":volunteers", pf_no_label),
+		(party_set_ai_behavior, ":volunteers", ai_bhvr_hold),
+		(store_faction_of_party, ":town_fac", ":town"),
+		(try_begin),
+			(faction_slot_eq, ":town_fac", slot_faction_side, faction_side_good),
+			(str_store_string, s4, "@Volunteers"),
+		(else_try),
+			(str_store_string, s4, "@Reserves"),
+		(try_end),
+		(party_set_name, ":volunteers", "@{s4}"),
+	(try_end),
+	(assign,reg0,":volunteers"), #just in case it was dirtied someplace
+]),
+
+#script_migrate_volunteer_system (Rafa)
+# deletes all the trp_volunteers and makes sure that all the volunteer parties are valid and of template pf_volunteers
+# INPUT: nothing
+# OUTPUT: nothing
+# dirties reg0
+("migrate_volunteer_system",[
+	#for every party
+   	(try_for_parties, ":party_no"),
+   		#check if it has a volunteer stack and delete it if found
+		(party_count_members_of_type, ":volunteers_no", ":party_no", trp_volunteers),
+   		 # does a 0 call to party_remove_members fails? if then, enclose this check on a try and add a (gt,":volunteers_no",0) here
+   		(party_remove_members, ":party_no", trp_volunteers, ":volunteers_no"),
+   	(try_end),
+   	(try_for_range,":town",centers_begin,centers_end),
+   		(try_begin),
+   			#check if the center exists and has a volunteer party
+   			(call_script,"script_cf_party_exists",":town"),
+		    (party_get_slot, ":volunteer_pt_no", ":town", slot_town_volunteer_pt),
+		    (gt,":volunteer_pt_no",0), #without a volunteer party we have no need to proceed (we could even remove the player's party if we did!)
+
+		    (try_begin),	#check if it's valid; if not valid, delete it
+		    	## CAUTION, TO DO: check if volunteer parties get disabled at times (i.e.: when disabling advance camps)
+		    	# meanwhile we remove disabled volunteer parties (might want to change that)
+		    	(neg|party_is_active,":volunteer_pt_no"),  
+		    	(call_script,"script_delete_volunteers_party",":town"),
+			(else_try), #check if the center is in hands of the enemy, if so delete the volunteer party
+				(store_faction_of_party,":centers_faction",":town"),
+				(store_relation,":relation",":centers_faction","$players_kingdom"),
+				(lt,":relation",0),
+
+		    	(call_script,"script_delete_volunteers_party",":party_no"),
+			(else_try),
+				#check if the volunteer party template is pt_none
+				(party_get_template_id, ":party_template", ":volunteer_pt_no"),
+				(eq,":party_template",pt_none),
+    			#in that case, change it
+    			(call_script,"script_create_volunteers_party",":town",1),
+    			(assign,":new_volunteer_pt_no",reg0),
+    			(call_script,"script_party_copy",":new_volunteer_pt_no",":volunteer_pt_no"),
+    			(call_script,"script_safe_remove_party",":volunteer_pt_no"),
+    		(try_end),
+    	(try_end),
+	(try_end),
+]),
 
 
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts
 
+
+################################################################################################
+################################## WARBAND ONLY SCRIPTS BELOW ##################################
+################################################################################################
 #swy-- WB: make it so upgrading troops from the party screen is free, just like in vanilla M&B 1.011, many thanks to mtarini for his fantastic help on Trello!
 if is_a_wb_script==1:
   scripts += [
@@ -22890,4 +23078,5 @@ if is_a_wb_script==1:
      	(assign, reg12, 0),
      (try_end),
    ]),
+
 ]

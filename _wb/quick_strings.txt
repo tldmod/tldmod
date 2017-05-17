@@ -1,4 +1,4 @@
-1387
+1385
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -124,11 +124,6 @@ qstr_Superior_orders_from Superior_orders_from_{s11}_to_reassign_troops:
 qstr_{reg12}_{s10}_left_t {reg12}_{s10}_left_the_party!
 qstr_Fangorn_claimed_{reg Fangorn_claimed_{reg0}_killed_and_{reg1}_wounded_among_your_troops!
 qstr_You_were_wounded_in_ You_were_wounded_in_Fangorn!
-qstr_Volunteers Volunteers
-qstr_____Volunteers____ ---_Volunteers_---
-qstr_Reserves Reserves
-qstr_____Reserves____ ---_Reserves_---
-qstr_{s4} {s4}
 qstr_{s1}_of_{s3}_was_def {s1}_of_{s3}_was_defeated_in_battle.
 qstr_{s2}_have_razed_{s1} {s2}_have_razed_{s1}!
 qstr_DEBUG:_{s1}_no_longe DEBUG:_{s1}_no_longer_leads_a_party.
@@ -218,7 +213,6 @@ qstr_near_a_big_ford_cros near_a_big_ford_crossing_the_River_{s15}
 qstr_near_a_small_ford_cr near_a_small_ford_crossing_the_River_{s15}
 qstr_Battle_Advantage:_{r Battle_Advantage:_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
-qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
 qstr__Being_Raided_ (Being_Raided)
 qstr__Looted_ (Looted)
 qstr__Under_Siege_ (Under_Siege)
@@ -526,6 +520,7 @@ qstr_Gondor_AI_Tweaks___Mo Gondor_AI_Tweaks_-_More_frequent_hosts
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_ERROR ERROR
+qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
 qstr____Ruins_of_{s1}___ ___Ruins_of_{s1}___
 qstr_ranks ranks
 qstr_shield_wall shield_wall
@@ -571,6 +566,9 @@ qstr_DEBUG:_{s1}_made_dor DEBUG:_{s1}_made_dormant.
 qstr_DEBUG:_Dormant_{s1}_ DEBUG:_Dormant_{s1}_spawned_around_{s2}
 qstr_DEBUG:_No_Dormant_{s DEBUG:_No_Dormant_{s1}_found._Creating_one_near_{s2}
 qstr_{s11}_recovered_from {s11}_recovered_from_a_serious_wound.
+qstr_Volunteers Volunteers
+qstr_Reserves Reserves
+qstr_{s4} {s4}
 qstr_{s1} {s1}
 qstr_No_Troops_Left. No_Troops_Left.
 qstr_avoid_melee avoid_melee

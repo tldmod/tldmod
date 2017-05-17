@@ -193,7 +193,7 @@ simple_triggers = [
 # (13) Party AI: pruning some of the prisoners in each center (once a week)
 (24*7,[(try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
-		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
+		     (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (party_get_num_prisoner_stacks, ":num_prisoner_stacks",":center_no"),
          (try_for_range_backwards, ":stack_no", 0, ":num_prisoner_stacks"),
            (party_prisoner_stack_get_troop_id, ":stack_troop",":center_no",":stack_no"),
@@ -222,6 +222,13 @@ simple_triggers = [
         (party_slot_eq, ":cur_attached_party", slot_center_is_besieged_by, -1), #center not under siege
         (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"), #Hiring men up to lord-specific limit
       (try_end),
+
+      (try_begin),
+        (eq,"$migrate_volunteer_system_run_once",0),
+        (call_script, "script_migrate_volunteer_system"), # Rafa: ensure the volunteers system is up to date
+        (assign,"$migrate_volunteer_system_run_once",1),
+      (try_end),
+      
       (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
 		     (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
@@ -274,6 +281,7 @@ simple_triggers = [
         (neq, ":cur_party_template", "pt_mound"),
         (neq, ":cur_party_template", "pt_pyre"),
         (neq, ":cur_party_template", "pt_legendary_place"),
+        (neq, ":cur_party_template", "pt_volunteers"), #Rafa: don't delete volunteer's parties
         (party_detach, ":cur_party"),
         (call_script, "script_safe_remove_party", ":cur_party"),
         (val_add, ":removed_empty_parties", 1),
@@ -281,10 +289,10 @@ simple_triggers = [
         (party_get_battle_opponent, ":opponent", ":cur_party"),
         (lt, ":opponent", 0),
         (party_get_template_id, ":cur_party_template", ":cur_party"),
-	(eq|this_or_next, ":cur_party_template", "pt_routed_allies"),
-	(eq, ":cur_party_template", "pt_routed_enemies"),
-	(store_distance_to_party_from_party, ":routed_distance", "p_main_party", ":cur_party"),
-	(gt, ":routed_distance", 50),
+	      (eq|this_or_next, ":cur_party_template", "pt_routed_allies"),
+	      (eq, ":cur_party_template", "pt_routed_enemies"),
+	      (store_distance_to_party_from_party, ":routed_distance", "p_main_party", ":cur_party"),
+	      (gt, ":routed_distance", 50),
         (call_script, "script_safe_remove_party", ":cur_party"),	
       (else_try), #unstick stuck parties
         (party_get_current_terrain, ":terrain_type", ":cur_party"),
@@ -397,7 +405,7 @@ simple_triggers = [
        
      (try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
-		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
+		     (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          # TLD: Always upgrade volunteers in friendly towns (slowly!)
          (party_get_slot, ":volunteers", ":center_no", slot_town_volunteer_pt),
          (try_begin),
@@ -446,7 +454,7 @@ simple_triggers = [
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
          (try_for_range, ":center_no", centers_begin, centers_end),
            (party_is_active, ":center_no"),
-		   (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
+		       (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
            (store_faction_of_party, ":center_faction", ":center_no"),
            (eq, ":center_faction", ":faction_no"), # center belongs to kingdom
            (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
@@ -560,7 +568,7 @@ simple_triggers = [
 (3,[(store_current_hours, ":cur_hours"),
       (try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
-	    (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
+	      (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (party_get_slot, ":besieger_party", ":center_no", slot_center_is_besieged_by),
         (gt, ":besieger_party", 0),
         (party_is_active, ":besieger_party"),
@@ -579,7 +587,7 @@ simple_triggers = [
           (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
           (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
           (gt, ":party_no", 0),
-		  (party_is_active,":party_no"), #GA bugfix
+		      (party_is_active,":party_no"), #GA bugfix
           (store_troop_faction, ":troop_faction_no", ":troop_no"),
           (eq, ":troop_faction_no", ":besieger_faction"),
           (assign, ":continue", 0),
@@ -764,7 +772,7 @@ simple_triggers = [
        (try_for_range, ":center_no", centers_begin, centers_end),
 ##         (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
          (party_is_active, ":center_no"), #TLD
-		 (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
+		     (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (assign, ":chance", 30),
          (try_begin),
            (party_slot_eq, ":center_no", slot_center_has_prisoner_tower, 1),
@@ -942,7 +950,7 @@ simple_triggers = [
              (assign, ":done", 0),
              (try_for_range, ":cur_center", centers_begin, centers_end),
                (party_is_active, ":cur_center"), #TLD
-			   (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
+			         (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
                (eq, ":done", 0),
                (party_slot_eq, ":cur_center", slot_center_is_besieged_by, -1),
                (store_faction_of_party, ":center_faction", ":cur_center"),
@@ -986,7 +994,7 @@ simple_triggers = [
      (eq, "$g_player_is_captive", 0),
      (try_for_range, ":cur_center", centers_begin, centers_end),
        (party_is_active, ":cur_center"), #TLD
-	   (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
+	     (party_slot_eq, ":cur_center", slot_center_destroyed, 0), #TLD
        (store_faction_of_party, ":cur_faction", ":cur_center"),
        (store_relation, ":reln", ":cur_faction", "fac_player_supporters_faction"),
        (lt, ":reln", 0),
@@ -2163,13 +2171,14 @@ simple_triggers = [
             # Centers: destroy what you can, give the rest to the best enemy
             
             #remove any volunteer parties
-            (party_get_slot, ":volunteers", ":cur_party", slot_town_volunteer_pt),
-            (try_begin),
-              (gt, ":volunteers", 0),
-              (party_is_active, ":volunteers"),
-              (party_detach,    ":volunteers"),
-              (call_script, "script_safe_remove_party",    ":volunteers"),
-            (try_end),
+            (call_script,"script_delete_volunteers_party",":cur_party"),
+            #(party_get_slot, ":volunteers", ":cur_party", slot_town_volunteer_pt),
+            #(try_begin),
+            #  (gt, ":volunteers", 0),
+            #  (party_is_active, ":volunteers"),
+            #  (party_detach,    ":volunteers"),
+            #  (call_script, "script_safe_remove_party",    ":volunteers"),
+            #(try_end),
             
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
               (party_slot_ge, ":cur_party", slot_center_destroy_on_capture, 1),
@@ -2690,7 +2699,7 @@ simple_triggers = [
         (assign, ":nearest_town", -1),
         (try_for_range, ":center_no", centers_begin, centers_end),
           (party_is_active, ":center_no"), #TLD
-	      (party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
+	        (party_slot_eq, ":center_no", slot_center_destroyed, 0), # TLD
           (neq, ":center_no", ":cur_center"),
           (store_faction_of_party, ":center_faction", ":center_no"),
           (faction_slot_eq, ":center_faction", slot_faction_side, ":mission_troop_side"), #e.g. Nazgul travels to the Eye town closest to player

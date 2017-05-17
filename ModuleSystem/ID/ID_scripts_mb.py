@@ -518,5 +518,11 @@ script_remove_party = 516
 script_spawn_around_party = 517
 script_set_spawn_radius = 518
 script_healing_routine_full = 519
+script_cf_party_exists = 520
+script_cf_neg_1p = 521
+script_cf_party_is_disabled = 522
+script_delete_volunteers_party = 523
+script_create_volunteers_party = 524
+script_migrate_volunteer_system = 525
 
 
