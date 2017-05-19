@@ -1564,18 +1564,18 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
       (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
 	 
     ## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
-    #(try_begin),
-  	#	(gt, ":reserve_party", 0),
-  	#	(neg|party_is_active, ":reserve_party"), # depleted
-   	#	(assign, ":reserve_party", 0),
-	  #(try_end),
+    (try_begin),
+  		(gt, ":reserve_party", 0),
+  		(neg|party_is_active, ":reserve_party"), # depleted
+   		(assign, ":reserve_party", 0),
+	  (try_end),
       
       (try_begin),
 		(eq, ":reserve_party", 0), #first time or depleted
         (spawn_around_party, "$g_encountered_party", "pt_volunteers"),
         (assign, ":reserve_party", reg0),
-        #(party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
-        #(party_remove_members, ":reserve_party", "trp_looter", 1),
+        (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
+        (party_remove_members, ":reserve_party", "trp_looter", 1),
         (troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party"),
         (party_attach_to_party, ":reserve_party", "$g_encountered_party"),
         (party_set_name, ":reserve_party", "@{playername}'s Reserves"),

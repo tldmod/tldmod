@@ -3463,7 +3463,7 @@ spr_evil_element 0 0 evil_element 0 0
 spr_evil_tunnel_a 0 0 evil_tunnel_a bo_evil_tunnel_a 0
 
 
-spr_minas_tirith_copy 0 0 minas_tirith_copy 0 0
+spr_minas_tirith_copy 0 0 minas_tirith_new 0 0
 
 
 spr_troop_guard 16384 0 cabbage_b 0 1

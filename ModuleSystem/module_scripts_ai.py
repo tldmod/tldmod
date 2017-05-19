@@ -2187,10 +2187,10 @@ ai_scripts = [
 # Input: none
 # Output: none
 #called from triggers
-("decide_kingdom_party_ais",
-   [(try_begin),
+("decide_kingdom_party_ais", [
+   (try_begin),
       (ge,"$tld_war_began",1),  # party AI can change only if War started, GA
-	  (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
          (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
          (neq, ":faction_no", "fac_player_supporters_faction"),
          (faction_get_slot, ":faction_ai_state", ":faction_no", slot_faction_ai_state),
@@ -2202,137 +2202,169 @@ ai_scripts = [
          (troop_get_slot, ":faction_marshall_party", ":faction_marshall", slot_troop_leaded_party),
          (gt, ":faction_marshall_party", 0),
          (try_begin),
-           (eq, ":faction_ai_state", sfai_gathering_army),
-           (try_begin), #TLD: if there is an advance camp, travel there to gather your army
-             (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
-             (party_is_active, ":adv_camp"),
-             (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, ":adv_camp"),
-          # (else_try),
-          #   (eq, ":faction_no", "fac_gondor"),
-          #   (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, "p_town_minas_tirith"), ##Kham: Improving Gondor Situation Patch - Have Marshall gather in MT - nope, nvm.
-           (else_try),
-             (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_undefined, -1),
-           (try_end),
-           (party_set_ai_initiative, ":faction_marshall_party", 100),
+            (eq, ":faction_ai_state", sfai_gathering_army),
+            (try_begin), #TLD: if there is an advance camp, travel there to gather your army
+               (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
+               (party_is_active, ":adv_camp"),
+               (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, ":adv_camp"),
+            #(else_try),
+            #   (eq, ":faction_no", "fac_gondor"),
+            #   (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_holding_center, "p_town_minas_tirith"), ##Kham: Improving Gondor Situation Patch - Have Marshall gather in MT - nope, nvm.
+            (else_try),
+               (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_undefined, -1),
+            (try_end),
+            (party_set_ai_initiative, ":faction_marshall_party", 100),
          (else_try),
-           (eq, ":faction_ai_state", sfai_attacking_center),
-           (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_besieging_center, ":faction_ai_object"),
-           (party_set_ai_initiative, ":faction_marshall_party", 0), #MV: was 50, but too much chasing breaks sieges
-#         (else_try),
-#           (eq, ":faction_ai_state", sfai_raiding_village),
-#           (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_raiding_around_center, ":faction_ai_object"),
-#           (party_set_ai_initiative, ":faction_marshall_party", 50),
+            (eq, ":faction_ai_state", sfai_attacking_center),
+            (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_besieging_center, ":faction_ai_object"),
+            (party_set_ai_initiative, ":faction_marshall_party", 0), #MV: was 50, but too much chasing breaks sieges
+            #(else_try),
+            #   (eq, ":faction_ai_state", sfai_raiding_village),
+            #   (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_raiding_around_center, ":faction_ai_object"),
+            #   (party_set_ai_initiative, ":faction_marshall_party", 50),
          (else_try),
-           (eq, ":faction_ai_state", sfai_attacking_enemies_around_center),
-           (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_patrolling_around_center, ":faction_ai_object"),
-           (party_set_ai_initiative, ":faction_marshall_party", 50),
+            (eq, ":faction_ai_state", sfai_attacking_enemies_around_center),
+            (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_patrolling_around_center, ":faction_ai_object"),
+            (party_set_ai_initiative, ":faction_marshall_party", 50),
          (else_try),
-           (eq, ":faction_ai_state", sfai_attacking_enemy_army),
-           (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_engaging_army, ":faction_ai_object"),
-           (party_set_ai_initiative, ":faction_marshall_party", 50),
+            (eq, ":faction_ai_state", sfai_attacking_enemy_army),
+            (call_script, "script_party_set_ai_state", ":faction_marshall_party", spai_engaging_army, ":faction_ai_object"),
+            (party_set_ai_initiative, ":faction_marshall_party", 50),
          (try_end),
          (party_set_slot, ":faction_marshall_party", slot_party_commander_party, -1),
       (try_end),
 
-	# TLD decide if a lone lord spawns a host
-	 # calculate number of alive hosts in each faction
-	   (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
-	      (faction_set_slot, ":faction_no", slot_faction_hosts, 0),
-	   (try_end),
-	   (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
-          (store_troop_faction, ":troop_faction_no", ":troop_no"),
-		  (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
-		  (gt,":party",0),
-          (party_is_active, ":party"),
-		  (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
-		      (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
-			  (val_add,":hosts",1),
-			  (faction_set_slot, ":troop_faction_no", slot_faction_hosts, ":hosts"),
-	   (try_end),
-	# host spawning conditions
-       (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end), # cycle through heros w/o hosts and try to spawn a host
-		  (store_troop_faction, ":troop_faction_no", ":hero"),
-          (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
-          
-	      (troop_get_slot, ":party", ":hero", slot_troop_leaded_party),
-		  (gt,":party",0),
-          (party_is_active, ":party"),
-	      (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone), # if lonely hero
-
-		  (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
-		  (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
-      (try_begin), ## Kham - Lets give Gondor more Hosts - Let's hide it in a menu for testing
-        (eq, "$gondor_ai_testing", 1),
-        (val_div, ":strength", 700), 
-        (display_message, "@Gondor AI Tweaks - Give more hosts"),
-      (else_try),
-		    (val_div, ":strength", 1000), #MV: 3.15 tweak, was 1300 - to get more hosts
-		  (try_end),
-      (val_add, ":strength", 1),
-		  (lt, ":hosts", ":strength"), # faction passes strength check 
-
-		  (store_random_in_range,":rnd",0,100),
-          (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
-          (lt, ":rnd", 10),  # faction passes random check 
-		  (try_begin),
-        (eq, "$gondor_ai_testing", 1),
-        (eq, ":faction_no", "fac_gondor"),
-        (lt,":rnd",20),              # Kham - lets give Gondor more hosts frequently
-        (display_message, "@Gondor AI Tweaks - More frequent hosts"),
-      (else_try),
-        (lt,":rnd",10),              # faction passes random check 
+      # TLD decide if a lone lord spawns a host
+      # calculate number of alive hosts in each faction
+      (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
+         (faction_set_slot, ":faction_no", slot_faction_hosts, 0),
       (try_end),
-			(val_add, ":hosts",1),
-            (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
-			
-            (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
-	        (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
-            (try_begin), #MV: double that for kings
-              (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
-              (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2),
-            (try_end),
-            (str_store_faction_name, s6, ":troop_faction_no"), # TLD host naming after faction
-			(str_store_troop_name, s5, ":hero"),
-			(str_store_troop_name_link, s7, ":hero"),
-            #(party_set_name, ":party", "@Host of {s5}"),
-            (party_set_name, ":party", "str_s5_s_host"),
-		#	(display_message, "@{s7} has assumed the command of a {s6} host!", 0x87D7FF),
-	     # hire troops to host, marshals (kings) get more
-            (assign, ":num_tries", 30),
-            (try_begin),
-               (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
-               (assign, ":num_tries", 50),
-            (try_end),
-            (try_for_range, ":unused", 0, ":num_tries"),
-               (call_script, "script_hire_men_to_kingdom_hero_party", ":hero"),
-            (try_end),
+      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end), 
+         (store_troop_faction, ":troop_faction_no", ":troop_no"),
+         (troop_get_slot, ":party", ":troop_no", slot_troop_leaded_party),
+         (gt,":party",0),
+         (party_is_active, ":party"),
+         (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
+         (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
+         (val_add,":hosts",1),
+         (faction_set_slot, ":troop_faction_no", slot_faction_hosts, ":hosts"),
+      (try_end),
+      # host spawning conditions
+      (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end), # cycle through heros w/o hosts and try to spawn a host
+         (store_troop_faction, ":troop_faction_no", ":hero"),
+         (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
+          
+         (troop_get_slot, ":party", ":hero", slot_troop_leaded_party),
+         (gt,":party",0),
+         (party_is_active, ":party"),
+         (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_alone), # if lonely hero
+
+         (faction_get_slot, ":hosts", ":troop_faction_no", slot_faction_hosts),
+         (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
+         (try_begin), ## Kham - Lets give Gondor more Hosts - Let's hide it in a menu for testing
+            (eq, "$gondor_ai_testing", 1),
+            (val_div, ":strength", 700), 
+            (display_message, "@Gondor AI Tweaks - Give more hosts"),
+         (else_try),
+            (val_div, ":strength", 1000), #MV: 3.15 tweak, was 1300 - to get more hosts
+         (try_end),
+         (val_add, ":strength", 1),
+
+         (faction_get_slot,":faction_marshall",":troop_faction_no",slot_faction_marshall),
+         
+         # Rafa: If the faction marshall has no host, reserve one for them only if their faction strength if above 1000,
+         #       to reflect the faction weakening, (and to avoid them charging their faction to oblivion)
+         (try_begin),
+            (gt,":strength",1),            
+            (try_begin), # case 1: Marshall is not spawned
+               (neg|troop_slot_ge, ":faction_marshall", slot_troop_leaded_party, 1),
+
+               (val_sub,":strength", 1),
+            (else_try), # case 2: Marshall has no host
+               (gt, ":faction_marshall", 0),
+               (neq, ":faction_marshall", "trp_player"),
+               (troop_get_slot, ":faction_marshall_party", ":faction_marshall", slot_troop_leaded_party),
+               (gt, ":faction_marshall_party", 0),
+               (party_is_active,":faction_marshall_party"),
+               (party_slot_eq, ":faction_marshall_party", slot_party_type, spt_kingdom_hero_alone),
+
+               (val_sub,":strength", 1),
+            (end_try),
+
+            (eq,":hero",":faction_marshall"), # marshall/king will always get a host if their faction strength is over 1000
+            (assign,":check_pass",1),
+         (else_try),
+            (lt, ":hosts", ":strength"), # faction passes strength check 
+            (assign,":check_pass",1),
+         (else_try),
+            (assign,":check_pass",0),
+         (end_try),
+
+         (eq,":check_pass",1),
+
+         (store_random_in_range,":rnd",0,100),
+         (try_begin),
+            (eq, "$gondor_ai_testing", 1),
+            (eq, ":faction_no", "fac_gondor"),
+            (assign,":chance",20),              # Kham - lets give Gondor more hosts frequently
+            (display_message, "@Gondor AI Tweaks - More frequent hosts"),
+         (else_try),
+            (assign,":chance",10),              # faction passes random check 
+         (try_end),
+         (this_or_next|faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"), # marshall/king bypasses random check
+         (lt, ":rnd", ":chance"),  # faction passes random check 
+
+         (val_add, ":hosts",1),
+         (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
+         
+         (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
+         (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
+         (try_begin), #MV: double that for kings
+            (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
+            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2),
+         (try_end),
+         (str_store_faction_name, s6, ":troop_faction_no"), # TLD host naming after faction
+         (str_store_troop_name, s5, ":hero"),
+         (str_store_troop_name_link, s7, ":hero"),
+         #(party_set_name, ":party", "@Host of {s5}"),
+         (party_set_name, ":party", "str_s5_s_host"),
+         #(display_message, "@{s7} has assumed the command of a {s6} host!", 0x87D7FF),
+         #hire troops to host, marshals (kings) get more
+         (assign, ":num_tries", 30),
+         (try_begin),
+            (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
+            (assign, ":num_tries", 50),
+         (try_end),
+         (try_for_range, ":unused", 0, ":num_tries"),
+            (call_script, "script_hire_men_to_kingdom_hero_party", ":hero"),
+         (try_end),
          # upgrade troops in party based on hero renown  
-            (store_random_in_range, ":xp_rounds", 2, 6),
-            (troop_get_slot, ":renown", ":hero", slot_troop_renown),
-            (store_div, ":renown_xp_rounds", ":renown", 100),
-            (val_add, ":xp_rounds", ":renown_xp_rounds"),
-            (try_for_range, ":unused", 0, ":xp_rounds"),
-               (call_script, "script_upgrade_hero_party", ":party", 4000),
-            (try_end),
-       (try_end),
-	   
-       (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
+         (store_random_in_range, ":xp_rounds", 2, 6),
+         (troop_get_slot, ":renown", ":hero", slot_troop_renown),
+         (store_div, ":renown_xp_rounds", ":renown", 100),
+         (val_add, ":xp_rounds", ":renown_xp_rounds"),
+         (try_for_range, ":unused", 0, ":xp_rounds"),
+            (call_script, "script_upgrade_hero_party", ":party", 4000),
+         (try_end),
+      (try_end),
+      
+      (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
          (store_troop_faction, ":troop_faction", ":hero"),
          (faction_slot_eq, ":troop_faction", slot_faction_state, sfs_active),
          (try_begin),
-           (neg|faction_slot_eq, ":troop_faction", slot_faction_marshall, ":hero"),
-           (troop_get_slot, ":troop_party", ":hero", slot_troop_leaded_party),
-           (gt, ":troop_party", 0),
-           (party_is_active, ":troop_party"),
-           (party_set_ai_initiative, ":troop_party", 100), #MV: review this number
+            (neg|faction_slot_eq, ":troop_faction", slot_faction_marshall, ":hero"),
+            (troop_get_slot, ":troop_party", ":hero", slot_troop_leaded_party),
+            (gt, ":troop_party", 0),
+            (party_is_active, ":troop_party"),
+            (party_set_ai_initiative, ":troop_party", 100), #MV: review this number
          (try_end),
          (call_script, "script_calculate_troop_ai", ":hero"),
-       (try_end),
+      (try_end),
 
-       (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
+      (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end),
          (call_script, "script_calculate_troop_ai_under_command", ":hero"),
-       (try_end),
-	(try_end),
+      (try_end),
+   (try_end),
 ]),
  
 # script_update_active_theaters

@@ -10320,7 +10320,7 @@ scripts = [
 			(try_end),
 	(else_try), #Pelennor fields
 		(eq,":region",region_pelennor), #InVain: Keep this AFTER Minas_Tirith_outside and Osgiliath_Outskirts landmark scenes!
-		(store_random_in_range, ":scene_to_use", "scn_pelennor_1", "scn_hornburg_near"),
+		(store_random_in_range, ":scene_to_use", "scn_pelennor_1", "scn_village_gondor_battlefield_1"),
 #InVain new landmark scenes end
 	(else_try),
 		(eq,":landmark","p_town_isengard"),

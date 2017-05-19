@@ -1832,7 +1832,7 @@ scene_props = [
 ("mor_tower_a",0,"mor_tower_a","bo_mor_tower_a", []),
 ("evil_element",0,"evil_element","0", []),
 ("evil_tunnel_a",0,"evil_tunnel_a","bo_evil_tunnel_a", []),
-("minas_tirith_copy",0,"minas_tirith_copy","0", []),
+("minas_tirith_copy",0,"minas_tirith_new","0", []),
 
 ##### CENTER GUARDS #####
 ("troop_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
