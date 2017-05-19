@@ -79,30 +79,30 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop bu
     rm -rf .git
     
     # add a watermark to make it clear that this is not the official build
-    convert main.bmp -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' -type truecolor main.bmp
+   #convert main.bmp -gravity center -pointsize 30 -fill red -stroke darkred -annotate -10 '(TEST THINGIE)' -type truecolor main.bmp
 
 _fold_final_
 
 
 _fold_start_ '[Final Workshop tree view]'
     ls -lash
-    #tree .
+   #tree .
 
 _fold_final_
 
 
 _fold_start_ '[Deploying Steam Workshop build]'
 
-    CONT_FLDR='The Last Days of the Third Age (TEST THINGIE)'
+    CONT_FLDR='The Last Days of the Third Age' # (TEST THINGIE)'
 
     cd .. && mv tldmod "$CONT_FLDR"
 
     echo '"workshopitem"                           '   > workshop_entry.vdf
     echo '{                                        '  >> workshop_entry.vdf
     echo '   "appid"                       "48700" '  >> workshop_entry.vdf
-    echo '   "publishedfileid"         "742666341" '  >> workshop_entry.vdf
+    echo '   "publishedfileid"         "299974223" '  >> workshop_entry.vdf
     echo "  \"contentfolder\"       \"$CONT_FLDR\" "  >> workshop_entry.vdf
-#   echo "  \"changenote\"      \"$WORKSHOP_DESC\" "  >> workshop_entry.vdf
+   #echo "  \"changenote\"      \"$WORKSHOP_DESC\" "  >> workshop_entry.vdf
     echo "  \"changenote\" \"r$SVNREV - r$PREREV\" "  >> workshop_entry.vdf
     echo '}                                        '  >> workshop_entry.vdf
 
