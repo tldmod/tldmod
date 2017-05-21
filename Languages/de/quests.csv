@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} bat dich, eine Botschaft an {s13} zu überbringen.
 qst_deliver_message_to_enemy_lord|Botschaft an {s13} überbringen
 qst_deliver_message_to_enemy_lord_text|{s9} bat dich, eine Botschaft an {s13} von {s15} zu überbringen. {s13} befand sich in {s4}, als dir dieser Auftrag erteilt wurde.
 qst_raise_troops|Bilde {reg1} {s14} aus
-qst_raise_troops_text|{s9} bat dich, {reg1} {s14} auszubilden und ihm zu überlassen.
+qst_raise_troops_text|{s9} bat dich, {reg1} {s14} auszubilden und {ihm/ihr} zu überlassen.
 qst_escort_messenger|Eskortiere den Boten nach {s14}
 qst_escort_messenger_text|Nichts
 qst_hunt_down_fugitive|Jage {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Finde die verlorenen Speere des Königs Bladorthin
 qst_find_lost_spears_text|{s9} bat dich, die verlorenen Speere zu finden, welche die Zwerge einst für König Bladorthin  gefertigt haben. Du wirst die Erlaubnis der Zwerge brauchen, um in den Tiefen des Einsamen Berges nach den Speeren zu suchen.
 qst_defend_village|Verteidige das Dorf
 qst_raid_village|Plündere das Dorf
+qst_destroy_scout_camp|Zerstöre das Späherlager.
 qst_rescue_prisoners|Befreie {reg1} Gefangene
 qst_rescue_prisoners_text|{s9} bat dich, {reg1} Gefangene zu befreien.
 qst_scout_enemy_town|Spähe die Stadt des Feindes aus
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Nichts
 qst_move_cattle_herd|Bring {s12} nach {s13}
 qst_move_cattle_herd_text|Der Älteste von {s10} bat dich, {s12} nach {s13} zu bringen.
 qst_escort_merchant_caravan|Beschütze die Nachschublieferung nach {s8}
-qst_escort_merchant_caravan_text|Beschütze die Nachschublieferung nach {s8}.
+qst_escort_merchant_caravan_text|Beschütze die Nachschublieferung nach {s8} und sprich mit Ihnen, wenn du in der Nähe des Ziels bist.
 qst_deliver_wine|Liefere {reg5} Einheiten {s6} nach {s4}
 qst_deliver_wine_text|Der {s9} von {s3} bat dich, innerhalb von 7 Tagen {reg5} Einheiten {s6} nach {s4} zu bringen.
 qst_troublesome_bandits|Jage die lästigen Orks

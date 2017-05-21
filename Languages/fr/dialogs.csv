@@ -199,7 +199,7 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|Excellent, {playername}. Vous êtes un serviteur utile et loyal. Ce troll sera plus utile pour vos actions. Il vient des donjons !
 dlga_lord_start:close_window.1|Il y a trop longtemps déjà, je t'ai ordonné de prendre un troll vivant et de me l'apporter. Pourtant je savais qu'il était inutile d’espérer que quelqu'un comme toi, {playername}, serait capable de relever un tel défi. Mon serviteur n'était pas suffisamment habile ou chanceux.
 dlga_lord_start:lord_generic_mission_completed.1|Les nouvelles de vos prouesses face aux Trolls sauvages me sont parvenues. {s12} a un souci en moins, merci à vous {playername}.
-; dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
+dlga_lord_start:lord_generic_mission_completed.2|Nos éclaireurs près de {s12} nous ont rapporté votre succès. Cela leur enseignera de ne pas nous espionner.^^La destruction de ce camp va surement pénaliser leur avancée.
 ; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
 dlga_destroy_scout_camp_failed:close_window|Je ferais mieux la prochaine fois.
 dlga_lord_start:lord_generic_mission_completed.3|Les éclaireurs qui se trouvaient dans la région de {s12} nous ont rapporté votre vaillante défense du village. Ces pillards deviennent plus agressifs de jour en jour... ^^La guerre semble inéluctable. Toutefois vos actent montrent à tous que nous sommes prêts à nous défendre, merci {playername}.
@@ -295,11 +295,11 @@ dlga_ring_hunters_party_attack_2:close_window|Hey tous ! Faites en sorte d'avoir
 dlga_start:ring_hunter_lair_defeat|Cet anneau appartient à l'œil ! Vous ne l'aurez pas !
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Cela m'appartient désormais.
 dlga_ring_hunter_lair_defeat2:close_window|Cette défaite ne compte pour rien... notre armée se bat toujours ! Vous arrivez trop tard pour sauver quiconque !
-; dlga_start:beorn_message|General, we received a message from {s1} that a large bandit party was headed our way! We had no time to gather enough forces, and when we heard the sound of battle, we prepared for the worse!
-; dlga_beorn_message:beorn_message2|That was no ordinary bandit party. They were a collection of the Dark Lord's best...however, their leaders were not here...They have a lair near Mirkwood Forest and I must make haste.
-; dlga_beorn_message2:beorn_message_end|Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory
-; dlga_beorn_message_end:beorn_message_close|Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.
-; dlga_beorn_message_close:close_window|Yes, General. We will remain vigilant. We will continue our efforts to recruit more men from surrounding villages. Your victory today has inspired us all.
+dlga_start:beorn_message|Mon Général ! Un messager de {s1} nous a rapporté qu'une importante troupe de bandits se dirigeait vers nous ! Nous n'avions pas le temps de rassembler suffisamment de troupes et quand nous avons entendu le son du combat, nous nous sommes préparés au pire !
+dlga_beorn_message:beorn_message2|Ce n'était pas une simple bande de bandits. De fait, c'étaient un extrait de la collection des meilleurs guerriers du seigneur noir... Toutefois leurs chefs étaient absents. ils ont établit leur repère près de la forêt de Mirkwood et je dois m'y hâter. 
+dlga_beorn_message2:beorn_message_end|Le messager a mentionné le repère et nous y avons envoyé des éclaireurs, ils l'ont brulé et sont repartis pour le Mordor... si vous y étiez allé en premier lieux, vous n'auriez peut-être pas pu nous aider. Nous vous sommes vraiment reconnaissants pour votre victoire.
+dlga_beorn_message_end:beorn_message_close|Alors je dois rapporter à {s1} ce qui est arrivé ici. Retournez dans votre village et préparez de nouveaux éclaireurs. Il pourrait y avoir quelques trainards qui sont restés dans les environs.
+dlga_beorn_message_close:close_window|Bien mon Général. Nous resterons vigilants. Nous continuerons nos efforts de recrutement. Votre victoire nous a tous inspirés.
 dlga_lord_give_troops:lord_give_troops_check|Des renforts? Je ne refuse pas de mains supplémentaires pour manier mes épées et tenir mes boucliers. Malheureusement les vies sont une ressource qui se consomme en trop grande quantité dans cette guerre et bien souvent j'ai plus d'armures que de soldat pour les porter.
 dlga_lord_give_troops:lord_pretalk|J'apprécie votre sympathie néanmoins vous n’avez aucun soldats {s14} qui puisse me rejoindre.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Laissez-moi vérifier l'état des troupes...
@@ -369,14 +369,14 @@ dlga_lord_tell_objective:lord_pretalk.9| Nous combattons contre {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.10| Nous accompagnons {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.11| Nous discutons de notre prochain objectif.
 dlga_lord_tell_objective:lord_pretalk.12| Je ne sais pas : {reg1} {s1}
-; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.
-; dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Are you able to send men?
-; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
+dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, nous avons reçu des rapports selon lesquels des pillards font route pour un village vers {s12}. 
+dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Êtes-vous en capacité d'y envoyer des hommes ?
+dlga_lord_mission_defend_village_b:lord_mission_defend_question|Certes, mais il nous faudra du temps pour nous mobiliser, nous craignons qu'il ne soit trop tard quand nous serons prêts.^^Vous et vos hommes semblez aptes à vous y rendre dans un moindre délai. Pourriez-vous défendre ce village ?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Mes hommes et moi sommes prêt. Nous devrions y'aller.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|J'ai peur de ne pas pouvoir accomplir cette tâche.
 dlga_lord_mission_defend_accept:close_window|Merci,  {playername}. Maintenant pars, vite!
-; dlga_lord_mission_defend_reject:close_window|I see. Then I will send what troops I can. Let us hope we are not too late.
-; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
+dlga_lord_mission_defend_reject:close_window|Je vois. Dans ce cas, je vais envoyer ce dont je dispose en urgence. Espérons qu'il ne sera pas trop tard.
+dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, il y a un village pas loin qui est mûr pour la cueillette. Ils sont protégés par {s3}, mais ils sont peu nombreux et peuvent facilement être défaits. ^^Vous êtes le premier commandant à recevoir cette information. Que comptez-vous faire ?
 ; dlga_lord_mission_raid_village_a:lord_raid_village_accept|I will raid that village, kill every man we see, and enslave all women and children!
 ; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I do not have the time to raid puny villages!
 ; dlga_lord_raid_village_accept:close_window|Then what are you doing standing around here?

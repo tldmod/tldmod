@@ -81,7 +81,7 @@ qstr_Skills|Fähigkeiten
 qstr_Ironflesh^Power_Stri|Eisenhaut^Schlagkraft^Wurfkraft^Bogenzugkraft^Schild^Athletik^Reiten^Berittenes Bogenschießen
 qstr_Proficiencies|Waffenfertigkeiten
 qstr_1H_Weapons^2H_Weapon|Einhandwaffen^Zweihandwaffen^Stangenwaffen^Bogenschießen^Armbust^Werfen
-qstr_Equipments|Ausrüstung
+qstr_Equipment|Ausrüstung
 qstr_You_gained_{reg0}_Re|Du erhältst {reg0} Ressourcenpunkte von {s0}.
 qstr_You_lost_{reg0}_Reso|Du verlierst {reg0} Ressourcenpunkte von {s0}.
 qstr_{s24}:|{s24}:
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|nahe der Großen Oststraße, der verlassenen alten Str
 qstr_near_what_is_left_of|nahe den Überresten der Alten Waldstraße, dem uralten Zwergenpfad, der den dichten Wald durchquerte
 qstr_close_to_the_Hand_sh|nahe dem Zeichen der Weißen Hand, die auf den Turm von Orthanc zeigt
 qstr_in_sight_of_the_maje|in Sichtweite der ehrfurchtgebietenden Mauern von Minas Tirith, der Weißen Stadt
+qstr_in_the_outskirts_of_|in den Außenbereichen von Osgiliath, der ehemaligen Hauptstadt von Gondor
 qstr_in_sight_of_the_entr|in Sichtweite des Tors zum Erebor, der Zwergenfestung
 qstr_in_sight_of_the_dark|in Sichtweite des düstern Turms von Orthanc
 qstr_near_the_Old_Ford_wh|nahe der Alten Furt, wo die Alte Waldstraße den Anduin durchquert.
@@ -513,9 +514,9 @@ qstr_Default_Camera|Standartkamera
 qstr_Fixed_Camera___Right|Feste Kamera - Rechte Schulter
 qstr_Fixed_Camera___Left_|Feste Kamera - Linke Schulter
 qstr_Cannot_leave_now.|Du kannst jetzt nicht gehen.
-qstr_You_have_found_the_l|Örtliche Schmiede gefunden...
-qstr_You_have_found_the_lo|Örtliche Amtsgewalt gefunden...
-qstr_You_have_found_the_loc|Örtliches Warenlager gefunden...
+qstr_You_have_found_the_l|Örtliche Schmiede gefunden... (+50 XP)
+qstr_You_have_found_the_lo|Örtliche Amtsgewalt gefunden... (+50 XP)
+qstr_You_have_found_the_loc|Örtliches Warenlager gefunden... (+50 XP)
 qstr__cancelled_the_{reg1|({reg10} Erfahrungspunkte für das Töten von Gefangenen wieder gestrichen)
 qstr_Forming_ranks.|Bilden Reihen.
 qstr_You_fall_off_of_your|Du fällst von deinem Reittier!
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|Nazgulangriff auf {s11}!
 qstr_{s11}_is_{s10}_in_th|{s11} wurde durch den Angriff {s10}!
 qstr_{s1}_s_morale:_{reg1|{s1}s Moral: {reg1}
 qstr_You_rally_your_troop|Du gibst einen Sammelbefehl!
-qstr_{s5}_rallies_his_tro|{s5} gibt einen Sammelbefehl!
+qstr_{s5}_rallies_{reg65?|{s5} sammelt {reg65?her:his} Truppen um sich!
 qstr_You_have_killed_{reg|{reg1} Feinde getötet!
 qstr_Your_bravery_inspire|Deine Tapferkeit ermutigt die Truppen.
 qstr_Everyone|Alle
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1} wurde in der Schlacht getötet. Auftrag abgebroch
 qstr_{s1}_has_been_defeat|{s1} wurde besiegt. Auftrag abgebrochen.
 qstr_You_must_follow_{s1}|Du musst {s1} folgen!
 qstr_You_must_follow_{s1}!|Du musst {s1} folgen! Das ist deine letzte Warnung!
-qstr_Parties_defeated:_{r|Geschlagene Gruppen: {reg1}
+qstr_{s1}_parties_defeate|{s1} - Trupps vernichtet: {reg1} von {reg2}
 qstr_{s1}_is_scouted.|{s1} ist ausgespäht.
 qstr_The_Age_of_Men_has_f|Das Zeitalter der Menschen ist endlich vorüber. Nun sammeln die Zwei Türme ihre verbliebenen Truppen und Verbündeten, um zu entscheiden, wer der alleinige Herrscher über Mittelerde wird!
 qstr_The_War_of_the_Two_T|Der Krieg der Zwei Türme hat begonnen!

@@ -263,7 +263,7 @@ dlga_find_lost_spears_permission:lord_pretalk|Eu já te dei permissão, {playern
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Tudo bem, {playername}  , você pode entrar nas montanhas.
 dlga_find_lost_spears_permission:lord_pretalk.1|Me desculpe, mas eu não sei, ou você confia bastante bem, {playername}.
 dlga_find_lost_spears_permission_yes:lord_pretalk|Agradeço-lhe, meu Senhor .
-; dlga_lord_talk:tell_dorwinion_sack|My lord, I found a sack with a fading emblem of grapes and some shards of wood and metal inside that could have belong to a spear.
+dlga_lord_talk:tell_dorwinion_sack|Meu senhor, encontrei um saco com um emblema de uvas desbotado e alguns fragmentos de madeira e metal no interior que poderiam pertencer a uma lança.
 dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Muito interessante. Este saco antigo tem uma mancha dos melhores vinhos que só vem de Dorwinion.
 dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|Eu também encontrei este capacete Rhun no saco. Pode isto dizer mais sobre o que se passou às lanças?
 ; dlga_tell_dorwinion_sack_3:lord_pretalk|Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for.
@@ -377,7 +377,7 @@ dlga_lord_mission_defend_question:lord_mission_defend_reject|Estou com receio qu
 dlga_lord_mission_defend_accept:close_window|Obrigado, {playername}. Agora vá, rápido!
 dlga_lord_mission_defend_reject:close_window|Entendo. Então terei que enviar as tropas que puder. Esperemos que não seja tarde demais.
 ; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
-; dlga_lord_mission_raid_village_a:lord_raid_village_accept|I will raid that village, kill every man we see, and enslave all women and children!
+dlga_lord_mission_raid_village_a:lord_raid_village_accept|Vou invadir essa aldeia, matar todos os homens que vemos e escravizar todas as mulheres e crianças!
 dlga_lord_mission_raid_village_a:lord_raid_village_reject|Eu não tenho tempo para roubar aldeias insignificantes!
 dlga_lord_raid_village_accept:close_window|Então que vão fazer para ficar aqui?
 dlga_lord_raid_village_reject:close_window|As desculpas são para os cobardes. Vai-te embora, a tua cobardia insulta-me.
@@ -575,20 +575,20 @@ dlga_caravan_duel2:caravan_duel3|Os homens definitivamente respeitam você agora
 dlga_woodelf_help_7:close_window.1|(Levante sua mão e saia sem dizer uma palavra)
 ; dlga_start:beorn_help1|*He sizes you up with a frown.* ^^Shiny things like you is what draws goblins from the mountains into our forest. But you kill them good, for that we give thanks.
 ; dlga_beorn_help1:beorn_help2|Well met! Even though we seldom leave our woods, I would not refuse aid to any who oppose servants of the Enemy.
-; dlga_beorn_help1:beorn_help2a|(nod without saying a word)
+dlga_beorn_help1:beorn_help2a|(acene com a cabeça sem dizer uma palavra)
 ; dlga_beorn_help2:beorn_help3|It is wise not to go near those who serve him, but today it seems we can not get far enough. ^^All our people will know how many goblin heads you let roll today! And all will welcome you with mead and bread, were you to arrive at one of our steads.
 ; dlga_beorn_help2a:beorn_help3|*grunts appreciatively* ^^An elf of a few words, eh? You seem more like our kind, none of that dull elven singing or boring poetry. ^^A good story, from the days when the hills were young and forests without end, that’s what we like best! ^^And that’s what I’ll tell my people about you. All will know how many orc filth you rid them of today. Mead and warm hearts will welcome you in any of our wooden halls.
 ; dlga_beorn_help3:beorn_help4|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Beorn are not the ones you earned in Lothlorien, but the ones you will earn in Beorn. ^^See REPORTS for more information.
 ; dlga_beorn_help4:beorn_help4a|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?...
 ; dlga_beorn_help4a:beorn_help5|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?... Golden mead is sweet and warms the heart, but perhaps elven blades and keen arrows are needed more in these dark days..
-; dlga_beorn_help4:beorn_help5|(place a hand on your heart, nod and smile)
+dlga_beorn_help4:beorn_help5|(Coloque uma mão em seu coração, acene com a cabeça e sorria)
 ; dlga_beorn_help5:beorn_help6|We may be rough and hairy, grim and dark. But we help our friends, those who help us. ^^If our chiefs think you and your actions worthy, we will follow you to battle.
 ; dlga_beorn_help6:beorn_help7|(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.
-; dlga_beorn_help7:close_window|Le fael, friend! Farewell. 
+dlga_beorn_help7:close_window|Le fael, amigo! Até mais. 
 dlga_beorn_help7:close_window.1|(Levantar a tua mão e sair sem dizer uma palavra)
 ; dlga_start:kill_scout_1|Great eyes and ears you have there! If you did not warn the group, those scouts would have escaped and have told their ugly lords that we are coming.
 dlga_kill_scout_1:kill_scout_2|Cuide aonde você nos leva Orc... Não viajamos tão longe para sermos impedidos antes de a guerra começar!
-; dlga_kill_scout_2:kill_scout_3|And War we shall have! Here, take these. You can buy your men some food and drink when you get to Mordor.
+dlga_kill_scout_2:kill_scout_3|E Guerra teremos! Aqui, pegue isso. Você pode comprar alguma comida e bebida para os seus homens quando chegar em Mordor.
 ; dlga_kill_scout_3:kill_scout_4|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Mordor are not the ones you earned in your own faction, but the ones you will earn in Mordor. ^^See REPORTS for more information.
 ; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill?! We'd rather be drinking our own piss!
 ; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I've won my bet against Gothmog! haha!^^ I'll definitely tell him and the rest of the Mordor commands all about you! They'll definitely keep an eye on you.^^ If they like you, you'll get rewarded nicely. ^^MORE ORC BREW! AHAHA!
