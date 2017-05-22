@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} пита да занесеш съобщение д
 qst_deliver_message_to_enemy_lord|Съобщение до {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} Занеси това съобщение до {s13} и {s15}. {s13} беше в {s4} Когато взе тази задача.
 ; qst_raise_troops|Raise {reg1} {s14}
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to him.
+; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
 qst_escort_messenger|Пратете писмото до {s14}
 qst_escort_messenger_text|Никой.
 qst_hunt_down_fugitive|Убии {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Намери загубените копия на цар Bl
 qst_find_lost_spears_text|{s9} Те пита да намериш загубените копия, които джуджетата някога направили за цар Bladorthin. Трябва да вземеш разрешението от джуджетата, да търсиш копията в тъмнините на Самотна планина.
 ; qst_defend_village|Defend Village
 ; qst_raid_village|Raid Village
+; qst_destroy_scout_camp|Destroy Scout Camp
 qst_rescue_prisoners|Спаси {reg1} затворници.
 qst_rescue_prisoners_text|{s9} Иска да спасиш {reg1} затворници.
 qst_scout_enemy_town|Разузнай вражеския град.
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Нищо/Никой.
 qst_move_cattle_herd|Премести {s12} до {s13}
 qst_move_cattle_herd_text|Стареишината на {s10} каза да преместиш няколко {s12} до {s13}
 ; qst_escort_merchant_caravan|Escort Supply Train to {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8}.
+; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|Занеси {reg5} Предмета {s6} до {s4}
 qst_deliver_wine_text|{s9} на {s3} каза да занесеш {reg5} предмета {s6} до {s4} за 7 дни.
 qst_troublesome_bandits|Отиди на лов за проблемни гоблини.

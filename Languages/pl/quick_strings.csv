@@ -73,14 +73,14 @@ qstr_Thighs|Uda
 qstr_Legs|Nogi
 qstr_Rotate|Obrót
 qstr_Close|Zamknij
-; qstr_Click_the_center_but|Click the center button to toggle faction^Click the avatars to view details of them
+qstr_Click_the_center_but|Wciśnij środkowy przycisk żeby przełączać frakcje^Wciśnij awatar, żeby odkryć szczegóły
 qstr_Level:_{reg3}^Health|Poziom: {reg3}^Zdrowie: {reg4}
 qstr_Attributes|Atrybuty
 qstr_STR^AGI^INT^CHA|SIŁ^ZRĘ^INT^CHA
 qstr_Skills|Umiejętności
 ; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 qstr_Proficiencies|Biegłości
-; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
+qstr_1H_Weapons^2H_Weapon|Bronie Jednoręczne^Bronie Dwuręczne^Bronie Drzewcowe^Łucznictwo^Kusznictwo^Miotanie
 ; qstr_Equipment|Equipment
 qstr_You_gained_{reg0}_Re|Zyskujesz {reg0} Punktów Prestiżu ({s0}).
 qstr_You_lost_{reg0}_Reso|Tracisz {reg0} Punktów Prestiżu ({s0}).
@@ -505,18 +505,18 @@ qstr_Your_mount_stumbles!|Twój wierzchowiec okulał!
 qstr_Bitten_by_your_own_w|Ugryzion{y/a} przez własnego warga!
 qstr_You_weigh_too_much_f|Masz zbyt dużą masę na kuca!
 qstr_Your_mount_rears_ref|Twój wierzchowiec siada, nie słucha twoich poleceń!
-; qstr_Fixed_Custom_Camera|Fixed Custom Camera
+qstr_Fixed_Custom_Camera|Poprawiona Kamera Użytkownika
 qstr_Press_Left_/_Right_A|Naciśnij Lewą / Prawą strzałkę aby zmienić ramiona
-; qstr_Free_Mode_Custom_Cam|Free-Mode Custom Camera
+qstr_Free_Mode_Custom_Cam|Dowolna Kamera Użytkownika
 qstr_Use_+/__to_zoom_in/o|Użyj +/- aby przybliżyć/oddalić
-; qstr_Use_Up/Down_arrow_ke|Use Up/Down arrow keys to tilt up/down
+qstr_Use_Up/Down_arrow_ke|Użyj strzałek Góra/Dół aby przechylić w górę/dół
 qstr_Default_Camera|Kamera domyślna
 qstr_Fixed_Camera___Right|Poprawiona kamera - prawe ramię
 qstr_Fixed_Camera___Left_|Poprawiona kamera - lewę ramię
 qstr_Cannot_leave_now.|Nie można teraz opuścić lokacji.
-; qstr_You_have_found_the_l|You have found the local smithy... (+50 XP)
-; qstr_You_have_found_the_lo|You have found the local authority...(+50 XP)
-; qstr_You_have_found_the_loc|You have found the local warehouse...(+50 XP)
+qstr_You_have_found_the_l|Znalazłeś miejscową kuźnię... (+50 XP)
+qstr_You_have_found_the_lo|Znalazłeś miejscowy autorytet...(+50 XP)
+qstr_You_have_found_the_loc|Znalazłeś miejscowy magazyn...(+50 XP)
 qstr__cancelled_the_{reg1|(Anulowano {reg10} punktów doświadczenia za zabijanie więźniów)
 qstr_Forming_ranks.|Formować szeregi!
 qstr_You_fall_off_of_your|Spadłeś ze swojego wierzchowca!
@@ -1002,7 +1002,7 @@ qstr_Take_it!_You_can_use|Weź to! Możesz tego użyć do kupienia broni z Mordo
 ; qstr_Here_s_some_money_th|Here's some money that I won. Take it! You can use these to buy weapons from Mordor. We only have the best!
 ; qstr_Here_s_some_of_their_ow|Here's some of their own local money that I won..not worth anything in Mordor...Take it! You can use these to buy some weapons from the horse people of Rhun...or maybe buy a horse to eat! They might kill you! HAHAHA!
 ; qstr_That_is_not_a_smart_|That is not a smart thing to say in front of a Rhun Warrior...Next time I see you, I will kill you.
-; qstr_They_will_all_know_m|They will all know my name... They will know to fear it
+qstr_They_will_all_know_m|Oni wszyscy poznają me imię... I będą się go bać
 ; qstr_Suilad_mellon!_It_is|Suilad, mellon! It is not oft we meet folk from the Hidden Valley in our realm. We give thanks to the stars they lead you to our aid, and to you as well - le hannon!
 ; qstr_Suilad_mellon!_It_is_|Suilad, mellon! It is rare to have one of our woodland kin come to our aid - le hannon!
 ; qstr_Suilad_mellon!_That_|Suilad, mellon! That is - thank you, friend!^^ At first I wasn’t sure if a goblin sabre, or a raging bear would be our doom. Alas, the stars were kind to send you to our aid.

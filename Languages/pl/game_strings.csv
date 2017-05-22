@@ -1781,7 +1781,7 @@ str_trait_title_battle_scarred|Naznaczon{y/a}
 str_trait_desc_battle_scarred|Cierpisz od straszliwych ran, otrzymanych w trakcie wielu kampanii i mimo wszystko pozostając przy życiu. Twe blizny i ciężkie doświadczenia zwiększają odporność na kolejne rany. Podczas gdy inni twój wygląd uznają za szokujący, twoi zwolennicy utwierdzają się w bitewnym doświadczeniu. Otrzymują cotygodniową premię do morale.
 str_trait_title_fell_beast|Dzika Bestia
 str_trait_desc_fell_beast|Twa skóra poznaczona jest wieloma bliznami z niezliczonych bitew, a zło trawi cię od środka. Nawet na standardy orków, uruków oraz troli jesteś ocenian{y/a} jako dzika i niebezpieczna bestia. Którzy ci służą płaczą z zachwytu gdy stajesz w polu. Jesteś nieustraszonym wcieleniem wojny.
-; str_trait_title_butcher|Butcher
+str_trait_title_butcher|Rzeźnik
 ; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat.
 str_wound_head|mocne uderzenie w głowę
 str_wound_chest|popękane niektóre żebra
@@ -1796,17 +1796,17 @@ str_dwarf_gift0|Mocne Piwo i Kamienna Sól\n
 ; str_dwarf_gift1|Hardened Shovels and Axes
 str_dwarf_gift2|Harfy i Flety
 ; str_dwarf_gift3|Robes Embroidered With Golden Thread and Gems
-; str_dwarf_gift4|Marvellous Jewelry
+str_dwarf_gift4|Wspaniała biżuteria
 str_rohan_gift0|Miód i Wino jabłkowe 
 ; str_rohan_gift1|Embroided Tunics and Silver-Studded Belts
 ; str_rohan_gift2|Golden Torcs and Engraved Drinking Horns
 ; str_rohan_gift3|Fine Horse Barding
 str_rohan_gift4|Rohańskie konie
 ; str_mordor_gift0|Weak Peat Beer
-; str_mordor_gift1|Snaga Oil
+str_mordor_gift1|Olej Snagi
 ; str_mordor_gift2|Mordor Fly Larvae
 ; str_mordor_gift3|Orodruin Obsidian
-; str_mordor_gift4|Farmer Slaves
+str_mordor_gift4|Zniewoleni Farmerzy
 str_isengard_gift0|Wysuszone ludzkie mięso 
 str_isengard_gift1|Czarne żelazne łańcuchy 
 str_isengard_gift2|Narzędzia tortur 
