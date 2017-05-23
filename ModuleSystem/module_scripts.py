@@ -22000,7 +22000,86 @@ command_cursor_scripts = [
 	(try_end),
 ]),
 
+#script_destroy_scout_camp_consequences
+#Executes the faction strength changes of the destroy scout camp quest and shows the corresponding messages
+#arg1: 0: Mission failed           Not 0: Mission succeeded
+#Dirties s10,s14,s11,s13
+("destroy_scout_camp_consequences", [
+    (store_script_param_1, ":success"),
 
+    #Faction Strength Changes - Balance Document can be found on Google Drive: https://goo.gl/CErgSN
+    (str_clear, s10),
+    (str_clear, s14),
+    (str_clear, s11),
+    (str_clear, s13),
+    (try_begin),
+        (eq,":success",0),
+        (str_store_string, s10, "@have taken measure of your faction's current strength and has grown bolder."),
+        (str_store_string, s14, "@loses Faction Strength as supply lines were disrupted."),
+        (assign,":news_color",color_bad_news),
+    (else_try),
+        (str_store_string, s10, "@loses Faction Strength due to the destruction of their camp."),
+        (str_store_string, s14, "@gain Faction Strength as news of your victory spreads."),
+        (assign,":news_color",color_good_news),
+    (try_end),
+
+    (quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
+    (quest_get_slot, ":quest_giver_troop", "qst_destroy_scout_camp", slot_quest_giver_troop),
+    (store_troop_faction, ":quest_giver_faction", ":quest_giver_troop"),
+
+    (str_store_faction_name, s11, ":scout_camp_faction"),    
+    (str_store_faction_name, s13, ":quest_giver_faction"),
+    (display_message,"@{s11} {s10}",":news_color"),
+    (display_message,"@{s13} {s14}",":news_color"),
+
+    (faction_get_slot,":enemy_strength",":scout_camp_faction",slot_faction_strength_tmp), 
+    (faction_get_slot,":giver_strength",":quest_giver_faction",slot_faction_strength_tmp),
+
+    (store_character_level, ":level", "trp_player"),
+    (val_max,":level",11), # Keep ":level" between 11 and 23
+    (val_min,":level",23),
+    (quest_get_slot,":camp_template","qst_destroy_scout_camp",slot_quest_target_party_template),
+    (try_begin),
+        (eq,":camp_template","pt_scout_camp_small"), #Small Scout Camp
+        (try_begin),  # Failure: Enemy Win Min: 125; Max: 150 - Hero Loss Min: 275; Max: 300
+            (eq,":success",0), 
+            (val_mul, ":level",5),
+            (val_add, ":level", 70),
+            (val_add, ":enemy_strength", ":level"),
+
+            (val_add, ":level", 150),
+            (val_sub, ":giver_strength", ":level"),
+        (else_try),   #Success: Enemy Loss Min: 93; Max: 108 - Hero Win Min: 148; Max: 163
+            (val_mul, ":level",3),
+            (val_add, ":level", 60),
+            (val_sub, ":enemy_strength", ":level"),
+
+            (val_add, ":level", 55),
+            (val_add, ":giver_strength", ":level"),
+        (try_end),
+    (else_try),
+        (eq,":camp_template","pt_scout_camp_large"), #Fortified Scout Camp
+        (try_begin), # Failure: Enemy Win Min: 270; Max: 320 - Hero Loss Min: 420; Max: 470
+            (eq,":success",0),
+            (val_mul, ":level",10),
+            (val_add, ":level", 100),
+            (val_add, ":enemy_strength", ":level"),
+
+            (val_add, ":level", 150),
+            (val_sub, ":giver_strength", ":level"),
+        (else_try), # Success: Enemy Loss Min: 145; Max: 170 - Hero Win Min: 200; Max: 225
+            (val_mul, ":level",5),
+            (val_add, ":level", 60),
+            (val_sub, ":enemy_strength", ":level"),
+
+            (val_add, ":level", 55),
+            (val_add, ":giver_strength", ":level"),
+        (try_end),
+    (try_end),
+
+    (faction_set_slot,":quest_giver_faction",slot_faction_strength_tmp,":giver_strength"),
+    (faction_set_slot,":scout_camp_faction",slot_faction_strength_tmp,":enemy_strength"), 
+]),
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts

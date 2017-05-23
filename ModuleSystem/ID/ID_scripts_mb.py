@@ -524,5 +524,6 @@ script_cf_party_is_disabled = 522
 script_delete_volunteers_party = 523
 script_create_volunteers_party = 524
 script_migrate_volunteer_system = 525
+script_destroy_scout_camp_consequences = 526
 
 

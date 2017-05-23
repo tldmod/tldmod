@@ -2458,8 +2458,8 @@ scene_props = [
 
 ] or []) + [
 
-("distant_mountain_snow_1",0,"distant_mountain_snow_1","0", []), #InVain: These two were WB only before. Moved them out of the script to make them available in MB.
-("distant_mountain_snow_2",0,"distant_mountain_snow_2","0", []),
+("distant_mountain_snow_1",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_1","0", []), #InVain: These two were WB only before. Moved them out of the script to make them available in MB.
+("distant_mountain_snow_2",sokf_place_at_origin|sokf_moveable,"distant_mountain_snow_2","0", []),
 
 ("osgiliath_far_f",0,"osgiliath_far","0", []),   
 ("hill",0,"hill","bo_hill", []),

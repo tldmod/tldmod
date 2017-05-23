@@ -2686,6 +2686,7 @@ ai_scripts = [
       (party_is_active, ":reserve_party"),
       (party_detach, ":reserve_party"),
       (call_script, "script_safe_remove_party", ":reserve_party"),
+      (troop_set_slot, 0, "trp_player", slot_troop_player_reserve_party),
 	  (try_end),
 
   # If this is Edoras and Hornburg is still Rohan's, move capital

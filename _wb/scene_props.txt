@@ -4861,10 +4861,10 @@ spr_ship_sail_off_b 0 0 ship_sail_off_b bo_ship_sail_off 0
 spr_ship_c_sail_off 0 0 ship_c_sail_off bo_ship_c_sail_off 0
 
 
-spr_distant_mountain_snow_1 0 0 distant_mountain_snow_1 0 0
+spr_distant_mountain_snow_1 69632 0 distant_mountain_snow_1 0 0
 
 
-spr_distant_mountain_snow_2 0 0 distant_mountain_snow_2 0 0
+spr_distant_mountain_snow_2 69632 0 distant_mountain_snow_2 0 0
 
 
 spr_osgiliath_far_f 0 0 osgiliath_far 0 0
