@@ -2769,7 +2769,7 @@ ai_scripts = [
        # (try_end),
        # (eq, ":count", 1), #xor, but should never be 2
 	(try_begin),
-		(call_script, "script_cf_party_west_of_minas_tirith", ":party1"),
+		#(call_script, "script_cf_party_west_of_minas_tirith", ":party1"),
 		(call_script, "script_party_which_side_of_white_mountains", ":party2"), (assign, ":s2", reg0),
 		(call_script, "script_party_which_side_of_white_mountains", ":party1"), (assign, ":s1", reg0),
 		(neq, ":s1", ":s2"),  # not on same side
@@ -2784,31 +2784,55 @@ ai_scripts = [
 # (str_store_party_name, s14, ":party2"),
 # (display_message, "@Debug: TLD distance between {s13} and {s14}: {reg0} (regular: {reg1})."),
 ]),
+]
 
+#Date: 24/05/2017
+#Coordinate x grows from East to West
+#Coordinate y grows from North to South 
+#Current Minas Tirith coordinates are (-47.47, 24.28)
+#White Mountains follow a line roughtly intersecting points (26,-1) and (-44,24)
+#If the maps get edited and the White Mountains are moved, get two coordinates on the
+#White Mountains mountaintops, far apart, and update the values below with them
+tld_white_mountains_p1=( 26,-1)
+tld_white_mountains_p2=(-44,24)
+#And let me handle the rest obtaining the line equation y=mx+n
+tld_white_mountains_m=(tld_white_mountains_p1[1]-tld_white_mountains_p2[1])*1.0/(tld_white_mountains_p1[0]-tld_white_mountains_p2[0])
+tld_white_mountains_n=tld_white_mountains_p1[1]-tld_white_mountains_m*tld_white_mountains_p1[0]
+tld_white_mountains_m=int(round(tld_white_mountains_m*100,0))
+tld_white_mountains_n=int(round(tld_white_mountains_n*10000,0)) # When doing y=x*m + n, both x and m are mult * 100, k now must be mult an extra *100
+
+ai_scripts+=[
 # script_cf_party_is_south_of_white_mountains  (drastically simpler version -- mtarini)
 # Input: party
 # Output: reg1 = 0 if NORTH. reg1 = 1 if SOUTH
 ("party_which_side_of_white_mountains", [
-	(set_fixed_point_multiplier, 100), 
-	(store_script_param, ":party", 1),
-	(party_get_position, pos10, ":party"),
-    (position_get_x, ":x", pos10),
-    (position_get_y, ":y", pos10),
-	(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
-	(try_begin),
-		(ge,":k",725184),
-		(assign, reg1, 1),
-	(else_try),
-		(assign, reg1, 0),
-	(try_end),
+  (set_fixed_point_multiplier, 100), 
+  (store_script_param, ":party", 1),
+  (party_get_position, pos10, ":party"),
+  (position_get_x, ":x", pos10),
+  (position_get_y, ":y", pos10),
+  #Rafa: calculate the White Mountains y at the party's position's x, let's call that value k
+  (store_mul,":k",":x",tld_white_mountains_m), 
+  (val_add,":k",tld_white_mountains_n),
+  #Put y on the same order of magnitude than k
+  (val_mul,":y",100),
+  #(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
+  (try_begin), # compare y and k
+    #(ge,":k",725184),
+    (gt,":y",":k"), #y grows from north to south
+    (assign, reg0, 1), #South
+  (else_try),
+    (assign, reg0, 0), #North
+  (try_end),
 ]),
 
 ("cf_party_west_of_minas_tirith", [
 	(set_fixed_point_multiplier, 100), 
 	(store_script_param, ":party", 1),
 	(party_get_position, pos10, ":party"),
-    (position_get_x, ":x", pos10),
-	(gt, ":x", 4631),
+  (position_get_x, ":x", pos10),
+  #(gt, ":x", 4631),
+  (gt, ":x", -4747),
 ]),
 	 
 # # script_cf_party_is_south_of_white_mountains
