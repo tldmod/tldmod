@@ -3590,6 +3590,8 @@ mission_templates = [ # not used in game
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
 	common_inventory_not_available,
+  (5, 0, ti_once, [], [
+    (tutorial_message, "@Press F3 to start the battle.",0,8)]),
 	(0, 0, ti_once, [],[
 		(assign, "$g_battle_result", 0),
 		(assign, "$defender_team", 0),
@@ -3610,6 +3612,8 @@ mission_templates = [ # not used in game
 		(try_end),
 		(team_give_order, 0, grc_everyone, mordr_charge),
 		(team_give_order, 1, grc_everyone, mordr_charge)]),
+    common_battle_order_panel,
+    common_battle_order_panel_tick,
     common_music_situation_update,
     common_battle_victory_display,
     custom_battle_check_defeat_condition,

@@ -897,7 +897,7 @@ game_menus = [
 		(eq, "$g_custom_battle_scenario", 26),
 		#(assign, "$g_custom_battle_scene", "scn_quick_battle_3"),
 		#(assign, "$g_custom_battle_scene", "scn_random_scene_plain_small"),
-		(assign, "$g_custom_battle_scene", "scn_quick_battle_5"),
+		(assign, "$g_custom_battle_scene", "scn_random_scene_parade"),
 		#(modify_visitors_at_site, "$g_custom_battle_scene"),
 		#(assign, "$g_player_troop", "$testbattle_team_a_troop"),
 		#(set_player_troop, "$g_player_troop"),
@@ -910,8 +910,8 @@ game_menus = [
 		#(set_visitor, 0, "$g_player_troop"),
 
 		
-		(set_visitors, 5,"$testbattle_team_a_troop","$testbattle_team_a_num"),
-		(set_visitors, 16,"$testbattle_team_b_troop","$testbattle_team_b_num"),
+		(set_visitors, 2,"$testbattle_team_a_troop","$testbattle_team_a_num"),
+		(set_visitors, 30,"$testbattle_team_b_troop","$testbattle_team_b_num"),
 		(str_store_string, s16, "@TEST BATTLE: {reg10} {s10} vs {reg11} {s11}"),
    (else_try),########################################## TEST SCENE FOR DYNAMIC SCENERY  
 		(eq, "$g_custom_battle_scenario", 9),
@@ -1020,7 +1020,7 @@ game_menus = [
 #		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
          (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
          (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),
-         (else_try),(eq, "$g_custom_battle_scenario",26),(set_jump_mission,"mt_lead_charge"),#(rest_for_hours,12,1000,0),
+         (else_try),(eq, "$g_custom_battle_scenario",26),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),
          (else_try),(eq, "$g_custom_battle_scenario",98),(set_jump_mission,"mt_custom_battle_form_test"),
 	 (else_try),(set_jump_mission,"mt_custom_battle"),
         (try_end),
