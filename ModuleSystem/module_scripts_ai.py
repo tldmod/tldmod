@@ -2795,6 +2795,7 @@ ai_scripts = [
 #White Mountains mountaintops, far apart, and update the values below with them
 tld_white_mountains_p1=( 26,-1)
 tld_white_mountains_p2=(-44,24)
+tld_white_mountains_min_y=-1200   # An Y*100 coordinate always North of the WM - I'm using Hornburg Y right now
 #And let me handle the rest obtaining the line equation y=mx+n
 tld_white_mountains_m=(tld_white_mountains_p1[1]-tld_white_mountains_p2[1])*1.0/(tld_white_mountains_p1[0]-tld_white_mountains_p2[0])
 tld_white_mountains_n=tld_white_mountains_p1[1]-tld_white_mountains_m*tld_white_mountains_p1[0]
@@ -2802,27 +2803,58 @@ tld_white_mountains_m=int(round(tld_white_mountains_m*100,0))
 tld_white_mountains_n=int(round(tld_white_mountains_n*10000,0)) # When doing y=x*m + n, both x and m are mult * 100, k now must be mult an extra *100
 
 ai_scripts+=[
-# script_cf_party_is_south_of_white_mountains  (drastically simpler version -- mtarini)
+# script_party_is_south_of_white_mountains  (drastically simpler version -- mtarini)
 # Input: party
-# Output: reg1 = 0 if NORTH. reg1 = 1 if SOUTH
+# Output: reg0 = 0 if NORTH. reg0 = 1 if SOUTH
+# Overwrites pos10
 ("party_which_side_of_white_mountains", [
-  (set_fixed_point_multiplier, 100), 
+#  (set_fixed_point_multiplier, 100), 
   (store_script_param, ":party", 1),
   (party_get_position, pos10, ":party"),
-  (position_get_x, ":x", pos10),
-  (position_get_y, ":y", pos10),
+  (call_script,"script_pos10_which_side_of_white_mountains"),
+#  (position_get_x, ":x", pos10),
+#  (position_get_y, ":y", pos10),
   #Rafa: calculate the White Mountains y at the party's position's x, let's call that value k
-  (store_mul,":k",":x",tld_white_mountains_m), 
-  (val_add,":k",tld_white_mountains_n),
+#  (store_mul,":k",":x",tld_white_mountains_m), 
+#  (val_add,":k",tld_white_mountains_n),
   #Put y on the same order of magnitude than k
-  (val_mul,":y",100),
+#  (val_mul,":y",100),
   #(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
-  (try_begin), # compare y and k
+#  (try_begin), # compare y and k
     #(ge,":k",725184),
-    (gt,":y",":k"), #y grows from north to south
-    (assign, reg0, 1), #South
-  (else_try),
+#    (gt,":y",":k"), #y grows from north to south
+#    (assign, reg0, 1), #South
+#  (else_try),
+#    (assign, reg0, 0), #North
+#  (try_end),
+]),
+
+# script_pos10_which_side_of_white_mountains
+# Check if the position stored at pos10 is South of the White Mountains
+# Input: pos10: position to check
+# Output: reg0 = 0 if NORTH. reg0 = 1 if SOUTH
+("pos10_which_side_of_white_mountains",[
+  #(store_script_param_1,pos10),
+  (set_fixed_point_multiplier, 100), 
+  (position_get_y, ":y", pos10),
+  (try_begin),
+    (lt,":y",tld_white_mountains_min_y),
     (assign, reg0, 0), #North
+  (else_try),
+    (position_get_x, ":x", pos10),
+    #Rafa: calculate the White Mountains y at the party's position's x, let's call that value k
+    (store_mul,":k",":x",tld_white_mountains_m), 
+    (val_add,":k",tld_white_mountains_n),
+    #Put y on the same order of magnitude than k
+    (val_mul,":y",100),
+    #(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
+    (try_begin), # compare y and k
+      #(ge,":k",725184),
+      (gt,":y",":k"), #y grows from north to south
+      (assign, reg0, 1), #South
+    (else_try),
+      (assign, reg0, 0), #North
+    (try_end),
   (try_end),
 ]),
 
