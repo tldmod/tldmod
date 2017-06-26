@@ -22205,8 +22205,8 @@ command_cursor_scripts = [
     #    (call_script,"script_cf_warp_array_get",":array",":rnd"), # this would leave a random center on reg0 or fail
     #(try_end),
     # Deletes the array
-    (call_script,"script_warp_array_delete",":array"),
-    # Fails if no center was found (the array's length would be 0 in that case)
+    # (call_script,"script_warp_array_delete",":array"), # no longer needed by the quick array use
+    # Fails if no center was found
     (ge,reg0,0),
 ]),
 
@@ -22292,15 +22292,20 @@ command_cursor_scripts = [
     (try_begin),
         (lt,"$savegame_version",2),
         # Fix Cair Andros elder
-        (party_is_active,"p_town_cair_andros"),
-        (store_faction_of_party, ":faction_no", "p_town_cair_andros"),
-        (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
-        (party_get_slot, ":elder", ":capital", slot_town_elder),
-        (party_set_slot, "p_town_cair_andros", slot_town_elder, ":elder"),
+        (try_begin),
+            (party_is_active,"p_town_cair_andros"),
+            (store_faction_of_party, ":faction_no", "p_town_cair_andros"),
+            (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
+            (party_get_slot, ":elder", ":capital", slot_town_elder),
+            (party_set_slot, "p_town_cair_andros", slot_town_elder, ":elder"),
+        (try_end),
         # Fix capturable centers tavern keepers
         ]+concatenate_scripts([[
-        (assign, ":center_no", center_list[x][0]),
-        (party_set_slot,":center_no",slot_town_barman, center_list[x][2][0]),
+        (try_begin),
+            (assign, ":center_no", center_list[x][0]),
+            (party_is_active,":center_no"),
+            (party_set_slot,":center_no",slot_town_barman, center_list[x][2][0]),
+        (try_end),
         ] for x in range(len(center_list)) if center_list[x][8]==0] )+[
         
         (assign,"$savegame_version",2),
