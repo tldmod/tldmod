@@ -7139,6 +7139,11 @@ game_menus = [
 		
 		(call_script, "script_unequip_items", "trp_player"), # after a shop, player returns to this menu so check here
 		
+		(try_begin), # Fix elders and barmen at capturable centers
+			(lt,"$savegame_version",2),
+			(call_script,"script_update_savegame"),
+		(try_end),
+
 		(try_begin),
           (eq, "$sneaked_into_town", 1),
           (call_script, "script_music_set_situation_with_culture", mtf_sit_town_infiltrate),
@@ -7280,11 +7285,19 @@ game_menus = [
        ("town_approach",[(party_slot_eq,"$current_town",slot_party_type, spt_town),
           (this_or_next|eq,"$entry_to_town_forbidden",0),
           (eq, "$sneaked_into_town",1),
-		  (try_begin), #kham fix for some weird elder switching that occurs...
-		  	(eq, "$current_town", "p_town_cair_andros"),
-		  	(party_set_slot, "p_town_cair_andros", slot_town_elder, "trp_elder_cairandros"),
-		  	(str_store_troop_name_plural, s1, "trp_elder_cairandros"),
-		  (else_try), # elder troop stores center common name in plural register
+		  (try_begin),
+		    #kham fix for some weird elder switching that occurs...
+		  	#(eq, "$current_town", "p_town_cair_andros"),
+		  	#(party_set_slot, "p_town_cair_andros", slot_town_elder, "trp_elder_cairandros"),
+		  	#(str_store_troop_name_plural, s1, "trp_elder_cairandros"),
+		  #(else_try), # elder troop stores center common name in plural register
+
+		  # Rafa: For towns that don't get destroyed, we get the original elder's plural name
+		]+concatenate_scripts([[
+			(eq, "$current_town", center_list[x][0]),
+		  	(neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
+		    (str_store_troop_name_plural, s1, center_list[x][2][3]),
+		  (else_try),] for x in range(len(center_list)) if center_list[x][8]==0] )+[
 		  	(neg|party_slot_eq, "$current_town", slot_town_elder, "trp_no_troop"),
 			(party_get_slot, ":elder_troop", "$current_town", slot_town_elder),
 		    (str_store_troop_name_plural, s1, ":elder_troop"),
@@ -7306,8 +7319,8 @@ game_menus = [
           (party_slot_eq,"$current_town",slot_party_type, spt_town),
           (eq,"$entry_to_town_forbidden",0),
           (neg|party_slot_eq,"$current_town", slot_town_castle, -1),
-		  
-		  (try_begin),   # elder troop stores center common name in plural register
+
+		  (try_begin),   # barman troop stores center common name in plural register
 			(party_get_slot, ":barman_troop", "$current_town", slot_town_barman),
 		    (neq, ":barman_troop",  "trp_no_troop"),
 		    (neq, ":barman_troop",  -1),
@@ -9173,7 +9186,8 @@ game_menus = [
 	 ("attack_scout_camp",[], "Attack the Scout Camp!",
 	     [  
 	     	(quest_get_slot, ":scout_camp_faction", "qst_destroy_scout_camp", slot_quest_target_faction),
-			(quest_get_slot, ":scout_camp_template","qst_destroy_scout_camp",slot_quest_target_party_template),
+			#(quest_get_slot, ":scout_camp_template","qst_destroy_scout_camp",slot_quest_target_party_template),
+	       	(party_get_template_id,":scout_camp_template","$g_encountered_party"),
 	       	(store_character_level, ":level", "trp_player"),
 	     	
 	 #Set Scout Camp Defender Faction
@@ -9358,15 +9372,23 @@ game_menus = [
 	        (str_store_string, s9, "@The Scout Camp has been razed, This will slow the advance of the enemy."),
 			(call_script, "script_succeed_quest", "qst_destroy_scout_camp"),
 			#(set_background_mesh, "mesh_draw_victory_orc"),
-			(party_is_active,"$qst_destroy_scout_camp_party"),
-			(call_script, "script_safe_remove_party","$qst_destroy_scout_camp_party"),
+			(party_is_active,"$g_encountered_party"),
+			(party_get_template_id, ":template", "$g_encountered_party"),
+			(try_begin),
+				(eq,":template","pt_scout_camp_small"),
+				(call_script,"script_create_smoking_remnants","$g_encountered_party","icon_debris",6,1),
+			(else_try),
+				(call_script,"script_create_smoking_remnants","$g_encountered_party","icon_debris",12,1),
+			(try_end),
+			(call_script, "script_safe_remove_party","$g_encountered_party"),
+
 		  (else_try),
 	      	(neq, "$g_battle_result", 1),
 	        (call_script, "script_fail_quest", "qst_destroy_scout_camp"),
 	        (str_store_string, s9, "@You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck."),
 	       # (set_background_mesh, "mesh_draw_victory_gondor"),
-	        (party_is_active,"$qst_destroy_scout_camp_party"),
-	        (call_script, "script_safe_remove_party","$qst_destroy_scout_camp_party"),
+	        (party_is_active,"$g_encountered_party"),
+	        (call_script, "script_safe_remove_party","$g_encountered_party"),
 	      (try_end),
 	     ],
 	    [

@@ -17,6 +17,7 @@ from module_troops import *
 from module_scripts_ai import *
 from module_scripts_form import *
 from module_scripts_morale import *
+from module_scripts_common_warp import *
 from header_presentations import *
 
 from module_info import wb_compile_switch as is_a_wb_script
@@ -1900,6 +1901,9 @@ scripts = [
 	(try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
 		(faction_set_slot, ":faction_wc", slot_faction_war_council, 0),
 	(try_end),
+
+    #Rafa: Savegame version
+    (assign,"$savegame_version",2),
 
 	] + (is_a_wb_script==1 and [
 
@@ -6169,27 +6173,32 @@ scripts = [
           	(neg|check_quest_active,"qst_destroy_scout_camp"),
 	        (ge, "$g_talk_troop_faction_relation", 1),
 	        (is_between, ":player_level", 11,23),
-	        (faction_get_slot, ":faction_side", ":giver_faction_no", slot_faction_side),
-	        (call_script, "script_force_faction_center_by_region", ":giver_party_no", ":faction_side"),
+	        #(faction_get_slot, ":faction_side", ":giver_faction_no", slot_faction_side),
+	        #(call_script, "script_force_faction_center_by_region", ":giver_party_no", ":faction_side"),
+	        (call_script,"script_cf_get_random_enemy_center_in_theater",":giver_party_no"), # Gets a enemy center in the current theater
             (assign, ":cur_target_center", reg0),
-            (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target - So that we can set up appropriate guards/troops
-            (neq, ":cur_target_center", ":giver_center_no"),#Skip current center
-            (assign, ":quest_target_faction", ":cur_target_faction"),
-           # (assign, ":quest_object_center", ":cur_object_center"),
-            (assign, ":quest_target_center", ":cur_target_center"),
-            (assign, ":quest_importance", 4),
+            #(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
             (try_begin),
-	            (is_between, ":player_level", 11,17),
+	            (is_between, ":player_level", 11,17), #levels 11-16
 	            (assign, ":quest_target_party_template", "pt_scout_camp_small"),
 	            (assign, ":quest_xp_reward", 250),
 	            (assign, ":quest_gold_reward", 300),
 	            (assign, ":quest_rank_reward", 7),
             (else_try),
+            	(is_between,":player_level",17,23),  #levels 17-22
 	            (assign, ":quest_target_party_template", "pt_scout_camp_large"),
 	            (assign, ":quest_xp_reward", 450),
 	            (assign, ":quest_gold_reward", 700),
 	            (assign, ":quest_rank_reward", 20),
             (try_end),
+	        (call_script,"script_cf_spawn_around_party_on_walkable_terrain",":giver_party_no",":quest_target_party_template",15),
+	        (assign,"$qst_destroy_scout_camp_party",reg0),
+
+            (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target - So that we can set up appropriate guards/troops
+            (assign, ":quest_target_faction", ":cur_target_faction"),
+           # (assign, ":quest_object_center", ":cur_object_center"),
+            (assign, ":quest_target_center", ":cur_target_center"),
+            (assign, ":quest_importance", 4),
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 7),
             (assign, ":quest_dont_give_again_period", 7),
@@ -8191,8 +8200,8 @@ scripts = [
       (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
       (party_get_slot, ":value", ":capital", slot_town_elder),
       (party_set_slot, ":center_no", slot_town_elder, ":value"),
-      (party_get_slot, ":value", ":capital", slot_town_barman),
-      (party_set_slot, ":center_no", slot_town_barman, ":value"),
+      #(party_get_slot, ":value", ":capital", slot_town_barman),    # Rafa: as barmans just store the castle name and don't appear on the scenes
+      #(party_set_slot, ":center_no", slot_town_barman, ":value"),  #       just leave them alone.
       (party_get_slot, ":value", ":capital", slot_town_weaponsmith),
       (party_set_slot, ":center_no", slot_town_weaponsmith, ":value"),
       (party_get_slot, ":value", ":capital", slot_town_merchant),
@@ -9959,8 +9968,14 @@ scripts = [
 		(assign, reg1, region_pelennor), 
 	(else_try),		
 		# determine on which side of the white mountains...
-		(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
-		(ge,":k",725184),
+		#(store_mul,":k",":x",374.4),(store_mul,":k2",":y",1000), (val_add,":k",":k2"), 
+		#(ge,":k",725184),
+		# IF somethings fails, uncomment reg 0 save/restoration
+		#(assign,:"tmp",reg0),
+		(copy_position, pos10, pos1),
+		(call_script,"script_pos10_which_side_of_white_mountains"),
+		#(assign,":side_of_wm",reg0),(assign,reg0,":tmp"),
+		(eq,reg0,1),
 	    # SOUTH of white mountains... pick region by GONDOR subfaction town proximity of gondor
 		(assign, reg1, region_lebennin),
 		(assign, ":min_dist", 1000000),
@@ -10112,7 +10127,7 @@ scripts = [
 		(assign, reg1, region_above_mirkwook),
 	(try_end),
 ]),
-  
+
 ("tld_party_relocate_near_party", [
     (store_script_param_1, ":pa"),
     (store_script_param_2, ":pb"),
@@ -22000,6 +22015,41 @@ command_cursor_scripts = [
 	(try_end),
 ]),
 
+
+#script_cf_spawn_around_party_on_walkable_terrain
+#Input: arg1: party to spawn around   - arg2: spawning party template   - arg3: spawning radius
+#Output: reg0: Party ID of spawned party
+#Spourious output: pos1: position of the generating party pos2: position of spawned party
+#Fails if couldn't spawn a party on walkable terrain
+("cf_spawn_around_party_on_walkable_terrain", [
+	(store_script_param, ":generating_party", 1),
+	(store_script_param, ":template",         2),
+	(store_script_param, ":radius",           3),
+
+    (party_get_position, pos1, ":generating_party",),
+
+	#(assign, ":terrain_check", 0), # Check if spawned party is not in weird terrain
+	(assign,":lower_bound",0),
+	(try_for_range_backwards, ":unused", ":lower_bound", 50),
+        (map_get_land_position_around_position, pos2, pos1, ":radius"),
+	    #(map_get_random_position_around_position, pos2, pos1, ":radius"),
+		(party_set_position, "p_terrain_party", pos2), 
+		(party_get_current_terrain, ":terrain_type", "p_terrain_party"),
+		(try_begin),
+			(neq, ":terrain_type", rt_water),
+			(neq, ":terrain_type", rt_mountain),
+			(neq, ":terrain_type", rt_river),
+			#(assign, ":terrain_check", 1),
+			(assign, ":lower_bound", 9999),
+		(try_end),
+	(try_end),
+#	(eq,":terrain_check",1), # Fail here if couldn't find a valid place
+	(neq,":lower_bound",0), # Fail here if couldn't find a valid place
+	(spawn_around_party,":generating_party",":template"),
+	(party_set_position, reg0, pos2),
+
+]),
+
 #script_destroy_scout_camp_consequences
 #Executes the faction strength changes of the destroy scout camp quest and shows the corresponding messages
 #arg1: 0: Mission failed           Not 0: Mission succeeded
@@ -22080,9 +22130,191 @@ command_cursor_scripts = [
     (faction_set_slot,":quest_giver_faction",slot_faction_strength_tmp,":giver_strength"),
     (faction_set_slot,":scout_camp_faction",slot_faction_strength_tmp,":enemy_strength"), 
 ]),
+
+
+#script_cf_get_random_center_in_theater
+# Gets a random, active and not destroyed center at the arg1 party theater, relation filter optional, fails if there is none
+#input: arg1: party to get the theater
+#input: arg2: filter by relation to arg1 party:
+#             values: -2:enemy
+#                     -1:neutral or friendly
+#                      0:all
+#                     >0:of that value of faction_no
+#output: reg0 the selected center
+("cf_get_random_center_in_theater", [
+    (store_script_param_1, ":party_no"),
+    (store_script_param_2, ":filter"),
+
+    # Retrieve the party theater (getting the theater of the closest center to the party)
+    (call_script,"script_get_closest_center",":party_no"),
+    (assign, ":center_no",reg0),
+    (party_get_slot,":party_theater",":center_no",slot_center_theater),
+
+    # Retrieve the party faction too
+    (store_faction_of_party,":party_faction",":party_no"),
+    # Gets the quick array
+    (call_script,"script_warp_get_quick_array"),
+    (assign, ":array",reg0),
+
+    # Populates the array with the enemy centers at the theater
+    (try_for_range,":center_no",centers_begin,centers_end),
+        #if active and not destroyed
+        (party_is_active,":center_no"),
+        (party_get_slot,":destroyed",":center_no",slot_center_destroyed),
+        (eq,":destroyed",0),
+        #and on the same theater
+        (party_get_slot,":center_theater",":center_no",slot_center_theater),
+        (eq,":center_theater",":party_theater"),
+        #And with filter
+        (assign,":applies",0),
+        (try_begin), # Filter 0: all apply
+            (eq,":filter",0),
+            (assign,":applies",1),
+        (else_try), 
+            (store_faction_of_party,":center_faction",":center_no"),
+            (store_relation,":rel",":center_faction",":party_faction"),
+            (eq,":filter",-2), # Filter = -2, enemy centers apply
+            (lt,":rel",0),
+            (assign,":applies",1),
+        (else_try),
+            (eq,":filter",-1), # Filter = -1, neutral or friendly centers apply
+            (ge,":rel",0),
+            (assign,":applies",1),
+        (else_try),
+            (gt,":filter",0), # Filter > 0: of a certain faction_no
+            (eq,":center_faction",":filter"),
+            (assign,":applies",1),
+        (try_end),
+        (try_begin),
+            #Store the center on the array's tail if it pass the filter
+            (eq,":applies",1),
+            (call_script,"script_warp_array_push",":array",":center_no"),
+        (try_end),
+    (try_end),
+
+    # Retrieves a random element of the array.
+    (assign,reg0,-1),
+    (try_begin),
+        (call_script,"script_cf_warp_get_random",":array"),
+    (try_end),
+    #(call_script,"script_warp_array_length",":array"), 
+    #(assign,":length",reg0), # Get the array's length
+    # We don't want to fail ATM as that would left the array undeleted (no longer a problem with the quick array use, but's still a good practice)
+    #    (store_random_in_range,":rnd",0,":length"), # Get a random number from 0 to length-1
+    #    (val_add,":rnd",1), # Increase the random number in one in order to match the array indexes, which go from 1 to length
+    #    (call_script,"script_cf_warp_array_get",":array",":rnd"), # this would leave a random center on reg0 or fail
+    #(try_end),
+    # Deletes the array
+    # (call_script,"script_warp_array_delete",":array"), # no longer needed by the quick array use
+    # Fails if no center was found
+    (ge,reg0,0),
+]),
+
+#aliases:
+("cf_get_random_enemy_center_in_theater",[
+    (store_script_param_1, ":party_no"),
+    (call_script,"script_cf_get_random_center_in_theater",":party_no",-2),
+]),
+("cf_get_random_friendly_center_in_theater",[
+    (store_script_param_1, ":party_no"),
+    (call_script,"script_cf_get_random_center_in_theater",":party_no",-1),
+]),
+
+
+#script_create_smoking_remnants
+#Create temporary smoking remnants
+#arg1: party in whose position remnants will spawn
+#arg2: remnants icon
+#arg3: smoking time
+#arg4: visibility: 0: normal visibility - 1: always visible
+#dirties reg0, pos10
+("create_smoking_remnants", [
+    (store_script_param,":spawning_party",1),
+    (store_script_param,":icon",          2),
+    (store_script_param,":time",          3),
+    (store_script_param,":always_visible",4),
+
+    (try_begin), # Time >0: Burning remains
+        (gt,":time",0),
+        (party_get_position,pos10,":spawning_party"),
+        (call_script,"script_create_temp_map_prop_on_pos10",":icon",":time",":always_visible","psys_map_village_looted_smoke"),
+        #other candidate effect is "psys_map_village_fire_smoke"
+        (val_div,":time",2), # Flames for (time/2)-1
+        (val_sub,":time",1),
+        (call_script,"script_create_temp_map_prop_on_pos10",":icon",":time",":always_visible","psys_map_village_fire"),
+    (try_end),
+]),
+
+#script_create_temp_map_prop_on_pos10
+#Creates a temporary icon on the map on pos10, with optional particle effects
+#arg1: prop icon
+#arg2: prop duration
+#arg3: visibility: 0: normal visibility    -    1: always visible
+#arg4: effect: <0: no effects  >=0: particle system effect
+#dirties reg0, pos10
+("create_temp_map_prop_on_pos10",[
+    (store_script_param,":icon",          1),
+    (store_script_param,":time",          2),
+    (store_script_param,":always_visible",3),
+    (store_script_param,":particle",      4),
+
+    (try_begin),
+        (gt,":time",0),
+        (spawn_around_party,"p_main_party","pt_none"),
+        (assign,":party_no",reg0),
+        (party_set_position,":party_no",pos10),
+
+        (party_set_icon,":party_no",":icon"),
+        (party_set_flags,":party_no",pf_is_static|pf_no_label,1),
+        (party_set_flags,":party_no",pf_always_visible,":always_visible"),
+        (party_set_ai_behavior, ":party_no", ai_bhvr_hold),
+        #(party_set_name,":party_no","@Prop"), # for savegame debug
+        (party_set_slot,":party_no",slot_center_destroyed,1),
+        (party_set_slot, ":party_no", slot_village_smoke_added, ":time"),
+        (try_begin),
+            (ge,":particle",0),
+            (party_add_particle_system, ":party_no", ":particle"),	
+        (try_end),
+    (try_end),
+]),
+
+
+#script_update_savegame
+#Updates the current game state to the latest version, in order to keep backwards compatibility.
+#Input: none
+#Output: Updated game state
+("update_savegame",[
+    (try_begin),
+        (lt,"$savegame_version",1),
+        (call_script,"script_migrate_volunteer_system"),
+        (assign,"$savegame_version",1),
+    (try_end),
+    (try_begin),
+        (lt,"$savegame_version",2),
+        # Fix Cair Andros elder
+        (try_begin),
+            (party_is_active,"p_town_cair_andros"),
+            (store_faction_of_party, ":faction_no", "p_town_cair_andros"),
+            (faction_get_slot, ":capital", ":faction_no", slot_faction_capital),
+            (party_get_slot, ":elder", ":capital", slot_town_elder),
+            (party_set_slot, "p_town_cair_andros", slot_town_elder, ":elder"),
+        (try_end),
+        # Fix capturable centers tavern keepers
+        ]+concatenate_scripts([[
+        (try_begin),
+            (assign, ":center_no", center_list[x][0]),
+            (party_is_active,":center_no"),
+            (party_set_slot,":center_no",slot_town_barman, center_list[x][2][0]),
+        (try_end),
+        ] for x in range(len(center_list)) if center_list[x][8]==0] )+[
+        
+        (assign,"$savegame_version",2),
+    (try_end),
+]),
+
 ]
 
-scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts
+scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
 
 
 ################################################################################################

@@ -4,6 +4,7 @@ from ID_troops import *
 from ID_factions import *
 from ID_map_icons import *
 from ID_menus import *
+from module_scripts_common_warp import common_warp_templates
 
 pmf_is_prisoner = 0x0001
 
@@ -405,4 +406,4 @@ party_templates = [
 ##Kham - Replacement Volunteer party template
 ("volunteers","Reserves",icon_generic_knight|pf_is_static,0,fac_commoners,merchant_personality,[]),
 
-]
+] + common_warp_templates

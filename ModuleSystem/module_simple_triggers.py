@@ -224,9 +224,8 @@ simple_triggers = [
       (try_end),
 
       (try_begin),
-        (eq,"$migrate_volunteer_system_run_once",0),
-        (call_script, "script_migrate_volunteer_system"), # Rafa: ensure the volunteers system is up to date
-        (assign,"$migrate_volunteer_system_run_once",1),
+        (lt,"$savegame_version",1),
+        (call_script, "script_update_savegame"), # Rafa: ensure the volunteers system is up to date
       (try_end),
       
       (try_for_range, ":center_no", centers_begin, centers_end),
@@ -303,7 +302,7 @@ simple_triggers = [
           (this_or_next|eq, ":terrain_type", rt_mountain_forest),
           (gt, ":terrain_type", rt_desert_forest),
         
-        ] + (is_a_wb_trigger==1 and [
+        ] + (is_a_wb_trigger==1 and [ # Rafa: Couldn't this be unified? I don't see any only-WB operation, using header_operations_mb1011.py as reference
         
           (party_get_position, pos1, ":cur_party"),
           (assign, ":max_range", 1000),
@@ -2513,40 +2512,73 @@ simple_triggers = [
 	]),
 
 # (57) TLD deal with prisoner trains and routed parties reached destination (MV: shortened trigger from 8 to 3, so prisoners would update sooner), (CppCoder: Added routed parties to this trigger)
-(3,[(try_for_parties, ":party_no"),
-		(try_begin), # CC: Cleanup routed enemies / allies.
-			(party_is_active, ":party_no"),
-        		(party_get_template_id, ":template", ":party_no"),
-			(is_between, ":template", "pt_routed_allies", "pt_legion_minas_morgul"),
-			(party_is_in_any_town, ":party_no"),
-			
-      
+# TLD: also check for temporary arrays
+# TLD: also check for temporary map props and smoking ruins
+(3,[
+  (try_for_parties, ":party_no"),
+    #(party_is_active, ":party_no"),
+    (party_get_template_id, ":template", ":party_no"),
+    (try_begin), # CC: Cleanup routed enemies / allies.
+      (party_is_active, ":party_no"),
+      #(party_get_template_id, ":template", ":party_no"),
+      (is_between, ":template", "pt_routed_allies", "pt_legion_minas_morgul"),
+      (party_is_in_any_town, ":party_no"),
+
       (call_script, "script_safe_remove_party", ":party_no"),
-      
 
-		(try_end),
-		(party_is_active, ":party_no"),
-		(party_slot_eq, ":party_no", slot_party_type, spt_prisoner_train),
-		(party_is_in_any_town, ":party_no"),
-		(party_get_cur_town, ":cur_center", ":party_no"),
-# (str_store_party_name, s22, ":cur_center"),
-# (display_message, "@DEBUG: Prisoner train arrives in {s22}"),
-		(assign, "$g_move_heroes", 1),
-		(party_detach, ":party_no"),
-		#(party_get_position, pos1, ":party_no"),
-		#(position_get_x, reg1, pos1),
-		#(position_get_y, reg2, pos1),
-		#(display_message, "@DEBUG: party at: {reg1}, {reg2} removed", debug_color),
-		#(party_get_position, pos1, "p_main_party"),
-		#(position_get_x, reg1, pos1),
-		#(position_get_y, reg2, pos1),
-		#(display_message, "@DEBUG: player at: {reg1}, {reg2}", debug_color),
-		(call_script, "script_party_prisoners_add_party_prisoners", ":cur_center", ":party_no"),
+    (else_try), # Prisioner trains transfer / removing
+      (party_is_active, ":party_no"),
+      (party_slot_eq, ":party_no", slot_party_type, spt_prisoner_train),
+      (party_is_in_any_town, ":party_no"),
+      (party_get_cur_town, ":cur_center", ":party_no"),
+      # (str_store_party_name, s22, ":cur_center"),
+      # (display_message, "@DEBUG: Prisoner train arrives in {s22}"),
+      (assign, "$g_move_heroes", 1),
+      (party_detach, ":party_no"),
+      #(party_get_position, pos1, ":party_no"),
+      #(position_get_x, reg1, pos1),
+      #(position_get_y, reg2, pos1),
+      #(display_message, "@DEBUG: party at: {reg1}, {reg2} removed", debug_color),
+      #(party_get_position, pos1, "p_main_party"),
+      #(position_get_x, reg1, pos1),
+      #(position_get_y, reg2, pos1),
+      #(display_message, "@DEBUG: player at: {reg1}, {reg2}", debug_color),
+      (call_script, "script_party_prisoners_add_party_prisoners", ":cur_center", ":party_no"),
 
-    
-		(call_script, "script_safe_remove_party", ":party_no"),
-    
-	(try_end),
+      (call_script, "script_safe_remove_party", ":party_no"),
+    (else_try), # Array handling
+      (this_or_next|eq,":template","pt_warp_array"), # Also checked to prevent the array content triggering the prop handling of the next block
+      (             eq,":template","pt_warp_temp_array"), # Temporary arrays, we will delete these
+      (try_begin),
+        (eq,":template","pt_warp_temp_array"),
+        (call_script,"script_warp_array_delete",":party_no"),
+      (try_end),
+    (else_try), # Ruins and temporary map props handling - moved here for efficiency and support of temporary props
+      (neg|party_slot_eq, ":party_no", slot_center_destroyed, 0),
+      (neg|party_slot_eq, ":party_no", slot_village_smoke_added, 0),
+      (party_get_slot, ":counter",":party_no", slot_village_smoke_added),
+      (val_sub,":counter",3),
+      (party_set_slot, ":party_no", slot_village_smoke_added, ":counter"),
+
+      (try_begin),
+        (lt,":counter",1),
+        (party_clear_particle_systems, ":party_no"),
+        (try_begin), # Temporary map props removal
+          (neg|is_between,":party_no",centers_begin,centers_end),
+          (neq,":party_no","p_town_barad_dur"),
+          (party_set_flags,":party_no",pf_is_static,0), # This ensures the party icon is removed
+          (call_script,"script_safe_remove_party",":party_no"),
+        (else_try), # Permanent ruins just stop smoking
+          (party_set_slot, ":party_no", slot_village_smoke_added, 0),
+        (try_end),
+      (try_end),
+
+    (try_end),
+
+
+  (try_end), # try_for_parties
+
+
    ]),
 
 # (58) TLD: establish advance camps in active, non-home theaters 
@@ -2600,20 +2632,22 @@ simple_triggers = [
 (1,[(call_script, "script_apply_attribute_bonuses")]),
 
 # (60) TLD: stop ruins from smoking as time passes
-(6,[(try_for_range, ":ruin", centers_begin, centers_end),
-		(party_is_active, ":ruin"),
-		(neg|party_slot_eq, ":ruin", slot_center_destroyed, 0),
-		(neg|party_slot_eq, ":ruin", slot_village_smoke_added, 0),
-		(party_get_slot, ":counter",":ruin", slot_village_smoke_added),
-		(try_begin),
-			(lt,":counter",1),
-			(party_clear_particle_systems, ":ruin"),	
-			(party_set_slot, ":ruin", slot_village_smoke_added, 0),
-		(else_try),
-			(val_sub,":counter",6),
-			(party_set_slot, ":ruin", slot_village_smoke_added, ":counter"),
-		(try_end),
-	(try_end)
+# Rafa: Deprecated, can be used for something else
+(6,[
+  #(try_for_range, ":ruin", centers_begin, centers_end),
+	#	(party_is_active, ":ruin"),
+	#	(neg|party_slot_eq, ":ruin", slot_center_destroyed, 0),
+	#	(neg|party_slot_eq, ":ruin", slot_village_smoke_added, 0),
+	#	(party_get_slot, ":counter",":ruin", slot_village_smoke_added),
+	#	(try_begin),
+	#		(lt,":counter",1),
+	#		(party_clear_particle_systems, ":ruin"),	
+	#		(party_set_slot, ":ruin", slot_village_smoke_added, 0),
+	#	(else_try),
+	#		(val_sub,":counter",6),
+	#		(party_set_slot, ":ruin", slot_village_smoke_added, ":counter"),
+	#	(try_end),
+	#(try_end)
 	]),             
 # (61)
 (1,[(try_begin), # npc and player healing from wounds (should be 25 hours)
