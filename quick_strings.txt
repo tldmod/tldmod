@@ -1,4 +1,4 @@
-1352
+1359
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -562,6 +562,13 @@ qstr_loses_Faction_Strengt loses_Faction_Strength_due_to_the_destruction_of_thei
 qstr_gain_Faction_Strengt gain_Faction_Strength_as_news_of_your_victory_spreads.
 qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
+qstr_warp_array_created_a warp_array_created_at_{reg1}
+qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
+qstr_{s0} {s0}
+qstr_{s3}{s1}{s0} {s3}{s1}{s0}
+qstr_{s3}{s2}{s0} {s3}{s2}{s0}
+qstr_{s1}_{s0} {s1},_{s0}
+qstr_{s1}_and_{s0} {s1}_and_{s0}
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!

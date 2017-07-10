@@ -254,3 +254,5 @@ pt_beorn_caravan = 252
 pt_orc_horde = 253
 pt_vet_archer = 254
 pt_volunteers = 255
+pt_warp_array = 256
+pt_warp_temp_array = 257
