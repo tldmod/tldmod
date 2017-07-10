@@ -228,7 +228,7 @@ scn_cirith_ungol_center cirith_ungol_center 256 none none 0 0 100 100 -100 0x000
   0 
   0 
  outer_terrain_plain 
-scn_orc_sentry_camp_center orc_sentry_camp_center 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_orc_sentry_camp_center orc_sentry_camp_center 256 none none 0 0 100 100 -100 0x00000003300005000009c5a200000f5200005bd50000739d 
   0 
   0 
  outer_terrain_osgiliath_9 
@@ -236,7 +236,7 @@ scn_isengard_center isengard_center 256 none none 0 0 100 100 -100 0x00000007300
   0 
   0 
  outer_mountains2north 
-scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
@@ -244,7 +244,7 @@ scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0 0 100 100 -100
   0 
   0 
  outer_terrain_plain 
-scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
@@ -596,7 +596,7 @@ scn_goblin_north_outpost_center goblin_north_outpost_center 256 none none 0 0 10
   0 
   0 
  outer_mountains2west 
-scn_goblin_south_outpost_center goblin_south_outpost_center 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_goblin_south_outpost_center goblin_south_outpost_center 256 none none 0 0 100 100 -100 0x0000000320001d9300031ccb000041be000048ba0000361c 
   0 
   0 
  outer_mountains2west 
@@ -788,15 +788,15 @@ scn_rivercross rivercross 256 none none 0 0 100 100 -100 0x000000003008176300098
   0 
   0 
  outer_terrain_plain 
-scn_tld_sorcerer_forest_a tld_sorcerer_forest_a 256 none none 0 0 200 200 -0.5 0xbc675123800409020000424b0000206b000043ce 
+scn_tld_sorcerer_forest_a tld_sorcerer_forest_a 256 none none 0 0 200 200 -0.5 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
  outer_terrain_forest 
-scn_tld_sorcerer_forest_b tld_sorcerer_forest_b 256 none none 0 0 200 200 -0.5 0xbc6759230002c8b000000f6e00006f7d00001e9c 
+scn_tld_sorcerer_forest_b tld_sorcerer_forest_b 256 none none 0 0 200 200 -0.5 0x00000000b00ed9260002c8b000007af400006f7d00001e9c 
   0 
   0 
  outer_terrain_forest 
-scn_tld_sorcerer_forest_c tld_sorcerer_forest_c 256 none none 0 0 200 200 -0.5 0xb7e55217000469130000779000005f5f00007f2f 
+scn_tld_sorcerer_forest_c tld_sorcerer_forest_c 256 none none 0 0 200 200 -0.5 0x00000000b00c9c1c0004691300007af400005f5f00007f2f 
   0 
   0 
  outer_terrain_forest 
@@ -1148,7 +1148,7 @@ scn_esgaroth_castle esgaroth_castle 3 interior_castle_rohan_a bo_interior_castle
   0 
   0 
  0 
-scn_osgiliath_outskirts osgiliath_outskirts 256 none none 0 0 100 100 -100 0x000000003001c80c0002308c000025df00004ec1000041e7  
+scn_osgiliath_outskirts osgiliath_outskirts 256 none none 0 0 100 100 -100 0x0000000030000500000334cc000025df00004ec1000041e7  
   0 
   0 
  outer_terrain_flat 
@@ -1216,11 +1216,11 @@ scn_village_rohan village_rohan 256 none none 0 0 100 100 -100 0x00000000200a98d
   0 
   0 
  outer_terrain_rohan 
-scn_orc_sentry_camp_center_siege orc_sentry_camp_center_siege 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_orc_sentry_camp_center_siege orc_sentry_camp_center_siege 256 none none 0 0 100 100 -100 0x00000003300005000009c5a200000f5200005bd50000739d 
   0 
   0 
  outer_terrain_osgiliath_9 
-scn_uruk_hai_outpost_center_siege uruk_hai_outpost_center_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_uruk_hai_outpost_center_siege uruk_hai_outpost_center_siege 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
@@ -1228,7 +1228,7 @@ scn_uruk_hai_h_camp_center_siege uruk_hai_h_camp_center_siege 256 none none 0 0 
   0 
   0 
  outer_terrain_plain 
-scn_uruk_hai_r_camp_center_siege uruk_hai_r_camp_center_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_uruk_hai_r_camp_center_siege uruk_hai_r_camp_center_siege 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
@@ -1252,7 +1252,7 @@ scn_goblin_north_outpost_center_siege goblin_north_outpost_center_siege 256 none
   0 
   0 
  outer_mountains2west 
-scn_goblin_south_outpost_center_siege goblin_south_outpost_center_siege 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_goblin_south_outpost_center_siege goblin_south_outpost_center_siege 256 none none 0 0 100 100 -100 0x0000000320001d9300031ccb000041be000048ba0000361c 
   0 
   0 
  outer_mountains2west 
@@ -1264,15 +1264,15 @@ scn_village_north village_north 256 none none 0 0 100 100 -100 0x000000003926c93
   0 
   0 
  outer_terrain_plain 
-scn_osgiliath_outskirts_2 osgiliath_outskirts_2 256 none none 0 0 100 100 -100 0x000000003001c80c0002308c000025df00004ec1000041e7 
+scn_osgiliath_outskirts_2 osgiliath_outskirts_2 256 none none 0 0 100 100 -100 0x0000000030000500000334cc000025df00004ec1000041e7 
   0 
   0 
  outer_terrain_flat 
-scn_osgiliath_outskirts_3 osgiliath_outskirts_3 256 none none 0 0 100 100 -100 0x000000003001c80c0002308c000025df00004ec1000041e7 
+scn_osgiliath_outskirts_3 osgiliath_outskirts_3 256 none none 0 0 100 100 -100 0x00000000300005000003d4f1000025df00004ec1000041e7 
   0 
   0 
  outer_terrain_flat 
-scn_osgiliath_outskirts_4 osgiliath_outskirts_4 256 none none 0 0 100 100 -100 0x000000003001c80c0002308c000025df00004ec1000041e7 
+scn_osgiliath_outskirts_4 osgiliath_outskirts_4 256 none none 0 0 100 100 -100 0x00000000300005000003d4f1000025df00004ec1000041e7 
   0 
   0 
  outer_terrain_flat 
