@@ -1648,7 +1648,7 @@ scene_props = [
   (entry_point_get_position,pos1,39),
   (agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
-], 500), #500 hit points
+], 1500), #500 hit points #InVain made higher
 
 ("HD_gate_destructible",sokf_destructible,"HD_gate_door","bo_HD_gate_door",   [
    (ti_on_scene_prop_destroy,
@@ -1664,7 +1664,7 @@ scene_props = [
   (particle_system_burst, "psys_dummy_smoke", pos1, 3),
   (particle_system_burst, "psys_dummy_straw", pos1, 10),
     ]),
-], 1000),#1000 hit points
+], 3000),#1000 hit points #InVain made higher
 
 ("tree_destructible",sokf_destructible|spr_hit_points(600),"tree_e_2","bo_tree_e_2",   [
    (ti_on_scene_prop_destroy,
@@ -2535,6 +2535,62 @@ scene_props = [
 	( "boat_sail_on"                               ,0,"boat_sail_on","0",[]),
 	( "boat_sail_off"                              ,0,"boat_sail_off","0",[]),
 
+# from '': begin (OpenBRF)
+	( "tree_mirkwood_a"                            ,0,"tree_mirkwood_a","bo_tree_mallorn_a",[]),
+	( "tree_mirkwood_b"                            ,0,"tree_mirkwood_b","bo_tree_mallorn_b",[]),
+	( "tree_mirkwood_c"                            ,0,"tree_mirkwood_c","bo_tree_mallorn_c",[]),
+	( "tree_mirkwood_roots_1"                      ,0,"tree_mirkwood_roots_1","0",[]),
+	( "tree_mirkwood_roots_2"                      ,0,"tree_mirkwood_roots_2","0",[]),
+	( "tree_mirkwood_roots_3"                      ,0,"tree_mirkwood_roots_3","0",[]),
+	( "tree_mirkwood_roots_4"                      ,0,"tree_mirkwood_roots_4","0",[]),
+	( "dolmen"                                     ,0,"dolmen","0",[]),
+# from '': end (OpenBRF)
+
+("orc_gate_destructible",sokf_destructible,"orc_gate_destructible","bo_orc_gate_destructible",   [
+   (ti_on_scene_prop_init, [
+    (assign, "$gate_breached",0),
+    (entry_point_get_position,pos1,39), # put aggravator agent for enemies to bash the gate prop
+    (set_spawn_position, pos1),
+    (spawn_agent,"trp_gate_aggravator"),
+    (assign, "$gate_aggravator_agent", reg0),
+    (agent_set_speed_limit, "$gate_aggravator_agent", 1),
+    (agent_set_team, "$gate_aggravator_agent", 6),
+    ] + (is_a_wb_sceneprop==1 and [               # make aggravator a statue (WB Only)
+    (agent_set_no_dynamics, "$gate_aggravator_agent",1),
+    ] or []) + [
+    (team_give_order, 6, grc_everyone, mordr_hold),
+    (team_give_order, 6, grc_everyone, mordr_stand_ground),
+    (team_set_order_position, 6, grc_everyone, pos1),
+  ]),
+   (ti_on_scene_prop_destroy, [
+    (store_trigger_param_1, ":instance_no"),
+    (prop_instance_get_starting_position, pos1, ":instance_no"),
+    (position_rotate_x, pos1, 85),
+    (prop_instance_animate_to_position, ":instance_no", pos1, 400), #animate in 4 second
+    (play_sound, "snd_dummy_destroyed"),
+    (display_message,"@Gate is breached!"),
+    (assign, "$gate_breached",1),
+    (call_script, "script_remove_agent", "$gate_aggravator_agent"), #remove gate aggravator agent
+    
+    (scene_prop_get_num_instances,":max_barriers","spr_ai_limiter_gate_breached"),  #move away all dependent barriers
+    (try_begin),
+      (gt, ":max_barriers",0),
+      (try_for_range,":count",0,":max_barriers"),
+        (scene_prop_get_instance,":instance_no", "spr_ai_limiter_gate_breached", ":count"),
+        (prop_instance_get_starting_position, pos1, ":instance_no"),
+        (position_move_z,pos1,-10000),
+        (prop_instance_set_position,":instance_no",pos1),
+      (try_end),
+    (try_end),
+   ]),
+   (ti_on_scene_prop_hit,
+    [(play_sound, "snd_dummy_hit"),
+  (particle_system_burst, "psys_dummy_smoke", pos1, 3),
+  (particle_system_burst, "psys_dummy_straw", pos1, 10),
+  (entry_point_get_position,pos1,39),
+  (agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
+    ]),
+], 1500), #500 hit points
 
 #InVain props end
 

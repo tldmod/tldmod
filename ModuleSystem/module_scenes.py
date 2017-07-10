@@ -95,11 +95,11 @@ scenes = [
   ("morannon_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
   ("minas_morgul_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
   ("cirith_ungol_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_plain"),
-  ("orc_sentry_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
+  ("orc_sentry_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003300005000009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
   ("isengard_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
-  ("uruk_hai_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_rohan"),
+  ("uruk_hai_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
   ("uruk_hai_h_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007400790b20002c8b0000050d500006f8c00006dbd",[],[],"outer_terrain_plain"),
-  ("uruk_hai_r_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_rohan"),
+  ("uruk_hai_r_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
   ("caras_galadhon_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],["player_chest"],"outer_terrain_forest"),#Kolba
   ("cerin_dolen_center"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("cerin_amroth_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
@@ -215,7 +215,7 @@ scenes = [
 ("dol_guldur_north_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"), #Kolba
 ("woodelf_west_camp_center"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
 ("goblin_north_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
-("goblin_south_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
+("goblin_south_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320001d9300031ccb000041be000048ba0000361c",[],[],"outer_mountains2west"),
 ("woodsmen_village2_center"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
 ("beorning_village_center"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
 ("isengard_center_flooded"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
@@ -280,9 +280,9 @@ scenes = [
 ("small_ford"   ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000235864d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 ("rivercross"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000030081763000989a20000338e00004f2c00005cfb",[],[],"outer_terrain_plain"),
 
-("tld_sorcerer_forest_a" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xbc675123800409020000424b0000206b000043ce",[],[],"outer_terrain_forest"),
-("tld_sorcerer_forest_b" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xbc6759230002c8b000000f6e00006f7d00001e9c",[],[],"outer_terrain_forest"),
-("tld_sorcerer_forest_c" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0xb7e55217000469130000779000005f5f00007f2f",[],[],"outer_terrain_forest"),
+("tld_sorcerer_forest_a" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000001b01917000004e93c00007b15000077bd00004d24",[],[],"outer_terrain_forest"),
+("tld_sorcerer_forest_b" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000000b00ed9260002c8b000007af400006f7d00001e9c",[],[],"outer_terrain_forest"),
+("tld_sorcerer_forest_c" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x00000000b00c9c1c0004691300007af400005f5f00007f2f",[],[],"outer_terrain_forest"),
 
 ("moria_secret_entry" ,sf_generate|sf_auto_entry_points,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 
@@ -405,7 +405,7 @@ scenes = [
 ("esgaroth_castle"      ,sf_indoors|sf_force_skybox, "interior_castle_rohan_a", "bo_interior_castle_i",(-100,-100),(100,100),-100,"0",[],[]),
 
 ## In Vain New Ambience Scenes
-("osgiliath_outskirts" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7 ",[],[],"outer_terrain_flat"),
+("osgiliath_outskirts" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000030000500000334cc000025df00004ec1000041e7 ",[],[],"outer_terrain_flat"),
 
 
 ## In Vain New Siege Scenes
@@ -430,25 +430,25 @@ scenes = [
 ("village_gondor",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000a00005000006118400005c3000004b3400005792",  [],[],"outer_mountains2south"),
 ("village_rohan",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000200a98d00009aa68000069df000021f700001290",  [],[],"outer_terrain_rohan"),
 
-("orc_sentry_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
-("uruk_hai_outpost_center_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_rohan"),
+("orc_sentry_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003300005000009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
+("uruk_hai_outpost_center_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
 ("uruk_hai_h_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007400790b20002c8b0000050d500006f8c00006dbd",[],[],"outer_terrain_plain"),
-("uruk_hai_r_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_rohan"),
+("uruk_hai_r_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
 ("gundabad_ne_outpost_center_siege"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
 ("gundabad_nw_outpost_center_siege"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
 ("gundabad_mirkwood_outpost_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 ("dol_guldur_north_outpost_center_siege",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"), #Kolba
 ("goblin_north_outpost_center_siege",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
-("goblin_south_outpost_center_siege",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2west"),
+("goblin_south_outpost_center_siege",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320001d9300031ccb000041be000048ba0000361c",[],[],"outer_mountains2west"),
 
 ## In Vain Village Scenes Cont'd
 ("village_anduin",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000037220db18006a5aa000061bc80003a9600004852",  [],[],"outer_terrain_plain"),
 ("village_north",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003926c9370007b5ed00006fbf0000026d00001a96",  [],[],"outer_terrain_plain"),
 
 ## In Vain New Ambience Scenes Cont'd (Most versions are identical scenes with changed spawn positions)
-("osgiliath_outskirts_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
-("osgiliath_outskirts_3",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
-("osgiliath_outskirts_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003001c80c0002308c000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
+("osgiliath_outskirts_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000030000500000334cc000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
+("osgiliath_outskirts_3",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000300005000003d4f1000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
+("osgiliath_outskirts_4",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000000300005000003d4f1000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
 ("edoras_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
 ("edoras_outside_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"outer_terrain_rohan"),
 ("hornburg_outside_1",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000002002cab4000765d700007e16000021f700001290",  [],[],"JB_outer_mountains2south_helmsdeep"),
