@@ -950,6 +950,7 @@ tld_move_ai = (0.01, 0, 0, [],
       #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
@@ -975,6 +976,7 @@ tld_ai_kicking = (1, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
@@ -1032,6 +1034,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active, ":agent1"),
@@ -1096,6 +1099,7 @@ tld_melee_ai = (0, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
@@ -1181,6 +1185,7 @@ tld_footwork_melee_ai = (0.25, 0, 0, [],
        #TLD Check
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
 
