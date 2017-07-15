@@ -197,6 +197,7 @@ morale_scripts = [
 			(eq|this_or_next, ":troop_type", "trp_spy_partner_evil"),
 			(eq|this_or_next, ":troop_type", "trp_beorning_carrock_berserker"),
 			(eq|this_or_next, ":troop_type", "trp_variag_gladiator"),
+			(is_between|this_or_next, ":troop_type", "trp_troll_of_moria", "trp_ent"), #Kham - Trolls do not flee.
 			(eq, ":troop_type", "trp_fighting_uruk_hai_berserker"),
 			(assign, reg1, -100),
 		(else_try), # Wargs more likely to flee
