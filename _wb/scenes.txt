@@ -240,11 +240,11 @@ scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0 0 100 100 -1
   0 
   0 
  outer_terrain_rohan 
-scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0 0 100 100 -100 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
+scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0 0 100 100 -100 0x0000000020054b320004390d00003b3500006f8c00006dbd 
   0 
   0 
  outer_terrain_plain 
-scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
+scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0 0 100 100 -100 0x00000003200014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
@@ -1195,7 +1195,7 @@ scn_harad_camp_siege harad_camp_siege 256 none none 0 0 100 100 -100 0x000000072
 scn_khand_camp_siege khand_camp_siege 256 none none 0 0 100 100 -100 0x0000000020040de3000699aa00005234000048ba000004b5 
   0 
   1  833 
- outer_terrain_flat 
+ outer_terrain_rohan 
 scn_north_rhun_camp_siege north_rhun_camp_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
   0 
   1  833 
@@ -1224,11 +1224,11 @@ scn_uruk_hai_outpost_center_siege uruk_hai_outpost_center_siege 256 none none 0 
   0 
   0 
  outer_terrain_rohan 
-scn_uruk_hai_h_camp_center_siege uruk_hai_h_camp_center_siege 256 none none 0 0 100 100 -100 0x00000007400790b20002c8b0000050d500006f8c00006dbd 
+scn_uruk_hai_h_camp_center_siege uruk_hai_h_camp_center_siege 256 none none 0 0 100 100 -100 0x0000000020054b320004390d00003b3500006f8c00006dbd 
   0 
   0 
  outer_terrain_plain 
-scn_uruk_hai_r_camp_center_siege uruk_hai_r_camp_center_siege 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
+scn_uruk_hai_r_camp_center_siege uruk_hai_r_camp_center_siege 256 none none 0 0 100 100 -100 0x00000003200014800002b4aa000074e600006c260000125a 
   0 
   0 
  outer_terrain_rohan 
