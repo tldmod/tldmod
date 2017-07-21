@@ -14,7 +14,7 @@ from module_info import wb_compile_switch as is_a_wb_scene
 #  4) Body name {string}: This is used for indoor scenes only. Use the keyword "none" for outdoor scenes.
 #  5) Min-pos {(float,float)}: minimum (x,y) coordinate. Player can't move beyond this limit.
 #  6) Max-pos {(float,float)}: maximum (x,y) coordinate. Player can't move beyond this limit.
-#  7) Water-level {float}. 
+#  7) Water-level {float}.
 #  8) Terrain code {string}: You can obtain the terrain code by copying it from the terrain generator screen
 #  9) List of other scenes accessible from this scene {list of strings}.
 #     (deprecated. This will probably be removed in future versions of the module system)
@@ -99,7 +99,7 @@ scenes = [
   ("isengard_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
   ("uruk_hai_outpost_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
   ("uruk_hai_h_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000020054b320004390d00003b3500006f8c00006dbd",[],[],"outer_terrain_plain"),
-  ("uruk_hai_r_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
+  ("uruk_hai_r_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200014800002b4aa000074e600006c260000125a",[],[],"JB_outer_terrain_anduin"),
   ("caras_galadhon_center"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],["player_chest"],"outer_terrain_forest"),#Kolba
   ("cerin_dolen_center"     ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("cerin_amroth_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
@@ -108,15 +108,15 @@ scenes = [
   ("woodsmen_village_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
   ("moria_center"           ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],["player_chest"]),
   ("troll_cave_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
- 
-  ] + (is_a_wb_scene==1 and [  
+
+  ] + (is_a_wb_scene==1 and [
   ("dale_center"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d2348000006810000219700002120",[],[],"JB_outer_terrain_tirith_1"),
   ("esgaroth_center"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000730000500000c8f2100002ca5000022aa000031a8",[],[],"JB_outer_terrain_seaside_1"),
   ] or [
   ("dale_center"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200005000007a9ea000006810000219700002120",[],[],"outer_terrain_plain"),
   ("esgaroth_center"        ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x0000000730000500000c8f2100002ca5000022aa000031a8",[],[],"outer_terrain_seaside_1"),
-  ]) + [  
-  
+  ]) + [
+
   ("erebor_center"          ,sf_indoors ,"hallfini", "bo_hallfini_inner_tld",(-100,-200),(100,200),-100,"0",[],[]),
   ("dunland_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
   ("harad_camp_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
@@ -141,7 +141,7 @@ scenes = [
   ("rohan_tavern"  ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("elf_tavern"    ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("mordor_tavern" ,sf_indoors, "interior_tavern_b"    ,"bo_interior_tavern_b"    , (-100,-100),(100,100),-100,"0",["exit"],[]),
-	
+
   ("gondor_prison",sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
   ("rohan_prison" ,sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",["exit"],[]),
   ("mordor_prison",sf_indoors,"interior_prison_a", "bo_interior_prison_a", (-100,-100),(100,100),-100,"0",[],[]),
@@ -184,11 +184,11 @@ scenes = [
 ## Abhuva TLD Battlefield Scenes
 ## Plain Battle Field with a small farm and a road crossing the map
 ("battle_scene_plain_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x000000023001c600000691a400003efe00004b34000059be",[],[], "outer_terrain_plain"),
-## Plain Battle Field with a road crossing the map and a river with small bridge, lake with a fisher-house    
+## Plain Battle Field with a road crossing the map and a river with small bridge, lake with a fisher-house
 ("battle_scene_plain_02",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"),
-## Plain Bridge Battle with destroyed buildings    
+## Plain Bridge Battle with destroyed buildings
 ("bridge_1",sf_generate,"none", "none", (0,0),(120,120),-100,"0x3a078bb2000589630000667200002fb90000179c",[],[], "outer_terrain_plain"),
-## Mountain Forest with mines    
+## Mountain Forest with mines
 ("battle_scene_mountain_forest_01",sf_generate|sf_auto_entry_points,"none", "none", (0,0),(240,240),-0.5,"0x0000000230054800000691a400003efe00004b34000011d9",[],[], "outer_terrain_plain"),
 
 ("aw_tomb"              ,sf_indoors,"aw_tomb"                       , "bo_aw_tomb"                  , (-100,-100),(240,240),-100,"0",[],[]),
@@ -224,26 +224,26 @@ scenes = [
 
 ("thranduil_hall_room"     ,sf_indoors|sf_force_skybox,"thranduil_hall", "bo_thranduil_hall", (-100,-100),(100,100),-100,"0",[],["player_chest"]),
 ("random_scene_parade"  ,sf_generate|sf_randomize,"none","none",(0,0),(220,220),-0.5,"0x000000023c602800000691a400003efe00004b34000059be",[],[],"outer_terrain_forest"),#GA, faction troops parade
- 
+
 ("beorn_castle",sf_indoors,"interior_castle_rohan_b","bo_interior_castle_j",(-100,-100),(100,100),-100,"0",[],["player_chest"]),
 ("moria_castle",sf_indoors,"interior_round_isengard","bo_interior_round_isengard",(-100,-100),(100,100),-100,"0",[],[]),
 ("hornburg_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000240002800000691a400003efe00004b34000059be",[],[]),
 ("morannon_castle",sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],["player_chest"],"outer_mountains2west_mordor"),
 
-# Legendary places  
+# Legendary places
 ("amon_hen"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000630000500000c2304000003ce000047ca0000794b",[],[],"outer_terrain_osgiliath_9"),
 ("deadmarshes",sf_generate|sf_auto_entry_points,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_flat"),
 ("mirkwood"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 ("fangorn"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000000bc62c90d0002308c000048850000786900001ef5",[],[],"outer_terrain_forest"),
 
-# Siege scenes  
+# Siege scenes
 ("cair_andros_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
 
-] + (is_a_wb_scene==1 and [  
+] + (is_a_wb_scene==1 and [
 ("dale_siege"          ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000330000500000d2348000006810000219700002120",[],[],"JB_outer_terrain_tirith_1"),
 ] or [
 ("dale_siege"          ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000003200005000007a9ea000006810000219700002120",[],[],"outer_terrain_plain"),
-]) + [ 
+]) + [
 
 ("west_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
 ("minas_tirith_siege"  ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
@@ -433,7 +433,7 @@ scenes = [
 ("orc_sentry_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003300005000009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
 ("uruk_hai_outpost_center_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
 ("uruk_hai_h_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000020054b320004390d00003b3500006f8c00006dbd",[],[],"outer_terrain_plain"),
-("uruk_hai_r_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200014800002b4aa000074e600006c260000125a",[],[],"outer_terrain_rohan"),
+("uruk_hai_r_camp_center_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200014800002b4aa000074e600006c260000125a",[],[],"JB_outer_terrain_anduin"),
 ("gundabad_ne_outpost_center_siege"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
 ("gundabad_nw_outpost_center_siege"     ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730001d9300031ccb0000156f000048ba0000361c",[],[],"outer_mountains2north"),
 ("gundabad_mirkwood_outpost_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
