@@ -440,6 +440,15 @@ tld_common_siege_init = (
     (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
     ])
 
+tld_common_siege_set_slot = (
+  ti_on_agent_spawn, 0, 0, [],
+        [
+          (store_trigger_param_1, ":agent_no"),
+          (agent_is_human, ":agent_no"),
+          (agent_is_alive, ":agent_no"),
+          (agent_set_slot, ":agent_no", slot_agent_arena_team_set,0),
+        ])
+
 tld_common_siege_ai_trigger_init = (
   ti_before_mission_start, 0, 0,[
     (assign, "$defender_team"  , 0),
@@ -2720,6 +2729,7 @@ mission_templates = [ # not used in game
     common_deathcam_triggers+
     tld_siege_battle_scripts+[
 
+    tld_common_siege_set_slot,
     tld_common_siege_start,
 		common_battle_tab_press,
 	  tld_common_siege_question_answered,

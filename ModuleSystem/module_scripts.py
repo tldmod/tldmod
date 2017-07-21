@@ -1891,6 +1891,7 @@ scripts = [
 	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
 	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - ON by default
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
+	
 
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
 	#	(set_position_delta, -3.0,6.0,65.0),
