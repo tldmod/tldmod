@@ -19642,19 +19642,36 @@ scripts = [
 	(modify_visitors_at_site, "$rescue_final_scene"),
 	(call_script, "script_set_infiltration_companions"),
 	(set_visitor, 10, "trp_black_numenorean_sorcerer", 0),
+#InVain: defining sorcerer's bodyguard by player level instead of randomly. Did not touch guard_troops above in case they're used anywhere else.
+	(store_character_level, ":player_level", "trp_player"),
+
 	(try_begin),
-		(is_between, "$meta_alarm", 0, 4),
-		(set_visitor, 11, "$guard_troop2", 0),(set_visitor, 12, "$guard_troop2", 0),(set_visitor, 13, "$guard_troop3", 0),(set_visitor, 14, "$guard_troop3", 0),(set_visitor, 15, "$guard_troop3", 0),(set_visitor, 16, "$guard_troop4", 0),(set_visitor, 17, "$guard_troop4", 0),(set_visitor, 18, "$guard_troop5", 0),(set_visitor, 19, "$guard_troop5", 0),(set_visitor, 20, "$guard_troop6", 0),
+		(lt, ":player_level", 20),
+			#InVain: First 5 entry points are around the sorcerer
+			(set_visitors, 11, "trp_orc_of_mordor", 3),(set_visitors, 12, "trp_orc_archer_of_mordor", 3),(set_visitors, 13, "trp_black_numenorean_renegade", 3),(set_visitors, 14, "trp_black_numenorean_warrior", 2),(set_visitors, 15, "trp_black_numenorean_veteran_warrior", 1),
+			#InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
+			(set_visitors, 16, "trp_large_orc_of_mordor", 2),(set_visitors, 17, "trp_fell_orc_of_mordor", 2),(set_visitors, 18, "trp_orc_archer_of_mordor", 2),(set_visitors, 19, "trp_large_orc_of_mordor", 2),(set_visitors, 20, "trp_black_numenorean_veteran_warrior", 2),
 	(else_try),
-		(is_between, "$meta_alarm", 4, 7),
-		(set_visitor, 11, "$guard_troop3", 0),(set_visitor, 12, "$guard_troop3", 0),(set_visitor, 13, "$guard_troop4", 0),(set_visitor, 14, "$guard_troop4", 0),(set_visitor, 15, "$guard_troop4", 0),(set_visitor, 16, "$guard_troop5", 0),(set_visitor, 17, "$guard_troop5", 0),(set_visitor, 18, "$guard_troop6", 0),(set_visitor, 19, "$guard_troop6", 0),(set_visitor, 20, "$guard_troop7", 0),
-	(else_try),
-		(is_between, "$meta_alarm", 7, 9),
-		(set_visitor, 11, "$guard_troop4", 0),(set_visitor, 12, "$guard_troop4", 0),(set_visitor, 13, "$guard_troop5", 0),(set_visitor, 14, "$guard_troop5", 0),(set_visitor, 15, "$guard_troop5", 0),(set_visitor, 16, "$guard_troop6", 0),(set_visitor, 17, "$guard_troop6", 0),(set_visitor, 18, "$guard_troop7", 0),(set_visitor, 19, "$guard_troop7", 0),(set_visitor, 20, "$guard_troop8", 0),
-	(else_try),
-		(ge, "$meta_alarm", 9),
-		(set_visitor, 11, "$guard_troop5", 0),(set_visitor, 12, "$guard_troop6", 0),(set_visitor, 13, "$guard_troop6", 0),(set_visitor, 14, "$guard_troop7", 0),(set_visitor, 15, "$guard_troop7", 0),(set_visitor, 16, "$guard_troop8", 0),(set_visitor, 17, "$guard_troop8", 0),(set_visitor, 18, "$guard_troop9", 0),(set_visitor, 19, "$guard_troop10",0),(set_visitor, 20, "$guard_troop10",0),
+		(ge, ":player_level", 20), #Don't change numbers, only troop types. Sorcerer's behavior (flee or join the fight) is conditioned by number of remaining troops.
+			#InVain: First 5 entry points are around the sorcerer
+			(set_visitors, 11, "trp_large_orc_of_mordor", 3),(set_visitors, 12, "trp_large_orc_archer_of_mordor", 3),(set_visitors, 13, "trp_black_numenorean_warrior", 3),(set_visitors, 14, "trp_black_numenorean_veteran_warrior", 2),(set_visitors, 15, "trp_black_numenorean_champion", 1),
+			#InVain: Last 5 entry points are further away, troops will arrive later. If he flees, you will encounter them on the way.
+			(set_visitors, 16, "trp_fell_orc_of_mordor", 2),(set_visitors, 17, "trp_fell_uruk_of_mordor", 2),(set_visitors, 18, "trp_fell_orc_archer_of_mordor", 2),(set_visitors, 19, "trp_fell_orc_of_mordor", 2),(set_visitors, 20, "trp_black_numenorean_champion", 2),
 	(try_end),
+	
+#	(try_begin),
+#		(is_between, "$meta_alarm", 0, 4),
+#		(set_visitor, 11, "$guard_troop2", 0),(set_visitor, 12, "$guard_troop2", 0),(set_visitor, 13, "$guard_troop3", 0),(set_visitor, 14, "$guard_troop3", 0),(set_visitor, 15, "$guard_troop3", 0),(set_visitor, 16, "$guard_troop4", 0),(set_visitor, 17, "$guard_troop4", 0),(set_visitor, 18, "$guard_troop5", 0),(set_visitor, 19, "$guard_troop5", 0),(set_visitor, 20, "$guard_troop6", 0),
+#	(else_try),
+#		(is_between, "$meta_alarm", 4, 7),
+#		(set_visitor, 11, "$guard_troop3", 0),(set_visitor, 12, "$guard_troop3", 0),(set_visitor, 13, "$guard_troop4", 0),(set_visitor, 14, "$guard_troop4", 0),(set_visitor, 15, "$guard_troop4", 0),(set_visitor, 16, "$guard_troop5", 0),(set_visitor, 17, "$guard_troop5", 0),(set_visitor, 18, "$guard_troop6", 0),(set_visitor, 19, "$guard_troop6", 0),(set_visitor, 20, "$guard_troop7", 0),
+#	(else_try),
+#		(is_between, "$meta_alarm", 7, 9),
+#		(set_visitor, 11, "$guard_troop4", 0),(set_visitor, 12, "$guard_troop4", 0),(set_visitor, 13, "$guard_troop5", 0),(set_visitor, 14, "$guard_troop5", 0),(set_visitor, 15, "$guard_troop5", 0),(set_visitor, 16, "$guard_troop6", 0),(set_visitor, 17, "$guard_troop6", 0),(set_visitor, 18, "$guard_troop7", 0),(set_visitor, 19, "$guard_troop7", 0),(set_visitor, 20, "$guard_troop8", 0),
+#	(else_try),
+#		(ge, "$meta_alarm", 9),
+#		(set_visitor, 11, "$guard_troop5", 0),(set_visitor, 12, "$guard_troop6", 0),(set_visitor, 13, "$guard_troop6", 0),(set_visitor, 14, "$guard_troop7", 0),(set_visitor, 15, "$guard_troop7", 0),(set_visitor, 16, "$guard_troop8", 0),(set_visitor, 17, "$guard_troop8", 0),(set_visitor, 18, "$guard_troop9", 0),(set_visitor, 19, "$guard_troop10",0),(set_visitor, 20, "$guard_troop10",0),
+#	(try_end),
  ]),
 #script_set_infiltration_companions
 ("set_infiltration_companions",[

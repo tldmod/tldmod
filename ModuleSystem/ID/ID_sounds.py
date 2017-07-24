@@ -276,5 +276,6 @@ snd_spider_die = 274
 snd_new_rank_evil = 275
 snd_new_rank_good = 276
 snd_woman_yell = 277
+snd_ghost_ambient_long = 278
 
 
