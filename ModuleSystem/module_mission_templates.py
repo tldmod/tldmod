@@ -364,6 +364,10 @@ tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
   [
     (try_begin),
       (store_current_scene, ":cur_scene"),
+      (this_or_next|eq,  ":cur_scene", "scn_morannon_outside_1"),
+      (this_or_next|eq,  ":cur_scene", "scn_morannon_outside_2"),																 
+      (this_or_next|eq,  ":cur_scene", "scn_morannon_center"),
+      (this_or_next|eq,  ":cur_scene", "scn_morannon_siege"),																 
       (this_or_next|eq,  ":cur_scene", "scn_deadmarshes"),
       (this_or_next|eq,  ":cur_scene", "scn_fangorn"),
       (this_or_next|eq,  ":cur_scene", "scn_mirkwood"),
@@ -4294,7 +4298,7 @@ mission_templates = [ # not used in game
 			(else_try),
 				(eq, ":slot1", 1),
 				(agent_set_animation, ":agent", "anim_defend_up_staff_keep"),
-		#        	(play_sound, [opmask_sound]119, 0),
+		        	(play_sound, snd_ghost_ambient_long, 0), #spooky
 				(assign, ":numenemies", 0),
 				(try_for_agents, ":enemies"),
 					(agent_is_alive, ":enemies"),
@@ -4302,7 +4306,7 @@ mission_templates = [ # not used in game
 					(val_add, ":numenemies", 1),
 				(try_end),
 				(try_begin),
-					(neg|gt, ":numenemies", 6),
+					(neg|gt, ":numenemies", 21), #InVain: Adjusted this to fit the bigger bodyguard
 					(agent_set_slot, ":agent", 1, 2),
 				#(else_try),
 				#	
@@ -4319,6 +4323,7 @@ mission_templates = [ # not used in game
 				(else_try),
 					(ge, ":rnd", 2),
 					(agent_clear_scripted_mode, ":agent"),
+          (display_message, "@The_sorcerer_has_joined_the_fight!_Kill_him!", 4294967040),			  
 					(agent_set_slot, ":agent", 1, 4),
 				(try_end),
 			(else_try),
@@ -4345,6 +4350,7 @@ mission_templates = [ # not used in game
 			(quest_set_slot,"qst_mirkwood_sorcerer",slot_quest_current_state,2),
 			(display_message, "@The_sorcerer_is_dead!", 4294967040),
 			(call_script, "script_succeed_quest","qst_mirkwood_sorcerer"),
+      (finish_mission,5), #InVain So you don't have to search for the remaining enemies once the sorcerer's dead																	   
 			(eq,"$rescue_stage",1), #dummy usage of global var
 		#    (scene_prop_get_instance, ":local1", [opmask_scene_prop]528, 0),
 		#    (prop_instance_get_position, pos1, ":local1"),

@@ -3679,7 +3679,7 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-#	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
+	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
 	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("defend_village", [], "Defend Village", [(assign, "$cheat_imposed_quest", "qst_defend_village")]),

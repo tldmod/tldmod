@@ -3127,7 +3127,7 @@ troops = [
       def_attrib|level(12),wp(90),knows_prisoner_management_1|knows_inventory_management_1|knows_pathfinding_1|knows_athletics_2|knows_power_strike_2|knows_ironflesh_3,mercenary_face_1,mercenary_face_2],
 ["black_numenorean_sorcerer","Black_Numenorean_Sorcerer","Black_numenorean_sorcerer", tfg_armor| tfg_helm| tfg_boots,0,0,fac_mordor,
    [itm_m_cap_armor,itm_mordor_helm,itm_mordor_sword,itm_leather_boots,],
-      def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,mercenary_face_1,mercenary_face_2],
+      def_attrib|level(45),wp(400),knows_common|knows_athletics_10|knows_power_strike_6|knows_ironflesh_10,mercenary_face_1,mercenary_face_2],
 ["black_numenorean_acolyte","Black_Numenorean_Acolyte","Black_Numenorean_Acolytes",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
    [itm_leather_boots,itm_leather_gloves,itm_evil_light_armor,itm_uruk_spear,],
       attr_tier_2,wp_tier_2,knows_common|knows_athletics_1|knows_power_strike_1,mordor_man1,mordor_man2],
