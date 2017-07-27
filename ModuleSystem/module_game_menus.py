@@ -126,6 +126,7 @@ game_menus = [
     "^^^^^______________Middle Earth. A shadow is growing in the East, ^______________and dark things come forth that have long been hidden. ^______________The free peoples prepare for war, the like of which has not been seen for an age. ^______________Men, Elves, Dwarves and Orcs; all will play their part. ^^______________What part, however, remains to be seen... ",
     "none",
    [#(set_background_mesh, "mesh_ui_default_menu_window"),
+	(assign, "$tld_game_options",0),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
 		(set_show_messages,0),
 		#(call_script,"script_TLD_troop_banner_slot_init"),
@@ -165,6 +166,7 @@ game_menus = [
         (call_script, "script_get_player_party_morale_values"),
         (party_set_morale, "p_main_party", reg0),
 		(assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
+		(assign, "$tld_game_options",1),
 		# TEMP: a spear for everyone
 		#(troop_add_item, "trp_player","itm_rohan_lance_standard",0),
 		##   (troop_add_item, "trp_player","itm_horn",0),
@@ -174,6 +176,8 @@ game_menus = [
         #(change_screen_map), #(change_screen_return),
          (jump_to_menu,"mnu_unified_start_quest"), # Start Quest - Kham
        ]),
+	  ("spacer",[],"_",[]),
+	  ("change_tld_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
 	  ("spacer",[],"_",[]),
 	]+concatenate_scripts([[
       ("cheat00",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"),
@@ -191,17 +195,10 @@ game_menus = [
       ("cheat03",[(eq, cheat_switch, 1),(str_store_troop_name_plural,s21,"$player_current_troop_type")],"CHEAT: add 10 {s21} to party",
 	  [(party_add_members, "p_main_party", "$player_current_troop_type", 10),	  
 	  ]),
-	] for ct in range(cheat_switch)])+[	
-      #("cheat02",[],"CHEAT!",    ]+concatenate_scripts([[     ] for ct in range(cheat_switch)])+[	
-      # [
-         #(try_for_range, ":cur_place", scenes_begin, scenes_end),
-         #  (scene_set_slot, ":cur_place", slot_scene_visited, 1),
-         #(try_end),
-         #(call_script, "script_get_player_party_morale_values"),
-         #(party_set_morale, "p_main_party", reg0),
-       #  ]),
+	] for ct in range(cheat_switch)])+[	 
     ]
  ),
+
 # This needs to be the third window!!!  
 ( "start_game_3",mnf_disable_all_keys,
     "^^^^^^^^Choose your scenario:",
@@ -1871,7 +1868,7 @@ game_menus = [
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
-   ("camp_mvtest_expwar",[(eq, cheat_switch, 1),(eq,"$tld_war_began",0)],"Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@9000 XP added - now wait for the War...", 0x30FFC8),]),
+   ("camp_mvtest_expwar",[(eq, cheat_switch, 1),(eq,"$tld_war_began",0)],"Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@9000 XP added - now wait for the War...(assumes war starts at level 8)", 0x30FFC8),]),
    ("camp_mvtest_evilwar",[(eq, cheat_switch, 1),(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -3086,60 +3083,82 @@ game_menus = [
 ( "game_options",0,
 	"^^^^^^^^Click on an option to toggle:","none",[],
     [
+
+    ("game_options_war_level_start",[
+
+    		(assign, reg0, "$tld_player_level_to_begin_war"),
+			(str_store_string, s1, "@{reg0}")],
+
+		"War Starts at Level: {s1}",[
+			(store_add, "$tld_player_level_to_begin_war", 2, "$tld_player_level_to_begin_war"),
+			(try_begin),
+				(gt, "$tld_player_level_to_begin_war", 21),
+				(assign, "$tld_player_level_to_begin_war",2),
+			(try_end),(jump_to_menu, "mnu_auto_options")]),
+
     ("game_options_restrict_items",[(try_begin),(eq,"$tld_option_crossdressing",0),(str_store_string, s7, "@ON"),
 									(else_try),(str_store_string, s7, "@OFF (cheat)"),(try_end),
         ],"Restricted player equipment:  {s7}",[
-        (store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"),(val_clamp, "$tld_option_crossdressing", 0, 2)]),
+        (store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"),(val_clamp, "$tld_option_crossdressing", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
     ("game_options_formations",[(try_begin),(neq, "$tld_option_formations", 0),(str_store_string, s7, "@ON"),
 								(else_try),(str_store_string, s7, "@OFF"),(try_end),
         ],"Battle formations and AI:  {s7}",[
-        (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),(val_clamp, "$tld_option_formations", 0, 2)]),
+        (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),(val_clamp, "$tld_option_formations", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
 	("game_options_town_menu",[(try_begin),(eq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
 								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
 	    ],"Town NPCs always accessible from Menus:  {s7}",[
-	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2)]),
+	    (store_sub,"$tld_option_town_menu_hidden",1,"$tld_option_town_menu_hidden"),(val_clamp,"$tld_option_town_menu_hidden",0,2),(jump_to_menu, "mnu_auto_options"),]),
 
 	("game_options_cutscenes",[(try_begin),(neq, "$tld_option_cutscenes", 0),(str_store_string, s7, "@ON"),
 								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
 	    ],"Cutscenes:  {s7}",[
-	    (store_sub,"$tld_option_cutscenes",1,"$tld_option_cutscenes"),(val_clamp, "$tld_option_cutscenes",0,2)]),
+	    (store_sub,"$tld_option_cutscenes",1,"$tld_option_cutscenes"),(val_clamp, "$tld_option_cutscenes",0,2),(jump_to_menu, "mnu_auto_options"),]),
 
 	("game_options_injuries",[(try_begin),(neq, "$tld_option_injuries", 0),(str_store_string, s7, "@ON"),
                                   (else_try),(str_store_string, s7, "@OFF"),(try_end),
 	    ],"Injuries for companions:  {s7}.",[
-		(store_sub,"$tld_option_injuries",1,"$tld_option_injuries"),(val_clamp,"$tld_option_injuries",0,2)]),
+		(store_sub,"$tld_option_injuries",1,"$tld_option_injuries"),(val_clamp,"$tld_option_injuries",0,2),(jump_to_menu, "mnu_auto_options"),]),
  
 	("game_options_death",[(try_begin),(neq, "$tld_option_death_npc", 0),(str_store_string, s7, "@ON"),
 							(else_try),(str_store_string, s7, "@OFF"),(try_end),
 	    ],"Permanent death for lords and companions:  {s7}.",[
-	     (store_sub, "$tld_option_death_npc", 1, "$tld_option_death_npc"),(val_clamp, "$tld_option_death_npc", 0, 2)]),
+	     (store_sub, "$tld_option_death_npc", 1, "$tld_option_death_npc"),(val_clamp, "$tld_option_death_npc", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
 	("game_options_death2",[(try_begin),(neq, "$tld_option_death_player", 0),(str_store_string, s7, "@ON"),
 							(else_try),(str_store_string, s7, "@OFF"),(try_end),
 	    ],"Permanent death for player (that is YOU!):  {s7}.",[
-	     (store_sub, "$tld_option_death_player", 1, "$tld_option_death_player"),(val_clamp, "$tld_option_death_player", 0, 2)]),
+	     (store_sub, "$tld_option_death_player", 1, "$tld_option_death_player"),(val_clamp, "$tld_option_death_player", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
     ("game_options_morale",[(try_begin),(eq,"$tld_option_morale",1),(str_store_string, s7, "@ON"),
 									(else_try),(str_store_string, s7, "@OFF"),(try_end),
         ],"Battle morale system:  {s7}",[
-        (store_sub, "$tld_option_morale", 1, "$tld_option_morale"),(val_clamp, "$tld_option_morale", 0, 2)]),
+        (store_sub, "$tld_option_morale", 1, "$tld_option_morale"),(val_clamp, "$tld_option_morale", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
     ("game_options_animal_ambushes",[(try_begin),(eq,"$tld_option_animal_ambushes",1),(str_store_string, s7, "@ON"),
 									(else_try),(str_store_string, s7, "@OFF"),(try_end),
         ],"Animal ambushes:  {s7}",[
-        (store_sub, "$tld_option_animal_ambushes", 1, "$tld_option_animal_ambushes"),(val_clamp, "$tld_option_animal_ambushes", 0, 2)]),
+        (store_sub, "$tld_option_animal_ambushes", 1, "$tld_option_animal_ambushes"),(val_clamp, "$tld_option_animal_ambushes", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
     ("game_options_horse_ko",[(try_begin),(eq,"$show_mount_ko_message",1),(str_store_string, s7, "@All messages"),
 									(else_try),(str_store_string, s7, "@Player damage only"),(try_end),
         ],"Fallen rider damage messages:  {s7}",[
-        (store_sub, "$show_mount_ko_message", 1, "$show_mount_ko_message"),(val_clamp, "$show_mount_ko_message", 0, 2)]),
+        (store_sub, "$show_mount_ko_message", 1, "$show_mount_ko_message"),(val_clamp, "$show_mount_ko_message", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
     ("game_options_tweaks",[],"Gameplay tweaks...",[(jump_to_menu, "mnu_camp_tweaks")]),
 
-    ("game_options_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+    ("game_options_back",[(eq, "$tld_game_options", 1)],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+
+    ("game_options_start_back",[(eq, "$tld_game_options", 0)],"Back.",[(jump_to_menu, "mnu_start_phase_2")]),
  ]),
+
+( "auto_options",0,
+    "This menu automatically returns to caller.",
+    "none",
+    [(jump_to_menu, "mnu_game_options")],[]
+ ),
+
 
 ( "camp_tweaks",0,
 	"^^^^^^^^Choose an option that you would like to adjust.","none",[],
@@ -3184,6 +3203,7 @@ game_menus = [
 					(assign, "$tld_option_max_parties", tld_party_count_option_min),
 				(try_end),
 			(try_end),
+			(jump_to_menu, "mnu_auto_compat_tweak"),
 		]),
 
     		("game_options_compat_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
@@ -3203,7 +3223,8 @@ game_menus = [
       (try_end),
         ],"Siege strength requirements: {s7}",[
         (val_add, "$tld_option_siege_reqs", 1),
-        (val_mod, "$tld_option_siege_reqs", 3),]), #0-2
+        (val_mod, "$tld_option_siege_reqs", 3),#0-2
+        (jump_to_menu, "mnu_auto_strat_tweak")]), 
 
     ("strat_tweaks_siege_relax_rate",[
       (val_max, "$tld_option_siege_relax_rate", 50), #deals with old saves
@@ -3213,7 +3234,8 @@ game_menus = [
         (try_begin),
           (eq, "$tld_option_siege_relax_rate", 400),
           (assign, "$tld_option_siege_relax_rate", 50),
-        (try_end),]), #50, 100, 200
+        (try_end),#50, 100, 200
+        (jump_to_menu, "mnu_auto_strat_tweak")]), 
         
     ("strat_tweaks_regen_rate",[
       (try_begin),
@@ -3227,7 +3249,8 @@ game_menus = [
       (try_end),
         ],"Strength regen rate: {s7}",[
         (val_add, "$tld_option_regen_rate", 1),
-        (val_mod, "$tld_option_regen_rate", 4),]), #0,1,2,3
+        (val_mod, "$tld_option_regen_rate", 4), #0,1,2,3
+        (jump_to_menu, "mnu_auto_strat_tweak")]), 
         
     ("strat_tweaks_siege_regen_limit",[
       (val_max, "$tld_option_regen_limit", 500), #deals with old saves
@@ -3237,7 +3260,8 @@ game_menus = [
         (try_begin),
           (eq, "$tld_option_regen_limit", 2500),
           (assign, "$tld_option_regen_limit", 500),
-        (try_end),]), #500/1000/1500/2000
+        (try_end), #500/1000/1500/2000
+        (jump_to_menu, "mnu_auto_strat_tweak")]), 
 
     #swy-- added these two by per khamukkamu request, they make sense:
     ("strat_tweaks_influence_gain_rate",
@@ -3260,6 +3284,7 @@ game_menus = [
       [
         (val_add, "$tld_option_influence_gain_rate", 1),
         (val_mod, "$tld_option_influence_gain_rate", 4),
+        (jump_to_menu, "mnu_auto_strat_tweak"),
       ]
     ), #0,1,2,3
 
@@ -3283,11 +3308,24 @@ game_menus = [
       [
         (val_add, "$tld_option_rank_gain_rate", 1),
         (val_mod, "$tld_option_rank_gain_rate", 4),
+        (jump_to_menu, "mnu_auto_strat_tweak"),
       ]
     ), #0,1,2,3
 
     ("strat_tweaks_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
  ]),
+
+( "auto_strat_tweak",0,
+    "This menu automatically returns to caller.",
+    "none",
+    [(jump_to_menu, "mnu_camp_strat_tweaks")],[]
+ ),
+
+( "auto_compat_tweak",0,
+    "This menu automatically returns to caller.",
+    "none",
+    [(jump_to_menu, "mnu_camp_compat_tweaks")],[]
+ ),
 
  
 #-swy- Nothing leads to this menu, not even with cheats/dev thingie on, probably disabled for a good reason.

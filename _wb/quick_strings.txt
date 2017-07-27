@@ -750,7 +750,7 @@ qstr_Spawned_routed_parti Spawned_routed_parties!
 qstr_Party_count:_{reg0} Party_count:_{reg0}
 qstr_Party_position__{reg Party_position_({reg2},{reg3}).
 qstr_You_have_been_pimped You_have_been_pimped_up!
-qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...
+qstr_9000_XP_added___now_ 9000_XP_added_-_now_wait_for_the_War...(assumes_war_starts_at_level_8)
 qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
 qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0},_influence_to_{reg1}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!

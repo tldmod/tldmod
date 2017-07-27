@@ -1891,6 +1891,7 @@ scripts = [
 	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
 	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - ON by default
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
+	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
 	
 
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
