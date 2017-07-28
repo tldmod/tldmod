@@ -3255,7 +3255,7 @@ game_menus = [
     ("strat_tweaks_siege_regen_limit",[
       (val_max, "$tld_option_regen_limit", 500), #deals with old saves
       (assign, reg1, "$tld_option_regen_limit"),
-        ],"Factions don't regen below: {reg1}",[
+        ],"Faction strength regenerate slower at: {reg1}",[
         (val_add, "$tld_option_regen_limit", 500),
         (try_begin),
           (eq, "$tld_option_regen_limit", 2500),
@@ -4433,6 +4433,7 @@ game_menus = [
     [
       ("leave_behind",[],"Go on. The sacrifice of these men will save the rest.",[
           (assign, ":num_casualties", reg4),
+          (display_message, "@{reg4} will be lost."),
           (try_for_range, ":unused", 0, ":num_casualties"),
             (call_script, "script_cf_party_remove_random_regular_troop", "p_main_party"),
             (assign, ":lost_troop", reg0),
@@ -4461,9 +4462,11 @@ game_menus = [
               (call_script, "script_add_log_entry", logent_player_retreated_from_lord_cowardly, "trp_player",  -1, ":stack_troop", ":victorious_faction"),
           (try_end),
 ###Troop commentary changes end  
-		# This is here so when you flee it checks for routed parties -CC
-	  (try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
-          (leave_encounter),(change_screen_return)]),
+
+			# This is here so when you flee it checks for routed parties -CC
+		  (try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
+		  (party_ignore_player, "$g_encountered_party", 1), #Kham - Fix
+	      (leave_encounter),(change_screen_return)]),
     ]
  ),
 ( "order_attack_begin",0,

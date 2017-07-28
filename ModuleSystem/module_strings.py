@@ -986,7 +986,7 @@ strings = [
 #backstory main body
   ("npc1_backstory_b", "You should know that I am an Ithilien Ranger of Dúnedain descent and valor. I know much of tracking and scouting and my skill with bow and sword is known to the orc. I can also train any soul that's willing to fight the coming Shadow."),
   ("npc2_backstory_b", "I have been trained as a Minas Tirith watchman, to keep order in the White City and serve my lord Steward."),
-  ("npc3_backstory_b", "I am a Rider of the West Emnet éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return."),
+  ("npc3_backstory_b", "I am a Rider of the Westfold éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return."),
   ("npc4_backstory_b", "I was born into a noble family and I have been serving Lady Éowyn as a maid of honour ever since we were little girls. Our fathers were wise enough to allow us to train alongside our brothers in matters of combat, to become shieldmaidens of Rohan."),
   ("npc5_backstory_b", "Lord Elrond sent me as an emissary to Lord Celeborn, to give aid and advice as it's needed in the War in this part of Rhovanion."),
   ("npc6_backstory_b", "I like to walk the hidden paths in our beautiful forest. Sometimes I move quietly through the trees and observe the habits of the many woodland animals. The song of a rare bird, the nesting of a wild boar are as beautiful to me as the clash of weapons and great walls are to the Edain."),

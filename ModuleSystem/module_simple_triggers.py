@@ -447,7 +447,7 @@ simple_triggers = [
       (try_end),
       #TLD, grow faction strength with time from center income
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),  
-	     (faction_slot_ge, ":faction_no", slot_faction_strength, "$tld_option_regen_limit"), #was 1: no annoying regen for dying factions (<500/1000/1500)
+	     #(faction_slot_ge, ":faction_no", slot_faction_strength, "$tld_option_regen_limit"), #was 1: no annoying regen for dying factions (<500/1000/1500)  - Kham removed to allow regen.
 	     (faction_get_slot, ":strength", ":faction_no", slot_faction_strength_tmp),
          (faction_get_slot, ":debug_gain", ":faction_no", slot_faction_debug_str_gain), #debug
 		 #(val_add,":strength",ws_faction_restoration), #old flat rate, obsolete
@@ -464,7 +464,8 @@ simple_triggers = [
              (assign, ":strength_income", 0),
            (else_try), #halved income
              (this_or_next|eq, "$tld_war_began", 0),
-             (eq, "$tld_option_regen_rate", 1),
+             (this_or_next|eq, "$tld_option_regen_rate", 1),
+             (le, ":strength", "$tld_option_regen_limit"), #Kham - Let weak factions regen with half income
              (val_div, ":strength_income", 2), #halve income before the War
              (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
              (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
@@ -2587,6 +2588,10 @@ simple_triggers = [
 		(faction_slot_eq, ":faction", slot_faction_state, sfs_active),
 		(faction_get_slot, ":active_theater", ":faction", slot_faction_active_theater),
 		(neg|faction_slot_eq, ":faction", slot_faction_home_theater, ":active_theater"), #not in home theater
+
+    (faction_get_slot, ":strength", ":faction", slot_faction_strength),
+    (gt, ":strength", fac_str_very_weak), #Kham- don't create adv camps when at 1000
+
 		(faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
 		(neg|party_is_active, ":adv_camp"), #not already established
 

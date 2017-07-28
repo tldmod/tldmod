@@ -1,4 +1,4 @@
-1357
+1358
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -843,6 +843,7 @@ qstr_A_group_of_{s1}_is_{ A_group_of_{s1}_is_{s10}_toward_you.
 qstr_You_are_attacking_a_ You_are_attacking_a_group_of_{s1}.
 qstr_The_battle_against_t The_battle_against_the_group_of_{s1}_continues.
 qstr_CHEAT:_healed!!! CHEAT:_healed!!!
+qstr_{reg4}_will_be_lost. {reg4}_will_be_lost.
 qstr_{s13}_asked_you_to_r {s13}_asked_you_to_report_to_him_with_at_least_{reg13}_troops.
 qstr_{s13}_ordered_you_to {s13}_ordered_you_to_join_the_assault_against_{s14}.
 qstr_You_were_victorious! You_were_victorious!
