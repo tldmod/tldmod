@@ -716,60 +716,17 @@ float _contour( float d, float w ){
     return smoothstep(0.30 - w, 0.45 + w, d);
 }
 
-/* just simple macros, could be a bit less messy */
-#define    samp(uv, w)  _contour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
-#define intsamp(uv, w)   _intour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
-
 PS_OUTPUT ps_font_outline(VS_OUTPUT_FONT In)
 {
- /* supersampled signed font distance technique (with partial derivatives) by /u/glacialthinker on reddit
-    https://www.reddit.com/r/gamedev/comments/2879jd/just_found_out_about_signed_distance_field_text/cicatot/ */
-
+    float4 sample = tex2D(FontTextureSampler, In.Tex0);
     PS_OUTPUT Output;
-
-    float2 uv = In.Tex0.xy;
-
-    float dist = 1.0 - tex2D( FontTextureSampler, uv ).r;
-    float width = fwidth(dist);
-
-    float alpha = _contour( dist, width );
-
-    // ------- (comment this block out to get your original behavior)
-    // Supersample, 4 extra points
-    const float dscale = 0.354; // half of 1/sqrt2; you can play with this
-    float2 duv = dscale * (ddx(uv) + ddy(uv));
-    float4 box = float4(uv-duv, uv+duv);
-
-   /* float asum = samp( box.xy, width )
-               + samp( box.zw, width )
-               + samp( box.xw, width )
-               + samp( box.zy, width );
-
-    // weighted average, with 4 extra points having 0.5 weight each,
-    // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + 0.5 * asum) / 3.; */
-    // -------
-
-    float i_ntour = _intour( dist, width );
-
-  /* float isum = intsamp( box.xy, width )
-               + intsamp( box.zw, width )
-               + intsamp( box.xw, width )
-               + intsamp( box.zy, width );
-
-    i_ntour = (i_ntour + 0.5 * isum) / 3.; */
-
-    Output.RGBColor = float4
-    ( /* mix pure black and the text color using the inner contour mask.
-         modulate the glyph's outer contour by the amount of transparency sent from the engine */
-      lerp(float3(0.0, 0.0, 0.0).rgb, In.Color.rgb, i_ntour), alpha * In.Color.a
-    );
-
+    
+    Output.RGBColor =  In.Color;
+    Output.RGBColor.a = (1.0f - sample.r) + sample.a;
+    Output.RGBColor.rgb *= 0.6f * sample.a + 0.4f;
+    
     return Output;
 }
-
-#undef    samp
-#undef intsamp
 
 VS_OUTPUT_FONT_MTARINI vs_font_mtarini(float4 vPosition : POSITION, float4 vColor : COLOR, float2 tc : TEXCOORD0)
 {
@@ -810,64 +767,26 @@ float contour( float d, float w ){
     return smoothstep(0.30 - w, 0.49 + w, d);
 }
 
-/* just simple macros, could be a bit less messy */
-#define    samp(uv, w)  contour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
-#define intsamp(uv, w)   intour( 1.0 - tex2D(FontTextureSampler, uv).r, w );
-
 PS_OUTPUT ps_font_outline_mtarini(PS_INPUT_FONT_MTARINI In)
 {
- /* supersampled signed font distance technique (with partial derivatives) by /u/glacialthinker on reddit
-    https://www.reddit.com/r/gamedev/comments/2879jd/just_found_out_about_signed_distance_field_text/cicatot/ */
-
+    float4 sample = tex2D(FontTextureSampler, In.Tex0.xy);
+    
     PS_OUTPUT Output;
 
+    float bord = clamp((1.0-sample.r)*2.0,0,1);
+
+    float bordColor =  In.Tex0.z;
     float2 uv = In.Tex0.xy;
+    Output.RGBColor.a = In.Color.a *(bord*(0.40+0.30*(1.0f-sample.g)) + sample.a);
 
-    float dist = 1.0 - tex2D( FontTextureSampler, uv ).r;
+
+    float dist = tex2D( FontTextureSampler, uv ).r;
+    float isB = (1.0f-sample.a) * (1.0f-0.f);
     float width = fwidth(dist);
-
-    float alpha = contour( dist, width );
-
-    // ------- (comment this block out to get your original behavior)
-    // Supersample, 4 extra points
-    const float dscale = 0.354; // half of 1/sqrt2; you can play with this
-    float2 duv = dscale * (ddx(uv) + ddy(uv));
-    float4 box = float4(uv-duv, uv+duv);
-
-   /* float asum = samp( box.xy, width )
-               + samp( box.zw, width )
-               + samp( box.xw, width )
-               + samp( box.zy, width );
-
-    // weighted average, with 4 extra points having 0.5 weight each,
-    // so 1 + 0.5*4 = 3 is the divisor
-    alpha = (alpha + 0.5 * asum) / 3.; */
-    // -------
-
-    float i_ntour = intour( dist, width );
-
-   /* float isum = intsamp( box.xy, width )
-               + intsamp( box.zw, width )
-               + intsamp( box.xw, width )
-               + intsamp( box.zy, width );
-
-    i_ntour = (i_ntour + 0.5 * isum) / 3.; */
-
-    /* this basically is a boolean variable from the vertex shader that makes
-       the outline/shadow either black or white, depending on the font color. */
-    float3 bordColor = In.Tex0.z;
-
-    Output.RGBColor = float4
-    ( /* mix the border and text colors using the inner contour mask.
-         modulate the glyph's outer contour by the amount of transparency sent from the engine */
-      lerp(bordColor.xxx, In.Color.rgb, i_ntour), alpha * In.Color.a
-    );
+    Output.RGBColor.rgb = In.Color.rgb * (1-isB) + float3(bordColor,bordColor,bordColor)*(isB);
 
     return Output;
 }
-
-#undef    samp
-#undef intsamp
 
 PS_OUTPUT ps_no_shading(PS_INPUT_FONT In) 
 { 
