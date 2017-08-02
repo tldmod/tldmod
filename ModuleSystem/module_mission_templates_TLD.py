@@ -270,6 +270,7 @@ wb_command_cursor_f1_up = (0, 0, 0, [(eq,"$tld_option_formations",1),(key_is_dow
 wb_formations = (is_a_wb_mt==1 and 
 [
 	wb_formation_order,
+	kham_check_formations,
 ] or [])
 
 wb_command_cursor = (is_a_wb_mt==1 and 

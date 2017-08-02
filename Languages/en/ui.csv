@@ -47,4 +47,37 @@ ui_value_denars|%d Resource Pts.
 ui_cannot_be_used_on_horseback|Cannot be used while mounted
 ui_upgrade_to_value| Upgrade to %s
 ui_notification_cant_upgrade|(Can't upgrade while giving troops)
+ui_cut|Cutting
+ui_pierce|Piercing
+ui_blunt|Blunt
+ui_use_melee_weapons_e_|%s, use melee weapons!
+ui_use_ranged_weapons_e_|%s, use ranged weapons!
+ui_order_button_use_melee_weapons|Use melee weapons
+ui_order_button_use_ranged_weapons|Use ranged weapons
+ui_order_button_weapon_usage_orders|Weapon usage orders
+ui_fire_at_my_command_e_|%s, fire at my command!
+ui_fire_now_e_|%s, fire!
+ui_order_button_fire_at_my_command|Fire at my command
+ui_order_button_fire_now|Fire
+ui_order_form_1_row|Form 1 row
+ui_order_form_2_row|Form 2 rows
+ui_order_form_3_row|Form 3 rows
+ui_order_form_4_row|Form 4 rows
+ui_order_form_5_row|Form 5 rows
+ui_form_1_row_e_|%s, form 1 row!
+ui_form_2_row_e_|%s, form 2 rows!
+ui_form_3_row_e_|%s, form 3 rows!
+ui_form_4_row_e_|%s, form 4 rows!
+ui_form_5_row_e_|%s, form 5 rows!
+ui_order_7|Select Order 7
+ui_order_8|Select Order 8
+ui_all_fire_now_e_|%s, volley fire!
+ui_left_fire_now_e_|%s, left flank volley fire!
+ui_middle_fire_now_e_|%s, middle group volley fire!
+ui_right_fire_now_e_|%s, right flank volley fire!
+ui_order_button_all_fire_now|All volley fire
+ui_order_button_left_fire_now|Left flank volley fire
+ui_order_button_middle_fire_now|Middle group volley fire
+ui_order_button_right_fire_now|Right flank volley fire
+ui_crouch|Crouch
 

@@ -1288,3 +1288,11 @@ tld_footwork_melee_ai = (0.25, 0, 0, [],
     (try_end),
 ])
 #Footwork end
+
+kham_check_formations = (0, 0, 0, [
+  (eq, "$tld_option_formations", 1),
+  (this_or_next|neq, "$infantry_formation_type", formation_none),
+  (this_or_next|neq, "$cavalry_formation_type",  formation_none),
+  (       neq, "$archer_formation_type",   formation_none),
+  (game_key_clicked, gk_order_2)], [
+  (display_message, "@Cannot Order to Form Rows when Troops are In Formation. Undo it first by pressing U.", color_bad_news)])
