@@ -318,6 +318,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     tld_ai_is_kicked,
     tld_melee_ai,
     #tld_footwork_melee_ai,
+    tld_improved_horse_archer_ai
 
     
 ] or [] ) + [
@@ -2704,15 +2705,15 @@ mission_templates = [ # not used in game
     [# Attacker initial spawn point (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),
      # Initial defender spawn point (was 11)
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,12,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
      (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
      (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), #entry 5 for add_reinforcements_to_entry
-     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
-     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
+     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]), #entry 5 for add_reinforcements_to_entry
+     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
+     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
      # Attacker reinforcements (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry
      (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
@@ -3019,8 +3020,7 @@ mission_templates = [ # not used in game
      (19, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      (20, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      ],
-    tld_common_wb_muddy_water+
-    tld_common_battle_scripts+[
+    tld_common_wb_muddy_water+[
 	(ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 	common_battle_tab_press,
 	(ti_question_answered, 0, 0, [],[
@@ -3057,8 +3057,7 @@ mission_templates = [ # not used in game
      (27, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      (28, mtef_defenders|mtef_use_exact_number|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
      ],
-  tld_common_wb_muddy_water+
-	tld_common_battle_scripts+[
+  tld_common_wb_muddy_water+[
 	(ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 	common_battle_tab_press,
 	(ti_question_answered, 0, 0, [],
@@ -3101,8 +3100,7 @@ mission_templates = [ # not used in game
       (32,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
 #      (9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
     ],
-  tld_common_wb_muddy_water+
-	tld_common_battle_scripts+[
+  tld_common_wb_muddy_water+[
 	(ti_before_mission_start, 0, 0, [], [(call_script, "script_change_banners_and_chest")]),
 	(ti_tab_pressed, 0, 0, [],
 		[(question_box,"str_do_you_wish_to_surrender")]),
