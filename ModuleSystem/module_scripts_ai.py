@@ -13,6 +13,7 @@ from ID_troops import *
 from ID_factions import *
 from module_troops import *
 
+
 ai_scripts = [
 
 # script_recalculate_ais
@@ -1730,7 +1731,7 @@ ai_scripts = [
 ##        (try_end),
 
 # no village raids or sieges so far, GA
-        (assign, ":chance_besiege_enemy_center", 0),
+#        (assign, ":chance_besiege_enemy_center", 0), - Kham Commented out, we now have sieges in TLD
         (assign, ":chance_raid_around_center", 0),
 ##########################################
 		

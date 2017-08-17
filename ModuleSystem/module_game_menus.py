@@ -3080,6 +3080,7 @@ game_menus = [
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
+## Kham Test End
 ( "game_options",0,
 	"^^^^^^^^Click on an option to toggle:","none",[],
     [
@@ -3146,6 +3147,11 @@ game_menus = [
         ],"Fallen rider damage messages:  {s7}",[
         (store_sub, "$show_mount_ko_message", 1, "$show_mount_ko_message"),(val_clamp, "$show_mount_ko_message", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
+    ("game_options_bright_nights",[(try_begin),(neq, "$bright_nights", 0),(str_store_string, s7, "@ON"),
+                                  (else_try),(str_store_string, s7, "@OFF"),(try_end),
+	    ],"Brighter Nights (WB Only):  {s7}.",[
+		(store_sub,"$bright_nights",1,"$bright_nights"),(val_clamp,"$bright_nights",0,2),(jump_to_menu, "mnu_auto_options"),]),
+
     ("game_options_tweaks",[],"Gameplay tweaks...",[(jump_to_menu, "mnu_camp_tweaks")]),
 
     ("game_options_back",[(eq, "$tld_game_options", 1)],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
@@ -3165,6 +3171,7 @@ game_menus = [
 	[
    	 	("tweak_options_compat",[],"Compatibility tweaks...",[(jump_to_menu, "mnu_camp_compat_tweaks")]),
     		("tweak_options_strat",[],"Strategy tweaks...",[(jump_to_menu, "mnu_camp_strat_tweaks")]),
+    		("tweak_options_battlefield_ai",[],"Battlefield AI tweaks (WB Only)...",[(jump_to_menu, "mnu_camp_field_ai")]),
     		("tweak_options_back",[],"Back to options menu.",[(jump_to_menu, "mnu_game_options")]),
 	]
 ),
@@ -9440,6 +9447,39 @@ game_menus = [
 	      ]
 	    ),
 ###################### Destroy Scout Camp Quest End (Kham) ##########################################
+###################### Field AI Options Menu Begin (Kham)  ##########################################
+
+( "camp_field_ai",0,
+	"^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)","none",[(try_begin), (lt, "$savegame_version",3),(call_script, "script_update_savegame"), (try_end)],
+    [
+    ("lord_field_ai",[(str_clear, s7),(try_begin),(neq, "$field_ai_lord", 1),(str_store_string, s7, "@OFF"),
+								(else_try),(str_store_string, s7, "@ON"),(try_end),
+        ],"Lords Have Improved Battlefield AI:  {s7}",[
+        (store_sub, "$field_ai_lord", 1, "$field_ai_lord"),(val_clamp, "$field_ai_lord", 0, 2), (jump_to_menu, "mnu_auto_field_ai"),]),
+  
+    ("horse_archer_field_ai",[(str_clear, s7),(try_begin),(neq, "$field_ai_horse_archer", 1),(str_store_string, s7, "@OFF"),
+								(else_try),(str_store_string, s7, "@ON"),(try_end),
+        ],"Horse Archers Have Improved Battlefield AI:  {s7}",[
+        (store_sub, "$field_ai_horse_archer", 1, "$field_ai_horse_archer"),(val_clamp, "$field_ai_horse_archer", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
+
+   ("vs_orcs_field_ai",[(str_clear, s7),(try_begin),(neq, "$field_ai_archer_aim", 1),(str_store_string, s7, "@OFF"),
+								(else_try),(str_store_string, s7, "@ON"),(try_end),
+        ],"Archers have better aim against orcs (doesn't aim above orc heads):  {s7}",[
+        (store_sub, "$field_ai_archer_aim", 1, "$field_ai_archer_aim"),(val_clamp, "$field_ai_archer_aim", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
+
+   ("game_options_compat_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
+
+    ]),
+
+
+
+( "auto_field_ai",0,
+    "This menu automatically returns to caller.",
+    "none",
+    [(jump_to_menu, "mnu_camp_field_ai")],[]
+ ),
+
+###################### Field AI Options Menu END (Kham)  ##########################################
 
 ( "custom_battle_choose_faction1",0,
     "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01")],
@@ -9487,6 +9527,7 @@ game_menus = [
      ("go_back"      ,[],"Go back"    ,[(jump_to_menu,"mnu_custom_battle_choose_faction2")]),
 	 ]
  ),
+
 
 ######################### TLD808 menus ##########################
 ( "ancient_ruins",0,

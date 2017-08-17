@@ -1,4 +1,4 @@
-1393
+1394
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -211,7 +211,7 @@ qstr_in_sight_of_the_dark in_sight_of_the_dark_Tower_of_Orthanc
 qstr_near_the_Old_Ford_wh near_the_Old_Ford,_where_the_Old_Forest_Road_crosses_the_River_Anduin
 qstr_near_a_big_ford_cros near_a_big_ford_crossing_the_River_{s15}
 qstr_near_a_small_ford_cr near_a_small_ford_crossing_the_River_{s15}
-qstr_Battle_Advantage:_{r Battle_Advantage:_{reg0}.
+qstr_Battle_Advantage_=_{ Battle_Advantage_=_{reg0}.
 qstr_{s9}_wants_you_to_re {s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr__Being_Raided_ (Being_Raided)
 qstr__Looted_ (Looted)
@@ -599,6 +599,7 @@ qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
 qstr_Your_mount_rears_ref Your_mount_rears,_refusing_to_obey_your_commands!
+qstr_Bright_Nights_active Bright_Nights_active
 qstr_Fixed_Custom_Camera Fixed_Custom_Camera
 qstr_Press_Left_/_Right_A Press_Left_/_Right_Arrow_Keys_to_Switch_Shoulders
 qstr_Free_Mode_Custom_Cam Free-Mode_Custom_Camera

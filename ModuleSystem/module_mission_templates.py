@@ -53,6 +53,17 @@ fade =  ((is_a_wb_mt==1) and [
         
         ] or [])
 
+
+bright_nights= ((is_a_wb_mt==1) and [ 
+  
+  (ti_before_mission_start, 0, 2,
+    [ (eq, "$bright_nights", 1),
+      (is_currently_night)],[
+      (set_startup_ambient_light,15,24,37), #27,46,67 
+      (display_message, "@Bright Nights active")])
+  
+  ] or [])
+
 khams_custom_player_camera = ((is_a_wb_mt==1) and [
 
   #-- numeric constants
@@ -336,7 +347,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
-] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights
 
 
 tld_siege_battle_scripts = [
@@ -349,14 +360,14 @@ tld_siege_battle_scripts = [
 	tld_remove_galadriel,
   tld_remove_volunteer_troops,
 	#common_battle_kill_underwater,
-] + fade + khams_custom_player_camera #Custom Cam triggers
+] + fade + bright_nights + khams_custom_player_camera #Custom Cam triggers
 
 
 tld_common_peacetime_scripts = [
 	#tld_fix_viewpoint,
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
-] + custom_tld_bow_to_kings +  fade + khams_custom_player_camera #Custom Cam triggers
+] + custom_tld_bow_to_kings + bright_nights + fade + khams_custom_player_camera #Custom Cam triggers
 
 
 tld_common_wb_muddy_water = ((is_a_wb_mt==1) and [
@@ -966,7 +977,7 @@ mission_templates = [ # not used in game
 
   ],
   #tld_common_peacetime_scripts +
-  tld_common_wb_muddy_water +
+  tld_common_wb_muddy_water + bright_nights +
   [  
  
   # make friend, prisoners, players, etc appear at the right locations and with scripted short starting walks
@@ -2703,32 +2714,32 @@ mission_templates = [ # not used in game
 ( "castle_attack_walls_ladder",mtf_battle_mode,-1,
   "You attack the walls of the castle...",
     [# Attacker initial spawn point (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,12,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,8,[]),
      # Initial defender spawn point (was 11)
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
      (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
      (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]), #entry 5 for add_reinforcements_to_entry
-     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
-     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,6,[]),
+     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry
+     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
      # Attacker reinforcements (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry
      (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
      (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
      # defender archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]), # team left flank
-     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
-     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
-	 (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
-	 (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,6,[]), # team center
-     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,6,[]),
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]), # team right flank
-	 (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
-     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
-     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,4,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+	 (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+	 (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
+     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
+	 (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
 	],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+

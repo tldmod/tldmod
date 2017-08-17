@@ -1892,6 +1892,11 @@ scripts = [
 	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - ON by default
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
 	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
+	(assign, "$bright_nights",1), #Kham - Brighter Nights
+	(assign, "$field_ai_lord",1), #Kham - Battlefield Lord AI
+	(assign, "$field_ai_horse_archer",1), #Kham - Battlefield Horse Archer AI
+	(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
+
 	
 
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
@@ -7976,15 +7981,15 @@ scripts = [
       (call_script, "script_party_wound_all_members_aux", ":party_no"),
 ]),
 
-# script_calculate_battle_advantage
+# script_calculate_battle_advantage # Kham -changes below script making advantage not only quantity but also quality dependant, tactics is made a bit more important too + orc bonus
 # Output: reg0 = battle advantage
 ("calculate_battle_advantage",
-    [ (call_script, "script_party_count_fit_for_battle", "p_collective_friends"),
+    [ (call_script, "script_tld_party_count_strength", "p_collective_friends"), #Kham - Changed script_party_count_fit_for_battle with new script
       (assign, ":friend_count", reg0),
       (party_get_skill_level, ":player_party_tactics",  "p_main_party", skl_tactics),
-      (party_get_skill_level, ":ally_party_tactics",  "p_collective_friends", skl_tactics),
+      (party_get_skill_level, ":ally_party_tactics",  "p_collective_friends", skl_tactics), 
       (val_max, ":player_party_tactics", ":ally_party_tactics"),
-      (call_script, "script_party_count_fit_for_battle", "p_collective_enemy"),
+      (call_script, "script_tld_party_count_strength", "p_collective_enemy"), #Kham - Changed script_party_count_fit_for_battle with new script
       (assign, "$enemy_count1", reg0), ## of enemies also for scenes
   ## TLD, total number of combatants, needed for random scene generation, GA
 	  (store_add, "$number_of_combatants", ":friend_count","$enemy_count1"),
@@ -8047,7 +8052,19 @@ scripts = [
       (val_sub, ":raw_advantage", ":enemy_party_tactics"),
       (val_div, ":raw_advantage", 100),
       (assign, reg0, ":raw_advantage"),
-      (display_message, "@Battle Advantage: {reg0}.", 0xFFFFFFFF),
+      
+      #Kham - Colour Battle Advantage
+      
+      (try_begin),
+        (gt, reg0, 0),
+        (assign, ":color", color_good_news),
+      (else_try),
+        (eq, reg0, 0),
+        (assign, ":color", 0xFF808080),
+      (else_try),
+        (assign, ":color", color_bad_news),
+      (try_end),
+      (display_message, "@Battle Advantage = {reg0}.", ":color"),
 ]),
 
 # script_cf_check_enemies_nearby
@@ -22368,7 +22385,49 @@ command_cursor_scripts = [
         
         (assign,"$savegame_version",2),
     (try_end),
+
+    (try_begin), #Kham - Aug 17, 2017
+    	(lt,"$savegame_version",3),
+    	#add Begin War Choice & Field Ai Menu & Brighter Nights
+    	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
+		(assign, "$bright_nights",1), #Kham - Brighter Nights
+		(assign, "$field_ai_lord",1), #Kham - Battlefield Lord AI
+		(assign, "$field_ai_horse_archer",1), #Kham - Battlefield Horse Archer AI
+		(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
+    	(assign, "$savegame_version",3),
+    (try_end),
 ]),
+
+#Kham
+  # Returns the sum of levels of fit for battle troops used to calculate battle advantage
+  # INPUT:
+  # param1: Party-id
+  # OUTPUT: reg0 = result
+  ("tld_party_count_strength",
+    [
+      (store_script_param_1, ":party"), #Party_id
+      (party_get_num_companion_stacks, ":num_stacks", ":party"),
+      (assign, reg0, 0),
+      (try_for_range, ":i_stack", 0, ":num_stacks"),
+        (party_stack_get_troop_id, ":stack_troop", ":party", ":i_stack"),
+		(store_character_level, ":troop_level", ":stack_troop"),
+        (assign, ":num_fit", 0),
+        (try_begin),
+          (troop_is_hero, ":stack_troop"),
+          #          (store_troop_health, ":troop_hp", ":stack_troop"),
+          (try_begin),
+            (neg|troop_is_wounded, ":stack_troop"),
+            #            (ge,  ":troop_hp", 20),
+            (assign, ":num_fit", ":troop_level"),
+          (try_end),
+        (else_try),
+          (party_stack_get_size,         ":num_fit", ":party", ":i_stack"),
+          (party_stack_get_num_wounded, ":num_wounded", ":party", ":i_stack"),
+          (val_sub, ":num_fit", ":num_wounded"),
+        (try_end),
+        (val_add, reg0, ":num_fit"),
+      (try_end),
+  ]),
 
 ]
 

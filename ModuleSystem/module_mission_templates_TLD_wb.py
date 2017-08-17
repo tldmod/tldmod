@@ -623,7 +623,7 @@ field_ai_triggers = [
 
 
 #### Kham Improved High Level Archer Aim VS Orcs (Credit: Oliveran)
-tld_archer_hold_fire = (1, 0, ti_once, [],
+tld_archer_hold_fire = (1, 0, ti_once, [(eq,"$field_ai_archer_aim",1)],
   [
     (assign, ":counter", 0),
     (get_player_agent_no, ":player"),
@@ -682,7 +682,7 @@ tld_archer_hold_fire = (1, 0, ti_once, [],
 
 # TLD: fix game bug: archers aim at hard-coded head/torax-position instead of real head/torax-position 
 # (e.g. elven archers consistently shooting ABOVE orc heads)
-tld_archer_aim_fix = (0, 0, 0, [],
+tld_archer_aim_fix = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
     [   
         
         (assign, ":counter", 0),
@@ -771,7 +771,7 @@ tld_archer_aim_fix = (0, 0, 0, [],
 
 
 # fix part II: call on release arrow
-tld_archer_aim_fix_on_release = (0, 0, 0, [],
+tld_archer_aim_fix_on_release = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
     [
         (try_for_agents, ":agent1"),
             (agent_is_active,":agent1"),
@@ -943,7 +943,7 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
   ])
 
 #AI kicking start
-tld_move_ai = (0.01, 0, 0, [],
+tld_move_ai = (0.01, 0, 0, [(eq,"$field_ai_lord",1)],
   [
     (try_for_agents, ":agent1"),
 
@@ -969,7 +969,7 @@ tld_move_ai = (0.01, 0, 0, [],
     (try_end),
 ])
 
-tld_ai_kicking = (1, 0, 0, [],
+tld_ai_kicking = (1, 0, 0, [(eq,"$field_ai_lord",1)],
   [
     (try_for_agents, ":agent1"),
 
@@ -1027,7 +1027,7 @@ tld_ai_kicking = (1, 0, 0, [],
     (try_end),
 ])
 
-tld_ai_is_kicked = (0.2, 0, 0, [],
+tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
   [
     (try_for_agents, ":agent1"),
 
@@ -1092,7 +1092,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [],
 #AI kicking end
 
 #Attack/Block start
-tld_melee_ai = (0, 0, 0, [],
+tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1)],
   [
     (try_for_agents,":agent1"),
 
@@ -1178,7 +1178,7 @@ tld_melee_ai = (0, 0, 0, [],
 #Attack/Block end
 
 #Footwork start
-tld_footwork_melee_ai = (0.25, 0, 0, [],
+tld_footwork_melee_ai = (0.25, 0, 0, [(eq,"$field_ai_lord",1)],
   [
     (try_for_agents, ":agent1"),
 
@@ -1298,7 +1298,7 @@ kham_check_formations = (0, 0, 0, [
   (display_message, "@Cannot Order to Form Rows when Troops are In Formation. Undo it first by pressing U.", color_bad_news)])
 
 
-tld_improved_horse_archer_ai =  (0.5, 0, 0, [],
+tld_improved_horse_archer_ai =  (0.5, 0, 0, [(eq,"$field_ai_horse_archer",1)],
   [       
         (set_fixed_point_multiplier, 1000),
         (try_for_agents, ":agent_no"),
