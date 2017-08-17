@@ -15460,7 +15460,7 @@ scripts = [
         (troop_set_slot, "trp_npc3", slot_troop_personalitymatch_object, "trp_npc4"),  #Gálmynë
         (troop_set_slot, "trp_npc3", slot_troop_home, "p_ford_fangorn"),
         (troop_set_slot, "trp_npc3", slot_troop_payment_request, 1200 / companionPriceMult), 
-        (troop_set_slot, "trp_npc3", slot_troop_cur_center, "p_town_westfold"),  #TLD
+        (troop_set_slot, "trp_npc3", slot_troop_cur_center, "p_town_hornburg"),  #TLD
         (troop_set_slot, "trp_npc3", slot_troop_rank_request, 1),  #TLD
 
         # Gálmynë

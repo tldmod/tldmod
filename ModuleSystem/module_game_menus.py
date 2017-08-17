@@ -4329,6 +4329,17 @@ game_menus = [
 		     (jump_to_menu,"mnu_order_attack_begin"),
                                                             #(simulate_battle,3)
 		]),
+
+      #Kham - Hide from Enemy when party < 8 
+
+       ("encounter_hide",[
+          (eq, "$encountered_party_friendly", 0),
+          (eq, "$cant_leave_encounter", 1),
+          (party_get_num_companions, ":no", "p_main_party"),(lt, ":no", 8),
+          ],
+           "Hide from the enemy...",[
+           (jump_to_menu, "mnu_hide"),]),
+
 		("special_whip",[
 			(eq, "$new_encounter", 1),
 		    (is_between, "$g_encountered_party_template", "pt_looters","pt_steppe_bandits"),
@@ -4377,6 +4388,7 @@ game_menus = [
 			
       ("encounter_retreat",[
          (eq,"$cant_leave_encounter", 1),
+         (party_get_num_companions, ":no", "p_main_party"),(gt, ":no", 8),
          (call_script, "script_get_max_skill_of_player_party", "skl_tactics"),
          (assign, ":max_skill", reg0),
          (val_add, ":max_skill", 4),
@@ -4410,6 +4422,19 @@ game_menus = [
  ] for ct in range(cheat_switch)])+[
     ]
  ),
+
+##Kham - Hide Menu - Skill requirement TBD
+
+("hide",0,
+	"^^^^^Having a small party has its benefits...^^^You and your troops hide from the enemy for a few hours to be sure that you are not seen.","none",[(set_background_mesh, "mesh_ui_default_menu_window")],
+	[("hide_close",[], "Continue...",[
+		(rest_for_hours, 4, 2, 0),
+		(leave_encounter),
+		(change_screen_return)])]),
+
+##Kham - Hide Menu End
+
+
 ( "encounter_retreat_confirm",0,
     "^^^^^As the party member with the highest tactics skill,\
    ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,\

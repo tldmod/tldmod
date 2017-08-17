@@ -1331,7 +1331,7 @@ evil_party_str_handicap = 50 # if the player is evil, evil parties and garrisons
 fac_str_dying = 500 # less than this, go for the kill by sieging the capital
 fac_str_very_weak = 1000 # less than this, faction capital can be sieged and faction can be destroyed by capturing the capital
 fac_str_weak = 2000 # lesser or equal to this can only defend (state "weakened" or worse); faction centers can be sieged and captured
-fac_str_ok = 3700 # lesser or equal can attack around enemy centers, higher can siege #Kham - Changed from 4000
+fac_str_ok = 3500 # lesser or equal can attack around enemy centers, higher can siege #Kham - Changed from 4000 - Changed again from 3700
 fac_str_max = 8000
 
 fac_str_guardian = 1700 # was: 1000 # less than this, spawn the guardian party
