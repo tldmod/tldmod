@@ -2181,7 +2181,17 @@ ai_scripts = [
 	  (store_random_in_range,":tmp",9,17),
 	  (party_add_members,"$pout_party",":guard",":tmp"), 
 	  (party_set_banner_icon, "$pout_party", ":cur_banner"),
-	  (party_attach_to_party, "$pout_party", ":center_no")
+	  (party_attach_to_party, "$pout_party", ":center_no"),
+    
+     #Kham - Reinforce Gondor Lords 
+     (try_begin),
+      (eq, ":troop_faction_no", "fac_gondor"),
+      (neq, "$pout_party", "p_main_party"),
+      #(party_get_num_companions, reg60, "$pout_party"),
+      #(display_message, "@{reg60}"),
+      (call_script, "script_hire_men_to_kingdom_hero_party", ":troop_no"),
+      (call_script, "script_cf_reinforce_party", "$pout_party"),
+     (try_end),
 ]),
 
 # script_decide_kingdom_party_ais
