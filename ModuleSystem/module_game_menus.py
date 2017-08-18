@@ -1168,7 +1168,7 @@ game_menus = [
 ( "start_eye",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^Your Master is the Lidless Eye^Choose your Race", "none",[],[
  ("start_or"  ,[],"an ORC, serving the Lidless Eye"       ,[(jump_to_menu,"mnu_start_eye_orc"),]),
- ("start_ur"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_ur"  ,[],"an URUK, the new breed of Orcs"        ,[(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  (jump_to_menu,"mnu_start_as_one"),]),
  ("start_em"  ,[],"a MAN, subjugated by Sauron"           ,[(jump_to_menu,"mnu_start_eye_man"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
@@ -1176,7 +1176,7 @@ game_menus = [
 ( "start_hand",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^Your Master is the White Hand^Choose your Race", "none",[],[
  ("start_whor",[],"an ORC, serving the White Hand",          [(jump_to_menu,"mnu_start_hand_orc"),]),
- ("start_isur",[],"an URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
+ ("start_isur",[],"an URUK-HAI, bred in Isengard",           [(call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),(jump_to_menu,"mnu_start_as_one"),]),
  ("start_duma",[],"a MAN of Dunland, the Western Plains",    [(call_script,"script_start_as_one","trp_dunnish_wildman"),       (jump_to_menu,"mnu_choose_gender"),]), #(jump_to_menu,"mnu_choose_skill"),]),
  ("spacer",[],"_",[]),
  ("go_back"     ,[],"Go back",[(jump_to_menu, "mnu_start_evil")]),    ]
@@ -1201,8 +1201,8 @@ game_menus = [
  ),
 ( "start_good_dwarf",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your Lineage:", "none",[(assign, "$last_menu", "mnu_start_good_elf")],[
-  ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_dwarven_apprentice"),   (jump_to_menu,"mnu_choose_skill"),]),
-  ("start_ih", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_iron_hills_miner"),     (jump_to_menu,"mnu_choose_skill"),]),
+  ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_dwarven_apprentice"),   (jump_to_menu,"mnu_start_as_one"),]),
+  ("start_ih", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_iron_hills_miner"),     (jump_to_menu,"mnu_start_as_one"),]),
   ("spacer" , [],"_",[]),  
   ("go_back", [],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
@@ -1230,16 +1230,16 @@ game_menus = [
  ),
 ( "start_eye_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_choose_skill"),]),
- ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_arm",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_orc_snaga_of_mordor"),   (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_cav",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_orc_snaga_of_guldur"),   (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_"  ,[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye")]),    ]
  ),
 ( "start_hand_orc",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Where do you lurk?", "none",[],[
- ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_choose_skill"),]),
- ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),       (jump_to_menu,"mnu_choose_skill"),]),
- ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_goblin_gundabad"),      (jump_to_menu,"mnu_choose_skill"),]),
+ ("start_armis",[],"in the Armies amassed at ISENGARD",[(call_script,"script_start_as_one","trp_orc_snaga_of_isengard"),(jump_to_menu,"mnu_start_as_one"),]),
+ ("start_minmo",[],"in the Mines of MORIA"            ,[(call_script,"script_start_as_one","trp_snaga_of_moria"),       (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_cliff",[],"in the cliffs of Mount GUNDABAD",  [(call_script,"script_start_as_one","trp_goblin_gundabad"),      (jump_to_menu,"mnu_start_as_one"),]),
  ("spacer" ,[],"_",[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_hand")]),    ]
  ),
@@ -1261,11 +1261,11 @@ game_menus = [
 ( "choose_gender",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Your gender?", "none",[],
  [("start_male"  ,[],"Male"   ,[#(assign,"$character_gender",tf_male  ),
-    (jump_to_menu,"mnu_choose_skill"),]),
+    (jump_to_menu,"mnu_start_as_one"),]),
   ("start_female",[],"Female" ,[
     (troop_set_type,"trp_player",tf_female), # override race for females elves and mans
     #(assign,"$character_gender",tf_female), no need
-    (jump_to_menu,"mnu_choose_skill"),
+    (jump_to_menu,"mnu_start_as_one"),
   ]),
   ("spacer",[],"_",[]),
 
@@ -1278,6 +1278,31 @@ game_menus = [
 	[ ("skip",[],"SKIP THAT: let me playtest now",[(jump_to_menu, "mnu_start_phase_2"),]),
 	  ("proc",[],"Proceed as normal",[(jump_to_menu, "mnu_auto_return"),])]
  ),
+
+##Kham Menu to Allow Easy Start 
+
+("start_as_one",0, "^^^^^^^^^^What type of Soldier are you?","none", 
+
+	[
+		(str_store_troop_name, s23, "$player_current_troop_type"),
+		(troop_get_upgrade_troop,reg0,"$player_current_troop_type",0),
+		(troop_get_upgrade_troop, reg1,"$player_current_troop_type",1),
+		(gt,reg0,0),
+		(str_store_troop_name,s21,reg0),
+		(gt,reg1,0),
+		(str_store_troop_name,s22,reg1),
+
+	],
+	    
+    [
+     ("start_default",[], "Become a {s23} (Default)", [(troop_add_proficiency_points, "trp_player", 10),(jump_to_menu, "mnu_choose_skill")]),
+     ("start_up1", [(gt,reg0,0)], "Become a {s21} (Easy)", [(call_script, "script_start_as_one", reg0),(troop_add_proficiency_points, "trp_player", 15), (jump_to_menu, "mnu_choose_skill")]),
+     ("start_up2", [(gt,reg1,0)], "Become a {s22} (Easy)", [(call_script, "script_start_as_one", reg1),(troop_add_proficiency_points, "trp_player", 15), (jump_to_menu, "mnu_choose_skill")]),
+     ("spacer",[],"_",[]),
+     ("go_back"     ,[],"Go back",[(troop_clear_inventory, "trp_player"), (try_for_range, ":i", 0,6), (troop_raise_proficiency, "trp_player", ":i", -10),(try_end),(jump_to_menu,"$last_menu")]),
+  ]),
+
+
 ############################################### 
 ( "auto_return",0,
     "This menu automatically returns to caller.",
