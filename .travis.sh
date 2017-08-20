@@ -49,10 +49,11 @@ _fold_start_ "[Composite custom launcher images for revision $SVNREV]"
     curl -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/Retrovirus.ttf
 
     # draw the text and shadow over the backplate, overwriting the original main.bmp
+    # (the older BMP3 format doesn't support alpha channels, but is the only thing the launcher reads)
     convert main_swy_pngquant.png -font Retrovirus.ttf -pointsize 16 -gravity SouthWest \
       -fill '#28292c' -annotate +10+8 "$IMAGE_TEXT" \
       -fill '#e4eca0' -annotate +09+9 "$IMAGE_TEXT" \
-      -type truecolor main.bmp
+      -type truecolor bmp3:main.bmp
 
     # add a copy for warband, delete the things we just downloaded
     cp main.bmp ./_wb/ && rm main_swy_pngquant.png && rm Retrovirus.ttf
