@@ -40,6 +40,26 @@ _fold_final_
 cd ..
 
 
+_fold_start_ "[Composite custom launcher images for revision $SVNREV]"
+    # use a formatted variant of the current date and revision count in the launcher
+    IMAGE_TEXT="`date "+v%Y.%m.%d [$SVNREV]" -u`"
+
+    # grab the clean backplate and the pixel font i made in 2013 so it's identical
+    curl -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/main_swy_pngquant.png
+    curl -LOJ https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/Retrovirus.ttf
+
+    # draw the text and shadow over the backplate, overwriting the original main.bmp
+    convert main_swy_pngquant.png -font Retrovirus.ttf -pointsize 16 -gravity SouthWest \
+      -fill '#28292c' -annotate +10+8 "$IMAGE_TEXT" \
+      -fill '#e4eca0' -annotate +09+9 "$IMAGE_TEXT" \
+      -type truecolor main.bmp
+
+    # add a copy for warband, delete the things we just downloaded
+    cp main.bmp ./_wb/ && rm main_swy_pngquant.png && rm Retrovirus.ttf
+
+_fold_final_
+
+
 # --- deploy to the steam workshop if a tag triggered this build, if not go on
 if [ ! -z $TRAVIS_TAG ]; then
     source ./.travis.workshop.sh
