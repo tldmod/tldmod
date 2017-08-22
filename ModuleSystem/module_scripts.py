@@ -22429,6 +22429,27 @@ command_cursor_scripts = [
       (try_end),
   ]),
 
+#SOD Computica: "Battle Map"
+#zs:battle_map
+  # script_update_battle_map
+  # Input: none
+  # Output: none
+  ("update_battle_map",
+   [
+	(set_fixed_point_multiplier, 1000),
+	(get_scene_boundaries, 2, 3),
+	(try_for_agents, ":agent_no"),
+		(agent_is_human, ":agent_no"),
+		(agent_get_slot, ":map_id", ":agent_no", slot_agent_map_overlay_id),
+		(try_begin),
+			(agent_is_alive, ":agent_no"),
+			(call_script, "script_update_agent_position_on_map", ":agent_no"),
+		(else_try),
+			(overlay_set_alpha, ":map_id", 0),
+		(try_end),
+	(try_end),
+   ]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

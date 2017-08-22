@@ -60,9 +60,15 @@ bright_nights= ((is_a_wb_mt==1) and [
     [ (eq, "$bright_nights", 1),
       (is_currently_night)],[
       (set_startup_ambient_light,15,24,37), #27,46,67 
-      (display_message, "@Bright Nights active")])
+      #(display_message, "@Bright Nights active")
+    ])
   
   ] or [])
+
+
+
+battle_chat = (1, 0, 0,[(game_key_clicked, key_o)],
+  [(start_presentation, "prsnt_battle_map"), (display_message, "@Battle Map Activated")])
 
 khams_custom_player_camera = ((is_a_wb_mt==1) and [
 
@@ -485,18 +491,19 @@ tld_common_siege_ai_trigger_init_after_2_secs =(
 
 tld_common_siege_attacker_reinforcement_check = (
   1, 0, 5,
+  [(lt,"$attacker_reinforcement_stage", 15)],
   [
-    (lt,"$attacker_reinforcement_stage", 15),
-    (store_mission_timer_a,":mission_time"),
-    (ge,":mission_time",5), 
-    (store_normalized_team_count,":num_attackers","$attacker_team"),
-    (lt,":num_attackers",25),
-    ],
-  [
-    (add_reinforcements_to_entry, 7, 9),
-    (val_add,"$attacker_reinforcement_stage", 1),
-    (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
-    ])
+   (assign,":atkteam","$attacker_team"),
+   (assign,":entry",7), #iterate through 8 9 10
+   (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
+     (store_normalized_team_count,":num_attackers",":atkteam"),
+     (val_add,":atkteam",2),
+     (val_add,":entry",1),
+     (lt,":num_attackers",10),
+     (add_reinforcements_to_entry, ":entry", 12),
+     (val_add,"$attacker_reinforcement_stage", 1),
+     (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
+   (try_end)])
 
 tld_common_siege_defender_reinforcement_check = (
   3, 0, 5, [],
@@ -1066,6 +1073,7 @@ mission_templates = [ # not used in game
 	 (try_end),
   ]),
   
+
   (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
   tld_cheer_on_space_when_battle_over_press,tld_cheer_on_space_when_battle_over_release,
   (ti_before_mission_start,0,0,[],[
@@ -1180,7 +1188,10 @@ mission_templates = [ # not used in game
 	(agent_clear_scripted_mode, ":i"),
 	(try_end),
   ],),
-  ]
+
+    #(0, 0, 0,[(key_clicked, key_o)], [(start_presentation, "prsnt_battle_map"),(display_message, "@Battle Map Activated")]),
+
+  ],
 ),
 
 ( "lead_charge",mtf_battle_mode,charge,
@@ -1266,6 +1277,8 @@ mission_templates = [ # not used in game
 	(5, 0, 0, [(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
 	common_battle_order_panel,
 	common_battle_order_panel_tick,
+
+  #(0, 0, 0,[(key_clicked, key_o)], [(start_presentation, "prsnt_battle_map"),(display_message, "@Battle Map Activated")]),
 ]),
 
 ( "bandits_at_night",0,-1,

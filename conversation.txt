@@ -343,7 +343,7 @@ dlga_lord_talk:dwarf_lord_book 69631 170  10 31 2 144115188075855891 545 150 1 8
 dlga_dwarf_lord_book:dwarf_lord_book_give 4095 176  0 Speak_freely,_{playername}.  177  0 
 dlga_dwarf_lord_book_give:dwarf_lord_book_give_a 69631 177  0 I_ventured_deep_into_the_Mines_of_Moria_and_found_record_of_Balin's_company.  178  0 
 dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b 4095 178  0 You_speak_of_my_kin_as_though_they_are_a_memory._Is_it_so?  179  0 
-dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c 69631 179  0 I'm_afraid_it_is._I'd_have_searched_further_but_I_was_beset_by_goblins,_and_in_great_number._I_bring_only_this...  180  1 1531 2 0 876 
+dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c 69631 179  0 I'm_afraid_it_is._I'd_have_searched_further_but_I_was_beset_by_goblins,_and_in_great_number._I_bring_only_this...  180  2 1531 2 0 876 2133 2 144115188075856562 1 
 dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d 4095 180  0 'We_cannot_get_out._We_cannot_get_out...They_are_coming.'  181  0 
 dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e 4095 181  0 So_it_is_as_I_feared._I_had_counseled_Balin_against_this_expedition_but_he_was_resolved._A_fool_I_was_for_giving_him_leave_to_go.  182  0 
 dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f 4095 182  0 You_have_done_Erebor_a_great_service,_{playername},_and_your_deed_will_not_go_unrewarded.  183  2 1 3 14 4 50 1 3 4 4 300 

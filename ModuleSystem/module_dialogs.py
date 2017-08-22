@@ -3460,7 +3460,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"dwarf_lord_book_give_b", 
   [], "I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...", "dwarf_lord_book_give_c", 
-    [(troop_remove_item, "trp_player", "itm_book_of_moria")]],
+    [(troop_remove_item, "trp_player", "itm_book_of_moria"), (assign, "$moria_book_given",1)]],
 
 [anyone,"dwarf_lord_book_give_c", 
   [], "'We cannot get out. We cannot get out...They are coming.'", "dwarf_lord_book_give_d", []],
