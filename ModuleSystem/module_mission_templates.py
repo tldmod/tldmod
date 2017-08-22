@@ -66,10 +66,6 @@ bright_nights= ((is_a_wb_mt==1) and [
   ] or [])
 
 
-
-battle_chat = (1, 0, 0,[(game_key_clicked, key_o)],
-  [(start_presentation, "prsnt_battle_map"), (display_message, "@Battle Map Activated")])
-
 khams_custom_player_camera = ((is_a_wb_mt==1) and [
 
   #-- numeric constants
@@ -1189,8 +1185,6 @@ mission_templates = [ # not used in game
 	(try_end),
   ],),
 
-    #(0, 0, 0,[(key_clicked, key_o)], [(start_presentation, "prsnt_battle_map"),(display_message, "@Battle Map Activated")]),
-
   ],
 ),
 
@@ -1277,8 +1271,6 @@ mission_templates = [ # not used in game
 	(5, 0, 0, [(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
 	common_battle_order_panel,
 	common_battle_order_panel_tick,
-
-  #(0, 0, 0,[(key_clicked, key_o)], [(start_presentation, "prsnt_battle_map"),(display_message, "@Battle Map Activated")]),
 ]),
 
 ( "bandits_at_night",0,-1,
