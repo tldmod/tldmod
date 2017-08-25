@@ -1,4 +1,4 @@
-1393
+1396
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -88,6 +88,10 @@ qstr_Ironflesh^Power_Stri Ironflesh^Power_Strike^Power_Throw^Power_Draw^Shield^A
 qstr_Proficiencies Proficiencies
 qstr_1H_Weapons^2H_Weapon 1H_Weapons^2H_Weapons^Polearms^Archery^Crossbows^Throwing
 qstr_Equipment Equipment
+qstr_Forth_Eorlingas! Forth_Eorlingas!
+qstr_{s30} {s30}
+qstr_{s1} {s1}
+qstr_Kill_the_Horse_Men! Kill_the_Horse-Men!
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -582,7 +586,6 @@ qstr_{s3}{s1}{s0} {s3}{s1}{s0}
 qstr_{s3}{s2}{s0} {s3}{s2}{s0}
 qstr_{s1}_{s0} {s1},_{s0}
 qstr_{s1}_and_{s0} {s1}_and_{s0}
-qstr_{s1} {s1}
 qstr_No_Troops_Left. No_Troops_Left.
 qstr_avoid_melee avoid_melee
 qstr_stand_and_fight stand_and_fight

@@ -4297,6 +4297,7 @@ scripts = [
 #        (try_end),
         (store_random_in_range, ":random_no", 0, 100),
         (lt, ":random_no", ":randomness"),
+        (neq|is_between, "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
         (troop_remove_item, "trp_player", ":item_id"),
 
         (try_begin),

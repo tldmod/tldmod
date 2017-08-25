@@ -866,7 +866,7 @@ triggers = [
             (val_add, ":npcs_in_party", 1),
         (try_end),
         (val_sub, ":grievance_divisor", ":npcs_in_party"),
-        (store_skill_level, ":persuasion_level", "skl_persuasion", "trp_player"),
+        (store_skill_level, ":persuasion_level", "skl_leadership", "trp_player"), #changed from persuasion - Kham
         (val_add, ":grievance_divisor", ":persuasion_level"),
         (assign, reg7, ":grievance_divisor"),
 

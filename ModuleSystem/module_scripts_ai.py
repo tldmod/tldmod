@@ -1227,7 +1227,7 @@ ai_scripts = [
             (this_or_next|eq, ":faction_ai_state", sfai_attacking_enemies_around_center),
             (eq, ":faction_ai_state", sfai_attacking_enemy_army),
             (eq, ":commander_party", ":faction_marshall_party"),
-            (ge, ":readiness", 10),
+            (ge, ":readiness", 5), #Kham - Changed from 10
             (assign, ":target_to_follow_other_party", ":faction_marshall_party"),
             (assign, ":chance_to_follow_other_party", 100000),
           (try_end),
@@ -1536,8 +1536,10 @@ ai_scripts = [
           (eq, ":besieger_party", -1),
           (ge, ":cur_center_left_strength", ":min_strength_behind"),#stay inside if center strength is too low
           (assign, ":continue", 0),
-	  (party_get_num_companions, ":party_size", ":party_no"), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege
-	  (gt, ":party_size", tld_siege_min_party_size), 
+	  #(party_get_num_companions, ":party_size", ":party_no"), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege - Kham - Change to calculate Fit
+          (call_script, "script_party_count_fit_for_battle", ":party_no"), #Kham
+      	  (gt, reg0, tld_siege_min_party_size), 
+         
           (try_begin),
             (eq, ":old_ai_state", spai_besieging_center),
             (gt, "$party_relative_strength", 30),
@@ -1731,7 +1733,7 @@ ai_scripts = [
 ##        (try_end),
 
 # no village raids or sieges so far, GA
-#        (assign, ":chance_besiege_enemy_center", 0), - Kham Commented out, we now have sieges in TLD
+        (assign, ":chance_besiege_enemy_center", 0), 
         (assign, ":chance_raid_around_center", 0),
 ##########################################
 		
@@ -1814,8 +1816,10 @@ ai_scripts = [
           (eq, ":ai_state", spai_besieging_center),
           (try_begin),
             (party_slot_eq, ":ai_object", slot_center_is_besieged_by, -1),
-	    (party_get_num_companions, ":party_size", ":party_no"),
-	    (gt, ":party_size", tld_siege_min_party_size), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege
+	    #(party_get_num_companions, ":party_size", ":party_no"),
+	    #(gt, ":party_size", tld_siege_min_party_size), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege - Changed to calculate fit - Kham
+            (call_script, "script_party_count_fit_for_battle", ":party_no"), #Kham
+            (gt, reg0, tld_siege_min_party_size), 
             (store_distance_to_party_from_party, ":distance", ":party_no", ":ai_object"),
             (lt, ":distance", 3),
             (try_begin),
