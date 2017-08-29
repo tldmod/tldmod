@@ -1,4 +1,4 @@
-1358
+1360
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -562,6 +562,8 @@ qstr_loses_Faction_Strengt loses_Faction_Strength_due_to_the_destruction_of_thei
 qstr_gain_Faction_Strengt gain_Faction_Strength_as_news_of_your_victory_spreads.
 qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
+qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
+qstr_Troop:_{s1}___Level: Troop:_{s1}_-_Level:_{reg1}_-_Amount:_{reg2}
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
@@ -1061,7 +1063,7 @@ qstr_Tell_him_I_ll_be_the Tell_him_I'll_be_the_tall_one_when_we_see_each_other_a
 qstr_Ask_if_he_s_seen_Gan Ask_if_he's_seen_Gandalf!
 qstr_You_gained_250_exper You_gained_250_experience.
 qstr_Treebeard_wants_you_ Treebeard_wants_you_find_and_defeat_the_orcs_cutting_down_trees_in_Fangorn.
-qstr_Something_wrong_not_ Something_wrong,_not_enought_troops_for_scout_party
+qstr_Something_wrong_not_e Something_wrong,_not_enought_troops_for_scout_party
 qstr_my_home_town my_home_town
 qstr_I_am_in_perfect_heal I_am_in_perfect_health.
 qstr_I_am_suffering_from_ I_am_suffering_from_{s1}.

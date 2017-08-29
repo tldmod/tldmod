@@ -1063,7 +1063,15 @@ simple_triggers = [
       (assign, ":available_food", 0),
       (try_for_range, ":cur_food", food_begin, food_end),
         (item_set_slot, ":cur_food", slot_item_is_checked, 0),
-        (call_script, "script_cf_player_has_item_without_modifier", ":cur_food", imod_rotten),
+
+      #Kham - Orcs / Uruks eat rotten food
+        (call_script, "script_are_there_orcs", "p_main_party"),
+        (try_begin),
+          (le, reg0, 0),
+          (call_script, "script_cf_player_has_item_without_modifier", ":cur_food", imod_rotten),
+        (try_end),
+      #kham - End
+      
 	(try_begin),
 		# CC: If your party has human flesh, it only counts as food if orc(s) in party
 		# CC: e.g., no more cannibalism.

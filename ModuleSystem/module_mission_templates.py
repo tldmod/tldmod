@@ -1103,6 +1103,21 @@ mission_templates = [ # not used in game
 		
 		(try_begin), # add as many human meat pieces as number of removed prisoners
 			(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # unless good
+
+      #Butcher trait gets 1.2x more human meat - Kham
+
+      (try_begin),
+        (troop_slot_eq, "trp_traits", slot_trait_butcher, 1),
+        (try_begin),
+          (le, reg0, 0),
+          (assign, reg0,1),
+        (try_end),
+        (val_mul, reg0, 10),
+        (val_div, reg0, 8),
+        
+      #Butcher mod ends
+
+      (try_end),
 			(try_for_range, ":unused", 0, reg0), 
 				(troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
 			(try_end),

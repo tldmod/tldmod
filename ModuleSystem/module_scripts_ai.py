@@ -224,7 +224,7 @@ ai_scripts = [
           (try_begin),
             (eq, "$cheat_mode",1),
             (display_message, "@Gondor AI Tweaks - Gondor waits longer"),
-          (end_try),
+          (try_end),
          (else_try),
           (lt, ":offensive_hours", 48), #wait for lords for two days max
           (lt, ":faction_marshall_num_followers", 2), #if we have two+ lords in tow, go and do something creative
@@ -1031,10 +1031,29 @@ ai_scripts = [
           (try_begin),
             (eq, ":commander_party", "p_main_party"),
             (call_script, "script_party_set_ai_state", ":party_no", spai_accompanying_army, "p_main_party"),
+
+          #Kham - AI Change to make Lords attack Marshall enemies more often START (Aug 29, 2017)
+          (else_try),
+            (eq, ":commander_party", "p_main_party"),
+            (eq, ":commander_ai_state", spai_engaging_army),
+            (store_random_in_range, ":random", 0, 100),
+            (try_begin),
+              (le, ":random", 35), #35% Chance to just go ahead and attack the marshall's enemy.
+              (party_is_active, ":commander_ai_object"), #Make sure it is active
+              (call_script, "script_party_set_ai_state", ":party_no", spai_engaging_army, ":commander_ai_object"),
+            (else_try),
+              (party_get_battle_opponent, ":opponent", ":commander_party"), #If Marshall is fighting, go attack his enemy.
+              (ge, ":opponent",0), 
+              (call_script, "script_party_set_ai_state", ":party_no", spai_engaging_army, ":opponent"), 
+            (else_try),
+              (call_script, "script_party_set_ai_state", ":party_no", spai_accompanying_army, ":commander_party"),
+            (try_end),
+          #Kham - Ai Changes END
+
           (else_try),
             (eq, ":commander_ai_state", spai_besieging_center),
             (store_distance_to_party_from_party, ":distance_to_object", ":party_no", ":commander_ai_object"),
-            (le, ":distance_to_object", 5),
+            (le, ":distance_to_object", 7), #Kham - from 5 to 7, just to make the radius bigger.
             (call_script, "script_party_set_ai_state", ":party_no", spai_besieging_center, ":commander_ai_object"),
           (else_try),
             #find current center
@@ -1060,11 +1079,29 @@ ai_scripts = [
             (ge, ":faction_marshall", 0),
             (troop_slot_eq, ":faction_marshall", slot_troop_leaded_party, ":commander_party"),
             (call_script, "script_party_set_ai_state", ":party_no", spai_accompanying_army, ":commander_party"),
+          
+          #Kham - AI Change to make Lords attack Marshall enemies more often START (Aug 29, 2017)
           (else_try),
             (this_or_next|eq, ":commander_ai_state", spai_patrolling_around_center),
-            (this_or_next|eq, ":commander_ai_state", spai_raiding_around_center),
-            (eq, ":commander_ai_state", spai_engaging_army),
+            (eq, ":commander_ai_state", spai_raiding_around_center), #Kham - Removed this_or_next
+            #(eq, ":commander_ai_state", spai_engaging_army),
             (call_script, "script_party_set_ai_state", ":party_no", spai_accompanying_army, ":commander_party"),
+          (else_try), #Kham - Add New Condition When Marshall has enemy
+            (eq, ":commander_ai_state", spai_engaging_army),
+            (store_random_in_range, ":random", 0, 100),
+            (try_begin),
+              (le, ":random", 35), #35% Chance to just go ahead and attack the marshall's enemy.
+              (party_is_active, ":commander_ai_object"), #Make sure it is active
+              (call_script, "script_party_set_ai_state", ":party_no", spai_engaging_army, ":commander_ai_object"),
+            (else_try),
+              (party_get_battle_opponent, ":opponent", ":commander_party"), #If Marshall is fighting, go attack his enemy.
+              (ge, ":opponent",0), 
+              (call_script, "script_party_set_ai_state", ":party_no", spai_engaging_army, ":opponent"), 
+            (else_try),
+              (call_script, "script_party_set_ai_state", ":party_no", spai_accompanying_army, ":commander_party"),
+            (try_end),
+          #Kham - Ai Changes END
+
           (else_try),
             #Commander doesn't need accompany. Cancel
             (call_script, "script_party_set_ai_state", ":party_no", spai_undefined, -1),

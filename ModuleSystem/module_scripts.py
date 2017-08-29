@@ -3280,6 +3280,7 @@ scripts = [
       (try_begin),
         (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
         (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
+        (gt, ":party_leader", 0), #Kham fix
         (store_faction_of_party, ":faction_id", ":party_no"),
         (assign, ":limit", 10),
 
@@ -9285,8 +9286,16 @@ scripts = [
       (val_add, ":new_morale", 50),
 
       (assign, "$g_player_party_morale_modifier_food", 0),
+
+      #kham - Orcs / Uruks eat rotten food
+      (call_script, "script_are_there_orcs", "p_main_party"),
       (try_for_range, ":cur_edible", food_begin, food_end),
-        (call_script, "script_cf_player_has_item_without_modifier", ":cur_edible", imod_rotten),
+      	(try_begin),
+      		(le, reg0,0),
+        	(call_script, "script_cf_player_has_item_without_modifier", ":cur_edible", imod_rotten),
+        (try_end),
+       #Kham - End
+
         (item_get_slot, ":food_bonus", ":cur_edible", slot_item_food_bonus),
         (val_add, "$g_player_party_morale_modifier_food", ":food_bonus"),
       (try_end),
@@ -13746,7 +13755,13 @@ scripts = [
       (troop_get_inventory_slot, ":cur_item", "trp_player", ":cur_slot"),
       (is_between, ":cur_item", food_begin, food_end),
       (troop_get_inventory_slot_modifier, ":item_modifier", "trp_player", ":cur_slot"),
-      (neq, ":item_modifier", imod_rotten),
+      #Kham - Orcs / Uruks eat rotten food
+      (call_script, "script_are_there_orcs", "p_main_party"),
+      (try_begin),
+      	(le, reg0, 0),
+      	(neq, ":item_modifier", imod_rotten),
+      (try_end),
+      #Kham - End
       (item_slot_eq, ":cur_item", slot_item_is_checked, 0),
       (item_set_slot, ":cur_item", slot_item_is_checked, 1),
       (val_sub, ":selected_food", 1),
@@ -22430,8 +22445,8 @@ command_cursor_scripts = [
       (try_end),
   ]),
 
-#SOD Computica: "Battle Map"
-#zs:battle_map
+#Kham: "Update Battle Map"
+#battle_map
   # script_update_battle_map
   # Input: none
   # Output: none
@@ -22451,6 +22466,82 @@ command_cursor_scripts = [
 	(try_end),
    ]),
 
+#Kham - Check if there are orcs / uruks in Party
+	#script_are_there_orcs
+	#Input: party
+	#Output: reg0: Number of Orcs + Uruks
+
+	("are_there_orcs", [
+		(store_script_param_1, ":party_no"),
+
+		(party_get_num_companion_stacks, ":num_stacks",":party_no"),
+	    (assign, ":num_orcs", 0),
+	    (try_for_range, ":i_stack", 0, ":num_stacks"),
+	      (party_stack_get_troop_id, reg1, ":party_no",":i_stack"),
+		  (troop_get_type, ":is_orc", reg1),
+		  (try_begin),
+		  	(eq|this_or_next, ":is_orc", tf_orc),
+		  	(eq|this_or_next, ":is_orc", tf_uruk),
+		  	(eq, ":is_orc", tf_urukhai),		
+		  	(val_add, ":num_orcs", 1),
+		  (try_end),
+		(try_end),
+
+		(assign, reg0, ":num_orcs"),
+		#(display_message, "@DEBUG: {reg0} orc stacks in party"),
+	]),
+
+#Kham - Look for lowest level troop & Remove them
+
+("remove_lowest_level_troop", [
+	(store_script_param_1, ":party_no"),
+	(store_script_param_2, ":amount"),
+
+	(assign,":troops_to_fill", ":amount"),  # pick X troops to remove, starting for the lowest level
+	
+	(try_for_range,":unused",0,":amount"),
+	    (gt,":amount", 0),
+
+		(assign,":minlevel", 100),
+	    (assign,":mintroop", "trp_no_troop"),
+
+		(party_get_num_companion_stacks, ":stacks", ":party_no"),
+		(try_for_range, ":stack", 0, ":stacks"),
+		    (party_stack_get_troop_id,":troop",":party_no",":stack"),
+		    (neg|troop_is_hero,":troop"),
+		    (troop_get_type, ":type", ":troop"),
+		    (is_between, ":type", tf_orc_begin, tf_orc_end), #Can only cannibalize orcs/uruks. May change this.
+		    (store_character_level,":level",":troop"),
+			(try_begin),
+				(lt,":level",":minlevel"),
+				(assign,":minlevel",":level"), #remember new minimal level troop 
+				(assign,":mintroop",":troop"),				
+			(try_end),
+		(try_end),
+
+		(try_begin), # extracting troops
+		    (neq,":mintroop","trp_no_troop"), # if suitable troops exist
+	        (party_count_companions_of_type, ":n", ":party_no", ":mintroop"),
+	        (try_begin),
+	          	(ge, ":n", ":troops_to_fill"), # enough troops here, end iterations
+	          	(val_sub, ":amount", 1),
+	            (assign,":unused",":amount"),
+			    (assign,":n",":troops_to_fill"),
+	        (try_end),
+	        (party_remove_members, ":party_no", ":mintroop", ":n"),
+	        (val_sub,":troops_to_fill",":n"),
+		(else_try), 
+			(display_message,"@Something wrong, not enough troops to remove"),
+	  	(try_end),
+
+		#Debug
+		(str_store_troop_name, s1, ":mintroop"),
+		(assign, ":minlevel", reg1),
+		(assign, ":n", reg2),
+		(display_message, "@Troop: {s1} - Level: {reg1} - Amount: {reg2}"),
+
+    (try_end),
+  ]),
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

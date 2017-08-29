@@ -3102,6 +3102,8 @@ game_menus = [
     	(party_add_members, "p_main_party", "trp_badass_theo",1), 
     	(display_message, "@Killer WItcher Spawned, Badass King Theo added!")]),
     ("full_healing",[], "Heal all injuries FULL", [(call_script, "script_healing_routine_full", "trp_player")]),
+    ("count_orcs",[], "Count number of Orcs/Uruks", [(call_script, "script_are_there_orcs", "p_main_party"), (troop_add_item, "trp_player", "itm_human_meat", imod_rotten)]),
+
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -9944,6 +9946,7 @@ game_menus = [
 		(eq,"$mutiny_stage",4), #fight won
 		(str_store_string, s1, "@^^^You have slain the offender, and other orcs quickly fall back in line. ^ For some time the maggots will be quiet for sure."),
 		(assign,"$mutiny_stage",0),
+		(call_script, "script_change_player_party_morale", 20), #kham - Give + morale when player wins.
     (else_try),
 		(eq,"$mutiny_stage",2), # pre-fight dialog begin
 		(call_script, "script_setup_troop_meeting", "trp_orc_pretender",100),
