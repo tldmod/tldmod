@@ -3321,11 +3321,13 @@ scripts = [
       #(val_mul, ":limit", ":level_factor"),
       #(val_div, ":limit", 90),
 	(troop_get_type, ":race", ":party_leader"),
-     	(try_begin),	
+    (try_begin),
+     	(gt, ":race", 0), #Kham - Fix again
 		(is_between,":race",tf_elf_begin,tf_elf_end), # (CppCoder): Decrease party size of elven parties. 
 		(val_mul, ":limit", 3), # CC: Was 2/3, upped to 3/4, elves wouldn't siege properly
       		(val_div, ":limit", 4),
 	(else_try),
+		(gt, ":race", 0), #Kham - Fix again
 		(eq, ":faction_id", "fac_rhun"), # (CppCoder): Rhun now receives a boost to party size. (4/3)
 		(val_mul, ":limit", 4), 
       		(val_div, ":limit", 3),
@@ -7866,18 +7868,16 @@ scripts = [
       (assign, reg0, ":result"),
 ]),
 
-# script_let_nearby_parties_join_current_battle
+# script_let_nearby_parties_join_current_battle - #Kham - Updated with WB version, still modified for TLD
 # Input: arg1 = besiege_mode, arg2 = dont_add_friends
 # Output: none
 ("let_nearby_parties_join_current_battle",
     [ (store_script_param, ":besiege_mode", 1),
-      (store_script_param, ":dont_add_friends", 2),
-      (assign, ":join_distance", 4),
-      (try_begin),
-        (is_currently_night),
-        (assign, ":join_distance", 2),
-      (try_end),
+      (store_script_param, ":dont_add_friends_other_than_accompanying", 2),
+      
       (try_for_parties, ":party_no"),
+        (neq, ":party_no", "p_main_party"),
+        (neq, ":party_no", "$g_enemy_party"),
         (party_is_active, ":party_no"), # Warband fix
         (party_get_battle_opponent, ":opponent",":party_no"),
         (lt, ":opponent", 0), #party is not itself involved in a battle
@@ -7886,6 +7886,16 @@ scripts = [
         (get_party_ai_behavior, ":behavior", ":party_no"),
         (neq, ":behavior", ai_bhvr_in_town),
         (neg|party_slot_eq, ":party_no", slot_party_type, spt_cattle_herd), #TLD: "cattle" won't join
+
+        (party_get_slot,":party_type",":party_no",slot_party_type),
+        (neq,":party_type",spt_town),
+
+        (assign, ":join_distance", 5), #kham - Changed from 4
+        
+        (try_begin),
+	        (is_currently_night),
+	        (assign, ":join_distance", 3), #kham - Changed from 3
+        (try_end),
       
         (store_distance_to_party_from_party, ":distance", ":party_no", "p_main_party"),
         (lt, ":distance", ":join_distance"),
@@ -7893,13 +7903,13 @@ scripts = [
         (store_faction_of_party, ":faction_no", ":party_no"),
         (store_faction_of_party, ":enemy_faction", "$g_enemy_party"),
         (try_begin),
-          (eq, ":faction_no", "fac_player_supporters_faction"),
+          (this_or_next|eq, ":faction_no", "fac_player_supporters_faction"),
+          (				eq, ":faction_no", "$players_kingdom"),
           (assign, ":reln_with_player", 100),
+          (assign, ":reln_with_enemy", -100),
         (else_try),
-          (store_relation, ":reln_with_player", ":faction_no", "fac_player_supporters_faction"),
-        (try_end),
-        (try_begin),
           (eq, ":faction_no", ":enemy_faction"),
+          (assign, ":reln_with_player", -100),
           (assign, ":reln_with_enemy", 100),
         (else_try),
           (store_relation, ":reln_with_enemy", ":faction_no", ":enemy_faction"),
@@ -7911,42 +7921,50 @@ scripts = [
           (assign, ":enemy_side", 2),
         (try_end),
 
-        (try_begin),
+        (try_begin), #Enemy Parties
           (eq, ":besiege_mode", 0),
           (lt, ":reln_with_player", 0),
           (gt, ":reln_with_enemy", 0),
-          (party_get_slot, ":party_type", ":party_no"),
-          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
-          (neq, ":party_type", spt_town), #...except towns
 
-          (get_party_ai_behavior, ":ai_bhvr", ":party_no"),
-          (neq, ":ai_bhvr", ai_bhvr_avoid_party),
+          #(get_party_ai_behavior, ":ai_bhvr", ":party_no"),
+          #(neq, ":ai_bhvr", ai_bhvr_avoid_party), #kham - let everyone join
           (party_quick_attach_to_current_battle, ":party_no", ":enemy_side"), #attach as enemy
           (str_store_party_name, s1, ":party_no"),
           (display_message, "str_s1_joined_battle_enemy", color_bad_news),
-        (else_try),
-          (eq, ":dont_add_friends", 0),
+       
+        (else_try), #Friendly Parties
+
+          (try_begin),
+            (party_slot_eq, ":party_no", slot_party_ai_state, spai_accompanying_army),
+            (party_slot_eq, ":party_no", slot_party_ai_object, "p_main_party"),
+            (assign, ":party_is_accompanying_player", 1),
+          (else_try),  
+            (assign, ":party_is_accompanying_player", 0),
+          (try_end),
+          
+          (this_or_next|eq, ":dont_add_friends_other_than_accompanying", 0),
+          (eq, ":party_is_accompanying_player", 1),
+          
           (gt, ":reln_with_player", 0),
           (lt, ":reln_with_enemy", 0),
-          (assign, ":do_join", 1),
+          
+          (assign, ":following_player", 0),
           (try_begin),
-            (eq, ":besiege_mode", 1),
-            (assign, ":do_join", 0),
-            # (eq, ":faction_no", "$players_kingdom"),
-            # (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
-            # (assign, ":do_join", 1),
-          (try_end),
-          (eq, ":do_join", 1),
-          (party_get_slot, ":party_type", ":party_no"),
-          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
-          (neq, ":party_type", spt_town), #...except towns
+            (party_slot_eq, ":party_no", slot_party_ai_state, spai_accompanying_army),            
+            (party_slot_eq, ":party_no", slot_party_ai_object, "p_main_party"),
+            (assign, ":following_player", 1),
+          (try_end),             
 
-          #MV commented out personal relations
-          #(party_stack_get_troop_id, ":leader", ":party_no", 0),
-   #       (troop_get_slot, ":player_relation", ":leader", slot_troop_player_relation),
-          #(call_script, "script_troop_get_player_relation", ":leader"),
-          #(assign, ":player_relation", reg0),
-          #(ge, ":player_relation", 0),
+          (assign, ":do_join", 1),
+
+          (try_begin),
+            (eq, ":besiege_mode", 1),                        
+            (eq, ":following_player", 0),                        
+            (assign, ":do_join", 0),
+          (try_end), 
+
+          (eq, ":do_join", 1),
+
           (party_quick_attach_to_current_battle, ":party_no", 0), #attach as friend
           (str_store_party_name, s1, ":party_no"),
           (display_message, "str_s1_joined_battle_friend", color_good_news),

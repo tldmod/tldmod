@@ -6949,7 +6949,7 @@ game_menus = [
         (assign, reg22, reg10), #TLD fix
         (try_begin),
           (eq, "$g_siege_first_encounter", 1),
-          (call_script, "script_let_nearby_parties_join_current_battle", 1, 1), #MV from 0, 1, so no enemies standing by would join
+          (call_script, "script_let_nearby_parties_join_current_battle", 0, 1), #MV from 0, 1, so no enemies standing by would join - Kham - That is actually what we want.
           (call_script, "script_encounter_init_variables"),
         (try_end),
 

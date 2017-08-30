@@ -4110,7 +4110,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    ], "You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]", "lord_pretalk",[]],
 [anyone, "marshall_ask", [ #insufficient faction strength
      (eq, "$tld_option_siege_reqs", 0), # Normal attacking siege reqs
-     (neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_strength, fac_str_ok),
+     (neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_strength, 3200), #Kham - Changed from fac_str_ok
      (call_script, "script_faction_strength_string_to_s23", "$g_talk_troop_faction"),     
    ], "We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.", "lord_pretalk",[]],
 [anyone, "marshall_ask", [ #busy campaigning

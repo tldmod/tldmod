@@ -219,6 +219,24 @@ morale_scripts = [
 			(assign, reg1, -100),
 		(else_try),
 
+		#Map Morale Bonus / penalty - Kham
+		(party_get_morale, ":map_morale", ":party_no"),
+		
+		(try_begin),
+			(ge, ":map_morale", 75),
+			(val_sub, reg1, 15),
+		(else_try),
+			(is_between, ":map_morale", 50, 75),
+			(val_sub, reg1, 10),
+		(else_try),
+			(is_between, ":map_morale", 25, 50),
+			(val_add, reg1, 5),
+		(else_try),
+			(lt, ":map_morale", 25),
+			(val_add, reg1, 10),
+		(try_end),
+
+
 		# leader bonuses -CC
 		(try_begin),
 			(call_script, "script_cf_agent_get_leader", ":agent_no"),

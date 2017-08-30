@@ -106,9 +106,12 @@ ai_scripts = [
         (assign, ":marshall_changed", 0),
        (try_begin),
          (gt, ":faction_marshall", 0),
-         (troop_get_slot, ":faction_marshall_party", ":faction_marshall", slot_troop_leaded_party),
+         (troop_get_slot, ":faction_marshall_party", ":faction_marshall", slot_troop_leaded_party), 
          (gt, ":faction_marshall_party", 0),
          (party_is_active, ":faction_marshall_party"),
+
+         (party_slot_eq, ":faction_marshall_party", slot_party_type, spt_kingdom_hero_party), #Kham - Faction AI Only changes if Marshall has host.
+         
          (party_get_slot, ":faction_marshall_army_strength", ":faction_marshall_party", slot_party_cached_strength),
          (party_get_slot, ":follower_strength", ":faction_marshall_party", slot_party_follower_strength),
          (val_add, ":faction_marshall_army_strength", ":follower_strength"),
@@ -810,7 +813,7 @@ ai_scripts = [
         (store_troop_faction, ":hero_faction_no", ":troop_no"),
         (eq, ":hero_faction_no", ":faction_no"),
         (troop_get_slot, ":hero_party", ":troop_no", slot_troop_leaded_party),
-        (ge, ":hero_party", 0),
+        (gt, ":hero_party", 0),
         (party_is_active, ":hero_party"), #MV
         (party_slot_eq, ":hero_party", slot_party_type, spt_kingdom_hero_party), # TLD: heroes alone don't count into army
         (call_script, "script_party_count_fit_regulars", ":hero_party"),
