@@ -5850,8 +5850,8 @@ game_menus = [
           (try_end),
           (this_or_next|eq, ":enemy_finished", 1),
           (eq, "$g_enemy_surrenders", 1),
-          (assign, "$g_next_menu", -1),#"mnu_castle_taken_by_friends"),
-         (jump_to_menu, "mnu_total_victory"),
+         ## (assign, "$g_next_menu", -1),#"mnu_castle_taken_by_friends"),
+         ## (jump_to_menu, "mnu_total_victory"),
           (call_script, "script_party_wound_all_members", "$g_enemy_party"),
           (assign, ":root_defeated_party", "$g_enemy_party"), #Kham - fix
           (call_script, "script_lift_siege", ":root_defeated_party", 0), #Kham - Fix

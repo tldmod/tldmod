@@ -397,6 +397,7 @@ itc_cutting_spear = itc_spear|itcf_overswing_polearm
 itc_pike       = itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback | itcf_thrust_polearm
 itc_rohan_spear = itc_parry_polearm|itcf_overswing_polearm|itcf_thrust_onehanded
 #itc_greatlance = itc_parry_polearm|itcf_thrust_onehanded_lance_horseback| itcf_thrust_polearm
+itc_no_parry_staff = itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback| itcf_overswing_polearm |itcf_thrust_polearm|itcf_slashright_polearm|itcf_slashleft_polearm
 
 itc_greatlance = itcf_thrust_onehanded_lance |itcf_thrust_onehanded_lance_horseback| itcf_thrust_polearm
 itc_umbar_pike = itc_parry_polearm|itcf_thrust_onehanded_lance_horseback| itcf_thrust_polearm
