@@ -1063,15 +1063,8 @@ simple_triggers = [
       (assign, ":available_food", 0),
       (try_for_range, ":cur_food", food_begin, food_end),
         (item_set_slot, ":cur_food", slot_item_is_checked, 0),
+        (call_script, "script_cf_player_has_item_without_modifier", ":cur_food", imod_rotten),
 
-      #Kham - Orcs / Uruks eat rotten food
-        (call_script, "script_are_there_orcs", "p_main_party"),
-        (try_begin),
-          (le, reg0, 0),
-          (call_script, "script_cf_player_has_item_without_modifier", ":cur_food", imod_rotten),
-        (try_end),
-      #kham - End
-      
 	(try_begin),
 		# CC: If your party has human flesh, it only counts as food if orc(s) in party
 		# CC: e.g., no more cannibalism.
@@ -1103,7 +1096,7 @@ simple_triggers = [
     (try_end),
     ]),
 
-# (36) Setting item modifiers for food
+# (36) Setting item modifiers for food & Cannibalism Trigger (Kham)
 (24,[(troop_get_inventory_capacity, ":inv_size", "trp_player"),
 	(try_for_range, ":i_slot", 0, ":inv_size"),
 		(troop_get_inventory_slot, ":item_id", "trp_player", ":i_slot"),
@@ -2954,7 +2947,45 @@ simple_triggers = [
 
 
 
-
+  #Kham - Cannibalsim / Elven Migration Trigger Start
+(12,
+  [ 
+  (eq, "$cheat_mode", 1),
+  (store_random_in_range, ":random",0,100), #Chance to trigger
+  (try_begin),
+    (map_free),
+    (party_get_num_companions, ":size", "p_main_party"), 
+    (gt, ":size", 15), #Don't trigger if less than 15 troops
+    (assign, reg6, ":random"),
+    #(display_message, "@Random Number - {reg6}", color_good_news),
+    (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
+    (party_get_morale, ":morale", "p_main_party"),
+    
+    (try_begin), #Now we check if we are going to cannibalize or elves wanna go west
+      (neq, ":side", faction_side_good), #Evil only
+      (le, ":random", 45), #45% chance to trigger
+      (call_script, "script_are_there_orcs", "p_main_party"), #Are there orcs/uruks?
+      (gt, reg0, 0),
+      (gt, "$g_player_party_morale_modifier_no_food", 0), #No food
+      (jump_to_menu, "mnu_hungry_orc"),
+    (else_try),
+      (assign, ":chance", 35), #Base chance for it occurring
+      (try_begin), #The conditions that reduce likelihood of triggering start here
+        (is_between, "$current_player_region", region_lebennin, region_n_ithilien),
+        (val_add, ":chance",10),
+      (try_end),
+      (try_begin),
+        (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 1),
+        (val_sub, ":chance", 10),
+      (try_end),
+      (call_script, "script_are_there_elves", "p_main_party"),
+      (gt, reg0,0),
+      (le, ":random", ":chance"),
+      (le, ":morale", 30),
+      (jump_to_menu, "mnu_leaving_elf"),
+    (try_end),
+  (try_end),
+]),
 
 ##############################################
 #trigger reserved for future save game compatibility
@@ -2964,7 +2995,7 @@ simple_triggers = [
 #trigger reserved for future save game compatibility
 #(999,[]),   # replaced by War council trigger
 #trigger reserved for future save game compatibility
-(999,[]),   
+#(999,[]),   # Replaced by cannibalism trigger
 #trigger reserved for future save game compatibility
 (999,[]),   
 #trigger reserved for future save game compatibility

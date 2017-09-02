@@ -3282,6 +3282,27 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["gundabad_healer","Lurgakh_Third_Eye","_",tf_orc|tf_hero,scn_gundabad_camp_center|entry(13),0,fac_gundabad,[itm_gundabad_armor_d,itm_orc_furboot_tall],def_attrib|level(2),wp(20),knows_common,0x0000000fc000200b5ff83e35e4f8ed8900000000001f6d470000000000000000],
 ["mirkwood_healer","Corwiel_the_Soft-Handed","_",tf_female|tf_woodelf|tf_hero,scn_thranduils_halls_center|entry(13),0,fac_woodelf,[itm_mirkwood_armor_a,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x00000004bf00400a5b546a3682a4c2cb00000000001d268a0000000000000000],
 
+#Kham Morale Troops
+
+["hungry_uruk","Hungry_Uruk","bug",tf_uruk| tfg_shield| tfg_ranged|tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+   [itm_uruk_greaves,itm_uruk_chain_greaves,itm_evil_gauntlets_b,itm_orc_throwing_arrow,itm_uruk_bow,itm_orc_hook_arrow,itm_m_uruk_heavy_h,itm_m_uruk_heavy_i,itm_uruk_falchion_a,itm_uruk_falchion_b,itm_uruk_skull_spear,itm_mordor_uruk_shield_a,itm_mordor_uruk_shield_b,itm_uruk_helm_b,itm_uruk_helm_c,itm_uruk_helm_d,],
+      attr_tier_4,wp_tier_4,knows_athletics_6|knows_power_strike_5|knows_power_draw_4|knows_power_throw_3|knows_ironflesh_4|knows_shield_2,uruk_hai_face1,uruk_hai_face2],
+
+["hungry_orc","Hungry_Orc","Large_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
+   [itm_orc_greaves,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_orc_skull_spear,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_mordor_orc_shield_d,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,itm_orc_helm_i,],
+      attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_3|knows_power_throw_3,orc_face3,orc_face6],
+
+["longing_lorien","Longing_Elf","Lothlorien_Scouts",tf_lorien| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
+   [itm_short_bow,itm_elven_arrows,itm_lorien_archer,itm_lorien_boots,itm_lorien_sword_b,],
+      attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,lorien_elf_face_1,lorien_elf_face_2],
+
+["longing_woodelf","Longing_Elf","Greenwood_Scouts",tf_woodelf| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
+   [itm_short_bow,itm_woodelf_arrows,itm_mirkwood_armor_a,itm_mirkwood_boots,itm_mirkwood_knife,],
+      attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,mirkwood_elf_face_1,mirkwood_elf_face_2],
+
+["longing_imladris","Longing_Elf","Rivendell_Scouts",tf_imladris| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
+   [itm_riv_boots,itm_riv_bow,itm_riv_armor_light,itm_riv_archer_sword,itm_elven_arrows,],
+      attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,rivendell_elf_face_1,rivendell_elf_face_2],
 
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 

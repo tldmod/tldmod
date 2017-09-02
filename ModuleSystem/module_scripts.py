@@ -4300,7 +4300,7 @@ scripts = [
 #        (try_end),
         (store_random_in_range, ":random_no", 0, 100),
         (lt, ":random_no", ":randomness"),
-        (neq|is_between, "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
+        (neq|is_between, ":item_id", "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
         (troop_remove_item, "trp_player", ":item_id"),
 
         (try_begin),
@@ -7913,6 +7913,7 @@ scripts = [
           (assign, ":reln_with_enemy", 100),
         (else_try),
           (store_relation, ":reln_with_enemy", ":faction_no", ":enemy_faction"),
+          (store_relation, ":reln_with_player", ":faction_no", "$players_kingdom"),
         (try_end),
 
         (assign, ":enemy_side", 1),
@@ -9273,7 +9274,9 @@ scripts = [
         (troop_get_inventory_slot, ":cur_item", "trp_player", ":i_slot"),
         (eq, ":cur_item", ":item_id"),
         (troop_get_inventory_slot_modifier, ":cur_modifier", "trp_player", ":i_slot"),
-        (neq, ":cur_modifier", ":modifier"),
+        (call_script, "script_are_there_orcs", "p_main_party"),
+        (this_or_next|neq, ":cur_modifier", ":modifier"),
+        (gt, reg0, 0),
         (assign, ":has_without_modifier", 1),
         (assign, ":inv_size", 0), #break
       (try_end),
@@ -9304,16 +9307,8 @@ scripts = [
       (val_add, ":new_morale", 50),
 
       (assign, "$g_player_party_morale_modifier_food", 0),
-
-      #kham - Orcs / Uruks eat rotten food
-      (call_script, "script_are_there_orcs", "p_main_party"),
       (try_for_range, ":cur_edible", food_begin, food_end),
-      	(try_begin),
-      		(le, reg0,0),
-        	(call_script, "script_cf_player_has_item_without_modifier", ":cur_edible", imod_rotten),
-        (try_end),
-       #Kham - End
-
+        (call_script, "script_cf_player_has_item_without_modifier", ":cur_edible", imod_rotten),
         (item_get_slot, ":food_bonus", ":cur_edible", slot_item_food_bonus),
         (val_add, "$g_player_party_morale_modifier_food", ":food_bonus"),
       (try_end),
@@ -22487,7 +22482,7 @@ command_cursor_scripts = [
 #Kham - Check if there are orcs / uruks in Party
 	#script_are_there_orcs
 	#Input: party
-	#Output: reg0: Number of Orcs + Uruks
+	#Output: reg0: Number of Orcs + Uruks Stacks
 
 	("are_there_orcs", [
 		(store_script_param_1, ":party_no"),
@@ -22498,15 +22493,36 @@ command_cursor_scripts = [
 	      (party_stack_get_troop_id, reg1, ":party_no",":i_stack"),
 		  (troop_get_type, ":is_orc", reg1),
 		  (try_begin),
-		  	(eq|this_or_next, ":is_orc", tf_orc),
-		  	(eq|this_or_next, ":is_orc", tf_uruk),
-		  	(eq, ":is_orc", tf_urukhai),		
+		  	(is_between, ":is_orc", tf_orc_begin, tf_orc_end),
 		  	(val_add, ":num_orcs", 1),
 		  (try_end),
 		(try_end),
 
 		(assign, reg0, ":num_orcs"),
 		#(display_message, "@DEBUG: {reg0} orc stacks in party"),
+	]),
+
+#Kham - Check if there are elves in Party
+	#script_are_there_orcs
+	#Input: party
+	#Output: reg0: Number of Orcs + Uruks Stacks
+
+	("are_there_elves", [
+		(store_script_param_1, ":party_no"),
+
+		(party_get_num_companion_stacks, ":num_stacks",":party_no"),
+	    (assign, ":num_elf", 0),
+	    (try_for_range, ":i_stack", 0, ":num_stacks"),
+	      (party_stack_get_troop_id, reg1, ":party_no",":i_stack"),
+		  (troop_get_type, ":is_elf", reg1),
+		  (try_begin),
+			(is_between, ":is_elf", tf_elf_begin, tf_elf_end),
+		  	(val_add, ":num_elf", 1),
+		  (try_end),
+		(try_end),
+
+		(assign, reg0, ":num_elf"),
+		#(display_message, "@DEBUG: {reg0} elf stacks in party"),
 	]),
 
 #Kham - Look for lowest level troop & Remove them

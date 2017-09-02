@@ -226,7 +226,7 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
       (eq,     "$cam_mode", 0),
       (assign, "$cam_mode", 2),
       (display_message, "@Fixed Custom Camera"),
-      (display_message, "@Press Left / Right Arrow Keys to Switch Shoulders"),
+      (display_message, "@Press Ctrl + Left / Ctrl + Right Arrow Keys to Switch Shoulders"),
 
     (else_try),
       (eq,     "$cam_mode", 2),

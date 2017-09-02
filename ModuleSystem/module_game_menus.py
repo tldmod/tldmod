@@ -3103,7 +3103,9 @@ game_menus = [
     	(display_message, "@Killer WItcher Spawned, Badass King Theo added!")]),
     ("full_healing",[], "Heal all injuries FULL", [(call_script, "script_healing_routine_full", "trp_player")]),
     ("count_orcs",[], "Count number of Orcs/Uruks", [(call_script, "script_are_there_orcs", "p_main_party"), (troop_add_item, "trp_player", "itm_human_meat", imod_rotten)]),
-
+    ("count_elves",[], "Count number of Elves", [(call_script, "script_are_there_orcs", "p_main_party"),]),
+    ("change_morale",[], "Give Bad Morale", [(party_set_morale, "p_main_party", 20), (party_get_morale, reg6, "p_main_party"),(display_message, "@Morale is now {reg6}", color_bad_news)]),
+    ("remove_lowest_level",[], "Remove 5 low level troops", [(call_script, "script_remove_lowest_level_troop", "p_main_party", 5),]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -9533,6 +9535,36 @@ game_menus = [
  ),
 
 ###################### Field AI Options Menu END (Kham)  ##########################################
+
+###################### Dummy Menus for Morale Conversation Troop Triggers  ########################
+###################### Cannibalism / Elves Leaving  START (Kham) ##################################
+
+("hungry_orc",0,"none","none", #dummy menu to trigger hungry orc conversation
+   [(store_random_in_range, ":random",0,100),
+   (try_begin),
+   	(le, ":random", 49),
+   	(call_script, "script_setup_troop_meeting", "trp_hungry_orc",255),
+   (else_try),
+   	(call_script, "script_setup_troop_meeting", "trp_hungry_uruk", 255),
+   (try_end),
+    ],[]
+ ),
+
+("leaving_elf",0,"none","none", #dummy menu to trigger leaving elf conversation
+   [(try_begin),
+    	(eq, "$players_kingdom", "fac_lorien"),
+   		(call_script, "script_setup_troop_meeting", "trp_longing_lorien", 255),
+   		(display_message, "@Lorien"),
+    (else_try),
+    	(eq, "$players_kingdom", "fac_imladris"),
+    	(call_script, "script_setup_troop_meeting", "trp_longing_imladris", 255),
+    	(display_message, "@Imladris"),
+    (else_try),
+    	(call_script, "script_setup_troop_meeting", "trp_longing_woodelf", 255),
+    	(display_message, "@Woodelf"),
+    (try_end),
+    ],[]
+ ),
 
 ( "custom_battle_choose_faction1",0,
     "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01")],

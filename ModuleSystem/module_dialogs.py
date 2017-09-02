@@ -8123,7 +8123,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ### Kham Healers Dialogue Begin
 
 [anyone,"start", [
-      (is_between, "$g_talk_troop", "trp_morannon_healer", "trp_last"),
+      (is_between, "$g_talk_troop", "trp_morannon_healer", "trp_hungry_uruk"),
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
       (lt, ":rank", 3),
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
@@ -8139,7 +8139,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
           "{s1}", "close_window",[(call_script, "script_stand_back")]],
 
 [anyone,"start", [
-  (is_between, "$g_talk_troop", "trp_morannon_healer", "trp_last"),
+  (is_between, "$g_talk_troop", "trp_morannon_healer", "trp_hungry_uruk"),
   (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
   (try_begin),
     (neq, ":side", faction_side_good),
@@ -8359,6 +8359,26 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         (change_screen_map),
         (rest_for_hours, 8,15,0),
       (try_end)]],
+
+# Healers Dialogue END
+# Morale Troops Dialogue Start - Kham
+
+[anyone,"start", [(this_or_next|eq, "$g_talk_troop", "trp_hungry_orc"), (eq, "$g_talk_troop", "trp_hungry_uruk")],"We are HUNGRY!! (Placeholder).", "hungry_orc_1", []],
+[anyone|plyr,"hungry_orc_1", [],"What do you want me to do about it? (Placeholder).", "hungry_orc_2", []],
+[anyone,"hungry_orc_2", [],"We gonna start eating the weaklings! (Placeholder).", "hungry_orc_choice", []],
+[anyone|plyr,"hungry_orc_choice", [],"Do what you want. (Placeholder).", "hungry_orc_eat", []],
+[anyone|plyr,"hungry_orc_choice", [],"No. (Placeholder).", "hungry_orc_no", []],
+[anyone,"hungry_orc_eat", [],"Meat is back on the menu, boyz!!! (Placeholder).", "close_window", [(change_screen_return),]],
+[anyone,"hungry_orc_no", [],"You will regret this... (Placeholder).", "close_window", [(change_screen_return),]],
+
+[anyone,"start", [(this_or_next|eq, "$g_talk_troop", "trp_longing_lorien"), (this_or_next|eq, "$g_talk_troop", "trp_longing_imladris"),(eq, "$g_talk_troop", "trp_longing_woodelf")],"I need to talk to you. (Placeholder).", "sad_elf_1", []],
+[anyone|plyr,"sad_elf_1", [],"Speak? (Placeholder).", "sad_elf_2", []],
+[anyone,"sad_elf_2", [],"We are not happy. We miss home. I want to go home. (Placeholder).", "sad_elf_choice", []],
+[anyone|plyr,"sad_elf_choice", [],"Do what you want. (Placeholder).", "sad_elf_eat", []],
+[anyone|plyr,"sad_elf_choice", [],"No. (Placeholder).", "sad_elf_no", []],
+[anyone,"sad_elf_eat", [],"Home, home on the range! Where the deer and the antelope play...(Placeholder).", "close_window", [(change_screen_return),]],
+[anyone,"sad_elf_no", [],"Hmph! (Placeholder).", "close_window", [(change_screen_return),]],
+
 
 
 [anyone,"start", [(eq,"$talk_context",tc_join_battle_ally)],"You have come just in time. Let us join our forces now and teach our enemy a lesson.", "close_window", [(call_script,"script_stand_back"),]],
