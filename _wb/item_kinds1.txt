@@ -888,7 +888,7 @@ itemsfile version 2
  itm_gondor_bastard Gondor_Bastard_Sword Gondor_Bastard_Sword 2  gondor_bastard 0  scab_gondor_bastard 3458764513820540928  4259843 9223635954298781951 800 287892 2.25 100 0 0 0 0 37888 98 0 103 0 282 37
 0
 
- itm_gondor_citadel_sword Gondor_Citadel_Sword Gondor_Citadel_Sword 2  gondor_citadel 0  scab_gondor_citadel 3458764513820540928  4259842 9223388564182532111 1000 156672 1.25 100 0 0 0 0 39936 100 0 94 0 286 39
+ itm_gondor_citadel_sword Gondor_Citadel_Sword Gondor_Citadel_Sword 2  gondor_citadel 0  scab_gondor_citadel 3458764513820540928  4259842 9223388564182532111 1000 156672 1.25 100 0 0 0 0 35840 100 0 94 0 286 35
 0
 
  itm_gondor_cav_sword Gondor_Cavalry_Sword Gondor_Cavalry_Sword 2  gondor_riding_sword 0  scab_gondor_riding_sword 3458764513820540928  4259842 9223388564182532111 300 287892 2 100 0 0 0 0 28672 103 0 100 0 277 28
@@ -1389,7 +1389,7 @@ itemsfile version 2
  itm_mordor_sword Bastard_Sword_of_Mordor Bastard_Sword_of_Mordor 1  mordor_sword 0  4259843 9223635924234010879 294 286870 2.25 100 0 0 0 0 37888 98 0 109 0 282 37
 0
 
- itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor 0  scab_sword_of_mordor 3458764513820540928  4259842 9223388564182532111 500 286870 2.75 100 0 0 0 0 39936 95 0 125 0 287 39
+ itm_mordor_longsword Sword_of_Mordor Sword_of_Mordor 2  sword_of_mordor 0  scab_sword_of_mordor 3458764513820540928  4259842 9223388564182532111 1000 286870 2.75 100 0 0 0 0 35840 95 0 94 0 287 35
 0
 
  itm_moria_armor_a Moria_Breast_Harness Moria_Breast_Harness 1  orc_moria_a 0  16842765 0 201 1099679400102 10 100 0 6 4 0 0 0 0 0 0 0 0
@@ -2616,7 +2616,7 @@ itemsfile version 2
  itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 12 100 2 50 20 15 0 0 0 0 0 0 0
 0
 
- itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 3000 156672 1.25 100 0 0 0 15 40960 130 0 100 0 286 296
+ itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  1h_westernesse 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 3000 156672 1.25 100 0 0 0 15 40960 130 0 77 0 286 296
 0
 
  itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 120 0 120 0 301 306
@@ -2631,7 +2631,7 @@ itemsfile version 2
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 12 40960 120 0 92 0 286 296
+ itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 12 40960 100 0 100 0 286 296
 0
 
  itm_garlic_reward Garlic Garlic 1  garlic 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
