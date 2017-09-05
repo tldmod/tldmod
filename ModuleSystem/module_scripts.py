@@ -3281,6 +3281,7 @@ scripts = [
         (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
         (party_stack_get_troop_id, ":party_leader", ":party_no", 0),
         (gt, ":party_leader", 0), #Kham fix
+        (is_between, ":party_leader", kingdom_heroes_begin, kingdom_heroes_end),
         (store_faction_of_party, ":faction_id", ":party_no"),
         (assign, ":limit", 10),
 
@@ -4305,7 +4306,7 @@ scripts = [
 #        (try_end),
         (store_random_in_range, ":random_no", 0, 100),
         (lt, ":random_no", ":randomness"),
-        (neq|is_between, ":item_id", "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
+        (neg|is_between, ":item_id", "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
         (troop_remove_item, "trp_player", ":item_id"),
 
         (try_begin),
@@ -7873,16 +7874,18 @@ scripts = [
       (assign, reg0, ":result"),
 ]),
 
-# script_let_nearby_parties_join_current_battle - #Kham - Updated with WB version, still modified for TLD
+# script_let_nearby_parties_join_current_battle
 # Input: arg1 = besiege_mode, arg2 = dont_add_friends
 # Output: none
 ("let_nearby_parties_join_current_battle",
     [ (store_script_param, ":besiege_mode", 1),
-      (store_script_param, ":dont_add_friends_other_than_accompanying", 2),
-      
+      (store_script_param, ":dont_add_friends", 2),
+      (assign, ":join_distance", 5), #Kham - Changed from 4
+      (try_begin),
+        (is_currently_night),
+        (assign, ":join_distance", 3), #Kham - Changed from 3
+      (try_end),
       (try_for_parties, ":party_no"),
-        (neq, ":party_no", "p_main_party"),
-        (neq, ":party_no", "$g_enemy_party"),
         (party_is_active, ":party_no"), # Warband fix
         (party_get_battle_opponent, ":opponent",":party_no"),
         (lt, ":opponent", 0), #party is not itself involved in a battle
@@ -7891,16 +7894,6 @@ scripts = [
         (get_party_ai_behavior, ":behavior", ":party_no"),
         (neq, ":behavior", ai_bhvr_in_town),
         (neg|party_slot_eq, ":party_no", slot_party_type, spt_cattle_herd), #TLD: "cattle" won't join
-
-        (party_get_slot,":party_type",":party_no",slot_party_type),
-        (neq,":party_type",spt_town),
-
-        (assign, ":join_distance", 5), #kham - Changed from 4
-        
-        (try_begin),
-	        (is_currently_night),
-	        (assign, ":join_distance", 3), #kham - Changed from 3
-        (try_end),
       
         (store_distance_to_party_from_party, ":distance", ":party_no", "p_main_party"),
         (lt, ":distance", ":join_distance"),
@@ -7908,17 +7901,16 @@ scripts = [
         (store_faction_of_party, ":faction_no", ":party_no"),
         (store_faction_of_party, ":enemy_faction", "$g_enemy_party"),
         (try_begin),
-          (this_or_next|eq, ":faction_no", "fac_player_supporters_faction"),
-          (				eq, ":faction_no", "$players_kingdom"),
+          (eq, ":faction_no", "fac_player_supporters_faction"),
           (assign, ":reln_with_player", 100),
-          (assign, ":reln_with_enemy", -100),
         (else_try),
+          (store_relation, ":reln_with_player", ":faction_no", "fac_player_supporters_faction"),
+        (try_end),
+        (try_begin),
           (eq, ":faction_no", ":enemy_faction"),
-          (assign, ":reln_with_player", -100),
           (assign, ":reln_with_enemy", 100),
         (else_try),
           (store_relation, ":reln_with_enemy", ":faction_no", ":enemy_faction"),
-          (store_relation, ":reln_with_player", ":faction_no", "$players_kingdom"),
         (try_end),
 
         (assign, ":enemy_side", 1),
@@ -7927,50 +7919,42 @@ scripts = [
           (assign, ":enemy_side", 2),
         (try_end),
 
-        (try_begin), #Enemy Parties
+        (try_begin),
           (eq, ":besiege_mode", 0),
           (lt, ":reln_with_player", 0),
           (gt, ":reln_with_enemy", 0),
+          (party_get_slot, ":party_type", ":party_no"),
+          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
+          (neq, ":party_type", spt_town), #...except towns
 
-          #(get_party_ai_behavior, ":ai_bhvr", ":party_no"),
-          #(neq, ":ai_bhvr", ai_bhvr_avoid_party), #kham - let everyone join
+          (get_party_ai_behavior, ":ai_bhvr", ":party_no"),
+          (neq, ":ai_bhvr", ai_bhvr_avoid_party),
           (party_quick_attach_to_current_battle, ":party_no", ":enemy_side"), #attach as enemy
           (str_store_party_name, s1, ":party_no"),
           (display_message, "str_s1_joined_battle_enemy", color_bad_news),
-       
-        (else_try), #Friendly Parties
-
-          (try_begin),
-            (party_slot_eq, ":party_no", slot_party_ai_state, spai_accompanying_army),
-            (party_slot_eq, ":party_no", slot_party_ai_object, "p_main_party"),
-            (assign, ":party_is_accompanying_player", 1),
-          (else_try),  
-            (assign, ":party_is_accompanying_player", 0),
-          (try_end),
-          
-          (this_or_next|eq, ":dont_add_friends_other_than_accompanying", 0),
-          (eq, ":party_is_accompanying_player", 1),
-          
+        (else_try),
+          (eq, ":dont_add_friends", 0),
           (gt, ":reln_with_player", 0),
           (lt, ":reln_with_enemy", 0),
-          
-          (assign, ":following_player", 0),
-          (try_begin),
-            (party_slot_eq, ":party_no", slot_party_ai_state, spai_accompanying_army),            
-            (party_slot_eq, ":party_no", slot_party_ai_object, "p_main_party"),
-            (assign, ":following_player", 1),
-          (try_end),             
-
           (assign, ":do_join", 1),
-
           (try_begin),
-            (eq, ":besiege_mode", 1),                        
-            (eq, ":following_player", 0),                        
+            (eq, ":besiege_mode", 1),
             (assign, ":do_join", 0),
-          (try_end), 
-
+            # (eq, ":faction_no", "$players_kingdom"),
+            # (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
+            # (assign, ":do_join", 1),
+          (try_end),
           (eq, ":do_join", 1),
+          (party_get_slot, ":party_type", ":party_no"),
+          #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
+          (neq, ":party_type", spt_town), #...except towns
 
+          #MV commented out personal relations
+          #(party_stack_get_troop_id, ":leader", ":party_no", 0),
+   #       (troop_get_slot, ":player_relation", ":leader", slot_troop_player_relation),
+          #(call_script, "script_troop_get_player_relation", ":leader"),
+          #(assign, ":player_relation", reg0),
+          #(ge, ":player_relation", 0),
           (party_quick_attach_to_current_battle, ":party_no", 0), #attach as friend
           (str_store_party_name, s1, ":party_no"),
           (display_message, "str_s1_joined_battle_friend", color_good_news),
@@ -21778,6 +21762,7 @@ command_cursor_scripts = [
 
   	(try_begin),
   		(is_between, ":party_id","p_main_party", "p_scribble_242"),
+  		(neq, ":party_id", "p_main_party"),
   		(disable_party, ":party_id"),
   		(tutorial_box, "@INVALID PARTY BEING REMOVED ({s1})! DISABLED INSTEAD. PLEASE LET THE DEVS KNOW. THIS IS A TEST AGAINST SAVE GAME CORRUPTION."),
 		(try_begin),
@@ -21785,6 +21770,7 @@ command_cursor_scripts = [
 			#(display_message, "@{s1} disabled"),
 		(try_end),
 	(else_try),
+		(neq, ":party_id", "p_main_party"),
 		(remove_party, ":party_id"),
 		(try_begin),
 			(eq, "$cheat_mode",1),
@@ -22508,9 +22494,9 @@ command_cursor_scripts = [
 	]),
 
 #Kham - Check if there are elves in Party
-	#script_are_there_orcs
+	#script_are_there_elves
 	#Input: party
-	#Output: reg0: Number of Orcs + Uruks Stacks
+	#Output: reg0: Number of Elf Stacks
 
 	("are_there_elves", [
 		(store_script_param_1, ":party_no"),
@@ -22531,10 +22517,14 @@ command_cursor_scripts = [
 	]),
 
 #Kham - Look for lowest level troop & Remove them
+#script_remove_highest_or_lowest_level_troop
+#Input: party, amount, low level or high level (0 or 1),
+#Output: removes number of highest/lowest level troop, s6 stores the name of the troop
 
-("remove_lowest_level_troop", [
-	(store_script_param_1, ":party_no"),
-	(store_script_param_2, ":amount"),
+("remove_highest_or_lowest_level_troop", [
+	(store_script_param, ":party_no",1),
+	(store_script_param, ":amount",2),
+	(store_script_param, ":minmax",3),
 
 	(assign,":troops_to_fill", ":amount"),  # pick X troops to remove, starting for the lowest level
 	
@@ -22542,6 +22532,7 @@ command_cursor_scripts = [
 	    (gt,":amount", 0),
 
 		(assign,":minlevel", 100),
+		(assign,":maxlevel", 1),
 	    (assign,":mintroop", "trp_no_troop"),
 
 		(party_get_num_companion_stacks, ":stacks", ":party_no"),
@@ -22549,12 +22540,29 @@ command_cursor_scripts = [
 		    (party_stack_get_troop_id,":troop",":party_no",":stack"),
 		    (neg|troop_is_hero,":troop"),
 		    (troop_get_type, ":type", ":troop"),
-		    (is_between, ":type", tf_orc_begin, tf_orc_end), #Can only cannibalize orcs/uruks. May change this.
+		    (assign, ":continue", 0),
+
+		    # Here, we check if the player is Evil, which means that the cannibalism can trigger....
+		    (try_begin),
+		    	(neg|faction_slot_eq, "$players_kingdom", slot_faction_side,faction_side_good),
+		    	(assign, ":continue",1),
+		    (try_end),
+
+		    #So we only let Evil Players or Elven troops continue, cause only Evil Players would have cannibalism trigger, and only elves leave
+		    (this_or_next| eq, ":continue", 1),
+		    (is_between, ":type", tf_elf_begin, tf_elf_end),
+		    
 		    (store_character_level,":level",":troop"),
 			(try_begin),
+				(eq, ":minmax", 0), #Low Levels
 				(lt,":level",":minlevel"),
 				(assign,":minlevel",":level"), #remember new minimal level troop 
-				(assign,":mintroop",":troop"),				
+				(assign,":mintroop",":troop"),
+			(else_try),
+				(eq, ":minmax", 1), #High Levels
+				(gt, ":level", ":maxlevel"),
+				(assign, ":maxlevel", ":level"),  #remember new maximum level troop 
+				(assign, ":mintroop", ":troop"),				
 			(try_end),
 		(try_end),
 
@@ -22573,11 +22581,20 @@ command_cursor_scripts = [
 			(display_message,"@Something wrong, not enough troops to remove"),
 	  	(try_end),
 
+	  	(str_store_troop_name, s6, ":mintroop"),
+
 		#Debug
-		(str_store_troop_name, s1, ":mintroop"),
-		(assign, ":minlevel", reg1),
-		(assign, ":n", reg2),
-		(display_message, "@Troop: {s1} - Level: {reg1} - Amount: {reg2}"),
+		(try_begin),
+			#(eq, "$cheat_mode", 1),
+			(str_store_troop_name, s1, ":mintroop"),
+			(try_begin),
+				(eq, ":minmax",0),
+				(assign, reg1, ":minlevel"),
+			(else_try),
+				(assign, reg1, ":maxlevel"),
+			(try_end),
+			(display_message, "@Troop: {s6} - Level: {reg1}"),
+		(try_end),
 
     (try_end),
   ]),

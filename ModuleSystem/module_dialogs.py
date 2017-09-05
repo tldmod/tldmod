@@ -1563,7 +1563,6 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
       # check if first time or depleted, and initialize
       (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
 	 
-    ## Kham - Remove this code, as we are trying to create the volunteer party ONLY ONCE, then just keep refilling it, instead of recreating it.
     (try_begin),
   		(gt, ":reserve_party", 0),
   		(neg|party_is_active, ":reserve_party"), # depleted
@@ -8363,23 +8362,229 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 # Healers Dialogue END
 # Morale Troops Dialogue Start - Kham
 
-[anyone,"start", [(this_or_next|eq, "$g_talk_troop", "trp_hungry_orc"), (eq, "$g_talk_troop", "trp_hungry_uruk")],"We are HUNGRY!! (Placeholder).", "hungry_orc_1", []],
-[anyone|plyr,"hungry_orc_1", [],"What do you want me to do about it? (Placeholder).", "hungry_orc_2", []],
-[anyone,"hungry_orc_2", [],"We gonna start eating the weaklings! (Placeholder).", "hungry_orc_choice", []],
-[anyone|plyr,"hungry_orc_choice", [],"Do what you want. (Placeholder).", "hungry_orc_eat", []],
-[anyone|plyr,"hungry_orc_choice", [],"No. (Placeholder).", "hungry_orc_no", []],
-[anyone,"hungry_orc_eat", [],"Meat is back on the menu, boyz!!! (Placeholder).", "close_window", [(change_screen_return),]],
-[anyone,"hungry_orc_no", [],"You will regret this... (Placeholder).", "close_window", [(change_screen_return),]],
+[anyone,"start", [
+  (this_or_next|eq, "$g_talk_troop", "trp_hungry_orc"), 
+  (eq, "$g_talk_troop", "trp_hungry_uruk"),
+  (store_random_in_range, ":random", 0, 100),
+  (try_begin),
+    (le, ":random", 50),
+    (str_store_string, s1, "@Boss, the lads are hungry! We're doing all the hard work and still we're starving!"),
+  (else_try),
+    (str_store_string, s1, "@Master, the lads are hungry! We can't do all this fighting on empty stomachs!"),
+  (try_end),
+    ],"{s1}", "hungry_orc_1", []],
 
-[anyone,"start", [(this_or_next|eq, "$g_talk_troop", "trp_longing_lorien"), (this_or_next|eq, "$g_talk_troop", "trp_longing_imladris"),(eq, "$g_talk_troop", "trp_longing_woodelf")],"I need to talk to you. (Placeholder).", "sad_elf_1", []],
-[anyone|plyr,"sad_elf_1", [],"Speak? (Placeholder).", "sad_elf_2", []],
-[anyone,"sad_elf_2", [],"We are not happy. We miss home. I want to go home. (Placeholder).", "sad_elf_choice", []],
-[anyone|plyr,"sad_elf_choice", [],"Do what you want. (Placeholder).", "sad_elf_eat", []],
-[anyone|plyr,"sad_elf_choice", [],"No. (Placeholder).", "sad_elf_no", []],
-[anyone,"sad_elf_eat", [],"Home, home on the range! Where the deer and the antelope play...(Placeholder).", "close_window", [(change_screen_return),]],
-[anyone,"sad_elf_no", [],"Hmph! (Placeholder).", "close_window", [(change_screen_return),]],
+[anyone|plyr,"hungry_orc_1", [],"What do you expect me to do about it, rat?", "hungry_orc_2", []],
+[anyone,"hungry_orc_2", [],"Those weaklings over there are no use in a proper fight, anyway. Let us eat THEM!", "hungry_orc_choice", []],
+[anyone|plyr,"hungry_orc_choice", [],"All right, grab them! [Kill a few weaklings to feed your orcs.]", "hungry_orc_eat", []],
+[anyone|plyr,"hungry_orc_choice", [],"No way. None of my men get eaten! Fall back in line or I'll have you eat your own tongue! [Leadership Check]", "hungry_orc_no_check", []],
+[anyone,"hungry_orc_eat", [
+  (store_random_in_range, ":random", 0, 100),
+  (try_begin),
+    (le, ":random", 50),
+    (str_store_string, s1, "@Yes! With proper fed bellies, we'll serve you twice as well!"),
+  (else_try),
+    (str_store_string, s1, "@As you command, master, heh heh. Meat's back on the menu, boys!"),
+  (try_end),],"{s1}", "close_window", 
+  [(party_get_num_companions, ":troops", "p_main_party"),
+   (val_div, ":troops",10), #Eat 10% of your low level troops
+   (val_min, ":troops", 10), #Up to a max of 10
+   (call_script, "script_remove_highest_or_lowest_level_troop", "p_main_party", ":troops", 0),
+   (assign, reg1, ":troops"),
+   (display_message, "@Your Orcs & Uruks ate {reg1} men!", color_bad_news),
+   (party_get_morale, ":morale", "p_main_party"),
+   (try_begin), #If the player has low morale and no food: low morale constant + 10 = Current Player Morale + X
+    (le, ":morale", low_party_morale),
+    (store_sub, ":diff", low_party_morale, ":morale"),
+    (store_add, ":morale_gain", ":diff", 10),
+    (call_script, "script_change_player_party_morale", ":morale_gain"),
+  (else_try),
+    (call_script, "script_change_player_party_morale", 8), #If the player just has no food (ie, party morale is > low morale constant, we'll just add +5 morale.
+  (try_end),
+  (change_screen_return),]],
 
+[anyone,"hungry_orc_no_check", 
+  [(party_get_skill_level, ":leadership", "p_main_party", skl_leadership),
+   (assign, ":chance", 100),
+    (try_begin),
+      (gt, ":leadership", 5),
+      (assign, ":continue",1),
+    (else_try),
+      (eq, ":leadership", 5),
+      (assign, ":chance", 80),
+    (else_try),
+      (eq, ":leadership", 4),
+      (assign, ":chance", 60),
+    (else_try),
+      (eq, ":leadership", 3),
+      (assign, ":chance", 40),
+    (else_try),
+      (eq, ":leadership", 2),
+      (assign, ":chance", 20),
+    (else_try),
+      (assign, ":chance", 10),
+    (try_end),
+    (party_get_morale, ":morale", "p_main_party"),
+    (try_begin),
+      (le, ":morale", low_party_morale),
+      (val_sub, ":chance", 10),
+    (try_end),
+    (store_random_in_range, ":random", 0, 100),
+    (str_clear, s1),
+    (try_begin),
+      (this_or_next| eq, ":continue", 1),
+      (              le, ":random", ":chance"),
+      (assign, "$leadership_check",1),
+      (str_store_string, s1, "@Yes master! As you command, master!"),
+    (else_try),
+      (assign, "$leadership_check", 0),
+      (str_store_string, s1, "@Harr harr harr! You don't frighten ME! Next time it's YOU that we eat!"),
+    (try_end),
+    
+    ##Debug
+    #(assign, reg1, ":random"),
+    #(assign, reg2, ":chance"),
+    #(assign, reg3, ":leadership"),
+    #(display_message, "@{reg1} random number - {reg2} chance - {reg3} leadership")
 
+    ],"{s1}", "close_window", 
+  [
+   (try_begin),
+     (eq, "$leadership_check",1),
+     (party_get_morale, ":morale", "p_main_party"),
+     (try_begin),
+      (le, ":morale", low_party_morale),
+      (store_sub, ":diff", low_party_morale, ":morale"),
+      (store_add, ":morale_gain", ":diff", 2),
+      (call_script, "script_change_player_party_morale", ":morale_gain"),
+     (else_try),
+      (call_script, "script_change_player_party_morale", 4), #If the player just has no food (ie, party morale is > low morale constant, we'll just add +4 morale.
+     (try_end),
+   (else_try),
+     (party_get_num_companions, ":troops", "p_main_party"),
+     (val_div, ":troops",20), #Eat 20% of your low level troops
+     (val_min, ":troops", 15), #Up to a max of 10
+     (call_script, "script_remove_highest_or_lowest_level_troop", "p_main_party", ":troops", 0),
+     (assign, reg1, ":troops"),
+     (display_message, "@Your Orcs & Uruks ate {reg1} men!", color_bad_news),
+     (party_get_morale, ":morale", "p_main_party"),
+     (try_begin), #If the player has low morale and no food: low morale constant + 2 = Current Player Morale + X
+      (le, ":morale", low_party_morale),
+      (store_sub, ":diff", low_party_morale, ":morale"),
+      (store_add, ":morale_gain", ":diff", 2),
+      (call_script, "script_change_player_party_morale", ":morale_gain"),
+    (else_try),
+      (call_script, "script_change_player_party_morale", 4), #If the player just has no food (ie, party morale is > low morale constant, we'll just add +5 morale.
+    (try_end),
+   (try_end),
+   (change_screen_return)]],
+
+[anyone,"start", [(this_or_next|eq, "$g_talk_troop", "trp_longing_lorien"), (this_or_next|eq, "$g_talk_troop", "trp_longing_imladris"),(eq, "$g_talk_troop", "trp_longing_woodelf")],"Look, my {lord/lady}, gulls! A wonder they are to me and a trouble to my heart.", "sad_elf_1", []],
+[anyone|plyr,"sad_elf_1", [],"I hear their voices. What news do they bring?", "sad_elf_2", []],
+[anyone,"sad_elf_2", [],"Ah, tales from the sea. And from beyond. My {lord/lady}, I have grown weary of this war we fight, weary of this soil we drag ourselves on. I fear Ennor (Middle-Earth) is lost for me. Let me leave!", "sad_elf_choice", []],
+[anyone|plyr,"sad_elf_choice", [],"I feel your pain. You have done your share in this war. You may leave.", "sad_elf_leave", []],
+[anyone|plyr,"sad_elf_choice", [],"The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]", "sad_elf_no", []],
+
+[anyone,"sad_elf_leave", [],"Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.", "close_window", 
+[(call_script, "script_remove_highest_or_lowest_level_troop", "p_main_party", 1, 1), #Only 1 high level elf leaves.
+ (display_message, "@One {s6} left the party.", color_bad_news),
+ (party_get_morale, ":morale", "p_main_party"),
+ (set_show_messages, 0),
+ (try_begin),
+  (le, ":morale", low_party_morale),
+  (store_sub, ":diff", low_party_morale, ":morale"),
+  (store_add, ":morale_gain", ":diff", 10),
+  (call_script, "script_change_player_party_morale", ":morale_gain"),
+ (else_try),
+  (call_script, "script_change_player_party_morale", 5),
+ (try_end),
+ (set_show_messages, 1),
+ (change_screen_return)]],
+
+[anyone,"sad_elf_no", [
+    (party_get_skill_level, ":leadership", "p_main_party", skl_leadership),
+    (assign, ":chance", 100),
+    (try_begin),
+      (gt, ":leadership", 5),
+      (assign, ":continue",1),
+    (else_try),
+      (eq, ":leadership", 5),
+      (assign, ":chance", 80),
+    (else_try),
+      (eq, ":leadership", 4),
+      (assign, ":chance", 60),
+    (else_try),
+      (eq, ":leadership", 3),
+      (assign, ":chance", 40),
+    (else_try),
+      (eq, ":leadership", 2),
+      (assign, ":chance", 20),
+    (else_try),
+      (assign, ":chance", 10),
+    (try_end),
+    (try_begin),
+      (troop_slot_eq, "trp_traits", slot_trait_elf_friend, 1),
+      (val_add, ":chance", 20),
+    (try_end),
+    (store_random_in_range, ":random", 0, 100),
+    (str_clear, s2),
+    (try_begin),
+      (this_or_next| eq, ":continue", 1),
+      (              le, ":random", ":chance"),
+      (assign, "$leadership_check",1),
+      (str_store_string, s2, "@I understand. I will stay with you. For a while."),
+    (else_try),
+      (assign, "$leadership_check", 0),
+      (str_store_string, s2, "@I have played my role for many long years, for many lifetimes of mortal men. This war is for Mankind to fight. I will leave for the West and some may decide to follow me."),
+    (try_end),
+    
+    ##Debug
+    #(assign, reg1, ":random"),
+    #(assign, reg2, ":chance"),
+    #(assign, reg3, ":leadership"),
+    #(display_message, "@{reg1} random number - {reg2} chance - {reg3} leadership")
+
+    ],"{s2}.", "close_window", 
+
+  [
+   (try_begin),
+     (eq, "$leadership_check",1),
+     (party_get_morale, ":morale", "p_main_party"),
+     (try_begin),
+      (le, ":morale", low_party_morale),
+      (store_sub, ":diff", low_party_morale, ":morale"),
+      (store_add, ":morale_gain", ":diff", 4),
+      (call_script, "script_change_player_party_morale", ":morale_gain"),
+     (else_try),
+      (call_script, "script_change_player_party_morale", 6),
+     (try_end),
+   (else_try),
+     (store_random_in_range, ":ran_troops", 0, 100),
+     (assign, ":troops", 1),
+     (try_begin),
+      (le, ":ran_troops", 50),
+      (assign, ":troops",2),
+     (else_try),
+      (assign, ":troops",3),
+     (try_end),
+     (call_script, "script_remove_highest_or_lowest_level_troop", "p_main_party", ":troops", 1),
+     (assign, reg1, ":troops"),
+     (display_message, "@{reg1} Veteran Elves decided to leave your party.", color_bad_news),
+   (try_end),
+   (party_get_morale, ":morale", "p_main_party"),
+   (set_show_messages, 0),
+   (try_begin),
+    (le, ":morale", low_party_morale),
+    (store_sub, ":diff", low_party_morale, ":morale"),
+    (store_add, ":morale_gain", ":diff", 2),
+    (call_script, "script_change_player_party_morale", ":morale_gain"),
+   (else_try),
+    (call_script, "script_change_player_party_morale", 4),
+   (try_end),
+   (set_show_messages, 1),
+   (change_screen_return)]],
+
+# Morale Troops Dialogue END - Kham
 
 [anyone,"start", [(eq,"$talk_context",tc_join_battle_ally)],"You have come just in time. Let us join our forces now and teach our enemy a lesson.", "close_window", [(call_script,"script_stand_back"),]],
 [anyone,"start", [(eq,"$talk_context",tc_join_battle_enemy)],"You are making a big mistake by fighting against us.", "close_window",[(call_script,"script_stand_back"),]],
@@ -10011,6 +10216,44 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone|plyr,"mayor_talk", [(store_partner_quest,reg2),(ge,reg2,0)],
 "About the task you gave me...", "merchant_quest_about_job",[]],
+
+##Kham - Allow Garrison In Advance camps START
+
+[anyone|plyr,"mayor_talk", [
+  (is_between, "$g_talk_troop", "trp_elder_gondor_ac", "trp_village_1_elder"), # Campmasters
+  (store_troop_faction, ":fac", "$g_talk_troop"),
+  (eq, "$players_kingdom", ":fac"),
+
+  # check if first time or depleted, and initialize
+  (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_adv_camp),
+
+
+    (try_begin),
+      (gt, ":reserve_party", 0),
+      (neg|party_is_active, ":reserve_party"), # depleted
+      (assign, ":reserve_party", 0),
+    (try_end),
+      
+    (try_begin),
+        (eq, ":reserve_party", 0), #first time or depleted
+        (spawn_around_party, "$g_encountered_party", "pt_volunteers"),
+        (assign, ":reserve_party", reg0),
+        (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
+        (party_remove_members, ":reserve_party", "trp_looter", 1),
+        (troop_set_slot, "trp_player", slot_troop_player_reserve_adv_camp, ":reserve_party"),
+        (party_attach_to_party, ":reserve_party", "$g_encountered_party"),
+        (party_set_name, ":reserve_party", "@{playername}'s Reserves"),
+        (party_set_flags, ":reserve_party", pf_no_label),
+        (party_set_ai_behavior, ":reserve_party", ai_bhvr_hold),
+      (try_end)], 
+
+"I want to review my soldiers stationed here.", "mayor_pretalk", [
+    #(call_script,"script_stand_back"),
+      (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_adv_camp),
+      (change_screen_exchange_members, 0,":reserve_party"), # doesn't work without changing context...
+      #(jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
+  ]],
+
 
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 

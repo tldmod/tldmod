@@ -1579,7 +1579,7 @@ simple_triggers = [
 	(try_end),
     ]),
 
-# (49) Move cattle herd + update eliminate patrols quest
+# (49) Move cattle herd + update eliminate patrols quest + update Oath Kills
 (0.5,[
     (try_begin),
       (check_quest_active,"qst_move_cattle_herd"),
@@ -1641,6 +1641,16 @@ simple_triggers = [
         (str_store_string, s2, "@{s1} parties defeated: {reg1} out of {reg2}"),
         (add_quest_note_from_sreg, "qst_eliminate_patrols", 3, s2, 0),
       (try_end),
+    (try_end),
+
+    #Report number of kills for the oath of vengeance quest
+    (try_begin),
+      (check_quest_active, "qst_oath_of_vengeance"),
+      (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
+      (str_store_faction_name, s2, ":target"),
+      (assign, reg6, "$oath_kills"),
+      (str_store_string, s3, "@{reg6} {s2} troops killed."),
+      (add_quest_note_from_sreg, "qst_oath_of_vengeance", 2, s3, 0),
     (try_end),
             
     ]),
@@ -2947,10 +2957,10 @@ simple_triggers = [
 
 
 
-  #Kham - Cannibalsim / Elven Migration Trigger Start
-(12,
+#Kham - Cannibalsim / Elven Migration Trigger Start
+(36,
   [ 
-  (eq, "$cheat_mode", 1),
+  #(eq, "$cheat_mode", 1),
   (store_random_in_range, ":random",0,100), #Chance to trigger
   (try_begin),
     (map_free),
@@ -2969,7 +2979,7 @@ simple_triggers = [
       (gt, "$g_player_party_morale_modifier_no_food", 0), #No food
       (jump_to_menu, "mnu_hungry_orc"),
     (else_try),
-      (assign, ":chance", 35), #Base chance for it occurring
+      (assign, ":chance", 30), #Base chance for it occurring
       (try_begin), #The conditions that reduce likelihood of triggering start here
         (is_between, "$current_player_region", region_lebennin, region_n_ithilien),
         (val_add, ":chance",10),
@@ -2981,7 +2991,7 @@ simple_triggers = [
       (call_script, "script_are_there_elves", "p_main_party"),
       (gt, reg0,0),
       (le, ":random", ":chance"),
-      (le, ":morale", 30),
+      (le, ":morale", low_party_morale),
       (jump_to_menu, "mnu_leaving_elf"),
     (try_end),
   (try_end),

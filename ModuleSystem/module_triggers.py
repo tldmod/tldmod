@@ -1486,7 +1486,7 @@ triggers = [
 	(quest_get_slot, ":hero", "qst_oath_of_vengeance", 5),
   (quest_get_slot, ":moria", "qst_oath_of_vengeance", 6),
 	(store_current_day, ":day"), 
-	(val_sub, ":day", 6), #checks start after 5 days under oath
+	(val_sub, ":day", 10), #checks start after 5 days under oath - #Kham - changed to 10 days
 	(gt, ":day", ":start_day"),
 	
 	#Kham - Oath of Vengeance Refactor START

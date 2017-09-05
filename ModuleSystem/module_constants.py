@@ -2352,6 +2352,13 @@ agent_is_free_of_pathing = 307
 #Healer Slots
 slot_troop_needs_healing = 308
 
+#Adv Camp Reserve Party
+slot_troop_player_reserve_adv_camp = 309
+
+#Morale Penalties / bonuses
+low_party_morale = 30
+high_party_morale = 70
+
 
 
 

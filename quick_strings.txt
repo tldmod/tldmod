@@ -1,4 +1,4 @@
-1364
+1375
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -563,7 +563,7 @@ qstr_gain_Faction_Strengt gain_Faction_Strength_as_news_of_your_victory_spreads.
 qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
-qstr_Troop:_{s1}___Level: Troop:_{s1}_-_Level:_{reg1}_-_Amount:_{reg2}
+qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
@@ -793,7 +793,6 @@ qstr_ON ON
 qstr_IMOD_test_mesh_given IMOD_test_mesh_given
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_Moria_Book_given Moria_Book_given
-qstr_Target_Party_and_All Target_Party_and_Ally_Spawned!
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
@@ -968,6 +967,7 @@ qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_DEBUG:_Eliminate_Par DEBUG:_Eliminate_Parties_-_Current:_{reg0},_New:_{reg1}
 qstr_{s1}_parties_defeate {s1}_parties_defeated:_{reg1}_out_of_{reg2}
+qstr_{reg6}_{s2}_troops_k {reg6}_{s2}_troops_killed.
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
@@ -1305,6 +1305,17 @@ qstr_Alright!_This_is_goi Alright!_This_is_going_to_hurt..._a_lot.
 qstr_Let_us_begin._It_may Let_us_begin._It_may_take_some_time._Just_relax_and_leave_the_rest_to_me.
 qstr_All_done!_Ha!_You_di All_done!_Ha!_You_didn't_scream_much,_impressive!_Now_go,_leave_me_be.
 qstr_We_ve_done_what_We_c We've_done_what_We_can._Now_you_and_your_men_need_some_rest.
+qstr_Boss_the_lads_are_hu Boss,_the_lads_are_hungry!_We're_doing_all_the_hard_work_and_still_we're_starving!
+qstr_Master_the_lads_are_ Master,_the_lads_are_hungry!_We_can't_do_all_this_fighting_on_empty_stomachs!
+qstr_Yes!_With_proper_fed Yes!_With_proper_fed_bellies,_we'll_serve_you_twice_as_well!
+qstr_As_you_command_maste As_you_command,_master,_heh_heh._Meat's_back_on_the_menu,_boys!
+qstr_Your_Orcs_&_Uruks_at Your_Orcs_&_Uruks_ate_{reg1}_men!
+qstr_Yes_master!_As_you_c Yes_master!_As_you_command,_master!
+qstr_Harr_harr_harr!_You_ Harr_harr_harr!_You_don't_frighten_ME!_Next_time_it's_YOU_that_we_eat!
+qstr_One_{s6}_left_the_pa One_{s6}_left_the_party.
+qstr_I_understand._I_will I_understand._I_will_stay_with_you._For_a_while.
+qstr_I_have_played_my_rol I_have_played_my_role_for_many_long_years,_for_many_lifetimes_of_mortal_men._This_war_is_for_Mankind_to_fight._I_will_leave_for_the_West_and_some_may_decide_to_follow_me.
+qstr_{reg1}_Veteran_Elves {reg1}_Veteran_Elves_decided_to_leave_your_party.
 qstr_You_chose_well_{sir/ You_chose_well,_{sir/madam}._My_lads_know_how_to_keep_their_word_and_earn_their_pay.
 qstr_Well_done_{sir/madam Well_done,_{sir/madam}._Keep_the_money_and_wine_coming_our_way,_and_there's_no_foe_in_Calradia_you_need_fear.
 qstr_We_are_at_your_servi We_are_at_your_service,_{sir/madam}._Point_us_in_the_direction_of_those_who_need_hurting,_and_we'll_do_the_rest.

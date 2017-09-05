@@ -2780,6 +2780,17 @@ ai_scripts = [
 	(else_try),
 		(party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
 		(party_set_flags, ":center", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small, 1),
+    
+    #Remove Adv Camp Player Garrison - Kham
+    (try_begin),
+      (eq, ":center_faction", "$players_kingdom"),
+      (troop_get_slot, ":reserve_party_ac", "trp_player", slot_troop_player_reserve_adv_camp),
+      (gt, ":reserve_party_ac", 0),
+      (party_is_active, ":reserve_party_ac"),
+      (party_detach, ":reserve_party_ac"),
+      (call_script, "script_safe_remove_party", ":reserve_party_ac"),
+      (troop_set_slot, 0, "trp_player", slot_troop_player_reserve_adv_camp),
+    (try_end),
 
 		(try_begin),
 			(party_slot_eq, ":center", slot_center_destroy_on_capture,2),
