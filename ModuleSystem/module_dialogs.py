@@ -8430,15 +8430,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (val_sub, ":chance", 10),
     (try_end),
     (store_random_in_range, ":random", 0, 100),
-    (str_clear, s1),
+    (str_clear, s2),
     (try_begin),
       (this_or_next| eq, ":continue", 1),
       (              le, ":random", ":chance"),
       (assign, "$leadership_check",1),
-      (str_store_string, s1, "@Yes master! As you command, master!"),
+      (str_store_string, s2, "@Yes master! As you command, master!"),
     (else_try),
       (assign, "$leadership_check", 0),
-      (str_store_string, s1, "@Harr harr harr! You don't frighten ME! Next time it's YOU that we eat!"),
+      (str_store_string, s2, "@Harr harr harr! You don't frighten ME! Next time it's YOU that we eat!"),
     (try_end),
     
     ##Debug
@@ -8447,7 +8447,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     #(assign, reg3, ":leadership"),
     #(display_message, "@{reg1} random number - {reg2} chance - {reg3} leadership")
 
-    ],"{s1}", "close_window", 
+    ],"{s2}", "close_window", 
   [
    (try_begin),
      (eq, "$leadership_check",1),
