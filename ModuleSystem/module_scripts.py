@@ -4189,11 +4189,16 @@ scripts = [
 ("troop_calculate_strength",
     [ (store_script_param_1, ":troop"),
       #TLD: Troop strength = ((level+11)^2-27)/100
+	  #InVain: New troop strength = (level^2+100)/50, favors troops >lvl 30, esp against orcs
       (store_character_level, reg0, ":troop"),
-      (val_add, reg0, 11),
+						  
       (val_mul, reg0, reg0),
-      (val_sub, reg0, 27),
-      (val_div, reg0, 100),
+      (val_add, reg0, 100),
+      (val_div, reg0, 50),
+#      (val_add, reg0, 11),
+ #     (val_mul, reg0, reg0),
+#      (val_sub, reg0, 27),
+#      (val_div, reg0, 100),
 	  #(troop_get_type,":troop",":troop"),
 	  #(try_begin),(eq, ":troop", tf_orc),(val_div, reg0, 2),(try_end), #GA: plain orcs get strength halved - MV: NO. They already have lower strength because of their levels - see below how low-tier orcs are inferior. If you want orc parties to be weaker in AI battles, change their party templates to have less high-tier and more low-tier troops. And do the math to make sure you don't go too far.
       # Here's the output
