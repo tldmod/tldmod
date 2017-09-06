@@ -1,4 +1,4 @@
-1413
+1412
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -619,7 +619,6 @@ qstr_You_have_found_the_lo You_have_found_the_local_authority...(+{reg3}_XP)
 qstr_You_have_found_the_loc You_have_found_the_local_warehouse...(+{reg3}_XP)
 qstr__cancelled_the_{reg1 (cancelled_the_{reg10}_exp_pts_earned_from_killing_prisoners)
 qstr_Forming_ranks. Forming_ranks.
-qstr_Cannot_Order_to_Form Cannot_Order_to_Form_Rows_when_Troops_are_In_Formation._Undo_it_first_by_pressing_U.
 qstr_{reg2?You:Your_mount {reg2?You:Your_mount}_received_{reg1}_extra_damage!
 qstr_{reg2?You_strike:You {reg2?You_strike:Your_horse_charges}_for_{reg1}_bonus_damage!
 qstr_Three_Nazgul_are_cir Three_Nazgul_are_circling_in_the_sky_above_the_battlefield!
