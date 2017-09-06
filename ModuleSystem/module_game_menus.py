@@ -8563,7 +8563,12 @@ game_menus = [
 #MV: hackery to get around change_screen_exchange_with_party limitations
 ( "auto_player_garrison",0,"stub","none",
     [(jump_to_menu, "mnu_auto_player_garrison_2"),
-     (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
+     (try_begin),
+     	(is_between, "$g_encountered_party", "p_advcamp_gondor", "p_centers_end"),
+        (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_adv_camp),
+     (else_try),
+     	(troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
+     (try_end),
      (change_screen_exchange_with_party, ":reserve_party")
     ],
     []

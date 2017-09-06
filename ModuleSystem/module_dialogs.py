@@ -1559,10 +1559,29 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 # Player reserves - no upkeep for now - exploitable!
 [anyone|plyr,"player_hire_troop", 
-	[ (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"), # keep troops only at faction's capital
-      # check if first time or depleted, and initialize
-      (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
-	 
+	[ (assign, ":continue",0),
+    (try_begin),
+      (is_between, "$g_encountered_party", "p_advcamp_gondor", "p_centers_end"),
+      (store_faction_of_party, ":fac_adv", "$g_encountered_party"),
+      (eq, ":fac_adv", "$players_kingdom"),
+      (assign, ":continue", 1),
+    (try_end),
+
+    (this_or_next | faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"), #Capitols ...
+    (               eq, ":continue", 1),  # or adv camp only.
+  
+   # keep troops only at faction's capital or adv camps
+
+   (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_capital, "$g_encountered_party"),
+    (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
+   (else_try),
+    (is_between, "$g_encountered_party", "p_advcamp_gondor", "p_centers_end"),
+    (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_adv_camp),
+   (try_end),
+  
+  # check if first time or depleted, and initialize
+      
     (try_begin),
   		(gt, ":reserve_party", 0),
   		(neg|party_is_active, ":reserve_party"), # depleted
@@ -1575,7 +1594,14 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
         (assign, ":reserve_party", reg0),
         (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
         (party_remove_members, ":reserve_party", "trp_looter", 1),
-        (troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party"),
+        
+        (try_begin),
+          (is_between, "$g_encountered_party", "p_advcamp_gondor", "p_centers_end"),
+          (troop_set_slot, "trp_player", slot_troop_player_reserve_adv_camp, ":reserve_party"),
+        (else_try),
+          (troop_set_slot, "trp_player", slot_troop_player_reserve_party, ":reserve_party"),
+        (try_end),
+        
         (party_attach_to_party, ":reserve_party", "$g_encountered_party"),
         (party_set_name, ":reserve_party", "@{playername}'s Reserves"),
         (party_set_flags, ":reserve_party", pf_no_label),
@@ -1583,8 +1609,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
       (try_end)], 
 "I want to review my soldiers stationed here.", "close_window", [
 		(call_script,"script_stand_back"),
-      #(troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_party),
-      #(change_screen_exchange_with_party, ":reserve_party"), # doesn't work without changing context...
+      #(change_screen_exchange_members, 0,":reserve_party"), # doesn't work without changing context...
       (jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
 	]],
 
@@ -10216,44 +10241,6 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone|plyr,"mayor_talk", [(store_partner_quest,reg2),(ge,reg2,0)],
 "About the task you gave me...", "merchant_quest_about_job",[]],
-
-##Kham - Allow Garrison In Advance camps START
-
-[anyone|plyr,"mayor_talk", [
-  (is_between, "$g_talk_troop", "trp_elder_gondor_ac", "trp_village_1_elder"), # Campmasters
-  (store_troop_faction, ":fac", "$g_talk_troop"),
-  (eq, "$players_kingdom", ":fac"),
-
-  # check if first time or depleted, and initialize
-  (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_adv_camp),
-
-
-    (try_begin),
-      (gt, ":reserve_party", 0),
-      (neg|party_is_active, ":reserve_party"), # depleted
-      (assign, ":reserve_party", 0),
-    (try_end),
-      
-    (try_begin),
-        (eq, ":reserve_party", 0), #first time or depleted
-        (spawn_around_party, "$g_encountered_party", "pt_volunteers"),
-        (assign, ":reserve_party", reg0),
-        (party_add_members, ":reserve_party", "trp_looter", 1), #.. or change_screen_exchange_with_party will crash
-        (party_remove_members, ":reserve_party", "trp_looter", 1),
-        (troop_set_slot, "trp_player", slot_troop_player_reserve_adv_camp, ":reserve_party"),
-        (party_attach_to_party, ":reserve_party", "$g_encountered_party"),
-        (party_set_name, ":reserve_party", "@{playername}'s Reserves"),
-        (party_set_flags, ":reserve_party", pf_no_label),
-        (party_set_ai_behavior, ":reserve_party", ai_bhvr_hold),
-      (try_end)], 
-
-"I want to review my soldiers stationed here.", "mayor_pretalk", [
-    #(call_script,"script_stand_back"),
-      (troop_get_slot, ":reserve_party", "trp_player", slot_troop_player_reserve_adv_camp),
-      (change_screen_exchange_members, 0,":reserve_party"), # doesn't work without changing context...
-      #(jump_to_menu, "mnu_auto_player_garrison"), #...therefore, hackery ensues
-  ]],
-
 
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 
