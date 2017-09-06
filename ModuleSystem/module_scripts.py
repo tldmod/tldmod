@@ -20937,8 +20937,8 @@ scripts = [
 		(try_begin),
 			(eq, ":ft", ":fac"),	(party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
 		# CC: Mordor and Guldur share troops
-		#(else_try),(eq, ":ft", "fac_guldur"),(eq,":fac","fac_mordor"),	(party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
-		#(else_try),(eq, ":ft", "fac_mordor"),(eq,":fac","fac_guldur"), (party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
+		(else_try),(eq, ":ft", "fac_guldur"),(eq,":fac","fac_mordor"),	(party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
+		(else_try),(eq, ":ft", "fac_mordor"),(eq,":fac","fac_guldur"), (party_remove_members, ":recipient_initial", ":st", ":ss"),# factions outta recipient_initial, stay in source
 		 (else_try),			(party_remove_members, ":source"           , ":st", ":ss"),# nonfactions outta source, stay in recipient_initial
 		(try_end),
 	(try_end),
