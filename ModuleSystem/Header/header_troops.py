@@ -52,6 +52,7 @@ tfg_gloves           = 0x00800000
 tfg_horse            = 0x01000000
 tfg_shield           = 0x02000000
 tfg_ranged           = 0x04000000
+tfg_polearm          = 0x08000000
 tf_unmoveable_in_party_window = 0x10000000
 tf_guarantee_boots            = tfg_boots
 tf_guarantee_armor            = tfg_armor
@@ -60,6 +61,7 @@ tf_guarantee_gloves           = tfg_gloves
 tf_guarantee_horse            = tfg_horse
 tf_guarantee_shield           = tfg_shield
 tf_guarantee_ranged           = tfg_ranged
+tf_guarantee_polearm          = tfg_polearm
 
 # Character attributes...
 ca_strength     = 0

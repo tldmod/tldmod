@@ -1,4 +1,4 @@
-1412
+1417
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -581,6 +581,10 @@ qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
 qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
+qstr_{s3}___not_destroyed {s3}_-_not-destroyed
+qstr_{s3}___not_taken {s3}_-_not_taken
+qstr_{s3}___nothing_added {s3}_-_nothing_added
+qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
@@ -831,6 +835,7 @@ qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
 qstr_Morale_is_now_{reg6} Morale_is_now_{reg6}
+qstr_You_are_not_in_the_r You_are_not_in_the_right_region_to_spawn_animal_ambushes._Please_go_to_N_Mirkwood,_S_Mirkwood,_Grey_Mountains,_or_Misty_Mountains
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_All_messages All_messages
 qstr_Player_damage_only Player_damage_only

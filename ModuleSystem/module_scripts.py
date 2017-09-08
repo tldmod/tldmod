@@ -22598,6 +22598,65 @@ command_cursor_scripts = [
 
     (try_end),
   ]),
+
+#script_cf_check_if_only_capital_left - Kham
+#Input: center (this is called during player initiated sieges)
+#When it fails, that means there are still other center for the input center's faction.
+
+("cf_check_if_only_capital_left", [
+	(store_script_param_1, ":center"),
+
+	#Get the faction of the encountered party(center)
+	(store_faction_of_party, ":faction_encountered", ":center"),
+
+	(assign, ":centers_left", 0),
+
+	#Check all centers
+	(try_for_range, ":cur_party", centers_begin, centers_end),
+	
+	#Store the Faction & the sad_elf_ of the center being checked
+		(store_faction_of_party, ":fac", ":cur_party"),
+		#(faction_get_slot, ":capital", ":fac", slot_faction_capital),
+	#Store the original faction of the center (to see later if it changed hands)
+		(party_get_slot, ":orig_faction", ":cur_party", slot_center_original_faction),
+	
+	#Check that the current center being checked has the same faction as the encountered party(center)
+		(eq, ":faction_encountered", ":fac"),
+		#(neq, ":center", ":capital"),
+		(neg|is_between, ":cur_party", advcamps_begin, advcamps_end),  #don't count advance camps
+
+		(try_begin),
+			(party_slot_ge, ":cur_party", slot_center_destroy_on_capture, 1), #Is the center destroyable?
+			(party_slot_eq, ":cur_party", slot_center_destroyed, 0), #if it is destroyable, is it destroyed?
+			(val_add, ":centers_left", 1), #If the center is destroyable, but not destroyed, add 1
+			(str_store_party_name, s3, ":cur_party"),
+			(display_message, "@{s3} - not-destroyed"),	
+		(else_try),
+			(party_slot_eq, ":cur_party", slot_center_destroy_on_capture, 0), #Is the center NOT destroyable (changes hands)?
+			(eq, ":orig_faction", ":fac"),  #If it does change hands, is it with its original faction?
+			(val_add, ":centers_left", 1), #If so, add 1
+			(str_store_party_name, s3, ":cur_party"),
+			(display_message, "@{s3} - not taken"),
+		(else_try),
+			(val_add, ":centers_left",0), # all else, don't add anything
+			(str_store_party_name, s3, ":cur_party"),
+			(display_message, "@{s3} - nothing added"),
+		(try_end),
+	(try_end), #try for range end
+
+	#DEBUG
+	(try_begin),
+		(eq, "$cheat_mode",1),
+		(assign, reg6, ":centers_left"),
+		(str_store_faction_name, s2, ":faction_encountered"), 
+		(display_message, "@{reg6} Centers Left for {s2}", color_good_news),
+	(try_end),
+
+	(le, ":centers_left", 1), #Fail if capital is not the only one left.
+
+
+  ]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

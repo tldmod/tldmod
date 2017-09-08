@@ -3085,11 +3085,18 @@ game_menus = [
     	(spawn_around_party, "p_main_party", "pt_vet_archer"),
     	(party_add_members, "p_main_party", "trp_badass_theo",1), 
     	(display_message, "@Killer WItcher Spawned, Badass King Theo added!")]),
-    ("count_orcs",[], "Count number of Orcs/Uruks", [(call_script, "script_are_there_orcs", "p_main_party"), (troop_add_item, "trp_player", "itm_human_meat", imod_rotten)]),
-    ("count_elves",[], "Count number of Elves", [(call_script, "script_are_there_orcs", "p_main_party"),]),
     ("change_morale",[], "Give Bad Morale", [(party_set_morale, "p_main_party", 20), (party_get_morale, reg6, "p_main_party"),(display_message, "@Morale is now {reg6}", color_bad_news)]),
-    ("remove_lowest_level",[], "Remove 5 low level troops",   [(call_script, "script_remove_highest_or_lowest_level_troop", "p_main_party", 5, 0),]),
-    ("remove_highest_level",[], "Remove 5 high level troops", [(call_script, "script_remove_highest_or_lowest_level_troop", "p_main_party", 5, 1),]),
+    ("animal_test",[], "Animal Ambush Test", [
+    	(try_begin), 
+    		(this_or_next|eq, "$current_player_region", region_n_mirkwood),
+			(this_or_next|eq, "$current_player_region", region_s_mirkwood), 
+			(this_or_next|eq, "$current_player_region", region_grey_mountains),
+			(			  eq, "$current_player_region", region_misty_mountains),
+			(jump_to_menu, "mnu_animal_ambush"),
+		(else_try),
+			(display_message, "@You are not in the right region to spawn animal ambushes. Please go to N Mirkwood, S Mirkwood, Grey Mountains, or Misty Mountains", color_bad_news),
+		(try_end)]),
+    ("check_if_capital",[], "How Many Centers Left (Gondor)", [(call_script, "script_cf_check_if_only_capital_left", "p_town_pinnath_gelin")]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
  ]),
 
@@ -6191,20 +6198,38 @@ game_menus = [
 	 	 (faction_get_slot, ":faction_strength", ":faction_no", slot_faction_strength), #Check Faction Strength
 	 	 
 	 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability), #Check if we can siege
-	     
-	     (neq, ":siegable", tld_siegable_never), #some places are never siegable
-	     (neq, ":siegable", tld_siegable_capital), #We won't allow players to siege capitals
 
-	     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
-	     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
-	     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+	 	 (assign, ":continue", 0),
+	     
+	     (try_begin),
+	     	(eq, ":siegable", tld_siegable_never), #some places are never siegable
+		    #(display_message, "@Passed 1st"),
+		    (assign, ":continue", 0),
+	     (else_try),    
+	     	(neq, ":siegable", tld_siegable_capital), #not a capital (separate condition)
+		 	(this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+	     	(this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+	     	(lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+	     	#(display_message, "@Passed 2nd"),
+	     	(assign, ":continue", 1),
+		 (else_try),
+		 	(eq, ":siegable", tld_siegable_capital), #If it is the capital, check if there are other centers left
+	     	(this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+	     	(lt, ":faction_strength", "$g_fac_str_siegable"), #and fac str is low enough to siege
+	     	(call_script, "script_cf_check_if_only_capital_left", "$g_encountered_party"), #and there is only 1 center left (capital - script fails when there is more than 1 center left.)
+	     	#(display_message, "@Passed 3rd"),
+	     	(assign, ":continue", 1),
+	     (try_end),
+
+	     (eq, ":continue", 1),
+
 	 	 (neg|troop_is_wounded, "trp_player"),
 	 	 (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1), #if besieged by Marshall, player can't attack.
 	     (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
 	     (lt, ":reln", 0),
 	     (lt, "$g_encountered_party_2", 1),
 	     (call_script, "script_party_count_fit_for_battle","p_main_party"),
-	     (gt, reg(0), 1),
+	     (gt, reg0, 1),
 	     (try_begin),
 	    	 (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 	           (assign, reg6, 1),
@@ -7630,12 +7655,30 @@ game_menus = [
 	 	 
 	 	 (party_get_slot, ":siegable", "$g_encountered_party", slot_center_siegability), #Check if we can siege
 	     
-	     (neq, ":siegable", tld_siegable_never), #some places are never siegable
-	     (neq, ":siegable", tld_siegable_capital), #We won't allow players to siege capitals
+	     (assign, ":continue", 0),
 	     
-	     (this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
-	     (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
-	     (lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+	     (try_begin),
+	     	(eq, ":siegable", tld_siegable_never), #some places are never siegable
+		    #(display_message, "@Passed 1st"),
+		    (assign, ":continue", 0),
+	     (else_try),    
+	     	(neq, ":siegable", tld_siegable_capital), #not a capital (we have a separate condition below)
+		 	(this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+	     	(this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
+	     	(lt, ":faction_strength", "$g_fac_str_siegable"), # otherwise, defenders need to be weak
+	     	#(display_message, "@Passed 2nd"),
+	     	(assign, ":continue", 1),
+		 (else_try),
+		 	(eq, ":siegable", tld_siegable_capital), #If it is the capital, check if there are other centers left
+	     	(this_or_next|eq, "$tld_option_siege_reqs", 2), # No siege reqs
+	     	(lt, ":faction_strength", "$g_fac_str_siegable"), #and fac str is low enough to siege
+	     	(call_script, "script_cf_check_if_only_capital_left", "$g_encountered_party"), #and there are no other centers left (script fails when there is more than 1 center left.)
+	     	#(display_message, "@Passed 3rd"),
+	     	(assign, ":continue", 1),
+	     (try_end),
+
+	     (eq, ":continue", 1),
+
 	 	 (neg|troop_is_wounded, "trp_player"),
 	 	 (party_slot_eq, "$g_encountered_party", slot_center_is_besieged_by, -1), #if besieged by Marshall, player can't attack.
 	     (store_relation, ":reln", "$g_encountered_party_faction", "fac_player_supporters_faction"),
