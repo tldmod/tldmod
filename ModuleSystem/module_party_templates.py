@@ -238,7 +238,7 @@ party_templates = [
 
 ("gondor_reinf_d"    ,"_",0,0,fac_commoners,0,[(trp_knight_of_the_citadel,1,2), (trp_archer_of_the_tower_guard,2,4), (trp_swordsmen_of_the_tower_guard,1,2), (trp_guard_of_the_fountain_court,1,2),]), #MT garrison only
 
-("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_gondor_militiamen,3,6),(trp_gondor_commoner,4,8)]),
+("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_gondor_militiamen,3,6),(trp_gondor_commoner,2,4),(trp_footmen_of_gondor,1,2), (trp_bowmen_of_gondor,1,2)]),
 ("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_bowmen_of_gondor,3,5),(trp_footmen_of_gondor,1,2),(trp_gondor_militiamen,1,2),(trp_gondor_noblemen,0,1),]), #T1 cav because it has a separate tree
 ("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_archer_of_gondor,1,2),(trp_gondor_spearmen,2,3),(trp_gondor_swordsmen,0,1),(trp_veteran_squire_of_gondor,1,2),]),
 ("pelargir_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_watchman,6,12),]), #no T1
