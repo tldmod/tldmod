@@ -235,7 +235,7 @@ simple_triggers = [
          (party_slot_ge, ":center_no", slot_town_lord, 1), #center belongs to someone.
          # (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant since (party_is_active, ":center_no")
          # (party_get_slot, ":cur_wealth", ":center_no", slot_town_wealth),
-         # (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
+         (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege #InVain uncommented
          # (assign, ":hiring_budget", ":cur_wealth"),
          # (val_div, ":hiring_budget", 5),
          # (gt, ":hiring_budget", reinforcement_cost),
@@ -247,8 +247,11 @@ simple_triggers = [
          (party_get_num_companions, ":garrison_size", ":center_no"),
          (gt, ":garrison_limit", ":garrison_size"),
          
-         (call_script, "script_cf_reinforce_party", ":center_no"),
-		 
+         (store_random_in_range, ":chance", 0, 100), #InVain Reduce reinforcements for centers
+         	(try_begin),
+         	(lt, ":chance", 40),
+         		(call_script, "script_cf_reinforce_party", ":center_no"),
+		 	(try_end),
          # (val_sub, ":cur_wealth", reinforcement_cost),
          # (party_set_slot, ":center_no", slot_town_wealth, ":cur_wealth"),
       (try_end),
@@ -2630,7 +2633,7 @@ simple_triggers = [
 		(display_log_message, "@The forces of {s2} established an advanced camp in {s15}!", ":news_color"),
 		(call_script, "script_update_center_notes", ":adv_camp"),
 		# fill the garrison if needed
-		(assign, ":garrison_strength", 20),
+		(assign, ":garrison_strength", 30), #InVain: was 20, increased to counter lowered reinforcements for centers  
 		(party_get_slot, ":garrison_limit", ":adv_camp", slot_center_garrison_limit),
 		(try_for_range, ":unused", 0, ":garrison_strength"),
 			(try_begin), 

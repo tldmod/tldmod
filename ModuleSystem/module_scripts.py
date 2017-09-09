@@ -1696,7 +1696,7 @@ scripts = [
 		(assign, ":garrison_strength", 13), 
 		(try_begin),
 			(party_slot_eq, ":center_no", slot_party_type, spt_town),
-			(assign, ":garrison_strength", 20), 
+			(assign, ":garrison_strength", 40),  #InVain, was 20, increased this to initially counter lowered reinforcement rate for towns.
 		(try_end),
 		(try_begin), # TLD: capitals get more
 			(store_faction_of_party, ":center_faction", ":center_no"),
@@ -8623,7 +8623,7 @@ scripts = [
       
 	  (try_begin),
 		(eq, ":party_no", "p_town_minas_tirith"), # special minas tirith rule,,,
-		(store_random_in_range, ":rand2", 0, 100), (le, ":rand2", 20), # 20% of times...
+		(store_random_in_range, ":rand2", 0, 100), (le, ":rand2", 10), # 20% of times... #InVain lowered probability because Tower Guards are just too damn strong...
 		(assign, ":party_template", "pt_gondor_reinf_d"),
 	  (try_end),
       
