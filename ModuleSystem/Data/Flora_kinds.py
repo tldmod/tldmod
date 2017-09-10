@@ -42,7 +42,8 @@ def density(g):
 fauna_kinds = [
  ('grass',
   fkf_plain|fkf_plain_forest|fkf_point_up|fkf_align_with_ground|fkf_grass|fkf_on_green_ground|fkf_guarantee|density(1500),
-  [['PW_grass_a_xx', '0'],
+  [['PW_grass_yellow_e', '0'],
+   ['PW_grass_a_xx', '0'],
    ['PW_grass_b_xx', '0'],
    ['PW_grass_b_xx', '0'],
    ['PW_grass_b_xx', '0'],
@@ -69,8 +70,7 @@ fauna_kinds = [
   [['PW_grass_e_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
-   ['PW_grass_e_xx', '0'],
-   ['PW_grass_yellow_e', '0']]),
+   ['PW_grass_e_xx', '0']]),
    
  ('grass_bush_g',
   fkf_plain|fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_align_with_ground|fkf_grass|density(400),
@@ -194,7 +194,7 @@ fauna_kinds = [
    ['PW_bushes10_c', 'bo_pw_bushes10_c']]),
 
  ('bushes11_a',
-  fkf_snow|fkf_desert|fkf_plain_forest|fkf_snow_forest|fkf_desert_forest|density(70),
+  fkf_steppe|fkf_steppe_forest|fkf_snow|fkf_desert|fkf_plain_forest|fkf_snow_forest|fkf_desert_forest|density(70),
   [['PW_bushes11_a', '0'], ['PW_bushes11_b', '0'], ['PW_bushes11_c', '0']]),
 
  ('bushes12_a',
@@ -256,8 +256,8 @@ fauna_kinds = [
 
  ('small_rock',
   fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4),
-  [['PW_tree_17_a', 'bo_pw_tree_17_a'],
-   ['PW_tree_17_b', 'bo_pw_tree_17_b'],
+  [['PW_rock_a', 'bo_PW_rock_a'],
+   ['PW_rock_b', 'bo_PW_rock_b'],
    ['PW_tree_17_c', 'bo_pw_tree_17_c']]),
 
  ('rock_snowy',
@@ -276,7 +276,7 @@ fauna_kinds = [
    ['PW_tree_2_b', 'bo_pw_tree_2_b_cyl']]),
 
  ('tree_3',
-  fkf_realtime_ligting|fkf_tree|density(5),
+  fkf_plain|fkf_realtime_ligting|fkf_tree|density(5),
   [['tree_3_a', 'bo_tree_3_a'], ['tree_3_b', 'bo_tree_3_b']]),
 
  ('pw_gray_bush',
@@ -288,7 +288,7 @@ fauna_kinds = [
   [['tree_4_a', 'bo_tree_4_a'], ['tree_4_b', 'bo_tree_4_b']]),
 
  ('pw_birch_yellow',
-  fkf_steppe|fkf_steppe_forest|fkf_tree|density(4),
+  fkf_tree|density(4),
   [['PW_tree_4_a', 'bo_pw_tree_4_a_cyl'],
    ['PW_tree_4_b', 'bo_pw_tree_4_b_cyl']]),
 
@@ -300,7 +300,7 @@ fauna_kinds = [
    ['tree_5_d', 'bo_tree_5_d']]),
 
  ('pw_birch_green',
-  fkf_steppe_forest|density(70),
+  density(70),
   [['PW_tree_5_a', 'bo_pw_tree_5_a_cyl'],
    ['PW_tree_5_b', 'bo_pw_tree_5_b_cyl'],
    ['PW_tree_5_c', 'bo_pw_tree_5_c_cyl'],
@@ -308,7 +308,7 @@ fauna_kinds = [
    ['PW_tree_5_a_yellow', 'bo_pw_tree_5_a_cyl']]),
 
  ('tree_6',
-  0,
+  fkf_plain|fkf_tree|density(5),
   [['tree_6_a', 'bo_tree_6_a'],
    ['tree_6_b', 'bo_tree_6_b'],
    ['tree_6_c', 'bo_tree_6_c'],
@@ -334,7 +334,7 @@ fauna_kinds = [
    ['PW_tree_7_c_color', '0']]),
 
  ('tree_8',
-  fkf_plain_forest|fkf_tree|density(4),
+  fkf_plain|fkf_plain_forest|fkf_tree|density(4),
   [['tree_8_a', 'bo_tree_8_a'],
    ['tree_8_b', 'bo_tree_8_b'],
    ['tree_8_c', 'bo_tree_8_c']]),
@@ -368,7 +368,7 @@ fauna_kinds = [
    ['PW_tree_10_c', 'bo_pw_tree_10_a']]),
 
  ('tree_11',
-  fkf_plain_forest|fkf_tree|density(4),
+  fkf_plain_forest|fkf_plain|fkf_tree|density(4),
   [['tree_11_a', 'bo_tree_11_a'],
    ['tree_11_b', 'bo_tree_11_a'],
    ['tree_11_c', 'bo_tree_11_a']]),
@@ -462,7 +462,7 @@ fauna_kinds = [
   [['PW_tree_20_a', 'bo_pw_tree_20_a'], ['PW_tree_20_b', 'bo_pw_tree_20_b']]),
 
  ('tall_tree',
-  fkf_plain_forest|fkf_tree|density(4),
+  fkf_plain_forest|fkf_plain|fkf_tree|density(4),
   [['tall_tree_a', 'bo_tall_tree_a']]),
 
  ('pw_pine_group3',
@@ -470,7 +470,7 @@ fauna_kinds = [
   [['PW_tall_tree_a', 'bo_pw_tall_tree_a_cyl']]),
 
  ('tree_e',
-  fkf_plain_forest|fkf_tree|density(4),
+  fkf_plain|fkf_plain_forest|fkf_tree|density(4),
   [['tree_e_1', 'bo_tree_e_1'],
    ['tree_e_2', 'bo_tree_e_2'],
    ['tree_e_3', 'bo_tree_e_3']]),
@@ -511,7 +511,7 @@ fauna_kinds = [
    ['PW_pine_3_a_xx', 'bo_pw_pine_3_a']]),
 
  ('zl_fir_tall',
-  fkf_snow_forest|fkf_desert_forest|fkf_tree|density(5),
+  fkf_steppe|fkf_snow_forest|fkf_desert_forest|fkf_tree|density(5),
   [['PL_fur_tall1', 'bo_pl_fur_tall1'],
    ['PL_fur_tall2', 'bo_pl_fur_tall2'],
    ['PL_fur_tall3', 'bo_pl_fur_tall3']]),
@@ -572,7 +572,7 @@ fauna_kinds = [
    ['PW_tree_12_c_xx', 'bo_pw_tree_12_c']]),
 
  ('zl_birch_tall',
-  fkf_steppe_forest|fkf_tree|density(4),
+  fkf_tree|density(4),
   [['PW_tree_14_a', 'bo_pw_tree_14_a_cyl'],
    ['PW_tree_14_b', 'bo_pw_tree_14_b_cyl'],
    ['PW_tree_14_c', 'bo_pw_tree_14_c_cyl']]),
@@ -584,7 +584,7 @@ fauna_kinds = [
    ['PW_tree_15_c', 'bo_pw_tree_15_c_cyl']]),
 
  ('zl_tree_16',
-  fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4),
+  fkf_plain_forest|fkf_tree|density(4),
   [['PW_tree_16_a', 'bo_pw_tree_16_a_cyl'],
    ['PW_tree_16_b', 'bo_pw_tree_16_b_cyl']]),
 
@@ -617,7 +617,7 @@ fauna_kinds = [
    ['PL_aspen_yellowbush3', '0']]),
 
  ('zl_oak_group',
-  fkf_tree,
+  fkf_plain|fkf_tree|density(2),
   [['PL_oak_group1', 'bo_pl_oak_group1'],
    ['PL_oak_group2', 'bo_pl_oak_group2'],
    ['PL_oak_group3', 'bo_pl_oak_group3']]),
@@ -633,7 +633,7 @@ fauna_kinds = [
    ['PW_bushes08_c_xx', '0']]),
 
  ('zl_fir_bush',
-  fkf_desert|fkf_snow_forest|fkf_desert_forest|density(10),
+  fkf_steppe|fkf_desert|fkf_snow_forest|fkf_desert_forest|density(10),
   [['PW_bushes09_a', '0'], ['PW_bushes09_b', '0'], ['PW_bushes09_c', '0']]),
 
  ('zl_birch_green_bush',
@@ -659,8 +659,7 @@ fauna_kinds = [
  ('zl_rockformation',
   fkf_desert|fkf_desert_forest|fkf_realtime_ligting|fkf_rock|density(1),
   [['PW_rock_c', 'bo_pw_rock_c'],
-   ['PW_rock_e', 'bo_pw_rock_e'],
-   ['PW_rock_k', 'bo_pw_rock_k']]),
+   ['PW_rock_e', 'bo_pw_rock_e']]),
 
  ('zl_white_flowers',
   fkf_align_with_ground|fkf_grass|density(2),
@@ -699,8 +698,7 @@ fauna_kinds = [
   [['PW_grass_e_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
    ['PW_grass_yellow_b_xx', '0'],
-   ['PW_grass_e_xx', '0'],
-   ['PW_grass_yellow_e', '0']]),
+   ['PW_grass_e_xx', '0']]),
 
  ('zl_fir_tall_hs',
   fkf_snow_forest|fkf_desert_forest|fkf_tree|density(5),
@@ -723,7 +721,7 @@ fauna_kinds = [
 
 ###CWE trees  
  ('CWE_oliva',
-    fkf_tree|fkf_plain|density(2),					#InVain: added to plain (Gondor),
+    fkf_tree|density(2),					#InVain: added to plain (Gondor), #removed due to terrain bug
   [['cwe_oliva_tree_a', 'oliva_tree_a_col'],
    ['cwe_oliva_tree_b', 'oliva_tree_b_col'],
    ['cwe_oliva_tree_c', 'oliva_tree_c_col'],
@@ -731,7 +729,7 @@ fauna_kinds = [
    ['cwe_oliva_tree_e', 'oliva_tree_e_col']]),  
   
  ('CWE_pihta',
-    fkf_tree|fkf_plain|density(6),					#InVain: added to plain (Gondor),
+    fkf_tree|density(6),					#InVain: added to plain (Gondor),#removed due to terrain bug
   [['cwe_pihta_a', 'pihta_a_col'],
    ['cwe_pihta_b', 'pihta_b_col'],
    ['cwe_pihta_c', 'pihta_c_col']
@@ -748,7 +746,7 @@ fauna_kinds = [
    ]),   
   
  ('CWE_magnolia',
-    fkf_tree|fkf_plain|density(2),					#InVain: added to plain (Gondor),
+    fkf_tree|density(2),					#InVain: added to plain (Gondor),#removed due to terrain bug
   [['cwe_sp_magnolia_1', 'bo_sp_magnolia_1'],
    ['cwe_sp_magnolia_2', 'bo_sp_magnolia_2'],
    ['cwe_sp_magnolia_3', 'bo_sp_magnolia_3'],
@@ -757,7 +755,7 @@ fauna_kinds = [
    ]),     
   
  ('CWE_magnolia_large',
-    fkf_tree|fkf_plain|density(2),					#InVain: added to plain (Gondor),
+    fkf_tree|density(2),					#InVain: added to plain (Gondor), #removed due to terrain bug
   [['cwe_sp_magnolia_large_1', 'bo_sp_magnolia_large_1'],
    ['cwe_sp_magnolia_large_2', 'bo_sp_magnolia_large_2'],
    ]),   
@@ -831,7 +829,7 @@ fauna_kinds = [
    ]),   
 
  ('CWE_myrtle_b',
-    fkf_tree|fkf_plain|density(7),					#InVain: added to plain (Gondor),
+    fkf_tree|density(7),					#InVain: added to plain (Gondor),
   [['cwe_sp_myrtle_b_1', 'bo_sp_myrtle_b_1'],
    ['cwe_sp_myrtle_b_2', 'bo_sp_myrtle_b_2'],
    ['cwe_sp_myrtle_b_3', 'bo_sp_myrtle_b_3'],
@@ -840,7 +838,7 @@ fauna_kinds = [
    ]), 
 
  ('CWE_azalia',
-    fkf_tree|fkf_plain|density(7),					#InVain: added to plain (Gondor),
+    fkf_tree|density(7),					#InVain: added to plain (Gondor),
   [['cwe_sp_azalia_1', '0'],
    ['cwe_sp_azalia_2', '0'],
    ['cwe_sp_azalia_3', '0'],
@@ -887,7 +885,7 @@ fauna_kinds = [
    ]),   
 
  ('CWE_lavender',
-  fkf_plain|fkf_align_with_ground|density(50),
+  fkf_align_with_ground|density(50),
   [['cwe_plain_flowers_lavender', '0'],
    ]),   
 
@@ -902,7 +900,7 @@ fauna_kinds = [
    ]),     
    
  ('CWE_sagebrush',
-  fkf_plain|fkf_align_with_ground|density(50),
+  fkf_align_with_ground|density(50),
   [['cwe_sagebrush', '0'],
    ]),    
    
@@ -965,7 +963,8 @@ fauna_kinds = [
    
  ('CWE_ivy',
   0,
-  [['cwe_ivy', '0'],
+  [['cwe_ivy_1', '0'],
+  ['cwe_ivy_2', '0'],
    ]), 
 
  ('CWE_ivy_wall',
@@ -980,7 +979,7 @@ fauna_kinds = [
    ]),    
    
  ('Jaakko_new_cypress',
-    fkf_tree|fkf_plain|density(4),					#InVain: added to plain (Gondor),
+    fkf_tree|density(4),					#InVain: added to plain (Gondor), #aaand removed due to terrain showing up in other regions (bug)
   [['Jaakko_new_cypress', 'bo_Jaakko_new_cypress'],
    ['Jaakko_new_cypress2', 'bo_Jaakko_new_cypress2'],
    ]),    
@@ -992,6 +991,11 @@ fauna_kinds = [
  ('grass_flower_yellow_nofade',
   0,
   [['PW_grass_flower_e_xx', '0'], ['PW_grass_flower_e_xx', '0']]),
+  
+ ('thranduil_ivy_single',
+  0,
+  [['thranduil_ivy_single', '0'],
+   ]),
       
   ]
 
