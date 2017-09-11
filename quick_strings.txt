@@ -1,4 +1,4 @@
-1380
+1389
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -379,6 +379,12 @@ qstr_Poor Poor
 qstr_Average Average
 qstr_Rich Rich
 qstr_Very_Rich Very_Rich
+qstr_Strength Strength
+qstr_Agility Agility
+qstr_Intelligence Intelligence
+qstr_Charisma Charisma
+qstr_You_ve_gained_{s6}_f You've_gained_{s6}_from_gaining_{s7}
+qstr_You_ve_lost_{s6}_fro You've_lost_{s6}_from_losing_{s7}
 qstr_{s50}_Caves {s50}_Caves
 qstr_{s50}_Mines {s50}_Mines
 qstr_{s50}_Woods {s50}_Woods
@@ -548,6 +554,8 @@ qstr_Debug:_Theater_SW Debug:_Theater_SW
 qstr_Debug:_Theater_C Debug:_Theater_C
 qstr_Debug:_Theater_N Debug:_Theater_N
 qstr_Debug:_Can_t_Find Debug:_Can't_Find
+qstr_Gained_permanent_+1_to_P Gained_permanent_+1_to_Pathfinding.
+qstr_Gained_permanent_+1_to_S Gained_permanent_+1_to_Spotting.
 qstr_INVALID_PARTY_BEING_ INVALID_PARTY_BEING_REMOVED_({s1})!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
 qstr_DEBUG:_{s1}_made_dor DEBUG:_{s1}_made_dormant.
 qstr_DEBUG:_Dormant_{s1}_ DEBUG:_Dormant_{s1}_spawned_around_{s2}
@@ -805,6 +813,7 @@ qstr_You_are_not_in_the_r You_are_not_in_the_right_region_to_spawn_animal_ambush
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_All_messages All_messages
 qstr_Player_damage_only Player_damage_only
+qstr_No_Messages No_Messages
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)
 qstr_Normal Normal

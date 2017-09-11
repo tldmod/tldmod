@@ -1764,6 +1764,7 @@ mission_templates = [ # not used in game
       (finish_mission),
     (else_try),
       (main_hero_fallen),
+      (assign, "$g_battle_result", -1),
       (finish_mission),
     (else_try),
       (display_message, "@Cannot leave now."),
@@ -1796,6 +1797,7 @@ mission_templates = [ # not used in game
   (1, 60, 1,[(store_mission_timer_a,reg1),(ge,reg1,10)],[
     (try_begin),
       (main_hero_fallen),
+      (assign, "$g_battle_result", -1),
       (jump_to_menu, "mnu_recover_after_death_default"),
       (finish_mission),
     (else_try),

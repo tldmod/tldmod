@@ -2949,6 +2949,10 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("trait_title_butcher", "Butcher"),
 ("trait_desc_butcher", "Experience_has_honed_your_skill_in_extracting_more_meat_from_the_flesh_of_your_enemies._You_gain_an_extra_pound_of_flesh_every_time_you_slaughter_one_of_your_prisoners_for_meat._You_also_get_more_human_meat_after_every_battle."),
+
+("trait_title_well_travelled", "Well-Travelled"),
+("trait_desc_well_travelled", "On_stone_paved_roads_and_mossy_animal_paths,_over_the_tallest_mountains_and_in_the_deepest_vales,_you've_discovered_hidden_places_and_seen_long_forgotten_marvels._From_your_experiences,_you've_learnt_to_spot_enemies_before_they_see_you,_and_the_easiest_route_for_your_troops."),
+
 # END Traits
 
 # BEGIN Wound Strings

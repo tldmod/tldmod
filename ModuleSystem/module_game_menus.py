@@ -3162,10 +3162,11 @@ game_menus = [
         ],"Animal ambushes:  {s7}",[
         (store_sub, "$tld_option_animal_ambushes", 1, "$tld_option_animal_ambushes"),(val_clamp, "$tld_option_animal_ambushes", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
-    ("game_options_horse_ko",[(try_begin),(eq,"$show_mount_ko_message",1),(str_store_string, s7, "@All messages"),
-									(else_try),(str_store_string, s7, "@Player damage only"),(try_end),
+    ("game_options_horse_ko",[	   (try_begin),(eq,"$show_mount_ko_message",2),(str_store_string, s7, "@All messages"),
+									(else_try),(eq,"$show_mount_ko_message",1),(str_store_string, s7, "@Player damage only"),
+									(else_try),(eq,"$show_mount_ko_message",0),(str_store_string, s7, "@No Messages"), (try_end),
         ],"Fallen rider damage messages:  {s7}",[
-        (store_sub, "$show_mount_ko_message", 1, "$show_mount_ko_message"),(val_clamp, "$show_mount_ko_message", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
+        (val_add, "$show_mount_ko_message", 1,),(val_mod, "$show_mount_ko_message", 3),(jump_to_menu, "mnu_auto_options"),]),
 
     ("game_options_bright_nights",[(try_begin),(neq, "$bright_nights", 0),(str_store_string, s7, "@ON"),
                                   (else_try),(str_store_string, s7, "@OFF"),(try_end),
@@ -8938,16 +8939,16 @@ game_menus = [
 		      (set_visitor,16,"trp_player"),
 		      (try_begin),
 		      	(eq,"$assist", "fac_beorn"),
-		      	(set_visitors,2,":tier_1_troop", 7),
-		      	(set_visitors,4,":tier_2_troop", 5),
+		      	(set_visitors,2,":tier_1_troop", 6),
+		      	(set_visitors,4,":tier_2_troop", 6),
 				(set_visitors,6,"trp_start_quest_beorning", 1),
 			  (else_try),    
-			     (set_visitors,2,":tier_1_troop", 7),
-			     (set_visitors,4,":tier_2_troop", 3),
+			     (set_visitors,2,":tier_1_troop", 4),
+			     (set_visitors,4,":tier_2_troop", 4),
 		      	 (set_visitors,6,"trp_start_quest_woodelf", 1),
 		      (try_end),
-		      (set_visitors,20,"trp_tribal_orc", 9),
-		      (set_visitors,22,"trp_tribal_orc", 9),
+		      (set_visitors,20,"trp_tribal_orc", 13),
+		      (set_visitors,22,"trp_tribal_orc_warrior", 10),
 		      (set_visitors,24,"trp_fell_uruk_of_mordor", 1),
 		      (try_begin),
 		        (this_or_next|eq,"$players_kingdom","fac_woodelf"),
@@ -9023,7 +9024,12 @@ game_menus = [
  ),
 
 ( "start_quest_duel_won",0,"null","none",
-    [(call_script, "script_setup_troop_meeting","trp_start_quest_orc", 260),
+    [(try_begin),
+    	(lt, "$g_battle_result", 0),
+    	(jump_to_menu, "mnu_recover_after_death_default"),
+    (else_try),
+    	(call_script, "script_setup_troop_meeting","trp_start_quest_orc", 260),
+    (try_end),
 	],[]
  ),
 

@@ -1889,7 +1889,7 @@ scripts = [
 	(assign, "$player_allowed_siege",0), #Kham - Player Initiated Sieges
 	(assign, "$butcher_trait_kills", 0), #Kham - Butcher Trait
 	(assign, "$player_control_allies",0), #Kham - Player Control Allies global
-	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - ON by default
+	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - Player Damage Only by default
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
 	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
 	(assign, "$bright_nights",1), #Kham - Brighter Nights
@@ -3690,7 +3690,7 @@ scripts = [
   	  (eq, ":skill_no", "skl_riding"),
 	  (try_begin),
 	    (call_script, "script_get_troop_item_amount", ":troop_no", "itm_rohan_saddle"),
-	    (gt, reg0, 0),
+	    (gt, reg0, 0),   
         (val_add, ":modifier_value", 1),
 	  (try_end),
 	  (try_begin),
@@ -3713,7 +3713,7 @@ scripts = [
 	  (try_end),
 	   (try_begin),
 	    (troop_has_item_equipped, ":troop_no", "itm_leather_gloves_reward"),
-	    (gt, reg0, 0),
+	    #(gt, reg0, 0), - Kham fix
         (val_add, ":modifier_value", 1),
 	  (try_end), 
 	  (try_begin),
@@ -3828,12 +3828,12 @@ scripts = [
  	 (try_begin),
 	    (call_script, "script_get_troop_item_amount", ":troop_no", "itm_garlic_reward"),
 	    (gt, reg0, 0),
-            (val_add, ":modifier_value", 1),
+        (val_add, ":modifier_value", 1),
 	 (try_end),
  	 (try_begin),
 	    (call_script, "script_get_troop_item_amount", ":troop_no", "itm_herbarium_reward"),
 	    (gt, reg0, 0),
-            (val_add, ":modifier_value", 1),
+        (val_add, ":modifier_value", 1),
 	 (try_end),
 	(try_begin),
         	(store_and, ":check" ,":wound_mask", wound_head), #head injury
@@ -9970,7 +9970,7 @@ scripts = [
 ("get_region_of_party", [
 	(store_script_param_1, ":party"),
 	(party_get_current_terrain, ":t",":party"),
-    (party_get_position, pos1, "p_main_party"),
+    (party_get_position, pos1, ":party"), #Kham - fixed, used to be 'p_main_party'
 	(call_script,"script_get_region_of_pos1", ":t"),
 ]),
 
@@ -15302,18 +15302,24 @@ scripts = [
     (store_script_param, ":attr", 3),
     (store_script_param, ":attr_bonus", 4),
     
+    (str_store_item_name, s7, ":item"),
+
     (try_begin),
       (eq, ":attr", ca_strength),
       (assign, ":slot", slot_item_strength_bonus),
+      (str_store_string, s6, "@Strength"),
     (else_try),
       (eq, ":attr", ca_agility),
       (assign, ":slot", slot_item_agility_bonus),
+      (str_store_string, s6, "@Agility"),
     (else_try),
       (eq, ":attr", ca_intelligence),
       (assign, ":slot", slot_item_intelligence_bonus),
+      (str_store_string, s6, "@Intelligence"),
     (else_try),
       #(eq, ":attr", ca_charisma),
       (assign, ":slot", slot_item_charisma_bonus),
+      (str_store_string, s6, "@Charisma"),
     (try_end),
     
     (try_begin),
@@ -15333,12 +15339,14 @@ scripts = [
         (item_slot_eq, ":item", ":slot", 0),
         (troop_raise_attribute, "trp_player", ":attr", ":attr_bonus"),
         (item_set_slot, ":item", ":slot", 1),
+        (display_message, "@You've gained {s6} from gaining {s7}", color_good_news),
       (try_end),
     (else_try), #lost or unequipped it
       (item_slot_eq, ":item", ":slot", 1),
       (val_mul, ":attr_bonus", -1),
       (troop_raise_attribute, "trp_player", ":attr", ":attr_bonus"),
       (item_set_slot, ":item", ":slot", 0),
+      (display_message, "@You've lost {s6} from losing {s7}", color_bad_news),
     (try_end),
 ]),
 
@@ -21464,10 +21472,25 @@ command_cursor_scripts = [
 	 (assign, reg1, ":dist"),
 ]),
 
+#Kham - New Traits Scripts
 #script_cf_gain_trait_butcher
 ("cf_gain_trait_butcher",[
     (troop_slot_eq, "trp_traits", slot_trait_butcher, 0),
     (call_script, "script_gain_trait", slot_trait_butcher),
+]),
+
+#script_cf_gain_trait_well_travelled
+("cf_gain_trait_well_travelled",[
+    (troop_slot_eq, "trp_traits", slot_trait_well_travelled, 0),
+    (call_script, "script_gain_trait", slot_trait_well_travelled),
+    (store_skill_level, ":skill_1", skl_pathfinding, "trp_player"),
+	(neg|ge, ":skill_1", 10),
+	(troop_raise_skill, "trp_player", skl_pathfinding, 1),
+	(display_log_message, "@Gained permanent +1 to Pathfinding.", color_good_news),
+    (store_skill_level, ":skill_2", skl_spotting, "trp_player"),
+	(neg|ge, ":skill_2", 10),
+	(troop_raise_skill, "trp_player", skl_spotting, 1),
+    (display_log_message, "@Gained permanent +1 to Spotting.", color_good_news),
 ]),
 
 

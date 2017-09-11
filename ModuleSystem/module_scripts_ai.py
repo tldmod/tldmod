@@ -2515,8 +2515,8 @@ ai_scripts = [
                     (faction_get_slot, ":enemy_adv_camp", ":enemy_faction", slot_faction_advance_camp),
                     (try_begin),
                       (party_is_active, ":enemy_adv_camp"),
-                      #(call_script, "script_destroy_center", ":enemy_adv_camp"),
-                      (disable_party, ":enemy_adv_camp"), #Disable instead of using the "destroy" script - Kham
+                      (call_script, "script_destroy_center", ":enemy_adv_camp"),
+                      #(disable_party, ":enemy_adv_camp"),
                     (try_end),
                     (str_store_faction_name, s2, ":enemy_faction"),
                     (try_begin),
