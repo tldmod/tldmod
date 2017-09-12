@@ -1234,16 +1234,16 @@
   1.7 warg_jump 0 20 805306373 2829396006 0 0 0  0.9 
  horse_cancel_ani 0 50331743  1
   0.25 anim_horse 600 601 1073741830 0 0 0 0  0 
- warg_leapattack 16640 16777216  1
-  1 wargLeapAttack 0 20 536870917 2829396006 0 0 0  0.9 
- bear_slap_right 1026 16777216  1
-  1 bear_slap_right 1 45 2 0 0 0 0 0.0 
- bear_uppercut 1026 16777216  1
-  1 bear_uppercut 44 93 2 0 0 0 0 0.0 
- spider_attack 1026 16777216  1
-  1 spider_attack 1 33 2 0 0 0 0 0.0 
- wolf_snap 1026 16777216  1
-  1 wolf_snap 1 55 2 0 0 0 0 0.0 
+ warg_leapattack 17410 33554506  1
+  1.2 wargLeapAttack 0 20 536870917 2829396006 0 0 0  0.9 
+ bear_slap_right 17410 50331722  1
+  1.3 bear_slap_right 1 45 536870917 2829396006 0 0 0  0.9 
+ bear_uppercut 17410 50331722  1
+  1.3 bear_uppercut 44 93 536870917 2829396006 0 0 0  0.9 
+ spider_attack 17410 50331722  1
+  1.25 spider_attack 1 33 536870917 2829396006 0 0 0  0.9 
+ wolf_snap 17410 50331722  1
+  1.25 wolf_snap 1 55 536870917 2829396006 0 0 0  0.9 
  unused_horse_anim_11 0 0  1
   1 anim_horse 0 1 0 0 0 0 0 0.0 
  unused_horse_anim_12 0 0  1
