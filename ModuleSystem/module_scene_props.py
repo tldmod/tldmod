@@ -1425,12 +1425,12 @@ scene_props = [
 ("evil_gondor_tower_3",0,"gondor_tower_3_evil","bo_gondor_tower_3", []),
 ("evil_gondor_tower_4",0,"gondor_tower_4_evil","bo_gondor_tower_4", []),
 ("evil_gondor_tower_7",0,"gondor_tower_7_evil","bo_gondor_tower_7", []),
-("evil_gondor_wall",0,"mt_wall_evil", "bo_mt_wall", []),
+("evil_gondor_wall",0,"mt_wall_evil", "bo_mt_wall_evil", []), #InVain: New collision mesh
 ("evil_gondor_gate_tower",0,"mt_gate_tower_evil", "bo_mt_tower", []),
-("evil_gondor_gate_house",0,"mt_gate_house_evil", "bo_mt_gate_house", [(ti_on_scene_prop_init,
+("evil_gondor_gate_house",0,"mt_gate_house_evil", "bo_mt_gate_house_evil", [(ti_on_scene_prop_init,
             [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
-       (else_try),                      (set_fog_distance,700,0x4DB08D),
-       (try_end),])]),
+       (else_try),                      (set_fog_distance,700,0x4DB08D), 
+       (try_end),])]), #InVain: New collision mesh
   
 # old MT props  
 ("gondor_mt_bridge_modular_a",0,"mt_bridge_modular_a", "bo_bridge_modular_a", []),
@@ -1574,7 +1574,7 @@ scene_props = [
 ("orc_warg_pit"    ,0,"orc_warg_pit"    ,"bo_orc_warg_pit", []),
 ### UMBAR PROPS #####
 ("umbar_anchor",0,"umbar_prop_anchor","0", []),
-("umbar_ship",0,"umbar_prop_ship","0", []),
+("umbar_ship",0,"umbar_prop_ship","bo_umbar_prop_ship", []),
 ("umbar_shipwrecked",0,"umbar_prop_shipwrecked","0", []),
 ("umbar_smallboat",0,"umbar_prop_smallboat","0", []),
 ("umbar_smallboatoar",0,"umbar_prop_smallboatoar","0", []),
@@ -1834,28 +1834,28 @@ scene_props = [
 ("evil_tunnel_a",0,"evil_tunnel_a","bo_evil_tunnel_a", []),
 ("minas_tirith_copy",0,"minas_tirith_new","0", []),
 
-##### CENTER GUARDS #####
-("troop_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+##### CENTER GUARDS ##### #InVain: Changed helper meshes for all of these and randomized animation times
+("troop_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_guard_troop),
   (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
-("troop_prison_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+("troop_prison_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_prison_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
-("troop_castle_guard",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+("troop_castle_guard",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (party_get_slot, ":troop", "$current_town", slot_town_castle_guard_troop),
-  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),])]),
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 
 ##### TROLLS #####
-("troop_moria_troll",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+("troop_moria_troll",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -2591,6 +2591,91 @@ scene_props = [
   (agent_set_position, "$gate_aggravator_agent", pos1), # place gate aggravator agent to proper position
     ]),
 ], 1500), #500 hit points
+
+] + (is_a_wb_sceneprop==1 and [  #WB only props
+("tree_shelter",0,"tree_shelter_a","bo_tree_shelter_a", []),
+("tree_house",0,"tree_house_a.1","bo_tree_house_a", []),
+("rock_bridge",0,"rock_bridge_a","bo_rock_bridge_a", []),
+("suspension_bridge",0,"suspension_bridge_a","bo_suspension_bridge_a", []),
+("rope_bridge",0,"rope_bridge_15m","bo_rope_bridge_15m", []),
+("arabian_tent_umbar",0,"arabian_tent_umbar","bo_arabian_tent", []),
+("arabian_tent_umbar_b",0,"arabian_tent_umbar_b","bo_arabian_tent_b", []),
+("arena_awning",0,"arena_block_j_awning","bo_awning", []),
+
+( "winery_barrel_shelf"                        ,0,"winery_barrel_shelf","bo_winery_barrel_shelf",[]),
+( "winery_huge_barrel"                         ,0,"winery_huge_barrel","bo_winery_huge_barrel",[]),
+( "winery_middle_barrel"                       ,0,"winery_middle_barrel","bo_winery_middle_barrel",[]),
+( "winery_wine_cart_small_loaded"              ,0,"winery_wine_cart_small_loaded","bo_winery_wine_cart_small_loaded",[]),
+( "winery_wine_cart_loaded"                    ,0,"winery_wine_cart_loaded","bo_winery_wine_cart_loaded",[]),
+( "winery_wine_cart_empty"                     ,0,"winery_wine_cart_empty","bo_winery_wine_cart_empty",[]),
+( "winery_wine_cart_small_empty"               ,0,"winery_wine_cart_small_empty","bo_winery_wine_cart_small_empty",[]),
+( "smithy_grindstone_wheel"                    ,0,"smithy_grindstone_wheel","bo_smithy_grindstone_wheel",[]),
+( "smithy_forge_bellows"                       ,0,"smithy_forge_bellows","bo_smithy_forge_bellows",[]),
+( "smithy_forge"                               ,0,"smithy_forge","bo_smithy_forge",[]),
+( "smithy_anvil"                               ,0,"smithy_anvil","bo_smithy_anvil",[]),
+( "tannery_hide_a"                             ,0,"tannery_hide_a","bo_tannery_hide_a",[]),
+( "tannery_hide_b"                             ,0,"tannery_hide_b","bo_tannery_hide_b",[]),
+] or []) + [ #WB only props end
+
+("troop_civilian",sokf_invisible,"JB_arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
+    (store_trigger_param_1, ":instance_no"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(store_random_in_range, ":civilian", 1, 5),
+														 
+	        (try_begin),
+	        	(eq, ":civilian",1),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_1_troop),
+	        (else_try),
+	        	(eq, ":civilian",2),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_2_troop),
+	        (else_try),
+	        	(eq, ":civilian",3),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_3_troop),
+	        (else_try),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
+			(try_end),
+						 
+
+  (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
+	
+("troop_civilian_sitting_ground",sokf_invisible,"JB_arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(store_random_in_range, ":civilian", 1, 5),
+	        (try_begin),
+	        	(eq, ":civilian",1),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_1_troop),
+	        (else_try),
+	        	(eq, ":civilian",2),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_2_troop),
+	        (else_try),
+	        	(eq, ":civilian",3),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_3_troop),
+	        (else_try),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
+			(try_end),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),])]),
+	
+("troop_civilian_sitting_chair",sokf_invisible,"JB_arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+    (store_trigger_param_1, ":instance_no"),
+    (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
+    (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
+	(store_random_in_range, ":civilian", 1, 5),
+	        (try_begin),
+	        	(eq, ":civilian",1),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_1_troop),
+	        (else_try),
+	        	(eq, ":civilian",2),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_2_troop),
+	        (else_try),
+	        	(eq, ":civilian",3),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_3_troop),
+	        (else_try),
+	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
+			(try_end),
+	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_throne")])]),
 
 #InVain props end
 

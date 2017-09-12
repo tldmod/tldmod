@@ -257,8 +257,7 @@ fauna_kinds = [
  ('small_rock',
   fkf_steppe|fkf_plain_forest|fkf_steppe_forest|fkf_tree|density(4),
   [['PW_rock_a', 'bo_PW_rock_a'],
-   ['PW_rock_b', 'bo_PW_rock_b'],
-   ['PW_tree_17_c', 'bo_pw_tree_17_c']]),
+   ['PW_rock_b', 'bo_PW_rock_b']]),
 
  ('rock_snowy',
   fkf_tree,
@@ -997,7 +996,32 @@ fauna_kinds = [
   [['thranduil_ivy_single', '0'],
    ]),
       
-  ]
+ ('dead_uruk',
+  0,
+  [['dead_uruk_1', '0'],
+   ['dead_uruk_2', '0'],
+   ['dead_uruk_3', '0'],
+   ['dead_uruk_4', '0'],
+   ['dead_uruk_5', '0'],
+   ['dead_uruk_6', '0'],
+   ['dead_uruk_7', '0'],
+   ['dead_uruk_8', '0'],
+   ['dead_uruk_9', '0'],
+   ['dead_uruk_10', '0']]), 
+ 
+ ('dead_orc',
+  0,
+  [['dead_orc_1', '0'],
+   ['dead_orc_2', '0'],
+   ['dead_orc_3', '0'],
+   ['dead_orc_4', '0'],
+   ['dead_orc_5', '0'],
+   ['dead_orc_6', '0'],
+   ['dead_orc_7', '0'],
+   ['dead_orc_8', '0'],
+   ['dead_orc_9', '0'],
+   ['dead_orc_10', '0']]), 
+   ]
 
 
 

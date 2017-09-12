@@ -247,7 +247,7 @@ scn_uruk_hai_h_camp_center uruk_hai_h_camp_center 256 none none 0 0 100 100 -100
 scn_uruk_hai_r_camp_center uruk_hai_r_camp_center 256 none none 0 0 100 100 -100 0x00000003200014800002b4aa000074e600006c260000125a 
   0 
   0 
- JB_outer_terrain_anduin 
+ New_outer_terrain_anduin 
 scn_caras_galadhon_center caras_galadhon_center 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
   0 
   1  833 
@@ -283,11 +283,11 @@ scn_troll_cave_center troll_cave_center 256 none none 0 0 100 100 -100 0x0000000
 scn_dale_center dale_center 256 none none 0 0 100 100 -100 0x0000000330000500000d2348000006810000219700002120 
   0 
   0 
- JB_outer_terrain_tirith_1 
+ New_outer_terrain_tirith_1 
 scn_esgaroth_center esgaroth_center 256 none none 0 0 200 200 -100 0x0000000730000500000c8f2100002ca5000022aa000031a8 
   0 
   0 
- JB_outer_terrain_seaside_1 
+ New_outer_terrain_seaside_1 
 scn_erebor_center erebor_center 1 hallfini bo_hallfini_inner_tld -100 -200 100 200 -100 0 
   0 
   0 
@@ -304,18 +304,18 @@ scn_khand_camp_center khand_camp_center 256 none none 0 0 100 100 -100 0x0000000
   0 
   1  833 
  outer_terrain_rohan 
-scn_umbar_camp_center umbar_camp_center 256 none none 0 0 100 100 -100         0x3002898a80051d440000154e000026f300004e2d 
+scn_umbar_camp_center umbar_camp_center 256 none none 0 0 100 100 -100 0x000000002001c9a50007e1ed0000154e800026f300004e2d 
   0 
   1  833 
- 0 
+ New_outer_terrain_seaside_west 
 scn_rivendell_camp_center rivendell_camp_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
   0 
   1  833 
  outer_terrain_plain 
-scn_dol_guldur_center dol_guldur_center 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_dol_guldur_center dol_guldur_center 256 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
   0 
   0 
- outer_terrain_forest 
+ New_outer_terrain_forest 
 scn_north_rhun_camp_center north_rhun_camp_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
   0 
   1  833 
@@ -663,7 +663,7 @@ scn_cair_andros_siege cair_andros_siege 256 none none 0 0 100 100 -100 0x0000000
 scn_dale_siege dale_siege 256 none none 0 0 100 100 -100 0x0000000330000500000d2348000006810000219700002120 
   0 
   0 
- JB_outer_terrain_tirith_1 
+ New_outer_terrain_tirith_1 
 scn_west_emnet_siege west_emnet_siege 256 none none 0 0 100 100 -100 0x0000000720045abc000308c4000029d9000033bd000009b9 
   0 
   0 
@@ -980,14 +980,14 @@ scn_gundabad_siege gundabad_siege 256 none none 0 0 100 100 -100 0x0000000730000
   0 
   0 
  outer_mountains2north 
-scn_dol_guldur_siege dol_guldur_siege 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+scn_dol_guldur_siege dol_guldur_siege 256 none none 0 0 100 100 -100 0x00000003b0050d0d0004b12c000072f5000027d200005f66 
   0 
   0 
  outer_terrain_forest 
-scn_umbar_camp_siege umbar_camp_siege 256 none none 0 0 100 100 -100         0x3002898a80051d440000154e000026f300004e2d 
+scn_umbar_camp_siege umbar_camp_siege 256 none none 0 0 100 100 -100 0x0000000740000500000a1e8a000034f880004b040000583d 
   0 
   0 
- 0 
+ outer_terrain_seaside_north_1 
 scn_advcamp_good_siege advcamp_good_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
   0 
   0 
@@ -1155,7 +1155,7 @@ scn_osgiliath_outskirts osgiliath_outskirts 256 none none 0 0 100 100 -100 0x000
 scn_esgaroth_siege esgaroth_siege 256 none none 0 0 200 200 -100 0x0000000730000500000c8f2100002ca5000022aa000031a8 
   0 
   0 
- JB_outer_terrain_seaside_1 
+ New_outer_terrain_seaside_1 
 scn_woodelf_camp_siege woodelf_camp_siege 256 none none 0 0 100 100 -100 0x00000007300798b2000380e3000037960000573900003f48 
   0 
   0 
@@ -1231,7 +1231,7 @@ scn_uruk_hai_h_camp_center_siege uruk_hai_h_camp_center_siege 256 none none 0 0 
 scn_uruk_hai_r_camp_center_siege uruk_hai_r_camp_center_siege 256 none none 0 0 100 100 -100 0x00000003200014800002b4aa000074e600006c260000125a 
   0 
   0 
- JB_outer_terrain_anduin 
+ New_outer_terrain_anduin 
 scn_gundabad_ne_outpost_center_siege gundabad_ne_outpost_center_siege 256 none none 0 0 100 100 -100 0x000000032000050000035d470000156f000048ba0000361c 
   0 
   0 
@@ -1287,11 +1287,11 @@ scn_edoras_outside_2 edoras_outside_2 256 none none 0 0 100 100 -100 0x000000002
 scn_hornburg_outside_1 hornburg_outside_1 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
   0 
   0 
- JB_outer_mountains2south_helmsdeep 
+ New_outer_mountains2south_helmsdeep 
 scn_hornburg_outside_2 hornburg_outside_2 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
   0 
   0 
- JB_outer_mountains2south_helmsdeep 
+ New_outer_mountains2south_helmsdeep 
 scn_dolamroth_outside_1 dolamroth_outside_1 256 none none 0 0 100 100 -100 0x000000023c6794b10005153c00005c3000004b3400005792 
   0 
   0 
@@ -1303,19 +1303,19 @@ scn_dolamroth_outside_2 dolamroth_outside_2 1792 none none 0 0 100 100 -100 0x00
 scn_morannon_outside_1 morannon_outside_1 256 none none 0 0 100 100 -100 0x00000000b01489340005014000002601000021f700001290 
   0 
   0 
- JB_outer_mountains2south_morannon 
+ New_outer_mountains2south_morannon 
 scn_morannon_outside_2 morannon_outside_2 256 none none 0 0 100 100 -100 0x00000000b01489340005014000002601000021f700001290 
   0 
   0 
- JB_outer_mountains2south_morannon 
+ New_outer_mountains2south_morannon 
 scn_dolguldur_outside_1 dolguldur_outside_1 256 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
- JB_outer_mountains2east_mordor 
+ New_outer_mountains2east_mordor 
 scn_dolguldur_outside_2 dolguldur_outside_2 256 none none 0 0 100 100 -100 0x00000001b01917000004e93c00007b15000077bd00004d24 
   0 
   0 
- JB_outer_mountains2east_mordor 
+ New_outer_mountains2east_mordor 
 scn_beorn_outside_1 beorn_outside_1 256 none none 0 0 100 100 -100 0x00000000b322c90d0005a96a00001fb30000786900001ef5 
   0 
   0 
@@ -1327,15 +1327,15 @@ scn_beorn_outside_2 beorn_outside_2 256 none none 0 0 100 100 -100 0x00000000b32
 scn_moria_outside_1 moria_outside_1 256 none none 0 0 100 100 -100 0x000000002000050000075dde00000863000041e20000070c 
   0 
   0 
- JB_outer_mountains2west 
+ New_outer_mountains2west 
 scn_moria_outside_2 moria_outside_2 256 none none 0 0 100 100 -100 0x000000002000050000075dde00000863000041e20000070c 
   0 
   0 
- JB_outer_mountains2west 
+ New_outer_mountains2west 
 scn_dimrill_dale dimrill_dale 1792 none none 0 0 100 100 -100 0x00000002d00d16e38005c57300000863000041e20000739d 
   0 
   0 
- JB_outer_mountains2west 
+ New_outer_mountains2west 
 scn_carrock_nearby_1 carrock_nearby_1 256 none none 0 0 100 100 -100 0x000000002002cab4000765d700007e16000021f700001290 
   0 
   0 
@@ -1347,11 +1347,11 @@ scn_carrock_nearby_2 carrock_nearby_2 256 none none 0 0 100 100 -100 0x000000002
 scn_esgaroth_outside_1 esgaroth_outside_1 768 none none 0 0 100 100 -100 0x00000003a7268ca70005715f00003feb00005bd50000739d 
   0 
   0 
- JB_outer_terrain_seaside_west 
+ New_outer_terrain_seaside_west 
 scn_esgaroth_outside_2 esgaroth_outside_2 768 none none 0 0 100 100 -100 0x00000003a7268ca70005715f00003feb00005bd50000739d 
   0 
   0 
- JB_outer_terrain_seaside_west 
+ New_outer_terrain_seaside_west 
 scn_s_erebor s_erebor 1792 none none 0 0 100 100 -100 0x00000003a7268ca70005715f00003feb00005bd50000739d 
   0 
   0 
@@ -1379,27 +1379,27 @@ scn_lebennin_4 lebennin_4 256 none none 0 0 100 100 -100 0x000000013c640c120007d
 scn_lebennin_coast_1 lebennin_coast_1 256 none none 0 0 100 100 -100 0x000000003c6005000006cdb000007a7400005bd50000739d 
   0 
   0 
- JB_outer_terrain_seaside_north_1 
+ New_outer_terrain_seaside_north_1 
 scn_lebennin_coast_2 lebennin_coast_2 256 none none 0 0 100 100 -100 0x000000003c6005000006cdb00000339200005bd50000739d 
   0 
   0 
- JB_outer_terrain_seaside_north_1 
+ New_outer_terrain_seaside_north_1 
 scn_lebennin_coast_3 lebennin_coast_3 768 none none 0 0 100 100 -100 0x000000003c6005000006cdb000007a7400005bd50000739d 
   0 
   0 
- JB_outer_terrain_seaside_north_1 
+ New_outer_terrain_seaside_north_1 
 scn_lebennin_coast_4 lebennin_coast_4 768 none none 0 0 100 100 -100 0x000000003c6005000006cdb00000339200005bd50000739d 
   0 
   0 
- JB_outer_terrain_seaside_north_1 
+ New_outer_terrain_seaside_north_1 
 scn_pelennor_1 pelennor_1 256 none none 0 0 100 100 -100 0x00000000338009b500058d63000062dc00005bd50000739d 
   0 
   0 
- JB_outer_terrain_tirith_1 
+ New_outer_terrain_tirith_1 
 scn_pelennor_2 pelennor_2 256 none none 0 0 100 100 -100 0x00000000338009b500058d63000062dc00005bd50000739d 
   0 
   0 
- JB_outer_terrain_tirith_1 
+ New_outer_terrain_tirith_1 
 scn_village_gondor_battlefield_1 village_gondor_battlefield_1 256 none none 0 0 100 100 -100 0x00000000a00005000006118400005c3000004b3400005792 
   0 
   0 
