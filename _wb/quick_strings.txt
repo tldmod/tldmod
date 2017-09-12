@@ -646,6 +646,7 @@ qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
+qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
 qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
@@ -700,7 +701,6 @@ qstr_The_sorcerer_is_flee The_sorcerer_is_fleeing!_Kill_him!
 qstr_The_sorcerer_has_joi The_sorcerer_has_joined_the_fight!_Kill_him!
 qstr_The_sorcerer_is_dead The_sorcerer_is_dead!
 qstr_The_battle_is_won! The_battle_is_won!
-qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_so_beautiful_from_a_distance!
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
 qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photos,_he's_amazing!
