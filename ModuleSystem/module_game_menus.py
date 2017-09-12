@@ -3078,7 +3078,7 @@ game_menus = [
     	],"Let Player Command Allies: {s7}", [
     	(store_sub, "$player_control_allies",1, "$player_control_allies"), 
     	(val_clamp, "$player_control_allies",0,2)]),
-    ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_orc_horde"),(display_message, "@Orc Horde Spawned!")]),
+    ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_looters"),(display_message, "@Orc Horde Spawned!"), (party_add_members, "p_main_party", "trp_dunnish_wolf_guard", 10)]),
     ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!")]),
     ("melee_ai_test",[],"Melee AI Test", [
     	(set_spawn_radius,1),

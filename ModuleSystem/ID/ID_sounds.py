@@ -277,5 +277,8 @@ snd_new_rank_evil = 275
 snd_new_rank_good = 276
 snd_woman_yell = 277
 snd_ghost_ambient_long = 278
+snd_bear_strike = 279
+snd_spider_strike = 280
+snd_wolf_strike = 281
 
 

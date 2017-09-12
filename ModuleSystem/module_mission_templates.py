@@ -402,13 +402,13 @@ tld_animal_strikes = (
     #Kham - let's give 'em some sounds when attacking
     (try_begin),
       (eq, ":agent_trp", "trp_spider"),
-      (assign, ":sound", "snd_spider"),
+      (assign, ":sound", "snd_spider_strike"),
     (else_try),
       (eq, ":agent_trp", "trp_wolf"),
-      (assign, ":sound", "snd_warg_lone_woof"),
+      (assign, ":sound", "snd_wolf_strike"),
     (else_try),
       (eq, ":agent_trp", "trp_bear"),
-      (assign, ":sound", "snd_warg_lone_woof"),
+      (assign, ":sound", "snd_bear_strike"),
     (try_end),
 
     (try_begin),
@@ -436,7 +436,12 @@ tld_animal_strikes = (
       (try_begin),
         (eq, ":agent_trp", "trp_spider"),
         (store_random_in_range, reg0, 5, 10),
-        (assign, ":hit_anim", "anim_strike_fly_back"),
+        (try_begin),
+          (le, ":rnd", 30), #30% chance for a fly back
+          (assign, ":hit_anim", "anim_strike_fly_back"),
+        (else_try),
+          (assign, ":hit_anim", "anim_strike_legs_front"),
+        (try_end),
         (assign, ":agents_to_damage", 1),
       (else_try),
         (eq, ":agent_trp", "trp_wolf"),
@@ -487,6 +492,53 @@ tld_remove_riderless_animals =  (
   (try_end),
   ])
 
+tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
+
+  (ti_on_agent_spawn, 0,0, [],
+    [
+      (store_trigger_param_1, ":agent"),
+
+      (agent_get_troop_id, ":agent_trp",":agent"),
+      (eq, ":agent_trp", "trp_dunnish_wolf_guard"),
+
+      (set_fixed_point_multiplier, 100),
+      (agent_get_position, pos1, ":agent"),
+      (position_move_x, pos1, 150),
+      (set_spawn_position, pos1),
+      (spawn_agent, "trp_wolf"),
+      (assign, ":animal", reg0),
+      (assign, "$animal_is_present", 1),
+      (agent_add_relation_with_agent, ":agent", ":animal", 0),
+      (agent_set_hit_points, ":animal", 100, 0),
+      
+      (agent_get_team, ":agent_team", ":agent"),
+      (agent_set_team, ":animal", ":agent_team"),
+      (agent_get_division, ":agent_division", ":agent"),
+      (agent_set_division, ":animal", ":agent_division"),
+  ]),
+
+  (ti_on_order_issued, 0, 0,
+    [
+      (eq, "$animal_is_present", 1),
+      (store_trigger_param, ":order_no", 1),
+      (eq, ":order_no", mordr_dismount),
+    ],
+    [
+      (try_for_agents, ":agent"),
+        (agent_get_troop_id, ":agent_trp",":agent"),
+        (eq, ":agent_trp", "trp_wolf"),
+        (agent_is_active, ":agent_trp"),
+        (agent_is_alive,  ":agent_trp"),
+        (get_player_agent_no, ":player_agent"),
+        (agent_get_team, ":player_team", ":player_agent"),
+        (agent_get_division, ":animal_division", ":agent"),
+        (set_show_messages, 0),
+        (team_give_order, ":player_team", ":animal_division", mordr_mount),
+        (set_show_messages, 1),
+      (try_end),
+  ])
+  
+] or [])
 
 
 tld_common_battle_scripts = ((is_a_wb_mt==1) and [
@@ -520,7 +572,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   tld_animals_init,
   tld_animal_strikes,
   tld_remove_riderless_animals,
-] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals
 
 
 tld_siege_battle_scripts = [
@@ -2907,6 +2959,7 @@ mission_templates = [ # not used in game
       common_battle_order_panel_tick,
       common_battle_inventory,
 ]),
+
 ( "castle_attack_walls_ladder",mtf_battle_mode,-1,
   "You attack the walls of the castle...",
     [# Attacker initial spawn point (was 0)
@@ -2929,48 +2982,77 @@ mission_templates = [ # not used in game
      (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-	 (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-	 (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
+   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
      (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
-	 (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team right flank
+   (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-	],
+  ],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
     tld_siege_battle_scripts+[
-
-    tld_common_siege_set_slot,
-    tld_common_siege_start,
-		common_battle_tab_press,
-	  tld_common_siege_question_answered,
-    tld_common_siege_init,
-    tld_common_siege_ai_trigger_init,
-    tld_common_siege_ai_trigger_init_after_2_secs,
-
-	(3, 0, 0, [(lt,"$telling_counter",3)],[ # need to repeat orders several times for the bitches to listen
-		(val_add, "$telling_counter",1),
-		(set_show_messages, 0),
-		(assign,":defteam","$defender_team"),
-		(assign,":atkteam","$attacker_team"),
-		(assign,":entry2",60),
-		(try_for_range,":entry",41,44), # cycle through flanks and assign teams' destinations 
-			(entry_point_get_position, pos10, ":entry"), #TLD, was 10
-			(team_give_order, ":defteam", grc_infantry, mordr_hold),
-			(team_give_order, ":defteam", grc_infantry, mordr_stand_closer),
-			(team_give_order, ":defteam", grc_infantry, mordr_stand_closer),
-			(team_give_order, ":defteam", grc_archers, mordr_stand_ground),
-			(team_set_order_position, ":defteam", grc_infantry, pos10),
-			(team_set_order_position, ":atkteam", grc_everyone, pos10),
-			(entry_point_get_position, pos10, ":entry2"), #TLD, was 10
-			(team_give_order, ":atkteam", grc_archers, mordr_hold),
-			(team_set_order_position, ":atkteam", grc_archers, pos10),
-			(val_add,":defteam",2),
-			(val_add,":atkteam",2),
-			(val_add,":entry2",1),
-		(try_end),
-		(set_show_messages, 1),
+  (ti_before_mission_start, 0, 0, [],[
+    (team_set_relation, 0, 2, 1),(team_set_relation, 0, 4, 1),(team_set_relation, 4, 2, 1), # TLD expand teams
+    (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1),
+    (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # TLD gate aggravator team
+    (assign, "$gate_aggravator_agent",-1), # can be reassigned by destructible gate scene prop presence
+    (call_script, "script_change_banners_and_chest"),
+    (call_script, "script_remove_siege_objects")]),
+  (0, 0, ti_once, [],[
+    (assign,"$battle_won",0),
+    (assign,"$defender_reinforcement_stage",0),
+    (assign,"$attacker_reinforcement_stage",0),
+    (assign,"$g_presentation_battle_active", 0),
+    (assign,"$telling_counter",0),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_siege),
+    (assign, "$defender_team"  , 0),(assign, "$attacker_team"  , 1),
+    (assign, "$defender_team_2", 2),(assign, "$attacker_team_2", 3),
+    (assign, "$defender_team_3", 4),(assign, "$attacker_team_3", 5),
+    ]), 
+    common_battle_tab_press,
+  (ti_question_answered, 0, 0, [],[
+    (store_trigger_param_1,":answer"),
+    (eq,":answer",0),
+    (assign, "$pin_player_fallen", 0),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_team, ":agent_team", ":player_agent"),
+    (try_begin),
+      (neq, "$attacker_team", ":agent_team"),
+      (neq, "$attacker_team_2", ":agent_team"),
+      (neq, "$attacker_team_3", ":agent_team"), # if defender - cannot retreat
+      (str_store_string, s5, "str_can_not_retreat"),
+      #(call_script, "script_simulate_retreat", 8, 15),
+    (else_try),
+      (str_store_string, s5, "str_retreat"),
+      (call_script, "script_simulate_retreat", 5, 20),
+    (try_end),
+      (call_script, "script_count_mission_casualties_from_agents"),
+      (finish_mission,0),
+    ]),
+  (3, 0, 0, [(lt,"$telling_counter",3)],[ # need to repeat orders several times for the bitches to listen
+    (val_add, "$telling_counter",1),
+    (set_show_messages, 0),
+    (assign,":defteam","$defender_team"),
+    (assign,":atkteam","$attacker_team"),
+    (assign,":entry2",60),
+    (try_for_range,":entry",41,44), # cycle through flanks and assign teams' destinations 
+      (entry_point_get_position, pos10, ":entry"), #TLD, was 10
+      (team_give_order, ":defteam", grc_infantry, mordr_hold),
+      (team_give_order, ":defteam", grc_infantry, mordr_stand_closer),
+      (team_give_order, ":defteam", grc_infantry, mordr_stand_closer),
+      (team_give_order, ":defteam", grc_archers, mordr_stand_ground),
+      (team_set_order_position, ":defteam", grc_infantry, pos10),
+      (team_set_order_position, ":atkteam", grc_everyone, pos10),
+      (entry_point_get_position, pos10, ":entry2"), #TLD, was 10
+      (team_give_order, ":atkteam", grc_archers, mordr_hold),
+      (team_set_order_position, ":atkteam", grc_archers, pos10),
+      (val_add,":defteam",2),
+      (val_add,":atkteam",2),
+      (val_add,":entry2",1),
+    (try_end),
+    (set_show_messages, 1),
     (try_begin),  #Siege Order Exceptions (Kham)
       (eq, "$g_encountered_party", "p_town_umbar_camp"),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
@@ -2982,72 +3064,61 @@ mission_templates = [ # not used in game
       (team_set_order_position, ":atkteam", grc_everyone, pos10),
      # (display_message, "@moving to pos10", color_good_news),
     (try_end),]),
-	
-  #Kham - Comment Out this weird block here... don't know why this is here.
-  #(0, 0, 2,[(this_or_next|game_key_clicked, key_o),(game_key_is_down, key_o)],
-	#	[(entry_point_get_position, pos10, 41),(team_set_order_position, "$defender_team"  , grc_everyone, pos10),
-	#	(entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team_2", grc_everyone, pos10),
-	#	(entry_point_get_position, pos10, 43),(team_set_order_position, "$defender_team_3", grc_everyone, pos10),
-	#	(display_message,"@On your positions, bitchez!!")]),
-
-	tld_common_siege_attacker_reinforcement_check, #Kham - Replaced below
-
-	#(1, 0, 5,[(lt,"$attacker_reinforcement_stage",15)],[
-	#	(assign,":atkteam","$attacker_team"),
-  #	(assign,":entry",7), #iterate through 8 9 10
-	#	(try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
-	#		(store_normalized_team_count,":num_attackers",":atkteam"),
-	#		(val_add,":atkteam",2),
-	#		(val_add,":entry",1),
-	#		(lt,":num_attackers",10),
-	#		(add_reinforcements_to_entry, ":entry", 12),
-	#		(val_add,"$attacker_reinforcement_stage", 1),
-  #   (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
-	#	(try_end)]),
-
- tld_common_siege_defender_reinforcement_check, #Kham - Replaced below
-
-	#(3, 0, 5, 
-  # [(lt,"$defender_reinforcement_stage", 15),
-  # (store_mission_timer_a,":mission_time"),
-  # (ge,":mission_time",10)],[
-	#	(assign,":defteam","$defender_team"),
-	#	(assign,":entry",4), #iterate through 5 6 7
-	#	(try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
-	#		(store_normalized_team_count,":num_defenders",":defteam"),
-	#		(val_add,":defteam",2),
-	#		(val_add,":entry",1),
-	#		(lt,":num_defenders",14),
-	#		(add_reinforcements_to_entry, ":entry", 10), #TLD, was 4, 7
-	#		(val_add,"$defender_reinforcement_stage",1),
-	#	(try_end),
-	#	(try_begin),
-	#		(ge, "$defender_reinforcement_stage", 7),
-	#		(set_show_messages, 0),
-	#		(team_give_order, "$defender_team"  , grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
-	#		(team_give_order, "$defender_team_2", grc_infantry, mordr_charge),
-	#		(team_give_order, "$defender_team_3", grc_infantry, mordr_charge),
-	#		(set_show_messages, 1),
-	#		(display_message,"@Defenders: infantry CHARGE!!"),
-	#		(ge, "$defender_reinforcement_stage", 14),
-	#		(set_show_messages, 0),
-	#		(team_give_order, "$defender_team"  , grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
-	#		(team_give_order, "$defender_team_2", grc_everyone, mordr_charge),
-	#		(team_give_order, "$defender_team_3", grc_everyone, mordr_charge),
-	#		(set_show_messages, 1),
-	#		(display_message,"@Defenders: everyone CHARGE!!"),
-	#	(try_end),
-		# put gate aggravator in place
-	#	(try_begin),
-	#		(neq, "$gate_aggravator_agent",-1),
-	#		(eq, "$gate_breached",0),
-	#		(entry_point_get_position, pos13, 39),
-	#		(agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
-	#		(agent_set_position,"$gate_aggravator_agent",pos13),
-	#		(agent_set_hit_points,"$gate_aggravator_agent",100,0),
-	#	(try_end)]),
-	
-  tld_common_siege_defender_reinforcement_archer_reposition,
+  (0, 0, 2,[(this_or_next|game_key_clicked, key_o),(game_key_is_down, key_o)],
+    [(entry_point_get_position, pos10, 41),(team_set_order_position, "$defender_team"  , grc_everyone, pos10),
+    (entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team_2", grc_everyone, pos10),
+    (entry_point_get_position, pos10, 43),(team_set_order_position, "$defender_team_3", grc_everyone, pos10),
+    (display_message,"@On your positions, bitchez!!")]),
+  (0, 2, ti_once, [], [(try_for_agents, ":agent_no"),(agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),(try_end)]),
+  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",15)],[
+    (assign,":atkteam","$attacker_team"),
+    (assign,":entry",7), #iterate through 8 9 10
+    (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
+      (store_normalized_team_count,":num_attackers",":atkteam"),
+      (val_add,":atkteam",2),
+      (val_add,":entry",1),
+      (lt,":num_attackers",10),
+      (add_reinforcements_to_entry, ":entry", 12),
+      (val_add,"$attacker_reinforcement_stage", 1),
+      (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
+    (try_end)]),
+  (3, 0, 5, [(lt,"$defender_reinforcement_stage", 15),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[
+    (assign,":defteam","$defender_team"),
+    (assign,":entry",4), #iterate through 5 6 7
+    (try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
+      (store_normalized_team_count,":num_defenders",":defteam"),
+      (val_add,":defteam",2),
+      (val_add,":entry",1),
+      (lt,":num_defenders",14),
+      (add_reinforcements_to_entry, ":entry", 10), #TLD, was 4, 7
+      (val_add,"$defender_reinforcement_stage",1),
+    (try_end),
+    (try_begin),
+      (ge, "$defender_reinforcement_stage", 7),
+      (set_show_messages, 0),
+      (team_give_order, "$defender_team"  , grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
+      (team_give_order, "$defender_team_2", grc_infantry, mordr_charge),
+      (team_give_order, "$defender_team_3", grc_infantry, mordr_charge),
+      (set_show_messages, 1),
+      (display_message,"@Defenders: infantry CHARGE!!"),
+      (ge, "$defender_reinforcement_stage", 14),
+      (set_show_messages, 0),
+      (team_give_order, "$defender_team"  , grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
+      (team_give_order, "$defender_team_2", grc_everyone, mordr_charge),
+      (team_give_order, "$defender_team_3", grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+      (display_message,"@Defenders: everyone CHARGE!!"),
+    (try_end),
+    # put gate aggravator in place
+    (try_begin),
+      (neq, "$gate_aggravator_agent",-1),
+      (eq, "$gate_breached",0),
+      (entry_point_get_position, pos13, 39),
+      (agent_set_scripted_destination,"$gate_aggravator_agent",pos13,1),
+      (agent_set_position,"$gate_aggravator_agent",pos13),
+      (agent_set_hit_points,"$gate_aggravator_agent",100,0),
+    (try_end)]),
+  (2, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
    (5, 0, 0, [ #Kham - Revert attackers to regular attack mode when reinforcement comes.
      (eq, "$attacker_archer_melee",1),
@@ -3066,155 +3137,150 @@ mission_templates = [ # not used in game
       (display_message, "@DEBUG: Attackers go back to regular attack mode"),
      (try_end),
    ]),
-	 
    (35, 0, 0, [
      (eq, "$attacker_archer_melee", 0),  #Make sure attackers do not stall on the ladders... 
      ],
-  	 [
+     [
      (try_for_agents, ":agent_no"),  
-  	 (agent_is_human, ":agent_no"),
-  	 (agent_is_alive, ":agent_no"),
-  	 (agent_get_team, ":agent_team", ":agent_no"),
-  	 (this_or_next|eq, ":agent_team", "$attacker_team"),(this_or_next|eq, ":agent_team", "$attacker_team_2"),(eq, ":agent_team", "$attacker_team_3"),
-  	 (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
-  	 (try_end),
+     (agent_is_human, ":agent_no"),
+     (agent_is_alive, ":agent_no"),
+     (agent_get_team, ":agent_team", ":agent_no"),
+     (this_or_next|eq, ":agent_team", "$attacker_team"),(this_or_next|eq, ":agent_team", "$attacker_team_2"),(eq, ":agent_team", "$attacker_team_3"),
+     (agent_ai_set_always_attack_in_melee, ":agent_no", 1),
+     (try_end),
      (try_begin),
       (eq, "$cheat_mode", 1),
       (display_message, "@DEBUG: Attackers do not stall on ladders triggered"),
      (try_end),
-	 ]),
-
-	common_battle_check_friendly_kills,
-	common_battle_check_victory_condition,
-	common_battle_victory_display,
-	tld_common_siege_refill_ammo,
-	tld_common_siege_check_defeat_condition,
-	common_battle_order_panel,
-	common_battle_order_panel_tick,
-	common_inventory_not_available,
+   ]),
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_siege_refill_ammo,
+  common_siege_check_defeat_condition,
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+  common_inventory_not_available,
    
-	 (5, 0, 0,[], # distribute agents among teams
-	   [(try_for_agents, ":agent"),
-			(agent_is_alive,":agent"),
-			(agent_is_human,":agent"),
-			(agent_slot_eq,":agent",slot_agent_arena_team_set,0),
-			(store_random_in_range, ":team", 0,3),
-			(try_begin), # when gate breached assign more people to medium team (which is gate oriented)
-				(eq,"$gate_breached",1),
-				(store_random_in_range, ":x",0,2),
-				(eq, ":x",1),
-				(assign, ":team", 1),
-			(try_end),
-			(val_mul, ":team", 2),
-			(try_begin),
-				(neg|agent_is_defender,":agent"),
-				(val_add,":team",1),
-			(try_end),
-			(agent_set_team, ":agent", ":team"),
-			(agent_set_slot,":agent",slot_agent_arena_team_set,1),
-		(try_end),
-		]),
-
-	(10, 0, 0,[], [# check if targets are captured by attackers
-		(try_for_range, ":slot",0,3),
-			(neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
-			(troop_set_slot,"trp_no_troop",":slot",0),
-		(try_end),
-		(try_for_agents, ":agent"),
-			(agent_is_alive,":agent"),
-			(agent_is_defender,":agent"),
-			(agent_get_position, pos0, ":agent"),
-			(try_for_range, ":entry",41,44),
-				(store_sub,":slot",":entry",41),
-				(neg|troop_slot_eq,"trp_no_troop",":slot",-1), # proceed with counting defenders if choke not captured yet
-				(entry_point_get_position, pos10, ":entry"), # count defenders in proximity of choke points
-				(get_distance_between_positions, ":dist", pos0, pos10),
-				(lt,":dist", 400),
-				(troop_get_slot,":x","trp_no_troop",":slot"), #+1 defender found
-				(troop_set_slot,"trp_no_troop",":slot",":x"),
-			(try_end),
-		(try_end),
+   (5, 0, 0,[], # distribute agents among teams
+     [(try_for_agents, ":agent"),
+      (agent_is_alive,":agent"),
+      (agent_is_human,":agent"),
+      (agent_slot_eq,":agent",slot_agent_arena_team_set,0),
+      (store_random_in_range, ":team", 0,3),
+      (try_begin), # when gate breached assign more people to medium team (which is gate oriented)
+        (eq,"$gate_breached",1),
+        (store_random_in_range, ":x",0,2),
+        (eq, ":x",1),
+        (assign, ":team", 1),
+      (try_end),
+      (val_mul, ":team", 2),
+      (try_begin),
+        (neg|agent_is_defender,":agent"),
+        (val_add,":team",1),
+      (try_end),
+      (agent_set_team, ":agent", ":team"),
+      (agent_set_slot,":agent",slot_agent_arena_team_set,1),
+    (try_end),
+    ]),
+  (10, 0, 0,[], [# check if targets are captured by attackers
+    (try_for_range, ":slot",0,3),
+      (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
+      (troop_set_slot,"trp_no_troop",":slot",0),
+    (try_end),
+    (try_for_agents, ":agent"),
+      (agent_is_alive,":agent"),
+      (agent_is_defender,":agent"),
+      (agent_get_position, pos0, ":agent"),
+      (try_for_range, ":entry",41,44),
+        (store_sub,":slot",":entry",41),
+        (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # proceed with counting defenders if choke not captured yet
+        (entry_point_get_position, pos10, ":entry"), # count defenders in proximity of choke points
+        (get_distance_between_positions, ":dist", pos0, pos10),
+        (lt,":dist", 400),
+        (troop_get_slot,":x","trp_no_troop",":slot"), #+1 defender found
+        (troop_set_slot,"trp_no_troop",":slot",":x"),
+      (try_end),
+    (try_end),
         (set_show_messages, 0),
-		(try_for_range, ":slot",0,3),
-			(neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will
-			(troop_set_slot,"trp_no_troop",":slot",-1),
-			(store_mul,":defteam",":slot",2),(store_add,":atkteam",":defteam",1),
-			(team_give_order, ":defteam", grc_everyone, mordr_charge),
-			(team_give_order, ":atkteam", grc_everyone, mordr_charge),
-			(store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"),
-			(team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
-			(team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
-			(team_set_order_position, ":atkteam", grc_archers, pos10),
-		(try_end),
-		(set_show_messages, 1),
-	 ]),
-	##      (15, 0, 0,
-	##       [
-	##         (get_player_agent_no, ":player_agent"),
-	##         (agent_get_team, ":agent_team", ":player_agent"),
-	##         (neq, "$attacker_team", ":agent_team"),
-	##         (assign, ":non_ranged", 0),
-	##         (assign, ":ranged", 0),
-	##         (assign, ":ranged_pos_x", 0),
-	##         (assign, ":ranged_pos_y", 0),
-	##         (set_fixed_point_multiplier, 100),
-	##         (try_for_agents, ":agent_no"),
-	##           (eq, ":non_ranged", 0),
-	##           (agent_is_human, ":agent_no"),
-	##           (agent_is_alive, ":agent_no"),
-	##           (neg|agent_is_defender, ":agent_no"),
-	##           (agent_get_class, ":agent_class", ":agent_no"),
-	##           (try_begin),
-	##             (neq, ":agent_class", grc_archers),
-	##             (val_add, ":non_ranged", 1),
-	##           (else_try),
-	##             (val_add, ":ranged", 1),
-	##             (agent_get_position, pos0, ":agent_no"),
-	##             (position_get_x, ":pos_x", pos0),
-	##             (position_get_y, ":pos_y", pos0),
-	##             (val_add, ":ranged_pos_x", ":pos_x"),
-	##             (val_add, ":ranged_pos_y", ":pos_y"),
-	##           (try_end),
-	##         (try_end),
-	##         (try_begin),
-	##           (eq, ":non_ranged", 0),
-	##           (gt, ":ranged", 0),
-	##           (val_div, ":ranged_pos_x", ":ranged"),
-	##           (val_div, ":ranged_pos_y", ":ranged"),
-	##           (entry_point_get_position, pos0, 10),
-	##           (init_position, pos1),
-	##           (position_set_x, pos1, ":ranged_pos_x"),
-	##           (position_set_y, pos1, ":ranged_pos_y"),
-	##           (position_get_z, ":pos_z", pos0),
-	##           (position_set_z, pos1, ":pos_z"),
-	##           (get_distance_between_positions, ":dist", pos0, pos1),
-	##           (gt, ":dist", 1000), #average position of archers is more than 10 meters far from entry point 10
-	##           (team_give_order, "$attacker_team", grc_archers, mordr_hold),
-	##           (team_set_order_position, "$attacker_team", grc_archers, pos0),
-	##         (else_try),
-	##           (team_give_order, "$attacker_team", grc_everyone, mordr_charge),
-	##         (try_end),
-	##         ],
-	##       []),
- 
+    (try_for_range, ":slot",0,3),
+      (neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will
+      (troop_set_slot,"trp_no_troop",":slot",-1),
+      (store_mul,":defteam",":slot",2),(store_add,":atkteam",":defteam",1),
+      (team_give_order, ":defteam", grc_everyone, mordr_charge),
+      (team_give_order, ":atkteam", grc_everyone, mordr_charge),
+      (store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"),
+      (team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
+      (team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
+      (team_set_order_position, ":atkteam", grc_archers, pos10),
+    (try_end),
+    (set_show_messages, 1),
+   ]),
+  ##      (15, 0, 0,
+  ##       [
+  ##         (get_player_agent_no, ":player_agent"),
+  ##         (agent_get_team, ":agent_team", ":player_agent"),
+  ##         (neq, "$attacker_team", ":agent_team"),
+  ##         (assign, ":non_ranged", 0),
+  ##         (assign, ":ranged", 0),
+  ##         (assign, ":ranged_pos_x", 0),
+  ##         (assign, ":ranged_pos_y", 0),
+  ##         (set_fixed_point_multiplier, 100),
+  ##         (try_for_agents, ":agent_no"),
+  ##           (eq, ":non_ranged", 0),
+  ##           (agent_is_human, ":agent_no"),
+  ##           (agent_is_alive, ":agent_no"),
+  ##           (neg|agent_is_defender, ":agent_no"),
+  ##           (agent_get_class, ":agent_class", ":agent_no"),
+  ##           (try_begin),
+  ##             (neq, ":agent_class", grc_archers),
+  ##             (val_add, ":non_ranged", 1),
+  ##           (else_try),
+  ##             (val_add, ":ranged", 1),
+  ##             (agent_get_position, pos0, ":agent_no"),
+  ##             (position_get_x, ":pos_x", pos0),
+  ##             (position_get_y, ":pos_y", pos0),
+  ##             (val_add, ":ranged_pos_x", ":pos_x"),
+  ##             (val_add, ":ranged_pos_y", ":pos_y"),
+  ##           (try_end),
+  ##         (try_end),
+  ##         (try_begin),
+  ##           (eq, ":non_ranged", 0),
+  ##           (gt, ":ranged", 0),
+  ##           (val_div, ":ranged_pos_x", ":ranged"),
+  ##           (val_div, ":ranged_pos_y", ":ranged"),
+  ##           (entry_point_get_position, pos0, 10),
+  ##           (init_position, pos1),
+  ##           (position_set_x, pos1, ":ranged_pos_x"),
+  ##           (position_set_y, pos1, ":ranged_pos_y"),
+  ##           (position_get_z, ":pos_z", pos0),
+  ##           (position_set_z, pos1, ":pos_z"),
+  ##           (get_distance_between_positions, ":dist", pos0, pos1),
+  ##           (gt, ":dist", 1000), #average position of archers is more than 10 meters far from entry point 10
+  ##           (team_give_order, "$attacker_team", grc_archers, mordr_hold),
+  ##           (team_set_order_position, "$attacker_team", grc_archers, pos0),
+  ##         (else_try),
+  ##           (team_give_order, "$attacker_team", grc_everyone, mordr_charge),
+  ##         (try_end),
+  ##         ],
+  ##       []),
  (20, 0, 0,[], # report attackers and defenders distribution
    [(assign,reg0,0),(assign,reg1,0),(assign,reg2,0),(assign,reg3,0),(assign,reg4,0),(assign,reg5,0),
-	(try_for_agents, ":agent"),
-		(agent_is_alive,":agent"),
-		(agent_is_human,":agent"),
-		(agent_get_team, ":team", ":agent"),
-		(try_begin),(eq,":team",0),(val_add, reg0,1),
-		 (else_try),(eq,":team",1),(val_add, reg1,1),
-		 (else_try),(eq,":team",2),(val_add, reg2,1),
-		 (else_try),(eq,":team",3),(val_add, reg3,1),
-		 (else_try),(eq,":team",4),(val_add, reg4,1),
-		 (else_try),(eq,":team",5),(val_add, reg5,1),
-		(try_end),
-	(try_end),
-	(set_show_messages, 1),
-	(display_message, "@Attackers: {reg1}/{reg3}/{reg5} Defenders: {reg0}/{reg2}/{reg4}")]),
+  (try_for_agents, ":agent"),
+    (agent_is_alive,":agent"),
+    (agent_is_human,":agent"),
+    (agent_get_team, ":team", ":agent"),
+    (try_begin),(eq,":team",0),(val_add, reg0,1),
+     (else_try),(eq,":team",1),(val_add, reg1,1),
+     (else_try),(eq,":team",2),(val_add, reg2,1),
+     (else_try),(eq,":team",3),(val_add, reg3,1),
+     (else_try),(eq,":team",4),(val_add, reg4,1),
+     (else_try),(eq,":team",5),(val_add, reg5,1),
+    (try_end),
+  (try_end),
+  (set_show_messages, 1),
+  (display_message, "@Attackers: {reg1}/{reg3}/{reg5} Defenders: {reg0}/{reg2}/{reg4}")]),
 ]),
-
 
 ( "besiege_inner_battle_castle",mtf_battle_mode,-1,
   "You attack the walls of the castle...",

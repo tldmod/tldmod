@@ -1,5 +1,5 @@
 soundsfile version 2
-636
+637
  drum_3.wav 257
  tutorial_1.ogg 1793
  tutorial_2.ogg 1793
@@ -552,8 +552,8 @@ soundsfile version 2
  warg_bark03.wav 2656
  warg_growl01.wav 2656
  warg_howl01.wav 2656
- warg_howl02.mp3 2656
- warg_howl03.mp3 2656
+ warg_howl02.wav 2656
+ warg_howl03.wav 2656
  horse_snort_1.wav 1872
  horse_snort_2.wav 1872
  horse_snort_3.wav 1872
@@ -630,13 +630,14 @@ soundsfile version 2
  level_up.wav 1937
  spider_battle01.wav 8
  spider_battle2.wav 8
- spider_death.wav 8
+ spider_death.wav 2656
  new_rank_evil.wav 1793
  new_rank_good.wav 1793
  woman_yell_1.ogg 2640
  woman_yell_2.ogg 2640
  ghost_ambient_long02.wav 907
-279
+ trollSnarl.wav 2656
+282
 snd_click 257 1 0 
 snd_tutorial_1 1793 1 1 
 snd_tutorial_2 1793 1 2 
@@ -911,8 +912,11 @@ snd_lord_dies 1937 1 625
 snd_enemy_lord_dies 1937 1 626 
 snd_level_up 1937 1 627 
 snd_spider 8 2 628 629 
-snd_spider_die 8 1 630 
+snd_spider_die 2656 1 630 
 snd_new_rank_evil 1793 1 631 
 snd_new_rank_good 1793 1 632 
 snd_woman_yell 2640 2 633 634 
 snd_ghost_ambient_long 907 1 635 
+snd_bear_strike 2656 3 552 553 495 
+snd_spider_strike 2656 2 628 636 
+snd_wolf_strike 2656 2 550 636 

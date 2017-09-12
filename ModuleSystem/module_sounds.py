@@ -267,7 +267,7 @@ sounds = [
 ("horror_scream_woman",sf_priority_10|sf_vol_10,["horror_scream_woman.wav"]),
 ("horror_scream_orc"  ,sf_priority_10|sf_vol_10,["horror_scream_orc.wav"]),
 
-("warg_lone_woof",   sf_priority_6|sf_vol_10, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","warg_howl01.wav","warg_howl02.mp3","warg_howl03.mp3"]),
+("warg_lone_woof",   sf_priority_6|sf_vol_10, ["warg_bark01.wav","warg_bark02.wav","warg_bark03.wav","warg_growl01.wav","warg_howl01.wav","warg_howl02.wav","warg_howl03.wav"]),
 ("horse_snort_again",sf_priority_5|sf_vol_7,  ["horse_snort_1.wav","horse_snort_2.wav","horse_snort_3.wav","horse_snort_4.wav","horse_snort_5.wav"]),
 
 ("spear_trap",sf_priority_7|sf_vol_9|sf_stream_from_hd, ["spear_trap.wav"]),
@@ -344,7 +344,7 @@ sounds = [
 ("level_up",        sf_2d|sf_priority_9|sf_vol_7, ["level_up.wav"]),
 
 ("spider",     sf_stream_from_hd, ["spider_battle01.wav", "spider_battle2.wav"]),
-("spider_die", sf_stream_from_hd, ["spider_death.wav"]),
+("spider_die", sf_priority_6|sf_vol_10, ["spider_death.wav"]),
 
 #swy-- new sounds for rank promotion made by Merlkir
 ("new_rank_evil", sf_2d|sf_vol_7, ["new_rank_evil.wav"]),
@@ -353,4 +353,10 @@ sounds = [
 ("woman_yell",sf_priority_5|sf_vol_10, ["woman_yell_1.ogg", "woman_yell_2.ogg"]),  
 
 ("ghost_ambient_long"         ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["ghost_ambient_long02.wav"]),
+
+("bear_strike",   sf_priority_6|sf_vol_10, ["warg_howl02.wav", "warg_howl03.wav", "troll_growl.wav",]),
+("spider_strike", sf_priority_6|sf_vol_10, ["spider_battle01.wav", "trollSnarl.wav",]),
+("wolf_strike",   sf_priority_6|sf_vol_10, ["warg_growl01.wav", "trollSnarl.wav",]),
+
+
 ]

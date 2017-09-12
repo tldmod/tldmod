@@ -2285,7 +2285,7 @@ animations = [
    [0.25, "anim_horse", 600, 601, arf_use_stand_progress|arf_blend_in_5, 0, (0, 0, 0), 0.0],
   ],
 
- #["warg_leapattack", acf_enforce_lowerbody|acf_displace_position,  amf_client_prediction,
+#["warg_leapattack", acf_enforce_lowerbody|acf_displace_position,  amf_client_prediction,
 #	[1.0, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
 #  ],
 
@@ -2293,7 +2293,7 @@ animations = [
    [1.2, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
   ],
 
-# Animal attack anims... (cppcoder, merlkir)
+# Animal attack anims... (cppcoder, merlkir) - Fixed by Kham
 
  ["bear_slap_right", acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.3, "bear_slap_right", 1, 45, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]],
  ["bear_uppercut",   acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play|amf_client_prediction, [1.3, "bear_uppercut", 44, 93, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]],
