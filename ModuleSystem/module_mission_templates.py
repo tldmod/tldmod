@@ -572,7 +572,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   tld_animals_init,
   tld_animal_strikes,
   tld_remove_riderless_animals,
-] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights #+ tld_spawn_battle_animals
 
 
 tld_siege_battle_scripts = [

@@ -2062,14 +2062,18 @@ ai_scripts = [
         (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
         (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
         (gt, ":party_no", 0),
+        (party_is_active, ":party_no"),
         (party_slot_eq, ":party_no", slot_party_following_player, 0),
         (store_faction_of_party, ":faction_no", ":party_no"),
         (assign, ":continue", 1),
-        (try_begin),
-          (faction_slot_eq, ":faction_no", slot_faction_marshall, ":troop_no"), # do not calculate AI if troop is marshall.
-          (neg|faction_slot_eq, ":faction_no", slot_faction_ai_state, sfai_default),
-          (assign, ":continue", 0),
-        (try_end),
+
+        # Kham Test - Let's have the marshall's relative strenght be calculated, but not have their AI changed.
+        #(try_begin),
+        #  (faction_slot_eq, ":faction_no", slot_faction_marshall, ":troop_no"), # do not calculate AI if troop is marshall.
+        #  (neg|faction_slot_eq, ":faction_no", slot_faction_ai_state, sfai_default),
+        #  (assign, ":continue", 0),
+        #(try_end),
+
         (try_begin),
           (store_current_hours, ":cur_time"),
           (party_slot_ge, ":party_no", slot_party_follow_player_until_time, ":cur_time"), # MV: don't calc if following orders by player
@@ -2096,8 +2100,18 @@ ai_scripts = [
 		(eq, ":party_fit_for_battle", 0),
 		(assign, ":party_fit_for_battle", 1),
 	(try_end),
-          (store_div, "$ratio_of_prisoners", ":num_prisoners", ":party_fit_for_battle"),
+        (store_div, "$ratio_of_prisoners", ":num_prisoners", ":party_fit_for_battle"),
         (try_end),
+        
+        #Kham - We insert the exception here instead
+        (try_begin),
+          (faction_slot_eq, ":faction_no", slot_faction_marshall, ":troop_no"), # do not calculate AI if troop is marshall.
+          (neg|faction_slot_eq, ":faction_no", slot_faction_ai_state, sfai_default),
+          (assign, ":continue", 0),
+        (try_end),
+
+        (eq, ":continue", 1),
+        
         (call_script, "script_kingdom_hero_decide_next_ai_state_follow_or_not", ":troop_no"),
         (party_slot_eq, ":party_no", slot_party_commander_party, -1),
         (call_script, "script_kingdom_hero_decide_next_ai_state", ":troop_no"),
