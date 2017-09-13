@@ -2592,12 +2592,13 @@ scene_props = [
     ]),
 ], 1500), #500 hit points
 
+("rope_bridge",0,"rope_bridge_new","bo_rope_bridge_new", []),
+
 ] + (is_a_wb_sceneprop==1 and [  #WB only props
 ("tree_shelter",0,"tree_shelter_a","bo_tree_shelter_a", []),
 ("tree_house",0,"tree_house_a.1","bo_tree_house_a", []),
 ("rock_bridge",0,"rock_bridge_a","bo_rock_bridge_a", []),
 ("suspension_bridge",0,"suspension_bridge_a","bo_suspension_bridge_a", []),
-("rope_bridge",0,"rope_bridge_15m","bo_rope_bridge_15m", []),
 ("arabian_tent_umbar",0,"arabian_tent_umbar","bo_arabian_tent", []),
 ("arabian_tent_umbar_b",0,"arabian_tent_umbar_b","bo_arabian_tent_b", []),
 ("arena_awning",0,"arena_block_j_awning","bo_awning", []),
