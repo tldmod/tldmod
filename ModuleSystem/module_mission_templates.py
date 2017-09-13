@@ -445,7 +445,7 @@ tld_animal_strikes = (
         (assign, ":agents_to_damage", 1),
       (else_try),
         (eq, ":agent_trp", "trp_wolf"),
-        (store_random_in_range, reg0, 5, 10), #Kham - reduced from 10, 15, cause there are a lot of wolves
+        (store_random_in_range, reg0, 3, 11), #Kham - reduced from 10, 15, cause there are a lot of wolves
         (assign, ":hit_anim", "anim_strike_legs_front"),
         (assign, ":agents_to_damage", 1),
       (else_try),
@@ -494,7 +494,9 @@ tld_remove_riderless_animals =  (
 
 tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
-  (ti_on_agent_spawn, 0,0, [],
+  (ti_on_agent_spawn, 0,0, [
+    (store_random_in_range, ":rnd", 0, 100),
+    (le, ":rnd", 45)], #45% chance to spawn a wolf
     [
       (store_trigger_param_1, ":agent"),
 
@@ -572,7 +574,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   tld_animals_init,
   tld_animal_strikes,
   tld_remove_riderless_animals,
-] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights #+ tld_spawn_battle_animals
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals
 
 
 tld_siege_battle_scripts = [
