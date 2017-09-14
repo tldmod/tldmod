@@ -2987,7 +2987,7 @@ mission_templates = [ # not used in game
    (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
    (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
      (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team right flank
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
    (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
@@ -3080,7 +3080,7 @@ mission_templates = [ # not used in game
       (val_add,":atkteam",2),
       (val_add,":entry",1),
       (lt,":num_attackers",10),
-      (add_reinforcements_to_entry, ":entry", 12),
+      (add_reinforcements_to_entry, ":entry", 8),
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
@@ -3092,7 +3092,7 @@ mission_templates = [ # not used in game
       (val_add,":defteam",2),
       (val_add,":entry",1),
       (lt,":num_defenders",14),
-      (add_reinforcements_to_entry, ":entry", 10), #TLD, was 4, 7
+      (add_reinforcements_to_entry, ":entry", 7), #TLD, was 4, 7
       (val_add,"$defender_reinforcement_stage",1),
     (try_end),
     (try_begin),
