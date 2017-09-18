@@ -7463,6 +7463,7 @@ scripts = [
       (assign, ":dist", 0),
       (store_faction_of_party, ":faction_no", ":party_no"),
       (try_for_range, ":cur_center", centers_begin, centers_end),
+      	(neq, ":cur_center", "p_town_henneth_annun"), #Don't allow Henneth Annun to be a target of quests - Kham
         (party_is_active, ":cur_center"), #TLD
 		(party_slot_eq, ":cur_center", slot_center_destroyed, 0), # TLD
         (store_faction_of_party, ":cur_faction", ":cur_center"),

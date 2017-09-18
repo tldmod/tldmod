@@ -4991,6 +4991,9 @@ spr_orc_gate_destructible 32768 1500 orc_gate_destructible bo_orc_gate_destructi
 -42  5 600 1 141 1969 3 29 1 3 1969 3 30 1 10 1780 2 1 39 1711 2 144115188075856128 1 
 
 
+spr_rope_bridge 0 0 rope_bridge_new bo_rope_bridge_new 0
+
+
 spr_tree_shelter 0 0 tree_shelter_a bo_tree_shelter_a 0
 
 
@@ -5001,9 +5004,6 @@ spr_rock_bridge 0 0 rock_bridge_a bo_rock_bridge_a 0
 
 
 spr_suspension_bridge 0 0 suspension_bridge_a bo_suspension_bridge_a 0
-
-
-spr_rope_bridge 0 0 rope_bridge_15m bo_rope_bridge_15m 0
 
 
 spr_arabian_tent_umbar 0 0 arabian_tent_umbar bo_arabian_tent 0
