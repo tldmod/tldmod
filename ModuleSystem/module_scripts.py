@@ -7748,7 +7748,7 @@ scripts = [
 	  (try_begin),(eq, reg0, "p_town_minas_tirith"), (assign, ":sight_range", 3.5), #InVain: Slightly reduced, was 4
 	  (else_try), (eq, reg0,  "p_town_erebor"), (assign, ":sight_range", 4),
 	  (else_try), (eq, reg0,  "p_town_isengard"), (assign, ":sight_range", 6),
-	  (else_try), (eq, reg0,  "p_town_hornburg"), (assign, ":sight_range", 1.9), #InVain: Customised so we get both the Hornburg landmark and Hemls Deep region scenes.
+	  (else_try), (eq, reg0,  "p_town_hornburg"), (assign, ":sight_range", 3), #InVain: Customised so we get both the Hornburg landmark and Hemls Deep region scenes.
 	  (else_try), (eq, reg0,  "p_town_dol_amroth"), (assign, ":sight_range", 5), #InVain
 	  (else_try), (eq, reg0,  "p_town_umbar_camp"), (assign, ":sight_range", 8), #InVain
 	  (else_try), (eq, reg0,  "p_town_linhir"), (assign, ":sight_range", 8), #InVain
@@ -10077,7 +10077,7 @@ scripts = [
 		# helm's deep?
 		(party_get_position,pos20,"p_town_hornburg"),
 		(get_distance_between_positions, ":dist", pos20, pos1),
-		(le, ":dist", 420),
+		(le, ":dist", 700),
 		(assign, reg1, region_hornburg),
 	(else_try),
 		# harrowdale? (valley where edoras is)
