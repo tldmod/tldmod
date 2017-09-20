@@ -1,4 +1,4 @@
-173
+175
 grass 6442469688324 6
  PW_grass_a_xx  0
  PW_grass_b_xx  0
@@ -643,7 +643,7 @@ grass_flower_yellow_nofade 0 2
  PW_grass_flower_e_xx  0
 thranduil_ivy_single 0 1
  thranduil_ivy_single  0
-dead_uruk 0 10
+dead_uruk 0 8
  dead_uruk_1  0
  dead_uruk_2  0
  dead_uruk_3  0
@@ -652,9 +652,11 @@ dead_uruk 0 10
  dead_uruk_6  0
  dead_uruk_7  0
  dead_uruk_8  0
- dead_uruk_9  0
- dead_uruk_10  0
-dead_orc 0 10
+dead_uruk_sitting 0 3
+ dead_uruk_sitting_1  0
+ dead_uruk_sitting_2  0
+ dead_uruk_sitting_3  0
+dead_orc 0 8
  dead_orc_1  0
  dead_orc_2  0
  dead_orc_3  0
@@ -662,6 +664,8 @@ dead_orc 0 10
  dead_orc_5  0
  dead_orc_6  0
  dead_orc_7  0
- dead_orc_8  0
- dead_orc_9  0
- dead_orc_10  0			   
+ dead_orc_8  0	
+dead_orc_sitting 0 3
+ dead_orc_sitting_1  0
+ dead_orc_sitting_2  0
+ dead_orc_sitting_3  0	 

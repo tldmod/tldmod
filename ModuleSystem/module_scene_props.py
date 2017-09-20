@@ -1021,7 +1021,7 @@ scene_props = [
 ("ramp_14m",0,"ramp_14m","bo_ramp_14m", []),
 
 ("siege_ladder_12m",0,"siege_leadder_12m","bo_siege_leadder_12m", []),
-("siege_ladder_14m",0,"siege_leadder_14m","bo_siege_leadder_14m", []),
+("siege_ladder_14m",0,"siege_ladder_evil_14m","bo_siege_leadder_14m", []),
 
 ("portcullis",0,"portcullis_a","bo_portcullis_a", []),
 ("portcullis_E",0,"portcullis_a","0", []),
@@ -2357,11 +2357,11 @@ scene_props = [
 ("horse_warg_1D",sokf_invisible,"warg_1D","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),(prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
   (spawn_horse,"itm_warg_1d", 0),(agent_set_stand_animation, reg0, "anim_horse_stand")])]),
-("troop_human_prisoner",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+("troop_human_prisoner",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
     (spawn_agent, "trp_human_prisoner"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground")])]),
-("troop_guard_sitting",sokf_invisible,"cabbage_b","0", [(ti_on_init_scene_prop,[
+("troop_guard_sitting",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -2618,7 +2618,7 @@ scene_props = [
 ( "tannery_hide_b"                             ,0,"tannery_hide_b","bo_tannery_hide_b",[]),
 ] or []) + [ #WB only props end
 
-("troop_civilian",sokf_invisible,"JB_arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
+("troop_civilian",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -2640,7 +2640,7 @@ scene_props = [
 
   (spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_stand_townguard"),(store_random_in_range, reg6, 0, 100),(agent_set_animation_progress, reg0, reg6),])]),
 	
-("troop_civilian_sitting_ground",sokf_invisible,"JB_arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("troop_civilian_sitting_ground",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),
@@ -2659,7 +2659,7 @@ scene_props = [
 			(try_end),
 	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_ground"),])]),
 	
-("troop_civilian_sitting_chair",sokf_invisible,"JB_arrow_helper_blue","0", [(ti_on_init_scene_prop,[
+("troop_civilian_sitting_chair",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[
     (store_trigger_param_1, ":instance_no"),
     (lt, "$g_encountered_party_2", 0), #don't spawn guards in siege battles
     (prop_instance_get_position, pos1, ":instance_no"), (set_spawn_position, pos1),

@@ -1005,9 +1005,13 @@ fauna_kinds = [
    ['dead_uruk_5', '0'],
    ['dead_uruk_6', '0'],
    ['dead_uruk_7', '0'],
-   ['dead_uruk_8', '0'],
-   ['dead_uruk_9', '0'],
-   ['dead_uruk_10', '0']]), 
+   ['dead_uruk_8', '0'],]), 
+   
+ ('dead_uruk_sitting',
+  0,
+  [['dead_uruk_sitting_1', '0'],
+   ['dead_uruk_sitting_2', '0'],
+   ['dead_uruk_sitting_3', '0'],]), 
  
  ('dead_orc',
   0,
@@ -1018,9 +1022,13 @@ fauna_kinds = [
    ['dead_orc_5', '0'],
    ['dead_orc_6', '0'],
    ['dead_orc_7', '0'],
-   ['dead_orc_8', '0'],
-   ['dead_orc_9', '0'],
-   ['dead_orc_10', '0']]), 
+   ['dead_orc_8', '0'],]), 
+   
+ ('dead_orc_sitting',
+  0,
+  [['dead_orc_sitting_1', '0'],
+   ['dead_orc_sitting_2', '0'],
+   ['dead_orc_sitting_3', '0'],]), 
    ]
 
 
