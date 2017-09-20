@@ -1096,6 +1096,18 @@ triggers = [
 		(position_set_y,pos1,-435),
 		
 		(party_set_position, "p_town_dunland_camp", pos1),
+		
+		(set_fixed_point_multiplier, 10),
+		(position_set_x,pos1,-542),
+		(position_set_y,pos1,-130),
+		
+		(party_set_position, "p_town_khand_camp", pos1),
+		
+		(set_fixed_point_multiplier, 10),
+		(position_set_x,pos1,-480),
+		(position_set_y,pos1, 600),
+		
+		(party_set_position, "p_town_harad_camp", pos1),												  
     
 	#	reveal evil camps through the land
 		(try_for_range,":center",centers_begin,centers_end),

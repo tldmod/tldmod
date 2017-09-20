@@ -245,11 +245,11 @@ simple_triggers = [
          #TLD: above replaced by this
          (party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
          (party_get_num_companions, ":garrison_size", ":center_no"),
-         (gt, ":garrison_limit", ":garrison_size"),
          
          (store_random_in_range, ":chance", 0, 100), #InVain Reduce reinforcements for centers
          	(try_begin),
-         	(lt, ":chance", 40),
+			(gt, ":garrison_limit", ":garrison_size"),
+         	(lt, ":chance", 30),
          		(call_script, "script_cf_reinforce_party", ":center_no"),
 		 	(try_end),
          # (val_sub, ":cur_wealth", reinforcement_cost),
@@ -462,14 +462,14 @@ simple_triggers = [
            (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
            (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
            (try_begin), #no income
+             (this_or_next|eq, "$tld_war_began", 0), #InVain: No incaome before the war starts
              (this_or_next|eq, "$tld_option_regen_rate", 2), #Battles only
              (eq, "$tld_option_regen_rate", 3), #None
              (assign, ":strength_income", 0),
            (else_try), #halved income
-             (this_or_next|eq, "$tld_war_began", 0),
              (this_or_next|eq, "$tld_option_regen_rate", 1),
              (le, ":strength", "$tld_option_regen_limit"), #Kham - Let weak factions regen with half income
-             (val_div, ":strength_income", 2), #halve income before the War
+             (val_div, ":strength_income", 2),
              (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
              (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
            (try_end),

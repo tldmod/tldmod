@@ -73,12 +73,12 @@ party_templates = [
 
 #TLD Scouts
 #MV: in general, average strength should be 30-60 (except Beornings who have scouts only)
-("gondor_scouts"      ,"Gondorian Scouts",icon_footman_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_squire_of_gondor,1,1),(trp_bowmen_of_gondor,3,7),(trp_gondor_militiamen,3,7)]), #34-74
+("gondor_scouts"      ,"Gondorian Scouts",icon_footman_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_squire_of_gondor,1,1),(trp_bowmen_of_gondor,3,5),(trp_gondor_militiamen,3,5)]), #34-74
 ("blackroot_auxila" ,"Blackroot Auxilia",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_master_blackroot_vale_archer,1,1),(trp_veteran_blackroot_vale_archer,0,3),(trp_blackroot_vale_archer,4,7)]), #32-71
 ("lamedon_auxila"  ,"Lamedon Auxilia"   ,icon_footman_lamedon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_warrior_of_lamedon,1,1),(trp_veteran_of_lamedon,1,5),(trp_footman_of_lamedon,4,8)]), #31-71
-("lossarnach_auxila","Lossarnach Auxilia",icon_lossarnach_axeman_icon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_heavy_lossarnach_axeman,1,1),(trp_vet_axeman_of_lossarnach,0,3),(trp_axeman_of_lossarnach,2,6),(trp_woodsman_of_lossarnach,4,10)]), #25-71
+("lossarnach_auxila","Lossarnach Auxilia",icon_lossarnach_axeman_icon|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_heavy_lossarnach_axeman,1,1),(trp_vet_axeman_of_lossarnach,0,3),(trp_axeman_of_lossarnach,2,4),(trp_woodsman_of_lossarnach,4,8)]), #25-71
 ("pinnath_gelin_auxila","Pinnath Gelin Auxilia",icon_footman_pinnath|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_pinnath_gelin_bowman,1,3),(trp_pinnath_gelin_spearman,1,2),(trp_pinnath_gelin_plainsman,3,6)]), #30-69
-("ranger_scouts"       ,"Ranger Scouts" ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_veteran_ranger_of_ithilien,1,3),(trp_ranger_of_ithilien,3,6)]), #43-102 more punch for rangers, elites operating in enemy territory
+("ranger_scouts"       ,"Ranger Scouts" ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_veteran_ranger_of_ithilien,1,2),(trp_ranger_of_ithilien,2,5)]), #43-102 more punch for rangers, elites operating in enemy territory
 
 ("rohan_scouts"    ,"Rohirrim Scouts"      ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,scout_personality,[(trp_elite_skirmisher_of_rohan,1,1),(trp_veteran_skirmisher_of_rohan,1,4),(trp_skirmisher_of_rohan,3,5)]), #43-82 rohan good at scouting
 ("lorien_scouts"   ,"Lothlorien Scouts"    ,icon_lorien_elf_a |carries_goods(1)|pf_show_faction,0,fac_lorien  ,scout_personality,[(trp_lothlorien_veteran_warden,1,2),(trp_lothlorien_veteran_scout,3,6),(trp_lothlorien_scout,3,6)]), #31-62
@@ -96,8 +96,8 @@ party_templates = [
 ("isengard_scouts_warg","Isengard Warg Riders",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_white_hand_rider,1,1),(trp_warg_rider_of_isengard,3,6),(trp_wolf_rider_of_isengard,3,6)]), #32-56 fast but weaker
 ("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman  |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_black_snake_horse_archer,1,1),(trp_harad_horse_archer,1,4),(trp_harondor_scout,4,8)]), #31-65
 ("dunland_scouts"   ,"Dunlending Scouts"   ,icon_dunlander       |carries_goods(1)|pf_show_faction,0,fac_dunland ,scout_personality,[(trp_dunnish_raven_rider,5,10)]), #20-40 fast weaklings
-("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair   |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_corsair_veteran_raider,1,1),(trp_marksman_of_umbar,2,4),(trp_militia_of_umbar,3,7)]), #33-61
-("khand_scouts"     ,"Easterling Scouts"   ,icon_cataphract      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_easterling_veteran_skirmisher,1,1),(trp_easterling_horseman,2,4),(trp_easterling_rider,3,6)]), #33-57 fast and capable
+("umbar_scouts"     ,"Corsair Scouts"      ,icon_umbar_corsair   |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_corsair_veteran_raider,1,2),(trp_marksman_of_umbar,2,4),(trp_militia_of_umbar,3,8)]), #33-61
+("khand_scouts"     ,"Easterling Scouts"   ,icon_cataphract      |carries_goods(1)|pf_show_faction,0,fac_umbar   ,scout_personality,[(trp_easterling_veteran_skirmisher,1,3),(trp_easterling_horseman,2,4),(trp_easterling_rider,3,6)]), #33-57 fast and capable
 ("moria_scouts"     ,"Moria Scouts"        ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_moria   ,scout_personality,[(trp_bolg_clan_rider,1,1),(trp_warg_rider_of_moria,2,5),(trp_wolf_rider_of_moria,3,6)]), #27-51 fast
 ("guldur_scouts"    ,"Dol Guldur Scouts"   ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_guldur  ,scout_personality,[(trp_orc_of_guldur,3,4),(trp_orc_snaga_of_guldur,8,12)]), #32-61
 ("gundabad_scouts","Gundabad Scouts",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_gundabad,scout_personality,[(trp_goblin_north_clan_rider,1,2),(trp_warg_rider_gundabad,3,6),(trp_goblin_rider_gundabad,6,10)]), #41-76, was 30-54 fast
@@ -112,7 +112,7 @@ party_templates = [
 ("woodelf_raiders" ,"Mirkwood Foragers"  ,icon_mirkwood_elf |carries_goods(2)|pf_show_faction,0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman,1,1),(trp_greenwood_veteran_spearman,4,10),(trp_greenwood_archer,5,10)]), #73-150
 ("dale_raiders"    ,"Dale Foragers"      ,icon_generic_knight  |carries_goods(2)|pf_show_faction,0,fac_dale    ,soldier_personality,[(trp_girions_guard_of_dale,1,1),(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,12)]), #64-144
 ("dwarf_raiders"   ,"Dwarven Foragers"   ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_expert_axeman,1,1),(trp_dwarven_hardened_warrior,4,12),(trp_dwarven_lookout,5,15)]), #66-162
-("ranger_raiders"  ,"Ranger Raiders"   ,icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_master_ranger_of_ithilien,1,1),(trp_veteran_ranger_of_ithilien,3,6),(trp_ranger_of_ithilien,5,10)]), #118-211 real raiders have more punch
+("ranger_raiders"  ,"Ranger Raiders"   ,icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_master_ranger_of_ithilien,1,3),(trp_veteran_ranger_of_ithilien,5,8),(trp_ranger_of_ithilien,5,10)]), #118-211 real raiders have more punch #InVain: 180-350 can attack Mordor supply trains
 #("beorning_raiders","Beorning Foragers" ,icon_axeman  |carries_goods(1),0,fac_beorn   ,soldier_personality,[(trp_blank,10,15),(trp_blank,10,15),(trp_blank,1,1)]),
 
 ("morgul_raiders"  ,"Morgul Raiders"    ,icon_orc           |carries_goods(1)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_fell_morgul_orc,1,1),(trp_morgul_orc,15,30),(trp_orc_archer_of_mordor,15,30)]), #98-188 better raiders
@@ -139,16 +139,16 @@ party_templates = [
 ("esgaroth_patrol","Esgaroth Patrol"  ,icon_ithilien_ranger|carries_goods(2)|pf_show_faction,0,fac_dale    ,soldier_personality,[(trp_girions_guard_of_dale,1,1),(trp_barding_bowmen_of_esgaroth,6,10),(trp_dale_billman,4,10),(trp_laketown_archer,10,15),(trp_laketown_scout,6,12)]), #242-518
 ("dwarf_patrol"   ,"Dwarven Patrol"   ,icon_dwarf          |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,soldier_personality,[(trp_longbeard_axeman,1,1),(trp_dwarven_bowman,8,16),(trp_dwarven_spearman,5,10),(trp_dwarven_axeman,8,20),(trp_dwarven_lookout,10,25)]), #257-542
 
-("ranger_patrol"  ,"Ranger Patrol"    ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_ithilien_leader,1,1),(trp_master_ranger_of_ithilien,4,8),(trp_veteran_ranger_of_ithilien,6,12),(trp_ranger_of_ithilien,8,20)]), #299-603
+("ranger_patrol"  ,"Ranger Patrol"    ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_ithilien_leader,1,1),(trp_master_ranger_of_ithilien,5,9),(trp_veteran_ranger_of_ithilien,8,14),(trp_ranger_of_ithilien,8,25)]), #299-603 #InVain 410-820 can attack lone hosts
 ("amroth_patrol" ,"Dol Amroth Patrol",icon_knight_dolamroth|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_dol_amroth_leader,1,1),(trp_swan_knight_of_dol_amroth,2,6),(trp_knight_of_dol_amroth,6,14),(trp_veteran_squire_of_dol_amroth,8,20),(trp_squire_of_dol_amroth,16,30)]), #241-541
 ("pelargir_patrol","Pelargir Patrol"  ,icon_footman_gondor |carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_pelargir_leader,1,1),(trp_pelargir_vet_marine,3,8),(trp_pelargir_vet_infantry,3,8),(trp_pelargir_marine,6,14),(trp_pelargir_infantry,6,14)]), #229-533
 ("lossarnach_patrol","Lossarnach Patrol",icon_lossarnach_axeman_icon|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_lossarnach_leader,1,1),(trp_axemaster_of_lossarnach,3,8),(trp_heavy_lossarnach_axeman,4,10),(trp_archer_of_gondor,8,20),(trp_axeman_of_lossarnach,8,20)]), #213-503
 ("brv_patrol"     ,"Blackroot Patrol" ,icon_ithilien_ranger|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_blackroot_leader,1,1),(trp_master_blackroot_vale_archer,4,8),(trp_veteran_blackroot_vale_archer,6,12),(trp_footman_of_blackroot_vale,8,16),(trp_blackroot_vale_archer,10,20)]), #255-485
 ("pinnath_patrol" ,"Pinnath Patrol"   ,icon_footman_pinnath|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_pinnath_leader,1,1),(trp_pinnath_gelin_archer,3,6),(trp_warrior_of_pinnath_gelin,3,6),(trp_pinnath_gelin_bowman,6,16),(trp_pinnath_gelin_spearman,8,20)]), #247-541
-("lamedon_patrol" ,"Lamedon Patrol"  ,icon_lamedon_horseman|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_lamedon_leader,1,1),(trp_knight_of_lamedon,3,6),(trp_champion_of_lamedon,3,6),(trp_warrior_of_lamedon,8,20),(trp_veteran_of_lamedon,10,24)]), #253-541
+("lamedon_patrol" ,"Lamedon Patrol"  ,icon_lamedon_horseman|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_lamedon_leader,1,1),(trp_knight_of_lamedon,6,14),(trp_champion_of_lamedon,3,6),(trp_warrior_of_lamedon,8,20),(trp_veteran_of_lamedon,10,24)]), #253-541 #InVain 270-600, added more cavalry
 
 # Used as patrols, except Dale 
-("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x4          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_uruk_mordor_standard_bearer,1,2),(trp_large_uruk_of_mordor,10,22),(trp_uruk_of_mordor,16,36),(trp_orc_of_mordor,20,40),(trp_orc_archer_of_mordor,40,60),(trp_olog_hai,0,3)]), #310-658
+("mordor_war_party"  ,"Mordor_War_Party"  ,icon_uruk_x4          |carries_goods(3)|pf_show_faction,0,fac_mordor  ,soldier_personality,[(trp_uruk_mordor_standard_bearer,1,2),(trp_large_uruk_of_mordor,10,22),(trp_uruk_of_mordor,16,36),(trp_orc_of_mordor,60,80),(trp_orc_archer_of_mordor,40,60),(trp_olog_hai,0,3)]), #310-658 #InVain 356-812 (new formula) added more fodder orcs to make fight more epic, but not so much harder.
 ("isengard_war_party","Isengard_War_Party",icon_wargrider_walk_x4|carries_goods(3)|pf_show_faction,0,fac_isengard,soldier_personality,[(trp_urukhai_standard_bearer,1,2),(trp_fighting_uruk_hai_berserker,3,6),(trp_fighting_uruk_hai_champion,3,6),(trp_fighting_uruk_hai_tracker,15,25),(trp_wolf_rider_of_isengard,5,10),(trp_armoured_troll,0,3)]), #275-550
 ("harad_war_party"   ,"Harad_War_Party"   ,icon_harad_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_harad_tiger_guard,2,4),(trp_fang_heavy_cavalry,2,4),(trp_gold_serpent_horse_archer,2,4),(trp_harad_archer,8,16),(trp_harondor_rider,10,20),(trp_harad_desert_warrior,20,40)]), #268-536
 ("dunland_war_party" ,"Dunlending_Warband",icon_dunlander_x3     |carries_goods(3)|pf_show_faction,0,fac_dunland ,soldier_personality,[(trp_dunnish_wolf_guard,2,4),(trp_dunnish_veteran_pikeman,6,12),(trp_dunnish_warrior,12,24),(trp_dunnish_raven_rider,10,20),(trp_dunnish_wildman,20,50)]), #214-448 weak
@@ -161,7 +161,7 @@ party_templates = [
 ("rhun_war_party"  ,"Rhun_War_Party"   ,icon_easterling_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_rhun   ,soldier_personality,[(trp_dorwinion_noble_of_rhun,2,4),(trp_rhun_heavy_noble_cavalry,5,10),(trp_rhun_veteran_swift_horseman,8,16),(trp_rhun_veteran_horse_archer,8,16),(trp_rhun_tribal_warrior,12,24),(trp_rhun_tribesman,18,36)]), #358-716 was 260-552
 
 ####TLD Companies (only Gondorian used, as a MT patrol)
-("gondor_company" ,"Minas Tirith Patrol",icon_knight_gondor |carries_goods(4)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_captain_of_gondor,1,1),(trp_veteran_knight_of_gondor,2,4),(trp_knight_of_gondor,4,8),(trp_gondor_veteran_swordsmen,10,20),(trp_veteran_archer_of_gondor,10,20),(trp_gondor_veteran_spearmen,10,20)]), #573-1121 elite, rare, overpowered
+("gondor_company" ,"Minas Tirith Patrol",icon_knight_gondor |carries_goods(4)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_captain_of_gondor,1,1),(trp_veteran_knight_of_gondor,2,4),(trp_knight_of_gondor,8,16),(trp_gondor_veteran_swordsmen,10,20),(trp_veteran_archer_of_gondor,10,20),(trp_gondor_veteran_spearmen,10,20)]), #573-1121 elite, rare, overpowered #InVain 754-1474 (new formula) added a few more knights
 ("rohan_company"   ,"Rohan Company"     ,icon_knight_rohan        ,0,fac_rohan   ,soldier_personality,[(trp_elite_rider_of_rohan,25,25),(trp_elite_skirmisher_of_rohan,25,25),(trp_elite_footman_of_rohan,25,25),(trp_eorl_guard_of_rohan,12,12),(trp_thengel_guard_of_rohan,12,12),(trp_captain_of_rohan,1,1)]),
 ("imladris_company","Rivendell Company" ,icon_rivendell_elf       ,0,fac_imladris,soldier_personality,[(trp_rivendell_infantry,20,33),(trp_rivendell_veteran_infantry,20,33),(trp_rivendell_elite_infantry,20,33),(trp_rivendell_royal_infantry,3,6),(trp_elf_captain_of_rivendell,1,1)]),
 ("lorien_company"  ,"Lothlorien Company",icon_lorien_elf_b        ,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_infantry,30,30),(trp_lothlorien_elite_infantry,30,30),(trp_lothlorien_veteran_warden,30,30),(trp_galadhrim_royal_warden,5,5),(trp_galadhrim_royal_swordsman,5,5),(trp_elf_captain_of_lothlorien,1,1)]),
@@ -238,9 +238,9 @@ party_templates = [
 
 ("gondor_reinf_d"    ,"_",0,0,fac_commoners,0,[(trp_knight_of_the_citadel,1,2), (trp_archer_of_the_tower_guard,2,4), (trp_swordsmen_of_the_tower_guard,1,2), (trp_guard_of_the_fountain_court,1,2),]), #MT garrison only
 
-("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_gondor_militiamen,3,6),(trp_gondor_commoner,2,4),(trp_footmen_of_gondor,1,2), (trp_bowmen_of_gondor,1,2)]),
-("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_bowmen_of_gondor,3,5),(trp_footmen_of_gondor,1,2),(trp_gondor_militiamen,1,2),(trp_gondor_noblemen,0,1),]), #T1 cav because it has a separate tree
-("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_archer_of_gondor,1,2),(trp_gondor_spearmen,2,3),(trp_gondor_swordsmen,0,1),(trp_veteran_squire_of_gondor,1,2),]),
+("gondor_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_gondor_militiamen,3,6),(trp_gondor_commoner,2,4),(trp_footmen_of_gondor,1,2), (trp_bowmen_of_gondor,1,2)]), #InVain: less commoners
+("gondor_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_bowmen_of_gondor,2,4),(trp_footmen_of_gondor,2,4),(trp_gondor_militiamen,1,2),(trp_gondor_noblemen,0,1),]), #T1 cav because it has a separate tree #InVain: more infantry, less archers
+("gondor_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_archer_of_gondor,0,1),(trp_gondor_spearmen,2,3),(trp_gondor_swordsmen,2,3),(trp_veteran_squire_of_gondor,1,2),]),
 ("pelargir_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_watchman,6,12),]), #no T1
 ("pelargir_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_marine,1,2),(trp_pelargir_infantry,1,2),(trp_pelargir_watchman,3,6),]), #no T3
 ("pelargir_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_pelargir_marine,2,5),(trp_pelargir_infantry,2,3),]),
@@ -272,7 +272,7 @@ party_templates = [
 ("isengard_reinf_c","_",0,0,fac_commoners,0,[(trp_warg_rider_of_isengard,1,2),(trp_large_uruk_hai_of_isengard,1,2),(trp_uruk_hai_pikeman,1,2),(trp_large_orc_of_isengard,1,2),(trp_large_orc_despoiler,1,2),]), #more T3 troops
 #Mordor - same as Isengard + Numenorean cavalry (8-16, 7-13, 5-10)
 ("mordor_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,3,6),(trp_orc_snaga_of_mordor,5,10),]),
-("mordor_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_orc_archer_of_mordor,2,4),(trp_large_orc_archer_of_mordor,2,4),(trp_uruk_of_mordor,2,3),(trp_orc_of_mordor,2,4),]),
+("mordor_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_orc_archer_of_mordor,1,3),(trp_large_orc_archer_of_mordor,1,3),(trp_uruk_of_mordor,2,3),(trp_orc_of_mordor,4,8),]), #InVain: less archers, more orcs.
 ("mordor_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_warg_rider_of_gorgoroth,1,2),(trp_large_uruk_of_mordor,1,1),(trp_uruk_slayer_of_mordor,0,1),(trp_large_orc_archer_of_mordor,1,2),(trp_large_orc_of_mordor,1,2),(trp_olog_hai,0,1),]),
 #Harad (7-14, 5-10, 4-8)
 ("harad_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_harondor_scout,1,2),(trp_far_harad_tribesman,1,2),(trp_harad_desert_warrior,5,10),]),

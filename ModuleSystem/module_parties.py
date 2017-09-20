@@ -70,7 +70,7 @@ parties = [
     ("town_erech"           ,"Erech",       icon_castle_gondor_small|pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 28.17,  9.34),[],170),
     ("town_pinnath_gelin"  ,"Pinnath_Gelin",icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( 50.82, 30.82),[],170),
     ("town_west_osgiliath","West_Osgiliath",icon_west_osgilliath    |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-58.19, 20.5 ),[],0),
-    ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun|pf_is_static|pf_show_faction, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-63.81,-14.05),[],170),
+    ("town_henneth_annun"  ,"Henneth_Annun",icon_henneth_annun|pf_is_static|pf_show_faction, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-62.89,-2.83),[],170),
     ("town_cair_andros"     ,"Cair_Andros", icon_cairandros         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,(-56.48,  3.55),[],170),
     ("town_calembel"        ,"Calembel",    icon_gondortown         |pf_tld_down, no_menu, pt_none, fac_gondor,0,ai_bhvr_hold,0,( -2.16, 30.86),[],50),
 # Rohan towns
