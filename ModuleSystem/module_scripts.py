@@ -1696,12 +1696,12 @@ scripts = [
 		(assign, ":garrison_strength", 13), 
 		(try_begin),
 			(party_slot_eq, ":center_no", slot_party_type, spt_town),
-			(assign, ":garrison_strength", 40),  #InVain, was 20, increased this to initially counter lowered reinforcement rate for towns.
+			(assign, ":garrison_strength", 50),  #InVain, was 20, increased this to initially counter lowered reinforcement rate for towns.
 		(try_end),
 		(try_begin), # TLD: capitals get more
 			(store_faction_of_party, ":center_faction", ":center_no"),
 			(faction_slot_eq, ":center_faction", slot_faction_capital, ":center_no"),
-			(assign, ":garrison_strength", 30), 
+			(assign, ":garrison_strength", 40), 
 		(try_end),
 		(party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
 		(try_for_range, ":unused", 0, ":garrison_strength"),
@@ -2503,7 +2503,7 @@ scripts = [
 						(call_script, "script_give_center_to_faction", ":root_defeated_party", ":winner_faction"),
 						(call_script, "script_order_best_besieger_party_to_guard_center", ":root_defeated_party", ":winner_faction"),
 						# add a small garrison
-						(try_for_range, ":unused", 0, 5),
+						(try_for_range, ":unused", 0, 10), #InVain: higher, to counter lowered reinforcement rate. Was 5
 							(call_script, "script_cf_reinforce_party", ":root_defeated_party"),
 						(try_end),
 					(try_end),
@@ -4810,9 +4810,13 @@ scripts = [
 #		  (eq,":s0",":s"),
 #		    (val_sub, ":strength",":party_value"),   # lesser parties dying can't shift faction strength through threshold
 #	    (try_end),
+          (try_begin),
+		  (ge, "$tld_war_began", 1), #Invain: no faction strength changes before war starts
 	      (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
+          (try_end),
           # add half victory points to the winner faction
           (try_begin),
+            (ge, "$tld_war_began", 1), #Invain: no faction strength changes before war starts
             (neq, "$tld_option_regen_rate", 3), #None - no regen, even from battles
             (is_between, ":winner_faction", kingdoms_begin, kingdoms_end),
             (faction_get_slot,":winner_strength",":winner_faction",slot_faction_strength_tmp),
