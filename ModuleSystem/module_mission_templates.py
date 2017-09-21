@@ -2971,33 +2971,46 @@ mission_templates = [ # not used in game
 
 ( "castle_attack_walls_ladder",mtf_battle_mode,-1,
   "You attack the walls of the castle...",
-    [# Attacker initial spawn point (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,8,[]),
-     # Initial defender spawn point (was 11)
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
+    [
+
+    ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
+    
+    # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
+     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,2,[]),
+     (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,2,[]),
+     
+     # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+     (40,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
-     (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
-     (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
+     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
+     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
+
      # Defender reinforcements (was 15)
      (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry
-     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
-     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (45,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (46,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+
      # Attacker reinforcements (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry
-     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
-     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,4,[]),
+     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,4,[]),
+     
      # defender archer target positions (was 40-43)
      (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
    (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-   (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
-     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
-   (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
+     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
+     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
+   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
   ],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
@@ -3196,26 +3209,32 @@ mission_templates = [ # not used in game
     (try_for_range, ":slot",0,3),
       (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
       (troop_set_slot,"trp_no_troop",":slot",0),
+      #(display_message, "@DEBUG: Slot Set to 0"),
     (try_end),
     (try_for_agents, ":agent"),
       (agent_is_alive,":agent"),
       (agent_is_defender,":agent"),
       (agent_get_position, pos0, ":agent"),
-      (try_for_range, ":entry",41,44),
-        (store_sub,":slot",":entry",41),
+      (try_for_range, ":entry",41,44), 
+        (store_sub,":slot",":entry",41), #0, 1, 2
         (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # proceed with counting defenders if choke not captured yet
+        #(display_message, "@found valid defender"),
         (entry_point_get_position, pos10, ":entry"), # count defenders in proximity of choke points
         (get_distance_between_positions, ":dist", pos0, pos10),
         (lt,":dist", 400),
         (troop_get_slot,":x","trp_no_troop",":slot"), #+1 defender found
+        (val_add, ":x", 1), #Kham - Add this here, to count number of defenders.
+        #(display_message, "@DEBUG: +1 defender found", color_good_news),
         (troop_set_slot,"trp_no_troop",":slot",":x"),
       (try_end),
     (try_end),
         (set_show_messages, 0),
     (try_for_range, ":slot",0,3),
-      (neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will
+      (neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will (if not > = 2, charge)
       (troop_set_slot,"trp_no_troop",":slot",-1),
       (store_mul,":defteam",":slot",2),(store_add,":atkteam",":defteam",1),
+      (assign, reg11, ":defteam"), (assign, reg12, ":atkteam"),
+      #(display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
       (team_give_order, ":defteam", grc_everyone, mordr_charge),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
       (store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"),

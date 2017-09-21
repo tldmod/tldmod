@@ -1,5 +1,5 @@
 questsfile version 1
-44
+65
 qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_{him/her}. 
@@ -43,4 +43,25 @@ qst_deliver_gift Deliver_a_{s4}_of_{s1}_from_{s2}_to_{s3} 2 You_have_requested_t
 qst_ring_hunters Ring_Hunters 0 {!}None 
 qst_ring_hunters2 Ring_Hunters_-_Completed 0 {!}None 
 qst_deliver_message_hobbit Concerning_Hobbits 0 {!}None 
+qst_blank_quest_01 Placeholder 0 {!}Placeholder 
+qst_blank_quest_02 Placeholder 0 {!}Placeholder 
+qst_blank_quest_03 Placeholder 0 {!}Placeholder 
+qst_blank_quest_04 Placeholder 0 {!}Placeholder 
+qst_blank_quest_05 Placeholder 0 {!}Placeholder 
+qst_blank_quest_06 Placeholder 0 {!}Placeholder 
+qst_blank_quest_07 Placeholder 0 {!}Placeholder 
+qst_blank_quest_08 Placeholder 0 {!}Placeholder 
+qst_blank_quest_09 Placeholder 0 {!}Placeholder 
+qst_blank_quest_10 Placeholder 0 {!}Placeholder 
+qst_blank_quest_11 Placeholder 0 {!}Placeholder 
+qst_blank_quest_12 Placeholder 0 {!}Placeholder 
+qst_blank_quest_13 Placeholder 0 {!}Placeholder 
+qst_blank_quest_14 Placeholder 0 {!}Placeholder 
+qst_blank_quest_15 Placeholder 0 {!}Placeholder 
+qst_blank_quest_16 Placeholder 0 {!}Placeholder 
+qst_blank_quest_17 Placeholder 0 {!}Placeholder 
+qst_blank_quest_18 Placeholder 0 {!}Placeholder 
+qst_blank_quest_19 Placeholder 0 {!}Placeholder 
+qst_blank_quest_20 Placeholder 0 {!}Placeholder 
+qst_blank_quest_21 Placeholder 0 {!}Placeholder 
 qst_quests_end Quests_End 0 . 

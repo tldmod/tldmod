@@ -263,6 +263,99 @@ quests = [
   "{!}None"
 ),
 
+
+##Placeholder Quests Start
+
+("blank_quest_01", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_02", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_03", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_04", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_05", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_06", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_07", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_08", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_09", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_10", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_11", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_12", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_13", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_14", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_15", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+# Lets put mayor quests here
+
+
+("blank_quest_16", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_17", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_18", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_19", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_20", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+("blank_quest_21", "Placeholder", 0,
+  "{!}Placeholder"
+),
+
+##Placeholder Quests END
+
+
  # ### TLD traits
 # ( "trait_elf_friend", "*TRAIT*_-Elf_Friend", 0, 
   # "You_have_become_highly_esteemed_by_the_Elves_and_they_now_regard_you_as_a_trusted_ally._The_influence_cost_to_recruit_elves_has_been_reduced_and_you_may_now_attempt_to_give_orders_to_elven_armies."
