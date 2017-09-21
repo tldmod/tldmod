@@ -2991,15 +2991,15 @@ mission_templates = [ # not used in game
      (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
 
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry
+     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
      (45,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
      (46,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
 
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
      (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,4,[]),
      (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,4,[]),
-     
+
      # defender archer target positions (was 40-43)
      (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
@@ -3094,25 +3094,27 @@ mission_templates = [ # not used in game
   (0, 2, ti_once, [], [(try_for_agents, ":agent_no"),(agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),(try_end)]),
   (1, 0, 5,[(lt,"$attacker_reinforcement_stage",15)],[
     (assign,":atkteam","$attacker_team"),
-    (assign,":entry",7), #iterate through 8 9 10
+    (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
       (store_normalized_team_count,":num_attackers",":atkteam"),
       (val_add,":atkteam",2),
       (val_add,":entry",1),
       (lt,":num_attackers",10),
       (add_reinforcements_to_entry, ":entry", 8),
+      (display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
   (3, 0, 5, [(lt,"$defender_reinforcement_stage", 15),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[
     (assign,":defteam","$defender_team"),
-    (assign,":entry",4), #iterate through 5 6 7
+    (assign,":entry",8), #iterate through 5 6 7 - Changed to 9,10,11
     (try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
       (store_normalized_team_count,":num_defenders",":defteam"),
       (val_add,":defteam",2),
       (val_add,":entry",1),
       (lt,":num_defenders",14),
       (add_reinforcements_to_entry, ":entry", 7), #TLD, was 4, 7
+      (display_message, "@Defenders Reinforced", color_good_news),
       (val_add,"$defender_reinforcement_stage",1),
     (try_end),
     (try_begin),
@@ -3228,13 +3230,13 @@ mission_templates = [ # not used in game
         (troop_set_slot,"trp_no_troop",":slot",":x"),
       (try_end),
     (try_end),
-        (set_show_messages, 0),
+        #(set_show_messages, 0),
     (try_for_range, ":slot",0,3),
       (neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will (if not > = 2, charge)
       (troop_set_slot,"trp_no_troop",":slot",-1),
       (store_mul,":defteam",":slot",2),(store_add,":atkteam",":defteam",1),
       (assign, reg11, ":defteam"), (assign, reg12, ":atkteam"),
-      #(display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
+      (display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
       (team_give_order, ":defteam", grc_everyone, mordr_charge),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
       (store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"),
@@ -3242,7 +3244,7 @@ mission_templates = [ # not used in game
       (team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
       (team_set_order_position, ":atkteam", grc_archers, pos10),
     (try_end),
-    (set_show_messages, 1),
+    #(set_show_messages, 1),
    ]),
   ##      (15, 0, 0,
   ##       [
