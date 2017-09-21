@@ -984,7 +984,7 @@ jump_to_scene                          = 1910 # (jump_to_scene,<scene_id>,<entry
 set_jump_mission                       = 1911 # (set_jump_mission,<mission_template_id>),
 set_jump_entry                         = 1912 # (set_jump_entry,<entry_no>),
 start_mission_conversation             = 1920 # (start_mission_conversation,<troop_id>),
-add_reinforcements_to_entry            = 1930 # (add_reinforcements_to_entry,<mission_template_entry_no>,<value>),
+add_reinforcements_to_entry            = 1930 # (add_reinforcements_to_entry,<mission_template_spawn_record>,<value>),
 
 mission_enable_talk                    = 1935   # (mission_enable_talk), #can talk with troops during battles
 mission_disable_talk                   = 1936   # (mission_disable_talk), #disables talk option for the mission

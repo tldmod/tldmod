@@ -2973,44 +2973,40 @@ mission_templates = [ # not used in game
   "You attack the walls of the castle...",
     [
 
-    ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
+    ## Kham - Distributed Teams using the mtef_team_X flag. 0 (left), 2 (center), 4(right) are defenders; 1 (left), 3 (center), 5 (right) are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
     
-    # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]),
-     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,2,[]),
-     (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,2,[]),
-     
-     # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
-     (40,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
-     (40,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+    # Attacker initial spawn point (was 0)
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,8,[]),
+
+    # Initial defender spawn point (was 11)
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]),
 
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
-     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
-     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
+     (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
+     (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
 
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
-     (45,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
-     (46,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),  ##spawn record 5 for add_reinforcements_to_entry - Kham
+     (45,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),  ##spawn record 6 for add_reinforcements_to_entry - Kham
+     (46,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),  ##spawn record 7 for add_reinforcements_to_entry - Kham
 
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,4,[]),
-     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,4,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), ##spawn record 8 for add_reinforcements_to_entry - Kham
+     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), ##spawn record 9 for add_reinforcements_to_entry - Kham
+     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), ##spawn record 10 for add_reinforcements_to_entry - Kham
 
      # defender archer target positions (was 40-43)
      (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
      (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
      (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
    (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
-     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
-     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
-   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
+     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
+     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
+   (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
   ],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
@@ -3053,6 +3049,13 @@ mission_templates = [ # not used in game
       (call_script, "script_count_mission_casualties_from_agents"),
       (finish_mission,0),
     ]),
+
+  ## This block starts the commands of both attackers and defenders at the beginning of battle.
+  ## Both Attackers & Defenders are asked to move towards Entry Point 41, 42, 43
+  ## Attacker Archers are asked to HOLD at entry point 60,61,62.
+  ## I added Siege order exception (charge) to attackers for Umbar Camp, so that they do not get stuck on boats.
+  ## I also added an exception to Dol Amroth, but this may no longer be needed.
+
   (3, 0, 0, [(lt,"$telling_counter",3)],[ # need to repeat orders several times for the bitches to listen
     (val_add, "$telling_counter",1),
     (set_show_messages, 0),
@@ -3086,15 +3089,31 @@ mission_templates = [ # not used in game
       (team_set_order_position, ":atkteam", grc_everyone, pos10),
      # (display_message, "@moving to pos10", color_good_news),
     (try_end),]),
+
+  ## End of Starting Orders Block ##
+ 
+  ## This block seems to be for commanding the defenders to go back to their flanks. I do not think this is important, perhaps has been left for testing.
+  ## From the MBX forums, this was the intetion: "TODO: 1) make player assume command of the nearest ally team when he is near and pushes a button -GA"
+  ## I can attempt to do what is designed, just needs a lot of testing. 
+
   (0, 0, 2,[(this_or_next|game_key_clicked, key_o),(game_key_is_down, key_o)],
     [(entry_point_get_position, pos10, 41),(team_set_order_position, "$defender_team"  , grc_everyone, pos10),
     (entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team_2", grc_everyone, pos10),
     (entry_point_get_position, pos10, 43),(team_set_order_position, "$defender_team_3", grc_everyone, pos10),
     (display_message,"@On your positions, bitchez!!")]),
+
+  ## End of Team Command Control Block
+
+  ## Reinforcements block
+
+  ## This block checks the first spawns and sets their slot as 'not reinforcement'. This triggers once.
   (0, 2, ti_once, [], [(try_for_agents, ":agent_no"),(agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 1),(try_end)]),
+
+  ## This block is what checks for reinforcements. Attackers first, then defenders.
+  
   (1, 0, 5,[(lt,"$attacker_reinforcement_stage",15)],[
     (assign,":atkteam","$attacker_team"),
-    (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
+    (assign,":entry",7), #iterate through 8 9 10
     (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
       (store_normalized_team_count,":num_attackers",":atkteam"),
       (val_add,":atkteam",2),
@@ -3107,7 +3126,7 @@ mission_templates = [ # not used in game
     (try_end)]),
   (3, 0, 5, [(lt,"$defender_reinforcement_stage", 15),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[
     (assign,":defteam","$defender_team"),
-    (assign,":entry",8), #iterate through 5 6 7 - Changed to 9,10,11
+    (assign,":entry",4), #iterate through 5 6 7
     (try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
       (store_normalized_team_count,":num_defenders",":defteam"),
       (val_add,":defteam",2),
@@ -3117,7 +3136,17 @@ mission_templates = [ # not used in game
       (display_message, "@Defenders Reinforced", color_good_news),
       (val_add,"$defender_reinforcement_stage",1),
     (try_end),
+    
+    ## This block controls when Defender starts their desperate charge. I've added some improvements VC added to their sieges.
+
     (try_begin),
+      (store_mission_timer_a,":mission_time"),
+      (gt, ":mission_time", 180), #3 minutes before checking for desparate charge
+      (get_player_agent_no, ":player_agent"),
+      (agent_get_team, ":player_team", ":player_agent"),
+      (neq, ":player_team", "$defender_team"),   #When player is defending, don't let defenders do a desparate charge.
+      (neq, ":player_team", "$defender_team_2"), #When player is defending, don't let defenders do a desparate charge.
+      (neq, ":player_team", "$defender_team_3"), #When player is defending, don't let defenders do a desparate charge.
       (ge, "$defender_reinforcement_stage", 7),
       (set_show_messages, 0),
       (team_give_order, "$defender_team"  , grc_infantry, mordr_charge), #AI desperate charge:infantry!!!
@@ -3133,7 +3162,9 @@ mission_templates = [ # not used in game
       (set_show_messages, 1),
       (display_message,"@Defenders: everyone CHARGE!!"),
     (try_end),
-    # put gate aggravator in place
+
+    ## This block puts the gate aggravator in place
+
     (try_begin),
       (neq, "$gate_aggravator_agent",-1),
       (eq, "$gate_breached",0),
@@ -3142,9 +3173,15 @@ mission_templates = [ # not used in game
       (agent_set_position,"$gate_aggravator_agent",pos13),
       (agent_set_hit_points,"$gate_aggravator_agent",100,0),
     (try_end)]),
+
+   ## This block calls the script to move archers to archer positions. 
+   ## In TLD, attacker archers are asked to hold ground in entry point 60, 61, and 62 if the right,left, center flanks have NOT been taken by the attackers
+
   (2, 0, 0,[(gt, "$defender_reinforcement_stage", 0)],[(call_script, "script_siege_move_archers_to_archer_positions")]),
 
-   (5, 0, 0, [ #Kham - Revert attackers to regular attack mode when reinforcement comes.
+  ## This block is so that we revert attacker archers to regular attack mode when reinforcement comes.
+
+   (5, 0, 0, [
      (eq, "$attacker_archer_melee",1),
      ],
      [
@@ -3161,8 +3198,10 @@ mission_templates = [ # not used in game
       (display_message, "@DEBUG: Attackers go back to regular attack mode"),
      (try_end),
    ]),
+
+   ## This block is to make sure attacker archers do not stall on ladders
    (35, 0, 0, [
-     (eq, "$attacker_archer_melee", 0),  #Make sure attackers do not stall on the ladders... 
+     (eq, "$attacker_archer_melee", 0), 
      ],
      [
      (try_for_agents, ":agent_no"),  
