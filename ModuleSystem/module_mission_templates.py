@@ -2973,8 +2973,8 @@ mission_templates = [ # not used in game
   "You attack the walls of the castle...",
     [
 
-    ## Kham - Distributed Teams using the mtef_team_X flag. 0 (left), 2 (center), 4(right) are defenders; 1 (left), 3 (center), 5 (right) are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
-    
+    ## Kham - 0 (left), 2 (center), 4(right) are defenders; 1 (left), 3 (center), 5 (right) are attackers. 6 is for the gate.
+
     # Attacker initial spawn point (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,8,[]),
 
@@ -3091,7 +3091,68 @@ mission_templates = [ # not used in game
     (try_end),]),
 
   ## End of Starting Orders Block ##
- 
+
+  ## Reinforcement Scripted destinations
+  ## I added this block so that reinforcements still try to take the flanks or the center (as above).
+  ## We set a scripted destination for the agents, and after a few seconds, clear it, when they are close to their destination.
+  ## We are using the slot_agent_is_not_reinforcement as a tracker.
+
+  (ti_on_agent_spawn, 0, 0, [(this_or_next|ge, "$attacker_reinforcement_stage", 1), (ge, "$defender_reinforcement_stage",1)], [
+    
+    #(display_message, "@Scripting reinforcement destinations"),
+    (store_trigger_param_1, ":agent_no"),
+      (neq, ":agent_no", "$gate_aggravator_agent"),
+      (agent_is_human, ":agent_no"),
+      (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
+      (agent_get_team, ":reinforcement_team", ":agent_no"),
+      (try_begin),
+        (eq, "$gate_breached", 1),
+        (entry_point_get_position, pos10, 42),
+        (agent_set_scripted_destination, ":agent_no", pos10),
+        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 42), #Kham - Use this slot to track scripted movement
+       # (display_message, "@Reinforcement Agent moving towards Center"),
+      (else_try),
+        (this_or_next|eq, ":reinforcement_team", 0),
+        (             eq, ":reinforcement_team", 1),
+        (entry_point_get_position, pos10, 41),
+        (agent_set_scripted_destination, ":agent_no", pos10),
+        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 41), #Kham - Use this slot to track scripted movement
+        #(display_message, "@Reinforcement Agent moving towards Left"),
+      (else_try),
+        (this_or_next|eq, ":reinforcement_team", 2),
+        (             eq, ":reinforcement_team", 3),
+        (entry_point_get_position, pos10, 42),
+        (agent_set_scripted_destination, ":agent_no", pos10),
+        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 42), #Kham - Use this slot to track scripted movement
+        #(display_message, "@Reinforcement Agent moving towards Center"),
+      (else_try),
+        (entry_point_get_position, pos10, 43),
+        (agent_set_scripted_destination, ":agent_no", pos10),
+        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 43), #Kham - Use this slot to track scripted movement
+        #(display_message, "@Reinforcement Agent moving towards Right"),
+      (try_end),
+   ]),
+
+  ## This is where we remove the scripted mode of the reinforcement agents.
+  (7, 0, 0, [(this_or_next|ge, "$attacker_reinforcement_stage", 1), (ge, "$defender_reinforcement_stage",1)], [
+
+    #(display_message, "@Ending reinforcement scripted destination"),
+    (try_for_agents, ":agent_no"),
+      (neq, ":agent_no", "$gate_aggravator_agent"),
+      (agent_is_human, ":agent_no"),
+      (agent_get_slot, ":destination", ":agent_no", slot_agent_is_not_reinforcement),
+      (ge, ":destination", 41),
+      (agent_get_position, pos10, ":agent_no"),
+      (entry_point_get_position, pos11, ":destination"),
+      (get_distance_between_positions, ":destination_dist", pos10, pos11),
+      (lt, ":destination_dist", 700),
+      (agent_clear_scripted_mode, ":agent_no"),
+      (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement,3),
+    (try_end),
+ ]),
+
+  ## END Reinforcement Scripted destinations
+
   ## This block seems to be for commanding the defenders to go back to their flanks. I do not think this is important, perhaps has been left for testing.
   ## From the MBX forums, this was the intetion: "TODO: 1) make player assume command of the nearest ally team when he is near and pushes a button -GA"
   ## I can attempt to do what is designed, just needs a lot of testing. 
@@ -3120,7 +3181,7 @@ mission_templates = [ # not used in game
       (val_add,":entry",1),
       (lt,":num_attackers",10),
       (add_reinforcements_to_entry, ":entry", 8),
-      (display_message, "@Attackers Reinforced", color_good_news),
+      #(display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
@@ -3133,7 +3194,7 @@ mission_templates = [ # not used in game
       (val_add,":entry",1),
       (lt,":num_defenders",14),
       (add_reinforcements_to_entry, ":entry", 7), #TLD, was 4, 7
-      (display_message, "@Defenders Reinforced", color_good_news),
+      #(display_message, "@Defenders Reinforced", color_good_news),
       (val_add,"$defender_reinforcement_stage",1),
     (try_end),
     
@@ -3227,23 +3288,34 @@ mission_templates = [ # not used in game
    
    (5, 0, 0,[], # distribute agents among teams
      [(try_for_agents, ":agent"),
-      (agent_is_alive,":agent"),
-      (agent_is_human,":agent"),
-      (agent_slot_eq,":agent",slot_agent_arena_team_set,0),
-      (store_random_in_range, ":team", 0,3),
-      (try_begin), # when gate breached assign more people to medium team (which is gate oriented)
-        (eq,"$gate_breached",1),
-        (store_random_in_range, ":x",0,2),
-        (eq, ":x",1),
-        (assign, ":team", 1),
-      (try_end),
-      (val_mul, ":team", 2),
-      (try_begin),
-        (neg|agent_is_defender,":agent"),
-        (val_add,":team",1),
-      (try_end),
-      (agent_set_team, ":agent", ":team"),
-      (agent_set_slot,":agent",slot_agent_arena_team_set,1),
+        (agent_is_alive,":agent"),
+        (agent_is_human,":agent"),
+        (agent_slot_eq,":agent",slot_agent_arena_team_set,0),
+        (store_random_in_range, ":team", 0,3),
+        (try_begin), # when gate breached assign more people to medium team (which is gate oriented)
+          (eq,"$gate_breached",1),
+          (store_random_in_range, ":x",0,2),
+          (eq, ":x",1),
+          (assign, ":team", 1),
+        (try_end),
+        (val_mul, ":team", 2),
+        (try_begin),
+          (neg|agent_is_defender,":agent"),
+          (val_add,":team",1),
+        (try_end),
+        (agent_set_team, ":agent", ":team"),
+        (agent_set_slot,":agent",slot_agent_arena_team_set,1),
+
+        (agent_get_party_id, ":party", ":agent"),
+        (get_player_agent_no, ":player"),
+
+        #Give player his troops.
+        (try_begin),
+          (eq, ":party", "p_main_party"),
+          (agent_get_team, ":player_team", ":player"),
+          (agent_set_team, ":agent", ":player_team"),
+          #(display_message, "@Adding agent to player team"),
+        (try_end),
     (try_end),
     ]),
   (10, 0, 0,[], [# check if targets are captured by attackers
@@ -3262,20 +3334,20 @@ mission_templates = [ # not used in game
         #(display_message, "@found valid defender"),
         (entry_point_get_position, pos10, ":entry"), # count defenders in proximity of choke points
         (get_distance_between_positions, ":dist", pos0, pos10),
-        (lt,":dist", 400),
+        (lt,":dist", 800),
         (troop_get_slot,":x","trp_no_troop",":slot"), #+1 defender found
         (val_add, ":x", 1), #Kham - Add this here, to count number of defenders.
         #(display_message, "@DEBUG: +1 defender found", color_good_news),
         (troop_set_slot,"trp_no_troop",":slot",":x"),
       (try_end),
     (try_end),
-        #(set_show_messages, 0),
+        (set_show_messages, 0),
     (try_for_range, ":slot",0,3),
       (neg|troop_slot_ge,"trp_no_troop",":slot",2), #if 0-1 defenders standing -> make attacking team and defender reinfs charge at will (if not > = 2, charge)
       (troop_set_slot,"trp_no_troop",":slot",-1),
       (store_mul,":defteam",":slot",2),(store_add,":atkteam",":defteam",1),
       (assign, reg11, ":defteam"), (assign, reg12, ":atkteam"),
-      (display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
+      #(display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
       (team_give_order, ":defteam", grc_everyone, mordr_charge),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
       (store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"),
@@ -3283,7 +3355,7 @@ mission_templates = [ # not used in game
       (team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
       (team_set_order_position, ":atkteam", grc_archers, pos10),
     (try_end),
-    #(set_show_messages, 1),
+    (set_show_messages, 1),
    ]),
   ##      (15, 0, 0,
   ##       [
