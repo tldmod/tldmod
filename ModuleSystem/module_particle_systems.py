@@ -963,4 +963,16 @@ particle_systems = [
      0,                       #rotation speed
      0.5                        #rotation damping
     ),
+
+    ("piedra_dust", psf_billboard_3d, "prtcl_dust_a",
+     1, 1, 0, -0.2, 60.0, 1.5,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.5, 1), (1, 0),       #alpha keys
+     (0.0, 0.4), (1, 0.2),      #red keys
+     (0.0, 0.4),(1, 0.2),       #green keys
+     (0.0, 0.4), (1, 0.2),      #blue keys
+     (0, 10.0),   (15.0, 20.0),   #scale keys
+     (0.1, 0.1, 0.1),           #emit box size
+     (0, 0, 0),                 #emit velocity
+     0,                        #emit dir randomness
+    ),
 ]

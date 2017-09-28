@@ -1,5 +1,5 @@
 particle_systemsfile version 1
-58
+59
 psys_game_rain 274 prtcl_rain  500 0.5 0.33 1 10 0 
 1 0.3   1 0.3
 1 1   1 1
@@ -464,3 +464,11 @@ psys_beacon_fire 12818 prt_mesh_beacon_fire  1 0.35 -0.2 0.03 0 0
 0 0.15   0.4 0.3
 0.04 0.04 0.01   0 0 0.5   0 
 0 0.5 
+psys_piedra_dust 512 prtcl_dust_a  1 1 0 -0.2 60 1.5 
+0.5 1   1 0
+0 0.4   1 0.2
+0 0.4   1 0.2
+0 0.4   1 0.2
+0 10   15 20
+0.1 0.1 0.1   0 0 0   0 
+0 0 

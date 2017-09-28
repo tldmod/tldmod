@@ -3272,8 +3272,8 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_tier_6,wp_tier_6,knows_common|knows_athletics_6|knows_power_strike_5|knows_ironflesh_7|knows_shield_7,beorn_face1,beorn_face2],
 
 ["test_vet_archer","Test_Vet_Archer","Test_Vet_Archer",tf_woodelf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_woodelf,
-   [itm_mirkwood_bow,(itm_woodelf_arrows,imod_large_bag),itm_mirkwood_armor_e,itm_mirkwood_leather_greaves,itm_woodelf_arrows,itm_mirkwood_helm_d,itm_woodelf_arrows,itm_woodelf_arrows,itm_woodelf_arrows],
-      attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
+   [itm_mirkwood_armor_e,itm_mirkwood_leather_greaves,itm_mirkwood_helm_d],
+      attr_elf_tier_6,wp_elf_tier_6|wp_throwing(300), knows_common|knows_athletics_8|knows_power_draw_7|knows_power_strike_4|knows_ironflesh_4,mirkwood_elf_face_1,mirkwood_elf_face_2],
 
 ## Kham - Volunteers
 

@@ -1311,4 +1311,63 @@ items =[
 
 ["save_compartibility_item10","INVALID_ITEM",[("practice_sword",0)],itp_type_goods,0,3,weight(1.5)|abundance(90)|0,imodbits_none],
 
+] + (is_a_wb_item==1 and [
+
+["stones_siege",         "Siege Stones", [("plain_arrow",0)], itp_type_thrown |itp_unique|itp_primary ,itcf_throw_stone, 10 , weight(3)|difficulty(4)|spd_rtng(70) | shoot_speed(14) | thrust_damage(28 ,  blunt)|max_ammo(20)|weapon_length(14),imodbits_none,
+[
+    (ti_on_missile_hit,
+      [
+	  (try_begin),
+		#Solid Round Script
+        #pos1 - Missile hit position
+        #param_1 - Shooter agent
+		(store_trigger_param_1,":shooter"),
+    	(set_fixed_point_multiplier, 100),
+		(copy_position, pos63, pos1),
+		(particle_system_burst,"psys_piedra_dust",pos1,1),
+		(try_for_agents,":agent",pos63,300),
+	      (neg|agent_is_ally,":agent"),
+	      (agent_is_active,":agent"),
+	      (agent_is_alive,":agent"),
+	      (neq,":agent",":shooter"),
+
+	      (assign, reg0, 5),			   
+
+	      (agent_get_position, pos62, ":agent"),
+	      (get_distance_between_positions, ":distance", pos63, pos62),
+
+	      (try_begin),
+	      	(lt, ":distance", 200),
+	      	(store_random_in_range, reg0, 30, 41),
+	      	(assign, ":hit_anim", "anim_strike_fly_back"),
+	      (else_try),
+	      	(is_between, ":distance", 200, 300),
+	      	(store_random_in_range, reg0, 15, 21),
+	      	(assign, ":hit_anim", "anim_strike_legs_front"),
+	      (else_try),
+	      	(ge, ":distance", 300),
+	      	(store_random_in_range, reg0, 5, 10),
+	      	(assign, ":hit_anim", "anim_strike_legs_front"),
+	      (try_end),
+
+	      (set_show_messages, 0),
+	      (agent_deliver_damage_to_agent,":shooter",":agent", reg0),
+	      (set_show_messages, 1),
+	      (agent_set_animation, ":agent", ":hit_anim"),
+	      (try_begin),
+	        (get_player_agent_no, ":player"),
+	        (eq, ":agent", ":player"),
+	        (display_message, "@Received {reg0} damage."),
+	      (try_end),
+	      (val_add, reg10, 1), #count number agents got hit
+	      (play_sound,"snd_shield_broken"),
+      	(try_end),
+		(display_message, "@Siege Weapon damaged {reg10} agents", color_bad_news),
+		(assign, reg10, 0),
+	(try_end),
+	]),
+]],
+
+] or []) + [ 
+
 ]

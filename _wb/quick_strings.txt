@@ -1,4 +1,6 @@
-1429
+1430
+qstr_Received_{reg0}_dama Received_{reg0}_damage.
+qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -646,7 +648,6 @@ qstr_Nazgul_diving_attack Nazgul_diving_attack_on_{s11}!
 qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
-qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
 qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
@@ -839,7 +840,7 @@ qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
 qstr_OFF OFF
 qstr_ON ON
-qstr_IMOD_test_mesh_given IMOD_test_mesh_given
+qstr_Siege_Stones_Test Siege_Stones_Test
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_Moria_Book_given Moria_Book_given
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!

@@ -3059,7 +3059,7 @@ game_menus = [
 								(else_try),(str_store_string, s7, "@ON"),(try_end),
         ],"Gondor AI Test Tweaks:  {s7}",[
         (store_sub, "$gondor_ai_testing", 1, "$gondor_ai_testing"),(val_clamp, "$gondor_ai_testing", 0, 2)]),
-    ("give_imod_test", [],"Give IMOD Test Mesh",[(troop_add_item, "trp_player","itm_dwarf_sword_a", imod_fine),(troop_add_item, "trp_player","itm_beorn_shield_reward", imod_reinforced), (troop_add_item, "trp_player", "itm_good_mace", imod_masterwork),(display_message, "@IMOD test mesh given")]),
+    ("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("give_moria_book",[],"Give Moria Book", [(troop_add_item, "trp_player","itm_book_of_moria"),(display_message, "@Moria Book given")]),
     ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
@@ -3078,7 +3078,7 @@ game_menus = [
     	],"Let Player Command Allies: {s7}", [
     	(store_sub, "$player_control_allies",1, "$player_control_allies"), 
     	(val_clamp, "$player_control_allies",0,2)]),
-    ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_looters"),(display_message, "@Orc Horde Spawned!"), (party_add_members, "p_main_party", "trp_dunnish_wolf_guard", 10)]),
+    ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_orc_horde"),(display_message, "@Orc Horde Spawned!"),]),
     ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!")]),
     ("melee_ai_test",[],"Melee AI Test", [
     	(set_spawn_radius,1),
