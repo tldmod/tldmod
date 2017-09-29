@@ -809,8 +809,8 @@ tld_common_siege_check_defeat_condition = (
 ])
 
 tld_common_siege_refill_ammo = (
-  180, 0, 0, [],
-  [#refill ammo of defenders every two minutes. #chief change to 4 m
+  120, 0, 0, [],
+  [#refill ammo of defenders every two minutes. #chief change to 4 m #InVain: back to two minutes, was 3
     (get_player_agent_no, ":player_agent"),
     (try_for_agents,":cur_agent"),
       (neq, ":cur_agent", ":player_agent"),
@@ -2976,14 +2976,14 @@ mission_templates = [ # not used in game
     ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
     
     # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,3,[]),
-     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
-     (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,3,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,1,[]),
+     (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,1,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
 
      # Defender choke points (was 10)
      (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
@@ -2991,26 +2991,26 @@ mission_templates = [ # not used in game
      (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
 
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
-     (45,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
-     (46,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,2,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
+     (45,mtef_defenders|mtef_team_2,af_override_horse,aif_start_alarmed,2,[]),
+     (46,mtef_defenders|mtef_team_4,af_override_horse,aif_start_alarmed,2,[]),
 
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,4,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,4,[]),
-     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,4,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,5,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,5,[]),
+     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,5,[]),
 
      # defender archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
-     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
-     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
-     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
-   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team left flank
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team center
+     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team right flank
+   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
   ],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
@@ -3180,20 +3180,20 @@ mission_templates = [ # not used in game
 
   ## This block is what checks for reinforcements. Attackers first, then defenders.
   
-  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",15)],[
+  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",10)],[ #InVain: max reinf stage was 15, it's no possible that siege attacks stop
     (assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
       (store_normalized_team_count,":num_attackers",":atkteam"),
       (val_add,":atkteam",2),
       (val_add,":entry",1),
-      (lt,":num_attackers",10),
-      (add_reinforcements_to_entry, ":entry", 8),
+      (lt,":num_attackers",13), #InVain: was 10, attacker reinforcements arrive ealier...
+      (add_reinforcements_to_entry, ":entry", 6), #was 8, ... but are smaller
       #(display_message, "@Attackers Reinforced", color_good_news),
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
-  (3, 0, 5, [(lt,"$defender_reinforcement_stage", 15),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[
+  (3, 0, 5, [(lt,"$defender_reinforcement_stage", 25),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #iterate through 5 6 7 - Changed to 9,10,11
     (try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
@@ -3201,7 +3201,7 @@ mission_templates = [ # not used in game
       (val_add,":defteam",2),
       (val_add,":entry",1),
       (lt,":num_defenders",14),
-      (add_reinforcements_to_entry, ":entry", 7), #TLD, was 4, 7
+      (add_reinforcements_to_entry, ":entry", 6), #TLD, was 4, 7 #InVain, was 7, now 6
       #(display_message, "@Defenders Reinforced", color_good_news),
       (val_add,"$defender_reinforcement_stage",1),
     (try_end),
@@ -3225,14 +3225,14 @@ mission_templates = [ # not used in game
       (team_give_order, "$defender_team_2", grc_cavalry, mordr_charge),
       (team_give_order, "$defender_team_3", grc_cavalry, mordr_charge),
       (set_show_messages, 1),
-      (display_message,"@Defenders: infantry CHARGE!!"),
+      #(display_message,"@Defenders: infantry CHARGE!!"),
       (ge, "$defender_reinforcement_stage", 14),
       (set_show_messages, 0),
       (team_give_order, "$defender_team"  , grc_everyone, mordr_charge), #AI desperate charge: everyone!!!
       (team_give_order, "$defender_team_2", grc_everyone, mordr_charge),
       (team_give_order, "$defender_team_3", grc_everyone, mordr_charge),
       (set_show_messages, 1),
-      (display_message,"@Defenders: everyone CHARGE!!"),
+      #(display_message,"@Defenders: everyone CHARGE!!"),
     (try_end),
 
     ## This block puts the gate aggravator in place
@@ -3366,12 +3366,15 @@ mission_templates = [ # not used in game
       #(display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
       (this_or_next|neq, ":defteam", ":player_team"),
       (             neq, ":atkteam", ":player_team"),
-      (team_give_order, ":defteam", grc_everyone, mordr_charge),
+      #(team_give_order, ":defteam", grc_everyone, mordr_charge), #InVain: archers hold position, never charge
+      (team_give_order, ":defteam", grc_infantry, mordr_charge),
+      (team_give_order, ":defteam", grc_cavalry, mordr_charge),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
-      (store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"),
-      (team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
-      (team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
-      (team_set_order_position, ":atkteam", grc_archers, pos10),
+      #(store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"), #sieges work better if archers charge, too
+      #(team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
+      #(team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
+      #(team_set_order_position, ":atkteam", grc_archers, pos10),
+      
     (try_end),
     (set_show_messages, 1),
    ]),

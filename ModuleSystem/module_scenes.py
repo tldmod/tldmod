@@ -137,7 +137,7 @@ scenes = [
   ]) + [
 
   ("north_rhun_camp_center" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_flat"),
-  ("gundabad_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],["player_chest"],"outer_mountains2north"),
+  ("gundabad_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200005000009c5a200000f5200005bd50000739d",[],["player_chest"],"New_outer_mountains2south_helmsdeep"),
   ("ironhill_camp_center"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007200016da000364d9000060f500007591000064e7",[],[],"outer_terrain_steppe"),
 
 ### GA stub scenes
@@ -354,7 +354,7 @@ scenes = [
 ("ford_small3"  ,sf_generate,"none","none",(0,0),( 40, 40),-0.5,"0x000000013c60280000034cd300003efe00004b34000059be",[],[],"outer_terrain_river_middle"),
 
 ("erebor_siege"   ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
-("gundabad_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2north"),
+("gundabad_siege" ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003200005000009c5a200000f5200005bd50000739d",[],[],"New_outer_mountains2south_helmsdeep"),
 
   ] + (is_a_wb_scene==1 and [
 ("dol_guldur_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000003b0050d0d0004b12c000072f5000027d200005f66",[],[],"outer_terrain_forest"),
