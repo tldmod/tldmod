@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 1429
+=======
+1428
+>>>>>>> 4f511a567e5b98c7d1c36717c181dd4416531935
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -667,8 +671,6 @@ qstr_battle_won_triggered_ battle_won_triggered_-_Evil
 qstr_You_receive_word_tha You_receive_word_that_Beorning_villages_were_attacked._Beornings_lose_faction_strength
 qstr_You_receive_word_that You_receive_word_that_the_Ring_Hunter_Leaders_were_seen_travelling_towards_Mordor,_a_chest_in_tow._Mordor_gains_faction_strength.
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
-qstr_Defenders:_infantry_ Defenders:_infantry_CHARGE!!
-qstr_Defenders:_everyone_ Defenders:_everyone_CHARGE!!
 qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode
 qstr_DEBUG:_Attackers_do_ DEBUG:_Attackers_do_not_stall_on_ladders_triggered
 qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}_Defenders:_{reg0}/{reg2}/{reg4}

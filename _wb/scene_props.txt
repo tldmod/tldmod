@@ -960,7 +960,7 @@ spr_skeleton_cow 0 0 skeleton_cow 0 0
 spr_cupboard_a 0 0 cupboard_a bo_cupboard_a 0
 
 
-spr_box_a 0 0 box_a bo_box_a 0
+spr_box_a 0 0 box_new bo_box_a 0
 
 
 spr_bucket_a 0 0 bucket_a bo_bucket_a 0
