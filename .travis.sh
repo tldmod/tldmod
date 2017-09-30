@@ -7,8 +7,7 @@ echo HI THERE!
 
 # grab the revision count between the oldest and the latest commit,
 # parse the changelog page to find the previous one on steam
-SVNREV=$(( `curl -s 'https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD' | \
-         grep total_commits | head -1 | egrep -o '[0-9]+'` + 1 ))
+SVNREV=$((`curl -s 'https://api.github.com/repos/tldmod/tldmod/compare/BASE...HEAD' | jq '.total_commits'` + 1))
 
 PREREV=$(curl -s 'http://steamcommunity.com/sharedfiles/filedetails/changelog/299974223' | \
          sed -n 's/^.*Equivalent to nightly r\([0-9]*\).*$/\1/p' | head -1)

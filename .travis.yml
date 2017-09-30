@@ -16,6 +16,7 @@ addons:
       - sed
       - grep
       - lib32gcc1
+      - jq
 
 script: bash ./.travis.sh
 git:
