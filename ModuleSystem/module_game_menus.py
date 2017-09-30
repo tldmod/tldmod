@@ -263,7 +263,7 @@ game_menus = [
 	] for ct in range(cheat_switch)])+[
     ("build_your_own_scene"     ,[],"** Build your own scene for TLD **",
 		[                                         (jump_to_menu, "mnu_build_your_scene"),]),
-	("dressing_room" ,[],"Dressing Room",
+	("dressing_room" ,[(eq, cheat_switch, 1)],"Dressing Room",
 		[(assign, "$g_custom_battle_scenario", 99),(jump_to_menu, "mnu_custom_battle_2"),]),
     ("go_back"                  ,[],"Go back",[(change_screen_quit)])]
  ),
@@ -1757,14 +1757,14 @@ game_menus = [
 	"none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
   [
   #SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
-	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1), (assign, cheat_switch, 1),(jump_to_menu, "mnu_camp")]),
+	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
      ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
   ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
   ## MadVader test end
      ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
   ## Kham Test begin
-  	 ("camp_test_kham",[],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
+  	 ("camp_test_kham",[(eq, cheat_switch, 1)],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
 
   	 ("camp_back_camp_menu",[],"Back to Camp Menu.",[(jump_to_menu, "mnu_camp")]),
  ]
@@ -1860,7 +1860,7 @@ game_menus = [
    "What do you want to test today?",
    "none", [],
   [
- ]+concatenate_scripts([[ 
+ 
   ("camp_mvtest_pimp",[],"Pimp me up first!",
     [(troop_raise_attribute, "trp_player",ca_strength,20),
      (troop_raise_attribute, "trp_player",ca_agility,20),
@@ -1905,8 +1905,8 @@ game_menus = [
      (display_message, "@You have been pimped up!", 0x30FFC8),
     ]
    ),
-   ("camp_mvtest_expwar",[(eq, cheat_switch, 1),(eq,"$tld_war_began",0)],"Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@9000 XP added - now wait for the War...(assumes war starts at level 8)", 0x30FFC8),]),
-   ("camp_mvtest_evilwar",[(eq, cheat_switch, 1),(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
+   ("camp_mvtest_expwar",[(eq,"$tld_war_began",0)],"Start the War!",[(add_xp_to_troop,9000,"trp_player"), (display_message, "@9000 XP added - now wait for the War...(assumes war starts at level 8)", 0x30FFC8),]),
+   ("camp_mvtest_evilwar",[(eq,"$tld_war_began",1)],"Start the War of Two Towers! (defeat all good factions)",[
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
        (neq, ":cur_kingdom", "fac_player_supporters_faction"),
        (faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
@@ -1914,7 +1914,7 @@ game_menus = [
     (try_end),
     (display_message, "@Good factions defeated! Now wait for it...", 0x30FFC8),
    ]),
-   ("camp_mvtest_rank",[(eq, cheat_switch, 1),],"Give me local money, rank and influence.",[
+   ("camp_mvtest_rank",[],"Give me local money, rank and influence.",[
     (troop_add_gold, "trp_player", 10000),
     (call_script, "script_increase_rank", "$ambient_faction", 100),
     (faction_get_slot, reg0, "$ambient_faction", slot_faction_rank),
@@ -1953,7 +1953,7 @@ game_menus = [
     # (str_store_faction_name, s1, "$ambient_faction"),
     # (display_message, "@{s1} influence increased to {reg0}!", 0x30FFC8),
    # ]),
-   ("camp_mvtest_reinf",[(eq, cheat_switch, 1),],"Reinforce me!",[
+   ("camp_mvtest_reinf",[],"Reinforce me!",[
     (party_get_num_companions, ":old_size", "p_main_party"),
     (try_for_range, ":unused", 0, 10),
       (call_script, "script_cf_reinforce_party", "p_main_party"),
@@ -1983,7 +1983,7 @@ game_menus = [
     # (play_track, "track_TLD_Map_Day_A", 1),
     # (display_message, "@Playing track - can you hear it?", 0x30FFC8),
    # ]),
-   ("camp_mvtest_sieges",[(eq, cheat_switch, 1),],"Test sieges...",[(jump_to_menu, "mnu_mvtest_sieges")]),
+   ("camp_mvtest_sieges",[],"Test sieges...",[(jump_to_menu, "mnu_mvtest_sieges")]),
    # ("camp_mvtest_trolls",[],"Test trolls in battle.",[
      # (party_add_members, "p_main_party", "trp_troll_of_moria", 3),
      # (set_spawn_radius, 0),
@@ -1996,7 +1996,7 @@ game_menus = [
      # (party_add_members, ":troll_party", "trp_large_orc_of_mordor", 20),
      # (display_message, "@Mordor party with olog hai spawned!", 0x30FFC8),
    # ]),            
-   ("camp_mvtest_legend",[(eq, cheat_switch, 1),],"Enable legendary places.",[
+   ("camp_mvtest_legend",[],"Enable legendary places.",[
     (enable_party, "p_legend_amonhen"),
     (enable_party, "p_legend_deadmarshes"),
     (enable_party, "p_legend_mirkwood"),
@@ -2055,7 +2055,7 @@ game_menus = [
     # (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
     # (display_message, "@Debug: Morannon-MT line: y = {reg0}/{reg1}*x + {reg2}"),
    # ]),
-   ("camp_mvtest_defeat",[(eq, cheat_switch, 1),],"Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
+   ("camp_mvtest_defeat",[],"Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
    ("camp_mvtest_advcamps",[(eq, cheat_switch, 1),],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
      # (assign, ":root_defeated_party", "p_town_hornburg"),
@@ -2098,9 +2098,9 @@ game_menus = [
 	# (try_end),
     # (display_message, "@You got them all, pardner!", 0x30FFC8),
    # ]),
- ] for ct in range(cheat_switch)])+[
-   ("camp_mvtest_back",[],"Back to dev menu.",[(jump_to_menu, "mnu_dev_menu")])]            
- ),
+   ("camp_mvtest_back",[],"Back to dev menu.",[(jump_to_menu, "mnu_dev_menu")]),   
+
+ ]),
 ( "mvtest_destroy_faction",0,
    "Choose a faction to defeat:",
    "none",
@@ -2617,8 +2617,7 @@ game_menus = [
    "Test sieges",
    "none",
    [],
-    [
- ]+concatenate_scripts([[ 
+ 	[
 	("order_siege",[],"Order ambient faction to besiege...", [(jump_to_menu, "mnu_mvtest_order_siege")]),
      ("order_siege_wo",[
         (troop_get_slot, ":king_party", "trp_mordor_lord", slot_troop_leaded_party),
@@ -2766,7 +2765,6 @@ game_menus = [
         (display_message, "@Partitava besieges Dale!", 0x30FFC8),
         (change_screen_map),
       ]),
- ] for ct in range(cheat_switch)])+[
      ("back_mtest",[],"Back to main test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
  ),
@@ -2814,7 +2812,6 @@ game_menus = [
    "Test advance camps",
    "none",
    [], [
- ]+concatenate_scripts([[ 
     ("spawnSW",[],"Spawn SW advance camps", [
 	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
 		  (party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
@@ -3019,7 +3016,7 @@ game_menus = [
       (position_get_y, reg3, pos13),
       (display_message, "@N advance camps spawned around {reg2},{reg3}!", 0x30FFC8),
     ]),
- ] for ct in range(cheat_switch)])+[
+ 
     ("continue",[],"Continue...", [(jump_to_menu, "mnu_camp_mvtest"),]),
     ]
   ),
@@ -3374,7 +3371,7 @@ game_menus = [
  "none",
  [],
  [
- ]+concatenate_scripts([[  
+
  ("f_gondor"  ,[],"Gondor items"    ,[(call_script,"script_fill_camp_chests","fac_gondor"  ),(jump_to_menu, "mnu_camp"),]),
   ("f_rohan"   ,[],"Rohan items"     ,[(call_script,"script_fill_camp_chests","fac_rohan"   ),(jump_to_menu, "mnu_camp"),]),
   ("f_isengard",[],"Isengard items"  ,[(call_script,"script_fill_camp_chests","fac_isengard"),(jump_to_menu, "mnu_camp"),]),
@@ -3390,8 +3387,7 @@ game_menus = [
   ("f_umbar"   ,[],"Umbar items"     ,[(call_script,"script_fill_camp_chests","fac_umbar"   ),(jump_to_menu, "mnu_camp"),]),
   ("f_moria"   ,[],"Moria items"     ,[(call_script,"script_fill_camp_chests","fac_moria"   ),(jump_to_menu, "mnu_camp"),]),
   ("f_gundabad",[],"Gundabad items"  ,[(call_script,"script_fill_camp_chests","fac_gundabad"),(jump_to_menu, "mnu_camp"),]),
-  ("f_dunland" ,[],"Dunland items"   ,[(call_script,"script_fill_camp_chests","fac_dunland" ),(jump_to_menu, "mnu_camp"),]),
- ] for ct in range(cheat_switch)])+[  
+  ("f_dunland" ,[],"Dunland items"   ,[(call_script,"script_fill_camp_chests","fac_dunland" ),(jump_to_menu, "mnu_camp"),]), 
   ("go_back"   ,[],"Go back"         ,[(jump_to_menu, "mnu_camp"),]),
  ]
  ),
@@ -3400,7 +3396,6 @@ game_menus = [
  "none",
  [],
  [
- ]+concatenate_scripts([[ 
  ("race_test     " ,[],"TEST     " ,[(troop_set_type,"trp_player",16), (jump_to_menu, "mnu_camp"),]),	   
   ("race_male"      ,[],"Male"      ,[(troop_set_type,"trp_player", 0), (jump_to_menu, "mnu_camp"),]),
   ("race_female"    ,[],"Female"    ,[(troop_set_type,"trp_player", 1), (jump_to_menu,"mnu_camp"),]),
@@ -3418,7 +3413,6 @@ game_menus = [
   ("race_rivendell" ,[],"Rivendell" ,[(troop_set_type,"trp_player",13), (jump_to_menu, "mnu_camp"),]),
   ("race_mirkwood"  ,[],"Mirkwood"  ,[(troop_set_type,"trp_player",14), (jump_to_menu, "mnu_camp"),]),
   ("race_evil_male" ,[],"Evil Male" ,[(troop_set_type,"trp_player",15), (jump_to_menu, "mnu_camp"),]),
- ] for ct in range(cheat_switch)])+[
   ("go_back"        ,[],"Go back"   ,[(jump_to_menu, "mnu_camp_cheat"),]),
  ]),  
  
@@ -3933,7 +3927,6 @@ game_menus = [
 	 (call_script, "script_determine_what_player_looks_like"), # if back from change race
 	],
 	[
- ]+concatenate_scripts([[	 
  	 ("cheat_disabable",[],
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
 
@@ -4039,7 +4032,6 @@ game_menus = [
 
 	 #("test1",[],"Test: pay upkeep now", [(call_script,"script_make_player_pay_upkeep")]),
 	 #("test2",[],"Test: make unpaid troop leave now", [(call_script, "script_make_unpaid_troop_go")]),
-  ] for ct in range(cheat_switch)])+[	
 	 ("cheat_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp"),]),	 
  ]),
 
