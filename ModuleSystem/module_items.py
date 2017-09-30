@@ -1313,7 +1313,7 @@ items =[
 
 ] + (is_a_wb_item==1 and [
 
-["stones_siege",         "Siege Stones", [("plain_arrow",0)], itp_type_thrown |itp_unique|itp_primary ,itcf_throw_stone, 10 , weight(3)|difficulty(4)|spd_rtng(70) | shoot_speed(14) | thrust_damage(28 ,  blunt)|max_ammo(20)|weapon_length(14),imodbits_none,
+["stones_siege",         "Siege Stones", [("gon_castle_h_stairs_b",0)], itp_type_thrown |itp_unique|itp_primary ,itcf_throw_stone, 10 , weight(5)|difficulty(1)|spd_rtng(50) | shoot_speed(4) | thrust_damage(28 ,  blunt)|max_ammo(20)|weapon_length(200),imodbits_none,
 [
     (ti_on_missile_hit,
       [

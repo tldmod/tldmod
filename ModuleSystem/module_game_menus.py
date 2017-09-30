@@ -1741,22 +1741,34 @@ game_menus = [
 	]),
 
     ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
-	
- ]+concatenate_scripts([[ 
-	#SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
-	 ("Cheat_enable",[(eq, cheat_switch, 1),(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1),(jump_to_menu, "mnu_camp")]),
-     ("camp_cheat_option", [(eq, cheat_switch, 1),(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
+
+    #Kham - Removed Compile Dependence for Cheat Menu
+
+ 	("spacer_dev_menu"    ,[],"_"  ,[]),
+ 	("Dev_Menu", [], "Developer Menu", [(jump_to_menu, "mnu_dev_menu")]),
+    ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
+    ]
+ ),
+  
+## Dev Menu Begin
+
+("dev_menu", 0,
+	"These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.",
+	"none", [(set_background_mesh, "mesh_ui_default_menu_window"),],
+  [
+  #SW - added enable/disable camp cheat menu by ConstantA - http://forums.taleworlds.net/index.php/topic,63142.msg1647442.html#msg1647442
+	 ("Cheat_enable",[(eq,"$cheat_mode",0)],"Enable cheat/modding options.",[(assign, "$cheat_mode", 1), (assign, cheat_switch, 1),(jump_to_menu, "mnu_camp")]),
+     ("camp_cheat_option", [(eq,"$cheat_mode",1)] ,"Cheats  (for development use).",[(jump_to_menu, "mnu_camp_cheat")]),
   ## MadVader test begin
      ("camp_test_madvader",[],"MV Test Menu",[(jump_to_menu, "mnu_camp_mvtest")]),
   ## MadVader test end
      ("camp_test_cppcoder",[],"Cpp Test Menu",[(jump_to_menu, "mnu_camp_cctest")]),
   ## Kham Test begin
   	 ("camp_test_kham",[],"Kham Test Menu",[(jump_to_menu, "mnu_camp_khamtest")]),
- ] for ct in range(cheat_switch)])+[
-     ("resume_travelling",[],"Resume travelling.",[(change_screen_return)]),
-    ]
- ),
-  
+
+  	 ("camp_back_camp_menu",[],"Back to Camp Menu.",[(jump_to_menu, "mnu_camp")]),
+ ]
+),
 
 ## CppCoder test begin
 ( "camp_cctest",0,
@@ -1839,7 +1851,7 @@ game_menus = [
 		(troop_add_item, "trp_player","itm_gon_leader_surcoat_cloak"),
 	]),
 
-     ("camp_cctest_return",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")]),
+     ("camp_cctest_return",[],"Back to dev menu.",[(jump_to_menu, "mnu_dev_menu")]),
   ]
 ),
 
@@ -2087,7 +2099,7 @@ game_menus = [
     # (display_message, "@You got them all, pardner!", 0x30FFC8),
    # ]),
  ] for ct in range(cheat_switch)])+[
-   ("camp_mvtest_back",[],"Back to camp menu.",[(jump_to_menu, "mnu_camp")])]            
+   ("camp_mvtest_back",[],"Back to dev menu.",[(jump_to_menu, "mnu_dev_menu")])]            
  ),
 ( "mvtest_destroy_faction",0,
    "Choose a faction to defeat:",
@@ -3059,7 +3071,7 @@ game_menus = [
 								(else_try),(str_store_string, s7, "@ON"),(try_end),
         ],"Gondor AI Test Tweaks:  {s7}",[
         (store_sub, "$gondor_ai_testing", 1, "$gondor_ai_testing"),(val_clamp, "$gondor_ai_testing", 0, 2)]),
-    ("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
+    #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("give_moria_book",[],"Give Moria Book", [(troop_add_item, "trp_player","itm_book_of_moria"),(display_message, "@Moria Book given")]),
     ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
@@ -3097,7 +3109,7 @@ game_menus = [
 			(display_message, "@You are not in the right region to spawn animal ambushes. Please go to N Mirkwood, S Mirkwood, Grey Mountains, or Misty Mountains", color_bad_news),
 		(try_end)]),
     ("check_if_capital",[], "How Many Centers Left (Gondor)", [(call_script, "script_cf_check_if_only_capital_left", "p_town_pinnath_gelin")]),
-    ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_camp")]),
+    ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_dev_menu")]),
  ]),
 
 ## Kham Test End

@@ -22685,6 +22685,10 @@ command_cursor_scripts = [
 
   ]),
 
+## Kham Quest Scripts
+
+
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

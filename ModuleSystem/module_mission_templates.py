@@ -3439,6 +3439,7 @@ mission_templates = [ # not used in game
   (try_end),
   (set_show_messages, 1),
   (display_message, "@Attackers: {reg1}/{reg3}/{reg5} Defenders: {reg0}/{reg2}/{reg4}")]),
+
 ]),
 
 ( "besiege_inner_battle_castle",mtf_battle_mode,-1,
