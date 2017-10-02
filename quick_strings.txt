@@ -1,4 +1,4 @@
-1389
+1391
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -576,6 +576,7 @@ qstr_{s3}___not_destroyed {s3}_-_not-destroyed
 qstr_{s3}___not_taken {s3}_-_not_taken
 qstr_{s3}___nothing_added {s3}_-_nothing_added
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
+qstr_DEBUG:_{reg0}_troop_ DEBUG:_{reg0}_troop_stacks_of_{s1}_found
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
@@ -870,6 +871,7 @@ qstr_You_have_retreated_f You_have_retreated_from_the_fight.
 qstr_^^Ally_Casualties:{s ^^Ally_Casualties:{s0}
 qstr_News_of_your_victory News_of_your_victory_against_{s4}_reach_{s3}.
 qstr_{s3}_witnesses_your_ {s3}_witnesses_your_victory_against_{s4}.
+qstr_Even_though_there_we Even_though_there_were_no_allies_to_witness_your_victory,_your_troops_nevertheless_celebrate_your_triumph.
 qstr_{s1}_of_{s3}_managed {s1}_of_{s3}_managed_to_escape.
 qstr_{s17} {s17}
 qstr_Prisoners_rescued_so Prisoners_rescued_so_far:_{reg1}

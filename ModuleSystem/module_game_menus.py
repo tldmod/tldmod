@@ -4969,7 +4969,11 @@ game_menus = [
 #(display_message, "@Debug: giving rank points for impressed faction."),		  
               (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
 		  (else_try),
-			  #(display_log_message, "@DEBUG: nobody directly interested witnesses your victory."),
+		  	  (call_script, "script_party_get_dominant_faction", "p_main_party"), #Kham - Check dominant faction in player party and increase the rank from that faction
+		  	  (assign, ":impressed_troop_faction", reg0),
+		  	  (store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
+		  	  (call_script, "script_increase_rank", ":impressed_troop_faction", ":rank_increase"),
+			  (display_log_message, "@Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.", color_good_news), #Kham - Let's still give player some rank.
 		  (try_end),
 		  (call_script, "script_set_ambient_faction","$impressed_faction"),
           

@@ -22685,6 +22685,34 @@ command_cursor_scripts = [
 
   ]),
 
+
+#Kham - Check if there are troop stack of the faction specified
+	#script_find_troop_of_faction
+	#Input: party; faction
+	#Output: reg0: Number of Troop Stacks of Seleted Faction
+
+	("find_troop_of_faction", [
+		(store_script_param_1, ":party_no"),
+		(store_script_param_2, ":faction"),
+
+		(party_get_num_companion_stacks, ":num_stacks",":party_no"),
+	    (assign, ":num_troops", 0),
+	    (try_for_range, ":i_stack", 0, ":num_stacks"),
+	      (party_stack_get_troop_id, reg1, ":party_no",":i_stack"),
+		  (store_troop_faction, ":troop_fac", reg1),
+		  (try_begin),
+		  	(eq, ":troop_fac", ":faction"),
+		  	(val_add, ":num_troops", 1),
+		  (try_end),
+		(try_end),
+
+		(assign, reg0, ":num_troops"),
+		(str_store_faction_name, s1, ":faction"),
+		
+		(display_message, "@DEBUG: {reg0} troop stacks of {s1} found"),
+	]),
+
+
 ## Kham Quest Scripts
 
 

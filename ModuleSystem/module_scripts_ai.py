@@ -2320,6 +2320,7 @@ ai_scripts = [
       (try_end),
       # host spawning conditions
       (try_for_range, ":hero", kingdom_heroes_begin, kingdom_heroes_end), # cycle through heros w/o hosts and try to spawn a host
+         (neq, ":hero", "trp_isengard_lord"), #Lets not give saruman a host.
          (store_troop_faction, ":troop_faction_no", ":hero"),
          (faction_slot_eq, ":troop_faction_no", slot_faction_state, sfs_active),
           
