@@ -81,7 +81,7 @@ _fold_final_
 
 _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental patches]"
     git config --global core.quotepath false
-    git diff --name-status --diff-filter=ACMRTUXB TLD3.3REL ./ > diff.txt
+    git diff --name-status --diff-filter=ACMRTUXB TLD3.5REL ./ > diff.txt
 
     cat diff.txt | sed -r -e  s/^D.+// \
                           -e 's/.+modulesystem.+//I' \
@@ -132,8 +132,8 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental 
 
     #bbfile=TLD_3.3_nightly_patch_r$SVNREV.7z
     #bbfilewb=TLD_3.3_wbcompat_nightly_patch_r$SVNREV.7z
-    bbfile=TLD_3.3_nightly_patch_$(date +%Y.%m.%d-%H.%M -u)_r$SVNREV.7z
-    bbfilewb=TLD_3.3_wbcompat_nightly_patch_$(date +%Y.%m.%d-%H.%M -u)_r$SVNREV.7z
+    bbfile=TLD_3.5_nightly_patch_$(date +%Y.%m.%d-%H.%M -u)_r$SVNREV.7z
+    bbfilewb=TLD_3.5_wb_nightly_patch_$(date +%Y.%m.%d-%H.%M -u)_r$SVNREV.7z
 
     # a small notice
     echo -e "This release has been churned out by an automated process, generated directly from our dev repository at revision $SVNREV,\r\n\
