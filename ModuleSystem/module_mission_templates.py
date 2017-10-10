@@ -3144,9 +3144,11 @@ mission_templates = [ # not used in game
   ## This is where we remove the scripted mode of the reinforcement agents.
   (7, 0, 0, [(this_or_next|ge, "$attacker_reinforcement_stage", 1), (ge, "$defender_reinforcement_stage",1)], [
 
+    (get_player_agent_no, ":player_agent"),
     #(display_message, "@Ending reinforcement scripted destination"),
     (try_for_agents, ":agent_no"),
       (neq, ":agent_no", "$gate_aggravator_agent"),
+      (neq, ":agent_no", ":player_agent"),
       (agent_is_human, ":agent_no"),
       (agent_get_slot, ":destination", ":agent_no", slot_agent_is_not_reinforcement),
       (ge, ":destination", 41),
@@ -3346,7 +3348,7 @@ mission_templates = [ # not used in game
         #(display_message, "@found valid defender"),
         (entry_point_get_position, pos10, ":entry"), # count defenders in proximity of choke points
         (get_distance_between_positions, ":dist", pos0, pos10),
-        (lt,":dist", 800),
+        (lt,":dist", 600),
         (troop_get_slot,":x","trp_no_troop",":slot"), #+1 defender found
         (val_add, ":x", 1), #Kham - Add this here, to count number of defenders.
         #(display_message, "@DEBUG: +1 defender found", color_good_news),
