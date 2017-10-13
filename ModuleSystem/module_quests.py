@@ -266,12 +266,14 @@ quests = [
 
 ##Placeholder Quests Start
 
-("blank_quest_01", "Placeholder", 0,
-  "{!}Placeholder"
+# Defend Refugees
+("blank_quest_01", "Defend Refugees", 0,
+  "{!}defend_nobles_against_peasantse"
 ),
 
-("blank_quest_02", "Placeholder", 0,
-  "{!}Placeholder"
+# Hunt Down Refugees
+("blank_quest_02", "Hunt Down Refugees", 0,
+  "{!}None"
 ),
 
 ("blank_quest_03", "Placeholder", 0,

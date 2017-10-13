@@ -15,3 +15,5 @@ prsnt_retirement = 13
 prsnt_intro_titles = 14
 prsnt_conversation_titles = 15
 prsnt_customize_defilement = 16
+prsnt_troop_talk_hero = 17
+prsnt_troop_talk_enemy = 18

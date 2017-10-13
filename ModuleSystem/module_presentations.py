@@ -2876,6 +2876,147 @@ presentations = [
 
 ]),
 
+#Kham:battle_map
+
+("troop_talk_hero",prsntf_read_only,0,[#prsntf_read_only flag allows player to combat when battle_map show
+  (ti_on_presentation_load,
+    [
+
+      (set_fixed_point_multiplier, 1000),
+      (assign, "$g_presentation_obj_1", -1),
+      (assign, "$g_presentation_obj_2", -1),
+      (assign, "$g_presentation_obj_3", -1),
+      (assign, "$g_presentation_obj_4", -1),
+      (assign, "$g_presentation_obj_5", -1),
+      (assign, "$g_presentation_obj_6", -1),
+      (assign, "$g_presentation_obj_7", -1),
+      (assign, "$g_presentation_obj_11", -1),
+      (assign, "$g_presentation_obj_12", -1),
+
+      (assign, "$battle_chat", 1),
+
+      #Hero (Left Side)
+      (try_begin),
+
+      #Text
+        (create_text_overlay, reg1, "@{s30}", tf_left_align),
+        (position_set_x, pos1, 180),#200
+        (position_set_y, pos1, 550),#700
+        (overlay_set_position, reg1, pos1),
+        (overlay_set_color, reg1, 0xffffff),
+
+        #picture
+        (create_mesh_overlay_with_tableau_material, reg1, -1, "tableau_troop_note_mesh", "$troop_talk_hero"),
+        (position_set_x, pos1, 500),#750 before
+        (position_set_y, pos1, 500),#750 before
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 7),#700
+        (position_set_y, pos1, 500),#500
+        (overlay_set_position, reg1, pos1),
+
+        #name
+        (str_store_troop_name, s1, "$troop_talk_hero"),
+        (create_text_overlay, reg1, "@{s1}", tf_center_justify),
+        (position_set_x, pos1, 100),#100
+        (position_set_y, pos1, 480),#480
+        (overlay_set_position, reg1, pos1),
+        (overlay_set_color, reg1, 0xffffff),
+      (try_end), 
+
+      (presentation_set_duration, "$troop_talk_duration"),
+    ]
+  ),
+
+  (ti_on_presentation_run,
+    [
+      (store_trigger_param_1, ":cur_time"),
+      (set_fixed_point_multiplier, 1000),
+      (try_begin),
+        (gt, ":cur_time", 500),
+        (this_or_next | neq, "$battle_chat", 1),
+        (game_key_clicked, gk_view_orders),
+        (presentation_set_duration, 0),
+        # Switch to original order panel directly
+        (game_key_clicked, gk_view_orders),
+        (start_presentation, "prsnt_battle"),
+      (try_end),
+    ]
+  ),
+]),
+
+
+("troop_talk_enemy",prsntf_read_only,0,[#prsntf_read_only flag allows player to combat when battle_map show
+  (ti_on_presentation_load,
+    [
+
+
+      (set_fixed_point_multiplier, 1000),
+      (assign, "$g_presentation_obj_1", -1),
+      (assign, "$g_presentation_obj_2", -1),
+      (assign, "$g_presentation_obj_3", -1),
+      (assign, "$g_presentation_obj_4", -1),
+      (assign, "$g_presentation_obj_5", -1),
+      (assign, "$g_presentation_obj_6", -1),
+      (assign, "$g_presentation_obj_7", -1),
+      (assign, "$g_presentation_obj_11", -1),
+      (assign, "$g_presentation_obj_12", -1),
+
+      (assign, "$battle_chat", 2),
+
+      #Enemy (Lower Right Side)
+      (try_begin),
+
+        #Text 
+        (create_text_overlay, reg1, "@{s30}", tf_right_align),
+        (position_set_x, pos1, 700),#25
+        (position_set_y, pos1, 85),#65
+        (overlay_set_position, reg1, pos1),
+        (overlay_set_color, reg1, 0xffffff),
+
+        #picture
+        (create_mesh_overlay_with_tableau_material, reg1, -1, "tableau_troop_note_mesh", "$troop_talk_enemy"),
+        (position_set_x, pos1, 600),#750 before
+        (position_set_y, pos1, 600),#750 before
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 760),#740
+        (position_set_y, pos1, 60),#45
+        (overlay_set_position, reg1, pos1),
+
+        #name
+        (str_store_troop_name, s1, "$troop_talk_enemy"),
+        (create_text_overlay, reg1, "@{s1}", tf_center_justify),
+        (position_set_x, pos1, 835),#835
+        (position_set_y, pos1, 25),#13
+        (overlay_set_position, reg1, pos1),
+        (overlay_set_color, reg1, 0xffffff),
+
+      (try_end),   
+
+      (presentation_set_duration, "$troop_talk_duration"),
+    ]
+  ),
+
+  (ti_on_presentation_run,
+    [
+      (store_trigger_param_1, ":cur_time"),
+
+      (set_fixed_point_multiplier, 1000),
+
+      (try_begin),
+        (gt, ":cur_time", 500),
+        (this_or_next | neq, "$battle_chat", 2),
+        (game_key_clicked, gk_view_orders),
+        (presentation_set_duration, 0),
+        # Switch to original order panel directly
+        (game_key_clicked, gk_view_orders),
+        (start_presentation, "prsnt_battle"),
+      (try_end),
+    ]
+  ),
+]),
+#Kham END
+
+
 ]
 
 from module_info import wb_compile_switch
@@ -3330,117 +3471,6 @@ if wb_compile_switch==1:
   ]),
 ### Troop Presentation End ###
 
-#Kham:battle_map
-  ("battle_map",prsntf_read_only,0,[#prsntf_read_only flag allows player to combat when battle_map show
-  (ti_on_presentation_load,
-       [
 
 
-    (set_fixed_point_multiplier, 1000),
-    (assign, "$g_presentation_obj_1", -1),
-    (assign, "$g_presentation_obj_2", -1),
-    (assign, "$g_presentation_obj_3", -1),
-    (assign, "$g_presentation_obj_4", -1),
-    (assign, "$g_presentation_obj_5", -1),
-    (assign, "$g_presentation_obj_6", -1),
-    (assign, "$g_presentation_obj_7", -1),
-    (assign, "$g_presentation_obj_11", -1),
-    (assign, "$g_presentation_obj_12", -1),
-    (try_for_agents, ":local0"),
-      (agent_set_slot, ":local0", slot_agent_map_overlay_id, 0),
-    (try_end),
-
-    #Hero
-    (try_begin),
-    
-    #word
-        #(store_random_in_range,":add",0,10),
-        #(val_add,":add","str_vs_fight_call_word_1"),
-        #(str_store_string,30,":add"),
-        (eq, "$battle_chat",1),
-        (str_store_string, s30, "@Forth Eorlingas!"),
-        (create_text_overlay, reg1, "@{s30}", tf_left_align),
-        (position_set_x, pos1, 180),#200
-        (position_set_y, pos1, 550),#700
-        (overlay_set_position, reg1, pos1),
-        (overlay_set_color, reg1, 0xffffff),
-   
-     #picture
-        (create_mesh_overlay_with_tableau_material, reg1, -1, "tableau_troop_note_mesh", "trp_badass_theo"),
-        (position_set_x, pos1, 500),#750 before
-        (position_set_y, pos1, 500),#750 before
-        (overlay_set_size, reg1, pos1),
-        (position_set_x, pos1, 7),#700
-        (position_set_y, pos1, 500),#500
-        (overlay_set_position, reg1, pos1),
-    
-    #name
-        (str_store_troop_name, s1, "trp_badass_theo"),
-        (create_text_overlay, reg1, "@{s1}", tf_center_justify),
-        (position_set_x, pos1, 100),#100
-        (position_set_y, pos1, 480),#480
-        (overlay_set_position, reg1, pos1),
-        (overlay_set_color, reg1, 0xffffff),
-    (try_end), 
-
-     
-    (try_begin),
-       
-    #word 
-        #(store_random_in_range,":add",0,10),
-        #(val_add,":add","str_vs_fight_answer_word_1"),
-        #(str_store_string,30,":add"),
-        (eq, "$battle_chat",2),
-        (str_store_string, s30, "@Kill the Horse-Men!"),
-        (create_text_overlay, reg1, "@{s30}", tf_right_align),
-        (position_set_x, pos1, 700),#25
-        (position_set_y, pos1, 85),#65
-        (overlay_set_position, reg1, pos1),
-        (overlay_set_color, reg1, 0xffffff),
-
-    #picture
-        (create_mesh_overlay_with_tableau_material, reg1, -1, "tableau_troop_note_mesh", "trp_knight_1_15"),
-        (position_set_x, pos1, 600),#750 before
-        (position_set_y, pos1, 600),#750 before
-        (overlay_set_size, reg1, pos1),
-        (position_set_x, pos1, 760),#740
-        (position_set_y, pos1, 60),#45
-        (overlay_set_position, reg1, pos1),
-
-    #name
-        (str_store_troop_name, s1, "trp_knight_1_15"),
-        (create_text_overlay, reg1, "@{s1}", tf_center_justify),
-        (position_set_x, pos1, 835),#835
-        (position_set_y, pos1, 25),#13
-        (overlay_set_position, reg1, pos1),
-        (overlay_set_color, reg1, 0xffffff),
-    
-    (try_end),   
-     
-       # (call_script, "script_update_battle_map"),
-
-        (presentation_set_duration, 999999),
-        ]),
-
-      (ti_on_presentation_run,
-       [(store_trigger_param_1, ":cur_time"),
-     
-        (set_fixed_point_multiplier, 1000),
-
-        (try_begin),
-          (gt, ":cur_time", 200),
-
-          (this_or_next| eq, "$battle_chat", 0),
-          (game_key_clicked, gk_view_orders),
-          (presentation_set_duration, 0),
-
-         
-          # Switch to original order panel directly
-          (game_key_clicked, gk_view_orders),
-          (start_presentation, "prsnt_battle"),
-
-        (try_end),
-        ]),
-      ]),
-  #Kham END
   ]

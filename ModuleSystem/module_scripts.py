@@ -1896,6 +1896,7 @@ scripts = [
 	(assign, "$field_ai_lord",1), #Kham - Battlefield Lord AI
 	(assign, "$field_ai_horse_archer",1), #Kham - Battlefield Horse Archer AI
 	(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
+	(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI - default is ON
 
 	
 
@@ -1910,7 +1911,7 @@ scripts = [
 	(try_end),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",2),
+    (assign,"$savegame_version",3),
 
 	] + (is_a_wb_script==1 and [
 
@@ -2160,11 +2161,11 @@ scripts = [
 		 (else_try),(eq, "$g_encountered_party", "p_ring_hunter_lair"),(jump_to_menu, "mnu_ring_hunter_lair"), ## TLD Ring Hunters Quest - Lair (kham)
 		 (else_try),(eq, "$g_encountered_party", "p_raft"),(jump_to_menu, "mnu_raftmen"), ## TLD Raftmen - Amath Dollen (Kham)
 		# (else_try),(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"), (eq, "$g_encountered_party", ":beacon"), (jump_to_menu, "mnu_gondor_beacons"),(try_end), ## TLD Gondor Beacons - Kham
-		 (else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
-		 (else_try),(eq, "$g_encountered_party_template", "pt_mound"),(jump_to_menu, "mnu_burial_mound"), #TLD 808
-		 (else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808
-		 (else_try),(eq, "$g_encountered_party", "p_old_ford"   ),(jump_to_menu, "mnu_camp"),
-		#(else_try),(eq, "$g_encountered_party_template", "pt_defend_refugees"),(jump_to_menu, "mnu_defend_refugees"), #TODO
+		(else_try),(eq, "$g_encountered_party_template", "pt_legendary_place"),(jump_to_menu, "mnu_legendary_place"), #TLD legendary places
+		(else_try),(eq, "$g_encountered_party_template", "pt_mound"),(jump_to_menu, "mnu_burial_mound"), #TLD 808
+		(else_try),(eq, "$g_encountered_party_template", "pt_pyre" ),(jump_to_menu, "mnu_funeral_pyre"), #TLD 808
+		(else_try),(eq, "$g_encountered_party", "p_old_ford"   ),(jump_to_menu, "mnu_camp"),
+		(else_try),(eq, "$g_encountered_party_template", "pt_refugees"),(jump_to_menu, "mnu_refugees_quest"), #Kham
 		(else_try),(jump_to_menu, "mnu_simple_encounter"),
 		(try_end),
 	(else_try), #Battle or siege
@@ -3963,6 +3964,9 @@ scripts = [
 				(eq, "$cheat_mode",1),
 				(display_message, "@DEBUG: Trolls for Troll quest are sped down."),
 			(try_end),
+	(else_try),
+		(eq, ":template_no", "pt_refugees"),
+		(set_trigger_result, 45),
 	(else_try),                                   
 		(set_trigger_result, 100),
 	(try_end),	
@@ -5999,17 +6003,25 @@ scripts = [
           (ge, "$g_talk_troop_faction_relation", 0),
           (assign, ":quests_begin", lord_quests_begin),
           (assign, ":quests_end", lord_quests_end),
+          (assign, ":quests_begin_2", lord_quests_begin_2),
+          (assign, ":quests_end_2", lord_quests_end_2),
         (else_try),
           (assign, ":quests_begin", enemy_lord_quests_begin),
           (assign, ":quests_end", enemy_lord_quests_end),
+          (assign, ":quests_begin_2", 0),
+          (assign, ":quests_end_2", 0),
         (try_end),
       (else_try),
         (is_between, ":giver_troop", mayors_begin, mayors_end),
         (assign, ":quests_begin", mayor_quests_begin),
         (assign, ":quests_end", mayor_quests_end),
+        (assign, ":quests_begin_2", 0),
+        (assign, ":quests_end_2", 0),
       (else_try),
         (assign, ":quests_begin", mayor_quests_begin),
         (assign, ":quests_end", mayor_quests_end),
+        (assign, ":quests_begin_2", 0),
+        (assign, ":quests_end_2", 0),
       (try_end),
       (assign, ":result", -1),
       (try_for_range, ":unused", 0, 30), #Repeat trial twenty times - MV: changed to 30
@@ -6033,7 +6045,24 @@ scripts = [
         (assign, ":quest_expiration_days", 0),
         (assign, ":quest_dont_give_again_period", 0),
 
-        (store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
+        ## Quest Range Extender - Kham
+
+
+		(store_sub, ":num_possible_old_quests", ":quests_end", ":quests_begin"),
+		(store_sub, ":num_possible_new_quests", ":quests_end_2", ":quests_begin_2"),
+		(store_add, ":num_possible_total_quests", ":num_possible_old_quests", ":num_possible_new_quests"),
+		#           (store_add. ":num_possible_total_quests_plus_1",":num_possible_total_quests", 1),
+		(store_random_in_range, ":quest_no", 0, ":num_possible_total_quests"),
+
+		(try_begin),
+			(lt, ":quest_no", ":num_possible_old_quests"),
+			(store_random_in_range, ":quest_no", ":quests_begin", ":quests_end"),
+		(else_try),
+			(store_random_in_range, ":quest_no", ":quests_begin_2", ":quests_end_2"),
+		(try_end),
+
+		 ## Quest Range Extender END - Kham
+
 #MV: Change this line and uncomment for testing only, don't let it slip into SVN (or else :))    
 		#(assign, ":quest_no", "qst_escort_merchant_caravan"),
 #mtarini: ok, ok, so we put in a menu:
@@ -6056,6 +6085,45 @@ scripts = [
 			(assign, ":result", ":quest_no"),
 		  (try_end),
 		(else_try),
+
+			##Kham - Defend refugees
+			(eq, cheat_switch, 1),
+			(eq, ":quest_no", "qst_blank_quest_01"),
+			(call_script, "script_cf_init_quest_defend_refugees"),
+
+			(assign, ":quest_target_party_template", reg55),		
+			(assign, ":quest_object_center", reg56),	
+			(assign, ":quest_target_center", reg57),	
+			(assign, ":quest_importance", reg58),	
+			(assign, ":quest_xp_reward", reg59),					
+			(assign, ":quest_gold_reward", reg60),					
+			(assign, ":quest_rank_reward", reg61),						
+			(assign, ":quest_expiration_days", reg62),					
+			(assign, ":quest_dont_give_again_period", reg63),
+
+			(assign, ":result", ":quest_no"),					
+
+		(else_try),
+			
+			##Kham - Hunt Down refugees
+			(eq, cheat_switch, 1),
+			(eq, ":quest_no", "qst_blank_quest_02"),
+			(call_script, "script_cf_init_quest_hunt_refugees"),
+
+			(assign, ":quest_target_party_template", reg55),		
+			(assign, ":quest_object_center", reg56),	
+			(assign, ":quest_target_center", reg57),	
+			(assign, ":quest_importance", reg58),	
+			(assign, ":quest_xp_reward", reg59),					
+			(assign, ":quest_gold_reward", reg60),					
+			(assign, ":quest_rank_reward", reg61),						
+			(assign, ":quest_expiration_days", reg62),					
+			(assign, ":quest_dont_give_again_period", reg63),
+
+			(assign, ":result", ":quest_no"),	
+
+		(else_try),
+		
 		  ##Kham: Defend village
           (eq, ":quest_no", "qst_defend_village"), 
           (try_begin),
@@ -13084,6 +13152,9 @@ scripts = [
 				(try_begin),
 					(agent_slot_eq, ":agent_no", slot_agent_is_in_scripted_mode, 0),
 					(agent_set_scripted_destination, ":agent_no", pos1, 0),
+			        ] + (is_a_wb_script==1 and [
+			        (agent_force_rethink, ":agent_no"),
+			        ] or []) + [
 					(agent_set_slot, ":agent_no", slot_agent_is_in_scripted_mode, 1),
 					#           (str_store_troop_name, s1, ":agent_troop"),
 					#           (assign, reg0, ":agent_no"),
@@ -22444,6 +22515,11 @@ command_cursor_scripts = [
 		(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
     	(assign, "$savegame_version",3),
     (try_end),
+    (try_begin), #Kham - Oct 13, 2017
+    	(lt,"$savegame_version",4),
+		(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI
+    	(assign, "$savegame_version",4),
+    (try_end),
 ]),
 
 #Kham
@@ -22715,8 +22791,292 @@ command_cursor_scripts = [
 
 ## Kham Quest Scripts
 
+#Defend Refugee Quest
 
+("cf_init_quest_defend_refugees", [
+		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+		(eq, ":side", faction_side_good),
+		(ge, "$g_talk_troop_faction_relation", 0),
+		(this_or_next|neq, "$g_talk_troop_faction", "fac_lorien"), #Elves don't care about the refugees
+		(			  neq, "$g_talk_troop_faction", "fac_woodelf"), #Elves don't care about the refugees
+		(store_character_level, ":player_level", "trp_player"),
+		(is_between, ":player_level", 8, 16),
+		(assign, ":giver_center_no", -1),
+		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
+		(try_begin),
+			(gt, ":giver_party_no", 0),
+			(party_get_attached_to, ":giver_center_no", ":giver_party_no"),
+		(else_try),
+			(is_between, "$g_encountered_party", centers_begin, centers_end),
+			(assign, ":giver_center_no", "$g_encountered_party"),
+		(try_end),
+		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
+		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
 
+		(assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
+		(call_script, "script_cf_get_random_friendly_center_in_theater", "p_main_party",),
+		(assign, ":cur_target_center", reg0),
+		(store_faction_of_party, ":center_faction", ":cur_target_center"),
+		(this_or_next|neq, ":center_faction", "fac_lorien"),
+		(this_or_next|neq, ":center_faction", "fac_woodelf"),
+		(			  neq, ":center_faction", "fac_imladris"),
+		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
+		(ge, reg0, 10), 
+		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+
+		(assign, reg55, "pt_refugees"),			#quest_target_party_template
+		(assign, reg56, ":cur_object_center"),	#quest_object_center
+		(assign, reg57, ":cur_target_center"),	#quest_target_center
+		(assign, reg58, 8),						#quest_importance
+		(assign, reg59, 300),					#quest_xp_reward
+		(assign, reg60, 600),					#quest_gold_reward
+		(assign, reg61, 9),						#quest_rank_reward
+		(assign, reg62, 30),					#quest_expiration_days
+		(assign, reg63, 15),					#quest_dont_give_again_period
+]),
+
+("cf_quest_defend_refugees_party_creation", [
+      (quest_get_slot, ":quest_giver_center", "$random_quest_no", slot_quest_giver_center),
+      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+      (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
+
+      #Init Quest Global Vars here
+      (assign, "$qst_refugees_escaped", 0),
+      (assign, "$qst_refugees_killed", 0),
+      (assign, "$qst_raider_party_total", 0),
+      (assign, "$qst_refugee_party_1_escaped", 0),
+      (assign, "$qst_refugee_party_2_escaped", 0),
+      (assign, "$qst_refugee_party_3_escaped", 0),
+      (assign, "$qst_raider_party_defeated", 0),
+
+      (call_script, "script_find_theater", "p_main_party"),
+      (assign, ":theater", reg0),
+      (assign, ":raiders", "pt_mordor_scouts"),
+      (assign, ":guards", "pt_gondor_scouts"),
+      (try_begin),
+        (eq, ":theater", theater_SE),
+        (assign, ":raiders", "pt_mordor_scouts"),
+        (assign, ":guards", "pt_gondor_scouts"),
+      (else_try),
+        (eq, ":theater", theater_SW),
+        (assign, ":raiders", "pt_isengard_scouts_warg"),
+        (assign, ":guards", "pt_rohan_scouts"),
+      (else_try),
+        (eq, ":theater", theater_C),
+        (assign, ":raiders", "pt_gundabad_scouts"),
+        (assign, ":guards", "pt_beorn_scouts"),
+      (else_try),
+        (assign, ":raiders", "pt_rhun_scouts"),
+        (assign, ":guards", "pt_dale_scouts"),
+      (try_end),
+
+      (store_random_in_range, ":refugee_radius", 1, 5),
+      (set_spawn_radius, ":refugee_radius"),
+
+      #Refugee Party 1
+      (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
+      (assign, "$qst_refugee_party_1", reg0),
+      (party_add_template, "$qst_refugee_party_1", ":guards"),
+      (party_set_ai_behavior,"$qst_refugee_party_1",ai_bhvr_travel_to_party),
+      (party_set_ai_object,"$qst_refugee_party_1",":quest_target_center"),
+      (party_set_flags, "$qst_refugee_party_1", pf_default_behavior, 0),
+      #Refugee Party 2
+      (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
+      (assign, "$qst_refugee_party_2", reg0),
+      (party_add_template, "$qst_refugee_party_2", ":guards"),
+      (party_set_ai_behavior,"$qst_refugee_party_2",ai_bhvr_travel_to_party),
+      (party_set_ai_object,"$qst_refugee_party_2",":quest_target_center"),
+      (party_set_flags, "$qst_refugee_party_2", pf_default_behavior, 0),
+      #Refugee Party 3
+      (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
+      (assign, "$qst_refugee_party_3", reg0),
+      (party_add_template, "$qst_refugee_party_3", ":guards"),
+      (party_set_ai_behavior,"$qst_refugee_party_3",ai_bhvr_travel_to_party),
+      (party_set_ai_object,"$qst_refugee_party_3",":quest_target_center"),
+      (party_set_flags, "$qst_refugee_party_3", pf_default_behavior, 0),
+
+      (store_random_in_range, ":raider_radius", 1, 4),
+      (set_spawn_radius, ":raider_radius"),
+
+      #Raider Party 1
+      (spawn_around_party, ":quest_target_center", ":raiders"),
+      (assign, "$qst_raider_party_1", reg0),
+      (party_add_template, "$qst_raider_party_1", ":raiders"),
+      (party_add_template, "$qst_raider_party_1", ":raiders"),
+      (party_set_name, "$qst_raider_party_1", "@Raiders"),
+      (party_set_ai_behavior,"$qst_raider_party_1",ai_bhvr_attack_party),
+      (party_set_ai_object,"$qst_raider_party_1","$qst_refugee_party_1"),
+      (party_set_flags, "$qst_raider_party_1", pf_quest_party, 1),
+      (party_set_faction, "$qst_raider_party_1", "fac_manhunters"),
+      (party_set_ai_initiative, "$qst_raider_party_1", 10),
+      #Raider Party 2
+      (spawn_around_party, ":quest_target_center", ":raiders"),
+      (assign, "$qst_raider_party_2", reg0),
+      (party_add_template, "$qst_raider_party_2", ":raiders"),
+      (party_add_template, "$qst_raider_party_2", ":raiders"),
+      (party_set_name, "$qst_raider_party_2", "@Raiders"),
+      (party_set_ai_behavior,"$qst_raider_party_2",ai_bhvr_attack_party),
+      (party_set_ai_object,"$qst_raider_party_2","$qst_refugee_party_2"),
+      (party_set_flags, "$qst_raider_party_2", pf_quest_party, 1),
+      (party_set_faction, "$qst_raider_party_2", "fac_manhunters"),
+      (party_set_ai_initiative, "$qst_raider_party_2", 10),
+      #Raider Party 3
+      (spawn_around_party,":quest_target_center",":raiders"),
+      (assign, "$qst_raider_party_3", reg0),
+      (party_add_template, "$qst_raider_party_3", ":raiders"),
+      (party_add_template, "$qst_raider_party_3", ":raiders"),
+      (party_set_name, "$qst_raider_party_3", "@Raiders"),
+      (party_set_ai_behavior,"$qst_raider_party_3",ai_bhvr_attack_party),
+      (party_set_ai_object,"$qst_raider_party_3","$qst_refugee_party_3"),
+      (party_set_flags, "$qst_raider_party_3", pf_quest_party, 1),
+      (party_set_faction, "$qst_raider_party_3", "fac_manhunters"),
+      (party_set_ai_initiative, "$qst_raider_party_3", 10),
+
+      (set_relation, "fac_innocents", "fac_manhunters", -100),
+
+      (rest_for_hours, 1, 3),
+]),
+
+# Hunt Down Refugee Quest
+("cf_init_quest_hunt_refugees", [
+		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+		(neq, ":side", faction_side_good),
+		(ge, "$g_talk_troop_faction_relation", 0),
+		(store_character_level, ":player_level", "trp_player"),
+		(is_between, ":player_level", 8, 16),
+		(assign, ":giver_center_no", -1),
+		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
+		(try_begin),
+			(gt, ":giver_party_no", 0),
+			(party_get_attached_to, ":giver_center_no", ":giver_party_no"),
+		(else_try),
+			(is_between, "$g_encountered_party", centers_begin, centers_end),
+			(assign, ":giver_center_no", "$g_encountered_party"),
+		(try_end),
+		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
+		(neq, ":giver_center_no", "p_town_morannon"), #Morannon is too far from any fiefs.
+		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
+
+		(assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
+		(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
+		(assign, ":cur_target_center", reg0),
+		(store_faction_of_party, ":center_faction", ":cur_target_center"),
+		(this_or_next|neq, ":center_faction", "fac_lorien"),
+		(this_or_next|neq, ":center_faction", "fac_woodelf"),
+		(			  neq, ":center_faction", "fac_imladris"),
+		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
+		(le, reg0, 10), 
+		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+
+		(assign, reg55, "pt_refugees"),			#quest_target_party_template
+		(assign, reg56, ":cur_object_center"),	#quest_object_center
+		(assign, reg57, ":cur_target_center"),	#quest_target_center
+		(assign, reg58, 8),						#quest_importance
+		(assign, reg59, 300),					#quest_xp_reward
+		(assign, reg60, 600),					#quest_gold_reward
+		(assign, reg61, 9),						#quest_rank_reward
+		(assign, reg62, 30),					#quest_expiration_days
+		(assign, reg63, 15),					#quest_dont_give_again_period
+]),
+
+("cf_quest_hunt_refugees_party_creation", [
+      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+      (quest_get_slot, ":quest_target_party_template", "$random_quest_no", slot_quest_target_party_template),
+
+      #Init Quest Global Vars here
+      (assign, "$qst_refugees_escaped", 0),
+      (assign, "$qst_refugees_killed", 0),
+      (assign, "$qst_refugee_party_1_escaped", 0),
+      (assign, "$qst_refugee_party_2_escaped", 0),
+      (assign, "$qst_refugee_party_3_escaped", 0),
+
+      (call_script, "script_find_theater", "p_main_party"),
+      (assign, ":theater", reg0),
+      (assign, ":guards", "pt_gondor_scouts"),
+      (try_begin),
+        (eq, ":theater", theater_SE),
+        (assign, ":guards", "pt_gondor_scouts"),
+      (else_try),
+        (eq, ":theater", theater_SW),
+        (assign, ":guards", "pt_rohan_scouts"),
+      (else_try),
+        (eq, ":theater", theater_C),
+        (assign, ":guards", "pt_beorn_scouts"),
+      (else_try),
+        (assign, ":guards", "pt_dale_scouts"),
+      (try_end),
+
+      (store_random_in_range, ":refugee_radius", 25, 35),
+      (set_spawn_radius, ":refugee_radius"),
+
+      (store_character_level, ":level", "trp_player"),
+      #Refugee Party 1
+      (spawn_around_party,":quest_target_center",":quest_target_party_template"),
+      (assign, "$qst_refugee_party_1", reg0),
+      (party_add_template, "$qst_refugee_party_1", ":guards"),
+      (party_add_template, "$qst_refugee_party_1", ":guards"),
+      (try_begin),
+      	(ge, ":level", 12),
+      	(party_add_template, "$qst_refugee_party_1", ":guards"),
+      (try_end),
+      (party_set_ai_behavior,"$qst_refugee_party_1",ai_bhvr_travel_to_party),
+      (party_set_ai_object,"$qst_refugee_party_1",":quest_target_center"),
+      (party_set_flags, "$qst_refugee_party_1", pf_default_behavior, 0),
+      #Refugee Party 2
+      (spawn_around_party,":quest_target_center",":quest_target_party_template"),
+      (assign, "$qst_refugee_party_2", reg0),
+      (party_add_template, "$qst_refugee_party_2", ":guards"),
+      (party_add_template, "$qst_refugee_party_2", ":guards"),
+      (try_begin),
+      	(ge, ":level", 12),
+      	(party_add_template, "$qst_refugee_party_2", ":guards"),
+      (try_end),
+      (party_set_ai_behavior,"$qst_refugee_party_2",ai_bhvr_travel_to_party),
+      (party_set_ai_object,"$qst_refugee_party_2",":quest_target_center"),
+      (party_set_flags, "$qst_refugee_party_2", pf_default_behavior, 0),
+      #Refugee Party 3
+      (spawn_around_party,":quest_target_center",":quest_target_party_template"),
+      (assign, "$qst_refugee_party_3", reg0),
+      (party_add_template, "$qst_refugee_party_3", ":guards"),
+      (party_add_template, "$qst_refugee_party_3", ":guards"),
+      (try_begin),
+      	(ge, ":level", 12),
+      	(party_add_template, "$qst_refugee_party_3", ":guards"),
+      (try_end),
+      (party_set_ai_behavior,"$qst_refugee_party_3",ai_bhvr_travel_to_party),
+      (party_set_ai_object,"$qst_refugee_party_3",":quest_target_center"),
+      (party_set_flags, "$qst_refugee_party_3", pf_default_behavior, 0),
+
+]),
+
+#script_troop_talk_presentation
+#Shows a hero/enemy talking during battle
+#Inputs: 
+## store to s30 the text you want to show before calling the script.
+## $troop_talk_hero = troop ID for upper right portrait; 
+## $troop_talk_enemy for lower left portrait; 
+## $troop_talk_duration for how long it should last (miliseconds)
+#Output: Presentation
+
+("troop_talk_presentation", 
+	[
+		(store_script_param, ":troop_id", 1), #$troop_talk_hero
+		(store_script_param, ":duration", 2), #$troop_talk_duration
+		(store_script_param, ":alignment", 3), # 0 or 1
+		
+		(val_mul, ":duration", 100),
+		(assign, "$troop_talk_duration", ":duration"),
+
+		(try_begin),
+			(eq, ":alignment", 0), #Hero
+			(assign, "$troop_talk_hero", ":troop_id"),
+			(start_presentation, "prsnt_troop_talk_hero"),
+		(else_try),
+			(assign, "$troop_talk_enemy", ":troop_id"),
+			(start_presentation, "prsnt_troop_talk_enemy"),
+		(try_end),
+
+	])
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

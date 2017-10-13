@@ -406,4 +406,7 @@ party_templates = [
 ##Kham - Replacement Volunteer party template
 ("volunteers","Reserves",icon_generic_knight|pf_is_static,0,fac_commoners,merchant_personality,[]),
 
+##Kham - Refugee Quests
+("refugees","Refugees",icon_mule|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_innocents,merchant_personality,[(trp_farmer,6,7), (trp_peasant_woman,3,3)]),
+
 ] + common_warp_templates

@@ -1084,8 +1084,8 @@ tavern_travelers_end   = tavern_minstrels_begin
 lord_quests_begin = "qst_deliver_message"
 lord_quests_end   = "qst_follow_army"
 
-#lord_quests_begin_2 = "qst_blank_quest_01"
-#lord_quests_end_2	= "qst_blank_quest_16"
+lord_quests_begin_2 = "qst_blank_quest_01"
+lord_quests_end_2	= "qst_blank_quest_03"
 
 enemy_lord_quests_begin = lord_quests_end #no enemy lord quests at present in TLD, was "qst_lend_surgeon"
 enemy_lord_quests_end   = lord_quests_end

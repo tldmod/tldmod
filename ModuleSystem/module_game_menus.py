@@ -3111,7 +3111,7 @@ game_menus = [
 
 ## Kham Test End
 ( "game_options",0,
-	"^^^^^^^^Click on an option to toggle:","none",[],
+	"^^^^^^^^Click on an option to toggle:","none",[(try_begin), (lt, "$savegame_version",4),(call_script, "script_update_savegame"), (try_end)],
     [
 
     ("game_options_war_level_start",[
@@ -3135,6 +3135,11 @@ game_menus = [
 								(else_try),(str_store_string, s7, "@OFF"),(try_end),
         ],"Battle formations and AI:  {s7}",[
         (store_sub, "$tld_option_formations", 1, "$tld_option_formations"),(val_clamp, "$tld_option_formations", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
+
+    ("game_options_siege_ai",[(try_begin),(neq, "$advanced_siege_ai", 0),(str_store_string, s7, "@ON"),
+								(else_try),(str_store_string, s7, "@Native"),(try_end),
+        ],"Advanced Siege AI:  {s7}",[
+        (store_sub, "$advanced_siege_ai", 1, "$advanced_siege_ai"),(val_clamp, "$advanced_siege_ai", 0, 2),(jump_to_menu, "mnu_auto_options"),]),
 
 	("game_options_town_menu",[(try_begin),(eq, "$tld_option_town_menu_hidden", 0),(str_store_string, s7, "@ON"),
 								 (else_try),(str_store_string, s7, "@OFF"),(try_end),
@@ -3751,6 +3756,8 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
+	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
+	("cheat_attack_refugees",[],"Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
 	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
 	("spears",[],"Lost Spears",[(assign,"$cheat_imposed_quest","qst_find_lost_spears")]),
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
@@ -4327,7 +4334,10 @@ game_menus = [
       ("encounter_attack",[
           (this_or_next|eq, 		"$encountered_party_friendly", 0),
 		  (this_or_next|is_between, "$g_encountered_party_template", "pt_wild_troll" ,"pt_looters"),
-		  (				eq, 		"$g_encountered_party_template", "pt_ring_hunters"),
+		  (this_or_next|eq, 		"$g_encountered_party_template", "pt_ring_hunters"),
+		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_1"),
+		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_2"),
+		  ( 			eq,			"$g_encountered_party", "$qst_raider_party_3"),
 ##           (neg|troop_is_wounded, "trp_player"), #a test: what happes if I let player partecipate? #Kham - let's have the player participate
 ##          (store_troop_health,reg(5)),
 ##          (ge,reg(5),5),
@@ -5368,6 +5378,18 @@ game_menus = [
 		(try_end),
 		## Kham - Eliminate Patrols Assist END
 
+		## Kham - Refugees Quest Start
+
+		(try_begin),
+			(check_quest_active, "qst_blank_quest_01"),
+			(this_or_next|eq, "$g_enemy_party", "$qst_raider_party_1"),
+			(this_or_next|eq, "$g_enemy_party", "$qst_raider_party_2"),
+			(			  eq, "$g_enemy_party", "$qst_raider_party_3"),
+			(val_add, "$qst_raider_party_defeated", 1),
+		(try_end),
+
+		## Kham - Refugees Quest End
+
       ],
     [("continue",[],"Continue...",[(change_screen_return)]),]
  ),
@@ -5559,6 +5581,16 @@ game_menus = [
           (store_relation, ":defender_relation", ":defender_faction", "fac_player_supporters_faction"),
           (ge, ":defender_relation", 0),
           (lt, ":attacker_relation", 0),
+          ],
+          "Rush to the aid of the {s1}.",[
+              (select_enemy,1),
+              (assign,"$g_enemy_party","$g_encountered_party_2"),
+              (assign,"$g_ally_party","$g_encountered_party"),
+              (jump_to_menu,"mnu_join_battle")]),
+      ("pre_join_help_refugees",[
+         (this_or_next|eq, "$g_encountered_party_2", "$qst_raider_party_1"),
+         (this_or_next|eq, "$g_encountered_party_2", "$qst_raider_party_2"),
+         (			   eq, "$g_encountered_party_2", "$qst_raider_party_3"),
           ],
           "Rush to the aid of the {s1}.",[
               (select_enemy,1),
@@ -5914,7 +5946,15 @@ game_menus = [
            (val_div, reg0, 3), #scale down the advantage a bit in sieges.
            (set_battle_advantage, reg0),
            (set_party_battle_mode),
-           (set_jump_mission,"mt_castle_attack_walls_ladder"),
+           (assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+           (try_begin),
+           	(eq, "$advanced_siege_ai",1),
+           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+           (else_try),
+           	(eq, "$advanced_siege_ai", 0),
+           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder_native"),
+           (try_end),
+           (set_jump_mission,":siege_mission"),
            (jump_to_scene,":battle_scene"),
            (assign, "$g_siege_final_menu", "mnu_besiegers_camp_with_allies"), 
            (assign, "$g_siege_battle_state", 1),
@@ -6257,7 +6297,15 @@ game_menus = [
 		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
 		 (set_battle_advantage, reg0),
 		 (set_party_battle_mode),
-		 (set_jump_mission,"mt_castle_attack_walls_ladder"),
+ 		 (assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+           (try_begin),
+           	(eq, "$advanced_siege_ai",1),
+           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+           (else_try),
+           	(eq, "$advanced_siege_ai", 0),
+           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder_native"),
+           (try_end),
+           (set_jump_mission,":siege_mission"),
 		 (jump_to_scene,":battle_scene"),
 		 (assign, "$g_siege_final_menu", "mnu_player_initiated_siege_result"),
 		 (assign, "$g_siege_battle_state", 1),
@@ -6576,8 +6624,16 @@ game_menus = [
 #           (else_try),
 #             (party_slot_eq, "$current_town", slot_center_siege_with_belfry, 1),
 #             (set_jump_mission,"mt_castle_attack_walls_belfry"),
-           (else_try),
-             (set_jump_mission,"mt_castle_attack_walls_ladder"),
+		   (else_try),
+			(assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+			(try_begin),
+				(eq, "$advanced_siege_ai",1),
+				(assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+			(else_try),
+				(eq, "$advanced_siege_ai", 0),
+				(assign, ":siege_mission", "mt_castle_attack_walls_ladder_native"),
+			(try_end),
+			(set_jump_mission,":siege_mission"),
            (try_end),
            (assign, "$cant_talk_to_enemy", 0),           
            (assign, "$g_siege_final_menu", "mnu_castle_besiege"),
@@ -7094,7 +7150,15 @@ game_menus = [
 #                (party_slot_eq, "$current_town", slot_center_siege_with_belfry, 1),
 #                (set_jump_mission,"mt_castle_attack_walls_belfry"),
 #              (else_try),
-                (set_jump_mission,"mt_castle_attack_walls_ladder"),
+              (assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+	          (try_begin),
+	           	(eq, "$advanced_siege_ai",1),
+	           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+	          (else_try),
+	           	(eq, "$advanced_siege_ai", 0),
+	           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder_native"),
+	          (try_end),
+	          (set_jump_mission,":siege_mission"),
 #              (try_end),
               (jump_to_scene,":battle_scene"),
               (assign, "$g_next_menu", "mnu_siege_started_defender"),
@@ -7713,7 +7777,15 @@ game_menus = [
 		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
 		 (set_battle_advantage, reg0),
 		 (set_party_battle_mode),
-		 (set_jump_mission,"mt_castle_attack_walls_ladder"),
+ 		 (assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+         (try_begin),
+           	(eq, "$advanced_siege_ai",1),
+           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
+         (else_try),
+           	(eq, "$advanced_siege_ai", 0),
+           	(assign, ":siege_mission", "mt_castle_attack_walls_ladder_native"),
+         (try_end),
+         (set_jump_mission,":siege_mission"),
 		 (jump_to_scene,":battle_scene"),
 		 (assign, "$g_siege_final_menu", "mnu_player_initiated_siege_result"),
 		 (assign, "$g_siege_battle_state", 1),
@@ -9623,6 +9695,36 @@ game_menus = [
     (try_end),
     ],[]
  ),
+###################### Cannibalism / Elves Leaving  END (Kham) ##################################
+###################### Defend / Attack Refugees  START (Kham)  ##################################
+
+("refugees_quest",0,
+	"{s1}","none", 
+   [(this_or_next|check_quest_active, "qst_blank_quest_01"),
+    (			  check_quest_active, "qst_blank_quest_02"),
+   	(try_begin),
+   		(check_quest_active, "qst_blank_quest_01"),
+   		(assign, ":quest", "qst_blank_quest_01"),
+   	(else_try),
+   		(assign, ":quest", "qst_blank_quest_02"),
+   	(try_end),
+   	(quest_get_slot, ":quest_target_center", ":quest", slot_quest_target_center),
+    (quest_get_slot, ":quest_object_center", ":quest", slot_quest_object_center),
+    (str_store_party_name, s2, ":quest_object_center"),
+    (str_store_party_name, s3, ":quest_target_center"),
+    (try_begin),
+    	(eq, ":quest", "qst_blank_quest_01"),
+    	(str_store_string, s1, "@^^^^^^^You come upon the refugees leaving {s2} and on their way to {s3}. ^^They are mostly the old and the infirmed, accompanied by women and children.^^ There are guards, but not enough to protect everyone from a raid."),
+    (else_try),
+    	(str_store_string, s1, "@^^^^^^^You come upon the refugees you have been tracking since {s2}. They seem to be on their way to {s3}, and are mostly the old and the infirmed. ^^ There are few guards, but not enough to stop you and your men from killing all of them."),
+    (try_end),
+    ],
+   [("defend_refugees" ,[(check_quest_active, "qst_blank_quest_01")],"Keep your eye out for raiders...",[(change_screen_map)]),
+    ("attack_refugees" ,[(check_quest_active, "qst_blank_quest_02")],"Attack the refugee train...",[(jump_to_menu, "mnu_simple_encounter")]),
+   ],
+ ),
+###################### Defend / Attack Refugees  END (Kham)  ##################################
+
 
 ( "custom_battle_choose_faction1",0,
     "^^^^^^^^^^Choose your side and advantage:", "none", [(set_background_mesh, "mesh_relief01")],
