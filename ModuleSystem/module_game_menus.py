@@ -6332,6 +6332,7 @@ game_menus = [
                                                    # ]),
  ]+concatenate_scripts([[	  
       ("town_sneak",[(eq, cheat_switch, 1),
+					(eq, "$cheat_mode", 1),
 					 (party_slot_eq,"$g_encountered_party", slot_party_type,spt_town),
                      (eq,"$entry_to_town_forbidden",1),
                      (eq,"$cant_sneak_into_town",0)],
@@ -7798,11 +7799,11 @@ game_menus = [
 
 #      ("siege_leave",[(eq, "$g_defending_against_siege", 1)],"Try to break out...",[(jump_to_menu,"mnu_siege_break_out")]),#TODO: Go to Menu here.
  ]+concatenate_scripts([[ 
-     ("town_cheat_alley",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
-							(party_get_slot, reg(11), "$current_town", slot_town_alley),
-							(set_jump_mission,"mt_ai_training"),
-							(jump_to_scene,reg(11)),
-							(change_screen_mission)]),
+ #    ("town_cheat_alley",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1)], "CHEAT: Go to the alley.",[
+#							(party_get_slot, reg(11), "$current_town", slot_town_alley),
+#							(set_jump_mission,"mt_ai_training"),
+#							(jump_to_scene,reg(11)),
+#							(change_screen_mission)]),
       ("castle_cheat_interior",[(eq, cheat_switch, 1),(eq, "$cheat_mode", 1)], "CHEAT! Interior.",[
 							(set_jump_mission,"mt_ai_training"),
 							(party_get_slot, ":castle_scene", "$current_town", slot_town_castle),
@@ -7843,17 +7844,17 @@ game_menus = [
 				   [   (assign,"$g_player_besiege_town","$g_encountered_party"),
 					   (jump_to_menu, "mnu_castle_besiege"),
 					   ]),
-      ("center_reports",[(eq, "$cheat_mode", 1),], "CHEAT: Show reports.",
-						[(jump_to_menu,"mnu_center_reports")]),
-      ("sail_from_port",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1),#(party_slot_eq,"$current_town",slot_town_near_shore, 1),
-                        ], "CHEAT: Sail from port.",
-						[(assign, "$g_player_icon_state", pis_ship),
-						(party_set_flags, "p_main_party", pf_is_ship, 1),
-						(party_get_position, pos1, "p_main_party"),
-						(map_get_water_position_around_position, pos2, pos1, 6),
-						(party_set_position, "p_main_party", pos2),
-						(assign, "$g_main_ship_party", -1),
-						(change_screen_return)]),
+#      ("center_reports",[(eq, "$cheat_mode", 1),], "CHEAT: Show reports.",
+#						[(jump_to_menu,"mnu_center_reports")]),
+#    ("sail_from_port",[(eq, cheat_switch, 1),(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$cheat_mode", 1),#(party_slot_eq,"$current_town",slot_town_near_shore, 1),
+#                       ], "CHEAT: Sail from port.",
+#						[(assign, "$g_player_icon_state", pis_ship),
+#						(party_set_flags, "p_main_party", pf_is_ship, 1),
+#						(party_get_position, pos1, "p_main_party"),
+#						(map_get_water_position_around_position, pos2, pos1, 6),
+#						(party_set_position, "p_main_party", pos2),
+#						(assign, "$g_main_ship_party", -1),
+#						(change_screen_return)]),
  ] for ct in range(cheat_switch)])+[
 
  ]+concatenate_scripts([[ 

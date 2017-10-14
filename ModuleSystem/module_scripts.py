@@ -10630,7 +10630,10 @@ scripts = [
 			(try_end),
 		(try_end),
 	(try_end),
-	(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
+	(try_begin),
+		(eq, "$cheat_mode", 1),
+		(assign, reg10,":scene_to_use"), (display_message,"@debug: using scene ID N. {reg10}"),
+	(try_end),
 	(jump_to_scene,":scene_to_use"),
 
 ]),
