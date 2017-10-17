@@ -3114,6 +3114,8 @@ mission_templates = [ # not used in game
       (agent_get_team, ":reinforcement_team", ":agent_no"),
       (try_begin),
         (eq, "$gate_breached", 1),
+        (store_random_in_range, ":random", 0, 100),
+        (le, ":random", 75), #75% Chance troop is asked to go through the portal. Other than that, go to team destinations.
         (entry_point_get_position, pos10, 42),
         (agent_set_scripted_destination, ":agent_no", pos10),
         ] + (is_a_wb_mt==1 and [
@@ -5273,6 +5275,195 @@ mission_templates = [ # not used in game
 
 tld_animal_strikes,
 tld_remove_riderless_animals,
+
+]),
+
+( "hunt_down_refugees",mtf_battle_mode,charge,
+  "You attack the refugee train.",
+  [(1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,18,[]),(0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,18,[]),(4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
+     (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 5th entry, for WARGS
+     (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 6th entry, for WARGS
+     (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 7th entry, for WARGS
+     (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry, for WARGS
+    ],
+    tld_common_wb_muddy_water +
+    formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts + command_cursor_sub_mod + [
+  common_battle_tab_press,
+  common_music_situation_update,
+  (0,0,ti_once,[],[]),
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_battle_on_player_down,
+  common_battle_inventory,
+  (ti_question_answered, 0, 0, [],[
+      (store_trigger_param_1,":answer"),
+      (eq,":answer",0),
+      (assign, "$pin_player_fallen", 0),
+      (try_begin),
+        (store_mission_timer_a, ":elapsed_time"),
+        (gt, ":elapsed_time", 20),
+        (str_store_string, s5, "str_retreat"),
+        (call_script, "script_simulate_retreat", 10, 20),
+      (try_end),
+      (call_script, "script_count_mission_casualties_from_agents"),
+      (finish_mission,0)]),
+  (ti_before_mission_start, 0, 0, [],[(team_set_relation, 0, 2, 1),(team_set_relation, 1, 3, 1), (team_set_relation, 0,4,-1), (team_set_relation, 1,4,-1),(call_script, "script_place_player_banner_near_inventory_bms")]),
+  (0,0,ti_once,[],[
+      (assign,"$battle_won",0),
+      (assign,"$defender_reinforcement_stage",0),
+      (assign,"$attacker_reinforcement_stage",0),
+      (assign,"$g_presentation_battle_active", 0),
+      (call_script, "script_place_player_banner_near_inventory"),
+      (call_script, "script_combat_music_set_situation_with_culture"),
+      # ambience sounds
+      (try_begin),(is_currently_night),(play_sound, "$bs_night_sound", sf_looping),
+       (else_try),           (play_sound, "$bs_day_sound",   sf_looping),
+      (try_end),
+      (get_player_agent_no, "$current_player_agent"),
+      (agent_get_horse,"$horse_player","$current_player_agent"), #checks for horse lameness in mission
+      (troop_get_inventory_slot_modifier,"$horse_mod","trp_player",8),
+      ]),
+  (1, 0, 5,  [
+      (lt,"$defender_reinforcement_stage",8),
+      (store_mission_timer_a,":mission_time"),
+      (ge,":mission_time",10),
+      (store_normalized_team_count,":num_defenders", 0),
+      (lt,":num_defenders",10)
+      ],[
+      (add_reinforcements_to_entry,0,10),
+      (val_add,"$defender_reinforcement_stage",1)]),
+  (1, 0, 5, [
+      (lt,"$attacker_reinforcement_stage",8),
+      (store_mission_timer_a,":mission_time"),
+      (ge,":mission_time",10),
+      (store_normalized_team_count,":num_attackers", 1),
+      (lt,":num_attackers",10)
+      ],[
+      (add_reinforcements_to_entry,3,10),]),
+  
+  (5, 0, ti_once, [
+      (store_mission_timer_a, ":mission_time_a"),
+      (store_random_in_range, ":ran_time", 45, 90),
+      (ge, ":mission_time_a", ":ran_time"), #Random time between 45 - 90 secs
+      ],[
+      
+      (call_script, "script_find_theater", "p_main_party"),
+
+      (assign, ":theater", reg0),
+      (assign, ":interloper", 0),  #Interloper 0 = Default = Tribal Orcs
+      (assign, ":interloper_1", "trp_tribal_orc_warrior"),
+      (assign, ":interloper_2", "trp_tribal_orc"),
+
+      (store_random_in_range, ":random", 0, 100),
+
+      (try_begin),
+        (lt, ":random", 10), #10% Chance it is a troll!
+        (assign, ":interloper", 2), #Interloper 2 = Trolls
+        (assign, ":interloper_1", "trp_troll_of_moria"),
+        (assign, ":interloper_2", "trp_troll_of_moria"),
+      (else_try),
+        (is_between, ":random", 10, 36), #25% Chance it is an interloper from another Evil Faction
+        (assign, ":interloper", 1), #Interloper 1 = Evil Faction
+        (try_begin),
+          (eq, ":theater", theater_SE),
+          (assign, ":interloper_1", "trp_warg_rider_of_gorgoroth"),
+          (assign, ":interloper_2", "trp_orc_tracker_of_mordor"),
+          (str_store_faction_name, s31, "fac_mordor"),
+        (else_try),
+          (eq, ":theater", theater_SW),
+          (assign, ":interloper_1", "trp_warg_rider_of_isengard"),
+          (assign, ":interloper_2", "trp_large_uruk_hai_tracker"),
+          (str_store_faction_name, s31, "fac_isengard"),
+        (else_try),
+          (eq, ":theater", theater_C),
+          (assign, ":interloper_1", "trp_warg_rider_gundabad"),
+          (assign, ":interloper_2", "trp_keen_eyed_goblin_archer_gundabad"),
+          (str_store_faction_name, s31, "fac_gundabad"),
+        (else_try),
+          (assign, ":interloper_1", "trp_rhun_veteran_swift_horseman"),
+          (assign, ":interloper_2", "trp_rhun_veteran_horse_archer"),
+          (str_store_faction_name, s31, "fac_rhun"),
+        (try_end),
+      (else_try),
+        (is_between, ":random", 36, 61), #25% Chance it is good reinforcements
+        (assign, ":interloper", 3), #Interloper 3 = Good Faction
+        (try_begin),
+          (eq, ":theater", theater_SE),
+          (assign, ":interloper_1", "trp_squire_of_gondor"),
+          (assign, ":interloper_2", "trp_gondor_swordsmen"),
+          (str_store_faction_name, s31, "fac_gondor"),
+        (else_try),
+          (eq, ":theater", theater_SW),
+          (assign, ":interloper_1", "trp_veteran_skirmisher_of_rohan"),
+          (assign, ":interloper_2", "trp_squire_of_rohan"),
+          (str_store_faction_name, s31, "fac_rohan"),
+        (else_try),
+          (eq, ":theater", theater_C),
+          (assign, ":interloper_1", "trp_woodmen_skilled_forester"),
+          (assign, ":interloper_2", "trp_woodmen_scout"),
+          (str_store_faction_name, s31, "fac_beorn"),
+        (else_try),
+          (assign, ":interloper_1", "trp_laketown_scout"),
+          (assign, ":interloper_2", "trp_dale_pikeman"),
+          (str_store_faction_name, s31, "fac_dale"),
+        (try_end),
+      (try_end), #40% chance for tribal orcs 
+
+      (try_begin),
+        (eq, ":interloper", 0),
+        (assign, ":range_end", 30),
+        (assign, ":team", 4),
+        (display_message, "@A band of tribal orcs have appeared!", color_bad_news),
+        (str_store_string, s30, "@Gaaaar!! We wants those human meat!"),
+        (call_script, "script_troop_talk_presentation", ":interloper_1", 7, 0),
+      (else_try),
+        (eq, ":interloper", 1),
+        (assign, ":range_end", 20),
+        (assign, ":team", 4),
+        (display_message, "@{s31} scouts have appeared!", color_bad_news),
+        (str_store_string, s30, "@Those are ours! We have been tracking them since they left! No one stands in our way!"),
+        (call_script, "script_troop_talk_presentation", ":interloper_1", 7, 0),
+      (else_try),
+        (eq, ":interloper", 2),
+        (assign, ":range_end", 3),
+        (assign, ":team", 4),
+        (display_message, "@Trolls appeared!"),
+        (str_store_string, s30, "@Gaaaar!!"),
+        (call_script, "script_troop_talk_presentation", ":interloper_1", 7, 0),
+      (else_try),
+        (eq, ":interloper", 3),
+        (assign, ":range_end", 20),
+        (assign, ":team", 1),
+        (display_message, "@{s31} scouts have appeared to aid the refugees!"),
+        (str_store_string, s30, "@Hurry, men! Help the refugees! Kill all the scum and do not let them escape!"),
+        (call_script, "script_troop_talk_presentation", ":interloper_1", 7, 0),
+      (try_end),
+
+      (get_player_agent_no, ":player"),
+      (call_script, "script_find_exit_position_at_pos4", ":player"),
+      (set_spawn_position, pos4), 
+
+      (try_for_range, ":unused", 0, ":range_end"),
+        (store_random_in_range, ":rnd_troop", 0,100),
+        (le, ":rnd_troop", 50),
+        (spawn_agent, ":interloper_1"),
+        (agent_set_team, reg0, ":team"),
+      (else_try),
+        (spawn_agent, ":interloper_2"),
+        (agent_set_team, reg0, ":team"),
+      (try_end),
+
+]),
+
+  #AI Triggers
+  (0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
+      (call_script, "script_select_battle_tactic"),
+      (call_script, "script_battle_tactic_init")]),
+  (5, 0, 0, [(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
 
 ]),
 

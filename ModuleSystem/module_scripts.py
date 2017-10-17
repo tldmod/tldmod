@@ -11952,7 +11952,22 @@ scripts = [
 		(mission_tpl_entry_set_override_flags, "mt_lead_charge", 3, af_override_horse),	
 	(try_end),	
 	(set_party_battle_mode),
-	(set_jump_mission,"mt_lead_charge"),
+    
+    (assign, ":mission", "mt_lead_charge"),
+
+    #Kham - Edited to accommodate new MTs for quests.
+    (try_begin),
+    	(check_quest_active, "qst_blank_quest_02"),
+    	(this_or_next|eq, "$g_encountered_party", "$qst_refugee_party_1"),
+    	(this_or_next|eq, "$g_encountered_party", "$qst_refugee_party_2"),
+    	(			  eq, "$g_encountered_party", "$qst_refugee_party_3"),
+    	(assign, ":mission", "mt_hunt_down_refugees"),
+    (else_try),
+    	(assign, ":mission", "mt_lead_charge"),
+    (try_end),
+	(set_jump_mission,":mission"),
+	#Kham - End
+	
 	(call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
 	(assign, "$g_next_menu", "mnu_simple_encounter"), 
 	(jump_to_menu, "mnu_battle_debrief"),
@@ -22968,7 +22983,7 @@ command_cursor_scripts = [
 		(this_or_next|neq, ":center_faction", "fac_woodelf"),
 		(			  neq, ":center_faction", "fac_imladris"),
 		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
-		(le, reg0, 10), 
+		(le, reg0, 20), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
 
 		(assign, reg55, "pt_refugees"),			#quest_target_party_template

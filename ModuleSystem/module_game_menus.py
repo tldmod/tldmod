@@ -9722,6 +9722,7 @@ game_menus = [
     ],
    [("defend_refugees" ,[(check_quest_active, "qst_blank_quest_01")],"Keep your eye out for raiders...",[(change_screen_map)]),
     ("attack_refugees" ,[(check_quest_active, "qst_blank_quest_02")],"Attack the refugee train...",[(jump_to_menu, "mnu_simple_encounter")]),
+    ("leave_refugees",  [(check_quest_active, "qst_blank_quest_02")],"Leave them for now...", [(change_screen_map)]),
    ],
  ),
 ###################### Defend / Attack Refugees  END (Kham)  ##################################

@@ -223,6 +223,7 @@ morale_scripts = [
 		
 		(try_begin),
 			(agent_get_party_id, ":party_no", ":agent_no"),
+			(eq, ":party_no", "p_main_party"), #Only for Player Troops, so there are less AI routing.
 			(ge, ":party_no", 0),
 			(party_get_morale, ":map_morale", ":party_no"),
 			(try_begin),

@@ -2674,7 +2674,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
                         (check_quest_failed, "qst_blank_quest_01"),],
 "{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...", "lord_defend_refugees_failed", []],
 
-[anyone|plyr,"lord_defend_refugees_failed", [],
+[anyone|plyr,"lord_defend_refugees_failed", [(str_store_troop_name, s65, "$g_talk_troop")],
    "Forgive me, {s65}, I was unable to defend them.", "lord_defend_refugees_failed_1a", []],
 
 [anyone,"lord_defend_refugees_failed_1a", [],
@@ -2720,6 +2720,58 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 [anyone|plyr,"lord_defend_refugees_half_completed", [], "I will be more prepared next time, {s65}. ", "lord_pretalk", []],
 
 ## Defend Refugees Completion Dialogues END - Kham
+
+## Hunt Down Refugees Completion Dialogues - Kham
+
+[anyone,"lord_start", [(check_quest_active,"qst_blank_quest_02"),
+                       (check_quest_succeeded, "qst_blank_quest_02")],
+"I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.", "lord_generic_mission_completed",
+   [(call_script, "script_finish_quest", "qst_blank_quest_02", 100),
+    (call_script, "script_cf_get_random_enemy_center_in_theater","p_main_party"),
+    (store_faction_of_party, ":faction", reg0),
+    (str_store_faction_name, s1, ":faction"),
+    (faction_get_slot,":enemy_strength",":faction",slot_faction_strength_tmp),
+    (val_sub, ":enemy_strength", 75), #75 Str Points reduction for completing the quest
+    (display_message, "@Killing the refugees from {s1} and enslaving the survivors have demoralized their people ({s1} has lost {reg19} faction strength).", color_good_news),
+    (faction_set_slot,":faction",slot_faction_strength_tmp,":enemy_strength"), ]],
+
+[anyone,"lord_start", [ (check_quest_active,"qst_blank_quest_02"),
+                        (check_quest_failed, "qst_blank_quest_02"),],
+"{playername}, our spies tell us that you failed in intercepting all of the refugee trains. They are weak and slow, and still you fail. What use are you?", "lord_hunt_refugees_failed", []],
+
+[anyone|plyr,"lord_hunt_refugees_failed", [(str_store_troop_name, s65, "$g_talk_troop")],
+   "They were slippery, {s65}. I was unable to track them down.", "lord_hunt_refugees_failed_1", []],
+
+[anyone,"lord_hunt_refugees_failed_1", [],
+"Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.", "lord_pretalk",
+   [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
+    (call_script, "script_end_quest", "qst_blank_quest_02"),
+    (assign, reg18, "$qst_refugees_killed"),
+    (call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party"),
+    (store_faction_of_party, ":faction", reg0),
+    (str_store_faction_name, s1, ":faction"),
+    (faction_get_slot, ":enemy_strength", ":faction", slot_faction_strength_tmp),
+    (store_mul, ":reduction", 15, reg18), #15 victory points per refugee party killed
+    (assign, reg19, ":reduction"),
+    (assign, reg20, "$qst_refugees_escaped"),
+    (val_sub, ":enemy_strength", ":reduction"),
+    (try_begin),
+      (ge, "$qst_refugees_escaped",1),
+      (assign, ":vp", 20),
+    (else_try),
+      (assign, ":vp", 30),
+    (try_end),
+    (val_add, ":enemy_strength", ":vp"), #VP for enemy depends if there were refugees that escaped.
+    (assign, reg22, ":vp"),
+    (display_message, "@{reg20} refugee trains escaped and improved the enemy's morale ({s1} has gained {reg22} faction strength).", color_bad_news),
+    (try_begin),
+      (ge, "$qst_refugees_killed",1),
+      (display_message, "@You did, however, defeated {reg18} refugee trains, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
+    (try_end),
+    (faction_set_slot, ":faction", slot_faction_strength_tmp, ":enemy_strength"), ]],
+
+
+## Hunt Down Refugees Completion Dialogues END - Kham
 
 
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
@@ -6569,7 +6621,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 ## Hunt Down Refugees INIT START
 [anyone,"lord_tell_mission", [
   (eq,"$random_quest_no","qst_blank_quest_02"),
-  (quest_get_slot, ":quest_target_center", "qst_blank_quest_01", slot_quest_target_center),
+  (quest_get_slot, ":quest_target_center", "qst_blank_quest_02", slot_quest_target_center),
   (str_store_party_name, s6, ":quest_target_center")],
  "Our spies tell us that there are refugees on their way to {s6}. They will be slow because of all the old, the sick, and the dying. Hunt them down, kill all the men, and take everyone else as slaves. Make sure none arrive at their destination!", "lord_mission_told",[
        (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
