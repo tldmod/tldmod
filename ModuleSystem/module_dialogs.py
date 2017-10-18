@@ -2656,7 +2656,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 ## Defend Refugees Completion Dialogues - Kham
 
 [anyone,"lord_start", [(check_quest_active,"qst_blank_quest_01"),
-                       (check_quest_succeeded, "qst_blank_quest_01")],
+                       (check_quest_succeeded, "qst_blank_quest_01"),
+                       (quest_get_slot, ":quest_giver", "qst_blank_quest_01", slot_quest_giver_troop),
+                       (eq, ":quest_giver", "$g_talk_troop"),],
 "I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.", "lord_generic_mission_completed",
    [(call_script, "script_finish_quest", "qst_blank_quest_01", 100),
     (assign, reg18, "$qst_raider_party_defeated"),
@@ -2671,7 +2673,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (faction_set_slot,":faction",slot_faction_strength_tmp,":enemy_strength"), ]],
 
 [anyone,"lord_start", [ (check_quest_active,"qst_blank_quest_01"),
-                        (check_quest_failed, "qst_blank_quest_01"),],
+                        (check_quest_failed, "qst_blank_quest_01"),
+                        (quest_get_slot, ":quest_giver", "qst_blank_quest_01", slot_quest_giver_troop),
+                        (eq, ":quest_giver", "$g_talk_troop"),],
 "{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...", "lord_defend_refugees_failed", []],
 
 [anyone|plyr,"lord_defend_refugees_failed", [(str_store_troop_name, s65, "$g_talk_troop")],
@@ -2696,6 +2700,8 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone,"lord_start", [(check_quest_active,"qst_blank_quest_01"),
                        (check_quest_concluded, "qst_blank_quest_01"),
+                       (quest_get_slot, ":quest_giver", "qst_blank_quest_01", slot_quest_giver_troop),
+                       (eq, ":quest_giver", "$g_talk_troop"),
                        (assign, reg17, "$qst_refugees_escaped")],
 "I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There will be more events such as these, {playername}. I hope you are more prepared next time.", "lord_defend_refugees_half_completed",
    [(store_mul, ":completion", "$qst_refugees_escaped", 100),
@@ -2724,7 +2730,9 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 ## Hunt Down Refugees Completion Dialogues - Kham
 
 [anyone,"lord_start", [(check_quest_active,"qst_blank_quest_02"),
-                       (check_quest_succeeded, "qst_blank_quest_02")],
+                       (check_quest_succeeded, "qst_blank_quest_02"),
+                       (quest_get_slot, ":quest_giver", "qst_blank_quest_02", slot_quest_giver_troop),
+                       (eq, ":quest_giver", "$g_talk_troop")],
 "I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.", "lord_generic_mission_completed",
    [(call_script, "script_finish_quest", "qst_blank_quest_02", 100),
     (call_script, "script_cf_get_random_enemy_center_in_theater","p_main_party"),
@@ -2736,8 +2744,11 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (faction_set_slot,":faction",slot_faction_strength_tmp,":enemy_strength"), ]],
 
 [anyone,"lord_start", [ (check_quest_active,"qst_blank_quest_02"),
-                        (check_quest_failed, "qst_blank_quest_02"),],
-"{playername}, our spies tell us that you failed in intercepting all of the refugee trains. They are weak and slow, and still you fail. What use are you?", "lord_hunt_refugees_failed", []],
+                        (check_quest_failed, "qst_blank_quest_02"),
+                        (quest_get_slot, ":quest_giver", "qst_blank_quest_02", slot_quest_giver_troop),
+                        (eq, ":quest_giver", "$g_talk_troop"),
+                        (assign, reg1, "$qst_refugees_escaped")],
+"{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?", "lord_hunt_refugees_failed", []],
 
 [anyone|plyr,"lord_hunt_refugees_failed", [(str_store_troop_name, s65, "$g_talk_troop")],
    "They were slippery, {s65}. I was unable to track them down.", "lord_hunt_refugees_failed_1", []],

@@ -3966,7 +3966,7 @@ scripts = [
 			(try_end),
 	(else_try),
 		(eq, ":template_no", "pt_refugees"),
-		(set_trigger_result, 45),
+		(set_trigger_result, 55),
 	(else_try),                                   
 		(set_trigger_result, 100),
 	(try_end),	
@@ -11967,7 +11967,7 @@ scripts = [
     (try_end),
 	(set_jump_mission,":mission"),
 	#Kham - End
-	
+
 	(call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
 	(assign, "$g_next_menu", "mnu_simple_encounter"), 
 	(jump_to_menu, "mnu_battle_debrief"),
@@ -22828,16 +22828,19 @@ command_cursor_scripts = [
 			(is_between, "$g_encountered_party", centers_begin, centers_end),
 			(assign, ":giver_center_no", "$g_encountered_party"),
 		(try_end),
-		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
+		#(gt, ":giver_center_no", 0),#Skip if lord is outside the center
 		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
 
 		(assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
 		(call_script, "script_cf_get_random_friendly_center_in_theater", "p_main_party",),
 		(assign, ":cur_target_center", reg0),
 		(store_faction_of_party, ":center_faction", ":cur_target_center"),
-		(this_or_next|neq, ":center_faction", "fac_lorien"),
-		(this_or_next|neq, ":center_faction", "fac_woodelf"),
-		(			  neq, ":center_faction", "fac_imladris"),
+		(try_begin),
+			(this_or_next|eq, ":center_faction", "fac_lorien"),
+			(this_or_next|eq, ":center_faction", "fac_woodelf"),
+			(			  eq, ":center_faction", "fac_imladris"),
+			(assign, ":cur_target_center", "p_town_woodsmen_village"),
+		(try_end),
 		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
 		(ge, reg0, 10), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
@@ -22888,6 +22891,13 @@ command_cursor_scripts = [
         (assign, ":guards", "pt_dale_scouts"),
       (try_end),
 
+      (try_begin),
+      	(this_or_next|eq, ":quest_target_center", "p_town_woodsmen_village"),
+      	(this_or_next|eq, ":quest_target_center", "p_town_beorning_village"),
+      	(eq, ":quest_target_center", "p_town_beorn_house"),
+      	(assign, ":guards", "pt_beorn_scouts"),
+      (try_end),
+
       (store_random_in_range, ":refugee_radius", 1, 5),
       (set_spawn_radius, ":refugee_radius"),
 
@@ -22921,6 +22931,12 @@ command_cursor_scripts = [
       (assign, "$qst_raider_party_1", reg0),
       (party_add_template, "$qst_raider_party_1", ":raiders"),
       (party_add_template, "$qst_raider_party_1", ":raiders"),
+      (try_begin),
+      	(this_or_next|eq, ":theater", theater_SE),
+      	(			  eq, ":theater", theater_SW),
+      	(party_add_template, "$qst_raider_party_1", ":raiders"),
+      	(party_add_template, "$qst_raider_party_1", ":raiders"),
+      (try_end),
       (party_set_name, "$qst_raider_party_1", "@Raiders"),
       (party_set_ai_behavior,"$qst_raider_party_1",ai_bhvr_attack_party),
       (party_set_ai_object,"$qst_raider_party_1","$qst_refugee_party_1"),
@@ -22932,6 +22948,12 @@ command_cursor_scripts = [
       (assign, "$qst_raider_party_2", reg0),
       (party_add_template, "$qst_raider_party_2", ":raiders"),
       (party_add_template, "$qst_raider_party_2", ":raiders"),
+      (try_begin),
+      	(this_or_next|eq, ":theater", theater_SE),
+      	(			  eq, ":theater", theater_SW),
+      	(party_add_template, "$qst_raider_party_2", ":raiders"),
+      	(party_add_template, "$qst_raider_party_2", ":raiders"),
+      (try_end),
       (party_set_name, "$qst_raider_party_2", "@Raiders"),
       (party_set_ai_behavior,"$qst_raider_party_2",ai_bhvr_attack_party),
       (party_set_ai_object,"$qst_raider_party_2","$qst_refugee_party_2"),
@@ -22943,6 +22965,12 @@ command_cursor_scripts = [
       (assign, "$qst_raider_party_3", reg0),
       (party_add_template, "$qst_raider_party_3", ":raiders"),
       (party_add_template, "$qst_raider_party_3", ":raiders"),
+      (try_begin),
+      	(this_or_next|eq, ":theater", theater_SE),
+      	(			  eq, ":theater", theater_SW),
+      	(party_add_template, "$qst_raider_party_3", ":raiders"),
+      	(party_add_template, "$qst_raider_party_3", ":raiders"),
+      (try_end),
       (party_set_name, "$qst_raider_party_3", "@Raiders"),
       (party_set_ai_behavior,"$qst_raider_party_3",ai_bhvr_attack_party),
       (party_set_ai_object,"$qst_raider_party_3","$qst_refugee_party_3"),
@@ -22971,7 +22999,7 @@ command_cursor_scripts = [
 			(is_between, "$g_encountered_party", centers_begin, centers_end),
 			(assign, ":giver_center_no", "$g_encountered_party"),
 		(try_end),
-		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
+		#(gt, ":giver_center_no", 0),#Skip if lord is outside the center
 		(neq, ":giver_center_no", "p_town_morannon"), #Morannon is too far from any fiefs.
 		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
 
@@ -22979,9 +23007,12 @@ command_cursor_scripts = [
 		(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
 		(assign, ":cur_target_center", reg0),
 		(store_faction_of_party, ":center_faction", ":cur_target_center"),
-		(this_or_next|neq, ":center_faction", "fac_lorien"),
-		(this_or_next|neq, ":center_faction", "fac_woodelf"),
-		(			  neq, ":center_faction", "fac_imladris"),
+		(try_begin),
+			(this_or_next|eq, ":center_faction", "fac_lorien"),
+			(this_or_next|eq, ":center_faction", "fac_woodelf"),
+			(			  eq, ":center_faction", "fac_imladris"),
+			(assign, ":cur_target_center", "p_town_woodsmen_village"),
+		(try_end),
 		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
 		(le, reg0, 20), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
@@ -23022,6 +23053,13 @@ command_cursor_scripts = [
         (assign, ":guards", "pt_beorn_scouts"),
       (else_try),
         (assign, ":guards", "pt_dale_scouts"),
+      (try_end),
+
+      (try_begin),
+      	(this_or_next|eq, ":quest_target_center", "p_town_woodsmen_village"),
+      	(this_or_next|eq, ":quest_target_center", "p_town_beorning_village"),
+      	(eq, ":quest_target_center", "p_town_beorn_house"),
+      	(assign, ":guards", "pt_beorn_scouts"),
       (try_end),
 
       (store_random_in_range, ":refugee_radius", 25, 35),
@@ -23073,7 +23111,7 @@ command_cursor_scripts = [
 ## store to s30 the text you want to show before calling the script.
 ## $troop_talk_hero = troop ID for upper right portrait; 
 ## $troop_talk_enemy for lower left portrait; 
-## $troop_talk_duration for how long it should last (miliseconds)
+## $troop_talk_duration for how long it should last (seconds)
 #Output: Presentation
 
 ("troop_talk_presentation", 

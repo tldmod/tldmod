@@ -3053,7 +3053,7 @@ mission_templates = [ # not used in game
       (finish_mission,0),
     ]),
 
-  ## This block starts the commands of both attackers and defenders at the beginning of battle.
+  ## This block starts the commands of both attackers and defenders at the beginning of battle. (trigger_initial_commands)
   ## Both Attackers & Defenders are asked to move towards Entry Point 41, 42, 43
   ## Attacker Archers are asked to HOLD at entry point 60,61,62.
   ## I added Siege order exception (charge) to attackers for Umbar Camp, so that they do not get stuck on boats.
@@ -3099,7 +3099,7 @@ mission_templates = [ # not used in game
 
   ## End of Starting Orders Block ##
 
-  ## Reinforcement Scripted destinations
+  ## Reinforcement Scripted destinations (trigger_reinforcement_scripted_destination)
   ## I added this block so that reinforcements still try to take the flanks or the center (as above).
   ## We set a scripted destination for the agents, and after a few seconds, clear it, when they are close to their destination.
   ## We are using the slot_agent_is_not_reinforcement as a tracker.
@@ -3108,53 +3108,74 @@ mission_templates = [ # not used in game
     
     #(display_message, "@Scripting reinforcement destinations"),
     (store_trigger_param_1, ":agent_no"),
-      (neq, ":agent_no", "$gate_aggravator_agent"),
-      (agent_is_human, ":agent_no"),
-      (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
+      (neq, ":agent_no", "$gate_aggravator_agent"), #We don't ask the gate aggravator to do anything :)
+      (agent_is_human, ":agent_no"), #neither horses
+      (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0), # We check if these are reinforcements, and not inital spawns
       (agent_get_team, ":reinforcement_team", ":agent_no"),
-      (try_begin),
-        (eq, "$gate_breached", 1),
-        (store_random_in_range, ":random", 0, 100),
-        (le, ":random", 75), #75% Chance troop is asked to go through the portal. Other than that, go to team destinations.
-        (entry_point_get_position, pos10, 42),
-        (agent_set_scripted_destination, ":agent_no", pos10),
-        ] + (is_a_wb_mt==1 and [
-        (agent_force_rethink, ":agent_no"),
-        ] or []) + [
-        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 42), #Kham - Use this slot to track scripted movement
-       # (display_message, "@Reinforcement Agent moving towards Center"),
+      (agent_get_class, ":agent_class", ":agent_no"),
+      (neq, ":agent_class", grc_archers), #Do not apply to archers
+      
+      #This block here checks if chokepoints are taken (troop_slot for trp_no_troop, 0,1,2)
+
+      (try_for_range, ":slot", 0, 3),
+        (troop_get_slot, ":choke_point_taken", "trp_no_troop", ":slot"),
+        (eq, ":choke_point_taken", -1),
+        (team_give_order, ":reinforcement_team", mordr_charge),
+
+      #If chokepoints are not taken yet...
+
       (else_try),
-        (this_or_next|eq, ":reinforcement_team", 0),
-        (             eq, ":reinforcement_team", 1),
-        (entry_point_get_position, pos10, 41),
-        (agent_set_scripted_destination, ":agent_no", pos10),
-        ] + (is_a_wb_mt==1 and [
-        (agent_force_rethink, ":agent_no"),
-        ] or []) + [
-        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 41), #Kham - Use this slot to track scripted movement
-        #(display_message, "@Reinforcement Agent moving towards Left"),
-      (else_try),
-        (this_or_next|eq, ":reinforcement_team", 2),
-        (             eq, ":reinforcement_team", 3),
-        (entry_point_get_position, pos10, 42),
-        (agent_set_scripted_destination, ":agent_no", pos10),
-        ] + (is_a_wb_mt==1 and [
-        (agent_force_rethink, ":agent_no"),
-        ] or []) + [
-        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 42), #Kham - Use this slot to track scripted movement
-        #(display_message, "@Reinforcement Agent moving towards Center"),
-      (else_try),
-        (entry_point_get_position, pos10, 43),
-        (agent_set_scripted_destination, ":agent_no", pos10),
-        ] + (is_a_wb_mt==1 and [
-        (agent_force_rethink, ":agent_no"),
-        ] or []) + [
-        (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 43), #Kham - Use this slot to track scripted movement
-        #(display_message, "@Reinforcement Agent moving towards Right"),
+          (eq, "$gate_breached", 1),
+          (store_random_in_range, ":random", 0, 100),
+          (le, ":random", 75), #75% Chance troop is asked to go through the portal. Other than that, go to team destinations.
+          (entry_point_get_position, pos10, 42),
+          (agent_set_scripted_destination, ":agent_no", pos10),
+          ] + (is_a_wb_mt==1 and [
+          (agent_force_rethink, ":agent_no"),
+          ] or []) + [
+          (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 42), #Kham - Use this slot to track scripted movement
+         # (display_message, "@Reinforcement Agent moving towards Center"),
+
+      (else_try), #If gate is not breached, and left flank not taken, move reinforcements there.
+        (try_begin),
+          (eq, ":slot", 0),
+          (this_or_next|eq, ":reinforcement_team", 0),
+          (             eq, ":reinforcement_team", 1),
+          (entry_point_get_position, pos10, 41),
+          (agent_set_scripted_destination, ":agent_no", pos10),
+          ] + (is_a_wb_mt==1 and [
+          (agent_force_rethink, ":agent_no"),
+          ] or []) + [
+          (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 41), #Kham - Use this slot to track scripted movement
+          #(display_message, "@Reinforcement Agent moving towards Left"),
+
+        (else_try), #If gate is not breached, and right flank not taken, move reinforcements there.
+          (eq, ":slot", 2),
+          (this_or_next|eq, ":reinforcement_team", 4),
+          (             eq, ":reinforcement_team", 5),
+          (entry_point_get_position, pos10, 43),
+          (agent_set_scripted_destination, ":agent_no", pos10),
+          ] + (is_a_wb_mt==1 and [
+          (agent_force_rethink, ":agent_no"),
+          ] or []) + [
+          (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 43), #Kham - Use this slot to track scripted movement
+          #(display_message, "@Reinforcement Agent moving towards Right"),  
+
+        (else_try), #If gate is not breached, and center is not taken, move reinforcements there.
+          (this_or_next|eq, ":reinforcement_team", 2),
+          (             eq, ":reinforcement_team", 3),
+          (entry_point_get_position, pos10, 42),
+          (agent_set_scripted_destination, ":agent_no", pos10),
+          ] + (is_a_wb_mt==1 and [
+          (agent_force_rethink, ":agent_no"),
+          ] or []) + [
+          (agent_set_slot, ":agent_no", slot_agent_is_not_reinforcement, 42), #Kham - Use this slot to track scripted movement
+          #(display_message, "@Reinforcement Agent moving towards Center"),
+        (try_end),
       (try_end),
    ]),
 
-  ## This is where we remove the scripted mode of the reinforcement agents.
+  ## This is where we remove the scripted mode of the reinforcement agents. (trigger_remove_reinforcement_scripted_destinations)
   (7, 0, 0, [(this_or_next|ge, "$attacker_reinforcement_stage", 1), (ge, "$defender_reinforcement_stage",1)], [
 
     (get_player_agent_no, ":player_agent"),
@@ -3353,6 +3374,11 @@ mission_templates = [ # not used in game
         (try_end),
     (try_end),
     ]),
+
+  ## This Block checks if chokepoints are taken. (trigger_check_chokepoints)
+  ## We check the troop slot of trp_no_troop (0,1,2) which corresponds to each choke point (entry 41,42,43)
+  ## If we find less than 2 defenders near the chokepoint, we consider that chokepoint taken and the team that is assigned to that choke point is asked to charge.
+
   (10, 0, 0,[(store_mission_timer_a, ":mission_time"), (gt, ":mission_time", 30)], [# check if targets are captured by attackers; only fire after 30 seconds.
     (try_for_range, ":slot",0,3),
       (neg|troop_slot_eq,"trp_no_troop",":slot",-1), # -1 in slot means this flank defeated its choke and proceeds with charge
