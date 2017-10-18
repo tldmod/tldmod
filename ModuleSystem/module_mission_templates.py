@@ -3120,7 +3120,10 @@ mission_templates = [ # not used in game
       (try_for_range, ":slot", 0, 3),
         (troop_get_slot, ":choke_point_taken", "trp_no_troop", ":slot"),
         (eq, ":choke_point_taken", -1),
-        (team_give_order, ":reinforcement_team", mordr_charge),
+        (set_show_messages, 0),
+        (team_give_order, ":reinforcement_team", grc_infantry, mordr_charge),
+        (team_give_order, ":reinforcement_team", grc_cavalry, mordr_charge),
+        (set_show_messages, 1),
 
       #If chokepoints are not taken yet...
 
