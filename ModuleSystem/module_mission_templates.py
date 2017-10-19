@@ -3053,6 +3053,25 @@ mission_templates = [ # not used in game
       (finish_mission,0),
     ]),
 
+  ## WB Only - When a horse archer spawns, we set them to Archers, instead of Cavalry.
+
+  ] + (is_a_wb_mt==1 and [
+
+  (ti_on_agent_spawn, 0, 0, [], 
+    [
+      (store_trigger_param_1, ":is_horse_archer_agent"),
+      (get_player_agent_no, ":player_agent"),
+      (neq, ":is_horse_archer_agent", ":player_agent"),
+      (agent_get_troop_id, ":troop_id", ":is_horse_archer_agent"),
+      (troop_is_guarantee_horse, ":troop_id"),
+      (troop_is_guarantee_ranged, ":troop_id"),
+      (agent_set_division, ":is_horse_archer_agent", grc_archers),
+    ]),
+
+  ] or []) + [
+
+  ## End Horse Archer to Cavalry division
+
   ## This block starts the commands of both attackers and defenders at the beginning of battle. (trigger_initial_commands)
   ## Both Attackers & Defenders are asked to move towards Entry Point 41, 42, 43
   ## Attacker Archers are asked to HOLD at entry point 60,61,62.
@@ -3351,12 +3370,12 @@ mission_templates = [ # not used in game
 		    (neg|agent_is_defender,":agent"), #InVain: So only attackers get redistributed. I know that this is crude :)
         (agent_slot_eq,":agent",slot_agent_arena_team_set,0),
         (store_random_in_range, ":team", 0,3),
-        (try_begin), # when gate breached assign more people to medium team (which is gate oriented)
-          (eq,"$gate_breached",1),
-          (store_random_in_range, ":x",0,2),
-          (eq, ":x",1),
-          (assign, ":team", 1),
-        (try_end),
+        #(try_begin), # when gate breached assign more people to medium team (which is gate oriented)
+        #  (eq,"$gate_breached",1),
+        #  (store_random_in_range, ":x",0,2),
+        #  (eq, ":x",1),
+        #  (assign, ":team", 1),
+        #(try_end),
         (val_mul, ":team", 2),
         (try_begin),
           (neg|agent_is_defender,":agent"),
