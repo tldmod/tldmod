@@ -6349,7 +6349,7 @@ scripts = [
           #Kolba: Lost spears - given by Brand
           (eq, ":quest_no", "qst_find_lost_spears"),
 		  (try_begin),
- 			(eq, 1, cheat_switch), #CC: Enabled only with cheat switch, for now
+ 			(eq, cheat_switch, 1), #CC: Enabled only with cheat switch, for now
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
 			(ge, ":player_level", 4),
 			(assign, ":quest_expiration_days", 40),

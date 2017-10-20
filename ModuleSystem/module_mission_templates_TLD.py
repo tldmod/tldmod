@@ -1134,6 +1134,7 @@ formations_triggers = [
 		(game_key_is_down, gk_order_1),	#BUT player is holding down key?
 		(assign, "$gk_order_hold_over_there", 1),
 		(assign, "$gk_order", 0),
+		(assign, "$field_ai_horse_archer", 0),
 	]),
 
 	(0, 0, 0, [(game_key_clicked, gk_order_1)], [
@@ -1339,7 +1340,8 @@ formations_triggers = [
 			(assign, "$archer_formation_move_order", mordr_hold),
 		(try_end),
 		(agent_set_position, "$fplayer_agent_no", pos22),
-		(assign, "$gk_order_hold_over_there", 0)
+		(assign, "$gk_order_hold_over_there", 0),
+		(assign, "$field_ai_horse_archer", 1),
 	]),
 
 ] or []) + [
