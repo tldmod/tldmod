@@ -6088,6 +6088,7 @@ scripts = [
 
 			##Kham - Defend refugees
 			(eq, cheat_switch, 1),
+			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, ":quest_no", "qst_blank_quest_01"),
 			(call_script, "script_cf_init_quest_defend_refugees"),
 
@@ -6107,6 +6108,7 @@ scripts = [
 			
 			##Kham - Hunt Down refugees
 			(eq, cheat_switch, 1),
+			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, ":quest_no", "qst_blank_quest_02"),
 			(call_script, "script_cf_init_quest_hunt_refugees"),
 
@@ -11509,7 +11511,7 @@ scripts = [
         (assign, ":quest_expire_penalty", -3),
       (else_try),
         (eq, ":quest_no", "qst_troublesome_bandits"),
-        (assign, ":quest_return_penalty", -1),
+        (assign, ":quest_return_penalty", 0),
         (assign, ":quest_expire_penalty", -2),
       #Other quests
       # (else_try),
