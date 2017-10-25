@@ -1551,8 +1551,12 @@ mission_templates = [ # not used in game
         (replace_scene_props, "spr_troop_prison_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_castle_guard", "spr_empty"),
         (replace_scene_props, "spr_troop_guard", "spr_empty"),
-	(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
-	(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"), 
+		(replace_scene_props, "spr_troop_guard_sitting", "spr_empty"), # (CppCoder) These are what cause the "unable to finish" bugs.
+		(replace_scene_props, "spr_troop_human_prisoner", "spr_empty"),
+	
+		(replace_scene_props, "spr_troop_civilian", "spr_empty"), #InVain: Added new troop spawn props
+		(replace_scene_props, "spr_troop_civilian_sitting_ground", "spr_empty"),
+		(replace_scene_props, "spr_troop_civilian_sitting_chair", "spr_empty"),	
       ]),
       common_inventory_not_available,
       (ti_tab_pressed  , 0, 0,[(display_message, "@Cannot leave now.")], []),
@@ -2980,19 +2984,19 @@ mission_templates = [ # not used in game
      (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,1,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,1,[]),
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
 
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
-     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
-     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
+     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]), # team left flank
+     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]), # team center
+     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]), # team right flank
 
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,2,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
-     (45,mtef_defenders|mtef_team_2,af_override_horse,aif_start_alarmed,2,[]),
-     (46,mtef_defenders|mtef_team_4,af_override_horse,aif_start_alarmed,2,[]),
+     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
+     (45,mtef_defenders|mtef_team_2,af_override_horse,aif_start_alarmed,0,[]),
+     (46,mtef_defenders|mtef_team_4,af_override_horse,aif_start_alarmed,0,[]),
 
      # Attacker reinforcements (was 0)
      (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,5,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
@@ -3452,9 +3456,7 @@ mission_templates = [ # not used in game
       #(display_message, "@DEBUG: Defender Team - {reg11}; Attacker Team - {reg12}", color_bad_news),
       (this_or_next|neq, ":defteam", ":player_team"),
       (             neq, ":atkteam", ":player_team"),
-      #(team_give_order, ":defteam", grc_everyone, mordr_charge), #InVain: archers hold position, never charge
-      (team_give_order, ":defteam", grc_infantry, mordr_charge),
-      (team_give_order, ":defteam", grc_cavalry, mordr_charge),
+      (team_give_order, ":defteam", grc_everyone, mordr_charge),
       (team_give_order, ":atkteam", grc_everyone, mordr_charge),
       #(store_add,":entry",":slot",41),(entry_point_get_position, pos10, ":entry"), #sieges work better if archers charge, too
       #(team_give_order, ":atkteam", grc_archers, mordr_stand_closer),
