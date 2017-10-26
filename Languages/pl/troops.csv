@@ -4,7 +4,7 @@ trp_tutorial_maceman|Buławnik
 trp_tutorial_maceman_pl|Buławników
 trp_tutorial_archer|Łucznik
 trp_tutorial_archer_pl|Łuczników
-trp_tutorial_swordsman|Wojownik Uzbrojony w Miecz
+trp_tutorial_swordsman|Miecznik
 trp_tutorial_swordsman_pl|Mieczników
 trp_novice_fighter|Wojownik Nowicjusz
 trp_novice_fighter_pl|Wojowników Nowicjuszy
@@ -100,8 +100,8 @@ trp_dale_billman|Halabardzista Dale
 trp_dale_billman_pl|Halabardzistów Dale
 trp_dale_bill_master|Doborowy Halabardzista Dale
 trp_dale_bill_master_pl|Doborowych Halabardzistów Dale
-trp_merchant_squire_or_dale|Kupiecki Squire z Dale
-trp_merchant_squire_or_dale_pl|Kupieckich Squire z Dale
+trp_merchant_squire_or_dale|Zamożny Kupiec z Dale
+trp_merchant_squire_or_dale_pl|Zamożni Kupcy z Dale
 trp_merchant_guard_of_dale|Kupiecki Strażnik Dale
 trp_merchant_guard_of_dale_pl|Kupieckich Strażników Dale
 trp_merchant_protector_of_dale|Kupiecki Obrońca Dale
@@ -116,8 +116,8 @@ trp_rhun_horse_archer|Konny Strzelec Rhun
 trp_rhun_horse_archer_pl|Konnych Strzelców Rhun
 trp_rhun_veteran_horse_archer|Doborowy Konny Strzelec Rhun
 trp_rhun_veteran_horse_archer_pl|Doborowych Konnych Strzelców Rhun
-trp_fell_balchoth_horse_archer|Upadły Konny Strzelec Balchoth
-trp_fell_balchoth_horse_archer_pl|Upadłych Konnych Strzelców Balchoth
+trp_fell_balchoth_horse_archer|Konny Strzelec Balków
+trp_fell_balchoth_horse_archer_pl|Konnych Strzelców Balków
 trp_rhun_swift_horseman|Jeździec Wiatru Rhun
 trp_rhun_swift_horseman_pl|Jeźdźców Wiatru Rhun
 trp_rhun_veteran_swift_horseman|Doborowy Jeździec Wiatru Rhun
@@ -142,8 +142,8 @@ trp_rhun_heavy_noble_cavalry|Ciężki Szlachecki Kawalerzysta Rhun
 trp_rhun_heavy_noble_cavalry_pl|Ciężkich Szlacheckich Kawalerzystów Rhun
 trp_dorwinion_noble_of_rhun|Dorwinionski Szlachcic Rhun
 trp_dorwinion_noble_of_rhun_pl|Dorwinionskich Szlachciców Rhun
-trp_dwarven_apprentice|Niewyszkolony Krasnolud
-trp_dwarven_apprentice_pl|Niewyszkolonych Krasnoludów
+trp_dwarven_apprentice|Uczeń-Krasnolud
+trp_dwarven_apprentice_pl|Uczniów-Krasnoludów
 trp_dwarven_warrior|Krasnolud Wojownik
 trp_dwarven_warrior_pl|Krasnoludów Wojowników
 trp_dwarven_hardened_warrior|Doborowy Krasnolud Wojownik
@@ -167,11 +167,11 @@ trp_dwarven_scout_pl|Krasnoludów Zwiadowców
 trp_dwarven_bowman|Krasnolud Łucznik
 trp_dwarven_bowman_pl|Krasnoludów Łuczników
 trp_dwarven_archer|Krasnoludzki Strzelec
-trp_dwarven_archer_pl|Krasnoludzkich Doborowych Strzelców
+trp_dwarven_archer_pl|Krasnoludzkich Strzelców
 trp_marksman_of_ravenhill|Krasnoludzki Mistrz Łuku z Ravenhill
 trp_marksman_of_ravenhill_pl|Krasnoludzkich Mistrzów Łuku z Ravenhill
-trp_iron_hills_miner|Kopacz Żelaznych Wzgórz
-trp_iron_hills_miner_pl|Kopaczy Żelaznych Wzgórz
+trp_iron_hills_miner|Górnik z Żelaznych Wzgórz
+trp_iron_hills_miner_pl|Górnik z Żelaznych Wzgórz
 trp_iron_hills_infantry|Piechur Żelaznych Wzgórz
 trp_iron_hills_infantry_pl|Piechurów Żelaznych Wzgórz
 trp_iron_hills_battle_infantry|Bitewny Krasnolud Żelaznych Wzgórz
@@ -198,8 +198,8 @@ trp_swordsmen_of_the_tower_guard|Zbrojny Gwardii Białej Wieży
 trp_swordsmen_of_the_tower_guard_pl|Zbrojnych Gwardii Białej Wieży
 trp_gondor_noblemen|Gondorski Szlachcic
 trp_gondor_noblemen_pl|Gondorskich Szlachciców
-trp_squire_of_gondor|Gondorski Squire
-trp_squire_of_gondor_pl|Gondorskich Squire
+trp_squire_of_gondor|Gondorski Giermek
+trp_squire_of_gondor_pl|Gondorskich Giermek
 trp_veteran_squire_of_gondor|Doświadczony Gondorski Squire
 trp_veteran_squire_of_gondor_pl|Doświadczonych Gondorskich Squire
 trp_knight_of_gondor|Gondorski Rycerz
@@ -307,7 +307,7 @@ trp_dol_amroth_leader_pl|Kapitanów Dol Amroth
 trp_lothlorien_scout|Zwiadowca Lothlorien
 trp_lothlorien_scout_pl|Zwiadowców Lothlorien
 trp_lothlorien_veteran_scout|Doświadczony Zwiadowca Lothlorien
-trp_lothlorien_veteran_scout_pl|Doświadczonych ZwiadowcówLothlorien
+trp_lothlorien_veteran_scout_pl|Doświadczonych Zwiadowców Lothlorien
 trp_lothlorien_archer|Strzelec Lothlorien
 trp_lothlorien_archer_pl|Strzelców Lothlorien
 trp_lothlorien_veteran_archer|Doborowy Strzelec Lothlorien
@@ -386,8 +386,8 @@ trp_rivendell_elite_infantry|Elitarny Piechur Rivendell
 trp_rivendell_elite_infantry_pl|Elitarnych Piechurów Rivendell
 trp_rivendell_royal_infantry|Królewski Piechur Rivendell
 trp_rivendell_royal_infantry_pl|Królewskich Piechurów Rivendell
-trp_rivendell_cavalry|Kawalerzysta Rivendell
-trp_rivendell_cavalry_pl|Kawalerzystów Rivendell
+trp_rivendell_cavalry|Lansjerzy z Rivendell
+trp_rivendell_cavalry_pl|Lansjerów z Rivendell
 trp_knight_of_rivendell|Rycerz Rivendell
 trp_knight_of_rivendell_pl|Rycerzy Rivendell
 trp_rivendell_standard_bearer|Chorąży Rivendell
@@ -498,12 +498,12 @@ trp_gold_serpent_horse_archer|Strzelec Konny Złotego Węża
 trp_gold_serpent_horse_archer_pl|Strzelców Konnych Złotego Węża
 trp_far_harad_tribesman|Plemieniec Dalekiego Haradu
 trp_far_harad_tribesman_pl|Plemieńców Dalekiego Haradu
-trp_far_harad_champion|Mistrz Dalekiego Haradu
-trp_far_harad_champion_pl|Mistrzów Dalekiego Haradu
+trp_far_harad_champion|Orędownik z Dalekiego Haradu
+trp_far_harad_champion_pl|Orędownicy z Dalekiego Haradu
 trp_far_harad_panther_guard|Gwardzista Pantery
 trp_far_harad_panther_guard_pl|Gwardzistów Pantery
-trp_dunnish_wildman|Dunlandzki Dziki
-trp_dunnish_wildman_pl|Dunlandzkich Dzikich
+trp_dunnish_wildman|Dzikus z Dunlandu
+trp_dunnish_wildman_pl|Dzikusy z Dunlandu
 trp_dunnish_warrior|Dunlandzki Wojownik
 trp_dunnish_warrior_pl|Dunlandzkich Wojowników
 trp_dunnish_pikeman|Dunlandzki Pikinier
@@ -588,8 +588,8 @@ trp_pikeman_of_umbar|Umbarski Pikinier
 trp_pikeman_of_umbar_pl|Umbarskich Pikinierów
 trp_veteran_pikeman_of_umbar|Umbarski Doborowy Pikinier
 trp_veteran_pikeman_of_umbar_pl|Umbarskich Doborowych Pikinierów
-trp_pike_master_of_umbar|Korsarski Mistrz Piki
-trp_pike_master_of_umbar_pl|Korsarskich Mistrzów Piki
+trp_pike_master_of_umbar|Elitarny Korsarski Pikinier
+trp_pike_master_of_umbar_pl|Elitarni Korsarscy Pikinierzy
 trp_orc_snaga_of_isengard|Isengardzki Ork Snaga
 trp_orc_snaga_of_isengard_pl|Isengardzkich Orków Snaga
 trp_orc_of_isengard|Isengardzki Ork
@@ -598,8 +598,8 @@ trp_large_orc_of_isengard|Isengardzki Wielki Ork
 trp_large_orc_of_isengard_pl|Isengardzkich Wielkich Orków
 trp_fell_orc_of_isengard|Isengardzki Dziki Ork
 trp_fell_orc_of_isengard_pl|Isengardzkich Dzikich Orków
-trp_large_orc_despoiler|Wielki Ork Grabieżca
-trp_large_orc_despoiler_pl|Wielkich Orków Grabieżców
+trp_large_orc_despoiler|Wielki Ork Rozbójnik
+trp_large_orc_despoiler_pl|Wielkich Orków Rozbójników
 trp_fell_orc_despoiler|Dziki Ork Grabieżca
 trp_fell_orc_despoiler_pl|Dzikich Orków Grabieżców
 trp_wolf_rider_of_isengard|Isengardzki Wilczy Jeździec
@@ -664,8 +664,8 @@ trp_fell_uruk_slayer_of_mordor|Mordorski Dziki Uruk Siepacz
 trp_fell_uruk_slayer_of_mordor_pl|Mordorskich Dzikich Uruków Siepaczy
 trp_black_uruk_of_barad_dur|Czarny Uruk Barad-Dur
 trp_black_uruk_of_barad_dur_pl|Czarnych Uruków Barad-Dur
-trp_uruk_mordor_standard_bearer|Mordorski Dowódca
-trp_uruk_mordor_standard_bearer_pl|Mordorskich Dowódców
+trp_uruk_mordor_standard_bearer|Mordorski Chorąży
+trp_uruk_mordor_standard_bearer_pl|Mordorskich Chorążych
 trp_troll_of_moria|Trol z Morii
 trp_troll_of_moria_pl|Troli z Morii
 trp_armoured_troll|Opancerzony Trol
@@ -711,7 +711,7 @@ trp_warg_rider_of_moria_pl|Jeźdźców Wargów z Mori
 trp_bolg_clan_rider|Jeździec Klanu Bolga
 trp_bolg_clan_rider_pl|Jeźdźców Klanu Bolga
 trp_snaga_of_moria|Snaga z Morii
-trp_snaga_of_moria_pl|Snaga z Morii
+trp_snaga_of_moria_pl|Snag z Morii
 trp_goblin_of_moria|Goblin z Morii
 trp_goblin_of_moria_pl|Goblinów z Morii
 trp_large_goblin_of_moria|Wielki Goblin z Morii
@@ -784,8 +784,8 @@ trp_lieutenant_of_rohan|Rohański Porucznik
 trp_lieutenant_of_rohan_pl|Rohańskich Poruczników
 trp_captain_of_rohan|Rohański Kapitan
 trp_captain_of_rohan_pl|Rohańskich Kapitanów
-trp_high_captain_of_rohan|Rohański Wysoki Kapitan
-trp_high_captain_of_rohan_pl|Rohańskich Wysokich Kapitanów
+trp_high_captain_of_rohan|Rohański Starszy Kapitan
+trp_high_captain_of_rohan_pl|Rohańskich Starszych Kapitanów
 trp_lieutenant_of_isengard|Isengardzki Porucznik
 trp_lieutenant_of_isengard_pl|Isengardzkich Poruczników
 trp_captain_of_isengard|Isengardzki Kapitan

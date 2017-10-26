@@ -81,7 +81,7 @@ qstr_Skills|技能
 ; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 qstr_Proficiencies|熟练度
 qstr_1H_Weapons^2H_Weapon|1H武器^ 2H武器^弩弓^射箭^弩弓^投掷
-qstr_Equipments|装备
+; qstr_Equipment|Equipment
 qstr_You_gained_{reg0}_Re|你获得了来自 {s0}的 {reg0}点资源点
 qstr_You_lost_{reg0}_Reso|你失去了来自 {s0}的 {reg0}点资源点
 qstr_{s24}:|{s24}:
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|靠近东大路的废弃小路
 qstr_near_what_is_left_of|旧林荫道出口附近用来穿过密林的古老矮人路
 qstr_close_to_the_Hand_sh|指向欧散克塔的萨鲁曼手形标志附近
 qstr_in_sight_of_the_maje|能看得见那座白色雄伟的城市米纳斯提里斯的地方
+; qstr_in_the_outskirts_of_|in the outskirts of Osgiliath, the former capital of Gondor
 qstr_in_sight_of_the_entr|能看得到依鲁伯矮人要塞入口的地方
 qstr_in_sight_of_the_dark|看得见黑塔欧散克的地方
 qstr_near_the_Old_Ford_wh|靠近跨越安度因河谷旧林道的老河滩
@@ -513,9 +514,9 @@ qstr_Default_Camera|默认相机
 qstr_Fixed_Camera___Right|固定相机 - 右肩
 qstr_Fixed_Camera___Left_|固定相机 - 左肩
 qstr_Cannot_leave_now.|现在不能离开。
-qstr_You_have_found_the_l|你找到当地的铁匠...
-qstr_You_have_found_the_lo|你找到当地的权威人士...
-qstr_You_have_found_the_loc|你找到当地的杂货商...
+; qstr_You_have_found_the_l|You have found the local smithy... (+50 XP)
+; qstr_You_have_found_the_lo|You have found the local authority...(+50 XP)
+; qstr_You_have_found_the_loc|You have found the local warehouse...(+50 XP)
 qstr__cancelled_the_{reg1|（取消了虐杀囚犯获得的{reg10}经验值）
 qstr_Forming_ranks.|列阵中。
 qstr_You_fall_off_of_your|你从你的坐骑上跌落！
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|戒灵正在攻击{s11}！
 qstr_{s11}_is_{s10}_in_th|{s11}和{s10}正在被戒灵攻击！
 qstr_{s1}_s_morale:_{reg1|{s1}的士气：{reg1}
 qstr_You_rally_your_troop|你集合了你的部队！
-qstr_{s5}_rallies_his_tro|{s5}集合了他的部队！
+; qstr_{s5}_rallies_{reg65?|{s5} rallies {reg65?her:his} troops!
 qstr_You_have_killed_{reg|你在战斗中杀死了{reg1}名敌人！
 qstr_Your_bravery_inspire|你的英勇鼓舞了你的部队！
 qstr_Everyone|所有人
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1}已经被杀死在战场上。任务取消。
 qstr_{s1}_has_been_defeat|{s1}已经被击败。任务取消。
 qstr_You_must_follow_{s1}|你必须跟随{s1} ！
 qstr_You_must_follow_{s1}!|你必须跟随{s1}！最后警告你一次！
-qstr_Parties_defeated:_{r|阵营被击败： {reg1}
+; qstr_{s1}_parties_defeate|{s1} parties defeated: {reg1} out of {reg2}
 qstr_{s1}_is_scouted.|{s1} 被偵察了
 qstr_The_Age_of_Men_has_f|人类的时代终于结束了.现在双塔集结他的军队和盟友决定谁才是中土唯一的统治者!
 qstr_The_War_of_the_Two_T|双塔之间的战争已经开始了!

@@ -983,8 +983,8 @@ trp_dunland_lord_pl|首 領
 trp_beorn_lord|首 領 老 鬱 比 翁 
 trp_beorn_lord_pl|首 領 
 ; trp_lorien_marshall|Celeborn
-; trp_pippin_notmet|halfling
-; trp_merry_notmet|halfling
+trp_pippin_notmet|半身人
+trp_merry_notmet|半身人
 ; trp_pippin|Pippin
 ; trp_merry|Merry
 ; trp_knight_1_1|Angbor

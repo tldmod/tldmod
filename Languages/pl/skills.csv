@@ -1,5 +1,5 @@
 skl_trade|Targowanie
-skl_trade_desc|Każdy poziom tej umiejętności zwiększa ilość ekwipunku otrzymanego za Pkt Prestiżu. (Umiejętność oddziału)
+skl_trade_desc|Każdy poziom tej umiejętności pozwala na zakup przedmiotów za mniejszą ilość Punktów Zasobów. (Umiejętność oddziału)
 skl_leadership|Przywództwo
 skl_leadership_desc|Każdy punkt zwiększa maksymalną ilość jednostek w oddziale o 5, zwiększa morale i obniża ich koszt najmu oraz żołd o 5%%. (Umiejętność dowódcy)
 skl_prisoner_management|Zarządzanie więźniami
@@ -16,7 +16,7 @@ skl_wound_treatment|Leczenie ran
 skl_wound_treatment_desc|Szybkość leczenia oddziału wzrasta o 20%% na każdy poziom tej umiejętności. (Umiejętność oddziału)
 skl_inventory_management|Zarządzanie ekwipunkiem
 skl_inventory_management_desc|Zwiększa pojemność ekwipunku o 6 pól na każdy poziom umiejętności. (Umiejętność dowódcy)
-skl_spotting|Spostrzeganie
+skl_spotting|Spostrzegawczość
 skl_spotting_desc|Zasięg wzroku oddziału zwiększa się o 10%% na poziom umiejętności. (Umiejętność oddziału)
 skl_pathfinding|Szukanie ścieżek
 skl_pathfinding_desc|Szybkość oddziału podczas poruszania się po mapie zwiększa się o 3%% na poziom umiejętności. (Umiejętność oddziału)

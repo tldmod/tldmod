@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9}に{s13}へ手紙を届けるよう頼まれた。 
 qst_deliver_message_to_enemy_lord|{s13}へ手紙を届けよ
 qst_deliver_message_to_enemy_lord_text|{s9}に{s15}の{s13}へ手紙を届けるよう頼まれた。 仕事を請け負った時点では{s13}は{s4}にいた。
 qst_raise_troops|{reg1}名の{s14}を育て上げよ
-qst_raise_troops_text|{s9}に{s14}を{reg1}名育て上げ、 彼に引き渡すよう頼まれた。
+; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
 qst_escort_messenger|{s14}まで伝令を護衛せよ
 qst_escort_messenger_text|None
 qst_hunt_down_fugitive|{s4}を追え
@@ -30,6 +30,7 @@ qst_find_lost_spears|ブラードルシン王の失われた槍を見つけ出�
 qst_find_lost_spears_text|かつてドワーフがブラードルシン王のために 鍛えたと伝わる失われた槍を見つけるよう、 {s9}に頼まれた。 はなれ山の奥深くを探索するには、 ドワーフの許可を得なければならない。
 ; qst_defend_village|Defend Village
 ; qst_raid_village|Raid Village
+; qst_destroy_scout_camp|Destroy Scout Camp
 qst_rescue_prisoners|捕虜を{reg1}名救出せよ
 qst_rescue_prisoners_text|捕虜を{reg1}名救出するよう、 {s9}に頼まれた。
 qst_scout_enemy_town|敵の拠点を偵察せよ
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|None
 qst_move_cattle_herd|{s12}を{s13}まで護衛せよ
 qst_move_cattle_herd_text|{s10}の長老に、 {s12}を{s13}まで護衛するよう、 頼まれた。
 qst_escort_merchant_caravan|{s8}への補給隊を護衛せよ
-qst_escort_merchant_caravan_text|補給隊を{s8}まで護衛する。
+; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|{s4}へ{s6}を{reg5}ユニット届けよ
 qst_deliver_wine_text|7日以内に{s4}まで{s6}を{reg5}ユニット届けるよう、 {s3}の{s9}に頼まれた。
 qst_troublesome_bandits|迷惑なゴブリンを退治せよ

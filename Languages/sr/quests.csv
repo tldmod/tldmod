@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} te je pitao da posaljes poruku u {s13}. {s13} je u
 qst_deliver_message_to_enemy_lord|Posalji Poruku {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} te je pitao da posaljes poruku u {s13} od {s15} . {s13} je u {s4} kada si dobio ovaj zadatak.
 qst_raise_troops|Podigni {reg1} {s14}
-qst_raise_troops_text|{s9} te je pitao da podignes {reg1} {s14} i da mu ih dovedes.
+; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
 qst_escort_messenger|Odvedi glasnika u {s14}
 qst_escort_messenger_text|Nista
 qst_hunt_down_fugitive|Ulovi i ubij {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Pronadji izgubljeno koplje od kranja Bladorthina
 qst_find_lost_spears_text|{s9} te je pitao da mu pronadjes izgubljeno koplje kralja Bladorthina. Moraces da pitas patuljke da ti dozvole da ga trazis dubogo u Usamljenik Planinama.
 ; qst_defend_village|Defend Village
 ; qst_raid_village|Raid Village
+; qst_destroy_scout_camp|Destroy Scout Camp
 qst_rescue_prisoners|Spasi {reg1} zarobljenike.
 qst_rescue_prisoners_text|{s9} je trazio da mu spasis {reg1} zarobljenike
 qst_scout_enemy_town|Istrazi Neprijateljski Grad
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Nista
 qst_move_cattle_herd|Pomeri {s12} do {s13}
 qst_move_cattle_herd_text|Vodja {s10} je trazio da premestis {s12} u {s13}.
 qst_escort_merchant_caravan|Dovedi Vagon sa Zalihama do {s8}
-qst_escort_merchant_caravan_text|Dovedi Vagon sa Zalihama do {s8}.
+; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|Donesi {reg5} vrsta {s6} u {s4}
 qst_deliver_wine_text|{s9} od {s3} je trazio da doneses {reg5} vrsta {s6} u {s4} za 7 dana.
 qst_troublesome_bandits|Ulovi i ubij Gobline koje prave probleme

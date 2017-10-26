@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} vous a demandé d'apporter un message pour {s13}. 
 qst_deliver_message_to_enemy_lord|Délivrer un message à {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} vous a demandé d'apporter un message pour {s13} de {s15}. {s13} était à {s4} quand cette quête vous a été donnée.
 qst_raise_troops|Améliorer {reg1} {s14}
-qst_raise_troops_text|{s9} vous a demandé d'améliorer {reg1} {s14} et de les lui apporter.
+qst_raise_troops_text|{s9} vous a demandé de lever {reg1} {s14} et de les lui apporter.
 qst_escort_messenger|Escorter le messager à {s14}
 qst_escort_messenger_text|Aucun
 qst_hunt_down_fugitive|Traquer {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|Trouver les lances perdues du Roi Bladorthin.
 qst_find_lost_spears_text|{s9} vous a demandé de trouver les lances naines perdues jadis forgées pour le Roi Bladorthin. Vous devez demander la permission aux nains de chercher les lances dans les entrailles de la Montagne Solitaire.
 qst_defend_village|Défendre le Village
 qst_raid_village|Piller le Village
+qst_destroy_scout_camp|Détruisez le camp d'éclaireurs.
 qst_rescue_prisoners|Secourer {reg1} prisonniers
 qst_rescue_prisoners_text|{s9} veut que vous sauviez {reg1} prisonniers.
 qst_scout_enemy_town|Espionnez une ville ennemie.
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|Aucune
 qst_move_cattle_herd|Déplacer {s12} à {s13}
 qst_move_cattle_herd_text|L'ancien de {s10} vous a demandé de déplacer {s12} à {s13}.
 qst_escort_merchant_caravan|Escorter un convoi de ravitaillement à {s8}
-qst_escort_merchant_caravan_text|Escorter un convoi de ravitaillement à {s8}.
+qst_escort_merchant_caravan_text|Escortez le train de fournitures à {s8} et parlez leur quand vous serez à proximité.
 qst_deliver_wine|Délivrer {reg5} unités de {s6} à {s4}
 qst_deliver_wine_text|Le {s9} de {s3} vous a demandé de livrer {reg5} unités de {s6} à {s4} en 7 jours.
 qst_troublesome_bandits|Traquez les gobelins gênants.

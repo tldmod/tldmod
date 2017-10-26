@@ -106,7 +106,7 @@ dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|Pot
 dlga_companion_recruit_backstory_delayed_response:close_window|Non ci pensare, un'altra volta forse.
 dlga_companion_recruit_signup_confirm:close_window|Bene ! Dammi qualche momento per prepararmi e sarò in grado di partire.
 dlga_start:companion_rehire|La mia offerta di tornare è ancora valida, se vuoi.
-dlga_start:companion_rehire.1|È bello vederti in vita, {s5}! {s6}, e io non sapevamo se fossi in catene, ferito o addirittura morto. Ho atteso qui fino ad ora, cercando notizie sul tuo conto. Posso raccogliere le mie cose e riunirmi alla compagnia ?
+dlga_start:companion_rehire.1|È bello vederti in vita, {s5}! {s6},  non sapevamo se fossi in catene, ferito o addirittura morto. Ho atteso qui fino ad ora, cercando notizie sul tuo conto. Posso raccogliere le mie cose e riunirmi alla compagnia ?
 dlga_start:companion_was_dismissed|È bello vederti, {s21} ! A dire la verità, speravo di incocciarti.
 dlga_companion_was_dismissed:companion_rehire|{s5}. Desideri che mi riunisca alla compagnia ?
 dlga_companion_rehire:companion_recruit_signup_confirm|Brindiamo al tuo ritorno !
@@ -333,7 +333,7 @@ dlga_send_gift_5:lord_pretalk|Va bene, {playername}, Buona fortuna.
 dlga_lord_talk:lord_give_order_ask|Ho un nuovo compito per te.
 dlga_lord_give_order_ask:lord_give_order|Sì ?
 dlga_lord_give_order:lord_give_order_answer|Seguimi. [Costo: {reg1}/{reg2} Punti Influenza]
-dlga_lord_give_order:lord_give_order_details_ask|Vai a.... [Costo: {reg1}/{reg2} Punti Influenza]
+dlga_lord_give_order:lord_give_order_details_ask|Raggiungi.... [Costo: {reg1}/{reg2} Punti Influenza]
 dlga_lord_give_order:lord_give_order_details_ask.1|Pattuglia nei dintorni... [Costo: {reg1}/{reg2} Punti Influenza]
 dlga_lord_give_order:lord_give_order_details_ask.2|Ingaggia i nemici in combattimento vicino a... [Costo: {reg1}/{reg2} Punti Influenza]
 dlga_lord_give_order:lord_give_order_stop|Non avrò bisogno di te per qualche tempo, sei libero di fare ciò che vuoi.

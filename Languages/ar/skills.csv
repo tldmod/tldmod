@@ -1,0 +1,48 @@
+skl_trade|مُقايض
+skl_trade_desc|مستوى هذه المهارة تجعل من الممكن ان تحصل على معدات اكثر بمقايضة نقاط موارد أقل.(مهارة مجموعة)
+skl_leadership|ٌقائد
+skl_leadership_desc|كل نقطة تُزيد الحد الأقصى للوحدات التي يمكن قيادتها بـ5، تزيد الروح المعنوية للمجموعة وتُنقص اجور الوحدات بـ5%%.(مهارة قائد)
+skl_prisoner_management|إدارة السجناء
+skl_prisoner_management_desc|كل مستوى من هذه المهارة يزيد الحد الأقصى للسجناء بـ%d.(مهارة قائد)
+skl_persuasion|الإقناع
+skl_persuasion_desc|هذه المهارة تساعد على جعل الناس يقبلون وجهة نظرك.(مهارة خاصة)
+skl_engineer|الصياغة
+skl_engineer_desc|كل نقطة الى هذه المهارة تقلل كل من صياغة وتطوير المعدات، وتسمح بزيادة جودة التحسينات.(مهارة المجموعة)
+skl_first_aid|العلاج البدائي
+; skl_first_aid_desc|Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)
+; skl_surgery|Surgery
+; skl_surgery_desc|Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)
+; skl_wound_treatment|Wound Treatment
+; skl_wound_treatment_desc|Party healing speed is increased by 20%% per level of this skill. (Party skill)
+; skl_inventory_management|Inventory Management
+; skl_inventory_management_desc|Increases inventory capacity by +6 per skill level. (Leader skill)
+; skl_spotting|Spotting
+; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
+; skl_pathfinding|Path-finding
+; skl_pathfinding_desc|Party map speed is increased by 3%% per skill level. (Party skill)
+; skl_tactics|Tactics
+; skl_tactics_desc|Every two levels of this skill increases starting battle advantage by 1. (Party skill)
+; skl_tracking|Tracking
+; skl_tracking_desc|Tracks become more informative. (Party skill)
+; skl_trainer|Trainer
+; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)
+; skl_looting|Looting
+; skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
+; skl_horse_archery|Mounted Archery
+; skl_horse_archery_desc|Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)
+; skl_riding|Riding
+; skl_riding_desc|enables you to ride horses (or other beasts) of higher difficulty levels and increases your riding speed and manuever. (Personal skill)
+; skl_athletics|Athletics
+; skl_athletics_desc|improves your running speed. (Personal skill)
+; skl_shield|Shield
+; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
+; skl_weapon_master|Weapon Master
+; skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
+; skl_power_draw|Power Draw
+; skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
+; skl_power_throw|Power Throw
+; skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%. (Personal skill)
+; skl_power_strike|Power Strike
+; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
+skl_ironflesh|لحم الحديد
+; skl_ironflesh_desc|Each point to this skill increases hit points by +2. (Personal skill)

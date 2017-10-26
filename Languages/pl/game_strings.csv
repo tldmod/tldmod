@@ -1,7 +1,7 @@
 str_yes|Tak.
 str_no|Nie.
 str_noone|nikt
-; str_s50_comma_s51|{s50}, {s51}
+str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} i {s51}
 str_s5_s_party|{s5} z oddziałem
 str_s5_s_host| {s5} z zastępem
@@ -21,7 +21,7 @@ str_blunt_hold_fire|Broń Obuchowa / Wstrzymać Ogień
 str_tutorial_ammo_refilled|Amunicja uzupełniona.
 str_custom_battle_1|Kapitan Malvogil podróżuje wraz z kompanią Gondoru gdy nagle trafia na posiłki Haradu. Wznosi okrzyk bojowy, spina konia i rusza naprzód, prowadząc swych ludzi do szaleńczej walki.
 str_custom_battle_2|Lord Mleza prowadzi patrol złożony z jeźdźców i łuczników, w poszukiwaniu grupy bandytów, którzy splądrowali karawanę i uciekli w stronę wzgórz. Niestety bandyci napotkali dwie inne duże grupy, które chciały wydrzeć im łup, ale po zauważeniu nowego zagrożenia, zdecydowały się połączyć swe siły.
-; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
+str_custom_battle_3|Lord Grimbold z Rohanu dowodzi ostatnią obroną na murach przeciw armii Isengardu. Teraz, gdy oblegający przygotowują się do ostatecznego ataku na mury, musi on utrzymać te mury z pomocą odwagi i jasnej stali.
 str_custom_battle_4|Kiedy zwiadowcy informują Lorda Grainwada o obecności oddziału wojennego Rhunu, decyduje się szybko przygotować obronę obozu i utrzymać pozycje mimo wielkiej liczebności wroga.
 str_custom_battle_5|Kapitan Ugluk przyprowadził swych niepohamowanych orków na zachód z obietnicą plądrowania. Jeśli rozbiją dziś krasnoludów ich pan w Barad-Dur będzie bardzo zadowolony.
 str_custom_battle_6|Grishnakh i jego orkowie nękali uciekający Elficki patrol. Ale szczęście nie może trwać wiecznie, i wygląda na to, że brudne elfy wezmą teraz odwet.
@@ -387,7 +387,7 @@ str_npc1_backstory_c|\nJednak obawiam się , że są beznadziejnie liczniejsze t
 str_npc2_backstory_c|However important my duty here is, I'm quite anxious to see real combat and... elves and talking trees and oliphants! You seem well-travelled, commander, and I don't mean that as a slight on your appearance, not by a fathom. I learn quickly and can cook... well, good enough for soldiers that is. Am I not mistaken that you are looking for volunteers?
 ; str_npc3_backstory_c|So, here I am, disgraced and bitter. My éored must be miles away now, and I wouldn't have a fair chance of catching up with them, not with all the orcs and wildmen roaming the plains. Are you by any chance in need of a fine Rohirrim rider?
 ; str_npc4_backstory_c|You might know that women, however skilled, are not allowed to ride with the éoredas. However, I do not think that waiting by the hearth for the warriors to return is my fate. I will not sit idle until all chance of great deeds is gone in this War, and I would welcome your assistance, warrior.
-; str_npc5_backstory_c|However, if the enemies of Lothlórien are on the run, I might consider joining you for a while, {playername}. I sense our fates in this War are interwoven.
+str_npc5_backstory_c|Jeśli jednak wrogowie Lothlórien są na wolności, mógłbym rozważyć przyłączenie się do Ciebie, {playername}. Czuję, że nasze losy w tej wojnie są ze sobą powiązane.
 ; str_npc6_backstory_c|You wouldn't understand that, I think, seeing you prepared for war. But you must have travelled far and wide - have you seen the other great forests? Can you take me there?
 ; str_npc7_backstory_c|There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival.
 ; str_npc8_backstory_c|I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all.
@@ -399,14 +399,14 @@ str_npc13_backstory_c|Maybe you can be my next Chieftain.
 str_npc14_backstory_c|Maybe you can be my next Captain.
 str_npc15_backstory_c|Maybe you can be my next master.
 str_npc16_backstory_c|Maybe you can be my next Chieftain.
-; str_npc17_backstory_c|If you're going into the forest, maybe I come along and tell you about the trees there? Many very interesting trees there, you know.
+str_npc17_backstory_c|Jeżeli wybierasz się do lasu, to może mógłbym pójść z tobą? Tam jest wiele interesujących drzew, wiesz? Mógłbym ci wiele o nich opowiedzieć.
 ; str_npc1_backstory_later|I have been leading scouting parties to the south, as far as Emyn Arnen. There is much Enemy activity and many an orc fell to our ambush. Alas, that's only so many orc heads rolling down the gullies, we saw a myriad of foul creatures on the march. I fear for my Ithilien and the fate of Gondor.
-; str_npc2_backstory_later|We've had a few visitors lately, and there are fewer to come. I reckon that doesn't bode well.
+str_npc2_backstory_later|Mieliśmy zaledwie kilku gości ostatnio, a jeszcze mniej ma zamiar przybyć. Zgaduję że to nie wróży nic dobrego.
 str_npc3_backstory_later|Ciągle brak wieści o moim éoredzie, a chętnym by na orków pojechać.
 ; str_npc4_backstory_later|More riders return with their bodies broken, and I try to give aid where I can. But I still feel trapped in a cage.
 ; str_npc5_backstory_later|Have you reconsidered? The time for the Eldar grows short.
-; str_npc6_backstory_later|I've been observing a nest of giant spiders for a couple of days. Ugly creatures, they seem at first, but they keep intruders at bay. Did you come to ask me to travel with you?
-; str_npc7_backstory_later|Building up defensive walls is worthy of any dwarf. But I need to use my axe too. Soon. Let me come with you.
+str_npc6_backstory_later|Przez kilka dni obserwowałem gniazdo wielkich pająków. Z początku mogą się wydawać paskudne, ale trzymają wrogów na dystans. Przyszedłeś prosić, żebym z tobą podróżował?
+str_npc7_backstory_later|Budowanie murów obronnych jest warte każdego krasnoluda. Ale muszę też użyć mojego topora. Wkrótce. Pozwól mi wyruszyć z tobą.
 ; str_npc8_backstory_later|I made another call to our King, this time for vomiting. I hope his resolve to engage the enemy is not related to his conditions. Do you suffer from constipation and vomiting too?
 ; str_npc9_backstory_later|What do you think I do? Gulm is sitting here and waiting for some sneaky snaga to stick him in the dark. Take me with you - I will serve well.
 str_npc10_backstory_later|Czy rozpatrzyłeś to? Będę dobrze służył
@@ -421,7 +421,7 @@ str_npc16_backstory_later|Have you reconsidered? I will serve well.
 str_npc2_backstory_response_1|Właśnie tak, poszukuję ochotników.
 str_npc3_backstory_response_1|Jeśli umiesz obejść się bez alkoholu, to z chęcią przywitam dobrego kawalerzystę.
 str_npc4_backstory_response_1|Z miłą chęcią przyjąłbym pomoc od Rohańskiej tarczowniczki, jeśli byłaby zaoferowana.
-; str_npc5_backstory_response_1|It may be presumptuous of me to ask, but my company could use your skill in the coming battles.
+str_npc5_backstory_response_1|Może to zabrzmieć zarozumiale z mojej strony, ale moja kompania mogłaby wykorzystać twoje umiejętności w nadchodzących bitwach.
 ; str_npc6_backstory_response_1|We travel the world, but to defend all that is fair, we give battle to the enemy.
 str_npc7_backstory_response_1|W rzeczy samej, krasnoludzki wojownik byłby mile widziany w naszej kompanii.
 str_npc8_backstory_response_1|Możemy użyć medyka i zielarza.
@@ -439,7 +439,7 @@ str_npc2_backstory_response_2|Nie, przykro mi. Poszukuje doświadczonych wojowni
 str_npc3_backstory_response_2|Nie, przykro mi. Poszukuję kogoś bardziej wiarygodnego.
 str_npc4_backstory_response_2|Wybacz moja Pani, nic nie mogę na to poradzić.
 str_npc5_backstory_response_2|Wrócę kiedy w Lothlórien nie będzie tak niebezpiecznie.
-; str_npc6_backstory_response_2|No, sorry. We cannot take hangers-on.
+str_npc6_backstory_response_2|Nie, przepraszam. Nie możemy brać fagasów.
 str_npc7_backstory_response_2|Nie, przykro mi. Dobrze nam idzie nam samym.
 str_npc8_backstory_response_2|Nie, przykro nam. Odwiedzamy uzdrowicieli tylko kiedy ich potrzebujemy.
 str_npc9_backstory_response_2|Nah, nie ufam zdrajcą 
@@ -451,14 +451,14 @@ str_npc14_backstory_response_2|I don't need you.
 str_npc15_backstory_response_2|I don't need you, slave.
 str_npc16_backstory_response_2|I don't need you.
 str_npc17_backstory_response_2|Nie,przepraszam. Jesteśmy na wojnie,a nie na wycieczce botanicznej.
-; str_npc1_signup|I am sure Captain Faramir would understand there are others who can keep the Enemy at bay with even more valor and courage.
+str_npc1_signup|Jestem pewien, że kapitan Faramir zrozumie, że są inni, którzy potrafią utrzymać Wroga na dystans z jeszcze większą walecznością i odwagą.
 str_npc2_signup|Cóż za szczęśliwy dzień! Byłbym uradowany dołączając do twojej kompanii!
 ; str_npc3_signup|Trust me, commander, all the ale I need is the sweet drink of victory. If you can lead me against the enemy, they will soon feel the business end of a Rohirrim spear!
 ; str_npc4_signup|It is gladly offered, and you can welcome me to your company, commander.
 str_npc5_signup|Rozumiem. Przyznam,że słyszałem o tobie i o twoich wyczynach.
 str_npc6_signup|Nie lubię przemocy i wojennego oręża, ale wiem jak się obronić.
-; str_npc7_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
-; str_npc8_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
+str_npc7_signup|Jestem zaznajomiony z toporem, zarówno w walce wręcz jak i w rzucaniu. Mogę też załatwić ci towar za niższą cenę jeśli pozwolisz mi porozmawiać z kupcami. I mam dobre oko jeśli chodzi o znajdywanie dobrego łupu wśród upadłych wrogów na polu bitwy.
+str_npc8_signup|Doprawdy? W takim razie muszę tylko zebrać moje zioła i przepisy.
 str_npc9_signup|Walczący Uruk jest wart więcej niż wy, snagi. Walczący Uruk nigdy nie ucieka z placu boju.
 str_npc10_signup|Naprawdę ? Postąpił byś słusznie zatrudniając mnie.
 str_npc11_signup|Really? You would do well to enlist me.
@@ -469,8 +469,8 @@ str_npc15_signup|Really? You would do well to enlist me.
 str_npc16_signup|Really? You would do well to enlist me.
 str_npc17_signup|Bardzo dobrze! Znam wiele drzew. Wkrótce ty także poznasz wiele drzew, jak ja. Ponieważ znam wiele drzew.
 str_npc1_signup_2|To zajmie chwilkę aby porozmawiać z kapitanem oraz zabrać moje rzeczy.
-; str_npc2_signup_2|I'll need to talk to my Sergeant first and then off we go - there are glorious battles to be fought and all manners of strange creatures to see!
-; str_npc3_signup_2|I've been waiting for someone to take me on, so I only need to saddle up my horse and we are ready to ride.
+str_npc2_signup_2|Najpierw muszę porozmawiać z moim sierżantem, a potem możemy już odejść - czekają na nas chwalebne walki do wygrania i wszelkie rodzaje dziwnych zwierząt do zobaczenia!
+str_npc3_signup_2|Czekałem na kogoś, kto mnie zabierze, więc muszę tylko osiodłać mojego konia i jesteśmy gotowi aby wyruszyć.
 ; str_npc4_signup_2|I have hunted game many times with bows and throwing spears. I will hunt orc under your command. And I have some skill in healing I'm certain will be needed.
 ; str_npc5_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
 str_npc6_signup_2|Mogę nauczyć cię poruszać się szybciej oraz ciszej. Ruszajmy.
@@ -506,7 +506,7 @@ str_npc1_signup_response_2|Nie potrzebuję Twojej kompanii w tym momencie, powod
 str_npc2_signup_response_2|Wybacz. Zmieniłem zdanie.
 str_npc3_signup_response_2|Wybacz, zmieniłem zdanie - może następnym razem.
 str_npc4_signup_response_2|Przepraszam, moja Pani, może następnym razem.
-; str_npc5_signup_response_2|On second thought, maybe we need to help Lothlórien on our own.
+str_npc5_signup_response_2|Z drugiej strony, może jednak musimy pomóc Lothlórien.
 str_npc6_signup_response_2|Przykro mi, ale nie wyobrażam sobie ciebie na polu bitwy.
 str_npc7_signup_response_2|Wybacz, ale lubię Elfy.
 str_npc8_signup_response_2|Wybacz, każdy walczy w mojej kompanii.
@@ -518,7 +518,7 @@ str_npc13_signup_response_2|Zmieniłem zdanie.
 str_npc14_signup_response_2|Zmieniłem zdanie.
 str_npc15_signup_response_2|I've changed my mind.
 str_npc16_signup_response_2|I've changed my mind.
-; str_npc17_signup_response_2|On the other hand, I think I've changed my mind. You're a bit of a nut, aren't you?
+str_npc17_signup_response_2|Z drugiej strony myślę, że zmieniłem zdanie. Jesteś trochę szalony, nieprawdaż?
 str_npc1_payment|My Captain Faramir would miss my presence here, but he would agree to grant me leave for {reg3} Resource Points.
 str_npc2_payment|The guard Sergeant would let me go for {reg3} Resources.
 str_npc3_payment|Ahem, it seems that I have ran up quite a tab in the fine tavern here, so I'll also need {reg3} Resources before I can leave.
@@ -774,12 +774,12 @@ str_npc14_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dz
 str_npc15_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dzień, har-har!
 str_npc16_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dzień, har-har!
 str_npc17_home_description_2|Mógłbym wyrzeźbić ci ładną fajkę. Chciałbyś jedną?
-; str_npc1_home_recap|I was born and raised in Ithilien, in a long line of warriors tracing back to the Southern Dúnedain.
+str_npc1_home_recap|Urodziłem się i wychowałem w Ithilien, należę do długiej linii wojowników którzy sięgają korzeniami czasów południowego Dúnedaina.
 str_npc2_home_recap|Urodziłem się w Minas Tirith, w prostej, ale dumnej rodzinie.
 str_npc3_home_recap|Jestem jednym z Eorlingów, albo Rohirrimem, jak nazywają nas obcy.
-; str_npc4_home_recap|I don't find it amusing that you should forget so easily.
+str_npc4_home_recap|Nie wydaje mi się to zabawne, że masz tak słabą pamięć.
 str_npc5_home_recap|Zaspokoję twoją ciekawość, ale nie ociągajmy się.
-; str_npc6_home_recap|I was born and raised in Mirkwood, a Silvan Elf. Our race's woodcraft skills are known to all.
+str_npc6_home_recap|Urodziłem się i wychowałem w Mrocznej Puszczy, jestem leśnym elfem. Nasze umiejętności stolarskie są znane wszystkim.
 str_npc7_home_recap|Jestem synem Dwalina z ludu Durina.
 str_npc8_home_recap|Jestem uzdrowicielem oraz zielarzem z Dale 
 str_npc9_home_recap|Gulm ci o tym opowie, jeśli musisz wiedzieć. Jednakże rozmowa nie sprawi, że wrogowie umrą.
@@ -790,7 +790,7 @@ str_npc13_home_recap|Skrócę to.
 str_npc14_home_recap|Skrócę to.
 str_npc15_home_recap|Skrócę to.
 str_npc16_home_recap|Skrócę to.
-; str_npc17_home_recap|I was born at the edge of the woods, but spent all my life in the woods. Did I tell you of the many trees there?
+str_npc17_home_recap|Urodziłem się na skraju lasu, ale całe życie spędziłem w lesie. Czy opowiadałem ci o wielu drzewach znajdujących się tutaj?
 str_npc1_honorific|{Kapitanie/Kapitano}
 str_npc2_honorific|dowódco
 str_npc3_honorific|dowódco
@@ -904,7 +904,7 @@ str_comment_you_were_defeated_allied_unfriendly_upstanding|Doszły mnie słuchy,
 str_comment_you_were_defeated_allied_unfriendly|Doszły mnie słuchy, że {s54} cię pokonał. Następnym razem postaraj się nie posłać zbyt wielu naszych ludzi na pewną śmierć, dobrze?
 str_comment_you_were_defeated_allied|Doszły mnie słuchy, że {s54} cię pokonał. Ale nie trać ducha -- losy wkrótce się odwrócą!
 str_comment_you_helped_my_ally_unfriendly_chivalrous|Doszły mnie słuchy, że {s54} został przez ciebie uratowany przed pewną klęską. Mimo iż mam o tobie niezbyt dobre mniemanie, muszę cię pochwalić za ten czyn.
-; str_comment_you_helped_my_ally_unfriendly|[revelance should be zero, and this message should not appear]
+str_comment_you_helped_my_ally_unfriendly|[Wygląd powinien wynosić zero, a ta wiadomość nie powinna się pojawić]
 str_comment_you_helped_my_ally_liege|Słyszałem, że mój wasal, {s54}, został przez ciebie uratowany od pewnej klęski. 
 str_comment_you_helped_my_ally_unfriendly_spiteful|Ponoć nasz biedny {s54} był w niezłych tarapatach, zaś ty dzielnie ruszył{e/a}ś mu na ratunek. Myślał{e/a}ś, ze to jakaś dama w opałach? Zresztą nieważne -- każdy by się pomylił.
 str_comment_you_helped_my_ally_spiteful|Doszły mnie słuchy, że {s54} został przez ciebie uratowany przed niezłym laniem. Moim zdaniem powin{ieneś był/naś była} pozwolić, by dostał swoją nauczkę.
@@ -1223,24 +1223,24 @@ str_subfaction_gondor_name5|Pinnath Gelin
 str_subfaction_gondor_name6|Dolina Czarnego Korzenia
 str_subfaction_gondor_name7|Ithilien
 str_default_rumor|Wojna. Wszyscy tylko o niej mówią.
-; str_rohan_rumor_begin|It breaks my heart to see my babies off to war! But without them the men would have to walk.
+str_rohan_rumor_begin|Serce mi się kraje, kiedy widzę moje dzieci idące na wojnę!
 str_rohan_rumor_2|Słyszałem, że orkowie jedzą konie. Przebrzydłe bestie! ... Jedzą też więźniów, to też okropne.
 str_rohan_rumor_3|Nigdzie nie ma tak dobrych koni jakie ma Rohan. Nawet Elfy mają swoje konie od nas!
-; str_rohan_rumor_4|If you can heal men, please treat my horses with just as much care should they be wounded.
-; str_rohan_rumor_5|Bring me eight Sumpter Horses, he says... after the seven he asked for yesterday.  Makes you wonder.
-; str_rohan_rumor_6|Gondor prefers sturdier horses. Our riders enjoy speed. The Elves get only the best. And our enemies steal them!
-; str_rohan_rumor_7|I've seen breeds of the desert mare and Variag horse. Rohan horses are clearly superiour but require a more experienced rider to handle.
+str_rohan_rumor_4|Jeśli możesz uzdrawiać ludzi, proszę, traktuj moje konie z taką troską jakby były ranne.
+str_rohan_rumor_5|Przynieś mi osiem Koni Sumpterów, mówi ... po tym jak poprosił o siedem takich wczoraj. Zastanawiające...
+str_rohan_rumor_6|Gondor preferuje bardziej wytrzymałe konie. Nasi kawalerzyści wolą szybkie konie. Elfy korzystają tylko z najlepszych. A nasi wrogowie kradną nam konie!
+str_rohan_rumor_7|Widziałem rasy pustynnych klaczy i konie Variagów. Konie Rohanu są wyraźnie lepsze, ale wymagają bardziej doświadczonego jeźdźca do obsługi.
 str_rohan_rumor_8|Wargowie są wolniejsi od koni, lecz obracają się szybciej. Mogą także delikatnie konkurować z dobrze odżywionym koniem bojowym.
-; str_rohan_rumor_9|Armies march on Rohan with pikes and spears set against our fine horsemen. The traitor Saruman will cut down the whole Fangorn forest equipping his armies before this war is over.
-; str_rohan_rumor_10|Being the best horsemen in the realm starts with raising the best horses.
-; str_rohan_rumor_11|Most of the horses you see in Gondor came from us. They prefer a slightly stronger, slower horse that can carry their heavy armour.
-; str_rohan_rumor_12|We say in Rohan that a horse is like a man. That if a horse is good it is like a man is good, and that if a horse is bad, is like a man is bad. And if a horse is hungry is like a man is hungry, and if a horse is sad is like if a man is sad. And we say if a horse is happy is like when a man is happy. We say if a horse is angry is like if man is angry. We say if a horse walk is like when a man walk, we say if a horse is old is like when a man is old, and we say if horse is young is like when a man is young. And the same we say if a horse is old is like when a man is old. And if a horse small, is like when a man's small.
-; str_rohan_rumor_13|Saruman's orcs are nasty but don't wear much protection. They're no match for a good axe.
-; str_rohan_rumor_14|Our throwing axes and spears may seem bulky, but how many chances do you have to throw a missile before you ride down the foe? Make it count by throwing something with some heft.
-; str_rohan_rumor_15|Hitting an orc with an arrow loosed from horseback looks difficult because it is, but the price of charging a rank of long pikes is higher.
-; str_rohan_rumor_16|Gondor practices archery. We practice horse archery. Dunlendings practice neither.
-; str_rohan_rumor_17|Many of Saruman's orcs are deadly archers. Many are not. A wise cavalry commander shouldn't wait to discover which is which.
-; str_rohan_rumor_18|We are all friends here. Or should be; for the laughter of Mordor will be our only reward, if we quarrel.
+str_rohan_rumor_9|Armie maszerują na Rohan z pikami i włóczniami do przeciwstawienia się naszej kawalerii. Zdrajca Saruman wytnie cały las Fangorn przygotowując swoje wojska zanim ta wojna się skończy.
+str_rohan_rumor_10|Bycie najlepszym jeźdźcem w kraju zaczyna się od wyszkolenia najlepszych koni.
+str_rohan_rumor_11|Większość koni, które widzisz w Gondorze, pochodzi od nas. Oni wolą nieco silniejszego, wolniejszego konia, który może udźwignąć ich ciężką zbroję.
+str_rohan_rumor_12|W Rohanie mówimy, że koń jest jak człowiek. Więc, jeśli koń jest dobry, jest dobry jak człowiek, a jeśli koń jest zły, jest zły jak człowiek. A jeśli koń jest głodny, jest głodny jak człowiek, a jeśli koń jest smutny, jest smutny tak jakby to człowiek był smutny. A my mówimy, że jeśli koń jest szczęśliwy, jest jak człowiek szczęśliwy. Mówimy, że jeśli koń jest zły, to tak, jakby człowiek był zły. Mówimy, że jeśli koń idzie, to idzie tak jak człowiek, mówimy, że jeśli koń jest stary, to jest jak człowiek kiedy jest stary, i mówimy, że jeśli koń jest młody, jest jak  człowiek kiedy jest młody. A jeśli koń jest mały, to jest jak mały człowiek.
+str_rohan_rumor_13|Orki Sarumana są groźne, ale nie noszą silnego pancerza. Nie są żadnym wyzwaniem dla dobrego topora.
+str_rohan_rumor_14|Nasze toporki do miotana i włócznie mogą wydawać się nieporęczne, ale ile masz szans, aby wyrzucić pocisk, zanim dotrze do ciebie wróg? Zrób to licząc, rzucając coś z pewną ilością ciężaru.
+str_rohan_rumor_15|Ugodzenie orka strzałą wystrzeloną z konia wygląda na trudne, ponieważ takie jest, ale cena za szarżowanie na formację orków z długimi pikami jest większa.
+str_rohan_rumor_16|Gondor ćwiczy łucznictwo. My szkolimy się w konnym łucznictwie. Dunlendingowie nie ćwiczą łucznictwa w ogóle.
+str_rohan_rumor_17|Wiele orków Sarumana to niebezpieczni łucznicy. Wielu nie. Mądry dowódca kawalerii nie powinien czekać aby się dowiedzieć którzy są którzy.
+str_rohan_rumor_18|Wszyscy jesteśmy tu przyjaciółmi. Albo powinniśmy być; Bo śmiech Mordoru będzie naszą jedyną nagrodą, jeżeli będziemy skłóceni.
 ; str_rohan_rumor_19|Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world.
 ; str_gondor_rumor_begin|Gondor has no king and enemies are at the doorstep. The shadow grows in the east. Things do not look good.
 ; str_gondor_rumor_2|In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?
@@ -1455,23 +1455,23 @@ str_khand_rumor_9|Nie walczymy dla złota czy niewolników, walczymy za honor i 
 ; str_khand_rumor_12|Have you made your warrior mask yet? You'll need one soon! If the enemy can't see your face, his spirit won't be able to find you.
 ; str_good_rumor_begin|From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.
 str_good_rumor_2|Orkowie walczą lepiej w nocy, niż za dnia.
-; str_good_rumor_3|Urukhai are a different breed of orc that doesn't fear sunlight!
+str_good_rumor_3|Uruk-hai są inną rasą orków, która nie boi się światła słonecznego!
 ; str_good_rumor_4|Always after a defeat and a respite, the Shadow takes another shape and grows again.
-; str_good_rumor_5|The Dead Marshes... a land defiled, diseased beyond all healing.
+str_good_rumor_5|Martwe bagna ... splugawiona ziemia, chora i niemożliwa do uzdrowienia.
 ; str_good_rumor_6|The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them.
 ; str_good_rumor_7|Greenwood it used to be called and full of elves it was. Greatest of the forests of the Northern world. But now it's Mirkwood. Crawling with all manner of evil creatures.
 ; str_good_rumor_8|The Argonath, The Pillars of the Kings, great guardians of the old northern border of Gondor.
 ; str_good_rumor_9|Amon Hen is the westernmost of the three peaks at the southern end of Nen Hithoel.
 str_neutral_rumor_begin|Jutro wszystko może się zmienić...
-; str_neutral_rumor_2|Dead Marshes... a place defiled and diseased.
+str_neutral_rumor_2|Martwe Bagna ... miejsce splugawione i chore.
 ; str_neutral_rumor_3|The land used to be much different once.
 str_neutral_rumor_4|Trzymaj się z dala od Fangorn.
 str_evil_rumor_begin|Orkowie walczą lepiej w nocy,ludzie walcz lepiej za dnia.
 str_evil_rumor_2|Zwalczaj kawalerię piką, piechotę strzalą a łucznika tarczą !!!
-; str_evil_rumor_3|Large statues of weaklings on the big river will not stand much longer.
+str_evil_rumor_3|Wielkie rzeźby słabeuszy na wielkiej rzece nie będą dłużej istnieć.
 str_legendary_rumor_begin|Legenda głosi, iż te drzewa spotkały się by rozmawiać w Fangorn.
-; str_legendary_rumor_amonhen|They say there is a special place on the Anduin, somewhere where the big statues stand.
-; str_legendary_rumor_deadmarshes|It is rumoured all dead seems alive in the middle of Dead Marshes.
+str_legendary_rumor_amonhen|Mówią, że na Anduin jest gdzieś szczególne miejsce, gdzieś gdzie stoją wielkie pomniki.
+str_legendary_rumor_deadmarshes|Powiadają, że wszyscy martwi wyglądają na żywych pośrodku Martwych Bagien.
 str_legendary_rumor_mirkwood|Kreatury inne niż orkowie pełzają naokoło Mirkwood.
 str_legendary_rumor_fangorn|Fangorn to las, który lepiej omijać. Dzieją się tam niecodzienne rzeczy.
 str_last_rumor|Ostatnio nie słyszałem niczego interesującego.
@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|na podnóża Gór Szarych, zamieszkałych prz
 str_fullname_region_mordor|do Mordoru, mrocznego Królestwa Saurona
 str_shortname_region_unknown|do nienazwanej krainy
 str_shortname_region_pelennor|na Pola Pelennoru
-; str_shortname_region_subfac_pelargir|the Fiefdom of Lebennin
+str_shortname_region_subfac_pelargir|Lenno Lebennin
 str_shortname_region_subfac_dol_amroth|do Belfalasu
 str_shortname_region_subfac_ethring|do Ringló Vale
-; str_shortname_region_subfac_lossarnach|the Fiefdom of Lossarnach
+str_shortname_region_subfac_lossarnach|Lenno Lossarnach
 str_shortname_region_subfac_pinnath_gelin|na obszar Pinnath Gelin
 str_shortname_region_subfac_blackroot|na Lenno Lamedonu
 str_shortname_region_n_ithilien|do Północnego Ithilien
@@ -1782,25 +1782,25 @@ str_trait_desc_battle_scarred|Cierpisz od straszliwych ran, otrzymanych w trakci
 str_trait_title_fell_beast|Dzika Bestia
 str_trait_desc_fell_beast|Twa skóra poznaczona jest wieloma bliznami z niezliczonych bitew, a zło trawi cię od środka. Nawet na standardy orków, uruków oraz troli jesteś ocenian{y/a} jako dzika i niebezpieczna bestia. Którzy ci służą płaczą z zachwytu gdy stajesz w polu. Jesteś nieustraszonym wcieleniem wojny.
 str_trait_title_butcher|Rzeźnik
-; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat.
+str_trait_desc_butcher|Doświadczenie udoskonaliło Twoją umiejętność wydobywania więcej mięsa z ciał twoich wrogów. Otrzymujesz dodatkowy kilogram mięsa za każdym razem, gdy zabijasz jednego ze swoich więźniów w celu pozyskania mięsa.
 str_wound_head|mocne uderzenie w głowę
 str_wound_chest|popękane niektóre żebra
 str_wound_arm|mocno okaleczona ręka
 str_wound_leg|mocno okaleczona noga
 str_gondor_gift0|Świeże owoce oraz wino.
 str_gondor_gift1|Wspaniale barwione płótno
-; str_gondor_gift2|Ancient Tomes and Family Trees
-; str_gondor_gift3|Spices and Incense
-; str_gondor_gift4|Auroch War Horns
+str_gondor_gift2|Starożytne Księgi i Drzewa Genealogiczne 
+str_gondor_gift3|Przyprawy i Kadzidło
+str_gondor_gift4|Turzy Róg Wojenny
 str_dwarf_gift0|Mocne Piwo i Kamienna Sól\n
-; str_dwarf_gift1|Hardened Shovels and Axes
+str_dwarf_gift1|Utwardzone Łopaty i Topory
 str_dwarf_gift2|Harfy i Flety
 ; str_dwarf_gift3|Robes Embroidered With Golden Thread and Gems
 str_dwarf_gift4|Wspaniała biżuteria
 str_rohan_gift0|Miód i Wino jabłkowe 
 ; str_rohan_gift1|Embroided Tunics and Silver-Studded Belts
 ; str_rohan_gift2|Golden Torcs and Engraved Drinking Horns
-; str_rohan_gift3|Fine Horse Barding
+str_rohan_gift3|Dobra Końska Zbroja
 str_rohan_gift4|Rohańskie konie
 ; str_mordor_gift0|Weak Peat Beer
 str_mordor_gift1|Olej Snagi
@@ -1825,13 +1825,13 @@ str_imladris_gift2|Miruvor
 str_woodelf_gift0|Miękkie zwierzęce skóry 
 ; str_woodelf_gift1|Arrow Heads and Fletching
 str_woodelf_gift2|Włócznie myśliwskie 
-; str_woodelf_gift3|Trained Birds of Prey
+str_woodelf_gift3|Wyszkolone Ptaki Myśliwskie 
 ; str_woodelf_gift4|Drinking Cups of Red Gold
 ; str_dale_gift0|Semi-Precious Stones and Glass Beads
 ; str_dale_gift1|Codexes of Heroic Sagas
 str_dale_gift2|Wino z Dorwinion\n
 str_dale_gift3|Luksusowe Futra
-; str_dale_gift4|Intricate Toys and Instruments
+str_dale_gift4|Skomplikowane Zabawki i Instrumenty.
 str_harad_gift0|Figi i Granaty
 str_harad_gift1|Wojownicze Naszyniki
 str_harad_gift2|Wyrzeźbiona Kość Słoniowa

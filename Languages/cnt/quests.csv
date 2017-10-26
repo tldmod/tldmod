@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9} 要你給 {s13} 送信。 你接受這個任務時
 qst_deliver_message_to_enemy_lord|傳達消息到 {s13}
 qst_deliver_message_to_enemy_lord_text|{s9} 要你給 {s15} 的 {s13} 送信。 你接受這個任務時 {s13} 曾在 {s4}。
 qst_raise_troops|在 {s14} 征 {reg1} 的稅
-qst_raise_troops_text|{s9} 要你在 {s14} 征 {reg1} 的稅并帶給他。
+qst_raise_troops_text|{s9} 要你在 {s14} 征 {reg1} 的稅并帶給{him/her}。
 qst_escort_messenger|護送信使到 {s14}
 qst_escort_messenger_text|無
 qst_hunt_down_fugitive|抓捕 {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|尋找Bladorthin國王丟失的長矛
 qst_find_lost_spears_text|{s9} 讓你去尋找丟失的長矛，長矛是矮人爲Bladorthin國王打造的。你需要尋求矮人的許可去尋找長矛在孤山的深處。
 qst_defend_village|保衛村莊
 qst_raid_village|掠奪村莊
+qst_destroy_scout_camp|摧毁侦察营地
 qst_rescue_prisoners|營救{reg1} 的囚犯
 qst_rescue_prisoners_text|{s9}想要你去營救{reg1}的囚犯
 qst_scout_enemy_town|偵查敵人的城鎮
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|無
 qst_move_cattle_herd|移動{s12}到 {s13}
 qst_move_cattle_herd_text|{s10}的長著要你帶一些{s12} 去 {s13}
 qst_escort_merchant_caravan|護送補給隊到{s8}
-qst_escort_merchant_caravan_text|護送補給隊到{s8}
+qst_escort_merchant_caravan_text|护送补给队到{s8}并在快抵达的时候和他们交谈。
 qst_deliver_wine|給 {s4} 帶  {reg5} 單位的{s6}
 qst_deliver_wine_text|{s3} 的 {s9} 要你在7天內帶 {reg5} 單位的 {s6} 到{s4} 。
 qst_troublesome_bandits|獵殺棘手的哥布林（Goblins）

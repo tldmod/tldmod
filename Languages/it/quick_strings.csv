@@ -54,7 +54,7 @@ qstr_Days_Passed:_{reg0}|Giorni Trascorsi: {reg0}
 qstr_Difficulty:_{reg0}%|Difficoltà: : {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|TOTALE PUNTEGGIO: {reg0}
-qstr_A_peaceful_village_n|Un pacifico villaggio non lontano da Westfold..
+qstr_A_peaceful_village_n|Un pacifico villaggio non lontano da Ovestfolda..
 qstr_The_War_is_upon_Roha|La guerra è su Rohan !
 qstr_Minas_Tirith___The_W|Minas Tirith - La Città Bianca
 qstr_The_White_Tree_stand|Il Bianco Albero giace morto da quando la linea dei Re si è interrotta
@@ -611,7 +611,7 @@ qstr_Orc_hiring_bonus:_+2|Bonus orchi arruolati: +2/3 per ogni orco^
 qstr_Current_party_size_l|L'attuale limite di dimensione della compagnia è {reg5}.^I qualificatori in uso attuali sono:^^Dimensione inziale: +10^Comando: {s2}{reg1}^Persuasione: {s3}{reg2}^Grado: {s4}{reg3}^{s5}TOTALE: {reg5}
 qstr_{s2}^_________{s4}:_|{s2}^ {s4}: {reg1} ({s23})
 qstr__________Faction_str|Rapporto forza fazione:^{s2}
-qstr_{s1}^^Factions_are_n|{s1}^^Le fazioni sono normalmente assediate quando sotto forza {reg1}.
+qstr_{s1}^^Factions_are_n|{s1}^^Le fazioni vengono normalmente assediate quando vanno al di sotto del livello di forza {reg1}.
 qstr_{s2}^^{s5}^{s6}|{s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2}|Tratto acquisito:^{s2}
 qstr_^^You_are_{s17}.|^^Tu sei {s17}.
@@ -624,9 +624,9 @@ qstr_Party_size_increased|Grandezza dell'armata aumentata da {reg0} a {reg1} !
 qstr_Faction_strengths_re|Rapporto forze fazione:^{s2}
 qstr_Attacking_enemy_part|Attacco al gruppo nemico {s11}
 qstr_Unknown_{reg3}_|Sconosciuto({reg3})
-qstr_ON|ON
-qstr_OFF__cheat_|OFF (cheat)
-qstr_OFF|OFF
+qstr_ON|SI
+qstr_OFF__cheat_|NO (cheat)
+qstr_OFF|NO
 qstr_{reg0}__will_most_li|{reg0} (Molto probabilmente causerà il crash dei salvataggi)
 qstr_{reg0}__could_possib|{reg0} (Potrebbe causare il crash dei salvataggi)
 qstr_Normal|Normale
@@ -700,7 +700,7 @@ qstr__This_castle_seems_t|Il castello sembra non appartenga a nessuno
 qstr__Your_own_banner_flie|Il tuo stendardo sventola sui cancelli della città
 qstr__You_see_the_banner_o|Vedi lo stendardo di {s7} sui cancelli della città
 qstr__The_townsfolk_here_|Gli abitanti di questo luogo hanno dichiarato la loro indipendenza
-qstr_Go_to_the_secret_ent|Vai all'entrata segreta di Moria
+qstr_Go_to_the_secret_ent|Raggiungi l'entrata segreta di Moria
 qstr_Search_for_a_secret_|Cerca un'entrata segreta per Moria
 qstr_Get_book.|Prendi il libro.
 qstr_The_{reg6?town_s:cas|Le scorte alimentari {reg6?della città:del castello} possono resistere per altri {reg3} giorni.
@@ -777,7 +777,7 @@ qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le du
 qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata !
 qstr_{s2}_was_defeated!|{s2} è stato sconfitto!
 qstr_The_forces_of_{s22}_|L'armata di {s22} si è radunata ! {s22} ora è: {s23} 
-qstr_The_might_of_{s22}_h|La forza di {s22} è diminuita. {s22} ora è: {s23}. 
+qstr_The_might_of_{s22}_h|Il livello di forza di {s22} è diminuito. {s22} livello attuale: {s23}. 
 qstr_In_a_desperate_attem|In un disperato tentativo di difendersi contro i suoi nemici, Sauron invia le sue legioni di Mordor !
 qstr_Guardians_of_{s6}|Guardiani di {s6}
 qstr_Guard_Legion_of_{s6}|Legione guardiana di {s6}

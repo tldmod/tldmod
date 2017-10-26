@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|ドワーフの居住する、 灰色山脈�
 str_fullname_region_mordor|モルドール、 サウロンの闇の世界
 str_shortname_region_unknown|名もなき地域
 str_shortname_region_pelennor|ペレンノール野
-str_shortname_region_subfac_pelargir|レベンニンの国
+; str_shortname_region_subfac_pelargir|the Fiefdom of Lebennin
 str_shortname_region_subfac_dol_amroth|ベルファラス
 str_shortname_region_subfac_ethring|リングロ谷
-str_shortname_region_subfac_lossarnach|ロスサールナッハの国
+; str_shortname_region_subfac_lossarnach|the Fiefdom of Lossarnach
 str_shortname_region_subfac_pinnath_gelin|ピンナス・ゲリン一帯
 str_shortname_region_subfac_blackroot|ラメドンの国
 str_shortname_region_n_ithilien|北イシリアン
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|いくさ傷
 str_trait_desc_battle_scarred|あなたは数え切れない程の戦闘において何度も深い傷を負いましたが、 いつも生き延びてきました。 あなたの傷だらけで縫いあとの多く残る肉体は、 過去の経験と相まって、 負傷に対する耐性を持つようになりました。 あなたの姿を見て衝撃を受ける者は少なくないですが、 配下の者たちは、 戦いの経験の証として受け止めています。 部隊は毎週士気にボーナスを受けます。
 str_trait_title_fell_beast|恐怖の獣
 str_trait_desc_fell_beast|あなたの肌は数え切れない程の戦闘で受けた多くの傷の縫いあとで覆われ、 その悪意に満ちた意志は不屈です。 あなたはもはや、 オークやウルク、トロルなどといった種から見ても恐ろしく、 危険な獣です。 あなたに仕える者たちは、 戦場において歓喜の声であなたの名を叫びます。 あなたは戦いの化身としてあがめられ、 怖れるものは何もありません。
+; str_trait_title_butcher|Butcher
+; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat.
 str_wound_head|頭部の怪我
 str_wound_chest|わき腹の怪我
 str_wound_arm|腕の怪我

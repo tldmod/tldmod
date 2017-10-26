@@ -81,7 +81,7 @@ qstr_Rotate|回転
 ; qstr_Ironflesh^Power_Stri|Ironflesh^Power Strike^Power Throw^Power Draw^Shield^Athletics^Riding^Horse Archery
 ; qstr_Proficiencies|Proficiencies
 ; qstr_1H_Weapons^2H_Weapon|1H Weapons^2H Weapons^Polearms^Archery^Crossbows^Throwing
-; qstr_Equipments|Equipments
+; qstr_Equipment|Equipment
 qstr_You_gained_{reg0}_Re|{s0}のリソースポイントを{reg0}獲得しました。
 qstr_You_lost_{reg0}_Reso|{s0}のリソースポイントを{reg0}失いました。
 qstr_{s24}:|{s24}:
@@ -177,6 +177,7 @@ qstr_near_the_Great_East_|東街道の近くにある、 荒れ果てたむか�
 qstr_near_what_is_left_of|その一部をかろうじて残す古森街道の近くにある、 かつてこの深い森を横切っていた、いにしえのドワーフ道
 qstr_close_to_the_Hand_sh|オルサンクの塔の方角を指し示す、 手の形をしたサルマンの印の近く
 qstr_in_sight_of_the_maje|白の都、ミナス・ティリスの壮大な城壁を望む場所
+; qstr_in_the_outskirts_of_|in the outskirts of Osgiliath, the former capital of Gondor
 qstr_in_sight_of_the_entr|ドワーフの要塞、エレボールの城門を望む場所
 qstr_in_sight_of_the_dark|闇の塔、オルサンクを望む場所
 qstr_near_the_Old_Ford_wh|むかしの渡り場の近くの、 古森街道がアンドゥインの大河を渡るところ
@@ -513,9 +514,9 @@ qstr_Your_mount_rears_ref|あなたの馬は座り込んでしまい、命令を
 ; qstr_Fixed_Camera___Right|Fixed Camera - Right Shoulder
 ; qstr_Fixed_Camera___Left_|Fixed Camera - Left Shoulder
 qstr_Cannot_leave_now.|今は離脱できません。
-qstr_You_have_found_the_l|鍛冶屋を見つけました・・・
-qstr_You_have_found_the_lo|拠点の責任者を見つけました・・・
-qstr_You_have_found_the_loc|倉庫を見つけました・・・
+; qstr_You_have_found_the_l|You have found the local smithy... (+50 XP)
+; qstr_You_have_found_the_lo|You have found the local authority...(+50 XP)
+; qstr_You_have_found_the_loc|You have found the local warehouse...(+50 XP)
 qstr__cancelled_the_{reg1|(捕虜を殺害して得た経験値{reg10}をキャンセルしました)
 qstr_Forming_ranks.|ランクスを組みます。
 qstr_You_fall_off_of_your|落馬しました！
@@ -534,7 +535,7 @@ qstr_Nazgul_diving_attack|ナズグールが{s11}を攻撃しました!
 qstr_{s11}_is_{s10}_in_th|ナズグールの攻撃により、{s11}が{s10}！
 qstr_{s1}_s_morale:_{reg1|{s1}の士気:{reg1}
 qstr_You_rally_your_troop|あなたは自軍の兵士たちを奮い立たせました！
-qstr_{s5}_rallies_his_tro|{s5}が部下たちを奮い立たせています！
+; qstr_{s5}_rallies_{reg65?|{s5} rallies {reg65?her:his} troops!
 qstr_You_have_killed_{reg|あなたは敵兵を{reg1}名倒しました！
 qstr_Your_bravery_inspire|あなたの勇猛さに兵士たちが勇気づけられています！
 qstr_Everyone|全員
@@ -770,7 +771,7 @@ qstr_{s1}_was_killed_on_t|{s1}は戦死しました。任務はキャンセル�
 qstr_{s1}_has_been_defeat|{s1}は敗れました。任務はキャンセルされました。
 qstr_You_must_follow_{s1}|あなたは{s1}に同行しなければなりません！
 qstr_You_must_follow_{s1}!|あなたは{s1}に同行しなければなりません！これは最後の通告です！
-qstr_Parties_defeated:_{r|倒した部隊の数:{reg1}
+; qstr_{s1}_parties_defeate|{s1} parties defeated: {reg1} out of {reg2}
 qstr_{s1}_is_scouted.|{s1}の偵察を完了しました。
 qstr_The_Age_of_Men_has_f|人類の時代は、 ついに終わりを告げました。 これよりふたつの塔が残った戦力を結集し、中つ国の覇権を争います！
 qstr_The_War_of_the_Two_T|ふたつの塔の戦いが始まりました！

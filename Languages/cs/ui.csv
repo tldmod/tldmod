@@ -11,21 +11,21 @@ ui_you_dont_have_value|Nemáš %s
 ui_merchant_pay_whatever|Ne, nic z toho nepotřebuji, nechte si to,
 ui_horse|Osedlat
 ; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
-; ui_return_your_bought_goods|Return the goods you have taken before giving that!
-; ui_return_price|if returned: +%d Res.P.
-; ui_sell_price|if given: +%d Res.P.
+ui_return_your_bought_goods|Než to uděláte,vraťte zboží které jste si vzali 
+ui_return_price|pri vraceni:  +%d B. Zdr.
+ui_sell_price|pri predani: +%d B. Zdr.
 ; ui_reclaim_price|to reclaim: -%d Res.P.
 ; ui_buying_price|to claim: -%d Res.P.
 ui_notification_riding_skill_not_enough|Tvoje jezdecké dovednosti dostatečné k jízdě na tomto.
-; ui_notification_payment_value|Consuming %s
-; ui_notification_payment_receive_value|Gaining %s
-; ui_weekly_cost_value|Upkeep: %s
+ui_notification_payment_value|Spotrebuje %s
+ui_notification_payment_receive_value|Ziska %s
+ui_weekly_cost_value|Udrzba: %s
 ui_sell|dát
-; ui_hire|Enlist
-; ui_notification_cant_hire|(not enough R.P. to enlist)
-; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
-; ui_weekly_wage|Upkeep: %d Res.P.
-; ui_price|Value: %d Res.P.
+ui_hire|Odvest
+ui_notification_cant_hire|(nedostatek B. Zdr. pro odvod)
+ui_joining_cost_weekly_wage|Odvod: %d B. Zdr.  --  Udrzba: %d B. Zdr.
+ui_weekly_wage|Udrzba: %d B. Zdr.
+ui_price|Cena: %d B. Zdr.
 ui_cant_reload_this_weapon_on_horseback|Tato zbraň nejde nabít na koni.
 ui_delivered_number_damage_to_horse|Zasazeno %d poškození koni/vrku.
 ui_horse_charged_for_number_damage|Kůň zaútočíl za %d poškození.

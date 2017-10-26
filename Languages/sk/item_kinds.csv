@@ -1,0 +1,906 @@
+itm_horse_meat|Koňské Mäso
+itm_practice_sword|Tréningový Meč
+itm_arena_lance|Žrď
+itm_practice_staff|Drevená Palica
+itm_practice_bow|Tréningový Luk
+itm_wooden_javelin|Drevený Oštep
+itm_human_meat|Ľudské Mäso
+itm_maggoty_bread|Červavý Chleba
+itm_cram|Porcia Dálskych Suchárov 
+itm_lembas|Lembas
+itm_smoked_fish|Údené Ryby
+itm_dried_meat|Sušené Mäso
+itm_cattle_meat|Hovädzie Mäso
+itm_grain|Pšenica
+itm_tools|Nástroje
+itm_siege_supply|Zásoby
+itm_quest_wine|Víno
+itm_quest_ale|Pivo
+itm_metal_scraps_bad|Nekvalitný kovový šrot
+itm_metal_scraps_medium|Použiteľný kovový šrot
+itm_metal_scraps_good|Kvalitný kovový šrot
+itm_oliphant|Olifant
+itm_sumpter_horse|Somár
+itm_saddle_horse|Osedlaný Kôň
+itm_steppe_horse|Stepný Kôň
+itm_courser|Žrebec
+itm_hunter|Lovecký Kôň
+itm_pony|Poník
+itm_arnor_warhorse|Arnorský Vojnový Kôň
+itm_dunedain_warhorse|Dúnedainský Vojnový Kôň
+itm_rohirrim_courser|Rohanský Žrebec
+itm_rohirrim_hunter|Rohanský Lovecký Kôň
+itm_rohirrim_courser2|Rohanský Žrebec
+itm_rohan_warhorse|Rohanský Vojnový Kôň
+itm_thengel_warhorse|Vojnový Kôň Thengelskej Stráže
+itm_rhun_horse_a|Rhúnsky Kôň
+itm_rhun_horse_b|Rhúnsky Kôň
+itm_rhun_horse_d|Rhúnsky Kôň
+itm_rhun_horse_e|Rhúnsky Ťažký Kôň
+itm_rhun_horse_f|Rhúnsky Ťažký Kôň
+itm_rhun_horse_g|Rhúnsky Ťažký Kôň
+itm_rhun_horse_h|Rhúnsky Ťažký Kôň
+itm_dale_horse|Dálsky Kôň
+itm_dale_warhorse|Dálsky Vojnový Kôň
+itm_riv_warhorse|Vojnový Kôň Z Roklinky
+itm_riv_warhorse2|Žrebec Z Imladrisu
+itm_mordor_warhorse|Mordorský Vojnový Kôň
+itm_mordor_warhorse2|Mordorský Zlovestný Vojnový Kôň
+itm_gondor_courser|Gondorský Žrebec
+itm_gondor_hunter|Gondorský Lovecký Kôň
+itm_dol_amroth_warhorse|Dol Amrothský Vojnový Kôň
+itm_dol_amroth_warhorse2|Dol Amrothský Ťažký Vojnový Kôň
+itm_gondor_warhorse|Gondorský Vojnový Kôň
+itm_gondor_lam_horse|Lamedonský Obrnený Kôň
+itm_lorien_warhorse|Lothlorienský Vojenský Kôň
+itm_harad_horse|Haradský Kôň
+itm_harad_warhorse|Haradský Vojnový Kôň
+itm_variag_pony|Variagský Poník
+itm_variag_kataphrakt|Východniarsky Vojnový Kôň
+itm_warg_1b|Vrrk
+itm_warg_1c|Vrrk
+itm_warg_1d|Vrrk
+itm_wargarmored_1b|Obrnený Vrrk
+itm_wargarmored_1c|Obrnený Vrrk
+itm_wargarmored_2b|Obrnený Vrrk
+itm_wargarmored_2c|Obrnený Vrrk
+itm_wargarmored_3a|Obrnený Vrrk
+itm_warg_reward|Obrovský Vrrk
+itm_troll_feet_boots|Trolie nohy
+itm_troll_head_helm|Trolia hlava
+itm_troll_head_helm_b|Trolia hlava
+itm_troll_head_helm_c|Trolia hlava
+itm_tree_trunk_club_a|Kmeň Stromu
+itm_tree_trunk_club_b|Kmeň Stromu
+itm_tree_trunk_invis|Kmeň Stromu
+itm_giant_hammer|Obrie kladivo
+itm_giant_mace|Obrý palcát
+itm_giant_mace_b|Obrý ostnatý palcát
+itm_olog_feet_boots|Nohy Olog Haia 
+itm_olog_head_helm|Hlava Olog Haia
+itm_olog_head_helm_b|Hlava Olog Haia
+itm_olog_head_helm_c|Hlava Olog Haia
+itm_olog_body|Olog Haiské Brnenie
+itm_olog_body_b|Olog Haiské Brnenie
+itm_olog_hands|Ruky Olog Haia
+itm_arrows|Šípy
+itm_gondor_arrows|Gondorské Šípy
+itm_gondor_auxila_arrows|Gondorské Šípy
+itm_khergit_arrows|Ostnaté Šípy
+itm_rohan_arrows_2|Rohanské Šípy
+itm_harad_arrows|Haradské Šípy
+itm_corsair_arrows|Korazárske Šípy
+itm_ithilien_arrows|Ithilienské Šípy
+itm_woodelf_arrows|Šípy Lesných Elfov
+itm_elven_arrows|Elfské Šípy
+itm_orc_hook_arrow|Hákové Šípy Ohyzdov
+itm_isengard_arrow|Isengradské Šípy
+itm_pilgrim_disguise|Pútnicky odev
+itm_leather_gloves|Kožené rukavice
+itm_mail_mittens|Krúžkové rukavice
+itm_leather_boots|Kožené topánky
+itm_black_dress|Čierne šaty
+itm_blackwhite_dress|Dámske šaty
+itm_white_tunic_a|Biela tunika
+itm_white_tunic_b|jednoduchá tunika
+itm_white_tunic_c|Vesta tuniky
+itm_blue_tunic|Modrá tunika
+itm_black_tunic|Čierna tunika
+itm_green_tunic|Zelená tunika
+itm_red_tunic|Červená tunika
+itm_leather_apron|Kožená zástera
+itm_leather_jerkin|Krátky kožený kabát
+itm_fur_coat|Dálsky kabát
+itm_green_dress|Zelené šaty
+itm_tld_tunic|Tunika
+itm_gondor_fine_outfit_dress|Dobrá výstroj
+itm_rohan_fine_outfit_dale_dress|Dobrá výstroj
+itm_robe_generic_dress|Róba
+itm_wimple_a|Rúška
+itm_wimple_with_veil|Rúška
+itm_fine_hat|Dobrá čapica
+itm_shortened_spear|Skrátená kopija
+itm_spear|Kopija
+itm_light_lance|Ľahká žrď
+itm_lance|Žrď
+itm_tab_shield_small_round_b|Guľatý jazdecký štít
+itm_short_bow|Krátky luk
+itm_regular_bow|Luk
+itm_nomad_bow|Kočovnícky luk
+itm_gondor_bow|Gondorský luk
+itm_strong_bow|Silný luk
+itm_elven_bow|Elfský luk
+itm_corsair_bow|Korzársky luk
+itm_dwarf_horn_bow|Trpasličí luk z rohoviny
+itm_dwarf_short_bow|Trpasličí krátky luk
+itm_harad_bow|Haradský zakrivený luk
+itm_lg_bow|Luk Orlej Stráže
+itm_riv_bow|Luk z Roklinky
+itm_glorfi_bow|Glorfindelský luk 
+itm_lorien_bow|Lothlorienský luk Galadhrim 
+itm_isengard_large_bow|Isengardský veľký luk
+itm_dale_bow|Dálsky luk
+itm_uruk_bow|Ohyzdí luk
+itm_mirkwood_bow|Luk Lesných Elfov
+itm_dunland_javelin|Oštepy z Vrchoviny
+itm_orc_throwing_arrow|Ohyzdie šípové oštepy
+itm_heavy_throwing_spear|Ťažký vrhací oštep
+itm_javelin|Vrhacia kopija
+itm_harad_javelin|Haradská vrhacia kopija
+itm_gondor_javelin|Gondorská vrhacia kopija
+itm_rohirrim_throwing_axe|Rohanské vrhacie sekery
+itm_loss_throwing_axes|Lossarnachské vrhacie sekery
+itm_arnor_helm_a|Arnorská helma
+itm_arnor_helm_b|Arnorská helma
+itm_arnor_helm_c|Arnorská helma
+itm_dunedain_helm_a|Dunedainská kapucňa
+itm_dunedain_helm_b|Arnorská zdobená helma
+itm_arnor_armor_a|Arnorské brnenie
+itm_arnor_armor_b|Arnorské brnenie
+itm_arnor_armor_c|Dunedainský lovecký kožuch
+itm_arnor_armor_d|Dunedainský lovecký kožuch
+itm_arnor_armor_e|Arnorská vystužená vesta
+itm_arnor_armor_f|Arnorské šlachtické brnenie
+itm_arnor_greaves|Arnorské holenné pláty
+itm_arnor_splinted|Arnorské ohybné holenné pláty 
+itm_arnor_shield_a|Arnorský štít
+itm_arnor_shield_c|Arnorský jazdecký štít
+itm_arnor_shield_b|Arnorský štít
+itm_arnor_shield_d|Arnorský jazdecký štít
+itm_arnor_sword_a|Arnorský meč Bastard
+itm_arnor_sword_c|Arnorský meč Bastard
+itm_arnor_sword_f|Arnosrký krátky meč
+itm_riv_helm_a|Roklinská čiapka
+itm_riv_helm_b|Roklinský lukostrelecká helma
+itm_riv_helm_c|Roklinská pechotná helma
+itm_riv_helm_glorfi|Glorfindelská helma
+itm_riv_tiara|Elfská lordská čelenka
+itm_riv_shield_a|Štít Roklinky
+itm_riv_shield_b|Štít Roklinky
+itm_riv_bas_sword|Roklinský meč Bastard
+itm_riv_1h_sword|Roklinský meč
+itm_riv_riding_sword|Roklinský jazdecký meč
+itm_riv_archer_sword|Roklinský lukostrelecký meč
+itm_riv_spear|Roklinská kopija
+itm_riv_armor_light|Roklinské brnenie
+itm_riv_armor_light_inf|Roklinské brnenie
+itm_riv_armor_archer|Roklinské brnenie
+itm_riv_armor_m_archer|Roklinské brnenie
+itm_riv_armor_med|Roklinské brnenie
+itm_riv_armor_heavy|Roklinské brnenie
+itm_riv_armor_h_archer|Roklinské brnenie
+itm_riv_armor_leader|Roklinské veliteľské brnenie
+itm_riv_boots|Roklinské topánky
+itm_gon_footman|Gondorská drôtená košeľa
+itm_gon_jerkin|Gondorská vesta
+itm_gon_regular|Gondorská ťažká drôtená košeľa
+itm_gon_bowman|Gondorské prešívané brnenie
+itm_gon_archer|Gondorské prešívané brnenie s plášťom
+itm_gon_noble_cloak|Gondorská šlachtická vesta
+itm_gon_squire|Gondorské krúžkové brnenie s plášťom
+itm_gon_knight|Gondorské ťažké krúžkové brnenie s plášťom
+itm_gon_ranger_cloak|Gondorský plášť hraničiarov
+itm_gon_ranger_skirt|Gondorská hraničiarská sukňa
+itm_gon_steward_guard|Gondorské brnenie pobočníkovej stráže
+itm_gon_tower_guard|Gondorské brnenie strážcov Veže
+itm_gon_tower_knight|Gondorské brnenie rytierov Veže
+itm_gon_leader_surcoat_cloak|Gondorská veliteľská rytierska tunika
+itm_gondor_ranger_hood|Zelená kapucňa
+itm_gondor_ranger_hood_mask|Gonroská kapucňa hraničiarov
+itm_gondor_light_greaves|Gondorské kožené holenné pláty
+itm_gondor_med_greaves|Gondorské stredne dobré holenné pláty
+itm_gondor_heavy_greaves|Gondorské krúžkové holenné pláty
+itm_gondorian_light_helm|Gondorská pešiacka helma
+itm_gondor_infantry_helm|Gondorská pechotná helma
+itm_gondor_auxila_helm|Gondorská helma podpory
+itm_gondorian_light_helm_b|Gondorská lukostrelecká helma
+itm_gondorian_archer_helm|Gondorská strelecká helma
+itm_tower_archer_helm|Helma lukostrelcov Veže
+itm_gondor_leader_helm|Gondorská šlachtická helma
+itm_tower_guard_helm|Helma stráže Veže
+itm_gondor_citadel_knight_helm|Helma rytierov Citadely
+itm_gondor_squire_helm|Gondorská panošská helma
+itm_gondor_knight_helm|Gondorská rytierska helma
+itm_gondor_dolamroth_helm|Dol Amrothská helma
+itm_swan_knight_helm|Helma labutích rytierov
+itm_gondor_lamedon_helm|Lamedonská helma
+itm_gondor_lamedon_leader_helm|Lamedonská šlachtická helma
+itm_blackroot_archer|Lukostrelecká prilba z Blackroot Vale
+itm_blackroot_bowman|Lukostrelecké brnenie z Blackroot Vale
+itm_blackroot_footman|Pešiacke brnenie z Blackroot Vale
+itm_blackroot_warrior|Bojovnícke brnenie z Blackroot Vale
+itm_blackroot_leader|Veliteľské brnenie z Blackroot Vale
+itm_blackroot_hood|Blackrootska kapucňa
+itm_dol_hauberk|Dol Amrothská krúžková zbroj
+itm_dol_heavy_mail|Dol Amrothská ťažká drôtená košeľa
+itm_dol_padded_coat|Dol Amrothský vystužený kabát
+itm_dol_shirt|Dol Amrothská košeľa
+itm_dol_very_heavy_mail|Dol Amrothská veľmi ťažká drôtená košeľa
+itm_dol_greaves|Dol Amrothské holenné pláty
+itm_dol_shoes|Dol Amrothské ľahké topánky
+itm_lamedon_clansman|Lamedonské klanové brnenie
+itm_lamedon_footman|Lamedonské pešiacke brnenie
+itm_lamedon_knight|Lamedonské rytierske brnenie
+itm_lamedon_leader_surcoat_cloak|Lamedonské veliteľské brnenie
+itm_lamedon_warrior|Lamedonské bojovnícke brnenie
+itm_lamedon_veteran|Lamedonské veteránske brnenie
+itm_lamedon_vet_warrior|Lamedonské brnenie veterána
+itm_lamedon_hood|Lamedonská kapucňa
+itm_pinnath_archer|Pannath Gelinské lukostrelecké brnenie
+itm_pinnath_footman|Pinnath Gelinské pešiacké brnenie
+itm_pinnath_leader|Pinnath Gelinské veliteľské brnenie
+itm_pinnath_vet_footman|Pinnath Gelinské brnenie skúseného pešiaka
+itm_pinnath_warrior|Pinnath Gelinské bojovnícke brnenie
+itm_pel_footman|Pelargirské pešiacke brnenie
+itm_pel_jerkin|Pelargirská vesta
+itm_pel_leader|Pelargirské veliteľské brnenie
+itm_pel_marine|Pelargirský námorník
+itm_pelargir_marine_leader|Pelargirský námorný veliteľ
+itm_pelargir_regular|Pelargirský zelenáč
+itm_pelargir_hood|Pelargirská kapucňa
+itm_pelargir_helmet_light|Pelargirská prilba
+itm_pelargir_helmet_heavy|Pelargirský ťažká pribla
+itm_pelargir_greaves|Pelargirské holenné pláty
+itm_lossarnach_shirt|Lossarnachská košeľa
+itm_lossarnach_axeman|Lossarnachské sekernícke brnenie
+itm_lossarnach_leader|Lossarnachské veliteľské brnenie
+itm_lossarnach_vet_axeman|Lossarnachské brnenie skúseného sekerníka
+itm_lossarnach_vet_warrior|Lossarnachské brnenie skúseného vojaka
+itm_lossarnach_warrior|Lossarnachské bojovnícke brnenie
+itm_lossarnach_cloth_cap|Lossarnachská plátená čiapka
+itm_lossarnach_leather_cap|Lossarnachská kožená čiapka
+itm_lossarnach_scale_cap|Lossarnachská šupinatá čiapka
+itm_lossarnach_greaves|Lossarnachské holenné pláty
+itm_gondor_shield_a|Gondorský štvorcový štít
+itm_gondor_shield_b|Gondorský štít vo tvare slzy
+itm_gondor_shield_c|Gondorský štít Veže
+itm_gondor_shield_d|Gondorský štít vo tvare slzy
+itm_gondor_shield_e|Gondorský šľachtický štít
+itm_gon_tab_shield_a|Heraldický guľatý štít Gondoru
+itm_gon_tab_shield_b|Heraldický štvorcový štít Gondoru
+itm_gon_tab_shield_c|Heraldický štít vo tvare slzy Gondoru
+itm_gon_tab_shield_d|Heraldický štít Gondorskej Veže
+itm_amroth_sword_a|Dol Amrothský meč
+itm_amroth_sword_b|Dol Amrothský rytiersky meč
+itm_gondor_sword|Gondorský pechotný meč
+itm_amroth_bastard|Dol Amrothský ťažký meč
+itm_gondor_short_sword|Linhirský krátky meč
+itm_pelargir_eket|Pelargirský krátky meč
+itm_pelargir_sword|Pelargirský meč
+itm_gondor_ranger_sword|Gondorský hraničiarský meč
+itm_gondor_bastard|Gondorský meč Bastard
+itm_gondor_citadel_sword|Gondorský meč Citadely
+itm_gondor_cav_sword|Gondorský jazdecký meč
+itm_gondor_spear|Gondorská kopija
+itm_gondor_tower_spear|Gondorská kopija Veže
+itm_gondor_lance|Gondrorská dlhá žrď
+itm_loss_axe|Lossarnachská bojová sekera
+itm_loss_war_axe|Lossarnachská vojnová sekera
+itm_lorien_sword_a|Lorienský dlhý meč
+itm_lorien_sword_b|Lorienský krátky meč
+itm_lorien_sword_c|Lorienský vojnový meč
+itm_lorien_archer|Lorienské lukostrelecké brnenie
+itm_lorien_armor_a|Lorienské pechotné brnenie
+itm_lorien_armor_b|Lorienské ťažké pechotné brnenie
+itm_lorien_armor_c|Lorienské šľachtické lukostrelecké brnenie
+itm_lorien_armor_d|Lorienské šľachtické šermiarske brnenie
+itm_lorien_armor_e|Lorienský strážny plášť
+itm_lorien_armor_f|Lorienské elitné brnenie
+itm_lorien_boots|Lorienské topánky
+itm_lorien_shield_b|Lorienský vežový štít 
+itm_lorien_shield_c|Lorienský štít vo tvare slzy
+itm_lorien_round_shield|Lorienský guľatý štít
+itm_lorien_helm_a|Lorienská lukostrelecká prilba
+itm_lorien_helm_b|Lorienská lukostrelecká prilba
+itm_lorien_helm_c|Lorienská pechotná prilba
+itm_orc_chain_greaves|Ohyzdie holenné pláty
+itm_orc_coif|Ohyzdia čiapka
+itm_orc_greaves|Ohyzdie krúžkové topánky
+itm_orc_ragwrap|Ohyzdia šatka
+itm_orc_furboots|Ohyzdie kožušinové topánky
+itm_orc_furboot_tall|Ohyzdie kožušinové topánky
+itm_orc_tribal_a|Neopracovaná koža
+itm_orc_tribal_b|Neopracovaná koža
+itm_orc_tribal_c|Neopracovaná koža
+itm_evil_gauntlets_a|Kovové rukavice
+itm_evil_gauntlets_b|Kovové rukavice
+itm_isen_orc_armor_a|Isengardské ohyzdie brnenie
+itm_isen_orc_armor_b|Isengardské ohyzdie brnenie
+itm_isen_orc_armor_c|Isengardské ohyzdie brnenie
+itm_isen_orc_armor_d|Isengardské ohyzdie brnenie
+itm_isen_orc_armor_e|Isengardské ohyzdie brnenie
+itm_isen_orc_armor_f|Isengardské ohyzdie brnenie
+itm_isen_orc_armor_g|Isengardské ohyzdie brnenie
+itm_isen_uruk_light_a|Uruk-haiský ľahký postroj
+itm_isen_uruk_light_b|Uruk-haiské kožené brnenie
+itm_isen_uruk_light_c|Uruk-haiské kožené brnenie
+itm_isen_uruk_light_d|Uruk-haiská drôtena košeľa pokrytá kožušinou
+itm_isen_uruk_light_e|Uruk-haiský drôtený postroj
+itm_isen_uruk_heavy_a|Uruk-haiská drôtena košeľa pokrytá kožušinou
+itm_isen_uruk_heavy_b|Uruk-haiské ťažké brnenie
+itm_isen_uruk_heavy_c|Uruk-haiské ťažké brnenie
+itm_isen_uruk_heavy_d|Uruk-haiský stopársky odev
+itm_isen_uruk_heavy_e|Uhyzd-haiský stopársky odev
+itm_uruk_tracker_boots|Urukské stopárske topánky
+itm_uruk_greaves|Urukské holenné pláty
+itm_uruk_chain_greaves|Urukské drôtené holenné pláty
+itm_uruk_ragwrap|Urukská šatka
+itm_isen_orc_helm_a|Isengardská ohyzdia helma
+itm_isen_orc_helm_b|Isengardská ohyzdia helma
+itm_isen_orc_helm_c|Isengardská ohyzdia helma
+itm_isen_uruk_helm_a|Uruk-Haiská helma
+itm_isen_uruk_helm_b|Uruk-Haiská helma
+itm_isen_uruk_helm_c|Uruk-Haiská helma
+itm_isen_uruk_helm_d|Uruk-Haiská kapitánska helma
+itm_isen_uruk_helm_e|Uruk-Haiská stopárska helma
+itm_isen_uruk_helm_f|Uruk-Haiská stopárska helma
+itm_uruk_pike_a|Urukská dlhá kopija
+itm_uruk_pike_b|Urukská dlhá kopija
+itm_uruk_falchion_a|Urukský Falchion
+itm_uruk_falchion_b|Urukský Falchion
+itm_uruk_spear|Urukská kopija
+itm_uruk_skull_spear|Urukská kopija lebiek
+itm_uruk_voulge|Urukská sudlica
+itm_uruk_heavy_axe|Urukská ťažká sekera
+itm_isengard_sword|Isengardský meč
+itm_isengard_axe|Isengardská sekera
+itm_isengard_hammer|Isengardské kladivo
+itm_isengard_halberd|Isengardská halapartňa
+itm_isengard_mallet|Isengardský kropáč
+itm_isengard_heavy_axe|Isengardská ťažká sekera
+itm_isengard_heavy_sword|Isengardský ťažký meč
+itm_isengard_spear|Isengardská kopija
+itm_isengard_pike|Isengardská dlhá kopija
+itm_isen_orc_shield_a|Isengardský ohyzdí štít
+itm_isen_orc_shield_b|Isengardský ohyzdí štít
+itm_isen_uruk_shield_b|Isengardský urukský štít
+itm_wood_club|Kyjak
+itm_twohand_wood_club|Veľký kyjak
+itm_bone_cudgel|Palica z kostí
+itm_skull_club|Lebková palica
+itm_orc_club_a|Ohyzdý kyjak
+itm_orc_club_b|Ohyzdý kyjak
+itm_orc_club_c|Ohyzdý kyjak
+itm_orc_club_d|Ohyzdý kyjak
+itm_orc_sledgehammer|Ohyzdie tupé kladivo
+itm_orc_simple_spear|Ohyzdia kopija
+itm_orc_skull_spear|Ohyzdia lebková kopija
+itm_orc_bill|Ohyzdia halapartňa
+itm_orc_slasher|Ohyzdí sekáč
+itm_orc_falchion|Ohyzdí Falchion
+itm_orc_scimitar|Ohyzdia zakrivená šabľa
+itm_orc_sabre|Ohyzdia šabľa
+itm_orc_machete|Ohyzdia mačeta
+itm_orc_axe|Ohyzdia sekera
+itm_orc_two_handed_axe|Ohyzdia obojručná sekera
+itm_orc_throwing_axes|Ohyzdie hádzacie sekery
+itm_orc_bow|Ohyzdí luk
+itm_orc_shield_a|Ohyzdí štít
+itm_orc_shield_b|Ohyzdí štít
+itm_orc_shield_c|Ohyzdí štít
+itm_mordor_orc_shield_a|Mordorský ohyzdí štít
+itm_mordor_orc_shield_b|Mordorský ohyzdí štít
+itm_mordor_orc_shield_c|Mordorský ohyzdí štít
+itm_mordor_orc_shield_d|Mordorský ohyzdí štít
+itm_mordor_orc_shield_e|Mordorský ohyzdí štít
+itm_mordor_uruk_shield_a|Mordorský Urukský štít
+itm_mordor_uruk_shield_b|Mordorský Urukský štít
+itm_mordor_uruk_shield_c|Mordorský Urukský štít
+itm_mordor_man_shield_a|Mordorský ľudský štít
+itm_mordor_man_shield_b|Mordorský ľudský štít
+itm_angmar_shield|Angmarský štít
+itm_orc_helm_a|Ohyzdia rebrová helma
+itm_orc_helm_b|Ohyzdia kbelcová helma
+itm_orc_helm_c|Ohyzdia hrncová helma
+itm_orc_helm_d|Ohyzdia gladiátorska helma
+itm_orc_helm_e|Ohyzdia zobcovitá helma
+itm_orc_helm_f|Ohyzdia hmyzia helma
+itm_orc_helm_g|Ohyzdia vrania helma
+itm_orc_helm_h|Ohyzdia čeľustná helma
+itm_orc_helm_i|Ohyzdia ňufácka helma
+itm_orc_helm_j|Ohyzdia jašteričia helma
+itm_orc_helm_k|Ohyzdia supia helma
+itm_m_orc_light_a|Mordorské ľahké ohyzdie brnenie
+itm_m_orc_light_b|Mordorské ľahké ohyzdie brnenie
+itm_m_orc_light_c|Mordorské ľahké ohyzdie brnenie
+itm_m_orc_light_d|Mordorské ľahké ohyzdie brnenie
+itm_m_orc_light_e|Mordorské ľahké ohyzdie brnenie
+itm_m_orc_heavy_a|Mordorské ťažké ohyzdie brnenie
+itm_m_orc_heavy_b|Mordorské ťažké ohyzdie brnenie
+itm_m_orc_heavy_c|Mordorské ťažké ohyzdie brnenie
+itm_m_orc_heavy_d|Mordorské ťažké ohyzdie brnenie
+itm_m_orc_heavy_e|Mordorské ťažké ohyzdie brnenie
+itm_m_uruk_light_a|Urukský postroj
+itm_m_uruk_light_b|Urukský hrubý postroj
+itm_m_uruk_heavy_c|Urukské kožené brnenie
+itm_m_uruk_heavy_d|Urukské poskládané brnenie
+itm_m_uruk_heavy_e|Urukská drôtená košeľa
+itm_m_uruk_heavy_f|Urukská drôtená košeľa
+itm_m_uruk_heavy_g|Urukská drôtená košeľa
+itm_m_uruk_heavy_h|Urukská čiapka
+itm_m_uruk_heavy_i|Urukská hrubá čapica
+itm_m_uruk_heavy_j|Urukské ťažké brnenie
+itm_m_uruk_heavy_k|Urukské strážnické brnenie
+itm_m_cap_armor|Mordorské kapitánské brnenie
+itm_black_num_armor|Čierno-Númenorejské brnenie
+itm_m_armor_a|Mordorské brnenie
+itm_m_armor_b|Mordorské brnenie
+itm_evil_light_armor|Zlovestný háv
+itm_uruk_helm_a|Urukská helma
+itm_uruk_helm_b|Urukská helma
+itm_uruk_helm_c|Urukská zobcovitá helma
+itm_uruk_helm_d|Urukská gladiátorká helma
+itm_uruk_helm_e|Urukská masková helma
+itm_uruk_helm_f|Urukská helma
+itm_mordor_cap_helm|Mordorská kapitánska helma
+itm_mordor_helm|Mordorská helma
+itm_black_num_helm|Čierno-Númenorejská helma
+itm_mordor_sword|Mordorský meč Bastard
+itm_mordor_longsword|Mordorský meč
+itm_moria_armor_a|Mórijský hrudný postroj
+itm_moria_armor_b|Mórijský hrudný a ramenný postroj
+itm_moria_armor_c|Mórijská ohyzdia drôtená košeľa
+itm_moria_armor_d|Mórijský spevnený odev
+itm_moria_armor_e|Mórijská ohyzdia ťažká drôtená košeľa
+itm_moria_orc_shield_a|Mórijský ohyzdí štít
+itm_moria_orc_shield_b|Mórijský ohyzdí štít
+itm_moria_orc_shield_c|Mórijský ohyzdí štít
+itm_gundabad_armor_a|Gundabadské ohyzdie zdrapy
+itm_gundabad_armor_b|Gundabadská ohyzdia kožušina
+itm_gundabad_armor_c|Gundabadské ohyzdie brnenie
+itm_gundabad_armor_d|Gundabadské ohyzdie brnenie
+itm_gundabad_armor_e|Gundabadské ohyzdie ťažké brnenie
+itm_gundabad_helm_a|Gundabadská čiapka
+itm_gundabad_helm_b|Gundabadská helma
+itm_gundabad_helm_c|Gundabadská helma
+itm_gundabad_helm_d|Gundabadská helma
+itm_gundabad_helm_e|Helma vrrčiaho jazdca
+itm_dunland_wolfboots|Vrchovecké vĺčie topánky
+itm_dunland_armor_a|Vrchovecké kožušinové brnenie
+itm_dunland_armor_b|Vrchovecké kožušinové brnenie
+itm_dunland_armor_c|Vrchovecké kožušinové brnenie
+itm_dunland_armor_d|Vrchovecké kožušinové brnenie
+itm_dunland_armor_e|Vrchovecké kožušinové brnenie
+itm_dunland_armor_g|Vrchovecké kožušinové brnenie
+itm_dunland_armor_h|Vrchovecké dlhé kožušinové brnenie
+itm_dunland_armor_i|Vrchovecká krúžková zbroj
+itm_dunland_armor_j|Vrchovecká krúžková zbroj
+itm_dunland_armor_k|Vrchovecké náčelnícke brnenie
+itm_dun_helm_a|VRchovecká vlčia čiapka
+itm_dun_helm_b|Vrchovecká čapica z rohoviny
+itm_dun_helm_c|Vrchovecká vysoká prilba
+itm_dun_helm_d|Vrchovecká vysoká prilba
+itm_dun_helm_e|Vrchovecká vysoká vojnová prilba
+itm_dun_shield_a|Vrchovecký štít
+itm_dun_shield_b|Vrchovecký štít
+itm_dun_berserker|Vrchovecký náčelnícky meč
+itm_dunnish_antler_axe|Vrchovecká sekera z rohoviny
+itm_dunnish_war_axe|Vrchovecká vojnová sekera
+itm_dunnish_axe|Vrchovecká sekera
+itm_dunland_spear|Vrchovecká kopija
+itm_dunnish_pike|Vrchovecká dlhá kopija
+itm_rohan_armor_a|Rohanská košeľa
+itm_rohan_armor_b|Rohanská košeľa s plášťom
+itm_rohan_armor_c|Rohanská dlhá košeľa
+itm_rohan_armor_d|Rohanská krúžková zbroj
+itm_rohan_armor_e|Rohanská krúžková zbroj
+itm_rohan_armor_f|Rohanská krúžková zbroj
+itm_rohan_armor_g|Rohanská drôtená košeľa
+itm_rohan_armor_h|Rohanská dlhá drôtená košeľa
+itm_rohan_armor_i|Rohanská dlhá drôtená košeľa
+itm_rohan_armor_j|Rohanská krúžková zbroj
+itm_rohan_armor_k|Rohanská krúžková zbroj
+itm_rohan_armor_l|Rohanská krúžková zbroj
+itm_rohan_armor_m|Rohanské šupinové brnenie
+itm_rohan_armor_n|Rohanské šupinové brnenie
+itm_rohan_armor_o|Rohanské šupinové brnenie
+itm_rohan_armor_p|Rohanské brnenie
+itm_rohan_armor_q|Rohanské brnenie
+itm_rohan_armor_r|Rohanské brnenie
+itm_rohan_armor_s|Rohanská heraldická zbroj
+itm_rohan_light_helmet_a|Rohanská ľahká prilba
+itm_rohan_light_helmet_b|Rohanská ľahká prilba
+itm_rohan_inf_helmet_a|Rohanská pechotná helma
+itm_rohan_inf_helmet_b|Rohanská pechotná helma
+itm_rohan_archer_helmet_a|Rohanský lukostrelecká helma
+itm_rohan_archer_helmet_b|Rohanský lukostrelecká helma
+itm_rohan_archer_helmet_c|Rohanská jazdecká lukostrelecká helma
+itm_rohan_cav_helmet_a|Rohanaská jazdecká prilba
+itm_rohan_cav_helmet_b|Rohanaská jazdecká prilba
+itm_rohan_cav_helmet_c|Rohanaská jazdecká prilba
+itm_rohan_captain_helmet|Rohanská kapitánska helma
+itm_rohan_shield_a|Rohanský štít
+itm_rohan_shield_b|Rohanský štít
+itm_rohan_shield_c|Rohanský štít
+itm_rohan_shield_d|Rohanský štít
+itm_rohan_shield_e|Rohanský štít
+itm_rohan_shield_f|Rohanský štít
+itm_rohan_shield_g|Rohanský šľachtický štít
+itm_rohan_light_greaves|Rohanské ľahké holenné pláty
+itm_rohirrim_war_greaves|Rohirrské vojenské holenné pláty
+itm_rohan_shoes|Kožené topánky
+itm_rohan_cav_sword|Rohanský jazdecký meč
+itm_rohan_inf_sword|Rohanský meč
+itm_rohan_spear|Rohanská dlhá kopija
+itm_rohan_lance|Rohanská žrď
+itm_rohan_sword_c|Rohanský meč
+itm_rohirrim_short_axe|Rohirrská krátka sekera
+itm_rohirrim_long_hafted_axe|Rohirrská dlhá sekera
+itm_rohan_2h_sword|Rohanský vojnový meč
+itm_mirkwood_light_scale|Ľahké šupinové brnenie Lesných elfov
+itm_mirkwood_armor_a|Ľahký kožuch
+itm_mirkwood_armor_b|Ľahké šupinové prešívané brnenie
+itm_mirkwood_armor_c|Ľahká drôtená šupinová zbroj
+itm_mirkwood_armor_d|Ľahký prešívaný plášť
+itm_mirkwood_armor_e|Ľahká drôtená košeľa s plášťom
+itm_mirkwood_armor_f|Šľachtické brnenie Lesných elfov
+itm_mirkwood_great_spear|Temnohvozdská vynikajúca kopija
+itm_mirkwood_war_spear|Temnohvozdská vojnová kopija
+itm_mirkwood_short_spear|Temnohvozdská kopija
+itm_mirkwood_knife|Temnohvozdský biely nôž
+itm_mirkwood_sword|Temnohvozdský meč
+itm_mirkwood_spear_shield_a|Temnohvozdský kopijnický štít
+itm_mirkwood_spear_shield_b|Temnohvozdský vojnový štít
+itm_mirkwood_spear_shield_c|Temnohvozdský šermiarský štít
+itm_mirkwood_helm_a|Temnohvozdská lukostrelecká prilba
+itm_mirkwood_helm_b|Temnohvozdská prilba
+itm_mirkwood_helm_c|Temnohvozdská šľachtická kopijnická helma
+itm_mirkwood_helm_d|Temnohvozdská šľachtická lučišnická helma
+itm_mirkwood_boots|Temnohvozdské topánky
+itm_mirkwood_leather_greaves|Temnohvozdské kožené holenné pláty
+itm_harad_tunic|Haradská tunika
+itm_harad_padded|Harondorské vystužené brnenie
+itm_harad_hauberk|Harondorská krúžková zbroj
+itm_harad_lamellar|Harasjalské brnenie
+itm_harad_heavy|Haradské šermiarské brnenie
+itm_harad_skirmisher|Ľahký haradský odev
+itm_harad_archer|Haradské lukostrelecké brnenie
+itm_black_snake_armor|Marankské brnenie
+itm_harad_champion|Odev Vzdialeného Haradu
+itm_panther_guard|Panterský háv
+itm_harad_scale|Haradské šupinové brnenie
+itm_harad_tiger_scale|Brnenie Tigrej stráže
+itm_harad_lion_scale|Brnenie Leviej stráže
+itm_harad_dragon_helm|Kiloksá helma
+itm_harad_cav_helm_a|Harondorská jazdecká prilba
+itm_harad_cav_helm_b|Harondorská jazdecká prilba
+itm_black_snake_helm|Marankská helma
+itm_harad_finhelm|Veľká haradská helma
+itm_harad_heavy_inf_helm|Veľká haradská helma
+itm_harad_wavy_helm|Veľká haradská helma
+itm_harad_eaglehelm|Helma Orliej stráže
+itm_lion_helm|Helma Leviej stráže
+itm_harad_pantherhelm|Čiapka Pantérskej stráže
+itm_harad_khopesh|Haradský bojový kosák
+itm_black_snake_sword|Haradský ťažký Falchion
+itm_harad_heavy_sword|Haradský ťažký meč
+itm_horandor_a|Haradská zakrivená šabľa
+itm_skirmisher_sword|Haradský šermiarský meč
+itm_harad_sabre|Haradská šabľa
+itm_harad_mace|Palcát Ďalekého Haradu
+itm_far_harad_2h_mace|Obojručný kyj Ďalekého Haradu
+itm_harad_dagger|Haradský nôž
+itm_harad_short_spear|Haradská krátka kopija
+itm_harad_long_spear|Haradská kopija
+itm_eagle_guard_spear|Harasjalská tyč
+itm_harad_long_shield_a|Haradský leopardí štít
+itm_harad_long_shield_b|Haradský bronzový štít
+itm_harad_long_shield_c|Haradský slnečný štít
+itm_harad_long_shield_d|Haradský hadí štít
+itm_harad_long_shield_e|Haradský hadí štít
+itm_harad_shield_a|Harondorský štít
+itm_harad_shield_b|Harondorský drobný štít
+itm_harad_shield_c|Harondorský drobný štít
+itm_harad_tribal_a|Štít Ďalekého Haradu
+itm_harad_tribal_b|Štít Ďalekého Haradu
+itm_harad_yellow_shield|Haradský štít
+itm_desert_boots|Dezertérske topánky
+itm_harad_leather_greaves|Haradské holenné pláty
+itm_harad_scale_greaves|Haradské topánky
+itm_harad_lamellar_greaves|Haradské topánky
+itm_khand_helmet_a1|Khandská helma s nákrčníkom
+itm_khand_helmet_a2|Khandská helma
+itm_khand_helmet_a3|Khandská zahalená helma
+itm_khand_helmet_b1|Khandská zdobená helma
+itm_khand_helmet_b2|Khandská masková helma
+itm_khand_helmet_b3|Khandská zahalená helma
+itm_khand_helmet_b4|Khandská helma s nákrčníkom
+itm_khand_helmet_c3|Khandská pechotná helma
+itm_khand_helmet_c4|Khandská pechotná helma
+itm_khand_helmet_d1|Khandská masková helma
+itm_khand_helmet_d2|Khandská helma s nákrčníkom
+itm_khand_helmet_d3|Khandská masková helma
+itm_khand_helmet_e1|Khandská zahalená helma
+itm_khand_helmet_e2|Khandská helma s nákrčníkom
+itm_khand_helmet_e3|Khandská helma
+itm_khand_helmet_e4|Khandská zahalená helma
+itm_khand_helmet_f1|Khandská zahalená helma
+itm_khand_helmet_mask1|Khandská maska
+itm_khand_helmet_mask2|Khandská maska
+itm_khand_light|Khandská sukňa
+itm_khand_foot_lam_a|Khandské brnenie
+itm_khand_foot_lam_b|Khandské brnenie
+itm_khand_foot_lam_c|Khandské brnenie
+itm_khand_heavy_lam|Khandské ťažké lamelové brnenie
+itm_khand_light_lam|Khandské ľahké lamelové brnenie
+itm_khand_med_lam_b|Khandské stredné lamelové brnenie
+itm_khand_med_lam_c|Khandské stredné lamelové brnenie
+itm_khand_med_lam_d|Khandské stredné lamelarské brnenie
+itm_khand_noble_lam|Khandské šľachtické brnenie
+itm_variag_greaves|Variagské holenné pláty
+itm_khand_axe_great|Khandská veľká sekera
+itm_khand_axe_winged|Khandská okrídlená sekera
+itm_khand_halberd|Khandská halapartňa
+itm_khand_trident|Khandský trojzubec
+itm_khand_voulge|Khandská sudlica
+itm_khand_mace1|Khandský palcát
+itm_khand_mace2|Khandský palcát
+itm_khand_mace_spiked|Khandský ostnatý palcát
+itm_khand_rammace|Khandský lamelový palcát
+itm_khand_pitsword|Gladiátorský meč
+itm_khand_tulwar|Khandský prehnutý meč
+itm_khand_2h_tulwar|Khandský prehnutý meč
+itm_khand_lance|Khandská žrď
+itm_easterling_round_horseman|Východniarský guľatý štít
+itm_variag_gladiator_shield|Variagský gladiátorský štít
+itm_easterling_hawk_shield|Východniarský jastrabý štít
+itm_rhun_bull1_shield|Rhunský štít
+itm_rhun_bull2_shield|Rhunský štít
+itm_rhun_bull3_shield|Rhunský štít
+itm_furry_boots|Kožušinové topánky
+itm_rhun_armor_a|Rhunská ľahká bojová zbroj
+itm_rhun_armor_b|Rhunská ľahká bojová zbroj
+itm_rhun_armor_d|Rhunská ľahká bojová zbroj
+itm_rhun_armor_g|Rhunská ťažká bojová zbroj
+itm_rhun_armor_h|Rhunská ťažká bojová zbroj
+itm_rhun_armor_j|Rhunská stredná bojová zbroj
+itm_rhun_armor_m|Rhunská stredná bojová zbroj
+itm_rhun_armor_n|Rhunská stredná bojová zbroj
+itm_rhun_armor_o|Rhunská stredná bojová zbroj
+itm_rhun_armor_p|Rhunské šľachtické brnenie
+itm_rhun_armor_k|Rhunské šľachtické brnenie
+itm_rhun_helm_a|Rhunské ostnaté brnenie
+itm_rhun_helm_b|Rhunská prilba s nákrčníkom
+itm_rhun_helm_c|Helma Rhúnskej hordy
+itm_rhun_helm_e|Rohatá helma rhúnskej hordy
+itm_rhun_helm_g|Rhúnska rohatá prilba
+itm_rhun_helm_h|Rhúnska rohatá prilba
+itm_rhun_helm_i|Rhunská guľatá prilba
+itm_rhun_helm_j|Rhunská guľatá masková prilba
+itm_rhun_helm_k|Rhunská kožená helma
+itm_rhun_helm_l|Rhunská kožená helma
+itm_rhun_helm_m|Rhunská kožená helma
+itm_rhun_helm_n|Rhunská náčelnícka helma
+itm_rhun_helm_o|Rhunská náčelnícka helma
+itm_rhun_greataxe|Rhunská veľká sekera
+itm_rhun_battleaxe|Rhunská vojnová sekera
+itm_rhun_falchion|Rhunský Falchion
+itm_rhun_glaive|Rhunský sudlico-meč
+itm_rhun_greatfalchion|Rhunský veľký Falchion
+itm_rhun_greatsword|Rhunský veľký meč
+itm_rhun_shortsword|Rhunský krátky meč
+itm_rhun_sword|Rhunský meč
+itm_rhun_shield|Rhunský štít vo tvare slzy
+itm_dale_armor_a|Dálsky kabát
+itm_dale_armor_b|Dálsky kabát s plášťom
+itm_dale_armor_c|Dálsky lukostrelecký kabát
+itm_dale_armor_d|Dálsky lukostrelecký kabát
+itm_dale_armor_e|Dálsky kabát na drôtenej košeli
+itm_dale_armor_f|Dálsky kabát na drôtenej košeli
+itm_dale_armor_g|Dálsky kabát na drôtenej košeli
+itm_dale_armor_h|Dálska krúžková zbroj s plášťom
+itm_dale_armor_i|Dálska krúžková zbroj s plášťom
+itm_dale_armor_j|Dálska krúžková zbroj s plášťom
+itm_dale_armor_k|Dálske šľachtické brnenie
+itm_dale_armor_l|Dálsky šľachtický nákrčník
+itm_dale_helmet_a|Dálska ľahká pechotná helma
+itm_dale_helmet_b|Dálska ľahká lukostrelecká helma
+itm_dale_helmet_c|Dálska pechotná helma
+itm_dale_helmet_d|Dálska lukostrelecká helma
+itm_dale_helmet_e|Dálska ťažká pechotná helma
+itm_dale_helmet_f|Dálska ťažká lukostrelecká helma
+itm_dale_sword|Dálsky krátky meč
+itm_dale_sword_long|Dálsky dlhý meč
+itm_dale_sword_broad|Dálsky široký meč
+itm_dale_pike|Dálska kopija
+itm_dale_billhook|Dálska háko-halapartňa
+itm_dale_shield_a|Dálsky štít
+itm_dale_shield_b|Dálsky štít
+itm_dale_shield_c|Dálsky štít
+itm_dale_shield_d|Dálsky štít
+itm_umb_armor_a|Korzárskě kožené brnenie
+itm_umb_armor_a1|Korzárské ťažké kožené brnenie
+itm_umb_armor_b|Korzárské nájazdnícke brnenie
+itm_umb_armor_c|Korzárske vystužené brnenie
+itm_umb_armor_d|Korzárske ťažké vystužené brnenie
+itm_umb_armor_e|Korzárske nájazdnícke vypchaté brnenie
+itm_umb_armor_f|Korzárska krúžková zbroj
+itm_umb_armor_g|Korzárske krúžkové ramenné pláty
+itm_umb_armor_h|Korzárske ťažké nájazdnícke brnenie
+itm_umb_helm_a|Korzárska mušľová prilba
+itm_umb_helm_b|Korzárska mušľová prilba
+itm_umb_helm_c|Korzárska helma domobrany
+itm_umb_helm_d|Korzárska helma domobrany
+itm_umb_helm_e|Korzárska nájazdnícka prilba
+itm_umb_helm_f|Korzárska nájazdnícka prilba
+itm_umb_hood|Umbarská kapucňa
+itm_corsair_boots|Korzárske topánky
+itm_umb_shield_a|Korzársky drobný štít
+itm_umb_shield_b|Korzársky drobný štít
+itm_umb_shield_c|Korzársky drobný štít
+itm_umb_shield_d|Korzársky drobný štít
+itm_umb_shield_e|Korzársky drobný štít
+itm_umbar_cutlass|Umbarská krátka šabľa
+itm_kraken|Krakenská šabľa
+itm_umbar_rapier|Umbarský meč
+itm_corsair_harpoon|Korzárska harpúna
+itm_corsair_sword|Korzársky krátky meč
+itm_corsair_throwing_dagger|Umbarské vrhacie dýky
+itm_umbar_pike|Umbarská dlhá kopija
+itm_woodman_tunic|Lesnícka tunika
+itm_woodman_scout|Lesnícky prieskupmnícky plášť
+itm_woodman_padded|Lesnícke vystužené brnenie
+itm_beorn_tunic|Grizlovská tunika
+itm_beorn_padded|Grizlovské vystužené brnenie
+itm_beorn_heavy|Grizlovské ťažké brnenie
+itm_beorn_berserk|Grizlovská berserkská zbroj
+itm_beorn_chief|Grizlovská náčelnícka tunika
+itm_beorn_helmet|Severanská čapica
+itm_beorn_shield|Severanský štít
+itm_beorn_axe|Grizlovská sekera
+itm_beorn_staff|Lesnícka tyč
+itm_beorn_battle_axe|Grizlovská bojová sekera
+itm_dwarf_shield_a|Trpasličí štít
+itm_dwarf_shield_b|Trpasličí štít
+itm_dwarf_shield_c|Trpasličí štít
+itm_dwarf_shield_d|Trpasličí štít
+itm_dwarf_shield_f|Trpasličí štít
+itm_dwarf_shield_g|Trpasličí štít
+itm_dwarf_shield_i|Trpasličí štít
+itm_dwarf_shield_j|Trpasličí štít
+itm_dwarf_shield_k|Trpasličí štít
+itm_dwarf_shield_l|Trpasličí štít
+itm_dwarf_sword_a|Trpasličí meč
+itm_dwarf_sword_b|Trpasličí meč
+itm_dwarf_sword_c|Trpasličí meč
+itm_dwarf_sword_d|Trpasličí meč
+itm_dwarf_adz|Trpasličia bojová tesárska sekera
+itm_dwarf_great_axe|Trpasličia veľká sekera
+itm_dwarf_great_mattock|Trpasličí veľký bojový čakan
+itm_dwarf_great_pick|Trpasličí veľký bojový krompáč
+itm_dwarf_war_pick|Trpasličí bojový krompáč
+itm_dwarf_mattock|Trpasličí bojový čakan
+itm_dwarf_hand_axe|Trpasličia krátka sekera
+itm_dwarf_throwing_axe|Trpasličia vrhačská sekera
+itm_dwarf_spear|Trpasličia kopija
+itm_dwarf_spear_b|Trpasličia dlhá kopija
+itm_dwarf_spear_c|Trpasličia dlhá kopija
+itm_dwarf_helm_a|Trpasličia čiapka
+itm_dwarf_helm_b|Trpasličia čiapka s maskou
+itm_dwarf_helm_c|Trpasličia helma s maskou
+itm_dwarf_helm_h|Trpasličia helma
+itm_dwarf_helm_i|Trpasličia krycia helma
+itm_dwarf_helm_j|Trpasličia krycia helma
+itm_dwarf_helm_l|Trpasličia kapucňa
+itm_dwarf_helm_m|Trpasličií železný chránič hlavy
+itm_dwarf_helm_o|Trpasličia nosná prilba
+itm_dwarf_helm_p|Trpasličia kráľovská helma
+itm_dwarf_helm_q|Trpasličia banícka prilba
+itm_dwarf_helm_r|Trpasličia banícka čiapka
+itm_dwarf_helm_u|Trpasličia kruhová maska
+itm_dwarf_helm_v|Trpasličia helma s krúžkovým nákrčníkom
+itm_dwarf_helm_x|Trpasličia masková helma s nákrčníkom
+itm_dwarf_armor_a|Trpasličia tunika na drôtenej košeli
+itm_leather_dwarf_armor|Trpasliče vystužené brnenie na drôtenej košeli
+itm_dwarf_vest|Trpasličie lukostrelecké brnenie
+itm_dwarf_armor_b|Trpasličie vystužené brnenie na tunike
+itm_dwarf_armor_c|Trpasličie šupinové brnenie na drôtenej košeli
+itm_leather_dwarf_armor_b|Trpasličia tunika
+itm_dwarf_vest_b|Tunika Železných Hôr
+itm_dwarf_pad_boots|Trpasličie vystužené topánky
+itm_dwarf_chain_boots|Trpasličie krúžkové nohavice
+itm_dwarf_scale_boots|Trpasličie šupinové topánky
+itm_good_mace|Palcát
+itm_far_harad_shield_paint|Prútený štít
+itm_nazgulrobe|Nazgúlsky háv
+itm_whiterobe|Biela róba
+itm_mordor_banner|Mordorská zástava
+itm_isengard_banner|Isengardská zástava
+itm_woodelf_banner|Zástava lesných elfov
+itm_lorien_banner|Lothlorienská zástava
+itm_imladris_banner|Roklinská zástava
+itm_gondor_lance_banner|Gondorská žrď so zástavou
+itm_amroth_lance_banner|Dol Amrothská žrď so zástavou
+itm_rohan_lance_banner_sun|Rohanská žrď so zástavou slnka
+itm_rohan_lance_banner_horse|Rohanská žrď so zástavou koňa
+itm_ent_body|Entský trup
+itm_ent_head_helm|Entská hlava
+itm_ent_head_helm2|Entská hlava
+itm_ent_head_helm3|Entská hlava
+itm_ent_feet_boots|Entské nohy
+itm_ent_hands|Entské ruky
+itm_galadriel|Oblek lady Galadriel
+itm_ent_water|Zvláštna miska vody
+itm_map|Mapy Stredozeme
+itm_athelas_reward|Bylina Athelas
+itm_phial_reward|Svetlo Galadriel
+itm_scroll_reward|Pád Gondolinu
+itm_hammer_reward|Kováčske kladivo
+itm_khand_knife_reward|Khandský obetný nôž
+itm_angmar_whip_reward|Pánsky bič
+itm_horn_gondor_reward|Roh Gondoru
+itm_harad_totem_reward|Haradský totem
+itm_elven_amulet_reward|Elfský amulet
+itm_torque_reward|Čelenka zla so závojom
+itm_orc_brew|Ohyzdie pivo
+itm_rohan_saddle|Thengelovo sedlo
+itm_mearas_reward|Nebojácný kráľovský žrebec
+itm_sword_of_arathorn|Arathornov meč
+itm_riv_armor_reward|Zdobené brnenie Roklinky
+itm_westernesse1h_reward|Meč Západných ríší 
+itm_westernesse2h_reward|Meč obrovského hada
+itm_mirkwood_sword_reward|Relikvia meča Lesných elfov
+itm_nazgul_sword|Nazgúlov meč
+itm_cooking_cauldron|Variaci kotlík
+itm_eorl_cavalry_sword|Eorlov meč
+itm_garlic_reward|Cesnak
+itm_silmarillion_reward|Silmarillion
+itm_herbarium_reward|Herbár Stredozeme
+itm_book_of_moria|Kniha Mazarbul
+itm_ring_a_reward|Tulcarisil
+itm_ring_b_reward|Finwarisil
+itm_dale_bow_reward|Luk Barda Lučišníka 
+itm_explosive_reward|Isengardská mína
+itm_corsair_trident|Trojzubec Morskej Zúrivosti
+itm_crebain_reward|Isengardská vrána
+itm_miruvor_reward|Miruvorská čutora
+itm_wheeled_cage|Obrovská klec s kolesami
+itm_orc_throwing_axes_reward|Gundabadské lietajúce sekery
+itm_corsair_throwing_dagger_reward|Otrávené vrhacie dýky
+itm_dwarf_shield_reward|Trpasličí štít z Mithrilu
+itm_dwarf_great_axe_reward|Trpasličia ostrá sekera
+itm_isen_uruk_heavy_reward|Uruk-haiské generálske brnenie
+itm_lorien_bow_reward|Noldorský luk
+itm_lorien_sword_reward|Meč Galadhrim
+itm_dale_sword_reward|Meč Hraničnej stráže
+itm_dale_armor_reward|Esgarothský šľachtický nákrčník
+itm_leather_gloves_reward|Lovecké rukavice
+itm_beorn_shield_reward|Grizlovský štít
+itm_beorn_axe_reward|Medvedia sekera
+itm_moria_arrow_reward|Mórijské otrávené šípy
+itm_khamul_helm|Helma Khamula
+itm_gandstaff|Čarodejnícka palica
+itm_sarustaff|Čarodejnícka palica
+itm_rohan_armor_th|Rohanské šľachtické brnenie
+itm_denethor_robe|Pobočníková róba
+itm_prisoner_coll_chain|Väzeňské reťaze
+itm_witchking_helmet|Prútená helma
+itm_lorien_royal_armor|Lorienské šľachtické brnenie
+itm_feet_chains|Reťaz na nohy
+itm_feet_chains_dwarf|Reťaz na nohy
+itm_spider|Pavúk
+itm_bear|Medveď
+itm_wolf|Vlk
+itm_defiled_armor_gondor|Poškvrnená Gondorská veliteľská zbroj
+itm_defiled_armor_rohan|Poškvrnená Rohanská krúžková zbroj
+itm_defiled_armor_dale|Poškvrnené Dálske šľachtické brnenie

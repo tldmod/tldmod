@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|灰色山脉，矮人们的领地
 str_fullname_region_mordor|魔多，黑暗魔君索伦的领地
 str_shortname_region_unknown|不名之地
 str_shortname_region_pelennor|帕兰诺平原
-str_shortname_region_subfac_pelargir|兰班宁
+; str_shortname_region_subfac_pelargir|the Fiefdom of Lebennin
 str_shortname_region_subfac_dol_amroth|贝尔法拉斯
 str_shortname_region_subfac_ethring|林罗谷
-str_shortname_region_subfac_lossarnach|罗萨那奇
+; str_shortname_region_subfac_lossarnach|the Fiefdom of Lossarnach
 str_shortname_region_subfac_pinnath_gelin|皮那斯杰林
 str_shortname_region_subfac_blackroot|拉密顿
 str_shortname_region_n_ithilien|北伊西利安
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|战争之痕
 str_trait_desc_battle_scarred|多年的征战在你身上留下了许多无法磨灭的伤痕,它向人们诉说着你传奇般的过去.伤疤和肉结使你更有效的避免再次受伤.你骇人的容貌让你的追随者深信你的战斗经验是如此的丰富,每周获得士气奖励.
 str_trait_title_fell_beast|凶猛之兽
 str_trait_desc_fell_beast|无数的征战和交错的伤疤令你的皮肤开裂,但你邪恶的意志始终不灭.即便是兽人,强兽人或食人妖那样残暴的种族,仍然视你为洪水猛兽.你的部下在战场上呼喊着你的名字.你是战斗的化身,没有什么能令你感到害怕.
+; str_trait_title_butcher|Butcher
+; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat.
 ; str_wound_head|a heavy blow to the head
 ; str_wound_chest|some cracked ribs
 ; str_wound_arm|a badly maimed arm

@@ -129,7 +129,7 @@ dlga_companion_home_description:companion_home_description_2|Reknete mi vice.
 dlga_companion_home_description:close_window|Ted opravdu neni vhodna doba na vykecavani se. 
 dlga_companion_home_description:close_window.1|Byl bych radsi, kdyby mne moji spolecnici nezatezovali takovymi malichernostmi. 
 dlga_start:player_hire_troop|{s33}^^Já velím ustavené posádce v {s21}. Chtěl jsi mě vidět?
-; dlga_player_hire_troop:player_hire_troop_give|Some of the soldiers in my group would be more useful here, to defend {s21}.
+dlga_player_hire_troop:player_hire_troop_give|Někteří vojáci v mé skupině by zde byli užitečnější, pre obranu{s21}
 dlga_player_hire_troop:close_window|Chci si prohlédnout své vojáky, co zde sídlí.
 dlga_player_hire_troop:close_window.1|Potrebuji nejaky trenink.
 dlga_player_hire_troop:tld_sell_prisoners|Dovezl jsem vam nejake zajatce.
@@ -219,7 +219,7 @@ dlga_lord_follow_spy_failed:lord_pretalk|Hrm. Jak si přejete, {s65}.
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Odpusťtě, {s65}, ti otroci byli slizcí jako úhoři.
 ; dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, that is hardly an excuse for failure, {playername}. Now if you will excuse me, I need to capture new men to work these fields before we all starve.
 dlga_lord_start:lord_runaway_serf_half_completed|Zklamal jsi mě, {playername}. Chtěl jsem po tobě tři skupiny navrácených otroků. 3, ne {reg17}. Ti co se vrátili, teď budou muset dřít dvakrát tvrději. A co se týče tvé odměny {playername}, zaplatím ti jen za ty, co jsi vrátil, ne za ty uprchlé. Na, vem si to. Ať je to za námi.
-; dlga_lord_runaway_serf_half_completed:lord_pretalk|Thank you, {s65}. You are indeed generous.
+dlga_lord_runaway_serf_half_completed:lord_pretalk|Dakujem, si uzasny{s65}
 dlga_lord_runaway_serf_half_completed:lord_pretalk.1|Bah, tohle se ukázalo být ztrátou času.
 ; dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. I am pleased that you delivered {reg13} units of {s4}, as I requested. I'm impressed.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|Bez problému, {s65}.

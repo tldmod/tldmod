@@ -263,7 +263,7 @@ menu_village_hunt_down_fugitive_defeated|^^^^^Jak udarac od doticne osobe poslao
 menu_town_bandits_succeeded|^^^^^Uspesno si savladao gobline! Ubrzo si stajao kao jedini preziveli dok su vecina napadaca lezana mrtva ili ranjena. Sigurno ce lokalci biti srecni sto si ih spasao od ovog problema.
 menu_town_brawl_lost|^^^^^^Pao si na zemlju. Oni koji su te napali, brzo su te pretrazili, da nemas nesto vredno kod sebe, pre nego sto su otisli dalje.
 menu_town_brawl_won|^^^^^Pobedio si protivnike, i strazar dolazi da izvidi situaciju. Brzo si uzeo nesto od vrednih stvari koje su imali i pobegao si.^Mozda ce sledeci put pokazati vise postovanja, i udaljiti se na vreme.
-; menu_close|Nothing.
+menu_close|Ništa.
 menu_town|Dosao si u {s60}.{s12}{s13}
 mno_town_menu_0|Idi na neku lokaciju.
 mno_town_menu_0_door|Vrata za neku lokaciju.
@@ -315,7 +315,7 @@ menu_ruins|^^^^Prisao si {s1}. Nekada jako mesto je sada razruseno do temelja, i
 menu_legendary_place|^^^^Pratio si price, i nasao si {s1}. Sada mozes da istrazis ovo mesto i da vidis da li su price tacne.
 mno_explore|Istrazi lokaciju.
 ; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
+mno_attack_lair|Napadnite ih sada 
 ; mno_leave_bandit_lair|Leave for now.
 menu_starting_quest_good|^^^^^^Vidis mali karavan koji je napadnut od strane orkova. Sta ces da uradis?
 mno_help|Pomozi strancima!
@@ -380,4 +380,4 @@ mno_scene4|Bojno polje8 (file scn battlefield8.sco)
 mno_scene5|Bojno polje9 (file scn battlefield9.sco)
 mno_back_3dot|Nazad...
 mno_back|Nazad
-; mno_next|Next...
+mno_next|Sledece....

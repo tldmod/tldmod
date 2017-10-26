@@ -1,0 +1,906 @@
+itm_horse_meat|Koňské maso
+itm_practice_sword|Cvičný meč
+itm_arena_lance|Rytířské kopí
+itm_practice_staff|Dřevěná hůl
+itm_practice_bow|Cvičný luk
+itm_wooden_javelin|Dřevěný oštěp
+itm_human_meat|Lidské maso
+itm_maggoty_bread|Červavý chléb
+itm_cram|Doplnit příděly
+itm_lembas|Lembas
+itm_smoked_fish|Uzená ryba
+itm_dried_meat|Sušené maso
+itm_cattle_meat|Hovězí
+itm_grain|Pšenice
+itm_tools|Nástroje
+itm_siege_supply|Zásoby
+itm_quest_wine|Víno
+itm_quest_ale|Pivo
+itm_metal_scraps_bad|Nekvalitní šrot
+itm_metal_scraps_medium|Použitelný šrot
+itm_metal_scraps_good|Kvalitní šrot
+itm_oliphant|Olifant
+itm_sumpter_horse|Mezek
+itm_saddle_horse|Osedlaný kůň
+itm_steppe_horse|Stepní kůň
+itm_courser|Oř
+itm_hunter|Lovecký kůň
+itm_pony|Poník
+itm_arnor_warhorse|Arnorský válečný kůň
+itm_dunedain_warhorse|Dunadanský válečný kůň
+itm_rohirrim_courser|Rohanský oř
+itm_rohirrim_hunter|Rohanský lovecký kůň
+itm_rohirrim_courser2|Rohanský oř
+itm_rohan_warhorse|Rohanský válečný kůň
+itm_thengel_warhorse|Thengelský strážní válečný kůň
+itm_rhun_horse_a|Rhunský kůň
+itm_rhun_horse_b|Rhunský kůň
+itm_rhun_horse_d|Rhunský kůň
+itm_rhun_horse_e|Rhunský těžký kůň
+itm_rhun_horse_f|Rhunský těžký kůň
+itm_rhun_horse_g|Rhunský těžký kůň
+itm_rhun_horse_h|Rhunský těžký kůň
+itm_dale_horse|Dolský kůň
+itm_dale_warhorse|Dolský válečný kůň
+itm_riv_warhorse|Rivendelský válečný kůň
+itm_riv_warhorse2|Imladriský oř
+itm_mordor_warhorse|Mordorský válečný kůň
+itm_mordor_warhorse2|Mordorský zlověstný válečný kůň
+itm_gondor_courser|Gondorský oř
+itm_gondor_hunter|Gondorský lovecký kůň
+itm_dol_amroth_warhorse|Dol Amrothský válečný kůň
+itm_dol_amroth_warhorse2|Dol Amrothský těžký válečný kůň
+itm_gondor_warhorse|Gondorský válečný kůň
+itm_gondor_lam_horse|Lamedonský válečný kůň
+itm_lorien_warhorse|Lorienský válečný kůň
+itm_harad_horse|Haradský kůň
+itm_harad_warhorse|Haradský válečný kůň
+itm_variag_pony|Variažský poník
+itm_variag_kataphrakt|Východňanský válečný kůň
+itm_warg_1b|Warg
+itm_warg_1c|Warg
+itm_warg_1d|Warg
+itm_wargarmored_1b|Obrněný warg
+itm_wargarmored_1c|Obrněný warg
+itm_wargarmored_2b|Obrněný warg
+itm_wargarmored_2c|Obrněný warg
+itm_wargarmored_3a|Obrněný warg
+itm_warg_reward|Obrovský warg
+itm_troll_feet_boots|Trollí chodidlo
+itm_troll_head_helm|Trollí hlava
+itm_troll_head_helm_b|Trollí hlava
+itm_troll_head_helm_c|Trollí hlava
+itm_tree_trunk_club_a|Kmen stromu
+itm_tree_trunk_club_b|Kmen stromu
+itm_tree_trunk_invis|Kmen stromu
+itm_giant_hammer|Velká palice
+itm_giant_mace|Velký palcat
+itm_giant_mace_b|Velký palcát s bodci
+itm_olog_feet_boots|Chodidlo Olog Haie
+itm_olog_head_helm|Hlava Olog Haie
+itm_olog_head_helm_b|Hlava Olog Haie
+itm_olog_head_helm_c|Hlava Olog Haie
+itm_olog_body|Zbroj Olog Haie
+itm_olog_body_b|Zbroj Olog Haie
+itm_olog_hands|Ruce Olog Haie
+itm_arrows|Šípy
+itm_gondor_arrows|Gondorské šípy
+itm_gondor_auxila_arrows|Gondoriánské šípy
+itm_khergit_arrows|Ostnaté šípy
+itm_rohan_arrows_2|Rohanské šípy
+itm_harad_arrows|Haradské šípy
+itm_corsair_arrows|Korzárské šípy
+itm_ithilien_arrows|Ithilijské šípy
+itm_woodelf_arrows|Šípy lesních elfů
+itm_elven_arrows|Elfí šípy
+itm_orc_hook_arrow|Hákový šíp orků
+itm_isengard_arrow|Isengardské šípy
+itm_pilgrim_disguise|Pilgrim převlek
+itm_leather_gloves|Kožené rukavice
+itm_mail_mittens|Kroužkové palčáky
+itm_leather_boots|Kožené boty
+itm_black_dress|Černé šaty
+itm_blackwhite_dress|Dámské šaty
+itm_white_tunic_a|Bílá tunika
+itm_white_tunic_b|Jednoduchá tunika
+itm_white_tunic_c|Plášť z tuniky
+itm_blue_tunic|Modrá tunika
+itm_black_tunic|Černá tunika
+itm_green_tunic|Zelená tunika
+itm_red_tunic|Červená tunika
+itm_leather_apron|Kožená zástěra
+itm_leather_jerkin|Krátký kožený kabát
+itm_fur_coat|Dolský kabát
+itm_green_dress|Zelené šaty
+itm_tld_tunic|Tunika
+itm_gondor_fine_outfit_dress|Dobrá výstroj
+itm_rohan_fine_outfit_dale_dress|Dobrá výstroj
+itm_robe_generic_dress|Róba
+itm_wimple_a|Rouška
+itm_wimple_with_veil|Rouška
+itm_fine_hat|Dobrá čepice
+itm_shortened_spear|Zkrácené kopí
+itm_spear|Kopí
+itm_light_lance|Lehký oštěp
+itm_lance|Oštěp
+itm_tab_shield_small_round_b|Kulatý jezdecký štít
+itm_short_bow|Krátký luk
+itm_regular_bow|Luk
+itm_nomad_bow|Nomádský luk
+itm_gondor_bow|Gondorský luk
+itm_strong_bow|Silný luk
+itm_elven_bow|Elfský luk
+itm_corsair_bow|Korzárský luk
+itm_dwarf_horn_bow|Trpasličí luk z rohu
+itm_dwarf_short_bow|Trpasličí krátký luk
+itm_harad_bow|Haradský zakřivený luk
+itm_lg_bow|Luk Orlí stráže
+itm_riv_bow|Rivendelský luk
+itm_glorfi_bow|Glorfindeilský luk
+itm_lorien_bow|Galadhrimský luk
+itm_isengard_large_bow|Isengardský mohutný luk
+itm_dale_bow|Dolský luk
+itm_uruk_bow|Skřetí luk
+itm_mirkwood_bow|Mirkwůdský luk
+itm_dunland_javelin|Dunlandské oštěpy
+itm_orc_throwing_arrow|Šipky orků
+itm_heavy_throwing_spear|Těžké házecí kopí
+itm_javelin|Oštěp
+itm_harad_javelin|Haradský oštěp
+itm_gondor_javelin|Gondorské kopí
+itm_rohirrim_throwing_axe|Rohanské házecí sekery
+itm_loss_throwing_axes|Lossarnašské házecí sekery
+itm_arnor_helm_a|Arnorská helma
+itm_arnor_helm_b|Arnorská helma
+itm_arnor_helm_c|Arnorská helma
+itm_dunedain_helm_a|Dunadanská kápě
+itm_dunedain_helm_b|Arnorská zdobená helma
+itm_arnor_armor_a|Arnorská zbroj
+itm_arnor_armor_b|Arnorská zbroj
+itm_arnor_armor_c|Dun
+itm_arnor_armor_d|Dun
+itm_arnor_armor_e|Arnorský vyztužený krátký kožený kabát
+itm_arnor_armor_f|Arnorská velká zbroj
+itm_arnor_greaves|Arnorské stehenní pláty
+; itm_arnor_splinted|Arnorian Splinted Greaves
+itm_arnor_shield_a|Arnorský štít
+itm_arnor_shield_c|Arnorský jezdecký štít
+itm_arnor_shield_b|Arnorský štít
+itm_arnor_shield_d|Arnorský jezdecký štít
+itm_arnor_sword_a|Arnorský meč bastard
+itm_arnor_sword_c|Arnorský meč bastard
+itm_arnor_sword_f|Arnorský krátký meč
+itm_riv_helm_a|Rivendelská čepka
+itm_riv_helm_b|Rivendelská lučišnická helma
+itm_riv_helm_c|Rivendelská pěchotní helma
+itm_riv_helm_glorfi|Vlnité vlasy
+itm_riv_tiara|Elfí lord Tiara
+itm_riv_shield_a|Rivendelský štít
+itm_riv_shield_b|Rivendelský štít
+itm_riv_bas_sword|Rivendelský meč bastard
+itm_riv_1h_sword|Rivendelský meč
+itm_riv_riding_sword|Rivendelský jezdecký meč
+itm_riv_archer_sword|Rivendelský meč pro lučišníky
+itm_riv_spear|Rivendelské kopí
+itm_riv_armor_light|Rivendelská zbroj
+itm_riv_armor_light_inf|Rivendelská zbroj
+itm_riv_armor_archer|Rivendelská zbroj
+itm_riv_armor_m_archer|Rivendelská zbroj
+itm_riv_armor_med|Rivendelská zbroj
+itm_riv_armor_heavy|Rivendelská zbroj
+itm_riv_armor_h_archer|Rivendelská zbroj
+itm_riv_armor_leader|Zbroj Rivendelského vůdce
+itm_riv_boots|Rivendelské boty
+itm_gon_footman|Gondorská kroužková košile
+itm_gon_jerkin|Gondorský krátký kožený kabát
+itm_gon_regular|Gondorský těžká kroužková zbroj
+itm_gon_bowman|Gondorská prošívanice
+itm_gon_archer|Gondorská prošívanice s pláštěm
+itm_gon_noble_cloak|Gondorský krátký šlechtický kožený kabát
+itm_gon_squire|Gondorská kroužková zbroj s pláštěm
+itm_gon_knight|Gondorská těžká kroužková zbroj s pláštěm
+itm_gon_ranger_cloak|Gondorský plášť hraničářů
+itm_gon_ranger_skirt|Gondorská hraničářská sukně
+itm_gon_steward_guard|Gondorská pořadatelská strážní zbroj
+itm_gon_tower_guard|Gondorská strážní zbroj
+itm_gon_tower_knight|Gondorská rytířská zbroj
+itm_gon_leader_surcoat_cloak|Gondorský plášť vůdce
+itm_gondor_ranger_hood|Zelená kápě
+itm_gondor_ranger_hood_mask|Gondorská kápě hraničářů
+itm_gondor_light_greaves|Gondorské kožené stehenní pláty
+itm_gondor_med_greaves|Gondorské střední stehenní pláty
+itm_gondor_heavy_greaves|Gondorské kroužkové stehenní pláty
+itm_gondorian_light_helm|Gondorská pěší helma
+itm_gondor_infantry_helm|Gondorská pěchotní přilbice
+itm_gondor_auxila_helm|Gondorská přilba pomocných sborů
+itm_gondorian_light_helm_b|Gondorská lučišnická přilbice
+itm_gondorian_archer_helm|Gondorská lukostřelecká přilbice
+itm_tower_archer_helm|Přilba lučištníků z Věže
+itm_gondor_leader_helm|Gondorská vysoká přilba
+; itm_tower_guard_helm|Tower Guard Helm
+itm_gondor_citadel_knight_helm|Helma rytire citadely
+itm_gondor_squire_helm|Prilba Gondorskeho panose
+itm_gondor_knight_helm|Prilba Gondorskeho rytire
+itm_gondor_dolamroth_helm|Dol Amrothska helma
+itm_swan_knight_helm|Labuti prilba rytire
+itm_gondor_lamedon_helm|Lamendonská Helma
+itm_gondor_lamedon_leader_helm|Lamendonská Vysoká Helma
+; itm_blackroot_archer|Blackroot Vale Archer Armor
+; itm_blackroot_bowman|Blackroot Vale Bowman Armor
+; itm_blackroot_footman|Blackroot Vale Footman Armor
+; itm_blackroot_warrior|Blackroot Vale Warrior Armor
+; itm_blackroot_leader|Blackroot Vale Leader Armor
+; itm_blackroot_hood|Blackroot Hood
+itm_dol_hauberk|Dol Amrothske brneni
+; itm_dol_heavy_mail|Dol Amroth Heavy Mail
+itm_dol_padded_coat|Dol Amrothsky vycpavany kabatec 
+itm_dol_shirt|Dol Amrothska kosile
+; itm_dol_very_heavy_mail|Dol Amroth Very Heavy Mail
+itm_dol_greaves|Dol Amrothske naholeniky
+itm_dol_shoes|Dol Amrothske lehke boty
+; itm_lamedon_clansman|Lamedon Clansman Armor
+; itm_lamedon_footman|Lamedon Footman Armor
+; itm_lamedon_knight|Lamedon Knight Armor
+; itm_lamedon_leader_surcoat_cloak|Lamedon Leader Armor
+; itm_lamedon_warrior|Lamedon Warrior Armor
+; itm_lamedon_veteran|Lamedon Veteran Armor
+; itm_lamedon_vet_warrior|Lamedon Veteran Warrior Armor
+; itm_lamedon_hood|Lamedon Hood
+; itm_pinnath_archer|Pinnath Gelin Archer Armor
+; itm_pinnath_footman|Pinnath Gelin Footman Armor
+; itm_pinnath_leader|Pinnath Gelin Leader Armor
+; itm_pinnath_vet_footman|Pinnath Gelin Veteran Footman Armor
+; itm_pinnath_warrior|Pinnath Gelin Warrior Armor
+; itm_pel_footman|Pelargir Footman Armor
+; itm_pel_jerkin|Pelargir Jerkin
+; itm_pel_leader|Pelargir Leader Armor
+itm_pel_marine|Pelargirsky namornik
+; itm_pelargir_marine_leader|Pelargir Marine Leader
+; itm_pelargir_regular|Pelargir Regular
+; itm_pelargir_hood|Pelargir Hood
+itm_pelargir_helmet_light|Pelargirska helma
+itm_pelargir_helmet_heavy|Pelargirska tezka helma
+itm_pelargir_greaves|Pelargirske naholeniky
+itm_lossarnach_shirt|Lossarnasska kosile
+itm_lossarnach_axeman|Zbroj sekernika Lossarnachu
+itm_lossarnach_leader|Zbroj velitele Lossarnachu
+itm_lossarnach_vet_axeman|Zbroj zkuseneho sekernika Lossarnachu
+itm_lossarnach_vet_warrior|Zbroj zkuseneho valecnika Lossarnachu
+itm_lossarnach_warrior|Zbroj valecnika Lossarnachu
+; itm_lossarnach_cloth_cap|Lossarnach Cloth Cap
+; itm_lossarnach_leather_cap|Lossarnach Leather Cap
+; itm_lossarnach_scale_cap|Lossarnach Scale Cap
+itm_lossarnach_greaves|Lossarnasske naholeniky
+; itm_gondor_shield_a|Gondor Square Shield
+; itm_gondor_shield_b|Gondor Kite Shield
+itm_gondor_shield_c|Gondorska paveza
+; itm_gondor_shield_d|Gondor Kite Shield
+; itm_gondor_shield_e|Gondor Royal Shield
+; itm_gon_tab_shield_a|Heraldic Gondor Round Shield
+; itm_gon_tab_shield_b|Heraldic Gondor Square Shield
+; itm_gon_tab_shield_c|Heraldic Gondor Kite Shield
+itm_gon_tab_shield_d|Heraldická gondorská pavéza
+itm_amroth_sword_a|Meč z Dol Amroth
+itm_amroth_sword_b|Dol Amrothsky rytirsky mec
+itm_gondor_sword|Meč gondorské pěchoty
+; itm_amroth_bastard|Dol Amroth Heavy Sword
+; itm_gondor_short_sword|Linhir Eket
+; itm_pelargir_eket|Pelargir Eket
+itm_pelargir_sword|Pelargirsky mec
+itm_gondor_ranger_sword|Gondorsky hranicarsky mec
+itm_gondor_bastard|Gondorsky jedenapulrucni mec
+itm_gondor_citadel_sword|Mec Gondorske citadely
+itm_gondor_cav_sword|Gondorsky jezdecky mec
+; itm_gondor_spear|Gondorian Spear
+; itm_gondor_tower_spear|Gondorian Tower Spear
+; itm_gondor_lance|Gondor Lance
+; itm_loss_axe|Lossarnach Fighting Axe
+; itm_loss_war_axe|Lossarnach War Axe
+itm_lorien_sword_a|Loriensky dlouhy mec
+itm_lorien_sword_b|Loriensky kratky mec
+; itm_lorien_sword_c|Lorien War Sword
+itm_lorien_archer|Zbroj lorienskeho lucistnika
+itm_lorien_armor_a|Zbroj lorienskeho pesaka
+; itm_lorien_armor_b|Lorien Heavy Infantry Armor
+; itm_lorien_armor_c|Lorien Royal Archer Armor
+; itm_lorien_armor_d|Lorien Royal Swordsman Armor
+itm_lorien_armor_e|Plast lorienskeho ochrance
+; itm_lorien_armor_f|Lorien Elite Armor
+itm_lorien_boots|Lorienske boty
+itm_lorien_shield_b|Lorienska paveza
+; itm_lorien_shield_c|Lorien Kite Shield
+; itm_lorien_round_shield|Lorien Round Shield
+itm_lorien_helm_a|Přilba lorienských lučištníků
+itm_lorien_helm_b|Přilba lorienských lučištníků
+itm_lorien_helm_c|Přilba lorienské pěchoty
+itm_orc_chain_greaves|Skreti naholeniky
+; itm_orc_coif|Orc Coif
+itm_orc_greaves|Orčí kroužkové boty
+itm_orc_ragwrap|Skřetí onuce
+itm_orc_furboots|Skreti kozene boty
+itm_orc_furboot_tall|Skreti kozene boty
+; itm_orc_tribal_a|Untreated Skin
+; itm_orc_tribal_b|Untreated Skin
+; itm_orc_tribal_c|Untreated Skin
+; itm_evil_gauntlets_a|Gauntlets
+; itm_evil_gauntlets_b|Gauntlets
+itm_isen_orc_armor_a|Skreti zbroj ze Zelezneho pasu
+itm_isen_orc_armor_b|Skreti zbroj ze Zelezneho pasu
+itm_isen_orc_armor_c|Skreti zbroj ze Zelezneho pasu
+itm_isen_orc_armor_d|Skreti zbroj ze Zelezneho pasu
+itm_isen_orc_armor_e|Skreti zbroj ze Zelezneho pasu
+itm_isen_orc_armor_f|Skreti zbroj ze Zelezneho pasu
+itm_isen_orc_armor_g|Skreti zbroj ze Zelezneho pasu
+; itm_isen_uruk_light_a|Uruk-hai Light Harness
+itm_isen_uruk_light_b|Skurut-haiska kozena zbroj
+itm_isen_uruk_light_c|Skurut-haiska kozena zbroj
+; itm_isen_uruk_light_d|Uruk-hai Mail and Leather
+; itm_isen_uruk_light_e|Uruk-hai Mail Harness
+; itm_isen_uruk_heavy_a|Uruk-hai Mail and Leather
+; itm_isen_uruk_heavy_b|Uruk-hai Heavy Armor
+; itm_isen_uruk_heavy_c|Uruk-hai Heavy Armor
+; itm_isen_uruk_heavy_d|Uruk-hai Tracker Leather
+; itm_isen_uruk_heavy_e|Uruk-hai Tracker Leather
+; itm_uruk_tracker_boots|Uruk Tracker Boots
+itm_uruk_greaves|Skuruti naholeniky
+itm_uruk_chain_greaves|Skuruti krouzkove naholeniky
+; itm_uruk_ragwrap|Uruk Ragwrap
+; itm_isen_orc_helm_a|Isen Orc Helm
+; itm_isen_orc_helm_b|Isen Orc Helm
+; itm_isen_orc_helm_c|Isen Orc Helm
+itm_isen_uruk_helm_a|Skurut-haiska helma
+itm_isen_uruk_helm_b|Skurut-haiska helma
+itm_isen_uruk_helm_c|Skurut-haiska helma
+itm_isen_uruk_helm_d|Skurut-haiska kapitanska helma
+itm_isen_uruk_helm_e|Skurut-haiska stoparska helma
+itm_isen_uruk_helm_f|Skurut-haiska stoparska helma
+itm_uruk_pike_a|Skuruti pika
+itm_uruk_pike_b|Skuruti pika
+; itm_uruk_falchion_a|Uruk Falchion
+; itm_uruk_falchion_b|Uruk Falchion
+; itm_uruk_spear|Uruk Spear
+; itm_uruk_skull_spear|Uruk Skull Spear
+; itm_uruk_voulge|Uruk Voulge
+; itm_uruk_heavy_axe|Uruk Heavy Axe
+itm_isengard_sword|Mec ze zelezneho pasu
+; itm_isengard_axe|Isengard Axe
+; itm_isengard_hammer|Isengard Hammer
+itm_isengard_halberd|Halapartna ze Zelezneho pasu
+; itm_isengard_mallet|Isengard Mallet
+; itm_isengard_heavy_axe|Isengard Heavy Axe
+; itm_isengard_heavy_sword|Isengard Heavy Sword
+; itm_isengard_spear|Isengard Spear
+itm_isengard_pike|Pika ze Zelezneho pasu
+; itm_isen_orc_shield_a|Isen Orc Shield
+; itm_isen_orc_shield_b|Isen Orc Shield
+; itm_isen_uruk_shield_b|Isen Uruk Shield
+itm_wood_club|Dreveny kyj
+itm_twohand_wood_club|Velky dreveny kyj
+; itm_bone_cudgel|Bone Cudgel
+; itm_skull_club|Skull Club
+itm_orc_club_a|Skřetí obušek
+itm_orc_club_b|Skřetí obušek
+itm_orc_club_c|Skřetí obušek
+itm_orc_club_d|Skřetí obušek
+; itm_orc_sledgehammer|Orc Sledgehammer
+; itm_orc_simple_spear|Orc Spear
+; itm_orc_skull_spear|Orc Skull Spear
+; itm_orc_bill|Orc Bill
+; itm_orc_slasher|Orc Slasher
+itm_orc_falchion|Skřetí falchion
+; itm_orc_scimitar|Orc Scimitar
+itm_orc_sabre|Skreti savle
+itm_orc_machete|Skreti maceta
+itm_orc_axe|Skreti sekera
+itm_orc_two_handed_axe|Skreti dvourucni sekera
+itm_orc_throwing_axes|Skreti vrhaci sekery
+itm_orc_bow|Skreti luk
+itm_orc_shield_a|Skřetí štít
+itm_orc_shield_b|Skřetí štít
+itm_orc_shield_c|Skřetí štít
+itm_mordor_orc_shield_a|Mordorsky skreti stit
+itm_mordor_orc_shield_b|Mordorsky skreti stit
+itm_mordor_orc_shield_c|Mordorsky skreti stit
+itm_mordor_orc_shield_d|Mordorsky skreti stit
+itm_mordor_orc_shield_e|Mordorsky skreti stit
+itm_mordor_uruk_shield_a|Mordorsky skuruti stit
+itm_mordor_uruk_shield_b|Mordorsky skuruti stit
+itm_mordor_uruk_shield_c|Mordorsky skuruti stit
+; itm_mordor_man_shield_a|Mordor Man Shield
+; itm_mordor_man_shield_b|Mordor Man Shield
+itm_angmar_shield|Angmarský štít
+; itm_orc_helm_a|Orc Longnosehelm
+; itm_orc_helm_b|Orc Gratehelm
+; itm_orc_helm_c|Orc Buckethelm
+; itm_orc_helm_d|Orc Grillhelm
+; itm_orc_helm_e|Orc Beakhelm
+; itm_orc_helm_f|Orc Bughelm
+; itm_orc_helm_g|Orc Crowhelm
+; itm_orc_helm_h|Orc Jawhelm
+; itm_orc_helm_i|Orc Snouthelm
+; itm_orc_helm_j|Orc Lizardhelm
+; itm_orc_helm_k|Orc Vulturehelm
+itm_m_orc_light_a|Mordorká skřetí lehká zbroj
+itm_m_orc_light_b|Mordorká skřetí lehká zbroj
+itm_m_orc_light_c|Mordorká skřetí lehká zbroj
+itm_m_orc_light_d|Mordorká skřetí lehká zbroj
+itm_m_orc_light_e|Mordorká skřetí lehká zbroj
+itm_m_orc_heavy_a|Mordorská skřetí těžká zbroj
+itm_m_orc_heavy_b|Mordorská skřetí těžká zbroj
+itm_m_orc_heavy_c|Mordorská skřetí těžká zbroj
+itm_m_orc_heavy_d|Mordorská skřetí těžká zbroj
+itm_m_orc_heavy_e|Mordorská skřetí těžká zbroj
+; itm_m_uruk_light_a|Uruk Harness
+; itm_m_uruk_light_b|Uruk Thick Harness
+itm_m_uruk_heavy_c|Skurutí kožená zbroj
+itm_m_uruk_heavy_d|Skurutí segmentová zbroj
+itm_m_uruk_heavy_e|Skurutí kroužková zbroj
+itm_m_uruk_heavy_f|Skurutí kroužková zbroj
+itm_m_uruk_heavy_g|Skurutí kroužková zbroj
+; itm_m_uruk_heavy_h|Uruk Scale
+itm_m_uruk_heavy_i|Skurutí tlustá zbroj
+itm_m_uruk_heavy_j|Skurutí těžká zbroj
+itm_m_uruk_heavy_k|zbroj skurutí stráže
+itm_m_cap_armor|Zbroj kapitána mordoru
+; itm_black_num_armor|Black Numenorean Armor
+itm_m_armor_a|mordorská zbroj
+itm_m_armor_b|mordorská zbroj
+; itm_evil_light_armor|Sinister Garb
+itm_uruk_helm_a|Skurutí helma
+itm_uruk_helm_b|Skurutí helma
+; itm_uruk_helm_c|Uruk Beak Helm
+; itm_uruk_helm_d|Uruk Grill Helm
+itm_uruk_helm_e|Skurutí helma
+itm_uruk_helm_f|Skurutí helma
+itm_mordor_cap_helm|helma kapitána mordoru
+itm_mordor_helm|helma mordoru
+; itm_black_num_helm|Black Numenorean Helm
+itm_mordor_sword|Mordorsky jedenapulrucni mec
+itm_mordor_longsword|Mordorsky mec
+; itm_moria_armor_a|Moria Breast Harness
+; itm_moria_armor_b|Moria Breast and Shoulders
+; itm_moria_armor_c|Moria Orc Mail
+; itm_moria_armor_d|Moria Bolted Leather
+; itm_moria_armor_e|Moria Orc Heavy Mail
+; itm_moria_orc_shield_a|Moria Orc Shield
+; itm_moria_orc_shield_b|Moria Orc Shield
+; itm_moria_orc_shield_c|Moria Orc Shield
+; itm_gundabad_armor_a|Gundabad Orc Rags
+; itm_gundabad_armor_b|Gundabad Orc Fur
+; itm_gundabad_armor_c|Gundabad Orc Armor
+; itm_gundabad_armor_d|Gundabad Orc Armor
+; itm_gundabad_armor_e|Gundabad Orc Heavy Armor
+; itm_gundabad_helm_a|Gundabad Cap
+itm_gundabad_helm_b|Gundabadska helma
+itm_gundabad_helm_c|Gundabadska helma
+itm_gundabad_helm_d|Gundabadska helma
+itm_gundabad_helm_e|Helma vrciho jezdce
+; itm_dunland_wolfboots|Dunland Wolfboots
+; itm_dunland_armor_a|Dunnish Fur Armor
+; itm_dunland_armor_b|Dunnish Fur Armor
+; itm_dunland_armor_c|Dunnish Fur Armor
+; itm_dunland_armor_d|Dunnish Fur Armor
+; itm_dunland_armor_e|Dunnish Fur Armor
+; itm_dunland_armor_g|Dunnish Fur Armor
+; itm_dunland_armor_h|Dun Long Fur Armor
+; itm_dunland_armor_i|Dunnish Hauberk
+; itm_dunland_armor_j|Dunland Hauberk
+; itm_dunland_armor_k|Dun Chief Armor
+; itm_dun_helm_a|Dunnish Wolf Cap
+; itm_dun_helm_b|Dunnish Antler Cap
+; itm_dun_helm_c|Dunnish Tall Helm
+; itm_dun_helm_d|Dunnish Tall Helm
+; itm_dun_helm_e|Dun Tall War Helm
+; itm_dun_shield_a|Dunnish Shield
+; itm_dun_shield_b|Dunnish Shield
+; itm_dun_berserker|Dunland Chieftain Sword
+; itm_dunnish_antler_axe|Dunnish Antler Axe
+; itm_dunnish_war_axe|Dunnish War Axe
+; itm_dunnish_axe|Dunnish Axe
+; itm_dunland_spear|Dunnish Spear
+; itm_dunnish_pike|Dunnish Pike
+itm_rohan_armor_a|Rohanska kosile
+; itm_rohan_armor_b|Rohan Shirt Cape
+; itm_rohan_armor_c|Rohan Long Shirt
+itm_rohan_armor_d|Rohanske brneni
+itm_rohan_armor_e|Rohanske brneni
+itm_rohan_armor_f|Rohanske brneni
+; itm_rohan_armor_g|Rohan Mail Shirt
+; itm_rohan_armor_h|Rohan Long Mail
+; itm_rohan_armor_i|Rohan Long Mail
+itm_rohan_armor_j|Rohanske brneni
+itm_rohan_armor_k|Rohanske brneni
+itm_rohan_armor_l|Rohanske brneni
+itm_rohan_armor_m|Rohanska supinova zbroj
+itm_rohan_armor_n|Rohanska supinova zbroj
+itm_rohan_armor_o|Rohanska supinova zbroj
+itm_rohan_armor_p|Rohanska zbroj
+itm_rohan_armor_q|Rohanska zbroj
+itm_rohan_armor_r|Rohanska zbroj
+; itm_rohan_armor_s|Rohan Heraldric Mail
+itm_rohan_light_helmet_a|Rohanska lehka helma
+itm_rohan_light_helmet_b|Rohanska lehka helmice
+itm_rohan_inf_helmet_a|Rohanska pechotni helma
+itm_rohan_inf_helmet_b|Rohanska pechotni helma
+itm_rohan_archer_helmet_a|Rohanska lucistnicka helmice
+itm_rohan_archer_helmet_b|Rohanska lucistnicka helmice
+itm_rohan_archer_helmet_c|Rohanska helmice jizdniho lucistnika
+itm_rohan_cav_helmet_a|Rohanska jezdecka helmice
+itm_rohan_cav_helmet_b|Rohanska jezdecka helmice
+itm_rohan_cav_helmet_c|undefined
+itm_rohan_captain_helmet|Rohanska kapitanska helmice
+itm_rohan_shield_a|Rohansky stit
+itm_rohan_shield_b|Rohansky stit
+itm_rohan_shield_c|Rohansky stit
+itm_rohan_shield_d|Rohansky stit
+itm_rohan_shield_e|Rohansky stit
+itm_rohan_shield_f|Rohansky stit
+; itm_rohan_shield_g|Rohan Royal Shield
+itm_rohan_light_greaves|Rohanske lehke naholeniky
+itm_rohirrim_war_greaves|Rohirske valecne naholeniky
+; itm_rohan_shoes|Leather Shoes
+; itm_rohan_cav_sword|Rohan Riding Sword
+itm_rohan_inf_sword|Rohansky mec
+; itm_rohan_spear|Rohan Spear
+; itm_rohan_lance|Rohan Lance
+itm_rohan_sword_c|Rohansky mec
+itm_rohirrim_short_axe|Rohirska kratka sekyra
+itm_rohirrim_long_hafted_axe|Rohirska sekyra na dlouhem toporu
+; itm_rohan_2h_sword|Rohan War Sword
+; itm_mirkwood_light_scale|Light Woodelf Scale
+; itm_mirkwood_armor_a|Light Leather
+; itm_mirkwood_armor_b|Light Quilted and Scale Armor
+; itm_mirkwood_armor_c|Light Scale over Mail
+; itm_mirkwood_armor_d|Light Quilted Surcoat
+; itm_mirkwood_armor_e|Light Mail and Surcoat
+; itm_mirkwood_armor_f|Royal Woodelf Armor
+; itm_mirkwood_great_spear|Mirkwood Great Spear
+; itm_mirkwood_war_spear|Mirkwood War Spear
+; itm_mirkwood_short_spear|Mirkwood Spear
+itm_mirkwood_knife|Bily nuz z Temneho hvozdu
+itm_mirkwood_sword|Mec z Temneho hvozdu
+; itm_mirkwood_spear_shield_a|Mirkwood Spearman Shield
+; itm_mirkwood_spear_shield_b|Mirkwood War Shield
+; itm_mirkwood_spear_shield_c|Mirkwood Swordsman Shield
+itm_mirkwood_helm_a|Helma lucistnika z Temneho hvozdu
+itm_mirkwood_helm_b|Přilba z Temného hvozdu
+; itm_mirkwood_helm_c|Mirkwood Royal Spearman Helm
+itm_mirkwood_helm_d|Královská lučištnická přilba z Temného hvozdu
+itm_mirkwood_boots|Boty z Temneho hvozdu
+itm_mirkwood_leather_greaves|Kozene naholeniky z Temneho hvozdu
+; itm_harad_tunic|Harad Tunic
+; itm_harad_padded|Harondor Padded Armor
+; itm_harad_hauberk|Harondor Hauberk
+; itm_harad_lamellar|Harasjala Armor
+; itm_harad_heavy|Harad Swordsman Armor
+; itm_harad_skirmisher|Light Harad Garb
+; itm_harad_archer|Harad Archer Armor
+; itm_black_snake_armor|Maranka Armor
+; itm_harad_champion|Far Harad Garb
+; itm_panther_guard|Panther Hide
+; itm_harad_scale|Harad Scale Armor
+; itm_harad_tiger_scale|Tiger Guard Armor
+; itm_harad_lion_scale|Lion Guard Armor
+; itm_harad_dragon_helm|Kiloka Helm
+; itm_harad_cav_helm_a|Harondor Cavalry Helm
+; itm_harad_cav_helm_b|Harondor Cavalry Helm
+; itm_black_snake_helm|Maranka Helm
+; itm_harad_finhelm|Great Harad Helmet
+; itm_harad_heavy_inf_helm|Great Harad Helmet
+; itm_harad_wavy_helm|Great Harad Helmet
+; itm_harad_eaglehelm|Eagle Guard Helm
+; itm_lion_helm|Lion Guard Helm
+; itm_harad_pantherhelm|Panther Guard Cap
+; itm_harad_khopesh|Harad Khopesh
+; itm_black_snake_sword|Harad Heavy Falchion
+; itm_harad_heavy_sword|Harad Heavy Sword
+; itm_horandor_a|Harad Scimitar
+; itm_skirmisher_sword|Harad Skirmisher Sword
+; itm_harad_sabre|Harad Sabre
+; itm_harad_mace|Far Harad Mace
+; itm_far_harad_2h_mace|Far Harad Two Handed Mace
+; itm_harad_dagger|Harad Knife
+; itm_harad_short_spear|Harad Short Spear
+; itm_harad_long_spear|Harad Spear
+; itm_eagle_guard_spear|Harasjala Polearm
+; itm_harad_long_shield_a|Harad Leopard Shield
+; itm_harad_long_shield_b|Harad Bronze Shield
+; itm_harad_long_shield_c|Harad Sun Shield
+; itm_harad_long_shield_d|Harad Snake Shield
+; itm_harad_long_shield_e|Harad Snake Shield
+; itm_harad_shield_a|Harondor Shield
+; itm_harad_shield_b|Harondor Buckler
+; itm_harad_shield_c|Harondor Buckler
+; itm_harad_tribal_a|Far Harad Shield
+; itm_harad_tribal_b|Far Harad Shield
+; itm_harad_yellow_shield|Harad Shield
+itm_desert_boots|Pouštní boty
+itm_harad_leather_greaves|Haradske naholeniky
+; itm_harad_scale_greaves|Harad Boots
+; itm_harad_lamellar_greaves|Harad Boots
+; itm_khand_helmet_a1|Khand Helm With Camail
+; itm_khand_helmet_a2|Khand Helm
+; itm_khand_helmet_a3|Khand Veiled Helm
+; itm_khand_helmet_b1|Khand Decorated Helm
+; itm_khand_helmet_b2|Khand Masked Helm
+; itm_khand_helmet_b3|Khand Veiled Helm
+; itm_khand_helmet_b4|Khand Helm With Camail
+; itm_khand_helmet_c3|Khand Infantry Helm
+; itm_khand_helmet_c4|Khand Infantry Helm
+; itm_khand_helmet_d1|Khand Masked Helm
+; itm_khand_helmet_d2|Khand Helm With Camail
+; itm_khand_helmet_d3|Khand Masked Helm
+; itm_khand_helmet_e1|Khand Veiled Helm
+; itm_khand_helmet_e2|Khand Helm With Camail
+; itm_khand_helmet_e3|Khand Helm
+; itm_khand_helmet_e4|Khand Veiled Helm
+; itm_khand_helmet_f1|Khand Veiled Helm
+; itm_khand_helmet_mask1|Khand Mask
+; itm_khand_helmet_mask2|Khand Mask
+; itm_khand_light|Khand Kilt
+; itm_khand_foot_lam_a|Khand Armor
+; itm_khand_foot_lam_b|Khand Armor
+; itm_khand_foot_lam_c|Khand Armor
+; itm_khand_heavy_lam|Khand Heavy Lamellar
+; itm_khand_light_lam|Khand Light Lamellar
+; itm_khand_med_lam_b|Khand Medium Lamellar
+; itm_khand_med_lam_c|Khand Medium Lamellar
+; itm_khand_med_lam_d|Khand Medium Lamellar
+; itm_khand_noble_lam|Khand Noble Armor
+itm_variag_greaves|Variazske naholeniky
+; itm_khand_axe_great|Khand Great Axe
+; itm_khand_axe_winged|Khand Winged Axe
+; itm_khand_halberd|Khand Halberd
+; itm_khand_trident|Khand Trident
+; itm_khand_voulge|Khand Voulge
+; itm_khand_mace1|Khand Mace
+; itm_khand_mace2|Khand Mace
+; itm_khand_mace_spiked|Khand Spiked Mace
+; itm_khand_rammace|Khand Ram Mace
+; itm_khand_pitsword|Pit Fighter Sword
+; itm_khand_tulwar|Khand Tulwar
+; itm_khand_2h_tulwar|Khand Tulwar
+; itm_khand_lance|Khand Lance
+; itm_easterling_round_horseman|Easterling Round Shield
+; itm_variag_gladiator_shield|Variag Gladiator Shield
+; itm_easterling_hawk_shield|Easterling Hawk Shield
+; itm_rhun_bull1_shield|Rhun Shield
+; itm_rhun_bull2_shield|Rhun Shield
+; itm_rhun_bull3_shield|Rhun Shield
+; itm_furry_boots|Furry Boots
+; itm_rhun_armor_a|Rhun Light Battlewear
+; itm_rhun_armor_b|Rhun Light Battlewear
+; itm_rhun_armor_d|Rhun Light Battlewear
+; itm_rhun_armor_g|Rhun Heavy Battlewear
+; itm_rhun_armor_h|Rhun Heavy Battlewear
+; itm_rhun_armor_j|Rhun Medium Battlewear
+; itm_rhun_armor_m|Rhun Medium Battlewear
+; itm_rhun_armor_n|Rhun Medium Battlewear
+; itm_rhun_armor_o|Rhun Medium Battlewear
+; itm_rhun_armor_p|Rhun Noble Armor
+; itm_rhun_armor_k|Rhun Noble Armor
+; itm_rhun_helm_a|Rhun Barbed Helm
+; itm_rhun_helm_b|Rhun Barbed Helm Camail
+; itm_rhun_helm_c|Rhun Horde Helm
+; itm_rhun_helm_e|Rhun Horde Horned Helm
+; itm_rhun_helm_g|Rhun Horned Pot
+; itm_rhun_helm_h|Rhun Horned Pot
+; itm_rhun_helm_i|Rhun Round Helm
+; itm_rhun_helm_j|Rhun Round Masked Helm
+; itm_rhun_helm_k|Rhun Leather Helm
+; itm_rhun_helm_l|Rhun Leather Helm
+; itm_rhun_helm_m|Rhun Leather Helm
+; itm_rhun_helm_n|Rhun Chieftain Helm
+; itm_rhun_helm_o|Rhun Chieftain Helm
+; itm_rhun_greataxe|Rhun Great Axe
+; itm_rhun_battleaxe|Rhun Battle Axe
+; itm_rhun_falchion|Rhun Falchion
+; itm_rhun_glaive|Rhun Glaive
+; itm_rhun_greatfalchion|Rhun Great Falchion
+; itm_rhun_greatsword|Rhun Great Sword
+; itm_rhun_shortsword|Rhun Shortsword
+; itm_rhun_sword|Rhun Sword
+; itm_rhun_shield|Rhun Kite Shield
+; itm_dale_armor_a|Dale Jacket
+; itm_dale_armor_b|Dale Cloak Jacket
+; itm_dale_armor_c|Dale Archer Jacket
+; itm_dale_armor_d|Dale Archer Jacket
+; itm_dale_armor_e|Dale Coat Over Mail
+; itm_dale_armor_f|Dale Coat Over Mail
+; itm_dale_armor_g|Dale Coat Over Mail
+; itm_dale_armor_h|Dale Cloak Long Maille
+; itm_dale_armor_i|Dale Cloak Long Maille
+; itm_dale_armor_j|Dale Cloak Long Maille
+; itm_dale_armor_k|Dale Noble Armor
+; itm_dale_armor_l|Dale Noble Gorget
+itm_dale_helmet_a|Dolska lehka pechotni helma
+itm_dale_helmet_b|Dolska lehka lucistnicka helma
+itm_dale_helmet_c|Dolska pechotni helma
+itm_dale_helmet_d|Dolska lucistnicka helma
+itm_dale_helmet_e|Dolska tezka pechotni helma
+itm_dale_helmet_f|Dolska tezka lucistnicka helma
+itm_dale_sword|Dolsky kratky mec
+itm_dale_sword_long|Dolsky dlouhy mec
+itm_dale_sword_broad|Dolsky siroky mec
+itm_dale_pike|Dolské kopí
+; itm_dale_billhook|Dale Billhook
+itm_dale_shield_a|Dolský štít
+itm_dale_shield_b|Dolský štít
+itm_dale_shield_c|Dolský štít
+itm_dale_shield_d|Dolský štít
+; itm_umb_armor_a|Corsair Leather Armor
+; itm_umb_armor_a1|Corsair Heavy Leather Armor
+; itm_umb_armor_b|Corsair Raider Armor
+; itm_umb_armor_c|Corsair Padded Armor
+; itm_umb_armor_d|Corsair Heavy Padded Armor
+; itm_umb_armor_e|Corsair Padded Raider Armor
+; itm_umb_armor_f|Corsair Hauberk
+; itm_umb_armor_g|Corsair Hauberk Pauldrons
+; itm_umb_armor_h|Corsair Heavy Raider Armor
+; itm_umb_helm_a|Corsair Shell Helm
+; itm_umb_helm_b|Corsair Shell Helm
+; itm_umb_helm_c|Corsair Militia Helm
+; itm_umb_helm_d|Corsair Militia Helm
+; itm_umb_helm_e|Corsair Raider Helm
+; itm_umb_helm_f|Corsair Raider Helm
+; itm_umb_hood|Umbar Hood
+; itm_corsair_boots|Corsair Boots
+; itm_umb_shield_a|Corsair Buckler
+; itm_umb_shield_b|Corsair Buckler
+; itm_umb_shield_c|Corsair Buckler
+; itm_umb_shield_d|Corsair Buckler
+; itm_umb_shield_e|Corsair Buckler
+; itm_umbar_cutlass|Umbar Cutlass
+; itm_kraken|Kraken Cutlass
+; itm_umbar_rapier|Umbar Sword
+; itm_corsair_harpoon|Corsair Harpoon
+; itm_corsair_sword|Corsair Eket
+; itm_corsair_throwing_dagger|Umbarian Throwing Daggers
+; itm_umbar_pike|Umbar Pike
+; itm_woodman_tunic|Woodman Tunic
+; itm_woodman_scout|Woodman Scout Cape
+; itm_woodman_padded|Woodman Padded Armor
+; itm_beorn_tunic|Beorning Tunic
+itm_beorn_padded|Meddedovska prosivanice
+itm_beorn_heavy|Meddedovska tezka zbroj
+; itm_beorn_berserk|Beorning Berserker Kit
+; itm_beorn_chief|Beorning Chieftan's Tunic
+; itm_beorn_helmet|North Skullcap
+; itm_beorn_shield|Northmen Shield
+itm_beorn_axe|Meddedovska sekyra
+; itm_beorn_staff|Woodman's Staff
+; itm_beorn_battle_axe|Beorning War Axe
+itm_dwarf_shield_a|Trpaslici stit
+itm_dwarf_shield_b|Trpaslici stit
+itm_dwarf_shield_c|Trpaslici stit
+itm_dwarf_shield_d|Trpaslici stit
+itm_dwarf_shield_f|Trpaslici stit
+itm_dwarf_shield_g|Trpaslici stit
+itm_dwarf_shield_i|Trpaslici stit
+itm_dwarf_shield_j|Trpaslici stit
+itm_dwarf_shield_k|Trpaslici stit
+itm_dwarf_shield_l|Trpaslici stit
+itm_dwarf_sword_a|Trpasličí meč
+itm_dwarf_sword_b|Trpasličí meč
+itm_dwarf_sword_c|Trpasličí meč
+itm_dwarf_sword_d|Trpasličí meč
+; itm_dwarf_adz|Dwarf Adz
+; itm_dwarf_great_axe|Dwarf Great Axe
+; itm_dwarf_great_mattock|Dwarf Great Mattock
+; itm_dwarf_great_pick|Dwarf Great Pick
+; itm_dwarf_war_pick|Dwarf War Pick
+; itm_dwarf_mattock|Dwarf Mattock
+; itm_dwarf_hand_axe|Dwarf Short Axe
+; itm_dwarf_throwing_axe|Dwarf Throwing Axe
+; itm_dwarf_spear|Dwarf Spear
+; itm_dwarf_spear_b|Dwarf Pike
+; itm_dwarf_spear_c|Dwarf Pike
+; itm_dwarf_helm_a|Dwarf Coif
+; itm_dwarf_helm_b|Dwarf Coif with Mask
+; itm_dwarf_helm_c|Dwarf Helm with Mask
+itm_dwarf_helm_h|Trpaslici helma
+; itm_dwarf_helm_i|Dwarf Frisian Helm
+; itm_dwarf_helm_j|Dwarf Frisian Mask
+; itm_dwarf_helm_l|Dwarf Hood
+; itm_dwarf_helm_m|Dwarf Iron Face
+; itm_dwarf_helm_o|Dwarf Nasal Tophelm
+; itm_dwarf_helm_p|Dwarf King Helm
+; itm_dwarf_helm_q|Dwarf Miner Helm
+; itm_dwarf_helm_r|Dwarf Miner Cap
+; itm_dwarf_helm_u|Dwarf Round Mask
+; itm_dwarf_helm_v|Dwarf Chain Sallet
+; itm_dwarf_helm_x|Dwarf Masked Sallet
+; itm_dwarf_armor_a|Dwarven Tunic over Mail
+; itm_leather_dwarf_armor|Dwarven Pad over Mail
+; itm_dwarf_vest|Dwarven Archer Armor
+; itm_dwarf_armor_b|Dwarven Pad over Tunic
+; itm_dwarf_armor_c|Dwarven Scale over Mail
+; itm_leather_dwarf_armor_b|Dwarven Tunic
+; itm_dwarf_vest_b|Iron Hills Tunic
+; itm_dwarf_pad_boots|Dwarven Padded Boots
+; itm_dwarf_chain_boots|Dwarven Mail Chausses
+; itm_dwarf_scale_boots|Dwarven Scale Boots
+; itm_good_mace|Mace
+; itm_far_harad_shield_paint|Wicker Shield
+; itm_nazgulrobe|Nazgul Robe
+; itm_whiterobe|White Robe
+itm_mordor_banner|Zastava Mordoru
+itm_isengard_banner|Zastava Zelezneho pasu
+itm_woodelf_banner|Zastava Temneho hvozdu
+itm_lorien_banner|Zastava Lothlorienu
+itm_imladris_banner|Zastava Roklinky
+; itm_gondor_lance_banner|Gondor Lance With Banner
+; itm_amroth_lance_banner|Dol Amroth Lance With Banner
+; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
+; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
+; itm_ent_body|Ent Body
+; itm_ent_head_helm|Ent Head
+; itm_ent_head_helm2|Ent Head
+; itm_ent_head_helm3|Ent Head
+; itm_ent_feet_boots|Ent Feet
+; itm_ent_hands|Ent Hands
+itm_galadriel|Galadrielin sat
+; itm_ent_water|Strange bowl of water
+itm_map|Mapy Stredozeme
+itm_athelas_reward|Rostlinka Athelasu
+itm_phial_reward|Galadrielino svetlo
+itm_scroll_reward|O pádu Gondolinu
+; itm_hammer_reward|Smith's Hammer
+; itm_khand_knife_reward|Khand Sacrificial Knife
+; itm_angmar_whip_reward|Master's Whip
+itm_horn_gondor_reward|Gondorsky roh
+; itm_harad_totem_reward|Harad Totem
+itm_elven_amulet_reward|Elfi amulet
+; itm_torque_reward|Evil Torque
+; itm_orc_brew|Orc Brew
+itm_rohan_saddle|Thengelovo sedlo
+itm_mearas_reward|Mearhsky hrebec
+itm_sword_of_arathorn|Arathornuv mec
+; itm_riv_armor_reward|Rivendell Decorated Armor
+; itm_westernesse1h_reward|Sword of Westernesse
+; itm_westernesse2h_reward|Sword of The Great Serpent
+; itm_mirkwood_sword_reward|Greenwood Relic Sword
+; itm_nazgul_sword|Nazgul Sword
+; itm_cooking_cauldron|Cooking Cauldron
+itm_eorl_cavalry_sword|Eorluv mec
+; itm_garlic_reward|Garlic
+itm_silmarillion_reward|Silmarillion
+itm_herbarium_reward|Herbar Stredozeme
+; itm_book_of_moria|Book of Mazarbul
+; itm_ring_a_reward|Tulcarisil
+; itm_ring_b_reward|Finwarisil
+itm_dale_bow_reward|Barduv luk
+; itm_explosive_reward|Isengard Mine
+itm_corsair_trident|Trojzubec mořského hněvu
+; itm_crebain_reward|Isengard Crebain
+itm_miruvor_reward|Lahev Miruvoru
+itm_wheeled_cage|Obří klec na kolech
+; itm_orc_throwing_axes_reward|Gundabad Flying Axes
+itm_corsair_throwing_dagger_reward|Otrávené vrhací dýky
+; itm_dwarf_shield_reward|Mithril Dwarven Shield
+itm_dwarf_great_axe_reward|Trpasličí ostrá sekera
+; itm_isen_uruk_heavy_reward|Uruk-hai General Armor
+; itm_lorien_bow_reward|Noldorin Bow
+; itm_lorien_sword_reward|Galadhrim Sword
+; itm_dale_sword_reward|Marchwarden Sword
+; itm_dale_armor_reward|Esgaroth Noble Gorget
+; itm_leather_gloves_reward|Hunting Gloves
+; itm_beorn_shield_reward|Beorning Shield
+; itm_beorn_axe_reward|Bear Axe
+; itm_moria_arrow_reward|Moria Poisoned Arrows
+; itm_khamul_helm|Helm of Khamul
+itm_gandstaff|Carodejova hul
+itm_sarustaff|Carodejova hul
+; itm_rohan_armor_th|Rohan Royal Armor
+itm_denethor_robe|Spravcovo rouchu
+; itm_prisoner_coll_chain|Prisoner Chains
+; itm_witchking_helmet|Wicked Helm
+; itm_lorien_royal_armor|Lorien Royal Armor
+; itm_feet_chains|Feet Chains
+; itm_feet_chains_dwarf|Feet Chains
+; itm_spider|Spider
+itm_bear|Medvěd
+itm_wolf|Vlk
+; itm_defiled_armor_gondor|Defiled Gondor Leader's Surcoat
+; itm_defiled_armor_rohan|Defiled Rohan Hauberk
+; itm_defiled_armor_dale|Defiled Dale Noble Armor

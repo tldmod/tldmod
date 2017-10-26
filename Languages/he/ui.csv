@@ -1,0 +1,48 @@
+; ui_at_learning_limit|(at learning limit for this race)
+; ui_not_enough_skill_points_to_learn|(not enough skill points to learn)
+; ui_not_enough_attributetype_to_learn_this_skill|(not enough %s to learn this skill)
+; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
+; ui_retreated_battle|%s has been routed.
+; ui_riding_skill_not_adequate_to_mount|(Riding skill too low)
+; ui_camp|Actions
+; ui_tutorial_inventory|In The Last Days, you need Resource Points to obtain equipment. Resource Points are a measure of how willing a faction is to keep you supplied, and of how much of the faction resources you are entitled to use.
+; ui_you_dont_have_value|Don't have: %s
+; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
+; ui_merchant_pay_whatever|No, I don't need any of that, keep it.
+ui_horse|רכב
+; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
+; ui_return_your_bought_goods|Return the goods you have taken before giving that!
+; ui_return_price|if returned: +%d Res.P.
+; ui_sell_price|if given: +%d Res.P.
+; ui_reclaim_price|to reclaim: -%d Res.P.
+; ui_buying_price|to claim: -%d Res.P.
+; ui_notification_riding_skill_not_enough|Your riding skill is not high enough to mount this.
+; ui_notification_payment_value|Consuming %s
+; ui_notification_payment_receive_value|Gaining %s
+; ui_weekly_cost_value|Upkeep: %s
+; ui_sell|Give
+; ui_hire|Enlist
+; ui_notification_cant_hire|(not enough R.P. to enlist)
+; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
+; ui_weekly_wage|Upkeep: %d Res.P.
+; ui_price|Value: %d Res.P.
+; ui_cant_reload_this_weapon_on_horseback|Can't reload this weapon while mounted.
+; ui_delivered_number_damage_to_horse|Delivered %d damage to mount.
+; ui_horse_charged_for_number_damage|Mount charged for %d damage.
+; ui_horse_received_number_damage|Mount received %d damage.
+; ui_horse_fell_dead|Mount fell dead...
+; ui_horse_crippled|Mount crippled...
+; ui_you_got_value|%s earned.
+; ui_has_deserted_the_party| has left the party.
+; ui_have_deserted_the_party| have left the party.
+; ui_loading_textures|Loading Textures (be patient)...
+; ui_order_hold_fire_toggle|Don't shoot/Shoot at Will (Toggle)
+; ui_order_dismount_toggle|Order Dismount/Mount (Toggle)
+; ui_mount_horses_e_|%s, Mount!
+; ui_hold_fire_e_|%s, Don't shoot!
+; ui_fire_at_will_e_|%s, Shoot at Will!
+; ui_recent_messages|Last Msgs
+; ui_value_denars|%d Resource Pts.
+; ui_cannot_be_used_on_horseback|Cannot be used while mounted
+; ui_upgrade_to_value| Upgrade to %s
+; ui_notification_cant_upgrade|(Can't upgrade while giving troops)

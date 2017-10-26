@@ -1,9 +1,9 @@
-menu_start_game_1|pro co bojuješ ?
-mno_start_good|usvit nového věku
-mno_start_evil|pro SOUMRAK lidstva
-mno_go_bback|jdi zpět
+menu_start_game_1|Pro co bojuješ ?
+mno_start_good|ÚSVIT nového věku
+mno_start_evil|SOUMRAK lidstva
+mno_go_bback|Jdi zpět
 menu_start_phase_2|^^^^^ Stredozem. Na Vychode se zvedá Stin, ^ prichazi odtamtud dlouho skryte a  temne veci. ^ Svobodne narody se pripravuji na valku. Valku jakou nezazily po cely vek. ^ Lide, elfove, trpaslici a skreti - vsichni budou hrat svou roli. ^^ Jakou roli, to se teprve ukaze...
-mno_go_forth|Vydej se po své zvolené cestě
+mno_go_forth|Vydej se po své zvolené cestě...
 menu_start_game_3|^^^^^^^^Zvol si scénář:
 mno_custom_battle_scenario_1|Šarvátka, Gondor proti Haradu
 mno_custom_battle_scenario_12|Vyber frakce pro bitvu
@@ -179,22 +179,22 @@ mno_cheat_disabable|Vypnout cheaty/nastaveni módu.
 menu_drank_ent_water_human|^^^Napil jsi se vody. Chutná čistě a svěže. Má pižmovou vůni.^Cítíš se osvěžen.^^Nicméně, máš také zvláštní nepřirozený pocit. Něco ti říká, že bude lepší nikdy více nepít tuto vodu.
 menu_drank_ent_water_orc|^^^Napil jsi se vody. Je to prostě voda. ^Náhle jsi chytil své hrdlo v záchvatu bolesti.^Otráven!^Dusíš se, vyzvracíš černou krev a málem zemřeš.^^Bolí to, ó jak to bolí. 
 mno_i_shall_surv|Já... musím... přežít!
-; menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
+menu_end_game|^^^^^Volba je vykonána a ty se rozhoduješ pro zanechání života dobrodruha a usídlíš se. Prodáš veškeré své zbraně a brnění, posbíráš svůj majetek a vyjedeš vstříc západu slunce.
 mno_end_game_bye|Stastnou cestu.
 menu_cattle_herd|Narazil jsi na nějaké lidi.
 mno_cattle_drive_away|Rozkázat jim aby tě následovali
 mno_cattle_stop|Přimět je aby zastavili.
 mno_leave|Odejit.
-; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
+menu_simple_encounter|^^^^^{s2}^Mas k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrava v{s3}{s4}.^^Jake jsou tve rozkazy?
 ; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
 mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?attack:face them} bez tebe.
 ; mno_special_whip|Rush forward toward them cracking the {s4}.
 mno_encounter_leave|uvolnit se od nepřítele.
 mno_encounter_retreat|Nech za sebou nějaké vojáky, aby kryli tvůj ústup.
-; menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
+menu_encounter_retreat_confirm|^^^^^Jako nejzkusenejsi taktik v druzine,   ({reg2}), {reg3?navrhujes:{s3} navrhuje} plan, ktery tobe a tvym muzum umozni uprchnout a zachranit si zivot,   ale budes muset obetovat {reg4} vojáku, aby zastavili nepratelske pronasledovani.
 mno_leave_behind|Vykonat. Obětováním těchto mužů zachráníš ostatní.
 mno_dont_leave_behind|Ne. My nikoho neopustíme
-; menu_encounter_retreat|^^^^^You tell {reg4} of your troops to hold the enemy while you retreat with the rest of your party.
+menu_encounter_retreat|^^^^^Prikazal jsi {reg4} svym vojakum zadrzet nepritele, zatimco ustupujes se zbytkem druziny.
 menu_order_attack_begin|Tvoje jedno se připravují na útok nepřítele
 mno_order_attack_begin|Dát příkaz k zahájení útoku.
 mno_call_back|Zavolat zpet
@@ -207,7 +207,7 @@ mno_send_word|Pošli zprávu, že se k němu brzy připojíš.
 ; menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
 ; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
 ; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
-; menu_battle_debrief|{s11}^Your Casualties:{s8}{s10}^^Enemy Casualties:{s9}
+menu_battle_debrief|{s11}^Tve ztraty:{s8}{s10}^^Nepratelske ztraty:{s9}
 mno_inspect_troll|prohledat padlého trola
 menu_pre_join|přišel jsi k bitvě mezi {s2} a {s1}. rozhodneš se k
 mno_pre_join_help_attackers|jít na pomoc {s2}.
@@ -229,18 +229,18 @@ menu_join_siege_outside|^^^^^^{s1} je obléháno {s2}.
 mno_approach_besiegers|Přijeď k obléhacímu táboru.
 mno_pass_through_siege|Projdi zkrz obléhací linie a vejdi {s1}.
 menu_cut_siege_without_fight|Dobyvatelé ti umožnili přístup k branám bez obtíží.
-; menu_besiegers_camp_with_allies|{s1} remains under siege. The banners of {s2} fly above the camp of the besiegers,    where you and your troops are welcomed.
+menu_besiegers_camp_with_allies|{s1} zustava oblezen. Zastavy {s2} vlaji nad taborem oblehatelu, kde jste ty a tvi muzi vitani.
 mno_talk_to_siege_commander|Požádej velitele o sejití.
 mno_join_siege_with_allies|Připoj se k dalšímu útoku.
 mno_join_siege_stay_back|Nařiď tvým vojákům, aby se přidali k dalšímu útoku bez tebe.
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|^^Zda se, ze kniha pojednava o poslednim pokusu trpasliku o znovuosidleni Morie. Pokus, ktery zjevne skoncil desivou smrti vsech zucastnenych. Behem procitani knihy narazis na slova 'pravostribro'! Behem studovani stranek ti najednou dochazi, ze jde o popis trpaslicich sluji nekde v nizsich patrech. Hah!  Nebylo by to skvele odkryt dlouho ztraceny trpaslici mithril!?  ^Dychtive nasleduje popsany smer, skrz uzke klikatici se tunely a dal...  ^...^Po nekolika hodinach neplodneho patrani chapes, ze jsi ztracen v Morii a potřebujes najit cestu ven.
 mno_moria_exit_scene|Najdi cestu ven!
 menu_castle_outside|Jsi venku {s2}.{s11} {s3} {s4}
 mno_moria_enter|Vrať se do hlavní síně Morie zkrz tajný vstup.
 mno_moria_enter_door|Vejdi do Morie.
 mno_castle_start_siege|obléhat {reg6?town:castle}.
 mno_castle_leave|Odejit
-; menu_castle_besiege|You are laying siege to {s1}. {s2} {s3}
+menu_castle_besiege|Obléháš {s1}. {s2} {s3}
 mno_siege_request_meeting|Zažádej si o sejití s velitelem hradu.
 mno_wait_24_hours|Počkat do zítřka.
 mno_castle_lead_attack|Veď tvé vojáky do útoku.
@@ -255,7 +255,7 @@ menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvoje ztráty:  {s8}^^Spojen
 ; menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
 ; menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
 mno_castle_taken_no_claim|Nežádej o odměnu.
-; menu_siege_started_defender|{s1} is launching an assault against the walls of {s2}. You have {reg22} troops fit for battle against the enemy's {reg11}. You decide to...
+menu_siege_started_defender|{s1} zahajuje utok na opevneni {s2}. Mas {reg22} bojeschopnych jednotek proti nepratelskym {reg11}. Rozhodnes se...
 mno_siege_defender_join_battle|Připojit se k bitvě.
 mno_siege_defender_troops_join_battle|Přikaž svým mužům, aby se připojili do bitvy bez tebe.
 menu_siege_join_defense|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
@@ -267,7 +267,7 @@ menu_close|nic
 ; menu_town|You arrived in {s60}.{s12}{s13}
 mno_town_menu_0|Jdi na nějeké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
-; mno_town_approach|Approach {s1}...
+mno_town_approach|Prijet bliz k {s1}...
 mno_town_castle|Jdi do  {s1}.
 mno_town_castle_door|Dveře do hradu.
 mno_town_center|Jdi na hlavní náměstí...
@@ -307,11 +307,11 @@ mno_whatever|Vstaň!
 ; menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
 ; menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
 ; menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
-; menu_notification_one_side_left|^^^^^The War of the Ring is over!^^The {s1} have defeated all their enemies and stand victorious!
-; menu_notification_total_defeat|^^^^^The War of the Ring is over for you!^^The {s1} have been defeated by their enemies and you stand alone in defeat!
-; menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, together with anyone left from {s11}, can still help your side win.
+menu_notification_one_side_left|^^^^^Valka o Prsten je u konce!^^{s1} porazil vsechny sve nepratele a stava se vitezem!
+menu_notification_total_defeat|^^^^^Valka o Prsten pro tebe konci!^^{s1} byl porazen neprateli a zustavas sam a porazen!
+menu_notification_your_faction_collapsed|^^^^^Tva domovina, {s11}, byla porazena!^Ostatni i nadale bojuji ve Valce. S ostatnimi, kdo zbyli z {s11}, muzes tale pomoci sve strane k vitezstvi.
 ; menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
-; menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
+menu_ruins|^^^^Prijizdis k {s1}. Kdysi silne sidlo bylo vypaleno do zakladu, ackoliv stale rozpoznavas stopy po opevneni a roztrousene zrezivele zbrane.
 ; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|sledoval jsi stopy lovců prstenu skrz Temný hvozd a došel si k (s1). vidíš je jak se chystají odejít s truhlou
@@ -352,16 +352,16 @@ mno_cb_mordor7|Rhun
 mno_cb_mordor8|Korzaři
 ; mno_rescue_mission|Sneak into the sorcerer's lair under the night's cover.
 mno_next_rescue_scene_door|Pokračuj vpřed!
-; mno_pick_troops1|Pick companions for the mission, {reg0} selected
+mno_pick_troops1|Vyber spolecniky pro tento ukol, {reg0} vybrano
 ; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
-; mno_go_forward|End selecting companions and proceed.
+mno_go_forward|Ukoncit vyber spolecniku a pokracovat.
 ; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Poklekněte
-; mno_swear_oath|Swear an oath of vengeance!
-; mno_despoil|Desecrate the site
-; mno_leave_mound|Leave the mound.
+mno_swear_oath|Slozit prisahu pomsty!
+mno_despoil|Znesvetit toto misto
+mno_leave_mound|Opustit mohylu.
 ; menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
-; menu_burial_mound_oath|You loudly swear an oath of vengeance for the death of {s4}.   You would relentlessly seek out the forces of {s3} and destroy them.   Your words carry far on the wind and who can say that they were not heard beyond the sea?
+menu_burial_mound_oath|Hlasite prisahas pomstu za smrt {s4}. Bez odpocinku budes patrat po muzich {s3}  a unicis je. Tva slova odnasi vitr a kdo vi, zda je nebylo slyset za morem?
 ; menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
 ; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Odejít od vatry.

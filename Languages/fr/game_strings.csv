@@ -21,7 +21,7 @@ str_blunt_hold_fire|N'engagez l'ennemi que sur mon ordre!
 str_tutorial_ammo_refilled|Vous disposez à nouveau de projectiles
 str_custom_battle_1|Le captaine Malvogil et sa compagnie du Gondor ont intercepté un groupe de renforts du Harad. Poussant son cri de guerre, il éperonne son cheval et mène sans faillir ses loyaux soldats dans un affrontement féroce.
 str_custom_battle_2|Celeborn de la Lòrien mène une patrouille de cavaliers et d'archers,  quand l'avant garde de ses éclaireurs l'avertissent qu'une force de mauvais hommes aux visages sombres approche. Ce sont les redoutés Númenóréens Noirs! Ceux-ci n'ont pas été vu depuis des âges près de la Lothlórien, mais maintenant ils doivent être repoussés dans le néant .
-; str_custom_battle_3|Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard. Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel.
+str_custom_battle_3|Seigneur Grimbold de Rohan dirige la dernière défense des murs contre l'armée d'isengard. Maintenant, en tant qu'assiégé il se préparer pour un assaut final sur les murs, il doit tenir les murs avec courage et de l'acier brillant.
 str_custom_battle_4|Alors que les éclaireurs informent le seigneur Breanhelm de l'approche d'une bande armé de Rhûn, Il décide de préparer rapidement les défenses du camp et d'essayer de tenir contre un ennemi supérieur en nombre.
 str_custom_battle_5|Ugluk a amené ses féroces Orques dans l'Ouest, avec une promesse de pillage. S'il peut faire tomber cette forteresse naine aujourd'hui, ses maîtres de Barad-Dûr seront extrêmement satisfaits.
 str_custom_battle_6|Ugluk et ses groupes de pilleurs orques étaient aussi vifs que possible en fuyant les patrouilles elfes. Mais les bonnes fortunes ne peuvent durer éternellement,  et il semble que les sales peaux-pâles aient maintenant leur part.
@@ -204,7 +204,7 @@ str_persuasion_summary_very_bad|Vous faites de votre mieux pour convaincre {s50}
 str_persuasion_summary_bad|Vous essayez de convaincre {s50}, mais {reg51?elle:il} vous discrédite depuis le début. Même vos meilleurs arguments sonnent faux à vos propres oreilles. {s50} n'a pas eu une très bonne impression de votre discours.
 str_persuasion_summary_average|{s50} se révèle être un bon orateur à l'esprit vif, et vous n'arrivez pas à répondre quelque chose de concret qu'{reg51?elle:il} ne puisse pas contredire avec un argument rationnel. En fin de compte, aucun de vous ne parvient à gagner du terrain pendant cette discussion.
 str_persuasion_summary_good|Grâce votre vivacité d'esprit et une argumentation soignée, vous parvenez à exposer votre cause, forçant {s50} à céder sur plusieurs points. Cependant, {reg51?elle:il} continue à douter de votre requête.
-; str_persuasion_summary_very_good|You deliver an impassioned speech that echoes through all listening ears like poetry. The world itself seems to quiet down in order to hear you better. The inspiring words have moved {s50} deeply, and {reg51?she:he} looks much more well-disposed towards helping you.
+str_persuasion_summary_very_good|Vous faites un discours passionné qui sonne comme de la poésie dans les oreilles de l'auditoire. Le monde lui-même semble se taire pour mieux vous entendre. Les mots inspirants que vous avez prononcés ont ému {s50} profondément et {reg51?elle:il} semble bien mieux disposé(e) à vous aider.
 str_surname_1|{s50} de Tarnost
 str_surname_2|{s50} de Lossarnach
 str_surname_3|{s50} d'Erech
@@ -1091,7 +1091,7 @@ str_lord_insult_goodnatured|camarade désagréable
 str_lord_insult_upstanding|scélérat indigne
 str_rebellion_dilemma_default|[suzerain]
 str_rebellion_dilemma_martial|{s45} a clairement été lésé. Bien que j'ai prêté serment à {s46}, il ne m'engage pas à le soutenir s'il a usurpé illégalement le trône.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
+str_rebellion_dilemma_quarrelsome|Hmm. {s46} ne m'a jamais donné mon dû, alors je ne pense pas lui devoir grand chose. Toutefois, peut-être {s45} ne serait pas mieux, et {s46} s'est enfin montré lui-même.
 str_rebellion_dilemma_pitiless|Hmm. {s45} dit qu'{reg3?qu'elle est l'héritière:il est l'héritier} légitime du trône. Ce qui est bien -- cela m'absout de mon serment à {s46}. Mais je dois quand même soupeser ma décision avec précaution.
 str_rebellion_dilemma_cunning|Hmm. J'ai prêté allégeance à {s46}, mais les puissants ne sont pas liés par leurs serments comme les gens ordinaires. Notre devoir est envers notre propre capacité à régner, à imposer l'ordre et à empêcher la guerre de tous contre tous.
 str_rebellion_dilemma_sadistic|Hmm. Dans ce bas-monde, un homme avisé doit penser par lui-même, car personne ne le fera. Ainsi -- qu'y a-t-il pour moi ?
@@ -1703,10 +1703,10 @@ str_fullname_region_grey_mountains|les contreforts des Montagnes Grises, où viv
 str_fullname_region_mordor|le Mordor, le Royaume noir de Sauron
 str_shortname_region_unknown|une région sans nom
 str_shortname_region_pelennor|Champs du Pelennor
-str_shortname_region_subfac_pelargir|Fief du Lebennin
+str_shortname_region_subfac_pelargir|Le fief de Lebennin
 str_shortname_region_subfac_dol_amroth|Belfalas
 str_shortname_region_subfac_ethring|Val de Ringló
-str_shortname_region_subfac_lossarnach|Fief du Lossarnach
+str_shortname_region_subfac_lossarnach|Le fief de Lossarnach
 str_shortname_region_subfac_pinnath_gelin|la région de Pinnath Gelin
 str_shortname_region_subfac_blackroot|le Fief du Lamedon
 str_shortname_region_n_ithilien|Ithilien du nord
@@ -1781,6 +1781,8 @@ str_trait_title_battle_scarred|Cicatrices de guerre
 str_trait_desc_battle_scarred|Vous avez souffert d'horribles blessures durant vos nombreuses compagnes, et vous êtes toujours en vie pour les raconter. Votre chair meurtrie se sert de vos difficiles expériences pour augmenter votre résistance aux blessures. Alors que certains peuvent trouver votre apparence choquante, vos suivants la considèrent comme une affirmation de votre expérience du combat. Ils reçoivent en conséquence un bonus de moral hebdomadaire.
 str_trait_title_fell_beast|Bête déchue
 str_trait_desc_fell_beast|Votre peau est déchirée par les cicatrices d'innombrables batailles, et votre esprit mauvais est également dur et inflexible. Même selon les standards des Orques, des Uruks et des Trolls, vous êtes considéré comme une bête dangereuse. Ceux qui vous servent crient votre nom avec joie lorsque vous arrivez sur le champ de bataille. Vous êtes vous-même un icône de la guerre, et il est peu que vous craigniez.
+str_trait_title_butcher|Boucher
+str_trait_desc_butcher|L'expérience a affiné vos compétences pour extraire plus de viande de la chair de vos ennemis. Vous gagnez une livre supplémentaire de chair chaque fois que vous abattez un de vos prisonniers pour la viande
 str_wound_head|un coup dur à la tête
 str_wound_chest|quelques côtes fêlées
 str_wound_arm|un bras estropié
@@ -1819,7 +1821,7 @@ str_imladris_gift0|Pain blanc et beurre d'herbes
 str_imladris_gift1|Verrerie en cristal
 str_imladris_gift2|Miruvor
 str_imladris_gift3|Bannières brodées et cors incrustés d'argent
-; str_imladris_gift4|Healing Herbs and Ointments
+str_imladris_gift4|Herbes soignantes et onguents 
 str_woodelf_gift0|Douces peaux d'animaux
 str_woodelf_gift1|Pointes de flèches et archerie
 str_woodelf_gift2|Lances de chasse

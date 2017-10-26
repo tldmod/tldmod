@@ -968,7 +968,7 @@ trp_imladris_lord|군주 엘론드
 trp_imladris_lord_pl|군주
 trp_woodelf_lord|스란두일 왕
 trp_woodelf_lord_pl|국왕
-; trp_moria_lord|Master Bolg the Lesser
+trp_moria_lord|하수인 볼그
 trp_moria_lord_pl|마스터
 trp_guldur_lord|군주 푸이누르
 trp_guldur_lord_pl|마스터
@@ -1037,7 +1037,7 @@ trp_knight_3_17|글라배토르
 trp_knight_4_6|터스킴 장군
 trp_knight_4_7|머그슬랙 장군
 trp_knight_4_11|베란헬름
-; trp_knight_4_12|Beranor Blackfur
+trp_knight_4_12|검은 가죽의 베라노르
 ; trp_knight_4_16|Whip Brolgukhsh
 ; trp_knight_4_17|Whip Grumrunt
 ; trp_knight_4_18|Whip Grimsob
@@ -1076,9 +1076,9 @@ trp_smith_hannun|순찰대 대장장이,팔
 ; trp_smith_hannun_pl|ranger gear stash
 trp_smith_candros|칼림도르
 trp_smith_candros_pl|대장간
-; trp_smith_edoras|Eaoden Steelmaster
+trp_smith_edoras|강철장인 이오덴
 trp_smith_edoras_pl|왕의 대장간
-; trp_smith_aldburg|Fulm Ironhoof
+trp_smith_aldburg|무쇠발굽 펄름
 trp_smith_aldburg_pl|대장간
 trp_smith_hornburg|알드헬름
 trp_smith_hornburg_pl|대장간
@@ -1098,9 +1098,9 @@ trp_smith_mmorgul_pl|대장간
 trp_town_24_smith_pl|대장간
 trp_smith_orc_patrol|쇠손가락 글러그즈
 trp_smith_orc_patrol_pl|야영지 대장간
-; trp_smith_oscamp|Kugash Ironlover
+trp_smith_oscamp|무쇠애호가 쿠가쉬
 trp_smith_oscamp_pl|야영지 대장간
-; trp_smith_isengard|Burz Ironbasher
+trp_smith_isengard|무쇠를 후려치는 버즈
 trp_smith_isengard_pl|지하 대장간
 trp_smith_uoutpost|쇠이빨 거르주크
 trp_smith_uoutpost_pl|전초기지 대장간
@@ -1154,7 +1154,7 @@ trp_smith_rohan_ac|투구장인 데오르
 trp_smith_rohan_ac_pl|야영지 대장간
 trp_smith_mordor_ac|문 제조자 허르배그
 trp_smith_mordor_ac_pl|대장간
-; trp_smith_isengard_ac|Burz Ironbasher
+trp_smith_isengard_ac|무쇠를 후려치는 버즈
 trp_smith_isengard_ac_pl|지하 대장간
 trp_smith_lorien_ac|화살제조장인 디미리안
 trp_smith_lorien_ac_pl|엘프족 무기제작자
@@ -1510,9 +1510,9 @@ trp_nazgul|나즈굴
 trp_nazgul_pl|길들여진 나즈굴
 ; trp_barman|Barman
 trp_elder|중앙 장로
-; trp_gear_merchant|Gear Merchant
+trp_gear_merchant|도구 상인
 trp_goods_merchant|일반물품 상인
-; trp_start_quest_caravaneer|Torbal the Caravaneer
+trp_start_quest_caravaneer|캐러밴을 이끄는 토르발
 trp_dorwinion_bandit|도르위니온 도적
 trp_dorwinion_bandit_pl|도르위니온 도적
 trp_dorwinion_raider|도르위니온 약탈자

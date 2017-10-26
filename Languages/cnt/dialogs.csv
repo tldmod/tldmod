@@ -199,8 +199,8 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_c
 dlga_lord_capture_troll_completed_one_troll:close_window|很好,{playername}.你是一个可靠而有用的仆人。这个巨魔将是达成我们的意愿时最有用的东西了。现在把它带到地牢里。
 dlga_lord_start:close_window.1|不久前，我让你给我带一个活着的巨魔。但是我应该预料到的，我怎么会想到让{playername}这种垃圾去完成这么大的任务。你还不滚回去好好反省！
 dlga_lord_start:lord_generic_mission_completed.1|当我听说了你关于野生巨魔的事迹后我少了一些对于{s12}的恐惧和担心,谢谢{playername}.
-; dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
-; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
+dlga_lord_start:lord_generic_mission_completed.2|{s12}附近的探子已经告诉我们你的成功了！这将警告他们不要监视我们。摧毁这个营地肯定会阻止敌人的前进。
+dlga_lord_start:destroy_scout_camp_failed|{12}附近我们的探子看见你带着你的人撤退了。{playername}，这真让人失望。^^你的失败导致重要补给线受到打击。这需要一段时间来恢复。
 dlga_destroy_scout_camp_failed:close_window|下一次我会做得更好。
 dlga_lord_start:lord_generic_mission_completed.3|啊哈，你居然做到了，{playername}。所有的农奴都回来了，他们正准备着收割呢。你应该拿到你的那份奖励，这些归你了，拿好！
 dlga_lord_start:defend_village_failed|我们{s12}附近的斥候回报说你没有成功保护村庄。 村民们要么被屠杀要么成了奴隶。这些掠夺者胆子越来越大... ^^我们很肯定—战争已经临近了。

@@ -3,7 +3,7 @@ qst_deliver_message_text|{s9}要 你 給 {s13}送 信 。 你 接 受 這 個 �
 qst_deliver_message_to_enemy_lord|傳 達 消 息 到 {s13}
 qst_deliver_message_to_enemy_lord_text|{s9}要 你 給 {s15}的 {s13}送 信 。 你 接 受 這 個 任 務 時 {s13}曾在 {s4}。 
 qst_raise_troops|去 {s14}征 {reg1}的 稅 
-qst_raise_troops_text|{s9}要 求 你 去 {s14}征 {reg1}的 稅 並 帶 給 他 。 
+; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
 qst_escort_messenger|護 送 信 使 到 {s14}
 qst_escort_messenger_text|無 
 qst_hunt_down_fugitive|抓 捕 {s4}
@@ -30,6 +30,7 @@ qst_find_lost_spears|尋 找 布 拉 多 辛 國 王 丟 失 的 長 矛
 qst_find_lost_spears_text|{s9}讓 你 去 尋 找 丟 失 的 長 矛 ， 長 矛 是 矮 人 爲 布 拉 多 辛 國 王 打 造 的 。 你 需 要 尋  求 矮 人 的 許 可  去 尋 找 長 矛 在 孤 山 的深 處 。 
 ; qst_defend_village|Defend Village
 ; qst_raid_village|Raid Village
+; qst_destroy_scout_camp|Destroy Scout Camp
 qst_rescue_prisoners|營 救 {reg1}的 囚 犯 
 qst_rescue_prisoners_text|{s9}想 要 你 去 營 救 {reg1}的 囚 犯 。 
 qst_scout_enemy_town|偵 查 敵 人 的 城 鎮 
@@ -53,7 +54,7 @@ qst_scout_waypoints_text|無
 qst_move_cattle_herd|移 動 {s12}到 {s13}
 qst_move_cattle_herd_text|{s10}的 長 老 要 你 帶 一 些 {s12}去 {s13}。 
 qst_escort_merchant_caravan|護 送 補 給 隊 到 {s8}
-qst_escort_merchant_caravan_text|護 送 補 給 隊 到 {s8}。 
+; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
 qst_deliver_wine|給 {s4}帶  {reg5}單 位 的 {s6}
 qst_deliver_wine_text|{s3}的 {s9}要 你 在 7 天 內 帶 {reg5}單 位 的 {s6}到 {s4}。 
 qst_troublesome_bandits|獵 殺 棘 手 的 哥 布 林 
