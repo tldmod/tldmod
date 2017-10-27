@@ -6090,40 +6090,46 @@ scripts = [
 			(eq, cheat_switch, 1),
 			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, ":quest_no", "qst_blank_quest_01"),
-			(call_script, "script_cf_init_quest_defend_refugees"),
+			(try_begin),
+				(eq, "$tld_war_began", 1),
+				(neg|check_quest_active,"qst_blank_quest_01"),
+				(call_script, "script_cf_init_quest_defend_refugees"),
 
-			(assign, ":quest_target_party_template", reg55),		
-			(assign, ":quest_object_center", reg56),	
-			(assign, ":quest_target_center", reg57),	
-			(assign, ":quest_importance", reg58),	
-			(assign, ":quest_xp_reward", reg59),					
-			(assign, ":quest_gold_reward", reg60),					
-			(assign, ":quest_rank_reward", reg61),						
-			(assign, ":quest_expiration_days", reg62),					
-			(assign, ":quest_dont_give_again_period", reg63),
+				(assign, ":quest_target_party_template", reg55),		
+				(assign, ":quest_object_center", reg56),	
+				(assign, ":quest_target_center", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
 
-			(assign, ":result", ":quest_no"),					
-
+				(assign, ":result", ":quest_no"),					
+			(try_end),
 		(else_try),
 			
 			##Kham - Hunt Down refugees
 			(eq, cheat_switch, 1),
 			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
+			(eq, "$tld_war_began", 1),
 			(eq, ":quest_no", "qst_blank_quest_02"),
-			(call_script, "script_cf_init_quest_hunt_refugees"),
+			(try_begin),
+				(neg|check_quest_active,"qst_blank_quest_02"),
+				(call_script, "script_cf_init_quest_hunt_refugees"),
 
-			(assign, ":quest_target_party_template", reg55),		
-			(assign, ":quest_object_center", reg56),	
-			(assign, ":quest_target_center", reg57),	
-			(assign, ":quest_importance", reg58),	
-			(assign, ":quest_xp_reward", reg59),					
-			(assign, ":quest_gold_reward", reg60),					
-			(assign, ":quest_rank_reward", reg61),						
-			(assign, ":quest_expiration_days", reg62),					
-			(assign, ":quest_dont_give_again_period", reg63),
+				(assign, ":quest_target_party_template", reg55),		
+				(assign, ":quest_object_center", reg56),	
+				(assign, ":quest_target_center", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
 
-			(assign, ":result", ":quest_no"),	
-
+				(assign, ":result", ":quest_no"),	
+			(try_end),
 		(else_try),
 		
 		  ##Kham: Defend village
@@ -6134,7 +6140,7 @@ scripts = [
             (this_or_next|neq, ":giver_faction_no", "fac_woodelf"), #Woodelves don't help villagers
             (neq, ":giver_faction_no", "fac_lorien"), #No villages near Lorien
             (ge, "$g_talk_troop_faction_relation", 2),
-            (is_between, ":player_level", 3,13),
+            (is_between, ":player_level", 3,16),
             (gt, ":giver_center_no", 0),#Skip if lord is outside the center
             (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
@@ -6162,7 +6168,7 @@ scripts = [
           	(neg|check_quest_active,"qst_raid_village"),
 	        (neg|faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
 	        (ge, "$g_talk_troop_faction_relation", 2),
-	        (is_between, ":player_level", 3,13),
+	        (is_between, ":player_level", 3,16),
 	        (gt, ":giver_center_no", 0),#Skip if lord is outside the center
 	        (assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
  	    ##Kham - lets force the faction
@@ -6262,8 +6268,9 @@ scripts = [
           (try_begin),
           	#(eq, 1, cheat_switch), ## Cheat Switch on for testing purposes
           	(neg|check_quest_active,"qst_destroy_scout_camp"),
+          	(eq, "$tld_war_began", 1),
 	        (ge, "$g_talk_troop_faction_relation", 1),
-	        (is_between, ":player_level", 11,23),
+	        (is_between, ":player_level", 11,26),
 	        #(faction_get_slot, ":faction_side", ":giver_faction_no", slot_faction_side),
 	        #(call_script, "script_force_faction_center_by_region", ":giver_party_no", ":faction_side"),
 	        (call_script,"script_cf_get_random_enemy_center_in_theater",":giver_party_no"), # Gets a enemy center in the current theater
@@ -6351,6 +6358,7 @@ scripts = [
           #Kolba: Lost spears - given by Brand
           (eq, ":quest_no", "qst_find_lost_spears"),
 		  (try_begin),
+		  	(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
  			(eq, cheat_switch, 1), #CC: Enabled only with cheat switch, for now
 			(eq, ":giver_troop", "trp_dale_lord"),  # only brand gives this quest
 			(ge, ":player_level", 4),
@@ -22820,7 +22828,7 @@ command_cursor_scripts = [
 		(this_or_next|neq, "$g_talk_troop_faction", "fac_lorien"), #Elves don't care about the refugees
 		(			  neq, "$g_talk_troop_faction", "fac_woodelf"), #Elves don't care about the refugees
 		(store_character_level, ":player_level", "trp_player"),
-		(is_between, ":player_level", 8, 16),
+		(is_between, ":player_level", 8, 21),
 		(assign, ":giver_center_no", -1),
 		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
 		(try_begin),
@@ -22928,14 +22936,18 @@ command_cursor_scripts = [
       (store_random_in_range, ":raider_radius", 1, 4),
       (set_spawn_radius, ":raider_radius"),
 
+      (store_character_level, ":level", "trp_player"),
+
       #Raider Party 1
       (spawn_around_party, ":quest_target_center", ":raiders"),
       (assign, "$qst_raider_party_1", reg0),
       (party_add_template, "$qst_raider_party_1", ":raiders"),
       (party_add_template, "$qst_raider_party_1", ":raiders"),
       (try_begin),
-      	(this_or_next|eq, ":theater", theater_SE),
-      	(			  eq, ":theater", theater_SW),
+      	(is_between, ":level", 12,17),
+      	(party_add_template, "$qst_raider_party_1", ":raiders"),
+      (else_try),
+      	(ge, ":level", 17),
       	(party_add_template, "$qst_raider_party_1", ":raiders"),
       	(party_add_template, "$qst_raider_party_1", ":raiders"),
       (try_end),
@@ -22951,8 +22963,10 @@ command_cursor_scripts = [
       (party_add_template, "$qst_raider_party_2", ":raiders"),
       (party_add_template, "$qst_raider_party_2", ":raiders"),
       (try_begin),
-      	(this_or_next|eq, ":theater", theater_SE),
-      	(			  eq, ":theater", theater_SW),
+      	(is_between, ":level", 12,17),
+      	(party_add_template, "$qst_raider_party_2", ":raiders"),
+      (else_try),
+      	(ge, ":level", 17),
       	(party_add_template, "$qst_raider_party_2", ":raiders"),
       	(party_add_template, "$qst_raider_party_2", ":raiders"),
       (try_end),
@@ -22968,8 +22982,10 @@ command_cursor_scripts = [
       (party_add_template, "$qst_raider_party_3", ":raiders"),
       (party_add_template, "$qst_raider_party_3", ":raiders"),
       (try_begin),
-      	(this_or_next|eq, ":theater", theater_SE),
-      	(			  eq, ":theater", theater_SW),
+      	(is_between, ":level", 12,17),
+      	(party_add_template, "$qst_raider_party_3", ":raiders"),
+      (else_try),
+      	(ge, ":level", 17),
       	(party_add_template, "$qst_raider_party_3", ":raiders"),
       	(party_add_template, "$qst_raider_party_3", ":raiders"),
       (try_end),
@@ -22991,7 +23007,7 @@ command_cursor_scripts = [
 		(neq, ":side", faction_side_good),
 		(ge, "$g_talk_troop_faction_relation", 0),
 		(store_character_level, ":player_level", "trp_player"),
-		(is_between, ":player_level", 8, 16),
+		(is_between, ":player_level", 8, 21),
 		(assign, ":giver_center_no", -1),
 		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
 		(try_begin),
@@ -23016,6 +23032,7 @@ command_cursor_scripts = [
 			(assign, ":cur_target_center", "p_town_woodsmen_village"),
 		(try_end),
 		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
+		#(display_log_message, "@DEBUG: Distance {reg0}", color_bad_news),
 		(le, reg0, 20), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
 
@@ -23040,6 +23057,10 @@ command_cursor_scripts = [
       (assign, "$qst_refugee_party_1_escaped", 0),
       (assign, "$qst_refugee_party_2_escaped", 0),
       (assign, "$qst_refugee_party_3_escaped", 0),
+      (assign, "$qst_refugee_party_1_killed", 0),
+      (assign, "$qst_refugee_party_2_killed", 0),
+      (assign, "$qst_refugee_party_3_killed", 0),
+      (assign, "$qst_reinforcement_party", -1),
 
       (call_script, "script_find_theater", "p_main_party"),
       (assign, ":theater", reg0),
@@ -23074,7 +23095,11 @@ command_cursor_scripts = [
       (party_add_template, "$qst_refugee_party_1", ":guards"),
       (party_add_template, "$qst_refugee_party_1", ":guards"),
       (try_begin),
-      	(ge, ":level", 12),
+      	(is_between, ":level", 12,17),
+      	(party_add_template, "$qst_refugee_party_1", ":guards"),
+      (else_try),
+      	(ge, ":level", 17),
+      	(party_add_template, "$qst_refugee_party_1", ":guards"),
       	(party_add_template, "$qst_refugee_party_1", ":guards"),
       (try_end),
       (party_set_ai_behavior,"$qst_refugee_party_1",ai_bhvr_travel_to_party),
@@ -23086,7 +23111,11 @@ command_cursor_scripts = [
       (party_add_template, "$qst_refugee_party_2", ":guards"),
       (party_add_template, "$qst_refugee_party_2", ":guards"),
       (try_begin),
-      	(ge, ":level", 12),
+      	(is_between, ":level", 12,17),
+      	(party_add_template, "$qst_refugee_party_2", ":guards"),
+      (else_try),
+      	(ge, ":level", 17),
+      	(party_add_template, "$qst_refugee_party_2", ":guards"),
       	(party_add_template, "$qst_refugee_party_2", ":guards"),
       (try_end),
       (party_set_ai_behavior,"$qst_refugee_party_2",ai_bhvr_travel_to_party),
@@ -23098,7 +23127,11 @@ command_cursor_scripts = [
       (party_add_template, "$qst_refugee_party_3", ":guards"),
       (party_add_template, "$qst_refugee_party_3", ":guards"),
       (try_begin),
-      	(ge, ":level", 12),
+      	(is_between, ":level", 12,17),
+      	(party_add_template, "$qst_refugee_party_3", ":guards"),
+      (else_try),
+      	(ge, ":level", 17),
+      	(party_add_template, "$qst_refugee_party_3", ":guards"),
       	(party_add_template, "$qst_refugee_party_3", ":guards"),
       (try_end),
       (party_set_ai_behavior,"$qst_refugee_party_3",ai_bhvr_travel_to_party),

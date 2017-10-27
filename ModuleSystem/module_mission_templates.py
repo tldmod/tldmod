@@ -5393,7 +5393,9 @@ tld_remove_riderless_animals,
       ],[
       (add_reinforcements_to_entry,3,10),]),
   
-  (5, 0, ti_once, [
+  ] + (is_a_wb_mt==1 and [
+
+    (5, 0, ti_once, [
       (store_mission_timer_a, ":mission_time_a"),
       (store_random_in_range, ":ran_time", 45, 90),
       (ge, ":mission_time_a", ":ran_time"), #Random time between 45 - 90 secs
@@ -5408,58 +5410,78 @@ tld_remove_riderless_animals,
 
       (store_random_in_range, ":random", 0, 100),
 
+      (store_character_level, ":player_level", "trp_player"),
+
       (try_begin),
-        (lt, ":random", 10), #10% Chance it is a troll!
+        
+        (assign, ":troll_chance", 10),
+        (try_begin),
+          (gt, ":player_level", 13),
+          (assign, ":troll_chance",15),
+        (try_end),
+
+        (le, ":random", ":troll_chance"), #10-15% Chance it is a troll!
         (assign, ":interloper", 2), #Interloper 2 = Trolls
         (assign, ":interloper_1", "trp_troll_of_moria"),
         (assign, ":interloper_2", "trp_troll_of_moria"),
+      
       (else_try),
-        (is_between, ":random", 10, 36), #25% Chance it is an interloper from another Evil Faction
-        (assign, ":interloper", 1), #Interloper 1 = Evil Faction
+
+        (assign, ":troop_chance", 45),
         (try_begin),
-          (eq, ":theater", theater_SE),
-          (assign, ":interloper_1", "trp_warg_rider_of_gorgoroth"),
-          (assign, ":interloper_2", "trp_orc_tracker_of_mordor"),
-          (str_store_faction_name, s31, "fac_mordor"),
-        (else_try),
-          (eq, ":theater", theater_SW),
-          (assign, ":interloper_1", "trp_warg_rider_of_isengard"),
-          (assign, ":interloper_2", "trp_large_uruk_hai_tracker"),
-          (str_store_faction_name, s31, "fac_isengard"),
-        (else_try),
-          (eq, ":theater", theater_C),
-          (assign, ":interloper_1", "trp_warg_rider_gundabad"),
-          (assign, ":interloper_2", "trp_keen_eyed_goblin_archer_gundabad"),
-          (str_store_faction_name, s31, "fac_gundabad"),
-        (else_try),
-          (assign, ":interloper_1", "trp_rhun_veteran_swift_horseman"),
-          (assign, ":interloper_2", "trp_rhun_veteran_horse_archer"),
-          (str_store_faction_name, s31, "fac_rhun"),
+          (gt, ":player_level", 13),
+          (assign, ":troop_chance",50),
         (try_end),
-      (else_try),
-        (is_between, ":random", 36, 61), #25% Chance it is good reinforcements
-        (assign, ":interloper", 3), #Interloper 3 = Good Faction
+
+        (le, ":random", ":troop_chance"), #30-35% Chance 
         (try_begin),
-          (eq, ":theater", theater_SE),
-          (assign, ":interloper_1", "trp_squire_of_gondor"),
-          (assign, ":interloper_2", "trp_gondor_swordsmen"),
-          (str_store_faction_name, s31, "fac_gondor"),
+          (store_random_in_range, ":ran_2", 0,100),
+          (le, ":ran_2", 50),
+          (assign, ":interloper", 1), #Interloper 1 = Evil Faction
+          (try_begin),
+            (eq, ":theater", theater_SE),
+            (assign, ":interloper_1", "trp_warg_rider_of_gorgoroth"),
+            (assign, ":interloper_2", "trp_orc_tracker_of_mordor"),
+            (str_store_faction_name, s31, "fac_mordor"),
+          (else_try),
+            (eq, ":theater", theater_SW),
+            (assign, ":interloper_1", "trp_warg_rider_of_isengard"),
+            (assign, ":interloper_2", "trp_large_uruk_hai_tracker"),
+            (str_store_faction_name, s31, "fac_isengard"),
+          (else_try),
+            (eq, ":theater", theater_C),
+            (assign, ":interloper_1", "trp_warg_rider_gundabad"),
+            (assign, ":interloper_2", "trp_keen_eyed_goblin_archer_gundabad"),
+            (str_store_faction_name, s31, "fac_gundabad"),
+          (else_try),
+            (assign, ":interloper_1", "trp_rhun_veteran_swift_horseman"),
+            (assign, ":interloper_2", "trp_rhun_veteran_horse_archer"),
+            (str_store_faction_name, s31, "fac_rhun"),
+          (try_end),
         (else_try),
-          (eq, ":theater", theater_SW),
-          (assign, ":interloper_1", "trp_veteran_skirmisher_of_rohan"),
-          (assign, ":interloper_2", "trp_squire_of_rohan"),
-          (str_store_faction_name, s31, "fac_rohan"),
-        (else_try),
-          (eq, ":theater", theater_C),
-          (assign, ":interloper_1", "trp_woodmen_skilled_forester"),
-          (assign, ":interloper_2", "trp_woodmen_scout"),
-          (str_store_faction_name, s31, "fac_beorn"),
-        (else_try),
-          (assign, ":interloper_1", "trp_laketown_scout"),
-          (assign, ":interloper_2", "trp_dale_pikeman"),
-          (str_store_faction_name, s31, "fac_dale"),
+          (assign, ":interloper", 3), #Interloper 3 = Good Faction
+          (try_begin),
+            (eq, ":theater", theater_SE),
+            (assign, ":interloper_1", "trp_squire_of_gondor"),
+            (assign, ":interloper_2", "trp_gondor_swordsmen"),
+            (str_store_faction_name, s31, "fac_gondor"),
+          (else_try),
+            (eq, ":theater", theater_SW),
+            (assign, ":interloper_1", "trp_veteran_skirmisher_of_rohan"),
+            (assign, ":interloper_2", "trp_squire_of_rohan"),
+            (str_store_faction_name, s31, "fac_rohan"),
+          (else_try),
+            (eq, ":theater", theater_C),
+            (assign, ":interloper_1", "trp_woodmen_skilled_forester"),
+            (assign, ":interloper_2", "trp_woodmen_scout"),
+            (str_store_faction_name, s31, "fac_beorn"),
+          (else_try),
+            (assign, ":interloper_1", "trp_laketown_scout"),
+            (assign, ":interloper_2", "trp_dale_pikeman"),
+            (str_store_faction_name, s31, "fac_dale"),
+          (try_end),
         (try_end),
-      (try_end), #40% chance for tribal orcs 
+      (try_end), #50% chance for tribal orcs 
 
       (try_begin),
         (eq, ":interloper", 0),
@@ -5477,7 +5499,7 @@ tld_remove_riderless_animals,
         (call_script, "script_troop_talk_presentation", ":interloper_1", 7, 0),
       (else_try),
         (eq, ":interloper", 2),
-        (assign, ":range_end", 3),
+        (assign, ":range_end", 2),
         (assign, ":team", 4),
         (display_message, "@Trolls appeared!"),
         (str_store_string, s30, "@Gaaaar!!"),
@@ -5485,7 +5507,7 @@ tld_remove_riderless_animals,
       (else_try),
         (eq, ":interloper", 3),
         (assign, ":range_end", 20),
-        (assign, ":team", 1),
+        (assign, ":team", 0),
         (display_message, "@{s31} scouts have appeared to aid the refugees!"),
         (str_store_string, s30, "@Hurry, men! Help the refugees! Kill all the scum and do not let them escape!"),
         (call_script, "script_troop_talk_presentation", ":interloper_1", 7, 0),
@@ -5505,7 +5527,13 @@ tld_remove_riderless_animals,
         (agent_set_team, reg0, ":team"),
       (try_end),
 
+      (set_show_messages, 0),
+      (team_give_order, ":team", grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+
 ]),
+
+] or []) + [
 
   #AI Triggers
   (0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[

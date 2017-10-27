@@ -4228,6 +4228,7 @@ game_menus = [
 			(eq, "$new_encounter", 1),
 			(this_or_next|eq, "$g_encountered_party_template", "pt_wild_troll"),
 			(this_or_next|eq, "$g_encountered_party_template", "pt_raging_trolls"),
+			(this_or_next|eq, "$g_encountered_party_template", "pt_refugees"),
 			(eq, "$encountered_party_hostile", 1),
 			(neg|encountered_party_is_attacker),
             (str_store_string, s2,"@You are attacking a group of {s1}."),
@@ -4338,7 +4339,8 @@ game_menus = [
 		  (this_or_next|eq, 		"$g_encountered_party_template", "pt_ring_hunters"),
 		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_1"),
 		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_2"),
-		  ( 			eq,			"$g_encountered_party", "$qst_raider_party_3"),
+		  (this_or_next|eq,			"$g_encountered_party", "$qst_raider_party_3"),
+		  (				eq,			"$g_encountered_party", "$qst_reinforcement_party"),
 ##           (neg|troop_is_wounded, "trp_player"), #a test: what happes if I let player partecipate? #Kham - let's have the player participate
 ##          (store_troop_health,reg(5)),
 ##          (ge,reg(5),5),
