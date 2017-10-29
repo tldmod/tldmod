@@ -3065,6 +3065,15 @@ game_menus = [
 	"^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur","none",[],
     [
     ("enable_kham_cheat",[],"Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@Kham Cheat Mode ON!")]),
+    ("remove_garrison",[],"Remove A Center of Your Faction's Garrison", [
+    	(assign, ":end", 100),
+    	(try_for_range, ":unused", 0, ":end"),
+    		(store_random_in_range, ":target", centers_begin, centers_end),
+    		(store_faction_of_party, ":fac", ":target"),
+    		(eq, ":fac", "$players_kingdom"),
+    		(assign, ":end", 0),
+    	(try_end),
+    	(party_clear, ":target"), (call_script, "script_cf_reinforce_party", ":target"), (str_store_party_name, s7, ":target"), (display_message, "@{s7} Garrison Removed!")]),
     ("kham_gondor_ai_test",[(str_clear, s7),(try_begin),(neq, "$gondor_ai_testing", 1),(str_store_string, s7, "@OFF"),
 								(else_try),(str_store_string, s7, "@ON"),(try_end),
         ],"Gondor AI Test Tweaks:  {s7}",[
@@ -3757,6 +3766,7 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
+	("cheat_reinforce_center",[],"Reinforce Center",[(assign,"$cheat_imposed_quest","qst_blank_quest_16")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("cheat_attack_refugees",[],"Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
 	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),

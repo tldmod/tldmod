@@ -1,4 +1,4 @@
-1452
+1459
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -845,6 +845,7 @@ qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
 qstr_Kham_Cheat_Mode_ON! Kham_Cheat_Mode_ON!
+qstr_{s7}_Garrison_Remove {s7}_Garrison_Removed!
 qstr_OFF OFF
 qstr_ON ON
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
@@ -1173,6 +1174,7 @@ qstr_^{s22}_is_grateful_t ^{s22}_is_grateful_to_you,_{s23},_{s29}^
 qstr_{s31}{reg28?Those:Th {s31}{reg28?Those:That}_brave_{reg28?soldiers:soldier}_will_surely_help_us_defend_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_{s31}{reg28?Those:Tha {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_hold_{s21}.{s32}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_{s4}_^Oh_and_take_ba {s4}_^Oh,_and_take_back_those_of_your_soldiers,_that_are_not_our_kin.
+qstr_You_have_reinforced_ You_have_reinforced_{s8}_with_{reg55}_troops.
 qstr_I_don_t_need_them_an I_don't_need_them_anyway,_so_save_it.
 qstr_It_is_my_duty_to_pro It_is_my_duty_to_protect_our_people.
 qstr_It_is_my_duty_to_prot It_is_my_duty_to_protect_our_allies.
@@ -1405,14 +1407,19 @@ qstr_Good_moves_but_you_m Good_moves,_but_you_may_still_need_some_work_to_do.
 qstr_More_than_half_of_th More_than_half_of_the_opponents,_not_bad.
 qstr_You_ll_need_to_try_h You'll_need_to_try_harder_than_that.
 qstr_Well..._better_here_ Well..._better_here_than_in_combat,_eh?
+qstr_Excellent_{playernam Excellent,_{playername}!_I_heard_that_you_gave_them_more_than_what_I_requested._That_is_great_work.^^_Here,_take_this_as_an_extra_reward_for_exceeding_our_expectations._^^_We_need_to_win_this_war_as_soon_as_possible.
+qstr_Excellent_{playername Excellent,_{playername}._That_will_surely_help_them_out._We_need_to_win_this_war_as_soon_as_possible.
+qstr_Reinforcing_{s1}_has Reinforcing_{s1}_has_strengthen_{s2}._({s2}_has_gained_{reg50}_faction_strength).
 qstr_town town
 qstr_village village
 qstr_The_{s9}_of_{s13}_ha The_{s9}_of_{s13}_has_asked_you_to_deal_with_tribal_orcs_in_the_surrounding_countryside.
 qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_{s10}_in_{s4}_in_{reg6}_days.
+qstr_The_{s9}_of_{s4}_ask The_{s9}_of_{s4}_asked_you_to_reinforce_{s3}_with_at_least_{reg5}_troops_within_{reg6}_days._Speak_to_{s3}'s_barracks_master._The_quality_of_the_troop_you_provide_does_not_matter.
+qstr_You_have_reinforced_{ You_have_reinforced_{s3}_with_0_troops.
 qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_food_in_{reg6}_days.
 qstr_The_{s9}_of_{s3}_aske The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_{reg0}_days.
 qstr_Escort_the_supply_tr Escort_the_supply_train_to_{s8}.
-qstr_The_{s9}_of_{s4}_ask The_{s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_goblins_in_the_vicinity_of_the_town.
+qstr_The_{s9}_of_{s4}_aske The_{s9}_of_{s4}_asked_you_to_hunt_down_the_troublesome_goblins_in_the_vicinity_of_the_town.
 qstr_The_{s9}_of_{s14}_ha The_{s9}_of_{s14}_has_asked_you_to_deal_with_a_group_of_goblins_making_trouble_in_{s14}._They_only_come_out_at_night,_and_only_attack_lone_people_on_the_streets.
 qstr_refugees refugees
 qstr_slaves slaves

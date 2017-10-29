@@ -1730,9 +1730,13 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone,"player_hire_troop_reunite_1", [(gt, reg46, 0),(eq, reg28, reg0)], # player gave nonfittings only (party size unchanged)
 "We don't have use for those troops here...^Take them back.", "player_hire_troop_nextcycle", []],
 
+##Kham - Reinforce Center Quest Troop Count HERE
 [anyone,"player_hire_troop_reunite_1", 	
-	 [  (gt, reg28, reg0),# player gave fittings too (party size decreased)
-		(val_sub, reg28, reg0),(val_sub, reg28, 1), #calculate how many troops given (minus 1)
+	 [
+    (gt, reg28, reg0),# player gave fittings too (party size decreased)
+		(val_sub, reg28, reg0),
+    (assign, ":troops_given", reg28), #Kham - For Reinforce Quest
+    (val_sub, reg28, 1), #calculate how many troops given (minus 1)
 		(call_script, "script_get_party_disband_cost", "p_main_party", 1),
         (val_sub, "$initial_party_value", reg0), #calculate how much monetary value given
 		(try_begin),(eq, reg26, 1),(str_store_string, s31, "@Thank you, commander.^"),(str_clear, s32), #player is in own faction
@@ -1748,7 +1752,41 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 		(try_begin), # if nonfittings were given
           (gt, reg46, 0),
           (str_store_string, s4, "@{s4} ^Oh, and take back those of your soldiers, that are not our kin."),
-        (try_end)],
+        (try_end),
+
+    #Kham - Reinforce Center Troop Count    
+    (try_begin),
+      (check_quest_active, "qst_blank_quest_16"),
+      (quest_get_slot, ":target_center", "qst_blank_quest_16", slot_quest_target_center),
+      (eq, "$g_encountered_party", ":target_center"),
+      (str_store_party_name, s8, ":target_center"),
+      (quest_get_slot, ":amount", "qst_blank_quest_16", slot_quest_target_amount),
+      (quest_get_slot, ":current", "qst_blank_quest_16", slot_quest_current_state),
+      (try_begin),
+        (lt, ":current", ":amount"), #This means that the player has given some troops already.
+        (assign, ":amount", ":current"),
+      (try_end),
+      (try_begin),
+        (eq, ":troops_given", ":amount"),
+        (call_script, "script_succeed_quest", "qst_blank_quest_16"),
+        (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, 0),
+      (else_try),
+        (lt, ":troops_given", ":amount"),
+        (val_sub, ":amount", ":troops_given"),
+        (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, ":amount"),
+      (else_try),
+        (gt, ":troops_given", ":amount"),
+        (val_sub, ":amount", ":troops_given"),
+        (call_script, "script_succeed_quest", "qst_blank_quest_16"),
+        (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, ":amount"),
+      (try_end),
+      
+      (quest_get_slot, ":donated", "qst_blank_quest_16", slot_quest_current_state),
+      (quest_get_slot, ":orig_amount", "qst_blank_quest_16", slot_quest_target_amount),
+      (store_sub, reg55, ":orig_amount", ":donated"),
+      (str_store_string, s5, "@You have reinforced {s8} with {reg55} troops."),
+      (add_quest_note_from_sreg, "qst_blank_quest_16", 3, s5, 0),
+    (try_end),],
 "{s4}", "player_hire_troop_reunite_2", [(troop_add_gold, "$g_player_troop", "$initial_party_value"),]],
 
 [anyone|plyr,"player_hire_troop_reunite_2", 
@@ -10034,7 +10072,51 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (call_script, "script_finish_quest", "qst_deliver_iron", 100)]],
 
 [anyone|plyr,"mayor_deliver_iron_completed", [], "I do what I can.", "close_window",[(call_script,"script_stand_back"),]],
-   
+
+#Kham - Reinforce Center Completion
+
+[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_blank_quest_16"),
+                            (quest_slot_eq, "qst_blank_quest_16", slot_quest_object_center, "$g_encountered_party"),
+                            (quest_get_slot, ":to_reinforce", "qst_blank_quest_16", slot_quest_target_center),
+                            (str_store_party_name, s3, ":to_reinforce"),
+                            (check_quest_succeeded, "qst_blank_quest_16")],
+"I have reinforced {s3} as you have asked me to.", "mayor_reinforced_center_finished",[]],
+
+[anyone,"mayor_reinforced_center_finished", [
+  (quest_get_slot, ":troops_given", "qst_blank_quest_16", slot_quest_current_state),
+  (val_mul, ":troops_given", -1),
+  (try_begin),
+    (gt, ":troops_given", 0),
+    (assign, reg10, ":troops_given"),
+    (str_store_string, s4, "@Excellent, {playername}! I heard that you gave them more than what I requested. That is great work.^^ Here, take this as an extra reward for exceeding our expectations. ^^ We need to win this war as soon as possible."),
+  (else_try),
+    (assign, reg10, 0),
+    (str_store_string, s4, "@Excellent, {playername}. That will surely help them out. We need to win this war as soon as possible."),
+  (try_end)],
+"{s4}", "close_window", [
+  (call_script, "script_finish_quest", "qst_blank_quest_16", 100),
+  (quest_get_slot, ":to_reinforce", "qst_blank_quest_16", slot_quest_target_center),
+  (str_store_party_name, s1, ":to_reinforce"),
+  (store_faction_of_party, ":fac", ":to_reinforce"),
+  (str_store_faction_name, s2, ":fac"),
+  (faction_get_slot,":strength",":fac",slot_faction_strength_tmp),
+  (val_add, ":strength", 80), #50 Str Points increase for completing the quest
+  (assign, reg50, 80),
+  (display_message, "@Reinforcing {s1} has strengthen {s2}. ({s2} has gained {reg50} faction strength).", color_good_news),
+  (faction_set_slot,":fac",slot_faction_strength_tmp,":strength"),
+  (try_begin),
+    (gt, reg10, 0),
+    (is_between, reg10, 1, 16),
+    (troop_add_items, "trp_player", "itm_metal_scraps_good", 2),
+  (else_try),
+    (gt, reg10, 0),
+    (gt, reg10, 16),
+    (troop_add_items, "trp_player", "itm_metal_scraps_good",4),
+  (try_end),]],
+
+#Kham - Reinforce Center Completion END
+
+
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_food"),
                             (quest_slot_eq, "qst_deliver_food", slot_quest_target_center, "$g_encountered_party"),
                             #(quest_get_slot, ":quest_target_item", "qst_deliver_food", slot_quest_target_item),
@@ -10420,7 +10502,47 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (call_script, "script_start_quest", "qst_deliver_wine", "$g_talk_troop")]],
 
 [anyone|plyr,"merchant_quest_brief_deliver_wine", [], "I am afraid I can't carry all that cargo now.", "merchant_quest_stall",[]],
-  
+
+#Kham - Reinforce Center INIT
+
+[anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_blank_quest_16"),], 
+"Thanks for offering to help.^^\
+This war has waged for so long that some of our centers are no longer looking good.^^\
+Perhaps you can go and reinforce a center in need...", "merchant_quest_brief",[]],
+
+[anyone,"merchant_quest_brief", [
+  (eq,"$random_merchant_quest_no","qst_blank_quest_16"),
+  (quest_get_slot, ":target_center", "qst_blank_quest_16", slot_quest_target_center),
+  (str_store_party_name, s5, ":target_center"),
+  (quest_get_slot, ":amount", "qst_blank_quest_16", slot_quest_target_amount),
+  (assign, reg5, ":amount"),],
+"{s5} has been battered by the enemy. We will need to send help. ^^\
+I need someone to reinforce {s5} by at least {reg5} soldiers.^^ \
+It does not matter if they are experienced or not. They just need whatever you can provide.^^ \
+If you are able to do this, they can withstand more attacks.^^ What do you say?", "merchant_quest_brief_reinforce_center",[]], 
+
+[anyone|plyr,"merchant_quest_brief_reinforce_center", [],
+"Alright. I will do what I can.", "merchant_quest_taken",[
+    (quest_get_slot, reg5, "qst_blank_quest_16", slot_quest_target_amount),
+    (quest_get_slot, reg6, "qst_blank_quest_16", slot_quest_expiration_days),
+    (quest_get_slot, ":object_center", "qst_blank_quest_16", slot_quest_object_center),
+    (quest_get_slot, ":target_center", "qst_blank_quest_16", slot_quest_target_center),
+    (quest_set_slot, "qst_blank_quest_16", slot_quest_current_state, reg5),
+    (str_store_troop_name, s9, "$g_talk_troop"),
+    (str_store_party_name_link, s3, ":target_center"),
+    (str_store_party_name_link, s4, ":object_center"),
+    (str_clear, s6), 
+    (setup_quest_text,"qst_blank_quest_16"),
+    (str_store_string, s2, "@The {s9} of {s4} asked you to reinforce {s3} with at least {reg5} troops within {reg6} days. Speak to {s3}'s barracks master. The quality of the troop you provide does not matter."),
+    (call_script, "script_start_quest", "qst_blank_quest_16", "$g_talk_troop"),
+    (str_store_string, s5, "@You have reinforced {s3} with 0 troops."),
+    (add_quest_note_from_sreg, "qst_blank_quest_16", 3, s5, 0),
+ ]],
+
+[anyone|plyr,"merchant_quest_brief_reinforce_center", [], "I am sorry, you'll need to find someone else for that.", "merchant_quest_stall",[]],
+
+#Kham - Reinforce Center INIT END
+
 # deliver_food:
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], 
 "Thanks for offering to help.\

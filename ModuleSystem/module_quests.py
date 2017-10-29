@@ -331,7 +331,7 @@ quests = [
 # Lets put mayor quests here
 
 
-("blank_quest_16", "Placeholder", 0,
+("blank_quest_16", "Reinforce Center", 0,
   "{!}Placeholder"
 ),
 

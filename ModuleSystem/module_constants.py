@@ -1093,8 +1093,8 @@ enemy_lord_quests_end   = lord_quests_end
 mayor_quests_begin  = "qst_move_cattle_herd"
 mayor_quests_end    = "qst_tld_introduction"
 
-#mayor_quests_begin_2 = "qst_blank_quest_16" #Commented out for now - Kham
-#mayor_quests_end_2 = "qst_blank_quest_21"
+mayor_quests_begin_2 = "qst_blank_quest_16" 
+mayor_quests_end_2 = "qst_blank_quest_17"
 
 army_quests_begin = "qst_deliver_cattle_to_army"
 army_quests_end   = mayor_quests_begin

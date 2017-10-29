@@ -6015,8 +6015,8 @@ scripts = [
         (is_between, ":giver_troop", mayors_begin, mayors_end),
         (assign, ":quests_begin", mayor_quests_begin),
         (assign, ":quests_end", mayor_quests_end),
-        (assign, ":quests_begin_2", 0),
-        (assign, ":quests_end_2", 0),
+        (assign, ":quests_begin_2", mayor_quests_begin_2),
+        (assign, ":quests_end_2", mayor_quests_end_2),
       (else_try),
         (assign, ":quests_begin", mayor_quests_begin),
         (assign, ":quests_end", mayor_quests_end),
@@ -6554,7 +6554,7 @@ scripts = [
           (assign, ":result", ":quest_no"),
          (else_try),
            (eq, ":quest_no", "qst_deliver_food"),
-           (store_random_in_range, ":quest_target_amount", 3, 10),
+           (store_random_in_range, ":quest_target_amount", 3, 7),
            #(store_random_in_range, ":quest_target_item", normal_food_begin, food_end),
           ###empty merchant store of all food - done here and not in dialogs to prevent exploit
            (party_get_slot, ":center_merchant", ":giver_center_no", slot_town_merchant), #horse+goods guy
@@ -6573,6 +6573,31 @@ scripts = [
            (assign, ":quest_expiration_days", 10),
            (assign, ":quest_dont_give_again_period", 15),
            (assign, ":result", ":quest_no"),
+
+        (else_try),
+
+			##Kham - Reinforce Center
+			(eq, cheat_switch, 1),
+			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
+			(eq, ":quest_no", "qst_blank_quest_16"),
+			(try_begin),
+				(eq, "$tld_war_began", 1),
+				(neg|check_quest_active,"qst_blank_quest_16"),
+				(call_script, "script_cf_init_quest_reinforce_center"),
+				
+				(assign, ":quest_object_center", reg55),
+				(assign, ":quest_target_amount", reg56),	
+				(assign, ":quest_target_center", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
+
+				(assign, ":result", ":quest_no"),					
+			(try_end),
+
 		(else_try),
 			(eq, ":quest_no", "qst_lend_surgeon"),
 			(try_begin),
@@ -7164,7 +7189,7 @@ scripts = [
             (try_end),
             (assign, ":quest_target_troop", ":cur_target_troop"),
             (store_current_day, ":quest_target_amount"),
-            (val_add, ":quest_target_amount", 8),
+            (val_add, ":quest_target_amount", 5), #Kham - from 8 to 5.
 
             (assign, ":quest_importance", 1),
             (assign, ":quest_xp_reward", 200),
@@ -23137,6 +23162,83 @@ command_cursor_scripts = [
       (party_set_ai_behavior,"$qst_refugee_party_3",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_refugee_party_3",":quest_target_center"),
       (party_set_flags, "$qst_refugee_party_3", pf_default_behavior, 0),
+
+]),
+
+#script_cf_init_quest_reinforce_center
+#script_cf_init_quest_reinforce_center
+("cf_init_quest_reinforce_center",
+  [
+
+    (eq, "$g_talk_troop_faction", "$players_kingdom"),
+    (store_character_level, ":player_level", "trp_player"),
+    (ge, ":player_level", 12),
+    
+    (store_random_in_range, ":to_donate", 45, 76),
+    (assign, ":result", -1),
+    (assign, ":end", 100),
+
+    (try_for_range, ":unused", 0, ":end"),
+
+      (store_random_in_range, ":centers", centers_begin, centers_end),
+      (eq, ":result", -1),
+
+      (party_is_active, ":centers"),
+      (store_faction_of_party, ":fac", ":centers"),
+
+      (eq, ":fac", "$g_talk_troop_faction"),
+
+      (str_store_party_name, s10, ":centers"),
+      #(display_message, "@DEBUG: Center - {s10}", color_item_text_bonus),
+
+      (party_get_num_companions, ":garrison", ":centers"),
+
+      (try_begin),
+      #Orc Factions
+        (this_or_next|eq, ":fac", "fac_mordor"),
+        (this_or_next|eq, ":fac", "fac_isengard"),
+        (this_or_next|eq, ":fac", "fac_moria"),
+        (this_or_next|eq, ":fac", "fac_guldur"),
+        (       eq, ":fac", "fac_gundabad"),
+        (le, ":garrison", 300),
+        (store_random_in_range, ":to_donate", 85, 111),
+        (assign, ":result", ":centers"),
+        (assign, ":end", 0),
+        #(display_log_message, "@DEBUG: Orc Center Found"),
+      (else_try),
+      #Dwarves / Elves
+        (this_or_next|is_between, ":centers", "p_town_caras_galadhon", "p_town_woodsmen_village"),
+        (this_or_next|is_between, ":centers", "p_town_erebor", "p_advcamp_gondor"),
+        (eq, ":centers", "p_town_imladris_camp"),
+        (le, ":garrison", 120),
+        (store_random_in_range, ":to_donate", 40, 56),
+        (assign, ":result", ":centers"),
+        (assign, ":end", 0),
+        #(display_log_message, "@DEBUG: Elf Center Found"),
+      (else_try),
+        (le, ":garrison", 200),
+        (assign, ":result", ":centers"),
+        (assign, ":end", 0),
+        #(display_log_message, "@DEBUG: Other Center Found"),
+      (try_end),
+    (try_end),
+
+    (neq, ":result", -1),
+    (assign, ":quest_target_center", ":result"),
+
+    (assign, reg55, "$g_encountered_party"),#quest_object_center
+    (assign, reg56, ":to_donate"),      #quest_target_amount
+    (assign, reg57, ":quest_target_center"),#quest_target_center
+    (assign, reg58, 5),           #quest_importance
+    (assign, reg59, 200),         #quest_xp_reward
+    (assign, reg60, 300),         #quest_gold_reward
+    (assign, reg61, 12),           #quest_rank_reward
+    (assign, reg62, 30),          #quest_expiration_days
+    (assign, reg63, 8),          #quest_dont_give_again_period
+
+    #Debug
+    #(assign, reg2, ":garrison"),
+    #(display_log_message, "@Target: {reg57} -- Garrison: {reg2}", color_good_news),
 
 ]),
 
