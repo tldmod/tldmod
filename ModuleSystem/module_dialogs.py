@@ -2720,7 +2720,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
    "Forgive me, {s65}, I was unable to defend them.", "lord_defend_refugees_failed_1a", []],
 
 [anyone,"lord_defend_refugees_failed_1a", [],
-"It is the innocent that suffer the most in wars. There will be more of these types of events. {playername}. I hope you are more prepared next time.", "lord_pretalk",
+"It is the innocent that suffer the most in wars. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.", "lord_pretalk",
    [(call_script, "script_change_player_relation_with_troop","$g_talk_troop",-1),
     (call_script, "script_end_quest", "qst_blank_quest_01"),
     (assign, reg18, "$qst_raider_party_defeated"),
@@ -2741,7 +2741,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
                        (quest_get_slot, ":quest_giver", "qst_blank_quest_01", slot_quest_giver_troop),
                        (eq, ":quest_giver", "$g_talk_troop"),
                        (assign, reg17, "$qst_refugees_escaped")],
-"I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There will be more events such as these, {playername}. I hope you are more prepared next time.", "lord_defend_refugees_half_completed",
+"I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.", "lord_defend_refugees_half_completed",
    [(store_mul, ":completion", "$qst_refugees_escaped", 100),
     (val_div, ":completion", 3),
     (call_script, "script_finish_quest", "qst_blank_quest_01", ":completion"),
@@ -2761,7 +2761,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (display_message, "@You did, however, defeated {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
     (faction_set_slot, ":faction", slot_faction_strength_tmp, ":enemy_strength"), ]],
 
-[anyone|plyr,"lord_defend_refugees_half_completed", [], "I will be more prepared next time, {s65}. ", "lord_pretalk", []],
+[anyone|plyr,"lord_defend_refugees_half_completed", [], "I will be more prepared next time, my lord. ", "lord_pretalk", []],
 
 ## Defend Refugees Completion Dialogues END - Kham
 
@@ -2789,7 +2789,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 "{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?", "lord_hunt_refugees_failed", []],
 
 [anyone|plyr,"lord_hunt_refugees_failed", [(str_store_troop_name, s65, "$g_talk_troop")],
-   "They were slippery, {s65}. I was unable to track them down.", "lord_hunt_refugees_failed_1", []],
+   "They were slippery, master. I was unable to track them down.", "lord_hunt_refugees_failed_1", []],
 
 [anyone,"lord_hunt_refugees_failed_1", [],
 "Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.", "lord_pretalk",
@@ -2815,7 +2815,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (display_message, "@{reg20} refugee trains escaped and improved the enemy's morale ({s1} has gained {reg22} faction strength).", color_bad_news),
     (try_begin),
       (ge, "$qst_refugees_killed",1),
-      (display_message, "@You did, however, defeated {reg18} refugee trains, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
+      (display_message, "@You did, however, defeat {reg18} refugee trains, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
     (try_end),
     (faction_set_slot, ":faction", slot_faction_strength_tmp, ":enemy_strength"), ]],
 
