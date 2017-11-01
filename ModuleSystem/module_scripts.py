@@ -6087,8 +6087,8 @@ scripts = [
 		(else_try),
 
 			##Kham - Defend refugees
-			(eq, cheat_switch, 1),
-			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
+			#(eq, cheat_switch, 1),
+			#(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, ":quest_no", "qst_blank_quest_01"),
 			(try_begin),
 				(eq, "$tld_war_began", 1),
@@ -6110,8 +6110,8 @@ scripts = [
 		(else_try),
 			
 			##Kham - Hunt Down refugees
-			(eq, cheat_switch, 1),
-			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
+			#(eq, cheat_switch, 1),
+			#(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, "$tld_war_began", 1),
 			(eq, ":quest_no", "qst_blank_quest_02"),
 			(try_begin),
@@ -6577,8 +6577,8 @@ scripts = [
         (else_try),
 
 			##Kham - Reinforce Center
-			(eq, cheat_switch, 1),
-			(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
+			#(eq, cheat_switch, 1),
+			#(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
 			(eq, ":quest_no", "qst_blank_quest_16"),
 			(try_begin),
 				(eq, "$tld_war_began", 1),
