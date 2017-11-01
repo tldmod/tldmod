@@ -10108,10 +10108,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (gt, reg10, 0),
     (is_between, reg10, 1, 16),
     (troop_add_items, "trp_player", "itm_metal_scraps_good", 2),
+    (call_script, "script_increase_rank", "$g_talk_troop_faction", 12),
   (else_try),
     (gt, reg10, 0),
     (gt, reg10, 16),
     (troop_add_items, "trp_player", "itm_metal_scraps_good",4),
+    (call_script, "script_increase_rank", "$g_talk_troop_faction", 18),
   (try_end),]],
 
 #Kham - Reinforce Center Completion END
@@ -10365,7 +10367,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
      (assign, "$random_merchant_quest_no", reg0),
      (assign,"$merchant_offered_quest","$random_merchant_quest_no")]],
 
-[anyone|plyr,"mayor_talk", [(store_partner_quest, ":partner_quest"),
+[anyone|plyr,"mayor_talk", [
+                              (store_partner_quest, ":partner_quest"),
+                              (try_begin), #Reinforce Center Exception
+                                (check_quest_active, "qst_blank_quest_16"),
+                                (assign, ":partner_quest", 1),
+                              (try_end),
                               (lt, ":partner_quest", 0),
                               (eq,"$merchant_quest_last_offerer", "$g_talk_troop"),
                               (ge,"$merchant_offered_quest",0)],

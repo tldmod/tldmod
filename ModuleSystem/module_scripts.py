@@ -23186,7 +23186,12 @@ command_cursor_scripts = [
       (party_is_active, ":centers"),
       (store_faction_of_party, ":fac", ":centers"),
 
-      (eq, ":fac", "$g_talk_troop_faction"),
+      #(eq, ":fac", "$g_talk_troop_faction"), #Uncomment this if you want to limit to your own faction only.
+      
+      (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+      (assign, ":rank", reg0), #rank points to rank number 0-9
+      (lt, ":rank", 1), #Must be at least known to the faction
+
 
       (str_store_party_name, s10, ":centers"),
       #(display_message, "@DEBUG: Center - {s10}", color_item_text_bonus),
