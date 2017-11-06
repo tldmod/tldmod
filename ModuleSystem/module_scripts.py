@@ -6283,7 +6283,7 @@ scripts = [
 	            (assign, ":quest_gold_reward", 300),
 	            (assign, ":quest_rank_reward", 7),
             (else_try),
-            	(is_between,":player_level",17,23),  #levels 17-22
+            	(is_between,":player_level",17,26),  #levels 17-25
 	            (assign, ":quest_target_party_template", "pt_scout_camp_large"),
 	            (assign, ":quest_xp_reward", 450),
 	            (assign, ":quest_gold_reward", 700),
@@ -22273,6 +22273,8 @@ command_cursor_scripts = [
 	(store_script_param, ":template",         2),
 	(store_script_param, ":radius",           3),
 
+	(gt, ":template", 0), # Fail if party template is incorrect
+
     (party_get_position, pos1, ":generating_party",),
 
 	#(assign, ":terrain_check", 0), # Check if spawned party is not in weird terrain
@@ -22292,8 +22294,14 @@ command_cursor_scripts = [
 	(try_end),
 #	(eq,":terrain_check",1), # Fail here if couldn't find a valid place
 	(neq,":lower_bound",0), # Fail here if couldn't find a valid place
+
 	(spawn_around_party,":generating_party",":template"),
 	(party_set_position, reg0, pos2),
+
+	#Debug
+	#(str_store_party_name, s10, ":generating_party"),
+	#(str_store_party_name, s11, reg0),
+	#(display_log_message, "@Giver: {s10} --- Spawned: {s11}"),
 
 ]),
 
