@@ -1306,6 +1306,11 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [(eq,"$field_ai_horse_archer",1)],
             (agent_is_alive, ":agent_no"),
             (agent_is_human, ":agent_no"),
             (agent_is_non_player, ":agent_no"),
+            
+            (agent_get_troop_id, ":troop_id", ":agent_no"),
+            (store_skill_level, ":horse_archery_level", "skl_horse_archery", ":troop_id"),
+            (ge, ":horse_archery_level", 4),
+            
             (neg|agent_slot_eq, ":agent_no", 1003, 1),
             (agent_get_horse, ":horse_no", ":agent_no"),
             (assign, ":melee_weapon", -1),
