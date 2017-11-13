@@ -1,4 +1,4 @@
-1459
+1460
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -860,6 +860,7 @@ qstr_Native Native
 qstr_All_messages All_messages
 qstr_Player_damage_only Player_damage_only
 qstr_No_Messages No_Messages
+qstr_Fixed_Over_The_Shoul Fixed_Over-The-Shoulder_Camera
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)
 qstr_Normal Normal

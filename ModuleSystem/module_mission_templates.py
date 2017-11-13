@@ -84,7 +84,7 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
     (gt,                  "$cam_current_agent", -1)
   ],
   [
-    (assign, "$cam_mode",   0),
+    (assign, "$cam_mode",   "$pref_cam_mode"),
     (assign, "$shoot_mode", 0),
     (assign, "$cam_free",   0)
   ]),

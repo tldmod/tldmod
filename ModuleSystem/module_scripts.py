@@ -1892,12 +1892,6 @@ scripts = [
 	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - Player Damage Only by default
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
 	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
-	(assign, "$bright_nights",1), #Kham - Brighter Nights
-	(assign, "$field_ai_lord",1), #Kham - Battlefield Lord AI
-	(assign, "$field_ai_horse_archer",1), #Kham - Battlefield Horse Archer AI
-	(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
-	(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI - default is ON
-
 	
 
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
@@ -1914,6 +1908,16 @@ scripts = [
     (assign,"$savegame_version",3),
 
 	] + (is_a_wb_script==1 and [
+
+	#Init WB Only globals
+
+	(assign, "$bright_nights",1), #Kham - Brighter Nights
+	(assign, "$field_ai_lord",1), #Kham - Battlefield Lord AI
+	(assign, "$field_ai_horse_archer",1), #Kham - Battlefield Horse Archer AI
+	(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
+	(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI - default is ON
+	(assign, "$pref_cam_mode", 0), #Kham - Camera Preference - Default is Default
+
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
@@ -13522,6 +13526,7 @@ scripts = [
     (position_transform_position_to_local, pos3, pos2, pos1),
     (position_get_x, ":agent_x_pos", pos3),
     (position_get_y, ":agent_y_pos", pos3),
+    (val_max, "$g_battle_map_scale", 1), #MV defensive fix to avoid division by zero
     (val_div, ":agent_x_pos", "$g_battle_map_scale"),
     (val_div, ":agent_y_pos", "$g_battle_map_scale"),
     (set_fixed_point_multiplier, 1000),
