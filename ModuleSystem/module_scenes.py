@@ -107,7 +107,7 @@ scenes = [
   ("woodelf_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
   ("woodsmen_village_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
   ("moria_center"           ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],["player_chest"]),
-  ("troll_cave_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+  ("troll_cave_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001b00005000005a16c00006794000027d200006794",[],[],"outer_mountains2north"),#Kolba
 
   ] + (is_a_wb_scene==1 and [
   ("dale_center"            ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000330000500000d2348000006810000219700002120",[],[],"New_outer_terrain_tirith_1"),
@@ -435,7 +435,7 @@ scenes = [
 ("rivendell_camp_siege"  ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],["player_chest"],"outer_terrain_plain"),
 ("woodsmen_village2_siege"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
 ("beorning_village_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
-("troll_cave_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
+("troll_cave_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001b00005000005a16c00006794000027d200006794",[],[],"outer_mountains2north"),#Kolba
 ("dunland_camp_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],["player_chest"],"outer_terrain_rohan"),
 ("harad_camp_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072005591e00040506000059a100002cd500005052",[],["player_chest"],"outer_terrain_steppe"),
 ("khand_camp_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000020040de3000699aa00005234000048ba000004b5",[],["player_chest"],"outer_terrain_rohan"),

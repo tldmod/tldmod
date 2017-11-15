@@ -323,8 +323,8 @@ scene_props = [
 ("dungeon_room_a",0,"dungeon_room_a","bo_dungeon_room_a", []),
 ("dungeon_tower_stairs_a",0,"dungeon_tower_stairs_a","bo_dungeon_tower_stairs_a", []),
 ("dungeon_tower_cell_a",0,"dungeon_tower_cell_a","bo_dungeon_tower_cell_a", []),
-("tunnel_a",0,"tunnel_a","bo_tunnel_a", []),
-("tunnel_salt",0,"tunnel_salt","bo_tunnel_salt", []),
+("tunnel_a",0,"new_tunnel_a","bo_tunnel_a", []),
+("tunnel_salt",0,"new_tunnel_salt","bo_new_tunnel_salt", []),
 ("salt_a",0,"salt_a","bo_salt_a", []),
 
 #("tutorial_door_a",sokf_moveable,"tutorial_door_a","bo_tutorial_door_a", []),
