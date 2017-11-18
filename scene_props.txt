@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1589
+ 1590
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3054,8 +3054,8 @@ spr_umbar_smallboat 0 0 umbar_prop_smallboat 0 0
 spr_umbar_smallboatoar 0 0 umbar_prop_smallboatoar 0 0
 
 
-spr_moria 0 0 moria bo_moria 1
--40  1 1798 2 50 65793 
+spr_moria 0 0 moria_hall bo_moria_hall 1
+-40  1 1798 2 70 197635 
 
 
 spr_moria_dimrill_gate 0 0 dimrill_gate bo_dimrill_gate 0
@@ -4281,7 +4281,7 @@ spr_waterfall 0 0 waterfall bo_waterfall 0
 spr_tunnel_cave 0 0 tunnel_cave bo_tunnel_cave 0
 
 
-spr_moria_a 0 0 moria_a bo_moria_a 0
+spr_moria_a 0 0 moria_hall bo_moria_hall 0
 
 
 spr_moria_entry_a 0 0 moria_entry_a bo_moria_entry_a 0
@@ -4818,6 +4818,10 @@ spr_troop_civilian_sitting_ground 16384 0 arrow_helper_blue 0 1
 
 spr_troop_civilian_sitting_chair 16384 0 arrow_helper_blue 0 1
 -40  20 2071 1 1224979098644774912 2147483678 2 144115188075856307 0 1850 2 1 1224979098644774912 1970 1 1 2136 3 1224979098644774913 1 5 4 0 31 2 1224979098644774913 1 521 3 1224979098644774914 144115188075856029 161 5 0 31 2 1224979098644774913 2 521 3 1224979098644774914 144115188075856029 162 5 0 31 2 1224979098644774913 3 521 3 1224979098644774914 144115188075856029 163 5 0 521 3 1224979098644774914 144115188075856029 165 3 0 1972 1 1224979098644774914 1771 2 72057594037927936 0 1741 2 72057594037927936 307 
+
+
+spr_water_fall_big 0 0 0 0 1
+-40  3 1965 1 59 1955 3 0 120 -100 1965 1 54 
 
 
 spr_save_compartibility1 0 0 0 0 0

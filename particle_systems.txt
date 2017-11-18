@@ -1,5 +1,5 @@
 particle_systemsfile version 1
-59
+61
 psys_game_rain 274 prtcl_rain  500 0.5 0.33 1 10 0 
 1 0.3   1 0.3
 1 1   1 1
@@ -472,3 +472,19 @@ psys_piedra_dust 512 prtcl_dust_a  1 1 0 -0.2 60 1.5
 0 10   15 20
 0.1 0.1 0.1   0 0 0   0 
 0 0 
+psys_water_fall 12802 prtcl_splash_b  75 2.3 1 1 1 1.1 
+0 0.6   1 0.05
+1 1   1 1
+1 1   1 1
+1 1   1 1
+0 1.8   1 1.2
+2 0.1 0.35   0 2.4 0.1   0.1 
+200 0.5 
+psys_water_fall_2 8450 prtcl_water_fall  50 3.3 1 1 0 0 
+0 0.4   1 0.05
+1 1   1 1
+1 1   1 1
+1 1   1 1
+0 1.1   1 2.3
+1.85 0.1 0.35   0 1 0   0 
+0 0.5 

@@ -1579,7 +1579,13 @@ scene_props = [
 ("umbar_smallboat",0,"umbar_prop_smallboat","0", []),
 ("umbar_smallboatoar",0,"umbar_prop_smallboatoar","0", []),
 # Moria
-("moria",0,"moria","bo_moria", [(ti_on_scene_prop_init,[(set_fog_distance,50,0x010101)])]),
+] + (is_a_wb_sceneprop==1 and [
+("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,60,0x010301)])]), #WB is brighter by default, so we make the fog darker
+    ] or [
+("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,70,0x030403)])]) #new fog, slightly greenish and minimally brighter
+]) + [
+#("moria",0,"moria_hall","bo_moria_hall", [(ti_on_scene_prop_init,[(set_fog_distance,50,0x010101)])]), #old fog, dark as fuck
+#("moria",0,"moria_hall","bo_moria_hall", []), #no fog, for working on scene
 ("moria_dimrill_gate",0,"dimrill_gate","bo_dimrill_gate", []),                
 
 ######ROHAN SCENE PROPS##########
@@ -2163,7 +2169,7 @@ scene_props = [
 ("waterfall",0,"waterfall","bo_waterfall", []),
 ("tunnel_cave",0,"tunnel_cave","bo_tunnel_cave", []), 
 
-("moria_a",0,"moria_a","bo_moria_a", []), 
+("moria_a",0,"moria_hall","bo_moria_hall", []), 
 ("moria_entry_a",0,"moria_entry_a","bo_moria_entry_a", []), 
 ("moria_stairs_a",0,"moria_stairs_a","bo_moria_stairs_a", []), 
 ("moria_corridor_a",0,"moria_corridor_a","bo_moria_corridor_a", []), 
@@ -2677,6 +2683,16 @@ scene_props = [
 	        	(party_get_slot, ":troop", "$current_town", slot_center_walker_5_troop),
 			(try_end),
 	(spawn_agent, ":troop"),(agent_set_team, reg0, 0),(agent_set_stand_animation, reg0, "anim_sit_on_throne")])]),
+	
+("water_fall_big", 0, "0", "0", [
+	(ti_on_init_scene_prop,
+		[
+		(particle_system_add_new, "psys_water_fall"),
+		#(play_sound,"snd_waterfall", 0),
+		(set_position_delta, 0, 120, -100),
+		(particle_system_add_new, "psys_water_fall_2"),
+		]),
+    ]),
 
 #InVain props end
 

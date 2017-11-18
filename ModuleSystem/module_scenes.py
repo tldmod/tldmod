@@ -106,7 +106,7 @@ scenes = [
   ("thranduils_halls_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
   ("woodelf_camp_center"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
   ("woodsmen_village_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
-  ("moria_center"           ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],["player_chest"]),
+  ("moria_center"           ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000008160b00000f768000576c00001d2c",[],["player_chest"]),
   ("troll_cave_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000001b00005000005a16c00006794000027d200006794",[],[],"outer_mountains2north"),#Kolba
 
   ] + (is_a_wb_scene==1 and [
@@ -281,7 +281,7 @@ scenes = [
 # various battlefield scenes
 ("battlefield1" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240004d634005c96d0000734a00004b340000734a",[],[],"outer_terrain_plain"),
 ("battlefield2" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
-("battlefield3" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
+("battlefield3" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"outer_terrain_plain"),
 ("battlefield4" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x0000000240002800000691a400003efe00004b34000059be",[],[],"outer_terrain_plain"),
 ("battlefield5" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],["dorwinion_sack"],"outer_terrain_plain"),
 ("battlefield6" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013440050000050d4500003efe00004b34000059be",[],[],"outer_terrain_plain"),
@@ -365,7 +365,7 @@ scenes = [
   ]) + [
 
 ("advcamp_good_siege",sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
-("moria_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000004a92a00000f768000576c00001d2c",[],[]),
+("moria_siege"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005000008160b00000f768000576c00001d2c",[],[]),
 ("minas_morgul_siege",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
 ("morannon_siege"    ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
 

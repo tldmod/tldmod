@@ -272,7 +272,7 @@ scn_woodsmen_village_center woodsmen_village_center 256 none none 0 0 100 100 -1
   0 
   0 
  outer_terrain_plain 
-scn_moria_center moria_center 256 none none 0 0 100 100 -100 0x00000007300005000004a92a00000f768000576c00001d2c 
+scn_moria_center moria_center 256 none none 0 0 100 100 -100 0x00000007300005000008160b00000f768000576c00001d2c 
   0 
   1  833 
  0 
@@ -748,7 +748,7 @@ scn_battlefield2 battlefield2 256 none none 0 0 200 200 -0.5 0x00000002400028000
   0 
   0 
  outer_terrain_plain 
-scn_battlefield3 battlefield3 256 none none 0 0 200 200 -0.5 0x0000000240002800000691a400003efe00004b34000059be 
+scn_battlefield3 battlefield3 256 none none 0 0 200 200 -0.5 0x000000073000050000084e13000006b700007d8d000025fd 
   0 
   0 
  outer_terrain_plain 
@@ -992,7 +992,7 @@ scn_advcamp_good_siege advcamp_good_siege 256 none none 0 0 200 200 -0.5 0x00000
   0 
   0 
  outer_terrain_rohan 
-scn_moria_siege moria_siege 256 none none 0 0 100 100 -100 0x00000007300005000004a92a00000f768000576c00001d2c 
+scn_moria_siege moria_siege 256 none none 0 0 100 100 -100 0x00000007300005000008160b00000f768000576c00001d2c 
   0 
   0 
  0 

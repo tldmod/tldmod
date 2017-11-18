@@ -975,4 +975,32 @@ particle_systems = [
      (0, 0, 0),                 #emit velocity
      0,                        #emit dir randomness
     ),
+	
+	    ("water_fall", psf_billboard_3d|psf_randomize_size|psf_randomize_rotation|psf_always_emit , "prtcl_splash_b",
+     75, 2.3, 1.0, 1.0, 1.0, 1.1,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.0, 0.6), (1, 0.05),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 1.8),   (1.0, 1.2),   #scale keys
+     (2.0, 0.1, 0.35),           #emit box size
+     (0, 2.4, 0.1),               #emit velocity
+     0.1,                       #emit dir randomness
+     200,                       #rotation speed
+     0.5                        #rotation damping
+    ),
+
+	    ("water_fall_2", psf_billboard_2d|psf_always_emit|psf_randomize_size , "prtcl_water_fall",
+     50, 3.3, 1.0, 1.0, 0, 0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
+     (0.0, 0.4), (1, 0.05),        #alpha keys
+     (1.0, 1.0), (1, 1.0),      #red keys
+     (1.0, 1.0), (1, 1.0),      #green keys
+     (1.0, 1.0), (1, 1.0),      #blue keys
+     (0.0, 1.1),   (1.0, 2.3),   #scale keys
+     (1.85, 0.1, 0.35),           #emit box size
+     (0, 1.0, 0.0),               #emit velocity
+     0.0,                       #emit dir randomness
+     0,                       #rotation speed
+     0.5                        #rotation damping
+    ),
 ]
