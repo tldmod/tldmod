@@ -1575,7 +1575,7 @@ scene_props = [
 ### UMBAR PROPS #####
 ("umbar_anchor",0,"umbar_prop_anchor","0", []),
 ("umbar_ship",0,"umbar_prop_ship","bo_umbar_prop_ship", []),
-("umbar_shipwrecked",0,"umbar_prop_shipwrecked","0", []),
+("umbar_shipwrecked",0,"umbar_prop_shipwrecked","bo_umbar_prop_shipwrecked", []),
 ("umbar_smallboat",0,"umbar_prop_smallboat","0", []),
 ("umbar_smallboatoar",0,"umbar_prop_smallboatoar","0", []),
 # Moria

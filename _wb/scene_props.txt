@@ -3045,7 +3045,7 @@ spr_umbar_anchor 0 0 umbar_prop_anchor 0 0
 spr_umbar_ship 0 0 umbar_prop_ship bo_umbar_prop_ship 0
 
 
-spr_umbar_shipwrecked 0 0 umbar_prop_shipwrecked 0 0
+spr_umbar_shipwrecked 0 0 umbar_prop_shipwrecked bo_umbar_prop_shipwrecked 0
 
 
 spr_umbar_smallboat 0 0 umbar_prop_smallboat 0 0
@@ -3055,7 +3055,7 @@ spr_umbar_smallboatoar 0 0 umbar_prop_smallboatoar 0 0
 
 
 spr_moria 0 0 moria_hall bo_moria_hall 1
--40  1 1798 2 70 197635 
+-40  1 1798 2 60 66305 
 
 
 spr_moria_dimrill_gate 0 0 dimrill_gate bo_dimrill_gate 0
