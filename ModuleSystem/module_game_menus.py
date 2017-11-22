@@ -1740,7 +1740,11 @@ game_menus = [
 			(try_end), #end trying
 	]),
 
-    ("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
+   	] + (is_a_wb_menu==1 and [
+	("camp_options",[],"Change TLD options.",[(start_presentation, "prsnt_tld_mod_options")]),
+	] or [
+	("camp_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
+	]) + [
 
     #Kham - Removed Compile Dependence for Cheat Menu
 
@@ -3229,8 +3233,11 @@ game_menus = [
     		("tweak_options_strat",[],"Strategy tweaks...",[(jump_to_menu, "mnu_camp_strat_tweaks")]),
     		 ] + (is_a_wb_menu==1 and [
     		("tweak_options_battlefield_ai",[],"Battlefield AI tweaks...",[(jump_to_menu, "mnu_camp_field_ai")]),
-    		] or []) + [
-    		("tweak_options_back",[],"Back to options menu.",[(jump_to_menu, "mnu_game_options")]),
+    		("tweak_options_back",[],"Back to options menu.",[(start_presentation, "prsnt_tld_mod_options")]),
+    		] or [
+    		("tweak_options_back",[],"Back to options menu.",[(jump_to_menu, "mnu_game_options")])
+    		]) + [
+    		
 	]
 ),
 
@@ -3779,6 +3786,7 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
+	("cheat_deal_looters",[],"Deal with Looters",[(assign,"$cheat_imposed_quest","qst_deal_with_looters")]),
 	("cheat_reinforce_center",[],"Reinforce Center",[(assign,"$cheat_imposed_quest","qst_blank_quest_16")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("cheat_attack_refugees",[],"Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),

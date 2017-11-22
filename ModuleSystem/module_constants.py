@@ -2368,6 +2368,18 @@ slot_troop_player_reserve_adv_camp = 309
 low_party_morale = 30
 high_party_morale = 70
 
+#Presentations Constants Moto chief
+Screen_Border_Width = 24
+Screen_Width = 1024-Screen_Border_Width
+Screen_Height = 768-Screen_Border_Width
+Screen_Text_Height = 35
+Screen_Checkbox_Height_Adj = 4
+Screen_Numberbox_Width = 64
+Screen_Title_Height = Screen_Height-Screen_Border_Width-Screen_Text_Height
+Screen_Check_Box_Dimension = 20
+Screen_Undistort_Width_Num = 7  #distortion midway between 1024x768 and 1366x768 -- things will appear a little narrow on thin screens and vice versa
+Screen_Undistort_Width_Den = 8
+
 
 
 

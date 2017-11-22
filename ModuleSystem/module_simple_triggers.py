@@ -1267,6 +1267,17 @@ simple_triggers = [
     (try_end),
   (try_end),
 
+  # Looters for Deal With Looters Quest
+  (try_begin),
+    (check_quest_active, "qst_deal_with_looters"),
+    (quest_get_slot, ":party_template", "qst_deal_with_looters", slot_quest_target_party_template),
+    (set_spawn_radius, 7),
+    (spawn_around_party, "p_main_party", ":party_template"),
+    (party_set_flags, reg0, pf_quest_party, 1),
+    (party_set_faction, reg0, "fac_neutral"), #Kham: so they don't get into fights
+    #(display_message, "@DEBUG: Looter party spawned"),
+  (try_end),
+
   ]), 
 
 # (42) Make parties larger as game progresses.

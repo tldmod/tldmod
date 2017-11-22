@@ -3078,5 +3078,4 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("cmenu_follow", "Accompany"),
 ("fake_party",   "TLD temp terrain finder, you shouldn't be seeing this in a savegame [!]"),
-
 ]

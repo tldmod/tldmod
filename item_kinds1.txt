@@ -1086,7 +1086,7 @@ itemsfile version 2
  itm_uruk_pike_a Uruk_Pike Uruk_Pike 1  isengard_pike 0  275087364 4222124851987200 400 271496 3 100 0 0 0 0 16384 81 0 227 0 282 528
 0
 
- itm_uruk_pike_b Mordor_Pike Mordor_Pike 1  uruk_skull_spear 0  2154135556 9254615759470988544 400 271496 3 100 0 0 0 0 16384 81 0 200 0 285 528
+ itm_uruk_pike_b Mordor_Pike Mordor_Pike 1  uruk_pike 0  2154135556 9254615759470988544 400 271496 3 100 0 0 0 0 16384 81 0 200 0 285 528
 0
 
  itm_uruk_falchion_a Uruk_Falchion Uruk_Falchion 1  uruk_falchion_a 0  138477571 9223652412613460206 200 286870 2.5 100 0 0 0 0 29696 85 0 74 0 256 29
@@ -2258,7 +2258,7 @@ itemsfile version 2
  itm_umb_helm_f Corsair_Raider_Helm Corsair_Raider_Helm 1  raider_helmet_b 0  65548 0 800 704643238 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_hood Umbar_Hood Umbar_Hood 1  umbar_hood 0  65548 0 300 123731968 1 100 10 0 0 0 0 0 0 0 0 0 0
+ itm_umb_hood Black_Hood Black_Hood 1  umbar_hood 0  65548 0 300 123731968 1 100 10 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 123731968 1 100 0 0 14 0 0 0 0 0 0 0 0
