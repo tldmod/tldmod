@@ -4314,7 +4314,9 @@ scripts = [
 #        (try_end),
         (store_random_in_range, ":random_no", 0, 100),
         (lt, ":random_no", ":randomness"),
-        (neg|is_between, ":item_id", "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
+        (item_get_slot, ":reward", ":item_id"),
+        (neq, ":reward", 1),#If Item is a reward, dont let it get jacked.
+        #(neg|is_between, ":item_id", "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
         (troop_remove_item, "trp_player", ":item_id"),
 
         (try_begin),
@@ -4336,6 +4338,7 @@ scripts = [
       (store_div, ":min_lost", ":cur_gold", 10),
       (store_random_in_range, ":lost_gold", ":min_lost", ":max_lost"),
       (troop_remove_gold, "trp_player", ":lost_gold"),
+      (party_set_extra_text, ":enemy_party_no", "@Looted your items"),
 ]),
 
 #script_party_calculate_loot:
@@ -22353,7 +22356,7 @@ command_cursor_scripts = [
 
     (store_character_level, ":level", "trp_player"),
     (val_max,":level",11), # Keep ":level" between 11 and 23
-    (val_min,":level",23),
+    (val_min,":level",30),
     (quest_get_slot,":camp_template","qst_destroy_scout_camp",slot_quest_target_party_template),
     (try_begin),
         (eq,":camp_template","pt_scout_camp_small"), #Small Scout Camp
@@ -22872,7 +22875,7 @@ command_cursor_scripts = [
 		(this_or_next|neq, "$g_talk_troop_faction", "fac_lorien"), #Elves don't care about the refugees
 		(			  neq, "$g_talk_troop_faction", "fac_woodelf"), #Elves don't care about the refugees
 		(store_character_level, ":player_level", "trp_player"),
-		(is_between, ":player_level", 12, 21),
+		(is_between, ":player_level", 14, 21),
 		(assign, ":giver_center_no", -1),
 		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
 		(try_begin),
@@ -22947,12 +22950,11 @@ command_cursor_scripts = [
         (assign, ":raiders", "pt_rhun_scouts"),
         (assign, ":guards", "pt_dale_scouts"),
       (try_end),
-
+      
       (try_begin),
-      	(this_or_next|eq, ":quest_target_center", "p_town_woodsmen_village"),
-      	(this_or_next|eq, ":quest_target_center", "p_town_beorning_village"),
-      	(eq, ":quest_target_center", "p_town_beorn_house"),
-      	(assign, ":guards", "pt_beorn_scouts"),
+	      (store_faction_of_party, ":target_fac", ":quest_target_center"),
+	      (eq, ":target_fac", "fac_beorn"),
+	      (assign, ":guards", "pt_beorn_scouts"),
       (try_end),
 
       (store_random_in_range, ":refugee_radius", 1, 5),
@@ -23054,7 +23056,7 @@ command_cursor_scripts = [
 		(neq, ":side", faction_side_good),
 		(ge, "$g_talk_troop_faction_relation", 0),
 		(store_character_level, ":player_level", "trp_player"),
-		(is_between, ":player_level", 12, 21),
+		(is_between, ":player_level", 14, 21),
 		(assign, ":giver_center_no", -1),
 		(troop_get_slot, ":giver_party_no", "$g_talk_troop", slot_troop_leaded_party),
 		(try_begin),
@@ -23129,10 +23131,9 @@ command_cursor_scripts = [
       (try_end),
 
       (try_begin),
-      	(this_or_next|eq, ":quest_target_center", "p_town_woodsmen_village"),
-      	(this_or_next|eq, ":quest_target_center", "p_town_beorning_village"),
-      	(eq, ":quest_target_center", "p_town_beorn_house"),
-      	(assign, ":guards", "pt_beorn_scouts"),
+	      (store_faction_of_party, ":target_fac", ":quest_target_center"),
+	      (eq, ":target_fac", "fac_beorn"),
+	      (assign, ":guards", "pt_beorn_scouts"),
       (try_end),
 
       (store_random_in_range, ":refugee_radius", 25, 35),

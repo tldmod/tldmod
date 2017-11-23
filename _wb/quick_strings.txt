@@ -1,4 +1,4 @@
-1488
+1489
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -213,6 +213,7 @@ qstr_Debug_str:_{reg0} Debug_str:_{reg0}
 qstr_DEBUG:_Trolls_for_Tr DEBUG:_Trolls_for_Troll_quest_are_sped_down.
 qstr__{s61} _{s61}
 qstr_ERROR:_More_than_15_ ERROR:_More_than_15_trade_routes_are_given_for_{s1}.
+qstr_Looted_your_items Looted_your_items
 qstr_nothing nothing
 qstr_Good Good
 qstr_Med Med

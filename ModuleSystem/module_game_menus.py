@@ -177,7 +177,13 @@ game_menus = [
          (jump_to_menu,"mnu_unified_start_quest"), # Start Quest - Kham
        ]),
 	  ("spacer",[],"_",[]),
+	  
+	   ] + (is_a_wb_menu==1 and [
+	  ("change_tld_options",[],"Change TLD options.",[(start_presentation, "prsnt_tld_mod_options")]),
+	  ] or [
 	  ("change_tld_options",[],"Change TLD options.",[(jump_to_menu, "mnu_game_options")]),
+	  ]) + [
+
 	  ("spacer",[],"_",[]),
 	]+concatenate_scripts([[
       ("cheat00",[(eq, cheat_switch, 1),(troop_get_upgrade_troop,":t","$player_current_troop_type",0),(gt,":t",0),(str_store_troop_name,s21,":t"),
@@ -3224,6 +3230,8 @@ game_menus = [
     "none",
     [(jump_to_menu, "mnu_game_options")],[]
  ),
+
+
 
 
 ( "camp_tweaks",0,
