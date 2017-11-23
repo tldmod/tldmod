@@ -131,8 +131,8 @@ parties = [
     ("town_gundabad"            ,"Gundabad",                 icon_moria   |pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(35.7,-241.5),[],165),
     ("town_gundabad_ne_outpost" ,"Gundabad_NE_Outpost",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-25.1,-246.1),[],120),
     ("town_gundabad_nw_outpost" ,"Gundabad_NW_Outpost",      icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-4.2,-243.6),[],270),
-    ("town_goblin_north_outpost","Goblin_Northern_Outpost",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(22.1,-211.2),[],10),
-    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(18.9,-194.8),[],140),
+    ("town_goblin_north_outpost","Goblin Town",  			 icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(26.33,-194.48),[],10),
+    ("town_goblin_south_outpost","Goblin_Southern_Outpost",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(22.1,-211.2),[],10),				#(18.9,-194.8),[],140),
     ("town_gundabad_m_outpost"  ,"Gundabad_Mirkwood_Outpost",icon_orctower|pf_tld_down, no_menu, pt_none, fac_gundabad,0,ai_bhvr_hold,0,(-13.9,-224.0),[],170),
 # Dwarves towns
     ("town_erebor"       ,"Erebor",          icon_moria |pf_tld_down, no_menu, pt_none, fac_dwarf,0,ai_bhvr_hold,0,(-59.6,-226.4),[],130),

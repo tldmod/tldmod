@@ -927,7 +927,7 @@ spr_weapon_rack 0 0 weapon_rack boweapon_rack 0
 spr_weapon_rack_big 0 0 weapon_rack_big boweapon_rack_big 0
 
 
-spr_tavern_barrel 0 0 barrel bobarrel 0
+spr_tavern_barrel 0 0 barrel_new bobarrel 0
 
 
 spr_tavern_barrel_b 0 0 tavern_barrel_b bo_tavern_barrel_b 0
@@ -1038,10 +1038,10 @@ spr_bowl_a 0 0 bowl_a 0 0
 spr_bucket_b 0 0 bucket_b 0 0
 
 
-spr_washtub_a 0 0 washtub_a bo_washtub_a 0
+spr_washtub_a 0 0 washtub_a_new bo_washtub_a 0
 
 
-spr_washtub_b 0 0 washtub_b bo_washtub_b 0
+spr_washtub_b 0 0 washtub_b_new bo_washtub_b 0
 
 
 spr_table_trunk_a 0 0 table_trunk_a bo_table_trunk_a 0
@@ -2055,7 +2055,7 @@ spr_lamp_b 0 0 lamp_b 0 1
 -40  6 1955 3 65 0 -7 1965 1 28 1955 3 70 0 -5 1965 1 13 1968 2 13 9000000 600 2 139 0 
 
 
-spr_hook_a 0 0 hook_a 0 0
+spr_hook_a 0 0 hook_a_new 0 0
 
 
 spr_window_night 0 0 window_night 0 0
@@ -4769,10 +4769,10 @@ spr_apple_basket 0 0 apple_basket bo_apple_basket 0
 spr_sausages 0 0 sausages 0 0
 
 
-spr_boat_sail_on 0 0 boat_sail_on 0 0
+spr_boat_sail_on 0 0 new_boat_sail_on bo_new_boat_sail_on 0
 
 
-spr_boat_sail_off 0 0 boat_sail_off 0 0
+spr_boat_sail_off 0 0 new_boat_sail_off bo_new_boat_sail_off 0
 
 
 spr_tree_mirkwood_a 0 0 tree_mirkwood_a bo_tree_mallorn_a 0

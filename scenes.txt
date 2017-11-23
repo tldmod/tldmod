@@ -592,10 +592,10 @@ scn_woodelf_west_camp_center woodelf_west_camp_center 256 none none 0 0 100 100 
   0 
   0 
  outer_terrain_forest 
-scn_goblin_north_outpost_center goblin_north_outpost_center 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_goblin_north_outpost_center goblin_north_outpost_center 2304 none none 0 0 100 100 -100 0x00000007300005000008160b00000f768000576c00001d2c 
   0 
   0 
- outer_mountains2west 
+ 0 
 scn_goblin_south_outpost_center goblin_south_outpost_center 256 none none 0 0 100 100 -100 0x0000000320001d9300031ccb000041be000048ba0000361c 
   0 
   0 
@@ -1248,10 +1248,10 @@ scn_dol_guldur_north_outpost_center_siege dol_guldur_north_outpost_center_siege 
   0 
   0 
  outer_terrain_forest 
-scn_goblin_north_outpost_center_siege goblin_north_outpost_center_siege 256 none none 0 0 100 100 -100 0x0000000730001d9300031ccb0000156f000048ba0000361c 
+scn_goblin_north_outpost_center_siege goblin_north_outpost_center_siege 256 none none 0 0 100 100 -100 0x00000007300005000008160b00000f768000576c00001d2c 
   0 
   0 
- outer_mountains2west 
+ 0 
 scn_goblin_south_outpost_center_siege goblin_south_outpost_center_siege 256 none none 0 0 100 100 -100 0x0000000320001d9300031ccb000041be000048ba0000361c 
   0 
   0 

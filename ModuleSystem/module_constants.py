@@ -1463,7 +1463,7 @@ ws_party_spawns_list = [
 (p_town_gundabad                 ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
 (p_town_gundabad_ne_outpost      ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
 (p_town_gundabad_nw_outpost      ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
-(p_town_goblin_north_outpost     ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    -1),
+(p_town_goblin_north_outpost     ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    pt_gunda_caravan),
 (p_town_goblin_south_outpost     ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    -1),
 (p_town_gundabad_m_outpost       ,pt_gundabad_scouts,pt_gundabad_raiders,-1,                    -1),
 #Advance camps   
@@ -1726,13 +1726,13 @@ center_list = [
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_high*2, 2, tld_siegable_capital),
 (p_town_gundabad_ne_outpost, [scn_gundabad_ne_outpost_center, -1, -1,-1,-1,scn_gundabad_ne_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_no_troop, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
-	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_normal),
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
 (p_town_gundabad_nw_outpost, [scn_gundabad_nw_outpost_center, -1, -1,-1,-1,scn_gundabad_nw_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_no_troop, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_normal),
 (p_town_goblin_north_outpost, [scn_goblin_north_outpost_center, -1, -1,-1,-1,scn_goblin_north_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
-	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high*2, 2, tld_siegable_normal),
 (p_town_goblin_south_outpost, [scn_goblin_south_outpost_center, -1, -1,-1,-1,scn_goblin_south_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_goblin_gundabad,trp_orc_gundabad,trp_orc_fighter_gundabad,trp_goblin_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
@@ -1811,7 +1811,7 @@ center_list = [
 centers_disabled_at_start =	[
   p_town_orc_sentry_camp, p_town_urukhai_outpost, p_town_urukhai_r_camp,#p_town_dunland_camp,
   p_town_dol_guldur_north_outpost, p_town_rhun_south_camp, p_town_rhun_north_camp, p_town_gundabad_ne_outpost, 
-  p_town_gundabad_nw_outpost, p_town_goblin_north_outpost, p_town_goblin_south_outpost, p_town_gundabad_m_outpost
+  p_town_gundabad_nw_outpost, p_town_goblin_south_outpost, p_town_gundabad_m_outpost #, p_town_goblin_north_outpost
 ]		 
 #### end of center descriptions
 
@@ -1934,6 +1934,7 @@ center_sounds=[#center      specific day ambiance , specific always ambiance    
     (p_town_gundabad_m_outpost,snd_orcs_ambiance,snd_evilforest_ambiance,snd_orc_occasional),
     (p_town_troll_cave   ,0                   ,snd_evilforest_ambiance      ,snd_orc_occasional),
     (p_town_morannon     ,0                   ,snd_wind_ambiance            ,0),
+	(p_town_goblin_north_outpost     ,0       ,snd_moria_ambiance            ,0),
 ] 
 
 ## tableau meshes list for factions

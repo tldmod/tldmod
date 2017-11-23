@@ -622,7 +622,7 @@ scene_props = [
 ("potlamp",0,"potlamp","0", []),
 ("weapon_rack",0,"weapon_rack","boweapon_rack", []),
 ("weapon_rack_big",0,"weapon_rack_big","boweapon_rack_big", []),
-("tavern_barrel",0,"barrel","bobarrel", []),
+("tavern_barrel",0,"barrel_new","bobarrel", []),
 ("tavern_barrel_b",0,"tavern_barrel_b","bo_tavern_barrel_b", []),
 ("merchant_sign",0,"merchant_sign","bo_tavern_sign", []),
 ("tavern_sign",0,"tavern_sign","bo_tavern_sign", []),
@@ -661,8 +661,8 @@ scene_props = [
 ("cooking_pole",0,"cooking_pole","0", []),
 ("bowl_a",0,"bowl_a","0", []),
 ("bucket_b",0,"bucket_b","0", []),
-("washtub_a",0,"washtub_a","bo_washtub_a", []),
-("washtub_b",0,"washtub_b","bo_washtub_b", []),
+("washtub_a",0,"washtub_a_new","bo_washtub_a", []),
+("washtub_b",0,"washtub_b_new","bo_washtub_b", []),
 
 ("table_trunk_a",0,"table_trunk_a","bo_table_trunk_a", []),
 ("chair_trunk_a",0,"chair_trunk_a","bo_chair_trunk_a", []),
@@ -1192,7 +1192,7 @@ scene_props = [
     ]),
 ]),
 
-("hook_a",0,"hook_a","0", []),
+("hook_a",0,"hook_a_new","0", []),
 ("window_night",0,"window_night","0", []),
 ("fried_pig",0,"fried_pig","0", []),
 ("village_oven",0,"village_oven","bo_village_oven", []),
@@ -2538,8 +2538,8 @@ scene_props = [
 	( "butter_pot"                                 ,0,"butter_pot","0",[]),
 	( "apple_basket"                               ,0,"apple_basket","bo_apple_basket",[]),
 	( "sausages"                                   ,0,"sausages","0",[]),
-	( "boat_sail_on"                               ,0,"boat_sail_on","0",[]),
-	( "boat_sail_off"                              ,0,"boat_sail_off","0",[]),
+	( "boat_sail_on"                               ,0,"new_boat_sail_on","bo_new_boat_sail_on",[]),
+	( "boat_sail_off"                              ,0,"new_boat_sail_off","bo_new_boat_sail_off",[]),
 
 # from '': begin (OpenBRF)
 	( "tree_mirkwood_a"                            ,0,"tree_mirkwood_a","bo_tree_mallorn_a",[]),
