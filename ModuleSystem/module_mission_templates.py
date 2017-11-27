@@ -2918,6 +2918,101 @@ mission_templates = [ # not used in game
 ## Amath Dollen Fortress MT End - Kham
 
 
+### Sea Battle MT Start (kham)###
+
+ (
+    "sea_battle_quest_good",mtf_battle_mode|mtf_synch_inventory,charge,
+    "You lead your men to battle.",
+    [
+      # Player
+      (1,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+
+      #Good Allies
+      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      
+      #Enemies
+      #(11,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (12,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (13,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (15,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (16,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+
+   ],
+  # Triggers
+  tld_common_wb_muddy_water+
+  tld_common_battle_scripts+
+  common_deathcam_triggers + [
+  
+
+  common_battle_on_player_down,
+  common_battle_tab_press,
+  (ti_question_answered, 0, 0, [],
+       [(store_trigger_param_1,":answer"),
+        (eq,":answer",0),
+        (assign, "$pin_player_fallen", 0),
+        (str_store_string, s5, "str_retreat"),
+        (call_script, "script_simulate_retreat", 5, 20),
+        (call_script, "script_count_mission_casualties_from_agents"),
+        (finish_mission,0),]),
+
+  # Make the teams enemies...
+  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0)]),
+
+  (0, 0, ti_once, 
+  [
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 1, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+  ], 
+  []),
+
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 1),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1)
+  ]),
+
+ 
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_battle_inventory,      
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+      
+    ],
+  ),
+
+
+### Sea Batlle Quest MT Start (kham)###
+
+
 
 ( "castle_attack_walls_defenders_sally",mtf_battle_mode,-1,
   "You attack the walls of the castle...",

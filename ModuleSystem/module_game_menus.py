@@ -3090,6 +3090,7 @@ game_menus = [
         (store_sub, "$gondor_ai_testing", 1, "$gondor_ai_testing"),(val_clamp, "$gondor_ai_testing", 0, 2)]),
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
+    ("test_sea_battle",[],"Test Sea Battle (Good)", [(jump_to_menu, "mnu_sea_battle_quest")]),
     ("give_moria_book",[],"Give Moria Book", [(troop_add_item, "trp_player","itm_book_of_moria"),(display_message, "@Moria Book given")]),
     ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
     ("what_region",[], "What Region am I in?", 
@@ -8671,6 +8672,43 @@ game_menus = [
 ),
 	
 ## Kham - Spears of bladorthin - Raft Men - End
+
+## Kham - Sea battle Quest - Start
+
+("sea_battle_quest",0,
+    "^^^^Sea Battle (PLACEHOLDER).",
+    "none",
+    [(set_background_mesh, "mesh_town_evilcamp")],
+
+    [("sea_battle_attack_good",[],"Attack the Pirates.",
+       [(set_jump_mission, "mt_sea_battle_quest_good"),
+		(assign, ":lp_scene", "scn_battlefield3"),
+		(modify_visitors_at_site,":lp_scene"),
+		(reset_visitors),
+	    (set_visitor, 1, "trp_player"),
+
+	    (try_for_range, ":first_allies", 2, 8),
+	    	(set_visitors, ":first_allies", "trp_pelargir_infantry", 3),
+	    (try_end),
+
+	    (try_for_range, ":second_allies", 8, 11),
+	    	(set_visitors, ":second_allies", "trp_pelargir_marine", 3),
+	    (try_end),
+
+	    (try_for_range, ":first_enemies", 12,18 ),
+	    	(set_visitors, ":first_enemies", "trp_corsair_marauder", 3),
+	    (try_end),	    
+
+	    (try_for_range, ":second_enemies", 18,21),
+	    	(set_visitors, ":second_enemies", "trp_marksman_of_umbar", 3),
+	    (try_end),	 
+
+        (jump_to_menu, "mnu_sea_battle_quest"),
+        (jump_to_scene,":lp_scene"),
+        (change_screen_mission),
+       ]),
+   ("leave_sea_battle",[],"Leave for now.",[(change_screen_return)]),
+  ]),
 
 ## Kham - Gondor Reinforcement Event Menu - Start
 
