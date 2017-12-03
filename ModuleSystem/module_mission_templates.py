@@ -2928,35 +2928,40 @@ mission_templates = [ # not used in game
       (1,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
 
       #Good Allies
-      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
-      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (3,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (5,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (7,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (9,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
       
       #Enemies
-      #(11,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (12,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (13,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (14,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (15,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (16,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
-      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      #(11,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (12,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (13,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (15,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (16,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (17,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (19,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
 
    ],
   # Triggers
   tld_common_wb_muddy_water+
-  tld_common_battle_scripts+
-  common_deathcam_triggers + [
+  common_deathcam_triggers +
+  fade + khams_custom_player_camera + bright_nights + [
   
-
+  tld_slow_wounded,
+  custom_tld_spawn_troop, custom_tld_init_battle,
+  tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
+  cheat_kill_self_on_ctrl_s,
+  custom_track_companion_casualties,
+  common_battle_healing,
   common_battle_on_player_down,
   common_battle_tab_press,
   (ti_question_answered, 0, 0, [],
@@ -2996,6 +3001,127 @@ mission_templates = [ # not used in game
     (finish_mission, 1)
   ]),
 
+## Reinforcement Triggers - Note  that I am using the interloper code here, because this is a mission, instead of a battle between parties, 
+## where there would actually be a pool for reinforcements. Also, because it is a relatively short battle, I put ally + enemy reinforcements instead of player reinforcements.
+
+## Enemy Reinforcement Triggers: 
+  (5, 0, ti_once, [
+      (store_mission_timer_a, ":mission_time_a"),
+      (store_random_in_range, ":ran_time", 15, 35),
+      (ge, ":mission_time_a", ":ran_time"), #Random time between 15 - 35 secs
+      ],[
+      
+      #This checks the faction of the quest giver.
+      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (store_faction_of_party, ":faction", ":troop"),      
+      
+      #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
+      #Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
+      (try_begin),
+        (eq, ":faction", "fac_gondor"),
+        (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
+        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
+        (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
+        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
+        (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
+      (else_try), #Dale
+        (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
+        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
+        (assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
+        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
+        (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
+      (try_end),
+
+      (store_character_level, ":level", "trp_player"),
+
+      #This is where we check what to spawn depending on player level (Med/High Tier)
+      (try_begin),
+        (ge, ":level", 25),
+        (assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
+        (assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
+      (else_try),
+        (assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
+        (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
+      (try_end),
+
+      (assign, ":range_end", 15), #Change this number to change the number of troops spawned
+      (assign, ":team_enemy", 1),
+      (display_message, "@Enemy reinforcements have arrived", color_bad_news),
+
+      (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
+      (entry_point_get_position, pos5, ":enemy_entry"),
+      (set_spawn_position, pos5), 
+      
+      #This spawns the troops, coin flip on whether troops are ranged / melee, as per the above troop assignments.
+      (try_for_range, ":unused", 0, ":range_end"),
+          (store_random_in_range, ":rnd_troop", 0,100),
+          (le, ":rnd_troop", 50),
+          (spawn_agent, ":enemy_melee_troop"),
+          (agent_set_team, reg0, ":team_enemy"),
+        (else_try),
+          (spawn_agent, ":enemy_ranged_troop"),
+          (agent_set_team, reg0, ":team_enemy"),
+      (try_end),
+
+      #This asks them to charge, secretly.
+      (set_show_messages, 0),
+      (team_give_order, ":team_enemy", grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+    ]
+  ),
+
+## Had to separate the triggers because for some reason, it gets buggy if I combined both ally + enemy spawns. See notes above, they are exactly the same, other than this spawns allies.
+## Ally Reinforcement Triggers: 
+(5, 0, ti_once, [
+      (store_mission_timer_a, ":mission_time_a"),
+      (store_random_in_range, ":ran_time", 35, 45),
+      (ge, ":mission_time_a", ":ran_time"), #Random time between 35 - 45 secs
+      ],[
+      
+      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (store_faction_of_party, ":faction", ":troop"),      
+      
+      (try_begin),
+        (eq, ":faction", "fac_gondor"),
+        (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
+        (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
+      (else_try), #Dale
+        (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
+        (display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
+      (try_end),
+
+      (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
+      (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
+
+      (assign, ":range_end", 15),
+      (assign, ":team_ally", 0),
+      (display_message, "@Ally reinforcements have arrived", color_good_news),
+      (store_random_in_range, ":ally_entry", 2, 11),
+      (entry_point_get_position, pos4, ":ally_entry"),
+      (set_spawn_position, pos4), 
+      (try_for_range, ":unused", 0, ":range_end"),
+          (store_random_in_range, ":rnd_troop", 0,100),
+          (le, ":rnd_troop", 50),
+          (spawn_agent, ":ally_melee_troop"),
+          (agent_set_team, reg0, ":team_ally"),
+        (else_try),
+          (spawn_agent, ":ally_ranged_troop"),
+          (agent_set_team, reg0, ":team_ally"),
+      (try_end),
+
+      (set_show_messages, 0),
+      (team_give_order, ":team_ally", grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+    ]
+  ),
+
+## End Reinforcement Triggers
  
   common_inventory_not_available, 
   common_music_situation_update,
@@ -3009,6 +3135,246 @@ mission_templates = [ # not used in game
     ],
   ),
 
+(
+    "sea_battle_quest_evil",mtf_battle_mode|mtf_synch_inventory,charge,
+    "You lead your men to battle.",
+    [
+      
+      #(1,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+
+      #Good
+      (2,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (3,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (5,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (7,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (9,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      
+      #Evil
+      
+      (11,mtef_team_1|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+      (12,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (13,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (15,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (16,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (17,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (19,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+
+   ],
+  # Triggers
+  tld_common_wb_muddy_water+
+  common_deathcam_triggers +
+  fade + khams_custom_player_camera + bright_nights + [
+  
+  tld_slow_wounded,
+  custom_tld_spawn_troop, custom_tld_init_battle,
+  tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
+  cheat_kill_self_on_ctrl_s,
+  custom_track_companion_casualties,
+  common_battle_healing,
+  common_battle_on_player_down,
+
+  # Make the teams enemies...
+  (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0)]),
+
+  (0, 0, ti_once, 
+  [
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 1, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+  ], 
+  []),
+
+  (1, 60, ti_once, 
+  [
+    (store_mission_timer_a,reg(1)),
+    (ge,reg(1),10),
+    (all_enemies_defeated, 1),
+    (set_mission_result,1),
+    (display_message,"str_msg_battle_won"),
+    (assign,"$battle_won",1),
+    (assign, "$g_battle_result", 1),
+    (call_script, "script_music_set_situation_with_culture", mtf_sit_victorious),
+  ],
+  [
+    (finish_mission, 1)
+  ]),
+
+(ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (jump_to_menu, "mnu_sea_battle_quest_results"),
+      (finish_mission),
+    (else_try),
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_sea_battle_quest_results"),
+      (finish_mission),
+    (try_end),
+    # Apply health changes...
+    (try_begin),
+      (this_or_next|eq, "$battle_won", 1),
+      (main_hero_fallen),
+      (try_for_agents, ":agent"),
+        (gt, ":agent",0),
+        (agent_is_human, ":agent"),
+        (agent_get_troop_id, ":troop", ":agent"),
+        (troop_is_hero, ":troop"),
+        (this_or_next|eq, ":troop", "trp_player"),
+        (is_between, ":troop", companions_begin, companions_end),
+        (store_agent_hit_points,":hp",":agent",0),
+        (call_script, "script_get_max_skill_of_player_party", "skl_wound_treatment"),
+        (store_mul, ":medic", reg0, 5),
+        (val_add, ":hp", ":medic"),
+        (val_clamp, ":hp", 0, 100),
+        (troop_set_health, ":troop", ":hp"),
+      (try_end),
+      (call_script, "script_count_mission_casualties_from_agents"),
+    (try_end),
+  ]),
+
+## Reinforcement Triggers - Note  that I am using the interloper code here, because this is a mission, instead of a battle between parties, 
+## where there would actually be a pool for reinforcements. Also, because it is a relatively short battle, I put ally + enemy reinforcements instead of player reinforcements.
+
+## Enemy Reinforcement Triggers: 
+  (5, 0, ti_once, [
+      (store_mission_timer_a, ":mission_time_a"),
+      (store_random_in_range, ":ran_time", 15, 35),
+      (ge, ":mission_time_a", ":ran_time"), #Random time between 15 - 35 secs
+      ],[
+      
+      #This checks the faction of the quest giver.
+      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (store_faction_of_party, ":faction", ":troop"),      
+      
+      #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
+      #Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
+      (try_begin),
+        (eq, ":faction", "fac_gondor"),
+        (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
+        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
+        (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
+        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
+        (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
+      (else_try), #Dale
+        (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
+        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
+        (assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
+        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
+        (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
+      (try_end),
+
+      (store_character_level, ":level", "trp_player"),
+
+      #This is where we check what to spawn depending on player level (Med/High Tier)
+      (try_begin),
+        (ge, ":level", 25),
+        (assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
+        (assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
+      (else_try),
+        (assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
+        (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
+      (try_end),
+
+      (assign, ":range_end", 15), #Change this number to change the number of troops spawned
+      (assign, ":team_enemy", 1),
+      (display_message, "@Enemy reinforcements have arrived", color_bad_news),
+
+      (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
+      (entry_point_get_position, pos5, ":enemy_entry"),
+      (set_spawn_position, pos5), 
+      
+      #This spawns the troops, coin flip on whether troops are ranged / melee, as per the above troop assignments.
+      (try_for_range, ":unused", 0, ":range_end"),
+          (store_random_in_range, ":rnd_troop", 0,100),
+          (le, ":rnd_troop", 50),
+          (spawn_agent, ":enemy_melee_troop"),
+          (agent_set_team, reg0, ":team_enemy"),
+        (else_try),
+          (spawn_agent, ":enemy_ranged_troop"),
+          (agent_set_team, reg0, ":team_enemy"),
+      (try_end),
+
+      #This asks them to charge, secretly.
+      (set_show_messages, 0),
+      (team_give_order, ":team_enemy", grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+    ]
+  ),
+
+## Had to separate the triggers because for some reason, it gets buggy if I combined both ally + enemy spawns. See notes above, they are exactly the same, other than this spawns allies.
+## Ally Reinforcement Triggers: 
+(5, 0, ti_once, [
+      (store_mission_timer_a, ":mission_time_a"),
+      (store_random_in_range, ":ran_time", 35, 45),
+      (ge, ":mission_time_a", ":ran_time"), #Random time between 35 - 45 secs
+      ],[
+      
+      (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
+      (store_faction_of_party, ":faction", ":troop"),      
+      
+      (try_begin),
+        (eq, ":faction", "fac_gondor"),
+        (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
+        (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
+      (else_try), #Dale
+        (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
+        #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
+        (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
+        #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
+        (display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
+      (try_end),
+
+
+      (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
+      (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
+
+      (assign, ":range_end", 15),
+      (assign, ":team_ally", 0),
+      (display_message, "@Ally reinforcements have arrived", color_good_news),
+      (store_random_in_range, ":ally_entry", 2, 11),
+      (entry_point_get_position, pos4, ":ally_entry"),
+      (set_spawn_position, pos4), 
+      (try_for_range, ":unused", 0, ":range_end"),
+          (store_random_in_range, ":rnd_troop", 0,100),
+          (le, ":rnd_troop", 50),
+          (spawn_agent, ":ally_melee_troop"),
+          (agent_set_team, reg0, ":team_ally"),
+        (else_try),
+          (spawn_agent, ":ally_ranged_troop"),
+          (agent_set_team, reg0, ":team_ally"),
+      (try_end),
+
+      (set_show_messages, 0),
+      (team_give_order, ":team_ally", grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+    ]
+  ),
+
+## End Reinforcement Triggers
+ 
+  common_inventory_not_available, 
+  common_music_situation_update,
+  common_battle_check_friendly_kills,
+  common_battle_check_victory_condition,
+  common_battle_victory_display,
+  common_battle_inventory,      
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+      
+    ],
+  ),
 
 ### Sea Batlle Quest MT Start (kham)###
 

@@ -3091,7 +3091,7 @@ game_menus = [
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("test_sea_battle",[],"Test Sea Battle (Good)", [(jump_to_menu, "mnu_sea_battle_quest")]),
-    ("give_moria_book",[],"Give Moria Book", [(troop_add_item, "trp_player","itm_book_of_moria"),(display_message, "@Moria Book given")]),
+    ("give_wolf_mount",[],"Give wolf mount", [(troop_add_item, "trp_player","itm_wolf", imod_fine),(display_message, "@Moria Book given")]),
     ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
     ("what_region",[], "What Region am I in?", 
     	[(store_add, reg1, str_shortname_region_begin , "$current_player_region"),
@@ -3795,7 +3795,7 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("cheat_deal_looters",[],"Deal with Looters",[(assign,"$cheat_imposed_quest","qst_deal_with_looters")]),
+	("cheat_sea_battle",[],"Sea Battle",[(assign,"$cheat_imposed_quest","qst_blank_quest_03")]),
 	("cheat_reinforce_center",[],"Reinforce Center",[(assign,"$cheat_imposed_quest","qst_blank_quest_16")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("cheat_attack_refugees",[],"Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
@@ -5028,6 +5028,7 @@ game_menus = [
 		  	  (call_script, "script_increase_rank", ":impressed_troop_faction", ":rank_increase"),
 			  (display_log_message, "@Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.", color_good_news), #Kham - Let's still give player some rank.
 		  (try_end),
+
 		  (call_script, "script_set_ambient_faction","$impressed_faction"),
           
           # Bravery trait check (chance greater if outnumbered; uses battle_renown_value=0-50 to figure it out)
@@ -8673,42 +8674,6 @@ game_menus = [
 	
 ## Kham - Spears of bladorthin - Raft Men - End
 
-## Kham - Sea battle Quest - Start
-
-("sea_battle_quest",0,
-    "^^^^Sea Battle (PLACEHOLDER).",
-    "none",
-    [(set_background_mesh, "mesh_town_evilcamp")],
-
-    [("sea_battle_attack_good",[],"Attack the Pirates.",
-       [(set_jump_mission, "mt_sea_battle_quest_good"),
-		(assign, ":lp_scene", "scn_battlefield3"),
-		(modify_visitors_at_site,":lp_scene"),
-		(reset_visitors),
-	    (set_visitor, 1, "trp_player"),
-
-	    (try_for_range, ":first_allies", 2, 8),
-	    	(set_visitors, ":first_allies", "trp_pelargir_infantry", 3),
-	    (try_end),
-
-	    (try_for_range, ":second_allies", 8, 11),
-	    	(set_visitors, ":second_allies", "trp_pelargir_marine", 3),
-	    (try_end),
-
-	    (try_for_range, ":first_enemies", 12,18 ),
-	    	(set_visitors, ":first_enemies", "trp_corsair_marauder", 3),
-	    (try_end),	    
-
-	    (try_for_range, ":second_enemies", 18,21),
-	    	(set_visitors, ":second_enemies", "trp_marksman_of_umbar", 3),
-	    (try_end),	 
-
-        (jump_to_menu, "mnu_sea_battle_quest"),
-        (jump_to_scene,":lp_scene"),
-        (change_screen_mission),
-       ]),
-   ("leave_sea_battle",[],"Leave for now.",[(change_screen_return)]),
-  ]),
 
 ## Kham - Gondor Reinforcement Event Menu - Start
 
@@ -9701,6 +9666,222 @@ game_menus = [
 	        (call_script, "script_fail_quest", "qst_destroy_scout_camp"),
 	        (str_store_string, s9, "@You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck."),
 	       # (set_background_mesh, "mesh_draw_victory_gondor"),
+	        (party_is_active,"$g_encountered_party"),
+	        (call_script, "script_safe_remove_party","$g_encountered_party"),
+	      (try_end),
+	     ],
+	    [
+	      ("continue", [], "Continue...",
+	       [
+	        (change_screen_map),
+		 ]),
+	      ]
+	    ),
+###################### Destroy Scout Camp Quest End (Kham) ##########################################
+
+
+###################### Sea Battle Quest Start (Kham) ##########################################
+	
+	("sea_battle_quest",0,
+	   "The ships have met, your troops are ready to board them.",
+	   "none",[],
+
+	 #If Good
+	 [
+	 ("sb_defend_the_town",[
+	 	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+	 	], "Defend the City from the Raiders!",
+	     [  
+	     	#(quest_get_slot, ":target_center", "qst_blank_quest_03", slot_quest_target_center),
+	     	(quest_get_slot, ":object_troop", "qst_blank_quest_03", slot_quest_object_center),
+			#(store_faction_of_party, ":target_fac", ":target_center"),
+			(store_faction_of_party, ":object_fac", ":object_troop"),
+	       	(store_character_level, ":level", "trp_player"),
+	     	
+		#This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
+		#Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
+	       	(try_begin),
+	   			(eq, ":object_fac", "fac_gondor"), #If Gondor, Allies are Gondor
+	   			(assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
+	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
+	   			(assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
+	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
+
+	   			(assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
+	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
+	   			(assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
+	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0), 
+   			(else_try), #Dale
+	   			(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
+	   			(assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
+	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
+	   			(assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
+	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
+
+	   			(assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
+	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
+	   			(assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
+	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
+   			(try_end),
+		
+		#This is where we check what to spawn depending on player level (Med/High Tier)
+	        (try_begin),
+	        	(ge, ":level", 25),
+	        	#(assign, ":ally_melee_troop",   ":allies_melee_tier_2"),  #Commented out - If we want to upgrade allies too.
+	        	#(assign, ":ally_ranged_troop",  ":allies_archer_tier_2"), #Commented out - If we want to upgrade allies too.
+	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
+	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
+	        (else_try),
+	        	(assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
+	        	(assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
+	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
+	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
+	        (try_end),
+
+	    #This assigns the scene
+   			(assign, ":sea_battle_scene", "scn_battlefield3"),
+   			(modify_visitors_at_site, ":sea_battle_scene"),
+
+		#Set Entry and Number of Defenders. Change the last numbers in `set_visitors` to change the amount of troops to spawn.
+
+	        (reset_visitors),
+	        (set_jump_entry, 0), 
+	        (set_visitor, 0, "trp_player"),
+
+			(try_for_range, ":melee_allies", 2, 8), #Entry 2 - 7
+				(set_visitors, ":melee_allies", ":ally_melee_troop", 3), #Ally
+			(try_end),
+
+			(try_for_range, ":ranged_allies", 8, 11),  #Entry 8 - 10
+				(set_visitors, ":ranged_allies", ":ally_ranged_troop", 3), #Ally
+			(try_end),
+
+			(try_for_range, ":melee_enemies", 12,18 ),  #Entry 12 - 17
+				(set_visitors, ":melee_enemies", ":enemy_melee_troop", 5), #Enemy
+			(try_end),	    
+
+			(try_for_range, ":ranged_enemies", 18,21),  #Entry 18 - 20
+				(set_visitors, ":ranged_enemies", ":enemy_ranged_troop", 5), #Enemy
+			(try_end),	 
+
+	        (set_party_battle_mode),
+	        (set_battle_advantage, 0),
+	        (assign, "$g_battle_result", 0),
+	        (set_jump_mission,"mt_sea_battle_quest_good"),
+	        (jump_to_scene,":sea_battle_scene"),
+	        (change_screen_mission),
+	       ]),
+
+	 #If evil:
+	 ("sb_attack_the_town",[
+	 	(neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+	 	], "Raid the City!",
+	     [  
+	     	#(quest_get_slot, ":target_center", "qst_blank_quest_03", slot_quest_target_center),
+	     	(quest_get_slot, ":object_troop", "qst_blank_quest_03", slot_quest_object_center),
+			#(store_faction_of_party, ":target_fac", ":target_center"),
+			(store_faction_of_party, ":object_fac", ":object_troop"),
+	       	(store_character_level, ":level", "trp_player"),
+	     	
+	    #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
+		#Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
+	       	(try_begin),
+	   			(eq, ":object_fac", "fac_umbar"), #If Umbar, Allies are Umbar
+	   			(assign, ":allies_melee_tier_1", "trp_corsair_marauder"),
+	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_corsair_marauder",0), #Commented out - If we want to upgrade allies too.
+	   			(assign, ":allies_archer_tier_1", "trp_marksman_of_umbar"),
+	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_marksman_of_umbar",0),   #Commented out - If we want to upgrade allies too.
+
+	   			(assign, ":enemy_melee_tier_1", "trp_pelargir_infantry"),
+	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_pelargir_infantry",0),
+	   			(assign, ":enemy_archer_tier_1", "trp_pelargir_marine"),
+	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_pelargir_marine",0), 
+   			(else_try), #Rhun
+	   			(eq, ":object_fac", "fac_dale"), #If Rhun, Allies are Rhun
+	   			(assign, ":allies_melee_tier_1", "trp_rhun_tribal_warrior"),
+	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_rhun_tribal_warrior",0), #Commented out - If we want to upgrade allies too.
+	   			(assign, ":allies_archer_tier_1", "trp_rhun_horse_archer"),
+	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_rhun_horse_archer",0),   #Commented out - If we want to upgrade allies too.
+
+	   			(assign, ":enemy_melee_tier_1", "trp_merchant_guard_of_dale"),
+	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_merchant_guard_of_dale",0),
+	   			(assign, ":enemy_archer_tier_1", "trp_laketown_bowmen"),
+	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_laketown_bowmen",0), 
+   			(try_end),
+
+		#This is where we check what to spawn depending on player level (Med/High Tier)
+	        (try_begin),
+	        	(ge, ":level", 25),
+	        	#(assign, ":ally_melee_troop",   ":allies_melee_tier_2"),  #Commented out - If we want to upgrade allies too.
+	        	#(assign, ":ally_ranged_troop",  ":allies_archer_tier_2"), #Commented out - If we want to upgrade allies too.
+	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
+	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
+	        (else_try),
+	        	(assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
+	        	(assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
+	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
+	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
+	        (try_end),
+
+		#This assigns the scene
+   			(assign, ":sea_battle_scene", "scn_battlefield3"),
+   			(modify_visitors_at_site, ":sea_battle_scene"),
+
+		#Set Entry and Number of Defenders. Change the last numbers in `set_visitors` to change the amount of troops to spawn.
+
+	        (reset_visitors),
+	        (set_jump_entry, 11), 
+	        (set_visitor, 11, "trp_player"),
+
+			(try_for_range, ":melee_enemies", 2, 8), #Entry 2 - 7
+				(set_visitors, ":melee_enemies", ":enemy_melee_troop", 5), #Enemy
+			(try_end),
+
+			(try_for_range, ":ranged_enemies", 8, 11), #Entry 8 - 10
+				(set_visitors, ":ranged_enemies", ":enemy_ranged_troop", 5), #Enemy
+			(try_end),
+
+			(try_for_range, ":melee_allies", 12,18 ), #Entry 12 - 17
+				(set_visitors, ":melee_allies", ":ally_melee_troop", 3), #Ally
+			(try_end),	    
+
+			(try_for_range, ":ranged_allies", 18,21), #Entry 18 - 20
+				(set_visitors, ":ranged_allies", ":ally_ranged_troop", 3), #Ally
+			(try_end),	 
+
+	        (set_party_battle_mode),
+	        (set_battle_advantage, 0),
+	        (assign, "$g_battle_result", 0),
+	        (set_jump_mission,"mt_sea_battle_quest_evil"),
+	        (jump_to_scene,":sea_battle_scene"),
+	        (change_screen_mission),
+	       ]),
+	   ("go_away",[],"Leave and regroup for now.",[(change_screen_map)]),
+	 ]),
+
+
+("sea_battle_quest_results",mnf_scale_picture|mnf_disable_all_keys,
+	    "{s9}",
+	    "none",
+	    [
+	      (try_begin),
+	        (eq, "$g_battle_result", 1),
+	        (try_begin),
+	        	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+	        	(str_store_string, s9, "@You have successfully defended the city!"),
+	        (else_try),
+	        	(str_store_string, s9, "@You have successfully raided the city!"),
+	        (try_end),
+			(call_script, "script_succeed_quest", "qst_blank_quest_03"),
+		  (else_try),
+	      	(neq, "$g_battle_result", 1),
+	        (call_script, "script_fail_quest", "qst_blank_quest_03"),
+	        (try_begin),
+	        	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
+	        	(str_store_string, s9, "@You have failed to defend the city!"),
+	        (else_try),
+	        	(str_store_string, s9, "@You have failed to raid the city!"),
+	        (try_end),
 	        (party_is_active,"$g_encountered_party"),
 	        (call_script, "script_safe_remove_party","$g_encountered_party"),
 	      (try_end),

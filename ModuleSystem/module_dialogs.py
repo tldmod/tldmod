@@ -5341,6 +5341,35 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
 
+## Kham Sea Battle INIT START
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_blank_quest_03"),
+  (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+  (quest_get_slot, ":quest_object_center", "qst_blank_quest_03", slot_quest_object_center),
+  (str_store_party_name, s6, ":quest_target_center"),
+  (str_store_party_name, s7, ":quest_object_center"),
+  (try_begin),
+    (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@Pirates are trying to attack {s6}! Talk to the guild master there to lend your hand. (PLACEHOLDER)"),
+  (else_try),
+    (str_store_string, s5, "@Let us attack {s6}! Talk to the guild master in {s7} to lend your troops (PLACEHOLDER)"),
+  (try_end)],
+ "{s5}", "lord_mission_told",[
+    (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
+    (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
+    (str_store_troop_name_link, s9, "$g_talk_troop"),
+    (str_store_party_name_link, s3, ":quest_target_center"),
+    (str_store_party_name_link, s4, ":quest_object_center"),
+    (try_begin),
+      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (str_store_string, s7, "@{s9} asked you to help defend {s3}. Talk to the guild master there to lend your hand. (PLACEHOLDER)"),
+    (else_try),
+      (str_store_string, s7, "@{s9} asked you to attack {s3}. Talk to the guild master in {s4} to lend your hand.(PLACEHOLDER)"),
+    (try_end),
+    (setup_quest_text,"$random_quest_no"),
+    (str_store_string, s2, "@{s7}")]],
+
+## Sea Battle INIT END
 
 #### Kham Destroy Scout Camp Quests Start ####
 
@@ -10073,6 +10102,39 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone|plyr,"mayor_deliver_iron_completed", [], "I do what I can.", "close_window",[(call_script,"script_stand_back"),]],
 
+#Kham - Sea Battle - Volunteer START
+[anyone|plyr,"mayor_talk", [(check_quest_active,"qst_blank_quest_03"),
+                            (quest_slot_eq, "qst_blank_quest_03", slot_quest_object_center, "$g_encountered_party"),
+                            (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+                            (str_store_party_name, s4, ":quest_target_center"),
+                            (quest_get_slot, ":giver", "qst_blank_quest_03", slot_quest_object_troop),
+                            (str_store_troop_name, s3, ":giver"),
+                            (try_begin),
+                              (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+                              (str_store_string, s5, "@I was asked by Lord {s3} to help defend {s4} from incoming marauders.(PLACEHOLDER)"),
+                            (else_try),
+                              (str_store_string, s5, "@I was asked by Lord {s3} to help attack {s4}. (PLACEHOLDER)"),
+                            (try_end),
+                            ],
+"{s5}", "mayor_sea_battle_start",[]],
+
+[anyone, "mayor_sea_battle_start", [],
+  "Ok. Are you ready?", "mayor_sea_battle_question", []],
+
+[anyone|plyr, "mayor_sea_battle_question",[],
+  "Yes, I am.", "mayor_sea_battle_yes", []],
+
+[anyone|plyr, "mayor_sea_battle_question", [],
+  "I need some time to get ready.", "mayor_sea_battle_no", []],
+
+[anyone, "mayor_sea_battle_yes", [],
+  "Have your troops board the ship now, we begin soon.", "close_window", 
+    [(jump_to_menu, "mnu_sea_battle_quest")]],
+
+[anyone, "mayor_sea_battle_no", [],
+  "Please hurry, we don't have much time.", "close_window", []],
+
+#Kham - Sea Battle - Volunteer END
 #Kham - Reinforce Center Completion
 
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_blank_quest_16"),

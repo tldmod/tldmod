@@ -263,6 +263,7 @@ lord_talk_ask_location_3
 lord_talk_ask_about_war_2
 lord_talk_ask_about_war_details
 party_encounter_lord_hostile_ultimatum_surrender
+lord_mission_told
 lord_mission_destroy_scout_camp_a
 lord_mission_destroy_scout_camp_accept
 lord_mission_destroy_scout_camp_reject
@@ -299,7 +300,6 @@ lord_mission_capture_troll_infoc
 lord_mission_capture_troll_accepted
 lord_mission_capture_troll_rejected
 lord_tell_mission_kill_troll
-lord_mission_told
 lord_mission_kill_troll_info_a
 lord_mission_kill_troll_info_b
 lord_mission_investigate_fangorn_0
@@ -484,6 +484,10 @@ mayor_talk
 lord_deal_with_night_bandits_completed
 mayor_deliver_iron
 mayor_deliver_iron_completed
+mayor_sea_battle_start
+mayor_sea_battle_question
+mayor_sea_battle_yes
+mayor_sea_battle_no
 mayor_reinforced_center_finished
 mayor_deliver_food
 mayor_deliver_food_completed

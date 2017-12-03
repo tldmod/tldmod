@@ -43,9 +43,9 @@ qst_deliver_gift Deliver_a_{s4}_of_{s1}_from_{s2}_to_{s3} 2 You_have_requested_t
 qst_ring_hunters Ring_Hunters 0 {!}None 
 qst_ring_hunters2 Ring_Hunters_-_Completed 0 {!}None 
 qst_deliver_message_hobbit Concerning_Hobbits 0 {!}None 
-qst_blank_quest_01 Defend_Refugees 0 {!}defend_nobles_against_peasantse 
+qst_blank_quest_01 Defend_Refugees 0 {!}None 
 qst_blank_quest_02 Hunt_Down_Refugees 0 {!}None 
-qst_blank_quest_03 Placeholder 0 {!}Placeholder 
+qst_blank_quest_03 Sea_Battle 0 {!}None 
 qst_blank_quest_04 Placeholder 0 {!}Placeholder 
 qst_blank_quest_05 Placeholder 0 {!}Placeholder 
 qst_blank_quest_06 Placeholder 0 {!}Placeholder 

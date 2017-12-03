@@ -1957,6 +1957,26 @@ triggers = [
 
       (ge, ":sum_removed", 3),
 
+      (assign, ":continue_2", 0),
+
+      (try_begin),
+        (party_is_active, ":quest_target_center"),
+        (assign, ":continue_2", 1),
+      (else_try),
+        (call_script, "script_cancel_quest", ":quest"),
+        (display_message, "@One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.", color_bad_news),
+        (set_show_messages, 0),
+        (call_script, "script_safe_remove_party", "$qst_raider_party_1"),
+        (call_script, "script_safe_remove_party", "$qst_raider_party_2"),
+        (call_script, "script_safe_remove_party", "$qst_raider_party_3"),
+        (call_script, "script_safe_remove_party", "$qst_refugee_party_1"),
+        (call_script, "script_safe_remove_party", "$qst_refugee_party_2"),
+        (call_script, "script_safe_remove_party", "$qst_refugee_party_3"),
+        (set_show_messages, 1),
+      (try_end),
+
+      (eq, ":continue_2", 1),
+
       (try_begin),
         (eq, ":quest", "qst_blank_quest_01"),
           (try_begin),

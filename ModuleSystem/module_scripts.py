@@ -6138,6 +6138,30 @@ scripts = [
 				(assign, ":result", ":quest_no"),	
 			(try_end),
 		(else_try),
+			
+			#Kham - Sea Battle (both sides)
+			(eq, cheat_switch, 1),
+			(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham_cheat_mode
+			(eq, "$tld_war_began", 1),
+			(eq, ":quest_no", "qst_blank_quest_03"),
+			(try_begin),
+				(neg|check_quest_active, "qst_blank_quest_03"),
+				(call_script, "script_cf_init_quest_sea_battle"),
+
+				(assign, ":quest_object_troop", reg55),
+				(assign, ":quest_object_center", reg56),	
+				(assign, ":quest_target_center", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
+
+				(assign, ":result", ":quest_no"),
+			(try_end),
+
+		(else_try),
 		
 		  ##Kham: Defend village
           (eq, ":quest_no", "qst_defend_village"), 
@@ -23272,6 +23296,82 @@ command_cursor_scripts = [
     #(display_log_message, "@Target: {reg57} -- Garrison: {reg2}", color_good_news),
 
 ]),
+
+#script_cf_init_quest_sea_battle
+("cf_init_quest_sea_battle", [
+
+	(store_character_level, ":player_level", "trp_player"),
+	(ge, ":player_level", 15),
+
+	(ge, "$g_talk_troop_faction_relation", 0),
+	
+	(try_begin),
+		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+		(neq, ":side", faction_side_good),
+		(assign, ":quest_side", 1), #1 is Evil
+	(else_try),
+		(assign, ":quest_side", 0), #0 is Good
+	(try_end),
+
+	(assign, ":continue", 0),
+
+	(try_begin),
+		(eq, ":quest_side", 0),
+		(this_or_next|eq, "$g_talk_troop", "trp_knight_1_3"), #Imrahil
+		(this_or_next|eq, "$g_talk_troop", "trp_gondor_lord"), #Denethor
+		(this_or_next|eq, "$g_talk_troop", "trp_knight_1_4"), #Orthalion (Pelargir Lord)
+		(this_or_next|eq, "$g_talk_troop", "trp_dale_lord"), #Brand
+		(is_between, 	  "$g_talk_troop", "trp_knight_5_1", "trp_knight_5_6"), # Other Dale Lords 
+		(assign, ":continue", 1),
+	(else_try),
+		(eq, ":quest_side", 1),
+		(this_or_next|eq, "$g_talk_troop", "trp_umbar_lord"), #Tulmir
+		(this_or_next|eq, "$g_talk_troop", "trp_rhun_lord"), #Jarl_Helcaroth
+		(this_or_next|is_between, "$g_talk_troop", "trp_knight_3_1", "trp_knight_3_6"), #Umbar Lords
+		(is_between, "$g_talk_troop", "trp_knight_2_11", "trp_knight_2_16"), #Rhun Lords
+		(assign, ":continue", 1),
+	(try_end),
+
+	(eq, ":continue", 1),
+
+	(assign, ":cur_target_center", "p_town_edhellond"), #Default to Edhellond
+	(try_begin),
+		(eq, "$g_talk_troop_faction", "fac_umbar"),
+		(assign, ":cur_object_center", "p_town_umbar_camp"), #If Umbar, Talk to Umbar Guild Master
+	(else_try),
+		(eq, "$g_talk_troop_faction", "fac_rhun"),
+		(assign, ":cur_object_center", "p_town_rhun_north_camp"), #If Rhun, Talk to Rhun North Camp GM.
+	(else_try),
+		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
+		(			  eq, "$g_talk_troop_faction", "fac_dale"),
+		(assign, ":cur_object_center", ":cur_target_center"), #if Good, Target is Object
+	(try_end),
+	(store_random_in_range, ":rand", 0,100),
+	(try_begin),
+		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
+		(eq, "$g_talk_troop_faction", "fac_umbar"),
+		(try_begin),
+			(ge, ":rand", 50),
+			(assign, ":cur_target_center", "p_town_dol_amroth"),
+		(try_end),
+	(else_try),
+		(this_or_next|eq, "$g_talk_troop_faction", "fac_dale"),
+		(eq, "$g_talk_troop_faction", "fac_rhun"),
+		(assign, ":cur_target_center", "p_town_esgaroth"),
+	(try_end),
+
+	(assign, reg55, "$g_talk_troop"), #quest_object_troop
+	(assign, reg56, ":cur_object_center"),	#quest_object_center
+	(assign, reg57, ":cur_target_center"),	#quest_target_center
+	(assign, reg58, 10),						#quest_importance
+	(assign, reg59, 500),					#quest_xp_reward
+	(assign, reg60, 800),					#quest_gold_reward
+	(assign, reg61, 15),						#quest_rank_reward
+	(assign, reg62, 20),					#quest_expiration_days
+	(assign, reg63, 15),					#quest_dont_give_again_period
+
+
+]),		
 
 #script_troop_talk_presentation
 #Shows a hero/enemy talking during battle

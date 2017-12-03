@@ -268,7 +268,7 @@ quests = [
 
 # Defend Refugees
 ("blank_quest_01", "Defend Refugees", 0,
-  "{!}defend_nobles_against_peasantse"
+  "{!}None"
 ),
 
 # Hunt Down Refugees
@@ -276,8 +276,8 @@ quests = [
   "{!}None"
 ),
 
-("blank_quest_03", "Placeholder", 0,
-  "{!}Placeholder"
+("blank_quest_03", "Sea Battle", 0,
+  "{!}None"
 ),
 
 ("blank_quest_04", "Placeholder", 0,
