@@ -27,9 +27,9 @@ scene_props = [
 #  ("container_small_chest",sokf_type_container,"package","bobaggage", []),
 ("container_small_chest",0,"package","bobaggage", []),
 #  ("container_chest_b",sokf_type_container,"chest_b","bo_chest_b", []),
-("container_chest_b",0,"chest_b","bo_chest_b", []),
+("container_chest_b",0,"chest_b_new","bo_chest_b", []),
 #  ("container_chest_c",sokf_type_container,"chest_c","bo_chest_c", []),
-("container_chest_c",0,"chest_c","bo_chest_c", []),
+("container_chest_c",0,"chest_c_new","bo_chest_c", []),
 ("player_chest",sokf_type_container,"player_chest","bo_player_chest", []),
 ("locked_player_chest",0,"player_chest","bo_player_chest", []),
 
@@ -2533,24 +2533,21 @@ scene_props = [
        (try_end),])]),	   
 #InVain re-used map icons for ambience scenes end
 	
-#InVain from 'particles_2.brf': some vanilla M&B items/props
-	( "honey_pot"                                  ,0,"honey_pot","0",[]),
-	( "butter_pot"                                 ,0,"butter_pot","0",[]),
-	( "apple_basket"                               ,0,"apple_basket","bo_apple_basket",[]),
-	( "sausages"                                   ,0,"sausages","0",[]),
-	( "boat_sail_on"                               ,0,"new_boat_sail_on","bo_new_boat_sail_on",[]),
-	( "boat_sail_off"                              ,0,"new_boat_sail_off","bo_new_boat_sail_off",[]),
+( "honey_pot",0,"honey_pot","0",[]),
+( "butter_pot",0,"butter_pot","0",[]),
+( "apple_basket",0,"apple_basket","bo_apple_basket",[]),
+( "sausages",0,"sausages","0",[]),
+( "boat_sail_on",0,"new_boat_sail_on","bo_new_boat_sail_on",[]),
+( "boat_sail_off",0,"new_boat_sail_off","bo_new_boat_sail_off",[]),
 
-# from '': begin (OpenBRF)
-	( "tree_mirkwood_a"                            ,0,"tree_mirkwood_a","bo_tree_mallorn_a",[]),
-	( "tree_mirkwood_b"                            ,0,"tree_mirkwood_b","bo_tree_mallorn_b",[]),
-	( "tree_mirkwood_c"                            ,0,"tree_mirkwood_c","bo_tree_mallorn_c",[]),
-	( "tree_mirkwood_roots_1"                      ,0,"tree_mirkwood_roots_1","0",[]),
-	( "tree_mirkwood_roots_2"                      ,0,"tree_mirkwood_roots_2","0",[]),
-	( "tree_mirkwood_roots_3"                      ,0,"tree_mirkwood_roots_3","0",[]),
-	( "tree_mirkwood_roots_4"                      ,0,"tree_mirkwood_roots_4","0",[]),
-	( "dolmen"                                     ,0,"dolmen","0",[]),
-# from '': end (OpenBRF)
+( "tree_mirkwood_a",0,"tree_mirkwood_a","bo_tree_mallorn_a",[]),
+( "tree_mirkwood_b",0,"tree_mirkwood_b","bo_tree_mallorn_b",[]),
+( "tree_mirkwood_c",0,"tree_mirkwood_c","bo_tree_mallorn_c",[]),
+( "tree_mirkwood_roots_1",0,"tree_mirkwood_roots_1","0",[]),
+( "tree_mirkwood_roots_2",0,"tree_mirkwood_roots_2","0",[]),
+( "tree_mirkwood_roots_3",0,"tree_mirkwood_roots_3","0",[]),
+( "tree_mirkwood_roots_4",0,"tree_mirkwood_roots_4","0",[]),
+( "dolmen",0,"dolmen","0",[]),
 
 ("orc_gate_destructible",sokf_destructible,"orc_gate_destructible","bo_orc_gate_destructible",   [
    (ti_on_scene_prop_init, [

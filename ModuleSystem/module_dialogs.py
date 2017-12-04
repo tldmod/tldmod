@@ -5445,7 +5445,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (eq,"$random_quest_no","qst_defend_village"),
   (quest_get_slot, ":quest_object_center", "qst_defend_village", slot_quest_object_center),
   (str_store_party_name,12,":quest_object_center")],
-    "{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.", "lord_mission_defend_village_a",
+    "{playername}, we have received reports from our scouts that a raiding party is on its way to a village near {s12}.", "lord_mission_defend_village_a",
 []],
 
 [anyone|plyr,"lord_mission_defend_village_a", [],
@@ -5509,7 +5509,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (assign,":raid_village_faction", "fac_rohan"), ## Rohan is the closest to areas where elves would mostly be.
   (try_end),
   (str_store_faction_name,s3,":raid_village_faction")],
-    "{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?", "lord_mission_raid_village_a",
+    "{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?", "lord_mission_raid_village_a",
 []],
 
 [anyone|plyr,"lord_mission_raid_village_a", [],
