@@ -23303,14 +23303,16 @@ command_cursor_scripts = [
 	(store_character_level, ":player_level", "trp_player"),
 	(ge, ":player_level", 15),
 
-	(ge, "$g_talk_troop_faction_relation", 0),
+	#(ge, "$g_talk_troop_faction_relation", 0),
 	
 	(try_begin),
 		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
 		(neq, ":side", faction_side_good),
 		(assign, ":quest_side", 1), #1 is Evil
+		(display_message, "@DEBUG: Side Evil"),
 	(else_try),
 		(assign, ":quest_side", 0), #0 is Good
+		(display_message, "@DEBUG: Side Good"),
 	(try_end),
 
 	(assign, ":continue", 0),
@@ -23324,7 +23326,6 @@ command_cursor_scripts = [
 		(is_between, 	  "$g_talk_troop", "trp_knight_5_1", "trp_knight_5_6"), # Other Dale Lords 
 		(assign, ":continue", 1),
 	(else_try),
-		(eq, ":quest_side", 1),
 		(this_or_next|eq, "$g_talk_troop", "trp_umbar_lord"), #Tulmir
 		(this_or_next|eq, "$g_talk_troop", "trp_rhun_lord"), #Jarl_Helcaroth
 		(this_or_next|is_between, "$g_talk_troop", "trp_knight_3_1", "trp_knight_3_6"), #Umbar Lords
@@ -23371,7 +23372,75 @@ command_cursor_scripts = [
 	(assign, reg63, 15),					#quest_dont_give_again_period
 
 
-]),		
+]),
+
+#script_quest_sea_battle_consequences
+#arg1: 0: Mission failed           Not 0: Mission succeeded
+#Dirties s10,s14,s11,s13
+
+("quest_sea_battle_consequences", [
+	
+	(store_script_param_1, ":success"),
+
+    #Faction Strength Changes - Balance Document can be found on Google Drive: https://goo.gl/CErgSN
+    (str_clear, s10),
+    (str_clear, s14),
+    (str_clear, s11),
+    (str_clear, s13),
+    (try_begin),
+        (eq,":success",0),
+        (str_store_string, s10, "@have taken measure of your faction's current strength and has grown bolder."),
+        (str_store_string, s14, "@loses Faction Strength as supply lines were disrupted."),
+        (assign,":news_color",color_bad_news),
+    (else_try),
+        (str_store_string, s10, "@loses Faction Strength due to the destruction of their camp."),
+        (str_store_string, s14, "@gain Faction Strength as news of your victory spreads."),
+        (assign,":news_color",color_good_news),
+    (try_end),
+
+    (quest_get_slot, ":quest_giver_troop", "qst_blank_quest_03", slot_quest_object_troop),
+    (store_troop_faction, ":quest_giver_faction", ":quest_giver_troop"),
+
+    (try_begin),
+    	(eq, ":quest_giver_faction", "fac_gondor"),
+    	(assign, ":enemy_faction", "fac_umbar"),
+    (else_try),
+    	(assign, ":enemy_faction", "fac_rhun"),
+    (try_end),
+    (str_store_faction_name, s11, ":enemy_faction"),    
+    (str_store_faction_name, s13, ":quest_giver_faction"),
+    (display_message,"@{s11} {s10}",":news_color"),
+    (display_message,"@{s13} {s14}",":news_color"),
+
+    (faction_get_slot,":enemy_strength",":enemy_faction",slot_faction_strength_tmp), 
+    (faction_get_slot,":giver_strength",":quest_giver_faction",slot_faction_strength_tmp),
+
+    (store_character_level, ":level", "trp_player"),
+    (val_max,":level",15), # ":level" should not be less than 15
+    (val_min,":level",99),
+    (try_begin),
+        (try_begin),  # Failure: Enemy Win Min: 125; Max: 150 - Hero Loss Min: 275; Max: 300
+            (eq,":success",0), 
+            (val_mul, ":level", 7),
+            (val_add, ":level", 80),
+            (val_add, ":enemy_strength", ":level"),
+
+            (val_add, ":level", 80),
+            (val_sub, ":giver_strength", ":level"),
+        (else_try),   #Success: Enemy Loss Min: 93; Max: 108 - Hero Win Min: 148; Max: 163
+            (val_mul, ":level",10),
+            (val_add, ":level", 60),
+            (val_sub, ":enemy_strength", ":level"),
+
+            (val_add, ":level", 55),
+            (val_add, ":giver_strength", ":level"),
+        (try_end),
+    (try_end),
+
+    (faction_set_slot,":quest_giver_faction",slot_faction_strength_tmp,":giver_strength"),
+    (faction_set_slot,":enemy_faction",slot_faction_strength_tmp,":enemy_strength"), 
+]),
+		
 
 #script_troop_talk_presentation
 #Shows a hero/enemy talking during battle

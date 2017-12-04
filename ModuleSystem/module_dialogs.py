@@ -2821,6 +2821,41 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 
 ## Hunt Down Refugees Completion Dialogues END - Kham
+#### Kham Sea Battle Quest Completion Start ####
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_03"),    
+    (check_quest_succeeded, "qst_blank_quest_03"),
+    (quest_get_slot, ":giver_troop", "qst_blank_quest_03", slot_quest_giver_troop),
+    (eq, "$g_talk_troop", ":giver_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (str_store_party_name,12,":quest_target_center")],
+"Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.", "lord_generic_mission_completed",[
+
+    (call_script,"script_quest_sea_battle_consequences",1),
+    (call_script, "script_finish_quest", "qst_blank_quest_03", 100),
+    ]],
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_03"),
+    (check_quest_failed, "qst_blank_quest_03"),
+    (quest_get_slot, ":giver_troop", "qst_blank_quest_03", slot_quest_giver_troop),
+    (eq, "$g_talk_troop", ":giver_troop"),
+    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (str_store_faction_name,s12,":quest_target_center")],
+"Our scouts near {s12}'s camp saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.", "sea_battle_quest_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -2),
+  
+    (call_script,"script_quest_sea_battle_consequences",0),
+    (cancel_quest, "qst_blank_quest_03"),
+    ]],
+
+[anyone|plyr, "sea_battle_quest_failed",[],
+  "I will do better next time.", "close_window",[],
+  ],
+
+
+#### Kham Sea Battle Quest Completion End ####
 
 
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),
@@ -3287,6 +3322,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     # (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 3),
     # (add_xp_as_reward, 100),
     (call_script, "script_finish_quest", "qst_lend_companion", 100),
+    (add_xp_to_troop, 200, ":quest_target_troop"), #Lets give em XP
     (str_store_troop_name,s14,":quest_target_troop"),
     (troop_get_type, reg3, ":quest_target_troop"),
     (try_begin),
@@ -10104,6 +10140,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 #Kham - Sea Battle - Volunteer START
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_blank_quest_03"),
+                            (neg|check_quest_succeeded, "qst_blank_quest_03"),
                             (quest_slot_eq, "qst_blank_quest_03", slot_quest_object_center, "$g_encountered_party"),
                             (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
                             (str_store_party_name, s4, ":quest_target_center"),

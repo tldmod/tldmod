@@ -1,4 +1,4 @@
-1507
+1509
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -630,6 +630,8 @@ qstr_{s3}___nothing_added {s3}_-_nothing_added
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
 qstr_DEBUG:_{reg0}_troop_ DEBUG:_{reg0}_troop_stacks_of_{s1}_found
 qstr_Raiders Raiders
+qstr_DEBUG:_Side_Evil DEBUG:_Side_Evil
+qstr_DEBUG:_Side_Good DEBUG:_Side_Good
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
@@ -699,12 +701,10 @@ qstr_battle_won_triggered battle_won_triggered_-_Good
 qstr_battle_won_triggered_ battle_won_triggered_-_Evil
 qstr_You_receive_word_tha You_receive_word_that_Beorning_villages_were_attacked._Beornings_lose_faction_strength
 qstr_You_receive_word_that You_receive_word_that_the_Ring_Hunter_Leaders_were_seen_travelling_towards_Mordor,_a_chest_in_tow._Mordor_gains_faction_strength.
-qstr_DEBUG:_Umbar_Troops_ DEBUG:_Umbar_Troops_Spawned
-qstr_DEBUG:_Rhun_Troops_S DEBUG:_Rhun_Troops_Spawned
 qstr_Enemy_reinforcements Enemy_reinforcements_have_arrived
-qstr_DEBUG:_Gondor_Troops DEBUG:_Gondor_Troops_Spawned
-qstr_DEBUG:_Dale_Troops_S DEBUG:_Dale_Troops_Spawned
+qstr_All_hands_on_deck! All_hands_on_deck!
 qstr_Ally_reinforcements_ Ally_reinforcements_have_arrived
+qstr_Defend_the_City! Defend_the_City!
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
 qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode
 qstr_DEBUG:_Attackers_do_ DEBUG:_Attackers_do_not_stall_on_ladders_triggered
@@ -973,6 +973,8 @@ qstr_What_did_I_do_to_des What_did_I_do_to_deserve_this?
 qstr_I_suppose_it_ll_make I_suppose_it'll_make_for_a_good_story,_at_least...
 qstr__{s17} ,_{s17}
 qstr_You_retreated_from_b You_retreated_from_battle.
+qstr_DEBUG:_ENEMY_FINISHE DEBUG:_ENEMY_FINISHED_-_NEXT_MENU_Total_Vic
+qstr_DEBUG:_ENEMY_FINISHED DEBUG:_ENEMY_FINISHED_2_-_NEXT_MENU_Total_Vi
 qstr_{s9}_wants_you_to_fo {s9}_wants_you_to_follow_his_army_until_further_notice.
 qstr_{s8}_of_{s9} {s8}_of_{s9}
 qstr__Your_own_banner_fli _Your_own_banner_flies_over_the_castle_gate.

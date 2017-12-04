@@ -2963,15 +2963,6 @@ mission_templates = [ # not used in game
   custom_track_companion_casualties,
   common_battle_healing,
   common_battle_on_player_down,
-  common_battle_tab_press,
-  (ti_question_answered, 0, 0, [],
-       [(store_trigger_param_1,":answer"),
-        (eq,":answer",0),
-        (assign, "$pin_player_fallen", 0),
-        (str_store_string, s5, "str_retreat"),
-        (call_script, "script_simulate_retreat", 5, 20),
-        (call_script, "script_count_mission_casualties_from_agents"),
-        (finish_mission,0),]),
 
   # Make the teams enemies...
   (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0)]),
@@ -2986,7 +2977,7 @@ mission_templates = [ # not used in game
   ], 
   []),
 
-  (1, 60, ti_once, 
+ (1, 60, ti_once, 
   [
     (store_mission_timer_a,reg(1)),
     (ge,reg(1),10),
@@ -3001,6 +2992,40 @@ mission_templates = [ # not used in game
     (finish_mission, 1)
   ]),
 
+(ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (eq, "$battle_won", 1),
+      (jump_to_menu, "mnu_sea_battle_quest_results"),
+      (finish_mission),
+    (else_try),
+      (main_hero_fallen),
+      (jump_to_menu, "mnu_sea_battle_quest_results"),
+      (finish_mission),
+    (try_end),
+    # Apply health changes...
+    (try_begin),
+      (this_or_next|eq, "$battle_won", 1),
+      (main_hero_fallen),
+      (try_for_agents, ":agent"),
+        (gt, ":agent",0),
+        (agent_is_human, ":agent"),
+        (agent_get_troop_id, ":troop", ":agent"),
+        (troop_is_hero, ":troop"),
+        (this_or_next|eq, ":troop", "trp_player"),
+        (is_between, ":troop", companions_begin, companions_end),
+        (store_agent_hit_points,":hp",":agent",0),
+        (call_script, "script_get_max_skill_of_player_party", "skl_wound_treatment"),
+        (store_mul, ":medic", reg0, 5),
+        (val_add, ":hp", ":medic"),
+        (val_clamp, ":hp", 0, 100),
+        (troop_set_health, ":troop", ":hp"),
+      (try_end),
+      (call_script, "script_count_mission_casualties_from_agents"),
+    (try_end),
+  ]),
+
+
 ## Reinforcement Triggers - Note  that I am using the interloper code here, because this is a mission, instead of a battle between parties, 
 ## where there would actually be a pool for reinforcements. Also, because it is a relatively short battle, I put ally + enemy reinforcements instead of player reinforcements.
 
@@ -3009,8 +3034,6 @@ mission_templates = [ # not used in game
       (store_mission_timer_a, ":mission_time_a"),
       (store_random_in_range, ":ran_time", 15, 35),
       (ge, ":mission_time_a", ":ran_time"), #Random time between 15 - 35 secs
-      ],[
-      
       #This checks the faction of the quest giver.
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
@@ -3023,13 +3046,13 @@ mission_templates = [ # not used in game
         (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
         (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
         (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
-        (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
+      #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
       (else_try), #Dale
         (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
         (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
-        (assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
-        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
-        (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
+        (assign, ":enemy_archer_tier_1", "trp_rhun_tribal_infantry"),
+        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_tribal_infantry",0), 
+      #  (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
       (try_end),
 
       (store_character_level, ":level", "trp_player"),
@@ -3047,6 +3070,8 @@ mission_templates = [ # not used in game
       (assign, ":range_end", 15), #Change this number to change the number of troops spawned
       (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
+      (str_store_string, s30, "@All hands on deck!"),
+      (call_script, "script_troop_talk_presentation", ":enemy_melee_troop", 7, 0),
 
       (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
       (entry_point_get_position, pos5, ":enemy_entry"),
@@ -3067,6 +3092,9 @@ mission_templates = [ # not used in game
       (set_show_messages, 0),
       (team_give_order, ":team_enemy", grc_everyone, mordr_charge),
       (set_show_messages, 1),
+      ],
+    [
+      #(display_message, "@DEBUG: Enemy Reinforced!")
     ]
   ),
 
@@ -3076,8 +3104,6 @@ mission_templates = [ # not used in game
       (store_mission_timer_a, ":mission_time_a"),
       (store_random_in_range, ":ran_time", 35, 45),
       (ge, ":mission_time_a", ":ran_time"), #Random time between 35 - 45 secs
-      ],[
-      
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
@@ -3087,13 +3113,13 @@ mission_templates = [ # not used in game
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
-        (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
+      #  (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
         (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
-        (display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
+      #  (display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
       (try_end),
 
       (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
@@ -3102,6 +3128,8 @@ mission_templates = [ # not used in game
       (assign, ":range_end", 15),
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
+      (str_store_string, s30, "@Defend the City!"),
+      (call_script, "script_troop_talk_presentation", ":ally_melee_troop", 7, 0),
       (store_random_in_range, ":ally_entry", 2, 11),
       (entry_point_get_position, pos4, ":ally_entry"),
       (set_spawn_position, pos4), 
@@ -3118,6 +3146,9 @@ mission_templates = [ # not used in game
       (set_show_messages, 0),
       (team_give_order, ":team_ally", grc_everyone, mordr_charge),
       (set_show_messages, 1),
+      ],
+    [
+      #(display_message, "@DEBUG: Ally Reinforced!")
     ]
   ),
 
@@ -3249,8 +3280,6 @@ mission_templates = [ # not used in game
       (store_mission_timer_a, ":mission_time_a"),
       (store_random_in_range, ":ran_time", 15, 35),
       (ge, ":mission_time_a", ":ran_time"), #Random time between 15 - 35 secs
-      ],[
-      
       #This checks the faction of the quest giver.
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
@@ -3258,18 +3287,18 @@ mission_templates = [ # not used in game
       #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
       #Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
       (try_begin),
-        (eq, ":faction", "fac_gondor"),
+        (eq, ":faction", "fac_umbar"),
         (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
         (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
         (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
         (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
-        (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
-      (else_try), #Dale
+      #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
+      (else_try), #Rhun
         (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
         (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
-        (assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
-        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
-        (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
+        (assign, ":enemy_archer_tier_1", "trp_rhun_tribal_infantry"),
+        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_tribal_infantry",0), 
+       # (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
       (try_end),
 
       (store_character_level, ":level", "trp_player"),
@@ -3286,7 +3315,9 @@ mission_templates = [ # not used in game
 
       (assign, ":range_end", 15), #Change this number to change the number of troops spawned
       (assign, ":team_enemy", 1),
-      (display_message, "@Enemy reinforcements have arrived", color_bad_news),
+      (display_message, "@Ally reinforcements have arrived", color_good_news),
+      (str_store_string, s30, "@All hands on deck!"),
+      (call_script, "script_troop_talk_presentation", ":enemy_melee_troop", 7, 0),
 
       (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
       (entry_point_get_position, pos5, ":enemy_entry"),
@@ -3307,6 +3338,9 @@ mission_templates = [ # not used in game
       (set_show_messages, 0),
       (team_give_order, ":team_enemy", grc_everyone, mordr_charge),
       (set_show_messages, 1),
+      ],    
+    [
+      #(display_message, "@DEBUG: Enemy Reinforced!")
     ]
   ),
 
@@ -3316,24 +3350,22 @@ mission_templates = [ # not used in game
       (store_mission_timer_a, ":mission_time_a"),
       (store_random_in_range, ":ran_time", 35, 45),
       (ge, ":mission_time_a", ":ran_time"), #Random time between 35 - 45 secs
-      ],[
-      
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
       (try_begin),
-        (eq, ":faction", "fac_gondor"),
+        (eq, ":faction", "fac_umbar"),
         (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
-        (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
+        #(display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
         (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
-        (display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
+        #(display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
       (try_end),
 
 
@@ -3342,7 +3374,9 @@ mission_templates = [ # not used in game
 
       (assign, ":range_end", 15),
       (assign, ":team_ally", 0),
-      (display_message, "@Ally reinforcements have arrived", color_good_news),
+      (display_message, "@Enemy reinforcements have arrived", color_bad_news),
+      (str_store_string, s30, "@Defend the City!"),
+      (call_script, "script_troop_talk_presentation", ":ally_melee_troop", 7, 0),
       (store_random_in_range, ":ally_entry", 2, 11),
       (entry_point_get_position, pos4, ":ally_entry"),
       (set_spawn_position, pos4), 
@@ -3359,6 +3393,9 @@ mission_templates = [ # not used in game
       (set_show_messages, 0),
       (team_give_order, ":team_ally", grc_everyone, mordr_charge),
       (set_show_messages, 1),
+      ],    
+    [
+      #(display_message, "@DEBUG: Ally Reinforced!")
     ]
   ),
 
@@ -5853,16 +5890,13 @@ tld_remove_riderless_animals,
       (lt,":num_attackers",10)
       ],[
       (add_reinforcements_to_entry,3,10),]),
-  
-  ] + (is_a_wb_mt==1 and [
 
     (5, 0, ti_once, [
       (store_mission_timer_a, ":mission_time_a"),
       (store_random_in_range, ":ran_time", 45, 90),
       (ge, ":mission_time_a", ":ran_time"), #Random time between 45 - 90 secs
-      ],[
-      
-      (call_script, "script_find_theater", "p_main_party"),
+
+       (call_script, "script_find_theater", "p_main_party"),
 
       (assign, ":theater", reg0),
       (assign, ":interloper", 0),  #Interloper 0 = Default = Tribal Orcs
@@ -5991,10 +6025,10 @@ tld_remove_riderless_animals,
       (set_show_messages, 0),
       (team_give_order, ":team", grc_everyone, mordr_charge),
       (set_show_messages, 1),
+      ],
 
-]),
-
-] or []) + [
+      []
+  ),
 
   #AI Triggers
   (0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
