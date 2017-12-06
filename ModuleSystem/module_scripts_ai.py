@@ -1675,6 +1675,9 @@ ai_scripts = [
         (try_begin), 
           (eq, ":besieger_party", -1),
           (ge, ":cur_center_left_strength", ":min_strength_behind"),#stay inside if center strength is too low
+          #Kham - Test: DO Not patrol unless with host
+          (party_slot_eq, ":party_no", slot_party_type, spt_kingdom_hero_party),
+
           (ge, "$party_relative_strength", 60),
           (try_begin),
             (party_slot_eq, ":party_no", slot_party_ai_state, spai_patrolling_around_center),
@@ -1875,6 +1878,10 @@ ai_scripts = [
             (str_store_party_name_link, s1, ":ai_object"),
             (str_store_troop_name_link, s2, ":troop_no"),
             (str_store_faction_name_link, s3, ":faction_no"),
+            (store_faction_of_party, ":ai_object_faction", ":ai_object"),
+            (assign, "$besieged_center_for_menu", ":ai_object"),
+            (assign, "$besieged_by_troop_for_menu", ":troop_no"),
+            (assign, "$besieged_by_faction_for_menu", ":faction_no"),
             (try_begin),
               (store_relation, ":rel", "$players_kingdom", ":faction_no"),
               (gt, ":rel", 0),
@@ -1883,6 +1890,15 @@ ai_scripts = [
               (assign, ":news_color", color_bad_news),
             (try_end),
             (display_log_message, "@{s1} has been besieged by {s2} of {s3}.", ":news_color"),
+            (try_begin),
+              (call_script, "script_get_faction_rank", ":ai_object_faction"), 
+              (assign, ":rank_target", reg0), #rank points to rank number 0-9
+              (call_script, "script_get_faction_rank", ":faction_no"), 
+              (assign, ":rank_besieger", reg0), #rank points to rank number 0-9
+              (this_or_next|ge, ":rank_target",4),
+              (ge, ":rank_besieger",4),
+              (jump_to_menu, "mnu_center_besieged_event"),
+            (try_end),
             (try_begin),
               (store_faction_of_party, ":ai_object_faction", ":ai_object"),
               (this_or_next|party_slot_eq, ":ai_object", slot_town_lord, "trp_player"),

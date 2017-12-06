@@ -2948,16 +2948,23 @@ simple_triggers = [
 
 
 
-## Kham - War Council Trigger
+## Kham - War Council + Siege Reports Trigger
 
 (12,[
   (try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
-    (faction_slot_eq, ":faction_wc", slot_faction_war_council, 0),
     (call_script, "script_get_faction_rank", ":faction_wc"), 
     (assign, ":rank", reg0), #rank points to rank number 0-9
-    (ge, ":rank",8),
-    (jump_to_menu, "mnu_player_added_to_war_council"),
-    (faction_set_slot, ":faction_wc", slot_faction_war_council, 1),
+    (try_begin),
+      (faction_slot_eq, ":faction_wc", slot_faction_war_council, 0),
+      (ge, ":rank",8),
+      (jump_to_menu, "mnu_player_added_to_war_council"),
+      (faction_set_slot, ":faction_wc", slot_faction_war_council, 1),
+    (else_try),
+      (faction_slot_eq, ":faction_wc", slot_faction_siege_reports, 0),
+      (ge, ":rank", 4),
+      (faction_set_slot, ":faction_wc", slot_faction_siege_reports, 1),
+      (jump_to_menu, "mnu_player_added_to_siege_reports"),
+    (try_end),
   (try_end), #End Range
 ]),
 

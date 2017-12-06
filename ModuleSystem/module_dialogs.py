@@ -325,8 +325,8 @@ dialogs = [
     (le, ":int", 12)],
 "{s5}", "troll_goodbye",[]],
   
-[trp_easter_egg_troll, "troll_beaten", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")], "I bow to your wisdom, Master Baiter of Trolls!", "troll_talk_1",[]],
-[trp_easter_egg_troll, "troll_goodbye", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_rise")], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[(call_script,"script_stand_back"),]],
+[trp_easter_egg_troll, "troll_beaten", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "I bow to your wisdom, Master Baiter of Trolls!", "troll_talk_1",[]],
+[trp_easter_egg_troll, "troll_goodbye", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "TROLLOLOLOLOLOLOLOLOLOL!", "close_window",[(call_script,"script_stand_back"),]],
   
  
  #### HOBBITS CHATS... prelimintaries (mtarini)
@@ -661,7 +661,8 @@ dialogs = [
 #TLD STUFFF
 #####################################################################
 
-[pt_wild_troll|party_tpl, "start", [], "^^GROWL!^^", "close_window",[] ],
+[pt_wild_troll|party_tpl, "start", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[] ],
+[pt_raging_trolls|party_tpl, "start", [(agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[] ],
 
 
 ### COMPANIONS
@@ -11022,7 +11023,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 #[anyone|plyr,"prisoner_chat_00", [], "Guards, bring me that one!", "prisoner_chat_2",[]],
 
 # CppCoder bugfix: Trolls go rawr...
-[anyone,"prisoner_chat_00", [(store_conversation_troop,reg1),(troop_get_type, ":troll", reg1),(eq, ":troll", tf_troll)], "^^GROWL!^^", "close_window",[]],
+[anyone,"prisoner_chat_00", [(store_conversation_troop,reg1),(troop_get_type, ":troll", reg1),(eq, ":troll", tf_troll), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[]],
 
 [anyone,"prisoner_chat_00", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 [anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
@@ -11337,7 +11338,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 ######################################
 
 # CppCoder bugfix: Trolls go rawr...   
-[anyone,"member_chat_00", [(troop_get_type, ":troll", "$g_talk_troop"),(eq, ":troll", tf_troll)], "^^GROWL!^^", "close_window",[]],
+[anyone,"member_chat_00", [(troop_get_type, ":troll", "$g_talk_troop"),(eq, ":troll", tf_troll), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[]],
 
 [anyone,"member_chat_00", [(troop_slot_eq,  "$g_talk_troop", slot_troop_upkeep_not_paid,0)], # or else, incipit is different
 "Your orders, Commander?", "regular_member_talk",[]],
@@ -11450,6 +11451,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
                   	(eq, "$g_encountered_party_template", "pt_routed_allies"),
 			(troop_get_type, ":race", "$g_talk_troop"),
 			(eq, ":race", tf_troll),
+      (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue"),
 		  ], 
 		"^^GROWL!^^", "routed_allies_talk_troll", [] ],
 

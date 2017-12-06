@@ -2350,8 +2350,9 @@ agent_aim_overridden = 302
 slot_agent_horse_agent = 303
 slot_agent_rider_agent = 304
 
-#War Council Slots
+#Rank Trigger Slots
 slot_faction_war_council = 305
+slot_faction_siege_reports = 306
 
 #New Party Creation/Removal system
 slot_party_dormant = 306

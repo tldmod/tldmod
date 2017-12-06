@@ -5067,9 +5067,9 @@ game_menus = [
           (gt, ":num_ally_stacks", 0), # anybody survived
           (store_faction_of_party, ":ally_faction","$g_ally_party"),
           
-          (store_div, ":rank_increase", "$battle_renown_total", 5), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
+          (store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)  #changed from 5 - 2 (kham)
 #(display_message, "@Debug: giving rank points for helping allies."),		  
-		  (call_script, "script_increase_rank", ":ally_faction", "$g_relation_boost"), # MV - changed rank increase to renown calc
+		  (call_script, "script_increase_rank", ":ally_faction", ":rank_increase"), # MV - changed rank increase to renown calc #Kham- for some reason, it still uses  relation ($g_relation_boost). Changed to renown.
 #		  (call_script, "script_increase_rank", ":ally_faction", ":faction_reln_boost"), # increase rank of helped faction (mtarini)
           #(call_script, "script_change_player_relation_with_faction", ":ally_faction", ":faction_reln_boost"),
           (party_stack_get_troop_id, ":ally_leader", "$g_ally_party"),
@@ -8742,6 +8742,50 @@ game_menus = [
 ]),
 
 ## Kham - Player Added to War Council END
+## Kham - Player Added to Siege Reports
+
+("player_added_to_siege_reports",0,
+   "^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (set_fixed_point_multiplier, 100),
+        (position_set_x, pos0, 65),
+        (position_set_y, pos0, 30),
+        (position_set_z, pos0, 170),
+    	(try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
+    		(faction_slot_eq, ":faction_wc", slot_faction_siege_reports, 1),
+        	(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction_wc", pos0),
+			(call_script, "script_get_rank_title_to_s24", ":faction_wc"),
+			(str_store_faction_name, s2, ":faction_wc"),
+        (try_end)
+    ],
+
+   	[("player_added_to_siege_reports_close", [], "Close", [(change_screen_return)]),
+
+]),
+
+## Kham - Player Added to Siege Reports END
+## Kham - Center Besieged Menu - Start
+
+("center_besieged_event",0,
+   "^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.",
+    "none",
+    [   
+    	(str_store_party_name, s1, "$besieged_center_for_menu"),
+    	(str_store_faction_name, s3, "$besieged_by_faction_for_menu"),
+    	(str_store_troop_name, s2, "$besieged_by_troop_for_menu"),
+		(party_get_slot,":mesh","$besieged_center_for_menu",slot_town_menu_background),
+		(set_background_mesh, ":mesh"),
+		(set_fixed_point_multiplier, 100),
+		(position_set_x, pos0, 65),
+		(position_set_y, pos0, 30),
+		(position_set_z, pos0, 100),
+		(set_game_menu_tableau_mesh, "tableau_troop_note_mesh", "$besieged_by_troop_for_menu", pos0)],
+   	[("center_besieged_event_close", [], "Close", [(change_screen_return)]),
+   	
+]),
+
+## Kham - Center Besieged Menu - END
 
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations
