@@ -1209,7 +1209,7 @@ strings = [
   ("npc17_morality_speech", "[No primary moral code]"),
 
 
-  ("npc1_2ary_morality_speech", "Captain, I have been raised as a Dúnedain, both in valor and honour. I would prefer if we don't {s21}."),
+  ("npc1_2ary_morality_speech", "Captain, I have been raised as a Dúnadan, both in valor and honour. I would prefer if we don't {s21}."),
   ("npc2_2ary_morality_speech", "[No secondary moral code]"),
   ("npc3_2ary_morality_speech", "[No secondary moral code]"),
   ("npc4_2ary_morality_speech", "Your pardon, commander. Women of my station will accept death but not dishonour. To {s21} brings shame to my house and ancestors."),
