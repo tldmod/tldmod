@@ -54,7 +54,7 @@ def set_item_faction():
 		#GA assign troops to proper subfactions acc to troops[i_troop][5]
 		troopsub = troops[i_troop][5]
 		if troopsub > 0: command_list.append((troop_set_slot, i_troop, slot_troop_subfaction, troopsub))
-	for i_item in xrange(23,825): #regular items here
+	for i_item in xrange(23,826): #regular items here
 		faction = 0
 		sfaction = 0
 		for i_troop in xrange(29,430): # search items inside troop inventory

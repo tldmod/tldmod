@@ -632,7 +632,7 @@ game_menus = [
 		(set_visitors, 4, "trp_fell_goblin_of_moria",			5),
 		(set_visitors, 5, "trp_archer_snaga_of_moria",			5),
 		(set_visitors, 6, "trp_large_goblin_archer_of_moria",	5),
-		(set_visitors, 7, "trp_fell_goblin_archer_of_moria",	5),
+		(set_visitors, 7, "trp_deep_dweller_of_moria",	5),
 		(set_visitors, 8, "trp_goblin_gundabad",				5),
 		(set_visitors, 9, "trp_orc_gundabad",					5),
 ## ENEMY
@@ -947,7 +947,7 @@ game_menus = [
 			(eq,":bfac",4),(assign,":trp_bad_min","trp_corsair_youth"        ),(assign,":trp_bad_max","trp_pike_master_of_umbar"       ),(else_try),
 			(eq,":bfac",5),(assign,":trp_bad_min","trp_orc_snaga_of_isengard"),(assign,":trp_bad_max","trp_fighting_uruk_hai_pikeman"  ),(else_try),
 			(eq,":bfac",6),(assign,":trp_bad_min","trp_orc_snaga_of_mordor"  ),(assign,":trp_bad_max","trp_fell_orc_archer_of_mordor"  ),(else_try),
-			(eq,":bfac",7),(assign,":trp_bad_min","trp_wolf_rider_of_moria"  ),(assign,":trp_bad_max","trp_fell_goblin_archer_of_moria"),(else_try),
+			(eq,":bfac",7),(assign,":trp_bad_min","trp_wolf_rider_of_moria"  ),(assign,":trp_bad_max","trp_deep_dweller_of_moria"),(else_try),
 			(eq,":bfac",8),(assign,":trp_bad_min","trp_goblin_gundabad"      ),(assign,":trp_bad_max","trp_goblin_north_clan_rider"    ),
 		(try_end),
 

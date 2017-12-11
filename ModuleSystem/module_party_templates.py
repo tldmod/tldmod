@@ -47,7 +47,7 @@ party_templates = [
 ("wild_troll",       "Wild Troll",          icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_troll_of_moria,1,2),]),
 ("raging_trolls",    "Raging Trolls",       icon_wild_troll   |pf_quest_party,  0,fac_neutral,	bandit_personality,[(trp_troll_of_moria,1,3),]),
 ("looters",          "Tribal Orcs",         icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,1),(trp_tribal_orc,2,25)]),
-("forest_bandits",   "Orc Stragglers",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_chief,0,1),(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
+("forest_bandits",   "Orc Stragglers",      icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_tribal_orc_warrior,0,8),(trp_tribal_orc,3,40),(trp_mountain_goblin,1,30)]),
 ("mountain_bandits", "Wild Goblins",        icon_orc_tribal   |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_mountain_goblin,2,40)]),
 ("steppe_bandits",   "Dunland Outcasts",    icon_dunlander    |carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_dunnish_warrior,3,10), (trp_dunnish_wildman,5,35)]),
 ("sea_raiders",      "Corsair Renegades",   icon_umbar_corsair|carries_goods(4),0,fac_outlaws,  bandit_personality,[(trp_corsair_warrior,3,30),(trp_marksman_of_umbar,3,20)]),
@@ -122,9 +122,9 @@ party_templates = [
 ("harad_raiders"   ,"Haradrim Raiders"  ,icon_harad_horseman|carries_goods(2)|pf_show_faction,0,fac_harad   ,soldier_personality,[(trp_harad_tiger_guard,1,1),(trp_harad_skirmisher,10,20),(trp_harad_desert_warrior,11,20)]), #98-176
 ("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_easterling_horsemaster,1,1),(trp_easterling_rider,5,10),(trp_easterling_veteran_horseman,5,15)]), #81-191
 ("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2)|pf_show_faction,0,fac_umbar   ,soldier_personality,[(trp_corsair_night_raider,1,1),(trp_corsair_veteran_raider,4,8),(trp_corsair_pikeman,4,8),(trp_corsair_warrior,6,15)]), #100-196 good at it
-("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_fell_goblin_archer_of_moria,1,1),(trp_large_goblin_archer_of_moria,3,9),(trp_large_goblin_of_moria,5,15),(trp_archer_snaga_of_moria,8,16)]), #72-176
+("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_tribal_orc_chief,1,3),(trp_large_goblin_archer_of_moria,3,9),(trp_large_goblin_of_moria,5,15),(trp_archer_snaga_of_moria,8,16)]), #72-176
 ("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_guldur  ,soldier_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_large_orc_of_mordor,4,10),(trp_orc_of_guldur,8,16),(trp_orc_archer_of_mordor,8,16),(trp_orc_snaga_of_guldur,15,30)]), #91-184
-("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_goblin_north_clan_rider,1,3),(trp_warg_skirmisher_gundabad,6,12),(trp_orc_beserker_gundabad,12,18),(trp_orc_gundabad,18,32),(trp_troll_of_moria,0,1)]), #128-234 was 93-163
+("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_goblin_north_clan_rider,1,3),(trp_warg_skirmisher_gundabad,6,12),(trp_goblin_rider_gundabad,6,12),(trp_orc_gundabad,18,32),(trp_troll_of_moria,0,1)]), #128-234 was 93-163
 ("rhun_raiders"    ,"Rhun Raiders"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_rhun_heavy_noble_cavalry,1,3),(trp_rhun_horse_archer,8,16),(trp_rhun_light_cavalry,10,20)]), #124-264, was 100-184
 
 
@@ -316,7 +316,7 @@ party_templates = [
 ("beorn_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_beorning_sentinel,1,3),(trp_beorning_carrock_fighter,2,3),(trp_woodmen_axemen,1,2),]),
 #Mt. Gundabad - see Moria (8-16, 7-13, 5-10)
 ("gundabad_reinf_a","_",0,0,fac_commoners,0,[(trp_goblin_gundabad,8,16)]),
-("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_orc_beserker_gundabad,4,7),(trp_orc_gundabad,4,7),]),
+("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_warg_skirmisher_gundabad,2,4),(trp_orc_gundabad,4,7),]),
 ("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_goblin_rider_gundabad,2,5),(trp_orc_fighter_gundabad,2,3),(trp_warg_skirmisher_gundabad,1,3),(trp_troll_of_moria,1,1),]),
 #Dale (7-14, 5-10, 4-8)
 ("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_dale_man_at_arms,1,2),(trp_laketown_scout,1,2),(trp_dale_militia,5,10),]),
