@@ -3527,7 +3527,7 @@ scripts = [
         (set_trigger_result, color_item_text_bonus),
       (else_try),
 		(eq,":item_no","itm_phial_reward"),
-		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Persuasion"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Wildcraft"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Leadership"),(try_end),
         (set_trigger_result, color_item_text_bonus),
       (else_try),
@@ -3960,6 +3960,7 @@ scripts = [
 [
 	(store_script_param, ":party_no", 1),
 	(party_get_template_id, ":template_no", ":party_no"), 
+	(party_get_current_terrain, ":terrain", ":party_no"),
 	(try_begin), 
 		(this_or_next|eq, ":template_no", "pt_wild_troll"),
 		(			  eq, ":template_no", "pt_raging_trolls"),
@@ -3971,6 +3972,24 @@ scripts = [
 	(else_try),
 		(eq, ":template_no", "pt_refugees"),
 		(set_trigger_result, 55),
+	(else_try),
+		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
+		(party_get_skill_level, ":speed_multiplier", ":party_no", skl_persuasion), #Wildcraft
+		(try_begin),
+          (ge,":speed_multiplier",1),
+          (val_mul,":speed_multiplier",2),
+          (val_add,":speed_multiplier",100),
+        (else_try),
+          (assign,":speed_multiplier",100),
+        (try_end),
+        (val_max, ":speed_multiplier", 0),
+        (set_trigger_result, ":speed_multiplier"),
+      #Debug
+	  	#(try_begin),
+	  	#	(eq, ":party_no", "p_main_party"),
+	  	#	(assign, reg10, ":speed_multiplier"),
+	  	#	(display_message, "@Wildcraft Speed Multiplier - {reg10}", color_good_news),
+	  	#(try_end),
 	(else_try),                                   
 		(set_trigger_result, 100),
 	(try_end),	
@@ -21582,29 +21601,29 @@ command_cursor_scripts = [
 	    	(eq, ":home_theater",theater_SE),
 	      	(assign, reg0, theater_SE),
 	      	(assign, ":OK",1),
-	      	(display_message, "@Debug: Theater_SE"),
+	      	#(display_message, "@Debug: Theater_SE"),
 	    (else_try),
 	    	(eq, ":OK",0),
 	    	(eq, ":home_theater",theater_SW),
 	      	(assign, reg0, theater_SW),
 	      	(assign, ":OK",1),
-	      	(display_message, "@Debug: Theater_SW"),
+	      	#(display_message, "@Debug: Theater_SW"),
 	    (else_try),
 	        (eq, ":OK",0),
 	    	(eq, ":home_theater",theater_C),
 	      	(assign, reg0, theater_C),
 	      	(assign, ":OK",1),
-	      	(display_message, "@Debug: Theater_C"),
+	      	#(display_message, "@Debug: Theater_C"),
 	    (else_try),
 	    	(eq, ":home_theater",theater_C),
 	      	(assign, reg0, theater_N),
 	      	(assign, ":OK",1),
-	      	(display_message, "@Debug: Theater_N"),
+	      	#(display_message, "@Debug: Theater_N"),
 	    (else_try),
 	    	(eq, ":OK",0),
 	    	(assign, reg0, 0),
 	    	(assign, ":OK",1),
-	    	(display_message, "@Debug: Can't Find"),
+	    	#(display_message, "@Debug: Can't Find"),
 	    (try_end),
     (try_end),
 ]),
@@ -22887,6 +22906,34 @@ command_cursor_scripts = [
 		(display_message, "@DEBUG: {reg0} troop stacks of {s1} found"),
 	]),
 
+
+#kham - Check if Player party can hide (Wildcraft Skill)
+#script_cf_can_hide_from_enemy
+
+("cf_can_hide_from_enemy", [
+	(party_get_num_companions, ":number", "p_main_party"),
+	(party_get_skill_level, ":skill", "p_main_party", skl_persuasion),
+	(assign, ":continue", 0),
+
+	(try_begin),
+		(le, ":number", 8),
+		(assign, ":continue", 1),
+	(else_try),
+		(ge, ":skill", 1),
+		(val_mul, ":skill", 4), #Multiplier
+		(val_add, ":skill", 10), #Base 10 troops
+		(le, ":number", ":skill"), #If NUMBER less than / equal to Wildcraft Skill Bonus, then allow hide.
+		(assign, ":continue", 1),
+	(try_end),
+
+	#Debug
+	(assign, reg1, ":skill"),
+	(assign, reg2, ":number"),
+	(display_message, "@Wildcraft Skill Hide Party Limit - {reg1}. Player Companions - {reg2}"),
+
+	(eq, ":continue", 1),
+
+]),
 
 ## Kham Quest Scripts
 

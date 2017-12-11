@@ -283,7 +283,7 @@ game_menus = [
 # This needs to be the fifth window!!!  
 ( "reports",0,
    "^^^{s9}", "none",
-   [#(set_background_mesh, "mesh_ui_default_menu_window"),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
 	# Player Reward System (mtarini)
 	(call_script, "script_update_respoint"), # so that current money is registered as res point of appropriate faction
 	(faction_get_slot, reg10, "$players_kingdom", slot_faction_rank),
@@ -1319,7 +1319,7 @@ game_menus = [
 ( "morale_report",0,
    "^^{s1}",
    "none",
-   [#(set_background_mesh, "mesh_ui_default_menu_window"),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
     (call_script, "script_get_player_party_morale_values"),
     (assign, ":target_morale", reg0),
     (assign, reg1, "$g_player_party_morale_modifier_party_size"),
@@ -1464,7 +1464,7 @@ game_menus = [
    "^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}",
 #   "^^^^^Character Renown: {reg5}^Honor Rating: {reg6}^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}",
    "none",
-   [#(set_background_mesh, "mesh_ui_default_menu_window"),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
 
     (call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
@@ -1503,7 +1503,7 @@ game_menus = [
    [("continue",[],"Continue...",[(jump_to_menu, "mnu_reports"),]),]
  ),
 ( "upkeep_report", 0,
- "{s12}", "none",[ #(set_background_mesh, "mesh_ui_default_menu_window"),
+ "{s12}", "none",[ (set_background_mesh, "mesh_ui_default_menu_window"),
     (assign, reg5, 0),
     (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
       (neq, ":faction_no", "fac_player_supporters_faction"),
@@ -1530,7 +1530,8 @@ game_menus = [
  ),
 ( "party_size_report",0,
    "^^^^{s1}", "none",
-   [(call_script, "script_game_get_party_companion_limit"),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
+    (call_script, "script_game_get_party_companion_limit"),
     (assign, ":party_size_limit", reg0),
 
     (store_skill_level, ":leadership", "skl_leadership", "trp_player"),
@@ -1580,7 +1581,8 @@ game_menus = [
 ( "faction_strengths_report",0,
    "{s1}",
    "none",
-   [(str_clear, s2),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
+    (str_clear, s2),
     (try_for_range, ":cur_kingdom", kingdoms_begin, kingdoms_end),
       (faction_slot_eq, ":cur_kingdom", slot_faction_state, sfs_active),
       (neq, ":cur_kingdom", "fac_player_supporters_faction"),
@@ -4413,7 +4415,8 @@ game_menus = [
        ("encounter_hide",[
           (eq, "$encountered_party_friendly", 0),
           (eq, "$cant_leave_encounter", 1),
-          (party_get_num_companions, ":no", "p_main_party"),(lt, ":no", 8),
+          #(party_get_num_companions, ":no", "p_main_party"),(lt, ":no", 8),
+          (call_script, "script_cf_can_hide_from_enemy"),
           ],
            "Hide from the enemy...",[
            (jump_to_menu, "mnu_hide"),]),
@@ -4504,7 +4507,21 @@ game_menus = [
 ##Kham - Hide Menu - Skill requirement TBD
 
 ("hide",0,
-	"^^^^^Having a small party has its benefits...^^^You and your troops hide from the enemy for a few hours to be sure that you are not seen.","none",[(set_background_mesh, "mesh_ui_default_menu_window")],
+	"^^^^^{s5}^^^","none",
+	[(set_background_mesh, "mesh_town_evilcamp"),
+	 (party_get_num_companions, ":number", "p_main_party"),
+	 (party_get_skill_level, ":skill", "p_main_party", skl_persuasion), #Wildcraft
+	 (try_begin),
+	 	(le, ":number", 8),
+	 	(str_store_string, s5, "@Having a small party has its benefits...You and your troops hide from the enemy for a few hours to be sure that you are not seen."),
+	 (else_try),
+		(ge, ":skill", 1),
+		(val_mul, ":skill", 4), #Multiplier
+		(val_add, ":skill", 10), #Base 10 troops
+		(assign, reg1, ":skill"),
+		(assign, reg2, ":number"),
+		(str_store_string, s5, "@Your ability to survive in harsh environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)"),
+	(try_end),],
 	[("hide_close",[], "Continue...",[
 		(rest_for_hours, 4, 2, 0),
 		(leave_encounter),

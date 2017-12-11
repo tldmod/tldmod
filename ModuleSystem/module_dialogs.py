@@ -2824,36 +2824,107 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 ## Hunt Down Refugees Completion Dialogues END - Kham
 #### Kham Sea Battle Quest Completion Start ####
 
-[anyone,"lord_start", [
+[anyone|plyr,"lord_start", [
     (check_quest_active, "qst_blank_quest_03"),    
     (check_quest_succeeded, "qst_blank_quest_03"),
     (quest_get_slot, ":giver_troop", "qst_blank_quest_03", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
     (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
-    (str_store_party_name,12,":quest_target_center")],
-"Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.", "lord_generic_mission_completed",[
+    (str_store_party_name, s12,":quest_target_center"),
+    (try_begin),
+    (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+    (try_begin), #South Good
+      (eq, "$g_talk_troop_faction", "fac_gondor"),
+      (str_store_string, s5, "@My lord, {s12} is safe. The Corsairs were defeated."),
+    (else_try),
+      (str_store_string, s5, "@My lord, Esgaroth is safe. The men of Rhûn were defeated."),
+    (try_end),
+  (else_try),
+    (try_begin),
+      (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+      (str_store_string, s5, "@{s12} burns. The pillaging was glorious indeed!"),
+    (else_try),
+      (str_store_string, s5, "@Esgaroth burns. The pillaging was glorious indeed!"),
+    (try_end),
+  (try_end)],
+"{s5}", "lord_sea_battle_completed",[]],
+
+[anyone,"lord_sea_battle_completed", [
+    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (str_store_party_name, s12,":quest_target_center"),
+    (try_begin),
+      (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (try_begin), #South Good
+        (eq, "$g_talk_troop_faction", "fac_gondor"),
+        (str_store_string, s5, "@This is welcome news indeed, {playername}. We were ill-prepared for such bold action from the Corsairs. But thanks to you, the black sails have been driven away, at least for a time, and we may hope, at least, that we have struck them a blow this day. You have our thanks."),
+      (else_try),
+        (str_store_string, s5, "@ Good work, {playername}! They showed more cunning than we credited them with, I'll give them that. But these Easterlings don't fight half as well on their boats as they do on their horses, it would seem! Perhaps we, too, should consider launching a fleet of our own... In any case, we thank you, {playername}, on behalf of Esgaroth and all the people of Dale."),
+      (try_end),
+    (else_try),
+      (try_begin),
+        (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+        (str_store_string, s5, "@Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Gondor, for they know now that not even their mightiest strongholds are beyond our reach!"),
+      (else_try),
+        (str_store_string, s5, "@Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Dale, for they know now that not even their mightiest strongholds are beyond our reach!"),
+      (try_end),
+    (try_end)],
+"{s5}", "lord_pretalk",[
 
     (call_script,"script_quest_sea_battle_consequences",1),
     (call_script, "script_finish_quest", "qst_blank_quest_03", 100),
     ]],
 
-[anyone,"lord_start", [
+[anyone|plyr,"lord_start", [
     (check_quest_active, "qst_blank_quest_03"),
     (check_quest_failed, "qst_blank_quest_03"),
     (quest_get_slot, ":giver_troop", "qst_blank_quest_03", slot_quest_giver_troop),
     (eq, "$g_talk_troop", ":giver_troop"),
     (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
-    (str_store_faction_name,s12,":quest_target_center")],
-"Our scouts near {s12}'s camp saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.", "sea_battle_quest_failed",[
+    (str_store_faction_name,s12,":quest_target_center"),
+    (try_begin),
+    (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (try_begin), #South Good
+        (eq, "$g_talk_troop_faction", "fac_gondor"),
+        (str_store_string, s5, "@My lord, they fell upon us with great force. We could not repel the Corsairs."),
+      (else_try),
+        (str_store_string, s5, "@My lord, they fell upon us with great force. We could not repel the warriors of Rhûn."),
+      (try_end),
+    (else_try),
+      (try_begin),
+        (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+        (str_store_string, s5, "@The raid on {s12} failed, thanks to the incompetence of our allies!"),
+      (else_try),
+        (str_store_string, s5, "@This raid was ill-fated from the start. We should never have gotten on those rickety rafts!"),
+      (try_end),
+    (try_end)],
+"{s5}", "sea_battle_quest_failed_1",[]],
+
+[anyone,"sea_battle_quest_failed_1", [
+    (quest_get_slot, ":quest_target_center", "qst_blank_quest_03", slot_quest_target_center),
+    (str_store_faction_name,s12,":quest_target_center"),
+    (try_begin),
+    (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+      (try_begin), #South Good
+        (eq, "$g_talk_troop_faction", "fac_gondor"),
+        (str_store_string, s5, "@This is evil news you bring. The black sails grow ever bolder, and all of Belfalas now lies ever more under their shadow. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for Gondor, and we must fight to keep what remains of it alive."),
+      (else_try),
+        (str_store_string, s5, "@This is evil news you bring. The Easterlings grow ever bolder, and Esgaroth burns. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for our kingdom, and we must fight to keep what remains of it alive."),
+      (try_end),
+    (else_try),
+      (try_begin),
+        (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+        (str_store_string, s5, "@Pah! It seems you weren't able to find your sea-legs, {playername}. Now they sit, these men of Gondor, high in their towers, vain as kings, laughing as the black sails burn! Perhaps a stint at the oars of a galley would be fitting punishment for your troops; a pity they are under your command, and not mine. The Eye will not be pleased. Leave me now. "),
+      (else_try),
+        (str_store_string, s5, "@Have you nothing better than weak excuses to offer for your failure, {playername}? Perhaps you are not as strong as we had believed. Serve our cause better in future, {playername}. There will be no mercy for the weak!"),
+      (try_end),
+    (try_end)],
+"{s5}", "lord_pretalk",[
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -2),
-  
+
     (call_script,"script_quest_sea_battle_consequences",0),
     (cancel_quest, "qst_blank_quest_03"),
     ]],
 
-[anyone|plyr, "sea_battle_quest_failed",[],
-  "I will do better next time.", "close_window",[],
-  ],
 
 
 #### Kham Sea Battle Quest Completion End ####
@@ -5387,9 +5458,19 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (str_store_party_name, s7, ":quest_object_center"),
   (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-    (str_store_string, s5, "@Pirates are trying to attack {s6}! Talk to the guild master there to lend your hand. (PLACEHOLDER)"),
+    (try_begin), #South Good
+      (eq, "$g_talk_troop_faction", "fac_gondor"),
+      (str_store_string, s5, "@{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ Hasten to {s6}, speak to the local authorities, and aid the local garrison against this incursion."),
+    (else_try),
+      (str_store_string, s5, "@{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must bolster our defences there, and soon. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!"),
+    (try_end),
   (else_try),
-    (str_store_string, s5, "@Let us attack {s6}! Talk to the guild master in {s7} to lend your troops (PLACEHOLDER)"),
+    (try_begin),
+      (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+      (str_store_string, s5, "@If you seek pillage and plunder, here is a matchless opportunity, {playername}.^^ A Corsair fleet is launching from the port at {s7}, and will set a course straight for {s6}, which is ripe for the plucking! Join them in their assault, and share in the spoils!"),
+    (else_try),
+      (str_store_string, s5, "@The soft weaklings of Esgaroth are no match for our swift horsemen and ferocious warriors, {playername}. This is known. The Lake-men believe themselves safe, across the water from us, but we shall soon show them otherwise!^^ We have made boats, and rafts, good enough to carry our warriors straight across the lake. They won't be expecting us! ^^Go to the Main Camp, and speak to the camp commander if you wish to join the assault."),
+    (try_end),
   (try_end)],
  "{s5}", "lord_mission_told",[
     (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
@@ -5399,13 +5480,62 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (str_store_party_name_link, s4, ":quest_object_center"),
     (try_begin),
       (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-      (str_store_string, s7, "@{s9} asked you to help defend {s3}. Talk to the guild master there to lend your hand. (PLACEHOLDER)"),
+      (try_begin), #South Good
+        (eq, "$g_talk_troop_faction", "fac_gondor"),
+        (str_store_string, s7, "@{s9} asked you to help defend {s3} against a Corsair raid. Hasten to the city, speak to the guild master, and lend your aid to the local garrison."),
+      (else_try),
+        (str_store_string, s7, "@{s9} asked you to help defend Esgaroth against a naval incursion, of all things, made by Rhûn. Hasten to the Lake-town, speak to the guild master, and lend your aid to the local garrison."),
+      (try_end),
     (else_try),
-      (str_store_string, s7, "@{s9} asked you to attack {s3}. Talk to the guild master in {s4} to lend your hand.(PLACEHOLDER)"),
+      (try_begin),
+        (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+        (str_store_string, s7, "@{s9} offered you an opportunity to join a naval raid against {s3}. Make your way to {s4}, speak to the camp commander, and join the assault."),
+      (else_try),
+        (str_store_string, s7, "@{s9} offered you an opportunity to join a naval raid against Esgaroth. Make your way to {s4}, speak to the camp commander, and join the assault."),
+      (try_end),
     (try_end),
     (setup_quest_text,"$random_quest_no"),
     (str_store_string, s2, "@{s7}")]],
 
+[anyone|plyr,"lord_mission_told", [
+(eq,"$random_quest_no","qst_blank_quest_03"),
+(try_begin),
+    (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+    (try_begin), #South Good
+      (eq, "$g_talk_troop_faction", "fac_gondor"),
+      (str_store_string, s5, "@We will go as swiftly as we may, and pray we are not too late."),
+    (else_try),
+      (str_store_string, s5, "@We will go as swiftly as we may, and pray we are not too late."),
+    (try_end),
+  (else_try),
+    (try_begin),
+      (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+      (str_store_string, s5, "@We shall plunder their port and seize their riches for ourselves!"),
+    (else_try),
+      (str_store_string, s5, "@We shall plunder the Lake Town and seize their riches for ourselves!"),
+    (try_end),
+  (try_end)],
+"{s5}", "lord_mission_accepted",[]],
+
+[anyone|plyr,"lord_mission_told", [
+(eq,"$random_quest_no","qst_blank_quest_03"),
+(try_begin),
+    (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+    (try_begin), #South Good
+      (eq, "$g_talk_troop_faction", "fac_gondor"),
+      (str_store_string, s5, "@I'm sorry, but we cannot aid them now."),
+    (else_try),
+      (str_store_string, s5, "@I'm sorry, but we cannot aid them now."),
+    (try_end),
+  (else_try),
+    (try_begin),
+      (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
+      (str_store_string, s5, "@Bah! Far more glory to be won elsewhere than with paltry piracy."),
+    (else_try),
+      (str_store_string, s5, "@This raid does not interest me. I shall win glory elsewhere."),
+    (try_end),
+  (try_end)],
+"{s5}", "lord_mission_rejected",[]],
 ## Sea Battle INIT END
 
 #### Kham Destroy Scout Camp Quests Start ####
@@ -10149,15 +10279,15 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
                             (str_store_troop_name, s3, ":giver"),
                             (try_begin),
                               (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
-                              (str_store_string, s5, "@I was asked by Lord {s3} to help defend {s4} from incoming marauders.(PLACEHOLDER)"),
+                              (str_store_string, s5, "@We've been sent by Lord {s3}. We have come to join our strength to yours."),
                             (else_try),
-                              (str_store_string, s5, "@I was asked by Lord {s3} to help attack {s4}. (PLACEHOLDER)"),
+                              (str_store_string, s5, "@Lord {s3} has sent us, to join the fleet attacking {s4}."),
                             (try_end),
                             ],
 "{s5}", "mayor_sea_battle_start",[]],
 
 [anyone, "mayor_sea_battle_start", [],
-  "Ok. Are you ready?", "mayor_sea_battle_question", []],
+  "Are you ready?", "mayor_sea_battle_question", []],
 
 [anyone|plyr, "mayor_sea_battle_question",[],
   "Yes, I am.", "mayor_sea_battle_yes", []],
@@ -10170,7 +10300,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     [(jump_to_menu, "mnu_sea_battle_quest")]],
 
 [anyone, "mayor_sea_battle_no", [],
-  "Please hurry, we don't have much time.", "close_window", []],
+  "Hurry, we don't have much time.", "close_window", []],
 
 #Kham - Sea Battle - Volunteer END
 #Kham - Reinforce Center Completion
