@@ -9505,6 +9505,7 @@ game_menus = [
 	        (eq, "$g_battle_result", 1),
 	        (str_store_string, s9, "@The village has been razed, villagers killed or taken as slaves. The Dark Lord will be pleased."),
 			(call_script, "script_succeed_quest", "qst_raid_village"),
+			(troop_add_items, "trp_player", itm_human_meat, 4),
 			#(set_background_mesh, "mesh_draw_victory_orc"),
 			(party_is_active,"$qst_raid_village_party"),
 			(call_script, "script_safe_remove_party","$qst_raid_village_party"),
@@ -9957,8 +9958,6 @@ game_menus = [
 	        (else_try),
 	        	(str_store_string, s9, "@You have failed to raid the city!"),
 	        (try_end),
-	        (party_is_active,"$g_encountered_party"),
-	        (call_script, "script_safe_remove_party","$g_encountered_party"),
 	      (try_end),
 	     ],
 	    [
