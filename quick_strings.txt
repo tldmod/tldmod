@@ -1,4 +1,4 @@
-1469
+1470
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -575,10 +575,11 @@ qstr_{s3}___not_taken {s3}_-_not_taken
 qstr_{s3}___nothing_added {s3}_-_nothing_added
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
 qstr_DEBUG:_{reg0}_troop_ DEBUG:_{reg0}_troop_stacks_of_{s1}_found
-qstr_Wildcraft_Skill_Hide Wildcraft_Skill_Hide_Party_Limit_-_{reg1}._Player_Companions_-_{reg2}
+qstr_DEBUG:_8_Hours_to_hi DEBUG:_8_Hours_to_hide
+qstr_DEBUG:_7_Hours_to_hi DEBUG:_7_Hours_to_hide
+qstr_DEBUG:_6_Hours_to_hi DEBUG:_6_Hours_to_hide
+qstr_DEBUG:_5_Hours_to_hi DEBUG:_5_Hours_to_hide
 qstr_Raiders Raiders
-qstr_DEBUG:_Side_Evil DEBUG:_Side_Evil
-qstr_DEBUG:_Side_Good DEBUG:_Side_Good
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}

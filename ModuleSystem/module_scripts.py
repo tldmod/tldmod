@@ -1917,6 +1917,7 @@ scripts = [
 	(assign, "$field_ai_archer_aim",1), #Kham - Battlefield Archer Aim
 	(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI - default is ON
 	(assign, "$pref_cam_mode", 0), #Kham - Camera Preference - Default is Default
+	(assign, "$tld_spawn_battle_animals", 1), #Kham - Battle Animals
 
 
 	#Custom Camera Initialize	
@@ -22929,10 +22930,43 @@ command_cursor_scripts = [
 	#Debug
 	(assign, reg1, ":skill"),
 	(assign, reg2, ":number"),
-	(display_message, "@Wildcraft Skill Hide Party Limit - {reg1}. Player Companions - {reg2}"),
+	#(display_message, "@Wildcraft Skill Hide Party Limit - {reg1}. Player Companions - {reg2}"),
 
 	(eq, ":continue", 1),
 
+]),
+
+("hide_number_of_hours", [
+	 (party_get_num_companions, ":number", "p_main_party"),
+	 (party_get_skill_level, ":skill", "p_main_party", skl_persuasion), #Wildcraft
+	 (try_begin),
+	 	(le, ":number", 8),
+	 	(rest_for_hours, 8, 3, 0),
+	 (else_try),
+		(ge, ":skill", 1),
+		(val_div, ":number", ":skill"),
+		(val_min, ":number", 8),
+		(assign, reg1, ":skill"),
+		(assign, reg2, ":number"),
+		(assign, ":hours", ":number"),
+		(try_begin),
+			(gt, ":hours", 7),
+			(rest_for_hours, 8,3,0),
+			(display_message, "@DEBUG: 8 Hours to hide"),
+		(else_try),
+			(is_between, ":hours", 6,8),
+			(rest_for_hours, 7, 3, 0),
+			(display_message, "@DEBUG: 7 Hours to hide"),
+		(else_try),
+			(is_between, ":hours", 4,6),
+			(rest_for_hours, 6,3,0),
+			(display_message, "@DEBUG: 6 Hours to hide"),
+		(else_try),
+			(lt, ":hours", 4),
+			(rest_for_hours, 5,3,0),
+			(display_message, "@DEBUG: 5 Hours to hide"),
+		(try_end),
+	(try_end),
 ]),
 
 ## Kham Quest Scripts
@@ -22975,6 +23009,8 @@ command_cursor_scripts = [
 		(call_script, "script_get_tld_distance", "p_main_party", ":cur_target_center"),
 		(ge, reg0, 10), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
+
+		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
 
 		(assign, reg55, "pt_refugees"),			#quest_target_party_template
 		(assign, reg56, ":cur_object_center"),	#quest_object_center
@@ -23159,6 +23195,8 @@ command_cursor_scripts = [
 		(le, reg0, 20), 
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
 
+		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
+
 		(assign, reg55, "pt_refugees"),			#quest_target_party_template
 		(assign, reg56, ":cur_object_center"),	#quest_object_center
 		(assign, reg57, ":cur_target_center"),	#quest_target_center
@@ -23328,6 +23366,8 @@ command_cursor_scripts = [
     (neq, ":result", -1),
     (assign, ":quest_target_center", ":result"),
 
+    (party_slot_eq, ":quest_target_center", slot_center_destroyed, 0), #Center shouldn't be destroyed
+
     (assign, reg55, "$g_encountered_party"),#quest_object_center
     (assign, reg56, ":to_donate"),      #quest_target_amount
     (assign, reg57, ":quest_target_center"),#quest_target_center
@@ -23356,10 +23396,10 @@ command_cursor_scripts = [
 		(faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
 		(neq, ":side", faction_side_good),
 		(assign, ":quest_side", 1), #1 is Evil
-		(display_message, "@DEBUG: Side Evil"),
+		#(display_message, "@DEBUG: Side Evil"),
 	(else_try),
 		(assign, ":quest_side", 0), #0 is Good
-		(display_message, "@DEBUG: Side Good"),
+		#(display_message, "@DEBUG: Side Good"),
 	(try_end),
 
 	(assign, ":continue", 0),
@@ -23388,7 +23428,7 @@ command_cursor_scripts = [
 		(assign, ":cur_object_center", "p_town_umbar_camp"), #If Umbar, Talk to Umbar Guild Master
 	(else_try),
 		(eq, "$g_talk_troop_faction", "fac_rhun"),
-		(assign, ":cur_object_center", "p_town_rhun_north_camp"), #If Rhun, Talk to Rhun North Camp GM.
+		(assign, ":cur_object_center", "p_town_rhun_main_camp"), #If Rhun, Talk to Rhun Main Camp GM.
 	(else_try),
 		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
 		(			  eq, "$g_talk_troop_faction", "fac_dale"),
@@ -23407,6 +23447,8 @@ command_cursor_scripts = [
 		(eq, "$g_talk_troop_faction", "fac_rhun"),
 		(assign, ":cur_target_center", "p_town_esgaroth"),
 	(try_end),
+
+	(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Cant be destroyed / captured.
 
 	(assign, reg55, "$g_talk_troop"), #quest_object_troop
 	(assign, reg56, ":cur_object_center"),	#quest_object_center

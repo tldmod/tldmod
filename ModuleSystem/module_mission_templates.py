@@ -496,6 +496,7 @@ tld_remove_riderless_animals =  (
 tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
   (ti_on_agent_spawn, 0,0, [
+    (eq, "$tld_spawn_battle_animals", 1),
     (store_random_in_range, ":rnd", 0, 100),
     (le, ":rnd", 45)], #45% chance to spawn a wolf
     [

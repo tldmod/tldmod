@@ -4410,7 +4410,7 @@ game_menus = [
                                                             #(simulate_battle,3)
 		]),
 
-      #Kham - Hide from Enemy when party < 8 
+      #Kham - Hide from Enemy when party < 8  or wildcraft skill allows it.
 
        ("encounter_hide",[
           (eq, "$encountered_party_friendly", 0),
@@ -4523,7 +4523,7 @@ game_menus = [
 		(str_store_string, s5, "@Your ability to survive in harsh environments allowed you to find a safe place to hide. (Your skill in Wildcraft allows you to hide with {reg1} troops)"),
 	(try_end),],
 	[("hide_close",[], "Continue...",[
-		(rest_for_hours, 4, 2, 0),
+		(call_script, "script_hide_number_of_hours"),
 		(leave_encounter),
 		(change_screen_return)])]),
 
@@ -9987,6 +9987,11 @@ game_menus = [
 								(else_try),(str_store_string, s7, "@ON"),(try_end),
         ],"Archers have better aim against orcs (doesn't aim above orc heads):  {s7}",[
         (store_sub, "$field_ai_archer_aim", 1, "$field_ai_archer_aim"),(val_clamp, "$field_ai_archer_aim", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
+
+   ("battlefield_animals",[(str_clear, s7),(try_begin),(neq, "$tld_spawn_battle_animals", 1),(str_store_string, s7, "@OFF"),
+								(else_try),(str_store_string, s7, "@ON"),(try_end),
+        ],"Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}",[
+        (store_sub, "$tld_spawn_battle_animals", 1, "$tld_spawn_battle_animals"),(val_clamp, "$tld_spawn_battle_animals", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
 
    ("game_options_compat_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
 
