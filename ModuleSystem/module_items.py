@@ -597,9 +597,9 @@ items =[
 ["isengard_spear","Isengard_Spear",[("isengard_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_spear_upstab,200,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(27,pierce),imodbits_weapon_wood],
 ["isengard_pike","Isengard_Pike",[("isengard_pike",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_two_handed|itp_wooden_parry,itc_cutting_spear,500,weight(3.5)|difficulty(0)|spd_rtng(92)|weapon_length(226)|swing_damage(16,blunt)|thrust_damage(26,pierce),imodbits_weapon_wood],
 ########shields
-["isen_orc_shield_a","Isen_Orc_Shield",[("isen_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["isen_orc_shield_b","Isen_Orc_Shield",[("isen_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["isen_uruk_shield_b","Isen_Uruk_Shield",[("isen_uruk_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(4)|hit_points(600)|body_armor(1)|spd_rtng(76)|weapon_length(81),imodbits_shield,],
+["isen_orc_shield_a","Isen_Orc_Shield",[("isen_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(6)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["isen_orc_shield_b","Isen_Orc_Shield",[("isen_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(6)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["isen_uruk_shield_b","Isen_Uruk_Shield",[("isen_uruk_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(4)|hit_points(600)|body_armor(4)|spd_rtng(76)|weapon_length(81),imodbits_shield,],
 ########Orc Weapons
 #
 #N/A
@@ -640,7 +640,7 @@ items =[
 ["mordor_uruk_shield_b","Mordor_Uruk_Shield",[("mordor_uruk_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itcf_carry_round_shield,100,weight(4)|hit_points(310)|body_armor(4)|spd_rtng(96)|weapon_length(60),imodbits_shield,],
 ["mordor_uruk_shield_c","Mordor_Uruk_Shield",[("mordor_uruk_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itcf_carry_round_shield,100,weight(4)|hit_points(310)|body_armor(3)|spd_rtng(96)|weapon_length(60),imodbits_shield,],
 ["mordor_man_shield_a","Mordor_Man_Shield",[("mordor_man_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(380)|body_armor(9)|spd_rtng(90)|weapon_length(40),imodbits_shield,],
-["mordor_man_shield_b","Mordor_Man_Shield",[("mordor_man_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(3)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["mordor_man_shield_b","Mordor_Man_Shield",[("mordor_man_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(5)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
 ["angmar_shield","Angmar_Shield",[("angmar_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,3000,weight(4)|hit_points(1600)|body_armor(20)|spd_rtng(96)|weapon_length(40),0,],
 #### Generic orc helmets
 ["orc_helm_a","Orc_Longnosehelm",[("orc_helm_a",0)],itp_type_head_armor|itp_shop,0,300,weight(2)|head_armor(14)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
@@ -706,9 +706,9 @@ items =[
 ["moria_armor_d","Moria_Bolted_Leather",[("orc_moria_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1101,weight(22)|head_armor(0)|body_armor(18)|leg_armor(10)|difficulty(0),imodbits_orc_armor,],
 ["moria_armor_e","Moria_Orc_Heavy_Mail",[("orc_moria_e",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1401,weight(24)|head_armor(0)|body_armor(23)|leg_armor(11)|difficulty(0),imodbits_elf_armor,],
 #######SHIELDS##########
-["moria_orc_shield_a","Moria_Great_Shield",[("moria_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(350)|body_armor(2)|spd_rtng(88)|weapon_length(60),imodbits_shield,],
-["moria_orc_shield_b","Moria_Orc_Shield",[("moria_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(2)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
-["moria_orc_shield_c","Moria_Orc_Shield",[("moria_orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(2)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["moria_orc_shield_a","Moria_Great_Shield",[("moria_orc_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(5)|hit_points(410)|body_armor(10)|spd_rtng(88)|weapon_length(60),imodbits_shield,],
+["moria_orc_shield_b","Moria_Orc_Shield",[("moria_orc_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(340)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
+["moria_orc_shield_c","Moria_Orc_Shield",[("moria_orc_shield_c",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(340)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
 ###TLD GUNDABAD ITEMS##########
 #ARMORS##########
 ["gundabad_armor_a","Gundabad_Orc_Rags",[("orc_gunda_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,201,weight(15)|head_armor(0)|body_armor(5)|leg_armor(4)|difficulty(0),imodbits_orc_cloth,],

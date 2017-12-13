@@ -9773,72 +9773,131 @@ game_menus = [
 			#(store_faction_of_party, ":target_fac", ":target_center"),
 			(store_faction_of_party, ":object_fac", ":object_troop"),
 	       	(store_character_level, ":level", "trp_player"),
-	     	
-		#This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
-		#Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
-	       	(try_begin),
-	   			(eq, ":object_fac", "fac_gondor"), #If Gondor, Allies are Gondor
-	   			(assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
-	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
-	   			(assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
-	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
+				
+		# This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
+		# Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
+	       	# (try_begin),
+	   			# (eq, ":object_fac", "fac_gondor"), #If Gondor, Allies are Gondor
+	   			# (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
+	   			# (troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
+	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
 
-	   			(assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
-	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
-	   			(assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
-	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0), 
-   			(else_try), #Dale
-	   			(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
-	   			(assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
-	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
-	   			(assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
-	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0), 
+   			# (else_try), #Dale
+	   			# (eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
+	   			# (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
+	   			# (troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
+	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
 
-	   			(assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
-	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
-	   			(assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
-	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
-   			(try_end),
+	   			# (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_rhun_horse_archer"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_horse_archer",0), 
+   			# (try_end),
 		
-		#This is where we check what to spawn depending on player level (Med/High Tier)
-	        (try_begin),
-	        	(ge, ":level", 25),
-	        	#(assign, ":ally_melee_troop",   ":allies_melee_tier_2"),  #Commented out - If we want to upgrade allies too.
-	        	#(assign, ":ally_ranged_troop",  ":allies_archer_tier_2"), #Commented out - If we want to upgrade allies too.
-	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
-	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
-	        (else_try),
-	        	(assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
-	        	(assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
-	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
-	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
-	        (try_end),
+		# This is where we check what to spawn depending on player level (Med/High Tier)
+	        # (try_begin),
+	        	# (ge, ":level", 25),
+	        	# (assign, ":ally_melee_troop",   ":allies_melee_tier_2"),  #Commented out - If we want to upgrade allies too.
+	        	# (assign, ":ally_ranged_troop",  ":allies_archer_tier_2"), #Commented out - If we want to upgrade allies too.
+	        	# (assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
+	        	# (assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
+	        # (else_try),
+	        	# (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
+	        	# (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
+	        	# (assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
+	        	# (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
+	        # (try_end),
 
 	    #This assigns the scene
-   			(assign, ":sea_battle_scene", "scn_battlefield3"),
+   			#(assign, ":sea_battle_scene", "scn_battlefield3"), #InVain: Moved to block below
+   			#(modify_visitors_at_site, ":sea_battle_scene"),
+
+		#Set Entry and Number of Defenders. Change the last numbers in `set_visitors` to change the amount of troops to spawn.		
+	        # (reset_visitors),
+	        # (set_jump_entry, 0), 
+	        # (set_visitor, 0, "trp_player"),
+
+			(try_begin),
+	   		(eq, ":object_fac", "fac_gondor"),  #If Gondor, Allies are Gondor
+			(assign, ":sea_battle_scene", "scn_sea_battle_south"),
    			(modify_visitors_at_site, ":sea_battle_scene"),
-
-		#Set Entry and Number of Defenders. Change the last numbers in `set_visitors` to change the amount of troops to spawn.
-
 	        (reset_visitors),
 	        (set_jump_entry, 0), 
 	        (set_visitor, 0, "trp_player"),
-
-			(try_for_range, ":melee_allies", 2, 8), #Entry 2 - 7
-				(set_visitors, ":melee_allies", ":ally_melee_troop", 3), #Ally
+			   (try_begin),
+					(lt, ":level", 25),
+						#ally infantry, entries 2-7
+						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 2),(set_visitors, 4, "trp_pelargir_vet_infantry", 2),(set_visitors, 5, "trp_footmen_of_gondor", 2),(set_visitors, 6, "trp_footmen_of_gondor", 2),(set_visitors, 7, "trp_pelargir_infantry", 2),
+						#ally archers, entries 8-10
+						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
+						#enemy infantry, entries 12-17
+						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						#enemy archers, entries 18-20
+						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
+				(else_try),
+					(ge, ":level", 25),
+						#ally infantry, entries 2-7
+						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 2),(set_visitors, 4, "trp_pelargir_vet_infantry", 2),(set_visitors, 5, "trp_footmen_of_gondor", 2),(set_visitors, 6, "trp_footmen_of_gondor", 2),(set_visitors, 7, "trp_pelargir_infantry", 2),
+						#ally archers, entries 8-10
+						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
+						#enemy infantry, entries 12-17
+						(set_visitors, 12, "trp_corsair_veteran_marauder", 5),(set_visitors, 13, "trp_harad_swordsman", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_elite_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
+						#enemy archers, entries 18-20
+						(set_visitors, 18, "trp_veteran_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_archer", 5),(set_visitors, 20, "trp_veteran_marksman_of_umbar", 5),
+				(try_end),
+			(else_try),
+			#(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
+			(assign, ":sea_battle_scene", "scn_sea_battle_north"),
+   			(modify_visitors_at_site, ":sea_battle_scene"),
+	        (reset_visitors),
+	        (set_jump_entry, 0), 
+	        (set_visitor, 0, "trp_player"),
+				(try_begin),
+					(lt, ":level", 25),
+						# ally infantry, entries 2-7
+						(set_visitors, 2, "trp_dale_warrior", 3),(set_visitors, 3, "trp_dale_warrior", 3),(set_visitors, 4, "trp_dale_veteran_warrior", 2),(set_visitors, 5, "trp_dale_man_at_arms", 5),(set_visitors, 6, "trp_dale_pikeman", 2),(set_visitors, 7, "trp_dale_pikeman", 2),
+						#ally archers, entries 8-10
+						(set_visitors, 8, "trp_laketown_bowmen", 3),(set_visitors, 9, "trp_laketown_bowmen", 3),(set_visitors, 10, "trp_laketown_archer", 3),
+						#enemy infantry, entries 12-17
+						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
+						#enemy archers, entries 18-20
+						(set_visitors, 18, "trp_rhun_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+				  
+				(else_try),
+					(ge, ":level", 25),
+						# ally infantry, entries 2-7
+						(set_visitors, 2, "trp_dale_warrior", 3),(set_visitors, 3, "trp_dale_warrior", 3),(set_visitors, 4, "trp_dale_veteran_warrior", 2),(set_visitors, 5, "trp_dale_man_at_arms", 5),(set_visitors, 6, "trp_dale_pikeman", 2),(set_visitors, 7, "trp_dale_pikeman", 2),
+						#ally archers, entries 8-10
+						(set_visitors, 8, "trp_laketown_bowmen", 3),(set_visitors, 9, "trp_laketown_bowmen", 3),(set_visitors, 10, "trp_laketown_archer", 3),
+						#enemy infantry, entries 12-17
+						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_vet_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_infantry_of_the_ox", 5),(set_visitors, 16, "trp_rhun_light_cavalry", 5),(set_visitors, 17, "trp_rhun_noble_cavalry", 5),
+						#enemy archers, entries 18-20
+						(set_visitors, 18, "trp_rhun_veteran_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+						
+					(try_end),
 			(try_end),
+			
+			# (try_for_range, ":melee_allies", 2, 8), #Entry 2 - 7
+				# (set_visitors, ":melee_allies", ":ally_melee_troop", 3), #Ally
+			# (try_end),
 
-			(try_for_range, ":ranged_allies", 8, 11),  #Entry 8 - 10
-				(set_visitors, ":ranged_allies", ":ally_ranged_troop", 3), #Ally
-			(try_end),
+			# (try_for_range, ":ranged_allies", 8, 11),  #Entry 8 - 10
+				# (set_visitors, ":ranged_allies", ":ally_ranged_troop", 3), #Ally
+			# (try_end),
 
-			(try_for_range, ":melee_enemies", 12,18 ),  #Entry 12 - 17
-				(set_visitors, ":melee_enemies", ":enemy_melee_troop", 5), #Enemy
-			(try_end),	    
+			# (try_for_range, ":melee_enemies", 12,18 ),  #Entry 12 - 17
+				# (set_visitors, ":melee_enemies", ":enemy_melee_troop", 5), #Enemy
+			# (try_end),	    
 
-			(try_for_range, ":ranged_enemies", 18,21),  #Entry 18 - 20
-				(set_visitors, ":ranged_enemies", ":enemy_ranged_troop", 5), #Enemy
-			(try_end),	 
+			# (try_for_range, ":ranged_enemies", 18,21),  #Entry 18 - 20
+				# (set_visitors, ":ranged_enemies", ":enemy_ranged_troop", 5), #Enemy
+			# (try_end),	 
 
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
@@ -9859,71 +9918,131 @@ game_menus = [
 			(store_faction_of_party, ":object_fac", ":object_troop"),
 	       	(store_character_level, ":level", "trp_player"),
 	     	
-	    #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
-		#Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
-	       	(try_begin),
-	   			(eq, ":object_fac", "fac_umbar"), #If Umbar, Allies are Umbar
-	   			(assign, ":allies_melee_tier_1", "trp_corsair_marauder"),
-	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_corsair_marauder",0), #Commented out - If we want to upgrade allies too.
-	   			(assign, ":allies_archer_tier_1", "trp_marksman_of_umbar"),
-	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_marksman_of_umbar",0),   #Commented out - If we want to upgrade allies too.
+	    # #This checks what type of enemy troops to spawn, depending on faction of quest giver (North or South)
+		# #Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
+	       	# (try_begin),
+	   			# (eq, ":object_fac", "fac_umbar"), #If Umbar, Allies are Umbar
+	   			# (assign, ":allies_melee_tier_1", "trp_corsair_marauder"),
+	   			# #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_corsair_marauder",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_marksman_of_umbar"),
+	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_marksman_of_umbar",0),   #Commented out - If we want to upgrade allies too.
 
-	   			(assign, ":enemy_melee_tier_1", "trp_pelargir_infantry"),
-	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_pelargir_infantry",0),
-	   			(assign, ":enemy_archer_tier_1", "trp_pelargir_marine"),
-	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_pelargir_marine",0), 
-   			(else_try), #Rhun
-	   			(eq, ":object_fac", "fac_dale"), #If Rhun, Allies are Rhun
-	   			(assign, ":allies_melee_tier_1", "trp_rhun_tribal_warrior"),
-	   			#(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_rhun_tribal_warrior",0), #Commented out - If we want to upgrade allies too.
-	   			(assign, ":allies_archer_tier_1", "trp_rhun_horse_archer"),
-	   			#(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_rhun_horse_archer",0),   #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":enemy_melee_tier_1", "trp_pelargir_infantry"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_pelargir_infantry",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_pelargir_marine"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_pelargir_marine",0), 
+   			# (else_try), #Rhun
+	   			# (eq, ":object_fac", "fac_dale"), #If Rhun, Allies are Rhun
+	   			# (assign, ":allies_melee_tier_1", "trp_rhun_tribal_warrior"),
+	   			# #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_rhun_tribal_warrior",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_rhun_horse_archer"),
+	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_rhun_horse_archer",0),   #Commented out - If we want to upgrade allies too.
 
-	   			(assign, ":enemy_melee_tier_1", "trp_merchant_guard_of_dale"),
-	   			(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_merchant_guard_of_dale",0),
-	   			(assign, ":enemy_archer_tier_1", "trp_laketown_bowmen"),
-	   			(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_laketown_bowmen",0), 
-   			(try_end),
+	   			# (assign, ":enemy_melee_tier_1", "trp_merchant_guard_of_dale"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_merchant_guard_of_dale",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_laketown_bowmen"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_laketown_bowmen",0), 
+   			# (try_end),
 
-		#This is where we check what to spawn depending on player level (Med/High Tier)
-	        (try_begin),
-	        	(ge, ":level", 25),
-	        	#(assign, ":ally_melee_troop",   ":allies_melee_tier_2"),  #Commented out - If we want to upgrade allies too.
-	        	#(assign, ":ally_ranged_troop",  ":allies_archer_tier_2"), #Commented out - If we want to upgrade allies too.
-	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
-	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
-	        (else_try),
-	        	(assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
-	        	(assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
-	        	(assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
-	        	(assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
-	        (try_end),
+		# #This is where we check what to spawn depending on player level (Med/High Tier)
+	        # (try_begin),
+	        	# (ge, ":level", 25),
+	        	# #(assign, ":ally_melee_troop",   ":allies_melee_tier_2"),  #Commented out - If we want to upgrade allies too.
+	        	# #(assign, ":ally_ranged_troop",  ":allies_archer_tier_2"), #Commented out - If we want to upgrade allies too.
+	        	# (assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
+	        	# (assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
+	        # (else_try),
+	        	# (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
+	        	# (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
+	        	# (assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
+	        	# (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
+	        # (try_end),
 
 		#This assigns the scene
-   			(assign, ":sea_battle_scene", "scn_battlefield3"),
-   			(modify_visitors_at_site, ":sea_battle_scene"),
+   			#(assign, ":sea_battle_scene", "scn_battlefield3"), #moved to the block below
+   			#(modify_visitors_at_site, ":sea_battle_scene"),
 
 		#Set Entry and Number of Defenders. Change the last numbers in `set_visitors` to change the amount of troops to spawn.
 
+	        # (reset_visitors),
+	        # (set_jump_entry, 11), 
+	        # (set_visitor, 11, "trp_player"),
+
+			(try_begin),
+	   		(eq, ":object_fac", "fac_umbar"),  #If Umbar, Allies are Umbar
+			(assign, ":sea_battle_scene", "scn_sea_battle_south"),
+   			(modify_visitors_at_site, ":sea_battle_scene"),
 	        (reset_visitors),
-	        (set_jump_entry, 11), 
-	        (set_visitor, 11, "trp_player"),
+	        (set_jump_entry, 0), 
+	        (set_visitor, 0, "trp_player"),
+			   (try_begin),
+					(lt, ":level", 25),
+						#enemy infantry, entries 2-7
+						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 3),(set_visitors, 4, "trp_pelargir_vet_infantry", 3),(set_visitors, 5, "trp_footmen_of_gondor", 3),(set_visitors, 6, "trp_footmen_of_gondor", 3),(set_visitors, 7, "trp_pelargir_infantry", 3),
+						#enemy archers, entries 8-10
+						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
+						#ally infantry, entries 12-17
+						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						#ally archers, entries 18-20
+						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
+				(else_try),
+					(ge, ":level", 25),
+						#enemy infantry, entries 2-7
+						(set_visitors, 2, "trp_pelargir_infantry", 3),(set_visitors, 3, "trp_pelargir_vet_infantry", 3),(set_visitors, 4, "trp_pelargir_vet_infantry", 3),(set_visitors, 5, "trp_gondor_swordsmen", 3),(set_visitors, 6, "trp_gondor_veteran_swordsmen", 3),(set_visitors, 7, "trp_pelargir_infantry", 3),
+						#enemy archers, entries 8-10
+						(set_visitors, 8, "trp_pelargir_vet_marine", 3),(set_visitors, 9, "trp_archer_of_gondor", 3),(set_visitors, 10, "trp_pelargir_vet_marine", 3),
+						#ally infantry, entries 12-17
+						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						#ally archers, entries 18-20
+						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
+				(try_end),
+			(else_try),
+			#(eq, ":object_fac", "fac_rhun"), #If Rhun, Allies are Rhun
+			(assign, ":sea_battle_scene", "scn_sea_battle_north"),
+   			(modify_visitors_at_site, ":sea_battle_scene"),
+	        (reset_visitors),
+	        (set_jump_entry, 0), 
+	        (set_visitor, 0, "trp_player"),
+				(try_begin),
+					(lt, ":level", 25),
+						# enemy infantry, entries 2-7
+						(set_visitors, 2, "trp_dale_warrior", 4),(set_visitors, 3, "trp_dale_warrior", 4),(set_visitors, 4, "trp_dale_veteran_warrior", 4),(set_visitors, 5, "trp_dale_man_at_arms", 4),(set_visitors, 6, "trp_dale_pikeman", 4),(set_visitors, 7, "trp_dale_pikeman", 4),
+						#enemy archers, entries 8-10
+						(set_visitors, 8, "trp_laketown_bowmen", 4),(set_visitors, 9, "trp_laketown_bowmen", 4),(set_visitors, 10, "trp_laketown_archer", 4),
+						#ally infantry, entries 12-17
+						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
+						#ally archers, entries 18-20
+						(set_visitors, 18, "trp_rhun_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+				  
+				(else_try),
+					(ge, ":level", 25),
+						# enemy infantry, entries 2-7
+						(set_visitors, 2, "trp_dale_warrior", 3),(set_visitors, 3, "trp_dale_veteran_warrior", 3),(set_visitors, 4, "trp_dale_marchwarden", 3),(set_visitors, 5, "trp_dale_veteran_warrior", 3),(set_visitors, 6, "trp_dale_billman", 3),(set_visitors, 7, "trp_dale_pikeman", 3),
+						#enemy archers, entries 8-10
+						(set_visitors, 8, "trp_laketown_archer", 3),(set_visitors, 9, "trp_laketown_bowmen", 3),(set_visitors, 10, "trp_barding_bowmen_of_esgaroth", 3),
+						#ally infantry, entries 12-17
+						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
+						#ally archers, entries 18-20
+						(set_visitors, 18, "trp_rhun_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+						
+					(try_end),
+			(try_end),			
+			
+			# (try_for_range, ":melee_enemies", 2, 8), #Entry 2 - 7
+				# (set_visitors, ":melee_enemies", ":enemy_melee_troop", 5), #Enemy
+			# (try_end),
 
-			(try_for_range, ":melee_enemies", 2, 8), #Entry 2 - 7
-				(set_visitors, ":melee_enemies", ":enemy_melee_troop", 5), #Enemy
-			(try_end),
+			# (try_for_range, ":ranged_enemies", 8, 11), #Entry 8 - 10
+				# (set_visitors, ":ranged_enemies", ":enemy_ranged_troop", 5), #Enemy
+			# (try_end),
 
-			(try_for_range, ":ranged_enemies", 8, 11), #Entry 8 - 10
-				(set_visitors, ":ranged_enemies", ":enemy_ranged_troop", 5), #Enemy
-			(try_end),
+			# (try_for_range, ":melee_allies", 12,18 ), #Entry 12 - 17
+				# (set_visitors, ":melee_allies", ":ally_melee_troop", 3), #Ally
+			# (try_end),	    
 
-			(try_for_range, ":melee_allies", 12,18 ), #Entry 12 - 17
-				(set_visitors, ":melee_allies", ":ally_melee_troop", 3), #Ally
-			(try_end),	    
-
-			(try_for_range, ":ranged_allies", 18,21), #Entry 18 - 20
-				(set_visitors, ":ranged_allies", ":ally_ranged_troop", 3), #Ally
-			(try_end),	 
+			# (try_for_range, ":ranged_allies", 18,21), #Entry 18 - 20
+				# (set_visitors, ":ranged_allies", ":ally_ranged_troop", 3), #Ally
+			# (try_end),	 
 
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
@@ -9934,7 +10053,6 @@ game_menus = [
 	       ]),
 	   ("go_away",[],"Leave and regroup for now.",[(change_screen_map)]),
 	 ]),
-
 
 ("sea_battle_quest_results",mnf_scale_picture|mnf_disable_all_keys,
 	    "{s9}",

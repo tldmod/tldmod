@@ -352,3 +352,5 @@ scn_village_gondor_battlefield_1 = 350
 scn_village_gondor_battlefield_2 = 351
 scn_scout_camp_gondor_battlefield_1 = 352
 scn_scout_camp_gondor_battlefield_2 = 353
+scn_sea_battle_south = 354
+scn_sea_battle_north = 355

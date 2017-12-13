@@ -226,7 +226,7 @@ scenes = [
 ("gundabad_mirkwood_outpost"      ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"),#Kolba
 ("dol_guldur_north_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000730050d0d0002d4b300000e2f000027d200005f66",[],[],"outer_terrain_forest"), #Kolba
 ("woodelf_west_camp_center"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007300798b2000380e3000037960000573900003f48",[],[],"outer_terrain_forest"),
-("goblin_north_outpost_center",sf_generate|sf_no_horses|sf_indoors,"none","none",(0,0),(100,100),-100,"0x00000007300005000008160b00000f768000576c00001d2c",[],[],"0"),
+("goblin_north_outpost_center",sf_generate|sf_no_horses|sf_indoors,"none","none",(0,0),(100,100),-100,"0x00000007300005000008160b00000f768000576c00001d2c",[],[],"0"), #Goblin-town
 ("goblin_south_outpost_center",sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320001d9300031ccb000041be000048ba0000361c",[],[],"outer_mountains2west"),
 ("woodsmen_village2_center"   ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
 ("beorning_village_center"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000073000148000025896000074e600006c260000125a",[],[],"outer_terrain_plain"),
@@ -502,5 +502,10 @@ scenes = [
 ("village_gondor_battlefield_2" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000000a00005000006118400005c3000004b3400005792",[],[],"outer_mountains2south"), # Gondor village
 ("scout_camp_gondor_battlefield_1" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000001a6681da50003ccef00005c3000004b34000071fb",[],[],"outer_mountains2south"), # Gondor village ruins
 ("scout_camp_gondor_battlefield_2" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000001a6681da50003ccef00005c3000004b34000071fb",[],[],"outer_mountains2south"), # Gondor village ruins
+
+#sea battle scenes
+("sea_battle_south" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"0"),
+("sea_battle_north" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"New_outer_terrain_seaside_1"),
+
 ]
 

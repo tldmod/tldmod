@@ -1134,13 +1134,13 @@ itemsfile version 2
  itm_isengard_pike Isengard_Pike Isengard_Pike 1  isengard_pike 0  275087364 4222124851987200 500 271496 3.5 100 0 0 0 0 16384 92 0 226 0 282 528
 0
 
- itm_isen_orc_shield_a Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 8 0 0 310 96 0 40 0 0 0
+ itm_isen_orc_shield_a Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 6 0 0 310 96 0 40 0 0 0
 0
 
- itm_isen_orc_shield_b Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 8 0 0 310 96 0 40 0 0 0
+ itm_isen_orc_shield_b Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 6 0 0 310 96 0 40 0 0 0
 0
 
- itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 200 251658402 4 100 0 1 0 0 600 76 0 81 0 0 0
+ itm_isen_uruk_shield_b Isen_Uruk_Shield Isen_Uruk_Shield 1  isen_uruk_shield_b 0  327687 4831838208 200 251658402 4 100 0 4 0 0 600 76 0 81 0 0 0
 0
 
  itm_wood_club Wooden_Club Wooden_Club 1  orc_club_a 0  4653058 9223388532775583758 5 271496 2.5 100 0 0 0 0 20480 90 0 62 0 512 532
@@ -1242,7 +1242,7 @@ itemsfile version 2
  itm_mordor_man_shield_a Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_a 0  327687 5100273664 100 251658402 3 100 0 9 0 0 380 90 0 40 0 0 0
 0
 
- itm_mordor_man_shield_b Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_b 0  327687 5100273664 100 251658402 3 100 0 3 0 0 310 96 0 40 0 0 0
+ itm_mordor_man_shield_b Mordor_Man_Shield Mordor_Man_Shield 1  mordor_man_shield_b 0  327687 5100273664 100 251658402 3 100 0 5 0 0 310 96 0 40 0 0 0
 0
 
  itm_angmar_shield Angmar_Shield Angmar_Shield 1  angmar_shield 0  266247 5100273664 3000 0 4 100 0 20 0 0 1600 96 0 40 0 0 1
@@ -1407,13 +1407,13 @@ itemsfile version 2
  itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 1  orc_moria_e 0  16842765 0 1401 704643072 24 100 0 23 11 0 0 0 0 0 0 0 0
 0
 
- itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 2 0 0 350 88 0 60 0 0 0
+ itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 100 251658402 5 100 0 10 0 0 410 88 0 60 0 0 0
 0
 
- itm_moria_orc_shield_b Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 2 0 0 310 96 0 40 0 0 0
+ itm_moria_orc_shield_b Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_b 0  327687 5100273664 100 251658402 3 100 0 8 0 0 340 96 0 40 0 0 0
 0
 
- itm_moria_orc_shield_c Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_c 0  327687 5100273664 100 251658402 3 100 0 2 0 0 310 96 0 40 0 0 0
+ itm_moria_orc_shield_c Moria_Orc_Shield Moria_Orc_Shield 1  moria_orc_shield_c 0  327687 5100273664 100 251658402 3 100 0 8 0 0 340 96 0 40 0 0 0
 0
 
  itm_gundabad_armor_a Gundabad_Orc_Rags Gundabad_Orc_Rags 1  orc_gunda_a 0  16842765 0 201 1099635359744 15 100 0 5 4 0 0 0 0 0 0 0 0

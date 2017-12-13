@@ -2926,7 +2926,8 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       # Player
-      (1,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+	  (0,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,0,[]), #just a dummy, so spawn records and entry points are the same.
+      (1,mtef_team_0|mtef_use_exact_number,af_override_horse,aif_start_alarmed,10,[]),
 
       #Good Allies
       (2,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
@@ -2940,7 +2941,7 @@ mission_templates = [ # not used in game
       (10,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
       
       #Enemies
-      #(11,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (11,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,0,[]), #just a dummy, so spawn records and entry points are the same.
       (12,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
       (13,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
       (14,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
@@ -2970,6 +2971,9 @@ mission_templates = [ # not used in game
 
   (0, 0, ti_once, 
   [
+
+	(assign,"$enemy_reinforcement_stage",0),
+	(assign,"$ally_reinforcement_stage",0),
 
     # Make enemies charge...
     (set_show_messages, 0),
@@ -3031,10 +3035,13 @@ mission_templates = [ # not used in game
 ## where there would actually be a pool for reinforcements. Also, because it is a relatively short battle, I put ally + enemy reinforcements instead of player reinforcements.
 
 ## Enemy Reinforcement Triggers: 
-  (5, 0, ti_once, [
-      (store_mission_timer_a, ":mission_time_a"),
-      (store_random_in_range, ":ran_time", 15, 35),
-      (ge, ":mission_time_a", ":ran_time"), #Random time between 15 - 35 secs
+  (5, 0, 0, [
+      (store_mission_timer_b, ":mission_time_b"),
+      (store_random_in_range, ":ran_time", 10, 20),
+      (ge, ":mission_time_b", ":ran_time"), #Random time between 10 - 20 secs
+      (reset_mission_timer_b),
+      (lt,"$enemy_reinforcement_stage", 8), #up to 8 reinforcements     
+      (val_add, "$enemy_reinforcement_stage", 1), 
       #This checks the faction of the quest giver.
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
@@ -3068,7 +3075,7 @@ mission_templates = [ # not used in game
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
       (try_end),
 
-      (assign, ":range_end", 15), #Change this number to change the number of troops spawned
+      (assign, ":range_end", 6), #Change this number to change the number of troops spawned
       (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
       (str_store_string, s30, "@All hands on deck!"),
@@ -3093,18 +3100,24 @@ mission_templates = [ # not used in game
       (set_show_messages, 0),
       (team_give_order, ":team_enemy", grc_everyone, mordr_charge),
       (set_show_messages, 1),
+ 
       ],
     [
       #(display_message, "@DEBUG: Enemy Reinforced!")
     ]
   ),
 
-## Had to separate the triggers because for some reason, it gets buggy if I combined both ally + enemy spawns. See notes above, they are exactly the same, other than this spawns allies.
-## Ally Reinforcement Triggers: 
-(5, 0, ti_once, [
-      (store_mission_timer_a, ":mission_time_a"),
-      (store_random_in_range, ":ran_time", 35, 45),
-      (ge, ":mission_time_a", ":ran_time"), #Random time between 35 - 45 secs
+# Had to separate the triggers because for some reason, it gets buggy if I combined both ally + enemy spawns. See notes above, they are exactly the same, other than this spawns allies.
+# Ally Reinforcement Triggers: 
+(5, 0, 0, [
+      (store_mission_timer_c, ":mission_time_c"),
+      (store_random_in_range, ":ran_time", 25, 40),
+      (ge, ":mission_time_c", ":ran_time"), #Random time between 25 - 40 secs
+      (reset_mission_timer_c),
+      (lt,"$ally_reinforcement_stage", 4),      
+      (val_add, "$ally_reinforcement_stage", 1),
+#      (store_random_in_range, ":chance", 0, 2),
+ #     (ge, ":chance", 1), #2 out of 3 times  
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
@@ -3126,7 +3139,7 @@ mission_templates = [ # not used in game
       (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
       (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
 
-      (assign, ":range_end", 15),
+      (assign, ":range_end", 6),
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
       (str_store_string, s30, "@Defend the City!"),
@@ -3172,31 +3185,32 @@ mission_templates = [ # not used in game
     "You lead your men to battle.",
     [
       
-      #(1,mtef_team_0|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
+	  (0,mtef_team_1|mtef_use_exact_number,0,aif_start_alarmed,0,[]), #just a dummy, so spawn records and entry points are the same.
+      (1,mtef_team_1|mtef_use_exact_number,0,aif_start_alarmed,0,[]), #just a dummy, so spawn records and entry points are the same.
 
       #Good
-      (2,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (3,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (4,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (5,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (6,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (7,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (8,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (9,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
-      (10,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (3,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (5,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (7,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (9,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
       
       #Evil
       
-      (11,mtef_team_1|mtef_use_exact_number,0,aif_start_alarmed,14,[]),
-      (12,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (13,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (14,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (15,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (16,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (17,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (18,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (19,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-      (20,mtef_visitor_source|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+      (11,mtef_team_0|mtef_use_exact_number,af_override_horse,aif_start_alarmed,10,[]),
+      (12,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (13,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (15,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (16,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (17,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (19,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_0,af_override_horse,aif_start_alarmed,1,[]),
 
    ],
   # Triggers
@@ -3218,6 +3232,9 @@ mission_templates = [ # not used in game
   (0, 0, ti_once, 
   [
 
+  	(assign,"$enemy_reinforcement_stage",0),
+	(assign,"$ally_reinforcement_stage",0),
+  
     # Make enemies charge...
     (set_show_messages, 0),
       (team_give_order, 1, grc_everyone, mordr_charge),
@@ -3276,11 +3293,14 @@ mission_templates = [ # not used in game
 ## Reinforcement Triggers - Note  that I am using the interloper code here, because this is a mission, instead of a battle between parties, 
 ## where there would actually be a pool for reinforcements. Also, because it is a relatively short battle, I put ally + enemy reinforcements instead of player reinforcements.
 
-## Enemy Reinforcement Triggers: 
-  (5, 0, ti_once, [
-      (store_mission_timer_a, ":mission_time_a"),
-      (store_random_in_range, ":ran_time", 15, 35),
-      (ge, ":mission_time_a", ":ran_time"), #Random time between 15 - 35 secs
+## Ally Reinforcement Triggers: 
+  (5, 0, 0, [
+      (store_mission_timer_b, ":mission_time_b"),
+      (store_random_in_range, ":ran_time", 25, 40),
+      (ge, ":mission_time_b", ":ran_time"), #Random time between 25 - 40 secs
+      (reset_mission_timer_b),
+      (lt,"$ally_reinforcement_stage", 4), #up to 4 reinforcements     
+      (val_add, "$ally_reinforcement_stage", 1), 
       #This checks the faction of the quest giver.
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
@@ -3314,8 +3334,8 @@ mission_templates = [ # not used in game
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
       (try_end),
 
-      (assign, ":range_end", 15), #Change this number to change the number of troops spawned
-      (assign, ":team_enemy", 1),
+      (assign, ":range_end", 6), #Change this number to change the number of troops spawned
+      (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
       (str_store_string, s30, "@All hands on deck!"),
       (call_script, "script_troop_talk_presentation", ":enemy_melee_troop", 7, 0),
@@ -3329,15 +3349,15 @@ mission_templates = [ # not used in game
           (store_random_in_range, ":rnd_troop", 0,100),
           (le, ":rnd_troop", 50),
           (spawn_agent, ":enemy_melee_troop"),
-          (agent_set_team, reg0, ":team_enemy"),
+          (agent_set_team, reg0, ":team_ally"),
         (else_try),
           (spawn_agent, ":enemy_ranged_troop"),
-          (agent_set_team, reg0, ":team_enemy"),
+          (agent_set_team, reg0, ":team_ally"),
       (try_end),
 
       #This asks them to charge, secretly.
       (set_show_messages, 0),
-      (team_give_order, ":team_enemy", grc_everyone, mordr_charge),
+      (team_give_order, ":team_ally", grc_everyone, mordr_charge),
       (set_show_messages, 1),
       ],    
     [
@@ -3346,11 +3366,14 @@ mission_templates = [ # not used in game
   ),
 
 ## Had to separate the triggers because for some reason, it gets buggy if I combined both ally + enemy spawns. See notes above, they are exactly the same, other than this spawns allies.
-## Ally Reinforcement Triggers: 
-(5, 0, ti_once, [
-      (store_mission_timer_a, ":mission_time_a"),
-      (store_random_in_range, ":ran_time", 35, 45),
-      (ge, ":mission_time_a", ":ran_time"), #Random time between 35 - 45 secs
+## Enemy Reinforcement Triggers: 
+(5, 0, 0, [
+      (store_mission_timer_c, ":mission_time_c"),
+      (store_random_in_range, ":ran_time", 10, 20),
+      (ge, ":mission_time_c", ":ran_time"), #Random time between 25 - 40 secs
+      (reset_mission_timer_c),
+      (lt,"$enemy_reinforcement_stage", 8),      
+      (val_add, "$enemy_reinforcement_stage", 1),
       (quest_get_slot, ":troop", "qst_blank_quest_03", slot_quest_object_center),
       (store_faction_of_party, ":faction", ":troop"),      
       
@@ -3362,7 +3385,7 @@ mission_templates = [ # not used in game
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
         #(display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
-        (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
+        (assign, ":allies_melee_tier_1", "trp_dale_warrior"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
@@ -3373,8 +3396,8 @@ mission_templates = [ # not used in game
       (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
       (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
 
-      (assign, ":range_end", 15),
-      (assign, ":team_ally", 0),
+      (assign, ":range_end", 6),
+      (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
       (str_store_string, s30, "@Defend the City!"),
       (call_script, "script_troop_talk_presentation", ":ally_melee_troop", 7, 0),
@@ -3385,14 +3408,14 @@ mission_templates = [ # not used in game
           (store_random_in_range, ":rnd_troop", 0,100),
           (le, ":rnd_troop", 50),
           (spawn_agent, ":ally_melee_troop"),
-          (agent_set_team, reg0, ":team_ally"),
+          (agent_set_team, reg0, ":team_enemy"),
         (else_try),
           (spawn_agent, ":ally_ranged_troop"),
-          (agent_set_team, reg0, ":team_ally"),
+          (agent_set_team, reg0, ":team_enemy"),
       (try_end),
 
       (set_show_messages, 0),
-      (team_give_order, ":team_ally", grc_everyone, mordr_charge),
+      (team_give_order, ":team_enemy", grc_everyone, mordr_charge),
       (set_show_messages, 1),
       ],    
     [
