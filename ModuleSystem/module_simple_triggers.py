@@ -191,7 +191,7 @@ simple_triggers = [
   ]),
 
 # (13) Party AI: pruning some of the prisoners in each center (once a week)
-(24*7,[(try_for_range, ":center_no", centers_begin, centers_end),
+(24*3,[(try_for_range, ":center_no", centers_begin, centers_end),
          (party_is_active, ":center_no"), #TLD
 		     (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
          (party_get_num_prisoner_stacks, ":num_prisoner_stacks",":center_no"),
@@ -199,11 +199,16 @@ simple_triggers = [
            (party_prisoner_stack_get_troop_id, ":stack_troop",":center_no",":stack_no"),
            (neg|troop_is_hero, ":stack_troop"),
            (party_prisoner_stack_get_size, ":stack_size",":center_no",":stack_no"),
-           (store_random_in_range, ":rand_no", 0, 40),
+           (try_begin),
+            (ge,":stack_size", 100),
+            (store_random_in_range, ":rand_no", 40, 80),
+           (else_try),
+            (store_random_in_range, ":rand_no", 10, 40),
+           (try_end),
            (val_mul, ":stack_size", ":rand_no"),
            (val_div, ":stack_size", 100),
            (try_begin), #MV added this block
-             (ge, ":rand_no", 20),
+             (ge, ":rand_no", 30),
              (val_max, ":stack_size", 1), #POP bugfix: at least one should escape, so there are not plenty of 1-2 prisoner stacks
            (try_end),
            (party_remove_prisoners, ":center_no", ":stack_troop", ":stack_size"),
