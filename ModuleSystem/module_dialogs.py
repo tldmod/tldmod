@@ -5472,7 +5472,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (str_store_string, s5, "@The soft weaklings of Esgaroth are no match for our swift horsemen and ferocious warriors, {playername}. This is known. The Lake-men believe themselves safe, across the water from us, but we shall soon show them otherwise!^^ We have made boats, and rafts, good enough to carry our warriors straight across the lake. They won't be expecting us! ^^Go to the Main Camp, and speak to the camp commander if you wish to join the assault."),
     (try_end),
   (try_end)],
- "{s5}", "lord_mission_told",[
+ "{s5}", "lord_mission_told_sea_battle",[
     (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
     (quest_get_slot, ":quest_object_center", "$random_quest_no", slot_quest_object_center),
     (str_store_troop_name_link, s9, "$g_talk_troop"),
@@ -5497,7 +5497,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (setup_quest_text,"$random_quest_no"),
     (str_store_string, s2, "@{s7}")]],
 
-[anyone|plyr,"lord_mission_told", [
+[anyone|plyr,"lord_mission_told_sea_battle", [
 (eq,"$random_quest_no","qst_blank_quest_03"),
 (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
@@ -5517,7 +5517,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (try_end)],
 "{s5}", "lord_mission_accepted",[]],
 
-[anyone|plyr,"lord_mission_told", [
+[anyone|plyr,"lord_mission_told_sea_battle", [
 (eq,"$random_quest_no","qst_blank_quest_03"),
 (try_begin),
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),

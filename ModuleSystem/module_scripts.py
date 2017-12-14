@@ -23423,17 +23423,6 @@ command_cursor_scripts = [
 	(eq, ":continue", 1),
 
 	(assign, ":cur_target_center", "p_town_edhellond"), #Default to Edhellond
-	(try_begin),
-		(eq, "$g_talk_troop_faction", "fac_umbar"),
-		(assign, ":cur_object_center", "p_town_umbar_camp"), #If Umbar, Talk to Umbar Guild Master
-	(else_try),
-		(eq, "$g_talk_troop_faction", "fac_rhun"),
-		(assign, ":cur_object_center", "p_town_rhun_main_camp"), #If Rhun, Talk to Rhun Main Camp GM.
-	(else_try),
-		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
-		(			  eq, "$g_talk_troop_faction", "fac_dale"),
-		(assign, ":cur_object_center", ":cur_target_center"), #if Good, Target is Object
-	(try_end),
 	(store_random_in_range, ":rand", 0,100),
 	(try_begin),
 		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
@@ -23446,6 +23435,17 @@ command_cursor_scripts = [
 		(this_or_next|eq, "$g_talk_troop_faction", "fac_dale"),
 		(eq, "$g_talk_troop_faction", "fac_rhun"),
 		(assign, ":cur_target_center", "p_town_esgaroth"),
+	(try_end),
+		(try_begin),
+		(eq, "$g_talk_troop_faction", "fac_umbar"),
+		(assign, ":cur_object_center", "p_town_umbar_camp"), #If Umbar, Talk to Umbar Guild Master
+	(else_try),
+		(eq, "$g_talk_troop_faction", "fac_rhun"),
+		(assign, ":cur_object_center", "p_town_rhun_main_camp"), #If Rhun, Talk to Rhun Main Camp GM.
+	(else_try),
+		(this_or_next|eq, "$g_talk_troop_faction", "fac_gondor"),
+		(			  eq, "$g_talk_troop_faction", "fac_dale"),
+		(assign, ":cur_object_center", ":cur_target_center"), #if Good, Target is Object
 	(try_end),
 
 	(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Cant be destroyed / captured.
