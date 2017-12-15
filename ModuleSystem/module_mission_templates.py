@@ -3078,7 +3078,7 @@ mission_templates = [ # not used in game
       (assign, ":range_end", 6), #Change this number to change the number of troops spawned
       (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
-      (str_store_string, s30, "@All hands on deck!"),
+      (str_store_string, s30, "@All hands on deck! Throw them back!"),
       (call_script, "script_troop_talk_presentation", ":enemy_melee_troop", 7, 0),
 
       (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
@@ -3142,7 +3142,7 @@ mission_templates = [ # not used in game
       (assign, ":range_end", 6),
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
-      (str_store_string, s30, "@Defend the City!"),
+      (str_store_string, s30, "@Forward! Board them!"),
       (call_script, "script_troop_talk_presentation", ":ally_melee_troop", 7, 0),
       (store_random_in_range, ":ally_entry", 2, 11),
       (entry_point_get_position, pos4, ":ally_entry"),
@@ -3337,7 +3337,7 @@ mission_templates = [ # not used in game
       (assign, ":range_end", 6), #Change this number to change the number of troops spawned
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
-      (str_store_string, s30, "@All hands on deck!"),
+      (str_store_string, s30, "@All hands on deck! Throw them back!"),
       (call_script, "script_troop_talk_presentation", ":enemy_melee_troop", 7, 0),
 
       (store_random_in_range, ":enemy_entry", 12, 21), #This just randomizes the entry points the enemy comes from.
@@ -3399,7 +3399,7 @@ mission_templates = [ # not used in game
       (assign, ":range_end", 6),
       (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
-      (str_store_string, s30, "@Defend the City!"),
+      (str_store_string, s30, "@Forward! Board them!"),
       (call_script, "script_troop_talk_presentation", ":ally_melee_troop", 7, 0),
       (store_random_in_range, ":ally_entry", 2, 11),
       (entry_point_get_position, pos4, ":ally_entry"),

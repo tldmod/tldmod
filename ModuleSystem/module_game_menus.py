@@ -9759,14 +9759,14 @@ game_menus = [
 ###################### Sea Battle Quest Start (Kham) ##########################################
 	
 	("sea_battle_quest",0,
-	   "The ships have met, your troops are ready to board them.",
+	   "The fleets have met. The ships close in and sailors throw down planks...",
 	   "none",[],
 
 	 #If Good
 	 [
 	 ("sb_defend_the_town",[
 	 	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
-	 	], "Defend the City from the Raiders!",
+	 	], "Board them! Destroy their fleet!",
 	     [  
 	     	#(quest_get_slot, ":target_center", "qst_blank_quest_03", slot_quest_target_center),
 	     	(quest_get_slot, ":object_troop", "qst_blank_quest_03", slot_quest_object_center),
@@ -9910,7 +9910,7 @@ game_menus = [
 	 #If evil:
 	 ("sb_attack_the_town",[
 	 	(neg|faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
-	 	], "Raid the City!",
+	 	], "They try to intercept us! Defend the fleet!",
 	     [  
 	     	#(quest_get_slot, ":target_center", "qst_blank_quest_03", slot_quest_target_center),
 	     	(quest_get_slot, ":object_troop", "qst_blank_quest_03", slot_quest_object_center),
@@ -10062,9 +10062,9 @@ game_menus = [
 	        (eq, "$g_battle_result", 1),
 	        (try_begin),
 	        	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
-	        	(str_store_string, s9, "@You have successfully defended the city!"),
+	        	(str_store_string, s9, "@You have defeated the raiding fleet! This is a heavy blow to the enemy's plans!"),
 	        (else_try),
-	        	(str_store_string, s9, "@You have successfully raided the city!"),
+	        	(str_store_string, s9, "@You defeated the intercepting fleet and raided the city! This is a great victory!"),
 	        (try_end),
 			(call_script, "script_succeed_quest", "qst_blank_quest_03"),
 		  (else_try),
@@ -10072,9 +10072,9 @@ game_menus = [
 	        (call_script, "script_fail_quest", "qst_blank_quest_03"),
 	        (try_begin),
 	        	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
-	        	(str_store_string, s9, "@You have failed to defend the city!"),
+	        	(str_store_string, s9, "@You have failed to defend the city from the raid!"),
 	        (else_try),
-	        	(str_store_string, s9, "@You have failed to raid the city!"),
+	        	(str_store_string, s9, "@You were defeated by the intercepting fleet and failed to raid the city!"),
 	        (try_end),
 	      (try_end),
 	     ],

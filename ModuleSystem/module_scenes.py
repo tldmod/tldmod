@@ -504,7 +504,7 @@ scenes = [
 ("scout_camp_gondor_battlefield_2" ,sf_generate,"none","none",(0,0),( 100, 100),-100.0,"0x00000001a6681da50003ccef00005c3000004b34000071fb",[],[],"outer_mountains2south"), # Gondor village ruins
 
 #sea battle scenes
-("sea_battle_south" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"0"),
+("sea_battle_south" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"New_outer_terrain_seaside_east_1"),
 ("sea_battle_north" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000073000050000084e13000006b700007d8d000025fd",[],[],"New_outer_terrain_seaside_1"),
 
 ]

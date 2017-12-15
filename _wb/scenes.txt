@@ -1419,7 +1419,7 @@ scn_scout_camp_gondor_battlefield_2 scout_camp_gondor_battlefield_2 256 none non
 scn_sea_battle_south sea_battle_south 256 none none 0 0 200 200 -0.5 0x000000073000050000084e13000006b700007d8d000025fd 
   0 
   0 
- 0 
+ New_outer_terrain_seaside_east_1 
 scn_sea_battle_north sea_battle_north 256 none none 0 0 200 200 -0.5 0x000000073000050000084e13000006b700007d8d000025fd 
   0 
   0 

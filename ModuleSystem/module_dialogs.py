@@ -10287,7 +10287,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 "{s5}", "mayor_sea_battle_start",[]],
 
 [anyone, "mayor_sea_battle_start", [],
-  "Are you ready?", "mayor_sea_battle_question", []],
+  "Excellent! We are in dire need of crewmen. Are you ready to board the ships?", "mayor_sea_battle_question", []],
 
 [anyone|plyr, "mayor_sea_battle_question",[],
   "Yes, I am.", "mayor_sea_battle_yes", []],
@@ -10296,11 +10296,11 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   "I need some time to get ready.", "mayor_sea_battle_no", []],
 
 [anyone, "mayor_sea_battle_yes", [],
-  "Have your troops board the ship now, we begin soon.", "close_window", 
+  "Good. Have your troops board the ship now, we will set sail soon.", "close_window", 
     [(jump_to_menu, "mnu_sea_battle_quest")]],
 
 [anyone, "mayor_sea_battle_no", [],
-  "Hurry, we don't have much time.", "close_window", []],
+  "Hurry, we don't have much time before we must set sail.", "close_window", []],
 
 #Kham - Sea Battle - Volunteer END
 #Kham - Reinforce Center Completion

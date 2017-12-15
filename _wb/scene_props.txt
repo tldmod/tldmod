@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1672
+ 1673
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5068,6 +5068,9 @@ spr_troop_civilian_sitting_chair 16384 0 arrow_helper_blue 0 1
 
 spr_water_fall_big 0 0 0 0 1
 -40  3 1965 1 59 1955 3 0 120 -100 1965 1 54 
+
+
+spr_umbar_smallboatoar_new 0 0 umbar_prop_smallboatoar_new 0 0
 
 
 spr_save_compartibility1 0 0 0 0 0

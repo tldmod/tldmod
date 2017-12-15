@@ -1029,8 +1029,42 @@ fauna_kinds = [
   [['dead_orc_sitting_1', '0'],
    ['dead_orc_sitting_2', '0'],
    ['dead_orc_sitting_3', '0'],]), 
-   ]
 
+ ('dead_man_corsair',
+  0,
+  [['dead_man_corsair_1', '0'],
+   ['dead_man_corsair_2', '0'],
+   ['dead_man_corsair_3', '0'],
+   ['dead_man_corsair_4', '0'],
+   ['dead_man_corsair_5', '0'],
+   ['dead_man_corsair_6', '0'],
+   ['dead_man_corsair_7', '0'],
+   ['dead_man_corsair_8', '0'],]), 
+   
+ ('dead_man_corsair_sitting',
+  0,
+  [['dead_man_corsair_sitting_1', '0'],
+   ['dead_man_corsair_sitting_2', '0'],
+   ['dead_man_corsair_sitting_3', '0'],]), 
+   
+ ('dead_man_gondor',
+  0,
+  [['dead_man_gondor_1', '0'],
+   ['dead_man_gondor_2', '0'],
+   ['dead_man_gondor_3', '0'],
+   ['dead_man_gondor_4', '0'],
+   ['dead_man_gondor_5', '0'],
+   ['dead_man_gondor_6', '0'],
+   ['dead_man_gondor_7', '0'],
+   ['dead_man_gondor_8', '0'],]), 
+   
+ ('dead_man_gondor_sitting',
+  0,
+  [['dead_man_gondor_sitting_1', '0'],
+   ['dead_man_gondor_sitting_2', '0'],
+   ['dead_man_gondor_sitting_3', '0'],]), 
+   
+   ]
 
 
 def save_fauna_kinds():

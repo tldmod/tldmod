@@ -2691,6 +2691,9 @@ scene_props = [
 		]),
     ]),
 
+("umbar_smallboatoar_new",0,"umbar_prop_smallboatoar_new","0", []), #corrected position and rotation, easier to use in editor. Kept the old one for scene compatibility.
+
+	
 #InVain props end
 
 ("save_compartibility1",0,"0","0", []),
