@@ -2693,7 +2693,18 @@ scene_props = [
 
 ("umbar_smallboatoar_new",0,"umbar_prop_smallboatoar_new","0", []), #corrected position and rotation, easier to use in editor. Kept the old one for scene compatibility.
 
-	
+("morgul_tower_7",0,"morgul_gondor_tower_7_evil","bo_gondor_tower_7", []),
+("morgul_wall",0,"morgul_mt_wall_evil","bo_morgul_mt_wall_evil", []),
+("morgul_gate_tower",0,"morgul_mt_gate_tower_evil","bo_mt_tower", []),
+("morgul_gate_house",0,"morgul_mt_gate_house_evil","bo_mt_gate_house", [(ti_on_scene_prop_init,
+            [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
+			 (else_try),                      (set_fog_distance,700,0x4DB08D),
+			 (try_end),])]),
+("morgul__gate",0,"morgul_gate","bo_morgul_gate", []),
+("morgul_short_tower",0,"morgul_short_tower","bo_mt_short_tower", []),	
+("morgul_tower_b_vp_E",0,"morgul_tower_b_color","0", []),
+("morgul_stone_minaret_a",0,"morgul_stone_minaret_a","bo_stone_minaret_a", []),
+
 #InVain props end
 
 ("save_compartibility1",0,"0","0", []),

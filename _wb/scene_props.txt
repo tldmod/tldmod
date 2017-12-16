@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1673
+ 1681
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5071,6 +5071,31 @@ spr_water_fall_big 0 0 0 0 1
 
 
 spr_umbar_smallboatoar_new 0 0 umbar_prop_smallboatoar_new 0 0
+
+
+spr_morgul_tower_7 0 0 morgul_gondor_tower_7_evil bo_gondor_tower_7 0
+
+
+spr_morgul_wall 0 0 morgul_mt_wall_evil bo_morgul_mt_wall_evil 0
+
+
+spr_morgul_gate_tower 0 0 morgul_mt_gate_tower_evil bo_mt_tower 0
+
+
+spr_morgul_gate_house 0 0 morgul_mt_gate_house_evil bo_mt_gate_house 1
+-40  6 4 0 2273 0 1798 2 450 469277 5 0 1798 2 700 5091469 3 0 
+
+
+spr_morgul__gate 0 0 morgul_gate bo_morgul_gate 0
+
+
+spr_morgul_short_tower 0 0 morgul_short_tower bo_mt_short_tower 0
+
+
+spr_morgul_tower_b_vp_E 0 0 morgul_tower_b_color 0 0
+
+
+spr_morgul_stone_minaret_a 0 0 morgul_stone_minaret_a bo_stone_minaret_a 0
 
 
 spr_save_compartibility1 0 0 0 0 0
