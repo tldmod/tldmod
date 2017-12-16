@@ -2532,9 +2532,9 @@ troops = [
 ["smith_ironhill","Ironhill_Smith","Dwarven_camp_smiths",tf_hero| tf_randomize_face| tf_is_merchant| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_vest_b,itm_dwarf_chain_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,dwarf_face_3,dwarf_face_4],
-["town_50_weaponsmith","Armourer","smithy",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_commoners,
-   [itm_leather_apron,itm_leather_boots,],
-      def_attrib|level(5),wp(20),knows_inventory_management_10,mercenary_face_1,mercenary_face_2],
+["town_50_weaponsmith","Shruklug_Knife_Grinder","smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_orc,0,0,fac_gundabad,
+   [itm_gundabad_armor_c,itm_orc_furboots,itm_gundabad_helm_a],
+      def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,mercenary_face_1,mercenary_face_2],
 
 ["smith_gondor_ac","Bor_the_Armorer","camp_smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_gondor,0,0,fac_gondor,
    [itm_leather_apron,itm_gondor_light_greaves,],
@@ -2807,9 +2807,9 @@ troops = [
 ["merchant_ironhill","Supply_Master","Dwarven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_armor_a,itm_dwarf_pad_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_1,dwarf_face_3,dwarf_face_4],
-["town_50_horse_merchant","Supply_Master","stable_and_warehouse",tf_hero| tf_randomize_face| tf_is_merchant| tf_female,0,0,fac_gondor,
-   [itm_leather_jerkin,itm_leather_boots,],
-      def_attrib|level(5),wp(20),knows_inventory_management_10,woman_face_1,woman_face_2],
+["town_50_horse_merchant","Gobrip_Yellowtooth","warg_pit_and_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_orc,0,0,fac_gundabad,
+   [itm_gundabad_armor_c,itm_orc_furboot_tall,],
+      def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_2,man_face_young_1,man_face_older_2],
 ["merchant_calembel","Supply_Master","stable_and_warehouse",tf_hero| tf_randomize_face| tf_is_merchant| tf_gondor,0,subfac_ethring,fac_gondor,
    [itm_lamedon_clansman,itm_gondor_light_greaves,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_6,man_face_young_1,man_face_older_2],
@@ -2995,9 +2995,9 @@ troops = [
     
     
 #Village stores
-["village_1_elder","Village_Elder","_",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_commoners,
-   [],
-      0,0,0,0],
+["village_1_elder","Lord_of_the_Lash","the_caves",tf_hero| tf_randomize_face| tf_orc,0,0,fac_gundabad,
+   [itm_gundabad_armor_d,itm_orc_furboot_tall,],
+      def_attrib|level(2),wp(20),knows_common,khand_man1,khand_man2],
 ["merchants_end","bug","bug",tf_hero,0,0,fac_commoners,   [],      0,0,0,0],
  
 # Chests

@@ -36,9 +36,9 @@ pt_lossarnach_auxila Lossarnach_Auxilia 281474980905066 0 3 183 128 1 1 0 127 0 
 pt_pinnath_gelin_auxila Pinnath_Gelin_Auxilia 281474980905065 0 3 183 148 1 3 0 146 1 2 0 145 3 6 0 -1 -1 -1 
 pt_ranger_scouts Ranger_Scouts 4194411 0 3 183 122 1 2 0 121 2 5 0 -1 -1 -1 -1 
 pt_rohan_scouts Rohirrim_Scouts 281474980905072 0 5 183 232 1 1 0 231 1 4 0 230 3 5 0 -1 -1 -1 
-pt_lorien_scouts Lothlorien_Scouts 281474980905074 0 8 183 177 1 2 0 165 3 6 0 164 3 6 0 -1 -1 -1 
-pt_woodelf_scouts Mirkwood_Elven_Scouts 281474980905076 0 10 183 185 1 1 0 182 2 6 0 181 4 8 0 -1 -1 -1 
-pt_imladris_scouts Rivendell_Elven_Scouts 281474980905078 0 9 183 201 1 1 0 198 2 6 0 197 4 8 0 -1 -1 -1 
+pt_lorien_scouts Lothlorien_Scouts 281474980905074 0 8 183 177 1 2 0 165 3 4 0 164 3 4 0 -1 -1 -1 
+pt_woodelf_scouts Mirkwood_Elven_Scouts 281474980905076 0 10 183 185 1 1 0 182 1 5 0 181 2 5 0 -1 -1 -1 
+pt_imladris_scouts Dunedain_Scouts 281474980905067 0 9 183 219 1 1 0 211 1 3 0 210 2 5 0 -1 -1 -1 
 pt_dale_scouts Dale_Scouts 562949957615690 0 11 183 54 1 1 0 48 2 6 0 47 4 8 0 -1 -1 -1 
 pt_esgaroth_scouts Esgaroth_Scouts 562949957615723 0 11 183 52 1 1 0 51 1 3 0 49 4 6 0 -1 -1 -1 
 pt_dwarf_scouts Dwarven_Lookouts 562949957615729 0 4 183 94 1 1 0 84 1 3 0 91 4 6 0 -1 -1 -1 
@@ -58,8 +58,8 @@ pt_gundabad_scouts Gundabad_Scouts 281474980905084 0 18 183 391 1 2 0 390 3 6 0 
 pt_rhun_scouts Rhun_Scouts 281474980905057 0 13 183 66 1 3 0 69 3 6 0 65 5 8 0 -1 -1 -1 
 pt_gondor_raiders Gondor_Foragers 281474980905069 0 3 238 112 1 1 0 103 6 12 0 116 6 12 0 -1 -1 -1 
 pt_rohan_raiders Rohirrim_Foragers 281474980905072 0 5 238 241 1 1 0 239 3 8 0 230 3 8 0 238 5 10 0 -1 -1 
-pt_imladris_raiders Rivendell_Foragers 562949957615734 0 9 238 206 1 1 0 199 6 12 0 203 6 12 0 -1 -1 -1 
-pt_lorien_raiders Lothlorien_Foragers 562949957615730 0 8 238 177 1 1 0 166 7 16 0 172 6 15 0 -1 -1 -1 
+pt_imladris_raiders Rivendell_Foragers 562949957615727 0 9 238 208 2 4 0 207 3 8 0 203 6 12 0 -1 -1 -1 
+pt_lorien_raiders Lothlorien_Foragers 562949957615730 0 8 238 177 1 1 0 166 7 15 0 172 6 12 0 -1 -1 -1 
 pt_woodelf_raiders Mirkwood_Foragers 562949957615732 0 10 238 192 1 1 0 191 4 10 0 183 5 10 0 -1 -1 -1 
 pt_dale_raiders Dale_Foragers 562949957615690 0 11 238 62 1 1 0 59 4 10 0 48 4 10 0 49 4 12 0 -1 -1 
 pt_dwarf_raiders Dwarven_Foragers 562949957615729 0 4 238 89 1 1 0 84 4 12 0 91 5 15 0 -1 -1 -1 
@@ -77,7 +77,7 @@ pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12
 pt_rhun_raiders Rhun_Raiders 281474980905057 0 13 238 79 1 3 0 66 8 16 0 77 10 20 0 -1 -1 -1 
 pt_gondor_patrol Gondor_Patrol 562949957615719 0 3 238 114 1 1 0 118 3 6 0 108 3 6 0 117 8 20 0 107 8 20 0 -1 
 pt_rohan_patrol Rohirrim_Patrol 562949957615728 0 5 238 233 1 1 0 232 3 6 0 234 3 6 0 231 6 14 0 230 6 14 0 239 8 20 0 
-pt_imladris_patrol Dunedain_Patrol 4194422 0 9 238 216 1 1 0 215 4 10 0 214 3 5 0 213 8 20 0 212 8 20 0 -1 
+pt_imladris_patrol Dunedain_Patrol 4194415 0 9 238 216 1 1 0 215 4 10 0 214 3 5 0 213 8 20 0 212 8 20 0 -1 
 pt_lorien_patrol Lothlorien_Patrol 562949957615731 0 8 238 169 1 1 0 168 3 6 0 167 4 10 0 174 8 16 0 166 8 16 0 173 10 20 0 
 pt_woodelf_patrol Mirkwood_Patrol 562949957615732 0 10 238 186 1 1 0 185 3 6 0 184 4 10 0 192 4 10 0 191 4 10 0 183 8 16 0 
 pt_dale_patrol Dale_Patrol 562949957615690 0 11 238 62 1 1 0 55 4 8 0 58 3 8 0 57 4 10 0 51 6 12 0 48 6 12 0 

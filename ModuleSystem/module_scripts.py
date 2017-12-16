@@ -3339,6 +3339,16 @@ scripts = [
 		(val_mul, ":limit", 4), 
       		(val_div, ":limit", 3),
 	(else_try),
+		(gt, ":race", 0), #Kham - Fix again
+		(eq, ":faction_id", "fac_moria"), # (InVain): Rhun now receives a boost to party size. (4/3)
+		(val_mul, ":limit", 4), 
+      		(val_div, ":limit", 3),
+	(else_try),
+		(gt, ":race", 0), #Kham - Fix again
+		(eq, ":faction_id", "fac_gundabad"), # (InVain): Rhun now receives a boost to party size. (4/3)
+		(val_mul, ":limit", 4), 
+      		(val_div, ":limit", 3),
+	(else_try),
 		(eq, "$gondor_ai_testing",1),
 		(eq, ":faction_id", "fac_gondor"), # Kham - Test give Gondor boost to party size (4/3)
 		(val_mul, ":limit", 4), 
