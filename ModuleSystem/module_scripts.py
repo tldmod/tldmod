@@ -20616,6 +20616,7 @@ scripts = [
         (mission_tpl_entry_set_override_flags, "mt_town_center", 0, ":override_state"), #entry 0 always in center & w/o horse
         (try_begin),
             (this_or_next|eq, "$current_town", "p_town_moria"), #no mounts in cave towns
+            (this_or_next|eq, "$current_town", "p_town_goblin_north_outpost"), 
             (eq, "$current_town", "p_town_erebor"),
             (mission_tpl_entry_set_override_flags, "mt_town_center", 1, ":override_state"),
             (mission_tpl_entry_set_override_flags, "mt_town_center", 2, ":override_state"),
