@@ -1102,6 +1102,41 @@ mission_templates = [ # not used in game
 			(else_try),
 				(call_script, "script_succeed_quest", "qst_hunt_down_fugitive"),
 			(try_end)]),
+
+ ] + (is_a_wb_mt==1 and [
+  #Henneth Anun at Dusk Scene Prop
+  (2, 0, 0, 
+    [
+      (eq, "$current_town", "p_town_henneth_annun"),
+      (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
+      (store_time_of_day, ":time"),
+      (assign, reg5, ":time"),
+      (display_message, "@Time: {reg5}"),
+      (is_between, ":time", 18, 21),
+    ],    
+    [
+      (get_player_agent_no, "$current_player_agent"),
+      (agent_get_position, pos1, "$current_player_agent"),
+      (assign, reg3, 50),
+      (try_begin),
+        (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
+        (entry_point_get_position, pos2, 13),
+        (assign, ":spawned", 0),
+        (try_begin),
+          (eq, ":spawned", 0),
+          (set_spawn_position, pos2),
+          (spawn_scene_prop, "spr_moon_beam"),
+          (assign, ":spawned", 1),
+        (try_end),
+        (get_distance_between_positions, ":dist", pos2, pos1),
+        (lt, ":dist", 200),
+        (party_set_slot, "$current_town", slot_exploration_point_1, 1),
+        (tutorial_message, "@You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.", 0 , 10),
+        (add_xp_as_reward, reg3),
+      (try_end),
+  ]),
+ ] or []) + [
+ 
 	(2, 0, 0, [],     # check for different checkpoints reach (merchants, center of town etc)
        [(get_player_agent_no, "$current_player_agent"),
 	    (agent_get_position, pos1, "$current_player_agent"),

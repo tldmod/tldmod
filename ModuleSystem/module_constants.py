@@ -2339,36 +2339,42 @@ end       = 0
 
 ##Kham PBOD Additions END
 
-#Legendary Places Slots
+#Legendary Places Slots (party slot)
 slot_legendary_visited = 300
 slot_legendary_explored = 301
 
-#Aiming slots
+#Aiming slots (agent slot)
 agent_aim_overridden = 302
 
-#Track Mount and Rider Slots
+#Track Mount and Rider Slots (agent slot)
 slot_agent_horse_agent = 303
 slot_agent_rider_agent = 304
 
-#Rank Trigger Slots
+#Rank Trigger Slots (faction slot)
 slot_faction_war_council = 305
 slot_faction_siege_reports = 306
 
-#New Party Creation/Removal system
+#New Party Creation/Removal system (party slot)
 slot_party_dormant = 306
 
-#AI Slots
+#AI Slots (agent slot)
 agent_is_free_of_pathing = 307
 
-#Healer Slots
+#Healer Slots (troop slot)
 slot_troop_needs_healing = 308
 
-#Adv Camp Reserve Party
+#Adv Camp Reserve Party (troop slot)
 slot_troop_player_reserve_adv_camp = 309
 
 #Morale Penalties / bonuses
 low_party_morale = 30
 high_party_morale = 70
+
+#Exploration Points Party Slots
+slot_exploration_point_1 = 302
+slot_exploration_point_2 = 303
+slot_exploration_point_3 = 304
+slot_exploration_point_4 = 305
 
 
 
