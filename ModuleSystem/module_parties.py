@@ -93,7 +93,7 @@ parties = [
     ("town_urukhai_h_camp","Uruk_Hai_Hunting_camp",icon_orctower|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(16.8,-78.7),[],170),
     ("town_urukhai_r_camp","Uruk_Hai_River_camp",  icon_orctower|pf_tld_down, no_menu, pt_none, fac_isengard,0,ai_bhvr_hold,0,(5.9,-54.9),[],170),
 # Lothlorien towns
-    ("town_caras_galadhon","Caras_Galadhon",icon_grove |pf_tld_down, no_menu, pt_none, fac_lorien,0,ai_bhvr_hold,0,( -5.7,-131.3),[],350),
+    ("town_caras_galadhon","Caras_Galadhon",icon_grove |pf_tld_down, no_menu, pt_none, fac_lorien,0,ai_bhvr_hold,0,( -5,-129),[],170),
     ("town_cerin_dolen"   ,"Cerin_Dolen",   icon_tree  |pf_tld_down, no_menu, pt_none, fac_lorien,0,ai_bhvr_hold,0,( 20.2,-135.7),[],170),
     ("town_cerin_amroth"  ,"Cerin_Amroth",  icon_tree  |pf_tld_down, no_menu, pt_none, fac_lorien,0,ai_bhvr_hold,0,(  5.7,-134.3),[],170),
 # Woodelves towns

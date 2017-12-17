@@ -26,8 +26,8 @@ tld_scale = 0.5
 map_icons = map_icons_scribbler + [
 
   ("player",0,"player", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("player_horseman",0,"player_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("generic_knight",0,"knight_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("player_horseman",0,"player_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0), #doublette with below
+  ("generic_knight",0,"knight_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),			#unused; doublette with above
 #  ("vaegir_knight",0,"knight_b", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   #("flagbearer_a",0,"flagbearer_a", avatar_scale, snd_gallop, 0.15, 0.173, 0),
 #  ("flagbearer_b",0,"flagbearer_b", avatar_scale, snd_gallop, 0.15, 0.173, 0),
@@ -38,7 +38,7 @@ map_icons = map_icons_scribbler + [
   #("woman",0,"woman_a", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
   #("woman_b",0,"woman_b", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
 #TLD army icons begin
-  ("brigand",0,"brigand", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("brigand",0,"brigand", avatar_scale, snd_gallop, 0.15, 0.173, 0), #unused
 
   # combined icons: used for HOSTS and WAR PARTIES 
   # ATTENTION: please keep them in the same order as factions! 
@@ -72,7 +72,7 @@ map_icons = map_icons_scribbler + [
   ("easterling_horseman",0,"easterling_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("cataphract",0,"cataphract", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("harad_horseman",0,"harad_horseman", avatar_scale,snd_gallop, 0.15, 0.173, 0),
-  ("isengard_captain",0,"isengard_captain", avatar_scale,snd_gallop, 0.15, 0.173, 0),
+  ("isengard_captain",0,"isengard_captain", avatar_scale,snd_gallop, 0.15, 0.173, 0), #unused: Really necessary to have different captains for Mordor and Isengard? Is the Isengard one even achievable?
   
   ("umbar_captain",0,"umbar_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("umbar_corsair",0,"umbar_corsair", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
@@ -96,11 +96,11 @@ map_icons = map_icons_scribbler + [
   ("lorien_elf_a",0,"lorien_elf_a", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("lorien_elf_b",0,"lorien_elf_b", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("mirkwood_elf",0,"mirkwood_elf", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
-  ("dunadan_horseman",0,"dunadan_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0),
+  ("dunadan_horseman",0,"dunadan_horseman", avatar_scale, snd_gallop, 0.15, 0.173, 0), #unused
   ("rivendell_elf",0,"rivendell_elf", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 
-  ("mordor_captain",0,"mordor_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0),
-  ("pikeman_isengard",0,"pikeman_isengard", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0),
+  ("mordor_captain",0,"mordor_captain", avatar_scale, snd_gallop, 0.15, 0.173, 0), 
+  ("pikeman_isengard",0,"pikeman_isengard", avatar_scale,snd_footstep_grass, 0.15, 0.173, 0), #unused
 
   ("orc",0,"orc", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   ("orc_isengard",0,"orc_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
@@ -115,7 +115,7 @@ map_icons = map_icons_scribbler + [
 
   ("wild_troll",0,"wild_troll", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
 
-  ("slaver_isengard",0,"slaver_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
+  ("slaver_isengard",0,"slaver_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0), #InVain: #unused: Really necessary to have two different slavers? Same for supply trains
   ("slaver_mordor",0,"slaver_mordor", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   #("spy_isengard",0,"spy_isengard", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
   #("spy_mordor",0,"spy_mordor", avatar_scale, snd_footstep_grass, 0.15, 0.173, 0),
@@ -133,12 +133,12 @@ map_icons = map_icons_scribbler + [
 #  ("village_deserted_a",mcn_no_shadow,"map_village_deserted_a", 0.45, 0),
 
   ("camp",mcn_no_shadow,"camp_tent", 0.25, 0),
-  ("ship",mcn_no_shadow,"boat_sail_on", 0.23, snd_footstep_grass, 0.0, 0.05, 0),
-  ("ship_on_land",mcn_no_shadow,"boat_sail_off", 0.23, 0),
+  ("ship",mcn_no_shadow,"boat_sail_on", 0.23, snd_footstep_grass, 0.0, 0.05, 0), #unused (only used in cheats)
+  ("ship_on_land",mcn_no_shadow,"boat_sail_off", 0.23, 0), #unused (only used in cheats)
 
 #  ("castle_a",mcn_no_shadow,"map_castle_a", 0.35,0),
 #  ("castle_b",mcn_no_shadow,"map_castle_b", 0.35,0),
-  ("castle_c",mcn_no_shadow,"map_castle_c", 0.35,0),
+  ("castle_c",mcn_no_shadow,"map_castle_c", 0.35,0), #unused
 #  ("castle_d",mcn_no_shadow,"map_castle_d", 0.35,0),
 #  ("town_snow",mcn_no_shadow,"map_town_snow_a", 0.35,0),
 
@@ -161,25 +161,25 @@ map_icons = map_icons_scribbler + [
   ("ancient_ruins",mcn_no_shadow,"ancient_ruins", 1.0,0),
   ("argonath",mcn_no_shadow,"argonath", 1,0),
   ("baraddur",mcn_no_shadow,"baraddur", 1,0),
-  ("cirithungol",mcn_no_shadow,"cirithungol", 1,0),
-  ("orodruin",0,"orodruin", 1.5,0),
+  ("cirithungol",mcn_no_shadow,"cirithungol", 1,0), #unused
+  ("orodruin",0,"orodruin", 1.5,0), #unused: Combine with Baraddur?
 
   ("cairandros",mcn_no_shadow,"cairandros", 1.0,0),
   ("castle_gondor_small",mcn_no_shadow,"Castle", 1.5,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_castle1")])]),
-  ("castle__gondor_full",mcn_no_shadow,"Castle_Full", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_castle1")])]),
-  ("castle__gondor_wall",mcn_no_shadow,"Castle_Wall", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_castle1")])]),
+  ("castle__gondor_full",mcn_no_shadow,"Castle_Full", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_castle1")])]), #unused
+  ("castle__gondor_wall",mcn_no_shadow,"Castle_Wall", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_castle1")])]), #unused
   ("corsaircamp",mcn_no_shadow,"corsaircamp", 1.0,0),
   ("dolamroth",mcn_no_shadow,"dolamroth", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_dolamroth")])]),
   ("dolguldur",mcn_no_shadow,"dolguldur", 1.0,0),
   ("east_osgilliath",mcn_no_shadow,"east_osgilliath", 0.8,0),
   ("west_osgilliath",mcn_no_shadow,"west_osgilliath", 0.8,0),
   ("edoras",mcn_no_shadow,"Edoras", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_edoras")])]),
-  ("field",mcn_no_shadow,"Fielda", 1.0,0),
+  ("field",mcn_no_shadow,"Fielda", 1.0,0), #unused
   # ("field_b",mcn_no_shadow,"Fieldb", 1.0,0),
   # ("field_c",mcn_no_shadow,"Fieldc", 1.0,0),
   ("gondortown",mcn_no_shadow,"gondortown", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq, ":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_gondor_town")])]),
   ("grove",mcn_no_shadow,"Grove", 0.45,0),
-  ("hand_isen",mcn_no_shadow,"handsign", 0.26,0),
+  ("hand_isen",mcn_no_shadow,"handsign", 0.26,0), #unused combine with Isengard?
   ("haradcamp",mcn_no_shadow,"haradcamp", 1.0,0),
   ("helms_deep",mcn_no_shadow,"Helms_Deep", 0.7,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_helmsdeep")])]),
   ("henneth_annun",mcn_no_shadow,"henneth_annun", 0.4,0),
@@ -189,21 +189,21 @@ map_icons = map_icons_scribbler + [
   ("minasmorgul",mcn_no_shadow,"minasmorgul", 0.7,0),
   ("morannon",mcn_no_shadow,"Morannon", 1.0,0),
   ("moria",mcn_no_shadow,"moria", 1.0,0),
-  ("moria_bak",mcn_no_shadow,"moria_bak", 1.0,0),
+  ("moria_bak",mcn_no_shadow,"moria_bak", 1.0,0), #unused
   ("nomadcamp",mcn_no_shadow,"nomadcamp", 1.0,0),
-  ("nomadcamp_b",mcn_no_shadow,"nomadcamp_b", 1.0,0),
+  ("nomadcamp_b",mcn_no_shadow,"nomadcamp_b", 1.0,0), #unused; only used for two parties, one of them quest related
   #("north_bridge",mcn_no_shadow,"North_Bridge", 1.0,0),
   #("nw_bridge",mcn_no_shadow,"NW_bridge", 1.0,0),
   ("orctower",mcn_no_shadow,"orctower", 0.5,0),
   
   ("rohantown1",mcn_no_shadow,"RohanTown1", 1.0,0,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_edoras")])]),
-  ("smallvillage",mcn_no_shadow,"smallvillage", 2.0,0),
+  ("smallvillage",mcn_no_shadow,"smallvillage", 2.0,0), #unused; only used for Beorning Village and Beorn's house
   ("tree",mcn_no_shadow,"Tree", 0.5,0),
   
   ("burial_mound",mcn_no_shadow,"burial_mound", 1.0,0),
   ("tree_low",mcn_no_shadow,"Tree_low", 1.0,0),
 
-  ("custom_banner_01",0,"custom_map_banner_01", banner_scale, 0,
+  ("custom_banner_01",0,"custom_map_banner_01", banner_scale, 0, #unused?
    [(ti_on_init_map_icon,
       [ (store_trigger_param_1, ":party_no"),
         (party_get_slot, ":leader_troop", ":party_no", slot_town_lord),
@@ -213,7 +213,7 @@ map_icons = map_icons_scribbler + [
         (try_end),
         ]),
      ]),
-  ("custom_banner_02",0,"custom_map_banner_02", banner_scale, 0,
+  ("custom_banner_02",0,"custom_map_banner_02", banner_scale, 0, #unused?
    [(ti_on_init_map_icon,
       [ (store_trigger_param_1, ":party_no"),
         (party_get_slot, ":leader_troop", ":party_no", slot_town_lord),
@@ -223,7 +223,7 @@ map_icons = map_icons_scribbler + [
         (try_end),
         ]),
      ]),
-  ("custom_banner_03",0,"custom_map_banner_03", banner_scale, 0,
+  ("custom_banner_03",0,"custom_map_banner_03", banner_scale, 0, #unused?
    [(ti_on_init_map_icon,
       [ (store_trigger_param_1, ":party_no"),
         (party_get_slot, ":leader_troop", ":party_no", slot_town_lord),
@@ -315,7 +315,7 @@ map_icons = map_icons_scribbler + [
 
   ("thranduil",mcn_no_shadow,"thranduilhall", 1.0,0),
   ("esgaroth",mcn_no_shadow,"esgaroth", 1.0,0),
-  ("debris",0,"debris", 0.6,0),
+  ("debris",0,"debris", 0.6,0), #same model as ford rocks, differently scaled
   ("empty",0,"0", 0.6,0),
   ("gandalf", 0, "white_rider", avatar_scale, snd_gallop, 0.15, 0.173, 0),
   ("nazgul" , 0, "black_rider", avatar_scale, snd_gallop, 0.15, 0.173, 0),
