@@ -1102,41 +1102,6 @@ mission_templates = [ # not used in game
 			(else_try),
 				(call_script, "script_succeed_quest", "qst_hunt_down_fugitive"),
 			(try_end)]),
-
- ] + (is_a_wb_mt==1 and [
-  #Henneth Anun at Dusk Scene Prop
-  (2, 0, 0, 
-    [
-      (eq, "$current_town", "p_town_henneth_annun"),
-      (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
-      (store_time_of_day, ":time"),
-      (assign, reg5, ":time"),
-      (display_message, "@Time: {reg5}"),
-      (is_between, ":time", 18, 21),
-    ],    
-    [
-      (get_player_agent_no, "$current_player_agent"),
-      (agent_get_position, pos1, "$current_player_agent"),
-      (assign, reg3, 50),
-      (try_begin),
-        (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
-        (entry_point_get_position, pos2, 13),
-        (assign, ":spawned", 0),
-        (try_begin),
-          (eq, ":spawned", 0),
-          (set_spawn_position, pos2),
-          (spawn_scene_prop, "spr_moon_beam"),
-          (assign, ":spawned", 1),
-        (try_end),
-        (get_distance_between_positions, ":dist", pos2, pos1),
-        (lt, ":dist", 200),
-        (party_set_slot, "$current_town", slot_exploration_point_1, 1),
-        (tutorial_message, "@You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.", 0 , 10),
-        (add_xp_as_reward, reg3),
-      (try_end),
-  ]),
- ] or []) + [
- 
 	(2, 0, 0, [],     # check for different checkpoints reach (merchants, center of town etc)
        [(get_player_agent_no, "$current_player_agent"),
 	    (agent_get_position, pos1, "$current_player_agent"),
@@ -1197,7 +1162,7 @@ mission_templates = [ # not used in game
     tld_common_wb_muddy_water +
     tld_common_peacetime_scripts + [
       (ti_on_agent_spawn       , 0, 0, [],[ (store_trigger_param_1, ":agent_no"),(call_script, "script_init_town_agent", ":agent_no")]),
-      (ti_before_mission_start , 0, 0, [],[ (call_script, "script_change_banners_and_chest"),(assign, "$dungeons_in_scene",1)]),
+      (ti_before_mission_start , 0, 0, [],[ (call_script, "script_change_banners_and_chest"),(assign, "$dungeons_in_scene",1), (assign, "$temp_2", 0),]), #Use temp Global Var to prevent multiple scene prop spawns.
       (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)], []),
       (ti_tab_pressed          , 0, 0, [(set_trigger_result,1)], []),
 	  (0, 0, ti_once, [], [#(set_fog_distance, 150, 0xFF736252)
@@ -1206,7 +1171,40 @@ mission_templates = [ # not used in game
 #          (call_script, "script_music_set_situation_with_culture", mtf_sit_lords_hall),
         (else_try),
           (call_script, "script_music_set_situation_with_culture", 0), #prison
-        (try_end)]),	  
+        (try_end)]),
+
+ ] + (is_a_wb_mt==1 and [
+  #Henneth Anun at Dusk Scene Prop
+  (2, 0, 0, 
+    [
+      (eq, "$current_town", "p_town_henneth_annun"),
+      (store_time_of_day, ":time"),
+      (assign, reg5, ":time"),
+      (display_message, "@Time: {reg5}"),
+      (is_between, ":time", 18, 21),
+    ],    
+    [
+      (get_player_agent_no, "$current_player_agent"),
+      (agent_get_position, pos1, "$current_player_agent"),
+      (assign, reg3, 80),
+      (try_begin),
+        (entry_point_get_position, pos2, 13),
+        (try_begin),
+          (eq, "$temp_2", 0),
+          (display_message, "@Scene Prop Spawned"),
+          (set_spawn_position, pos2),
+          (spawn_scene_prop, "spr_moon_beam"),
+          (assign, "$temp_2", 1),
+        (try_end),
+        (get_distance_between_positions, ":dist", pos2, pos1),
+        (lt, ":dist", 400),
+        (tutorial_message, "@You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.", 0 , 10),
+        (party_slot_eq, "$current_town", slot_exploration_point_1, 0),
+        (add_xp_as_reward, reg3),
+        (party_set_slot, "$current_town", slot_exploration_point_1, 1),
+      (try_end),
+  ]),
+ ] or []) + [	  
 ]),
 
 # review troops (mtarini)
