@@ -1180,7 +1180,7 @@ mission_templates = [ # not used in game
       (eq, "$current_town", "p_town_henneth_annun"),
       (store_time_of_day, ":time"),
       (assign, reg5, ":time"),
-      (display_message, "@Time: {reg5}"),
+      #(display_message, "@Time: {reg5}"),
       (is_between, ":time", 18, 21),
     ],    
     [
@@ -1191,7 +1191,7 @@ mission_templates = [ # not used in game
         (entry_point_get_position, pos2, 13),
         (try_begin),
           (eq, "$temp_2", 0),
-          (display_message, "@Scene Prop Spawned"),
+          #(display_message, "@Scene Prop Spawned"),
           (set_spawn_position, pos2),
           (spawn_scene_prop, "spr_moon_beam"),
           (assign, "$temp_2", 1),
