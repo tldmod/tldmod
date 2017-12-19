@@ -23022,6 +23022,7 @@ command_cursor_scripts = [
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
 
 		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
+		(ge, ":cur_target_center",0), #Should be valid center
 
 		(assign, reg55, "pt_refugees"),			#quest_target_party_template
 		(assign, reg56, ":cur_object_center"),	#quest_object_center
@@ -23207,6 +23208,7 @@ command_cursor_scripts = [
 		(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
 
 		(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Center should not be destroyed
+		(ge, ":cur_target_center",0), #Should be valid center
 
 		(assign, reg55, "pt_refugees"),			#quest_target_party_template
 		(assign, reg56, ":cur_object_center"),	#quest_object_center
@@ -23378,6 +23380,7 @@ command_cursor_scripts = [
     (assign, ":quest_target_center", ":result"),
 
     (party_slot_eq, ":quest_target_center", slot_center_destroyed, 0), #Center shouldn't be destroyed
+    (ge, ":quest_target_center",0), #Should be valid center
 
     (assign, reg55, "$g_encountered_party"),#quest_object_center
     (assign, reg56, ":to_donate"),      #quest_target_amount
@@ -23460,6 +23463,8 @@ command_cursor_scripts = [
 	(try_end),
 
 	(party_slot_eq, ":cur_target_center", slot_center_destroyed, 0), #Cant be destroyed / captured.
+	(ge, ":cur_target_center",0), #Should be valid center
+	(ge, ":cur_object_center",0), #Should be valid center
 
 	(assign, reg55, "$g_talk_troop"), #quest_object_troop
 	(assign, reg56, ":cur_object_center"),	#quest_object_center

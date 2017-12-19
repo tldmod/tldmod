@@ -1,4 +1,4 @@
-1470
+1480
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -635,8 +635,18 @@ qstr_battle_won_triggered_ battle_won_triggered_-_Evil
 qstr_You_receive_word_tha You_receive_word_that_Beorning_villages_were_attacked._Beornings_lose_faction_strength
 qstr_You_receive_word_that You_receive_word_that_the_Ring_Hunter_Leaders_were_seen_travelling_towards_Mordor,_a_chest_in_tow._Mordor_gains_faction_strength.
 qstr_Enemy_reinforcements Enemy_reinforcements_have_arrived
+qstr_Yarrrr!! Yarrrr!!
+qstr_Get_all_of_them! Get_all_of_them!
+qstr_Kill_them_all! Kill_them_all!
+qstr_Toss_them_overboard! Toss_them_overboard!
+qstr_It_is_a_good_day_to_ It_is_a_good_day_to_die!
 qstr_All_hands_on_deck!_T All_hands_on_deck!_Throw_them_back!
 qstr_Ally_reinforcements_ Ally_reinforcements_have_arrived
+qstr_Forward_men! Forward,_men!
+qstr_Leave_none_of_these_ Leave_none_of_these_filth_standing!
+qstr_End_them_all! End_them_all!
+qstr_Drive_them_back! Drive_them_back!
+qstr_Protect_the_City! Protect_the_City!
 qstr_Forward!_Board_them! Forward!_Board_them!
 qstr_On_your_positions_bi On_your_positions,_bitchez!!
 qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode

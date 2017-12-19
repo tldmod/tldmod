@@ -7926,7 +7926,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [trp_start_quest_uruk,"start", 
   [], 
-    "Who are you? I did not need your help", "caravan_attack1",
+    "And who are you? We needed none of your interference, nar!", "caravan_attack1",
   []],
 
 [trp_start_quest_uruk|plyr,"caravan_attack1", 
@@ -11225,7 +11225,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 [anyone,"trade_requested_weapons", [], "Ah, yes commander. These wares are the best you'll find anywhere.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
   (change_screen_trade)]],
-[anyone,"trade_requested_horse", [], "You have a fine eye, Commander. You won't find better beasts than these anywhere else.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
+[anyone,"trade_requested_horse", [], "Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.", "merchant_trade",[#(assign, "$equip_needs_checking", 1),
                   (change_screen_trade)]],
 
 [anyone,"merchant_trade", [], "Anything else?", "town_merchant_talk",[]],
