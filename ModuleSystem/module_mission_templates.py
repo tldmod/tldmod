@@ -3070,7 +3070,7 @@ mission_templates = [ # not used in game
 ## Enemy Reinforcement Triggers: 
   (5, 0, 0, [
       (store_mission_timer_b, ":mission_time_b"),
-      (store_random_in_range, ":ran_time", 10, 20),
+      (store_random_in_range, ":ran_time", 5, 15),
       (ge, ":mission_time_b", ":ran_time"), #Random time between 10 - 20 secs
       (reset_mission_timer_b),
       (lt,"$enemy_reinforcement_stage", 8), #up to 8 reinforcements     
@@ -3084,29 +3084,29 @@ mission_templates = [ # not used in game
       (try_begin),
         (eq, ":faction", "fac_gondor"),
         (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
-        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
+        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
         (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
-        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
+        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
       #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
       (else_try), #Dale
         (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
-        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
+        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
         (assign, ":enemy_archer_tier_1", "trp_rhun_tribal_infantry"),
-        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_tribal_infantry",0), 
+        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_tribal_infantry",0), 
       #  (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
       (try_end),
 
-      (store_character_level, ":level", "trp_player"),
+      # (store_character_level, ":level", "trp_player"),
 
-      #This is where we check what to spawn depending on player level (Med/High Tier)
-      (try_begin),
-        (ge, ":level", 25),
-        (assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
-        (assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
-      (else_try),
+      # #This is where we check what to spawn depending on player level (Med/High Tier)
+      # (try_begin),
+        # (ge, ":level", 25),
+        # (assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
+        # (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
+      # (else_try),
         (assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
-      (try_end),
+      # (try_end),
 
       (assign, ":range_end", 6), #Change this number to change the number of troops spawned
       (assign, ":team_enemy", 1),
@@ -3168,7 +3168,7 @@ mission_templates = [ # not used in game
 # Ally Reinforcement Triggers: 
 (5, 0, 0, [
       (store_mission_timer_c, ":mission_time_c"),
-      (store_random_in_range, ":ran_time", 25, 40),
+      (store_random_in_range, ":ran_time", 10, 20),
       (ge, ":mission_time_c", ":ran_time"), #Random time between 25 - 40 secs
       (reset_mission_timer_c),
       (lt,"$ally_reinforcement_stage", 4),      
@@ -3180,13 +3180,13 @@ mission_templates = [ # not used in game
       
       (try_begin),
         (eq, ":faction", "fac_gondor"),
-        (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
+        (assign, ":allies_melee_tier_1", "trp_pelargir_watchman"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
       #  (display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
-        (assign, ":allies_melee_tier_1", "trp_dale_warrior"),
+        (assign, ":allies_melee_tier_1", "trp_dale_veteran_warrior"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
@@ -3391,7 +3391,7 @@ mission_templates = [ # not used in game
 ## Ally Reinforcement Triggers: 
   (5, 0, 0, [
       (store_mission_timer_b, ":mission_time_b"),
-      (store_random_in_range, ":ran_time", 25, 40),
+      (store_random_in_range, ":ran_time", 10, 20),
       (ge, ":mission_time_b", ":ran_time"), #Random time between 25 - 40 secs
       (reset_mission_timer_b),
       (lt,"$ally_reinforcement_stage", 4), #up to 4 reinforcements     
@@ -3405,31 +3405,31 @@ mission_templates = [ # not used in game
       (try_begin),
         (eq, ":faction", "fac_umbar"),
         (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
-        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
+        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
         (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
-        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
+        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
       #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
       (else_try), #Rhun
         (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
-        (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
+        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_rhun_tribal_warrior",0),
         (assign, ":enemy_archer_tier_1", "trp_rhun_tribal_infantry"),
-        (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_tribal_infantry",0), 
+        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_rhun_tribal_infantry",0), 
        # (display_message, "@DEBUG: Rhun Troops Spawned", color_bad_news),
       (try_end),
 
-      (store_character_level, ":level", "trp_player"),
+      #(store_character_level, ":level", "trp_player"),
 
       #This is where we check what to spawn depending on player level (Med/High Tier)
-      (try_begin),
-        (ge, ":level", 25),
-        (assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
-        (assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
-      (else_try),
+      # (try_begin),
+        # (ge, ":level", 25),
+        # (assign, ":enemy_melee_troop",  ":enemy_melee_tier_2"),
+        # (assign, ":enemy_ranged_troop", ":enemy_archer_tier_2"),
+      # (else_try),
         (assign, ":enemy_melee_troop",  ":enemy_melee_tier_1"),
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
-      (try_end),
+      # (try_end),
 
-      (assign, ":range_end", 6), #Change this number to change the number of troops spawned
+      (assign, ":range_end", 7), #Change this number to change the number of troops spawned
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
       (store_random_in_range, ":rand_speech", 0, 6),
@@ -3488,7 +3488,7 @@ mission_templates = [ # not used in game
 ## Enemy Reinforcement Triggers: 
 (5, 0, 0, [
       (store_mission_timer_c, ":mission_time_c"),
-      (store_random_in_range, ":ran_time", 10, 20),
+      (store_random_in_range, ":ran_time", 5, 15),
       (ge, ":mission_time_c", ":ran_time"), #Random time between 25 - 40 secs
       (reset_mission_timer_c),
       (lt,"$enemy_reinforcement_stage", 8),      
@@ -3504,7 +3504,7 @@ mission_templates = [ # not used in game
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
         #(display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale
-        (assign, ":allies_melee_tier_1", "trp_dale_warrior"),
+        (assign, ":allies_melee_tier_1", "trp_dale_veteran_warrior"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
         (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
