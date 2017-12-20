@@ -9187,8 +9187,8 @@ game_menus = [
 		      (faction_get_slot, ":tier_2_troop", "$assist", slot_faction_tier_2_troop),
 		      (faction_get_slot, ":tier_4_troop", "$assist", slot_faction_tier_4_troop),
 		      (set_visitor,0,"trp_player"),
-		      (set_visitors,2,":tier_4_troop", 7),
-		       (set_visitors,4,":tier_2_troop", 7),
+		      (set_visitors,2,":tier_4_troop", 8),
+		       (set_visitors,4,":tier_2_troop", 8),
 		      (set_visitor,6,"trp_start_quest_mordor_scout"),
 		      (set_visitors,22,"trp_ranger_of_ithilien", 2),
 		      (set_visitors,23,"trp_ranger_of_ithilien", 3),
@@ -9760,7 +9760,7 @@ game_menus = [
 	
 	("sea_battle_quest",0,
 	   "The fleets have met. The ships close in and sailors throw down planks...",
-	   "none",[],
+	   "none",[(set_background_mesh, "mesh_ui_default_menu_window")],
 
 	 #If Good
 	 [
@@ -10057,7 +10057,7 @@ game_menus = [
 ("sea_battle_quest_results",mnf_scale_picture|mnf_disable_all_keys,
 	    "{s9}",
 	    "none",
-	    [
+	    [ (set_background_mesh, "mesh_ui_default_menu_window"),
 	      (try_begin),
 	        (eq, "$g_battle_result", 1),
 	        (try_begin),
