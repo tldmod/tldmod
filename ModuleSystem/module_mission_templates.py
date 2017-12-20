@@ -3108,7 +3108,7 @@ mission_templates = [ # not used in game
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
       # (try_end),
 
-      (assign, ":range_end", 6), #Change this number to change the number of troops spawned
+      (assign, ":range_end", 7), #Change this number to change the number of troops spawned
       (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
       (store_random_in_range, ":rand_speech", 0, 6),
@@ -3406,7 +3406,7 @@ mission_templates = [ # not used in game
         (eq, ":faction", "fac_umbar"),
         (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
         #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
-        (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
+        (assign, ":enemy_archer_tier_1", "trp_militia_of_umbar"),
         #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
       #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
       (else_try), #Rhun
@@ -3429,7 +3429,7 @@ mission_templates = [ # not used in game
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
       # (try_end),
 
-      (assign, ":range_end", 7), #Change this number to change the number of troops spawned
+      (assign, ":range_end", 6), #Change this number to change the number of troops spawned
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
       (store_random_in_range, ":rand_speech", 0, 6),
@@ -3506,7 +3506,7 @@ mission_templates = [ # not used in game
       (else_try), #Dale
         (assign, ":allies_melee_tier_1", "trp_dale_veteran_warrior"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_merchant_guard_of_dale",0), #Commented out - If we want to upgrade allies too.
-        (assign, ":allies_archer_tier_1", "trp_laketown_bowmen"),
+        (assign, ":allies_archer_tier_1", "trp_laketown_scout"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_laketown_bowmen",0),   #Commented out - If we want to upgrade allies too.
         #(display_message, "@DEBUG: Dale Troops Spawned", color_bad_news),
       (try_end),

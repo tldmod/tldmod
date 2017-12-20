@@ -425,7 +425,7 @@ itemsfile version 2
  itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 285 0
 0
 
- itm_glorfi_bow Glorfindel_Bow Glorfindel_Bow 2  GA_BowE_Medium_B 0  GA_BowE_Medium_B_Carry 3458764513820540928  6295560 5905584128 1000 656384 1.75 100 0 0 94 3 0 93 65 0 0 281 0
+ itm_glorfi_bow Glorfindel_Bow Glorfindel_Bow 2  lav_curved_bow_vae 0  lav_curved_bow_vae_carry 3458764513820540928  6295560 2952794112 1000 656384 1.75 100 0 0 94 3 0 93 65 0 0 281 0
 0
 
  itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  274792456 5905584128 1300 656384 1.5 100 0 0 96 3 0 93 65 0 0 287 0
@@ -2685,7 +2685,7 @@ itemsfile version 2
  itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 3000 1099679400102 30 100 0 38 17 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  GA_BowE_Medium_B 0  GA_BowE_Medium_B_Carry 3458764513820540928  6295560 5905584128 3000 0 1.5 100 0 0 90 3 0 99 50 0 0 290 0
+ itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  lav_curved_bow_vae 0  lav_curved_bow_vae_carry 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 90 3 0 99 50 0 0 290 0
 0
 
  itm_lorien_sword_reward Galadhrim_Sword Galadhrim_Sword 2  lorien_sword_hand_and_half 0  scab_lorien_sword_hand_and_half 3458764513820540928  4198403 9223635954298781951 900 156672 2.5 100 0 0 0 0 33792 125 0 103 0 289 33
