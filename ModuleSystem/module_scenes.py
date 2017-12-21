@@ -62,7 +62,7 @@ scenes = [
 ("quick_battle_7",sf_generate,"none", "none", (0,0),(100,100),-100,"0x314d060900036cd70000295300002ec9000025f3",[],[],"outer_terrain_plain"),
 
 ################## TLD QUICK BATTLES 0x00000002b007a2320005114300006228000053bf00004eb9
-("quick_battle_ambush"  ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000002b007a2320002589600002fc700004068000049dc",[],[], "outer_terrain_plain"),
+("quick_battle_ambush"  ,sf_generate,"none", "none", (0,0),(120,120),-100,"0x00000002b007a2320002589600002fc700004068000049dc",[],[], "outer_mountains2east"),
 ("quick_battle_corsair" ,sf_generate,"none", "none", (0,0),(200,200),-100,"0x0000000320014500800a6e9800007dd98000250100006dde",[],[]),
 #("town_1_arena_football",sf_generate,"none", "none", (0,0),(100,100),-100,"0xa0001d9300031ccb0000156f000048ba0000361c"        ,[],[], "outer_terrain_plain"),
 ("quick_battle_random"  ,sf_generate|sf_randomize,"none", "none", (0,0),(300,300),-100,"0x000000033c64cb1e0006d5b50000307900001e7500004547", [],[], "outer_terrain_plain"),
