@@ -6170,8 +6170,6 @@ scripts = [
 		(else_try),
 			
 			#Kham - Sea Battle (both sides)
-			(eq, cheat_switch, 1),
-			(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham_cheat_mode
 			(eq, "$tld_war_began", 1),
 			(eq, ":quest_no", "qst_blank_quest_03"),
 			(try_begin),
