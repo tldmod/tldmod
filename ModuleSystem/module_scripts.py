@@ -6245,7 +6245,7 @@ scripts = [
 		    (else_try),
 		        (this_or_next|eq, ":giver_faction_no", "fac_moria"),
 		        (			  eq, ":giver_center_no", "p_town_dol_guldur"),
-		        (assign, reg0, "p_town_urukhai_h_camp"),
+		        (assign, reg0, "p_town_cerin_amroth"),
 		    (else_try),
 		        (eq, ":giver_center_no", "p_town_rhun_main_camp"),
 		        (store_random_in_range, ":town", 0,2),
