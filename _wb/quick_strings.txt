@@ -1,4 +1,4 @@
-1538
+1571
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -126,6 +126,8 @@ qstr_Brighter_Nights:__ Brighter_Nights:__
 qstr_Done Done
 qstr_Gameplay_Tweaks Gameplay_Tweaks
 qstr_War_Will_Start_at_Le War_Will_Start_at_Level_{reg0}
+qstr_Troop_Tree Troop_Tree
+qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -648,6 +650,37 @@ qstr_Riding___{reg31}_ Riding_(-{reg31})
 qstr_Horse_Archery___{reg Horse_Archery_(-{reg31})
 qstr_Athletics___{reg31}_ Athletics_(-{reg31})
 qstr_No_Skill_Penalty_Ass No_Skill_Penalty_Assigned
+qstr_Inventory Inventory
+qstr_Show_stats Show_stats
+qstr_Show_item_details__ Show_item_details__
+qstr_Troop_detail Troop_detail
+qstr_{s1}^ {s1}^
+qstr_{s1}Level:_{reg1}^ {s1}Level:_{reg1}^
+qstr_{s1}Hit_Points:_{reg {s1}Hit_Points:_{reg1}
+qstr_{s1}Atributes:_^___S {s1}Atributes:_^___Strength:^
+qstr_{s2}^{reg1}^ {s2}^{reg1}^
+qstr_{s1}___Agility: {s1}___Agility:
+qstr_{s2}{reg1} {s2}{reg1}
+qstr_{s1}Main_skills:_^ {s1}Main_skills:_^
+qstr_{s1}___Power_Strike: {s1}___Power_Strike:^
+qstr_{s2}{reg1}^ {s2}{reg1}^
+qstr_{s1}___Athletics:^ {s1}___Athletics:^
+qstr_{s1}___Riding:^ {s1}___Riding:^
+qstr_{s2}_^ {s2}-^
+qstr_{s1}___Power_Throw:^ {s1}___Power_Throw:^
+qstr_{s1}___Power_Draw:^^ {s1}___Power_Draw:^^
+qstr_{s2}{reg1}^^ {s2}{reg1}^^
+qstr_{s2}_^^ {s2}-^^
+qstr_{s1}Weapons:^ {s1}Weapons:^
+qstr_{s1}___One_Handed:^ {s1}___One_Handed:^
+qstr_{s1}___Two_Handed:^ {s1}___Two_Handed:^
+qstr_{s1}___Polearms:^ {s1}___Polearms:^
+qstr_{s1}___Archery:^ {s1}___Archery:^
+qstr_{s1}___Crossbow:^ {s1}___Crossbow:^
+qstr_{s1}___Throwing:^ {s1}___Throwing:^
+qstr_{s1}___Slings: {s1}___Slings:
+qstr_{s2}_ {s2}-
+qstr__Click_on_the_troop_ (Click_on_the_troop_to_rotate_it)^^Click_on_pieces_of_gear_^(helmet,_armor,_gloves_and_boots)^_to_display_them.
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!

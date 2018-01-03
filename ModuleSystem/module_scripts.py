@@ -23702,6 +23702,12 @@ if is_a_wb_script==1:
       (troop_set_slot, "trp_stack_selection_amounts", "$g_cur_slot_no", reg1),
       (troop_set_slot, "trp_stack_selection_ids", "$g_cur_slot_no", ":troop_no"),
       (val_add, "$g_cur_slot_no", 1),
+
+    # START Troop Detail: saves data to array - VC-2379
+      (val_add, "$troop_tree_counter", 1),
+      (troop_set_slot, "trp_temp_array_a", "$troop_tree_counter", reg1), # overlay id
+      (troop_set_slot, "trp_temp_array_b", "$troop_tree_counter", ":troop_no"), # troop_id
+      # END Troop Detail: saves data to array
     ]),
 
    # reg0: cur max_tier
@@ -24651,4 +24657,918 @@ if is_a_wb_script==1:
      (try_end),
    ]),
 
+#Kham VC Troop Tree Scripts Start
+#moto troop tree chief
+  # script_troop_tree_precurse
+  # Input: troop, number of upgrade, number of upgrade2
+  # Output: reg0 number upgrade, reg1 upgrade2
+  ("troop_tree_precurse", [(store_script_param, ":troop", 1),
+      (store_script_param, ":ret_val_0", 2),
+      (store_script_param, ":ret_val_1", 3),
+      
+      (assign, ":max_branch_0", ":ret_val_0"),
+      (troop_get_upgrade_troop, ":next_troop", ":troop", 0),
+      (try_begin),
+        (gt, ":next_troop", 0),
+        (store_add, ":max_branch_0", ":ret_val_0", 1),
+        (call_script, "script_troop_tree_precurse", ":next_troop", ":max_branch_0", ":ret_val_1"),
+        (val_max, ":max_branch_0", reg0),
+        (val_max, ":ret_val_1", reg1),
+      (try_end),
+      
+      (troop_get_upgrade_troop, ":next_troop", ":troop", 1),
+      (try_begin),
+        (gt, ":next_troop", 0),
+        (val_add, ":ret_val_0", 1),
+        (val_add, ":ret_val_1", 1),
+        (call_script, "script_troop_tree_precurse", ":next_troop", ":ret_val_0", ":ret_val_1"),
+        (val_max, ":ret_val_0", reg0),
+        (val_max, ":ret_val_1", reg1),
+      (try_end),
+      
+      (val_max, ":ret_val_0", ":max_branch_0"),
+      (assign, reg0, ":ret_val_0"),
+      (assign, reg1, ":ret_val_1"),]),
+  
+  # script_troop_tree_recurse
+  # Input: troop, x_pos, y_pos
+  # Output: reg0 augmented y_pos
+  ("troop_tree_recurse", [(store_script_param, ":troop", 1),
+      (store_script_param, ":x_pos", 2),
+      (store_script_param, ":y_pos", 3),
+      (store_script_param, ":next_y", 3),
+      
+      # Fix height of pic - VC-2379
+      (val_min, "$troop_tree_pic_height", 272),
+      
+      (store_div, ":scaler", Troop_Tree_Area_Height, "$troop_tree_pic_height"),
+      (store_div, ":scaled_width", Troop_Tree_Tableau_Width, ":scaler"),
+      (store_div, ":scaled_height", Troop_Tree_Tableau_Height, ":scaler"),
+      
+      (store_mul, reg2, ":troop", 2), #picture with weapons (see script_add_troop_to_cur_tableau_for_party)
+      (create_mesh_overlay_with_tableau_material, reg1, -1, "tableau_troop_tree_pic", reg2),
+      
+      # START Troop Detail: saves data to array - VC-2379
+      (val_add, "$troop_tree_counter", 1),
+      (troop_set_slot, "trp_temp_array_a", "$troop_tree_counter", reg1), # overlay id
+      (troop_set_slot, "trp_temp_array_b", "$troop_tree_counter", ":troop"), # troop_id
+      # END Troop Detail: saves data to array
+      
+      (store_div, reg3, ":scaled_width", 3),  #half too much for some reason
+      (store_sub, reg2, ":x_pos", reg3),
+      (position_set_x, pos1, reg2),
+      (position_set_y, pos1, ":y_pos"),
+      (overlay_set_position, reg1, pos1),
+      
+      (position_set_x, pos1, ":scaled_width"),
+      (position_set_y, pos1, ":scaled_height"),
+      (overlay_set_size, reg1, pos1),
+      
+      # (overlay_set_additional_render_height, reg1, 10), #float over lines MOTO
+      # doesn't help
+      
+      (str_store_troop_name, s0, ":troop"),
+      (create_text_overlay, reg1, "@{s0}", tf_center_justify),
+      (position_set_x, pos1, ":x_pos"),
+      (position_set_y, pos1, ":y_pos"),
+      (overlay_set_position, reg1, pos1),
+      
+      (store_div, ":text_scaler", Troop_Tree_Area_Width, "$troop_tree_pic_width"),
+      (val_max, ":text_scaler", ":scaler"),
+      (store_div, reg2, 3500 * Screen_Undistort_Width_Num / Screen_Undistort_Width_Den, ":text_scaler"),
+      (position_set_x, pos1, reg2),
+      (store_div, reg2, 3500, ":text_scaler"),
+      (position_set_y, pos1, reg2),
+      (overlay_set_size, reg1, pos1),
+      
+      (store_div, reg3, ":scaled_height", 2),
+      (store_sub, reg2, ":y_pos", reg3),
+      (store_div, ":height_adjust", "$troop_tree_pic_height", 2),
+      
+      (store_add, ":next_x", ":x_pos", "$troop_tree_pic_width"),
+      (troop_get_upgrade_troop, ":next_troop", ":troop", 0),
+      (try_begin),
+        (gt, ":next_troop", 0),
+        (create_mesh_overlay, reg1, "mesh_white_plane"),
+        (position_set_x, pos1, ":x_pos"),
+        (store_add, reg2, ":y_pos", ":height_adjust"),
+        (position_set_y, pos1, reg2),
+        (overlay_set_position, reg1, pos1),
+        
+        (store_mul, reg2, "$troop_tree_pic_width", 50),
+        (position_set_x, pos1, reg2),
+        (position_set_y, pos1, 50 * 4),
+        (overlay_set_size, reg1, pos1),
+        
+        (overlay_set_color, reg1, Troop_Tree_Line_Color),
+        
+        (call_script, "script_troop_tree_recurse", ":next_troop", ":next_x", ":next_y"),
+        (assign, ":next_y", reg0),
+      (try_end),
+      
+      (troop_get_upgrade_troop, ":next_troop", ":troop", 1),
+      (try_begin),
+        (gt, ":next_troop", 0),
+        (val_sub, ":next_y", "$troop_tree_pic_height"),
+        
+        #half length horizontal, moved halfway
+        (create_mesh_overlay, reg1, "mesh_white_plane"),
+        (store_div, reg2, "$troop_tree_pic_width", 2),
+        (val_add, reg2, ":x_pos"),
+        (position_set_x, pos1, reg2),
+        (store_add, reg2, ":next_y", ":height_adjust"),
+        (position_set_y, pos1, reg2),
+        (overlay_set_position, reg1, pos1),
+        
+        (store_mul, reg2, "$troop_tree_pic_width", 50),
+        (val_div, reg2, 2),
+        (position_set_x, pos1, reg2),
+        (position_set_y, pos1, 50 * 4),
+        (overlay_set_size, reg1, pos1),
+        
+        (overlay_set_color, reg1, Troop_Tree_Line_Color),
+        
+        #vertical to connect
+        (create_mesh_overlay, reg1, "mesh_white_plane"),
+        (store_div, reg2, "$troop_tree_pic_width", 2),
+        (val_add, reg2, ":x_pos"),
+        (position_set_x, pos1, reg2),
+        (store_add, reg2, ":next_y", ":height_adjust"),
+        (position_set_y, pos1, reg2),
+        (overlay_set_position, reg1, pos1),
+        
+        (position_set_x, pos1, 50 * 3), #3/4 to undistort in wide screens
+        (store_sub, reg2, ":y_pos", ":next_y"),
+        (val_mul, reg2, 50),
+        (position_set_y, pos1, reg2),
+        (overlay_set_size, reg1, pos1),
+        
+        (overlay_set_color, reg1, Troop_Tree_Line_Color),
+        
+        (call_script, "script_troop_tree_recurse", ":next_troop", ":next_x", ":next_y"),
+        (assign, ":next_y", reg0),
+      (try_end),
+      
+      (assign, reg0, ":next_y"),]),
+  
+
+#script_manage_legs_in_cur_tableau
+  # INPUT: troop_no
+  # OUTPUT: none
+  ("manage_legs_in_cur_tableau", [
+      (store_script_param, ":troop_no", 1),
+      (cur_tableau_clear_override_items),
+      #(troop_get_inventory_slot, ":armor", ":troop_no", ek_body),
+      (assign, ":flags", 0),
+      
+      #(try_begin),
+      #  (gt, ":armor", itm_no_item),
+      #  (item_has_property, ":armor", itp_replaces_helm),
+      #  (val_or, ":flags", af_override_head),
+      #(try_end),
+      
+      (try_begin),
+        (gt, ":flags", 0),
+        (cur_tableau_set_override_flags, ":flags"),
+      (try_end),
+  ]),
+  
+
+# script_troop_detail_layout
+  # Troop Detail VC-2379
+  # Description
+  ("troop_detail_layout",
+    [# Done
+      (set_container_overlay, -1),
+      (create_game_button_overlay, "$g_presentation_leave_button", "@Done"),
+      (position_set_x, pos1, Screen_Width - 210),(position_set_y, pos1, 60),
+      (overlay_set_position, "$g_presentation_leave_button", pos1),
+      
+      # Gear/Stats button
+      (str_clear, s1),
+      
+      (try_begin),
+        (eq, "$temp", 1),
+        (str_store_string, s1, "@Inventory"),
+      (else_try),
+        (str_store_string, s1, "@Show stats"),
+      (try_end),
+      
+      (create_game_button_overlay, "$g_presentation_obj_1", s1),
+      (position_set_x, pos1, Screen_Width - 425),(position_set_y, pos1, 60),
+      (overlay_set_position, "$g_presentation_obj_1", pos1),
+      
+      # Show item tooltip
+      (create_check_box_overlay, "$checkbox_show_item_details", "mesh_checkbox_off", "mesh_checkbox_on"),
+      (position_set_x, pos1, 915),(position_set_y, pos1, 675),
+      (overlay_set_position, "$checkbox_show_item_details", pos1),
+      (overlay_set_val, "$checkbox_show_item_details", "$checkbox_show_item_details_val"),
+      
+      (create_text_overlay, "$checkbox_show_item_details_label", "@Show item details  ", tf_right_align),
+      (position_set_x, pos1, 915),(position_set_y, pos1, 675 - 5),
+      (overlay_set_position, "$checkbox_show_item_details_label", pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, "$checkbox_show_item_details_label", pos1),
+      (overlay_set_color, "$checkbox_show_item_details_label", 0x000000),
+      
+      (try_begin),
+        (eq, "$temp", 1),
+        (overlay_set_display, "$checkbox_show_item_details_label", 0),
+        (overlay_set_display, "$checkbox_show_item_details", 0),
+      (try_end),
+      
+      # title
+      (create_text_overlay, reg1, "@Troop detail", tf_center_justify),
+      (position_set_x, pos1, 500),(position_set_y, pos1, Screen_Height - 85),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_title),(position_set_y, pos1, font_title),
+      (overlay_set_size, reg1, pos1),
+      
+      (create_text_overlay, reg1, "@Troop detail", tf_center_justify),
+      (position_set_x, pos1, 500 + 1),(position_set_y, pos1, Screen_Height - 85),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_title),(position_set_y, pos1, font_title),
+      (overlay_set_size, reg1, pos1),
+      
+      (create_text_overlay, reg1, "@Troop detail", tf_center_justify),
+      (position_set_x, pos1, 500 + 2),(position_set_y, pos1, Screen_Height - 85 + 1),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_title),(position_set_y, pos1, font_title),
+      (overlay_set_size, reg1, pos1),]),
+  
+  # "script_troop_detail_draw_troop"
+  # Input: troop_id
+  # Output: none
+  ("troop_detail_draw_troop",
+    [(store_script_param_1, ":troop_id"),
+      
+      
+      (try_begin),
+        (eq, "$temp", 1),
+        (store_mul, ":cur_troop", ":troop_id", 2),#with weapons
+        (create_mesh_overlay_with_tableau_material,
+          "$default_troop_portrait",
+          -1,
+          "tableau_troop_tree_pic",
+        ":cur_troop"),
+      (else_try),
+        (create_mesh_overlay_with_tableau_material,
+          "$default_troop_portrait",
+          -1,
+          "tableau_troop_detail_dummy_pic",
+        ":troop_id"),
+      (try_end),
+      
+      (position_set_x, pos1,  Troop_Tree_Tableau_Width * 0.8),
+      (position_set_y, pos1, Troop_Tree_Tableau_Height * 0.8),
+      (overlay_set_size, "$default_troop_portrait", pos1),
+      (position_set_x, pos1, 0),(position_set_y, pos1, 150),
+      (overlay_set_position, "$default_troop_portrait", pos1),]),
+  
+  
+  # "script_troop_detail_draw_weapons"
+  # Input: troop_id
+  # Output: none
+  ("troop_detail_draw_weapons",
+    [(store_script_param_1, ":troop_id"),
+      
+      (call_script, "script_troop_detail_draw_weapons_aux", ":troop_id", ek_item_0),
+      (call_script, "script_troop_detail_draw_weapons_aux", ":troop_id", ek_item_1),
+      (call_script, "script_troop_detail_draw_weapons_aux", ":troop_id", ek_item_2),
+      (call_script, "script_troop_detail_draw_weapons_aux", ":troop_id", ek_item_3),]),
+  
+  # "script_troop_detail_draw_weapons_aux"
+  # Input: troop_id, wp_number
+  # Output: none
+  ("troop_detail_draw_weapons_aux",
+    [(store_script_param_1, ":troop_id"),
+      (store_script_param_2, ":wp_number"),
+      
+      (troop_get_inventory_slot, ":wp", ":troop_id", ":wp_number"),
+      
+      (try_begin),
+        (neq, ":wp", -1),
+        
+        (assign, ":y", 500),
+        (store_mul, ":dec_y", 100, ":wp_number"),
+        (val_sub, ":y", ":dec_y"),
+        (store_add, ":y2", ":y", 40),
+        
+        (create_mesh_overlay, reg1, "mesh_mp_inventory_choose"),
+        (position_set_x, pos1, 300),(position_set_y, pos1, ":y"),
+        (overlay_set_position, reg1, pos1),
+        
+        (create_mesh_overlay_with_item_id, reg2, ":wp"),
+        (position_set_x, pos1, 300 + 40),(position_set_y, pos1, ":y2"),
+        (overlay_set_position, reg2, pos1),
+        
+        (position_set_x, pos2, 600),(position_set_y, pos2, 600),
+        (overlay_set_size, reg1, pos2),
+        (overlay_set_alpha, reg1, 0xFF),
+        (overlay_set_size, reg2, pos2),
+      (try_end),]),
+  
+  # "script_troop_detail_stats"
+  # Input: troop_id
+  # Output: none
+  ("troop_detail_stats",
+    [(store_script_param_1, ":troop_id"),
+      
+      (create_mesh_overlay, ":stats_area", "mesh_white_plane"),
+      (position_set_x, pos1, 24 * 1000),(position_set_y, pos1, 24 * 1000),
+      (overlay_set_size, ":stats_area", pos1),
+      (position_set_x, pos1, 450),(position_set_y, pos1, 150),
+      (overlay_set_position, ":stats_area", pos1),
+      (overlay_set_color, ":stats_area", 0xE6D1A7),
+      
+      (str_store_troop_name, s1, ":troop_id"),
+      
+      (store_attribute_level, ":troop_str", ":troop_id", ca_strength),
+      (store_attribute_level, ":troop_agi", ":troop_id", ca_agility),
+      
+      (store_skill_level, ":troop_powerstrike", "skl_power_strike", ":troop_id"),
+      (store_skill_level, ":troop_athletics", "skl_athletics", ":troop_id"),
+      (store_skill_level, ":troop_riding", "skl_riding", ":troop_id"),
+      (store_skill_level, ":troop_powerthrow", "skl_power_throw", ":troop_id"),
+      (store_skill_level, ":troop_powerdraw", "skl_power_draw", ":troop_id"),
+      
+      (store_proficiency_level, ":troop_onehanded", ":troop_id", wpt_one_handed_weapon),
+      (store_proficiency_level, ":troop_twohanded", ":troop_id", wpt_two_handed_weapon),
+      (store_proficiency_level, ":troop_polearm", ":troop_id", wpt_polearm),
+      (store_proficiency_level, ":troop_archery", ":troop_id", wpt_archery),
+      (store_proficiency_level, ":troop_crossbow", ":troop_id", wpt_crossbow),
+      (store_proficiency_level, ":troop_throwing", ":troop_id", wpt_throwing),
+      (store_proficiency_level, ":troop_slings", ":troop_id", wpt_firearm),
+      
+      # Check items for weapon skills of the troops
+      (assign, ":has_onehand", 0),
+      (assign, ":has_twohand", 0),
+      (assign, ":has_polearm", 0),
+      (assign, ":has_crossbow", 0),
+      (assign, ":has_archery", 0),
+      (assign, ":has_sling", 0),
+      (assign, ":has_throw", 0),
+      
+      (try_for_range, ":i", 0, 64),
+        (troop_get_inventory_slot, ":item", ":troop_id", ":i"),
+        (neq, ":item", -1),
+        (item_get_type, ":type", ":item"),
+        
+        (try_begin),
+          (eq, ":type", itp_type_bow),
+          (assign, ":has_archery", 1),
+        (else_try),
+          (eq, ":type", itp_type_crossbow),
+          (assign, ":has_crossbow", 1),
+        (else_try),
+          (eq, ":type", itp_type_pistol),
+          (assign, ":has_sling", 1),
+        (else_try),# throwable spears are both
+          (try_begin),
+            (eq, ":type", itp_type_thrown),
+            (assign, ":has_throw", 1),
+          (try_end),
+          
+          (eq, ":type", itp_type_polearm),
+          (assign, ":has_polearm", 1),
+        (else_try),
+          (eq, ":type", itp_type_one_handed_wpn),
+          (assign, ":has_onehand", 1),
+        (else_try),
+          (eq, ":type", itp_type_two_handed_wpn),
+          (assign, ":has_twohand", 1),
+        (try_end),
+      (try_end),
+      
+      (store_troop_health, ":troop_hp", ":troop_id", 1),
+      (store_character_level, ":troop_level", ":troop_id"),
+      
+      (str_store_string, s1, "@{s1}^"),
+      (assign, reg1, ":troop_level"),
+      (str_store_string, s1, "@{s1}Level: {reg1}^"),
+      (assign, reg1, ":troop_hp"),
+      (str_store_string, s1, "@{s1}Hit Points: {reg1}"),
+      
+      (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
+      (position_set_x, pos1, 465),(position_set_y, pos1, 530),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, reg1, pos1),
+      
+      (str_clear, s1),(str_clear, s2),
+      (assign, reg1, ":troop_str"),
+      (str_store_string, s1, "@{s1}Atributes: ^   Strength:^"),
+      (str_store_string, s2, "@{s2}^{reg1}^"),
+      (assign, reg1, ":troop_agi"),
+      (str_store_string, s1,   "@{s1}   Agility:"),
+      (str_store_string, s2, "@{s2}{reg1}"),
+      
+      (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
+      (position_set_x, pos1, 465),(position_set_y, pos1, 405),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, reg1, pos1),
+      
+      (create_text_overlay, reg1, s2, tf_center_justify | tf_double_space),
+      (position_set_x, pos1, 465 + 145),(position_set_y, pos1, 405),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, reg1, pos1),
+      
+      (str_clear, s1),(str_clear, s2),
+      (assign, reg1, ":troop_powerstrike"),
+      (str_store_string, s1, "@{s1}Main skills: ^"),
+      (str_store_string, s1, "@{s1}   Power Strike:^"),
+      (str_store_string, s2, "@{s2}{reg1}^"),
+      (assign, reg1, ":troop_athletics"),
+      (str_store_string, s1, "@{s1}   Athletics:^"),
+      (str_store_string, s2, "@{s2}{reg1}^"),
+      (assign, reg1, ":troop_riding"),
+      (str_store_string, s1, "@{s1}   Riding:^"),
+      
+      (try_begin),
+        (troop_is_mounted, ":troop_id"),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_powerthrow"),
+      (str_store_string, s1, "@{s1}   Power Throw:^"),
+      
+      (try_begin),
+        (eq, ":has_throw", 1),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_powerdraw"),
+      (str_store_string, s1, "@{s1}   Power Draw:^^"),
+      
+      (try_begin),
+        (eq, ":has_archery", 1),
+        (str_store_string, s2, "@{s2}{reg1}^^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^^"),
+      (try_end),
+      
+      (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
+      (position_set_x, pos1, 465),(position_set_y, pos1, 170),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, reg1, pos1),
+      
+      (create_text_overlay, reg1, s2, tf_center_justify | tf_double_space),
+      (position_set_x, pos1, 645),(position_set_y, pos1, 170),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, reg1, pos1),
+      
+      (str_clear, s1),(str_clear, s2),
+      (str_store_string, s1, "@{s1}Weapons:^"),
+      (assign, reg1, ":troop_onehanded"),
+      (str_store_string, s1, "@{s1}   One Handed:^"),
+      
+      (try_begin),
+        (eq, ":has_onehand", 1),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_twohanded"),
+      (str_store_string, s1, "@{s1}   Two Handed:^"),
+      
+      (try_begin),
+        (eq, ":has_twohand", 1),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_polearm"),
+      (str_store_string, s1, "@{s1}   Polearms:^"),
+      
+      (try_begin),
+        (eq, ":has_polearm", 1),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_archery"),
+      (str_store_string, s1, "@{s1}   Archery:^"),
+      
+      (try_begin),
+        (eq, ":has_archery", 1),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_crossbow"),
+      (str_store_string, s1, "@{s1}   Crossbow:^"),
+      
+      (try_begin),
+        (eq, ":has_crossbow", 1),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_throwing"),
+      (str_store_string, s1, "@{s1}   Throwing:^"),
+      
+      (try_begin),
+        (eq, ":has_throw", 1),
+        (str_store_string, s2, "@{s2}{reg1}^"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-^"),
+      (try_end),
+      
+      (assign, reg1, ":troop_slings"),
+      (str_store_string, s1, "@{s1}   Slings:"),
+      
+      (try_begin),
+        (eq, ":has_sling", 1),
+        (str_store_string, s2, "@{s2}{reg1}"),
+      (else_try),
+        (str_store_string, s2, "@{s2}-"),
+      (try_end),
+      
+      (create_text_overlay, reg1, s1, tf_left_align | tf_double_space),
+      (position_set_x, pos1, 465 + 240),(position_set_y, pos1, 275),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, reg1, pos1),
+      
+      (create_text_overlay, reg1, s2, tf_center_justify | tf_double_space),
+      (position_set_x, pos1, 465 + 240 + 192),(position_set_y, pos1, 275),
+      (overlay_set_position, reg1, pos1),
+      (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+      (overlay_set_size, reg1, pos1),]),
+  
+  # Uses trp_temp_troop to gather the items
+  # "script_troop_detail_inventory"
+  # Output: $temp2 with the quantity of items on inventory
+  # Output: trp_temp_array_a, trp_temp_array_b, trp_temp_array_c
+  ("troop_detail_inventory",
+    [# Container 1: selection
+      (create_text_overlay, ":gear_container", "str_empty_string", tf_scrollable_style_2),
+      (position_set_x, pos1, 450),(position_set_y, pos1, 150),
+      (overlay_set_position, ":gear_container", pos1),
+      (position_set_x, pos1, 480),(position_set_y, pos1, 480),
+      (overlay_set_area_size, ":gear_container", pos1),
+      (set_container_overlay, ":gear_container"),
+      
+      (troop_sort_inventory, "trp_temp_troop"),
+      (troop_get_inventory_capacity, ":num_slots", "trp_temp_troop"),
+      (store_free_inventory_capacity, ":num_free_slots", "trp_temp_troop"),
+      (store_sub, ":num_items", ":num_slots", ":num_free_slots"),
+      (val_sub, ":num_items", 10),
+      
+      (store_div, ":y_max", ":num_items", 4),
+      
+      (assign, ":box_incr", 115),
+      (val_max, ":y_max", 1),
+      (val_mul, ":y_max", ":box_incr"),
+      
+      (assign, ":x_item", 60),
+      (store_add, ":y_item", ":y_max", 60),
+      (assign, ":count", 0),
+      (assign, ":x_box", 0),
+      (assign, ":y_box", ":y_max"),
+      
+      # 0-70 for body armor, 71-140 for helmet, 141-210 for boots, 211-299 rest
+      # 300+ for imod of each item
+      (assign, ":limit_temp_c", 300),
+      (store_mul, reg0, ":limit_temp_c", 2),
+      
+      (try_for_range, ":slot", 0, reg0),
+        (troop_set_slot, "trp_temp_array_a", ":slot", -1),
+        (troop_set_slot, "trp_temp_array_b", ":slot", -1),
+        (troop_set_slot, "trp_temp_array_c", ":slot", -1),
+      (try_end),
+      
+      (assign, ":armor_slot", 0),
+      (assign, ":helmet_slot", 71),
+      (assign, ":boots_slot", 141),
+      (assign, ":rest_slot", 211),
+      (assign, ":imod_slot_add", 300),
+      
+      (try_for_range, ":slot", 0, ":num_slots"),
+        (troop_get_inventory_slot, ":item", "trp_temp_troop", ":slot"),
+        (neq, ":item", -1),
+        (troop_get_inventory_slot_modifier, ":item_imod", "trp_temp_troop", ":slot"),
+        
+        (item_get_type, ":type", ":item"),
+        
+        (try_begin),
+          (eq, ":type", itp_type_body_armor),
+          (troop_set_slot, "trp_temp_array_c", ":armor_slot", ":item"),
+          (store_add, reg0, ":armor_slot", ":imod_slot_add"),
+          (troop_set_slot, "trp_temp_array_c", reg0, ":item_imod"),
+          (val_add, ":armor_slot", 1),
+        (else_try),
+          (eq, ":type", itp_type_head_armor),
+          (troop_set_slot, "trp_temp_array_c", ":helmet_slot", ":item"),
+          (store_add, reg0, ":helmet_slot", ":imod_slot_add"),
+          (troop_set_slot, "trp_temp_array_c", reg0, ":item_imod"),
+          (val_add, ":helmet_slot", 1),
+        (else_try),
+          (eq, ":type", itp_type_foot_armor),
+          (troop_set_slot, "trp_temp_array_c", ":boots_slot", ":item"),
+          (store_add, reg0, ":boots_slot", ":imod_slot_add"),
+          (troop_set_slot, "trp_temp_array_c", reg0, ":item_imod"),
+          (val_add, ":boots_slot", 1),
+        (else_try),
+          (troop_set_slot, "trp_temp_array_c", ":rest_slot", ":item"),
+          (store_add, reg0, ":rest_slot", ":imod_slot_add"),
+          (troop_set_slot, "trp_temp_array_c", reg0, ":item_imod"),
+          (val_add, ":rest_slot", 1),
+        (try_end),
+      (try_end),
+      
+      (try_for_range, ":slot", 0, ":limit_temp_c"),
+        (troop_get_slot, ":item", "trp_temp_array_c", ":slot"),
+        
+        (try_begin),
+          (neq, ":item", -1),
+          (store_add, reg0, ":slot", 300),
+          (troop_get_slot, ":item_imod", "trp_temp_array_c", reg0),
+          
+          (val_add, ":count", 1),
+          
+          (create_mesh_overlay, reg1, "mesh_mp_inventory_choose"),
+          (position_set_x, pos1, ":x_box"),(position_set_y, pos1, ":y_box"),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 900),(position_set_y, pos1, 900),
+          (overlay_set_size, reg1, pos1),
+          (overlay_set_alpha, reg1, 0xFF),
+          
+          (create_mesh_overlay_with_item_id, reg1, ":item"),
+          (position_set_x, pos1, ":x_item"),(position_set_y, pos1, ":y_item"),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 1250),(position_set_y, pos1, 1250),
+          (overlay_set_size, reg1, pos1),
+          
+          (val_add, ":x_item", 115),
+          (val_add, ":x_box", 115),
+          
+          (try_begin),# next row items
+            (store_mod, ":mod", ":count", 4),
+            (eq, ":mod", 0),
+            (val_sub, ":y_item", 115),
+            (val_sub, ":y_box", 115),
+            (assign, ":x_item", 60),
+            (assign, ":x_box", 0),
+          (try_end),
+          
+          #tooltip
+          (store_add, reg0, ":count", ":imod_slot_add"),
+          (troop_set_slot, "trp_temp_array_a", ":count", reg1),
+          (troop_set_slot, "trp_temp_array_b", ":count", ":item"),
+          (troop_set_slot, "trp_temp_array_b", reg0, ":item_imod"),
+        (try_end),
+      (try_end),
+      
+      (assign, "$temp2", ":count"),
+      (set_container_overlay, -1),
+      
+      # Text about troop inventory
+      (try_begin),
+        (create_text_overlay, reg1,
+          "@(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.",
+        tf_center_justify),
+        (position_set_x, pos1, 245),(position_set_y, pos1, 27),
+        (overlay_set_position, reg1, pos1),
+        (position_set_x, pos1, font_normal),(position_set_y, pos1, font_normal),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_color, reg1, 0x000000),
+      (try_end),
+    ]),
+  
+  # "script_troop_detail_inventory_tooltip"
+  ("troop_detail_inventory_tooltip",
+    [(try_begin),
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":enter_leave"),
+        
+        (eq, "$checkbox_show_item_details_val", 1),
+        (eq, "$temp", 2),
+        
+        (try_begin),
+          (eq, ":enter_leave", 1),
+          (close_item_details),
+          
+        (else_try),
+          (assign, ":end_loop", "$temp2"),
+          (val_add, ":end_loop", 1),
+          
+          (try_for_range, ":i", 1, ":end_loop"),
+            (troop_get_slot, reg1, "trp_temp_array_a", ":i"),
+            (eq, ":object", reg1),
+            (troop_get_slot, reg2, "trp_temp_array_b", ":i"),
+            
+            (store_add, reg3, ":i", 300),
+            (troop_get_slot, reg4, "trp_temp_array_b", reg3),
+            (overlay_get_position, pos1, ":object"),
+            (show_item_details_with_modifier, reg2, reg4, pos1, 100),
+            (assign, ":end_loop", 0),
+          (try_end),
+        (try_end),
+      (try_end),]),
+  
+  # "script_troop_detail_update_dummy"
+  # Input: troop_id, $temp2: quantity of items, trp_temp_array_a,
+  # trp_temp_array_b
+  # Output: reg10 : should update presentation
+  ("troop_detail_update_dummy",
+    [(store_script_param_1, ":troop_id"),
+      (store_script_param_2, ":object"),
+      
+      (try_begin),
+        # Rotate
+        (eq, ":object", "$default_troop_portrait"),
+        (val_add, "$troop_detail_dummy_angle", 1),
+        (try_begin),
+          (ge, "$troop_detail_dummy_angle", 4),
+          (assign, "$troop_detail_dummy_angle", 0),
+        (try_end),
+        (assign, ":redraw_troop", 1),
+        
+      (else_try),
+        # Change gear
+        (assign, ":end_loop", "$temp2"),
+        (val_add, ":end_loop", 1),
+        (assign, ":new_item", -1),
+        (assign, reg10, 0),
+        
+        (try_for_range, ":i", 1, ":end_loop"),
+          (troop_get_slot, reg1, "trp_temp_array_a", ":i"),
+          (eq, ":object", reg1),
+          (troop_get_slot, ":new_item", "trp_temp_array_b", ":i"),
+          (store_add, reg0, ":i", 300),
+          (troop_get_slot, ":new_item_imod", "trp_temp_array_b", reg0),
+          
+          (assign, ":end_loop", 0),
+          
+          (item_get_type, ":type", ":new_item"),
+          
+          (try_begin),
+            (eq, ":type", itp_type_body_armor),
+            (call_script, "script_troop_detail_update_dummy_gear_aux", ":troop_id", ek_body, ":new_item", ":new_item_imod"),
+            
+          (else_try),
+            (eq, ":type", itp_type_head_armor),
+            (call_script, "script_troop_detail_update_dummy_gear_aux", ":troop_id", ek_head, ":new_item", ":new_item_imod"),
+            
+          (else_try),
+            (eq, ":type", itp_type_foot_armor),
+            (call_script, "script_troop_detail_update_dummy_gear_aux", ":troop_id", ek_foot, ":new_item", ":new_item_imod"),
+            
+          (else_try),
+            (eq, ":type", itp_type_hand_armor),
+            (call_script, "script_troop_detail_update_dummy_gear_aux", ":troop_id", ek_gloves, ":new_item", ":new_item_imod"),
+          (try_end),
+          (troop_sort_inventory, ":troop_id"),
+          
+        (try_end),
+        (assign, ":redraw_troop", reg10),
+      (try_end),
+      
+      (try_begin),
+        (eq, ":redraw_troop", 1),
+        (start_presentation, "prsnt_troop_detail"),
+      (try_end),]),
+  
+  # "script_troop_detail_update_dummy_gear_aux"
+  # Input: troop_id, body_part, new_item
+  # Output: reg10 with redraw_troop
+  ("troop_detail_update_dummy_gear_aux",
+    [(store_script_param_1, ":troop_id"),
+      (store_script_param_2, ":body_part"),
+      (store_script_param, ":new_item", 3),
+      (store_script_param, ":new_item_imod", 4),
+      
+      (assign, ":redraw_troop", 0),
+      
+      (try_begin),
+        (troop_get_inventory_slot, ":old_item", ":troop_id", ":body_part"),
+        (neq, ":old_item", ":new_item"),
+        (troop_get_inventory_slot_modifier, ":old_item_imod", ":troop_id", ":body_part"),
+        (troop_remove_item, ":troop_id", ":new_item"),
+        (troop_set_inventory_slot, ":troop_id", ":body_part", ":new_item"),
+        (troop_set_inventory_slot_modifier, ":troop_id", ":body_part", ":new_item_imod"),
+        (assign, ":redraw_troop", 1),
+        
+        (neq, ":old_item", -1),
+        (troop_add_item, ":troop_id", ":old_item", ":old_item_imod"),
+        
+      (try_end),
+      
+      (assign, reg10, ":redraw_troop"),]),
+  
+  # Changes between STATS and INVENTORY screens
+  # "script_troop_detail_change_screen"
+  # Input: none
+  # Output: none
+  ("troop_detail_change_screen",
+    [(store_script_param_1, ":troop_id"),
+      
+      (try_begin),
+        (eq, "$temp", 1),
+        (assign, "$temp", 2),
+        
+        # Clone dummy gear
+        (troop_clear_inventory, "trp_temp_troop"),
+        (troop_get_inventory_capacity, ":slots", "trp_temp_troop"),
+        (try_for_range, ":i", 0, ":slots"),
+          (troop_set_inventory_slot, "trp_temp_troop", ":i", -1),
+          (troop_set_inventory_slot_modifier, "trp_temp_troop", ":i", 0),
+        (try_end),
+        
+        (assign, ":clone_slot", 10),
+        (troop_set_auto_equip, "trp_temp_troop", 0),
+        
+        (try_for_range, ":i", 0, ":slots"),
+          (troop_get_inventory_slot, ":item_id", ":troop_id", ":i"),
+          (neq, ":item_id", -1),
+          (troop_get_inventory_slot_modifier, ":item_imod", ":troop_id", ":i"),
+          (troop_set_inventory_slot, "trp_temp_troop",  ":clone_slot", ":item_id"),
+          (troop_set_inventory_slot_modifier, "trp_temp_troop", ":clone_slot", ":item_imod"),
+          
+          (val_add, ":clone_slot", 1),
+        (try_end),
+        (assign, "$troop_detail_dummy_angle", 0),
+        
+      (else_try),
+        (assign, "$temp", 1),
+      (try_end),
+      
+      (start_presentation, "prsnt_troop_detail"),]),
+  
+  
+  # script_add_troop_to_cur_tableau_for_troop_detail_dummy
+  # Used on Troop Detail to display the dummy troop (player can switch helmet,
+  # chest, boots)
+  # Input: troop_no (x4 as it has the rotation angle too)
+  ("add_troop_to_cur_tableau_for_troop_detail_dummy",
+    [(store_script_param, ":troop_no",1),
+      (assign, ":side", "$troop_detail_dummy_angle"),
+      (val_mul, ":side", 90), #to degrees
+      
+      (assign, reg0, ":side"),
+      
+      (set_fixed_point_multiplier, 100),
+      
+      (cur_tableau_clear_override_items),
+      #(cur_tableau_set_override_flags, af_override_weapons),
+      
+      (init_position, pos2),
+      (position_rotate_z, pos2, ":side"),
+      (cur_tableau_set_camera_parameters, 1, 6, 6, 10, 10000),
+      
+      (init_position, pos5),
+      (assign, ":cam_height", 105),
+      (assign, ":camera_distance", 450),
+      (assign, ":camera_yaw", 15),
+      (assign, ":camera_pitch", -18),
+      (assign, ":animation", anim_stand_man),
+      
+      (position_set_z, pos5, ":cam_height"),
+      
+      # camera looks towards -z axis
+      (position_rotate_x, pos5, -90),
+      (position_rotate_z, pos5, 180),
+      
+      # now apply yaw and pitch
+      (position_rotate_y, pos5, ":camera_yaw"),
+      (position_rotate_x, pos5, ":camera_pitch"),
+      (position_move_z, pos5, ":camera_distance", 0),
+      (position_move_x, pos5, 5, 0),
+      
+      (call_script, "script_manage_legs_in_cur_tableau", ":troop_no"),
+      
+      (store_mul, ":random_seed", ":troop_no", 126233),
+      (val_mod, ":random_seed", 1000),
+      (val_add, ":random_seed", 1),
+      (cur_tableau_add_troop, ":troop_no", pos2, ":animation", ":random_seed"),
+      
+      (cur_tableau_set_camera_position, pos5),
+      
+      (copy_position, pos8, pos5),
+      (position_rotate_x, pos8, -90), #y axis aligned with camera now.  z is up
+      (position_rotate_z, pos8, 30),
+      (position_rotate_x, pos8, -60),
+      (cur_tableau_add_sun_light, pos8, 175,150,125),]),
+
+  #script_game_troop_upgrades_button_clicked
+  # This script is called from the game engine when the player clicks on said button from the party screen
+  # INPUT: arg1 = troop_id
+  ("game_troop_upgrades_button_clicked", [
+      (store_script_param, reg0, 1),
+      (start_presentation, "prsnt_game_troop_tree"),
+  ]),
 ]

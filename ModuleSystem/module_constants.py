@@ -2377,6 +2377,22 @@ slot_exploration_point_3 = 304
 slot_exploration_point_4 = 305
 
 
+# VC Presentantion Constants
+font_title = 2400
+font_small = 800
+font_normal = 1200
+
+# shows mouse coordinates on presentations (set 0 for production)
+debug_show_presentation_coordinates = 0
+
+#VC Troop Tree Presentation
+Troop_Tree_Num_Levels = 6
+Troop_Tree_Max_Per_Level = 5  #2^(Troop_Tree_Num_Levels-1) opt for counting most upgrade2 over all factions
+Troop_Tree_Area_Height = Screen_Title_Height-4*Screen_Text_Height
+Troop_Tree_Area_Width = Screen_Width-2*Screen_Border_Width
+Troop_Tree_Line_Color = 0x000000
+Troop_Tree_Tableau_Height = 800
+Troop_Tree_Tableau_Width = Troop_Tree_Tableau_Height*Screen_Undistort_Width_Num/Screen_Undistort_Width_Den
 
 
 

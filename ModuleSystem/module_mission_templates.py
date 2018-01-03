@@ -41,6 +41,9 @@ af_castle_lord    = af_override_horse | af_override_weapons | af_require_civilia
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
 af_prisoner       = af_override_horse | af_override_weapons | af_override_head | af_override_gloves | af_override_gloves | af_override_foot
 
+## Reset Fog 
+reset_fog = (ti_before_mission_start,  0, ti_once, [], 
+            [(set_fog_distance,0,0x999999)])
 
 ## Fade to Black
 fade =  ((is_a_wb_mt==1) and [
@@ -583,6 +586,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   tld_animals_init,
   tld_animal_strikes,
   tld_remove_riderless_animals,
+  reset_fog,
 ] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals
 
 
@@ -596,6 +600,7 @@ tld_siege_battle_scripts = [
 	tld_remove_galadriel,
   tld_remove_volunteer_troops,
 	#common_battle_kill_underwater,
+  reset_fog,
 ] + fade + bright_nights + khams_custom_player_camera #Custom Cam triggers
 
 
@@ -603,6 +608,7 @@ tld_common_peacetime_scripts = [
 	#tld_fix_viewpoint,
 	tld_player_cant_ride,
 	dungeon_darkness_effect,
+  reset_fog,
 ] + custom_tld_bow_to_kings + bright_nights + fade + khams_custom_player_camera #Custom Cam triggers
 
 

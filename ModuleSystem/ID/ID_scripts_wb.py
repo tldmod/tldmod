@@ -610,5 +610,20 @@ script_order_skirmish_skirmish = 608
 script_ce_get_troop_encumbrance = 609
 script_get_closest_melee_enemy = 610
 script_party_has_hero = 611
+script_troop_tree_precurse = 612
+script_troop_tree_recurse = 613
+script_manage_legs_in_cur_tableau = 614
+script_troop_detail_layout = 615
+script_troop_detail_draw_troop = 616
+script_troop_detail_draw_weapons = 617
+script_troop_detail_draw_weapons_aux = 618
+script_troop_detail_stats = 619
+script_troop_detail_inventory = 620
+script_troop_detail_inventory_tooltip = 621
+script_troop_detail_update_dummy = 622
+script_troop_detail_update_dummy_gear_aux = 623
+script_troop_detail_change_screen = 624
+script_add_troop_to_cur_tableau_for_troop_detail_dummy = 625
+script_game_troop_upgrades_button_clicked = 626
 
 

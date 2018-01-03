@@ -864,4 +864,31 @@ tableaus = [
      (cur_tableau_set_camera_position, pos5),
 ]),
 
+#Kham VC Troop Tree Addition
+
+
+("troop_tree_pic", 0, "tableau_with_transparency", 1024, 1024, 0, 0, Troop_Tree_Tableau_Width, Troop_Tree_Tableau_Height,
+   [   (store_script_param, ":troop_no", 1),
+       (cur_tableau_set_background_color, 0x00888888),
+       (cur_tableau_set_ambient_light, 10,11,15),
+       (set_fixed_point_multiplier, 100),
+       (cur_tableau_set_camera_parameters, 0, 40, 40, 0, 100000),
+
+       (init_position, pos1),
+       (position_set_z, pos1, 100),
+       (position_set_x, pos1, -20),
+       (position_set_y, pos1, -20),
+       (cur_tableau_add_tableau_mesh, "tableau_troop_party_color", ":troop_no", pos1, 0, 0),
+       (position_set_z, pos1, 200),
+       (cur_tableau_add_tableau_mesh, "tableau_troop_party_alpha_mask", ":troop_no", pos1, 0, 0),
+       (position_set_z, pos1, 300),
+]),
+  ("troop_detail_dummy_pic", 0, "tableau_with_transparency", 1024, 1024, 0, 0, Troop_Tree_Tableau_Width, Troop_Tree_Tableau_Height, [
+    (store_script_param, ":troop_no", 1),
+    (cur_tableau_set_background_color, 0x00888888),
+    (cur_tableau_set_ambient_light, 10,11,15),
+    (call_script, "script_add_troop_to_cur_tableau_for_troop_detail_dummy", ":troop_no"),
+  ]),
+
+
 ]

@@ -47,3 +47,5 @@ tableau_defiled_gondor_armor = 45
 tableau_defiled_rohan_armor = 46
 tableau_defiled_dale_armor = 47
 tableau_defile_troop = 48
+tableau_troop_tree_pic = 49
+tableau_troop_detail_dummy_pic = 50

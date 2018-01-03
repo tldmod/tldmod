@@ -371,5 +371,7 @@ mesh_draw_ring_hunters_army = 369
 mesh_draw_ring_hunters_lair = 370
 mesh_draw_victory_dale = 371
 mesh_draw_victory_lorien = 372
+mesh_pic_troop_trees = 373
+mesh_pic_units_details = 374
 
 

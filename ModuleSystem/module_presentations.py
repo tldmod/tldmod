@@ -18,6 +18,9 @@ import string
 #  4) Triggers: Simple triggers that are associated with the presentation
 ####################################################################################################################
 
+
+
+
 presentations = [
 ("game_credits",prsntf_read_only,mesh_load_window,[
       (ti_on_presentation_load,
@@ -3014,6 +3017,8 @@ presentations = [
     ]
   ),
 ]),
+
+
 #Kham END
 
 
@@ -3022,6 +3027,8 @@ presentations = [
 from module_info import wb_compile_switch
 
 if wb_compile_switch==1:
+
+
   presentations+=[
     ("game_start", mesh_load_window, 0,
     [
@@ -3782,6 +3789,355 @@ if wb_compile_switch==1:
         (try_end),
       ]),
     ]),
+
+
+# Kham - VC Troop Tree Presentations
+#chief presentacion game_troop_tree moto
+#INPUT: reg0 selected troop
+("game_troop_tree", 0, 0, [
+    (ti_on_presentation_load, [
+        (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+        (assign, ":troop", reg0),
+        
+        ###mesh de fondo MOTO must do it this way or won't allow party screen to reappear
+        (create_mesh_overlay, reg0, "mesh_town_goodcamp"),
+        (position_set_x, pos1, -1),
+        (position_set_y, pos1, -1),
+        (overlay_set_position, reg0, pos1),
+        (position_set_x, pos1, 1002),
+        (position_set_y, pos1, 1002),
+        (overlay_set_size, reg0, pos1),
+        #Message first part
+        
+        #screen top
+        (create_text_overlay, reg1, "@Troop Tree", tf_center_justify),
+        (position_set_x, pos1, Screen_Width/2),
+        (position_set_y, pos1, Screen_Title_Height),
+        (overlay_set_position, reg1, pos1),
+        
+        #write the trees
+        (call_script, "script_troop_tree_precurse", ":troop", 1, 1),
+        (store_div, "$troop_tree_pic_width", Troop_Tree_Area_Width, reg0),
+        (store_div, "$troop_tree_pic_height", Troop_Tree_Area_Height, reg1),
+        
+        (store_div, ":x_pos", "$troop_tree_pic_width", 2),
+        (val_add, ":x_pos", Screen_Border_Width),
+        (store_mul, ":y_pos", "$troop_tree_pic_height", -1),
+        (val_add, ":y_pos", Screen_Title_Height-2*Screen_Text_Height),
+        (call_script, "script_troop_tree_recurse", ":troop", ":x_pos", ":y_pos"),
+        
+        #screen bottom
+        (create_game_button_overlay, "$presentation_leave_button", "@Done", tf_center_justify),
+        (position_set_x, pos1, Screen_Width/2),
+        (position_set_y, pos1, Screen_Border_Width),
+        (overlay_set_position, "$presentation_leave_button", pos1),
+    ]),
+    
+    (ti_on_presentation_run, [
+        (try_begin),
+          (this_or_next|key_clicked, key_escape),
+          (key_clicked, key_xbox_start),
+          (presentation_set_duration, 0),
+        (try_end),
+    ]),
+    
+    (ti_on_presentation_event_state_change, [
+        (store_trigger_param_1, ":object"),
+        (eq, ":object", "$presentation_leave_button"),
+        (presentation_set_duration, 0),
+    ]),
+]), #end troop tree
+
+#chief presentacion troop_tree moto
+("troop_tree", 0, 0, [
+    (ti_on_presentation_load,
+      [
+        (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+        
+        (create_mesh_overlay, reg1, "mesh_town_goodcamp"),
+        (position_set_x, pos1, 0),
+        (position_set_y, pos1, 0),
+        (overlay_set_position, reg1, pos1),
+        (assign, "$troop_tree_counter", -1),
+        
+        ## combo_button
+        (create_combo_button_overlay, "$g_presentation_obj_1"),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 690),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        # factions
+        (store_sub, ":num_factions", npc_kingdoms_end, npc_kingdoms_begin),
+        
+        ## page names, from bottom to top
+        (try_for_range_backwards, ":page_no", 0, ":num_factions"),
+          (store_add, ":faction_no", ":page_no", npc_kingdoms_begin),
+          (str_store_faction_name, s0, ":faction_no"),
+          (overlay_add_item, "$g_presentation_obj_1", s0),
+        (try_end),
+        (store_sub, ":presentation_obj_val", ":num_factions", "$g_selected_page"),
+        (val_sub, ":presentation_obj_val", 1),
+        (overlay_set_val, "$g_presentation_obj_1", ":presentation_obj_val"),
+        
+        ## pic_arms
+        (try_begin),
+          (is_between, "$g_selected_page", 0, ":num_factions"), 
+          (store_add, ":pic_arms", "mesh_tp_victory_gondor", "$g_selected_page"),
+          (create_mesh_overlay, reg1, ":pic_arms"),
+          (position_set_x, pos1, 200),
+          (position_set_y, pos1, 110),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 300),
+          (position_set_y, pos1, 300),
+          (overlay_set_size, reg1, pos1),
+        (try_end),
+
+        # detect_total_max_tier, calculate offset_x
+        (assign, ":total_max_tier", 1),
+        (try_for_range, ":cur_troop", soldiers_begin, soldiers_end),
+          (neg|troop_is_hero, ":cur_troop"),
+          # swy: ensure that civil troops don't pass (e.g. farmers, that for some reason have upgrade paths to themselves)
+          (store_troop_faction, ":cur_troop_faction", ":cur_troop"),
+          (is_between,          ":cur_troop_faction", npc_kingdoms_begin, npc_kingdoms_end),
+          # can upgrade
+          (troop_get_upgrade_troop, ":upgrade_troop", ":cur_troop", 0),
+          (gt, ":upgrade_troop", 0), 
+          # page_no_for_cur_troop
+          (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":cur_troop"),
+          (assign, ":page_no_for_cur_troop", reg0),
+          # on current page_no
+          (eq, ":page_no_for_cur_troop", "$g_selected_page"),
+          (assign, reg0, 1), # reg0: init max_tier to 1
+          (call_script, "script_troop_tree_recursive_detect_max_tier", ":cur_troop", 1),
+          (assign, ":cur_max_tier", reg0),
+          (try_begin),
+            (gt, ":cur_max_tier", ":total_max_tier"),
+            (assign, ":total_max_tier", ":cur_max_tier"),
+          (try_end),
+        (try_end),
+        (val_sub, ":total_max_tier", 1),
+        (val_max, ":total_max_tier", 1),
+        (store_div, ":offset_x", 700, ":total_max_tier"),
+        (val_min, ":offset_x", 120),
+        
+        (str_clear, s0),
+        (create_text_overlay, reg1, s0, tf_scrollable),
+        (position_set_x, pos1, 15),
+        (position_set_y, pos1, 15),
+        (overlay_set_position, reg1, pos1),
+
+        #For the Whole screen
+        (position_set_x, pos1, 1002),
+        (position_set_y, pos1, 660),
+        (overlay_set_area_size, reg1, pos1),
+        (set_container_overlay, reg1),
+        
+        (assign, "$g_cur_slot_no", 0),
+        (assign, reg2, 75),
+        # find all root troops of selected faction
+        (try_for_range, ":cur_troop", soldiers_begin, soldiers_end),
+          (neg|troop_is_hero, ":cur_troop"),
+          # can upgrade
+          (troop_get_upgrade_troop, ":upgrade_troop", ":cur_troop", 0),
+          (gt, ":upgrade_troop", 0), 
+          # page_no_for_cur_troop
+          (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":cur_troop"),
+          (assign, ":page_no_for_cur_troop", reg0),
+          # on current page_no
+          (eq, ":page_no_for_cur_troop", "$g_selected_page"),
+          # can't be upgraded from other troops of the same page
+          (assign, ":is_root_troop", 1),
+          (assign, ":end_cond", soldiers_end),
+          (try_for_range, ":loop_troop", soldiers_begin, ":end_cond"),
+            (neg|troop_is_hero, ":loop_troop"),
+            # page_no_for_loop_troop
+            (call_script, "script_get_page_no_of_troop_tree_for_troop_on", ":loop_troop"),
+            (assign, ":page_no_for_loop_troop", reg0),
+            # on current page_no
+            (eq,  ":page_no_for_loop_troop", "$g_selected_page"),
+            (troop_get_upgrade_troop, ":upgrade_troop_1", ":loop_troop", 0),
+            (troop_get_upgrade_troop, ":upgrade_troop_2", ":loop_troop", 1),
+            (this_or_next|eq, ":upgrade_troop_1", ":cur_troop"),
+            (eq, ":upgrade_troop_2", ":cur_troop"),
+            (assign, ":is_root_troop", 0),
+            (assign, ":end_cond", 0), #break
+          (try_end),
+          (eq, ":is_root_troop", 1), # draw troop tree of cur root_troop
+          (call_script, "script_troop_tree_recursive_backtracking", ":cur_troop", 50, reg2, ":offset_x"),
+          (val_add, reg2, 160),
+        (try_end),
+        
+        (set_container_overlay, -1),
+        
+        ## draw selected_troop: Attributes, Skills, Equipments,
+        (try_begin),
+          (gt, "$g_selected_troop", 0), 
+          (store_mul, ":cur_troop", "$g_selected_troop", 2), #with weapons
+          (create_image_button_overlay_with_tableau_material, reg1, -1, "tableau_game_party_window", ":cur_troop"),
+          (position_set_x, pos1, 450),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, reg1, pos1),
+          (position_set_x, pos1, 810),
+          (position_set_y, pos1, 550),
+          (overlay_set_position, reg1, pos1),
+          
+          # pos2: text size
+          (position_set_x, pos2, 750),
+          (position_set_y, pos2, 750),
+          # pos2: title text size
+          (position_set_x, pos3, 900),
+          (position_set_y, pos3, 900),
+          # Name
+          (str_store_troop_name, s1, "$g_selected_troop"),
+          (create_text_overlay, reg1, s1, tf_center_justify),
+          (position_set_x, pos1, 900),
+          (position_set_y, pos1, 710),
+          (overlay_set_position, reg1, pos1),
+          (overlay_set_size, reg1, pos2),
+        (try_end),
+          
+        
+        #screen bottom
+        (create_game_button_overlay, "$g_presentation_obj_2", "@Done", tf_center_justify),
+        (position_set_x, pos1, Screen_Width/2),
+        (position_set_y, pos1, Screen_Border_Width),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+        
+        # Alert that click opens detail
+        (create_text_overlay, reg1, "@(Click on a unit for details)", tf_right_align),
+        (position_set_x, 1, 950),(position_set_y, 1, 25),
+        (overlay_set_position, reg1, 1),
+        (position_set_x, pos1, 1750/2),(position_set_y, pos1, 1750/2),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_color, reg1, 0x000000),
+        
+    ]),
+    
+    (ti_on_presentation_run, [
+        (try_begin),
+          (this_or_next|key_clicked, key_escape),
+          (key_clicked, key_xbox_start),
+          (presentation_set_duration, 0),
+        (try_end),
+    ]),
+    
+(ti_on_presentation_event_state_change,
+      [
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+        
+        (try_for_range, ":slot_no", 0, "$g_cur_slot_no"),
+          (troop_slot_eq, "trp_stack_selection_amounts", ":slot_no", ":object"),
+          (troop_get_slot, "$g_selected_troop", "trp_stack_selection_ids", ":slot_no"),
+          (start_presentation, "prsnt_troop_detail"),
+        (try_end),
+        
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_1"),
+          (store_sub, ":num_pages", npc_kingdoms_end, npc_kingdoms_begin),
+          (store_sub, "$g_selected_page", ":num_pages", ":value"),
+          (val_sub, "$g_selected_page", 1),
+          (assign, "$g_selected_troop", 0), 
+          (start_presentation, "prsnt_troop_tree"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_2"),
+          (assign, "$g_selected_troop", 0), 
+          (assign, "$g_selected_page", 0),
+          (presentation_set_duration, 0),
+        (try_end),
+      ]),
+    
+    (ti_on_presentation_mouse_press, [
+        (store_trigger_param_1, ":object_id"),
+        #(store_trigger_param_2, ":obj_value"),
+        (try_begin),
+          
+          (assign, ":end_loop", 0),
+          (store_add, ":end_loop", "$troop_tree_counter", 1),
+          
+          (try_for_range, ":slot_no", 0, ":end_loop"),
+            (troop_get_slot, ":unused", "trp_temp_array_a", ":slot_no"),
+            (troop_slot_eq, "trp_temp_array_a", ":slot_no", ":object_id"),
+            (troop_get_slot, ":troop_id", "trp_temp_array_b", ":slot_no"),
+            (assign, "$temp_troop", ":troop_id"),
+            (assign, ":end_loop", 0),
+            (assign, "$temp", 1),
+            (start_presentation, "prsnt_troop_detail"),
+          (try_end),
+        (try_end),
+    ]),
+]), #end troop tree
+#moto troop tree chief acaba
+
+
+# Presentation prsnt_troop_detail
+# Description: from the troop tree you can click on any troop
+#              to see its details: stats, inventory, etc
+("troop_detail", 0, 0, [
+    (ti_on_presentation_load,
+      [
+        (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+        
+        (assign, ":draw_troop", "$temp_troop"),
+        
+        #pic
+        (create_mesh_overlay, reg0, "mesh_pic_units_details"),
+        (position_set_x, pos1, -1),
+        (position_set_y, pos1, -1),
+        (overlay_set_position, reg0, pos1),
+        (position_set_x, pos1, 1002),
+        (position_set_y, pos1, 1002),
+        (overlay_set_size, reg0, pos1),
+        
+        
+        (call_script, "script_troop_detail_layout"),
+        (call_script, "script_troop_detail_draw_troop", ":draw_troop"),
+        (call_script, "script_troop_detail_draw_weapons", ":draw_troop"),
+        
+        (try_begin),
+          (eq, "$temp", 1),# ---- Stats ----
+          (call_script, "script_troop_detail_stats", ":draw_troop"),
+          
+        (else_try),# ---- Inventory of troop ----
+          (eq, "$temp", 2),
+          (call_script, "script_troop_detail_inventory"),
+        (try_end),
+        
+    ]),
+    
+    (ti_on_presentation_event_state_change,
+      [
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+        
+        (try_begin),# done button
+          (eq, ":object", "$g_presentation_leave_button"),
+          (start_presentation, "prsnt_troop_tree"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_1"),
+          (call_script, "script_troop_detail_change_screen", "$temp_troop"),
+          
+        (else_try),
+          (eq, ":object", "$checkbox_show_item_details"),
+          (assign, "$checkbox_show_item_details_val", ":value"),
+        (try_end),
+        
+    ]),
+    
+    (ti_on_presentation_mouse_enter_leave,[
+        (call_script, "script_troop_detail_inventory_tooltip"),
+    ]),
+    
+    (ti_on_presentation_mouse_press,
+      [
+        (eq, "$temp", 2),
+        (store_trigger_param_1, ":object_id"),
+        (call_script, "script_troop_detail_update_dummy", "$temp_troop", ":object_id"),
+    ]),
+  ]
+),
 
 
   ]

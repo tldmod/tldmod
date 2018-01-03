@@ -503,4 +503,9 @@ meshes+=[
 
   ("draw_victory_dale",      0, "draw_victory_dale",      0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("draw_victory_lorien",    0, "draw_victory_lorien",    0, 0, 0, 0, 0, 0, 1, 1, 1),
+  
+###VC presentations
+    ("pic_troop_trees", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+    ("pic_units_details", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
 ]
