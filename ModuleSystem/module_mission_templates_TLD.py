@@ -2554,6 +2554,7 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(is_between, ":warg_itm", item_warg_begin, item_warg_end),
 		#--- {ensure that the original rider hasn't just dismounted}
 		(agent_get_slot,     ":orig_rider", ":cur_warg", slot_agent_mount_orig_rider),
+		(gt, ":orig_rider", 0), #Kham - patch fix to MT errors. Not sure why it is getting 0 in that slot after the gundabad update. Will have to study.
 		(neg|agent_is_alive, ":orig_rider"),
 		#--- {there's no rider on top of the warg right now, old or new}
 		(agent_get_rider,    ":curr_rider", ":cur_warg"),
