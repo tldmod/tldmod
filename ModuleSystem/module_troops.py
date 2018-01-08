@@ -375,7 +375,7 @@ mordor_man2            = 0x0000000fff00200429cd7d495667732e00000000001d5cf900000
 #
 itm_warhorse = itm_hunter
 itm_charger = itm_hunter
- 
+
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
 # 0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000  bearded player face
  
@@ -940,8 +940,8 @@ troops = [
    [itm_lorien_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_f,itm_lorien_boots,itm_lorien_sword_b,itm_lorien_shield_c,],
       attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_7|knows_shield_1|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
 ["noldorin_mounted_archer","Noldorin_Mounted_Archer","Noldorin_Mounted_Archers",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
-   [itm_glorfi_bow,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_c,itm_lorien_boots,itm_lorien_warhorse,itm_lorien_sword_a,itm_lorien_round_shield,],
-      attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_horse_archery_7|knows_riding_7|knows_athletics_5|knows_power_draw_9|knows_power_strike_6|knows_ironflesh_6,lorien_elf_face_1,lorien_elf_face_2],
+   [itm_lorien_bow_reward,itm_elven_arrows,itm_lorien_helm_b,itm_lorien_armor_c,itm_lorien_boots,itm_lorien_warhorse,itm_lorien_sword_a,itm_lorien_round_shield,],
+      attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_horse_archery_7|knows_riding_7|knows_athletics_5|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
 ["lothlorien_infantry","Lothlorien_Infantry","Lothlorien_Infantry",tf_lorien| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
    [itm_lorien_helm_c,itm_lorien_armor_a,itm_lorien_boots,itm_leather_gloves,itm_lorien_shield_c,itm_lorien_sword_a],
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_3,lorien_elf_face_1,lorien_elf_face_2],
@@ -1036,7 +1036,7 @@ troops = [
       attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["rivendell_guardian","Rivendell_Guardian","Rivendell_Guardians",tf_imladris| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_riv_boots,itm_leather_gloves,itm_riv_bow,itm_riv_armor_m_archer,itm_riv_1h_sword,itm_elven_arrows,itm_riv_helm_b,itm_riv_shield_a,],
-      attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_horse_archery_6|knows_athletics_5|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+      attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_5|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["rivendell_infantry","Rivendell_Infantry","Rivendell_Infantry",tf_imladris| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_riv_boots,itm_leather_gloves,itm_riv_spear,itm_riv_armor_light,itm_riv_1h_sword,itm_riv_helm_a,itm_riv_shield_a,],
       attr_elf_tier_2,wp_elf_tier_2,knows_common|knows_athletics_4|knows_power_draw_4|knows_power_strike_3|knows_ironflesh_3,rivendell_elf_face_1,rivendell_elf_face_2],
@@ -1048,13 +1048,13 @@ troops = [
       attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_5|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["rivendell_royal_infantry","Rivendell_Royal_Infantry","Rivendell_Royal_Infantry",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_riv_boots,itm_mail_mittens,itm_riv_spear,itm_riv_armor_heavy,itm_riv_1h_sword,itm_riv_bas_sword,itm_riv_helm_c,itm_riv_shield_a,],
-      attr_elf_tier_5,wp_elf_tier_6,knows_common|knows_horse_archery_6|knows_athletics_5|knows_power_draw_6|knows_power_strike_7|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+      attr_elf_tier_5,wp_elf_tier_6,knows_common|knows_athletics_5|knows_power_draw_6|knows_power_strike_7|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["rivendell_cavalry","Rivendell_Cavalry","Rivendell_Cavalry",tf_imladris| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_riv_boots,itm_leather_gloves,itm_riv_spear,itm_riv_armor_h_archer,itm_riv_1h_sword,itm_riv_riding_sword,itm_riv_bas_sword,itm_riv_helm_c,itm_riv_warhorse,itm_riv_shield_b,],
-      attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_athletics_5|knows_power_draw_5|knows_power_strike_6|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+      attr_elf_tier_4,wp_elf_tier_4,knows_common|knows_riding_5|knows_athletics_5|knows_power_draw_5|knows_power_strike_6|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["knight_of_rivendell","Knight_of_Rivendell","Knights_of_Rivendell",tf_imladris| tfg_ranged| tf_mounted| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_riv_boots,itm_strong_bow,itm_riv_armor_h_archer,itm_riv_1h_sword,itm_elven_arrows,itm_riv_bas_sword,itm_riv_helm_c,itm_riv_warhorse2,itm_riv_shield_b,itm_riv_spear,itm_riv_riding_sword,],
-      attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_horse_archery_6|knows_athletics_5|knows_power_draw_6|knows_power_strike_6|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
+      attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_riding_6|knows_horse_archery_6|knows_athletics_5|knows_power_draw_6|knows_power_strike_6|knows_ironflesh_4,rivendell_elf_face_1,rivendell_elf_face_2],
 ["rivendell_standard_bearer","Rivendell_Standard_Bearer","Rivendell_Standard_Bearers",tf_imladris| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_imladris,
    [itm_riv_boots,itm_mail_mittens,itm_riv_armor_heavy,itm_riv_helm_c,itm_imladris_banner,],
       attr_elf_tier_5,wp_elf_tier_5,knows_common|knows_athletics_3|knows_power_draw_6|knows_power_strike_6|knows_ironflesh_10,rivendell_elf_face_1,rivendell_elf_face_2],
@@ -2040,7 +2040,7 @@ troops = [
    [itm_rohan_armor_m,itm_rohan_light_greaves,itm_rohan_shield_d,itm_rohan_archer_helmet_b,itm_rohan_sword_c,itm_strong_bow,itm_khergit_arrows,itm_rohan_warhorse,],
       str_14|agi_18|int_9|cha_12|level(24),wp_one_handed(160)|wp_two_handed(120)|wp_polearm(140)|wp_archery(180)|wp_throwing(160),knows_horse_archery_5|knows_riding_6|knows_power_draw_4|knows_power_strike_2|knows_power_throw_4|knows_ironflesh_3|knows_weapon_master_4|knows_shield_3|knows_athletics_1|knows_wound_treatment_4|knows_first_aid_3|knows_trade_3,0x000000000300000114a261248280c73400000000001ca48d0000000000000000],
 ["npc5","Glorfindel","_",tf_lorien| tf_mounted| tfg_ranged| tf_hero| tf_unmoveable_in_party_window,0,0,fac_lorien,
-   [itm_riv_armor_reward,itm_lorien_boots,itm_riv_helm_glorfi,itm_glorfi_bow,itm_elven_arrows,itm_lorien_sword_c,itm_lorien_warhorse,],
+   [itm_riv_armor_reward,itm_lorien_boots,itm_riv_helm_glorfi,itm_lorien_bow_reward,itm_elven_arrows,itm_lorien_sword_c,itm_lorien_warhorse,],
       str_30|agi_24|int_18|cha_24|level(55),wp(500),knows_riding_7|knows_ironflesh_6|knows_power_strike_7|knows_athletics_5|knows_tactics_6|knows_prisoner_management_3|knows_leadership_9|knows_power_draw_9|knows_horse_archery_9|knows_weapon_master_8|knows_trainer_6,0x000000018000100a38db6db6db6db6db00000000001db6eb0000000000000000],
 ["npc6","Luevanna","_",tf_female| tfg_ranged| tf_hero| tf_unmoveable_in_party_window,0,0,fac_woodelf,
    [itm_mirkwood_armor_a,itm_mirkwood_boots,itm_mirkwood_knife,itm_short_bow,itm_woodelf_arrows,],
@@ -3396,8 +3396,8 @@ upgrade(troops,"veteran_knight_of_dol_amroth","swan_knight_of_dol_amroth")
 upgrade(troops,"lothlorien_scout","lothlorien_veteran_scout")
 upgrade(troops,"lothlorien_veteran_scout","lothlorien_archer")
 upgrade(troops,"lothlorien_archer","lothlorien_veteran_archer")
-upgrade2(troops,"lothlorien_veteran_archer","lothlorien_master_archer","noldorin_mounted_archer")
-upgrade2(troops,"lothlorien_master_archer","galadhrim_royal_archer","galadhrim_royal_marksman")
+upgrade(troops,"lothlorien_veteran_archer","lothlorien_master_archer")
+upgrade2(troops,"lothlorien_master_archer","galadhrim_royal_archer","noldorin_mounted_archer")
 upgrade2(troops,"lothlorien_infantry","lothlorien_veteran_infantry","lothlorien_warden")
 upgrade(troops,"lothlorien_veteran_infantry","lothlorien_elite_infantry")
 upgrade(troops,"lothlorien_elite_infantry","galadhrim_royal_swordsman")
