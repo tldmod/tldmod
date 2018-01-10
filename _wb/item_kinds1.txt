@@ -873,10 +873,10 @@ itemsfile version 2
  itm_amroth_bastard Dol_Amroth_Heavy_Sword Dol_Amroth_Heavy_Sword 2  DA_bastard 0  scab_DA_bastard 3458764513820540928  4259843 9223635954298781951 294 156672 2.25 100 0 0 0 0 37888 96 0 105 0 282 37
 0
 
- itm_gondor_short_sword Linhir_Eket Linhir_Eket 2  linhir_eket 0  scab_linhir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 28672 113 0 55 0 281 28
+ itm_gondor_short_sword Linhir_Eket Linhir_Eket 2  linhir_eket 0  scab_linhir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 28672 113 0 53 0 281 28
 0
 
- itm_pelargir_eket Pelargir_Eket Pelargir_Eket 2  pelargir_eket 0  scab_pelargir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 28672 115 0 49 0 281 28
+ itm_pelargir_eket Pelargir_Eket Pelargir_Eket 2  pelargir_eket 0  scab_pelargir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 27648 119 0 49 0 283 27
 0
 
  itm_pelargir_sword Pelargir_Sword Pelargir_Sword 2  pelargir_sword 0  scab_pelargir_sword 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 30720 103 0 72 0 277 30
@@ -1344,7 +1344,7 @@ itemsfile version 2
  itm_m_uruk_heavy_k Uruk_Guard_Armor Uruk_Guard_Armor 1  uruk_mordor_k 0  16842765 0 2500 704643072 28 100 0 26 12 0 0 0 0 0 0 0 0
 0
 
- itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16842765 0 3000 704643072 30 100 0 40 18 0 0 0 0 0 0 0 0
+ itm_m_cap_armor Mordor_Captain_Armor Mordor_Captain_Armor 1  mordor_captain_armor 0  16842765 0 4000 704643072 30 100 0 42 18 0 0 0 0 0 0 0 0
 0
 
  itm_black_num_armor Black_Numenorean_Armor Black_Numenorean_Armor 1  black_numenor_armor 0  16842765 0 4000 704643072 30 100 0 42 18 0 0 0 0 0 0 0 0
@@ -1826,7 +1826,7 @@ itemsfile version 2
  itm_far_harad_2h_mace Far_Harad_Two_Handed_Mace Far_Harad_Two_Handed_Mace 1  far_harad_2h_mace 0  342163459 9223635925844623584 700 271496 2 100 0 0 0 0 28672 100 0 74 0 256 540
 0
 
- itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372037685248015 100 286870 0.75 100 0 0 0 0 22528 112 0 47 0 275 22
+ itm_harad_dagger Harad_Knife Harad_Knife 1  harad_dagger 0  12664834 9223372037685248015 100 286870 0.75 100 0 0 0 0 22528 120 0 47 0 275 22
 0
 
  itm_harad_short_spear Harad_Short_Spear Harad_Short_Spear 1  harad_short_spear 0  4554756 9254615759470988544 200 271496 2 100 0 0 0 0 10240 100 0 132 0 276 522
@@ -2291,7 +2291,7 @@ itemsfile version 2
  itm_corsair_harpoon Corsair_Harpoon Corsair_Harpoon 1  corsair_harpoon 0  71368714 34360000512 200 0 4 100 0 0 86 0 0 85 27 87 2 319 0
 0
 
- itm_corsair_sword Corsair_Eket Corsair_Eket 2  corsair_sword 0  scab_corsair_sword 3458764513820540928  4259842 9223388564182532111 300 286870 1.5 100 0 0 0 0 29696 101 0 90 0 280 29
+ itm_corsair_sword Corsair_Eket Corsair_Eket 2  corsair_sword 0  scab_corsair_sword 3458764513820540928  4259842 9223388564182532111 300 286870 1.5 100 0 0 0 0 27648 113 0 53 0 281 27
 0
 
  itm_corsair_throwing_dagger Crooked_Throwing_Daggers Crooked_Throwing_Daggers 1  corsair_throwing_dagger 0  4259850 131072 200 0 3.5 100 0 0 0 0 0 110 24 0 10 40 0
@@ -2631,7 +2631,7 @@ itemsfile version 2
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 12 40960 100 0 100 0 286 296
+ itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 12 56320 100 0 105 0 286 55
 0
 
  itm_garlic_reward Garlic Garlic 1  garlic 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
