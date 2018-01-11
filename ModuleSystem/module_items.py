@@ -198,9 +198,9 @@ items =[
 #BOW MISSILES
 ["arrows","Arrows",[("plain_arrow",0),("plain_arrow_flying",ixmesh_flying_ammo),("common_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,72,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
 ["gondor_arrows","Gondor_Arrows",[("gondor_arrow",0),("gondor_arrow_flying",ixmesh_flying_ammo),("gondor_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,100,weight(3)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
-#next one unused
 ["orc_javelin","Orc_Heavy_Javelin",[("orc_javelin",0)],itp_type_thrown|itp_shop|itp_primary|itp_bonus_against_shield,itcf_throw_javelin,400,weight(5)|difficulty(1)|shoot_speed(30)|spd_rtng(89)|weapon_length(88)|thrust_damage(55,pierce)|accuracy(83)|max_ammo(2),imodbits_thrown,[] ],
 ["khergit_arrows","Barbed_Arrows",[("rohan_arrow2",0),("rohan_arrow2_flying",ixmesh_flying_ammo),("rohan_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,300,weight(3.5)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
+#unused:
 ["rohan_arrows_2","Rohirrim_Arrows",[("rohan_arrow1",0),("rohan_arrow1_flying",ixmesh_flying_ammo),("rohan_quiver2",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,300,weight(3.5)|thrust_damage(2,cut)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
 ["harad_arrows","Haradrim_Arrows",[("harad_arrow",0),("harad_arrow_flying",ixmesh_flying_ammo),("harad_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,300,weight(3)|thrust_damage(1,cut)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
 ["corsair_arrows","Corsair_Arrows",[("corsair_arrow",0),("corsair_arrow_flying",ixmesh_flying_ammo),("corsair_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_front_right,300,weight(3)|thrust_damage(1,cut)|max_ammo(29)|weapon_length(91),imodbits_missile,[]],
@@ -210,8 +210,8 @@ items =[
 #["loth_arrows"    ,"Ghaladrim_Arrows",[("white_elf_arrow",0),("flying_missile",ixmesh_flying_ammo),("lothlorien_quiver", ixmesh_carry)],itp_type_arrows|itp_shop, itcf_carry_quiver_back_right ,350,weight(3.0)|abundance(50) |weapon_length(91)|thrust_damage(3,    pierce)|max_ammo(29),imodbits_missile],
 ["orc_hook_arrow","Orc_Hook_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,100,weight(3)|thrust_damage(0,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
 ["isengard_arrow","Isengard_Arrows",[("isengard_arrow",0),("isengard_arrow_flying",ixmesh_flying_ammo),("isengard_quiver",ixmesh_carry)],itp_type_arrows|itp_shop,itcf_carry_quiver_back_right,200,weight(3)|thrust_damage(1,pierce)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
-#next one unused referenced in obsolete MTs
-["pilgrim_disguise","Pilgrim_Disguise",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,25,weight(2)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_cloth,[]],
+#free Jan 2017
+["free_pilgrim_disguise","Pilgrim_Disguise",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,25,weight(2)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_cloth,[]],
 #["pilgrim_hood", "Pilgrim Hood",[("pilgrim_hood",0)], 0|itp_type_head_armor |itp_civilian  ,0, 35 , weight(1.25)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ###ARMOR
 #handwear
@@ -219,29 +219,30 @@ items =[
 ["mail_mittens","Mail_Mittens",[("mail_mitten_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(0.5)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
 # TLD civilian wear
-["black_dress","Black_Dress",[("gondor_dress_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["blackwhite_dress","Lady_Dress",[("gondor_dress_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["white_tunic_a","White_Tunic",[("generic_tunic_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+#all marked civilian items free Jan 2017, -> itm_white_tunic_a
+["free_black_dress","Black_Dress",[("gondor_dress_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["free_blackwhite_dress","Lady_Dress",[("gondor_dress_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["white_tunic_a","White_Tunic",[("generic_tunic_a",0),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("Leather_Jerkin",imodbit_exquisite),("Leather_Apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["white_tunic_b","Simple_Tunic",[("gondor_tunic_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["white_tunic_c","Tunic_Jacket",[("generic_tunic_c",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["free_white_tunic_c","Tunic_Jacket",[("generic_tunic_c",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["free_blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["black_tunic","Black_Tunic",[("gondor_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["green_tunic","Green_Tunic",[("rohan_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["red_tunic","Red_Tunic",[("haradrim_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["leather_apron","Leather_Apron",[("smith_leather_apron",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,50,weight(3)|head_armor(0)|body_armor(8)|leg_armor(7)|difficulty(0),imodbits_cloth,[]],
-["leather_jerkin","Leather_Jerkin",[("generic_leather_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,300,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
-["fur_coat","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,400,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
-["green_dress","Green_Dress",[("rohan_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["free_green_tunic","Green_Tunic",[("rohan_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["free_red_tunic","Red_Tunic",[("haradrim_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["free_leather_apron","Leather_Apron",[("smith_leather_apron",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,50,weight(3)|head_armor(0)|body_armor(8)|leg_armor(7)|difficulty(0),imodbits_cloth,[]],
+["free_leather_jerkin","Leather_Jerkin",[("generic_leather_jerkin",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,300,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["free_fur_coat","Dale_Coat",[("dale_coat",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,400,weight(6)|head_armor(0)|body_armor(13)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["free_green_dress","Green_Dress",[("rohan_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 #["rich_outfit"   , "Rich Outfit" ,[("merchant_outf"  ,0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
-["tld_tunic","Tunic",[("tld_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_initialize_civilian_clothes", "tableau_tld_tunic", ":agent_no", ":troop_no")])]],
+["free_tld_tunic","Tunic",[("tld_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]], #InVain: Removed script (ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_initialize_civilian_clothes", "tableau_tld_tunic", ":agent_no", ":troop_no")])
 #combos
-["gondor_fine_outfit_dress","Fine_Outfit",[("gondor_fine_outfit_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["rohan_fine_outfit_dale_dress","Fine_Outfit",[("rohan_fine_outfit_dale_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["robe_generic_dress","Robe",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-#civ headgear
-["wimple_a","Wimple",[("gondor_wimple_a",0)],itp_type_head_armor|itp_civilian|itp_shop|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
-["wimple_with_veil","Wimple",[("gondor_wimple_b",0)],itp_type_head_armor|itp_civilian|itp_shop|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
-["fine_hat","Fine_Hat",[("gondor_fine_fem_hat",0)],itp_type_head_armor|itp_civilian|itp_shop,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
+["free_gondor_fine_outfit_dress","Fine_Outfit",[("gondor_fine_outfit_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["free_rohan_fine_outfit_dale_dress","Fine_Outfit",[("rohan_fine_outfit_dale_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+["free_robe_generic_dress","Robe",[("tld_robe_generic_dress",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
+#civ headgear, all free Jan 2017, -> itm_blackroot_hood
+["free_wimple_a","Wimple",[("gondor_wimple_a",0)],itp_type_head_armor|itp_civilian|itp_shop|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
+["free_wimple_with_veil","Wimple",[("gondor_wimple_b",0)],itp_type_head_armor|itp_civilian|itp_shop|itp_fit_to_head,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
+["free_fine_hat","Fine_Hat",[("gondor_fine_fem_hat",0)],itp_type_head_armor|itp_civilian|itp_shop,0,10,weight(0.5)|head_armor(4)|difficulty(0),imodbits_cloth,[]],
 #
 #["sword_two_handed_a",         "Great Sword",[("sword_two_handed_a",0)], itp_type_two_handed_wpn|itp_shop|itp_always_loot|itp_two_handed|itp_primary, itc_greatsword|itcf_carry_sword_back, 1123 , weight(2.75)|difficulty(10)|spd_rtng(89) | weapon_length(120)|swing_damage(42 , cut) | thrust_damage(28 ,  pierce),imodbits_sword_high ],
 #["bastard_sword_a", "Bastard Sword",[("bastard_sword_a",0),("bastard_sword_a_scabbard", ixmesh_carry)], itp_type_two_handed_wpn|itp_shop|itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 294 , weight(2.25)|difficulty(9)|spd_rtng(98) | weapon_length(101)|swing_damage(37 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
@@ -409,7 +410,7 @@ items =[
 ["blackroot_footman","Blackroot_Vale_Footman_Armor",[("blackroot_footman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(15)|head_armor(0)|body_armor(20)|leg_armor(7)|difficulty(0),imodbits_elf_armor,],
 ["blackroot_warrior","Blackroot_Vale_Warrior_Armor",[("blackroot_warrior",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(14)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
 ["blackroot_leader","Blackroot_Vale_Leader_Armor",[("blackroot_leader",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(20)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
-["blackroot_hood","Blackroot_Hood",[("blackroot_hood",0)],itp_type_head_armor|itp_shop|itp_fit_to_head|itp_civilian,0,100,weight(0.5)|head_armor(12)|difficulty(0),imodbits_cloth],
+["blackroot_hood","Black_Hood",[("blackroot_hood",0),("gondor_wimple_a",imodbit_bent),("gondor_wimple_b",imodbit_cracked),("gondor_fine_fem_hat",imodbit_rusty)],itp_type_head_armor|itp_shop|itp_fit_to_head|itp_civilian,0,100,weight(0.5)|head_armor(12)|difficulty(0),imodbits_cloth],
 #["blackroot_helm", "Blackroot Helm",[("blackroot_helm",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ###DOL AMROTH
 ["dol_hauberk","Dol_Amroth_Hauberk",[("dol_hauberk",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(19)|head_armor(0)|body_armor(25)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
@@ -443,7 +444,7 @@ items =[
 ["pel_marine","Pelargir_Marine",[("pelargir_marine",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(20)|head_armor(0)|body_armor(25)|leg_armor(6)|difficulty(0),imodbits_elf_armor,],
 ["pelargir_marine_leader","Pelargir_Marine_Leader",[("pelargir_marine_leader",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1300,weight(21)|head_armor(0)|body_armor(33)|leg_armor(6)|difficulty(0),imodbits_elf_armor,],
 ["pelargir_regular","Pelargir_Regular",[("pelargir_regular",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(22)|head_armor(0)|body_armor(32)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["pelargir_hood","Pelargir_Hood",[("pelargir_hood",0)],itp_type_head_armor|itp_civilian|itp_shop,0,100,weight(1)|head_armor(10)|difficulty(0),imodbits_cloth],
+["pelargir_hood","White_Hood",[("pelargir_hood",0)],itp_type_head_armor|itp_civilian|itp_shop,0,100,weight(1)|head_armor(10)|difficulty(0),imodbits_cloth],
 ["pelargir_helmet_light","Pelargir_Helm",[("pelargir_helmet_light",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(32)|difficulty(0),imodbits_elf_armor],
 ["pelargir_helmet_heavy","Pelargir_Heavy_Helm",[("pelargir_helmet_heavy",0)],itp_type_head_armor|itp_shop,0,1400,weight(3)|head_armor(38)|difficulty(0),imodbits_elf_armor],
 ["pelargir_greaves","Pelargir_Greaves",[("pelargir_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,800,weight(3)|leg_armor(23)|difficulty(0),imodbits_elf_armor],
@@ -527,11 +528,13 @@ items =[
 ["lorien_helm_c","Lorien_Infantry_Helm",[("lorienhelmetinf",0)],itp_type_head_armor|itp_shop,0,1900,weight(1.2)|head_armor(42)|difficulty(0),imodbits_elf_armor],
 #["lorien_helm_e", "Lorien Hood"         ,[("elven_cloth_hood_blue" ,0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ########GENERIC ORC ITEMS#####
+#next one unused:
 ["orc_chain_greaves","Orc_Greaves",[("orc_chain_greaves_lr",0)],itp_type_foot_armor|itp_shop,0,701,weight(3)|leg_armor(15)|difficulty(0),imodbits_orc_armor],
 ["orc_coif","Orc_Coif",[("orc_coif",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,200,weight(2.3)|head_armor(12)|difficulty(0),imodbits_orc_armor],
 ["orc_greaves","Orc_Chain_Boots",[("old_orc_chain_greave_lr",0)],itp_type_foot_armor|itp_shop,0,401,weight(3)|leg_armor(12)|difficulty(0),imodbits_orc_armor],
 ["orc_ragwrap","Orc_Ragwrap",[("orc_ragwrap_lr",0)],itp_type_foot_armor|itp_shop,0,11,weight(1)|leg_armor(3)|difficulty(0),imodbits_orc_cloth],
 ["orc_furboots","Orc_Fur_Boots",[("orc_furboot_lr",0)],itp_type_foot_armor|itp_shop,0,201,weight(3)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
+#freed JAN 2017
 ["orc_furboot_tall","Orc_Fur_Boots",[("orc_furboot_tall",0)],itp_type_foot_armor|itp_shop,0,201,weight(3)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 #
 ["orc_tribal_a","Untreated_Skin",[("orc_tribal_a",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(3)|leg_armor(0)|difficulty(0),imodbits_orc_cloth,],
@@ -1220,8 +1223,9 @@ items =[
 #next one unused (was planned for shield painting?)
 ["far_harad_shield_paint","Wicker_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])]],
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
-["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0), ("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
-["whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
+["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
+#free, Jan 2017, -> Nazgulrobe:
+["free_whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,], #unused since Jan 2018, =itm_nazgulrobe
 #BANNERS 
 # TODO: PLEASE DO NOT CHANGE BANNER ORDER, THIS IS A PLANNED FEATURE FOR THE MORALE SYSTEM. -CC #
 ["mordor_banner","Mordor_Banner",[("banner_mordor",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_weapon_wood],
@@ -1233,9 +1237,9 @@ items =[
 ["amroth_lance_banner","Dol_Amroth_Lance_With_Banner",[("banner_lance_dolamroth",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(217)|thrust_damage(28,pierce),imodbits_weapon_good],
 ["rohan_lance_banner_sun","Rohan_Lance_With_Sun_Banner",[("banner_lance_rohan_b",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(217)|thrust_damage(30,pierce),imodbits_weapon_good],
 ["rohan_lance_banner_horse","Rohan_Lance_With_Horse_Banner",[("banner_lance_rohan_a",0)],itp_type_polearm|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(217)|thrust_damage(30,pierce),imodbits_weapon_good],
-#
-["merry_outfit","hobbit_outfit",[("merry",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
-["pippin_outfit","hobbit_outfit",[("pippin",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
+#both free, Jan 2017, -> Nazgulrobe
+["free_merry_outfit","hobbit_outfit",[("merry",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
+["free_pippin_outfit","hobbit_outfit",[("pippin",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
 #
 ["ent_body","Ent_Body",[("ent_body",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(65)|leg_armor(0)|difficulty(70),0,],
 ["ent_head_helm","Ent_Head",[("ent_head1",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
@@ -1243,7 +1247,8 @@ items =[
 ["ent_head_helm3","Ent_Head",[("ent_head3",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
 ["ent_feet_boots","Ent_Feet",[("ent_foot",0)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(70),0],
 ["ent_hands","Ent_Hands",[("ent_hand_L",0)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
-["galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique|itp_civilian,0,1,weight(225)|head_armor(60)|body_armor(80)|leg_armor(60)|difficulty(0),0,],
+#free, Jan 2017, -> Nazgulrobe:
+["free_galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique|itp_civilian,0,1,weight(225)|head_armor(60)|body_armor(80)|leg_armor(60)|difficulty(0),0,],
 ["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
 ["empty_legs","empty_legs",[("0",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
 ["empty_head","empty head",[("0",0),("chieftainhelm",imodbit_old)],itp_type_head_armor|itp_unique|itp_covers_head|itp_no_pick_up_from_ground,0,1,weight(250)|head_armor(50)|difficulty(0),0],

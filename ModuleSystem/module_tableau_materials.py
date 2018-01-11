@@ -605,7 +605,7 @@ tableaus = [
 
      (try_begin),
        (eq, ":type", 0),
-       (cur_tableau_add_override_item, "itm_robe_generic_dress"),
+       (cur_tableau_add_override_item, "itm_white_tunic_a"),
        (cur_tableau_add_override_item, "itm_leather_boots"),
        (assign, ":animation", "anim_pose_1"),
      (else_try),

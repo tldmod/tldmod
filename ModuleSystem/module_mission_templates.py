@@ -35,7 +35,7 @@ from module_info import wb_compile_switch as is_a_wb_mt
 #
 ####################################################################################################################
 
-pilgrim_disguise  = [itm_blackroot_hood, itm_pilgrim_disguise, itm_practice_staff]
+pilgrim_disguise  = [itm_blackroot_hood, itm_black_tunic, itm_practice_staff]
 
 af_castle_lord    = af_override_horse | af_override_weapons | af_require_civilian
 af_castle_warlord = af_override_horse | af_override_weapons | af_override_head | af_override_gloves
@@ -4808,8 +4808,8 @@ mission_templates = [ # not used in game
       (53, mtef_scene_source,af_override_horse,0,1,[]),(54, mtef_scene_source,af_override_horse,0,1,[]),(55, mtef_scene_source,af_override_horse,0,1,[]),
 #used for torunament master scene
 
-      (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_leather_jerkin]),
-      (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_leather_jerkin]),
+      (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_black_tunic]),
+      (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_tab_shield_small_round_b, itm_black_tunic]),
     ],
     tld_common_wb_muddy_water+
     tournament_triggers
