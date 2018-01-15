@@ -473,7 +473,7 @@ scenes = [
 
 ## In Vain Village Scenes Cont'd
 ("village_anduin",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000037220db18006a5aa000061bc80003a9600004852",  [],[],"outer_terrain_plain"),
-("village_north",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003926c9370007b5ed00006fbf0000026d00001a96",  [],[],"outer_terrain_plain"),
+("village_north",sf_generate,"none", "none", (0,0),(100,100),-100,"0x000000003386c9370007b5ed000041800000026d00001a96",  [],[],"outer_terrain_plain"),
 
 ## In Vain New Ambience Scenes Cont'd (Most versions are identical scenes with changed spawn positions)
 ("osgiliath_outskirts_2",sf_generate,"none", "none", (0,0),(100,100),-100,"0x0000000030000500000334cc000025df00004ec1000041e7",  [],[],"outer_terrain_flat"),
