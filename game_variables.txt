@@ -520,6 +520,9 @@ party_t_upgrade_text_size_y = 0.023
 party_t_upgrade_text_flags = 0x10
 party_t_upgrade_text_color = 0xFF991100
 
+party_b_troop_upgrades_position_x = 0.09 #upgrade advise.
+party_b_troop_upgrades_position_y = 0.25 #upgrade advise.#before 0.22
+
 party_b_upgrade1_position_x = 0.008
 party_b_upgrade1_position_y = 0.22
 
