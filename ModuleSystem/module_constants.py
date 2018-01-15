@@ -1170,7 +1170,7 @@ item_horse_begin = itm_sumpter_horse
 item_horse_end = itm_warg_1b
 
 item_warg_begin = itm_warg_1b
-item_warg_end = itm_troll_feet_boots
+item_warg_end = itm_warg_reward+1
 
 warg_ghost_begin = trp_warg_ghost_1b
 warg_ghost_end = trp_uruk_hai_tracker

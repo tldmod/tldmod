@@ -28,7 +28,8 @@ from module_info import wb_compile_switch as is_a_wb_item
 
 ###Some constants for ease of use.
 ### Kham - Unused imods for mesh hack
-### Poor, Old, Cheap, Well_Made, Sharp, Deadly, Exquisite, Powerful, Rough, Robust, Tough, Trophy, Fresh, Day Old, Two-Day Old, Rotten
+### poor old cheap well_made sharp deadly exquisite powerful rough fresh day_old two-day_old rotten
+### InVain - checked and removed non-existent ones. Just choose any imod that can't be acquired by the specific item.
 
 imodbits_none = 0
 imodbits_polearm =        0#imodbit_cracked | imodbit_bent | imodbit_balanced
@@ -167,26 +168,26 @@ items =[
 ["warg_reward","Huge_Warg",[("wargArmored_huge",0)],itp_type_horse|itp_unique,0,3000,hit_points(180)|body_armor(45)|difficulty(5)|horse_speed(35)|horse_maneuver(62)|horse_charge(62),imodbits_horse_basic,[]],
 #first non WARG item: troll_feet_boots (see in module_constants)
 
-#TROLL "ITEMS"#########
-["troll_feet_boots","Troll_Feet",[("troll_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(55)|leg_armor(55)|difficulty(70),0],
-["troll_head_helm","Troll_Head",[("troll_head",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
-["troll_head_helm_b","Troll_Head",[("troll_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
-["troll_head_helm_c","Troll_Head",[("troll_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
+#TROLL "ITEMS"######### free Jan 2017 -> ent items, weapons grouped together
+["free_troll_feet_boots","Troll_Feet",[("troll_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(55)|leg_armor(55)|difficulty(70),0],
+["free_troll_head_helm","Troll_Head",[("troll_head",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
+["free_troll_head_helm_b","Troll_Head",[("troll_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
+["free_troll_head_helm_c","Troll_Head",[("troll_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
 #
-["tree_trunk_club_a","Tree_Trunk",[("troll_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(87)|weapon_length(186)|swing_damage(48,blunt)|thrust_damage(48,blunt),0],
-["tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,blunt)|thrust_damage(48,blunt),0],
-["tree_trunk_invis","Tree_Trunk",[("0",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,blunt)|thrust_damage(48,blunt),0],
-["giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,blunt)|thrust_damage(65,blunt),0],
-["giant_mace","Giant_Mace",[("giant_mace",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,blunt)|thrust_damage(65,blunt),0],
-["giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,blunt)|thrust_damage(65,blunt),0],
+["tree_trunk_club_a","Tree_Trunk",[("troll_club",0),("tree_trunk_club",imodbit_poor),("o",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(87)|weapon_length(155)|swing_damage(48,cut)|thrust_damage(48,cut),0],
+["free_tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
+["free_tree_trunk_invis","Tree_Trunk",[("0",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
+["free_giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,cut)|thrust_damage(65,cut),0],
+["giant_mace","Giant_Mace",[("giant_mace",0),("giant_hammer",imodbit_poor),("giant_mace_b",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(130)|swing_damage(65,cut)|thrust_damage(48,cut),0],
+["free_giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,cut)|thrust_damage(65,cut),0],
 #
-["olog_feet_boots","Olog_Hai_Feet",[("olog_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(62)|difficulty(70),0],
-["olog_head_helm","Olog_Hai_Head",[("olog_head",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
-["olog_head_helm_b","Olog_Hai_Head",[("olog_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
-["olog_head_helm_c","Olog_Hai_Head",[("olog_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
-["olog_body","Olog_Hai_Armor",[("olog_body",0)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
+["free_olog_feet_boots","Olog_Hai_Feet",[("olog_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(62)|difficulty(70),0],
+["free_olog_head_helm","Olog_Hai_Head",[("olog_head",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
+["free_olog_head_helm_b","Olog_Hai_Head",[("olog_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
+["free_olog_head_helm_c","Olog_Hai_Head",[("olog_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
+["olog_body","Olog_Hai_Armor",[("olog_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
 ["olog_body_b","Olog_Hai_Armor",[("olog_body_b",0)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
-["olog_hands","Olog_Hai_Hands",[("olog_hand_L",0)],itp_no_pick_up_from_ground|itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
+["free_olog_hands","Olog_Hai_Hands",[("olog_hand_L",0)],itp_no_pick_up_from_ground|itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
 #
 # warg ghost items...  (mtarini)
 #  invisible items which are used for ghost riders (riding unmounted wargs)
@@ -222,8 +223,8 @@ items =[
 #all marked civilian items free Jan 2017, -> itm_white_tunic_a
 ["free_black_dress","Black_Dress",[("gondor_dress_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
 ["free_blackwhite_dress","Lady_Dress",[("gondor_dress_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["white_tunic_a","White_Tunic",[("generic_tunic_a",0),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("Leather_Jerkin",imodbit_exquisite),("Leather_Apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
-["white_tunic_b","Simple_Tunic",[("gondor_tunic_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["white_tunic_a","Simple_Tunic",[("generic_tunic_a",0),("gondor_tunic_b",imodbit_day_old),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("Leather_Jerkin",imodbit_exquisite),("Leather_Apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
+["free_white_tunic_b","Simple_Tunic",[("gondor_tunic_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["free_white_tunic_c","Tunic_Jacket",[("generic_tunic_c",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["free_blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["black_tunic","Black_Tunic",[("gondor_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
@@ -342,7 +343,8 @@ items =[
 ["riv_helm_a","Rivendell_Coif",[("rivendell_coif_new",0)],itp_type_head_armor|itp_shop,0,800,weight(1)|head_armor(24)|difficulty(0),imodbits_elf_armor,[]],
 ["riv_helm_b","Rivendell_Archer_Helm",[("rivendellarcherhelmet",0)],itp_type_head_armor|itp_shop,0,1300,weight(1)|head_armor(35)|difficulty(0),imodbits_elf_armor,[]],
 ["riv_helm_c","Rivendell_Infantry_Helm",[("rivendellswordfighterhelmet",0)],itp_type_head_armor|itp_shop,0,1800,weight(1.2)|head_armor(40)|difficulty(0),imodbits_elf_armor,[]],
-["riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,3000,weight(1.2)|head_armor(70)|difficulty(0),0,[]],
+#free Jan 2017, -> itm_witchking_helmet
+["free_riv_helm_glorfi","Glorfi_Hair",[("glorfindelhair",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,3000,weight(1.2)|head_armor(70)|difficulty(0),0,[]],
 ["riv_tiara","Elf_Lord_Tiara",[("tiara",0)],itp_type_head_armor|itp_unique|itp_doesnt_cover_hair,0,3000,weight(2.5)|head_armor(60)|difficulty(0),0,[]],
 ##########RIVENDELL SHIELDS##########
 ["riv_shield_a","Rivendell_Shield",[("riv_inf_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itcf_carry_kite_shield,700,weight(2.5)|hit_points(1000)|body_armor(20)|spd_rtng(85)|weapon_length(82),imodbits_shield_good,[]],
@@ -382,7 +384,7 @@ items =[
 ["gon_steward_guard","Gondor_Steward_Guard_Armor",[("gondor_steward_guard",0)],itp_type_body_armor|itp_covers_legs|0,0,4000,weight(22)|head_armor(0)|body_armor(40)|leg_armor(14)|difficulty(0),imodbits_elf_armor,[]],
 ["gon_tower_guard","Gondor_Tower_Guard_Armor",[("gondor_tower_guard",0)],itp_type_body_armor|itp_covers_legs|0,0,4000,weight(22)|head_armor(0)|body_armor(40)|leg_armor(14)|difficulty(0),imodbits_elf_armor,[]],
 ["gon_tower_knight","Gondor_Tower_Knight_Armor",[("gon_tower_knight",0)],itp_type_body_armor|itp_covers_legs|0,0,5000,weight(25)|head_armor(0)|body_armor(45)|leg_armor(15)|difficulty(0),imodbits_elf_armor,[]],
-["gon_leader_surcoat_cloak","Gondor_Leader's_Surcoat",[("gon_leader_surcoat_cloak",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(22)|head_armor(0)|body_armor(38)|leg_armor(10)|difficulty(0),imodbits_elf_armor,[]],
+["gon_leader_surcoat_cloak","Gondor_Leader's_Surcoat",[("gon_leader_surcoat_cloak",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,5000,weight(22)|head_armor(0)|body_armor(45)|leg_armor(15)|difficulty(0),imodbits_elf_armor,[]],
 ["gondor_ranger_hood","Green_Hood",[("gondor_ranger_hood",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,100,weight(0.5)|head_armor(13)|difficulty(0),imodbits_cloth,[]],
 ["gondor_ranger_hood_mask","Gondor_Ranger_Hood",[("gondor_ranger_hood_mask",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,400,weight(0.6)|head_armor(15)|difficulty(0),imodbits_elf_cloth,[]],
 ["gondor_light_greaves","Gondorian_Leather_Greaves",[("gondor_light_greaves",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,600,weight(3)|leg_armor(16)|difficulty(0),imodbits_cloth,[]],
@@ -464,7 +466,7 @@ items =[
 ["gondor_shield_b","Gondor_Kite_Shield",[("gondor_point_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(70),imodbits_shield,],
 ["gondor_shield_c","Gondor_Tower_Shield",[("gondor_tower_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop|itp_cant_use_on_horseback,itcf_carry_kite_shield,500,weight(3)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield,],
 ["gondor_shield_d","Gondor_Kite_Shield",[("gondorian_kite_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(70),imodbits_shield,],
-["gondor_shield_e","Gondor_Royal_Shield",[("denethor_shield",0)],itp_type_shield|itp_wooden_parry|itp_cant_use_on_horseback,itcf_carry_kite_shield,1000,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
+["gondor_shield_e","Gondor_Royal_Shield",[("denethor_shield",0)],itp_type_shield|itp_wooden_parry,itcf_carry_kite_shield,1000,weight(2.5)|hit_points(480)|body_armor(12)|spd_rtng(82)|weapon_length(90),imodbits_shield_good,],
 #
 ["gon_tab_shield_a","Heraldic_Gondor_Round_Shield",[("tableau_shield_round",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(310)|body_armor(3)|spd_rtng(105)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_gondor_round_shield_banner", "tableau_gon_shield_round", ":agent_no", ":troop_no")])]],
 # [(ti_on_init_item,[(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_TLD_gondor_round_shield_banner", "tableau_gon_shield_round", ":agent_no", ":troop_no")])]],
@@ -1223,8 +1225,8 @@ items =[
 #next one unused (was planned for shield painting?)
 ["far_harad_shield_paint","Wicker_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])]],
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
-["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
-#free, Jan 2017, -> Nazgulrobe:
+#free, Jan 2017, -> rohan_armor_th:
+["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0),("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
 ["free_whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,], #unused since Jan 2018, =itm_nazgulrobe
 #BANNERS 
 # TODO: PLEASE DO NOT CHANGE BANNER ORDER, THIS IS A PLANNED FEATURE FOR THE MORALE SYSTEM. -CC #
@@ -1237,17 +1239,17 @@ items =[
 ["amroth_lance_banner","Dol_Amroth_Lance_With_Banner",[("banner_lance_dolamroth",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(217)|thrust_damage(28,pierce),imodbits_weapon_good],
 ["rohan_lance_banner_sun","Rohan_Lance_With_Sun_Banner",[("banner_lance_rohan_b",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(217)|thrust_damage(30,pierce),imodbits_weapon_good],
 ["rohan_lance_banner_horse","Rohan_Lance_With_Horse_Banner",[("banner_lance_rohan_a",0)],itp_type_polearm|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_couchable, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(217)|thrust_damage(30,pierce),imodbits_weapon_good],
-#both free, Jan 2017, -> Nazgulrobe
+#both free, Jan 2017, ->rohan_armor_th:
 ["free_merry_outfit","hobbit_outfit",[("merry",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
 ["free_pippin_outfit","hobbit_outfit",[("pippin",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
 #
-["ent_body","Ent_Body",[("ent_body",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(65)|leg_armor(0)|difficulty(70),0,],
-["ent_head_helm","Ent_Head",[("ent_head1",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
-["ent_head_helm2","Ent_Head",[("ent_head2",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
-["ent_head_helm3","Ent_Head",[("ent_head3",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
-["ent_feet_boots","Ent_Feet",[("ent_foot",0)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(70),0],
+["ent_body","Ent_Body",[("ent_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered),],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
+["ent_head_helm","Ent_Head",[("ent_head1",0),("olog_head",imodbit_hardened),("olog_head_b",imodbit_reinforced),("olog_head_c",imodbit_lordly),("ent_head2",imodbit_rotten),("ent_head3",imodbit_day_old)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
+["ent_head_helm2","Ent_Head",[("ent_head2",0),("troll_head",imodbit_rotten),("troll_head_b",imodbit_two_day_old),("troll_head_c",imodbit_day_old)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
+["free_ent_head_helm3","Ent_Head",[("ent_head3",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
+["ent_feet_boots","Ent_Feet",[("ent_foot",0),("troll_feet",imodbit_cracked),("olog_feet",imodbit_hardened)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(70),0],
 ["ent_hands","Ent_Hands",[("ent_hand_L",0)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
-#free, Jan 2017, -> Nazgulrobe:
+#free, Jan 2017, -> rohan_armor_th:
 ["free_galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique|itp_civilian,0,1,weight(225)|head_armor(60)|body_armor(80)|leg_armor(60)|difficulty(0),0,],
 ["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],
 ["empty_legs","empty_legs",[("0",0)],itp_type_foot_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|leg_armor(1)|difficulty(0),0],
@@ -1298,7 +1300,7 @@ items =[
 ["lorien_sword_reward","Galadhrim_Sword",[("lorien_sword_hand_and_half",0),("scab_lorien_sword_hand_and_half",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,900,weight(2.5)|difficulty(0)|spd_rtng(125)|weapon_length(103)|swing_damage(33,cut)|thrust_damage(33,pierce),imodbits_weapon_good],
 ["dale_sword_reward","Marchwarden_Sword",[("dale_sword_a",0),("scab_dale_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(98)|weapon_length(95)|swing_damage(41,cut)|thrust_damage(24,pierce),imodbits_weapon],
 ["dale_armor_reward","Esgaroth_Noble_Gorget",[("dale_noble_gorget_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(22)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
-["leather_gloves_reward","Hunting_Gloves",[("lthr_glove_L",0)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_cloth,[]],
+["leather_gloves_reward","Hunting_Gloves",[("lthr_glove_L",0),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_cloth,[]],
 
 ##Shield Bear Shield imod Hack Start
 ] + (is_a_wb_item==1 and [
@@ -1315,10 +1317,11 @@ items =[
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small",0)],itp_type_head_armor|itp_unique,0,3000,weight(3)|head_armor(50)|difficulty(12),0],
 ["gandstaff","Wizards_Staff",[("gandstaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
-["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armor",0)],itp_type_body_armor|itp_covers_legs,0,4000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(15),imodbits_elf_armor,],
-["denethor_robe","Stewards_Robe",[("denethor_robe",0)],itp_type_body_armor|itp_covers_legs,0,1000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armor",0),("denethor_robe",imodbit_well_made),("nazgulrobe",imodbit_sharp),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs,0,4000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(15),imodbits_elf_armor,],
+#free Jan 2017, --> rohan_armor_th
+["free_denethor_robe","Stewards_Robe",[("denethor_robe",0)],itp_type_body_armor|itp_covers_legs,0,1000,weight(20)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["prisoner_coll_chain","Prisoner_Chains",[("prisoner_coll_chain",0)],itp_type_head_armor|itp_doesnt_cover_hair,0,10,weight(10)|head_armor(2)|difficulty(0),0],
-["witchking_helmet","Wicked_Helm",[("witchking_helmet",0)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
+["witchking_helmet","Wicked_Helm",[("witchking_helmet",0),("glorfindelhair",imodbit_rotten)],itp_type_head_armor|itp_unique,0,3000,weight(2.5)|head_armor(50)|difficulty(0),0],
 # let   witchking_helmet  be the last item (mtarini)
 ["lorien_royal_armor","Lorien_Royal_Armor",[("lorien_royal",0)],itp_type_body_armor|itp_covers_legs,0,5000,weight(19)|head_armor(0)|body_armor(45)|leg_armor(17)|difficulty(15),imodbits_elf_armor,],
 ["feet_chains","Feet Chains",[("chains_full",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],

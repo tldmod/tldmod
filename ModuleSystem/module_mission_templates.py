@@ -3708,6 +3708,7 @@ mission_templates = [ # not used in game
     (team_set_relation, 1, 3, 1),(team_set_relation, 1, 5, 1),(team_set_relation, 5, 3, 1),
     (team_set_relation, 6, 0, 1),(team_set_relation, 6, 2, 1),(team_set_relation, 6, 4, 1), # TLD gate aggravator team
     (assign, "$gate_aggravator_agent",-1), # can be reassigned by destructible gate scene prop presence
+    (assign, "$gate_breached",0), #for scenes without gates, just to make sure it's 0
     (call_script, "script_change_banners_and_chest"),
     (call_script, "script_remove_siege_objects")]),
   (0, 0, ti_once, [],[
@@ -3838,8 +3839,8 @@ mission_templates = [ # not used in game
       (else_try),
           (eq, "$gate_breached", 1),
           (store_random_in_range, ":random", 0, 100),
-          (le, ":random", 75), #75% Chance troop is asked to go through the portal. Other than that, go to team destinations.
-          (entry_point_get_position, pos10, 42),
+          (le, ":random", 50), #75% Chance troop is asked to go through the portal. Other than that, go to team destinations. InVain - toned done
+          (entry_point_get_position, pos10, 41), #InVain - #41 is center (cause that's the player's team), not 42
           (agent_set_scripted_destination, ":agent_no", pos10),
           ] + (is_a_wb_mt==1 and [
           (agent_force_rethink, ":agent_no"),
