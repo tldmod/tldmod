@@ -1901,7 +1901,7 @@ troops = [
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
 ["walker_man_gondor_white","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
    [itm_corsair_boots, itm_gondor_fine_outfit_dress, itm_gondor_fine_outfit_dress, itm_white_tunic_a, itm_white_tunic_b, itm_white_tunic_c, itm_blue_tunic, itm_black_tunic, itm_denethor_robe, itm_leather_boots,],
-      attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
+      attr_tier_5,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
 ["walker_man_gondor_blue","Townsman","_",tf_gondor| tfg_boots| tfg_armor,0,0,fac_gondor,
    [itm_blackroot_hood,itm_pelargir_hood,itm_gondor_fine_outfit_dress, itm_blue_tunic, itm_white_tunic_a, itm_gon_jerkin, itm_leather_jerkin, itm_black_tunic,itm_leather_apron,itm_lossarnach_shirt, itm_leather_boots,],
       attr_tier_1,wp_tier_1,knows_common,man_face_young_1,man_face_old_2],
@@ -1971,7 +1971,7 @@ troops = [
       0,0,0,gondor_face2],
 ["trainer_elf","Trainer","_",tf_hero| tf_lorien| tfg_armor| tfg_boots, scn_elf_arena|entry(1),0,fac_commoners,
    [itm_whiterobe,itm_leather_boots,],
-      0,0,0,lorien_elf_face_2],
+      attr_tier_5,0,0,lorien_elf_face_2],
 ["trainer_beorn","Trainer","_",tf_hero| tfg_armor| tfg_boots, scn_beorn_arena|entry(1),0,fac_commoners,
    [itm_beorn_padded,itm_rohan_shoes,],
       0,0,0,beorn_face2],
@@ -2154,7 +2154,7 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_6,0x0000000e3b004244365b6db99b6db7df00000000001dd6eb0000000000000000],
 ["lorien_lord","Lady_Galadriel","Lady",tf_hero| tf_randomize_face| tf_female| tfg_armor| tfg_helm| tfg_gloves| tfg_boots,0,0,fac_lorien,
    [itm_galadriel,itm_empty_head,itm_empty_legs,itm_empty_hands,],
-      def_attrib|level(2),wp(20),knows_common,0x0000000e3b004000365b6db99b6db7df00000000001dd6eb0000000000000000],
+      attr_tier_6,wp(20),knows_common,0x0000000e3b004000365b6db99b6db7df00000000001dd6eb0000000000000000],
 ["imladris_lord","Lord_Elrond","Lord",tf_hero| tf_imladris| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_imladris,
    [itm_mearas_reward,itm_riv_armor_leader,itm_riv_boots,itm_leather_gloves,itm_riv_tiara,itm_riv_riding_sword,itm_riv_shield_b,itm_riv_spear],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_4|knows_persuasion_5|knows_trainer_5,0x0000000bff002001379b74b75346d08d00000000001d969b0000000000000000],
@@ -3338,13 +3338,13 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham - Healers
 
-["morannon_healer","Okstuk_the_healer","_",tf_hero|tf_orc,scn_morannon_center|entry(13),0,fac_mordor,[itm_moria_armor_b,itm_orc_greaves,itm_orc_helm_c],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
-["minas_tirith_healer","Ioreth","_",tf_female|tf_hero,scn_minas_tirith_center|entry(13),0,fac_gondor,[itm_whiterobe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x0000000fff0030064b3152c34d27231100000000001c986d0000000000000000],
-["edoras_healer","Freya_the_healer","_",tf_female|tf_hero,scn_edoras_center|entry(13),0,fac_rohan,[itm_whiterobe,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x10500501d14886db69d699],
-["isengard_healer","Nurgal_the_patcher","_",tf_hero|tf_urukhai,scn_isengard_center|entry(13),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
+["morannon_healer","Okstuk_the_Healer","_",tf_hero|tf_orc,scn_morannon_center|entry(13),0,fac_mordor,[itm_moria_armor_b,itm_orc_greaves,itm_orc_helm_c],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
+["minas_tirith_healer","Ioreth","_",tf_female|tf_hero,scn_minas_tirith_center|entry(13),0,fac_gondor,[itm_whiterobe,itm_leather_boots],str_15|level(2),wp(20),knows_common,0x0000000fff0030064b3152c34d27231100000000001c986d0000000000000000],
+["edoras_healer","Freya_the_Healer","_",tf_female|tf_hero,scn_edoras_center|entry(13),0,fac_rohan,[itm_whiterobe,itm_leather_boots],str_15|level(2),wp(20),knows_common,0x00000005070010045a9569a16d724adc00000000001db95a0000000000000000],
+["isengard_healer","Nurgal_the_Patcher","_",tf_hero|tf_urukhai,scn_isengard_center|entry(13),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
 ["guldur_healer","Mornagar_the_Gramaryer","_",tf_hero|tf_evil_man,scn_dol_guldur_center|entry(13),0,fac_guldur,[itm_leather_boots, (itm_rohan_armor_th, imod_old)],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,0x000000047f0024d212014ac90032e05200000000001c84880000000000000000],
 ["gundabad_healer","Lurgakh_Third_Eye","_",tf_orc|tf_hero,scn_gundabad_camp_center|entry(13),0,fac_gundabad,[itm_gundabad_armor_d,itm_orc_furboots],def_attrib|level(2),wp(20),knows_common,0x0000000fc000200b5ff83e35e4f8ed8900000000001f6d470000000000000000],
-["mirkwood_healer","Corwiel_the_Soft-Handed","_",tf_female|tf_woodelf|tf_hero,scn_thranduils_halls_center|entry(13),0,fac_woodelf,[itm_mirkwood_armor_a,itm_leather_boots],def_attrib|level(2),wp(20),knows_common,0x00000004bf00400a5b546a3682a4c2cb00000000001d268a0000000000000000],
+["mirkwood_healer","Corwiel_the_Soft-Handed","_",tf_female|tf_woodelf|tf_hero,scn_thranduils_halls_center|entry(13),0,fac_woodelf,[itm_mirkwood_armor_a,itm_leather_boots],str_15|level(2),wp(20),knows_common,0x00000004bf00400a5b546a3682a4c2cb00000000001d268a0000000000000000],
 
 #Kham Morale Troops
 
