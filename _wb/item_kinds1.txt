@@ -219,7 +219,7 @@ itemsfile version 2
  itm_free_troll_head_helm_c Troll_Head Troll_Head 1  troll_head_c 0  137438957580 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 3  troll_club 0  tree_trunk_club 64  o 256  137443540994 9223372036854775808 1 0 58 100 0 0 0 0 49152 87 0 155 0 48 48
+ itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 3  troll_club 0  tree_trunk_club 64  dummy_mesh 256  137443540994 9223372036854775808 1 0 58 100 0 0 0 0 49152 87 0 155 0 48 48
 0
 
  itm_free_tree_trunk_club_b Tree_Trunk Tree_Trunk 1  tree_trunk_club 0  137443540994 9223372036854775808 1 0 58 100 0 0 0 0 49152 92 0 175 0 48 48
@@ -2717,7 +2717,7 @@ itemsfile version 2
  itm_sarustaff Wizards_Staff Wizards_Staff 1  sarustaff 0  138838020 4222124851990272 1 0 2.5 100 0 0 0 0 51200 103 0 118 0 552 562
 0
 
- itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armor 0  denethor_robe 2048  nazgulrobe 4096  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 20 100 0 44 15 15 0 0 0 0 0 0 0
+ itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armor 0  denethor_robe 2048  nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 20 100 0 44 15 15 0 0 0 0 0 0 0
 0
 
  itm_free_denethor_robe Stewards_Robe Stewards_Robe 1  denethor_robe 0  16777229 0 1000 704643072 20 100 0 44 15 0 0 0 0 0 0 0 0
