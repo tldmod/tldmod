@@ -373,7 +373,7 @@ mordor_man2            = 0x0000000fff00200429cd7d495667732e00000000001d5cf900000
 
 #Items hidden behind imod modifiers:
 itm_whiterobe = (itm_rohan_armor_th, imod_bent)
-itm_nazgulrobe = (itm_rohan_armor_th, imod_cheap)
+itm_nazgulrobe = (itm_rohan_armor_th, imod_sharp)
 itm_galadriel = (itm_rohan_armor_th, imod_rusty)
 itm_merry_outfit = (itm_rohan_armor_th, imod_chipped)
 itm_pippin_outfit = (itm_rohan_armor_th, imod_battered)
