@@ -8204,7 +8204,7 @@ scripts = [
         (store_div, ":ratio", ":friend_count", "$enemy_count1"),
         (try_begin),
         	(eq, ":orcFriends",1),
-        	(store_sub, ":raw_advantage", ":ratio", 60),
+        	(store_sub, ":raw_advantage", ":ratio", 75),
         (else_try),
         	(store_sub, ":raw_advantage", ":ratio", 100),
         (try_end),
@@ -8213,7 +8213,7 @@ scripts = [
         (store_div, ":ratio", "$enemy_count1", ":friend_count"),
         (try_begin),
         	(eq, ":orcEnemy",1),
-        	(store_sub, ":raw_advantage", 60, ":ratio"),
+        	(store_sub, ":raw_advantage", 75, ":ratio"),
         (else_try),
         	(store_sub, ":raw_advantage", 100, ":ratio"),
         (try_end),
@@ -8221,13 +8221,13 @@ scripts = [
       (val_mul, ":raw_advantage", 2),
       (try_begin),
       	(eq, ":orcFriends",1),
-      	(val_mul, ":player_party_tactics", 60),
+      	(val_mul, ":player_party_tactics", 50),
       (else_try),
       	(val_mul, ":player_party_tactics", 30),
       (try_end),
       (try_begin),
       	(eq, ":orcEnemy",1),
-      	(val_mul, ":enemy_party_tactics", 60),
+      	(val_mul, ":enemy_party_tactics", 50),
       (else_try),
       	(val_mul, ":enemy_party_tactics", 30),
       (try_end),
@@ -9447,20 +9447,49 @@ scripts = [
 
 # script_get_player_party_morale_values
 # Output: reg0 = player_party_morale_target
+# Changed to make higher level troops less affected by morale / party size
 ("get_player_party_morale_values",
-    [ (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
+    [ 
+      # calculate the total number of guys and the cumulative level of the 
+      # party.  
+      (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
+      (assign, ":level_total", 0),
       (assign, ":num_men", 0),
       (try_for_range, ":i_stack", 1, ":num_stacks"),
-        (party_stack_get_troop_id, ":stack_troop","p_main_party",":i_stack"),
-        (try_begin),
-          (troop_is_hero, ":stack_troop"),
-          (val_add, ":num_men", 3),
-        (else_try),
-          (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
-          (val_add, ":num_men", ":stack_size"),
-        (try_end),
+         (party_stack_get_troop_id, ":stack_troop","p_main_party", ":i_stack"),
+         (store_character_level, ":level", ":stack_troop"),         
+         (try_begin),
+            (troop_is_hero, ":stack_troop"),
+            (val_add, ":num_men", 3),
+            (val_add, ":level_total", ":level"),
+         (else_try),
+            (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
+            (val_add, ":num_men", ":stack_size"),
+            (val_mul, ":level", ":stack_size"),
+            (val_add, ":level_total", ":level"),
+         (try_end),
       (try_end),
-      (assign, "$g_player_party_morale_modifier_party_size", ":num_men"),
+
+      # take the total number of guys and put it in the right range to do more
+      # maths on it.  divide this value by the cumulative level to get our
+      # morale penalty based on size.  this results in lower level troops 
+      # being more inclined to be unhappy than higher level troops and higher 
+      # level troops can kick guys in line up to a point.
+      # 5 * (count+5)^2 / (count * level)
+      (store_add, ":morale_penalty_for_size", ":num_men", 5),
+      (val_mul, ":morale_penalty_for_size", ":morale_penalty_for_size"),
+      (val_mul, ":morale_penalty_for_size", 5),
+      (val_div, ":morale_penalty_for_size", ":level_total"),
+      
+      # the math works great for large numbers but not so great for small ones.
+      # if we get a value that's more than twice the size, min it to that.
+      (try_begin),
+         (store_mul, ":double", ":num_men", 2),
+         (gt, ":morale_penalty_for_size", ":double"),
+         (assign, ":morale_penalty_for_size", ":double"),
+      (try_end),
+
+      (assign, "$g_player_party_morale_modifier_party_size", ":morale_penalty_for_size"),
     
       (store_skill_level, ":player_leadership", "skl_leadership", "trp_player"),
       (store_mul, "$g_player_party_morale_modifier_leadership", ":player_leadership", 7),
