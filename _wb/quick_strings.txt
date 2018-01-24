@@ -1,4 +1,4 @@
-1572
+1575
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -631,6 +631,9 @@ qstr_DEBUG:_7_Hours_to_hi DEBUG:_7_Hours_to_hide
 qstr_DEBUG:_6_Hours_to_hi DEBUG:_6_Hours_to_hide
 qstr_DEBUG:_5_Hours_to_hi DEBUG:_5_Hours_to_hide
 qstr_Raiders Raiders
+qstr_have_won_the_sea_bat have_won_the_sea_battle,_demoralizing_your_troops._The_enemy_may_take_advantage_of_this_defeat_and_attack_more_frequently.
+qstr_loses_Faction_Strength loses_Faction_Strength_due_to_the_destructive_raid.
+qstr_loses_Faction_Strength_ loses_Faction_Strength_due_to_the_your_success_at_the_sea.
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
