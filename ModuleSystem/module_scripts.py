@@ -1373,6 +1373,7 @@ scripts = [
 	#(item_set_slot, "itm_lembas", slot_item_food_bonus, 20),
 	(item_set_slot, "itm_maggoty_bread", slot_item_food_bonus, 2),
 	(item_set_slot, "itm_cram", slot_item_food_bonus, 3),
+	(item_set_slot, "itm_horse_meat", slot_item_food_bonus, 5),
 
 	(call_script, "script_initialize_npcs"),
 
@@ -3592,7 +3593,8 @@ scripts = [
       (else_try),
 		#(store_and,reg20,":itp", itp_food), (neq, reg20,0),
 		#(eq,":itp", itp_food), 
-        (is_between, ":item_no", food_begin, food_end),
+        (this_or_next|is_between, ":item_no", food_begin, food_end),
+        (eq, ":item_no", "itm_horse_meat"),
         (try_begin),
           (eq, ":extra_text_id", 0),
           (assign, ":continue", 1),
@@ -9503,6 +9505,13 @@ scripts = [
         (item_get_slot, ":food_bonus", ":cur_edible", slot_item_food_bonus),
         (val_add, "$g_player_party_morale_modifier_food", ":food_bonus"),
       (try_end),
+      
+      (try_begin), #For Horse Meat
+      	(call_script, "script_cf_player_has_item_without_modifier", "itm_horse_meat", imod_rotten),
+        (item_get_slot, ":food_bonus", "itm_horse_meat", slot_item_food_bonus),
+        (val_add, "$g_player_party_morale_modifier_food", ":food_bonus"),
+      (try_end),
+
       (val_add, ":new_morale", "$g_player_party_morale_modifier_food"),
 
       (try_begin),
@@ -13979,7 +13988,8 @@ scripts = [
     (troop_get_inventory_capacity, ":capacity", "trp_player"),
     (try_for_range, ":cur_slot", 0, ":capacity"),
       (troop_get_inventory_slot, ":cur_item", "trp_player", ":cur_slot"),
-      (is_between, ":cur_item", food_begin, food_end),
+      (this_or_next|is_between, ":cur_item", food_begin, food_end),
+      (eq, ":cur_item", "itm_horse_meat"),
       (troop_get_inventory_slot_modifier, ":item_modifier", "trp_player", ":cur_slot"),
       #Kham - Orcs / Uruks eat rotten food
       (call_script, "script_are_there_orcs", "p_main_party"),
@@ -23133,7 +23143,7 @@ command_cursor_scripts = [
 
       (store_character_level, ":level", "trp_player"),
 
-      #Raider Party 1
+      #Raider Party
       (spawn_around_party, ":quest_target_center", ":raiders"),
       (assign, "$qst_raider_party_1", reg0),
       (party_add_template, "$qst_raider_party_1", ":raiders"),
