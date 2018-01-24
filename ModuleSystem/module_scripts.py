@@ -9457,7 +9457,7 @@ scripts = [
       (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
       (assign, ":level_total", 0),
       (assign, ":num_men", 0),
-      (try_for_range, ":i_stack", 1, ":num_stacks"),
+      (try_for_range, ":i_stack", 0, ":num_stacks"),
          (party_stack_get_troop_id, ":stack_troop","p_main_party", ":i_stack"),
          (store_character_level, ":level", ":stack_troop"),         
          (try_begin),
