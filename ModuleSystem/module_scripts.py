@@ -1906,7 +1906,7 @@ scripts = [
 	(try_end),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",3),
+    (assign,"$savegame_version",4),
 
 	] + (is_a_wb_script==1 and [
 
@@ -22686,6 +22686,11 @@ command_cursor_scripts = [
     	(lt,"$savegame_version",4),
 		(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI
     	(assign, "$savegame_version",4),
+    (try_end),
+    (try_begin), #Kham - Jan 2018
+    	(lt,"$savegame_version",5),
+    	(item_set_slot, "itm_horse_meat", slot_item_food_bonus, 5),
+    	(assign, "$savegame_version",5),
     (try_end),
 ]),
 

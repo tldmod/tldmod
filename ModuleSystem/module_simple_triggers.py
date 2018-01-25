@@ -1107,6 +1107,12 @@ simple_triggers = [
 		#NPC companion changes end
       (try_end),
     (try_end),
+
+    #Update Savegame for Horse Meat
+    (try_begin),
+      (lt, "$savegame_version", 5),
+      (call_script, "script_update_savegame"),
+    (try_end),
     ]),
 
 # (36) Setting item modifiers for food & Cannibalism Trigger (Kham)
