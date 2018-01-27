@@ -75,6 +75,8 @@ _fold_final_
 
 _fold_start_ '[Turning original shallow clone into a full one, this will take a while]'
     git fetch --unshallow
+    git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+    git fetch origin
 
 _fold_final_
 
