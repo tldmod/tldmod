@@ -2253,7 +2253,11 @@ ai_scripts = [
 		(val_add, ":cur_banner", 1), # marshall get royal flags (mtarini)
       (try_end),
 	  (store_random_in_range,":tmp",9,17),
-	  (party_add_members,"$pout_party",":guard",":tmp"), 
+	  (party_add_members,"$pout_party",":guard",":tmp"),
+    (try_begin),
+      (eq, ":troop_no", "trp_dwarf_lord"),
+      (assign, ":cur_banner", "icon_mfp_dwarf"),
+    (try_end),
 	  (party_set_banner_icon, "$pout_party", ":cur_banner"),
 	  (party_attach_to_party, "$pout_party", ":center_no"),
     
