@@ -1419,7 +1419,7 @@ scene_props = [
   ("gondor_wall_tower_small_E",0,"gondor_wall_tower_small","0", []),
 
 # evil gondor props
-("evil_gondor_short_tower",0,"gondor_short_tower_1_evil","0", []),
+("evil_gondor_short_tower",0,"gondor_short_tower_1_evil","bo_gondor_short_tower_1", []),
 ("evil_gondor_tower_1",0,"gondor_tower_1_evil","bo_gondor_tower_1", []),
 ("evil_gondor_tower_2",0,"gondor_tower_2_evil","bo_gondor_tower_2", []),
 ("evil_gondor_tower_3",0,"gondor_tower_3_evil","bo_gondor_tower_3", []),
@@ -2698,12 +2698,18 @@ scene_props = [
 ("morgul_gate_tower",0,"morgul_mt_gate_tower_evil","bo_mt_tower", []),
 ("morgul_gate_house",0,"morgul_mt_gate_house_evil","bo_mt_gate_house", [(ti_on_scene_prop_init,
             [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
-			 (else_try),                      (set_fog_distance,700,0x4DB08D),
+			 (else_try),                      (set_fog_distance,1000,0x10261E),
 			 (try_end),])]),
 ("morgul__gate",0,"morgul_gate","bo_morgul_gate", []),
-("morgul_short_tower",0,"morgul_short_tower","bo_mt_short_tower", []),	
+("morgul_short_tower",0,"morgul_short_tower","bo_morgul_short_tower", []),	
 ("morgul_tower_b_vp_E",0,"morgul_tower_b_color","0", []),
 ("morgul_stone_minaret_a",0,"morgul_stone_minaret_a","bo_stone_minaret_a", []),
+
+( "mordor_cliff_distant_3",0,"mordor_cliff_distant_3","bo_cliff_distant_3",[]),
+( "mordor_cliff_distant_1",0,"mordor_cliff_distant_1","bo_cliff_distant_1",[]),
+( "mordor_cliff_distant_6",0,"mordor_cliff_distant_6","bo_cliff_distant_6",[]),
+( "mordor_cliff_distant_7",0,"mordor_cliff_distant_7","bo_cliff_distant_7",[]),
+( "mordor_cliff_distant_8",0,"mordor_cliff_distant_8","bo_cliff_distant_8",[]),
 
 #InVain props end
 
