@@ -25,3 +25,4 @@ prsnt_tld_mod_options = 23
 prsnt_game_troop_tree = 24
 prsnt_troop_tree = 25
 prsnt_troop_detail = 26
+prsnt_display_agent_labels = 27

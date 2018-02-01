@@ -1919,6 +1919,7 @@ scripts = [
 	(assign, "$advanced_siege_ai",1), #Kham - Advanced Siege AI - default is ON
 	(assign, "$pref_cam_mode", 0), #Kham - Camera Preference - Default is Default
 	(assign, "$tld_spawn_battle_animals", 1), #Kham - Battle Animals
+	(assign, "$g_display_agent_labels",0), #Kham - Troop Labels for WB
 
 
 	#Custom Camera Initialize	

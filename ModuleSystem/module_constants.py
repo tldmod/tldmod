@@ -2394,5 +2394,9 @@ Troop_Tree_Line_Color = 0x000000
 Troop_Tree_Tableau_Height = 800
 Troop_Tree_Tableau_Width = Troop_Tree_Tableau_Height*Screen_Undistort_Width_Num/Screen_Undistort_Width_Den
 
-
+def sq(distance):
+  return distance * distance / 100 # get_sq_distance_between_positions always uses fixed point multiplier 100
+ 
+#Labels
+max_distance_to_see_labels = 1500
 

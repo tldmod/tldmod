@@ -1,4 +1,4 @@
-1575
+1580
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -118,6 +118,10 @@ qstr_Fallen_rider_damage_ Fallen_rider_damage_messages:__
 qstr_No_Messages No_Messages
 qstr_Player_damage_only Player_damage_only
 qstr_All_Messages All_Messages
+qstr_Show_Troop_Name_in_B Show_Troop_Name_in_Battles:__
+qstr_Disable Disable
+qstr_Enable_without_Facti Enable_without_Faction_Names
+qstr_Enable_with_Faction_ Enable_with_Faction_Names
 qstr_Preferred_Camera_Mod Preferred_Camera_Mode:__
 qstr_Default_Camera Default_Camera
 qstr_Free_Mode_Custom_Cam Free-Mode_Custom_Camera
@@ -128,6 +132,7 @@ qstr_Gameplay_Tweaks Gameplay_Tweaks
 qstr_War_Will_Start_at_Le War_Will_Start_at_Level_{reg0}
 qstr_Troop_Tree Troop_Tree
 qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)
+qstr_{s2}^{s3} {s2}^{s3}
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
