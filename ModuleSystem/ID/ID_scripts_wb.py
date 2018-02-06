@@ -625,5 +625,6 @@ script_troop_detail_update_dummy_gear_aux = 623
 script_troop_detail_change_screen = 624
 script_add_troop_to_cur_tableau_for_troop_detail_dummy = 625
 script_game_troop_upgrades_button_clicked = 626
+script_init_item_score = 627
 
 

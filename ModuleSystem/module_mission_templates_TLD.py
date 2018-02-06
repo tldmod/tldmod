@@ -2345,7 +2345,7 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
         (get_player_agent_no, ":player_agent"),
 		(try_for_agents,":troll"),									# horse rearing near troll
-			#(agent_is_alive, ":troll"), #GA: horses hate dead trolls too
+			(agent_is_alive, ":troll"), #GA: horses hate dead trolls too - Removed (kham)
 			(agent_get_troop_id,reg0,":troll"),
 			(try_begin), # CC: Change string if it is an ent and not a troll			
 				(assign, reg5, 0),

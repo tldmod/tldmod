@@ -248,7 +248,7 @@ field_ai_triggers = [
    # For mounted lancers and foot spears, affect their Decision on weapon use,
    # based on if closest 3 enemies are within 5 meters and if currently attacking/defending.
   
- [       
+ [    
   (try_for_agents, ":agent"), # Run through all active NPCs on the battle field.
      # Hasn't been defeated.
     (agent_is_alive, ":agent"),
@@ -275,6 +275,7 @@ field_ai_triggers = [
           (party_slot_eq, "p_main_party", slot_party_pref_wu_lance, 1),
           (agent_get_slot, ":lance", ":agent", slot_agent_lance),
           (gt, ":lance", 0),  # Lancer?
+
     
      # Get wielded item.
           (agent_get_wielded_item, ":wielded", ":agent", 0),
@@ -287,7 +288,7 @@ field_ai_triggers = [
                 (agent_set_slot, ":agent", slot_agent_lance, 0), # No longer a lancer
                 (eq, ":wielded", ":lance"), # Still using lance?
                   (try_begin),
-                      (eq, ":shield_order", 1),
+                      (gt, ":shield_order", 0),
                     (assign, ":inc_two_handers", 0),
                   (else_try),
                       (assign, ":inc_two_handers", 1),
@@ -307,7 +308,7 @@ field_ai_triggers = [
                     (gt, ":combat", 3), # Agent currently in combat? ...avoids switching before contact
                     (eq, ":wielded", ":lance"), # Still using lance?
                       (try_begin),
-                            (eq, ":shield_order", 1),
+                            (gt, ":shield_order", 0),
                           (assign, ":inc_two_handers", 0),
                       (else_try),
                             (assign, ":inc_two_handers", 1),
@@ -336,7 +337,7 @@ field_ai_triggers = [
                (agent_set_slot, ":agent", slot_agent_horsebow, 0), # No longer a horse archer
                (eq, ":wielded", ":bow"), # Still using bow?
                   (try_begin),
-                      (eq, ":shield_order", 1),
+                      (gt, ":shield_order", 0),
                       (assign, ":inc_two_handers", 0),
                   (else_try),
                       (assign, ":inc_two_handers", 1),
@@ -360,7 +361,7 @@ field_ai_triggers = [
             #(store_add, ":slot", slot_team_d0_formation, ":class"),
             #(team_slot_eq, ":team", ":slot", formation_none),     
             (agent_get_wielded_item, ":shield_order", ":agent",1),
-            (neq, ":shield_order", 1),
+            (lt, ":shield_order", 0),
       
             (agent_get_position, pos1, ":agent"), # Find distance of nearest 3 enemies
             (call_script, "script_get_closest3_distance_of_enemies_at_pos1", ":team", pos1),

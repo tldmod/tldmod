@@ -21,7 +21,7 @@ from module_scripts_common_warp import *
 from header_presentations import *
 
 from module_info import wb_compile_switch as is_a_wb_script
-
+from module_items import *
 
 ####################################################################################################################
 # scripts is a list of script records.
@@ -25622,4 +25622,7 @@ if is_a_wb_script==1:
       (store_script_param, reg0, 1),
       (start_presentation, "prsnt_game_troop_tree"),
   ]),
+
+  ("init_item_score", set_item_score()),
+  
 ]

@@ -1064,23 +1064,13 @@ triggers = [
 ]),
 	
 # TLD War beginning condition (player level >= 8 at the moment), GA
-(1, 0, 0,[	(eq,"$tld_war_began",0),
+(1, 0, 0,[	
+      (eq,"$tld_war_began",0),
 			(store_character_level,":level","trp_player"),
-      (try_begin),
-        (neq, tld_player_level_to_begin_war, "$tld_player_level_to_begin_war"),
-        (assign, ":custom", 1),
-      (else_try),
-        (assign, ":custom",0),
-      (try_end),
-      (try_begin),
-        (eq, ":custom",0),
-        (ge,":level",tld_player_level_to_begin_war),
-        (assign, ":continue",1),
-      (else_try),
-        (ge, ":level", "$tld_player_level_to_begin_war"),
-        (assign, ":continue", 1),
-      (try_end),
-      (eq, ":continue", 1),
+      # Completely Replace constant with Global Var, so that we reduce likelihood of misfire.
+      # Had the dual system here for savegame compat, but by this time, it should be safe. See Github for the old code.
+      (ge, ":level", "$tld_player_level_to_begin_war"),
+      
 	   ],[
 		(assign, "$tld_war_began",1),
 		(dialog_box,"@The dark shadow finally broke into a storm, and evil hordes started their march on the free people of Middle Earth. Mordor against Gondor in the South, Isengard agains Rohan in the West, Dol Guldur against the Elves... Even in the far North there is a war of its own.","@The War has started!"),

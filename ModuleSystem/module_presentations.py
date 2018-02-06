@@ -3482,6 +3482,7 @@ if wb_compile_switch==1:
 ("tld_mod_options", 0, mesh_load_window, [
 
     (ti_on_presentation_load, [
+        (try_begin), (lt, "$savegame_version",4),(call_script, "script_update_savegame"), (try_end),
         (presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
