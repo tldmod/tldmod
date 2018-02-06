@@ -1920,7 +1920,7 @@ scripts = [
 	(assign, "$pref_cam_mode", 0), #Kham - Camera Preference - Default is Default
 	(assign, "$tld_spawn_battle_animals", 1), #Kham - Battle Animals
 	(assign, "$g_display_agent_labels",0), #Kham - Troop Labels for WB
-
+	(assign, "$show_hide_labels", 1), #Kham - Toggle for Troop Labels
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	

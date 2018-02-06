@@ -3673,7 +3673,7 @@ if wb_compile_switch==1:
         (val_sub, ":y_pos", Screen_Text_Height),
 
         #Show Troop Name in Battles
-        (create_text_overlay, reg1, "@Show Troop Name in Battles:  ", tf_right_align, tf_double_space),
+        (create_text_overlay, reg1, "@Show Troop Name in Battles (Press O during battle to show/hide):", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
 
@@ -3797,6 +3797,10 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_14"),
           (assign, "$g_display_agent_labels", ":value"),
+          (try_begin),
+            (ge, ":value", 1),
+            (assign, "$show_hide_labels", 1),
+          (try_end),
         (else_try),
           (eq, ":object", "$tld_options_overlay_12",),
           (assign, "$pref_cam_mode", ":value"),
@@ -4174,7 +4178,8 @@ if wb_compile_switch==1:
      [(store_trigger_param_1, ":current_time"),
       (set_fixed_point_multiplier, 1000),
       (try_begin),
-        (eq, "$g_display_agent_labels", 0),
+        (this_or_next|eq, "$g_display_agent_labels", 0),
+        (eq, "$show_hide_labels", 0),
         (presentation_set_duration, 0),
       (else_try),
         (gt, ":current_time", "$g_presentation_agent_labels_update_time"),
