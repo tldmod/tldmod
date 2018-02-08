@@ -540,7 +540,7 @@ items =[
 ########GENERIC ORC ITEMS#####
 #next one unused:
 ["orc_chain_greaves","Orc_Greaves",[("orc_chain_greaves_lr",0)],itp_type_foot_armor|itp_shop,0,701,weight(3)|leg_armor(15)|difficulty(0),imodbits_orc_armor],
-["orc_coif","Orc_Skullcap",[("orc_skullcap_a",imodbits_orc_bad),("orc_skullcap_b",imodbits_orc_ok),("orc_skullcap_c",imodbits_orc_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,200,weight(2.3)|head_armor(12)|difficulty(0),imodbits_orc_armor],
+["orc_coif","Orc_Skullcap",[("orc_skullcap_a",imodbits_orc_bad),("orc_skullcap_b",imodbits_orc_ok),("orc_skullcap_c",imodbits_orc_good)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,200,weight(2.3)|head_armor(16)|difficulty(0),imodbits_orc_armor],
 ["orc_greaves","Orc_Chain_Boots",[("old_orc_chain_greave_lr",0)],itp_type_foot_armor|itp_shop,0,401,weight(3)|leg_armor(12)|difficulty(0),imodbits_orc_armor],
 ["orc_ragwrap","Orc_Ragwrap",[("orc_ragwrap_lr",0)],itp_type_foot_armor|itp_shop,0,11,weight(1)|leg_armor(3)|difficulty(0),imodbits_orc_cloth],
 ["orc_furboots","Orc_Fur_Boots",[("orc_furboot_lr",0)],itp_type_foot_armor|itp_shop,0,201,weight(3)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
@@ -656,17 +656,17 @@ items =[
 ["mordor_man_shield_b","Mordor_Man_Shield",[("mordor_man_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,100,weight(3)|hit_points(310)|body_armor(5)|spd_rtng(96)|weapon_length(40),imodbits_shield,],
 ["angmar_shield","Angmar_Shield",[("angmar_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,3000,weight(4)|hit_points(1600)|body_armor(20)|spd_rtng(96)|weapon_length(40),0,],
 #### Generic orc helmets #free Feb 2018
-["orc_helm_a","Orc_Nosehelm",[("orc_helm_nose_b",imodbits_orc_ok),("orc_helm_nose_a",imodbits_orc_bad),("orc_helm_nose_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,300,weight(2)|head_armor(14)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_b","Orc_Kettlehelm",[("orc_helm_kettle_b",imodbits_orc_ok),("orc_helm_kettle_a",imodbits_orc_bad),("orc_helm_kettle_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,350,weight(2.5)|head_armor(22)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_c","Orc_Buckethelm",[("orc_helm_sallet_b",imodbits_orc_ok),("orc_helm_sallet_a",imodbits_orc_bad),("orc_helm_sallet_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_d","Orc_Morion",[("orc_helm_morion_b",imodbits_orc_ok),("orc_helm_morion_a",imodbits_orc_bad),("orc_helm_morion_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,350,weight(2.5)|head_armor(22)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_e","Orc_Beakhelm",[("orc_helm_vulture_b",imodbits_orc_ok),("orc_helm_vulture_a",imodbits_orc_bad),("orc_helm_vulture_c",imodbits_orc_good),("orc_helm_crow",imodbit_masterwork)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked |imodbit_masterwork],
-["orc_helm_f","Orc_Bughelm",[("orc_helm_bug_b",imodbits_orc_ok),("orc_helm_bug_a",imodbits_orc_bad),("orc_helm_bug_c",imodbits_orc_good),("orc_helm_bug_d",imodbit_masterwork)],itp_type_head_armor|itp_shop,0,500,weight(3)|head_armor(24)|difficulty(0),imodbits_orc_armor | imodbit_cracked| imodbit_masterwork],
-["orc_helm_g","oldOrc_Crowhelm",[("orc_helm_crow",0)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_h","Orc_Visorhelm",[("orc_helm_visor_b",imodbits_orc_ok),("orc_helm_visor_a",imodbits_orc_bad),("orc_helm_visor_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,500,weight(3)|head_armor(24)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_i","oldOrc_Snouthelm",[("orc_helm_sallet_b",0)],itp_type_head_armor|itp_shop,0,600,weight(3)|head_armor(25)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_j","oldOrc_Lizardhelm",[("orc_helm_visor_b",0)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
-["orc_helm_k","oldOrc_Vulturehelm",[("orc_helm_vulture_b",0)],itp_type_head_armor|itp_shop,0,500,weight(3)|head_armor(24)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["orc_nosehelm","Orc_Nosehelm",[("orc_helm_nose_b",imodbits_orc_ok),("orc_helm_nose_a",imodbits_orc_bad),("orc_helm_nose_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,300,weight(2)|head_armor(18)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["orc_kettlehelm","Orc_Kettlehelm",[("orc_helm_kettle_b",imodbits_orc_ok),("orc_helm_kettle_a",imodbits_orc_bad),("orc_helm_kettle_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,350,weight(2.5)|head_armor(22)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["orc_buckethelm","Orc_Buckethelm",[("orc_helm_sallet_b",imodbits_orc_ok),("orc_helm_sallet_a",imodbits_orc_bad),("orc_helm_sallet_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,600,weight(3)|head_armor(25)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["orc_morion","Orc_Morion",[("orc_helm_morion_b",imodbits_orc_ok),("orc_helm_morion_a",imodbits_orc_bad),("orc_helm_morion_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,350,weight(2.5)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["orc_beakhelm","Orc_Beakhelm",[("orc_helm_vulture_b",imodbits_orc_ok),("orc_helm_vulture_a",imodbits_orc_bad),("orc_helm_vulture_c",imodbits_orc_good),("orc_helm_crow",imodbit_masterwork)],itp_type_head_armor|itp_shop,0,500,weight(3)|head_armor(24)|difficulty(0),imodbits_orc_armor | imodbit_cracked |imodbit_masterwork],
+["orc_bughelm","Orc_Bughelm",[("orc_helm_bug_b",imodbits_orc_ok),("orc_helm_bug_a",imodbits_orc_bad),("orc_helm_bug_c",imodbits_orc_good),("orc_helm_bug_d",imodbit_masterwork)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(25)|difficulty(0),imodbits_orc_armor | imodbit_cracked| imodbit_masterwork],
+["orc_visorhelm","Orc_Visorhelm",[("orc_helm_visor_b",imodbits_orc_ok),("orc_helm_visor_a",imodbits_orc_bad),("orc_helm_visor_c",imodbits_orc_good)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(24)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["free_orc_helm_g","oldOrc_Crowhelm",[("orc_helm_crow",0)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["free_orc_helm_i","oldOrc_Snouthelm",[("orc_helm_sallet_b",0)],itp_type_head_armor|itp_shop,0,600,weight(3)|head_armor(25)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["free_orc_helm_j","oldOrc_Lizardhelm",[("orc_helm_visor_b",0)],itp_type_head_armor|itp_shop,0,400,weight(3)|head_armor(23)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
+["free_orc_helm_k","oldOrc_Vulturehelm",[("orc_helm_vulture_b",0)],itp_type_head_armor|itp_shop,0,500,weight(3)|head_armor(24)|difficulty(0),imodbits_orc_armor | imodbit_cracked],
 #TLD MORDOR ITEMS##########
 ###ORC ARMORS##########
 ["m_orc_light_a","Mordor_Orc_Light_Armor",[("orc_mordor_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,101,weight(1.5)|head_armor(0)|body_armor(5)|leg_armor(3)|difficulty(0),imodbits_orc_cloth,],

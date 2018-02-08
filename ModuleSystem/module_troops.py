@@ -429,10 +429,24 @@ itm_dwarf_helm_sallet_lordly = (itm_dwarf_helm_sallet, imod_lordly)
 itm_dwarf_helm_king_NPC = (itm_witchking_helmet, imod_old)
 
 #Orc helm variants
-itm_orc_helm_g = (itm_orc_helm_e, imod_lordly)
-itm_orc_helm_i = (itm_orc_helm_c, imod_plain)
-itm_orc_helm_j = (itm_orc_helm_h, imod_plain)
-itm_orc_helm_k = (itm_orc_helm_e, imod_plain)
+itm_orc_coif_good = (itm_orc_coif, imod_reinforced)
+itm_orc_coif_bad = (itm_orc_coif, imod_cracked)
+itm_orc_nosehelm_good = (itm_orc_nosehelm, imod_reinforced)
+itm_orc_nosehelm_bad = (itm_orc_nosehelm, imod_cracked)
+itm_orc_kettlehelm_good = (itm_orc_kettlehelm, imod_reinforced)
+itm_orc_kettlehelm_bad = (itm_orc_kettlehelm, imod_cracked)
+itm_orc_buckethelm_good = (itm_orc_buckethelm, imod_reinforced)
+itm_orc_buckethelm_bad = (itm_orc_buckethelm, imod_cracked)
+itm_orc_morion_good = (itm_orc_morion, imod_reinforced)
+itm_orc_morion_bad = (itm_orc_morion, imod_cracked)
+itm_orc_beakhelm_good = (itm_orc_beakhelm, imod_reinforced)
+itm_orc_beakhelm_bad = (itm_orc_beakhelm, imod_cracked)
+itm_orc_beakhelm_lordly = (itm_orc_beakhelm, imod_lordly)
+itm_orc_bughelm_good = (itm_orc_bughelm, imod_reinforced)
+itm_orc_bughelm_bad = (itm_orc_bughelm, imod_cracked)
+itm_orc_bughelm_lordly = (itm_orc_bughelm, imod_lordly)
+itm_orc_visorhelm_good = (itm_orc_visorhelm, imod_reinforced)
+itm_orc_visorhelm_bad = (itm_orc_visorhelm, imod_cracked)
 
 
 #Rohan armour variants
@@ -1422,7 +1436,7 @@ troops = [
       0,0,0,0],
 #Isengard
 ["orc_snaga_of_isengard","Orc_Snaga_of_Isengard","Orc_Snagas_of_Isengard",tf_orc| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_wood_club,itm_orc_simple_spear,itm_orc_slasher,itm_orc_axe,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
+   [itm_orc_coif_bad,itm_orc_coif,itm_isen_orc_armor_a,itm_isen_orc_armor_b,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_wood_club,itm_orc_simple_spear,itm_orc_slasher,itm_orc_axe,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3|knows_power_throw_1|knows_power_strike_1,orc_face1,orc_face2],
 ["orc_of_isengard","Orc_of_Isengard","Orcs_of_Isengard",tf_orc| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_ragwrap,itm_isen_orc_armor_c,itm_isen_orc_armor_d,itm_isen_orc_helm_a,itm_isen_orc_helm_b,itm_isen_orc_shield_a,itm_orc_slasher,itm_orc_falchion,itm_orc_machete,itm_isengard_sword,itm_isengard_hammer,itm_isengard_spear,itm_isengard_spear,itm_wood_club,itm_orc_simple_spear,itm_orc_bill,itm_orc_bill,itm_orc_axe,],
@@ -1557,81 +1571,81 @@ troops = [
       str_255| agi_3| int_3| cha_3|level(63),wp(200),knows_power_strike_10|knows_ironflesh_10,troll_face1,troll_face2],
 # Dol Guldur Orcs(duplicates of Mordor orcs!)
 ["orc_snaga_of_guldur","Orc_Snaga_of_Guldur","Orc_Snagas_of_Guldur",tf_orc| tf_no_capture_alive,0,0,fac_guldur,
-   [itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_wood_club,itm_orc_machete,itm_orc_simple_spear,itm_orc_axe,itm_orc_helm_a,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
+   [itm_orc_coif_bad, itm_orc_coif,itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_wood_club,itm_orc_machete,itm_orc_simple_spear,itm_orc_axe,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3|knows_power_strike_1,orc_face5,orc_face4],
 ["orc_of_guldur","Orc_of_Guldur","Orcs_of_Guldur",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_guldur,
-   [itm_orc_ragwrap,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_wood_club,itm_orc_club_c,itm_orc_falchion,itm_orc_sabre,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_mordor_orc_shield_a,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,itm_orc_helm_e,],
+   [itm_orc_coif, itm_orc_coif_good, itm_orc_nosehelm_bad, itm_orc_nosehelm, itm_orc_ragwrap,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_wood_club,itm_orc_club_c,itm_orc_falchion,itm_orc_sabre,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_mordor_orc_shield_a,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4|knows_power_strike_2,orc_face3,orc_face8],
 #Mordor Orcs
 ["orc_snaga_of_mordor","Orc_Snaga_of_Mordor","Orc_Snagas_of_Mordor",tf_orc| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_ragwrap,itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_wood_club,itm_orc_machete,itm_orc_axe,itm_orc_helm_a,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
+   [itm_orc_coif_bad, itm_orc_coif, itm_orc_nosehelm_bad,itm_orc_ragwrap,itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_wood_club,itm_orc_machete,itm_orc_axe,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3|knows_power_strike_1,orc_face1,orc_face2],
 ["orc_of_mordor","Orc_of_Mordor","Orcs_of_Mordor",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_ragwrap,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_wood_club,itm_orc_falchion,itm_orc_sabre,itm_orc_slasher,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_mordor_orc_shield_a,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,itm_orc_helm_e,],
+   [itm_orc_coif_bad, itm_orc_coif, itm_orc_nosehelm, itm_orc_nosehelm_bad, itm_orc_visorhelm_bad, itm_orc_ragwrap,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_wood_club,itm_orc_falchion,itm_orc_sabre,itm_orc_slasher,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_mordor_orc_shield_a,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4|knows_power_strike_2,orc_face7,orc_face8],
 ["large_orc_of_mordor","Large_Orc_of_Mordor","Large_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_greaves,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_slasher,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_orc_throwing_arrow,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,itm_orc_helm_i,],
+   [itm_orc_nosehelm_good,itm_orc_kettlehelm_bad, itm_orc_kettlehelm, itm_orc_morion_bad, itm_orc_morion, itm_orc_visorhelm, itm_orc_greaves,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_slasher,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_orc_throwing_arrow,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_3|knows_power_throw_3,orc_face3,orc_face6],
 ["fell_orc_of_mordor","Fell_Orc_of_Mordor","Fell_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_greaves,itm_evil_gauntlets_a,itm_orc_throwing_axes,itm_orc_throwing_arrow,itm_m_orc_heavy_b,itm_m_orc_heavy_c,itm_m_orc_heavy_d,itm_m_orc_heavy_e,itm_orc_club_c,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_twohand_wood_club,itm_orc_scimitar,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_mordor_orc_shield_e,itm_orc_helm_h,itm_orc_helm_i,itm_orc_helm_j,itm_orc_helm_k,],
+   [itm_orc_visorhelm_good, itm_orc_buckethelm_bad, itm_orc_buckethelm, itm_orc_kettlehelm_good,itm_orc_greaves,itm_evil_gauntlets_a,itm_orc_throwing_axes,itm_orc_throwing_arrow,itm_m_orc_heavy_b,itm_m_orc_heavy_c,itm_m_orc_heavy_d,itm_m_orc_heavy_e,itm_orc_club_c,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_twohand_wood_club,itm_orc_scimitar,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_mordor_orc_shield_e,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_6|knows_power_strike_4|knows_power_throw_4,orc_face7,orc_face4],
 ["warg_rider_of_gorgoroth","Warg_Rider_of_Gorgoroth","Warg_Riders_of_Gorgoroth",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_orc_throwing_arrow,itm_orc_falchion,itm_orc_sabre,itm_orc_machete,itm_wargarmored_1b,itm_warg_1b,itm_warg_1d,itm_warg_1c,],
-      attr_orc_tier_3,wp_orc_tier_3,knows_horse_archery_3|knows_riding_4|knows_power_throw_3|knows_power_strike_4,orc_face5,orc_face8],
+   [itm_orc_coif_bad, itm_orc_coif, itm_orc_nosehelm_bad, itm_orc_nosehelm,itm_orc_visorhelm_bad,itm_m_orc_light_a,itm_m_orc_light_b,itm_m_orc_light_c,itm_orc_throwing_arrow,itm_orc_falchion,itm_orc_sabre,itm_orc_machete,itm_wargarmored_1b,itm_warg_1b,itm_warg_1d,itm_warg_1c,],
+      attr_orc_tier_3,wp_orc_tier_3,knows_horse_archery_2|knows_riding_4|knows_power_throw_3|knows_power_strike_4,orc_face5,orc_face8],
 ["great_warg_rider_of_mordor","Great_Warg_Rider_of_Udun","Great_Warg_Riders_of_Udun",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_throwing_arrow,itm_orc_falchion,itm_orc_sabre,itm_orc_machete,itm_orc_slasher,itm_wargarmored_2b,itm_wargarmored_2c,itm_wargarmored_3a,itm_wargarmored_2b,],
-      attr_orc_tier_4,wp_orc_tier_4,knows_riding_5|knows_horse_archery_4|knows_power_throw_4|knows_power_strike_4,orc_face7,orc_face8],
+   [itm_orc_visorhelm, itm_orc_nosehelm, itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_throwing_arrow,itm_orc_falchion,itm_orc_sabre,itm_orc_machete,itm_orc_slasher,itm_wargarmored_2b,itm_wargarmored_2c,itm_warg_1d,itm_warg_1c,],
+      attr_orc_tier_4,wp_orc_tier_4,knows_riding_5|knows_horse_archery_3|knows_power_throw_4|knows_power_strike_4,orc_face7,orc_face8],
 ["morgul_orc","Morgul_Orc","Morgul_Orcs",tf_orc| tfg_armor| tfg_boots|tfg_polearm| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_ragwrap,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_simple_spear,itm_wood_club,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_orc_machete,itm_mordor_orc_shield_c,itm_mordor_orc_shield_d,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,itm_orc_helm_e,],
+   [itm_orc_kettlehelm_bad,itm_orc_morion_bad,itm_orc_visorhelm_bad,itm_orc_ragwrap,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_simple_spear,itm_wood_club,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_orc_machete,itm_mordor_orc_shield_c,itm_mordor_orc_shield_d,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_5|knows_power_strike_3,orc_face5,orc_face4],
 ["fell_morgul_orc","Fell_Morgul_Orc","Fell_Morgul_Orcs",tf_orc| tfg_armor| tfg_helm| tfg_boots|tfg_polearm| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_heavy_b,itm_m_orc_heavy_c,itm_m_orc_heavy_d,itm_m_orc_heavy_e,itm_orc_skull_spear,itm_orc_slasher,itm_orc_machete,itm_orc_bill,itm_mordor_orc_shield_d,itm_mordor_orc_shield_e,itm_orc_helm_g,itm_orc_helm_h,itm_orc_helm_i,itm_orc_helm_j,itm_orc_helm_k,],
+   [itm_orc_kettlehelm_good, itm_orc_morion_good, itm_orc_buckethelm_good,itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_heavy_b,itm_m_orc_heavy_c,itm_m_orc_heavy_d,itm_m_orc_heavy_e,itm_orc_skull_spear,itm_orc_slasher,itm_orc_machete,itm_orc_bill,itm_mordor_orc_shield_d,itm_mordor_orc_shield_e,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_6|knows_shield_1|knows_power_strike_4,orc_face5,orc_face4],
 ["orc_tracker_of_mordor","Orc_Tracker_of_Mordor","Orc_Trackers_of_Mordor",tf_orc| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_light_b,itm_m_orc_light_c,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_falchion,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,itm_orc_helm_e,],
+   [itm_orc_coif_bad, itm_orc_nosehelm_bad,itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_light_b,itm_m_orc_light_c,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_falchion,],
       attr_orc_tier_3,wp_archery(110)|wp(100),knows_riding_1|knows_athletics_5|knows_power_draw_4|knows_power_strike_2,orc_face9,orc_face4],
 ["fell_orc_tracker_of_mordor","Fell_Orc_Tracker_of_Mordor","Fell_Orc_Trackers_of_Mordor",tf_orc| tfg_ranged| tfg_helm| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_furboots,itm_leather_gloves,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_light_c,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,],
+   [itm_orc_coif, itm_orc_nosehelm, itm_orc_furboots,itm_leather_gloves,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_light_c,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,],
       attr_orc_tier_4,wp_archery(135)| wp(110),knows_riding_1|knows_athletics_6|knows_power_draw_5|knows_power_strike_2,orc_face1,orc_face4],
 ["orc_archer_of_mordor","Orc_Archer_of_Mordor","Orc_Archers_of_Mordor",tf_orc| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_bow,itm_orc_hook_arrow,itm_wood_club,itm_orc_helm_a,itm_orc_helm_b,itm_orc_helm_c,],
+   [itm_orc_coif_bad, itm_orc_nosehelm_bad,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_bow,itm_orc_hook_arrow,itm_wood_club,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,orc_face7,orc_face6],
 ["large_orc_archer_of_mordor","Large_Orc_Archer_of_Mordor","Large_Orc_Archers_of_Mordor",tf_orc| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_falchion,itm_orc_helm_b,itm_orc_helm_c,itm_orc_helm_d,itm_orc_helm_e,],
+   [itm_orc_kettlehelm_bad, itm_orc_coif, itm_orc_nosehelm, itm_orc_ragwrap,itm_leather_gloves,itm_m_orc_light_b,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_falchion,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_3|knows_power_draw_3|knows_power_strike_2,orc_face9,orc_face4],
 ["fell_orc_archer_of_mordor","Fell_Orc_Archer_of_Mordor","Fell_Orc_Archers_of_Mordor",tf_orc| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_greaves,itm_evil_gauntlets_b,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,],
+   [itm_orc_kettlehelm, itm_orc_coif_good, itm_orc_buckethelm_bad, itm_orc_greaves,itm_evil_gauntlets_b,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_4|knows_power_draw_4|knows_power_strike_2,orc_face7,orc_face6],
 #Moria + tribal orc chief below
 ["wolf_rider_of_moria","Wolf_Rider_of_Moria","Wolf_Riders_of_Moria",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_sabre,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_falchion,itm_orc_simple_spear,itm_wood_club,itm_warg_1d,itm_warg_1b,itm_warg_1c,itm_orc_shield_b,itm_orc_shield_a],
+   [itm_orc_nosehelm_bad,itm_orc_sabre,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_falchion,itm_orc_simple_spear,itm_wood_club,itm_moria_armor_a,itm_moria_armor_b,itm_warg_1d,itm_warg_1b,itm_warg_1c,itm_orc_shield_b,itm_orc_shield_a],
       str_7| agi_7| int_4| cha_4|level(7),wp_orc_tier_2,knows_riding_3|knows_power_throw_2|knows_power_strike_2|knows_horse_archery_2,orc_face5,orc_face2],
 ["warg_rider_of_moria","Warg_Rider_of_Moria","Warg_Riders_of_Moria",tf_orc| tf_mounted| tfg_ranged| tfg_armor| tfg_horse| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_sabre,itm_orc_sabre,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_sabre,itm_orc_simple_spear,itm_moria_armor_a,itm_warg_1d,itm_warg_1d,itm_warg_1b,itm_warg_1c,itm_orc_ragwrap,itm_orc_shield_b,itm_orc_shield_a],
+   [itm_orc_bughelm_bad, itm_orc_nosehelm, itm_orc_beakhelm_bad, itm_orc_sabre,itm_orc_sabre,itm_orc_throwing_arrow,itm_orc_scimitar,itm_orc_sabre,itm_orc_simple_spear,itm_moria_armor_a,itm_moria_armor_b,itm_moria_armor_c,itm_warg_1d,itm_warg_1d,itm_warg_1b,itm_warg_1c,itm_orc_ragwrap,itm_orc_shield_b,itm_orc_shield_a],
       str_9| agi_8| int_4| cha_4|level(12),wp_orc_tier_3,knows_riding_3|knows_power_throw_3|knows_power_strike_4|knows_horse_archery_3,orc_face9,orc_face8],
 ["bolg_clan_rider","Bolg_Clan_Rider","Bolg_Clan_Riders",tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_sabre,itm_orc_scimitar,itm_orc_simple_spear,itm_orc_skull_spear, itm_uruk_spear,itm_orc_throwing_arrow,itm_orc_ragwrap,itm_wargarmored_2b,itm_wargarmored_2c,itm_wargarmored_3a,itm_moria_armor_a,itm_moria_armor_b,itm_gundabad_helm_e,itm_moria_orc_shield_c,],
+   [itm_orc_bughelm, itm_orc_bughelm_good, itm_orc_beakhelm, itm_orc_sabre,itm_orc_scimitar,itm_orc_simple_spear,itm_orc_skull_spear, itm_uruk_spear,itm_orc_throwing_arrow,itm_orc_ragwrap,itm_wargarmored_2b,itm_wargarmored_2c,itm_wargarmored_3a,itm_moria_armor_c,itm_moria_armor_d,itm_gundabad_helm_e,itm_moria_orc_shield_c,],
       str_11| agi_9| int_4| cha_4|level(17),wp_orc_tier_4,knows_riding_4|knows_power_throw_4|knows_power_strike_4|knows_horse_archery_5,orc_face5,orc_face4],
 ["snaga_of_moria","Snaga_of_Moria","Snagas_of_Moria",tf_orc| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_helm_b,itm_orc_helm_d,itm_orc_sabre,itm_moria_armor_a,itm_moria_armor_b,itm_orc_falchion,itm_orc_scimitar,itm_orc_machete,itm_orc_axe,itm_wood_club,itm_orc_shield_a],
+   [itm_orc_coif_bad, itm_orc_nosehelm_bad,itm_orc_sabre,itm_moria_armor_a,itm_moria_armor_b,itm_orc_falchion,itm_orc_scimitar,itm_orc_machete,itm_orc_axe,itm_wood_club,itm_orc_shield_a],
       attr_orc_tier_1,wp_orc_tier_1,knows_athletics_3|knows_power_strike_1,orc_face4,orc_face9],
 ["goblin_of_moria","Goblin_of_Moria","Goblins_of_Moria",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_sabre,itm_orc_falchion,itm_orc_scimitar,itm_moria_armor_b,itm_moria_armor_c,itm_moria_armor_b,itm_orc_simple_spear,itm_moria_orc_shield_b,itm_orc_shield_b,itm_orc_shield_a,itm_orc_helm_b,itm_orc_helm_d,itm_orc_helm_e,],
+   [itm_orc_nosehelm, itm_orc_bughelm_bad, itm_orc_beakhelm_bad,itm_orc_sabre,itm_orc_falchion,itm_orc_scimitar,itm_moria_armor_b,itm_moria_armor_c,itm_moria_armor_b,itm_orc_simple_spear,itm_moria_orc_shield_b,itm_orc_shield_b,itm_orc_shield_a,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4|knows_power_strike_3,orc_face9,orc_face2],
 ["large_goblin_of_moria","Large_Goblin_of_Moria","Large_Goblins_of_Moria",tf_orc| tfg_shield| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_throwing_axes,itm_orc_sabre,itm_orc_scimitar,itm_moria_armor_d,itm_moria_armor_c,itm_orc_simple_spear,itm_moria_orc_shield_c,itm_moria_orc_shield_b,itm_moria_armor_d,itm_orc_helm_g,itm_orc_helm_h,itm_orc_helm_j,itm_orc_helm_k,itm_orc_bill,],
+   [itm_orc_bughelm, itm_orc_beakhelm, itm_orc_throwing_axes,itm_orc_sabre,itm_orc_scimitar,itm_moria_armor_d,itm_moria_armor_c,itm_orc_simple_spear,itm_moria_orc_shield_c,itm_moria_orc_shield_b,itm_moria_armor_d,itm_orc_bill,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_4,orc_face3,orc_face8],
 ["fell_goblin_of_moria","Fell_Goblin_of_Moria","Fell_Goblins_of_Moria",tf_orc| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_moria,
-   [itm_isengard_axe,itm_orc_slasher,itm_orc_throwing_axes,itm_moria_orc_shield_b,itm_moria_armor_e,itm_orc_helm_g,itm_orc_helm_h,itm_orc_helm_j,itm_orc_helm_k,itm_orc_greaves,itm_moria_orc_shield_c,],
+   [itm_orc_bughelm_good, itm_orc_beakhelm_good, itm_isengard_axe,itm_orc_slasher,itm_orc_throwing_axes,itm_moria_orc_shield_b,itm_moria_armor_e,itm_orc_greaves,itm_moria_orc_shield_c,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_6|knows_power_draw_2|knows_power_throw_3|knows_power_strike_4,orc_face1,orc_face6],
 ["archer_snaga_of_moria","Goblin_Archer_of_Moria","Goblin_Archers_of_Moria",tf_orc| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_slasher,itm_orc_falchion,itm_orc_bow,itm_orc_hook_arrow,itm_moria_armor_b,itm_orc_helm_b,],
+   [itm_orc_bughelm_bad, itm_orc_beakhelm_bad, itm_orc_slasher,itm_orc_falchion,itm_orc_bow,itm_orc_hook_arrow,itm_moria_armor_b,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,orc_face9,orc_face6],
 ["large_goblin_archer_of_moria","Large_Goblin_Archer_of_Moria","Large_Goblin_Archers_of_Moria",tf_orc| tfg_ranged| tfg_boots| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_slasher,itm_orc_falchion,itm_orc_bow,itm_orc_hook_arrow,itm_leather_gloves,itm_moria_armor_c,itm_moria_armor_b,itm_moria_armor_c,itm_orc_helm_b,itm_orc_ragwrap,itm_orc_helm_e,],
+   [itm_orc_bughelm_bad, itm_orc_bughelm, itm_orc_beakhelm, itm_orc_slasher,itm_orc_falchion,itm_orc_bow,itm_orc_hook_arrow,itm_leather_gloves,itm_moria_armor_c,itm_moria_armor_b,itm_moria_armor_c,itm_orc_ragwrap,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_3|knows_power_draw_3|knows_power_strike_2,orc_face5,orc_face6],
 ["deep_dweller_of_moria","Deep-Dweller_of_Moria","Deep-Dwellers_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,
-   [itm_orc_club_d,itm_dwarf_war_pick,itm_orc_javelin,itm_orc_javelin,itm_orc_greaves,itm_orc_helm_f,itm_orc_helm_f,itm_orc_helm_h,itm_uruk_helm_e,itm_uruk_helm_f,itm_moria_armor_e,itm_moria_orc_shield_a,itm_moria_orc_shield_b,itm_moria_orc_shield_c],
+   [itm_orc_club_d,itm_dwarf_war_pick,itm_orc_javelin,itm_orc_javelin,itm_orc_greaves,itm_orc_bughelm_lordly,itm_orc_bughelm_lordly,itm_uruk_helm_e,itm_uruk_helm_f,itm_moria_armor_e,itm_moria_orc_shield_a,itm_moria_orc_shield_b,itm_moria_orc_shield_c],
       attr_orc_tier_5,wp_orc_tier_5,knows_athletics_6|knows_power_strike_6|knows_power_throw_5|knows_ironflesh_5,orc_face5,orc_face4],
 ["moria_items","BUG","BUG",tf_hero,0,0,fac_moria,
    [itm_warg_1b,itm_warg_1c,itm_warg_1d,itm_gundabad_helm_a,itm_gundabad_helm_b,itm_gundabad_helm_c,itm_gundabad_helm_d,itm_moria_orc_shield_c,itm_orc_scimitar,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
@@ -1680,7 +1694,7 @@ troops = [
    [itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_wood_club,itm_twohand_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4,orc_face7,orc_face6],
 ["tribal_orc_chief","Orc_Chieftain_of_Moria","Orc_Chieftains_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,
-   [itm_m_uruk_heavy_g,itm_m_uruk_heavy_h,itm_m_uruk_heavy_i,itm_uruk_helm_c,itm_uruk_helm_d,itm_uruk_helm_f,itm_orc_helm_f,itm_uruk_greaves, itm_orc_greaves, itm_rhun_falchion,itm_rhun_shortsword,itm_rhun_sword, itm_orc_skull_spear,itm_uruk_spear, itm_moria_orc_shield_a, (itm_orc_shield_c, imod_reinforced)],
+   [itm_m_uruk_heavy_g,itm_m_uruk_heavy_h,itm_m_uruk_heavy_i,itm_orc_beakhelm_lordly,itm_uruk_helm_c,itm_uruk_helm_d,itm_uruk_helm_f,itm_uruk_greaves, itm_orc_greaves, itm_rhun_falchion,itm_rhun_shortsword,itm_rhun_sword, itm_orc_skull_spear,itm_uruk_spear, itm_moria_orc_shield_a, (itm_orc_shield_c, imod_reinforced)],
       attr_orc_tier_5,wp_orc_tier_5,knows_athletics_7|knows_power_strike_7|knows_ironflesh_10,orc_face5,orc_face4],
 #Numenorean
 ["black_numenorean_renegade","Black_Numenorean_Renegade","Black_Numenorean_Renegades",tf_evil_man| tfg_armor| tfg_boots,0,0,fac_mordor,
@@ -2096,7 +2110,7 @@ troops = [
    [itm_isen_orc_armor_a,itm_wood_club,itm_orc_throwing_arrow,itm_warg_1d,],
       str_12|agi_11|int_11|cha_4|level(10),wp(90),knows_riding_3|knows_power_throw_2|knows_power_strike_2|knows_ironflesh_3|knows_weapon_master_3|knows_spotting_2|knows_pathfinding_4|knows_tracking_1,0x00000001a2000007399e8ccc9cae34e500000000001d16ad0000000000000000],
 ["npc11","Ufthak","_",tf_orc| tf_hero| tf_unmoveable_in_party_window,0,0,fac_mordor,
-   [itm_m_orc_light_a,itm_orc_ragwrap,itm_wood_club,itm_orc_simple_spear,itm_orc_helm_a,],
+   [itm_m_orc_light_a,itm_orc_ragwrap,itm_wood_club,itm_orc_simple_spear,],
       str_13|agi_8|int_4|cha_4|level(1),wp(75),knows_athletics_2|knows_power_strike_1|knows_ironflesh_1,orc_face6],
 ["npc12","Gorbag","_",tf_uruk| tf_hero| tf_unmoveable_in_party_window,0,0,fac_mordor,
    [itm_m_uruk_heavy_e,itm_uruk_tracker_boots,itm_orc_two_handed_axe,itm_uruk_pike_b,itm_uruk_helm_b,],
@@ -2108,7 +2122,7 @@ troops = [
    [itm_umb_armor_a,itm_corsair_boots,itm_umb_shield_a,itm_corsair_throwing_dagger,itm_umbar_rapier,],
       str_10|agi_9|int_7|cha_7|level(5),wp(80),knows_athletics_1|knows_power_throw_2|knows_power_strike_1|knows_trade_2|knows_looting_2,0x00000001b70032453add7524dc76d74900000000001d35330000000000000000],
 ["npc15","Bolzog","_",tf_orc| tf_hero| tf_unmoveable_in_party_window,0,0,fac_moria,
-   [itm_moria_armor_a,itm_orc_helm_b,itm_orc_machete,orc_face_normal],
+   [itm_moria_armor_a,itm_orc_machete,orc_face_normal],
       str_9|agi_10|int_12|cha_4|level(7),wp(80),knows_athletics_2|knows_power_throw_1|knows_power_strike_1|knows_ironflesh_1|knows_wound_treatment_2|knows_first_aid_2|knows_surgery_1,0x00000001ab00200d35627276a42e150c00000000001dca2c0000000000000000],
 ["npc16","Varfang","_",tf_mounted| tf_hero| tf_unmoveable_in_party_window,0,0,fac_rhun,
    [itm_rhun_armor_a,itm_furry_boots,itm_rhun_sword,itm_light_lance,itm_rhun_helm_g,itm_tab_shield_small_round_b,itm_rhun_horse_a,],
@@ -2161,7 +2175,7 @@ troops = [
    [itm_mirkwood_armor_f,itm_mirkwood_leather_greaves,itm_leather_gloves,itm_riv_tiara,itm_mirkwood_bow,itm_woodelf_arrows,itm_mirkwood_sword,itm_mirkwood_great_spear,],
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_5|knows_persuasion_7|knows_trainer_5,0x0000000c00003002189d6e454c6465a500000000001c68f20000000000000000],
 ["moria_lord","Master_Bolg_the_Lesser","Master",tf_hero| tf_uruk| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
-   [itm_wargarmored_3a,itm_moria_armor_e,itm_leather_boots,itm_evil_gauntlets_a,itm_orc_helm_c,itm_orc_throwing_axes,itm_orc_slasher,],
+   [itm_wargarmored_3a,itm_m_uruk_heavy_i,itm_uruk_helm_e,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_orc_javelin,itm_uruk_falchion_b,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4|knows_persuasion_3|knows_leadership_10|knows_tactics_8,0x00000000260010010038c51051df5f5800000000000000000000000000000000],
 ["guldur_lord","Master_Fuinur","Master",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_evil_man,0,0,fac_guldur,
    [itm_mordor_warhorse,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_mordor_cap_helm,itm_mordor_man_shield_b,itm_mordor_longsword,],
@@ -2325,13 +2339,13 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_1,0x0000000d3f00c40812065fd328ff7bfc00000000001ce6b80000000000000000],
 #Umbar
 ["knight_3_1","Captain_Morbir","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
-   [itm_umb_armor_h,itm_umb_armor_h,itm_corsair_boots,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_f,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
+   [itm_umb_armor_h,itm_umb_armor_h,itm_corsair_boots,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_e,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
       attr_tier_6,wp_tier_6,knight_skills_1|knows_trainer_3|knows_power_draw_4,0x0000000eb10063c8365369b99b6f77df00000000001d5aeb0000000000000000],
 ["knight_3_2","Captain_Angamaitë","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
-   [itm_umb_armor_h,itm_umb_armor_h,itm_corsair_boots,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_f,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
+   [itm_umb_armor_h,itm_umb_armor_h,itm_corsair_boots,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_a,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
       attr_tier_6,wp_tier_6,knight_skills_2|knows_power_draw_4,0x000000093f0035c5300251e9b3e041df00000000001cfaeb0000000000000000],
 ["knight_3_3","Captain_Sangahyando","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_umbar,
-   [itm_umb_armor_h,itm_umb_armor_h,itm_corsair_boots,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_f,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
+   [itm_umb_armor_h,itm_umb_armor_h,itm_corsair_boots,itm_corsair_boots,itm_leather_gloves,itm_umb_helm_b,itm_corsair_bow,itm_corsair_arrows,itm_umbar_rapier,],
       attr_tier_6,wp_tier_6,knight_skills_2|knows_power_draw_4,0x000000093f004045300251e9b3e2f7df00000000001dbaab0000000000000000],
 #Lothlorien
 ["knight_3_6","Haldir","_",tf_hero| tf_lorien| tf_mounted| tfg_ranged |tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_lorien,
@@ -2359,10 +2373,10 @@ troops = [
       attr_elf_tier_6,wp_elf_tier_6,knight_skills_1|knows_persuasion_7|knows_power_draw_4,0x0000000fc00030023fc36db75b6ab6db00000000001d36db0000000000000000],
 #Moria
 ["knight_4_1","Whip_Snog","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
-   [itm_wargarmored_3a,itm_moria_armor_e,itm_moria_armor_e,itm_evil_gauntlets_a,itm_orc_helm_c,itm_orc_throwing_axes,itm_orc_slasher,],
+   [itm_wargarmored_3a,itm_moria_armor_e,itm_orc_beakhelm_lordly,itm_orc_greaves,itm_evil_gauntlets_a,itm_orc_throwing_axes,itm_orc_slasher,],
       attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_persuasion_3|knows_leadership_10|knows_tactics_8,0x0000000fff00100936db6db6db6db6db00000000001db6db0000000000000000],
 ["knight_4_2","Whip_Snotgor","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_moria,
-   [itm_wargarmored_3a,itm_moria_armor_e,itm_moria_armor_e,itm_evil_gauntlets_a,itm_orc_helm_c,itm_orc_throwing_axes,itm_orc_slasher,],
+   [itm_wargarmored_3a,itm_moria_armor_e,itm_orc_bughelm_lordly,itm_orc_greaves,itm_evil_gauntlets_a,itm_orc_javelin,itm_orc_slasher,],
       attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_persuasion_3|knows_tactics_8,0x000000087f00000e36db6db6db6db6db00000000001db6db0000000000000000],
 #Dol Guldur
 ["knight_4_6","General_Tuskim","_",tf_hero| tf_uruk |tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_guldur,
@@ -2380,13 +2394,13 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_1|knows_persuasion_5,0x0000000bbf0052894dd95757a55accff00000000001d29190000000000000000],
 #Mt. Gundabad
 ["knight_4_16","Whip_Brolgukhsh","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
-   [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
+   [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
       attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_persuasion_3|knows_tactics_8,0x0000000fc000000536db6db6db6db6db00000000001db6db0000000000000000],
 ["knight_4_17","Whip_Grumrunt","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
-   [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
+   [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
       attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_persuasion_3|knows_tactics_8,0x00000009bf00000736db6db6db6db6db00000000001db6db0000000000000000],
 ["knight_4_18","Whip_Grimsob","_",tf_hero| tf_orc| tf_mounted| tfg_ranged| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gundabad,
-   [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
+   [itm_wargarmored_3a,itm_gundabad_armor_e,itm_orc_greaves,itm_orc_ragwrap,itm_evil_gauntlets_a,itm_gundabad_helm_e,itm_orc_throwing_axes,itm_orc_slasher,],
       attr_orc_tier_6,wp_orc_tier_6,knight_skills_1|knows_leadership_10|knows_persuasion_3|knows_tactics_8,0x000000083f00200a36db6db6db6db6db00000000001db6db0000000000000000],
 #Dale
 ["knight_5_1","Lord_Halward","_",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dale,
@@ -2532,7 +2546,7 @@ troops = [
    [itm_beorn_tunic,itm_leather_boots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,mercenary_face_1,mercenary_face_2],
 ["smith_moria","Burgak_Forger","smithy",tf_hero| tf_randomize_face| tf_is_merchant| tf_orc,0,0,fac_moria,
-   [itm_moria_armor_b,itm_orc_greaves,itm_orc_helm_c,],
+   [itm_moria_armor_b,itm_orc_greaves,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_leadership_2|knows_power_strike_2|knows_persuasion_2|knows_horse_archery_2|knows_shield_4|knows_power_draw_2|knows_power_throw_2|knows_trade_4|knows_tactics_4|knows_ironflesh_4|knows_athletics_2|knows_looting_1,mercenary_face_1,mercenary_face_2],
 ["smith_dale","Ardel_Firehand","smithy",tf_hero| tf_randomize_face| tf_is_merchant,0,0,fac_dale,
    [itm_dale_armor_l,itm_leather_boots,],
@@ -3204,7 +3218,7 @@ troops = [
    [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
       str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
 ["orc_pretender","Orc_Pretender","_",tf_orc| tfg_shield| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_neutral,
-   [itm_orc_slasher,itm_orc_sabre,itm_moria_orc_shield_b,itm_moria_orc_shield_a,itm_moria_armor_e,itm_orc_helm_g,itm_orc_helm_j,itm_orc_helm_k,itm_orc_greaves,],
+   [itm_orc_slasher,itm_orc_sabre,itm_moria_orc_shield_b,itm_moria_orc_shield_a,itm_moria_armor_e,itm_orc_greaves,],
       attr_orc_tier_6,wp_tier_6,knows_athletics_5|knows_power_strike_4|knows_ironflesh_10,orc_face5,orc_face8],
 ["human_prisoner","Human_Prisoner","_",tf_hero| tfg_helm,0,0,fac_neutral,
    [itm_prisoner_coll_chain,],
@@ -3251,7 +3265,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_isen_uruk_helm_c,itm_isen_uruk_heavy_c,itm_isengard_axe,itm_isen_uruk_shield_b,itm_isengard_hammer,itm_isengard_mallet,itm_isengard_heavy_sword,],
       attr_tier_5,wp_tier_5,knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,uruk_hai_face1,uruk_hai_face2],
 ["ring_hunter_four","Ring_Hunter","Ring_Hunters",tf_orc| tfg_ranged| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_greaves,itm_evil_gauntlets_b,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,],
+   [itm_orc_greaves,itm_evil_gauntlets_b,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,],
       attr_orc_tier_4,wp_orc_tier_4,knows_athletics_4|knows_power_draw_4|knows_power_strike_2,orc_face7,orc_face6],
 ### Kham Ring Hunters End ###
 
@@ -3261,7 +3275,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_tier_4,wp_tier_4,knows_athletics_6|knows_power_strike_5|knows_power_draw_4|knows_power_throw_3|knows_ironflesh_4|knows_shield_2,uruk_hai_face1,uruk_hai_face2],
 
 ["start_quest_orc","Mordor_Orc_Lieutenant","Large_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_greaves,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_orc_skull_spear,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_mordor_orc_shield_d,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,itm_orc_helm_i,],
+   [itm_orc_greaves,itm_orc_coif, itm_orc_nosehelm, itm_orc_kettlehelm, itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_orc_skull_spear,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_mordor_orc_shield_d,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_3|knows_power_throw_3,orc_face3,orc_face6],
 
 ["start_quest_woodelf","Galadhrim_Royal_Marksman","Galadhrim_Royal_Marksmen",tf_lorien| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,
@@ -3269,7 +3283,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_elf_tier_6,wp_elf_tier_6,knows_common|knows_athletics_7|knows_shield_1|knows_power_draw_6|knows_power_strike_4|knows_ironflesh_4,lorien_elf_face_1,lorien_elf_face_2],
 
 ["start_quest_mordor_scout","Mordor_Guide","Mordor_Guides",tf_orc| tfg_ranged| tfg_helm| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_furboots,itm_leather_gloves,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_light_c,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,],
+   [itm_orc_furboots,itm_orc_coif, itm_orc_nosehelm, itm_orc_kettlehelm_bad,itm_leather_gloves,itm_m_orc_light_c,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_light_c,itm_orc_bow,itm_orc_hook_arrow,itm_orc_sabre,itm_orc_slasher,itm_orc_slasher,],
       attr_orc_tier_4,wp_archery(135)| wp(110),knows_riding_1|knows_athletics_6|knows_power_draw_5|knows_power_strike_2,orc_face1,orc_face4],
 
 ["start_quest_beorning","Beorning_Carrock_Berserker","Beorning_Carrock_Berserkers",tfg_gloves| tfg_armor| tfg_helm| tfg_boots,0,0,fac_beorn,
@@ -3337,7 +3351,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham - Healers
 
-["morannon_healer","Okstuk_the_Healer","_",tf_hero|tf_orc,scn_morannon_center|entry(13),0,fac_mordor,[itm_moria_armor_b,itm_orc_greaves,itm_orc_helm_c],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
+["morannon_healer","Okstuk_the_Healer","_",tf_hero|tf_orc,scn_morannon_center|entry(13),0,fac_mordor,[itm_moria_armor_b,itm_orc_greaves,itm_orc_coif],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
 ["minas_tirith_healer","Ioreth","_",tf_female|tf_hero,scn_minas_tirith_center|entry(13),0,fac_gondor,[itm_whiterobe,itm_leather_boots],str_15|level(2),wp(20),knows_common,0x0000000fff0030064b3152c34d27231100000000001c986d0000000000000000],
 ["edoras_healer","Freya_the_Healer","_",tf_female|tf_hero,scn_edoras_center|entry(13),0,fac_rohan,[itm_whiterobe,itm_leather_boots],str_15|level(2),wp(20),knows_common,0x00000005070010045a9569a16d724adc00000000001db95a0000000000000000],
 ["isengard_healer","Nurgal_the_Patcher","_",tf_hero|tf_urukhai,scn_isengard_center|entry(13),0,fac_isengard,[itm_leather_gloves,itm_isen_uruk_light_a,itm_leather_boots],str_15|agi_5|int_4|cha_4|level(2),wp(20),knows_common,orc_face1],
@@ -3352,7 +3366,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_tier_4,wp_tier_4,knows_athletics_6|knows_power_strike_5|knows_power_draw_4|knows_power_throw_3|knows_ironflesh_4|knows_shield_2,uruk_hai_face1,uruk_hai_face2],
 
 ["hungry_orc","Hungry_Orc","Large_Orcs_of_Mordor",tf_orc| tfg_shield| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_orc_greaves,itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_orc_skull_spear,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_mordor_orc_shield_d,itm_orc_helm_d,itm_orc_helm_e,itm_orc_helm_f,itm_orc_helm_g,itm_orc_helm_i,],
+   [itm_orc_greaves,itm_orc_coif, itm_orc_nosehelm_bad, itm_orc_nosehelm, itm_m_orc_light_d,itm_m_orc_light_e,itm_m_orc_heavy_a,itm_m_orc_heavy_b,itm_orc_sabre,itm_orc_falchion,itm_orc_two_handed_axe,itm_orc_skull_spear,itm_orc_slasher,itm_orc_bill,itm_orc_axe,itm_mordor_orc_shield_b,itm_mordor_orc_shield_c,itm_orc_throwing_axes,itm_mordor_orc_shield_d,],
       attr_orc_tier_3,wp_orc_tier_3,knows_athletics_5|knows_power_strike_3|knows_power_throw_3,orc_face3,orc_face6],
 
 ["longing_lorien","Longing_Elf","Lothlorien_Scouts",tf_lorien| tfg_ranged| tfg_armor| tfg_boots| tf_no_capture_alive,0,0,fac_lorien,

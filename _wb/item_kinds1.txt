@@ -962,7 +962,7 @@ itemsfile version 2
  itm_orc_chain_greaves Orc_Greaves Orc_Greaves 1  orc_chain_greaves_lr 0  65550 0 701 1116859269284 3 100 0 0 15 0 0 0 0 0 0 0 0
 0
 
- itm_orc_coif Orc_Skullcap Orc_Skullcap 3  orc_skullcap_a 166  orc_skullcap_b 1116691496961  orc_skullcap_c 167772160  1073807372 0 200 1116859269284 2.25 100 12 0 0 0 0 0 0 0 0 0 0
+ itm_orc_coif Orc_Skullcap Orc_Skullcap 3  orc_skullcap_a 166  orc_skullcap_b 1116691496961  orc_skullcap_c 167772160  1073807372 0 200 1116859269284 2.25 100 16 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_orc_greaves Orc_Chain_Boots Orc_Chain_Boots 1  old_orc_chain_greave_lr 0  65550 0 401 1116859269284 3 100 0 0 12 0 0 0 0 0 0 0 0
@@ -1247,37 +1247,37 @@ itemsfile version 2
  itm_angmar_shield Angmar_Shield Angmar_Shield 1  angmar_shield 0  266247 5100273664 3000 0 4 100 0 20 0 0 1600 96 0 40 0 0 1
 0
 
- itm_orc_helm_a Orc_Nosehelm Orc_Nosehelm 3  orc_helm_nose_b 1116691496961  orc_helm_nose_a 166  orc_helm_nose_c 167772160  65548 0 300 1116859269286 2 100 14 0 0 0 0 0 0 0 0 0 0
+ itm_orc_nosehelm Orc_Nosehelm Orc_Nosehelm 3  orc_helm_nose_b 1116691496961  orc_helm_nose_a 166  orc_helm_nose_c 167772160  65548 0 300 1116859269286 2 100 18 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_b Orc_Kettlehelm Orc_Kettlehelm 3  orc_helm_kettle_b 1116691496961  orc_helm_kettle_a 166  orc_helm_kettle_c 167772160  65548 0 350 1116859269286 2.5 100 22 0 0 0 0 0 0 0 0 0 0
+ itm_orc_kettlehelm Orc_Kettlehelm Orc_Kettlehelm 3  orc_helm_kettle_b 1116691496961  orc_helm_kettle_a 166  orc_helm_kettle_c 167772160  65548 0 350 1116859269286 2.5 100 22 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_c Orc_Buckethelm Orc_Buckethelm 3  orc_helm_sallet_b 1116691496961  orc_helm_sallet_a 166  orc_helm_sallet_c 167772160  65548 0 400 1116859269286 3 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_orc_buckethelm Orc_Buckethelm Orc_Buckethelm 3  orc_helm_sallet_b 1116691496961  orc_helm_sallet_a 166  orc_helm_sallet_c 167772160  65548 0 600 1116859269286 3 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_d Orc_Morion Orc_Morion 3  orc_helm_morion_b 1116691496961  orc_helm_morion_a 166  orc_helm_morion_c 167772160  65548 0 350 1116859269286 2.5 100 22 0 0 0 0 0 0 0 0 0 0
+ itm_orc_morion Orc_Morion Orc_Morion 3  orc_helm_morion_b 1116691496961  orc_helm_morion_a 166  orc_helm_morion_c 167772160  65548 0 350 1116859269286 2.5 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_e Orc_Beakhelm Orc_Beakhelm 4  orc_helm_vulture_b 1116691496961  orc_helm_vulture_a 166  orc_helm_vulture_c 167772160  orc_helm_crow 131072  65548 0 400 1116859400358 3 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_orc_beakhelm Orc_Beakhelm Orc_Beakhelm 4  orc_helm_vulture_b 1116691496961  orc_helm_vulture_a 166  orc_helm_vulture_c 167772160  orc_helm_crow 131072  65548 0 500 1116859400358 3 100 24 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_f Orc_Bughelm Orc_Bughelm 4  orc_helm_bug_b 1116691496961  orc_helm_bug_a 166  orc_helm_bug_c 167772160  orc_helm_bug_d 131072  65548 0 500 1116859400358 3 100 24 0 0 0 0 0 0 0 0 0 0
+ itm_orc_bughelm Orc_Bughelm Orc_Bughelm 4  orc_helm_bug_b 1116691496961  orc_helm_bug_a 166  orc_helm_bug_c 167772160  orc_helm_bug_d 131072  65548 0 400 1116859400358 3 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_g oldOrc_Crowhelm oldOrc_Crowhelm 1  orc_helm_crow 0  65548 0 400 1116859269286 3 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_orc_visorhelm Orc_Visorhelm Orc_Visorhelm 3  orc_helm_visor_b 1116691496961  orc_helm_visor_a 166  orc_helm_visor_c 167772160  65548 0 400 1116859269286 3 100 24 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_h Orc_Visorhelm Orc_Visorhelm 3  orc_helm_visor_b 1116691496961  orc_helm_visor_a 166  orc_helm_visor_c 167772160  65548 0 500 1116859269286 3 100 24 0 0 0 0 0 0 0 0 0 0
+ itm_free_orc_helm_g oldOrc_Crowhelm oldOrc_Crowhelm 1  orc_helm_crow 0  65548 0 400 1116859269286 3 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_i oldOrc_Snouthelm oldOrc_Snouthelm 1  orc_helm_sallet_b 0  65548 0 600 1116859269286 3 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_free_orc_helm_i oldOrc_Snouthelm oldOrc_Snouthelm 1  orc_helm_sallet_b 0  65548 0 600 1116859269286 3 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_j oldOrc_Lizardhelm oldOrc_Lizardhelm 1  orc_helm_visor_b 0  65548 0 400 1116859269286 3 100 23 0 0 0 0 0 0 0 0 0 0
+ itm_free_orc_helm_j oldOrc_Lizardhelm oldOrc_Lizardhelm 1  orc_helm_visor_b 0  65548 0 400 1116859269286 3 100 23 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_helm_k oldOrc_Vulturehelm oldOrc_Vulturehelm 1  orc_helm_vulture_b 0  65548 0 500 1116859269286 3 100 24 0 0 0 0 0 0 0 0 0 0
+ itm_free_orc_helm_k oldOrc_Vulturehelm oldOrc_Vulturehelm 1  orc_helm_vulture_b 0  65548 0 500 1116859269286 3 100 24 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_m_orc_light_a Mordor_Orc_Light_Armor Mordor_Orc_Light_Armor 1  orc_mordor_a 0  16842765 0 101 1099635359744 1.5 100 0 5 3 0 0 0 0 0 0 0 0
