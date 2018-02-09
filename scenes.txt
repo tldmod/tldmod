@@ -624,7 +624,7 @@ scn_random_scene_parade random_scene_parade 768 none none 0 0 220 220 -0.5 0x000
   0 
   0 
  outer_terrain_forest 
-scn_beorn_castle beorn_castle 1 interior_castle_rohan_b bo_interior_castle_j -100 -100 100 100 -100 0 
+scn_beorn_castle beorn_castle 1 lofotrinterior2 bo_lofotrinterior2 -100 -100 100 100 -100 0 
   0 
   1  833 
  0 
