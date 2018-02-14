@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1686
+ 1688
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5111,6 +5111,12 @@ spr_mordor_cliff_distant_7 0 0 mordor_cliff_distant_7 bo_cliff_distant_7 0
 
 
 spr_mordor_cliff_distant_8 0 0 mordor_cliff_distant_8 bo_cliff_distant_8 0
+
+
+spr_beorn_hall 0 0 beorn_hall bo_beorn_hall 0
+
+
+spr_beorn_side_house 0 0 beorn_side_house bo_house6 0
 
 
 spr_save_compartibility1 0 0 0 0 0

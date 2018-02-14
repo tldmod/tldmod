@@ -268,7 +268,7 @@ scn_woodelf_camp_center woodelf_camp_center 256 none none 0 0 100 100 -100 0x000
   0 
   0 
  outer_terrain_forest 
-scn_woodsmen_village_center woodsmen_village_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_woodsmen_village_center woodsmen_village_center 256 none none 0 0 100 100 -100 0x00000000200005d000057d5e000074e600006c2600006d0d 
   0 
   0 
  outer_terrain_plain 
@@ -1160,7 +1160,7 @@ scn_woodelf_camp_siege woodelf_camp_siege 256 none none 0 0 100 100 -100 0x00000
   0 
   0 
  outer_terrain_forest 
-scn_woodsmen_village_siege woodsmen_village_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_woodsmen_village_siege woodsmen_village_siege 256 none none 0 0 100 100 -100 0x00000000200005d000057d5e000074e600006c2600006d0d 
   0 
   0 
  outer_terrain_plain 

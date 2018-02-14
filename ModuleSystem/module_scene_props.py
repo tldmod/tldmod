@@ -2711,6 +2711,8 @@ scene_props = [
 ( "mordor_cliff_distant_7",0,"mordor_cliff_distant_7","bo_cliff_distant_7",[]),
 ( "mordor_cliff_distant_8",0,"mordor_cliff_distant_8","bo_cliff_distant_8",[]),
 
+( "beorn_hall",0,"beorn_hall","bo_beorn_hall",[]),
+( "beorn_side_house",0,"beorn_side_house","bo_house6",[]),
 #InVain props end
 
 ("save_compartibility1",0,"0","0", []),
