@@ -62,6 +62,7 @@ imodbits_orc_ok =  imodbit_smelling | imodbit_meek | imodbit_plain
 
 
 imodbits_elf_armor  = imodbit_thick | imodbit_reinforced | imodbit_lordly
+imodbits_elf_good = imodbit_thick | imodbit_reinforced | imodbit_lordly| imodbit_hardened
 #
 imodbits_missile  = imodbit_crude | imodbit_bent | imodbit_large_bag | imodbit_fine | imodbit_balanced
 imodbits_good_missile  = imodbit_large_bag | imodbit_fine | imodbit_balanced
@@ -1201,20 +1202,20 @@ items =[
 ["free_dwarf_helm_o","Dwarf_Nasal_Tophelm",[("DwarfHelmIronheadNasal",0)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(40)|difficulty(0),imodbits_elf_armor],
 #next one only for reward item. NPCs use imod -> witchkinghelm
 ["dwarf_helm_p","Dwarf_King_Helm",[("DwarfHelmKingCrown",0)],itp_type_head_armor|0,0,2000,weight(2)|head_armor(50)|difficulty(0),imodbits_elf_armor],
-["dwarf_miner","Dwarf_Miner_Helm",[("DwarfHelmMinerCap",0),("DwarfHelmMiner",imodbit_thick),("DwarfHelmMiner",imodbit_reinforced),("DwarfHelmMiner",imodbit_hardened)],itp_type_head_armor|itp_shop,0,500,weight(2)|head_armor(14)|difficulty(0),imodbits_elf_cloth],
+["dwarf_miner","Dwarf_Light_Helm",[("DwarfHelmMinerCap",0),("dwarven_inf_helmet_t1",imodbit_thick),("DwarfHelmMiner",imodbit_reinforced),("DwarfHelmMiner",imodbit_hardened)],itp_type_head_armor|itp_shop,0,500,weight(2)|head_armor(14)|difficulty(0),imodbits_elf_cloth],
 ["free_dwarf_helm_r","Dwarf_Miner_Cap",[("DwarfHelmMinerCap",0)],itp_type_head_armor|itp_shop,0,120,weight(1)|head_armor(14)|difficulty(0),imodbits_elf_armor],
 ["dwarf_helm_round","Dwarf_Round_Helm",[("DwarfHelmRoundChain",0),("DwarfHelmRoundMask",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["free_dwarf_helm_v","Dwarf_Chain_Sallet",[("DwarfHelmSalletChain",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 #["dwarf_helm_w", "Dwarf Helm",[("DwarfHelmSalletLeather",0)],    itp_shop|itp_type_head_armor   ,0, 479 , weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
 ["dwarf_helm_sallet","Dwarf_Sallet",[("DwarfHelmSalletChain",0),("DwarfHelmSalletSargeant",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(40)|difficulty(0),imodbits_elf_armor],
 #########ARMOR##########
-["dwarf_armor_a","Dwarven_Tunic_over_Mail",[("dwarf_tunicmail",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1008,weight(16)|head_armor(0)|body_armor(32)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
+["dwarf_armor_a","Erebor_Mail",[("dwarf_tunicmail",0),("dwarf_tunicmailarcher",imod_reinforced),("dwarf_tunicmailarcher",imod_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1008,weight(16)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
 ["leather_dwarf_armor","Dwarven_Pad_over_Mail",[("dwarf_padmail",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1108,weight(16)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
-["dwarf_vest","Dwarven_Archer_Armor",[("dwarf_tunicmailarcher",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1108,weight(14)|head_armor(0)|body_armor(32)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
-["dwarf_armor_b","Dwarven_Pad_over_Tunic",[("dwarf_padtunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,908,weight(10)|head_armor(0)|body_armor(18)|leg_armor(8)|difficulty(0),imodbits_elf_cloth,],
-["dwarf_armor_c","Dwarven_Scale_over_Mail",[("dwarf_scalemail",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2008,weight(18)|head_armor(2)|body_armor(40)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
-["leather_dwarf_armor_b","Dwarven_Tunic",[("dwarf_tunic_erebor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,258,weight(5)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_elf_cloth,],
-["dwarf_vest_b","Iron_Hills_Tunic",[("dwarf_tunic_ironhills",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,308,weight(5)|head_armor(0)|body_armor(15)|leg_armor(6)|difficulty(0),imodbits_elf_cloth,],
+["dwarf_armor_b","Erebor_Scale",[("dwarf_tunicmail_scale",0),("dwarf_tunicmailarcher_scale",imod_reinforced),("dwarf_tunicmailarcher_scale",imod_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1108,weight(14)|head_armor(0)|body_armor(37)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
+["leather_dwarf_armor_b","Dwarven_Pad_over_Tunic",[("dwarf_padtunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,908,weight(10)|head_armor(0)|body_armor(18)|leg_armor(8)|difficulty(0),imodbits_elf_cloth,],
+["dwarf_armor_c","Dwarven_Scale_over_Mail",[("dwarf_scalemail_light",0),("dwarf_scalemail",imod_reinforced),("dwarf_scalemail",imod_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2008,weight(23)|head_armor(2)|body_armor(43)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
+["dwarf_vest","Dwarven_Tunic",[("dwarf_tunic_erebor",0),("dwarf_tunic_ironhills",imodbit_thick),("dwarf_tunic_ironhills",imodbit_reinforced),("dwarf_tunic_ironhills",imodbit_hardened)],itp_type_body_armor|itp_covers_legs|itp_shop,0,258,weight(5)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_elf_cloth,],
+["dwarf_vest_b","Iron_Hills_Mail",[("dwarf_mail",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1008,weight(18)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
 #["dwarf_dol_greaves", "Dwarven Plate Boots",[("dwarf_dol_greaves",0)], itp_shop|itp_type_foot_armor |itp_attach_armature,0, 760 , weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor ],
 ["dwarf_pad_boots","Dwarven_Padded_Boots",[("dwarf_pad_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,708,weight(1)|leg_armor(15)|difficulty(0),imodbits_elf_cloth],
 ["dwarf_chain_boots","Dwarven_Mail_Chausses",[("dwarf_chain_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature,0,1208,weight(2)|leg_armor(25)|difficulty(0),imodbits_elf_armor],
