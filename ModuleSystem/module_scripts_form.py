@@ -624,7 +624,7 @@ formAI_scripts = [
 						(assign, ":average_level", reg0),
 						(call_script, "script_battlegroup_get_level", ":enemy_nearest_troop_team", ":enemy_nearest_troop_division"),
 						(gt, ":average_level", reg0),	#got better troops?
-						(assign, ":infantry_formation", formation_wedge),
+						(assign, ":infantry_formation", formation_shield),
 						#(display_message, "@Infantry decided to form wedge"),	#############
 					(try_end),
 				(try_end),
@@ -3682,7 +3682,7 @@ formAI_scripts = [
 		(assign, reg0, formation_ranks),
 	(else_try),
 		(eq, ":ffaction", "fac_isengard"),	#Isengard
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_lorien"),	#Lorien
 		(assign, reg0, formation_shield),
@@ -5603,7 +5603,7 @@ formAI_scripts = [
         (assign, ":avg_dist", reg0),
         (assign, ":min_dist", reg1),
         (try_begin),
-          (this_or_next|lt, ":min_dist", 1000),
+          (this_or_next|lt, ":min_dist", 1500), #Kham - Changed from 1000
           (lt, ":avg_dist", 4000),
           (assign, ":battle_tactic", 0),
 		  (call_script, "script_formation_end", ":team_no", grc_infantry),	#formations code
