@@ -345,6 +345,23 @@ game_menus = [
       ("view_morale_report"    ,[                    ],"View party morale report.",[(jump_to_menu, "mnu_morale_report"    ),]),
 #NPC companion changes begin
 #      ("view_party_preferences",[],"View party management preferences.", [(jump_to_menu, "mnu_party_preferences"),]),
+      
+      ("view_active_theaters", [(eq, "$cheat_mode", 1)], "View Active Theaters",
+      	[(try_for_range, ":factions", kingdoms_begin, kingdoms_end),
+      		(faction_slot_eq, ":factions", slot_faction_state, sfs_active), 
+      		(faction_get_slot, ":theater", ":factions", slot_faction_active_theater),
+      		(call_script, "script_theater_name_to_s15", ":theater"),
+      		(str_store_faction_name, s1, ":factions"),
+      		(display_message, "@{s1} - {s15}", color_good_news),
+      	 (try_end)]),
+
+    	("view_active_factions", [(eq, "$cheat_mode", 1)], "View Active Factions",
+      	[(try_for_range, ":factions", kingdoms_begin, kingdoms_end),
+      		(faction_get_slot, reg1, ":factions", slot_faction_state),
+      		(str_store_faction_name, s1, ":factions"),
+      		(display_message, "@{s1} - {reg1}", color_good_news),
+      	 (try_end)]),
+
       ("view_character_report_02" ,[(eq,"$cheat_mode",1)],"NPC status check.",
        [(try_for_range, ":npc", companions_begin, companions_end),
             (main_party_has_troop, ":npc"),

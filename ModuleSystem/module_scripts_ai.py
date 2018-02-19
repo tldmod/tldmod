@@ -179,6 +179,14 @@ ai_scripts = [
          (try_begin),
            #No chance of gathering an army if there are no enemies
            (gt, ":num_enemies", 0),
+           
+           #Kham - Increase chance of gathering army when there are no longer a lot of enemies.
+           (try_begin),
+            (is_between, ":num_enemies", 1, 4),
+            (val_add, ":num_enemies", 3),
+           (try_end),
+           #kham - End
+           
            (store_mul, ":num_enemies_effect", ":num_enemies", 20),
            (val_add, ":chance_gathering_army", ":num_enemies_effect"),
 
@@ -2458,6 +2466,84 @@ ai_scripts = [
    (try_end),
 ]),
  
+# script_check_active_factions_in_theater
+# Input: Faction Theater
+# Output: If there are no more active factions in the theater, assign reg0 to Theater Cleared (1).
+# Output: If there are still active factions in the theater, assign reg0 to  Theater NOT Cleared / Do nothing (0)
+# Checks if there are still active factions in the current active theater. Used within script_update_active_theaters
+
+("check_active_factions_in_theater", [
+  
+  (store_script_param, ":active_theater", 1),
+  (store_script_param, ":faction", 2),
+
+  (faction_get_slot, ":side", ":faction", slot_faction_side),
+
+  (assign, ":theater_cleared", 0),
+
+  (try_begin),
+    (eq, ":active_theater", theater_SE),
+      (try_begin),
+        (neq, ":side", faction_side_good),
+        (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_defeated), #If Gondor Is defeated,
+        (assign, ":theater_cleared", 1), #theater is cleared
+      (else_try),
+        (faction_slot_eq, "fac_mordor", slot_faction_state, sfs_defeated), #If Southern Evil are all defeated
+        (faction_slot_eq, "fac_harad",  slot_faction_state, sfs_defeated),
+        (faction_slot_eq, "fac_umbar",  slot_faction_state, sfs_defeated),
+        (faction_slot_eq, "fac_khand",  slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
+        (assign, ":theater_cleared", 0), #Theater is not cleared, do nothing.
+      (try_end),
+  (else_try),
+    (eq, ":active_theater", theater_SW),
+      (try_begin),
+        (neq, ":side", faction_side_good),
+        (faction_slot_eq, "fac_rohan",    slot_faction_state, sfs_defeated), #If Rohan Is defeated,
+        (assign, ":theater_cleared", 1), #theater is cleared
+      (else_try),
+        (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_defeated), #If SW Evil are all defeated
+        (faction_slot_eq, "fac_dunland",  slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
+        (assign, ":theater_cleared", 0), #Theater is not cleared, do nothing.
+      (try_end),
+  (else_try),
+    (eq, ":active_theater", theater_C),
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (faction_slot_eq, "fac_moria",    slot_faction_state, sfs_defeated), #If Center Evil is defeated
+        (faction_slot_eq, "fac_guldur", slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #theater is cleared
+      (else_try),
+        (faction_slot_eq, "fac_imladris",  slot_faction_state, sfs_defeated), #If Center Good is defeated
+        (faction_slot_eq, "fac_lorien", slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
+        (assign, ":theater_cleared", 0), #Theater is not cleared, do nothing.
+      (try_end),
+  (else_try), #Theater_N
+      (try_begin),
+        (neq, ":side", faction_side_good),
+        (faction_slot_eq, "fac_dale",    slot_faction_state, sfs_defeated), #If Northern GOOD are defeated
+        (faction_slot_eq, "fac_dwarf", slot_faction_state, sfs_defeated),
+        (faction_slot_eq, "fac_woodelf",    slot_faction_state, sfs_defeated),
+        (faction_slot_eq, "fac_beorn", slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #theater is cleared
+      (else_try),
+        (faction_slot_eq, "fac_gundabad",  slot_faction_state, sfs_defeated), #If Northern Evil are defeated
+        (faction_slot_eq, "fac_rhun", slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
+        (assign, ":theater_cleared", 0), #Theater is not cleared, do nothing.
+      (try_end),
+  (try_end),
+
+  (assign, reg0, ":theater_cleared"),
+
+]),
+
 # script_update_active_theaters
 # Input: none
 # Output: none
@@ -2472,12 +2558,19 @@ ai_scripts = [
             (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
             (store_relation, ":rel", ":faction", ":enemy_faction"),
             (lt, ":rel", 0), # active enemy
-            (faction_slot_eq, ":enemy_faction", slot_faction_active_theater, ":faction_theater"),
-            (assign, ":theater_cleared", 0), # found active enemy faction in the same theater, do nothing
+            
+            #Kham - Changes to check active factions in theater begin
+            (faction_get_slot, ":enemy_faction_theater", ":enemy_faction", slot_faction_active_theater),
+            (eq, ":enemy_faction_theater", ":faction_theater"),
+            (call_script, "script_check_active_factions_in_theater", ":faction_theater", ":faction"),
+            (assign, ":theater_cleared", reg0), # found active enemy faction in the same theater, do nothing
+            #Kham - Changes to check active factions in theater END
+            #(display_message, "@Update Active Theater - Fired", color_bad_news),
           (try_end),
           # find another theater with active enemies
           (try_begin),
             (eq, ":theater_cleared", 1),
+            #(display_message, "@First Clear - Check", color_good_news),
             (assign, ":next_theater", ":faction_theater"),
             (assign, ":continue_loop", 4),
             (try_for_range, ":unused", 0, ":continue_loop"),
@@ -2489,15 +2582,16 @@ ai_scripts = [
                 (assign, ":theater_cleared", 1),
                 # find enemies in the next theater
                 (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
-                  (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
-                  (store_relation, ":rel", ":faction", ":enemy_faction"),
+                  (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active), #If a faction is still alive
+                  (faction_slot_eq, ":enemy_faction", slot_faction_home_theater, ":next_theater"),  #and calls next faction their home
+                  (store_relation, ":rel", ":faction", ":enemy_faction"), 
                   (lt, ":rel", 0), # active enemy
-                  (faction_slot_eq, ":enemy_faction", slot_faction_active_theater, ":next_theater"),
-                  (assign, ":theater_cleared", 0), # found active enemy faction in the same theater
+                  (assign, ":theater_cleared", 0), #If any faction is still alive in the next center, go there.
                 (try_end),
                 # if enemies found, move active theater
                 (try_begin),
                   (eq, ":theater_cleared", 0),
+                  #(display_message, "@Second Clear - Check", color_good_news),
                   (faction_set_slot, ":faction", slot_faction_active_theater, ":next_theater"),
                   (assign, ":continue_loop", 0), # exit loop
                   (call_script, "script_theater_name_to_s15", ":next_theater"),
