@@ -1,4 +1,4 @@
-1582
+1584
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -57,7 +57,6 @@ qstr_Days_Passed:_{reg0} Days_Passed:_{reg0}
 qstr_Difficulty:_{reg0}% Difficulty:_{reg0}%
 qstr_{reg3?+:}{reg0} {reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
-qstr_swy_ui_opacity swy_ui_opacity
 qstr_______ ______
 qstr_A_peaceful_village_n A_peaceful_village_not_far_from_Westfold...
 qstr_The_War_is_upon_Roha The_War_is_upon_Rohan!
@@ -133,6 +132,9 @@ qstr_War_Will_Start_at_Le War_Will_Start_at_Level_{reg0}
 qstr_Troop_Tree Troop_Tree
 qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)
 qstr_{s2}^{s3} {s2}^{s3}
+qstr_Weapons Weapons
+qstr_Armors Armors
+qstr_Others Others
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -799,6 +801,7 @@ qstr_Trolls_appeared! Trolls_appeared!
 qstr_Gaaaar!! Gaaaar!!
 qstr_{s31}_scouts_have_app {s31}_scouts_have_appeared_to_aid_the_refugees!
 qstr_Hurry_men!_Help_the_ Hurry,_men!_Help_the_refugees!_Kill_all_the_scum_and_do_not_let_them_escape!
+qstr_swy_ui_opacity swy_ui_opacity
 qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_so_beautiful_from_a_distance!
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
 qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photos,_he's_amazing!
@@ -939,7 +942,6 @@ qstr_{s7}_Garrison_Remove {s7}_Garrison_Removed!
 qstr_OFF OFF
 qstr_ON ON
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
-qstr_Moria_Book_given Moria_Book_given
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!

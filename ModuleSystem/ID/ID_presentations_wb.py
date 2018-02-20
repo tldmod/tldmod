@@ -26,3 +26,4 @@ prsnt_game_troop_tree = 24
 prsnt_troop_tree = 25
 prsnt_troop_detail = 26
 prsnt_display_agent_labels = 27
+prsnt_all_items = 28

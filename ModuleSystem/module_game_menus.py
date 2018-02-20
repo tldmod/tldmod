@@ -3094,6 +3094,9 @@ game_menus = [
 	"^^^^^Click on an option to toggle.^^^Tweaks Gondor to have more troops in a party, gives them more hosts, gives them hosts more frequently, and lets Gondor lords wait longer to gather.^^Have to wait for the trigger to occur","none",[],
     [
     ("enable_kham_cheat",[],"Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@Kham Cheat Mode ON!")]),
+    ] + (is_a_wb_menu==1 and [
+    ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
+    ] or []) + [
     ("remove_garrison",[],"Remove A Center of Your Faction's Garrison", [
     	(assign, ":end", 100),
     	(try_for_range, ":unused", 0, ":end"),
@@ -3110,7 +3113,6 @@ game_menus = [
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("test_sea_battle",[],"Test Sea Battle (Good)", [(jump_to_menu, "mnu_sea_battle_quest")]),
-    ("give_wolf_mount",[],"Give wolf mount", [(troop_add_item, "trp_player","itm_wolf", imod_fine),(display_message, "@Moria Book given")]),
     ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
     ("what_region",[], "What Region am I in?", 
     	[(store_add, reg1, str_shortname_region_begin , "$current_player_region"),
