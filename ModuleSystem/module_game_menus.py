@@ -2921,6 +2921,7 @@ game_menus = [
       (try_end),
       (display_message, "@N advance camps spawned around Beorn's House!", 0x30FFC8),
     ]),
+
     ("disable",[],"Remove all advance camps", [
 	  (try_for_range, ":camp_pointer", "p_camplace_N1", "p_ancient_ruins"), # free up campable place
 		(party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
@@ -2932,11 +2933,12 @@ game_menus = [
         (faction_get_slot, ":home_theater", ":faction_no", slot_faction_home_theater),
         (faction_set_slot, ":faction_no", slot_faction_active_theater, ":home_theater"),
         (faction_get_slot, ":adv_camp", ":faction_no", slot_faction_advance_camp),
-        (disable_party, ":adv_camp"),
+        (call_script, "script_destroy_center", ":adv_camp"),
       (try_end),
-      (call_script, "script_update_active_theaters"),
+      #(call_script, "script_update_active_theaters"),
       (display_message, "@Advance camps disabled, theaters restored!", 0x30FFC8),
     ]),
+
     ("movespawnSW",[],"Move SW theater center and spawn camps there", [
       (party_get_position, pos13, "p_main_party"),
       (party_set_position, "p_theater_sw_center", pos13),
@@ -3136,7 +3138,7 @@ game_menus = [
     	(spawn_around_party, "p_main_party", "pt_vet_archer"),
     	(party_add_members, "p_main_party", "trp_badass_theo",1), 
     	(display_message, "@Killer WItcher Spawned, Badass King Theo added!")]),
-    ("change_morale",[], "Give Bad Morale", [(party_set_morale, "p_main_party", 20), (party_get_morale, reg6, "p_main_party"),(display_message, "@Morale is now {reg6}", color_bad_news)]),
+    ("player_enable_siege",[], "Enable Player Siege", [(assign, "$player_allowed_siege",1),(display_message, "@Player Siege Enabled", color_bad_news)]),
     ("animal_test",[], "Animal Ambush Test", [
     	(try_begin), 
     		(this_or_next|eq, "$current_player_region", region_n_mirkwood),

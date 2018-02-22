@@ -2400,3 +2400,7 @@ def sq(distance):
 #Labels
 max_distance_to_see_labels = 1500
 
+#Adv Camps Revamp
+
+slot_faction_theater_retreated_from = 181
+

@@ -2466,7 +2466,34 @@ ai_scripts = [
    (try_end),
 ]),
  
-# script_check_active_factions_in_theater
+# script_check_active_advance_camps
+# Input:
+# Output: Can fail
+
+("check_active_advance_camps", [
+  
+  (store_script_param_1, ":active_theater"),
+  (store_script_param_2, ":faction"),
+
+  (assign, ":adv_camps_cleared", 1),
+
+
+  (try_for_range, ":adv_camp_faction", kingdoms_begin, kingdoms_end),
+    (store_relation, ":rel", ":faction", ":adv_camp_faction"),
+    (lt, ":rel", 0), # active enemy
+    (faction_get_slot, ":enemy_faction_adv_camp", ":adv_camp_faction", slot_faction_advance_camp),
+    (faction_get_slot, ":enemy_active_theater", ":adv_camp_faction", slot_faction_active_theater),
+    (faction_slot_eq, ":enemy_active_theater", slot_faction_active_theater, ":active_theater"),
+    (party_slot_eq, ":enemy_faction_adv_camp", slot_center_theater, ":active_theater"),
+    (party_is_active, ":enemy_faction_adv_camp"),
+    (assign, ":adv_camps_cleared", 0),
+  (try_end),
+
+  (assign, reg0, ":adv_camps_cleared"),
+
+]),
+
+# script_cf_check_active_factions_in_theater
 # Input: Faction Theater
 # Output: If there are no more active factions in the theater, assign reg0 to Theater Cleared (1).
 # Output: If there are still active factions in the theater, assign reg0 to  Theater NOT Cleared / Do nothing (0)
@@ -2544,131 +2571,95 @@ ai_scripts = [
 
 ]),
 
-# script_update_active_theaters
+# script_update_active_theaters - modified by Kham, retreat is now in the trigger when an advance camp is created.
 # Input: none
 # Output: none
 # updates active theaters for all factions, called after a faction defeat
 ("update_active_theaters", [        
-        # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
-        (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
-          (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
-          (faction_get_slot, ":faction_theater", ":faction", slot_faction_active_theater),
+  # theater sequences: SE-SW-C-N, SW-SE-C-N, C-SW-N-SE, N-C-SW-SE
+  (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+    (assign, ":theater_cleared", 0),
+    (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
+    (faction_get_slot, ":faction_theater", ":faction", slot_faction_active_theater),
+    (call_script, "script_check_active_factions_in_theater", ":faction_theater", ":faction"),
+    (eq, reg0, 1), #No more factions in selected kingdom's theater
+    (call_script, "script_check_active_advance_camps", ":faction_theater", ":faction"), 
+    (eq, reg0, 1), #No more enemy advance camps in selected kingdom's theater
+    (assign, ":theater_cleared", 1),
+    
+    # find another theater with active enemies
+    (try_begin),
+      (eq, ":theater_cleared", 1),
+      (assign, ":next_theater", ":faction_theater"),
+      (assign, ":continue_loop", 4),
+      (try_for_range, ":unused", 0, ":continue_loop"),
+        #get the next theater in hardcoded theater sequences
+        (call_script, "script_find_next_theater", ":faction", ":next_theater"),
+        (assign, ":next_theater", reg0),
+        (try_begin),
+          (neq, ":next_theater", -1),
           (assign, ":theater_cleared", 1),
-          (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
-            (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
-            (store_relation, ":rel", ":faction", ":enemy_faction"),
-            (lt, ":rel", 0), # active enemy
-            
-            #Kham - Changes to check active factions in theater begin
-            (faction_get_slot, ":enemy_faction_theater", ":enemy_faction", slot_faction_active_theater),
-            (eq, ":enemy_faction_theater", ":faction_theater"),
-            (call_script, "script_check_active_factions_in_theater", ":faction_theater", ":faction"),
-            (assign, ":theater_cleared", reg0), # found active enemy faction in the same theater, do nothing
-            #Kham - Changes to check active factions in theater END
-            #(display_message, "@Update Active Theater - Fired", color_bad_news),
-          (try_end),
-          # find another theater with active enemies
+          # find enemies in the next theater
+          (call_script, "script_check_active_factions_in_theater", ":next_theater", ":faction"),
+          (assign, ":active_factions_in_next_theater", reg0),
+          (call_script, "script_check_active_advance_camps", ":next_theater", ":faction"), 
+          (assign, ":active_adv_camps_in_next_theater", reg0),
+          (this_or_next|eq, ":active_factions_in_next_theater", 0), #If there are still active factions in the next theater
+          (eq, ":active_adv_camps_in_next_theater", 0), #Or if there are active advance camps in the next theater
+          (assign, ":theater_cleared", 0), #Enemies are found
+          
+          # if enemies found, move active theater
           (try_begin),
-            (eq, ":theater_cleared", 1),
-            #(display_message, "@First Clear - Check", color_good_news),
-            (assign, ":next_theater", ":faction_theater"),
-            (assign, ":continue_loop", 4),
-            (try_for_range, ":unused", 0, ":continue_loop"),
-              #get the next theater in hardcoded theater sequences
-              (call_script, "script_find_next_theater", ":faction", ":next_theater"),
-              (assign, ":next_theater", reg0),
-              (try_begin),
-                (neq, ":next_theater", -1),
-                (assign, ":theater_cleared", 1),
-                # find enemies in the next theater
-                (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
-                  (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active), #If a faction is still alive
-                  (faction_slot_eq, ":enemy_faction", slot_faction_home_theater, ":next_theater"),  #and calls next faction their home
-                  (store_relation, ":rel", ":faction", ":enemy_faction"), 
-                  (lt, ":rel", 0), # active enemy
-                  (assign, ":theater_cleared", 0), #If any faction is still alive in the next center, go there.
-                (try_end),
-                # if enemies found, move active theater
-                (try_begin),
-                  (eq, ":theater_cleared", 0),
-                  #(display_message, "@Second Clear - Check", color_good_news),
-                  (faction_set_slot, ":faction", slot_faction_active_theater, ":next_theater"),
-                  (assign, ":continue_loop", 0), # exit loop
-                  (call_script, "script_theater_name_to_s15", ":next_theater"),
-                  (str_store_faction_name, s2, ":faction"),
-                  (try_begin),
-                    (store_relation, ":rel", "$players_kingdom", ":faction"),
-                    (gt, ":rel", 0),
-                    (assign, ":news_color", color_good_news),
-                  (else_try),
-                    (assign, ":news_color", color_bad_news),
-                  (try_end),
-                  (display_log_message, "@The forces of {s2} march to {s15}!", ":news_color"),
-                  
-                  (store_current_hours, ":cur_hours"),
-                  (faction_set_slot, ":faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
+            (eq, ":theater_cleared", 0),
+            #(display_message, "@Second Clear - Check", color_good_news),
+            (assign, ":continue_loop", 0), # exit loop
+            (call_script, "script_theater_name_to_s15", ":next_theater"),
+            (str_store_faction_name, s2, ":faction"),
+            (try_begin),
+              (store_relation, ":rel", "$players_kingdom", ":faction"),
+              (gt, ":rel", 0),
+              (assign, ":news_color", color_good_news),
+            (else_try),
+              (assign, ":news_color", color_bad_news),
+            (try_end),
 
-                  (faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
-                  #dismantle any existing camp, emptying it of lords
-                  (try_begin),
-                    (party_is_active, ":adv_camp"),
-                    # detach all attached parties, in case there are parties in the camp
-                    (party_get_num_attached_parties, ":num_attached_parties", ":adv_camp"),
-                    (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
-                      (party_get_attached_party_with_rank, ":attached_party", ":adv_camp", ":attached_party_rank"),
-                      (gt, ":attached_party", 0),
-                      (party_is_active, ":attached_party"),
-                      (party_detach, ":attached_party"),
-                    (try_end),
-          			# CC: Remove volunteers from the adv. camp.
-                    (call_script,"script_delete_volunteers_party",":adv_camp"),
-              			#(party_get_slot, ":volunteers", ":adv_camp", slot_town_volunteer_pt),
-              			#(try_begin),
-                  	#		(gt, ":volunteers", 0),
-                  	#		(party_is_active, ":volunteers"),
-                  	#		(party_detach, ":volunteers"),
-                  	#		(call_script, "script_safe_remove_party", ":volunteers"),
-          			    #(try_end),
-                    (disable_party, ":adv_camp"),
-                  (try_end),
-                                    
-                  # any enemy in the theater that has an advance camp elsewhere should return to defend their home theater
-                  (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
-                    (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
-                    (store_relation, ":rel", ":faction", ":enemy_faction"),
-                    (lt, ":rel", 0), # active enemy
-                    (faction_get_slot, ":home_theater", ":enemy_faction", slot_faction_home_theater),
-                    (eq, ":home_theater", ":next_theater"),
-                    (neg|faction_slot_eq, ":enemy_faction", slot_faction_active_theater, ":next_theater"),
-                    (faction_set_slot, ":enemy_faction", slot_faction_active_theater, ":home_theater"), #reset to home
-                    #dismantle advance camp and return
-                    (faction_get_slot, ":enemy_adv_camp", ":enemy_faction", slot_faction_advance_camp),
-                    (try_begin),
-                      (party_is_active, ":enemy_adv_camp"),
-                      (call_script, "script_destroy_center", ":enemy_adv_camp"),
-                      #(disable_party, ":enemy_adv_camp"),
-                    (try_end),
-                    (str_store_faction_name, s2, ":enemy_faction"),
-                    (try_begin),
-                      (store_relation, ":rel", "$players_kingdom", ":enemy_faction"),
-                      (lt, ":rel", 0),
-                      (assign, ":news_color", color_good_news),
-                    (else_try),
-                      (assign, ":news_color", color_bad_news),
-                    (try_end),
-                    (display_log_message, "@The hosts of {s2} march back to defend their homes!", ":news_color"),
-                  (try_end),
+            (store_current_hours, ":cur_hours"),
+            
+            (try_begin),
+              (neg|faction_slot_eq, ":faction", slot_faction_active_theater, ":next_theater"),
+              (display_log_message, "@The forces of {s2} march to {s15}!", ":news_color"),
+              (faction_set_slot, ":faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
+            (try_end),
+
+            (faction_set_slot, ":faction", slot_faction_active_theater, ":next_theater"),        
+            (faction_get_slot, ":adv_camp", ":faction", slot_faction_advance_camp),
                   
-                (try_end),
-              (else_try),
-                # ERROR (or victory!)
-                (assign, ":continue_loop", 0), # exit loop
-                #(str_store_faction_name, s2, ":faction"),
-                #(display_log_message, "@ERROR: Couldn't find a theater with enemies for {s2}.", 0xFF0000),
+            #dismantle any existing camp, emptying it of lords
+            (try_begin),
+              (party_is_active, ":adv_camp"),
+              (neg|party_slot_eq, ":adv_camp", slot_center_theater, ":next_theater"), #Don't move them if they are already there.
+              # detach all attached parties, in case there are parties in the camp 
+              (party_get_num_attached_parties, ":num_attached_parties", ":adv_camp"),
+              (try_for_range_backwards, ":attached_party_rank", 0, ":num_attached_parties"),
+                (party_get_attached_party_with_rank, ":attached_party", ":adv_camp", ":attached_party_rank"),
+                (gt, ":attached_party", 0),
+                (party_is_active, ":attached_party"),
+                (party_detach, ":attached_party"),
               (try_end),
-            (try_end), # try_for_range, ":unused"
-          (try_end), # end find another theater
-        (try_end), # end update active theaters       
+              # CC: Remove volunteers from the adv. camp.
+              (call_script,"script_delete_volunteers_party",":adv_camp"),
+              (disable_party, ":adv_camp"),
+            (try_end),
+          (try_end),
+        (else_try),
+          # ERROR (or victory!)
+          (assign, ":continue_loop", 0), # exit loop
+          #(str_store_faction_name, s2, ":faction"),
+          #(display_log_message, "@ERROR: Couldn't find a theater with enemies for {s2}.", 0xFF0000),
+        (try_end),
+      (try_end), # try_for_range, ":unused"
+    (try_end), # end find another theater
+  (try_end), # end update active theaters       
 ]),
  
 # script_find_next_theater
@@ -2896,7 +2887,7 @@ ai_scripts = [
 
 	(try_begin),
 		(is_between, ":center", advcamps_begin, advcamps_end), # advance camps not replaced by ruins
-		#reestablish the advance camp in 3+ days     
+		#reestablish the advance camp in 3+ days - 10 days now (Kham)    
 		(store_current_hours, ":cur_hours"),
 		(faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
 		(faction_get_slot, ":theater", ":center_faction", slot_faction_home_theater),
@@ -2907,6 +2898,19 @@ ai_scripts = [
 			(party_set_slot, ":camp_pointer", slot_camp_place_occupied, 0),
 		(try_end),
 		(disable_party, ":center"),
+    (faction_get_slot, ":home_of_destroyed_adv_camp", ":center_faction", slot_faction_home_theater),
+    (faction_get_slot, ":current_active_theater", ":center_faction", slot_faction_active_theater),
+    (faction_set_slot, ":center_faction", slot_faction_active_theater, ":home_of_destroyed_adv_camp"), #Move them back home.
+    (faction_set_slot, ":center_faction", slot_faction_theater_retreated_from, ":current_active_theater"), #Store where they retreated from
+    (str_store_faction_name, s2, ":center_faction"),
+    (try_begin),
+      (store_relation, ":rel", "$players_kingdom", ":center_faction"),
+      (lt, ":rel", 0),
+      (assign, ":news_color", color_good_news),
+    (else_try),
+      (assign, ":news_color", color_bad_news),
+    (try_end),
+    (display_log_message, "@The hosts of {s2} retreat back to their homes!", ":news_color"),
 	(else_try),
 		(party_set_slot, ":center", slot_center_destroyed, 1), # DESTROY!
 		(party_set_flags, ":center", pf_is_static|pf_always_visible|pf_hide_defenders|pf_label_small, 1),

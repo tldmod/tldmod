@@ -2666,6 +2666,38 @@ simple_triggers = [
 		(try_end),
 		(display_log_message, "@The forces of {s2} established an advanced camp in {s15}!", ":news_color"),
 		(call_script, "script_update_center_notes", ":adv_camp"),
+
+    # any enemy in the theater that has an advance camp elsewhere should return to defend their home theater
+    (try_for_range, ":adv_camp_faction", kingdoms_begin, kingdoms_end),
+      (faction_slot_eq, ":adv_camp_faction", slot_faction_state, sfs_active),
+      (store_relation, ":rel", ":faction", ":adv_camp_faction"),
+      (lt, ":rel", 0), # active enemy
+      (faction_get_slot, ":home_theater", ":adv_camp_faction", slot_faction_home_theater),
+      (party_slot_eq, ":adv_camp", slot_center_theater, ":home_theater"),
+      #(neg|faction_slot_eq, ":enemy_faction", slot_faction_active_theater, ":next_theater"),
+     
+      #dismantle advance camp and return
+      (faction_get_slot, ":established_adv_camp", ":adv_camp_faction", slot_faction_advance_camp),
+      (try_begin),
+        (party_is_active, ":established_adv_camp"),
+        (call_script, "script_destroy_center", ":established_adv_camp"),
+        #(disable_party, ":enemy_adv_camp"),
+      (try_end),
+      (str_store_faction_name, s2, ":adv_camp_faction"),
+      (try_begin),
+        (store_relation, ":rel", "$players_kingdom", ":adv_camp_faction"),
+        (lt, ":rel", 0),
+        (assign, ":news_color", color_bad_news),
+      (else_try),
+        (assign, ":news_color", color_good_news),
+      (try_end),
+      (try_begin),
+        (neg|faction_slot_eq, ":adv_camp_faction", slot_faction_active_theater, ":home_theater"), #If they are not yet home, 
+        (display_log_message, "@The hosts of {s2} march back to defend their homes!", ":news_color"),
+      (try_end),
+      (faction_set_slot, ":adv_camp_faction", slot_faction_active_theater, ":home_theater"), #reset to home
+    (try_end),
+
 		# fill the garrison if needed
 		(assign, ":garrison_strength", 30), #InVain: was 20, increased to counter lowered reinforcements for centers  
 		(party_get_slot, ":garrison_limit", ":adv_camp", slot_center_garrison_limit),
@@ -3041,6 +3073,81 @@ simple_triggers = [
   (try_end),
 ]),
 
+# Update Active Theaters Trigger
+
+(24, 
+  [
+    (ge, "$tld_war_began", 1),
+
+    #(display_message, "@DEBUG: Update Active Theaters Trigger Fired", color_good_news),
+
+    #Check if there are any factions that retreated.
+
+    (try_for_range, ":retreated_faction", kingdoms_begin, kingdoms_end),
+      (faction_slot_eq, ":retreated_faction", slot_faction_state, sfs_active),
+      (faction_get_slot, ":theater_retreated_from", ":retreated_faction", slot_faction_theater_retreated_from),
+      (gt, ":theater_retreated_from", 0), #must have retreated
+      (faction_get_slot, ":current_active_theater", ":retreated_faction", slot_faction_active_theater),
+      (call_script, "script_find_next_theater", ":retreated_faction", ":current_active_theater"), #Check Next Theater from retreated faction's home theater
+      (assign, ":next_theater_after_home", reg0),
+      
+      (call_script, "script_check_active_factions_in_theater", ":next_theater_after_home", ":retreated_faction"), #Check if there are enemies in the next theater after home
+      (assign, ":factions_still_active_1", reg0),
+      (call_script, "script_check_active_advance_camps", ":next_theater_after_home", ":retreated_faction"), #Check if there are any adv camps there
+      (assign, ":adv_camps_still_present_1", reg0),
+      
+      # We first will check if the next theater from home has enemies. If there are, move active theater there.
+      # If there are no more enemies there, we move to the one after. Even if there are no enemies there,
+      # it is fine, because the update theater script will run right after.
+      # Example: Mordor retreated from Center Theater. Next Theater from home is Rohan
+      # If there are enemies there, then move to Rohan. If not, look for the next theater after Rohan and move there.
+        
+      (try_begin),
+        (this_or_next|eq, ":factions_still_active_1", 0), #There are still active factions there
+        (eq, ":adv_camps_still_present_1", 0), #Or there are still advance camps
+        (faction_set_slot, ":retreated_faction", slot_faction_active_theater, ":theater_retreated_from"), #set this as their active theater
+        (assign, ":final_theater", ":theater_retreated_from"),
+      (else_try), #There are no more enemies in the next theater
+        (call_script, "script_find_next_theater", ":retreated_faction", ":next_theater_after_home"), #Check the 3rd theater
+        (assign, ":third_theater", reg0),
+        (faction_set_slot, ":retreated_faction", slot_faction_active_theater, ":third_theater"), #set their active theater to the third theater.
+        (assign, ":final_theater", ":third_theater"),
+      (try_end),
+
+      (call_script, "script_theater_name_to_s15", ":final_theater"),
+      (str_store_faction_name, s2, ":retreated_faction"),
+      (try_begin),
+        (store_relation, ":rel", "$players_kingdom", ":retreated_faction"),
+        (gt, ":rel", 0),
+        (assign, ":news_color", color_good_news),
+      (else_try),
+        (assign, ":news_color", color_bad_news),
+      (try_end),
+
+      (store_current_hours, ":cur_hours"),
+      
+      (display_log_message, "@The forces of {s2} have regrouped and march on to {s15}!", ":news_color"),
+      (faction_set_slot, ":retreated_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
+      (faction_set_slot, ":retreated_faction", slot_faction_theater_retreated_from, 0), #reset retreated slot
+    (try_end),
+
+    # Run the Update Theaters Script again to move adv camps when a theater has been cleared before a faction gets defeated.
+
+    (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+      (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
+      (faction_get_slot, ":faction_theater", ":faction", slot_faction_active_theater),
+      (call_script, "script_check_active_factions_in_theater", ":faction_theater", ":faction"),
+      (eq, reg0, 1), 
+      (call_script, "script_check_active_advance_camps", ":faction_theater", ":faction"),
+      (eq, reg0, 1),
+      (assign, ":theater_cleared", 1),
+    (try_end),
+
+    (eq, ":theater_cleared", 1),
+    (call_script, "script_update_active_theaters"),
+    
+
+]),
 
 ##############################################
 #trigger reserved for future save game compatibility
@@ -3052,7 +3159,7 @@ simple_triggers = [
 #trigger reserved for future save game compatibility
 #(999,[]),   # Replaced by cannibalism trigger
 #trigger reserved for future save game compatibility
-(999,[]),
+#(999,[]), #Replaced by Update Theaters trigger
 #trigger reserved for future save game compatibility
 (999,[]),   
 #trigger reserved for future save game compatibility
