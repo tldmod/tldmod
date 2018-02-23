@@ -460,7 +460,7 @@ scn_castle_1_prison castle_1_prison 1 interior_prison_a bo_interior_prison_a -10
   0 
   0 
  0 
-scn_village_1 village_1 256 none none 0 0 100 100 -100 0x0000000030081763000589620000338e00004f2c00005cfb 
+scn_village_1 village_1 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
  outer_terrain_plain 
@@ -600,10 +600,10 @@ scn_goblin_south_outpost_center goblin_south_outpost_center 256 none none 0 0 10
   0 
   0 
  outer_mountains2west 
-scn_woodsmen_village2_center woodsmen_village2_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_woodsmen_village2_center woodsmen_village2_center 256 none none 0 0 100 100 -100 0x00000000b0000500000461190000482500006c26000038f2 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_beorning_village_center beorning_village_center 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 
@@ -1172,10 +1172,10 @@ scn_rivendell_camp_siege rivendell_camp_siege 256 none none 0 0 100 100 -100 0x0
   0 
   1  833 
  outer_terrain_plain 
-scn_woodsmen_village2_siege woodsmen_village2_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
+scn_woodsmen_village2_siege woodsmen_village2_siege 256 none none 0 0 100 100 -100 0x00000000b0000500000461190000482500006c26000038f2 
   0 
   0 
- outer_terrain_plain 
+ outer_terrain_forest 
 scn_beorning_village_siege beorning_village_siege 256 none none 0 0 100 100 -100 0x000000073000148000025896000074e600006c260000125a 
   0 
   0 

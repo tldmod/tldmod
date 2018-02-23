@@ -1063,7 +1063,12 @@ fauna_kinds = [
   [['dead_man_gondor_sitting_1', '0'],
    ['dead_man_gondor_sitting_2', '0'],
    ['dead_man_gondor_sitting_3', '0'],]), 
-   
+
+ ('tree_stump',
+  0,
+  [['tree_stump_a', 'bo_tree_stump_a'],
+   ['tree_stump_b', 'bo_tree_stump_b'],
+   ['tree_stump_c', 'bo_tree_stump_c'],]),    
    ]
 
 
