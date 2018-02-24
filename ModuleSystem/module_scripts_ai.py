@@ -2482,10 +2482,8 @@ ai_scripts = [
     (store_relation, ":rel", ":faction", ":adv_camp_faction"),
     (lt, ":rel", 0), # active enemy
     (faction_get_slot, ":enemy_faction_adv_camp", ":adv_camp_faction", slot_faction_advance_camp),
-    (faction_get_slot, ":enemy_active_theater", ":adv_camp_faction", slot_faction_active_theater),
-    (faction_slot_eq, ":enemy_active_theater", slot_faction_active_theater, ":active_theater"),
-    (party_slot_eq, ":enemy_faction_adv_camp", slot_center_theater, ":active_theater"),
     (party_is_active, ":enemy_faction_adv_camp"),
+    (party_slot_eq, ":enemy_faction_adv_camp", slot_center_theater, ":active_theater"),
     (assign, ":adv_camps_cleared", 0),
   (try_end),
 
@@ -2509,12 +2507,16 @@ ai_scripts = [
   (assign, ":theater_cleared", 0),
 
   (try_begin),
+    (gt, "$tld_war_began", 1), #Two Towers
+    (assign, ":theater_cleared", 0),
+  (else_try),
     (eq, ":active_theater", theater_SE),
       (try_begin),
         (neq, ":side", faction_side_good),
         (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_defeated), #If Gondor Is defeated,
         (assign, ":theater_cleared", 1), #theater is cleared
       (else_try),
+        (eq, ":side", faction_side_good),
         (faction_slot_eq, "fac_mordor", slot_faction_state, sfs_defeated), #If Southern Evil are all defeated
         (faction_slot_eq, "fac_harad",  slot_faction_state, sfs_defeated),
         (faction_slot_eq, "fac_umbar",  slot_faction_state, sfs_defeated),
@@ -2530,6 +2532,7 @@ ai_scripts = [
         (faction_slot_eq, "fac_rohan",    slot_faction_state, sfs_defeated), #If Rohan Is defeated,
         (assign, ":theater_cleared", 1), #theater is cleared
       (else_try),
+        (eq, ":side", faction_side_good),
         (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_defeated), #If SW Evil are all defeated
         (faction_slot_eq, "fac_dunland",  slot_faction_state, sfs_defeated),
         (assign, ":theater_cleared", 1), #Theater is Cleared.
@@ -2544,6 +2547,7 @@ ai_scripts = [
         (faction_slot_eq, "fac_guldur", slot_faction_state, sfs_defeated),
         (assign, ":theater_cleared", 1), #theater is cleared
       (else_try),
+        (neq, ":side", faction_side_good),
         (faction_slot_eq, "fac_imladris",  slot_faction_state, sfs_defeated), #If Center Good is defeated
         (faction_slot_eq, "fac_lorien", slot_faction_state, sfs_defeated),
         (assign, ":theater_cleared", 1), #Theater is Cleared.
@@ -2559,6 +2563,7 @@ ai_scripts = [
         (faction_slot_eq, "fac_beorn", slot_faction_state, sfs_defeated),
         (assign, ":theater_cleared", 1), #theater is cleared
       (else_try),
+        (eq, ":side", faction_side_good),
         (faction_slot_eq, "fac_gundabad",  slot_faction_state, sfs_defeated), #If Northern Evil are defeated
         (faction_slot_eq, "fac_rhun", slot_faction_state, sfs_defeated),
         (assign, ":theater_cleared", 1), #Theater is Cleared.

@@ -3125,6 +3125,7 @@ simple_triggers = [
       (try_end),
 
       (store_current_hours, ":cur_hours"),
+      (val_sub, ":cur_hours", 10*24), #10 day penalty when defeated.
       
       (display_log_message, "@The forces of {s2} have regrouped and march on to {s15}!", ":news_color"),
       (faction_set_slot, ":retreated_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
