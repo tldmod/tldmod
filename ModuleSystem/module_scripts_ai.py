@@ -2507,11 +2507,16 @@ ai_scripts = [
   (assign, ":theater_cleared", 0),
 
   (try_begin),
-    (gt, "$tld_war_began", 1), #Two Towers
-    (assign, ":theater_cleared", 0),
-  (else_try),
     (eq, ":active_theater", theater_SE),
       (try_begin),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_hand),
+        (faction_slot_eq, "fac_mordor", slot_faction_state, sfs_defeated), #If Southern Evil are all defeated
+        (faction_slot_eq, "fac_harad",  slot_faction_state, sfs_defeated),
+        (faction_slot_eq, "fac_umbar",  slot_faction_state, sfs_defeated),
+        (faction_slot_eq, "fac_khand",  slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
         (neq, ":side", faction_side_good),
         (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_defeated), #If Gondor Is defeated,
         (assign, ":theater_cleared", 1), #theater is cleared
@@ -2528,6 +2533,12 @@ ai_scripts = [
   (else_try),
     (eq, ":active_theater", theater_SW),
       (try_begin),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_eye),
+        (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_defeated), #If SW Evil are all defeated
+        (faction_slot_eq, "fac_dunland",  slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
         (neq, ":side", faction_side_good),
         (faction_slot_eq, "fac_rohan",    slot_faction_state, sfs_defeated), #If Rohan Is defeated,
         (assign, ":theater_cleared", 1), #theater is cleared
@@ -2542,6 +2553,16 @@ ai_scripts = [
   (else_try),
     (eq, ":active_theater", theater_C),
       (try_begin),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_eye),
+        (faction_slot_eq, "fac_moria",    slot_faction_state, sfs_defeated), #If Center Evil is defeated
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_hand),
+        (faction_slot_eq, "fac_guldur", slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #theater is cleared
+      (else_try),
         (eq, ":side", faction_side_good),
         (faction_slot_eq, "fac_moria",    slot_faction_state, sfs_defeated), #If Center Evil is defeated
         (faction_slot_eq, "fac_guldur", slot_faction_state, sfs_defeated),
@@ -2556,6 +2577,16 @@ ai_scripts = [
       (try_end),
   (else_try), #Theater_N
       (try_begin),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_hand),
+        (faction_slot_eq, "fac_rhun", slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_eye),
+        (faction_slot_eq, "fac_gundabad", slot_faction_state, sfs_defeated),
+        (assign, ":theater_cleared", 1), #Theater is Cleared.
+      (else_try),
         (neq, ":side", faction_side_good),
         (faction_slot_eq, "fac_dale",    slot_faction_state, sfs_defeated), #If Northern GOOD are defeated
         (faction_slot_eq, "fac_dwarf", slot_faction_state, sfs_defeated),
@@ -2609,10 +2640,24 @@ ai_scripts = [
           (assign, ":active_factions_in_next_theater", reg0),
           (call_script, "script_check_active_advance_camps", ":next_theater", ":faction"), 
           (assign, ":active_adv_camps_in_next_theater", reg0),
-          (this_or_next|eq, ":active_factions_in_next_theater", 0), #If there are still active factions in the next theater
-          (eq, ":active_adv_camps_in_next_theater", 0), #Or if there are active advance camps in the next theater
-          (assign, ":theater_cleared", 0), #Enemies are found
-          
+          (try_begin),
+            (eq, ":active_factions_in_next_theater", 1),
+            (eq, ":active_adv_camps_in_next_theater", 1),
+            (call_script, "script_find_next_theater", ":faction", ":next_theater"),
+            (assign, ":next_theater", reg0),
+             # find enemies in the next theater
+            (call_script, "script_check_active_factions_in_theater", ":next_theater", ":faction"),
+            (assign, ":active_factions_in_next_theater_2", reg0),
+            (call_script, "script_check_active_advance_camps", ":next_theater", ":faction"), 
+            (assign, ":active_adv_camps_in_next_theater_2", reg0),
+            (this_or_next|eq, ":active_factions_in_next_theater_2", 0), #If there are still active factions in the next theater
+            (eq, ":active_adv_camps_in_next_theater_2", 0), #Or if there are active advance camps in the next theater
+            (assign, ":theater_cleared", 0), #Enemies are found
+          (else_try),
+            (this_or_next|eq, ":active_factions_in_next_theater", 0), #If there are still active factions in the next theater
+            (eq, ":active_adv_camps_in_next_theater", 0), #Or if there are active advance camps in the next theater
+            (assign, ":theater_cleared", 0), #Enemies are found
+          (try_end),
           # if enemies found, move active theater
           (try_begin),
             (eq, ":theater_cleared", 0),
