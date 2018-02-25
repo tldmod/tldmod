@@ -3091,7 +3091,12 @@ simple_triggers = [
       (call_script, "script_find_next_theater", ":retreated_faction", ":current_active_theater"), #Check Next Theater from retreated faction's home theater
       (assign, ":next_theater_after_home", reg0),
       
-      (call_script, "script_check_active_factions_in_theater", ":next_theater_after_home", ":retreated_faction"), #Check if there are enemies in the next theater after home
+      (try_begin),
+        (eq, "$tld_war_began", 2),
+        (call_script, "script_wott_check_active_factions_in_theater", ":next_theater_after_home", ":retreated_faction"),
+      (else_try),
+        (call_script, "script_check_active_factions_in_theater", ":next_theater_after_home", ":retreated_faction"),
+      (try_end),
       (assign, ":factions_still_active_1", reg0),
       (call_script, "script_check_active_advance_camps", ":next_theater_after_home", ":retreated_faction"), #Check if there are any adv camps there
       (assign, ":adv_camps_still_present_1", reg0),
@@ -3137,7 +3142,12 @@ simple_triggers = [
     (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
       (faction_slot_eq, ":faction", slot_faction_state, sfs_active),
       (faction_get_slot, ":faction_theater", ":faction", slot_faction_active_theater),
+    (try_begin),
+      (eq, "$tld_war_began", 2),
+      (call_script, "script_wott_check_active_factions_in_theater", ":faction_theater", ":faction"),
+    (else_try),
       (call_script, "script_check_active_factions_in_theater", ":faction_theater", ":faction"),
+    (try_end),
       (eq, reg0, 1), 
       (call_script, "script_check_active_advance_camps", ":faction_theater", ":faction"),
       (eq, reg0, 1),
