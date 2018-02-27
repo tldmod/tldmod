@@ -629,5 +629,6 @@ script_troop_detail_change_screen = 627
 script_add_troop_to_cur_tableau_for_troop_detail_dummy = 628
 script_game_troop_upgrades_button_clicked = 629
 script_init_item_score = 630
+script_add_troop_to_custom_armor_tableau = 631
 
 

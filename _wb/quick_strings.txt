@@ -1,4 +1,4 @@
-1586
+1587
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -135,6 +135,7 @@ qstr_{s2}^{s3} {s2}^{s3}
 qstr_Weapons Weapons
 qstr_Armors Armors
 qstr_Others Others
+qstr_{s1}_has_{reg1}_comp {s1}_has_{reg1}_component_meshes
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:

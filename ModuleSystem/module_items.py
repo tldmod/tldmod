@@ -26,6 +26,35 @@ from module_info import wb_compile_switch as is_a_wb_item
 ####################################################################################################################
 #
 
+def custom_reskin(item):
+  return (ti_on_init_item, [
+    # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
+    (store_trigger_param_2, ":troop_no"),
+    (str_clear, s1),
+    (item_get_slot, ":start", item, slot_item_materials_begin),
+    (item_get_slot, ":end", item, slot_item_materials_end),
+    (store_sub, ":total", ":end", ":start"),
+    (gt, ":total", 0),
+    (try_begin),
+      (gt, ":troop_no", -1),
+      (troop_is_hero, ":troop_no"),
+      (item_get_slot, ":value", item, slot_item_player_color),
+      (neq, ":value", -1),
+      (val_mod, ":value", ":total"),
+      (val_add, ":value", ":start"),
+    (else_try),
+      (store_random_in_range, ":value", ":start", ":end"),
+    (try_end),
+    (try_begin),
+      (str_store_string, s1, ":value"),
+      (cur_item_set_material, s1, 0),
+    (try_end),
+    ])
+
+# Dunde's 1 Liner Heraldic Code
+def heraldic(item_tableau):
+  return (ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", item_tableau, ":agent_no", ":troop_no")])
+
 ###Some constants for ease of use.
 ### Kham - Unused imods for mesh hack
 ### poor old cheap well_made sharp deadly exquisite powerful rough fresh day_old two-day_old rotten
@@ -1351,6 +1380,10 @@ items =[
 
 ] + (is_a_wb_item==1 and [
 
+#Padded Cloth Custom
+["gondor_custom", "Custom Gondor", [("gondor_knight",0)], itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(20)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(0),imodbits_elf_armor,
+ [custom_reskin("itm_gondor_custom")]], 
+
 ["stones_siege",         "Siege Stones", [("gon_castle_h_stairs_b",0)], itp_type_thrown |itp_unique|itp_primary ,itcf_throw_stone, 10 , weight(5)|difficulty(1)|spd_rtng(50) | shoot_speed(4) | thrust_damage(28 ,  blunt)|max_ammo(20)|weapon_length(200),imodbits_none,
 [
     (ti_on_missile_hit,
@@ -1405,6 +1438,8 @@ items =[
 	(try_end),
 	]),
 ]],
+
+
 
 ] or []) + [ 
 

@@ -3098,6 +3098,7 @@ game_menus = [
     ("enable_kham_cheat",[],"Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
+    ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_gondor_custom"),]),
     ] or []) + [
     ("remove_garrison",[],"Remove A Center of Your Faction's Garrison", [
     	(assign, ":end", 100),
@@ -3149,7 +3150,7 @@ game_menus = [
 		(else_try),
 			(display_message, "@You are not in the right region to spawn animal ambushes. Please go to N Mirkwood, S Mirkwood, Grey Mountains, or Misty Mountains", color_bad_news),
 		(try_end)]),
-    ("check_if_capital",[], "How Many Centers Left (Gondor)", [(call_script, "script_cf_check_if_only_capital_left", "p_town_pinnath_gelin")]),
+    #("check_if_capital",[], "How Many Centers Left (Gondor)", [(call_script, "script_cf_check_if_only_capital_left", "p_town_pinnath_gelin")]),
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_dev_menu")]),
  ]),
 

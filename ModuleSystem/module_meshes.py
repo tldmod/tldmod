@@ -508,4 +508,6 @@ meshes+=[
     ("pic_troop_trees", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
     ("pic_units_details", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
+("cb_ui_main", 0, "cb_ui_main", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+("mp_score_a", 0, "mp_score_a", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

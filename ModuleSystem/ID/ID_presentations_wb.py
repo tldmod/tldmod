@@ -27,3 +27,4 @@ prsnt_troop_tree = 25
 prsnt_troop_detail = 26
 prsnt_display_agent_labels = 27
 prsnt_all_items = 28
+prsnt_customize_armor = 29

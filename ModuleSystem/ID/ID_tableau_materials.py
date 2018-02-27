@@ -49,3 +49,6 @@ tableau_defiled_dale_armor = 47
 tableau_defile_troop = 48
 tableau_troop_tree_pic = 49
 tableau_troop_detail_dummy_pic = 50
+tableau_custom_armor_window = 51
+tableau_custom_armor_alpha_mask = 52
+tableau_custom_armor_color = 53

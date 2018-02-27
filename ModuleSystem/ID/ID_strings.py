@@ -2197,5 +2197,16 @@ str_beorn_gift3 = 2195
 str_beorn_gift4 = 2196
 str_cmenu_follow = 2197
 str_fake_party = 2198
+str_reset_to_default = 2199
+str_done = 2200
+str_gondor1 = 2201
+str_gondor2 = 2202
+str_gondor3 = 2203
+str_gondor4 = 2204
+str_gondor5 = 2205
+str_gondor6 = 2206
+str_gondor7 = 2207
+str_gondor8 = 2208
+str_gondor_end = 2209
 
 

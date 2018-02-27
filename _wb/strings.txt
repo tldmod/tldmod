@@ -1,5 +1,5 @@
 stringsfile version 1
-2199
+2210
 str_no_string NO_STRING!
 str_empty_string _
 str_yes Yes.
@@ -2199,3 +2199,14 @@ str_beorn_gift3 Amber_Necklaces
 str_beorn_gift4 Well_Trained_Ponies
 str_cmenu_follow Accompany
 str_fake_party TLD_temp_terrain_finder,_you_shouldn't_be_seeing_this_in_a_savegame_[!]
+str_reset_to_default Reset_to_Default
+str_done Done
+str_gondor1 Gondor1
+str_gondor2 Gondor2
+str_gondor3 Gondor3
+str_gondor4 Gondor4
+str_gondor5 Gondor5
+str_gondor6 Gondor6
+str_gondor7 Gondor7
+str_gondor8 Gondor8
+str_gondor_end Gondor1

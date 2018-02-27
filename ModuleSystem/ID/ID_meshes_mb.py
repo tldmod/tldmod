@@ -373,5 +373,7 @@ mesh_draw_victory_dale = 371
 mesh_draw_victory_lorien = 372
 mesh_pic_troop_trees = 373
 mesh_pic_units_details = 374
+mesh_cb_ui_main = 375
+mesh_mp_score_a = 376
 
 

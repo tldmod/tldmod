@@ -445,8 +445,14 @@ simple_triggers = [
       #TLD: ease siege requirements with player level to get a more dynamic game
       (store_character_level, ":player_level", "trp_player"),
       (try_begin),
-        (gt, ":player_level", tld_player_level_to_own_chest), #some min level needed to do this
-        (store_sub, ":new_fac_str_siegable", ":player_level", tld_player_level_to_own_chest), #1-..
+        (gt, "$tld_player_level_to_begin_war", tld_player_level_to_own_chest), #If player chooses to change war start level higher than the constant
+        (assign, ":siege_requirements_relax", "$tld_player_level_to_begin_war"),
+      (else_try),
+        (assign, ":siege_requirements_relax", tld_player_level_to_own_chest),
+      (try_end),
+      (try_begin),
+        (gt, ":player_level", ":siege_requirements_relax"), #some min level needed to do this
+        (store_sub, ":new_fac_str_siegable", ":player_level", ":siege_requirements_relax"), #1-..
         (val_mul, ":new_fac_str_siegable", "$tld_option_siege_relax_rate"),
         (val_add, ":new_fac_str_siegable", fac_str_weak),
         (neq, ":new_fac_str_siegable", "$g_fac_str_siegable"), #this is how we determine if the player leveled up :); also makes old savegames work

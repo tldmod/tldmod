@@ -3078,4 +3078,20 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 
 ("cmenu_follow", "Accompany"),
 ("fake_party",   "TLD temp terrain finder, you shouldn't be seeing this in a savegame [!]"),
+
+  ("reset_to_default", "Reset to Default"),
+  ("done", "Done"),
+  
+# Kham - Armor Customization Strings
+
+# Padded Cloth Begin
+("gondor1", "Gondor1"),
+("gondor2", "Gondor2"),
+("gondor3", "Gondor3"),  
+("gondor4", "Gondor4"),
+("gondor5", "Gondor5"),
+("gondor6", "Gondor6"),
+("gondor7", "Gondor7"),  
+("gondor8", "Gondor8"),
+("gondor_end", "Gondor1"),
 ]
