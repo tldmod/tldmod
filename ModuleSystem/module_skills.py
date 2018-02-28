@@ -47,7 +47,7 @@ skills = [
   ("reserved_3","Reserved Skill 3",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   ("reserved_4","Reserved Skill 4",sf_base_att_cha|sf_inactive,10,"This is a reserved skill."), 
   ("persuasion","Wildcraft", sf_base_att_cha|sf_effects_party,10, "The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)"),
-  ("engineer","Crafting",sf_base_att_int|sf_effects_party,0,"Each point to this skill both decreases the time to craft and upgrade equipment, and allows better quality upgrades. (Party skill)"),
+  ("engineer","-----",sf_base_att_int|sf_effects_party,0,"-----"),
   ("first_aid", "First Aid",sf_base_att_int|sf_effects_party,10,"Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)"), 
   ("surgery","Surgery",sf_base_att_int|sf_effects_party,10,"Each point to this skill gives a 4%% chance that a mortally struck party member will be wounded rather than killed. (Party skill)"), 
   ("wound_treatment","Wound Treatment",sf_base_att_int|sf_effects_party,10,"Party healing speed is increased by 20%% per level of this skill. (Party skill)"), 

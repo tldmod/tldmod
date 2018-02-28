@@ -2650,7 +2650,7 @@ simple_triggers = [
 		(neg|party_is_active, ":adv_camp"), #not already established
 
 		(faction_get_slot, ":camp_requested_hours", ":faction", slot_faction_advcamp_timer),
-		(val_add, ":camp_requested_hours", 10*24), # 3 days after faction changes theater or previous camp destroyed - Changed to 10 Days (kham)
+		(val_add, ":camp_requested_hours", 5*24), # 3 days after faction changes theater or previous camp destroyed - Changed to 5 Days (kham)
 		(ge, ":cur_hours", ":camp_requested_hours"),
 
 		(store_random_in_range, ":rand", 0, 100),
