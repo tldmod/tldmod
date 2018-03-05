@@ -2696,7 +2696,7 @@ scene_props = [
 ("morgul_tower_7",0,"morgul_gondor_tower_7_evil","bo_gondor_tower_7", []),
 ("morgul_wall",0,"morgul_mt_wall_evil","bo_morgul_mt_wall_evil", []),
 ("morgul_gate_tower",0,"morgul_mt_gate_tower_evil","bo_mt_tower", []),
-("morgul_gate_house",0,"morgul_mt_gate_house_evil","bo_mt_gate_house", [(ti_on_scene_prop_init,
+("morgul_gate_house",0,"morgul_mt_gate_house_evil","bo_morgul_mt_gate_house_evil", [(ti_on_scene_prop_init,
             [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),
 			 (else_try),                      (set_fog_distance,1000,0x10261E),
 			 (try_end),])]),

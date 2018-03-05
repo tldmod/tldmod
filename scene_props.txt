@@ -4836,7 +4836,7 @@ spr_morgul_wall 0 0 morgul_mt_wall_evil bo_morgul_mt_wall_evil 0
 spr_morgul_gate_tower 0 0 morgul_mt_gate_tower_evil bo_mt_tower 0
 
 
-spr_morgul_gate_house 0 0 morgul_mt_gate_house_evil bo_mt_gate_house 1
+spr_morgul_gate_house 0 0 morgul_mt_gate_house_evil bo_morgul_mt_gate_house_evil 1
 -40  6 4 0 2273 0 1798 2 450 469277 5 0 1798 2 1000 1058334 3 0 
 
 
