@@ -237,7 +237,7 @@ field_ai_triggers = [
   dplmc_horse_speed,
   
   # On spawn, mark lancers, spears, horse archers using a slot. Force lancers to equip lances, horse archers to equip bows 
-  (ti_on_agent_spawn, 0, 0, [], [(store_trigger_param_1, ":agent"),(call_script, "script_weapon_use_classify_agent", ":agent")]), 
+  (ti_on_agent_spawn, 0, 0, [], [(store_trigger_param_1, ":agent"),(call_script, "script_weapon_use_classify_agent", ":agent"), (agent_set_slot, ":agent", slot_team_shield_order, 0),]), 
   
   (2, 0, 0, [(this_or_next|party_slot_eq, "p_main_party", slot_party_pref_wu_lance, 1),(this_or_next|party_slot_eq, "p_main_party", slot_party_pref_wu_harcher, 1),(party_slot_eq, "p_main_party", slot_party_pref_wu_spear, 1),(store_mission_timer_a, reg0),(gt, reg0, 4)],
   
@@ -1564,3 +1564,30 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [(eq,"$field_ai_horse_archer",1)],
             (try_end),
         (try_end),
   ])
+
+
+order_weapon_type_triggers = [     
+  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
+             (key_is_down, key_left_control),
+             (key_clicked, key_for_onehand)], [(call_script, "script_order_weapon_type_switch", onehand)]),
+
+  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
+             (key_is_down, key_left_control),
+             (key_clicked, key_for_twohands)], [(call_script, "script_order_weapon_type_switch", twohands)]),
+
+  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
+             (key_is_down, key_left_control),
+             (key_clicked, key_for_polearms)], [(call_script, "script_order_weapon_type_switch", polearm)]), 
+
+  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
+             (key_is_down, key_left_control),
+             (key_clicked, key_for_ranged)], [(call_script, "script_order_weapon_type_switch", ranged)]),
+  
+  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
+             (key_is_down, key_left_control),
+             (key_clicked, key_for_shield_up)], [(call_script, "script_order_weapon_type_switch", shield)]),
+  
+  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
+             (key_is_down, key_left_control),
+             (key_clicked, key_for_noshield)], [(call_script, "script_order_weapon_type_switch", noshield)]),
+  ]

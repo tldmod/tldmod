@@ -1,4 +1,4 @@
-1587
+1593
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -692,6 +692,12 @@ qstr_{s1}___Throwing:^ {s1}___Throwing:^
 qstr_{s1}___Slings: {s1}___Slings:
 qstr_{s2}_ {s2}-
 qstr__Click_on_the_troop_ (Click_on_the_troop_to_rotate_it)^^Click_on_pieces_of_gear_^(helmet,_armor,_gloves_and_boots)^_to_display_them.
+qstr_ready_bows_and_missi ready_bows_and_missiles
+qstr_ready_side_arms ready_side_arms
+qstr_ready_two_hander ready_two-hander
+qstr_ready_polearms ready_polearms
+qstr_shields_up shields_up
+qstr_doff_shields doff_shields
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!

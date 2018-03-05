@@ -784,7 +784,7 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
 	common_move_deathcam,
 ] or  
 
-  field_ai_triggers +[
+  field_ai_triggers + order_weapon_type_triggers +[
   common_init_deathcam_wb,
   common_start_deathcam_wb,
   

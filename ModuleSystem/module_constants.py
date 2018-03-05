@@ -2426,3 +2426,13 @@ custom_item_color_bits = 4
 message_positive = 0x33FF33
 message_negative = 0xFF3333
 message_neutral = 0xFFFF33
+
+#Order Weapon Switch
+slot_team_shield_order = 42
+
+key_for_onehand   = key_p
+key_for_twohands =  key_open_braces
+key_for_polearms =  key_close_braces
+key_for_ranged    = key_back_slash
+key_for_shield_up   = key_apostrophe
+key_for_noshield =  key_slash
