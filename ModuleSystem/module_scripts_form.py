@@ -1424,18 +1424,18 @@ formAI_scripts = [
 			(get_player_agent_no, "$fplayer_agent_no"), #get the player agent ID
 			(agent_is_alive, "$fplayer_agent_no"), #and the player has to be alive
 			(teams_are_enemies, "$fplayer_team_no", ":team_no"), #JL: the current VI team needs to be a hostile to the player's team
-			#(gt, ":nearest_threat_distance", 3000), #and if there is no cavalry threat within 30m
-			#(eq, ":enemy_nearest_gen_agent", "$fplayer_agent_no"), #and the nearest enemy unit (in relation to either AI inf or cav) must be the player character
+			(gt, ":nearest_threat_distance", 3000), #and if there is no cavalry threat within 30m
+			(eq, ":enemy_nearest_gen_agent", "$fplayer_agent_no"), #and the nearest enemy unit (in relation to either AI inf or cav) must be the player character
 			#(eq, ":nearest_target_guarded", 0), #and the nearest cavalry target is unguarded
 			#if basic conditions are met then 
 			(agent_get_position, pos17, "$fplayer_agent_no"), #get the position of the player
 			(agent_get_position, pos18, ":team_leader"),	#get position of AI leader
 			(get_distance_between_positions, ":duel_distance", pos18, pos17), #get the (duel) distance between AI leader and player
-			(le, ":duel_distance", 3000), #if duel distance is 30m or less
+			(le, ":duel_distance", 2000), #if duel distance is 30m or less - changed to 20m
 		#	(display_message, "@Team leader moves towards the player"),
 			(agent_set_scripted_destination, ":team_leader", pos17, 1),
 			(try_begin),
-				(le, ":duel_distance",2500), #if duel distance is 25m or less
+				(le, ":duel_distance",1500), #if duel distance is 25m or less - changed to 15m
 				#(agent_ai_set_always_attack_in_melee, ":team_leader", 1), #set the leader to offensive mode?
 				(agent_clear_scripted_mode, ":team_leader"),
 				(agent_set_division, ":team_leader", grc_heroes), #set the leader to group 3 (= grc_heroes)
