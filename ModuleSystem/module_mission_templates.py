@@ -602,7 +602,9 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     tld_ai_is_kicked,
     tld_melee_ai,
     #tld_footwork_melee_ai,
-    tld_improved_horse_archer_ai
+    tld_improved_horse_archer_ai,
+    hp_shield_init,
+    hp_shield_trigger
 
     
 ] or [] ) + [

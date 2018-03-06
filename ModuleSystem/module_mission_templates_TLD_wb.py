@@ -1566,6 +1566,8 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [(eq,"$field_ai_horse_archer",1)],
   ])
 
 
+# Order Weapon Type Triggers - Credit to Caba'drin (Kham)
+
 order_weapon_type_triggers = [     
   (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
              (key_is_down, key_left_control),
@@ -1590,4 +1592,64 @@ order_weapon_type_triggers = [
   (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
              (key_is_down, key_left_control),
              (key_clicked, key_for_noshield)], [(call_script, "script_order_weapon_type_switch", noshield)]),
-  ]
+]
+
+# HP Shields - Credit to Vyrn team (Kham)
+hp_shield_init = (ti_on_agent_spawn, 0, 0, [
+  (store_trigger_param_1, ":agent"),
+  (agent_is_human, ":agent"),
+  (agent_get_troop_id, ":troop_id", ":agent"),
+  (troop_get_slot, ":has_shield", ":troop_id", slot_troop_hp_shield),
+  (gt, ":has_shield", 0)],
+  
+  [
+    (store_trigger_param_1, ":agent"),
+    (agent_is_human, ":agent"),
+    (agent_get_troop_id, ":troop_id", ":agent"),
+    (troop_get_slot, ":shield", ":troop_id", slot_troop_hp_shield),
+    (agent_set_slot, ":agent", slot_agent_hp_shield_active, 1),
+    (agent_set_slot, ":agent", slot_agent_hp_shield, ":shield"),
+
+    #Debug
+    #(assign, reg2, ":shield"),
+    #(str_store_troop_name, s33, ":troop_id"),
+    #(display_message, "@{s33}: {reg2} set hp shield."),   
+
+  ])
+
+hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
+  (store_trigger_param_1, ":agent"),
+  (agent_is_human, ":agent"),
+  (agent_slot_eq, ":agent", slot_agent_hp_shield_active, 1)],
+  
+  [  
+    (store_trigger_param_1, ":agent"),
+    (store_trigger_param_2, ":dealer"),
+    (store_trigger_param_3, ":damage"),
+  
+    (agent_is_human, ":agent"),
+    (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
+    (try_begin),
+      (gt, ":current_hp_shield", 0),
+      (val_sub, ":current_hp_shield", ":damage"),
+      (val_max, ":current_hp_shield", 0),
+      (agent_set_slot, ":agent", slot_agent_hp_shield, ":current_hp_shield"),  
+    (else_try),
+      (agent_set_slot, ":agent", slot_agent_hp_shield_active, 0),
+    (try_end),
+      
+      #Debug
+      #(assign, reg3, ":current_hp_shield"),
+      #(display_message, "@Hp shield: {reg3} left."), 
+
+    (get_player_agent_no, ":player"),
+
+    (try_begin),
+      (eq, ":dealer", ":player"),
+      (val_div, ":damage", 2), 
+      (set_trigger_result, ":damage"),
+    (else_try),
+      (set_trigger_result, 0),
+    (try_end),
+  ])  
+

@@ -1959,7 +1959,15 @@ scripts = [
 	(item_set_slot, "itm_gondor_custom", slot_item_init_script, -1),
 	(item_set_slot, "itm_gondor_custom", slot_item_num_components, 1),
 
+	#Init HP shield
 
+	(try_for_range, ":has_hp_shield", heroes_begin, heroes_end),
+		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
+	(try_end),
+
+	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
+	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
+	(troop_set_slot, "trp_player", slot_troop_hp_shield, 200),
 
 	] or []) + [
 ]),    

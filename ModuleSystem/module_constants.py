@@ -2436,3 +2436,8 @@ key_for_polearms =  key_close_braces
 key_for_ranged    = key_back_slash
 key_for_shield_up   = key_apostrophe
 key_for_noshield =  key_slash
+
+#Modified Vyrn HP Shield - kham
+slot_troop_hp_shield = 154
+slot_agent_hp_shield_active = 43
+slot_agent_hp_shield = 44
