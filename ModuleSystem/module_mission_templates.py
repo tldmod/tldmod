@@ -604,7 +604,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     #tld_footwork_melee_ai,
     tld_improved_horse_archer_ai,
     hp_shield_init,
-    hp_shield_trigger
+    hp_shield_trigger,
+    health_restore_on_kill,
 
     
 ] or [] ) + [

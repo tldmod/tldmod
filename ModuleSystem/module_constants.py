@@ -2441,3 +2441,19 @@ key_for_noshield =  key_slash
 slot_troop_hp_shield = 154
 slot_agent_hp_shield_active = 43
 slot_agent_hp_shield = 44
+
+## Health Restore on Kill begin
+#  Rates listed below are per kill, not based on duration.  They are also % of health, not exact values.
+wp_hr_player_rate                  = 5
+wp_hr_strength_factor              = 4   # This is the value STR is divided by.  So 4 = .25% per point of Strength.
+wp_hr_leadership_factor            = 2   # This is the value Leadership is divided by.  Only non-heroes gain this.
+wp_hr_lord_rate                    = 15
+wp_hr_berserker_rate               = 10
+wp_hr_king_rate                    = 20
+wp_hr_common_rate                  = 5
+wp_hr_elite_rate                   = 15  # Currently unused.
+wp_hr_factor_difficulty            = 0   # This turns ON (1) or OFF (0) any code changes based on difficulty.
+wp_hr_diff_enemy_bonus             = 4   # Amount the health regeneration of enemies is boosted by per difficulty rank.
+wp_hr_diff_ally_penalty            = -3  # Amount the health regeneration of allies is reduced by per difficulty rank.
+wp_hr_debug                        = 0   # This turns ON (1) or OFF (0) all of the debug messages.
+## Health Restore on Kill end

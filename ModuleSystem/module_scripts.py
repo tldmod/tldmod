@@ -1967,7 +1967,11 @@ scripts = [
 
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
-	(troop_set_slot, "trp_player", slot_troop_hp_shield, 200),
+
+	#Init Health Regeneration on Kill
+
+	(assign, "$g_wp_player_hr_active", 1),      # Set to 0 to prevent player regeneration.  1 to activate.
+   	(assign, "$g_wp_ai_hr_active", 1),       	  # Set to 0 to prevent AI regeneration.  1 to activate.
 
 	] or []) + [
 ]),    
@@ -20823,17 +20827,17 @@ scripts = [
 		# (str_store_troop_name, 1, ":troop"),
 	# (try_end),
 
-	(try_begin), # player heal when berserker or has torque #MV: berserker only
-		(get_player_agent_no, ":player"),
+	#(try_begin), # player heal when berserker or has torque #MV: berserker only -- Kham - Revamped with Battle Kill Healing instead. 
+	#	(get_player_agent_no, ":player"),
 		#(player_has_item|this_or_next, "itm_dunlending_torque"),
-		(troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
-		(store_agent_hit_points, ":hp", ":player", 0),
-		(val_add, ":hp", 20), #MV: gain absolute 20%, instead of relative +25%
-		(val_min, ":hp", 100),
-		(agent_set_hit_points, ":player", ":hp", 0),
-		(str_store_string, s24, "str_trait_title_berserker"),
-		(display_message, "@{s24}: Some of your wounds healed!"),
-	(try_end),
+	#	(troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
+	#	(store_agent_hit_points, ":hp", ":player", 0),
+	#	(val_add, ":hp", 20), #MV: gain absolute 20%, instead of relative +25%
+	#	(val_min, ":hp", 100),
+	#	(agent_set_hit_points, ":player", ":hp", 0),
+	#	(str_store_string, s24, "str_trait_title_berserker"),
+	#	(display_message, "@{s24}: Some of your wounds healed!"),
+	#(try_end),
 
 	(try_begin), # heal classes acc to captainship
 		(this_or_next|troop_slot_eq, "trp_traits", slot_trait_archer_captain, 1),
@@ -25799,17 +25803,20 @@ if is_a_wb_script==1:
                      (this_or_next|eq, ":weapontype", itp_type_crossbow),
                      (eq, ":weapontype", itp_type_thrown),
                      (agent_set_wielded_item, ":agent", ":item"),
+                     (agent_set_slot, ":agent", slot_team_shield_order, -1),
                      (assign, ":end", ek_item_0),#loop breaker
                  (else_try),
                      (eq, ":ordertype", onehand), 
                      (str_store_string, s1, "@ready side arms"),
                      (eq, ":weapontype", itp_type_one_handed_wpn),
                      (agent_set_wielded_item, ":agent", ":item"),
+                     (agent_set_slot, ":agent", slot_team_shield_order, 2),
                      (assign, ":end", ek_item_0),#loop breaker
                  (else_try),
                      (eq, ":ordertype", twohands),
                      (str_store_string, s1, "@ready two-hander"),
                      (eq, ":weapontype", itp_type_two_handed_wpn),
+                     (agent_set_slot, ":agent", slot_team_shield_order, 2),
                      (agent_set_wielded_item, ":agent", ":item"),
                      (assign, ":end", ek_item_0),#loop breaker
 					 (agent_get_wielded_item, ":shield", ":agent", 1),
@@ -25885,6 +25892,7 @@ if is_a_wb_script==1:
                      (eq, ":weapontype", itp_type_thrown),
                      (agent_has_item_equipped, ":agent", ":item"),
                      (agent_set_wielded_item, ":agent", ":item"),
+                     (agent_set_slot, ":agent", slot_team_shield_order, -1),
                      (assign, ":cap", 0),#loop breaker
                  (else_try),
                      (eq, ":ordertype", onehand), 
@@ -25892,6 +25900,7 @@ if is_a_wb_script==1:
                      (eq, ":weapontype", itp_type_one_handed_wpn),
                      (agent_has_item_equipped, ":agent", ":item"),
                      (agent_set_wielded_item, ":agent", ":item"),
+                     (agent_set_slot, ":agent", slot_team_shield_order, 2),
                      (assign, ":cap", 0),#loop breaker
                  (else_try),
                      (eq, ":ordertype", twohands),
@@ -25901,6 +25910,7 @@ if is_a_wb_script==1:
                      (agent_set_wielded_item, ":agent", ":item"),
                      (assign, ":cap", 0),#loop breaker
                      (agent_get_wielded_item, ":shield", ":agent", 1),
+                     (agent_set_slot, ":agent", slot_team_shield_order, 2),
 					 (gt, ":shield", 0), #Has a shield wielded, after equipping 2hander/polearm
 					 (agent_unequip_item, ":agent", ":shield"), #Wield weapon with 2 hands,
 					 (agent_equip_item, ":agent", ":shield"), #Moves shield to back
@@ -25946,6 +25956,7 @@ if is_a_wb_script==1:
 						(assign, ":possible_shield", ":item"), #Track the shield. At end check that shield was actually equipped, force shields
 						(agent_has_item_equipped, ":agent", ":item"),
 						(agent_set_wielded_item, ":agent", ":item"), #Moves shield from back to hand
+						(agent_set_slot, ":agent", slot_team_shield_order, 1),
 						(assign, ":cap", 0),#loop breaker
 					(try_end),
 				(else_try),
@@ -25956,6 +25967,7 @@ if is_a_wb_script==1:
 					(str_store_string, s1, "@doff shields"),
 					(eq, ":shield_type", itp_type_shield),
 					(agent_unequip_item, ":agent", ":shield"),
+					(agent_set_slot, ":agent", slot_team_shield_order, 0),
 					(agent_equip_item, ":agent", ":shield"), #Moves shield to back
 					(assign, ":cap", 0),#loop breaker
 				(try_end), #Order Type  

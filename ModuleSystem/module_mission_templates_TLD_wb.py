@@ -237,7 +237,7 @@ field_ai_triggers = [
   dplmc_horse_speed,
   
   # On spawn, mark lancers, spears, horse archers using a slot. Force lancers to equip lances, horse archers to equip bows 
-  (ti_on_agent_spawn, 0, 0, [], [(store_trigger_param_1, ":agent"),(call_script, "script_weapon_use_classify_agent", ":agent"), (agent_set_slot, ":agent", slot_team_shield_order, 0),]), 
+  (ti_on_agent_spawn, 0, 0, [], [(store_trigger_param_1, ":agent"),(call_script, "script_weapon_use_classify_agent", ":agent"), (agent_set_slot, ":agent", slot_team_shield_order, -1),]), 
   
   (2, 0, 0, [(this_or_next|party_slot_eq, "p_main_party", slot_party_pref_wu_lance, 1),(this_or_next|party_slot_eq, "p_main_party", slot_party_pref_wu_harcher, 1),(party_slot_eq, "p_main_party", slot_party_pref_wu_spear, 1),(store_mission_timer_a, reg0),(gt, reg0, 4)],
   
@@ -377,6 +377,7 @@ field_ai_triggers = [
                 (call_script, "script_weapon_use_backup_weapon", ":agent", 1), # Then equip a close weapon
             (else_try),
                 (neq, ":wielded", ":spear"), # Enemies farther than 7 meters and/or not fighting, and not using spear?
+                (neg|agent_slot_eq, ":agent", slot_team_shield_order, 2),
                 (agent_set_wielded_item, ":agent", ":spear"), # Then equip it!                
             (try_end),
         (try_end),
@@ -1653,3 +1654,93 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (try_end),
   ])  
 
+## Health Restore on Kill Begin - Credit to Windyplains (Kham)
+health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0, 
+  [(store_trigger_param_1, ":agent_victim"),
+   (store_trigger_param_2, ":agent_killer"),
+
+   (agent_is_human, ":agent_victim"),
+   (agent_get_troop_id, ":troop_killer", ":agent_killer"),
+
+   (assign, ":continue", 0),
+
+   (try_begin), # Player has berserker trait?
+      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1), 
+      (get_player_agent_no, ":agent_player"),
+      (eq, ":agent_killer", ":agent_player"),
+      (assign, ":continue", 1),
+   (else_try), # Is it a lord?
+      (is_between, ":agent_killer", heroes_begin, heroes_end),
+      (assign, ":continue", 1),
+   (else_try),  #Berserkers
+      (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
+      (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
+      (this_or_next|eq, ":troop_killer", "trp_orc_beserker_gundabad"),
+      (             eq, ":troop_killer", "trp_variag_gladiator"),
+      (assign, ":continue", 1),
+   (try_end),
+
+   (eq, ":continue", 1),
+
+  ],
+    
+  [
+    (store_trigger_param_1, ":agent_victim"),
+    (store_trigger_param_2, ":agent_killer"),
+      
+    # Is this a valid kill worth gaining morale?
+    (agent_is_human, ":agent_victim"),
+    (agent_get_troop_id, ":troop_killer", ":agent_killer"),
+
+    # Determine health amount to regenerate
+    (try_begin), # Player has berserker trait?
+      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1), 
+      (get_player_agent_no, ":agent_player"),
+      (eq, ":agent_killer", ":agent_player"),
+      (assign, ":health_regeneration", wp_hr_player_rate),
+    (else_try), # Is it a lord?
+      (is_between, ":agent_killer", heroes_begin, heroes_end),
+      (assign, ":health_regeneration", wp_hr_lord_rate),
+    (else_try),  #Berserkers
+      (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
+      (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
+      (this_or_next|eq, ":troop_killer", "trp_orc_beserker_gundabad"),
+      (             eq, ":troop_killer", "trp_variag_gladiator"),
+      (assign, ":health_regeneration", wp_hr_berserker_rate),
+    (try_end),
+    
+    # Adds in Strength as a bonus or penalty.  (STR - 10) / wp_hr_strength_factor
+    
+    (store_attribute_level, ":strength", ":troop_killer", ca_strength),
+    (val_sub, ":strength", 10),
+    (val_div, ":strength", wp_hr_strength_factor),
+    (val_add, ":health_regeneration", ":strength"),
+    
+    (val_max, ":health_regeneration", 0), # We don't want a negative health regeneration.
+    
+    # Remove regeneration value if option not enabled for this unit type.
+    (try_begin),  # Check if this is the player and regeneration is disabled.
+      (eq, ":agent_killer", ":agent_player"),
+      (eq, "$g_wp_player_hr_active", 0),
+      (assign, ":health_regeneration", 0),
+    (else_try),   # If not player assume AI troop and check if AI regen is disabled.
+      (neq, ":agent_killer", ":agent_player"),  # To prevent player enabled, AI disabled conflicts.
+      (eq, "$g_wp_ai_hr_active", 0),
+      (assign, ":health_regeneration", 0),
+    (try_end),
+    
+    # Displays debug messages if turned on.
+    (try_begin), 
+      (eq, wp_hr_debug, 1),
+      (str_store_troop_name, s1, ":troop_killer"),
+      (assign, reg0, ":health_regeneration"),
+      (assign, reg1, ":strength"),   
+      (display_message, "@DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR"),
+    (try_end),
+    
+    # Regenerates the given health amount.
+    (ge, ":health_regeneration", 1),
+    (store_agent_hit_points, ":current_health", ":agent_killer", 0),
+    (val_add, ":current_health", ":health_regeneration"),
+    (agent_set_hit_points, ":agent_killer", ":current_health", 0),
+  ])
