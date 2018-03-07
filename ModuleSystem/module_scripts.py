@@ -20827,17 +20827,20 @@ scripts = [
 		# (str_store_troop_name, 1, ":troop"),
 	# (try_end),
 
-	#(try_begin), # player heal when berserker or has torque #MV: berserker only -- Kham - Revamped with Battle Kill Healing instead. 
-	#	(get_player_agent_no, ":player"),
+	] + (not is_a_wb_script==1 and [
+	(try_begin), # player heal when berserker or has torque #MV: berserker only -- Kham - Revamped with Battle Kill Healing instead. 
+		(get_player_agent_no, ":player"),
 		#(player_has_item|this_or_next, "itm_dunlending_torque"),
-	#	(troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
-	#	(store_agent_hit_points, ":hp", ":player", 0),
-	#	(val_add, ":hp", 20), #MV: gain absolute 20%, instead of relative +25%
-	#	(val_min, ":hp", 100),
-	#	(agent_set_hit_points, ":player", ":hp", 0),
-	#	(str_store_string, s24, "str_trait_title_berserker"),
-	#	(display_message, "@{s24}: Some of your wounds healed!"),
-	#(try_end),
+		(troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
+		(store_agent_hit_points, ":hp", ":player", 0),
+		(val_add, ":hp", 20), #MV: gain absolute 20%, instead of relative +25%
+		(val_min, ":hp", 100),
+		(agent_set_hit_points, ":player", ":hp", 0),
+		(str_store_string, s24, "str_trait_title_berserker"),
+		(display_message, "@{s24}: Some of your wounds healed!"),
+	(try_end),
+
+	] or []) + [
 
 	(try_begin), # heal classes acc to captainship
 		(this_or_next|troop_slot_eq, "trp_traits", slot_trait_archer_captain, 1),
