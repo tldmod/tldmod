@@ -3079,8 +3079,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("cmenu_follow", "Accompany"),
 ("fake_party",   "TLD temp terrain finder, you shouldn't be seeing this in a savegame [!]"),
 
-  ("reset_to_default", "Reset to Default"),
-  ("done", "Done"),
+("reset_to_default", "Reset to Default"),
+("done", "Done"),
   
 # Kham - Armor Customization Strings
 
@@ -3094,4 +3094,94 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("gondor7", "Gondor7"),  
 ("gondor8", "Gondor8"),
 ("gondor_end", "Gondor1"),
+
+# Custom Armour END 
+
+# Intro Strings
+("gondor_intro", "^It is a bitter thought, that a hero of this great kingdom should die within the sight of his land, unaided and helpless.^^\
+The news of Boromir’s death passed like a swift wind through all of Gondor, even to the plains of Pinnath Gelin and the hills of Lamedon, even to the shores of Pelargir and the coasts of Dol Amroth. The hearts of all your people are filled with grief and pity; and more besides, with fear and foreboding, for Gondor is hard pressed and sore beset, ringed by implacable foes or uncertain friends.^^\
+The Shadow rises in the East, as of old; the fractious Corsairs of Umbar grow bolder; the wild men of the East and South press their claims upon Gondorian land.^^\
+No longer can you stand by and wait. Trust you have placed in your captains; sword and spear they will place in your hand. Gondor wanes, but Gondor still stands; and even the end of its strength is still very strong. You have resolved yourself to play what part you may in this coming war against the servants of the Nameless. Much is spoken of in the councils of the great and wise, to which you are not privy, but there is one thing you feel you can be sure of.^^\
+If the valiant hearts of Gondor should fail, and Minas Tirith be lost, then the last light of the West will be extinguished. All will fall beneath the Shadow."),
+
+("dwarf_intro", "^The Kingdom under the Mountain has done well, of that there can be no dispute. Old King Dáin has just passed his two hundred and fiftieth year, and by any measure he is fabulously wealthy. Under his rule, Erebor thrives, and knows greatness. The waterways, fountains and pools of neighbouring Dale bear witness to how your builders have surpassed the skill of even your forefathers, though their secrets of metalwork have regrettably been lost.^^\
+Yet a darkness from Mordor entered these halls, when Sauron’s foul envoy, with his breath like the hiss of snakes, came bearing evil words. Heavy have been the hearts of your chieftains since then, for the power that has re-entered Mordor has not changed. The Shadow grows and draws nearer - already the Enemy is moving, and war will soon begin.^^\
+You have sworn to take up arms, and stand with your friends against your foes. You will resist, with hope or without it.^^\
+But if the bravery of the Dwarves of Erebor should prove insufficient, then the glory of Durin’s folk will fade away and be forgotten. All will fall beneath the Shadow."),
+
+("rohan_intro", "^In these days of doubt, one thing you know to be true: open war lies before the proud people of Rohan. None may live now as they have lived, and few shall keep what they call their own. Some close to the King’s ear speak craven counsels, but you have determined to go to him, take a grim oath of service, and stand with such fell-handed captains and thanes as will protect the herds and herdfolk.^^\
+Saruman of Isengard has declared lordship over the lands of Rohan, and bitter is the fighting with Orcs, Wolf-riders and the evil Men of Dunland. The Lord of the Black Land to the east sends raiding parties to steal your horses, choosing always the black ones. Your heart misgives you, for it seems to you that enemies beset your people both east and west.^^\
+But still you will give battle, for if aught is said of the Rohirrim, it is of your unfailing valour in arms, though foe should beleaguer you, or fire encircle you. The steeds of Rohan will stride as wind in the morning. And if death should come for you, then a mound will be raised, but for now, war calls you. Let horse be bridled, horn be sounded!^^\
+Yet, if even the courage of the Sons and Daughters of Eorl should fail, then the last hope of Rohan will fade and die away. The horn will blow no more. All will fall beneath the Shadow."),
+
+("mordor_intro", "^The dark power rises again in the East. The numbers of the Dark Lord’s legions swell - Easterling men come to serve and pay tribute, hollow-eyed renegades from ancient Numenor craving a chance to regain what their ancestors lost, great hosts of orcs and uruks slavering at the thought of war and killing. The pens are filled with ferocious, fearsome wargs. And high above, in the black skies, fly the winged Nazgûl… the apple of the Great Eye, with power deep beyond the reach of your muddy dreams.^^\
+You have resolved to rise in the ranks, by any means, and gain the favour of Lugbúrz. By wit, hardiness, and ruthless skill in battle you shall crush all who stand in your way. You will earn the favour of the Dark Lord of Mordor, he who is to rule all after this coming War… or you will die trying.^^\
+The light of the West shall be snuffed out. The time of Mordor has come!"),
+
+("isengard_intro","^A new power is rising, and you are part of that power. You march and fight under the banner of the White Hand, and your allegiance is sworn to crafty old Saruman the Great, wise and cunning, who gives you the tasty flesh of man and horse to eat.^^\
+Under his banner march the fighting Uruk-hai. They are slayers of great warriors, winners of battles. Their armour is thick and their shields broad. You will make a name for yourself among your fellows, and hew down many Whiteskins. You will not stop, by sun or moon, by fair weather or storm, until your enemies lie dead and broken.^^\
+The skill of Saruman is great. With it, you will throw down the power of the horse people, and their weak allies; yes, even elf-flesh will be yours to feast upon. Their villages and forests will burn, and their cities too. And then… who is to say if the maggots and apes of Lugbúrz will not defer to the mighty ones of Orthanc, eh? The strong command. The weak will serve.^^\
+The Age of Man is ending. The time of Isengard has come!"),
+
+("lorien_intro", "^It is the custom of your people, the Galadhrim of Laurelindórenan, to dwell in the treetops. The great trees of mighty girth bear leaves of gold and blossoms of yellow, and by the waters of the Nimrodel one may find restful sleep and forgetfulness of grief; but in these darkening days none may long forget the Shadow that hovers near, pressing in from the east, from the dark land of Mordor and nearer still.^^\
+For many a long year, your kin of Lothlórien have had few dealings with other folk. Indeed in nothing is the power of the Dark Lord more clearly shown than in the estrangement that divides those who still oppose him. Yet you are one of those who can perceive that to keep living thus, an island amid many perils, will bring only despair. Some there are among you who sing that the Shadow will draw back, and peace shall come again; and though the world can never be as it was of old, yet will you take up sword and bow, and play your part in the War to come, to defend not only the Dreamflower that you love, but perhaps lands beyond, that will otherwise fall to evil.^^\
+For if the old friendships are not renewed, and thought is taken only to fight the long defeat, then shall the last light of Lórien go out forevermore. All will fall beneath the Shadow."),
+
+("imladris_intro", "^Alas, for these latter days of grieving memory! In Imladris, the homely house of Elrond Halfelven, one may recall somewhat of the glory and splendour of Eregion in the Elder Days. But the world will never again be as it was of old.^^\
+The fields of Eriador, though lovely to behold, are tilled no more by the hands of Men. The Dúnedain, much diminished in number after the breaking of Arnor, keep their lonely vigils in the desolate wilderness of the North. And the days of Gil-Galad are forever gone, for the Firstborn decrease, and go into the west, while the blood of ancient Númenor dwindles and the race of Westernesse decays.^^\
+Though Rivendell remains a place of sanctuary, the days darken in all the lands around.^^\
+A last rallying call has gone forth, and a great host from Imladris - perhaps the last such in all the Ages of the world - shall march. You are part of this host, and though you will do your duty as instructed by the wise and the great, your heart is not without misgivings. Neither in Imladris, nor in the Grey Havens, nor even in Lórien the Golden Wood, is there strength to withstand the full might of the Enemy, should it come assailing when all else is overthrown.^^\
+Yet a slim hope remains: if the old friendships can be renewed, and all who stand against evil join strength against the common foe, some time may yet be won, so that the final end of the menace of Mordor may yet be sought.^^\
+But if the old alliances should fail, and old friends come to ruin, then nothing shall be left but the days of lengthening darkness, before true Night comes. All will fall beneath the Shadow."),
+
+("woodelf_intro", "^A shadow lies over the Woodland Realm, a poison spreading through the air itself from Dol Guldur. The Lord of Mordor has returned to his dark tower, and his lieutenants in Dol Guldur have turned much of Greenwood the Great, Eryn Galen, into places of great fear, where even your people, the Silvan Elves of the north, will not freely go.^^\
+Thranduil son of Oropher leads your people, but has been cautious in his policy - fresh is the grief of Dagorlad, perhaps, to his memory. Yet, now that the men of Dale are threatened by the coming war, your king has roused himself. Ever does he look to the south with a deep shadow in his heart, and long will he tarry ere he leads his people into likely ruin, but the day of decision is upon him.^^\
+With spear and blade and bow, you will defend the borders of your realm at your king’s command - and if need be, you are resolved to aid any who would stand against the common foe alongside the Elves of Mirkwood.^^\
+For fear speaks in your heart, as it does for many of your fellows, that if the old friendships are not renewed, and old allies come to ruin, then Mirkwood shall be darkened forever. All will fall beneath the Shadow."),
+
+("dale_intro", "^For three generations of men, the Kingdom of Dale has prospered. King Brand, grandson of Bard the Bowman, rules justly, and trade has enriched the realm.^^\
+But enemies now encroach, gathering across the border to the east - fractious, quarrelsome nomads, with whom speech is difficult and trust harder still. Toys and bells and pretty dolls must now be set aside, for spear and bow and sturdy shield. Trees must be hewn not for the walls of a new steading, but for quivers and the arrows to fill them with. Young men go not to till the fields or harvest the orchards, but to the barracks, to war and a red dawn.^^\
+Yet Dale has stalwart allies: the Dwarves of the Lonely Mountain, whose masonry decorates every street of Dale. And, too, the Elves of Mirkwood have had traffic with your people, to the good of all. The stout Beornings of the Ford keep the trade routes safe and open. In these dark days, all who reject the overlordship of Mordor must stand together, or be singly cut down like wheat stalks in the field.^^\
+You have resolved to do your part, for if the steadfast defenders of Dale should fail, then the line of Bard will be ended, and the last kingdom of Men in the north will be no more. All will fall beneath the Shadow."),
+
+("harad_intro", "^The strong rule, and the weak serve. This truth is known to your people, the people of Khand, from birth. Boys and girls alike must survive the fighting pits for many moons, before they may take their place among grown men and women. Such ways have made your people strong. Little wonder, then, that the Lord of the Black Land speaks so fairly to your Shibh! He knows a single sharp halberd in the hands of a Variag of Khand is worth twenty spears in the hands of worthless orcs.^^\
+Many promises have been made to your leaders. A great host has been assembled, the greatest yet in living memory. From the farthest reaches of your lands, the fiercest fighters among your people have answered the summons. You will plunder the lands of the weak, decadent Gondorians. You will take many of them as slaves, and make them work their rich green lands for you, as is the right of the conqueror.^^\
+The Age of the West is ending. The time of the East has come!"),
+
+("rhun_intro", "^The wagon cities of your people have roamed the high steppes for many moons. Your chieftains have taken counsel from the power that has once again risen in the land of Mordor. They promise many things to you and your fellow warriors: they will avenge the defeat of the Wainriders and the humiliation of the Balchoth; they will wipe clean for once and all the stain of Gondorian rule, under the ancient kings who had the audacity to name themselves “Vanquishers of the East”; they will win for the clans many slaves and much wealth.^^\
+They say many things, but you know you do not fight for a life of ease, like the fat and weak Lake-people, or the short greedy diggers scurrying around in their tunnels of stone, or the cowardly elves skulking in the trees singing songs.^\
+All that matters is glory, won in battle, and it is not the promises of chieftains that will win you a place of honour on the great Mountain after you die; it is by skill and strength that you will win the right to stand there. If you must fight alongside filthy honourless Orcs for a time, so be it - but your deeds will be your own, and they will be told over and over, around the campfires, for many generations to come.^^\
+The Age of the West is ending. The time of the East has come!"),
+
+("khand_intro", "^The strong rule, and the weak serve. This truth is known to your people, the people of Khand, from birth. Boys and girls alike must survive the fighting pits for many moons, before they may take their place among grown men and women. Such ways have made your people strong. Little wonder, then, that the Lord of the Black Land speaks so fairly to your Shibh! He knows a single sharp halberd in the hands of a Variag of Khand is worth twenty spears in the hands of worthless orcs.^^\
+Many promises have been made to your leaders. A great host has been assembled, the greatest yet in living memory. From the farthest reaches of your lands, the fiercest fighters among your people have answered the summons. You will plunder the lands of the weak, decadent Gondorians. You will take many of them as slaves, and make them work their rich green lands for you, as is the right of the conqueror.^^\
+The Age of the West is ending. The time of the East has come!"),
+
+("umbar_intro", "^The puffed-up nobles in Gondor, so proud of their vast and fertile estates, are sitting on stolen land - it was Castamir, of old, who was rightful king of the realm, before his throne was usurped by faithless curs. His descendants have led your nation well, winning many great victories on the seas and the coasts.^^\
+Time and again, however, the bitter winds of defeat have blown in your face - some years ago, the faithless Gondorians launched a cowardly night attack upon the main haven, sending the better part of Umbar’s strength down to the sea floor. Your ship was lost, your captain with it, and you were among the few survivors of your erstwhile crew.^^\
+But fifty great ships remain, and countless smaller vessels besides. The Dark Lord of Mordor has issued the call. Now is the time for a reckoning. You will join hands with your brothers-in-arms of the Southern lands, the grim-eyed men of Harad, and you will exact your vengeance upon the treacherous men of Gondor, until all Belfalas and Anfalas is in flames, and your coffers overflow with the wealth that is rightfully yours.^^\
+The Age of Gondor is ending. The time of Umbar has come!"),
+
+("moria_intro", "^You have come from the Mines, to avenge your folk, killed by manlings and diggers and elf scum! Your tribe was strong, and rich - the Moria-silver you gathered, in great heaps, and with it won great favour from the Dark Lord in the East. The short ones came, thinking to make their homes here - but you slaughtered them and had great sport in the doing. Then a small band of thieves and brigands came through, and awoke the deep Fire. Ruin, ruin for all! Many places cannot now be reached. Much wealth, much Moria-silver, and all too deep to dig up!^^\
+But now the Dark Lord calls. War comes. The Great Eye will reward faithful servants, yes. He will remember who it was who sent him so much of this shiny Moria-silver, and you will obey him - you will kill, and feast upon the Whiteskins, and all will be well for you and your tribe. And those proud elves, in their golden forest, they won’t be so proud when you and your folk burn their trees down around them!^^\
+The light in the woods shall be snuffed out. The time of Moria has come!"),
+
+("guldur_intro", "^The dark power rises again in the East. The Lord of Barad-dûr has sent his servants to Dol Guldur, where his will once more shall hold sway. The forges overflow with weapons and armour, the pens house thousands of ferocious wargs, the barracks are full to the brim with orcs ready to fight and die.^^\
+And high above, in the darkening skies over Mirkwood, fly the winged Nazgûl… the apple of the Great Eye, with power deep beyond the reach of your muddy dreams. No fewer than three has the Dark Lord sent to this place, from which his power will reach, subduing all who resist, until the enemies of Mordor are broken forever.^^\
+You have resolved to rise in the ranks, by any means, and gain the favour of Dol Guldur and Lugbúrz. By wit, hardiness, and ruthless skill in battle you shall crush all who stand in your way. You will earn the favour of the Dark Lord, he who is to rule all after this coming War… or you will die trying.^^\
+The shadow of Dol Guldur shall spread. The light of the West shall be snuffed out. The time of Mordor has come!"),
+
+("dunland_intro", "^Your people have known nothing but foul injustice at the hands of the black-hearted Forgoil, the strawhead paleskins of Rohan. From the time of mighty Freca, felled by a cowardly blow from the man-eater beast Helm, he whom the Rohirrim called Hammerhand, you have suffered grievously under their heavy yoke. High-handed are their treacheries, too many to number.^^\
+ But now the wind is changing. Wise Saruman, the cunning old master of Isengard, has made promises of friendship to your people. With his help, surely the claim of noble King Wulf, who in happier days rightfully sat the throne of Meduseld in Edoras, will be upheld.^^\
+No longer will your people scrabble in the rocky soil for a hard living. No longer will babes in arms die in the embrace of their mothers, because the milk flows too weakly. No longer will your people cower in fear of the murdering usurpers of Rohan. Your pikes are long, and your axes cruel and sharp. With the help of Saruman the Wise, you cannot fail. You will take back what is rightfully yours.^^\
+You will fight for Saruman. You will die for Saruman!"),
+
+("beorn_intro", "^These woods, these old paths, and the Ford are the only home you have ever known, but old Beorn was one who remembered an older home, far away in the mountains. His son, Chief Grimbeorn the Old, now stands foremost among your people, and like his father, he is apt to sit on the great Carrock at night, setting his sight to the west, deep in his own thoughts.^^\
+For your part, your thoughts are simple. The woods grow dangerous. Foul orcs grow bolder, and walk about even in daylight. The wolves they ride will not listen even to one of your people, so twisted have they become by goblin ways. The air feels and smells different, bad. The further south you go, closer to Dol Guldur, where not so long ago the Sorcerer dwelled and did things unworthy of naming, the worse it gets.^^\
+The Elves huddle in their caves to the north. Most will not come out to protect the woodland, its animals and trees and other things that move and live.^^\
+Your people will fight, as you always have, to keep the Ford and the forest safe. With a stout stick in your hands, you will smash any orcs that dare intrude. And if it should come to greater blows, why, many among your people are more than they seem…^^\
+But if even the grim battle-strength of the Beornings should fail, then the world will know no more the joy of sweet honey, bright flowers, shady forest paths and all things good. All will fall beneath the Shadow."),
+
+("intro_strings_end", "Intro END"),
+
 ]

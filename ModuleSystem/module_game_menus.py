@@ -174,7 +174,7 @@ game_menus = [
         (troop_sort_inventory, "trp_player"),
 		#(set_show_messages, 1),
         #(change_screen_map), #(change_screen_return),
-         (jump_to_menu,"mnu_unified_start_quest"), # Start Quest - Kham
+         (jump_to_menu,"mnu_faction_intro_menu"), # Start Quest - Kham
        ]),
 	  ("spacer",[],"_",[]),
 	  
@@ -8980,6 +8980,19 @@ game_menus = [
 
 
 ###################### Unified Starting Quests (Kham) ############################## 
+
+("faction_intro_menu",0,
+	"{s5}",
+	"none", [
+	(call_script, "script_get_intro_text", "$players_kingdom"),
+	(try_begin),
+		(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+		(set_background_mesh, "mesh_town_goodcamp"),
+	(else_try),
+		(set_background_mesh, "mesh_town_evilcamp"),
+	(try_end)], 
+	[("intro_next", [], "Continue...", [(jump_to_menu, "mnu_unified_start_quest"),])]),
+
 
 ( "unified_start_quest",0,
 	"{s10}",

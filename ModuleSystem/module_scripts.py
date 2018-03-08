@@ -23661,7 +23661,16 @@ command_cursor_scripts = [
 			(start_presentation, "prsnt_troop_talk_enemy"),
 		(try_end),
 
-	])
+	]),
+
+#script_get_intro_text
+#input: faction_id
+("get_intro_text",[
+    (store_script_param, ":faction_id", 1),
+    (store_add, ":intro_string", ":faction_id", 2207), 
+    (str_store_string, s5, ":intro_string"),
+]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
@@ -26125,5 +26134,6 @@ if is_a_wb_script==1:
      (str_clear, s2),
      (str_clear, s3),
     ]),
+
 
 ]

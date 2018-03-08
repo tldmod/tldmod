@@ -2459,3 +2459,8 @@ wp_hr_debug                        = 0   # This turns ON (1) or OFF (0) all of t
 ## Health Restore on Kill end
 
 slot_nazgul_timer = 46
+
+#Intro strings
+
+intro_strings_begin = str_gondor_intro
+intro_strings_end = str_intro_strings_end

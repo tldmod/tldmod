@@ -2208,5 +2208,23 @@ str_gondor6 = 2206
 str_gondor7 = 2207
 str_gondor8 = 2208
 str_gondor_end = 2209
+str_gondor_intro = 2210
+str_dwarf_intro = 2211
+str_rohan_intro = 2212
+str_mordor_intro = 2213
+str_isengard_intro = 2214
+str_lorien_intro = 2215
+str_imladris_intro = 2216
+str_woodelf_intro = 2217
+str_dale_intro = 2218
+str_harad_intro = 2219
+str_rhun_intro = 2220
+str_khand_intro = 2221
+str_umbar_intro = 2222
+str_moria_intro = 2223
+str_guldur_intro = 2224
+str_dunland_intro = 2225
+str_beorn_intro = 2226
+str_intro_strings_end = 2227
 
 
