@@ -93,28 +93,6 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
     (assign, "$cam_free",   0)
   ]),
 
-  (ti_inventory_key_pressed, 0, 0,
-      [
-        (game_key_is_down, gk_view_char),
-        # (set_trigger_result,1),
-      ], [
-        (get_player_agent_no, ":player_agent"),
-        (assign, ":end", ek_foot), #should add a global as iterator
-        (try_for_range, ":item_slot", ek_item_0, ":end"),
-          (agent_get_item_slot, ":item_no", ":player_agent", ":item_slot"),
-          (gt, ":item_no", -1),
-          (item_slot_ge, ":item_no", slot_item_num_components, 1),
-          (assign, "$g_current_opened_item_details", ":item_no"),
-          (assign, ":end", -1),
-          (start_presentation, "prsnt_customize_armor"),
-        (try_end),
-        (try_begin), #none found
-          (eq, ":end", ek_foot),
-          (display_message, "str_cant_use_inventory_tutorial"),
-          (assign, "$g_current_opened_item_details", -1),
-        (try_end),
-      ]),
-
  # Piggyback on Camera Code for Displaying Agent Labels.
 
   (ti_battle_window_opened, 0, 0, [(ge, "$g_display_agent_labels", 1),],
@@ -606,8 +584,6 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     hp_shield_init,
     hp_shield_trigger,
     health_restore_on_kill,
-    nazgul_attack,
-    nazgul_run_away
 
     
 ] or [] ) + [

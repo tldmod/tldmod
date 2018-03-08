@@ -1381,7 +1381,7 @@ items =[
 ] + (is_a_wb_item==1 and [
 
 #Padded Cloth Custom
-["gondor_custom", "Custom Gondor", [("gondor_knight",0)], itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(20)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(0),imodbits_elf_armor,
+["gondor_custom", "Custom Gondor", [("gondor_knight",0)], itp_type_body_armor|itp_covers_legs|itp_unique,0,1500,weight(20)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(0),imodbits_elf_armor,
  [custom_reskin("itm_gondor_custom")]], 
 
 ["stones_siege",         "Siege Stones", [("gon_castle_h_stairs_b",0)], itp_type_thrown |itp_unique|itp_primary ,itcf_throw_stone, 10 , weight(5)|difficulty(1)|spd_rtng(50) | shoot_speed(4) | thrust_damage(28 ,  blunt)|max_ammo(20)|weapon_length(200),imodbits_none,
