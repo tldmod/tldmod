@@ -1620,15 +1620,26 @@ hp_shield_init = (ti_on_agent_spawn, 0, 0, [
 
 hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
   (store_trigger_param_1, ":agent"),
-  (agent_is_human, ":agent"),
-  (agent_slot_eq, ":agent", slot_agent_hp_shield_active, 1)],
+
+  (agent_slot_eq, ":agent", slot_agent_hp_shield_active, 1),
+
+  (assign, ":continue", 0),
+  (try_begin),
+    (gt, "$nazgul_in_battle", 1), #There are nazguls
+    (agent_is_active, "$temp2"),
+    (assign, ":continue", 1),
+  (else_try),
+    (agent_is_human, ":agent"),
+    (assign, ":continue", 1),
+  (try_end),
+
+  (eq, ":continue", 1),],
   
   [  
     (store_trigger_param_1, ":agent"),
     (store_trigger_param_2, ":dealer"),
     (store_trigger_param_3, ":damage"),
   
-    (agent_is_human, ":agent"),
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
     (try_begin),
       (gt, ":current_hp_shield", 0),
@@ -1644,9 +1655,11 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       #(display_message, "@Hp shield: {reg3} left."), 
 
     (get_player_agent_no, ":player"),
-
+    (agent_get_troop_id, ":troop_id", ":agent"),
+    
     (try_begin),
       (eq, ":dealer", ":player"),
+      (neq, ":troop_id", "trp_nazgul"),
       (val_div, ":damage", 2), 
       (set_trigger_result, ":damage"),
     (else_try),
@@ -1661,6 +1674,11 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
 
    (agent_is_human, ":agent_victim"),
    (agent_get_troop_id, ":troop_killer", ":agent_killer"),
+
+   (agent_get_wielded_item, ":weapon", ":agent_killer", 0),
+   (ge, ":weapon", 0),
+   (this_or_next|neg|item_has_property, ":weapon", itp_type_bow),
+   (neg|item_has_property, ":weapon", itp_type_crossbow),
 
    (assign, ":continue", 0),
 
@@ -1744,3 +1762,99 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
     (val_add, ":current_health", ":health_regeneration"),
     (agent_set_hit_points, ":agent_killer", ":current_health", 0),
   ])
+
+
+nazgul_attack = (20, 0, ti_once, [
+      (gt, "$nazgul_in_battle", 1), #Has to be 2 nazgul
+
+      (store_mission_timer_a, ":mission_time_a"),
+      (store_random_in_range, ":ran_time", 45, 60),
+      (ge, ":mission_time_a", ":ran_time"), #Random time between 45 - 60 secs
+
+      (store_random_in_range, ":random", 0, 100),
+      (store_faction_of_party, ":faction", "p_main_party"),
+      (faction_get_slot, ":side", ":faction", slot_faction_side),
+
+      (le, ":random", 40), #40% Chance every 20 seconds
+
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_hand),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (assign, ":color", color_good_news),
+      (try_end),
+
+
+      (display_message, "@A Nazgul has joined the battle!", ":color"),
+      (str_store_string, s30, "@Feeeeel.....ourrr.....wraaaath!"),
+      (call_script, "script_troop_talk_presentation", "trp_nazgul", 7, 0),
+
+      (get_player_agent_no, ":player"),
+      (call_script, "script_find_exit_position_at_pos4", ":player"),
+      (set_spawn_position, pos4), 
+
+      (spawn_agent, "trp_nazgul"),
+      (assign, "$temp2", reg0), #Save the nazgul agent
+      (agent_set_team, "$temp2", 2),
+      (agent_get_horse, ":nazgul_horse", "$temp2"),
+      (agent_set_slot, ":nazgul_horse", slot_agent_hp_shield_active, 1),
+      (agent_set_slot, ":nazgul_horse", slot_agent_hp_shield, 100000),
+      (team_set_relation, 2, "$nazgul_team", 1),
+      (agent_get_team, ":player_team", ":player"),
+      (team_set_relation, ":player_team", 2, -1),
+      (set_show_messages, 0),
+      (team_give_order, 2, grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+
+      ],
+
+      [ (store_mission_timer_a, ":mission_time_a"),
+        (agent_set_slot, "$temp2", slot_nazgul_timer, ":mission_time_a"),
+        (set_show_messages, 0),
+        (team_give_order, 2, grc_everyone, mordr_charge),
+        (set_show_messages, 1),
+    ])
+
+nazgul_run_away = (20, 0, ti_once,
+    [ 
+      (gt, "$nazgul_in_battle", 1), #Has to be 2 nazgul
+      
+      (agent_is_active, "$temp2"),
+
+      (store_mission_timer_a, ":mission_time_a"),
+      (agent_get_slot, ":time_active", "$temp2", slot_nazgul_timer),
+      (val_add, ":time_active", 60),
+      (agent_get_kill_count, ":kills", "$temp2"),
+      (this_or_next|ge, ":mission_time_a", ":time_active"),
+      (ge, ":kills", 10),
+    ],
+
+    [
+      (call_script, "script_find_exit_position_at_pos4", "$temp2"),
+      (agent_start_running_away, "$temp2", pos4),
+      (agent_set_scripted_destination_no_attack, "$temp2", pos4),
+
+      (store_faction_of_party, ":faction", "p_main_party"),
+      (faction_get_slot, ":side", ":faction", slot_faction_side),
+
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (eq, "$tld_war_began", 2),
+        (eq, ":side", faction_side_hand),
+        (assign, ":color", color_bad_news),
+      (else_try),
+        (assign, ":color", color_good_news),
+      (try_end),
+
+
+      (display_message, "@The Nazgul is leaving the battle.", ":color"),
+      (str_store_string, s30, "@It......Beckonsssss....."),
+      (call_script, "script_troop_talk_presentation", "trp_nazgul", 7, 0),
+
+    ])

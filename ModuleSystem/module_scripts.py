@@ -1965,6 +1965,8 @@ scripts = [
 		(troop_set_slot, ":has_hp_shield", slot_troop_hp_shield, 200),
 	(try_end),
 
+	(troop_set_slot, "trp_nazgul", slot_troop_hp_shield, 1000000),
+
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
 
@@ -14982,7 +14984,8 @@ scripts = [
 	(cur_tableau_clear_override_items),
 
 	(try_begin),#TLD: mouth of sauron keeps his hood
-		(eq,":troop_no","trp_mordor_lord"),
+		(this_or_next|eq,":troop_no","trp_mordor_lord"),
+		(eq, ":troop_no", "trp_nazgul"),
 		(cur_tableau_set_override_flags, af_override_weapons),
 	(else_try),
 		(cur_tableau_set_override_flags, af_override_head|af_override_weapons),

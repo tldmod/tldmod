@@ -61,6 +61,7 @@ itp_cant_reload_on_horseback = 0x00100000
 itp_two_handed               = 0x00200000
 itp_primary                  = 0x00400000
 itp_secondary                = 0x00800000
+itp_replaces_helm            = 0x0000000000400000 #in VC some hoods are attached to tunics
 itp_covers_legs              = 0x01000000
 itp_doesnt_cover_hair        = 0x01000000
 itp_can_penetrate_shield     = 0x01000000
