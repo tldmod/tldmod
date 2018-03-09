@@ -23669,6 +23669,10 @@ command_cursor_scripts = [
     (store_script_param, ":faction_id", 1),
     (store_add, ":intro_string", ":faction_id", 2207), 
     (str_store_string, s5, ":intro_string"),
+
+    (store_add, ":intro_string_2", ":faction_id", 2225),
+    (str_store_string, s10, ":intro_string_2"),
+    
 ]),
 
 ]

@@ -3184,4 +3184,26 @@ But if even the grim battle-strength of the Beornings should fail, then the worl
 
 ("intro_strings_end", "Intro END"),
 
+("gondor_intro_2","^While travelling to swear service to your liege lord, you chance upon a caravan being attacked by orcs."),
+("dwarf_intro_2","^On your way to the gates of Erebor, you chance upon a caravan being attacked by orcs."),
+("rohan_intro_2","^On your way to Edoras, you chance upon a caravan being attacked by orcs."),
+("mordor_intro_2","^On your way to the Morannon to report to Lugbúrz, you chance upon some orcs raiding a caravan."),
+("isengard_intro_2","^On your way to Isengard, you chance upon some orcs raiding a caravan."),
+("lorien_intro_2","^On your way to Caras Galadhon for an audience with the Lady Galadriel, you come upon some allies preparing to ambush a company of Orcs."),
+("imladris_intro_2","^On your way back to the main Rivendell camp after a scouting mission, you come upon some allies preparing to ambush a company of Orcs."),
+("woodelf_intro_2", "^On your way back to the Elvenking’s Halls after a patrol in the woods, you come upon some allies preparing to ambush a company of Orcs."),
+("dale_intro_2","^On your way to the city of Dale, you chance upon a caravan being attacked by orcs."),
+("harad_intro_2", "^On your way to Mordor, you hear rustling nearby. You see some Gondor Scouts and ready yourself to warn your party."),
+("rhun_intro_2","^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan."),
+("khand_intro_2","^Your fellow Variags have been summoned to the Morannon, the Black Gates that lead into Mordor. You do not relish having to camp so near to filthy honourless orc-kind, but for a time you will oblige. Still, the Lord of Mordor would be foolish indeed not to recognise the worth of your people, and treat you accordingly!^^\
+As you walk through a wooded vale, a sudden small rustling makes you stop. You have heard many tales of the Gondorians who skulk around in these lands, sneaking like cowards - Rangers, they are called. They are deadly with the bow and arrow. Are some of them preparing to ambush your party? You had better sound the warning!"),
+("umbar_intro_2", "^On your way to where the Admiral has established the beachhead fortifications, you chance upon some orcs raiding a caravan."),
+("moria_intro_2", "^While returning from a scouting mission in the dale, you chance upon some orcs raiding a caravan."),
+("guldur_intro_2","^On your way to Dol Guldur, you chance upon some orcs raiding a caravan."),
+("gundabad_intro_2", "^On your way to Mt. Gundabad, you chance upon some orcs raiding a caravan."),
+("dunland_intro_2","^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan."),
+("beorn_intro_2", "^On your way to Beorn’s House, you come upon some allies preparing to ambush a company of Orcs."),
+
+("intro_strings_2_end", "Intro 2 END"),
+
 ]

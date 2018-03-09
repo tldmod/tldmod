@@ -2226,5 +2226,24 @@ str_guldur_intro = 2224
 str_dunland_intro = 2225
 str_beorn_intro = 2226
 str_intro_strings_end = 2227
+str_gondor_intro_2 = 2228
+str_dwarf_intro_2 = 2229
+str_rohan_intro_2 = 2230
+str_mordor_intro_2 = 2231
+str_isengard_intro_2 = 2232
+str_lorien_intro_2 = 2233
+str_imladris_intro_2 = 2234
+str_woodelf_intro_2 = 2235
+str_dale_intro_2 = 2236
+str_harad_intro_2 = 2237
+str_rhun_intro_2 = 2238
+str_khand_intro_2 = 2239
+str_umbar_intro_2 = 2240
+str_moria_intro_2 = 2241
+str_guldur_intro_2 = 2242
+str_gundabad_intro_2 = 2243
+str_dunland_intro_2 = 2244
+str_beorn_intro_2 = 2245
+str_intro_strings_2_end = 2246
 
 
