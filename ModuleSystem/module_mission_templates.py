@@ -1562,10 +1562,17 @@ mission_templates = [ # not used in game
 			(val_add,"$attacker_reinforcement_stage",1)]),
   (6, 0 , ti_once, [
       (eq, "$tld_option_formations", 1),
-      (le, "$formations_tutorial", 1)],
-      [(try_begin),
+      (le, "$formations_tutorial", 2)],
+      [
+      ] + (is_a_wb_mt==1 and [
+      (tutorial_message_set_background, 1), 
+      ] or []) + [
+      (try_begin),
         (eq, "$formations_tutorial", 0),
         (tutorial_message, "@In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.", 0 , 15),
+       (else_try),
+        (eq, "$formations_tutorial", 1),
+        (tutorial_message, "@You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.", 0 , 10),
        (else_try),
         (tutorial_message, "@The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.", 0 , 15),
       (try_end),

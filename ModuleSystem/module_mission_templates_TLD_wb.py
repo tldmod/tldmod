@@ -844,9 +844,9 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     (val_max, ":weighted_damage", ":minimum_weighted"),
     (store_mul, ":damage", ":weighted_damage", ":speed"),
     (val_div, ":damage", 110),
-    (assign, reg31, ":damage"), ### DIAGNOSTIC ### - Raw Damage
+    #(assign, reg31, ":damage"), ### DIAGNOSTIC ### - Raw Damage
     (store_skill_level, ":skill_riding", "skl_riding", ":troop_no"),
-    (assign, reg32, ":skill_riding"), ### DIAGNOSTIC ### - Riding Skill
+    #(assign, reg32, ":skill_riding"), ### DIAGNOSTIC ### - Riding Skill
     (val_mul, ":skill_riding", 8),
     (assign, reg34, ":skill_riding"), ### DIAGNOSTIC ### - Damage Reduction %
     (store_mul, ":damage_reduction", ":damage", ":skill_riding"),
@@ -1570,29 +1570,24 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [(eq,"$field_ai_horse_archer",1)],
 # Order Weapon Type Triggers - Credit to Caba'drin (Kham)
 
 order_weapon_type_triggers = [     
-  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
-             (key_is_down, key_left_control),
-             (key_clicked, key_for_onehand)], [(call_script, "script_order_weapon_type_switch", onehand)]),
+  (0, 0, 1, [(key_clicked, key_o)],
+            [(val_add, "$weapon_order_type", 1),
+             (val_mod, "$weapon_order_type", 5),
+             (try_begin),
+               (eq, "$weapon_order_type", 0),
+               (assign, "$weapon_order_type", 1),
+             (try_end), 
+             (call_script, "script_order_weapon_type_switch", "$weapon_order_type"),]),
 
-  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
-             (key_is_down, key_left_control),
-             (key_clicked, key_for_twohands)], [(call_script, "script_order_weapon_type_switch", twohands)]),
-
-  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
-             (key_is_down, key_left_control),
-             (key_clicked, key_for_polearms)], [(call_script, "script_order_weapon_type_switch", polearm)]), 
-
-  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
-             (key_is_down, key_left_control),
-             (key_clicked, key_for_ranged)], [(call_script, "script_order_weapon_type_switch", ranged)]),
-  
-  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
-             (key_is_down, key_left_control),
-             (key_clicked, key_for_shield_up)], [(call_script, "script_order_weapon_type_switch", shield)]),
-  
-  (0, 0, 1, [(this_or_next|key_is_down, key_right_control),
-             (key_is_down, key_left_control),
-             (key_clicked, key_for_noshield)], [(call_script, "script_order_weapon_type_switch", noshield)]),
+  (0, 0, 1, [(key_clicked, key_p)],
+            [(val_add, "$shield_order_type", 1),
+             (try_begin),
+               (eq, "$shield_order_type", 1),
+               (call_script, "script_order_weapon_type_switch", shield),
+             (else_try),
+               (call_script, "script_order_weapon_type_switch", noshield),
+             (try_end),
+             (val_mod, "$shield_order_type", 2)]),
 ]
 
 # HP Shields - Credit to Vyrn team (Kham)
