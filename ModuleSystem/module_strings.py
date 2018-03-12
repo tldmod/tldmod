@@ -104,16 +104,16 @@ strings = [
 
   ("tutorial_1_msg_1","In this tutorial you will learn the basics of movement and combat.\
  In Mount&Blade you use the mouse to control where you are looking, and the WASD keys of your keyboard to move.\
- Your first task in the training is to locate the yellow flag in the room and move over it.\
+ Your first task in the training is to locate the flag in the room and move over it.\
  You can press the Tab key at any time to quit this tutorial or to exit any other area in the game.\
- Go to the yellow flag now."),
+ Go to the flag now."),
   ("tutorial_1_msg_2","Well done. Next we will cover attacking with weapons.\
  For the purposes of this tutorial you have been equipped with bow and arrows, a sword and a shield.\
  You can draw different weapons from your weapon slots by using the scroll wheel of your mouse.\
  In the default configuration, scrolling up pulls out your next weapon, and scrolling down pulls out your shield.\
  If you are already holding a shield, scrolling down will put your shield away instead.\
  Try changing your wielded equipment with the scroll wheel now. When you are ready,\
- go to the yellow flag to move on to your next task."),
+ go to the flag to move on to your next task."),
   ("tutorial_1_msg_3","Excellent. The next part of this tutorial covers attacking with melee weapons.\
  You attack with your currently wielded weapon by using your left mouse button.\
  Press and hold the button to ready an attack, then release the button to strike.\
@@ -151,7 +151,7 @@ strings = [
  To pick up the sword on the altar, look at it and press F when you see the word 'Equip'."),
   ("tutorial_2_msg_7","A fine weapon! Now you can use it to deliver a bit of payback.\
  Go back through the door and dispose of the archers you faced earlier."),
-  ("tutorial_2_msg_8","Very good. Your last task before finishing this tutorial is to face the maceman.\
+  ("tutorial_2_msg_8","Very good. Your last task before finishing this tutorial is to face the squire.\
  Go through the door now and show him your steel!"),
   ("tutorial_2_msg_9","Congratulations! You have now learned how to defend yourself with a shield and even had your first taste of combat with armed opponents.\
  Give it a bit more practice and you'll soon be a renowned swordsman.\
@@ -164,14 +164,14 @@ strings = [
  If you are blocking upwards, you will parry any overhead swings coming against you, but you will not stop thrusts or attacks to your sides.\
  Either of these attacks would still be able to hit you.\
  That's why, in order to survive without a shield, you must learn directional defence.\
- Go pick up up the quarterstaff now to begin practice."),
+ Go pick up up the axe now to begin practice."),
   ("tutorial_3_msg_2","By default, the direction in which you defend (by clicking and holding your right mouse button) is determined by the attack direction of your closest opponent.\
  For example, if your opponent is readying a thrust attack, pressing and holding the right mouse button will parry thrust attacks, but not side or overhead attacks.\
  You must watch your opponent carefully and only initiate your parry AFTER the enemy starts to attack.\
  If you start BEFORE he readies an attack, you may parry the wrong way altogether!\
  Now it's time for you to move on to the next room, where you'll have to defend yourself against an armed opponent.\
- Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple quarterstaff.\
- Your quarterstaff's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead.\
+ Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple axe.\
+ Your axe's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead.\
  Move on to the next room when you are ready to initiate the fight."),
   ("tutorial_3_msg_3","Press and hold down the right mouse button to defend yourself with your staff after your opponent starts his attack.\
  Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
@@ -186,29 +186,29 @@ strings = [
 
   ("tutorial_3_2_msg_1","Your staff's attacks have been enabled again. Your first opponent is waiting in the next room.\
  Defeat him by a combination of attack and defence."),
-  ("tutorial_3_2_msg_2","Defeat your opponent with your quarterstaff."),
+  ("tutorial_3_2_msg_2","Defeat your opponent with your axe."),
   ("tutorial_3_2_msg_3","Excellent. Now the only thing standing in your way is one last opponent.\
  He is in the next room. Move in and knock him down."),
-  ("tutorial_3_2_msg_4","Defeat your opponent with your quarterstaff."),
+  ("tutorial_3_2_msg_4","Defeat your opponent with your axe."),
   ("tutorial_3_2_msg_5","Well done! In this tutorial you have learned how to fight ably without a shield.\
  Train hard and train well, and no one shall be able to lay a stroke on you.\
  In the next tutorial you may learn horseback riding and cavalry combat.\
  You can press the Tab key at any time to return to the tutorial menu."),
 
   ("tutorial_4_msg_1","Welcome to the fourth tutorial.\
- In this sequence you'll learn about riding a horse and how to perform various martial exercises on horseback.\
+ In this sequence you'll learn about riding a horse/warg and how to perform various martial exercises on horseback.\
  We'll start by getting you mounted up.\
  Approach the horse, and press the 'F' key when you see the word 'Mount'."),
   ("tutorial_4_msg_2","While on horseback, the WASD keys control your horse's movement, not your own.\
- Ride your horse and try to follow the yellow flag around the course.\
+ Ride your horse and try to follow the flag around the course.\
  When you reach the flag, it will move to the next waypoint on the course until you reach the finish."),
-  ("tutorial_4_msg_3","Very good. Next we'll cover attacking enemies from horseback. Approach the yellow flag now."),
+  ("tutorial_4_msg_3","Very good. Next we'll cover attacking enemies from horseback. Approach the flag now."),
   ("tutorial_4_msg_4","Draw your sword (using the mouse wheel) and destroy the four targets.\
  Try hitting the dummies as you pass them at full gallop -- this provides an extra challenge,\
  but the additional speed added to your blow will allow you to do more damage.\
  The easiest way of doing this is by pressing and holding the left mouse button until the right moment,\
  releasing it just before you pass the target."),
-  ("tutorial_4_msg_5","Excellent work. Now let us try some target shooting from horseback. Go near the yellow flag now."),
+  ("tutorial_4_msg_5","Excellent work. Now let us try some target shooting from horseback. Go near the flag now."),
   ("tutorial_4_msg_6","Locate the archery target beside the riding course and shoot it three times with your bow.\
  Although you are not required to ride while shooting, it's recommended that you try to hit the target at various speeds and angles\
  to get a feel for how your horse's speed and course affects your aim."),
@@ -216,12 +216,34 @@ strings = [
  You can press the Tab key at any time to return to the tutorial menu."),
 # Ryan END
 
-  ("tutorial_5_msg_1","TODO: Follow order to the flag"),
-  ("tutorial_5_msg_2","TODO: Move to the flag, keep your units at this position"),
-  ("tutorial_5_msg_3","TODO: Move to the flag to get the archers"),
-  ("tutorial_5_msg_4","TODO: Move archers to flag1, infantry to flag2"),
-  ("tutorial_5_msg_5","TODO: Enemy is charging. Fight!"),
-  ("tutorial_5_msg_6","TODO: End of battle."),
+("tutorial_5_msg_1","Welcome to the fifth and final tutorial, which gives you a brief overview of how to command troops in battle, one of the most important aspects in Mount & Blade.^^\
+The first command menu that you have to learn are movement commands, which can be found by pressing the F1 key. Press that now and explore the many movement options you can give your troops in battle.^^\
+For this first step, command your troops to follow you and move up the hill where the flag and pointer is."),
+
+("tutorial_5_msg_2","Excellent. Your troops have followed you up the hill. Now you have a good view of the battlefield.^^\
+This time, ask your troops to hold this hill by pressing the F1 command menu again, and selecting Hold this Position (F1).^^\
+Once you have done that, you will notice your troops stop following you and hold the position you asked them to.^^\
+This is a good time to learn the second command menu, which revolves around troop basic formations.^^\
+This menu allows you to command your troops to tighten up their ranks, to hold against infantry charges, or spread apart to resist archer volleys.^^\
+Commanding your troops to move forward or backward ten paces using this command menu allows your troops to move while keeping their formation.^^\
+After exploring the different options, keep your troops holding this hill and move alone towards the opposite hill, where the flag and the pointer is."),
+
+("tutorial_5_msg_3","Great. As you can see, your infantry is holding where you asked them to. Now, move towards the windmill by yourself."),
+
+("tutorial_5_msg_4","Now you have archers join your command. In Mount & Blade, you can give separate commands to specific divisions of troops such as infantry, archers, and cavalry.^^\
+Pressing the number keys will choose the division of your choice (1 for Infantry, 2 for Archers, 3 for Cavalry). You can then use the command menus that appear to command the specific division.^^\
+Note that the choice will persist, and pressing any of the command menus (F1, F2, F3) will be for the last division chosen. Read the messages that appear on your screen to see which division is being commanded.^^\
+Now, ask your Infantry to follow you, then ask your Archers to follow you too. Once they are all together, go back to the hill you came from.^^\
+Once there, look for the pointer and command your infantry to move and hold there by pressing 1, then holding the F1 key to reveal a banner. You can use this to move your troops in a precise location of your choice.^^\
+Ask your archers to move towards the flag behind the pointer, and on high ground."),
+
+("tutorial_5_msg_5","Your men are in position, the enemies have gathered and are charging towards you. Use what you learned to maneuver your infantry forward in formation, or ask them to charge. Charging breaks all formations, and moves your troops towards the nearest enemies.^^\
+You can also keep your archers above ground for a better vantage point, or also ask them to move elsewhere.^^\
+You can also press F3 to reveal the third command menu and learn about the different weapon orders you can give your troops."),
+
+("tutorial_5_msg_6","Excellent! You have completed your first field battle in Mount & Blade. Intelligent command of your troops in battle is paramount to your success as a commander in battle. Make sure to learn the different how to move your troops in advantageous positions.^^\
+In The Last Days of the Third Age, there are complex formations for more advanced maneouvers such as Infantry Shieldwall and Cavalry Wedges. You can learn more about it in-game.^^\
+You can press TAB anytime to leave the tutorial."),
 
   ("trainer_help_1", "This is a training ground where you can learn the basics of the game. Use A, S, D, W keys to move and the mouse to look around."),
   ("trainer_help_2", "To speak with the trainer, go near him, look at him and press the 'F' key when you see the word 'Talk' under his name.\

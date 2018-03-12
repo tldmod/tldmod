@@ -274,12 +274,117 @@ game_menus = [
     ("go_back"                  ,[],"Go back",[(change_screen_quit)])]
  ),
 # This needs to be the fourth window!!!
+
+] + (is_a_wb_menu==1 and [
+(
+    "tutorial",menu_text_color(0xFF000d2c)|mnf_disable_all_keys,
+    "^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.",
+    "none",
+    [(set_background_mesh, "mesh_town_goodcamp"),
+     (set_passage_menu, "mnu_tutorial"),
+     (try_begin),
+       (eq, "$tutorial_1_finished", 1),
+       (str_store_string, s1, "str_finished"),
+     (else_try),
+       (str_store_string, s1, "str_empty_string"),
+     (try_end),
+     (try_begin),
+       (eq, "$tutorial_2_finished", 1),
+       (str_store_string, s2, "str_finished"),
+     (else_try),
+       (str_store_string, s2, "str_empty_string"),
+     (try_end),
+     (try_begin),
+       (eq, "$tutorial_3_finished", 1),
+       (str_store_string, s3, "str_finished"),
+     (else_try),
+       (str_store_string, s3, "str_empty_string"),
+     (try_end),
+     (try_begin),
+       (eq, "$tutorial_4_finished", 1),
+       (str_store_string, s4, "str_finished"),
+     (else_try),
+       (str_store_string, s4, "str_empty_string"),
+     (try_end),
+     (try_begin),
+       (eq, "$tutorial_5_finished", 1),
+       (str_store_string, s5, "str_finished"),
+     (else_try),
+       (str_store_string, s5, "str_empty_string"),
+     (try_end),
+        ],
+    [
+      ("tutorial_1",[],"Tutorial #1: Basic movement and weapon selection. {s1}",[
+           (modify_visitors_at_site,"scn_tutorial_1"),(reset_visitors,0),
+           (set_jump_mission,"mt_tutorial_1"),
+           (call_script,"script_start_as_one","trp_gondor_commoner"),
+           (assign, "$g_player_troop", "$player_current_troop_type"),
+       	   (set_player_troop, "$g_player_troop"),
+           (jump_to_scene,"scn_tutorial_1"),(change_screen_mission)]),
+      ("tutorial_2",[],"Tutorial #2: Fighting with a shield. {s2}",[
+           (modify_visitors_at_site,"scn_tutorial_2"),(reset_visitors,0),
+           (call_script,"script_start_as_one","trp_uruk_hai_of_isengard"),
+           (assign, "$g_player_troop", "$player_current_troop_type"),
+       	   (set_player_troop, "$g_player_troop"),
+           (set_visitor,1,"trp_squire_of_rohan"),
+           (set_visitor,2,"trp_skirmisher_of_rohan"),
+           (set_jump_mission,"mt_tutorial_2"),
+           (jump_to_scene,"scn_tutorial_2"),(change_screen_mission)]),
+      ("tutorial_3",[],"Tutorial #3: Fighting without a shield. {s3}",[
+           (modify_visitors_at_site,"scn_tutorial_3"),(reset_visitors,0),
+           (call_script,"script_start_as_one","trp_beorning_tolltacker"),
+           (assign, "$g_player_troop", "$player_current_troop_type"),
+       	   (set_player_troop, "$g_player_troop"),
+           (set_visitor,1,"trp_orc_of_mordor"),
+           (set_visitor,2,"trp_black_numenorean_veteran_warrior"),
+           (set_jump_mission,"mt_tutorial_3"),
+           (jump_to_scene,"scn_tutorial_3"),(change_screen_mission)]),
+      ("tutorial_3b",[(eq,0,1)],"Tutorial 3 b",[(try_begin),
+                                                  (ge, "$tutorial_3_state", 12),
+                                                  (modify_visitors_at_site,"scn_tutorial_3"),(reset_visitors,0),
+                                                  (set_visitor,1,"trp_orc_of_mordor"),
+                                                  (set_visitor,2,"trp_black_numenorean_veteran_warrior"),
+                                                  (set_jump_mission,"mt_tutorial_3_2"),
+                                                  (jump_to_scene,"scn_tutorial_3"),
+                                                  (change_screen_mission),
+                                                (else_try),
+                                                  (display_message,"str_door_locked",0xFFFFAAAA),
+                                                (try_end)], "next level"),
+	  ("tutorial_4",[],"Tutorial #4: Riding a horse or a warg. {s4}",[
+           (modify_visitors_at_site,"scn_tutorial_4"),(reset_visitors,0),
+           (call_script,"script_start_as_one","trp_warg_skirmisher_gundabad"),
+           (assign, "$g_player_troop", "$player_current_troop_type"),
+       	   (set_player_troop, "$g_player_troop"),
+           (set_jump_mission,"mt_tutorial_4"),
+           (jump_to_scene,"scn_tutorial_4"),(change_screen_mission)]),
+      ("tutorial_5",[],"Tutorial #5: Commanding a band of soldiers. {s5}",[
+           (modify_visitors_at_site,"scn_tutorial_5"),(reset_visitors,0),
+           (call_script,"script_start_as_one","trp_rivendell_guardian"),
+           (assign, "$g_player_troop", "$player_current_troop_type"),
+       	   (set_player_troop, "$g_player_troop"),
+           (set_visitors,1,"trp_rivendell_infantry",3),
+           (set_visitors,2,"trp_rivendell_infantry",3),
+           (set_visitors,3,"trp_rivendell_veteran_infantry",2),
+           (set_visitors,4,"trp_rivendell_royal_infantry",2),
+           (set_jump_mission,"mt_tutorial_5"),
+           (jump_to_scene,"scn_tutorial_5"),(change_screen_mission)]),
+
+      ("go_back_dot",[],"Go back.",
+       [(change_screen_quit),
+        ]
+       ),
+    ]
+  ),
+] or [
+
 ( "tutorial",mnf_disable_all_keys,
     "^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module",
     "none",
     [(set_background_mesh, "mesh_ui_default_menu_window")],
-	[("go_back_dot",[],"Go back.",[(change_screen_quit)])]
- ),
+	[("go_back_dot",[],"Go back.",[(change_screen_quit)])]),
+
+]) + [
+
 # This needs to be the fifth window!!!  
 ( "reports",0,
    "^^^{s9}", "none",
@@ -9000,7 +9105,7 @@ game_menus = [
 		(else_try),
 			(set_background_mesh, "mesh_town_evilcamp"),
 		(try_end)],
-		
+
 	[("start_defend_caravan",
 		[(this_or_next|eq, "$players_kingdom", "fac_gondor"),
 		 (this_or_next|eq, "$players_kingdom", "fac_dale"),
@@ -10471,7 +10576,7 @@ game_menus = [
   "You loudly swear an oath of vengeance for the death of {s4}. \
   You would relentlessly seek out the forces of {s3} and destroy them. \
   Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
-	[(set_background_mesh, "mesh_draw_mound_visit"),
+	[(set_background_mesh, "mesh_draw_mound_oath"),
 	(store_encountered_party, ":mound"),
 	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 	(str_store_troop_name, s4, ":hero"),

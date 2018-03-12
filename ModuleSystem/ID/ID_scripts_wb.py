@@ -632,5 +632,6 @@ script_game_troop_upgrades_button_clicked = 630
 script_init_item_score = 631
 script_add_troop_to_custom_armor_tableau = 632
 script_order_weapon_type_switch = 633
+script_iterate_pointer_arrow = 634
 
 

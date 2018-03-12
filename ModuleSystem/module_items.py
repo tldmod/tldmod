@@ -1439,7 +1439,7 @@ items =[
 	]),
 ]],
 
-
+["beorn_axe_no_attack","Beorning_Axe", [("beorning_axe",0)],itp_type_polearm|itp_two_handed|itp_primary|itp_bonus_against_shield,itc_parry_polearm|itcf_carry_axe_back,9, weight(5)|spd_rtng(91) | weapon_length(76)|swing_damage(0,blunt) | thrust_damage(0,blunt),imodbits_none],
 
 ] or []) + [ 
 

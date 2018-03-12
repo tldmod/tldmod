@@ -505,9 +505,16 @@ meshes+=[
   ("draw_victory_lorien",    0, "draw_victory_lorien",    0, 0, 0, 0, 0, 0, 1, 1, 1),
   
 ###VC presentations
-    ("pic_troop_trees", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-    ("pic_units_details", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("pic_troop_trees", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("pic_units_details", 0, "town_goodcamp", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
-("cb_ui_main", 0, "cb_ui_main", 0, 0, 0, 0, 0, 0, 1, 1, 1),
-("mp_score_a", 0, "mp_score_a", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+### Custom Armour Meshes
+  ("cb_ui_main", 0, "cb_ui_main", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("mp_score_a", 0, "mp_score_a", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+### More Merlkir Drawings
+
+  ("draw_mound_oath",       0, "draw_mound_oath",       0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+
 ]

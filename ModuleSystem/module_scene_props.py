@@ -327,13 +327,13 @@ scene_props = [
 ("tunnel_salt",0,"new_tunnel_salt","bo_new_tunnel_salt", []),
 ("salt_a",0,"salt_a","bo_salt_a", []),
 
-#("tutorial_door_a",sokf_moveable,"tutorial_door_a","bo_tutorial_door_a", []),
+("tutorial_door_a",sokf_moveable,"tutorial_door_a","bo_tutorial_door_a", []),
 
-#("tutorial_door_b",sokf_moveable,"tutorial_door_b","bo_tutorial_door_b", []),
+("tutorial_door_b",sokf_moveable,"tutorial_door_b","bo_tutorial_door_b", []),
 
-#("tutorial_flag_yellow",sokf_moveable,"tutorial_flag_yellow","0", []),
-#("tutorial_flag_red",sokf_moveable,"tutorial_flag_red","0", []),
-#("tutorial_flag_blue",sokf_moveable,"tutorial_flag_blue","0", []),
+("tutorial_flag_yellow",sokf_moveable,"tutorial_flag_yellow","0", []),
+("tutorial_flag_red",sokf_moveable,"tutorial_flag_red","0", []),
+("tutorial_flag_blue",sokf_moveable,"tutorial_flag_blue","0", []),
 
 ("interior_prison_a",0,"interior_prison_a","bo_interior_prison_a", []),
 ("interior_prison_b",0,"0","0", []),
@@ -390,7 +390,7 @@ scene_props = [
           (assign, ":point_earned", 0),
         (try_end),
         (val_div, ":player_distance", 91), #Converting to yards
-#        (assign, "$g_last_archery_point_earned", ":point_earned"),
+        (assign, "$g_last_archery_point_earned", ":point_earned"),
         (assign, reg60, ":point_earned"),
         (assign, reg61, ":player_distance"),
         (display_message, "str_archery_target_hit"),
@@ -408,7 +408,7 @@ scene_props = [
         (try_end),
         (position_rotate_x, 1, ":rotate_side"),
         (prop_instance_animate_to_position, ":instance_no", 1, 70), #animate to position 1 in 0.7 second
-#        (val_add, "$tutorial_num_total_dummies_destroyed", 1),
+        (val_add, "$tutorial_num_total_dummies_destroyed", 1),
         (play_sound, "snd_dummy_destroyed"),
     ]),
    (ti_on_scene_prop_hit,
@@ -2715,7 +2715,9 @@ scene_props = [
 ( "beorn_side_house",0,"beorn_side_house","bo_house6",[]),
 #InVain props end
 
-("save_compartibility1",0,"0","0", []),
+("pointer_arrow", 0, "pointer_arrow", "0", []),
+
+#("save_compartibility1",0,"0","0", []), Replaced with Pointer Arrow
 ("save_compartibility2",0,"0","0", []),
 ("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),

@@ -382,5 +382,6 @@ mesh_pic_troop_trees = 380
 mesh_pic_units_details = 381
 mesh_cb_ui_main = 382
 mesh_mp_score_a = 383
+mesh_draw_mound_oath = 384
 
 
