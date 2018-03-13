@@ -1219,7 +1219,7 @@ items =[
 
 #HELMS######### InVain: All marked items should be free for immidiate use
 ["dwarf_helm_coif","Dwarf_Coif",[("DwarfHelmCoif",0),("DwarfHelmCoifMask",imodbit_reinforced),("DwarfHelmCoifMask_B",imodbit_lordly)],itp_type_head_armor|itp_shop,0,500,weight(1)|head_armor(20)|difficulty(0),imodbits_elf_armor],
-["free_dwarf_helm_b","Dwarf_Coif_with_Mask",[("DwarfHelmCoifMask",0)],itp_type_head_armor|itp_shop,0,700,weight(2)|head_armor(28)|difficulty(0),imodbits_elf_armor],
+["dwarf_nasal_b","Dwarf_Nasal_Helm",[("DwarfHelmConical_BChain",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(33)|difficulty(0),imodbits_elf_armor],
 ["free_dwarf_helm_c","Dwarf_Helm_with_Mask",[("DwarfHelmCoifMask_B",0)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(33)|difficulty(0),imodbits_elf_armor],
 ["dwarf_helm_kettle","Dwarf_Kettle_Helm",[("DwarfHelmConicalChain",0),("DwarfHelmConicalMask",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["dwarf_helm_fris","Dwarf_Frisian_Helm",[("DwarfHelmFrisianChain",0),("DwarfHelmFrisianMask_A",imodbit_reinforced),("DwarfHelmFrisianMask_B",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(37)|difficulty(0),imodbits_elf_armor],
