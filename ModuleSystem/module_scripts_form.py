@@ -1412,11 +1412,13 @@ formAI_scripts = [
 		(try_end), #end of Cav AI
 
 
+		(agent_get_troop_id, ":hero_troop", ":team_leader"),
 
 		#put leader in duel or place leader -- JL added code for put leader in duel
 		(try_begin),
 			#basic conditions:
 			(ge, ":team_leader", 0), #The current team must have a leader
+			(is_between, ":hero_troop", heroes_begin, heroes_end), #Must be hero
 			(agent_is_alive, ":team_leader"), #and the team leader must be alive
 			#(agent_slot_eq, ":team_leader", slot_agent_is_running_away, 0), #and the leader must not be running away ... will never happen
 			(store_agent_hit_points, ":leader_hp", ":team_leader"), #gets leaders hit point percent
@@ -1445,6 +1447,7 @@ formAI_scripts = [
 		(else_try),
 			#---------------Normal form AI code for placing leader -- JL: let leader be in scripted mode before the fight starts only. And the leader primarily follows his cavalry if leader is on horse and has cavalry
 			(ge, ":team_leader", 0),
+			(is_between, ":hero_troop", heroes_begin, heroes_end), #Must be hero
 			(agent_is_alive, ":team_leader"),
 
 				(try_begin), #JL Kham added block to get rid of straying lords				
@@ -5603,7 +5606,7 @@ formAI_scripts = [
         (assign, ":avg_dist", reg0),
         (assign, ":min_dist", reg1),
         (try_begin),
-          (this_or_next|lt, ":min_dist", 1500), #Kham - Changed from 1000
+          (this_or_next|lt, ":min_dist", 1000), #Kham - Changed from 1000
           (lt, ":avg_dist", 4000),
           (assign, ":battle_tactic", 0),
 		  (call_script, "script_formation_end", ":team_no", grc_infantry),	#formations code
@@ -5617,11 +5620,11 @@ formAI_scripts = [
         (call_script, "script_team_get_nontroll_leader", ":team_no"),
         (assign, ":ai_leader", reg0),
         (try_begin),
+          (ge, ":ai_leader", 0),
           (agent_is_alive, ":ai_leader"),
           (agent_set_speed_limit, ":ai_leader", 9),
           (call_script, "script_team_get_average_position_of_enemies", ":team_no"),
           (copy_position, pos60, pos0),
-          (ge, ":ai_leader", 0),
           (agent_get_position, pos61, ":ai_leader"),
           (position_transform_position_to_local, pos62, pos61, pos60), #pos62 = vector to enemy w.r.t leader
           (position_normalize_origin, ":distance_to_enemy", pos62),
