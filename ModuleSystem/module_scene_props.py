@@ -2525,7 +2525,13 @@ scene_props = [
 ("distant_place_dolamroth",0,"prop_dolamroth","0", []),
 ("distant_place_edoras",0,"prop_Edoras","0", []),
 ("distant_place_Helmsdeep",0,"prop_Helms_Deep","0", []),
-("distant_place_Morannon",0,"prop_Morannon","0", []),
+] + (is_a_wb_sceneprop==1 and [
+("distant_place_Morannon",0,"prop_Morannon", "0", [(ti_on_scene_prop_init,[
+  (try_begin),(is_currently_night),(set_fog_distance,1000,0x191919),(else_try),(set_fog_distance,1500,0x191919),(try_end)])]), 
+    ] or [
+("distant_place_Morannon",0,"prop_Morannon", "0", [(ti_on_scene_prop_init,[
+  (try_begin),(is_currently_night),(set_fog_distance,1000,0x333333),(else_try),(set_fog_distance,1500,0x333333),(try_end)])]),
+]) + [
 
 ("distant_place_Dolguldur",0,"prop_dolguldur", "0", [(ti_on_scene_prop_init,
             [(try_begin),(is_currently_night),(set_fog_distance,450,0x07291D),

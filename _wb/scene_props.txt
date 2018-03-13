@@ -4951,7 +4951,8 @@ spr_distant_place_edoras 0 0 prop_Edoras 0 0
 spr_distant_place_Helmsdeep 0 0 prop_Helms_Deep 0 0
 
 
-spr_distant_place_Morannon 0 0 prop_Morannon 0 0
+spr_distant_place_Morannon 0 0 prop_Morannon 0 1
+-40  6 4 0 2273 0 1798 2 1000 1644825 5 0 1798 2 1500 1644825 3 0 
 
 
 spr_distant_place_Dolguldur 0 0 prop_dolguldur 0 1
