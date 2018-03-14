@@ -384,6 +384,25 @@ field_ai_triggers = [
     (try_end),
     ]),
 
+## Piggy Back for Lone Wargs extra damage
+(ti_on_agent_hit, 0, 0, [
+    (store_trigger_param_1, ":agent"),
+    (neg|agent_is_human, ":agent"), #Is a warg
+    (agent_get_item_id,":warg_itm",":agent"),
+    (is_between, ":warg_itm", item_warg_begin, item_warg_end),
+    (agent_get_rider, ":rider", ":agent"),
+    (agent_get_troop_id, ":invis_warg", ":rider"),
+    (is_between, ":invis_warg", warg_ghost_begin, warg_ghost_end), #Riderless Warg
+  ],
+
+  [
+    (store_trigger_param_3, ":damage"),
+    (val_mul, ":damage", 10),
+    (val_div, ":damage", 7), 
+    (set_trigger_result, ":damage"), 
+  ]),
+
+
 # Horse Trample buff  
   (ti_on_agent_hit, 0, 0, [],
 
@@ -393,9 +412,10 @@ field_ai_triggers = [
     (store_trigger_param_3, ":damage"),
     (assign, ":weapon", reg0),
     (ge, ":weapon",0), #Kham - Fix
-    
+
     (assign, ":orig_damage", ":damage"),
     
+
     (try_begin),
         (agent_is_human, ":agent"), 
       #(agent_is_non_player, ":agent"), #Maybe remove?

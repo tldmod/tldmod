@@ -2084,7 +2084,15 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 
         #get the closest noncav enemy
         (assign, ":min_dist", 1000000),
+        
+        ] + (is_a_wb_mt==1 and [
+       	(agent_get_position, pos9, ":troll"),
+        (try_for_agents, ":enemy_agent", pos9, 550),
+        
+        ] or [
         (try_for_agents, ":enemy_agent"),
+        ]) + [
+
             (agent_is_alive, ":enemy_agent"),
             (agent_is_human, ":enemy_agent"),
             (agent_get_team, ":enemy_team_no", ":enemy_agent"),
@@ -2143,7 +2151,13 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 				(le,":random",10), 
 				(agent_get_position,1,":troll"),
 				(agent_get_team, ":troll_team", ":troll"),
-				(try_for_agents,":victim"), # look for enemies in range
+
+				] + (is_a_wb_mt==1 and [
+				(try_for_agents,":victim", pos1, 300), # look for enemies in range
+				] or [
+				(try_for_agents,":victim"),
+				]) + [
+
 					(eq,":status",0),
 					
 					(agent_is_human,":victim"),
@@ -2240,8 +2254,13 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 			#(else_try),
 			(agent_get_position,1,":troll"),
 			#(try_end),
-	  
+	  		
+	  		] + (is_a_wb_mt==1 and [
+			(try_for_agents,":victim", pos1, 300),
+			] or [
 			(try_for_agents,":victim"),
+			]) + [
+
 				(agent_is_alive,":victim"),
 				(neq,":troll",":victim"), # a troll doesn't hit itself
 				(agent_get_position,2,":victim"),
@@ -2357,7 +2376,13 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 				(eq, reg0, tf_troll),
 				(agent_get_position,1,":troll"),
 				(agent_get_team, ":troll_team", ":troll"),
+
+				] + (is_a_wb_mt==1 and [
+				(try_for_agents,":horse", pos1, 700),
+				] or [
 				(try_for_agents,":horse"),
+				]) + [
+
 					(neg|agent_is_human,":horse"),
 					(agent_is_alive,":horse"),
 					(agent_get_rider,":rider",":horse"),
@@ -2573,14 +2598,21 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 		(val_add,   ":warg_ghost_trp",             warg_ghost_begin),
 		#--
 		(assign, ":continue", 1),
+		(agent_get_position, pos10, ":cur_warg"),
+
+		] + ((is_a_wb_mt==1) and [
+		(try_for_agents, ":old_rider", pos10, 50),
+		] or [
 		(try_for_agents, ":old_rider"),
+		]) + [
+
 			(eq, ":continue", 1),
 			(agent_slot_eq,  ":old_rider", slot_agent_mount, ":cur_warg"),
 			(agent_set_slot, ":old_rider", slot_agent_mount, -1),
 			(assign, ":continue", 0),
 		(try_end),
 		
-		(agent_get_position, pos10, ":cur_warg"),
+
 		
 		] + ((not is_a_wb_mt==1) and [
     
