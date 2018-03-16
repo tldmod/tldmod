@@ -1265,7 +1265,11 @@ items =[
 ["far_harad_shield_paint","Wicker_Shield",[("far_harad_c_giles",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_far_harad_shield",0),])]],
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 #free, Jan 2017, -> rohan_armor_th:
+] + (is_a_wb_item==1 and [
+["nazgulrobe","Nazgul_Robe",[("dm_nazgulrobe",0),("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_covers_head|itp_replaces_helm|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
+] or [
 ["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0),("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_covers_head|itp_replaces_helm|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
+]) + [
 ["free_whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,], #unused since Jan 2018, =itm_nazgulrobe
 #BANNERS 
 # TODO: PLEASE DO NOT CHANGE BANNER ORDER, THIS IS A PLANNED FEATURE FOR THE MORALE SYSTEM. -CC #

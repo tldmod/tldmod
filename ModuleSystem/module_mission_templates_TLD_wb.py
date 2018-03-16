@@ -316,6 +316,7 @@ field_ai_triggers = [
                     (call_script, "script_weapon_use_backup_weapon", ":agent", ":inc_two_handers"), # Then equip a close weapon
                 (else_try),
                     (neq, ":wielded", ":lance"), # Enemies farther than 5 meters and/or not fighting, and not using lance?
+                     (neg|agent_slot_eq, ":agent", slot_team_shield_order, 2), #Not commanded to use side-arms
                     (agent_set_wielded_item, ":agent", ":lance"), # Then equip it!
                 (try_end),
              (try_end),

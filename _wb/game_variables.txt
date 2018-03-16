@@ -824,6 +824,7 @@ party_b_talk_h = 0.04
 party_b_release_h = 0.035
 party_b_move_up_h = 0.03
 party_b_move_down_h = 0.03
+party_b_troop_upgrades_h = 0.033
 party_b_upgrade1_h = 0.029
 party_b_upgrade2_h = 0.029
 party_b_member_h = 0.0262
