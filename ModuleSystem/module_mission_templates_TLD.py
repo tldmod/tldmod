@@ -819,7 +819,7 @@ AI_triggers = [
 		(store_random_in_range, "$formai_rand2", 800, 1501), # JL positive only close range randomness
 		(store_random_in_range, "$formai_rand1", 0, 501), #JL close hold position to archers for cavalry
 		(store_random_in_range, "$formai_rand3", AI_charge_distance, 3001), # JL main charge distance randomness
-		(store_random_in_range, "$formai_rand4", AI_Self_Defence_Distance, 3001), #JL alternative charge range randomness
+		(store_random_in_range, "$formai_rand4", AI_Self_Defence_Distance, 2201), #JL alternative charge range randomness
 		(store_random_in_range, "$formai_rand5", -1000, 0), #JL retreat range randomness
 		(store_random_in_range, "$formai_rand6", 4000, 5001), #JL grand charge distance and firing distance range randomness
 		(store_random_in_range, "$formai_rand7", 55, 66), #JL random decision comparative number (that partly decides when AI strives to execute a grand charge). A value of 30 = Patrol Mode. A value of 35 = enemy has >40% archers/others

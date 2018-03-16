@@ -489,7 +489,7 @@ formAI_scripts = [
 			
 			(try_begin), ## JL RULES OF DISENGAGEMENT: to Remove AI Infantry Charge Mode when infantry is not in melee any more
 				(eq, ":num_enemies_supporting_melee", 0), #infantry is currently not in melee
-				(gt, ":enemy_from_infantry", 2000), #JL Kham - and nearest enemy is further away than 20m
+				(gt, ":enemy_from_infantry", 1500), #JL Kham - and nearest enemy is further away than 20m - Changed to 15m
 				(eq, "$inf_charge_ongoing", 1), # flag to see if we have a regular charge ongoing
 				(assign, "$inf_charge_activated", 0), #then deactivate inf charge mode
 				(assign, "$inf_charge_ongoing", 0), #and reset switch to open up for future charge orders
@@ -650,7 +650,7 @@ formAI_scripts = [
 					#(display_message, "@Infantry decides to advance"), #############
 					(try_begin),
 						(eq, ":num_enemies_in_melee", 0),	#not engaged?
-						(gt, ":enemy_from_archers", "$formai_rand4"), #changed AI_charge_distance to rand4 (10-30m) JL
+						(gt, ":enemy_from_archers", "$formai_rand4"), #changed AI_charge_distance to rand4 (10-22m) JL
 						(lt, ":percent_enemy_cavalry", 100),
 						(assign, ":distance_to_enemy_troop", ":enemy_nearest_non_cav_troop_distance"),
 						(copy_position, pos60, Nearest_Non_Cav_Enemy_Troop_Pos),
@@ -678,7 +678,7 @@ formAI_scripts = [
 					(try_end),
 					
 					(try_begin),	#attack troop if its unit is far off
-						(gt, ":distance_to_enemy_group", AI_charge_distance),
+						(gt, ":distance_to_enemy_group", "$formai_rand4"),
 						(this_or_next|neq, ":enemy_nearest_agent", ":enemy_leader"), #added by JL to ignore leader
 						(neq,"$cur_casualties","$prev_casualties"), # added by JL to have the AI not ignore the leader (5 secs) if there have been any recent losses
 						(copy_position, pos0, pos60),
@@ -758,11 +758,11 @@ formAI_scripts = [
 			#If Infantry is Holding and Nearest Enemy is within Self Defence range, enemy is not leader or troops have fallen then Charge (charge infantry and cavalry).
 			(try_begin),
 				(eq, ":infantry_order", mordr_hold), #if Orders are Hold
-				(le, ":enemy_nearest_troop_distance", AI_charge_distance), #and any enemy is within self defence distance
+				(le, ":enemy_nearest_troop_distance", "$formai_rand4"), #and any enemy is within self defence distance
 				(this_or_next|neq, ":enemy_nearest_agent", ":enemy_leader"), #nearest target is not the player
 				(neq, "$cur_casualties","$prev_casualties2"), #troops have fallen during last second
 				(assign, "$inf_charge_activated", 1), #then Charge Infantry
-				(assign, "$charge_activated", 1), #and Charge Cavalry
+				#(assign, "$charge_activated", 1), #and Charge Cavalry
 				#(display_message,"@Infantry ordered general charge because enemy is too near and casualties inflicted."), ##############				
 			(try_end),
 
