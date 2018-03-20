@@ -86,7 +86,7 @@ party_templates = [
 ("imladris_scouts","Dunedain Scouts",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_imladris,scout_personality,[(trp_dunedain_master_ranger,1,1),(trp_dunedain_trained_scout,1,3),(trp_dunedain_scout,2,5)]), #37-65
 ("dale_scouts"     ,"Dale Scouts"          ,icon_generic_knight  |carries_goods(2)|pf_show_faction,0,fac_dale    ,scout_personality,[(trp_dale_veteran_warrior,1,1),(trp_dale_man_at_arms,2,6),(trp_dale_militia,4,8)]), #25-49 weak
 ("esgaroth_scouts" ,"Esgaroth Scouts"    ,icon_ithilien_ranger|carries_goods(2)|pf_show_faction,0,fac_dale    ,scout_personality,[(trp_barding_bowmen_of_esgaroth,1,1),(trp_laketown_archer,1,3),(trp_laketown_scout,4,6)]), #41-67 stronger than dale
-("dwarf_scouts"    ,"Dwarven Lookouts"     ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,scout_personality,[(trp_dwarven_archer,1,1),(trp_dwarven_hardened_warrior,1,3),(trp_dwarven_lookout,4,6)]), #41-63
+("dwarf_scouts"    ,"Dwarven Lookouts"     ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,scout_personality,[(trp_dwarven_bowman,1,1),(trp_dwarven_hardened_warrior,1,3),(trp_dwarven_lookout,4,6)]), #41-63
 ("beorn_scouts"    ,"Beorning Scouts"      ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_beorning_carrock_berserker,1,1),(trp_beorning_sentinel,3,5),(trp_beorning_warrior,3,8)]), #55-93 stronger, no raiders/patrols
 ("woodmen_scouts"  ,"Woodmen Scouts"       ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_fell_huntsmen_of_mirkwood,1,1),(trp_woodmen_scout,2,3),(trp_woodmen_skilled_forester,3,6)]), #46-70
 
@@ -157,7 +157,7 @@ party_templates = [
 ("moria_war_party"   ,"Moria_War_Party"   ,icon_orc_tribal_x4    |carries_goods(3)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_fell_goblin_of_moria,5,10),(trp_large_goblin_archer_of_moria,10,20),(trp_large_goblin_of_moria,12,24),(trp_goblin_of_moria,15,30),(trp_snaga_of_moria,20,50),(trp_troll_of_moria,1,2)]), #262-534
 #Northern war
 ("dale_war_party"  ,"Dale_War_Party"   ,icon_generic_knight       |carries_goods(3)|pf_show_faction,0,fac_dale   ,soldier_personality,[(trp_dale_man_at_arms,8,13),(trp_dale_veteran_warrior,8,20),(trp_barding_bowmen_of_esgaroth,8,16),(trp_laketown_archer,5,20),(trp_dale_billman,10,25),(trp_merchant_squire_or_dale,4,15)]), # NOT USED and unbalanced 383-953
-#("dwarf_war_party" ,"Dwarven_War_Party",icon_dwarf_x3              |carries_goods(3),0,fac_dwarf  ,soldier_personality,[(trp_dwarven_apprentice      ,8,13),(trp_grors_guard,8,20),(trp_dwarven_warrior,8,16),(trp_dwarven_expert_axeman,5,20),(trp_dwarven_lookout,4,15),(trp_dwarven_archer,4,15)]),
+#("dwarf_war_party" ,"Dwarven_War_Party",icon_dwarf_x3              |carries_goods(3),0,fac_dwarf  ,soldier_personality,[(trp_dwarven_apprentice      ,8,13),(trp_grors_guard,8,20),(trp_dwarven_warrior,8,16),(trp_dwarven_expert_axeman,5,20),(trp_dwarven_lookout,4,15),(trp_dwarven_bowman,4,15)]),
 ("rhun_war_party"  ,"Rhun_War_Party"   ,icon_easterling_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_rhun   ,soldier_personality,[(trp_dorwinion_noble_of_rhun,2,4),(trp_rhun_heavy_noble_cavalry,5,10),(trp_rhun_veteran_swift_horseman,8,16),(trp_rhun_veteran_horse_archer,8,16),(trp_rhun_tribal_warrior,12,24),(trp_rhun_tribesman,18,36)]), #358-716 was 260-552
 
 ####TLD Companies (only Gondorian used, as a MT patrol)
@@ -167,7 +167,7 @@ party_templates = [
 ("lorien_company"  ,"Lothlorien Company",icon_lorien_elf_b        ,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_infantry,30,30),(trp_lothlorien_elite_infantry,30,30),(trp_lothlorien_veteran_warden,30,30),(trp_galadhrim_royal_warden,5,5),(trp_galadhrim_royal_swordsman,5,5),(trp_elf_captain_of_lothlorien,1,1)]),
 ("woodelf_company" ,"Mirkwood Company"  ,icon_mirkwood_elf        ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_archer,21,22),(trp_greenwood_master_archer,21,22),(trp_thranduils_royal_marksman,8,12)]),
 ("dale_company"    ,"Dale Company"      ,icon_generic_knight         ,0,fac_dale    ,soldier_personality,[(trp_laketown_archer,20,20),(trp_barding_bowmen_of_esgaroth,20,20),(trp_dale_veteran_warrior,20,20),(trp_dale_bill_master,20,20),(trp_girions_guard_of_dale,20,20)]),
-("dwarf_company"   ,"Dwarven Company"   ,icon_dwarf               ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior,25,25),(trp_dwarven_lookout,25,25),(trp_dwarven_warrior,20,20),(trp_dwarven_expert_axeman,20,20),(trp_dwarven_archer,10,10)]),
+("dwarf_company"   ,"Dwarven Company"   ,icon_dwarf               ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior,25,25),(trp_dwarven_lookout,25,25),(trp_dwarven_warrior,20,20),(trp_dwarven_expert_axeman,20,20),(trp_dwarven_bowman,10,10)]),
 
 ####TLD Elite Companies (not used)
 ("gondor_elite_company"  ,"Gondor Elite Company"    ,icon_knight_gondo_trot_x3,0,fac_gondor  ,soldier_personality,[(trp_guard_of_the_fountain_court,15,30),(trp_knight_of_the_citadel,15,30),(trp_archer_of_the_tower_guard,15,30),(trp_swordsmen_of_the_tower_guard,15,30),(trp_captain_of_gondor,1,1)]),
@@ -176,7 +176,7 @@ party_templates = [
 ("lorien_elite_company"  ,"Lothlorien Elite Company",icon_lorien_elf_b_x3     ,0,fac_lorien  ,soldier_personality,[(trp_galadhrim_royal_marksman   ,13,25),(trp_galadhrim_royal_swordsman,13,25),(trp_galadhrim_royal_archer,13,25),(trp_galadhrim_royal_warden,13,25),(trp_noldorin_commander,1,1)]),
 ("woodelf_elite_company" ,"Mirkwood Elite Company"  ,icon_mirkwood_elf_x3     ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman   ,20,40),(trp_thranduils_royal_marksman,20,40),(trp_elf_captain_of_mirkwood,0,0)]),
 ("dale_elite_company"    ,"Dale Elite Company"      ,icon_generic_knight         ,0,fac_dale    ,soldier_personality,[(trp_dale_bill_master           ,13,25),(trp_dale_marchwarden,13,25),(trp_girions_guard_of_dale,13,25),(trp_barding_bowmen_of_esgaroth,13,25),(trp_knight_5_1,13,25)]),
-("dwarf_elite_company"   ,"Dwarven Elite Company"   ,icon_dwarf_x3            ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_warrior            ,18,34),(trp_dwarven_expert_axeman,18,34),(trp_dwarven_archer,18,34),(trp_knight_5_6,1,1)]),
+("dwarf_elite_company"   ,"Dwarven Elite Company"   ,icon_dwarf_x3            ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_warrior            ,18,34),(trp_dwarven_expert_axeman,18,34),(trp_dwarven_bowman,18,34),(trp_knight_5_6,1,1)]),
 
 ####TLD Legions
 #("gondor_legion","Gondor Legion",icon_|carries_goods(2),0,fac_,soldier_personality,[(trp_,0,0)]),

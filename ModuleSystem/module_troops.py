@@ -425,16 +425,29 @@ itm_dwarf_nasal_reinf = (itm_dwarf_nasal, imod_reinforced)
 itm_dwarf_nasal_lordly =  (itm_dwarf_nasal, imod_lordly)
 itm_dwarf_miner_nasal = (itm_dwarf_miner, imod_thick)
 itm_dwarf_miner_reinf = (itm_dwarf_miner, imod_reinforced)
-itm_dwarf_helm_round_lordly = (itm_dwarf_helm_round, imod_lordly)
-itm_dwarf_helm_sallet_lordly = (itm_dwarf_helm_sallet, imod_lordly)
+itm_dwarf_helm_round_lordly = (itm_dwarf_helm_round, imod_reinforced)
+itm_dwarf_helm_sallet_lordly = (itm_dwarf_helm_sallet, imod_reinforced)
 itm_dwarf_helm_king_NPC = (itm_witchking_helmet, imod_old)
 
 #Dwarf armour variants
-itm_dwarf_armor_a_lordly = (itm_dwarf_armor_a, imod_lordly)
-itm_dwarf_armor_b_lordly = (itm_dwarf_armor_b, imod_lordly)
-itm_dwarf_armor_c_lordly = (itm_dwarf_armor_c, imod_lordly)
-itm_dwarf_vest_lordly = (itm_dwarf_vest, imod_lordly)
-itm_dwarf_vest_b_lordly = (itm_dwarf_vest_b, imod_lordly)
+itm_dwarf_armor_a_lordly = (itm_dwarf_armor_a, imod_reinforced)
+itm_dwarf_armor_b_lordly = (itm_dwarf_armor_b, imod_reinforced)
+itm_dwarf_armor_c_lordly = (itm_dwarf_armor_c, imod_reinforced)
+itm_dwarf_vest_lordly = (itm_dwarf_vest, imod_reinforced)
+itm_dwarf_vest_b_lordly = (itm_dwarf_vest_b, imod_reinforced)
+
+#Dwarf weapon variants
+itm_dwarf_great_axe_good = (itm_dwarf_great_axe, imod_masterwork)
+itm_dwarf_great_mattock_good = (itm_dwarf_great_mattock, imod_balanced)
+itm_dwarf_great_pick_good = (itm_dwarf_great_pick, imod_balanced)
+itm_dwarf_mattock_good = (itm_dwarf_mattock, imod_balanced)
+itm_dwarf_sword_a_good = (itm_dwarf_sword_a, imod_fine)
+
+#Dwarf shield variants
+itm_dwarf_shield_a_good = (itm_dwarf_shield_a, imod_reinforced)
+itm_dwarf_shield_b_good = (itm_dwarf_shield_b, imod_reinforced)
+itm_dwarf_shield_c_good = (itm_dwarf_shield_c, imod_reinforced)
+itm_dwarf_shield_d_good = (itm_dwarf_shield_d, imod_reinforced)
 
 #Orc helm variants
 itm_orc_coif_good = (itm_orc_coif, imod_reinforced)
@@ -752,25 +765,27 @@ troops = [
 ["rhun_items","BUG","BUG",tf_hero,0,0,fac_rhun,
    [itm_saddle_horse,itm_fur_coat,itm_leather_boots,itm_leather_gloves,itm_sumpter_horse,itm_short_bow,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
       0,0,0,0],
-########################## DWARVES #############################
-["dwarven_apprentice","Apprentice-dwarf","Apprentice-dwarves",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,[itm_dwarf_hood, itm_dwarf_miner,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_hand_axe,itm_dwarf_shield_a,itm_dwarf_shield_b,],attr_dwarf_tier_1,wp_dwarf_tier_1,knows_common_dwarf|knows_ironflesh_1|knows_power_strike_1,dwarf_face_2,dwarf_face_3],
-["dwarven_warrior","Warrior-dwarf","Warrior-dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif, itm_dwarf_miner, itm_dwarf_miner_nasal,itm_dwarf_armor_a,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_hand_axe,itm_dwarf_throwing_axe,itm_dwarf_shield_f,itm_dwarf_shield_j,],attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_1|knows_power_strike_1|knows_power_throw_2|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
-["dwarven_hardened_warrior","Hardened_Warrior-dwarf","Hardened_Warrior-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif, itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_armor_a, itm_dwarf_armor_a_lordly,itm_leather_gloves,itm_dwarf_chain_boots,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_throwing_axe,itm_dwarf_shield_g,itm_dwarf_shield_k,],attr_dwarf_tier_3,wp_dwarf_tier_3,knows_common_dwarf|knows_athletics_2|knows_power_strike_2|knows_power_throw_2|knows_ironflesh_3,dwarf_face_3,dwarf_face_4],
-["dwarven_spearman","Spear-dwarf","Spear-dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif_lordly, itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_armor_a, itm_dwarf_armor_a_lordly,itm_leather_gloves,itm_dwarf_pad_boots,itm_dwarf_spear,itm_dwarf_throwing_axe,itm_dwarf_shield_f,itm_dwarf_shield_j,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_3|knows_power_strike_4|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
-["dwarven_pikeman","Pike-dwarf","Pike-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_pad_boots,itm_dwarf_spear_b,itm_dwarf_shield_f,],attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_4|knows_power_strike_5|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
-["dwarven_halberdier","Longpike_Dwarf","Longpike_Dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet_lordly,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_chain_boots,itm_dwarf_spear_c,itm_dwarf_shield_f,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_strike_6|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
-["dwarven_axeman","Axedwarf","Axedwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif_lordly, itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_armor_a, itm_dwarf_armor_a_lordly,itm_leather_gloves,itm_dwarf_pad_boots,itm_dwarf_mattock,itm_dwarf_hand_axe,itm_dwarf_throwing_axe,itm_dwarf_shield_f,itm_dwarf_shield_j,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_2|knows_power_throw_2|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
-["dwarven_expert_axeman","Expert_Axedwarf","Expert_Axedwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_chain_boots,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_hand_axe,itm_dwarf_throwing_axe,itm_dwarf_shield_g,itm_dwarf_shield_k,],attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_3|knows_power_throw_4|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
-["longbeard_axeman","Longbeard_Axedwarf","Longbeard_Axedwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet_lordly,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_scale_boots,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_mattock,itm_dwarf_great_axe,itm_dwarf_throwing_axe,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_throw_5|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
-["dwarven_lookout","Lookout-dwarf","Lookout-dwarves",tf_dwarf| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_hood, itm_dwarf_miner,  itm_dwarf_miner_nasal,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_dwarf_short_bow,itm_arrows,itm_dwarf_sword_a,],attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_1|knows_power_draw_1|knows_power_strike_1|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
-["dwarven_scout","Scout-dwarf","Scout-dwarves",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_hood, itm_dwarf_helm_coif, itm_dwarf_miner,  itm_dwarf_miner_nasal,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_dwarf_short_bow,itm_arrows,itm_dwarf_sword_a,],attr_dwarf_tier_3,wp_dwarf_tier_3,knows_common_dwarf|knows_athletics_2|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_1,dwarf_face_4,dwarf_face_5],
-["dwarven_bowman","Bow-dwarf","Bow-dwarves",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_hood, itm_dwarf_helm_coif, itm_dwarf_miner,  itm_dwarf_miner_nasal,itm_dwarf_armor_a,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_dwarf_horn_bow,itm_arrows,itm_dwarf_sword_a,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_2|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_2,dwarf_face_4,dwarf_face_5],
-["dwarven_archer","Archer-dwarf","Archer-dwarves",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif, itm_dwarf_helm_kettle,itm_dwarf_armor_a,itm_dwarf_vest_lordly,itm_dwarf_chain_boots,itm_dwarf_horn_bow,itm_arrows,itm_dwarf_sword_a,],attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_3|knows_power_draw_4|knows_power_strike_2|knows_ironflesh_2,dwarf_face_4,dwarf_face_5],
-["marksman_of_ravenhill","Marks-dwarf_of_Ravenhill","Marks-dwarves_of_Ravenhill",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_dwarf_chain_boots,itm_dwarf_horn_bow,itm_arrows,itm_dwarf_sword_a,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_draw_5|knows_power_strike_3|knows_ironflesh_3,dwarf_face_4,dwarf_face_5],
-["iron_hills_miner","Iron_Hills_Miner","Iron_Hills_Miners",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,[itm_dwarf_miner, itm_dwarf_miner_reinf,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_leather_dwarf_armor_b,itm_dwarf_chain_boots,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_c,itm_dwarf_shield_d,],attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_1|knows_power_strike_2|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
-["iron_hills_infantry","Iron_Hills_Infantry","Iron_Hills_Infantry",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_miner_reinf, itm_dwarf_helm_fris, itm_dwarf_nasal, itm_dwarf_helm_coif_reinf,itm_leather_dwarf_armor_b, itm_dwarf_vest_b,itm_leather_gloves,itm_dwarf_chain_boots,itm_dwarf_adz,itm_dwarf_mattock,itm_dwarf_sword_a,itm_dwarf_shield_g,itm_dwarf_shield_k,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_2|knows_power_strike_3|knows_ironflesh_2,dwarf_face_3,dwarf_face_4],
-["iron_hills_battle_infantry","Iron_Hills_Battle-dwarf","Iron_Hills_Battle-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_nasal_reinf, itm_dwarf_helm_fris_reinf,itm_dwarf_vest_b, itm_leather_dwarf_armor,itm_mail_mittens,itm_dwarf_chain_boots,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_mattock,],attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_3|knows_power_strike_4|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
-["grors_guard","Gror's_Guard","Gror's_Guards",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_nasal_lordly, itm_dwarf_helm_fris_lordly,itm_dwarf_armor_c,itm_mail_mittens,itm_dwarf_scale_boots,itm_dwarf_great_pick,itm_dwarf_war_pick,itm_dwarf_great_mattock,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_strike_6|knows_ironflesh_5,dwarf_face_7,dwarf_face_7],
+	  
+# Dwarves
+
+["dwarven_apprentice","Apprentice-dwarf","Apprentice-dwarves",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,[itm_dwarf_hood, itm_dwarf_miner,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_dwarf_mattock, itm_dwarf_mattock_good, itm_dwarf_hand_axe,],attr_dwarf_tier_1,wp_dwarf_tier_1,knows_common_dwarf|knows_ironflesh_1|knows_power_strike_1,dwarf_face_2,dwarf_face_3],
+["dwarven_warrior","Warrior-dwarf","Warrior-dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif, itm_dwarf_miner, itm_dwarf_miner_nasal,itm_dwarf_nasal_b,itm_dwarf_armor_a,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_dwarf_mattock_good, itm_dwarf_hand_axe,itm_dwarf_sword_a, itm_dwarf_spear, itm_dwarf_shield_d, itm_dwarf_shield_d_good,],attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_1|knows_power_strike_1|knows_power_throw_2|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
+["dwarven_hardened_warrior","Hardened_Warrior-dwarf","Hardened_Warrior-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif, itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_nasal_b,itm_dwarf_armor_a, itm_dwarf_armor_a_lordly,itm_leather_gloves,itm_dwarf_pad_boots,itm_dwarf_mattock_good, itm_dwarf_hand_axe,itm_dwarf_sword_a, itm_dwarf_spear, itm_dwarf_shield_d, itm_dwarf_shield_d_good,itm_dwarf_shield_a, itm_dwarf_shield_a_good,],attr_dwarf_tier_3,wp_dwarf_tier_3,knows_common_dwarf|knows_athletics_2|knows_power_strike_2|knows_power_throw_2|knows_ironflesh_3,dwarf_face_3,dwarf_face_4],
+["dwarven_spearman","Spear-dwarf","Spear-dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif_lordly, itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_armor_a, itm_dwarf_armor_a_lordly,itm_leather_gloves,itm_dwarf_pad_boots,itm_dwarf_spear,itm_dwarf_shield_d, itm_dwarf_shield_d_good,itm_dwarf_shield_a, itm_dwarf_shield_a_good,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_3|knows_power_strike_4|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
+["dwarven_pikeman","Pike-dwarf","Pike-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_chain_boots,itm_dwarf_spear,itm_dwarf_shield_c,],attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_4|knows_power_strike_5|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
+["dwarven_halberdier","Longpike_Dwarf","Longpike_Dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet_lordly,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_chain_boots,itm_dwarf_scale_boots,itm_dwarf_spear_b,itm_dwarf_shield_c, itm_dwarf_shield_c_good,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_strike_6|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
+["dwarven_axeman","Axedwarf","Axedwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_coif_lordly, itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_armor_a, itm_dwarf_armor_a_lordly,itm_leather_gloves,itm_dwarf_chain_boots, itm_dwarf_hand_axe,itm_dwarf_throwing_axe,itm_dwarf_throwing_axe,itm_dwarf_shield_d, itm_dwarf_shield_d_good,itm_dwarf_shield_a, itm_dwarf_shield_a_good,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_2|knows_power_throw_2|knows_power_strike_5|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
+["dwarven_expert_axeman","Expert_Axedwarf","Expert_Axedwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_chain_boots, itm_dwarf_hand_axe, itm_dwarf_battle_axe,itm_dwarf_throwing_axe,itm_dwarf_throwing_axe,itm_dwarf_shield_b,],attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_3|knows_power_throw_4|knows_power_strike_6|knows_ironflesh_4,dwarf_face_3,dwarf_face_4],
+["longbeard_axeman","Longbeard_Axedwarf","Longbeard_Axedwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet_lordly,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_scale_boots,itm_dwarf_battle_axe, itm_dwarf_throwing_axe,itm_dwarf_throwing_axe,itm_dwarf_shield_b_good,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_throw_5|knows_power_strike_7|knows_ironflesh_6,dwarf_face_7,dwarf_face_7],
+["dwarven_lookout","Lookout-dwarf","Lookout-dwarves",tf_dwarf| tfg_ranged| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_hood, itm_dwarf_miner,  itm_dwarf_miner_nasal,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_dwarf_pad_boots,itm_short_bow, itm_arrows, itm_dwarf_hand_axe, itm_dwarf_sword_a,],attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_1|knows_power_draw_1|knows_power_strike_1|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
+["dwarven_scout","Scout-dwarf","Scout-dwarves",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_hood, itm_dwarf_helm_coif, itm_dwarf_miner,  itm_dwarf_miner_nasal,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_leather_gloves,itm_dwarf_pad_boots,itm_dwarf_short_bow, itm_arrows,itm_dwarf_hand_axe, itm_dwarf_sword_a,],attr_dwarf_tier_3,wp_dwarf_tier_3,knows_common_dwarf|knows_athletics_2|knows_power_draw_2|knows_power_strike_2|knows_ironflesh_1,dwarf_face_4,dwarf_face_5],
+["dwarven_bowman","Bow-dwarf","Bow-dwarves",tf_dwarf| tfg_ranged| tfg_gloves| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_kettle, itm_dwarf_helm_round,itm_dwarf_armor_a,itm_dwarf_vest_lordly,itm_leather_gloves,itm_dwarf_pad_boots,itm_dwarf_horn_bow, itm_arrows,itm_dwarf_hand_axe, itm_dwarf_sword_a_good,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_2|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_2,dwarf_face_4,dwarf_face_5],
+["dwarven_longaxeman","Longaxe Dwarf","Longaxe Dwarves",tf_dwarf| tfg_armor| tfg_shield| tfg_gloves| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_helm_sallet_lordly,itm_dwarf_armor_b, itm_dwarf_armor_b_lordly,itm_mail_mittens,itm_dwarf_scale_boots,itm_dwarf_spear_c,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_strike_6|knows_ironflesh_6,dwarf_face_4,dwarf_face_5],
+["iron_hills_warrior","Iron_Hills_Warrior","Iron_Hills_Warriors",tf_dwarf| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_miner_reinf, itm_dwarf_helm_fris, itm_dwarf_nasal, itm_dwarf_helm_coif_reinf,itm_leather_dwarf_armor_b, itm_dwarf_vest_b,itm_leather_gloves,itm_dwarf_chain_boots,itm_dwarf_mattock, itm_dwarf_mattock_good, itm_dwarf_hand_axe, itm_dwarf_sword_a,itm_dwarf_shield_d, itm_dwarf_shield_d_good,],attr_dwarf_tier_3,wp_dwarf_tier_3,knows_common_dwarf|knows_athletics_2|knows_power_strike_3|knows_ironflesh_2,dwarf_face_3,dwarf_face_4],
+["iron_hills_miner","Iron_Hills_Miner","Iron_Hills_Miners",tf_dwarf| tfg_armor| tfg_boots,0,0,fac_dwarf,[itm_dwarf_miner, itm_dwarf_miner_reinf,itm_dwarf_vest,itm_dwarf_vest_lordly,itm_leather_dwarf_armor_b,itm_dwarf_pad_boots,itm_dwarf_mattock, itm_dwarf_mattock_good, itm_dwarf_hand_axe, itm_dwarf_sword_a,itm_dwarf_shield_d, itm_dwarf_shield_d_good,],attr_dwarf_tier_2,wp_dwarf_tier_2,knows_common_dwarf|knows_athletics_1|knows_power_strike_2|knows_ironflesh_1,dwarf_face_1,dwarf_face_2],
+["iron_hills_infantry","Iron_Hills_Infantry","Iron_Hills_Infantry",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_miner_reinf, itm_dwarf_helm_fris, itm_dwarf_nasal, itm_leather_dwarf_armor_b, itm_dwarf_vest_b,itm_leather_gloves,itm_dwarf_chain_boots, itm_dwarf_great_mattock, itm_dwarf_mattock_good, itm_dwarf_sword_a, itm_dwarf_sword_a_good,itm_dwarf_shield_d, itm_dwarf_shield_d_good,],attr_dwarf_tier_4,wp_dwarf_tier_4,knows_common_dwarf|knows_athletics_2|knows_power_strike_3|knows_ironflesh_2,dwarf_face_3,dwarf_face_4],
+["iron_hills_battle_infantry","Iron_Hills_Battle-dwarf","Iron_Hills_Battle-dwarves",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_nasal_reinf, itm_dwarf_helm_fris_reinf,itm_dwarf_vest_b, itm_leather_dwarf_armor,itm_mail_mittens,itm_dwarf_scale_boots,itm_dwarf_great_pick, itm_dwarf_great_mattock,itm_dwarf_great_axe],attr_dwarf_tier_5,wp_dwarf_tier_5,knows_common_dwarf|knows_athletics_3|knows_power_strike_4|knows_ironflesh_3,dwarf_face_1,dwarf_face_2],
+["grors_guard","Gror's_Guard","Gror's_Guards",tf_dwarf| tfg_armor| tfg_gloves| tfg_shield| tfg_helm| tfg_boots,0,0,fac_dwarf,[itm_dwarf_nasal_lordly, itm_dwarf_helm_fris_lordly,itm_dwarf_armor_c,itm_mail_mittens,itm_dwarf_scale_boots,itm_dwarf_great_pick_good,itm_dwarf_great_mattock_good,itm_dwarf_great_axe,itm_dwarf_great_axe_good,],attr_dwarf_tier_6,wp_dwarf_tier_6,knows_common_dwarf|knows_athletics_4|knows_power_strike_6|knows_ironflesh_5,dwarf_face_7,dwarf_face_7],
 
 ["dwarf_items","BUG","_",tf_hero,0,0,fac_dwarf,
    [itm_pony, itm_good_mace,itm_dwarf_shield_b,itm_dwarf_shield_f,itm_dwarf_shield_g,itm_dwarf_shield_i,itm_dwarf_shield_j,itm_dwarf_shield_k,itm_dwarf_shield_l,itm_dwarf_sword_b,itm_dwarf_sword_c,itm_dwarf_sword_d,itm_dwarf_great_mattock,itm_dwarf_hand_axe,itm_dwarf_throwing_axe,itm_dwarf_spear,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
@@ -2106,7 +2121,7 @@ troops = [
    [itm_mirkwood_armor_a,itm_mirkwood_boots,itm_mirkwood_knife,itm_short_bow,itm_woodelf_arrows,],
       str_8|agi_13|int_12|cha_6|level(1),wp_one_handed(70)|wp_two_handed(40)|wp_polearm(40)|wp_archery(100)|wp_throwing(60),knows_power_draw_2|knows_ironflesh_1|knows_athletics_1|knows_spotting_1|knows_pathfinding_3|knows_tracking_1|knows_wound_treatment_2,0x0000000180004009041d7566cb87608000000000001d24d30000000000000000],
 ["npc7","Kili_Goldfinger","_",tf_dwarf| tf_hero| tf_unmoveable_in_party_window,0,0,fac_dwarf,
-   [itm_leather_dwarf_armor,itm_dwarf_pad_boots,itm_dwarf_sword_a,itm_dwarf_throwing_axe,itm_dwarf_adz,itm_dwarf_shield_f,],
+   [itm_leather_dwarf_armor,itm_dwarf_pad_boots,itm_dwarf_sword_a,itm_dwarf_throwing_axe,itm_dwarf_mattock,itm_dwarf_shield_f,],
       str_14|agi_8|int_7|cha_6|level(7),wp_one_handed(100)|wp_two_handed(115)|wp_polearm(70)|wp_archery(50)|wp_throwing(115),knows_riding_10|knows_athletics_2|knows_power_strike_3|knows_power_throw_3|knows_ironflesh_3|knows_weapon_master_2|knows_trainer_1|knows_engineer_4|knows_looting_4|knows_trade_3,0x00000001c000110336db6db6db6db6db00000000001db6db0000000000000000],
 ["npc8","Faniul","_",tf_female| tfg_ranged| tf_hero| tf_unmoveable_in_party_window,0,0,fac_dale,
    [itm_blue_tunic,itm_leather_boots,itm_wimple_with_veil,],
@@ -2422,10 +2437,10 @@ troops = [
       attr_tier_6,wp_tier_6,knight_skills_1|knows_trainer_3,0x00000008ef00008436db76b7ab6ef6b400000000001d26eb0000000000000000],
 #Dwarven
 ["knight_5_6","Fulgni_Longbeard","_",tf_hero| tf_dwarf| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_armor_c,itm_dwarf_armor_c,itm_dwarf_scale_boots,itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_helm_king_NPC,itm_dwarf_throwing_axe,itm_dwarf_great_axe,],
+   [itm_dwarf_armor_b_lordly,itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_helm_king_NPC,itm_dwarf_throwing_axe,itm_dwarf_great_axe,],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_1,0x00000001b000014258e46ec7d780e9fe00000000001ce4710000000000000000],
 ["knight_5_7","Thorin_Stonehelm","_",tf_hero| tf_dwarf| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_armor_c,itm_dwarf_armor_c,itm_dwarf_scale_boots,itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_helm_king_NPC,itm_dwarf_throwing_axe,itm_dwarf_great_axe,],
+   [itm_dwarf_armor_c_lordly,itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_helm_king_NPC,itm_dwarf_throwing_axe,itm_dwarf_great_axe,],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knows_riding_10|knows_persuasion_3|knight_skills_1,0x00000009bf00510616936b596c56ddfe00000000001ecc780000000000000000],
 #Dunland
 ["knight_5_11","Chief_Fudreim","_",tf_hero| tf_dunland| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dunland,
@@ -3640,12 +3655,13 @@ upgrade2(troops,"dwarven_hardened_warrior","dwarven_axeman","dwarven_spearman")
 upgrade(troops,"dwarven_axeman","dwarven_expert_axeman")
 upgrade(troops,"dwarven_expert_axeman","longbeard_axeman")
 upgrade(troops,"dwarven_spearman","dwarven_pikeman")
-upgrade(troops,"dwarven_pikeman","dwarven_halberdier")
+upgrade2(troops,"dwarven_pikeman","dwarven_halberdier","dwarven_longaxeman")
 upgrade(troops,"dwarven_lookout","dwarven_scout")
 upgrade(troops,"dwarven_scout","dwarven_bowman")
-upgrade(troops,"dwarven_bowman","dwarven_archer")
-upgrade(troops,"dwarven_archer","marksman_of_ravenhill")
-upgrade(troops,"iron_hills_miner","iron_hills_infantry")
+#upgrade(troops,"dwarven_bowman","dwarven_archer")
+#upgrade(troops,"dwarven_archer","marksman_of_ravenhill")
+upgrade(troops,"iron_hills_miner","iron_hills_warrior")
+upgrade(troops,"iron_hills_warrior","iron_hills_infantry")
 upgrade(troops,"iron_hills_infantry","iron_hills_battle_infantry")
 upgrade(troops,"iron_hills_battle_infantry","grors_guard")
 #DALE

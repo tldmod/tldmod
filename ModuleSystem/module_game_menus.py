@@ -769,8 +769,8 @@ game_menus = [
 		(set_visitors, 41, "trp_longbeard_axeman",			3),
 		(set_visitors, 42, "trp_dwarven_scout",				2),
 		(set_visitors, 43, "trp_dwarven_bowman",			2),
-		(set_visitors, 44, "trp_dwarven_archer",			2),
-		(set_visitors, 45, "trp_marksman_of_ravenhill",		2),
+		(set_visitors, 44, "trp_dwarven_bowman",			2),
+		(set_visitors, 45, "trp_dwarven_bowman",		2),
 		(str_store_string, s16, "str_custom_battle_5"),
      (else_try),
 ########################################## ORCS VS MIRKWOOD  

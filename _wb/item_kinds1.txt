@@ -2200,16 +2200,16 @@ itemsfile version 2
  itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  275087364 4222124851987200 125 271496 3 100 0 0 0 0 36864 95 0 185 0 287 36
 0
 
- itm_dale_shield_a Dale_Shield Dale_Shield 1  dwarf_shield_n 0  327687 5100273664 200 251658402 2 100 0 1 0 0 360 90 0 50 0 0 0
+ itm_dale_shield_a Dale_Shield Dale_Shield 1  dwarf_round_shield_n 0  327687 5100273664 200 251658402 2 100 0 1 0 0 360 90 0 50 0 0 0
 0
 
- itm_dale_shield_b Dale_Shield Dale_Shield 1  dwarf_shield_e 0  327687 5100273664 200 251658402 2 100 0 1 0 0 360 90 0 50 0 0 0
+ itm_dale_shield_b Dale_Shield Dale_Shield 1  dwarf_round_shield_e 0  327687 5100273664 200 251658402 2 100 0 1 0 0 360 90 0 50 0 0 0
 0
 
- itm_dale_shield_c Dale_Shield Dale_Shield 1  dwarf_shield_m 0  327687 5100273664 300 251658402 2 100 0 5 0 0 500 90 0 50 0 0 0
+ itm_dale_shield_c Dale_Shield Dale_Shield 1  dwarf_round_shield_m 0  327687 5100273664 300 251658402 2 100 0 5 0 0 500 90 0 50 0 0 0
 0
 
- itm_dale_shield_d Dale_Shield Dale_Shield 1  dwarf_shield_m 0  327687 5100273664 200 251658402 2 100 0 1 0 0 360 90 0 50 0 0 0
+ itm_dale_shield_d Dale_Shield Dale_Shield 1  dwarf_round_shield_m 0  327687 5100273664 200 251658402 2 100 0 1 0 0 360 90 0 50 0 0 0
 0
 
  itm_umb_armor_a Corsair_Leather_Armor Corsair_Leather_Armor 1  corsair_leather 0  16842765 0 300 123731968 7 100 0 10 4 0 0 0 0 0 0 0 0
@@ -2338,16 +2338,16 @@ itemsfile version 2
  itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  342163460 9223635923965575392 300 156672 6 100 0 0 0 0 44032 88 0 71 0 256 43
 0
 
- itm_dwarf_shield_a Dwarven_Shield Dwarven_Shield 1  dwarf_shield_a 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_dwarf_shield_a Dwarven_Angular_Shield Dwarven_Angular_Shield 2  dwarf_angular_shield_a 0  dwarf_angular_shield_b 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_b Dwarven_Shield Dwarven_Shield 1  dwarf_shield_b 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_dwarf_shield_b Dwarven_Tower_Shield Dwarven_Tower_Shield 2  dwarf_tear_shield_a 0  dwarf_tear_shield_b 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_c Dwarven_Shield Dwarven_Shield 1  dwarf_shield_c 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_dwarf_shield_c Dwarven_Fighting_Shield Dwarven_Fighting_Shield 2  dwarf_fighting_shield_a 0  dwarf_fighting_shield_b 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_d Dwarven_Shield Dwarven_Shield 1  dwarf_shield_d 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_dwarf_shield_d Dwarven_Round_Shield Dwarven_Round_Shield 2  dwarf_round_shield_n 0  dwarf_round_shield_e 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
  itm_dwarf_shield_f Dwarven_Shield Dwarven_Shield 1  dwarf_shield_f 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
@@ -2368,10 +2368,10 @@ itemsfile version 2
  itm_dwarf_shield_l Dwarven_Shield Dwarven_Shield 1  dwarf_shield_l 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_dwarf_sword_a Dwarf_Sword Dwarf_Sword 4  dwarf_sword_a 0  scab_dwarf_sword_a 3458764513820540928  beorning_seax 1024  beorning_seax_sheath 3458764513820541952  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 62 0 277 29
+ itm_dwarf_sword_a Dwarf_Sword Dwarf_Sword 4  dwarf_sword_a 0  scab_dwarf_sword_a 3458764513820540928  dwarf_sword_b 156672  scab_dwarf_sword_b 3458764513820697600  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29
 0
 
- itm_dwarf_sword_b Dwarf_Sword Dwarf_Sword 2  dwarf_sword_b 0  scab_dwarf_sword_b 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29
+ itm_dwarf_sword_b Northmen_Shortsword Northmen_Shortsword 2  beorning_seax 0  beorning_seax_sheath 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 31744 105 0 58 0 277 31
 0
 
  itm_dwarf_sword_c Dwarf_Sword Dwarf_Sword 2  dwarf_sword_c 0  scab_dwarf_sword_c 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29
@@ -2380,25 +2380,25 @@ itemsfile version 2
  itm_dwarf_sword_d Dwarf_Sword Dwarf_Sword 2  dwarf_sword_d 0  scab_dwarf_sword_d 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 58 0 277 29
 0
 
- itm_dwarf_adz Dwarf_Adz Dwarf_Adz 1  dwarf_adz 0  342163460 9223635923965575392 400 156672 2 100 0 0 0 0 44032 94 0 68 0 256 299
+ itm_dwarf_battle_axe Dwarf_Battle_Axe Dwarf_Battle_Axe 1  dwarf_battle_axe 0  80019458 9223388530091229198 600 156672 2 100 0 0 0 0 44032 94 0 61 0 256 43
 0
 
- itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 1  dwarf_great_axe 0  342163460 9223635923965575392 700 156672 4 100 0 0 0 0 46080 86 0 102 0 256 45
+ itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 2  dwarf_great_axe 0  dwarf_great_axe_2 156672  342163460 9223635923965575392 700 156672 4 100 0 0 0 0 48128 86 0 102 0 256 47
 0
 
- itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 1  dwarf_great_mattock 0  342163460 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
+ itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 2  dwarf_great_mattock 0  dwarf_war_mattock 156672  342163460 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
 0
 
- itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 1  dwarf_great_pick 0  342163460 9223635923965575392 400 156672 3 100 0 0 0 0 30720 96 0 93 0 256 286
+ itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 2  dwarf_great_pick 0  dwarf_war_pick 156672  342163460 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
 0
 
  itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163460 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284
 0
 
- itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 1  dwarf_mattock 0  272957444 9223388530091229198 200 156672 3 100 0 0 0 0 19456 96 0 99 0 256 275
+ itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 2  dwarf_mattock 0  dwarf_adz 156672  272957444 9223388530091229198 200 156672 3 100 0 0 0 0 23552 96 0 52 0 256 279
 0
 
- itm_dwarf_hand_axe Dwarf_Short_Axe Dwarf_Short_Axe 1  dwarf_1h_axe 0  80019458 9223388530091229198 500 156672 2 100 0 0 0 0 40960 97 0 54 0 256 40
+ itm_dwarf_hand_axe Dwarf_Short_Axe Dwarf_Short_Axe 1  dwarf_1h_axe 0  80019458 9223388530091229198 500 156672 2 100 0 0 0 0 36864 97 0 54 0 256 36
 0
 
  itm_dwarf_throwing_axe Dwarf_Throwing_Axe Dwarf_Throwing_Axe 1  dwarf_throw_axe 0  71368714 196608 300 0 5 100 0 0 84 0 0 99 20 53 4 65 0
@@ -2407,10 +2407,10 @@ itemsfile version 2
  itm_dwarf_spear Dwarf_Spear Dwarf_Spear 1  dwarf_spear 0  138772484 9254615759470988544 400 156672 2.25 100 0 0 0 0 20480 98 0 140 0 282 532
 0
 
- itm_dwarf_spear_b Dwarf_Pike Dwarf_Pike 1  dwarf_spear_b 0  138772484 9254615759470988544 800 156672 2.25 100 0 0 0 0 0 95 0 165 0 285 0
+ itm_dwarf_spear_b Dwarf_Pike Dwarf_Pike 1  dwarf_spear_b 0  138772484 9254615759470988544 600 156672 2.25 100 0 0 0 0 0 95 0 165 0 285 0
 0
 
- itm_dwarf_spear_c Dwarf_Pike Dwarf_Pike 1  dwarf_spear_c 0  138772484 9254615759470988544 600 156672 2.25 100 0 0 0 0 0 97 0 150 0 283 0
+ itm_dwarf_spear_c Dwarf_Longaxe Dwarf_Longaxe 1  dwarf_longaxe 0  73760772 4222124851987200 700 156672 2.25 100 0 0 0 0 45056 83 0 150 0 283 44
 0
 
  itm_dwarf_helm_coif Dwarf_Coif Dwarf_Coif 3  DwarfHelmCoif 0  DwarfHelmCoifMask 134217728  DwarfHelmCoifMask_B 536870912  65548 0 500 704643072 1 100 20 0 0 0 0 0 0 0 0 0 0
@@ -2675,7 +2675,7 @@ itemsfile version 2
  itm_corsair_throwing_dagger_reward Poisoned_Throwing_Daggers Poisoned_Throwing_Daggers 1  corsair_throwing_dagger 0  4198410 131072 200 0 3.5 100 0 0 0 0 0 110 24 0 10 50 0
 0
 
- itm_dwarf_shield_reward Mithril_Dwarven_Shield Mithril_Dwarven_Shield 1  dwarf_shield_j 0  266247 4831838208 400 771751936 3 100 0 28 0 0 800 82 0 60 0 0 0
+ itm_dwarf_shield_reward Mithril_Dwarven_Shield Mithril_Dwarven_Shield 1  dwarf_round_shield_m 0  266247 4831838208 400 771751936 3 100 0 28 0 0 800 82 0 60 0 0 0
 0
 
  itm_dwarf_great_axe_reward Dwarf_Sharp_Axe Dwarf_Sharp_Axe 1  dwarf_great_axe 0  342102020 9223635923965575392 700 156672 6 100 0 0 0 0 56320 83 0 102 0 256 311
