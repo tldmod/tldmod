@@ -405,7 +405,22 @@ field_ai_triggers = [
 
 
 # Horse Trample buff  
-  (ti_on_agent_hit, 0, 0, [],
+  (ti_on_agent_hit, 0, 0, [
+
+    (store_trigger_param_1, ":agent"),
+    (store_trigger_param_2, ":attacker"),
+    (store_trigger_param_3, ":damage"),
+    (assign, ":weapon", reg0),
+    (ge, ":weapon",0), #Kham - Fix
+
+    (assign, ":orig_damage", ":damage"),
+    (agent_is_human, ":agent"), 
+    (neg|agent_is_human, ":attacker"),
+    (eq, ":weapon", -1),
+    (agent_get_item_id, ":horse", ":attacker"),
+    (ge, ":horse", 0),
+    (gt, ":orig_damage", 5),
+   ],
 
    [
     (store_trigger_param_1, ":agent"),
@@ -525,7 +540,26 @@ field_ai_triggers = [
  ]),
 
  #Out of Ammo Trigger #Valid division 0-8
-  (ti_on_item_unwielded, 0, 0, [(party_get_slot, reg3, "p_main_party", slot_party_pref_div_no_ammo),(is_between, reg3, 0, 9)], 
+  (ti_on_item_unwielded, 0, 0, [
+    (party_get_slot, reg3, "p_main_party", slot_party_pref_div_no_ammo),(is_between, reg3, 0, 9),
+    
+    (store_trigger_param_2, ":weapon"),
+    (ge, ":weapon", 0),
+    (item_get_type, ":type", ":weapon"),
+    (this_or_next|eq, ":type", itp_type_bow),
+    (eq, ":type", itp_type_crossbow),
+
+    (store_trigger_param_1, ":agent"),
+    (agent_is_alive, ":agent"),
+    (agent_is_non_player, ":agent"),
+    
+    (agent_get_ammo, ":ammo", ":agent", 0),
+    (le, ":ammo", 0), 
+    (agent_get_horse, ":horse", ":agent"),
+    (eq, ":horse", -1),
+
+   ], 
+   
    [
     (store_trigger_param_2, ":weapon"),
     (ge, ":weapon", 0),
@@ -1119,7 +1153,15 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
 #AI kicking end
 
 #Attack/Block start
-tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1)],
+tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
+
+    (try_for_agents,":agent1"),
+       #TLD Check
+      (agent_get_troop_id, ":lord", ":agent1"),
+      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+      (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
+    (try_end),
+  ],
   [
     (try_for_agents,":agent1"),
 
@@ -1325,7 +1367,21 @@ kham_check_formations = (0, 0, 0, [
   (display_message, "@Cannot Order to Form Rows when Troops are In Formation. Undo it first by pressing U.", color_bad_news)])
 
 
-tld_improved_horse_archer_ai =  (0.5, 0, 0, [(eq,"$field_ai_horse_archer",1)],
+tld_improved_horse_archer_ai =  (0.5, 0, 0, [
+
+          (eq,"$field_ai_horse_archer",1),
+          
+          (try_for_agents, ":agent_no"),
+            (agent_is_alive, ":agent_no"),
+            (agent_is_human, ":agent_no"),
+            (agent_is_non_player, ":agent_no"),
+            
+            (agent_get_troop_id, ":troop_id", ":agent_no"),
+            (store_skill_level, ":horse_archery_level", "skl_horse_archery", ":troop_id"),
+            (ge, ":horse_archery_level", 4),
+          (try_end),
+  ],
+
   [       
         (set_fixed_point_multiplier, 1000),
         (try_for_agents, ":agent_no"),
