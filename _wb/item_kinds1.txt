@@ -2495,7 +2495,7 @@ itemsfile version 2
 1
 -50  1 1981 2 43 0 
 
- itm_nazgulrobe Nazgul_Robe Nazgul_Robe 2  dm_nazgulrobe 0  old_nazgulrobe 256  2705326093 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
+ itm_nazgulrobe Nazgul_Robe Nazgul_Robe 2  nazgulrobe 0  old_nazgulrobe 256  2705326093 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
 0
 
  itm_free_whiterobe White_Robe White_Robe 1  whiterobe 0  553648141 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
@@ -2717,7 +2717,7 @@ itemsfile version 2
  itm_sarustaff Wizards_Staff Wizards_Staff 1  sarustaff 0  138838020 4222124851990272 1 0 2.5 100 0 0 0 0 51200 103 0 118 0 552 562
 0
 
- itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armor 0  denethor_robe 2048  nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 20 100 0 44 15 15 0 0 0 0 0 0 0
+ itm_rohan_armor_th Rohan_Royal_Armor Rohan_Royal_Armor 8  theoden_armor 0  denethor_robe 2048  dm_nazgulrobe 512  pippin 32  merry 16  whiterobe 8  old_nazgulrobe 256  galadriel 4  16777229 0 4000 704643072 20 100 0 44 15 15 0 0 0 0 0 0 0
 0
 
  itm_free_denethor_robe Stewards_Robe Stewards_Robe 1  denethor_robe 0  16777229 0 1000 704643072 20 100 0 44 15 0 0 0 0 0 0 0 0
