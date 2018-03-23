@@ -669,7 +669,7 @@ fauna_kinds = [
   [['PW_spiky_plant', '0']]),
 
  ('rock',
-  fkf_plain_forest|fkf_snow_forest|fkf_tree|density(70),
+  fkf_plain_forest|fkf_snow_forest|fkf_tree|density(30),
   [['PW_pine_1_a_xx', 'bo_pw_pine_1_a'],
    ['PW_pine_1_b_xx', 'bo_pw_pine_1_b']]),
 
