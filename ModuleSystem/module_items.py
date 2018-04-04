@@ -1157,7 +1157,7 @@ items =[
 ["beorn_helmet","North_Skullcap",[("beorn_helmet",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(30)|difficulty(0),imodbits_armor | imodbit_cracked],
 #["northm_helm_b", "Northmen Helm",[("skull_cap_new",0)], itp_shop|itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #####SHIELDS##########
-["beorn_shield","Northmen_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(480)|body_armor(8)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
+["beorn_shield","Northmen_Shield",[("northmen_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(480)|body_armor(8)|spd_rtng(82)|weapon_length(60),imodbits_shield,],
 ######WEAPONS###########
 ["beorn_axe","Beorning_Axe",[("beorning_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,300,weight(5)|difficulty(0)|spd_rtng(91)|weapon_length(76)|swing_damage(41,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 # use itm_dale_sword, itm_dwarf_sword_a, itm_dwarf_sword_b for Beorning's imported swords
@@ -1171,15 +1171,15 @@ items =[
 ["dwarf_shield_b","Dwarven_Tower_Shield",[("dwarf_tear_shield_a",0),("dwarf_tear_shield_b",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_c","Dwarven_Fighting_Shield",[("dwarf_fighting_shield_a",0),("dwarf_fighting_shield_b",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_d","Dwarven_Round_Shield",[("dwarf_round_shield_n",0),("dwarf_round_shield_e",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
-["dwarf_shield_f","Dwarven_Shield",[("dwarf_shield_f",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
-["dwarf_shield_g","Dwarven_Shield",[("dwarf_shield_g",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["dwarf_shield_f","Dwarven_Shield",[("northmen_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["dwarf_shield_g","Dwarven_Shield",[("dwarf_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 # duplicate["dwarf_shield_h",         "Dwarven Shield",[("dwarf_shield_h",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #next one not used by troops:
 ["dwarf_shield_i","Dwarven_Shield",[("dwarf_shield_i",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_j","Dwarven_Shield",[("dwarf_shield_j",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
-["dwarf_shield_k","Dwarven_Shield",[("dwarf_shield_k",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["dwarf_shield_k","Dwarven_Shield",[("dwarf_round_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 #next one not used by troops
-["dwarf_shield_l","Dwarven_Shield",[("dwarf_shield_l",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["dwarf_shield_l","Dwarven_Shield",[("dwarf_round_shield_e",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 #went to dale shields
 #["dwarf_shield_e", "Dwarven Shield",[("dwarf_shield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
 #["dwarf_shield_m", "Dwarven Shield",[("dwarf_shield_m",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
