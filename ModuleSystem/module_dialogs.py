@@ -3317,6 +3317,61 @@ How could I expect someone like {playername} to be up to the challenge. My serva
      (troop_set_slot, "$prisoner_lord_to_buy", slot_troop_prisoner_of_party, "$g_encountered_party")]],
 
 [anyone,"lord_buy_prisoner_deny", [], "Too bad, he would have been precious for us, {playername}.", "lord_pretalk", []],
+###Kham - Intro Quest START #####
+
+[anyone, "lord_start", [
+  (check_quest_active, "qst_tld_introduction"),
+  (quest_slot_eq, "qst_tld_introduction", slot_quest_target_troop, "$g_talk_troop"),
+  (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
+  (str_clear, s5),
+  (faction_get_slot, ":faction_theater", "$players_kingdom", slot_faction_active_theater),
+  (try_begin),
+    (eq, ":side", faction_side_good),
+    (try_begin),
+      (eq, ":faction_theater", theater_SE),
+      (str_store_string, s11, "@Sauron in Mordor, the Corsairs of Umbar, the Variags of Khand, and Harad Tribesmen"),
+    (else_try),
+      (eq, ":faction_theater", theater_SW),
+      (str_store_string, s11, "@Saruman in Isengard and the Wildmen of Dunland"),
+    (else_try),
+      (eq, ":faction_theater", theater_C),
+      (str_store_string, s11, "@Orcs of Moria and Dol Guldur"),
+    (else_try),
+      (str_store_string, s11, "@Orcs of Gundabad and the Warriors of Rhun"),
+    (try_end),
+  (else_try),
+    (eq, ":faction_theater", theater_SE),
+    (str_store_string, s11, "@Men of Gondor"),
+  (else_try),
+    (eq, ":faction_theater", theater_SW),
+    (str_store_string, s11, "@Riders of Rohan"),
+  (else_try),
+    (eq, ":faction_theater", theater_C),
+    (str_store_string, s11, "@Elves of Imladris and Lothlorien"),
+  (else_try),
+    (str_store_string, s11, "@Men of Dale, Dwarves of Erebor, Beorn's kinsmen, and the Elves of Mirkwood"),
+  (try_end),
+  (try_begin),
+    (eq, ":side", faction_side_good),
+    (str_store_string, s5, "@Ah, {playername}, it is good you have come. War is at our doorstep and we need soldiers and captains alike to fulfill their oaths.^^We are at war with {s11}, but we have to gather our strength and weaken the enemy before we can hope to move against their strong-points and fortresses. Each defeat of our enemies will bring us closer to victory and strengthen our resolve, so I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Yet do not rush into battle alone, you must fight alongside our brave captains and our allies also."),
+  (else_try),
+    (str_store_string, s5, "@About time you showed up, {playername}. We're at war now and I will not tolerate any insubordination. We are fighting against {s11}, but we have to gather our strength and smite the enemy in the field before we can move against their fortresses. Each defeat of our enemies will strengthen our war efforts and bring them closer to their utter destruction. So I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Also, you are to support our captains and our allies if you see them fight. Do not fail them or I will know."),
+  (try_end)],
+  "{s5}", "tld_intro_1", []],
+
+[anyone, "tld_intro_1", [], 
+ "War Tutorial:^^\
+- Factions will only initiate sieges when they are strong enough.^\
+- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^\
+- If a faction loses their capital or if their strength is crushed, they will be defeated.^\
+- Factions gain strength from victories in the field and from holding certain key settlements.^\
+- Factions lose strength from defeats in the field or from losing settlements.^\
+- Some quests or events can affect faction strength.^\
+- You can compare the current faction strength ratings in the 'Reports' menu.^\
+- See the Info Pages for more TLD guides.", "lord_pretalk", [
+  (add_xp_as_reward,50),
+  (call_script,"script_end_quest","qst_tld_introduction"),]],
+
 
 #TLD: your king gives you a faction intro when you first meet him
 [anyone,"lord_start", [
@@ -3912,6 +3967,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 # [anyone|plyr,"lord_talk", [(eq, 1, 0),(le,"$talk_context", tc_party_encounter),(ge, "$g_talk_troop_faction_relation", 0)],
    # "I have an offer for you.", "lord_talk_preoffer",[]],
+
+
 
 
 ###Kham Quest -- Ring Hunters --- Either Dwarf_Lord or imladris_lord #####
@@ -8919,6 +8976,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
    (change_screen_return)]],
 
 # Morale Troops Dialogue END - Kham
+
+
 
 [anyone,"start", [(eq,"$talk_context",tc_join_battle_ally)],"You have come just in time. Let us join our forces now and teach our enemy a lesson.", "close_window", [(call_script,"script_stand_back"),]],
 [anyone,"start", [(eq,"$talk_context",tc_join_battle_enemy)],"You are making a big mistake by fighting against us.", "close_window",[(call_script,"script_stand_back"),]],

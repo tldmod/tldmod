@@ -3166,6 +3166,14 @@ simple_triggers = [
 
 ]),
 
+(2, [
+    (eq, "$tld_war_began", 1),
+    (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (quest_slot_eq, "qst_tld_introduction", slot_quest_current_state, 0),
+    (jump_to_menu, "mnu_evil_war_tutorial"),
+    (quest_set_slot, "qst_tld_introduction", slot_quest_current_state, 1),]
+),
+
 ##############################################
 #trigger reserved for future save game compatibility
 
@@ -3178,7 +3186,7 @@ simple_triggers = [
 #trigger reserved for future save game compatibility
 #(999,[]), #Replaced by Update Theaters trigger
 #trigger reserved for future save game compatibility
-(999,[]),   
+#(999,[]),   #Replaced by Evil Intro Quest event
 #trigger reserved for future save game compatibility
 (999,[]),   
 #trigger reserved for future save game compatibility

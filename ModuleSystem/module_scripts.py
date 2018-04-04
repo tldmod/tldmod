@@ -1893,6 +1893,7 @@ scripts = [
 	(assign, "$show_mount_ko_message",1),#Kham - Show Horse KO Message - Player Damage Only by default
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
 	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
+	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
 	
 
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
@@ -10518,6 +10519,7 @@ scripts = [
 	#(assign, reg10, ":landmark"),(display_message,"@LANDMARK: {reg10}"),
 	
 	(assign,":small_scene",0),
+	(assign, "$small_scene_used", 0),
 	(try_begin),(lt,"$number_of_combatants",70),(assign,":small_scene",1), # small scene variants are right after standard ones in module_scenes
 	 (else_try),(lt,"$enemy_count1",30),		(assign,":small_scene",1), # no point in walking half an hour to stomp couple orcs
 	(try_end),
@@ -10587,6 +10589,7 @@ scripts = [
 	(else_try),
 		(this_or_next|eq,":landmark","p_town_west_osgiliath"), #InVain: Keep this BEFORE Ithilien / Emyn Arnen. Otherwise we get forest scenes in Osgiliath.
 		(eq,":landmark","p_town_east_osgiliath"),
+		(assign, "$small_scene_used", 1),
 			(store_random_in_range, ":scene", 0, 4),
 	        (try_begin),
 	        	(eq, ":scene",0),
@@ -10688,21 +10691,25 @@ scripts = [
 	(else_try),
      	(this_or_next|eq,":region",region_firien_wood),
 		(eq,":region",region_druadan_forest),
+		(assign, "$small_scene_used", 1),
 		(store_random_in_range, ":scene_to_use", "scn_forest_firien1", "scn_forest_end"),
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":region",region_lorien),
+		(assign, "$small_scene_used", 1),
 		(store_random_in_range, ":scene_to_use", "scn_forest_lorien1", "scn_forest_mirkwood1"),
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":region",region_fangorn),
+		(assign, "$small_scene_used", 1),
 		(store_random_in_range, ":scene_to_use", "scn_forest_fangorn1", "scn_forest_ithilien1"),
 		(assign, "$bs_day_sound", "snd_fangorn_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(is_between,":region",region_n_mirkwood,region_s_mirkwood+1),
+		(assign, "$small_scene_used", 1),
 		(store_random_in_range, ":scene_to_use", "scn_forest_mirkwood1", "scn_forest_firien1"),
 		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
@@ -10800,6 +10807,7 @@ scripts = [
 				
 				(val_add, ":scene_to_use", "scn_random_scene_steppe_small"),
 				(val_sub, ":scene_to_use", "scn_random_scene_steppe"),  # go to small scene index
+				(assign, "$small_scene_used", 1),
 			(try_end),
 		(try_end),
 	(try_end),
@@ -21039,6 +21047,19 @@ scripts = [
     
     #send the conversation party back immediately
     (call_script, "script_send_from_conversation_mission", "$g_tld_convo_talker"),
+
+    #Kham - Start Intro Quest (Gandalf)
+    (try_begin),
+		(eq, ":convo_code", tld_cc_gandalf_advice),
+	    (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
+	    (str_store_party_name, s1, ":capital"),
+	    (faction_get_slot, ":faction_lord", "$players_kingdom", slot_faction_leader),
+	    (str_store_troop_name_link, s9, ":faction_lord"),
+	    (setup_quest_text, "qst_tld_introduction"),
+	    (str_store_string, s2, "@Go to {s1} and speak with {s9}."),
+	    (call_script, "script_start_quest", "qst_tld_introduction", "$g_tld_convo_talker"),
+	    (quest_set_slot, "qst_tld_introduction", slot_quest_target_troop, ":faction_lord"),
+	(try_end),
 ]),
 
 #script_send_on_conversation_mission (MV)

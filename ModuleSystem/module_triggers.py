@@ -1129,6 +1129,14 @@ triggers = [
       (enable_party, ":beacon"),
     (try_end),
     
+    #Send Gandalf on a little chat
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_advice),
+      (eq, ":already_done", 0),
+      (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_advice),
+    (try_end),
+    
 ]),
 	
 (0.5, 0, 0, [],[#(gt,"$g_fangorn_rope_pulled",-100)],[

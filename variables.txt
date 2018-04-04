@@ -719,5 +719,7 @@ besieged_by_faction_for_menu
 tld_spawn_battle_animals
 enemy_reinforcement_stage
 ally_reinforcement_stage
+small_scene_used
+FormAI_AI_no_defense
 $g_last_archery_point_earned
 $tutorial_num_total_dummies_destroyed

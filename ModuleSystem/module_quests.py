@@ -236,7 +236,7 @@ quests = [
 # ),
 
 ### TLD quests
-( "tld_introduction", "Deliver message about Mordor orcs to the command", qf_random_quest,
+( "tld_introduction", "Go to your faction leader.", qf_random_quest,
   "None",
   ),
 ( "treebeard_kill_orcs", "Defeat the tree-chopping orc party", qf_random_quest,

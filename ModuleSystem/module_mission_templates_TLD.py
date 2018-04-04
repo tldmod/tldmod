@@ -796,7 +796,7 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
 #AI triggers v3 by motomataru
 # cpp: Quick Find [AITAKTIKS]
 AI_triggers = [  
-	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1)], [
+	(ti_before_mission_start, 0, 0, [(eq, "$tld_option_formations", 1), (eq, "$small_scene_used", 0)], [
 		(assign, "$cur_casualties", 0),
 		(assign, "$prev_casualties", 0),
 		(assign, "$prev_casualties2", 0), #adeed by JL to use for checking every second
@@ -838,7 +838,7 @@ AI_triggers = [
 		(init_position, pos18), #added by JL
 	]),
 
-	(0, AI_Delay_For_Spawn, ti_once, [(eq, "$tld_option_formations", 1)], [
+	(0, AI_Delay_For_Spawn, ti_once, [(eq, "$tld_option_formations", 1), (eq, "$small_scene_used", 0)], [
 		(set_fixed_point_multiplier, 100),
 		(call_script, "script_store_battlegroup_data"),
 		(call_script, "script_battlegroup_get_position", Team0_Starting_Point, 0, grc_everyone),
@@ -849,7 +849,7 @@ AI_triggers = [
 	]),
     
 	#JL new trigger for assigning randoms:
-	(60, 0, 0, [(eq, "$tld_option_formations", 1)], [
+	(60, 0, 0, [(eq, "$tld_option_formations", 1), (eq, "$small_scene_used", 0)], [
 	##JL code for assigning random local variables:
 		(store_random_in_range, "$formai_rand0", -1000, AI_Self_Defence_Distance), #JL close retreat/advance/position range randomness
 		(store_random_in_range, "$formai_rand2", 800, 1501), # JL positive only close range randomness
@@ -863,7 +863,7 @@ AI_triggers = [
 		#(display_message, "@Randoms  have been updated"),
 	]), #End JL
 
-	(1, .5, 0, [(eq, "$tld_option_formations", 1)], [	#delay to offset half a second from formations trigger
+	(1, .5, 0, [(eq, "$tld_option_formations", 1), (eq, "$small_scene_used", 0)], [	#delay to offset half a second from formations trigger
 		(try_begin),
 			(assign, "$prev_casualties2", "$cur_casualties"), #added by JL
 			(call_script, "script_cf_count_casualties"),

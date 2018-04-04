@@ -4839,13 +4839,6 @@ game_menus = [
            (str_store_string, s2, "@{s13} asked you to report to him with at least {reg13} troops."),
            (call_script, "script_start_quest", "qst_report_to_army", ":quest_target_troop"),
            (call_script, "script_report_quest_troop_positions", "qst_report_to_army", ":quest_target_troop", 3),
-           #Send Gandalf on a little chat
-           (try_begin),
-             (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-             (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_advice),
-             (eq, ":already_done", 0),
-             (call_script, "script_send_on_conversation_mission", tld_cc_gandalf_advice),
-           (try_end),
            (change_screen_return),
         ]),
      ]
@@ -10296,6 +10289,40 @@ game_menus = [
    ],
  ),
 ###################### Defend / Attack Refugees  END (Kham)  ##################################
+
+### Kham - Evil Intro Quest Menu Start
+
+("evil_war_tutorial", 0, 
+	"{s1}", "none", 
+	[
+	 (faction_get_slot, ":faction_lord", "$players_kingdom", slot_faction_leader),
+	 (str_store_troop_name, s2, ":faction_lord"), 
+ 	 (faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
+	 (str_store_party_name, s3, ":capital"),
+	 (try_begin),
+	 	(faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_hand),
+	 	(assign, ":background", "mesh_town_isengard"),
+	 	(str_store_string, s1, "@^^At last, the Master is making His move! The torches burn bright. The sharp weapons gleam. You and your stout lads will receive marching orders soon. Ai, there'll be fighting, lots of it, and glory enough to go around!^^You have the honour of being summoned to audience with the Master in His tower. Likely enough your first orders will be snaga's work - raid a village here, waylay a caravan there. But you'll prove yourself soon enough. Who's to say you won't play as large a role as any commander of {s2} in {s3}?^^The War has begun; the fall of Man and their allies begins!"),
+	 	(set_background_mesh, ":background"),
+	 (else_try),
+	 	(assign, ":background", "mesh_town_morannon"),
+	 	(str_store_string, s1, "@^^Your head suddenly fills with a vision - the flaming Eye. All around you, your warriors stop in their tracks. Somehow, you know at that moment that all of you are hearing the same summons, seeing the same vision. Great is the art of the Lidless Eye - great is the power of Barad-dûr!.^^The knowledge, unspoken, seeps into your very bones. The time has come. The Dark Lord commands - you shall all march upon your enemies in open war. Orders from {s2} in {s3} will come. Your part at first will not be great, but you'll prove yourself soon enough.^^ The War has begun; the fall of the West begins!"),
+	 	(set_background_mesh, ":background"),
+	 (try_end),],
+	[
+	 ("evil_war_tut_continue", [], "Continue...", [
+	 	(faction_get_slot, ":capital", "$players_kingdom", slot_faction_capital),
+	    (str_store_party_name, s1, ":capital"),
+	    (faction_get_slot, ":faction_lord", "$players_kingdom", slot_faction_leader),
+	    (str_store_troop_name_link, s9, ":faction_lord"),
+	    (setup_quest_text, "qst_tld_introduction"),
+	    (str_store_string, s2, "@Go to {s1} and speak with {s9}."),
+	    (call_script, "script_start_quest", "qst_tld_introduction", ":faction_lord"),
+	    (quest_set_slot, "qst_tld_introduction", slot_quest_target_troop, ":faction_lord"),
+	    (change_screen_map),
+	]),
+]),
+   
 
 
 ( "custom_battle_choose_faction1",0,

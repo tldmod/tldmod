@@ -109,9 +109,11 @@ formAI_scripts = [
 				(else_try),
 					(lt, ":decision_index", Hold_Point),	#probably coming from a defensive position (see below)
 					(gt, ":distance_to_enemy", AI_firing_distance),
+					(eq, "$FormAI_AI_no_defense", 0),	#player hasn't set disallow defense option?
 					(assign, ":move_archers", 1),
 				(try_end),
 			(else_try),
+				(this_or_next|eq, "$FormAI_AI_no_defense", 0),	#player hasn't set disallow defense option OR?
 				(ge, ":decision_index", Hold_Point),	#not starting in a defensive position (see below)
 				(call_script, "script_battlegroup_get_size", ":team_no", grc_infantry),
 				(try_begin),
@@ -145,6 +147,7 @@ formAI_scripts = [
 
 				(try_begin),
 					(lt, ":decision_index", Hold_Point),	#outnumbered?
+					(eq, "$FormAI_AI_no_defense", 0),	#player hasn't set disallow defense option?
 					(lt, "$battle_phase", BP_Fight),
 					(store_div, ":distance_to_move", ":distance_to_enemy", 6),	#middle of rear third of battlefield
 					(assign, ":hill_search_radius", ":distance_to_move"),
@@ -625,7 +628,7 @@ formAI_scripts = [
 						(call_script, "script_battlegroup_get_level", ":enemy_nearest_troop_team", ":enemy_nearest_troop_division"),
 						(gt, ":average_level", reg0),	#got better troops?
 						(assign, ":infantry_formation", formation_shield),
-						#(display_message, "@Infantry decided to form wedge"),	#############
+						#(display_message, "@Infantry decided to form shield"),	#############
 					(try_end),
 				(try_end),
 				
@@ -1417,7 +1420,7 @@ formAI_scripts = [
 		#put leader in duel or place leader -- JL added code for put leader in duel
 		(try_begin),
 			#basic conditions:
-			(ge, ":team_leader", 0), #The current team must have a leader
+			(gt, ":team_leader", 0), #The current team must have a leader
 			(is_between, ":hero_troop", heroes_begin, heroes_end), #Must be hero
 			(agent_is_alive, ":team_leader"), #and the team leader must be alive
 			#(agent_slot_eq, ":team_leader", slot_agent_is_running_away, 0), #and the leader must not be running away ... will never happen
@@ -1446,7 +1449,7 @@ formAI_scripts = [
 			(try_end),
 		(else_try),
 			#---------------Normal form AI code for placing leader -- JL: let leader be in scripted mode before the fight starts only. And the leader primarily follows his cavalry if leader is on horse and has cavalry
-			(ge, ":team_leader", 0),
+			(gt, ":team_leader", 0),
 			(is_between, ":hero_troop", heroes_begin, heroes_end), #Must be hero
 			(agent_is_alive, ":team_leader"),
 

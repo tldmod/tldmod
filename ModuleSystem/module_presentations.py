@@ -3715,6 +3715,18 @@ if wb_compile_switch==1:
         (overlay_set_val, "$tld_options_overlay_12", "$pref_cam_mode"),
         (val_sub, ":y_pos", Screen_Text_Height),
 
+        #Disallow Defensive
+        (create_text_overlay, reg1, "@Prevent AI from taking defensive:  ", tf_right_align, tf_double_space),
+        (position_set_y, pos0, ":y_pos"),
+        (overlay_set_position, reg1, pos0),
+        (create_check_box_overlay, "$tld_options_overlay_15", "mesh_checkbox_off", "mesh_checkbox_on"),
+        (copy_position, pos1, pos0),
+        (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
+        (position_set_y, pos1, reg2),
+        (overlay_set_position, "$tld_options_overlay_15", pos1),
+        (overlay_set_val, "$tld_options_overlay_15", "$FormAI_AI_no_defense"),
+        (val_sub, ":y_pos", Screen_Text_Height),
+
         #Brighter Nights
         (create_text_overlay, reg1, "@Brighter Nights:  ", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
@@ -3786,6 +3798,9 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$tld_options_overlay_13"),
           (assign, "$bright_nights", ":value"),
+        (else_try),
+          (eq, ":object", "$tld_options_overlay_15"),
+          (assign, "$FormAI_AI_no_defense", ":value"),
         (else_try),
           (eq, ":object", "$tld_options_overlay_0"),   
           (val_mul, ":value", 2),
