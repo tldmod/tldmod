@@ -1756,7 +1756,7 @@ triggers = [
         (le, "$qst_raider_party_total", 1),
         (store_random_in_range, ":random", 0 , 100),
         (store_character_level, ":player_level", "trp_player"),
-        (le, ":random", 7),
+        (le, ":random", 5),
         (set_spawn_radius, 15),
 
         (try_begin),

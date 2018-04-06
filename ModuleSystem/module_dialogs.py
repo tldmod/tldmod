@@ -2605,6 +2605,51 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 
 #### Kham Defend / Raid  Village Quests Completion End ####
+#### Kham Kill Quests Completion Start ####
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_04"),
+    (check_quest_succeeded, "qst_blank_quest_04"),
+    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
+    ],
+"Your men have wintessed your bravery in battle, {playername}. You have shown them that we are the superiour force.", "lord_generic_mission_completed",[
+    (call_script, "script_finish_quest", "qst_blank_quest_04", 100),
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
+    ]],
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_04"),
+    (check_quest_failed, "qst_blank_quest_04"),
+    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),],
+"I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+    (cancel_quest, "qst_blank_quest_04"),
+    ]],
+
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_05"),
+    (check_quest_succeeded, "qst_blank_quest_05"),
+    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
+    ],
+"Your men have wintessed your bravery in battle, {playername}. You have earned my respect.", "lord_generic_mission_completed",[
+    (call_script, "script_finish_quest", "qst_blank_quest_05", 100),
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
+    ]],
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_05"),
+    (check_quest_failed, "qst_blank_quest_05"),
+    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),],
+"I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+    (cancel_quest, "qst_blank_quest_05"),
+    ]],
+
+[anyone|plyr, "kill_quest_failed",[],
+  "I will do better next time.", "close_window",[],
+  ],
+#### Kham Kill Quests Completion END ####
 
 [anyone,"lord_start", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
 						 (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
@@ -5513,6 +5558,76 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
+
+## Kham Kil Quest INIT START
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_blank_quest_04"),
+  (quest_get_slot, ":quest_target_troop", "qst_blank_quest_04", slot_quest_target_troop),
+  (quest_get_slot, reg22, "qst_blank_quest_04", slot_quest_target_amount),
+  (str_store_troop_name_plural, s6, ":quest_target_troop"),
+  (str_store_string, s5, "@{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!")],
+ "{s5}", "lord_mission_told_kill_quest_targeted",[]],
+
+[anyone|plyr,"lord_mission_told_kill_quest_targeted", [
+(eq,"$random_quest_no","qst_blank_quest_04"),
+(str_store_string, s7, "@I will do what you asked, and the men will witness."),],
+"{s7}", "lord_mission_accepted",[
+      (quest_get_slot, ":quest_target_troop", "qst_blank_quest_04", slot_quest_target_troop),
+      (quest_get_slot, reg22, "qst_blank_quest_04", slot_quest_target_amount),
+      (str_store_troop_name_plural, s6, ":quest_target_troop"),
+      (str_store_troop_name_link, s9, "$g_talk_troop"),
+      (str_store_string, s7, "@{s9} wants you to personally kill {reg22} {s6}."),
+      (str_store_troop_name_plural, s36, ":quest_target_troop"),
+      (str_store_string, s35, "@{reg22}"),
+      (setup_quest_text,"$random_quest_no"),
+      (str_store_string, s2, "@{s7}")]],
+
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_blank_quest_05"),
+  (quest_get_slot, ":quest_target_faction", "qst_blank_quest_05", slot_quest_target_faction),
+  (quest_get_slot, reg22, "qst_blank_quest_05", slot_quest_target_amount),
+  (str_store_faction_name, s7, ":quest_target_faction"),
+  (store_character_level, ":player_level", "trp_player"),
+  (try_begin),
+    (gt, ":player_level", 20),
+    (str_store_string, s6, "@I want you to personally slay"),
+  (else_try),
+    (str_store_string, s6, "@I want you and your men to kill"),
+  (try_end),
+  (str_store_string, s5, "@{playername}, you need to earn my respect and that of your men. {s6} {reg22} {s7} troops!")],
+ "{s5}", "lord_mission_told_kill_quest_faction",[]],
+
+[anyone|plyr,"lord_mission_told_kill_quest_faction", [
+(eq,"$random_quest_no","qst_blank_quest_05"),
+(str_store_string, s7, "@I will do what you asked, and the men will witness."),],
+"{s7}", "lord_mission_accepted",[
+      (quest_get_slot, ":quest_target_faction", "qst_blank_quest_05", slot_quest_target_faction),
+      (quest_get_slot, reg22, "qst_blank_quest_05", slot_quest_target_amount),
+      (str_store_faction_name, s6, ":quest_target_faction"),
+      (str_store_troop_name_link, s9, "$g_talk_troop"),
+      (store_character_level, ":player_level", "trp_player"),
+      (try_begin),
+        (gt, ":player_level", 20),
+        (str_store_string, s7, "@{s9} wants you to personally kill {reg22} {s6} troops."),
+      (else_try),
+        (str_store_string, s7, "@{s9} wants you and your men to kill {reg22} {s6} troops."),
+      (try_end),
+      (str_store_faction_name, s36, ":quest_target_faction"),
+      (str_store_string, s35, "@{reg22}"),
+      (setup_quest_text,"$random_quest_no"),
+      (str_store_string, s2, "@{s7}")]],
+
+
+[anyone|plyr,"lord_mission_told_kill_quest_targeted", [
+(eq,"$random_quest_no","qst_blank_quest_04"),
+],
+"I cannot do this now.", "lord_mission_rejected",[]],
+
+[anyone|plyr,"lord_mission_told_kill_quest_faction", [
+(eq,"$random_quest_no","qst_blank_quest_05"),
+],
+"I cannot do this now.", "lord_mission_rejected",[]],
+# Kill Quest END
 
 ## Kham Sea Battle INIT START
 [anyone,"lord_tell_mission", [

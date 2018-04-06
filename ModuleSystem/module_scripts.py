@@ -6228,6 +6228,51 @@ scripts = [
 			(try_end),
 
 		(else_try),
+			] + (is_a_wb_script==1 and [
+			#Kham - Kill Quest Targeted
+			(eq, "$tld_war_began", 1),
+			(eq, ":quest_no", "qst_blank_quest_04"),
+			(try_begin),
+				(neg|check_quest_active, "qst_blank_quest_04"),
+				(call_script, "script_cf_init_kill_quest_target"),
+
+				(assign, ":quest_object_troop", reg55),
+				(assign, ":quest_target_troop", reg56),	
+				(assign, ":quest_target_amount", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
+
+				(assign, ":result", ":quest_no"),
+			(try_end),
+			] or [(eq, 0, 1),]) + [
+		(else_try),
+
+			#Kham - Kill Quest Faction Troops
+			] + (is_a_wb_script==1 and [
+			(eq, "$tld_war_began", 1),
+			(eq, ":quest_no", "qst_blank_quest_05"),
+			(try_begin),
+				(neg|check_quest_active, "qst_blank_quest_05"),
+				(call_script, "script_cf_init_kill_quest_faction"),
+
+				(assign, ":quest_object_troop", reg55),
+				(assign, ":quest_target_faction", reg56),	
+				(assign, ":quest_target_amount", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
+
+				(assign, ":result", ":quest_no"),
+			(try_end),
+			] or [(eq, 0, 1),]) + [
+		(else_try),
 		
 		  ##Kham: Defend village
           (eq, ":quest_no", "qst_defend_village"), 
@@ -11066,6 +11111,7 @@ scripts = [
 		(try_end),
 		(store_add, "$ai_team_2", ":player_team", 2),
 	(try_end),
+	(set_show_messages, 0),
 	(call_script, "script_select_battle_tactic_aux", "$ai_team_1"),
 	(assign, "$ai_team_1_battle_tactic", reg0),
 	(try_begin),
@@ -11078,6 +11124,7 @@ scripts = [
         (call_script, "script_select_battle_tactic_aux", "$ai_team_2", ":defense_not_an_option"),
         (assign, "$ai_team_2_battle_tactic", reg0),
 	(try_end),
+	(set_show_messages, 1),
 ]),
 
 # script_select_battle_tactic_aux
@@ -11087,7 +11134,7 @@ scripts = [
     [
       (store_script_param, ":team_no", 1),
       (store_script_param, ":defense_not_an_option", 2),
-      (assign, ":battle_tactic", 0),
+      (assign, ":battle_tactic", btactic_follow_leader),
       (get_player_agent_no, ":player_agent"),
       (agent_get_team, ":player_team", ":player_agent"),
       (try_begin),
@@ -11123,9 +11170,11 @@ scripts = [
           (eq, ":defense_not_an_option", 0),
           (gt, ":ai_perc_archers", 50),
           (lt, ":ai_perc_cavalry", 35),
+          (eq, "$small_scene_used", 0),
           (assign, ":battle_tactic", btactic_hold),
         (else_try),
-          (lt, ":rand", 80),
+          (this_or_next|lt, ":rand", 80),
+          (eq, "$small_scene_used", 1),
           (assign, ":battle_tactic", btactic_follow_leader),
         (try_end),
       (try_end),
@@ -23133,7 +23182,7 @@ command_cursor_scripts = [
 		(assign, reg59, 300),					#quest_xp_reward
 		(assign, reg60, 600),					#quest_gold_reward
 		(assign, reg61, 9),						#quest_rank_reward
-		(assign, reg62, 30),					#quest_expiration_days
+		(assign, reg62, 10),					#quest_expiration_days
 		(assign, reg63, 15),					#quest_dont_give_again_period
 ]),
 
@@ -23188,6 +23237,8 @@ command_cursor_scripts = [
       (party_set_ai_behavior,"$qst_refugee_party_1",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_refugee_party_1",":quest_target_center"),
       (party_set_flags, "$qst_refugee_party_1", pf_default_behavior, 0),
+      (party_set_flags, "$qst_refugee_party_1", pf_quest_party, 1),
+      (party_set_flags, "$qst_refugee_party_1", pf_always_visible, 1),
       #Refugee Party 2
       (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
       (assign, "$qst_refugee_party_2", reg0),
@@ -23195,6 +23246,8 @@ command_cursor_scripts = [
       (party_set_ai_behavior,"$qst_refugee_party_2",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_refugee_party_2",":quest_target_center"),
       (party_set_flags, "$qst_refugee_party_2", pf_default_behavior, 0),
+      (party_set_flags, "$qst_refugee_party_2", pf_quest_party, 1),
+      (party_set_flags, "$qst_refugee_party_2", pf_always_visible, 1),
       #Refugee Party 3
       (spawn_around_party,":quest_giver_center",":quest_target_party_template"),
       (assign, "$qst_refugee_party_3", reg0),
@@ -23202,6 +23255,8 @@ command_cursor_scripts = [
       (party_set_ai_behavior,"$qst_refugee_party_3",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_refugee_party_3",":quest_target_center"),
       (party_set_flags, "$qst_refugee_party_3", pf_default_behavior, 0),
+      (party_set_flags, "$qst_refugee_party_3", pf_quest_party, 1),
+      (party_set_flags, "$qst_refugee_party_3", pf_always_visible, 1),
 
       (store_random_in_range, ":raider_radius", 1, 4),
       (set_spawn_radius, ":raider_radius"),
@@ -23319,7 +23374,7 @@ command_cursor_scripts = [
 		(assign, reg59, 300),					#quest_xp_reward
 		(assign, reg60, 600),					#quest_gold_reward
 		(assign, reg61, 9),						#quest_rank_reward
-		(assign, reg62, 30),					#quest_expiration_days
+		(assign, reg62, 10),					#quest_expiration_days
 		(assign, reg63, 15),					#quest_dont_give_again_period
 ]),
 
@@ -23380,6 +23435,8 @@ command_cursor_scripts = [
       (party_set_ai_behavior,"$qst_refugee_party_1",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_refugee_party_1",":quest_target_center"),
       (party_set_flags, "$qst_refugee_party_1", pf_default_behavior, 0),
+      (party_set_flags, "$qst_refugee_party_1", pf_quest_party, 1),
+      (party_set_flags, "$qst_refugee_party_1", pf_always_visible, 1),
       #Refugee Party 2
       (spawn_around_party,":quest_target_center",":quest_target_party_template"),
       (assign, "$qst_refugee_party_2", reg0),
@@ -23396,6 +23453,8 @@ command_cursor_scripts = [
       (party_set_ai_behavior,"$qst_refugee_party_2",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_refugee_party_2",":quest_target_center"),
       (party_set_flags, "$qst_refugee_party_2", pf_default_behavior, 0),
+      (party_set_flags, "$qst_refugee_party_2", pf_quest_party, 1),
+      (party_set_flags, "$qst_refugee_party_2", pf_always_visible, 1),
       #Refugee Party 3
       (spawn_around_party,":quest_target_center",":quest_target_party_template"),
       (assign, "$qst_refugee_party_3", reg0),
@@ -23412,6 +23471,8 @@ command_cursor_scripts = [
       (party_set_ai_behavior,"$qst_refugee_party_3",ai_bhvr_travel_to_party),
       (party_set_ai_object,"$qst_refugee_party_3",":quest_target_center"),
       (party_set_flags, "$qst_refugee_party_3", pf_default_behavior, 0),
+      (party_set_flags, "$qst_refugee_party_3", pf_quest_party, 1),
+      (party_set_flags, "$qst_refugee_party_3", pf_always_visible, 1),
 
 ]),
 
@@ -23654,6 +23715,101 @@ command_cursor_scripts = [
     (faction_set_slot,":enemy_faction",slot_faction_strength_tmp,":enemy_strength"), 
 ]),
 		
+
+# script_cf_init_kill_quest
+
+("cf_init_kill_quest_target", [
+
+	(store_character_level, ":player_level", "trp_player"),
+	(ge, ":player_level", 20),
+	
+	(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
+	(assign, ":target_center", reg0),
+	(store_faction_of_party, ":target_faction", ":target_center"),
+
+	(faction_get_slot, ":tier_3_troop", ":target_faction",  slot_faction_tier_3_troop),
+	(faction_get_slot, ":tier_5_troop", ":target_faction",  slot_faction_tier_5_troop),
+
+	(try_begin),
+		(store_random_in_range, ":random_troop", 0, 10),
+
+
+		(try_begin),
+			(le, ":random_troop", 5),
+			(assign, ":target", ":tier_3_troop"),
+			(store_random_in_range, ":amount", 10, 21),
+			(store_mul, ":xp_reward", ":amount", 25),
+		(else_try),
+			(assign, ":target", ":tier_5_troop"),
+			(store_random_in_range, ":amount", 10, 16),
+			(store_mul, ":xp_reward", ":amount", 40),
+		(try_end),
+
+		(try_begin),
+			(ge, ":player_level", 27),
+			(store_div, ":add", ":player_level", 2),
+			(val_add, ":amount", ":add"),
+		(try_end),
+
+	(try_end),
+
+	(store_add, ":gold_reward", ":xp_reward", 75),
+	(try_begin),
+		(store_div, ":rank_reward", ":xp_reward", 20),
+		(val_min, ":rank_reward", 30),
+	(try_end),
+	
+
+	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
+	(assign, reg56, ":target"),				#quest_target_troop
+	(assign, reg57, ":amount"),				#quest_target_amount
+	(assign, reg58, 10),					#quest_importance
+	(assign, reg59, ":xp_reward"),			#quest_xp_reward
+	(assign, reg60, ":gold_reward"),		#quest_gold_reward
+	(assign, reg61, ":rank_reward"),		#quest_rank_reward
+	(assign, reg62, 20),					#quest_expiration_days
+	(assign, reg63, 15),					#quest_dont_give_again_period
+
+]),
+
+# script_cf_init_kill_quest_faction
+
+("cf_init_kill_quest_faction", [
+
+	(store_character_level, ":player_level", "trp_player"),
+	(ge, ":player_level", "$tld_player_level_to_begin_war"),
+	
+	(call_script, "script_cf_get_random_enemy_center_in_theater", "p_main_party",),
+	(assign, ":target_center", reg0),
+	(store_faction_of_party, ":target_faction", ":target_center"),
+
+	(store_mul, ":amount", ":player_level", 3),
+	(store_mul, ":xp_reward", ":amount", 5),
+	(store_add, ":gold_reward", ":xp_reward", 75),
+
+	(try_begin),
+		(store_div, ":rank_reward", ":xp_reward", 20),
+		(val_min, ":rank_reward", 35),
+	(try_end),
+
+	(try_begin),
+		(gt, ":player_level", 20),
+		(val_add, ":xp_reward", 100),
+		(val_add, ":gold_reward", 150),
+		(val_add, ":rank_reward", 10),
+	(try_end),
+
+	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
+	(assign, reg56, ":target_faction"),		#quest_target_faction
+	(assign, reg57, ":amount"),				#quest_target_amount
+	(assign, reg58, 10),					#quest_importance
+	(assign, reg59, ":xp_reward"),			#quest_xp_reward
+	(assign, reg60, ":gold_reward"),		#quest_gold_reward
+	(assign, reg61, ":rank_reward"),		#quest_rank_reward
+	(assign, reg62, 20),					#quest_expiration_days
+	(assign, reg63, 15),					#quest_dont_give_again_period
+
+]),
 
 #script_troop_talk_presentation
 #Shows a hero/enemy talking during battle

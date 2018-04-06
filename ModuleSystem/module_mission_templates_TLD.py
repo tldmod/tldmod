@@ -790,6 +790,7 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
   
   common_move_deathcam_wb,
   common_rotate_deathcam_wb,
+  tld_kill_or_wounded_triggers,
 ])
 ## MadVader deathcam end
 

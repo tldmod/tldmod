@@ -280,11 +280,13 @@ quests = [
   "{!}None"
 ),
 
-("blank_quest_04", "Placeholder", 0,
+# Kill Quest Targeted
+("blank_quest_04", "Kill {s35} {s36}", 0,
   "{!}Placeholder"
 ),
 
-("blank_quest_05", "Placeholder", 0,
+# Kill Quest Faction
+("blank_quest_05", "Kill {s35} {s36} troops.", 0,
   "{!}Placeholder"
 ),
 

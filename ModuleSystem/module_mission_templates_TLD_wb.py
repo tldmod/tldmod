@@ -1930,3 +1930,76 @@ nazgul_run_away = (20, 0, ti_once,
       (call_script, "script_troop_talk_presentation", "trp_nazgul", 7, 0),
 
     ])
+
+tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
+    (this_or_next|check_quest_active, "qst_blank_quest_04"),
+    (check_quest_active, "qst_blank_quest_05"),],
+
+    # trigger param 1 = defeated agent_id
+    # trigger param 2 = attacker agent_id
+    # trigger param 3 = wounded flag: 0 = agent is killed, 1 = agent is wounded
+  [
+    (store_trigger_param_1, ":killed"),
+    (store_trigger_param_2, ":killer"),
+    (store_trigger_param_3, ":result"),
+
+    (agent_get_troop_id, ":troop_id", ":killed"),
+    (get_player_agent_no, ":player"),
+    (agent_get_team, ":player_team", ":player"),
+    (agent_get_team, ":agent_team", ":killer"),
+
+    (eq, ":agent_team", ":player_team"), #Is part of player's team?
+
+    (try_begin),
+      (check_quest_active, "qst_blank_quest_04"), #Targeted Kill quest
+      (neg|check_quest_succeeded, "qst_blank_quest_04"),
+      (quest_get_slot, ":target", "qst_blank_quest_04", slot_quest_target_troop),
+      (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
+      (quest_get_slot, ":target_amount", "qst_blank_quest_04", slot_quest_target_amount),
+      (eq, ":target", ":troop_id"),
+      (eq, ":result", 0),
+      (eq, ":killer", ":player"),
+      (val_add, ":current_amount", 1),
+      (quest_set_slot, "qst_blank_quest_04", slot_quest_current_state, ":current_amount"),
+
+      #Debug
+      #(assign, reg32, ":current_amount"),
+      #(display_message, "@Kill Quest - {reg32}", color_good_news),
+
+      (try_begin),
+        (ge, ":current_amount", ":target_amount"),
+        (call_script, "script_succeed_quest", "qst_blank_quest_04"),
+      (try_end),
+
+    (else_try),
+
+      (check_quest_active, "qst_blank_quest_05"), #Faction Troop Kill Quest
+      (neg|check_quest_succeeded, "qst_blank_quest_05"),
+      (store_character_level, ":player_level", "trp_player"),
+      (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
+      (quest_get_slot, ":current_amount", "qst_blank_quest_05", slot_quest_current_state),
+      (quest_get_slot, ":target_amount", "qst_blank_quest_05", slot_quest_target_amount),
+      (store_faction_of_troop, ":troop_faction", ":troop_id"),
+      (eq, ":target_faction", ":troop_faction"),
+      (eq, ":result", 0),
+      (try_begin),
+        (gt, ":player_level", 20),
+        (eq, ":killer", ":player"),
+        (val_add, ":current_amount", 1),
+      (else_try),
+        (val_add, ":current_amount", 1),
+      (try_end),
+
+      (quest_set_slot, "qst_blank_quest_05", slot_quest_current_state, ":current_amount"),
+
+      #Debug
+      #(assign, reg33, ":current_amount"),
+      #(display_message, "@Kill Quest Faction Troop - {reg33}", color_good_news),
+
+      (try_begin),
+        (ge, ":current_amount", ":target_amount"),
+        (call_script, "script_succeed_quest", "qst_blank_quest_05"),
+      (try_end),
+
+    (try_end),
+  ])

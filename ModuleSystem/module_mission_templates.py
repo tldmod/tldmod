@@ -1579,10 +1579,14 @@ mission_templates = [ # not used in game
       (val_add, "$formations_tutorial", 1),
       ]),
 	#AI Triggers
-	(0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
+	(0, 0, ti_once,[(this_or_next|eq, "$small_scene_used", 1), (eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
 			(call_script, "script_select_battle_tactic"),
-			(call_script, "script_battle_tactic_init")]),
-	(5, 0, 0, [(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
+			(call_script, "script_battle_tactic_init"),
+      (try_begin),
+        (eq, "$small_scene_used", 1),
+        (display_message, "@Battlefield is too small for complex AI formations.", message_neutral),
+      (try_end)]),
+	(5, 0, 0, [(this_or_next|eq, "$small_scene_used", 1), (eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
 	common_battle_order_panel,
 	common_battle_order_panel_tick,
 ]),
@@ -6244,10 +6248,14 @@ tld_remove_riderless_animals,
   ),
 
   #AI Triggers
-  (0, 0, ti_once,[(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
+  (0, 0, ti_once,[(this_or_next|eq, "$small_scene_used", 1), (eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",2)],[
       (call_script, "script_select_battle_tactic"),
-      (call_script, "script_battle_tactic_init")]),
-  (5, 0, 0, [(eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
+      (call_script, "script_battle_tactic_init"),
+      (try_begin),
+        (eq, "$small_scene_used", 1),
+        (display_message, "@Battlefield is too small for complex AI formations.", message_neutral),
+      (try_end)]),
+  (5, 0, 0, [(this_or_next|eq, "$small_scene_used", 1), (eq, "$tld_option_formations", 0),(store_mission_timer_a,":mission_time"),(ge,":mission_time",3),(call_script, "script_battle_tactic_apply")], []),
   common_battle_order_panel,
   common_battle_order_panel_tick,
 

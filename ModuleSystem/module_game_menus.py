@@ -3924,7 +3924,8 @@ game_menus = [
   ],[
 	("just_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]),
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
-	("cheat_sea_battle",[],"Sea Battle",[(assign,"$cheat_imposed_quest","qst_blank_quest_03")]),
+	("cheat_kill_quest",[],"Kill Targeted Troop Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_04")]),
+	("cheat_kill_faction_quest",[],"Kill Faction Troop Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_05")]),
 	("cheat_reinforce_center",[],"Reinforce Center",[(assign,"$cheat_imposed_quest","qst_blank_quest_16")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("cheat_attack_refugees",[],"Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),

@@ -888,11 +888,13 @@
   1.7 anim_human 45400 45453 515 102 0 0 0  0.5 
  strike_fall_back_rise_upper 2 176160848  1
   1.44 anim_human 45400 45445 3 0 0 0 0 0.0 
- cheer 0 33554496  4
+ cheer 0 33554496  6
   6 man_cheer 0 185 6 0 0 0 0 0.0 
   3 man_cheer 200 289 6 0 0 0 0 0.0 
   4.5 man_cheer 300 437 6 0 0 0 0 0.0 
   5.5 man_cheer 450 617 6 0 0 0 0 0.0 
+  4.5 victory_cheer01 0 41 6 0 0 0 0 0.0 
+  4.5 victory_cheer02 0 40 6 0 0 0 0 0.0 
  cheer_stand 268435456 33554496  1
   31.5 man_cheer 650 1597 6 0 0 0 0 0.0 
  stand_townguard 0 0  1
