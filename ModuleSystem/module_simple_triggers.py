@@ -501,9 +501,9 @@ simple_triggers = [
            (gt, "$tld_war_began", 0),
            (eq, "$tld_option_regen_rate", 0), #Normal
            (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-           #(this_or_next|eq, ":faction_no", "fac_gondor"), #MV: Gondor excluded on player input
+           (this_or_next|eq, ":faction_no", "fac_gondor"), #MV: Gondor excluded on player input #InVain: Aaand back in.
            (eq, ":faction_no", "fac_rohan"),
-           (val_add, ":strength", 10),
+           (val_add, ":strength", 30), #InVain: Was 10, but I just lowered Gondor's strength income from centers by 30. This will put Mordor and Isengard players against a challenge!
          (try_end),
          (val_min, ":strength", fac_str_max), #limit max strength
 		 (faction_set_slot, ":faction_no", slot_faction_strength_tmp, ":strength"),
