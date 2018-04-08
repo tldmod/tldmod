@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1611
+ 1678
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -4690,6 +4690,75 @@ spr_smaug_skeleton 0 0 smaug_skeleton 0 0
 spr_dorwinion_sack 5 0 dorwinion_sack bo_dorwinion_sack 0
 
 
+spr_pointer_arrow 0 0 pointer_arrow 0 0
+
+
+spr_fake_house_a 0 0 MT_fake_house_a bo_fake_house_a 0
+
+
+spr_fake_house_b 0 0 MT_fake_house_b bo_fake_house_b 0
+
+
+spr_fake_house_c 0 0 MT_fake_house_c bo_fake_house_c 0
+
+
+spr_fake_house_d 0 0 MT_fake_house_d bo_fake_house_d 0
+
+
+spr_fake_house_e 0 0 MT_fake_house_e bo_fake_house_e 0
+
+
+spr_fake_house_f 0 0 MT_fake_house_f bo_fake_house_f 0
+
+
+spr_fake_house_far_a 0 0 MT_fake_house_far_a bo_fake_house_far_a 0
+
+
+spr_fake_house_far_b 0 0 MT_fake_house_far_b bo_fake_house_far_b 0
+
+
+spr_fake_house_far_c 0 0 MT_fake_house_far_c bo_fake_house_far_c 0
+
+
+spr_fake_house_far_d 0 0 MT_fake_house_far_d bo_fake_house_far_d 0
+
+
+spr_fake_house_far_e 0 0 MT_fake_house_far_e bo_fake_house_far_e 0
+
+
+spr_fake_house_far_f 0 0 MT_fake_house_far_f bo_fake_house_far_f 0
+
+
+spr_Dale_fake_house_a 0 0 Dale_fake_house_a bo_fake_house_a 0
+
+
+spr_Dale_fake_house_b 0 0 Dale_fake_house_b bo_fake_house_b 0
+
+
+spr_Dale_fake_house_c 0 0 Dale_fake_house_c bo_fake_house_c 0
+
+
+spr_Dale_fake_house_d 0 0 Dale_fake_house_d bo_fake_house_d 0
+
+
+spr_Dale_fake_house_e 0 0 Dale_fake_house_e bo_fake_house_e 0
+
+
+spr_Dale_fake_house_f 0 0 Dale_fake_house_f bo_fake_house_f 0
+
+
+spr_Dale_fake_house_far_a 0 0 Dale_fake_house_far_a bo_fake_house_far_a 0
+
+
+spr_Dale_fake_house_far_b 0 0 Dale_fake_house_far_b bo_fake_house_far_b 0
+
+
+spr_Dale_fake_house_far_c 0 0 Dale_fake_house_far_c bo_fake_house_far_c 0
+
+
+spr_Dale_fake_house_far_d 0 0 Dale_fake_house_far_d bo_fake_house_far_d 0
+
+
 spr_distant_mountain_snow_1 69632 0 distant_mountain_snow_1 0 0
 
 
@@ -4785,6 +4854,12 @@ spr_apple_basket 0 0 apple_basket bo_apple_basket 0
 spr_sausages 0 0 sausages 0 0
 
 
+spr_wine 0 0 amphora_slim 0 0
+
+
+spr_oil 0 0 oil 0 0
+
+
 spr_boat_sail_on 0 0 new_boat_sail_on bo_new_boat_sail_on 0
 
 
@@ -4822,6 +4897,135 @@ spr_orc_gate_destructible 32768 1500 orc_gate_destructible bo_orc_gate_destructi
 
 
 spr_rope_bridge 0 0 rope_bridge_new bo_rope_bridge_new 0
+
+
+spr_arena_awning 0 0 arena_block_j_awning bo_awning 0
+
+
+spr_tree_shelter 0 0 tree_shelter_a bo_tree_shelter_a 0
+
+
+spr_tree_house 0 0 tree_house_a bo_tree_house_a 0
+
+
+spr_suspension_bridge 0 0 suspension_bridge_a bo_suspension_bridge_a 0
+
+
+spr_arabian_tent_umbar 0 0 arabian_tent_umbar bo_arabian_tent 0
+
+
+spr_arabian_tent_umbar_b 0 0 arabian_tent_umbar_b bo_arabian_tent_b 0
+
+
+spr_winery_barrel_shelf 0 0 winery_barrel_shelf bo_winery_barrel_shelf 0
+
+
+spr_winery_huge_barrel 0 0 winery_huge_barrel bo_winery_huge_barrel 0
+
+
+spr_winery_middle_barrel 0 0 winery_middle_barrel bo_winery_middle_barrel 0
+
+
+spr_winery_wine_cart_small_loaded 0 0 winery_wine_cart_small_loaded bo_winery_wine_cart_small_loaded 0
+
+
+spr_winery_wine_cart_loaded 0 0 winery_wine_cart_loaded bo_winery_wine_cart_loaded 0
+
+
+spr_winery_wine_cart_empty 0 0 winery_wine_cart_empty bo_winery_wine_cart_empty 0
+
+
+spr_winery_wine_cart_small_empty 0 0 winery_wine_cart_small_empty bo_winery_wine_cart_small_empty 0
+
+
+spr_smithy_grindstone_wheel 0 0 smithy_grindstone_wheel bo_smithy_grindstone_wheel 0
+
+
+spr_smithy_forge_bellows 0 0 smithy_forge_bellows bo_smithy_forge_bellows 0
+
+
+spr_smithy_forge 0 0 smithy_forge bo_smithy_forge 0
+
+
+spr_smithy_anvil 0 0 smithy_anvil bo_smithy_anvil 0
+
+
+spr_tannery_hide_a 0 0 tannery_hide_a bo_tannery_hide_a 0
+
+
+spr_tannery_hide_b 0 0 tannery_hide_b bo_tannery_hide_b 0
+
+
+spr_exima_woodplanks 0 0 exima_woodplanks bo_exima_woodplanks 0
+
+
+spr_khazad_dwarf_erebor_lake_boat 0 0 khazad_dwarf_erebor_lake_boat bo_khazad_dwarf_erebor_lake_boat 0
+
+
+spr_khazad_dwarf_forge_stand_tools 0 0 khazad_dwarf_forge_stand_tools 0 0
+
+
+spr_khazad_dwarf_forge_anvil 0 0 khazad_dwarf_forge_anvil 0 0
+
+
+spr_khazad_dwarf_forge_forging_barrel 0 0 khazad_dwarf_forge_forging_barrel bo_khazad_dwarf_forge_forging_barrel 0
+
+
+spr_khazad_dwarf_forge_tools_1 0 0 khazad_dwarf_forge_tools_1 0 0
+
+
+spr_khazad_dwarf_forge_tools_2 0 0 khazad_dwarf_forge_tools_2 0 0
+
+
+spr_khazad_dwarf_forge_tools_3 0 0 khazad_dwarf_forge_tools_3 0 0
+
+
+spr_khazad_dwarf_forge_tools_4 0 0 khazad_dwarf_forge_tools_4 0 0
+
+
+spr_khazad_dwarf_forge_tools_5 0 0 khazad_dwarf_forge_tools_5 0 0
+
+
+spr_khazad_dwarf_forge_tools_6 0 0 khazad_dwarf_forge_tools_6 0 0
+
+
+spr_khazad_dwarf_forge_tools_7 0 0 khazad_dwarf_forge_tools_7 0 0
+
+
+spr_khazad_dwarf_tobacco_pipe 0 0 khazad_dwarf_tobacco_pipe 0 0
+
+
+spr_khazad_dwarf_tobacco_pouch 0 0 khazad_dwarf_tobacco_pouch 0 0
+
+
+spr_khazad_dwarf_flask 0 0 khazad_dwarf_flask 0 0
+
+
+spr_khazad_dwarf_cram 0 0 khazad_dwarf_cram 0 0
+
+
+spr_khazad_dwarf_animals_skins_boar 0 0 khazad_dwarf_animals_skins_boar 0 0
+
+
+spr_khazad_dwarf_animals_skins_wolf 0 0 khazad_dwarf_animals_skins_wolf 0 0
+
+
+spr_khazad_dwarf_table_1 0 0 khazad_dwarf_table_1 bo_khazad_dwarf_table_1 0
+
+
+spr_khazad_dwarf_tree_1 0 0 khazad_dwarf_tree_1 0 0
+
+
+spr_khazad_dwarf_bench_1 0 0 khazad_dwarf_bench_1 bo_khazad_dwarf_bench_1 0
+
+
+spr_khazad_orcish_temporary_camp_spit_2 0 0 khazad_orcish_temporary_camp_spit_2 0 0
+
+
+spr_khazad_orcish_temporary_camp_bonfire_2 0 0 khazad_orcish_temporary_camp_bonfire_2 0 0
+
+
+spr_khazad_orcish_temporary_camp_burduk_1 0 0 khazad_orcish_temporary_camp_burduk_1 0 0
 
 
 spr_troop_civilian 16384 0 arrow_helper_blue 0 1
@@ -4887,9 +5091,6 @@ spr_beorn_hall 0 0 beorn_hall bo_beorn_hall 0
 
 
 spr_beorn_side_house 0 0 beorn_side_house bo_house6 0
-
-
-spr_pointer_arrow 0 0 pointer_arrow 0 0
 
 
 spr_save_compartibility2 0 0 0 0 0

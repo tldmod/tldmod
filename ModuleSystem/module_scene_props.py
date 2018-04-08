@@ -2385,10 +2385,10 @@ scene_props = [
 ("smaug_skeleton",    0,"smaug_skeleton","0", []), #swy--added unused but otherwise pretty cool (both technically and artistically) Smaug skeleton, for the Lone Mountain I guess.
 
 ("dorwinion_sack",sokf_type_container,"dorwinion_sack","bo_dorwinion_sack", []), # Kham - for Spears quest 
+("pointer_arrow", 0, "pointer_arrow", "0", []),
 
 #InVain props start
-#
-] + (is_a_wb_sceneprop==1 and [  
+
 ("fake_house_a",0,"MT_fake_house_a","bo_fake_house_a", []),
 ("fake_house_b",0,"MT_fake_house_b","bo_fake_house_b", []),
 ("fake_house_c",0,"MT_fake_house_c","bo_fake_house_c", []),
@@ -2414,8 +2414,9 @@ scene_props = [
 ("Dale_fake_house_far_b",0,"Dale_fake_house_far_b","bo_fake_house_far_b", []),
 ("Dale_fake_house_far_c",0,"Dale_fake_house_far_c","bo_fake_house_far_c", []),
 ("Dale_fake_house_far_d",0,"Dale_fake_house_far_d","bo_fake_house_far_d", []),
-#("Dale_fake_house_far_e",0,"fake_house_far_e","0", []),
-#("Dale_fake_house_far_f",0,"fake_house_far_f","0", []),
+
+
+] + (is_a_wb_sceneprop==1 and [  
 
 ("Dale_castle_small_round_tower",0,"Dale_small_round_tower_a","bo_arabian_castle_corner_b", []),
 ("Dale_castle_small_round_tower_roof",0,"Dale_small_round_tower_roof_a","bo_small_round_tower_roof_a", []),
@@ -2543,9 +2544,11 @@ scene_props = [
 ( "butter_pot",0,"butter_pot","0",[]),
 ( "apple_basket",0,"apple_basket","bo_apple_basket",[]),
 ( "sausages",0,"sausages","0",[]),
+( "wine",0,"amphora_slim","0",[]),
+( "oil",0,"oil","0",[]),
+
 ( "boat_sail_on",0,"new_boat_sail_on","bo_new_boat_sail_on",[]),
 ( "boat_sail_off",0,"new_boat_sail_off","bo_new_boat_sail_off",[]),
-
 ( "tree_mirkwood_a",0,"tree_mirkwood_a","bo_tree_mallorn_a",[]),
 ( "tree_mirkwood_b",0,"tree_mirkwood_b","bo_tree_mallorn_b",[]),
 ( "tree_mirkwood_c",0,"tree_mirkwood_c","bo_tree_mallorn_c",[]),
@@ -2602,15 +2605,14 @@ scene_props = [
 ], 1500), #500 hit points
 
 ("rope_bridge",0,"rope_bridge_new","bo_rope_bridge_new", []),
+("arena_awning",0,"arena_block_j_awning","bo_awning", []),
 
-] + (is_a_wb_sceneprop==1 and [  #WB only props
+#WB only props below, replaced or hidden in M&B
 ("tree_shelter",0,"tree_shelter_a","bo_tree_shelter_a", []),
-("tree_house",0,"tree_house_a.1","bo_tree_house_a", []),
-("rock_bridge",0,"rock_bridge_a","bo_rock_bridge_a", []),
+("tree_house",0,"tree_house_a","bo_tree_house_a", []),
 ("suspension_bridge",0,"suspension_bridge_a","bo_suspension_bridge_a", []),
 ("arabian_tent_umbar",0,"arabian_tent_umbar","bo_arabian_tent", []),
 ("arabian_tent_umbar_b",0,"arabian_tent_umbar_b","bo_arabian_tent_b", []),
-("arena_awning",0,"arena_block_j_awning","bo_awning", []),
 
 ( "winery_barrel_shelf"                        ,0,"winery_barrel_shelf","bo_winery_barrel_shelf",[]),
 ( "winery_huge_barrel"                         ,0,"winery_huge_barrel","bo_winery_huge_barrel",[]),
@@ -2625,7 +2627,35 @@ scene_props = [
 ( "smithy_anvil"                               ,0,"smithy_anvil","bo_smithy_anvil",[]),
 ( "tannery_hide_a"                             ,0,"tannery_hide_a","bo_tannery_hide_a",[]),
 ( "tannery_hide_b"                             ,0,"tannery_hide_b","bo_tannery_hide_b",[]),
-] or []) + [ #WB only props end
+#WB only props end
+
+	( "exima_woodplanks"                           ,0,"exima_woodplanks","bo_exima_woodplanks",[]),
+	( "khazad_dwarf_erebor_lake_boat"              ,0,"khazad_dwarf_erebor_lake_boat","bo_khazad_dwarf_erebor_lake_boat",[]),
+	( "khazad_dwarf_forge_stand_tools"             ,0,"khazad_dwarf_forge_stand_tools","0",[]),
+	( "khazad_dwarf_forge_anvil"                   ,0,"khazad_dwarf_forge_anvil","0",[]),
+	( "khazad_dwarf_forge_forging_barrel"          ,0,"khazad_dwarf_forge_forging_barrel","bo_khazad_dwarf_forge_forging_barrel",[]),
+	( "khazad_dwarf_forge_tools_1"                 ,0,"khazad_dwarf_forge_tools_1","0",[]),
+	( "khazad_dwarf_forge_tools_2"                 ,0,"khazad_dwarf_forge_tools_2","0",[]),
+	( "khazad_dwarf_forge_tools_3"                 ,0,"khazad_dwarf_forge_tools_3","0",[]),
+	( "khazad_dwarf_forge_tools_4"                 ,0,"khazad_dwarf_forge_tools_4","0",[]),
+	( "khazad_dwarf_forge_tools_5"                 ,0,"khazad_dwarf_forge_tools_5","0",[]),
+	( "khazad_dwarf_forge_tools_6"                 ,0,"khazad_dwarf_forge_tools_6","0",[]),
+	( "khazad_dwarf_forge_tools_7"                 ,0,"khazad_dwarf_forge_tools_7","0",[]),
+	( "khazad_dwarf_tobacco_pipe"                  ,0,"khazad_dwarf_tobacco_pipe","0",[]),
+	( "khazad_dwarf_tobacco_pouch"                 ,0,"khazad_dwarf_tobacco_pouch","0",[]),
+	( "khazad_dwarf_flask"                         ,0,"khazad_dwarf_flask","0",[]),
+	( "khazad_dwarf_cram"                          ,0,"khazad_dwarf_cram","0",[]),
+	( "khazad_dwarf_animals_skins_boar"            ,0,"khazad_dwarf_animals_skins_boar","0",[]),
+	( "khazad_dwarf_animals_skins_wolf"            ,0,"khazad_dwarf_animals_skins_wolf","0",[]),
+	( "khazad_dwarf_animals_skins_fox"             ,0,"khazad_dwarf_animals_skins_fox","0",[]),
+	( "khazad_dwarf_table_1"                       ,0,"khazad_dwarf_table_1","bo_khazad_dwarf_table_1",[]),
+	( "khazad_dwarf_tree_1"                        ,0,"khazad_dwarf_tree_1","0",[]),
+	( "khazad_dwarf_bench_1"                       ,0,"khazad_dwarf_bench_1","bo_khazad_dwarf_bench_1",[]),
+	( "khazad_orcish_temporary_camp_spit_2"        ,0,"khazad_orcish_temporary_camp_spit_2","0",[]),
+	( "khazad_orcish_temporary_camp_bonfire_2"     ,0,"khazad_orcish_temporary_camp_bonfire_2","0",[]),
+	( "khazad_orcish_temporary_camp_burduk_1"      ,0,"khazad_orcish_temporary_camp_burduk_1","0",[]),
+
+
 
 ("troop_civilian",sokf_invisible,"arrow_helper_blue","0", [(ti_on_init_scene_prop,[												 
     (store_trigger_param_1, ":instance_no"),
@@ -2721,9 +2751,6 @@ scene_props = [
 ( "beorn_side_house",0,"beorn_side_house","bo_house6",[]),
 #InVain props end
 
-("pointer_arrow", 0, "pointer_arrow", "0", []),
-
-#("save_compartibility1",0,"0","0", []), Replaced with Pointer Arrow
 ("save_compartibility2",0,"0","0", []),
 ("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),
