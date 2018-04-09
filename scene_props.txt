@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1678
+ 1679
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -5008,6 +5008,9 @@ spr_khazad_dwarf_animals_skins_boar 0 0 khazad_dwarf_animals_skins_boar 0 0
 
 
 spr_khazad_dwarf_animals_skins_wolf 0 0 khazad_dwarf_animals_skins_wolf 0 0
+
+
+spr_khazad_dwarf_animals_skins_fox 0 0 khazad_dwarf_animals_skins_fox 0 0
 
 
 spr_khazad_dwarf_table_1 0 0 khazad_dwarf_table_1 bo_khazad_dwarf_table_1 0

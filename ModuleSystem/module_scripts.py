@@ -7046,13 +7046,41 @@ scripts = [
             (ge, "$g_talk_troop_faction_relation", 0),
             (store_character_level, ":cur_level", "trp_player"),
             (gt, ":cur_level", 5),
-             
-            (store_random_in_range, ":quest_target_amount", 5, 8),
-            (assign, ":quest_importance", ":quest_target_amount"),
+            
+            #Kham - Dynamic Amount / Levels Begin - Makes it easier for low level players to do this quest, and not give up precious troops.
+            (store_div, ":target_amount_base", ":cur_level", 3),
+            (party_get_skill_level, ":trainer_modifier", "p_main_party", "skl_trainer"),
+            (val_div, ":trainer_modifier", 2),
+            (val_max, ":trainer_modifier", 1),
+            (val_add, ":target_amount_base", ":trainer_modifier"),
+            (store_add, ":target_amount_max", ":target_amount_base", 4),
+
+            (store_random_in_range, ":quest_target_amount", ":target_amount_base", ":target_amount_max"),
+
+            (try_begin), #Elves and Dwarves have a dif max amount cause it is hard to maintain these troops.
+            	(this_or_next|eq, ":giver_faction_no", "fac_dwarf"),
+            	(this_or_next|eq, ":giver_faction_no", "fac_lorien"),
+            	(this_or_next|eq, ":giver_faction_no", "fac_imladris"),
+            	(			  eq, ":giver_faction_no", "fac_woodelf"),
+            	(val_min, ":quest_target_amount", 8),
+            (else_try),
+            	(val_min, ":quest_target_amount", 15),
+            (try_end),
+
+            (store_add, ":quest_importance", ":quest_target_amount", 1),
+            (val_min, ":quest_importance", 10),
+
             (party_get_free_companions_capacity, ":free_capacity", "p_main_party"),
             (le, ":quest_target_amount", ":free_capacity"),
             (faction_get_slot, ":quest_object_troop", ":giver_faction_no", slot_faction_tier_1_troop),
-            (store_random_in_range, ":level_up", 20, 40),
+
+            (store_add, ":level_up_min", ":cur_level", 10),
+            (store_add, ":level_up_max", ":cur_level", 26),
+            (val_min, ":level_up_max", 51),
+
+            (store_random_in_range, ":level_up", ":level_up_min", ":level_up_max"),
+            #Kham - Dynamic Amount / Levels END
+
             (val_add, ":level_up", ":cur_level"),
             (val_div, ":level_up", 10),
 
