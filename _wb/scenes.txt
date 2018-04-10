@@ -1,5 +1,5 @@
 scenesfile version 1
- 361
+ 412
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1444,3 +1444,207 @@ scn_tutorial_5 tutorial_5 256 none none 0 0 120 120 -100 0x3a06dca80005715c00005
   0 
   0 
  outer_terrain_plain 
+scn_caras_galadhon_siege caras_galadhon_siege 256 none none 0 0 90 90 -0.5 0x000000013c60280000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_forest 
+scn_cerin_dolen_siege cerin_dolen_siege 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+  0 
+  0 
+ outer_terrain_forest 
+scn_cerin_amroth_siege cerin_amroth_siege 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+  0 
+  0 
+ outer_terrain_forest 
+scn_ironhill_camp_siege ironhill_camp_siege 256 none none 0 0 100 100 -100 0x00000007200016da000364d9000060f500007591000064e7 
+  0 
+  0 
+ outer_terrain_steppe 
+scn_isengard_siege isengard_siege 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2north 
+scn_thranduils_halls_siege thranduils_halls_siege 256 none none 0 0 100 100 -100 0x0000000730050d0d0002d4b300000e2f000027d200005f66 
+  0 
+  0 
+ outer_terrain_forest 
+scn_minas_tirith_siege_inner minas_tirith_siege_inner 256 none none 0 0 200 200 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_terrain_tirith_1 
+scn_edoras_siege_inner edoras_siege_inner 256 none none 0 0 200 200 -100 0x00000007200005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_hornburg_siege_inner hornburg_siege_inner 256 none none 0 0 100 100 -100 0x00001d63c005114300006228000053bf00004eb9 
+  0 
+  0 
+ outer_mountains2south 
+scn_erebor_siege_inner erebor_siege_inner 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2north 
+scn_morannon_siege_inner morannon_siege_inner 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ outer_mountains2west_mordor 
+scn_gundabad_siege_inner gundabad_siege_inner 256 none none 0 0 100 100 -100 0x00000003200005000009c5a200000f5200005bd50000739d 
+  0 
+  0 
+ New_outer_mountains2south_helmsdeep 
+scn_minas_morgul_siege_inner minas_morgul_siege_inner 256 none none 0 0 100 100 -100 0x0000000330000500000d23480000274f00005bd50000739d 
+  0 
+  0 
+ New_outer_mountains2east_mordor 
+scn_umbar_camp_siege_inner umbar_camp_siege_inner 256 none none 0 0 100 100 -100 0x0000000740000500000a1e8a000034f880004b040000583d 
+  0 
+  0 
+ outer_terrain_seaside_north_1 
+scn_dale_siege_inner dale_siege_inner 256 none none 0 0 100 100 -100 0x0000000330000500000d2348000006810000219700002120 
+  0 
+  0 
+ New_outer_terrain_tirith_1 
+scn_advcamp_gondor advcamp_gondor 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_rohan advcamp_rohan 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_lorien advcamp_lorien 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_imladris advcamp_imladris 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_beorn advcamp_beorn 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_mirkwood advcamp_mirkwood 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_dale advcamp_dale 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_erebor advcamp_erebor 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_mordor advcamp_mordor 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_isengard advcamp_isengard 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_umbar advcamp_umbar 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_harad advcamp_harad 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_khand advcamp_khand 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_dunland advcamp_dunland 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_moria advcamp_moria 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_guldur advcamp_guldur 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_gundabad advcamp_gundabad 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_rhun advcamp_rhun 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_gondor_siege advcamp_gondor_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_rohan_siege advcamp_rohan_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_lorien_siege advcamp_lorien_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_imladris_siege advcamp_imladris_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_beorn_siege advcamp_beorn_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_mirkwood_siege advcamp_mirkwood_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_dale_siege advcamp_dale_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_erebor_siege advcamp_erebor_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_mordor_siege advcamp_mordor_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_isengard_siege advcamp_isengard_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_umbar_siege advcamp_umbar_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_harad_siege advcamp_harad_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_khand_siege advcamp_khand_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_dunland_siege advcamp_dunland_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_moria_siege advcamp_moria_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_guldur_siege advcamp_guldur_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_gundabad_siege advcamp_gundabad_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
+scn_advcamp_rhun_siege advcamp_rhun_siege 256 none none 0 0 200 200 -0.5 0x000000013000050000034cd300003efe00004b34000059be 
+  0 
+  0 
+ outer_terrain_rohan 
