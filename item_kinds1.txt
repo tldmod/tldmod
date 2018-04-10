@@ -2104,16 +2104,16 @@ itemsfile version 2
  itm_rhun_helm_o Rhun_Chieftain_Helm Rhun_Chieftain_Helm 1  RhunHelmDeathDealer2 0  12 0 1500 704643072 4 100 45 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_rhun_greataxe Rhun_Great_Axe Rhun_Great_Axe 1  rhun_greataxe 0  342163460 9223635923965575392 300 286870 5 100 0 0 0 0 44032 89 0 115 0 256 43
+ itm_rhun_greataxe Rhun_Great_Axe Rhun_Great_Axe 1  rhun_greataxe 0  342163459 9223635923965575392 300 286870 5 100 0 0 0 0 44032 89 0 115 0 256 43
 0
 
- itm_rhun_battleaxe Rhun_Battle_Axe Rhun_Battle_Axe 1  rhun_battle_axe 0  342163460 9223635923965575392 300 286870 4 100 0 0 0 0 44032 86 0 108 0 256 43
+ itm_rhun_battleaxe Rhun_Battle_Axe Rhun_Battle_Axe 1  rhun_battle_axe 0  342163459 9223635923965575392 300 286870 4 100 0 0 0 0 44032 86 0 108 0 256 43
 0
 
  itm_rhun_falchion Savage_Falchion Savage_Falchion 1  rhun_falchion 0  4259842 9223388529822793742 200 286870 2.5 100 0 0 0 0 30720 96 0 77 0 256 30
 0
 
- itm_rhun_glaive Rhun_Glaive Rhun_Glaive 1  rhun_glaive 0  275087364 4222129146954496 400 286870 4.5 100 0 0 0 0 38912 83 0 156 0 277 38
+ itm_rhun_glaive Rhun_Glaive Rhun_Glaive 1  rhun_glaive 0  275087363 4222129146954496 400 286870 4.5 100 0 0 0 0 38912 83 0 156 0 277 38
 0
 
  itm_rhun_greatfalchion Savage_Great_Falchion Savage_Great_Falchion 1  rhun_greatfalchion 0  6356995 9223635924301119728 524 286870 3 100 0 0 0 0 43008 92 0 102 0 287 42
@@ -2383,19 +2383,19 @@ itemsfile version 2
  itm_dwarf_battle_axe Dwarf_Battle_Axe Dwarf_Battle_Axe 1  dwarf_battle_axe 0  80019458 9223388530091229198 600 156672 2 100 0 0 0 0 44032 94 0 61 0 256 43
 0
 
- itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 2  dwarf_great_axe 0  dwarf_great_axe_2 156672  342163460 9223635923965575392 700 156672 4 100 0 0 0 0 48128 86 0 102 0 256 47
+ itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 2  dwarf_great_axe 0  dwarf_great_axe_2 156672  342163459 9223635923965575392 700 156672 4 100 0 0 0 0 48128 86 0 102 0 256 47
 0
 
- itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 2  dwarf_great_mattock 0  dwarf_war_mattock 156672  342163460 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
+ itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 2  dwarf_great_mattock 0  dwarf_war_mattock 156672  342163459 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
 0
 
- itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 2  dwarf_great_pick 0  dwarf_war_pick 156672  342163460 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
+ itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 2  dwarf_great_pick 0  dwarf_war_pick 156672  342163459 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
 0
 
- itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163460 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284
+ itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163459 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284
 0
 
- itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 2  dwarf_mattock 0  dwarf_adz 156672  272957444 9223388530091229198 200 156672 3 100 0 0 0 0 23552 96 0 52 0 256 279
+ itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 2  dwarf_mattock 0  dwarf_adz 156672  272957443 9223388530091229198 200 156672 3 100 0 0 0 0 23552 96 0 52 0 256 279
 0
 
  itm_dwarf_hand_axe Dwarf_Short_Axe Dwarf_Short_Axe 1  dwarf_1h_axe 0  80019458 9223388530091229198 500 156672 2 100 0 0 0 0 36864 97 0 54 0 256 36
