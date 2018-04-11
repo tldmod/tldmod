@@ -1,4 +1,4 @@
-1614
+1632
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -643,6 +643,7 @@ qstr_Raiders Raiders
 qstr_have_won_the_sea_bat have_won_the_sea_battle,_demoralizing_your_troops._The_enemy_may_take_advantage_of_this_defeat_and_attack_more_frequently.
 qstr_loses_Faction_Strength loses_Faction_Strength_due_to_the_destructive_raid.
 qstr_loses_Faction_Strength_ loses_Faction_Strength_due_to_the_your_success_at_the_sea.
+qstr_You_spent_{reg67}_of You_spent_{reg67}_of_your_influence_with_{s1},_with_{reg66}_remaining.
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
@@ -953,6 +954,7 @@ qstr_{s7}_Garrison_Remove {s7}_Garrison_Removed!
 qstr_OFF OFF
 qstr_ON ON
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
+qstr_{reg63}_followers {reg63}_followers
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
@@ -1082,6 +1084,11 @@ qstr_Forces_of_Isengard Forces_of_Isengard
 qstr_their_enemies their_enemies
 qstr_{s11}_and_{s13} {s11}_and_{s13}
 qstr_{s11}_{s13} {s11},_{s13}
+qstr_a_scout_party_from_{ a_scout_party_from_{s3}
+qstr_two_scout_parties_an two_scout_parties_and_a_forager_party_from_{s3}
+qstr_two_scout_parties_and two_scout_parties_and_a_raider_party_from_{s3}
+qstr_three_scouts_two_for three_scouts,_two_foragers,_and_a_patrol_from_{s3}
+qstr_three_scouts_two_rai three_scouts,_two_raiders,_and_a_war_party_from_{s3}
 qstr_You_see_the_village_ You_see_the_village_being_raided_by_bandits._You_ask_most_of_your_troops_to_watch_out_for_other_raiders_while_you_take_a_small_group_and_prepare_to_defend_villagers.
 qstr_You_see_the_village_y You_see_the_village_you_were_tasked_to_raid._You_and_a_small_group_of_your_raiders_prepare_to_attack_the_village_so_as_not_to_be_seen.
 qstr_The_raiders_are_defe The_raiders_are_defeated!_Those_few_who_remain_alive_and_conscious_scurry_off_to_the_darkness_from_whence_they_came,_terrified_of_the_villagers_and_their_new_champion.
@@ -1150,6 +1157,7 @@ qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s1
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
 qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
+qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
@@ -1606,6 +1614,16 @@ qstr_{s4}^We_are_patrolli {s4}^We_are_patrolling_around_{s11}.
 qstr_{s4}^We_are_carrying {s4}^We_are_carrying_supplies_from_{s11}_to_{s12}.
 qstr_{s4}^We_are_escortin {s4}^We_are_escorting_prisoners_to_{s12}.
 qstr_Greetings_do_you_nee Greetings,_do_you_need_reinforcements?
+qstr_I_will_need_your_hel I_will_need_your_help,_please_follow_me._[Costs_{reg1}/{reg2}_influence]
+qstr_You_and_your_men_mus You_and_your_men_must_follow_me._[Costs_{reg1}/{reg2}_influence]
+qstr_It_looks_like_you_ha It_looks_like_you_have_too_many_followers_already.
+qstr_Why_do_you_need_us?_ Why_do_you_need_us?_You_have_all_you_need_following_you_already!
+qstr_We_will_follow_you_t We_will_follow_you,_though_we_cannot_wander_too_far.
+qstr_If_there_is_killing_ If_there_is_killing,_we_will_follow._But_we_cannot_go_too_far,_or_we_will_get_in_trouble.
+qstr_We_cannot_leave_our_ We_cannot_leave_our_post_to_follow_you_for_now._[Not_enough_influence_points_(Requires_{reg1})]
+qstr_Who_are_you_to_comma Who_are_you_to_command_us?_[Not_enough_influence_points_(Requires_{reg1})]
+qstr_Then_let_us_go._Stay Then_let_us_go._Stay_close._I_will_need_you_soon.
+qstr_There_will_be_blood_ There_will_be_blood,_that_is_for_sure._Stay_close,_or_miss_out.
 qstr_Goodbye_friends. Goodbye,_friends.
 qstr_See_you_later_if_you See_you_later_if_you_don't_get_killed.
 qstr__^Oh_and_take_back_t _^Oh,_and_take_back_those_who_are_not_our_people.

@@ -3009,7 +3009,7 @@ simple_triggers = [
 
 
 
-## Kham - War Council + Siege Reports Trigger
+## Kham - War Council + Siege Reports Trigger + Check Followers 
 
 (12,[
   (try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
@@ -3021,12 +3021,86 @@ simple_triggers = [
       (jump_to_menu, "mnu_player_added_to_war_council"),
       (faction_set_slot, ":faction_wc", slot_faction_war_council, 1),
     (else_try),
+      (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 2),
+      (ge, ":rank",7),
+      (jump_to_menu, "mnu_player_added_to_allow_follow"),
+      (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 3),
+    (else_try),
+      (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 1),
+      (ge, ":rank",5),
+      (jump_to_menu, "mnu_player_added_to_allow_follow"),
+      (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 2),
+    (else_try),
       (faction_slot_eq, ":faction_wc", slot_faction_siege_reports, 0),
       (ge, ":rank", 4),
       (faction_set_slot, ":faction_wc", slot_faction_siege_reports, 1),
       (jump_to_menu, "mnu_player_added_to_siege_reports"),
+    (else_try),
+      (faction_slot_eq, ":faction_wc", slot_faction_allowed_follow, 0),
+      (ge, ":rank",3),
+      (jump_to_menu, "mnu_player_added_to_allow_follow"),
+      (faction_set_slot, ":faction_wc", slot_faction_allowed_follow, 1),
     (try_end),
   (try_end), #End Range
+
+
+  (try_begin),
+    (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
+    (assign, reg65, ":num_followers"),
+    #(display_message, "@Trigger - {reg65} followers", color_good_news),
+    (ge, ":num_followers", 1),
+    (store_current_hours, ":cur_time"),
+
+    (try_for_parties, ":followers"),
+      (party_slot_eq, ":followers", slot_party_following_player, 1),
+      (party_is_active, ":followers"),
+      (party_get_slot, ":follow_until", ":followers", slot_party_follow_player_until_time),
+      (party_get_slot, ":home_center", ":followers", slot_party_home_center),
+      (assign, ":continue", 0),
+      
+      (try_begin),
+        (ge, ":cur_time", ":follow_until"),
+        (party_set_slot, ":followers", slot_party_following_player, 0),
+        (party_set_slot, ":followers", slot_party_commander_party, -1),
+        (call_script, "script_party_set_ai_state", ":followers", spai_patrolling_around_center, ":home_center"),
+        (str_store_party_name, s5, ":followers"),
+        (display_message, "@{s5} has stopped following you."),
+      (else_try),
+        (assign, ":continue", 1),
+      (try_end),
+      (eq, ":continue", 1),
+
+      (assign, ":scouts", 0),
+      (assign, ":raider", 0),
+      (assign, ":war_party", 0),
+
+      (party_get_slot, ":type", ":followers", slot_party_type), 
+      (try_begin),
+        (eq, ":type", spt_scout),
+        (val_add, ":scouts", 1),
+      (else_try),
+        (eq, ":type", spt_raider),
+        (val_add, ":raider", 1),
+      (else_try),
+        (eq, ":type", spt_patrol),
+        (val_add, ":war_party", 1),
+      (try_end),
+    (try_end),
+
+    (store_add, ":cur_followers", ":scouts", ":raider"),
+    (val_add, ":cur_followers", ":war_party"),
+
+    #Debug
+    #(assign, reg66, ":scouts"),
+    #(assign, reg67, ":raider"),
+    #(assign, reg68, ":war_party"),
+    #(assign, reg69, ":cur_followers"),
+
+    #(display_message, "@Total: {reg69} - Scouts:{reg66} - Raiders: {reg67} - Patrols: {reg68}", color_good_news),
+
+    (party_set_slot, "p_main_party", slot_party_number_following_player, ":cur_followers"),
+  (try_end),
+  
 ]),
 
 ## Kham Gondor Reinforcement Event - Let them patrol around the center

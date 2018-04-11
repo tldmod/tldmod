@@ -591,6 +591,8 @@ party_encounter_distrusted_friend_2a
 party_encounter_distrusted_friend_2b
 party_reinforce
 party_encounter_friend
+party_follow_player_pass
+party_follow_player_continue
 party_reinforce_end
 party_reinforce_check
 party_reinforce_check_1

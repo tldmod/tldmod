@@ -3203,7 +3203,7 @@ game_menus = [
     ("enable_kham_cheat",[],"Enable Kham Cheat Mode", [(troop_set_slot, "trp_player", slot_troop_home, 22), (display_message, "@Kham Cheat Mode ON!")]),
     ] + (is_a_wb_menu==1 and [
     ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
-    ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_gondor_custom"),]),
+    ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_gondor_custom"), (troop_add_item, "trp_player", "itm_uruk_spear")]),
     ] or []) + [
     ("remove_garrison",[],"Remove A Center of Your Faction's Garrison", [
     	(assign, ":end", 100),
@@ -3221,7 +3221,8 @@ game_menus = [
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("test_sea_battle",[],"Test Sea Battle (Good)", [(jump_to_menu, "mnu_sea_battle_quest")]),
-    ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party")]),
+    ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
+  (assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news),]),
     ("what_region",[], "What Region am I in?", 
     	[(store_add, reg1, str_shortname_region_begin , "$current_player_region"),
 		 (str_store_string, s1, reg1),
@@ -8903,6 +8904,65 @@ game_menus = [
 ]),
 
 ## Kham - Player Added to Siege Reports END
+
+## Kham - Player Added to Allow Party Follow
+
+("player_added_to_allow_follow",0,
+   "^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (set_fixed_point_multiplier, 100),
+        (position_set_x, pos0, 65),
+        (position_set_y, pos0, 30),
+        (position_set_z, pos0, 170),
+    	(try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
+    		(faction_get_slot, ":faction_follow", ":faction_wc", slot_faction_allowed_follow),
+    		(faction_get_slot, ":faction_side", ":faction_wc", slot_faction_side),
+    		(str_store_faction_name, s3, ":faction_wc"),
+    		(try_begin),
+    			(eq, ":faction_follow", 1),
+    			(str_store_string, s2, "@a scout party from {s3}"),
+    			(assign, reg55, 1),
+        		(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction_wc", pos0),
+				(call_script, "script_get_rank_title_to_s24", ":faction_wc"),
+    		(else_try),
+    			(eq, ":faction_follow", 2),
+    			(eq, ":faction_side", faction_side_good),
+    			(str_store_string, s2, "@two scout parties and a forager party from {s3}"),
+    			(assign, reg55, 3),
+        		(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction_wc", pos0),
+				(call_script, "script_get_rank_title_to_s24", ":faction_wc"),
+    		(else_try),
+    			(eq, ":faction_follow", 2),
+    			(neq, ":faction_side", faction_side_good),
+    			(str_store_string, s2, "@two scout parties and a raider party from {s3}"),
+    			(assign, reg55, 3),
+        		(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction_wc", pos0),
+				(call_script, "script_get_rank_title_to_s24", ":faction_wc"),
+    		(else_try),
+    			(eq, ":faction_follow", 3),
+    			(eq, ":faction_side", faction_side_good),
+    			(str_store_string, s2, "@three scouts, two foragers, and a patrol from {s3}"),
+    			(assign, reg55, 4),
+        		(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction_wc", pos0),
+				(call_script, "script_get_rank_title_to_s24", ":faction_wc"),
+    		(else_try),
+    			(eq, ":faction_follow", 3),
+    			(neq, ":faction_side", faction_side_good),
+    			(str_store_string, s2, "@three scouts, two raiders, and a war party from {s3}"),
+    			(assign, reg55, 4),
+        		(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", ":faction_wc", pos0),
+				(call_script, "script_get_rank_title_to_s24", ":faction_wc"),
+    		(try_end),
+        (try_end)
+    ],
+
+   	[("player_added_to_allow_follow_close", [], "Close", [(change_screen_return)]),
+
+]),
+
+## Kham - Player Added to Allow Party Follow END
+
 ## Kham - Center Besieged Menu - Start
 
 ("center_besieged_event",0,

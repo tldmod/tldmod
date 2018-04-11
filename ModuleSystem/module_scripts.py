@@ -1894,6 +1894,7 @@ scripts = [
 	(assign, "$dormant_spawn_radius", 1), #Kham - Dormant Spawn Radius initialize
 	(assign, "$tld_player_level_to_begin_war",8), #Kham - Custom Level to Start the War
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
+	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	
 
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
@@ -3364,6 +3365,7 @@ scripts = [
       #(store_add, ":level_factor", 90, ":level"),
       #(val_mul, ":limit", ":level_factor"),
       #(val_div, ":limit", 90),
+  	(party_stack_get_troop_id, ":party_leader", ":party_no", 0),
 	(troop_get_type, ":race", ":party_leader"),
     (try_begin),
      	(gt, ":race", 0), #Kham - Fix again
@@ -23878,6 +23880,88 @@ command_cursor_scripts = [
     (store_add, ":intro_string_2", ":faction_id", 2225),
     (str_store_string, s10, ":intro_string_2"),
 
+]),
+
+#script_check_num_following_player
+# Output: reg65 continue or not
+
+("check_num_following_player", [
+
+	(assign, ":scouts", 0),
+	(assign, ":raider", 0),
+	(assign, ":war_party", 0),
+
+	(try_for_parties, ":followers"),
+		(party_slot_eq, ":followers", slot_party_following_player, 1),
+		(party_get_slot, ":type", ":followers", slot_party_type), 
+		(try_begin),
+			(eq, ":type", spt_scout),
+			(val_add, ":scouts", 1),
+		(else_try),
+			(eq, ":type", spt_raider),
+			(val_add, ":raider", 1),
+		(else_try),
+			(eq, ":type", spt_patrol),
+			(val_add, ":war_party", 1),
+		(try_end),
+	(try_end),
+	
+	(assign, ":continue", 0),
+
+	(store_faction_of_party, ":faction", "$g_encountered_party"),
+	(call_script, "script_get_faction_rank", ":faction"), 
+	(assign, ":rank", reg0), #rank points to rank number 0-9
+
+	(try_begin),
+		(is_between, ":rank", 3, 5), 
+		(eq, ":scouts", 0),
+		(assign, ":continue", 1),
+	(else_try),
+		(is_between, ":rank", 5, 7),
+		(lt, ":scouts", 3),
+		(eq, ":raider", 0),
+		(assign, ":continue", 1),
+	(else_try),
+		(ge, ":rank", 7),
+		(lt, ":scouts", 4),
+		(lt, ":raider", 3),
+		(eq, ":war_party", 0),
+		(assign, ":continue", 1),
+	(try_end),
+
+	(assign, reg65, ":continue"),
+]),
+
+#script_party_follow_player
+#Input: Party that will follow player
+
+("party_follow_player", [
+	(store_script_param_1, ":party"),
+
+	(store_current_hours, ":cur_time"),
+	(store_add, ":obey_until_time", ":cur_time", 10*24), # commands last 10 days
+	(party_set_slot, ":party", slot_party_following_player, 1),
+	(party_set_slot, ":party", slot_party_follow_player_until_time, ":obey_until_time"), #no lord ai changes until this time
+	(party_set_slot, ":party", slot_party_commander_party, "p_main_party"),
+	(call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, "p_main_party"),
+	(party_set_ai_initiative, ":party", 10), #don't react to random enemies much
+	(troop_set_slot, "$g_talk_troop", slot_troop_player_order_state, spai_accompanying_army),
+	(troop_set_slot, "$g_talk_troop", slot_troop_player_order_object, "p_main_party"),
+	(faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+	(val_sub, ":influence", "$tld_action_cost"),
+	(faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
+	(assign, reg67, "$tld_action_cost"),
+	(assign, reg66, ":influence"),
+	(str_store_faction_name, s1, "$g_talk_troop_faction"),
+	(display_message, "@You spent {reg67} of your influence with {s1}, with {reg66} remaining."),
+	(party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
+	#(assign, reg65, ":num_followers"),
+	(val_add, ":num_followers", 1),
+	#(assign, reg64, ":num_followers"),
+	(party_set_slot, "p_main_party", slot_party_number_following_player, ":num_followers"),
+	(party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
+	#(assign, reg63, ":num_followers"),
+	#(display_message, "@Orig - {reg65}; New - {reg64} - Set- {reg63}", color_good_news),
 ]),
 
 ]

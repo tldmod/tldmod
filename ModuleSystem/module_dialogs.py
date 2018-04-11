@@ -11913,6 +11913,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
           (str_store_string, s4, "@You don't look too strong, do you need troops?"),
         (try_end),        
         ],
+
 "{s4}", "party_reinforce", [
    #init from TLD recruiting in city - modified
 		# prepare strings useful in the folowing dialog
@@ -11925,6 +11926,111 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 		(call_script, "script_party_copy", "p_main_party_backup", "p_main_party"),
 		(call_script, "script_party_split_by_faction", "p_main_party_backup", "p_temp_party", "$g_encountered_party_faction")
 		]],
+
+#Kham - Regular Parties follow Player
+
+
+[anyone|plyr,"party_encounter_friend", [
+        (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
+        (assign, ":rank", reg0), #rank points to rank number 0-9 
+        (assign, ":continue", 0),
+        (try_begin),
+          (eq, "$g_encountered_party_type", spt_scout),
+          (ge, ":rank", 3),
+          (try_begin),
+            (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+            (assign, "$tld_action_cost", 3),
+          (else_try),
+            (assign, "$tld_action_cost", 5),
+          (try_end),
+          (assign, ":continue", 1),
+        (else_try),
+          (eq, "$g_encountered_party_type", spt_raider),
+          (ge, ":rank", 5),
+          (try_begin),
+            (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+            (assign, "$tld_action_cost", 7),
+          (else_try),
+            (assign, "$tld_action_cost", 10),
+          (try_end),
+          (assign, ":continue", 1),
+        (else_try),
+          (eq, "$g_encountered_party_type", spt_patrol),
+          (ge, ":rank", 7),
+          (try_begin),
+            (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+            (assign, "$tld_action_cost", 11),
+          (else_try),
+            (assign, "$tld_action_cost", 15),
+          (try_end),
+          (assign, ":continue", 1),
+        (try_end),
+        (eq, ":continue", 1),
+        (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+        (assign, reg1, "$tld_action_cost"),
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@I will need your help, please follow me. [Costs {reg1}/{reg2} influence]"),
+        (else_try),
+          (str_store_string, s4, "@You and your men must follow me. [Costs {reg1}/{reg2} influence]"),
+        (try_end)],
+"{s4}", "party_follow_player_pass", []],
+
+[anyone,"party_follow_player_pass", [
+        (call_script, "script_check_num_following_player"),
+        (eq, reg65, 0),
+        (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+        (ge, reg2, "$tld_action_cost"),
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@It looks like you have too many followers already."),
+        (else_try),
+          (str_store_string, s4, "@Why do you need us? You have all you need following you already!"),
+        (try_end)],
+"{s4}", "close_window", [(call_script,"script_stand_back"),(assign, "$g_leave_encounter",1)]],
+
+[anyone,"party_follow_player_pass", [
+        (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+        (assign, reg1, "$tld_action_cost"),
+        (ge, reg2, "$tld_action_cost"),
+        (call_script, "script_check_num_following_player"),
+        (eq, reg65, 1),
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@We will follow you, though we cannot wander too far."),
+        (else_try),
+          (str_store_string, s4, "@If there is killing, we will follow. But we cannot go too far, or we will get in trouble."),
+        (try_end)],
+"{s4}", "party_follow_player_continue", []],
+
+[anyone,"party_follow_player_pass", [
+        (call_script, "script_check_num_following_player"),
+        (eq, reg65, 1),
+        (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+        (assign, reg1, "$tld_action_cost"),
+        (lt, reg2, "$tld_action_cost"),
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@We cannot leave our post to follow you for now. [Not enough influence points (Requires {reg1})]"),
+        (else_try),
+          (str_store_string, s4, "@Who are you to command us? [Not enough influence points (Requires {reg1})]"),
+        (try_end)],
+"{s4}", "party_encounter_friend", []],
+
+
+[anyone|plyr,"party_follow_player_continue", [
+        (try_begin),
+          (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
+          (str_store_string, s4, "@Then let us go. Stay close. I will need you soon."),
+        (else_try),
+          (str_store_string, s4, "@There will be blood, that is for sure. Stay close, or miss out."),
+        (try_end)],
+"{s4}", "close_window", [
+  (call_script,"script_stand_back"),(assign, "$g_leave_encounter",1),
+  (call_script, "script_party_follow_player", "$g_encountered_party"),
+  (val_add, "$trait_check_commands_issued", 1),
+]],
+
 
 [anyone|plyr,"party_encounter_friend", [
         (try_begin),

@@ -286,6 +286,15 @@ reg64  = opmask_register|64
 
 reg65  = opmask_register|65
 
+#I'll use the below regs for debug - Kham
+
+reg66  = opmask_register|66
+reg67  = opmask_register|67
+reg68  = opmask_register|68
+reg69  = opmask_register|69
+reg70  = opmask_register|70
+
+
 #swy-- We've up to 128 registers to play with: http://forums.taleworlds.com/index.php?topic=6575.4490;wap2
 
 

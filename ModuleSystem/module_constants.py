@@ -2464,3 +2464,7 @@ slot_nazgul_timer = 46
 
 intro_strings_begin = str_gondor_intro
 intro_strings_end = str_intro_strings_end
+
+#Regular Parties Follow Player
+slot_party_number_following_player = 307
+slot_faction_allowed_follow = 182
