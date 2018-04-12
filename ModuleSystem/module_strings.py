@@ -3231,4 +3231,83 @@ As you walk through a wooded vale, a sudden small rustling makes you stop. You h
 
 ("intro_strings_2_end", "Intro 2 END"),
 
+("gondor_faction_intro","^Gondor, the “land of stone”, is inhabited by descendants of the ancient Númenoreans. Proud men standing as the last line of defence against the darkness of the Enemy, ruled over by steward Denethor.^^\
+Gondor’s military is composed of forces coming from all the different fiefdoms. You get the standard army with solid and well armoured troops overall (infantry, archers and cavalry), Dol Amroth famous for their heavy cavalry, green archers and spearmen from Pinnath Gelin, bowmen from the Blackroot Vale, axemen of Lossarnach, heavy marines from Pelargir or hardened clansmen of Lamedon."),
+
+("dwarf_faction_intro","^Dwarves are short and tough, very strong and very well equipped. They come from the Lonely Mountain and the Iron Hills.^^\
+Their army consists of an infantry line, a scout/archer line and an Iron Hills line (the heaviest hard-hitting infantry)."),
+
+("rohan_faction_intro","^Rohirrim are the horse lords of the Mark of Rohan led by king Théoden.^^\
+Rohirrim have very good cavalry - from heavy lancers to agile horse archers. They have an infantry line as well, branching into shieldwall forming troops and heavy swordsmen bearing longswords."),
+
+("mordor_faction_intro","^Mordor represents Sauron’s own forces bred in the darkness of the Black Land.^^\
+Armies of Mordor consist of orcs, uruks and evil men (Black Númenoreans). Uruks of Mordor are the better equipped and stronger breed of orcs, but have no archery line. Most regular orcs are infantry, skirmishers or archers, but there are also orc warg-riders. Black Númenoreans are a rare, but very dangerous infantry and cavalry. Sauron has also bred fierce battle trolls, but they’re extremely rare."),
+
+("isengard_faction_intro","^Isengard is ruled by Saruman, the betrayer wizard. He created his own version of orcs: the uruk-hai.^^\
+The forces of Isengard are quite well (if crudely) equipped. The orcs are comparable to any other orcs, but the uruk-hai are truly deadly killing machines - wielding pikes, halberds, heavy axes and nasty cleavers. They also have largest bows among any orcs."),
+
+("lorien_faction_intro","^Elves of Lothlórien are a powerful group of Nandor and Sindar living in the Lórien woods, led by Lord Celeborn and Lady Galadriel.^^\
+Their forces consist of an infantry line and a scout line. All their troops are very skilled, well equipped and overall deadly. A rain of arrows from under the forests cover, followed by a devastating infantry attack, is their main tactic."),
+
+("imladris_faction_intro","^Elves of Imladris (Rivendell) are Sindar and Noldor led by lord Elrond and his two sons. Much of the West of old remains in their household, powerful elven lords and ancient artifacts. Under their banner, the Dúnedain of the North march as well - tall dark haired rangers and nobles of mixed Dúnedain blood clad in ancient maille.^^\
+Very well equipped and highly skilled infantry, archers, and also cavalry."),
+
+("woodelf_faction_intro", "^The Woodelves are Sindar living in Mirkwood, led by king Thranduil.^^\
+They too have an infantry and a scout line, but focused more on the archers than the elves of Lórien. Their infantry specializes on spears."),
+
+("dale_faction_intro","^Dale is a city rebuilt by Northmen who share the ancestry with the Rohirrim, joined by the survivors from the lake city of Esgaroth. (after it was burnt down by Smaug).^^\
+Men of Dale provide tough infantry focused on polearms, famous archer troops topped by the legendary Barding bowmen and a merchant guard line acting as reasonably good cavalry."),
+
+("harad_faction_intro", "^Haradrim come from the deserts and rain forests of the far South - dark skinned with an affection for gold.^^\
+Haradrim have average infantry (skirmishers/archers and spearmen/swordsmen) from Great Harad, a cavalry line (both heavy cavalry and horse archers) from Harondor and a Far Harad line of tribal warriors."),
+
+("rhun_faction_intro","^Men of Rhûn are tribal easterlings from around the sea of Rhûn.^^\
+The bulk of their army is cavalry - horse archers and lancers, both very lightly equipped, the top tier cavalry is much heavier or larger mounts. Their infantrymen are also quite lightly armoured and wield large axes and swords."),
+
+("khand_faction_intro","^Variags of Khand are fierce easterling raiders wearing terrifying battlemasks.^^\
+They rely on fast light infantry (skirmishers and blademasters) and heavy axemen, while their cavalry line contains both lightly armoured agile skirmishers and heavy cataphracts."),
+
+("umbar_faction_intro", "^Corsairs of Umbar are southern enemies of Gondor, descendants of the Black Númenoreans.^^\
+Corsairs employ both lightly armoured skirmishers and heavier swordmasters as well as iron longbowmen."),
+
+("moria_faction_intro", "^Orcs of Moria occupy the halls of Khazad Dúm.^^\
+Orcs like all others, but their equipment is better, because they use metal scraps and bits of looted dwarven armour."),
+
+("guldur_faction_intro","^Dol Guldur is an old fortress of Sauron in Mirkwood - orcs now launch attacks at the forest elves from there.^^\
+The Dol Guldur troops are just orcs, quite similar to the Mordor types. Overall typical orc infantry, archers and also the warg riders."),
+
+("gundabad_faction_intro", "^Gundabad used to be a dwarven sacred place, later it became a massive orc city in the mountain. It was abandoned for a while, but now the orcs returned in large numbers.^^\
+The Gundabad orcs are very similar to all other orcs, but their nature is more savage. Their equipment is primitive and their fighting style barbaric."),
+
+("dunland_faction_intro","^Dunlanders are wild men, enemies of the Rohirrim who drove them from their homeland.^^\
+They’re very poorly equipped, almost no real armour and sharpened wooden pikes and antler axes. Their chieftains wear old maille, crudel helmets and rare swords. They also have a cavalry line, but it’s also quite weak."),
+
+("beorn_faction_intro", "^Woodmen were those Northmen  who dwelt in the forests of Middle-earth, and especially Mirkwood in the Third and Fourth ages.^^\
+Beornings were a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. It is possible that the Beornings became known as a people through being descendants of Beorn. During the War of the Ring, Grimbeorn the Old, son of Beorn, was the leader of the Beornings.^^\
+These Northmen only fight on foot and their infantry is decent, if not very well equipped. Various scout troops provide ranged support and the rest are mostly lightly armoured axemen."),
+
+("intro_faction_intro_strings_end", "faction intro END"),
+
+
+("gondor_extra_info","Good^^Hard^^Gondor (South-East)^^Prince Imrahil^^Mordor, Umbar, Khand, Harad"),
+("dwarf_extra_info","Good^^Easy^^North Rhovanion (North)^^King Dain II Ironfoot^^Rhun, Gundabad"),
+("rohan_extra_info","Good^^Average^^Rohan (South-West)^^King Theoden^^Isengard, Dunland"),
+("mordor_extra_info","Sauron^^Easy^^Gondor (South-East)^^Gothmog^^Gondor"),
+("isengard_extra_info","Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan"),
+("lorien_extra_info","Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur"),
+("imladris_extra_info","Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur"),
+("woodelf_extra_info", "^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur"),
+("dale_extra_info","Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad"),
+("harad_extra_info", "^Sauron^^Easy^^Gondor (South-East)^^Chief_Ul-Ulcari^^Gondor"),
+("rhun_extra_info","Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings"),
+("khand_extra_info","Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor"),
+("umbar_extra_info", "Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor"),
+("moria_extra_info", "Saruman^^Very Hard^^South Rhovanion (Center)^^Master Bolg the Lesser^^Imladris, Lothlorien"),
+("guldur_extra_info","Sauron^^Very Hard^^South Rhovanion (Center)^^Master Fuinur^^Imladris, Lothlorien"),
+("gundabad_extra_info", "Saruman^^Very Hard^^North Rhovanion (North)^^Master Burza Krual^^Dale, Dwarves, Mirkwood, Beornings"),
+("dunland_extra_info","Saruman^^Hard^^Rohan (South-West)^^Chief Daeglaf the Black^^Rohan"),
+("beorn_extra_info", "Good^^Hard^^North Rhovanion (North)^^Chief_Grimbeorn_the_Old^^Rhun, Gundabad"),
+
+("intro_strings_extra_end", "Intro EXTRA END"),
+
 ]

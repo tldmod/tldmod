@@ -1,4 +1,4 @@
-1518
+1521
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -77,6 +77,10 @@ qstr_Rotate Rotate
 qstr_Rotation={reg0} Rotation={reg0}
 qstr_{s30} {s30}
 qstr_{s1} {s1}
+qstr_Close Close
+qstr_Faction_Side:^^Campa Faction_Side:^^Campaign_Difficulty*:^^Home_Theater:^^Marshall:^^Enemies:^^
+qstr_Campaign_Difficulty_ Campaign_Difficulty_is_based_on_starting_faction_strength,_theater_enemies,^_and_faction_troop_tree_&_troop_equipment.
+qstr_{s2} {s2}
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -375,7 +379,6 @@ qstr_The_last_time_you_he The_last_time_you_heard_about_{reg1?her:him},_{s1}
 qstr_The_{s50} The_{s50}
 qstr_{s50} {s50}
 qstr_{s50}_belongs_to_{s1 {s50}_belongs_to_{s1}_of_{s2}.^
-qstr_{s2} {s2}
 qstr_Current_garrison_con Current_garrison_consists_of_{reg5}_men.^Has_food_stock_for_{reg6}_days.
 qstr_Very_Poor Very_Poor
 qstr_Poor Poor

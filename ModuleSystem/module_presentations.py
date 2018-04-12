@@ -3024,6 +3024,135 @@ presentations = [
 #Kham END
 
 
+("faction_intro_text", 0, 0, [
+    (ti_on_presentation_load,
+      [
+        (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+        
+        (create_mesh_overlay, reg1, "mesh_town_goodcamp"),
+        (position_set_x, pos1, 0),
+        (position_set_y, pos1, 0),
+        (overlay_set_position, reg1, pos1),
+        
+        ## combo_button
+        (create_combo_button_overlay, "$g_presentation_obj_1"),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 690),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        # factions
+        (store_sub, ":num_factions", npc_kingdoms_end, npc_kingdoms_begin),
+        
+        ## page names, from bottom to top
+        (try_for_range_backwards, ":page_no", 0, ":num_factions"),
+          (store_add, ":faction_no", ":page_no", npc_kingdoms_begin),
+          (str_store_faction_name, s0, ":faction_no"),
+          (overlay_add_item, "$g_presentation_obj_1", s0),
+        (try_end),
+        (store_sub, ":presentation_obj_val", ":num_factions", "$g_selected_page"),
+        (val_sub, ":presentation_obj_val", 1),
+        (overlay_set_val, "$g_presentation_obj_1", ":presentation_obj_val"),
+        
+        ## back
+        (create_game_button_overlay, "$g_presentation_obj_2", "@Close"),
+        (position_set_x, pos1, 750),
+        (position_set_y, pos1, 685),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+            
+
+        ## pic_arms
+        (try_begin),
+          (is_between, "$g_selected_page", 0, ":num_factions"), 
+          (store_add, ":pic_arms", "mesh_tp_victory_gondor", "$g_selected_page"),
+          (create_mesh_overlay, reg1, ":pic_arms"),
+          (position_set_x, pos1, 200),
+          (position_set_y, pos1, 110),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 300),
+          (position_set_y, pos1, 300),
+          (overlay_set_size, reg1, pos1),
+        (try_end),
+
+
+        ## Text
+        (try_begin),
+          (is_between, "$g_selected_page", 0, ":num_factions"), 
+          
+          (store_add, ":text_string", intro_strings_begin, "$g_selected_page"),
+          (str_store_string, s1, ":text_string"),
+          (create_text_overlay, reg65, "@{s1}", tf_center_justify|tf_scrollable),
+          (position_set_x, pos1, 50),
+          (position_set_y, pos1, 350),
+          (overlay_set_position, reg65, pos1),
+          (position_set_x, pos1, 1150),
+          (position_set_y, pos1, 1150),
+          (overlay_set_size, reg65, pos1),
+          (position_set_x, pos1, 400),
+          (position_set_y, pos1, 300),
+          (overlay_set_area_size, reg65, pos1),
+          
+          (create_text_overlay, reg66, "@Faction Side:^^Campaign Difficulty*:^^Home Theater:^^Marshall:^^Enemies:^^", tf_left_align|tf_scrollable),
+          (position_set_x, pos1, 50),
+          (position_set_y, pos1, 15),
+          (overlay_set_position, reg66, pos1),
+          (position_set_x, pos1, 1200),
+          (position_set_y, pos1, 1200),
+          (overlay_set_size, reg66, pos1),
+          (position_set_x, pos1, 400),
+          (position_set_y, pos1, 300),
+          (overlay_set_area_size, reg66, pos1),
+
+          (create_text_overlay, reg68, "@Campaign Difficulty is based on starting faction strength, theater enemies,^ and faction troop tree & troop equipment.", tf_center_justify),
+          (position_set_x, pos1, 300),
+          (position_set_y, pos1, 5),
+          (overlay_set_position, reg68, pos1),
+          (position_set_x, pos1, 900),
+          (position_set_y, pos1, 900),
+          (overlay_set_size, reg68, pos1),
+          (position_set_x, pos1, 400),
+          (position_set_y, pos1, 300),
+          (overlay_set_area_size, reg68, pos1),
+          
+          (store_add, ":text_string_2", "str_gondor_extra_info", "$g_selected_page"),
+          (str_store_string, s2, ":text_string_2"),
+          (create_text_overlay, reg67, "@{s2}", tf_right_align|tf_scrollable),
+          (overlay_set_color, reg67, 0xFFFFFF),
+          (position_set_x, pos1, 55),
+          (position_set_y, pos1, 15),
+          (overlay_set_position, reg67, pos1),
+          (position_set_x, pos1, 1200),
+          (position_set_y, pos1, 1200),
+          (overlay_set_size, reg67, pos1),
+          (position_set_x, pos1, 400),
+          (position_set_y, pos1, 300),
+          (overlay_set_area_size, reg67, pos1),
+        (try_end),
+
+      ]),
+      
+      
+    (ti_on_presentation_event_state_change,
+      [
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+        
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_1"),
+          (store_sub, ":num_pages", npc_kingdoms_end, npc_kingdoms_begin),
+          (store_sub, "$g_selected_page", ":num_pages", ":value"),
+          (val_sub, "$g_selected_page", 1),
+          (start_presentation, "prsnt_faction_intro_text"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_2"),
+          (assign, "$g_selected_page", 0),
+          (presentation_set_duration, 0),
+          (jump_to_menu, "mnu_start_game_1"),
+        (try_end),
+      ]),
+  ]),
+
+
+
 ]
 
 from module_info import wb_compile_switch

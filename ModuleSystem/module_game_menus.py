@@ -114,6 +114,8 @@ game_menus = [
     [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
 	 ("spacer"    ,[],"_"  ,[]),
+	 ("faction_intros", [], "Learn about the different factions of Middle-Earth", [(start_presentation, "prsnt_faction_intro_text")]),
+	 ("spacer"    ,[],"_"  ,[]),
 	 ("go_bback"  ,[],"Go Back",[(change_screen_quit              ),]), 
 	]+concatenate_scripts([[
 	 ("quick"     ,[(eq, cheat_switch, 1),],"[dev: quick start Gondor]",[(call_script,"script_start_as_one","trp_gondor_commoner"),(jump_to_menu,"mnu_start_phase_2" ),]), 
@@ -3220,7 +3222,7 @@ game_menus = [
         (store_sub, "$gondor_ai_testing", 1, "$gondor_ai_testing"),(val_clamp, "$gondor_ai_testing", 0, 2)]),
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
-    ("test_sea_battle",[],"Test Sea Battle (Good)", [(jump_to_menu, "mnu_sea_battle_quest")]),
+    ("test_presentation",[],"Test Presentation", [(start_presentation, "prsnt_faction_intro_text")]),
     ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
   (assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news),]),
     ("what_region",[], "What Region am I in?", 

@@ -1,4 +1,4 @@
-1632
+1634
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -80,6 +80,9 @@ qstr_Rotation={reg0} Rotation={reg0}
 qstr_{s30} {s30}
 qstr_{s1} {s1}
 qstr_Close Close
+qstr_Faction_Side:^^Campa Faction_Side:^^Campaign_Difficulty*:^^Home_Theater:^^Marshall:^^Enemies:^^
+qstr_Campaign_Difficulty_ Campaign_Difficulty_is_based_on_starting_faction_strength,_theater_enemies,^_and_faction_troop_tree_&_troop_equipment.
+qstr_{s2} {s2}
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -435,7 +438,6 @@ qstr_The_last_time_you_he The_last_time_you_heard_about_{reg1?her:him},_{s1}
 qstr_The_{s50} The_{s50}
 qstr_{s50} {s50}
 qstr_{s50}_belongs_to_{s1 {s50}_belongs_to_{s1}_of_{s2}.^
-qstr_{s2} {s2}
 qstr_Current_garrison_con Current_garrison_consists_of_{reg5}_men.^Has_food_stock_for_{reg6}_days.
 qstr_Very_Poor Very_Poor
 qstr_Poor Poor
