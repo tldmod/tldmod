@@ -32,10 +32,10 @@ tracks = [
   
 
 #TLD battle music
-("TLD_Battle_Barding",   "Battle/TLD_Battle_Barding.mp3",   mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
-("TLD_Battle_Beorn",     "Battle/TLD_Battle_Beorn.mp3",     mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
-("TLD_Battle_Corsair",   "Battle/TLD_Battle_Corsair.mp3",   mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
-("TLD_Battle_Dunland",   "Battle/TLD_Battle_Dunland.mp3",   mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Barding",   "Battle/TLD_Battle_Barding.mp3",   mtf_module_track|mtf_sit_siege|mtf_culture_good, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Beorn",     "Battle/TLD_Battle_Beorn.mp3",     mtf_module_track|mtf_sit_siege|mtf_culture_good, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Corsair",   "Battle/TLD_Battle_Corsair.mp3",   mtf_module_track|mtf_sit_siege|mtf_culture_evil, mtf_sit_fight|mtf_sit_ambushed),
+("TLD_Battle_Dunland",   "Battle/TLD_Battle_Dunland.mp3",   mtf_module_track|mtf_sit_siege|mtf_culture_evil, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Dwarves",   "Battle/TLD_Battle_Dwarves.mp3",   mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Elves",     "Battle/TLD_Battle_Elves.mp3",     mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),
 ("TLD_Battle_Wood_Elves","Battle/TLD_Battle_WoodElves.mp3", mtf_module_track, mtf_sit_fight|mtf_sit_ambushed),

@@ -49,6 +49,24 @@ formAI_scripts = [
 	(store_script_param, ":rel_army_size", 2),
 	(store_script_param, ":battle_presence", 3),
 	(call_script, "script_battlegroup_get_size", ":team_no", grc_archers),
+
+	#Shit, Elves! Tactic - kham
+	(store_faction_of_party, ":ally_elf", "$g_ally_party"),
+	(store_faction_of_party, ":enemy_elf", "$g_enemy_party"),
+	(store_faction_of_party, ":player_elf", "p_main_party"),
+	(team_get_leader, ":elf_leader", ":team_no"),
+	(agent_get_troop_id, ":agent_troop", ":elf_leader"),
+	(store_troop_faction, ":team_is_elf", ":agent_troop"),
+	(assign, ":shit_elves", 0),
+	(try_begin),
+		(this_or_next|is_between, ":ally_elf", "fac_lorien", "fac_dale"),
+		(is_between, ":player_elf", "fac_lorien","fac_dale"),
+		(assign, ":shit_elves", 1),
+	(else_try),
+		(is_between, ":enemy_elf", "fac_lorien","fac_dale"),
+		(assign, ":shit_elves", 1),
+	(try_end),
+
 	(try_begin),
 		(gt, reg0, 0),
 		(call_script, "script_battlegroup_get_position", Archers_Pos, ":team_no", grc_archers),
@@ -110,11 +128,15 @@ formAI_scripts = [
 					(lt, ":decision_index", Hold_Point),	#probably coming from a defensive position (see below)
 					(gt, ":distance_to_enemy", AI_firing_distance),
 					(eq, "$FormAI_AI_no_defense", 0),	#player hasn't set disallow defense option?
+					(this_or_next|is_between, ":team_is_elf", "fac_lorien", "fac_dale"),
+					(eq, ":shit_elves", 0), #There are no elven teams
 					(assign, ":move_archers", 1),
 				(try_end),
 			(else_try),
 				(this_or_next|eq, "$FormAI_AI_no_defense", 0),	#player hasn't set disallow defense option OR?
 				(ge, ":decision_index", Hold_Point),	#not starting in a defensive position (see below)
+				(this_or_next|is_between, ":team_is_elf", "fac_lorien", "fac_dale"),
+				(eq, ":shit_elves", 0), #There are no elven teams
 				(call_script, "script_battlegroup_get_size", ":team_no", grc_infantry),
 				(try_begin),
 					(this_or_next|eq, reg0, 0),
@@ -148,6 +170,8 @@ formAI_scripts = [
 				(try_begin),
 					(lt, ":decision_index", Hold_Point),	#outnumbered?
 					(eq, "$FormAI_AI_no_defense", 0),	#player hasn't set disallow defense option?
+					(this_or_next|is_between, ":team_is_elf", "fac_lorien", "fac_dale"),
+					(eq, ":shit_elves", 0), #There are no elven teams
 					(lt, "$battle_phase", BP_Fight),
 					(store_div, ":distance_to_move", ":distance_to_enemy", 6),	#middle of rear third of battlefield
 					(assign, ":hill_search_radius", ":distance_to_move"),
