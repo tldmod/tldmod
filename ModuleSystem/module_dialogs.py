@@ -4414,7 +4414,19 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                 (assign, ":item", fac_reward_items_list[x][item_entry][1]),
                 (item_slot_eq, ":item", slot_item_given_as_reward, 0), # not already given
                 (assign, ":item_exists", 1),
-                (str_store_item_name, s20, ":item"),
+                (try_begin),
+                  (this_or_next|eq, ":item", "itm_orc_brew"),
+                  (eq, ":item", "itm_lembas"),
+                  (str_store_item_name, s31, ":item"),
+                  (str_store_string, s20, "@{s31} (Consumable. Can be rebought)"),
+                (else_try),
+                  (this_or_next|eq, ":item", "itm_warg_reward"),
+                  (eq, ":item", "itm_gondor_hunter"),
+                  (str_store_item_name, s31, ":item"),
+                  (str_store_string, s20, "@{s31} (Can be rebought)"),
+                (else_try),
+                  (str_store_item_name, s20, ":item"),
+                (try_end),
               (try_end),
                 ] for item_entry in range(len(fac_reward_items_list[x]))
             ])+[

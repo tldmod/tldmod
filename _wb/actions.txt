@@ -1236,8 +1236,8 @@
   1.7 warg_jump 0 20 805306373 2829396006 0 0 0  0.9 
  horse_cancel_ani 0 50331743  1
   0.25 anim_horse 600 601 1073741830 0 0 0 0  0 
- warg_leapattack 17410 33554506  1
-  1.2 wargLeapAttack 0 20 536870917 2829396006 0 0 0  0.9 
+ warg_leapattack 256 50331650  1
+  1 anim_horse 205 222 5 0 0 0 0 0.0 
  bear_slap_right 17410 50331722  1
   1.3 bear_slap_right 1 45 536870917 2829396006 0 0 0  0.9 
  bear_uppercut 17410 50331722  1

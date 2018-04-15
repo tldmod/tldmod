@@ -2291,9 +2291,13 @@ animations = [
 #	[1.0, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
 #  ],
 
- ["warg_leapattack", acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play,
-   [1.2, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
-  ],
+ #["warg_leapattack", acf_enforce_all|acf_align_with_ground|acf_displace_position, amf_priority_rear|amf_play,
+ #  [1.2, "wargLeapAttack", 0, 20, arf_blend_in_4|arf_use_walk_progress,pack4f(0.15,0.16,0.65,0.66), (0, 0, 0), 0.9]
+ # ],
+
+ ["warg_leapattack", acf_enforce_lowerbody, amf_priority_jump|amf_play|amf_client_prediction,
+   [1.0, "anim_horse", 205, 222,  arf_blend_in_4], #|arf_end_pos_0_25],
+ ],
 
 # Animal attack anims... (cppcoder, merlkir) - Fixed by Kham
 

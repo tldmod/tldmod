@@ -1,4 +1,4 @@
-1521
+1523
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1261,6 +1261,8 @@ qstr_{s31}{reg28?Those:That} {s31}{reg28?Those:That}_useful_{reg28?troops:troop}
 qstr_{s4}_^Oh_and_take_bac {s4}_^Oh,_and_take_back_those_soldiers_who_are_not_our_kin,_I_have_no_use_for_them.
 qstr_It_is_my_duty_to_hel It_is_my_duty_to_help_our_people.
 qstr_It_is_my_duty_to_help It_is_my_duty_to_help_our_allies.
+qstr_{s31}__Consumable._C {s31}_(Consumable._Can_be_rebought)
+qstr_{s31}__Can_be_reboug {s31}_(Can_be_rebought)
 qstr_I_wish_to_raze_an_en I_wish_to_raze_an_enemy_settlement_to_the_ground.
 qstr_I_wish_to_lead_our_m I_wish_to_lead_our_men_in_an_assault_on_an_enemy_settlement.
 qstr_More_snaga_who_will_ More_snaga_who_will_throw_themselves_at_the_enemy’s_walls?_Listen_close_and_I_might_let_you_try.

@@ -359,14 +359,14 @@ tld_animal_strikes = (
   (try_for_agents, ":agent"),
     (agent_is_alive, ":agent"),
     (agent_is_human, ":agent"),
-    (call_script, "script_count_enemy_agents_around_agent", ":agent", 300),
-    (gt, reg0, 0),
     (agent_get_troop_id, ":agent_trp", ":agent"),
     (eq|this_or_next, ":agent_trp", "trp_spider"),
     (eq|this_or_next, ":agent_trp", "trp_wolf"),
     (eq, ":agent_trp", "trp_bear"),
     (agent_get_horse, ":horse", ":agent"),
     (ge, ":horse", 0),
+    (call_script, "script_count_enemy_agents_around_agent", ":agent", 300),
+    (gt, reg0, 0),
     (store_random_in_range, ":rnd", 0, 100),
 
     #Kham - Let's increase the likelihood of special attacks for the big guys, as charge attacks are not enough
@@ -474,6 +474,111 @@ tld_animal_strikes = (
         (assign, ":agents_to_damage", 100),
       (try_end),
       #(display_message, "@DEBUG: Bear strikes!"),
+      (try_begin),
+        (get_player_agent_no, ":player"),
+        (eq, ":target", ":player"),
+        (display_message, "@Received {reg0} damage."),
+      (try_end),
+      (le, ":damaged_agents", ":agents_to_damage"), # Allows us to limit the number of agents an animal can strike
+      (set_show_messages, 0),
+      (store_agent_hit_points,":hp",":target",1),
+      (val_sub, ":hp", reg0),
+      (agent_set_hit_points, ":target", ":hp", 1),
+      (try_begin),
+        (le, ":hp", 0),
+        (agent_deliver_damage_to_agent, ":agent", ":target"),
+      (try_end),
+      (set_show_messages, 1),
+      (val_add, ":damaged_agents", 1),
+      (agent_set_animation, ":target", ":hit_anim"),
+    (try_end),
+  (try_end),
+  ])
+
+
+tld_warg_leap_attack = (
+  1, 0, 0, [], [
+  (set_fixed_point_multiplier, 100),
+  (try_for_agents, ":agent"),
+    (agent_is_alive, ":agent"),
+    (agent_is_human, ":agent"),
+    (agent_get_troop_id, ":agent_trp", ":agent"),
+    (is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
+    (agent_get_horse, ":warg", ":agent"),
+    (ge, ":warg", 0),
+    (call_script, "script_count_enemy_agents_around_agent", ":agent", 300),
+    (gt, reg0, 0),
+
+    (store_random_in_range, ":rnd", 0, 100),
+
+    (assign, ":chance", 55),
+
+    (lt, ":rnd", ":chance"), 
+
+    (assign, ":enemy_in_front", 0),
+
+    ] + ((is_a_wb_mt==1) and [
+    (agent_get_position, pos_belfry_begin, ":agent"),
+    (try_for_agents, ":target", pos_belfry_begin, 350),
+    ] or [
+    (try_for_agents, ":target"),
+    ]) + [
+
+      (neq, ":enemy_in_front", 1),
+      (neq, ":agent", ":target"), # Stop hitting yourself!
+      (neq, ":agent", ":warg"), # Stop hitting yourself!
+      (agent_get_position, pos1, ":agent"),
+      (agent_get_position, pos2, ":target"),
+      (get_distance_between_positions, ":dist", pos1, pos2),
+      (lt, ":dist", 300),
+      (neg|position_is_behind_position, pos2, pos1),
+      (agent_get_team, ":agent_team", ":agent"),
+      (agent_get_team, ":target_team", ":target"),
+      (teams_are_enemies, ":agent_team", ":target_team"),
+      (assign, ":enemy_in_front", 1),
+    (try_end),
+    (eq, ":enemy_in_front", 1),
+    (assign, ":anim", "anim_warg_leapattack"),
+
+    #Kham - let's give 'em some sounds when attacking
+    (try_begin),
+      (le, ":rnd", 25),
+      (assign, ":sound", "snd_wolf_strike"),
+    (else_try),
+      (assign, ":sound", "snd_warg_lone_woof"),
+    (try_end),
+
+    (try_begin),
+      (le, ":rnd", 25), #25% chance to make sound
+      (agent_play_sound, ":warg", ":sound"),
+    (try_end),
+
+    (agent_set_animation, ":warg", ":anim"),
+
+    (try_for_agents, ":target"),  
+      (neq, ":agent", ":target"), # Stop hitting yourself!
+      (neq, ":agent", ":warg"), # Stop hitting yourself!
+      (agent_is_alive, ":agent"),
+      (agent_is_human, ":agent"),
+      (agent_get_position, pos1, ":agent"),
+      (agent_get_position, pos2, ":target"),
+      (get_distance_between_positions, ":dist", pos1, pos2),
+      (lt, ":dist", 300),
+      (neg|position_is_behind_position, pos2, pos1),
+      (agent_get_team, ":agent_team", ":agent"),
+      (agent_get_team, ":target_team", ":target"),
+      (teams_are_enemies, ":agent_team", ":target_team"), 
+      (assign, ":damaged_agents", 0),
+      (assign, ":agents_to_damage", 100),   
+      (store_random_in_range, reg0, 10, 16),
+      (try_begin),
+        (le, ":rnd", 30), #30% chance for a fly back
+        (assign, ":hit_anim", "anim_strike_fly_back"),
+      (else_try),
+        (assign, ":hit_anim", "anim_strike_chest_front"),
+      (try_end),
+      (assign, ":agents_to_damage", 1),
+      #(display_message, "@DEBUG: Warg Jump!"),
       (try_begin),
         (get_player_agent_no, ":player"),
         (eq, ":target", ":player"),
@@ -604,6 +709,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   tld_animals_init,
   tld_animal_strikes,
   tld_remove_riderless_animals,
+  tld_warg_leap_attack,
   reset_fog,
 ] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals
 
