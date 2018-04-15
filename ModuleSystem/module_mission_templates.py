@@ -372,7 +372,7 @@ tld_animal_strikes = (
     #Kham - Let's increase the likelihood of special attacks for the big guys, as charge attacks are not enough
     (try_begin),
       (eq, ":agent_trp", "trp_wolf"),
-      (assign, ":chance", 35),
+      (assign, ":chance", 45),
     (else_try),
       (assign, ":chance", 55),
     (try_end),
@@ -402,7 +402,7 @@ tld_animal_strikes = (
     (else_try),
       (eq, ":agent_trp", "trp_wolf"),
       (try_begin),
-        (le, ":rnd", 25),
+        (le, ":rnd", 10),
         (assign, ":anim", "anim_warg_leapattack"),
       (else_try),
         (assign, ":anim", "anim_wolf_snap"),
@@ -464,8 +464,14 @@ tld_animal_strikes = (
         (assign, ":agents_to_damage", 1),
       (else_try),
         (eq, ":agent_trp", "trp_wolf"),
-        (store_random_in_range, reg0, 3, 11), #Kham - reduced from 10, 15, cause there are a lot of wolves
-        (assign, ":hit_anim", "anim_strike_legs_front"),
+        (try_begin),
+          (eq, ":anim", "anim_warg_leapattack"),
+          (store_random_in_range, reg0, 10, 15), #Kham - reduced from 10, 15, cause there are a lot of wolves
+          (assign, ":hit_anim", "anim_strike_fly_back"),
+        (else_try),
+          (store_random_in_range, reg0, 3, 11), #Kham - reduced from 10, 15, cause there are a lot of wolves
+          (assign, ":hit_anim", "anim_strike_legs_front"),
+        (try_end),
         (assign, ":agents_to_damage", 1),
       (else_try),
         (eq, ":agent_trp", "trp_bear"),
