@@ -3310,4 +3310,9 @@ These Northmen only fight on foot and their infantry is decent, if not very well
 
 ("intro_strings_extra_end", "Intro EXTRA END"),
 
+("gundabad_intro", "You have come from the far north, from the lands of long-lost Angmar, after receiving tidings of the war to come. For years beyond count you and your folk have broken many dwarf shields with your axes and spears, crushed many broken bodies of men and elves below the claws of your fierce wargs, skinned the hides of the bear-people to wear as furs. The great halls of Gundabad in the Misty Mountains are now yours once again, as they were in the time of Bolg and Azog.^^\
+Many of you have perished over the years, somemany of them slain in these very halls and tunnels - but many still remain. Great sport you have had with the greedy little diggers and their friends, in the past - and greater sport you will have now, when you march upon them and take everything for yourselves!^^\
+Vengeance for Bolg, for Azog, for the Great Goblin - vengeance for the goblins of Gundabad!"),
+
+
 ]

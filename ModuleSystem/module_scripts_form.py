@@ -51,7 +51,10 @@ formAI_scripts = [
 	(call_script, "script_battlegroup_get_size", ":team_no", grc_archers),
 
 	#Shit, Elves! Tactic - kham
-	(store_faction_of_party, ":ally_elf", "$g_ally_party"),
+	(try_begin),
+		(gt, "$g_ally_party", 0),
+		(store_faction_of_party, ":ally_elf", "$g_ally_party"),
+	(try_end),
 	(store_faction_of_party, ":enemy_elf", "$g_enemy_party"),
 	(store_faction_of_party, ":player_elf", "p_main_party"),
 	(team_get_leader, ":elf_leader", ":team_no"),
@@ -59,7 +62,10 @@ formAI_scripts = [
 	(store_troop_faction, ":team_is_elf", ":agent_troop"),
 	(assign, ":shit_elves", 0),
 	(try_begin),
-		(this_or_next|is_between, ":ally_elf", "fac_lorien", "fac_dale"),
+		(gt, ":ally_elf", 0),
+		(is_between, ":ally_elf", "fac_lorien", "fac_dale"),
+		(assign, ":shit_elves", 1),
+	(else_try),
 		(is_between, ":player_elf", "fac_lorien","fac_dale"),
 		(assign, ":shit_elves", 1),
 	(else_try),

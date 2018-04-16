@@ -127,7 +127,7 @@ game_menus = [
 ( "start_phase_2",mnf_disable_all_keys,
     "^^^^^______________Middle Earth. A shadow is growing in the East, ^______________and dark things come forth that have long been hidden. ^______________The free peoples prepare for war, the like of which has not been seen for an age. ^______________Men, Elves, Dwarves and Orcs; all will play their part. ^^______________What part, however, remains to be seen... ",
     "none",
-   [#(set_background_mesh, "mesh_ui_default_menu_window"),
+   [(set_background_mesh, "mesh_ui_default_menu_window"),
 	(assign, "$tld_game_options",0),
 	(try_begin), (eq,"$start_phase_initialized",0),(assign,"$start_phase_initialized",1), # do this only once
 		(set_show_messages,0),

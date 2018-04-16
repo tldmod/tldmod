@@ -23874,7 +23874,15 @@ command_cursor_scripts = [
 #input: faction_id
 ("get_intro_text",[
     (store_script_param, ":faction_id", 1),
-    (store_add, ":intro_string", ":faction_id", 2207), 
+    (store_add, ":intro_string", ":faction_id", 2207),
+    (try_begin),
+    	(this_or_next|eq, ":faction_id", "fac_beorn"),
+    	(eq, ":faction_id", "fac_dunland"),
+    	(val_sub, ":intro_string", 1), 
+    (else_try),
+    	(eq, ":faction_id", "fac_gundabad"),
+    	(assign, ":intro_string", "str_gundabad_intro"),
+    (try_end),
     (str_store_string, s5, ":intro_string"),
 
     (store_add, ":intro_string_2", ":faction_id", 2225),
