@@ -148,10 +148,10 @@ scn_dol_amroth_center dol_amroth_center 256 none none 0 0 200 200 -100 0x0000000
   0 
   0 
  outer_terrain_seaside_1 
-scn_edhellond_center edhellond_center 256 none none 0 0 200 200 -100 0x00000004300798b2000380e3000037960000573900003f48 
+scn_edhellond_center edhellond_center 256 none none 0 0 200 200 -100 0x00000000300798b2000380e3000037960000573900003f48 
   0 
   0 
- outer_terrain_seaside_1 
+ New_outer_terrain_seaside_north_1 
 scn_lossarnach_center lossarnach_center 256 none none 0 0 200 200 -100 0x00000007300005000006ada4000051a90000386b00003791 
   0 
   0 
@@ -684,10 +684,10 @@ scn_dol_amroth_siege dol_amroth_siege 256 none none 0 0 200 200 -100 0x000000052
   0 
   0 
  outer_terrain_seaside_1 
-scn_edhellond_siege edhellond_siege 256 none none 0 0 200 200 -100 0x00000004300798b2000380e3000037960000573900003f48 
+scn_edhellond_siege edhellond_siege 256 none none 0 0 200 200 -100 0x00000000300798b2000380e3000037960000573900003f48 
   0 
   0 
- outer_terrain_seaside_1 
+ New_outer_terrain_seaside_north_1 
 scn_lossarnach_siege lossarnach_siege 256 none none 0 0 200 200 -100 0x00000007300005000006ada4000051a90000386b00003791 
   0 
   0 
