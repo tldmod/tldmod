@@ -12315,6 +12315,9 @@ scripts = [
         (val_div, "$g_strength_contribution_of_player","$g_starting_strength_friends"),
       (try_end),
 
+ 
+
+
 #      (try_begin),
 #        (gt, "$g_ally_party", 0),
 #        (call_script, "script_party_copy", "p_ally_party_backup", "p_collective_ally"),
@@ -23971,6 +23974,138 @@ command_cursor_scripts = [
 	#(assign, reg63, ":num_followers"),
 	#(display_message, "@Orig - {reg65}; New - {reg64} - Set- {reg63}", color_good_news),
 ]),
+
+
+#script_calculate_formula_a 
+#input: none
+#output: $g_formula_a, used in script_calculate_rank_gain_new
+
+("calculate_formula_a", [
+	
+	#Kham - Called in encounter game menus (e.g simple encounter)
+
+	#Calculate A: Sum of All Enemy Party Types / 10.
+	(assign, "$g_ally_victory_value_point", 0),
+	(assign, ":nf_enemy_party_type_sum", 0),
+
+	#Primary Encountered Party
+	(party_get_slot, ":primary_party_type", "$g_enemy_party", slot_party_type),
+	(party_get_slot, ":primary_party_victory_value_point", "$g_enemy_party", slot_party_victory_value),
+	(try_begin),
+		(eq, ":primary_party_type", spt_bandit),
+		(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
+	(else_try),
+		(val_add, ":nf_enemy_party_type_sum", ":primary_party_victory_value_point"), #Bandits only get 10 points
+	(try_end),
+
+	#Everyone else
+	(party_get_num_attached_parties, ":nf_num_attached_parties",  "$g_encountered_party"),
+	(try_for_range, ":nf_attached_party_rank", 0, ":nf_num_attached_parties"),
+		(party_get_attached_party_with_rank, ":nf_attached_party", "$g_encountered_party", ":nf_attached_party_rank"),
+		(neq, ":nf_attached_party", "p_main_party"),
+		(neq, ":nf_attached_party", "$g_enemy_party"), #don't count the primary party just in case
+
+		#Debug
+		(str_store_party_name, s13, ":nf_attached_party"), 
+		(display_message, "@DEBUG:{s13} attached to encountered party", color_good_news),
+
+		(store_faction_of_party, ":nf_faction", ":nf_attached_party"),
+		(store_relation, ":nf_rel", ":nf_faction", "$players_kingdom"),
+		(party_get_slot, ":nf_party_type", ":nf_attached_party", slot_party_type),
+		(party_get_slot, ":nf_party_victory_value_point", ":nf_attached_party", slot_party_victory_value),
+		(try_begin),
+			(gt, ":nf_rel", 0), #ally
+			(val_add, "$g_ally_victory_value_point", ":nf_party_victory_value_point"),
+		(try_end),
+		(try_begin),
+			(eq, ":nf_party_type", spt_bandit),
+			(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
+		(try_end),
+		(lt, ":nf_rel", 0), #Enemy
+		(val_add, ":nf_enemy_party_type_sum", ":nf_party_victory_value_point"), #Add up the victory values here
+	(try_end),
+	
+	#Debug
+	(assign, reg32, ":nf_num_attached_parties"),
+	(display_message, "@{reg32} parties attached to encountered party", color_good_news),
+	
+	(assign, reg66, ":nf_enemy_party_type_sum"), #Debug for A
+
+	(val_div, ":nf_enemy_party_type_sum", 10), #divide by 10, as per formula
+	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
+
+	(assign, reg67, ":nf_enemy_party_type_sum"), #Debug for A
+	
+	#END Calculate A
+]),
+
+#script_calculate_rank_gain_new
+#Input: none
+#Output: rank gain
+
+("calculate_rank_gain_new", [
+	
+	#Calculate A: Sum of All Enemy Party Types / 10 - Found in encounter menus: $g_formula_a
+	
+	(assign, ":enemy_party_type_sum", "$g_formula_a"),
+
+	#End Calculate A
+
+	#Calculate B: Enemy losses , sum of all killed troops' strength values
+
+	(store_sub, ":enemy_party_destroyed_strength", "$g_starting_strength_enemy_party", "$after_battle_enemy_strength"),
+
+	(assign, reg68, ":enemy_party_destroyed_strength"), #Debug for B
+	(val_div, ":enemy_party_destroyed_strength", 200), 
+	(assign, reg69, ":enemy_party_destroyed_strength"), #Debug for B w/ divider
+
+	#Calculate C: Own Losses, sum of all killed troops' strength values
+
+	(store_sub, ":player_party_losses_strength", "$g_starting_strength_main_party", "$after_battle_player_strength"),
+
+	(assign, reg70, ":player_party_losses_strength"), #Debug for C
+	(val_sub, ":player_party_losses_strength", 100),
+	(val_div, ":player_party_losses_strength", 200), 
+	(assign, reg64, ":player_party_losses_strength"), #Debug for C w/ subtraction and division
+
+
+	#Calculate D: Player share in the battle - Player party strength [player] in relation to allied parties' strength [allies] 
+
+	(store_add, ":player_with_allies", "$g_starting_strength_main_party", "$g_starting_strength_friends"),
+	(store_div, ":player_share_of_battle", "$g_starting_strength_main_party", ":player_with_allies"),
+	(store_div, ":multiplier", 12, 10), 
+	(val_mul, ":player_share_of_battle", ":multiplier"),
+	(val_min, ":player_share_of_battle", 1),
+	(assign, reg61, ":player_share_of_battle"), #Debug for D
+
+	#Calculate E: Helping allies
+	(store_div, ":helping_bonus", "$g_ally_victory_value_point", 20), 
+	(store_add, ":helping_allies_sum", 1, ":helping_bonus"),
+	(assign, reg63, ":helping_allies_sum"), 
+
+	#Sum of AB-C
+
+	(store_add, ":formula_abc", ":enemy_party_type_sum", ":enemy_party_destroyed_strength"), #A+B
+	(val_sub, ":formula_abc", ":player_party_losses_strength"), #(A+B) + C
+	(val_max, ":formula_abc", 1), 
+
+	#Sum of DE
+	(store_add, ":formula_de", ":player_share_of_battle", ":helping_allies_sum"),
+
+	#Formula (A+B-C) * (D+E)
+
+	(store_mul, ":rank_gain", ":formula_abc", ":formula_de"),
+	(assign, reg62, ":rank_gain"),
+
+	#Debug:
+	(display_message, "@Pre-Division: A:{reg66} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
+	(display_message, "@Formula: A:{reg67} + B:{reg69} + C:{reg64} // D: {reg61} + E: {reg63}", color_bad_news),
+	(display_message, "@Total: {reg62}", color_good_news),
+
+	(assign, "$new_rank_formula_calculated", 1),
+
+]),
+
 
 ]
 

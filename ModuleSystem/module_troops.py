@@ -1210,7 +1210,7 @@ troops = [
 ["heavy_swordsman_of_rohan","Heavy_Swordsman_of_Rohan","Heavy_Swordsmen_of_Rohan",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohan_light_greaves,itm_rohan_armor_m,itm_rohan_armor_n,itm_rohan_armor_o,itm_rohan_inf_helmet_b,itm_rohan_2h_sword,],
       attr_tier_5,wp_tier_5,knows_common|knows_athletics_3|knows_shield_2|knows_power_strike_4|knows_ironflesh_2,rohan_face_middle_1,rohan_face_old_2],
-["warden_of_methuseld","Warden_of_Methuseld","Wardens_of_Methuseld",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
+["warden_of_methuseld","Warden_of_Meduseld","Wardens_of_Meduseld",tf_rohan| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_rohan,
    [itm_rohirrim_war_greaves,itm_rohan_armor_p,itm_rohan_armor_q,itm_rohan_armor_r,itm_rohan_inf_helmet_b,itm_rohan_sword_c,itm_rohan_shield_g,],
       attr_tier_6,wp_tier_6,knows_common|knows_athletics_5|knows_shield_2|knows_power_strike_6|knows_ironflesh_6,rohan_face_old_1,rohan_face_older_2],
 ["skirmisher_of_rohan","Skirmisher_of_Rohan","Skirmishers_of_Rohan",tf_rohan| tfg_ranged| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_rohan,

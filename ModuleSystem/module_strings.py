@@ -3231,60 +3231,60 @@ As you walk through a wooded vale, a sudden small rustling makes you stop. You h
 
 ("intro_strings_2_end", "Intro 2 END"),
 
-("gondor_faction_intro","^Gondor, the “land of stone”, is inhabited by descendants of the ancient Númenoreans. Proud men standing as the last line of defence against the darkness of the Enemy, ruled over by steward Denethor.^^\
-Gondor’s military is composed of forces coming from all the different fiefdoms. You get the standard army with solid and well armoured troops overall (infantry, archers and cavalry), Dol Amroth famous for their heavy cavalry, green archers and spearmen from Pinnath Gelin, bowmen from the Blackroot Vale, axemen of Lossarnach, heavy marines from Pelargir or hardened clansmen of Lamedon."),
+("gondor_faction_intro","^The South Kingdom of Gondor, “land of stone” in Sindarin, is inhabited by descendants of the ancient Númenoreans. Under the rule of Steward Denethor, these proud men stand as the first and perhaps last line of defence against the Enemy.^^\
+Gondor’s military consists of forces coming from all the different fiefdoms. You get the standard army with solid and well-armoured troops overall: Dol Amroth’s heavy cavalry, green-clad archers and spearmen from Pinnath Gelin, bowmen from the Blackroot Vale, axemen of Lossarnach, heavy marines from Pelargir or hardened clansmen of Lamedon."),
 
-("dwarf_faction_intro","^Dwarves are short and tough, very strong and very well equipped. They come from the Lonely Mountain and the Iron Hills.^^\
-Their army consists of an infantry line, a scout/archer line and an Iron Hills line (the heaviest hard-hitting infantry)."),
+("dwarf_faction_intro","^Dwarves, also known as Durin’s Folk, are short, tough and doughty warriors. They are renowned for the craftsmanship of their weaponry and armour, though they say with regret that they cannot match the lost arts of their ancestors. In these latter days, they come from the Lonely Mountain and the Iron Hills.^^\
+Their army consists of an infantry line, a scout/archer line and an Iron Hills line (their heaviest hard-hitting infantry)."),
 
-("rohan_faction_intro","^Rohirrim are the horse lords of the Mark of Rohan led by king Théoden.^^\
-Rohirrim have very good cavalry - from heavy lancers to agile horse archers. They have an infantry line as well, branching into shieldwall forming troops and heavy swordsmen bearing longswords."),
+("rohan_faction_intro","^Rohirrim are the horse lords of the Mark of Rohan, led by king Théoden.^^\
+Rohirrim have very good cavalry, ranging from heavy lancers to agile horse archers. They have an infantry line as well, branching into shieldwall-forming troops and heavy swordsmen bearing longswords."),
 
-("mordor_faction_intro","^Mordor represents Sauron’s own forces bred in the darkness of the Black Land.^^\
-Armies of Mordor consist of orcs, uruks and evil men (Black Númenoreans). Uruks of Mordor are the better equipped and stronger breed of orcs, but have no archery line. Most regular orcs are infantry, skirmishers or archers, but there are also orc warg-riders. Black Númenoreans are a rare, but very dangerous infantry and cavalry. Sauron has also bred fierce battle trolls, but they’re extremely rare."),
+("mordor_faction_intro","^Mordor represents Sauron’s own forces bred in the darkness of the Black Land.^^\
+Armies of Mordor consist of orcs, Uruks and evil men (Black Númenoreans). Uruks of Mordor are a better-equipped and stronger breed of orcs, but have no archery line. Most regular orcs are infantry, skirmishers or archers, but there are also orc warg-riders. Black Númenoreans are comparatively rare, but very dangerous as infantry or cavalry. Sauron has also bred fierce battle trolls, but they’re extremely hard to obtain."),
 
-("isengard_faction_intro","^Isengard is ruled by Saruman, the betrayer wizard. He created his own version of orcs: the uruk-hai.^^\
-The forces of Isengard are quite well (if crudely) equipped. The orcs are comparable to any other orcs, but the uruk-hai are truly deadly killing machines - wielding pikes, halberds, heavy axes and nasty cleavers. They also have largest bows among any orcs."),
+("isengard_faction_intro","^Isengard is ruled by Saruman, the traitor wizard. He created his own version of orcs: the Uruk-hai.^^\
+The forces of Isengard are quite well-equipped, though the weapons and armour may seem crude. The orcs are comparable to any other orcs, but the Uruk-hai are truly deadly killing machines wielding pikes, halberds, heavy axes and nasty cleavers. They also have the largest and most powerful bows among any of the orcish races."),
 
-("lorien_faction_intro","^Elves of Lothlórien are a powerful group of Nandor and Sindar living in the Lórien woods, led by Lord Celeborn and Lady Galadriel.^^\
-Their forces consist of an infantry line and a scout line. All their troops are very skilled, well equipped and overall deadly. A rain of arrows from under the forests cover, followed by a devastating infantry attack, is their main tactic."),
+("lorien_faction_intro","^The Elves of Lothlórien, known as the tree-dwelling “Galadhrim”, are a powerful group of Nandor and Sindar living in the Lórien woods, led by Lord Celeborn and Lady Galadriel.^^\
+Their forces consist of an infantry line and a scout line, with the occasional incorporation of an elite unit of Noldorin horse archers. All their troops are highly skilled, equipped with the finest arms and armour of Elven make, and overall extremely deadly in combat. A rain of arrows from under the forest cover, followed by a devastating infantry charge, is their main tactic."),
 
-("imladris_faction_intro","^Elves of Imladris (Rivendell) are Sindar and Noldor led by lord Elrond and his two sons. Much of the West of old remains in their household, powerful elven lords and ancient artifacts. Under their banner, the Dúnedain of the North march as well - tall dark haired rangers and nobles of mixed Dúnedain blood clad in ancient maille.^^\
-Very well equipped and highly skilled infantry, archers, and also cavalry."),
+("imladris_faction_intro","^The Elves of Imladris (Rivendell) are Sindar and Noldor led by Lord Elrond and his two sons. They are custodians of the ancient lore of the west, as well as powerful and ancient artifacts dating back to the First Age. Under their banner, the Dúnedain of the North march as well – the remnants of the broken Northern kingdoms of Men are tall dark-haired rangers and nobles, clad in sturdy leathers or ancient maille.^^\
+The soldiers of Imladris are among the most highly-skilled in Middle-Earth, and are extremely well-equipped. Their armies are capable of considerable tactical flexibility."),
 
-("woodelf_faction_intro", "^The Woodelves are Sindar living in Mirkwood, led by king Thranduil.^^\
-They too have an infantry and a scout line, but focused more on the archers than the elves of Lórien. Their infantry specializes on spears."),
+("woodelf_faction_intro", "^The Silvan Elves, called “wood-elves” in ancient times, live today in Mirkwood, led by King Thranduil.^^\
+The Elves of Mirkwood have a competent infantry line that features both spears and swords. Their scouts and archers are the mainstay of their armies, more so than for their cousins of Lórien. Their armour is light but affords a great deal of protection."),
 
-("dale_faction_intro","^Dale is a city rebuilt by Northmen who share the ancestry with the Rohirrim, joined by the survivors from the lake city of Esgaroth. (after it was burnt down by Smaug).^^\
-Men of Dale provide tough infantry focused on polearms, famous archer troops topped by the legendary Barding bowmen and a merchant guard line acting as reasonably good cavalry."),
+("dale_faction_intro","^Dale is a city rebuilt by Northmen who share ancestry with the Rohirrim, joined by the survivors from the lake city of Esgaroth (after it was burnt down by Smaug).^^\
+Men of Dale provide tough infantry focused on polearms, famous archer troops including the legendary Barding bowmen, and a merchant guard line acting as reasonably good cavalry."),
 
-("harad_faction_intro", "^Haradrim come from the deserts and rain forests of the far South - dark skinned with an affection for gold.^^\
-Haradrim have average infantry (skirmishers/archers and spearmen/swordsmen) from Great Harad, a cavalry line (both heavy cavalry and horse archers) from Harondor and a Far Harad line of tribal warriors."),
+("harad_faction_intro", "^The Haradrim, the “hosts of the South” in Sindarin, come from the deserts and rainforests of the far South. They have a fondness for wearing bright colours and heavy gold ornamentation in warfare.^^\
+Haradrim have average but competent infantry (skirmishers/archers and spearmen/swordsmen) from Great Harad, a cavalry line (incorporating both heavy cavalry and horse archers) from Harondor and a Far Harad line of tribal warriors."),
 
-("rhun_faction_intro","^Men of Rhûn are tribal easterlings from around the sea of Rhûn.^^\
-The bulk of their army is cavalry - horse archers and lancers, both very lightly equipped, the top tier cavalry is much heavier or larger mounts. Their infantrymen are also quite lightly armoured and wield large axes and swords."),
+("rhun_faction_intro","^Men of Rhûn are tribal Easterlings hailing from around the sea of Rhûn, far to the east.^^\
+The bulk of their army is cavalry - horse archers and lancers, both very lightly-equipped. Their top-tier cavalrymen ride much larger and heavier mounts, with more barding. Their infantrymen are also quite lightly-armoured and wield large axes and swords. In the open field, a cavalry host of Rhûn can be a fearsome force to face."),
 
-("khand_faction_intro","^Variags of Khand are fierce easterling raiders wearing terrifying battlemasks.^^\
-They rely on fast light infantry (skirmishers and blademasters) and heavy axemen, while their cavalry line contains both lightly armoured agile skirmishers and heavy cataphracts."),
+("khand_faction_intro","^The Variags of Khand are fierce Easterling raiders who wear terrifying battlemasks into battle.^^\
+They rely on fast light infantry (skirmishers and blademasters) and heavy axemen, while their cavalry line contains both light agile skirmishers and heavy kataphracts. The light infantry fling devastating volleys of throwing spears while screening the advance of the main host. The most savage among them charge into battle wearing little armour, attacking with great strength and ferocity."),
 
-("umbar_faction_intro", "^Corsairs of Umbar are southern enemies of Gondor, descendants of the Black Númenoreans.^^\
-Corsairs employ both lightly armoured skirmishers and heavier swordmasters as well as iron longbowmen."),
+("umbar_faction_intro", "^The Corsairs of Umbar are southern enemies of Gondor, descendants of the Black Númenoreans who conduct numerous raids on Gondor’s coastlines.^^\
+Corsairs employ both lightly-armoured skirmishers and heavier swordmasters as well as skilled longbowmen. Being a mainly seafaring force, they favour armour that sacrifices toughness for mobility."),
 
-("moria_faction_intro", "^Orcs of Moria occupy the halls of Khazad Dúm.^^\
-Orcs like all others, but their equipment is better, because they use metal scraps and bits of looted dwarven armour."),
+("moria_faction_intro", "^Orcs of Moria occupy the halls of Khazad Dúm, once a mighty Dwarven kingdom.^^\
+Like regular orcs, their forces consist of a mix of infantry, archers, skirmishers and warg-riders, but generally they have better equipment than other orcs, because they use metal scraps found in Moria. Some lucky few among them also have access to bits of looted dwarven armour and weapons. Orc Chieftains of Moria have proved themselves stronger and fiercer than their kin, and they are fearsome in battle."),
 
-("guldur_faction_intro","^Dol Guldur is an old fortress of Sauron in Mirkwood - orcs now launch attacks at the forest elves from there.^^\
-The Dol Guldur troops are just orcs, quite similar to the Mordor types. Overall typical orc infantry, archers and also the warg riders."),
+("guldur_faction_intro","^Dol Guldur is an old fortress of Sauron in Mirkwood – indeed, it is the reason “Greenwood the Great” is now known by this darker name.^^\
+Here, a contingent loyal to Mordor trains and prepares a great host, sending out frequent raiding parties against the Elves as well as the parties of Men who pass through the woods. The troops of Dol Guldur are mostly orcs, with a lineup very similar to Mordor’s (infantry, skirmishers, archers, warg riders), but with somewhat less variety."),
 
-("gundabad_faction_intro", "^Gundabad used to be a dwarven sacred place, later it became a massive orc city in the mountain. It was abandoned for a while, but now the orcs returned in large numbers.^^\
-The Gundabad orcs are very similar to all other orcs, but their nature is more savage. Their equipment is primitive and their fighting style barbaric."),
+("gundabad_faction_intro", "^Gundabad was a place sacred to the Dwarves, but in these days it has become a massive Orc stronghold in the northern mountains.^^\
+The Gundabad orcs, though more savage than their fellows from other places, fight much like any other orcs, with a similar army lineup (infantry, archers, skirmishers, warg riders). Their equipment is primitive and their fighting style barbaric. Their warg riders are unrivalled in toughness and ferocity. Some among the orcs of Gundabad can even whip themselves into a battle-frenzy."),
 
-("dunland_faction_intro","^Dunlanders are wild men, enemies of the Rohirrim who drove them from their homeland.^^\
-They’re very poorly equipped, almost no real armour and sharpened wooden pikes and antler axes. Their chieftains wear old maille, crudel helmets and rare swords. They also have a cavalry line, but it’s also quite weak."),
+("dunland_faction_intro","^The Dunlendings are the “wild men of Dunland”, enemies of the Rohirrim who drove them from their homeland.^^\
+Dunland is barren and poor. The Dunlendings wear very little real armour – mostly furs and cured leather, with some metal signifying status. For weaponry, they wield long pikes and antler axes, with rare swords serving as emblems of prestige. Their horses are thin and weak, certainly no match for the steeds of Rohan, though occasionally the Dunlendings will ride them into battle as skirmishers. In battle, the pikemen advance en masse, presenting a crude but formidable wall of sharp polearms. Some Dunlendings have also cultivated affinity with creatures of the wild, and may unleash packs of savage wolves against their foes."),
 
-("beorn_faction_intro", "^Woodmen were those Northmen  who dwelt in the forests of Middle-earth, and especially Mirkwood in the Third and Fourth ages.^^\
-Beornings were a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. It is possible that the Beornings became known as a people through being descendants of Beorn. During the War of the Ring, Grimbeorn the Old, son of Beorn, was the leader of the Beornings.^^\
-These Northmen only fight on foot and their infantry is decent, if not very well equipped. Various scout troops provide ranged support and the rest are mostly lightly armoured axemen."),
+("beorn_faction_intro", "^Beornings, the descendants of Beorn, are a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. They dwell mostly in the forests, though they keep the Old Ford clear for trade, exacting a toll on merchant caravans for their service.^^\
+As woodsmen, they wield stout sticks and sharp axes, but wear little in the way of armour. Heavier Beorning infantry fight with shields as well. Beorning foresters are skilled bowmen and provide a valuable archer line."),
+
 
 ("intro_faction_intro_strings_end", "faction intro END"),
 

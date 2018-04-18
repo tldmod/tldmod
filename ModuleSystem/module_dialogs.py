@@ -4014,6 +4014,246 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
    # "I have an offer for you.", "lord_talk_preoffer",[]],
 
 
+##Kham - Lord Healers Start
+
+[anyone|plyr,"lord_talk", [
+  (this_or_next|eq, "$g_talk_troop", "trp_imladris_lord"), #Elrond
+  (this_or_next|eq, "$g_talk_troop", "trp_knight_1_4"), #Orthalion
+  (this_or_next|eq, "$g_talk_troop", "trp_knight_3_7"), #Orophin
+  (this_or_next|eq, "$g_talk_troop", "trp_knight_2_2"), #Berúthiel
+  (             eq, "$g_talk_troop", "trp_knight_2_7"), #Na'man
+
+  (eq, "$tld_option_injuries", 1),
+  ], 
+    "I have heard that you were a great healer. Is this true, and can you help me?", "lord_healer_wound_ask",[]],
+
+[anyone,"lord_healer_wound_ask", [
+      (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
+      (lt, ":rank", 4),
+      (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
+      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 3), #to s24
+      (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+      (str_store_string, s2, "@(You need to be {s24} or higher)."),
+      (try_begin),
+        (neq, ":side", faction_side_good),
+        (str_store_string, s1, "@You are not worthy of my skills. Prove yourself first, and rise above {s25}. {s2}"),
+      (else_try),
+        (str_store_string, s1, "@I am sorry. I cannot attend to you as a {s25} as there are more pressing issues. {s2}"), 
+      (try_end), ], 
+          "{s1}", "lord_pretalk",[]],
+
+[anyone,"lord_healer_wound_ask", [
+  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+  (try_begin),
+    (neq, ":side", faction_side_good),
+    (str_store_string, s1, "@Yes, I am, and I can help you for a price."),
+  (else_try),
+    (str_store_string, s1, "@You heard right, and yes, I can aid you."),
+  (try_end)], 
+    "{s1}", "lord_healer_wound_ask_check",[]],
+
+[anyone|plyr,"lord_healer_wound_ask_check", [
+
+  (troop_get_slot, ":wound_mask", "trp_player", slot_troop_wound_mask),
+  (assign, ":wounds", 0), 
+
+  # Check If there are any wounds (player) before continuing with dialogue
+  (try_begin),
+    (neq, ":wound_mask", 0),
+    
+    (try_begin),(store_and,":x",":wound_mask",wound_head ),(neq,":x",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":x",":wound_mask",wound_chest),(neq,":x",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":x",":wound_mask",wound_arm  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":x",":wound_mask",wound_leg  ),(neq,":x",0),(val_add,":wounds",1),(try_end),
+    (troop_set_slot, "trp_player", slot_troop_needs_healing, 1), #Set the slot
+    #(display_message, "@DEBUG: Player is wounded"),
+
+  (else_try),
+  # Check If any companions are wounded before continuing with dialogue
+  (try_for_range, ":npc", companions_begin, companions_end),
+    (main_party_has_troop, ":npc"),
+    (troop_get_slot, ":wound_mask_npc", ":npc", slot_troop_wound_mask),
+    (neq, ":wound_mask_npc", 0),
+    #(assign, ":wounds", 0), 
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_head ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_chest),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_arm  ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_leg  ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (troop_set_slot, ":npc", slot_troop_needs_healing, 1), #Set the slot
+    (str_store_troop_name, s3, ":npc"),
+    #(display_message, "@DEBUG:{s3} is wounded"),
+  (try_end),
+  (try_end),
+
+  #Do we continue?
+  (gt, ":wounds",0),
+  ], 
+    "My men and I have wounds that require more than just time to heal. Can you heal our wounds?", "lord_healer_wound_heal",[]],
+
+
+
+
+[anyone|plyr,"lord_healer_wound_ask_check", [
+  (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+  (assign, ":yes",0),
+  (try_for_range, ":stack", 0, ":num_stacks"),
+    (party_stack_get_num_wounded, ":wounded", "p_main_party", ":stack"),
+    (ge, ":wounded", 1),
+    (assign, ":yes",1),
+  (try_end),
+
+  (eq, ":yes", 1)], 
+    "My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?", "lord_healer_injured_ask",[]],
+
+[anyone|plyr,"lord_healer_wound_ask_check", [], 
+    "Not right now.", "lord_pretalk",[]],
+
+
+[anyone,"lord_healer_wound_heal", [
+  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+  (str_store_string, s2, "@(Costs 1000 Resource, 5 Influence)"),
+  (try_begin),
+    (neq, ":side", faction_side_good),
+    (str_store_string, s1, "@I can see that. I'll have my men stand guard while I deal with you. It will take some time. {s2}"),
+  (else_try),
+    (str_store_string, s1, "@Yes, I see that. I can do tend to you yes, but it will take me away from important tasks. {s2}"),
+  (try_end)], 
+    "{s1}", "lord_healers_wound_check",[]],
+
+[anyone,"lord_healer_injured_ask", [
+  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+  (str_store_string, s2, "@(Costs 1500 Resource, 10 Influence)"),
+  (try_begin),
+    (neq, ":side", faction_side_good),
+    (str_store_string, s1, "@I'll have my personal healers deal with you. They are the best. Tell me when you want them here. {s2}"),
+  (else_try),
+    (str_store_string, s1, "@I'll have my personal healers tend to your men. They are the best at what they do. Let me know when you need them. {s2}"),
+  (try_end)], 
+    "{s1}", "lord_healers_injured_check",[]],
+
+[anyone|plyr,"healers_injured_check", [
+  (call_script,"script_update_respoint"),
+  (faction_get_slot, ":rps", "$g_talk_troop_faction", slot_faction_respoint),
+  (faction_get_slot, ":inf", "$g_talk_troop_faction", slot_faction_influence),
+  (ge, ":inf", 10),
+  (ge,":rps", 1000)], 
+    "Yes, attend to us.", "lord_healers_injured_heal",[]],
+
+
+[anyone|plyr,"lord_healers_wound_check", [
+  (call_script,"script_update_respoint"),
+  (faction_get_slot, ":rps", "$g_talk_troop_faction", slot_faction_respoint),
+  (faction_get_slot, ":inf", "$g_talk_troop_faction", slot_faction_influence),
+  (ge, ":inf", 5),
+  (ge,":rps", 500)], 
+    "Yes, attend to us.", "lord_healers_wound_heal",[]],
+
+
+[anyone|plyr,"lord_healers_wound_check", [], 
+    "Not right now.", "lord_pretalk",[]],
+
+[anyone|plyr,"lord_healers_injured_check", [], 
+    "Not right now.", "lord_pretalk",[]],
+
+[anyone,"lord_healers_injured_heal", [
+  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+  (try_begin),
+    (neq, ":side", faction_side_good),
+    (str_store_string, s12, "@I'll have them here shortly."),
+  (else_try),
+    (str_store_string, s12, "@Let us begin. My healers will take care of you and your men."),
+  (try_end)], 
+    "{s12}", "lord_healers_wound_done",[
+      (heal_party, "p_main_party")]],
+
+[anyone,"lord_healers_wound_heal", [
+  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+  (try_begin),
+    (neq, ":side", faction_side_good),
+    (str_store_string, s12, "@Alright! This is going to hurt... a lot."),
+  (else_try),
+    (str_store_string, s12, "@Let us begin. It may take some time. Just relax and leave the rest to me."),
+  (try_end)], 
+    "{s12}", "lord_healers_wound_done",[
+      
+      (call_script, "script_add_faction_rps", "$g_talk_troop_faction", -500),
+      (call_script, "script_spend_influence_of", 5, "$g_talk_troop_faction"),
+
+      ## Get Faction Side
+      (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+
+      (try_begin), #Check if wounded - Start with Evil
+        (neq, ":side", faction_side_good),
+
+        #If Player is Wounded & Evil Side - Heal then hurt him.
+        (try_begin),
+          (troop_slot_eq, "trp_player", slot_troop_needs_healing, 1),
+          (call_script, "script_healing_routine_full", "trp_player"),
+          (troop_set_slot, "trp_player", slot_troop_needs_healing, 0), #Set the Slot
+          (store_troop_health, ":plyr_hp", "trp_player"),
+          (val_sub, ":plyr_hp", 20),
+          (try_begin),
+            (le, ":plyr_hp", 0),
+            (troop_set_health, "trp_player", 5),
+          (else_try),
+            (troop_set_health, "trp_player", ":plyr_hp"),
+          (try_end),
+        (try_end),
+
+        #If any companion is wounded & Evil Side - heal then hurt them
+        (try_begin),
+          (try_for_range, ":npc", companions_begin, companions_end),
+            (troop_slot_eq, ":npc", slot_troop_needs_healing, 1),
+            (call_script, "script_healing_routine_full", ":npc"),
+            (troop_set_slot, ":npc", slot_troop_needs_healing, 0), #Set the Slot
+            (store_troop_health, ":npc_hp", ":npc"),
+            (val_sub, ":npc_hp", 20),
+            (try_begin),
+              (le, ":npc_hp", 0),
+              (troop_set_health, ":npc", 5),
+            (else_try),
+              (troop_set_health, ":npc", ":npc_hp"),
+            (try_end),
+          (try_end),
+        (try_end),
+
+      #If Player is Wounded & Good Side - Heal then Rest
+      (else_try),
+        (try_begin),
+          (troop_slot_eq, "trp_player", slot_troop_needs_healing, 1),
+          (call_script, "script_healing_routine_full", "trp_player"),
+          (troop_set_slot, "trp_player", slot_troop_needs_healing, 0), #Set the slot
+        (try_end),
+        
+        #If any companion is wounded & Good Side - heal then rest
+        (try_begin),
+          (try_for_range, ":npc", companions_begin, companions_end),
+            (troop_slot_eq, ":npc", slot_troop_needs_healing, 1),
+            (call_script, "script_healing_routine_full", ":npc"),
+            (troop_set_slot, ":npc", slot_troop_needs_healing, 0), #Set the slot
+          (try_end),
+        (try_end),
+      (try_end),
+      ]],
+
+[anyone,"lord_healers_wound_done", [
+  (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+  (try_begin),
+    (neq, ":side", faction_side_good),
+    (str_store_string, s12, "@Impressive... You didn't flinch much. Go back to your post."),
+  (else_try),
+    (str_store_string, s12, "@Rest, the wounds have been taken care of."),
+  (try_end)], 
+    "{s12}", "close_window",[
+      (call_script, "script_stand_back"),
+      (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
+      (try_begin),
+        (eq, ":side", faction_side_good),
+        (change_screen_map),
+        (rest_for_hours, 4,15,0),
+      (try_end)]],
+
+### Kham Lord Healers END
 
 
 ###Kham Quest -- Ring Hunters --- Either Dwarf_Lord or imladris_lord #####

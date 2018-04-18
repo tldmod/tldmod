@@ -722,5 +722,10 @@ ally_reinforcement_stage
 small_scene_used
 FormAI_AI_no_defense
 g_selected_page
+after_battle_enemy_strength
+after_battle_player_strength
+new_rank_formula_calculated
+g_ally_victory_value_point
+g_formula_a
 $g_last_archery_point_earned
 $tutorial_num_total_dummies_destroyed

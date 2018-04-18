@@ -4502,6 +4502,13 @@ game_menus = [
 		(else_try),
 			(assign, reg21, 1),
 		(try_end),
+
+	#Calculate Formula A here - Kham
+	(try_begin), 
+		(eq, "$new_rank_formula_calculated", 0),
+		(call_script, "script_calculate_formula_a"),
+	(try_end),
+	#Calculate Formula A END
     ],
 	
     [
@@ -5138,6 +5145,15 @@ game_menus = [
           (assign, "$thanked_by_ally_leader", 1),
           
 #TLD begin - do this only once
+		  
+		  #Get the Strength of the party AFTER the battle
+		  (call_script, "script_party_calculate_strength", "p_collective_enemy", 0),
+		  (assign, "$after_battle_enemy_strength", reg0),
+		  (call_script, "script_party_calculate_strength", "p_main_party", 0),
+		  (assign, "$after_battle_player_strength", reg0),
+
+		  (call_script, "script_calculate_rank_gain_new"), 
+
 		  # select what friendly faction was most interested in this victory (mtarini)
 		  (assign, "$impressed_faction", "$players_kingdom"), # by default, it is player starting fatcion
 		  (store_faction_of_party, ":defeated_faction", "$g_enemy_party"),
@@ -5160,7 +5176,8 @@ game_menus = [
 				(display_log_message, "@{s3} witnesses your victory against {s4}.", color_good_news),
 			  (try_end), 
               (store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
-#(display_message, "@Debug: giving rank points for impressed faction."),		  
+              (assign, reg33, ":rank_increase"),
+(display_message, "@Debug: giving {reg33} rank points for impressed faction.", color_good_news),		  
               (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
 		  (else_try),
 		  	  (call_script, "script_party_get_dominant_faction", "p_main_party"), #Kham - Check dominant faction in player party and increase the rank from that faction
@@ -5486,6 +5503,7 @@ game_menus = [
 
             (leave_encounter),
             (change_screen_return),
+            (assign, "$new_rank_formula_calculated", 0),
           (else_try),
             (jump_to_menu, "$g_next_menu"),
           (try_end),
@@ -5870,6 +5888,12 @@ game_menus = [
           (change_screen_return),
         (try_end),
         
+	#Calculate Formula A here - Kham
+	(try_begin), 
+		(eq, "$new_rank_formula_calculated", 0),
+		(call_script, "script_calculate_formula_a"),
+	(try_end),
+	#Calculate Formula A END
       ],
     [ ("join_attack",[
 #          (neq, "$encountered_party_hostile", 0),
@@ -6106,6 +6130,13 @@ game_menus = [
           #(leave_encounter),
           #(change_screen_return),
         (try_end),
+
+	#Calculate Formula A here - Kham
+	(try_begin), 
+		(eq, "$new_rank_formula_calculated", 0),
+		(call_script, "script_calculate_formula_a"),
+	(try_end),
+	#Calculate Formula A END
         ],
     [
       ("talk_to_siege_commander",[]," Request a meeting with the commander.",[
@@ -6480,6 +6511,14 @@ game_menus = [
 	         (else_try),
 	           (assign, reg6, 0),
 	         (try_end),
+
+ 	#Calculate Formula A here - Kham
+	(try_begin), 
+		(eq, "$new_rank_formula_calculated", 0),
+		(call_script, "script_calculate_formula_a"),
+	(try_end),
+	#Calculate Formula A END
+
 	    ],
 	    "Attack the {reg6?town:castle}...",
 	    [
@@ -7322,6 +7361,13 @@ game_menus = [
         (try_end),
         (assign, "$g_siege_first_encounter", 0),
         (assign, "$new_encounter", 0),
+
+	#Calculate Formula A here - Kham
+	(try_begin), 
+		(eq, "$new_rank_formula_calculated", 0),
+		(call_script, "script_calculate_formula_a"),
+	(try_end),
+	#Calculate Formula A END
         ],
     [
       ("siege_defender_join_battle",
@@ -7961,6 +8007,14 @@ game_menus = [
 	         (else_try),
 	           (assign, reg6, 0),
 	         (try_end),
+
+	#Calculate Formula A here - Kham
+	(try_begin), 
+		(eq, "$new_rank_formula_calculated", 0),
+		(call_script, "script_calculate_formula_a"),
+	(try_end),
+	#Calculate Formula A END
+	
 	    ],
 	    "Attack the {reg6?town:castle}...",
 	    [

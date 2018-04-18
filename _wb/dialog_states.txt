@@ -200,6 +200,15 @@ find_lost_spears_permission_yes
 tell_dorwinion_sack
 tell_dorwinion_sack_2
 tell_dorwinion_sack_3
+lord_healer_wound_ask
+lord_healer_wound_ask_check
+lord_healer_wound_heal
+lord_healer_injured_ask
+lord_healers_wound_check
+lord_healers_injured_check
+lord_healers_injured_heal
+lord_healers_wound_heal
+lord_healers_wound_done
 ring_hunters_start
 ring_hunters_check
 ring_hunters_1
