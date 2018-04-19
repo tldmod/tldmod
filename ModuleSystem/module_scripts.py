@@ -8883,13 +8883,14 @@ scripts = [
       (assign, ":party_template", 0),
       
       #MV/Native: different reinforcements for towns and heroes
+	  #InVain: Changed towns from 60/35/5 to 30/60/10, to allow stronger and more archer-heavy garrisons
       (try_begin),
         (eq, ":party_type", spt_town),
         (try_begin),
-          (lt, ":rand", 60),
+          (lt, ":rand", 30),
           (store_add, ":party_template", ":party_template_a", ":offset"), # base tier 1 and 2 troops
         (else_try),
-          (lt, ":rand", 95),
+          (lt, ":rand", 90),
           (store_add, ":party_template", ":party_template_b", ":offset"), # tier 3 archers mixed with other tier 3 troops and tier 2 archers
         (else_try),
           (store_add, ":party_template", ":party_template_c", ":offset"), # tier 4 troop mix
