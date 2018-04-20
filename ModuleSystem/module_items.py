@@ -1235,10 +1235,10 @@ items =[
 ["dwarf_helm_p","Dwarf_King_Helm",[("DwarfHelmKingCrown",0)],itp_type_head_armor|0,0,2000,weight(2)|head_armor(50)|difficulty(0),imodbits_elf_armor],
 ["dwarf_miner","Dwarf_Light_Helm",[("DwarfHelmMinerCap",0),("dwarven_inf_helmet_t1",imodbit_thick),("DwarfHelmMiner",imodbit_reinforced),("DwarfHelmMiner",imodbit_hardened)],itp_type_head_armor|itp_shop,0,500,weight(2)|head_armor(14)|difficulty(0),imodbits_elf_cloth],
 ["free_dwarf_helm_r","Dwarf_Miner_Cap",[("DwarfHelmMinerCap",0)],itp_type_head_armor|itp_shop,0,120,weight(1)|head_armor(14)|difficulty(0),imodbits_elf_armor],
-["dwarf_helm_round","Dwarf_Round_Helm",[("DwarfHelmRoundChain",0),("DwarfHelmRoundMask",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
+["dwarf_helm_round","Dwarf_Round_Helm",[("DwarfHelmRoundChain",0),("DwarfHelmRoundMask",imodbits_elf_armor)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["free_dwarf_helm_v","Dwarf_Chain_Sallet",[("DwarfHelmSalletChain",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 #["dwarf_helm_w", "Dwarf Helm",[("DwarfHelmSalletLeather",0)],    itp_shop|itp_type_head_armor   ,0, 479 , weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
-["dwarf_helm_sallet","Dwarf_Sallet",[("DwarfHelmSalletChain",0),("DwarfHelmSalletSargeant",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(40)|difficulty(0),imodbits_elf_armor],
+["dwarf_helm_sallet","Dwarf_Sallet",[("DwarfHelmSalletChain",0),("DwarfHelmSalletSargeant",imodbits_elf_armor)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(40)|difficulty(0),imodbits_elf_armor],
 #########ARMOR##########
 ["dwarf_armor_a","Erebor_Mail",[("dwarf_tunicmail",0),("dwarf_tunicmailarcher",imod_reinforced),("dwarf_tunicmailarcher",imod_lordly)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1008,weight(16)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],
 ["leather_dwarf_armor","Dwarven_Pad_over_Mail",[("dwarf_padmail",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1108,weight(16)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(0),imodbits_elf_armor,],

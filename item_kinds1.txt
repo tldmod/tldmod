@@ -2449,13 +2449,13 @@ itemsfile version 2
  itm_free_dwarf_helm_r Dwarf_Miner_Cap Dwarf_Miner_Cap 1  DwarfHelmMinerCap 0  65548 0 120 704643072 1 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_helm_round Dwarf_Round_Helm Dwarf_Round_Helm 2  DwarfHelmRoundChain 0  DwarfHelmRoundMask 536870912  65548 0 1200 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
+ itm_dwarf_helm_round Dwarf_Round_Helm Dwarf_Round_Helm 2  DwarfHelmRoundChain 0  DwarfHelmRoundMask 704643072  65548 0 1200 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_free_dwarf_helm_v Dwarf_Chain_Sallet Dwarf_Chain_Sallet 1  DwarfHelmSalletChain 0  65548 0 1000 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_helm_sallet Dwarf_Sallet Dwarf_Sallet 2  DwarfHelmSalletChain 0  DwarfHelmSalletSargeant 536870912  65548 0 1200 704643072 2 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_dwarf_helm_sallet Dwarf_Sallet Dwarf_Sallet 2  DwarfHelmSalletChain 0  DwarfHelmSalletSargeant 704643072  65548 0 1200 704643072 2 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_armor_a Erebor_Mail Erebor_Mail 3  dwarf_tunicmail 0  dwarf_tunicmailarcher 27  dwarf_tunicmailarcher 29  16842765 0 1008 704643072 16 100 0 28 13 0 0 0 0 0 0 0 0
