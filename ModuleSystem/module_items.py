@@ -76,17 +76,17 @@ imodbits_warg = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stub
 imodbits_good   = 0#imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_reinforced
 imodbits_bad    = 0#imodbit_rusty | imodbit_chipped | imodbit_tattered | imodbit_ragged | imodbit_cracked | imodbit_bent
 #
-imodbits_cloth  = imodbit_tattered | imodbit_ragged | imodbit_sturdy | imodbit_thick | imodbit_hardened
+imodbits_cloth  = imodbit_smelling | imodbit_meek | imodbit_tattered | imodbit_ragged | imodbit_sturdy | imodbit_thick | imodbit_hardened
 imodbits_orc_cloth  = imodbit_tattered | imodbit_ragged | imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_smelling
-imodbits_elf_cloth  = imodbit_thick | imodbit_hardened | imodbit_reinforced
+imodbits_elf_cloth  = imodbit_thick | imodbit_hardened | imodbit_reinforced 
 #
 imodbits_armor  = imodbit_rusty | imodbit_battered | imodbit_crude | imodbit_thick | imodbit_reinforced | imodbit_lordly
 imodbits_armor_bad  = imodbit_rusty | imodbit_battered | imodbit_crude
 imodbits_armor_ok  = imodbit_plain | imodbit_thick
 imodbits_armor_good  = imodbit_reinforced | imodbit_lordly
 imodbits_orc_armor  = imodbit_rusty | imodbit_battered | imodbit_crude | imodbit_thick | imodbit_reinforced | imodbit_smelling | imodbit_meek 
-imodbits_orc_bad  = imodbit_rusty | imodbit_battered | imodbit_crude | imodbit_cracked
-imodbits_orc_good  = imodbit_thick | imodbit_reinforced
+imodbits_orc_bad  = imodbit_tattered | imodbit_ragged | imodbit_rusty | imodbit_battered | imodbit_crude | imodbit_cracked
+imodbits_orc_good  = imodbit_thick | imodbit_reinforced | imodbit_hardened
 imodbits_orc_ok =  imodbit_smelling | imodbit_meek | imodbit_plain
 
 
@@ -709,17 +709,18 @@ items =[
 ["m_orc_heavy_c","Mordor_Orc_Heavy_Armor",[("orc_mordor_h",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1001,weight(18)|head_armor(0)|body_armor(18)|leg_armor(8)|difficulty(0),imodbits_orc_armor,],
 ["m_orc_heavy_d","Mordor_Orc_Heavy_Armor",[("orc_mordor_i",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1501,weight(22)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_orc_armor,],
 ["m_orc_heavy_e","Mordor_Orc_Heavy_Armor",[("orc_mordor_j",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2001,weight(22)|head_armor(0)|body_armor(20)|leg_armor(10)|difficulty(0),imodbits_orc_armor,],
-["m_uruk_light_a","Uruk_Harness",[("uruk_mordor_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,402,weight(10)|head_armor(0)|body_armor(9)|leg_armor(3)|difficulty(0),imodbits_orc_cloth,],
-["m_uruk_light_b","Uruk_Thick_Harness",[("uruk_mordor_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,502,weight(12)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),imodbits_orc_cloth,],
-["m_uruk_heavy_c","Uruk_Leather_Armor",[("uruk_mordor_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,802,weight(15)|head_armor(0)|body_armor(15)|leg_armor(6)|difficulty(0),imodbits_orc_cloth,],
-["m_uruk_heavy_d","Uruk_Segmented_Armor",[("uruk_mordor_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,602,weight(15)|head_armor(0)|body_armor(12)|leg_armor(10)|difficulty(0),imodbits_orc_cloth,],
-["m_uruk_heavy_e","Uruk_Mail",[("uruk_mordor_e",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1502,weight(22)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0),imodbits_orc_armor,],
-["m_uruk_heavy_f","Uruk_Mail",[("uruk_mordor_f",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(22)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0),imodbits_orc_armor,],
-["m_uruk_heavy_g","Uruk_Mail",[("uruk_mordor_g",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(22)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0),imodbits_orc_armor,],
-["m_uruk_heavy_h","Uruk_Scale",[("uruk_mordor_h",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(21)|head_armor(0)|body_armor(22)|leg_armor(10)|difficulty(0),imodbits_orc_armor,],
-["m_uruk_heavy_i","Uruk_Thick_Scale",[("uruk_mordor_i",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(24)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
-["m_uruk_heavy_j","Uruk_Heavy_Armor",[("uruk_mordor_j",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(26)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
-["m_uruk_heavy_k","Uruk_Guard_Armor",[("uruk_mordor_k",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(28)|head_armor(0)|body_armor(26)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
+["m_uruk_light_a","Uruk_Harness",[("uruk_mordor_harness_c",imodbits_orc_ok),("uruk_mordor_harness_c",imodbits_orc_bad),("uruk_mordor_harness_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,402,weight(10)|head_armor(0)|body_armor(9)|leg_armor(3)|difficulty(0),imodbits_orc_cloth,],
+["m_uruk_light_b","Uruk_Leather_Armor",[("uruk_mordor_light_leather_b",imodbits_orc_ok),("uruk_mordor_light_leather_a",imodbits_orc_bad),("uruk_mordor_light_leather_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,502,weight(12)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),imodbits_orc_cloth,],
+["m_uruk_heavy_c","Uruk_Light_Mail",[("uruk_mordor_light_mail_b",imodbits_orc_ok),("uruk_mordor_light_mail_a",imodbits_orc_bad),("uruk_mordor_light_mail_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,802,weight(15)|head_armor(0)|body_armor(15)|leg_armor(6)|difficulty(0),imodbits_orc_cloth,],
+["m_uruk_heavy_d","Uruk_Heavy_Leather",[("uruk_mordor_heavy_leather_b",imodbits_orc_ok),("uruk_mordor_heavy_leather_a",imodbits_orc_bad),("uruk_mordor_heavy_leather_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,602,weight(15)|head_armor(0)|body_armor(12)|leg_armor(10)|difficulty(0),imodbits_orc_cloth,],
+["m_uruk_heavy_e","Uruk_Heavy_Mail",[("uruk_mordor_heavy_mail_b",imodbits_orc_ok),("uruk_mordor_heavy_mail_a",imodbits_orc_bad),("uruk_mordor_heavy_mail_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1502,weight(22)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0),imodbits_orc_armor,],
+["m_uruk_heavy_f","Uruk_Light_Scale",[("uruk_mordor_light_scale_b",imodbits_orc_ok),("uruk_mordor_light_scale_a",imodbits_orc_bad),("uruk_mordor_light_scale_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(22)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0),imodbits_orc_armor,],
+["m_uruk_heavy_g","Uruk_Heavy_Scale",[("uruk_mordor_heavy_scale_b",imodbits_orc_ok),("uruk_mordor_heavy_scale_a",imodbits_orc_bad),("uruk_mordor_heavy_scale_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(22)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0),imodbits_orc_armor,],
+["m_uruk_heavy_h","Uruk_Platemail",[("uruk_mordor_platemail_b",imodbits_orc_ok),("uruk_mordor_platemail_a",imodbits_orc_bad),("uruk_mordor_platemail_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(21)|head_armor(0)|body_armor(22)|leg_armor(10)|difficulty(0),imodbits_orc_armor,],
+["m_uruk_heavy_i","Lugburz_Platemail",[("uruk_mordor_segmented_b",imodbits_orc_ok),("uruk_mordor_segmented_a",imodbits_orc_bad),("uruk_mordor_segmented_c",imodbits_orc_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(24)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
+#next two free, Mai 2018
+["m_uruk_heavy_j","Uruk_Heavy_Armor",[("uruk_mordor_platemail_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(26)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
+["m_uruk_heavy_k","Uruk_Guard_Armor",[("uruk_mordor_segmented_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(28)|head_armor(0)|body_armor(26)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
 ["m_cap_armor","Mordor_Captain_Armor",[("mordor_captain_armor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,4000,weight(30)|head_armor(0)|body_armor(42)|leg_armor(18)|difficulty(0),imodbits_elf_armor,],
 ["black_num_armor","Black_Numenorean_Armor",[("black_numenor_armor",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,4000,weight(30)|head_armor(0)|body_armor(42)|leg_armor(18)|difficulty(0),imodbits_elf_armor,],
 ["m_armor_a","Mordor_Armor",[("mordor_armor_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(15)|head_armor(0)|body_armor(30)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
@@ -1064,7 +1065,7 @@ items =[
 ["rhun_greataxe","Rhun_Great_Axe",[("rhun_greataxe",0)],itp_type_two_handed_wpn|itp_shop|itp_primary|itp_two_handed|itp_cant_use_on_horseback|itp_bonus_against_shield|itp_wooden_parry,itc_nodachi|itcf_carry_axe_back,300,weight(5)|difficulty(0)|spd_rtng(89)|weapon_length(115)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["rhun_battleaxe","Rhun_Battle_Axe",[("rhun_battle_axe",0)],itp_type_two_handed_wpn|itp_shop|itp_primary|itp_two_handed|itp_cant_use_on_horseback|itp_bonus_against_shield|itp_wooden_parry,itc_nodachi|itcf_carry_axe_back,300,weight(4)|difficulty(0)|spd_rtng(86)|weapon_length(108)|swing_damage(43,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["rhun_falchion","Savage_Falchion",[("rhun_falchion",0)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_scimitar|itcf_carry_sword_left_hip,200,weight(2.5)|difficulty(0)|spd_rtng(96)|weapon_length(77)|swing_damage(30,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
-["rhun_glaive","Rhun_Glaive",[("rhun_glaive",0)],itp_type_two_handed_wpn|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback|itp_wooden_parry,itc_cutting_spear|itcf_carry_axe_back,400,weight(4.5)|difficulty(0)|spd_rtng(83)|weapon_length(156)|swing_damage(38,cut)|thrust_damage(21,pierce),imodbits_weapon_bad],
+["rhun_glaive","Rhun_Glaive",[("rhun_glaive",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_cant_use_on_horseback|itp_wooden_parry,itc_cutting_spear|itcf_carry_axe_back,400,weight(4.5)|difficulty(0)|spd_rtng(83)|weapon_length(156)|swing_damage(38,cut)|thrust_damage(21,pierce),imodbits_weapon_bad],
 #["rhun_bill",        "Rhun Bill",[("rhun_bill"         ,0)],itp_type_polearm|itp_shop|itp_spear|itp_primary|itp_two_handed|itp_wooden_parry, itc_staff|itcf_carry_spear,                            352 , weight(4.5)|difficulty(0)|spd_rtng(83) | weapon_length(166)|swing_damage(38 , cut) | thrust_damage(21 ,  pierce),imodbits_polearm ],
 #["rhun_knife",       "Rhun Knife",[("rhun_knife"        ,0)],itp_type_one_handed_wpn|itp_shop|itp_primary|itp_secondary|itp_no_parry, itc_dagger|itcf_carry_dagger_front_left, 4 , weight(0.5)|difficulty(0)|spd_rtng(110) | weapon_length(40)|swing_damage(21 , cut) | thrust_damage(13 ,  pierce),imodbits_sword ],
 ["rhun_greatfalchion","Savage_Great_Falchion",[("rhun_greatfalchion",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop,itc_greatsword|itcf_carry_sword_back,524,weight(3)|difficulty(0)|spd_rtng(92)|weapon_length(102)|swing_damage(42,cut)|thrust_damage(31,pierce),imodbits_weapon_bad],
