@@ -380,7 +380,13 @@ tld_animal_strikes = (
     (lt, ":rnd", ":chance"),  #Kham - changed this to the above
 
     (assign, ":enemy_in_front", 0),
+    
+    ] + ((is_a_wb_mt==1) and [
+    (agent_get_position, pos_belfry_begin, ":agent"),
+    (try_for_agents, ":target", pos_belfry_begin, 350),
+    ] or [
     (try_for_agents, ":target"),
+    ]) + [
       (neq, ":enemy_in_front", 1),
       (neq, ":agent", ":target"), # Stop hitting yourself!
       (neq, ":agent", ":horse"), # Stop hitting yourself!
@@ -437,7 +443,12 @@ tld_animal_strikes = (
 
     (agent_set_animation, ":horse", ":anim"),
 
-    (try_for_agents, ":target"),  
+    ] + ((is_a_wb_mt==1) and [
+    (agent_get_position, pos_belfry_begin, ":agent"),
+    (try_for_agents, ":target", pos_belfry_begin, 350),
+    ] or [
+    (try_for_agents, ":target"),
+    ]) + [
       (neq, ":agent", ":target"), # Stop hitting yourself!
       (neq, ":agent", ":horse"), # Stop hitting yourself!
       (agent_is_alive, ":agent"),
@@ -529,7 +540,6 @@ tld_warg_leap_attack = (
     ] or [
     (try_for_agents, ":target"),
     ]) + [
-
       (neq, ":enemy_in_front", 1),
       (neq, ":agent", ":target"), # Stop hitting yourself!
       (neq, ":agent", ":warg"), # Stop hitting yourself!
@@ -561,7 +571,12 @@ tld_warg_leap_attack = (
 
     (agent_set_animation, ":warg", ":anim"),
 
-    (try_for_agents, ":target"),  
+    ] + ((is_a_wb_mt==1) and [
+    (agent_get_position, pos_belfry_begin, ":agent"),
+    (try_for_agents, ":target", pos_belfry_begin, 350),
+    ] or [
+    (try_for_agents, ":target"),
+    ]) + [
       (neq, ":agent", ":target"), # Stop hitting yourself!
       (neq, ":agent", ":warg"), # Stop hitting yourself!
       (agent_is_alive, ":agent"),
@@ -579,6 +594,8 @@ tld_warg_leap_attack = (
       (store_random_in_range, reg0, 10, 16),
       (try_begin),
         (le, ":rnd", 30), #30% chance for a fly back
+        (agent_get_horse, ":target_horse", ":target"),
+        (lt, ":target_horse", 0), #No flyback if riding a horse
         (assign, ":hit_anim", "anim_strike_fly_back"),
       (else_try),
         (assign, ":hit_anim", "anim_strike_chest_front"),

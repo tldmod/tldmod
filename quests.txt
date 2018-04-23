@@ -1,5 +1,5 @@
 questsfile version 1
-65
+66
 qst_deliver_message Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_deliver_message_to_enemy_lord Deliver_Message_to_{s13} 2 {s9}_asked_you_to_take_a_message_to_{s13}_of_{s15}._{s13}_was_at_{s4}_when_you_were_given_this_quest. 
 qst_raise_troops Raise_{reg1}_{s14} 2 {s9}_asked_you_to_raise_{reg1}_{s14}_and_bring_them_to_{him/her}. 
@@ -64,4 +64,5 @@ qst_blank_quest_18 Placeholder 0 {!}Placeholder
 qst_blank_quest_19 Placeholder 0 {!}Placeholder 
 qst_blank_quest_20 Placeholder 0 {!}Placeholder 
 qst_blank_quest_21 Placeholder 0 {!}Placeholder 
+qst_guardian_party_quest Isengard's_Last_Stand 0 {!}Placeholder 
 qst_quests_end Quests_End 0 . 

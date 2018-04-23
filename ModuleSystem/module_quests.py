@@ -429,6 +429,10 @@ quests = [
   # ),
 # ### TLD end traits
 
+("guardian_party_quest", "Isengard's Last Stand", 0,
+  "{!}Placeholder"
+),
+
   ("quests_end", "Quests End", 0, "."),
 ]
 

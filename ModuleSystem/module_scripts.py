@@ -11287,6 +11287,7 @@ scripts = [
         #(team_get_leader, ":ai_leader", ":team_no"),
         (call_script, "script_team_get_nontroll_leader", ":team_no"),
         (assign, ":ai_leader", reg0),
+        (gt, ":ai_leader", 0), #Fix - Kham
         (agent_set_speed_limit, ":ai_leader", 9),
         (call_script, "script_team_get_average_position_of_enemies", ":team_no"),
         (copy_position, pos60, pos0),
@@ -11326,7 +11327,9 @@ scripts = [
         (ge, ":mission_time", 300),
         (assign, ":battle_tactic", 0),
         (team_give_order, ":team_no", grc_everyone, mordr_charge),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":ai_leader", reg0),
+        (gt, ":ai_leader", 0), #Fix - Kham
         (agent_set_speed_limit, ":ai_leader", 60),
       (try_end),
       (assign, reg0, ":battle_tactic"),
@@ -21762,6 +21765,7 @@ command_cursor_scripts = [
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     (neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, ":lord_to_follow"),
+    (party_set_ai_initiative, ":party", 10),
 
     (assign, ":OK", 1),    
   (try_end),
@@ -24072,10 +24076,10 @@ command_cursor_scripts = [
 
 	#Calculate D: Player share in the battle - Player party strength [player] in relation to allied parties' strength [allies] 
 
+	(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 120),
 	(store_add, ":player_with_allies", "$g_starting_strength_main_party", "$g_starting_strength_friends"),
-	(store_div, ":player_share_of_battle", "$g_starting_strength_main_party", ":player_with_allies"),
-	(store_div, ":multiplier", 12, 10), 
-	(val_mul, ":player_share_of_battle", ":multiplier"),
+	(val_div, ":player_with_allies", 100),
+	(store_div, ":player_share_of_battle", ":player_with_multiplier", ":player_with_allies"),
 	(val_min, ":player_share_of_battle", 1),
 	(assign, reg61, ":player_share_of_battle"), #Debug for D
 
@@ -24087,26 +24091,171 @@ command_cursor_scripts = [
 	#Sum of AB-C
 
 	(store_add, ":formula_abc", ":enemy_party_type_sum", ":enemy_party_destroyed_strength"), #A+B
-	(val_sub, ":formula_abc", ":player_party_losses_strength"), #(A+B) + C
+	(val_sub, ":formula_abc", ":player_party_losses_strength"), #(A+B) - C
 	(val_max, ":formula_abc", 1), 
 
-	#Sum of DE
-	(store_add, ":formula_de", ":player_share_of_battle", ":helping_allies_sum"),
+	#Multiplier with Division: [(A+B-C)*D] / 100
+	
+	(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
+	(val_div, ":formula_abcd", 100),
 
-	#Formula (A+B-C) * (D+E)
+	#Complete Formula [(A+B-C)*D] / 100 + E
 
-	(store_mul, ":rank_gain", ":formula_abc", ":formula_de"),
+	(store_add, ":rank_gain", ":formula_abcd", ":helping_allies_sum"),
 	(assign, reg62, ":rank_gain"),
 
 	#Debug:
-	(display_message, "@Pre-Division: A:{reg66} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
-	(display_message, "@Formula: A:{reg67} + B:{reg69} + C:{reg64} // D: {reg61} + E: {reg63}", color_bad_news),
-	(display_message, "@Total: {reg62}", color_good_news),
+	(try_begin),
+		(troop_slot_eq, "trp_player", slot_troop_home, 22),
+		(display_message, "@Pre-Division: A:{reg66} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
+		(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/100 + E: {reg63}", color_bad_news),
+		(display_message, "@Total: {reg62}", color_good_news),
+	(try_end),
 
 	(assign, "$new_rank_formula_calculated", 1),
 
 ]),
 
+
+### Kham Attack Party Scripts
+("attack_party", [
+    (store_script_param_1, ":lord"),
+    (store_script_param_2, ":party_to_attack"),
+    (call_script, "script_attack_party_aux", ":lord", ":party_to_attack"),
+  ]),
+
+
+("attack_party_aux", [
+    (store_script_param_1, ":lord"),
+    (store_script_param_2, ":party_to_attack"),    
+
+    (assign, ":OK", 0),
+
+    (try_begin),
+        (call_script, "script_attack_party_aux_ai", ":lord", ":party_to_attack"),        
+
+        (assign, ":OK", reg0),
+    (try_end),
+
+    (try_begin),
+        (eq, "$cheat_mode", 1),
+
+        (assign, reg1, ":lord"),
+        (str_store_troop_name, s1, ":lord"),
+        (str_store_party_name, s2, ":party_to_attack"),
+        
+
+        (try_begin),
+          (eq, ":OK", 1),          
+          (display_message, "@lord {reg1}: {s1} is attacking {s2}", color_good_news),            
+        (else_try),
+          (display_message, "@lord {reg1}: {s1} NOT attacking {s2}", color_bad_news),            
+        (try_end),
+        
+    (try_end),
+  ]),
+
+("attack_party_aux_AI", [
+
+  (store_script_param_1, ":lord"),
+  (store_script_param_2, ":party_to_attack"),
+
+  (assign, ":OK", 0),
+  (try_begin),
+    (troop_get_slot, ":party", ":lord", slot_troop_leaded_party),
+    (party_is_active, ":party"),
+    
+    (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
+    
+    #(neg|party_slot_eq,   ":party", slot_party_ai_state, spai_accompanying_army),
+    #(neg|party_slot_eq,   ":party", slot_party_ai_state, spai_engaging_army),
+    #(neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
+    #(neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
+    (call_script, "script_party_set_ai_state", ":party", spai_engaging_army, ":party_to_attack"),
+    (party_set_ai_initiative, ":party", 10),
+    
+
+    (assign, ":OK", 1),    
+  (try_end),
+
+  (assign, reg0, ":OK"),
+  
+  ]),
+
+### Kham Attack Party Scripts END
+
+
+### Guardian Party Quest Scripts
+
+#script_gp_quest_accompany_marshall
+#Called from Simple Triggers, takes the faction's lords and follows the marshall
+("cf_gp_quest_accompany_marshall", [
+
+	(quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
+    (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
+    (troop_get_slot, ":party", ":quest_target_troop", slot_troop_leaded_party),
+    (quest_get_slot, ":quest_slot", "qst_guardian_party_quest", slot_quest_current_state),
+    (party_is_active, ":party"),
+    (try_for_range, ":accompany_marshall", heroes_begin, heroes_end),
+      (store_troop_faction, ":troop_faction", ":accompany_marshall"),
+      (eq, ":troop_faction", ":attacking_faction"),
+      (neq, ":accompany_marshall", ":quest_target_troop"),
+      (call_script, "script_accompany_marshall", ":accompany_marshall", ":quest_target_troop"),
+    (try_end),
+    (display_message, "@Lords attempting to follow marshall", color_good_news), #Debug
+    (try_begin),
+    	(neg|check_quest_active, "qst_guardian_party_quest"), #Don't travel yet when player accepts the quest
+    	(le, ":quest_slot", 2), #Dont set the slot when marshall is waiting
+    	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 3), #3 for waiting marshall
+    (try_end),
+ ]),
+
+#script_cf_gp_marshall_travel_to_position
+#Called from Simple Triggers, takes the faction's marshall moves to position
+("cf_gp_marshall_travel_to_position", [
+	(quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
+	(troop_get_slot, ":party", ":quest_target_troop", slot_troop_leaded_party),
+	(set_fixed_point_multiplier, 10),
+ 	(position_set_x, pos56, 452),
+    (position_set_y, pos56, -476),
+    (party_set_ai_behavior, ":party", ai_bhvr_travel_to_point),
+    (party_set_ai_target_position, ":party", pos56),
+    (party_set_flags, ":party", pf_default_behavior, 0),
+    (party_set_ai_initiative, ":party", 10),
+    (party_get_position, pos57, ":party"),
+    (get_distance_between_positions, ":dist", pos56,pos57),
+    (store_current_hours, ":cur_hours"),
+    (try_begin),
+    	(le, ":dist", 1000),
+	    (store_add, ":gathering_time", ":cur_hours", 3*24), #3 days of waiting
+	    (assign, reg69, ":gathering_time"),
+    	(quest_set_slot, "qst_guardian_party_quest", slot_quest_expiration_days, ":gathering_time"),
+    	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 4), #4 for travelling marshall
+    (try_end),
+    (assign, reg70, ":dist"),
+    (assign, reg68, ":cur_hours"),
+    (display_message, "@Marshall Travelling to Position Near Guardian Party - Distance: {reg70} -- Cur Hours: {reg68} -  Wait Time:{reg69}", color_good_news), #Debug
+ ]),
+
+#script_cf_gp_quest_attack_guardian
+#Called from Simple Triggers, takes the faction's marshall and attacks guardian party
+("cf_gp_quest_attack_guardian", [
+	(faction_get_slot, ":guardian_party", "fac_isengard", slot_faction_guardian_party), 
+	(store_current_hours, ":cur_hours"),
+
+	(quest_get_slot, ":waiting_time", "qst_guardian_party_quest", slot_quest_expiration_days), 
+	(ge, ":cur_hours", ":waiting_time"), #Wait time over
+
+	(quest_get_slot, ":quest_target_troop_2", "qst_guardian_party_quest", slot_quest_target_troop),
+	(troop_get_slot, ":party_2", ":quest_target_troop_2", slot_troop_leaded_party),
+	(party_is_active, ":party_2"),
+	(call_script, "script_attack_party", ":quest_target_troop_2", ":guardian_party"),
+	(display_message, "@Marshall Attacking Isengard Guardian Party", color_good_news),
+	(try_begin),
+		(neg|party_is_active, ":guardian_party"),
+		(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.
+	(try_end),
+ ]),
 
 ]
 

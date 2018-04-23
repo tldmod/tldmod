@@ -3240,6 +3240,8 @@ simple_triggers = [
 
 ]),
 
+#Intro Quest Trigger
+
 (2, [
     (eq, "$tld_war_began", 1),
     (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
@@ -3247,6 +3249,90 @@ simple_triggers = [
     (jump_to_menu, "mnu_evil_war_tutorial"),
     (quest_set_slot, "qst_tld_introduction", slot_quest_current_state, 1),]
 ),
+
+#Guardian Party Quest Trigger
+
+(3, [
+      (troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Test
+      (faction_get_slot, ":guardian_party_exists", "fac_isengard", slot_faction_guardian_party), # Guardian Party spawned
+      (assign, reg70, ":guardian_party_exists"),
+      (gt, ":guardian_party_exists", 0),
+      (display_message, "@{reg70} - Qst GP Trigger 0"),
+      (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
+      (eq, ":side", faction_side_good),
+
+      (assign, ":continue", 0),
+      (try_begin),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+        (assign, ":continue", 1),
+      (else_try),
+        (quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 2), #Good guys attack Guardian Party W/O Player
+        (neg|quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 5), #When party is defeated, end all AI
+        (assign, ":continue", 1),
+      (try_end),
+
+      (eq, ":continue", 1),
+
+      (display_message, "@{reg70} - Qst GP Trigger 1"),
+      #Good Guys attack Guardian Party gets resolved here:
+
+      (try_begin), 
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 2),
+        (call_script, "script_cf_gp_quest_accompany_marshall"),
+      (else_try),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 3),
+        (call_script, "script_cf_gp_marshall_travel_to_position"),
+        (call_script, "script_cf_gp_quest_accompany_marshall"),
+      (else_try),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 4),
+        (call_script, "script_cf_gp_quest_attack_guardian"), #Wait time is checked here.
+        (call_script, "script_cf_gp_quest_accompany_marshall"),
+      (try_end),
+
+      #Good Guys attack Guardian Party gets resolved ENDs here
+
+      #Check when to show menu
+      (try_begin),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+        (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_active), #Rohan still active,
+        (call_script, "script_get_faction_rank", "fac_rohan"), (assign, ":rank", reg0), #rank points to rank number 0-9
+        (gt, ":rank", 5), #Rank 6 with Rohan
+        (jump_to_menu, "mnu_guardian_party_quest"),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_rohan"),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_rohan_lord"),
+      (else_try),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+        (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
+        (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_active), #Gondor still active,
+        (call_script, "script_get_faction_rank", "fac_gondor"), (assign, ":rank", reg0), #rank points to rank number 0-9
+        (gt, ":rank", 5), #Rank 6 with Gondor
+        (jump_to_menu, "mnu_guardian_party_quest"),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, "fac_gondor"),
+        (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, "trp_knight_1_3"),
+      (else_try),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+        (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
+        (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_defeated), #Gondor defeated,
+        (try_for_range, ":surviving_good", kingdoms_begin, kingdoms_end),
+          (store_relation, ":relation", ":surviving_good", "$players_kingdom"),
+          (gt, ":relation", 0), 
+          (faction_slot_eq, ":surviving_good", slot_faction_active_theater, theater_SW), #In Rohan
+          (faction_slot_eq, ":surviving_good", slot_faction_state, sfs_active),
+          (call_script, "script_get_faction_rank", ":surviving_good"), (assign, ":rank", reg0), #rank points to rank number 0-9
+          (gt, ":rank", 4), #Rank 5 with whoever is still alive
+          (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
+          (jump_to_menu, "mnu_guardian_party_quest"),
+          (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 1),
+          (faction_get_slot, ":marshall", ":surviving_good", slot_faction_marshall),
+          (quest_set_slot, "qst_guardian_party_quest", slot_quest_target_troop, ":marshall"),
+          (quest_set_slot, "qst_guardian_party_quest", slot_quest_object_center, ":surviving_good"),
+        (try_end),
+      (try_end),
+]),
+
+
 
 ##############################################
 #trigger reserved for future save game compatibility
@@ -3262,7 +3348,7 @@ simple_triggers = [
 #trigger reserved for future save game compatibility
 #(999,[]),   #Replaced by Evil Intro Quest event
 #trigger reserved for future save game compatibility
-(999,[]),   
+#(999,[]), # Replaced by guardian party quest  
 #trigger reserved for future save game compatibility
 (999,[]),   
 
