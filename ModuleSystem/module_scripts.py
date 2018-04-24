@@ -24039,7 +24039,7 @@ command_cursor_scripts = [
 	
 	(assign, reg66, ":nf_enemy_party_type_sum"), #Debug for A
 
-	(val_mul, ":nf_enemy_party_type_sum", 20), #multiply by 20, as per formula (Apr 22, 2018)
+	(val_mul, ":nf_enemy_party_type_sum", 20), #multiply by 20, as per formula (Apr 22, 2018) #InVain, we do this to bring this value to the same level as B and C, then divide by 200
 	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
 
 	(assign, reg67, ":nf_enemy_party_type_sum"), #Debug for A
@@ -24064,7 +24064,7 @@ command_cursor_scripts = [
 	(store_sub, ":enemy_party_destroyed_strength", "$g_starting_strength_enemy_party", "$after_battle_enemy_strength"),
 
 	(assign, reg68, ":enemy_party_destroyed_strength"), #Debug for B
-	#(val_div, ":enemy_party_destroyed_strength", 200),  #Removed as of Apr 22, 2018
+	#(val_div, ":enemy_party_destroyed_strength", 200),  #Removed as of Apr 22, 2018 #InVain We do this at the end of the calculation, to avoid rounding issues
 	(assign, reg69, ":enemy_party_destroyed_strength"), #Debug for B w/ divider
 
 	#Calculate C: Own Losses, sum of all killed troops' strength values
@@ -24073,17 +24073,17 @@ command_cursor_scripts = [
 
 	(assign, reg70, ":player_party_losses_strength"), #Debug for C
 	(val_sub, ":player_party_losses_strength", 100),
-	#(val_div, ":player_party_losses_strength", 200),  #Removed as of Apr 22, 2018
+	#(val_div, ":player_party_losses_strength", 200),  #Removed as of Apr 22, 2018 #InVain We do this at the end of the calculation, to avoid rounding issues
 	(assign, reg64, ":player_party_losses_strength"), #Debug for C w/ subtraction and division
 
 
 	#Calculate D: Player share in the battle - Player party strength [player] in relation to allied parties' strength [allies] 
 
-	(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 120),
+	(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 120), #InVain: we later divide it by 100, so we get 120/100=20% bonus to the player's party strength
 	(store_add, ":player_with_allies", "$g_starting_strength_main_party", "$g_starting_strength_friends"),
-	(val_div, ":player_with_allies", 100),
+	#(val_div, ":player_with_allies", 100), #InVain: We do this part later, to avoid rounding issues
 	(store_div, ":player_share_of_battle", ":player_with_multiplier", ":player_with_allies"),
-	(val_min, ":player_share_of_battle", 1),
+	(val_min, ":player_share_of_battle", 100),
 	(assign, reg61, ":player_share_of_battle"), #Debug for D
 
 	#Calculate E: Helping allies
@@ -24095,7 +24095,7 @@ command_cursor_scripts = [
 
 	(store_add, ":formula_abc", ":enemy_party_type_sum", ":enemy_party_destroyed_strength"), #A+B
 	(val_sub, ":formula_abc", ":player_party_losses_strength"), #(A+B) - C
-	(val_div, ":formula_abc", 200), #As per Apr 22 Formula
+	(val_div, ":formula_abc", 200), #As per Apr 22 Formula #InVain: Here we bring the values of ABC down to a reasonable level that translates into rank gain. Because they're already summed up, we avoid excessive rounding inaccuracy.
 	(val_max, ":formula_abc", 1), 
 
 	(try_begin),
@@ -24103,16 +24103,16 @@ command_cursor_scripts = [
 		(le, "$g_ally_victory_value_point", 0),
 		(assign, ":rank_gain", ":formula_abc"), 
 	(else_try),
-	#If others help you: [A + B - C] * D / 20000
+	#If others help you: [A + B - C] /200 *D /100 
 		(gt, "$g_ally_victory_value_point", 0), #There are allies
 		(neq, "$nf_helping_allies", 1), #and they are helping you instead of you helping them
 		(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
-		(store_div, ":rank_gain", ":formula_abcd", 20000),
+		(store_div, ":rank_gain", ":formula_abcd", 100), #InVain: Divide D by 100, so it's a simple multiplier.
 	(else_try),
-	#If you help others: [(A+B-C)*D] / 20000 + E
+	#If others help you: [A + B - C] /200 *D /100  + E
 		(eq, "$nf_helping_allies", 1),
 		(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
-		(val_div, ":formula_abcd", 20000),
+		(val_div, ":formula_abcd", 100), #InVain: Divide D by 100, as above.
 		(store_add, ":rank_gain", ":formula_abcd", ":helping_allies_sum"),
 	(try_end),
 
@@ -24123,7 +24123,7 @@ command_cursor_scripts = [
 	(try_begin),
 		(troop_slot_eq, "trp_player", slot_troop_home, 22),
 		(display_message, "@Pre-Division: A:{reg66} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
-		(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/100 + E: {reg63}", color_bad_news),
+		(display_message, "@Formula: (A:{reg67} + B:{reg69} - C:{reg64}) /200 * D:{reg61} /100 + E: {reg63}", color_bad_news),
 		(display_message, "@Total: {reg62}", color_good_news),
 	(try_end),
 
