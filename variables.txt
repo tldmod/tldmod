@@ -727,5 +727,6 @@ after_battle_player_strength
 new_rank_formula_calculated
 g_ally_victory_value_point
 g_formula_a
+nf_helping_allies
 $g_last_archery_point_earned
 $tutorial_num_total_dummies_destroyed

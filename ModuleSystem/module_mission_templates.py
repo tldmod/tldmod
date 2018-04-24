@@ -380,7 +380,7 @@ tld_animal_strikes = (
     (lt, ":rnd", ":chance"),  #Kham - changed this to the above
 
     (assign, ":enemy_in_front", 0),
-    
+
     ] + ((is_a_wb_mt==1) and [
     (agent_get_position, pos_belfry_begin, ":agent"),
     (try_for_agents, ":target", pos_belfry_begin, 350),
@@ -528,7 +528,7 @@ tld_warg_leap_attack = (
 
     (store_random_in_range, ":rnd", 0, 100),
 
-    (assign, ":chance", 55),
+    (assign, ":chance", 35),
 
     (lt, ":rnd", ":chance"), 
 
@@ -536,18 +536,18 @@ tld_warg_leap_attack = (
 
     ] + ((is_a_wb_mt==1) and [
     (agent_get_position, pos_belfry_begin, ":agent"),
-    (try_for_agents, ":target", pos_belfry_begin, 350),
+    (try_for_agents, ":target", pos_belfry_begin, 500),
     ] or [
     (try_for_agents, ":target"),
     ]) + [
       (neq, ":enemy_in_front", 1),
       (neq, ":agent", ":target"), # Stop hitting yourself!
       (neq, ":agent", ":warg"), # Stop hitting yourself!
-      (agent_get_position, pos1, ":agent"),
-      (agent_get_position, pos2, ":target"),
-      (get_distance_between_positions, ":dist", pos1, pos2),
+      (agent_get_position, pos6, ":agent"),
+      (agent_get_position, pos8, ":target"),
+      (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
       (lt, ":dist", 300),
-      (neg|position_is_behind_position, pos2, pos1),
+      (neg|position_is_behind_position, pos8, pos6), #2, 1
       (agent_get_team, ":agent_team", ":agent"),
       (agent_get_team, ":target_team", ":target"),
       (teams_are_enemies, ":agent_team", ":target_team"),
@@ -572,8 +572,8 @@ tld_warg_leap_attack = (
     (agent_set_animation, ":warg", ":anim"),
 
     ] + ((is_a_wb_mt==1) and [
-    (agent_get_position, pos_belfry_begin, ":agent"),
-    (try_for_agents, ":target", pos_belfry_begin, 350),
+    (agent_get_position, pos12, ":agent"),
+    (try_for_agents, ":target", pos12, 500),
     ] or [
     (try_for_agents, ":target"),
     ]) + [
@@ -581,36 +581,59 @@ tld_warg_leap_attack = (
       (neq, ":agent", ":warg"), # Stop hitting yourself!
       (agent_is_alive, ":agent"),
       (agent_is_human, ":agent"),
-      (agent_get_position, pos1, ":agent"),
-      (agent_get_position, pos2, ":target"),
-      (get_distance_between_positions, ":dist", pos1, pos2),
+      (agent_get_position, pos6, ":agent"), 
+      (agent_get_position, pos8, ":target"),
+      (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
       (lt, ":dist", 300),
-      (neg|position_is_behind_position, pos2, pos1),
+      (neg|position_is_behind_position, pos8, pos6), #2, 1
       (agent_get_team, ":agent_team", ":agent"),
       (agent_get_team, ":target_team", ":target"),
       (teams_are_enemies, ":agent_team", ":target_team"), 
       (assign, ":damaged_agents", 0),
       (assign, ":agents_to_damage", 100),   
-      (store_random_in_range, reg0, 10, 16),
+      (store_random_in_range, reg66, 10, 16),
+      (store_random_in_range, ":rand_2", 0, 100),
+      (assign, ":channel", 0),
       (try_begin),
-        (le, ":rnd", 30), #30% chance for a fly back
+        (le, ":rand_2", 15), #15% chance for a fly back
         (agent_get_horse, ":target_horse", ":target"),
-        (lt, ":target_horse", 0), #No flyback if riding a horse
-        (assign, ":hit_anim", "anim_strike_fly_back"),
+        (try_begin),
+          (lt, ":target_horse", 0),
+          (assign, ":hit_anim", "anim_strike_fly_back"),
+          (assign, reg66, 5),
+        (else_try),
+          (gt, ":target_horse", 0), #No flyback if riding a horse
+          ] + (is_a_wb_mt==1 and [
+          (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+          (agent_start_running_away, ":target_horse"),
+          (agent_stop_running_away, ":target_horse"),
+          (assign, reg66, 5),
+           ] or [
+          (assign, ":hit_anim", "anim_strike_legs_front"),
+          (assign, ":channel", 1),
+          ]) + [   
+        (try_end),
       (else_try),
-        (assign, ":hit_anim", "anim_strike_chest_front"),
+        (agent_get_horse, ":target_horse", ":target"),
+        (try_begin),
+          (gt, ":target_horse", 0), 
+          (assign, ":hit_anim", "anim_strike_legs_front"),
+          (assign, ":channel", 1),
+        (else_try),
+          (assign, ":hit_anim", "anim_strike_chest_front"),
+        (try_end),
       (try_end),
       (assign, ":agents_to_damage", 1),
       #(display_message, "@DEBUG: Warg Jump!"),
       (try_begin),
         (get_player_agent_no, ":player"),
         (eq, ":target", ":player"),
-        (display_message, "@Received {reg0} damage."),
+        (display_message, "@Received {reg66} damage."),
       (try_end),
       (le, ":damaged_agents", ":agents_to_damage"), # Allows us to limit the number of agents an animal can strike
       (set_show_messages, 0),
       (store_agent_hit_points,":hp",":target",1),
-      (val_sub, ":hp", reg0),
+      (val_sub, ":hp", reg66),
       (agent_set_hit_points, ":target", ":hp", 1),
       (try_begin),
         (le, ":hp", 0),
@@ -618,7 +641,7 @@ tld_warg_leap_attack = (
       (try_end),
       (set_show_messages, 1),
       (val_add, ":damaged_agents", 1),
-      (agent_set_animation, ":target", ":hit_anim"),
+      (agent_set_animation, ":target", ":hit_anim", ":channel"),
     (try_end),
   (try_end),
   ])

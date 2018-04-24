@@ -1111,6 +1111,13 @@ formations_triggers = [
 #end formation command
 	(0, 0, 1, [(eq, "$tld_option_formations", 1),(key_clicked, key_for_undo)], [(call_script, "script_player_order_formations", mordr_charge)]),
 
+
+#Debug for Anims test
+
+	#(0, 0, 1, [(key_clicked, key_t)], [(get_player_agent_no, ":player"), (agent_get_horse, ":horse", ":player"), (agent_set_animation, ":player", "anim_strike_fly_back_rise"), (agent_start_running_away, ":horse"),(agent_stop_running_away, ":horse"),]),
+	#(0, 0, 1, [(key_clicked, key_y)], [(get_player_agent_no, ":player"), (agent_set_animation, ":player", "anim_strike_fall_back_rise_upper"),]),
+	#(0, 0, 1, [(key_clicked, key_h)], [(get_player_agent_no, ":player"), (agent_get_horse, ":horse", ":player"), (agent_set_animation, ":player", "anim_strike_fly_back"),(agent_set_animation, ":horse", "anim_horse_fall_right"),]),
+	
 	] + ((is_a_wb_mt==1) and [
 
 #Skirmish

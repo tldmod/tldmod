@@ -5898,6 +5898,7 @@ game_menus = [
 	(try_begin), 
 		(eq, "$new_rank_formula_calculated", 0),
 		(call_script, "script_calculate_formula_a"),
+		(assign, "$nf_helping_allies", 1),
 	(try_end),
 	#Calculate Formula A END
       ],

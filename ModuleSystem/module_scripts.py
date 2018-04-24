@@ -24011,8 +24011,11 @@ command_cursor_scripts = [
 		(neq, ":nf_attached_party", "$g_enemy_party"), #don't count the primary party just in case
 
 		#Debug
-		(str_store_party_name, s13, ":nf_attached_party"), 
-		(display_message, "@DEBUG:{s13} attached to encountered party", color_good_news),
+		(try_begin),
+			(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test mode
+			(str_store_party_name, s13, ":nf_attached_party"), 
+			(display_message, "@DEBUG:{s13} attached to encountered party", color_good_news),
+		(try_end),
 
 		(store_faction_of_party, ":nf_faction", ":nf_attached_party"),
 		(store_relation, ":nf_rel", ":nf_faction", "$players_kingdom"),
@@ -24036,7 +24039,7 @@ command_cursor_scripts = [
 	
 	(assign, reg66, ":nf_enemy_party_type_sum"), #Debug for A
 
-	(val_div, ":nf_enemy_party_type_sum", 10), #divide by 10, as per formula
+	(val_mul, ":nf_enemy_party_type_sum", 20), #multiply by 20, as per formula (Apr 22, 2018)
 	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
 
 	(assign, reg67, ":nf_enemy_party_type_sum"), #Debug for A
@@ -24061,7 +24064,7 @@ command_cursor_scripts = [
 	(store_sub, ":enemy_party_destroyed_strength", "$g_starting_strength_enemy_party", "$after_battle_enemy_strength"),
 
 	(assign, reg68, ":enemy_party_destroyed_strength"), #Debug for B
-	(val_div, ":enemy_party_destroyed_strength", 200), 
+	#(val_div, ":enemy_party_destroyed_strength", 200),  #Removed as of Apr 22, 2018
 	(assign, reg69, ":enemy_party_destroyed_strength"), #Debug for B w/ divider
 
 	#Calculate C: Own Losses, sum of all killed troops' strength values
@@ -24070,7 +24073,7 @@ command_cursor_scripts = [
 
 	(assign, reg70, ":player_party_losses_strength"), #Debug for C
 	(val_sub, ":player_party_losses_strength", 100),
-	(val_div, ":player_party_losses_strength", 200), 
+	#(val_div, ":player_party_losses_strength", 200),  #Removed as of Apr 22, 2018
 	(assign, reg64, ":player_party_losses_strength"), #Debug for C w/ subtraction and division
 
 
@@ -24092,16 +24095,28 @@ command_cursor_scripts = [
 
 	(store_add, ":formula_abc", ":enemy_party_type_sum", ":enemy_party_destroyed_strength"), #A+B
 	(val_sub, ":formula_abc", ":player_party_losses_strength"), #(A+B) - C
+	(val_div, ":formula_abc", 200), #As per Apr 22 Formula
 	(val_max, ":formula_abc", 1), 
 
-	#Multiplier with Division: [(A+B-C)*D] / 100
-	
-	(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
-	(val_div, ":formula_abcd", 100),
+	(try_begin),
+	#If Fighting Alone: [A + B - C] /200
+		(le, "$g_ally_victory_value_point", 0),
+		(assign, ":rank_gain", ":formula_abc"), 
+	(else_try),
+	#If others help you: [A + B - C] * D / 20000
+		(gt, "$g_ally_victory_value_point", 0), #There are allies
+		(neq, "$nf_helping_allies", 1), #and they are helping you instead of you helping them
+		(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
+		(store_div, ":rank_gain", ":formula_abcd", 20000),
+	(else_try),
+	#If you help others: [(A+B-C)*D] / 20000 + E
+		(eq, "$nf_helping_allies", 1),
+		(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
+		(val_div, ":formula_abcd", 20000),
+		(store_add, ":rank_gain", ":formula_abcd", ":helping_allies_sum"),
+	(try_end),
 
-	#Complete Formula [(A+B-C)*D] / 100 + E
-
-	(store_add, ":rank_gain", ":formula_abcd", ":helping_allies_sum"),
+	#Complete Formula [(A+B-C)*D] / 20000 + E
 	(assign, reg62, ":rank_gain"),
 
 	#Debug:
@@ -24113,6 +24128,7 @@ command_cursor_scripts = [
 	(try_end),
 
 	(assign, "$new_rank_formula_calculated", 1),
+	(assign, "$nf_helping_allies", 0),
 
 ]),
 

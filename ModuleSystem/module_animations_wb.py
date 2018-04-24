@@ -1752,8 +1752,8 @@ animations = [
    [3.0, "man_cheer", 200, 289, arf_blend_in_5],
    [4.5, "man_cheer", 300, 437, arf_blend_in_5],
    [5.5, "man_cheer", 450, 617, arf_blend_in_5],
-   [4.5, "victory_cheer01", 0, 41, arf_blend_in_5],
-   [4.5, "victory_cheer02", 0, 40, arf_blend_in_5],
+   [6.5, "victory_cheer01", 0, 41, arf_blend_in_5],
+   [6.5, "victory_cheer02", 0, 40, arf_blend_in_5],
  ],
 
  ["cheer_stand", arf_cyclic, amf_play|amf_priority_mount,
