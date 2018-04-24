@@ -334,6 +334,7 @@ formAI_scripts = [
 			(agent_get_team, ":enemy_team_no", ":enemy_agent"),
 			(teams_are_enemies, ":enemy_team_no", ":team_no"),
            # (agent_slot_eq, ":enemy_agent", slot_agent_is_running_away, 0),
+           	(gt, ":enemy_agent", 0), #for some reason, -1 is being shown here...
             (agent_get_troop_id, ":enemy_troop", ":enemy_agent"),
             (troop_get_type, ":enemy_race", ":enemy_troop"),
 			(neq, ":enemy_race", tf_troll), #disregard trolls
@@ -482,6 +483,7 @@ formAI_scripts = [
 		#(team_get_leader, ":team_leader", ":team_no"),
         (call_script, "script_team_get_nontroll_leader", ":team_no"),
         (assign, ":team_leader", reg0),
+        (gt, ":team_leader", 0),
 		
 		#infantry AI
 		#(assign, ":place_leader_by_infantry", 0), #Kham -  removed all these
@@ -638,6 +640,7 @@ formAI_scripts = [
 				#(team_get_leader, ":enemy_leader", ":enemy_nearest_troop_team"),
 				(call_script, "script_team_get_nontroll_leader", ":enemy_nearest_troop_team"),
 				(assign, ":enemy_leader", reg0),
+				(gt, ":enemy_leader", 0),
 
 				(store_mul, ":percent_enemy_cavalry", ":num_enemy_cavalry", 100),
 				(val_div, ":percent_enemy_cavalry", ":num_enemies"),
@@ -1757,6 +1760,7 @@ formAI_scripts = [
 		#(team_get_leader, ":team_leader", ":team_no"),
         (call_script, "script_team_get_nontroll_leader", ":team_no"),
         (assign, ":team_leader", reg0),
+        (gt, ":team_leader", 0),
 		
 		#infantry AI
 		(assign, ":place_leader_by_infantry", 0),
@@ -1910,6 +1914,7 @@ formAI_scripts = [
 				#(team_get_leader, ":enemy_leader", ":enemy_nearest_troop_team"),
 				(call_script, "script_team_get_nontroll_leader", ":enemy_nearest_troop_team"),
 				(assign, ":enemy_leader", reg0),
+				(gt, ":enemy_leader", -1),
 
 				(store_mul, ":percent_enemy_cavalry", ":num_enemy_cavalry", 100),
 				(val_div, ":percent_enemy_cavalry", ":num_enemies"),
@@ -5773,7 +5778,7 @@ formAI_scripts = [
       (assign, ":new_leader", ":team_leader"),
       
       (try_begin),
-      	(neq, ":team_leader", -1), #Kham - fix for horse agent
+      	#(neq, ":team_leader", -1), #Kham - fix for horse agent
         (agent_get_troop_id, ":troop_id", ":team_leader"),
         (troop_get_type, ":troop_type", ":troop_id"),
         (eq, ":troop_type", tf_troll), # is it a troll?
