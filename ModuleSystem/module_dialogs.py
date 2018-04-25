@@ -12246,6 +12246,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 
 [anyone|plyr,"party_encounter_friend", [
+        (neg|party_slot_eq, "$g_encountered_party", slot_party_following_player, 1), #Don't show if already following player
         (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), 
         (assign, ":rank", reg0), #rank points to rank number 0-9 
         (assign, ":continue", 0),

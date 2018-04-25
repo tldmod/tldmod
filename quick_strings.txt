@@ -1,4 +1,4 @@
-1558
+1560
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -590,8 +590,10 @@ qstr_loses_Faction_Strength_ loses_Faction_Strength_due_to_the_your_success_at_t
 qstr_You_spent_{reg67}_of You_spent_{reg67}_of_your_influence_with_{s1},_with_{reg66}_remaining.
 qstr_DEBUG:{s13}_attached DEBUG:{s13}_attached_to_encountered_party
 qstr_{reg32}_parties_atta {reg32}_parties_attached_to_encountered_party
-qstr_Pre_Division:_A:{reg Pre-Division:_A:{reg66}_--_B:{reg68}_--_C:{reg70}_--__D:{reg61}_--_E:{reg63}
-qstr_Formula:__A:{reg67}_ Formula:_(A:{reg67}_+_B:{reg69}_-_C:{reg64})_/200_*_D:{reg61}_/100_+_E:_{reg63}
+qstr_Pre_Division:_A:{reg Pre-Division:_A:{reg71}_--_B:{reg68}_--_C:{reg70}_--__D:{reg61}_--_E:{reg63}
+qstr_Formula:_[_A:{reg67} Formula:_[(A:{reg67}_+_B:{reg69}_-_C:{reg64})
+qstr_Formula:_[_A:{reg67}_ Formula:_[(A:{reg67}_+_B:{reg69}_-_C:{reg64})_*_D:_{reg61}]/20000
+qstr_Formula:_[_A:{reg67}_+ Formula:_[(A:{reg67}_+_B:{reg69}_-_C:{reg64})_*_D:_{reg61}]/100_+_E:_{reg63}
 qstr_Total:_{reg62} Total:_{reg62}
 qstr_lord_{reg1}:_{s1}_is_at lord_{reg1}:_{s1}_is_attacking_{s2}
 qstr_lord_{reg1}:_{s1}_NOT_a lord_{reg1}:_{s1}_NOT_attacking_{s2}

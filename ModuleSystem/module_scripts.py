@@ -23994,13 +23994,18 @@ command_cursor_scripts = [
 	(assign, ":nf_enemy_party_type_sum", 0),
 
 	#Primary Encountered Party
-	(party_get_slot, ":primary_party_type", "$g_enemy_party", slot_party_type),
-	(party_get_slot, ":primary_party_victory_value_point", "$g_enemy_party", slot_party_victory_value),
+	(party_get_slot, ":primary_party_type", "$g_encountered_party", slot_party_type),
+	(party_get_slot, ":primary_party_victory_value_point", "$g_encountered_party", slot_party_victory_value),
+	(store_faction_of_party, ":primary_party_faction", "$g_encountered_party"),
+	(store_relation, ":primary_party_relation", ":primary_party_faction", "$players_kingdom"),
 	(try_begin),
+		(gt, ":primary_party_relation", 0), #ally
+		(val_add, "$g_ally_victory_value_point", ":primary_party_victory_value_point"),
+	(else_try),
 		(eq, ":primary_party_type", spt_bandit),
 		(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
 	(else_try),
-		(val_add, ":nf_enemy_party_type_sum", ":primary_party_victory_value_point"), #Bandits only get 10 points
+		(val_add, ":nf_enemy_party_type_sum", ":primary_party_victory_value_point"), #Add vp here for primary party encountered.
 	(try_end),
 
 	#Everyone else
@@ -24008,7 +24013,6 @@ command_cursor_scripts = [
 	(try_for_range, ":nf_attached_party_rank", 0, ":nf_num_attached_parties"),
 		(party_get_attached_party_with_rank, ":nf_attached_party", "$g_encountered_party", ":nf_attached_party_rank"),
 		(neq, ":nf_attached_party", "p_main_party"),
-		(neq, ":nf_attached_party", "$g_enemy_party"), #don't count the primary party just in case
 
 		#Debug
 		(try_begin),
@@ -24024,20 +24028,22 @@ command_cursor_scripts = [
 		(try_begin),
 			(gt, ":nf_rel", 0), #ally
 			(val_add, "$g_ally_victory_value_point", ":nf_party_victory_value_point"),
-		(try_end),
-		(try_begin),
+		(else_try),
 			(eq, ":nf_party_type", spt_bandit),
 			(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
+		(else_try),
+			(val_add, ":nf_enemy_party_type_sum", ":nf_party_victory_value_point"), #Add up the victory values here
 		(try_end),
-		(lt, ":nf_rel", 0), #Enemy
-		(val_add, ":nf_enemy_party_type_sum", ":nf_party_victory_value_point"), #Add up the victory values here
 	(try_end),
 	
 	#Debug
-	(assign, reg32, ":nf_num_attached_parties"),
-	(display_message, "@{reg32} parties attached to encountered party", color_good_news),
+	(try_begin),
+		(troop_slot_eq, "trp_player", slot_troop_home, 22),
+		(assign, reg32, ":nf_num_attached_parties"),
+		(display_message, "@{reg32} parties attached to encountered party", color_good_news),
+	(try_end),
 	
-	(assign, reg66, ":nf_enemy_party_type_sum"), #Debug for A
+	(assign, reg71, ":nf_enemy_party_type_sum"), #Debug for A
 
 	(val_mul, ":nf_enemy_party_type_sum", 20), #multiply by 20, as per formula (Apr 22, 2018) #InVain, we do this to bring this value to the same level as B and C, then divide by 200
 	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
@@ -24056,6 +24062,7 @@ command_cursor_scripts = [
 	#Calculate A: Sum of All Enemy Party Types / 10 - Found in encounter menus: $g_formula_a
 	
 	(assign, ":enemy_party_type_sum", "$g_formula_a"),
+	(assign, reg67, ":enemy_party_type_sum"), #Debug for A
 
 	#End Calculate A
 
@@ -24098,22 +24105,31 @@ command_cursor_scripts = [
 	(val_div, ":formula_abc", 200), #As per Apr 22 Formula #InVain: Here we bring the values of ABC down to a reasonable level that translates into rank gain. Because they're already summed up, we avoid excessive rounding inaccuracy.
 	(val_max, ":formula_abc", 1), 
 
+	(try_begin), #Debug
+		(troop_slot_eq, "trp_player", slot_troop_home, 22),
+		(display_message, "@Pre-Division: A:{reg71} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
+	(try_end),
+
 	(try_begin),
 	#If Fighting Alone: [A + B - C] /200
 		(le, "$g_ally_victory_value_point", 0),
 		(assign, ":rank_gain", ":formula_abc"), 
+		(assign, ":debug", 1),
 	(else_try),
 	#If others help you: [A + B - C] /200 *D /100 
 		(gt, "$g_ally_victory_value_point", 0), #There are allies
 		(neq, "$nf_helping_allies", 1), #and they are helping you instead of you helping them
 		(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
 		(store_div, ":rank_gain", ":formula_abcd", 100), #InVain: Divide D by 100, so it's a simple multiplier.
+
+		(assign, ":debug", 2),
 	(else_try),
 	#If others help you: [A + B - C] /200 *D /100  + E
 		(eq, "$nf_helping_allies", 1),
 		(store_mul, ":formula_abcd", ":formula_abc", ":player_share_of_battle"),
 		(val_div, ":formula_abcd", 100), #InVain: Divide D by 100, as above.
 		(store_add, ":rank_gain", ":formula_abcd", ":helping_allies_sum"),
+		(assign, ":debug", 3),
 	(try_end),
 
 	#Complete Formula [(A+B-C)*D] / 20000 + E
@@ -24122,8 +24138,16 @@ command_cursor_scripts = [
 	#Debug:
 	(try_begin),
 		(troop_slot_eq, "trp_player", slot_troop_home, 22),
-		(display_message, "@Pre-Division: A:{reg66} -- B:{reg68} -- C:{reg70} --  D:{reg61} -- E:{reg63}", color_bad_news),
-		(display_message, "@Formula: (A:{reg67} + B:{reg69} - C:{reg64}) /200 * D:{reg61} /100 + E: {reg63}", color_bad_news),
+		(try_begin),
+			(eq, ":debug", 1),
+			(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64})", color_bad_news),
+		(else_try),
+			(eq, ":debug", 2),
+			(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/20000", color_bad_news),
+		(else_try),
+			(eq, ":debug", 3),
+			(display_message, "@Formula: [(A:{reg67} + B:{reg69} - C:{reg64}) * D: {reg61}]/100 + E: {reg63}", color_bad_news),
+		(try_end),
 		(display_message, "@Total: {reg62}", color_good_news),
 	(try_end),
 

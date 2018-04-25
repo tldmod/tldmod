@@ -293,6 +293,11 @@ reg67  = opmask_register|67
 reg68  = opmask_register|68
 reg69  = opmask_register|69
 reg70  = opmask_register|70
+reg71  = opmask_register|71
+reg72  = opmask_register|72
+reg73  = opmask_register|73
+reg74  = opmask_register|74
+reg75  = opmask_register|75
 
 
 #swy-- We've up to 128 registers to play with: http://forums.taleworlds.com/index.php?topic=6575.4490;wap2
