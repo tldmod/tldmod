@@ -24080,6 +24080,7 @@ command_cursor_scripts = [
 
 	(assign, reg70, ":player_party_losses_strength"), #Debug for C
 	(val_sub, ":player_party_losses_strength", 100),
+	(val_max, ":player_party_losses_strength", 0),											   
 	#(val_div, ":player_party_losses_strength", 200),  #Removed as of Apr 22, 2018 #InVain We do this at the end of the calculation, to avoid rounding issues
 	(assign, reg64, ":player_party_losses_strength"), #Debug for C w/ subtraction and division
 
@@ -24087,9 +24088,9 @@ command_cursor_scripts = [
 	#Calculate D: Player share in the battle - Player party strength [player] in relation to allied parties' strength [allies] 
 
 	(store_mul, ":player_with_multiplier", "$g_starting_strength_main_party", 120), #InVain: we later divide it by 100, so we get 120/100=20% bonus to the player's party strength
-	(store_add, ":player_with_allies", "$g_starting_strength_main_party", "$g_starting_strength_friends"),
+	#(store_add, ":player_with_allies", "$g_starting_strength_main_party", "$g_starting_strength_friends"), #InVain: $g_starting_strength_friends already contains the player party
 	#(val_div, ":player_with_allies", 100), #InVain: We do this part later, to avoid rounding issues
-	(store_div, ":player_share_of_battle", ":player_with_multiplier", ":player_with_allies"),
+	(store_div, ":player_share_of_battle", ":player_with_multiplier", "$g_starting_strength_friends"),
 	(val_min, ":player_share_of_battle", 100),
 	(assign, reg61, ":player_share_of_battle"), #Debug for D
 
