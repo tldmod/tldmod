@@ -3110,8 +3110,8 @@ scene_set_flora_army_spawn = (0, 0, ti_once, [], [
 ################# whistle for horse
 horse_whistle_init = (0.2,0,ti_once,[],[(get_player_agent_no,":agent"),(agent_get_horse,"$player_horse",":agent")])
 horse_whistle = (0,0,3,[(gt,"$player_horse",0),(key_clicked, key_m)],
-    [ (get_player_agent_no,":player"),(agent_play_sound,":player","snd_man_warcry"),(display_message,"@You yell for your horse."),
-      (agent_is_alive, "$player_horse"),(agent_get_position, pos1, ":player"),(agent_set_scripted_destination, "$player_horse", pos1, 0)])
+    [ (get_player_agent_no,":player"),(display_message,"@You yell for your horse."),
+      (agent_is_alive, "$player_horse"),(agent_get_position, pos9, ":player"),(agent_set_scripted_destination, "$player_horse", pos9, 0)])
 
 ##common_battle_kill_underwater = (
 ##  5, 0, 0, [],

@@ -379,6 +379,15 @@ tld_morale_triggers = [
     (start_presentation, "prsnt_show_num_rallies"),
 ]),
 
+(0, 0, 0, [
+		  (eq, "$show_key_binds_toggle", 0),
+          (key_clicked, key_insert),
+          (this_or_next|neg|key_is_down, key_left_control),
+          (neg|key_is_down, key_right_control),],
+
+          [(assign, "$show_key_binds_toggle", 1),(start_presentation, "prsnt_show_key_binds"),
+]),
+
 ] or []) + [
 
 ]

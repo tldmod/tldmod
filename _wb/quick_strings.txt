@@ -1,4 +1,4 @@
-1676
+1677
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -84,6 +84,7 @@ qstr_Faction_Side:^^Campa Faction_Side:^^Campaign_Difficulty*:^^Home_Theater:^^M
 qstr_Campaign_Difficulty_ Campaign_Difficulty_is_based_on_starting_faction_strength,_theater_enemies,^_and_faction_troop_tree_&_troop_equipment.
 qstr_{s2} {s2}
 qstr_Rallies__Press_V_: Rallies_(Press_V):
+qstr_Press_Insert_to_View Press_Insert_to_View_Special_Commands
 qstr_{reg75} {reg75}
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
@@ -751,6 +752,7 @@ qstr_{s11}_is_{s10}_in_th {s11}_is_{s10}_in_the_Nazgul_attack!
 qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_Received_{reg66}_dam Received_{reg66}_damage.
+qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
 qstr_You_do_not_need_to_r You_do_not_need_to_rally_your_troops_yet.
 qstr_You_rally_your_troop You_rally_your_troops!
@@ -795,7 +797,6 @@ qstr_Ballista:_out_of_amm Ballista:_out_of_ammo!
 qstr_Ballista:_turn_CURSO Ballista:_turn_CURSOR,_aim_LSHIFT,_shoot_SPACE,_set_fire_T,_exit_F
 qstr_Ballista:_out_of_ammo Ballista:_out_of_ammo
 qstr_The_ladders_on_Deepi The_ladders_on_Deeping_Wall!_Watch_out!
-qstr_You_yell_for_your_ho You_yell_for_your_horse.
 qstr_FOG:R_{reg0}_G_{reg1 FOG:R_{reg0}_G_{reg1}_B{reg2}_dist_{reg3}
 qstr_max_X_{reg0}_max_Y_{ max_X_{reg0}_max_Y_{reg1}
 qstr_Press_F3_to_start_th Press_F3_to_start_the_battle.

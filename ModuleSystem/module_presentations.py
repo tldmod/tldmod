@@ -3166,6 +3166,15 @@ presentations = [
         (position_set_x, pos1, 800),
         (position_set_y, pos1, 800),
         (overlay_set_size, "$show_num_rallies", pos1),
+
+        (create_text_overlay, reg74, "@Press Insert to View Special Commands", tf_center_justify),
+        (overlay_set_color, reg74, 0x8C8C8C),
+        (position_set_x, pos1, 873),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, reg74, pos1),
+        (position_set_x, pos1, 800),
+        (position_set_y, pos1, 800),
+        (overlay_set_size, reg74, pos1),
         ##
         (get_player_agent_no,":player_agent"),
         (agent_is_alive,":player_agent"), #  test for alive players.
@@ -3182,12 +3191,13 @@ presentations = [
           (val_div, ":horn_rallies", 3),
           (val_add, ":max_rallies", ":horn_rallies"),   
         (try_end),
+        (store_div, ":half_amount", ":max_rallies", 2),
 
         (val_sub, ":max_rallies", ":times_rallied"),
 
         (assign, reg75, ":max_rallies"),
         (str_store_string,s12,"@{reg75}"),
-        (store_div, ":half_amount", ":max_rallies", 2),
+       
 
         (create_text_overlay, reg1, s12, tf_center_justify),
         (position_set_x, pos1, 800),
@@ -3202,7 +3212,7 @@ presentations = [
         (else_try),
           (overlay_set_color, reg1, 0x50FF50), #Green
         (try_end),
-        
+
         (presentation_set_duration, 999999),
     ]),
     (ti_on_presentation_run,
@@ -3210,6 +3220,26 @@ presentations = [
     ]),
 ]),
 
+("show_key_binds", prsntf_read_only, 0, [
+    (ti_on_presentation_load, [
+        (set_fixed_point_multiplier, 1000),
+        
+        (str_clear, s12),
+        (create_text_overlay, "$show_key_binds", "str_show_keybinds", tf_center_justify),
+        (overlay_set_color, "$show_key_binds", 0xDDDDDD),
+        (position_set_x, pos1, 859),
+        (position_set_y, pos1, 450),
+        (overlay_set_position, "$show_key_binds", pos1),
+        (position_set_x, pos1, 800),
+        (position_set_y, pos1, 800),
+        (overlay_set_size, "$show_key_binds", pos1),
+        (presentation_set_duration, 450),
+
+    ]),
+    (ti_on_presentation_run,
+      [(assign, "$show_key_binds_toggle", 0)
+    ]),
+]),
 
 ]
 

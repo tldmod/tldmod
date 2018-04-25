@@ -2284,5 +2284,6 @@ str_dunland_extra_info = 2282
 str_beorn_extra_info = 2283
 str_intro_strings_extra_end = 2284
 str_gundabad_intro = 2285
+str_show_keybinds = 2286
 
 
