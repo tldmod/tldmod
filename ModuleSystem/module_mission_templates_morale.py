@@ -47,7 +47,16 @@ tld_morale_triggers = [
 		(assign,":ally","$allies_coh"),
 		(assign,":enemy","$enemies_coh"),
 		(val_sub,":ally",":enemy"),
-		(le, ":ally", tld_morale_rout_allies),
+		(assign, ":continue", 0),
+
+		(try_begin),
+			(le, ":ally", tld_morale_rout_allies),
+			(assign, ":continue", 1),
+		(else_try),
+			(display_message, "@You do not need to rally your troops yet.", color_neutral_news),
+		(try_end),
+
+		(eq, ":continue", 1),
 		(get_player_agent_no, ":player"),
 	
 		(assign, ":max_rallies", 1),
@@ -106,10 +115,23 @@ tld_morale_triggers = [
 				(try_begin),
 					(agent_slot_eq,":agent",slot_agent_routed,1),
 					(agent_set_slot, ":agent", slot_agent_routed, 0),
-					(agent_clear_scripted_mode, ":agent"),					
+					(agent_clear_scripted_mode, ":agent"),			
+					] + ((is_a_wb_mt==1) and [	
+					(agent_slot_eq, ":agent", slot_agent_is_running_away, 1),
+					(agent_set_slot, ":agent", slot_agent_is_running_away, 0),
+					(agent_stop_running_away, ":agent"), 
+					] or []) + [	
 				(try_end),
 			(try_end),
 		(try_end),
+
+	] + ((is_a_wb_mt==1) and [
+	  (try_begin),
+	      (neg|is_presentation_active, "prsnt_battle"),
+	      (start_presentation, "prsnt_show_num_rallies"),
+      (try_end),
+	] or []) + [
+
 	]),
 
  	# AI rallies troops -CC
@@ -180,6 +202,11 @@ tld_morale_triggers = [
 						(agent_set_slot, ":cur_agent", slot_agent_rallied, 1),
 						(agent_set_slot, ":cur_agent", slot_agent_routed, 0),
 						(agent_clear_scripted_mode, ":cur_agent"),
+						] + ((is_a_wb_mt==1) and [	
+						(agent_slot_eq, ":cur_agent", slot_agent_is_running_away, 1),
+						(agent_set_slot, ":cur_agent", slot_agent_is_running_away, 0),
+						(agent_stop_running_away, ":cur_agent"), 
+						] or []) + [	
 					(try_end),
 				(try_end),
 			(try_end),
@@ -243,6 +270,11 @@ tld_morale_triggers = [
 						(agent_set_slot, ":cur_agent", slot_agent_rallied, 1),
 						(agent_set_slot, ":cur_agent", slot_agent_routed, 0),
 						(agent_clear_scripted_mode, ":cur_agent"),
+						] + ((is_a_wb_mt==1) and [	
+						(agent_slot_eq, ":cur_agent", slot_agent_is_running_away, 1),
+						(agent_set_slot, ":cur_agent", slot_agent_is_running_away, 0),
+						(agent_stop_running_away, ":cur_agent"), 
+						] or []) + [	
 					(try_end),
 				(try_end),
 			(try_end),
@@ -270,16 +302,16 @@ tld_morale_triggers = [
         ]),
 
 	# rout check
-	(5, 0, 3, [(eq, "$tld_option_morale", 1)], 
+	(20, 0, 5, [(eq, "$tld_option_morale", 1)], 
 	[
 		(call_script, "script_coherence"),    
 		(call_script, "script_rout_check"),       
         ]),
 
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
-	# only after 60 seconds, to ensure agents have time to advance and engage in 
+	# only after 90 seconds, to ensure agents have time to advance and engage in 
 	# battle before immediately fleeing, otherwise there is no fight. -CppCoder
-      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,60)], 
+      	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,90)], 
 	[
 		(try_for_agents, ":cur_agent"),
 			(agent_is_alive, ":cur_agent"),
@@ -329,4 +361,24 @@ tld_morale_triggers = [
             		(display_message,"@Your bravery inspires your troops!",0x6495ed),
         	(try_end),
         ]),
+
+
+#Show num rallies
+] + ((is_a_wb_mt==1) and [
+(ti_after_mission_start, 0, ti_once, [],[(start_presentation, "prsnt_show_num_rallies")]),
+
+(1, 0, 0, [
+    (this_or_next|game_key_is_down, gk_move_forward),
+    (this_or_next|game_key_is_down, gk_move_backward),
+    (this_or_next|game_key_is_down, gk_move_left),
+    (game_key_is_down, gk_move_right),
+    (neg|is_presentation_active, "prsnt_show_num_rallies"),
+    (neg|is_presentation_active, "prsnt_battle"),
+    (neg|main_hero_fallen),
+    ],[    
+    (start_presentation, "prsnt_show_num_rallies"),
+]),
+
+] or []) + [
+
 ]

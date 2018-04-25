@@ -1,4 +1,4 @@
-1673
+1676
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -83,6 +83,8 @@ qstr_Close Close
 qstr_Faction_Side:^^Campa Faction_Side:^^Campaign_Difficulty*:^^Home_Theater:^^Marshall:^^Enemies:^^
 qstr_Campaign_Difficulty_ Campaign_Difficulty_is_based_on_starting_faction_strength,_theater_enemies,^_and_faction_troop_tree_&_troop_equipment.
 qstr_{s2} {s2}
+qstr_Rallies__Press_V_: Rallies_(Press_V):
+qstr_{reg75} {reg75}
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -120,7 +122,7 @@ qstr_Fallen_rider_damage_ Fallen_rider_damage_messages:__
 qstr_No_Messages No_Messages
 qstr_Player_damage_only Player_damage_only
 qstr_All_Messages All_Messages
-qstr_Show_Troop_Name_in_B Show_Troop_Name_in_Battles_(Press_O_during_battle_to_show/hide):
+qstr_Show_Troop_Name_in_B Show_Troop_Name_in_Battles_(Press_Y_during_battle_to_show/hide):
 qstr_Disable Disable
 qstr_Enable_without_Facti Enable_without_Faction_Names
 qstr_Enable_with_Faction_ Enable_with_Faction_Names
@@ -750,6 +752,7 @@ qstr_CHEAT:_SELF_mind_bla CHEAT:_SELF_mind_blast!!!_(ctrl+s)
 qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_Received_{reg66}_dam Received_{reg66}_damage.
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
+qstr_You_do_not_need_to_r You_do_not_need_to_rally_your_troops_yet.
 qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!

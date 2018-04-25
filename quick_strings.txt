@@ -1,4 +1,4 @@
-1560
+1563
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -81,6 +81,8 @@ qstr_Close Close
 qstr_Faction_Side:^^Campa Faction_Side:^^Campaign_Difficulty*:^^Home_Theater:^^Marshall:^^Enemies:^^
 qstr_Campaign_Difficulty_ Campaign_Difficulty_is_based_on_starting_faction_strength,_theater_enemies,^_and_faction_troop_tree_&_troop_equipment.
 qstr_{s2} {s2}
+qstr_Rallies__Press_V_: Rallies_(Press_V):
+qstr_{reg75} {reg75}
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -634,6 +636,7 @@ qstr_CHEAT:_player_team:_ CHEAT:_player_team:_"A-a-a-a-argh!"_(ctrl+s)
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Received_{reg66}_dam Received_{reg66}_damage.
 qstr_{s1}_s_morale:_{reg1 {s1}'s_morale:_{reg1}
+qstr_You_do_not_need_to_r You_do_not_need_to_rally_your_troops_yet.
 qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!

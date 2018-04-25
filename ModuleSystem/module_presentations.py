@@ -3152,6 +3152,64 @@ presentations = [
   ]),
 
 
+("show_num_rallies", prsntf_read_only|prsntf_manual_end_only, 0, [
+    (ti_on_presentation_load, [
+        (set_fixed_point_multiplier, 1000),
+        
+        (str_clear, s12),
+        
+        (create_text_overlay, "$show_num_rallies", "@Rallies (Press V):", tf_center_justify),
+        (overlay_set_color, "$show_num_rallies", 0xDDDDDD),
+        (position_set_x, pos1, 889),
+        (position_set_y, pos1, 40),
+        (overlay_set_position, "$show_num_rallies", pos1),
+        (position_set_x, pos1, 800),
+        (position_set_y, pos1, 800),
+        (overlay_set_size, "$show_num_rallies", pos1),
+        ##
+        (get_player_agent_no,":player_agent"),
+        (agent_is_alive,":player_agent"), #  test for alive players.
+        (agent_is_human, ":player_agent"),
+        (assign, ":max_rallies", 1),
+        (agent_get_slot, ":times_rallied", ":player_agent", slot_agent_rallied),
+        (store_attribute_level, ":cha", "trp_player", ca_charisma),
+        (store_div, ":normal_rallies", ":cha", 5),
+        (val_add, ":max_rallies", ":normal_rallies"),
+        (try_begin),
+          (this_or_next|player_has_item, "itm_angmar_whip_reward"),
+          (player_has_item, "itm_horn_gondor_reward"),
+          (store_skill_level,":horn_rallies","skl_leadership","trp_player"),
+          (val_div, ":horn_rallies", 3),
+          (val_add, ":max_rallies", ":horn_rallies"),   
+        (try_end),
+
+        (val_sub, ":max_rallies", ":times_rallied"),
+
+        (assign, reg75, ":max_rallies"),
+        (str_store_string,s12,"@{reg75}"),
+        (store_div, ":half_amount", ":max_rallies", 2),
+
+        (create_text_overlay, reg1, s12, tf_center_justify),
+        (position_set_x, pos1, 800),
+        (position_set_y, pos1, 800),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 949),
+        (position_set_y, pos1, 40),
+        (overlay_set_position, reg1, pos1),
+        (try_begin),
+          (le, ":max_rallies", ":half_amount"),
+          (overlay_set_color, reg1, 0xFFAA00), #yellow
+        (else_try),
+          (overlay_set_color, reg1, 0x50FF50), #Green
+        (try_end),
+        
+        (presentation_set_duration, 999999),
+    ]),
+    (ti_on_presentation_run,
+      [
+    ]),
+]),
+
 
 ]
 
@@ -3804,7 +3862,7 @@ if wb_compile_switch==1:
         (val_sub, ":y_pos", Screen_Text_Height),
 
         #Show Troop Name in Battles
-        (create_text_overlay, reg1, "@Show Troop Name in Battles (Press O during battle to show/hide):", tf_right_align, tf_double_space),
+        (create_text_overlay, reg1, "@Show Troop Name in Battles (Press Y during battle to show/hide):", tf_right_align, tf_double_space),
         (position_set_y, pos0, ":y_pos"),
         (overlay_set_position, reg1, pos0),
 

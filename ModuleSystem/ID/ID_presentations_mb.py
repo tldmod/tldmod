@@ -18,3 +18,4 @@ prsnt_customize_defilement = 16
 prsnt_troop_talk_hero = 17
 prsnt_troop_talk_enemy = 18
 prsnt_faction_intro_text = 19
+prsnt_show_num_rallies = 20

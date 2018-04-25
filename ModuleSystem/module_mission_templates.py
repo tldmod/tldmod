@@ -98,7 +98,7 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   (ti_battle_window_opened, 0, 0, [(ge, "$g_display_agent_labels", 1),],
     [(start_presentation, "prsnt_display_agent_labels")]),
 
-  (0,0,0, [(ge, "$g_display_agent_labels", 1), (key_clicked, key_o),],
+  (0,0,0, [(ge, "$g_display_agent_labels", 1), (key_clicked, key_y),],
     [(try_begin),
       (eq, "$show_hide_labels",1),
       (assign, "$show_hide_labels", 0),
