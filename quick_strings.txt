@@ -81,8 +81,8 @@ qstr_Close Close
 qstr_Faction_Side:^^Campa Faction_Side:^^Campaign_Difficulty*:^^Home_Theater:^^Marshall:^^Enemies:^^
 qstr_Campaign_Difficulty_ Campaign_Difficulty_is_based_on_starting_faction_strength,_theater_enemies,^_and_faction_troop_tree_&_troop_equipment.
 qstr_{s2} {s2}
-qstr_Rallies__Press_V_: Rallies_(Press_V):
-qstr_Press_Insert_to_View Press_Insert_to_View_Special_Commands
+qstr_Rallies: Rallies:
+qstr_View_Keybinds__Press View_Keybinds_(Press_Insert)
 qstr_{reg75} {reg75}
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
