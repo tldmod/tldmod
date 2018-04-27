@@ -3207,6 +3207,9 @@ presentations = [
         (position_set_y, pos1, 40),
         (overlay_set_position, reg1, pos1),
         (try_begin),
+          (eq, ":max_rallies", 0),
+          (overlay_set_color, reg1, color_bad_news),
+        (else_try),
           (le, ":max_rallies", ":half_amount"),
           (overlay_set_color, reg1, 0xFFAA00), #yellow
         (else_try),

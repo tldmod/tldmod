@@ -1933,7 +1933,8 @@ nazgul_run_away = (20, 0, ti_once,
 
 tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (this_or_next|check_quest_active, "qst_blank_quest_04"),
-    (check_quest_active, "qst_blank_quest_05"),],
+    (this_or_next|check_quest_active, "qst_blank_quest_05"),
+    (check_quest_active, "qst_oath_of_vengeance"), ],
 
     # trigger param 1 = defeated agent_id
     # trigger param 2 = attacker agent_id
@@ -1944,11 +1945,28 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (store_trigger_param_3, ":result"),
 
     (agent_get_troop_id, ":troop_id", ":killed"),
+    (troop_get_type, ":type", ":troop_id"),
     (get_player_agent_no, ":player"),
     (agent_get_team, ":player_team", ":player"),
     (agent_get_team, ":agent_team", ":killer"),
 
     (eq, ":agent_team", ":player_team"), #Is part of player's team?
+
+    (try_begin),
+      (check_quest_active, "qst_oath_of_vengeance"), #Oath of Vengeance Quest
+      (neg|check_quest_succeeded, "qst_oath_of_vengeance"),
+      (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
+      (quest_get_slot, ":moria", "qst_oath_of_vengeance",6),
+      (quest_get_slot, ":gundabad", "qst_oath_of_vengeance",7),
+      (this_or_next|eq, ":target", "fac_moria"),
+      (this_or_next|eq, ":target", "fac_gundabad"),
+      (this_or_next|eq, ":target", "fac_mordor"),
+      (this_or_next|eq, ":target", "fac_isengard"),
+      (this_or_next|gt, ":moria", 0),
+      (gt, ":gundabad", 0),
+      (eq, ":type", tf_troll),
+      (val_add, "$oath_kills", 3),
+    (try_end),
 
     (try_begin),
       (check_quest_active, "qst_blank_quest_04"), #Targeted Kill quest

@@ -3955,7 +3955,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone|plyr,"dwarf_lord_book_give_i", 
   [(check_quest_active|neg, "qst_oath_of_vengeance"),
-   (party_is_active, "p_town_moria"),
+   (this_or_next|faction_slot_eq, "fac_moria", slot_faction_state, sfs_active),
+   (faction_slot_eq, "fac_gundabad", slot_faction_state, sfs_active),
    (store_troop_faction, ":faction", "trp_player"),
    (str_clear, s3),
    (str_clear, s4),
@@ -3979,14 +3980,24 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (store_troop_faction, ":target", "$g_talk_troop"),
      (quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
      (quest_set_slot, "qst_oath_of_vengeance", 5, "trp_dwarf_lord"), # CppCoder: remember source hero
-     (str_store_faction_name, s3, "fac_moria"),
      (store_current_day, ":day"),
      (quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
+     (try_begin),
+        (faction_slot_eq, "fac_moria", slot_faction_state, sfs_active),
+        (faction_slot_eq, "fac_gundabad", slot_faction_state, sfs_active),
+        (str_store_string, s3, "@Moria and Gundabad"),
+      (else_try),
+        (faction_slot_eq, "fac_moria", slot_faction_state, sfs_active),
+        (str_store_string, s3, "@Moria"),
+      (else_try),
+        (faction_slot_eq, "fac_gundabad", slot_faction_state, sfs_active),
+        (str_store_string, s3, "@Gundabad"),  
+      (try_end),      
      (quest_set_slot, "qst_oath_of_vengeance", 2, "fac_moria"), # target faction
      (quest_set_slot, "qst_oath_of_vengeance", 7, "fac_gundabad"), # target faction 2
      (quest_set_slot, "qst_oath_of_vengeance", 6, 1),
      (setup_quest_text, "qst_oath_of_vengeance"),
-     (str_store_string, s2, "@You swear an oath of vengeance against Moria and Gundabad. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^."),
+     (str_store_string, s2, "@You swear an oath of vengeance against {s3}. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^."),
      (call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player")]],
 
 # TLD: End Dwarf Lord takes Moria book - Implemented by Kham

@@ -3314,6 +3314,6 @@ As woodsmen, they wield stout sticks and sharp axes, but wear little in the way 
 Many of you have perished over the years, somemany of them slain in these very halls and tunnels - but many still remain. Great sport you have had with the greedy little diggers and their friends, in the past - and greater sport you will have now, when you march upon them and take everything for yourselves!^^\
 Vengeance for Bolg, for Azog, for the Great Goblin - vengeance for the goblins of Gundabad!"),
 
-("show_keybinds", "Special Key Bindings: ^^ Formation Keys:^ Ranks - J ^ Shieldwall - K ^ Wedge - L ^ Square - ; ^ Clear Formations - U ^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M"),
+("show_keybinds", "Special Key Bindings: ^^ Formation Keys:^ Ranks - J ^ Shieldwall - K ^ Wedge - L ^ Square - ; ^ Clear Formations - U ^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace"),
 
 ]
