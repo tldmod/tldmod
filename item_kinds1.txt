@@ -1316,25 +1316,25 @@ itemsfile version 2
  itm_m_uruk_light_b Uruk_Leather_Armor Uruk_Leather_Armor 3  uruk_mordor_light_leather_b 1116691496961  uruk_mordor_light_leather_a 6291622  uruk_mordor_light_leather_c 234881024  16842765 0 502 1099635359744 12 100 0 12 5 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_c Uruk_Light_Mail Uruk_Light_Mail 3  uruk_mordor_light_mail_b 1116691496961  uruk_mordor_light_mail_a 6291622  uruk_mordor_light_mail_c 234881024  16842765 0 802 1099635359744 15 100 0 15 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_light_c Uruk_Light_Mail Uruk_Light_Mail 3  uruk_mordor_light_mail_b 1116691496961  uruk_mordor_light_mail_a 6291622  uruk_mordor_light_mail_c 234881024  16842765 0 802 1099635359744 18 100 0 18 5 0 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_d Uruk_Heavy_Leather Uruk_Heavy_Leather 3  uruk_mordor_heavy_leather_b 1116691496961  uruk_mordor_heavy_leather_a 6291622  uruk_mordor_heavy_leather_c 234881024  16842765 0 602 1099635359744 15 100 0 12 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_med_a Uruk_Heavy_Leather Uruk_Heavy_Leather 3  uruk_mordor_heavy_leather_b 1116691496961  uruk_mordor_heavy_leather_a 6291622  uruk_mordor_heavy_leather_c 234881024  16842765 0 1100 1099635359744 20 100 0 20 10 11 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_e Uruk_Heavy_Mail Uruk_Heavy_Mail 3  uruk_mordor_heavy_mail_b 1116691496961  uruk_mordor_heavy_mail_a 6291622  uruk_mordor_heavy_mail_c 234881024  16842765 0 1502 1116859269284 22 100 0 22 8 0 0 0 0 0 0 0 0
+ itm_m_uruk_med_b Uruk_Heavy_Mail Uruk_Heavy_Mail 3  uruk_mordor_heavy_mail_b 1116691496961  uruk_mordor_heavy_mail_a 6291622  uruk_mordor_heavy_mail_c 234881024  16842765 0 1502 1116859269284 22 100 0 24 9 12 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_f Uruk_Light_Scale Uruk_Light_Scale 3  uruk_mordor_light_scale_b 1116691496961  uruk_mordor_light_scale_a 6291622  uruk_mordor_light_scale_c 234881024  16842765 0 1500 1116859269284 22 100 0 22 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_med_c Uruk_Light_Scale Uruk_Light_Scale 3  uruk_mordor_light_scale_b 1116691496961  uruk_mordor_light_scale_a 6291622  uruk_mordor_light_scale_c 234881024  16842765 0 1400 1116859269284 22 100 0 22 6 9 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_g Uruk_Heavy_Scale Uruk_Heavy_Scale 3  uruk_mordor_heavy_scale_b 1116691496961  uruk_mordor_heavy_scale_a 6291622  uruk_mordor_heavy_scale_c 234881024  16842765 0 1500 1116859269284 22 100 0 22 6 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_a Uruk_Heavy_Scale Uruk_Heavy_Scale 3  uruk_mordor_heavy_scale_b 1116691496961  uruk_mordor_heavy_scale_a 6291622  uruk_mordor_heavy_scale_c 234881024  16842765 0 1705 1116859269284 22 100 0 27 8 15 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_h Uruk_Platemail Uruk_Platemail 3  uruk_mordor_platemail_b 1116691496961  uruk_mordor_platemail_a 6291622  uruk_mordor_platemail_c 234881024  16842765 0 1500 1116859269284 21 100 0 22 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_b Uruk_Platemail Uruk_Platemail 3  uruk_mordor_platemail_b 1116691496961  uruk_mordor_platemail_a 6291622  uruk_mordor_platemail_c 234881024  16842765 0 1804 1116859269284 21 100 0 29 10 15 0 0 0 0 0 0 0
 0
 
- itm_m_uruk_heavy_i Lugburz_Platemail Lugburz_Platemail 3  uruk_mordor_segmented_b 1116691496961  uruk_mordor_segmented_a 6291622  uruk_mordor_segmented_c 234881024  16842765 0 2000 704643072 24 100 0 24 10 0 0 0 0 0 0 0 0
+ itm_m_uruk_heavy_c Lugburz_Platemail Lugburz_Platemail 3  uruk_mordor_segmented_b 1116691496961  uruk_mordor_segmented_a 6291622  uruk_mordor_segmented_c 234881024  16842765 0 2500 704643072 24 100 0 32 10 20 0 0 0 0 0 0 0
 0
 
  itm_m_uruk_heavy_j Uruk_Heavy_Armor Uruk_Heavy_Armor 1  uruk_mordor_platemail_a 0  16842765 0 2000 704643072 26 100 0 24 10 0 0 0 0 0 0 0 0
