@@ -303,9 +303,9 @@ party_templates = [
 ("woodelf_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_greenwood_archer,2,4),(trp_greenwood_sentinel,1,2),(trp_greenwood_veteran_spearman,1,2),]),
 ("woodelf_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_greenwood_veteran_archer,1,2),(trp_greenwood_vet_sentinel,1,2),(trp_greenwood_royal_spearman,2,4),]),
 #Moria (8-16, 7-13, 5-10)
-("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,8,16),]),
+("moria_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_snaga_of_moria,6,12),(trp_goblin_of_moria,2,4),]), #InVain: traded some t1 for t2 = more infantry for hosts
 ("moria_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_large_goblin_archer_of_moria,4,7),(trp_goblin_of_moria,2,4),(trp_large_goblin_of_moria,1,2)]), #InVain: t2 archers, t3 inf
-("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_wolf_rider_of_moria,3,6),(trp_large_goblin_of_moria,1,2),(trp_large_goblin_archer_of_moria,1,2),(trp_troll_of_moria,1,1),]),
+("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_wolf_rider_of_moria,2,4),(trp_large_goblin_of_moria,2,4),(trp_troll_of_moria,1,1),]), #InVain: removed archers, because B has so many, less cav
 #Dol Guldur - same as Mordor without uruks and Numenoreans (8-16, 7-13, 5-10)
 ("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,8,16),]),
 ("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_orc_archer_of_mordor,4,7),(trp_orc_of_guldur,3,6),]),

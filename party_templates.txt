@@ -71,7 +71,7 @@ pt_dunland_raiders Dunlending_Raiders 562949957615712 0 19 238 274 1 1 0 273 2 4
 pt_harad_raiders Haradrim_Raiders 562949957615715 0 12 238 250 1 1 0 253 10 20 0 247 11 20 0 -1 -1 -1 
 pt_khand_raiders Khand_Raiders 562949957615714 0 14 238 285 1 1 0 282 5 10 0 284 5 15 0 -1 -1 -1 
 pt_umbar_raiders Umbar_Raiders 562949957615718 0 15 238 300 1 1 0 299 4 8 0 298 4 8 0 297 6 15 0 -1 -1 
-pt_moria_raiders Moria_Raiders 562949957615737 0 16 238 396 1 3 0 379 3 9 0 376 5 15 0 378 8 16 0 -1 -1 
+pt_moria_raiders Moria_Raiders 562949957615737 0 16 238 934 1 3 0 379 3 9 0 376 5 15 0 378 8 16 0 -1 -1 
 pt_guldur_raiders Dol_Guldur_Raiders 562949957615739 0 17 238 367 1 1 0 360 4 10 0 357 8 16 0 368 8 16 0 356 15 30 0 -1 
 pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 389 6 12 0 383 18 32 0 352 0 1 0 -1 
 pt_rhun_raiders Rhun_Raiders 281474980905057 0 13 238 79 1 3 0 66 8 16 0 77 10 20 0 -1 -1 -1 
@@ -187,9 +187,9 @@ pt_imladris_reinf_c _ 0 0 1 0 207 2 4 0 215 1 1 0 205 1 2 0 218 0 1 0 -1 -1
 pt_woodelf_reinf_a _ 0 0 1 0 182 1 3 0 190 1 2 0 181 4 7 0 -1 -1 -1 
 pt_woodelf_reinf_b _ 0 0 1 0 183 2 4 0 187 1 2 0 191 1 2 0 -1 -1 -1 
 pt_woodelf_reinf_c _ 0 0 1 0 184 1 2 0 188 1 2 0 192 2 4 0 -1 -1 -1 
-pt_moria_reinf_a _ 0 0 1 0 374 8 16 0 -1 -1 -1 -1 -1 
+pt_moria_reinf_a _ 0 0 1 0 374 6 12 0 375 2 4 0 -1 -1 -1 -1 
 pt_moria_reinf_b _ 0 0 1 0 379 4 7 0 375 2 4 0 376 1 2 0 -1 -1 -1 
-pt_moria_reinf_c _ 0 0 1 0 371 3 6 0 376 1 2 0 379 1 2 0 352 1 1 0 -1 -1 
+pt_moria_reinf_c _ 0 0 1 0 371 2 4 0 376 2 4 0 352 1 1 0 -1 -1 -1 
 pt_guldur_reinf_a _ 0 0 1 0 356 8 16 0 -1 -1 -1 -1 -1 
 pt_guldur_reinf_b _ 0 0 1 0 368 4 7 0 357 3 6 0 -1 -1 -1 -1 
 pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 369 1 2 0 366 1 2 0 360 1 2 0 354 0 1 0 -1 

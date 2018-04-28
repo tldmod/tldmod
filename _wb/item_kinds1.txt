@@ -2389,7 +2389,7 @@ itemsfile version 2
  itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 2  dwarf_great_mattock 0  dwarf_war_mattock 156672  342163459 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
 0
 
- itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 2  dwarf_great_pick 0  dwarf_war_pick 156672  342163459 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
+ itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 3  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick 256  342163459 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
 0
 
  itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163459 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284

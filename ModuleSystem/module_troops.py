@@ -134,7 +134,7 @@ attr_orc_tier_1 =  str_5| agi_5| int_4| cha_4|level(2)
 attr_orc_tier_2 =  str_7| agi_7| int_4| cha_4|level(5)
 attr_orc_tier_3 =  str_9| agi_8| int_4| cha_4|level(8)
 attr_orc_tier_4 = str_11| agi_9| int_4| cha_4|level(13) #elite orcs
-attr_orc_tier_5 = str_16|agi_11| int_4| cha_4|level(20) #super-elite, Moria and Gundabad only
+attr_orc_tier_5 = str_16|agi_11| int_4| cha_4|level(25) #super-elite, Moria and Gundabad only #upped lvl by a lot, because these troops are quite strong
 attr_orc_tier_6 = str_17|agi_12| int_4| cha_4|level(45) #lords only
 
 # InVain: Uruks and evil men (except black numenoreans): Middle ground between orcs and good men, their level simulating their worse equipment in autocalc, but easier to train and cheaper. Elites are good.
@@ -142,7 +142,7 @@ attr_evil_tier_1 =  str_7| agi_5| int_4| cha_4|level(3)
 attr_evil_tier_2 = str_10| agi_7| int_4| cha_4|level(7)
 attr_evil_tier_3 = str_13|agi_11| int_4| cha_4|level(11)
 attr_evil_tier_4 = str_15|agi_15| int_4| cha_4|level(16) #Mordor Uruk top tier
-attr_evil_tier_5 = str_18|agi_18| int_4| cha_4|level(25) #evil men elites are strong, Isen Uruk Champions too
+attr_evil_tier_5 = str_18|agi_18| int_4| cha_4|level(28) #evil men elites are strong, Isen Uruk Champions too #upped lvl a bit
 attr_evil_tier_6 = str_20|agi_20|int_20|cha_20|level(36) #only Isengard berserkers and Rhun Nobles
 
 #TLD weapon proficiencies
@@ -458,6 +458,7 @@ itm_dwarf_vest_b_lordly = (itm_dwarf_vest_b, imod_reinforced)
 itm_dwarf_great_axe_good = (itm_dwarf_great_axe, imod_masterwork)
 itm_dwarf_great_mattock_good = (itm_dwarf_great_mattock, imod_balanced)
 itm_dwarf_great_pick_good = (itm_dwarf_great_pick, imod_balanced)
+itm_dwarf_war_pick = (itm_dwarf_great_pick, imod_old)
 itm_dwarf_mattock_good = (itm_dwarf_mattock, imod_balanced)
 itm_dwarf_sword_a_good = (itm_dwarf_sword_a, imod_fine)
 
@@ -1649,7 +1650,8 @@ troops = [
 ["fell_goblin_of_moria","Fell_Goblin_of_Moria","Fell_Goblins_of_Moria",tf_orc| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_good, itm_orc_beakhelm_good,itm_moria_armor_e,itm_orc_greaves,itm_isengard_axe,itm_orc_slasher,itm_orc_throwing_axes,itm_moria_orc_shield_b,itm_moria_orc_shield_c,],attr_orc_tier_4,wp_orc_tier_4,knows_athletics_6|knows_power_draw_2|knows_power_throw_3|knows_power_strike_4,orc_face1,orc_face6],
 ["archer_snaga_of_moria","Goblin_Archer_of_Moria","Goblin_Archers_of_Moria",tf_orc| tfg_ranged| tfg_armor| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_bad, itm_orc_beakhelm_bad, itm_moria_armor_b, itm_orc_bow,itm_orc_hook_arrow,itm_orc_slasher,itm_orc_falchion,],attr_orc_tier_2,wp_orc_tier_2,knows_athletics_3|knows_power_draw_2|knows_power_strike_1,orc_face9,orc_face6],
 ["large_goblin_archer_of_moria","Large_Goblin_Archer_of_Moria","Large_Goblin_Archers_of_Moria",tf_orc| tfg_ranged| tfg_boots| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_bad, itm_orc_bughelm, itm_orc_beakhelm,itm_moria_armor_c,itm_moria_armor_b,itm_moria_armor_c,itm_leather_gloves,itm_orc_ragwrap,itm_orc_bow,itm_orc_hook_arrow,itm_orc_slasher,itm_orc_falchion,],attr_orc_tier_3,wp_orc_tier_3,knows_athletics_3|knows_power_draw_3|knows_power_strike_2,orc_face5,orc_face6],
-["deep_dweller_of_moria","Deep-Dweller_of_Moria","Deep-Dwellers_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_lordly,itm_orc_bughelm_lordly,itm_uruk_helm_e,itm_uruk_helm_f,itm_moria_armor_e,itm_orc_greaves,itm_orc_club_d,itm_dwarf_war_pick,itm_orc_javelin,itm_orc_javelin,itm_moria_orc_shield_a,itm_moria_orc_shield_b,itm_moria_orc_shield_c],attr_orc_tier_5,wp_orc_tier_5,knows_athletics_6|knows_power_strike_6|knows_power_throw_5|knows_ironflesh_5,orc_face5,orc_face4],
+#next one moved to end of file, May 2018. Keep this one a bit for savegame compatibility
+["deep_dweller_of_moria2","Deep-Dweller_of_Moria","Deep-Dwellers_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_lordly,itm_orc_bughelm_lordly,itm_uruk_helm_e,itm_uruk_helm_f,itm_moria_armor_e,itm_orc_greaves,itm_orc_club_d,itm_dwarf_war_pick,itm_orc_javelin,itm_orc_javelin,itm_moria_orc_shield_a,itm_moria_orc_shield_b,itm_moria_orc_shield_c],attr_orc_tier_5,wp_orc_tier_5,knows_athletics_6|knows_power_strike_6|knows_power_throw_5|knows_ironflesh_5,orc_face5,orc_face4],
 
 ["moria_items","BUG","BUG",tf_hero,0,0,fac_moria,
    [itm_warg_1b,itm_warg_1c,itm_warg_1d,itm_gundabad_helm_a,itm_gundabad_helm_b,itm_gundabad_helm_c,itm_gundabad_helm_d,itm_moria_orc_shield_c,itm_orc_scimitar,itm_metal_scraps_bad,itm_metal_scraps_medium,itm_metal_scraps_good,],
@@ -1678,7 +1680,8 @@ troops = [
 ["tribal_orc_warrior","Tribal_Orc_Warrior","Tribal_Orc_Warriors",tf_orc| tfg_armor| tf_no_capture_alive,0,0,fac_tribal_orcs,
    [itm_orc_tribal_b,itm_orc_tribal_c,itm_orc_tribal_c,itm_skull_club,itm_bone_cudgel,itm_wood_club,itm_twohand_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,itm_wood_club,itm_orc_simple_spear,itm_orc_sledgehammer,],
       attr_orc_tier_2,wp_orc_tier_2,knows_athletics_4,orc_face7,orc_face6],
-["tribal_orc_chief","Orc_Chieftain_of_Moria","Orc_Chieftains_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,
+#next one moved to end of file, May 2018. Keep this one a bit for savegame compatibility
+["tribal_orc_chief2","Orc_Chieftain_of_Moria","Orc_Chieftains_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,
    [itm_m_uruk_heavy_g,itm_m_uruk_heavy_h,itm_m_uruk_heavy_i,itm_orc_beakhelm_lordly,itm_uruk_helm_c,itm_uruk_helm_d,itm_uruk_helm_f,itm_uruk_greaves, itm_orc_greaves, itm_rhun_falchion,itm_rhun_shortsword,itm_rhun_sword, itm_orc_skull_spear,itm_uruk_spear, itm_moria_orc_shield_a, (itm_orc_shield_c, imod_reinforced)],
       attr_orc_tier_5,wp_orc_tier_5,knows_athletics_7|knows_power_strike_7|knows_ironflesh_10,orc_face5,orc_face4],
 #Numenorean
@@ -3199,7 +3202,7 @@ troops = [
 ["warg_rider_of_mirkwood","Warg_Rider_of_Mirkwood","Warg_Riders_of_Mirkwood",tf_orc| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_isengard,
    [itm_orc_bow,itm_arrows,itm_orc_sabre,itm_orc_sabre,itm_isen_uruk_light_a,itm_isen_uruk_light_a,itm_orc_coif,itm_wargarmored_1c,],
       def_attrib|level(22),wp(135),knows_pathfinding_1|knows_horse_archery_3|knows_riding_4|knows_power_throw_3|knows_power_strike_4|knows_ironflesh_4,orc_face3,orc_face8],
-["gate_aggravator","Gate_is_holding","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
+["gate_aggravator","Gate_Defence","_", tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
    [itm_warg_ghost_armour,itm_empty_hands,itm_empty_legs,itm_empty_head],
       str_255|level(80),wp(5),knows_shield_10|knows_ironflesh_10,0,0],
 ["orc_pretender","Orc_Pretender","_",tf_orc| tfg_shield| tfg_armor| tfg_helm| tf_no_capture_alive,0,0,fac_neutral,
@@ -3366,6 +3369,10 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
    [itm_riv_boots,itm_riv_bow,itm_riv_armor_light,itm_riv_archer_sword,itm_elven_arrows,],
       attr_elf_tier_1,wp_elf_tier_1,knows_common|knows_power_draw_3|knows_power_strike_2|knows_ironflesh_1,rivendell_elf_face_1,rivendell_elf_face_2],
 
+#Elite Moria orcs moved out of item factionization range, so their equipment doesn't show up in stores.
+["deep_dweller_of_moria","Deep-Dweller_of_Moria","Deep-Dwellers_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_lordly,itm_orc_bughelm_lordly,itm_uruk_helm_e,itm_uruk_helm_f,itm_moria_armor_e,itm_orc_greaves,itm_orc_club_d,itm_dwarf_war_pick,itm_orc_javelin,itm_orc_javelin,itm_moria_orc_shield_a,itm_moria_orc_shield_b,itm_moria_orc_shield_c],attr_orc_tier_5,wp_orc_tier_5,knows_athletics_6|knows_power_strike_6|knows_power_throw_5|knows_ironflesh_5,orc_face5,orc_face4],
+["tribal_orc_chief","Orc_Chieftain_of_Moria","Orc_Chieftains_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,[itm_orc_beakhelm_lordly,itm_uruk_helm_c,itm_uruk_helm_d,itm_uruk_helm_f,itm_m_uruk_heavy_g,itm_m_uruk_heavy_h,itm_m_uruk_heavy_i,itm_uruk_greaves, itm_orc_greaves, itm_rhun_falchion,itm_rhun_shortsword,itm_rhun_sword, itm_orc_skull_spear,itm_uruk_spear, itm_moria_orc_shield_a, (itm_orc_shield_c, imod_reinforced)],attr_orc_tier_5,wp_orc_tier_5,knows_athletics_7|knows_power_strike_5|knows_ironflesh_10,orc_face5,orc_face4],
+	  
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
