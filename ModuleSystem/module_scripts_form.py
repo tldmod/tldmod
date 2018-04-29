@@ -55,22 +55,26 @@ formAI_scripts = [
 		(gt, "$g_ally_party", 0),
 		(store_faction_of_party, ":ally_elf", "$g_ally_party"),
 	(try_end),
-	(store_faction_of_party, ":enemy_elf", "$g_enemy_party"),
-	(store_faction_of_party, ":player_elf", "p_main_party"),
-	(team_get_leader, ":elf_leader", ":team_no"),
-	(agent_get_troop_id, ":agent_troop", ":elf_leader"),
-	(store_troop_faction, ":team_is_elf", ":agent_troop"),
-	(assign, ":shit_elves", 0),
+	
 	(try_begin),
-		(gt, ":ally_elf", 0),
-		(is_between, ":ally_elf", "fac_lorien", "fac_dale"),
-		(assign, ":shit_elves", 1),
-	(else_try),
-		(is_between, ":player_elf", "fac_lorien","fac_dale"),
-		(assign, ":shit_elves", 1),
-	(else_try),
-		(is_between, ":enemy_elf", "fac_lorien","fac_dale"),
-		(assign, ":shit_elves", 1),
+		(store_faction_of_party, ":enemy_elf", "$g_enemy_party"),
+		(store_faction_of_party, ":player_elf", "p_main_party"),
+		(team_get_leader, ":elf_leader", ":team_no"),
+		(gt, ":elf_leader", 0),
+		(agent_get_troop_id, ":agent_troop", ":elf_leader"),
+		(store_troop_faction, ":team_is_elf", ":agent_troop"),
+		(assign, ":shit_elves", 0),
+		(try_begin),
+			(gt, ":ally_elf", 0),
+			(is_between, ":ally_elf", "fac_lorien", "fac_dale"),
+			(assign, ":shit_elves", 1),
+		(else_try),
+			(is_between, ":player_elf", "fac_lorien","fac_dale"),
+			(assign, ":shit_elves", 1),
+		(else_try),
+			(is_between, ":enemy_elf", "fac_lorien","fac_dale"),
+			(assign, ":shit_elves", 1),
+		(try_end),
 	(try_end),
 
 	(try_begin),
@@ -1453,7 +1457,7 @@ formAI_scripts = [
 		#put leader in duel or place leader -- JL added code for put leader in duel
 		(try_begin),
 			#basic conditions:
-			(gt, ":team_leader", 0), #The current team must have a leader
+			(gt, ":hero_troop", 0), #The current team must have a leader
 			(is_between, ":hero_troop", heroes_begin, heroes_end), #Must be hero
 			(agent_is_alive, ":team_leader"), #and the team leader must be alive
 			#(agent_slot_eq, ":team_leader", slot_agent_is_running_away, 0), #and the leader must not be running away ... will never happen
