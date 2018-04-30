@@ -1174,11 +1174,10 @@ items =[
 ["dwarf_shield_d","Dwarven_Round_Shield",[("dwarf_round_shield_n",0),("dwarf_round_shield_e",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(50),imodbits_shield_good,],
 ["north_round_shield","Dwarven_Shield",[("dwarf_round_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(360)|body_armor(4)|spd_rtng(82)|weapon_length(50),imodbits_shield_good,],
 #all shields from here free, May 2018
-["dwarf_shield_g","Dwarven_Shield",[("dale_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
-# duplicate["dwarf_shield_h",         "Dwarven Shield",[("dwarf_shield_h",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
-["dwarf_shield_i","Dwarven_Shield",[("dale_shield_i",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
-["dwarf_shield_j","Dwarven_Shield",[("dale_shield_j",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
-["dwarf_shield_k","Dwarven_Shield",[("dwarf_round_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["free_dwarf_shield_g","Dwarven_Shield",[("dale_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["free_dwarf_shield_i","Dwarven_Shield",[("dale_shield_i",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["free_dwarf_shield_j","Dwarven_Shield",[("dale_shield_j",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["free_dwarf_shield_k","Dwarven_Shield",[("dwarf_round_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["woodmen_heavy","Mirkwood_Armor",[("woodman_chieftain",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(18)|head_armor(0)|body_armor(31)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 #went to dale shields
 #["dwarf_shield_e", "Dwarven Shield",[("dwarf_shield_e",0)], itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield,  118 , weight(2.5)|hit_points(480)|body_armor(1)|spd_rtng(82)|weapon_length(90),imodbits_shield ],
@@ -1190,9 +1189,9 @@ items =[
 
 ##Shield Bear Seax imod Hack Start
 ] + (is_a_wb_item==1 and [
-["dwarf_sword_b","Northmen_Shortsword",[("beorning_seax",0),("beorning_seax_sheath",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(105)|weapon_length(58)|swing_damage(31,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
+["dwarf_sword_b","Beorning_Shortsword",[("beorning_seax",0),("beorning_seax_sheath",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(105)|weapon_length(58)|swing_damage(31,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
 ] or [
-["dwarf_sword_b","Northmen_Shortsword",[("beorning_seax_mb",0),("beorning_seax_sheath_mb",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(105)|weapon_length(58)|swing_damage(31,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
+["dwarf_sword_b","Beorning_Shortsword",[("beorning_seax_mb",0),("beorning_seax_sheath_mb",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(1.25)|difficulty(0)|spd_rtng(105)|weapon_length(58)|swing_damage(31,cut)|thrust_damage(21,pierce),imodbits_weapon_good],
 ]) + [ 
 ##Shield Bear Seax imod Hack END
 

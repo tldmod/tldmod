@@ -2353,16 +2353,16 @@ itemsfile version 2
  itm_north_round_shield Dwarven_Shield Dwarven_Shield 1  dwarf_round_shield_n 0  327687 4831838208 200 771751936 3 100 0 4 0 0 360 82 0 50 0 0 0
 0
 
- itm_dwarf_shield_g Dwarven_Shield Dwarven_Shield 1  dale_shield_b 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_free_dwarf_shield_g Dwarven_Shield Dwarven_Shield 1  dale_shield_b 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_i Dwarven_Shield Dwarven_Shield 1  dale_shield_i 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_free_dwarf_shield_i Dwarven_Shield Dwarven_Shield 1  dale_shield_i 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_j Dwarven_Shield Dwarven_Shield 1  dale_shield_j 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_free_dwarf_shield_j Dwarven_Shield Dwarven_Shield 1  dale_shield_j 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
- itm_dwarf_shield_k Dwarven_Shield Dwarven_Shield 1  dwarf_round_shield_n 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
+ itm_free_dwarf_shield_k Dwarven_Shield Dwarven_Shield 1  dwarf_round_shield_n 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
 0
 
  itm_woodmen_heavy Mirkwood_Armor Mirkwood_Armor 1  woodman_chieftain 0  16842765 0 1200 704643072 18 100 0 31 15 0 0 0 0 0 0 0 0
@@ -2371,7 +2371,7 @@ itemsfile version 2
  itm_dwarf_sword_a Dwarf_Sword Dwarf_Sword 4  dwarf_sword_a 0  scab_dwarf_sword_a 3458764513820540928  dwarf_sword_b 156672  scab_dwarf_sword_b 3458764513820697600  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29
 0
 
- itm_dwarf_sword_b Northmen_Shortsword Northmen_Shortsword 2  beorning_seax_mb 0  beorning_seax_sheath_mb 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 31744 105 0 58 0 277 31
+ itm_dwarf_sword_b Beorning_Shortsword Beorning_Shortsword 2  beorning_seax_mb 0  beorning_seax_sheath_mb 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 31744 105 0 58 0 277 31
 0
 
  itm_dwarf_sword_c Dwarf_Sword Dwarf_Sword 2  dwarf_sword_c 0  scab_dwarf_sword_c 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29
