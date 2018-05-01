@@ -5897,7 +5897,7 @@ game_menus = [
 	#Calculate Formula A here - Kham
 	(try_begin), 
 		(eq, "$new_rank_formula_calculated", 0),
-		(call_script, "script_calculate_formula_a", 1),
+		(call_script, "script_calculate_formula_a"),
 		(assign, "$nf_helping_allies", 1),
 	(try_end),
 	#Calculate Formula A END
@@ -6141,7 +6141,7 @@ game_menus = [
 	#Calculate Formula A here - Kham
 	(try_begin), 
 		(eq, "$new_rank_formula_calculated", 0),
-		(call_script, "script_calculate_formula_a", 1),
+		(call_script, "script_calculate_formula_a"),
 		(assign, "$nf_helping_allies", 1),
 	(try_end),
 	#Calculate Formula A END
@@ -7373,7 +7373,7 @@ game_menus = [
 	#Calculate Formula A here - Kham
 	(try_begin), 
 		(eq, "$new_rank_formula_calculated", 0),
-		(call_script, "script_calculate_formula_a", 1),
+		(call_script, "script_calculate_formula_a"),
 		(assign, "$nf_helping_allies", 1),
 	(try_end),
 	#Calculate Formula A END

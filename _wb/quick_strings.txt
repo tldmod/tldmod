@@ -649,8 +649,8 @@ qstr_have_won_the_sea_bat have_won_the_sea_battle,_demoralizing_your_troops._The
 qstr_loses_Faction_Strength loses_Faction_Strength_due_to_the_destructive_raid.
 qstr_loses_Faction_Strength_ loses_Faction_Strength_due_to_the_your_success_at_the_sea.
 qstr_You_spent_{reg67}_of You_spent_{reg67}_of_your_influence_with_{s1},_with_{reg66}_remaining.
-qstr_DEBUG:{s13}_attached DEBUG:{s13}_attached_to_encountered_party
-qstr_{reg32}_parties_atta {reg32}_parties_attached_to_encountered_party
+qstr_{s15}_VS_{s16} {s15}_VS_{s16}
+qstr_Pre_div:_{reg71}___A Pre-div:_{reg71}_-_A:_{reg67}
 qstr_Pre_Division:_A:{reg Pre-Division:_A:{reg71}_--_B:{reg68}_--_C:{reg70}_--__D:{reg61}_--_E:{reg63}
 qstr_Formula:_[_A:{reg67} Formula:_[(A:{reg67}_+_B:{reg69}_-_C:{reg64})
 qstr_Formula:_[_A:{reg67}_ Formula:_[(A:{reg67}_+_B:{reg69}_-_C:{reg64})_*_D:_{reg61}]/20000

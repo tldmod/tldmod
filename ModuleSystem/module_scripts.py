@@ -23987,78 +23987,55 @@ command_cursor_scripts = [
 
 ("calculate_formula_a", [
 	
-	(store_script_param, ":helping_allies", 1),
 
 	#Kham - Called in encounter game menus (e.g simple encounter)
 
 	#Calculate A: Sum of All Enemy Party Types / 10.
+	
 	(assign, "$g_ally_victory_value_point", 0),
 	(assign, ":nf_enemy_party_type_sum", 0),
 
-	#Primary Encountered Party
-
-	(party_get_slot, ":primary_party_type", "$g_encountered_party", slot_party_type),
-	(party_get_slot, ":primary_party_victory_value_point", "$g_encountered_party", slot_party_victory_value),
-	(store_faction_of_party, ":primary_party_faction", "$g_encountered_party"),
-	(store_relation, ":primary_party_relation", ":primary_party_faction", "$players_kingdom"),
-	(try_begin),
-		(gt, ":primary_party_relation", 0), #ally
-		(val_add, "$g_ally_victory_value_point", ":primary_party_victory_value_point"),
-	(else_try),
-		(eq, ":primary_party_type", spt_bandit),
-		(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
-	(else_try),
-		(val_add, ":nf_enemy_party_type_sum", ":primary_party_victory_value_point"), #Add vp here for primary party encountered.
-	(try_end),
-
-	#Everyone else
-	(try_begin),
-		(eq, ":helping_allies", 1),
-		(assign, ":encountered_party", "$g_encountered_party_2"),
-	(else_try),
-		(assign, ":encountered_party", "$g_encountered_party"),
-	(try_end),
-	
-	(party_get_num_attached_parties, ":nf_num_attached_parties",  ":encountered_party"),
-	(try_for_range, ":nf_attached_party_rank", 0, ":nf_num_attached_parties"),
-		(party_get_attached_party_with_rank, ":nf_attached_party", ":encountered_party", ":nf_attached_party_rank"),
-		(neq, ":nf_attached_party", "p_main_party"),
+	(try_for_parties, ":cur_party"), 
+		(party_get_battle_opponent, ":opponent", ":cur_party"),
+		(this_or_next|eq, ":opponent", "$g_encountered_party"),
+		(this_or_next|eq, ":opponent", "p_main_party"),
+		(eq, ":opponent", "$g_encountered_party_2"),
+		(neq, ":cur_party", "p_main_party"),
+		(party_get_slot, ":party_type", ":cur_party", slot_party_type),
+		(party_get_slot, ":party_victory_value_point", ":cur_party", slot_party_victory_value),
+		(store_faction_of_party, ":party_faction", ":cur_party"),
+		(store_relation, ":party_relation", ":party_faction", "$players_kingdom"),
+		(try_begin),
+			(gt, ":party_relation", 0), #ally
+			(val_add, "$g_ally_victory_value_point", ":party_victory_value_point"),
+		(else_try),
+			(eq, ":party_type", spt_bandit),
+			(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
+			(else_try),
+			(val_add, ":nf_enemy_party_type_sum", ":party_victory_value_point"), #Add vp here for primary party encountered.
+		(try_end),
 
 		#Debug
 		(try_begin),
 			(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test mode
-			(str_store_party_name, s13, ":nf_attached_party"), 
-			(display_message, "@DEBUG:{s13} attached to encountered party", color_good_news),
+			(str_store_party_name, s15, ":cur_party"),
+			(str_store_party_name, s16, ":opponent"),
+			(display_message, "@{s15} VS {s16}", color_good_news),
 		(try_end),
+		
+	(try_end),
 
-		(store_faction_of_party, ":nf_faction", ":nf_attached_party"),
-		(store_relation, ":nf_rel", ":nf_faction", "$players_kingdom"),
-		(party_get_slot, ":nf_party_type", ":nf_attached_party", slot_party_type),
-		(party_get_slot, ":nf_party_victory_value_point", ":nf_attached_party", slot_party_victory_value),
-		(try_begin),
-			(gt, ":nf_rel", 0), #ally
-			(val_add, "$g_ally_victory_value_point", ":nf_party_victory_value_point"),
-		(else_try),
-			(eq, ":nf_party_type", spt_bandit),
-			(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
-		(else_try),
-			(val_add, ":nf_enemy_party_type_sum", ":nf_party_victory_value_point"), #Add up the victory values here
-		(try_end),
-	(try_end),
-	
-	#Debug
-	(try_begin),
-		(troop_slot_eq, "trp_player", slot_troop_home, 22),
-		(assign, reg32, ":nf_num_attached_parties"),
-		(display_message, "@{reg32} parties attached to encountered party", color_good_news),
-	(try_end),
-	
 	(assign, reg71, ":nf_enemy_party_type_sum"), #Debug for A
 
 	(val_mul, ":nf_enemy_party_type_sum", 20), #multiply by 20, as per formula (Apr 22, 2018) #InVain, we do this to bring this value to the same level as B and C, then divide by 200
 	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
-
 	(assign, reg67, ":nf_enemy_party_type_sum"), #Debug for A
+
+	(try_begin),
+		(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test mode
+		(display_message, "@Pre-div: {reg71} - A: {reg67}", color_good_news),
+	(try_end),
+
 	
 	#END Calculate A
 ]),
