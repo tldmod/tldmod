@@ -755,7 +755,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   tld_animals_init,
   tld_animal_strikes,
   tld_remove_riderless_animals,
-  tld_warg_leap_attack,
+  #tld_warg_leap_attack,
   reset_fog,
   horse_whistle_init,
   horse_whistle,

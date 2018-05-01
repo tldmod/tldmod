@@ -392,6 +392,7 @@ field_ai_triggers = [
     (agent_get_item_id,":warg_itm",":agent"),
     (is_between, ":warg_itm", item_warg_begin, item_warg_end),
     (agent_get_rider, ":rider", ":agent"),
+    (agent_is_active,":rider"),
     (agent_get_troop_id, ":invis_warg", ":rider"),
     (is_between, ":invis_warg", warg_ghost_begin, warg_ghost_end), #Riderless Warg
   ],
