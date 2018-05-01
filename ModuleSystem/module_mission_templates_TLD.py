@@ -2083,9 +2083,9 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 	(try_for_agents,":troll"),
 		(agent_is_alive,":troll"),
 		(agent_is_human,":troll"),
-		(agent_get_troop_id,reg0,":troll"), # is it a troll?
-		(troop_get_type, reg0, reg0),
-		(eq, reg0, tf_troll),
+		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		(troop_get_type, ":troll_type", ":troll_troop_id"),
+		(eq, ":troll_type", tf_troll),
         #Trolls charging - begin
         (agent_get_team, ":troll_team", ":troll"),
         (agent_get_position, pos1, ":troll"),
@@ -2174,8 +2174,8 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 					(teams_are_enemies, ":victim_team", ":troll_team"),
 					(agent_get_position,2,":victim"),
 					(get_distance_between_positions,":dist",1,2),
-					(store_random_in_range, reg0, 0,61), 
-					(val_sub, ":dist", reg0), # swing earlier than in range (sometimes)
+					(store_random_in_range, ":random_swing", 0,61), 
+					(val_sub, ":dist", ":random_swing"), # swing earlier than in range (sometimes)
 					(lt,":dist",300), # 200+weapon size/2
 						
 					(neg|position_is_behind_position,2,1),
@@ -2290,12 +2290,12 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 				(eq,":hit",1),
 			
 				# test if friendly troll...
-				(agent_get_troop_id,reg0,":victim"),
-				(troop_get_type, ":victim_type", reg0),
-				(agent_get_team, reg1, ":victim"),
-				(agent_get_team, reg2, ":troll"),
+				(agent_get_troop_id,":victim_troop_id",":victim"),
+				(troop_get_type, ":victim_type", ":victim_troop_id"),
+				(agent_get_team, ":victim_team", ":victim"),
+				(agent_get_team, ":troll_team", ":troll"),
 				(neq|this_or_next, ":victim_type", tf_troll), # trolls don't hit trolls!
-				(teams_are_enemies, reg1, reg2),  # ...unless they are enemy trolls
+				(teams_are_enemies, ":victim_team", ":troll_team"),  # ...unless they are enemy trolls
 			
 				(try_begin),
 					(agent_is_human,":victim"),
@@ -2346,8 +2346,8 @@ custom_troll_hitting = ( 0.3,0,0, [(gt,"$trolls_in_battle",0)],[
 									(agent_set_animation, ":victim", "anim_strike_fly_back_rise"), # send them flying back
 								(try_end),
 							(try_end),
-							(store_random_in_range,reg0,1,5),
-							(agent_set_animation_progress, ":victim", reg0), # differentiate timings a bit
+							(store_random_in_range,":random_timings",1,5),
+							(agent_set_animation_progress, ":victim", ":random_timings"), # differentiate timings a bit
 						(try_end),
 					#(else_try),
 						# victim has been killed: won't rise after fall USELESS: game won't listen...
@@ -2373,16 +2373,16 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
         (get_player_agent_no, ":player_agent"),
 		(try_for_agents,":troll"),									# horse rearing near troll
 			(agent_is_alive, ":troll"), #GA: horses hate dead trolls too - Removed (kham)
-			(agent_get_troop_id,reg0,":troll"),
+			(agent_get_troop_id,":troop_race",":troll"),
 			(try_begin), # CC: Change string if it is an ent and not a troll			
-				(assign, reg5, 0),
-				(eq, reg0, "trp_ent"),
-				(assign, reg5, 1),
+				(assign, reg73, 0),
+				(eq, ":troop_race", "trp_ent"),
+				(assign, reg73, 1),
 			(try_end),
-			(troop_get_type, reg0, reg0),
+			(troop_get_type, ":type", ":troop_race"),
 			(try_begin),
-				(eq, reg0, tf_troll),
-				(agent_get_position,1,":troll"),
+				(eq, ":type", tf_troll),
+				(agent_get_position,pos1,":troll"),
 				(agent_get_team, ":troll_team", ":troll"),
 
 				] + (is_a_wb_mt==1 and [
@@ -2400,16 +2400,16 @@ custom_tld_horses_hate_trolls = (0,0,1, [(eq,"$trolls_in_battle",1)],[
 					(agent_get_position,2,":horse"),
 					(get_distance_between_positions,":dist",1,2),
 					(lt,":dist",700),
-					(store_random_in_range, reg0, 0, 12),
-					(try_begin),(eq,reg0,0),(agent_set_animation,":horse","anim_horse_rear"      ),(agent_play_sound,":horse","snd_neigh"),
-					 (else_try),(eq,reg0,1),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
-					 (else_try),(eq,reg0,2),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
+					(store_random_in_range, ":random", 0, 12),
+					(try_begin),(eq,":random",0),(agent_set_animation,":horse","anim_horse_rear"      ),(agent_play_sound,":horse","snd_neigh"),
+					 (else_try),(eq,":random",1),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
+					 (else_try),(eq,":random",2),(agent_set_animation,":horse","anim_horse_turn_right"),(agent_play_sound,":horse","snd_horse_low_whinny"),
 					(try_end),
                     # let the player know what happened
 					(try_begin),
                         (eq, ":rider", ":player_agent"),
-                        (is_between, reg0, 0, 3),
-                        (display_message, "@Your mount is scared by the {reg5?ent:troll}!",color_bad_news),
+                        (is_between, ":random", 0, 3),
+                        (display_message, "@Your mount is scared by the {reg73?ent:troll}!",color_bad_news),
 					(try_end),
 				(try_end),
 			(try_end),

@@ -23987,6 +23987,8 @@ command_cursor_scripts = [
 
 ("calculate_formula_a", [
 	
+	(store_script_param, ":helping_allies", 1),
+
 	#Kham - Called in encounter game menus (e.g simple encounter)
 
 	#Calculate A: Sum of All Enemy Party Types / 10.
@@ -23994,6 +23996,7 @@ command_cursor_scripts = [
 	(assign, ":nf_enemy_party_type_sum", 0),
 
 	#Primary Encountered Party
+
 	(party_get_slot, ":primary_party_type", "$g_encountered_party", slot_party_type),
 	(party_get_slot, ":primary_party_victory_value_point", "$g_encountered_party", slot_party_victory_value),
 	(store_faction_of_party, ":primary_party_faction", "$g_encountered_party"),
@@ -24009,9 +24012,16 @@ command_cursor_scripts = [
 	(try_end),
 
 	#Everyone else
-	(party_get_num_attached_parties, ":nf_num_attached_parties",  "$g_encountered_party"),
+	(try_begin),
+		(eq, ":helping_allies", 1),
+		(assign, ":encountered_party", "$g_encountered_party_2"),
+	(else_try),
+		(assign, ":encountered_party", "$g_encountered_party"),
+	(try_end),
+	
+	(party_get_num_attached_parties, ":nf_num_attached_parties",  ":encountered_party"),
 	(try_for_range, ":nf_attached_party_rank", 0, ":nf_num_attached_parties"),
-		(party_get_attached_party_with_rank, ":nf_attached_party", "$g_encountered_party", ":nf_attached_party_rank"),
+		(party_get_attached_party_with_rank, ":nf_attached_party", ":encountered_party", ":nf_attached_party_rank"),
 		(neq, ":nf_attached_party", "p_main_party"),
 
 		#Debug
