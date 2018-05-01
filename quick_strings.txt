@@ -1,4 +1,4 @@
-1567
+1571
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -1053,6 +1053,7 @@ qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_DEBUG:_Eliminate_Par DEBUG:_Eliminate_Parties_-_Current:_{reg0},_New:_{reg1}
 qstr_{s1}_parties_defeate {s1}_parties_defeated:_{reg1}_out_of_{reg2}
 qstr_{reg6}_{s2}_troops_k {reg6}_{s2}_troops_killed.
+qstr_{reg6}_{s2}_{s4}_tro {reg6}_{s2}_{s4}_troops_killed.
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
@@ -1068,6 +1069,8 @@ qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
 qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
 qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
 qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
+qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
+qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
 qstr_{reg70}___Qst_GP_Tri {reg70}_-_Qst_GP_Trigger_0
 qstr_{reg70}___Qst_GP_Trig {reg70}_-_Qst_GP_Trigger_1
@@ -1098,8 +1101,9 @@ qstr_{s27}:_Party_morale_ {s27}:_Party_morale_increased.
 qstr_{s27}:_Party_morale_d {s27}:_Party_morale_decreased.
 qstr_You_have_failed_to_f You_have_failed_to_fulfill_your_oath_to_avenge_Balin_and_his_company!
 qstr_You_have_failed_to_fu You_have_failed_to_fulfill_your_oath_of_vengeance_for_{s1}'s_heroic_death!
-qstr_You_have_fulfilled_y You_have_fulfilled_your_oath_to_avenge_Balin_and_his_company!
-qstr_You_have_fulfilled_yo You_have_fulfilled_your_oath_of_vengeance_for_{s1}'s_heroic_death!
+qstr_Your_troops_value_yo Your_troops_value_your_effort_to_fullfill_your_oath,_but_acknowledge_that_events_unfolded_too_quick._As_a_result,_
+qstr_{s22}You_have_fulfil {s22}You_have_fulfilled_your_oath_to_avenge_Balin_and_his_company!
+qstr_{s22}You_have_fulfill {s22}You_have_fulfilled_your_oath_of_vengeance_for_{s1}'s_heroic_death!
 qstr_Reinforcements Reinforcements
 qstr_Refugees_Escaped:_{r Refugees_Escaped:_{reg10}_---_Refugees_Killed:_{reg11}
 qstr_Raider_Parties_Kille Raider_Parties_Killed:_{reg12}

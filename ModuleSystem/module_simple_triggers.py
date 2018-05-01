@@ -1622,7 +1622,7 @@ simple_triggers = [
 	(try_end),
     ]),
 
-# (49) Move cattle herd + update eliminate patrols quest + update Oath Kills
+# (49) Move cattle herd + update eliminate patrols quest + update Oath Kills + update Targeted Kills
 (0.5,[
     (try_begin),
       (check_quest_active,"qst_move_cattle_herd"),
@@ -1695,6 +1695,31 @@ simple_triggers = [
       (str_store_string, s3, "@{reg6} {s2} troops killed."),
       (add_quest_note_from_sreg, "qst_oath_of_vengeance", 2, s3, 0),
     (try_end),
+
+    #Report number of kills for the kill quest
+    (try_begin),
+      (check_quest_active, "qst_blank_quest_05"),
+      (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
+      (quest_get_slot, ":current_amount", "qst_blank_quest_05", slot_quest_current_state),
+      (str_store_faction_name, s2, ":target_faction"),
+      (assign, reg6, ":current_amount"),
+      (str_store_string, s3, "@{reg6} {s2} troops killed."),
+      (add_quest_note_from_sreg, "qst_blank_quest_05", 2, s3, 0),
+    (try_end),
+
+    #Report number of kills for the targeted kill quest
+    (try_begin),
+      (check_quest_active, "qst_blank_quest_04"),
+      (quest_get_slot, ":target_faction", "qst_blank_quest_04", slot_quest_target_faction),
+      (quest_get_slot, ":target_troop", "qst_blank_quest_04", slot_quest_target_troop),
+      (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
+      (str_store_faction_name, s2, ":target_faction"),
+      (str_store_troop_name, s4, ":target_troop"),
+      (assign, reg6, ":current_amount"),
+      (str_store_string, s3, "@{reg6} {s2} {s4} troops killed."),
+      (add_quest_note_from_sreg, "qst_blank_quest_04", 2, s3, 0),
+    (try_end),
+            
             
     ]),
 # (50)
@@ -3108,7 +3133,15 @@ simple_triggers = [
     #(assign, reg66, ":scouts"),
     #(assign, reg67, ":raider"),
     #(assign, reg68, ":war_party"),
-    #(assign, reg69, ":cur_followers"),
+    (assign, reg69, ":cur_followers"),
+
+    (try_begin),
+      (eq, ":cur_followers", 1),
+      (display_message, "@You have {reg69} ally party following you", message_neutral),
+    (else_try),
+      (gt, ":cur_followers", 1),
+      (display_message, "@You have {reg69} ally parties following you", message_neutral),
+    (try_end),
 
     #(display_message, "@Total: {reg69} - Scouts:{reg66} - Raiders: {reg67} - Patrols: {reg68}", color_good_news),
 

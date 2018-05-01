@@ -1523,10 +1523,22 @@ triggers = [
 	#(try_end),
 	#(val_sub, ":count", 3), # need to kill at least 3 target faction parties to succeed
 
+  (faction_get_slot, ":target_faction_strength", ":target", slot_faction_strength),
+
+  (try_begin),
+    (eq, ":target_faction_strength", fac_str_dying),
+    (store_div, ":tld_oath_kills", tld_oath_kills,2),
+  (else_try),
+    (eq, ":target_faction_strength", fac_str_very_weak),
+    (store_sub, ":tld_oath_kills", tld_oath_kills, 30),
+  (else_try),
+    (assign, ":tld_oath_kills", tld_oath_kills),
+  (try_end),
+
 	(try_begin),
 		(faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: Faction must be alive to fail quest, otherwise you suceed.
 		#(neg|ge, ":count", ":start_killcount"), - #Kham Refactor Commented Out
-    (neg|ge, "$oath_kills", tld_oath_kills),
+    (neg|ge, "$oath_kills", ":tld_oath_kills"),
 		(call_script, "script_fail_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 0),
 		(call_script, "script_end_quest", "qst_oath_of_vengeance"),
@@ -1542,7 +1554,7 @@ triggers = [
 		(call_script, "script_cf_gain_trait_oathbreaker"),
 	(else_try),
 		#(ge, ":count", ":start_killcount"), #Kham Refactor Commented Out
-		(this_or_next|ge, "$oath_kills", tld_oath_kills),
+		(this_or_next|ge, "$oath_kills", ":tld_oath_kills"),
     (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active), # CC: If faction is not active, you have completed the quest.
     (call_script, "script_succeed_quest", "qst_oath_of_vengeance"),
 		(set_show_messages, 0),
@@ -1557,11 +1569,19 @@ triggers = [
     #Kham - Oath of Vengeance Refactor END
 
     (try_begin),
+      (neg|faction_slot_eq, ":target", slot_faction_state, sfs_active),
+      (str_store_string, s22, "@Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, "),
+    (else_try),
+      (faction_slot_eq, ":target", slot_faction_state, sfs_active),
+      (str_store_string, s22, "@ "),
+    (try_end),
+
+    (try_begin),
       (eq, ":moria",1),
-      (display_message, "@You have fulfilled your oath to avenge Balin and his company!", color_good_news),
+      (display_message, "@{s22}You have fulfilled your oath to avenge Balin and his company!", color_good_news),
     (else_try),
   		(str_store_troop_name, s1, ":hero"),
-  		(display_message, "@You have fulfilled your oath of vengeance for {s1}'s heroic death!", color_good_news),
+  		(display_message, "@{s22}You have fulfilled your oath of vengeance for {s1}'s heroic death!", color_good_news),
     (try_end),
 		(call_script, "script_increase_rank", ":source_fac", reg1),
 	(try_end),
