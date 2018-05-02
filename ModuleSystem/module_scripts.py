@@ -24027,7 +24027,7 @@ command_cursor_scripts = [
 
 	(assign, reg71, ":nf_enemy_party_type_sum"), #Debug for A
 
-	(val_mul, ":nf_enemy_party_type_sum", 20), #multiply by 20, as per formula (Apr 22, 2018) #InVain, we do this to bring this value to the same level as B and C, then divide by 200
+	(val_mul, ":nf_enemy_party_type_sum", 10), #multiply by 10, we do this to bring this value to  asimilar level as B and C, then divide all by 200
 	(assign, "$g_formula_a", ":nf_enemy_party_type_sum"),
 	(assign, reg67, ":nf_enemy_party_type_sum"), #Debug for A
 
