@@ -273,6 +273,8 @@ formAI_scripts = [
 	(store_script_param, ":battle_presence", 3),
 	(call_script, "script_calculate_decision_numbers", ":team_no", ":battle_presence"),
 	
+	(store_mission_timer_a, ":timer"), 
+
 	##JL code for checking disengagement by reinforcements:
 	(try_begin),
 		(eq, "$formai_disengage", 0), #if we have no disengagement ordered yet then
@@ -329,12 +331,14 @@ formAI_scripts = [
 		(assign, ":num_enemy_infantry", 0),
 		(assign, ":num_enemy_cavalry", 0),
 		(assign, ":num_enemy_others", 0),
+		(assign, ":num_enemy_elves", 0),
 		(assign, ":sum_level_enemy_infantry", 0),
 		(assign, ":x_enemy", 0),
 		(assign, ":y_enemy", 0),
 		(try_for_agents, ":enemy_agent"),
 			(agent_is_alive, ":enemy_agent"),
 			(agent_is_human, ":enemy_agent"),
+			(agent_is_active, ":enemy_agent"),
 			(agent_get_team, ":enemy_team_no", ":enemy_agent"),
 			(teams_are_enemies, ":enemy_team_no", ":team_no"),
            # (agent_slot_eq, ":enemy_agent", slot_agent_is_running_away, 0),
@@ -342,6 +346,11 @@ formAI_scripts = [
             (agent_get_troop_id, ":enemy_troop", ":enemy_agent"),
             (troop_get_type, ":enemy_race", ":enemy_troop"),
 			(neq, ":enemy_race", tf_troll), #disregard trolls
+			
+			(try_begin),
+				(is_between, ":enemy_race", tf_elf_begin, tf_elf_end),
+				(val_add, ":num_enemy_elves", 1),
+			(try_end),
 
 			(agent_get_class, ":enemy_class_no", ":enemy_agent"),
 			(try_begin),
@@ -366,6 +375,7 @@ formAI_scripts = [
 			(try_for_agents, ":cur_agent"),
 				(agent_is_alive, ":cur_agent"),
 				(agent_is_human, ":cur_agent"),
+				(agent_is_active, ":cur_agent"),
 				(agent_get_team, ":cur_team_no", ":cur_agent"),
 				(eq, ":cur_team_no", ":team_no"),
 				#(agent_slot_eq, ":cur_agent", slot_agent_is_running_away, 0),
@@ -419,11 +429,16 @@ formAI_scripts = [
 		
 		(store_add, ":num_enemies", ":num_enemy_infantry", ":num_enemy_cavalry"),
 		(val_add, ":num_enemies", ":num_enemy_others"),
+
 		(gt, ":num_enemies", 0),
 		#JL get percentage of enemy others (archers, commpanions)
 		(assign, ":perc_enemy_others", ":num_enemy_others"), #assign enemy others percentage JL
 		(val_mul, ":perc_enemy_others", 100), #multiply by 100 to get percent JL
 		(val_div, ":perc_enemy_others", ":num_enemies"), #divide by total enemies to get ratio in percent JL
+
+		#Kham - Get % of Enemy Elves - Infantry charges if enemy elves > 20% of enemy composition
+		(store_mul, ":perc_enemy_elves", ":num_enemy_elves", 100),
+		(val_div, ":perc_enemy_elves", ":num_enemies"),
 		
 		(init_position, Enemy_Team_Pos),
 		(val_div, ":x_enemy", ":num_enemies"),
@@ -513,6 +528,14 @@ formAI_scripts = [
 			#(display_message, "@Archers ordered to charge to keep close with infantry."), #######################
 		(try_end),
 		
+		(assign, ":charge_against_elves", 0),
+
+		(try_begin),
+			(gt, ":perc_enemy_elves", 20), #if there are more than 20% enemy elves
+			(ge, ":timer", 90), #and it has been a 1.5 mins
+			(assign, ":charge_against_elves", 1), #activate infantry charge against elves
+		(try_end),
+
 		(try_begin),
 			(le, ":num_infantry", 0),
 			(assign, ":infantry_order", ":archer_order"),
@@ -808,7 +831,8 @@ formAI_scripts = [
 
 			#JL If enemy constitutes more than 40% then charge towards archers
 			(try_begin),
-				(eq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and infantry needs to close in with them quickly
+				(this_or_next|eq, "$formai_rand7", 35), #JL if the odds have been lowered to 35 then there are lots of archers and infantry needs to close in with them quickly
+				(eq, ":charge_against_elves", 1), #and Charge against elves is activated
 				(call_script, "script_formation_end", ":team_no", grc_infantry), #JL Kham added
 				(team_give_order, ":team_no", grc_infantry, mordr_charge), #charge the infantry forward towards cavalry and enemy				
 			(try_end),
@@ -1154,7 +1178,8 @@ formAI_scripts = [
 				
 				#JL Set cavalry to aggressively move towards archers if there are 45% or more of them:
 				(try_begin),
-					(gt, ":perc_enemy_others", 60), #if enemy others constitute more than 45% of total enemy #kham - changed to 60%
+					(this_or_next|gt, ":perc_enemy_others", 60), #if enemy others constitute more than 45% of total enemy #kham - changed to 60%
+					(gt, ":perc_enemy_elves", 30), #Or If enemy elves consitute more than 30% of the enemy
 					(assign, ":cavalry_order", mordr_charge),
 					(assign, "$formai_rand7", 35), #lower the odds requirement for around charge to 35
 				(else_try),

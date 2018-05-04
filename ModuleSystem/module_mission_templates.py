@@ -90,7 +90,7 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
   [
     (assign, "$cam_mode",   "$pref_cam_mode"),
     (assign, "$shoot_mode", 0),
-    (assign, "$cam_free",   0)
+    (assign, "$cam_free",   0),
   ]),
 
  # Piggyback on Camera Code for Displaying Agent Labels.
@@ -353,7 +353,204 @@ tld_animals_init = (
      (assign,"$animal_is_present",1),#general to activate scripts
    ])
 
-tld_animal_strikes = (
+
+## TLD Animal Strikes: 2 Versions for WB (optimized) / MB (original)
+
+
+tld_animal_strikes = ((is_a_wb_mt==1) and (
+  1, 0, 0, [(eq, "$animal_is_present",1)], [
+  (set_fixed_point_multiplier, 100),
+
+  (try_for_agents, ":agent"),
+    (agent_is_alive, ":agent"),
+    (agent_is_human, ":agent"),
+    (agent_is_active, ":agent"),
+    (agent_get_troop_id, ":agent_trp", ":agent"),
+    
+    #This is where we check the type of animal
+    (eq|this_or_next, ":agent_trp", "trp_spider"),
+    (eq|this_or_next, ":agent_trp", "trp_wolf"),
+    (eq, ":agent_trp", "trp_bear"),
+
+    #This is where we get the mount
+    (agent_get_horse, ":horse", ":agent"),
+    (ge, ":horse", 0),
+
+    #This is where we cache the enemies:
+    (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":agent"),
+    (gt, ":num_nearby_agents", 0),
+
+    #Kham - Let's increase the likelihood of special attacks for the big guys, as charge attacks are not enough
+    (try_begin),
+      (eq, ":agent_trp", "trp_wolf"),
+      (assign, ":chance", 45),
+    (else_try),
+      (assign, ":chance", 55),
+    (try_end),
+
+    #Chance is calculated and checked here:
+    (store_random_in_range, ":rnd", 0, 100),
+    (lt, ":rnd", ":chance"),  #Kham - changed this to the above
+    (assign, ":enemy_in_front", 0),
+
+    #Get Agent's position here:
+    (agent_get_position, pos6, ":agent"),
+
+    #Look for the cached enemies
+    (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+      (neq, ":enemy_in_front", 1),
+      (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
+      (agent_is_alive, ":enemy_agent"),
+      (agent_is_active, ":enemy_agent"),
+      (agent_get_position, pos8, ":enemy_agent"), 
+      (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
+      (lt, ":dist", 300),
+      (neg|position_is_behind_position, pos8, pos6), #2, 1
+      (assign, ":enemy_in_front", 1),
+    (try_end),
+
+    (eq, ":enemy_in_front", 1),
+
+    #Kham - let's give 'em some sounds when attacking
+    (try_begin),
+      (eq, ":agent_trp", "trp_spider"),
+      (assign, ":sound", "snd_spider_strike"),
+    (else_try),
+      (eq, ":agent_trp", "trp_wolf"),
+      (assign, ":sound", "snd_wolf_strike"),
+    (else_try),
+      (eq, ":agent_trp", "trp_bear"),
+      (assign, ":sound", "snd_bear_strike"),
+    (try_end),
+
+    (store_random_in_range, ":rnd_2", 0, 100),
+    (try_begin),
+      (le, ":rnd_2", 25), #25% chance to make sound
+      (agent_play_sound, ":horse", ":sound"),
+    (try_end),
+
+    #This is where Animation is assigned
+
+    (assign, ":anim", "anim_bear_slap_right"),
+    (try_begin),
+      (eq, ":agent_trp", "trp_spider"),
+      (assign, ":anim", "anim_spider_attack"),
+    (else_try),
+      (eq, ":agent_trp", "trp_wolf"),
+      (try_begin),
+        (le, ":rnd_2", 10),
+        (assign, ":anim", "anim_warg_leapattack"),
+      (else_try),
+        (assign, ":anim", "anim_wolf_snap"),
+      (try_end),
+    (else_try),
+      (eq, ":agent_trp", "trp_bear"),
+      (store_random_in_range, ":rnd_2", 0, 100),
+      (try_begin),
+        (le, ":rnd_2", 49),
+        (assign, ":anim", "anim_bear_slap_right"),
+      (else_try),
+        (assign, ":anim", "anim_bear_uppercut"),
+      (try_end),
+    (try_end),
+
+    (agent_set_animation, ":horse", ":anim"),
+
+    #Damaging Enemies
+    (assign, ":damaged_agents", 0),
+
+    (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+      (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
+      (agent_is_alive, ":enemy_agent"),
+      (agent_is_human, ":enemy_agent"),
+      (agent_is_active, ":enemy_agent"),
+      (agent_get_position, pos8, ":enemy_agent"),
+      (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
+      (lt, ":dist", 300),
+      (neg|position_is_behind_position, pos8, pos6), #2, 1
+      (assign, ":agents_to_damage", 100), 
+      (assign, ":channel", 0),
+      (agent_get_horse, ":target_horse", ":enemy_agent"),
+
+      (try_begin),
+        (eq, ":agent_trp", "trp_spider"),
+        (store_random_in_range, reg66, 5, 10),
+        (try_begin),
+          (le, ":rnd_2", 30), #30% chance for a fly back
+          (assign, ":hit_anim", "anim_strike_fly_back"),
+        (else_try),
+          (assign, ":hit_anim", "anim_strike_legs_front"),
+        (try_end),
+        (assign, ":agents_to_damage", 1),
+      (else_try),
+        (eq, ":agent_trp", "trp_wolf"),
+        (eq, ":anim", "anim_warg_leapattack"),
+        (try_begin),
+          (le, ":rnd_2", 30), #30% chance for a fly back
+          (try_begin),
+            (lt, ":target_horse", 0),
+            (store_random_in_range, reg66, 5, 11), #Kham - reduced from 5, 10, cause there are a lot of wolves
+            (assign, ":hit_anim", "anim_strike_fly_back"),
+          (else_try),
+            (gt, ":target_horse", 0),
+            (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+            (agent_start_running_away, ":target_horse"),
+            (agent_stop_running_away, ":target_horse"),
+            (store_random_in_range, reg66, 5, 11), #Kham - reduced from 5, 10, cause there are a lot of wolves
+          (try_end),
+        (else_try),
+          (store_random_in_range, reg66, 3, 11), #Kham - reduced from 10, 15, cause there are a lot of wolves
+          (try_begin),
+            (lt, ":target_horse", 0),
+            (assign, ":hit_anim", "anim_strike_legs_front"),
+          (else_try),
+            (gt, ":target_horse", 0),
+            (assign, ":hit_anim", "anim_strike_legs_front"),
+            (assign, ":channel", 1),
+          (try_end),
+        (try_end),
+        (assign, ":agents_to_damage", 1),
+      (else_try),
+        (eq, ":agent_trp", "trp_bear"),
+        (store_random_in_range, reg66, 10, 30),
+        (try_begin),
+          (lt, ":target_horse", 0),
+          (assign, ":hit_anim", "anim_strike_fly_back"),
+        (else_try),
+          (gt, ":target_horse", 0),
+          (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+          (agent_start_running_away, ":target_horse"),
+          (agent_stop_running_away, ":target_horse"),
+        (try_end),
+        (assign, ":agents_to_damage", 100),
+      (try_end),
+      #(display_message, "@DEBUG: Bear strikes!"),
+      (try_begin),
+        (get_player_agent_no, ":player"),
+        (eq, ":enemy_agent", ":player"),
+        (display_message, "@Received {reg66} damage."),
+      (try_end),
+      (le, ":damaged_agents", ":agents_to_damage"), # Allows us to limit the number of agents an animal can strike
+      (set_show_messages, 0),
+      (store_agent_hit_points,":hp",":enemy_agent",1),
+      (val_sub, ":hp", reg66),
+      (agent_set_hit_points, ":enemy_agent", ":hp", 1),
+      (try_begin),
+        (le, ":hp", 0),
+        (agent_deliver_damage_to_agent, ":agent", ":enemy_agent"),
+      (try_end),
+      (set_show_messages, 1),
+      (val_add, ":damaged_agents", 1),
+      (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
+    (try_end),
+  (try_end),
+    ])
+
+or
+
+## M&B Original Animal Attacks Start Here
+
+ (
   1, 0, 0, [(eq, "$animal_is_present",1)], [
   (set_fixed_point_multiplier, 100),
   (try_for_agents, ":agent"),
@@ -380,13 +577,7 @@ tld_animal_strikes = (
     (lt, ":rnd", ":chance"),  #Kham - changed this to the above
 
     (assign, ":enemy_in_front", 0),
-
-    ] + ((is_a_wb_mt==1) and [
-    (agent_get_position, pos_belfry_begin, ":agent"),
-    (try_for_agents, ":target", pos_belfry_begin, 350),
-    ] or [
     (try_for_agents, ":target"),
-    ]) + [
       (neq, ":enemy_in_front", 1),
       (neq, ":agent", ":target"), # Stop hitting yourself!
       (neq, ":agent", ":horse"), # Stop hitting yourself!
@@ -442,13 +633,7 @@ tld_animal_strikes = (
     (try_end),
 
     (agent_set_animation, ":horse", ":anim"),
-
-    ] + ((is_a_wb_mt==1) and [
-    (agent_get_position, pos_belfry_begin, ":agent"),
-    (try_for_agents, ":target", pos_belfry_begin, 350),
-    ] or [
     (try_for_agents, ":target"),
-    ]) + [
       (neq, ":agent", ":target"), # Stop hitting yourself!
       (neq, ":agent", ":horse"), # Stop hitting yourself!
       (agent_is_alive, ":agent"),
@@ -511,110 +696,79 @@ tld_animal_strikes = (
     (try_end),
   (try_end),
   ])
+)
 
 
-tld_warg_leap_attack = (
-  1, 0, 0, [], [
+tld_warg_leap_attack = ((is_a_wb_mt==1) and [ 
+  (3, 0, 0, [], [
   (set_fixed_point_multiplier, 100),
-  (try_for_agents, ":agent"),
+  
+  (try_for_agents, ":agent"), #Instead of Try_For_Agents nested loops, we cache them instead (WB only operation)
     (agent_is_alive, ":agent"),
     (agent_is_human, ":agent"),
     (agent_get_troop_id, ":agent_trp", ":agent"),
     (is_between, ":agent_trp", warg_ghost_begin, warg_ghost_end),
     (agent_get_horse, ":warg", ":agent"),
     (ge, ":warg", 0),
-    (call_script, "script_count_enemy_agents_around_agent", ":agent", 300),
-    (gt, reg0, 0),
+    (agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":agent"),
+    (gt, ":num_nearby_agents", 0),
 
     (store_random_in_range, ":rnd", 0, 100),
-
-    (assign, ":chance", 35),
-
-    (lt, ":rnd", ":chance"), 
-
+    (lt, ":rnd", 55), #Increased the Chance, but reduced the frequency.
     (assign, ":enemy_in_front", 0),
 
-    ] + ((is_a_wb_mt==1) and [
-    (agent_get_position, pos_belfry_begin, ":agent"),
-    (try_for_agents, ":target", pos_belfry_begin, 500),
-    ] or [
-    (try_for_agents, ":target"),
-    ]) + [
-      (neq, ":enemy_in_front", 1),
-      (neq, ":agent", ":target"), # Stop hitting yourself!
-      (neq, ":agent", ":warg"), # Stop hitting yourself!
-      (agent_get_position, pos6, ":agent"),
-      (agent_get_position, pos8, ":target"),
-      (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
-      (lt, ":dist", 300),
-      (neg|position_is_behind_position, pos8, pos6), #2, 1
-      (agent_get_team, ":agent_team", ":agent"),
-      (agent_get_team, ":target_team", ":target"),
-      (teams_are_enemies, ":agent_team", ":target_team"),
-      (assign, ":enemy_in_front", 1),
+    (agent_get_position, pos6, ":agent"),
+  
+  (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+    (neq, ":enemy_in_front", 1),
+    (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
+    (agent_is_alive, ":enemy_agent"),
+    (agent_get_position, pos8, ":enemy_agent"),
+    (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
+    (lt, ":dist", 300),
+    (neg|position_is_behind_position, pos8, pos6), #2, 1
+    (assign, ":enemy_in_front", 1),
     (try_end),
+  
     (eq, ":enemy_in_front", 1),
-    (assign, ":anim", "anim_warg_leapattack"),
 
     #Kham - let's give 'em some sounds when attacking
     (try_begin),
-      (le, ":rnd", 25),
-      (assign, ":sound", "snd_wolf_strike"),
+      (le, ":rnd", 25), 
+    (agent_play_sound, ":warg", "snd_wolf_strike"),
     (else_try),
-      (assign, ":sound", "snd_warg_lone_woof"),
+      (agent_play_sound, ":warg", "snd_warg_lone_woof"),
     (try_end),
 
-    (try_begin),
-      (le, ":rnd", 25), #25% chance to make sound
-      (agent_play_sound, ":warg", ":sound"),
-    (try_end),
-
-    (agent_set_animation, ":warg", ":anim"),
-
-    ] + ((is_a_wb_mt==1) and [
-    (agent_get_position, pos12, ":agent"),
-    (try_for_agents, ":target", pos12, 500),
-    ] or [
-    (try_for_agents, ":target"),
-    ]) + [
-      (neq, ":agent", ":target"), # Stop hitting yourself!
-      (neq, ":agent", ":warg"), # Stop hitting yourself!
-      (agent_is_alive, ":agent"),
-      (agent_is_human, ":agent"),
-      (agent_get_position, pos6, ":agent"), 
-      (agent_get_position, pos8, ":target"),
+    (agent_set_animation, ":warg", "anim_warg_leapattack"),
+  
+  (assign, ":damaged_agents", 0),
+  (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+    (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
+    (agent_is_alive, ":enemy_agent"),
+      (agent_is_human, ":enemy_agent"),
+      (agent_get_position, pos8, ":enemy_agent"),
       (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
       (lt, ":dist", 300),
       (neg|position_is_behind_position, pos8, pos6), #2, 1
-      (agent_get_team, ":agent_team", ":agent"),
-      (agent_get_team, ":target_team", ":target"),
-      (teams_are_enemies, ":agent_team", ":target_team"), 
-      (assign, ":damaged_agents", 0),
-      (assign, ":agents_to_damage", 100),   
       (store_random_in_range, reg66, 10, 16),
       (store_random_in_range, ":rand_2", 0, 100),
       (assign, ":channel", 0),
+      (agent_get_horse, ":target_horse", ":enemy_agent"),
       (try_begin),
         (le, ":rand_2", 15), #15% chance for a fly back
-        (agent_get_horse, ":target_horse", ":target"),
         (try_begin),
           (lt, ":target_horse", 0),
           (assign, ":hit_anim", "anim_strike_fly_back"),
           (assign, reg66, 5),
         (else_try),
-          (gt, ":target_horse", 0), #No flyback if riding a horse
-          ] + (is_a_wb_mt==1 and [
+          (gt, ":target_horse", 0),
           (assign, ":hit_anim", "anim_strike_fly_back_rise"),
           (agent_start_running_away, ":target_horse"),
           (agent_stop_running_away, ":target_horse"),
-          (assign, reg66, 5),
-           ] or [
-          (assign, ":hit_anim", "anim_strike_legs_front"),
-          (assign, ":channel", 1),
-          ]) + [   
+          (assign, reg66, 5),  
         (try_end),
       (else_try),
-        (agent_get_horse, ":target_horse", ":target"),
         (try_begin),
           (gt, ":target_horse", 0), 
           (assign, ":hit_anim", "anim_strike_legs_front"),
@@ -623,32 +777,69 @@ tld_warg_leap_attack = (
           (assign, ":hit_anim", "anim_strike_chest_front"),
         (try_end),
       (try_end),
-      (assign, ":agents_to_damage", 1),
       #(display_message, "@DEBUG: Warg Jump!"),
       (try_begin),
         (get_player_agent_no, ":player"),
-        (eq, ":target", ":player"),
+        (eq, ":enemy_agent", ":player"),
         (display_message, "@Received {reg66} damage."),
       (try_end),
-      (le, ":damaged_agents", ":agents_to_damage"), # Allows us to limit the number of agents an animal can strike
+      (le, ":damaged_agents", 1), # Allows us to limit the number of agents an animal can strike #
       (set_show_messages, 0),
-      (store_agent_hit_points,":hp",":target",1),
+      (store_agent_hit_points,":hp",":enemy_agent",1),
       (val_sub, ":hp", reg66),
-      (agent_set_hit_points, ":target", ":hp", 1),
+      (agent_set_hit_points, ":enemy_agent", ":hp", 1),
       (try_begin),
         (le, ":hp", 0),
-        (agent_deliver_damage_to_agent, ":agent", ":target"),
+        (agent_deliver_damage_to_agent, ":agent", ":enemy_agent"),
       (try_end),
       (set_show_messages, 1),
       (val_add, ":damaged_agents", 1),
-      (agent_set_animation, ":target", ":hit_anim", ":channel"),
+      (agent_set_animation, ":enemy_agent", ":hit_anim", ":channel"),
     (try_end),
   (try_end),
   ])
 
-tld_remove_riderless_animals =  (
+] or [])
 
-  1, 0, 0, [(eq, "$animal_is_present",1)], [
+## TLD Remove Riderless Animals: 2 Versions for WB (optimized) / MB (original)
+
+tld_remove_riderless_animals =  ((is_a_wb_mt==1) and (
+
+  0, 0, 0, [(eq, "$animal_is_present",1)], [
+  (store_mission_timer_a_msec, ":batch_time"),
+
+  (try_for_agents, ":agent"),
+    (agent_is_alive, ":agent"),
+    (agent_is_human, ":agent"),
+    (agent_is_active, ":agent"),
+    (agent_get_slot, ":check_time", ":agent", slot_agent_tick_check_time),
+
+    (try_begin), #Batching Start
+      (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+      (val_add, ":check_time", 100),
+      (agent_set_slot, ":agent", slot_agent_tick_check_time, ":check_time"),
+      (agent_get_troop_id, ":agent_trp", ":agent"),
+      (try_begin),
+        (eq|this_or_next, ":agent_trp", "trp_spider"),
+        (eq|this_or_next, ":agent_trp", "trp_bear"),
+        (eq,              ":agent_trp", "trp_wolf"),
+        (agent_get_horse, ":horse", ":agent"),
+        (lt, ":horse", 0),
+        (call_script, "script_remove_agent", ":agent"),
+      (try_end),
+    (try_end),
+
+    (agent_get_slot, ":check_time", ":agent", slot_agent_period_reset_time),
+    (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+    (val_add, ":check_time", "$batching_check_period"),
+    (agent_set_slot, ":agent", slot_agent_period_reset_time, ":check_time"),
+  (try_end),
+  ])
+
+or
+
+#M&B Version of Remove Riderless Animals (Orig)
+  (1, 0, 0, [(eq, "$animal_is_present",1)], [
   (try_for_agents, ":agent"),
     (agent_is_alive, ":agent"),
     (agent_is_human, ":agent"),
@@ -661,6 +852,7 @@ tld_remove_riderless_animals =  (
     (call_script, "script_remove_agent", ":agent"),
   (try_end),
   ])
+)
 
 tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
@@ -748,18 +940,16 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 	nazgul_sweeps,
 	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); Improved, but still WIP. (CppCoder)
 	tld_player_cant_ride,
-	cheat_kill_self_on_ctrl_s,
 	custom_track_companion_casualties,
 	common_battle_healing,
 	#common_battle_kill_underwater,
   tld_animals_init,
   tld_animal_strikes,
   tld_remove_riderless_animals,
-  #tld_warg_leap_attack,
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack
 
 
 tld_siege_battle_scripts = [
@@ -3183,7 +3373,7 @@ mission_templates = [ # not used in game
   tld_slow_wounded,
   custom_tld_spawn_troop, custom_tld_init_battle,
   tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
-  cheat_kill_self_on_ctrl_s,
+  #cheat_kill_self_on_ctrl_s,
   custom_track_companion_casualties,
   common_battle_healing,
   common_battle_on_player_down,
@@ -3505,7 +3695,7 @@ mission_templates = [ # not used in game
   tld_slow_wounded,
   custom_tld_spawn_troop, custom_tld_init_battle,
   tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
-  cheat_kill_self_on_ctrl_s,
+  #cheat_kill_self_on_ctrl_s,
   custom_track_companion_casualties,
   common_battle_healing,
   common_battle_on_player_down,

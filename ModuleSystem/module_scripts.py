@@ -1923,6 +1923,7 @@ scripts = [
 	(assign, "$tld_spawn_battle_animals", 1), #Kham - Battle Animals
 	(assign, "$g_display_agent_labels",0), #Kham - Troop Labels for WB
 	(assign, "$show_hide_labels", 1), #Kham - Toggle for Troop Labels
+	(assign, "$batching_check_period", 3000), #Kham - For Batching
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
@@ -26779,5 +26780,36 @@ if is_a_wb_script==1:
       (try_end),
   ]),
   
+## Batching Process
+
+("cf_batching_ti_agent_spawn_human", [
+	(store_trigger_param, ":agent", 1),
+
+	(agent_is_active, ":agent"),
+	(agent_is_human, ":agent"),
+	(store_mission_timer_a_msec, ":time"),
+	(store_random_in_range, ":check_time", 0, 100),#randomize check time within 0.1 sec
+	(val_add, ":check_time", ":time"),
+	(agent_set_slot, ":agent", slot_agent_tick_check_time, ":check_time"),
+
+	(store_random_in_range, ":check_time", 0, "$batching_check_period"),#randomize reset time
+	(val_add, ":check_time", ":time"),
+	(agent_set_slot, ":agent", slot_agent_period_reset_time, ":check_time"),
+]),
+
+("cf_batching_ti_agent_spawn_mount", [
+	(store_trigger_param, ":agent", 1),
+
+	(agent_is_active, ":agent"),
+	(neg|agent_is_human, ":agent"), #Mount
+	(store_mission_timer_a_msec, ":time"),
+	(store_random_in_range, ":check_time", 0, 100),#randomize check time within 0.1 sec
+	(val_add, ":check_time", ":time"),
+	(agent_set_slot, ":agent", slot_agent_tick_check_time, ":check_time"),
+
+	(store_random_in_range, ":check_time", 0, "$batching_check_period"),#randomize reset time
+	(val_add, ":check_time", ":time"),
+	(agent_set_slot, ":agent", slot_agent_period_reset_time, ":check_time"),
+]),
 
 ]

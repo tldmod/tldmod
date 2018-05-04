@@ -230,6 +230,7 @@ dplmc_horse_speed = (  #called in field_ai_triggers
     (try_end),
   (try_end),
   ])
+
 ##diplomacy end
 
 
@@ -248,15 +249,18 @@ field_ai_triggers = [
    # For mounted lancers and foot spears, affect their Decision on weapon use,
    # based on if closest 3 enemies are within 5 meters and if currently attacking/defending.
   
- [    
+ [
+
   (try_for_agents, ":agent"), # Run through all active NPCs on the battle field.
      # Hasn't been defeated.
     (agent_is_alive, ":agent"),
     (agent_is_non_player, ":agent"),
+    (agent_is_active, ":agent"),
     (assign, ":caba_weapon_order", clear), # For Caba'drin Orders
     (assign, ":shield_order", clear), # For Caba'drin Orders
     (assign, ":weapon_order", 0),
     (assign, ":fire_order", 0),
+
     (try_begin),
         (agent_get_team, ":team", ":agent"),
         (eq, ":team", "$fplayer_team_no"),
@@ -742,106 +746,131 @@ tld_archer_hold_fire = (1, 0, ti_once, [(eq,"$field_ai_archer_aim",1)],
 # (e.g. elven archers consistently shooting ABOVE orc heads)
 tld_archer_aim_fix = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
     [   
-        
+        (store_mission_timer_a_msec, ":batch_time"),
+
         (assign, ":counter", 0),
 
         (try_for_agents, ":agent1"),
             (agent_is_active,":agent1"),
             (agent_is_alive,":agent1"),
             (agent_is_non_player, ":agent1"),
+            (agent_is_active, ":agent1"),
+            (agent_get_slot, ":check_time", ":agent1", slot_agent_tick_check_time),
 
             (agent_get_troop_id, ":troop1", ":agent1"),
-            
-            (agent_slot_eq, ":agent1", agent_aim_overridden, 0), # override only once (DISABLED for now)
-            
 
-            # is agent a very good shooter? (not necessary?)
-            (store_proficiency_level, ":prof", ":troop1", wpt_archery),
-            (ge, ":prof", 200),
-         
-            # is agent a shooter? (i.e. wielding a ranged weapon)
-            (agent_get_wielded_item, ":weapon", ":agent1", 0),
-            (ge, ":weapon", 0),
-            (this_or_next|item_has_property, ":weapon", itp_type_bow),
-            (item_has_property, ":weapon", itp_type_crossbow),
-
-            # todo: add other ranged weapons... pistols, javelins...
-            
-            # is shooter in the process of aiming?
-            (agent_get_combat_state, ":state", ":agent1"),
-            (eq, ":state", 1),  
-            (agent_ai_get_look_target,":agent2", ":agent1"),
-            
-            # is target alive? (not necessary?)
-            (agent_is_active,":agent2"),
-            (agent_is_alive,":agent2"),
-
-            # is target short?
-            (agent_get_troop_id, ":troop2", ":agent2"),
-            (ge, ":troop2", 0),  # not necessary?
-
-            (troop_get_type, ":race", ":troop2"),
-            (this_or_next|eq, ":race", tf_orc), 
-            (eq, ":race", tf_dwarf),
-
-        
-            (val_add, ":counter",1), # book-keeping...
-  
-            (assign, ":bone", 8), # by default, aim at torax
-       
-          # consider current distance to target to decide stuff (e.g. aim at head or torax? shoot or not?)
-            (agent_get_position, pos2, ":agent2"),  # pos2 = target pos
-            (agent_get_position, pos3, ":agent1"),  # pos3 = shooter pos
-            (get_distance_between_positions, ":distance", pos3, pos2),
-            
             (try_begin),
-              (ge, ":distance", 6300),
-              (assign, ":continue", 0),
-            (else_try),
-              (is_between, ":distance", 1000, 6300),
-              (assign, ":bone", 8),  # aim at thorax if between than 20 - 50 meters (todo: adjust distance with proficency)
-              (assign, ":continue", 1),
-            (else_try),
-              (lt, ":distance", 1000),
-              (assign, ":bone", 7), #aim at head if distance is less than 20m
-              (assign, ":continue", 1),
-            (try_end),
-            
-            (eq, ":continue", 1), #Do we modify aim? It will be based on distance
+              (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+              (val_add, ":check_time", 100),
+              (agent_set_slot, ":agent1", slot_agent_tick_check_time, ":check_time"),
+              (try_begin),
+                (agent_slot_eq, ":agent1", agent_aim_overridden, 0), # override only once
 
-            (agent_is_in_line_of_sight, ":agent1", pos2),
-           
-            (agent_get_bone_position, pos1, ":agent2", ":bone", 1), # pos1 = target BONE pos
-            (agent_set_attack_action, ":agent1", 0, 0),      # enforce shooting (DISABLED)
-            (agent_set_look_target_position, ":agent1", pos1),      # override aimed location
-           # (agent_set_look_target_agent, ":agent1", ":agent2"),    # desperate attempt at making archer fight on and actually shoot
+                # is agent a very good shooter? (not necessary?)
+                (store_proficiency_level, ":prof", ":troop1", wpt_archery),
+                (ge, ":prof", 200),
+             
+                # is agent a shooter? (i.e. wielding a ranged weapon)
+                (agent_get_wielded_item, ":weapon", ":agent1", 0),
+                (ge, ":weapon", 0),
+                (this_or_next|item_has_property, ":weapon", itp_type_bow),
+                (item_has_property, ":weapon", itp_type_crossbow),
+
+                # todo: add other ranged weapons... pistols, javelins...
+                
+                # is shooter in the process of aiming?
+                (agent_get_combat_state, ":state", ":agent1"),
+                (eq, ":state", 1),  
+                (agent_ai_get_look_target,":agent2", ":agent1"),
+                
+                # is target alive? (not necessary?)
+                (agent_is_active,":agent2"),
+                (agent_is_alive,":agent2"),
+
+                # is target short?
+                (agent_get_troop_id, ":troop2", ":agent2"),
+                (ge, ":troop2", 0),  # not necessary?
+
+                (troop_get_type, ":race", ":troop2"),
+                (this_or_next|eq, ":race", tf_orc), 
+                (eq, ":race", tf_dwarf),
+
             
+                (val_add, ":counter",1), # book-keeping...
+
+                (assign, ":bone", 8), # by default, aim at torax
+           
+              # consider current distance to target to decide stuff (e.g. aim at head or torax? shoot or not?)
+                (agent_get_position, pos2, ":agent2"),  # pos2 = target pos
+                (agent_get_position, pos3, ":agent1"),  # pos3 = shooter pos
+                (get_distance_between_positions, ":distance", pos3, pos2),
+                
+                (try_begin),
+                  (ge, ":distance", 6300),
+                  (assign, ":continue", 0),
+                (else_try),
+                  (is_between, ":distance", 1000, 6300),
+                  (assign, ":bone", 8),  # aim at thorax if between than 20 - 50 meters (todo: adjust distance with proficency)
+                  (assign, ":continue", 1),
+                (else_try),
+                  (lt, ":distance", 1000),
+                  (assign, ":bone", 7), #aim at head if distance is less than 20m
+                  (assign, ":continue", 1),
+                (try_end),
+                
+                (eq, ":continue", 1), #Do we modify aim? It will be based on distance
+
+                (agent_is_in_line_of_sight, ":agent1", pos2),
+               
+                (agent_get_bone_position, pos1, ":agent2", ":bone", 1), # pos1 = target BONE pos
+                (agent_set_attack_action, ":agent1", 0, 0),      # enforce shooting (DISABLED)
+                (agent_set_look_target_position, ":agent1", pos1),      # override aimed location
+               #(agent_set_look_target_agent, ":agent1", ":agent2"),    # desperate attempt at making archer fight on and actually shoot
+              (try_end),
+            (try_end),
+            (agent_get_slot, ":check_time", ":agent1", slot_agent_period_reset_time),
+            (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+            (val_add, ":check_time", "$batching_check_period"),
+            (agent_set_slot, ":agent1", slot_agent_period_reset_time, ":check_time"),
         (try_end),
 
-        (try_begin),
-            (gt, ":counter",0),
-            (assign, reg10, ":counter"),
-            (assign, reg11, ":bone"),
+       # (try_begin),
+       #     (gt, ":counter",0),
+       #     (assign, reg10, ":counter"),
+       #     (assign, reg11, ":bone"),
             #(assign, reg12, ":continue"),
             #(display_message, "@DEBUG: OVERRRIDING AIM x{reg10}!. TARGETTING {reg11}."),
-        (try_end),
+      #  (try_end),
     ])
 
 
 # fix part II: call on release arrow
 tld_archer_aim_fix_on_release = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
-    [
-        (try_for_agents, ":agent1"),
-            (agent_is_active,":agent1"),
-            (agent_is_alive,":agent1"),
-            (agent_is_non_player, ":agent1"),
+    [   (store_mission_timer_a_msec, ":batch_time"),
         
-            (agent_get_slot, ":is_aiming", ":agent1", agent_aim_overridden),
-            (eq, ":is_aiming", 1),
-            (agent_get_attack_action, ":action", ":agent1"),
-            (eq, ":action", 0),
+        (try_for_agents, ":agent1"),
+          (agent_is_active,":agent1"),
+          (agent_is_alive,":agent1"),
+          (agent_is_non_player, ":agent1"),
+          (agent_is_active, ":agent1"),
+          (agent_get_slot, ":check_time", ":agent1", slot_agent_tick_check_time),
+          (agent_get_slot, ":is_aiming", ":agent1", agent_aim_overridden),
+          (try_begin),
+            (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+            (val_add, ":check_time", 100),
+            (agent_set_slot, ":agent1", slot_agent_tick_check_time, ":check_time"),
+            (try_begin),
+              (eq, ":is_aiming", 1),
+              (agent_get_attack_action, ":action", ":agent1"),
+              (eq, ":action", 0),
             
-            (agent_set_slot, ":agent1", agent_aim_overridden, 0),
+              (agent_set_slot, ":agent1", agent_aim_overridden, 0),
+            (try_end),
+          (try_end),
+          (agent_get_slot, ":check_time", ":agent1", slot_agent_period_reset_time),
+          (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+          (val_add, ":check_time", "$batching_check_period"),
+          (agent_set_slot, ":agent1", slot_agent_period_reset_time, ":check_time"),
         (try_end),
     ])
 
@@ -1164,85 +1193,101 @@ tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
     (try_end),
   ],
   [
+    (store_mission_timer_a_msec, ":batch_time"),
+
     (try_for_agents,":agent1"),
-
-       #TLD Check
-      (agent_get_troop_id, ":lord", ":agent1"),
-      (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
-      (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
-      (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
-
-      (agent_is_active,":agent1"),
-      (agent_is_alive,":agent1"),
-      
-      (agent_ai_get_look_target, ":agent2", ":agent1"),
-      (agent_is_active,":agent2"),
-      (agent_is_alive,":agent2"),
-      
-      (agent_get_team, ":team1", ":agent1"),
-      (agent_get_team, ":team2", ":agent2"),
-      (neq, ":team1", ":team2"),
-      
-      (agent_get_position, pos1, ":agent1"),
-      (agent_get_position, pos2, ":agent2"),
-      
-      (neg|position_is_behind_position, pos1, pos2),
-      (get_distance_between_positions, ":dist", pos1, pos2),
-      
-      
-      #Must be a legit melee weapon used
-      (agent_get_wielded_item, ":agent1_weapon", ":agent1", 0),
-      
-      (try_begin),
-        (lt, ":agent1_weapon", 0),
-        (call_script, "script_weapon_use_backup_weapon", ":agent1", 1),
-      (try_end),
-
-      (gt, ":agent1_weapon",0),
-      
-      (item_get_weapon_length, ":agent1_weapon_length", ":agent1_weapon"),
-      
-      (assign, ":agent1_stab_allowed", 0),
-      (try_begin),
-        (assign, ":max_stab_dist", ":agent1_weapon_length"),
-        (val_mul, ":max_stab_dist", 2),
-        (is_between, ":dist", 120, ":max_stab_dist"),
-        (assign, ":agent1_stab_allowed", 0),
-      (else_try),
-        (assign, ":agent1_stab_allowed", 1),
-      (try_end),
-      
-      (agent_get_attack_action, ":agent1_attack_action", ":agent1"),
-      (agent_get_attack_action, ":agent2_attack_action", ":agent2"),
-      
-      (neq, ":agent1_attack_action", 2),#Prevents blocking while releasing an attack...
-      #If enemy is releasing an attack, agent must try to do a defensive maneuver
-      (try_begin),
-        (le, ":dist", 200),
-        (this_or_next|eq, ":agent2_attack_action", 2),
-        (eq, ":agent2_attack_action", 3),
-        
-        (agent_get_action_dir, ":agent2_attack_dir", ":agent2"),
-        (agent_set_defend_action, ":agent1", ":agent2_attack_dir"),
-        #If enemy has finished attacking (by being blocked, parried or after releasing his attack), attack back
-      (else_try),
-        (le, ":dist", 200),
-        
-        (agent_get_animation, ":anim", ":agent1", 0),
-        (neq, ":anim", "anim_kick_right_leg"),#Don't attack if you're kicking!
-        
-        (this_or_next|eq, ":agent2_attack_action", 6),
-        (this_or_next|eq, ":agent2_attack_action", 4),
-        (eq, ":agent1_attack_action", 3),
-        
+      (agent_is_human, ":agent1"),
+      (agent_is_active, ":agent1"),
+      (agent_get_slot, ":check_time", ":agent1", slot_agent_tick_check_time),
+      (try_begin), #Batching Start
+        (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+        (val_add, ":check_time", 100),
+        (agent_set_slot, ":agent1", slot_agent_tick_check_time, ":check_time"),
         (try_begin),
-          (eq, ":agent1_stab_allowed", 1),
-          (store_random_in_range, ":random_dir", 0, 3),
-        (else_try),
-          (store_random_in_range, ":random_dir", 1, 3),
+
+           #TLD Check
+          (agent_get_troop_id, ":lord", ":agent1"),
+          (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
+          (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
+          (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
+
+          (agent_is_active,":agent1"),
+          (agent_is_alive,":agent1"),
+          
+          (agent_ai_get_look_target, ":agent2", ":agent1"),
+          (agent_is_active,":agent2"),
+          (agent_is_alive,":agent2"),
+          
+          (agent_get_team, ":team1", ":agent1"),
+          (agent_get_team, ":team2", ":agent2"),
+          (neq, ":team1", ":team2"),
+          
+          (agent_get_position, pos1, ":agent1"),
+          (agent_get_position, pos2, ":agent2"),
+          
+          (neg|position_is_behind_position, pos1, pos2),
+          (get_distance_between_positions, ":dist", pos1, pos2),
+          
+          
+          #Must be a legit melee weapon used
+          (agent_get_wielded_item, ":agent1_weapon", ":agent1", 0),
+          
+          (try_begin),
+            (lt, ":agent1_weapon", 0),
+            (call_script, "script_weapon_use_backup_weapon", ":agent1", 1),
+          (try_end),
+
+          (gt, ":agent1_weapon",0),
+          
+          (item_get_weapon_length, ":agent1_weapon_length", ":agent1_weapon"),
+          
+          (assign, ":agent1_stab_allowed", 0),
+          (try_begin),
+            (assign, ":max_stab_dist", ":agent1_weapon_length"),
+            (val_mul, ":max_stab_dist", 2),
+            (is_between, ":dist", 120, ":max_stab_dist"),
+            (assign, ":agent1_stab_allowed", 0),
+          (else_try),
+            (assign, ":agent1_stab_allowed", 1),
+          (try_end),
+          
+          (agent_get_attack_action, ":agent1_attack_action", ":agent1"),
+          (agent_get_attack_action, ":agent2_attack_action", ":agent2"),
+          
+          (neq, ":agent1_attack_action", 2),#Prevents blocking while releasing an attack...
+          #If enemy is releasing an attack, agent must try to do a defensive maneuver
+          (try_begin),
+            (le, ":dist", 200),
+            (this_or_next|eq, ":agent2_attack_action", 2),
+            (eq, ":agent2_attack_action", 3),
+            
+            (agent_get_action_dir, ":agent2_attack_dir", ":agent2"),
+            (agent_set_defend_action, ":agent1", ":agent2_attack_dir"),
+            #If enemy has finished attacking (by being blocked, parried or after releasing his attack), attack back
+          (else_try),
+            (le, ":dist", 200),
+            
+            (agent_get_animation, ":anim", ":agent1", 0),
+            (neq, ":anim", "anim_kick_right_leg"),#Don't attack if you're kicking!
+            
+            (this_or_next|eq, ":agent2_attack_action", 6),
+            (this_or_next|eq, ":agent2_attack_action", 4),
+            (eq, ":agent1_attack_action", 3),
+            
+            (try_begin),
+              (eq, ":agent1_stab_allowed", 1),
+              (store_random_in_range, ":random_dir", 0, 3),
+            (else_try),
+              (store_random_in_range, ":random_dir", 1, 3),
+            (try_end),
+            (agent_set_attack_action, ":agent1", ":random_dir", 0),
+          (try_end),
         (try_end),
-        (agent_set_attack_action, ":agent1", ":random_dir", 0),
       (try_end),
+      (agent_get_slot, ":check_time", ":agent1", slot_agent_period_reset_time),
+      (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
+      (val_add, ":check_time", "$batching_check_period"),
+      (agent_set_slot, ":agent1", slot_agent_period_reset_time, ":check_time"),
     (try_end),
 ])
 #Attack/Block end
@@ -2022,3 +2067,10 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
 
     (try_end),
   ])
+
+
+#Batching Triggers:
+
+batching_agent_spawn_human = (ti_on_agent_spawn, 0, 0, [], [(call_script, "script_cf_batching_ti_agent_spawn_human")])
+
+batching_agent_spawn_mount = (ti_on_agent_spawn, 0, 0, [], [(call_script, "script_cf_batching_ti_agent_spawn_mount")])

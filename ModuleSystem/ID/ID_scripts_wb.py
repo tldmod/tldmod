@@ -645,5 +645,7 @@ script_init_item_score = 643
 script_add_troop_to_custom_armor_tableau = 644
 script_order_weapon_type_switch = 645
 script_iterate_pointer_arrow = 646
+script_cf_batching_ti_agent_spawn_human = 647
+script_cf_batching_ti_agent_spawn_mount = 648
 
 

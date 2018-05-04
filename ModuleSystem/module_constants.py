@@ -2053,7 +2053,7 @@ Screen_Undistort_Width_Den = 8
 AI_long_range	= 8000	#do not put over 130m if you want archers to always fire
 AI_firing_distance	= AI_long_range / 2
 AI_charge_distance	= 2000
-AI_Self_Defence_Distance = 1000 #range for preparing for self defense, JL
+AI_Self_Defence_Distance = 1500 #range for preparing for self defense, JL
 AI_for_kingdoms_only	= 1
 Weapon_Length_Proxy	= 100
 Far_Away	= 1000000
@@ -2469,3 +2469,6 @@ intro_strings_end = str_intro_faction_intro_strings_end
 slot_party_number_following_player = 307
 slot_faction_allowed_follow = 182
 
+#Batching
+slot_agent_tick_check_time = 1000
+slot_agent_period_reset_time = 1001
