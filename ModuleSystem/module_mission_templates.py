@@ -438,7 +438,7 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
     (else_try),
       (eq, ":agent_trp", "trp_wolf"),
       (try_begin),
-        (le, ":rnd_2", 10),
+        (le, ":rnd_2", 20),
         (assign, ":anim", "anim_warg_leapattack"),
       (else_try),
         (assign, ":anim", "anim_wolf_snap"),
@@ -484,16 +484,15 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
         (assign, ":agents_to_damage", 1),
       (else_try),
         (eq, ":agent_trp", "trp_wolf"),
-        (eq, ":anim", "anim_warg_leapattack"),
         (try_begin),
-          (le, ":rnd_2", 30), #30% chance for a fly back
+          (eq, ":anim", "anim_warg_leapattack"),
           (try_begin),
             (lt, ":target_horse", 0),
             (store_random_in_range, reg66, 5, 11), #Kham - reduced from 5, 10, cause there are a lot of wolves
             (assign, ":hit_anim", "anim_strike_fly_back"),
           (else_try),
             (gt, ":target_horse", 0),
-            (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+            (assign, ":hit_anim", "anim_strike_fly_back"),
             (agent_start_running_away, ":target_horse"),
             (agent_stop_running_away, ":target_horse"),
             (store_random_in_range, reg66, 5, 11), #Kham - reduced from 5, 10, cause there are a lot of wolves
@@ -518,7 +517,7 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
           (assign, ":hit_anim", "anim_strike_fly_back"),
         (else_try),
           (gt, ":target_horse", 0),
-          (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+          (assign, ":hit_anim", "anim_strike_fly_back"),
           (agent_start_running_away, ":target_horse"),
           (agent_stop_running_away, ":target_horse"),
         (try_end),
@@ -763,7 +762,7 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
           (assign, reg66, 5),
         (else_try),
           (gt, ":target_horse", 0),
-          (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+          (assign, ":hit_anim", "anim_strike_fly_back"),
           (agent_start_running_away, ":target_horse"),
           (agent_stop_running_away, ":target_horse"),
           (assign, reg66, 5),  
@@ -803,43 +802,8 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
 
 ## TLD Remove Riderless Animals: 2 Versions for WB (optimized) / MB (original)
 
-tld_remove_riderless_animals =  ((is_a_wb_mt==1) and (
-
-  0, 0, 0, [(eq, "$animal_is_present",1)], [
-  (store_mission_timer_a_msec, ":batch_time"),
-
-  (try_for_agents, ":agent"),
-    (agent_is_alive, ":agent"),
-    (agent_is_human, ":agent"),
-    (agent_is_active, ":agent"),
-    (agent_get_slot, ":check_time", ":agent", slot_agent_tick_check_time),
-
-    (try_begin), #Batching Start
-      (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
-      (val_add, ":check_time", 100),
-      (agent_set_slot, ":agent", slot_agent_tick_check_time, ":check_time"),
-      (agent_get_troop_id, ":agent_trp", ":agent"),
-      (try_begin),
-        (eq|this_or_next, ":agent_trp", "trp_spider"),
-        (eq|this_or_next, ":agent_trp", "trp_bear"),
-        (eq,              ":agent_trp", "trp_wolf"),
-        (agent_get_horse, ":horse", ":agent"),
-        (lt, ":horse", 0),
-        (call_script, "script_remove_agent", ":agent"),
-      (try_end),
-    (try_end),
-
-    (agent_get_slot, ":check_time", ":agent", slot_agent_period_reset_time),
-    (ge, ":batch_time", ":check_time"),#check agents in batches, splits the workload across as many frames as possible
-    (val_add, ":check_time", "$batching_check_period"),
-    (agent_set_slot, ":agent", slot_agent_period_reset_time, ":check_time"),
-  (try_end),
-  ])
-
-or
-
-#M&B Version of Remove Riderless Animals (Orig)
-  (1, 0, 0, [(eq, "$animal_is_present",1)], [
+tld_remove_riderless_animals =(
+  1, 0, 0, [(eq, "$animal_is_present",1)], [
   (try_for_agents, ":agent"),
     (agent_is_alive, ":agent"),
     (agent_is_human, ":agent"),
@@ -851,8 +815,8 @@ or
     (lt, ":horse", 0),
     (call_script, "script_remove_agent", ":agent"),
   (try_end),
-  ])
-)
+])
+
 
 tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
