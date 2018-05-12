@@ -892,6 +892,10 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     hp_shield_trigger,
     health_restore_on_kill,
 
+    #Batching
+    batching_agent_spawn_human,
+    batching_agent_spawn_mount,
+
     
 ] or [] ) + [
 
@@ -927,7 +931,7 @@ tld_siege_battle_scripts = [
   tld_remove_volunteer_troops,
 	#common_battle_kill_underwater,
   reset_fog,
-] + fade + bright_nights + khams_custom_player_camera #Custom Cam triggers
+] + fade + bright_nights + khams_custom_player_camera + bright_nights
 
 
 tld_common_peacetime_scripts = [
@@ -4254,11 +4258,11 @@ mission_templates = [ # not used in game
   ## From the MBX forums, this was the intetion: "TODO: 1) make player assume command of the nearest ally team when he is near and pushes a button -GA"
   ## I can attempt to do what is designed, just needs a lot of testing. 
 
-  (0, 0, 2,[(this_or_next|game_key_clicked, key_o),(game_key_is_down, key_o)],
-    [(entry_point_get_position, pos10, 41),(team_set_order_position, "$defender_team"  , grc_everyone, pos10),
-    (entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team_2", grc_everyone, pos10),
-    (entry_point_get_position, pos10, 43),(team_set_order_position, "$defender_team_3", grc_everyone, pos10),
-    (display_message,"@On your positions, bitchez!!")]),
+  #(0, 0, 2,[(this_or_next|game_key_clicked, key_o),(game_key_is_down, key_o)],
+  #  [(entry_point_get_position, pos10, 41),(team_set_order_position, "$defender_team"  , grc_everyone, pos10),
+  #  (entry_point_get_position, pos10, 42),(team_set_order_position, "$defender_team_2", grc_everyone, pos10),
+  #  (entry_point_get_position, pos10, 43),(team_set_order_position, "$defender_team_3", grc_everyone, pos10),
+  #  (display_message,"@On your positions, bitchez!!")]),
 
   ## End of Team Command Control Block
 
@@ -4282,6 +4286,7 @@ mission_templates = [ # not used in game
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
+
   (3, 0, 5, [(lt,"$defender_reinforcement_stage", 25),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #iterate through 5 6 7 - Changed to 9,10,11
