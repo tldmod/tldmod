@@ -6515,6 +6515,35 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 	(gt, ":cur_lords_party", 0),
 	(party_add_members, ":cur_lords_party", ":quest_target_troop", ":quest_target_amount")]],
 
+] + (is_a_wb_dialog and [
+[anyone|plyr,"lord_active_mission_2", [#(troop_slot_eq, "$g_talk_troop", slot_troop_is_prisoner, 0),
+                     (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+                                         (store_partner_quest,":lords_quest"),
+                                         (eq,":lords_quest","qst_raise_troops"),
+                                         (quest_get_slot, ":quest_target_amount", ":lords_quest", slot_quest_target_amount),
+                                         (store_sub, ":trained_troops", ":quest_target_amount", "$g_arena_training_kills"),
+                                         (assign, reg1, "$g_arena_training_kills"),
+                                         (assign, reg2, ":quest_target_amount"),
+                                         (assign, ":continue", 0),
+                                         (try_begin),
+                                            (eq, ":trained_troops", 0),
+                                            (assign, ":continue", 1),
+                                         (else_try),
+                                            (ge, ":trained_troops", 2),
+                                            (assign, ":continue", 1),
+                                         (try_end),
+                                         (eq, ":continue", 1),
+                                        ],
+
+"Indeed. I have trained {reg2} troops, and {reg1} of them have learned well. You can take them, they should be more prepared for battle.", "lord_raise_troops_thank",[
+  (call_script, "script_finish_quest", "qst_raise_troops", 100),
+  (troop_get_slot, ":cur_lords_party", "$g_talk_troop", slot_troop_leaded_party),
+  (gt, ":cur_lords_party", 0),
+  (faction_get_slot, ":tier_2_troop", "$g_talk_troop_faction", slot_faction_tier_2_troop),
+  (party_add_members, ":cur_lords_party", ":tier_2_troop", "$g_arena_training_kills")]],
+
+] or []) + [ 
+
 [anyone,"lord_raise_troops_thank", [],
 "{s4}", "lord_raise_troops_thank_2",[
      (try_begin),
@@ -7074,6 +7103,15 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
 
 [anyone|plyr,"lord_mission_raise_troops_told", [(quest_get_slot, reg1, "$random_quest_no", slot_quest_target_amount)],
 "Of course, {s65}. Give me {reg1} fresh recruits and I'll train them to be {s14}.", "lord_mission_raise_troops_accepted",[]],
+
+] + (is_a_wb_dialog and [
+#Kham - Alternate Training
+[anyone|plyr,"lord_mission_raise_troops_told", [],
+"I suggest another method, {s65}....", "lord_mission_raise_troops_alternate_1",[]],
+[anyone|plyr,"lord_mission_raise_troops_alternate_1", [(quest_get_slot, reg1, "$random_quest_no", slot_quest_target_amount), (val_div, reg1, 2), (val_max, reg1, 2),],
+"I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.", "lord_mission_raise_troops_alternate",[]],
+] or []) + [ 
+
 [anyone|plyr,"lord_mission_raise_troops_told", [], "I am too busy these days to train anyone.", "lord_mission_raise_troops_rejected",[]],
 
 [anyone,"lord_mission_raise_troops_accepted", [], 
@@ -7091,6 +7129,28 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
     (party_add_members, "p_main_party", ":recruit_troop", ":num_recruits"),
     (call_script, "script_change_player_relation_with_troop","$g_talk_troop",2),
     (assign, "$g_leave_encounter",1)]],
+
+] + (is_a_wb_dialog and [
+
+[anyone,"lord_mission_raise_troops_alternate", [], 
+"This is an interesting proposal, {playername}.\
+ I shall tell my sergeants to send the recruits to the arena.\
+ Follow them there, and whip them up to shape. I will be watching.\
+ Thank you for your help.", "close_window",
+   [(call_script,"script_stand_back"),
+    (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    (quest_get_slot, ":num_recruits", "$random_quest_no", slot_quest_target_amount),
+    (val_div, ":num_recruits", 2),
+    (val_max, ":num_recruits", 2),
+    (quest_set_slot, "$random_quest_no", slot_quest_target_amount, ":num_recruits"),
+    (call_script, "script_change_player_relation_with_troop","$g_talk_troop",2),
+    (assign, "$g_leave_encounter",1),
+    (change_screen_return),
+    (jump_to_menu, "mnu_alternate_training_fight"),
+  ]],
+
+] or []) + [ 
+
 
 [anyone,"lord_mission_raise_troops_rejected", [], 
 "Oh, of course. I had expected as much. Well, good luck to you then.", "lord_pretalk", [(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],

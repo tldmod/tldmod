@@ -7887,6 +7887,49 @@ tld_remove_riderless_animals,
     ] + fade,
 
   ),
-] or []) + [   
+
+ ### kham alternate Training START
+  (
+    "alternate_training",mtf_arena_fight|mtf_commit_casualties,-1,
+    "You begin your training.",
+    [
+      (0,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (1,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (2,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (3,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      # Player
+      (4,mtef_visitor_source|mtef_team_0,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      # Opponents
+      (5,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (6,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (7,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+      (8,mtef_visitor_source|mtef_team_1,af_override_everything,aif_start_alarmed,1,[itm_practice_staff]),
+
+    ], tld_common_wb_muddy_water+
+    [
+      common_inventory_not_available,
+      tld_cheer_on_space_when_battle_over_press,
+      tld_cheer_on_space_when_battle_over_release,
+      (ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave")], []),
+      (ti_before_mission_start, 0, 0, [], [(assign, "$g_arena_training_kills", 0),]),
+      
+      (0, 0, ti_once, [],
+        [
+          (call_script, "script_music_set_situation_with_culture", mtf_sit_arena),
+      ]),
+      
+      (1, 4, ti_once, [
+          (this_or_next|main_hero_fallen),
+          (num_active_teams_le,1)],
+        [
+          (get_player_agent_no, ":player_agent"),
+          (agent_get_kill_count, "$g_arena_training_kills", ":player_agent", 1),
+          (finish_mission),
+      ]),
+    ],
+  ),
+  ### Kham Freelancer Training END  
+
+] or []) + [ 
 
 ] + mission_templates_cutscenes

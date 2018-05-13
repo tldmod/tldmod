@@ -3929,7 +3929,7 @@ game_menus = [
 	("none",[],"None",[(assign,"$cheat_imposed_quest",-1),(jump_to_menu, "mnu_cheat_impose_quest")]),
 	("cheat_kill_quest",[],"Kill Targeted Troop Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_04")]),
 	("cheat_kill_faction_quest",[],"Kill Faction Troop Quest",[(assign,"$cheat_imposed_quest","qst_blank_quest_05")]),
-	("cheat_reinforce_center",[],"Reinforce Center",[(assign,"$cheat_imposed_quest","qst_blank_quest_16")]),
+	("cheat_raise_troops",[],"Raise Troops",[(assign,"$cheat_imposed_quest","qst_raise_troops")]),
 	("cheat_defend_refugees",[],"Defend Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_01")]),
 	("cheat_attack_refugees",[],"Hunt Down Refugees",[(assign,"$cheat_imposed_quest","qst_blank_quest_02")]),
 	("night_bandits",[],"Mirkwood Sorcerer",[(assign,"$cheat_imposed_quest","qst_mirkwood_sorcerer")]),
@@ -10505,6 +10505,101 @@ game_menus = [
         ]),
      ]
  ),
+
+
+#Kham - Training START
+] + (is_a_wb_menu==1 and [
+  
+  ("alternate_training_fight",0,
+    "You will be facing {reg5} opponents. Are you ready?",
+    "none",
+    [	(quest_get_slot, reg5, "qst_raise_troops", slot_quest_target_amount),
+    	],
+    [
+      ("training_continue",[],"Begin training...",
+        [
+          #(assign, "$g_leave_encounter", 0),
+          (party_get_attached_to, ":cur_center", "$g_talk_troop_party"),
+          (faction_get_slot, ":fac_side", "$players_kingdom", slot_faction_side),
+          (try_begin),
+            (is_between, ":cur_center", centers_begin, centers_end),
+            (party_get_slot, ":duel_scene", ":cur_center", slot_town_arena),
+          (else_try),
+            (assign, ":closest_town", -1),
+            (assign, ":minimum_dist", 10000),
+            (try_for_range, ":cur_town", centers_begin, centers_end),
+              (store_faction_of_party, ":town_faction", ":cur_town"),
+              (faction_get_slot, ":town_side", ":town_faction", slot_faction_side),
+              (eq, ":town_side", ":fac_side"),
+              (store_distance_to_party_from_party, ":dist", ":cur_town", "$g_talk_troop"),
+              (lt, ":dist", ":minimum_dist"),
+              (assign, ":minimum_dist", ":dist"),
+              (assign, ":closest_town", ":cur_town"),
+            (try_end),
+            (try_begin),
+              (ge, ":closest_town", 0),
+              (party_get_slot, ":duel_scene", ":closest_town", slot_town_arena),
+            (try_end),
+          (else_try),
+            (party_get_current_terrain, ":terrain", "$g_talk_troop_party"),
+            (try_begin),
+	            (eq, ":terrain", 4),
+	            (assign, ":duel_scene", "scn_khand_arena"),
+	        (else_try),
+            	(eq, ":terrain", 5),
+            	(assign, ":duel_scene", "scn_rhun_arena"),
+          	(else_try),
+            	(assign, ":duel_scene", "scn_dale_arena"),
+          	(try_end),
+          (try_end),
+          (assign, "$g_encountered_party", "$g_talk_troop_party"),
+
+          (faction_get_slot, ":troop_type", "$g_talk_troop_faction", slot_faction_tier_1_troop),
+          (quest_get_slot, ":num_recruits", "qst_raise_troops", slot_quest_target_amount),
+
+          (modify_visitors_at_site, ":duel_scene"),
+          (reset_visitors),
+          (set_visitor, 4, "trp_player"),
+          (set_visitors, 5, ":troop_type", ":num_recruits"),
+          (set_jump_mission, "mt_alternate_training"),
+          (jump_to_scene, ":duel_scene"),
+          (jump_to_menu, "mnu_alternate_training_conclusion"),
+          (change_screen_mission),
+      ]),
+      
+    ]
+  ),
+  
+  ("alternate_training_conclusion",0,
+    "{s5}",
+    "none",
+    [(assign, reg5, "$g_arena_training_kills"),
+      (try_begin),
+        (ge, reg5, 1),
+        (try_begin),
+          (ge, reg5, 6),
+          (store_div, ":rel_gain", reg5, 2),
+          (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", ":rel_gain"), #Increase relationship by kills/2.
+          (str_store_string, s5, "@You defeated {reg5} enemies and have impressed your commander."),
+        (else_try),
+          (str_store_string, s5, "@You defeated {reg5} enemies."),
+        (try_end),
+      (else_try),
+        (str_store_string, s5, "@You failed to defeat any enemy."),
+      (try_end),],
+    [
+      
+      ("alternate_training_retry",[(eq, "$g_arena_training_kills", 0),],"Try again...",
+        [(jump_to_menu, "mnu_alternate_training_fight")],
+      ),
+
+      ("alternate_training_finish",[(gt, "$g_arena_training_kills", 0)],"Leave the arena...",
+        [(change_screen_map)],
+      ),
+  ]),
+  
+] or []) + [
+  #Kham - Training END
 
 
 ##### Guardian Party Quest END ##########
