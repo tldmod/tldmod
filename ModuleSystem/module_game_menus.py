@@ -3850,6 +3850,7 @@ game_menus = [
 	"none",[
 		(try_begin),
 			(eq, "$g_battle_result", 1),
+			(assign,"$g_fangorn_rope_pulled", 0), # ents calm down after a good fight
 			(jump_to_menu, "mnu_fangorn_battle_debrief_won"),
 		(else_try),
 			(assign, "$recover_after_death_menu", "mnu_recover_after_death_fangorn"),

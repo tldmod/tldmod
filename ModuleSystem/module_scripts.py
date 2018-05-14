@@ -11235,6 +11235,9 @@ scripts = [
       (assign, ":ai_leader", reg0),
       (try_begin),
         (eq, ":battle_tactic", btactic_hold),
+		] + (is_a_wb_script==1 and [
+		(agent_is_active, ":ai_leader"),
+		] or []) + [
         (agent_get_position, pos1, ":ai_leader"),
         (call_script, "script_find_high_ground_around_pos1", ":team_no", 30),
         (copy_position, pos1, pos52),
@@ -11245,18 +11248,21 @@ scripts = [
         (team_set_order_position, ":team_no", grc_everyone, pos52),
         (team_give_order, ":team_no", grc_archers, mordr_advance),
         (team_give_order, ":team_no", grc_archers, mordr_advance),
-      (else_try), # GA: added spreaded charge
-        (eq, ":battle_tactic", btactic_charge),
-        (team_give_order, ":team_no", grc_everyone, mordr_spread_out),
-        (team_give_order, ":team_no", grc_everyone, mordr_spread_out),
-        (team_give_order, ":team_no", grc_everyone, mordr_charge),
       (else_try),
 	    (eq, ":battle_tactic", btactic_follow_leader),
+		] + (is_a_wb_script==1 and [
+		(agent_is_active, ":ai_leader"),
+		] or []) + [
         #(team_get_leader, ":ai_leader", ":team_no"),
         (agent_set_speed_limit, ":ai_leader", 8),
         (agent_get_position, pos60, ":ai_leader"),
         (team_give_order, ":team_no", grc_everyone, mordr_hold),
         (team_set_order_position, ":team_no", grc_everyone, pos60),
+      (else_try), # GA: added spreaded charge
+        (eq, ":battle_tactic", btactic_charge),
+        (team_give_order, ":team_no", grc_everyone, mordr_spread_out),
+        (team_give_order, ":team_no", grc_everyone, mordr_spread_out),
+        (team_give_order, ":team_no", grc_everyone, mordr_charge),
       (try_end),
 ]),
 # script_battle_tactic_apply
@@ -11293,6 +11299,9 @@ scripts = [
         #(team_get_leader, ":ai_leader", ":team_no"),
         (call_script, "script_team_get_nontroll_leader", ":team_no"),
         (assign, ":ai_leader", reg0),
+		] + (is_a_wb_script==1 and [
+		(agent_is_active, ":ai_leader"),
+		] or []) + [
         (try_begin),
 	        (gt, ":ai_leader", 0), #Fix - Kham
 	        (agent_is_alive, ":ai_leader"),
