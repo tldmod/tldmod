@@ -1809,6 +1809,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (is_between, ":agent_killer", heroes_begin, heroes_end),
       (assign, ":continue", 1),
    (else_try),  #Berserkers
+      (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
       (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_orc_beserker_gundabad"),
@@ -1838,6 +1839,7 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (is_between, ":agent_killer", heroes_begin, heroes_end),
       (assign, ":health_regeneration", wp_hr_lord_rate),
     (else_try),  #Berserkers
+      (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
       (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_orc_beserker_gundabad"),
