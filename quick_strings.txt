@@ -1,4 +1,4 @@
-1566
+1567
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -773,6 +773,7 @@ qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size
 qstr_{s2}^_________{s4}:_ {s2}^_________{s4}:_{reg1}_({s23})
 qstr__________Faction_str _________Faction_strengths_report:^{s2}
 qstr_{s1}^^Factions_are_n {s1}^^Factions_are_normally_sieged_when_below_{reg1}_strength.
+qstr_Savagery Savagery
 qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.

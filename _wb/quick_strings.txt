@@ -1,4 +1,4 @@
-1684
+1685
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -888,6 +888,7 @@ qstr_Current_party_size_l Current_party_size_limit_is_{reg5}.^Current_party_size
 qstr_{s2}^_________{s4}:_ {s2}^_________{s4}:_{reg1}_({s23})
 qstr__________Faction_str _________Faction_strengths_report:^{s2}
 qstr_{s1}^^Factions_are_n {s1}^^Factions_are_normally_sieged_when_below_{reg1}_strength.
+qstr_Savagery Savagery
 qstr_{s2}^^{s5}^{s6} {s2}^^{s5}^{s6}
 qstr_Traits_gained:^{s2} Traits_gained:^{s2}
 qstr_^^You_are_{s17}. ^^You_are_{s17}.

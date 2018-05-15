@@ -1770,6 +1770,11 @@ game_menus = [
       (val_add, ":title_string", ":title_string"),
       (val_add, ":title_string", tld_first_trait_string),
       (str_store_string, s5, ":title_string"),
+      (try_begin),
+      	(eq, ":trait", slot_trait_bravery),
+      	(neq|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      	(str_store_string, s5, "@Savagery"),
+      (try_end),
       (val_add, ":title_string", 1),
       (str_store_string, s6, ":title_string"), #description string
     

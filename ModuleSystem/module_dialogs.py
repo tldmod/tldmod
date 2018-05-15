@@ -6498,6 +6498,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 										 (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                                          (store_partner_quest,":lords_quest"),
                                          (eq,":lords_quest","qst_raise_troops"),
+                                         ] + (is_a_wb_dialog and [
+                                         (lt, "$g_arena_training_kills", 1),
+                                         ] or []) + [ 
                                          (quest_get_slot, ":quest_target_troop", ":lords_quest", slot_quest_target_troop),
                                          (quest_get_slot, ":quest_target_amount", ":lords_quest", slot_quest_target_amount),
                                          (party_count_companions_of_type, ":num_companions", "p_main_party", ":quest_target_troop"),
@@ -7106,7 +7109,7 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
 
 ] + (is_a_wb_dialog and [
 #Kham - Alternate Training
-[anyone|plyr,"lord_mission_raise_troops_told", [],
+[anyone|plyr,"lord_mission_raise_troops_told", [(quest_get_slot, reg1, "$random_quest_no", slot_quest_target_amount), (val_div, reg1, 2), (val_max, reg1, 2),],
 "I suggest another method, {s65}. I'll take {reg1} fresh recruits to the arena teach them a thing or two...", "lord_mission_raise_troops_alternate_1",[]],
 [anyone|plyr,"lord_mission_raise_troops_alternate_1", [(quest_get_slot, reg1, "$random_quest_no", slot_quest_target_amount), (val_div, reg1, 2), (val_max, reg1, 2),],
 "I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.", "lord_mission_raise_troops_alternate",[]],
