@@ -129,10 +129,10 @@ itemsfile version 2
  itm_rhun_horse_h Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav4 0  65537 0 1500 16139943936 0 100 0 35 0 4 160 32 34 0 0 25 0
 0
 
- itm_dale_horse Dale_Horse Dale_Horse 1  sumpter_horse 0  65537 0 724 16139943936 0 100 0 11 0 2 65 35 37 0 0 10 0
+ itm_dale_horse Rhovanion_Horse Rhovanion_Horse 1  sumpter_horse 0  65537 0 724 16139943936 0 100 0 11 0 2 65 35 38 0 0 10 0
 0
 
- itm_dale_warhorse Dale_Warhorse Dale_Warhorse 1  warhorse 0  65537 0 1500 16139943936 0 100 0 35 0 4 135 34 36 0 0 23 0
+ itm_dale_warhorse Rhovanion_Warhorse Rhovanion_Warhorse 1  hunting_horse 0  65537 0 1000 16139943936 0 100 0 17 0 3 90 34 37 0 0 10 0
 0
 
  itm_riv_warhorse Rivendell_Warhorse Rivendell_Warhorse 1  rivendell_warhorse01 0  65537 0 1500 119890247680 0 100 0 46 0 4 135 36 38 0 0 30 0
@@ -1403,7 +1403,7 @@ itemsfile version 2
  itm_moria_armor_d Moria_Bolted_Leather Moria_Bolted_Leather 1  orc_moria_d 0  16842765 0 1101 1116859269284 22 100 0 18 10 0 0 0 0 0 0 0 0
 0
 
- itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 1  orc_moria_e 0  16842765 0 1401 704643072 24 100 0 23 11 0 0 0 0 0 0 0 0
+ itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a 16777216  uruk_mordor_heavy_mail_b 134217728  uruk_mordor_platemail_a 536870912  16842765 0 1401 704643072 24 100 0 23 11 0 0 0 0 0 0 0 0
 0
 
  itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 100 251658402 5 100 0 10 0 0 410 88 0 60 0 0 0
