@@ -5185,20 +5185,22 @@ game_menus = [
 			  (else_try), 
 				(display_log_message, "@{s3} witnesses your victory against {s4}.", color_good_news),
 			  (try_end), 
-              (store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
-              (assign, reg33, ":rank_increase"),
+              #(store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
+              
+              (assign,":rank_increase", reg62), #Replaced by new formula
               
               #Debug:
               (try_begin),
 				(troop_slot_eq, "trp_player", slot_troop_home, 22),
-				(display_message, "@Debug: giving {reg33} rank points for impressed faction.", color_good_news),
+				(display_message, "@Debug: giving {reg62} rank points for impressed faction.", color_good_news),
 			  (try_end),
 
               (call_script, "script_increase_rank", "$impressed_faction", ":rank_increase"),
 		  (else_try),
 		  	  (call_script, "script_party_get_dominant_faction", "p_main_party"), #Kham - Check dominant faction in player party and increase the rank from that faction
 		  	  (assign, ":impressed_troop_faction", reg0),
-		  	  (store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
+		  	  #(store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)
+		  	  (assign,":rank_increase", reg62), #Replaced by new formula
 		  	  (call_script, "script_increase_rank", ":impressed_troop_faction", ":rank_increase"),
 			  (display_log_message, "@Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.", color_good_news), #Kham - Let's still give player some rank.
 		  (try_end),
@@ -5241,7 +5243,9 @@ game_menus = [
           (gt, ":num_ally_stacks", 0), # anybody survived
           (store_faction_of_party, ":ally_faction","$g_ally_party"),
           
-          (store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)  #changed from 5 - 2 (kham)
+          #(store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)  #changed from 5 - 2 (kham)
+
+          (assign,":rank_increase", reg62), #Replaced by new formula
 #(display_message, "@Debug: giving rank points for helping allies."),		  
 		  (call_script, "script_increase_rank", ":ally_faction", ":rank_increase"), # MV - changed rank increase to renown calc #Kham- for some reason, it still uses  relation ($g_relation_boost). Changed to renown.
 #		  (call_script, "script_increase_rank", ":ally_faction", ":faction_reln_boost"), # increase rank of helped faction (mtarini)
