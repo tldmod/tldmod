@@ -3244,6 +3244,101 @@ presentations = [
     ]),
 ]),
 
+
+
+# SWYTER's FACTION SELECTION ANIMATED AND MODULAR MENU
+# enjoy it :P
+  ("faction_selection",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [  
+        (set_fixed_point_multiplier, 1000),
+
+        (str_store_string, s1, "@What do you fight for?"),
+        (create_text_overlay, reg1, s1, tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg1, pos1),
+        (position_set_x, pos1, 1750),
+        (position_set_y, pos1, 1750),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_text, reg1, s1),
+        (create_button_overlay, "$g_presentation_obj_1", "@Go Back...", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 50),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        
+        (create_button_overlay, "$g_presentation_obj_2", "@Learn about the different factions of Middle-Earth", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 100),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+
+    #FACTION SIDE GOOD
+    #text
+     (create_text_overlay, "$g_option_good_text", "@The DAWN of a New Era", tf_center_justify),
+    #(create_button_overlay, "$g_presentation_obj_1", 0, tf_center_justify),
+        (position_set_x, pos1, 280),
+        (position_set_y, pos1, 180),
+        (overlay_set_position, "$g_option_good_text", pos1),
+    (overlay_set_alpha, "$g_option_good_text", 0x7D),
+    (overlay_set_color, "$g_option_good_text", 0x181D4D),
+
+    #logo
+      #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
+      (create_image_button_overlay, "$g_option_good", "mesh_banner_gondor", "mesh_banner_gondor"),
+           (position_set_x, pos1, 280),
+           (position_set_y, pos1, 500),
+           (overlay_set_position, "$g_option_good", pos1),
+           (position_set_x, pos1, 150),
+           (position_set_y, pos1, 150),
+           (overlay_set_size, "$g_option_good", pos1),
+
+    #FACTION SIDE EVIL
+    #text
+     (create_text_overlay, "$g_option_evil_text", "@The TWILIGHT of Man", tf_center_justify),
+        (position_set_x, pos1, 680),
+        (position_set_y, pos1, 180),
+        (overlay_set_position, "$g_option_evil_text", pos1),
+    (overlay_set_alpha, "$g_option_evil_text", 0x7D),
+    (overlay_set_color, "$g_option_evil_text", 0x4D1818),
+
+    #logo
+      (create_image_button_overlay, "$g_option_evil", "mesh_banner_mordor", "mesh_banner_mordor"),
+           (position_set_x, pos1, 680),
+           (position_set_y, pos1, 500),
+           (overlay_set_position, "$g_option_evil", pos1),
+           (position_set_x, pos1, 150),
+           (position_set_y, pos1, 150),
+           (overlay_set_size, "$g_option_evil",pos1),
+        (presentation_set_duration, 999999),
+        ]),
+    
+    (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+      (try_begin),
+        (eq, ":object", "$g_presentation_obj_1"),
+        (presentation_set_duration, 0),
+        (jump_to_menu, "mnu_auto_quit"),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_2"),
+        #(presentation_set_duration, 0),
+        (start_presentation, "prsnt_faction_intro_text"),
+      (else_try),
+        (eq, ":object", "$g_option_good"),
+        (str_store_string,s13,"@After visiting the recruiting center you were accepted into the army and spent several months training at the Imperial Academy. As your last task before graduation you were given a small ship and sent to Coruscant to pledge your loyalty before Emperor Palpatine himself."),
+        #(assign,"$faction_choice",cb0_empire),
+        (jump_to_menu,"mnu_start_good"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_option_evil"),
+        (str_store_string,s13,"@Using some of your local contacts you eventually arranged a meeting with a rebel commander. After working with his unit for several months you have been given a small ship and sent to Yavin IV to pledge your loyalty before Mon Mothma herself."),
+        #(assign,"$faction_choice",cb0_rebel),
+        (jump_to_menu,"mnu_start_evil"),
+        (presentation_set_duration, 0),
+      (try_end),
+    ]),
+  ]),
+
+
 ]
 
 from module_info import wb_compile_switch

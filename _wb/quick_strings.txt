@@ -1,4 +1,4 @@
-1685
+1693
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -86,6 +86,13 @@ qstr_{s2} {s2}
 qstr_Rallies: Rallies:
 qstr_View_Keybinds__Press View_Keybinds_(Press_Insert)
 qstr_{reg75} {reg75}
+qstr_What_do_you_fight_fo What_do_you_fight_for?
+qstr_Go_Back... Go_Back...
+qstr_Learn_about_the_diff Learn_about_the_different_factions_of_Middle-Earth
+qstr_The_DAWN_of_a_New_Er The_DAWN_of_a_New_Era
+qstr_The_TWILIGHT_of_Man The_TWILIGHT_of_Man
+qstr_After_visiting_the_r After_visiting_the_recruiting_center_you_were_accepted_into_the_army_and_spent_several_months_training_at_the_Imperial_Academy._As_your_last_task_before_graduation_you_were_given_a_small_ship_and_sent_to_Coruscant_to_pledge_your_loyalty_before_Emperor_Palpatine_himself.
+qstr_Using_some_of_your_l Using_some_of_your_local_contacts_you_eventually_arranged_a_meeting_with_a_rebel_commander._After_working_with_his_unit_for_several_months_you_have_been_given_a_small_ship_and_sent_to_Yavin_IV_to_pledge_your_loyalty_before_Mon_Mothma_herself.
 qstr_Click_the_center_but Click_the_center_button_to_toggle_faction^Click_the_avatars_to_view_details_of_them
 qstr_Level:_{reg3}^Health Level:_{reg3}^Health:_{reg4}
 qstr_Attributes Attributes
@@ -972,6 +979,7 @@ qstr_OFF OFF
 qstr_ON ON
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{reg63}_followers {reg63}_followers
+qstr_{s1}___Battlesize_{r {s1}_-_Battlesize_{reg66}
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!

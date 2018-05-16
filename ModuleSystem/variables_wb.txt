@@ -854,3 +854,9 @@ show_key_binds
 show_key_binds_toggle
 batching_check_period
 g_arena_training_kills
+g_option_good_text
+g_option_good
+g_option_evil_text
+g_option_evil
+player_battlesize_changed
+player_battlesize

@@ -110,6 +110,7 @@ game_menus = [
 	# item faction slots
 	(call_script,"script_set_item_faction"),
 	(assign, "$disable_skill_modifiers", 0),
+	#(start_presentation, "prsnt_faction_selection"),
     ],
     [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),
      ("start_evil",[],"the TWILIGHT of Man"      ,[(jump_to_menu,"mnu_start_evil" ),]),
@@ -3228,12 +3229,15 @@ game_menus = [
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("test_presentation",[],"Test Presentation", [(start_presentation, "prsnt_faction_intro_text")]),
-    ("what_theater",[], "Which Theater Am I in?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
+    ("what_theater",[], "Which Theater Am I in / Followers?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
   (assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news),]),
-    ("what_region",[], "What Region am I in?", 
+    ("what_region",[], "What Region am I in / Battlesize?", 
     	[(store_add, reg1, str_shortname_region_begin , "$current_player_region"),
 		 (str_store_string, s1, reg1),
-		 (display_message, "@{s1}"),
+		] + (is_a_wb_menu==1 and [
+		 (options_get_battle_size, reg66),
+		 (display_message, "@{s1} - Battlesize {reg66}"),
+	 	] or []) + [
     	]),
     ("player_control_allies",[
     	(try_begin),
@@ -6131,6 +6135,13 @@ game_menus = [
           #(leave_encounter),
           #(change_screen_return),
            (jump_to_menu, "mnu_total_victory"),
+           ] + (is_a_wb_menu==1 and [
+           (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+           	(try_end),
+           ] or []) + [
         (else_try),
           (call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
           (assign, ":ally_num_soldiers", reg0),
@@ -6140,6 +6151,13 @@ game_menus = [
 		  (assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
           (assign, "$g_next_menu", "mnu_tld_player_defeated"),
           (jump_to_menu, "mnu_total_defeat"),
+          ] + (is_a_wb_menu==1 and [
+          (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+          (try_end),
+          ] or []) + [
           #(leave_encounter),
           #(change_screen_return),
         (try_end),
@@ -6184,6 +6202,11 @@ game_menus = [
            (call_script, "script_calculate_battle_advantage"),
            (val_mul, reg0, 2),
            (val_div, reg0, 3), #scale down the advantage a bit in sieges.
+           ] + (is_a_wb_menu==1 and [
+           (options_get_battle_size, "$player_battlesize"),
+           (options_set_battle_size, 1416), #200
+           (assign, "$player_battlesize_changed", 1),
+           	] or []) + [
            (set_battle_advantage, reg0),
            (set_party_battle_mode),
            (assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
@@ -6223,7 +6246,16 @@ game_menus = [
            #(assign, "$g_player_follow_army_warnings", 0),
          (try_end),
          (jump_to_menu,"mnu_castle_attack_walls_with_allies_simulate")]),
-      ("leave",[],"Leave.",[(leave_encounter),(change_screen_return)]),
+      ("leave",[],"Leave.",[
+      	] + (is_a_wb_menu==1 and [
+          (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+          (try_end),
+        ] or []) + [
+          (leave_encounter),
+          (change_screen_return)]),
     ]
  ),
 
@@ -6543,6 +6575,11 @@ game_menus = [
 	     (call_script, "script_calculate_battle_advantage"),
 		 (val_mul, reg0, 2),
 		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
+		 ] + (is_a_wb_menu==1 and [
+         (options_get_battle_size, "$player_battlesize"),
+         (options_set_battle_size, 1416), #200
+         (assign, "$player_battlesize_changed", 1),
+     	 ] or []) + [
 		 (set_battle_advantage, reg0),
 		 (set_party_battle_mode),
  		 (assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
@@ -6800,11 +6837,25 @@ game_menus = [
           (this_or_next|eq, ":enemy_finished", 1),
           (eq, "$g_enemy_surrenders", 1),
           (assign, "$g_next_menu", "mnu_castle_taken"),
+          ] + (is_a_wb_menu==1 and [
+          (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+          (try_end),
+          ] or []) + [
           (jump_to_menu, "mnu_total_victory"),
         (else_try),
           (call_script, "script_party_count_members_with_full_health", "p_main_party"),
           (assign, ":main_party_fit_regulars", reg(0)),
           (eq, "$g_battle_result", -1),
+          ] + (is_a_wb_menu==1 and [
+          (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+          (try_end),
+          ] or []) + [
           (eq, ":main_party_fit_regulars", 0), #all lost
 		  (assign, "$recover_after_death_menu", "mnu_recover_after_death_town"),
           (assign, "$g_next_menu", "mnu_tld_player_defeated"),
@@ -6860,6 +6911,11 @@ game_menus = [
            (assign, ":battle_advantage", reg0),
            (val_mul, ":battle_advantage", 2),
            (val_div, ":battle_advantage", 3), #scale down the advantage a bit in sieges.
+           ] + (is_a_wb_menu==1 and [
+           (options_get_battle_size, "$player_battlesize"),
+           (options_set_battle_size, 1416), #200
+           (assign, "$player_battlesize_changed", 1),
+           	] or []) + [
            (set_battle_advantage, ":battle_advantage"),
            (set_party_battle_mode),
            (assign, "$g_siege_battle_state", 1),
@@ -7311,6 +7367,13 @@ game_menus = [
             (this_or_next|eq, ":enemy_finished",1),
             (eq,"$g_enemy_surrenders",1),
             (assign, "$g_next_menu", -1),
+            ] + (is_a_wb_menu==1 and [
+           (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+          	(try_end),
+          	] or []) + [
             (jump_to_menu, "mnu_total_victory"),
           (else_try),
             (assign, ":battle_lost", 0),
@@ -7325,6 +7388,13 @@ game_menus = [
             (eq,"$g_player_surrenders",1),
 			(assign, "$recover_after_death_menu", "mnu_recover_after_death_town"),
             (assign, "$g_next_menu", "mnu_tld_player_defeated"),
+            ] + (is_a_wb_menu==1 and [
+            (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+            (try_end),
+            ] or []) + [
             (jump_to_menu, "mnu_total_defeat"),
           (else_try),
             # Ordinary victory/defeat.
@@ -7367,6 +7437,13 @@ game_menus = [
               (try_end),
               (display_message, "@The enemy has been forced to retreat. The assault is over, but the siege continues."),
               (assign, "$g_battle_simulation_cancel_for_party", "$g_encountered_party"),
+              ] + (is_a_wb_menu==1 and [
+              (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+         	  (try_end),
+         	  ] or []) + [
               (leave_encounter),
               (change_screen_return),
               (assign, "$g_battle_simulation_auto_enter_town_after_battle", "$g_encountered_party"),
@@ -7401,6 +7478,11 @@ game_menus = [
               (call_script, "script_calculate_battle_advantage"),
               (val_mul, reg0, 2),
               (val_div, reg0, 3), #scale down the advantage a bit.
+              ] + (is_a_wb_menu==1 and [
+              (options_get_battle_size, "$player_battlesize"),
+           	  (options_set_battle_size, 1416), #200
+          	  (assign, "$player_battlesize_changed", 1),
+          	  ] or []) + [
               (set_battle_advantage, reg0),
               (set_party_battle_mode),
 #              (try_begin),
@@ -8040,6 +8122,11 @@ game_menus = [
 	     (call_script, "script_calculate_battle_advantage"),
 		 (val_mul, reg0, 2),
 		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
+		 ] + (is_a_wb_menu==1 and [
+         (options_get_battle_size, "$player_battlesize"),
+         (options_set_battle_size, 1416), #200
+         (assign, "$player_battlesize_changed", 1),
+         ] or []) + [
 		 (set_battle_advantage, reg0),
 		 (set_party_battle_mode),
  		 (assign, ":siege_mission", "mt_castle_attack_walls_ladder"),
@@ -8177,6 +8264,13 @@ game_menus = [
             (eq, "$g_battle_result", 1),
             (assign, ":enemy_finished", 1),
             (assign, ":next_menu", "mnu_total_victory"),
+            ] + (is_a_wb_menu==1 and [
+            (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+         	(try_end),
+          	] or []) + [
             (assign, "$g_next_menu", -1),
             (try_begin), #TLD: if center destroyable, disable it, otherwise proceed as normal
 				(party_slot_ge, "$g_enemy_party", slot_center_destroy_on_capture, 1),
@@ -8195,10 +8289,24 @@ game_menus = [
             (ge, "$g_friend_fit_for_battle", 1),
             (assign, ":enemy_finished", 1),
             (assign, ":next_menu", "mnu_total_victory"),
+            ] + (is_a_wb_menu==1 and [
+            (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+       			(options_set_battle_size, "$player_battlesize"),
+         	(try_end),
+         	] or []) + [
             (assign, "$g_next_menu", -1),
           (else_try),
           	(eq, "$g_battle_result", -1),
           	(assign, "$player_allowed_siege", 0),
+          	] + (is_a_wb_menu==1 and [
+            (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+          	(try_end),
+          	] or []) + [
           	(str_store_faction_name, s4, "$players_kingdom"),
           	(display_message, "@{s4}'s scouts have seen and reported your failure. You have brought shame to {s4} and the responsibility of this failure is yours alone.", color_bad_news),
           	(call_script, "script_increase_rank", "$players_kingdom", -250),
@@ -8210,6 +8318,13 @@ game_menus = [
           #(call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
          # (assign, ":ally_num_soldiers", reg0),
           (eq, "$g_battle_result", -1),
+          ] + (is_a_wb_menu==1 and [
+          (try_begin),
+           		(eq, "$player_battlesize_changed", 1),
+           		(assign, "$player_battlesize_changed",0),
+           		(options_set_battle_size, "$player_battlesize"),
+          (try_end),
+          ] or []) + [
           #(eq, ":ally_num_soldiers", 0), #battle lost
           #(assign, "$player_allowed_siege",0),
 		  (assign, "$recover_after_death_menu", "mnu_recover_after_death_default"),
@@ -10607,6 +10722,12 @@ game_menus = [
 ] or []) + [
   #Kham - Training END
 
+
+( "auto_quit",0,
+    "This menu automatically returns to caller.",
+    "none",
+    [(change_screen_quit)],[]
+ ),
 
 ##### Guardian Party Quest END ##########
 
