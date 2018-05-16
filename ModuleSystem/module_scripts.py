@@ -10608,6 +10608,7 @@ scripts = [
 	(assign, "$bs_night_sound", "snd_wind_ambiance"),
 	(try_begin),
 		(eq,":landmark","p_town_erebor"),
+		(assign, "$small_scene_used", 1),
 		(assign,":scene_to_use","scn_erebor_outside"), 
 	(else_try),
 		(eq,":landmark","p_town_minas_tirith"),
@@ -10635,6 +10636,7 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_dol_guldur"), 
 		(store_random_in_range, ":scene_to_use", "scn_dolguldur_outside_1", "scn_beorn_outside_1"),
+		(assign, "$small_scene_used", 1),
 		(assign, "$bs_day_sound", "snd_evilforest_ambiance"),
 		(assign, "$bs_night_sound", "snd_evilforest_ambiance"),
 	(else_try),
@@ -10796,6 +10798,7 @@ scripts = [
 		(try_begin),(lt, reg1, 3),(store_random_in_range, ":scene_to_use", "scn_forest_ithilien1", "scn_forest_lorien1"),
 		 (else_try),              (assign, ":native_terrain_to_use", rt_steppe_forest),
 		(try_end),
+		(assign, "$small_scene_used", 1),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),		# occasional forest terrain, in gondor: use forest battlefield regardless of region (but gondor outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
@@ -10803,6 +10806,7 @@ scripts = [
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_plain_small"), # so that outer terrain of gondor is used
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"), 
+		(assign, "$small_scene_used", 1),
 #InVain: Moved Osgiliath up, landmarks must be before regions!
 #	(else_try),
 #		(this_or_next|eq,":landmark","p_town_west_osgiliath"), # Occasional Osgiliath - In Vain
@@ -10814,26 +10818,32 @@ scripts = [
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_steppe_small"), # so that outer terrain of rohan is used
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
+		(assign, "$small_scene_used", 1),
 	(else_try),		# occasional forest terrain, anywhere else: use forest battlefield regardless of region (but flat outer terrain)
 		(is_between, ":terrain", rt_forest_begin, rt_forest_end),
 		(assign, ":native_terrain_to_use", rt_forest),
 		(assign,":scene_to_use","scn_random_scene_desert_small"), # so that outer terrain flat is used
 		(assign, "$bs_day_sound", "snd_neutralforest_ambiance"),
+		(assign, "$small_scene_used", 1),
 	(else_try),		# gondor regions
 		(is_between,":region",region_pelennor, region_anorien+1),
 			(store_random_in_range, ":scene", 1, 100),
 	        (try_begin),
 	        	(is_between,":scene",0,5),
 	        	(assign,":scene_to_use","scn_village_gondor_battlefield_1"), #InVain: Gondor village
+				(assign, "$small_scene_used", 1),
 	        (else_try),
 	        	(is_between,":scene",5,10),
 	        	(assign,":scene_to_use","scn_village_gondor_battlefield_2"), #InVain: Gondor village
+				(assign, "$small_scene_used", 1),
 	        (else_try),
 	        	(is_between,":scene",10,15),
 	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_1"), #InVain: Gondor village ruins
+				(assign, "$small_scene_used", 1),
 	        (else_try),
 	        	(is_between,":scene",15,20),
 	        	(assign,":scene_to_use","scn_scout_camp_gondor_battlefield_2"), #InVain: Gondor village ruins
+				(assign, "$small_scene_used", 1),
 	        (else_try),
 				(assign, ":native_terrain_to_use", rt_plain),  # gondor default
 			(try_end),
