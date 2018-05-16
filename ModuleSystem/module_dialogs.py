@@ -11752,7 +11752,14 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 "You happen to be our next dinner!{s20}", "prisoner_slaughter",[]],
 [anyone,"prisoner_chat_4", [],"Yeah, like I'm in a position for trying? Get lost!", "close_window",[(call_script,"script_stand_back"),]],
 
-[anyone,"prisoner_slaughter", [(eq, "$talk_context", tc_troop_review_talk )], "One day you will pay!", "prisoner_slaughter_02",[]],
+[anyone,"prisoner_slaughter", [(eq, "$talk_context", tc_troop_review_talk )], "One day you will pay!", "prisoner_slaughter_02",[
+  (try_begin),
+    (lt, "$butcher_trait_kills",35),
+    (val_add, "$butcher_trait_kills",1),
+  (else_try),
+    (ge, "$butcher_trait_kills", 35),
+    (call_script, "script_cf_gain_trait_butcher"),
+  (try_end),]],
 
 [anyone|auto_proceed,"prisoner_slaughter_02", [], "_", "close_window",[
 	(call_script,"script_stand_back"),(display_message, "@Slaughter him for fresh human meat!",),
@@ -11777,7 +11784,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
     (lt, "$butcher_trait_kills",35),
     (val_add, "$butcher_trait_kills",1),
   (else_try),
-    (eq, "$butcher_trait_kills", 35),
+    (ge, "$butcher_trait_kills", 35),
     (call_script, "script_cf_gain_trait_butcher"),
   (try_end),
   (try_begin),

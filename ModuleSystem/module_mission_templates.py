@@ -1726,6 +1726,14 @@ mission_templates = [ # not used in game
 				(troop_add_item,"trp_player", "itm_human_meat",imod_fresh),
 			(try_end),
 		(try_end),
+
+    (try_begin),
+      (lt, "$butcher_trait_kills",35),
+      (val_add, "$butcher_trait_kills", reg0),
+    (else_try),
+      (ge, "$butcher_trait_kills", 35),
+      (call_script, "script_cf_gain_trait_butcher"),
+    (try_end),
 		
 		# remove undue XP gained from killing pris...
 		(troop_get_xp, ":xp", "trp_player"), 
