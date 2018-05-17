@@ -6,7 +6,7 @@ set BUILD_TLD_WB=1
 :start
 cls
 python  -B -OO  flora_kinds.py
-::python  -B -OO  ground_specs.py
+python  -B -OO  ground_specs.py
 ::python  -B -OO  skyboxes.py
 echo.
 echo ______________________________
