@@ -13,15 +13,15 @@ gtf_has_color  = 0x00000004 #you can overwrite the ambient color of the ground s
 ground_specs = [
     ("gray_stone",gtf_has_color,"stone_a",4.0,"none",(0.7,0.7,0.7)),
     ("brown_stone",gtf_has_color,"patch_rock",2,"none",(0.7,0.7,0.7)),
-    ("turf",gtf_overlay|gtf_has_color,"grassy_ground",3.3,"ground_earth_under_grass",(0.42,0.59,0.17)),
-    ("steppe",gtf_overlay|gtf_dusty|gtf_has_color,"ground_steppe",3.0,"ground_earth_under_steppe",(0.85,0.73,0.36)),
-    ("snow",gtf_overlay|gtf_has_color,"snow",5.2,"none",(1.4,1.4,1.4)),
-    ("earth",gtf_overlay|gtf_dusty|gtf_has_color,"ground_earth",4.5,"none",(0.7,0.5,0.23)),
-    ("desert",gtf_overlay|gtf_dusty|gtf_has_color,"ground_desert", 2.5,"none",(1.4,1.2,0.4)),
-    ("forest",gtf_overlay|gtf_has_color,"ground_forest",4.2,"ground_forest_under_grass",(0.6,0.42,0.28)),
+    ("turf",gtf_overlay|gtf_has_color,"grassy_ground",3.3,"ground_earth_under_grass",(0.5,0.5,0.5)), #(0.42,0.59,0.17)
+    ("steppe",gtf_overlay|gtf_dusty|gtf_has_color,"ground_steppe",3.0,"ground_earth_under_steppe",(0.6,0.6,0.6)), #(0.85,0.73,0.36)
+    ("snow",gtf_overlay|gtf_has_color,"snow",5.2,"none",(0.4,0.4,0.4)), #(1.4,1.4,1.4)
+    ("earth",gtf_overlay|gtf_dusty|gtf_has_color,"ground_earth",4.5,"none",(0.2,0.2,0.2)), #(0.7,0.5,0.23)
+    ("desert",gtf_overlay|gtf_dusty|gtf_has_color,"ground_desert", 2.5,"none",(0.2,0.2,0.2)), #(1.4,1.2,0.4)
+    ("forest",gtf_overlay|gtf_has_color,"ground_forest",4.2,"ground_forest_under_grass",(0.4,0.4,0.4)), #(0.6,0.42,0.28)
     ("pebbles",gtf_overlay|gtf_has_color,"pebbles",4.1,"none",(0.7,0.7,0.7)),
-    ("village",gtf_overlay|gtf_has_color,"ground_village",7.0,"none",(1.0,0.9,0.59)),
-    ("path",gtf_overlay|gtf_dusty|gtf_has_color,"ground_path",6.0,"none",(0.93,0.68,0.34)),
+    ("village",gtf_overlay|gtf_has_color,"ground_village",7.0,"none",(0.7,0.7,0.7)), #(1.0,0.9,0.59)
+    ("path",gtf_overlay|gtf_dusty|gtf_has_color,"ground_path",6.0,"none",(0.3,0.3,0.3)), #(0.93,0.68,0.34)
 ]
 
 def write_vec(file,vec):
