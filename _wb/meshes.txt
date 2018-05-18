@@ -1,4 +1,4 @@
-385
+392
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -384,3 +384,10 @@ mesh_pic_units_details 0 town_goodcamp 0 0 0 0 0 0 1 1 1
 mesh_cb_ui_main 0 cb_ui_main 0 0 0 0 0 0 1 1 1
 mesh_mp_score_a 0 mp_score_a 0 0 0 0 0 0 1 1 1
 mesh_draw_mound_oath 0 draw_mound_oath 0 0 0 0 0 0 1 1 1
+mesh_order_frame 0 mp_ui_order_button 0 0 0 0 0 0 1 1 1
+mesh_flag_spears 0 flag_infantry 0 0 0 0 0 0 1 1 1
+mesh_flag_skirmishers 0 flag_archers 0 0 0 0 0 0 1 1 1
+mesh_flag_horsemen 0 flag_cavalry 0 0 0 0 0 0 1 1 1
+mesh_flag_d7 0 flag_infantry 0 0 0 0 0 0 1 1 1
+mesh_flag_d8 0 flag_archers 0 0 0 0 0 0 1 1 1
+mesh_flag_d9 0 flag_cavalry 0 0 0 0 0 0 1 1 1

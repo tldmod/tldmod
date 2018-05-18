@@ -103,6 +103,21 @@ info_pages = [
 
 
   '''),
+
+("tactical_controls", "Tactical Controls", "Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^\
+Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. You may target an enemy division through this mechanism."),  #copied from str_tactical_controls
+("division_placement", "Division Placement", "When ONE division is selected, the center of its front rank is placed at the spot indicated.^^\
+When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^\
+One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward. Placement is overridden for any division the player chooses to personally head through the Formations Options menu.^^\
+If the camp menu game option is set, divisions will rotate to face the enemy. Otherwise, they will maintain the facing that the player had when they were placed."),  #mostly copied from str_division_placement
+("formations", "Formations", "The Complex Formations on the Battle Menu are:^^\
+- RANKS with best troops up front^\
+- SHIELD WALL, ranks with shields in front and longer weapons in back^\
+- WEDGE with best troops up front^\
+- SQUARE in no particular order^\
+- NO FORMATION^^\
+Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times."),  
+
 ]
 
 for indx, page in enumerate(info_pages):

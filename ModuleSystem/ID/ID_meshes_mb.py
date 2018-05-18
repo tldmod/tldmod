@@ -376,5 +376,12 @@ mesh_pic_units_details = 374
 mesh_cb_ui_main = 375
 mesh_mp_score_a = 376
 mesh_draw_mound_oath = 377
+mesh_order_frame = 378
+mesh_flag_spears = 379
+mesh_flag_skirmishers = 380
+mesh_flag_horsemen = 381
+mesh_flag_d7 = 382
+mesh_flag_d8 = 383
+mesh_flag_d9 = 384
 
 

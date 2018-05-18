@@ -1924,6 +1924,8 @@ scripts = [
 	(assign, "$g_display_agent_labels",0), #Kham - Troop Labels for WB
 	(assign, "$show_hide_labels", 1), #Kham - Toggle for Troop Labels
 	(assign, "$batching_check_period", 3000), #Kham - For Batching
+	(assign, "$first_time", 0),	#squelch compiler warnings
+	(assign, "$FormAI_autorotate", 1), #Autorotate for New Formations force to 1
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
@@ -13622,6 +13624,11 @@ scripts = [
     (try_begin),
 	  (eq, "$tld_option_formations", 1),
 	  (call_script, "script_player_order_formations", ":order"),	#for formations
+	] + (is_a_wb_script==1 and [
+	(else_try),
+	  (eq, "$tld_option_formations", 2),
+	  (call_script, "script_player_order_formations_moto", ":order"),	#for formations v5
+	] or []) + [
     (try_end),
     (set_show_messages, 1),
 ]),  

@@ -32,3 +32,5 @@ prsnt_troop_detail = 30
 prsnt_display_agent_labels = 31
 prsnt_all_items = 32
 prsnt_customize_armor = 33
+prsnt_order_display = 34
+prsnt_formation_mod_option = 35

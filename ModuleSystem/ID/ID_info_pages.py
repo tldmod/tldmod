@@ -5,5 +5,8 @@ ip_starting_tips = 3
 ip_rumours_and_legendary_places = 4
 ip_trolls = 5
 ip_custom_camera = 6
+ip_tactical_controls = 7
+ip_division_placement = 8
+ip_formations = 9
 
 

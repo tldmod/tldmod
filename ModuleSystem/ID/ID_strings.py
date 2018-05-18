@@ -2285,5 +2285,8 @@ str_beorn_extra_info = 2283
 str_intro_strings_extra_end = 2284
 str_gundabad_intro = 2285
 str_show_keybinds = 2286
+str_tactical_controls = 2287
+str_division_placement = 2288
+str_formations = 2289
 
 

@@ -2428,7 +2428,7 @@ message_negative = 0xFF3333
 message_neutral = 0xFFFF33
 
 #Order Weapon Switch
-slot_team_shield_order = 42
+slot_team_shield_order = 1000
 
 key_for_onehand   = key_p
 key_for_twohands =  key_open_braces
@@ -2472,3 +2472,183 @@ slot_faction_allowed_follow = 182
 #Batching
 slot_agent_tick_check_time = 1000
 slot_agent_period_reset_time = 1001
+
+
+########################
+########################
+#####FORM V5 Additions #
+########################
+
+# Formations AI v5 by Motomataru
+# rel. 02/12/2016
+
+AI_Max_Reinforcements	= 8	#maximum number of reinforcement stages in a battle
+AI_Replace_Dead_Player	= 1
+AI_Poor_Troop_Level	= 12	#average level of troops under which a division may lose discipline
+
+#positions used in a script, named for convenience
+Nearest_Enemy_Troop_Pos_MOTO	= 48	#pos48	used only by infantry AI
+Nearest_Enemy_Battlegroup_Pos_MOTO	= 50	#pos50	used only by ranged AI
+Nearest_Threat_Pos_MOTO	= Nearest_Enemy_Troop_Pos_MOTO	#used only by cavalry AI
+Nearest_Target_Pos_MOTO	= Nearest_Enemy_Battlegroup_Pos_MOTO	#used only by cavalry AI
+Infantry_Pos_MOTO	= 51	#pos51
+Archers_Pos_MOTO	= 53	#pos53
+Cavalry_Pos_MOTO	= 54	#pos54
+Team_Starting_Point	= 55	#pos55
+
+#positions used through battle
+Team0_Cavalry_Destination	= 56	#pos56
+Team1_Cavalry_Destination	= 57	#pos57
+Team2_Cavalry_Destination	= 58	#pos58
+Team3_Cavalry_Destination	= 59	#pos59
+
+# Formations AI v5 by Motomataru
+# rel. 02/12/2016
+
+#Team Data
+slot_team_faction                       = 1
+slot_team_starting_x                    = 2
+slot_team_starting_y                    = 3
+slot_team_reinforcement_stage           = 4
+
+#Reset with every call of Store_Battlegroup_Data
+slot_team_size                          = 5
+slot_team_adj_size                      = 6 #cavalry double counted for AI considerations
+slot_team_num_infantry                  = 7	#class counts
+slot_team_num_archers                   = 8
+slot_team_num_cavalry                   = 9
+slot_team_level                         = 10
+slot_team_avg_zrot                      = 11
+slot_team_avg_x                         = 12
+slot_team_avg_y                         = 13
+
+#Battlegroup slots (1 for each of 9 divisions). A "battlegroup" is uniquely defined by team and division
+slot_team_d0_size                       = 14
+slot_team_d0_percent_ranged             = 23
+slot_team_d0_percent_throwers           = 32
+slot_team_d0_low_ammo                   = 41
+slot_team_d0_level                      = 50
+slot_team_d0_armor                      = 59
+slot_team_d0_weapon_length              = 68
+slot_team_d0_swung_weapon_length        = 77
+slot_team_d0_front_weapon_length        = 86
+slot_team_d0_front_agents               = 95	#for calculating slot_team_d0_front_weapon_length
+slot_team_d0_is_fighting                = 104
+slot_team_d0_enemy_supporting_melee     = 113
+slot_team_d0_closest_enemy              = 122
+slot_team_d0_closest_enemy_dist         = 131	#for calculating slot_team_d0_closest_enemy
+slot_team_d0_closest_enemy_special      = 140	#tracks non-cavalry for AI infantry division, infantry for AI archer division
+slot_team_d0_closest_enemy_special_dist = 149	#for calculating slot_team_d0_closest_enemy_special
+slot_team_d0_avg_x                      = 158
+slot_team_d0_avg_y                      = 167
+slot_team_d0_avg_zrot                   = 176
+#End Reset Group
+
+sdt_infantry   = 0
+sdt_archer     = 1
+sdt_cavalry    = 2
+sdt_polearm    = 3
+sdt_skirmisher = 4
+sdt_harcher    = 5
+sdt_support    = 6
+sdt_bodyguard  = 7
+sdt_unknown    = -1
+
+slot_team_d0_formation                  = 194
+
+#Native formation modes
+#Constants actually correspond to number of "Stand Closer" commands required by WB to create formation
+#Extended to 5 line for WFaS
+formation_1_row    = 0
+formation_2_row    = -1
+formation_3_row    = -2
+formation_4_row    = -3
+formation_5_row    = -4
+
+slot_team_d0_formation_space            = 203	#number of extra 50cm spaces currently in use
+slot_team_d0_move_order                 = 212	#now used only for player divisions
+slot_team_d0_fclock                     = 221	#now used only for player divisions
+slot_team_d0_first_member               = 230	#-1 if division not in formation
+slot_team_d0_prev_first_member          = 239
+slot_team_d0_speed_limit                = 248
+slot_team_d0_percent_in_place           = 257
+slot_team_d0_destination_x              = 266
+slot_team_d0_destination_y              = 275
+slot_team_d0_destination_zrot           = 284
+slot_team_d0_target_team                = 293	#targeted battlegroup (team ID)
+slot_team_d0_target_division            = 302	#targeted battlegroup (division ID)
+slot_team_d0_formation_num_ranks        = 311
+slot_team_d0_exists                     = 320
+#NEXT                                   = 329
+#Battlegroup slots end
+
+reset_team_stats_begin = slot_team_size  
+reset_team_stats_end   = slot_team_d0_type
+
+minimum_ranged_ammo = 3	#below this not considered ranged type troop
+
+#Formation tweaks
+formation_reequip	= 1	#allow troops in formations to switch weapons
+formation_reform_interval	= 2 #seconds
+formation_rethink_for_formations_only	= 0
+
+#Other constants (not tweaks)
+Third_Max_Weapon_Length = 220 / 3
+Km_Per_Hour_To_Cm = formation_reform_interval * 100000 / 3600
+Reform_Trigger_Modulus = formation_reform_interval * 2	#trigger is half-second
+Top_Speed	= 13
+
+#positions used through formations and AI triggers
+Current_Pos     = 34	#pos34
+Speed_Pos       = 36	#pos36
+Target_Pos      = 37	#pos37
+Enemy_Team_Pos_MOTO  = 38	#pos38
+Temp_Pos        = 39	#pos39
+
+#Hold Over There Command Tracking
+HOT_no_order           = 0
+HOT_F1_pressed         = 1
+HOT_F1_held            = 2
+
+#Team Slots SEE SECTION
+
+scratch_team = 7	#Should be used just for above slots. If you use it, check for conflicts.
+
+WB_Implementation   = 0
+WFaS_Implementation = 1
+Native_Formations_Implementation = WB_Implementation
+
+#Other slots
+#use faction slots to remember information between battles
+slot_faction_d0_mem_formation           = 200
+slot_faction_d0_mem_formation_space     = 209
+slot_faction_d0_mem_relative_x_flag     = 218
+slot_faction_d0_mem_relative_y          = 227
+#NEXT                                   = 236
+
+#the following applied only to infantry in formation
+slot_agent_formation_rank      = 27
+slot_agent_inside_formation    = 28
+slot_agent_nearest_enemy_agent = 29
+slot_agent_new_division        = 30
+slot_agent_positioned          = 31
+
+slot_item_alternate            = 46	#table between swing/noswing versions of same weapon
+
+#Battle Phases
+BP_Ready  = 0
+BP_Init   = 1
+BP_Deploy = 2
+BP_Setup_MOTO  = 3
+BP_Jockey_MOTO = 4
+BP_Duel   = 5
+BP_Fight_MOTO  = 6
+
+first_time_hold_F1         = 0x200
+first_time_formations      = 0x400
+
+Outfit_Thorax_Length = 60  #length dark ages human thorax
+Outfit_Fast_Weapon_Speed = 100
+
+mission_tpl_are_all_agents_spawned     = 1943   # (mission_tpl_are_all_agents_spawned), #agents >300 may keep spawning after ti_after_mission_start (still fires .1 second too early)
+

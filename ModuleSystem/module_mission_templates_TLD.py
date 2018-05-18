@@ -784,7 +784,8 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
 	common_move_deathcam,
 ] or  
 
-  field_ai_triggers + order_weapon_type_triggers +[
+  field_ai_triggers + order_weapon_type_triggers +
+  utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto + [
   common_init_deathcam_wb,
   common_start_deathcam_wb,
   
@@ -911,7 +912,7 @@ AI_triggers = [
 		(val_add, "$ranged_clock", 1),
 	]),
 
- (2, 0, ti_once, [(store_mission_timer_a, reg0),(gt, reg0, 2)], [ #Force Cav to Stay Mounted - Kham
+ (2, 0, ti_once, [(eq, "$tld_option_formations", 1),(store_mission_timer_a, reg0),(gt, reg0, 2)], [ #Force Cav to Stay Mounted - Kham
     (set_show_messages, 0),   
     (try_for_range, ":team", 0, 4),		
 		#(try_for_range, ":division", 0, 9),
@@ -1124,7 +1125,7 @@ formations_triggers = [
 	#(0, 0, 1, [(eq, "$tld_option_formations",1), (eq, "$cheat_mode",1), (key_clicked, key_for_skirmish)],[(assign, "$archer_aim_active", 1), (display_message, "@Archer Aim Activated!")]),
 	#(0, 0, 1, [(eq, "$tld_option_formations",1), (eq, "$cheat_mode",1), (key_clicked, key_for_skirmish_end)],[(assign, "$archer_aim_active", 0), (display_message, "@Archer Aim DE-Activated!")]), 
 
-	(0.5, 0, 0, [(eq, "$cheat_mode",1), (call_script, "script_cf_order_skirmish_check")], [(call_script, "script_order_skirmish_skirmish")]), 
+	(0.5, 0, 0, [(eq,0,1), (call_script, "script_cf_order_skirmish_check")], [(call_script, "script_order_skirmish_skirmish")]), 
 	(ti_after_mission_start, 0, 0, [(eq, "$cheat_mode",1) ], [
 	          (get_player_agent_no, ":player"),
 	          (agent_get_party_id, ":player_party", ":player"),
@@ -1133,7 +1134,7 @@ formations_triggers = [
 	          (try_end),]),
 
 ##Fix Divisions
-	(ti_on_agent_spawn, 0, 0, [], [(store_trigger_param_1, ":agent"),(call_script, "script_agent_fix_division", ":agent")]),
+	(ti_on_agent_spawn, 0, 0, [(eq, "$tld_option_formations",1)], [(store_trigger_param_1, ":agent"),(call_script, "script_agent_fix_division", ":agent")]),
 
 ## Formation Key Command Fixes
 
@@ -1145,7 +1146,8 @@ formations_triggers = [
 		(assign, "$field_ai_horse_archer", 0),
 	]),
 
-	(0, 0, 0, [(game_key_clicked, gk_order_1)], [
+	(0, 0, 0, [(eq, "$tld_option_formations", 1),
+		(game_key_clicked, gk_order_1)], [
 		(try_begin),
 			(eq, "$gk_order", 0),
 			(assign, "$gk_order", gk_order_1),
@@ -1184,7 +1186,7 @@ formations_triggers = [
 		(try_end),
 	]),
 	
-	(0, 0, 0, [(game_key_clicked, gk_order_3)], [
+	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_3)], [
 		(try_begin),
 			(eq, "$gk_order", 0),
 			(assign, "$gk_order", gk_order_3),
@@ -1219,7 +1221,7 @@ formations_triggers = [
 		(try_end),
 	]),
 	
-	(0, 0, 0, [(game_key_clicked, gk_order_5)], [
+	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_5)], [
 		(try_begin),
 			(eq, "$gk_order", gk_order_1),	#RETREAT
 			(call_script, "script_player_order_formations", mordr_retreat),
@@ -1230,7 +1232,7 @@ formations_triggers = [
       (try_end),
 	]),
 	
-	(0, 0, 0, [(game_key_clicked, gk_order_6)], [
+	(0, 0, 0, [(eq, "$tld_option_formations", 1),(game_key_clicked, gk_order_6)], [
 		(eq, "$gk_order", gk_order_2),	#DISMOUNT
 		(try_begin),
 			(class_is_listening_order, "$fplayer_team_no", grc_cavalry), #JL: added 2/2/2011 to fix dismount issue
