@@ -6265,7 +6265,10 @@ formAI_scripts = [
           (assign, "$battle_phase", BP_Jockey_MOTO),
         (try_end),
         
-        (team_get_leader, ":team_leader", ":team_no"),
+        #(team_get_leader, ":team_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":team_leader", reg0),
+        (gt, ":team_leader", 0),
         (assign, ":place_leader_by_infantry", 0),
         
         #infantry AI
@@ -6370,7 +6373,10 @@ formAI_scripts = [
           (else_try),
             (store_add, ":slot", slot_team_d0_formation, grc_infantry),
             (team_get_slot, ":infantry_formation", ":team_no", ":slot"),
-            (team_get_leader, ":enemy_leader", ":enemy_agent_nearest_infantry_team"),
+            #(team_get_leader, ":enemy_leader", ":enemy_agent_nearest_infantry_team"),
+             (call_script, "script_team_get_nontroll_leader", ":enemy_agent_nearest_infantry_team"),
+             (assign, ":enemy_leader", reg0),
+             (gt, ":team_leader", 0),
             
             #consider new formation
             (try_begin),
@@ -6478,7 +6484,9 @@ formAI_scripts = [
                 (gt, ":enemy_nearest_non_cav_agent", 0),
                 (agent_get_position, pos60, ":enemy_nearest_non_cav_agent"),
                 (agent_get_team, ":enemy_non_cav_team", ":enemy_nearest_non_cav_agent"),
-                (team_get_leader, reg0, ":enemy_non_cav_team"),
+                #(team_get_leader, reg0, ":enemy_non_cav_team"),
+                (call_script, "script_team_get_nontroll_leader", ":enemy_agent_nearest_infantry_team"),
+                (gt, reg0, 0),
                 (try_begin),
                   (eq, ":enemy_nearest_non_cav_agent", reg0),	#team leader?
                   (assign, ":distance_to_enemy_group", Far_Away),
@@ -7175,7 +7183,9 @@ formAI_scripts = [
       
       (assign, ":depth_cavalry", 0),
       (assign, ":largest_mounted_division_size", 0),
-      (team_get_leader, ":fleader", ":fteam"),
+      #(team_get_leader, ":fleader", ":fteam"),
+      (call_script, "script_team_get_nontroll_leader", ":fteam"),
+      (assign, ":fleader", reg0),
       
       (try_begin),
         (ge, ":fleader", 0),
@@ -8477,7 +8487,10 @@ formAI_scripts = [
       
       (try_begin),
         (eq, ":bg_size", 0),	#script_store_battlegroup_data is not being called
-        (team_get_leader, ":leader", ":team"),
+        #(team_get_leader, ":leader", ":team"),
+        (call_script, "script_team_get_nontroll_leader", ":team"),
+        (assign, ":leader", reg0),
+        (gt, ":leader", 0),
         (try_for_agents, ":agent"),
           (call_script, "script_cf_valid_formation_member_moto", ":team", ":division", ":leader", ":agent"),
           (val_add, ":bg_size", 1),
@@ -8577,7 +8590,10 @@ formAI_scripts = [
           (team_set_slot, ":fteam", ":slot", formation_none),
         (try_end),
         
-        (team_get_leader, ":leader", ":fteam"),
+        #(team_get_leader, ":leader", ":fteam"),
+        (call_script, "script_team_get_nontroll_leader", ":fteam"),
+        (assign, ":leader", reg0),
+        (gt, ":leader", 0),
         
         (try_for_agents, ":agent"),
           (agent_is_alive, ":agent"),
@@ -10180,9 +10196,12 @@ formAI_scripts = [
       (assign, ":count_support", 0),
       (assign, ":count_bodyguard", 0),
       
-      (team_get_leader, ":leader", ":fteam"),
+      #(team_get_leader, ":leader", ":fteam"),
+      (call_script, "script_team_get_nontroll_leader", ":fteam"),
+      (assign, ":leader", reg0),
       
       (try_for_agents, ":cur_agent"),
+        (agent_is_active, ":cur_agent"),
         (call_script, "script_cf_valid_formation_member_moto", ":fteam", ":fdivision", ":leader", ":cur_agent"),
         (agent_get_troop_id, ":cur_troop", ":cur_agent"),
         (agent_get_ammo, ":cur_ammo", ":cur_agent", 0),
@@ -10465,7 +10484,10 @@ formAI_scripts = [
         (try_end),
         (agent_get_troop_id, ":cur_troop", ":cur_agent"),
         (try_begin),
-          (team_get_leader, ":leader", ":bgteam"),
+          #(team_get_leader, ":leader", ":bgteam"),
+          (call_script, "script_team_get_nontroll_leader", ":bgteam"),
+          (assign, ":leader", reg0),
+          (agent_is_active, ":leader"),
           (eq, ":leader", ":cur_agent"),
           (assign, ":bgdivision", -1),
         (try_end),
@@ -11758,9 +11780,12 @@ formAI_scripts = [
     [
       (store_script_param, ":team_no", 1),
       (store_script_param, ":battle_tactic", 2),
-      (team_get_leader, ":ai_leader", ":team_no"),
+      #(team_get_leader, ":ai_leader", ":team_no"),
+      (call_script, "script_team_get_nontroll_leader", ":team_no"),
+      (assign, ":ai_leader", reg0),
       (try_begin),
         (eq, ":battle_tactic", btactic_hold),
+        (agent_is_active, ":ai_leader"),
         (agent_get_position, pos1, ":ai_leader"),
         (call_script, "script_find_high_ground_around_pos1", ":team_no", 30),
         (copy_position, pos1, pos52),
@@ -11773,7 +11798,9 @@ formAI_scripts = [
         (team_give_order, ":team_no", grc_archers, mordr_advance),
       (else_try),
         (eq, ":battle_tactic", btactic_follow_leader),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        #(team_get_leader, ":ai_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":ai_leader", reg0),
         (ge, ":ai_leader", 0),
         (agent_set_speed_limit, ":ai_leader", 8),
         (agent_get_position, pos60, ":ai_leader"),
@@ -11848,8 +11875,11 @@ formAI_scripts = [
         (try_end),
       (else_try),
         (eq, ":battle_tactic", btactic_follow_leader),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        #(team_get_leader, ":ai_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":ai_leader", reg0),
         (try_begin),
+          (agent_is_active, ":ai_leader"),
           (agent_is_alive, ":ai_leader"),
           (agent_set_speed_limit, ":ai_leader", 9),
           (call_script, "script_team_get_average_position_of_enemies", ":team_no"),
@@ -11943,7 +11973,10 @@ formAI_scripts = [
 		(call_script, "script_formation_end_moto", ":team_no", grc_archers),	#formations
 		(call_script, "script_formation_end_moto", ":team_no", grc_cavalry),	#formations
         (team_give_order, ":team_no", grc_everyone, mordr_charge),
-        (team_get_leader, ":ai_leader", ":team_no"),
+        #(team_get_leader, ":ai_leader", ":team_no"),
+        (call_script, "script_team_get_nontroll_leader", ":team_no"),
+        (assign, ":ai_leader", reg0),
+        (agent_is_active, ":ai_leader"),
         (agent_set_speed_limit, ":ai_leader", 60),
       (try_end),
       (assign, reg0, ":battle_tactic"),

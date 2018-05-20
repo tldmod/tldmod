@@ -2593,7 +2593,7 @@ formation_reform_interval	= 2 #seconds
 formation_rethink_for_formations_only	= 0
 
 #Other constants (not tweaks)
-Third_Max_Weapon_Length = 220 / 3
+Third_Max_Weapon_Length = 227 / 3
 Km_Per_Hour_To_Cm = formation_reform_interval * 100000 / 3600
 Reform_Trigger_Modulus = formation_reform_interval * 2	#trigger is half-second
 Top_Speed	= 13
