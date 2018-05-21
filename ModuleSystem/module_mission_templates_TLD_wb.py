@@ -2947,7 +2947,7 @@ real_deployment = [ #3 triggers
       ],[
       # (call_script, "script_init_overhead_camera"),
       (assign, "$battle_phase", BP_Init),
-      (assign, "$player_deploy_troops", 0),
+      #(assign, "$player_deploy_troops", 0),
   ]),
   
   # Trigger file: real_deployment_init

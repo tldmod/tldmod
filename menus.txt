@@ -28,9 +28,9 @@ menu_start_good 18374686479671624192 ^^^^^^^^^^Select_your_race: none 1 1107 1 0
  mno_start_ma  0  MAN  1 2060 1 16  .  mno_start_el  0  ELF  1 2060 1 17  .  mno_start_dw  0  DWARF  1 2060 1 18  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 0  . 
 menu_start_evil 18374686479671624192 ^^^^^^^^^^Whom_do_you_Serve? none 0 4
  mno_start_eye  0  SAURON_of_Mordor,_the_Lord_of_the_Rings  1 2060 1 14  .  mno_start_hand  0  SARUMAN_of_Isengard,_the_White_Hand  1 2060 1 15  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 0  . 
-menu_start_eye 18374686479671624192 ^^^^^^^^^Your_Master_is_the_Lidless_Eye^Choose_your_Race none 0 5
+menu_start_eye 18374686479671624192 ^^^^^^^^^Your_Master_is_the_Lidless_Eye^Choose_your_Race none 1 2133 2 144115188075855974 14 5
  mno_start_or  0  an_ORC,_serving_the_Lidless_Eye  1 2060 1 21  .  mno_start_ur  0  an_URUK,_the_new_breed_of_Orcs  2 1 2 253 344 2060 1 27  .  mno_start_em  0  a_MAN,_subjugated_by_Sauron  1 2060 1 20  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 13  . 
-menu_start_hand 18374686479671624192 ^^^^^^^^^Your_Master_is_the_White_Hand^Choose_your_Race none 0 5
+menu_start_hand 18374686479671624192 ^^^^^^^^^Your_Master_is_the_White_Hand^Choose_your_Race none 1 2133 2 144115188075855974 15 5
  mno_start_whor  0  an_ORC,_serving_the_White_Hand  1 2060 1 22  .  mno_start_isur  0  an_URUK-HAI,_bred_in_Isengard  2 1 2 253 336 2060 1 27  .  mno_start_duma  0  a_MAN_of_Dunland,_the_Western_Plains  2 1 2 253 267 2060 1 25  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 13  . 
 menu_start_good_man 18374686479671624192 ^^^^^^^^^^Select_your_people: none 1 2133 2 144115188075855974 16 7
  mno_start_go  0  GONDOR,_the_Kingdom_of_the_White_Tower  1 2060 1 19  .  mno_start_ro  0  ROHAN,_the_Horse_people  2 1 2 253 221 2060 1 25  .  mno_start_du  0  DUNEDAIN,_the_ancient_dynasty_of_Men  2 1 2 253 210 2060 1 25  .  mno_start_be  0  BEORNINGS,_the_Bear_people  2 1 2 253 38 2060 1 25  .  mno_start_da  0  the_northern_Kingdom_of_DALE  2 1 2 253 47 2060 1 25  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 12  . 
@@ -42,9 +42,9 @@ menu_start_gondor 18374686479671624192 ^^^^^^^^^^Where_are_you_from,_in_Gondor? 
  mno_start_mt  0  MINAS_TIRITH,_the_Capital  2 500 3 0 49 0 2060 1 23  .  mno_start_ls  0  LOSSARNACH,_the_Fiefdom_of_the_Axemen  3 1 2 253 125 500 3 0 49 4 2060 1 25  .  mno_start_la  0  LAMEDON,_the_Fiefdom_of_the_Mountain_Clansmen  3 1 2 253 138 500 3 0 49 3 2060 1 25  .  mno_start_pg  0  PINNATH_GELIN,_the_Fiefdom_of_Green_Hills  3 1 2 253 145 500 3 0 49 5 2060 1 25  .  mno_start_do  0  DOL_AMROTH,_the_Fiefdom_of_Swan_Knights  3 1 2 253 157 500 3 0 49 2 2060 1 25  .  mno_start_pe  0  PELARGIR,_the_Coastal_Fiefdom  3 1 2 253 131 500 3 0 49 1 2060 1 25  .  mno_start_bl  0  BLACKROOT_VALE,_the_Fiefdom_of_Archers  3 1 2 253 151 500 3 0 49 6 2060 1 25  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 12  . 
 menu_start_eye_man 18374686479671624192 ^^^^^^^^^^Select_your_people: none 1 2133 2 144115188075855974 20 7
  mno_start_hr  0  HARADRIM,_the_desert_people_from_the_South  1 2060 1 24  .  mno_start_bn  0  Black_NUMENOREANS,_the_renegades_from_the_West  2 1 2 253 397 2060 1 25  .  mno_start_um  0  UMBAR,_the_pirates_from_the_South_Seas  2 1 2 253 296 2060 1 25  .  mno_start_rh  0  RHUN,_the_barbarians_from_the_East  2 1 2 253 64 2060 1 25  .  mno_start_kh  0  KHAND,_the_savage_people_from_South-East  2 1 2 253 277 2060 1 25  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 14  . 
-menu_start_eye_orc 18374686479671624192 ^^^^^^^^^^Where_do_you_lurk? none 0 4
+menu_start_eye_orc 18374686479671624192 ^^^^^^^^^^Where_do_you_lurk? none 1 2133 2 144115188075855974 21 4
  mno_start_arm  0  in_the_armies_amassed_at_MORDOR  2 1 2 253 358 2060 1 27  .  mno_start_cav  0  in_the_caves_of_DOL_GULDUR  2 1 2 253 356 2060 1 27  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 14  . 
-menu_start_hand_orc 18374686479671624192 ^^^^^^^^^^Where_do_you_lurk? none 0 5
+menu_start_hand_orc 18374686479671624192 ^^^^^^^^^^Where_do_you_lurk? none 1 2133 2 144115188075855974 22 5
  mno_start_armis  0  in_the_Armies_amassed_at_ISENGARD  2 1 2 253 314 2060 1 27  .  mno_start_minmo  0  in_the_Mines_of_MORIA  2 1 2 253 374 2060 1 27  .  mno_start_cliff  0  in_the_cliffs_of_Mount_GUNDABAD  2 1 2 253 382 2060 1 27  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 15  . 
 menu_start_gondor_mt 18374686479671624192 ^^^^^^^^^^Select_your_Lineage none 1 2133 2 144115188075855974 23 4
  mno_start_1_com  0  Commoner  2 1 2 253 101 2060 1 25  .  mno_start_2_hib  0  High-born  2 1 2 253 110 2060 1 25  .  mno_spacer  0  _  0  .  mno_go_back  0  Go_back  1 2060 1 19  . 

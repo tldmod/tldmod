@@ -5818,7 +5818,7 @@ formAI_scripts = [
       (assign, ":new_leader", ":team_leader"),
       
       (try_begin),
-      	#(neq, ":team_leader", -1), #Kham - fix for horse agent
+      	(gt, ":team_leader", 0), #Kham - fix for horse agent
         (agent_get_troop_id, ":troop_id", ":team_leader"),
         (troop_get_type, ":troop_type", ":troop_id"),
         (eq, ":troop_type", tf_troll), # is it a troll?
@@ -8268,40 +8268,40 @@ formAI_scripts = [
 		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_rohan"),	#Rohan
-		(assign, reg0, formation_shield),
+		(assign, reg0, formation_square),
 	(else_try),
 		(eq, ":ffaction", "fac_mordor"),	#Mordor
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_wedge),
 	(else_try),
 		(eq, ":ffaction", "fac_isengard"),	#Isengard
 		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_lorien"),	#Lorien
-		(assign, reg0, formation_shield),
+		(assign, reg0, formation_ranks),
 	(else_try),
 		(eq, ":ffaction", "fac_imladris"),	#Imladris
 		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_woodelf"),	#Mirkwood Elves
-		(assign, reg0, formation_shield),
+		(assign, reg0, formation_ranks),
 	(else_try),
 		(eq, ":ffaction", "fac_dale"),	#Dale
-		(assign, reg0, formation_shield),
+		(assign, reg0, formation_square),
 	(else_try),
 		(eq, ":ffaction", "fac_harad"),	#Harad
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_wedge),
 	(else_try),
 		(eq, ":ffaction", "fac_rhun"),	#Rhun
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_wedge),
 	(else_try),
 		(eq, ":ffaction", "fac_khand"),	#Khand
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_umbar"),	#Umbar
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_shield),
 	(else_try),
 		(eq, ":ffaction", "fac_moria"),	#Moria
-		(assign, reg0, formation_ranks),
+		(assign, reg0, formation_wedge),
 	(else_try),
 		(eq, ":ffaction", "fac_guldur"),	#Dol Guldur
 		(assign, reg0, formation_ranks),
@@ -8723,8 +8723,7 @@ formAI_scripts = [
         (eq, ":sd_type", sdt_archer),
         (assign, ":size_minimum", formation_min_foot_troops),
         (try_begin),
-          # (this_or_next|eq, ":fformation", formation_ranks), uncheck for proper
-          # ranks
+          (this_or_next|eq, ":fformation", formation_ranks), #Allow Archers to form Ranks      
           (eq, ":fformation", formation_default),
           (assign, ":valid_type", 1),
         (try_end),

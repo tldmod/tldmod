@@ -1926,6 +1926,7 @@ scripts = [
 	(assign, "$batching_check_period", 3000), #Kham - For Batching
 	(assign, "$first_time", 0),	#squelch compiler warnings
 	(assign, "$FormAI_autorotate", 1), #Autorotate for New Formations force to 1
+	(assign, "$player_deploy_troops", 1), #Make sure troops hold when battle starts.
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
