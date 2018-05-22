@@ -3237,6 +3237,7 @@ game_menus = [
 		] + (is_a_wb_menu==1 and [
 		 (options_get_battle_size, reg66),
 		 (display_message, "@{s1} - Battlesize {reg66}"),
+		 (call_script, "script_cf_get_nearest_bandit_party"),
 	 	] or []) + [
     	]),
     ("player_control_allies",[
@@ -3947,7 +3948,7 @@ game_menus = [
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("defend_village", [], "Defend Village", [(assign, "$cheat_imposed_quest", "qst_defend_village")]),
 	("raid_village", [], "Raid Village", [(assign, "$cheat_imposed_quest", "qst_raid_village")]),
-    ("eliminate_patrols", [], "Eliminate Patrols", [(assign, "$cheat_imposed_quest", "qst_eliminate_patrols")]),
+    ("eliminate_patrols", [], "Kill Bandits", [(assign, "$cheat_imposed_quest", "qst_blank_quest_17")]),
     ("eliminate_troll", [], "Dispatch Troll", [
     	(try_begin),
     		(store_faction_of_party, ":fac", "p_main_party"),

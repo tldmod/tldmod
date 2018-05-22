@@ -514,6 +514,8 @@ mayor_sea_battle_question
 mayor_sea_battle_yes
 mayor_sea_battle_no
 mayor_reinforced_center_finished
+mayor_kill_bandit_quest_complete
+kill_quest_bandits_failed
 mayor_deliver_food
 mayor_deliver_food_completed
 mayor_looters_quest_response
@@ -538,6 +540,7 @@ merchant_quest_stall
 merchant_quest_brief_deliver_wine
 merchant_quest_taken
 merchant_quest_brief_reinforce_center
+mayor_mission_told_kill_quest_bandit
 merchant_quest_brief_deliver_food
 merchant_quest_brief_deliver_iron
 escort_merchant_caravan_quest_brief

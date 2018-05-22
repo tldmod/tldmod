@@ -6281,6 +6281,28 @@ scripts = [
 			(try_end),
 			] or [(eq, 0, 1),]) + [
 		(else_try),
+
+			#Kham - Kill Quest - Bandits (Mayor Quest)
+			] + (is_a_wb_script==1 and [
+			(eq, ":quest_no", "qst_blank_quest_17"),
+			(try_begin),
+				(neg|check_quest_active, "qst_blank_quest_17"),
+				(call_script, "script_cf_init_kill_quest_bandit"),
+
+				(assign, ":quest_object_troop", reg55),
+				(assign, ":quest_target_troop", reg56),	
+				(assign, ":quest_target_amount", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
+
+				(assign, ":result", ":quest_no"),
+			(try_end),
+			] or [(eq, 0, 1),]) + [
+		(else_try),
 		
 		  ##Kham: Defend village
           (eq, ":quest_no", "qst_defend_village"), 
@@ -15451,6 +15473,7 @@ scripts = [
          (neg|is_between, ":attached_to_party", centers_begin, centers_end),
 
          (faction_get_slot, ":tier_1_troop", ":troop_faction", slot_faction_deserter_troop),
+         (faction_get_slot, ":tier_ranged_troop", ":troop_faction", slot_faction_ranged_troop),
          (try_begin), # only evil factions have deserters, good ones have -1 for deserter troop
            (ge, ":tier_1_troop", 0),		 
 ##           (party_get_attached_to, ":attached_party_no", ":party_no"),
@@ -15460,13 +15483,27 @@ scripts = [
            (assign, ":new_party", reg0),
            (store_character_level, ":level", "trp_player"),
            (store_mul, ":max_number_to_add", ":level", 2),
-           (val_add, ":max_number_to_add", 11),
-           (store_random_in_range, ":number_to_add", 10, ":max_number_to_add"),
+           (val_add, ":max_number_to_add", 5),
+           (store_random_in_range, ":number_to_add", 2, ":level"), #high tier units
            (party_add_members, ":new_party", ":tier_1_troop", ":number_to_add"),
            (store_random_in_range, ":random_no", 1, 4),
            (try_for_range, ":unused", 0, ":random_no"),
              (party_upgrade_with_xp, ":new_party", 1000000, 0),
            (try_end),
+           (store_random_in_range, ":number_to_add", 3, ":level"),
+           (party_add_members, ":new_party", ":tier_1_troop", ":number_to_add"),
+           (store_random_in_range, ":random_no", 0, 2),
+           (try_for_range, ":unused", 0, ":random_no"),
+             (party_upgrade_with_xp, ":new_party", 20000, 0),
+           (try_end),
+           (store_random_in_range, ":number_to_add", 2, ":level"),
+           (party_add_members, ":new_party", ":tier_ranged_troop", ":number_to_add"),
+           (store_random_in_range, ":random_no", 0, 2),
+           (try_for_range, ":unused", 0, ":random_no"),
+             (party_upgrade_with_xp, ":new_party", 25000, 0),
+           (try_end),
+           (store_random_in_range, ":number_to_add", 10, ":max_number_to_add"),
+           (party_add_members, ":new_party", ":tier_1_troop", ":number_to_add"),
 		 (try_end),
 ##         (str_store_party_name, s1, ":party_no"),
 ##         (call_script, "script_get_closest_center", ":party_no"),
@@ -26868,6 +26905,72 @@ if is_a_wb_script==1:
 	(store_random_in_range, ":check_time", 0, "$batching_check_period"),#randomize reset time
 	(val_add, ":check_time", ":time"),
 	(agent_set_slot, ":agent", slot_agent_period_reset_time, ":check_time"),
+]),
+
+
+# script_cf_get_nearest_bandit_party
+# Input: none
+# Output: Nearest Bandit Troop to -player party
+
+("cf_get_nearest_bandit_party", [
+
+	(assign, ":found", 0),
+
+	(try_for_parties, ":nearest_bandit_party"),
+		(eq, ":found", 0),
+		(party_is_active, ":nearest_bandit_party"),
+		(party_slot_eq, ":nearest_bandit_party", slot_party_type, spt_bandit),
+		(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
+		(le, ":dist", 100),
+		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0), 
+		(assign, ":found", 1),
+
+		#Debug
+		(str_store_party_name, s11, ":nearest_bandit_party"),
+		(str_store_troop_name, s12, ":troop"),
+		(assign, reg70, ":dist"),
+		(display_message, "@Distance - {reg70} - {s11} Party - {s12} Troop"),
+	(try_end),
+
+	(gt, ":troop", 0),
+	(assign, reg0, ":troop"),
+
+]),
+
+
+# script_cf_init_kill_quest_bandit
+
+("cf_init_kill_quest_bandit", [
+
+	(store_character_level, ":player_level", "trp_player"),
+	(ge, ":player_level", 2),
+	
+	(call_script, "script_cf_get_nearest_bandit_party"),
+	(assign, ":target_troop", reg0),
+
+	(store_random_in_range, ":amount", 10, 21),
+	(val_add, ":amount", ":player_level"),
+
+	(store_mul, ":xp_reward", ":amount", 3),
+	(store_add, ":gold_reward", ":xp_reward", 20),
+
+	
+	(store_div, ":rank_reward", ":xp_reward", 20),
+	(val_min, ":rank_reward", 10),
+	
+	(store_div, ":exp", ":amount", 2),
+	(val_add, ":exp", 5),
+
+	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
+	(assign, reg56, ":target_troop"),		#quest_target_troop
+	(assign, reg57, ":amount"),				#quest_target_amount
+	(assign, reg58, 3),						#quest_importance
+	(assign, reg59, ":xp_reward"),			#quest_xp_reward
+	(assign, reg60, ":gold_reward"),		#quest_gold_reward
+	(assign, reg61, ":rank_reward"),		#quest_rank_reward
+	(assign, reg62, ":exp"),				#quest_expiration_days
+	(assign, reg63, 10),					#quest_dont_give_again_period
+
 ]),
 
 ]

@@ -703,5 +703,7 @@ script_order_weapon_type_switch = 701
 script_iterate_pointer_arrow = 702
 script_cf_batching_ti_agent_spawn_human = 703
 script_cf_batching_ti_agent_spawn_mount = 704
+script_cf_get_nearest_bandit_party = 705
+script_cf_init_kill_quest_bandit = 706
 
 

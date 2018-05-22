@@ -1,4 +1,4 @@
-1767
+1779
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -791,6 +791,7 @@ qstr_ready_two_hander ready_two-hander
 qstr_ready_polearms ready_polearms
 qstr_shields_up shields_up
 qstr_doff_shields doff_shields
+qstr_Distance___{reg70}__ Distance_-_{reg70}_-_{s11}_Party_-_{s12}_Troop
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!
@@ -1246,8 +1247,9 @@ qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_DEBUG:_Eliminate_Par DEBUG:_Eliminate_Parties_-_Current:_{reg0},_New:_{reg1}
 qstr_{s1}_parties_defeate {s1}_parties_defeated:_{reg1}_out_of_{reg2}
-qstr_{reg6}_{s2}_troops_k {reg6}_{s2}_troops_killed.
-qstr_{reg6}_{s2}_{s4}_tro {reg6}_{s2}_{s4}_troops_killed.
+qstr_{reg69}_{s2}_troops_ {reg69}_{s2}_troops_killed.
+qstr_{reg69}_{s2}_{s4}_tr {reg69}_{s2}_{s4}_troops_killed.
+qstr_{reg69}_{s4}_killed. {reg69}_{s4}_killed.
 qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
@@ -1708,12 +1710,22 @@ qstr_Lord_{s3}_has_sent_u Lord_{s3}_has_sent_us,_to_join_the_fleet_attacking_{s4
 qstr_Excellent_{playernam Excellent,_{playername}!_I_heard_that_you_gave_them_more_than_what_I_requested._That_is_great_work.^^_Here,_take_this_as_an_extra_reward_for_exceeding_our_expectations._^^_We_need_to_win_this_war_as_soon_as_possible.
 qstr_Excellent_{playername Excellent,_{playername}._That_will_surely_help_them_out._We_need_to_win_this_war_as_soon_as_possible.
 qstr_Reinforcing_{s1}_has Reinforcing_{s1}_has_strengthen_{s2}._({s2}_has_gained_{reg50}_faction_strength).
+qstr_The_watchmen_in_the_ The_watchmen_in_the_city_have_reported_a_remarkable_decrease_in_ambushes._You_have_done_your_job_well._Thank_you,_{playername}.
+qstr_Our_guards_have_seen Our_guards_have_seen_the_vermin_run_away_with_their_tails_tucked_between_their_legs._You_have_done_well_in_showing_these_pests_that_we_control_this_area.
+qstr_It_was_nothing._I_wi It_was_nothing._I_will_keep_watch_should_they_resurface.
+qstr_Slaying_these_maggot Slaying_these_maggots_was_nothing._I'll_keep_watch_should_they_become_bold_again.
 qstr_town town
 qstr_village village
 qstr_The_{s9}_of_{s13}_ha The_{s9}_of_{s13}_has_asked_you_to_deal_with_tribal_orcs_in_the_surrounding_countryside.
 qstr_{s9}_of_{s3}_asked_y {s9}_of_{s3}_asked_you_to_deliver_{reg5}_units_of_{s6}_to_the_{s10}_in_{s4}_in_{reg6}_days.
 qstr_The_{s9}_of_{s4}_ask The_{s9}_of_{s4}_asked_you_to_reinforce_{s3}_with_at_least_{reg5}_troops_within_{reg6}_days._Speak_to_{s3}'s_barracks_master._The_quality_of_the_troop_you_provide_does_not_matter.
 qstr_You_have_reinforced_{ You_have_reinforced_{s3}_with_0_troops.
+qstr_Thank_you_for_offeri Thank_you_for_offering_to_help,_{playername}.^^The_caravans_going_to_and_fro_the_city_have_been_attacked_multiple_times_by_{s6}._They_are_getting_bolder_with_every_ambush,_and_are_moving_closer_and_closer_to_the_city.
+qstr_Good_of_you_to_ask_{ Good_of_you_to_ask,_{playername}.^^There_are_{s6}_moving_about_the_area,_thinking_that_they_are_in_charge._No_one_is_doing_anything_so_they_are_getting_bolder_and_are_taking_what_is_rightfully_ours.
+qstr_The_people_have_aske The_people_have_asked_for_help_in_slaying_at_least_{reg22}_{s6},_in_hopes_that_this_will_keep_them_away_for_some_time.^^Would_you_be_able_to_do_this?
+qstr_I_want_you_to_slay_a I_want_you_to_slay_at_least_{reg22}_{s6},_to_show_those_weaklings_that_they_are_inconsequential.^^What_do_you_say?
+qstr_We_will_get_rid_of_t We_will_get_rid_of_these_pests.
+qstr_{s9}_wants_you_to_sl {s9}_wants_you_to_slay_{reg22}_{s6}.
 qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_food_in_{reg6}_days.
 qstr_The_{s9}_of_{s3}_aske The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_{reg0}_days.
 qstr_Escort_the_supply_tr Escort_the_supply_train_to_{s8}.

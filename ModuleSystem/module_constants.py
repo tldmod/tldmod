@@ -1094,7 +1094,7 @@ mayor_quests_begin  = "qst_move_cattle_herd"
 mayor_quests_end    = "qst_tld_introduction"
 
 mayor_quests_begin_2 = "qst_blank_quest_16" 
-mayor_quests_end_2 = "qst_blank_quest_17"
+mayor_quests_end_2 = "qst_blank_quest_18"
 
 army_quests_begin = "qst_deliver_cattle_to_army"
 army_quests_end   = mayor_quests_begin

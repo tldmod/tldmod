@@ -5885,7 +5885,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ##### TODO: QUESTS COMMENT OUT BEGIN
 
 
-## Kham Kil Quest INIT START
+## Kham Kill Quest INIT START
 [anyone,"lord_tell_mission", [
   (eq,"$random_quest_no","qst_blank_quest_04"),
   (quest_get_slot, ":quest_target_troop", "qst_blank_quest_04", slot_quest_target_troop),
@@ -10935,6 +10935,52 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (try_end),]],
 
 #Kham - Reinforce Center Completion END
+#### Kham Kill Quest Bandit Completion Start ####
+
+[anyone,"mayor_talk", [
+    (check_quest_active, "qst_blank_quest_17"),
+    (check_quest_succeeded, "qst_blank_quest_17"),
+    (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (str_store_string, s5, "@The watchmen in the city have reported a remarkable decrease in ambushes. You have done your job well. Thank you, {playername}."),
+    (else_try),
+      (str_store_string, s5, "@Our guards have seen the vermin run away with their tails tucked between their legs. You have done well in showing these pests that we control this area."),
+    (try_end),
+    ],
+"{s5}", "mayor_kill_bandit_quest_complete",[
+    (call_script, "script_finish_quest", "qst_blank_quest_17", 100),
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
+    ]],
+
+[anyone|plyr,"mayor_kill_bandit_quest_complete", [
+    (check_quest_active, "qst_blank_quest_17"),
+    (check_quest_succeeded, "qst_blank_quest_17"),
+    (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (str_store_string, s5, "@It was nothing. I will keep watch should they resurface."),
+    (else_try),
+      (str_store_string, s5, "@Slaying these maggots was nothing. I'll keep watch should they become bold again."),
+    (try_end),
+    ],
+"{s5}", "close_window",[
+    (call_script, "script_stand_back"),
+    ]],
+
+[anyone,"mayor_talk", [
+    (check_quest_active, "qst_blank_quest_17"),
+    (check_quest_failed, "qst_blank_quest_17"),
+    (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),],
+"I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_bandits_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
+    (cancel_quest, "qst_blank_quest_17"),
+    ]],
+
+[anyone|plyr, "kill_quest_bandits_failed",[],
+  "I will do better next time.", "close_window",[],
+  ],
+#### Kham Kill Quest Bandit Completion END ####
 
 
 [anyone|plyr,"mayor_talk", [(check_quest_active,"qst_deliver_food"),
@@ -11188,7 +11234,8 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"mayor_talk", [
                               (store_partner_quest, ":partner_quest"),
                               (try_begin), #Reinforce Center Exception
-                                (check_quest_active, "qst_blank_quest_16"),
+                                (this_or_next|check_quest_active, "qst_blank_quest_16"),
+                                (check_quest_active, "qst_blank_quest_17"),
                                 (assign, ":partner_quest", 1),
                               (try_end),
                               (lt, ":partner_quest", 0),
@@ -11367,6 +11414,61 @@ If you are able to do this, they can withstand more attacks.^^ What do you say?"
 [anyone|plyr,"merchant_quest_brief_reinforce_center", [], "I am sorry, you'll need to find someone else for that.", "merchant_quest_stall",[]],
 
 #Kham - Reinforce Center INIT END
+
+## Kham Kill Quest Bandits INIT START
+
+[anyone,"merchant_quest_requested", [
+  (eq,"$random_merchant_quest_no","qst_blank_quest_17"),
+  (quest_get_slot, ":quest_target_troop", "qst_blank_quest_17", slot_quest_target_troop),
+  (quest_get_slot, reg22, "qst_blank_quest_17", slot_quest_target_amount),
+  (str_store_troop_name_plural, s6, ":quest_target_troop"),
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@Thank you for offering to help, {playername}.^^\
+The caravans going to and fro the city have been attacked multiple times by {s6}. They are getting bolder with every ambush, and are moving closer and closer to the city."),
+  (else_try),
+    (str_store_string, s5, "@Good of you to ask, {playername}.^^\
+There are {s6} moving about the area, thinking that they are in charge. No one is doing anything so they are getting bolder and are taking what is rightfully ours."),
+  (try_end),], 
+"{s5}", "merchant_quest_brief",[]],
+
+[anyone,"merchant_quest_brief", [
+  (eq,"$random_merchant_quest_no","qst_blank_quest_17"),
+  (quest_get_slot, ":quest_target_troop", "qst_blank_quest_17", slot_quest_target_troop),
+  (quest_get_slot, reg22, "qst_blank_quest_17", slot_quest_target_amount),
+  (str_store_troop_name_plural, s6, ":quest_target_troop"),
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@The people have asked for help in slaying at least {reg22} {s6}, in hopes that this will keep them away for some time.\
+^^Would you be able to do this?"),
+  (else_try),
+    (str_store_string, s5, "@I want you to slay at least {reg22} {s6}, to show those weaklings that they are inconsequential.\
+^^What do you say?"),
+  (try_end),],
+ "{s5}", "mayor_mission_told_kill_quest_bandit",[]],
+
+[anyone|plyr,"mayor_mission_told_kill_quest_bandit", [
+(eq,"$random_merchant_quest_no","qst_blank_quest_17"),
+(str_store_string, s7, "@We will get rid of these pests."),],
+"{s7}", "merchant_quest_taken",[
+      (quest_get_slot, ":quest_target_troop", "qst_blank_quest_17", slot_quest_target_troop),
+      (quest_get_slot, reg22, "qst_blank_quest_17", slot_quest_target_amount),
+      (str_store_troop_name_plural, s6, ":quest_target_troop"),
+      (str_store_troop_name_link, s9, "$g_talk_troop"),
+      
+      (str_store_troop_name_plural, s36, ":quest_target_troop"),
+      (setup_quest_text,"qst_blank_quest_17"),
+      (str_store_string, s2, "@{s9} wants you to slay {reg22} {s6}."),
+      (call_script, "script_start_quest", "qst_blank_quest_17", "$g_talk_troop"),
+]],
+
+[anyone|plyr,"mayor_mission_told_kill_quest_bandit", [
+(eq,"$random_merchant_quest_no","qst_blank_quest_17"),
+],
+"I cannot do this now.", "merchant_quest_stall",[]],
+
+# Kill Quest Bandits END
+
 
 # deliver_food:
 [anyone,"merchant_quest_requested", [(eq,"$random_merchant_quest_no","qst_deliver_food"),], 

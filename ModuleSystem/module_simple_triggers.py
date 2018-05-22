@@ -1691,8 +1691,8 @@ simple_triggers = [
       (check_quest_active, "qst_oath_of_vengeance"),
       (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
       (str_store_faction_name, s2, ":target"),
-      (assign, reg6, "$oath_kills"),
-      (str_store_string, s3, "@{reg6} {s2} troops killed."),
+      (assign, reg69, "$oath_kills"),
+      (str_store_string, s3, "@{reg69} {s2} troops killed."),
       (add_quest_note_from_sreg, "qst_oath_of_vengeance", 2, s3, 0),
     (try_end),
 
@@ -1702,8 +1702,8 @@ simple_triggers = [
       (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
       (quest_get_slot, ":current_amount", "qst_blank_quest_05", slot_quest_current_state),
       (str_store_faction_name, s2, ":target_faction"),
-      (assign, reg6, ":current_amount"),
-      (str_store_string, s3, "@{reg6} {s2} troops killed."),
+      (assign, reg69, ":current_amount"),
+      (str_store_string, s3, "@{reg69} {s2} troops killed."),
       (add_quest_note_from_sreg, "qst_blank_quest_05", 2, s3, 0),
     (try_end),
 
@@ -1715,9 +1715,20 @@ simple_triggers = [
       (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
       (str_store_faction_name, s2, ":target_faction"),
       (str_store_troop_name, s4, ":target_troop"),
-      (assign, reg6, ":current_amount"),
-      (str_store_string, s3, "@{reg6} {s2} {s4} troops killed."),
+      (assign, reg69, ":current_amount"),
+      (str_store_string, s3, "@{reg69} {s2} {s4} troops killed."),
       (add_quest_note_from_sreg, "qst_blank_quest_04", 2, s3, 0),
+    (try_end),
+
+    #Report number of kills for the bandit kill quest
+    (try_begin),
+      (check_quest_active, "qst_blank_quest_17"),
+      (quest_get_slot, ":target_troop", "qst_blank_quest_17", slot_quest_target_troop),
+      (quest_get_slot, ":current_amount", "qst_blank_quest_17", slot_quest_current_state),
+      (str_store_troop_name, s4, ":target_troop"),
+      (assign, reg69, ":current_amount"),
+      (str_store_string, s3, "@{reg69} {s4} killed."),
+      (add_quest_note_from_sreg, "qst_blank_quest_17", 2, s3, 0),
     (try_end),
             
             
