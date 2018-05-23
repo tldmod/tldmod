@@ -23286,7 +23286,7 @@ command_cursor_scripts = [
 			(is_between, "$g_encountered_party", centers_begin, centers_end),
 			(assign, ":giver_center_no", "$g_encountered_party"),
 		(try_end),
-		#(gt, ":giver_center_no", 0),#Skip if lord is outside the center
+		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
 		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
 
 		(assign, ":cur_object_center", ":giver_center_no"), #TLD: just start from the same town
@@ -23476,7 +23476,7 @@ command_cursor_scripts = [
 			(is_between, "$g_encountered_party", centers_begin, centers_end),
 			(assign, ":giver_center_no", "$g_encountered_party"),
 		(try_end),
-		#(gt, ":giver_center_no", 0),#Skip if lord is outside the center
+		(gt, ":giver_center_no", 0),#Skip if lord is outside the center
 		(neq, ":giver_center_no", "p_town_morannon"), #Morannon is too far from any fiefs.
 		(eq, "$g_defending_against_siege", 0),#Skip if the center is under siege (because of resting)
 

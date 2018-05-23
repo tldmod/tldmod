@@ -409,4 +409,7 @@ party_templates = [
 ##Kham - Refugee Quests
 ("refugees","Refugees",icon_mule|carries_goods(8)|pf_default_behavior|pf_quest_party,0,fac_innocents,merchant_personality,[(trp_farmer,6,7), (trp_peasant_woman,3,3)]),
 
+
+## Kham - Retreat Troops
+("retreat_troops","Cover Troops",icon_axeman|carries_goods(3),0,fac_outlaws,merchant_personality,[]),
 ] + common_warp_templates

@@ -1,5 +1,5 @@
 partytemplatesfile version 1
-259
+260
 pt_none none 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_rescued_prisoners Rescued_Prisoners 74 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_enemy Enemy 74 0 1 7 -1 -1 -1 -1 -1 -1 
@@ -257,5 +257,6 @@ pt_orc_horde Orc_Horde 1688849864458332 0 16 238 376 40 50 0 374 50 80 0 -1 -1 -
 pt_vet_archer Vet_Archer 281474980905076 0 8 183 920 1 1 0 -1 -1 -1 -1 -1 
 pt_volunteers Reserves 1098 0 1 7 -1 -1 -1 -1 -1 -1 
 pt_refugees Refugees 2251799814013068 0 27 7 25 6 7 0 446 3 3 0 -1 -1 -1 -1 
+pt_retreat_troops Cover_Troops 844424930132044 0 2 7 -1 -1 -1 -1 -1 -1 
 pt_warp_array warp_array 525568 0 1 0 -1 -1 -1 -1 -1 -1 
 pt_warp_temp_array warp_temp_array 525568 0 1 0 -1 -1 -1 -1 -1 -1 
