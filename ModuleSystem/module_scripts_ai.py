@@ -2987,6 +2987,15 @@ ai_scripts = [
 
 	(try_begin),
 		(is_between, ":center", advcamps_begin, advcamps_end), # advance camps not replaced by ruins
+    (try_begin),
+      (eq, ":center_faction", "$players_kingdom"),
+      (troop_get_slot, ":adv_reserve_party", "trp_player", slot_troop_player_reserve_adv_camp),
+      (gt, ":adv_reserve_party", 0),
+      (party_is_active, ":adv_reserve_party"),
+      (party_detach, ":adv_reserve_party"),
+      (call_script, "script_safe_remove_party", ":adv_reserve_party"),
+      (troop_set_slot, "trp_player", slot_troop_player_reserve_adv_camp,  0),
+    (try_end),
 		#reestablish the advance camp in 3+ days - 10 days now (Kham)    
 		(store_current_hours, ":cur_hours"),
 		(faction_set_slot, ":center_faction", slot_faction_advcamp_timer, ":cur_hours"), #set the timer for camp creation
