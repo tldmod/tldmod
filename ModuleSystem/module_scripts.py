@@ -10669,7 +10669,7 @@ scripts = [
 	(else_try),
 		(eq,":landmark","p_town_beorn_house"), 
 		(store_random_in_range, ":scene_to_use", "scn_beorn_outside_1", "scn_moria_outside_1"),
-#		(assign, "$bs_day_sound", "snd_beorn_occasional"),
+		(assign, "$bs_day_sound", "snd_bees_birds_ambiance"),
 		(assign, "$bs_night_sound", "snd_night_ambiance"),
 	(else_try),
 		(eq,":landmark","p_town_moria"), #InVain: Keep this BEFORE region_dimrill!

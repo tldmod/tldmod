@@ -1914,7 +1914,7 @@ faction_strings =[    #shop rumors begin     shop rumors end           loop_ambi
  (fac_dale    ,str_dale_rumor_begin    ,str_harad_rumor_begin   ,snd_rohan_ambiance  ,snd_wind_ambiance      ,snd_dale_occasional),
  (fac_dwarf   ,str_dwarf_rumor_begin   ,str_mordor_rumor_begin  ,snd_dwarf_ambiance  ,snd_wind_ambiance      ,snd_dwarf_occasional),
  (fac_dunland ,str_dunland_rumor_begin ,str_beorn_rumor_begin   ,snd_evilmen_ambiance,snd_wind_ambiance      ,snd_dunland_occasional),
- (fac_beorn   ,str_beorn_rumor_begin   ,str_lorien_rumor_begin  ,snd_rohan_ambiance  ,snd_goodforest_ambiance,snd_beorn_occasional),
+ (fac_beorn   ,str_beorn_rumor_begin   ,str_lorien_rumor_begin  ,snd_rohan_ambiance  ,snd_neutralforest_ambiance,snd_beorn_occasional),
 ]
 # specific ambient sounds for selected centers  ]+concatenate_scripts([[     ] for ct in range(cheat_switch)])+[
 center_sounds=[#center      specific day ambiance , specific always ambiance      , occasional sounds (later to be divided into occasional nature and occasional faction)
@@ -1931,10 +1931,12 @@ center_sounds=[#center      specific day ambiance , specific always ambiance    
     (p_town_pinnath_gelin,snd_gondor_ambiance ,snd_goodforest_ambiance      ,snd_elves_occasional),
     (p_town_erebor       ,snd_town_ambiance   ,snd_moria_ambiance           ,snd_dwarf_occasional),
     (p_town_minas_morgul ,0                   ,snd_morgul_ambiance          ,snd_morgul_occasional),
-    (p_town_gundabad_m_outpost,snd_orcs_ambiance,snd_evilforest_ambiance,snd_orc_occasional),
+    (p_town_gundabad_m_outpost,snd_orcs_ambiance,snd_evilforest_ambiance	,snd_orc_occasional),
     (p_town_troll_cave   ,0                   ,snd_evilforest_ambiance      ,snd_orc_occasional),
     (p_town_morannon     ,0                   ,snd_wind_ambiance            ,0),
-	(p_town_goblin_north_outpost     ,0       ,snd_moria_ambiance            ,0),
+	(p_town_goblin_north_outpost     ,0       ,snd_moria_ambiance           ,0),
+	(p_town_beorn_house,snd_bees_people_ambiance,snd_neutralforest_ambiance      ,snd_beorn_occasional),
+	(p_town_woodsmen_village     ,0     	  ,snd_evilforest_ambiance      ,snd_beorn_occasional),
 ] 
 
 ## tableau meshes list for factions
