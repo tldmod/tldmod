@@ -866,13 +866,13 @@ items =[
 ["rohan_2h_sword","Rohan_War_Sword",[("rohan_sword_a_2h",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itc_greatsword|itcf_carry_sword_back,524,weight(3)|difficulty(0)|spd_rtng(94)|weapon_length(101)|swing_damage(40,cut)|thrust_damage(31,pierce),imodbits_weapon],
 ###TLD WOODELF ITEMS##########
 #ARMORS##########
-["mirkwood_light_scale","Light_Woodelf_Scale",[("mirkwood_light_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(12)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_a","Light_Leather",[("mirkwood_leather",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(10)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_elf_cloth,],
-["mirkwood_armor_b","Light_Quilted_and_Scale_Armor",[("mirkwood_scalequilted_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1100,weight(12)|head_armor(0)|body_armor(32)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_c","Light_Scale_over_Mail",[("mirkwood_scaleovermaille_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(12)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_d","Light_Quilted_Surcoat",[("mirkwood_quiltedsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(13)|head_armor(0)|body_armor(28)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(15)|head_armor(0)|body_armor(38)|leg_armor(14)|difficulty(0),imodbits_elf_armor,],
-["mirkwood_armor_f","Royal_Woodelf_Armor",[("mirkwood_royal",0)], itp_type_body_armor  |itp_covers_legs ,0, 4000, weight(20)|abundance(100)|head_armor(3)|body_armor(50)|leg_armor(16)|difficulty(0) ,imodbits_elf_armor ],
+["mirkwood_light_scale","Light_Woodelf_Scale",[("mirkwood_light_scale",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(12)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_armor_a","Light_Leather",[("mirkwood_leather",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(7)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_elf_cloth,],
+["mirkwood_armor_b","Light_Quilted_and_Scale_Armor",[("mirkwood_scalequilted_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1100,weight(14)|head_armor(0)|body_armor(32)|leg_armor(16)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_armor_c","Mirkwood_Royal_Mail",[("mirkwood_royal",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(15)|head_armor(0)|body_armor(37)|leg_armor(16)|difficulty(18),imodbits_elf_armor,],
+["mirkwood_armor_d","Light_Quilted_Surcoat",[("mirkwood_quiltedsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(10)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+["mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(15)|head_armor(0)|body_armor(35)|leg_armor(14)|difficulty(18),imodbits_elf_armor,],
+["mirkwood_armor_f","Mirkwood_Leafscale",[("mirkwood_scaleovermaille_01",0)], itp_type_body_armor  |itp_covers_legs ,0, 4000, weight(20)|abundance(100)|head_armor(3)|body_armor(40)|leg_armor(14)|difficulty(22) ,imodbits_elf_armor ],
 #WEAPONS##########
 ["mirkwood_great_spear","Mirkwood_Great_Spear",[("mirkwood_great_spear_large",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_pike_upstab,900,weight(2.5)|difficulty(0)|spd_rtng(101)|weapon_length(148)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["mirkwood_war_spear","Mirkwood_War_Spear",[("mirkwood_war_spear",0)],            itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_spear_upstab,500,weight(2.5)|difficulty(0)|spd_rtng(99)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(31,pierce),imodbits_weapon_good],
