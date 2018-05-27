@@ -391,6 +391,7 @@ mordor_man2            = 0x0000000fff00200429cd7d495667732e00000000001d5cf900000
 
 #Items hidden behind imod modifiers:
 itm_whiterobe = (itm_rohan_armor_th, imod_bent)
+itm_whiterobe_saru = (itm_rohan_armor_th, imod_cheap)
 itm_nazgulrobe = (itm_rohan_armor_th, imod_cheap)
 itm_galadriel = (itm_rohan_armor_th, imod_rusty)
 itm_merry_outfit = (itm_rohan_armor_th, imod_chipped)
@@ -1969,7 +1970,7 @@ troops = [
    [itm_mearas_reward,itm_rohan_armor_th,itm_rohirrim_war_greaves,itm_mail_mittens,itm_rohan_captain_helmet,itm_eorl_cavalry_sword,itm_rohan_shield_g, itm_rohan_lance],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_4,0x0000000fff00130347934c399386b8a300000000001db6d90000000000000000],
 ["isengard_lord","Saruman","Master",tf_hero| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_isengard,
-   [itm_courser,itm_whiterobe,itm_leather_boots,],
+   [itm_courser,itm_whiterobe_saru,itm_leather_boots,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_6,0x0000000fff004107121a807fc84b82ff00000000001d1ab00000000000000000],
 ["mordor_lord","Mouth_of_Sauron","Satrap",tf_hero| tf_evil_man| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_mordor,
    [itm_mordor_warhorse2,itm_m_cap_armor,itm_uruk_chain_greaves,itm_evil_gauntlets_a,itm_blackroot_hood,itm_mordor_longsword,],
