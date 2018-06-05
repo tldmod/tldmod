@@ -3924,6 +3924,49 @@ game_menus = [
  ),
   
 ################################ CHEAT/MODDING MENU START ########################################
+# Find and grab item cheat
+
+("cheat_find_item",0,
+"{!}Current item range: {reg5} to {reg6}",
+"none",
+[ (set_background_mesh, "mesh_ui_default_menu_window"),
+  (assign, reg5, "$cheat_find_item_range_begin"),
+  (store_add, reg6, "$cheat_find_item_range_begin", max_inventory_items),
+  (val_min, reg6, "itm_save_compartibility_item10"),
+  (val_sub, reg6, 1),
+],
+[
+  ("cheat_find_item_next_range",[], "{!}Move to next item range.",
+    [
+      (val_add, "$cheat_find_item_range_begin", max_inventory_items),
+      (try_begin),
+        (ge, "$cheat_find_item_range_begin", "itm_save_compartibility_item10"),
+        (assign, "$cheat_find_item_range_begin", 0),
+      (try_end),
+      (jump_to_menu, "mnu_cheat_find_item"),
+    ]
+  ),
+  
+  ("cheat_find_item_choose_this",[], "{!}Choose from this range.",
+    [
+      (troop_clear_inventory, "trp_dormant"),
+      (store_add, ":max_item", "$cheat_find_item_range_begin", max_inventory_items),
+      (val_min, ":max_item", "itm_save_compartibility_item10"),
+      (store_sub, ":num_items_to_add", ":max_item", "$cheat_find_item_range_begin"),
+      (try_for_range, ":i_slot", 0, ":num_items_to_add"),
+        (store_add, ":item_id", "$cheat_find_item_range_begin", ":i_slot"),
+        (troop_add_items, "trp_dormant", ":item_id", 1),
+      (try_end),
+      (change_screen_trade, "trp_dormant"),
+    ]
+  ),
+  ("camp_action_4_cheat",[],"{!}Back to cheat menu.",
+    [(jump_to_menu, "mnu_camp_cheat"),
+    ]
+  ),
+]
+),
+
 # free magic item cheat (mtarini)   
 ("cheat_free_magic_item",0,"Which free magic item do you want?","none",[(set_background_mesh, "mesh_ui_default_menu_window")],
    [ ("cheat_free_magic_item_back",[],"Back",[(jump_to_menu, "mnu_camp_cheat")]), ]
@@ -4121,6 +4164,8 @@ game_menus = [
 	[
  	 ("cheat_disabable",[],
 		"Disable cheat/modding options.",[(assign, "$cheat_mode", 0),	(jump_to_menu, "mnu_camp"),]),
+
+	("camp_cheat_find_item",[], "Find an item...",[(jump_to_menu, "mnu_cheat_find_item")]),
 
 	("crossdressing", [(assign,reg6, "$tld_option_crossdressing"), ], "Crossdressing: {reg6?Enabled:Disabled}", 
 	  [(store_sub, "$tld_option_crossdressing", 1, "$tld_option_crossdressing"), (jump_to_menu, "mnu_camp_cheat"),]),
