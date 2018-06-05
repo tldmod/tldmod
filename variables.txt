@@ -736,5 +736,6 @@ g_option_good
 g_option_evil_text
 g_option_evil
 cheat_find_item_range_begin
+mouse_coordinates
 $g_last_archery_point_earned
 $tutorial_num_total_dummies_destroyed

@@ -21,7 +21,28 @@ import string
 ####################################################################################################################
 
 
-
+# Shows coordinates on a presentation for easy development
+# Set debug_show_presentation_coordinates on module_constants.py
+coord_helper = [
+  (ti_on_presentation_load, [
+      #(eq, debug_show_presentation_coordinates, 1),
+      (create_text_overlay, "$mouse_coordinates", "str_empty_string"),
+      (overlay_set_color, "$mouse_coordinates", 0xFF0000),
+      (position_set_x, pos1, 10),
+      (position_set_y, pos1, 700),
+      (overlay_set_position, "$mouse_coordinates", pos1),
+  ]),
+  (ti_on_presentation_run, [
+      #(eq, debug_show_presentation_coordinates, 1),
+      (set_fixed_point_multiplier, 1000),
+      
+      (mouse_get_position, pos1),
+      (position_get_x, reg65, pos1),
+      (position_get_y, reg66, pos1),
+      (position_get_z, reg67, pos1),
+      (overlay_set_text, "$mouse_coordinates", "@{reg65}, {reg66}, {reg67}"),
+  ])
+]
 
 presentations = [
 ("game_credits",prsntf_read_only,mesh_load_window,[
@@ -3245,7 +3266,6 @@ presentations = [
 ]),
 
 
-
 # SWYTER's FACTION SELECTION ANIMATED AND MODULAR MENU
 # enjoy it :P
   ("faction_selection",0,mesh_load_window,[
@@ -3284,12 +3304,12 @@ presentations = [
 
     #logo
       #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
-      (create_image_button_overlay, "$g_option_good", "mesh_banner_gondor", "mesh_banner_gondor"),
+      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_good", "mesh_choose_icon_good"),
            (position_set_x, pos1, 280),
-           (position_set_y, pos1, 500),
+           (position_set_y, pos1, 380),
            (overlay_set_position, "$g_option_good", pos1),
-           (position_set_x, pos1, 150),
-           (position_set_y, pos1, 150),
+           (position_set_x, pos1, 600),
+           (position_set_y, pos1, 600),
            (overlay_set_size, "$g_option_good", pos1),
 
     #FACTION SIDE EVIL
@@ -3302,12 +3322,12 @@ presentations = [
     (overlay_set_color, "$g_option_evil_text", 0x4D1818),
 
     #logo
-      (create_image_button_overlay, "$g_option_evil", "mesh_banner_mordor", "mesh_banner_mordor"),
+      (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_evil", "mesh_choose_icon_evil"),
            (position_set_x, pos1, 680),
-           (position_set_y, pos1, 500),
+           (position_set_y, pos1, 380),
            (overlay_set_position, "$g_option_evil", pos1),
-           (position_set_x, pos1, 150),
-           (position_set_y, pos1, 150),
+           (position_set_x, pos1, 600),
+           (position_set_y, pos1, 600),
            (overlay_set_size, "$g_option_evil",pos1),
         (presentation_set_duration, 999999),
         ]),
@@ -3336,7 +3356,61 @@ presentations = [
         (presentation_set_duration, 0),
       (try_end),
     ]),
-  ]),
+
+(ti_on_presentation_mouse_enter_leave,[
+
+      (store_trigger_param_1, reg3),
+      (store_trigger_param_2, reg4),
+      (store_trigger_param_1, ":id"),
+      (store_trigger_param_2, ":stage"),
+
+      (try_begin),
+
+
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 0),
+      (position_set_x, pos1, 600),
+            (position_set_y, pos1, 600),
+      (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+      (position_set_x, pos1, 750),
+            (position_set_y, pos1, 750),
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+      (overlay_animate_to_alpha, "$g_option_good_text", 150, 0xFF),
+    (else_try),
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 1),
+      (position_set_x, pos1, 650),
+            (position_set_y, pos1, 650),
+      (overlay_animate_to_size, ":id", 300, pos1),
+      #(overlay_animate_to_alpha, ":id", 150, 0x0),
+      (overlay_animate_to_alpha, "$g_option_good_text", 150, 0x7D),
+        (else_try),
+
+
+        (eq, ":id", "$g_option_evil"),
+        (eq, ":stage", 0),
+      (position_set_x, pos1, 600),
+            (position_set_y, pos1, 600),
+      (overlay_animate_to_size, "$g_option_good", 400, pos1),
+      (position_set_x, pos1, 750),
+            (position_set_y, pos1, 750),
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+      (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0xFF),
+    (else_try),
+        (eq, ":id", "$g_option_evil"),
+        (eq, ":stage", 1),
+      (position_set_x, pos1, 650),
+            (position_set_y, pos1, 650),
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x0),
+      (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0x7D),  
+    (try_end),
+    ]),
+
+  ] + coord_helper
+),
 
 
 ]
@@ -3867,8 +3941,8 @@ if wb_compile_switch==1:
 
         (create_combo_button_overlay, "$tld_options_overlay_2"),
         (overlay_add_item, "$tld_options_overlay_2", "@Native"),
-        (overlay_add_item, "$tld_options_overlay_2", "@TLD Original Form AI"),
-        (overlay_add_item, "$tld_options_overlay_2", "@TLD New Form AI"),
+        (overlay_add_item, "$tld_options_overlay_2", "@TLD FormAI (Original)"),
+        (overlay_add_item, "$tld_options_overlay_2", "@TLD New FormAI (Beta)"),
         (copy_position, pos1, pos0),
         (store_add, reg2, ":y_pos", 0),
         (position_set_y, pos1, reg2),

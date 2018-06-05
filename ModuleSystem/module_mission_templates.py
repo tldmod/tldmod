@@ -1825,7 +1825,7 @@ mission_templates = [ # not used in game
      (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry, for WARGS
     ],
     tld_common_wb_muddy_water +
-    formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts + command_cursor_sub_mod + [
+    formations_triggers + AI_triggers +   common_deathcam_triggers + moto_formations_triggers +  tld_common_battle_scripts + command_cursor_sub_mod + [
 	common_battle_tab_press,
 	common_music_situation_update,
 	(0,0,ti_once,[],[]),
@@ -2464,7 +2464,8 @@ mission_templates = [ # not used in game
    # Triggers
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
-  common_deathcam_triggers + [
+  common_deathcam_triggers +
+  moto_formations_triggers +  [
   
 
   common_battle_on_player_down,
@@ -2605,7 +2606,8 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
-  common_deathcam_triggers + [
+  common_deathcam_triggers +
+  moto_formations_triggers + [
   
 
   common_battle_on_player_down,
@@ -2732,7 +2734,8 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
-  common_deathcam_triggers + [
+  common_deathcam_triggers +
+  moto_formations_triggers +  [
   
 
   common_battle_on_player_down,
@@ -2860,7 +2863,8 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
-  common_deathcam_triggers + [
+  common_deathcam_triggers +
+  moto_formations_triggers +  [
   
 
   common_battle_on_player_down,
@@ -3036,7 +3040,8 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
-  common_deathcam_triggers + [
+  common_deathcam_triggers +
+  moto_formations_triggers +  [
   
 
   common_battle_on_player_down,
@@ -3185,7 +3190,8 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   tld_common_battle_scripts+
-  common_deathcam_triggers + [
+  common_deathcam_triggers +
+  moto_formations_triggers +  [
   
   common_battle_on_player_down,
 
@@ -3351,6 +3357,7 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   common_deathcam_triggers +
+  moto_formations_triggers + 
   fade + khams_custom_player_camera + bright_nights + [
   
   tld_slow_wounded,
@@ -3673,6 +3680,7 @@ mission_templates = [ # not used in game
   # Triggers
   tld_common_wb_muddy_water+
   common_deathcam_triggers +
+  moto_formations_triggers + 
   fade + khams_custom_player_camera + bright_nights + [
   
   tld_slow_wounded,
@@ -5352,7 +5360,8 @@ mission_templates = [ # not used in game
   tld_common_wb_muddy_water +
   formations_triggers + 
   AI_triggers + 
-  common_deathcam_triggers + 
+  common_deathcam_triggers +
+  moto_formations_triggers +  
   tld_common_battle_scripts + 
   command_cursor_sub_mod + [
   common_battle_tab_press,
@@ -6296,6 +6305,7 @@ mission_templates = [ # not used in game
 	# Triggers
   tld_common_wb_muddy_water+
 	common_deathcam_triggers +
+  moto_formations_triggers + 
   khams_custom_player_camera+
   fade+ [
 	
@@ -6381,7 +6391,7 @@ tld_remove_riderless_animals,
      (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 8th entry, for WARGS
     ],
     tld_common_wb_muddy_water +
-    formations_triggers + AI_triggers + common_deathcam_triggers + tld_common_battle_scripts + command_cursor_sub_mod + [
+    formations_triggers + AI_triggers +   common_deathcam_triggers +  moto_formations_triggers +  tld_common_battle_scripts + command_cursor_sub_mod + [
   common_battle_tab_press,
   common_music_situation_update,
   (0,0,ti_once,[],[]),

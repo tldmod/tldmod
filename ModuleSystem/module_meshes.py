@@ -525,4 +525,11 @@ meshes+=[
   ("flag_d8", 0, "flag_archers", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("flag_d9", 0, "flag_cavalry", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
+#icons
+
+("choose_icon_man",   0, "icon_man",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+("choose_icon_good",   0, "icon_good",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+("choose_icon_evil",   0, "icon_evil",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+("choose_icon_eye",   0, "icon_eye",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+("choose_icon_hand",   0, "icon_hand",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

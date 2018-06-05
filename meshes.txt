@@ -1,4 +1,4 @@
-385
+390
 mesh_ui_default_menu_window 0 ui_default_menu_window 0 0 0 0 0 0 1 1 1
 mesh_pic_mb_warrior_1 0 pic_mb_warrior_1 0 0 0 0 0 0 1 1 1
 mesh_relief01 0 relief01 0 0 0 0 0 0 1 1 1
@@ -384,3 +384,8 @@ mesh_flag_horsemen 0 flag_cavalry 0 0 0 0 0 0 1 1 1
 mesh_flag_d7 0 flag_infantry 0 0 0 0 0 0 1 1 1
 mesh_flag_d8 0 flag_archers 0 0 0 0 0 0 1 1 1
 mesh_flag_d9 0 flag_cavalry 0 0 0 0 0 0 1 1 1
+mesh_choose_icon_man 0 icon_man 0 0 0 0 0 0 1 1 1
+mesh_choose_icon_good 0 icon_good 0 0 0 0 0 0 1 1 1
+mesh_choose_icon_evil 0 icon_evil 0 0 0 0 0 0 1 1 1
+mesh_choose_icon_eye 0 icon_eye 0 0 0 0 0 0 1 1 1
+mesh_choose_icon_hand 0 icon_hand 0 0 0 0 0 0 1 1 1

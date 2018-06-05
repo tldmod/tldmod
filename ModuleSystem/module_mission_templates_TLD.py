@@ -780,19 +780,31 @@ common_deathcam_triggers = (not is_a_wb_mt==1 and
 [
 	common_init_deathcam,
 	common_start_deathcam,
-  
+
 	common_move_deathcam,
-] or  
+
+] or [
+
+	common_init_deathcam_wb,
+	common_start_deathcam_wb,
+
+	common_move_deathcam_wb,
+	common_rotate_deathcam_wb,
+	tld_kill_or_wounded_triggers,
+])
+
+
+moto_formations_triggers = (not is_a_wb_mt==1 and 
+
+[common_init_deathcam,] 
+
+or  
 
   field_ai_triggers + order_weapon_type_triggers +
   utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto + [
-  common_init_deathcam_wb,
-  common_start_deathcam_wb,
-  
-  common_move_deathcam_wb,
-  common_rotate_deathcam_wb,
   tld_kill_or_wounded_triggers,
 ])
+
 ## MadVader deathcam end
 
 #AI triggers v3 by motomataru

@@ -390,5 +390,10 @@ mesh_flag_horsemen = 388
 mesh_flag_d7 = 389
 mesh_flag_d8 = 390
 mesh_flag_d9 = 391
+mesh_choose_icon_man = 392
+mesh_choose_icon_good = 393
+mesh_choose_icon_evil = 394
+mesh_choose_icon_eye = 395
+mesh_choose_icon_hand = 396
 
 
