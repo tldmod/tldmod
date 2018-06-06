@@ -19130,6 +19130,8 @@ scripts = [
       (else_try) ,(is_between,":tr","trp_woodsman_of_lossarnach"  ,"trp_vet_axeman_of_lossarnach"),(assign, ":bm", "mesh_banner_e19"),
       (else_try) ,(is_between,":tr","trp_vet_axeman_of_lossarnach","trp_axemaster_of_lossarnach" ),(assign, ":bm", "mesh_banner_e20"),
       (else_try) ,(is_between,":tr","trp_axemaster_of_lossarnach" ,"trp_pelargir_watchman"       ),(assign, ":bm", "mesh_banner_e21"),
+	  (else_try) ,(eq,			":tr","trp_knight_1_8"      									 ),(assign, ":bm", "mesh_banner_e21"), #Forlong
+	  (else_try) ,(eq,			":tr","trp_knight_1_1"      									 ),(assign, ":bm", "mesh_banner_e11"), #Angbor
       (else_try), ##Kham - Player Subfac Tableaus
       	(eq, ":tr", "trp_player"),
       	(troop_get_slot, ":subfac", "trp_player", slot_troop_subfaction),
@@ -19169,6 +19171,10 @@ scripts = [
       (else_try) ,(is_between,":tr","trp_pelargir_watchman"        ,"trp_clansman_of_lamedon"),(assign, ":bm", "mesh_banner_e14"),
       (else_try) ,(is_between,":tr","trp_dol_amroth_youth"   ,"trp_swan_knight_of_dol_amroth"),(assign, ":bm", "mesh_banner_e17"),
       (else_try) ,(is_between,":tr","trp_swan_knight_of_dol_amroth"   ,"trp_lothlorien_scout"),(assign, ":bm", "mesh_banner_e18"),
+	  (else_try) ,(eq,			":tr","trp_knight_1_3"      								 ),(assign, ":bm", "mesh_banner_e18"), #Imrahil
+	  (else_try) ,(eq,			":tr","trp_knight_1_6"      								 ),(assign, ":bm", "mesh_banner_e07"), #Hirluin
+	  (else_try) ,(eq,			":tr","trp_knight_6_1"      								 ),(assign, ":bm", "mesh_banner_e11"), #Dervorin
+	  (else_try) ,(eq,			":tr","trp_knight_6_2"      								 ),(assign, ":bm", "mesh_banner_e09"), #Golasgil
       (else_try), ##Kham - Player Subfac Tableaus
       	(eq, ":tr", "trp_player"),
       	(call_script, "script_get_faction_rank", "fac_gondor"), 
@@ -19340,6 +19346,7 @@ scripts = [
     (try_begin),(neq,":agent_no",-1),
       (try_begin),(is_between,":tr","trp_pelargir_watchman","trp_clansman_of_lamedon"),(assign, ":bm", "mesh_banner_e13"),
       (else_try) ,(is_between,":tr","trp_steward_guard"    ,"trp_ranger_of_ithilien" ),(assign, ":bm", "mesh_banner_e15"),
+      (else_try) ,(eq,		":tr",	"trp_knight_1_4"    ),								(assign, ":bm", "mesh_banner_e14"), #Orthalion
       (else_try), ##Kham - Player Subfac Tableaus
       	(eq, ":tr", "trp_player"),
       	(call_script, "script_get_faction_rank", "fac_gondor"), 

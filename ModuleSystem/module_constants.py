@@ -1403,9 +1403,9 @@ ws_party_spawns_list = [
 (p_town_lossarnach      ,pt_lossarnach_auxila,pt_gondor_raiders, pt_lossarnach_patrol,pt_gondor_caravan),
 (p_town_tarnost         ,pt_gondor_scouts,    pt_gondor_raiders, pt_gondor_patrol,    pt_gondor_caravan),
 (p_town_erech           ,pt_blackroot_auxila, pt_gondor_raiders, pt_brv_patrol,       pt_gondor_caravan),
-(p_town_west_osgiliath  ,pt_ranger_scouts,    pt_gondor_raiders, pt_gondor_patrol,    -1),
+(p_town_west_osgiliath  ,pt_ranger_scouts,    pt_gondor_raiders, -1,    	-1),
 (p_town_henneth_annun   ,pt_ranger_scouts,    pt_ranger_raiders, pt_ranger_patrol,    -1), #kham - added
-(p_town_cair_andros     ,pt_ranger_scouts,    -1			   , pt_gondor_patrol,    pt_gondor_caravan), #InVain changed scouts to rangers
+(p_town_cair_andros     ,pt_gondor_scouts,    -1			   , -1,    pt_gondor_caravan), #InVain changed scouts to rangers
 #Rohan    
 (p_town_edoras          ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
 (p_town_aldburg         ,pt_rohan_scouts,     pt_rohan_raiders,  pt_rohan_patrol,     pt_rohan_caravan),
