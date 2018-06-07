@@ -1999,7 +1999,7 @@ fac_reward_items_list = [
 #fac_dunland
 [(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4, itm_dun_shield_a, imod_reinforced), (5, itm_torque_reward, 0), (6, itm_dunnish_pike, imod_balanced), (7, itm_dun_helm_e, imod_lordly), (8, itm_dunland_armor_k, imod_lordly), (9, itm_dun_berserker, imod_masterwork)],
 #fac_beorn
-[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4, itm_leather_gloves_reward, imod_reinforced), (5, itm_beorn_shield_reward, imod_reinforced), (6, itm_herbarium_reward, 0), (7, itm_beorn_staff, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_axe_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4, itm_leather_gloves_reward, imod_reinforced), (5, itm_beorn_staff, imod_masterwork), (6, itm_herbarium_reward, 0), (7, itm_beorn_axe_reward, imod_masterwork), (8, itm_beorn_chief, imod_lordly), (9, itm_beorn_shield_reward, imod_reinforced)],
 ]
 
 #Formations and AI by Motomataru with adjustments by Treebeard (JL) and MadVader (MV)

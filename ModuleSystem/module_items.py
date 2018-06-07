@@ -1334,7 +1334,7 @@ items =[
 ["wheeled_cage","Giant_wheeled_cage",[("wheeled_cage",0)],itp_unique|itp_type_goods,0,1000,weight(250)|abundance(0)|0,imodbits_none],
 ["orc_throwing_axes_reward","Gundabad_Flying_Axes",[("orc_throwing_axe",0)],itp_type_thrown|itp_unique|itp_primary|itp_bonus_against_shield,itcf_throw_axe,150,weight(4)|difficulty(0)|shoot_speed(30)|spd_rtng(103)|weapon_length(33)|thrust_damage(46,cut)|max_ammo(5),imodbits_thrown],
 ["corsair_throwing_dagger_reward","Poisoned_Throwing_Daggers",[("corsair_throwing_dagger",0)],itp_type_thrown|itp_unique|itp_primary|0,itcf_throw_knife,200,weight(3.5)|difficulty(0)|shoot_speed(24)|spd_rtng(110)|weapon_length(0)|thrust_damage(50,cut)|max_ammo(10),imodbits_thrown],
-["dwarf_shield_reward","Mithril_Dwarven_Shield",[("dwarf_round_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_kite_shield,400,weight(3)|hit_points(800)|body_armor(28)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
+["dwarf_shield_reward","Mithril_Dwarven_Shield",[("dwarf_round_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_kite_shield,400,weight(3)|hit_points(800)|body_armor(28)|spd_rtng(82)|weapon_length(40),imodbits_shield_good,],
 ["dwarf_great_axe_reward","Dwarf_Sharp_Axe",[("dwarf_great_axe",0)],itp_type_polearm|itp_unique|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,700,weight(6)|difficulty(0)|spd_rtng(83)|weapon_length(102)|swing_damage(55,pierce)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["isen_uruk_heavy_reward","Uruk-hai_General_Armor",[("urukhai_isen_h",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,3000,weight(30)|head_armor(0)|body_armor(38)|leg_armor(17)|difficulty(0),imodbits_orc_armor,],
 ["lorien_bow_reward","Noldorin_Bow",[("Vyrn_bow_1_shortened",0),("Vyrn_bow_1_shortened",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bowcase_left,3000,weight(1.5)|difficulty(3)|shoot_speed(50)|spd_rtng(99)|thrust_damage(34,pierce)|accuracy(90),0,[] ],
@@ -1345,13 +1345,17 @@ items =[
 
 ##Shield Bear Shield imod Hack Start
 ] + (is_a_wb_item==1 and [
-["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
+["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(95)|weapon_length(70),imodbits_shield,],
 ] or [
-["beorn_shield_reward","Beorning_Shield",[("beorning_shield_mb",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(90)|weapon_length(50),imodbits_shield,],
+["beorn_shield_reward","Beorning_Shield",[("beorning_shield_mb",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(95)|weapon_length(70),imodbits_shield,],
 ]) + [ 
 ##Shield Bear Shield imod Hack END
 
-["beorn_axe_reward","Bear_Axe",[("beorning_war_axe",0)],itp_type_polearm|itp_unique|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,300,weight(6)|difficulty(0)|spd_rtng(110)|weapon_length(71)|swing_damage(65,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
+] + (is_a_wb_item==1 and [
+["beorn_axe_reward","Bear_Club",[("beorning_club",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,2000,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(28,blunt),imodbits_weapon_good],
+] or [
+["beorn_axe_reward","Bear_Club",[("beorning_club_mb",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry|itp_wooden_attack,itc_scimitar|itcf_carry_mace_left_hip,2000,weight(2.5)|difficulty(0)|spd_rtng(90)|weapon_length(67)|swing_damage(28,blunt),imodbits_weapon_good],
+]) + [
 ["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],
 
 #next one unused
