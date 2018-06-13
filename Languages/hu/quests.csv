@@ -1,77 +1,77 @@
 qst_deliver_message|Adj át üzenetet {s13}-nak
-; qst_deliver_message_text|{s9} asked you to take a message to {s13}. {s13} was at {s4} when you were given this quest.
+qst_deliver_message_text|{s9} megkért rá hogy vidd el az üzenet {s13}-nak/nek. {s13} {s4}-ban/ben volt amikor kaptad ezt a küldetést.
 qst_deliver_message_to_enemy_lord|Adj át üzenetet {s13}-nak
-; qst_deliver_message_to_enemy_lord_text|{s9} asked you to take a message to {s13} of {s15}. {s13} was at {s4} when you were given this quest.
-; qst_raise_troops|Raise {reg1} {s14}
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
-; qst_escort_messenger|Escort the messenger to {s14}
-; qst_escort_messenger_text|None
-; qst_hunt_down_fugitive|Hunt down {s4}
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the fugitive named {s4}. He is currently believed to be at {s3}.
+qst_deliver_message_to_enemy_lord_text|{s9} megkért rá hogy vidd el az üzenetet {s15}i {s13}-nak/nek. {s13} {s4}-ban/ben volt amikor kaptad ezt a küldetést.
+qst_raise_troops|Képezz ki {reg1} {s14}t
+qst_raise_troops_text|{s9} megkért hogy képezz ki {reg1} {s14}t és vidd el {neki}.
+qst_escort_messenger|Kísérd el a hírnököt {s14}-ba/be
+qst_escort_messenger_text|Semmi
+qst_hunt_down_fugitive|Vadászd le {s4}t
+qst_hunt_down_fugitive_text|{s9} megkért hogy vadászd le a {s4} nevű szökevényt. Úgy tudják jelenleg {s3}-ban/ben található.
 qst_bring_back_runaway_serfs|Vidd vissza a szökött parasztokat
-; qst_bring_back_runaway_serfs_text|{s9} asked you to bring back the three groups of runaway slaves back to {s2}. He said all three groups must be running away in the direction of {s3}.
-; qst_follow_spy|Follow the Spy to Meeting
-; qst_follow_spy_text|{s11} asked you to follow the spy that will leave {s12}. You must be careful not to be seen by the spy during his travel, or else he may get suspicious and turn back. Once the spy meets with his accomplice, you are to ambush and capture them and bring them both back to {s11}.
+qst_bring_back_runaway_serfs_text|{s9} megkért hogy rángass vissza három csoportnyi menekülő rabszolgát {s2}-ba/be. Azt mondta mind a három {s3} irányába szaladt.
+qst_follow_spy|Kövesd a kémet a találkozóra
+qst_follow_spy_text|{s11} megkért hogy kövesd a kémet aki majd elhagyja {s12}t. Óvatosnak kell lenned nehogy észrevegyen a kém utazás közben, vagy különben gyanút fog és visszafordul. Amikor a kém találkozik a bűntársával, rajtuk kell ütnöd és foglyul ejteni őket és vidd vissza {s11}-nak/nek.
 qst_capture_enemy_hero|Fogj el egy ellenséges vezért
-; qst_capture_enemy_hero_text|{s11} asked you to capture an enemy commander.
-; qst_lend_companion|Lend Your Companion {s3} to {s9}
-; qst_lend_companion_text|{s9} asked you to lend your companion {s3} to him for a week.
-; qst_capture_prisoners|Bring {reg1} enemy prisoners
-; qst_capture_prisoners_text|{s9} wanted you to bring him {reg1} enemy prisoners.
-; qst_investigate_fangorn|Investigate Fangorn
-; qst_investigate_fangorn_text|{s9} asked you to find out what is going on in the Fangorn forest, and to report back.
+qst_capture_enemy_hero_text|{s11} megkért hogy ejts foglyul egy ellenséged parancsnokot.
+qst_lend_companion|Add kölcsönbe {s3} bajtársadat {s9}-nak/nek
+qst_lend_companion_text|{s9} megkért hogy add neki kölcsön az egyik bajtársadat, {s3}t egy hét erejéig.
+qst_capture_prisoners|Fogj el {reg1} ellenséges foglyot
+qst_capture_prisoners_text|{s9} megkért hogy szerezz neki {reg1} ellenséges foglyot.
+qst_investigate_fangorn|Vizsgálódj a Fangorn-erdőben
+qst_investigate_fangorn_text|{s9} megkért rá hogy derítsd ki mi folyik a Fangorn-erdőben, majd menj vissza jelenteni.
 qst_capture_troll|Fogj el egy trollt
-; qst_capture_troll_text|{s9} asked you to bring back a savage troll for use in his army.
-; qst_kill_troll|Dispatch raging Troll
-; qst_kill_troll_text|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
-qst_mirkwood_sorcerer|Ölj meg egy idézőt a Bakancs-erdőben
-; qst_mirkwood_sorcerer_text|Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him.
-; qst_find_lost_spears|Find the lost spears of king Bladorthin
-; qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
-; qst_destroy_scout_camp|Destroy Scout Camp
-; qst_rescue_prisoners|Rescue {reg1} Prisoners
-; qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
-qst_scout_enemy_town|Kémlelj ki egy ellenséges várost
-; qst_scout_enemy_town_text|{s9} asked you to scout around {s13}.
-; qst_dispatch_scouts|Dispatch a Scout Party
-; qst_dispatch_scouts_text|{s9} asked you to dispatch a scout party near {s13}.
-; qst_eliminate_patrols|Eliminate {reg1} Enemy Parties
-; qst_eliminate_patrols_text|{s9} asked you to eliminate {reg1} {s13} enemy parties.
-; qst_lend_surgeon|Lend Your Surgeon {s3} to {s1}
-; qst_lend_surgeon_text|Lend your experienced surgeon {s3} to {s1}.
-; qst_follow_army|Follow {s9}'s Army
-; qst_follow_army_text|None
-; qst_report_to_army|Report to {s13}
-; qst_report_to_army_text|None
-; qst_deliver_cattle_to_army|Deliver {reg3} units of food to {s13}
-; qst_deliver_cattle_to_army_text|None
-; qst_join_siege_with_army|Join the Siege of {s14}
-; qst_join_siege_with_army_text|None
-; qst_scout_waypoints|Scout {s13}, {s14} and {s15}
-; qst_scout_waypoints_text|None
-; qst_move_cattle_herd|Move {s12} to {s13}
-; qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
-; qst_escort_merchant_caravan|Escort Supply Train to {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
-; qst_deliver_wine|Deliver {reg5} Units of {s6} to {s4}
-; qst_deliver_wine_text|The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days.
-qst_troublesome_bandits|Vadászd le a veszélyes goblinokat
-; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
-; qst_deal_with_looters|Deal with Tribal Orcs
-; qst_deal_with_looters_text|The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}.
-; qst_deal_with_night_bandits|Deal with Rogue Goblins
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night goblins at {s14}.
-; qst_deliver_food|Supply {s3} with {reg5} Units of food
-; qst_deliver_food_text|The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.
-; qst_deliver_iron|Supply {s3} with {reg5} Units of {s6}
-; qst_deliver_iron_text|The {s9} of {s3} asked you to bring him {reg5} units of {s6}.
-; qst_tld_introduction|Deliver message about Mordor orcs to the command
-; qst_tld_introduction_text|None
-; qst_treebeard_kill_orcs|Defeat the tree-chopping orc party
-; qst_treebeard_kill_orcs_text|Treebeard wants you find and defeat the orcs cutting down trees in Fangorn.
-; qst_oath_of_vengeance|Oath of Vengeance
-; qst_oath_of_vengeance_text|Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
-; qst_deliver_gift|Deliver a {s4} of {s1} from {s2} to {s3}
-; qst_deliver_gift_text|You have requested to deliver a {s4} of {s1} to {s3} from {s2}.
+qst_capture_troll_text|{s9} megkért hogy hozz neki vissza egy vad trollt, hogy használni tudja a seregében.
+qst_kill_troll|Küldd ki a Trollt
+qst_kill_troll_text|{s9} megkért hogy szüntesd meg a {s13} környékén őrjöngő troll fenyegetését.
+qst_mirkwood_sorcerer|Ölj meg egy varázslót a Bakancsinerdőben
+qst_mirkwood_sorcerer_text|A Lothlórient védő Galadriel erejét aláásták egy Dol Gulduri varázsló bűnös szertartásai. Bár ő egy halandó, komoly veszélyt jelent a tündékre. Keresd meg őt a Bakacsinerdőben, nem messze magától Dol Guldurtól. Lopakodj, nehogy riadót fújjanak, mert ez lesz az egyetlen esélyed hogy legyőzd őt.
+qst_find_lost_spears|Találd meg Bladorthin király elveszett lándzsáit
+qst_find_lost_spears_text|{s9} megkért hogy találd meg a törpök kovácsolta Bladorthin király elveszett lándzsáit. A törpök engedélyére lesz szükséged, hogy a Magányos Hegy mélységeiben a lándzsákat kutathasd.
+qst_defend_village|Védd meg a falut
+qst_raid_village|Foszd ki a falut
+qst_destroy_scout_camp|Pusztítsd el a felderítők táborát
+qst_rescue_prisoners|Szabadíts ki {reg1} foglyot
+qst_rescue_prisoners_text|{s9} megkért hogy szabadítsd ki {reg1} foglyot.
+qst_scout_enemy_town|Deríts fel egy ellenséges várost helyzetét
+qst_scout_enemy_town_text|{s9} megkért rá hogy derítsd fel {s13} helyzetét.
+qst_dispatch_scouts|Küldj ki egy felderítő csapatot
+qst_dispatch_scouts_text|{s9} megkért hogy küldj ki egy felderítő csapatot {s13} közelében.
+qst_eliminate_patrols|Iktass ki {reg1} ellenséges csapatot
+qst_eliminate_patrols_text|{s9} megkért hogy iktass ki {reg1} {s13} ellenséges csapatot.
+qst_lend_surgeon|Add kölcsön {s3}, a seborvosodat {s1}-nek/nek
+qst_lend_surgeon_text|Add kölcsön {s3}, a tapasztalt seborvosodat {s1}-nak/nek.
+qst_follow_army|Kövesd {s9} seregét
+qst_follow_army_text|Semmi
+qst_report_to_army|Jelents {s13}-nak/nek
+qst_report_to_army_text|Semmi
+qst_deliver_cattle_to_army|Szállíts le {reg3} adagnyi ételt {s13}-nak/nek
+qst_deliver_cattle_to_army_text|Semmi
+qst_join_siege_with_army|Csatlakozz {s14} ostromához
+qst_join_siege_with_army_text|Semmi
+qst_scout_waypoints|Derítsd fel {s13}, {s14} és {s15} helyzetét
+qst_scout_waypoints_text|Semmi
+qst_move_cattle_herd|Vidd a {s12} {s13}-hoz/höz
+qst_move_cattle_herd_text|{s10} elöljárója megkért hogy szállíts át némi {s12} {s13}-hoz/höz.
+qst_escort_merchant_caravan|Kísérd el a szállítmányos konvojt {s8}-ba/be
+qst_escort_merchant_caravan_text|Kísérd el a szállítmányos konvojt {s8}-ba/be és szólítsd meg őket amikor már közelben jártok.
+qst_deliver_wine|Szállíts {reg5} adagot {s4}i {s6}-nak/nek
+qst_deliver_wine_text|A {s3}i {s9} megkért hogy szállíts {reg5} adagnyi {s6}-t {s4}-ba/be 7 napon belül.
+qst_troublesome_bandits|Vadászd le a problémás koboldokat
+qst_troublesome_bandits_text|A {s4}i {s9} megkért rá hogy vadászd le a problémás koboldokat, akik a város környékén garázdálkodnak.
+qst_deal_with_looters|Bánj el a törzsi orkokkal
+qst_deal_with_looters_text|{s4} elöljárója megkért hogy bánj el {s4} környékén garázdálkodó törzsi orkok csapataival.
+qst_deal_with_night_bandits|Bánj el a kobold zsiványokkal
+qst_deal_with_night_bandits_text|{s14} elöljárója megkért hogy bánj el {s14}-ban/ben éjjel garázdálkodó koboldokkal.
+qst_deliver_food|Szállíts {s3} {reg5}-val/vel egységnyi ételt
+qst_deliver_food_text|{s3}i {s9} megkért rá hogy hozz neki {reg5} adagnyi ételt 10 napon belül.
+qst_deliver_iron|Szállíts {s3} {reg5}-val/vel adagnyi {s6}t
+qst_deliver_iron_text|{s3}i {s9} megkért hogy vigyél neki {reg5} adagnyi {s6}t.
+qst_tld_introduction|Vigyél üzenet a mordori orkokról a parancsnokságnak
+qst_tld_introduction_text|Semmi
+qst_treebeard_kill_orcs|Győzd le a favágó orkok csapatát
+qst_treebeard_kill_orcs_text|Szilszakáll azt akarja hogy találd meg és győzd  le az orkokat, akik fákat vágnak ki a Fangorn-erdőben.
+qst_oath_of_vengeance|Bosszúeskü
+qst_oath_of_vengeance_text|Feldühödve {s1} halálán, bosszút esküszöl {s2} hadai ellen. {s2} seregeiből annyit kell elpusztítanod, amennyi csak lehetséges az elkövetkező napokban. Tisztában vagy vele, hogy követőid tanúi voltak a bosszúesküdnek, és nem szándékozol úgy elhíresülni, mint egy eskütörő. Egy vértontó tivornyának kell ezennel elkezdődnie!
+qst_deliver_gift|Szállíts le egy {s1}i {s4}-ot/et {s2}-ból/ből {s3}-ba/be
+qst_deliver_gift_text|Meglettél rá kérve, hogy szállíts le egy {s1}i {s4}-at/et {s2}i {s3}-nak/nek.

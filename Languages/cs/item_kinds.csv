@@ -217,7 +217,7 @@ itm_gondorian_light_helm_b|Gondorská lučišnická přilbice
 itm_gondorian_archer_helm|Gondorská lukostřelecká přilbice
 itm_tower_archer_helm|Přilba lučištníků z Věže
 itm_gondor_leader_helm|Gondorská vysoká přilba
-; itm_tower_guard_helm|Tower Guard Helm
+itm_tower_guard_helm|Přilba strážce věže
 itm_gondor_citadel_knight_helm|Helma rytire citadely
 itm_gondor_squire_helm|Prilba Gondorskeho panose
 itm_gondor_knight_helm|Prilba Gondorskeho rytire
@@ -785,26 +785,26 @@ itm_dwarf_sword_b|Trpasličí meč
 itm_dwarf_sword_c|Trpasličí meč
 itm_dwarf_sword_d|Trpasličí meč
 ; itm_dwarf_adz|Dwarf Adz
-; itm_dwarf_great_axe|Dwarf Great Axe
+itm_dwarf_great_axe|Trpasličí velká sekera
 ; itm_dwarf_great_mattock|Dwarf Great Mattock
 ; itm_dwarf_great_pick|Dwarf Great Pick
 ; itm_dwarf_war_pick|Dwarf War Pick
 ; itm_dwarf_mattock|Dwarf Mattock
-; itm_dwarf_hand_axe|Dwarf Short Axe
-; itm_dwarf_throwing_axe|Dwarf Throwing Axe
-; itm_dwarf_spear|Dwarf Spear
-; itm_dwarf_spear_b|Dwarf Pike
-; itm_dwarf_spear_c|Dwarf Pike
+itm_dwarf_hand_axe|Trpasličí krátká sekera
+itm_dwarf_throwing_axe|Trpasličí vrhací sekera
+itm_dwarf_spear|Trpasličí kopí
+itm_dwarf_spear_b|Trpasličí píka
+itm_dwarf_spear_c|Trpasličí píka
 ; itm_dwarf_helm_a|Dwarf Coif
 ; itm_dwarf_helm_b|Dwarf Coif with Mask
 ; itm_dwarf_helm_c|Dwarf Helm with Mask
-itm_dwarf_helm_h|Trpaslici helma
+itm_dwarf_helm_h|Trpasličí helma
 ; itm_dwarf_helm_i|Dwarf Frisian Helm
 ; itm_dwarf_helm_j|Dwarf Frisian Mask
 ; itm_dwarf_helm_l|Dwarf Hood
 ; itm_dwarf_helm_m|Dwarf Iron Face
 ; itm_dwarf_helm_o|Dwarf Nasal Tophelm
-; itm_dwarf_helm_p|Dwarf King Helm
+itm_dwarf_helm_p|Trpasličí královská helma
 ; itm_dwarf_helm_q|Dwarf Miner Helm
 ; itm_dwarf_helm_r|Dwarf Miner Cap
 ; itm_dwarf_helm_u|Dwarf Round Mask
@@ -823,7 +823,7 @@ itm_dwarf_helm_h|Trpaslici helma
 ; itm_good_mace|Mace
 ; itm_far_harad_shield_paint|Wicker Shield
 ; itm_nazgulrobe|Nazgul Robe
-; itm_whiterobe|White Robe
+itm_whiterobe|Bílá róba
 itm_mordor_banner|Zastava Mordoru
 itm_isengard_banner|Zastava Zelezneho pasu
 itm_woodelf_banner|Zastava Temneho hvozdu
@@ -863,7 +863,7 @@ itm_sword_of_arathorn|Arathornuv mec
 ; itm_nazgul_sword|Nazgul Sword
 ; itm_cooking_cauldron|Cooking Cauldron
 itm_eorl_cavalry_sword|Eorluv mec
-; itm_garlic_reward|Garlic
+itm_garlic_reward|Česnek
 itm_silmarillion_reward|Silmarillion
 itm_herbarium_reward|Herbar Stredozeme
 ; itm_book_of_moria|Book of Mazarbul
@@ -877,16 +877,16 @@ itm_miruvor_reward|Lahev Miruvoru
 itm_wheeled_cage|Obří klec na kolech
 ; itm_orc_throwing_axes_reward|Gundabad Flying Axes
 itm_corsair_throwing_dagger_reward|Otrávené vrhací dýky
-; itm_dwarf_shield_reward|Mithril Dwarven Shield
+itm_dwarf_shield_reward|Mithrilový trpasličí štít
 itm_dwarf_great_axe_reward|Trpasličí ostrá sekera
 ; itm_isen_uruk_heavy_reward|Uruk-hai General Armor
 ; itm_lorien_bow_reward|Noldorin Bow
 ; itm_lorien_sword_reward|Galadhrim Sword
 ; itm_dale_sword_reward|Marchwarden Sword
 ; itm_dale_armor_reward|Esgaroth Noble Gorget
-; itm_leather_gloves_reward|Hunting Gloves
+itm_leather_gloves_reward|Lovecké rukavice
 ; itm_beorn_shield_reward|Beorning Shield
-; itm_beorn_axe_reward|Bear Axe
+itm_beorn_axe_reward|Medvědí sekera
 ; itm_moria_arrow_reward|Moria Poisoned Arrows
 ; itm_khamul_helm|Helm of Khamul
 itm_gandstaff|Carodejova hul
@@ -898,7 +898,7 @@ itm_denethor_robe|Spravcovo rouchu
 ; itm_lorien_royal_armor|Lorien Royal Armor
 ; itm_feet_chains|Feet Chains
 ; itm_feet_chains_dwarf|Feet Chains
-; itm_spider|Spider
+itm_spider|Pavouk
 itm_bear|Medvěd
 itm_wolf|Vlk
 ; itm_defiled_armor_gondor|Defiled Gondor Leader's Surcoat

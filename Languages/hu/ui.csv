@@ -1,48 +1,48 @@
 ui_at_learning_limit|(a faj tanulási maximumán)
 ui_not_enough_skill_points_to_learn|(nincs elég képességpont)
-ui_not_enough_attributetype_to_learn_this_skill|(nincs elég % a képesség megtanulásához)
-ui_explanation_agility|Gyorsaság: Minden pont öt fegyver pontot ad és megnöveli a fegyver sebességét 0,5 %-kal. A következő képességeket nem lehet a Gyorsaság 1/3-a fölé növelni: Fegyvermester, Pajzs, Atlétika, Lovaglás, Lovasíjászat, Zsákmányszerzés.
-ui_retreated_battle|% elmenekült.
+ui_not_enough_attributetype_to_learn_this_skill|(nincs elég %s a tulajdonság fejlesztéséhez)
+ui_explanation_agility|Mozgékonyság: Minden pont öt fegyver pontot ad és megnöveli a fegyver sebességét 0,5 %-kal. A következő képességeket nem lehet a Mozgékonyság 1/3-a fölé növelni: Fegyvermester, Pajzshasználat, Atlétika, Lovaglás, Lovasíjászat, Zsákmányszerzés.
+ui_retreated_battle|%s elmenekült.
 ui_riding_skill_not_adequate_to_mount|(Lovaglás képesség túl alacsony)
 ui_camp|Cselekedetek
-ui_tutorial_inventory|Az Utolsó Napok modban Erőforrás Pontokkal tudsz felszerelést szerezni. Az Erőforrás Pontok jelképezik azt, hogy egy 
-; ui_you_dont_have_value|Don't have: %s
-; ui_merchant_cant_afford_value|%s: You are giving us more than we need! Maybe keep something more for you (you are giving goods for %s, we can use only %s).
-; ui_merchant_pay_whatever|No, I don't need any of that, keep it.
-ui_horse|Lóra szállás
-; ui_reclaim_your_sold_goods|Reclaim the goods you gave before giving that!
-; ui_return_your_bought_goods|Return the goods you have taken before giving that!
-; ui_return_price|if returned: +%d Res.P.
-; ui_sell_price|if given: +%d Res.P.
-; ui_reclaim_price|to reclaim: -%d Res.P.
-; ui_buying_price|to claim: -%d Res.P.
-; ui_notification_riding_skill_not_enough|Your riding skill is not high enough to mount this.
-; ui_notification_payment_value|Consuming %s
-; ui_notification_payment_receive_value|Gaining %s
-; ui_weekly_cost_value|Upkeep: %s
-; ui_sell|Give
-; ui_hire|Enlist
-; ui_notification_cant_hire|(not enough R.P. to enlist)
-; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
-; ui_weekly_wage|Upkeep: %d Res.P.
-; ui_price|Value: %d Res.P.
-; ui_cant_reload_this_weapon_on_horseback|Can't reload this weapon while mounted.
-; ui_delivered_number_damage_to_horse|Delivered %d damage to mount.
-; ui_horse_charged_for_number_damage|Mount charged for %d damage.
-; ui_horse_received_number_damage|Mount received %d damage.
-ui_horse_fell_dead|Ló meghalt...
-ui_horse_crippled|Ló lesántult...
-; ui_you_got_value|%s earned.
-; ui_has_deserted_the_party| has left the party.
-; ui_have_deserted_the_party| have left the party.
-; ui_loading_textures|Loading Textures (be patient)...
-; ui_order_hold_fire_toggle|Don't shoot/Shoot at Will (Toggle)
-; ui_order_dismount_toggle|Order Dismount/Mount (Toggle)
-; ui_mount_horses_e_|%s, Mount!
-; ui_hold_fire_e_|%s, Don't shoot!
-; ui_fire_at_will_e_|%s, Shoot at Will!
-; ui_recent_messages|Last Msgs
-; ui_value_denars|%d Resource Pts.
-; ui_cannot_be_used_on_horseback|Cannot be used while mounted
-; ui_upgrade_to_value| Upgrade to %s
-; ui_notification_cant_upgrade|(Can't upgrade while giving troops)
+ui_tutorial_inventory|Az Utolsó Napokban Erőforrás Pontokkal tudsz felszerelést szerezni. Az Erőforrás Pontok jelképezik azt, hogy egy nép mennyire hajlandó téged ellátni, és hogy mennyi felhasználható erőforrással rendelkezel az adott néptől. 
+ui_you_dont_have_value|Nincs elegendő: %s
+ui_merchant_cant_afford_value|%s: Többet adtál mint amire szükségünk van! Talán többet tarthatnál meg magadnak (árút adtál el %sért, mi felhasználni csak %snyit tudunk).
+ui_merchant_pay_whatever|Nem, nincs rá szükségem, tartsd csak meg.
+ui_horse|Megülés
+ui_reclaim_your_sold_goods|Vedd vissza az árudat amit leadtál mielőtt elvinnéd ezt!
+ui_return_your_bought_goods|Add vissza az árukat amiket elvittél mielőtt leadnád ezt!
+ui_return_price|ha visszadod: +%d E.P.
+ui_sell_price|ha leadod: +%d E.P.
+ui_reclaim_price|ha visszaveszed: -%d E.P.
+ui_buying_price|ha elviszed: -%d E.P.
+ui_notification_riding_skill_not_enough|A lovaglás képességed nem elég magas ahhoz hogy megüld ezt.
+ui_notification_payment_value|Fogyasztás %s
+ui_notification_payment_receive_value|Profitszerzés %s
+ui_weekly_cost_value|Fenntartás: %s
+ui_sell|Lead
+ui_hire|Besoroz
+ui_notification_cant_hire|(nincs elég E.A. a besorozáshoz)
+ui_joining_cost_weekly_wage|Besorozás: %d E.P.  --  Fenntartás: %d E.P.
+ui_weekly_wage|Fenntartás: %d E.P.
+ui_price|Ár: %d E.P.
+ui_cant_reload_this_weapon_on_horseback|Nem tudod ezt újratölteni amíg hátason vagy
+ui_delivered_number_damage_to_horse|%d sebzést okoztál a hátasnak.
+ui_horse_charged_for_number_damage|A hátas a rohamával %d sebzést okozott.
+ui_horse_received_number_damage|A hátas %d sebzést szenvedett el.
+ui_horse_fell_dead|A hátas elpusztult...
+ui_horse_crippled|A hátas lesántult...
+ui_you_got_value|%s kaptál.
+ui_has_deserted_the_party|elhagyta a csapatot.
+ui_have_deserted_the_party|elhagyták a csapatot.
+ui_loading_textures|Textúrák betöltése (légy türelemmel) ...
+ui_order_hold_fire_toggle|Lőni tilos/Lőni tetszés szerint (Fenntartott)
+ui_order_dismount_toggle|Parancsolj leszállást/felszállást a hátasokról (Fenntartott)
+ui_mount_horses_e_|%s, Megülni!
+ui_hold_fire_e_|%s, Lőni tilos!
+ui_fire_at_will_e_|%s, Lőni tetszés szerint!
+ui_recent_messages|Utolsó üzenetek
+ui_value_denars|%d Nyersanyag Pontok.
+ui_cannot_be_used_on_horseback|Nem használhatod amíg megülsz valamit
+ui_upgrade_to_value|Fejlesztés %s
+ui_notification_cant_upgrade|(Nem fejleszthetsz amíg egységeket adsz át)

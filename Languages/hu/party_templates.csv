@@ -1,146 +1,146 @@
-; pt_rescued_prisoners|Rescued Prisoners
-; pt_enemy|Enemy
-; pt_hero_party|Hero Party
-; pt_cattle_herd|Cattle Herd
-; pt_ruins|Ruins
-; pt_legendary_place|Legendary Place
-; pt_mound|Hero Mound
-; pt_pyre|Hero Pyre
-; pt_wild_troll|Wild Troll
-; pt_raging_trolls|Raging Trolls
-pt_looters|Ork törzsek
-; pt_forest_bandits|Orc Stragglers
-; pt_mountain_bandits|Wild Goblins
-; pt_steppe_bandits|Dunland Outcasts
-; pt_sea_raiders|Corsair Renegades
+pt_rescued_prisoners|Megmentett foglyok
+pt_enemy|Ellenség
+pt_hero_party|Hős csapata
+pt_cattle_herd|Marhacsorda
+pt_ruins|Romok
+pt_legendary_place|Legendás helyszín
+pt_mound|Hős sírdombja
+pt_pyre|Hős halotti máglyája
+pt_wild_troll|Vad troll
+pt_raging_trolls|Dühöngő trollok
+pt_looters|Törzsi orkok
+pt_forest_bandits|Ork kóborgók
+pt_mountain_bandits|Vad koboldok
+pt_steppe_bandits|Dúnföldi száműzöttek
+pt_sea_raiders|Kalóz árulók
 pt_deserters|Dezertőtök
-; pt_merchant_caravan|Merchant Caravan
-; pt_troublesome_bandits|Troublesome Goblins
-; pt_fangorn_orcs|Tree-chopping Orcs
-; pt_village_farmers|Village Farmers
-; pt_spy_partners|Suspicious Travellers
-; pt_spy_partners_evil|Suspicious Travellers
-; pt_runaway_serfs|Runaway Slaves
-; pt_spy|Lone Rider
-; pt_spy_evil|Lone Rider
-; pt_sacrificed_messenger|Sacrificed Messenger
-; pt_gandalf|Lone Rider
-; pt_nazgul|Lone Rider
-; pt_gondor_scouts|Gondorian Scouts
-; pt_blackroot_auxila|Blackroot Auxilia
-; pt_lamedon_auxila|Lamedon Auxilia
-; pt_lossarnach_auxila|Lossarnach Auxilia
-; pt_pinnath_gelin_auxila|Pinnath Gelin Auxilia
-; pt_ranger_scouts|Ranger Scouts
-; pt_rohan_scouts|Rohirrim Scouts
-; pt_lorien_scouts|Lothlorien Scouts
-; pt_woodelf_scouts|Mirkwood Elven Scouts
-; pt_imladris_scouts|Rivendell Elven Scouts
-; pt_dale_scouts|Dale Scouts
-; pt_esgaroth_scouts|Esgaroth Scouts
-; pt_dwarf_scouts|Dwarven Lookouts
-; pt_beorn_scouts|Beorning Scouts
-; pt_woodmen_scouts|Woodmen Scouts
-; pt_mordor_scouts|Mordor Scouts
-; pt_morgul_scouts|Morgul Scouts
-; pt_isengard_scouts|Isengard Scouts
-; pt_isengard_scouts_warg|Isengard Warg Riders
-; pt_harad_scouts|Haradrim Scouts
-; pt_dunland_scouts|Dunlending Scouts
-; pt_umbar_scouts|Corsair Scouts
-; pt_khand_scouts|Easterling Scouts
-; pt_moria_scouts|Moria Scouts
-; pt_guldur_scouts|Dol Guldur Scouts
-; pt_gundabad_scouts|Gundabad Scouts
-; pt_rhun_scouts|Rhun Scouts
-; pt_gondor_raiders|Gondor Foragers
-; pt_rohan_raiders|Rohirrim Foragers
-; pt_imladris_raiders|Rivendell Foragers
-; pt_lorien_raiders|Lothlorien Foragers
-; pt_woodelf_raiders|Mirkwood Foragers
-; pt_dale_raiders|Dale Foragers
-; pt_dwarf_raiders|Dwarven Foragers
-; pt_ranger_raiders|Ranger Raiders
-; pt_morgul_raiders|Morgul Raiders
-; pt_mordor_raiders|Mordor Raiders
-; pt_isengard_raiders|Isengard Raiders
-; pt_dunland_raiders|Dunlending Raiders
-; pt_harad_raiders|Haradrim Raiders
-; pt_khand_raiders|Khand Raiders
-; pt_umbar_raiders|Umbar Raiders
-; pt_moria_raiders|Moria Raiders
-; pt_guldur_raiders|Dol Guldur Raiders
-; pt_gundabad_raiders|Gundabad Raiders
-; pt_rhun_raiders|Rhun Raiders
-; pt_gondor_patrol|Gondor Patrol
-; pt_rohan_patrol|Rohirrim Patrol
-; pt_imladris_patrol|Dunedain Patrol
-; pt_lorien_patrol|Lothlorien Patrol
-; pt_woodelf_patrol|Mirkwood Patrol
-; pt_dale_patrol|Dale Patrol
-; pt_esgaroth_patrol|Esgaroth Patrol
-; pt_dwarf_patrol|Dwarven Patrol
-; pt_ranger_patrol|Ranger Patrol
-; pt_amroth_patrol|Dol Amroth Patrol
-; pt_pelargir_patrol|Pelargir Patrol
-; pt_lossarnach_patrol|Lossarnach Patrol
-; pt_brv_patrol|Blackroot Patrol
-; pt_pinnath_patrol|Pinnath Patrol
-; pt_lamedon_patrol|Lamedon Patrol
-; pt_mordor_war_party|Mordor War Party
-; pt_isengard_war_party|Isengard War Party
-; pt_harad_war_party|Harad War Party
-; pt_dunland_war_party|Dunlending Warband
-; pt_khand_war_party|Variag War Party
-; pt_moria_war_party|Moria War Party
-; pt_dale_war_party|Dale War Party
-; pt_rhun_war_party|Rhun War Party
-; pt_gondor_company|Minas Tirith Patrol
-; pt_rohan_company|Rohan Company
-; pt_imladris_company|Rivendell Company
-; pt_lorien_company|Lothlorien Company
-; pt_woodelf_company|Mirkwood Company
-; pt_dale_company|Dale Company
-; pt_dwarf_company|Dwarven Company
-; pt_gondor_elite_company|Gondor Elite Company
-; pt_rohan_elite_company|Rohan Elite Company
-; pt_imladris_elite_company|Rivendell Elite Company
-; pt_lorien_elite_company|Lothlorien Elite Company
-; pt_woodelf_elite_company|Mirkwood Elite Company
-; pt_dale_elite_company|Dale Elite Company
-; pt_dwarf_elite_company|Dwarven Elite Company
-; pt_gondor_caravan|Gondor Caravan
-; pt_rohan_caravan|Rohan Caravan
-; pt_imladris_caravan|Rivendell Caravan
-; pt_lorien_caravan|Lothlorien Caravan
-; pt_woodelf_caravan|Mirkwood Caravan
-; pt_dale_caravan|Dale Caravan
-; pt_dwarf_caravan|Dwarven Caravan
-; pt_mordor_caravan|Mordor Supply Train
-; pt_isengard_caravan|Isengard Supply Train
-; pt_gunda_caravan|Gundabad Supply Train
-; pt_gondor_p_train|Gondor Prisoner Train
-; pt_rohan_p_train|Rohan Prisoner Train
-; pt_imladris_p_train|Rivendell Prisoner Train
-; pt_lorien_p_train|Lothlorien Prisoner Train
-; pt_woodelf_p_train|Mirkwood Prisoner Train
-; pt_dale_p_train|Dale Prisoner Train
-; pt_dwarf_p_train|Dwarven Prisoner Train
-; pt_mordor_p_train|Mordor Prisoner Train
-; pt_isengard_p_train|Isengard Prisoner Train
-; pt_kingdom_hero_party|War Party
-; pt_caravan_survivors|Caravan Survivors
-; pt_routed_allies|Routed Allies
-; pt_routed_enemies|Routed Enemies
-; pt_legion_minas_morgul|Legion of Minas Morgul
-; pt_legion_udun|Legion of Udun
-; pt_legion_gorgoroth|Legion of Gorgoroth
-; pt_legion_barad_dur|Legion of Barad-Dur
-; pt_beorn_messenger|Beorning Messenger
-; pt_village|Village
-; pt_ring_hunters|Ring Hunters
-; pt_scout_camp_small|Scout Camp
-; pt_scout_camp_large|Fortified Scout Camp
-; pt_beorn_caravan|Woodsmen Caravan
-; pt_orc_horde|Orc Horde
-; pt_vet_archer|Veteran Archer
+pt_merchant_caravan|Kereskedő karaván
+pt_troublesome_bandits|Problémás koboldok
+pt_fangorn_orcs|Favágó orkok
+pt_village_farmers|Falusi parasztok
+pt_spy_partners|Gyanús utazók
+pt_spy_partners_evil|Gyanús utazók
+pt_runaway_serfs|Szökött rabszolgák
+pt_spy|Magányos lovas
+pt_spy_evil|Magányos lovas
+pt_sacrificed_messenger|Feláldozott hírnök
+pt_gandalf|Magányos lovas
+pt_nazgul|Magányos lovas
+pt_gondor_scouts|Gondori felderítők
+pt_blackroot_auxila|Feketegyökéri auxilia
+pt_lamedon_auxila|Lamedoni auxilia
+pt_lossarnach_auxila|Lossarnachi auxilia
+pt_pinnath_gelin_auxila|Pinnath Gelini auxilia
+pt_ranger_scouts|Kósza felderítők
+pt_rohan_scouts|Rohír felderítők
+pt_lorien_scouts|Lothlórieni felderítők
+pt_woodelf_scouts|Bakacsinerdei tünde felderítők
+pt_imladris_scouts|Völgyzugolyi tünde felderítők
+pt_dale_scouts|Suhatagi felderítők
+pt_esgaroth_scouts|Tóvárosi felderítők
+pt_dwarf_scouts|Törp őrszemek
+pt_beorn_scouts|Beornfi felderítők
+pt_woodmen_scouts|Erdőnépi felderítők
+pt_mordor_scouts|Mordori felderítők
+pt_morgul_scouts|Morguli felderítők
+pt_isengard_scouts|Vasudvardi felderítők
+pt_isengard_scouts_warg|Vasudvardi varg lovasok
+pt_harad_scouts|Haradrim felderítők
+pt_dunland_scouts|Dúnföldi felderítők
+pt_umbar_scouts|Kalóz felderítők
+pt_khand_scouts|Keletlakó felderítők
+pt_moria_scouts|Móriai felderítők
+pt_guldur_scouts|Dol Gulduri felderítők
+pt_gundabad_scouts|Gundabadi felderítők
+pt_rhun_scouts|Rhûni felderítők
+pt_gondor_raiders|Gondori gyűjtőgetők
+pt_rohan_raiders|Rohír gyűjtögetők
+pt_imladris_raiders|Völgyzugolyi gyűjtögetők
+pt_lorien_raiders|Lothlórieni gyűjtögetők
+pt_woodelf_raiders|Bakacsinerdei gyűjtögetők
+pt_dale_raiders|Suhatagi gyűjtögetők
+pt_dwarf_raiders|Törp gyűjtőgetők
+pt_ranger_raiders|Kósza fosztogatók
+pt_morgul_raiders|Morguli fosztogatók
+pt_mordor_raiders|Mordor fosztogatók
+pt_isengard_raiders|Vasudvardi fosztogatók
+pt_dunland_raiders|Dúnföldi fosztogatók
+pt_harad_raiders|Haradrim fosztogatók
+pt_khand_raiders|Khandi fosztogatók
+pt_umbar_raiders|Umbari fosztogatók
+pt_moria_raiders|Móriai fosztogatók
+pt_guldur_raiders|Dol Gulduri fosztogatók
+pt_gundabad_raiders|Gundabadi fosztogatók
+pt_rhun_raiders|Rhûni fosztogatók
+pt_gondor_patrol|Gondori őrjárat
+pt_rohan_patrol|Rohír őrjárat
+pt_imladris_patrol|Dúnadán őrjárat
+pt_lorien_patrol|Lothlórieni őrjárat
+pt_woodelf_patrol|Bakacsinerdei őrjárat
+pt_dale_patrol|Suhatagi őrjárat
+pt_esgaroth_patrol|Tóvárosi őrjárat
+pt_dwarf_patrol|Törp őrjárat
+pt_ranger_patrol|Kósza őrjárat
+pt_amroth_patrol|Dol Amrothi őrjárat
+pt_pelargir_patrol|Pelargiri őrjárat
+pt_lossarnach_patrol|Lossarnachi őrjárat
+pt_brv_patrol|Feketegyökéri őrjárat
+pt_pinnath_patrol|Pinnathi őrjárat
+pt_lamedon_patrol|Lamedoni őrjárat 
+pt_mordor_war_party|Mordori hadsereg
+pt_isengard_war_party|Vasudvardi hadsereg
+pt_harad_war_party|Haradi hadsereg
+pt_dunland_war_party|Dúnföldi bandérium
+pt_khand_war_party|Variag hadsereg
+pt_moria_war_party|Móriai hadsereg
+pt_dale_war_party|Suhatagi hadsereg
+pt_rhun_war_party|Rhûni hadsereg
+pt_gondor_company|Minas Tirithi őrjárat
+pt_rohan_company|Rohani század
+pt_imladris_company|Völgyzugolyi század
+pt_lorien_company|Lothlórieni század
+pt_woodelf_company|Bakacsinerdei század
+pt_dale_company|Suhatagi század
+pt_dwarf_company|Törp század
+pt_gondor_elite_company|Gondori elit század
+pt_rohan_elite_company|Rohani elit század
+pt_imladris_elite_company|Völgyzugolyi elit század
+pt_lorien_elite_company|Lothlórieni elit század
+pt_woodelf_elite_company|Bakacsinerdei elit század
+pt_dale_elite_company|Suhatagi elit század
+pt_dwarf_elite_company|Törp elit század
+pt_gondor_caravan|Gondori karaván
+pt_rohan_caravan|Rohani karaván
+pt_imladris_caravan|Völgyzugolyi karaván
+pt_lorien_caravan|Lothlórieni karaván
+pt_woodelf_caravan|Bakacsinerdei karaván
+pt_dale_caravan|Suhatagi karaván
+pt_dwarf_caravan|Törp karaván
+pt_mordor_caravan|Mordori ellátmányos konvoj
+pt_isengard_caravan|Vasudvardi ellátmányos konvoj
+pt_gunda_caravan|Gundabadi ellátmányos konvoj
+pt_gondor_p_train|Gondori fogoly konvoj
+pt_rohan_p_train|Rohani fogoly konvoj
+pt_imladris_p_train|Völgyzugolyi fogoly konvoj
+pt_lorien_p_train|Lothlórieni fogoly konvoj
+pt_woodelf_p_train|Bakacsinerdei fogoly konvoj
+pt_dale_p_train|Suhatagi fogoly konvoj
+pt_dwarf_p_train|Törp fogoly konvoj
+pt_mordor_p_train|Mordori fogoly konvoj
+pt_isengard_p_train|Vasudvardi fogoly konvoj
+pt_kingdom_hero_party|Hadsereg
+pt_caravan_survivors|Karaván túlélők
+pt_routed_allies|Megmenekült szövetségesek
+pt_routed_enemies|Megmenekült ellenségek
+pt_legion_minas_morgul|Minas Morgul légiója
+pt_legion_udun|Udûn légiója
+pt_legion_gorgoroth|Gorgoth légiója
+pt_legion_barad_dur|Barad-dûr légiója
+pt_beorn_messenger|Beornfi hírvívő
+pt_village|Falu
+pt_ring_hunters|Gyűrűvadászok
+pt_scout_camp_small|Felderítő tábor
+pt_scout_camp_large|Megerősített felderítő tábor
+pt_beorn_caravan|Erdőnépi karaván
+pt_orc_horde|Ork horda
+pt_vet_archer|Veterán íjász

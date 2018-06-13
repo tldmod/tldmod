@@ -45,7 +45,7 @@ qst_follow_army|Následuj {s9}'s armádu
 qst_follow_army_text|Nič
 qst_report_to_army|Hlas sa u {s13}
 qst_report_to_army_text|Nič
-qst_deliver_cattle_to_army|Doruč {reg3} jednotiek jedla do {s13}
+qst_deliver_cattle_to_army|Doruč {reg3} kusov jedla do {s13}
 qst_deliver_cattle_to_army_text|Nič
 qst_join_siege_with_army|Pripoj sa k obliehaniu {s14}
 qst_join_siege_with_army_text|Nič
@@ -55,18 +55,18 @@ qst_move_cattle_herd|Priveď {s12} do {s13}
 qst_move_cattle_herd_text|Starosta z {s10} ťa požiadal aby si priviedol nejaký {s12} do {s13}.
 qst_escort_merchant_caravan|Sprevádzaj karavanu do {s8}
 qst_escort_merchant_caravan_text|Sprevádzaj karavanu do {s8} a prehovor s nimi keď budete neďaleko.
-qst_deliver_wine|Doruč {reg5} jednotiek {s6} do {s4}
-qst_deliver_wine_text|{s9} z {s3} ťa požiadal aby si doručil {reg5} jednotiek {s6} do {s4} do 7 dní.
+qst_deliver_wine|Doruč {reg5} kusov {s6} do {s4}
+qst_deliver_wine_text|{s9} z {s3} ťa požiadal aby si doručil {reg5} kusov {s6} do {s4} do 7 dní.
 qst_troublesome_bandits|Postaraj sa o Neodbytných Goblinov.
 qst_troublesome_bandits_text|{s9} z {s4} ťa požiadal aby si našiel a zabil neodbytných goblinov v blízkosti mesta.
 qst_deal_with_looters|Postaraj sa o Klan Ohyzdov.
 qst_deal_with_looters_text|Starosta z {s4} ťa požiadal, aby si pobil niekoľko tlúp Klanových Ohyzdov v okolí {s4}.
 qst_deal_with_night_bandits|Znič tlupu Tuláckych Goblinov.
 qst_deal_with_night_bandits_text|Starosta z {s14} ťa požiadal aby si zničil skupinu Goblinov Dezertérov v {s14}.
-qst_deliver_food|Dovez {s3} {reg5} jednotiek jedla.
-qst_deliver_food_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} jednotiek jedla do 10 dní.
-qst_deliver_iron|Prines {s3} {reg5} jednotiek {s6}
-qst_deliver_iron_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} jednotiek {s6}.
+qst_deliver_food|Dovez {s3} {reg5} kusov jedla.
+qst_deliver_food_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov jedla do 10 dní.
+qst_deliver_iron|Prines {reg5} kusov {s6} do {s3}.
+qst_deliver_iron_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov {s6}.
 qst_tld_introduction|Doruč správu o ohyzdoch z Mordoru veleniu.
 qst_tld_introduction_text|Nič
 qst_treebeard_kill_orcs|Poraz skupinu ohyzdov rúbajúcich stromy.

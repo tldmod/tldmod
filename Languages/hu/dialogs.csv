@@ -1,11 +1,11 @@
-dlga_start:mutiny_pretalk_1|Hé, {playername}. Aszondom... ^A legények itt nyavalyognak! Több szórakozás és kevesebb menetelés kéne.
+dlga_start:mutiny_pretalk_1|Hé, {játékosnév}. Aszondom... ^A legények itt nyavalyognak! Több szórakozás és kevesebb menetelés kéne.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Vissza a sorba, féreg! Háború van és én vagyok a parancsnokod.
 dlga_mutiny_pretalk_2:close_window|Ahogy óhajtod uram, ahogy óhajtod....
-dlga_start:mutiny_talk_1|Hé, parancsnok. A legények nem túl boldogak, egyáltalán nem. ^Nincs elég emberhús, nincs elég szórakozás. ^Azt mondják nem vagy elég jó, parancsnok!
+dlga_start:mutiny_talk_1|Hé, parancsnok. Aszondom... A legények nem túl boldogak, egyáltalán nem. ^Nincs elég emberhús, nincs elég szórakozás. ^Azt mondják nem vagy elég jó, parancsnok!
 dlga_mutiny_talk_1:mutiny_talk_2|Mi? Zendülés háborúban? ^Ezért halál jár, féreg!
-dlga_mutiny_talk_2:close_window|Aszondom... ^A legények aszondják hogy jobb parancsnokuk lennék ha MEGÖLLEK!
-dlga_start:troll_introduce_1|Problem?
-dlga_start:troll_talk_1|U mad?
+dlga_mutiny_talk_2:close_window|Aszondom... ^A legények aszondják hogy jobb parancsnokuk lennék miután MEGÖLLEK!
+dlga_start:troll_introduce_1|Probléma?
+dlga_start:troll_talk_1|Őrült vagy?
 dlga_troll_introduce_1:troll_goodbye|Hű! Egy beszélő troll?!
 dlga_troll_introduce_1:close_window|Van egy lovam.
 dlga_troll_talk_1:troll_talk_2|Trollkodj meg, troll!
@@ -13,64 +13,64 @@ dlga_troll_talk_1:close_window|Van egy lovam.
 dlga_troll_talk_2:troll_talk_3|Kihívás elfogadva!^^{s4}
 dlga_troll_beaten:troll_talk_1|Meghajlok bölcsességed előtt, Trollok Mestere!
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
-dlga_start:hobbit_merry_talk_met|Üdv újra, (playername)\n
-dlga_start:hobbit_pippin_talk_met|Üdv újra, (playername)\n
+dlga_start:hobbit_merry_talk_met|Üdv újra, {játékosnév}!
+dlga_start:hobbit_pippin_talk_met|Üdv újra, {játékosnév}!
 dlga_start:hobbit_general_talk_1|Üdv, {uram/hölgyem}! A nevem Borbak Trufiádok de hívhat Trufának!
 dlga_start:hobbit_general_talk_1.1|Üdv, {uram/hölgyem}! A nevem Tuk Peregrin de hívhat Pippinnek!
 dlga_hobbit_general_talk_1:close_window|Erre most nincs időm.
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Szavamra, még nem láttam magadfajtát.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Szavamra, szerintem már találkoztam hozzád hasonlóval Edoras-ban.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Szavamra, szerintem már találkoztam hozzád hasonlóval Minas Tirith-ben.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Szavamra, szerintem már találkoztam hozzád hasonlóval Edorasban.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Szavamra, szerintem már találkoztam hozzád hasonlóval Minas Tirithben.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Tudom. Messziről jöttem! Hobbit vagyok, {uram/hölgyem}, a Megyéből.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|Ó, ő biztos az egyik drága unokatestvérem volt! Tuk Peregrin, vagy Pippin, ahogy hívják. Hobbitok vagyunk, {uram/hölgyem}, és az Oltárból jövünk, mindketten! Jó öreg Pippin, vajon hogy van Minas Tirith-ben.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Ó, ő biztos az egyik drága unokatestvérem volt! Borbak Trufiádok, vagy Trufa, ahogy hívják. Hobbitok vagyunk, {uram/hölgyem}, és az Oltárból jövünk, mindketten! Jó öreg Trufa, vajon hogy van Edoras-ban.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|Ó, ő biztos az egyik drága unokatestvérem volt! Tuk Peregrin, vagy Pippin, ahogy hívják. Hobbitok vagyunk, {uram/hölgyem}, és a Megyéből jövünk, mindketten! Jó öreg Pippin, kíváncsi vagyok hogyan boldogulhat Minas Tirithben.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Ó, ő biztos az egyik drága unokatestvérem volt! Borbak Trufiádok, vagy Trufa, ahogy hívják. Hobbitok vagyunk, {uram/hölgyem}, és a Megyéből jövünk, mindketten! Jó öreg Trufa, kíváncsi vagyok hogyan boldogulhat Edorasban.
 dlga_hobbit_general_talk_3:close_window|Nos, viszlát.
-dlga_start:hobbit_merry_talk_met.1|Üdv ismét, {playername}!
-dlga_start:hobbit_pippin_talk_met.1|Üdv ismét, {playername}!
+dlga_start:hobbit_merry_talk_met.1|Üdv ismét, {játékosnév}!
+dlga_start:hobbit_pippin_talk_met.1|Üdv ismét, {játékosnév}!
 dlga_hobbit_merry_talk_met:close_window|Üdv, Trufa.
 dlga_hobbit_pippin_talk_met:close_window|Üdv, Pippin.
-dlga_start:treebeard_introduce_1|(Rádöbbensz hogy most egy igazán rendkívüli teremtményt bámulsz. Nagyon magas és merev lábú kéreg-szerű bőrrel és leveles hajjal. Moha is található teste egyes részein. Most éppen nem veszel észre sokat, csak a szemeit. A mély szemei felmérnek téged, lassan és ünnepélyesen de nagyon élesen és áthatóan. Azt hiszed hogy barnák, egy része zöld, mintha egy hatalmas kút lenne mögöttük, megtelve évszázadok memóriájával és hosszú, lassú, szilárd gondolkodással. De a felületen a szemei csillognak a jelennel... mint ahogy a nap csillog a fa külső levelein, vagy a nagyon mély tó hullámain.)
-; dlga_treebeard_introduce_1:treebeard_introduce_2|(You are about to say something but a strange stifling feeling falls upon you, as if the air is too thin or too scanty for breathing... with an almost desperate inhale of air you manage to shake loose the feeling and the huge tree-like creature drops the intensity of his gaze a little bit. The creature continues to look at you and you notice the other huge tree creatures are watching you too, as if expecting you to speak...)
-; dlga_treebeard_introduce_2:treebeard_introduce_3|Pardon my intrusion... I'm but a weary traveler seeking refuge from recent events... my name is {playername}. Might I ask who you are?
-; dlga_treebeard_introduce_3:treebeard_introduce_4|(The stiff-limbed tree giant slowly opens his mouth which is concealed behind small branches, leaves and moss. With a very deep, slow and booming voice he very slowly expounds in a most commanding way:)^  'Hrooom... Hmmm... *I* am not going to tell you my name... not yet at any rate. For one thing it would take a long while. My name is growing all the time and I've lived a very long, long time; so my name is like a story. Real names tell you the story of things they belong to in my language, in the Old Entish as you might say. It is a lovely language, but it takes a very long time saying anything in it, because we do not say anything in it, unless it is worth taking a long time to say, and to listen to.'
+dlga_start:treebeard_introduce_1|(Rádöbbensz hogy most egy igazán rendkívüli teremtményt bámulsz. Nagyon magas és merev lábú, kéregszerű bőrrel és lomb hajjal. Moha is található teste egyes részein. De jelenleg egyiket sem veszed észre ezekből, csak a szemeit. A mély szemei felmérnek téged, lassan és ünnepélyesen, de nagyon élesen és áthatóan. Azt hiszed hogy barnák, zöld fénnyel burkolva, mintha egy hatalmas kút lenne mögöttük, megtelve évszázadok emlékeivel és hosszú, lassú, szilárd gondolkodással. De a felszínen a szemei a jelennel csillognak... mint ahogy a nap csillog a fa külső levelein, vagy a nagyon mély tó hullámain.)
+dlga_treebeard_introduce_1:treebeard_introduce_2|(Mondani akarnál valamit, de egy furcsa, fojtogató érzés fog el ahogy a levegő túl léghiányos vagy túl híg lesz ahhoz, hogy lélegezni lehessen... egy már-már kétségbeesett légvétellel sikerül lerázod magadról az érzést és a hatalmas fajellegű lény egy kicsit kevésbé bámul rád hevesen. A teremtmény továbbra is téged néz, és észreveszed hogy a többi, hatalmas fa lény is téged figyel, mintha arra számítanának, hogy megszólalsz...)
+dlga_treebeard_introduce_2:treebeard_introduce_3|Bocsássa meg a tolakodásomat... Csak egy megviselt utazó vagyok, aki menedéket keres a mostanában történtek elől... Az én nevem {játékosnév}. Megkérdezhetem, hogy ki is vagy te?
+dlga_treebeard_introduce_3:treebeard_introduce_4|(A merev végtagú faóriás lassan kinyitja a száját, amely apró ágak, levelek és moha rejtekében volt ezidáig. Nagyon mély, lassan hömpölygő és dörgő hangja van, ami nagyon lassan áll össze szavakká, parancsoló hangnemben:)^ 'Burárum... hmm... *én* nem fogom elmondani a nevemet... nem mostanában. Elég sokáig tartana, hogy csak egyet mondjak. A nevem folyamatosan nő, és nagyon, nagyon régóta élek; a nevem olyan mint egy történet. Igazi nevek történeteket mesélnek el az én nyelvemen, óentül, ahogy hívni szokták. Nagyon szép nyelv, de nagyon sokáig tart elmondani rajta akármit, mert nem szoktunk mondani rajta akármit rajta, kivéve ha megéri az időt végigmondani, és végighallgatni.' 
 dlga_treebeard_introduce_4:treebeard_introduce_5|Ó, te egy ent vagy! Legendák mesélnek rólad, és megtiszteltetés, hogy találkozhattam veled. Nem is akarok zavarni, ha szeretnéd, máris megyek.
-; dlga_treebeard_introduce_5:treebeard_questtalk|(The stiff-limped giant and his fellow Ents stand still for many minutes in silence while a breeze passes through their leafy hairs and beards. They look at each other for another prolonged moment until an unusually hasty Ent who is resembling a rowan tree seems to want to speak. However, he stays silent until the giant stiff-limped Ent continues:)
-; dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?As I said before...:Hroom... We appreciate the courteous manners that you display. It is {reg1?unusual from your race:nice to speak with elves again}.} Times are not good, ever since the Entwives disappeared - and now there are many evil creatures released by the Dark Lord himself who are trying to destroy our homes. We seek someone who is fast but not hasty. Someone who can help us while we discuss our next moves.^Many bands of orcs have raided the woods and burned down our trees with fire arrows - if you were to defeat the orcs and make sure that they do not threaten the woods we would be grateful and consider you a true friend. Do this and we will talk again.
-; dlga_treebeard_quest_brief:close_window|Orcs are vile creatures indeed. I will make sure they do not harm the forest again.
+dlga_treebeard_introduce_5:treebeard_questtalk|(A mereven sántikáló óriás és az ent társai hosszú perceken át néma csendben állnak, miközben a szellő keresztülfúj lombhajukon és -szakállukon. Egymásra néznek egy másik elnyújtott pillanatig amíg egy szokatlanul hamari ent. aki egy vörös berkenyefának tűnik, úgy tűnik beszélni akar. Habár, néma marad ameddig az óriási meredten sántikáló ent folytatja:)
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Ahogy mondtam...:Hmm... Értékeljük az udvarias modorodat. Ez {reg1?szokatlan a fajtádtól:jó érzés megint tündékkel beszélgetni}.}  Nem jó idők ezek, nem mióta az entasszonyok eltűntek - és most rengeteg gonosz teremtmény kószál, amiket a Sötét Nagyúr maga eresztett el, aki elakarja pusztítani az otthonainkat. Valaki olyat keresünk, aki gyors de nem hamari. Valaki, aki segíthet nekünk mielőtt megvitatjuk a következő lépésünket.^Rengeteg ork csapat zsákmányolja ki az erdőt és égetik le a fákat tüzes nyilaikkal - ha letudnád győzni az orkokat, és eltudnád intézni hogy a jövőben ne tudhassák fenyegetni az erdőt, akkor nagyon hálásak lennénk és jó barátnak tekintenénk. Tedd meg ezt, aztán majd beszélünk megint.
+dlga_treebeard_quest_brief:close_window|Az orkok tényleg hitvány teremtmények. Ügyelni fogok rá, hogy mégegyszer ne árthassanak az erdőnek.
 dlga_treebeard_quest_brief:treebeard_pretalk|Sajnálom. Erre most nincs időm.
-; dlga_treebeard_questtalk:close_window|(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'
-; dlga_treebeard_questtalk:close_window.1|(The stiff-limped giant and his fellow Ents stand still in silence while a breeze passes through their leafy hairs and beards.)
-; dlga_treebeard_pretalk:treebeard_talk_response|Hrooom... What would you like to know, young friend?
+dlga_treebeard_questtalk:close_window|(Az entek vezetője lassan kinyitja elrejtett száját és a többi ent rád tekint és emellett lassan elkezdenek kiadni egy hosszú, mély hangot amitől elkezd reszketni a föld egy kicsit - rájössz hogy entmódra nevetnek. Egy viszonylag fiatal vörös berkenyefának kinéző ent a földhöz vágja a hét-lábujjas lábát, és a rengés majdnem a földre lök.)^'Csak óvatosan, Hamariberkenye, nem akarjuk hogy megsérüljön fiatal harcos barátunk. Hmm... Én vagyok Szilszakáll, az entek közül a legősibb, és mi mind hálásak vagyunk a szolgálataidért... hmm... hadd adjam oda neked az Entvizet ajándékként, megünnepelve a sikeredet.'
+dlga_treebeard_questtalk:close_window.1|(A mereven sántikáló óriás és az ent társai hosszú perceken át néma csendben állnak, miközben a szellő keresztülfúj lombhajukon és -szakállukon.)
+dlga_treebeard_pretalk:treebeard_talk_response|Burárum... Mit szeretnél tudni, fiatal barátom?
 dlga_treebeard_talk_response:treebeard_about_himself|Mesélj még magadról.
 dlga_treebeard_talk_response:treebeard_about_entwives|Mesélj nekem az entasszonyokról.
 dlga_treebeard_talk_response:treebeard_about_ents|Mesélj nekem az entekről.
 dlga_treebeard_talk_response:close_window|Semmiség, viszlát.
-; dlga_treebeard_about_himself:treebeard_pretalk|(The Ent leader looks distant and solemn. After a while he slowly says:)^'Don't be hasty... we can talk more about this when the woods are safe from the orcs.'
-; dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... I am the oldest of my kind hmmm... I am known as Treebeard by a few mortals and the Elves call me Fangorn. Hummm... I, Skinbark and Leaflock are the only Ents who have walked the forests before the Darkness. I am no longer very bendable as I used to be... young Quickbeam can bend and sway, like a slender tree in the wind... Hummm... If the Entwives were here...
-; dlga_treebeard_about_entwives:treebeard_pretalk|(The Ent leader suddenly gets an expression of sadness and his voice is unusually deep.)^'Hummm... This is a sad tale... when the woods are free from the orcs we can discuss this.'
-; dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... the beautiful Entwives... they like to plant and grow... we should have listened more to them... Hrooom... then they left to the Brown Lands to plant gardens and they taught mortals about making the lands fertile... we used to visit them... until... Sauron attacked... the Entwives are now lost... Hummm... Fimbrethil... her hue of ripe grain... we have looked for them... but not found them... yet...
-; dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... We are shepherds of the Trees and we protect them from perils. We are older than any of the mortal races but not as old as the Elves who cured us from dumbness. Things have changed over the ages. In the beginning we were more hasty and flexible. Over time many of us have been lost. Some of us are still true Ents, and lively enough in our fashion, but many are growing sleepy, going tree-ish, as you might say. Most of the trees are just trees, of course; but many are half awake. Some are quite wide awake, and a few are, well, ah, well getting Entish. That is going on all the time. When that happens to a tree, you find that some have bad hearts. Still, we do what we can. We keep off strangers and the foolhardy; and we train and we teach, we walk and we weed.
+dlga_treebeard_about_himself:treebeard_pretalk|(Az Entek vezetője távolbarévedőnek és ünnepélyesnek tűnik. Egy idő után lassan azt mondja:)^'Ne légy hamari... beszélhetünk erről többet, ahogy az erdő biztonságban lesz az orkoktól.'
+dlga_treebeard_about_himself:treebeard_pretalk.1|Burárum... A fajtám legidősebb példánya vagyok, hmm-hmm... Szilszakállként ismer néhány halandó, és a tündék Fangornnak hívnak. Én, Kéregirha és Lombfürt vagyunk az utolsó entek akik már a Sötétség előtt is az erdőket járták. Nem vagyok olyan hajlékony amilyen voltam... a fiatal Hamariberkenye hajlik és lengőn lép, mint a karcsú fa a szélben... hmm... bárcsak az entasszonyok itt lennének...
+dlga_treebeard_about_entwives:treebeard_pretalk|(Az Entek vezetője hirtelen szomorú kifejezést ölt magára, és hangja szokatlanmód elmélyül.)^'Burárum... Ez egy szomorú történet... ahogy az erdő megtisztul az orkoktól még beszélgethetünk erről.'
+dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahum... a gyönyörű entasszonyok... szerettek ültetni és növekedni... többet kellett volna rájuk hallgatnunk... burárum... aztán elmentek a Barnaföldekre hogy kerteket ültessenek és hogy megtanítsák a halandókat hogyan tegyék a földet termővé... néha meglátogattuk őket... ameddig... Szauron nem támadt... az entasszonyok most már elvesztek... hmm... Fimbrethil... olyan színe volt mint az érett búzának.... kerestük őket... de nem találtuk meg őket... még...
+dlga_treebeard_about_ents:treebeard_pretalk|Burárum... mi vagyunk a fák pásztorai, és mi védjük meg őket a veszélyektől. Idősebbek vagyunk mint bármely más halandó faj, de nem idősebbek mint a tündék, akik kigyógyítottak minket a némaságból. Sok minden változott az idők során. Kezdetekben hamaribbak voltunk és rugalmasabbak. Ahogy telt az idő sokunk elvszett. Néhányunk megmaradt igazi entnek, és eléggé élők maradtak, a magunk módján, de sokunk álmos lett, és fás lett, ha mondhatom így. A legtöbb fa nem több, mint fa, persze; de sokuk félig ébren van. Néhányuk teljesen ébren van, és egy pár, nos, ah, kezdenek entesek lenni. Mindig is így volt. Amikor ez megtörténik, rájössz hogy némelyiknek rossz szíve van. Ennek ellenére, megteszünk minden tőlünk telhetőt. Távol tartjuk az idegeneket és a bolondokat; gyakorlunk és tanítunk, sétálunk és gyökeret eresztünk. 
 dlga_start:close_window.1|Mmmmm?
 dlga_start:close_window.2|Mmhhrmmm?
 dlga_start:close_window.3|Mmmrhrrhmm?
 dlga_start:looters_2_join|Hajolj meg a/az {s4} ereje előtt és szolgálj engem!
 dlga_looters_2_join:close_window|Engedelmeskedünk, Mester.
 dlga_start:close_window.4|^^MORGÁS!^^
-dlga_start:member_castellan_talk|Igen, {playername}? Mit tehetek érted?
+dlga_start:member_castellan_talk|Igen, {játékosnév}? Mit tehetek érted?
 dlga_member_castellan_pretalk:member_castellan_talk|Volna még más is?
 dlga_member_castellan_talk:member_review_castle_garrison|Ellenőrizni akarom a kastély helyőrségét.
 dlga_member_review_castle_garrison:member_castellan_pretalk|Természetesen. Itt vannak a listáink, tudasd velem ha bármi változtatásra van szükséged...
 dlga_member_castellan_talk:member_review_castellan_equipment|Hadd lássam a felszerelésed.
 dlga_member_review_castellan_equipment:member_castellan_pretalk|Rendben, itt volna...
 dlga_member_castellan_talk:member_castellan_join|Azt akarom, hogy hagyjátok el a kastélyt, és csatlakozzatok a seregemhez.
-dlga_member_castellan_join:close_window|Már nagyon ide nőttem ehhez a helyhez... De ha ez a kívánságod, {playername}, Veled megyek.
+dlga_member_castellan_join:close_window|Már nagyon ide nőttem ehhez a helyhez... De ha ez a kívánságod, {játékosnév}, veled megyek.
 dlga_member_castellan_join:member_castellan_pretalk|És hol fogunk aludni? Egy egész hadsereget vonszolsz magaddal, {playername}, nincs elég hely mindegyikünknek.
 dlga_member_castellan_talk:close_window|[Távozás]
-; dlga_member_chat_00:member_lady_1|{playername}, when do you think we can reach our destination?
-dlga_member_lady_1:close_window|Hosszú út áll még előttünk.
+dlga_member_chat_00:member_lady_1|{játékosnév}, szerinted mikor fogunk elérkezni a célunkhoz?
+dlga_member_lady_1:close_window|Még mindig hosszú út áll előttünk.
 dlga_member_lady_1:close_window.1|Hamarosan. Mindjárt ott vagyunk.
-; dlga_member_chat_00:member_scout_1|We are ready to go on our scouting mission. Should we go now?
-; dlga_member_scout_1:close_window|Yes, you've got your orders. Goodbye.
+dlga_member_chat_00:member_scout_1|Készen állunk a felderítésre. Indulhatunk?
+dlga_member_scout_1:close_window|Igen, megkaptad a parancsaidat. Viszlát.
 dlga_member_scout_1:close_window.1|Várj egy percet, még éppen nem.
 dlga_do_member_trade:member_talk|Volna még más is?
 dlga_member_chat_00:member_talk|Igen, {s5}?
@@ -78,128 +78,128 @@ dlga_member_talk:member_trade|Hadd lássam a felszerelésed.
 dlga_member_trade:do_member_trade|Sajnálom, a felszerelésem az enyém.
 dlga_member_trade:do_member_trade.1|Rendben, itt volna...
 dlga_member_talk:view_member_char_requested|Mit tudsz elmondani a képességeidről?
-dlga_view_member_char_requested:do_member_view_char|Hadd mondjam el, amit tudni érdemes rólam.
-; dlga_member_talk:member_separate|We need to separate for a while.
-; dlga_member_separate:member_separate_confirm|Oh really? Well, I'm not just going to wait around here. I'm going to go back to {s4}. Is that what you want?
-; dlga_member_separate_confirm:member_separate_yes|That's right. We need to part ways.
-; dlga_member_separate_confirm:do_member_trade|No, I'd rather have you at my side.
-; dlga_member_separate_yes:close_window|Well. I'll be off, then. Look me up if you need me.
+dlga_view_member_char_requested:do_member_view_char|Rendben, hadd áruljam el...
+dlga_member_talk:member_separate|Külön kell válnunk egy ideig.
+dlga_member_separate:member_separate_confirm|Ó, igazán? Nos, nem fogok erre fele várakozni. Visszamegyek {s4}-ba/be. Ezt szeretnéd?
+dlga_member_separate_confirm:member_separate_yes|Így van. Utainknak el kell válniuk.
+dlga_member_separate_confirm:do_member_trade|Nem, szívesebben tudnálak az oldalamon.
+dlga_member_separate_yes:close_window|Legyen. Akkor elmegyek. Keress meg ha szükséged lesz rám.
 dlga_member_talk:member_question|Megszeretnék tőled kérdezni valamit.
-dlga_member_talk:close_window|Semmiség.
-; dlga_member_question:member_question_2|Very well. What did you want to ask?
-; dlga_member_question_2:member_morale|How do you feel about the way things are going in this company?
-dlga_member_question_2:member_health|Hogy van az egészséged?
-dlga_member_question_2:member_background_recap|Meséld el a történeted el megint.
-dlga_member_background_recap_3:do_member_trade|Akkor kicsivel az után, csatlakoztam hozzád.
+dlga_member_talk:close_window|Hagyjuk.
+dlga_member_question:member_question_2|Legyen. Mit szeretnél tudni?
+dlga_member_question_2:member_morale|Hogy érzel arról, ahogy a társaságban a dolgok alakulnak?
+dlga_member_question_2:member_health|Hogy szolgál az egészséged?
+dlga_member_question_2:member_background_recap|Meséld el megint a történeted.
+dlga_member_background_recap_3:do_member_trade|Aztán, nem sokkal később, csatlakoztam hozzád.
 dlga_do_member_view_char:member_talk|Volna még más is?
 dlga_start:close_window.5|Menjünk akkor amikor készen állsz.
-; dlga_start:close_window.6|Please do not waste any more of my time today. Perhaps we shall meet again.
-; dlga_companion_recruit_signup_response:close_window|Unfortunately, I can't take on any more hands in my party right now.
-; dlga_companion_recruit_rank:close_window|It seems that you are not esteemed enough by my people, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed].^Let's speak again when you are more accomplished.
-; dlga_companion_recruit_rank:companion_recruit_payment.1|I'm glad to see you have become {s29}, and I'm looking forward to joining you.
-; dlga_companion_recruit_payment_response:close_window|Well, there's little I can do then.
+dlga_start:close_window.6|Kérlek ne pazarold tovább az időmet ma már. Talán még találkozunk. 
+dlga_companion_recruit_signup_response:close_window|Sajnálatos módon nem tudok több kezet alkalmazni a csapatomban.
+dlga_companion_recruit_rank:close_window|Úgy tűnik nem vagy eléggé megbecsült az embereim által, {játékosnév}. Te egy {s29} és neked {s24} kell lenned ahhoz, hogy csatlakozzak hozzád [{reg3}-tal/tel több rang pontra van szükséged].^Beszéljünk erről újra, miután már megbecsültebb leszel.
+dlga_companion_recruit_rank:companion_recruit_payment.1|Örömmel látom hogy {s29} váltál, és már alig várom hogy csatlakozhassak hozzád.
+dlga_companion_recruit_payment_response:close_window|Nos, akkor nincs túl sok amit tehetnék.
 dlga_start:companion_recruit_meet_again|Találkozunk újra.
 dlga_companion_recruit_meet_again:companion_recruit_backstory_delayed|Szóval... Mit csináltál az utolsó találkozásunk óta?
 dlga_start:companion_recruit_secondchance|Igen?
-dlga_companion_recruit_secondchance:close_window|Semmiség.
-; dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|I might be able to use you in my company.
-dlga_companion_recruit_backstory_delayed_response:close_window|Mindegy, majd később talán.
-; dlga_companion_recruit_signup_confirm:close_window|Good! Give me a few moments to prepare and I'll be ready to move.
-; dlga_start:companion_rehire|My offer to rejoin you still stands, if you'll have me.
-; dlga_start:companion_rehire.1|It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been waiting here since then, looking for news of your fate. Shall I get my gear together and rejoin your company?
-; dlga_start:companion_was_dismissed|It is good to see you, {s21}! To tell you the truth, I had hoped to run into you.
-; dlga_companion_was_dismissed:companion_rehire|{s5}. Would you want me to rejoin your company?
+dlga_companion_recruit_secondchance:close_window|Hagyjuk.
+dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|Talán tudnálak használni a csapatomban.
+dlga_companion_recruit_backstory_delayed_response:close_window|Mindegy, majd talán később.
+dlga_companion_recruit_signup_confirm:close_window|Remek! Adj pár pillanatot hogy felkészüljek aztán készen is állok az indulásra.
+dlga_start:companion_rehire|Az ajánlatom hogy visszacsatlakozzak hozzád, még mindig áll, ha van nekem helyed.
+dlga_start:companion_rehire.1|Jó hogy életben látlak, {s5}! {s6}, és nem tudtam hogy elfogtak, megöltek vagy merre lettél. Azóta itt várok rád, a sorsodról kérdezősködve. Összepakoljam a felszerelésem és visszacsatlakozzak a társaságodba?
+dlga_start:companion_was_dismissed|Jó téged újra látni, {s21}! Őszintén szólva, reméltem hogy beléd futok.
+dlga_companion_was_dismissed:companion_rehire|{s5}. Szeretnéd hogy visszacsatlakozzak a társaságodba?
 dlga_companion_rehire:companion_recruit_signup_confirm|Üdv ismét, barátom!
-; dlga_companion_rehire:companion_rehire_refused|Sorry, I can't take on anyone else right now.
-; dlga_companion_rehire_refused:close_window|Well... Look me up if you change your mind, eh?
+dlga_companion_rehire:companion_rehire_refused|Sajnálom, nem tudok senki mást magammal vinni.
+dlga_companion_rehire_refused:close_window|Nos... keress meg ha meggondolnád magad, ey?
 dlga_companion_objection_response:close_window|Köszönöm, értékelem a támogatásod.
 dlga_companion_objection_response:close_window.1|Remélhetőleg nem fog újra megtörténni.
-; dlga_companion_objection_response:close_window.2|Your objection is noted, but I have more important things on my mind.
-; dlga_companion_personalityclash2_response:close_window|I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.
-; dlga_companion_personalityclash2_response:close_window.1|You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.
-; dlga_companion_personalityclash2_response:close_window.2|I don't have time for petty squabbles.
-; dlga_companion_personalityclash_response:close_window|I deem {s11} a valuable member of this company. You should appreciate {reg11?her:him} more.
-; dlga_companion_personalityclash_response:close_window.1|You are right. I'm not happy with {s11}'s behavior myself and will let {reg11?her:him} know that.
-; dlga_companion_personalityclash_response:close_window.2|I don't have time for petty squabbles.
+dlga_companion_objection_response:close_window.2|A véleményed fel lett jegyezve, de most fontosabb dolgokkal kell foglalkoznom.
+dlga_companion_personalityclash2_response:close_window|Én {s11} a társaság egy értékes tagjának tekintem. Neked is jobban kéne értékelned {reg11?őt}.
+dlga_companion_personalityclash2_response:close_window.1|Igazad van. Nem vagyok elégedett {s11} viselkedésével és ezt a tudtára is fogom {reg11?neki} adni.
+dlga_companion_personalityclash2_response:close_window.2|Nincs időm ilyen értelmetlen veszekedésekre.
+dlga_companion_personalityclash_response:close_window|Én {s11} a társaság egy értékes tagjának tekintem. Neked is jobban kéne értékelned {reg11?őt}.
+dlga_companion_personalityclash_response:close_window.1|Igazad van. Nem vagyok elégedett {s11} viselkedésével és ezt a tudtára is fogom {reg11?neki} adni.
+dlga_companion_personalityclash_response:close_window.2|Nincs időm ilyen értelmetlen veszekedésekre.
 dlga_companion_personalitymatch_response:close_window|Nagyon jó.
-; dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.
-; dlga_companion_faction_demolished:close_window|Then we shall ride to aid {s6} immediately.
-; dlga_companion_faction_demolished:close_window.1|I'm sorry, but we are needed elsewhere.
+dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?a mi:az én} {s6} hazám keservesen megszenvedi a háborút, arra kérlek fontold meg hogy segítesz {reg6?a mi:az én} nép(ünk/em)nek ahogy kipihented magad és készen állsz.
+dlga_companion_faction_demolished:close_window|Akkor {s6} segítségére kéne lovagolnunk azonnal.
+dlga_companion_faction_demolished:close_window.1|Sajnálom, de ránk máshol van szükség.
 dlga_companion_home_description:companion_home_description_2|Mesélj nekem többet.
-; dlga_companion_home_description:close_window|We don't have time to chat just now.
-; dlga_companion_home_description:close_window.1|I prefer my companions not to bother me with such trivialities.
-; dlga_start:player_hire_troop|{s33}^^I am in charge of the forces garrisoned here at {s21}. Did you want to see me?
-; dlga_player_hire_troop:player_hire_troop_give|Some of the soldiers in my group would be more useful here, to defend {s21}.
-; dlga_player_hire_troop:close_window|I want to review my soldiers stationed here.
-; dlga_player_hire_troop:close_window.1|I need some training.
-; dlga_player_hire_troop:tld_sell_prisoners|I have brought you some prisoners.
-; dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Let's see the wretched scum.
-; dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Let me check our dungeon records...
-; dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Changed your mind, eh?
+dlga_companion_home_description:close_window|Most nincs időnk csevegni.
+dlga_companion_home_description:close_window.1|Jobban szeretem ha a társaim nem zavarnak ilyen jelentéktelen dolgokkal.
+dlga_start:player_hire_troop|{s33}^^Én vagyok a felelős {s21}-ban/ben elszállásolt erőkért. Látni akartál engem?
+dlga_player_hire_troop:player_hire_troop_give|Néhányan katona a csapatomból hasznosabb lenne itt, {s21} védelmében.
+dlga_player_hire_troop:close_window|Szeretném megszemlézni az itt elszállásolt katonáimat.
+dlga_player_hire_troop:close_window.1|Szükségem lenne némi kiképzésre.
+dlga_player_hire_troop:tld_sell_prisoners|Hoztam neked néhány foglyot.
+dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Nézzük a nyomorult szemeteket.
+dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Hadd ellenőrizzem a várbörtön nyilvántartását...
+dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Meggondoltad magad, eh?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Megbizonyosodom róla hogy nem fognak elszökni a várbörtönünkből.
 dlga_player_hire_troop:close_window.2|Viszlát.
 dlga_player_hire_troop_pre_pre_nextcycle:player_hire_troop_pre_nextcycle|Hadd ellenőrizzem a csapat beosztást...
-; dlga_player_hire_troop_pre_nextcycle:player_hire_troop_nextcycle|So you've changed your mind...^I see.
+dlga_player_hire_troop_pre_nextcycle:player_hire_troop_nextcycle|Szóval, meggondoltad magad...^Értem.
 dlga_player_hire_troop_reunite:player_hire_troop_reunite_1|Hadd ellenőrizzem a csapat beosztást...
-; dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle|So you've changed your mind...^I see.
-; dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|We don't have use for those troops here...^Take them back.
+dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle|Szóval, meggondoltad magad...^Értem.
+dlga_player_hire_troop_reunite_1:player_hire_troop_nextcycle.1|Nem tudunk mit kezdeni ezekkel az egységekkel...^Vedd vissza őket.
 dlga_player_hire_troop_nextcycle:player_hire_troop|Volna még más is?
 dlga_start:player_siege_castle_commander_1|Mit szeretnél?
 dlga_player_siege_castle_commander_1:player_siege_ask_surrender|Add fel! A helyzeted reménytelen!
-; dlga_player_siege_castle_commander_1:close_window|Nothing. I'll leave you now.
-; dlga_player_siege_ask_surrender:player_siege_ask_surrender_treatment|Perhaps... Do you give your word of honour that we'll be treated well?
-; dlga_player_siege_ask_surrender:player_siege_ask_leave_unmolested|We are ready to leave this castle to you and march away if you give me your word of honour that you'll let us leave unmolested.
+dlga_player_siege_castle_commander_1:close_window|Semmi. Már megyek is.
+dlga_player_siege_ask_surrender:player_siege_ask_surrender_treatment|Esetleg... becsületszavadat adod arra, hogy jól fogsz bánni velünk?
+dlga_player_siege_ask_surrender:player_siege_ask_leave_unmolested|Készen állunk arra, hogy átadjuk a kastélyt és elmasírozzunk, ha a becsületszavadat adod arra, hogy sértetlenül hagysz minket elmenni.
 dlga_player_siege_ask_surrender:close_window|Feladni? Há! Addig tudjuk tartani ezeket a falakat míg meg nem halunk az öregedéstől!
 dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_reject|Nem adok neked semmit. Add meg magad most vagy készülj fel halálra!
 dlga_player_siege_ask_surrender_treatment_reject:close_window|Rohadék. Az utolsó emberedig küzdeni fogunk!
-; dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_accept|You will be ransomed and your soldiers will live. I give you my word.
-; dlga_player_siege_ask_surrender_treatment_accept:close_window|Very well then. Under those terms, I offer you my surrender.
-; dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_accept|You have my word. You will not come under attack if you leave the castle.
-; dlga_player_siege_ask_leave_unmolested_accept:close_window|Very well. Then we leave this castle to you. You have won this day. But we'll meet again.
-; dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_reject|Unacceptable. I want prisoners.
-; dlga_player_siege_ask_leave_unmolested_reject:close_window|Then we will defend this castle to the death, and this parley is done. Farewell.
-; dlga_defeat_lord_answer:defeat_lord_answer_1|You are my prisoner now.
-; dlga_defeat_lord_answer_1:close_window|I am at your mercy.
-; dlga_defeat_lord_answer:defeat_lord_answer_2|You have fought well. You are free to go.
-dlga_start:party_encounter_lord_hostile_attacker|{playername}!
-; dlga_start:party_encounter_lord_hostile_attacker.1|Halt!
-; dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|Is there no way to avoid this battle? I don't want to fight with you.
-; dlga_party_encounter_lord_hostile_attacker_2:close_window|Don't attack! We surrender.
-; dlga_party_encounter_lord_hostile_attacker_2:close_window.1|We will fight you to the end!
-; dlga_party_encounter_offer_dont_fight:close_window|I owe you a favor, don't I. Well... all right then. I will let you go just this once.
-; dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. But I want to fight with you.
-; dlga_start:close_window.7|Away with you, vile beggar.
-; dlga_start:lord_start|If it isn't my brave champion, {playername}...
-; dlga_start:lord_start.1|Good to see you again {playername}...
-; dlga_start:lord_start.2|We meet again, {playername}...
-; dlga_start:lord_meet_neutral|Do I know you?
-; dlga_lord_meet_neutral:lord_intro|I am {playername}.
-; dlga_lord_meet_neutral:lord_intro.1|My name is {playername}. At your service.
-; dlga_lord_meet_enemy:lord_intro|I am {playername}.
-; dlga_lord_meet_enemy:lord_intro.1|They know me as {playername}. Mark it down, you shall be hearing of me a lot.
-; dlga_start:lord_start.3|Well, {playername}...
-; dlga_lord_start:lord_generic_mission_completed|Your surgeon managed to convince my friend and made the operation.  All we can do now is pray for his recovery. Anyway, I thank you for lending your surgeon to me, {playername}. You have a noble spirit. I will not forget it.
-; dlga_lord_start:lord_investigate_fangorn_completed0|So, {playername}, you return from Fangorn. What did you find out?
-; dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|The trees are alive! They assault our troops!
-; dlga_lord_investigate_fangorn_completed1:close_window|I suspected that all along. You have been of good service to me, {playername}.
-; dlga_lord_start:close_window|My patience is over. I was expecting you to tell me something about Fangorn by now, but you know nothing.
-; dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|Master, I hereby give you not one, but a pair of beasts!
-; dlga_lord_active_mission_2:lord_capture_troll_completed_one_troll|Master, I subjugated the beast you have asked for!
-; dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|Two beasts! Excellent, {playername}. You proved worthy, and skill and dedication must be rewarded. With your two trolls, We can now make without one of those We were using for Our experiments. It is a fully trained slave, ready to fight under command. We mean YOUR command, {playername}.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_info|Can a savage beast be made to obey commands?
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Thank you, Master. You will be pleased by the way this troll will be put in good use.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Thank you, master. But I'm not worth of your great gift. It is too dangerous for me.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Thank you, master. But I'm not worth of your great gift. [no room in party!]
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Now bring havoc to my enemies with your new gift
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|As you wish, then. Someone else among of my servants will known how to use this mighty tool of war.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|You dare ask for an fully armoured battle troll, {playername}, to keep under your command? That's not a small thing to ask for. But you are a skilled servant, and we know your motivations. We like that. It shall be granted.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|How dare you ask Us for more than We have planned for you in our great Wisdom? {playername}, you proved a mighty Servant today, but don't let your insolence test Our patience any further.
-; dlga_lord_capture_troll_completed_one_troll:close_window|Excellent, {playername}. You are a most faithful and useful servant. This troll will be most useful for our purposes. That it is taken to the dungeons!
-; dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
-; dlga_lord_start:lord_generic_mission_completed.1|News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.
-; dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
+dlga_player_siege_ask_surrender_treatment:player_siege_ask_surrender_treatment_accept|Téged váltságdíjért átadunk, és az embereid élni fognak. A szavamat adom.
+dlga_player_siege_ask_surrender_treatment_accept:close_window|Nagyszerű. Ezen feltételek mellett, megadjuk magunkat.
+dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_accept|A szavamat adom. Ha elhagyjátok a kastélyt, sértetlenül távozhattok.
+dlga_player_siege_ask_leave_unmolested_accept:close_window|Rendben. Akkor átadjuk a kastélyt. Ma te nyertél. De még találkozunk.
+dlga_player_siege_ask_leave_unmolested:player_siege_ask_leave_unmolested_reject|Elfogadhatatlan. Foglyokra van szükségem.
+dlga_player_siege_ask_leave_unmolested_reject:close_window|Akkor az utolsó emberig fogjuk védeni a kastélyt, és ennek a tárgyalásnak ezennel vége. A viszontlátásra.
+dlga_defeat_lord_answer:defeat_lord_answer_1|A foglyom vagy.
+dlga_defeat_lord_answer_1:close_window|A kegyelmedre bízom magam.
+dlga_defeat_lord_answer:defeat_lord_answer_2|Jól küzdöttél. Szabadon távozhatsz.
+dlga_start:party_encounter_lord_hostile_attacker|{játékosnév}!
+dlga_start:party_encounter_lord_hostile_attacker.1|Megállni!
+dlga_party_encounter_lord_hostile_attacker_2:party_encounter_offer_dont_fight|Nem lehetne valahogy ezt a csatát elkerülni? Nem akarok harcolni veled.
+dlga_party_encounter_lord_hostile_attacker_2:close_window|Ne támadj! Megadjuk magunkat.
+dlga_party_encounter_lord_hostile_attacker_2:close_window.1|A végsőkig harcolni fogunk!
+dlga_party_encounter_offer_dont_fight:close_window|Tartozok neked egyel, nemde. Nos... jól van, legyen. Elengedlek, most az egyszer.
+dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. De én harcolni akarok veled.
+dlga_start:close_window.7|El veled, hitvány koldus.
+dlga_start:lord_start|Ez csak nem az én bátor bajnokom, {játékosnév}...
+dlga_start:lord_start.1|Jó újra látni téged, {játékosnév}...
+dlga_start:lord_start.2|Újra találkoztunk, {játékosnév}...
+dlga_start:lord_meet_neutral|Ismernélek?
+dlga_lord_meet_neutral:lord_intro|Én {játékosnév} vagyok.
+dlga_lord_meet_neutral:lord_intro.1|Az én nevem {játékosnév}. Szolgálatodra.
+dlga_lord_meet_enemy:lord_intro|Én {játékosnév} vagyok.
+dlga_lord_meet_enemy:lord_intro.1|Úgy ismernek engem mint {játékosnév}. Jegyezd meg jól, mert még sokat fogod hallani.
+dlga_start:lord_start.3|Nos, {játékosnév}...
+dlga_lord_start:lord_generic_mission_completed|A seborvosod meggyőzte a barátomat és végrehajtotta a beavatkozást.  Nem tehetünk most már többet, mint hogy imádkozunk a felépülésért. Egyébként, köszönöm hogy kölcsönadtad a seborvosodat, {játékosnév}. Nemes szív ver benned. Nem fogom elfelejteni.
+dlga_lord_start:lord_investigate_fangorn_completed0|Szóval, {játékosnév}, visszatértél a Fangorn-erdőből. Mit derítettél ki?
+dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|A fák élnek! Megtámadták a katonáinkat!
+dlga_lord_investigate_fangorn_completed1:close_window|Mindvégig sejtettem. Jó szolgálatot tettél nekem, {játékosnév}.
+dlga_lord_start:close_window|A türelmem elfogyott. Azt reméltem mostanra tudsz nekem valamivel szolgálni a Fangorn-erdőről, de nem tudsz semmit se.
+dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|Mester, ezennel átadok neked nem is egy, hanem egy bestia párt!
+dlga_lord_active_mission_2:lord_capture_troll_completed_one_troll|Mester, leigáztam a bestiát amit kértél tőlem!
+dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|Két bestia! Kiváló, {játékosnév}. Értékesnek bizonyultál, és a képességed és elszántságod jutalmat érdemel. Két troll mellett már nincs Nekünk szükségünk az egyikre, amelyeket korábban Mi használtunk fel a kísérleteinkre. Ez egy teljesen kiképzett rabszolga, és készen áll arra, hogy parancsokat követve harcba bocsátkozzon. És ez alatt Mi úgy értjük, hogy a TE parancsnokságod alatt, {játékosnév}.
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_info|Rálehet venni egy vad bestiát arra hogy parancsokat kövessen?
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Köszönöm, mester. Elégedett leszel azzal, hogy mit fog művelni ez a troll jó kezekben.
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Köszönöm, mester. De nem vagyok méltó a nagyszerű ajándékodra. Túl veszélyes nekem.
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Köszönöm, mester. De nem vagyok méltó a nagyszerű ajándékodra. [nincs elég helyed a csapatodban!]
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Mester, nagyobb pusztítást tudnék okozni ha tudnál adni páncélzatot is a bestiának [10/{reg20} befolyás].
+dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Megkérdőjelezed a Mestered képességeit, {játékosnév}? A bestiát arra képezték ki, hogy megtámadja az ellenfelet, ahogy megpillantja azt. Ennek elégnek kell lennie. De, te és a katonáid jobb ha távolságot tartotok a bestiától, amíg az küzd, és soha ne álljatok közé és az áldozatai közé.
+dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Most menj, és pusztítsd el az ellenfeleimet az új ajándékoddal.
+dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Legyen akkor úgy, ahogy akarod. Valamelyik más szolgám biztos tudni fogja hogyan használja ezt az hatalmas csataeszközt.
+dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Te most egy teljesen felpáncélozott csatatrollt mersz követelni, {játékosnév}, hogy a parancsnokságod alá helyezd? Nem egy kis dolgot kérsz. De te nem egy mindennapi szolga vagy, és ismerem a motivációidat. Ezt Mi szeretjük. Megkapod, amit kérsz.
+dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Hogy mersz Tőlünk többet kérni mint amit Mi odaterveztünk neked adni a Mi végtelen bölcsességünkben? {játékosnév}, ma egy hasznos Szolgának bizonyultál, de ne hagyd hogy a nagyképűséged akár egy pillanattal is tovább próbára tegye a Mi türelmünket.
+dlga_lord_capture_troll_completed_one_troll:close_window|Nagyszerű, {játékosnév}. Te vagy a leghűségesebb és -hasznosabb szolgálóm. Ez a troll remekül fogja szolgálni a céljainkat. Vigyétek a várbörtönbe!
+dlga_lord_start:close_window.1|Megkértelek, már túl régen, hogy hozz nekem egy trollt, élve. De tudhattam volna. Hogy is várhattam el, hogy valaki, mint {játékosnév} készen áll a kihívásra. A szolgálóm nem volt elég ügyes vagy hűséges.
+dlga_lord_start:lord_generic_mission_completed.1|A sikered híre a vad trollok ellen már a fülembe jutottak. {s12}-nak/nek egy dologgal kevesebbtől kel félnie, hála neked, {játékosnév}.
+dlga_lord_start:lord_generic_mission_completed.2|A felderítőink {s12} közelében már beszámoltak a sikeredről. Ebből majd tanulnak, hogy ne merjenek kémkedni utánunk.^^A tábor elpusztítása biztosan majd lelassítja az ellenfeleink előrenyomulását.                                                                 
 ; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
 ; dlga_destroy_scout_camp_failed:close_window|I will do better next time.
 ; dlga_lord_start:lord_generic_mission_completed.3|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
@@ -208,61 +208,61 @@ dlga_start:party_encounter_lord_hostile_attacker|{playername}!
 ; dlga_lord_start:lord_generic_mission_completed.4|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
 ; dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
 ; dlga_raid_village_failed:close_window|I will do better next time.
-; dlga_lord_start:lord_follow_spy_half_completed|Blast and damn you! I wanted TWO prisoners, {playername} -- what you've brought me is one step short of useless! I already know everything the spy knows, it was the handler I was after. Here, half a job gets you half a reward. Take it and begone.
-; dlga_lord_start:lord_follow_spy_half_completed.1|I asked you for two prisoners, {playername}, not one. Two. Still, I suppose you did capture the spy's handler, the more important one of the pair. The spy will not dare return here and will prove quite useless to whatever master he served. 'Tis better than nothing. However, you'll understand if I pay you half the promised reward for what is but half a success.
-; dlga_lord_start:lord_follow_spy_failed|Truly, {playername}, you are nothing short of totally incompetent. Failing to capture both the spy AND his handler plumbs astonishing new depths of failure. Forget any reward I offered you. You've done nothing to earn it.
-; dlga_lord_follow_spy_half_completed:lord_pretalk|I did my best, {s65}.
-; dlga_lord_follow_spy_completed:lord_pretalk|Thank you, {s65}.
-; dlga_lord_follow_spy_failed:lord_pretalk|Hrm. As you like, {s65}.
+dlga_lord_start:lord_follow_spy_half_completed|Átok és kín reád! KÉT foglyot akartam, {játékosnév} -- amit elém hoztál az egy lépésre van a használhatatlantól! Már mindent tudtam amit a kém tudott, engem az összekötője érdekelt. Tessék, fél munkáért fél fizetség jár. Vedd el, és takarodj.
+dlga_lord_start:lord_follow_spy_half_completed.1|Két foglyot kértem tőled {játékosnév}, nem egyet. Kettőt. Ennek ellenére, úgy látszik sikerült elfognod a kém összekötőjét, a pár fontosabb tagját. A kém nem fog merni visszajönni és valószínűleg semmi használhatót nem fog tudni nyújtani, annak az akármilyen mesternek akit szolgált. Több mint a semmi. Bár, meg kell értened hogy csak a felét fizetem az ígért összegnek, a fél munkádért amit végeztél.
+dlga_lord_start:lord_follow_spy_failed|Őszintén, {játékosnév}, nem vagy több mint egy rakás szerencsétlenség. Hagytad meglógni a kémet ÉS az összeköttetőjét is szinte hihetetlenül újabb szintre emeli a bukás fogalmát. Felejts el bármiféle jutalmat, amit ajánlottam neked. Nem tettél semmit azért, hogy kiérdemeld.
+dlga_lord_follow_spy_half_completed:lord_pretalk|Én megtettem minden tőlem telhetőt, {s65}.
+dlga_lord_follow_spy_completed:lord_pretalk|Köszönöm, {s65}.
+dlga_lord_follow_spy_failed:lord_pretalk|Hmm. Ahogy óhajtja, {s65}.
 ; dlga_lord_start:lord_generic_mission_completed.5|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.
-; dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. I have been waiting patiently for my slaves, yet none have returned. Have you an explanation? Were you outwitted by simple animals, or are you merely incompetent?
-; dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Forgive me, {s65}, those slaves were slippery as eels.
-; dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, that is hardly an excuse for failure, {playername}. Now if you will excuse me, I need to capture new men to work these fields before we all starve.
-; dlga_lord_start:lord_runaway_serf_half_completed|You disappoint me, {playername}. There were 3 groups of slaves that I charged you to return. 3. Not {reg17}. I suppose the ones who did come back shall have to work twice as hard to make up for those that got away. As for your reward, {playername}, I'll only pay you for the slaves you returned, not the ones you let fly. Here. Take it, and let this business be done.
-; dlga_lord_runaway_serf_half_completed:lord_pretalk|Thank you, {s65}. You are indeed generous.
-; dlga_lord_runaway_serf_half_completed:lord_pretalk.1|Bah, this proved to be a waste of my time.
-; dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. I am pleased that you delivered {reg13} units of {s4}, as I requested. I'm impressed.
+dlga_lord_start:lord_bring_back_runaway_serfs_failed|{játékosnév}. Türelmesen vártam a a rabszolgáimra, de egyik se tért még vissza. Mik a mentségeid? Átjártak az eszeden egyszerű állatok, vagy egyszerűen te vagy inkompetens?
+dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Bocsásson meg, {s65}, ezek a rabszolgák sikamlósak voltak mint az angolnák.
+dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmm, ez aligha mentség a kudarcodra, {játékosnév}. Most, ha megbocsájtasz, új embereket kell elfognom hogy a földeken dolgozzanak, még mielőtt mind éhen halnánk.
+dlga_lord_start:lord_runaway_serf_half_completed|Csalódást okoztál, {játékosnév}. Három csoportnyi rabszolga visszahozására parancsoltalak. Háromra. Nem {reg17}re. Azt hiszem azoknak, akiket visszahoztál kétszer annyit kell majd dolgozniuk hogy az elszököttek munkáját is elvégezhessék. És a jutalmadról, {játékosnév}, Csak azokért a szolgákért fizetek, akiket visszahoztál, nem azokért, akiket hagytál megszökni. Tessék. Itt van, tedd el és zárjuk le ezt a üzletet.
+dlga_lord_runaway_serf_half_completed:lord_pretalk|Köszönöm, {s65}. Ön igazán nagylelkű.
+dlga_lord_runaway_serf_half_completed:lord_pretalk.1|Eh, ez így időpazarlás volt.
+dlga_lord_start:lord_deliver_cattle_to_army_thank|Áh, {játékosnév}. Elégedett vagyok hogy leszállítottad a {reg13} adagnyi {s4} készletet, ahogy kértem. Le vagyok nyűgözve.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|Nem probléma, {s65}.
-; dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.1|Glad to be of service.
-; dlga_lord_start:lord_scout_waypoints_thank|You make a good scout, {playername}. My runner just brought me your reports of the mission to {s13}, {s14} and {s15}. Well done.
+dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.1|Örömmel szolgáltam.
+dlga_lord_start:lord_scout_waypoints_thank|Jó felderítő vagy, {játékosnév}. A futárom épp odaadta  a jelentéseket a felderítő küldetésedről amit {s13}, {s14} és {s15} körül végeztél. Szép munka.
 dlga_lord_scout_waypoints_thank:lord_pretalk|Egy egyszerű feladat, {s65}.
-dlga_lord_scout_waypoints_thank:lord_pretalk.1|Semmi amit nem bírnék el.
+dlga_lord_scout_waypoints_thank:lord_pretalk.1|Semmi amivel nem bírnék el.
 dlga_lord_scout_waypoints_thank:lord_pretalk.2|Örömmel, uram.
-; dlga_lord_start:lord_mission_told_deliver_cattle_to_army|The army's supplies are dwindling too quickly, {playername}. I need you to bring me {reg3} units of {s4} so I can keep the troops fed. I care very little about where you get them, just bring them to me as soon as you can.
-; dlga_lord_mission_told_deliver_cattle_to_army:lord_mission_told_deliver_cattle_to_army_accepted|Very well, I can find you some {s4}.
+dlga_lord_start:lord_mission_told_deliver_cattle_to_army|A hadseregünk készletei túl gyorsan fogynak, {játékosnév}. Szükségem van {reg3} adagnyi {s4}ra hogy tudjam valamivel etetni a katonákat. Nem igazán érdekel honnan szerzed őket, csak hozd ide őket amilyen hamar csak tudod.
+dlga_lord_mission_told_deliver_cattle_to_army:lord_mission_told_deliver_cattle_to_army_accepted|Természetesen, szerezhetek neked néhány {s4}.
 dlga_lord_mission_told_deliver_cattle_to_army:lord_mission_told_deliver_cattle_to_army_rejected|Sajnálom, uram, más terveim vannak.
-; dlga_lord_mission_told_deliver_cattle_to_army_accepted:close_window|Excellent! You know what to do, {playername}, now get to it. I need that food sooner rather than later.
-; dlga_lord_mission_told_deliver_cattle_to_army_rejected:close_window|That . . . is unfortunate, {playername}. I shall have to find someone else who's up to the task. Please go now, I've work to do.
-; dlga_lord_start:lord_report_to_army_asked|Ah, you have arrived at last, {playername}. We've been expecting you. I hope you have brought with you troops of sufficient number and experience.
-; dlga_lord_report_to_army_asked:lord_report_to_army_completed|I have a company of good, hardened soldiers with me. We are ready to join you.
-; dlga_lord_report_to_army_asked:lord_report_to_army_continue|I don't have the sufficient number of troops yet. I will need some more time.
-; dlga_lord_report_to_army_completed:close_window|Excellent. I will send the word when I have a task for you. For the moment, just follow us and stay close. We'll be moving soon.
-; dlga_lord_report_to_army_continue:close_window|Then you'd better hurry. We'll be moving out soon against the enemy and I need every able hand we can muster.
-; dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, I need a volunteer to scout the area. We're sorely lacking in information, and I simply must have a better picture of the situation before we can proceed. I want you to go to {s13}, {s14} and {s15} and report back whatever you find.
-; dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|You've found your volunteer, sir.
+dlga_lord_mission_told_deliver_cattle_to_army_accepted:close_window|Nagyszerű! Tudod mit kell tenned, {játékosnév}, most menj és tedd meg. Az ételre inkább előbb van szükségem, mint utóbb.
+dlga_lord_mission_told_deliver_cattle_to_army_rejected:close_window|Ez...  igazán kellemetlen, {játékosnév}. Akkor találnom kell valaki mást aki készen áll a feladatra. Kérlek, most menj, vár a munka.
+dlga_lord_start:lord_report_to_army_asked|Áh, végre megérkeztél, {játékosnév}. Már számítottunk rád. Remélem magaddal hoztad a kívánt számú és képzettségű katonát.
+dlga_lord_report_to_army_asked:lord_report_to_army_completed|Magammal hoztam egy jó, harcedzett katonákból álló társaságot. Készen állunk hogy csatlakozzunk hozzád.
+dlga_lord_report_to_army_asked:lord_report_to_army_continue|Még nincs velem a kellő számú katona. Több időre lesz szükségem.
+dlga_lord_report_to_army_completed:close_window|Tökéletes. Majd szólok amikor feladatom lesz számodra. Egyelőre, csak kövess minket és maradj a közelben. Hamarosan indulunk.
+dlga_lord_report_to_army_continue:close_window|Akkor jobb ha sietsz. Hamarosan elindulunk az ellenfeleink ellen, és minden fegyverforgató kézre szükségem lesz akit összetudunk hívni.
+dlga_lord_start:lord_mission_told_scout_waypoints|{játékosnév}, szükségem lesz egy önkéntesre aki felderíti a környéket. Borzalmasan kevés információnk van, és egyszerűen szükségem van arra, hogy jobban átlássam a helyzetet mielőtt továbbmennénk. Azt akarom, hogy körbenézz {s13}, {s14} és {s15} környékén és hogy lejelents akármit is találsz ott.
+dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|Megtalálta az önkéntesét, uram.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_rejected|Attól félek, hogy el kell utasítanom.
-; dlga_lord_mission_told_scout_waypoints_accepted:close_window|Good! Simply pass near {s13}, {s14} and {s15} and check out what's there. Make a note of anything you find and return to me as soon as possible.
+dlga_lord_mission_told_scout_waypoints_accepted:close_window|Jó! Egyszerűen csak menj {s13}, {s14} és {s15} közelébe, és nézd meg hogy mi folyik ott. Jegyezd meg mindent amit ott látsz, és gyere vissza hozzám olyan hamar ahogy az csak lehetséges.
 dlga_lord_mission_told_scout_waypoints_rejected:lord_pretalk|Hm. Csalódott vagyok, {playername}. Nagyon csalódott. Beszélünk még később, most mennem kell hogy találjak valakit aki felderít nekünk.
-; dlga_lord_start:lord_buy_prisoner|I heard that you have captured our enemy {s3} and he is with you at the moment. Good job!^ Leave him to us, there is a lot of information which we need to extract from him...^^[you will earn {reg14} Resource Points of {s14}]
-; dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Well, he is all yours.
+dlga_lord_start:lord_buy_prisoner|Hallottam hogy elfogtad az ellenfelünket, {s3} és hogy itt is van veled. Szép munka!^ Bízd csak ránk, rengeteg információt kell még kinyernünk belőle...^^[te ezért {reg14} erőforrást fogsz kapni, ami {s14}-ban/ben felhasználhatsz]
+dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Nos, ő a tiéd.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Attől félek, hogy más terveim vannak neki.
-; dlga_lord_buy_prisoner_accept:lord_pretalk|Excellent! I'll send my men to take him to our prison with due haste. This will surely help our cause.
-; dlga_lord_buy_prisoner_deny:lord_pretalk|Too bad, he would have been precious for us, {playername}.
-; dlga_lord_start:lord_pretalk|Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there.
+dlga_lord_buy_prisoner_accept:lord_pretalk|Tökéletes! Elküldöm az embereimet, hogy lóhalálában elvigyék a börtönünkbe. Ez egyértelműen szolgálni fogja az ügyünket.
+dlga_lord_buy_prisoner_deny:lord_pretalk|Kár, pedig igazán értékes lett volna a számunkra, {játékosnév}.
+dlga_lord_start:lord_pretalk|Áh, üdvözöllek, {s24}.^Biztos tudod már, hogy {s12}. A feladatod az, hogy küzdj az ügyünkért, {játékosnév}. Miután kiérdemled a bizalmamat [szint {reg1}], azt is megfogom engedni, hogy használhasd azt a ládát.
 dlga_lord_start:lord_talk|Mi az?
 dlga_lord_pretalk:lord_talk|Volna még más is?
-; dlga_lord_talk:lord_lend_companion_end|I should like {s14} returned to me, {s65}, if you no longer require {reg3?her:his} services.
-; dlga_lord_lend_companion_end:lord_pretalk|You've too many men in your company already, {playername}. You could not lead any more at the moment.
-; dlga_lord_lend_companion_end:lord_pretalk.1|Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.
-; dlga_lord_talk:lord_message_delivered|I bring a message from {s9}.
-; dlga_lord_talk:lord_message_delivered_enemy|I bring a message from {s9}.
+dlga_lord_talk:lord_lend_companion_end|Szeretném ha {s14} visszakerülne hozzám, {s65}, ha nincs szükséged továbbiakban az {reg3?ő} szolgálatára.
+dlga_lord_lend_companion_end:lord_pretalk|Túl sok ember van a csapatodban, {játékosnév}. Nem tudsz többet hadba vezetni jelenleg.
+dlga_lord_lend_companion_end:lord_pretalk.1|Természetesen, {játékosnév}. {reg3?Ő} egy igazán zseniális {reg3?lány:fickó}, szerencsés egy parancsnok vagy hogy ilyen értékes társaid vannak.
+dlga_lord_talk:lord_message_delivered|Üzenetet hoztam {s9}-tól/től.
+dlga_lord_talk:lord_message_delivered_enemy|Üzenetet hoztam {s9}-tól/től.
 dlga_lord_talk:lord_active_mission_1|Aprapó a feladat amit adtál nekem...
-; dlga_lord_talk:lord_request_mission_ask|Do you have any tasks for me?
-; dlga_lord_talk:find_lost_spears_permission|My lord, I wish to enter into the lonely mountains, in search of King Bladorthin's lost spears.
-; dlga_find_lost_spears_permission:lord_pretalk|I already gave you permission, {playername}.
-; dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Alright, {playername}, you may enter into the mountains.
-; dlga_find_lost_spears_permission:lord_pretalk.1|I'm sorry, but I don't know or trust you well enough, {playername}.
-; dlga_find_lost_spears_permission_yes:lord_pretalk|I thank you, my Lord.
+dlga_lord_talk:lord_request_mission_ask|Van valamilyen feladatod számomra?
+dlga_lord_talk:find_lost_spears_permission|Jóuram, engedélyt szeretnék kérni arra, hogy beléphessek a Magányos-hegybe, hogy megkereshessem Bladorthin király elveszett lándzsáit.
+dlga_find_lost_spears_permission:lord_pretalk|Már engedélyt adtam rá, {játékosnév}.
+dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Rendben van, {játékosnév}, beléphetsz a hegyekbe.
+dlga_find_lost_spears_permission:lord_pretalk.1|Sajnálom, de nem ismerlek vagy bízok meg benned eléggé, {játékosnév}.
+dlga_find_lost_spears_permission_yes:lord_pretalk|Köszönöm, jóuram.
 ; dlga_lord_talk:tell_dorwinion_sack|My lord, I found a sack with a fading emblem of grapes and some shards of wood and metal inside that could have belong to a spear.
 ; dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Very interesting. This ancient sack could have born the mark of the finest wines that could only come from Dorwinion.
 ; dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|I also found this Rhun helm in the sack. Could this tell us more about what happened to the Spears?
@@ -300,75 +300,75 @@ dlga_lord_talk:lord_active_mission_1|Aprapó a feladat amit adtál nekem...
 ; dlga_beorn_message2:beorn_message_end|Yes, the message mentioned the lair and we sent scouts towards it. We saw them burn it down and leave towards Mordor...If you went there first, you may not have been able to help us. We are truly grateful for your victory
 ; dlga_beorn_message_end:beorn_message_close|Then I must report back and tell {s1} what has transpired here. Go back to your village and prepare scouts. There may be stragglers.
 ; dlga_beorn_message_close:close_window|Yes, General. We will remain vigilant. We will continue our efforts to recruit more men from surrounding villages. Your victory today has inspired us all.
-; dlga_lord_give_troops:lord_give_troops_check|Reinforce my party? I can always use a few more soldiers.
-; dlga_lord_give_troops:lord_pretalk|Unfortunately you don't have any {s14} soldiers to reinforce me with.
-; dlga_lord_give_troops_check:lord_give_troops_check_1|Let me check the soldier roster...
-; dlga_lord_give_troops_check_1:lord_pretalk|So you've changed your mind...^I see.
-; dlga_lord_give_troops_check_1:lord_pretalk.1|I don't have use for those troops here...^Take them back.
-; dlga_lord_talk:lord_get_reward_item_ask|I want to request a special item.
-; dlga_lord_get_reward_item_ask:lord_talk|Seems like you have no place in your inventory for anything else. Make some room, then return.
-; dlga_lord_get_reward_item_ask:lord_get_reward_item|Really? Remember that you need to hold a certain rank and command considerable influence to deserve special items.^What can I give you?
-; dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [costs {reg14}/{reg15} Influence]
-; dlga_lord_get_reward_item:lord_pretalk|Never mind then.
-; dlga_lord_get_reward_item_answer:lord_pretalk|Very well. May you use it to vanquish our enemies.
-; dlga_lord_talk:marshall_ask|I would like to have a council with you about the War.
-; dlga_marshall_ask:lord_pretalk|I would hardly take advice if you are merely {s25}, {playername}. I would have been more inclined to listen if you were {s24}, but you are not.
-; dlga_marshall_ask:lord_pretalk.1|You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]
-; dlga_marshall_ask:lord_pretalk.2|We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.
-; dlga_marshall_ask:lord_pretalk.3|We are on a campaign, {playername}, your advice would have to wait.
-; dlga_marshall_ask:marshall_suggest|I'm listening, {playername}. What do you suggest?
-; dlga_marshall_suggest:marshall_answer|We should ride to besiege {s1} at once.
-; dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.
-; dlga_marshall_answer:close_window|Very well, {playername}, I shall defer to your judgement. I shall send messengers to gather our forces.^Follow me and stay close - we ride to {s4}!
-; dlga_lord_talk:deliver_gift_1|I bring a gift of {s1} from {s3} to the people of {s2}.
-; dlga_send_gift_1:lord_pretalk|You are already {s4}, {playername}. It would be wise to deliver that one first.
-; dlga_send_gift_1:lord_pretalk.1|Unfortunately, you cannot afford to send a gift right now {playername}.^^[not enough Resource Points]
-; dlga_send_gift_1:send_gift_2|Very well. To whom would you like to deliver a gift?
-; dlga_send_gift_1:send_gift_2.1|Very Well. Who do you want to give a bribe to?
-; dlga_send_gift_2:lord_pretalk|Nevermind.
-; dlga_send_gift_3:send_gift_4|Which gift would you like to give to them?
-; dlga_send_gift_3:send_gift_4.1|What bribe do you want to give them?
-; dlga_send_gift_4:lord_pretalk|Nevermind.
-; dlga_send_gift_5:lord_pretalk|All right {playername}. Good Luck.
-; dlga_lord_talk:lord_give_order_ask|I have a new task for you.
+dlga_lord_give_troops:lord_give_troops_check|Megerősíteni a csapatomat? Mindig tudok kezdeni valamit több katonával.
+dlga_lord_give_troops:lord_pretalk|Sajnálatos módon nincs több {s14} olyan katonád akit magam mellé tudnék venni.
+dlga_lord_give_troops_check:lord_give_troops_check_1|Hadd ellenőrizzem a katonák listáját...
+dlga_lord_give_troops_check_1:lord_pretalk|Szóval, meggondoltad magad...^Értem.
+dlga_lord_give_troops_check_1:lord_pretalk.1|Nincs szükségem ezekre az egységekre...^Vedd őket vissza.
+dlga_lord_talk:lord_get_reward_item_ask|Szeretnék kérni egy különleges tárgyat.
+dlga_lord_get_reward_item_ask:lord_talk|Úgy látszik nincs több hely az eszköztáradban. Szabadítsd fel némi helyet, aztán gyere vissza.
+dlga_lord_get_reward_item_ask:lord_get_reward_item|Tényleg? Emlékezz rá, hogy szükséged van egy bizonyos rangfokozatra, és bírnod kell bizonyos befolyással hogy különleges tárgyakat kaphass.^Mit adhatok neked?
+dlga_lord_get_reward_item:lord_get_reward_item_answer|{s24}: {s20} [kerül {reg14}/{reg15} befolyásba]
+dlga_lord_get_reward_item:lord_pretalk|Akkor mindegy.
+dlga_lord_get_reward_item_answer:lord_pretalk|Legyen így. Használd arra, hogy eltöröld vele ellenségeinket.
+dlga_lord_talk:marshall_ask|Szeretnék önnel tanácskozni a háború menetéről.
+dlga_marshall_ask:lord_pretalk|Aligha fogadnék el tanácsot egy hétköznapi {s25}, {játékosnév}. Előbb hallgatnék rád ha {s24} lennél, de nem vagy.
+dlga_marshall_ask:lord_pretalk.1|Te egy sikeres parancsnok vagy, {játékosnév}, de a befolyásod egyre csak csökken. Nem lenne túlzottan átgondolt dolog hallgatni a tanácsodra.^[{reg15} pontnyi befolyásra van szükséged, neked csak {reg14} van]
+dlga_marshall_ask:lord_pretalk.2|Aligha engedhetnénk meg magunknak hogy megütközzünk az ellenséggel, {játékosnév}. Még mindig szükségünk van arra hogy növeljük a haderőnket és erősek legyünk, ejj, hiszen alig vagyunk {s23}.
+dlga_marshall_ask:lord_pretalk.3|Egy hadkampány közepén vagyunk, {játékosnév}, a tanácsodnak várnia kell.
+dlga_marshall_ask:marshall_suggest|Figyelek, {játékosnév}. Mi a javaslatod?
+dlga_marshall_suggest:marshall_answer|Azonnal {s1} ostromára kéne lovagolnunk.
+dlga_marshall_suggest:lord_pretalk|Nem fontos, megbízok az ítéletedben.
+dlga_marshall_answer:close_window|Nagyon jó, {játékosnév}, meghajlok az ítéleted előtt. Szétküldöm a hírnököket, hogy összehívják a csapatainkat.^Kövess és maradj közel - {s4}-ba/be lovagolunk!
+dlga_lord_talk:deliver_gift_1|Ajándékot hoztam {s3}i {s1}-tól/től {s2} népének.
+dlga_send_gift_1:lord_pretalk|Te már {s4}, {játékosnév}. Bölcs dolog lenne előbb leszállítanod azt.
+dlga_send_gift_1:lord_pretalk.1|Sajnálatos módon nem tudod megengedni magadnak hogy ajándékot küldj valakinek, {játékosnév}.^^[nincs elég erőforrás pontod]
+dlga_send_gift_1:send_gift_2|Nagyon jó. Kinek akarsz ajándékot küldeni?
+dlga_send_gift_1:send_gift_2.1|Nekem jó. Kit is akarsz megvesztegetni?
+dlga_send_gift_2:lord_pretalk|Mindegy.
+dlga_send_gift_3:send_gift_4|Melyik ajándékot szeretnéd elküldeni nekik?
+dlga_send_gift_3:send_gift_4.1|Mivel akarod megvesztegetni őket?
+dlga_send_gift_4:lord_pretalk|Mindegy.
+dlga_send_gift_5:lord_pretalk|Rendben van, {játékosnév}. Sok szerencsét.
+dlga_lord_talk:lord_give_order_ask|Egy új feladatom van számodra.
 dlga_lord_give_order_ask:lord_give_order|Igen?
-; dlga_lord_give_order:lord_give_order_answer|Follow me. [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask|Go to... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask.1|Patrol around... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask.2|Engage enemies around... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_stop|I won't need you for some time. You are free to do as you like.
-dlga_lord_give_order:lord_pretalk|Semmiség.
-; dlga_lord_give_order_details_ask:lord_give_order_details|Where?
-dlga_lord_give_order_details:lord_pretalk|Semmiség.
-; dlga_lord_give_order_stop:lord_pretalk|All right. I will do that.
-; dlga_lord_give_order_answer:lord_pretalk|I am sorry. I am needed somewhere else at the moment.
-; dlga_lord_give_order_answer_2:close_window|I will do that.
-; dlga_lord_give_order_answer_2:lord_pretalk|I am sorry, it is not possible for me to do that.
-; dlga_lord_talk:lord_talk_ask_something|I wish to ask you something.
-; dlga_lord_talk_ask_something:lord_talk_ask_something_2|Aye? What is it?
-; dlga_lord_talk_ask_something_2:lord_talk_ask_location|I want to know the location of someone.
-; dlga_lord_talk_ask_something_2:lord_tell_objective|What are you and your men doing?
-; dlga_lord_talk_ask_something_2:lord_talk_ask_about_war|How goes the war?
-dlga_lord_talk_ask_something_2:lord_pretalk|Semmiség.
-; dlga_lord_talk_ask_location:lord_talk_ask_location_2|Very well, I may or may not have an answer for you. About whom do you wish to hear?
-dlga_lord_talk_ask_location_2:lord_pretalk|Semmiség.
-; dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Tell me more about the war with {s1}.
-; dlga_lord_talk_ask_about_war_2:lord_pretalk|That's all I wanted to know. Thank you.
-; dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|We are {s22} and they are {s23}. Overall, {s9}.
-; dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|Today is a good day for battle, {s4}!
-; dlga_lord_tell_objective:lord_pretalk|What am I doing? What does it look like I'm doing?! I'm a prisoner here!
-; dlga_lord_tell_objective:lord_pretalk.1|I am not commanding any men at the moment.
-; dlga_lord_tell_objective:lord_pretalk.2|We are resting at {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.3|We are travelling to {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.4|We are recruiting new soldiers from {s1}.
-; dlga_lord_tell_objective:lord_pretalk.5|We are scouting for the enemy around {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.6|We are laying waste to the village of {s1}.
-; dlga_lord_tell_objective:lord_pretalk.7|We are retreating to {s1}.
-; dlga_lord_tell_objective:lord_pretalk.8|We are besieging {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.9|We are fighting against {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.10|We are accompanying {s1}{s5}.
-; dlga_lord_tell_objective:lord_pretalk.11|We are reconsidering our next objective.
-; dlga_lord_tell_objective:lord_pretalk.12|I don't know: {reg1} {s1}
+dlga_lord_give_order:lord_give_order_answer|Kövess. [{reg1}/{reg2} befolyásba kerül]
+dlga_lord_give_order:lord_give_order_details_ask|Menj el... [{reg1}/{reg2} befolyásba kerül]
+dlga_lord_give_order:lord_give_order_details_ask.1|Járőrözz körbe... [{reg1}/{reg2} befolyásba kerül]
+dlga_lord_give_order:lord_give_order_details_ask.2|Támadd meg... [{reg1}/{reg2} befolyásba kerül]
+dlga_lord_give_order:lord_give_order_stop|Egy ideig nem lesz szükségem a szolgálatodra. Tégy úgy ahogy akarsz.
+dlga_lord_give_order:lord_pretalk|Hagyjuk.
+dlga_lord_give_order_details_ask:lord_give_order_details|Merre?
+dlga_lord_give_order_details:lord_pretalk|Hagyjuk.
+dlga_lord_give_order_stop:lord_pretalk|Rendben van. Így fogok tenni.
+dlga_lord_give_order_answer:lord_pretalk|Sajnálom. Valahol máshol van rám szükség.
+dlga_lord_give_order_answer_2:close_window|Így fogok tenni.
+dlga_lord_give_order_answer_2:lord_pretalk|Sajnálom, ez nem lehetséges számomra.
+dlga_lord_talk:lord_talk_ask_something|Szeretnék kérdezni tőled valamit.
+dlga_lord_talk_ask_something:lord_talk_ask_something_2|He? Mi lenne az?
+dlga_lord_talk_ask_something_2:lord_talk_ask_location|Szeretném tudni valakinek a tartózkodási helyét.
+dlga_lord_talk_ask_something_2:lord_tell_objective|Mit tesznek Ön és az emberei?
+dlga_lord_talk_ask_something_2:lord_talk_ask_about_war|Hogy áll a háború?
+dlga_lord_talk_ask_something_2:lord_pretalk|Hagyjuk.
+dlga_lord_talk_ask_location:lord_talk_ask_location_2|Legyen, talán fogok válaszolni a kérdésedre, talán nem. Kiről szeretnél hallani?
+dlga_lord_talk_ask_location_2:lord_pretalk|Hagyjuk.
+dlga_lord_talk_ask_about_war_2:lord_talk_ask_about_war_details|Mondj nekem többet a {s1} elleni háborúról.
+dlga_lord_talk_ask_about_war_2:lord_pretalk|Ez mind amit tudni akartam. Köszönöm.
+dlga_lord_talk_ask_about_war_details:lord_talk_ask_about_war_2|Mi {s22} és ők {s23}. Összefoglalva, {s9}.
+dlga_lord_talk:party_encounter_lord_hostile_ultimatum_surrender|A mai nap egy jó nap a csatára, {s4}!
+dlga_lord_tell_objective:lord_pretalk|Mit csinálok? Minek tűnik, mit csinálok?! Egy fogoly vagyok!
+dlga_lord_tell_objective:lord_pretalk.1|Én nem parancsolok senkinek se jelenleg.
+dlga_lord_tell_objective:lord_pretalk.2|Mi pihenünk {s1}{s5}-nál/nél.
+dlga_lord_tell_objective:lord_pretalk.3|Mi épp {s1}{s5}-ba/be utazunk.
+dlga_lord_tell_objective:lord_pretalk.4|Mi épp új katonák toborzunk {s1}-ból/ből.
+dlga_lord_tell_objective:lord_pretalk.5|Mi épp az ellenfélnél derítünk fel {s1}{s5}.
+dlga_lord_tell_objective:lord_pretalk.6|Mi épp felgyújtjuk és kifosztjuk {s1} faluját.
+dlga_lord_tell_objective:lord_pretalk.7|Mi épp visszavonulunk {s1}-ba/be.
+dlga_lord_tell_objective:lord_pretalk.8|Mi épp ostrom alá vettük {s1}{s5}-at/et.
+dlga_lord_tell_objective:lord_pretalk.9|Mi épp {s1}{s5} ellen küzdünk.
+dlga_lord_tell_objective:lord_pretalk.10|Mi épp {s1}{s5} társaságát kísérjük.
+dlga_lord_tell_objective:lord_pretalk.11|Mi épp a következő lépésünkön tanakodunk.
+dlga_lord_tell_objective:lord_pretalk.12|Nem tudom: {reg1} {s1}
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on it's way to a village near {s12}.
 ; dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Are you able to send men?
 ; dlga_lord_mission_defend_village_b:lord_mission_defend_question|We can, but it will take time to mobilize. We fear that we may be too late when we do. ^^You and your men seem able to ride out quickly. Can you defend this village?
@@ -381,186 +381,186 @@ dlga_lord_talk_ask_location_2:lord_pretalk|Semmiség.
 ; dlga_lord_mission_raid_village_a:lord_raid_village_reject|I do not have the time to raid puny villages!
 ; dlga_lord_raid_village_accept:close_window|Then what are you doing standing around here?
 ; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting
-; dlga_lord_active_mission_1:lord_mission_sorcerer_completed|The sorcerer of Mirkwood has been slain, my Lady.
-; dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Forgive me, my Lady, but urgent matters have prevented me from slaying the sorcerer, and in the meantime he has fled.
-; dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|The sorcerer of Mirkwood still lives. We interrupted his rituals but he has fled.
-; dlga_lord_mission_sorcerer_completed:lord_pretalk|Yes {playername}, I had sensed his death. The veil of sorcery has been lifted from the wood and much of my power has returned. You have performed a great service for our people and as such you are entitled to a gift. Take this...
-; dlga_lord_mission_sorcerer_failed:lord_pretalk|Yes {playername}, I sense the dark arts of enemy still pressing upon us. His efforts seem greater now. It is unfortunate that you could not stop him. No doubt he will take additional precautions in future to ward against our efforts. He will likely never be found while Dol Guldur still stands. Thank you for your efforts but leave me now. I grow tired.
-; dlga_lord_active_mission_1:lord_lend_companion_end|Oh, you want your companion back? I see...
-; dlga_lord_active_mission_1:lord_pretalk|{playername}, I must beg your patience, I still have need of your companion. Please return later when things have settled.
-; dlga_lord_active_mission_1:lord_active_mission_2|Yes, have you made any progress on it?
-; dlga_lord_active_mission_2:lord_generic_mission_thank|Indeed. I brought you {reg1} prisoners.
-; dlga_lord_active_mission_2:lord_generic_mission_thank_extra|Why, I have brought you {reg2} prisoners, in case {reg1} are not enough.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.1|Indeed. I have rescued {reg1} allied prisoners and they joined my party.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.2|Indeed. I have scouted {s13}.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.3|Indeed. I have dispatched the scouts.
-; dlga_lord_active_mission_2:lord_generic_mission_thank.4|Indeed. I have defeated enough enemy parties.
-; dlga_lord_active_mission_2:capture_enemy_hero_thank|Oh, indeed. I've captured an enemy commander for you.
-; dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Many thanks, my friend. He will serve very well for questioning. You've done a fine work here.
-; dlga_capture_enemy_hero_thank_2:lord_pretalk|Certainly, {s65}.
-; dlga_capture_enemy_hero_thank_2:lord_pretalk.1|It was nothing.
-; dlga_lord_active_mission_2:lord_raise_troops_thank|Indeed. I have raised {reg1} {s13}. You can take them.
-; dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|I found {s4} hiding in {s3} and gave him his punishment.
-; dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|I'm afraid he got away.
-; dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|And we'll all be a lot better off without him! Thank you, {playername},  for removing this long-festering thorn from my side. 'Tis good to know you can be trusted to handle things  with an appropriate level of tactfulness.  I've sent a note to our intendants already, and you can count on additional supplies from us.
-; dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|Thank you, {s65}.
-; dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|I'll notify our intendants of your service, {playername}. Once again, you've my thanks for ridding me of that {s44}.
-; dlga_lord_hunt_down_fugitive_fail:lord_pretalk|It is a sad day when that {s44} manages to avoid my grasp yet again. I thought you would be able to do this, {playername}. Clearly I was wrong.
-; dlga_lord_active_mission_2:lord_active_mission_3|I am still working on it.
-; dlga_lord_active_mission_2:lord_mission_failed|I am afraid I won't be able to do this quest.
-; dlga_lord_active_mission_3:lord_pretalk|Good. Remember, I am counting on you.
-; dlga_lord_request_mission_ask:lord_pretalk|You still haven't finished the last task I gave you, {playername}. You should be working on that, not asking me for other things to do.
-; dlga_lord_request_mission_ask:lord_pretalk.1|I don't have any other task for you right now.
-; dlga_lord_request_mission_ask:lord_tell_mission|A task?
-; dlga_lord_tell_mission:lord_mission_capture_troll_1|You are a brave servant, {playername}, and we will give you a glimpse of our plans. We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strengthen our own breeds of colossal warriors!
-; dlga_lord_mission_capture_troll_1:lord_mission_capture_troll_2|How can I serve, Master?
-; dlga_lord_mission_capture_troll_2:lord_mission_capture_troll_3|A wild cave troll, {playername}. Capture one strong exemplar for me and bring it to me, alive. We need one more of them for Our experiments! Two, would be better. The more we have, the better.
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoa|Where can such a beast be found?
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infob|How can such a beast be captured?
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoc|How can such a beast be transported to you?
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_accepted|You shall have your wild troll, Master.
-; dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_rejected|Mercy, Master! That beast will smash me like a bug!
-; dlga_lord_mission_capture_troll_infoa:lord_mission_capture_troll_3|In these time of blood and shadows, wild cave trolls are growing excited and they are spreading from their lairs in the Misty Mountains... the best place where to look would be around the caves there.
-; dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|You shall find one, and take it down in combat. Fear not of killing it during the fight: a troll is too coriaceous a beast for your weapons to kill it right away... and they do recover, more than you would expect. After it falls over its own black blood, you shall carry it to our feet, still breathing.
-; dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|You will be provided with a robust wheeled cage. It harbours more than enough space for a troll, and it can be pulled around. Hasten your steps on the way back: not even the metal of the cage is totally safe against the fury of a troll blinded by rage and pain. Make sure it does not break free and kill you.
-; dlga_lord_mission_capture_troll_rejected:lord_pretalk|Only now you reveal what you are really worth, but I knew that of you all along. Weak, coward {playername}. Now begone.
-; dlga_lord_mission_capture_troll_accepted:lord_pretalk|I knew I could count on your strength and bravery. Slaves, give to {playername} one of our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.
-; dlga_lord_tell_mission:lord_tell_mission_kill_troll|Our land is facing dangers that were unheard of in our times. People are disappearing in the outskirts of {s3}. Not only commoners, but even small armed groups who venture outside the walls never return. There have been the strangest rumors, but I know what we are facing.
-; dlga_lord_tell_mission_kill_troll:lord_mission_told|Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I don't know what witchery has caused this, but I need that thing to be dispatched.
-; dlga_lord_mission_told:lord_mission_kill_troll_info_a|How can those beasts be fought?
-; dlga_lord_mission_kill_troll_info_a:lord_mission_told|A troll is a dangerous creature indeed. A giant monster which possesses an incredible strength in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wielded in their hands. It is rumored that a single troll can easily best a group of half a dozen well armed and trained men, wasting each of them with a single blow. Not only men but horses too fear trolls. Be careful if you plan to charge one while mounted.
-; dlga_lord_mission_told:lord_mission_kill_troll_info_b|Do you think it comes from Mordor, or Isengard?
-; dlga_lord_mission_kill_troll_info_b:lord_mission_told|No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember, there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.
-; dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|Here is a mission for a trusted and brave servant like you, {playername}. The strangest rumors reach my ears from the forest of Fangorn. Minions sent to harvest wood, and even my commanders traversing the place, occasionally fail to return. Other times, they report of mysterious losses among their troops. They blame ghosts, spirits of the wood, ancient curses... Nonsense! Puny excuses for their own cowardice or ineptitude!
-; dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_1|What do you command me to do about it, Master?
-; dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_rejected|But Master, there is danger and pain in Fangorn! I've felt it myself!
-; dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|Maybe it is just that my other servants are unable to prevent the most cowardly worms in their troops from deserting.  Fools, blinded by superstitions.   Or, maybe, it is the treacherous ambushes of elven scum, hiding in the putrid trees as they usually do.   It could even be lowborn traitors from Rohan.  Or who knows what else. I want you to find out, {playername}.
-; dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepted|I fear no elves or spirit. Leave this to me, Master.
-; dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|Master, pity your servant! Don't ask me to venture in that cursed place!
-; dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|So you are like the other worms: a superstitious, worthless coward.  I overestimated you. Now, begone!
-; dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|Good. Go there and shed some light on this matter. Then return to me and report. I expect to see you back with news before {reg1} dawns are passed.
-; dlga_lord_tell_mission:lord_mission_find_lost_spears|Here is a mission for a trusted and brave commander like you, {playername}. We are ill equipped to fight off the Rhun hordes. Our armies are losing battles one by one. A legend tells that once upon a time, there were spears made by Dwarves for the armies of the great King Bladorthin (long since dead), each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..
-; dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|What do you command me to do about it, my lord?
-; dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|These weapons would increase the effectiveness of our armies, but above all they will lift the spirits of our men. You'll have to find these spears. You'll have to go ask the dwarves for permission to search for the spears in the deeps of the Lonely Mountain. Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?
-; dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|I fear no orcs nor trolls! I will find these spears for you, my lord.
-; dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|I'm afraid I can't help you, my lord.
-; dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|I see that discretion is the better part of your valor. Maybe you should stick to scouting duties.
-; dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Good luck then!
-; dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|There is an important service you can deliver to our people, {playername}.
-; dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. Though he is a mortal, he has become one of the enemies greatest pupils in the use of arcane rituals and he represents a great threat to our people. You must hunt him down and destroy him!
-; dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Where can I find the sorcerer, my Lady?
-; dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Search for him in Mirkwood forest, not far from Dol Guldur itself. He is both a well guarded and a cautious foe so you will need to use stealth to prevent the alarm from being raised. If he escapes, he will relocate to other dark places that we know not of and continue his wickedness unchallenged. There will be only one opportunity to defeat him. Much depends on your success. Go with our blessings.
-; dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|As you command, my Lady. I will try my best to eliminate this evil.
-; dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.
-; dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.
-; dlga_lord_tell_mission:lord_mission_deliver_message|I need to send a letter to {s13} who should be currently at {s4}. If you will be heading towards there, would you deliver it to him? The letter needs to be in his hands in 30 days.
-; dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certainly, I intend to pass by {s4} and it would be no trouble.
-; dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|I doubt I'll be seeing {s13} anytime soon, {s65}. You'd best send it with someone else.
-; dlga_lord_mission_deliver_message_accepted:close_window|I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see him.
-; dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah, all right then. Well, I am sure I will find someone else.
-; dlga_lord_tell_mission:lord_mission_deliver_message.1|I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently. If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.
-; dlga_lord_tell_mission:lord_mission_told|There is an urgent matter... My messenger is due to report on our battle plans to commanders in {s14}. His trip has been postponed several times already with all the trouble on the roads, but this time he must get through. So, I want to at least make sure he's well-guarded. I trust you well, {playername} so I would be very grateful if you could escort him to {s14} and make sure he arrives safe and sound.
-; dlga_lord_tell_mission:lord_mission_told.1|I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look, {reg3?she:he} may be able to convince him to give his consent to an operation.Please, I will be deeply indebted to you if you grant me this request.
-; dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|How many men do you need?
-; dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|If you can raise {reg1} {s14} and bring them to me, that will probably be enough.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Of course, {s65}. Give me {reg1} fresh recruits and I'll train them to be {s14}.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|I am too busy these days to train anyone.
-; dlga_lord_mission_raise_troops_accepted:close_window|You've taken a weight off my shoulders, {playername}. I shall tell my sergeants to send you the recruits and attach them to your command. Also, I'll advance you some money to help with expenses. Here, this purse should do it. Thank you for your help.
-; dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, of course. I had expected as much. Well, good luck to you then.
-; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There were news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
-; dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Then I will hunt him down and execute the law.
-; dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|I am too busy to go after him at the moment.
-; dlga_lord_mission_hunt_down_fugitive_accepted:close_window|That's excellent, {playername}.  I will be grateful, and of course your prowess wil be duly noted.  Well, good hunting to you.
-; dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|As you wish, {playername}.I suppose there are plenty of bounty hunters around to get the job done . . .
-; dlga_lord_tell_mission:lord_mission_told.2|Well, some of the slaves working in {s4} have run away.  The ungrateful swine, whose lives we spared!  From what I've been hearing, they're running to {s3} as fast as they can, and have split up into three groups to try and avoid capture. I want you to capture all three groups and fetch them back to {s4} by whatever means necessary. I should really have them hanged for attempting to escape, but we need hands now, so I'll let them go off this time with a good beating.
-; dlga_lord_tell_mission:lord_tell_mission_follow_spy|I have good information that a man in this very town is actually an enemy spy. He should be seized and hanged for his impudence, but we also believe that very soon he will leave town to meet with his master, the man to whom the spy feeds all his little whispers. The spy himself is of little import, but the master is a dangerous man, and could tell us a great deal if we could only get our hands on him...
-; dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|I want you to wait here until the spy leaves town. Then you must follow him, stealthily, to the meeting place. You must take absolute care not to be seen by the spy on your way, else he may suspect foul play and turn back. When the master appears, you must ambush and arrest them and bring the pair back to me. Alive, if you please.
-; dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|I'll do it, {s65}.
-; dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|No, this skulking is not for me.
-; dlga_lord_tell_mission_follow_spy_accepted:close_window|Good, I'm sure you'll do a fine job of it. One of my men will point the spy out to you when he leaves, so you will know the man to follow. Remember, I want them both, and I want them alive.
-; dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|A shame. Well, carry on as you were, {playername}...
-; dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|There is a difficult job I need done, {playername}, and you may be the one who can carry it off. I need someone to capture one of the enemy commanders and bring him to me. Afterwards, I'll be able to question him on the enemy battle plans. It is a simple enough job, but whomever you choose will be guarded by an elite band of personal retainers. Are you up for a fight?
-; dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_accepted|Consider it done, {s65}.
-; dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_rejected|I must refuse, {s65}. I don't want to get close to any of them.
-; dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|I like your spirit! Go and bring me one of our enemies, and I'll toast your name in my hall when you return! And reward you for your efforts, of course...
-; dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Clearly you lack the mettle I had thought you possessed. Very well, {playername}, I will find someone else.
-; dlga_lord_tell_mission:lord_tell_mission_lend_companion|I don't have a task for you right now, but your companion {s3} is a skilled {reg3?lass:fellow} and I need someone with {reg3?her:his} talents. Will you lend {reg3?her:him} to me for a while?
-; dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|How long will you be needing {reg3?her:him}?
-; dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|Just a few days, a week at most.
-; dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|Then I will leave {s3} with you for one week.
-; dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|I am sorry, but I cannot do without {s3} for a whole week.
-; dlga_lord_tell_mission_lend_companion_accepted:close_window|I cannot thank you enough, {playername}. Worry not, your companion shall be returned to you with due haste.
-; dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|Well, that's damned unfortunate, but I suppose I cannot force you or {s3} to agree. I shall have to make do without.
-; dlga_lord_tell_mission:lord_mission_told.3|Our scouts have noticed a recent increase in enemy activity. Unfortunately they almost never succeed in capturing live prisoners and bring them in for questioning, so we can piece together what the enemy is up to. So, I need a good warrior to find me {reg1} enemy prisoners, that I may question them.
-; dlga_lord_tell_mission:lord_pretalk|No, {playername}. I do not need your help at this time.
-; dlga_lord_mission_told:lord_mission_accepted|You can count on me, {s65}.
-; dlga_lord_mission_told:lord_mission_rejected|I fear I cannot accept such a mission at the moment.
-; dlga_lord_mission_accepted:close_window|Excellent, {playername}, excellent. I have every confidence in you.
-; dlga_lord_mission_rejected:close_window|Is that so? Well, I suppose you're just not up to the task. I shall have to look for somebody with more mettle.
-; dlga_lord_talk:lord_leave_prison|I must leave now.
-; dlga_lord_talk:lord_leave|This little chat is over. I leave now.
+dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Bakacsinerdő varázslóját utolérte a végzete, Hölgyem.
+dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Bocsásson meg, Hölgyem, de a sürgős ügyeim távol tartottak attól hogy végezzek a varázslóval, és időközben elmenekült.
+dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Bakacsinerdő varázslója még mindig él. Megszakítottuk a szertartását, de elmenekült.
+dlga_lord_mission_sorcerer_completed:lord_pretalk|Igen {játékosnév}, éreztem a halálát. A varázslatának a leple felemelkedett az erdőről és a hatalmam java része visszatért. Nagy szolgálatot tettél a népünknek és ezért jutalmat érdemelsz. Ez a tiéd...
+dlga_lord_mission_sorcerer_failed:lord_pretalk|Igen {játékosnév}, érzem hogy ellenfelünk sötét praktikái továbbra is nyomást gyakorolnak ránk. Erőfeszítései erősebbek tűnnek. Sajnálatos dolog hogy nem tudtad megállítani. Kétség sem fér hozzá hogy további óvintézkedéseket fog tenni a jövőben az ellen hogy megállítsunk. Valószínűleg sosem fogjuk megtalálni, ameddig Dol Guldur tornya áll. Köszönöm a próbálkozást, de most hagyj magamra. Elfáradtam.
+dlga_lord_active_mission_1:lord_lend_companion_end|Óh, szeretnéd visszakapni a társadat? Értem...
+dlga_lord_active_mission_1:lord_pretalk|{játékosnév}, a türelmedet kell kérnem, még szükségem van a társadra. Kérlek gyere vissza akkor, amikor a feladatokat elintéztük.
+dlga_lord_active_mission_1:lord_active_mission_2|Igen, haladtál valamit vele?
+dlga_lord_active_mission_2:lord_generic_mission_thank|Haladtam, valóban. Elhoztam neked a kívánt {reg1} foglyot.
+dlga_lord_active_mission_2:lord_generic_mission_thank_extra|Persze, hoztam neked {reg2} foglyot, arra az esetre ha {reg1} nem lenne elég.
+dlga_lord_active_mission_2:lord_generic_mission_thank.1|Haladtam, valóban. Kiszabadítottam {reg1} fogságba esett társunkat, és csatlakoztak a csapatomhoz.
+dlga_lord_active_mission_2:lord_generic_mission_thank.2|Haladtam, valóban. Felderítettem {s13}t.
+dlga_lord_active_mission_2:lord_generic_mission_thank.3|Haladtam, valóban. Kiküldtem a felderítőket.
+dlga_lord_active_mission_2:lord_generic_mission_thank.4|Haladtam, valóban. Legyőztem a kívánt mennyiségű ellenséges csapatot.
+dlga_lord_active_mission_2:capture_enemy_hero_thank|Óh, haladtam, valóban. Elfogtam egy ellenséges parancsnokot önnek.
+dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Nagyon köszönöm, barátom. Jól fog szolgálni a kikérdezéshez. Jó munkát végeztél itt.
+dlga_capture_enemy_hero_thank_2:lord_pretalk|Természetesen, {s65}.
+dlga_capture_enemy_hero_thank_2:lord_pretalk.1|Nem tesz semmit.
+dlga_lord_active_mission_2:lord_raise_troops_thank|Haladtam, valóban. Kiképeztem {reg1} {s13}t. Átveheted őket.
+dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|Megtaláltam {s4}t aki {s3}-ban/ben bujkált, és megbüntettem.
+dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|Attól tartok hogy elmenekült.
+dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|És sokkal jobb lesz nekünk nélküle! Köszönöm, {játékosnév},  hogy kihúztad ezt a régóta kínzó tüskét az oldalamból. Jó tudni hogy rád lehet bízni olyan feladatot is, ami megkövetel bizonyos szintű tapintatosságot. Már elküldtem a jegyzetet az intendánsunknak, és számíthatsz további ellátmányra is tőlünk.
+dlga_lord_hunt_down_fugitive_success_2:lord_hunt_down_fugitive_reward_accept|Köszönöm, {s65}.
+dlga_lord_hunt_down_fugitive_reward_accept:lord_pretalk|Értesítem az intendánsainkat a szolgálataidról, {játékosnév}. Köszönöm még egyszer, barátom, hogy megszabadítottál attól a {s44}-tól/től.
+dlga_lord_hunt_down_fugitive_fail:lord_pretalk|Ez egy szomorú nap, amikor {s44} újra kicsusszant a kezeim közül. Azt hittem hogy képes vagy erre, {játékosnév}. Most már látom, hogy tévedtem.
+dlga_lord_active_mission_2:lord_active_mission_3|Még mindig dolgozom rajta.
+dlga_lord_active_mission_2:lord_mission_failed|Attól tartok nem leszek képes elvégezni ezt a küldetést.
+dlga_lord_active_mission_3:lord_pretalk|Jó.  Ne feledd, hogy számítok rád.
+dlga_lord_request_mission_ask:lord_pretalk|Még mindig nem fejezted be az utolsó feladatot, amit neked adtam, {játékosnév}. Azon kéne dolgoznod, nem más feladatokat kérni tőlem.
+dlga_lord_request_mission_ask:lord_pretalk.1|Most nincs más feladatom számodra.
+dlga_lord_request_mission_ask:lord_tell_mission|Egy feladat?
+dlga_lord_tell_mission:lord_mission_capture_troll_1|Te egy bátor szolgáló vagy, {játékosnév}, és ezért bepillantást nyerhetsz a terveinkbe. Szükségünk van friss vérre és húsra egy szörnyetegből. Szét kell csavarnunk, és hajlítanunk, és kínoznunk, és betörnünk és újraformálnunk és tenyésztenünk, hogy megerősíthessük és megkovácsoljuk a saját hatalmas harcosaink tenyészetét!
+dlga_lord_mission_capture_troll_1:lord_mission_capture_troll_2|Hogy szolgálhatom, Mester?
+dlga_lord_mission_capture_troll_2:lord_mission_capture_troll_3|Egy vad barlangi troll, {játékosnév}. Fogj el egy erős mintapéldányt nekem és hozd el nekem, élve. Nekünk kell még egy a Mi kísérleteinkhez! Kettő, jobb lenne. Minél több van Nekünk belőlük, annál jobb.
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoa|Hol lehet találni egy ilyen bestiát?
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infob|Hogy lehet elfogni egy ilyen bestiát?
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoc|Hogy lehet elszállítani hozzád egy ilyen bestiát?
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_accepted|Megfogja kapni a vad trollját, Mester.
+dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_rejected|Kegyelem, Mester! Az a bestia szétfog zúzni engem mint egy bogarat!
+dlga_lord_mission_capture_troll_infoa:lord_mission_capture_troll_3|Ezekben az időkben, a vér és árnyékok korában, a vad barlangi trollok egyre izgatottabbak lesznek és kimerészkednek a Köd-hegységbeli odúikból... a legjobb hely a keresésükre az ott lévő barlangjaik lennének.
+dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|Találnod kell egyet, aztán pedig le kell győznöd csatában. Ne félj attól, hogy véletlenül meghal a harc alatt: a troll túl vastagbőrű bestia ahhoz, hogy a fegyvereid azonnal végezzenek vele... és felfog épülni, gyorsabban mint hinnéd. Miután belezuhant a saját, fekete vérébe, a lábunk elé kell cipelned, úgy, hogy még lélegezzen.
+dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|Kapni fogsz egy robusztus, kerekes ketrecet. Jóval több helyet biztosít egy trollnak mint az szükséges, és körbe is lehet hordozni. És siettesd meg visszafele a lépteidet: még egy acélketrec sem képes teljességgel ellenállni egy haragtól és fájdalomtól elvakított troll ámokfutását. Menj biztosra hogy nem szabadul ki és öl meg.
+dlga_lord_mission_capture_troll_rejected:lord_pretalk|Csak most mutattad ki a fogad fehérét, de végig tudtam hogy milyen vagy. Gyenge és gyáva vagy, {játékosnév}. Most pedig takarodj a szemem elől.
+dlga_lord_mission_capture_troll_accepted:lord_pretalk|Tudtam hogy számíthatok a bátorságodra és az erődre. Rabszolgák, adjatok {játékosnév}-nak/nek az egyik kerekes ketrecünket! {playername}, térj vissza ahogy megszerezted az ajándékomat. Szeretném hogy még {reg1} hajnal eltelte előtt visszatérnél. 
+dlga_lord_tell_mission:lord_tell_mission_kill_troll|A földünk olyan veszéllyel néz szembe, ami hallatlan volt eddig a mi korunkban. Emberek tűnnek el {s3} külterületéről. Nem csak a köznép tagjai, de kisméretű, felfegyverzett csoportok is akik kimerészkedtek a falakon kívülre, sose tértek vissza. A legfurcsább pletykák keringenek, de én tudom mivel nézünk szembe.
+dlga_lord_tell_mission_kill_troll:lord_mission_told|Vad trollok, {játékosnév}. Óriási bestiák, eltorzult szörnyetegek. Ezelőtt sose merészkedtek ennyire messzire a hegybéli, sötét barlangjaiktól, de legalább az egyiküket látták {s3} közelében. Nem tudom milyen boszorkányság műve lehet ez, de azt akarom hogy ez az izé eltűnjön.
+dlga_lord_mission_told:lord_mission_kill_troll_info_a|Hogy lehet ezekkel a bestiákkal szembeszállni?
+dlga_lord_mission_kill_troll_info_a:lord_mission_told|A troll valóban egy veszélyes bestia. Egy óriási szörny, aki hihetetlen erőt rejt az eltorzult izmaiban. A bőrük olyan kemény mint a vas, és egy fatörzs nem több mint egy apró buzogány a kezeikben. Az a hír járja hogy egy magányos troll könnyedén legyűr egy fél tucat jól felszerelt és -képzett embert, megölve őket egy egyszerű csapással. Nem csak az emberek, hanem a lovak is félik a trollokat. Légy óvatos, ha az a terved hogy lovasrohamot indítasz ellene.
+dlga_lord_mission_told:lord_mission_kill_troll_info_b|Ön szerint Mordorból vagy Vasudvardból jött?
+dlga_lord_mission_kill_troll_info_b:lord_mission_told|Nem, nem hiszen. Hallottuk hírét, hogy a Fehér Mágus és a Fekete Torony soraiban is rengeteg fajta szörnyeteg található, de ahogy én tudom, a {s3} közelében lévő bestia egy kegyetlen, zabolázatlan teremtményt. Emlékezz, az is lehet hogy többen vannak. De biztos lehetsz benne, hogy az Ellenség valamiféle tisztázatlan ténykedése áll emögött az új fertő mögött, ami a nyakunkon van.
+dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|Van egy küldetésem egy olyan bátor és megbízható alattvalónak mint te, {játékosnév}. A legfurcsább híresztelések jutottak a fülembe Fangorn erdejéről. A favágásra küldött kegyenceim, és még a parancsnokaim is, akik áthaladtak rajta, néha soha nem tértek vissza. Máskor pedig, rejtélyes emberveszteséget jelentettek. Kísérteteket okolnak, az erdő szellemeit, ősi átkokat... Badarság! Szánalmas kifogások a saját gyávaságukra vagy alkalmatlanságukra!
+dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_1|És mit parancsol, Mester, mit tegyek ez ügyben?
+dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_rejected|De Mester, csak veszély és fájdalom vár Fangorban! Én magam is éreztem!
+dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|Talán csak az, hogy a többi szolgám képtelen volt arra, hogy megakadályozzák a leggyávább férgeiket a dezertálástól. Bolondok, babonáktól elvakulva. Vagy, talán az áruló tünde szemetek támadtak rájuk lesből, elrejtőzve a korhadt fáikon, ahogy szokták. Esetleg lehettek proletárok, árulók Rohanból. Vagy ki tudja, mi más. Azt akarom, hogy kiderítsd, {játékosnév}.
+dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepted|Nem félem se a tündéket, se a szellemeket. Hagyja ezt rám, Mester.
+dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|Mester, könyörülj meg szolgálódon! Ne kérjen arra, hogy bemerészkedjek arra az átkozott helyre!
+dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|Szóval, olyan vagy mint a többi féreg: egy babonás, értéktelen gyáva. Túlbecsültelek. És most, távozz!
+dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|Remek. Menj oda és deríts fényt az igazságra. Aztán gyere vissza hozzám és tegyél jelentést. Várok a visszaérkezésedre, ameddig {reg1} hajnal el nem telik.
+dlga_lord_tell_mission:lord_mission_find_lost_spears|Van egy küldetésem egy olyan bátor és megbízható parancsnoknak, mint te, {játékosnév}. Nem vagyunk megfelelően felszerelve a rhûn hordák ellen. A hadaink csatát csatára vesztenek el. Egy legenda szerint, egyszer régen a törpök lándzsákat kovácsoltak a nagy Bladorthin királynak (ki már rég halott), mindnek háromszor kovácsolt feje volt, és a nyeleik lenyűgöző arany berakásosak voltak, de sose szállították le őket, és nem is fizettek értük...
+dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|Mit parancsol, nagyuram, mit tegyek ez ügyben?
+dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|Ezek a fegyverek megnövelnék a hadseregeink hatékonyságát, de mindenekelőtt lelkesítené az embereinket. Meg kell találnod ezeket a lándzsákat. Engedélyt kell kérned ehhez a törpöktől, hogy kutathass a Magányos Hegyben. Óvakodj, megeshet, hogy néhány orkkal vagy trolllal is összefuthatsz a tárnákban. Készen áll erre a feladatra?
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|Nem félem sem az orkokat se a trollokat! Megfogom önnek találni ezeket a lándzsákat, nagyuram.
+dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|Attól tartok, hogy nem segíthetek önnek ebben, nagyuram.
+dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|Úgy látom a tapintatod nagyobb, mint a vitézséged. Talán a felderítő munkáknál kéne maradnod.
+dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Akkor, sok szerencsét!
+dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|Lenne itt egy fontos feladat, amit elvégezhetne a népünknek, {játékosnév}.
+dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|A hatalmam hogy megvédjem és fenntartsam Lothlórient meggyengült az ellenfél eszközei miatt. Egy Dol Guldurból származó mestervarázsló erőteljes varázseszközöket megbűvölve gátolja a védelmünket. Bár ő csak egy halandó, ő lett az ellenség egyik legtehetségesebb tanítványa a misztikus szertartásokat illetően, és komoly veszélyt jelent a népünkre. Le kell vadásznia és el kell pusztítania!
+dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Merre találhatom meg a varázslót, úrhölgyem?
+dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Keresse őt a Bakacsinerdőben, nem messze magától Dol Guldurtól. Ő mind szorosan őrzött és óvatos ellenfél, szóval lopakodnod kell majd, nehogy riadót fújjanak. Ha elmenekül, átfog költözni valahova egy másik sötét helyre amit nem ismerünk, és folytatni fogja a gonosz tevékenységeit, zavartalanul. Csak egyetlen lehetősége lesz arra, hogy legyőzze. Sok múlik a sikerén. Menjen, áldásom kövesse.
+dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Ahogy parancsolja, úrhölgyem. A legjobb formámat fogom nyújtani ezen gonosz elpusztításában.
+dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Bocsásson meg, úrhölgyem. Van néhány halaszthatatlan ügyem mielőtt segíthetnék a népének ezzel a feladattal.
+dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Megértem, {játékosnév}. De ne sokáig halogassa a kérdést, egyre fáradtabb vagyok ezen gonosz varázslatának ellenállva.
+dlga_lord_tell_mission:lord_mission_deliver_message|Levelet kell küldenem {s13}-nak/nek aki jelenleg {s4}-ban/ben van. Ha arra fele tartasz, átadnád ezt neki? A levélnek a kezeiben kell lennie legkésőbb 30 napon belül.
+dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Természetesen, szándékomban áll áthaladni {4}-on/ön és nem lesz vele probléma.
+dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Kétlem hogy találkozni fogok {s13}-val/vel mostanában, {s65}. Jobb lesz ha valakivel mással küldi el.
+dlga_lord_mission_deliver_message_accepted:close_window|Értékelem, {játékosnév}. Itt a levél. Add át üdvözletem {s13}-nak/nek amikor találkozol vele.
+dlga_lord_mission_deliver_message_rejected:lord_pretalk|Áh, rendben van. Nos, biztos vagyok benne hogy fogok találni valaki mást.
+dlga_lord_tell_mission:lord_mission_deliver_message.1|El kell küldenem egy levelet {s15}i {s13}-nak/nek, aki {s4}-ban/ben van jelenleg.  Ha arra fele tartasz, átadnád ezt neki? A levélnek nála kell lenne legkésőbb 40 napon belül.
+dlga_lord_tell_mission:lord_mission_told|Lenne egy sürgető ügy... A hírnökömnek le kell jelentenie az esedékes csataterveket a parancsnokainknak {s14}-ban/ben. Az útját már több alkalommal is elhalasztottuk a sok veszély miatt az utakon, de ez alkalommal át kell jutnia. Szóval, azt akarom hogy legalább szorosan védve legyen. Megbízom benned, {játékosnév} így nagyon hálás lennék ha eltudnád kísérni {s14}-ba/be és biztosítanád azt, hogy biztonságban megérkezzen.
+dlga_lord_tell_mission:lord_mission_told.1|Van itt egy barátom, egy öreg harcos, aki nagyon beteg. A pestis megfertőzte az egyik öreg háborús sebét, és ha nem vizsgálja meg egy seborvos hamarosan, biztosan belehal. Ez a férfi kedves a szívemnek, {játékosnév}, de olyan makacs mint egy vadkan és nem hajlandó senkinek sem megmutatni a sebét mert nem bízik a helyi seborvosokban. Hallottam hogy van veled egy tehetséges seborvos. Ha megengednéd neki hogy idejöjjön és megvizsgálja, akkor {reg3?ő} talán megtudná győzni arról, hogy beleegyezzen egy operációba. Kérlek, örökké adósod leszek ha teljesíted a kérésemet.
+dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Hány emberre van szüksége?
+dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Ha ki tud képezni {reg1} {s14}t és elhozni nekem, valószínűleg elegek lesznek.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Természetesen, {s65}. Adj át {reg1} friss újoncot és kiképzem őket, hogy {s14} legyenek.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Túlzottan elfoglalt vagyok ezekben a napokban hogy akárkit is kiképezzek.
+dlga_lord_mission_raise_troops_accepted:close_window|Levetted a terhet a vállamról, {játékosnév}. Szólni fogok az őrmestereimnek, hogy küldjék át neked az újoncokat ahhoz, hogy a parancsnokságod alá helyezhesd őket. Emellett, küldök neked némi hadkészletet is, hogy segítsek fedezni a költségeket. Tessék, remélem hogy ez a láda megteszi. Köszönöm a segítséged.
+dlga_lord_mission_raise_troops_rejected:lord_pretalk|Óh, hát persze. Erre számítottam. Nos, akkor sok szerencsét.
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Lenne itt valami amivel segíthetnél, egy kis probléma a törvényen kívüli gazemberrel, akit úgy ismernek hogy {s4}. Meggyilkolta az egyik testőrömet és azóta menekül az igazságszolgáltatás elől. Azóta hírt hallottunk arról, hogy a szökevényt {s3} területén látták. Talán te letudnád vadászni őt és gyors igazságot tudnál neki szolgáltatni, és cserébe megjutalmaználak.
+dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Akkor lefogom őt vadászni és igazságot fogok szolgáltatni.
+dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Jelenleg túlzottan elfoglalt vagyok ahhoz, hogy utána menjek.
+dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Ez nagyszerű, {játékosnév}. Hálás leszek, és természetesen a vitézi helytállásod nem marad észrevétlen. Nos, jó vadászatot.
+dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|Ahogy kívánod, {játékosnév}. Biztos vagyok benne hogy rengeteg fejvadász elérhető a munkára...
+dlga_lord_tell_mission:lord_mission_told.2|Nos, néhányan a {s4} földjein dolgozó rabszolgák közül megszöktek. A hálátlan disznók, azok akinek az életét megkíméltük!  Abból, amit hallottunk, jelenleg éppen {s3} felé menekülnek, olyan gyorsan ahogy csak tudnak, és három külön csoportra váltak szét, hogy elkerüljék az elfogást. Azt akarom hogy kapd el és rángasd vissza mind a hármat {s4} területére, akármibe is kerüljön. Fel kéne őket akasztanom a szökési kísérletért, de szükségünk van a plusz kezekre, szóval ez alkalommal megússzák majd egy jó veréssel.
+dlga_lord_tell_mission:lord_tell_mission_follow_spy|Biztos információm van róla hogy egy ember, ebben a városban igazából egy ellenséges kém.  Kötelet kéne tekerni a nyaka köré és felakasztani az arcátlansága miatt, de úgy hisszük hogy hamarosan elhagyja a várost hogy találkozzon a mesterével, a férfival akinek a kém a fülébe suttogja a dolgait. A kém maga alig érdekes, de a mestere egy veszélyes ember, és igazán érdekes dolgokat tudna nekünk mondani ha rátehetnénk a kezünket...
+dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|Azt akarom hogy itt várj, ameddig a kém elhagyja a várost. Aztán, követned kell, észrevétlenül, a találkozóhelyig. Teljesen biztosra kell menned hogy nem fog a kém meglátni útközben, különben megérzi a bűzt és elpucol. Amikor a mester megjelenik, rajtuk kell ütnöd és letartóztatnod és visszahozni kettejüket nekem. Élve, ha lehetséges.
+dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|Megcsinálom, {s65}.
+dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|Nem, az ilyenfajta sunyulás nem az én műfajom.
+dlga_lord_tell_mission_follow_spy_accepted:close_window|Jó, biztos vagyok benne hogy remek munkát fogsz végezni. Az egyik emberem majd rámutat a kémre, amikor elhagyja a várost, szóval tudni fogod kit is kell követned. Ne feledd, mindkettőre szükségem van, és mindkettőre élve. 
+dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|Micsoda szégyen. Nos, folytasd azt amit eddig csináltál, {játékosnév}...
+dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|Lenne itt egy nehéz munka amit el kéne végezni, {játékosnév}, és talán ön az, aki képes rá. Szükségem van valakire aki képes elfogni az ellenfél egyik parancsnokát, és elém is hozza. Azután, majd kikérdezem őt az ellenfél haditerveiről. Önmagában elég egyszerű egy feladat, de akárkit is választ ki, szorosan védelmezve lesz egy csoportnyi elit katona által. Készen áll egy csatára?
+dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_accepted|Vegye úgy, hogy már meg is történt, {s65}.
+dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_rejected|El kell utasítanom, {s65}. Nem akarok egyikükhöz sem közel kerülni.
+dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|Tetszik a lelkesedése! Menjen, és hozza el az egyik ellenfelünket, és a nevét beszédbe fogom foglalni a csarnokomban visszatértekor! És természetesen, meg is fogom jutalmazni az erőfeszítéseit...
+dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Tisztán látszik hogy híján van a bátorságnak, ami azt hittem hogy megvan magában. Legyen, {játékosnév}, akkor találok majd valaki mást.
+dlga_lord_tell_mission:lord_tell_mission_lend_companion|Most nincs semmilyen feladatom számára, de az egyik társa, {s3} egy képzett {reg3?hölgynek:fickónak} tűnik, és szükségem lenne valaki olyan tehetségére, mint amilyen {reg3?ő} maga is. Kölcsönadná {reg3?őt} nekem egy ideig?
+dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Mennyi ideig lenne szüksége {reg3?rá}?
+dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|Csak egy pár napig, nem tovább mint egy hétig.
+dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|Akkor magánál hagyom {s3} társamat egy hétre.
+dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|Sajnálom, de nem tudom nélkülözni {s3} társaságát egy egész hétig.
+dlga_lord_tell_mission_lend_companion_accepted:close_window|Nem tudom eléggé megköszönni, {játékosnév}. Ne aggódjon, a társát visszafogom küldeni az első leendő alkalommal.
+dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|Nos, ez egy átkozott balszerencse, de azt hiszem nem kényszeríthetem se magára, se {s3} társára rá ezt. Akkor nélküle kell majd boldogulnom.
+dlga_lord_tell_mission:lord_mission_told.3|A felderítőink jelentették hogy mostanában megnövekedett az ellenség mozgolódása. Sajnálatos módon néhány kivételt eltekintve nem sikerült eddig élő foglyokat ejteni és kikérdezésre behozni őket, így csak töredékekből tudunk dolgozni, hogy mit is tervez az ellenség. Szóval, szükségem lenne egy jó harcosra hogy elfogjon nekem {reg1} ellenséget fogolynak, hogy majd kikérdezhessem őket.
+dlga_lord_tell_mission:lord_pretalk|Nem, {játékosnév}. ez alkalommal nincs szükségem a segítségedre.
+dlga_lord_mission_told:lord_mission_accepted|Számíthat rám, {s65}.
+dlga_lord_mission_told:lord_mission_rejected|Attól tartok jelenleg nem fogadhatok el egy ilyen küldetést.
+dlga_lord_mission_accepted:close_window|Nagyszerű, {playername}, nagyszerű. Minden reményem benned van.
+dlga_lord_mission_rejected:close_window|Így lenne? Nos, biztosan nem állsz készen a feladatra. Akkor keresnem kell valakit több kurázsival.
+dlga_lord_talk:lord_leave_prison|Most mennem kell.
+dlga_lord_talk:lord_leave|Ennek a kis csevejnek ezennel vége. Most megyek.
 ; dlga_lord_talk:lord_leave.1|I must beg my leave.
-; dlga_lord_leave_prison:close_window|We'll meet again.
-; dlga_lord_leave:close_window|We'll see about that, {playername}.
-; dlga_lord_leave:close_window.1|Of course, {playername}. Farewell.
-; dlga_lord_leave:close_window.2|Good journeys to you, {playername}.
-; dlga_lord_leave:close_window.3|Yes, yes. Farewell.
-; dlga_lord_leave:close_window.4|We will meet again.
-; dlga_start:lady_escort_lady_succeeded|Thank you for escorting me here, {playername}, and ensuring my safe passage. Your services will be duly noted. 
-; dlga_lady_escort_lady_succeeded:close_window|It was an honor to serve.
-; dlga_start:prison_guard_players|Good day, Commander. Will you be visiting the prison?
-; dlga_prison_guard_players:close_window|Yes. Unlock the door.
-; dlga_prison_guard_players:close_window.1|No, not now.
-; dlga_start:prison_guard_talk|Yes? What do you want?
-; dlga_prison_guard_talk:prison_guard_ask_prisoners|Who is imprisoned here?
-; dlga_prison_guard_talk:prison_guard_visit_prison|I want to speak with a prisoner.
-; dlga_prison_guard_ask_prisoners:prison_guard_talk|Currently, {s51} {reg1?are:is} imprisoned here.
-; dlga_prison_guard_visit_prison:close_window|Of course, Commander. Go in.
-; dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|You need to get permission from the lord to talk to prisoners.
-; dlga_prison_guard_visit_prison_2:close_window|All right then. I'll try that.
-; dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Come on now. I thought you were the boss here.
-; dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. You got that right. Still, I can't let you into the prison.
-; dlga_prison_guard_visit_prison_4:close_window|All right then. I'll leave now.
-; dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|I found a purse with 100 denars a few paces away. I reckon it belongs to you.
-; dlga_prison_guard_visit_prison_5:close_window|Ah! I was looking for this all day. How good of you to bring it back {sir/madam}. Well, now that I know what an honest {man/lady} you are, there can be no harm in letting you inside. Go in.
-dlga_prison_guard_talk:close_window|Semmiség.
-; dlga_start:castle_guard_players|Your orders, Commander?
-; dlga_castle_guard_players:close_window|Open the door. I'll go in.
-dlga_castle_guard_players:close_window.1|Semmiség.
-; dlga_start:castle_guard_sneaked_intro_1|Get out of my sight, beggar! You stink!
-; dlga_start:close_window.8|Get lost before I lose my temper you vile beggar!
-; dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|I want to enter the hall and speak to the lord.
+dlga_lord_leave_prison:close_window|Később még találkozunk.
+dlga_lord_leave:close_window|Azt majd még meglátjuk, {játékosnév}.
+dlga_lord_leave:close_window.1|Természetesen, {játékosnév}. Viszontlátásra.
+dlga_lord_leave:close_window.2|Jó utat, {játékosnév}.
+dlga_lord_leave:close_window.3|Igen-igen. Viszontlátásra.
+dlga_lord_leave:close_window.4|Később még találkozunk.
+dlga_start:lady_escort_lady_succeeded|Köszönöm hogy elkísért, {játékosnév}, és biztosította nekem a biztonságos utat. A szolgálatai megfelelően lesznek jutalmazva.
+dlga_lady_escort_lady_succeeded:close_window|Megtiszteltetés volt szolgálni.
+dlga_start:prison_guard_players|Szép napot, Parancsnok. A börtönt fogja meglátogatni?
+dlga_prison_guard_players:close_window|Igen. Nyissa ki az ajtót.
+dlga_prison_guard_players:close_window.1|Nem, most nem.
+dlga_start:prison_guard_talk|Igen? Mit akarsz?
+dlga_prison_guard_talk:prison_guard_ask_prisoners|Kit tartanak itt fogva?
+dlga_prison_guard_talk:prison_guard_visit_prison|Beszélni akarok egy fogollyal.
+dlga_prison_guard_ask_prisoners:prison_guard_talk|Jelenleg, {s51} {reg1?vannak:van} bebörtönözve ide.
+dlga_prison_guard_visit_prison:close_window|Természetesen, Parancsnok. Menjen csak be.
+dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|Szükséged lesz az úr engedélyére, hogy beszélhess a foglyokkal.
+dlga_prison_guard_visit_prison_2:close_window|Rendben van. Majd megpróbálom.
+dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Komolyan már. Azt hittem te vagy itt a főnök.
+dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. Ezt jól tudod. Ennek ellenére, nem engedhetlek be a börtönbe.
+dlga_prison_guard_visit_prison_4:close_window|Rendben van. Akkor elmegyek.
+dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|Találtam pár lépésre innen egy erszényt. Biztos vagyok benne hogy hozzád tartozik.
+dlga_prison_guard_visit_prison_5:close_window|Áh! Egész nap ezt kerestem. Milyen jó öntől hogy visszahozta ezt nekem {uram/asszonyom}. Most, hogy már tudom hogy milyen becsületes {férfi/hölgy} is ön, nem okozhat semmiféle bajt, ha beengedem. Menjen csak.
+dlga_prison_guard_talk:close_window|Hagyjuk.
+dlga_start:castle_guard_players|Az utasításai, Parancsnok?
+dlga_castle_guard_players:close_window|Nyisd ki az ajtót. Bemegyek.
+dlga_castle_guard_players:close_window.1|Hagyjuk.
+dlga_start:castle_guard_sneaked_intro_1|Takarodj a szemem elől, koldus! Bűzlesz!
+dlga_start:close_window.8|Takarodj el mielőtt elvesztem a hidegvérem, te hitvány koldus!
+dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Beakarok menni, hogy beszélhessek az úrral.
 dlga_castle_guard_sneaked_intro_1:close_window|[Távozás]
-; dlga_castle_guard_sneaked_intro_2:close_window|Are you out of your mind, {man/woman}? Beggars are not allowed into the hall. Now get lost or I'll beat you bloody.
+dlga_castle_guard_sneaked_intro_2:close_window|Elvesztetted a józan eszedet, {ember/asszony}? Koldusok nem léphetnek be a csarnokba. Most pedig takarodj mielőtt véresre verlek.
 dlga_start:castle_guard_intro_1|Mit szeretnél?
-; dlga_castle_guard_intro_1:castle_guard_intro_2|I want to enter the hall and speak to the lord.
-dlga_castle_guard_intro_1:close_window|Semmiség.
-; dlga_castle_guard_intro_2:castle_guard_intro_2|You can go in after leaving your weapons with me. No one is allowed to carry arms into the lord's hall.
-; dlga_castle_guard_intro_2:close_window|Here, take my arms. I'll go in.
-; dlga_castle_guard_intro_2:castle_guard_intro_2b|No, I give my arms to no one.
-; dlga_castle_guard_intro_2b:close_window|Then you can't go in.
+dlga_castle_guard_intro_1:castle_guard_intro_2|Beakarok menni, hogy beszélhessek az úrral.
+dlga_castle_guard_intro_1:close_window|Hagyjuk.
+dlga_castle_guard_intro_2:castle_guard_intro_2|Bemehet miután nálam hagyta a fegyvereit. Senki se vihet fegyvereket az úr csarnokába.
+dlga_castle_guard_intro_2:close_window|Itt van, vedd el a fegyvereimet.  Bemegyek.
+dlga_castle_guard_intro_2:castle_guard_intro_2b|Nem, nem adom oda a fegyvereimet senkinek.
+dlga_castle_guard_intro_2b:close_window|Akkor nem mehetsz be.
 dlga_start:castle_gate_guard_talk|Mit szeretnél?
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|Igen?
-; dlga_castle_gate_guard_talk:castle_gate_open|We need shelter for the night. Will you let us in?
-; dlga_castle_gate_guard_talk:request_meeting_castle_lord|I want to speak with the lord of the castle.
-; dlga_castle_gate_guard_talk:request_meeting_other|I want to speak with someone in the castle.
+dlga_castle_gate_guard_talk:castle_gate_open|Menedékre van szükségünk az éjszakára. Beengedne minket?
+dlga_castle_gate_guard_talk:request_meeting_castle_lord|Beszélni akarok a kastély urával.
+dlga_castle_gate_guard_talk:request_meeting_other|Beszélni akarok valakivel a kastélyból.
 dlga_castle_gate_guard_talk:close_window|[Távozás]
-; dlga_request_meeting_castle_lord:close_window|Wait here. {s2} will see you.
-; dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|My lord is not here now.
-; dlga_request_meeting_other:request_meeting_3|Who is that?
-dlga_request_meeting_3:close_window|Semmiség.
-; dlga_request_meeting_4:request_meeting_5|Wait there. I'll send him your request.
-; dlga_request_meeting_5:request_meeting_6|I'm waiting...
-; dlga_request_meeting_6:close_window|All right. {s2} will talk to you now.
-; dlga_request_meeting_6:close_window.1|{s2} says he will not see you. Begone now.
-; dlga_castle_gate_open:close_window|My lord {s2} will be happy to see you {sir/madam}. Come on in. I am opening the gates for you.
-; dlga_castle_gate_open:close_window.1|My lord {s2} is not in the castle now. But I think he would approve of you taking shelter here. Come on in. I am opening the gates for you.
-; dlga_castle_gate_open:close_window.2|Come on in. I am opening the gates for you.
-; dlga_castle_gate_open:close_window.3|Come on in. But make sure your men behave sensibly within the walls.  My lord {s2} does not want trouble here.
-; dlga_castle_gate_open:close_window.4|My lord {s2} does not want you here. Begone now.
+dlga_request_meeting_castle_lord:close_window|Várj itt. {s2} hamarosan meglátogat.
+dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|A nagyuram jelenleg nincs itt.
+dlga_request_meeting_other:request_meeting_3|Az kicsoda?
+dlga_request_meeting_3:close_window|Hagyjuk.
+dlga_request_meeting_4:request_meeting_5|Várj itt. Elküldöm neki a kérvényedet.
+dlga_request_meeting_5:request_meeting_6|Én várok...
+dlga_request_meeting_6:close_window|Rendben van. {s2} most már beszélni fog önnel.
+dlga_request_meeting_6:close_window.1|{s2} az mondta nem hajlandó fogadni. Most pedig távozzon.
+dlga_castle_gate_open:close_window|A nagyuram, {s2} örömmel fogadja önt, {uram/asszonyom}. Jöjjön be. Kinyitom önnek a kaput.
+dlga_castle_gate_open:close_window.1|A nagyuram, {s2} jelenleg nincs a kastélyában. De úgy gondolom beleegyezne abba, hogy ide vonuljon menedékbe. Jöjjön be. Kinyitom önnek a kaput.
+dlga_castle_gate_open:close_window.2|Jöjjön be. Kinyitom önnek a kaput.
+dlga_castle_gate_open:close_window.3|Jöjjön be. De ügyeljen arra, hogy az emberei értelmesen viselkedjenek a falaimon belül. A nagyuram {s2} nem szeretne semmiféle bajt itt.
+dlga_castle_gate_open:close_window.4|A nagyuram {s2} nem akarja önt itt. Most pedig távozzon.
 ; dlga_start:caravan_help1|Thank you for helping! We are safe now. My name is Torbal, and I was just delivering some goods when we were attacked.^^ Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. ^^Dire things are afoot.. War is coming! ^^I advise you to go to the nearest town and warn everyone about what you've seen to whomever is in command there. It's an important matter, so please make haste.
-; dlga_caravan_help1:caravan_help2|No, I have never seen such a large orc before. Nasty things... ^^I am a Soldier in this coming war that we have all been sensing.
-; dlga_caravan_help2:caravan_help3|You are? Of course you are! I have seen that you are a capable warrior. ^^I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. ^^Here, have some of the local currency used by {s10}
+dlga_caravan_help1:caravan_help2|Nem, soha nem láttam még ekkora orkot ezelőtt. Utálatos egy dolgok... ^^Katonaként szolgálok a közelgő, mindenki által előrelátott háborúban.
+dlga_caravan_help2:caravan_help3|Az vagy? Persze hogy az vagy! Láttam hogy milyen megbízható harcos is vagy. ^^Vitathatatlanul ez a szerencse napom, szóval ki is használom ezt a jószerencsét és a falumba sietek hogy figyelmeztessen őket ezekről a bűzős bestiákról. ^^Tessék, ez némi a {s10} helybeli valutából.
 ; dlga_caravan_help3:caravan_help4|Safe journey to you, Torbal. I'm sure we will meet again.
 ; dlga_caravan_help4:caravan_help5|I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!
 ; dlga_caravan_help5:close_window|I will remember that. Thank you Torbal, and stay safe.
@@ -598,41 +598,41 @@ dlga_request_meeting_3:close_window|Semmiség.
 ; dlga_woodelf_help_1:woodelf_help_2.1|I have never seen such a large orc before. Nasty things. Do not fret. I am a Soldier in this coming war that we have all been sensing.
 ; dlga_woodelf_help_2:woodelf_help_3.1|You are? Of course you are! I have seen that you are a capable warrior. I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts.
 ; dlga_woodelf_help_3:close_window|Safe journey to you, Torbal. I'm sure we will meet again.
-; dlga_start:close_window.9|You have come just in time. Let us join our forces now and teach our enemy a lesson.
-; dlga_start:close_window.10|You are making a big mistake by fighting against us.
-; dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
-; dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
-; dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
-; dlga_ally_thanks_meet:ally_thanks_meet_2|My name is {playername}.
-; dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
-; dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
-; dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
-; dlga_start:close_window.11|Again you save our necks, {playername}! Truly, you are the best of friends. {s43}
-; dlga_start:close_window.12|You arrived just in the nick of time! {playername}. You have my deepest thanks! {s43}
-; dlga_start:close_window.13|You turned up just in time, {playername}. I will not forget your help. {s43}
-; dlga_start:close_window.14|Good to see you here, {playername}. {s43}
-; dlga_start:close_window.17|Thank you for your help, Commander. You saved {reg1?our lives:my life} out there.
-; dlga_start:close_window.18|Thank you for your help, Commander. Things didn't look very well for us but then you came up and everything changed.
-; dlga_start:close_window.19|Thank you for your help, Commander. It was fortunate to have you nearby.
-; dlga_start:freed_hero_answer|I am in your debt for freeing me friend.
-; dlga_freed_hero_answer:freed_hero_answer_1|You're not going anywhere. You'll be my prisoner now!
+dlga_start:close_window.9|Pont időben érkeztél. Egyesítsük most erőinket és tanítsuk móresre az ellenfelet.
+dlga_start:close_window.10|Nagy hibát követsz el azzal hogy ellenünk fordultál.
+dlga_start:ally_thanks_meet|Nem hiszem hogy megfelelően bemutattak volna minket egymásnak ezelőtt, barátom. Épp az előbb mentetted meg az életemet, és nem tudom még a nevedet se...
+dlga_start:ally_thanks_meet.1|A segítségét szívesen látjuk idegen. Az én nevem {s1}. Megtudhatom az önét?
+dlga_start:ally_thanks_meet.2|Köszönöm a segítségét, idegen. Még nem mutatkoztunk be egymásnak megfelelően, nemde? Hogy hívják?
+dlga_ally_thanks_meet:ally_thanks_meet_2|Az én nevem {játékosnév}.
+dlga_ally_thanks_meet_2:close_window|Igazán örvendek a találkozásnak {játékosnév}. Az én nevem {s1} és örökké az adósa leszek. Ha lesz valaha is valami, amiben segíthetek, csak szóljon...
+dlga_ally_thanks_meet_2:close_window.1|Örvendek a találkozásnak {játékosnév}. Az adósa vagyok, ezek után amit tett. Remélem egy nap majd visszatudom fizetni.
+dlga_ally_thanks_meet_2:close_window.2|Örvendek a találkozásnak {playername}. Én {s1} vagyok. Köszönöm a segítséged, és remélem a jövőben még találkozunk.
+dlga_start:close_window.11|Már megint kihúztál minket a csávából, {játékosnév}! Őszintén, te vagy a legjobb barát. {s43}
+dlga_start:close_window.12|Pont az utolsó pillanatban érkeztél, {játékosnév}! Hálás köszönetem! {s43}
+dlga_start:close_window.13|Pont időben érkezett, {játékosnév}. Nem fogom elfelejteni hogy segített. {s43}
+dlga_start:close_window.14|Jó téged itt látni, {játékosnév}. {s43}
+dlga_start:close_window.17|Köszönöm a segítséged, Parancsnok. Megmentetted az {reg1?életünk:életem} az előbb.
+dlga_start:close_window.18|Köszönöm a segítséged, Parancsok. A dolgok nem igazán álltak jól, de aztán megérkeztél és minden megváltozott.
+dlga_start:close_window.19|Köszönöm a segítséged, Parancsnok. Igazi csoda volt hogy a közelben jártál.
+dlga_start:freed_hero_answer|Adósod vagyok azért hogy megmentettél, barátom.
+dlga_freed_hero_answer:freed_hero_answer_1|Nem mész sehova. Ezennel a foglyom vagy!
 ; dlga_freed_hero_answer_1:close_window|Alas. Will my luck never change?
-; dlga_freed_hero_answer:freed_hero_answer_2|You're free to go, {s65}.
-; dlga_freed_hero_answer_2:close_window|Thank you, Commander. I never forget someone who's done me a good turn.
-; dlga_freed_hero_answer:freed_hero_answer_3|Would you like to join me?
-; dlga_freed_hero_answer_3:close_window|All right I will join you.
-; dlga_freed_hero_answer_3:close_window.1|No, I want to go on my own.
+dlga_freed_hero_answer:freed_hero_answer_2|Szabadon távozhatsz, {s65}.
+dlga_freed_hero_answer_2:close_window|Köszönöm, Parancsnok. Sosem felejtek el valakit aki jó szolgálatot tett nekem.
+dlga_freed_hero_answer:freed_hero_answer_3|Akarsz csatlakozni hozzám?
+dlga_freed_hero_answer_3:close_window|Rendben van, csatlakozom hozzád.
+dlga_freed_hero_answer_3:close_window.1|Nem, magam mennék.
 ; dlga_start:defeat_hero_answer|You'll not live long to enjoy your victory. My kinsmen will soon wipe out the stain of this defeat.
-; dlga_defeat_hero_answer:defeat_hero_answer_1|You are my prisoner now.
-; dlga_defeat_hero_answer_1:close_window|Damn you. You will regret this.
-; dlga_defeat_hero_answer:defeat_hero_answer_2|You're free to go this time, but don't cross my path again.
-; dlga_defeat_hero_answer_2:close_window|We will meet again.
-; dlga_start:fugitive_1|Yes, what do you want?
-; dlga_fugitive_1:fugitive_2|I am looking for a fugitive by the name of {s4}. You fit his description.
-; dlga_fugitive_1:close_window|Nothing. Sorry to trouble you.
-; dlga_fugitive_2:fugitive_3|I do not know what you are talking about. You must have confused me with someone else.
-; dlga_fugitive_3:fugitive_4|Then drop your sword. If you are innocent, you have nothing to fear. We'll go now and talk to the guard captain to see who is confused.
-; dlga_fugitive_4:close_window|Damn you! You will not be going anywhere!
+dlga_defeat_hero_answer:defeat_hero_answer_1|A foglyom vagy.
+dlga_defeat_hero_answer_1:close_window|Légy átkozott. Ezért még megfizetsz.
+dlga_defeat_hero_answer:defeat_hero_answer_2|Most szabadon távozhatsz, de ne merészeld még egyszer keresztezni az utamat.
+dlga_defeat_hero_answer_2:close_window|Később még találkozunk.
+dlga_start:fugitive_1|Igen, mit akarsz?
+dlga_fugitive_1:fugitive_2|Én a {s4} nevű szökevényt keresem. Illik rád a leírása.
+dlga_fugitive_1:close_window|Semmit. Elnézést a zavarásért.
+dlga_fugitive_2:fugitive_3|Nem tudom miről beszélsz. Biztos összetévesztettél valaki mással.
+dlga_fugitive_3:fugitive_4|Akkor dobd el a kardod. Ha ártatlan vagy, nincs mitől félned. Most megyünk és beszélünk az őrkapitánnyal, hogy meglássuk ki is van összetévesztve.
+dlga_fugitive_4:close_window|Légy átkozott! Nem mész te sehova!
 ; dlga_start:follow_spy_talk|Good day. Such fine weather don't you think? If you'll excuse me now I must go on my way.
 ; dlga_follow_spy_talk:follow_spy_talk_2|In the name of {s1}, you are under arrest!
 ; dlga_follow_spy_talk_2:close_window|You won't get me alive!
@@ -745,7 +745,7 @@ dlga_mayor_pretalk:mayor_talk|Igen?
 ; dlga_mayor_talk:mayor_info_begin|Can you tell me about what you do?
 ; dlga_mayor_talk:merchant_quest_requested|How can I serve our cause?
 ; dlga_mayor_talk:merchant_quest_last_offered_job|About that task you needed me to do...
-dlga_mayor_talk:merchant_quest_about_job|Aprapó a feladat amit adtál nekem...
+dlga_mayor_talk:merchant_quest_about_job|Apropó a feladat amit adtál nekem...
 dlga_mayor_talk:close_window|[Távozás]
 ; dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
 ; dlga_mayor_info_talk:mayor_info_lord|Who rules this town?
@@ -877,7 +877,7 @@ dlga_town_dweller_talk:close_window|[Távozás]
 ; dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Yes, please go on.
 ; dlga_hall_guard_easter_egg:close_window|No, I don't care for gossip.
 ; dlga_hall_guard_easter_egg_scene:close_window|Well.. an unusual group of adventurers appeared recently: a man, a dwarf and an elf, and then...
-; dlga_start:hall_guard_talk|Your orders, Commander?
+dlga_start:hall_guard_talk|Az utasításai, Parancsnok?
 ; dlga_start:close_window.26|We are not supposed to talk while on guard, Commander.
 ; dlga_hall_guard_talk:hall_guard_duty|Stay on duty and let me know if anyone comes to see me.
 ; dlga_hall_guard_duty:close_window|Yes, Commander. As you wish.
@@ -889,7 +889,7 @@ dlga_town_dweller_talk:close_window|[Távozás]
 ; dlga_party_relieved:close_window|Thank you for helping us against those bastards.
 ; dlga_start:battle_reason_stated|I will drink from your skull!
 dlga_member_chat_00:close_window.1|^^MORGÁS!^^
-; dlga_member_chat_00:regular_member_talk|Your orders, Commander?
+dlga_member_chat_00:regular_member_talk|Az utasításai, Parancsnok?
 ; dlga_regular_member_talk:view_regular_char_requested|Tell me about yourself
 ; dlga_view_regular_char_requested:do_regular_member_view_char|Yes, Commander. Let me tell you all there is to know about me.
 dlga_do_regular_member_view_char:regular_member_talk|Volna még más is?
@@ -914,7 +914,7 @@ dlga_routed_allies_talk_troll:close_window.1|[Távozás]
 ; dlga_party_reinforce:party_reinforce_check|Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.
 ; dlga_party_reinforce:party_reinforce_end.2|Unfortunately you don't have any {s22} soldiers to reinforce us with.
 ; dlga_party_reinforce_check:party_reinforce_check_1|Let me check the soldier roster... 
-; dlga_party_reinforce_check_1:party_reinforce_end|So you've changed your mind...^I see.
+dlga_party_reinforce_check_1:party_reinforce_end|Szóval, meggondoltad magad...^Értem.
 ; dlga_party_reinforce_check_1:party_reinforce_end.1|Those soldiers are of no use to us. ^Take them back.
 ; dlga_start:close_window.27|You are making me late! Wizards are never late!
 ; dlga_start:close_window.28|It... beckonsssssss...

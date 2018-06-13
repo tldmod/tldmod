@@ -1,13 +1,13 @@
 skl_trade|Alkudozás
 skl_trade_desc|Ez a képesség teszi lehetővé hogy több felszerelést tudj lefoglalni kevesebb Erőforrás Pontért. (Csapat képesség)
-skl_leadership|Vezetés
+skl_leadership|Hadvezetés
 skl_leadership_desc|Minden pont növeli a sereged maximum számát 5-tel, növeli a sereged morálját és csökkenti a katonák fizetségét 5%%-al.\n(Vezető képesség)
 skl_prisoner_management|Fogolytartás
-skl_prisoner_management_desc|Ez a képesség növeli a maximum foglyok számát %d-al. (Vezető Képesség)
+skl_prisoner_management_desc|Ez a képesség növeli a maximum foglyok számát %d-al. (Vezető képesség)
 skl_persuasion|Meggyőzés
 skl_persuasion_desc|Ezzel a képességgel rávehetsz másokat, hogy azt tegyék, amit te szeretnél. (Személyes képesség)
 skl_engineer|Barkácsolás
-; skl_engineer_desc|Each point to this skill both decreases the time to craft and upgrade equipment, and allows better quality upgrades. (Party skill)
+skl_engineer_desc|Minden pont ezen a képességen csökkenti a tárgyak elkészülési- és fejlesztési idejét, és engedélyezni a jobb minőségű fejlesztéseket. (Csapat képesség)
 skl_first_aid|Elsősegély
 skl_first_aid_desc|A hősök szintenként 5%% életerőt nyernek vissza egy küldetés során elvesztett életerejükből. (Csapat képesség)
 skl_surgery|Sebészet
@@ -16,33 +16,33 @@ skl_wound_treatment|Sebkezelés
 skl_wound_treatment_desc|A csapat gyógyulási sebessége szintenként 20%%-al nő. (Csapat képesség)
 skl_inventory_management|Tárgykezelés
 skl_inventory_management_desc|Növeli a tárgykapacitást szintenként 6-al. (Vezető képesség)
-; skl_spotting|Spotting
-; skl_spotting_desc|Party seeing range is increased by 10%% per skill level. (Party skill)
+skl_spotting|Éberség
+skl_spotting_desc|A csapat látótávolságát megnöveli 10%% egységnyivel per képesség szint. (Csapat képesség)
 skl_pathfinding|Útkeresés
-; skl_pathfinding_desc|Party map speed is increased by 3%% per skill level. (Party skill)
+skl_pathfinding_desc|A csapat mozgási sebességét növeli 3%% egységnyivel per képesség szint. (Csapat képeség)
 skl_tactics|Taktika
-; skl_tactics_desc|Every two levels of this skill increases starting battle advantage by 1. (Party skill)
+skl_tactics_desc|A képesség minden két szintje növeli a csata kezdeti előnyét 1-gyel. (Csapat képesség)
 skl_tracking|Nyomkeresés
 skl_tracking_desc|Több információt kapsz a nyomokból. (Csapat képesség)
 skl_trainer|Kiképző
-; skl_trainer_desc|Every day, each hero with this skill adds some experience to every other member of the party whose level is lower than his/hers. Experience gained goes as: {0,4,10,16,23,30,38,46,55,65,80}. (Personal skill)
-skl_looting|Fosztogatás
-; skl_looting_desc|This skill increases the amount of loot obtained by 10%% per skill level. (Party skill)
+skl_trainer_desc|Minden nap, minden hős ezzel a képességgel ad némi tapasztalatot minden más csapattagnak, akinek a szintje alacsonyabb az övénél. A tapasztalat szerzés a következő képen megy: {0, 4, 10, 16, 23, 30, 38, 46, 55, 65, 80}. (Személyes képesség)
+skl_looting|Zsákmányszerzés
+skl_looting_desc|Ez a képesség növeli a zsákmányt 10%% egységnyivel per képesség szint. (Csapat képesség)
 skl_horse_archery|Lovasíjászat
-; skl_horse_archery_desc|Reduces damage and accuracy penalties for archery and throwing when mounted. (Personal skill)
+skl_horse_archery_desc|Csökkenti a sebzés- és célzás büntetést íjászatra és dobófegyverre lovaglás közben. (Személyes képesség)
 skl_riding|Lovaglás
-; skl_riding_desc|enables you to ride horses (or other beasts) of higher difficulty levels and increases your riding speed and manuever. (Personal skill)
+skl_riding_desc|Engedélyezi hogy magasabb szintű lovakat (és más bestiákat) ülj meg, és növeli a lovaglási sebességet és fordulékonyságot. (Személyes képesség) 
 skl_athletics|Atlétika
 skl_athletics_desc|Növeli a futósebességet. (Személyes képesség)
 skl_shield|Pajzshasználat
-; skl_shield_desc|reduces damage to shields (by 8%% per skill level) and improves shield speed and coverage. (Personal skill)
+skl_shield_desc|Csökkenti a pajzsokat ért sebzést (8%% egységnyivel per képesség szint) és növeli a pajzs felemelési sebességét és lefedési mértékét. (Személyes képesség)
 skl_weapon_master|Fegyvermester
-; skl_weapon_master_desc|makes it easier to learn weapon proficiencies and increases the proficiency limits. Limits go as: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Personal skill)
-; skl_power_draw|Power Draw
-; skl_power_draw_desc|lets character use more powerful bows. Each point to this skill (up to four plus power-draw requirement of the bow) increases bow damage by 14%%. (Personal skill)
-; skl_power_throw|Power Throw
-; skl_power_throw_desc|Each point to this skill increases throwing damage by 10%%. (Personal skill)
-; skl_power_strike|Power Strike
-; skl_power_strike_desc|Each point to this skill increases melee damage by 8%%. (Personal skill)
+skl_weapon_master_desc|Könnyebbé teszi azt, hogy fegyverjártasságot tanulj és megnöveli a jártassági határokat. A határok a következőek: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Személyes képesség)
+skl_power_draw|Feszítési erő
+skl_power_draw_desc|Engedi hogy a karakter erősebb íjakat használjon. A képesség minden pontja (egészen négyig plusz az íj feszítési erő követelménye) növeli az íj sebzését 14%% egységnyivel. (Személyes képesség)
+skl_power_throw|Dobási erő
+skl_power_throw_desc|A képesség minden pontja növeli a dobási sebzést  10%%egységnyivel. (Személyes képesség)
+skl_power_strike|Csapási erő
+skl_power_strike_desc|A képesség minden pontja növeli a közelharci sebzést 8%%egységnyivel. (Személyes képesség)
 skl_ironflesh|Acéltest
 skl_ironflesh_desc|Minden pont növeli a maximális életerőt 2-vel. (Személyes képesség)

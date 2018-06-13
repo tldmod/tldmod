@@ -579,8 +579,8 @@ dlga_beorn_help1:beorn_help2a|(Skiń głową, nic nie mówiąc)
 dlga_beorn_help2:beorn_help3|Mądrze jest nie zbliżać się do tych co mu służą, ale dziś wyglądało na to że nie mogliśmy trzymać się od nich wystarczająco daleko. ^^Wszyscy nasi ludzie dowiedzą się jak wielu goblińskim głowom pozwoliłeś się dzisiaj turlać! I każdy powita cię z miodem i chlebem jeżeli kiedykolwiek zawitasz w jednej z naszych karczm.
 dlga_beorn_help2a:beorn_help3|Milczek z Ciebie, eh? Wydajesz się być bardziej jak my, a nie jak te nudne elfy śpiewające pieśni i recytujące swoje nużące poezje. ^^Wiesz co? Mam zamiar opowiedzieć moim ludziom o Tobie. Niech wszyscy się dowiedzą jak wielu orkom spuściłeś łomot dzisiejszego dnia. Od dzisiaj jesteś moim i mojego ludu przyjacielem. Miód i ciepłe serca powitają cię gdy tylko zawitasz w jednej z naszych drewnianych hal.
 dlga_beorn_help3:beorn_help4|(SAMOUCZEK NA TEMAT PUNKTÓW ZAOPATRZENIA)^^ Punkty Zaopatrzenia których możesz używać do handlowania z Beorningami to nie te które otrzymałeś w Lothlorien od elfów, lecz te które otrzymasz od Beorningów. Każda frakcja ma swoje własne unikalne Punkty Zaopatrzenia. ^^Sprawdź RAPORTY aby otrzymać więcej informacji.
-; dlga_beorn_help4:beorn_help4a|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?...
-; dlga_beorn_help4a:beorn_help5|*laugh with a pleasant ring* Do you deem elves to be bear-brothers too?... Golden mead is sweet and warms the heart, but perhaps elven blades and keen arrows are needed more in these dark days..
+dlga_beorn_help4:beorn_help4a|*śmiech z dobrym brzmieniem*Uważasz też elfy za braci ?...
+dlga_beorn_help4a:beorn_help5|*śmiech z dobrym brzmieniem*Uważasz też elfy za braci ?... Złoty miód jest słodki i ogrzewa serce, lecz być może w obecny mrocznych czasach bardziej potrzebujemy elfich ostrzy i strzał..
 dlga_beorn_help4:beorn_help5|(połóż rękę na piersi, ukłoń się i uśmiechnij się)
 dlga_beorn_help5:beorn_help6|Może i jesteśmy twardzi i włochaci, ponurzy i mroczni. Ale pomagamy naszym przyjaciołom, tym, którzy pomagają nam. ^^Jeśli nasi wodzowie uważają ciebie i twoje czyny za godne, podążymy za tobą w bój.
 dlga_beorn_help6:beorn_help7|(SAMOUCZEK NA TEMAT RANG) ^^ Punkty Rangi pozwalają na awans w szeregach twojej frakcji (oraz innych). Zostaniesz automatycznie awansowany na wyższą rangę jak tylko zdobędziesz wymaganą ilość Punktów Rangi ^^Ranga decyduje o maksymalnej wielkości twojego oddziału oraz pozwala na otrzymanie specjalnych nagród od władcy frakcji. W zależności od tego jak wysoką masz rangę będziesz też otrzymywał dzienny żołd.
@@ -784,7 +784,7 @@ dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|W porządku. Odesk
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Obawiam się, że nie mam ze sobą aż tylu żołnierzy.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Przykro mi. Teraz nie mogę tego zrobić.
 dlga_start:close_window.21|Cóż, prawie dotarliśmy do {s21}. Resztę drogi możemy przebyć sami. Oto twoja zapłata... {reg14} PP. Dzięki za odeskortowanie nas. Powodzenia.
-dlga_start:close_window.22|Precz, podły żebraku.
+dlga_start:close_window.22|Prawie dotarliśmy do {s21}. Dalej już sobie poradzimy. Dzięki za eskortę.^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|Bądź pozdrowion{y/a}. To pewnie ty jesteś naszą eskortą?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Tak. Jestem {playername}. Mam was eskortować do {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Cóż, dobrze wiedzieć, że nie będziemy podróżowali sami. Co mamy robić?
@@ -916,15 +916,15 @@ dlga_party_reinforce:party_reinforce_end.2|Niestety nie masz żadnych żołnierz
 dlga_party_reinforce_check:party_reinforce_check_1|Pozwól, że rzucę okiem na spis... 
 dlga_party_reinforce_check_1:party_reinforce_end|Więc zmienił{e/a}ś zdanie...^Rozumiem.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Ci żołnierze do niczego się nie nadają. ^Zabierz ich z powrotem.
-dlga_start:close_window.27|To... przyzywaaaaaaaaa...
-dlga_start:close_window.28|* wpatruje się w ciebie bez słowa *
+dlga_start:close_window.27|Przez ciebie się spóźnię. Czarodzieje nigdy się nie spóźniają!
+dlga_start:close_window.28|To... przyzywaaaaaaaaa...
 dlga_start:party_encounter_hostile_attacker|Nie macie szans przeciwko nam. Poddajcie się, albo wszyscy zginiecie...
 dlga_party_encounter_hostile_attacker:close_window|Nie atakujcie! Poddajemy się.
 dlga_party_encounter_hostile_attacker:close_window.1|Będziemy walczyć do końca!
 dlga_start:party_encounter_hostile_defender|Czego chcesz?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Poddaj się albo zginiesz!
 dlga_party_encounter_hostile_defender:close_window|Nieważne. Zostawimy was w spokoju.
-dlga_start:close_window.29|NO MATCHING SENTENCE!
+dlga_start:close_window.29|*wpatruje się w ciebie bez słowa*
 dlga_start:battle_reason_stated.1|Poddaj się lub zgiń. Wybieraj
 dlga_battle_reason_stated:close_window|Nie boję się was. Będę walczył{/a}.
 dlga_start:free|Witam. Co mogę dla ciebie zrobić?

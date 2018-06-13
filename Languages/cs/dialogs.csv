@@ -4,7 +4,7 @@ dlga_mutiny_pretalk_2:close_window|Na váš rozkaz, veliteli. Jak si přejete...
 dlga_start:mutiny_talk_1|Zdravim veliteli. Chci vam neco rict... Chlapi nejsou moc nadšeni, vlastně vůbec. ^Malo lidskeho masa, málo zábavy. ^Chlapi říkají, že nejste dost dobrý, veliteli!
 dlga_mutiny_talk_1:mutiny_talk_2|Cože?! Vzpoura ve válce? ^To se trestá smrtí, červe!
 dlga_mutiny_talk_2:close_window|Víte co? ^Chlapi mysli ze budu pro ně lepší velitel, když vás ZABIJU!
-dlga_start:troll_introduce_1|Problemo?
+dlga_start:troll_introduce_1|Problem?
 dlga_start:troll_talk_1|Máš nervy?
 dlga_troll_introduce_1:troll_goodbye|Co to.. Mluvící troll?!
 dlga_troll_introduce_1:close_window|Vlastním koně.
@@ -13,8 +13,8 @@ dlga_troll_talk_1:close_window|Vlastním koně.
 dlga_troll_talk_2:troll_talk_3|Výzva prijata!^^{s4}
 dlga_troll_beaten:troll_talk_1|Klaním se před vaší moudrosti, mistře Baitre od Trollu!
 dlga_troll_goodbye:close_window|TROLLLOLOOLOLOLOLOLOLOLOL!
-dlga_start:hobbit_merry_talk_met|Opet zdravim, {playername}!
-dlga_start:hobbit_pippin_talk_met|Opet zdravim, {playername}!
+dlga_start:hobbit_merry_talk_met|Opět zdravím, {playername}!
+dlga_start:hobbit_pippin_talk_met|Opět zdravím, {playername}!
 dlga_start:hobbit_general_talk_1|Zdravím, {sire/madam}! Mé jméno je Smelmir Brandorad, ale muzeš mi řikat Smíšek!
 dlga_start:hobbit_general_talk_1.1|Zdravím,  {sire/madam}! Jmenuji se Peregrin Bral ale radši mi říkejte Pippin!
 dlga_hobbit_general_talk_1:close_window|Teď nemám čas.
@@ -23,7 +23,7 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Musím říct. Myslím
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Pokud si vzpomínám, tak jsem potkal někoho jako ty v Minas Tirithu.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Vim. Prisel jsem z dalky! Jsem hobbit, {sire/madam}, z Kraje.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|Oh, to musi byt muj drahý bratranec! Peregrin Bral, aneb Pippin, jak mu rikaji. Jsme hobbiti, {sire/madam}, oba dva jsme prisli z Kraje! Jo, starej dobrej Pippin, docela by me zajmalo jak se mu dari v Minas Tirithu.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Ach, to musi byt muj drahy bratranec! Smelmir Brandorad, nebo Smisek mu take rikaji. Jsme hobbiti, {sire/madam}, a prisli jsme z Kraje. Oba! Copak Smisek, Zajímalo by mě, jak se mu dari v Edorasu.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|Ach, to musí být můj drahý bratranec! Smělmír Brandorád, nebo Smíšek mu také říkají. Jsme hobbiti, {sire/madam}, a přišli jsme z Kraje. Oba! Copak Smíšek, Zajímalo by mě, jak se mu daří v Edorasu.
 dlga_hobbit_general_talk_3:close_window|Tedy, prozatím neshledanou.
 dlga_start:hobbit_merry_talk_met.1|Vitej zpatky, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Vitej zpatky, {playername}!
@@ -35,10 +35,10 @@ dlga_treebeard_introduce_2:treebeard_introduce_3|Omlouvám se za vyrušení... J
 dlga_treebeard_introduce_3:treebeard_introduce_4|(Stromový obr s mohutnými končetinami pomalu otvírá ústa, která jsou skryta za malou větví, listy a mechem. Velmi hlubokým, pomalým a hřmícím hlasem velmi pomalu vykládá, tím nejimpozantnějším způsobem:)^'Brumm... Hmmm.. *Já* ti své jméno neřeknu.. rozhodně ne. Jelikož by to trvalo dlouhou chvíli. Mé jméno stále roste a žiji jíž velmi, velmi dlouho, takže mé jméno je jako příběh. Pravá jména Ti, v mém jazyce, Staré Entštině jak vy říkáte, řeknou příběh věcí, ke kterým patří. Je to půvabný jazyk, ale trvá dlouho v něm cokoliv povědět, protože nepovídáme o něčem, pokud nemá cenu o tom mluvit dlouho a poslouchat to.'
 dlga_treebeard_introduce_4:treebeard_introduce_5|Tak ty jsi ent! Legendy o vás hovoří, a já jsem poctěn, že jsem ve tvé přítomnosti, nechci tě obtěžovat, a odejdu, když si to budeš přát.
 dlga_treebeard_introduce_5:treebeard_questtalk|(Ztuhlý obr a ostatní enti stojí několik chvil nehybně a tiše. Větřík vane jejich listnatými vlasy a vousy. Ještě chvíli se na sebe enti dívají, jen ten nebývale ukvapený, připomínající jeřáb se zdá, že by rád promluvil. Mlčí ale, a čeká až promluví ztuhlý ent.)
-; dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?As I said before...:Hroom... We appreciate the courteous manners that you display. It is {reg1?unusual from your race:nice to speak with elves again}.} Times are not good, ever since the Entwives disappeared - and now there are many evil creatures released by the Dark Lord himself who are trying to destroy our homes. We seek someone who is fast but not hasty. Someone who can help us while we discuss our next moves.^Many bands of orcs have raided the woods and burned down our trees with fire arrows - if you were to defeat the orcs and make sure that they do not threaten the woods we would be grateful and consider you a true friend. Do this and we will talk again.
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2? Jak jsem řekl předtím ...: Hroom ... Vážíme si zdvořilých způsobů, které zobrazujete. Je to {reg1? Neobvyklé z vaší rasy: hezké mluvit s elfy znovu}.} Časy nejsou dobré, od chvíle, kdy Entwives zmizeli - a teď je mnoho zlí tvorů propuštěných Temným pánem, kteří se snaží zničit naše domovy . Hledáme někoho, kdo je rychlý, ale není urychlený. Někdo, kdo nám může pomoci při projednávání našich dalších kroků. ^ Mnoho skupin orků proniklo do lesa a spálilo naše stromy ohnivými šipkami - kdybyste porazili orkové a ujistili, že neohrožují lesy, budeme vděčný a považuje vás za pravého přítele. Udělejte to a my znovu promluvíme
 dlga_treebeard_quest_brief:close_window|Skřeti jsou skutečně zlá stvoření, zajistím, aby lesu znovu neublížili.
 dlga_treebeard_quest_brief:treebeard_pretalk|Omlouvam se. Na toto nemam prave ted cas. 
-; dlga_treebeard_questtalk:close_window|(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'
+dlga_treebeard_questtalk:close_window|(The Ent leader slowly opens his concealed mouth and the other Ents look at you and also slowly begin to utter a long deep sound that makes the ground shake a little - you realize that they are laughing in an Entish way. A relatively young Rowan tree looking Ent stomps his seven-toed large feet in the ground and the shake almost makes you fall.)^'Easy there, Quickbeam, we don't want to hurt our young warrior friend. Hrrrm... I am Treebeard, the oldest of the Ents, and we are all grateful for your services... Hrrrm... Let me give you a gift of Ent Water to celebrate your success.'
 dlga_treebeard_questtalk:close_window.1|(Ztuhlý obr a jeho společníci Entové stojí v tichosti, zatímco větřík se ochomýtá skrz jejich listnaté vlasy a vousy.)
 dlga_treebeard_pretalk:treebeard_talk_response|Hrmmm...Co byste racel vedet, mlady priteli?
 dlga_treebeard_talk_response:treebeard_about_himself|Reknete mi o sobe vic. 
@@ -49,7 +49,7 @@ dlga_treebeard_about_himself:treebeard_pretalk|(Entí vůdce vypadá odtažitě 
 dlga_treebeard_about_himself:treebeard_pretalk.1|Hrůůům... Jsem nejstarší z našeho plemene... Smrtelníci mi říkají Stromovous a elfové Fangor. Hůůům. Já, Kůrokůže a Lísteček jsme jediní entové, kteří kráčeli lesy před temnotou. Už nejsem tak pružný jak jsem býval... mladý Větvička se může ohýbat a mávat sebou jako štíhlý stromek ve větru... Hůůům... Kéž by tu tak byly entky.
 dlga_treebeard_about_entwives:treebeard_pretalk|(Entí vůdce se zatváří smutně, a jeho hlas je ještě hlubší:)"Hůůůům... to je smutný příběh... až les nebude ohrožen skřety, promluvíme si o tom."
 dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahůůůům... krásné entky... rády sází a pěstují... měli jsme jim více naslouchat... Hrůům... odešly do Hnědých zemí, aby ta zakládaly zahrady a učily smrtelníky starat se o půdu... navštěvovali jsme je... dokud... Sauron nezaútočil... entky jsou nyní pryč... hůům... Fimbrethil... měla barvu zralého obilí... hledali jsme je... ale nenašli... zatím...
-; dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... We are shepherds of the Trees and we protect them from perils. We are older than any of the mortal races but not as old as the Elves who cured us from dumbness. Things have changed over the ages. In the beginning we were more hasty and flexible. Over time many of us have been lost. Some of us are still true Ents, and lively enough in our fashion, but many are growing sleepy, going tree-ish, as you might say. Most of the trees are just trees, of course; but many are half awake. Some are quite wide awake, and a few are, well, ah, well getting Entish. That is going on all the time. When that happens to a tree, you find that some have bad hearts. Still, we do what we can. We keep off strangers and the foolhardy; and we train and we teach, we walk and we weed.
+dlga_treebeard_about_ents:treebeard_pretalk|Hrooom ... Jsme pastýři stromů a chráníme je před nebezpečím. Jsme starší než kterýkoli ze smrtelných závodů, ale ne tak starí jako elfové, kteří nás vyléčili z hlouposti. Věci se změnily v průběhu věků. Na začátku jsme byli rychlejší a pružnější. Časem jsme byli ztraceni. Někteří z nás jsou stále opravdoví Ents, a dost živě v naší módě, ale mnoho z nich roste ospalé, jde o stromy, jak bys mohl říct. Většina stromů je samozřejmě stromy, samozřejmě; ale mnozí jsou napůl vzhůru. Některé jsou poměrně široce vzhůru, a některé jsou, dobře, ah, a dostat Entista. To se děje po celou dobu. Když se to stane stromu, zjistíte, že někteří mají špatné srdce. Stále děláme, co můžeme. Zachováváme cizince a blázna; a my trénujeme a učíme, chodíme a my trávime.
 dlga_start:close_window.1|Mmmmm?
 dlga_start:close_window.2|Mmhhrmmm?
 dlga_start:close_window.3|Mmmrhrrhmm?
@@ -95,7 +95,7 @@ dlga_do_member_view_char:member_talk|Jeste neco?
 dlga_start:close_window.5|Odejdete kdykoliv budete pripraven.
 dlga_start:close_window.6|Prosim, uz dnes nemrhejte mym casem. Mozna bychom se meli potkat pozdeji.
 dlga_companion_recruit_signup_response:close_window|Bohumzel, prave ted nemůzu prijmout dalsi krky do nasi skupiny. 
-; dlga_companion_recruit_rank:close_window|It seems that you are not esteemed enough by my people, {playername}. You are a {s29} and you need to be a {s24} for me to join [{reg3} more rank points needed].^Let's speak again when you are more accomplished.
+dlga_companion_recruit_rank:close_window|Zdá se, že můj lid, {playername}, nejste dostatečně vážený. Jste {s29} a musíte být {s24}, abych se připojil k [{reg3} více bodů potřebných]. ^ Pojďme se mluvit znovu, když jste víc dokončeni.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Jsem rád, že jsi se stal {s29}, a těším se, že se k tobě připojím.
 dlga_companion_recruit_payment_response:close_window|V tom pripade s tim nemuzu nic moc nadelat.
 dlga_start:companion_recruit_meet_again|Znovu se setkavame.
@@ -106,7 +106,7 @@ dlga_companion_recruit_backstory_delayed_response:companion_recruit_signup_b|Moz
 dlga_companion_recruit_backstory_delayed_response:close_window|Na tom nezalezi, snad priste.
 dlga_companion_recruit_signup_confirm:close_window|Vyborne! Dejte mi par minut na pripravu a budeme moci vyrazit.
 dlga_start:companion_rehire|Ma nabidka k memu navratu stale plati, pokud pro me najdete misto. 
-; dlga_start:companion_rehire.1|It is good to see you alive, {s5}! {s6}, and I did not know whether you had been captured, or slain, or got away. I've been waiting here since then, looking for news of your fate. Shall I get my gear together and rejoin your company?
+dlga_start:companion_rehire.1|Je dobré tě vidět naživu, {s5}! {s6} a nevěděla jsem, zda jste byli zajati nebo zabiti, nebo jste utekl. Čekám na to od té doby a hledám zprávy o vašem osudu. Musím dostat mé vybavení dohromady a vrátit se k vaší společnosti?
 dlga_start:companion_was_dismissed|Jak rád tě vidím, {s21}! Těšil jsem se, že se s tebou setkám.
 dlga_companion_was_dismissed:companion_rehire|{s5}. Chtěl bys, abych se vrátil k tvé společnosti?
 dlga_companion_rehire:companion_recruit_signup_confirm|Vitej zpet priteli!
@@ -122,7 +122,7 @@ dlga_companion_personalityclash_response:close_window|Považuji {s11} za zážen
 dlga_companion_personalityclash_response:close_window.1|Máš pravdu, také se mi nelíbí chování {s11}, a řeknu {reg11?her:him} to.
 dlga_companion_personalityclash_response:close_window.2|Nemam cas na vase sarvatky.
 dlga_companion_personalitymatch_response:close_window|Velmi dobre.
-; dlga_event_triggered:companion_faction_demolished|{s5}, {reg6?our:my} {s6} homeland is suffering grievously in the War, I ask you to consider helping {reg6?our:my} people as soon as we are rested and ready.
+dlga_event_triggered:companion_faction_demolished|{s5}, {reg6? our: my} {s6} vlasť trpí těžce ve válce, žádám vás, abyste pomohli {reg6? our: my} lidem, jakmile si odpočineme budeme připraveni.
 dlga_companion_faction_demolished:close_window|Pak tedy vyrazíme {s6} na pomoc. 
 dlga_companion_faction_demolished:close_window.1|Je mi lito, ale jsme potreba jinde.
 dlga_companion_home_description:companion_home_description_2|Reknete mi vice.
@@ -133,8 +133,8 @@ dlga_player_hire_troop:player_hire_troop_give|Někteří vojáci v mé skupině 
 dlga_player_hire_troop:close_window|Chci si prohlédnout své vojáky, co zde sídlí.
 dlga_player_hire_troop:close_window.1|Potrebuji nejaky trenink.
 dlga_player_hire_troop:tld_sell_prisoners|Dovezl jsem vam nejake zajatce.
-; dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Let's see the wretched scum.
-; dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Let me check our dungeon records...
+dlga_tld_sell_prisoners:tld_sell_prisoners_check|{s33} Podívejme se ty zoufalče
+dlga_tld_sell_prisoners_check:tld_sell_prisoners_2|Nech mě si prohlédnout záznamy žaláře
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle|Zmenil jste svůj nazor, eh?
 dlga_tld_sell_prisoners_2:player_hire_troop_nextcycle.1|Postaram se o to, aby jste z nasich zalaru nikdy nevylezl.
 dlga_player_hire_troop:close_window.2|Stastnou cestu.
@@ -178,28 +178,28 @@ dlga_lord_meet_neutral:lord_intro.1|Moje jméno je {playername}. K vašim služb
 dlga_lord_meet_enemy:lord_intro|Jmenuji se {playername}.
 dlga_lord_meet_enemy:lord_intro.1|Říkají mi {playername}. Zapamatuj si to, hodně o mě uslyšíš.
 dlga_start:lord_start.3|Dobře, {playername}...
-; dlga_lord_start:lord_generic_mission_completed|Your surgeon managed to convince my friend and made the operation.  All we can do now is pray for his recovery. Anyway, I thank you for lending your surgeon to me, {playername}. You have a noble spirit. I will not forget it.
+dlga_lord_start:lord_generic_mission_completed|Váš chirurg se mi podařilo přesvědčit mého přítele a učinil operaci. Teď, co můžeme udělat, je modlit se za jeho zotavení. Každopádně vám děkuji, že jste mi půjčil svého lékaře, {playername}. Máte ušlechtilého ducha. Nezapomenu na to.
 dlga_lord_start:lord_investigate_fangorn_completed0|{playername}, vrátil ses z Fangornu, co ji tam zjistil?
 dlga_lord_investigate_fangorn_completed0:lord_investigate_fangorn_completed1|Ty stromy jsou živé! Útočí na nás!
 dlga_lord_investigate_fangorn_completed1:close_window|Už dlouho jsem si to myslel. Dobře jsi mi posloužil, {playername}.
-; dlga_lord_start:close_window|My patience is over. I was expecting you to tell me something about Fangorn by now, but you know nothing.
+dlga_lord_start:close_window|Má trpělivost je u konce. Očekával jsem, že mi řekneš něco o Fangornu, ale nic nevíš.
 dlga_lord_active_mission_2:lord_capture_troll_completed_two_trolls|Pane, tady ti dávám ne jednoho, ale dvě nestvůry!
 dlga_lord_active_mission_2:lord_capture_troll_completed_one_troll|Pane, zkrotil jsem tu nestvůru, kterou jste žádal.
-; dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|Two beasts! Excellent, {playername}. You proved worthy, and skill and dedication must be rewarded. With your two trolls, We can now make without one of those We were using for Our experiments. It is a fully trained slave, ready to fight under command. We mean YOUR command, {playername}.
+dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_trolls_thankyou|Dvě zvířata! Vynikající, {playername}. Dokázali jste se hodit a dovednost a odhodlání je třeba odměnit. S vašimi dvěma trolly, můžeme teď udělat bez jednoho z těch, které jsme použili pro naše experimenty. Je to plně vyškolený otrok, připravený bojovat pod velením. Máme na mysli VÁŠ příkaz, {playername}.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_info|Můžeme zkrotit tu nestvůru, aby nám sloužila?
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Děkuji, Pane. Budete potěšen způsobem, kterým bude tento troll využit.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Děkuji, Pane. Ale nejsem hoden Vašeho daru. Je pro mě moc nebezpečný.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Díky pane, ale nejsem hoden toho daru. [no room in party!]
-; dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Master, I will bring greater havoc if you also provide an armour for the beast [10/{reg20} influence].
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Are you questioning the abilities of your Master, {playername}? This beast is trained to attack enemies on sight. This is enough. But, you and your warriors keep at due distance from the beast when it fights, and never stand between it and its victims.
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Pane, přinesu větší , pokud také poskytneš brnění pro vliv šelmy [10 / {reg20}].
+dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Vyprávíte se o schopnostech svého Mistra, {playername}? Tato šelma je vycvičena k útoku na nepřátele na zrak. To stačí. Ale vy a vaši válečníci jste v době, kdy bojujete, držet v dostatečné vzdálenosti od zvířete a nikdy mezi ní a oběťmi nestál.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|Teď s tímto darem zanes smrt mezi mé nepřátele.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Jak si přeješ. Jiný z mých služebníků bude umět s tímto nástrojem zacházet.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Ty se opovažuješ žádat plně obrněného bojového zlobra {playername} do svých služeb? To není žádná drobnost. Ale jsi dovedný služebník, a známe tvé úmysly. Líbí se nám. Dostaneš ho.
-; dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|How dare you ask Us for more than We have planned for you in our great Wisdom? {playername}, you proved a mighty Servant today, but don't let your insolence test Our patience any further.
+dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Jak se opovažujete nás požádat o víc, než jsme plánovali pro vás v naší velké moudrosti? {playername}, dnes jste se ukázal jako mocný služebník, ale nenechte se tvé trpělivosti dále testovat.
 dlga_lord_capture_troll_completed_one_troll:close_window|Výborně {playername}. Jsi věrný a užitečný služebník. Ten zlobr nám dobře poslouží. Do kobky s ním.
-; dlga_lord_start:close_window.1|Too long ago, I asked you to take me one troll alive. But I should have known. How could I expect someone like {playername} to be up to the challenge. My servant was not skilled or faithful enough.
-; dlga_lord_start:lord_generic_mission_completed.1|News of your accomplishment against the wild trolls reached me. {s12} has one fear less to worry about, thanks to you, {playername}.
-; dlga_lord_start:lord_generic_mission_completed.2|Our scouts near {s12} have told us about your success. This will teach them from spying on us.^^The destruction of this camp will surely halt our enemies' advance.
+dlga_lord_start:close_window.1|Už dávno jsem vás požádal, abyste mě vzal jednoho trolla naživu. Ale měla jsem to vědět. Jak bych mohl očekávat, že někdo, jako je {playername}, bude schopen čelit výzvě. Můj služebník nebyl dostatečně kvalifikovaný ani věrný.
+dlga_lord_start:lord_generic_mission_completed.1|Zprávy o vašem úspěchu proti divokým trolům mi zasáhly. {s12} má jedno strach, že se nemusíte bát, díky tobě, {playername}.
+dlga_lord_start:lord_generic_mission_completed.2|Naši skautové poblíž nás {s12} nám řekli o vašem úspěchu. To nás naučí, aby nás špehovali. ^ Zničení tohoto tábora jistě zastaví pokrok našich nepřátel.
 ; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12} saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
 ; dlga_destroy_scout_camp_failed:close_window|I will do better next time.
 ; dlga_lord_start:lord_generic_mission_completed.3|We have heard from our scouts near {s12} that you have valiantly defended the village. These raiders are becoming bolder every day... ^^We sense that war is surely coming. Thank you once more, {playername}.
@@ -215,16 +215,16 @@ dlga_lord_follow_spy_half_completed:lord_pretalk|Dělal jsem, co jsem mohl, {s65
 dlga_lord_follow_spy_completed:lord_pretalk|Děkuji, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm. Jak si přejete, {s65}.
 ; dlga_lord_start:lord_generic_mission_completed.5|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.
-; dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. I have been waiting patiently for my slaves, yet none have returned. Have you an explanation? Were you outwitted by simple animals, or are you merely incompetent?
+dlga_lord_start:lord_bring_back_runaway_serfs_failed|{jméno hráče}. Trpělivě jsem čekal na své otroky, ale nikdo se nevrátil. Máte vysvětlení? Byli jste přeplněni prostými zvířaty, nebo jste prostě nekompetentní?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Odpusťtě, {s65}, ti otroci byli slizcí jako úhoři.
-; dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, that is hardly an excuse for failure, {playername}. Now if you will excuse me, I need to capture new men to work these fields before we all starve.
+dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, to je stěží ospravedlnění za selhání, {playername}. Teď, když mě omluvíte, potřebuji zachytit nové muže, aby pracovali na těchto polích předtím, než jsme hladoví.
 dlga_lord_start:lord_runaway_serf_half_completed|Zklamal jsi mě, {playername}. Chtěl jsem po tobě tři skupiny navrácených otroků. 3, ne {reg17}. Ti co se vrátili, teď budou muset dřít dvakrát tvrději. A co se týče tvé odměny {playername}, zaplatím ti jen za ty, co jsi vrátil, ne za ty uprchlé. Na, vem si to. Ať je to za námi.
 dlga_lord_runaway_serf_half_completed:lord_pretalk|Dakujem, si uzasny{s65}
 dlga_lord_runaway_serf_half_completed:lord_pretalk.1|Bah, tohle se ukázalo být ztrátou času.
-; dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. I am pleased that you delivered {reg13} units of {s4}, as I requested. I'm impressed.
+dlga_lord_start:lord_deliver_cattle_to_army_thank|Ah, {playername}. Jsem potěšen, že jsi doručil {reg13} jednotky {s4}, jak jsem požadoval. Jsem ohromen.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk|Bez problému, {s65}.
 dlga_lord_deliver_cattle_to_army_thank:lord_pretalk.1|K Vašim službám.
-; dlga_lord_start:lord_scout_waypoints_thank|You make a good scout, {playername}. My runner just brought me your reports of the mission to {s13}, {s14} and {s15}. Well done.
+dlga_lord_start:lord_scout_waypoints_thank|Učinil jsi dobré pozorování, {playername}. Můj posel mi zrovna přinesl hlášení o tvé misi u {s13}, {s14} a {s15}. Dobrá práce.
 dlga_lord_scout_waypoints_thank:lord_pretalk|Prostý úkol, {s65}.
 dlga_lord_scout_waypoints_thank:lord_pretalk.1|Nebylo to nic, co bych nezvládl.
 dlga_lord_scout_waypoints_thank:lord_pretalk.2|S potěšením, pane.
@@ -236,9 +236,9 @@ dlga_lord_mission_told_deliver_cattle_to_army_rejected:close_window|To je nešť
 dlga_lord_start:lord_report_to_army_asked|Konečně jsi tu, {playername}. Čekali jsme tě. Snad máš s sebou dost zkušených vojáků.
 dlga_lord_report_to_army_asked:lord_report_to_army_completed|Mám sebou skupinu dobrých, zocelených vojáků. Jsme připraveni se k tobě přidat.
 dlga_lord_report_to_army_asked:lord_report_to_army_continue|Ještě nemám dostatečné množství jednotek. Budu potřebovat více času.
-; dlga_lord_report_to_army_completed:close_window|Excellent. I will send the word when I have a task for you. For the moment, just follow us and stay close. We'll be moving soon.
-; dlga_lord_report_to_army_continue:close_window|Then you'd better hurry. We'll be moving out soon against the enemy and I need every able hand we can muster.
-; dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, I need a volunteer to scout the area. We're sorely lacking in information, and I simply must have a better picture of the situation before we can proceed. I want you to go to {s13}, {s14} and {s15} and report back whatever you find.
+dlga_lord_report_to_army_completed:close_window|Výborbě. Dám ti vědět, až pro tebe budu mít nějakou práci. A teď, mě prostě následuj a zůstaň na blízku. Brzy se posuneme dál.
+dlga_lord_report_to_army_continue:close_window|Potom by jsi si měl pospíšit. Brzy vytáhneme proti nepřítele a já budu potřebovat každého schopného muže.
+dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, potřebuji dobrovolníka k prozkoumání oblasti. Máme nedostatek informací a potřebuji lepší obrázek ohledně situace. Chci, aby jsi šel do {s13}, {s14} a {s15} a nahlásil cokoliv co najdeš.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|Máš svého dobrovolníka, pane.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_rejected|Obávám se, že musím odmítnout.
 dlga_lord_mission_told_scout_waypoints_accepted:close_window|Výborně, projdi kolem  {s13}, {s14} a {s15} a zjisti, co tma je. Zapiš si, co tam je, a vrať se co nejdřív.
@@ -248,12 +248,12 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Je celý tvůj.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Obávám se, že mám pro něj jiné využití.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Výborně! Nechal jsem své muže poslat ho do našeho vězení. Toto naší věci moc pomůže.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Škoda, byl by pro nás drahocenný, {playername}.
-; dlga_lord_start:lord_pretalk|Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there.
+dlga_lord_start:lord_pretalk|Ah, vítejte, {s24}. ^ Měli byste už vědět, že {s12}. Vaše povinnost je pomoci v našem boji, {playername}. Když prokážete, že si zasloužíte svou důvěru [level {reg1}], dovolím vám také přístup k této hrudi.
 dlga_lord_start:lord_talk|Co se děje?
 dlga_lord_pretalk:lord_talk|Jeste neco?
-; dlga_lord_talk:lord_lend_companion_end|I should like {s14} returned to me, {s65}, if you no longer require {reg3?her:his} services.
-; dlga_lord_lend_companion_end:lord_pretalk|You've too many men in your company already, {playername}. You could not lead any more at the moment.
-; dlga_lord_lend_companion_end:lord_pretalk.1|Certainly, {playername}. {reg3?She:He} is a bright {reg3?girl:fellow}, you're a lucky commander to have such worthy companions.
+dlga_lord_talk:lord_lend_companion_end|Rád bych se {s14} vrátil ke mně {s65}, pokud už nebudete potřebovat služby.
+dlga_lord_lend_companion_end:lord_pretalk|Máte už ve vaší společnosti příliš mnoho mužů, {playername}. V tuto chvíli už nemůžete vést.
+dlga_lord_lend_companion_end:lord_pretalk.1|Jistě, {playername}. {reg3? Je: Je} jasná {reg3? dívka: kolegyně}, máte štěstí, že máte takových hodných společníků.
 dlga_lord_talk:lord_message_delivered|Nesu zprávu od {s9}.
 dlga_lord_talk:lord_message_delivered_enemy|Nesu zprávu od {s9}.
 dlga_lord_talk:lord_active_mission_1|Ohledně toho úkolu...
@@ -313,16 +313,16 @@ dlga_lord_get_reward_item:lord_pretalk|Tak nic.
 dlga_lord_get_reward_item_answer:lord_pretalk|Dobrá, použij ho k zničení nepřátel.
 dlga_lord_talk:marshall_ask|Rád bych se s tebou poradil o válce.
 dlga_marshall_ask:lord_pretalk|Nebudu brát radu od pouhého {s25}, {playername}. Kdyby byl  {s24} bylo by tomu jinak.
-; dlga_marshall_ask:lord_pretalk.1|You are an accomplished commander, {playername}, but your influence is waning. It would not be prudent to listen to your advice.^[{reg15} influence needed, only {reg14} held]
-; dlga_marshall_ask:lord_pretalk.2|We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.
+dlga_marshall_ask:lord_pretalk.1|Jste dokonalý velitel {playername}, ale váš vliv je ubývající. Nebylo by rozumné poslouchat vaši radu. Potřeboval vliv {reg15}, pouze {reg14} držel]
+dlga_marshall_ask:lord_pretalk.2|Nemůžeme si dovolit potkat se s nepřítelem, {playername}. Stále potřebujeme budovat své síly a budeme silní, bohužel jsme jen {s23}.
 dlga_marshall_ask:lord_pretalk.3|Jsme na výpravě, {playername}, tvá rada musí počkat. 
 dlga_marshall_ask:marshall_suggest|Poslouchám, {playername}. Co navrhuješ?
-; dlga_marshall_suggest:marshall_answer|We should ride to besiege {s1} at once.
-; dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.
-; dlga_marshall_answer:close_window|Very well, {playername}, I shall defer to your judgement. I shall send messengers to gather our forces.^Follow me and stay close - we ride to {s4}!
-; dlga_lord_talk:deliver_gift_1|I bring a gift of {s1} from {s3} to the people of {s2}.
-; dlga_send_gift_1:lord_pretalk|You are already {s4}, {playername}. It would be wise to deliver that one first.
-; dlga_send_gift_1:lord_pretalk.1|Unfortunately, you cannot afford to send a gift right now {playername}.^^[not enough Resource Points]
+dlga_marshall_suggest:marshall_answer|Měli bychom jezdit obléhat {s1} najednou.
+dlga_marshall_suggest:lord_pretalk|Never mind, I trust your judgement.
+dlga_marshall_answer:close_window|Velmi dobře, {playername}, odložím svůj názor. Posílám posly, aby shromáždili naše síly. ^ Následujte mě a zůstaňte blízko - jdeme na {s4}!
+dlga_lord_talk:deliver_gift_1|Přináším dárek {s1} od {s3} lidem {s2}.
+dlga_send_gift_1:lord_pretalk|Jste už {s4}, {playername}. Bylo by moudré ho nejprve doručit.
+dlga_send_gift_1:lord_pretalk.1|Bohužel si nemůžete dovolit poslat dárek právě teď {playername}. ^ ^ [Nedostatek zdrojů]
 dlga_send_gift_1:send_gift_2|Velmi dobře. Komu by si chtěl doručit dar?
 dlga_send_gift_1:send_gift_2.1|Velmi dobře. Komu chceš dát úplatek?
 dlga_send_gift_2:lord_pretalk|Nevadí.
@@ -332,11 +332,11 @@ dlga_send_gift_4:lord_pretalk|Nevadí.
 dlga_send_gift_5:lord_pretalk|Dobře {playername}. Hodně Štěstí.
 dlga_lord_talk:lord_give_order_ask|Mám pro tebe Nový úkol.
 dlga_lord_give_order_ask:lord_give_order|Ano?
-; dlga_lord_give_order:lord_give_order_answer|Follow me. [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask|Go to... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask.1|Patrol around... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_details_ask.2|Engage enemies around... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_stop|I won't need you for some time. You are free to do as you like.
+dlga_lord_give_order:lord_give_order_answer|Následuj mě. [Náklady {reg1} / {reg2} vliv]
+dlga_lord_give_order:lord_give_order_details_ask|Přejděte na ... [Náklady {reg1} / {reg2} vliv]
+dlga_lord_give_order:lord_give_order_details_ask.1|Hlídka kolem ... [Náklady {reg1} / {reg2} vliv]
+dlga_lord_give_order:lord_give_order_details_ask.2|Zapojte nepřátele kolem ... [Náklady {reg1} / {reg2} vliv]
+dlga_lord_give_order:lord_give_order_stop|Nepotřebuji vás už nějakou dobu. Máte možnost dělat, jak chcete.
 dlga_lord_give_order:lord_pretalk|To je jedno.
 dlga_lord_give_order_details_ask:lord_give_order_details|Kde?
 dlga_lord_give_order_details:lord_pretalk|To je jedno.
@@ -385,7 +385,7 @@ dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Černokněžník z Te
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Odpusťte mi, má Paní, ale naléhavější záležitosti mi zabránili v zabití černokežníka, a mezitím utekl.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Černokněžník z Temného hvozdu pořád žije. Přerušili jsme jeho kouzla, ale uprchl.
 dlga_lord_mission_sorcerer_completed:lord_pretalk|Ano {playername}, pocítila jsem jeho smrt. Závoj čarodejnictví odvanul z lesa a mnoho mé síly se vrátilo. Vykonal jsi velkou službu pro náš lid a za ni ti náleží dárek. Vem si tohle...
-; dlga_lord_mission_sorcerer_failed:lord_pretalk|Yes {playername}, I sense the dark arts of enemy still pressing upon us. His efforts seem greater now. It is unfortunate that you could not stop him. No doubt he will take additional precautions in future to ward against our efforts. He will likely never be found while Dol Guldur still stands. Thank you for your efforts but leave me now. I grow tired.
+dlga_lord_mission_sorcerer_failed:lord_pretalk|Ano {playername}, cítím, že tmavé umění nepřítele, které se na nás stále naléhá. Jeho úsilí se nyní zdá být větší. Je nešťastné, že jste ho nemohli zastavit. Není pochyb o tom, že v budoucnu přijme dodatečná opatření, která budou proti našim snahám. Pravděpodobně nikdy nebude nalezen, zatímco Dol Guldur stále stojí. Děkuji za vaše úsilí, ale teď mě nechte. Stávám se unavená.
 dlga_lord_active_mission_1:lord_lend_companion_end|Ty bys chtěl svého společníka zpět? Chápu...
 dlga_lord_active_mission_1:lord_pretalk|Prosím tě o trpělivost, {playername}, pořád tvého společníka potřebuji, vrať se prosím, až bude po všem.
 dlga_lord_active_mission_1:lord_active_mission_2|Ano, pokročil jsi s tím nějak?
@@ -409,74 +409,74 @@ dlga_lord_hunt_down_fugitive_fail:lord_pretalk|Je to smutný den kdy ten {s44} z
 dlga_lord_active_mission_2:lord_active_mission_3|Pracuji na tom.
 dlga_lord_active_mission_2:lord_mission_failed|Obávám se, že to nezvládnu.
 dlga_lord_active_mission_3:lord_pretalk|Dobře, pamatuj, že na tebe spoléhám.
-; dlga_lord_request_mission_ask:lord_pretalk|You still haven't finished the last task I gave you, {playername}. You should be working on that, not asking me for other things to do.
+dlga_lord_request_mission_ask:lord_pretalk|Stále jste nedokončil poslední úkol, který jsem vám dal, {playername}. Měli byste pracovat na tom, aniž byste mě žádali o další věci.
 dlga_lord_request_mission_ask:lord_pretalk.1|Nemám pro tebe další úkoly.
 dlga_lord_request_mission_ask:lord_tell_mission|Úkol?
-; dlga_lord_tell_mission:lord_mission_capture_troll_1|You are a brave servant, {playername}, and we will give you a glimpse of our plans. We need fresh monstrous blood and flesh. We need it to twist it and bend it and torture it and tame it and reshape it and breed it, to forge and strengthen our own breeds of colossal warriors!
+dlga_lord_tell_mission:lord_mission_capture_troll_1|Jste statečný sluha, {playername}, a my vám ukážeme naše plány. Potřebujeme čerstvou obrovskou krev a maso. Potřebujeme to, aby se to otočila, ohýbala a mučila, zkrožovala a vyměňovala a zrodila ji, utvářila a posilovala vlastní plemena kolosálních válečníků!
 dlga_lord_mission_capture_troll_1:lord_mission_capture_troll_2|Jak mohu posloužit, Mistře?
-; dlga_lord_mission_capture_troll_2:lord_mission_capture_troll_3|A wild cave troll, {playername}. Capture one strong exemplar for me and bring it to me, alive. We need one more of them for Our experiments! Two, would be better. The more we have, the better.
+dlga_lord_mission_capture_troll_2:lord_mission_capture_troll_3|Divoký jeskynní troll, {playername}. Zachyťte pro mě jeden silný exemplář a přineste mi to, živý. Potřebujeme ještě jednu z nich pro naše experimenty! Dvě, by bylo lepší. Čím víc máme, tím lépe.
 dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoa|Kde může být taková zrůda nalezena?
 dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infob|Jak může být taková zrůda zajmuta?
 dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_infoc|Jak ti může být taková zrůda přivezena?
 dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_accepted|Budete mít svého divokého trola, Mistře.
 dlga_lord_mission_capture_troll_3:lord_mission_capture_troll_rejected|Smilování, Mistře! Ta zrůda mě rozdrtí jako brouka!
-; dlga_lord_mission_capture_troll_infoa:lord_mission_capture_troll_3|In these time of blood and shadows, wild cave trolls are growing excited and they are spreading from their lairs in the Misty Mountains... the best place where to look would be around the caves there.
-; dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|You shall find one, and take it down in combat. Fear not of killing it during the fight: a troll is too coriaceous a beast for your weapons to kill it right away... and they do recover, more than you would expect. After it falls over its own black blood, you shall carry it to our feet, still breathing.
-; dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|You will be provided with a robust wheeled cage. It harbours more than enough space for a troll, and it can be pulled around. Hasten your steps on the way back: not even the metal of the cage is totally safe against the fury of a troll blinded by rage and pain. Make sure it does not break free and kill you.
-; dlga_lord_mission_capture_troll_rejected:lord_pretalk|Only now you reveal what you are really worth, but I knew that of you all along. Weak, coward {playername}. Now begone.
-; dlga_lord_mission_capture_troll_accepted:lord_pretalk|I knew I could count on your strength and bravery. Slaves, give to {playername} one of our wheeled cages! {playername}, return when you have my gift. I want it before {reg1} dawns are passed.
-; dlga_lord_tell_mission:lord_tell_mission_kill_troll|Our land is facing dangers that were unheard of in our times. People are disappearing in the outskirts of {s3}. Not only commoners, but even small armed groups who venture outside the walls never return. There have been the strangest rumors, but I know what we are facing.
-; dlga_lord_tell_mission_kill_troll:lord_mission_told|Wild trolls, {playername}. Giant beasts, twisted montrousities. They never ventured so far from their dark caves in the mountains but at least one of them have been sighted around {s3}. I don't know what witchery has caused this, but I need that thing to be dispatched.
+dlga_lord_mission_capture_troll_infoa:lord_mission_capture_troll_3|V těchto časech krve a stínů se divoké jeskynní trolové rozruší a rozšiřují se z jejich doupětek v Mlžných horách ... nejlepší místo, kde by se dalo podívat na jeskyně tam.
+dlga_lord_mission_capture_troll_infob:lord_mission_capture_troll_3|Najdete ji a vezmete ho do boje. Nebojte se ho zabít během boje: troll je příliš kožovitý zvíře pro vaše zbraně, aby ho okamžitě zabili ... a oni se zotavují, víc, než byste čekali. Poté, co spadne nad svou vlastní černou krev, musíte ji nosit na nohy a stále dýchat.
+dlga_lord_mission_capture_troll_infoc:lord_mission_capture_troll_3|Budete mít k dispozici robustní kolovou klec. Je to pro trolle více než dostatek místa a může být vytaženo. Zvyšte své kroky na cestě zpátky: ani kov kovové klece není naprosto bezpečný proti zuřivosti trollu oslepeného zuřivostí a bolestí. Ujistěte se, že se nerozbije a nezabije vás.
+dlga_lord_mission_capture_troll_rejected:lord_pretalk|Teprve teď odhalíte to, co opravdu stojí za to, ale já jsem o tom věděl po celou dobu. Slabý, zbabělý {playername}. Nyní se ztratil.
+dlga_lord_mission_capture_troll_accepted:lord_pretalk|Věděla jsem, že budu moci spoléhat na vaši sílu a statečnost. Slavové, dejte {playername} jednu z našich kolových klecí! {playername}, vraťte se, když máte svůj dárek. Chci to předtím, než se objeví {reg1} úsvitu.
+dlga_lord_tell_mission:lord_tell_mission_kill_troll|Naše země čelí nebezpečím, které v naší době byly neslýchané. Lidé mizí na okraji {s3}. Nejen obyčejníci, ale dokonce i malé ozbrojené skupiny, které se odvádějí mimo stěny, se nikdy nevrátí. Došlo k nejobvyklejším pověrám, ale vím, na co čelíme.
+dlga_lord_tell_mission_kill_troll:lord_mission_told|Divoké trolly, {playername}. Obří zvíře, zkroucené montrousity. Nikdy se jim tolik nevzdávalo od svých temných jeskyní v horách, ale alespoň jeden z nich byl viděn kolem {s3}. Nevím, co to dělalo čarodějnictví, ale potřebuji, aby byla ta věc odeslána.
 dlga_lord_mission_told:lord_mission_kill_troll_info_a|Jak můžu s těmito zrůdami bojovat?
-; dlga_lord_mission_kill_troll_info_a:lord_mission_told|A troll is a dangerous creature indeed. A giant monster which possesses an incredible strength in its deformed muscles. Their skin is as hard as iron, and a tree trunk is but a small club when wielded in their hands. It is rumored that a single troll can easily best a group of half a dozen well armed and trained men, wasting each of them with a single blow. Not only men but horses too fear trolls. Be careful if you plan to charge one while mounted.
+dlga_lord_mission_kill_troll_info_a:lord_mission_told|Troll je opravdu nebezpečný tvor. Obří monstru, která má neuvěřitelnou sílu v deformovaných svalech. Jejich pokožka je stejně těžká jako železo a kmen stromu je jen malý klub, když je v rukách. Říká se, že jediný troll může snadno nejlépe sestavit skupinu půl tuctu dobře vyzbrojených a vyškolených mužů, kteří každou z nich ztrácejí jediným úderem. Nejen muži, ale i koně se také obávají trollů. Buďte opatrní, pokud máte v úmyslu nabít jednu při namontované.
 dlga_lord_mission_told:lord_mission_kill_troll_info_b|Myslíš si, že to přicházi z Mordoru nebo Isengardu?
-; dlga_lord_mission_kill_troll_info_b:lord_mission_told|No, I don't think so. We have news that both the White Wizard and the Black Tower have all kinds of monsters among their ranks, but from what I hear the beast terrifying {s3} is one savage, untamed beast. Remember, there could be more than one. But you can be sure that some obscure craft from the Enemy has led this new plague upon us.
-; dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|Here is a mission for a trusted and brave servant like you, {playername}. The strangest rumors reach my ears from the forest of Fangorn. Minions sent to harvest wood, and even my commanders traversing the place, occasionally fail to return. Other times, they report of mysterious losses among their troops. They blame ghosts, spirits of the wood, ancient curses... Nonsense! Puny excuses for their own cowardice or ineptitude!
+dlga_lord_mission_kill_troll_info_b:lord_mission_told|Ne, nemyslím si. Máme zprávy, že jak Bílý čaroděj, tak Černá věž mají mezi svými řadami všechny druhy příšer, ale z toho, co slyším, že šelma děsivá {s3} je jedno divoce nezkrotné zvíře. Pamatujte, že by mohlo existovat více než jedno. Ale můžete si být jisti, že nějaká tajemná řemesla od nepřátel nás vedla na tuto novou epidemii.
+dlga_lord_tell_mission:lord_mission_investigate_fangorn_0|Zde je poslání důvěryhodného a odvážného služebníka, jako jste vy, {playername}. Zvláštní zvesti se dostanou do uší z lesa Fangorn. Miniony poslali ke sklizni dřeva a dokonce i moji velitelé, kteří projíždějí kolem tohoto místa, se občas nedokázali vrátit. Jinak hlásí záhadné ztráty mezi vojáky. Obviňují duchové, dřevěné duchy, starodávné kletby ... Nesmysl! Pěkné ospravedlnění za vlastní zbabělost nebo nespolehlivost!
 dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_1|Co s tím mám udělat, Mistře?
-; dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_rejected|But Master, there is danger and pain in Fangorn! I've felt it myself!
-; dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|Maybe it is just that my other servants are unable to prevent the most cowardly worms in their troops from deserting.  Fools, blinded by superstitions.   Or, maybe, it is the treacherous ambushes of elven scum, hiding in the putrid trees as they usually do.   It could even be lowborn traitors from Rohan.  Or who knows what else. I want you to find out, {playername}.
+dlga_lord_mission_investigate_fangorn_0:lord_mission_investigate_fangorn_rejected|Ale mistře, v Fangornu je nebezpečí a bolest! Cítil jsem to sám!
+dlga_lord_mission_investigate_fangorn_1:lord_mission_investigate_fangorn_2|Možná je to jen to, že moji jiní služebníci nejsou schopni zabránit tomu, aby ti zbabělci v jejich vojácích byli zbabělí. Blázni, zaslepení pověrami. Nebo možná jsou to zrádné zálohy elfího odpadu, které se schovávají v rozbitých stromech, jako obvykle. Mohli by být dokonce i nízkorozpočtové zrádci z Rohanu. Nebo kdo ví co jiného. Chci, abyste zjistili {playername}.
 dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_accepted|Nebojím se žádných elfů nebo duše. Nechte to na mně, Mistře.
-; dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|Master, pity your servant! Don't ask me to venture in that cursed place!
-; dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|So you are like the other worms: a superstitious, worthless coward.  I overestimated you. Now, begone!
-; dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|Good. Go there and shed some light on this matter. Then return to me and report. I expect to see you back with news before {reg1} dawns are passed.
-; dlga_lord_tell_mission:lord_mission_find_lost_spears|Here is a mission for a trusted and brave commander like you, {playername}. We are ill equipped to fight off the Rhun hordes. Our armies are losing battles one by one. A legend tells that once upon a time, there were spears made by Dwarves for the armies of the great King Bladorthin (long since dead), each had a thrice-forged head and their shafts were inlaid with cunning gold, but they were never delivered or paid for..
+dlga_lord_mission_investigate_fangorn_2:lord_mission_investigate_fangorn_rejected|Mistře, lítost svého služebníka! Nepoužívejte mě, abych se odvážil na tomto prokletém místě!
+dlga_lord_mission_investigate_fangorn_rejected:lord_pretalk|Takže jste jako ostatní červi: pověrčivý, bezcenný zbabělec. Nadhodil jsem tě. Teď, prosím!
+dlga_lord_mission_investigate_fangorn_accepted:lord_pretalk|Dobrý. Jděte tam a vrhněte trochu světla na tuto záležitost. Pak se ke mně vrátit a nahlásit. Očekávám, že se vám vrátím se zprávou předtím, než bude vydáno {reg1} úsvitu.
+dlga_lord_tell_mission:lord_mission_find_lost_spears|Zde je poslání důvěryhodného a statečného velitele jako vy, {playername}. Jsme špatně vybaveni, abychom bojovali proti hordám Rhuna. Naše armády ztrácejí bitvy jeden po druhém. Legenda vypráví, že kdysi dávno existovaly oštěpy dudáků pro armády velkého krále Bladorthina (dávno mrtvé), každý měl třikrát kovanou hlavu a jejich šachty byly vykládané mazaným zlatem, ale nikdy nebyly doručeny nebo zaplaceno ..
 dlga_lord_mission_find_lost_spears:lord_mission_find_lost_spears_1|Co s tím mám udělat, můj Pane?
-; dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|These weapons would increase the effectiveness of our armies, but above all they will lift the spirits of our men. You'll have to find these spears. You'll have to go ask the dwarves for permission to search for the spears in the deeps of the Lonely Mountain. Beware, you may encounter some orcs or trolls in the tunnels. Are you available for this task?
+dlga_lord_mission_find_lost_spears_1:lord_mission_find_lost_spears_2|Tyto zbraně zvýší účinnost našich armád, ale především zvednou ducha našich mužů. Tyhle kopí budete muset najít. Budete muset požádat trpaslíky o povolení prohledat kopí v hlubinách Lonely Mountain. Dejte si pozor, mohou se v tunelech setkat s některými orky nebo trolly. Jste k dispozici pro tento úkol?
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_accepted|Nebojím se žádných skřetů, ani trolů! Najdu pro vás ta kopí, můj Pane.
 dlga_lord_mission_find_lost_spears_2:lord_mission_find_lost_spears_rejected|Bojím se, nemohu vám pomoct můj lorde.
-; dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|I see that discretion is the better part of your valor. Maybe you should stick to scouting duties.
+dlga_lord_mission_find_lost_spears_rejected:lord_pretalk|Vidím, že ta volnost je tím lepším dílem vaší chrabrost. Možná byste se měli držet průzkumných povinností.
 dlga_lord_mission_find_lost_spears_accepted:lord_pretalk|Tak hodně štěstí!
-; dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|There is an important service you can deliver to our people, {playername}.
-; dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|My power to defend and preserve Lothlorien has been diminished by the devices of the enemy. A master sorcerer of Dol Guldur is invoking powerful charms that inhibit our defenses. Though he is a mortal, he has become one of the enemies greatest pupils in the use of arcane rituals and he represents a great threat to our people. You must hunt him down and destroy him!
-; dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Where can I find the sorcerer, my Lady?
-; dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Search for him in Mirkwood forest, not far from Dol Guldur itself. He is both a well guarded and a cautious foe so you will need to use stealth to prevent the alarm from being raised. If he escapes, he will relocate to other dark places that we know not of and continue his wickedness unchallenged. There will be only one opportunity to defeat him. Much depends on your success. Go with our blessings.
+dlga_lord_tell_mission:lord_mission_mirkwood_sorcerer|K dispozici je důležitá služba, kterou můžete poskytnout našim lidem, {playername}.
+dlga_lord_mission_mirkwood_sorcerer:lord_mission_mirkwood_sorcerer_0|Moje síla bránit a zachovat Lothlorien byla omezena přístroji nepřítele. Veliký čaroděj Dol Guldur vyvolává silné kouzlo, které brání naší obraně. Ačkoli je smrtelník, stal se jedním z nepřátel největších žáků při použití tajných rituálů a představuje velkou hrozbu pro naše lidi. Musíte ho lovit a zničit!
+dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Kde najdu kouzelníka, má paní?
+dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Vyhledejte ho v lese Mirkwoodu, nedaleko Dol Guldur. Je oba dobře střeženým a opatrným nepřítelem, takže budete muset použít tajnost, abyste zabránili tomu, aby byl alarm vyveden. Pokud unikne, přemístí se na další temná místa, o kterých nepoznáme, a pokračuje v jeho bezbožnosti bez jakýchkoli obav. Bude jen jedna možnost porazit ho. Hodně závisí na vašem úspěchu. Jděte s našimi požehnáními.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Jak přikazuješ, má Paní. Udělám jak nejlépe dovedu ke zničení tohoto zla.
-; dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.
-; dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.
-; dlga_lord_tell_mission:lord_mission_deliver_message|I need to send a letter to {s13} who should be currently at {s4}. If you will be heading towards there, would you deliver it to him? The letter needs to be in his hands in 30 days.
-; dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certainly, I intend to pass by {s4} and it would be no trouble.
-; dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|I doubt I'll be seeing {s13} anytime soon, {s65}. You'd best send it with someone else.
-; dlga_lord_mission_deliver_message_accepted:close_window|I appreciate it, {playername}. Here's the letter. Give my regards to {s13} when you see him.
-; dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah, all right then. Well, I am sure I will find someone else.
-; dlga_lord_tell_mission:lord_mission_deliver_message.1|I need to deliver a letter to {s13} of {s15}, who must be at {s4} currently. If you are going towards there, would you deliver my letter to him? The letter needs to reach him in 40 days.
+dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Odpusť mi, má paní. Mám několik naléhavých záležitostí, abych se mohl zúčastnit, než mohu pomoci svým lidem s touto záležitostí.
+dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Rozumím {playername}. Ale příliš dlouho se nehodí, ztratil jsem strach z toho, že jsem odolal jeho zlému kouzlu.
+dlga_lord_tell_mission:lord_mission_deliver_message|Potřebuji poslat dopis {s13}, který by měl být právě v {s4}. Budete-li tam směřovat, donesl byste mu to? Písmeno musí být v jeho rukou za 30 dní.
+dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Zajisté, {s4}  je po cestě a rád tam zajedu.
+dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Nemyslím si, že {s13} v dohledné době uvidím, {s65}. Raději s tím pošlete někoho jiného.
+dlga_lord_mission_deliver_message_accepted:close_window|Cením si toho {playername}. Tady je ten dopis. Pozdravuj {s13}, až ho uvidíš.
+dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah, no tak dobře. Inu, jsem si jist že naleznu i někoho jiného.
+dlga_lord_tell_mission:lord_mission_deliver_message.1|Musím doručit dopis patřící {s13} z {s15}, který se momentálně nachází v {s4}. Jestli tvá cesta vede tímto směrem, doručil by jsi mu tento dopis? Je třeba ho doručit do 40 dnů.
 ; dlga_lord_tell_mission:lord_mission_told|There is an urgent matter... My messenger is due to report on our battle plans to commanders in {s14}. His trip has been postponed several times already with all the trouble on the roads, but this time he must get through. So, I want to at least make sure he's well-guarded. I trust you well, {playername} so I would be very grateful if you could escort him to {s14} and make sure he arrives safe and sound.
-; dlga_lord_tell_mission:lord_mission_told.1|I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look, {reg3?she:he} may be able to convince him to give his consent to an operation.Please, I will be deeply indebted to you if you grant me this request.
+dlga_lord_tell_mission:lord_mission_told.1|Mám přítele, starého válečníka, jež je těžce nemocen. Do zranění se mu dostala infekce a bez pomoci chirurga nepřežije. Mám ho rád, {playername}, ale také je to nejzatvrzelejší člověk kterého znám a odmítá jakoukoliv pomoc, neboť zdejším doktorům nevěří. Není mi neznámo, že máš s sebou schopného chirurga. Pokud bys ho nechal se na mého přítele podívat, možná by ho dokázal přesvědčit, aby podstoupil operaci. Prosím tě, budu ti hluboce zavázán, splníš-li mé přání.
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Kolik mužů potřebujete?
 ; dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|If you can raise {reg1} {s14} and bring them to me, that will probably be enough.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Of course, {s65}. Give me {reg1} fresh recruits and I'll train them to be {s14}.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Samozřejmě, {s65}. Dej mi {reg1} čerstvých rekrutů a já je vycvičím aby byly {s14}.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Tyto dny jsem příliš zaneprázdněn abych někoho trénoval.
 ; dlga_lord_mission_raise_troops_accepted:close_window|You've taken a weight off my shoulders, {playername}. I shall tell my sergeants to send you the recruits and attach them to your command. Also, I'll advance you some money to help with expenses. Here, this purse should do it. Thank you for your help.
-; dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, of course. I had expected as much. Well, good luck to you then.
+dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ale samozřejmě. Tak jsem to také očekával. Inu, hodně štěstí.
 ; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There were news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Pak ho tedy najdu a vykonám zákon.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Momentálně mám příliš práce na to abych ho pronásledoval.
-; dlga_lord_mission_hunt_down_fugitive_accepted:close_window|That's excellent, {playername}.  I will be grateful, and of course your prowess wil be duly noted.  Well, good hunting to you.
+dlga_lord_mission_hunt_down_fugitive_accepted:close_window|To je znamenité, {playername}. Budu ti velice vděčný, a tvá statečnost bude samozřejmě řádně poznamenána. Inu, šťastný lov.
 ; dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|As you wish, {playername}.I suppose there are plenty of bounty hunters around to get the job done . . .
 ; dlga_lord_tell_mission:lord_mission_told.2|Well, some of the slaves working in {s4} have run away.  The ungrateful swine, whose lives we spared!  From what I've been hearing, they're running to {s3} as fast as they can, and have split up into three groups to try and avoid capture. I want you to capture all three groups and fetch them back to {s4} by whatever means necessary. I should really have them hanged for attempting to escape, but we need hands now, so I'll let them go off this time with a good beating.
 ; dlga_lord_tell_mission:lord_tell_mission_follow_spy|I have good information that a man in this very town is actually an enemy spy. He should be seized and hanged for his impudence, but we also believe that very soon he will leave town to meet with his master, the man to whom the spy feeds all his little whispers. The spy himself is of little import, but the master is a dangerous man, and could tell us a great deal if we could only get our hands on him...
 ; dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|I want you to wait here until the spy leaves town. Then you must follow him, stealthily, to the meeting place. You must take absolute care not to be seen by the spy on your way, else he may suspect foul play and turn back. When the master appears, you must ambush and arrest them and bring the pair back to me. Alive, if you please.
 dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|Provedu, {s65}.
-; dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|No, this skulking is not for me.
+dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_rejected|Ne, tohle potulování není pro mě.
 ; dlga_lord_tell_mission_follow_spy_accepted:close_window|Good, I'm sure you'll do a fine job of it. One of my men will point the spy out to you when he leaves, so you will know the man to follow. Remember, I want them both, and I want them alive.
 ; dlga_lord_tell_mission_follow_spy_rejected:lord_pretalk|A shame. Well, carry on as you were, {playername}...
 ; dlga_lord_tell_mission:lord_tell_mission_capture_enemy_hero|There is a difficult job I need done, {playername}, and you may be the one who can carry it off. I need someone to capture one of the enemy commanders and bring him to me. Afterwards, I'll be able to question him on the enemy battle plans. It is a simple enough job, but whomever you choose will be guarded by an elite band of personal retainers. Are you up for a fight?
@@ -485,11 +485,11 @@ dlga_lord_tell_mission_capture_enemy_hero:lord_tell_mission_capture_enemy_hero_r
 ; dlga_lord_tell_mission_capture_enemy_hero_accepted:close_window|I like your spirit! Go and bring me one of our enemies, and I'll toast your name in my hall when you return! And reward you for your efforts, of course...
 ; dlga_lord_tell_mission_capture_enemy_hero_rejected:lord_pretalk|Clearly you lack the mettle I had thought you possessed. Very well, {playername}, I will find someone else.
 ; dlga_lord_tell_mission:lord_tell_mission_lend_companion|I don't have a task for you right now, but your companion {s3} is a skilled {reg3?lass:fellow} and I need someone with {reg3?her:his} talents. Will you lend {reg3?her:him} to me for a while?
-; dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|How long will you be needing {reg3?her:him}?
+dlga_lord_tell_mission_lend_companion:lord_tell_mission_lend_companion_2|Jak dlouho budeš potřebovat {reg3?her:him} ?
 dlga_lord_tell_mission_lend_companion_2:lord_mission_lend_companion_told|Jenom pár dní, nanejvýš týden.
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|Tak tedy s tebou ponechám {s3} na jeden týden.
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|Je mi líto, ale nemohu být bez {s3} celý týden.
-; dlga_lord_tell_mission_lend_companion_accepted:close_window|I cannot thank you enough, {playername}. Worry not, your companion shall be returned to you with due haste.
+dlga_lord_tell_mission_lend_companion_accepted:close_window|Nemohu ti dostatečně poděkovat, {playername}. Neboj se, tvůj společník ti bude v rychlosti navrácen.
 ; dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|Well, that's damned unfortunate, but I suppose I cannot force you or {s3} to agree. I shall have to make do without.
 ; dlga_lord_tell_mission:lord_mission_told.3|Our scouts have noticed a recent increase in enemy activity. Unfortunately they almost never succeed in capturing live prisoners and bring them in for questioning, so we can piece together what the enemy is up to. So, I need a good warrior to find me {reg1} enemy prisoners, that I may question them.
 dlga_lord_tell_mission:lord_pretalk|Ne, {playername}. Momentálně tvoji pomoc nepotřebuji.
@@ -508,7 +508,7 @@ dlga_lord_leave:close_window.3|Jistě, Jistě. Sbohem.
 dlga_lord_leave:close_window.4|Znovu se setkáme.
 ; dlga_start:lady_escort_lady_succeeded|Thank you for escorting me here, {playername}, and ensuring my safe passage. Your services will be duly noted. 
 dlga_lady_escort_lady_succeeded:close_window|Bylo mi ctí sloužit,
-; dlga_start:prison_guard_players|Good day, Commander. Will you be visiting the prison?
+dlga_start:prison_guard_players|Zdravím veliteli. Chtěl by jste navštívit vězení?
 dlga_prison_guard_players:close_window|Ano, odemkni dveře.
 dlga_prison_guard_players:close_window.1|Ne, nyní ne.
 dlga_start:prison_guard_talk|Ano? Co si přeješ?
@@ -518,8 +518,8 @@ dlga_prison_guard_ask_prisoners:prison_guard_talk|Momentálně, {s51} {reg1?are:
 dlga_prison_guard_visit_prison:close_window|Samozřejmě, Veliteli. Vstupte.
 dlga_prison_guard_visit_prison:prison_guard_visit_prison_2|Potřebuješ povolení od lorda, aby jsi mohl mluvit s vězněmi.
 dlga_prison_guard_visit_prison_2:close_window|Dobře tedy. Zkusím to.
-; dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Come on now. I thought you were the boss here.
-; dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. You got that right. Still, I can't let you into the prison.
+dlga_prison_guard_visit_prison_2:prison_guard_visit_prison_3|Ale no tak. Já myslel že tu velíš ty.
+dlga_prison_guard_visit_prison_3:prison_guard_visit_prison_4|He-heh. To máš pravdu, ale stejně tě nemohu pustit dovnitř.
 ; dlga_prison_guard_visit_prison_4:close_window|All right then. I'll leave now.
 dlga_prison_guard_visit_prison_4:prison_guard_visit_prison_5|O pár kroků dál jsem našel váček se 100 denáry. Asi bude tvůj.
 ; dlga_prison_guard_visit_prison_5:close_window|Ah! I was looking for this all day. How good of you to bring it back {sir/madam}. Well, now that I know what an honest {man/lady} you are, there can be no harm in letting you inside. Go in.
@@ -542,8 +542,8 @@ dlga_castle_guard_intro_2:castle_guard_intro_2b|Ne, své zbraně nikomu nedám.
 dlga_start:castle_gate_guard_talk|Co si prejete?
 dlga_castle_gate_guard_pretalk:castle_gate_guard_talk|Ano?
 dlga_castle_gate_guard_talk:castle_gate_open|Potřebujeme na noc přístřeší. Pustíte nás dovnitř?
-; dlga_castle_gate_guard_talk:request_meeting_castle_lord|I want to speak with the lord of the castle.
-; dlga_castle_gate_guard_talk:request_meeting_other|I want to speak with someone in the castle.
+dlga_castle_gate_guard_talk:request_meeting_castle_lord|Chtěl bych si promluvit s pánem tohohle hradu.
+dlga_castle_gate_guard_talk:request_meeting_other|Chtěl bych si s někým promluvit.
 dlga_castle_gate_guard_talk:close_window|[Odejít.]
 ; dlga_request_meeting_castle_lord:close_window|Wait here. {s2} will see you.
 ; dlga_request_meeting_castle_lord:castle_gate_guard_pretalk|My lord is not here now.
@@ -555,7 +555,7 @@ dlga_request_meeting_5:request_meeting_6|Já čekám...
 ; dlga_request_meeting_6:close_window.1|{s2} says he will not see you. Begone now.
 ; dlga_castle_gate_open:close_window|My lord {s2} will be happy to see you {sir/madam}. Come on in. I am opening the gates for you.
 ; dlga_castle_gate_open:close_window.1|My lord {s2} is not in the castle now. But I think he would approve of you taking shelter here. Come on in. I am opening the gates for you.
-; dlga_castle_gate_open:close_window.2|Come on in. I am opening the gates for you.
+dlga_castle_gate_open:close_window.2|Pojď dovnitř. Otvírám pro tebe brány.
 ; dlga_castle_gate_open:close_window.3|Come on in. But make sure your men behave sensibly within the walls.  My lord {s2} does not want trouble here.
 ; dlga_castle_gate_open:close_window.4|My lord {s2} does not want you here. Begone now.
 ; dlga_start:caravan_help1|Thank you for helping! We are safe now. My name is Torbal, and I was just delivering some goods when we were attacked.^^ Have you seen those large orcs before? Those do not look like regular mountain ilk we are used to fend off easily. And the paint on their shields is an ancient Mordor sign. I haven't seen those this side of the river for a long time. ^^Dire things are afoot.. War is coming! ^^I advise you to go to the nearest town and warn everyone about what you've seen to whomever is in command there. It's an important matter, so please make haste.
@@ -603,7 +603,7 @@ dlga_request_meeting_5:request_meeting_6|Já čekám...
 ; dlga_start:ally_thanks_meet|I don't think we have met properly my friend. You just saved my life out there, and I still don't know your name...
 ; dlga_start:ally_thanks_meet.1|Your help was most welcome stranger. My name is {s1}. Can I learn yours?
 ; dlga_start:ally_thanks_meet.2|Thanks for your help, stranger. We haven't met properly yet, have we? What is your name?
-; dlga_ally_thanks_meet:ally_thanks_meet_2|My name is {playername}.
+dlga_ally_thanks_meet:ally_thanks_meet_2|Jmenuji se {playername}.
 ; dlga_ally_thanks_meet_2:close_window|Well met indeed {playername}. My name is {s1} and I am forever in your debt. If there is ever anything I can help you with, just let me know...
 ; dlga_ally_thanks_meet_2:close_window.1|Well met {playername}. I am in your debt for what you just did. I hope one day I will find a way to repay it.
 ; dlga_ally_thanks_meet_2:close_window.2|Well met {playername}. I am {s1}. Thanks for your help and I hope we meet again.
@@ -617,7 +617,7 @@ dlga_request_meeting_5:request_meeting_6|Já čekám...
 ; dlga_start:freed_hero_answer|I am in your debt for freeing me friend.
 ; dlga_freed_hero_answer:freed_hero_answer_1|You're not going anywhere. You'll be my prisoner now!
 ; dlga_freed_hero_answer_1:close_window|Alas. Will my luck never change?
-; dlga_freed_hero_answer:freed_hero_answer_2|You're free to go, {s65}.
+dlga_freed_hero_answer:freed_hero_answer_2|Jsi volný {s65}. Můžeš jít kam se ti zlíbí.
 ; dlga_freed_hero_answer_2:close_window|Thank you, Commander. I never forget someone who's done me a good turn.
 ; dlga_freed_hero_answer:freed_hero_answer_3|Would you like to join me?
 ; dlga_freed_hero_answer_3:close_window|All right I will join you.
@@ -685,7 +685,7 @@ dlga_mercenary_after_recruited:mercenary_after_recruited_2|připravte se, za ús
 dlga_trainer_explain_defense_3:trainer_explain_defense_4|co když nemám štít ? 
 ; dlga_trainer_explain_defense_4:trainer_combat_pretalk|Then you will have to use your weapon to block your opponent. This is a bit more difficult than defending with a shield. Defending with a weapon, you can block against only ONE attack direction. That is, you block against either overhead swings, side swings or thrusts. Therefore you must watch your opponent carefully and start to block AFTER he starts his attack. In this way you will be able to block against the direction of his current attack. If you start to block BEFORE he makes his move, he may just attack in another direction than the one you are blocking against and score a hit.
 ; dlga_trainer_explain_attack:trainer_explain_attack_2|Good question. Attacking is the best defence, they say. A tactic many fighters find useful is taking an offensive stance and readying your weapon for attack, waiting for the right moment for swinging it. [You can ready your weapon for attack by pressing and holding down the left mouse button.]
-; dlga_trainer_explain_attack_2:trainer_explain_attack_3|That sounds useful.
+dlga_trainer_explain_attack_2:trainer_explain_attack_3|To zní užitečně.
 ; dlga_trainer_explain_attack_3:trainer_explain_attack_4|It is a good tactic, but remember that, your opponent may see that and take a defensive stance against the direction you are swinging your weapon. If that happens, you must break your attack and quickly attack from another direction [You may cancel your current attack by quickly tapping the right mouse button].
 ; dlga_trainer_explain_attack_4:trainer_explain_attack_5|If my opponent is defending against the direction I am attacking from, I will break and use another direction.
 ; dlga_trainer_explain_attack_5:trainer_combat_pretalk|Yes, selecting the direction you swing your weapon is a crucial skill. There are four main directions you may use: right swing, left swing, overhead swing and thrust. You must use each one wisely. [to control your swing direction with default controls, move your mouse in the direction you want to swing from as you press the left mouse button].
@@ -697,9 +697,9 @@ dlga_trainer_explain_defense_3:trainer_explain_defense_4|co když nemám štít 
 ; dlga_trainer_choose_mode_player:trainer_choose_weapon.1|Mass melee.
 ; dlga_trainer_choose_mode_player:trainer_pretalk|None of that, I've changed my mind.
 ; dlga_trainer_choose_opponents:trainer_choose_opponents_player|Now choose the number of opponents.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon|One.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|Two.
-; dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|Three.
+dlga_trainer_choose_opponents_player:trainer_choose_weapon|Jeden.
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.1|Dva.
+dlga_trainer_choose_opponents_player:trainer_choose_weapon.2|Tři.
 ; dlga_trainer_choose_opponents_player:trainer_choose_weapon.3|Four, I feel lucky today.
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.4|čtyři
 dlga_trainer_choose_opponents_player:trainer_choose_weapon.5|osm
@@ -708,25 +708,25 @@ dlga_trainer_choose_opponents_player:trainer_pretalk|změnil jsem názor.
 dlga_trainer_choose_weapon:trainer_choose_weapon_player|nyní si vyber svůj oblíbený typ zbraně
 dlga_trainer_choose_weapon_player:trainer_begin_training|jednoruční zbraně.
 dlga_trainer_choose_weapon_player:trainer_begin_training.1|obouruční zbraně
-; dlga_trainer_choose_weapon_player:trainer_begin_training.2|Polearms.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.3|Bows.
-; dlga_trainer_choose_weapon_player:trainer_begin_training.4|Thrown weapons.
+dlga_trainer_choose_weapon_player:trainer_begin_training.2|dřevcové zbraně
+dlga_trainer_choose_weapon_player:trainer_begin_training.3|luky
+dlga_trainer_choose_weapon_player:trainer_begin_training.4|vrhací zbraně
 dlga_trainer_choose_weapon_player:trainer_pretalk|změnil jsem názor.
 dlga_trainer_begin_training:close_window|skvěle, až dokončíš trenink vrat se ke mě
 dlga_start:close_window.20|Táhni, odporný žebráku.
 dlga_start:mayor_begin|dobrý den, můj pane
 dlga_start:mayor_talk|zdravím cizinče, vidím že jsi poprvé v {s9}. jsem gildmistr města
-; dlga_start:mayor_begin.1|Good day, {playername}.
+dlga_start:mayor_begin.1|Dobrý den, {playername}.
 ; dlga_mayor_begin:lord_deal_with_night_bandits_completed|Very nice work, {playername}, you made short work of those lawless curs!^^[earned {reg14} Resource Points of {s14}]
 ; dlga_lord_deal_with_night_bandits_completed:close_window|They had it coming.
 ; dlga_mayor_talk:mayor_deliver_iron|I've brought you better quality metal, {reg9} units of {s4}, when you requested {s3}.
 ; dlga_mayor_talk:mayor_deliver_iron.1|Here's your metal supply, {reg9} units of {s4}.
 ; dlga_mayor_talk:mayor_deliver_iron.2|I've brought more metal, {reg8} units of {s4}, when you requested {reg9}.
 ; dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Very nice work, {playername}. Our smiths will find ways to put everything they are given to good use.
-dlga_mayor_deliver_iron_completed:close_window|udělám co bude v mých silách
+dlga_mayor_deliver_iron_completed:close_window|Dělám co je v mích silách.
 ; dlga_mayor_talk:mayor_deliver_food|Here's your food, {reg9} units.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|vyborně ! {playername}, naše sýpky jsou zase plné,nikdo už nehladoví 
-dlga_mayor_deliver_food_completed:close_window|udělám co bude v mých silách
+dlga_mayor_deliver_food_completed:close_window|Dělám co je v mích silách.
 ; dlga_mayor_begin:mayor_looters_quest_response|Ah, {playername}. Have you any progress to report?
 dlga_mayor_looters_quest_response:mayor_looters_quest_destroyed|zbil jsem pár divokých skřetů
 ; dlga_mayor_looters_quest_response:close_window|Not yet, sir. Farewell.

@@ -1,107 +1,107 @@
-; p_town_minas_tirith|Minas Tirith
-; p_town_pelargir|Pelargir
-; p_town_linhir|Linhir
-; p_town_dol_amroth|Dol Amroth
-; p_town_edhellond|Edhellond
-; p_town_lossarnach|Lossarnach
-; p_town_tarnost|Tarnost
-; p_town_erech|Erech
-; p_town_pinnath_gelin|Pinnath Gelin
-; p_town_west_osgiliath|West Osgiliath
-; p_town_henneth_annun|Henneth Annun
-; p_town_cair_andros|Cair Andros
-; p_town_calembel|Calembel
-; p_town_edoras|Edoras
+p_town_minas_tirith|Minas Tirith
+p_town_pelargir|Pelargir
+p_town_linhir|Linhir
+p_town_dol_amroth|Dol Amroth
+p_town_edhellond|Edhellond
+p_town_lossarnach|Lossarnach
+p_town_tarnost|Tarnost
+p_town_erech|Erech
+p_town_pinnath_gelin|Pinnath Gelin
+p_town_west_osgiliath|Nyugat Osgiliath
+p_town_henneth_annun|Henneth Annûn
+p_town_cair_andros|Cair Andros
+p_town_calembel|Calembel
+p_town_edoras|Edoras
 ; p_town_aldburg|Aldburg
-; p_town_hornburg|Hornburg
-; p_town_east_emnet|East Emnet
-; p_town_westfold|Westfold
-; p_town_west_emnet|West Emnet
-; p_town_eastfold|Eastfold
-; p_town_morannon|Morannon
-; p_town_minas_morgul|Minas Morgul
-p_town_cirith_ungol|Ork Őr Tábor
-; p_town_east_osgiliath|East Osgiliath
-; p_town_orc_sentry_camp|Orc Sentry Camp
+p_town_hornburg|Kürtvár
+p_town_east_emnet|Keletelve
+p_town_westfold|Nyugathalom
+p_town_west_emnet|Nyugatelve
+p_town_eastfold|Kelethalom
+p_town_morannon|Fekete Kapu
+p_town_minas_morgul|Minas Morgul
+p_town_cirith_ungol|Ork járőr tábor
+p_town_east_osgiliath|Kelet Osgiliath
+p_town_orc_sentry_camp|Ork őrszem tábor
 p_town_isengard|Vasudvard
-; p_town_urukhai_outpost|Uruk Hai Outpost
-; p_town_urukhai_h_camp|Uruk Hai Hunting camp
-; p_town_urukhai_r_camp|Uruk Hai River camp
-; p_town_caras_galadhon|Caras Galadhon
-; p_town_cerin_dolen|Cerin Dolen
-; p_town_cerin_amroth|Cerin Amroth
-; p_town_thranduils_halls|Thranduil's Halls
-; p_town_woodelf_camp|Woodelf Camp
-; p_town_woodelf_west_camp|Woodelf West Camp
-; p_town_woodsmen_village|Woodsmen Village
-; p_town_beorning_village|Beorning Village
-; p_town_beorn_house|Beorn's House
-; p_town_moria|Gates of Moria
-; p_town_troll_cave|Troll Cave
-p_town_dale|A tó népe
-; p_town_esgaroth|Esgaroth
-; p_town_dunland_camp|Dunlander Camp
-; p_town_harad_camp|Haradrim Camp
-; p_town_khand_camp|Khand Camp
-; p_town_umbar_camp|Corsair Camp
-; p_town_imladris_camp|Rivendell Camp
+p_town_urukhai_outpost|Uruk-hai előőrs
+p_town_urukhai_h_camp|Uruk-hai vadásztábor
+p_town_urukhai_r_camp|Uruk-hai folyamtábor
+p_town_caras_galadhon|Caras Galadhon
+p_town_cerin_dolen|Cerin Dolen
+p_town_cerin_amroth|Cerin Amroth
+p_town_thranduils_halls|Thranduil Csarnokai
+p_town_woodelf_camp|Erdőtünde tábor
+p_town_woodelf_west_camp|Erdőtünde nyugati tábor
+p_town_woodsmen_village|Erdőnépi falu
+p_town_beorning_village|Beornfi falu
+p_town_beorn_house|Beorn Háza
+p_town_moria|Mória Kapui
+p_town_troll_cave|Troll barlang
+p_town_dale|Suhatag
+p_town_esgaroth|Tóváros
+p_town_dunland_camp|Dúnföldi tábor
+p_town_harad_camp|Haradrim tábor
+p_town_khand_camp|Khand tábor
+p_town_umbar_camp|Kalóz tábor
+p_town_imladris_camp|Völgyzugolyi tábor
 p_town_dol_guldur|Dol Guldur
-; p_town_dol_guldur_north_outpost|Dol Guldur North Outpost
-; p_town_rhun_main_camp|Main Rhun Camp
-; p_town_rhun_south_camp|Rhun Southern Outpost
-; p_town_rhun_north_camp|Rhun Northern Outpost
-; p_town_gundabad|Gundabad
-; p_town_gundabad_ne_outpost|Gundabad NE Outpost
-; p_town_gundabad_nw_outpost|Gundabad NW Outpost
-; p_town_goblin_north_outpost|Goblin Northern Outpost
-; p_town_goblin_south_outpost|Goblin Southern Outpost
-; p_town_gundabad_m_outpost|Gundabad Mirkwood Outpost
+p_town_dol_guldur_north_outpost|Dol Guldur északi előőrs
+p_town_rhun_main_camp|Rhûn alaptábor
+p_town_rhun_south_camp|Rhûn déli előőrs
+p_town_rhun_north_camp|Rhûn északi előőrs
+p_town_gundabad|Gundabad
+p_town_gundabad_ne_outpost|Gundabad ÉK előőrs
+p_town_gundabad_nw_outpost|Gundabad ÉNY előőrs
+p_town_goblin_north_outpost|Kobold északi előőrs
+p_town_goblin_south_outpost|Kobold déli előőrs
+p_town_gundabad_m_outpost|Gundabad bakacsinerdei előőrs
 p_town_erebor|Erebor
-; p_town_ironhill_camp|Iron Hills Quarry
-; p_advcamp_gondor|Gondor Advance Camp
-; p_advcamp_rohan|Rohan Advance Camp
-; p_advcamp_isengard|Isengard Advance Camp
-; p_advcamp_mordor|Mordor Advance Camp
-; p_advcamp_harad|Harad Advance Camp
-; p_advcamp_rhun|Rhun Advance Camp
-; p_advcamp_khand|Khand Advance Camp
-; p_advcamp_umbar|Umbar Advance Camp
-; p_advcamp_lorien|Lorien Advance Camp
-; p_advcamp_imladris|Imladris Advance Camp
-; p_advcamp_woodelf|Mirkwood Advance Camp
-; p_advcamp_moria|Moria Advance Camp
-; p_advcamp_guldur|Dol Guldur Advance Camp
-; p_advcamp_gundabad|Gundabad Advance Camp
-; p_advcamp_dale|Dale Advance Camp
-; p_advcamp_dwarf|Erebor Advance Camp
-; p_advcamp_dunland|Dunland Advance Camp
-; p_advcamp_beorn|Beorning Advance Camp
-; p_argonath|Argonath
-; p_argonath2|Argonath
+p_town_ironhill_camp|Vasdomboki kőfejtő
+p_advcamp_gondor|Gondor előretolt tábora
+p_advcamp_rohan|Rohan előretolt tábora
+p_advcamp_isengard|Vasudvard előretolt tábora
+p_advcamp_mordor|Mordor előretolt tábora
+p_advcamp_harad|Harad előretolt tábora
+p_advcamp_rhun|Rhûn előretolt tábora
+p_advcamp_khand|Khand előretolt tábora
+p_advcamp_umbar|Umbar előretolt tábora
+p_advcamp_lorien|Lórien előretolt tábora
+p_advcamp_imladris|Imladris előretolt tábora
+p_advcamp_woodelf|Bakacsinerdő előretolt tábora
+p_advcamp_moria|Mória előretolt tábora
+p_advcamp_guldur|Dol Guldur előretolt tábora
+p_advcamp_gundabad|Gundabad előretolt tábora
+p_advcamp_dale|Suhatag előretolt tábora
+p_advcamp_dwarf|Erebor előretolt tábora
+p_advcamp_dunland|Dúnföld előretolt tábora 
+p_advcamp_beorn|Beornfiak előretolt tábora
+p_argonath|Argonath
+p_argonath2|Argonath
 ; p_hand_isen|Handsign of Isengard
-; p_mount_doom|Mount Doom
-; p_town_barad_dur|Barad Dur
-; p_ford_cair_andros1|Anduin
-; p_ford_cair_andros2|Anduin
-; p_ford_caras_galadhon|Anduin
-; p_ford_brown_lands|Anduin
-; p_ford_rauros|Anduin
-; p_ford_pelargir|Anduin
-; p_ford_edhellond|Anduin
-; p_ford_cerin_dolen|Silverlode
-; p_old_ford| Old Ford 
-; p_ford_erech|Ringlo
-; p_ford_isen1|Isen
-; p_ford_isen2|Isen
-; p_ford_rohan|Entwash
-; p_ford_rohan2|Entwash
-; p_ford_fangorn|Entwash
-; p_ford_fangorn2|Limlight
-; p_ford_moria|Silverlode
-; p_legend_amonhen|Amon Hen
-; p_legend_deadmarshes|Dead Marshes
-; p_legend_mirkwood|Mirkwood Forest
-; p_legend_fangorn|Fangorn Entmoot
-; p_ring_hunter_lair|Ring Hunters Lair
-; p_raft|Raft Men
-; p_ancient_ruins|Ancient Ruins
+p_mount_doom|Végzet Hegye
+p_town_barad_dur|Barad-dûr
+p_ford_cair_andros1|Anduin
+p_ford_cair_andros2|Anduin
+p_ford_caras_galadhon|Anduin
+p_ford_brown_lands|Anduin
+p_ford_rauros|Anduin
+p_ford_pelargir|Anduin
+p_ford_edhellond|Anduin
+p_ford_cerin_dolen|Ezüstér
+p_old_ford|Régi gázló
+p_ford_erech|Ringló-folyó
+p_ford_isen1|Vas-folyó
+p_ford_isen2|Vas-folyó
+p_ford_rohan|Entséd
+p_ford_rohan2|Entséd
+p_ford_fangorn|Entséd
+p_ford_fangorn2|Limjód
+p_ford_moria|Ezüstér
+p_legend_amonhen|Amon Hen
+p_legend_deadmarshes|Holt-láp
+p_legend_mirkwood|Bakacsinerdő
+p_legend_fangorn|Fangorni Enttanáncs
+p_ring_hunter_lair|Gyűrűvadászok fészke
+p_raft|Révészek
+p_ancient_ruins|Ősi romok

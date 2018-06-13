@@ -2,16 +2,16 @@ skl_trade|Obchodník
 skl_trade_desc|Úrovne tejto schopnosti umožňujú získať viac výbavy za menej Bodov Zásob. (Schopnosť družiny)
 skl_leadership|Vodcovstvo
 skl_leadership_desc|Každý bod zvyšuje maximálny počet jednotiek ktorým môžeš veliť o 5, zvyšuje morálku tvojej družiny a znižuje mzdu jednotiek o 5 %%. (Schopnosť vodcu)
-skl_prisoner_management|Riadenie väzňov
-skl_prisoner_management_desc|Každá úroveň tejto chopnosti zvyšuje maximálny počet väzňov o %d. (Schopnosť vodcu.)
-skl_persuasion|Presvedčovanie
+skl_prisoner_management|Väznenie
+skl_prisoner_management_desc|Každá úroveň tejto schopnosti zvyšuje maximálny počet väzňov o %d. (Schopnosť vodcu.)
+skl_persuasion|Presviedčanie
 skl_persuasion_desc|Táto schopnosť ti pomáha presvedčiť ostatných súhlasiť s tvojím názorom. (Osobná schopnosť)
 skl_engineer|Výroba
 skl_engineer_desc|Každý bod tejto schopnosti znižuje čas výroby a zlepšenia vybavenia, a umožňuje lepšie vylepšenia. (Schopnosť družiny)
 skl_first_aid|Prvá pomoc
-skl_first_aid_desc|Ty a tvoji spoločníci sa vyliečite okamžite po boji z 5%%zranení utrpených počas boja za každú úroveň tejto schopnosti. (Schopnosť družiny)
+skl_first_aid_desc|Ty a tvoji spoločníci sa vyliečite okamžite po boji z 5%%zranení utrpených počas boja za každú úroveň tejto schopnosti. (Schopnosť družiny)
 skl_surgery|Chirurgia
-skl_surgery_desc|Každý bod tejto schopnosti zvyšuje šancu o 4%% na to, že smrteľne zasiahnutý člen družiny bude len zranený namiesto zabitý. (Schopnosť družiny)
+skl_surgery_desc|Každý bod tejto schopnosti zvyšuje šancu o 4%% na to, že smrteľne zasiahnutý člen družiny bude len zranený namiesto zabitý. (Schopnosť družiny)
 skl_wound_treatment|Liečenie zranení
 skl_wound_treatment_desc|Liečenie zranení v družine sa zvýši o 20%% za každú úroveň tejto schopnosti. (Schopnosť družiny)
 skl_inventory_management|Veľkosť inventára
@@ -21,11 +21,11 @@ skl_spotting_desc|Vzdialenosť na ktorú družina vidí je zvýšená o 10%% za 
 skl_pathfinding|Cestovanie
 skl_pathfinding_desc|Rychlosť družiny na mape je zvýšená o 3%% za každý level tejto schopnosti. (Schopnosť Družiny)
 skl_tactics|Taktika
-skl_tactics_desc|Každá druhá úroveň tejto schopnosti zvýši počiatočnú bojovú prevahu o 1. (Schopnosť družiny)
+skl_tactics_desc|Každá druhá úroveň tejto schopnosti zvýši bojovú prevahu na počiatku boja o 1. (Schopnosť družiny)
 skl_tracking|Stopovanie
 skl_tracking_desc|Stopy budú poskytovať viac informácií. (Schopnosť družiny)
 skl_trainer|Tréner
-skl_trainer_desc|Každý deň pridá každý hrdina s touto schopnosťou všetkým z tvojej družiny, ktorých úroveň je nižšia než jeho/jej, skúsenosti. Hodnota získaných schopností je:\n {0,4,10,16,23,30,38,46,55,65,80}. (Osobná schopnosť)
+skl_trainer_desc|Každý deň pridá každý hrdina s touto schopnosťou všetkým z tvojej družiny, ktorých úroveň je nižšia než jeho/jej, skúsenosti. Hodnota získaných schopností je:\n {0,4,10,16,23,30,38,46,55,65,80}. (Osobná schopnosť)
 skl_looting|Koristenie
 skl_looting_desc|Táto schopnosť zvyšuje počet získanej koristi o 10%% za každú úroveň tejto schopnosti. (Schopnosť Družiny)
 skl_horse_archery|Streľba v sedle
@@ -37,8 +37,8 @@ skl_athletics_desc|Zvyšuje tvoju rychlosť behu. (Osobná schopnosť)
 skl_shield|Štít
 skl_shield_desc|Snižuje poškodenie udeľované tvojmu štítu (o 8%% za úroveň tejto schopnosti) a zvyšuje rýchlosť štítu a pokrytie. (Osobná schopnosť)
 skl_weapon_master|Majster zbrane
-skl_weapon_master_desc|Uľahčuje získavanie zručnosti zbrane a zvyšuje limity zručnosti. Limity sú: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobná schopnosť)
-skl_power_draw|Silný náťah
+skl_weapon_master_desc|Uľahčuje získavanie zručnosti so zbraňou a zvyšuje limity zručnosti. Limity sú: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobná schopnosť)
+skl_power_draw|Silné napnutie
 skl_power_draw_desc|Umožňuje postave používať silnejšie luky. Každý bod tejto schopnosti (až do štvorky plus požiadavky luku pre silný-náťah) zvyšuje poškodenie luku o 14%%. (Osobná schopnosť)
 skl_power_throw|Mocný vrh
 skl_power_throw_desc|Každý bod tejto schopnosti zvyšuje poškodenie vrhom o 10%%. (Osobná schopnosť)

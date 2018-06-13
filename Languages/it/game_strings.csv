@@ -352,7 +352,7 @@ str_npc17_intro_response_2|Sì, i boschi sono incantevoli, ma ora devo muovermi.
 str_npc1_backstory_a|Tu vieni in tempi difficili, amico. Ithilien brulica di esploratori nemici e razziatori, e alcuni hanno visto grandi raggruppamenti di orchi in marcia. Stiamo provando ad impedire a queste creature di attraversare il fiume e ho capitanato un gruppo di abili Raminghi per riuscirci. Il mio Capitano Faramir è motivato e io non mi preoccupo dell'Ombra che incombe su di noi.
 str_npc2_backstory_a|Ah, sei stato gentile a preoccuparti di me. Sono appena stato assegnato come guardia del Sovrintendente. Un nobile compito, ma se posso dirlo, non molto esaltante.
 str_npc3_backstory_a|Beh, il mio elmo sembra diventare sempre più piccolo ogni minuto, e il terreno sembra fragile come un foglio di carta. Ah, se solo non avessi bevuto tutta quella birra la scorsa notte - di solito reggo bene le bevute, devo aver tracannato della birra d'orco avariata.
-str_npc4_backstory_a|Il mio nome è Gálmynë, e il mio compito è conoscere le tue intenzioni, {playername}. Lascia che ti spieghi il perchè.
+str_npc4_backstory_a|Il mio nome è Galmyne, e il mio compito è conoscere le tue intenzioni, {playername}. Lascia che ti spieghi il perchè.
 str_npc5_backstory_a|Forse hai sentito parlare delle mie gesta nelle battaglie passate e dimenticate dagli Uomini mortali. Nel pieno di questa guerra, gli Eldar sono nuovamente in pericolo, ma questa sarà l'ultima guerra.
 str_npc6_backstory_a|Scusa la mia sfrontatezza, straniero, ma non abbiamo molti visitatori qui e quelli che arrivano non sembrano molto affidabili. Solo la scorsa settimana, questo nano è apparso e....Lasciamo perdere. Il mio nome è Luevanna, degli Elfi Silvani di Bosco Atro.
 str_npc7_backstory_a|Perdona, {playername}. Stiamo combattendo le incursioni degli Easterlings e degli Orchi di Gundabad, ma niente che noi o i nostri alleati di Dale non si possa gestire.
@@ -379,7 +379,7 @@ str_npc10_backstory_b|Sono un cavalca-lupi di Isengard e so seguire le tracce.
 str_npc11_backstory_b|Ar ! È stato solo perché il mio naso era tappato. E a che cosa sarebbe servito portare il naso sulle pietre comunque ? Nar ! È stata tutta colpa di quei luridi Uruk ! Quei maledetti ladri spioni! Ho solo perso la scia a causa del loro passaggio. Hanno confuso gli odori laggiù, rubando tutto quello che trovavano, e lasciando impronte tutto intorno al posto prima che arrivassi.
 str_npc12_backstory_b|Quei Nazgul mi danno i brividi. Ti fanno uscire il corpo dalla pelle appena ti vedono, e ti lasciano nel freddo oscuro dell'altra parte. Ma a lui piacciono; sono i suoi preferiti ultimamente, quindi brontolare sulla cosa è inutile. Te lo dico, non vale la pena prestare servizio in città. Mi piacerebbe stare altrove, dove non c'è nessuno di loro.
 str_npc13_backstory_b|Ho visto di recente come la parola dell'Oscuro Signore si è sparsa nella mia famiglia, e come si è insinuata nelle loro menti e nei loro cuori. Molti sono stati portati nelle sue tenebre, e al posto del loro coraggio è cresciuto un insaziabile appetito per la violenza, così che quando le loro orecchie udirono la sua chiamata, questi burattini furono pronti a rispondere.
-str_npc14_backstory_b|Molti cose mutano in un uomo che cavalca i tumulti dei venti e dei mari delle acque di Belfalas, e coloro che restano a combattere contro di lei saranno come bambini. È per uomini robusti l'andare incontro alla tempesta e cavalcarla. Ho posato i miei occhi sulla sua marea più scura e ne sono rimasto il dominatore.
+str_npc14_backstory_b|Molte cose mutano in un uomo che cavalca i tumulti dei venti e dei mari delle acque di Belfalas, e coloro che restano a combattere contro di lei saranno come bambini. È per uomini robusti l'andare incontro alla tempesta e cavalcarla. Ho posato i miei occhi sulla sua marea più scura e ne sono rimasto il dominatore.
 str_npc15_backstory_b|Molte lune fa, quando ero fresco come un fiore appena nato, il mio antenato guidava la tribù giù nelle miniere, dove i nani sono morti di recente. Uno Spettro di Fuoco era passato, e l'ambiente era confortevole e accogliente. Prosperammo, ma ogni tanto un crudele avventuriero o un eroe nano, veniva e uccideva e mutilava alcuni di noi nei nostri pacifici tunnel. Le mie mani hanno imparato a chiudere una ferita di spada o di ascia, e la mia mente ha appreso come vedere la linea tra le ossa e i tendini benché nascosta. Oggi posso creare una pozione o mettere a posto una frattura con la stessa abilità.
 str_npc16_backstory_b|I Balcoth erano una fiera razza di uomini della mia terra d'origine, massacrati da questi westerlings, tutti tranne qualche superstite. Braccati come bestie, cibo per le loro lame. Il sangue che lordò quelle spade è lo stesso che scorre nelle mie vene, per questo attraverso me a loro casata sussiste.
 str_npc17_backstory_b|Puoi fare uscire molte cose dagli alberi, sai. È quello che faccio io. Lavoro con gli alberi e faccio uscire delle cose dagli alberi. Anche dai cespugli a volte. Ma mi piacciono di più gli alberi.
@@ -453,7 +453,7 @@ str_npc16_backstory_response_2|Ne ho avuto abbastanza.
 str_npc17_backstory_response_2|No, mi dispiace. Ci stiamo preparando per la guerra, non per una spedizione botanica.
 str_npc1_signup|Sono sicuro che il capitano Faramir capirebbe che altri potrebbero tenere il nemico a bada con altrettanto valore e coraggio.
 str_npc2_signup|Oh, che giorno felice! Sarei lieto di unirmi alla vostra compagnia.
-str_npc3_signup|Credimi, comandante, tutto il liquore di cui ho bisogno è il dolce nettare della vittoria. Se sarai in grado di guidarmi contro il nemico, sentiranno presto cosa si prova ad essere infilzati da una lancia di Rohan!
+str_npc3_signup|Credimi, comandante, tutto il liquore di cui ho bisogno è il dolce nettare della vittoria. Se sarai in grado di guidarmi contro il nemico, sentiranno presto cosa si prova ad essere infilzati da una lancia di Rohan !
 str_npc4_signup|È un'offerta che faccio volentieri, e potrai darmi il benvenuto nella tua compagnia, comandante.
 str_npc5_signup|Lo vedo. Ammetto di aver sentito di te e delle tue imprese.
 str_npc6_signup|Disprezzo la violenza e le armi di una guerra, ma so come difendermi se le cose si mettono male.
@@ -481,7 +481,7 @@ str_npc10_signup_2|Non ti pentirai di avermi scelto.
 str_npc11_signup_2|Ci sono molte cose là fuori da odorare con il mio naso e da far assaggiare al mio coltello. Loro non lo sanno ancora, ma siamo rapidi a imparare. Che ne dici ?
 str_npc12_signup_2|Farò vedere alle vostre lumache che dove c'è una frusta salta fuori la voglia di trasportare quanto le loro schiene sono in grado di sollevare. Se la prendono bene potranno mantenere un buon ritmo. Cosa ne dici ?
 str_npc13_signup_2|Sappi, comunque, che la mia lealtà va sempre prima al mio casato. Ho combattuto fino a qui e perso molto per loro. Non volterò a loro la schiena, perché il mio destino è anche il loro.
-str_npc14_signup_2|È una fortuna che coloro che non fanno più parte di questo mondo, non abbiano più bisogno dei tesori di questo mondo, e sono fortunato ad essere abile nell'aiutare queste persone a sollevarsi da questi pesi.
+str_npc14_signup_2|È una fortuna che coloro che non fanno più parte di questo mondo non abbiano più bisogno dei suoi tesori, e sono fortunato ad essere abile nell'aiutare queste persone a sollevarsi da questi pesi.
 str_npc15_signup_2|Oh, questo è un grande momento per 'Bolzog il dotato', e per te Grande Signore ! Conquisteremo insieme, tu indistruttibile grazie al mio tocco di guarigione e io, il Grande Orco Saggio che ti sostiene !
 str_npc16_signup_2|Penso che non dovrò attendere a lungo. Intendo unirmi alla prossima compagnia che lascia l'accampamento, con l'approvazione del mio capitano o meno. Temo che la guerra possa finire prima che possa farne parte.
 str_npc17_signup_2|Prenderò alcuni dei miei attrezzi e potremo partire. C'è questa quercia lungo la strada che devo farti vedere !
@@ -1228,7 +1228,7 @@ str_rohan_rumor_2|Ho sentito che gli orchi mangiano i cavalli. Bestie pazze ! Ma
 str_rohan_rumor_3|Non ci sono cavalli migliori di quelli di Rohan. Anche gli Elfi comprano i loro cavalli da noi !
 str_rohan_rumor_4|Se puoi guarire gli uomini, ti prego di avere cura dei miei cavalli come ne hai delle persone.
 str_rohan_rumor_5|Portami otto cavalli da soma, ha detto.. Dopo i sette che aveva chiesto ieri. Ti fa sorgere delle domande.
-str_rohan_rumor_6|Gondor preferisce cavalli più robusti. I nostri cavalieri amano la velocità. Gli Elfi prendono solo i migliori, mentrei nostri nemici li rubano !
+str_rohan_rumor_6|Gondor preferisce cavalli più robusti. I nostri cavalieri amano la velocità. Gli Elfi prendono solo i migliori, mentre i nostri nemici li rubano !
 str_rohan_rumor_7|Ho visto le razze del mare e i cavalli dei Variag. I cavalli di Rohan sono chiaramente superiori, ma richiedono cavalieri più esperti.
 str_rohan_rumor_8|I Wargs sono più lenti dei cavalli, ma possono svoltare più rapidamente. Sono anche piuttosto fragili, paragonati ad un cavallo da guerra ben bardato.
 str_rohan_rumor_9|Armate marciano su Rohan con picche e lance contro i nostri bravi cavalieri. Saruman, il traditore, taglierà l'intera foresta di Fangorn per equipaggiare i suoi eserciti, prima che questa guerra finisca.
@@ -1386,12 +1386,12 @@ str_woodelf_rumor_8|Edain di Dale costruiscono giochi molto complessi ultimament
 str_woodelf_rumor_9|L'ombra di Dol Guldur si sta espandendo. Le creature oscure sono state avvistate nelle foreste, i nostri avamposti attaccati, i cacciatori  scomparsi non sono più stati visti. Il numero delle nostre pattuglie conta solo 35 unità. La nostra paura sta crescendo a dismisura !
 str_dale_rumor_begin|Prima c'era il Drago, ora questo...
 str_dale_rumor_2|Come se gli orchi provenienti dal nord non bastassero.. Ora le orde  provenienti da est ci sono addosso !
-str_dale_rumor_3|Dalla sconfitta del drago,sappiamo come trovare il punto debole del nemico.
+str_dale_rumor_3|Dalla sconfitta del drago, sappiamo come trovare il punto debole del nemico.
 str_dale_rumor_4|Gli Easterlings non riusciranno mai a passare noi e i nostri alleati Nani.
 str_dale_rumor_5|Hai mai visto il sole sorgere dal Lungo Lago ? I colori facevano cantare il mio cuore. Ma adesso tutto ciò che vedo è un'alba rossa. Un cattivo presagio.
 str_dale_rumor_6|I nani sono un po' troppo attaccati ai tesori. Ancora non sappiamo cosa pensare di Thorin Scudodiquercia.
 str_dale_rumor_7|Gli uomini di Rohan sono nostri cugini e la nostra lingua è molto simile alla loro.
-str_dale_rumor_8|Esgaroth ha preso nome da una parola elfica canna,a causa dei suoi canneti. Lo sapevi ?
+str_dale_rumor_8|Esgaroth ha preso nome da una parola elfica canna, a causa dei suoi canneti. Lo sapevi ?
 str_dale_rumor_9|Il drago era un tipo di mostro che nessuno vuole più vedere.
 str_dale_rumor_10|La nostra prosperità deriva dal commercio con i Nani e gli Elfi.Ma è difficile contrattare con i Nani.Il guadagno è scarso con loro.
 str_harad_rumor_begin|Il Serpente Nero colpirà veloce e letale

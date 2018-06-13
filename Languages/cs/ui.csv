@@ -43,6 +43,6 @@ ui_hold_fire_e_|%s, Nestřílet!
 ui_fire_at_will_e_|%s, Střílet dle libosti!
 ui_recent_messages|Posledni Zpravy
 ui_value_denars|%d Zasob.
-ui_cannot_be_used_on_horseback|Nelze pouzit ze sedla
+ui_cannot_be_used_on_horseback|Nelze použít na koni
 ui_upgrade_to_value| Povysit na %s
 ui_notification_cant_upgrade|(Nelze povysovat jednotky predane do jine skupiny)
