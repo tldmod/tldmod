@@ -1958,11 +1958,11 @@ scene_props = [
   ]),
 ## isengard props
 ("isen_orthanc_tower", 0, "isen_orthanc_tower", "bo_isen_orthanc_tower", []),
-("isen_circular_wall", 0, "isen_circular_wall", "bo_isen_circular_wall", []),
+("isen_circular_wall", 0, "isen_circular_wall", "0", []),
 ("isen_roof_door", 0, "isen_roof_door", "bo_isen_roof_door", []),
 ("isen_wood_construction", 0, "isen_wood_construction", "0", []),
 ("isen_crane", 0, "isen_crane", "bo_isen_crane", []),
-("isen_awning", 0, "isen_awning", "0", []),
+("isen_awning", 0, "isen_awning", "bo_awning", []),
 ("isen_tower_a", 0, "isen_tower_a", "bo_isen_tower_a", []),
 ("isen_tower_b", 0, "isen_tower_b", "bo_isen_tower_b", []),
 ("isen_stairs", 0, "isen_stairs", "bo_isen_stairs", []),
@@ -2654,6 +2654,8 @@ scene_props = [
 	( "khazad_orcish_temporary_camp_spit_2"        ,0,"khazad_orcish_temporary_camp_spit_2","0",[]),
 	( "khazad_orcish_temporary_camp_bonfire_2"     ,0,"khazad_orcish_temporary_camp_bonfire_2","0",[]),
 	( "khazad_orcish_temporary_camp_burduk_1"      ,0,"khazad_orcish_temporary_camp_burduk_1","0",[]),
+	( "khazad_dwarf_tower"     					   ,0,"khazad_dwarf_tower","bo_khazad_dwarf_tower",[]),
+	( "khazad_dwarf_mech"     					   ,0,"khazad_dwarf_mech_1","bo_khazad_dwarf_mech_1",[]),
 
 
 
@@ -2749,6 +2751,11 @@ scene_props = [
 
 ( "beorn_hall",0,"beorn_hall","bo_beorn_hall",[]),
 ( "beorn_side_house",0,"beorn_side_house","bo_house6",[]),
+
+("riven_wall",0,"riven_wall","bo_riven_wall", []),
+("riven_tower",0,"riven_tower","bo_rohan_tower2"    , []),
+("riven_bridge_modular_a",0,"riven_bridge_modular_a","bo_bridge_modular_a", []),
+("isen_pillar_adorno",0,"isen_pillar_adorno","bo_isen_pillar_adorno", []),
 #InVain props end
 
 ("save_compartibility2",0,"0","0", []),

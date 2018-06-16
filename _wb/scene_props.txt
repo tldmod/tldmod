@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1719
+ 1725
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -3799,7 +3799,7 @@ spr_door_aw_tomb 1081344 1 door_a bo_door_a 1
 spr_isen_orthanc_tower 0 0 isen_orthanc_tower bo_isen_orthanc_tower 0
 
 
-spr_isen_circular_wall 0 0 isen_circular_wall bo_isen_circular_wall 0
+spr_isen_circular_wall 0 0 isen_circular_wall 0 0
 
 
 spr_isen_roof_door 0 0 isen_roof_door bo_isen_roof_door 0
@@ -3811,7 +3811,7 @@ spr_isen_wood_construction 0 0 isen_wood_construction 0 0
 spr_isen_crane 0 0 isen_crane bo_isen_crane 0
 
 
-spr_isen_awning 0 0 isen_awning 0 0
+spr_isen_awning 0 0 isen_awning bo_awning 0
 
 
 spr_isen_tower_a 0 0 isen_tower_a bo_isen_tower_a 0
@@ -5151,6 +5151,12 @@ spr_khazad_orcish_temporary_camp_bonfire_2 0 0 khazad_orcish_temporary_camp_bonf
 spr_khazad_orcish_temporary_camp_burduk_1 0 0 khazad_orcish_temporary_camp_burduk_1 0 0
 
 
+spr_khazad_dwarf_tower 0 0 khazad_dwarf_tower bo_khazad_dwarf_tower 0
+
+
+spr_khazad_dwarf_mech 0 0 khazad_dwarf_mech_1 bo_khazad_dwarf_mech_1 0
+
+
 spr_troop_civilian 16384 0 arrow_helper_blue 0 1
 -40  22 2071 1 1224979098644774912 2147483678 2 144115188075856307 0 1850 2 1 1224979098644774912 1970 1 1 2136 3 1224979098644774913 1 5 4 0 31 2 1224979098644774913 1 521 3 1224979098644774914 144115188075856029 161 5 0 31 2 1224979098644774913 2 521 3 1224979098644774914 144115188075856029 162 5 0 31 2 1224979098644774913 3 521 3 1224979098644774914 144115188075856029 163 5 0 521 3 1224979098644774914 144115188075856029 165 3 0 1972 1 1224979098644774914 1771 2 72057594037927936 0 1741 2 72057594037927936 444 2136 3 72057594037927942 0 100 1743 2 72057594037927936 72057594037927942 
 
@@ -5214,6 +5220,18 @@ spr_beorn_hall 0 0 beorn_hall bo_beorn_hall 0
 
 
 spr_beorn_side_house 0 0 beorn_side_house bo_house6 0
+
+
+spr_riven_wall 0 0 riven_wall bo_riven_wall 0
+
+
+spr_riven_tower 0 0 riven_tower bo_rohan_tower2 0
+
+
+spr_riven_bridge_modular_a 0 0 riven_bridge_modular_a bo_bridge_modular_a 0
+
+
+spr_isen_pillar_adorno 0 0 isen_pillar_adorno bo_isen_pillar_adorno 0
 
 
 spr_save_compartibility2 0 0 0 0 0
