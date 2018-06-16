@@ -1403,7 +1403,7 @@ itemsfile version 2
  itm_moria_armor_d Moria_Bolted_Leather Moria_Bolted_Leather 1  orc_moria_d 0  16842765 0 1101 1116859269284 22 100 0 18 10 0 0 0 0 0 0 0 0
 0
 
- itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a 16777216  uruk_mordor_heavy_mail_b 134217728  uruk_mordor_platemail_a 536870912  16842765 0 1401 704643072 24 100 0 23 11 0 0 0 0 0 0 0 0
+ itm_moria_armor_e Moria_Orc_Heavy_Mail Moria_Orc_Heavy_Mail 4  orc_moria_e 0  uruk_mordor_light_mail_a_orc 16777216  uruk_mordor_heavy_mail_b_orc 134217728  uruk_mordor_platemail_a_orc 536870912  16842765 0 1401 704643072 24 100 0 23 11 0 0 0 0 0 0 0 0
 0
 
  itm_moria_orc_shield_a Moria_Great_Shield Moria_Great_Shield 1  moria_orc_shield_a 0  327687 5100273664 100 251658402 5 100 0 10 0 0 410 88 0 60 0 0 0

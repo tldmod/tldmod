@@ -294,8 +294,6 @@ sounds = [
 ("night_ambiance"           ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["night_loop.wav"]),
 ("neutralforest_ambiance"   ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["neutral_forest_loop.wav"]),
 ("fangorn_ambiance"         ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["fangorn_loop.wav"]),
-("bees_people_ambiance"   	,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["bees_people.wav"]),
-("bees_birds_ambiance"      ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["bees_birds.wav"]),
 
 ("gondor_occasional",    sf_2d|sf_priority_8|sf_vol_4|sf_stream_from_hd,["silence.wav","silence.wav","good_eagle01.wav","d_blacksmith2.wav","good_workshop.wav","d_dog7.wav"]),
 ("elves_occasional",     sf_2d|sf_priority_8|sf_vol_4|sf_stream_from_hd,["silence.wav","silence.wav","good_bird01.wav","good_bird02.wav","good_bird03.wav","good_bird_wings.wav"]), 
@@ -360,5 +358,6 @@ sounds = [
 ("spider_strike", sf_priority_6|sf_vol_10, ["spider_battle01.wav", "trollSnarl.wav",]),
 ("wolf_strike",   sf_priority_6|sf_vol_10, ["warg_growl01.wav", "trollSnarl.wav",]),
 
-
+("bees_people_ambiance"   	,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["bees_people.wav"]),
+("bees_birds_ambiance"      ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["bees_birds.wav"]),
 ]
