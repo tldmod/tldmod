@@ -5391,12 +5391,12 @@ scripts = [
        (try_begin),(eq,"$g_talk_troop","trp_trainer_gondor"),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_a"),
         (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),#(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","rohan_armor_a"), #naked
         (else_try),(eq,"$g_talk_troop","trp_trainer_elf"   ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_a"),
-        (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_harad_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_a"),
         (else_try),(eq,"$g_talk_troop","trp_trainer_dale"  ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_a"),
         (else_try),(eq,"$g_talk_troop","trp_trainer_harad" ),#(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_harad_tunic"), # naked
         (else_try),(eq,"$g_talk_troop","trp_trainer_rhun"  ),#(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_a"),# naked
         (else_try),(eq,"$g_talk_troop","trp_trainer_khand" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_a"),
-        (else_try),(eq,"$g_talk_troop","trp_trainer_beorn" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_beorn_tunic"),
+        (else_try),(eq,"$g_talk_troop","trp_trainer_beorn" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
         (else_try),(eq,"$g_talk_troop","trp_trainer_umbar" ),#(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_beorn_tunic"), # naked
         (else_try),                                          #(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_white_tunic_a"), #naked
        (try_end),
