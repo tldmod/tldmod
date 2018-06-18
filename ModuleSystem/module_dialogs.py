@@ -5891,7 +5891,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (quest_get_slot, ":quest_target_troop", "qst_blank_quest_04", slot_quest_target_troop),
   (quest_get_slot, reg22, "qst_blank_quest_04", slot_quest_target_amount),
   (str_store_troop_name_plural, s6, ":quest_target_troop"),
-  (str_store_string, s5, "@{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!")],
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to personally defeat {reg22} {s6}."),
+  (else_try),
+    (str_store_string, s5, "@{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!"),
+  (try_end),],
  "{s5}", "lord_mission_told_kill_quest_targeted",[]],
 
 [anyone|plyr,"lord_mission_told_kill_quest_targeted", [
@@ -5902,7 +5907,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (quest_get_slot, reg22, "qst_blank_quest_04", slot_quest_target_amount),
       (str_store_troop_name_plural, s6, ":quest_target_troop"),
       (str_store_troop_name_link, s9, "$g_talk_troop"),
-      (str_store_string, s7, "@{s9} wants you to personally kill {reg22} {s6}."),
+      (str_store_string, s7, "@{s9} wants you to personally defeat {reg22} {s6}."),
       (str_store_troop_name_plural, s36, ":quest_target_troop"),
       (str_store_string, s35, "@{reg22}"),
       (setup_quest_text,"$random_quest_no"),

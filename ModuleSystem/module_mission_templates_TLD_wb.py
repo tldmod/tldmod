@@ -1848,15 +1848,38 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
     (agent_is_human, ":agent_victim"),
     (agent_get_troop_id, ":troop_killer", ":agent_killer"),
 
+    (assign, ":continue", 0),
+
     # Determine health amount to regenerate
     (try_begin), # Player has berserker trait?
-      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1), 
+      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
+      (troop_get_inventory_slot, ":armor", "trp_player", ek_body), #and is not wearing anything or is wearing berserk appropriate clothing?
+      (this_or_next|neg|ge, ":armor", 1),
+      (this_or_next|eq, ":armor", "itm_isen_uruk_light_a"),
+      (this_or_next|eq, ":armor", "itm_isen_uruk_light_b"),
+      (this_or_next|eq, ":armor", "itm_rhun_armor_a"),
+      (this_or_next|eq, ":armor", "itm_rhun_armor_b"),
+      (this_or_next|eq, ":armor", "itm_rhun_armor_d"),
+      (this_or_next|eq, ":armor", "itm_rhun_armor_j"),
+      (this_or_next|eq, ":armor", "itm_rhun_armor_m"),
+      (this_or_next|eq, ":armor", "itm_rhun_armor_n"),
+      (this_or_next|eq, ":armor", "itm_harad_champion"),
+      (this_or_next|eq, ":armor", "itm_panther_guard"),
+      (this_or_next|eq, ":armor", "itm_khand_light"),
+      (this_or_next|eq, ":armor", "itm_gundabad_armor_a"),
+      (this_or_next|eq, ":armor", "itm_gundabad_armor_d"),
+      (this_or_next|eq, ":armor", "itm_orc_tribal_a"),
+      (this_or_next|eq, ":armor", "itm_orc_tribal_b"),
+      (this_or_next|eq, ":armor", "itm_orc_tribal_c"),
+      (       eq, ":armor", "itm_beorn_berserk"), 
       (get_player_agent_no, ":agent_player"),
       (eq, ":agent_killer", ":agent_player"),
       (assign, ":health_regeneration", wp_hr_player_rate),
+      (assign, ":continue", 1),
     (else_try), # Is it a lord?
       (is_between, ":agent_killer", heroes_begin, heroes_end),
       (assign, ":health_regeneration", wp_hr_lord_rate),
+      (assign, ":continue", 1),
     (else_try),  #Berserkers
       (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
       (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
@@ -1864,8 +1887,10 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
       (this_or_next|eq, ":troop_killer", "trp_orc_beserker_gundabad"),
       (             eq, ":troop_killer", "trp_variag_gladiator"),
       (assign, ":health_regeneration", wp_hr_berserker_rate),
+      (assign, ":continue", 1),
     (try_end),
     
+    (eq, ":continue", 1),
     # Adds in Strength as a bonus or penalty.  (STR - 10) / wp_hr_strength_factor
     
     (store_attribute_level, ":strength", ":troop_killer", ca_strength),

@@ -822,21 +822,56 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
   (ti_on_agent_spawn, 0,0, [
     (eq, "$tld_spawn_battle_animals", 1),
+    (store_trigger_param_1, ":agent"),
+
+    (agent_get_troop_id, ":agent_trp",":agent"),
+
+    (this_or_next|eq, ":agent_trp", "trp_dunnish_wolf_guard"),
+    (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
+    (this_or_next|eq, ":agent_trp", "trp_npc17"),
+    (eq, ":agent_trp", "trp_player"),
+
+    (assign, ":base_chance", 45), #45% chance to spawn a wolf
+
+    (try_begin),
+      (eq, ":agent_trp", "trp_player"),
+      (assign, ":beorn_shield_equipped", 0),
+      (try_for_range, ":item_slot", ek_item_0, ek_head),
+        (eq, ":beorn_shield_equipped", 0),
+        (agent_get_item_slot, ":item", ":agent", ":item_slot"),
+        (gt, ":item", "itm_no_item"),
+        (eq, ":item", "itm_beorn_shield_reward"),
+        (assign, ":beorn_shield_equipped", 1),
+      (try_end),
+
+      (eq, ":beorn_shield_equipped", 1),
+      (assign, ":base_chance", 10),
+      (store_skill_level, ":wildcraft", "skl_persuasion", "trp_player"), 
+      (store_mul, ":multiplier", ":wildcraft", 9),
+      (val_add, ":base_chance", ":multiplier"),
+    (try_end),
+
+
     (store_random_in_range, ":rnd", 0, 100),
-    (le, ":rnd", 45)], #45% chance to spawn a wolf
+    (le, ":rnd", ":base_chance")], 
     [
       (store_trigger_param_1, ":agent"),
 
       (agent_get_troop_id, ":agent_trp",":agent"),
+
       (this_or_next|eq, ":agent_trp", "trp_dunnish_wolf_guard"),
-      (eq, ":agent_trp", "trp_npc17"),
+      (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
+      (this_or_next|eq, ":agent_trp", "trp_npc17"),
+      (eq, ":agent_trp", "trp_player"),
 
       (set_fixed_point_multiplier, 100),
       (agent_get_position, pos1, ":agent"),
       (position_move_x, pos1, 150),
       (set_spawn_position, pos1),
       (try_begin),
-        (eq, ":agent_trp", "trp_npc17"),
+        (this_or_next|eq, ":agent_trp", "trp_npc17"),
+        (this_or_next|eq, ":agent_trp", "trp_player"),
+        (eq, ":agent_trp", "trp_beorn_lord"),
         (spawn_agent, "trp_bear"),
       (else_try),
         (spawn_agent, "trp_wolf"),

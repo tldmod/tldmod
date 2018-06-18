@@ -1,4 +1,4 @@
-1586
+1588
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -156,6 +156,7 @@ qstr_+1_to_Strength +1_to_Strength
 qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
 qstr_+1_to_Power_Draw +1_to_Power_Draw
+qstr_Turns_nature_to_your Turns_nature_to_your_side_(effect_scales_with_Wildcraft)
 qstr_+1_to_Trainer +1_to_Trainer
 qstr_Recruits_Tribal_Orcs Recruits_Tribal_Orcs
 qstr_rally rally
@@ -1360,9 +1361,10 @@ qstr_We_are_at_war_with_{ We_are_at_war_with_{s12}._However,_we_are_mostly_fight
 qstr_We_are_at_war_with_{s We_are_at_war_with_{s12}._However,_there_are_only_skirmishes_at_the_moment.
 qstr_we_are_not_too_conce we_are_not_too_concerned_with_them_at_the_moment,_since_we_are_fighting_other_enemies_closer_to_home
 qstr__under_your_orders ,_under_your_orders
+qstr_{playername}_the_men {playername},_the_men_have_heard_stories_about_fierce_enemy_troops._Stories_of_these_terrors_are_demoralizing_the_men._I_want_you_to_show_the_men_that_they_have_nothing_to_fear._I_want_you_to_personally_defeat_{reg22}_{s6}.
 qstr_{playername}_I_want_ {playername},_I_want_you_to_show_the_men_that_enemy_troops_are_of_no_consequence._I_want_you_to_personally_slay_{reg22}_{s6}!_Do_this_to_show_we_are_the_superiour_force!
 qstr_I_will_do_what_you_a I_will_do_what_you_asked,_and_the_men_will_witness.
-qstr_{s9}_wants_you_to_pe {s9}_wants_you_to_personally_kill_{reg22}_{s6}.
+qstr_{s9}_wants_you_to_pe {s9}_wants_you_to_personally_defeat_{reg22}_{s6}.
 qstr_{reg22} {reg22}
 qstr_{s7} {s7}
 qstr_I_want_you_to_person I_want_you_to_personally_slay

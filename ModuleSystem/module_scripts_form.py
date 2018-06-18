@@ -8042,7 +8042,7 @@ formAI_scripts = [
           (assign, ":cur_score", 0),
           (try_for_range, ":item_slot", ek_item_0, ek_head),
             (agent_get_item_slot, ":item", ":agent", ":item_slot"),
-            (gt, ":item", itm_no_item),
+            (gt, ":item", "itm_no_item"),
             (item_get_type, ":weapon_type", ":item"),
             (neq, ":weapon_type", itp_type_shield),
             
@@ -8088,7 +8088,7 @@ formAI_scripts = [
             
             (try_for_range, ":item_slot", ek_item_0, ek_head),
               (agent_get_item_slot, ":item", ":agent", ":item_slot"),
-              (gt, ":item", itm_no_item),
+              (gt, ":item", "itm_no_item"),
               (item_get_type, ":weapon_type", ":item"),
               (eq, ":weapon_type", itp_type_shield),
               (item_get_weapon_length, reg0, ":item"),	#gets shield width, which is always defined (see header_items)

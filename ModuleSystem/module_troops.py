@@ -3155,7 +3155,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 
 ## Kham - Dormant Troop
 
-["dormant","Dormant","_", tf_hero|tf_is_merchant,no_scene,reserved,fac_commoners,[],def_attrib,0,knows_common|knows_inventory_management_10,0],
+["dormant","Dormant","_", tf_hero|tf_is_merchant,no_scene,reserved,fac_commoners,[],def_attrib,0,knows_common|knows_inventory_management_10,0], #Used for Cheat Item Picker
 
 
 ## Kham - Test AI
@@ -3203,7 +3203,15 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["deep_dweller_of_moria","Deep-Dweller_of_Moria","Deep-Dwellers_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,[itm_orc_bughelm_lordly,itm_orc_bughelm_lordly,itm_uruk_helm_e,itm_uruk_helm_f,itm_moria_armor_e,itm_orc_greaves,itm_orc_club_d,itm_dwarf_war_pick,itm_orc_javelin,itm_orc_javelin,itm_moria_orc_shield_a,itm_moria_orc_shield_b,itm_moria_orc_shield_c],attr_orc_tier_5,wp_orc_tier_5,knows_athletics_6|knows_power_strike_6|knows_power_throw_5|knows_ironflesh_5,orc_face5,orc_face4],
 ["tribal_orc_chief","Orc_Chieftain_of_Moria","Orc_Chieftains_of_Moria",tf_orc| tfg_armor| tfg_helm| tfg_boots| tfg_shield| tf_no_capture_alive,0,0,fac_moria,[itm_orc_beakhelm_lordly,itm_uruk_helm_c,itm_uruk_helm_d,itm_uruk_helm_f,(itm_moria_armor_e, imod_sturdy),(itm_moria_armor_e, imod_reinforced),(itm_moria_armor_e, imod_lordly),itm_uruk_greaves, itm_orc_greaves, itm_rhun_falchion,itm_rhun_shortsword,itm_rhun_sword, itm_orc_skull_spear,itm_uruk_spear, itm_moria_orc_shield_a, (itm_orc_shield_c, imod_reinforced)],attr_orc_tier_5,wp_orc_tier_5,knows_athletics_7|knows_power_strike_5|knows_ironflesh_10,orc_face5,orc_face4],
 ["rhovanion_noble","Rhovanion_Noble","Rhovanion_Noblemen",tf_mounted| tfg_boots| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_shield|tfg_polearm,0,0,fac_dale,[itm_dale_helmet_e, itm_dale_helmet_f, itm_north_nasal_helm_good,itm_dale_armor_k,itm_dale_armor_l,itm_leather_gloves,itm_leather_boots,itm_lance,itm_dale_sword_long,itm_dwarf_shield_c, itm_dwarf_shield_c_good,itm_dale_warhorse,],attr_tier_5,wp_tier_5,knows_riding_4|knows_shield_2|knows_ironflesh_4|knows_power_strike_3,vaegir_face_middle_1,vaegir_face_older_2],
-	  
+
+# Malleable Hero Troops for Quests / Triggers
+
+["generic_hero_infantry","generic_hero_infantry","generic_hero_infantry",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_ranged","generic_hero_ranged","generic_hero_ranged",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2,orc_face5,orc_face4],
+["generic_hero_knight","generic_hero_knight","generic_hero_knight",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+["generic_hero_mounted_archer","generic_hero_mounted_archer","generic_hero_mounted_archer",tf_hero|tf_male|tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
+
+
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],

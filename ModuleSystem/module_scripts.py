@@ -3543,6 +3543,9 @@ scripts = [
       (else_try),
 		(eq,":item_no","itm_elven_amulet_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Power Draw"),(set_trigger_result, color_item_text_bonus),(try_end),
+	  (else_try),
+		(eq,":item_no","itm_beorn_shield_reward"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Turns nature to your side (effect scales with Wildcraft)"),(set_trigger_result, color_item_text_bonus),(try_end),	
       (else_try),
 		(eq,":item_no","itm_angmar_whip_reward"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Trainer"),(set_trigger_result, color_item_text_bonus),(try_end),
@@ -23917,6 +23920,7 @@ command_cursor_scripts = [
 
 ("cf_init_kill_quest_faction", [
 
+	(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), # Evil Only
 	(store_character_level, ":player_level", "trp_player"),
 	(ge, ":player_level", "$tld_player_level_to_begin_war"),
 	
@@ -26927,6 +26931,8 @@ if is_a_wb_script==1:
 		(eq, ":found", 0),
 		(party_is_active, ":nearest_bandit_party"),
 		(party_slot_eq, ":nearest_bandit_party", slot_party_type, spt_bandit),
+		(party_get_template_id, ":party_template", ":nearest_bandit_party"),
+		(neq, ":party_template", "pt_deserters"), #not deserter troops
 		(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
 		(le, ":dist", 100),
 		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0), 
