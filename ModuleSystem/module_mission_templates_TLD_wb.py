@@ -1142,6 +1142,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
         (neq, ":agent1", ":agent2"),
         (agent_is_active, ":agent2"),
         (agent_is_alive, ":agent2"),
+        (agent_is_human, ":agent2"),
 
         #Should not be riding a horse
         (agent_get_horse, ":horse2", ":agent2"),
@@ -2039,7 +2040,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (agent_is_active, ":killed"),
     (agent_is_active, ":killer"),
     (agent_is_human, ":killed"),
-    (agent_is_human, ":killed"),
+    (agent_is_human, ":killer"),
     
     (agent_get_troop_id, ":troop_id", ":killed"),
     (troop_get_type, ":type", ":troop_id"),
