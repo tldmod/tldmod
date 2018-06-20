@@ -26933,7 +26933,9 @@ if is_a_wb_script==1:
 		(party_slot_eq, ":nearest_bandit_party", slot_party_type, spt_bandit),
 		(party_get_template_id, ":party_template", ":nearest_bandit_party"),
 		(neq, ":party_template", "pt_deserters"), #not deserter troops
-		(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
+		(call_script, "script_get_tld_distance", "p_main_party", ":nearest_bandit_party"),
+		(assign, ":dist", reg0),
+		#(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
 		(le, ":dist", 100),
 		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0), 
 		(assign, ":found", 1),

@@ -825,6 +825,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
     (store_trigger_param_1, ":agent"),
 
     (agent_get_troop_id, ":agent_trp",":agent"),
+    (gt, ":agent_trp", 0),
 
     (this_or_next|eq, ":agent_trp", "trp_dunnish_wolf_guard"),
     (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
@@ -851,7 +852,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
       (val_add, ":base_chance", ":multiplier"),
     (else_try),
       (eq, ":agent_trp", "trp_player"),
-      (assign, ":base_chance", 0),
+      (assign, ":base_chance", -1),
     (try_end),
 
 
@@ -877,6 +878,15 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
         (this_or_next|eq, ":agent_trp", "trp_player"),
         (eq, ":agent_trp", "trp_beorn_lord"),
         (spawn_agent, "trp_bear"),
+        (store_faction_of_troop, ":troop_faction", ":agent_trp"),
+        (store_relation, ":relations", ":troop_faction", "$players_kingdom"),
+        (try_begin),
+          (gt, ":relations", 0),
+          (assign, ":color", color_good_news),
+        (else_try),
+          (assign, ":color", color_bad_news),
+        (try_end),
+        (display_message, "@A bear has been summoned to battle!", ":color"),
       (else_try),
         (spawn_agent, "trp_wolf"),
       (try_end),
