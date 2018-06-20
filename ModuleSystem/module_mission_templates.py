@@ -849,10 +849,14 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
       (store_skill_level, ":wildcraft", "skl_persuasion", "trp_player"), 
       (store_mul, ":multiplier", ":wildcraft", 9),
       (val_add, ":base_chance", ":multiplier"),
+    (else_try),
+      (eq, ":agent_trp", "trp_player"),
+      (assign, ":base_chance", 0),
     (try_end),
 
 
     (store_random_in_range, ":rnd", 0, 100),
+
     (le, ":rnd", ":base_chance")], 
     [
       (store_trigger_param_1, ":agent"),

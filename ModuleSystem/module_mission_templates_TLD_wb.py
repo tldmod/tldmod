@@ -2036,6 +2036,11 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (store_trigger_param_2, ":killer"),
     (store_trigger_param_3, ":result"),
 
+    (agent_is_active, ":killed"),
+    (agent_is_active, ":killer"),
+    (agent_is_human, ":killed"),
+    (agent_is_human, ":killed"),
+    
     (agent_get_troop_id, ":troop_id", ":killed"),
     (troop_get_type, ":type", ":troop_id"),
     (get_player_agent_no, ":player"),
