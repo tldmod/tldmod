@@ -1697,7 +1697,7 @@ scripts = [
 		(assign, ":garrison_strength", 13), 
 		(try_begin),
 			(party_slot_eq, ":center_no", slot_party_type, spt_town),
-			(assign, ":garrison_strength", 50),  #InVain, was 20, increased this to initially counter lowered reinforcement rate for towns.
+			(assign, ":garrison_strength", 80),  #InVain, was 20, increased this to initially counter lowered reinforcement rate for towns.
 		(try_end),
 		(try_begin), # TLD: capitals get more
 			(store_faction_of_party, ":center_faction", ":center_no"),
