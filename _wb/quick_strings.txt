@@ -1,4 +1,4 @@
-1785
+1787
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -708,7 +708,7 @@ qstr_{s4} {s4}
 qstr_have_taken_measure_o have_taken_measure_of_your_faction's_current_strength_and_has_grown_bolder.
 qstr_loses_Faction_Streng loses_Faction_Strength_as_supply_lines_were_disrupted.
 qstr_loses_Faction_Strengt loses_Faction_Strength_due_to_the_destruction_of_their_camp.
-qstr_gain_Faction_Strengt gain_Faction_Strength_as_news_of_your_victory_spreads.
+qstr_gains_Faction_Streng gains_Faction_Strength_as_news_of_your_victory_spreads.
 qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
@@ -872,6 +872,7 @@ qstr_End_them_all! End_them_all!
 qstr_Drive_them_back! Drive_them_back!
 qstr_Protect_the_City! Protect_the_City!
 qstr_Forward!_Board_them! Forward!_Board_them!
+qstr_The_Last_Days_of_the_ The_Last_Days_of_the_Third_Age_has_an_Advanced_Siege_AI,_vastly_different_from_Native._All_troops,_including_the_player's,_are_distributed_amongst_different_teams_(Left_Flank_/_Center_/_Right_Flank).^^_The_player_is_then_in_charge_of_commanding_their_team,_while_the_AI_is_in_charge_of_commanding_the_other_teams._This_allows_for_a_smarter,_squad-based,_siege_battles.^^_Starting_troops_and_reinforcements_are_commanded_to_CHARGE_during_the_first_few_seconds_after_deployment._After_that,_your_team_can_be_commanded_again.
 qstr_DEBUG:_Attackers_go_ DEBUG:_Attackers_go_back_to_regular_attack_mode
 qstr_DEBUG:_Attackers_do_ DEBUG:_Attackers_do_not_stall_on_ladders_triggered
 qstr_Attackers:_{reg1}/{r Attackers:_{reg1}/{reg3}/{reg5}_Defenders:_{reg0}/{reg2}/{reg4}
@@ -1252,6 +1253,7 @@ qstr_You_must_follow_{s1} You_must_follow_{s1}!
 qstr_You_must_follow_{s1}! You_must_follow_{s1}!_This_is_your_last_warning!
 qstr_DEBUG:_Eliminate_Par DEBUG:_Eliminate_Parties_-_Current:_{reg0},_New:_{reg1}
 qstr_{s1}_parties_defeate {s1}_parties_defeated:_{reg1}_out_of_{reg2}
+qstr_{reg69}_Moria_and/or {reg69}_Moria_and/or_Gundabad_troops_killed.
 qstr_{reg69}_{s2}_troops_ {reg69}_{s2}_troops_killed.
 qstr_{reg69}_{s2}_{s4}_tr {reg69}_{s2}_{s4}_troops_killed.
 qstr_{reg69}_{s4}_killed. {reg69}_{s4}_killed.
@@ -1503,7 +1505,7 @@ qstr_Rest_the_wounds_have Rest,_the_wounds_have_been_taken_care_of.
 qstr_Your_party_must_be_a Your_party_must_be_at_least_30_strong_to_begin_this_quest
 qstr_You_were_tasked_to_h You_were_tasked_to_hunt_down_the_bandits_that_have_been_recently_wreaking_havoc_in_the_North._You_can_either_attack_them_in_their_hideout_near_Mirkwood_Forest_or_intercept_them_near_Beorn's_House.
 qstr_Mordor_Gains_Faction Mordor_Gains_Faction_Strength_as_they_received_an_unknown_weapon
-qstr_Beornings_gain_Facti Beornings_gain_Faction_Strength_as_news_of_your_victory_spreads.
+qstr_Beornings_gains_Fact Beornings_gains_Faction_Strength_as_news_of_your_victory_spreads.
 qstr_Beornings_loses_Fact Beornings_loses_Faction_strength_when_they_were_attacked.
 qstr__{s14}_gains_faction _{s14}_gains_faction_strength_as_news_of_the_Ring_of_Power_spreads.
 qstr_You_must_return_and_ You_must_return_and_report_back_that_you_have_defeated_the_Ring_Hunter_leaders_and_have_taken_a_magical_ring.
@@ -1731,7 +1733,7 @@ qstr_Good_of_you_to_ask_{ Good_of_you_to_ask,_{playername}.^^There_are_{s6}_movi
 qstr_The_people_have_aske The_people_have_asked_for_help_in_slaying_at_least_{reg22}_{s6},_in_hopes_that_this_will_keep_them_away_for_some_time.^^Would_you_be_able_to_do_this?
 qstr_I_want_you_to_slay_a I_want_you_to_slay_at_least_{reg22}_{s6},_to_show_those_weaklings_that_they_are_inconsequential.^^What_do_you_say?
 qstr_We_will_get_rid_of_t We_will_get_rid_of_these_pests.
-qstr_{s9}_wants_you_to_sl {s9}_wants_you_to_slay_{reg22}_{s6}.
+qstr_{s9}_wants_you_to_sl {s9}_wants_you_to_slay_{reg22}_{s6}_in_battles.
 qstr_The_{s9}_of_{s3}_ask The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_food_in_{reg6}_days.
 qstr_The_{s9}_of_{s3}_aske The_{s9}_of_{s3}_asked_you_to_bring_him_{reg5}_units_of_{s6}_in_{reg0}_days.
 qstr_Escort_the_supply_tr Escort_the_supply_train_to_{s8}.

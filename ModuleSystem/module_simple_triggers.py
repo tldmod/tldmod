@@ -1649,7 +1649,7 @@ simple_triggers = [
       (quest_get_slot, ":quest_target_faction", "qst_eliminate_patrols", slot_quest_target_faction),
       (try_begin),
         (neg|faction_slot_eq, ":quest_target_faction", slot_faction_state, sfs_active),
-        (call_script, "script_end_quest", "qst_eliminate_patrols"),
+        (call_script, "script_succeed_quest", "qst_eliminate_patrols"),
       (else_try),
         #Kham - Eliminate Patrols Refactor START
         #(store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
@@ -1693,7 +1693,12 @@ simple_triggers = [
       (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
       (str_store_faction_name, s2, ":target"),
       (assign, reg69, "$oath_kills"),
-      (str_store_string, s3, "@{reg69} {s2} troops killed."),
+      (try_begin),
+        (quest_slot_ge, "qst_oath_of_vengeance", 7, 1),
+        (str_store_string, s3, "@{reg69} Moria and/or Gundabad troops killed."),
+      (else_try),  
+        (str_store_string, s3, "@{reg69} {s2} troops killed."),
+      (try_end),
       (add_quest_note_from_sreg, "qst_oath_of_vengeance", 2, s3, 0),
     (try_end),
 
@@ -1702,10 +1707,17 @@ simple_triggers = [
       (check_quest_active, "qst_blank_quest_05"),
       (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
       (quest_get_slot, ":current_amount", "qst_blank_quest_05", slot_quest_current_state),
+      (str_clear, s2),
       (str_store_faction_name, s2, ":target_faction"),
       (assign, reg69, ":current_amount"),
       (str_store_string, s3, "@{reg69} {s2} troops killed."),
       (add_quest_note_from_sreg, "qst_blank_quest_05", 2, s3, 0),
+    (else_try),
+      (check_quest_active, "qst_blank_quest_05"),
+      (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
+      (faction_get_slot, ":target_active", ":target_faction", slot_faction_state),
+      (eq, ":target_active", sfs_defeated),
+      (call_script, "script_succeed_quest", "qst_blank_quest_05"),      
     (try_end),
 
     #Report number of kills for the targeted kill quest
@@ -1714,11 +1726,18 @@ simple_triggers = [
       (quest_get_slot, ":target_faction", "qst_blank_quest_04", slot_quest_target_faction),
       (quest_get_slot, ":target_troop", "qst_blank_quest_04", slot_quest_target_troop),
       (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
+      (str_clear, s2),
       (str_store_faction_name, s2, ":target_faction"),
       (str_store_troop_name, s4, ":target_troop"),
       (assign, reg69, ":current_amount"),
       (str_store_string, s3, "@{reg69} {s2} {s4} troops killed."),
       (add_quest_note_from_sreg, "qst_blank_quest_04", 2, s3, 0),
+    (else_try),
+      (check_quest_active, "qst_blank_quest_04"),
+      (quest_get_slot, ":target_faction", "qst_blank_quest_04", slot_quest_target_faction),
+      (faction_get_slot, ":target_active", ":target_faction", slot_faction_state),
+      (eq, ":target_active", sfs_defeated),
+      (call_script, "script_succeed_quest", "qst_blank_quest_04"),
     (try_end),
 
     #Report number of kills for the bandit kill quest
@@ -1731,7 +1750,7 @@ simple_triggers = [
       (str_store_string, s3, "@{reg69} {s4} killed."),
       (add_quest_note_from_sreg, "qst_blank_quest_17", 2, s3, 0),
     (try_end),
-            
+
             
     ]),
 # (50)

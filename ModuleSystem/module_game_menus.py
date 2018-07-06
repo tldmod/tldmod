@@ -568,7 +568,7 @@ game_menus = [
      (else_try),
      (eq, "$g_custom_battle_scenario", 99),
        (assign, "$g_custom_battle_scene", "scn_quick_battle_ambush"),
-       (assign, "$g_player_troop", "trp_knight_3_6"),
+       (assign, "$g_player_troop", "trp_lorien_marshall"), #Celeborn
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
@@ -1331,7 +1331,7 @@ game_menus = [
   ("go_back", [],"Go back",[(jump_to_menu, "mnu_start_good")]),    ]
  ),
 ( "start_good_dwarf",menu_text_color(0xFF000000)|mnf_disable_all_keys,
- "^^^^^^^^^^Select your Lineage:", "none",[(assign, "$last_menu", "mnu_start_good_elf")],[
+ "^^^^^^^^^^Select your Lineage:", "none",[(assign, "$last_menu", "mnu_start_good_dwarf")],[
   ("start_er", [],"a dweller of EREBOR"                  ,[(call_script,"script_start_as_one","trp_dwarven_apprentice"),   (jump_to_menu,"mnu_start_as_one"),]),
   ("start_ih", [],"a miner of the IRON HILLS"            ,[(call_script,"script_start_as_one","trp_iron_hills_miner"),     (jump_to_menu,"mnu_start_as_one"),]),
   ("spacer" , [],"_",[]),  
@@ -5309,9 +5309,9 @@ game_menus = [
           
           #(store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)  #changed from 5 - 2 (kham)
 
-          (assign,":rank_increase", reg62), #Replaced by new formula
+          #(assign,":rank_increase", reg62), #Replaced by new formula
 #(display_message, "@Debug: giving rank points for helping allies."),		  
-		  (call_script, "script_increase_rank", ":ally_faction", ":rank_increase"), # MV - changed rank increase to renown calc #Kham- for some reason, it still uses  relation ($g_relation_boost). Changed to renown.
+		  #(call_script, "script_increase_rank", ":ally_faction", ":rank_increase"), # MV - changed rank increase to renown calc #Kham- for some reason, it still uses  relation ($g_relation_boost). Changed to renown.
 #		  (call_script, "script_increase_rank", ":ally_faction", ":faction_reln_boost"), # increase rank of helped faction (mtarini)
           #(call_script, "script_change_player_relation_with_faction", ":ally_faction", ":faction_reln_boost"),
           (party_stack_get_troop_id, ":ally_leader", "$g_ally_party"),

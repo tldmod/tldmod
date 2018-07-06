@@ -3405,8 +3405,7 @@ mission_templates = [ # not used in game
    ],
   # Triggers
   tld_common_wb_muddy_water+
-  common_deathcam_triggers +
-  moto_formations_triggers + 
+  common_deathcam_triggers + 
   fade + khams_custom_player_camera + bright_nights + [
   
   tld_slow_wounded,
@@ -3728,8 +3727,7 @@ mission_templates = [ # not used in game
    ],
   # Triggers
   tld_common_wb_muddy_water+
-  common_deathcam_triggers +
-  moto_formations_triggers + 
+  common_deathcam_triggers + 
   fade + khams_custom_player_camera + bright_nights + [
   
   tld_slow_wounded,
@@ -4124,6 +4122,22 @@ mission_templates = [ # not used in game
     (assign, "$gate_breached",0), #for scenes without gates, just to make sure it's 0
     (call_script, "script_change_banners_and_chest"),
     (call_script, "script_remove_siege_objects")]),
+
+  # Siege Tutorial
+
+  (6, 0 , ti_once, [
+      (eq, "$formations_tutorial", 3)],
+      [
+      ] + (is_a_wb_mt==1 and [
+      (tutorial_message_set_background, 1), 
+      ] or []) + [
+      (try_begin),
+        (eq, "$formations_tutorial", 3),
+        (tutorial_message, "@The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.", 0 , 15),
+      (try_end),
+      (val_add, "$formations_tutorial", 1),
+      ]),
+
   (0, 0, ti_once, [],[
     (assign,"$battle_won",0),
     (assign,"$defender_reinforcement_stage",0),
@@ -5935,7 +5949,7 @@ mission_templates = [ # not used in game
 				(assign, "$alarm_level", 1),
 				(display_message, "@The_guards_have_spotted_a_dead_body!"),
 				(display_message, "@Alarm_Level_is_now_at_1!", 4294945450),
-				(agent_play_sound, "snd_man_yell", ":enemy"),
+				(agent_play_sound, ":enemy", "snd_man_yell"),
 				(reset_mission_timer_a),
 			(try_end),
 		(try_end),

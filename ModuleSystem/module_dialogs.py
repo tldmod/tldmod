@@ -4204,12 +4204,12 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (try_end)], 
     "{s1}", "lord_healers_injured_check",[]],
 
-[anyone|plyr,"healers_injured_check", [
+[anyone|plyr,"lord_healers_injured_check", [
   (call_script,"script_update_respoint"),
   (faction_get_slot, ":rps", "$g_talk_troop_faction", slot_faction_respoint),
   (faction_get_slot, ":inf", "$g_talk_troop_faction", slot_faction_influence),
   (ge, ":inf", 10),
-  (ge,":rps", 1000)], 
+  (ge,":rps", 1500)], 
     "Yes, attend to us.", "lord_healers_injured_heal",[]],
 
 
@@ -4218,7 +4218,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (faction_get_slot, ":rps", "$g_talk_troop_faction", slot_faction_respoint),
   (faction_get_slot, ":inf", "$g_talk_troop_faction", slot_faction_influence),
   (ge, ":inf", 5),
-  (ge,":rps", 500)], 
+  (ge,":rps", 1000)], 
     "Yes, attend to us.", "lord_healers_wound_heal",[]],
 
 
@@ -4365,7 +4365,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   [],
   "Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind\
    You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.\
-   The first is returning with their loot to their encampment on th eeaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.","ring_hunters_2",
+   The first is returning with their loot to their encampment on the eaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.","ring_hunters_2",
   []],
 
 [anyone|plyr,"ring_hunters_2",
@@ -4447,7 +4447,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
       (display_message,"@Mordor Gains Faction Strength as they received an unknown weapon",color_bad_news),
       (faction_get_slot,":win","fac_beorn",slot_faction_strength_tmp),
       (val_add, ":win", 150),
-      (display_message,"@Beornings gain Faction Strength as news of your victory spreads.",color_good_news),
+      (display_message,"@Beornings gains Faction Strength as news of your victory spreads.",color_good_news),
       (faction_set_slot,"fac_beorn",slot_faction_strength_tmp,":win"),
       (faction_set_slot,"fac_mordor",slot_faction_strength_tmp,":evil"),
       ]],
@@ -11463,7 +11463,7 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
       
       (str_store_troop_name_plural, s36, ":quest_target_troop"),
       (setup_quest_text,"qst_blank_quest_17"),
-      (str_store_string, s2, "@{s9} wants you to slay {reg22} {s6}."),
+      (str_store_string, s2, "@{s9} wants you to slay {reg22} {s6} in battles."),
       (call_script, "script_start_quest", "qst_blank_quest_17", "$g_talk_troop"),
 ]],
 

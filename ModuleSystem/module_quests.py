@@ -337,7 +337,7 @@ quests = [
   "{!}Placeholder"
 ),
 
-("blank_quest_17", "Slay {reg22} {s6}", 0,
+("blank_quest_17", "Slay {reg22} {s6} in battles", 0,
   "{!}Placeholder"
 ),
 

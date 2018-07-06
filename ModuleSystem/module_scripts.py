@@ -4393,9 +4393,8 @@ scripts = [
 #        (try_end),
         (store_random_in_range, ":random_no", 0, 100),
         (lt, ":random_no", ":randomness"),
-        (item_get_slot, ":reward", ":item_id"),
+        (item_get_slot, ":reward", ":item_id", slot_item_given_as_reward),
         (neq, ":reward", 1),#If Item is a reward, dont let it get jacked.
-        #(neg|is_between, ":item_id", "itm_ent_water", "itm_khamul_helm"), #Kham - don't let Reward Items get jacked.
         (troop_remove_item, "trp_player", ":item_id"),
 
         (try_begin),
@@ -22683,7 +22682,7 @@ command_cursor_scripts = [
         (assign,":news_color",color_bad_news),
     (else_try),
         (str_store_string, s10, "@loses Faction Strength due to the destruction of their camp."),
-        (str_store_string, s14, "@gain Faction Strength as news of your victory spreads."),
+        (str_store_string, s14, "@gains Faction Strength as news of your victory spreads."),
         (assign,":news_color",color_good_news),
     (try_end),
 
@@ -23806,7 +23805,7 @@ command_cursor_scripts = [
         (assign,":news_color",color_bad_news),
     (else_try),
         (str_store_string, s10, "@loses Faction Strength due to the your success at the sea."),
-        (str_store_string, s14, "@gain Faction Strength as news of your victory spreads."),
+        (str_store_string, s14, "@gains Faction Strength as news of your victory spreads."),
         (assign,":news_color",color_good_news),
     (try_end),
 
@@ -26941,10 +26940,13 @@ if is_a_wb_script==1:
 		(assign, ":found", 1),
 
 		#Debug
-		(str_store_party_name, s11, ":nearest_bandit_party"),
-		(str_store_troop_name, s12, ":troop"),
-		(assign, reg70, ":dist"),
-		(display_message, "@Distance - {reg70} - {s11} Party - {s12} Troop"),
+		(try_begin),
+			(eq, "$cheat_mode", 1),
+			(str_store_party_name, s11, ":nearest_bandit_party"),
+			(str_store_troop_name, s12, ":troop"),
+			(assign, reg70, ":dist"),
+			(display_message, "@Distance - {reg70} - {s11} Party - {s12} Troop"),
+		(try_end),
 	(try_end),
 
 	(gt, ":troop", 0),

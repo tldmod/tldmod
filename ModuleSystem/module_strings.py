@@ -173,18 +173,18 @@ strings = [
  Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple axe.\
  Your axe's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead.\
  Move on to the next room when you are ready to initiate the fight."),
-  ("tutorial_3_msg_3","Press and hold down the right mouse button to defend yourself with your staff after your opponent starts his attack.\
+  ("tutorial_3_msg_3","Press and hold down the right mouse button to defend yourself with your axe after your opponent starts his attack.\
  Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
   ("tutorial_3_msg_4","Well done, you've succeeded this trial!\
  Now you will be pitted against a more challenging opponent that will make things more difficult for you.\
  Move on to the next room when you're ready to face him."),
-  ("tutorial_3_msg_5","Press and hold down the right mouse button to defend yourself with your staff after your opponent starts his attack.\
+  ("tutorial_3_msg_5","Press and hold down the right mouse button to defend yourself with your axe after your opponent starts his attack.\
  Try to remain standing for thirty seconds. You have {reg3} seconds to go."),
   ("tutorial_3_msg_6","Congratulations, you still stand despite the enemy's best efforts.\
  The time has now come to attack as well as defend.\
  Approach the door and press the F key when you see the word 'Go'."),
 
-  ("tutorial_3_2_msg_1","Your staff's attacks have been enabled again. Your first opponent is waiting in the next room.\
+  ("tutorial_3_2_msg_1","Your axe's attacks have been enabled again. Your first opponent is waiting in the next room.\
  Defeat him by a combination of attack and defence."),
   ("tutorial_3_2_msg_2","Defeat your opponent with your axe."),
   ("tutorial_3_2_msg_3","Excellent. Now the only thing standing in your way is one last opponent.\
@@ -249,15 +249,15 @@ You can press TAB anytime to leave the tutorial."),
   ("trainer_help_2", "To speak with the trainer, go near him, look at him and press the 'F' key when you see the word 'Talk' under his name.\
  When you wish to leave this or any other area or retreat from a battle, you can press the TAB key."),
 
-  ("custom_battle_1", "Captain Malvogil and his Gondor company intercepted Harad reinforcement group.\
+  ("custom_battle_1", "Angbor the Fearless and his Gondor company intercepted a Harad reinforcement group.\
  Shouting out his warcry, he spurs his horse forward, and leads his loyal men to a fierce battle."),
   ("custom_battle_2", "Celeborn from Lorien is leading a patrol of horsemen and archers\
- when forward lookout brings a warning of a force of ash-faced evil men approaching.\
+ when a forward lookout brings a warning of a force of ash-faced evil men approaching.\
  It's the dreaded Black Numenoreans! Those were not seen near Lothlorien for ages,\
  but now they must be driven back to the neverworld."),
   ("custom_battle_3", "Lord Grimbold of Rohan is leading the last defence of the walls against an army of Isengard.\
  Now, as the besiegers prepare for a final assault on the walls, he must hold the walls with courage and bright steel."),
-  ("custom_battle_4", "When the scouts inform Lord Beranhelm of the approach of an Rhun war band,\
+  ("custom_battle_4", "When the scouts inform Lord Beranhelm of the approach of a Rhun war band,\
  he decides to quickly prepare the defences of his camp and try to hold against superior numbers."),
   ("custom_battle_5", "Ugluk has brought his fierce orksies into the west with the promise of plunder.\
  If he can make this dwarf stronghold fall to him today, his masters in Barad-Dur will be mightily pleased."),
@@ -1402,7 +1402,7 @@ You can press TAB anytime to leave the tutorial."),
   ("npc2_home_intro", "Be vigilant, commander, that must be Minas Morgul over there. Do you feel that something is watching us?"),
   ("npc3_home_intro", "A word of advice, commander. We are getting mighty close to Entwood now and the horses are getting restless. Some call the forest Fangorn, too."),
   ("npc4_home_intro", "Let's stop here for a minute, commander. Ahead of us, between the Anduin and the Limlight, lies the Field of Celebrant, where Eorl the Young rode to the aid of our Gondor allies."),
-  ("npc5_home_intro", "Daro! That's Isengard and the black tower of Orthanc ahead. Much has changed since I last saw them, and none for the better."),
+  ("npc5_home_intro", "Daro! That's Angrenost and the black tower of Orthanc ahead. Much has changed since I last saw them, and none for the better."),
   ("npc6_home_intro", "Excuse me, {playername}. The paths in this part become more twisted and some lead to dead-ends. We must be approaching Dol Guldur."),
   ("npc7_home_intro", "Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains."),
   ("npc8_home_intro", "Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather."),
