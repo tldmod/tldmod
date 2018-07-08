@@ -50,7 +50,7 @@ pt_isengard_scouts Isengard_Scouts 281474980905082 0 7 183 334 1 1 0 333 2 6 0 3
 pt_isengard_scouts_warg Isengard_Warg_Riders 281474980905084 0 7 183 322 1 1 0 321 3 6 0 320 3 6 0 -1 -1 -1 
 pt_harad_scouts Haradrim_Scouts 281474980905059 0 12 183 261 1 1 0 260 1 4 0 256 4 8 0 -1 -1 -1 
 pt_dunland_scouts Dunlending_Scouts 281474980905055 0 19 183 271 5 10 0 -1 -1 -1 -1 -1 
-pt_umbar_scouts Corsair_Scouts 281474980905062 0 15 183 299 1 2 0 302 2 4 0 301 3 8 0 -1 -1 -1 
+pt_umbar_scouts Corsair_Scouts 281474980905062 0 15 183 306 1 2 0 302 2 4 0 301 3 8 0 -1 -1 -1 
 pt_khand_scouts Easterling_Scouts 281474980905058 0 15 183 293 1 3 0 283 2 4 0 282 3 6 0 -1 -1 -1 
 pt_moria_scouts Moria_Scouts 281474980905081 0 16 183 373 1 1 0 372 2 5 0 371 3 6 0 -1 -1 -1 
 pt_guldur_scouts Dol_Guldur_Scouts 281474980905081 0 17 183 357 3 4 0 356 8 12 0 -1 -1 -1 -1 
@@ -70,7 +70,7 @@ pt_isengard_raiders Isengard_Raiders 281474980905086 0 7 238 340 1 1 0 338 3 8 0
 pt_dunland_raiders Dunlending_Raiders 562949957615712 0 19 238 274 1 1 0 273 2 4 0 272 4 8 0 268 8 16 0 -1 -1 
 pt_harad_raiders Haradrim_Raiders 562949957615715 0 12 238 250 1 1 0 253 10 20 0 247 11 20 0 -1 -1 -1 
 pt_khand_raiders Khand_Raiders 562949957615714 0 14 238 285 1 1 0 282 5 10 0 284 5 15 0 -1 -1 -1 
-pt_umbar_raiders Umbar_Raiders 562949957615718 0 15 238 300 1 1 0 299 4 8 0 298 4 8 0 297 6 15 0 -1 -1 
+pt_umbar_raiders Umbar_Raiders 562949957615718 0 15 238 300 1 1 0 306 4 8 0 305 4 8 0 297 6 15 0 -1 -1 
 pt_moria_raiders Moria_Raiders 562949957615737 0 16 238 934 1 3 0 379 3 9 0 376 5 15 0 378 8 16 0 -1 -1 
 pt_guldur_raiders Dol_Guldur_Raiders 562949957615739 0 17 238 367 1 1 0 360 4 10 0 357 8 16 0 368 8 16 0 356 15 30 0 -1 
 pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 389 6 12 0 383 18 32 0 352 0 1 0 -1 
@@ -176,8 +176,8 @@ pt_khand_reinf_a _ 0 0 1 0 282 1 2 0 278 2 4 0 277 4 8 0 -1 -1 -1
 pt_khand_reinf_b _ 0 0 1 0 292 2 4 0 283 0 1 0 279 2 3 0 287 1 2 0 -1 -1 
 pt_khand_reinf_c _ 0 0 1 0 284 2 4 0 293 1 2 0 290 1 2 0 -1 -1 -1 
 pt_umbar_reinf_a _ 0 0 1 0 301 1 2 0 297 2 4 0 296 4 8 0 -1 -1 -1 
-pt_umbar_reinf_b _ 0 0 1 0 397 1 2 0 305 1 2 0 302 2 4 0 298 1 2 0 -1 -1 
-pt_umbar_reinf_c _ 0 0 1 0 398 1 2 0 299 1 2 0 306 1 2 0 303 1 2 0 -1 -1 
+pt_umbar_reinf_b _ 0 0 1 0 397 1 2 0 305 2 4 0 302 2 4 0 -1 -1 -1 
+pt_umbar_reinf_c _ 0 0 1 0 398 1 2 0 306 2 4 0 303 1 2 0 -1 -1 -1 
 pt_lorien_reinf_a _ 0 0 1 0 173 1 2 0 165 1 2 0 164 2 4 0 172 2 4 0 -1 -1 
 pt_lorien_reinf_b _ 0 0 1 0 166 2 4 0 173 1 2 0 176 1 2 0 -1 -1 -1 
 pt_lorien_reinf_c _ 0 0 1 0 167 2 4 0 174 1 2 0 177 1 2 0 -1 -1 -1 

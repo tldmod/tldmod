@@ -1701,7 +1701,7 @@ center_list = [
 	[-1, trp_smith_khand, trp_merchant_khand, trp_elder_khand, pt_khand_recruits, trp_khand_lord, trp_easterling_youth, trp_easterling_axeman,trp_khand_glaive_whirler,trp_variag_pitfighter], 
 	[icon_mfc_khand],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 2, tld_siegable_capital),
 (p_town_umbar_camp, [scn_umbar_camp_center, -1, -1,-1, scn_umbar_arena,scn_umbar_camp_siege, mesh_town_evilcamp],
-	[-1, trp_smith_umbar, trp_merchant_umbar, trp_elder_umbar, pt_umbar_recruits, trp_umbar_lord, trp_corsair_youth, trp_corsair_warrior, trp_assassin_of_umbar,trp_militia_of_umbar], 
+	[-1, trp_smith_umbar, trp_merchant_umbar, trp_elder_umbar, pt_umbar_recruits, trp_umbar_lord, trp_corsair_youth, trp_corsair_warrior, trp_veteran_marksman_of_umbar,trp_militia_of_umbar], 
 	[icon_mfc_umbar],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high, 1, tld_siegable_capital),
 	
 (p_town_dol_guldur, [scn_dol_guldur_center, scn_mordor_castle, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_dol_guldur_siege,mesh_town_dol_guldur],
@@ -1773,7 +1773,7 @@ center_list = [
 	[-1, trp_smith_khand, trp_merchant_khand, trp_elder_khand_ac, pt_khand_recruits, trp_khand_lord, trp_easterling_youth, trp_easterling_axeman,trp_khand_glaive_whirler,trp_variag_pitfighter], 
 	[icon_mfc_khand],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
 (p_advcamp_umbar, [scn_advcamp_umbar, -1, -1,-1,-1, scn_advcamp_umbar_siege, mesh_town_evilcamp],
-	[-1, trp_smith_umbar, trp_merchant_umbar, trp_elder_umbar_ac, pt_umbar_recruits, trp_umbar_lord, trp_corsair_youth, trp_corsair_warrior, trp_assassin_of_umbar,trp_militia_of_umbar], 
+	[-1, trp_smith_umbar, trp_merchant_umbar, trp_elder_umbar_ac, pt_umbar_recruits, trp_umbar_lord, trp_corsair_youth, trp_corsair_warrior, trp_veteran_marksman_of_umbar,trp_militia_of_umbar], 
 	[icon_mfc_umbar],[900],[2,1,4,1,4,1], 0, garrison_limit_evil_med, 3, tld_siegable_always),
 (p_advcamp_lorien, [scn_advcamp_lorien, -1, -1, -1, -1, scn_advcamp_lorien_siege, mesh_town_goodcamp],
 	[-1, trp_smith_camroth, trp_merchant_camroth, trp_elder_lorien_ac, pt_lorien_recruits,  trp_lorien_lord, trp_lothlorien_scout, trp_lothlorien_archer, trp_lothlorien_infantry, trp_lothlorien_warden], 
