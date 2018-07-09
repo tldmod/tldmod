@@ -78,7 +78,7 @@ imodbits_bad    = 0#imodbit_rusty | imodbit_chipped | imodbit_tattered | imodbit
 #
 imodbits_cloth  = imodbit_smelling | imodbit_meek | imodbit_tattered | imodbit_ragged | imodbit_sturdy | imodbit_thick | imodbit_hardened
 imodbits_orc_cloth  = imodbit_tattered | imodbit_ragged | imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_smelling
-imodbits_elf_cloth  = imodbit_thick | imodbit_hardened | imodbit_reinforced 
+imodbits_elf_cloth  = imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_reinforced 
 #
 imodbits_armor  = imodbit_rusty | imodbit_battered | imodbit_crude | imodbit_thick | imodbit_reinforced | imodbit_lordly
 imodbits_armor_bad  = imodbit_rusty | imodbit_battered | imodbit_crude
@@ -1111,15 +1111,19 @@ items =[
 ["dale_shield_d","Dale_Shield",[("dwarf_round_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(360)|body_armor(5)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
 #TLD UMBAR ITEMS##########
 ##ARMOR##########
-["umb_armor_a","Corsair_Leather_Armor",[("corsair_leather",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,260,weight(7)|head_armor(0)|body_armor(10)|leg_armor(4)|difficulty(0),imodbits_cloth,],
-["umb_armor_a1","Corsair_Heavy_Leather_Armor",[("corsair_leather_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(9)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["umb_armor_b","Corsair_Raider_Armor",[("corsair_leather_cape",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,400,weight(8)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["umb_armor_c","Corsair_Padded_Armor",[("corsair_padded",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(12)|head_armor(0)|body_armor(15)|leg_armor(4)|difficulty(0),imodbits_cloth,],
-["umb_armor_d","Corsair_Heavy_Padded_Armor",[("corsair_padded_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,700,weight(14)|head_armor(0)|body_armor(18)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["umb_armor_e","Corsair_Padded_Raider_Armor",[("corsair_padded_cape",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(13)|head_armor(0)|body_armor(16)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["umb_armor_f","Corsair_Hauberk",[("corsair_chain",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(20)|head_armor(1)|body_armor(21)|leg_armor(7)|difficulty(0),imodbits_armor,],
-["umb_armor_g","Corsair_Hauberk_Pauldrons",[("corsair_chain_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(0)|body_armor(25)|leg_armor(7)|difficulty(0),imodbits_elf_armor,],
-["umb_armor_h","Corsair_Heavy_Raider_Armor",[("corsair_chain_cape",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1300,weight(21)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+
+#next three free, July 2018
+["free_umb_armor_a1","Corsair_Heavy_Leather_Armor",[("corsair_leather_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(9)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["free_umb_armor_d","Corsair_Heavy_Padded_Armor",[("corsair_padded_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,700,weight(14)|head_armor(0)|body_armor(18)|leg_armor(5)|difficulty(0),imodbits_cloth,],
+["free_umb_armor_g","Corsair_Hauberk_Pauldrons",[("corsair_chain_pauldron",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(0)|body_armor(25)|leg_armor(7)|difficulty(0),imodbits_elf_armor,],
+
+["umb_armor_a","Corsair_Leather_Armor",[("corsair_leather",0),("corsair_leather_pauldron",imodbits_elf_cloth)],itp_type_body_armor|itp_covers_legs|itp_shop,0,260,weight(7)|head_armor(0)|body_armor(10)|leg_armor(4)|difficulty(0),imodbits_cloth,],
+["umb_armor_b","Corsair_Raider_Armor",[("corsair_leather_cape",0),("corsair_leather_cape_pauldron",imodbits_elf_cloth)],itp_type_body_armor|itp_covers_legs|itp_shop,0,400,weight(8)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),imodbits_cloth,],
+["umb_armor_c","Corsair_Padded_Armor",[("corsair_padded",0),("corsair_padded_pauldron",imodbits_elf_cloth)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(12)|head_armor(0)|body_armor(15)|leg_armor(4)|difficulty(0),imodbits_cloth,],
+["umb_armor_d","Corsair_Padded_Raider_Armor",[("corsair_padded_cape",0),("corsair_padded_cape_pauldron",imodbits_elf_cloth)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(13)|head_armor(0)|body_armor(16)|leg_armor(5)|difficulty(0),imodbits_cloth,],
+["umb_armor_e","Corsair_Hauberk",[("corsair_chain",0),("corsair_chain_pauldron",imodbits_elf_armor)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(20)|head_armor(1)|body_armor(21)|leg_armor(7)|difficulty(0),imodbits_armor,],
+["umb_armor_f","Corsair_Heavy_Raider_Armor",[("corsair_chain_cape",0),("corsair_chain_cape_pauldron",imodbits_elf_armor)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1300,weight(21)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+
 #######HELMS##########
 ["umb_helm_a","Corsair_Shell_Helm",[("shell_helmet",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["umb_helm_b","Corsair_Shell_Helm",[("shell_helmet_blue",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_elf_armor],
