@@ -10262,9 +10262,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_corsair_marauder", 3),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 3),(set_visitors, 15, "trp_corsair_marauder", 3),(set_visitors, 16, "trp_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_militia_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_militia_of_umbar", 5),
+						(set_visitors, 18, "trp_militia_of_umbar", 4),(set_visitors, 19, "trp_harad_skirmisher", 4),(set_visitors, 20, "trp_militia_of_umbar", 4),
 				(else_try),
 					(ge, ":level", 25),
 						#ally infantry, entries 2-7
@@ -10272,9 +10272,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_swordsman", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_elite_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
+						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_swordsman", 3),(set_visitors, 14, "trp_harad_infantry", 5),(set_visitors, 15, "trp_corsair_veteran_marauder", 3),(set_visitors, 16, "trp_corsair_marauder", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_archer", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
+						(set_visitors, 18, "trp_marksman_of_umbar", 4),(set_visitors, 19, "trp_harad_archer", 4),(set_visitors, 20, "trp_militia_of_umbar", 4),
 				(try_end),
 			(else_try),
 			#(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale

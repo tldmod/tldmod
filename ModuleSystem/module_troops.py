@@ -2032,7 +2032,7 @@ troops = [
 ["knight_1_1","Angbor_the_Fearless","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gondor_lam_horse,itm_lamedon_leader_surcoat_cloak,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_lamedon_leader_helm,itm_gondor_citadel_sword,itm_gon_tab_shield_a,itm_gondor_javelin,itm_gondor_javelin],
       attr_tier_6,wp_tier_6,gondor_skills_4|knows_trainer_4|knows_persuasion_3|knows_horse_archery_5|knows_power_throw_7,0x00000008bf00524435d36db7536db6db00000000001db6dd0000000000000000],
-["knight_1_2","Baranor","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
+["knight_1_2","Húrin_of_the_Keys","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
    [itm_gon_tower_knight,itm_gondor_heavy_greaves,itm_mail_mittens,itm_gondor_leader_helm,itm_gondor_citadel_sword,itm_gondor_shield_e,itm_gondor_tower_spear],
       attr_tier_6,wp_tier_6,gondor_skills_5,0x00000007f700550919da9135148e24e500000000001db9110000000000000000],
 ["knight_1_3","Prince_Imrahil","_",tf_hero| tf_gondor| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_gondor,
