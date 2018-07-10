@@ -2043,6 +2043,7 @@ simple_triggers = [
 		(assign, "$prev_day", 1),
 		(play_sound, "snd_reload_crossbow_continue"), # rooster at dawn
 		(try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
+      (call_script, "script_cf_is_a_night_troop", ":troop_id"), #Night Troops Exceptions
 			(troop_get_type, ":troop_type", ":troop_id"),
 			(try_begin),
 			]+concatenate_scripts([
@@ -2083,6 +2084,9 @@ simple_triggers = [
 		(assign, "$prev_day", 0),
 		(play_sound, "snd_release_crossbow"), # wolf at dusk
 		(try_for_range, ":troop_id", tld_troops_begin, tld_troops_end),
+      
+      (call_script, "script_cf_is_a_night_troop", ":troop_id"), #Night Troops Exceptions
+
 			(troop_get_type, ":troop_type", ":troop_id"),
 			(try_begin),
 			]+concatenate_scripts([

@@ -12182,7 +12182,7 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # TLD: can disband members for Res Point (mtarini)
   
 [anyone,"member_chat_00", [
-      (neg|troop_slot_eq, reg11, "$g_talk_troop", slot_troop_upkeep_not_paid,0), # if the troop wasn't paid last time, and it is on the leave
+      (neg|troop_slot_eq, "$g_talk_troop", slot_troop_upkeep_not_paid,0), # if the troop wasn't paid last time, and it is on the leave
      (store_partner_faction, reg14),
     (str_store_faction_name, s14, reg14),
 	(call_script, "script_get_troop_disband_cost", "$g_talk_troop",0,0),(assign, reg14, reg0),],

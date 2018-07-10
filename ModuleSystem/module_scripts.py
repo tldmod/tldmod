@@ -21641,6 +21641,29 @@ scripts = [
 	# (cur_tableau_add_sun_light, pos8, 175,150,125),
 # ]),
 
+# script_cf_is_a_night_troop
+# Fails if the troop iterated is a night troop (ie. no nighttime penalites)
+# Input: Troop ID
+# Output: Fail
+
+	("cf_is_a_night_troop", [
+		(store_script_param_1, ":troop_id"),
+
+		(assign, ":continue", 1),
+		(try_begin),
+			(this_or_next|eq, ":troop_id", "trp_dunnish_night_wolf"),
+			(this_or_next|eq, ":troop_id", "trp_woodmen_master_axemen"),
+			(this_or_next|eq, ":troop_id", "trp_fell_huntsmen_of_mirkwood"),
+			(this_or_next|eq, ":troop_id", "trp_corsair_night_raider"),
+			(this_or_next|eq, ":troop_id", "trp_far_harad_panther_guard"),
+			(			  eq, ":troop_id", "trp_blackroot_leader"),
+			(assign, ":continue", 0),
+		(try_end),
+
+		(eq, ":continue", 1),
+	]),
+      
+
 ]
 
 command_cursor_scripts = [

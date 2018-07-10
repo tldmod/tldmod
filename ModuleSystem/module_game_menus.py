@@ -5305,7 +5305,7 @@ game_menus = [
         
           (party_get_num_companion_stacks, ":num_ally_stacks", "$g_ally_party"),
           (gt, ":num_ally_stacks", 0), # anybody survived
-          (store_faction_of_party, ":ally_faction","$g_ally_party"),
+         #(store_faction_of_party, ":ally_faction","$g_ally_party"),
           
           #(store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)  #changed from 5 - 2 (kham)
 
