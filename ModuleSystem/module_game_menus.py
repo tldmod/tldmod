@@ -9769,8 +9769,13 @@ game_menus = [
 	          (			    eq, ":quest_object_faction", "fac_dale"),
 	          (assign, ":bandit_troop_1", "trp_rhun_tribal_warrior"),
 	          (assign, ":bandit_troop_2", "trp_rhun_horse_scout"),
+		    (else_try),
+	          (eq, ":quest_object_faction","fac_beorn"),
+	          (eq, ":random_no", 0),
+	          (assign, ":bandit_troop_1", "trp_fell_orc_warrior_gundabad"),
+	          (assign, ":bandit_troop_2", "trp_warg_skirmisher_gundabad"),
 	        (else_try),
-	          (assign, ":bandit_troop_1", "trp_orc_of_mordor"),
+	          (assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
 	          (assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),
 	        (try_end),
 
@@ -10179,7 +10184,7 @@ game_menus = [
 ###################### Sea Battle Quest Start (Kham) ##########################################
 	
 	("sea_battle_quest",0,
-	   "The fleets have met. The ships close in and sailors throw down planks...",
+	   "You meet an enemy fleet. The ships close in and sailors throw down planks...",
 	   "none",[(set_background_mesh, "mesh_ui_default_menu_window")],
 
 	 #If Good
@@ -10257,9 +10262,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
+						(set_visitors, 18, "trp_militia_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_militia_of_umbar", 5),
 				(else_try),
 					(ge, ":level", 25),
 						#ally infantry, entries 2-7
@@ -10267,9 +10272,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_veteran_marauder", 5),(set_visitors, 13, "trp_harad_swordsman", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_elite_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
+						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_swordsman", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_elite_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_veteran_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_archer", 5),(set_visitors, 20, "trp_veteran_marksman_of_umbar", 5),
+						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_archer", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
 				(try_end),
 			(else_try),
 			#(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
@@ -10484,7 +10489,7 @@ game_menus = [
 	        	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
 	        	(str_store_string, s9, "@You have defeated the raiding fleet! This is a heavy blow to the enemy's plans!"),
 	        (else_try),
-	        	(str_store_string, s9, "@You defeated the intercepting fleet and raided the city! This is a great victory!"),
+	        	(str_store_string, s9, "@You defeated the intercepting fleet! Even though you do not have enough strength left to raid the city, this is a great victory!"),
 	        (try_end),
 			(call_script, "script_succeed_quest", "qst_blank_quest_03"),
 		  (else_try),
@@ -10492,7 +10497,7 @@ game_menus = [
 	        (call_script, "script_fail_quest", "qst_blank_quest_03"),
 	        (try_begin),
 	        	(faction_slot_eq, "$g_encountered_party_faction", slot_faction_side, faction_side_good),
-	        	(str_store_string, s9, "@You have failed to defend the city from the raid!"),
+	        	(str_store_string, s9, "@You drove back the enemy fleet, but lost most of your ships!"),
 	        (else_try),
 	        	(str_store_string, s9, "@You were defeated by the intercepting fleet and failed to raid the city!"),
 	        (try_end),

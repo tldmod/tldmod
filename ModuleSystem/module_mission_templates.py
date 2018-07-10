@@ -3502,7 +3502,7 @@ mission_templates = [ # not used in game
         (eq, ":faction", "fac_gondor"),
         (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
         #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
-        (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
+        (assign, ":enemy_archer_tier_1", "trp_militia_of_umbar"),
         #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
       #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
       (else_try), #Dale
@@ -3525,7 +3525,10 @@ mission_templates = [ # not used in game
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
       # (try_end),
 
-      (assign, ":range_end", 7), #Change this number to change the number of troops spawned
+	  (store_character_level, ":level", "trp_player"),
+	  (store_div, ":num_enemies", ":level", 3), #InVain - scale attacker # to the player's level, easier at the beginning, harder from lvl 24
+      (val_min, ":num_enemies", 11),
+	  #(assign, ":range_end", 7), #Change this number to change the number of troops spawned
       (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
       (store_random_in_range, ":rand_speech", 0, 6),
@@ -3560,7 +3563,7 @@ mission_templates = [ # not used in game
       (set_spawn_position, pos5), 
       
       #This spawns the troops, coin flip on whether troops are ranged / melee, as per the above troop assignments.
-      (try_for_range, ":unused", 0, ":range_end"),
+      (try_for_range, ":unused", 0, ":num_enemies"),
           (store_random_in_range, ":rnd_troop", 0,100),
           (le, ":rnd_troop", 50),
           (spawn_agent, ":enemy_melee_troop"),
@@ -3613,7 +3616,7 @@ mission_templates = [ # not used in game
       (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
       (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
 
-      (assign, ":range_end", 6),
+      (assign, ":num_allies", 6),
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
       (store_random_in_range, ":rand_speech", 0, 6),
@@ -3645,7 +3648,7 @@ mission_templates = [ # not used in game
       (store_random_in_range, ":ally_entry", 2, 11),
       (entry_point_get_position, pos4, ":ally_entry"),
       (set_spawn_position, pos4), 
-      (try_for_range, ":unused", 0, ":range_end"),
+      (try_for_range, ":unused", 0, ":num_allies"),
           (store_random_in_range, ":rnd_troop", 0,100),
           (le, ":rnd_troop", 50),
           (spawn_agent, ":ally_melee_troop"),
@@ -3846,7 +3849,7 @@ mission_templates = [ # not used in game
         (assign, ":enemy_ranged_troop", ":enemy_archer_tier_1"),
       # (try_end),
 
-      (assign, ":range_end", 6), #Change this number to change the number of troops spawned
+      (assign, ":num_allies", 6), #Change this number to change the number of troops spawned
       (assign, ":team_ally", 0),
       (display_message, "@Ally reinforcements have arrived", color_good_news),
       (store_random_in_range, ":rand_speech", 0, 6),
@@ -3881,7 +3884,7 @@ mission_templates = [ # not used in game
       (set_spawn_position, pos5), 
       
       #This spawns the troops, coin flip on whether troops are ranged / melee, as per the above troop assignments.
-      (try_for_range, ":unused", 0, ":range_end"),
+      (try_for_range, ":unused", 0, ":num_allies"),
           (store_random_in_range, ":rnd_troop", 0,100),
           (le, ":rnd_troop", 50),
           (spawn_agent, ":enemy_melee_troop"),
@@ -3932,7 +3935,11 @@ mission_templates = [ # not used in game
       (assign, ":ally_melee_troop",   ":allies_melee_tier_1"),
       (assign, ":ally_ranged_troop",  ":allies_archer_tier_1"),
 
-      (assign, ":range_end", 6),
+	  
+	  (store_character_level, ":level", "trp_player"),
+	  (store_div, ":num_enemies", ":level", 4), #InVain - scale attacker # to the player's level, easier at the beginning, harder from lvl 24
+      (val_min, ":num_enemies", 10),
+      #(assign, ":range_end", 6),
       (assign, ":team_enemy", 1),
       (display_message, "@Enemy reinforcements have arrived", color_bad_news),
       (store_random_in_range, ":rand_speech", 0, 6),
@@ -3964,7 +3971,7 @@ mission_templates = [ # not used in game
       (store_random_in_range, ":ally_entry", 2, 11),
       (entry_point_get_position, pos4, ":ally_entry"),
       (set_spawn_position, pos4), 
-      (try_for_range, ":unused", 0, ":range_end"),
+      (try_for_range, ":unused", 0, ":num_enemies"),
           (store_random_in_range, ":rnd_troop", 0,100),
           (le, ":rnd_troop", 50),
           (spawn_agent, ":ally_melee_troop"),
@@ -4659,6 +4666,7 @@ mission_templates = [ # not used in game
      (else_try),(eq,":team",5),(val_add, reg5,1),
     (try_end),
   (try_end),
+  (eq, "$cheat_mode", 1),
   (set_show_messages, 1),
   (display_message, "@Attackers: {reg1}/{reg3}/{reg5} Defenders: {reg0}/{reg2}/{reg4}")]),
 

@@ -2551,9 +2551,16 @@ scripts = [
 						(call_script, "script_give_center_to_faction", ":root_defeated_party", ":winner_faction"),
 						(call_script, "script_order_best_besieger_party_to_guard_center", ":root_defeated_party", ":winner_faction"),
 						# add a small garrison
-						(try_for_range, ":unused", 0, 10), #InVain: higher, to counter lowered reinforcement rate. Was 5
-							(call_script, "script_cf_reinforce_party", ":root_defeated_party"),
-						(try_end),
+							(try_begin),
+								(eq, ":winner_faction", "fac_player_faction"),
+								(try_for_range, ":unused", 0, 10), #InVain: higher, to counter lowered reinforcement rate. Was 5
+									(call_script, "script_cf_reinforce_party", ":root_defeated_party"),
+								(try_end),
+							(else_try),
+								(try_for_range, ":unused", 0, 40), #InVain: higher, to counter lowered reinforcement rate. Was 5
+									(call_script, "script_cf_reinforce_party", ":root_defeated_party"),
+								(try_end),							
+							(try_end),
 					(try_end),
 				(try_end),
 			(try_end),

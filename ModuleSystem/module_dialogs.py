@@ -3485,7 +3485,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
         (faction_slot_eq,"$players_kingdom",slot_faction_leader,"$g_talk_troop"),
         (eq, "$g_talk_troop_met", 0)],
 "Ah, welcome, {s24}.^You should already know that {s12}. \
-Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there."
+Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there, for you to store your personal belongings."
 #^As your {s15}, I grant you a simple mount to help you in your travels.
 		, "lord_pretalk",[
           (assign, ":num_theater_enemies", 0),
@@ -5971,9 +5971,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
     (faction_slot_eq, "$g_talk_troop_faction", slot_faction_side, faction_side_good),
     (try_begin), #South Good
       (eq, "$g_talk_troop_faction", "fac_gondor"),
-      (str_store_string, s5, "@{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ Hasten to {s6}, speak to the local authorities, and aid the local garrison against this incursion."),
+      (str_store_string, s5, "@{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ We must intercept the fleet before it reaches the city. Hasten to {s6}, and speak to the local authorities."),
     (else_try),
-      (str_store_string, s5, "@{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must bolster our defences there, and soon. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!"),
+      (str_store_string, s5, "@{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must intercept the fleet before it reaches the city. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!"),
     (try_end),
   (else_try),
     (try_begin),

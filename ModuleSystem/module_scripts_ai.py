@@ -2361,9 +2361,10 @@ ai_scripts = [
          (faction_get_slot, ":strength", ":troop_faction_no", slot_faction_strength),
          (try_begin), ## Kham - Lets give Gondor more Hosts - Let's hide it in a menu for testing
             #(eq, "$gondor_ai_testing", 1),
-            (eq, ":faction_no", "fac_gondor"),										  
+            (eq, ":faction_no", "fac_gondor"),
+			(lt,":strength", 4000), #InVain: But only in the beginning or if they're in trouble
             (val_div, ":strength", 700), 
-            (display_message, "@Gondor AI Tweaks - Give more hosts"),
+            #(display_message, "@Gondor AI Tweaks - Give more hosts"),
          (else_try),
             (val_div, ":strength", 1000), #MV: 3.15 tweak, was 1300 - to get more hosts
          (try_end),
