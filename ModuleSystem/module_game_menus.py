@@ -4471,6 +4471,7 @@ game_menus = [
         (try_begin),
           (call_script, "script_party_count_members_with_full_health", "p_collective_enemy"),
           (assign, ":num_enemy_regulars_remaining", reg0 ),
+          (store_div, ":player_to_enemy_ratio", reg22, reg11),
           (assign, ":enemy_finished",0),
           (try_begin),
             (eq, "$g_battle_result", 1),
@@ -4482,6 +4483,7 @@ game_menus = [
             (this_or_next|le, ":num_enemy_regulars_remaining", 0),
             (le, "$g_enemy_fit_for_battle","$num_routed_enemies"), #Kham - we don't want routed enemies to spawn.
             (ge, "$g_friend_fit_for_battle",1),
+            (gt, ":player_to_enemy_ratio", 5), #test for routed enemies again...
             (assign, ":enemy_finished",1),
           (try_end),
           (this_or_next|eq, ":enemy_finished",1),
@@ -5930,12 +5932,14 @@ game_menus = [
 
         (try_begin),
           (call_script, "script_party_count_members_with_full_health","p_collective_enemy"),
-          (assign, ":num_enemy_regulars_remaining", reg(0)),
+          (assign, ":num_enemy_regulars_remaining", reg0),
+          (store_div, ":player_to_enemy_ratio", reg22, reg11),
           (assign, ":enemy_finished",0),
           (try_begin),
             (eq, "$g_battle_result", 1),
             (this_or_next|le, ":num_enemy_regulars_remaining", 0), #battle won
           	(le, ":num_enemy_regulars_remaining", "$num_routed_enemies"), #Kham - routed enemies don't get spawned
+          	(gt, ":player_to_enemy_ratio", 5), #test for routed enemies again...
           	(assign, ":enemy_finished", 1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),

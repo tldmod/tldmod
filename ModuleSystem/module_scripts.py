@@ -12344,7 +12344,7 @@ scripts = [
         (party_collect_attachments_to_party, "$g_enemy_party", "p_collective_enemy"),
       (try_end),
       (call_script, "script_party_count_fit_for_battle", "p_collective_enemy"),
-      (assign, "$g_enemy_fit_for_battle", reg(0)),
+      (assign, "$g_enemy_fit_for_battle", reg0),
       (assign, reg11, "$g_enemy_fit_for_battle"),
       (assign, reg10, "$g_friend_fit_for_battle"),
 ]),
@@ -15557,6 +15557,7 @@ scripts = [
 	(try_begin),
 		(agent_is_routed, ":cur_agent"),
 		(neg|is_between, ":agent_troop_id", warg_ghost_begin, warg_ghost_end),
+		(neq, ":agent_troop_id", "trp_gate_aggravator"), # Don't count gate aggravator - Kham
 		(agent_set_slot, ":cur_agent", slot_agent_routed, 2),
 	(try_end),
 
