@@ -1,4 +1,4 @@
-1786
+1789
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -605,6 +605,9 @@ qstr_Gondor_AI_Tweaks___Mo Gondor_AI_Tweaks_-_More_frequent_hosts
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
 qstr_ERROR ERROR
 qstr_Rohan_capital_moved_ Rohan_capital_moved_from_Edoras_to_Hornburg!
+qstr_Gondor_capital_moved Gondor_capital_moved_from_Minas_Tirith_to_Dol_Amroth!
+qstr_Dale_capital_moved_f Dale_capital_moved_from_Dale_to_Esgaroth!
+qstr_Gundabad_capital_mov Gundabad_capital_moved_from_Gundabad_to_Goblin_Town!
 qstr_The_hosts_of_{s2}_re The_hosts_of_{s2}_retreat_back_to_their_homes!
 qstr____Ruins_of_{s1}___ ___Ruins_of_{s1}___
 qstr_ranks ranks
