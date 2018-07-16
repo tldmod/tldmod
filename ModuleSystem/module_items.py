@@ -445,11 +445,11 @@ items =[
 ["gondor_lamedon_helm","Lamedon_Helm",[("gondor_lamedon_helm",0)],itp_type_head_armor|itp_shop,0,1100,weight(2)|head_armor(32)|difficulty(0),imodbits_elf_armor],
 ["gondor_lamedon_leader_helm","Lamedon_High_Helmet",[("gondor_lamedon_leader_helm",0)],itp_type_head_armor|itp_shop,0,1400,weight(2.5)|head_armor(36)|difficulty(0),imodbits_elf_armor],
 ###BRV
-["blackroot_archer","Blackroot_Vale_Archer_Armor",[("blackroot_archer",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,200,weight(12)|head_armor(0)|body_armor(18)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["blackroot_bowman","Blackroot_Vale_Bowman_Armor",[("blackroot_bowman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,100,weight(10)|head_armor(0)|body_armor(12)|leg_armor(8)|difficulty(0),imodbits_elf_cloth,],
-["blackroot_footman","Blackroot_Vale_Footman_Armor",[("blackroot_footman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(15)|head_armor(0)|body_armor(20)|leg_armor(7)|difficulty(0),imodbits_elf_armor,],
-["blackroot_warrior","Blackroot_Vale_Warrior_Armor",[("blackroot_warrior",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(14)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["blackroot_leader","Blackroot_Vale_Leader_Armor",[("blackroot_leader",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(20)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
+["blackroot_archer","Blackroot_Vale_Cloaked_Gambeson",[("blackroot_archer",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,200,weight(12)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+["blackroot_bowman","Blackroot_Vale_Cloaked_Jerkin",[("blackroot_bowman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,100,weight(10)|head_armor(0)|body_armor(14)|leg_armor(8)|difficulty(0),imodbits_elf_cloth,],
+["blackroot_footman","Blackroot_Vale_Jerkin",[("blackroot_footman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(14)|head_armor(0)|body_armor(14)|leg_armor(7)|difficulty(0),imodbits_elf_armor,],
+["blackroot_warrior","Blackroot_Vale_Gambeson",[("blackroot_warrior",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(15)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
+["blackroot_leader","Blackroot_Vale_Mail",[("blackroot_leader",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,3000,weight(20)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0),imodbits_elf_armor,],
 ["blackroot_hood","Black_Hood",[("blackroot_hood",0),("gondor_wimple_a",imodbit_bent),("gondor_wimple_b",imodbit_cracked),("gondor_fine_fem_hat",imodbit_rusty)],itp_type_head_armor|itp_shop|itp_fit_to_head|itp_civilian,0,100,weight(0.5)|head_armor(12)|difficulty(0),imodbits_cloth],
 #["blackroot_helm", "Blackroot Helm",[("blackroot_helm",0)], itp_shop|itp_type_head_armor,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ###DOL AMROTH

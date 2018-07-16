@@ -691,19 +691,19 @@ itemsfile version 2
  itm_gondor_lamedon_leader_helm Lamedon_High_Helmet Lamedon_High_Helmet 1  gondor_lamedon_leader_helm 0  65548 0 1400 704643072 2.5 100 36 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_archer Blackroot_Vale_Archer_Armor Blackroot_Vale_Archer_Armor 1  blackroot_archer 0  16842765 0 200 704643072 12 100 0 18 8 0 0 0 0 0 0 0 0
+ itm_blackroot_archer Blackroot_Vale_Cloaked_Gambeson Blackroot_Vale_Cloaked_Gambeson 1  blackroot_archer 0  16842765 0 200 704643072 12 100 0 16 8 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_bowman Blackroot_Vale_Bowman_Armor Blackroot_Vale_Bowman_Armor 1  blackroot_bowman 0  16842765 0 100 251658240 10 100 0 12 8 0 0 0 0 0 0 0 0
+ itm_blackroot_bowman Blackroot_Vale_Cloaked_Jerkin Blackroot_Vale_Cloaked_Jerkin 1  blackroot_bowman 0  16842765 0 100 251658240 10 100 0 14 8 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_footman Blackroot_Vale_Footman_Armor Blackroot_Vale_Footman_Armor 1  blackroot_footman 0  16842765 0 1000 704643072 15 100 0 20 7 0 0 0 0 0 0 0 0
+ itm_blackroot_footman Blackroot_Vale_Jerkin Blackroot_Vale_Jerkin 1  blackroot_footman 0  16842765 0 1000 704643072 14 100 0 14 7 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_warrior Blackroot_Vale_Warrior_Armor Blackroot_Vale_Warrior_Armor 1  blackroot_warrior 0  16842765 0 1200 704643072 14 100 0 16 8 0 0 0 0 0 0 0 0
+ itm_blackroot_warrior Blackroot_Vale_Gambeson Blackroot_Vale_Gambeson 1  blackroot_warrior 0  16842765 0 1200 704643072 15 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_leader Blackroot_Vale_Leader_Armor Blackroot_Vale_Leader_Armor 1  blackroot_leader 0  16842765 0 3000 704643072 20 100 0 30 10 0 0 0 0 0 0 0 0
+ itm_blackroot_leader Blackroot_Vale_Mail Blackroot_Vale_Mail 1  blackroot_leader 0  16842765 0 3000 704643072 20 100 0 30 10 0 0 0 0 0 0 0 0
 0
 
  itm_blackroot_hood Black_Hood Black_Hood 4  blackroot_hood 0  gondor_wimple_a 8  gondor_wimple_b 2  gondor_fine_fem_hat 4  1610678284 0 100 1116815228928 0.5 100 12 0 0 0 0 0 0 0 0 0 0

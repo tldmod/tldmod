@@ -2612,7 +2612,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (check_quest_succeeded, "qst_blank_quest_04"),
     (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
     ],
-"Your men have wintessed your bravery in battle, {playername}. You have shown them that we are the superiour force.", "lord_generic_mission_completed",[
+"Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.", "lord_generic_mission_completed",[
     (call_script, "script_finish_quest", "qst_blank_quest_04", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
     ]],
@@ -2632,7 +2632,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (check_quest_succeeded, "qst_blank_quest_05"),
     (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
     ],
-"Your men have wintessed your bravery in battle, {playername}. You have earned my respect.", "lord_generic_mission_completed",[
+"Your men have witnessed your bravery in battle, {playername}. You have earned my respect.", "lord_generic_mission_completed",[
     (call_script, "script_finish_quest", "qst_blank_quest_05", 100),
     (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 2),
     ]],
