@@ -2130,40 +2130,40 @@ itemsfile version 2
  itm_rhun_shield Rhun_Kite_Shield Rhun_Kite_Shield 1  rhun_shield 0  327687 4831838208 200 251658402 2.5 100 0 5 0 0 480 82 0 80 0 0 0
 0
 
- itm_dale_armor_a Dale_Jacket Dale_Jacket 1  dale_footman 0  16842765 0 500 1116815228928 7 100 0 14 5 0 0 0 0 0 0 0 0
+ itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 1  dale_light_a 0  16842765 0 200 1116815228928 7 100 0 11 5 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_b Dale_Cloak_Jacket Dale_Cloak_Jacket 1  WIP_dale_footman_cloak 0  16842765 0 600 1116815228928 8 100 0 15 6 0 0 0 0 0 0 0 0
+ itm_dale_light_b Northmen_Light_Lamellar Northmen_Light_Lamellar 3  northmen_light_a2 0  northmen_light_a3 33554432  northmen_light_a1 134217728  16842765 0 400 1116815228928 8 100 0 15 6 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_c Dale_Archer_Jacket Dale_Archer_Jacket 1  dale_new_archer_c 0  16842765 0 500 1116815228928 7 100 0 13 5 0 0 0 0 0 0 0 0
+ itm_dale_med_a Northmen_Heavy_Lamellar Northmen_Heavy_Lamellar 3  northmen_med_a3 0  northmen_med_a2 164  northmen_med_a1 704643072  16842765 0 1100 704643236 14 100 0 26 7 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_d Dale_Archer_Jacket Dale_Archer_Jacket 1  dale_new_archer_f 0  16842765 0 500 1116815228928 7 100 0 13 5 0 0 0 0 0 0 0 0
+ itm_dale_med_b Dale_Leather_Armor Dale_Leather_Armor 2  dale_med_b 0  dale_med_b2 0  16842765 0 900 1116815228928 9 100 0 21 6 10 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_e Dale_Coat_Over_Mail Dale_Coat_Over_Mail 1  dale_heavy_lvam_a 0  16842765 0 1000 704643236 18 100 0 25 10 0 0 0 0 0 0 0 0
+ itm_dale_med_c Dale_Lamellar_Armor Dale_Lamellar_Armor 1  dale_med_a 0  16842765 0 1000 704643236 13 100 0 24 4 10 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_f Dale_Coat_Over_Mail Dale_Coat_Over_Mail 1  dale_heavy_lvam_b 0  16842765 0 1000 704643236 18 100 0 25 10 0 0 0 0 0 0 0 0
+ itm_dale_heavy_a Dale_Lamellar_Over_Mail Dale_Lamellar_Over_Mail 1  dale_heavy_a 0  16842765 0 1400 704643236 19 100 0 34 8 12 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_g Dale_Coat_Over_Mail Dale_Coat_Over_Mail 1  dale_heavy_lvam_d 0  16842765 0 1000 704643236 18 100 0 25 10 0 0 0 0 0 0 0 0
+ itm_dale_heavy_b Dale_Plated_Coat Dale_Plated_Coat 1  dale_heavy_b 0  16842765 0 1600 704643236 22 100 0 38 11 14 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_h Dale_Cloak_Long_Maille Dale_Cloak_Long_Maille 1  dale_heavy_cloak_a 0  16842765 0 1500 704643072 19 100 0 35 12 0 0 0 0 0 0 0 0
+ itm_dale_heavy_c Rhovanion_Mail Rhovanion_Mail 2  northmen_heavy_a 0  northmen_heavy_b 0  16842765 0 1600 704643236 18 100 0 33 12 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_i Dale_Cloak_Long_Maille Dale_Cloak_Long_Maille 1  dale_heavy_cloak_b 0  16842765 0 1500 704643072 19 100 0 35 12 0 0 0 0 0 0 0 0
+ itm_dale_armor_i Dale_Cloak_Long_Maille Dale_Cloak_Long_Maille 1  dale_heavy_a 0  16842765 0 1500 704643072 19 100 0 35 12 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_j Dale_Cloak_Long_Maille Dale_Cloak_Long_Maille 1  dale_heavy_cloak_d 0  16842765 0 1500 704643072 19 100 0 35 12 0 0 0 0 0 0 0 0
+ itm_dale_armor_j Dale_Cloak_Long_Maille Dale_Cloak_Long_Maille 1  dale_heavy_b 0  16842765 0 1500 704643072 19 100 0 35 12 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_k Dale_Noble_Armor Dale_Noble_Armor 1  dale_heavy_belt_a 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
+ itm_dale_armor_k Dale_Noble_Armor Dale_Noble_Armor 1  northmen_heavy_b 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_dale_armor_l Dale_Noble_Gorget Dale_Noble_Gorget 1  dale_noble_gorget_b 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
+ itm_dale_armor_l Dale_Noble_Gorget Dale_Noble_Gorget 1  dale_reward 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
 0
 
  itm_dale_helmet_a Dale_Light_Infantry_Helm Dale_Light_Infantry_Helm 2  dale_archer_helm_1c 0  dale_archer_helm_1d 704643072  65548 0 700 704643238 2 100 28 0 0 0 0 0 0 0 0 0 0
@@ -2205,7 +2205,7 @@ itemsfile version 2
  itm_dale_shield_b Dale_Tower_Shield Dale_Tower_Shield 2  dale_shield_i 0  dale_shield_j 771751936  327687 4831838208 200 251658402 2 100 0 8 0 0 450 70 0 90 0 0 0
 0
 
- itm_dale_shield_c Dale_Round_Shield Dale_Round_Shield 2  dwarf_round_shield_e 0  dwarf_round_shield_m 771751936  327687 5100273664 300 251658402 2 100 0 5 0 0 360 82 0 50 0 0 0
+ itm_dale_shield_c Dale_Round_Shield Dale_Round_Shield 2  dwarf_round_shield_e 0  dwarf_round_shield_m 771751936  327687 5100273664 300 251658402 2 100 0 9 0 0 360 82 0 50 0 0 0
 0
 
  itm_dale_shield_d Dale_Shield Dale_Shield 1  dwarf_round_shield_m 0  327687 5100273664 200 251658402 2 100 0 5 0 0 360 82 0 50 0 0 0
@@ -2692,7 +2692,7 @@ itemsfile version 2
  itm_dale_sword_reward Marchwarden_Sword Marchwarden_Sword 2  Mandible_royal_sword 0  Mandible_royal_sword_scabbard 3458764513820540928  4198402 9223388564182532111 500 287892 1.25 100 0 0 0 0 41984 98 0 91 0 280 41
 0
 
- itm_dale_armor_reward Esgaroth_Noble_Gorget Esgaroth_Noble_Gorget 1  dale_noble_gorget_b 0  16781325 0 2000 704643072 22 100 4 38 15 0 0 0 0 0 0 0 0
+ itm_dale_armor_reward Dale_Noblemen_Mail Dale_Noblemen_Mail 1  dale_reward 0  16781325 0 2000 704643072 22 100 4 38 15 0 0 0 0 0 0 0 0
 0
 
  itm_leather_gloves_reward Hunting_Gloves Hunting_Gloves 3  lthr_glove_L 0  ent_hand_L 2097152  olog_hand_L 4  4111 0 200 1116815228928 0 100 0 3 0 0 0 0 0 0 0 0 0

@@ -1077,19 +1077,20 @@ items =[
 ["rhun_shield","Rhun_Kite_Shield",[("rhun_shield",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2.5)|hit_points(480)|body_armor(5)|spd_rtng(82)|weapon_length(80),imodbits_shield,],
 #TLD DALE ITEMS##########
 ########ARMORS##########
-["dale_armor_a","Dale_Jacket",[("dale_footman",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(7)|head_armor(0)|body_armor(14)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["dale_armor_b","Dale_Cloak_Jacket",[("WIP_dale_footman_cloak",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(8)|head_armor(0)|body_armor(15)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["dale_armor_c","Dale_Archer_Jacket",[("dale_new_archer_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(7)|head_armor(0)|body_armor(13)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["dale_armor_d","Dale_Archer_Jacket",[("dale_new_archer_f",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(7)|head_armor(0)|body_armor(13)|leg_armor(5)|difficulty(0),imodbits_cloth,],
-["dale_armor_e","Dale_Coat_Over_Mail",[("dale_heavy_lvam_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(18)|head_armor(0)|body_armor(25)|leg_armor(10)|difficulty(0),imodbits_armor,],
-["dale_armor_f","Dale_Coat_Over_Mail",[("dale_heavy_lvam_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(18)|head_armor(0)|body_armor(25)|leg_armor(10)|difficulty(0),imodbits_armor,],
-#unused:
-["dale_armor_g","Dale_Coat_Over_Mail",[("dale_heavy_lvam_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(18)|head_armor(0)|body_armor(25)|leg_armor(10)|difficulty(0),imodbits_armor,],
-["dale_armor_h","Dale_Cloak_Long_Maille",[("dale_heavy_cloak_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(19)|head_armor(0)|body_armor(35)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
-["dale_armor_i","Dale_Cloak_Long_Maille",[("dale_heavy_cloak_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(19)|head_armor(0)|body_armor(35)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
-["dale_armor_j","Dale_Cloak_Long_Maille",[("dale_heavy_cloak_d",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(19)|head_armor(0)|body_armor(35)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
-["dale_armor_k","Dale_Noble_Armor",[("dale_heavy_belt_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
-["dale_armor_l","Dale_Noble_Gorget",[("dale_noble_gorget_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["dale_light_a","Dale_Militia_Jacket",[("dale_light_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,200,weight(7)|head_armor(0)|body_armor(11)|leg_armor(5)|difficulty(0),imodbits_cloth,],
+["dale_light_b","Northmen_Light_Lamellar",[("northmen_light_a2",0),("northmen_light_a3",imodbit_thick),("northmen_light_a1",imodbit_reinforced)],itp_type_body_armor|itp_covers_legs|itp_shop,0,400,weight(8)|head_armor(0)|body_armor(15)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["dale_med_a","Northmen_Heavy_Lamellar",[("northmen_med_a3",0),("northmen_med_a2",imodbits_armor_bad),("northmen_med_a1",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1100,weight(14)|head_armor(0)|body_armor(26)|leg_armor(7)|difficulty(0),imodbits_armor,],
+["dale_med_b","Dale_Leather_Armor",[("dale_med_b",0),("dale_med_b2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,900,weight(9)|head_armor(0)|body_armor(21)|leg_armor(6)|difficulty(10),imodbits_cloth,],
+["dale_med_c","Dale_Lamellar_Armor",[("dale_med_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(13)|head_armor(0)|body_armor(24)|leg_armor(4)|difficulty(10),imodbits_armor,],
+["dale_heavy_a","Dale_Lamellar_Over_Mail",[("dale_heavy_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(19)|head_armor(0)|body_armor(34)|leg_armor(8)|difficulty(12),imodbits_armor,],
+		
+["dale_heavy_b","Dale_Plated_Coat",[("dale_heavy_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1600,weight(22)|head_armor(0)|body_armor(38)|leg_armor(11)|difficulty(14),imodbits_armor,],
+["dale_heavy_c","Rhovanion_Mail",[("northmen_heavy_a",0),("northmen_heavy_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1600,weight(18)|head_armor(0)|body_armor(33)|leg_armor(12)|difficulty(0),imodbits_armor,],
+#Next 4 free, July 2018
+["dale_armor_i","Dale_Cloak_Long_Maille",[("dale_heavy_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(19)|head_armor(0)|body_armor(35)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
+["dale_armor_j","Dale_Cloak_Long_Maille",[("dale_heavy_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1500,weight(19)|head_armor(0)|body_armor(35)|leg_armor(12)|difficulty(0),imodbits_elf_armor,],
+["dale_armor_k","Dale_Noble_Armor",[("northmen_heavy_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["dale_armor_l","Dale_Noble_Gorget",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ###########HELMS##########
 ["dale_helmet_a","Dale Light Infantry Helm",[("dale_archer_helm_1c",0),("dale_archer_helm_1d",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,700,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["dale_helmet_b","Dale Light Archer Helm",[("dale_archer_helm_1a",0),("dale_archer_helm_1b",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,600,weight(2)|head_armor(25)|difficulty(0),imodbits_armor | imodbit_cracked],
@@ -1107,7 +1108,7 @@ items =[
 #####SHIELDS##########
 ["dale_shield_a","Dale_Tower_Shield",[("dale_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2)|hit_points(450)|body_armor(3)|spd_rtng(70)|weapon_length(90),imodbits_shield,],
 ["dale_shield_b","Dale_Tower_Shield",[("dale_shield_i",0),("dale_shield_j",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2)|hit_points(450)|body_armor(8)|spd_rtng(70)|weapon_length(90),imodbits_shield,],
-["dale_shield_c","Dale_Round_Shield",[("dwarf_round_shield_e",0),("dwarf_round_shield_m",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,300,weight(2)|hit_points(360)|body_armor(5)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["dale_shield_c","Dale_Round_Shield",[("dwarf_round_shield_e",0),("dwarf_round_shield_m",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,300,weight(2)|hit_points(360)|body_armor(9)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
 ["dale_shield_d","Dale_Shield",[("dwarf_round_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(360)|body_armor(5)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
 #TLD UMBAR ITEMS##########
 ##ARMOR##########
@@ -1344,7 +1345,7 @@ items =[
 ["lorien_bow_reward","Noldorin_Bow",[("Vyrn_bow_1_shortened",0),("Vyrn_bow_1_shortened",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_unique,itcf_shoot_bow|itcf_carry_bowcase_left,3000,weight(1.5)|difficulty(3)|shoot_speed(50)|spd_rtng(99)|thrust_damage(34,pierce)|accuracy(90),0,[] ],
 ["lorien_sword_reward","Galadhrim_Sword",[("lorien_sword_hand_and_half",0),("scab_lorien_sword_hand_and_half",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,900,weight(2.5)|difficulty(0)|spd_rtng(125)|weapon_length(103)|swing_damage(33,cut)|thrust_damage(33,pierce),imodbits_weapon_good],
 ["dale_sword_reward","Marchwarden_Sword",[("Mandible_royal_sword",0),("Mandible_royal_sword_scabbard",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_unique,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(98)|weapon_length(91)|swing_damage(41,cut)|thrust_damage(24,pierce),imodbits_weapon],
-["dale_armor_reward","Esgaroth_Noble_Gorget",[("dale_noble_gorget_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(22)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
+["dale_armor_reward","Dale_Noblemen_Mail",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(22)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["leather_gloves_reward","Hunting_Gloves",[("lthr_glove_L",0),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_cloth,[]],
 
 ##Shield Bear Shield imod Hack Start
