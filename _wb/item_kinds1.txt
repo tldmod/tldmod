@@ -2139,7 +2139,7 @@ itemsfile version 2
  itm_dale_med_a Northmen_Heavy_Lamellar Northmen_Heavy_Lamellar 3  northmen_med_a3 0  northmen_med_a2 164  northmen_med_a1 704643072  16842765 0 1100 704643236 14 100 0 26 7 0 0 0 0 0 0 0 0
 0
 
- itm_dale_med_b Dale_Leather_Armor Dale_Leather_Armor 2  dale_med_b 0  dale_med_b2 0  16842765 0 900 1116815228928 9 100 0 21 6 10 0 0 0 0 0 0 0
+ itm_dale_med_b Dale_Leather_Armor Dale_Leather_Armor 2  dale_med_b 0  dale_med_b2 251658240  16842765 0 900 1116815228928 9 100 0 21 6 10 0 0 0 0 0 0 0
 0
 
  itm_dale_med_c Dale_Lamellar_Armor Dale_Lamellar_Armor 1  dale_med_a 0  16842765 0 1000 704643236 13 100 0 24 4 10 0 0 0 0 0 0 0

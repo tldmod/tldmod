@@ -1080,7 +1080,7 @@ items =[
 ["dale_light_a","Dale_Militia_Jacket",[("dale_light_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,200,weight(7)|head_armor(0)|body_armor(11)|leg_armor(5)|difficulty(0),imodbits_cloth,],
 ["dale_light_b","Northmen_Light_Lamellar",[("northmen_light_a2",0),("northmen_light_a3",imodbit_thick),("northmen_light_a1",imodbit_reinforced)],itp_type_body_armor|itp_covers_legs|itp_shop,0,400,weight(8)|head_armor(0)|body_armor(15)|leg_armor(6)|difficulty(0),imodbits_cloth,],
 ["dale_med_a","Northmen_Heavy_Lamellar",[("northmen_med_a3",0),("northmen_med_a2",imodbits_armor_bad),("northmen_med_a1",imodbits_armor_good)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1100,weight(14)|head_armor(0)|body_armor(26)|leg_armor(7)|difficulty(0),imodbits_armor,],
-["dale_med_b","Dale_Leather_Armor",[("dale_med_b",0),("dale_med_b2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,900,weight(9)|head_armor(0)|body_armor(21)|leg_armor(6)|difficulty(10),imodbits_cloth,],
+["dale_med_b","Dale_Leather_Armor",[("dale_med_b",0),("dale_med_b2",imodbits_elf_cloth)],itp_type_body_armor|itp_covers_legs|itp_shop,0,900,weight(9)|head_armor(0)|body_armor(21)|leg_armor(6)|difficulty(10),imodbits_cloth,],
 ["dale_med_c","Dale_Lamellar_Armor",[("dale_med_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(13)|head_armor(0)|body_armor(24)|leg_armor(4)|difficulty(10),imodbits_armor,],
 ["dale_heavy_a","Dale_Lamellar_Over_Mail",[("dale_heavy_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1400,weight(19)|head_armor(0)|body_armor(34)|leg_armor(8)|difficulty(12),imodbits_armor,],
 		
