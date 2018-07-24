@@ -1984,7 +1984,7 @@ fac_reward_items_list = [
 #fac_dale
 [(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4,itm_dale_warhorse, imod_spirited), (5, itm_scroll_reward, 0), (6, itm_herbarium_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_dale_armor_reward, imod_lordly), (9, itm_dale_bow_reward, 0)],
 #fac_harad
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_masterwork), (5, itm_torque_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_westernesse2h_reward, 0), (8, itm_harad_lion_scale, imod_lordly), (9, itm_harad_totem_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_masterwork), (5, itm_torque_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_westernesse2h_reward, 0), (8, itm_harad_heavy, imod_lordly), (9, itm_harad_totem_reward, 0)],
 #fac_rhun
 [(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4,itm_rhun_helm_n, imod_reinforced), (5, itm_rhun_sword, imod_balanced), (6, itm_herbarium_reward, 0), (7, itm_rhun_greatsword, imod_masterwork), (8, itm_rhun_armor_k, imod_lordly), (9, itm_rhun_horse_h, imod_champion)],
 #fac_khand
