@@ -2660,6 +2660,7 @@ ai_scripts = [
       (call_script, "script_check_active_factions_in_theater", ":faction_theater", ":faction"),
     (try_end),
     (eq, reg0, 1), #No more factions in selected kingdom's theater
+
     (call_script, "script_check_active_advance_camps", ":faction_theater", ":faction"), 
     (eq, reg0, 1), #No more enemy advance camps in selected kingdom's theater
     (assign, ":theater_cleared", 1),

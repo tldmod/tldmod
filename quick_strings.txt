@@ -1,4 +1,4 @@
-1592
+1595
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -524,6 +524,9 @@ qstr_All..._must..._submi All..._must..._submit..._and..._serve...
 qstr_I_serve_the_Eye! I_serve_the_Eye!
 qstr_I_shall_serve_the_Ey I_shall_serve_the_Eye!
 qstr_Go_to_{s1}_and_speak Go_to_{s1}_and_speak_with_{s9}.
+qstr_The_Remnant_Forces_o The_Remnant_Forces_of_{s22}_have_gathered_to_reinforce_the_{s15}_theater!
+qstr_The_strength_of_the_ The_strength_of_the_remaining_allied_factions_of_the_{s15}_theater_has_increased
+qstr_{s30}_reinforced_by_ {s30}_reinforced_by_{reg65}_fac_str
 qstr_Gondor_AI_Tweaks___Go Gondor_AI_Tweaks_-_Gondor_waits_longer
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_Gondor_AI_Tweaks___Mo Gondor_AI_Tweaks_-_More_frequent_hosts

@@ -21665,6 +21665,148 @@ scripts = [
 	]),
       
 
+# script_cf_reinforce_next_theater
+# Gives next theater a fac str boost
+# Input: 1) Theater that got defeated; 2) Faction that got defeated
+# Output: none, divvies up fac str constant between remaining factions in next theater
+
+	("cf_reinforce_next_theater", [
+		(store_script_param_1, ":defeated_theater"),
+		(store_script_param_2, ":defeated_faction"),
+
+		(faction_get_slot, ":defeated_faction_side", ":defeated_faction", slot_faction_side),
+
+		# find closest enemy faction
+		(faction_get_slot, ":defeated_faction_capital", ":defeated_faction", slot_faction_capital),
+		(assign, ":min_distance", 9999999),
+		(assign, ":nearest_enemy_faction", -1),
+		(try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+			(neq, ":faction", ":defeated_faction"),
+			(try_begin),
+				(eq, "$tld_war_began", 1),
+				(this_or_next|eq, ":defeated_faction_side", faction_side_eye),
+				(eq, ":defeated_faction_side", faction_side_hand),
+				(assign, ":defeated_faction_side", faction_side_eye),
+			(try_end),
+			(neg|faction_slot_eq, ":faction", slot_faction_side, ":defeated_faction_side"),
+			(faction_get_slot, ":capital", ":faction", slot_faction_capital),
+			(call_script, "script_get_tld_distance", ":defeated_faction_capital", ":capital"),
+			(assign, ":party_distance", reg0),
+			(lt, ":party_distance", ":min_distance"),
+			(assign, ":min_distance", ":party_distance"),
+			(assign, ":nearest_enemy_faction", ":faction"),
+		(try_end),
+
+
+		(call_script, "script_check_active_factions_in_theater", ":defeated_theater", ":nearest_enemy_faction"),
+		
+		(eq, reg0, 1), #theater cleared
+
+		(call_script, "script_find_next_theater", ":defeated_faction", ":defeated_theater"),
+		(assign, ":next_theater", reg0),
+		
+		#Round 2
+		(call_script, "script_check_active_factions_in_theater", ":next_theater", ":nearest_enemy_faction"),
+		
+		(try_begin),
+			(eq, reg0, 1), #if theater cleared
+			(call_script, "script_find_next_theater", ":defeated_faction", ":next_theater"),
+			(assign, ":next_theater", reg0),
+			(assign, ":no_enemies_found", 1),
+		(try_end),
+
+		#Round 3, should be enough
+
+		(try_begin),
+			(eq, ":no_enemies_found", 1),
+			(call_script, "script_check_active_factions_in_theater", ":next_theater", ":nearest_enemy_faction"),
+			(eq, reg0, 1),
+			(call_script, "script_find_next_theater", ":defeated_faction", ":next_theater"),
+			(assign, ":next_theater", reg0),
+		(try_end),
+
+		(try_begin),
+			(eq, "$tld_war_began", 1),
+			(try_begin),
+				(eq, ":defeated_faction_side", faction_side_good),
+				(call_script, "script_reinforce_next_theater_aux", faction_side_good, ":next_theater"),
+			(else_try),
+				(call_script, "script_reinforce_next_theater_aux", faction_side_hand, ":next_theater"),
+				(call_script, "script_reinforce_next_theater_aux", faction_side_eye, ":next_theater"),
+			(try_end),
+		(else_try),
+			(eq, "$tld_war_began", 2), #War of Two Towers
+			(try_begin),
+				(eq, ":defeated_faction_side", faction_side_eye),
+				(call_script, "script_reinforce_next_theater_aux", faction_side_eye, ":next_theater"),
+			(else_try),
+				(call_script, "script_reinforce_next_theater_aux", faction_side_hand, ":next_theater"),
+			(try_end),
+		(try_end),
+
+
+		(neq, reg1, 0),
+
+		(str_store_faction_name, s22, ":defeated_faction"),
+		(call_script, "script_theater_name_to_s15", ":next_theater"),
+
+		(try_begin),
+			(store_relation, ":rel", "$players_kingdom", ":defeated_faction"),
+			(gt, ":rel", 0),
+			(assign, ":news_color", color_good_news),
+		(else_try),
+			(assign, ":news_color", color_bad_news),
+		(try_end),
+
+		(display_message, "@The Remnant Forces of {s22} have gathered to reinforce the {s15} theater!", ":news_color"),
+		(display_message, "@The strength of the remaining allied factions of the {s15} theater has increased", ":news_color"),
+		
+	]),
+
+
+	("reinforce_next_theater_aux", [
+		
+		(store_script_param_1, ":fac_side"),
+		(store_script_param_2, ":next_theater"),
+		
+		(assign, ":num_factions", 0),
+
+		(try_for_range, ":active_factions", kingdoms_begin, kingdoms_end),
+			(faction_slot_eq, ":active_factions", slot_faction_side, ":fac_side"),
+			(faction_get_slot, ":home_theater", ":active_factions", slot_faction_home_theater),
+			(eq, ":home_theater", ":next_theater"),
+			(faction_slot_eq, ":active_factions", slot_faction_state, sfs_active),
+			(val_add, ":num_factions", 1),
+		(try_end),
+
+		(try_begin),
+			(gt, ":num_factions", 0),
+			(assign, reg1, ":num_factions"),
+
+			(store_div, ":fac_str_boost", fac_str_reinforcement_boost, ":num_factions"),
+
+			(try_for_range, ":factions_reinforced", kingdoms_begin, kingdoms_end),
+				(faction_slot_eq, ":factions_reinforced", slot_faction_side, ":fac_side"),
+				(faction_get_slot, ":home_theater", ":factions_reinforced", slot_faction_home_theater),
+				(eq, ":home_theater", ":next_theater"),
+				(faction_slot_eq, ":factions_reinforced", slot_faction_state, sfs_active),
+				(faction_get_slot,":current_strength",":factions_reinforced",slot_faction_strength_tmp),
+				(store_add, ":reinforced_strength", ":current_strength", ":fac_str_boost"),
+				(faction_set_slot,":factions_reinforced",slot_faction_strength_tmp,":reinforced_strength"),
+			#Debug
+				(try_begin),
+					(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode,
+					(assign, reg65, ":fac_str_boost"),
+					(str_store_faction_name, s30, ":factions_reinforced"),
+					(display_message, "@{s30} reinforced by {reg65} fac str"),
+				(try_end),
+			#debug end
+			(try_end),
+		(else_try),
+			(assign, reg1, 0), #If fails, we catch it above
+		(try_end),
+
+	]),
 ]
 
 command_cursor_scripts = [

@@ -2655,3 +2655,7 @@ Outfit_Fast_Weapon_Speed = 100
 
 mission_tpl_are_all_agents_spawned     = 1943   # (mission_tpl_are_all_agents_spawned), #agents >300 may keep spawning after ti_after_mission_start (still fires .1 second too early)
 
+#### END Moto's FormV5 ##########
+
+
+fac_str_reinforcement_boost = 1000 #Kham

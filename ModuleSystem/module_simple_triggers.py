@@ -2384,8 +2384,15 @@ simple_triggers = [
 	    
 	    (str_store_faction_name,s2,":cur_kingdom"),
 	    (display_log_message,"@{s2} was defeated!"),
+
+        #reinforce next theaters - Kham
+        (faction_get_slot, ":defeated_theater", ":cur_kingdom", slot_faction_active_theater),
+        
+        (call_script, "script_cf_reinforce_next_theater", ":defeated_theater", ":cur_kingdom"),
+
         # now update active theaters for all factions
         (call_script, "script_update_active_theaters"),
+
         # rethink strategies
         (assign, "$g_recalculate_ais", 1),
 
