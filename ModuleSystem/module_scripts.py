@@ -24565,6 +24565,77 @@ command_cursor_scripts = [
 	(try_end),
  ]),
 
+
+#script_last_faction_stand and auxillary scripts
+#Called from Defeat Faction trigger, when fac str less than or equal to 0, surviving lords move to their capital for a last stand.
+#Input: faction
+#Output: none, AI moves
+
+("last_faction_stand", [
+	(store_script_param_1, ":faction"),
+
+	(faction_get_slot, ":capital", ":faction", slot_faction_capital),
+
+	(try_for_range, ":lord", heroes_begin, heroes_end),
+		(store_troop_faction, ":lord_faction", ":lord"),
+		(eq, ":lord_faction", ":faction"),
+		(neg|troop_slot_eq, ":lord", slot_troop_wound_mask, wound_death),
+		(call_script, "script_last_faction_stand_aux", ":lord", ":capital"),
+	(try_end),
+]),
+
+
+("last_faction_stand_aux", [
+    (store_script_param_1, ":lord"),
+    (store_script_param_2, ":capital"),    
+
+    (assign, ":OK", 0),
+
+    (try_begin),
+        (call_script, "script_last_faction_stand_aux_AI", ":lord", ":capital"),        
+
+        (assign, ":OK", reg0),
+    (try_end),
+
+    (try_begin),
+        (eq, "$cheat_mode", 1),
+
+        (assign, reg1, ":lord"),
+        (str_store_troop_name, s1, ":lord"),
+        (str_store_party_name, s2, ":capital"),
+        
+
+        (try_begin),
+          (eq, ":OK", 1),          
+          (display_message, "@lord {reg1}: {s1} is defending {s2}", color_good_news),            
+        (else_try),
+          (display_message, "@lord {reg1}: {s1} NOT defending {s2}", color_bad_news),            
+        (try_end),
+    (try_end),
+  ]),
+
+("last_faction_stand_aux_AI", [
+
+  (store_script_param_1, ":lord"),
+  (store_script_param_2, ":capital"),
+
+  (assign, ":OK", 0),
+  (try_begin),
+    (troop_get_slot, ":party", ":lord", slot_troop_leaded_party),
+    (party_is_active, ":party"),
+    
+    (party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
+    (call_script, "script_party_set_ai_state", ":party", spai_holding_center, ":capital"),
+
+    (assign, ":OK", 1),    
+  (try_end),
+
+  (assign, reg0, ":OK"),
+  
+]),
+
+# Last Faction Stand Scripts End
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
