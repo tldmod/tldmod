@@ -4471,19 +4471,43 @@ game_menus = [
         (try_begin),
           (call_script, "script_party_count_members_with_full_health", "p_collective_enemy"),
           (assign, ":num_enemy_regulars_remaining", reg0 ),
-          (store_div, ":player_to_enemy_ratio", reg22, reg11),
           (assign, ":enemy_finished",0),
           (try_begin),
             (eq, "$g_battle_result", 1),
             (this_or_next|le, ":num_enemy_regulars_remaining", 0), #battle won #Kham - edited from eq
             (le, ":num_enemy_regulars_remaining",  "$num_routed_enemies"),  #Kham - we don't want routed enemies to spawn
+
+            (assign, ":continue", 0),
+          	(try_begin),
+          		(gt, reg11, 0),
+          		(store_div, ":player_to_enemy_ratio", reg22, reg11),
+          		(gt, ":player_to_enemy_ratio", 5), #test for routed enemies again...
+          		(assign, ":continue", 1),
+          	(else_try),
+          		(le, reg11, 0),
+          		(assign, ":continue", 1),
+          	(try_end),
+          	(eq, ":continue", 1),
+
             (assign, ":enemy_finished",1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),
             (this_or_next|le, ":num_enemy_regulars_remaining", 0),
             (le, "$g_enemy_fit_for_battle","$num_routed_enemies"), #Kham - we don't want routed enemies to spawn.
             (ge, "$g_friend_fit_for_battle",1),
-            (gt, ":player_to_enemy_ratio", 5), #test for routed enemies again...
+           
+            (assign, ":continue", 0),
+          	(try_begin),
+          		(gt, reg11, 0),
+          		(store_div, ":player_to_enemy_ratio", reg22, reg11),
+          		(gt, ":player_to_enemy_ratio", 5), #test for routed enemies again...
+          		(assign, ":continue", 1),
+          	(else_try),
+          		(le, reg11, 0),
+          		(assign, ":continue", 1),
+          	(try_end),
+          	(eq, ":continue", 1),
+
             (assign, ":enemy_finished",1),
           (try_end),
           (this_or_next|eq, ":enemy_finished",1),
@@ -5229,6 +5253,7 @@ game_menus = [
 		  (assign, "$after_battle_player_strength", reg0),
 
 		  (call_script, "script_calculate_rank_gain_new"), 
+	  	  (assign,":rank_increase", reg62),
 
 		  # select what friendly faction was most interested in this victory (mtarini)
 		  (assign, "$impressed_faction", "$players_kingdom"), # by default, it is player starting fatcion
@@ -5241,7 +5266,14 @@ game_menus = [
           (assign, ":impressed_party", reg0),
 		
 		  (try_begin),
-			  (ge, ":impressed_party", 0),
+		  	  (gt, "$g_ally_party", 0), #If there was an ally in battle, give their faction all the points. 
+		  	  (store_faction_of_party, ":ally_faction","$g_ally_party"),
+		  	  (str_store_party_name, s3, "$g_ally_party"),
+  		  	  (display_log_message, "@You and {s3} celebrate your victory against {s4}.", color_good_news),
+		  	  (call_script, "script_increase_rank", ":ally_faction", ":rank_increase"), 
+
+		  (else_try),
+			  (ge, ":impressed_party", 0), #If there was no ally in battle, check nearest faction
 			  (str_store_party_name, s3, ":impressed_party"),
 			  (store_faction_of_party, "$impressed_faction", ":impressed_party"),
 			  (try_begin),
@@ -5307,14 +5339,7 @@ game_menus = [
         
           (party_get_num_companion_stacks, ":num_ally_stacks", "$g_ally_party"),
           (gt, ":num_ally_stacks", 0), # anybody survived
-         #(store_faction_of_party, ":ally_faction","$g_ally_party"),
-          
-          #(store_div, ":rank_increase", "$battle_renown_total", 2), # MV: give some rank increase according to renown (should be small 1-10) #was 4, now (1-20)  #changed from 5 - 2 (kham)
-
-          #(assign,":rank_increase", reg62), #Replaced by new formula
-#(display_message, "@Debug: giving rank points for helping allies."),		  
-		  #(call_script, "script_increase_rank", ":ally_faction", ":rank_increase"), # MV - changed rank increase to renown calc #Kham- for some reason, it still uses  relation ($g_relation_boost). Changed to renown.
-#		  (call_script, "script_increase_rank", ":ally_faction", ":faction_reln_boost"), # increase rank of helped faction (mtarini)
+		  
           #(call_script, "script_change_player_relation_with_faction", ":ally_faction", ":faction_reln_boost"),
           (party_stack_get_troop_id, ":ally_leader", "$g_ally_party"),
           (party_stack_get_troop_dna, ":ally_leader_dna", "$g_ally_party"),
@@ -5933,13 +5958,24 @@ game_menus = [
         (try_begin),
           (call_script, "script_party_count_members_with_full_health","p_collective_enemy"),
           (assign, ":num_enemy_regulars_remaining", reg0),
-          (store_div, ":player_to_enemy_ratio", reg22, reg11),
           (assign, ":enemy_finished",0),
           (try_begin),
             (eq, "$g_battle_result", 1),
             (this_or_next|le, ":num_enemy_regulars_remaining", 0), #battle won
           	(le, ":num_enemy_regulars_remaining", "$num_routed_enemies"), #Kham - routed enemies don't get spawned
-          	(gt, ":player_to_enemy_ratio", 5), #test for routed enemies again...
+
+          	(assign, ":continue", 0),
+          	(try_begin),
+          		(gt, reg11, 0),
+          		(store_div, ":player_to_enemy_ratio", reg22, reg11),
+          		(gt, ":player_to_enemy_ratio", 5), #test for routed enemies again...
+          		(assign, ":continue", 1),
+          	(else_try),
+          		(le, reg11, 0),
+          		(assign, ":continue", 1),
+          	(try_end),
+
+          	(eq, ":continue", 1),
           	(assign, ":enemy_finished", 1),
           (else_try),
             (eq, "$g_engaged_enemy", 1),

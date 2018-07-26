@@ -6253,6 +6253,7 @@ scripts = [
 				(neg|check_quest_active, "qst_blank_quest_04"),
 				(call_script, "script_cf_init_kill_quest_target"),
 
+				(assign, ":quest_target_faction", reg54),
 				(assign, ":quest_object_troop", reg55),
 				(assign, ":quest_target_troop", reg56),	
 				(assign, ":quest_target_amount", reg57),	
@@ -24075,7 +24076,7 @@ command_cursor_scripts = [
 		(val_min, ":rank_reward", 30),
 	(try_end),
 	
-
+	(assign, reg54, ":target_faction"),		#quest_target_faction
 	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
 	(assign, reg56, ":target"),				#quest_target_troop
 	(assign, reg57, ":amount"),				#quest_target_amount

@@ -1283,6 +1283,7 @@ simple_triggers = [
   
   (try_begin),
     (check_quest_active, "qst_eliminate_patrols"),
+    (neg|check_quest_concluded, "qst_elimnate_patrols"),
     (quest_get_slot, ":target", "qst_eliminate_patrols", slot_quest_target_party_template),
     (quest_get_slot, ":center", "qst_eliminate_patrols", slot_quest_target_center),
     (gt, ":center", 0),
@@ -1300,6 +1301,7 @@ simple_triggers = [
   # Looters for Deal With Looters Quest
   (try_begin),
     (check_quest_active, "qst_deal_with_looters"),
+    (neg|check_quest_concluded, "qst_deal_with_looters"),
     (quest_get_slot, ":party_template", "qst_deal_with_looters", slot_quest_target_party_template),
     (set_spawn_radius, 7),
     (spawn_around_party, "p_main_party", ":party_template"),
@@ -1645,11 +1647,14 @@ simple_triggers = [
     #not in the victory menus because parties are still not defeated then
     (try_begin),
       (check_quest_active, "qst_eliminate_patrols"),
+      (neg|check_quest_concluded, "qst_eliminate_patrols"),
       (quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
       (quest_get_slot, ":quest_target_faction", "qst_eliminate_patrols", slot_quest_target_faction),
       (try_begin),
         (neg|faction_slot_eq, ":quest_target_faction", slot_faction_state, sfs_active),
         (call_script, "script_succeed_quest", "qst_eliminate_patrols"),
+        (quest_get_slot, ":to_destroy", "qst_eliminate_patrols", slot_quest_target_amount),
+        (quest_set_slot, "qst_eliminate_patrols",slot_quest_current_state, ":to_destroy"),
       (else_try),
         #Kham - Eliminate Patrols Refactor START
         #(store_num_parties_destroyed_by_player, ":num_destroyed", ":quest_target_party_template"),
@@ -1690,6 +1695,7 @@ simple_triggers = [
     #Report number of kills for the oath of vengeance quest
     (try_begin),
       (check_quest_active, "qst_oath_of_vengeance"),
+      (neg|check_quest_concluded, "qst_oath_of_vengeance"),
       (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
       (str_store_faction_name, s2, ":target"),
       (assign, reg69, "$oath_kills"),
@@ -1705,6 +1711,7 @@ simple_triggers = [
     #Report number of kills for the kill quest
     (try_begin),
       (check_quest_active, "qst_blank_quest_05"),
+      (neg|check_quest_concluded, "qst_blank_quest_05"),
       (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
       (quest_get_slot, ":current_amount", "qst_blank_quest_05", slot_quest_current_state),
       (str_clear, s2),
@@ -1714,6 +1721,7 @@ simple_triggers = [
       (add_quest_note_from_sreg, "qst_blank_quest_05", 2, s3, 0),
     (else_try),
       (check_quest_active, "qst_blank_quest_05"),
+      (neg|check_quest_concluded, "qst_blank_quest_05"),
       (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
       (faction_get_slot, ":target_active", ":target_faction", slot_faction_state),
       (eq, ":target_active", sfs_defeated),
@@ -1723,6 +1731,7 @@ simple_triggers = [
     #Report number of kills for the targeted kill quest
     (try_begin),
       (check_quest_active, "qst_blank_quest_04"),
+      (neg|check_quest_concluded, "qst_blank_quest_04"),
       (quest_get_slot, ":target_faction", "qst_blank_quest_04", slot_quest_target_faction),
       (quest_get_slot, ":target_troop", "qst_blank_quest_04", slot_quest_target_troop),
       (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
@@ -1734,6 +1743,7 @@ simple_triggers = [
       (add_quest_note_from_sreg, "qst_blank_quest_04", 2, s3, 0),
     (else_try),
       (check_quest_active, "qst_blank_quest_04"),
+      (neg|check_quest_concluded, "qst_blank_quest_04"),
       (quest_get_slot, ":target_faction", "qst_blank_quest_04", slot_quest_target_faction),
       (faction_get_slot, ":target_active", ":target_faction", slot_faction_state),
       (eq, ":target_active", sfs_defeated),
@@ -1743,6 +1753,7 @@ simple_triggers = [
     #Report number of kills for the bandit kill quest
     (try_begin),
       (check_quest_active, "qst_blank_quest_17"),
+      (neg|check_quest_concluded, "qst_blank_quest_17"),
       (quest_get_slot, ":target_troop", "qst_blank_quest_17", slot_quest_target_troop),
       (quest_get_slot, ":current_amount", "qst_blank_quest_17", slot_quest_current_state),
       (str_store_troop_name, s4, ":target_troop"),
