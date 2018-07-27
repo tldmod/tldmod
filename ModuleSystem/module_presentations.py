@@ -4173,7 +4173,7 @@ if wb_compile_switch==1:
          #(display_message, "@Formations - {reg65}"),
           (try_begin),
             (eq, ":value", 2),
-            (create_game_button_overlay, "$g_presentation_obj_3", "@New Formations Tweaks"),
+            (create_game_button_overlay, "$g_presentation_obj_3", "@Beta Formations Tweaks"),
             (position_set_x, pos1, (2*Screen_Width/3)-360),
             (position_set_y, pos1, Screen_Border_Width),
             (overlay_set_position, "$g_presentation_obj_3", pos1),
@@ -5507,6 +5507,21 @@ if wb_compile_switch==1:
         (overlay_set_val, "$form_options_overlay_4", "$FormAI_AI_no_defense"),
         
         (val_sub, ":y_pos", Screen_Text_Height),
+
+        #Have AI control troops when Player is KO'd
+        (create_text_overlay, reg1, "@AI Controls Troops When Player is KO'd: ", tf_right_align),
+        (position_set_y, pos0, ":y_pos"),
+        (overlay_set_position, reg1, pos0),
+        
+        (create_check_box_overlay, "$form_options_overlay_1", "mesh_checkbox_off", "mesh_checkbox_on"),
+        (copy_position, pos1, pos0),
+        (store_add, reg2, ":y_pos", Screen_Checkbox_Height_Adj),
+        (position_set_y, pos1, reg2),
+        (overlay_set_position, "$form_options_overlay_1", pos1),
+        
+        (overlay_set_val, "$form_options_overlay_1", "$FormAI_AI_Control_Troops"),
+        
+        (val_sub, ":y_pos", Screen_Text_Height),
         
         # This is for Done button
         (assign, "$form_options_overlay_exit", 0), # forced initialization
@@ -5538,6 +5553,9 @@ if wb_compile_switch==1:
         (else_try),
           (eq, ":object", "$form_options_overlay_4"),
           (assign, "$FormAI_AI_no_defense", ":value"),
+        (else_try),
+          (eq, ":object", "$form_options_overlay_1"),
+          (assign, "$FormAI_AI_Control_Troops", ":value"),
         (else_try),
           (eq, ":object", "$form_options_overlay_exit"),
           (start_presentation, "prsnt_tld_mod_options"),

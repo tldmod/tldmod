@@ -1927,6 +1927,7 @@ scripts = [
 	(assign, "$first_time", 0),	#squelch compiler warnings
 	(assign, "$FormAI_autorotate", 1), #Autorotate for New Formations force to 1
 	(assign, "$player_deploy_troops", 1), #Make sure troops hold when battle starts.
+	(assign, "$FormAI_AI_Control_Troops", 1), #AI Control Dead Player's Troops (FormV5)
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	

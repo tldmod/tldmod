@@ -1,4 +1,4 @@
-1793
+1795
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -146,7 +146,7 @@ qstr_Prevent_AI_from_taki Prevent_AI_from_taking_defensive:__
 qstr_Brighter_Nights:__ Brighter_Nights:__
 qstr_Done Done
 qstr_Gameplay_Tweaks Gameplay_Tweaks
-qstr_New_Formations_Tweak New_Formations_Tweaks
+qstr_Beta_Formations_Twea Beta_Formations_Tweaks
 qstr_War_Will_Start_at_Le War_Will_Start_at_Level_{reg0}
 qstr_Troop_Tree Troop_Tree
 qstr__Click_on_a_unit_for (Click_on_a_unit_for_details)
@@ -169,6 +169,7 @@ qstr_Put_player_in_divisi Put_player_in_division:_
 qstr_None None
 qstr_Army_rotates_to_face Army_rotates_to_face_enemy_center:_
 qstr_Prevent_AI_from_takin Prevent_AI_from_taking_defensive:_
+qstr_AI_Controls_Troops_W AI_Controls_Troops_When_Player_is_KO'd:_
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
@@ -997,6 +998,7 @@ qstr_Good_factions_defeat Good_factions_defeated!_Now_wait_for_it...
 qstr_{s1}_rank_points_inc {s1}_rank_points_increased_to_{reg0},_influence_to_{reg1}!
 qstr_Party_size_increased Party_size_increased_from_{reg0}_to_{reg1}!
 qstr_All_four_legendary_p All_four_legendary_places_enabled!
+qstr_{s10}_crushed!_Lords {s10}_crushed!_Lords_will_go_to_their_capitals...
 qstr_{s10}_defeated!_Now_ {s10}_defeated!_Now_wait_for_it...
 qstr_{s2}^{s4}:_{reg1}__{ {s2}^{s4}:_{reg1}_({s23})_Diff:_{reg2}
 qstr_Faction_strengths_re Faction_strengths_report:^{s2}

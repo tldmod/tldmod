@@ -2486,7 +2486,7 @@ slot_agent_period_reset_time = 1001
 # rel. 02/12/2016
 
 AI_Max_Reinforcements	= 8	#maximum number of reinforcement stages in a battle
-AI_Replace_Dead_Player	= 1
+AI_Replace_Dead_Player	= 1 #Replaced with Global so we can toggle
 AI_Poor_Troop_Level	= 12	#average level of troops under which a division may lose discipline
 
 #positions used in a script, named for convenience

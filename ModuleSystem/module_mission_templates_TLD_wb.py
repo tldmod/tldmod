@@ -2290,7 +2290,7 @@ AI_triggers_moto = [
   #if AI to take over for mods with post-player battle action
   (0, 0, ti_once, [(eq, "$tld_option_formations", 2),
       (main_hero_fallen),
-      (eq, AI_Replace_Dead_Player, 1),
+      (eq, "$FormAI_AI_Control_Troops", 1),
       ], [
       (set_show_messages, 0),
       #undo special player commands

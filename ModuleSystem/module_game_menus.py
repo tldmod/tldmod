@@ -2197,7 +2197,8 @@ game_menus = [
     # (call_script, "script_get_line_through_parties", "p_town_morannon", "p_town_minas_tirith"),
     # (display_message, "@Debug: Morannon-MT line: y = {reg0}/{reg1}*x + {reg2}"),
    # ]),
-   ("camp_mvtest_defeat",[],"Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
+   ("camp_mvtest_defeat",[],"Set Faction to Crushed.",[(jump_to_menu, "mnu_mvtest_destroy_faction")]),
+   ("camp_mvtest_destroy",[],"Defeat a faction.",[(jump_to_menu, "mnu_mvtest_destroy_capital")]),
    ("camp_mvtest_advcamps",[(eq, cheat_switch, 1),],"Test advance camps.",[(jump_to_menu, "mnu_mvtest_advcamps")]),
    # ("camp_mvtest_destroy",[],"Destroy Hornburg!",[
      # (assign, ":root_defeated_party", "p_town_hornburg"),
@@ -2244,7 +2245,7 @@ game_menus = [
 
  ]),
 ( "mvtest_destroy_faction",0,
-   "Choose a faction to defeat:",
+   "Choose a faction to set Strength to CRUSHED:",
    "none",
    [],
   [("back_test",[],"Back to test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),]
@@ -2259,11 +2260,39 @@ game_menus = [
 	[
 		(faction_set_slot, faction_init[y][0], slot_faction_strength_tmp, -1000),
         (str_store_faction_name, s10, faction_init[y][0]),
+		(display_message, "@{s10} crushed! Lords will go to their capitals...", 0x30FFC8),
+    ]
+  )
+  ]for y in range(len(faction_init)) ])      
+ ),
+
+
+( "mvtest_destroy_capital",0,
+   "Choose a faction to defeat (Some factions may need you to click the button twice):",
+   "none",
+   [],
+  [("back_test_2",[],"Back to test menu.", [(jump_to_menu, "mnu_camp_mvtest"),]),]
+  +
+  concatenate_scripts([[
+  (
+	"kill_capital",
+	[(faction_slot_eq, faction_init[y][0], slot_faction_state, sfs_active),
+     (faction_get_slot, ":capital", faction_init[y][0], slot_faction_capital),
+     (party_slot_eq, ":capital", slot_faction_capital, 0),
+     (str_store_faction_name, s10, faction_init[y][0]),],
+	"{s10}.",
+	[
+		(faction_get_slot, ":capital", faction_init[y][0], slot_faction_capital),
+ 		(party_slot_eq, ":capital", slot_faction_capital, 0),
+		(party_set_slot, ":capital", slot_center_destroyed, 1),
+        (str_store_faction_name, s10, faction_init[y][0]),
 		(display_message, "@{s10} defeated! Now wait for it...", 0x30FFC8),
     ]
   )
   ]for y in range(len(faction_init)) ])      
  ),
+
+
 ( "mvtest_facstr_report",0,
    "{s1}",
    "none",

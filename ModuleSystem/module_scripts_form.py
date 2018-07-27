@@ -6573,7 +6573,7 @@ formAI_scripts = [
               #same enemy battlegroup
               (else_try),
                 (main_hero_fallen),
-                (eq, AI_Replace_Dead_Player, 1),
+                (eq, "$FormAI_AI_Control_Troops", 1),
                 (neq, ":team_no", "$fplayer_team_no"),
                 (neg | teams_are_enemies, ":team_no", "$fplayer_team_no"),
                 (store_add, ":slot", slot_team_d0_size, grc_infantry),
@@ -6975,7 +6975,7 @@ formAI_scripts = [
           (assign, ":do_it", 1),
         (else_try),
           (main_hero_fallen),    #have AI take over for mods with post-player battle action
-          (eq, AI_Replace_Dead_Player, 1),
+          (eq, "$FormAI_AI_Control_Troops", 1),
           (assign, ":do_it", 1),
         (try_end),
         (eq, ":do_it", 1),
