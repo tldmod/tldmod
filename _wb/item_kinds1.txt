@@ -1514,7 +1514,7 @@ itemsfile version 2
  itm_dunland_spear Dunnish_Spear Dunnish_Spear 1  dunland_spear 0  2286256132 9254615759470985472 125 271496 2 100 0 0 0 0 0 95 0 150 0 276 0
 0
 
- itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  407207940 9236601360760176896 400 271496 3 100 0 0 0 0 0 85 0 205 0 282 0
+ itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  407207940 9254615759470985472 400 271496 3 100 0 0 0 0 0 85 0 205 0 282 0
 0
 
  itm_rohan_armor_a Rohan_Shirt Rohan_Shirt 3  L_roh_shirt_M1 0  L_roh_shirt_cape_M2 33554432  L_roh_shirt_cape_M2 67108864  16842765 0 50 1116815228928 2 100 0 3 2 0 0 0 0 0 0 0 0
@@ -2388,7 +2388,7 @@ itemsfile version 2
  itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 3  dwarf_great_mattock 0  dwarf_great_mattock 0  dwarf_war_mattock 156672  342163459 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
 0
 
- itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick 256  342163459 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
+ itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick_old 256  342163459 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
 0
 
  itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163459 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284

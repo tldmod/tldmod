@@ -1982,7 +1982,7 @@ fac_reward_items_list = [
 #fac_woodelf
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_scroll_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_woodelf_banner, imod_masterwork), (8, itm_mirkwood_armor_f, 0), (9, itm_mirkwood_sword_reward, 0)],
 #fac_dale
-[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4,itm_dale_warhorse, imod_spirited), (5, itm_scroll_reward, 0), (6, itm_herbarium_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_dale_armor_reward, imod_lordly), (9, itm_dale_bow_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_garlic_reward ,0),(4,itm_map, 0), (5, itm_scroll_reward, 0), (6, itm_herbarium_reward, 0), (7, itm_dale_sword_reward, imod_masterwork), (8, itm_dale_armor_reward, imod_lordly), (9, itm_dale_bow_reward, 0)],
 #fac_harad
 [(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_lg_bow, imod_masterwork), (5, itm_torque_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_westernesse2h_reward, 0), (8, itm_harad_heavy, imod_lordly), (9, itm_harad_totem_reward, 0)],
 #fac_rhun
@@ -1990,9 +1990,9 @@ fac_reward_items_list = [
 #fac_khand
 [(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_khand_voulge, imod_balanced), (5, itm_torque_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_khand_heavy_lam, imod_lordly), (8, itm_variag_kataphrakt, imod_champion), (9, itm_khand_knife_reward, 0)],
 #fac_umbar
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger_reward, 0), (5, itm_umb_helm_f, imod_reinforced), (6, itm_ring_b_reward, 0), (7, itm_umbar_pike, imod_masterwork), (8, itm_umb_armor_f, imod_lordly), (9, itm_corsair_trident, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_corsair_throwing_dagger_reward, 0), (5, itm_umb_helm_f, imod_lordly), (6, itm_ring_b_reward, 0), (7, itm_corsair_bow, imod_masterwork), (8, itm_umb_armor_f, imod_lordly), (9, itm_corsair_trident, 0)],
 #fac_moria
-[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_orc_two_handed_axe, imod_masterwork), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_moria_orc_shield_c, imod_reinforced), (5, itm_warg_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_dwarf_great_pick, imod_old), (8, itm_moria_armor_e, imod_lordly), (9, itm_moria_arrow_reward, 0)],
 #fac_guldur
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_mordor_banner      ,imod_balanced), (7, itm_angmar_whip_reward, 0), (8, itm_spider, 0), (9, itm_witchking_helmet, 0)],
 #fac_gundabad
