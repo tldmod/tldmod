@@ -24362,10 +24362,33 @@ command_cursor_scripts = [
 	(val_min, ":player_share_of_battle", 100),
 	(assign, reg61, ":player_share_of_battle"), #Debug for D
 
-	#Calculate E: Helping allies
-	(store_div, ":helping_bonus", "$g_ally_victory_value_point", 20), 
-	(store_add, ":helping_allies_sum", 1, ":helping_bonus"),
-	(assign, reg63, ":helping_allies_sum"), 
+    #Calculate E: Helping allies
+    (store_mul, ":ally_victory_points", "$g_ally_victory_value_point", 5), #a/20*100
+	
+	#(store_add, ":helping_allies_sum", 1, ":helping_bonus"), #we can scratch that, it's a leftover
+    #(assign, reg63, ":helping_allies_sum"), 
+
+    #New E Formula: a = Sum of victory points of allied parties; b = Strength of allied parties (without the player); c = Strength of enemy parties
+	#E = a*(c/b-1) = (ac/b) - a
+	
+	(store_sub, ":ally_str", "$g_starting_strength_friends", "$g_starting_strength_main_party"), #b
+	(assign, ":enemy_str", "$g_starting_strength_enemy_party"),	#c
+	(store_mul, ":max_enemy_str", ":ally_str", 2), #so the helping bonus doesn't go out of hand, we only scale it up to twice outnumbered allies
+	(val_min, ":enemy_str", ":max_enemy_str"),
+	
+	#minuend / first part
+	(store_mul, ":minuend", ":ally_victory_points", ":enemy_str"),
+	(val_div, ":minuend", ":ally_str"),
+	
+	#subtrahend / second part
+	#(store_mul, ":subtrahend", ":ally_victory_points", ":ally_str"),
+	#(val_div, ":subtrahend", ":ally_str"),
+	
+	#let's do this
+	(store_sub, ":helping_allies_sum", ":minuend", ":ally_victory_points"),
+	(val_div, ":helping_allies_sum", 100),
+	(val_max, ":helping_allies_sum", 0),
+    (assign, reg63, ":helping_allies_sum"),
 
 	#Sum of AB-C
 

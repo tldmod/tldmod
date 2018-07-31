@@ -4219,7 +4219,9 @@ mission_templates = [ # not used in game
       (team_give_order, ":defteam", grc_cavalry, mordr_stand_closer),
       (team_set_order_position, ":defteam", grc_infantry, pos10), 
       (team_set_order_position, ":defteam", grc_cavalry, pos10), 
-      (team_set_order_position, ":atkteam", grc_everyone, pos10), #InVain: Just disable this line if we want attacker infantry to charge and attacker player to command own troops freely.
+      #(team_set_order_position, ":atkteam", grc_everyone, pos10), #InVain: Just disable this line if we want attacker infantry to charge and attacker player to command own troops freely.
+	  (team_give_order, ":atkteam", grc_infantry, mordr_charge),
+	  (team_give_order, ":atkteam", grc_cavalry, mordr_charge), #InVain: Let's try this instead. Less prone to attackers getting stuck.
       (entry_point_get_position, pos10, ":entry2"), #TLD, was 10
       (team_give_order, ":atkteam", grc_archers, mordr_hold),
       (team_set_order_position, ":atkteam", grc_archers, pos10),
