@@ -88,9 +88,9 @@ scenes = [
   ("edoras_center"          ,sf_generate,"none", "none",(0,0),(200,200),-100,"0x00000003200005000009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
   ("aldburg_center"         ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x000000072007956000025896000037e800000e860000674b",[],[],"outer_mountains2south"),
   ("hornburg_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
-  ("east_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
+  ("east_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
   ("westfold_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000620049cbd00025896000048e90000164400002b3f",[],[],"outer_terrain_rohan"),
-  ("west_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
+  ("west_emnet_center"      ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
   ("eastfold_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],[],"outer_mountains2south"),
   ("morannon_center"        ,sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_mountains2west_mordor"),
   
@@ -268,7 +268,7 @@ scenes = [
 ("dale_siege"          ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000003200005000007a9ea000006810000219700002120",[],[],"outer_terrain_plain"),
 ]) + [
 
-("west_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
+("west_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
 ("minas_tirith_siege"  ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_tirith_1"),
 ("pelargir_siege"      ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000006300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_seaside_1"),
 ("linhir_siege"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x000000042005591e00040506000059a100002cd500005052",[],[],"outer_terrain_steppe"),
@@ -283,7 +283,7 @@ scenes = [
 ("edoras_siege"        ,sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007200005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_rohan"),
 ("aldburg_siege"       ,sf_generate,"none","none",(0,0),(100,100),-100,"0x000000072007956000025896000037e800000e860000674b",[],[],"outer_mountains2south"),
 ("hornburg_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,        "0x00001d63c005114300006228000053bf00004eb9",[],[],"outer_mountains2south"),
-("east_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000720045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
+("east_emnet_siege"    ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000320045abc000308c4000029d9000033bd000009b9",[],[],"outer_terrain_rohan"),
 ("westfold_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,"0x0000000620049cbd00025896000048e90000164400002b3f",[],[],"outer_terrain_rohan"),
 ("eastfold_siege"      ,sf_generate,"none","none",(0,0),(100,100),-100,"0x00000007a009c7070002589600002b6300001ef60000122e",[],[],"outer_mountains2south"),
 ("east_osgiliath_siege",sf_generate,"none","none",(0,0),(200,200),-100,"0x00000007300005004009c5a200000f5200005bd50000739d",[],[],"outer_terrain_osgiliath_9"),
