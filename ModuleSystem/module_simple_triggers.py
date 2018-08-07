@@ -473,27 +473,33 @@ simple_triggers = [
           (eq, ":center_faction", ":faction_no"), # center belongs to kingdom
           (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege
           (party_get_slot, ":strength_income", ":center_no", slot_center_strength_income),
-          (try_begin), #no income
-            (this_or_next|eq, "$tld_war_began", 0), #InVain: No incaome before the war starts
-            (this_or_next|eq, "$tld_option_regen_rate", 2), #Battles only
-            (eq, "$tld_option_regen_rate", 3), #None
-            (assign, ":strength_income", 0),
-          (else_try), #halved income
-            (this_or_next|eq, "$tld_option_regen_rate", 1),
-            (le, ":strength", "$tld_option_regen_limit"), #Kham - Let weak factions regen with half income
-            (val_div, ":strength_income", 2),
-            (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
-            (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
-          (try_end),
-          (try_begin), #evil handicap: if player is evil, evil factions get less
-            (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
-            (neg|faction_slot_eq, ":faction_no", slot_faction_side, faction_side_good),
-            (gt, ":strength_income", 0),
-            (val_div, ":strength_income", 2), #half income - tweakable
-            (store_mod, ":to_sub_for_rounding", ":strength_income", 5),
-            (val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
-            (val_max, ":strength_income", 5), #has to be >0
-          (try_end),
+				(try_begin), #no income
+					(this_or_next|eq, "$tld_war_began", 0), #InVain: No incaome before the war starts
+					(this_or_next|eq, "$tld_option_regen_rate", 2), #Battles only
+					(eq, "$tld_option_regen_rate", 3), #None
+					(assign, ":strength_income", 0),
+				(else_try), #halved income
+					(this_or_next|eq, "$tld_option_regen_rate", 1),
+					(le, ":strength", "$tld_option_regen_limit"), #Kham - Let weak factions regen with half income
+					(val_div, ":strength_income", 2),
+					(store_mod, ":to_sub_for_rounding", ":strength_income", 5),
+					(val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
+				(try_end),
+				(try_begin), #evil handicap: if player is evil, evil factions get less
+					(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+					(neg|faction_slot_eq, ":faction_no", slot_faction_side, faction_side_good),
+					(gt, ":strength_income", 0),
+					(val_div, ":strength_income", 2), #half income - tweakable
+					(store_mod, ":to_sub_for_rounding", ":strength_income", 5),
+					(val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
+					(val_max, ":strength_income", 5), #has to be >0
+				(try_end),
+					#InVain: Temporarily nerf player's faction's income, until we sort out how player's victories affect factions.
+				(try_begin),
+					(gt, "$tld_war_began", 0),
+					(eq, ":faction_no", "$players_kingdom"),
+					(val_sub, ":strength_income", 40),
+				(try_end),
           (val_add, ":strength", ":strength_income"),
           (val_add, ":debug_gain", ":strength_income"), #debug
         (try_end),

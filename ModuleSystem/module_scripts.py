@@ -1699,10 +1699,10 @@ scripts = [
 			(party_slot_eq, ":center_no", slot_party_type, spt_town),
 			(assign, ":garrison_strength", 80),  #InVain, was 20, increased this to initially counter lowered reinforcement rate for towns.
 		(try_end),
-		(try_begin), # TLD: capitals get more
+		(try_begin), # TLD: capitals get more #InVain Isn't really needed anymore, since now all centers start at full strength. Keeping it just in case.
 			(store_faction_of_party, ":center_faction", ":center_no"),
 			(faction_slot_eq, ":center_faction", slot_faction_capital, ":center_no"),
-			(assign, ":garrison_strength", 40), 
+			(assign, ":garrison_strength", 160), #InVain: was 40
 		(try_end),
 		(party_get_slot, ":garrison_limit", ":center_no", slot_center_garrison_limit),
 		(try_for_range, ":unused", 0, ":garrison_strength"),
