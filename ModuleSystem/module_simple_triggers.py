@@ -2221,6 +2221,7 @@ simple_triggers = [
           (try_begin), #first evil faction falls - evil player
             (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
             (neg|faction_slot_eq, ":cur_kingdom", slot_faction_side, faction_side_good),
+            (neq, "$tld_war_began", 2),
             (assign, "$g_tld_convo_subject", ":cur_kingdom"),
             (store_and, ":already_done", "$g_tld_conversations_done", tld_conv_bit_gandalf_enemy_down),
             (eq, ":already_done", 0),
