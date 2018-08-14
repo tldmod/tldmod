@@ -2323,7 +2323,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("gondor_rumor_14", "People say the Nine rode out of Minas Morgul again. I wish we had more brave captains like Boromir to lead our men into battle against such ancient foes."),
 ("gondor_rumor_15", "The Southerners are pushing us out of Harondor. They've been raiding us hard for some time. I wish I could walk safely through the green fields of Lebennin again. But we are told 'No.', our soldiers are to protect the heart of the realm."),
 ("gondor_rumor_16", "My friend's cousin is a bowman in service of Hirluin the Fair. They have by far the best looking uniforms, if you ask me."), #:) I like
-("gondor_rumor_17", "There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock."),
+("gondor_rumor_17", "Those who dwell in the deep vale of the Morthond are accustomed to the shadows. I heard that they see well at night."),
+#("gondor_rumor_17", "There is a strange black rock near Erech. I went to see it once with my father. People say it's laid over a chamber where the last son of the sea kings sleeps. I think it's just a rock."),
 ("gondor_rumor_18", "We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt."), #Faramir quote.
 #Erebor
 #general idea: greedy, grubby, grumpy comic releif dwarves
@@ -2408,7 +2409,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 #general idea= Rohirrim pissed in their cereal
 ("dunland_rumor_begin", "We won't rest until we are avenged and the strawheads are on their knees!"),
 ("dunland_rumor_2", "Rohirrim bastards are friendly with their horses at night! Ha ha ha!"),
-("dunland_rumor_3", "Strawheads will cough out our land! Together with their blood! Gah!"),
+("dunland_rumor_3", "Night Wolfs can see in the darkness. Even at night, their throwing spears never miss their target."),
+#("dunland_rumor_3", "Strawheads will cough out our land! Together with their blood! Gah!"),
 ("dunland_rumor_4", "Death to the Forgoil! Death to the Strawheads! Death to the robbers from the North!"),
 ("dunland_rumor_5", "They call it Rohan now, but it's our ancestral land! We will avenge our forfathers and chase off the dirty land-thieves."),
 ("dunland_rumor_6", "Don't let the Forgoil catch you, or they will torture and burn you alive!"),
@@ -2432,7 +2434,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("beorn_rumor_10", "Men of Rohan are our kin, bears are our blood, goblins are our prey!"),
 ("beorn_rumor_11", "Turn into bears? Of course we don't. Who told you that? Ha ha ha!"),
 ("beorn_rumor_12", "Beorn was a great man. No, not a man, a giant!"),
-("beorn_rumor_13", "*GROWLS*   Do you have any honey?"),
+#("beorn_rumor_13", "*GROWLS*   Do you have any honey?"),
+("beorn_rumor_13", "The best and boldest woodmen warriors do not fear the shadows of the forest. They can fight in the darkness just as well as orcs and other filth who stalk the woods."),
 ("beorn_rumor_14", "Don't wander off alone in the mountains! Bears and wolves stay away from larger groups of men. But hunger, or as some say - shadow spirits, may drive them close enough to attack you."), 
 #[b]Lothlorien[/b]
 #[i]general idea= Merl? Marco? - slight depression about shit that's going down, thoughts about leaving this goddamn continent mixed with semi-confident feeling of safety in the woods.[/i]
@@ -2488,7 +2491,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("harad_rumor_4", "There is much gold and gems in Gondor. And even more in the lands beyond."),
 ("harad_rumor_5", "We will catch many western weaklings and sacrifice them to the Serpent God."),
 ("harad_rumor_6", "Corsairs have their uses, they sail well, but are rowdy and unclean in appearance and sneaky in behaviour."),
-("harad_rumor_7", "I'd never set foot on a ship. Corsairs can have all the seas as far as I am concerned."),
+#("harad_rumor_7", "I'd never set foot on a ship. Corsairs can have all the seas as far as I am concerned."),
+("harad_rumor_7", "The Panthers from Far Harad hunt their prey in the cover of the night. Our enemies will not see them coming."),
 ("harad_rumor_8", "Warriors of Khand are fierce and fearless, but their strategy is too simple."),
 ("harad_rumor_9", "I'm counting on good loot in the West. We were promised it. Then I can return home and run my carpet shop in peace."),
 ("harad_rumor_10", "Keep away from the Mumakil. They are ill-tempered beasts and will squash you in an instant."),
@@ -2527,7 +2531,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 #[i]general idea= Pirates and the old grudge against Gondor[/i]
 ("umbar_rumor_begin", "All the seas will belong to the black sails!"),
 ("umbar_rumor_2", "There's no Gondor ships left to sink, now we go plunder inland."),
-("umbar_rumor_3", "Umbar is our fate! And it will be Gondor's too."),
+#("umbar_rumor_3", "Umbar is our fate! And it will be Gondor's too."),
+("umbar_rumor_3", "Our Night Raiders can fight in the dark just as well as in broad daylight. They lead our scouting parties far inland."),
 ("umbar_rumor_4", "Gondorians can't sail! They've got land-legs."),
 ("umbar_rumor_5", "We've killed Gondorian kings in the past. Now they don't even have a king for us to kill."),
 ("umbar_rumor_6", "The sneaky Gondorians burned our fleet years ago. Now it's Gondor that'll burn."),
@@ -2567,7 +2572,8 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("neutral_rumor_begin", "Tomorrow everything could change..."),
 ("neutral_rumor_2", "Dead Marshes... a place defiled and diseased."), #[color=red]Chapter 'The Passage of the Marshes'.[/color]
 ("neutral_rumor_3", "The land used to be much different once."),
-("neutral_rumor_4", "Stay clear of Fangorn forest."),
+("neutral_rumor_4", "Men fight weaker at night. But there are some who are used to seeing in the dark."),
+#("neutral_rumor_4", "Stay clear of Fangorn forest."),
 
 ("evil_rumor_begin", "Orcs fight better at night, men fight better by day."),
 ("evil_rumor_2", "Fight horseman with pike, footman with arrow and archer with shield!"),

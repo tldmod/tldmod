@@ -485,6 +485,15 @@ simple_triggers = [
 					(store_mod, ":to_sub_for_rounding", ":strength_income", 5),
 					(val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
 				(try_end),
+					#InVain: Temporarily nerf player's faction's income, until we sort out how player's victories affect factions. Scaling with player level.
+				(try_begin),
+					(gt, "$tld_war_began", 0),
+					(eq, ":faction_no", "$players_kingdom"),
+					(store_character_level, ":player_level", "trp_player"),
+					(val_mul, ":player_level", 2),
+					(val_sub, ":strength_income", ":player_level"),
+					(val_max, ":strength_income", 0), #still has to be >0
+				(try_end),
 				(try_begin), #evil handicap: if player is evil, evil factions get less
 					(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
 					(neg|faction_slot_eq, ":faction_no", slot_faction_side, faction_side_good),
@@ -493,12 +502,6 @@ simple_triggers = [
 					(store_mod, ":to_sub_for_rounding", ":strength_income", 5),
 					(val_sub, ":strength_income", ":to_sub_for_rounding"), #keep it in increments of 5
 					(val_max, ":strength_income", 5), #has to be >0
-				(try_end),
-					#InVain: Temporarily nerf player's faction's income, until we sort out how player's victories affect factions.
-				(try_begin),
-					(gt, "$tld_war_began", 0),
-					(eq, ":faction_no", "$players_kingdom"),
-					(val_sub, ":strength_income", 40),
 				(try_end),
           (val_add, ":strength", ":strength_income"),
           (val_add, ":debug_gain", ":strength_income"), #debug
