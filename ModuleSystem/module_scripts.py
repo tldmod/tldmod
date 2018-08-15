@@ -7279,6 +7279,8 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_follow_spy"),
           (try_begin),
+		  	(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Cheat Mode
+ 			(eq, cheat_switch, 1), #Enabled only with cheat switch, for now
             (ge, "$g_talk_troop_faction_relation", 0),
             #(neq, ":giver_reputation", lrep_goodnatured),
             (party_get_skill_level, ":tracking_skill", "p_main_party", "skl_tracking"),
