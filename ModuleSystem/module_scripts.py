@@ -14485,25 +14485,25 @@ scripts = [
 	(try_end),
 
 	(troop_equip_items, "trp_player"),
-	# clear nonequipped inventory
-	(try_for_range, ":i_slot", 9, ":inv_cap"), 
-		(troop_set_inventory_slot, "trp_player", ":i_slot", -1),
-	(try_end),
+	# clear nonequipped inventory (cancel this, let's give em full inventory - kham)
+	#(try_for_range, ":i_slot", 9, ":inv_cap"), 
+	#	(troop_set_inventory_slot, "trp_player", ":i_slot", -1),
+	#(try_end),
 	
-	# clear any non-ranged weapon except one
-	(store_random_in_range, ":die_roll", 0, 2),
-	(assign, ":weapon_found",0),
-	(try_for_range, ":i", 0, 9), 
-		(try_begin),(lt, ":die_roll", 1), (store_sub, ":j", 8, ":i"),(else_try), (assign,":j",":i"),(end_try), #50% chance of reverse order
-		(troop_get_inventory_slot, ":item_id", "trp_player", ":j"),
-		(ge, ":item_id", 0),
-		(item_get_type,  ":type", ":item_id"),
-		(this_or_next|eq, ":type", itp_type_one_handed_wpn), 
-		(this_or_next|eq, ":type", itp_type_two_handed_wpn), 
-		(eq, ":type", itp_type_polearm), 
-		(try_begin),(eq,":weapon_found",1),(troop_set_inventory_slot, "trp_player", ":j", -1),(try_end),
-		(assign, ":weapon_found",1),
-	(try_end),
+	# clear any non-ranged weapon except one (cancel this, let's give em full inventory - kham)
+	#(store_random_in_range, ":die_roll", 0, 2),
+	#(assign, ":weapon_found",0),
+	#(try_for_range, ":i", 0, 9), 
+	#	(try_begin),(lt, ":die_roll", 1), (store_sub, ":j", 8, ":i"),(else_try), (assign,":j",":i"),(end_try), #50% chance of reverse order
+	#	(troop_get_inventory_slot, ":item_id", "trp_player", ":j"),
+	#	(ge, ":item_id", 0),
+	#	(item_get_type,  ":type", ":item_id"),
+	#	(this_or_next|eq, ":type", itp_type_one_handed_wpn), 
+	#	(this_or_next|eq, ":type", itp_type_two_handed_wpn), 
+	#	(eq, ":type", itp_type_polearm), 
+	#	(try_begin),(eq,":weapon_found",1),(troop_set_inventory_slot, "trp_player", ":j", -1),(try_end),
+	#	(assign, ":weapon_found",1),
+	#(try_end),
 	
 	# give appropriate food for race/faction
 	(call_script, "script_get_food_of_race_and_faction", ":race", ":fac"),
