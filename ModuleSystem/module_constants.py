@@ -2661,3 +2661,4 @@ mission_tpl_are_all_agents_spawned     = 1943   # (mission_tpl_are_all_agents_sp
 fac_str_reinforcement_boost = 1000 #Kham
 
 slot_faction_last_stand = 307
+slot_faction_guardian_party_spawned = 308

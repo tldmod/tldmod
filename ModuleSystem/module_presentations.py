@@ -3166,8 +3166,23 @@ presentations = [
         (else_try),
           (eq, ":object", "$g_presentation_obj_2"),
           (assign, "$g_selected_page", 0),
-          (presentation_set_duration, 0),
-          (jump_to_menu, "mnu_start_game_1"),
+          (try_begin),
+            (eq, "$intro_presentation_stage", 1),
+            (presentation_set_duration, 0),
+            (jump_to_menu, "mnu_start_game_1"),
+          (else_try),
+            (eq, "$intro_presentation_stage", 2),
+            (start_presentation, "prsnt_faction_selection_good"),
+          (else_try),
+            (eq, "$intro_presentation_stage", 22),
+            (start_presentation, "prsnt_faction_selection_evil"),
+          (else_try),
+            (eq, "$intro_presentation_stage", 3),
+            (start_presentation, "prsnt_faction_selection_eye"),
+          (else_try),
+            (eq, "$intro_presentation_stage", 33),
+            (start_presentation, "prsnt_faction_selection_hand"),
+          (try_end),
         (try_end),
       ]),
   ]),
@@ -3270,7 +3285,8 @@ presentations = [
 # enjoy it :P
   ("faction_selection",0,mesh_load_window,[
       (ti_on_presentation_load,
-       [  
+       [
+
         (set_fixed_point_multiplier, 1000),
 
         (str_store_string, s1, "@What do you fight for?"),
@@ -3292,6 +3308,18 @@ presentations = [
         (position_set_y, pos1, 100),
         (overlay_set_position, "$g_presentation_obj_2", pos1),
 
+        (try_begin),
+          (eq, cheat_switch, 1),
+          (create_button_overlay, "$g_presentation_obj_3", "@Quick Start: Gondor", tf_center_justify),
+          (position_set_x, pos1, 280),
+          (position_set_y, pos1, 140),
+          (overlay_set_position, "$g_presentation_obj_3", pos1),
+          (create_button_overlay, "$g_presentation_obj_4", "@Quick Start: Mordor", tf_center_justify),
+          (position_set_x, pos1, 680),
+          (position_set_y, pos1, 140),
+          (overlay_set_position, "$g_presentation_obj_4", pos1),
+        (try_end),
+
     #FACTION SIDE GOOD
     #text
      (create_text_overlay, "$g_option_good_text", "@The DAWN of a New Era", tf_center_justify),
@@ -3305,7 +3333,7 @@ presentations = [
     #logo
       #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
       (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_good", "mesh_choose_icon_good"),
-           (position_set_x, pos1, 280),
+           (position_set_x, pos1, 285),
            (position_set_y, pos1, 380),
            (overlay_set_position, "$g_option_good", pos1),
            (position_set_x, pos1, 600),
@@ -3323,7 +3351,356 @@ presentations = [
 
     #logo
       (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_evil", "mesh_choose_icon_evil"),
-           (position_set_x, pos1, 680),
+           (position_set_x, pos1, 685),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_evil", pos1),
+           (position_set_x, pos1, 600),
+           (position_set_y, pos1, 600),
+           (overlay_set_size, "$g_option_evil",pos1),
+        (presentation_set_duration, 999999),
+        ]),
+    
+    (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+      (try_begin),
+        (eq, ":object", "$g_presentation_obj_1"),
+        (presentation_set_duration, 0),
+        (jump_to_menu, "mnu_start_game_1"),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_2"),
+        #(presentation_set_duration, 0),
+        (start_presentation, "prsnt_faction_intro_text"),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_3"),
+        (call_script,"script_start_as_one","trp_gondor_commoner"),
+        (jump_to_menu,"mnu_start_phase_2"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_4"),
+        (call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),
+        (jump_to_menu,"mnu_start_phase_2"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_option_good"),
+        (str_store_string,s13,"@After visiting the recruiting center you were accepted into the army and spent several months training at the Imperial Academy. As your last task before graduation you were given a small ship and sent to Coruscant to pledge your loyalty before Emperor Palpatine himself."),
+        #(assign,"$faction_choice",cb0_empire),
+        (assign, "$intro_presentation_stage", 2),
+        (start_presentation, "prsnt_faction_selection_good"),
+      (else_try),
+        (eq, ":object", "$g_option_evil"),
+        (str_store_string,s13,"@Using some of your local contacts you eventually arranged a meeting with a rebel commander. After working with his unit for several months you have been given a small ship and sent to Yavin IV to pledge your loyalty before Mon Mothma herself."),
+        #(assign,"$faction_choice",cb0_rebel),
+        (start_presentation, "prsnt_faction_selection_evil"),
+      (try_end),
+    ]),
+
+(ti_on_presentation_mouse_enter_leave,[
+
+      (store_trigger_param_1, reg3),
+      (store_trigger_param_2, reg4),
+      (store_trigger_param_1, ":id"),
+      (store_trigger_param_2, ":stage"),
+
+      (try_begin),
+
+
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 0),
+      (position_set_x, pos1, 600),
+            (position_set_y, pos1, 600),
+      (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+      (position_set_x, pos1, 750),
+            (position_set_y, pos1, 750),
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+      (overlay_animate_to_alpha, "$g_option_good_text", 150, 0xFF),
+    (else_try),
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 1),
+      (position_set_x, pos1, 650),
+            (position_set_y, pos1, 650),
+      (overlay_animate_to_size, ":id", 300, pos1),
+      #(overlay_animate_to_alpha, ":id", 150, 0x0),
+      (overlay_animate_to_alpha, "$g_option_good_text", 150, 0x7D),
+        (else_try),
+
+
+        (eq, ":id", "$g_option_evil"),
+        (eq, ":stage", 0),
+      (position_set_x, pos1, 600),
+            (position_set_y, pos1, 600),
+      (overlay_animate_to_size, "$g_option_good", 400, pos1),
+      (position_set_x, pos1, 750),
+            (position_set_y, pos1, 750),
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+      (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0xFF),
+    (else_try),
+        (eq, ":id", "$g_option_evil"),
+        (eq, ":stage", 1),
+      (position_set_x, pos1, 650),
+            (position_set_y, pos1, 650),
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x0),
+      (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0x7D),  
+    (try_end),
+    ]),
+
+  ] + coord_helper
+),
+
+("faction_selection_good",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [  
+        (set_fixed_point_multiplier, 1000),
+
+        (str_store_string, s1, "@Select your Race?"),
+        (create_text_overlay, reg1, s1, tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg1, pos1),
+        (position_set_x, pos1, 1750),
+        (position_set_y, pos1, 1750),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_text, reg1, s1),
+        (create_button_overlay, "$g_presentation_obj_1", "@Go Back...", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 50),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        
+        (create_button_overlay, "$g_presentation_obj_2", "@Learn about the different factions of Middle-Earth", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 100),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+
+
+    #MAN
+    #text
+     (create_text_overlay, "$g_option_good_text", "@Man", tf_center_justify),
+    #(create_button_overlay, "$g_presentation_obj_1", 0, tf_center_justify),
+        (position_set_x, pos1, 280),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_option_good_text", pos1),
+    (overlay_set_alpha, "$g_option_good_text", 0x7D),
+    (overlay_set_color, "$g_option_good_text", 0x181D4D),
+
+    #logo
+      #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
+      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 285),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_good", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_option_good", pos1),
+
+    #ELF
+    #text
+     (create_text_overlay, "$g_option_evil_text", "@Elf", tf_center_justify),
+        (position_set_x, pos1, 480),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_option_evil_text", pos1),
+    (overlay_set_alpha, "$g_option_evil_text", 0x7D),
+    (overlay_set_color, "$g_option_evil_text", 0x50FF50),
+
+    #logo
+      (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 485),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_evil", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_option_evil",pos1),
+    #DWARF
+    #text
+     (create_text_overlay, "$g_presentation_obj_item_select_2", "@Dwarf", tf_center_justify),
+        (position_set_x, pos1, 680),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_presentation_obj_item_select_2", pos1),
+    (overlay_set_alpha, "$g_presentation_obj_item_select_2", 0x7D),
+    (overlay_set_color, "$g_presentation_obj_item_select_2", 0xA52A2A),
+
+    #logo
+      (create_image_button_overlay, "$g_presentation_obj_item_select_3", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 685),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_presentation_obj_item_select_3", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_presentation_obj_item_select_3",pos1),
+
+        (presentation_set_duration, 999999),
+        ]),
+    
+    (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+      (try_begin),
+        (eq, ":object", "$g_presentation_obj_1"),
+        (presentation_set_duration, 0),
+        (start_presentation, "prsnt_faction_selection"),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_2"),
+        #(presentation_set_duration, 0),
+        (start_presentation, "prsnt_faction_intro_text"),
+      (else_try),
+        (eq, ":object", "$g_option_good"),
+        (jump_to_menu,"mnu_start_good_man"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_option_evil"),
+        (jump_to_menu,"mnu_start_good_elf"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_item_select_3"),
+        (jump_to_menu,"mnu_start_good_dwarf"),
+        (presentation_set_duration, 0),
+      (try_end),
+    ]),
+
+(ti_on_presentation_mouse_enter_leave,[
+
+      (store_trigger_param_1, reg3),
+      (store_trigger_param_2, reg4),
+      (store_trigger_param_1, ":id"),
+      (store_trigger_param_2, ":stage"),
+
+      (try_begin),
+
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 0),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 400),
+        
+        (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+        (overlay_animate_to_size, "$g_presentation_obj_item_select_3", 400, pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 550),
+        
+        (overlay_animate_to_size, ":id", 300, pos1),
+       # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+        (overlay_animate_to_alpha, "$g_option_good_text", 150, 0xFF),
+    (else_try),
+        
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        
+        (overlay_animate_to_size, ":id", 300, pos1),
+       #(overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_option_good_text", 150, 0x7D),
+    (else_try),
+
+      (eq, ":id", "$g_option_evil"),
+      (eq, ":stage", 0),
+      (position_set_x, pos1, 400),
+      (position_set_y, pos1, 400),
+
+      (overlay_animate_to_size, "$g_option_good", 400, pos1),
+      (overlay_animate_to_size, "$g_presentation_obj_item_select_3", 400, pos1),
+      (position_set_x, pos1, 550),
+      (position_set_y, pos1, 550),
+        
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+      (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0xFF),
+    (else_try),
+
+        (eq, ":id", "$g_option_evil"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        (overlay_animate_to_size, ":id", 300, pos1),
+      # (overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0x7D),  
+    
+    (else_try),
+
+        (eq, ":id", "$g_presentation_obj_item_select_3"),
+        (eq, ":stage", 0),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 400),
+        
+        (overlay_animate_to_size, "$g_option_good", 400, pos1),
+        (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 550),
+      
+        (overlay_animate_to_size, ":id", 300, pos1),
+      # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+        (overlay_animate_to_alpha, "$g_presentation_obj_item_select_2", 150, 0xFF),
+    (else_try),
+        (eq, ":id", "$g_presentation_obj_item_select_3"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        (overlay_animate_to_size, ":id", 300, pos1),
+       #(overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_presentation_obj_item_select_2", 150, 0x7D),  
+    (try_end),
+
+    ]),
+
+  ] + coord_helper
+),
+
+  ("faction_selection_evil",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [
+
+        (set_fixed_point_multiplier, 1000),
+
+        (str_store_string, s1, "@Whom Do You Serve?"),
+        (create_text_overlay, reg1, s1, tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg1, pos1),
+        (position_set_x, pos1, 1750),
+        (position_set_y, pos1, 1750),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_text, reg1, s1),
+        (create_button_overlay, "$g_presentation_obj_1", "@Go Back...", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 50),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        
+        (create_button_overlay, "$g_presentation_obj_2", "@Learn about the different factions of Middle-Earth", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 100),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+
+    #FACTION SIDE HAND
+    #text
+     (create_text_overlay, "$g_option_good_text", "@SAURON of Mordor, The Lord of the Rings", tf_center_justify),
+    #(create_button_overlay, "$g_presentation_obj_1", 0, tf_center_justify),
+        (position_set_x, pos1, 280),
+        (position_set_y, pos1, 180),
+        (overlay_set_position, "$g_option_good_text", pos1),
+    (overlay_set_alpha, "$g_option_good_text", 0x7D),
+    (overlay_set_color, "$g_option_good_text", 0x181D4D),
+
+    #logo
+      #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
+      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_eye", "mesh_choose_icon_eye"),
+           (position_set_x, pos1, 285),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_good", pos1),
+           (position_set_x, pos1, 600),
+           (position_set_y, pos1, 600),
+           (overlay_set_size, "$g_option_good", pos1),
+
+    #FACTION SIDE EVIL
+    #text
+     (create_text_overlay, "$g_option_evil_text", "@SARUMAN of Isengard, The White Hand", tf_center_justify),
+        (position_set_x, pos1, 680),
+        (position_set_y, pos1, 180),
+        (overlay_set_position, "$g_option_evil_text", pos1),
+    (overlay_set_alpha, "$g_option_evil_text", 0x7D),
+    (overlay_set_color, "$g_option_evil_text", 0x4D1818),
+
+    #logo
+      (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_hand", "mesh_choose_icon_hand"),
+           (position_set_x, pos1, 685),
            (position_set_y, pos1, 380),
            (overlay_set_position, "$g_option_evil", pos1),
            (position_set_x, pos1, 600),
@@ -3341,19 +3718,15 @@ presentations = [
       (else_try),
         (eq, ":object", "$g_presentation_obj_2"),
         #(presentation_set_duration, 0),
+        (assign, "$intro_presentation_stage", 22),
         (start_presentation, "prsnt_faction_intro_text"),
       (else_try),
         (eq, ":object", "$g_option_good"),
-        (str_store_string,s13,"@After visiting the recruiting center you were accepted into the army and spent several months training at the Imperial Academy. As your last task before graduation you were given a small ship and sent to Coruscant to pledge your loyalty before Emperor Palpatine himself."),
-        #(assign,"$faction_choice",cb0_empire),
-        (jump_to_menu,"mnu_start_good"),
-        (presentation_set_duration, 0),
+        (assign, "$intro_presentation_stage", 2),
+        (start_presentation, "prsnt_faction_selection_eye"),
       (else_try),
         (eq, ":object", "$g_option_evil"),
-        (str_store_string,s13,"@Using some of your local contacts you eventually arranged a meeting with a rebel commander. After working with his unit for several months you have been given a small ship and sent to Yavin IV to pledge your loyalty before Mon Mothma herself."),
-        #(assign,"$faction_choice",cb0_rebel),
-        (jump_to_menu,"mnu_start_evil"),
-        (presentation_set_duration, 0),
+        (start_presentation, "prsnt_faction_selection_hand"),
       (try_end),
     ]),
 
@@ -3413,6 +3786,401 @@ presentations = [
 ),
 
 
+
+("faction_selection_eye",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [  
+        (set_fixed_point_multiplier, 1000),
+
+        (str_store_string, s1, "@Select your Race?"),
+        (create_text_overlay, reg1, s1, tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg1, pos1),
+        (position_set_x, pos1, 1750),
+        (position_set_y, pos1, 1750),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_text, reg1, s1),
+        (create_button_overlay, "$g_presentation_obj_1", "@Go Back...", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 50),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        
+        (create_button_overlay, "$g_presentation_obj_2", "@Learn about the different factions of Middle-Earth", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 100),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+
+
+    #ORC
+    #text
+     (create_text_overlay, "$g_option_good_text", "@an ORC,^ serving the Lidless Eye", tf_center_justify),
+    #(create_button_overlay, "$g_presentation_obj_1", 0, tf_center_justify),
+        (position_set_x, pos1, 280),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_option_good_text", pos1),
+    (overlay_set_alpha, "$g_option_good_text", 0x7D),
+    (overlay_set_color, "$g_option_good_text", 0x181D4D),
+
+    #logo
+      #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
+      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 285),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_good", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_option_good", pos1),
+
+    #URUK
+    #text
+     (create_text_overlay, "$g_option_evil_text", "@an URUK,^ the new breed of Orcs", tf_center_justify),
+        (position_set_x, pos1, 480),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_option_evil_text", pos1),
+    (overlay_set_alpha, "$g_option_evil_text", 0x7D),
+    (overlay_set_color, "$g_option_evil_text", 0x50FF50),
+
+    #logo
+      (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 485),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_evil", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_option_evil",pos1),
+
+    #Evil Man
+    #text
+     (create_text_overlay, "$g_presentation_obj_item_select_2", "@a MAN,^ subjugated by Sauron", tf_center_justify),
+        (position_set_x, pos1, 680),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_presentation_obj_item_select_2", pos1),
+    (overlay_set_alpha, "$g_presentation_obj_item_select_2", 0x7D),
+    (overlay_set_color, "$g_presentation_obj_item_select_2", 0xA52A2A),
+
+    #logo
+      (create_image_button_overlay, "$g_presentation_obj_item_select_3", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 685),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_presentation_obj_item_select_3", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_presentation_obj_item_select_3",pos1),
+
+        (presentation_set_duration, 999999),
+        ]),
+    
+    (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+      (try_begin),
+        (eq, ":object", "$g_presentation_obj_1"),
+        (presentation_set_duration, 0),
+        (start_presentation, "prsnt_faction_selection_evil"),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_2"),
+        (assign, "$intro_presentation_stage", 3),
+        (start_presentation, "prsnt_faction_intro_text"),
+      (else_try),
+        (eq, ":object", "$g_option_good"),
+        (jump_to_menu,"mnu_start_eye_orc"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_option_evil"),
+        (call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),  
+        (jump_to_menu,"mnu_start_as_one"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_item_select_3"),
+        (jump_to_menu,"mnu_start_eye_man"),
+        (presentation_set_duration, 0),
+      (try_end),
+    ]),
+
+(ti_on_presentation_mouse_enter_leave,[
+
+      (store_trigger_param_1, reg3),
+      (store_trigger_param_2, reg4),
+      (store_trigger_param_1, ":id"),
+      (store_trigger_param_2, ":stage"),
+
+      (try_begin),
+
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 0),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 400),
+        
+        (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+        (overlay_animate_to_size, "$g_presentation_obj_item_select_3", 400, pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 550),
+        
+        (overlay_animate_to_size, ":id", 300, pos1),
+       # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+        (overlay_animate_to_alpha, "$g_option_good_text", 150, 0xFF),
+    (else_try),
+        
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        
+        (overlay_animate_to_size, ":id", 300, pos1),
+       #(overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_option_good_text", 150, 0x7D),
+    (else_try),
+
+      (eq, ":id", "$g_option_evil"),
+      (eq, ":stage", 0),
+      (position_set_x, pos1, 400),
+      (position_set_y, pos1, 400),
+
+      (overlay_animate_to_size, "$g_option_good", 400, pos1),
+      (overlay_animate_to_size, "$g_presentation_obj_item_select_3", 400, pos1),
+      (position_set_x, pos1, 550),
+      (position_set_y, pos1, 550),
+        
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+      (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0xFF),
+    (else_try),
+
+        (eq, ":id", "$g_option_evil"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        (overlay_animate_to_size, ":id", 300, pos1),
+      # (overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0x7D),  
+    
+    (else_try),
+
+        (eq, ":id", "$g_presentation_obj_item_select_3"),
+        (eq, ":stage", 0),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 400),
+        
+        (overlay_animate_to_size, "$g_option_good", 400, pos1),
+        (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 550),
+      
+        (overlay_animate_to_size, ":id", 300, pos1),
+      # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+        (overlay_animate_to_alpha, "$g_presentation_obj_item_select_2", 150, 0xFF),
+    (else_try),
+        (eq, ":id", "$g_presentation_obj_item_select_3"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        (overlay_animate_to_size, ":id", 300, pos1),
+       #(overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_presentation_obj_item_select_2", 150, 0x7D),  
+    (try_end),
+
+    ]),
+
+  ] + coord_helper
+),
+
+("faction_selection_hand",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [  
+        (set_fixed_point_multiplier, 1000),
+
+        (str_store_string, s1, "@Select your Race?"),
+        (create_text_overlay, reg1, s1, tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg1, pos1),
+        (position_set_x, pos1, 1750),
+        (position_set_y, pos1, 1750),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_text, reg1, s1),
+        (create_button_overlay, "$g_presentation_obj_1", "@Go Back...", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 50),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        
+        (create_button_overlay, "$g_presentation_obj_2", "@Learn about the different factions of Middle-Earth", tf_center_justify),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 100),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+
+
+    #ORC
+    #text
+     (create_text_overlay, "$g_option_good_text", "@an ORC,^ serving the White Hand", tf_center_justify),
+    #(create_button_overlay, "$g_presentation_obj_1", 0, tf_center_justify),
+        (position_set_x, pos1, 280),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_option_good_text", pos1),
+    (overlay_set_alpha, "$g_option_good_text", 0x7D),
+    (overlay_set_color, "$g_option_good_text", 0x181D4D),
+
+    #logo
+      #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
+      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 285),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_good", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_option_good", pos1),
+
+    #URUK
+    #text
+     (create_text_overlay, "$g_option_evil_text", "@an URUK-HAI,^ bred in Isengard", tf_center_justify),
+        (position_set_x, pos1, 480),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_option_evil_text", pos1),
+    (overlay_set_alpha, "$g_option_evil_text", 0x7D),
+    (overlay_set_color, "$g_option_evil_text", 0x50FF50),
+
+    #logo
+      (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 485),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_option_evil", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_option_evil",pos1),
+
+    #Evil Man
+    #text
+     (create_text_overlay, "$g_presentation_obj_item_select_2", "@a MAN of Dunland,^ the Western Plains", tf_center_justify),
+        (position_set_x, pos1, 680),
+        (position_set_y, pos1, 230),
+        (overlay_set_position, "$g_presentation_obj_item_select_2", pos1),
+    (overlay_set_alpha, "$g_presentation_obj_item_select_2", 0x7D),
+    (overlay_set_color, "$g_presentation_obj_item_select_2", 0xA52A2A),
+
+    #logo
+      (create_image_button_overlay, "$g_presentation_obj_item_select_3", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+           (position_set_x, pos1, 685),
+           (position_set_y, pos1, 380),
+           (overlay_set_position, "$g_presentation_obj_item_select_3", pos1),
+           (position_set_x, pos1, 400),
+           (position_set_y, pos1, 400),
+           (overlay_set_size, "$g_presentation_obj_item_select_3",pos1),
+
+        (presentation_set_duration, 999999),
+        ]),
+    
+    (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+      (try_begin),
+        (eq, ":object", "$g_presentation_obj_1"),
+        (presentation_set_duration, 0),
+        (start_presentation, "prsnt_faction_selection_evil"),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_2"),
+        (assign, "$intro_presentation_stage", 33),
+        (start_presentation, "prsnt_faction_intro_text"),
+      (else_try),
+        (eq, ":object", "$g_option_good"),
+        (jump_to_menu,"mnu_start_hand_orc"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_option_evil"),
+        (call_script,"script_start_as_one","trp_uruk_snaga_of_isengard"),  
+        (jump_to_menu,"mnu_start_as_one"),
+        (presentation_set_duration, 0),
+      (else_try),
+        (eq, ":object", "$g_presentation_obj_item_select_3"),
+        (jump_to_menu,"trp_dunnish_wildman"),
+        (jump_to_menu,"mnu_choose_gender"),
+        (presentation_set_duration, 0),
+      (try_end),
+    ]),
+
+(ti_on_presentation_mouse_enter_leave,[
+
+      (store_trigger_param_1, reg3),
+      (store_trigger_param_2, reg4),
+      (store_trigger_param_1, ":id"),
+      (store_trigger_param_2, ":stage"),
+
+      (try_begin),
+
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 0),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 400),
+        
+        (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+        (overlay_animate_to_size, "$g_presentation_obj_item_select_3", 400, pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 550),
+        
+        (overlay_animate_to_size, ":id", 300, pos1),
+       # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+        (overlay_animate_to_alpha, "$g_option_good_text", 150, 0xFF),
+    (else_try),
+        
+        (eq, ":id", "$g_option_good"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        
+        (overlay_animate_to_size, ":id", 300, pos1),
+       #(overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_option_good_text", 150, 0x7D),
+    (else_try),
+
+      (eq, ":id", "$g_option_evil"),
+      (eq, ":stage", 0),
+      (position_set_x, pos1, 400),
+      (position_set_y, pos1, 400),
+
+      (overlay_animate_to_size, "$g_option_good", 400, pos1),
+      (overlay_animate_to_size, "$g_presentation_obj_item_select_3", 400, pos1),
+      (position_set_x, pos1, 550),
+      (position_set_y, pos1, 550),
+        
+      (overlay_animate_to_size, ":id", 300, pos1),
+     # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+      (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0xFF),
+    (else_try),
+
+        (eq, ":id", "$g_option_evil"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        (overlay_animate_to_size, ":id", 300, pos1),
+      # (overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_option_evil_text", 150, 0x7D),  
+    
+    (else_try),
+
+        (eq, ":id", "$g_presentation_obj_item_select_3"),
+        (eq, ":stage", 0),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 400),
+        
+        (overlay_animate_to_size, "$g_option_good", 400, pos1),
+        (overlay_animate_to_size, "$g_option_evil", 400, pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 550),
+      
+        (overlay_animate_to_size, ":id", 300, pos1),
+      # (overlay_animate_to_alpha, ":id", 150, 0x7D),
+        (overlay_animate_to_alpha, "$g_presentation_obj_item_select_2", 150, 0xFF),
+    (else_try),
+        (eq, ":id", "$g_presentation_obj_item_select_3"),
+        (eq, ":stage", 1),
+        (position_set_x, pos1, 450),
+        (position_set_y, pos1, 450),
+        (overlay_animate_to_size, ":id", 300, pos1),
+       #(overlay_animate_to_alpha, ":id", 150, 0x0),
+        (overlay_animate_to_alpha, "$g_presentation_obj_item_select_2", 150, 0x7D),  
+    (try_end),
+
+    ]),
+
+  ] + coord_helper
+),
 ]
 
 from module_info import wb_compile_switch

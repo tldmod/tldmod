@@ -110,6 +110,7 @@ game_menus = [
 	# item faction slots
 	(call_script,"script_set_item_faction"),
 	(assign, "$disable_skill_modifiers", 0),
+	(assign, "$intro_presentation_stage", 1),
 	#(start_presentation, "prsnt_faction_selection"),
     ],
     [("start_good",[],"the DAWN of a new Era"    ,[(jump_to_menu,"mnu_start_good" ),]),

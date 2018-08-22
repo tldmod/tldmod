@@ -21,3 +21,7 @@ prsnt_faction_intro_text = 19
 prsnt_show_num_rallies = 20
 prsnt_show_key_binds = 21
 prsnt_faction_selection = 22
+prsnt_faction_selection_good = 23
+prsnt_faction_selection_evil = 24
+prsnt_faction_selection_eye = 25
+prsnt_faction_selection_hand = 26

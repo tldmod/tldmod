@@ -1,4 +1,4 @@
-1597
+1612
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -87,11 +87,26 @@ qstr_{reg75} {reg75}
 qstr_What_do_you_fight_fo What_do_you_fight_for?
 qstr_Go_Back... Go_Back...
 qstr_Learn_about_the_diff Learn_about_the_different_factions_of_Middle-Earth
+qstr_Quick_Start:_Gondor Quick_Start:_Gondor
+qstr_Quick_Start:_Mordor Quick_Start:_Mordor
 qstr_The_DAWN_of_a_New_Er The_DAWN_of_a_New_Era
 qstr_The_TWILIGHT_of_Man The_TWILIGHT_of_Man
 qstr_After_visiting_the_r After_visiting_the_recruiting_center_you_were_accepted_into_the_army_and_spent_several_months_training_at_the_Imperial_Academy._As_your_last_task_before_graduation_you_were_given_a_small_ship_and_sent_to_Coruscant_to_pledge_your_loyalty_before_Emperor_Palpatine_himself.
 qstr_Using_some_of_your_l Using_some_of_your_local_contacts_you_eventually_arranged_a_meeting_with_a_rebel_commander._After_working_with_his_unit_for_several_months_you_have_been_given_a_small_ship_and_sent_to_Yavin_IV_to_pledge_your_loyalty_before_Mon_Mothma_herself.
 qstr_{reg65}_{reg66}_{reg {reg65},_{reg66},_{reg67}
+qstr_Select_your_Race? Select_your_Race?
+qstr_Man Man
+qstr_Elf Elf
+qstr_Dwarf Dwarf
+qstr_Whom_Do_You_Serve? Whom_Do_You_Serve?
+qstr_SAURON_of_Mordor_The SAURON_of_Mordor,_The_Lord_of_the_Rings
+qstr_SARUMAN_of_Isengard_ SARUMAN_of_Isengard,_The_White_Hand
+qstr_an_ORC^_serving_the_ an_ORC,^_serving_the_Lidless_Eye
+qstr_an_URUK^_the_new_bre an_URUK,^_the_new_breed_of_Orcs
+qstr_a_MAN^_subjugated_by a_MAN,^_subjugated_by_Sauron
+qstr_an_ORC^_serving_the_W an_ORC,^_serving_the_White_Hand
+qstr_an_URUK_HAI^_bred_in an_URUK-HAI,^_bred_in_Isengard
+qstr_a_MAN_of_Dunland^_th a_MAN_of_Dunland,^_the_Western_Plains
 qstr_You_gained_{reg0}_Re You_gained_{reg0}_Resource_Points_of_{s0}.
 qstr_You_lost_{reg0}_Reso You_lost_{reg0}_Resource_Points_of_{s0}.
 qstr_{s24}: {s24}:
