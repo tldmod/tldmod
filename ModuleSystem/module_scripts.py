@@ -14367,7 +14367,7 @@ scripts = [
 	(try_end),
 	# copy items
 	(troop_clear_inventory, "trp_player"),
-	(troop_get_inventory_capacity, ":inv_cap", ":troop"),
+	#(troop_get_inventory_capacity, ":inv_cap", ":troop"),
 	
 	# CC: Maybe fix?
 	(set_show_messages, 0),
@@ -24294,7 +24294,7 @@ command_cursor_scripts = [
 		(else_try),
 			(eq, ":party_type", spt_bandit),
 			(val_add, ":nf_enemy_party_type_sum", 10), #Bandits only get 10 points
-			(else_try),
+		(else_try),
 			(val_add, ":nf_enemy_party_type_sum", ":party_victory_value_point"), #Add vp here for primary party encountered.
 		(try_end),
 
@@ -24365,7 +24365,6 @@ command_cursor_scripts = [
 	(assign, reg61, ":player_share_of_battle"), #Debug for D
 
     #Calculate E: Helping allies
-    (store_mul, ":ally_victory_points", "$g_ally_victory_value_point", 5), #a/20*100
 	
 	#(store_add, ":helping_allies_sum", 1, ":helping_bonus"), #we can scratch that, it's a leftover
     #(assign, reg63, ":helping_allies_sum"), 
@@ -24378,18 +24377,26 @@ command_cursor_scripts = [
 	(store_mul, ":max_enemy_str", ":ally_str", 2), #so the helping bonus doesn't go out of hand, we only scale it up to twice outnumbered allies
 	(val_min, ":enemy_str", ":max_enemy_str"),
 	
-	#minuend / first part
-	(store_mul, ":minuend", ":ally_victory_points", ":enemy_str"),
-	(val_div, ":minuend", ":ally_str"),
-	
-	#subtrahend / second part
-	#(store_mul, ":subtrahend", ":ally_victory_points", ":ally_str"),
-	#(val_div, ":subtrahend", ":ally_str"),
-	
-	#let's do this
-	(store_sub, ":helping_allies_sum", ":minuend", ":ally_victory_points"),
-	(val_div, ":helping_allies_sum", 100),
-	(val_max, ":helping_allies_sum", 0),
+	(try_begin),
+		(gt, "$g_ally_victory_value_point", 0),
+		(store_mul, ":ally_victory_points", "$g_ally_victory_value_point", 5), #a/20*100
+		
+		#minuend / first part
+		(store_mul, ":minuend", ":ally_victory_points", ":enemy_str"),
+		(val_div, ":minuend", ":ally_str"),
+		
+		#subtrahend / second part
+		#(store_mul, ":subtrahend", ":ally_victory_points", ":ally_str"),
+		#(val_div, ":subtrahend", ":ally_str"),
+		
+		#let's do this
+		(store_sub, ":helping_allies_sum", ":minuend", ":ally_victory_points"),
+		(val_div, ":helping_allies_sum", 100),
+		(val_max, ":helping_allies_sum", 0),
+	(else_try),
+		(assign, ":helping_allies_sum", 0),
+	(try_end),
+
     (assign, reg63, ":helping_allies_sum"),
 
 	#Sum of AB-C
