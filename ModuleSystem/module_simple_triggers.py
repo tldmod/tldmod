@@ -2204,7 +2204,8 @@ simple_triggers = [
         (else_try),
           (eq, ":has_guardian", 1),
           (faction_slot_eq, ":cur_kingdom", slot_faction_guardian_party_spawned, 1), #Guardian party has spawned
-          (neg|faction_slot_ge, ":cur_kingdom", slot_faction_guardian_party, 1), #guardian party has been defeated
+          (faction_get_slot, ":guardian_party", ":cur_kingdom", slot_faction_guardian_party),
+          (neg|party_is_active, ":guardian_party"),
           (assign, ":guardian_party_defeated", 1),
         (try_end),
 
