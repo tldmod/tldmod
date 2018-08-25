@@ -393,7 +393,7 @@ dialogs = [
         (str_store_string, s4, "@Steward Denethor"),
       (else_try),
         (str_store_string, s1, "@Merry"),
-        (str_store_string, s2, "@Golden Hall"),
+        (str_store_string, s2, "@the Golden Hall"),
         (str_store_string, s3, "@Edoras"),
         (str_store_string, s4, "@King Theoden"),
       (try_end)],
@@ -2779,7 +2779,7 @@ dialogs = [
       (val_sub, ":enemy_strength", ":reduction"),
       (val_add, ":enemy_strength", 50), #50 victory points for the enemy
       (display_message, "@The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained 50 faction strength).", color_bad_news),
-      (display_message, "@You did, however, defeated {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
+      (display_message, "@You did, however, defeat {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
       (faction_set_slot, ":faction", slot_faction_strength_tmp, ":enemy_strength"), ]],
   
   [anyone,"lord_start", [(check_quest_active,"qst_blank_quest_01"),
@@ -2804,7 +2804,7 @@ dialogs = [
       (assign, reg20, ":num_killed"),
       (val_add, ":enemy_strength", ":num_killed"),
       (display_message, "@The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained {reg20} faction strength).", color_bad_news),
-      (display_message, "@You did, however, defeated {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
+      (display_message, "@You did, however, defeat {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).", color_good_news),
       (faction_set_slot, ":faction", slot_faction_strength_tmp, ":enemy_strength"), ]],
   
   [anyone|plyr,"lord_defend_refugees_half_completed", [], "I will be more prepared next time, my lord. ", "lord_pretalk", []],
@@ -2887,9 +2887,9 @@ dialogs = [
       (else_try),
         (try_begin),
           (eq, "$g_talk_troop_faction", "fac_umbar"), #South Evil
-          (str_store_string, s5, "@{s12} burns. The pillaging was glorious indeed!"),
+          (str_store_string, s5, "@The surroundings of {s12} burn. The pillaging was glorious indeed!"),
         (else_try),
-          (str_store_string, s5, "@Esgaroth burns. The pillaging was glorious indeed!"),
+          (str_store_string, s5, "@The surroundings of Esgaroth burn. The pillaging was glorious indeed!"),
         (try_end),
       (try_end)],
     "{s5}", "lord_sea_battle_completed",[]],
