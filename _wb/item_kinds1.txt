@@ -318,7 +318,7 @@ itemsfile version 2
  itm_free_blackwhite_dress Lady_Dress Lady_Dress 1  gondor_dress_b 0  553713677 0 500 1116815228928 3 100 0 10 10 0 0 0 0 0 0 0 0
 0
 
- itm_white_tunic_a Simple_Tunic Simple_Tunic 14  gondor_tunic_b 0  generic_tunic_a 274877906944  tld_robe_generic_dress 137438953472  rohan_fine_outfit_dale_dress 2199023255552  gondor_fine_outfit_dress 4398046511104  rohan_dress 8388608  dale_coat 1048576  generic_leather_jerkin 65536  smith_leather_apron 32768  rohan_tunic 4096  dale_tunic 2048  generic_tunic_c 512  gondor_dress_a 64  gondor_dress_b 256  553713677 0 100 1116815228928 2 100 0 3 3 0 0 0 0 0 0 0 0
+ itm_white_tunic_a Civilian_Outfit Civilian_Outfit 14  gondor_tunic_b 0  generic_tunic_a 274877906944  tld_robe_generic_dress 137438953472  rohan_fine_outfit_dale_dress 2199023255552  gondor_fine_outfit_dress 4398046511104  rohan_dress 8388608  dale_coat 1048576  generic_leather_jerkin 65536  smith_leather_apron 32768  rohan_tunic 4096  dale_tunic 2048  generic_tunic_c 512  gondor_dress_a 64  gondor_dress_b 256  553648141 0 100 1116815228928 2 100 0 6 1 0 0 0 0 0 0 0 0
 0
 
  itm_free_white_tunic_b Simple_Tunic Simple_Tunic 1  gondor_tunic_b 0  553713677 0 100 1116815228928 2 100 0 3 3 0 0 0 0 0 0 0 0
@@ -2130,7 +2130,7 @@ itemsfile version 2
  itm_rhun_shield Rhun_Kite_Shield Rhun_Kite_Shield 1  rhun_shield 0  327687 4831838208 200 251658402 2.5 100 0 5 0 0 480 82 0 80 0 0 0
 0
 
- itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 3  dale_light_a 164  dale_light_a2 1  dale_light_a3 704643072  16842765 0 200 1116815228928 7 100 0 11 5 0 0 0 0 0 0 0 0
+ itm_dale_light_a Dale_Militia_Jacket Dale_Militia_Jacket 2  dale_light_b 1  dale_light_b2 704643072  16842765 0 200 1116815228928 7 100 0 13 2 0 0 0 0 0 0 0 0
 0
 
  itm_dale_light_b Northmen_Light_Lamellar Northmen_Light_Lamellar 3  northmen_light_a2 1  northmen_light_a3 33554432  northmen_light_a1 134217728  16842765 0 400 1116815228928 8 100 0 15 6 0 0 0 0 0 0 0 0
