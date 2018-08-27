@@ -1,15 +1,15 @@
 imod_plain|%sธรรมดา
-imod_cracked|%sหัก
-imod_rusty|%sขึ้นสนิม
+imod_cracked|%s แย่
+; imod_rusty|Crude %s
 imod_bent|%sเบี้ยว
 imod_chipped|%s บิ่น
 ; imod_battered|Battered %s
-; imod_poor|Poor %s
-; imod_crude|Crude %s
-; imod_old|Old %s
-; imod_cheap|Cheap %s
+imod_poor|%s แย่
+; imod_crude|Simple %s
+; imod_old|Ancient %s
+imod_cheap| %s ถูก
 ; imod_fine|Fine %s
-; imod_well_made|Well Made %s
+imod_well_made|%s คุณภาพดี
 imod_sharp|%sแหลม
 imod_balanced|%sสมดุล
 ; imod_tempered|Tempered %s
@@ -17,17 +17,17 @@ imod_balanced|%sสมดุล
 ; imod_exquisite|Exquisite %s
 ; imod_masterwork|Masterwork %s
 imod_heavy|%sหนัก
-; imod_strong|Strong %s
+imod_strong|%s แข็งแรง
 ; imod_powerful|Powerful %s
 ; imod_tattered|Tattered %s
-; imod_ragged|Ragged %s
+; imod_ragged|Rough %s
 ; imod_rough|Rough %s
 ; imod_sturdy|Sturdy %s
-; imod_thick|Thick %s
+; imod_thick|Robust %s
 ; imod_hardened|Hardened %s
 ; imod_reinforced|Reinforced %s
 ; imod_superb|Superb %s
-; imod_lordly|Lordly %s
+; imod_lordly|Masterwork %s
 ; imod_lame|Lame %s
 ; imod_swaybacked|Swaybacked %s
 ; imod_stubborn|Stubborn %s

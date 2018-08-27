@@ -2,8 +2,8 @@ menu_start_game_1|^^^^^^^^^^Za sta se boris?
 mno_start_good|Zora nove ere 
 mno_start_evil|Sumrak covecanstva
 mno_go_bback|Idi nazad
-menu_start_phase_2|^^^^^ Srednja Zemlja. Senka se nadzire na istoku, ^ i mracne stvari izlaze na povrsinu koje nisu vidjene dosta vremena. ^ Slobodni ljudo se spemaju za rat,rat koji nisu mogucni ni zamisliti. ^ Ljudi, Vilenjaci, Patuljci i Orkovi; svi ce ucestvvati. ^^ Kako? To cemo tek videti...
-; mno_go_forth|          Go forth upon your chosen path...
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+mno_go_forth|Idi napred ka tvom izabranom putu...
 menu_start_game_3|^^^^^^^^Izaberite vas scenario:
 mno_custom_battle_scenario_1|Btika, Gondor vs Harad
 mno_custom_battle_scenario_12|Izaberite frakcije za bitku
@@ -18,8 +18,15 @@ mno_troll_battle_scenario|Troll test bitke
 mno_warg_battle_scenario|Warg test bitke
 mno_build_your_own_scene|** Napravi tvoju scenu za TLD **
 menu_tutorial|^^TLD ime dosta stvari koje nisu poznate u nativu. Mozete ih procitati u PDF fajlu. Za tutorijal,molim koristite native modul.
+menu_tutorial|^^TLD ime dosta stvari koje nisu poznate u nativu. Mozete ih procitati u PDF fajlu. Za tutorijal,molim koristite native modul.
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|Nazad
-; mno_action_view_troop_trees|View troop trees.
+mno_action_view_troop_trees|Pogledaj podelu vojnika.
 mno_view_upkeep_costs|Pogledaj cenu.
 mno_view_character_report|Pogledaj raport.
 mno_view_party_size_report|Pogledaj velicinu vojske.
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|Otkazi.
 menu_custom_battle_end|^^^^^^Bitka je zavrsena. {s1} Tvoja strana je ubila {reg5} neprijatelja i izgubila {reg6} svojih trupa.^Ti si sam ubio {reg7} neprijatelja.
 mno_replay|Igraj ovu bitku ponovo.
 mno_continue_dot|Nastavi.
-menu_quick_battle_general_test|^^^Trenutna bitka: ^tim A: {reg10} {s10}^^protiv^^ tima B: {reg11} {s11}
-mno_tAA|+5 Tim A
-mno_tAB|-5 Tim B
-mno_tAC|Selektuj trupu A
-mno_tBA|+5 Tim B
-mno_tBB|-5 Tim B
-mno_tBC|Selektuj trupu B
-mno_B|Postavljeno 1
-mno_F|Pocni bitku!
 mno_dot_go_back|. Povuci se
-menu_quick_battle_troll|^^^^^^^^Izaberi svoj troll scenario:
-mno_troll_battle_scenario_10|Test: Troll protiv Pesadije
-mno_troll_battle_scenario_11|Test: Troll protiv Strelaca
-mno_troll_battle_scenario_12|Test: Troll protiv Konjice
-mno_troll_battle_scenario_13|Test: Troll protiv Konjice sa Kopljima
-mno_troll_battle_scenario_14|Test: Troll na Trola
-mno_troll_battle_scenario_15|Test: Licno kontrolisani Troll
-menu_quick_battle_wargs|^^^^^^^^Izaberi scenario test za Vargu:
-mno_warg_battle_scenario_10|Protiv Varge: 1 na 1
-mno_warg_battle_scenario_11|Protiv Varge: 2 na 3
-mno_warg_battle_scenario_12|Protiv Varge: puno na puno
-mno_warg_battle_scenario_10b|Igraj Vargu: 1 na 1
-mno_warg_battle_scenario_11b|Igraj Vargu 2 na 3
-mno_warg_battle_scenario_12b|Igraj Vargu: puno na puno
 menu_start_good|^^^^^^^^^^Izaberi tvoju rasu:
 mno_start_ma|Covek
 mno_start_el|Vilenjak
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^Musko ili Zensko?
 mno_start_male|Musko
 mno_start_female|Zensko
 mno_proc|Nastavi prema normalnom
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|Nastavi...
 menu_character_report|^^^^^Moral Grupe:re {reg8}^Limit Velicine Grupe: {reg7}^{s5}
 menu_camp|^^^^Nalazis se u {s1}.{s2}^^Sta zelis da radis?
@@ -127,8 +115,10 @@ mno_camp_wait_here|Ulogori se ovde za neko vreme.
 mno_camp_options|Promeni TLD opcije.
 mno_Cheat_enable|Dozvoli cheat/moding opcije.
 menu_game_options|^^^^^^^^Izaberi opciju da bi je aktivirao:
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|Stroga oprema: {s7}
 mno_game_options_formations|Borbene formacije i AI: {s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|Ne treba traziti gradske trgovce na mapi: {s7}
 mno_game_options_cutscenes|Video snimci: {s7}
 mno_game_options_injuries|Rane na saborcima: {s7}.
@@ -136,11 +126,16 @@ mno_game_options_death|Smrt lordova i saboraca: {s7}.
 mno_game_options_death2|Smrt igraca (to si TI!!): {s7}.
 mno_game_options_morale|Moral u bitci: {s7}
 mno_game_options_animal_ambushes|Napadi zivotinja: {s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|Namestanje igre...
 mno_game_options_back|Vrati se u logorski meni.
+mno_game_options_start_back|Nazad.
 menu_camp_tweaks|^^^^^^^^Izaberi opcije koje bi zeleo da podesis.
 mno_tweak_options_compat|Opcije kompatibilnosti...
 mno_tweak_options_strat|Opcije vezane za strategiju...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|Vrati se nazad.
 menu_camp_compat_tweaks|^^^^^^^^Pritisni na opciju da promenis ( za smanjlivanje pritisni shift):^(ovo je vezano za kompatibilnost,ne za hakove)
 mno_game_options_compat_party|Najveci moguci broj grupa: {s1}
@@ -149,9 +144,9 @@ menu_camp_strat_tweaks|^^^^^^^^Pritisni na opciju da udjes:^(ovo su hakovi!)
 mno_strat_tweaks_siege_reqs|Zahtevi za opsadu: {s7}
 mno_strat_tweaks_siege_relax_rate|Odmaranje vezano za opsadu: {reg1}
 mno_strat_tweaks_regen_rate|Regeneracija snage: {s7}
-mno_strat_tweaks_siege_regen_limit|Fakcije ne regenerisu snagu ispod: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
+mno_strat_tweaks_influence_gain_rate|Brzina dobijanja uticaja: {s7}
+mno_strat_tweaks_rank_gain_rate|Brzina dobijanja cina: {s7}
 mno_strat_tweaks_back|Vrati se nazad.
 menu_camp_action|^^^^^^^^^ Koji objekat?
 mno_camp_customize_defilement|Modifikuj slab oklop
@@ -188,9 +183,11 @@ mno_leave|Odlazi.
 menu_simple_encounter|YYYYY{s2}^Imaš {reg22} vojnika spremnih za bitku protiv njihovih {reg11}.^^Bitka se održava u {s3}{s4}.^^Tvoja naređenja?
 mno_encounter_attack|{reg21?Jurišati na njih:Pripremite se da se suočite sa njima}.
 mno_encounter_order_attack|Naredi svojim vojnicima da {reg21?napadnu:suoče sa njima} bez tebe.
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Idi za njima i rasturaj {s4}.
 mno_encounter_leave|Odustani.
 mno_encounter_retreat|Povuci se, ostavljajući neke od vojnika da pokriju tvoje povlačenje.
+mno_hide_close|Nastavi...
 menu_encounter_retreat_confirm|^^^^^Kao član družine sa najvećom osobinom taktike, ({reg2}), {reg3?smislio si:{s3} smislio je} plan koji će tebi i tvojim ljudima pomoći da izvučete žive glave, ali ćeš morati da ostaviš {reg4} vojnika iza sebe da spreče neprijatelja da krenu u poteru.
 mno_leave_behind|Nastavi. Žrtva ovih ljudi će spasiti ostale.
 mno_dont_leave_behind|Ne. Ne ostavljaj nikog iza sebe.
@@ -212,6 +209,7 @@ mno_inspect_troll|Pregledaj oborenog trola
 menu_pre_join|^^^^^Naišao si na bitku između {s2} i {s1}. Odlučuješ da...
 mno_pre_join_help_attackers|Pomogneš {s2}.
 mno_pre_join_help_defenders|Požuriš da pomogneš {s1}.
+mno_pre_join_help_refugees|Požuriš da pomogneš {s1}.
 mno_pre_join_leave|Ne mešaj se.
 menu_join_battle|^^^Pomažeš {s2} protiv {s1}.^ Imaš {reg22} vojnika spremnih za bitku protiv neprijateljevih {reg11}.^^Bitka se održava u {s3}{s4}.
 mno_join_attack|Juriš na neprijatelja.
@@ -286,6 +284,7 @@ mno_isengard_underground|Idi u podzemne pecine.
 mno_tirith_toplevel|Popenji se na vrh.
 mno_town_leave|Napusti...
 mno_town_leave_door|Napusti zonu
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|Zelis li da se iskrcas?
 mno_disembark_yes|Da.
 mno_disembark_no|Ne.
@@ -314,20 +313,53 @@ menu_notification_faction_defeated|^^^^^{s1} je pobedjen\\pobedjena^{s1} vise je
 menu_ruins|^^^^Prisao si {s1}. Nekada jako mesto je sada razruseno do temelja, iako se idalje obrisi bitke mogu videti.
 menu_legendary_place|^^^^Pratio si price, i nasao si {s1}. Sada mozes da istrazis ovo mesto i da vidis da li su price tacne.
 mno_explore|Istrazi lokaciju.
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
+menu_ring_hunter_lair|^^^^Pratio si trag Lovaca na Prsten kroz Mirkwood Sumu i stigao si do {s1}. Vidis ih kako se spremaju da odu sa kovcegom.
 mno_attack_lair|Napadnite ih sada 
 mno_leave_bandit_lair|Idi za sada.
-menu_starting_quest_good|^^^^^^Vidis mali karavan koji je napadnut od strane orkova. Sta ces da uradis?
-mno_help|Pomozi strancima!
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+; mno_gondor_reinforcement_event_close|Close
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|Napusti...
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+; mno_player_added_to_war_council_close|Close
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+; mno_player_added_to_siege_reports_close|Close
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; mno_player_added_to_allow_follow_close|Close
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+; mno_center_besieged_event_close|Close
+mno_intro_next|Nastavi...
 mno_start_defend_caravan|Odbranite karavan!
 mno_start_raid_caravan|Napadni karavan!
-; mno_start_ambush_orcs|Ambush the Orcs!
-; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
+mno_start_ambush_orcs|Napravi zasedu Orkovima!
+mno_start_kill_scouts|Zaustavi izvidjace kako ne bi prijavili tvoj dolazak!
 mno_go_your_way|Ostavi ih
 mno_defend_villagers|Odbranite seljake!
 mno_raid_villagers|Napdni selo!
-mno_go_away|Ostavi ih
-menu_custom_battle_choose_faction1|^^^^^^^^^^Izaberi svoju stranu i prednost:
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|Nastavi...
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|Pošalji poruku da ćeš mu se uskoro pridružiti.
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|Dobra frakcija
 mno_bad_equal|Zla frakcija
 mno_replay_prev|Ponovo odigraj prosla podesavanja

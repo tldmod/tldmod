@@ -2,8 +2,8 @@ menu_start_game_1|^^^^^^^^^^你 為 哪 一 方 而 戰 ？
 mno_start_good|新 紀 元 的 黎 明 
 mno_start_evil|人 類 的 黃 昏 
 mno_go_bback|後 退 
-menu_start_phase_2|^^^^^ 中 土 世 界。 黑 暗 的 陰 影 正 在 東 方 蔓 延 ·· ^潛 伏 了 近 一 個 紀 元 的 邪 惡 勢 力 重 現 世 間 。 ^中 土 的 自 由 之 人 類 是 否 可 以 再 一 次 戰 勝 黑 暗 。 ^人 類 、 精 靈 、 矮 人 和 獸 人 ， 各 種 勢 力 在 這 里 繼 續 角 逐 ^^現 在， 正 義 與 邪 惡 的 戰 爭 即 將 拉 開 帷 幕 ... 
-; mno_go_forth|          Go forth upon your chosen path...
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+mno_go_forth|往你選擇的道路前進
 menu_start_game_3|^^^^^^^^選 擇 你 的 戰 役 ： 
 mno_custom_battle_scenario_1|小 規 模 戰 役 ， 剛 鐸 vs哈 拉 德 
 mno_custom_battle_scenario_12|選 擇 戰 鬥 派 系 
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|測 試 巨 魔 戰 鬥
 mno_warg_battle_scenario|測 試 坐 狼 戰 鬥 
 mno_build_your_own_scene|** 建 造 你 自 己 的 TLD場 景 **
 menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 看 到。 遊 戲 教 程 同 原 版 一 樣。 
+menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 看 到。 遊 戲 教 程 同 原 版 一 樣。 
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|後 退 
 ; mno_action_view_troop_trees|View troop trees.
 mno_view_upkeep_costs|查 看 維 護 成 本 
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|取 消
 menu_custom_battle_end|^^^^^^戰 鬥 結 束 。 {s1}你 的 隊 伍 殺 死 了 {reg5}人 ， 敵 人 的 隊 伍 殺 死 了 {reg6}人 。 你 殺 死 了 {reg7}人 。 
 mno_replay|在 玩 一 次 戰 役 
 mno_continue_dot|繼 續 
-menu_quick_battle_general_test|^^^目 前 戰 鬥：  ^隊 伍 A： {reg10} {s10}^^對 戰 ^^ 隊 伍 B： {reg11} {s11}
-mno_tAA|隊 伍 A +5
-mno_tAB|隊 伍 A -5
-mno_tAC|選 擇 部 隊 A
-mno_tBA|隊 伍 B +5
-mno_tBB|隊 伍 B -5
-mno_tBC|選 擇 部 隊 B
-mno_B|預 設 1
-mno_F|開 始 戰 鬥 ！ 
 mno_dot_go_back|後 退 
-menu_quick_battle_troll|^^^^^^^^選 擇 你 的 巨 魔 場 景 ： 
-mno_troll_battle_scenario_10|測 試 ： 巨 魔 VS步 兵 
-mno_troll_battle_scenario_11|測 試 ： 巨 魔 VS射 手 
-mno_troll_battle_scenario_12|測 試 ： 巨 魔 VS騎 兵 
-mno_troll_battle_scenario_13|測 試 ： 巨 魔 VS槍 騎 兵 
-mno_troll_battle_scenario_14|測 試 ： 巨 魔 VS巨 魔 
-mno_troll_battle_scenario_15|消 遣 測 試 ： 玩 家 控 制 巨 魔 
-menu_quick_battle_wargs|^^^^^^^^選 擇 你 的 測 試 坐 狼 場 景 ： 
-mno_warg_battle_scenario_10|對 抗 坐 狼 ： 1 vs 1
-mno_warg_battle_scenario_11|對 抗 坐 狼 ： 2 vs 3
-mno_warg_battle_scenario_12|對 抗 坐 狼 ： 多  vs 多 
-mno_warg_battle_scenario_10b|控 制 坐 狼 ： 1 vs 1
-mno_warg_battle_scenario_11b|控 制 坐 狼 ： 2 vs 3
-mno_warg_battle_scenario_12b|控 制 坐 狼 ： 多  vs 多 
 menu_start_good|^^^^^^^^^^選 擇 你 的 種 族 ： 
 mno_start_ma|人 類 
 mno_start_el|精 靈 
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^你 的 性 別 ？
 mno_start_male|男 
 mno_start_female|女 
 mno_proc|正 常 進 行 
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|繼 續 ...
 menu_character_report|^^^^^隊 伍 士 氣 ： {reg8}^隊 伍 人 數 上 限 ： {reg7}^{s5}
 menu_camp|^^^^你目前在 {s1}。 {s2}^^你 想 要 做 什 麽 ？ 
@@ -127,8 +115,10 @@ mno_camp_wait_here|在 這 裡 待 些 時 間
 mno_camp_options|修 改 TLD 選 項
 mno_Cheat_enable|啟 用 作 弊 /模 組 選 項 
 menu_game_options|^^^^^^^^點 擊 切 換 選 項 ： 
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|限 制 玩 家 裝 備 ： {s7}
 mno_game_options_formations|戰 鬥 陣 型 與 AI： {s7} 
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|城 鎮 NPC可 從 選 單 訪 問 ： {s7}
 mno_game_options_cutscenes|過 場 動 畫 ： {s7} 
 mno_game_options_injuries|同 伴 會 受 傷 ： {s7}
@@ -136,11 +126,16 @@ mno_game_options_death|領 主 和 同 伴 會 死 亡 ： {s7}
 mno_game_options_death2|玩 家 會 死 亡 (就 是 你 ！ )： {s7}
 mno_game_options_morale|戰 鬥 士 氣 系 統 ： {s7}
 mno_game_options_animal_ambushes|動 物 伏 擊 ： {s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|遊 戲 調 整 ...
 mno_game_options_back|退 回 營 地 選 單 
+mno_game_options_start_back|後 退 
 menu_camp_tweaks|^^^^^^^^選 擇 一 個 你 想 調 整 的 選 項 
 mno_tweak_options_compat|相 容 性 調 整 ...
 mno_tweak_options_strat|戰 略 調 整 ...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|返 回 選 項 選 單 
 menu_camp_compat_tweaks|^^^^^^^^點 擊 要 更 改 的 選 項 (按 住 shift 鍵 可 減 少 )： ^(這 是 相 容 性 調 整 ， 不 是 作 弊 )
 mno_game_options_compat_party|最 大 部 隊 規 模 ： {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^點 擊 切 換 選 項 ： ^(警 告 ！ 這 屬
 mno_strat_tweaks_siege_reqs|攻 城 勢 力 力 量 的 需 求 ： {s7}
 mno_strat_tweaks_siege_relax_rate|攻 城 勢 力 需 求 鬆 弛 率 ： {reg1}
 mno_strat_tweaks_regen_rate|勢 力 再 生 率 ： {s7}
-mno_strat_tweaks_siege_regen_limit|勢 力 不 再 回 復 之 下 限 ： {reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|影 響 收 益 率 ： {s7}
 mno_strat_tweaks_rank_gain_rate|評 價 收 益 率 ： {s7}
 mno_strat_tweaks_back|返 回 調 整 選 單 
@@ -188,9 +183,11 @@ mno_leave|離 開
 menu_simple_encounter|^^^^^{s2}^你 有 {reg22}名 可 戰 鬥 的 隊 員 對 抗 {reg11}名 敵 軍 。 ^^戰 鬥 將 在 {s3}{s4}展 開 。 你 的 命 令 是 ？ 
 mno_encounter_attack|{reg21?突 擊 進 攻 :準 備 好 迎 敵 }。 
 mno_encounter_order_attack|你 坐 鎮 指 揮 命 令 你 的 部 下 {reg21?進 攻 :迎 擊 }。 
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|往 前 衝 突 破 {s4}。 
 mno_encounter_leave|斷 絕 
 mno_encounter_retreat|撤 退 ， 留 下 一 些 士 兵 掩 護 主 力 撤 退 。 
+mno_hide_close|繼 續 ...
 menu_encounter_retreat_confirm|^^^^^隊 員 中 最 高 戰 術 技 能 為 ({reg2}) 級 ，{reg3?你 擬 定 :{s3}擬 定 }了 一 個 計 劃 ， 讓 你 和 你 的 主 力 部 隊 能 逃 離 戰 鬥 。 但 是 你 必 須 犧 牲 {reg4}名 士 兵 來 進 行 掩 護 。 
 mno_leave_behind|實 行 計 劃， 犧 牲 那 些 人 來 拯 救 其 他  人 。  
 mno_dont_leave_behind|不 ， 我 們 不 會 拋 棄 任 何 人 。 
@@ -212,6 +209,7 @@ mno_inspect_troll|檢 查 被 擊 倒 的 巨 魔
 menu_pre_join|^^^^^你遇到 {s2}和 {s1}的 戰 鬥 。 你 決 定 ...
 mno_pre_join_help_attackers|前 往 幫 助 {s2}。 
 mno_pre_join_help_defenders|趕 往 援 助 {s1}。 
+mno_pre_join_help_refugees|趕 往 援 助 {s1}。 
 mno_pre_join_leave|不 卷 入 紛 爭 。 
 menu_join_battle|^^^你 決 定 幫 助 {s2}對 抗 {s1}，^ 你 將 有 {reg22}名 隊 員 參 加 戰 鬥 對 抗 {reg11}個 敵 人 。 ^^ 戰 鬥 將 在 {s3}{s4} 展 開 。
 mno_join_attack|攻 入 敵 陣 。
@@ -286,6 +284,7 @@ mno_isengard_underground|前 往 地 底 洞 穴
 mno_tirith_toplevel|爬 到 最 上 層 
 mno_town_leave|離 開 ...
 mno_town_leave_door|離 開 此 地 
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|你 想 上 岸 嗎 ？ 
 mno_disembark_yes|是 
 mno_disembark_no|否 
@@ -317,8 +316,19 @@ mno_explore|探 索 這 個 地 方
 ; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
 ; mno_attack_lair|Attack them now
 ; mno_leave_bandit_lair|Leave for now.
-menu_starting_quest_good|^^^^^^你 看 到 一 支 小 商 隊 正 被 一 隊 半 獸 人 攻 擊 。 你 決 定 怎 麽 做 ？ 
-mno_help|幫 助 陌 生 人 ！ 
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+; mno_gondor_reinforcement_event_close|Close
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|離 開 ...
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+; mno_player_added_to_war_council_close|Close
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+; mno_player_added_to_siege_reports_close|Close
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; mno_player_added_to_allow_follow_close|Close
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+; mno_center_besieged_event_close|Close
+mno_intro_next|繼 續 ...
 ; mno_start_defend_caravan|Defend the Caravan!
 ; mno_start_raid_caravan|Raid the Caravan!
 ; mno_start_ambush_orcs|Ambush the Orcs!
@@ -326,8 +336,30 @@ mno_help|幫 助 陌 生 人 ！
 mno_go_your_way|遠 離 他 們 
 ; mno_defend_villagers|Defend the Villagers!
 ; mno_raid_villagers|Raid the Village!
-mno_go_away|遠 離 他 們 
-menu_custom_battle_choose_faction1|^^^^^^^^^^選 擇 你 的 傾 向 和 優 點 ： 
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|繼 續 ...
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|回 報 說 你 馬 上 就 會 加 入 。 
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|良 善 陣 營 
 mno_bad_equal|邪 惡 陣 營 
 mno_replay_prev|重 回 前 個 設 定 

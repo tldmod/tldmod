@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^何のために戦いますか？
 mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
 mno_go_bback|戻る
-menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
 mno_go_forth|小道で敵を迎え撃て
 menu_start_game_3|^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1|小規模戦闘、 ゴンドール勢 vs ハラド
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|トロルのテスト
 mno_warg_battle_scenario|ワーグのテスト
 mno_build_your_own_scene|** 自分だけのTLDのシーンを作ろう **
 menu_tutorial|^^TLDには、M&Bにはない多くの機能が追加されています。 詳細はこのリリースの配布パッケージに含まれているPDFファイルに、 できるだけネタバレを避ける形で記載されています。 ゲームの基本的な操作方法を学ぶチュートリアルをプレイする場合は、 Nativeモジュールを利用してください。
+menu_tutorial|^^TLDには、M&Bにはない多くの機能が追加されています。 詳細はこのリリースの配布パッケージに含まれているPDFファイルに、 できるだけネタバレを避ける形で記載されています。 ゲームの基本的な操作方法を学ぶチュートリアルをプレイする場合は、 Nativeモジュールを利用してください。
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|戻る
 mno_action_view_troop_trees|軍事ツリーを参照する。
 mno_view_upkeep_costs|パーティの維持費を見る
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|キャンセル
 menu_custom_battle_end|^^^^^^戦闘は終わりました。 {s1} あなたの陣営は敵勢{reg5}名を倒し、味方の兵を{reg6}名失いました。^あなた個人では敵を{reg7}名を倒しました。
 mno_replay|この戦闘をもう一度プレイする
 mno_continue_dot|続ける
-menu_quick_battle_general_test|^^^現在の戦闘:^Aチーム:{reg10} {s10}^^vs^^ Bチーム:{reg11} {s11}
-mno_tAA|+5 Aチーム
-mno_tAB|-5 Aチーム
-mno_tAC|Aの兵を選ぶ
-mno_tBA|+5 Bチーム
-mno_tBB|-5 Bチーム
-mno_tBC|Bの兵を選ぶ
-mno_B|プリセット1
-mno_F|戦闘開始！
 mno_dot_go_back|戻る
-menu_quick_battle_troll|^^^^^^^^トロルのシナリオを選んでください:
-mno_troll_battle_scenario_10|テスト:トロル vs 歩兵
-mno_troll_battle_scenario_11|テスト:トロル vs 弓兵
-mno_troll_battle_scenario_12|テスト:トロル vs 騎兵
-mno_troll_battle_scenario_13|テスト:トロル vs 槍騎兵
-mno_troll_battle_scenario_14|テスト:トロル vs トロル
-mno_troll_battle_scenario_15|お遊びテスト:トロルをプレイヤーが操作
-menu_quick_battle_wargs|^^^^^^^^ワーグのテストシナリオを選んでください:
-mno_warg_battle_scenario_10|対ワーグ:1 vs 1
-mno_warg_battle_scenario_11|対ワーグ:2 vs 3
-mno_warg_battle_scenario_12|対ワーグ:大勢 vs 大勢
-mno_warg_battle_scenario_10b|ワーグをプレイ:1 vs 1
-mno_warg_battle_scenario_11b|ワーグをプレイ:2 vs 3
-mno_warg_battle_scenario_12b|ワーグをプレイ:大勢 vs 大勢
 menu_start_good|^^^^^^^^^^種族を選んでください:
 mno_start_ma|人間
 mno_start_el|エルフ
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^あなたの性別は？
 mno_start_male|男性
 mno_start_female|女性
 mno_proc|通常通り続ける
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|続ける・・・
 menu_character_report|^^^^^パーティの士気:{reg8}^パーティの人数上限:{reg7}^{s5}
 menu_camp|^^^^ここは{s1}です。{s2}^^何をしますか？
@@ -127,8 +115,10 @@ mno_camp_wait_here|ここで野営する
 mno_camp_options|TLDのオプション
 mno_Cheat_enable|チート/mod作成オプションを有効にする
 menu_game_options|^^^^^^^^項目をクリックするとトグルします
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|プレイヤーの装備制限:{s7}
 mno_game_options_formations|陣形とAI:{s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|拠点のNPCに常にメニュー画面からアクセス:{s7}
 mno_game_options_cutscenes|カットシーン:{s7}
 mno_game_options_injuries|コンパニオンの怪我:{s7}
@@ -136,11 +126,16 @@ mno_game_options_death|指揮官とコンパニオンが死亡する:{s7}
 mno_game_options_death2|プレイヤーが死亡する(あなたの事ですよ！):{s7}
 mno_game_options_morale|戦闘時の士気システム:{s7}
 mno_game_options_animal_ambushes|動物による襲撃:{s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|ゲームプレイの調整・・・
 mno_game_options_back|野営メニューに戻る
+mno_game_options_start_back|戻る
 menu_camp_tweaks|^^^^^^^^調整したい項目を選んでください。
 mno_tweak_options_compat|互換性の調整・・・
 mno_tweak_options_strat|戦略上の調整・・・
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|オプションメニューに戻る
 menu_camp_compat_tweaks|^^^^^^^^項目をクリックして調整してください^(SHIFTを押しながらクリックすると数値が減ります)^(これらは互換性に関する調整で、 チートではありません)
 mno_game_options_compat_party|パーティの最大数:{s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^項目をクリックするとトグルします^
 mno_strat_tweaks_siege_reqs|包囲攻城戦に必要な勢力値:{s7}
 mno_strat_tweaks_siege_relax_rate|包囲攻城戦の必要条件の緩和レート:{reg1}
 mno_strat_tweaks_regen_rate|勢力値の回復レート:{s7}
-mno_strat_tweaks_siege_regen_limit|回復不可とされるファクションの勢力値:{reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|影響力獲得レート:{s7}
 mno_strat_tweaks_rank_gain_rate|ランク獲得レート:{s7}
 mno_strat_tweaks_back|調整メニューに戻る
@@ -188,9 +183,11 @@ mno_leave|立ち去る。
 menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部隊は総勢{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
 mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
 mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}よう命令し、 自身は後方に待機する。
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|{s4}を打ちながら威圧する。
 mno_encounter_leave|撤退する。
 mno_encounter_retreat|何人かの兵をしんがりに残し、撤退する。
+mno_hide_close|続ける・・・
 menu_encounter_retreat_confirm|^^^^^パーティの中で最も高い戦略スキル({reg2})を持つ {reg3?あなた:{s3}}は、 敵を振り切って部隊を無事に撤退させる作戦を 考え出しましたが、 敵の追撃を食い止めるための兵を{reg4}名、 しんがりとして犠牲にしなければなりません。
 mno_leave_behind|この作戦でいこう。彼らの犠牲は無駄にしない。
 mno_dont_leave_behind|だめだ。部下を置いていくわけにはいかない。
@@ -212,6 +209,7 @@ mno_inspect_troll|倒れたトロルを調べる
 menu_pre_join|^^^^^{s2}と{s1}が交戦中です。^あなたは・・・
 mno_pre_join_help_attackers|{s2}に加勢をする。
 mno_pre_join_help_defenders|{s1}の味方にまわる。
+mno_pre_join_help_refugees|{s1}の味方にまわる。
 mno_pre_join_leave|巻き込まれないようにする。
 menu_join_battle|^^^{s1}と戦っている、 {s2}に加勢します。^敵勢{reg11}名に対して、 戦える状態の味方の兵は{reg22}名です。^^この戦いは{s3}{s4}で行われます。
 mno_join_attack|攻撃を開始する。
@@ -286,6 +284,7 @@ mno_isengard_underground|地下の洞窟へ行く。
 mno_tirith_toplevel|最上層に登る。
 mno_town_leave|立ち去る・・・
 mno_town_leave_door|立ち去る
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|上陸しますか？
 mno_disembark_yes|する
 mno_disembark_no|しない
@@ -317,8 +316,19 @@ mno_explore|探索を始める。
 menu_ring_hunter_lair|^^^^Mirkwood Forestから{s1}到着まで指輪ハンターの痕跡を追跡した。指輪ハンター達が宝箱を後にする準備を始めている。
 mno_attack_lair|今すぐ攻撃しろ。
 mno_leave_bandit_lair|今すぐ去れ。
-menu_starting_quest_good|^^^^^^あなたはオークの一団の襲撃を受けている、 小規模な隊商を見つけました。 どうしますか？
-mno_help|彼らを助けろ！
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+; mno_gondor_reinforcement_event_close|Close
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|立ち去る・・・
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+; mno_player_added_to_war_council_close|Close
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+; mno_player_added_to_siege_reports_close|Close
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; mno_player_added_to_allow_follow_close|Close
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+; mno_center_besieged_event_close|Close
+mno_intro_next|続ける・・・
 mno_start_defend_caravan|隊商を守れ！
 mno_start_raid_caravan|隊商を襲え！
 mno_start_ambush_orcs|オークの伏兵だ！
@@ -326,8 +336,30 @@ mno_start_kill_scouts|斥候に自分達の居場所を報告させるな！
 mno_go_your_way|放っておく
 mno_defend_villagers|村人達を守れ！
 mno_raid_villagers|村を襲え！
-mno_go_away|放っておく
-menu_custom_battle_choose_faction1|^^^^^^^^^^陣営とアドバンテージを選んでください
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|続ける・・・
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|すぐにはせ参じる、と伝える。
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|光のファクション
 mno_bad_equal|闇のファクション
 mno_replay_prev|前回の設定でもう一度プレイする

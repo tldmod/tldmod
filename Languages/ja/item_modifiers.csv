@@ -1,12 +1,12 @@
 imod_plain|簡素な%s
-imod_cracked|ひびの入った%s
-imod_rusty|さびた%s
+imod_cracked|粗悪な%s
+imod_rusty|粗末な%s
 imod_bent|曲がった%s
 imod_chipped|欠けた%s
 imod_battered|くたびれた%s
 imod_poor|粗悪な%s
-imod_crude|粗末な%s
-imod_old|古ぼけた%s
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|安っぽい%s
 imod_fine|上等な%s
 imod_well_made|造りの良い%s
@@ -20,14 +20,14 @@ imod_heavy|重量級の%s
 imod_strong|強化された%s
 imod_powerful|強力な%s
 imod_tattered|ぼろぼろの%s
-imod_ragged|くたびれた%s
+imod_ragged|古びた%s
 imod_rough|古びた%s
 imod_sturdy|頑丈な%s
-imod_thick|肉厚の%s
+; imod_thick|Robust %s
 imod_hardened|補強をした%s
 imod_reinforced|丈夫な%s
 imod_superb|見事な%s
-imod_lordly|最上級の%s
+imod_lordly|完璧な%s
 imod_lame|足をくじいた%s
 imod_swaybacked|体の曲がった%s
 imod_stubborn|頑強な%s

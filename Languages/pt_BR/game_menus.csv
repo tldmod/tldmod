@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Pelo que você está lutando?
 mno_start_good|O AMANHECER de uma nova Era
 mno_start_evil|O CREPÚSCULO do Homem
 mno_go_bback|Volte
-menu_start_phase_2|^^^^^ A Terra Média. Uma sombra está crescendo ao Leste, ^ e coisas obscuras têm saído de onde vinham se escondendo há muito tempo. ^ As pessoas livres se preparam para uma guerra do tipo que não se vê há uma era. ^ Homens, Elfos, Anões, e Orcs; todos farão a sua parte. ^^  Qual parte, no entanto, está para ser vista...
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
 mno_go_forth|Vá em frente com o seu plano escolhido...
 menu_start_game_3|^^^^^^^^Escolha o seu cenário:
 mno_custom_battle_scenario_1|Skirmish, facções de Gondor vs Harad
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|Batalha teste do Troll
 mno_warg_battle_scenario|Batalha teste dos wargs
 mno_build_your_own_scene|** Construa o seu próprio cenário para TLD **
 menu_tutorial|^^TLD possui um monte de conteúdo desconhecido pelo nativo M&B. Podem-se encontrar descrições,  com detalhes e sem spoilers, no PDF incluso nesta versão. Para um tutorial dos mecanismos básicos do jogo, por favor, utilize o modo Nativo.
+menu_tutorial|^^TLD possui um monte de conteúdo desconhecido pelo nativo M&B. Podem-se encontrar descrições,  com detalhes e sem spoilers, no PDF incluso nesta versão. Para um tutorial dos mecanismos básicos do jogo, por favor, utilize o modo Nativo.
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|Volte.
 mno_action_view_troop_trees|Ver lista de tropas.
 mno_view_upkeep_costs|Ver custos de manutenção.
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|Cancelar.
 menu_custom_battle_end|^^^^^^A batalha acabou. {s1} Seu lado matou {reg5} inimigos e perdeu {reg6} tropas ao longo da batalha.^Você matou {reg7} oponentes durante a luta.
 mno_replay|Jogar novamente esta batalha.
 mno_continue_dot|Continuar.
-menu_quick_battle_general_test|^^^Batalha atual: ^time A: {reg10} {s10}^^VS^^ time B: {reg11} {s11}
-mno_tAA|+5 Time A
-mno_tAB|-5 Time A
-mno_tAC|Selecionar Tropa A
-mno_tBA|+5 Time B
-mno_tBB|-5 Time B
-mno_tBC|Selecionar Tropa B
-mno_B|Ajuste 1
-mno_F|COMEÇAR A BATALHA!
 mno_dot_go_back|Voltar
-menu_quick_battle_troll|^^^^^^^^Escolha o seu cenário troll:
-mno_troll_battle_scenario_10|Teste: Troll VS Infantanria
-mno_troll_battle_scenario_11|Teste: Troll VS Arqueiros
-mno_troll_battle_scenario_12|Teste: Troll VS Cavalaria
-mno_troll_battle_scenario_13|Teste: Troll VS Lanceiros
-mno_troll_battle_scenario_14|Teste: Troll VS Troll
-mno_troll_battle_scenario_15|Teste-brincadeira: jogador controlado por Troll
-menu_quick_battle_wargs|^^^^^^^^Escolha o seu cenário Warg de teste:
-mno_warg_battle_scenario_10|Contra Wargs: 1 vs 1
-mno_warg_battle_scenario_11|Contra Wargs: 2 vs 3
-mno_warg_battle_scenario_12|Contra Wargs: Muitos vs Muitos
-mno_warg_battle_scenario_10b|Jogar Wargs: 1 vs 1
-mno_warg_battle_scenario_11b|Jogar Wargs: 2 vs 3
-mno_warg_battle_scenario_12b|Jogar Wargs: Muitos vs Muitos
 menu_start_good|^^^^^^^^^^Selecione a sua raça:
 mno_start_ma|HOMEM
 mno_start_el|ELFO
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^Seu sexo?
 mno_start_male|Masculino
 mno_start_female|Feminino
 mno_proc|Prosseguir normalmente
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|Continuar...
 menu_character_report|^^^^^Partido moral: {reg8}^Tamanho limite do partido: {reg7}^{s5}
 menu_camp|^^^^Você está em {s1}.{s2}^^O que você deseja fazer?
@@ -127,8 +115,10 @@ mno_camp_wait_here|Acampar algum por algum tempo.
 mno_camp_options|Trocar opções TLD.
 mno_Cheat_enable|Ativar opções de cheat/modding 
 menu_game_options|^^^^^^^^Clique em uma opção para alterná-la:
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|Equipamentos restritos do jogador: {s7}
 mno_game_options_formations|Informações de batalha e AI: {s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|As cidades de NPC's estão sempre acessíveis nos Menus: {s7}
 mno_game_options_cutscenes|Cutscenes: {s7}
 mno_game_options_injuries|Ferimentos dos companheiros: {s7}.
@@ -136,11 +126,16 @@ mno_game_options_death|Morte permanente para lordes e companheiros: {s7}.
 mno_game_options_death2|Morte permanente para jogador (este é VOCÊ!): {s7}.
 mno_game_options_morale|Sistema de batalha moral: {s7}.
 mno_game_options_animal_ambushes|Emboscadas de animais: {s7}.
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|Manhas de gameplay...
 mno_game_options_back|Voltar para menu de acampamento.
+mno_game_options_start_back|Voltar.
 menu_camp_tweaks|^^^^^^^^Escolha uma opção que você gostaria de ajustar.
 mno_tweak_options_compat|Manhas de compatibilidade...
 mno_tweak_options_strat|Manhas estratégicas...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|Voltar para o menu de opções.
 menu_camp_compat_tweaks|^^^^^^^^Clique em uma opção para mudar (segure shift para diminuir):^(esses são para compatibilidade e não são cheats)
 mno_game_options_compat_party|Número máximo de partidos: {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Clique em uma opção para mudar:^(aviso: estes s
 mno_strat_tweaks_siege_reqs|Requerimentos para força do cerco: {s7}
 mno_strat_tweaks_siege_relax_rate|Cerco for. req. taxa de relaxamento: {reg1}
 mno_strat_tweaks_regen_rate|Taxa de energia de regeneração: {s7}
-mno_strat_tweaks_siege_regen_limit|Abaixo, facções sem regeneração: {reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|Taxa de ganho de influência: {s7}
 mno_strat_tweaks_rank_gain_rate|Taxa de ganho de rank: {s7}
 mno_strat_tweaks_back|Voltar para o menu de trapaças. 
@@ -188,9 +183,11 @@ mno_leave|Vai embora.
 menu_simple_encounter|^^^^^{s2}^Você tem {reg22} tropas à disposição para batalhar contra seus {reg11}.^^A batalha será em {s3}{s4}.^^Suas ordens?
 mno_encounter_attack|{reg21?Carregá-los: Preparar para encará-los}.
 mno_encounter_order_attack|Ordena suas tropas para {reg21?attack:face them} sem você.
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Precipitar-se na direção deles, fraturando o {s4}.
 mno_encounter_leave|Separar.
 mno_encounter_retreat|Recuar, deixando alguns soldados para trás para encobrir sua retirada.
+mno_hide_close|Continuar...
 menu_encounter_retreat_confirm|^^^^^Como membro do grupo com as melhores habilidades táticas, ({reg2}), {reg3?you devise:{s3} devises} um plano que permitirá você e seus homens de escapar com vida, mas você terá que deixar {reg4} alguns soldados para trás, como forma de fazer o inimigo parar de persegui-los.
 mno_leave_behind|Vai em frente. O sacrifício desses homens irá salvar a vida do resto.
 mno_dont_leave_behind|Não. Nós não deixaremos ninguém para trás.
@@ -212,6 +209,7 @@ mno_inspect_troll|Inspecionar troll caído.
 menu_pre_join|^^^^^Você se depara com uma batalha entre {s2} e {s1}. Você decide...
 mno_pre_join_help_attackers|Ir ajudar {s2}
 mno_pre_join_help_defenders|Correr ao auxílio de(os) {s1}.
+mno_pre_join_help_refugees|Correr ao auxílio de(os) {s1}.
 mno_pre_join_leave|Não se envolver.
 menu_join_battle|^^^Você está ajudando {s2} contra {s1}.^ Você tem {reg22} tropas prontas para a batalha contra o inimigo {reg11}.^^A batalha está acontecendo em {s3}{s4}.
 mno_join_attack|Investir contra o inimigo.
@@ -286,6 +284,7 @@ mno_isengard_underground|Ir para as cavernas subterrâneas.
 mno_tirith_toplevel|Escalar para o andar superior.
 mno_town_leave|Ir embora...
 mno_town_leave_door|Abandonar área
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|Você deseja desembarcar?
 mno_disembark_yes|Sim.
 mno_disembark_no|Não.
@@ -317,8 +316,19 @@ mno_explore|Explorar o lugar.
 menu_ring_hunter_lair|^^^^Tu seguistes o trilho dos Caçadores de Anéis até à floresta de Mirkwood e chegastes a {s1}. Tu vês eles a prepararem-se para sair com um baú. 
 mno_attack_lair|Atacar agora
 mno_leave_bandit_lair|Sair por agora.
-menu_starting_quest_good|^^^^^^Você descobre uma pequena caravana sendo atacada por um bando de orcs. O que você irá fazer?
-mno_help|Ajudar os estranhos!
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+mno_gondor_reinforcement_event_close|Fechar
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|Sair... 
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+mno_player_added_to_war_council_close|Fechar
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+mno_player_added_to_siege_reports_close|Fechar
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+mno_player_added_to_allow_follow_close|Fechar
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+mno_center_besieged_event_close|Fechar
+mno_intro_next|Continuar...
 mno_start_defend_caravan|Defender a Caravana!
 mno_start_raid_caravan|Assaltem a Caravana!
 mno_start_ambush_orcs|Embosquem os Orcs!
@@ -326,8 +336,30 @@ mno_start_kill_scouts|Parem os espiões de informarem os rivais!
 mno_go_your_way|Deixá-los sozinhos.
 mno_defend_villagers|Defendam os aldeões!
 mno_raid_villagers|Roubem a Aldeia!
-mno_go_away|Deixá-los sozinhos.
-menu_custom_battle_choose_faction1|^^^^^^^^^^Escolha o seu lado e as vantagens:
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|Continuar...
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|Mande dizer que você irá acompanhá-lo em breve.
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|Facção do bem.
 mno_bad_equal|Facção do mal.
 mno_replay_prev|Repetir setup anterior.

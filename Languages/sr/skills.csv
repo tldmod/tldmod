@@ -4,10 +4,10 @@ skl_leadership|Vodjstvo
 skl_leadership_desc|Svaki poen dodaje 5 mesta za vojnike, povecava moral i smanjuje platu koju vase trupe hoce za 5%% (Vodjin skil)
 skl_prisoner_management|Menadzment Zarobljenika
 skl_prisoner_management_desc|Svai poen povecava maksimalnu kolicinu zarobljenika za %d (Vodjin skil)
-skl_persuasion|Nagovaranje
-skl_persuasion_desc|Ovaj skil vam pomaze tako sto ce ostali likovi u igri bolje prihvatati vase misljenje (Samo vas skil)
-skl_engineer|Pravljenje
-skl_engineer_desc|Svaki poen ovog skila smanjuje vreme za pravljenje i nadogradnju i dozvoljava bolju nadogradnju (Grupni skil)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Prva Pomoc
 skl_first_aid_desc|Heroji dobijaju 5%% helta natrag koje su izgubili tokom borbe po skilu levela. (Grupni skil)
 skl_surgery|Hirurgija

@@ -4,10 +4,10 @@ skl_leadership|統禦
 skl_leadership_desc|每點增加部隊命令上限5人 , 提高部隊士氣 , 減少部隊開銷和工資5%%.(領袖技能)
 skl_prisoner_management|俘虜管理
 skl_prisoner_management_desc|每點增加俘虜上限%d. (領袖技能)
-skl_persuasion|說服力
-skl_persuasion_desc|此技能幫助你 , 使你的觀點更容易讓人接受. (個人技能)
-skl_engineer|工程學
-skl_engineer_desc|此技能使你更有效地建造攻城器械和加快封地建設. (隊伍技能)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|急救
 skl_first_aid_desc|每點返還給英雄們 5%% 在上次戰鬥中損失的生命值. (隊伍技能)
 skl_surgery|手術

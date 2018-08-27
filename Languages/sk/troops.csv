@@ -1,897 +1,897 @@
-; trp_unarmed_troop|Unarmed Troop
-; trp_unarmed_troop_pl|Unarmed Troops
-; trp_tutorial_maceman|Maceman
-; trp_tutorial_maceman_pl|Macemen
-; trp_tutorial_archer|Archer
-; trp_tutorial_archer_pl|Archers
-; trp_tutorial_swordsman|Swordsman
-; trp_tutorial_swordsman_pl|Swordsmen
-; trp_novice_fighter|Novice Fighter
-; trp_novice_fighter_pl|Novice Fighters
-; trp_regular_fighter|Regular Fighter
-; trp_regular_fighter_pl|Regular Fighters
-; trp_veteran_fighter|Veteran Fighter
-; trp_veteran_fighter_pl|Veteran Fighters
-; trp_champion_fighter|Champion Fighter
-; trp_champion_fighter_pl|Champion Fighters
-; trp_arena_training_fighter_1|Novice Fighter
-; trp_arena_training_fighter_1_pl|Novice Fighters
-; trp_arena_training_fighter_2|Novice Fighter
-; trp_arena_training_fighter_2_pl|Novice Fighters
-; trp_arena_training_fighter_3|Regular Fighter
-; trp_arena_training_fighter_3_pl|Regular Fighters
-; trp_arena_training_fighter_4|Regular Fighter
-; trp_arena_training_fighter_4_pl|Regular Fighters
-; trp_arena_training_fighter_5|Regular Fighter
-; trp_arena_training_fighter_5_pl|Regular Fighters
-; trp_arena_training_fighter_6|Veteran Fighter
-; trp_arena_training_fighter_6_pl|Veteran Fighters
-; trp_arena_training_fighter_7|Veteran Fighter
-; trp_arena_training_fighter_7_pl|Veteran Fighters
-; trp_arena_training_fighter_8|Veteran Fighter
-; trp_arena_training_fighter_8_pl|Veteran Fighters
-; trp_arena_training_fighter_9|Champion Fighter
-; trp_arena_training_fighter_9_pl|Champion Fighters
-; trp_arena_training_fighter_10|Champion Fighter
-; trp_arena_training_fighter_10_pl|Champion Fighters
-; trp_cattle|Cattle
-; trp_cattle_pl|Cattle
-; trp_farmer|Farmer
-; trp_farmer_pl|Farmers
-; trp_townsman|Townsman
-; trp_townsman_pl|Townsmen
-; trp_watchman|Watchman
-; trp_watchman_pl|Watchmen
-; trp_woodmen_youth|Woodman
-; trp_woodmen_youth_pl|Woodmen
-; trp_woodmen_forester|Woodmen Forester
-; trp_woodmen_forester_pl|Woodmen Foresters
-; trp_woodmen_skilled_forester|Woodmen Skilled Forester
-; trp_woodmen_skilled_forester_pl|Woodmen Skilled Foresters
-; trp_woodmen_axemen|Woodmen Axeman
-; trp_woodmen_axemen_pl|Woodmen Axemen
-; trp_woodmen_master_axemen|Woodmen Master Axeman
-; trp_woodmen_master_axemen_pl|Woodmen Master Axemen
-; trp_woodmen_tracker|Woodmen Tracker
-; trp_woodmen_tracker_pl|Woodmen Trackers
-; trp_woodmen_scout|Woodmen Scout
-trp_woodmen_scout_pl|Lesníci
-; trp_woodmen_archer|Woodmen Archer
-; trp_woodmen_archer_pl|Woodmen Archers
-; trp_fell_huntsmen_of_mirkwood|Expert Huntsman of Mirkwood
-; trp_fell_huntsmen_of_mirkwood_pl|Expert Huntsmen of Mirkwood
-; trp_beorning_vale_man|Beorning Man
-; trp_beorning_vale_man_pl|Beorning Men
-; trp_beorning_warrior|Beorning Warrior
-; trp_beorning_warrior_pl|Beorning Warriors
-; trp_beorning_tolltacker|Beorning Tolltacker
-; trp_beorning_tolltacker_pl|Beorning Tolltackers
-; trp_beorning_sentinel|Beorning Sentinel
-; trp_beorning_sentinel_pl|Beorning Sentinels
-; trp_beorning_warden_of_the_ford|Beorning Warden of the Ford
-; trp_beorning_warden_of_the_ford_pl|Beorning Warden of the Ford
-; trp_beorning_carrock_lookout|Beorning Carrock Lookout
-; trp_beorning_carrock_lookout_pl|Beorning Carrock Lookouts
-; trp_beorning_carrock_fighter|Beorning Carrock Fighter
-; trp_beorning_carrock_fighter_pl|Beorning Carrock Fighters
-; trp_beorning_carrock_berserker|Beorning Carrock Berserker
-; trp_beorning_carrock_berserker_pl|Beorning Carrock Berserkers
-; trp_dale_militia|Dale Militiaman
-; trp_dale_militia_pl|Dale Militia
-; trp_dale_man_at_arms|Dale Man-at-Arms
-; trp_dale_man_at_arms_pl|Dale Men-at-Arms
-; trp_laketown_scout|Laketown Scout
-; trp_laketown_scout_pl|Laketown Scouts
-; trp_laketown_bowmen|Laketown Bowman
-; trp_laketown_bowmen_pl|Laketown Bowmen
-; trp_laketown_archer|Laketown Archer
-; trp_laketown_archer_pl|Laketown Archers
-; trp_barding_bowmen_of_esgaroth|Barding Bowman of Esgaroth
-; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen of Esgaroth
-; trp_dale_warrior|Dale Warrior
-; trp_dale_warrior_pl|Dale Warriors
-; trp_dale_veteran_warrior|Dale Veteran Warrior
-; trp_dale_veteran_warrior_pl|Dale Veteran Warriors
-; trp_dale_marchwarden|Marchwarden of Dale
-; trp_dale_marchwarden_pl|Marchwardens of Dale
-; trp_dale_pikeman|Dale Spearman
-; trp_dale_pikeman_pl|Dale Spearmen
-; trp_dale_billman|Dale Billman
-; trp_dale_billman_pl|Dale Billmen
-; trp_dale_bill_master|Dale Bill Master
-; trp_dale_bill_master_pl|Dale Bill Masters
-; trp_merchant_squire_or_dale|Merchant Squire of Dale
-; trp_merchant_squire_or_dale_pl|Merchant Squires of Dale
-; trp_merchant_guard_of_dale|Merchant Guard of Dale
-; trp_merchant_guard_of_dale_pl|Merchant Guards of Dale
-; trp_merchant_protector_of_dale|Merchant Protector of Dale
-; trp_merchant_protector_of_dale_pl|Merchant Protectors of Dale
-; trp_girions_guard_of_dale|Girion's Guard of Dale
-; trp_girions_guard_of_dale_pl|Girion's Guards of Dale
-; trp_rhun_tribesman|Rhun Tribesman
-; trp_rhun_tribesman_pl|Rhun Tribesmen
-; trp_rhun_horse_scout|Rhun Horse Scout
-; trp_rhun_horse_scout_pl|Rhun Horse Scouts
-; trp_rhun_horse_archer|Rhun Horse Archer
-; trp_rhun_horse_archer_pl|Rhun Horse Archers
-; trp_rhun_veteran_horse_archer|Rhun Veteran Horse Archer
-; trp_rhun_veteran_horse_archer_pl|Rhun Veteran Horse Archers
-; trp_fell_balchoth_horse_archer|Balchoth Horse Archer
-; trp_fell_balchoth_horse_archer_pl|Balchoth Horse Archers
-; trp_rhun_swift_horseman|Rhun Swift Horseman
-; trp_rhun_swift_horseman_pl|Rhun Swift Horsemen
-; trp_rhun_veteran_swift_horseman|Rhun Veteran Swift Horseman
-; trp_rhun_veteran_swift_horseman_pl|Rhun Veteran Swift Horsemen
-; trp_falcon_horseman|Falcon Horseman
-; trp_falcon_horseman_pl|Falcon Horsemen
-; trp_rhun_tribal_warrior|Rhun Tribal Warrior
-; trp_rhun_tribal_warrior_pl|Rhun Tribal Warriors
-; trp_rhun_tribal_infantry|Rhun Tribal Infantryman
-; trp_rhun_tribal_infantry_pl|Rhun Tribal Infantry
-; trp_rhun_vet_infantry|Rhun Veteran Infantryman
-; trp_rhun_vet_infantry_pl|Rhun Veteran Infantry
-; trp_infantry_of_the_ox|Infantryman of the Ox
-; trp_infantry_of_the_ox_pl|Infantry of the Ox
-; trp_rhun_light_horseman|Rhun Light Horseman
-; trp_rhun_light_horseman_pl|Rhun Light Horsemen
-; trp_rhun_light_cavalry|Rhun Light Cavalryman
-; trp_rhun_light_cavalry_pl|Rhun Light Cavalry
-; trp_rhun_noble_cavalry|Rhun Noble Cavalryman
-; trp_rhun_noble_cavalry_pl|Rhun Noble Cavalry
-; trp_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalry
-; trp_rhun_heavy_noble_cavalry_pl|Rhun Heavy Noble Cavalry
-; trp_dorwinion_noble_of_rhun|Dorwinion Noble of Rhun
-; trp_dorwinion_noble_of_rhun_pl|Dorwinion Nobles of Rhun
-; trp_dwarven_apprentice|Apprentice-dwarf
-; trp_dwarven_apprentice_pl|Apprentice-dwarves
-; trp_dwarven_warrior|Warrior-dwarf
-; trp_dwarven_warrior_pl|Warrior-dwarves
-; trp_dwarven_hardened_warrior|Hardened Warrior-dwarf
-; trp_dwarven_hardened_warrior_pl|Hardened Warrior-dwarves
-; trp_dwarven_spearman|Spear-dwarf
-; trp_dwarven_spearman_pl|Spear-dwarves
-; trp_dwarven_pikeman|Pike-dwarf
-; trp_dwarven_pikeman_pl|Pike-dwarves
-; trp_dwarven_halberdier|Longpike Dwarf
-; trp_dwarven_halberdier_pl|Longpike Dwarves
-; trp_dwarven_axeman|Axedwarf
-; trp_dwarven_axeman_pl|Axedwarves
-; trp_dwarven_expert_axeman|Expert Axedwarf
-; trp_dwarven_expert_axeman_pl|Expert Axedwarves
-; trp_longbeard_axeman|Longbeard Axedwarf
-; trp_longbeard_axeman_pl|Longbeard Axedwarves
-; trp_dwarven_lookout|Lookout-dwarf
-; trp_dwarven_lookout_pl|Lookout-dwarves
-; trp_dwarven_scout|Scout-dwarf
-; trp_dwarven_scout_pl|Scout-dwarves
-; trp_dwarven_bowman|Bow-dwarf
-; trp_dwarven_bowman_pl|Bow-dwarves
-; trp_dwarven_archer|Archer-dwarf
-; trp_dwarven_archer_pl|Archer-dwarves
-; trp_marksman_of_ravenhill|Marks-dwarf of Ravenhill
-; trp_marksman_of_ravenhill_pl|Marks-dwarves of Ravenhill
-; trp_iron_hills_miner|Iron Hills Miner
-; trp_iron_hills_miner_pl|Iron Hills Miners
-; trp_iron_hills_infantry|Iron Hills Infantry
-; trp_iron_hills_infantry_pl|Iron Hills Infantry
-; trp_iron_hills_battle_infantry|Iron Hills Battle-dwarf
-; trp_iron_hills_battle_infantry_pl|Iron Hills Battle-dwarves
-; trp_grors_guard|Gror's Guard
-; trp_grors_guard_pl|Gror's Guards
-; trp_gondor_commoner|Gondor Levy
-; trp_gondor_commoner_pl|Gondor Levies
-; trp_gondor_militiamen|Gondor Watchman
-; trp_gondor_militiamen_pl|Gondor Watchmen
-; trp_footmen_of_gondor|Footman of Gondor
-; trp_footmen_of_gondor_pl|Footmen of Gondor
-; trp_gondor_spearmen|Spearman of Gondor
-; trp_gondor_spearmen_pl|Spearmen of Gondor
-; trp_gondor_veteran_spearmen|Veteran Spearman of Gondor
-; trp_gondor_veteran_spearmen_pl|Veteran Spearmen of Gondor
-; trp_guard_of_the_fountain_court|Guard of the Fountain Court
-; trp_guard_of_the_fountain_court_pl|Guards of the Fountain Court
-; trp_gondor_swordsmen|Swordsman of Gondor
-; trp_gondor_swordsmen_pl|Swordsmen of Gondor
-; trp_gondor_veteran_swordsmen|Veteran Swordsman of Gondor
-; trp_gondor_veteran_swordsmen_pl|Veteran Swordsmen of Gondor
-; trp_swordsmen_of_the_tower_guard|Swordsman of the Tower Guard
-; trp_swordsmen_of_the_tower_guard_pl|Swordsmen of the Tower Guard
-; trp_gondor_noblemen|Gondor Nobleman
-; trp_gondor_noblemen_pl|Gondor Noblemen
-; trp_squire_of_gondor|Squire of Gondor
-; trp_squire_of_gondor_pl|Squires of Gondor
-; trp_veteran_squire_of_gondor|Veteran Squire of Gondor
-; trp_veteran_squire_of_gondor_pl|Veteran Squires of Gondor
-; trp_knight_of_gondor|Knight of Gondor
-; trp_knight_of_gondor_pl|Knights of Gondor
-; trp_veteran_knight_of_gondor|Veteran Knight of Gondor
-; trp_veteran_knight_of_gondor_pl|Veteran Knights of Gondor
-; trp_knight_of_the_citadel|Knight of the Citadel
-; trp_knight_of_the_citadel_pl|Knights of the Citadel
-; trp_bowmen_of_gondor|Bowman of Gondor
-; trp_bowmen_of_gondor_pl|Bowmen of Gondor
-; trp_archer_of_gondor|Archer of Gondor
-; trp_archer_of_gondor_pl|Archers of Gondor
-; trp_veteran_archer_of_gondor|Veteran Archer of Gondor
-; trp_veteran_archer_of_gondor_pl|Veteran Archers of Gondor
-; trp_archer_of_the_tower_guard|Archer of the Tower Guard
-; trp_archer_of_the_tower_guard_pl|Archers of the Tower Guard
-; trp_steward_guard|Steward's Guard
-; trp_steward_guard_pl|Steward's Guards
-; trp_ranger_of_ithilien|Ranger of Ithilien
-; trp_ranger_of_ithilien_pl|Rangers of Ithilien
-; trp_veteran_ranger_of_ithilien|Veteran Ranger of Ithilien
-; trp_veteran_ranger_of_ithilien_pl|Veteran Rangers of Ithilien
-; trp_master_ranger_of_ithilien|Master Ranger of Ithilien
-; trp_master_ranger_of_ithilien_pl|Master Rangers of Ithilien
-; trp_ithilien_leader|Captain of Ithilien Rangers
-; trp_ithilien_leader_pl|Captains of Ithilien Rangers
-; trp_woodsman_of_lossarnach|Woodsman of Lossarnach
-; trp_woodsman_of_lossarnach_pl|Woodsmen of Lossarnach
-; trp_axeman_of_lossarnach|Axeman of Lossarnach
-; trp_axeman_of_lossarnach_pl|Axemen of Lossarnach
-; trp_vet_axeman_of_lossarnach|Lossarnach Veteran Axeman
-; trp_vet_axeman_of_lossarnach_pl|Lossarnach Veteran Axemen
-; trp_heavy_lossarnach_axeman|Heavy Lossarnach Axeman
-; trp_heavy_lossarnach_axeman_pl|Heavy Lossarnach Axemen
-; trp_axemaster_of_lossarnach|Axemaster of Lossarnach
-; trp_axemaster_of_lossarnach_pl|Axemasters of Lossarnach
-; trp_lossarnach_leader|Captain of Lossarnach
-; trp_lossarnach_leader_pl|Captains of Lossarnach
-; trp_pelargir_watchman|Pelargir Watchman
-; trp_pelargir_watchman_pl|Pelargir Watchmen
+trp_unarmed_troop|Neozbrojená jednotka
+trp_unarmed_troop_pl|Neozbrojené jednotky
+trp_tutorial_maceman|Vojak s palcátom
+trp_tutorial_maceman_pl|Vojaci s palcátom
+trp_tutorial_archer|Lukostrelec
+trp_tutorial_archer_pl|Lukostrelci
+trp_tutorial_swordsman|Šermiar
+trp_tutorial_swordsman_pl|Šermiari
+trp_novice_fighter|Bojovník začiatočník
+trp_novice_fighter_pl|Bojovníci začiatočníci
+trp_regular_fighter|Rádový vojak
+trp_regular_fighter_pl|Rádoví vojaci
+trp_veteran_fighter|Bojový veterán
+trp_veteran_fighter_pl|Bojoví veteráni
+trp_champion_fighter|Bojový šampión
+trp_champion_fighter_pl|Bojoví šampioni
+trp_arena_training_fighter_1|Bojovník začiatočník
+trp_arena_training_fighter_1_pl|Bojovníci začiatočníci
+trp_arena_training_fighter_2|Bojovník začiatočník
+trp_arena_training_fighter_2_pl|Bojovníci začiatočníci
+trp_arena_training_fighter_3|Rádový vojak
+trp_arena_training_fighter_3_pl|Rádoví vojaci
+trp_arena_training_fighter_4|Rádový Vojak
+trp_arena_training_fighter_4_pl|Rádoví vojaci
+trp_arena_training_fighter_5|Rádový vojak
+trp_arena_training_fighter_5_pl|Rádoví vojaci
+trp_arena_training_fighter_6|Bojový veterán
+trp_arena_training_fighter_6_pl|Bojoví veteráni
+trp_arena_training_fighter_7|Bojový veterán
+trp_arena_training_fighter_7_pl|Bojoví veteráni
+trp_arena_training_fighter_8|Bojový veterán
+trp_arena_training_fighter_8_pl|Bojoví veteráni
+trp_arena_training_fighter_9|Bojový šampión
+trp_arena_training_fighter_9_pl|Bojoví šampioni
+trp_arena_training_fighter_10|Bojový šampión
+trp_arena_training_fighter_10_pl|Bojoví šampioni
+trp_cattle|Dobytok
+trp_cattle_pl|Dobytok
+trp_farmer|Sedliak
+trp_farmer_pl|Sedliaci
+trp_townsman|Mešťan
+trp_townsman_pl|Mešťania
+trp_watchman|Mešťanka
+trp_watchman_pl|Mešťanky
+trp_woodmen_youth|Lesník
+trp_woodmen_youth_pl|Lesníci
+trp_woodmen_forester|Lesník drevorubač
+trp_woodmen_forester_pl|Lesníci drevorubači
+trp_woodmen_skilled_forester|Skúsený lesník drevorubač
+trp_woodmen_skilled_forester_pl|Skúsení lesníci drevorubači
+trp_woodmen_axemen|Lesný sekerník
+trp_woodmen_axemen_pl|Lesní sekerníci
+trp_woodmen_master_axemen|Nočný strážca z Temnohvozdu
+trp_woodmen_master_axemen_pl|Nočná stráž z Temnohvozdu
+trp_woodmen_tracker|Lesník stopár
+trp_woodmen_tracker_pl|Lesníci stopári
+trp_woodmen_scout|Lesný prieskumník
+trp_woodmen_scout_pl|Lesní prieskumníci
+trp_woodmen_archer|Lesník lukostrelec
+trp_woodmen_archer_pl|Lesníci lukostrelci
+trp_fell_huntsmen_of_mirkwood|Nočný stopár z Temnohvozdu
+trp_fell_huntsmen_of_mirkwood_pl|Noční stropári z Temnohvozdu
+trp_beorning_vale_man|Grizlovec
+trp_beorning_vale_man_pl|Grizlovci
+trp_beorning_warrior|Grizlovecký bojovník
+trp_beorning_warrior_pl|Grizloveckí bojovníci
+trp_beorning_tolltacker|Grizlovský mýtnik
+trp_beorning_tolltacker_pl|Grizlovskí mýtnici
+trp_beorning_sentinel|Grizlovský strážnik
+trp_beorning_sentinel_pl|Grizlovskí strážnici
+trp_beorning_warden_of_the_ford|Grizlovský ochránca Brodu
+trp_beorning_warden_of_the_ford_pl|Grizlovskí ochráncovia Brodu
+trp_beorning_carrock_lookout|Grizlovecký strážnik na Carrocku
+trp_beorning_carrock_lookout_pl|Grizloveckí strážnici na Carrocku
+trp_beorning_carrock_fighter|Grizlovecký bojovník Carrocku
+trp_beorning_carrock_fighter_pl|Grizloveckí bojovníci Carrocku
+trp_beorning_carrock_berserker|Grizlovecký berserk z Carrocku
+trp_beorning_carrock_berserker_pl|Grizloveckí berserkovia z Carrocku
+trp_dale_militia|Dálsky domobranca
+trp_dale_militia_pl|Dálska domobrana
+trp_dale_man_at_arms|Dálsky ozbrojenec
+trp_dale_man_at_arms_pl|Dálski ozbrojenci
+trp_laketown_scout|Dálsky prieskumník
+trp_laketown_scout_pl|Dálski prieskumníci
+trp_laketown_bowmen|Dalský lovec
+trp_laketown_bowmen_pl|Dalskí lovci
+trp_laketown_archer|Dalský lukostrelec
+trp_laketown_archer_pl|Dalskí lukostrelci
+trp_barding_bowmen_of_esgaroth|Bardov lučišník
+trp_barding_bowmen_of_esgaroth_pl|Bartovi lučišníci
+trp_dale_warrior|Dálsky šermiar
+trp_dale_warrior_pl|Dálski šermiari
+trp_dale_veteran_warrior|Dálsky strážmajster
+trp_dale_veteran_warrior_pl|Dalskí strážmajstri
+trp_dale_marchwarden|Dálsky veliteľ
+trp_dale_marchwarden_pl|Dálski velitelia
+trp_dale_pikeman|Dálsky kopijník
+trp_dale_pikeman_pl|Dálski kopijníci
+trp_dale_billman|Dálsky gizarmník
+trp_dale_billman_pl|Dálski gizarmníci
+trp_dale_bill_master|Dálsky majster gizarmník
+trp_dale_bill_master_pl|Dálski majstri gizarmníci
+trp_merchant_squire_or_dale|Severský jazdec
+trp_merchant_squire_or_dale_pl|Severskí jazdci
+trp_merchant_guard_of_dale|Severský kavalerista
+trp_merchant_guard_of_dale_pl|Severskí kavaleristi
+trp_merchant_protector_of_dale|Rhovanionský jazdec
+trp_merchant_protector_of_dale_pl|Rhovanionskí jazdci
+trp_girions_guard_of_dale|Rhovanionský družiník
+trp_girions_guard_of_dale_pl|Rhovanionskí družiníci
+trp_rhun_tribesman|Rhunský domorodec
+trp_rhun_tribesman_pl|Rhunskí domorodci
+trp_rhun_horse_scout|Rhunský jazdecký prieskumník
+trp_rhun_horse_scout_pl|Rhunskí jazdeckí prieskumníci
+trp_rhun_horse_archer|Rhunský lukostrelec na koni
+trp_rhun_horse_archer_pl|Rhunskí lukostrelci na koni
+trp_rhun_veteran_horse_archer|Rhunský skúsený lukostrelec na koni
+trp_rhun_veteran_horse_archer_pl|Rhunskí skúsení lukostrelci na koni
+trp_fell_balchoth_horse_archer|Balchothský lukostrelec na koni
+trp_fell_balchoth_horse_archer_pl|Balchothskí lukostrelci na koni
+trp_rhun_swift_horseman|Rhunský rýchly jazdec na koni
+trp_rhun_swift_horseman_pl|Rhunskí rychlí jazdci na koni
+trp_rhun_veteran_swift_horseman|Rhunský skúsený rýchly jazdec
+trp_rhun_veteran_swift_horseman_pl|Rhunskí skúsení rychlí jazdci
+trp_falcon_horseman|Sokolí jazdec na koni
+trp_falcon_horseman_pl|Sokolí jazdci na koni
+trp_rhun_tribal_warrior|Rhunský domorodý bojovník
+trp_rhun_tribal_warrior_pl|Rhunskí domorodí bojovníci
+trp_rhun_tribal_infantry|Rhunský domorodý pešiak
+trp_rhun_tribal_infantry_pl|Rhunská domorodá pechota
+trp_rhun_vet_infantry|Rhunský skúsený pešiak
+trp_rhun_vet_infantry_pl|Rhunská skúsená pechota
+trp_infantry_of_the_ox|Pešiak z Oxu
+trp_infantry_of_the_ox_pl|Pechota z Oxu
+trp_rhun_light_horseman|Rhunský ľahký jazdec
+trp_rhun_light_horseman_pl|Rhunskí ľahkí jazdci
+trp_rhun_light_cavalry|Rhunský člen ľahkej kavalérie
+trp_rhun_light_cavalry_pl|Rhunská ľahká kavaléria
+trp_rhun_noble_cavalry|Rhunský urodzený kavalerista
+trp_rhun_noble_cavalry_pl|Rhunskí urodzení kavaleristi
+trp_rhun_heavy_noble_cavalry|Rhunský urodzený príslušník ťažkej jazdy
+trp_rhun_heavy_noble_cavalry_pl|Rhunská ťažká jazda šľachticov
+trp_dorwinion_noble_of_rhun|Dorwinionský šľachtic z Rhunu
+trp_dorwinion_noble_of_rhun_pl|Dorwinionská šľachta z Rhunu
+trp_dwarven_apprentice|Trpasličí branec
+trp_dwarven_apprentice_pl|Trpasličí branci
+trp_dwarven_warrior|Trpasličí bojovník
+trp_dwarven_warrior_pl|Trpasličí bojovníci
+trp_dwarven_hardened_warrior|Trpasličí vycvičený vojak
+trp_dwarven_hardened_warrior_pl|Trpasličí vycvičení vojaci
+trp_dwarven_spearman|Trpasličí kopijník
+trp_dwarven_spearman_pl|Trpasličí kopijníci
+trp_dwarven_pikeman|Trpasličí pikenýr
+trp_dwarven_pikeman_pl|Trpasličí pikenýri
+trp_dwarven_halberdier|Trpaslík s dlhou pikou
+trp_dwarven_halberdier_pl|Trpaslíci s dlhými pikami
+trp_dwarven_axeman|Trpasličí sekerník
+trp_dwarven_axeman_pl|Trpasličí sekerníci
+trp_dwarven_expert_axeman|Trpasličí profesionálny sekerník
+trp_dwarven_expert_axeman_pl|Trpasličí profesionálni sekerníci
+trp_longbeard_axeman|Dlhobradý trpasličí sekerník
+trp_longbeard_axeman_pl|Dlhobradí trpasličí sekerníci
+trp_dwarven_lookout|Trpasličí strážnik
+trp_dwarven_lookout_pl|Trpasličia stráž
+trp_dwarven_scout|Trpasličí prieskumník
+trp_dwarven_scout_pl|Trpasličí prieskumníci
+trp_dwarven_bowman|Trpasličí strelec
+trp_dwarven_bowman_pl|Trpasličí strelci
+trp_dwarven_longaxeman|Trpasličí helebardník
+trp_dwarven_longaxeman_pl|Trpasličí helebardníci
+trp_iron_hills_warrior|Bojovník zo Železných hôr
+trp_iron_hills_warrior_pl|Bojovníci zo Železných hôr
+trp_iron_hills_miner|Baník zo Železných hôr
+trp_iron_hills_miner_pl|Baníci zo Železných hôr
+trp_iron_hills_infantry|Pešiak zo Železných hôr
+trp_iron_hills_infantry_pl|Pešiaci zo Železných hôr
+trp_iron_hills_battle_infantry|Bojovník zo Železných hôr
+trp_iron_hills_battle_infantry_pl|Bojovníci zo Železných hôr
+trp_grors_guard|Grórov gardista
+trp_grors_guard_pl|Grórova garda
+trp_gondor_commoner|Gondorský branec
+trp_gondor_commoner_pl|Gondorskí branci
+trp_gondor_militiamen|Gondorský strážnik
+trp_gondor_militiamen_pl|Gondorská stráž
+trp_footmen_of_gondor|Gondorský pešiak
+trp_footmen_of_gondor_pl|Gondorskí pešiaci
+trp_gondor_spearmen|Gondorský kopijník
+trp_gondor_spearmen_pl|Gondorskí kopijníci
+trp_gondor_veteran_spearmen|Skúsený gondorský kopijník
+trp_gondor_veteran_spearmen_pl|Skúsení gondorskí kopijníci
+trp_guard_of_the_fountain_court|Ochranca Fontánového nádvoria
+trp_guard_of_the_fountain_court_pl|Ochránci Fontánového nádvoria
+trp_gondor_swordsmen|Gondorský šermiar
+trp_gondor_swordsmen_pl|Gondorskí šermiari
+trp_gondor_veteran_swordsmen|Skúsený gondorský šermiar
+trp_gondor_veteran_swordsmen_pl|Skúsení gondorskí šermiari
+trp_swordsmen_of_the_tower_guard|Šermiar stráže Citadely
+trp_swordsmen_of_the_tower_guard_pl|Šermiari stráže Citadely
+trp_gondor_noblemen|Gondorský šľachtic
+trp_gondor_noblemen_pl|Gondorskí šľachtici
+trp_squire_of_gondor|Gondorský panoš
+trp_squire_of_gondor_pl|Gondorskí panoši
+trp_veteran_squire_of_gondor|Skúsený gondorský panoš
+trp_veteran_squire_of_gondor_pl|Skúsení gondorskí panoši
+trp_knight_of_gondor|Rytier Gondoru
+trp_knight_of_gondor_pl|Rytieri Gondoru
+trp_veteran_knight_of_gondor|Skúsený rytier Gondoru
+trp_veteran_knight_of_gondor_pl|Skúsení rytieri Gondoru
+trp_knight_of_the_citadel|Rytier Citadely
+trp_knight_of_the_citadel_pl|Rytieri Citadely
+trp_bowmen_of_gondor|Gondorský strelec
+trp_bowmen_of_gondor_pl|Gondorskí strelci
+trp_archer_of_gondor|Gondorský lukostrelec
+trp_archer_of_gondor_pl|Gondorskí lukostrelci
+trp_veteran_archer_of_gondor|Skúsený gondorský lukostrelec
+trp_veteran_archer_of_gondor_pl|Skúsení gondorskí lukostrelci
+trp_archer_of_the_tower_guard|Lukostrelec Citadely
+trp_archer_of_the_tower_guard_pl|Lukostrelci Citadely
+trp_steward_guard|Správcov gardista
+trp_steward_guard_pl|Správcova garda
+trp_ranger_of_ithilien|Hraničiar Ithilienu
+trp_ranger_of_ithilien_pl|Hraničiari Ithilienu
+trp_veteran_ranger_of_ithilien|Skúsený hraničiar Ithilienu
+trp_veteran_ranger_of_ithilien_pl|Skúsení hraničiari Ithilienu
+trp_master_ranger_of_ithilien|Majster hraničiar z Ithilienu
+trp_master_ranger_of_ithilien_pl|Majstri hraničiari z Ithilienu
+trp_ithilien_leader|Kapitán Ithilienských hraničiarov
+trp_ithilien_leader_pl|Kapitáni Ithilienských hraničiarov
+trp_woodsman_of_lossarnach|Lesník z Lossarnachu
+trp_woodsman_of_lossarnach_pl|Lesníci z Lossarnachu
+trp_axeman_of_lossarnach|Sekerník z Lossarnachu
+trp_axeman_of_lossarnach_pl|Sekerníci z Lossarnachu
+trp_vet_axeman_of_lossarnach|Skúsený lesník z Lossarnachu
+trp_vet_axeman_of_lossarnach_pl|Skúsení lesníci z Lossarnachu
+trp_heavy_lossarnach_axeman|Mocný sekerník z Lossarnachu
+trp_heavy_lossarnach_axeman_pl|Mocní sekerníci z Lossarnachu
+trp_axemaster_of_lossarnach|Majster sekerník z Lossarnachu
+trp_axemaster_of_lossarnach_pl|Majstri sekerníci z Lossarnachu
+trp_lossarnach_leader|Kapitán z Lossarnachu
+trp_lossarnach_leader_pl|Kapitáni z Lossarnachu
+trp_pelargir_watchman|Strážnik z Pelargiru
+trp_pelargir_watchman_pl|Stráž Pelargiru
 trp_pelargir_marine|Pelargirský námorník
-; trp_pelargir_marine_pl|Pelargir Marines
-; trp_pelargir_vet_marine|Pelargir Veteran Marine
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marine
-; trp_pelargir_infantry|Pelargir Infantryman
-; trp_pelargir_infantry_pl|Pelargir Infantrymen
-; trp_pelargir_vet_infantry|Pelargir Veteran Infantryman
-; trp_pelargir_vet_infantry_pl|Pelargir Veteran Infantrymen
-; trp_pelargir_leader|Captain of Pelargir
-; trp_pelargir_leader_pl|Captains of Pelargir
-; trp_pelargir_marine_leader|Captain of Pelargir Marines
-; trp_pelargir_marine_leader_pl|Captains of Pelargir Marine
-; trp_clansman_of_lamedon|Clansman of Lamedon
-; trp_clansman_of_lamedon_pl|Clansmen of Lamedon
-; trp_footman_of_lamedon|Footman of Lamedon
-; trp_footman_of_lamedon_pl|Footmen of Lamedon
-; trp_veteran_of_lamedon|Veteran of Lamedon
-; trp_veteran_of_lamedon_pl|Veterans of Lamedon
-; trp_warrior_of_lamedon|Warrior of Lamedon
-; trp_warrior_of_lamedon_pl|Warriors of Lamedon
-; trp_champion_of_lamedon|Champion of Lamedon
-; trp_champion_of_lamedon_pl|Champions of Lamedon
-; trp_knight_of_lamedon|Knight of Lamedon
-; trp_knight_of_lamedon_pl|Knights of Lamedon
-; trp_lamedon_leader|Captain of Lamedon
-; trp_lamedon_leader_pl|Captains of Lamedon
-; trp_pinnath_gelin_plainsman|Plainsman of Pinnath Gelin
-; trp_pinnath_gelin_plainsman_pl|Plainsmen of Pinnath Gelin
-; trp_pinnath_gelin_spearman|Spearman of Pinnath Gelin
-; trp_pinnath_gelin_spearman_pl|Spearmen of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin|Warrior of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin_pl|Warriors of Pinnath Gelin
-; trp_pinnath_gelin_bowman|Bowman of Pinnath Gelin
-; trp_pinnath_gelin_bowman_pl|Bowmen of Pinnath Gelin
-; trp_pinnath_gelin_archer|Archer of Pinnath Gelin
-; trp_pinnath_gelin_archer_pl|Archers of Pinnath Gelin
-; trp_pinnath_leader|Captain of Pinnath Gelin
-; trp_pinnath_leader_pl|Captains of Pinnath Gelin
-; trp_blackroot_vale_archer|Hunter of Blackroot Vale
-; trp_blackroot_vale_archer_pl|Hunter of Blackroot Vale
-; trp_veteran_blackroot_vale_archer|Bowman of Blackroot Vale
-; trp_veteran_blackroot_vale_archer_pl|Bowmen of Blackroot Vale
-; trp_master_blackroot_vale_archer|Archer of Blackroot Vale
-; trp_master_blackroot_vale_archer_pl|Archers of Blackroot Vale
-; trp_footman_of_blackroot_vale|Footman of Blackroot Vale
-; trp_footman_of_blackroot_vale_pl|Footmen of Blackroot Vale
-; trp_spearman_of_blackroot_vale|Spearman of Blackroot Vale
-; trp_spearman_of_blackroot_vale_pl|Spearmen of Blackroot Vale
-; trp_blackroot_leader|Captain of Blackroot Vale
-; trp_blackroot_leader_pl|Captains of Blackroot Vale
-; trp_dol_amroth_youth|Dol Amroth Recruit
-; trp_dol_amroth_youth_pl|Dol Amroth Recruits
-; trp_squire_of_dol_amroth|Squire of Dol Amroth
-; trp_squire_of_dol_amroth_pl|Squires of Dol Amroth
-; trp_veteran_squire_of_dol_amroth|Veteran Squire of Dol Amroth
-; trp_veteran_squire_of_dol_amroth_pl|Veteran Squires of Dol Amroth
-; trp_knight_of_dol_amroth|Knight of Dol Amroth
-; trp_knight_of_dol_amroth_pl|Knights of Dol Amroth
-; trp_veteran_knight_of_dol_amroth|Veteran Knight of Dol Amroth
-; trp_veteran_knight_of_dol_amroth_pl|Veteran Knights of Dol Amroth
-; trp_swan_knight_of_dol_amroth|Swan Knight of Dol Amroth
-; trp_swan_knight_of_dol_amroth_pl|Swan Knights of Dol Amroth
-; trp_dol_amroth_leader|Captain of Dol Amroth
-; trp_dol_amroth_leader_pl|Captains of Dol Amroth
-; trp_lothlorien_scout|Lothlorien Scout
-trp_lothlorien_scout_pl|Lothlorienský prieskumníci
-; trp_lothlorien_veteran_scout|Lothlorien Veteran Scout
-; trp_lothlorien_veteran_scout_pl|Lothlorien Veteran Scouts
-; trp_lothlorien_archer|Lothlorien Archer
-; trp_lothlorien_archer_pl|Lothlorien Archers
-; trp_lothlorien_veteran_archer|Lothlorien Veteran Archer
-; trp_lothlorien_veteran_archer_pl|Lothlorien Veteran Archers
-; trp_lothlorien_master_archer|Lothlorien Master Archer
-; trp_lothlorien_master_archer_pl|Lothlorien Master Archers
-; trp_galadhrim_royal_archer|Galadhrim Royal Archer
-; trp_galadhrim_royal_archer_pl|Galadhrim Royal Archers
-; trp_galadhrim_royal_marksman|Galadhrim Royal Marksman
-; trp_galadhrim_royal_marksman_pl|Galadhrim Royal Marksmen
-; trp_noldorin_mounted_archer|Noldorin Mounted Archer
-; trp_noldorin_mounted_archer_pl|Noldorin Mounted Archers
-; trp_lothlorien_infantry|Lothlorien Infantry
-; trp_lothlorien_infantry_pl|Lothlorien Infantry
-; trp_lothlorien_veteran_infantry|Lothlorien Veteran Infantry
-; trp_lothlorien_veteran_infantry_pl|Lothlorien Veteran Infantry
-; trp_lothlorien_elite_infantry|Lothlorien Elite Infantry
-; trp_lothlorien_elite_infantry_pl|Lothlorien Elite Infantry
-; trp_galadhrim_royal_swordsman|Galadhrim Royal Swordsman
-; trp_galadhrim_royal_swordsman_pl|Galadhrim Royal Swordsmen
-; trp_lothlorien_warden|Lothlorien Warden
-; trp_lothlorien_warden_pl|Lothlorien Wardens
-; trp_lothlorien_veteran_warden|Lothlorien Veteran Warden
-; trp_lothlorien_veteran_warden_pl|Lothlorien Veteran Wardens
-; trp_galadhrim_royal_warden|Galadhrim Royal Warden
-; trp_galadhrim_royal_warden_pl|Galadhrim Royal Wardens
-; trp_lothlorien_standard_bearer|Lothlorien Standard Bearer
-; trp_lothlorien_standard_bearer_pl|Lothlorien Standard Bearers
-; trp_greenwood_scout|Greenwood Scout
-; trp_greenwood_scout_pl|Greenwood Scouts
-; trp_greenwood_veteran_scout|Greenwood Veteran Scout
-; trp_greenwood_veteran_scout_pl|Greenwood Veteran Scouts
-; trp_greenwood_archer|Greenwood Bowman
-; trp_greenwood_archer_pl|Greenwood Bowmen
-; trp_greenwood_veteran_archer|Greenwood Archer
-; trp_greenwood_veteran_archer_pl|Greenwood Archers
-; trp_greenwood_master_archer|Greenwood Veteran Archer
-; trp_greenwood_master_archer_pl|Greenwood Veteran Archers
-; trp_thranduils_royal_marksman|Thranduil's Royal Marksman
-; trp_thranduils_royal_marksman_pl|Thranduil's Royal Marksmen
-; trp_greenwood_sentinel|Greenwood Sentinel
-; trp_greenwood_sentinel_pl|Greenwood Sentinels
-; trp_greenwood_vet_sentinel|Greenwood Veteran Sentinel
-; trp_greenwood_vet_sentinel_pl|Greenwood Veteran Sentinels
-; trp_mirkwood_guardsman|Greenwood Guardsman
-; trp_mirkwood_guardsman_pl|Greenwood Guardsmen
-; trp_greenwood_spearman|Greenwood Infantry
-; trp_greenwood_spearman_pl|Greenwood Infantry
-; trp_greenwood_veteran_spearman|Greenwood Veteran Infantry
-; trp_greenwood_veteran_spearman_pl|Greenwood Veteran Infantry
-; trp_greenwood_royal_spearman|Greenwood Elite Infantry
-; trp_greenwood_royal_spearman_pl|Greenwood Elite Infantry
-; trp_thranduils_royal_swordsman|Thranduil's Royal Swordsman
-; trp_thranduils_royal_swordsman_pl|Thranduil's Royal Swordsmen
-; trp_thranduils_spearman|Thranduil's Royal Spearman
-; trp_thranduils_spearman_pl|Thranduil's Royal Spearmen
-; trp_greenwood_standard_bearer|Greenwood Standard Bearer
-; trp_greenwood_standard_bearer_pl|Greenwood Standard Bearers
-; trp_rivendell_scout|Rivendell Scout
-; trp_rivendell_scout_pl|Rivendell Scouts
-; trp_rivendell_veteran_scout|Rivendell Veteran Scout
-; trp_rivendell_veteran_scout_pl|Rivendell Veteran Scouts
-; trp_rivendell_sentinel|Rivendell Sentinel
-; trp_rivendell_sentinel_pl|Rivendell Sentinels
-; trp_rivendell_veteran_sentinel|Rivendell Veteran Sentinel
-; trp_rivendell_veteran_sentinel_pl|Rivendell Veteran Sentinels
-; trp_rivendell_elite_sentinel|Rivendell Elite Sentinel
-; trp_rivendell_elite_sentinel_pl|Rivendell Elite Sentinels
-; trp_rivendell_guardian|Rivendell Guardian
-; trp_rivendell_guardian_pl|Rivendell Guardians
-; trp_rivendell_infantry|Rivendell Infantry
-; trp_rivendell_infantry_pl|Rivendell Infantry
-; trp_rivendell_veteran_infantry|Rivendell Veteran Infantry
-; trp_rivendell_veteran_infantry_pl|Rivendell Veteran Infantry
-; trp_rivendell_elite_infantry|Rivendell Elite Infantry
-; trp_rivendell_elite_infantry_pl|Rivendell Elite Infantry
-; trp_rivendell_royal_infantry|Rivendell Royal Infantry
-; trp_rivendell_royal_infantry_pl|Rivendell Royal Infantry
-; trp_rivendell_cavalry|Rivendell Cavalry
-; trp_rivendell_cavalry_pl|Rivendell Cavalry
-; trp_knight_of_rivendell|Knight of Rivendell
-; trp_knight_of_rivendell_pl|Knights of Rivendell
-; trp_rivendell_standard_bearer|Rivendell Standard Bearer
-; trp_rivendell_standard_bearer_pl|Rivendell Standard Bearers
-; trp_dunedain_scout|Dunedain Scout
-; trp_dunedain_scout_pl|Dunedain Scouts
-; trp_dunedain_trained_scout|Dunedain Tracker
-; trp_dunedain_trained_scout_pl|Dunedain Trackers
-; trp_arnor_man_at_arms|Arnor Man at Arms
-; trp_arnor_man_at_arms_pl|Arnor Men at Arms
-; trp_arnor_master_at_arms|Arnor Master at Arms
-; trp_arnor_master_at_arms_pl|Arnor Masters at Arms
-; trp_high_swordsman_of_arnor|High Swordsman of Arnor
-; trp_high_swordsman_of_arnor_pl|High Swordsmen of Arnor
-; trp_arnor_horsemen|Arnor Horseman
-; trp_arnor_horsemen_pl|Arnor Horsemen
-; trp_knight_of_arnor|Knight of Arnor
-; trp_knight_of_arnor_pl|Knights of Arnor
-; trp_dunedain_ranger|Dunedain Ranger
-; trp_dunedain_ranger_pl|Dunedain Rangers
-; trp_dunedain_veteran_ranger|Dunedain Veteran Ranger
-; trp_dunedain_veteran_ranger_pl|Dunedain Veteran Rangers
-; trp_dunedain_master_ranger|Dunedain Master Ranger
-; trp_dunedain_master_ranger_pl|Dunedain Master Rangers
-; trp_rohan_youth|Rohan Youth
-; trp_rohan_youth_pl|Rohan Youths
-; trp_guardsman_of_rohan|Guardsman of Rohan
-; trp_guardsman_of_rohan_pl|Guardsmen of Rohan
-; trp_footman_of_rohan|Footman of Rohan
-; trp_footman_of_rohan_pl|Footmen of Rohan
-; trp_veteran_footman_of_rohan|Veteran Footman of Rohan
-; trp_veteran_footman_of_rohan_pl|Veteran Footmen of Rohan
-; trp_elite_footman_of_rohan|Elite Footman of Rohan
-; trp_elite_footman_of_rohan_pl|Elite Footmen of Rohan
-; trp_folcwine_guard_of_rohan|Folcwine Guard of Rohan
-; trp_folcwine_guard_of_rohan_pl|Folcwine Guards of Rohan
-; trp_raider_of_rohan|Frealaf Raider
-; trp_raider_of_rohan_pl|Frealaf Raiders
-; trp_heavy_swordsman_of_rohan|Heavy Swordsman of Rohan
-; trp_heavy_swordsman_of_rohan_pl|Heavy Swordsmen of Rohan
-; trp_warden_of_methuseld|Warden of Methuseld
-; trp_warden_of_methuseld_pl|Wardens of Methuseld
-; trp_skirmisher_of_rohan|Skirmisher of Rohan
-; trp_skirmisher_of_rohan_pl|Skirmishers of Rohan
-; trp_veteran_skirmisher_of_rohan|Veteran Skirmisher of Rohan
-; trp_veteran_skirmisher_of_rohan_pl|Veteran Skirmishers of Rohan
-; trp_elite_skirmisher_of_rohan|Elite Skirmisher of Rohan
-; trp_elite_skirmisher_of_rohan_pl|Elite Skirmishers of Rohan
-; trp_thengel_guard_of_rohan|Thengel Guard of Rohan
-; trp_thengel_guard_of_rohan_pl|Thengel Guards of Rohan
-; trp_lancer_of_rohan|Lancer of Rohan
-; trp_lancer_of_rohan_pl|Lancers of Rohan
-; trp_elite_lancer_of_rohan|Elite Lancer of Rohan
-; trp_elite_lancer_of_rohan_pl|Elite Lancers of Rohan
-; trp_brego_guard_of_rohan|Brego Guard of Rohan
-; trp_brego_guard_of_rohan_pl|Brego Guards of Rohan
-; trp_king_s_man_of_rohan|King's Guard
-; trp_king_s_man_of_rohan_pl|King's Guards
-; trp_squire_of_rohan|Squire of Rohan
-; trp_squire_of_rohan_pl|Squires of Rohan
-; trp_rider_of_rohan|Rider of Rohan
-; trp_rider_of_rohan_pl|Riders of Rohan
-; trp_veteran_rider_of_rohan|Veteran Rider of Rohan
-; trp_veteran_rider_of_rohan_pl|Veteran Riders of Rohan
-; trp_elite_rider_of_rohan|Elite Rider of Rohan
-; trp_elite_rider_of_rohan_pl|Elite Riders of Rohan
-; trp_eorl_guard_of_rohan|Eorl Guard of Rohan
-; trp_eorl_guard_of_rohan_pl|Eorl Guards of Rohan
-; trp_dismounted_skirmisher_of_rohan|Skirmisher of Rohan
-; trp_dismounted_skirmisher_of_rohan_pl|Skirmishers of Rohan
-; trp_dismounted_veteran_skirmisher_of_rohan|Veteran Skirmisher of Rohan
-; trp_dismounted_veteran_skirmisher_of_rohan_pl|Veteran Skirmishers of Rohan
-; trp_dismounted_elite_skirmisher_of_rohan|Elite Skirmisher of Rohan
-; trp_dismounted_elite_skirmisher_of_rohan_pl|Elite Skirmishers of Rohan
-; trp_dismounted_thengel_guard_of_rohan|Thengel Guard of Rohan
-; trp_dismounted_thengel_guard_of_rohan_pl|Thengel Guards of Rohan
-; trp_harad_desert_warrior|Harad Levy
-; trp_harad_desert_warrior_pl|Harad Levies
-; trp_harad_infantry|Harad Light Infantry
-; trp_harad_infantry_pl|Harad Light Infantry
-; trp_harad_veteran_infantry|Harad Spearman
-; trp_harad_veteran_infantry_pl|Harad Spearmen
-; trp_harad_tiger_guard|Tiger Guard
-; trp_harad_tiger_guard_pl|Tiger Guards
-; trp_harad_swordsman|Harad Swordsman
-; trp_harad_swordsman_pl|Harad Swordsmen
-; trp_harad_lion_guard|Lion Guard
-; trp_harad_lion_guard_pl|Lion Guards
-; trp_harad_skirmisher|Harad Skirmisher
-; trp_harad_skirmisher_pl|Harad Skirmishers
-; trp_harad_archer|Harad Archer
-; trp_harad_archer_pl|Harad Archers
-; trp_harad_eagle_guard|Eagle Guard
-; trp_harad_eagle_guard_pl|Eagle Guards
-; trp_harondor_scout|Harondor Scout
-; trp_harondor_scout_pl|Harondor Scouts
-; trp_harondor_rider|Harondor Rider
-; trp_harondor_rider_pl|Harondor Riders
-; trp_harondor_light_cavalry|Harondor Light Cavalry
-; trp_harondor_light_cavalry_pl|Harondor Light Cavalry
-; trp_fang_heavy_cavalry|Fang Heavy Cavalry
-; trp_fang_heavy_cavalry_pl|Fang Heavy Cavalry
-; trp_harad_horse_archer|Harad Horse Archer
-; trp_harad_horse_archer_pl|Harad Horse Archers
-; trp_black_snake_horse_archer|Black Snake Horse Archer
-; trp_black_snake_horse_archer_pl|Black Snake Horse Archers
-; trp_gold_serpent_horse_archer|Gold Serpent Horse Archer
-; trp_gold_serpent_horse_archer_pl|Gold Serpent Horse Archers
-trp_far_harad_tribesman|Divoch u Ďalekého Haradu
-; trp_far_harad_tribesman_pl|Far Harad Tribesmen
-; trp_far_harad_champion|Far Harad Champion
-; trp_far_harad_champion_pl|Far Harad Champions
-; trp_far_harad_panther_guard|Panther Guard
-; trp_far_harad_panther_guard_pl|Panther Guards
-; trp_dunnish_wildman|Dunnish Wildman
-; trp_dunnish_wildman_pl|Dunnish Wildmen
-; trp_dunnish_warrior|Dunnish Warrior
-; trp_dunnish_warrior_pl|Dunnish Warriors
-; trp_dunnish_pikeman|Dunnish Pikeman
-; trp_dunnish_pikeman_pl|Dunnish Pikemen
-; trp_dunnish_veteran_pikeman|Dunnish Veteran Pikeman
-; trp_dunnish_veteran_pikeman_pl|Dunnish Veteran Pikemen
-; trp_dunnish_raven_rider|Dunnish Raven Rider
-; trp_dunnish_raven_rider_pl|Dunnish Raven Riders
-; trp_dunnish_vet_warrior|Dunnish Veteran Warrior
-; trp_dunnish_vet_warrior_pl|Dunnish Veteran Warriors
-; trp_dunnish_wolf_warrior|Dunnish Wolf Warrior
-; trp_dunnish_wolf_warrior_pl|Dunnish Wolf Warriors
-; trp_dunnish_wolf_guard|Dunnish Wolf Guard
-; trp_dunnish_wolf_guard_pl|Dunnish Wolf Guards
-; trp_dunnish_chieftan|Dunnish Chieftain
-; trp_dunnish_chieftan_pl|Dunnish Chieftains
-; trp_easterling_youth|Variag Bondsman
-; trp_easterling_youth_pl|Variag Bondsmen
-; trp_easterling_warrior|Warrior of Khand
-; trp_easterling_warrior_pl|Warriors of Khand
-; trp_easterling_axeman|Variag Axeman
-; trp_easterling_axeman_pl|Variag Axemen
-; trp_easterling_veteran_axeman|Variag Veteran Axeman
-; trp_easterling_veteran_axeman_pl|Variag Veteran Axemen
-; trp_easterling_axe_master|Variag Axe Master
-; trp_easterling_axe_master_pl|Variag Axe Masters
-; trp_easterling_rider|Variag Pony Rider
-; trp_easterling_rider_pl|Variag Pony Riders
-; trp_easterling_horseman|Variag Horseman
-; trp_easterling_horseman_pl|Variag Horsemen
-; trp_easterling_veteran_horseman|Variag Heavy Horseman
-; trp_easterling_veteran_horseman_pl|Variag Heavy Horsemen
-; trp_easterling_horsemaster|Variag Kataphrakt
-; trp_easterling_horsemaster_pl|Variag Kataphrakts
-; trp_easterling_lance_kataphract|Variag Lance Kataphrakt
-; trp_easterling_lance_kataphract_pl|Variag Lance Kataphrakts
-; trp_khand_glaive_whirler|Khand Blade Whirler
-; trp_khand_glaive_whirler_pl|Khand Blade Whirlers
-; trp_variag_veteran_glaive_whirler|Khand Veteran Blade Whirler
-; trp_variag_veteran_glaive_whirler_pl|Khand Veteran Blade Whirlers
-; trp_khand_glaive_master|Khand Halberd Master
-; trp_khand_glaive_master_pl|Khand Halberd Masters
-; trp_variag_pitfighter|Variag Pitfighter
-; trp_variag_pitfighter_pl|Variag Pitfighters
-; trp_variag_gladiator|Variag Berserker
-; trp_variag_gladiator_pl|Variag Berserkers
-; trp_easterling_skirmisher|Variag Skirmisher
-; trp_easterling_skirmisher_pl|Variag Skirmishers
-; trp_easterling_veteran_skirmisher|Variag Veteran Skirmisher
-; trp_easterling_veteran_skirmisher_pl|Variag Veteran Skirmishers
-; trp_easterling_elite_skirmisher|Variag Heavy Skirmisher
-; trp_easterling_elite_skirmisher_pl|Variag Heavy Skirmishers
-; trp_corsair_youth|Umbar Sailor
-; trp_corsair_youth_pl|Umbar Sailors
-; trp_corsair_warrior|Umbar Warrior
-; trp_corsair_warrior_pl|Umbar Warriors
-; trp_corsair_pikeman|Pikeman of Umbar
-; trp_corsair_pikeman_pl|Pikemen of Umbar
-; trp_corsair_veteran_raider|Corsair Veteran Raider
-; trp_corsair_veteran_raider_pl|Corsair Veteran Raiders
-; trp_corsair_night_raider|Corsair Night Raider
-; trp_corsair_night_raider_pl|Corsair Night Raiders
-; trp_militia_of_umbar|Umbar Militiaman
-; trp_militia_of_umbar_pl|Umbar Militia
-; trp_marksman_of_umbar|Skirmisher of Umbar
-; trp_marksman_of_umbar_pl|Skirmishers of Umbar
-; trp_veteran_marksman_of_umbar|Veteran Skirmisher of Umbar
-; trp_veteran_marksman_of_umbar_pl|Veteran Skirmishers of Umbar
-; trp_master_marksman_of_umbar|Corsair Master Skirmisher
-; trp_master_marksman_of_umbar_pl|Corsair Master Skirmishers
-; trp_corsair_marauder|Swordsman of Umbar
-; trp_corsair_marauder_pl|Swordsmen of Umbar
-; trp_corsair_veteran_marauder|Veteran Swordsman of Umbar
-; trp_corsair_veteran_marauder_pl|Veteran Swordsmen of Umbar
-; trp_corsair_elite_marauder|Corsair Swordmaster
-; trp_corsair_elite_marauder_pl|Corsair Swordmasters
-; trp_assassin_of_umbar|Assassin of Umbar
-; trp_assassin_of_umbar_pl|Assassins of Umbar
-; trp_master_assassin_of_umbar|Corsair Assassin
-; trp_master_assassin_of_umbar_pl|Corsair Assassins
-; trp_pikeman_of_umbar|Pikeman of Umbar
-; trp_pikeman_of_umbar_pl|Pikemen of Umbar
-; trp_veteran_pikeman_of_umbar|Veteran Pikeman of Umbar
-; trp_veteran_pikeman_of_umbar_pl|Veteran Pikemen of Umbar
-; trp_pike_master_of_umbar|Corsair Pike Master
-; trp_pike_master_of_umbar_pl|Corsair Pike Masters
-; trp_orc_snaga_of_isengard|Orc Snaga of Isengard
-; trp_orc_snaga_of_isengard_pl|Orc Snagas of Isengard
-; trp_orc_of_isengard|Orc of Isengard
-; trp_orc_of_isengard_pl|Orcs of Isengard
-; trp_large_orc_of_isengard|Large Orc of Isengard
-; trp_large_orc_of_isengard_pl|Large Orcs of Isengard
-; trp_fell_orc_of_isengard|Fell Orc of Isengard
-; trp_fell_orc_of_isengard_pl|Fell Orcs of Isengard
-; trp_large_orc_despoiler|Large Orc Despoiler
-; trp_large_orc_despoiler_pl|Large Orc Despoilers
-; trp_fell_orc_despoiler|Fell Orc Despoiler
-; trp_fell_orc_despoiler_pl|Fell Orc Despoilers
-; trp_wolf_rider_of_isengard|Wolf Rider of Isengard
-; trp_wolf_rider_of_isengard_pl|Wolf Riders of Isengard
-; trp_warg_rider_of_isengard|Warg Rider of Isengard
-; trp_warg_rider_of_isengard_pl|Warg Riders of Isengard
-; trp_white_hand_rider|White Hand Rider
-; trp_white_hand_rider_pl|White Hand Riders
+trp_pelargir_marine_pl|Pelargirskí námorníci
+trp_pelargir_vet_marine|Pelargirský skúsený námorník
+trp_pelargir_vet_marine_pl|Pelargirskí skúsení námorníci
+trp_pelargir_infantry|Pelargirský pešiak
+trp_pelargir_infantry_pl|Pelargirskí pešiaci
+trp_pelargir_vet_infantry|Pelargirský skúsený pešiak
+trp_pelargir_vet_infantry_pl|Pelargirskí skúsení pešiaci
+trp_pelargir_leader|Kapitán z Pelargiru
+trp_pelargir_leader_pl|Kapitáni z Pelargiru
+trp_pelargir_marine_leader|Kapitán Pelargirských námorníkov
+trp_pelargir_marine_leader_pl|Kapitáni Pelargirských námorníkov
+trp_clansman_of_lamedon|Domorodec z Lamedonu
+trp_clansman_of_lamedon_pl|Domorodci z Lamedonu
+trp_footman_of_lamedon|Pešiak z Lamedonu
+trp_footman_of_lamedon_pl|Pešiaci z Lamedonu
+trp_veteran_of_lamedon|Skúsený pešiak z Lamedonu
+trp_veteran_of_lamedon_pl|Skúsení pešiaci z Lamedonu
+trp_warrior_of_lamedon|Bojovník z Lamedonu
+trp_warrior_of_lamedon_pl|Bojovníci z Lamedonu
+trp_champion_of_lamedon|Šampión z Lamedonu
+trp_champion_of_lamedon_pl|Šampióni z Lamedonu
+trp_knight_of_lamedon|Rytier z Lamedonu
+trp_knight_of_lamedon_pl|Rytieri z Lamedonu
+trp_lamedon_leader|Kapitán z Lamedonu
+trp_lamedon_leader_pl|Kapitáni z Lamedonu
+trp_pinnath_gelin_plainsman|Roľník z Pinnath Gelin
+trp_pinnath_gelin_plainsman_pl|Roľníci z Pinnath Gelin
+trp_pinnath_gelin_spearman|Jazdec z Pinnath Gelinu
+trp_pinnath_gelin_spearman_pl|Jazda z Pinnath Gelinu
+trp_warrior_of_pinnath_gelin|Rytier z Pinnath Gelinu
+trp_warrior_of_pinnath_gelin_pl|Rytieri z Pinnath Gelinu
+trp_pinnath_gelin_bowman|Lovec z Pinnath Gelin
+trp_pinnath_gelin_bowman_pl|Lovci z Pinnath Gelin
+trp_pinnath_gelin_archer|Lukostrelec z Pinnath Gelin
+trp_pinnath_gelin_archer_pl|Lukostrelci z Pinnath Gelin
+trp_pinnath_leader|Kapitán z Pinnath Gelin
+trp_pinnath_leader_pl|Kapitáni z Pinnath Gelin
+trp_blackroot_vale_archer|Lovec z Čiernodolu
+trp_blackroot_vale_archer_pl|Lovci z Čiernodolu
+trp_veteran_blackroot_vale_archer|Strelec z Čiernodolu
+trp_veteran_blackroot_vale_archer_pl|Strelci z Čiernodolu
+trp_master_blackroot_vale_archer|Lukostrelec z Čiernodolu
+trp_master_blackroot_vale_archer_pl|Lukostrelci z Čiernodolu
+trp_footman_of_blackroot_vale|Pešiak z Čiernodolu
+trp_footman_of_blackroot_vale_pl|Pešiaci z Čiernodolu
+trp_spearman_of_blackroot_vale|Kopijník z Čiernodolu
+trp_spearman_of_blackroot_vale_pl|Kopijníci z Čiernodolu
+trp_blackroot_leader|Morthondský Temný Jazdec
+trp_blackroot_leader_pl|Morthondská Temní Jazdci
+trp_dol_amroth_youth|Branec z Dol Amrothu
+trp_dol_amroth_youth_pl|Branci z Dol Amrothu
+trp_squire_of_dol_amroth|Panoš z Dol Amrothu
+trp_squire_of_dol_amroth_pl|Panoši z Dol Amrothu
+trp_veteran_squire_of_dol_amroth|Skúsený panoš z Dol Amrothu
+trp_veteran_squire_of_dol_amroth_pl|Skúsení panoši z Dol Amrothu
+trp_knight_of_dol_amroth|Rytier z Dol Amrothu
+trp_knight_of_dol_amroth_pl|Rytieri z Dol Amrothu
+trp_veteran_knight_of_dol_amroth|Skúsený rytier z Dol Amrothu
+trp_veteran_knight_of_dol_amroth_pl|Skúsení rytieri z Dol Amrothu
+trp_swan_knight_of_dol_amroth|Labutí rytier z Dol Amrothu
+trp_swan_knight_of_dol_amroth_pl|Labutí rytieri z Dol Amrothu
+trp_dol_amroth_leader|Kapitán z Dol Amrothu
+trp_dol_amroth_leader_pl|Kapitáni z Dol Amrothu
+trp_lothlorien_scout|Lothlorienský prieskumník
+trp_lothlorien_scout_pl|Lothlorienskí prieskumníci
+trp_lothlorien_veteran_scout|Lothlorienský skúsený prieskumník
+trp_lothlorien_veteran_scout_pl|Lothlorienská skúsení prieskumník
+trp_lothlorien_archer|Lothlorienský lukostrelec
+trp_lothlorien_archer_pl|Lothlorienskí lukostrelci
+trp_lothlorien_veteran_archer|Lothlorienský skúsený lukostrelec
+trp_lothlorien_veteran_archer_pl|Lothlorienskí skúsení lukostrelec
+trp_lothlorien_master_archer|Lothlorienský majster lukostrelec
+trp_lothlorien_master_archer_pl|Lothlorienskí majster lukostrelec
+trp_galadhrim_royal_archer|Urodzený lukostrelec Galadhrim
+trp_galadhrim_royal_archer_pl|Urodzení lukostrelci Galadhrim
+trp_galadhrim_royal_marksman|Urodzený ostrostrelec Galadhrim
+trp_galadhrim_royal_marksman_pl|Urodzení ostrostrelci Galadhrim
+trp_noldorin_mounted_archer|Noldorský jazdecký lukostrelec
+trp_noldorin_mounted_archer_pl|Noldorskí jazdeckí lukostrelci
+trp_lothlorien_infantry|Lothlorienský pešiak
+trp_lothlorien_infantry_pl|Lothlorienská pechota
+trp_lothlorien_veteran_infantry|Lothlorienský skúsený pešiak
+trp_lothlorien_veteran_infantry_pl|Lothlorienská skúsená pechota
+trp_lothlorien_elite_infantry|Lothlorienský elitný zbrojnoš
+trp_lothlorien_elite_infantry_pl|Lothlorienská elitná pechota
+trp_galadhrim_royal_swordsman|Urodzený šermiar Galadhrim
+trp_galadhrim_royal_swordsman_pl|Urodzení šermiari Galadhrim
+trp_lothlorien_warden|Lothlorienský strážca
+trp_lothlorien_warden_pl|Lothlorienská stráž
+trp_lothlorien_veteran_warden|Lothlorienský skúsený strážca
+trp_lothlorien_veteran_warden_pl|Lothlorienská skúsená stráž
+trp_galadhrim_royal_warden|Urodzený strážca Galadhrim
+trp_galadhrim_royal_warden_pl|Urodzená stráž Galadhrim
+trp_lothlorien_standard_bearer|Lothlorienský vlajkonoš
+trp_lothlorien_standard_bearer_pl|Lothlorienskí zástavníci
+trp_greenwood_scout|Prieskumník z Temnohvozdu
+trp_greenwood_scout_pl|Prieskumníci z Temnohvozdu
+trp_greenwood_veteran_scout|Skúsený prieskumník z Temnohvozdu
+trp_greenwood_veteran_scout_pl|Skúsení prieskumníci z Temnohvozdu
+trp_greenwood_archer|Temnohvozdský lovec
+trp_greenwood_archer_pl|Temnohvozdskí lovci
+trp_greenwood_veteran_archer|Temnohvozdský lukostrelec
+trp_greenwood_veteran_archer_pl|Temnohvozdskí lukostrelci
+trp_greenwood_master_archer|Skúsený lukostrelec z Temnohvozdu
+trp_greenwood_master_archer_pl|Skúsení lukostrelci z Temnohvozdu
+trp_thranduils_royal_marksman|Thranduilov urodzený ostrostrelec
+trp_thranduils_royal_marksman_pl|Thranduiloví urodzení ostrostrelci
+trp_greenwood_sentinel|Ochranca Temnohvozdu
+trp_greenwood_sentinel_pl|Ochrancovia Temnohvozdu
+trp_greenwood_vet_sentinel|Skúsený ochranca Temnohvozdu
+trp_greenwood_vet_sentinel_pl|Skúsení ochrancovia Temnohvozdu
+trp_mirkwood_guardsman|Temnohvozdský strážca
+trp_mirkwood_guardsman_pl|Temnohvozdská stráž
+trp_greenwood_spearman|Temnohvozdský pešiak
+trp_greenwood_spearman_pl|Temnohvozdská pechota
+trp_greenwood_veteran_spearman|Temnohvozdský skúsený pešiak
+trp_greenwood_veteran_spearman_pl|Temnohvozdská skúsená stráž
+trp_greenwood_royal_spearman|Temnohvozdský elitný zbrojnoš
+trp_greenwood_royal_spearman_pl|Temnohvozdská elitná pechota
+trp_thranduils_royal_swordsman|Thranduilov urodzený šermiar
+trp_thranduils_royal_swordsman_pl|Thranduiloví urodzení šermiari
+trp_thranduils_spearman|Thranduilov urodzený kopijník
+trp_thranduils_spearman_pl|Thranduiloví urodzení kopijník
+trp_greenwood_standard_bearer|Temnohvozdský vlajkonoš
+trp_greenwood_standard_bearer_pl|Temnohvozdskí zástavníci
+trp_rivendell_scout|Prieskumník z Roklinky
+trp_rivendell_scout_pl|Prieskumníci z Roklinky
+trp_rivendell_veteran_scout|Skúsený prieskumník z Roklinky
+trp_rivendell_veteran_scout_pl|Skúsení prieskumníci z Roklinky
+trp_rivendell_sentinel|Ochranca Roklinky
+trp_rivendell_sentinel_pl|Ochrancovia Roklinky
+trp_rivendell_veteran_sentinel|Skúsený ochranca Roklinky
+trp_rivendell_veteran_sentinel_pl|Skúsení ochrancovia Roklinky
+trp_rivendell_elite_sentinel|Elitný ochranca Roklinky
+trp_rivendell_elite_sentinel_pl|Elitní ochrancovia Roklinky
+trp_rivendell_guardian|Strážca z Roklinky
+trp_rivendell_guardian_pl|Stráž z Roklinky
+trp_rivendell_infantry|Pešiak z Roklinky
+trp_rivendell_infantry_pl|Roklinská pechota
+trp_rivendell_veteran_infantry|Skúsený pešiak z Roklinky
+trp_rivendell_veteran_infantry_pl|Skúsená Roklinská pechota
+trp_rivendell_elite_infantry|Elitný zbrojnoš z Roklinky
+trp_rivendell_elite_infantry_pl|Elitná Roklinská pechota
+trp_rivendell_royal_infantry|Urodzení ťažkoodenec z Roklinky
+trp_rivendell_royal_infantry_pl|Pechota urodzených z Roklinky
+trp_rivendell_cavalry|Kavalerista Roklinky
+trp_rivendell_cavalry_pl|Roklinská kavaléria
+trp_knight_of_rivendell|Rytier z Roklinky
+trp_knight_of_rivendell_pl|Rytieri z Roklinky
+trp_rivendell_standard_bearer|Roklinský vlajkonoš
+trp_rivendell_standard_bearer_pl|Roklinskí zástavníci
+trp_dunedain_scout|Dunedainský prieskumník
+trp_dunedain_scout_pl|Dunedainskí prieskumníci
+trp_dunedain_trained_scout|Dunedainský stopár
+trp_dunedain_trained_scout_pl|Dunedainskí stopári
+trp_arnor_man_at_arms|Arnorský ozbrojenec
+trp_arnor_man_at_arms_pl|Arnorskí ozbrojenci
+trp_arnor_master_at_arms|Arnorský majstrer ozbrojenec
+trp_arnor_master_at_arms_pl|Arnorskí majstri ozbrojenci
+trp_high_swordsman_of_arnor|Urodzený šermiar z Arnoru
+trp_high_swordsman_of_arnor_pl|Urodzení šermiari z Arnoru
+trp_arnor_horsemen|Arnorský jazdec
+trp_arnor_horsemen_pl|Arnorskí jazdci
+trp_knight_of_arnor|Rytier z Arnoru
+trp_knight_of_arnor_pl|Rytieri z Arnoru
+trp_dunedain_ranger|Dunedainský strelec
+trp_dunedain_ranger_pl|Dunedainskí strelci
+trp_dunedain_veteran_ranger|Dunedainský skúsený strelec
+trp_dunedain_veteran_ranger_pl|Dunedainskí skúsení strelci
+trp_dunedain_master_ranger|Dunedainský majster strelec
+trp_dunedain_master_ranger_pl|Dunedainskí majstri strelci
+trp_rohan_youth|Rohanský mladík
+trp_rohan_youth_pl|Rohanská mládež
+trp_guardsman_of_rohan|Rohanský strážnik
+trp_guardsman_of_rohan_pl|Rohanská stráž
+trp_footman_of_rohan|Rohanský pešiak
+trp_footman_of_rohan_pl|Rohanskí pešiaci
+trp_veteran_footman_of_rohan|Skúsený pešiak z Rohanu
+trp_veteran_footman_of_rohan_pl|Skúsení pešiaci z Rohanu
+trp_elite_footman_of_rohan|Elitný zbrojnoš z Rohanu
+trp_elite_footman_of_rohan_pl|Elitní zbrojnoši z Rohanu
+trp_folcwine_guard_of_rohan|Folcwineov rohanský gardista
+trp_folcwine_guard_of_rohan_pl|Folcwineova rohanská garda
+trp_raider_of_rohan|Frealafov marodér
+trp_raider_of_rohan_pl|Frealafovi marodéri
+trp_heavy_swordsman_of_rohan|Ťažkoodenec z Rohanu
+trp_heavy_swordsman_of_rohan_pl|Ťažkoodenci z Rohanu
+trp_warden_of_methuseld|Ochránca Meduseldu
+trp_warden_of_methuseld_pl|Stráž Meduseldu
+trp_skirmisher_of_rohan|Rohanský ľahký kavalerista
+trp_skirmisher_of_rohan_pl|Ľahká jazda Rohanu
+trp_veteran_skirmisher_of_rohan|Skúsený ľahký kavalerista z Rohanu
+trp_veteran_skirmisher_of_rohan_pl|Skúsená ľahká jazda Rohanu
+trp_elite_skirmisher_of_rohan|Elitný ľahký kavalerista z Rohanu
+trp_elite_skirmisher_of_rohan_pl|Elitná ľahká jazda Rohanu
+trp_thengel_guard_of_rohan|Thengelov rohanský gardista
+trp_thengel_guard_of_rohan_pl|Thengelova rohanská garda
+trp_lancer_of_rohan|Jazdecký kopijník z Rohanu
+trp_lancer_of_rohan_pl|Jazdeckí kopijníci z Rohanu
+trp_elite_lancer_of_rohan|Elitný jazdecký kopijník z Rohanu
+trp_elite_lancer_of_rohan_pl|Elitní jazdeckí kopijníci z Rohanu
+trp_brego_guard_of_rohan|Bregov rohanský gardista
+trp_brego_guard_of_rohan_pl|Bregova rohanská garda
+trp_king_s_man_of_rohan|Kráľov gardista
+trp_king_s_man_of_rohan_pl|Kráľova garda
+trp_squire_of_rohan|Rohanský panoš
+trp_squire_of_rohan_pl|Rohanskí panoši
+trp_rider_of_rohan|Rohanský jazdec
+trp_rider_of_rohan_pl|Rohanskí jazdci
+trp_veteran_rider_of_rohan|Skúsený rohanský jazdec
+trp_veteran_rider_of_rohan_pl|Skúsení rohanskí jazdci
+trp_elite_rider_of_rohan|Elitný jazdec z Rohanu
+trp_elite_rider_of_rohan_pl|Elitní jazdci z Rohanu
+trp_eorl_guard_of_rohan|Eorlov rohanský strážca
+trp_eorl_guard_of_rohan_pl|Eorlova rohanská stráž
+trp_dismounted_skirmisher_of_rohan|Rohanský ľahký kavalerista
+trp_dismounted_skirmisher_of_rohan_pl|Ľahká jazda Rohanu
+trp_dismounted_veteran_skirmisher_of_rohan|Skúsený ľahký kavalerista z Rohanu
+trp_dismounted_veteran_skirmisher_of_rohan_pl|Skúsená ľahká jazda Rohanu
+trp_dismounted_elite_skirmisher_of_rohan|Elitný ľahký kavalerista z Rohanu
+trp_dismounted_elite_skirmisher_of_rohan_pl|Elitná ľahká jazda Rohanu
+trp_dismounted_thengel_guard_of_rohan|Thengelov rohanský gardista
+trp_dismounted_thengel_guard_of_rohan_pl|Thengelova rohanská garda
+trp_harad_desert_warrior|Haradský branec
+trp_harad_desert_warrior_pl|Haradskí branci
+trp_harad_infantry|Príslušník ľahkej pechoty Haradu
+trp_harad_infantry_pl|Ľahká pechota Haradu
+trp_harad_veteran_infantry|Haradský kopijník
+trp_harad_veteran_infantry_pl|Haradskí kopijníci
+trp_harad_tiger_guard|Tigrí strážca
+trp_harad_tiger_guard_pl|Tigria stráž
+trp_harad_swordsman|Haradský šermiar
+trp_harad_swordsman_pl|Haradskí šermiari
+trp_harad_lion_guard|Leví strážca
+trp_harad_lion_guard_pl|Levia stráž
+trp_harad_skirmisher|Haradský ľahkoodenec
+trp_harad_skirmisher_pl|Haradskí ľahkoodenci
+trp_harad_archer|Haradský lukostrelec
+trp_harad_archer_pl|Haradskí lukostrelci
+trp_harad_eagle_guard|Orlý strážca
+trp_harad_eagle_guard_pl|Orlia stráž
+trp_harondor_scout|Prieskumník z Harondoru
+trp_harondor_scout_pl|Prieskumníci z Harondoru
+trp_harondor_rider|Jazdec z Harondoru
+trp_harondor_rider_pl|Jazdci z Harondoru
+trp_harondor_light_cavalry|Ľahký jazdec z Harondoru
+trp_harondor_light_cavalry_pl|Ľahká jazda Harondoru
+trp_fang_heavy_cavalry|Ťažký kavalerista Fangu
+trp_fang_heavy_cavalry_pl|Ťažká jazda Fangu
+trp_harad_horse_archer|Jazdecký lukostrelec z Haradu
+trp_harad_horse_archer_pl|Jazdeckí lukostrelci z Haradu
+trp_black_snake_horse_archer|Jazdecký lukostrelec Čierneho Hada
+trp_black_snake_horse_archer_pl|Jazdeckí lukostrelci Čierneho Hada
+trp_gold_serpent_horse_archer|Jazdecký lukostrelec Zlatého Jaštera
+trp_gold_serpent_horse_archer_pl|Jazdeckí lukostrelci Zletého Jaštera
+trp_far_harad_tribesman|Divoch z Ďalekého Haradu
+trp_far_harad_tribesman_pl|Divosi z Ďalekého Haradu
+trp_far_harad_champion|Šampión z Ďalekého Haradu
+trp_far_harad_champion_pl|Šampióni z Ďalekého Haradu
+trp_far_harad_panther_guard|Pantéri strážca
+trp_far_harad_panther_guard_pl|Pantérská stráž
+trp_dunnish_wildman|Vrchovecký divoch
+trp_dunnish_wildman_pl|Vrchoveckí divosi
+trp_dunnish_warrior|Vrchovecký bojovník
+trp_dunnish_warrior_pl|Vrchoveckí bojovníci
+trp_dunnish_pikeman|Vrchovecký kopijník
+trp_dunnish_pikeman_pl|Vrchoveckí kopijníci
+trp_dunnish_veteran_pikeman|Vrchovecký skúsený kopijník
+trp_dunnish_veteran_pikeman_pl|Vrchoveckí skúsení kopijníci
+trp_dunnish_raven_rider|Vrchovecký krebainí jazdec
+trp_dunnish_raven_rider_pl|Vrchoveckí krebainí jazdci
+trp_dunnish_vet_warrior|Vrchovecký skúsený bojovník
+trp_dunnish_vet_warrior_pl|Vrchoveckí skúsení bojovníci
+trp_dunnish_wolf_warrior|Vrchovecký vlčí bojovník
+trp_dunnish_wolf_warrior_pl|Vrchoveckí vlčí bojovníci
+trp_dunnish_wolf_guard|Vrchovecký vlčí strážca
+trp_dunnish_wolf_guard_pl|Vrchovecká vlčia stráž
+trp_dunnish_chieftan|Vrchovecký havraní jazdec
+trp_dunnish_chieftan_pl|Vrchoveckí havraní jazdci
+trp_easterling_youth|Variagský nevoľník
+trp_easterling_youth_pl|Variagskí nevoľníci
+trp_easterling_warrior|Variagský bojovník
+trp_easterling_warrior_pl|Variagskí bojovníci
+trp_easterling_axeman|Variagský sekerník
+trp_easterling_axeman_pl|Variagskí sekerníci
+trp_easterling_veteran_axeman|Variagský skúsený sekerník
+trp_easterling_veteran_axeman_pl|Variagskí skúsení sekerníci
+trp_easterling_axe_master|Variagský majster sekerník
+trp_easterling_axe_master_pl|Variagskí majstri sekerníci
+trp_easterling_rider|Variagský jazdec na poníkovy
+trp_easterling_rider_pl|Variagskí jazdci na poníkoch
+trp_easterling_horseman|Variagský jazdec na koni
+trp_easterling_horseman_pl|Variagský jazdci na koňoch
+trp_easterling_veteran_horseman|Variagský ťažký kavalerista
+trp_easterling_veteran_horseman_pl|Variagskí ťažký kavaleristi
+trp_easterling_horsemaster|Variagský Katafrakt
+trp_easterling_horsemaster_pl|Variagskí Katafrakti
+trp_easterling_lance_kataphract|Variagský katafrakt s kopijou
+trp_easterling_lance_kataphract_pl|Variagskí katafrakti s kopijou
+trp_khand_glaive_whirler|Čepeľo-vírič z Khandu
+trp_khand_glaive_whirler_pl|Čepeľo-víriči z Khandu
+trp_variag_veteran_glaive_whirler|Skúsený čepeľo-vírič z Khandu
+trp_variag_veteran_glaive_whirler_pl|Skúsení čepeľo-víriči z Khandu
+trp_khand_glaive_master|Khandský majster halapartník
+trp_khand_glaive_master_pl|Khandskí majstri halapartníci
+trp_variag_pitfighter|Variagský zápasník z arén
+trp_variag_pitfighter_pl|Variagskí zápasníci z arén
+trp_variag_gladiator|Variagský berserk
+trp_variag_gladiator_pl|Variagskí berserkovia
+trp_easterling_skirmisher|Variagský ľahký jazdec
+trp_easterling_skirmisher_pl|Variagskí ľahkí jazdci
+trp_easterling_veteran_skirmisher|Variagský skúsený ľahký jazdec
+trp_easterling_veteran_skirmisher_pl|Variagskí skúsení ľahkí jazdci
+trp_easterling_elite_skirmisher|Variagský ťažký jazdec
+trp_easterling_elite_skirmisher_pl|Variagskí ťažkí jazdci
+trp_corsair_youth|Umbarský námorník
+trp_corsair_youth_pl|Umbarskí námorníci
+trp_corsair_warrior|Umbarský bojovník
+trp_corsair_warrior_pl|Umbarskí bojovníci
+trp_corsair_pikeman|Pikenýr z Umbaru
+trp_corsair_pikeman_pl|Ppikenýri z Umbaru
+trp_corsair_veteran_raider|Skúsený korzársky nájazdník
+trp_corsair_veteran_raider_pl|Skúsení korzárski nájazdníci
+trp_corsair_night_raider|Nočný korzársky nájazdník
+trp_corsair_night_raider_pl|Noční korzárski nájazdníci
+trp_militia_of_umbar|Umbarský námorník
+trp_militia_of_umbar_pl|Umbarskí námorníci
+trp_marksman_of_umbar|Ostrostrelec z Umbaru
+trp_marksman_of_umbar_pl|Ostrostrelci z Umbaru
+trp_veteran_marksman_of_umbar|Skúsený ostrostrelec z Umbaru
+trp_veteran_marksman_of_umbar_pl|Skúsení ostrostrelci z Umbaru
+trp_master_marksman_of_umbar|Korzársky majstrer ostrostrelec
+trp_master_marksman_of_umbar_pl|Korzárski majstri ostrostrelci
+trp_corsair_marauder|Umbarský šermiar
+trp_corsair_marauder_pl|Umbarskí šermiari
+trp_corsair_veteran_marauder|Skúsený šermiar z Umbaru
+trp_corsair_veteran_marauder_pl|Skúsení šermiari z Umbaru
+trp_corsair_elite_marauder|Korzársky majster meča
+trp_corsair_elite_marauder_pl|Korzárski majstri meča
+trp_assassin_of_umbar|Umbarský nájomný vrah
+trp_assassin_of_umbar_pl|Umbárskí nájomní vrahovia
+trp_master_assassin_of_umbar|Korzársky nájomný vrah
+trp_master_assassin_of_umbar_pl|Korzárskí nájomní vrahovia
+trp_pikeman_of_umbar|Pikenýr z Umbaru
+trp_pikeman_of_umbar_pl|Pikenýri z Umbaru
+trp_veteran_pikeman_of_umbar|Skúsený pikenýr z Umbaru
+trp_veteran_pikeman_of_umbar_pl|Skúsení pikenýri z Umbaru
+trp_pike_master_of_umbar|Korzársky majster piky
+trp_pike_master_of_umbar_pl|Korzárski majstri piky
+trp_orc_snaga_of_isengard|Snaga ohyzd z Isengardu
+trp_orc_snaga_of_isengard_pl|Snaga ohyzdi z Isengardu
+trp_orc_of_isengard|Ohyzd z Isengardu
+trp_orc_of_isengard_pl|Ohyzdi z Isengardu
+trp_large_orc_of_isengard|Veľký ohyzd z Isengardu
+trp_large_orc_of_isengard_pl|Veľkí ohyzdi z Isengardu
+trp_fell_orc_of_isengard|Divoký ohyzd z Isengardu
+trp_fell_orc_of_isengard_pl|Divokí ohyzdi z Isengardu
+trp_large_orc_despoiler|Veľký ohyzdí nájazdník
+trp_large_orc_despoiler_pl|Veľkí ohyzdí nájazdníci
+trp_fell_orc_despoiler|Divoký ohyzdí nájazdník
+trp_fell_orc_despoiler_pl|Divokí ohyzdí nájazdníci
+trp_wolf_rider_of_isengard|Vlčí jazdec z Isengardu
+trp_wolf_rider_of_isengard_pl|Vlčí jazdci z Isengardu
+trp_warg_rider_of_isengard|Vrrčí jazdec z Isengardu
+trp_warg_rider_of_isengard_pl|Vrrčí jazdci z Isengardu
+trp_white_hand_rider|Jazdec Bielej Ruky
+trp_white_hand_rider_pl|Jazdci Bielej Ruky
 trp_warg_ghost_1b|Vrrk
-; trp_warg_ghost_1b_pl|Wargs
+trp_warg_ghost_1b_pl|Vrrci
 trp_warg_ghost_1c|Vrrk
-; trp_warg_ghost_1c_pl|Wargs
+trp_warg_ghost_1c_pl|Vrrci
 trp_warg_ghost_1d|Vrrk
-; trp_warg_ghost_1d_pl|Wargs
+trp_warg_ghost_1d_pl|Vrrci
 trp_warg_ghost_a1b|Vrrk
-; trp_warg_ghost_a1b_pl|Wargs
+trp_warg_ghost_a1b_pl|Vrrci
 trp_warg_ghost_a1c|Obrnený Vrrk
-; trp_warg_ghost_a1c_pl|Armored Wargs
+trp_warg_ghost_a1c_pl|Obrnené Vrrky
 trp_warg_ghost_a2b|Obrnený Vrrk
-; trp_warg_ghost_a2b_pl|Armored Wargs
+trp_warg_ghost_a2b_pl|Obrnené Vrrky
 trp_warg_ghost_a2c|Obrnený Vrrk
-; trp_warg_ghost_a2c_pl|Armored Wargs
+trp_warg_ghost_a2c_pl|Obrnené Vrrky
 trp_warg_ghost_a3a|Obrnený Vrrk
-; trp_warg_ghost_a3a_pl|Armored Wargs
+trp_warg_ghost_a3a_pl|Obrnené Vrrky
 trp_warg_ghost_h|Obrovský Vrrk
-; trp_warg_ghost_h_pl|Huge Wargs
-; trp_uruk_hai_tracker|Uruk Hai Tracker
-; trp_uruk_hai_tracker_pl|Uruk Hai Trackers
-; trp_large_uruk_hai_tracker|Large Uruk Hai Tracker
-; trp_large_uruk_hai_tracker_pl|Large Uruk Hai Trackers
-; trp_fighting_uruk_hai_tracker|Fighting Uruk Hai Tracker
-; trp_fighting_uruk_hai_tracker_pl|Fighting Uruk Hai Trackers
-; trp_fighting_uruk_hai_berserker|Fighting Uruk Hai Berserker
-; trp_fighting_uruk_hai_berserker_pl|Fighting Uruk Hai Berserkers
-; trp_uruk_snaga_of_isengard|Uruk Hai Newborn
-; trp_uruk_snaga_of_isengard_pl|Uruk Hai Newborns
-; trp_uruk_hai_of_isengard|Uruk Hai of Isengard
-; trp_uruk_hai_of_isengard_pl|Uruk Hai of Isengard
-; trp_large_uruk_hai_of_isengard|Large Uruk Hai of Isengard
-; trp_large_uruk_hai_of_isengard_pl|Large Uruk Hai of Isengard
-; trp_fighting_uruk_hai_warrior|Fighting Uruk Hai Warrior
-; trp_fighting_uruk_hai_warrior_pl|Fighting Uruk Hai Warriors
-; trp_fighting_uruk_hai_champion|Fighting Uruk Hai Champion
-; trp_fighting_uruk_hai_champion_pl|Fighting Uruk Hai Champions
-; trp_uruk_hai_pikeman|Uruk Hai Pikeman
-; trp_uruk_hai_pikeman_pl|Uruk Hai Pikemen
-; trp_fighting_uruk_hai_pikeman|Fighting Uruk Hai Pikeman
-; trp_fighting_uruk_hai_pikeman_pl|Fighting Uruk Hai Pikemen
-; trp_urukhai_standard_bearer|Uruk Hai Standard Bearer
-; trp_urukhai_standard_bearer_pl|Uruk Hai Standard Bearers
-; trp_uruk_snaga_of_mordor|Uruk Snaga of Mordor
-; trp_uruk_snaga_of_mordor_pl|Uruk Snagas of Mordor
-; trp_uruk_of_mordor|Uruk of Mordor
-; trp_uruk_of_mordor_pl|Uruks of Mordor
-; trp_large_uruk_of_mordor|Large Uruk of Mordor
-; trp_large_uruk_of_mordor_pl|Large Uruks of Mordor
-; trp_fell_uruk_of_mordor|Fell Uruk of Mordor
-; trp_fell_uruk_of_mordor_pl|Fell Uruks of Mordor
-; trp_uruk_slayer_of_mordor|Uruk Slayer of Mordor
-; trp_uruk_slayer_of_mordor_pl|Uruk Slayers of Mordor
-; trp_fell_uruk_slayer_of_mordor|Fell Uruk Slayer of Mordor
-; trp_fell_uruk_slayer_of_mordor_pl|Fell Uruk Slayers of Mordor
-; trp_black_uruk_of_barad_dur|Black Uruk of Barad Dur
-; trp_black_uruk_of_barad_dur_pl|Black Uruks of Barad Dur
-; trp_uruk_mordor_standard_bearer|Mordor Standard Bearer
-; trp_uruk_mordor_standard_bearer_pl|Mordor Standard Bearers
-; trp_troll_of_moria|Troll of Moria
-; trp_troll_of_moria_pl|Trolls of Moria
-; trp_armoured_troll|Armored Troll
-; trp_armoured_troll_pl|Armored Trolls
-; trp_olog_hai|Olog Hai of Mordor
-; trp_olog_hai_pl|Olog Hai of Mordor
-; trp_ent|Ent
-; trp_ent_pl|Ents
-; trp_orc_snaga_of_guldur|Orc Snaga of Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Guldur
-; trp_orc_of_guldur|Orc of Guldur
-; trp_orc_of_guldur_pl|Orcs of Guldur
-; trp_orc_snaga_of_mordor|Orc Snaga of Mordor
-; trp_orc_snaga_of_mordor_pl|Orc Snagas of Mordor
-; trp_orc_of_mordor|Orc of Mordor
-; trp_orc_of_mordor_pl|Orcs of Mordor
-; trp_large_orc_of_mordor|Large Orc of Mordor
-; trp_large_orc_of_mordor_pl|Large Orcs of Mordor
-; trp_fell_orc_of_mordor|Fell Orc of Mordor
-; trp_fell_orc_of_mordor_pl|Fell Orcs of Mordor
-; trp_warg_rider_of_gorgoroth|Warg Rider of Gorgoroth
-; trp_warg_rider_of_gorgoroth_pl|Warg Riders of Gorgoroth
-; trp_great_warg_rider_of_mordor|Great Warg Rider of Udun
-; trp_great_warg_rider_of_mordor_pl|Great Warg Riders of Udun
-; trp_morgul_orc|Morgul Orc
-; trp_morgul_orc_pl|Morgul Orcs
-; trp_fell_morgul_orc|Fell Morgul Orc
-; trp_fell_morgul_orc_pl|Fell Morgul Orcs
-; trp_orc_tracker_of_mordor|Orc Tracker of Mordor
-; trp_orc_tracker_of_mordor_pl|Orc Trackers of Mordor
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Mordor
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Mordor
-; trp_orc_archer_of_mordor|Orc Archer of Mordor
-; trp_orc_archer_of_mordor_pl|Orc Archers of Mordor
-; trp_large_orc_archer_of_mordor|Large Orc Archer of Mordor
-; trp_large_orc_archer_of_mordor_pl|Large Orc Archers of Mordor
-; trp_fell_orc_archer_of_mordor|Fell Orc Archer of Mordor
-; trp_fell_orc_archer_of_mordor_pl|Fell Orc Archers of Mordor
-; trp_wolf_rider_of_moria|Wolf Rider of Moria
-; trp_wolf_rider_of_moria_pl|Wolf Riders of Moria
-; trp_warg_rider_of_moria|Warg Rider of Moria
-; trp_warg_rider_of_moria_pl|Warg Riders of Moria
-; trp_bolg_clan_rider|Bolg Clan Rider
-; trp_bolg_clan_rider_pl|Bolg Clan Riders
-; trp_snaga_of_moria|Snaga of Moria
-; trp_snaga_of_moria_pl|Snagas of Moria
-; trp_goblin_of_moria|Goblin of Moria
-; trp_goblin_of_moria_pl|Goblins of Moria
-; trp_large_goblin_of_moria|Large Goblin of Moria
-; trp_large_goblin_of_moria_pl|Large Goblins of Moria
-; trp_fell_goblin_of_moria|Fell Goblin of Moria
-; trp_fell_goblin_of_moria_pl|Fell Goblins of Moria
-; trp_archer_snaga_of_moria|Archer Snaga of Moria
-; trp_archer_snaga_of_moria_pl|Archer Snagas of Moria
-; trp_large_goblin_archer_of_moria|Large Goblin Archer of Moria
-; trp_large_goblin_archer_of_moria_pl|Large Goblin Archers of Moria
-; trp_fell_goblin_archer_of_moria|Fell Goblin Archer of Moria
-; trp_fell_goblin_archer_of_moria_pl|Fell Goblin Archers of Moria
-; trp_goblin_gundabad|Gundabad Goblin
-; trp_goblin_gundabad_pl|Gundabad Goblins
-; trp_orc_gundabad|Gundabad Orc
-; trp_orc_gundabad_pl|Gundabad Orcs
-; trp_orc_fighter_gundabad|Gundabad Orc Fighter
-; trp_orc_fighter_gundabad_pl|Gundabad Orc Fighters
-; trp_fell_orc_warrior_gundabad|Gundabad Fell Orc Warrior
-; trp_fell_orc_warrior_gundabad_pl|Gundabad Fell Orc Warriors
-; trp_goblin_bowmen_gundabad|Goblin Shooter of the North
-; trp_goblin_bowmen_gundabad_pl|Goblin Shooters of the North
-; trp_keen_eyed_goblin_archer_gundabad|Keen-Eyed Goblin Archer of the North
-; trp_keen_eyed_goblin_archer_gundabad_pl|Keen-Eyed Goblin Archers of the North
-; trp_fell_goblin_archer_gundabad|Fell Goblin Archer of the North
-; trp_fell_goblin_archer_gundabad_pl|Fell Goblin Archers of the North
-; trp_goblin_rider_gundabad|Gundabad Goblin Rider
-; trp_goblin_rider_gundabad_pl|Gundabad Goblin Riders
-; trp_warg_rider_gundabad|Gundabad Warg Rider
-; trp_warg_rider_gundabad_pl|Gundabad Warg Riders
-; trp_goblin_north_clan_rider|Goblin North Clan Rider
-; trp_goblin_north_clan_rider_pl|Goblin North Clan Riders
-; trp_mountain_goblin|Mountain Goblin
-; trp_mountain_goblin_pl|Mountain Goblins
-; trp_tribal_orc|Tribal Orc
-trp_tribal_orc_pl|Klan Škratov
-; trp_tribal_orc_warrior|Tribal Orc Warrior
-; trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-; trp_tribal_orc_chief|Tribal Orc Chief
-; trp_tribal_orc_chief_pl|Tribal Orc Chiefs
-; trp_black_numenorean_renegade|Black Numenorean Renegade
-; trp_black_numenorean_renegade_pl|Black Numenorean Renegades
-; trp_black_numenorean_warrior|Black Numenorean Warrior
-; trp_black_numenorean_warrior_pl|Black Numenorean Warriors
-; trp_black_numenorean_veteran_warrior|Black Numenorean Veteran Warrior
-; trp_black_numenorean_veteran_warrior_pl|Black Numenorean Veteran Warriors
-; trp_black_numenorean_champion|Black Numenorean Champion
-; trp_black_numenorean_champion_pl|Black Numenorean Champions
-; trp_black_numenorean_assassin|Black Numenorean Assassin
-; trp_black_numenorean_assassin_pl|Black Numenorean Assassins
-; trp_black_numenorean_veteran_horseman|Black Numenorean Horseman
-; trp_black_numenorean_veteran_horseman_pl|Black Numenorean Horsemen
-; trp_black_numenorean_horsemaster|Black Numenorean Horsemaster
-; trp_black_numenorean_horsemaster_pl|Black Numenorean Horsemasters
-; trp_noldorin_commander|Noldorin Commander
-; trp_noldorin_commander_pl|Noldorin Commanders
-; trp_elf_captain_of_lothlorien|Elf Captain of Lothlorien
-; trp_elf_captain_of_lothlorien_pl|Elf Captains of Lothlorien
-; trp_lothlorien_lieutenant|Lothlorien Lieutenant
-; trp_lothlorien_lieutenant_pl|Lothlorien Lieutenants
-; trp_elf_captain_of_mirkwood|Elf Captain of Greenwood
-; trp_elf_captain_of_mirkwood_pl|Elf Captains of Greenwood
-; trp_mirkwood_lieutenant|Greenwood Lieutenant
-; trp_mirkwood_lieutenant_pl|Greenwood Lieutenants
-; trp_elf_captain_of_rivendell|Elf Captain of Rivendell
-; trp_elf_captain_of_rivendell_pl|Elf Captains of Rivendell
-; trp_rivendell_lieutenant|Rivendell Lieutenant
-; trp_rivendell_lieutenant_pl|Rivendell Lieutenants
-; trp_lieutenant_of_rohan|Lieutenant of Rohan
-; trp_lieutenant_of_rohan_pl|Lieutenants of Rohan
-; trp_captain_of_rohan|Captain of Rohan
-; trp_captain_of_rohan_pl|Captains of Rohan
-; trp_high_captain_of_rohan|High Captain of Rohan
-; trp_high_captain_of_rohan_pl|High Captains of Rohan
-; trp_lieutenant_of_isengard|Lieutenant of Isengard
-; trp_lieutenant_of_isengard_pl|Lieutenants of Isengard
-; trp_captain_of_isengard|Captain of Isengard
-; trp_captain_of_isengard_pl|Captains of Isengard
-; trp_high_captain_of_isengard|High Captain of Isengard
-; trp_high_captain_of_isengard_pl|High Captains of Isengard
-; trp_lieutenant_of_mordor|Lieutenant of Mordor
-; trp_lieutenant_of_mordor_pl|Lieutenants of Mordor
-; trp_captain_of_mordor|Captain of Mordor
-; trp_captain_of_mordor_pl|Captains of Mordor
-; trp_high_captain_of_mordor|High Captain of Mordor
-; trp_high_captain_of_mordor_pl|High Captains of Mordor
-; trp_easterling_chieftain|Variag Chieftain
-; trp_easterling_chieftain_pl|Variag Chieftains
-; trp_easterling_lieutenant|Variag War Priest
-; trp_easterling_lieutenant_pl|Variag War Priests
-; trp_harad_chieftain|Harad Chieftain
-; trp_harad_chieftain_pl|Harad Chieftains
-; trp_harad_lieutenant|Harad Lieutenant
-; trp_harad_lieutenant_pl|Harad Lieutenants
-; trp_black_numenorean_captain|Black Numenorean Captain
-; trp_black_numenorean_captain_pl|Black Numenorean Captains
-; trp_black_numenorean_lieutenant|Black Numenorean Lieutenant
-; trp_black_numenorean_lieutenant_pl|Black Numenorean Lieutenants
-; trp_dunnish_chieftain|Dunnish Chieftain
-; trp_dunnish_chieftain_pl|Dunnish Chieftains
-; trp_dunnish_lieutenant|Dunnish Hetman
-; trp_dunnish_lieutenant_pl|Dunnish Hetmen
-; trp_goblin_chieftain|Goblin Chieftain
-; trp_goblin_chieftain_pl|Goblin Chieftains
-; trp_captain_of_gondor|Captain of Gondor
-; trp_captain_of_gondor_pl|Captains of Gondor
-; trp_nobleman|Nobleman
-; trp_nobleman_pl|Noblemen
-; trp_gondor_agent|Gondor Agent
-; trp_gondor_agent_pl|Gondor Agents
-; trp_rohan_agent|Rohan Agent
-; trp_rohan_agent_pl|Rohan Agents
-; trp_mordor_agent|Mordor Agent
-; trp_mordor_agent_pl|Mordor Agents
-; trp_isengard_agent|Isengard Agent
-; trp_isengard_agent_pl|Isengard Agents
-; trp_looter|Looter
-; trp_looter_pl|Looters
-; trp_bandit|Bandit
-; trp_bandit_pl|Bandits
-; trp_brigand|Brigand
-trp_brigand_pl|Lupiči
-; trp_mountain_bandit|Mountain Bandit
+trp_warg_ghost_h_pl|Obrovské Vrrky
+trp_uruk_hai_tracker|Uruk Hai stopár
+trp_uruk_hai_tracker_pl|Uruk Hai stopári
+trp_large_uruk_hai_tracker|Veľký Uruk Hai stopár
+trp_large_uruk_hai_tracker_pl|Veľkí Uruk Hai stopáry
+trp_fighting_uruk_hai_tracker|Bojový Uruk Hai stopár
+trp_fighting_uruk_hai_tracker_pl|Bojoví Uruk Hai stopári
+trp_fighting_uruk_hai_berserker|Bojový Uruk Hai berserk
+trp_fighting_uruk_hai_berserker_pl|Bojoví Uruk Hai berserkovia
+trp_uruk_snaga_of_isengard|Novorodený Uruk Hai
+trp_uruk_snaga_of_isengard_pl|Novorodení Uruk Hai
+trp_uruk_hai_of_isengard|Uruk Hai z Isengardu
+trp_uruk_hai_of_isengard_pl|Uruk Hai z Isengardu
+trp_large_uruk_hai_of_isengard|Veľký Uruk Hai z Isengardu
+trp_large_uruk_hai_of_isengard_pl|Veľkí Uruk Hai z Isengardu
+trp_fighting_uruk_hai_warrior|Bojový Uruk Hai
+trp_fighting_uruk_hai_warrior_pl|Bojoví Uruk Hai
+trp_fighting_uruk_hai_champion|Šampión Uruk Hai
+trp_fighting_uruk_hai_champion_pl|Šampióni Uruk Hai
+trp_uruk_hai_pikeman|Kopijník Uruk Hai
+trp_uruk_hai_pikeman_pl|Kopijníci Uruk Hai
+trp_fighting_uruk_hai_pikeman|Bojový kopijník Uruk Hai
+trp_fighting_uruk_hai_pikeman_pl|Bojoví kopijníci Uruk Hai
+trp_urukhai_standard_bearer|Uruk Hai vlajkonoš
+trp_urukhai_standard_bearer_pl|Zástavníci Uruk Hai
+trp_uruk_snaga_of_mordor|Uruk snaga z Mordoru
+trp_uruk_snaga_of_mordor_pl|Uruk snagy z Mordoru
+trp_uruk_of_mordor|Uruk z Mordoru
+trp_uruk_of_mordor_pl|Urukovia z Mordoru
+trp_large_uruk_of_mordor|Veľký Uruk z Mordoru
+trp_large_uruk_of_mordor_pl|Veľkí Urukovia z Mordoru
+trp_fell_uruk_of_mordor|Divoký Uruk z Mordoru
+trp_fell_uruk_of_mordor_pl|Divokí Urukovia z Mordoru
+trp_uruk_slayer_of_mordor|Mordorský Uruk zabijak
+trp_uruk_slayer_of_mordor_pl|Mordorskí Urukovia zabijaci
+trp_fell_uruk_slayer_of_mordor|Divoký Uruk zabijak z Mordoru
+trp_fell_uruk_slayer_of_mordor_pl|Divokí Urukovia zabijaci z Mordoru
+trp_black_uruk_of_barad_dur|Čierny Uruk z Barad Dur
+trp_black_uruk_of_barad_dur_pl|Čierni Urukovia z Barad Dur
+trp_uruk_mordor_standard_bearer|Mordorský vlajkonoš
+trp_uruk_mordor_standard_bearer_pl|Zástavníci Mordoru
+trp_troll_of_moria|Jaskynný zlobor
+trp_troll_of_moria_pl|Jaskynní zlobri
+trp_armoured_troll|Obrnený zlobor
+trp_armoured_troll_pl|Obrnení obry
+trp_olog_hai|Olog Hai z Mordoru
+trp_olog_hai_pl|Olog Hai z Mordoru
+trp_ent|Ent
+trp_ent_pl|Enti
+trp_orc_snaga_of_guldur|Snaga ohyzd z Gulduru
+trp_orc_snaga_of_guldur_pl|Snaga ohyzdi z Gulduru
+trp_orc_of_guldur|Ohyzd z Gulduru
+trp_orc_of_guldur_pl|Ohyzdi z Gulduru
+trp_orc_snaga_of_mordor|Snaga ohyzd z Mordoru
+trp_orc_snaga_of_mordor_pl|Snaga ohyzdi z Mordoru
+trp_orc_of_mordor|Ohyzd z Mordoru
+trp_orc_of_mordor_pl|Ohyzdi z Mordoru
+trp_large_orc_of_mordor|Veľký ohyzd z Mordoru
+trp_large_orc_of_mordor_pl|Veľkí ohyzdi z Mordoru
+trp_fell_orc_of_mordor|Divoký ohyzd z Mordoru
+trp_fell_orc_of_mordor_pl|Divokí ohyzdi z Mordoru
+trp_warg_rider_of_gorgoroth|Vrrčí jazdec z Gorgorothu
+trp_warg_rider_of_gorgoroth_pl|Vrrčí jazdci z Gorgorothu
+trp_great_warg_rider_of_mordor|Jazdec na veľkom vrrkovy z Udunu
+trp_great_warg_rider_of_mordor_pl|Jazdci na veľkých vrrkoch z Udunu
+trp_morgul_orc|Morgulský ohyzd
+trp_morgul_orc_pl|Morgulskí ohyzdi
+trp_fell_morgul_orc|Divoký Morgulský ohyzd
+trp_fell_morgul_orc_pl|Divokí Morgulskí ohyzdi
+trp_orc_tracker_of_mordor|Ohyzdí stopár z Mordoru
+trp_orc_tracker_of_mordor_pl|Ohyzdí stopári z Mordoru
+trp_fell_orc_tracker_of_mordor|Divoký ohyzdí stopár z Mordoru
+trp_fell_orc_tracker_of_mordor_pl|Divokí ohyzdí stopári z Mordoru
+trp_orc_archer_of_mordor|Mordorský ohyzdí lukostrelec
+trp_orc_archer_of_mordor_pl|Mordorskí ohyzdí lukostrelci
+trp_large_orc_archer_of_mordor|Veľký ohyzdí lukostrelec z Mordoru
+trp_large_orc_archer_of_mordor_pl|Veľkí ohyzdí lukostrelci z Mordoru
+trp_fell_orc_archer_of_mordor|Divoký ohyzdí lukostrelec z Mordoru
+trp_fell_orc_archer_of_mordor_pl|Divokí ohyzdí lukostrelci z Mordoru
+trp_wolf_rider_of_moria|Vlčí jazdec z Morie
+trp_wolf_rider_of_moria_pl|Vlčí jazdci z Morie
+trp_warg_rider_of_moria|Vrrčí jazdec z Morie
+trp_warg_rider_of_moria_pl|Vrrčí jazdci z Morie
+trp_bolg_clan_rider|Bolgov kmeňový jazdec
+trp_bolg_clan_rider_pl|Bolgoví kmeňoví jazdci
+trp_snaga_of_moria|Snaga z Morie
+trp_snaga_of_moria_pl|Snagy z Morie
+trp_goblin_of_moria|Goblin z Morie
+trp_goblin_of_moria_pl|Goblini z Morie
+trp_large_goblin_of_moria|Veľký goblin z Morie
+trp_large_goblin_of_moria_pl|Veľkí goblini z Morie
+trp_fell_goblin_of_moria|Divoký goblin z Morie
+trp_fell_goblin_of_moria_pl|Divokí goblini z Morie
+trp_archer_snaga_of_moria|Gobliní lukostrelec z Morie
+trp_archer_snaga_of_moria_pl|Gobliní lukostrelci z Morie
+trp_large_goblin_archer_of_moria|Veľký gobliní lukostrelec z Morie
+trp_large_goblin_archer_of_moria_pl|Veľkí gobliní lukostrelci z Morie
+trp_deep_dweller_of_moria2|Ohyzd z hĺbin Morie
+trp_deep_dweller_of_moria2_pl|Ohyzdi z hĺbin Morie
+trp_goblin_gundabad|Goblin z Gundabadu
+trp_goblin_gundabad_pl|Goblini z Gundabadu
+trp_orc_gundabad|Ohyzd z Gundabadu
+trp_orc_gundabad_pl|Ohyzdi z Gundabadu
+trp_orc_fighter_gundabad|Bojový ohyzd z Gundabadu
+trp_orc_fighter_gundabad_pl|Bojoví ohyzdi z Gundabadu
+trp_fell_orc_warrior_gundabad| Ohyzdí vojak z Gundabadu
+trp_fell_orc_warrior_gundabad_pl|Ohyzdí vojaci z Gundabadu
+trp_orc_beserker_gundabad|Ohyzdí berserk z Gundabadu
+trp_orc_beserker_gundabad_pl|Ohyzdí berserkovia z Gundabadu
+trp_warg_skirmisher_gundabad|Gundabadský vrrči strelec
+trp_warg_skirmisher_gundabad_pl|Gundabadskí vrrči strelci strelci
+trp_goblin_north_clan_skirmisher|Gobliní vrrči strelec Sevesného klanu goblinov
+trp_goblin_north_clan_skirmisher_pl|Gobliní vrrčí strelci Severského klanu goblinov
+trp_goblin_rider_gundabad|Gobliní jazdec z Gundabadu
+trp_goblin_rider_gundabad_pl|Gobliní jazdci z Gundabadu
+trp_warg_rider_gundabad|Vrrčí jazdec z Gundabadu
+trp_warg_rider_gundabad_pl|Vrrčí jazdci z Gundabadu
+trp_goblin_north_clan_rider|Jazdec Severského klanu goblinov
+trp_goblin_north_clan_rider_pl|Jazdci Severského klanu goblinov
+trp_mountain_goblin|Horský goblin
+trp_mountain_goblin_pl|Horský goblini
+trp_tribal_orc|Kmeňový ohyzd
+trp_tribal_orc_pl|Kmeňoví ohyzdi
+trp_tribal_orc_warrior|Bojový kmneňový ohyzd
+trp_tribal_orc_warrior_pl|Bojoví kmeňoví ohyzdi
+trp_tribal_orc_chief2|Ohyzdí náčelník z Morie
+trp_tribal_orc_chief2_pl|Ohyzdí náčelníci z Morie
+trp_black_numenorean_renegade|Čierno-Númenorejský odpadlík
+trp_black_numenorean_renegade_pl|Čierno-Númenorejskí odpadlíci
+trp_black_numenorean_warrior|Čierno-Númenorejský bojovník
+trp_black_numenorean_warrior_pl|Čierno-Númenorejskí bojovníci
+trp_black_numenorean_veteran_warrior|Čierno-Númenorejský skúsený vojak
+trp_black_numenorean_veteran_warrior_pl|Čierno-Númenorejskí skúsení vojaci
+trp_black_numenorean_champion|Čierno-Númenorejský šampión
+trp_black_numenorean_champion_pl|Čierno-Númenorejskí šampióni
+trp_black_numenorean_assassin|Čierno-Númenorejský nájomný vrah
+trp_black_numenorean_assassin_pl|Čierno-Númenorejskí nájomní vrazi
+trp_black_numenorean_veteran_horseman|Čierno-Númenorejský jazdec
+trp_black_numenorean_veteran_horseman_pl|Čierno-Númenorejskí jazdci
+trp_black_numenorean_horsemaster|Čierno-Númenorejský majster jazdec
+trp_black_numenorean_horsemaster_pl|Čierno-Númenorejskí majstri jazdci
+trp_noldorin_commander|Noldorský veliteľ
+trp_noldorin_commander_pl|Noldorskí velitelia
+trp_elf_captain_of_lothlorien|Elfský kapitán z Lothlorienu
+trp_elf_captain_of_lothlorien_pl|Elfskí kapitáni z Lothlorienu
+trp_lothlorien_lieutenant|Lothlorienský dôstojník
+trp_lothlorien_lieutenant_pl|Lothlorienskí dôstojníci
+trp_elf_captain_of_mirkwood|Elfský kapitán z Temnohvozdu
+trp_elf_captain_of_mirkwood_pl|Elfskí kapitáni z Temnohvozdu
+trp_mirkwood_lieutenant|Temnohvozdský dôstojník
+trp_mirkwood_lieutenant_pl|Temnohvozdskí dôstojníci
+trp_elf_captain_of_rivendell|Elfský kapitán z Roklinky
+trp_elf_captain_of_rivendell_pl|Elfskí kapitáni z Roklinky
+trp_rivendell_lieutenant|Dôstojník z Roklinky
+trp_rivendell_lieutenant_pl|Dôstojníci z Roklinky
+trp_lieutenant_of_rohan|Rohanský dôstojník
+trp_lieutenant_of_rohan_pl|Rohanskí dôstojníci
+trp_captain_of_rohan|Kapitán z Rohanu
+trp_captain_of_rohan_pl|Kapitáni z Rohanu
+trp_high_captain_of_rohan|Vyšší kapitán z Rohanu
+trp_high_captain_of_rohan_pl|Vyšší kapitáni z Rohanu
+trp_lieutenant_of_isengard|Isengardský dôstojník
+trp_lieutenant_of_isengard_pl|Isengardskí dôstojníci
+trp_captain_of_isengard|Kapitán z Isengardu
+trp_captain_of_isengard_pl|Kapitáni z Isengardu
+trp_high_captain_of_isengard|Vrchný kapitán z Isengardu
+trp_high_captain_of_isengard_pl|Vrchní kapitáni z Isengardu
+trp_lieutenant_of_mordor|Mordorský dôstojník
+trp_lieutenant_of_mordor_pl|Mordorskí dôstojníci
+trp_captain_of_mordor|Kapitán z Mordoru
+trp_captain_of_mordor_pl|Kapitáni z Mordoru
+trp_high_captain_of_mordor|Vrchný kapitán z Mordoru
+trp_high_captain_of_mordor_pl|Vrchní kapitáni z Mordoru
+trp_easterling_chieftain|Variagský náčelník
+trp_easterling_chieftain_pl|Variagskí náčelníci
+trp_easterling_lieutenant|Variagský bojový kňaz
+trp_easterling_lieutenant_pl|Variagskí bojoví kňazi
+trp_harad_chieftain|Haradský náčelník
+trp_harad_chieftain_pl|Haradskí náčelníci
+trp_harad_lieutenant|Haradský dôstojník
+trp_harad_lieutenant_pl|Haradskí dôstojníci
+trp_black_numenorean_captain|Čierno-Númenorejský kapitán
+trp_black_numenorean_captain_pl|Čierno-Númenorejskí kapitáni
+trp_black_numenorean_lieutenant|Čierno-Númenorejský dôstojník
+trp_black_numenorean_lieutenant_pl|Čierno-Númenorejskí dôstojníci
+trp_dunnish_night_wolf|Vrchovecký Nočný vlk
+trp_dunnish_night_wolf_pl|Vrchoveckí Noční vlci
+trp_dunnish_lieutenant|Vrchovecký hajtman
+trp_dunnish_lieutenant_pl|Vrchoveckí hajtmani
+trp_goblin_chieftain|Náčelník goblinov
+trp_goblin_chieftain_pl|Náčelníci goblinov
+trp_captain_of_gondor|Kapitán z Gondoru
+trp_captain_of_gondor_pl|Kapitáni z Gondoru
+trp_nobleman|Šľachtic
+trp_nobleman_pl|Šlachtici
+trp_gondor_agent|Gondorský agent
+trp_gondor_agent_pl|Gondorskí agenti
+trp_rohan_agent|Rohanský agent
+trp_rohan_agent_pl|Rohanskí agenti
+trp_mordor_agent|Mordorský agent
+trp_mordor_agent_pl|Mordorskí agenti
+trp_isengard_agent|Isengardský agent
+trp_isengard_agent_pl|Isengardskí agenti
+trp_looter|Lupič
+trp_looter_pl|Lupiči
+trp_bandit|Bandita
+trp_bandit_pl|Banditi
+trp_brigand|Zbojník
+trp_brigand_pl|Zbojníci
+trp_mountain_bandit|Horský bandita
 trp_mountain_bandit_pl|Horskí Banditi
-; trp_forest_bandit|Forest Bandit
+trp_forest_bandit|Lesný bandita
 trp_forest_bandit_pl|Lesní Banditi
-; trp_sea_raider|Sea Raider
-; trp_sea_raider_pl|Sea Raiders
-; trp_steppe_bandit|Steppe Bandit
-; trp_steppe_bandit_pl|Steppe Bandits
-; trp_manhunter|Manhunter
+trp_sea_raider|Morský pirát
+trp_sea_raider_pl|Morskí piráti
+trp_steppe_bandit|Stepný bandita
+trp_steppe_bandit_pl|Stepní banditi
+trp_manhunter|Lovec ľudí
 trp_manhunter_pl|Lovci Ľudí
-; trp_kidnapped_girl|Kidnapped Girl
-; trp_kidnapped_girl_pl|Kidnapped Girls
-; trp_refugee|Refugee
-; trp_refugee_pl|Refugees
-; trp_peasant_woman|Peasant Woman
-; trp_peasant_woman_pl|Peasant Women
-; trp_caravan_master|Caravan Master
-; trp_caravan_master_pl|Caravan Masters
-; trp_caravan_guard|Caravan Guard
-; trp_caravan_guard_pl|Caravan Guards
-; trp_messenger_man|Messenger
-; trp_messenger_man_pl|Messengers
-; trp_messenger_elf|Messenger
-; trp_messenger_elf_pl|Messengers
-; trp_messenger_dwarf|Messenger
-; trp_messenger_dwarf_pl|Messengers
-; trp_messenger_orc|Messenger
-; trp_messenger_orc_pl|Messengers
-; trp_messenger_evil_man|Messenger
-; trp_messenger_evil_man_pl|Messengers
-; trp_town_walker_1|Townsman
-; trp_town_walker_1_pl|Townsmen
-; trp_town_walker_2|Townswoman
-; trp_town_walker_2_pl|Townswomen
-; trp_village_walker_1|Villager
-; trp_village_walker_1_pl|Villagers
-; trp_village_walker_2|Villager
-; trp_village_walker_2_pl|Villagers
-; trp_spy_walker_1|Townsman
-; trp_spy_walker_1_pl|Townsmen
-; trp_spy_walker_2|Townswoman
-; trp_spy_walker_2_pl|Townswomen
-; trp_walker_man_gondor_black|Townsman
-; trp_walker_man_gondor_white|Townsman
-; trp_walker_man_gondor_blue|Townsman
-; trp_walker_man_gondor_green|Townsman
-; trp_walker_man_rohan_t|Rohan Townsman
-; trp_walker_man_rohan_d|Rohan Townsman
-; trp_walker_woman_rohan_t|Rohan Maiden
-; trp_walker_woman_rohan_d|Rohan Maiden
-; trp_walker_woman_gondor_b|Gondor Woman
-; trp_walker_woman_gondor_bw|Gondor Woman
-; trp_walker_woman_gondor_w|Gondor Noble
-; trp_ramun_the_slave_trader|Ramun the slave trader
-; trp_guide|Quick Jimmy
-; trp_galeas|Galeas
-; trp_farmer_from_bandit_village|Farmer
-; trp_farmer_from_bandit_village_pl|Farmers
+trp_kidnapped_girl|Unesené dievča
+trp_kidnapped_girl_pl|Unesené dievčatá
+trp_refugee|Utečenec
+trp_refugee_pl|Utečenci
+trp_peasant_woman|Roľnícka žena
+trp_peasant_woman_pl|Roľnícke ženy
+trp_caravan_master|Vodca karavany
+trp_caravan_master_pl|Vodcovia karavany
+trp_caravan_guard|Strážnik karavany
+trp_caravan_guard_pl|Stráž karavany
+trp_messenger_man|Posol
+trp_messenger_man_pl|Poslovia
+trp_messenger_elf|Posol
+trp_messenger_elf_pl|Poslovia
+trp_messenger_dwarf|Posol
+trp_messenger_dwarf_pl|Poslovia
+trp_messenger_orc|Posol
+trp_messenger_orc_pl|Poslovia
+trp_messenger_evil_man|Posol
+trp_messenger_evil_man_pl|Poslovia
+trp_town_walker_1|Mešťan
+trp_town_walker_1_pl|Mešťania
+trp_town_walker_2|Mešťanka
+trp_town_walker_2_pl|Mešťanky
+trp_village_walker_1|Dedinčan
+trp_village_walker_1_pl|Dedinčania
+trp_village_walker_2|Dedinčan
+trp_village_walker_2_pl|Dedinčania
+trp_spy_walker_1|Mešťan
+trp_spy_walker_1_pl|Mešťania
+trp_spy_walker_2|Mešťanka
+trp_spy_walker_2_pl|Mešťanky
+trp_walker_man_gondor_black|Mešťan
+trp_walker_man_gondor_white|Mešťan
+trp_walker_man_gondor_blue|Mešťan
+trp_walker_man_gondor_green|Mešťan
+trp_walker_man_rohan_t|Rohanský mešťan
+trp_walker_man_rohan_d|Rohanskí mešťania
+trp_walker_woman_rohan_t|Rohanská paní
+trp_walker_woman_rohan_d|Rohanská dáma
+trp_walker_woman_gondor_b|Gondorská žena
+trp_walker_woman_gondor_bw|Gondorská žena
+trp_walker_woman_gondor_w|Gondorský šľachtic
+trp_ramun_the_slave_trader|Otrokár Ramun
+trp_guide|Rychlý Jimmy
+trp_galeas|Galeas
+trp_farmer_from_bandit_village|Sedliak
+trp_farmer_from_bandit_village_pl|Sedliaci
 trp_trainer_1|Tréner
 trp_trainer_2|Tréner
 trp_trainer_3|Tréner
@@ -908,655 +908,677 @@ trp_trainer_khand|Tréner
 trp_trainer_rhun|Tréner
 trp_trainer_harad|Tréner
 trp_trainer_umbar|Tréner
-; trp_ransom_broker_1|Ransom Broker
-; trp_ransom_broker_2|Ransom Broker
-; trp_ransom_broker_3|Ransom Broker
-; trp_ransom_broker_4|Ransom Broker
-; trp_ransom_broker_5|Ransom Broker
-; trp_ransom_broker_6|Ransom Broker
-; trp_ransom_broker_7|Ransom Broker
-; trp_ransom_broker_8|Ransom Broker
-; trp_ransom_broker_9|Ransom Broker
-; trp_ransom_broker_10|Ransom Broker
-; trp_tavern_traveler_1|Traveller
-; trp_tavern_traveler_2|Traveller
-; trp_tavern_traveler_3|Traveller
-; trp_tavern_traveler_4|Traveller
-; trp_tavern_traveler_5|Traveller
-; trp_tavern_traveler_6|Traveller
-; trp_tavern_traveler_7|Traveller
-; trp_tavern_traveler_8|Traveller
-; trp_tavern_traveler_9|Traveller
-; trp_tavern_traveler_10|Traveller
-; trp_tavern_minstrel_1|Minstrel
-; trp_npc1|Mablung
-; trp_npc2|Cirdil
-; trp_npc3|Ulfas
-; trp_npc4|Galmyne
-; trp_npc5|Glorfindel
-; trp_npc6|Luevanna
-; trp_npc7|Kili Goldfinger
-; trp_npc8|Faniul
-; trp_npc9|Gulm
-; trp_npc10|Durgash
-; trp_npc11|Ufthak
-; trp_npc12|Gorbag
-; trp_npc13|Lykyada
-; trp_npc14|Fuldimir
-; trp_npc15|Bolzog
-; trp_npc16|Varfang
-; trp_npc17|Dimborn
-; trp_gondor_lord|Steward Denethor
-; trp_gondor_lord_pl|Steward
-; trp_rohan_lord|King Theoden
-; trp_rohan_lord_pl|King
-; trp_isengard_lord|Saruman
-; trp_isengard_lord_pl|Master
-; trp_mordor_lord|Mouth of Sauron
-; trp_mordor_lord_pl|Satrap
-; trp_harad_lord|Chief Ul-Ulcari
-; trp_harad_lord_pl|Chief
-; trp_rhun_lord|Jarl Helcaroth
-; trp_rhun_lord_pl|Jarl
-; trp_khand_lord|Shibh Krukmahur
-; trp_khand_lord_pl|Shibh
-; trp_umbar_lord|Admiral Tulmir
-; trp_umbar_lord_pl|Admiral
-; trp_lorien_lord|Lady Galadriel
-; trp_lorien_lord_pl|Lady
-; trp_imladris_lord|Lord Elrond
-; trp_imladris_lord_pl|Lord
-; trp_woodelf_lord|King Thranduil
-; trp_woodelf_lord_pl|King
-; trp_moria_lord|Master Bolg the Lesser
-; trp_moria_lord_pl|Master
-; trp_guldur_lord|Master Fuinur
-; trp_guldur_lord_pl|Master
-; trp_gundabad_lord|Master Burza Krual
-; trp_gundabad_lord_pl|Master
-; trp_dale_lord|King Brand
-; trp_dale_lord_pl|King
-; trp_dwarf_lord|King Dain II Ironfoot
-; trp_dwarf_lord_pl|King
-; trp_dunland_lord|Chief Daeglaf the Black
-; trp_dunland_lord_pl|Chief
-; trp_beorn_lord|Chief Grimbeorn the Old
-; trp_beorn_lord_pl|Chief
-; trp_lorien_marshall|Celeborn
-; trp_pippin_notmet|halfling
-; trp_merry_notmet|halfling
-; trp_pippin|Pippin
-; trp_merry|Merry
-; trp_knight_1_1|Angbor
-; trp_knight_1_2|Baranor
-; trp_knight_1_3|Prince Imrahil
-; trp_knight_1_4|Orthalion
-; trp_knight_1_5|Duinhir
-; trp_knight_1_6|Hirluin the Fair
-; trp_knight_1_7|Faramir
-; trp_knight_1_8|Forlong the Fat
-; trp_knight_1_9|Grimbold
-; trp_knight_1_10|Erkenbrand
-; trp_knight_1_11|Elfhelm
-; trp_knight_1_12|Hama
-; trp_knight_1_13|Gamling
-; trp_knight_1_14|Éomer
-; trp_knight_1_15|Ugluk
-; trp_knight_1_16|Mauhur
-; trp_knight_1_17|Mog the Seven-fingered
-; trp_knight_1_18|Hushnak Longshanks
-; trp_knight_1_19|Gridash the Tree-biter
-; trp_knight_1_20|Gronk the Man-eater
-; trp_knight_2_1|Captain Mortakh
-; trp_knight_2_2|Berúthiel
-; trp_knight_2_3|Skang
-; trp_knight_2_4|Pharakhâd The Bastard
-; trp_knight_2_5|Grishnakh
-; trp_knight_2_51|Gothmog
-; trp_knight_2_51_pl|Lieutenant
-; trp_knight_2_6|Chieftain Karna the Lion
-; trp_knight_2_7|Chieftain Na’man
-; trp_knight_2_8|Chieftain Haarith
-; trp_knight_2_11|Kusulak
-; trp_knight_2_12|Ulwarth the Balchoth
-; trp_knight_2_13|Brodda
-; trp_knight_2_16|Torask
-; trp_knight_2_17|Lurmsakun
-; trp_knight_3_1|Captain Morbir
-; trp_knight_3_2|Captain Angamaitë
-; trp_knight_3_3|Captain Sangahyando
-; trp_knight_3_6|Haldir
-; trp_knight_3_7|Orophin
-; trp_knight_3_11|Elladan
-; trp_knight_3_12|Elrohir
-; trp_knight_3_13|Halbarad
-; trp_knight_3_16|Miriel
-; trp_knight_3_17|Gladvaethor
-; trp_knight_4_1|Whip Snog
-; trp_knight_4_2|Whip Snotgor
-; trp_knight_4_6|General Tuskim
-; trp_knight_4_7|General Mugslag
-; trp_knight_4_11|Beranhelm
-; trp_knight_4_12|Beranor Blackfur
-; trp_knight_4_16|Whip Brolgukhsh
-; trp_knight_4_17|Whip Grumrunt
-; trp_knight_4_18|Whip Grimsob
-; trp_knight_5_1|Lord Halward
-; trp_knight_5_2|Lord Bard
-; trp_knight_5_3|Lord Esgarain
-; trp_knight_5_6|Fulgni Longbeard
-; trp_knight_5_7|Thorin Stonehelm
-; trp_knight_5_11|Chief Fudreim
-; trp_knight_5_12|Chief Wulf
-; trp_smith_mtirith|Berethor the Smith
-; trp_smith_mtirith_pl|Steward's smiths
-; trp_smith_pelargir|Hallatan Metalmaster
-; trp_smith_pelargir_pl|smithy
-; trp_smith_linhir|Bor the Armorer
-; trp_smith_linhir_pl|smithy
-; trp_smith_dolamroth|Haldad the Smith
-; trp_smith_dolamroth_pl|Amroth smiths
-; trp_smith_edhellond|Ryis Ironbender
-; trp_smith_edhellond_pl|smithy
-; trp_smith_lossarnach|Berin Axemaker
-; trp_smith_lossarnach_pl|smithy
-; trp_smith_tarnost|Harandil Steelhammer
-; trp_smith_tarnost_pl|smithy
-; trp_smith_erech|Lorne the Black
-; trp_smith_erech_pl|smithy
-; trp_smith_pinnath|Tarandil Swordmaker
-; trp_smith_pinnath_pl|smithy
-; trp_smith_eosgiliath|Bzurg the Looter
-; trp_smith_eosgiliath_pl|smithy
-; trp_smith_wosgiliath|Gardil
-; trp_smith_wosgiliath_pl|makeshift smithy
-; trp_smith_calembel|Agronom
-; trp_smith_calembel_pl|smithy
-; trp_smith_hannun|Fal the Ranger Smith
-; trp_smith_hannun_pl|ranger gear stash
-; trp_smith_candros|Kalimdor
-; trp_smith_candros_pl|smithy
-; trp_smith_edoras|Eaoden Steelmaster
-; trp_smith_edoras_pl|King's smithy
-; trp_smith_aldburg|Fulm Ironhoof
-; trp_smith_aldburg_pl|smithy
-; trp_smith_hornburg|Aldhelm
-; trp_smith_hornburg_pl|smithy
-; trp_smith_eastemnet|Eadfrid
-; trp_smith_eastemnet_pl|smithy
-; trp_smith_westfold|Deor Helmmaker
-; trp_smith_westfold_pl|smithy
-; trp_smith_westemnet|Armourer
-; trp_smith_westemnet_pl|smithy
-; trp_smith_eastfold|Eaderan Ironcarver
-; trp_smith_eastfold_pl|smithy
-; trp_smith_morannon|Hurbag Gateforger
-; trp_smith_morannon_pl|smithy
-; trp_smith_mmorgul|Orgurz Firebelcher
-; trp_smith_mmorgul_pl|smithy
-; trp_town_24_smith|Boz Ironspoiler
-; trp_town_24_smith_pl|smithy
-; trp_smith_orc_patrol|Glugz Ironfinger
-; trp_smith_orc_patrol_pl|camp smithy
-; trp_smith_oscamp|Kugash Ironlover
-; trp_smith_oscamp_pl|camp smithy
-; trp_smith_isengard|Burz Ironbasher
-; trp_smith_isengard_pl|underground smithy
-; trp_smith_uoutpost|Gurzuk Irontooth
-; trp_smith_uoutpost_pl|outpost smithy
-; trp_smith_uhcamp|Rabzug Rusteater
-; trp_smith_uhcamp_pl|camp smithy
-; trp_smith_urcamp|Glurk
-; trp_smith_urcamp_pl|camp smithy
-; trp_smith_cgaladhon|Dirufin the Bowyer
-; trp_smith_cgaladhon_pl|elven weaponmakers
-; trp_smith_cdolen|Dimirian the Fletcher
-; trp_smith_cdolen_pl|elven weaponmakers
-; trp_smith_camroth|Getasistan
-; trp_smith_camroth_pl|elven weaponmakers
-; trp_smith_thranduils_halls|Thurinor
-; trp_smith_thranduils_halls_pl|smithy
-; trp_smith_woodelf_camp|Calechir
-; trp_smith_woodelf_camp_pl|smithy
-; trp_smith_beorn|Beornalaf Axemaker
-; trp_smith_beorn_pl|smithy
-; trp_smith_moria|Burgak Forger
-; trp_smith_moria_pl|smithy
-; trp_smith_dale|Ardel Firehand
-; trp_smith_dale_pl|smithy
-; trp_smith_esgaroth|Kelegarn The Bowyer
-; trp_smith_esgaroth_pl|smithy
-; trp_smith_erebor|Thror the Hammerer
-; trp_smith_erebor_pl|praised Dwarven smiths
-; trp_smith_dunland|Dorrowuld Ironpike
-; trp_smith_dunland_pl|smithy
-; trp_smith_harad|Har Steelbender
-; trp_smith_harad_pl|smithy
-; trp_smith_khand|Pushurt The Haggler
-; trp_smith_khand_pl|smithy
-; trp_smith_umbar|Fuinir the Forger
-; trp_smith_umbar_pl|smithy
-; trp_smith_imladris|Duifirian
-; trp_smith_imladris_pl|elven weaponmakers
-; trp_smith_dolguldur|Shtazg Dulbash
-; trp_smith_dolguldur_pl|smithy
-; trp_smith_north_rhun|Ognjemir Kladivo
-; trp_smith_north_rhun_pl|makeshift smithy
-; trp_smith_gundabad|Blurg Snowseller
-; trp_smith_gundabad_pl|smithy
-; trp_smith_ironhill|Ironhill Smith
-; trp_smith_ironhill_pl|Dwarven camp smiths
-; trp_town_50_weaponsmith|Armourer
-; trp_town_50_weaponsmith_pl|smithy
-; trp_smith_gondor_ac|Bor the Armorer
-; trp_smith_gondor_ac_pl|camp smithy
-; trp_smith_rohan_ac|Deor Helmmaker
-; trp_smith_rohan_ac_pl|camp smithy
-; trp_smith_mordor_ac|Hurbag Gateforger
-; trp_smith_mordor_ac_pl|smithy
-; trp_smith_isengard_ac|Burz Ironbasher
-; trp_smith_isengard_ac_pl|underground smithy
-; trp_smith_lorien_ac|Dimirian the Fletcher
-; trp_smith_lorien_ac_pl|elven weaponmakers
-; trp_smith_woodelf_ac|Dhoelath
-; trp_smith_woodelf_ac_pl|smithy
-; trp_smith_dwarf_ac|Ironhill Smith
-; trp_smith_dwarf_ac_pl|Dwarven camp smiths
-; trp_smith_gundabad_ac|Blurg Snowseller
-; trp_smith_gundabad_ac_pl|smithy
-; trp_smith_rhun_ac|Branimir Bronnik
-; trp_smith_rhun_ac_pl|makeshift smithy
-; trp_smith_guldur_ac|Shtazg Dulbash
-; trp_smith_guldur_ac_pl|smithy
-; trp_smith_imladris_ac|Duifirian
-; trp_smith_imladris_ac_pl|elven weaponmakers
-; trp_smith_dunland_ac|Dorrowuld Ironpike
-; trp_smith_dunland_ac_pl|smithy
-; trp_smith_harad_ac|Har Steelbender
-; trp_smith_harad_ac_pl|smithy
-; trp_smith_khand_ac|Pushurt The Haggler
-; trp_smith_khand_ac_pl|smithy
-; trp_smith_umbar_ac|Fuinir the Forger
-; trp_smith_umbar_ac_pl|smithy
-; trp_barman_mtirith|Tavern Keeper
-; trp_barman_mtirith_pl|the Citadel
-; trp_barman_pelargir|Tavern Keeper
-; trp_barman_pelargir_pl|the Castle
-; trp_barman_linhir|Tavern Keeper
-; trp_barman_linhir_pl|the Castle
-; trp_barman_dolamroth|Tavern Keeper
-; trp_barman_dolamroth_pl|the Castle
-; trp_barman_edhellond|Tavern Keeper
-; trp_barman_edhellond_pl|the Castle
-; trp_barman_lossarnach|Tavern Keeper
-; trp_barman_lossarnach_pl|the Castle
-; trp_barman_tarnost|Tavern Keeper
-; trp_barman_tarnost_pl|the Castle
-; trp_barman_erech|Tavern Keeper
-; trp_barman_erech_pl|the Castle
-; trp_barman_pinnath|Tavern Keeper
-; trp_barman_pinnath_pl|the Castle
-; trp_barman_hannun|Tavern Keeper
-; trp_barman_hannun_pl|the Secret Cave
-; trp_barman_calembel|Tavern Keeper
-; trp_barman_calembel_pl|the Castle
-; trp_barman_edoras|Tavern Keeper
-; trp_barman_edoras_pl|Meduseld, the Golden Hall
-; trp_barman_aldburg|Tavern Keeper
-; trp_barman_aldburg_pl|the Castle
-; trp_barman_hornburg|Tavern Keeper
-; trp_barman_hornburg_pl|the Lord Halls
-; trp_barman_eastemnet|Tavern Keeper
-; trp_barman_eastemnet_pl|the Castle
-; trp_barman_westfold|Tavern Keeper
-; trp_barman_westfold_pl|the Castle
-; trp_barman_westemnet|Tavern Keeper
-; trp_barman_westemnet_pl|the Castle
-; trp_barman_eastfold|Tavern Keeper
-; trp_barman_eastfold_pl|the Castle
-; trp_barman_baraddur|Tavern Keeper
-; trp_barman_baraddur_pl|the Castle
-; trp_barman_morannon|Tavern Keeper
-; trp_barman_morannon_pl|the Leader's Cave
-; trp_barman_mmorgul|Tavern Keeper
-; trp_barman_mmorgul_pl|the Tower
-; trp_barman_cungol|Tavern Keeper
-; trp_barman_cungol_pl|the Castle
-; trp_barman_isengard|Tavern Keeper
-; trp_barman_isengard_pl|the tower of Orthanc
-; trp_barman_cgaladhon|Tavern Keeper
-; trp_barman_cgaladhon_pl|the Tree castle
-; trp_barman_cdolen|Tavern Keeper
-; trp_barman_cdolen_pl|the Tree castle
-; trp_barman_camroth|Tavern Keeper
-; trp_barman_camroth_pl|the Tree castle
-; trp_barman_thalls|Tavern Keeper
-; trp_barman_thalls_pl|the Throne Room
-; trp_barman_beorn|Tavern Keeper
-; trp_barman_beorn_pl|Beorn House
-; trp_barman_moria|Tavern Keeper
-; trp_barman_moria_pl|the Chief's Chamber
-; trp_barman_dale|Tavern Keeper
-; trp_barman_dale_pl|the Castle
-; trp_barman_esgaroth|Tavern Keeper
-; trp_barman_esgaroth_pl|the Hall
-; trp_barman_erebor|Tavern Keeper
-; trp_barman_erebor_pl|the Lord's Chamber
-; trp_barman_dolguldur|Tavern Keeper
-; trp_barman_dolguldur_pl|the Castle
-; trp_merchant_mtirith|Supply Master
-; trp_merchant_mtirith_pl|stable and warehouse
-; trp_merchant_pelargir|Supply Master
-; trp_merchant_pelargir_pl|stable and warehouse
-; trp_merchant_linhir|Supply Master
-; trp_merchant_linhir_pl|stable and warehouse
-; trp_merchant_dolamroth|Supply Master
-; trp_merchant_dolamroth_pl|stable and warehouse
-; trp_merchant_edhellond|Supply Master
-; trp_merchant_edhellond_pl|stable and warehouse
-; trp_merchant_lossarnach|Supply Master
-; trp_merchant_lossarnach_pl|stable and warehouse
-; trp_merchant_tarnost|Supply Master
-; trp_merchant_tarnost_pl|stable and warehouse
-; trp_merchant_erech|Supply Master
-; trp_merchant_erech_pl|stable and warehouse
-; trp_merchant_pinnath|Supply Master
-; trp_merchant_pinnath_pl|stable and warehouse
-; trp_merchant_eosgiliath|Supply Master
-; trp_merchant_eosgiliath_pl|stable and warehouse
-; trp_merchant_wosgiliath|Supply Master
-; trp_merchant_wosgiliath_pl|stable and warehouse
-; trp_town_12_horse_merchant|Supply Master
-; trp_town_12_horse_merchant_pl|stable and warehouse
-; trp_town_13_horse_merchant|Supply Master
-; trp_town_13_horse_merchant_pl|stable and warehouse
-; trp_merchant_edoras|Supply Maiden
-; trp_merchant_edoras_pl|stable and warehouse
-; trp_merchant_aldburg|Supply Master
-; trp_merchant_aldburg_pl|King's stable and warehouse
-; trp_merchant_hornburg|Supply Master
-; trp_merchant_hornburg_pl|stable and warehouse
-; trp_merchant_eastemnet|Supply Master
-; trp_merchant_eastemnet_pl|stable and warehouse
-; trp_merchant_westfold|Supply Maiden
-; trp_merchant_westfold_pl|stable and warehouse
-; trp_merchant_westemnet|Supply Maiden
-; trp_merchant_westemnet_pl|stable and warehouse
-; trp_merchant_eastfold|Supply Maiden
-; trp_merchant_eastfold_pl|stable and warehouse
-; trp_town_21_horse_merchant|Supply Master
-; trp_town_21_horse_merchant_pl|pit and warehouse
-; trp_merchant_morannon|Supply Master
-; trp_merchant_morannon_pl|pit and warehouse
-; trp_merchant_mmorgul|Supply Master
-; trp_merchant_mmorgul_pl|pit and warehouse
-; trp_town_24_horse_merchant|Supply Master
-; trp_town_24_horse_merchant_pl|pit and warehouse
-; trp_merchant_orc_patrol|Supply Master
-; trp_merchant_orc_patrol_pl|camp stash
-; trp_merchant_isengard|Supply Master
-; trp_merchant_isengard_pl|camp stash
-; trp_town_27_horse_merchant|Supply Master
-; trp_town_27_horse_merchant_pl|warg pit and supplies
-; trp_merchant_uoutpost|Supply Master
-; trp_merchant_uoutpost_pl|warg pit and supplies
-; trp_merchant_uhcamp|Supply Master
-; trp_merchant_uhcamp_pl|warg pit and supplies
-; trp_merchant_urcamp|Supply Master
-; trp_merchant_urcamp_pl|warg pit and supplies
-; trp_merchant_cgaladhon|Supply Master
-; trp_merchant_cgaladhon_pl|elven supplies
-; trp_merchant_cdolen|Supply Master
-; trp_merchant_cdolen_pl|elven supplies
-; trp_merchant_camroth|Supply Master
-; trp_merchant_camroth_pl|elven supplies
-; trp_merchant_thranduils_halls|Supply Master
-; trp_merchant_thranduils_halls_pl|elven supplies
-; trp_merchant_woodelf_camp|Supply Master
-; trp_merchant_woodelf_camp_pl|elven supplies
-; trp_merchant_woodmen|Supply Master
-; trp_merchant_woodmen_pl|stable and warehouse
-; trp_merchant_beorn|Supply Master
-; trp_merchant_beorn_pl|stable and warehouse
-; trp_merchant_moria|Supply Master
-; trp_merchant_moria_pl|warg pit and supplies
-; trp_merchant_dale|Supply Master
-; trp_merchant_dale_pl|stable and warehouse
-; trp_merchant_esgaroth|Supply Master
-; trp_merchant_esgaroth_pl|stable and warehouse
-; trp_merchant_erebor|Supply Master
-; trp_merchant_erebor_pl|Dwarven supplies
-; trp_merchant_dunland|Dun Stash Master
-; trp_merchant_dunland_pl|camp stash
-; trp_merchant_harad|Harad Stash Master
-; trp_merchant_harad_pl|camp stash
-; trp_merchant_khand|Khand Stash Master
-; trp_merchant_khand_pl|camp stash
-; trp_merchant_umbar|Supply Master
-; trp_merchant_umbar_pl|camp stash
-; trp_merchant_imladris|Supply Master
-; trp_merchant_imladris_pl|camp supplies
-; trp_merchant_dolguldur|Supply Master
-; trp_merchant_dolguldur_pl|stable and warehouse
-; trp_merchant_north_rhun|Supply Master
-; trp_merchant_north_rhun_pl|camp stash
-; trp_merchant_south_rhun|Supply Master
-; trp_merchant_south_rhun_pl|camp stash
-; trp_merchant_gundabad|Supply Master
-; trp_merchant_gundabad_pl|camp stash
-; trp_merchant_ironhill|Supply Master
-; trp_merchant_ironhill_pl|Dwarven supplies
-; trp_town_50_horse_merchant|Supply Master
-; trp_town_50_horse_merchant_pl|stable and warehouse
-; trp_merchant_calembel|Supply Master
-; trp_merchant_calembel_pl|stable and warehouse
-; trp_elder_mtirith|Tirith Guildmaster
-; trp_elder_mtirith_pl|the White City
-; trp_elder_pelargir|Sailor Guildmaster
-; trp_elder_pelargir_pl|the city
-; trp_elder_linhir|Linhir Guildmaster
-; trp_elder_linhir_pl|the city
-; trp_elder_dolamroth|Dol Amroth Guildmaster
-; trp_elder_dolamroth_pl|the city
-; trp_elder_edhellond|Edhellond Guildmaster
-; trp_elder_edhellond_pl|the city
-; trp_elder_lossarnach|Lossarnach Guildmaster
-; trp_elder_lossarnach_pl|the town
-; trp_elder_tarnost|Tarnost Guildmaster
-; trp_elder_tarnost_pl|the town
-; trp_elder_erech|Erech Guildmaster
-; trp_elder_erech_pl|the town
-; trp_elder_pinnath|Pinnath Tribe Elder
-; trp_elder_pinnath_pl|the town
-; trp_elder_ethring|Calembel Guildmaster
-; trp_elder_ethring_pl|the city
-; trp_elder_henneth|Ranger Guildmaster
-; trp_elder_henneth_pl|the hideout
-; trp_elder_cairandros|Cair Andros Guildmaster
-; trp_elder_cairandros_pl|the island fortress
-; trp_elder_edoras|Edoras Thain
-; trp_elder_edoras_pl|the city
-; trp_elder_aldburg|Aldburg Thain
-; trp_elder_aldburg_pl|the town
-; trp_elder_hornburg|Hornburg Thain
-; trp_elder_hornburg_pl|the fortress
-; trp_elder_eastemnet|East Emnet Thain
-; trp_elder_eastemnet_pl|the town
-; trp_elder_westfold|Westfold Thain
-; trp_elder_westfold_pl|the town
-; trp_elder_westemnet|West Emnet Thain
-; trp_elder_westemnet_pl|the town
-; trp_elder_eastfold|Eastfold Thain
-; trp_elder_eastfold_pl|the town
-; trp_elder_morannon|Morannon Chief
-; trp_elder_morannon_pl|the caves overlooking the Great Gate
-; trp_elder_mmorgul|Morgul Chief
-; trp_elder_mmorgul_pl|the sinister city
-; trp_elder_cungol|Camp Chief
-; trp_elder_cungol_pl|the camp
-; trp_elder_isengard|Grima Wormtongue
-; trp_elder_isengard_pl|the city
-; trp_elder_cgaladhon|Lorien Loremaster
-; trp_elder_cgaladhon_pl|the elven forest fortress
-; trp_elder_cdolen|Lorien Loremaster
-; trp_elder_cdolen_pl|the encampment
-; trp_elder_camroth|Lorien Loremaster
-; trp_elder_camroth_pl|the encampment
-; trp_elder_thalls|Mirkwood Elder
-; trp_elder_thalls_pl|the elven caves
-; trp_elder_imladris|Rivendell Campmaster
-; trp_elder_imladris_pl|the camp
-; trp_elder_wvillage|Pierre Woodman
-; trp_elder_wvillage_pl|the village
-; trp_elder_beorn|Beorn Elder
-; trp_elder_beorn_pl|the hamlet
-; trp_elder_harad|Harad Camp chief
-; trp_elder_harad_pl|the camp
-; trp_elder_rhun|Rhun Camp Chief
-; trp_elder_rhun_pl|the camp
-; trp_elder_khand|Khand Camp Chief
-; trp_elder_khand_pl|the camp
-; trp_elder_dunland|Dun Camp Chief
-; trp_elder_dunland_pl|the camp
-; trp_elder_umbar|Umbar Quartermaster
-; trp_elder_umbar_pl|the fortified camp
-; trp_elder_moria|Moria Chief
-; trp_elder_moria_pl|the Mines
-; trp_elder_gunda|Mater of the Caves
-; trp_elder_gunda_pl|the caves
-; trp_elder_dale|Dale Quartermaster
-; trp_elder_dale_pl|the city
-; trp_elder_esgaroth|Esgaroth Quartermaster
-; trp_elder_esgaroth_pl|the lake town
-; trp_elder_erebor|Erebor Guildmaster
-; trp_elder_erebor_pl|the Halls
-; trp_elder_dolguldur|Guldur Chief
-; trp_elder_dolguldur_pl|the black castle
-; trp_elder_gondor_ac|Campmaster
-; trp_elder_gondor_ac_pl|the camp
-; trp_elder_rohan_ac|Campmaster
-; trp_elder_rohan_ac_pl|the camp
-; trp_elder_mordor_ac|Campmaster
-; trp_elder_mordor_ac_pl|the camp
-; trp_elder_isengard_ac|Campmaster
-; trp_elder_isengard_ac_pl|the camp
-; trp_elder_lorien_ac|Campmaster
-; trp_elder_lorien_ac_pl|the camp
-; trp_elder_woodelf_ac|Campmaster
-; trp_elder_woodelf_ac_pl|the camp
-; trp_elder_imladris_ac|Campmaster
-; trp_elder_imladris_ac_pl|the camp
-; trp_elder_beorn_ac|Campmaster
-; trp_elder_beorn_ac_pl|the camp
-; trp_elder_harad_ac|Harad Camp Chief
-; trp_elder_harad_ac_pl|the camp
-; trp_elder_rhun_ac|Rhun Camp Chief
-; trp_elder_rhun_ac_pl|the camp
-; trp_elder_khand_ac|Khand Camp Chief
-; trp_elder_khand_ac_pl|the camp
-; trp_elder_dunland_ac|Dun Camp Chief
-; trp_elder_dunland_ac_pl|the camp
-; trp_elder_umbar_ac|Umbar Quartermaster
-; trp_elder_umbar_ac_pl|the camp
-; trp_elder_moria_ac|Moria Camp Chief
-; trp_elder_moria_ac_pl|the camp
-; trp_elder_gunda_ac|Gundabad Camp Chief
-; trp_elder_gunda_ac_pl|the camp
-; trp_elder_dale_ac|Dale Quartermaster
-; trp_elder_dale_ac_pl|the camp
-; trp_elder_guldur_ac|Guldur Camp Chief
-; trp_elder_guldur_ac_pl|the camp
-; trp_elder_dwarf_ac|Dwarven Campmaster
-; trp_elder_dwarf_ac_pl|the camp
-; trp_village_1_elder|Village Elder
-; trp_tutorial_chest_1|Melee Weapons Chest
-; trp_tutorial_chest_2|Ranged Weapons Chest
-; trp_bonus_chest_1|Bonus Chest
-; trp_bonus_chest_2|Bonus Chest
-; trp_bonus_chest_3|Bonus Chest
-; trp_camp_chest_faction|Faction Chest
-; trp_camp_chest_none|Chest for nones
-; trp_player_chest|Your Chest
-; trp_local_merchant|Local Merchant
-; trp_local_merchant_pl|Local Merchants
-; trp_tax_rebel|Peasant Rebel
-; trp_tax_rebel_pl|Peasant Rebels
-; trp_trainee_peasant|Peasant
-; trp_trainee_peasant_pl|Peasants
-; trp_fugitive_man|Suspicious Man
-; trp_fugitive_man_pl|Suspicious Men
-; trp_fugitive_elf|Suspicious Elf
-; trp_fugitive_elf_pl|Suspicious Elves
-; trp_fugitive_dwarf|Suspicious Dwarf
-; trp_fugitive_dwarf_pl|Suspicious Dwarves
-; trp_fugitive_orc|Suspicious Orc
-; trp_fugitive_orc_pl|Suspicious Orcs
-; trp_spy|Shifty-eyed Corsair
-; trp_spy_pl|Shifty-eyed Corsairs
-; trp_spy_evil|Shifty-eyed Southerner
-; trp_spy_evil_pl|Shifty-eyed Southerners
-; trp_spy_partner|Spy Handler
-; trp_spy_partner_pl|Spy Handlers
-; trp_spy_partner_evil|Spy Handler
-; trp_spy_partner_evil_pl|Spy Handlers
-; trp_easter_egg_troll|The Troll
-; trp_treebeard|Treebeard
-; trp_ent_1|Bregalad
-; trp_ent_2|Finglas
-; trp_ent_3|Fladrif
-; trp_gandalf|Gandalf
-; trp_gandalf_pl|Home-grown Gandalves
-; trp_nazgul|Nazgul
-; trp_nazgul_pl|Domesticated Nazgul
-; trp_barman|Barman
-; trp_elder|Center Elder
-; trp_gear_merchant|Gear Merchant
-; trp_goods_merchant|Goods Merchant
-; trp_start_quest_caravaneer|Torbal the Caravaneer
-; trp_dorwinion_bandit|Dorwinion Bandit
-; trp_dorwinion_bandit_pl|Dorwinion Bandits
-; trp_dorwinion_raider|Dorwinion Raider
-; trp_dorwinion_raider_pl|Dorwinion Raiders
-; trp_city_guard|City Guard
-; trp_city_guard_pl|city guard
-; trp_orc_sentry|Orc Sentry
-; trp_orc_sentry_pl|orc sentry
-; trp_uruk_hai_sentry|Uruk-hai Sentry
-; trp_uruk_hai_sentry_pl|uruk hai sentry
-; trp_black_numenorean_sorcerer|Black Numenorean Sorcerer
-; trp_black_numenorean_sorcerer_pl|Black numenorean sorcerer
-; trp_black_numenorean_acolyte|Black Numenorean Acolyte
-; trp_black_numenorean_acolyte_pl|Black Numenorean Acolytes
-; trp_wolf_rider_of_mirkwood|Wolf Rider of Mirkwood
-; trp_wolf_rider_of_mirkwood_pl|Wolf Riders of Mirkwood
-; trp_warg_rider_of_mirkwood|Warg Rider of Mirkwood
-; trp_warg_rider_of_mirkwood_pl|Warg Riders of Mirkwood
-; trp_gate_aggravator|Gate is holding
-; trp_orc_pretender|Orc Pretender
-; trp_human_prisoner|Human Prisoner
-; trp_spider|Mirkwood Spider
-; trp_spider_pl|Mirkwood Spiders
+trp_ransom_broker_1|Výkupník zajatcov
+trp_ransom_broker_2|Výkupník zajatcov
+trp_ransom_broker_3|Výkupník zajatcov
+trp_ransom_broker_4|Výkupník zajatcov
+trp_ransom_broker_5|Výkupník zajatcov
+trp_ransom_broker_6|Výkupník zajatcov
+trp_ransom_broker_7|Výkupník zajatcov
+trp_ransom_broker_8|Výkupník zajatcov
+trp_ransom_broker_9|Výkupník zajatcov
+trp_ransom_broker_10|Výkupník zajatcov
+trp_tavern_traveler_1|Cestovateľ
+trp_tavern_traveler_2|Cestovateľ
+trp_tavern_traveler_3|Cestovateľ
+trp_tavern_traveler_4|Cestovateľ
+trp_tavern_traveler_5|Cestovateľ
+trp_tavern_traveler_6|Cestovateľ
+trp_tavern_traveler_7|Cestovateľ
+trp_tavern_traveler_8|Cestovateľ
+trp_tavern_traveler_9|Cestovateľ
+trp_tavern_traveler_10|Cestovateľ
+trp_tavern_minstrel_1|Bard
+trp_npc1|Mablung
+trp_npc2|Cirdil
+trp_npc3|Ulfas
+trp_npc4|Galmyne
+trp_npc5|Glorfindel
+trp_npc6|Luevanna
+trp_npc7|Kili Zlatoprst
+trp_npc8|Faniul
+trp_npc9|Gulm
+trp_npc10|Durgash
+trp_npc11|Ufthak
+trp_npc12|Gorbag
+trp_npc13|Lykyada
+trp_npc14|Fuldimir
+trp_npc15|Bolzog
+trp_npc16|Varfang
+trp_npc17|Dimborn
+trp_gondor_lord|Správca Denethor
+trp_gondor_lord_pl|Správca
+trp_rohan_lord|Kráľ Theoden
+trp_rohan_lord_pl|Kráľ
+trp_isengard_lord|Saruman
+trp_isengard_lord_pl|Pán
+trp_mordor_lord|Sauronove Ústa
+trp_mordor_lord_pl|Satrap
+trp_harad_lord|Náčelník Ul-Ulcari
+trp_harad_lord_pl|Náčelník
+trp_rhun_lord|Jarl Helcaroth
+trp_rhun_lord_pl|Jarl
+trp_khand_lord|Shibh Krukmahur
+trp_khand_lord_pl|Shibh
+trp_umbar_lord|Admirál Tulmir
+trp_umbar_lord_pl|Admirál
+trp_lorien_lord|Pani Galadriel
+trp_lorien_lord_pl|Pani
+trp_imladris_lord|Lord Elrond
+trp_imladris_lord_pl|Lord
+trp_woodelf_lord|Kráľ Thranduil
+trp_woodelf_lord_pl|Kráľ
+trp_moria_lord|Veliteľ Bolg Menší
+trp_moria_lord_pl|Veliteľ
+trp_guldur_lord|Veliteľ Fuinur
+trp_guldur_lord_pl|Veliteľ
+trp_gundabad_lord|Veliteľ Burza Krual
+trp_gundabad_lord_pl|Veliteľ
+trp_dale_lord|Kráľ Brand
+trp_dale_lord_pl|Kráľ
+trp_dwarf_lord|Kráľ Dain II Železná noha
+trp_dwarf_lord_pl|Kráľ
+trp_dunland_lord|Náčelník Daeglaf Čierny
+trp_dunland_lord_pl|Náčelník
+trp_beorn_lord|Náčelník Grimbeorn Starý
+trp_beorn_lord_pl|Náčelník
+trp_lorien_marshall|Celeborn
+trp_pippin_notmet|hobit
+trp_merry_notmet|hobit
+trp_pippin|Pútnik Bral
+trp_merry|Chicholm Brandylen
+trp_knight_1_1|Angbor Nebojácny
+trp_knight_1_2|Húrin Strážca Kľúčov
+trp_knight_1_3|Princ Imrahil
+trp_knight_1_4|Orthalion
+trp_knight_1_5|Duinhir
+trp_knight_1_6|Hirluin Poctivý
+trp_knight_1_7|Faramir
+trp_knight_1_8|Forlong Tučný
+trp_knight_1_9|Grimbold
+trp_knight_1_10|Erkenbrand
+trp_knight_1_11|Elfhelm
+trp_knight_1_12|Háma
+trp_knight_1_13|Gamling
+trp_knight_1_14|Éomer
+trp_knight_1_15|Ugluk
+trp_knight_1_16|Mauhur
+trp_knight_1_17|Mog Sedem-prstý
+trp_knight_1_18|Hushnak Dlhonohý
+trp_knight_1_19|Gridash Stromohryz
+trp_knight_1_20|Gronk Ľudožrút
+trp_knight_2_1|Kapitán Mortakh
+trp_knight_2_2|Berúthiel
+trp_knight_2_3|Skang
+trp_knight_2_4|Pharakhâd Bastard
+trp_knight_2_5|Grishnakh
+trp_knight_2_51|Gothmog
+trp_knight_2_51_pl|Dôstojník
+trp_knight_2_6|Náčelník Karna Lev
+trp_knight_2_7|Náčelník Na’man
+trp_knight_2_8|Náčelník Haarith
+trp_knight_2_11|Kusulak
+trp_knight_2_12|Ulwarth Balchoth
+trp_knight_2_13|Brodda
+trp_knight_2_16|Torask
+trp_knight_2_17|Lurmsakun
+trp_knight_3_1|Kapitán Morbir
+trp_knight_3_2|Kapitán Angamaitë
+trp_knight_3_3|Kapitán Sangahyando
+trp_knight_3_6|Haldir
+trp_knight_3_7|Orophin
+trp_knight_3_11|Elladan
+trp_knight_3_12|Elrohir
+trp_knight_3_13|Halbarad
+trp_knight_3_16|Míriel
+trp_knight_3_17|Gladvaethor
+trp_knight_4_1|Tyran Snog
+trp_knight_4_2|Tyran Snotgor
+trp_knight_4_6|Generál Tuskim
+trp_knight_4_7|Generál Mugslag
+trp_knight_4_11|Beranhelm
+trp_knight_4_12|Beranor Černosrsť
+trp_knight_4_16|Tyran Brolgukhsh
+trp_knight_4_17|Tyran Grumrunt
+trp_knight_4_18|Tyran Grimsob
+trp_knight_5_1|Lord Halward
+trp_knight_5_2|Lord Bard
+trp_knight_5_3|Lord Esgarain
+trp_knight_5_6|Fulgni Dlhobrad
+trp_knight_5_7|Thorin Kamenná prilba
+trp_knight_5_11|Náčelník Fudreim
+trp_knight_5_12|Náčelník Wulf
+trp_knight_6_1|Dervorin
+trp_smith_mtirith|Berethor Kováč
+trp_smith_mtirith_pl|Správcovi kováči
+trp_smith_pelargir|Hallatan Kovomajster
+trp_smith_pelargir_pl|kováčska dielňa
+trp_smith_linhir|Bor Zbrojmajster
+trp_smith_linhir_pl|kováčska dielňa
+trp_smith_dolamroth|Haldad Kováč
+trp_smith_dolamroth_pl|Amrothské kovárne
+trp_smith_edhellond|Ryis Kovokriv
+trp_smith_edhellond_pl|kováčska dielňa
+trp_smith_lossarnach|Berin Výrobca sekier
+trp_smith_lossarnach_pl|kováčska dielňa
+trp_smith_tarnost|Harandil Oceľové kladivo
+trp_smith_tarnost_pl|kováčska dielňa
+trp_smith_erech|Lorne Čierny
+trp_smith_erech_pl|kováčska dielňa
+trp_smith_pinnath|Tarandil Výrobca mečov
+trp_smith_pinnath_pl|kováčska dielňa
+trp_smith_eosgiliath|Bzurg Lupič
+trp_smith_eosgiliath_pl|kováčska dielňa
+trp_smith_wosgiliath|Gardil
+trp_smith_wosgiliath_pl|provizórna kováreň
+trp_smith_calembel|Agronom
+trp_smith_calembel_pl|kováčska dielňa
+trp_smith_hannun|Fal Hraničiarsky kováč
+trp_smith_hannun_pl|hraničiarsky sklad s vybavením
+trp_smith_candros|Kalimdor
+trp_smith_candros_pl|kováčska dielňa
+trp_smith_edoras|Eaoden Oceľomajster
+trp_smith_edoras_pl|Kráľovská kováčska dielňa
+trp_smith_aldburg|Fulm Železné kopyto
+trp_smith_aldburg_pl|kováčska dielňa
+trp_smith_hornburg|Aldhelm
+trp_smith_hornburg_pl|kováčska dielňa
+trp_smith_eastemnet|Eadfrid
+trp_smith_eastemnet_pl|kováčska dielňa
+trp_smith_westfold|Deor Výrobca prilieb
+trp_smith_westfold_pl|kováčska dielňa
+trp_smith_westemnet|Zbrojmajster
+trp_smith_westemnet_pl|kováčska dielňa
+trp_smith_eastfold|Eaderan Železorez
+trp_smith_eastfold_pl|kováčska dielňa
+trp_smith_morannon|Hurbag Kovobran
+trp_smith_morannon_pl|kováčska dielňa
+trp_smith_mmorgul|Orgurz Chrlič ohňa
+trp_smith_mmorgul_pl|kováčska dielňa
+trp_town_24_smith|Boz Železokaz
+trp_town_24_smith_pl|kováčska dielňa
+trp_smith_orc_patrol|Glugz Železoprst
+trp_smith_orc_patrol_pl|táborová kováčska dielňa
+trp_smith_oscamp|Kugash Ľuboželez
+trp_smith_oscamp_pl|táborová kováčska dielňa
+trp_smith_isengard|Burz Kovotresk
+trp_smith_isengard_pl|podzemná kováreň
+trp_smith_uoutpost|Gurzuk Kovotesák
+trp_smith_uoutpost_pl|kováčska dielňa v strážnici
+trp_smith_uhcamp|Rabzug Pojedač hrdze
+trp_smith_uhcamp_pl|táborová kováčska dielňa
+trp_smith_urcamp|Glurk
+trp_smith_urcamp_pl|táborová kováčska dielňa
+trp_smith_cgaladhon|Dirufin Lukár
+trp_smith_cgaladhon_pl|elfskí zbrojmajstri
+trp_smith_cdolen|Dimirian Šípar
+trp_smith_cdolen_pl|elfskí zbrojmajstri
+trp_smith_camroth|Getasistan
+trp_smith_camroth_pl|elfskí zbrojmajstri
+trp_smith_thranduils_halls|Thurinor
+trp_smith_thranduils_halls_pl|kováčska dielňa
+trp_smith_woodelf_camp|Calechir
+trp_smith_woodelf_camp_pl|kováčska dielňa
+trp_smith_beorn|Beornalaf Výrobca sekier
+trp_smith_beorn_pl|kováčska dielňa
+trp_smith_moria|Burgak Kováč
+trp_smith_moria_pl|kováčska dielňa
+trp_smith_dale|Ardel Ohňoruk
+trp_smith_dale_pl|kováčska dielňa
+trp_smith_esgaroth|Kelegarn Lukár
+trp_smith_esgaroth_pl|kováčska dielňa
+trp_smith_erebor|Thror Kladibuch
+trp_smith_erebor_pl|vychválené kováčské dielne
+trp_smith_dunland|Dorrowuld Železná pika
+trp_smith_dunland_pl|kováčska dielňa
+trp_smith_harad|Har Oceľkriv
+trp_smith_harad_pl|kováčska dielňa
+trp_smith_khand|Pushurt Bosorák
+trp_smith_khand_pl|kováčska dielňa
+trp_smith_umbar|Fuinir Kováč
+trp_smith_umbar_pl|kováčska dielňa
+trp_smith_imladris|Duifirian
+trp_smith_imladris_pl|elfskí zbrojmajstri
+trp_smith_dolguldur|Shtazg Dulbash
+trp_smith_dolguldur_pl|kováčska dielňa
+trp_smith_north_rhun|Ognjemir Kladivo
+trp_smith_north_rhun_pl|provizórna kováreň
+trp_smith_gundabad|Blurg Zlatosneh
+trp_smith_gundabad_pl|kováčska dielňa
+trp_smith_ironhill|Kováč zo Železných hôr
+trp_smith_ironhill_pl|Trpasličie táborové kovárne
+trp_town_50_weaponsmith|Shruklug Nožobrus
+trp_town_50_weaponsmith_pl|kováčska dielňa
+trp_smith_gondor_ac|Bor Zbrojmajster
+trp_smith_gondor_ac_pl|táborová kováčska dielňa
+trp_smith_rohan_ac|Deor Výrobca prilieb
+trp_smith_rohan_ac_pl|táborová kováčska dielňa
+trp_smith_mordor_ac|Hurbag Kovobran
+trp_smith_mordor_ac_pl|kováčska dielňa
+trp_smith_isengard_ac|Burz Kovotresk
+trp_smith_isengard_ac_pl|podzemná kováreň
+trp_smith_lorien_ac|Dimirian Šípar
+trp_smith_lorien_ac_pl|elfskí zbrojmajstri
+trp_smith_woodelf_ac|Dhoelath
+trp_smith_woodelf_ac_pl|kováčska dielňa
+trp_smith_dwarf_ac|Kováč zo Železných hôr
+trp_smith_dwarf_ac_pl|Trpasličie táborové kovárne
+trp_smith_gundabad_ac|Blurg Zlatosneh
+trp_smith_gundabad_ac_pl|kováčska dielňa
+trp_smith_rhun_ac|Branimir Bronnik
+trp_smith_rhun_ac_pl|provizórna kováreň
+trp_smith_guldur_ac|Shtazg Dulbash
+trp_smith_guldur_ac_pl|kováčska dielňa
+trp_smith_imladris_ac|Duifirian
+trp_smith_imladris_ac_pl|elfskí zbrojmajstri
+trp_smith_dunland_ac|Dorrowuld Železná pika
+trp_smith_dunland_ac_pl|kováčska dielňa
+trp_smith_harad_ac|Har Oceľkriv
+trp_smith_harad_ac_pl|kováčska dielňa
+trp_smith_khand_ac|Pushurt Bosorák
+trp_smith_khand_ac_pl|kováčska dielňa
+trp_smith_umbar_ac|Fuinir Kováč
+trp_smith_umbar_ac_pl|kováčska dielňa
+trp_barman_mtirith|Krčmárka
+trp_barman_mtirith_pl|Citadela
+trp_barman_pelargir|Krčmárka
+trp_barman_pelargir_pl|Hrad
+trp_barman_linhir|Krčmárka
+trp_barman_linhir_pl|Hrad
+trp_barman_dolamroth|Krčmárka
+trp_barman_dolamroth_pl|Hrad
+trp_barman_edhellond|Krčmárka
+trp_barman_edhellond_pl|Hrad
+trp_barman_lossarnach|Krčmárka
+trp_barman_lossarnach_pl|Hrad
+trp_barman_tarnost|Krčmárka
+trp_barman_tarnost_pl|Hrad
+trp_barman_erech|Krčmárka
+trp_barman_erech_pl|Hrad
+trp_barman_pinnath|Krčmárka
+trp_barman_pinnath_pl|Hrad
+trp_barman_hannun|Krčmárka
+trp_barman_hannun_pl|Tajná jaskyňa
+trp_barman_calembel|Krčmárka
+trp_barman_calembel_pl|Hrad
+trp_barman_edoras|Krčmárka
+trp_barman_edoras_pl|Meduseld, Zlatá Sieň
+trp_barman_aldburg|Krčmárka
+trp_barman_aldburg_pl|Hrad
+trp_barman_hornburg|Krčmárka
+trp_barman_hornburg_pl|Lordové komnaty
+trp_barman_eastemnet|Krčmárka
+trp_barman_eastemnet_pl|Hrad
+trp_barman_westfold|Krčmárka
+trp_barman_westfold_pl|Hrad
+trp_barman_westemnet|Krčmárka
+trp_barman_westemnet_pl|Hrad
+trp_barman_eastfold|Krčmárka
+trp_barman_eastfold_pl|Hrad
+trp_barman_baraddur|Krčmárka
+trp_barman_baraddur_pl|Hrad
+trp_barman_morannon|Krčmárka
+trp_barman_morannon_pl|Jaskyňa vodcu
+trp_barman_mmorgul|Krčmárka
+trp_barman_mmorgul_pl|Veža
+trp_barman_cungol|Krčmárka
+trp_barman_cungol_pl|Hrad
+trp_barman_isengard|Krčmárka
+trp_barman_isengard_pl|Veža Orthanc
+trp_barman_cgaladhon|Krčmárka
+trp_barman_cgaladhon_pl|Stromový hrad
+trp_barman_cdolen|Krčmárka
+trp_barman_cdolen_pl|Stromový hrad
+trp_barman_camroth|Krčmárka
+trp_barman_camroth_pl|Stromový hrad
+trp_barman_thalls|Krčmárka
+trp_barman_thalls_pl|Trónna sála
+trp_barman_beorn|Krčmárka
+trp_barman_beorn_pl|Grizlov dom
+trp_barman_moria|Krčmárka
+trp_barman_moria_pl|Náčelníkova sieň
+trp_barman_dale|Krčmárka
+trp_barman_dale_pl|Hrad
+trp_barman_esgaroth|Krčmárka
+trp_barman_esgaroth_pl|Sála
+trp_barman_erebor|Krčmárka
+trp_barman_erebor_pl|Lordové komnaty
+trp_barman_dolguldur|Krčmárka
+trp_barman_dolguldur_pl|Hrad
+trp_merchant_mtirith|Obchodník so zásobami
+trp_merchant_mtirith_pl|Stajne a skladište
+trp_merchant_pelargir|Obchodník so zásobami
+trp_merchant_pelargir_pl|Stajne a skladište
+trp_merchant_linhir|Obchodník so zásobami
+trp_merchant_linhir_pl|Stajne a skladište
+trp_merchant_dolamroth|Obchodník so zásobami
+trp_merchant_dolamroth_pl|Stajne a skladište
+trp_merchant_edhellond|Obchodník so zásobami
+trp_merchant_edhellond_pl|Stajne a skladište
+trp_merchant_lossarnach|Obchodník so zásobami
+trp_merchant_lossarnach_pl|Stajne a skladište
+trp_merchant_tarnost|Obchodník so zásobami
+trp_merchant_tarnost_pl|Stajne a skladište
+trp_merchant_erech|Obchodník so zásobami
+trp_merchant_erech_pl|Stajne a skladište
+trp_merchant_pinnath|Obchodník so zásobami
+trp_merchant_pinnath_pl|Stajne a skladište
+trp_merchant_eosgiliath|Obchodník so zásobami
+trp_merchant_eosgiliath_pl|Stajne a skladište
+trp_merchant_wosgiliath|Obchodník so zásobami
+trp_merchant_wosgiliath_pl|Stajne a skladište
+trp_town_12_horse_merchant|Obchodník so zásobami
+trp_town_12_horse_merchant_pl|Stajne a skladište
+trp_town_13_horse_merchant|Obchodník so zásobami
+trp_town_13_horse_merchant_pl|Stajne a skladište
+trp_merchant_edoras|Obchodníčka so zásobami
+trp_merchant_edoras_pl|Stajne a skladište
+trp_merchant_aldburg|Obchodník so zásobami
+trp_merchant_aldburg_pl|Kráľovské stajne a skladište
+trp_merchant_hornburg|Obchodník so zásobami
+trp_merchant_hornburg_pl|Stajne a skladište
+trp_merchant_eastemnet|Obchodník so zásobami
+trp_merchant_eastemnet_pl|Stajne a skladište
+trp_merchant_westfold|Obchodníčka so zásobami
+trp_merchant_westfold_pl|Stajne a skladište
+trp_merchant_westemnet|Obchodníčka so zásobami
+trp_merchant_westemnet_pl|Stajne a skladište
+trp_merchant_eastfold|Obchodníčka so zásobami
+trp_merchant_eastfold_pl|Stajne a skladište
+trp_town_21_horse_merchant|Obchodník so zásobami
+trp_town_21_horse_merchant_pl|diera a skladisko
+trp_merchant_morannon|Obchodník so zásobami
+trp_merchant_morannon_pl|diera a skladisko
+trp_merchant_mmorgul|Obchodník so zásobami
+trp_merchant_mmorgul_pl|diera a skladisko
+trp_town_24_horse_merchant|Obchodník so zásobami
+trp_town_24_horse_merchant_pl|diera a skladisko
+trp_merchant_orc_patrol|Obchodník so zásobami
+trp_merchant_orc_patrol_pl|táborový sklad
+trp_merchant_isengard|Obchodník so zásobami
+trp_merchant_isengard_pl|táborový sklad
+trp_town_27_horse_merchant|Obchodník so zásobami
+trp_town_27_horse_merchant_pl|vrrčia diera a zásoby
+trp_merchant_uoutpost|Obchodník so zásobami
+trp_merchant_uoutpost_pl|vrrčia diera a zásoby
+trp_merchant_uhcamp|Obchodník so zásobami
+trp_merchant_uhcamp_pl|vrrčia diera a zásoby
+trp_merchant_urcamp|Obchodník so zásobami
+trp_merchant_urcamp_pl|vrrčia diera a zásoby
+trp_merchant_cgaladhon|Obchodník so zásobami
+trp_merchant_cgaladhon_pl|elfské zásoby
+trp_merchant_cdolen|Obchodník so zásobami
+trp_merchant_cdolen_pl|elfské zásoby
+trp_merchant_camroth|Obchodník so zásobami
+trp_merchant_camroth_pl|elfské zásoby
+trp_merchant_thranduils_halls|Obchodník so zásobami
+trp_merchant_thranduils_halls_pl|elfské zásoby
+trp_merchant_woodelf_camp|Obchodník so zásobami
+trp_merchant_woodelf_camp_pl|elfské zásoby
+trp_merchant_woodmen|Obchodník so zásobami
+trp_merchant_woodmen_pl|Stajne a skladište
+trp_merchant_beorn|Obchodník so zásobami
+trp_merchant_beorn_pl|Stajne a skladište
+trp_merchant_moria|Obchodník so zásobami
+trp_merchant_moria_pl|vrrčia diera a zásoby
+trp_merchant_dale|Obchodník so zásobami
+trp_merchant_dale_pl|Stajne a skladište
+trp_merchant_esgaroth|Obchodník so zásobami
+trp_merchant_esgaroth_pl|Stajne a skladište
+trp_merchant_erebor|Obchodník so zásobami
+trp_merchant_erebor_pl|Trpasličie zásoby
+trp_merchant_dunland|Vrchovecký skladník
+trp_merchant_dunland_pl|táborový sklad
+trp_merchant_harad|Haradský skladník
+trp_merchant_harad_pl|táborový sklad
+trp_merchant_khand|Khandský skladník
+trp_merchant_khand_pl|táborový sklad
+trp_merchant_umbar|Obchodník so zásobami
+trp_merchant_umbar_pl|táborový sklad
+trp_merchant_imladris|Obchodník so zásobami
+trp_merchant_imladris_pl|táborové zásoby
+trp_merchant_dolguldur|Obchodník so zásobami
+trp_merchant_dolguldur_pl|Stajne a skladište
+trp_merchant_north_rhun|Obchodník so zásobami
+trp_merchant_north_rhun_pl|táborový sklad
+trp_merchant_south_rhun|Obchodník so zásobami
+trp_merchant_south_rhun_pl|táborový sklad
+trp_merchant_gundabad|Obchodník so zásobami
+trp_merchant_gundabad_pl|táborový sklad
+trp_merchant_ironhill|Obchodník so zásobami
+trp_merchant_ironhill_pl|Trpasličie zásoby
+trp_town_50_horse_merchant|Gobrip Žltozub
+trp_town_50_horse_merchant_pl|vrrčia diera a zásoby
+trp_merchant_calembel|Obchodník so zásobami
+trp_merchant_calembel_pl|Stajne a skladište
+trp_elder_mtirith|Kastelán Minas Tirith
+trp_elder_mtirith_pl|Biele mesto
+trp_elder_pelargir|Námornícky starosta
+trp_elder_pelargir_pl|mesto
+trp_elder_linhir|Kastelán Linhiru
+trp_elder_linhir_pl|mesto
+trp_elder_dolamroth|Kastelán Dol Amrothu
+trp_elder_dolamroth_pl|mesto
+trp_elder_edhellond|Kastelán Edhellondu
+trp_elder_edhellond_pl|mesto
+trp_elder_lossarnach|Kastelán Lossarnachu
+trp_elder_lossarnach_pl|menšie mesto
+trp_elder_tarnost|Kastelán Tarnostu
+trp_elder_tarnost_pl|menšie mesto
+trp_elder_erech|Kastelán Erechu
+trp_elder_erech_pl|menšie mesto
+trp_elder_pinnath|Starosta Pinnathského kmeňa
+trp_elder_pinnath_pl|menšie mesto
+trp_elder_ethring|Kastelán Calembelu
+trp_elder_ethring_pl|mesto
+trp_elder_henneth|Hraničiarsky kastelán
+trp_elder_henneth_pl|skrýša
+trp_elder_cairandros|Kastelán Cair Androsu
+trp_elder_cairandros_pl|ostrovná pevnosť
+trp_elder_edoras|Edoras
+trp_elder_edoras_pl|mesto
+trp_elder_aldburg|Richtár Aldburgu
+trp_elder_aldburg_pl|menšie mesto
+trp_elder_hornburg|Richtár Helmovho žľabu
+trp_elder_hornburg_pl|pevnosť
+trp_elder_eastemnet|Richtár Východnej poloniny
+trp_elder_eastemnet_pl|menšie mesto
+trp_elder_westfold|Richtár Západneho úvalu
+trp_elder_westfold_pl|menšie mesto
+trp_elder_westemnet|Richtár Západnej poloniny
+trp_elder_westemnet_pl|menšie mesto
+trp_elder_eastfold|Richtár Východného úvalu
+trp_elder_eastfold_pl|menšie mesto
+trp_elder_morannon|Veliteľ Morannonu
+trp_elder_morannon_pl|jaskyne s výhľadom ponad Čiernu bránu
+trp_elder_mmorgul|Morgulský veliteľ
+trp_elder_mmorgul_pl|mesto hrôzy
+trp_elder_cungol|Veliteľ tábora
+trp_elder_cungol_pl|tábor
+trp_elder_isengard|Gríma Červivec
+trp_elder_isengard_pl|mesto
+trp_elder_cgaladhon|Lothlorienský vodca
+trp_elder_cgaladhon_pl|elfská lesná pevnosť
+trp_elder_cdolen|Lothlorienský múdry
+trp_elder_cdolen_pl|vojenské ležanie
+trp_elder_camroth|Lothlorienský múdry
+trp_elder_camroth_pl|vojenské ležanie
+trp_elder_thalls|Temnohvozdský múdry
+trp_elder_thalls_pl|elfské jaskyne
+trp_elder_imladris|Veliteľ tábora z Roklinky
+trp_elder_imladris_pl|tábor
+trp_elder_wvillage|Vrchný lesník
+trp_elder_wvillage_pl|dedina
+trp_elder_beorn|Grizlovecký starší
+trp_elder_beorn_pl|osada
+trp_elder_harad|Táborový náčelník Haradu
+trp_elder_harad_pl|tábor
+trp_elder_rhun|Táborový náčelník Rhunu
+trp_elder_rhun_pl|tábor
+trp_elder_khand|Táborový veliteľ Khandu
+trp_elder_khand_pl|tábor
+trp_elder_dunland|Náčelník tábora Vrchovcov
+trp_elder_dunland_pl|tábor
+trp_elder_umbar|Korzársky vodca Umbaru
+trp_elder_umbar_pl|opevnený tábor
+trp_elder_moria|Mórijský dozorca
+trp_elder_moria_pl|Bane
+trp_elder_gunda|Pán Jaskyní
+trp_elder_gunda_pl|jaskyne
+trp_elder_dale|Starosta Dolu
+trp_elder_dale_pl|mesto
+trp_elder_esgaroth|Starosta Esgarothu
+trp_elder_esgaroth_pl|jazerné mesto
+trp_elder_erebor|Cechovný majster Ereboru
+trp_elder_erebor_pl|Siene
+trp_elder_dolguldur|Veliteľ Gulduru
+trp_elder_dolguldur_pl|čierny hrad
+trp_elder_gondor_ac|Veliteľ tábora
+trp_elder_gondor_ac_pl|tábor
+trp_elder_rohan_ac|Veliteľ tábora
+trp_elder_rohan_ac_pl|tábor
+trp_elder_mordor_ac|Veliteľ tábora
+trp_elder_mordor_ac_pl|tábor
+trp_elder_isengard_ac|Veliteľ tábora
+trp_elder_isengard_ac_pl|tábor
+trp_elder_lorien_ac|Veliteľ tábora\t
+trp_elder_lorien_ac_pl|tábor
+trp_elder_woodelf_ac|Veliteľ tábora
+trp_elder_woodelf_ac_pl|tábor
+trp_elder_imladris_ac|Veliteľ tábora
+trp_elder_imladris_ac_pl|tábor
+trp_elder_beorn_ac|Veliteľ tábora
+trp_elder_beorn_ac_pl|tábor
+trp_elder_harad_ac|Táborový náčelník Haradu
+trp_elder_harad_ac_pl|tábor
+trp_elder_rhun_ac|Táborový náčelník Rhunu
+trp_elder_rhun_ac_pl|tábor
+trp_elder_khand_ac|Táborový veliteľ Khandu
+trp_elder_khand_ac_pl|tábor
+trp_elder_dunland_ac|Náčelník tábora Vrchovcov
+trp_elder_dunland_ac_pl|tábor
+trp_elder_umbar_ac|Korzársky vodca Umbaru
+trp_elder_umbar_ac_pl|tábor
+trp_elder_moria_ac|Veliteľ tábora Morie
+trp_elder_moria_ac_pl|tábor
+trp_elder_gunda_ac|Veliteľ tábora Gundabadu
+trp_elder_gunda_ac_pl|tábor
+trp_elder_dale_ac|Starosta Dolu
+trp_elder_dale_ac_pl|tábor
+trp_elder_guldur_ac|Veliteľ tábora Gulduru
+trp_elder_guldur_ac_pl|tábor
+trp_elder_dwarf_ac|Veliteľ tábora trpaslíkov
+trp_elder_dwarf_ac_pl|tábor
+trp_village_1_elder|Pán Biča
+trp_village_1_elder_pl|jaskyne
+trp_tutorial_chest_1|Truhla so zbraňami na blízko
+trp_tutorial_chest_2|Truhla so zbraňami na diaľku
+trp_bonus_chest_1|Bonusová truhlica
+trp_bonus_chest_2|Bonusová truhlica
+trp_bonus_chest_3|Bonusová truhlica
+trp_camp_chest_faction|Truhlica frakcie
+trp_camp_chest_none|Nikomu nepatriaca truhla
+trp_player_chest|Tvoja truhla
+trp_local_merchant|Miestny kupec
+trp_local_merchant_pl|Miestni kupci
+trp_tax_rebel|Roľnícky vzbúrenec
+trp_tax_rebel_pl|Roľnícki vzbúrenci
+trp_trainee_peasant|Roľník
+trp_trainee_peasant_pl|Roľníci
+trp_fugitive_man|Podozrivý muž
+trp_fugitive_man_pl|Podozriví muži
+trp_fugitive_elf|Podozrivý elf
+trp_fugitive_elf_pl|Podozrivý elfovia
+trp_fugitive_dwarf|Podozrivý trpaslík
+trp_fugitive_dwarf_pl|Podozriví trpaslíci
+trp_fugitive_orc|Podozrivý ohyzd
+trp_fugitive_orc_pl|Podozrivý ohyzdi
+trp_spy|Vyhýbavý korzár
+trp_spy_pl|Vyhýbaví korzáry
+trp_spy_evil|Vyhýbavý južan
+trp_spy_evil_pl|Vyhýbaví južania
+trp_spy_partner|Cvičiteľ špehov
+trp_spy_partner_pl|Cvičitelia špehov
+trp_spy_partner_evil|Cvičiteľ špehov
+trp_spy_partner_evil_pl|Cvičitelia špehov
+trp_easter_egg_troll|Zlobor
+trp_treebeard|Stromobrad
+trp_ent_1|Bregalad -Rýchlolúč-
+trp_ent_2|Finglas -Listovlas-
+trp_ent_3|Fladrif -Kôroš-
+trp_gandalf|Gandalf
+trp_gandalf_pl|tuzemský Gandalfovia
+trp_nazgul|Nazgul
+trp_nazgul_pl|Skrotený Nazgul
+trp_barman|Barman
+trp_elder|Starosta centra
+trp_gear_merchant|Zbrojmajster
+trp_goods_merchant|Obchodník so zásobami
+trp_start_quest_caravaneer|Torbal Karavanista
+trp_dorwinion_bandit|Dorwinionský bandita
+trp_dorwinion_bandit_pl|Dorwinionskí banditi
+trp_dorwinion_raider|Dorwinionský lupič
+trp_dorwinion_raider_pl|Dorwninionský nájazdníci
+trp_city_guard|Mestská stráž
+trp_city_guard_pl|mestská stráž
+trp_orc_sentry|Ohyzdia stráž
+trp_orc_sentry_pl|ohyzdia stráž
+trp_uruk_hai_sentry|Uruk-haiská stráž
+trp_uruk_hai_sentry_pl|uruk-haiská stráž
+trp_black_numenorean_sorcerer|Čierno-númenorejský černokňažník
+trp_black_numenorean_sorcerer_pl|Čierno-númenorejský černokňažník
+trp_black_numenorean_acolyte|Čierno-númenorejský pomocník
+trp_black_numenorean_acolyte_pl|Čierno-númenorejský pomocník
+trp_wolf_rider_of_mirkwood|Vlčí jazdec z Temnohvozdu
+trp_wolf_rider_of_mirkwood_pl|Vlčí jazdci z Temnohvozdu
+trp_warg_rider_of_mirkwood|Vrrčí jazdec z Temnohvozdu
+trp_warg_rider_of_mirkwood_pl|Vrrčí jazdci z Temnohvozdu
+trp_gate_aggravator|Obrana Brány
+trp_orc_pretender|Ohyzdí podvodník
+trp_human_prisoner|Ľudský zajatec
+trp_spider|Temnohvozdský pavúk
+trp_spider_pl|Temnohvozdskí pavúci
 trp_bear|Medveď
-; trp_bear_pl|Bears
+trp_bear_pl|Medvede
 trp_wolf|Vlk
-; trp_wolf_pl|Wolves
-; trp_dorwinion_sack|Dorwinion Sack
-; trp_ring_hunter_captain|Ring Hunter Captain
-; trp_ring_hunter_lt|Ring Hunter Captain
-; trp_ring_hunter_one|Ring Hunter
+trp_wolf_pl|Vlky
+trp_dorwinion_sack|Vrece z Dorwinionu
+trp_ring_hunter_captain|Lovec prsteňa - kapitán
+trp_ring_hunter_lt|Lovec prsteňa - kapitán
+trp_ring_hunter_one|Lovec prsteňa
 trp_ring_hunter_one_pl|Hľadači Prsteňa
-; trp_ring_hunter_two|Ring Hunter
+trp_ring_hunter_two|Lovec prsteňa
 trp_ring_hunter_two_pl|Hľadači Prsteňa
-; trp_ring_hunter_three|Ring Hunter
+trp_ring_hunter_three|Lovec prsteňa
 trp_ring_hunter_three_pl|Hľadači Prsteňa
-; trp_ring_hunter_four|Ring Hunter
+trp_ring_hunter_four|Lovec prsteňa
 trp_ring_hunter_four_pl|Hľadači Prsteňa
-; trp_start_quest_uruk|Mordor Uruk Captain
-; trp_start_quest_orc|Mordor Orc Lieutenant
-; trp_start_quest_orc_pl|Large Orcs of Mordor
-; trp_start_quest_woodelf|Galadhrim Royal Marksman
-; trp_start_quest_woodelf_pl|Galadhrim Royal Marksmen
-; trp_start_quest_mordor_scout|Mordor Guide
-; trp_start_quest_mordor_scout_pl|Mordor Guides
-; trp_start_quest_beorning|Beorning Carrock Berserker
-; trp_start_quest_beorning_pl|Beorning Carrock Berserkers
+trp_start_quest_uruk|Mordorský Urukský kapitán
+trp_start_quest_orc|Mordorský Urukský poručík
+trp_start_quest_orc_pl|Veľkí ohyzdi z Mordoru
+trp_start_quest_woodelf|Urodzený ostrostrelec Galadhrim
+trp_start_quest_woodelf_pl|Urodzení ostrostrelec Galadhrim
+trp_start_quest_mordor_scout|Mordorský sprievodca
+trp_start_quest_mordor_scout_pl|Mordorský sprievodcovia
+trp_start_quest_beorning|Grizlovecký berserk z Carrocku
+trp_start_quest_beorning_pl|Grizloveckí berserkovia z Carrocku
+trp_beorning_shield_bear|Medvedí bojovník
+trp_beorning_shield_bear_pl|Medvedí bojovníci
+trp_morannon_healer|Okstuk Liečiteľ
+trp_minas_tirith_healer|Ioreth
+trp_edoras_healer|Freya Liečiteľka
+trp_isengard_healer|Nurgal Zašívač
+trp_guldur_healer|Mornagar Pisár
+trp_gundabad_healer|Lurgakh Tretie Oko
+trp_mirkwood_healer|Corwiel Mäkkoruký
+trp_hungry_uruk|Hladný Uruk
+trp_hungry_orc|Hladný Ohyzd
+trp_longing_lorien|Túžobný Elf
+trp_longing_woodelf|Túžobný Elf
+trp_longing_imladris|Túžobný Elf
+trp_deep_dweller_of_moria|Ohyzd z hĺbin Morie
+trp_deep_dweller_of_moria_pl|Ohyzdi z hĺbin Morie
+trp_tribal_orc_chief|Ohyzdí náčelník z Morie
+trp_tribal_orc_chief_pl|Ohyzdí náčelníci z Morie
+trp_rhovanion_noble|Rhovanionský šľachtic
+trp_rhovanion_noble_pl|Rhovanionskí šľachtici

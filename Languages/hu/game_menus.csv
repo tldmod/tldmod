@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Miért harcolsz?
 mno_start_good|egy új korszak HAJNALA
 mno_start_evil|az Emberek ALKONYA
 mno_go_bback|Vissza
-menu_start_phase_2|^^^^^ Középfölde. Egy árnyék növekszik Keleten, ^ és sötét dolgok bújnak elő, melyek sokáig rejtőztek. ^ A szabad népek felkészülnek a háborúra, egy olyanra melyet évszázadok óta nem látott a világ. ^ Emberek, Tündék, Törpék, Orkok; mindannyian kiveszik belőle a részüket. ^^ Hogy milyen részt, az még nem tudni,..
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
 mno_go_forth|Haladj előre a választott utadon...
 menu_start_game_3|^^^^^^^^Válaszd ki a körülményeket:
 mno_custom_battle_scenario_1|Csatározás, Gondor népei Harad ellen
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|Troll Csata Tesztelés
 mno_warg_battle_scenario|Varg Csata Tesztelés
 mno_build_your_own_scene|**Alkosd meg saját csatajelenetedet az Utolsó Napok-hoz.
 menu_tutorial|^^Az Utolsó Napok rengeteg funkcióval rendelkezik ami ismeretlen az eredeti M&B-hez képest. Ezek megvannak határozva a hozzácsatolt, részletes, spoiler nélküli PDF kiadásban.  Az alapvető játék mechanikák megtanulásához kérjük használd az Eredeti modult.
+menu_tutorial|^^Az Utolsó Napok rengeteg funkcióval rendelkezik ami ismeretlen az eredeti M&B-hez képest. Ezek megvannak határozva a hozzácsatolt, részletes, spoiler nélküli PDF kiadásban.  Az alapvető játék mechanikák megtanulásához kérjük használd az Eredeti modult.
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|Vissza.
 mno_action_view_troop_trees|Egység-fák megtekintése
 mno_view_upkeep_costs|Fenntartási költségek megtekintése.
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|Mégsem.
 menu_custom_battle_end|^^^^^^A csatának vége. {s1} A sereged megölt {reg5} ellenfelet és elvesztett {reg6} katonát a csata során.^Te egyedül megöltél {reg7} ellenfelet a harcban.
 mno_replay|Csata újrajátszása.
 mno_continue_dot|Folytatás.
-menu_quick_battle_general_test|^^^Aktuális csata: ^csapat A: {reg10} {s10}^^ellen küzd^^ csapat B: {reg11} {s11}
-mno_tAA|+5 Csapat A
-mno_tAB|-5 Csapat A
-mno_tAC|A Sereg kiválasztása
-mno_tBA|+5 Csapat B
-mno_tBB|-5 Csapat B
-mno_tBC|B Sereg kiválasztása
-mno_B|1. beállítás
-mno_F|HARC ELKEZDÉSE!
 mno_dot_go_back|. Vissza
-menu_quick_battle_troll|^^^^^^^^Válassz troll kampányt:
-mno_troll_battle_scenario_10|Teszt: Trollok Gyalogosok ellen
-mno_troll_battle_scenario_11|Teszt: Trollok Íjászok ellen
-mno_troll_battle_scenario_12|Teszt: Trollok Lovasság ellen
-mno_troll_battle_scenario_13|Teszt: Trollok Lándzsások ellen
-mno_troll_battle_scenario_14|Teszt: Trollok Trollok ellen
-mno_troll_battle_scenario_15|Játék-teszt: Játékos által irányított Troll
-menu_quick_battle_wargs|^^^^^^^^Válassz TESZT Warg kampányt:
-mno_warg_battle_scenario_10|Wargok ellen: 1v1
-mno_warg_battle_scenario_11|Wargok ellen: 2v3
-mno_warg_battle_scenario_12|Wargok ellen: sokan sok ellen
-mno_warg_battle_scenario_10b|Játék Wargként: 1v1
-mno_warg_battle_scenario_11b|Játék Wargként: 2v3
-mno_warg_battle_scenario_12b|Játék Wargként: sokan sok ellen
 menu_start_good|^^^^^^^^Válassz fajt:
 mno_start_ma|EMBER
 mno_start_el|TÜNDE
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^Nemed?
 mno_start_male|Férfi
 mno_start_female|Nő
 mno_proc|Szokásos eljárás
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|Folytatás...
 menu_character_report|^^^^^^^Csapatmorál: {reg8}^Csapatméret korlát: {reg7}^{s5}
 menu_camp|^^^^A {s1}.{s2} része vagy.^^ Mit akarsz csinálni?
@@ -127,8 +115,10 @@ mno_camp_wait_here|Letáborozás.
 mno_camp_options|Beállítások megváltoztatása.
 mno_Cheat_enable|Csalás/modding lehetőségek engedélyezése.
 menu_game_options|^^^^^^^^Kattints egy beállításra a következő lehetőségek bekapcsolásához:
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|Korlátozott játékos felszerelés: {s7}
 mno_game_options_formations|Harci alakzatok és AI: {s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|A városi NJK-k mindig elérhetőek a menükből: {s7}
 mno_game_options_cutscenes|Jelenetek: {s7}
 mno_game_options_injuries|Társak sérülése: {s7}
@@ -136,11 +126,16 @@ mno_game_options_death|Végleges halál az uraknál és társaknál: {s7}
 mno_game_options_death2|Végleges halál a játékosra (azaz RÁD!): {s7}
 mno_game_options_morale|Harci morál rendszer: {s7}
 mno_game_options_animal_ambushes|Állatok rajtaütése: {s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|Játékmenetbeli finomítások...
 mno_game_options_back|Vissza a tábor menübe.
+mno_game_options_start_back|Vissza.
 menu_camp_tweaks|^^^^^^^^Válassz egy beállítást, melyet módosítani szeretnél.
 mno_tweak_options_compat|Kompatibilitási finomítások...
 mno_tweak_options_strat|Stratégiai finomítások...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|Vissza a Beállítások menübe.
 menu_camp_compat_tweaks|^^^^^^^^Kattints egy lehetőségre a változtatáshoz (tartsd a Shiftet lenyomva a csökkentéshez):^(Ezek a kompatibilitásra vonatkoznak és nem csalások)
 mno_game_options_compat_party|Csapatok maximális száma: {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Kattints egy beállításra a következő lehető
 mno_strat_tweaks_siege_reqs|Ostrom erő követelményei: {s7}
 mno_strat_tweaks_siege_relax_rate|Ostrom erős előfelt. gyengítési értéke: {reg1}
 mno_strat_tweaks_regen_rate|Erő regenerálódási érték: {s7}
-mno_strat_tweaks_siege_regen_limit|A népek nem regenerálódnak a következő alatt: {reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|Befolyás szerezve: {s7}
 mno_strat_tweaks_rank_gain_rate|Rang szerezve: {s7}
 mno_strat_tweaks_back|Vissza a finomítások menübe.
@@ -188,9 +183,11 @@ mno_leave|Távozás.
 menu_simple_encounter|^^^^^{s2}^{reg22} csapatod áll készen a csatára {reg11} ellen.^^A csata {s3}{s4} területén zajlik le.^^Parancsaid?
 mno_encounter_attack|{reg21?Rohamozd meg őket:Felkészülni a csatára.}
 mno_encounter_order_attack|Parancsold meg csapataidnak, hogy támadják meg {reg21?támadás:csata} nélküled.
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Rohanj velük szembe, megroppantva a {s4}t.
 mno_encounter_leave|Visszavonulás.
 mno_encounter_retreat|Visszavonulás, néhány katonát hátrahagyva, hogy fedezzék a visszavonulásodat.
+mno_hide_close|Folytatás...
 menu_encounter_retreat_confirm|^^^^^A legnagyobb taktikai képzettséggel rendelkező csapattagként, ({reg2}), {reg3?kiötölsz:{s3}kitalál} egy tervet, mely lehetővé teszi számodra és embereid számára, hogy elmeneküljetek, hátra kell azonban hagynod {reg4} katonát, hogy lefoglalják az ellenséget. 
 mno_leave_behind|Gyerünk. Ezeknek az embereknek a feláldozása megmenti a többi életét.
 mno_dont_leave_behind|Nem. Senkit sem hagyunk hátra.
@@ -212,6 +209,7 @@ mno_inspect_troll|Leterített troll megvizsgálása
 menu_pre_join|^^^^^Épp egy csata közepébe pottyansz {s2} és {s1} között. Úgy döntesz, hogy...
 mno_pre_join_help_attackers|{s2} segítségére sietsz.
 mno_pre_join_help_defenders|{s1} segítségére sietsz.
+mno_pre_join_help_refugees|{s1} segítségére sietsz.
 mno_pre_join_leave|Nem avatkozol közbe.
 menu_join_battle|^^^{s2} segítségére sietsz {s1} ellen.^{reg22} katona áll készen a csatára az ellenséges {reg11} ellen.^^A csata {s3}{s4} területén zajlik le.
 mno_join_attack|Az ellenség megrohamozása.
@@ -286,6 +284,7 @@ mno_isengard_underground|Menj a földalatti barlangokba.
 mno_tirith_toplevel|Mássz fel a legfelső szintre.
 mno_town_leave|Távozás...
 mno_town_leave_door|Helyszín elhagyása
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|Szeretnél partra szállni?
 mno_disembark_yes|Igen.
 mno_disembark_no|Nem.
@@ -317,8 +316,19 @@ mno_explore|Fedezd fel a helyszínt.
 menu_ring_hunter_lair|^^^^Követted a Gyűrű Vadászok nyomát a Bakacsinerdőn keresztül, és megérkeztél {s1}-hoz/höz. Látod ahogy készen állnak távozni egy ládával.
 mno_attack_lair|Támadd meg őket azonnal
 mno_leave_bandit_lair|Hagyd békén őket
-menu_starting_quest_good|^^^^^^Észreveszel egy apró karavánt, amit épp orkok bandája rohan le. Mit teszel?
-mno_help|Segítesz az idegeneknek!
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+; mno_gondor_reinforcement_event_close|Close
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|Távozás...
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+; mno_player_added_to_war_council_close|Close
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+; mno_player_added_to_siege_reports_close|Close
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+; mno_player_added_to_allow_follow_close|Close
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+; mno_center_besieged_event_close|Close
+mno_intro_next|Folytatás...
 mno_start_defend_caravan|Védd meg a Karavánt!
 mno_start_raid_caravan|Foszd ki a Karavánt!
 mno_start_ambush_orcs|Üss rajta az Orkokon!
@@ -326,8 +336,30 @@ mno_start_kill_scouts|Állítsd meg a felderítőket, hogy ne tudják jelenteni 
 mno_go_your_way|Békén hagyod őket.
 mno_defend_villagers|Védd meg a Falusiakat!
 mno_raid_villagers|Foszd ki a Falut!
-mno_go_away|Békén hagyod őket.
-menu_custom_battle_choose_faction1|^^^^^^^^^^Válaszd ki az oldalad és küzdj rajta:
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|Folytatás...
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|Küldj üzenetet, hogy hamarosan csatlakozol hozzá.
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|Jók oldala
 mno_bad_equal|Gonoszak oldala
 mno_replay_prev|Előző összeállítás újrajátszása

@@ -22,11 +22,21 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Ahora que lo pienso, cr
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Vaya, creo que me he encontrado con otro como tú en Edoras.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Vaya, creo que me he encontrado con otro como tú en Minas Tirith.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Lo sé. ¡Vengo de lejos! Soy un Hobbit, mi {señor/señora}, de la Comarca.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3|¡Ah, ese otro debe de haber sido mi querido primo Peregrin Tuk... Más conocido como Pippin! Somos Hobbits, mi {señor/señora}, y venimos de la Comarca, ¡los dos! Ay, el bueno de Pippin... me pregunto que tal le estarán yendo las cosas en Minas Tirith.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_3.1|¡Ah, ese otro debe de haber sido mi querido primo Meriadoc Brandigamo... Más conocido como Merry! Somos Hobbits, mi {señor/señora}, y venimos de la Comarca, ¡los dos! Ay, el bueno de Merry... me pregunto que tal le estarán yendo las cosas en Edoras.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|¡Ah, ese otro debe de haber sido mi querido primo Peregrin Tuk... Más conocido como Pippin! Somos Hobbits, mi {señor/señora}, y venimos de la Comarca, ¡los dos! Ay, el bueno de Pippin... me pregunto que tal le estarán yendo las cosas en Minas Tirith.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|¡Ah, ese otro debe de haber sido mi querido primo Meriadoc Brandigamo... Más conocido como Merry! Somos Hobbits, mi {señor/señora}, y venimos de la Comarca, ¡los dos! Ay, el bueno de Merry... me pregunto que tal le estarán yendo las cosas en Edoras.
+; dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|May I ask a favour of you, {my lord/my lady}.
+; dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Of course, {s1}. What is it?
+; dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.
+; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|I will be passing by {s1} and will be glad to pass on this message to your cousin.
+; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|I'm sorry, {s1}, but I do not have the time.
+; dlga_hobbit_general_talk_ask_accept:close_window|Thanks! {s1}
+; dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|I understand. I'll send it to the next caravan to {s1} then.
 dlga_hobbit_general_talk_3:close_window|Bueno, hasta luego.
 dlga_start:hobbit_merry_talk_met.1|¡Bienvenido de nuevo, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|¡Bienvenido de nuevo, {playername}!
+; dlga_hobbit_merry_talk_met:hobbit_deliver_message|Hello, messer Merry. I have a message here from your cousin, Pippin, in Minas Tirith.
+; dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Hello, messer Pippin. I have a message here from your cousin, Merry, in Edoras.
+; dlga_hobbit_deliver_message:close_window|Thank you, {playername}. It was good of you to bring this to me.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 dlga_hobbit_merry_talk_met:close_window|Saludos, maese Merry.
 dlga_hobbit_pippin_talk_met:close_window|Saludos, maese Pippin.
 dlga_start:treebeard_introduce_1|(Te encuentras mirando a una criatura extraordinaria. Es muy alta y de movimientos rígidos, con una piel rugosa como la corteza y de frondoso pelo. El musgo recubre sus partes más occidentales, pero en este momento te es imposible separar la vista de sus ojos. Esos profundos ojos te están vigilando, lentos y solemnes aunque también muy agudos y penetrantes. Crees que son de color marrón, iluminados por una luz verde, como si fueran dos pozos profundos, llenos de experiencia y sabiduría. Pero en la superficie de sus ojos se aprecia un destello de interés... como el brillo del sol sobre las hojas de un vasto árbol, o en el oleaje de un profundo lago.)
@@ -56,6 +66,7 @@ dlga_start:close_window.3|¿Mmmrrrmm?
 dlga_start:looters_2_join|¡Arrodíllate ante el poder de {s4}, y sírveme!
 dlga_looters_2_join:close_window|Os obedeceremos, amo.
 dlga_start:close_window.4|^^¡GRRRR!^^
+; dlga_start:close_window.5|^^GROWL!^^\t\t\t\t\t\t\t\t\t
 dlga_start:member_castellan_talk|¿Sí, {playername}? ¿Qué puedo hacer por ti?
 dlga_member_castellan_pretalk:member_castellan_talk|¿Algo más?
 dlga_member_castellan_talk:member_review_castle_garrison|Quiero revisar la guarnición del castillo.
@@ -92,8 +103,8 @@ dlga_member_question_2:member_health|¿Cómo estás de salud?
 dlga_member_question_2:member_background_recap|Cuéntame tu historia otra vez.
 dlga_member_background_recap_3:do_member_trade|Y poco después, me uní a tu grupo.
 dlga_do_member_view_char:member_talk|¿Alguna cosa más?
-dlga_start:close_window.5|Partiremos en cuanto estés listo.
-dlga_start:close_window.6|Por favor, no me hagas perder más mi tiempo. Puede que nos encontremos de nuevo en un futuro.
+dlga_start:close_window.6|Partiremos en cuanto estés listo.
+dlga_start:close_window.7|Por favor, no me hagas perder más mi tiempo. Puede que nos encontremos de nuevo en un futuro.
 dlga_companion_recruit_signup_response:close_window|Por desgracia ahora mismo no tengo sitio para ti en mi grupo.
 dlga_companion_recruit_rank:close_window|Parece que mi gente no te valora lo suficiente, {playername}. Eres {s29} y por lo menos necesitas ser un {s24} para que considere unirme a tu compañía [{reg3} necesitas disponer de mayor renombre]. ^Vuelve cuando lo hayas conseguido.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Me alegra ver que has conseguido llegar a {s29}, y estoy dispuesto a unirme a tu compañía.
@@ -168,7 +179,7 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|¡No nos ataquéis! No
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|¡Lucharemos hasta la muerte!
 dlga_party_encounter_offer_dont_fight:close_window|Te debo un favor, ¿no es así? Bueno... que así sea. Os dejaré marchar por esta vez. 
 dlga_party_encounter_offer_dont_fight:close_window.1|¡Ja ja! Pero yo en cambio sí que quiero luchar contra ti.
-dlga_start:close_window.7|Fuera de aquí, vil mendigo.
+dlga_start:close_window.8|Fuera de aquí, vil mendigo.
 dlga_start:lord_start|Pero si es mi valiente guerrero, {playername}...
 dlga_start:lord_start.1|Es una alegría verte de nuevo, {playername}...
 dlga_start:lord_start.2|Nos volvemos a encontrar, {playername}...
@@ -200,7 +211,7 @@ dlga_lord_capture_troll_completed_one_troll:close_window|Excelente, {playername}
 dlga_lord_start:close_window.1|Hace mucho tiempo te pedí que me trajeras un troll vivo. Pero debería de haberlo sabido... ¿Cómo podría esperar de alguien como {playername} algo tan grande? Mi sirviente no ha sido lo suficientemente habilidoso, ni leal.
 dlga_lord_start:lord_generic_mission_completed.1|Las noticias sobre tus hazañas contra los trolls salvajes han llegado a mis oídos. {s12} tiene un problema menos del que preocuparse, gracias a ti, {playername}.
 dlga_lord_start:lord_generic_mission_completed.2|Nuestros exploradores en las cercanías de {s12} nos han contado que has defendido valientemente el poblado. Estos incursores se están acercando cada día más y más...^^Creemos que una gran guerra está por venir, pero bueno... Gracias de corazón, {playername}.
-dlga_lord_start:destroy_scout_camp_failed|Nuestros exploradores en las cercanías de {s12} han presenciado tu retirada. Gran decepción,  {playername}. ^^Tu fracaso nos ha costado varias líneas de suministros que llevará tiempo recuperar.
+; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12}'s camp saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
 dlga_destroy_scout_camp_failed:close_window|Intentaré hacerlo mejor la próxima vez.
 dlga_lord_start:lord_generic_mission_completed.3|Nuestros exploradores en las cercanías de {s12} nos han contado que has defendido valientemente el poblado. Estos incursores se están acercando cada día más y más...^^Creemos que una gran guerra está por venir, pero bueno... Gracias de corazón, {playername}.
 dlga_lord_start:defend_village_failed|Nuestros exploradores en las cercanías de {s12} nos han contado que no has podido defender el poblado. Sus habitantes han sido masacrados o avocados a una vida de esclavitud. Estos incursores se están acercando cada día más y más...^^Creemos que una gran guerra está por venir.
@@ -208,13 +219,28 @@ dlga_defend_village_failed:close_window|Intentaré hacerlo mejor la próxima vez
 dlga_lord_start:lord_generic_mission_completed.4|Vimos aflorar las llamas en el poblado de {s12}. Oímos sus alaridos. Esto es el comienzo de algo más, {playername}. ^^La guerra se acerca.
 dlga_lord_start:raid_village_failed|Vimos cómo algunos de tus tropas huían despavoridas del poblado de {s12}. ¿Y ahora tienes las agallas de volver aquí, {playername}? ^^Habrá guerra, pero con fallos como este puede que tú seas la primera víctima.
 dlga_raid_village_failed:close_window|Intentaré hacerlo mejor la próxima vez.
+; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
+; dlga_lord_start:kill_quest_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
+; dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
+dlga_kill_quest_failed:close_window|Intentaré hacerlo mejor la próxima vez.
+; dlga_lord_start:lord_follow_spy_completed|{s4}
 dlga_lord_start:lord_follow_spy_half_completed|¡Maldito seas! Te pedí DOS prisioneros, {playername} -- ¡lo que me has traído es poco más que inútil! Ya sé todo lo que el espía podía saber, mi objetivo era su jefe. Aquí tienes, por la mitad del trabajo cobras la mitad de la recompensa. Cógela y fuera de mi vista.
 dlga_lord_start:lord_follow_spy_half_completed.1|Te pedí que capturaras a dos prisioneros, {playername}, no a uno de ellos. Dos. Aún así, has capturado al que envió al espía, que es el más importante de los dos. El espía no se atreverá a volver por aquí y ya habrá perdido su utilidad para cualquier jefe que pudiera tener. Esto es mejor que nada. Sin embargo, entenderás si te pago la mitad de la recompensa por mitad de trabajo hecho.
 dlga_lord_start:lord_follow_spy_failed|En verdad, {playername}, eres totalmente incompetente. Fallar en la captura del espía y además de la persona que lo envió te arroja en un nuevo nivel de incompetencia. Olvídate de la recompensa que te había prometido. No has hecho nada para ganártela.
 dlga_lord_follow_spy_half_completed:lord_pretalk| Lo hice lo mejor que pude, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Gracias, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Humrm. Como quieras, {s65}.
-dlga_lord_start:lord_generic_mission_completed.5|Resulta increíble, pero lo has conseguido, {playername}. Todos los esclavos están de vuelta y se están preparando para la cosecha. Te has ganado con creces la recompensa. Quédate con ella, junto con mi admiración.
+; dlga_lord_start:lord_generic_mission_completed.7|I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.
+; dlga_lord_start:lord_defend_refugees_failed|{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...
+; dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Forgive me, {s65}, I was unable to defend them.
+; dlga_lord_defend_refugees_failed_1a:lord_pretalk|It is the innocent that suffer the most in wars. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
+; dlga_lord_start:lord_defend_refugees_half_completed|I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
+; dlga_lord_defend_refugees_half_completed:lord_pretalk|I will be more prepared next time, my lord. 
+; dlga_lord_start:lord_generic_mission_completed.8|I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.
+; dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?
+; dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|They were slippery, master. I was unable to track them down.
+; dlga_lord_hunt_refugees_failed_1:lord_pretalk|Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.\t\t\t\t\t\t\t\t\t\t   
+; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. He estado esperando pacientemente el retorno de mis esclavos, pero ninguno ha vuelto. ¿Tienes alguna explicación para esto? ¿Has sido engañado por simples bestias, o es que directamente eres un incompetente?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Perdóname, {s65}, pero esos esclavos son resbaladizos como anguilas.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Mmff, eso no es excusa para tu fracaso, {playername}. Ahora si me disculpas, necesito capturar a más hombres para que trabajen estos campos antes de que todos muramos de hambre.
@@ -248,6 +274,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|De acuerdo, todo vuestro.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Me temo que tengo otros planes para él.
 dlga_lord_buy_prisoner_accept:lord_pretalk|¡Excelente! Haré que mis hombres lo lleven a nuestra prisión lo antes posible. Seguro que ayuda a la causa.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Es una pena, nos habría resultado muy útil, {playername}.
+; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^    - Factions will only initiate sieges when they are strong enough.^    - Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^    - If a faction loses their capital or if their strength is crushed, they will be defeated.^    - Factions gain strength from victories in the field and from holding certain key settlements.^    - Factions lose strength from defeats in the field or from losing settlements.^    - Some quests or events can affect faction strength.^    - You can compare the current faction strength ratings in the 'Reports' menu.^    - See the Info Pages for more TLD guides.
 dlga_lord_start:lord_pretalk|Ah, bienvenido, {s24}.^Ya deberías saber que {s12}. Tu deber es ayudarnos en nuestra lucha, {playername}. Cuando pruebes ser digno de mi confianza [nivel {reg1}], te dejaré abrir ese cofre de ahí.
 dlga_lord_start:lord_talk|¿Qué es lo que quieres?
 dlga_lord_pretalk:lord_talk|¿Algo más? 
@@ -258,6 +285,20 @@ dlga_lord_talk:lord_message_delivered|Traigo un mensaje de {s9}.
 dlga_lord_talk:lord_message_delivered_enemy|Traigo un mensaje de {s9}.
 dlga_lord_talk:lord_active_mission_1|Sobre la tarea que me habías asignado...
 dlga_lord_talk:lord_request_mission_ask|¿Tienes alguna tarea para mí?
+; dlga_lord_talk:dwarf_lord_book|{s3}, I have a matter which I must bring to your attention.
+; dlga_dwarf_lord_book:dwarf_lord_book_give|Speak freely, {playername}.
+; dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|I ventured deep into the Mines of Moria and found record of Balin's company.
+; dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|You speak of my kin as though they are a memory. Is it so?
+; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...
+; dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'We cannot get out. We cannot get out...They are coming.'
+; dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.
+; dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|You have done Erebor a great service, {playername}, and your deed will not go unrewarded.
+; dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Thank you, {s3}.
+; dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|What will you do now?
+; dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.
+; dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, I wish to help {s4} people avenge Balin and his company.
+; dlga_dwarf_lord_book_give_i:lord_pretalk|I wish you good luck with that.
+; dlga_dwarf_lord_avenge:close_window|Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.
 dlga_lord_talk:find_lost_spears_permission|Mi señor, deseo entrar en las montañas solitarias, en búsqueda de las lanzas perdidas del Rey Bladorthin.
 dlga_find_lost_spears_permission:lord_pretalk|Ya tienes mi permiso, {playername}.
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|De acuerdo, {playername}, puedes entrar en las montañas.
@@ -267,39 +308,51 @@ dlga_lord_talk:tell_dorwinion_sack|He encontrado un saco con un antiguo emblema 
 dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Muy interesante. Este antiguo saco podría llevar la marca de un vino tan bueno que solo podría venir de Dorwinion.
 dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|También he encontrado este casco de Rhûn en el saco. ¿Puede ser una pista que nos conduzca a las Lanzas?
 dlga_tell_dorwinion_sack_3:lord_pretalk|Las caravanas están acostumbradas a que las asalten durante el camino. Ese casco en concreto pertenece a un explorador de Rhûn. Sigue el río hacia el sur del mar de Rhûn y busca las rutas comerciales a Dorwinion. Puede que encuentres lo que estás buscando.
+; dlga_lord_talk:lord_healer_wound_ask|I have heard that you were a great healer. Is this true, and can you help me?
+; dlga_lord_healer_wound_ask:lord_pretalk|{s1}
+; dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
+; dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
+; dlga_lord_healer_wound_ask_check:lord_healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
+; dlga_lord_healer_wound_ask_check:lord_pretalk|Not right now.
+; dlga_lord_healer_wound_heal:lord_healers_wound_check|{s1}
+; dlga_lord_healer_injured_ask:lord_healers_injured_check|{s1}
+; dlga_lord_healers_injured_check:lord_healers_injured_heal|Yes, attend to us.
+; dlga_lord_healers_wound_check:lord_healers_wound_heal|Yes, attend to us.
+; dlga_lord_healers_wound_check:lord_pretalk|Not right now.
+; dlga_lord_healers_injured_check:lord_pretalk|Not right now.
 dlga_lord_talk:ring_hunters_start|Estoy preparado para embarcarme en misiones más complejas que ayuden a poner fin a la Guerra, mi señor. ¿Qué quieres que haga?
-dlga_ring_hunters_start:ring_hunters_check|Sé muy bien de tu valía y conozco cada uno de tus logros, {playername}. Tengo una tarea sólo para ti, y puedes llevarla a cabo tal y como desees. Es imposible evitar el derramamiento de sangre, sobre todo contra este grupo del que te voy a hablar. ¿Tienes suficientes tropas?
+; dlga_ring_hunters_start:ring_hunters_check|{playername}, you have done great deeds and proven yourself worthy of the task I will now request of you. I trust you to deal with this matter as best you see fit, but know that our foe is dangerous and bloodshed will be unavoidable. Is your company strong enough for battle?
 dlga_ring_hunters_check:ring_hunters_1|Así es, mi señor. Poseo un grupo de soldados aguerridos. Podemos con todo.
 dlga_ring_hunters_check:ring_hunters_check_failed|Me temo que no, mi señor.
-dlga_ring_hunters_check_failed:lord_pretalk|Creo que todavía no tienes altura suficiente para semejante tarea, {playername}. Ve y hazte con más tropas.
-dlga_ring_hunters_1:ring_hunters_2|Excelente. Una reciente plaga de ladrones y maleantes ha tomado el Norte, arrasando pueblos y asaltando viajeros en busca de cualquier tipo de anillo. Les encontrarás y les ajusticiarás, poniendo fin a este mal sueño. Los supervivientes de su último objetivo han señalado la existencia de dos grupos: Uno con el botín en el Bosque Negro, el otro es más grande y se dirige a la casa de Beorn para seguir buscando y sembrando destrucción.
+; dlga_ring_hunters_check_failed:lord_pretalk|Then you are not ready for this task yet,{playername}. Go and gather more troops.
+; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind    You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.    The first is returning with their loot to their encampment on the eaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.
 dlga_ring_hunters_2:ring_hunters_what|¿Qué es lo que podrían estar buscando, mi señor?
 dlga_ring_hunters_2:ring_hunters_accept|Haré lo necesario para detener a estos... «Cazanillos».
 dlga_ring_hunters_2:ring_hunters_reject|Todavía no puedo realizar semejante tarea.
-dlga_ring_hunters_accept:close_window|Eres valiente, General. Esperamos que tengas suerte en tu empresa.
+; dlga_ring_hunters_accept:close_window|With bravery in your heart and sharp steel in your hands you will, {playername}. We will await news of your success.
 dlga_ring_hunters_reject:lord_pretalk|Ya veo. Date prisa en decírmelo, no queremos perder.
-dlga_ring_hunters_what:ring_hunters_2|No es fácil determinar con exactitud lo que están buscando, pero está claro que no pararán hasta encontrarlo. Lo que podemos decir es que debe de ser un tipo de arma poderosa, una con la que causar destrucción bajo el estandarte del Señor Oscuro.
-dlga_ring_hunters_what:ring_hunters_2.1|El Señor Oscuro envió emisarios a varios clanes enanos en busca de sus anillos de poder, y los bandidos pueden estar haciendo lo mismo. Asegurémonos de que no caigan en las manos del Señor Oscuro.
-dlga_lord_talk:ring_hunter_party_defeated|Traigo terribles noticias, mi señor... Aún acabando con la amenaza de los Cazanillos no he dado con sus líderes. Temo que puedan haber conseguido su objetivo.
-dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|Para nada son malas noticias, {playername}. ¡Sabemos de tu gran victoria! Las vidas de esos pueblerinos aportan más valor a nuestra causa que cualquier arma. En este momento los beórnidas son más fuertes, inspirados por tu proeza. Es más, no estamos seguros de que esos Cazanillos encontraran lo que estaban buscando. Si hubiera sido el arma que temíamos habríamos notado... una gran perturbación.
+; dlga_ring_hunters_what:ring_hunters_2|Designs of the Enemy are hidden from us, but we can see thes ruffians are bent on finding what they are looking for.    I cannot reveal all that we know, for much hangs in the balance and secrecy is paramount. Whatever they seek must be a powerful weapon, one to be used to cause more destruction in the Dark Lord's name.
+; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for them, or others like them...    Whether true or not, they must not fall into the Dark Lord's hands.
+; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news... Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
+; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news,{playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.    Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something... a disturbance.
 dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|Me alegro, puede que todavía sigan detrás del arma misteriosa. Seguiré vigilante y atento a cualquier rastro de los Cazanillos.
 dlga_ring_hunter_quest_end:close_window|Como todos. Gracias de nuevo por tus servicios, {playername}.
-dlga_lord_talk:ring_hunter_lair_defeated_elf|No fui capaz de interceptar a los Cazanillos que sembraban terror en las aldeas, mi señor. Pero sí pude derrotar a los líderes en su guarida, y nos hemos encontrado esto...
-dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Esto es un Anillo de Poder menor.
-dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Entonces hemos evitado que el Señor Oscuro se haga con él, algo que utilizaría para segar aún más vidas.
-dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Quédate con el anillo y úsalo contra las fuerzas del Señor Oscuro. Sabemos que harás lo correcto.
-dlga_ring_hunter_lair_quest_end:close_window|Es un gran honor, mi señor. Te lo agradezco. Seguiré combatiendo al Señor Oscuro, ahora con renovadas fuerzas y la inestimable ayuda del anillo.
-dlga_start:ring_hunters_party_attack|Mirad, allí. Más carnaza.
-dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Pondremos fin a vuestra desbocada cacería.
-dlga_ring_hunters_party_attack_2:close_window|Oídme, aseguraos de que rebuscáis en cada bolsillo y dedo. Dejadme uno para tortura y comeos al resto.
+; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able to defeat their leaders in their lair. They had this in their possession.
+; dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|I see, a ring, but not THE ring. Not even one of the great rings, yet not a mere trinket either. There is some power woven into it.
+; dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we were right to snatch it from the Dark Lord’s fingers, before he could use it to spread his Shadow over the land and have it seep into the hearts of many.
+; dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use it to fight the Enemy and his armies. I trust you to use it well.
+; dlga_ring_hunter_lair_quest_end:close_window|This is an honour, my Lord, thank you! My heart will stay true and my arm strong.
+; dlga_start:ring_hunters_party_attack|Look here, men. More lambs to the slaughter.
+; dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampage has come to an end.
+; dlga_ring_hunters_party_attack_2:close_window|Check their packs and their fingers. Save one to torture. Everyone else is for eating!
 dlga_start:ring_hunter_lair_defeat|¡El Anillo es propiedad del Señor Oscuro! ¡No os pertenece!
-dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Ahora es mío.
-dlga_ring_hunter_lair_defeat2:close_window|Nuestra derrota es irrelevante...  ¡Tu ayuda llega demasiado tarde, ya no puedes salvarlos!
-dlga_start:beorn_message|General, un mensajero de {s1} nos ha advertido sobre un gran grupo de bandidos que se aproxima. ¡No hemos tenido tiempo de preparar suficientes efectivos y ya oímos los sonidos de la guerra, nos preparamos para lo peor!
-dlga_beorn_message:beorn_message2|Esa no era una partida de guerra cualquiera, sino un destacamento con las mejores tropas del Señor Oscuro... eso sí, sin ningún tipo de líder. Parece que están en su guarida del Bosque Negro, debemos actuar con premura.
-dlga_beorn_message2:beorn_message_end|Así es, el mensaje mencionaba la guarida y hemos mandado explorar el lugar. Les hemos visto quemarlo y huir hacia Mordor... si hubierais comenzado allí puede que no hubierais sido capaz de ayudarnos. Gracias sinceras por tu ayuda.
-dlga_beorn_message_end:beorn_message_close|Entonces debo volver e informar a {s1} de lo acontecido aquí. Ve a tu aldea y prepara exploradores. Puede haber chusma orca cerca.
-dlga_beorn_message_close:close_window|Sí, mi general. Tendremos los ojos bien abiertos y seguiremos reclutando tropas de aldeas cercanas. Tu victoria ha inspirado nuestros corazones.
+; dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|It belongs to me now.
+; dlga_ring_hunter_lair_defeat2:close_window|Do you think you’ve won a great victory? A pale tattered shade of one, perhaps. Bah! Our warband marched out long before you arrived. You are too late to save those they went after!
+; dlga_start:beorn_message|My lord/lady, we received a warning from {s1} that a large outlaw warband was headed our way! Alas, there was no time to gather enough warriors. Having heard the sound of battle, we prepared for the worst!
+; dlga_beorn_message:beorn_message2|That was no band of ordinary outlaws. They were the Dark Lord's worst of the worst, at least here in the North. Their leaders, however, were not here. Their den lies near Mirkwood Forest and I must make haste.
+; dlga_beorn_message2:beorn_message_end|Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!
+; dlga_beorn_message_end:beorn_message_close|I must report back and tell {s1} about the battle. Go back to your village and dispatch scouts. There may be stragglers.
+; dlga_beorn_message_close:close_window|Yes, commander. We shall remain vigilant and send for more men from the distant hamlets. Your victory today has inspired us all.
 dlga_lord_give_troops:lord_give_troops_check|¿Reforzar mi grupo? Nunca está de más disponer de unos soldados de más.
 dlga_lord_give_troops:lord_pretalk|Por desgracia no dispones de ningún soldado de {s14} que pueda unirse a mis refuerzos.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Déjame comprobar el listado de mis tropas...
@@ -319,6 +372,10 @@ dlga_marshall_ask:lord_pretalk.3|Estamos en plena campaña, {playername}, tus co
 dlga_marshall_ask:marshall_suggest|Te escucho, {playername}. ¿Qué me aconsejas?
 dlga_marshall_suggest:marshall_answer|Deberíamos asediar {s1} inmediatamente.
 dlga_marshall_suggest:lord_pretalk|No importa, confío en vuestro buen juicio.
+; dlga_player_siege_discuss:player_siege_discuss_1|I am listening, my Lord.
+; dlga_player_siege_resource_check:lord_pretalk|No, the time is not yet right.
+; dlga_player_siege_check_passed:player_siege_accept|Very well. Go, {playername}, and march with the blessings of {s2}. We are counting on you to lead our people to victory.
+; dlga_player_siege_accept:close_window|Thank you, my Lord. I will not let you and {s2} down.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 dlga_marshall_answer:close_window|De acuerdo, {playername}, seguiré tu buen juicio. Mandaré mensajeros para reunir nuestras tropas.^Sígueme y permanece cerca - ¡cabalgamos a {s4}!
 dlga_lord_talk:deliver_gift_1|Traigo un regalo de {s1} desde {s3} para las gentes de {s2}.
 dlga_send_gift_1:lord_pretalk|Ya eres {s4}, {playername}. Sería mucho mejor enviarlo primero.
@@ -369,6 +426,14 @@ dlga_lord_tell_objective:lord_pretalk.9|Estamos luchando contra {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.10|Estamos acompañando a {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.11|Estamos reconsiderando nuestro próximo objetivo.
 dlga_lord_tell_objective:lord_pretalk.12|No sé: {reg1} {s1}
+; dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|I cannot do this now.
+; dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|I cannot do this now.
+
+; dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.
+; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Consider it done.
+; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|I do not have the time for this.
+; dlga_lord_mission_destroy_scout_camp_accept:close_window|We shall await news of your success.
+; dlga_lord_mission_destroy_scout_camp_reject:close_window|I see. That is disappointing.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, hemos recibido informes de nuestros exploradores de que un grupo de caza se dispone a asaltar una pequeña aldea cerca de cerca de {s12}.
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|¿Puedes enviar tropas?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Es posible movilizarlos, pero llevará tiempo. Temo que para entonces sea demasiado tarde. ^^Tú y tus hombres tenéis caballos briosos, ¿podéis defender la aldea?
@@ -464,15 +529,20 @@ dlga_lord_tell_mission:lord_mission_told.1|Tengo un amigo aquí, un viejo guerre
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|¿De cuantos soldados estamos hablando?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Si pudieras reclutar {reg1} {s14} y traérmelos aquí, seguramente serían suficientes.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Por supuesto, {s65}. Envíame {reg1} nuevos reclutas y los entrenaré para ser {s14}.
+; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the arena teach them a thing or two...
+; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Ando demasiado ocupado últimamente para poder entrenar a nadie.
 dlga_lord_mission_raise_troops_accepted:close_window|Me has quitado un peso de encima, {playername}. Mis sargentos os enviarán a los reclutas para que se pongan a tus órdenes de inmediato. Además, te adelantaré algún dinero para cubrir los gastos. Aquí tienes, con esta bolsa debería de ser suficiente. Gracias por tu ayuda.
+; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}.      I shall tell my sergeants to send the recruits to the arena.      Follow them there, and whip them up to shape. I will be watching.      Thank you for your help.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, por supuesto. Me lo esperaba. Bueno, pues que tengas buena suerte en tus asuntos.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Se me ocurre un asunto con el que podrías ayudarme, un problema relacionado con el criminal conocido como {s4}. Asesinó a uno de mis guardaespaldas y ha estado fugado desde entonces. Tenemos noticias de que este fugitivo ha sido avistado por última vez en {s3}. Quizás podrías encontrarlo y acabar con él, y si lo consigues, te lo recompensaré.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Entonces lo encontraré y lo ajusticiaré.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Estoy demasiado ocupado en este momento.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Excelente, {playername}.  Te estaré agradecido, y por supuesto tu hazaña se tendrá en cuenta. En fin, que tengas una buena caza.
 dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|Como gustes, {playername}. Me imagino que habrá muchos otros cazadores de recompensas por esta zona que puedan realizar el trabajo... 
-dlga_lord_tell_mission:lord_mission_told.2|Bueno, algunos de los esclavos que estaban trabajando en {s4} han huido. ¡Esos cerdos desagradecidos, a los que perdonamos la vida! Por lo que he oído, han huido rápidamente hacia {s3}, y se han separado en tres grupos para evitar ser capturados más fácilmente. Quiero que los captures a todos y que los lleves de vuelta a {s4} utilizando cualquier medio a tu disposición. Debería colgarlos por haber tratado de escapar, pero necesitamos mano de obra, así que solamente les daré una buena paliza.
+; dlga_lord_tell_mission:lord_mission_told.2|There are refugees on their way to {s6}. They will be moving slow, and as such, is a moving target to our enemies. Defend them until they reach their destination.
+; dlga_lord_tell_mission:lord_mission_told.3|Our spies tell us that there are refugees on their way to {s6}. They will be slow because of all the old, the sick, and the dying. Hunt them down, kill all the men, and take everyone else as slaves. Make sure none arrive at their destination!
+; dlga_lord_tell_mission:lord_mission_told.4|Well, some of the slaves working in {s4} have run away.     The ungrateful swine, whose lives we spared!     From what I've been hearing, they're running to {s3} as fast as they can,    and have split up into three groups to try and avoid capture.    I want you to capture all three groups and fetch them back to {s4} by whatever means necessary.    I should really have them hanged for attempting to escape, but we need hands now,    so I'll let them go off this time with a good beating.
 dlga_lord_tell_mission:lord_tell_mission_follow_spy|Tengo noticias de que hay un hombre en esta misma ciudad que en realidad es un espía del enemigo. Debería ser capturado y colgado por su insolencia, pero también sabemos que pronto abandonará la ciudad para encontrarse con su jefe, el hombre a quién le cuenta todos sus secretos. El espía me importa más bien poco, pero su jefe es un hombre peligroso, y nos podría contar cosas muy interesantes si consiguiéramos echarle el guante...
 dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|Quiero que esperes aquí hasta que el espía abandone la ciudad. Entonces le seguirás, sigilosamente, hasta el lugar de reunión con su jefe. Deberás tener mucho cuidado de que no ser visto por el espía de camino hacia allí, o si no podría olerse la trampa y dar la vuelta. Cuando su jefe aparezca, los emboscaréis para arrestarlos y me los traerás de vuelta aquí a los dos. Vivos, por favor.
 dlga_lord_tell_mission_follow_spy_2:lord_tell_mission_follow_spy_accepted|Lo haré, {s65}.
@@ -491,7 +561,7 @@ dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_accepted|
 dlga_lord_mission_lend_companion_told:lord_tell_mission_lend_companion_rejected|Lo siento, pero no me puedo desprender de {s3} durante una semana entera.
 dlga_lord_tell_mission_lend_companion_accepted:close_window|No puedo agradecerte lo suficiente lo que haces por mí, {playername}. No te preocupéis, os devolveré a vuestro compañero con la debida celeridad.
 dlga_lord_tell_mission_lend_companion_rejected:lord_pretalk|Bueno, es una desgracia, pero supongo que no puedo forzarte ni a ti ni a {s3} a que aceptéis. Tendré que apañármelas sin su ayuda.
-dlga_lord_tell_mission:lord_mission_told.3|Nuestros exploradores han notado un incremento reciente en la actividad del enemigo. Desafortunadamente nunca hemos conseguido capturar soldados enemigos para interrogarlos, y así conocer los planes del enemigo. Así que necesito un guerrero valiente que capture a {reg1} soldados enemigos, para que los pueda interrogar.
+; dlga_lord_tell_mission:lord_mission_told.5|Our scouts have noticed a recent increase in enemy activity.    Unfortunately they almost never succeed in capturing live prisoners and bring them in for questioning,    so we can piece together what the enemy is up to.    So, I need a good warrior to find me {reg1} enemy prisoners, that I may question them.
 dlga_lord_tell_mission:lord_pretalk|No, {playername}. No necesito de tu ayuda en este momento.
 dlga_lord_mission_told:lord_mission_accepted|Puedes contar conmigo, {s65}.
 dlga_lord_mission_told:lord_mission_rejected|Me temo que no puedo aceptar una misión como esa en este momento.
@@ -528,7 +598,7 @@ dlga_start:castle_guard_players|¿Cuales son tus órdenes, mi señor?
 dlga_castle_guard_players:close_window|Abre la puerta. Quiero entrar.
 dlga_castle_guard_players:close_window.1|No importa.
 dlga_start:castle_guard_sneaked_intro_1|¡Sal de mi vista, mendigo! ¡Apestas!
-dlga_start:close_window.8|¡Sal de mi vista antes de que pierda la paciencia, vil mendigo!
+dlga_start:close_window.9|¡Sal de mi vista antes de que pierda la paciencia, vil mendigo!
 dlga_castle_guard_sneaked_intro_1:castle_guard_sneaked_intro_2|Quiero entrar en el salón y hablar con tu señor.
 dlga_castle_guard_sneaked_intro_1:close_window|[Irse]
 dlga_castle_guard_sneaked_intro_2:close_window|¿Estás {loco hombre/loca mujer}? No se permite la entrada de mendigos en el salón del señor. Ahora marchaos u os daré una paliza.
@@ -564,13 +634,21 @@ dlga_caravan_help2:caravan_help3|¿Lo eres? Claro que lo eres, sé que eres un h
 dlga_caravan_help3:caravan_help4|Buen viaje, Torbal. Seguro que nos encontramos de nuevo.
 dlga_caravan_help4:caravan_help5|Eso espero, todos hemos visto como has luchado y haremos correr la voz por la zona. ^^¡Si ayudas a su gente lo suficiente ganarás en renombre, lo que puede abrirte muchas puertas! ^^Por ejemplo, yo suelo ser bastante conocido por donde paso y recibo unos ingresos mensuales por todo lo que hago.
 dlga_caravan_help5:close_window|Lo recordaré. Te lo agradezco, Torbal. Ten cuidado.
-dlga_start:caravan_attack1|¿Quién eres? No necesitaba tu ayuda.
-dlga_caravan_attack3:close_window|¿Debilucho? Ya te enseñaré quién es el débil aquí (Difícil)
-dlga_caravan_attack3:close_window.1|Venga, huye, cobarde. Ya me encontraré tu mortaja.
+; dlga_start:caravan_attack1|And who are you? We needed none of your interference, nar!
+; dlga_caravan_attack3:close_window|Weakling? Let’s see who the weakling is! (Difficult)
+; dlga_caravan_attack3:close_window.1|Go on then, coward. I'll see your corpse in the fields.
 dlga_start:caravan_duel1|Jeje... Es un gruñón, ¿eh? ¡No le hagas caso! Me has salvado el pellejo a mi y a mis tropas. ^^Así que ten, hemos recogido el dinero de los bolsillos de nuestros compañeros fallecidos. {s10}
 dlga_start:caravan_duel1.1|Parece que me han ascendido. ¡Eres un valiente guerrero! Así que toma tu parte del botín caravanero. Los guardias también habían apostado en tu contra, pero yo no... jeje... He visto lo que vales... ^^{s10}
 dlga_caravan_duel1:caravan_duel2|Podría matarte y hacerme con todo... pero ya me has dado la razón. Fuera de aquí.
 dlga_caravan_duel2:caravan_duel3|¡Ahora mismo las tropas te respetan! ¡O te temen! Lo importante es que relatarán los sucedido a sus señores. ¡Puede que si sigues causando impresión se te concedan ciertos premios! ¡Los jinetes de Rhûn una vez me dieron un caballo! ¡Me lo comí! ¡AJA JA JA JA JA JA!
+; dlga_start:caravan_res_tut1|*snicker* No harm in biding one’s time, warrior! Some of the lads might not think so much of you, but not me, oh no. I saw you fight. Won’t bet against you! {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
+; dlga_start:caravan_res_tut2|*snicker* I s’pose I’m the leader now. You are a fierce warrior, yes! Take your share of the loot. Some o’ the lads were betting on you being warg meat, but not me, oh no. I saw you fight. Won’t bet against you!^^Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
+dlga_caravan_res_tut1:caravan_noduel|(TUTORIAL DE PUNTOS DE RECURSOS)^^ Los puntos de recursos de las gentes de Mordor los puedes gastar sólo comprando en Mordor, ya que cambian de facción en facción y no valen para el resto de facciones. ^^Para más información visita el menú de Informes.
+dlga_caravan_res_tut2:caravan_duel1|(TUTORIAL DE PUNTOS DE RECURSOS)^^ Los puntos de recursos de las gentes de Mordor los puedes gastar sólo comprando en Mordor, ya que cambian de facción en facción y no valen para el resto de facciones. ^^Para más información visita el menú de Informes.
+; dlga_caravan_noduel:caravan_duel2|I could kill him as easily as I spit! But I have nothing to prove to the likes of him.
+dlga_caravan_duel1:caravan_duel2|Podría matarte y hacerme con todo... pero ya me has dado la razón. Fuera de aquí.
+; dlga_caravan_duel2:caravan_fac_tut|Fair enough, fair enough! Look at these cowering wretches around us! Ha! They fear you, oh yes, as they should, as they should! I don’t. Heh. But then, I owe you a favour, don’t I! I’ll do you a good turn in my way. I’ll tell the Bosses about you today. Word’ll get around. And when the Bosses hear enough about you… why, could be they’d have something special for you. Gifts, power, respect! I’m going back now for a nice big helping myself!
+dlga_caravan_fac_tut:caravan_duel3|(TUTORIAL DE RANGO DE FACCIÓN) ^^Los puntos de rango te permiten subir de categoría en tu facción (y en cualquier otra). ^^Estos puntos determinan el tamaño máximo del grupo, los ingresos semanales y permiten desbloquear recompensas exclusivas de cada facción
 dlga_woodelf_help_6:woodelf_help_7|(TUTORIAL DE RANGO DE FACCIÓN) ^^Los puntos de rango te permiten subir de categoría en tu facción (y en cualquier otra). ^^Estos puntos determinan el tamaño máximo del grupo, los ingresos semanales y permiten desbloquear recompensas exclusivas de cada facción
 dlga_woodelf_help_7:close_window.1|(Alza la mano y vete sin decir palabra)
 dlga_start:beorn_help1|*Te evalúa con la mirada* ^^Sujetos «brillantes» como tú son los que atraen a los trasgos desde las montañas a nuestros bosques. Pero has dado buena cuenta de ellos, y nosotros te lo agradecemos con creces.
@@ -586,20 +664,38 @@ dlga_beorn_help5:beorn_help6|Puede que seamos de talante rudo y duro, pero sabem
 dlga_beorn_help6:beorn_help7|(TUTORIAL DE RANGO DE FACCIÓN) ^^Los puntos de rango te permiten subir de categoría en tu facción (y en cualquier otra). ^^Estos puntos determinan el tamaño máximo del grupo, los ingresos semanales y permiten desbloquear recompensas exclusivas de cada facción
 dlga_beorn_help7:close_window|¡Le fael, amigo mío! Buen viaje. 
 dlga_beorn_help7:close_window.1|(alza la mano y vete sin decir palabra)
-dlga_start:kill_scout_1|¡Buena vista y oído! Los exploradores habrían huido a informar a sus feos señores si no hubieras dado la voz de alarma.
-dlga_kill_scout_1:kill_scout_2|Mira a dónde nos llevas, orco... ¡No hemos viajado tan lejos para que nos liquiden antes de que empiece la guerra!
-dlga_kill_scout_2:kill_scout_3|¡Y tendrán guerra! Toma, coge esto. Así podrás comprar viandas a tus tropas en el camino a Mordor.
+; dlga_start:kill_scout_1|Great eyes and ears you have there! If you hadn’t warned us, those green-clad tree-climbers would’ve had the jump on us, I warrant - or perhaps escaped, and brought down more of their fellows on our heads! Now they’re for the maggots and crows, and our mission is safe. Ai! The Bosses will be pleased.
+; dlga_kill_scout_1:kill_scout_2|Watch where you’re taking us, Orc. We have not travelled this far to perish in an ambush, before the war has even begun!
+; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
 dlga_kill_scout_3:kill_scout_4|(TUTORIAL DE PUNTOS DE RECURSOS)^^ Los puntos de recursos de las gentes de Mordor los puedes gastar sólo comprando en Mordor, ya que cambian de facción en facción y no valen para el resto de facciones. ^^Para más información visita el menú de Informes.
-dlga_kill_scout_4:kill_scout_5|¿Quieres alimentarnos con bazofia orca? ¡Preferiríamos beber nuestro propio vómito!
-dlga_kill_scout_5:kill_scout_6|¡Ja! Sabía que los de fuera erais así! He ganado mi apuesta con Gothmog ¡Jaja!^^ Se lo diré, junto con toda la plana mayor de la comandancia orca... Les diré todo lo que has hecho. Seguro que te tienen en cuenta^^Si les gustas te recompensarán con creces. ¡MÁS POTAJE ORCO! ¡AJAJA!
+; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill? We'd rather be drinking our own piss.
+; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_kill_scout_6:kill_scout_7|(TUTORIAL DE RANGO DE FACCIÓN) ^^Los puntos de rango te permiten subir de categoría en tu facción (y en cualquier otra). ^^Estos puntos determinan el tamaño máximo del grupo, los ingresos semanales y permiten desbloquear recompensas exclusivas de cada facción
-dlga_kill_scout_7:kill_scout_8|¡Eres un orco despreciable! Corre a Mordor, antes de que te encasquete una lanza en la mollera.
-dlga_kill_scout_8:close_window|Claro, claro... ¡extraño maloliente!
+; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!
+; dlga_kill_scout_8:close_window|As you wish, as you wish. This way!
 dlga_woodelf_help_1:woodelf_help_2.1|Jamás había visto orcos de ese tamaño. Malas bestias. Me considero un combatiente en esta gran guerra que todos veíamos venir.
 dlga_woodelf_help_2:woodelf_help_3.1|¿Lo eres? Claro que lo eres, sé que eres un hábil guerrero. Ya que hoy tengo suerte aprovecharé para correr a mi aldea y advertir sobre la presencia de estas terribles bestias.
 dlga_woodelf_help_3:close_window|Buen viaje, Torbal. Seguro que nos encontramos de nuevo.
-dlga_start:close_window.9|Habéis llegado justo a tiempo. Unamos nuestras fuerzas y demos una lección de valía a nuestros enemigos.
-dlga_start:close_window.10|Estáis cometiendo un grave error al querer luchar contra nosotros.
+; dlga_healers_ask:healer_who|What do you do?.
+; dlga_healers_ask:healer_wound_ask|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
+; dlga_healers_ask:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
+dlga_healers_ask:close_window|Nada.
+; dlga_healers_injured_check:healers_injured_heal|Yes, attend to us.
+; dlga_healers_wound_check:healers_wound_heal|Yes, attend to us.
+; dlga_healers_wound_check:close_window|Not right now.
+; dlga_healers_injured_check:close_window|Not right now.
+; dlga_hungry_orc_1:hungry_orc_2|What do you expect me to do about it, rat?
+; dlga_hungry_orc_2:hungry_orc_choice|Those weaklings over there are no use in a proper fight, anyway. Let us eat THEM!
+; dlga_hungry_orc_choice:hungry_orc_eat|All right, grab them! [Kill a few weaklings to feed your orcs.]
+; dlga_hungry_orc_choice:hungry_orc_no_check|No way. None of my men get eaten! Fall back in line or I'll have you eat your own tongue! [Leadership Check]
+; dlga_start:sad_elf_1|Look, my {lord/lady}, gulls! A wonder they are to me and a trouble to my heart.
+; dlga_sad_elf_1:sad_elf_2|I hear their voices. What news do they bring?
+; dlga_sad_elf_2:sad_elf_choice|Ah, tales from the sea. And from beyond. My {lord/lady}, I have grown weary of this war we fight, weary of this soil we drag ourselves on. I fear Ennor (Middle-Earth) is lost for me. Let me leave!
+; dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
+; dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
+; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
+dlga_start:close_window.11|Habéis llegado justo a tiempo. Unamos nuestras fuerzas y demos una lección de valía a nuestros enemigos.
+dlga_start:close_window.12|Estáis cometiendo un grave error al querer luchar contra nosotros.
 dlga_start:ally_thanks_meet|Creo que no nos hemos presentado correctamente. Me acabas de salvar la vida ahí fuera y todavía no sé cual es tu nombre...
 dlga_start:ally_thanks_meet.1|Aprecio la ayuda que nos habéis prestado, forastero. Me llamo {s1}. ¿Puedo conocer vuestro nombre?
 dlga_start:ally_thanks_meet.2|Gracias por vuestra ayuda, forastero. No nos hemos presentado todavía, ¿verdad? ¿Cómo os llamáis?
@@ -607,13 +703,13 @@ dlga_ally_thanks_meet:ally_thanks_meet_2|Mi nombre es {playername}.
 dlga_ally_thanks_meet_2:close_window|Me alegra conocerte, {playername}. Mi nombre es {s1} y estoy eternamente en deuda contigo. Si hay algo que pueda hacer en el futuro para ayudarte, a ti o a tu gente, no dudes en decírmelo...
 dlga_ally_thanks_meet_2:close_window.1|Me alegra conocerte, {playername}. Estoy en deuda contigo por lo que acabas de hacer. Espero que algún día pueda devolverte el favor.
 dlga_ally_thanks_meet_2:close_window.2|Encantado de conocerte, {playername}. Soy {s1}. Gracias por vuestra ayuda y espero que nos volvamos a encontrar.
-dlga_start:close_window.11|¡De nuevo nos volvéis a salvar el pellejo, {playername}! En verdad eres un gran amigo.
-dlga_start:close_window.12|¡Has llegado justo a tiempo! {playername}. ¡Tienes mi más sincera gratitud! {s43}
-dlga_start:close_window.13|Has llegado justo a tiempo, {playername}. No olvidaré lo que has hecho por mí.
-dlga_start:close_window.14|Me alegra verte aquí, {playername}. {s43}
-dlga_start:close_window.17|Gracias por tu ayuda, mi señor. Acabas de salvar {reg1?nuestras vidas:mi vida}.
-dlga_start:close_window.18|Gracias por tu ayuda, mi señor. Las cosas no tenían buena pinta para nosotros hasta que aparecisteis y todo cambió.
-dlga_start:close_window.19|Gracias por tu ayuda, mi señor. Ha sido una suerte teneros cerca.
+dlga_start:close_window.13|¡De nuevo nos volvéis a salvar el pellejo, {playername}! En verdad eres un gran amigo.
+dlga_start:close_window.14|¡Has llegado justo a tiempo! {playername}. ¡Tienes mi más sincera gratitud! {s43}
+dlga_start:close_window.15|Has llegado justo a tiempo, {playername}. No olvidaré lo que has hecho por mí.
+dlga_start:close_window.16|Me alegra verte aquí, {playername}. {s43}
+dlga_start:close_window.19|Gracias por tu ayuda, mi señor. Acabas de salvar {reg1?nuestras vidas:mi vida}.
+dlga_start:close_window.20|Gracias por tu ayuda, mi señor. Las cosas no tenían buena pinta para nosotros hasta que aparecisteis y todo cambió.
+dlga_start:close_window.21|Gracias por tu ayuda, mi señor. Ha sido una suerte teneros cerca.
 dlga_start:freed_hero_answer|Estoy en deuda contigo por haberme liberado, amigo.
 dlga_freed_hero_answer:freed_hero_answer_1|No irás a ninguna parte. ¡Ahora eres mi prisionero!
 dlga_freed_hero_answer_1:close_window|¡Ay! ¿Cambiará alguna vez mi suerte?
@@ -713,7 +809,7 @@ dlga_trainer_choose_weapon_player:trainer_begin_training.3|Arcos.
 dlga_trainer_choose_weapon_player:trainer_begin_training.4|Armas arrojadizas.
 dlga_trainer_choose_weapon_player:trainer_pretalk|Ninguna, he cambiado de opinión.
 dlga_trainer_begin_training:close_window|De acuerdo, allá vamos. Una vez hayas terminado el entrenamiento, vuelve aquí y habla conmigo.
-dlga_start:close_window.20|Fuera de aquí, vil mendigo.
+dlga_start:close_window.22|Fuera de aquí, vil mendigo.
 dlga_start:mayor_begin|Buenos días, mi señor. 
 dlga_start:mayor_talk|Saludos forastero, tienes pinta de ser nuevo en {s9}. Soy el alcalde de la ciudad.
 dlga_start:mayor_begin.1|Buenos días, {playername}.
@@ -724,6 +820,14 @@ dlga_mayor_talk:mayor_deliver_iron.1|Aquí están vuestros suministros de metal,
 dlga_mayor_talk:mayor_deliver_iron.2|He traído más metal, {reg8} unidades de {s4}, de las {reg9} que pediste.
 dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Muy buen trabajo, {playername}. Nuestros herreros encontrarán la manera de sacar provecho de lo que nos habéis traído.
 dlga_mayor_deliver_iron_completed:close_window|Hago lo que puedo.
+; dlga_mayor_sea_battle_start:mayor_sea_battle_question|Excellent! We are in dire need of crewmen. Are you ready to board the ships?
+; dlga_mayor_sea_battle_question:mayor_sea_battle_yes|Yes, I am.
+; dlga_mayor_sea_battle_question:mayor_sea_battle_no|I need some time to get ready.
+; dlga_mayor_sea_battle_yes:close_window|Good. Have your troops board the ship now, we will set sail soon.
+; dlga_mayor_sea_battle_no:close_window|Hurry, we don't have much time before we must set sail.
+; dlga_mayor_talk:mayor_reinforced_center_finished|I have reinforced {s3} as you have asked me to.
+; dlga_mayor_talk:kill_quest_bandits_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
+dlga_kill_quest_bandits_failed:close_window|Intentaré hacerlo mejor la próxima vez.
 dlga_mayor_talk:mayor_deliver_food|Aquí está tu comida, {reg9} unidades.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Muy buen trabajo, {playername}, nuestras reservas de alimentos se encuentran llenas de nuevo y nadie pasará hambre, por el momento.
 dlga_mayor_deliver_food_completed:close_window|Hago lo que puedo.
@@ -769,22 +873,27 @@ dlga_merchant_quest_requested:merchant_quest_brief.1|Agradezco tu ofrecimiento. 
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Tengo un cargamento de {s6} que necesita ser entregado a {s10} en {s4}. Necesitamos entregar {reg5} unidades de {s6} a {s4} en {reg6} días. ¿Puedes encargarte de ello?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|De acuerdo. Me encargaré de la entrega.
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|Me temo que no puedo llevar ese cargamento ahora mismo.
-dlga_merchant_quest_requested:merchant_quest_brief.2|Agradezco tu oferta. Ahora mismo estaba buscando a alguien para que nos suministrara comida. Quizás seas la persona adecuada para ello...
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Nuestras reservas de comida se están acabando y las caravanas de suministros están siendo asaltadas por el enemigo. Necesito que alguien nos traiga {reg5} unidades de comida en un periodo de {reg6} días, o empezaremos a pasar hambre. Quizás en los asentamientos aliados cercanos tengan comida suficiente para compartir con nosotros. ¿Qué te parece?
+; dlga_merchant_quest_requested:merchant_quest_brief.2|Thanks for offering to help.^^      This war has waged for so long that some of our centers are no longer looking good.^^      Perhaps you can go and reinforce a center in need...
+; dlga_merchant_quest_brief:merchant_quest_brief_reinforce_center|{s5} has been battered by the enemy. We will need to send help. ^^      I need someone to reinforce {s5} by at least {reg5} soldiers.^^       It does not matter if they are experienced or not. They just need whatever you can provide.^^       If you are able to do this, they can withstand more attacks.^^ What do you say?
+; dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Alright. I will do what I can.
+dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Lo siento, necesitarás encontrar a otro para este tipo de trabajo.
+; dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|I cannot do this now.
+; dlga_merchant_quest_requested:merchant_quest_brief.4|Thanks for offering to help.      Actually I was looking for someone to supply us with Food.      Perhaps you can do that...
+; dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Our food supplies are dwindling and the supply trains are getting waylaid by the enemy.      I need someone to bring us {reg5} units of food in {reg6} days, or we'll begin to starve.      Maybe nearby friendly towns have enough for us too. What do you say?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|De acuerdo. Encontraré esa comida y la traeré aquí.
 dlga_merchant_quest_brief_deliver_food:merchant_quest_stall|Lo siento, necesitarás encontrar a otro para este tipo de trabajo.
-dlga_merchant_quest_requested:merchant_quest_brief.3|¿Una tarea, dices? De hecho estoy buscando a alguien que nos suministre mineral y metal. Las minas y los caminos ya no son tan seguros como antes, y el suministro de estos materiales se ha vuelto cada vez más difícil. El enemigo debe de contar con sus propios medios, sus oscuros y eficientes medios de extraer minerales, ya que hemos visto orcos y otras tristes criaturas transportando metal. Su calidad es la misma que la de sus portadores, se trata de hierro barato y de mala calidad; del tipo de hierro que consideraríamos obsceno no hace mucho. Pero en estos tiempos de necesidad los herreros también son capaces de trabajar con material pésimo. Toda ayuda es buena.
-dlga_merchant_quest_requested:merchant_quest_brief.4|¿Un trabajo, dices? El Amo exige más y más tropas cada día, y nunca son lo suficientemente buenas para Él... pero las armaduras no nos crecen en la piel, ¿sabes?^Los gusanos a cargo del transporte de suministros del metal son débiles y traicioneros, los masacran fácilmente y nos dejan sin materiales. Pero estos hombres, estos elfos...  van siempre cubiertos de brillantes metales, hasta el más humilde está protegido como si fuera un rey...^Registra sus cadáveres y tráeme todo ese metal, {playername}. Con una libra de peso de ese tipo de hierro, nuestro herrero puede fabricar suficientes armaduras para toda una banda de guerreros.
-dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|Necesitamos {reg5} unidades de {s6} en un periodo de {reg6} días, antes de que nuestros armeros se queden sin materias primas. ¿Qué te parece?
+; dlga_merchant_quest_requested:merchant_quest_brief.5|A task, you say?      Actually I am looking for someone to supply us with ore and metals.      Mines and roads are not safe anymore, and getting resupplied with raw materials is more and more difficult.      The enemy must have its own obscure, but efficient ways of extracting ore, as we've seen even orcs and other lowly beasts in their ranks go around covered with metal.      Its quality matches that of the wearers: it is low-grade, cheap iron; the kind we would consider treacherous and not trust in normal times.      But in these times our smelters learnt how to deal with poor materials too, if necessary.      Every little bit helps.
+; dlga_merchant_quest_requested:merchant_quest_brief.6|A task, you say?      The Master demands more troops every day, and they are never battle-worthy enough for Him... but armours don't just grow on skins, you know?      ^The maggots in charge of bringing ore supplies are treacherous and weak, they get themselves slaughtered too easily and we are left without materials.      But these men, these elves... they always go around covered with shiny, precious metals protecting them as if they were all kings, down to their lowest-born...      ^Scavenge their corpses and bring me the metal, {playername}. With a pound of that iron, our smelter can make enough material to cover an entire pack of warriors.
+; dlga_merchant_quest_brief:merchant_quest_brief_deliver_iron|We need {reg5} units of {s6} in {reg6} days, before our weaponsmiths run out of raw materials.      What do you say?
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_taken|De acuerdo. Conseguiré esas piezas de metal y te las traeré.
 dlga_merchant_quest_brief_deliver_iron:merchant_quest_stall|Estoy demasiado ocupado ahora mismo.
-dlga_merchant_quest_requested:merchant_quest_brief.5|Gracias por tu ayuda. Ando buscando a alguien para escoltar una caravana de suministros. Quizás te interese este trabajo...
-dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|Voy a enviar una caravana de suministros a {s8}. Sin embargo, con todas esas tropas enemigas ahí fuera, no quiero enviarla sin una escolta adecuada. Un grupo de al menos {reg4} guerreros nos daría la suficiente seguridad. ¿Puedes liderar esa caravana de suministros hasta {s8} en un periodo de 7 días?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
+; dlga_merchant_quest_requested:merchant_quest_brief.7|Thanks for offering to help.      Actually I was looking for someone to escort a supply train.      Perhaps you can do that...
+; dlga_merchant_quest_brief:escort_merchant_caravan_quest_brief|I am going to send a supply train to {s8}.      However with all those enemy patrols out there, I don't want to send them without an extra escort.      A group at least {reg4} would offer them adequate protection.      Can you lead that supply train to {s8} in 7 days?^^[you will earn {reg14} Resource Points of {s14}]
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_taken|De acuerdo. Escoltaré esa caravana de suministros.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall|Me temo que no dispongo de tantos soldados en este momento.
 dlga_escort_merchant_caravan_quest_brief:merchant_quest_stall.1|Lo siento. Me temo que no puedo hacerlo en este momento.
-dlga_start:close_window.21|Podemos arreglárnoslas nosotros solos en lo que queda de camino. Gracias.
-dlga_start:close_window.22|Bueno, casi hemos llegado a {s21}. Podemos arreglárnoslas nosotros solos en lo poco que queda de camino. Gracias por escoltarnos. Buena suerte.^^[has conseguido {reg14} Puntos de Recursos de {s14}]
+dlga_start:close_window.23|Podemos arreglárnoslas nosotros solos en lo que queda de camino. Gracias.
+; dlga_start:close_window.24|Well, we have almost reached {s21}. We can cover the rest of the way ourselves.      Thanks for escorting us. Good luck.^^[earned {reg14} Resource Points of {s14}]
 dlga_start:merchant_caravan_intro_1|Saludos. Tú debes de ser nuestra escolta, ¿verdad?
 dlga_merchant_caravan_intro_1:merchant_caravan_intro_2|Sí. Me llamo {playername}. Os guiaré hasta {s1}.
 dlga_merchant_caravan_intro_2:escort_merchant_caravan_talk|Bueno, es bueno saber que no viajaremos solos. ¿Qué quieres que hagamos?
@@ -793,7 +902,7 @@ dlga_escort_merchant_caravan_talk:merchant_caravan_follow_lead|Seguidme. Os llev
 dlga_merchant_caravan_follow_lead:close_window|De acuerdo. Estaremos justo detrás de ti.
 dlga_escort_merchant_caravan_talk:merchant_caravan_stay_here|Quedaos aquí un momento. Me adelantaré para ver si hay peligros.
 dlga_merchant_caravan_stay_here:close_window|Muy bien. Te esperaremos aquí
-dlga_merchant_quest_requested:merchant_quest_brief.6|Lo cierto es que estaba buscando un comandante tan capaz como tú. Existe una banda de trasgos especialmente molestos. Han infestado las cercanías y se dedican a asaltar caravanas de suministros y a guerreros despistados. Han estado evadiendo todas nuestras patrullas en la zona hasta el momento. Si nadie es capaz de hacerles frente en breve, voy a tener que solicitar acciones militares urgentes para acabar con ellos.
+; dlga_merchant_quest_requested:merchant_quest_brief.8|Actually, I was looking for an able commander like you.      There's this group of particularly troublesome goblins.      They have infested the neighbourhood and are preying on supply trains and stray warriors.      They have avoided all our patrols up to now.      If someone doesn't stop them soon, I would need to request serious military action...
 dlga_merchant_quest_brief:troublesome_bandits_quest_brief|Necesito que alguien dé caza a esos molestos trasgos. Es un trabajo peligroso, pero creo que eres la persona adecuada para ello. ¿Qué opinas?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
 dlga_troublesome_bandits_quest_brief:merchant_quest_taken_bandits|De acuerdo. Daré caza a esos trasgos.
 dlga_merchant_quest_taken_bandits:close_window|¿Lo harás? Me alegra mucho oír eso. Que tengas suerte.
@@ -803,12 +912,12 @@ dlga_merchant_quest_brief:merchant_quest_deal_with_night_bandits|Hay una banda d
 dlga_merchant_quest_deal_with_night_bandits:deal_with_night_bandits_quest_taken|¿Matar trasgos? ¡Por supuesto, será un placer!
 dlga_merchant_quest_deal_with_night_bandits:merchant_quest_stall|No, no me interesa.
 dlga_deal_with_night_bandits_quest_taken:mayor_pretalk|Me quitas un peso de encima, {playername}. Habrá una suculenta recompensa para ti si tienes éxito en tu misión. Intenta que no maten, ¿vale?
-dlga_merchant_quest_requested:merchant_quest_brief.7|El capitán de la guarnición de aquí está buscando un guerrero audaz que pueda llevar a un grupo de {s12} hasta {s13}.
+dlga_merchant_quest_requested:merchant_quest_brief.9|El capitán de la guarnición de aquí está buscando un guerrero audaz que pueda llevar a un grupo de {s12} hasta {s13}.
 dlga_merchant_quest_brief:move_cattle_herd_quest_brief|El grupo deberá llegar a {s13} en un periodo de {reg6} días. Cuanto antes mejor, mucho mejor, pero no debe tardar más de {reg6} días.  ¿Puedes llevarlo a cabo?^^[conseguirás {reg14} Puntos de Recursos de {s14}]
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Sí, puedo llevarlos hasta {s13}.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Lo siento, pero no.
 dlga_move_cattle_herd_quest_taken:mayor_pretalk|Espléndido. Los encontrarás en las afueras de la ciudad. Una vez los hayáis llevado hasta {s13}, vuelve aquí y te pagaré con creces.
-dlga_merchant_quest_requested:mayor_pretalk|Gracias, mi señor, pero no necesitamos nada ahora mismo. Te lo haré saber cuando sea necesario.
+; dlga_merchant_quest_requested:mayor_pretalk|Nothing right now, Commander. There’ll be more to do soon enough! Keep your blades sharp and wet.
 dlga_goods_merchant_talk:goods_trade_requested|Quiero comprar algunas cosas... y quizás vender otras.
 dlga_goods_trade_requested:goods_trade_completed|Claro, claro... echa un vistazo a lo que tengo...
 dlga_goods_trade_completed:goods_merchant_talk|¿Algo más?
@@ -834,13 +943,13 @@ dlga_prisoner_chat_3:prisoner_slaughter|¡Vas a ser nuestra cena de hoy!{s20}
 dlga_prisoner_chat_4:close_window|No estoy en posición de poder hacer nada contra ti... ¡Déjame en paz!
 dlga_prisoner_slaughter:prisoner_slaughter_02|¡Un día de estos me las pagarás con creces!
 dlga_prisoner_slaughter:close_window|Un día de estos me las pagarás.... ¡Aa-Garrlkllk!...
-dlga_start:close_window.23|Fuera de aquí, vil mendigo.
+dlga_start:close_window.25|Fuera de aquí, vil mendigo.
 dlga_start:town_merchant_talk|Saludos, mi señor. ¿Qué puedo hacer por ti?
 dlga_start:town_merchant_talk.1|Buenos días. ¿Qué puedo hacer por ti?
 dlga_town_merchant_talk:trade_requested_weapons|Quiero comprar nuevas armas. Enséñame lo que tengas.
 dlga_town_merchant_talk:trade_requested_horse|Estaba pensando en comprarme una nueva montura.
 dlga_trade_requested_weapons:merchant_trade|Ah, sí, mi señor. Estas son las mejores armas que podréis encontrar en estos lares.
-dlga_trade_requested_horse:merchant_trade|Tenéis buen ojo, mi señor. No vais a encontrar mejores caballos que estos en ningún otro sitio.
+; dlga_trade_requested_horse:merchant_trade|Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.
 dlga_merchant_trade:town_merchant_talk|¿Alguna cosa más?
 dlga_town_merchant_talk:merchant_gossip|Dime. ¿De qué habla la gente en estos días? 
 dlga_town_merchant_talk:close_window|Adiós.
@@ -871,14 +980,14 @@ dlga_start:player_castle_guard_talk|¿Sí, mi señor?
 dlga_player_castle_guard_talk:player_castle_guard_talk_2|¿Cómo va la guardia, soldado?
 dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|Todo en calma, mi señor. Nada de lo que informar.
 dlga_player_castle_guard_talk_3:close_window|Bien. Mantén los ojos bien abiertos.
-dlga_start:close_window.24|Buenos días, mi señor. Es bueno contar con tu presencia aquí, en {s10}.
-dlga_start:close_window.25|Cuida tus formas y no tendremos ningún problema.
+dlga_start:close_window.26|Buenos días, mi señor. Es bueno contar con tu presencia aquí, en {s10}.
+dlga_start:close_window.27|Cuida tus formas y no tendremos ningún problema.
 dlga_start:hall_guard_easter_egg|Ah, justo después de medianoche sucedió algo extraño - ¿Quieres escucharlo?
 dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Sí, por favor.
 dlga_hall_guard_easter_egg:close_window|No me interesan las habladurías.
 dlga_hall_guard_easter_egg_scene:close_window|Bueno... un grupo muy poco común de aventureros apareció por aquí hace poco: un hombre, un enano y un elfo, y entonces...
 dlga_start:hall_guard_talk|¿Cuales son tus órdenes, mi señor?
-dlga_start:close_window.26|No se nos permite hablar mientras estamos de guardia, mi señor.
+dlga_start:close_window.28|No se nos permite hablar mientras estamos de guardia, mi señor.
 dlga_hall_guard_talk:hall_guard_duty|Permaneced alerta y hacedme saber si alguien viene a verme.
 dlga_hall_guard_duty:close_window|Sí, mi señor. Como ordenéis.
 dlga_hall_guard_talk:hall_guard_arrest|¡Quiero que arrestéis a este hombre inmediatamente!
@@ -916,15 +1025,15 @@ dlga_party_reinforce:party_reinforce_end.2|Por desgracia no cuentas con ningún 
 dlga_party_reinforce_check:party_reinforce_check_1|Déjame ver a la lista de tropas...
 dlga_party_reinforce_check_1:party_reinforce_end|Así que has cambiado de opinión...^Ya veo.
 dlga_party_reinforce_check_1:party_reinforce_end.1|Esos soldados no nos sirven. ^Quédate con ellos.
-dlga_start:close_window.27|¡Me estás demorando! ¡Un mago nunca llega tarde!
-dlga_start:close_window.28|Nosss... llaamaaaaa...
+dlga_start:close_window.29|¡Me estás demorando! ¡Un mago nunca llega tarde!
+dlga_start:close_window.30|Nosss... llaamaaaaa...
 dlga_start:party_encounter_hostile_attacker|No tenéis ninguna oportunidad. Rendíos u os mataremos a todos...
 dlga_party_encounter_hostile_attacker:close_window|¡No ataquéis! Nos rendimos.
 dlga_party_encounter_hostile_attacker:close_window.1|¡Lucharemos hasta la muerte!
 dlga_start:party_encounter_hostile_defender|¿Qué es lo que quieres?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|¡Rendíos o preparaos para morir!
 dlga_party_encounter_hostile_defender:close_window|Nada. Os dejaremos en paz.
-dlga_start:close_window.29|*te mira fijamente en silencio*
+dlga_start:close_window.31|*te mira fijamente en silencio*
 dlga_start:battle_reason_stated.1|Rendíos o preparaos para morir. Decidíos.
 dlga_battle_reason_stated:close_window|No os tengo miedo. Lucharé.
 dlga_start:free|Hola. ¿Qué puedo hacer por ti?

@@ -4,10 +4,10 @@ skl_leadership|리더십
 skl_leadership_desc|1 포인트가 증가할 때 마다 최대 부대원 수가 5명이 증가하며, 부대의 사기를 5%올리고 병사의 무게를 5%% 줄입니다.(리더 스킬)
 skl_prisoner_management|포로 수송
 skl_prisoner_management_desc|1포인트가 증가할 때 마다 포로의 수가 %d로 증가합니다.(리더 기술)
-skl_persuasion|설득
-skl_persuasion_desc|이 스킬은 다른 사람들이 당신의 의견을 더 쉽게 수용하게 해줍니다.(개인 기술)
-skl_engineer|제작
-skl_engineer_desc|1 포인트가 증가할 때 마다 장비 제작과 업그레이드에 걸리는 시간을 줄여주며, 더 좋은 품질로 업그레이드 할 수 있게 합니다.(부대 기술)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|응급 치료
 skl_first_aid_desc|전투중에 체력을 잃었을 때, 스킬레벨당 5%%의 체력을 회복합니다.(부대 기술)
 skl_surgery|외과수술

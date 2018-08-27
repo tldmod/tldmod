@@ -67,7 +67,7 @@ qst_deliver_food|Suministra a {s3} {reg5} Unidades de comida.
 qst_deliver_food_text|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de comida en 10 días.
 qst_deliver_iron|Suministra a {s3} {reg5} Unidades de {s6}.
 qst_deliver_iron_text|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de {s6}.
-qst_tld_introduction|Entregar el mensaje acerca de los Orcos de Mordor al comandante.
+; qst_tld_introduction|Go to your faction leader.
 qst_tld_introduction_text|Nada
 qst_treebeard_kill_orcs|Elimina al grupo de orcos taladores de árboles.
 qst_treebeard_kill_orcs_text|Bárbol quiere que encuentres y elimines a los orcos que están talando árboles en Fangorn.
@@ -75,3 +75,30 @@ qst_oath_of_vengeance|Juramento de Venganza.
 qst_oath_of_vengeance_text|Enfurecido por la muerte de {s1}, has hecho un juramento de venganza contra las fuerzas de {s2}. Ahora debes destruir tantos ejércitos de {s2} como puedas en los próximos días. Eres consciente de que tus seguidores han sido testigos de este juramente y no deseas ser conocido por romper tus juramentos. ¡El derramamiento de sangre ha de comenzar de inmediato!
 qst_deliver_gift|Entregar un {s4} de {s1} de {s2} a {s3}
 qst_deliver_gift_text|Has pedido entregar un {s4} de {s1} para {s3} de {s2}.
+qst_ring_hunters|Cazanillos
+; qst_ring_hunters2|Ring Hunters - Completed
+; qst_deliver_message_hobbit|Concerning Hobbits
+; qst_blank_quest_01|Defend Refugees
+; qst_blank_quest_02|Hunt Down Refugees
+; qst_blank_quest_03|Sea Battle
+; qst_blank_quest_04|Kill {s35} {s36}
+; qst_blank_quest_05|Kill {s35} {s36} troops.
+
+
+
+
+
+
+
+
+
+
+; qst_blank_quest_16|Reinforce Center
+; qst_blank_quest_17|Slay {reg22} {s6} in battles
+
+
+
+
+; qst_guardian_party_quest|Isengard's Last Stand
+; qst_quests_end|Quests End
+qst_quests_end_text|.

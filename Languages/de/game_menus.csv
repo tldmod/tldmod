@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Wofür kämpfst du?
 mno_start_good|Den BEGINN eines neuen Zeitalters.
 mno_start_evil|Den UNTERGANG der Menschheit.
 mno_go_bback|Zurück.
-menu_start_phase_2|^^^^^ Mittelerde. Ein Schatten regt sich im Osten, ^ und dunkle Geheimnisse, die lange verborgen lagen, offenbaren sich. ^ Die freien Völker bereiten sich auf einen Krieg vor. Einen Krieg, wie ihn die Welt seit einem Zeitalter nicht gesehen hat. ^ Menschen, Elben, Zwerge und Orks; sie alle werden ihre Rolle spielen. ^^ Welche dies jedoch sein wird, kann nur die Zukunft zeigen...
+menu_start_phase_2|^^^^^ Mittelerde. Ein Schatten regt sich im Osten ^ und dunkle Geheimnisse, die lange verborgen lagen, offenbaren sich. ^ Die freien Völker bereiten sich auf einen Krieg vor. Einen Krieg, wie ihn die Welt seit einem Zeitalter nicht gesehen hat. ^ Menschen, Elben, Zwerge und Orks; Sie alle werden ihre Rolle spielen. ^^ Welche dies jedoch sein wird, kann nur die Zukunft zeigen...
 mno_go_forth|Betritt nun den Pfad deines Schicksals...
 menu_start_game_3|^^^^^^^^Wähle ein Szenario:
 mno_custom_battle_scenario_1|Gefecht; Reiche von Gondor vs. Harad
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|Test: Trollschlachten
 mno_warg_battle_scenario|Test: Wargschlachten
 mno_build_your_own_scene|** Erstelle deine eigene Szene für TLD **
 menu_tutorial|^^TLD führt gegenüber M&B einige neue Features ein. Diese finden sich (ohne Spoiler) in einer angefügten PDF-Datei. Grundlegende Spielmechaniken werden im Tutorial des Hauptspiels (Modul 'Native') erklärt.
+menu_tutorial|^^TLD führt gegenüber M&B einige neue Features ein. Diese finden sich (ohne Spoiler) in einer angefügten PDF-Datei. Grundlegende Spielmechaniken werden im Tutorial des Hauptspiels (Modul 'Native') erklärt.
+mno_tutorial_1|Tutorial #1: Bewegung und Waffen. {s1}
+mno_tutorial_2|Tutorial #2: Kämpfen mit Schild. {s2}
+mno_tutorial_3|Tutorial #3: Kämpfen ohne Schild. {s3}
+mno_tutorial_3b_door|Nächster Raum
+mno_tutorial_4|Tutorial #4: Reiten. {s4}
+mno_tutorial_5|Tutorial #5: Soldaten Befehle erteilen. {s5}
 mno_go_back_dot|Zurück.
 mno_action_view_troop_trees|Truppenbäume ansehen.
 mno_view_upkeep_costs|Unterhaltskosten betrachten.
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|Abbrechen.
 menu_custom_battle_end|^^^^^^Die Schlacht ist vorüber. {s1} Deine Seite tötete {reg5} Feinde und verlor {reg6} Truppen im Laufe des Gefechts.^Du selbst hast {reg7} Gegner im Kampf erschlagen.
 mno_replay|Dieses Gefecht noch einmal spielen.
 mno_continue_dot|Fortsetzen.
-menu_quick_battle_general_test|^^^Gegenwärtige Schlacht: ^Team A: {reg10} {s10}^^VS^^ Team B: {reg11} {s11}
-mno_tAA|+5 Team A
-mno_tAB|-5 Team A
-mno_tAC|Truppe A wählen
-mno_tBA|+5 Team B
-mno_tBB|-5 Team B
-mno_tBC|Truppe B wählen
-mno_B|Voreinstellung 1
-mno_F|KAMPF BEGINNEN!
 mno_dot_go_back|. Zurück
-menu_quick_battle_troll|^^^^^^^^Wähle dein Troll-Szenario:
-mno_troll_battle_scenario_10|Test: Troll VS Fußvolk
-mno_troll_battle_scenario_11|Test: Troll VS Bogenschützen
-mno_troll_battle_scenario_12|Test: Troll VS Reiter
-mno_troll_battle_scenario_13|Test: Troll VS Lanzenreiter
-mno_troll_battle_scenario_14|Test: Troll VS Troll
-mno_troll_battle_scenario_15|Spielzeug-Test: vom Spieler gesteuerter Troll
-menu_quick_battle_wargs|^^^^^^^^Wähle dein Warg-Testszenario:
-mno_warg_battle_scenario_10|Gegen Warge: 1 vs 1
-mno_warg_battle_scenario_11|Gegen Warge: 2 vs 3
-mno_warg_battle_scenario_12|Gegen Warge: viele gegen viele
-mno_warg_battle_scenario_10b|Warge spielen: 1 vs 1
-mno_warg_battle_scenario_11b|Warge spielen: 2 vs 3
-mno_warg_battle_scenario_12b|Warge spielen: viele gegen viele
 menu_start_good|^^^^^^^^^^Wählt Eure Art:
 mno_start_ma|MENSCH
 mno_start_el|ELB
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^Dein Geschlecht?
 mno_start_male|Männlich
 mno_start_female|Weiblich
 mno_proc|Wie gewohnt verfahren
+menu_start_as_one|^^^^^^^^^^Was für ein Soldat bist du?
+mno_start_default|Werde ein {s23} (Standard)
+mno_start_up1|Werde ein {s21} (Einfach)
+mno_start_up2|Werde ein {s22} (Einfach)
 mno_continue|Fortsetzen...
 menu_character_report|^^^^^Truppenmoral: {reg8}^Truppengrößengrenze: {reg7}^{s5}
 menu_camp|^^^^Du befindest dich {s1}.{s2}^^Was möchtest du tun?
@@ -127,8 +115,10 @@ mno_camp_wait_here|Für einige Zeit Rast machen.
 mno_camp_options|TLD-Optionen ändern.
 mno_Cheat_enable|Cheat/Modding-Optionen aktivieren.
 menu_game_options|^^^^^^^^Wähle ein Option um umzuschalten:
+mno_game_options_war_level_start|Krieg beginnt bei Spielerlevel: {s1}
 mno_game_options_restrict_items|Eingeschränkte Spielerausrüstung: {s7}
 mno_game_options_formations|Kampfformationen und AI: {s7}
+mno_game_options_siege_ai|Verbesserte KI bei Belagerungen: {s7}
 mno_game_options_town_menu|NPCs in Städten sind immer vom Menü aus erreichbar: {s7}
 mno_game_options_cutscenes|Zwischensequenzen: {s7}
 mno_game_options_injuries|Verletzungen für deine Gefährten: {s7}
@@ -136,11 +126,16 @@ mno_game_options_death|Dauerhafter Tod für Anführer und Gefährten: {s7}.
 mno_game_options_death2|Dauerhafter Tod für den Spieler (das bist DU!): {s7}.
 mno_game_options_morale|Schlachtmoralsystem: {s7}
 mno_game_options_animal_ambushes|Tierhinterhalte: {s7}
+mno_game_options_horse_ko|Schadensbenachrichtigung beim Fallen vom Pferd: {s7}
+mno_game_options_bright_nights|Hellere Nächte: {s7}.
+mno_game_options_camera_pref|Bevorzugte Kamera: {s7}.
 mno_game_options_tweaks|Gameplay-Optimierungen...
 mno_game_options_back|Zurück zum Lager-Menü.
+mno_game_options_start_back|Zurück.
 menu_camp_tweaks|^^^^^^^^Wähle eine Option, die du anpassen möchtest.
 mno_tweak_options_compat|Kompatibilitäts-Optimierungen...
 mno_tweak_options_strat|Strategie-Optimierungen...
+mno_tweak_options_battlefield_ai|Schlachtfeld-KI...
 mno_tweak_options_back|Zurück zu den Optionen.
 menu_camp_compat_tweaks|^^^^^^^^Klicke auf ein Option, um sie zu ändern (halte shift zum Vermindern):^(diese dienen der Kompatibilität und sind keine Cheats)
 mno_game_options_compat_party|Maximale Anzahl an Truppen: {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Klicke auf ein Option, um sie umzuschalten:^(Warn
 mno_strat_tweaks_siege_reqs|Stärkevoraussetzungen für Belagerungen: {s7}
 mno_strat_tweaks_siege_relax_rate|Lockerungsrate für Stärkevoraussetzungen für Belagerungen: {reg1}
 mno_strat_tweaks_regen_rate|Stärke-Regenerationsrate: {s7}
-mno_strat_tweaks_siege_regen_limit|Fraktionen erholen sich nicht mehr, wenn unter: {reg1}
+mno_strat_tweaks_siege_regen_limit|Fraktionen erholen sich langsamer, wenn unter: {reg1}
 mno_strat_tweaks_influence_gain_rate|Einflusssteigerungsrate: {s7}
 mno_strat_tweaks_rank_gain_rate|Rangsteigerungsrate: {s7}
 mno_strat_tweaks_back|Zurück zum Optimierungs-Menü.
@@ -188,9 +183,11 @@ mno_leave|Verlassen.
 menu_simple_encounter|^^^^^{s2}^Du hast {reg22} einsatzfähige Truppen gegen ihre {reg11}.^^Die Schlacht findet {s3}{s4} statt.^^Deine Befehle?
 mno_encounter_attack|{reg21?Greift sie an:Bereitet euch vor, euch ihnen zu stellen}.
 mno_encounter_order_attack|Befehle deinen Truppen, sie ohne dich {reg21?anzugreifen:zu konfrontieren}.
+mno_encounter_hide|Verberge dich vor dem Feind....
 mno_special_whip|Stürme voran, mit der {s4} knallend.
 mno_encounter_leave|Zurückziehen.
 mno_encounter_retreat|Zieh dich zurück und lasse einige Soldaten zurück, um deinen Rückzug zu decken.
+mno_hide_close|Fortsetzen...
 menu_encounter_retreat_confirm|^^^^^Als Truppenmitglied mit dem größten Taktikverständnis, ({reg2}), {reg3?entwirfst du:entwirft {s3}} einen Plan, der es dir und deinen Männern erlaubt, mit dem Leben davonzukommen, aber du musst {reg4} Truppen zurücklassen, um den Feind an der Verfolgung zu hindern.
 mno_leave_behind|Weiter. Das Opfer dieser Männer wird die anderen retten.
 mno_dont_leave_behind|Nein. Wir lassen niemanden zurück.
@@ -212,6 +209,7 @@ mno_inspect_troll|Untersuche den bezwungenen Troll
 menu_pre_join|^^^^^{s2} kämpfen gegen {s1}. Du entscheidest dich dazu...
 mno_pre_join_help_attackers|Einzugreifen und den {s2} zu helfen.
 mno_pre_join_help_defenders|Den {s1} zu Hilfe zu eilen.
+mno_pre_join_help_refugees|Den {s1} zu Hilfe zu eilen.
 mno_pre_join_leave|Nicht eingreifen.
 menu_join_battle|^^^Du unterstützst {s2} gegen {s1}.^ Du hast {reg22} kampfbereite Truppen gegen {reg11} Feinde.^^Die Schlacht wird {s3}{s4} ausgetragen.
 mno_join_attack|Greif den Feind an.
@@ -286,6 +284,7 @@ mno_isengard_underground|Gehe zu den unterirdischen Höhlen.
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
 mno_town_leave|Verlassen...
 mno_town_leave_door|Verlasse die Gegend
+menu_player_initiated_siege_result|Du greifst den Ort unter dem Banner von {s2} an.
 menu_disembark|Möchtest du an Land gehen?
 mno_disembark_yes|Ja.
 mno_disembark_no|Nein.
@@ -317,8 +316,19 @@ mno_explore|Erkunde diesen Ort.
 menu_ring_hunter_lair|^^^^Du bist der Spur durch den Düsterwald gefolgt und hast den {s1} gefunden. Sie bereiten sich gerade vor, mit einer Truhe aufzubrechen.
 mno_attack_lair|Jetzt angreifen!
 mno_leave_bandit_lair|Vorerst zurückziehen.
-menu_starting_quest_good|^^^^^Ihr sichtet eine kleine Karawane, die von einer Bande Orks angegriffen wird. Was werdet Ihr tun?
-mno_help|Helft den Fremden!
+menu_gondor_reinforcement_event|^^^^^Die Leuchtfeuer von Gondor brennen, Minas Tirith ruft nach Hilfe!^^Die Herren der südlichen Lehen werden nun nach Norden marschieren und die Weiße Stadt gegen die einbrechende Finsternis verteidigen.
+mno_gondor_reinforcement_event_close|Schließen
+menu_gondor_beacons|Du blickst auf {s1}, eines der Leuchtfeuer von Gondor, welche im nördlichen und südlichen Gondor Gefahr anzeigen.
+mno_gondor_beacons_close|Verlassen...
+menu_player_added_to_war_council|^^^^^Ein Bote trifft ein und meldet, dass {s2} dich nun, als {s24},  in den Kriegsrat einlädt. Du darfst nun Vorschläge einbringen, die den Verlauf des Krieges beeinflussen könnten.
+mno_player_added_to_war_council_close|Schließen
+menu_player_added_to_siege_reports|^^^^^Ein Bote trifft ein und berichtet, dass du nun, als {s24}, benachrichtigt wirst, wenn {s2} eine Belagerung beginnt oder eine von {s2}s Festungen belagert wird.
+mno_player_added_to_siege_reports_close|Schließen
+menu_player_added_to_allow_follow|^^^^^Ein Bote trifft ein und meldet, dass du als {s24} Befehl an bis zu {reg55} {s2} geben darfst, dir zu folgen.
+mno_player_added_to_allow_follow_close|Schließen
+menu_center_besieged_event|^^^^^Ein Bote trifft ein und berichtet, dass {s1} durch {s2} von {s3} belagert wird.
+mno_center_besieged_event_close|Schließen
+mno_intro_next|Fortsetzen...
 mno_start_defend_caravan|Verteidige den Kaufmannszug!
 mno_start_raid_caravan|Überfalle den Kaufmannszug!
 mno_start_ambush_orcs|Lege den Orcs einen Hinterhalt!
@@ -326,7 +336,29 @@ mno_start_kill_scouts|Hindere die Späher daran, deine Ankunft zu melden!
 mno_go_your_way|Überlasst sie ihrem Schicksal
 mno_defend_villagers|Verteidige das Dorf!
 mno_raid_villagers|Plündere das Dorf!
-mno_go_away|Überlasst sie ihrem Schicksal
+mno_go_away|Zurückziehen und sammeln.
+menu_scout_camp_quest|Du hast den Spähposten gefunden. Deine Männer bereiten sich auf den Angriff vor.
+mno_attack_scout_camp|Greife den Spähposten an!
+menu_sea_battle_quest|Eine feindliche Flotte taucht auf. Die Schiffe nähern sich und die Seeleute lassen die Enterbrücken herab.
+mno_sb_defend_the_town|Entert sie! Zerstört ihre Flotte!
+mno_sb_attack_the_town|Sie haben uns abgefangen! Verteidigt die Flotte!
+menu_camp_field_ai|^^^^^Klicke auf eine Option, um sie an-/auszustellen^^^Das Abstellen einer oder mehrerer Optionen verbessert die Leistung (FPS)
+mno_lord_field_ai|Verbesserte Kampf-KI für Fürsten:  {s7}
+mno_horse_archer_field_ai|Verbesserte KI für berittene Bogenschützen:  {s7}
+mno_vs_orcs_field_ai|Schützen zielen besser auf Orks (zielen nicht über die Orkköpfe hinweg):  {s7}
+mno_battlefield_animals|Tier-Begleiter in Schlachten - betrifft keine Warge oder Pferde:  {s7}
+mno_defend_refugees|Haltet Ausschau nach Plünderern...
+mno_attack_refugees|Greife den Flüchtlingszug an...
+mno_leave_refugees|Vorerst zurückziehen...
+mno_evil_war_tut_continue|Fortsetzen...
+menu_guardian_party_quest|{s8} sendet Nachricht, dass Isengard beinahe am Boden ist und eine letzte Verteidigungslinie vorbereitet. Er wünscht, dass du an der letzten Schlacht gegen Isengards Armeen teilnimmst.  Du musst mindestens {reg13} Soldaten anführen und wirst angehalten, in aller Eile mehr Truppen auszuheben, sollten dir nicht genügend zur Verfügung stehen.
+mno_guardian_party_reject|Sende eine Nachricht, dass du dich ihm nicht anschließen kannst.
+mno_guardian_party_send_word|Sende Nachricht, dass du dich ihm in Kürze anschließen wirst.
+menu_alternate_training_fight|Du wirst {reg5} Gegnern gegenüber stehen. Bist du bereit?
+mno_training_continue|Beginne die Ausbildung...
+menu_alternate_training_conclusion|{s5}
+mno_alternate_training_retry|Versuche es noch einmal...
+mno_alternate_training_finish|Verlasse den Ausbildungsplatz...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Wähle deine Seite und Vorteil:
 mno_good_equal|Gute Fraktion
 mno_bad_equal|Böse Fraktion

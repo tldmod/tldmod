@@ -4,10 +4,10 @@ skl_leadership|Comando
 skl_leadership_desc|Ogni punto incrementa di cinque unità il numero massimo di truppe che puoi comandare, incrementa il morale della tua Compagnia e riduce i salari del 5%%. (Abilità del Comandante)
 skl_prisoner_management|Controllo Prigionieri
 skl_prisoner_management_desc|Ogni livello incrementa di %d il numero massimo di prigionieri. (Abilità del Comandante)
-skl_persuasion|Persuasione
-skl_persuasion_desc|Questa abilità ti aiuta a convincere le persone ad accettare il tuo punto di vista. (Abilità Personale)
-skl_engineer|Ingegneria
-skl_engineer_desc|Ogni punto di questa abilità diminuirà il tempo per aggiornare o riparare l'equipaggiamento, e permetterà inoltre aggiornamenti di migliore qualità. (Abilità di Gruppo)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Pronto Soccorso
 skl_first_aid_desc|Per ogni punto in questa abilità gli eroi recuperano il 5%% di salute persa in battaglia. (Abilità di Gruppo)
 skl_surgery|Chirurgia

@@ -4,10 +4,10 @@ skl_leadership|Führerschaft
 skl_leadership_desc|Jeder Punkt erhöht die Maximalzahl der Soldaten, die du befehligen kannst, um 5, erhöht die Truppen-Moral und reduziert den Sold um 5%%. (Anführer-Fähigkeit)
 skl_prisoner_management|Gefangenenaufsicht
 skl_prisoner_management_desc|Jede Stufe dieser Fähigkeit erhöht die Maximalzahl der Gefangenen um %d. (Anführer-Fähigkeit)
-skl_persuasion|Rhetorik
-skl_persuasion_desc|Diese Fähigkeit lässt andere Leute deinen Standpunkt einsehen. (Persönliche Fähigkeit)
-skl_engineer|Handwerk
-skl_engineer_desc|Jeder Punkt dieser Fähigkeit reduziert die Zeit, Ausrüstung zu fertigen und zu verbessern, und erlaubt Aufrüstungen höherer Qualität. (Truppen-Fähigkeit)
+skl_persuasion|Wildkunde
+skl_persuasion_desc|Die Fähigkeit, in der Wildnis zu überleben und die Mächte der Natur deinem Willen zu unterwerfen. Verbessert die Fähigkeit, sich vor Feinden zu verstecken, sowie die Reisegeschwindigkeit in bewaldetem Gebiet. (Truppen-Fähigkeit)
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Erste Hilfe
 skl_first_aid_desc|Helden erhalten pro Fertigkeitsstufe 5%% von bei Missionen verlorenen Trefferpunkten wieder. (Truppen-Fähigkeit)
 skl_surgery|Chirurgie

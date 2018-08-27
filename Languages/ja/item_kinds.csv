@@ -40,7 +40,7 @@ itm_rhun_horse_e|リューン重馬
 itm_rhun_horse_f|リューン重馬
 itm_rhun_horse_g|リューン重馬
 itm_rhun_horse_h|リューン重馬
-itm_dale_horse|谷間の国馬
+; itm_dale_horse|Rhovanion Horse
 itm_dale_warhorse|谷間の国軍馬
 itm_riv_warhorse|裂け谷軍馬
 itm_riv_warhorse2|イムラドリス馬
@@ -66,13 +66,14 @@ itm_wargarmored_2b|重装ワーグ
 itm_wargarmored_2c|重装ワーグ
 itm_wargarmored_3a|重装ワーグ
 itm_warg_reward|巨大ワーグ
-itm_troll_feet_boots|トロルの足
-itm_troll_head_helm|トロルの頭部
-itm_troll_head_helm_b|トロルの頭部
-itm_troll_head_helm_c|トロルの頭部
+; itm_axe_a|Northmen Axe
+; itm_axe_b|Northmen Bearded Axe
+; itm_axe_c|Northmen Axe
+; itm_axe_d|Northmen Axe
 itm_tree_trunk_club_a|木の幹
 itm_tree_trunk_club_b|木の幹
-itm_tree_trunk_invis|木の幹
+; itm_long_bearded_axe|Northmen Bearded Longaxe
+; itm_2_handed_axe|Northmen Longaxe
 itm_giant_hammer|巨大槌
 itm_giant_mace|巨大メイス
 itm_giant_mace_b|棘付き巨大メイス
@@ -101,7 +102,7 @@ itm_mail_mittens|鎖ミトン
 itm_leather_boots|革ブーツ
 itm_black_dress|黒のドレス
 itm_blackwhite_dress|夫人のドレス
-itm_white_tunic_a|白のチュニック
+itm_white_tunic_a|簡素なチュニック
 itm_white_tunic_b|簡素なチュニック
 itm_white_tunic_c|チュニック上着
 itm_blue_tunic|青のチュニック
@@ -140,7 +141,7 @@ itm_glorfi_bow|グロールフィンデルの弓
 itm_lorien_bow|ガラズリムの弓
 itm_isengard_large_bow|アイゼンガルドの長弓
 itm_dale_bow|谷間の国の弓
-itm_uruk_bow|オークの弓
+; itm_uruk_bow_pl|Strong Orc Bow
 itm_mirkwood_bow|闇の森のエルフの弓
 itm_dunland_javelin|褐色人の投げ槍
 itm_orc_throwing_arrow|オークのダーツ
@@ -180,7 +181,7 @@ itm_riv_shield_b|裂け谷の盾
 itm_riv_bas_sword|裂け谷のバスタードソード
 itm_riv_1h_sword|裂け谷の剣
 itm_riv_riding_sword|裂け谷騎兵の剣
-itm_riv_archer_sword|裂け谷弓兵の剣
+; itm_riv_archer_sword|Rivendell Archer Sword
 itm_riv_spear|裂け谷の槍
 itm_riv_armor_light|裂け谷の鎧
 itm_riv_armor_light_inf|裂け谷の鎧
@@ -225,12 +226,12 @@ itm_gondor_dolamroth_helm|ドル・アムロスの兜
 itm_swan_knight_helm|白鳥の騎士の兜
 itm_gondor_lamedon_helm|ラメドンの兜
 itm_gondor_lamedon_leader_helm|ラメドンの上級兜
-itm_blackroot_archer|黒根谷弓兵の鎧
-itm_blackroot_bowman|黒根谷射手の鎧
-itm_blackroot_footman|黒根谷歩兵の鎧
-itm_blackroot_warrior|黒根谷戦士の鎧
-itm_blackroot_leader|黒根谷指揮官の鎧
-itm_blackroot_hood|黒根谷の頭巾
+; itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
+; itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
+; itm_blackroot_footman|Blackroot Vale Jerkin
+; itm_blackroot_warrior|Blackroot Vale Gambeson
+; itm_blackroot_leader|Blackroot Vale Mail
+; itm_blackroot_hood|Black Hood
 itm_dol_hauberk|ドル・アムロスのホバーク
 itm_dol_heavy_mail|ドル・アムロスの重装鎖かたびら
 itm_dol_padded_coat|ドル・アムロスのマントつきパッド鎧
@@ -245,7 +246,7 @@ itm_lamedon_leader_surcoat_cloak|ラメドン指揮官の鎧
 itm_lamedon_warrior|ラメドン突撃兵の鎧
 itm_lamedon_veteran|ラメドンベテランの鎧
 itm_lamedon_vet_warrior|ラメドンベテラン戦士の鎧
-itm_lamedon_hood|ラメドンの頭巾
+; itm_lamedon_hood|Hood
 itm_pinnath_archer|ピンナス・ゲリン弓兵の鎧
 itm_pinnath_footman|ピンナス・ゲリン歩兵の鎧
 itm_pinnath_leader|ピンナス・ゲリン指揮官の鎧
@@ -257,7 +258,7 @@ itm_pel_leader|ペラルギア指揮官の鎧
 itm_pel_marine|ペラルギア水兵の鎧
 itm_pelargir_marine_leader|ペラルギア水兵長の鎧
 itm_pelargir_regular|ペラルギアの鎧
-itm_pelargir_hood|ペラルギアの頭巾
+; itm_pelargir_hood|White Hood
 itm_pelargir_helmet_light|ペラルギアの兜
 itm_pelargir_helmet_heavy|ペラルギアの重装兜
 itm_pelargir_greaves|ペラルギアのすね当て
@@ -314,7 +315,8 @@ itm_lorien_helm_a|ロリエン弓兵の兜
 itm_lorien_helm_b|ロリエン弓兵の兜
 itm_lorien_helm_c|ロリエン歩兵の兜
 itm_orc_chain_greaves|オークのすね当て
-itm_orc_coif|オークのコイフ
+
+; itm_orc_coif|Orc Skullcap\t\t\t\t\t\t 
 itm_orc_greaves|オークの鎖ブーツ
 itm_orc_ragwrap|オークのぼろ布
 itm_orc_furboots|オークの毛皮ブーツ
@@ -380,8 +382,8 @@ itm_bone_cudgel|骨の棍棒
 itm_skull_club|どくろの棍棒
 itm_orc_club_a|オークの棍棒
 itm_orc_club_b|オークの棍棒
-itm_orc_club_c|オークの棍棒
-itm_orc_club_d|オークの棍棒
+; itm_orc_club_c|Spiky Orc Club
+; itm_orc_club_d|Spiky Orc Club
 itm_orc_sledgehammer|オークの大槌
 itm_orc_simple_spear|オークの槍
 itm_orc_skull_spear|オークのどくろ槍
@@ -409,17 +411,23 @@ itm_mordor_uruk_shield_c|モルドールウルクの盾
 itm_mordor_man_shield_a|モルドール人間用の盾
 itm_mordor_man_shield_b|モルドール人間用の盾
 itm_angmar_shield|アングマールの盾
-itm_orc_helm_a|オークの長鼻兜
-itm_orc_helm_b|オークの格子兜
-itm_orc_helm_c|オークのバケツ兜
-itm_orc_helm_d|オークのグリル兜
-itm_orc_helm_e|オークのかぎ鼻兜
-itm_orc_helm_f|オークの虫兜
-itm_orc_helm_g|オークのからす兜
-itm_orc_helm_h|オークのあご兜
-itm_orc_helm_i|オークの豚鼻兜
-itm_orc_helm_j|オークのトカゲ兜
-itm_orc_helm_k|オークのハゲワシ兜
+
+; itm_orc_nosehelm|Orc Nosehelm
+
+; itm_orc_kettlehelm|Orc Kettlehelm
+
+itm_orc_buckethelm|オークのバケツ兜
+
+; itm_orc_morion|Orc Morion
+
+itm_orc_beakhelm|オークのかぎ鼻兜
+
+itm_orc_bughelm|オークの虫兜
+
+; itm_orc_visorhelm|Orc Visorhelm
+
+; itm_orc_visorhelm_pl|Orc Visorhelm
+
 itm_m_orc_light_a|モルドールオークの軽装鎧
 itm_m_orc_light_b|モルドールオークの軽装鎧
 itm_m_orc_light_c|モルドールオークの軽装鎧
@@ -431,14 +439,22 @@ itm_m_orc_heavy_c|モルドールオークの重装鎧
 itm_m_orc_heavy_d|モルドールオークの重装鎧
 itm_m_orc_heavy_e|モルドールオークの重装鎧
 itm_m_uruk_light_a|ウルクのハーネス
-itm_m_uruk_light_b|ウルクの厚手のハーネス
-itm_m_uruk_heavy_c|ウルクの革鎧
-itm_m_uruk_heavy_d|ウルクの重ね鎧
-itm_m_uruk_heavy_e|ウルクの鎖かたびら
-itm_m_uruk_heavy_f|ウルクの鎖かたびら
-itm_m_uruk_heavy_g|ウルクの鎖かたびら
-itm_m_uruk_heavy_h|ウルクのスケイル鎧
-itm_m_uruk_heavy_i|ウルクの厚手のスケイル鎧
+
+itm_m_uruk_light_b|ウルクの革鎧
+
+; itm_m_uruk_light_c|Uruk Light Mail
+
+; itm_m_uruk_med_a|Uruk Heavy Leather
+
+; itm_m_uruk_med_b|Uruk Heavy Mail
+
+; itm_m_uruk_med_c|Uruk Light Scale
+
+; itm_m_uruk_heavy_a|Uruk Heavy Scale
+
+; itm_m_uruk_heavy_b|Uruk Platemail
+
+; itm_m_uruk_heavy_c|Lugburz Platemail
 itm_m_uruk_heavy_j|ウルクの重装鎧
 itm_m_uruk_heavy_k|ウルクのガード鎧
 itm_m_cap_armor|モルドール指揮官の鎧
@@ -462,7 +478,7 @@ itm_moria_armor_b|モリアの胸当てと肩当て
 itm_moria_armor_c|モリアオークの鎖かたびら
 itm_moria_armor_d|モリアの鋲を打った革鎧
 itm_moria_armor_e|モリアオークの重装鎖かたびら
-itm_moria_orc_shield_a|モリアオークの盾
+; itm_moria_orc_shield_a|Moria Great Shield
 itm_moria_orc_shield_b|モリアオークの盾
 itm_moria_orc_shield_c|モリアオークの盾
 itm_gundabad_armor_a|グンダバドオークの布きれ
@@ -470,8 +486,8 @@ itm_gundabad_armor_b|グンダバドオークの毛皮
 itm_gundabad_armor_c|グンダバドオークの鎧
 itm_gundabad_armor_d|グンダバドオークの鎧
 itm_gundabad_armor_e|グンダバドオークの重装鎧
-itm_gundabad_helm_a|グンダバドの頭巾
-itm_gundabad_helm_b|グンダバドの兜
+; itm_gundabad_helm_a|Leather Cap
+; itm_gundabad_helm_b|Leather Helm
 itm_gundabad_helm_c|グンダバドの兜
 itm_gundabad_helm_d|グンダバドの兜
 itm_gundabad_helm_e|ワーグ騎兵の兜
@@ -490,7 +506,8 @@ itm_dun_helm_a|褐色人の狼の被り物
 itm_dun_helm_b|褐色人の鹿の角の被り物
 itm_dun_helm_c|褐色人の山高兜
 itm_dun_helm_d|褐色人の山高兜
-itm_dun_helm_e|褐色人の戦の山高兜
+
+; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
 itm_dun_shield_a|褐色人の盾
 itm_dun_shield_b|褐色人の盾
 itm_dun_berserker|褐色人族長の剣
@@ -500,24 +517,12 @@ itm_dunnish_axe|褐色人の斧
 itm_dunland_spear|褐色人の槍
 itm_dunnish_pike|褐色人のパイク
 itm_rohan_armor_a|ローハンの上着
-itm_rohan_armor_b|ローハンの上着とマント
-itm_rohan_armor_c|ローハンのロングコート
-itm_rohan_armor_d|ローハンのホバーク
 itm_rohan_armor_e|ローハンのホバーク
-itm_rohan_armor_f|ローハンのホバーク
-itm_rohan_armor_g|ローハンの鎖かたびら
-itm_rohan_armor_h|ローハンの鎖かたびらのコート
-itm_rohan_armor_i|ローハンの鎖かたびらのコート
-itm_rohan_armor_j|ローハンのホバーク
+; itm_rohan_armor_h|Rohan Leather Armor
 itm_rohan_armor_k|ローハンのホバーク
-itm_rohan_armor_l|ローハンのホバーク
-itm_rohan_armor_m|ローハンのスケイル鎧
 itm_rohan_armor_n|ローハンのスケイル鎧
-itm_rohan_armor_o|ローハンのスケイル鎧
 itm_rohan_armor_p|ローハンの鎧
-itm_rohan_armor_q|ローハンの鎧
-itm_rohan_armor_r|ローハンの鎧
-itm_rohan_armor_s|ローハンの紋章入り鎖かたびら
+; itm_rohan_armor_s|Rohan Guard Armor
 itm_rohan_light_helmet_a|ローハンの軽装兜
 itm_rohan_light_helmet_b|ローハンの軽装兜
 itm_rohan_inf_helmet_a|ローハン歩兵の兜
@@ -550,10 +555,12 @@ itm_rohan_2h_sword|ローハンの大剣
 itm_mirkwood_light_scale|森のエルフの軽装スケイル鎧
 itm_mirkwood_armor_a|軽装革鎧
 itm_mirkwood_armor_b|軽装キルトとスケイル鎧
-itm_mirkwood_armor_c|軽装スケイルと鎖かたびら
+
+; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
 itm_mirkwood_armor_d|軽装キルトのシュールコー
 itm_mirkwood_armor_e|軽装鎖かたびらとシュールコー
-itm_mirkwood_armor_f|森のエルフの近衛鎧
+
+; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
 itm_mirkwood_great_spear|闇の森のエルフの大槍
 itm_mirkwood_war_spear|闇の森のエルフの大身槍
 itm_mirkwood_short_spear|闇の森のエルフの槍
@@ -572,7 +579,7 @@ itm_harad_tunic|ハラドのチュニック
 itm_harad_padded|ハロンドールのパッド鎧
 itm_harad_hauberk|ハロンドールのホバーク
 itm_harad_lamellar|ハラシヤラ鎧
-itm_harad_heavy|ハラド剣士の鎧
+; itm_harad_heavy|Harad Noble Armor
 itm_harad_skirmisher|ハラドの軽装祭服
 itm_harad_archer|ハラド弓兵の鎧
 itm_black_snake_armor|マランカ鎧
@@ -694,56 +701,84 @@ itm_rhun_helm_n|リューン族長の兜
 itm_rhun_helm_o|リューン族長の兜
 itm_rhun_greataxe|リューンの大斧
 itm_rhun_battleaxe|リューンの戦斧
-itm_rhun_falchion|リューンのファルシオン
+; itm_rhun_falchion|Savage Falchion\t\t\t\t\t\t\t\t 
 itm_rhun_glaive|リューンのグレイブ
-itm_rhun_greatfalchion|リューンの大ファルシオン
-itm_rhun_greatsword|リューンの大剣
-itm_rhun_shortsword|リューンの短剣
-itm_rhun_sword|リューンの剣
+
+; itm_rhun_greatfalchion|Savage Great Falchion\t\t\t\t\t\t\t\t\t\t\t
+; itm_rhun_greatsword|Savage Great Sword
+; itm_rhun_shortsword|Savage Shortsword
+
+; itm_rhun_sword|Savage Sword\t\t\t\t\t\t   
 itm_rhun_shield|リューンのカイト盾
-itm_dale_armor_a|谷間の国の上着
-itm_dale_armor_b|谷間の国のマントつき上着
-itm_dale_armor_c|谷間の国弓兵の上着
-itm_dale_armor_d|谷間の国弓兵の上着
-itm_dale_armor_e|谷間の国の鎖かたびらのコート
-itm_dale_armor_f|谷間の国の鎖かたびらのコート
-itm_dale_armor_g|谷間の国の鎖かたびらのコート
-itm_dale_armor_h|谷間の国の長尺鎖かたびらのコート
-itm_dale_armor_i|谷間の国の長尺鎖かたびらのコート
-itm_dale_armor_j|谷間の国の長尺鎖かたびらのコート
-itm_dale_armor_k|谷間の国の上級鎧
+; itm_dale_light_a|Dale Militia Jacket
+
+; itm_dale_light_b|Northmen Light Lamellar
+
+; itm_dale_med_a|Northmen Heavy Lamellar
+
+; itm_dale_med_b|Dale Leather Armor
+
+; itm_dale_med_c|Dale Leather Over Mail
+
+; itm_dale_med_d|Dale Lamellar Armor
+
+; itm_dale_heavy_a|Dale Lamellar Over Mail
+
+; itm_dale_heavy_b|Dale Plated Coat
+
+; itm_dale_heavy_c|Rhovanion Mail
+
 itm_dale_armor_l|谷間の国のゴージット付き上級鎧
+
 itm_dale_helmet_a|谷間の国歩兵の軽装兜
-itm_dale_helmet_b|谷間の国弓兵の軽装兜
+
+; itm_dale_helmet_b|Dale Light Archer Helm
+
 itm_dale_helmet_c|谷間の国歩兵の兜
-itm_dale_helmet_d|谷間の国弓兵の兜
-itm_dale_helmet_e|谷間の国歩兵の重装兜
-itm_dale_helmet_f|谷間の国弓兵の重装兜
+
+; itm_dale_helmet_d|Dale Archer Helm
+
+; itm_dale_helmet_e|Barding Helm
+
+; itm_dale_helmet_f|Barding Helm
+
 itm_dale_sword|谷間の国の短剣
 itm_dale_sword_long|谷間の国の長剣
 itm_dale_sword_broad|谷間の国のブロードソード
 itm_dale_pike|谷間の国の槍
 itm_dale_billhook|谷間の国のビル
-itm_dale_shield_a|谷間の国の盾
-itm_dale_shield_b|谷間の国の盾
-itm_dale_shield_c|谷間の国の盾
+; itm_dale_shield_a|Dale Tower Shield
+
+; itm_dale_shield_b|Dale Tower Shield
+
+; itm_dale_shield_c|Dale Round Shield
 itm_dale_shield_d|谷間の国の盾
 itm_umb_armor_a|海賊の革鎧
-itm_umb_armor_a1|海賊の重装革鎧
+
 itm_umb_armor_b|海賊遊撃兵の鎧
+
 itm_umb_armor_c|海賊のパッド鎧
-itm_umb_armor_d|海賊の重装パッド鎧
-itm_umb_armor_e|海賊遊撃兵のパッド鎧
-itm_umb_armor_f|海賊のホバーク
-itm_umb_armor_g|海賊のホバーク肩当て
-itm_umb_armor_h|海賊遊撃兵の重装鎧
+
+itm_umb_armor_d|海賊遊撃兵のパッド鎧
+
+itm_umb_armor_e|海賊のホバーク
+
+itm_umb_armor_f|海賊遊撃兵の重装鎧
+
 itm_umb_helm_a|海賊のシェル兜
+
 itm_umb_helm_b|海賊のシェル兜
+
 itm_umb_helm_c|海賊民兵の兜
-itm_umb_helm_d|海賊民兵の兜
-itm_umb_helm_e|海賊遊撃兵の兜
-itm_umb_helm_f|海賊遊撃兵の兜
-itm_umb_hood|ウンバールの頭巾
+
+itm_umb_helm_d|海賊遊撃兵の兜
+
+; itm_umb_helm_e|Corsair High Helm
+
+; itm_umb_helm_f|Corsair High Helm
+
+; itm_umb_hood|Black Hood
+
 itm_corsair_boots|海賊のブーツ
 itm_umb_shield_a|海賊のバックラー
 itm_umb_shield_b|海賊のバックラー
@@ -752,78 +787,126 @@ itm_umb_shield_d|海賊のバックラー
 itm_umb_shield_e|海賊のバックラー
 itm_umbar_cutlass|ウンバールのカトラス
 itm_kraken|クラーケンカトラス
-itm_umbar_rapier|ウンバールの剣
+; itm_umbar_rapier|Umbar Boarding Sword
+
 itm_corsair_harpoon|海賊のもり
 itm_corsair_sword|海賊のエケット
-itm_corsair_throwing_dagger|ウンバールの投げダガー
+
+; itm_corsair_throwing_dagger|Crooked Throwing Daggers\t\t\t\t\t\t\t\t\t
 itm_umbar_pike|ウンバールのパイク
-itm_woodman_tunic|森人のチュニック
-itm_woodman_scout|森人斥候兵のマント
-itm_woodman_padded|森人のパッド鎧
+; itm_woodman_tunic|Woodmen Tunic
+
+; itm_woodman_scout|Woodmen Scout Cape\t\t\t\t\t\t\t\t\t
+; itm_woodman_padded|Woodmen Padded Armor
 itm_beorn_tunic|ビヨルン一党のチュニック
 itm_beorn_padded|ビヨルン一党のパッド鎧
 itm_beorn_heavy|ビヨルン一党の重装鎧
 itm_beorn_berserk|ビヨルン一党狂戦士の装備
 itm_beorn_chief|ビヨルン一党族長のチュニック
-itm_beorn_helmet|北方のスカルキャップ
+
+; itm_beorn_helmet|Bear Skullcap
 itm_beorn_shield|北方人の盾
 itm_beorn_axe|ビヨルン一党の斧
-itm_beorn_staff|森人の杖
+; itm_beorn_staff|Woodmen Staff
 itm_beorn_battle_axe|ビヨルン一党の戦斧
-itm_dwarf_shield_a|ドワーフの盾
-itm_dwarf_shield_b|ドワーフの盾
-itm_dwarf_shield_c|ドワーフの盾
-itm_dwarf_shield_d|ドワーフの盾
-itm_dwarf_shield_f|ドワーフの盾
-itm_dwarf_shield_g|ドワーフの盾
-itm_dwarf_shield_i|ドワーフの盾
-itm_dwarf_shield_j|ドワーフの盾
-itm_dwarf_shield_k|ドワーフの盾
-itm_dwarf_shield_l|ドワーフの盾
+; itm_dwarf_shield_a|Dwarven Angular Shield
+
+; itm_dwarf_shield_b|Dwarven Tower Shield
+
+; itm_dwarf_shield_c|Dwarven Fighting Shield
+
+; itm_dwarf_shield_d|Dwarven Round Shield
+
+itm_north_round_shield|ドワーフの盾
+
+itm_free_dwarf_shield_g|ドワーフの盾
+
+itm_free_dwarf_shield_i|ドワーフの盾
+
+itm_free_dwarf_shield_j|ドワーフの盾
+
+itm_free_dwarf_shield_k|ドワーフの盾
+
+; itm_woodmen_heavy|Mirkwood Armor
+
 itm_dwarf_sword_a|ドワーフの剣
-itm_dwarf_sword_b|ドワーフの剣
+
+; itm_dwarf_sword_b|Beorning Shortsword
 itm_dwarf_sword_c|ドワーフの剣
 itm_dwarf_sword_d|ドワーフの剣
-itm_dwarf_adz|ドワーフのちょうな
+
+; itm_dwarf_battle_axe|Dwarf Battle Axe
+
 itm_dwarf_great_axe|ドワーフの大斧
+
 itm_dwarf_great_mattock|ドワーフの大マトック
+
 itm_dwarf_great_pick|ドワーフの大つるはし
+
 itm_dwarf_war_pick|ドワーフの戦つるはし
+
 itm_dwarf_mattock|ドワーフのマトック
+
 itm_dwarf_hand_axe|ドワーフの短斧
+
 itm_dwarf_throwing_axe|ドワーフの投げ斧
+
 itm_dwarf_spear|ドワーフの槍
+
 itm_dwarf_spear_b|ドワーフのパイク
-itm_dwarf_spear_c|ドワーフのパイク
-itm_dwarf_helm_a|ドワーフのコイフ
-itm_dwarf_helm_b|ドワーフのマスクつきコイフ
-itm_dwarf_helm_c|ドワーフのマスクつき兜
-itm_dwarf_helm_h|ドワーフの兜
-itm_dwarf_helm_i|ドワーフのフリジアン兜
-itm_dwarf_helm_j|ドワーフのフリジアンマスク
-itm_dwarf_helm_l|ドワーフの頭巾
-itm_dwarf_helm_m|ドワーフの鉄仮面
-itm_dwarf_helm_o|ドワーフのナサル兜
+
+; itm_dwarf_spear_c|Dwarf Longaxe
+
+itm_dwarf_helm_coif|ドワーフのコイフ
+
+; itm_dwarf_nasal_b|Dwarf Nasal Helm
+
+itm_north_skullcap|北方のスカルキャップ
+
+; itm_dwarf_helm_kettle|Dwarf Kettle Helm
+
+itm_dwarf_helm_fris|ドワーフのフリジアン兜
+
+; itm_north_leather_skullcap|North Light Skullcap
+
+itm_dwarf_hood|ドワーフの頭巾
+
+itm_dwarf_nasal|ドワーフのナサル兜
+
+; itm_north_nasal_helm|North Nasal Helm
+
 itm_dwarf_helm_p|ドワーフのキング兜
-itm_dwarf_helm_q|ドワーフ鉱夫の兜
-itm_dwarf_helm_r|ドワーフ鉱夫の頭巾
-itm_dwarf_helm_u|ドワーフのマスク
-itm_dwarf_helm_v|ドワーフの鎖サレット
-itm_dwarf_helm_x|ドワーフのマスクつきサレット
-itm_dwarf_armor_a|ドワーフのチュニックと鎖かたびら
+
+; itm_dwarf_miner|Dwarf Light Helm
+
+; itm_north_chieftain|North Chieftain Helm
+
+; itm_dwarf_helm_round|Dwarf Round Helm
+
+itm_free_dwarf_helm_v|ドワーフの鎖サレット
+
+; itm_dwarf_helm_sallet|Dwarf Sallet
+
+; itm_dwarf_armor_a|Erebor Mail
+
 itm_leather_dwarf_armor|ドワーフのパッド鎧と鎖かたびら
-itm_dwarf_vest|ドワーフ弓兵の鎧
-itm_dwarf_armor_b|ドワーフのパッド鎧とチュニック
+
+; itm_dwarf_armor_b|Erebor Scale
+
+itm_leather_dwarf_armor_b|ドワーフのパッド鎧とチュニック
+
 itm_dwarf_armor_c|ドワーフのスケイル鎧と鎖かたびら
-itm_leather_dwarf_armor_b|ドワーフのチュニック
-itm_dwarf_vest_b|くろがね連山のチュニック
+
+itm_dwarf_vest|ドワーフのチュニック
+
+; itm_dwarf_vest_b|Iron Hills Mail
 itm_dwarf_pad_boots|ドワーフのパッドブーツ
 itm_dwarf_chain_boots|ドワーフの鎖かたびらのすね当て
 itm_dwarf_scale_boots|ドワーフのスケイルブーツ
 itm_good_mace|メイス
 itm_far_harad_shield_paint|ウィッカー盾
 itm_nazgulrobe|ナズグールのローブ
-itm_whiterobe|白のローブ
+
 itm_mordor_banner|モルドールの戦旗
 itm_isengard_banner|アイゼンガルドの戦旗
 itm_woodelf_banner|闇の森のエルフの戦旗
@@ -883,10 +966,11 @@ itm_isen_uruk_heavy_reward|ウルク＝ハイの将軍の鎧
 itm_lorien_bow_reward|ノルドールの弓
 itm_lorien_sword_reward|ガラズリムの剣
 itm_dale_sword_reward|マーチウォーデンの剣
-itm_dale_armor_reward|エスガロスのゴージット付き上級鎧
+
+; itm_dale_armor_reward|Dale Noblemen Mail
 itm_leather_gloves_reward|狩猟手袋
 ; itm_beorn_shield_reward|Beorning Shield
-itm_beorn_axe_reward|熊斧
+; itm_beorn_axe_reward|Bear Club
 itm_moria_arrow_reward|モリアの毒矢
 itm_khamul_helm|ハムールの兜
 itm_gandstaff|魔法使いの杖
@@ -904,3 +988,4 @@ itm_wolf|狼
 itm_defiled_armor_gondor|穢されたゴンドール指揮官のシュールコー
 itm_defiled_armor_rohan|穢されたローハンのホバーク
 itm_defiled_armor_dale|穢された谷間の国の上級鎧
+itm_beorn_axe_no_attack|ビヨルン一党の斧

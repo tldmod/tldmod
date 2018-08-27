@@ -67,7 +67,7 @@ qst_deliver_food|Opskrbi {s3} s {reg5} jedinica hrane.
 qst_deliver_food_text|{s9} od {s3} je zatražio da mu doneseš {reg5} jedinica hrane u 10 dana.
 qst_deliver_iron|Opskrbi {s3} s {reg5}  Jedinica {s6}
 qst_deliver_iron_text|{s9} od {s3} je zatražio do mu doneseš {reg5} jedinica {s6}.
-qst_tld_introduction|Dostavi poruku o orkama iz Mordora zapovijedništvu.
+; qst_tld_introduction|Go to your faction leader.
 qst_tld_introduction_text|Nijedan 
 qst_treebeard_kill_orcs|Porazi grupu orki koji sijeku drveća
 qst_treebeard_kill_orcs_text|Treebeard želi da pronađeš i poraziš orke koji sijeku drveća u Fangornu.
@@ -75,3 +75,30 @@ qst_oath_of_vengeance|Prisega Osvete
 qst_oath_of_vengeance_text|Razjaren smrću {s1}, prisegnuo si osvetiti se snagama {s2}. Moraš uništiti što više vojski od {s2} u nadolazećim danima. Oštroumno si svjestan kako su tvoji slijedbenici svjedočili tvojoj prisezi i ne želiš biti poznat kao onaj tko krši prisegu. Orgija puštanja krvi sada mora početi!
 qst_deliver_gift|Dostavi {s4} od {s1} od {s2} do {s3}
 qst_deliver_gift_text|Zatražili ste da dostavite {s4} jedinice {s1}  za  {s3}  od {s2}.
+; qst_ring_hunters|Ring Hunters
+; qst_ring_hunters2|Ring Hunters - Completed
+; qst_deliver_message_hobbit|Concerning Hobbits
+; qst_blank_quest_01|Defend Refugees
+; qst_blank_quest_02|Hunt Down Refugees
+; qst_blank_quest_03|Sea Battle
+; qst_blank_quest_04|Kill {s35} {s36}
+; qst_blank_quest_05|Kill {s35} {s36} troops.
+
+
+
+
+
+
+
+
+
+
+; qst_blank_quest_16|Reinforce Center
+; qst_blank_quest_17|Slay {reg22} {s6} in battles
+
+
+
+
+; qst_guardian_party_quest|Isengard's Last Stand
+; qst_quests_end|Quests End
+; qst_quests_end_text|.

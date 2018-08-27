@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^자네는 무엇을 위해 싸우는가?
 mno_start_good|새로운 시대의 시작
 mno_start_evil|인간의 황혼
 mno_go_bback|돌아가기
-menu_start_phase_2|^^^^^가운데땅. 그림자는 동쪽에서 커 나가고 있고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이 때까지 보지 못했던 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
 mno_go_forth|당신이 선택한 길을 따라 앞으로 가십시오...
 menu_start_game_3|^^^^^^^당신의 이야기를 선택하세요:
 mno_custom_battle_scenario_1|교전, 곤도르 vs 하라드
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|연습 트롤 전투
 mno_warg_battle_scenario|연습 와르그 전투
 mno_build_your_own_scene|**제 3시대에서 당신만의 이야기를 만드세요 **
 menu_tutorial|^^제 3시대 모드는 마운트 앤 블레이드 원작에서는 없는 많은 특징을 갖고 있습니다. 그것들은 발매될 때 PDF에 포함되었으나 스포일러 되지 않고 묘사된 것들입니다. 원작 모듈을 사용하기 위해 기본적인 게임 기능을 튜토리얼 할 것입니다.
+menu_tutorial|^^제 3시대 모드는 마운트 앤 블레이드 원작에서는 없는 많은 특징을 갖고 있습니다. 그것들은 발매될 때 PDF에 포함되었으나 스포일러 되지 않고 묘사된 것들입니다. 원작 모듈을 사용하기 위해 기본적인 게임 기능을 튜토리얼 할 것입니다.
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|돌아가기
 mno_action_view_troop_trees|부대 승급 트리 보기
 mno_view_upkeep_costs|유지비 보기
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|취소
 menu_custom_battle_end|^^^^^전투가 끝났습니다.{s1}당신의 편은 {reg5}의 적을 죽였고 {reg6}병사를 전투로 잃었습니다.^당신은 {reg7}의 전투중에 적을 직접 죽였습니다.
 mno_replay|전투 다시 하기
 mno_continue_dot|계속
-menu_quick_battle_general_test|^^^현재 전투 : ^팀 A: {reg10} {s10}^^vs^^팀 B: {reg11} {s11}
-mno_tAA|+5 팀 A
-mno_tAB|-5 팀 A
-mno_tAC|병사 A 선택
-mno_tBA|+5 팀 B
-mno_tBB|-5 팀 B
-mno_tBC|병사 B 선택
-mno_B|프리셋 1
-mno_F|전투 시작!
 mno_dot_go_back|. 돌아간다
-menu_quick_battle_troll|^^^^^^^^당신의 트롤 시나리오를 선택하세요:
-mno_troll_battle_scenario_10|연습 : 트롤 vs 보병
-mno_troll_battle_scenario_11|연습 : 트롤 vs 궁수
-mno_troll_battle_scenario_12|연습 : 트롤 vs 기병
-mno_troll_battle_scenario_13|연습 : 트롤 vs 창기병
-mno_troll_battle_scenario_14|연습 : 트롤 vs 트롤
-mno_troll_battle_scenario_15|대리 연습 : 플레이어가 트롤을 선택했습니다.
-menu_quick_battle_wargs|^^^^^^^Chosse your 당신의 연습 와르그 시나리오를 선택하세요:
-mno_warg_battle_scenario_10|와르그를 상대 : 1 vs 1
-mno_warg_battle_scenario_11|와르그를 상대 : 2 vs 3
-mno_warg_battle_scenario_12|와르그를 상대 : 다수 vs 다수
-mno_warg_battle_scenario_10b|와르그를 플레이 : 1 vs 1
-mno_warg_battle_scenario_11b|와르그를 플레이 : 2 vs 3
-mno_warg_battle_scenario_12b|와르그를 플레이 : 다수 vs 다수
 menu_start_good|^^^^^^^^^^당신의 종족을 선택하세요:
 mno_start_ma|인간
 mno_start_el|요정
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^성별은?
 mno_start_male|남자
 mno_start_female|여자
 mno_proc|일반적으로 진행
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|계속...
 menu_character_report|^^^^^부대 사기 : {reg8}^부대크기 제한:{reg7}^{s5}
 menu_camp|^^^^당신은 {s1}에 있습니다.{s2}^^무엇을 하시겠습니까?
@@ -127,8 +115,10 @@ mno_camp_wait_here|캠프를 차려 시간을 보낸다
 mno_camp_options|제 3세계 옵션 변경
 mno_Cheat_enable|치트키/모드변경 옵션 사용
 menu_game_options|^^^^^^^변경을 위해 옵션 클릭
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|제한된 플레이어 장비:{s7}
 mno_game_options_formations|진형과 인공지능: {s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|마을 NPC는 메뉴에서도 접근이 가능합니다:{s7}
 mno_game_options_cutscenes|컷신: {s7}
 mno_game_options_injuries|동료들의 부상:{s7}
@@ -136,11 +126,16 @@ mno_game_options_death|군주와 동료들의 영원한 죽음:{s7}
 mno_game_options_death2|플레이어의 영원한 죽음(바로 당신!):{s7}
 mno_game_options_morale|전투 사기 시스템:{s7}
 mno_game_options_animal_ambushes|동물 습격:{s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|게임플레이 수정....
 mno_game_options_back|캠프 메뉴로 돌아가기
+mno_game_options_start_back|돌아가기
 menu_camp_tweaks|^^^^^^^^당신이 조정하고 싶은 옵션을 선택하세요.
 mno_tweak_options_compat|호환성 수정....
 mno_tweak_options_strat|전략 수정...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|옵션 메뉴로 돌아가기
 menu_camp_compat_tweaks|^^^^^^^옵션변경을 위해 클릭하세요(shift키를 누르면 감소합니다);^(이건 호환성 때문이지 치트가 아닙니다)
 mno_game_options_compat_party|부대의 최대수: {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^변경을 위해 옵션 클릭:^(경고 : 이건 
 mno_strat_tweaks_siege_reqs|공성에 필요한 힘 요구량:{s7}
 mno_strat_tweaks_siege_relax_rate|공성에 필요한 힘과 휴식 비율 : {reg1}
 mno_strat_tweaks_regen_rate|힘 회복 비율:{s7}
-mno_strat_tweaks_siege_regen_limit|각 진영은 이 아래로는 회복이 안됩니다:{reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|영향력 획득 비율: {s7}
 mno_strat_tweaks_rank_gain_rate|지위 획득 비율: {s7}
 mno_strat_tweaks_back|조정 메뉴로 돌아가기
@@ -188,9 +183,11 @@ mno_leave|떠나기
 menu_simple_encounter|^^^^^{s2}^당신은 {reg11}명의 적군에 맞서 싸울 {reg22}명의 병사를 가지고 있습니다.\n^^전투는 {s3}{s4}에서 일어나고 있습니다.^^당신의 명령은?
 mno_encounter_attack|{reg21?적을 향해 돌격한다:적과 싸울 준비를 한다}
 mno_encounter_order_attack|당신이 뒤로 물러나 있는 동안 병사들에게 {reg21?공격하라고:싸우라고} 명령한다
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|{s4}을(를) 채찍질하며 그들을 향해 돌격한다
 mno_encounter_leave|떠나기
 mno_encounter_retreat|몇몇 병사들을 당신이 후퇴할 때 남겨놓기
+mno_hide_close|계속...
 menu_encounter_retreat_confirm|^^^^^부대원이 가진 가장 높은 전략가 스킬({reg2})로, {reg3?당신은:{s3}은(는)} 당신과 부대원들을 살아서 탈출시킬 계획을 궁리해냈지만, 적을 멈추기 위해 {reg4}명의 군사를 뒤에 남겨야만 합니다.
 mno_leave_behind|계속 간다. 그들의 희생이 남은 이들을 살릴 것이다
 mno_dont_leave_behind|아니. 전우를 버려둔 채 떠날 수 없다
@@ -212,6 +209,7 @@ mno_inspect_troll|쓰러진 트롤 조사하기
 menu_pre_join|^^^^^당신은 {s2} 그리고 {s1}, 양측의 군대가 대치하는 전장에 도착했습니다. 당신은...
 mno_pre_join_help_attackers|{s2}의 군대에 가세한다
 mno_pre_join_help_defenders|{s1}의 군대에 가세한다
+mno_pre_join_help_refugees|{s1}의 군대에 가세한다
 mno_pre_join_leave|참전하지 않는다
 menu_join_battle|당신은 {s1}에 맞서 {s2}의 군단에 가세했습니다.^우리측 {reg22}명의 군대로 {reg11}명의 적군에 맞서싸워야 합니다.^^전투는 {s3}{s4}에서 일어나고 있습니다.
 mno_join_attack|적에게 돌격하기
@@ -286,6 +284,7 @@ mno_isengard_underground|지하 선술집에 들어가기
 mno_tirith_toplevel|꼭대기층으로 올라가기
 mno_town_leave|떠나기
 mno_town_leave_door|떠나기
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|내리시겠습니까?
 mno_disembark_yes|그래
 mno_disembark_no|아니
@@ -317,8 +316,19 @@ mno_explore|이 장소 탐험하기
 menu_ring_hunter_lair|^^^^당신은 어둠숲 속 반지 추적자들의 흔적을 따라갔고 {s1}에 도착했고 그들이 상자를 들고 떠나려는 것을 목격했습니다.
 mno_attack_lair|지금 그들을 공격하자
 mno_leave_bandit_lair|지금은 떠나자
-menu_starting_quest_good|^^^^^^당신은 오크 무리에 공격 받고 있는 작은 상단을 발견했습니다. 당신은 무엇을 하겠습니까?
-mno_help|이방인을 돕기
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+mno_gondor_reinforcement_event_close|닫기
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|떠나기
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+mno_player_added_to_war_council_close|닫기
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+mno_player_added_to_siege_reports_close|닫기
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+mno_player_added_to_allow_follow_close|닫기
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+mno_center_besieged_event_close|닫기
+mno_intro_next|계속...
 mno_start_defend_caravan|캐러밴을 지키자!
 mno_start_raid_caravan|캐러밴을 습격하자!
 mno_start_ambush_orcs|오크에게 기습을 가하자!
@@ -326,8 +336,30 @@ mno_start_kill_scouts|정찰병들이 당신의 도착을 알리지 못하게 �
 mno_go_your_way|놔 둔 채로 떠나기
 mno_defend_villagers|마을 주민들을 지키자!
 mno_raid_villagers|마을을 습격하자!
-mno_go_away|놔 둔 채로 떠나기
-menu_custom_battle_choose_faction1|^^^^^^^^^^당신의 진영과 이점을 선택하세요:
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|계속...
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|곧 합류할 것이라 전하기
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|선한 진영
 mno_bad_equal|사악한 진영
 mno_replay_prev|이전 설정 불러오기

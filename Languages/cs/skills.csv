@@ -4,10 +4,10 @@ skl_leadership|Vudcovstvi
 skl_leadership_desc|Kazdy bod zvysuje maximalni pocet jednotek kterym muzes velet o 5, zvysuje moralku skupiny a snizuje zold jednotek o 5 %%. (Vudcova dovednost)
 skl_prisoner_management|Drzeni veznu
 skl_prisoner_management_desc|Kazda uroven teto dovednosti zvysuje maximalni pocet veznu o %d. (Vudcova dovednost)
-skl_persuasion|Přesvědčivost
-skl_persuasion_desc|Tato dovednost ti pomuze ostatni lidi presvedcit o tvych zamerech. (Osobni dovednost)
-skl_engineer|Vyroba
-skl_engineer_desc|Kazdy bod teto dovednosti naraz snizuje cas potrebny pro vyrobu a vylepseni vybavy, ale take i umozni kvalitnejsi vylepseni. (Dovednost skupiny);
+skl_persuasion|Zálesáctví
+skl_persuasion_desc|Schopnost přežít v divoké přírodě a přizpůsobit si ji k obrazu svému. Tato dovednost zvyšuje schopnost družiny schovat se před nepřítelem, a rychlost tvé družiny v lese. (schopnost družiny)
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Prvni pomoc
 skl_first_aid_desc|Hrdinovi se obnovi 5%% HP ztracenych v bitve co jeden dovednosti uroven. (Dovednost skupiny)
 skl_surgery|Chirurgie 

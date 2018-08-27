@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Za čo budeš bojovať?
 mno_start_good|ÚSVIT nového veku
 mno_start_evil|SÚMRAK ľudstva
 mno_go_bback|Späť
-menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravuje na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju rolu. ^^ Jakú rolu, to sa ešte ukáže...
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
 mno_go_forth|Vydaj sa na svoju zvolenú cestu...
 menu_start_game_3|^^^^^^^^Zvoľ si scénar
 mno_custom_battle_scenario_1|Bitka, Gondorské frakcie proti Haradu
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|Bitka pre testovanie trolov
 mno_warg_battle_scenario|Bitka pre testovanie vrrkov
 mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
 menu_tutorial|^^TLD má veľa fukncií neznámych pre pôvodný M&B. Sú detailne popísané bez prezradenia zápletky v PDF, ktoré je pribalené s módom. Pokiaľ chcete prejsť návodom mechanik základnej hry, urobte tak prosím v základnej hre - nie v móde. 
+menu_tutorial|^^TLD má veľa fukncií neznámych pre pôvodný M&B. Sú detailne popísané bez prezradenia zápletky v PDF, ktoré je pribalené s módom. Pokiaľ chcete prejsť návodom mechanik základnej hry, urobte tak prosím v základnej hre - nie v móde. 
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|Späť
 mno_action_view_troop_trees|Prezrieť si strom jednotiek
 mno_view_upkeep_costs|Zobraziť žold družiny.
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|Zrušiť.
 menu_custom_battle_end|^^^^^^Boj skončil. {s1} tvoja strana zabila {reg5} nepriateľov a stratila {reg6} jednotiek v boji.^Ty si v boji zabil {reg7} protivníkov.
 mno_replay|Hrať tento boj znovu.
 mno_continue_dot|Pokračovať.
-menu_quick_battle_general_test|^^^Aktuálny boj: ^tým A: {reg10} {s10}^^proti^^ tým B: {reg11} {s11}
-mno_tAA|+5 Tým A
-mno_tAB|-5 Tým A
-mno_tAC|        Zvoliť jednotku A
-mno_tBA|+5 tým B
-mno_tBB|-5 tým B
-mno_tBC|Zvoliť jednotku B
-mno_B|Prednastavenie 1
-mno_F|ZAČNI BOJ!
 mno_dot_go_back|.   Späť
-menu_quick_battle_troll|^^^^^^^^Vyber si svoj trolí scénar:
-mno_troll_battle_scenario_10|Test: Trol proti Pechote
-mno_troll_battle_scenario_11|Test: Trol proti Lučišníkom
-mno_troll_battle_scenario_12|Test: Trol proti Kavalérií
-mno_troll_battle_scenario_13|Test: Trol proti Kopijníkom 
-mno_troll_battle_scenario_14|Test: Trol proti Trolovi
-mno_troll_battle_scenario_15|Sranda-Test: Hráčom ovládaný trol
-menu_quick_battle_wargs|^^^^^^^^Vyber si svoj vrrčí scénar:
-mno_warg_battle_scenario_10|Proti Vrrkom: 1 proti 1
-mno_warg_battle_scenario_11|Proti Vrrkom: 2 proti 3
-mno_warg_battle_scenario_12|Proti Vrrkom: mnoho proti mnoho
-mno_warg_battle_scenario_10b|Hraj za Vrrkov: 1 proti 1
-mno_warg_battle_scenario_11b|Hraj za Vrrkov: 2 proti 3
-mno_warg_battle_scenario_12b|Hraj Vrrkov: mnoho vs mnoho
 menu_start_good|^^^^^^^^^^Zvol si svojú rasu:
 mno_start_ma|ČLOVEK
 mno_start_el|ELF
@@ -78,9 +62,9 @@ mno_start_go|GONDOR, Kráľovstvo Bielej Veže
 mno_start_ro|ROHAN, páni koní
 mno_start_du|DÚNADANIA, prastará dynastia Ľudí
 mno_start_be|GRIZLOVCI, Medvedí ľud
-mno_start_da|Severské Kráľovstvo DALE
+mno_start_da|Severské Kráľovstvo DOLU
 menu_start_good_elf|^^^^^^^^^^v ktorom Lese žiješ, Starší?
-mno_start_ri|ROKLINKA, dom Lorda Elronda
+mno_start_ri|ROKLINKA, panstvo Lorda Elronda
 mno_start_lo|LOTHLORIEN, ríša Lady Galadriel
 mno_start_mi|TEMNOHVOZD, ríša Lesných elfov
 menu_start_good_dwarf|^^^^^^^^^^Zvol si svoj pôvod:
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^Tvoje pohlavie?
 mno_start_male|Muž
 mno_start_female|Žena
 mno_proc|Pokračuj
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|Pokračuj
 menu_character_report|^^^^^Morálka družiny: {reg8}^Maximálna veľkosť družiny: {reg7}^{s5}
 menu_camp|^^^^Si v {s1}.{s2}^^Čo chceš robiť?
@@ -127,8 +115,10 @@ mno_camp_wait_here|Utáboriť sa tu na nejaký čas.
 mno_camp_options|Zmeniť nastavenia TLD.
 mno_Cheat_enable|Povoliť cheaty/modderske nastavenia.
 menu_game_options|^^^^^^^^Klikni na možnosť pre prepnutie:
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|Obmedziť hráčovo vybavenie: {s7}
 mno_game_options_formations|Bojové formácie a umelá inteligencia: {s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|NPC v mestách vždy dostupné v menu: {s7}
 mno_game_options_cutscenes|Minifilmy: {s7}
 mno_game_options_injuries|Zranenia spoločníkov: {s7}.
@@ -136,11 +126,16 @@ mno_game_options_death|Velitelia všetkých frakcií a spoločníci môžu trval
 mno_game_options_death2|Hráč (TY!) môže trvale zomrieť: {s7}
 mno_game_options_morale|Systém morálky v bitkách: {s7}
 mno_game_options_animal_ambushes|Prepadnutia divokými zvieratami: {s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|Úpravy hratelnosti...
 mno_game_options_back|Späť do táborového menu.
+mno_game_options_start_back|Späť.
 menu_camp_tweaks|^^^^^^^^Vyber si možnosť ktorú by si chcel upraviť
 mno_tweak_options_compat|Úpravy kompatibility...
 mno_tweak_options_strat|Úpravy stratégie...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|Späť do menu nastavení.
 menu_camp_compat_tweaks|^^^^^^^^Klikni na možnosť pre zmenu (podrž shift pre zníženie):^(toto slúži pre zlepšenie kompatibility na počítači a nie sú to cheaty)
 mno_game_options_compat_party|Maximálny počet družín na mape: {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Klikni na možnosť pre prepnutie:^(pozor: toto s
 mno_strat_tweaks_siege_reqs|Požadovaná sila pre obliehanie: {s7}
 mno_strat_tweaks_siege_relax_rate|Rychlosť znižovania požiadavkov pre obliehanie: {reg1}
 mno_strat_tweaks_regen_rate|Rychlosť obnovy síly frakcie: {s7}
-mno_strat_tweaks_siege_regen_limit|Od tejto hranice sa frakcie neobnovujú: {reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|Hodnota získaného Vlivu: {s7}
 mno_strat_tweaks_rank_gain_rate|Hodnota získanej Hodnosti: {s7}
 mno_strat_tweaks_back|Späť do menu úprav.
@@ -188,9 +183,11 @@ mno_leave|Odísť.
 menu_simple_encounter|^^^^^{s2}^ Máš k dispozícií {reg22} jednotiek v boji proti {reg11}.^^Bitka sa odohráva v {s3}{s4}.^^Tvoje rozkazy ?
 mno_encounter_attack|{reg21?Zaútočiť na nich:Pripraviť sa čeliť im}.
 mno_encounter_order_attack|Prikázať svojím vojakom aby {reg21?zaútočili:čelili im} bez teba.
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Vrhnúť sa vpred naproti nim lámajúc {s4}.
 mno_encounter_leave|Odísť.
 mno_encounter_retreat|Nechať za sebou niekoľko vojakov, aby kryli tvoj ústup.
+mno_hide_close|Pokračuj
 menu_encounter_retreat_confirm|^^^^^Ako najskúsenejší taktik v družine, ({reg2}), {reg3?navrhuješ:{s3} navrhuje} plán, podľa ktorého sa tebe a tvojím mužom podarí zachrániť si život, ale budeš musieť obetovať {reg4} vojakov aby zastavili nepriateľovo prenasledovanie.
 mno_leave_behind|Obetovanie týchto mužov zachráni zbytok.
 mno_dont_leave_behind|Nie. Nikoho obetovať nebudeme.
@@ -212,6 +209,7 @@ mno_inspect_troll|Prehľadať skoleného trola
 menu_pre_join|^^^^^Narazil si na bitku medzi {s2} a {s1}. Rozhodneš sa...
 mno_pre_join_help_attackers|Zapojiť sa a pomôcť {s2}.
 mno_pre_join_help_defenders|Hnať sa na pomoc {s1}.
+mno_pre_join_help_refugees|Hnať sa na pomoc {s1}.
 mno_pre_join_leave|Nezapojiť sa.
 menu_join_battle|^^^Pomáhaš {s2} proti {s1}.^ Máš k dispozícií {reg22} vojakov proti {reg11} nepriateľom.^^Bitka sa odohráva v {s3}{s4}.
 mno_join_attack|Zaútočiť na nepriateľov.
@@ -286,6 +284,7 @@ mno_isengard_underground|Ísť do podzemných jaskýň.
 mno_tirith_toplevel|Vyšplhať na horné poschodie.
 mno_town_leave|Odísť...
 mno_town_leave_door|Opustiť oblasť
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|Praješ si vystúpiť?
 mno_disembark_yes|Áno.
 mno_disembark_no|Nie.
@@ -301,7 +300,7 @@ menu_sneak_into_town_caught_dispersed_guards|Zbavíš sa stráží a zamaskuješ
 menu_sneak_into_town_caught_ran_away|Unikáš bránami a rýchlo sa vraciaš do bezpečia mimo mesto.
 menu_tld_player_defeated|^^^^^Odrazu ťa mučí nesmierna bolesť na temene hlavy! \\ Trasieš sa, zatiaľ čo svet okolo teba černie a stráca sa...^Je toto tvoj koniec?
 menu_recover_after_death_fangorn|Prebudíš sa. Okolo teba je stále les. Každá kosť bolí. Ale si nejakým zázrakom nažive.^^Bola to porážka, ale aspoň si bol schopný vidieť čo sa stalo. ^Teraz už vieš čo sa deje v tomto prekliatom lese,^a ty si prežil a môžeš to všetkým prezradiť. ^^Ale bude ti vôbec niekto veriť?
-menu_recover_after_death_moria|^^^^^Nadobudneš vedomie. Ležíš na mäkkej zemi, svieži vzduch ti slabo fúka to tváre. Si vonku!^Ohyzdi ťa museli považovať za mŕtveho a hodiť do nejakej tmavej diery.^ Musel si byť odnesený na povrch podzemným prúdom.
+menu_recover_after_death_moria|^^^^^Nadobúdaš vedomie. Ležíš na mäkkej zemi, svieži vzduch ti jemne fúka to tváre. Si vonku!^Ohyzdi ťa museli považovať za mrtvého, a tak ťa hodili do nejakej tmavej diery.^ Na povrch ťa zrejme vyniesol prúd podzemnej vody.
 mno_whatever|Vstávaj!
 menu_recover_after_death_default|^^^^^Nadobudneš vedomie. Ležíš na mieste, na ktoré si spadol. Nepriatelia ťa museli považovať za mŕtveho a nechať ťa tu. Zdá sa, že tvoje zranenia neboli smrteľné, a aj keď sa cítiš strašne, stále si schopný chodiť. Zdvihneš sa a skúsiš sa porozhliadnuť po ostatných preživších z tvojej družiny.
 menu_recover_after_death_town|^^^^Nadobudneš vedomie a ocitáš sa na mestskom predmestí. Si nažive! Nikdo nie je nablízku a tak využívaš šance dostať sa z mesta von. Zdá sa, že žiadne z tvojich zranení nebolo smrteľné, a aj keď sa cítiš hrozne, stále si schopný chodiť.
@@ -310,15 +309,26 @@ menu_notification_center_under_siege|{s1} je obliehané {s2} z {s3}!
 menu_notification_one_side_left|^^^^^Vojna o Prsteň skončila!{s1} porazil všetkých svojich nepriateľov a zvíťazil!
 menu_notification_total_defeat|^^^^^Vojna o Prsteň sa pre teba končí!^^{s1} bol zničený nepriateľmi a ty zostávaš sám a porazený.
 menu_notification_your_faction_collapsed|^^^^^{s11}, tvoja domovina, bol porazený!^Tvoji spojenci aj naďalej bojujú vo Vojne. Spolu s ostatnými, kdo zostali z {s11}, môžeš stále pomôcť svojej strane zvíťaziť.
-menu_notification_faction_defeated|^^^^^{s1} Porazený!^{s1} zanikol, porazený armádami {s13}!
+menu_notification_faction_defeated|^^^^^{s1} Porazený!^{s1} zanikol, zničený armádami {s13}!
 menu_ruins|^^^^Prichádzaš k {s1}. Kedysi silná pevnosť bola vyplienená do základov. Stále rozpoznávaš stopy opevnení a po okolí sú rozhádzané hrdzavé zbrane.
 menu_legendary_place|^^^^Veril si povestiam a našiel si {s1}. Teraz môžeš toto miesto preskúmať a presvedčiť sa, či boli povesti pravdou.
 mno_explore|Preskúmať toto miesto.
 menu_ring_hunter_lair|^^^^Následoval si stopy Lovcov Prsteňa skrz Temnohvozd a dorazil si k {s1}. Vidíš ich, ako sa pripravujú na odchod s truhlicou.
 mno_attack_lair|Zaútočiť na nich teraz.
 mno_leave_bandit_lair|Zatiaľ ich nechať.
-menu_starting_quest_good|^^^^^^Spozoruješ malú karavanu pod útokom bandy ohyzdov. Čo urobíš?
-mno_help|Pomôcť karavane!
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+mno_gondor_reinforcement_event_close|Zavrieť
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|Odísť...
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+mno_player_added_to_war_council_close|Zavrieť
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+mno_player_added_to_siege_reports_close|Zavrieť
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+mno_player_added_to_allow_follow_close|Zavrieť
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+mno_center_besieged_event_close|Zavrieť
+mno_intro_next|Pokračuj
 mno_start_defend_caravan|Brániť karavanu!
 mno_start_raid_caravan|Vyrabovať karavanu!
 mno_start_ambush_orcs|Prepadnúť ohyzdov!
@@ -326,8 +336,30 @@ mno_start_kill_scouts|Zastaviť zvedov ohlasujúcich tvoj príchod.
 mno_go_your_way|Nechať to tak.
 mno_defend_villagers|Brániť dedinčanov!
 mno_raid_villagers|Vyrabovať dedinu!
-mno_go_away|Nechať to tak.
-menu_custom_battle_choose_faction1|^^^^^^^^^^Zvol si svoju stranu a výhody:
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|Pokračuj
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|Frakcia dobra
 mno_bad_equal|Frakcia zla
 mno_replay_prev|Opakovať predošlé nastavenia

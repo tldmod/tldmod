@@ -36,7 +36,7 @@ pt_ranger_scouts|Ranger Scouts
 pt_rohan_scouts|Rohirrim Scouts
 pt_lorien_scouts|Lothlorien Scouts
 pt_woodelf_scouts|Mirkwood Elven Scouts
-pt_imladris_scouts|Rivendell Elven Scouts
+pt_imladris_scouts|Dunedain Scouts
 pt_dale_scouts|Dale Scouts
 pt_esgaroth_scouts|Esgaroth Scouts
 pt_dwarf_scouts|Dwarven Lookouts
@@ -252,4 +252,9 @@ pt_scout_camp_small|Scout Camp
 pt_scout_camp_large|Fortified Scout Camp
 pt_beorn_caravan|Woodsmen Caravan
 pt_orc_horde|Orc Horde
-pt_vet_archer|Veteran Archer
+pt_vet_archer|Vet Archer
+pt_volunteers|Reserves
+pt_refugees|Refugees
+pt_retreat_troops|Cover Troops
+pt_warp_array|warp array
+pt_warp_temp_array|warp temp array

@@ -1,12 +1,12 @@
 imod_plain|Obyčejný
-imod_cracked|Prasklý
-imod_rusty|Rezavý
+imod_cracked|Spatny
+imod_rusty|Hruby
 imod_bent|Ohnutý
 imod_chipped|Naštípnutý
 imod_battered|Omlácený
 imod_poor|Spatny
-imod_crude|Hruby
-imod_old|Stary
+; imod_crude|Simple %s
+imod_old|Pravěký
 imod_cheap|Levny
 imod_fine|Dobry
 imod_well_made|Kvalitni
@@ -20,14 +20,14 @@ imod_heavy|Tezky
 imod_strong|Silny
 imod_powerful|Mocny
 imod_tattered|Potrhany
-imod_ragged|Rozedrany
+imod_ragged|Hruby
 imod_rough|Hruby
 imod_sturdy|Pevny
-imod_thick|Silny
+; imod_thick|Robust %s
 imod_hardened|Tvrzeny
 imod_reinforced|Vyztuzeny
 imod_superb|Vynikajici
-imod_lordly|Vzneseny
+imod_lordly|Mistrovsky
 imod_lame|Chromy
 imod_swaybacked|Hrbaty
 imod_stubborn|Tvrdohlavy

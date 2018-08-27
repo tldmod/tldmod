@@ -1,12 +1,12 @@
 imod_plain|普 通 的 %s
-imod_cracked|裂 開 的 %s
-imod_rusty|生 銹 的 %s
+imod_cracked|劣 質 的 %s
+imod_rusty|粗 糙 的 %s
 imod_bent|彎 曲 的 %s
 imod_chipped|有 缺 口 的 %s
 imod_battered|有 凹 陷 的 %s
 imod_poor|劣 質 的 %s
-imod_crude|粗 糙 的 %s
-imod_old|舊 的 %s
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|便 宜 的 %s
 imod_fine|優 質 的 %s
 imod_well_made|精 良 的 %s
@@ -20,14 +20,14 @@ imod_heavy|重 %s
 imod_strong|堅 固 的 %s
 imod_powerful|強 力 的 %s
 imod_tattered|破 爛 的 %s
-imod_ragged|破 舊 的 %s
+imod_ragged|粗 糙 的 %s
 imod_rough|粗 糙 的 %s
 imod_sturdy|結 實 的 %s
-imod_thick|厚 實 的 %s
+; imod_thick|Robust %s
 imod_hardened|加 硬 %s
 imod_reinforced|加 強 %s
 imod_superb|華 麗 的 %s
-imod_lordly|豪 華 的 %s
+imod_lordly|極 品 %s
 imod_lame|瘸 腿 %s
 imod_swaybacked|老 %s
 imod_stubborn|倔 強 的 %s

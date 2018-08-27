@@ -67,7 +67,7 @@ qst_deal_with_night_bandits_text|Старейшината на {s14} Каза д
 qst_deliver_food_text|{s9} на {s3} каза да му занесеш {reg5} предмета храна за 10 дена.
 ; qst_deliver_iron|Supply {s3} with {reg5} Units of {s6}
 qst_deliver_iron_text|{s9} на {s3} Каза да му донесеш {reg5} Неща от {s6}.
-qst_tld_introduction|Занеси съобщение за мордорски орки на командира.
+; qst_tld_introduction|Go to your faction leader.
 qst_tld_introduction_text|Никой./Нищо.
 ; qst_treebeard_kill_orcs|Defeat the tree-chopping orc party
 ; qst_treebeard_kill_orcs_text|Treebeard wants you find and defeat the orcs cutting down trees in Fangorn.
@@ -75,3 +75,30 @@ qst_tld_introduction_text|Никой./Нищо.
 ; qst_oath_of_vengeance_text|Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
 qst_deliver_gift|Занеси {s4} на {s1} от {s2} до {s3}
 ; qst_deliver_gift_text|You have requested to deliver a {s4} of {s1} to {s3} from {s2}.
+; qst_ring_hunters|Ring Hunters
+; qst_ring_hunters2|Ring Hunters - Completed
+; qst_deliver_message_hobbit|Concerning Hobbits
+; qst_blank_quest_01|Defend Refugees
+; qst_blank_quest_02|Hunt Down Refugees
+; qst_blank_quest_03|Sea Battle
+; qst_blank_quest_04|Kill {s35} {s36}
+; qst_blank_quest_05|Kill {s35} {s36} troops.
+
+
+
+
+
+
+
+
+
+
+; qst_blank_quest_16|Reinforce Center
+; qst_blank_quest_17|Slay {reg22} {s6} in battles
+
+
+
+
+; qst_guardian_party_quest|Isengard's Last Stand
+; qst_quests_end|Quests End
+; qst_quests_end_text|.

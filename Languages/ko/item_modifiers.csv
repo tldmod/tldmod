@@ -1,12 +1,12 @@
 imod_plain|평범한 %s
-imod_cracked|금간 %s
-imod_rusty|녹슨 %s
+imod_cracked|질 나쁜 %s
+imod_rusty|대강 만든 %s
 imod_bent|휘어진 %s
 imod_chipped|깨진 %s
 imod_battered|낡은 %s
 imod_poor|질 나쁜 %s
-imod_crude|대강 만든 %s
-imod_old|오래된 %s
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|싸구려 %s
 imod_fine|준수한 %s
 imod_well_made|잘 만든 %s
@@ -20,14 +20,14 @@ imod_heavy|무거운 %s
 imod_strong|힘센 %s
 imod_powerful|강력한 %s
 imod_tattered|누더기 %s
-imod_ragged|해진 %s
+imod_ragged|거친 %s
 imod_rough|거친 %s
 imod_sturdy|튼튼한 %s
-imod_thick|두꺼운 %s
+; imod_thick|Robust %s
 imod_hardened|단련된 %s
 imod_reinforced|강화된 %s
 imod_superb|훌륭한 %s
-imod_lordly|오만한 %s
+imod_lordly|명장의 %s
 imod_lame|절름발이 %s
 imod_swaybacked|척추가 휜 %s
 imod_stubborn|고집센 %s

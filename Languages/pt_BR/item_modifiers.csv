@@ -1,12 +1,12 @@
 imod_plain|Simples %s
-imod_cracked|Rachado %s
-imod_rusty|Enferrujado %s
+imod_cracked|De má qualidade %s
+imod_rusty|De Grosso Acabamento %s
 imod_bent|Com Dobras %s
 imod_chipped|Com Entalhes %s
 imod_battered|Com Danos %s
 imod_poor|De má qualidade %s
-imod_crude|De Grosso Acabamento %s
-imod_old|De Muitos Anos %s
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|Barato %s
 imod_fine|Fino %s
 imod_well_made|Bem Feito %s
@@ -20,14 +20,14 @@ imod_heavy|Pesado %s
 imod_strong|Forte %s
 imod_powerful|Poderoso %s 
 imod_tattered|Esfarrapado %s
-imod_ragged|Em Pedaços %s
+imod_ragged|Diferente %s
 imod_rough|Diferente %s
 imod_sturdy|Resistente %s
-imod_thick|Contundente %s
+; imod_thick|Robust %s
 imod_hardened|Fortificado %s
 imod_reinforced|Reforçado %s
 imod_superb|Soberbo %s
-imod_lordly|Magnifico%s
+imod_lordly|Trabalho Excelente %s
 imod_lame|Aleijado %s
 imod_swaybacked|Corcovado %s
 imod_stubborn|obstinado %s

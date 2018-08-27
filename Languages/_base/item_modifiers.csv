@@ -1,12 +1,12 @@
 imod_plain|Plain %s
-imod_cracked|Cracked %s
-imod_rusty|Rusty %s
+imod_cracked|Poor %s
+imod_rusty|Crude %s
 imod_bent|Bent %s
 imod_chipped|Chipped %s
 imod_battered|Battered %s
 imod_poor|Poor %s
-imod_crude|Crude %s
-imod_old|Old %s
+imod_crude|Simple %s
+imod_old|Ancient %s
 imod_cheap|Cheap %s
 imod_fine|Fine %s
 imod_well_made|Well Made %s
@@ -20,14 +20,14 @@ imod_heavy|Heavy %s
 imod_strong|Strong %s
 imod_powerful|Powerful %s
 imod_tattered|Tattered %s
-imod_ragged|Ragged %s
+imod_ragged|Rough %s
 imod_rough|Rough %s
 imod_sturdy|Sturdy %s
-imod_thick|Thick %s
+imod_thick|Robust %s
 imod_hardened|Hardened %s
 imod_reinforced|Reinforced %s
 imod_superb|Superb %s
-imod_lordly|Lordly %s
+imod_lordly|Masterwork %s
 imod_lame|Lame %s
 imod_swaybacked|Swaybacked %s
 imod_stubborn|Stubborn %s

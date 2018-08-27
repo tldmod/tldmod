@@ -67,7 +67,7 @@ qst_deliver_food|Prevezi u {s3} {reg5} hrane
 qst_deliver_food_text|{s9} od {s3} je trazio da mu doneses {reg5} hrane u roku od 10 dana.
 qst_deliver_iron|Prevezi u {s3}  {reg5} vrste {s6}
 qst_deliver_iron_text|{s9} od {s3} je trazio da mu doneses {reg5} vrste {s6}.
-qst_tld_introduction|Posalji poruku oko Mordog orkova komandi
+; qst_tld_introduction|Go to your faction leader.
 qst_tld_introduction_text|Nista
 qst_treebeard_kill_orcs|Pobedi grupicu orkova drvoseca
 qst_treebeard_kill_orcs_text|Drvobradi je trazio da mu nadjes i ubijes orkove koji seku drvece u Fangornu.
@@ -75,3 +75,30 @@ qst_oath_of_vengeance|Osveta
 qst_oath_of_vengeance_text|Iznerviran smrti {s1}, zakleo si se na osvetu koju ces izvrsiti na snagama {s2}. Moras unistiti sto vise armija {s2} u sledecim danima. Bolje bi ti bilo to da ucinis, da ne bi postao krsilac zakletve. Krv mora da padne.
 qst_deliver_gift|Posalji {s4} od {s1} iz {s2} do {s3}
 qst_deliver_gift_text|Trazio si da posaljes {s4} od {s1} iz {s3} do {s2}.
+; qst_ring_hunters|Ring Hunters
+; qst_ring_hunters2|Ring Hunters - Completed
+; qst_deliver_message_hobbit|Concerning Hobbits
+; qst_blank_quest_01|Defend Refugees
+; qst_blank_quest_02|Hunt Down Refugees
+; qst_blank_quest_03|Sea Battle
+; qst_blank_quest_04|Kill {s35} {s36}
+; qst_blank_quest_05|Kill {s35} {s36} troops.
+
+
+
+
+
+
+
+
+
+
+; qst_blank_quest_16|Reinforce Center
+; qst_blank_quest_17|Slay {reg22} {s6} in battles
+
+
+
+
+; qst_guardian_party_quest|Isengard's Last Stand
+; qst_quests_end|Quests End
+; qst_quests_end_text|.

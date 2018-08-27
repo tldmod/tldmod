@@ -67,7 +67,7 @@ qst_deliver_food|{s3}に食料を{reg5}ユニット供給せよ
 qst_deliver_food_text|10日以内に食料を{reg5}調達してくるよう、 {s3}の{s9}に頼まれた。
 qst_deliver_iron|{s3}に{s6}を{reg5}ユニット供給せよ
 qst_deliver_iron_text|{s6}を{reg5}ユニット調達してくるよう、 {s3}の{s9}に頼まれた。
-qst_tld_introduction|指揮官にモルドールのオークについての伝言を届けよ
+; qst_tld_introduction|Go to your faction leader.
 qst_tld_introduction_text|None
 qst_treebeard_kill_orcs|木を伐採しているオークの一団を倒せ
 qst_treebeard_kill_orcs_text|ファンゴルンの森で木を伐採している オークの一団を倒すよう、 木のひげに頼まれた。
@@ -75,3 +75,30 @@ qst_oath_of_vengeance|復讐の誓い
 qst_oath_of_vengeance_text|{s1}の死に大いに怒ったあなたは、 {s2}の軍勢に対する復讐を誓った。 あなたはこれからの数日間、 できるだけ多くの{s2}の部隊を 殲滅しなければならない。 多くの部下があなたの誓いを目撃しているため、 失敗すれば、 誓いを破った者として 汚名を着せられることになるだろう。 さあ血の狂乱を始めるのだ！
 qst_deliver_gift|{s2}からの{s1}の{s4}を、 {s3}に届けよ
 qst_deliver_gift_text|{s2}からの{s1}の{s4}を、 {s3}に届けるように頼まれた。
+; qst_ring_hunters|Ring Hunters
+; qst_ring_hunters2|Ring Hunters - Completed
+; qst_deliver_message_hobbit|Concerning Hobbits
+; qst_blank_quest_01|Defend Refugees
+; qst_blank_quest_02|Hunt Down Refugees
+; qst_blank_quest_03|Sea Battle
+; qst_blank_quest_04|Kill {s35} {s36}
+; qst_blank_quest_05|Kill {s35} {s36} troops.
+
+
+
+
+
+
+
+
+
+
+; qst_blank_quest_16|Reinforce Center
+; qst_blank_quest_17|Slay {reg22} {s6} in battles
+
+
+
+
+; qst_guardian_party_quest|Isengard's Last Stand
+; qst_quests_end|Quests End
+; qst_quests_end_text|.

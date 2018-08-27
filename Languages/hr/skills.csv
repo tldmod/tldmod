@@ -4,10 +4,10 @@ skl_leadership|Vodstvo
 skl_leadership_desc|Svaki dodatni bod povećava broj vojnika kojima možeš zapovijedati za 5, povećava moral tvoje družine i smanjuje plaću vojnika za 5 % ( Vješina Vođe)
 skl_prisoner_management|Upravljanje zatvorenicima
 skl_prisoner_management_desc|Svaki dodatni nivo ove vještine povećava broj zatvorenika za %d. (Vještina Vođe)
-skl_persuasion|Nagovaranje
-skl_persuasion_desc|Ova vještina  pomaže da drugi ljudi prihvate tvoj pogled.  (Osobna vještina)
-skl_engineer|Obrtništvo
-skl_engineer_desc|Svaki dodatni bod ove vještine istodobno smanjuje vrijeme izrade i unaprijeđenja opreme, te omogućava kvalitetniju nadogradnju. (Vještina družine)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Prva pomoć
 skl_first_aid_desc|Junacima se vraća 5 % po vještini nivoa bodova otpornosti izgubljenih za vrijeme misije. (vještina družine)
 skl_surgery|Kirurgija

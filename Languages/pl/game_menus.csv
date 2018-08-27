@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^O co walczysz?
 mno_start_good|ŚWIT nowej Ery
 mno_start_evil|ZMIERZCH Ludzi
 mno_go_bback|Wróć
-menu_start_phase_2|^^^^^Śródziemie. Cień rośnie na Wschodzie.^Wolne ludy gotują się do wojny, wojny której nie widziano od wieków.^Ludzie, Ely, Krasnoludy i Orkowie; wszyscy odegrają swoją rolę.^^Jaką, to się okaże... 
+menu_start_phase_2|^^^^^Śródziemie. Cień rozrasta się na wschodzie, ^a ciemne istoty wychodzą po to co dawno zostało schowane. ^Wolni ludzie szykują się do wojny jakiej nie widziano od wieków. ^Ludzie, Elfy, Krasnoludy i  Orki; Wszyscy odegrają swoją rolę. ^^Jaką część, jednak, to się jeszcze okaże... 
 mno_go_forth|Podążaj naprzód obraną przez Ciebie ścieżką...
 menu_start_game_3|^^^^^^^^Wybierz scenariusz:
 mno_custom_battle_scenario_1|            Potyczka, Gondor vs Harad
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|Test bitew troli.
 mno_warg_battle_scenario|Test walki wargów
 mno_build_your_own_scene|** Zbuduj własną scenę dla TLD **
 menu_tutorial|^^TLD posiada wiele nowych opcji niedostępnych w podstawowej wersji M&B. Część jest opisanych w manualu PDF. Aby poznać podstawy mechaniki M&B proszę skorzystać z samouczka zawartego w Native
+menu_tutorial|^^TLD posiada wiele nowych opcji niedostępnych w podstawowej wersji M&B. Część jest opisanych w manualu PDF. Aby poznać podstawy mechaniki M&B proszę skorzystać z samouczka zawartego w Native
+mno_tutorial_1|Tutorial #1: Podstawowe ruchy i wybór broni. {s1}
+mno_tutorial_2|Tutorial #2:Walka z tarczą. {s2}
+mno_tutorial_3|Tutorial #3: Walka bez tarczy. {s3}
+mno_tutorial_3b_door|kolejny poziom
+mno_tutorial_4|Tutorial #4: Jazda na koniu albo wargu. {s4}
+mno_tutorial_5|Tutorial #5: Dowodzenie grupą żołnierzy. {s5}
 mno_go_back_dot|Wróć.
 mno_action_view_troop_trees|Zobacz drzewka oddziałów.
 mno_view_upkeep_costs|Zobacz koszt utrzymania
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|Anuluj.
 menu_custom_battle_end|^^^^^^Bitwa skończona. {s1} Twój oddział zabił {reg5} wrogów, tracąc przy tym {reg6} ludzi.^Z twej ręki poległo {reg7} wrogów.
 mno_replay|Rozegraj bitwę ponownie
 mno_continue_dot|Dalej.
-menu_quick_battle_general_test|^^^Obecna bitwa: ^team A: {reg10} {s10}^^VS^^ team B: {reg11} {s11}
-mno_tAA|+5 Drużyna A
-mno_tAB|-5 Drużyna A
-mno_tAC|Wybierz jednostkę A
-mno_tBA|+5 Drużyna B
-mno_tBB|-5 Drużyna B
-mno_tBC|Wybierz jednostkę B
-mno_B|Zestaw 1
-mno_F|WALCZ!
 mno_dot_go_back|Powrót
-menu_quick_battle_troll|^^^^^^^^Wybierz swój scenariusz trola:
-mno_troll_battle_scenario_10|Troll vs Piechota
-mno_troll_battle_scenario_11|Troll vs Łucznicy
-mno_troll_battle_scenario_12|Troll vs Kawaleria
-mno_troll_battle_scenario_13|Troll vs Lansjerzy 
-mno_troll_battle_scenario_14|Troll vs Troll
-mno_troll_battle_scenario_15|Troll kontrolowany przez gracza
-menu_quick_battle_wargs|^^^^^^^^Wybierz swój testowy scenariusz warga:
-mno_warg_battle_scenario_10|Przeciwko wargowi: 1 vs 1
-mno_warg_battle_scenario_11|Przeciwko wargom: 2 vs 3
-mno_warg_battle_scenario_12|Przeciwko wargom: wielu na wielu
-mno_warg_battle_scenario_10b|Graj wargiem: 1 vs 1
-mno_warg_battle_scenario_11b|Graj wargiem: 2 vs 3
-mno_warg_battle_scenario_12b|Graj wargiem: wielu vs wielu
 menu_start_good|^^^^^^^^^^Wybierz rasę:
 mno_start_ma|CZŁOWIEK
 mno_start_el|ELF
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^Twoja płeć?
 mno_start_male|Mężczyzna
 mno_start_female|Kobieta
 mno_proc|Postępować normalnie.
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|Dalej...
 menu_character_report|^^^^^Morale oddziału: {reg8}^Limit wielkości oddziału: {reg7}^
 menu_camp|^^^^Rozbijasz obóz.{s2}^^Co chcesz zrobić?
@@ -127,8 +115,10 @@ mno_camp_wait_here|Odpocząć przez jakiś czas.
 mno_camp_options|Zmień opcje TLD.
 mno_Cheat_enable|Włącz oszustwa/tryb moderski
 menu_game_options|^^^^^^^^Naciśnij opcję aby ją zmienić:
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|Restrykcje przedmiotów: {s7}
 mno_game_options_formations|Formacje bitewne oraz AI: {s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|NPC zawsze dostępni z poziomu menu miasta: {s7}
 mno_game_options_cutscenes|Cutscenki: {s7}
 mno_game_options_injuries|Urazy dla towarzyszy: {s7}.
@@ -136,11 +126,16 @@ mno_game_options_death|Permanentna śmierć dla lordów i towarzyszy: {s7}.
 mno_game_options_death2|Permanentna śmierć dla gracza (to jesteś TY!): {s7}.
 mno_game_options_morale|System bitewnych morale: {s7}
 mno_game_options_animal_ambushes|Zwierzęce zasadzki: {s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|Usprawnienia rozgrywki...
 mno_game_options_back|Wróć do menu obozu.
+mno_game_options_start_back|Wróć.
 menu_camp_tweaks|^^^^^^^^Wybierz opcję, którą chcesz dostosować.
 mno_tweak_options_compat|Usprawnienia zgodności...
 mno_tweak_options_strat|Usprawnienia strategii...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|Wróć do menu opcji.
 menu_camp_compat_tweaks|^^^^^^^^Kliknij opcję, aby zmienić (przytrzymaj shift, aby zmniejszyć):^(te opcje mają poprawić wydajność i nie są oszustwem)
 mno_game_options_compat_party|Maksymalna liczba grup: {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Kliknij opcję, aby zmienić:^(Ostrzeżenie: to s
 mno_strat_tweaks_siege_reqs|Siła wymagana do oblężenia: {s7}
 mno_strat_tweaks_siege_relax_rate|Prędkość odnawiania siły oblężenia: {reg1}
 mno_strat_tweaks_regen_rate|Szybkość regeneracji siły: {s7}
-mno_strat_tweaks_siege_regen_limit|Frakcje nie zregenerują się poniżej: {reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|Szybkość zdobywania wpływów : {s7} Normal-Normalna Doubled-Podwójna Tripled-Potrójna Quadrupled-Poczwórna
 mno_strat_tweaks_rank_gain_rate|Szybkość zdobywania rangi : {s7} Normal-Normalna Doubled-Podwójna Tripled-Potrójna Quadrupled-Poczwórna
 mno_strat_tweaks_back|Wróć do menu ulepszeń.
@@ -165,7 +160,7 @@ mno_be_quiet|Połóż broń na ziemi i bądź cicho! A teraz wynoś sie stąd!
 mno_be_bold|Dalej! Nie lękam się roślin i starych mitów!
 mno_fight_back|Przekonajmy się! Przeszukajcie okolicę! Spalcie parę drzew!
 menu_fangorn_search_fails|^^^^^^Przeszukujesz  gęsty, mroczny las, ale nic nie znajdujesz.^Jednakże, czujesz się obserwowany, a poczucie niebezpieczeństwa narasta.
-menu_fangorn_battle_debrief_won|^^^Znakomite zwycięstwo!^^^A więc to jest odpowiedź na Fangoriańskie mity...
+menu_fangorn_battle_debrief_won|^^^Znakomite zwycięstwo!^^^Teraz rozumiem o co chodziło z tymi Fangoriańskimi mitami...
 menu_fangorn_killed_player_only|^^^^^^Podróżujesz przez mroczny, gęsty las.^Nagle zostajesz przez coś uderzony! Może gałąź spadła Ci na głowę?^Leżysz nieprzytomny przez parę minut. Jesteś ciężko ranny, lecz wciąż możesz iść dalej.
 mno_ow_get_out|Ahh! Wydostańmy się z tego przeklętego miejsca!
 menu_fangorn_killed_troop_and_player|^^^^^^Podróżujesz przez mroczny, gęsty las.^^Nagle zostajesz przez coś uderzony! Być może ciężka gałąź spadła Ci na głowę?^^Po długich minutach w końcu dźwigasz się na nogi, jednakże nie wszyscy twoi ludzie mieli tyle szczęścia.^^
@@ -188,9 +183,11 @@ mno_leave|Odejdź.
 menu_simple_encounter|^^^^^{s2}^Masz {reg22} ludzi zdolnych do walki przeciwko {reg11}.^^Bitwa ma miejsce w {s3}{s4}^^Twe rozkazy?
 mno_encounter_attack|{reg21?Ruszamy na nich:Przygotować się do walki}.
 mno_encounter_order_attack|Rozkaż swoim oddziałom {reg21?zaatakować:stawić im czoła}, ty zaś zaczekaj na tyłach.
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Rusz w ich kierunku łamiąc {s4}.
 mno_encounter_leave|Wycofaj się.
 mno_encounter_retreat|Wycofaj się, zostawiając kilku żołnierzy, by osłaniali twój odwrót.
+mno_hide_close|Dalej...
 menu_encounter_retreat_confirm|^^^^^Jako członek oddziału z najwyższymi umiejętnościami taktycznymi,   ({reg2}), {reg3?obmyślasz:{s3} obmyśla} plan, który pozwoli tobie i twoim ludziom uciec, ratując życie. Będziesz musiał jednak zostawić {reg4} żołnierzy, by powstrzymać wroga od ruszenia w pościg.
 mno_leave_behind|Dalej. Poświęcenie tych kilku ludzi ocali resztę.
 mno_dont_leave_behind|Nie. Nikogo nie zostawimy.
@@ -212,6 +209,7 @@ mno_inspect_troll|Zbadaj powalonego trolla
 menu_pre_join|^^^^^Natrafiasz na zaciekłą bitwę, w której walczą {s2} i {s1}. Decydujesz się...
 mno_pre_join_help_attackers|Wspomóc atakujących. {s2} potrzebują pomocy.
 mno_pre_join_help_defenders|Pomóc atakowanym ({s1}) i wesprzeć ich w obronie.
+mno_pre_join_help_refugees|Pomóc atakowanym ({s1}) i wesprzeć ich w obronie.
 mno_pre_join_leave|Nie mieszać do tej walki.
 menu_join_battle|^^^{s2} wznoszą bojowy okrzyk widząc, jak ruszasz im na pomoc. {s1} muszą się teraz zmierzyć z waszymi połączonymi siłami.^ Macie łącznie {reg10} żołnierzy przeciwko {reg11} żołnierzom wroga.
 mno_join_attack|Zaatakuj wroga.
@@ -233,7 +231,7 @@ menu_besiegers_camp_with_allies|{s1} jest pod oblężeniem wojsk, którymi dowod
 mno_talk_to_siege_commander| Zażądaj spotkania z dowódcą.
 mno_join_siege_with_allies|Przyłącz się do następnego ataku na mury.
 mno_join_siege_stay_back|Rozkaż swoim żołnierzom, by bez ciebie przyłączyli się do następnego ataku.
-menu_moria_must_escape|^^The book is actually a copy of PLAY DWARF!^^^Specifically, a special issue on ''Big Breasts in Blonde Beards''.^Fascinating! You casually wander around reading it.^When you finish, you are lost deep in moria.
+menu_moria_must_escape|^^Książka zdaje się przedstawiać rezultat ostatniej próby skolonizowania Morii przez krasnoludów. Próby która ewidentnie skończyła się śmiercią wszystkich w nią zaangażowanych. Przeglądając książkę natrafiasz na słowa "prawdziwe srebro"! Studiując ją dowiadujesz się że jest to część opisu krasnoludzkich skrzyń znajdujących się gdzieś na niższych poziomach Morii. Hah! Nie byłoby cudownie odnaleźć dawno zaginiony krasnoludzki mithril?  ^Pospiesznie podążasz za instrukcjami, najpierw krętym tunelem a potem w dół...  ^...^Po kilku godzinach bezowocnego poszukiwania spostrzegasz, że jesteś zagubiony w głębinach Morii i musisz odnaleźć wyjście.
 mno_moria_exit_scene|Znajdź drogę powrotną!
 menu_castle_outside|W pobliżu znajduje się {s2}.{s11} {s3} {s4}
 mno_moria_enter|Wróć do głównej sali Morii przez sekretne wejście.
@@ -286,6 +284,7 @@ mno_isengard_underground|Udaj się do podziemnych jaskini.
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
 mno_town_leave|Odejdź...
 mno_town_leave_door|Wyjdź
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|Chcesz opuścić statek?
 mno_disembark_yes|Tak.
 mno_disembark_no|Nie.
@@ -299,16 +298,16 @@ mno_sneak_caught_fight|Spróbuj wywalczyć sobie drogę odwrotu!
 mno_sneak_caught_surrender|Poddaj się.
 menu_sneak_into_town_caught_dispersed_guards|Pokonujesz straże i zacierasz ślady przed rozpoczęciem ucieczki. Łatwo udaje ci się zgubić resztę pogoni w labiryncie uliczek.
 menu_sneak_into_town_caught_ran_away|Zostawiasz miasto za sobą i uciekasz na wzgórza.
-menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \\ You shiver, as all the world goes black around you...^Is this your end?
+menu_tld_player_defeated|^^^^^Nagle w tyle swojej głowy odczuwasz przerażający ból! \\ Trzęsiesz się a świat dookoła ciebie zaczyna blaknąć...^Czy to jest twój koniec?
 menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
 menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lieing on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^By who knows what underground river you must have been carried on the surface.
 mno_whatever|Wstawaj
 menu_recover_after_death_default|^^^^^You regain your conciousness. You are in the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.  You get up and try to look for any other survivors from your party.
-menu_recover_after_death_town|^^^^You regain your conciousness and find yourself near the town boundary.   You are alive!  Nobody is around and you take jour chance to drag yourself outside the town.  It seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.
+menu_recover_after_death_town|^^^^Odzyskujesz świadomość. Znajdujesz się na obrzeżach miasta i wciąż żyjesz. Nikogo nie ma w pobliżu dlatego podnosisz się i wydostajesz z miasta. Wygląda na to że żadna z ran nie była śmiertelna i mimo że czujesz się paskudnie to wciąż możesz chodzić.
 menu_recover_after_death_town_alone|You regain your conciousness and find yourself near the town boundary.   You are alive!  Nobody is around and you take jour chance to drag yourself outside the town. Your companions find you. It seems that none of your wound were lethal,  and altough you feel awful, you find out that can still walk.
 menu_notification_center_under_siege|{s1} jest pod oblężeniem wrogich oddziałów, którymi dowodzi {s2} ({s3})!
 menu_notification_one_side_left|^^^^^Wojna o Pierścień się skończyła!^^{s1} pokonuje wszystkich swych przeciwników!
-menu_notification_total_defeat|^^^^^Wojna o Pierścień skończyła się dla ciebie!^^The {s1} have been defeated by their enemies and you stand alone in defeat!
+menu_notification_total_defeat|^^^^^Dla Ciebie to już koniec Wojny o Pierścień!^^{s1} został pokonany przez swoich wrogów i pozostajesz jedynym przegranym!
 menu_notification_your_faction_collapsed|^^^^^Your {s11} homeland was defeated!^Still, other allies remain in the War. You, togheter with anyone left from {s11}, can still help your side win.
 menu_notification_faction_defeated|^^^^^Pokonano {s1}!^{s1} już nie istnieje!
 menu_ruins|^^^^You approach the {s1}. A once strong encampment was razed to the ground, though you can still see traces of fortifications and scattered rusty weapons.
@@ -317,8 +316,19 @@ mno_explore|Zbadaj to miejsce.
 menu_ring_hunter_lair|^^^^Podążałeś za Łowcami Pierścienia przez las Mirkwood i dotarłeś do {s1}. Widzisz ich przygotowujących się do opuszczenia z skrzynią.
 mno_attack_lair|Zaatakuj teraz.
 mno_leave_bandit_lair|Odejdź.
-menu_starting_quest_good|^^^^^^You spot a small caravan under attack from a band of orcs. What will you do?
-mno_help|Pomóż nieznajomym!
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+mno_gondor_reinforcement_event_close|Zamknij
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|Odejdź...
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+mno_player_added_to_war_council_close|Zamknij
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+mno_player_added_to_siege_reports_close|Zamknij
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+mno_player_added_to_allow_follow_close|Zamknij
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+mno_center_besieged_event_close|Zamknij
+mno_intro_next|Dalej...
 mno_start_defend_caravan|Broń karawany!
 mno_start_raid_caravan|Napadnij na karawanę!
 mno_start_ambush_orcs|Napadnij na Orków!
@@ -326,8 +336,30 @@ mno_start_kill_scouts|Powstrzymaj zwiadowców przed ostrzeżeniem o twoim przyby
 mno_go_your_way|Zostaw ich samych
 mno_defend_villagers|Broń mieszkańców wioski!
 mno_raid_villagers|Splądruj wioskę!
-mno_go_away|Leave them alone
-menu_custom_battle_choose_faction1|^^^^^^^^^^Wybierz swoją frakcję:
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|Dalej...
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|Wyślij wiadomość, że wkrótce do niego dołączysz
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|Dobra frakcja.
 mno_bad_equal|Wroga frakcja
 mno_replay_prev|Przywróć poprzednie ustawienia
@@ -365,12 +397,12 @@ menu_burial_mound_oath|Głośno przysięgasz pomścić śmierć {s4}.   Będzies
 menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
 menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Odejdź od stosu.
-menu_town_ruins|When you approach, you see that {s1} is {s2}
-mno_ruin_menu_0|Explore the place.
+menu_town_ruins|W momencie gdy się zbliżasz, zauważasz, że {s1} to {s2}
+mno_ruin_menu_0|Zbadaj to miejsce.
 mno_ruin_leave|Wyjdz...
 menu_death|Powinieneś być martwy. Chociaż wojna wciąż trwa, ty nie jesteś już jej częścią.
 menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, kiedy nagle...
-menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy atakujący leżeli na ziemi - ranni, lub martwi. {s3}
+menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy przeciwnicy leżą na ziemi - ranni, lub martwi. {s3}
 menu_animal_ambush_fail|Zwierzęta zaatakowały ciebie {reg0?,: i twojego kompana {reg2?s,:,}} ale na szczęście udało ci się je odgonić. Miejmy nadzieję że nie zaatakują cie ponownie.
 menu_build_your_scene|Tutaj możesz zbudować własną scenę walki, używając jednego ze slotów zamieszczonych poniżej i trybu edycji (musisz najpierw zmienić tryb edycji na Włączony w menu opcji w panelu startowym M&B).
 mno_scene1|Pole Bitwy 5 (plik scn battlefield5.sco)

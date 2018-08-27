@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^你為哪一方而戰?
 mno_start_good|新紀元的黎明
 mno_start_evil|人類的黃昏
 mno_go_bback|返回
-menu_start_phase_2|^^^^^ 中土世界. 黑暗的陰影正在東方蔓延, ^潛伏了近一個紀元的邪惡勢力重現世間. ^中土的自由之人類是否可以再一次戰勝黑暗. ^人類, 精靈, 矮人和獸人, 各種勢力在這裡繼續角逐^^現在, 正義與邪惡的戰爭即將拉開帷幕...
+; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
 mno_go_forth|向你選擇的路前進吧...
 menu_start_game_3|^^^^^^^^選擇你的戰役:
 mno_custom_battle_scenario_1|小規模戰役, 剛鐸VS哈拉德.
@@ -18,6 +18,13 @@ mno_troll_battle_scenario|巨魔測試戰
 mno_warg_battle_scenario|座狼測試戰
 mno_build_your_own_scene|**建立你自己的TLD場景**
 menu_tutorial|^^ TLD有部分功能是M＆乙所沒有的. 一些細節可以在遊戲提示中看到. 遊戲教程同原版一樣. 
+menu_tutorial|^^ TLD有部分功能是M＆乙所沒有的. 一些細節可以在遊戲提示中看到. 遊戲教程同原版一樣. 
+; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
+; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
+; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
+; mno_tutorial_3b_door|next level
+; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|返回.
 mno_action_view_troop_trees|查看兵种树。
 mno_view_upkeep_costs|查看維修費用.
@@ -33,30 +40,7 @@ mno_leave_custom_battle_2|取消.
 menu_custom_battle_end|^^^^^^戰鬥結束. {s1} 你的隊伍殺死了{reg5}人, 敵人的隊伍殺死了{reg6}人. 你殺死了{reg7}人.
 mno_replay|重新開始這場戰鬥
 mno_continue_dot|繼續.
-menu_quick_battle_general_test|^^^當前戰鬥: ^隊伍 A: {reg10} {s10}^^對戰^^隊伍 B: {reg11} {s11}
-mno_tAA|+5 隊伍 A
-mno_tAB|-5 隊伍 A
-mno_tAC|選擇部隊 A
-mno_tBA|+5 隊伍 B
-mno_tBB|-5 隊伍 B
-mno_tBC|選擇部隊 B
-mno_B|預置1
-mno_F|開始戰鬥!
 mno_dot_go_back|. 返回
-menu_quick_battle_troll|^^^^^^^^選擇你的食人魔場景:
-mno_troll_battle_scenario_10|測試: 巨魔 vs 步兵
-mno_troll_battle_scenario_11|測試: 巨魔 vs 射手
-mno_troll_battle_scenario_12|測試: 巨魔 vs 騎兵
-mno_troll_battle_scenario_13|測試: 巨魔 vs 槍騎兵
-mno_troll_battle_scenario_14|測試: 巨魔 vs 巨魔
-mno_troll_battle_scenario_15|玩具測試: 玩家控制巨魔
-menu_quick_battle_wargs|^^^^^^^^選擇你的戰役測試場景:
-mno_warg_battle_scenario_10|對抗座狼: 1 vs 1
-mno_warg_battle_scenario_11|對抗座狼: 2 vs 3
-mno_warg_battle_scenario_12|對抗座狼: 很多 vs 很多
-mno_warg_battle_scenario_10b|遊玩座狼: 1 vs 1
-mno_warg_battle_scenario_11b|遊玩座狼: 2 vs 3
-mno_warg_battle_scenario_12b|遊玩座狼: 很多 vs 很多
 menu_start_good|^^^^^^^^^^選擇你的種族:
 mno_start_ma|人類
 mno_start_el|精靈
@@ -117,6 +101,10 @@ menu_choose_gender|^^^^^^^^^^你的性別?
 mno_start_male|男人
 mno_start_female|女人
 mno_proc|正常進行
+; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+; mno_start_default|Become a {s23} (Default)
+; mno_start_up1|Become a {s21} (Easy)
+; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
 mno_continue|繼續...
 menu_character_report|^^^^^部隊士氣: {reg8}^部隊人數上限: {reg7}^{s5}
 menu_camp|^^^^您現在的位置 {s1}.{s2}^^你想要做什麼
@@ -127,8 +115,10 @@ mno_camp_wait_here|在這裡待一會兒.
 mno_camp_options|更改TLD選項. 
 mno_Cheat_enable|啟用作弊/模組選項.
 menu_game_options|^^^^^^^^點擊更換選項:
+; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 mno_game_options_restrict_items|戰利品繳獲限制: {s7}
 mno_game_options_formations|戰鬥陣型與AI: {s7}
+; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
 mno_game_options_town_menu|城鎮NPC一開始就顯示: {s7}
 mno_game_options_cutscenes|過場動畫: {s7}
 mno_game_options_injuries|同伴會受傷: {s7}.
@@ -136,11 +126,16 @@ mno_game_options_death|領主和NPC可能會死: {s7}.
 mno_game_options_death2|玩家可能會死 (這是你自己!): {s7}.
 mno_game_options_morale|戰鬥士氣系統: {s7}
 mno_game_options_animal_ambushes|動物伏擊: {s7}
+; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
 mno_game_options_tweaks|遊戲的調整......
 mno_game_options_back|回到營地菜單
+mno_game_options_start_back|返回.
 menu_camp_tweaks|^^^^^^^^選擇一個你想調整的選項.
 mno_tweak_options_compat|兼容性調整...
 mno_tweak_options_strat|戰略調整...
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_tweak_options_back|回到選項菜單.
 menu_camp_compat_tweaks|^^^^^^^^點擊要更改的選項 (同時按住shift鍵為下降):^(這是調整兼容性 , 不是作弊)
 mno_game_options_compat_party|最大部隊規模: {s1}
@@ -149,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^點擊切換選項:^(警告: 這屬於作弊!)
 mno_strat_tweaks_siege_reqs|攻城勢力力量的要求: {s7}
 mno_strat_tweaks_siege_relax_rate|圍攻的強度 ,  需求 , 放鬆程度: {reg1}
 mno_strat_tweaks_regen_rate|勢力力量再生速度: {s7}
-mno_strat_tweaks_siege_regen_limit|勢力力量低於多少將不再回复: {reg1}
+; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
 mno_strat_tweaks_influence_gain_rate|收益率影響: {s7}
 mno_strat_tweaks_rank_gain_rate|收益率排名: {s7}
 mno_strat_tweaks_back|返回調整菜單.
@@ -188,9 +183,11 @@ mno_leave|返回.
 menu_simple_encounter|^^^^^{s2}^你的 {reg22} 名士兵與 {reg11} 個敵軍在 {s3}{s4} 展開對決. 請下達命令!
 mno_encounter_attack|{reg21?攻擊:準備迎敵}.
 mno_encounter_order_attack|你坐鎮指揮命令你的部下 {reg21?攻擊:迎敵}
+; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|衝向 {s4}.
 mno_encounter_leave|脫離.
 mno_encounter_retreat|留下一些部隊 , 拖住敵軍 , 好讓主力撤退.
+mno_hide_close|繼續...
 menu_encounter_retreat_confirm|^^^^^隊伍中最高戰術技能為, ({reg2}) 級 , 因此 {reg3?你制定:{s3}制定} 了一個計劃 , 來讓你的主力部隊能逃脫戰鬥. 但是你必須犧牲 {reg4} 名戰士來進行掩護.
 mno_leave_behind|實行計劃. 犧牲那些人來拯救主力部隊.
 mno_dont_leave_behind|不. 我們不會拋棄任何人.
@@ -212,6 +209,7 @@ mno_inspect_troll|查看被擊倒的巨魔
 menu_pre_join|^^^^^你遇到 {s2} 正在攻擊 {s1}. 你決定...
 mno_pre_join_help_attackers|對 {s2} 施以援手.
 mno_pre_join_help_defenders|對 {s1} 施以援手.
+mno_pre_join_help_refugees|對 {s1} 施以援手.
 mno_pre_join_leave|不卷入紛爭.
 menu_join_battle|^^^你決定幫助 {s2} 對抗 {s1}.^ 你將有 {reg22} 名士兵參加戰鬥對抗 {reg11} 個敵人.^^這次戰鬥在 {s3}{s4} 展開.
 mno_join_attack|攻入敵陣.
@@ -286,6 +284,7 @@ mno_isengard_underground|前往地下溶洞.
 mno_tirith_toplevel|爬上頂層.
 mno_town_leave|離開...
 mno_town_leave_door|離開區域
+; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
 menu_disembark|想上岸嗎?
 mno_disembark_yes|是
 mno_disembark_no|否
@@ -317,8 +316,19 @@ mno_explore|探索這個地方.
 menu_ring_hunter_lair|^^^^你跟随魔戒猎手们的踪迹穿越了幽暗密林到达了{s1}。你看到他们正准备留下一个箱子。
 mno_attack_lair|马上攻击他们
 mno_leave_bandit_lair|立即离开
-menu_starting_quest_good|^^^^^^你看到一支小商隊正被一隊半獸人攻擊. 你決定怎麼做?
-mno_help|幫助陌生人!
+; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+mno_gondor_reinforcement_event_close|关闭
+; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+mno_gondor_beacons_close|離開...
+; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+mno_player_added_to_war_council_close|关闭
+; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+mno_player_added_to_siege_reports_close|关闭
+; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+mno_player_added_to_allow_follow_close|关闭
+; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+mno_center_besieged_event_close|关闭
+mno_intro_next|繼續...
 mno_start_defend_caravan|保护这支商队！
 mno_start_raid_caravan|掠夺这支商队!
 mno_start_ambush_orcs|伏击这些半兽人！
@@ -326,8 +336,30 @@ mno_start_kill_scouts|阻止侦察兵报告你的到来！
 mno_go_your_way|別理他們
 mno_defend_villagers|保护这些村民！
 mno_raid_villagers|掠夺村庄！
-mno_go_away|別理他們
-menu_custom_battle_choose_faction1|^^^^^^^^^^選擇你的陣營和優勢:
+; mno_go_away|Leave and regroup for now.
+; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+; mno_attack_scout_camp|Attack the Scout Camp!
+; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+; mno_sb_defend_the_town|Board them! Destroy their fleet!
+; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
+; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
+; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
+; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
+; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_defend_refugees|Keep your eye out for raiders...
+; mno_attack_refugees|Attack the refugee train...
+; mno_leave_refugees|Leave them for now...
+mno_evil_war_tut_continue|繼續...
+; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_send_word|寄信 , 很快你會加入他.
+; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+; mno_training_continue|Begin training...
+; menu_alternate_training_conclusion|{s5}
+; mno_alternate_training_retry|Try again...
+; mno_alternate_training_finish|Leave the arena...
+; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_good_equal|正義陣營
 mno_bad_equal|邪惡陣營
 mno_replay_prev|重選之前的設置

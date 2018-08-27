@@ -4,10 +4,10 @@ skl_leadership|Лідерство
 skl_leadership_desc|З кожним новим рівнем цієї навички кількість людей, якими ви можете командувати, збільшується на 5, піднімається бойовий дух, а витрати на армію знижуються на 5 %% (вміння лідера).
 skl_prisoner_management|Утримання полонених
 skl_prisoner_management_desc|З кожним новим рівнем цієї навички максимальне число полонених збільшується на%d (вміння лідера).
-skl_persuasion|Переконання
-skl_persuasion_desc|Це вміння допомагає вам схиляти людей на свою сторону (приватне вміння).
-skl_engineer|Ремесло
-skl_engineer_desc|Кожен новий рівень цієї навички зменшує час виготовлення та поліпшення екіпіровки і дозволяє здійснювати ці поліпшення більш якісно (вміння групи).
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Перша допомога
 skl_first_aid_desc|Кожен новий рівень цієї навички відновлює у героїв 5 %% здоров'я, втраченого при виконанні завдання (вміння групи).
 skl_surgery|Хірургія

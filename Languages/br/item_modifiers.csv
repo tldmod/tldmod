@@ -1,12 +1,12 @@
 imod_plain|Plaenenn %s
-imod_cracked|Frailh %s
-imod_rusty|Merglet %s
+imod_cracked|Paour %s
+imod_rusty|Krai %s
 imod_bent|Pleget %s
 imod_chipped|Ourlet %s
 imod_battered|Gwallgaset %s
 imod_poor|Paour %s
-imod_crude|Krai %s
-imod_old|Kozh %s
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|Marc'had-mat %s
 imod_fine|Mat %s
 imod_well_made|Graet mat %s
@@ -20,14 +20,14 @@ imod_heavy|Ponner %s
 imod_strong|Kreñv %s
 imod_powerful|Galloudus %s
 imod_tattered|Drailhet %s
-imod_ragged|Labastenneg %s
+imod_ragged|Garv %s
 imod_rough|Garv %s
 imod_sturdy|Bagol %s
-imod_thick|Stank %s
+; imod_thick|Robust %s
 imod_hardened|Kaletaet %s
 imod_reinforced|Kreñvaet %s
 imod_superb|Dibar %s
-imod_lordly|Brokus %s
+imod_lordly|Labour-mestr %s
 imod_lame|Gwan %s
 imod_swaybacked|Rodennet %s
 imod_stubborn|Penn-kallet %s

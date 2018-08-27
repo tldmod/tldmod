@@ -4,10 +4,10 @@ skl_leadership|Лидерство
 skl_leadership_desc|Всяка точка повишава максималния брой войска, която можете да командване, с 5. Повишава духа и намалява заплатите на войската с 5%%. (Лидерско умение) 
 skl_prisoner_management|Управление на затворниците
 skl_prisoner_management_desc|Всяко ниво от умението увеличава максималния брой затворници с %d. (Лидерско умение) 
-skl_persuasion|Убеждаване
-skl_persuasion_desc|Това умение помага другите хора да приемат вашата гледна точка. (Лично умение)
-skl_engineer|Изработване
-skl_engineer_desc|Всяка точка на това умение намалява времето изработване на оборудване и позволява по-качествени подобрения. (Парти умение)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Бърза помощ
 skl_first_aid_desc|Героите си възвръщат 5%% изгубени жизнени точки на всяко ниво от умението. (Парти умение)
 skl_surgery|Хирургия

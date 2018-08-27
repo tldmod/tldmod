@@ -1,3 +1,4 @@
+
 str_yes|Tak.
 str_no|Nie.
 str_noone|nikt
@@ -19,10 +20,52 @@ str_flip_vertical|Obróć Pionowo
 str_hold_fire|Wstrzymać Ogień
 str_blunt_hold_fire|Broń Obuchowa / Wstrzymać Ogień
 str_tutorial_ammo_refilled|Amunicja uzupełniona.
-str_custom_battle_1|Kapitan Malvogil podróżuje wraz z kompanią Gondoru gdy nagle trafia na posiłki Haradu. Wznosi okrzyk bojowy, spina konia i rusza naprzód, prowadząc swych ludzi do szaleńczej walki.
-str_custom_battle_2|Celeborn z Lothlorien dowodzi patrolem złożony z jeźdźców i łuczników, kiedy przedni punkt obserwacyjny przynosi ostrzeżenie o zbliżających się siłach popielatych złych ludzi. To przerażający Czarni Numenorejczycy! Nie widziano ich w pobliżu Lothlorien od wieków, ale teraz muszą zostać wypędzeni z powrotem do świata nicości.
+; str_tutorial_failed|You have been beaten this time, but don't worry. Follow the instructions carefully and you'll do better next time. Press the Tab key to return to to the menu where you can retry this tutorial.
+; str_tutorial_1_msg_1|In this tutorial you will learn the basics of movement and combat. In Mount&Blade you use the mouse to control where you are looking, and the WASD keys of your keyboard to move. Your first task in the training is to locate the flag in the room and move over it. You can press the Tab key at any time to quit this tutorial or to exit any other area in the game. Go to the flag now.
+; str_tutorial_1_msg_2|Well done. Next we will cover attacking with weapons. For the purposes of this tutorial you have been equipped with bow and arrows, a sword and a shield. You can draw different weapons from your weapon slots by using the scroll wheel of your mouse. In the default configuration, scrolling up pulls out your next weapon, and scrolling down pulls out your shield. If you are already holding a shield, scrolling down will put your shield away instead. Try changing your wielded equipment with the scroll wheel now. When you are ready, go to the flag to move on to your next task.
+; str_tutorial_1_msg_3|Excellent. The next part of this tutorial covers attacking with melee weapons. You attack with your currently wielded weapon by using your left mouse button. Press and hold the button to ready an attack, then release the button to strike. If you hold down the left mouse button for a while before releasing, your attack will be more powerful. Now draw your sword and destroy the four dummies in the room.
+; str_tutorial_1_msg_4|Nice work! You've destroyed all four dummies. You can now move on to the next room.
+; str_tutorial_1_msg_5|As you see, there is an archery target on the far side of the room. Your next task is to use your bow to put three arrows into that target. Press and hold down the left mouse button to notch an arrow. You can then fire the arrow by releasing the left mouse button. Note the targeting reticule in the centre of your screen, which shows you the accuracy of your shot. In order to achieve optimal accuracy, let fly your arrow when the reticule is at its smallest. Try to shoot the target now.
+; str_tutorial_1_msg_6|Well done! You've learned the basics of moving and attacking. With a little bit of practice you will soon master them. In the second tutorial you can learn more advanced combat skills and face armed opponents. You can press the Tab key at any time to return to the tutorial menu.
+; str_tutorial_2_msg_1|This tutorial will teach you how to defend yourself with a shield and how to battle armed opponents. For the moment you are armed with nothing but a shield. Your task is not to attack, but to successfully protect yourself from harm with your shield. There is an armed opponent waiting for you in the next room. He will try his best to knock you unconscious, while you must protect yourself with your shield by pressing and holding the right mouse button. Go into the next room now to face your opponent. Remember that you can press the Tab key at any time to quit this tutorial or to exit any other area in the game.
+; str_tutorial_2_msg_2|Press and hold down the right mouse button to raise your shield. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
+; str_tutorial_2_msg_3|Well done, you've succeeded in defending against an armed opponent. The next phase of this tutorial will pit you and your shield against a force of enemy archers. Move on to the next room when you're ready to face the archers.
+; str_tutorial_2_msg_4|Defend yourself from arrows by raising your shield with the right mouse button. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
+; str_tutorial_2_msg_5|Excellent, you've put up a succesful defence against archers. There is a reward waiting for you in the next room.
+; str_tutorial_2_msg_6|In the default configuration, the F key on your keyboard is used for non-violent interaction with objects and humans in the gameworld. To pick up the sword on the altar, look at it and press F when you see the word 'Equip'.
+; str_tutorial_2_msg_7|A fine weapon! Now you can use it to deliver a bit of payback. Go back through the door and dispose of the archers you faced earlier.
+; str_tutorial_2_msg_8|Very good. Your last task before finishing this tutorial is to face the squire. Go through the door now and show him your steel!
+; str_tutorial_2_msg_9|Congratulations! You have now learned how to defend yourself with a shield and even had your first taste of combat with armed opponents. Give it a bit more practice and you'll soon be a renowned swordsman. The next tutorial covers directional defence, which is one of the most important elements of Mount&Blade combat. You can press the Tab key at any time to return to the tutorial menu.
+; str_tutorial_3_msg_1|This tutorial is intended to give you an overview of parrying and defence without a shield. Parrying attacks with your weapon is a little bit more difficult than blocking them with a shield. When you are defending with a weapon, you are only protected from one direction, the direction in which your weapon is set. If you are blocking upwards, you will parry any overhead swings coming against you, but you will not stop thrusts or attacks to your sides. Either of these attacks would still be able to hit you. That's why, in order to survive without a shield, you must learn directional defence. Go pick up up the axe now to begin practice.
+; str_tutorial_3_msg_2|By default, the direction in which you defend (by clicking and holding your right mouse button) is determined by the attack direction of your closest opponent. For example, if your opponent is readying a thrust attack, pressing and holding the right mouse button will parry thrust attacks, but not side or overhead attacks. You must watch your opponent carefully and only initiate your parry AFTER the enemy starts to attack. If you start BEFORE he readies an attack, you may parry the wrong way altogether! Now it's time for you to move on to the next room, where you'll have to defend yourself against an armed opponent. Your task is to defend yourself successfully for thirty seconds with no equipment other than a simple axe. Your axe's attacks are disabled for this tutorial, so don't worry about attacking and focus on your defence instead. Move on to the next room when you are ready to initiate the fight.
+; str_tutorial_3_msg_3|Press and hold down the right mouse button to defend yourself with your axe after your opponent starts his attack. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
+; str_tutorial_3_msg_4|Well done, you've succeeded this trial! Now you will be pitted against a more challenging opponent that will make things more difficult for you. Move on to the next room when you're ready to face him.
+; str_tutorial_3_msg_5|Press and hold down the right mouse button to defend yourself with your axe after your opponent starts his attack. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
+; str_tutorial_3_msg_6|Congratulations, you still stand despite the enemy's best efforts. The time has now come to attack as well as defend. Approach the door and press the F key when you see the word 'Go'.
+; str_tutorial_3_2_msg_1|Your axe's attacks have been enabled again. Your first opponent is waiting in the next room. Defeat him by a combination of attack and defence.
+; str_tutorial_3_2_msg_2|Defeat your opponent with your axe.
+; str_tutorial_3_2_msg_3|Excellent. Now the only thing standing in your way is one last opponent. He is in the next room. Move in and knock him down.
+; str_tutorial_3_2_msg_4|Defeat your opponent with your axe.
+; str_tutorial_3_2_msg_5|Well done! In this tutorial you have learned how to fight ably without a shield. Train hard and train well, and no one shall be able to lay a stroke on you. In the next tutorial you may learn horseback riding and cavalry combat. You can press the Tab key at any time to return to the tutorial menu.
+; str_tutorial_4_msg_1|Welcome to the fourth tutorial. In this sequence you'll learn about riding a horse/warg and how to perform various martial exercises on horseback. We'll start by getting you mounted up. Approach the horse, and press the 'F' key when you see the word 'Mount'.
+; str_tutorial_4_msg_2|While on horseback, the WASD keys control your horse's movement, not your own. Ride your horse and try to follow the flag around the course. When you reach the flag, it will move to the next waypoint on the course until you reach the finish.
+; str_tutorial_4_msg_3|Very good. Next we'll cover attacking enemies from horseback. Approach the flag now.
+; str_tutorial_4_msg_4|Draw your sword (using the mouse wheel) and destroy the four targets. Try hitting the dummies as you pass them at full gallop -- this provides an extra challenge, but the additional speed added to your blow will allow you to do more damage. The easiest way of doing this is by pressing and holding the left mouse button until the right moment, releasing it just before you pass the target.
+; str_tutorial_4_msg_5|Excellent work. Now let us try some target shooting from horseback. Go near the flag now.
+; str_tutorial_4_msg_6|Locate the archery target beside the riding course and shoot it three times with your bow. Although you are not required to ride while shooting, it's recommended that you try to hit the target at various speeds and angles to get a feel for how your horse's speed and course affects your aim.
+; str_tutorial_4_msg_7|Congratulations, you have finished this tutorial. You can press the Tab key at any time to return to the tutorial menu.
+; str_tutorial_5_msg_1|Welcome to the fifth and final tutorial, which gives you a brief overview of how to command troops in battle, one of the most important aspects in Mount & Blade.^^The first command menu that you have to learn are movement commands, which can be found by pressing the F1 key. Press that now and explore the many movement options you can give your troops in battle.^^For this first step, command your troops to follow you and move up the hill where the flag and pointer is.
+; str_tutorial_5_msg_2|Excellent. Your troops have followed you up the hill. Now you have a good view of the battlefield.^^This time, ask your troops to hold this hill by pressing the F1 command menu again, and selecting Hold this Position (F1).^^Once you have done that, you will notice your troops stop following you and hold the position you asked them to.^^This is a good time to learn the second command menu, which revolves around troop basic formations.^^This menu allows you to command your troops to tighten up their ranks, to hold against infantry charges, or spread apart to resist archer volleys.^^Commanding your troops to move forward or backward ten paces using this command menu allows your troops to move while keeping their formation.^^After exploring the different options, keep your troops holding this hill and move alone towards the opposite hill, where the flag and the pointer is.
+; str_tutorial_5_msg_3|Great. As you can see, your infantry is holding where you asked them to. Now, move towards the windmill by yourself.
+; str_tutorial_5_msg_4|Now you have archers join your command. In Mount & Blade, you can give separate commands to specific divisions of troops such as infantry, archers, and cavalry.^^Pressing the number keys will choose the division of your choice (1 for Infantry, 2 for Archers, 3 for Cavalry). You can then use the command menus that appear to command the specific division.^^Note that the choice will persist, and pressing any of the command menus (F1, F2, F3) will be for the last division chosen. Read the messages that appear on your screen to see which division is being commanded.^^Now, ask your Infantry to follow you, then ask your Archers to follow you too. Once they are all together, go back to the hill you came from.^^Once there, look for the pointer and command your infantry to move and hold there by pressing 1, then holding the F1 key to reveal a banner. You can use this to move your troops in a precise location of your choice.^^Ask your archers to move towards the flag behind the pointer, and on high ground.
+; str_tutorial_5_msg_5|Your men are in position, the enemies have gathered and are charging towards you. Use what you learned to maneuver your infantry forward in formation, or ask them to charge. Charging breaks all formations, and moves your troops towards the nearest enemies.^^You can also keep your archers above ground for a better vantage point, or also ask them to move elsewhere.^^You can also press F3 to reveal the third command menu and learn about the different weapon orders you can give your troops.
+; str_tutorial_5_msg_6|Excellent! You have completed your first field battle in Mount & Blade. Intelligent command of your troops in battle is paramount to your success as a commander in battle. Make sure to learn the different how to move your troops in advantageous positions.^^In The Last Days of the Third Age, there are complex formations for more advanced maneouvers such as Infantry Shieldwall and Cavalry Wedges. You can learn more about it in-game.^^You can press TAB anytime to leave the tutorial.
+; str_trainer_help_1|This is a training ground where you can learn the basics of the game. Use A, S, D, W keys to move and the mouse to look around.
+; str_trainer_help_2|To speak with the trainer, go near him, look at him and press the 'F' key when you see the word 'Talk' under his name. When you wish to leave this or any other area or retreat from a battle, you can press the TAB key.
+; str_custom_battle_1|Angbor the Fearless and his Gondor company intercepted a Harad reinforcement group. Shouting out his warcry, he spurs his horse forward, and leads his loyal men to a fierce battle.
+; str_custom_battle_2|Celeborn from Lorien is leading a patrol of horsemen and archers when a forward lookout brings a warning of a force of ash-faced evil men approaching. It's the dreaded Black Numenoreans! Those were not seen near Lothlorien for ages, but now they must be driven back to the neverworld.
 str_custom_battle_3|Lord Grimbold z Rohanu dowodzi ostatnią obroną na murach przeciw armii Isengardu. Teraz, gdy oblegający przygotowują się do ostatecznego ataku na mury, musi on utrzymać te mury z pomocą odwagi i jasnej stali.
-str_custom_battle_4|Kiedy zwiadowcy informują Lorda Beranhelma o obecności oddziału wojennego Rhunu, decyduje się szybko przygotować obronę obozu i utrzymać pozycje mimo wielkiej liczebności wroga.
+; str_custom_battle_4|When the scouts inform Lord Beranhelm of the approach of a Rhun war band, he decides to quickly prepare the defences of his camp and try to hold against superior numbers.
 str_custom_battle_5|Kapitan Ugluk przyprowadził swych niepohamowanych orków na zachód z obietnicą plądrowania. Jeśli rozbiją dziś krasnoludów ich pan w Barad-Dur będzie bardzo zadowolony.
 str_custom_battle_6|Grishnakh i jego orkowie nękali uciekający Elficki patrol. Ale szczęście nie może trwać wiecznie, i wygląda na to, że brudne elfy wezmą teraz odwet.
 str_custom_battle_7|Korsarze rozbili obóz na obrzeżach Gondoru! Jak śmieli. Zaatakuj ich nim otrzymają posiłki i zepchnij na powrót do morza.
@@ -204,7 +247,7 @@ str_persuasion_summary_very_bad|Starasz się jak najlepiej przedstawić sprawę,
 str_persuasion_summary_bad|Starasz się mówić przekonywująco, ale {reg51?a:} przechytrza cię od samego początku. Nawet twoje najlepsze argumenty brzmią pusto i niedorzecznie nawet dla ciebie. {s50}, też nie ma najlepszego zdania o ty, co masz do powiedzenia.
 str_persuasion_summary_average|{s50} okazuje się mieć bystry umysł oraz talent mówcy i nie udaje ci się podać ani jednego mocnego argumentu, którego {reg51?ona:on} by nie obalił{reg51?a:} racjonalnym myśleniem. W końcu, ani tobie, ani {reg51?jej:jemu} nie udaje się przekonać strony przeciwnej do swych racji.
 str_persuasion_summary_good|Dzięki szybkiemu myśleniu i dobrej argumentacji, udało ci się świetnie przedstawić sprawę, a {s50} przyznaje ci rację w kilku przypadkach. Dalej jednak wyraża wątpliwości co twej prośby.
-str_persuasion_summary_very_good|Wygłaszasz pasjonujące przemówienie, które brzmi niczym najpiękniejsze z pieśni bardów. Wszyscy cichną aby tylko wysłuchać twych słów. Twoje inspirujące przesłanie głęboko poruszyło {s50}. Wygląda na to, że {reg51?she:he} będzie dużo bardziej skłonny ci pomóc.
+str_persuasion_summary_very_good|Wygłaszasz namiętną przemowę, która w uszach wszystkich słuchających osób odbija się echem, niczym poezja. Cały świat zdał się na chwilę zamilknąć, by lepiej cię usłyszeć. {s50} wydaje się poruszon{reg51?a:y} twymi słowami i znacznie bardziej skłonn{reg51?a:y} ci pomóc.
 str_surname_1|{s50} z Tarnost
 str_surname_2|{s50} z Lossarnach
 str_surname_3|{s50} z Erech
@@ -306,7 +349,7 @@ str_npc5_intro|Witaj {playername}. Mae govannen!
 str_npc6_intro|Zostaw mnie, nie chcę z tobą rozmawiać.
 str_npc7_intro|Kíli, syn Dwalina, gotowy do służby!
 str_npc8_intro|Witaj w Dale podróżniku! Mogę ci w czymś pomóc?
-str_npc9_intro|Cisza! Jeżeli zawołasz strażników, wypruję ci flaki i nakarmie nimi wargi!
+; str_npc9_intro|Ssh! If you so much as wave to the guards, I'll slice out your gizzard and feed it to the wargs!
 str_npc10_intro|Ty!
 str_npc11_intro|Ar! Nie jesteś stąd, co nie? Czuję to, a jeśli tylko powiesz inaczej przed szefami, to wydłubię ci oczy!
 str_npc12_intro|Oho! Co ty wyprawiasz, czaisz się tutaj ?
@@ -364,11 +407,11 @@ str_npc12_backstory_a|I am Gorbag!
 str_npc13_backstory_a|I am Lykyada!
 str_npc14_backstory_a|I am Fuldimir!
 str_npc15_backstory_a|I am Bolzog!
-str_npc16_backstory_a|I am Varfang!
+; str_npc16_backstory_a|Well now, it is the stranger who should declare himself first. Nevertheless, I am Varfang of the Balchoth kin... I can tell that you have not yet heard the songs or tales of my land that speak the name of the Balchoth, for the very name would check your courage and fill your heart with woe.
 str_npc17_backstory_a|Nazywają mnie Dímborn i pracuję w lesie. Miło jest tam. Lubię lasy . Wiele drzew w lesie. Lubię drzewa. Pracowałem już w lesie przez całe moje życie , bo jestem silna i ponieważ lubię drzew.
 str_npc1_backstory_b|Powinieneś wiedzieć, że jestem Ithilien Ranger of dunedaińskich opadania i męstwa . Wiem, że dużo śledzenia i harcerstwa i moje umiejętności w łuk i miecz jest znany orka . Mogę również trenować każdą duszę , która jest skłonna do walki pochodzących cień.
 str_npc2_backstory_b|\nI został przeszkolony jako stróż Minas Tirith , aby utrzymać porządek w White City i służyć mój Lord Steward .
-str_npc3_backstory_b|\nJestem Rider Zachodniego(WEST) Emnet éored - są pozostawione beze mnie na długi patrol na brodach Isen . Wiem, że ich zachowanie będzie warta zielonym sztandarem , ale obawiam się, wiele z nich nie wróci .
+; str_npc3_backstory_b|I am a Rider of the Westfold éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
 str_npc4_backstory_b|\nUrodziłem się w rodzinie szlacheckiej i zostały obsługujących Lady EOWINA jako druhna odkąd byliśmy dziewczynki . Nasi ojcowie byli na tyle mądrzy, aby umożliwić nam trenować wraz z naszymi braćmi w sprawach walki, aby stać shieldmaidens Rohanu .
 str_npc5_backstory_b|Lord Erlond posłał mnie jako emisariusz do Lord Celeborna , w celu uzyskania pomocy i porady, jak jest to potrzebne w wojnie w tej części Rhovanionu .
 str_npc6_backstory_b|Lubię chodzić ukrytymi ścieżkami w naszym pięknym lesie. Czasami poruszać się cicho przez drzewa i obserwować zwyczaje wielu leśnych zwierząt. Piosenka rzadkiego ptaka , gniazdowania z dzika są tak piękne do mnie jak zderzenie broni i wielkich ścianach mają Edainów .
@@ -381,7 +424,7 @@ str_npc12_backstory_b|I am an Uruk Slayer of Mordor.
 str_npc13_backstory_b|I am a Gold Serpent Horse Archer.
 str_npc14_backstory_b|I am an Umbar Sailor.
 str_npc15_backstory_b|I am a Snaga of Moria and a healer.
-str_npc16_backstory_b|I am a Rhun Swift Horseman.
+; str_npc16_backstory_b|The Balchoth were a fierce race of men from my home land, slaughtered by these westerlings to all but a few men. Chased down like beasts of burden as food for their blades. The blood spilt by those blades is the same blood that flows within me, for within me their house continues.
 str_npc17_backstory_b|Można zrobić wiele rzeczy z drzew , wiesz. To , co robię. Pracuję z drzew i dokonać rzeczy z drzew . Czasami także krzewy . Ale lubię drzew więcej .
 str_npc1_backstory_c|\nJednak obawiam się , że są beznadziejnie liczniejsze tu w Ithilien , a my nie potrwa długo bez wzmocnień lub bardziej zdecydowanym działaniem przez nasz Steward . Równie dobrze mogę pomóc , gdzie moje działania będą stanowić więcej , jeśli mój kapitanie Faramir daje mi odejść.
 str_npc2_backstory_c|However important my duty here is, I'm quite anxious to see real combat and... elves and talking trees and oliphants! You seem well-travelled, commander, and I don't mean that as a slight on your appearance, not by a fathom. I learn quickly and can cook... well, good enough for soldiers that is. Am I not mistaken that you are looking for volunteers?
@@ -415,7 +458,7 @@ str_npc12_backstory_later|Have you reconsidered? I will serve well.
 str_npc13_backstory_later|Have you reconsidered? I will serve well.
 str_npc14_backstory_later|Have you reconsidered? I will serve well.
 str_npc15_backstory_later|Have you reconsidered? I will serve well.
-str_npc16_backstory_later|Have you reconsidered? I will serve well.
+; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 str_npc17_backstory_later|Widziałem bardzo starą sosnę kiedyś. Sosny mogą być bardzo stare. Musisz mieć szacunek do starych drzew. Ale widziałem takich, który w ogóle nie szanują drzew. Szanujesz drzewa, prawda?
 str_npc1_backstory_response_1|Jeśli możesz wyjść, potrzebuję doświadczonego wojownika i tropiciela. 
 str_npc2_backstory_response_1|Właśnie tak, poszukuję ochotników.
@@ -558,35 +601,13 @@ str_npc2_morality_speech|Mam nadzieję, że nie masz nic przeciwko wysłuchaniu 
 str_npc3_morality_speech|Dowódco, me dumni Eorlingowie nigdy nie {s21} . Nadze konie nie męczą się tak łatwo, dlatego jeśli tylko się przegrupujemy, nie ma takiej sytuacji, w której szybki kontratak nie przyniósłby nam zwycięstwa. Zastanów się następnym razem zanim pomyślisz o takim głupstwie.
 str_npc4_morality_speech|Nie ma co sobie zaprzątać głowy tym, co mówią żołnierze. Czasem {s21} to najlepsze rozwiązanie. W ten sposób uniknęliśmy wiele przelanej krwi i połamanych kości. Nasze ostrza przydadzą się bardziej jeślim żyw, aniżeli naszym truchłom w piachu. 
 str_npc5_morality_speech|Przemyśl lepiej swe decyzje, dowódco. {s21} czyni nas równie niehonorowym co naszych wrogów i odbiera zaufanie, którym darzą cię sprzymierzeńcy.
-
 str_npc7_morality_speech|Nie byłem zadowolony, że postanowiłeś {s21}. Polec w walce to zaszczyt dla każdego dobrze myślącego krasnoluda, ale walka u boku tchórza jest hańbą. Co powiedzą moi kuzyni, jeśli się o tym dowiedzą? 
 str_npc8_morality_speech|Dowódco, muszę się sprzeciwić. {s21} jest drażniące dla mężczyzn i zbędne. Robię co mogę, aby złagodzić ich cierpienie, ale proszę, nie popełnij więcej tak kosztownego błędu.
 str_npc9_morality_speech|Walczący Uruk-hai nie {s21}. Jeśli Pan ma mało odwagi, może znaleźć się bez nich pewnej nocy. Gulm przemówił.
-
-
-
-
-
 str_npc15_morality_speech|[No primary moral code]
-
-
-str_npc1_2ary_morality_speech|Kapitanie, zostałem wychowany jako Dúnedain, zarówno w waleczności i honorze. Wolałbym, jeśli my nie {s21}.
-
-
+; str_npc1_2ary_morality_speech|Captain, I have been raised as a Dúnadan, both in valor and honour. I would prefer if we don't {s21}.
 str_npc4_2ary_morality_speech|Proszę o wybaczenie, dowódco. Kobiety z mojej stacji zaakceptują śmierć, ale nie zhańbioną. {s21} przynosi wstyd mojego domowi i przodkom.
-
-
-
-
-
-
-
-
-
-
 str_npc15_2ary_morality_speech|[No secondary moral code]
-
-
 str_npc1_personalityclash_speech|Wspominałam że Nienawidzę { s11 }?
 str_npc2_personalityclash_speech|Wspominałam że Nienawidzę { s11 }?
 str_npc3_personalityclash_speech|Dowódco, jak to się stało że skończyliśmy z {s11} w oddziale?\nJest on dosyć zwinny, wydaje mi się, ale zbyt często gada o zasadzkach - w przeciwieństwie do ostrożnej natury jego ludu
@@ -657,10 +678,10 @@ str_npc16_personalityclash2_speech_b|Nie nawidze {s11}.
 str_npc17_personalityclash2_speech_b|Nie nawidze {s11}.
 str_npc1_personalitymatch_speech|Czy zauważyłeś łaskę {s11} w ostatniej bitwie? Sposób, w jaki porusza się wokół wroga tuż przed uderzeniem ostatecznym ciosem? To tak, jak z dawnych czasów, kiedy elfie dziewice prezentowały się tak samo dobrze na polu bitwy, jak na swoich pięknych leśnych kortach.
 str_npc2_personalitymatch_speech|Przepraszam, dowódco. Po prostu pomagałem {s11} w drobnych naprawach broni po tym ostatnim skrawku, a on nawet obiecał nauczyć mnie, jak poprawić moje uderzenia.
-; str_npc3_personalitymatch_speech|Is not a Rohan shieldmaiden in full charge a sight to behold? Granted, our womenfolk are better off by the hearth, but after seeing {s11} strike down the enemy in that last battle, I'm beginning to have doubts.
+str_npc3_personalitymatch_speech|Czyż nie ma żadnej osłony Rohanu, która mogłaby zobaczyć ten widok? To prawda, że nasze kobiety są lepsze z powodu ogniska domowego, ale po zobaczeniu {s11} uderzenia wroga w tej ostatniej bitwie, zaczynam mieć wątpliwości.
 str_npc4_personalitymatch_speech|Bitwa o wielkich czynach, dowódco, moje gratulacje z powodu zwycięstwa. Widziałem jak {s11} szybko i pewnie zaopiekował się rannymi i chorymi, nawet gdy ostatni z wrogów dostał to, na co zasłużył.
 str_npc5_personalitymatch_speech|Czy wspominałem że lubię [s11]?
-; str_npc6_personalitymatch_speech|{playername}, as much as I hate battles, I can't help but notice my Lord {s11} riding out in full splendor and bearing down on the ugly creatures like a hawk.
+str_npc6_personalitymatch_speech|{playername}, tak samo jak nienawidzę bitew, nie mogę nie zauważyć, że mój Pan {s11} jedzie w pełnej okazałości i dźwiga brzydkie stworzenia jak jastrząb.
 str_npc7_personalitymatch_speech|Krwawo i Zwycięsko, tak jak lubię. 
 str_npc8_personalitymatch_speech|Kolejne zwycięstwo, dowódco, podziwiam twoją umiejętność oszczędzania życia naszych ludzi. Wojownik taki jak {s11} wydaje się bardzo użyteczny w twoich planach bitewnych.
 str_npc9_personalitymatch_speech|Czy wspominałem że lubię {s11}?
@@ -672,14 +693,14 @@ str_npc14_personalitymatch_speech|Czy wspominałem że lubię {s11}?
 str_npc15_personalitymatch_speech|Czy wspominałem że lubię {s11}?
 str_npc16_personalitymatch_speech|Czy wspominałem że lubię {s11}?
 str_npc17_personalitymatch_speech|Umm, szefie. Wydaje mi się, że [s11] dałby sobie radę w lesie. Umie rozróżnić jesion od wierzby. 
-; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse in what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
+; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse of what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
 str_npc2_personalitymatch_speech_b|Moi starzy w domu zawsze opowiadali mi historie o Strażnikach z Ithilien i teraz widzę, że wszystkie są prawdziwe. Jeśli wszyscy są jak {s11}, czuję, że Gondor jest bezpieczniejszy.
 str_npc3_personalitymatch_speech_b|Dowódco, osobista przysługa, chciałem zapytać, czy możesz nakazać {s11}, aby w następnej bitwie pozostała bardziej na tyłach? Nie mogłem znieść widoku jej krzywdy.
-; str_npc4_personalitymatch_speech_b|To preserve lives is the noblest deed, and I feel kinship with that kind soul, even if our worlds are far apart.
+str_npc4_personalitymatch_speech_b|Zachowywanie życia to najszlachetniejszy czyn i czuję pokrewieństwo z taką życzliwą duszą, nawet jeśli nasze światy są daleko od siebie.
 str_npc5_personalitymatch_speech_b|Lubię {s11}.
 str_npc6_personalitymatch_speech_b|Zastanawiam się jak bardzo jest on stary. Może tuzin wieków starszy ode mnie? Nie ważne, i tak byś nie zrozumiał
-; str_npc7_personalitymatch_speech_b|{s11} and her Dale-kin, even if not quite up to dwarven warrior standards, have proven to be steadfast allies in this War. A good choice for a friend and companion among Men, if I may say so.
-; str_npc8_personalitymatch_speech_b|The people of Dale have a deep regard for the hardy Lonely Mountain Dwarven-folk, as friends and protectors despite our different race and customs.
+str_npc7_personalitymatch_speech_b|s11} i jej Dale-kinowie, nawet jeśli nie do końca zgodni ze standardami wojowników krasnoludów, okazali się niezłomnymi sojusznikami w tej wojnie. Dobry wybór dla przyjaciela i towarzysza wśród ludzi, jeśli mogę tak powiedzieć.
+str_npc8_personalitymatch_speech_b|Mieszkańcy Dale mają głęboki szacunek dla odpornego, samotnego górskiego krasnoludzkiego ludu, jako przyjaciół i opiekunów, pomimo naszej różnej rasy i obyczajów.
 str_npc9_personalitymatch_speech_b|Lubię {s11}.
 str_npc10_personalitymatch_speech_b|Lubię {s11}.
 str_npc11_personalitymatch_speech_b|Lubię {s11}.
@@ -725,12 +746,12 @@ str_npc16_rehire_speech|Mogę ci znowu służyć?
 str_npc17_rehire_speech|Hej. Czas znowu ruszać? Drzewa nie ruszają się wiele. Ale ja lubię się poruszać. Lubię też drzewa.
 str_npc1_home_intro|Kapitanie zbliżamy się do Osgiliath, powinniśmy rozejrzeć się za zarówno druhami jak i za wrogami.
 str_npc2_home_intro|Bądź czujny, dowódco. To musi być Minas Morgul. Czujesz, jakby coś nas obserwowało?
-; str_npc3_home_intro|A word of advice, commander. We are getting mighty close to Entwood now and the horses are getting restless. Some call the forest Fangorn, too.
-; str_npc4_home_intro|Let's stop here for a minute, commander. Ahead of us, between the Anduin and the Limlight, lies the Field of Celebrant, where Eorl the Young rode to the aid of our Gondor allies.
-str_npc5_home_intro|Daro! Przed nami Isengard i czarna wieża Orthanc. Wiele rzeczy zmieniło się odkąd widziałem je po raz ostatni, niestety żadna z nich na lepsze.
+str_npc3_home_intro|Słowo rady, dowódco. Teraz zbliżamy się do Entwood, a konie stają się niespokojne. Niektórzy nazywają też las Fangorn.
+str_npc4_home_intro|Zatrzymajmy się tu na chwilę, komandorze. Przed nami, między Anduinem i Limightem, znajduje się Pole Celebransa, gdzie Eorl the Young jeździł z pomocą naszych sprzymierzeńców Gondoru.
+; str_npc5_home_intro|Daro! That's Angrenost and the black tower of Orthanc ahead. Much has changed since I last saw them, and none for the better.
 str_npc6_home_intro|Wybacz, {playername}. Ścieżki tutaj stały się bardziej poplątane i część z nich prowadzi do ślepych zaułków. Musieliśmy dotrzeć do Dol Guldur.
-; str_npc7_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
-; str_npc8_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
+str_npc7_home_intro|Oy, kapitanie! To musi być stara droga do wschodniej bramy Khazad-dûm, albo Morii, jak wolisz. W oddali widać błyszczące jezioro Kheled-zâram, a przez chmury trzy wierzchołki znane z łaski tej części Gór Mglistych.
+str_npc8_home_intro|Och, ciekawy widok! Słyszałem opowieści o tym miejscu, w którym mówi się, że solidni leśnicy żyją w harmonii ze zwierzętami i roślinami. Jak mniemali, nazywają ich pociechami.
 str_npc9_home_intro|Cholera! To musi byc "hornburg", panie.
 str_npc10_home_intro|Hej, spójrz!
 str_npc11_home_intro|Hej, spójrz!
@@ -740,15 +761,15 @@ str_npc14_home_intro|Hej, spójrz!
 str_npc15_home_intro|Hej, spójrz!
 str_npc16_home_intro|Hej, spójrz!
 str_npc17_home_intro|Oooooo, rosną tutaj Mallorny! Nie powinni ich ścinać, one są po prostu zbyt piękne!
-; str_npc1_home_description|It was a fair city once, the capital of Gondor of old, full of people and laughter. Now it lies deserted and ruined, the old Anduin flowing wearily through a ghost town.
-; str_npc2_home_description|It was called Minas Ithil many years ago, and stories are told of how moonlight filled its inner courts with silver light and its walls gleamed silver and white. Gondor watchmen peered over the walls to the east and kept watch beyond Ephel Dúath.
-; str_npc3_home_description|It's thick with trunks and branches and all manner of trees, and I wouldn't venture there as strange creatures roam the forest, not all of them harmless.
+str_npc1_home_description|Kiedyś było to uczciwe miasto, stolica Gondoru, pełna ludzi i śmiechu. Teraz jest opuszczony i zrujnowany, stary Anduin płynie znużonym przez miasto duchów.
+str_npc2_home_description|Nazywał się Minas Ithil wiele lat temu, a historie opowiadane są o tym, jak światło księżyca wypełniało jego wewnętrzne sady srebrnym światłem, a jego ściany lśniły srebrno-białymi. Strażnicy Gondoru przyglądali się murom na wschodzie i trzymali straż za Ephel Dúath.
+str_npc3_home_description|Jest gęsty od pni i gałęzi i wszelkiego rodzaju drzew i nie chciałbym się tam wybierać, ponieważ dziwaczne stworzenia wędrują po lesie, nie wszystkie z nich są nieszkodliwe.
 str_npc4_home_description|Where now the horse and the rider? where is the horn that was blowing?^Where is the helm and the hauberk and the bright hair flowing?...^They have passed like rain on the mountain, like a wind in the meadow;^The days have gone down in the West behind the hills into shadow...
-; str_npc5_home_description|Once built by the Southern Kingdom, now home to one that we called the White Wizard, scheming, no doubt, how to increase his power further at the expense of others.
-; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazguls here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
-; str_npc7_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
+str_npc5_home_description|Raz zbudowane przez Królestwo Południowe, obecnie domem dla tego, którego nazywaliśmy Białym Czarodziejem, bez wątpienia knującego, jak zwiększyć jego moc kosztem innych.
+; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazgul here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
+str_npc7_home_description|Sądząc po spustoszeniu i wielu ścieżkach orków, obawiam się losu odważnego Balina i jego wyprawy. Wydaje się, że Moria spadła do cienia i powinniśmy stąpać ostrożnie.
 str_npc8_home_description|Czasami podróżujący kupiec przybywa do Dale i oferuje najlepszy miód jakiego kiedykolwiek próbowałem. Z jakiegoś szalonego powodu mówi, że "został zrobiony przez niedźwiedzie" i wybucha śmiechem.
-; str_npc9_home_description|Its damned walls are too high and too hard for my hammer to break. I reckon if we ever chase away the manlings from their Edoras pig-sties, they'll run off here and cower behind the walls.
+str_npc9_home_description|Jego przeklęte ściany są zbyt wysokie i zbyt twarde, by młot mógł się złamać. Sądzę, że gdybyśmy kiedykolwiek wygnali ludzi z ich steków Edoras, uciekną tutaj i skulą się za murami.
 str_npc10_home_description|Czy znasz to miasto?
 str_npc11_home_description|Czy znasz to miasto?
 str_npc12_home_description|Czy znasz to miasto?
@@ -757,22 +778,22 @@ str_npc14_home_description|Czy znasz to miasto?
 str_npc15_home_description|Czy znasz to miasto?
 str_npc16_home_description|Czy znasz to miasto?
 str_npc17_home_description|Nie wiedziałem, że były tu też takie piękne drzewa. Ciekawe, czy pracuje tu jakiś drwal.
-; str_npc1_home_description_2|If Gondor is doomed, West Osgiliath shall fall first to the foul hordes of the Eye. I only hope Captain Faramir would be in command that day and stem the tide. If we could spare any men to bolster the defences here, I would be most grateful, Captain.
-; str_npc2_home_description_2|It is said it's full of terrible orcs now and dread spirits and worse. I pray for the day when Gondor will reclaim it and cleanse it of all things foul.
-; str_npc3_home_description_2|If we must cross Entwood, let us do so with haste and stealth. I don't know who might be listening to our hooves and I don't care to find out.
-; str_npc4_home_description_2|We would do well to remember the great deeds of the past and the sacrifices that were made. The Alliance between Rohan and Gondor shall save our peoples from doom once again.
-; str_npc5_home_description_2|Let it be a reminder that even the greatest, even one of the Istari, can be corrupted and fall. Those who lust for power can be defeated by power, so let us not tarry much longer.
+str_npc1_home_description_2|Jeśli Gondor jest skazany na porażkę, Zachodnie Osgiliath wpadnie najpierw w hordę Oka. Mam tylko nadzieję, że kapitan Faramir będzie dowodził tego dnia i powstrzyma falę. Gdybyśmy mogli oszczędzić ludzi, by wzmocnić obronę tutaj, byłbym bardzo wdzięczny, kapitanie.
+str_npc2_home_description_2|Mówi się, że jest teraz pełen okropnych orków, strasznych duchów i jeszcze gorzej. Modlę się za ten dzień, kiedy Gondor odzyska to i oczyści go ze wszystkich rzeczy.
+str_npc3_home_description_2|Jeśli musimy przekroczyć Entwood, zróbmy to z pośpiechem i podstępem. Nie wiem, kto może słuchać naszych kopyt i nie mam ochoty się tego dowiedzieć.
+str_npc4_home_description_2|Dobrze byśmy pamiętali wielkie czyny przeszłości i ofiary, które zostały dokonane. Sojusz między Rohanem i Gondorem uratuje nasze narody od zagłady po raz kolejny.
+str_npc5_home_description_2|Niech to będzie przypomnienie, że nawet największa, nawet jedna z Istarich, może ulec zepsuciu i upadkowi. Ci, którzy pożądają władzy, mogą zostać pokonani przez moc, więc nie zwlekajmy dłużej.
 str_npc6_home_description_2|Wyczuwam zle armie za tymi scianmi przygotujcie sie do wymarszu...Do Lothlorien, Dale, do zielonej ojczyzny? Tego powiedziec nie moge, ale prosze zrobcie wszystko co w waszych silach by Ich zatrzymac.
 str_npc7_home_description_2|Jesli fates of war zapewni nam duza armie, pownnismy zaryzykowc wejsciem do kopalni i odzyskac utracone dary.
-; str_npc8_home_description_2|I can smell the fragrance of many sweet flowers and see the bees harvesting their nectar. If you don't mind, I will gather some herbs for our own use, it will only take a moment.
-; str_npc9_home_description_2|There's no use trudging around here if we are not backed by a large Uruk-hai horde. Unless you want to make faces at the lookouts on the wall, that is.
-str_npc10_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dzień, har-har!
+str_npc8_home_description_2|Czuję zapach wielu słodkich kwiatów i widzę pszczoły zbierające nektar. Jeśli nie masz nic przeciwko, zbiorę trochę ziół na własny użytek, zajmie to tylko chwilę.
+str_npc9_home_description_2|Nie ma sensu włóczyć się tutaj, jeśli nie poprowadzi nas wielka horda Uruk-hai. Chyba że chcesz robić miny przy punktach widokowych na ścianie.
+; str_npc10_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
 str_npc11_home_description_2|Czy Orthank nie wygląda jak wielkie... coś?
 str_npc12_home_description_2|Czy Orthank nie wygląda jak wielkie... coś?
-str_npc13_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dzień, har-har!
-str_npc14_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dzień, har-har!
-str_npc15_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dzień, har-har!
-str_npc16_home_description_2|Minas Morgul, miejsce, gdzie Nazgule piją cały dzień, har-har!
+; str_npc13_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+; str_npc14_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+; str_npc15_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+; str_npc16_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
 str_npc17_home_description_2|Mógłbym wyrzeźbić ci ładną fajkę. Chciałbyś jedną?
 str_npc1_home_recap|Urodziłem się i wychowałem w Ithilien, należę do długiej linii wojowników którzy sięgają korzeniami czasów południowego Dúnedaina.
 str_npc2_home_recap|Urodziłem się w Minas Tirith, w prostej, ale dumnej rodzinie.
@@ -1091,7 +1112,7 @@ str_lord_insult_goodnatured|zbir
 str_lord_insult_upstanding|łajdak
 str_rebellion_dilemma_default|[suzeren]
 str_rebellion_dilemma_martial|{s45} bez wątpienia został{reg3?a:} pokrzywdzon{reg3?a:y}. Mimo iż ślubowałem wierność naszemu obecnemu władcy, przysięga jest nieważna, skoro {s46} objął tron bezprawnie.
-; str_rebellion_dilemma_quarrelsome|Hmm. {s46} has never given me my due, so I don't figure I owe him much. However, maybe {s45} will be no better, and {s46} has at least shown himself.
+str_rebellion_dilemma_quarrelsome|Hmm. {s46} nigdy nie dał mi tego, co mi się należało, więc raczej niewiele mu zawdzięczam. Jednakże {s45} może wcale nie być lepsz{reg3?a:y}, a {s46} przynajmniej okazał się dość zdolnym przywódcą.
 str_rebellion_dilemma_pitiless|Hmm. {s45} mówi, że jest prawowit{reg3?ą spadkobierczynią:ym spadkobiercą} tronu. Dobrze -- jeśli to prawda i {s46} rzeczywiście przywłaszczył sobie tron, to czuję się zwolniony od mojej dawnej przysięgi. Nadal jednak muszę dokładnie przemyśleć moją decyzję.
 str_rebellion_dilemma_cunning|Hmm. Ślubowałem wierność naszemu władcy, {s46}, jednakże potężnych ślubowania nie wiążą tak bardzo, jak pospolitych ludzi. Naszym obowiązkiem jest posiadanie możliwości rządzenia, narzucanie ładu i nie dopuszczanie do wojny, gdzie wszyscy walczą ze wszystkimi.
 str_rebellion_dilemma_sadistic|Hmm. W tym podłym świecie, mądry człowiek myśli tylko i wyłącznie o sobie, bo nikt inny z pewnością nie będzie o nim myślał. Więc -- co za to dostanę?
@@ -1241,25 +1262,25 @@ str_rohan_rumor_15|Ugodzenie orka strzałą wystrzeloną z konia wygląda na tru
 str_rohan_rumor_16|Gondor ćwiczy łucznictwo. My szkolimy się w konnym łucznictwie. Dunlendingowie nie ćwiczą łucznictwa w ogóle.
 str_rohan_rumor_17|Wiele orków Sarumana to niebezpieczni łucznicy. Wielu nie. Mądry dowódca kawalerii nie powinien czekać aby się dowiedzieć którzy są którzy.
 str_rohan_rumor_18|Wszyscy jesteśmy tu przyjaciółmi. Albo powinniśmy być; Bo śmiech Mordoru będzie naszą jedyną nagrodą, jeżeli będziemy skłóceni.
-; str_rohan_rumor_19|Long we have tended our beasts and our fields, built our houses, wrought our tools, or ridden away to help in the wars of Minas Tirith. And that we called the life of Men, the way of the world.
+str_rohan_rumor_19|Długo opiekowaliśmy się naszymi zwierzętami i polami, budowaliśmy nasze domy, obrabialiśmy nasze narzędzia lub odjeżdżaliśmy, aby pomóc w wojnach Minas Tirith. I nazwaliśmy życie ludzi, drogą świata.
 str_gondor_rumor_begin|Gondor nie ma króla a wrogowie są u bram. Cień rośnie na wschodzie. To nie wygląda zbyt dorze
-; str_gondor_rumor_2|In Gondor there is nothing under the sun we don't make, build, or grow in some quantity. But for how much longer?
+str_gondor_rumor_2|W Gondorze nie ma nic pod słońcem, którego nie robimy, nie budujemy ani nie rośniemy w jakiejś ilości. Ale na jak długo?
 str_gondor_rumor_3|Mordor to sucha, nieżyzna ziemia. Co tamtejsze stworzenia jedzą? Pewnie nie jedno drugie? A może...
-; str_gondor_rumor_4|We toil our lands, as we have done for generations. Our past is glorious and brave, but our future looks uncertain.
-; str_gondor_rumor_5|The Shadow's resources for war seem limitless, but they are borne on the backs of a vast pool of slave labour.
+str_gondor_rumor_4|My trudzimy nasze ziemie, tak jak robiliśmy to od pokoleń. Nasza przeszłość jest chwalebna i odważna, ale nasza przyszłość wydaje się niepewna.
+str_gondor_rumor_5|Zasoby Cienia dla wojny wydają się nieograniczone, ale są ponoszone na tyłach ogromnej puli niewolniczej pracy.
 str_gondor_rumor_6|Wiemy o elfach na północy, ale w dzisiejszych czasach nikt nie wybiera się by je kiedykolwiek zobaczyć.
-; str_gondor_rumor_7|I would see the White Tree in flower again in the courts of the kings, and the Silver Crown return, and Minas Tirith in peace: Minas Anor again as of old, full of light, high and fair, beautiful as a queen among other queens.
+str_gondor_rumor_7|Znowu ujrzę Białe Drzewo w kwiecie na dworach królów, a Srebrna Korona powróci, a Minas Tirith w pokoju: Minas Anor znowu jak dawniej, pełna światła, wysoka i piękna, piękna jak królowa wśród innych królowych .
 str_gondor_rumor_8|Dlaczego Umbar ciągle nas najeżdża? Ich korsarze mieli by większy zysk z handlu z nami. Jaka grabież mogłaby się mierzyć z bogactwami które by wynieśli sprzedając stare Numenoriańskie artefakty Gondoriańskiej szlachcie?
-; str_gondor_rumor_9|War must be, while we defend our lives against a destroyer who would devour all; but I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend.
-; str_gondor_rumor_10|Gil-galad was an Elven-king. Of him the harpers sadly sing: the last whose realm was fair and free between the Mountains and the Sea.
+str_gondor_rumor_9|Wojna musi być, podczas gdy my bronimy naszego życia przed niszczycielem, który pożre wszystko; ale ja nie kocham jasnego miecza za jego ostrość, ani strzały za jej szybkość, ani wojownika za jego chwałę. Kocham tylko to, co oni bronią.
+str_gondor_rumor_10|Gil-galad był królem elfów. Z niego harfiarze smutno śpiewają: ten ostatni, którego królestwo było sprawiedliwe i wolne między Górami a Morzem.
 str_gondor_rumor_11|Dol Guldur? Nigdy o tym nie słyszałem.
 str_gondor_rumor_12|Moria? Krasnoludy tutaj kopią, czyż nie?
 str_gondor_rumor_13|Nie mów nikomu że Ci powiedziałem, ale myślę że Książę Imrahil powinien zostać królem. Lord Denethor to szlachetny człowiek, ale Gondor bardzo pociemniał podczas jego rządów. I nie tylko odkąd odszedł jego starszy syn.
 str_gondor_rumor_14|Ludzie mówią że Dziewięciu wyjechało znów z Minas Morgul. Chciałbym żebyśmy mieli więcej tak mężnych dowódców jak Boromir, którzy poprowadzili by nas przeciwko takim starożytnym wrogom.
 str_gondor_rumor_15|Południowcy wypychają nas z Harondor. Najeżdżali nas mocno ostatnimi czasy. Chciałbym móc przejść się bezpiecznie przez zielone pola Lebennin. Ale mówią nam "Nie.", nasi żołnierze są potrzebni do ochrony serca kraju.
 str_gondor_rumor_16|Kuzyn mego przyjaciela jest łucznikiem na służbie Hirluina Sprawiedliwego. Moim zdaniem mają najlepiej wyglądające uniformy.
-str_gondor_rumor_17|Jest taki dziwny czarny kamień niedaleko Erech. Kiedyś poszedłem go zobaczyć razem z ojcem. Ludzie mówią że jest położony nad komnatą w której leży ostatni syn morskiego króla. Ja myślę że to tylko kamień.
-; str_gondor_rumor_18|We are truth-speakers, we Gondorians. We boast seldom, and then perform, or die in the attempt.
+; str_gondor_rumor_17|Those who dwell in the deep vale of the Morthond are accustomed to the shadows. I heard that they see well at night.
+str_gondor_rumor_18|Jesteśmy mówcami prawdy, my, Gondoriańczycy. Poświęcamy się rzadko, a następnie wykonujemy lub giniemy w próbie.
 str_dwarf_rumor_begin|Oni pytają nas, czy krasnoludy mają jakichś przyjaciół. Oczywiście, że mamy przyjaciół. Tylko ich nie lubimy.
 str_dwarf_rumor_2|Orkowie? Smar do toporów, to wszytko czym są.
 str_dwarf_rumor_3|Co Ty masz na sobie? To nie wygląda jakby miało obronić Cię przed użądleniem pszczoły. I wygląda śmiesznie.
@@ -1269,11 +1290,11 @@ str_dwarf_rumor_6|Kogo nazywasz niskim?
 str_dwarf_rumor_7|Powinieneś zobaczyć jaskinie Hornburga. Jeśli tylko możemy wydobywamy każdy klejnot w kopalni...
 str_dwarf_rumor_8|Żadnych wieści od naszych braci z Morii od jakiegoś czasu. Uważam że chcą zatrzymać wszystkie bogactwa dla siebie!
 str_dwarf_rumor_9|Elfy? Co elfy kiedykolwiek zrobiły dla nas? Ok, sztuki uzdrawiania, ale co poza tym? Ok, jakieś techniki kowalskie, ale co jeszcze? Ok, walczą z ciemnością, ale poza tym co naprawdę zrobili dla nas, powiedz?
-; str_dwarf_rumor_10|A flagon of ale, a roast pig, a girl with a thick beard and I'm happy!
+str_dwarf_rumor_10|Flakon piwa, pieczona świnia, dziewczyna z gęstą brodą i jestem szczęśliwy!
 str_dwarf_rumor_11|Więc, Brian, otwieram kopalnię! Co? Hmmm? Więc, Brian, otwieram kopalnię!
 str_dwarf_rumor_12|My Krasnoludy zawsze budujemy więcej niż jedni wejście do naszych kopalni. Także tutaj jest jedno sekretne wejście.
 str_dwarf_rumor_13|Dziwne są drogi mężczyzn 
-; str_dwarf_rumor_14|Unwearied then were Durin's folk beneath the mountains music woke: The harpers harped, the minstrels sang, and at the gates the trumpets rang.
+str_dwarf_rumor_14|Niezwiązani wtedy lud Durina pod górami budził się muzyką: harfiarze harfowali, śpiewali minstrele, a przy bramie rozległy się trąby.
 str_dwarf_rumor_15|Zabić Ludzi! Zabić Elfy! Zebrać od nic nasze złoto!
 str_mordor_rumor_begin|Lugbúrz dowodzi!
 str_mordor_rumor_2|Nazgûle zniszczą świat ludzi 
@@ -1294,9 +1315,9 @@ str_mordor_rumor_16|Jeśli cię obraża - zabij. Jeśli z tobą walczy - zabij. 
 str_mordor_rumor_17|Uruk-hai powiedział, że nie zważają na słońce! Bûbhosh skai!
 str_mordor_rumor_18|Wyszyscy nieżyją, wszyscy w rozkładzie. Elfy, Ludzie i Orkowie. Na Martwych Bagnach!
 str_mordor_rumor_19|Nie stawaj między Nazgûlem a jego ofiarą!
-; str_mordor_rumor_20|Isengarders? The muck-rakers of a dirty little wizard! It's orc-flesh they eat, I'll warrant.
+str_mordor_rumor_20|Isengarderzy? Tłumy brudnego czarodzieja! To mięso orków jedzą, gwarantuję.
 str_mordor_rumor_21|Mroczna puszcza jest teraz w naszych rękach, ale eldy jeszcze o tym nie wiedzą.
-; str_mordor_rumor_22|Crank up yer spotting if you don't want to get ambushed in Ithilien. Those damn greenhoods...
+str_mordor_rumor_22|Rozkręć swoje spekulacje, jeśli nie chcesz wpaść w zasadzkę w Ithilien. Te cholerne zieloności ...
 str_mordor_rumor_23|Tam gdzie bicz tam jest też droga.
 str_isengard_rumor_begin|Rozkazy Sharkû!
 str_isengard_rumor_2|Konni są jedzeniem! Bubhosh!
@@ -1313,16 +1334,16 @@ str_isengard_rumor_12|Spalić las! Do broni! Zabić jeźdźców!
 str_isengard_rumor_13|Trzymaj się zdala od szaleńca zanim nas pozabija!
 str_isengard_rumor_14|Widziałem szaleńca przebitego kawaleryjską lancą. Wyciągnął ją przez swoje trzewia.
 str_isengard_rumor_15|Nie ufam tym małym górskim orkowym świniom. Isengardczycy wygrają tę wojnę, z nimi czy bez nich.
-; str_isengard_rumor_16|By the White Hand! What's the use of sending mountain-maggots to fight for us, only half-trained! Cursed goblins and orcs of the North!
-; str_isengard_rumor_17|I'd tickle some prisoners with my knife. Sometimes you need to make those miserable rats squeak!
-; str_isengard_rumor_18|There's only one thing the maggots and rats of Lugbúrz can do: they can see like gimlets in the dark.
+str_isengard_rumor_16|Według białej ręki! Jaki jest pożytek z wysyłania górskich robaków, aby walczyć za nas, tylko na wpół wyszkolonych! Przeklęte gobliny i orki Północy!
+str_isengard_rumor_17|Łaskotałbym więźniów moim nożem. Czasami musisz sprawić, że te żałosne szczury piszczą!
+str_isengard_rumor_18|Jest tylko jedna rzecz, którą robią larwy i szczury Lugbúrza: widzą jak świry w ciemności.
 str_isengard_rumor_19|Wycinamy las, ale wielu orków którzy się w niego zagłębili, nigdy nie wróciło.
 str_isengard_rumor_20|Tam gdzie bicz tam jest też droga.
 str_rhun_rumor_begin|Jedźcie niczym wiatr po stepach!
 str_rhun_rumor_2|Krasnoludy są chciwe i nikczemne. A Ludzie z Dale pomagają im nas wykorzystywać i oszukiwać.
 str_rhun_rumor_3|Niedawno na naszej ziemi zjawiło się trzech czarodziejów. Ciekawe co zamierzają.
-; str_rhun_rumor_4|Our lands are vast and sparsely populated. But we know how to survive there.
-; str_rhun_rumor_5|We used to trade with Elves and Dwarves our wine and pipe-weed from the fertile lands. But they cheat and lie!
+str_rhun_rumor_4|Nasze ziemie są rozległe i słabo zaludnione. Ale wiemy, jak tam przetrwać.
+str_rhun_rumor_5|Zwykliśmy handlować z elfami i krasnoludami naszym wino i wodorostami z żyznych ziem. Ale oszukują i kłamią!
 str_rhun_rumor_6|Nasi kuzyni z Khand wolą walczyć pieszo, ale my wiemy że lepiej być na koniu.
 str_rhun_rumor_7|Już wcześniej pokonaliśmy legiony Gondoru, i zrobimy to kolejny raz!
 str_rhun_rumor_8|Walczymy do śmierci! Nie uciekamy, nie odwracamy się i biegniemy! Ani kroku w tył!
@@ -1330,68 +1351,68 @@ str_rhun_rumor_9|Czerwony świt pojawił się na wschodzie. Czerwony zmierzch cz
 str_rhun_rumor_10|Elfickie kobiety? Nah. Zbyt kruche!
 str_rhun_rumor_11|Każdy z moich synów już przyniósł mi głowę jakiegoś wroga. A córka przyniosła genitalia jednego. Ha ha ha!
 str_rhun_rumor_12|Orkowie to paskudne bestie bez umiejętności czy odwagi. Nie ma dla nich miejsca na polu bitwy.
-; str_rhun_rumor_13|What's best in life? To crush your enemies, see them driven before you, and to hear the lamentation of their women.
-; str_dunland_rumor_begin|We won't rest until we are avenged and the strawheads are on their knees!
-; str_dunland_rumor_2|Rohirrim bastards are friendly with their horses at night! Ha ha ha!
-; str_dunland_rumor_3|Strawheads will cough out our land! Together with their blood! Gah!
-; str_dunland_rumor_4|Death to the Forgoil! Death to the Strawheads! Death to the robbers from the North!
+str_rhun_rumor_13|Co jest najlepsze w życiu? Aby zmiażdżyć swoich wrogów, zobaczyć, jak jeżdżą przed tobą, i usłyszeć lament ich kobiet.
+str_dunland_rumor_begin|Nie spoczniemy, dopóki nie zostaniemy pomszczeni, a słomkowe głowy są na kolanach!
+str_dunland_rumor_2|Rohirrimscy dranie są bardzo przyjaźnie nastawieni do swoich koni w nocy! Ha ha ha!
+; str_dunland_rumor_3|Night Wolfs can see in the darkness. Even at night, their throwing spears never miss their target.
+str_dunland_rumor_4|Smierć dla Forgoil! Śmierć dla Słomiaków! Śmierć złodzieją z Północy!
 str_dunland_rumor_5|Teraz nazywają to Rohanem, ale to nasze ojczyste ziemie! Pomścimy naszych przodków i odpędzimy tych brudnych ziemio-kradców.
 str_dunland_rumor_6|Nie pozwól aby Forgoil cie złapali, inaczej będziesz torturowany bądź spalony żywcem!
 str_dunland_rumor_7|Mamy żądze krwi wilka i potęgę dzika
 str_dunland_rumor_8|Forgoil myśli,że jesteśmy dzicy i głupi, Zobaczymy o czym będą myśleć, kiedy ich jeźdżcy spotkają się z naszymi pikinierami.
-; str_dunland_rumor_9|Isengard's crows will peck out Strawheads' eyes, Dunland's wolves will bite their throats.
-; str_dunland_rumor_10|I caught and killed a wolf with my bare hands. I will snap a horse-man's neck like a twig! Grrr!
-; str_dunland_rumor_11|Our chief found an old bronze sword in a barrow. He bent it and threw it in the marsh. Spirits of the hills will be on our side for sure. It is the old way.
-; str_dunland_rumor_12|My forefathers fought with Freca and later Wulf against the bloodied Forgoil. We remember their courage.
-; str_beorn_rumor_begin|The woods are vast and all manner of creatures live inside.
+str_dunland_rumor_9|Kruki z Isengardu wydziobią Słomogłowym oczy, wilki z Dunlandu zagryzą ich gardła.
+str_dunland_rumor_10|Złapałem i zabiłem wilka gołymi rękami. Złamałem kark konia jak gałązkę! Grrr!
+str_dunland_rumor_11|Nasz wódz natknął się na stary brązowy miecz w taczce. Pochylił się i rzucił w bagno. Duchy wzgórz będą na pewno po naszej stronie. To stary sposób.
+str_dunland_rumor_12|Moi przodkowie walczyli z Frecą, a później z Wulfem przeciwko zakrwawionym Forgoilom. Pamiętamy ich odwagę.
+str_beorn_rumor_begin|Lasy są rozległe, a wewnątrz żyją różne stworzenia.
 str_beorn_rumor_2|Dzikie pszczoły robią najlepszy miód!
-; str_beorn_rumor_3|Elves of the woods are elusive, but kind. Dwarves from the mountains are loud and cheerful. Men of Dale are hardworking.
+str_beorn_rumor_3|Elfy z lasu są nieuchwytne, ale życzliwe. Krasnoludy z gór są głośne i wesołe. Mężczyźni z Dale są pracowici.
 str_beorn_rumor_4|Widzimy wiele dziwnych bestii przemierzających nasze ziemie.
 str_beorn_rumor_5|Śpię całą noc i pracuję cały dzień!
 str_beorn_rumor_6|Zło pełza z tamtych gór.
 str_beorn_rumor_7|Wielkie lasy już nie są takie jak kiedyś!
 str_beorn_rumor_8|Siła toporu nie leży w jego ostrzu, lecz w jego trzonku.
-; str_beorn_rumor_9|We slept through the last winter. What? Yes, you need to eat a lot in the autumn to last through winter like this.
+str_beorn_rumor_9|Spaliśmy przez ostatnią zimę. Co? Tak, musisz jeść dużo jesienią, aby przetrwać zimę.
 str_beorn_rumor_10|Ludzie Rohanu są naszymi braćmi, niedźwiedzie naszą krwią, gobliny zwierzyną!
 str_beorn_rumor_11|Zamiana w niedźwiedzia? Oczywiście że się nie zamieniamy. Kto ci to powiedział? Ha ha ha!
 str_beorn_rumor_12|Beorn był wielkim człowiekiem. Nie, nie człowiekiem, gigantem!
-str_beorn_rumor_13|*WARCZY* Masz jakiś miód?
+; str_beorn_rumor_13|The best and boldest woodmen warriors do not fear the shadows of the forest. They can fight in the darkness just as well as orcs and other filth who stalk the woods.
 str_beorn_rumor_14|Nie włócz się samotnie po górach! Niedźwiedzie i wilki trzymają się z dala od większych grup ludzi. Lecz głód, albo jak niektórzy powiadają - ciemne moce mogą powieść je na tyle blisko by Cię zaatakować.
-; str_lorien_rumor_begin|O Lórien! The Winter comes, the bare and leafless Day; The leaves are falling in the stream, the River flows away. 
-; str_lorien_rumor_2|Speak no evil of the Lady Galadriel! There is in her and in this land, no evil, unless a man bring it hither himself. Then let him beware!
-; str_lorien_rumor_3|The world is indeed full of peril, and in it there are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.
-; str_lorien_rumor_4|Good and ill have not changed since yesteryear; nor are they one thing among Elves and Dwarves, and another among Men. It is a man's part to discern them, as much in the Golden Wood as in his own house.
+str_lorien_rumor_begin|O Lórien! Nadchodzi Zima, goły i bezlistny Dzień; Liście spadają do strumienia, rzeka odpływa.
+str_lorien_rumor_2|Nie mów nic złego o Pani Galadriel! Nie ma w niej i na tej ziemi żadnego zła, chyba że człowiek przyniesie to sam. Więc niech się wystrzega!
+str_lorien_rumor_3|Świat jest rzeczywiście pełen niebezpieczeństw, a w nim jest wiele mrocznych miejsc; ale nadal jest wiele rzeczy, które są sprawiedliwe i chociaż we wszystkich krajach miłość jest teraz zmieszana z żalem, to może ona wzrastać.
+str_lorien_rumor_4|Dobrzy i chorzy nie zmienili się od dawna; nie są też jedną rzeczą wśród elfów i krasnoludów, a drugą wśród ludzi. Częścią człowieka jest rozróżnienie ich, tak samo w Złotym Lesie, jak w jego własnym domu.
 str_lorien_rumor_5|Często nienawiść szkodzi sama sobie!
 str_lorien_rumor_6|Starożytna magia chroni Lothlórien, tak potężna że Ciemność nadal nie odważyła się stawić jej czoła.
-; str_lorien_rumor_7|Nathlo i nathal! You are safe within the golden woods. Posto vae - rest now, eat and drink. If you must leave then, carry with you a memory of how Lorien once was.
-; str_lorien_rumor_8|It is said that the sea calls to everyone, sooner or later. I too shall hear the gulls one day, leave Laurelindórenan for good. I Harthon an lend and. 
+str_lorien_rumor_7|Nathlo i nathal! Jesteś bezpieczny w złotym lesie. Posto vae - odpocznij teraz, jedz i pij. Jeśli musisz odejść, zabierz ze sobą wspomnienie o tym, jaki Lorien był kiedyś.
+str_lorien_rumor_8|Mówi się, że morze zawoła do wszystkich, prędzej czy później. Ja też pewnego dnia usłyszę mewy, na zawsze opuścimy Laurelindórenan. I Harthon pożycza i kończy.
 str_lorien_rumor_9|Av-'osto - nie bój się! Coś więcej niż tylko nasze szare płaszcze chroni nas tutaj przed wrogiem.
 str_imladris_rumor_begin|Niech błogosławieństwo Ludzi, Elfów oraz Wolnych Ludów czuwa nad wami.
 str_imladris_rumor_2|Niech gwiazdy oświetlają wasze oblicza!
-; str_imladris_rumor_3|He that breaks a thing to find out what it is has left the path of wisdom.
-; str_imladris_rumor_4|We must take a hard road, a road unforeseen. There lies our hope, if hope it be.
-; str_imladris_rumor_5|Despair is only for those who see the end beyond all doubt. We do not.
-; str_imladris_rumor_6|Even after the coldest winter flowers do spring. And after the longest night, comes a new dawn.
-; str_imladris_rumor_7|So many had gathered when last I rode to war. The light of the drawing of our swords was like a fire in a field of reeds. So few have left Imladris now. 
+str_imladris_rumor_3|Ten, który łamie coś, aby dowiedzieć się, co to jest, opuścił ścieżkę mądrości.
+str_imladris_rumor_4|Musimy pokonać ciężką, nieprzewidzianą drogę. Na tym polega nadzieja, nadzieja.
+str_imladris_rumor_5|Rozpacz jest tylko dla tych, którzy widzą koniec ponad wszelką wątpliwość. My nie.
+str_imladris_rumor_6|Nawet po najzimniejszych zimowych kwiatach wiosna. A po najdłuższej nocy nadchodzi nowy świt.
+str_imladris_rumor_7|Tak wielu zebrało się, gdy ostatni raz jechałem na wojnę. Światło rysunku naszych mieczy było jak ogień w polu trzcin. Tak niewielu opuściło Imladris teraz.
 str_imladris_rumor_8|Áva rucë! Eldarowie raz jeszcze podnieśli broń do walki u boku mężnego Edaina. Możliwe że po raz ostatni, kto wie? Śpiewamy o wojnie, o ogniu i końcu Nocy.
-; str_imladris_rumor_9|I see the men from the East ride under the Dark Lord's banner and it is as though I watched their ancestors again - waves of horsemen shattering upon the gleaming shieldwall of the Last Alliance. If only the memory of Edain was as long as ours.
-; str_woodelf_rumor_begin|An Elven-maid there was of old, /A shining star by day: /Her mantle white was hemmed with gold, /Her shoes of silver-grey.
-; str_woodelf_rumor_2|Time does not tarry ever, but change and growth is not in all things and places alike. For the Elves the world moves, and it moves both very swift and very slow. Swift, because they themselves change little, and all else fleets by: it is a grief to them. Slow, because they do not count the running years, not for themselves.
-; str_woodelf_rumor_3|Darkness and evil creep over these once beautiful woods. Unless they are stopped, they will smother all hope, all light.
-; str_woodelf_rumor_4|Quick and nimble, quiet and precise, we can yet keep the Darkness at bay. But how much longer?
+str_imladris_rumor_9|Widzę, jak ludzie ze Wschodu podążają pod sztandarem Czarnego Pana i to tak, jakbym znów patrzył na ich przodków - fale jeźdźców rozbijające się na lśniącym tarczy Ostatniego Przymierza. Gdyby pamięć Edaina była tak długa jak nasza.
+str_woodelf_rumor_begin|Elficka pokojówka była ze starego, / lśniąca gwiazda w dzień: / Jej płaszcz biały był obrębiony złotem, / Jej buty srebrno-szare.
+str_woodelf_rumor_2|Czas nie trwa nigdy, ale zmiana i wzrost nie są we wszystkich rzeczach i miejscach. Dla Elfów świat się porusza, porusza się bardzo szybko i bardzo wolno. Szybko, ponieważ oni sami niewiele się zmieniają, a wszystkie inne floty: to dla nich żal. Powolne, ponieważ nie liczą lat, nie dla siebie.
+str_woodelf_rumor_3|Ciemność i zło pełzają po tych niegdyś pięknych lasach. Dopóki nie zostaną zatrzymani, będą tłumić wszelką nadzieję, całe światło.
+str_woodelf_rumor_4|Szybko i zwinnie, cicho i precyzyjnie, możemy jeszcze powstrzymać Ciemność. Ale na jak długo?
 str_woodelf_rumor_5|Shhh, no dhínen! Tutaj wciąż mogą czaić się orkowie. Musimy być gotowi!
 str_woodelf_rumor_6|*gapi się na ciebie, wyglądający na zirytowanego twoją obecnością*
-; str_woodelf_rumor_7|Oduleg hi am man theled? We need to know your purpose here. Sorcerer's spies are everywhere.
-; str_woodelf_rumor_8|Edain of Dale make intricate toys these days! They've learnt much from the Naugrim.
-; str_woodelf_rumor_9|The shadow of Dol Guldur is spreading. Dark creatures have been seen in the woods, our outposts attacked, hunters disappear and are never seen again. Our patrols now number at least 35 soldiers, we have grown that fearful!
+str_woodelf_rumor_7|Oduleg hi am man theled? Musimy wiedzieć jaki jest twój cel. Szpiedzy Czarnoksiężnika są wszędzie.
+str_woodelf_rumor_8|W dzisiejszych czasach Edain z Dale tworzą takie wymyślne zabawki. Dużo się nauczyli od Naugrima.
+str_woodelf_rumor_9|Cień Dol Guldur się rozprzestrzenia. Mroczne istoty zostały zauważone w lesie, nasze placówki zaatakowane, myścy znikają i nigdy więcej nie są widziane. Nasze patrole liczą teraz co najmniej 35 żołnierzy, przeraziliśmy się!
 str_dale_rumor_begin|Na początku smok, teraz to...
-; str_dale_rumor_2|As if the orcs coming from the north weren't bad enough, now the hordes from the east are upon us!
+str_dale_rumor_2|Tak jakby orki przybywające z północy nie były wystarczająco złe, teraz hordy ze wschodu są na nas!
 str_dale_rumor_3|Od kiedy pokonaliśmy smoka, wiemy jak szukać słabego punktu u przeciwnika.
 str_dale_rumor_4|Ludzie ze wschodu nigdy nie przebiją się przez nas i naszych krasnoludzkich sojuszników.
 str_dale_rumor_5|Widziałeś kiedyś słońce wznoszące się ponad Długim Jeziorem? Te kolory sprawiały że moje serce śpiewało. Ale teraz widzę tylko czerwony świt. To zły omen.
 str_dale_rumor_6|Krasnoludy są zbyt przywiązani do swoich skarbów. Nadal nie wiemy co myśleć o Thorinie Dębowej Tarczy.
 str_dale_rumor_7|Ludzie z Rohanu są naszymi kuzynami i nasz język jest bardzo podobny to ich.
-; str_dale_rumor_8|Esgaroth got its name from an Elven word for reeds, because of its reed banks. Did you know that?
+str_dale_rumor_8|Esgaroth wziął swoją nazwę od elfickiego słowa oznaczającego trzcinę, z powodu trzcinowych brzegów. Czy wiedziałeś o tym?
 str_dale_rumor_9|Smok jest jednym z tych rodzajów potworów których nikt nie chcę widzieć ponownie
 str_dale_rumor_10|Nasz dobrobyt pochodzi z handlu z krasnoludami i elfami. Ale ciężko targować się z krasnoludami. Bardzo mały zysk z tego.
 str_harad_rumor_begin|Czarny wąż uderzy zwinnie i śmiertelnie.
@@ -1400,44 +1421,44 @@ str_harad_rumor_3|Odum vermajál otí verthaba av daranaja-e-jatánus!\n(Morduj 
 str_harad_rumor_4|W Gondorze jest masa złota oraz świecidełek. I jeszcze więcej w dalszych ziemiach.
 str_harad_rumor_5|Złapiemy słabeuszy z zachodu i złorzymy ich w ofierze Wężowemu Bogu.
 str_harad_rumor_6|Korsarze są użyteczni, umieją dobrze żeglować, ale są brudni i opryszczkowi z wyglądu i podstępni w zachowaniu.
-str_harad_rumor_7|Nigdy nie postawiłem stopy na statku.Moim zdaniem korsarze mogą władać wszystkimi morzami.
+; str_harad_rumor_7|The Panthers from Far Harad hunt their prey in the cover of the night. Our enemies will not see them coming.
 str_harad_rumor_8|Khandyjscy Wojownicy są dzicy i nieustraszeni, ale ich strategia jest zbyt prosta.
-; str_harad_rumor_9|I'm counting on good loot in the West. We were promised it. Then I can return home and run my carpet shop in peace.
+str_harad_rumor_9|Liczę na dobre łupy na Zachodzie. Obiecano nam to. Potem mogę wracać do domu i spokojnie prowadzić sklep z dywanami.
 str_harad_rumor_10|Trzymaj się z dala od Mumakila. Te bestie mają dziki temperament i zmiażdżą cię w mgnieniu oka.
 str_harad_rumor_11|W Harad mamy pustynie i dżungle, góry i morza. Nasi ludzie są tak różnorodni jak nasze ziemie i tak liczni jak ziarna piasku.
 str_harad_rumor_12|Wielu rycerzy z Harondor woli szable od prostych ostrzy. Są one dobre do cięcia uciekających wieśniaków, ale potrzebujesz włóczni, lub dobrego miecza by przebić twardą zbroję.
-; str_harad_rumor_13|My blood brother signed up with the Karka - he's a scout now. Riders of 'The Fang' lead a dangerous life, but it is good experience for young hot-headed boys.
-; str_harad_rumor_14|Don't ever pick a fight with the Lion brotherhood! Their reputation is well earned.
+str_harad_rumor_13|Mój brat krwi zapisał się do Karki - teraz jest zwiadowcą. Jeźdźcy "The Fang" prowadzą niebezpieczne życie, ale jest to dobre doświadczenie dla młodych, gorących chłopców.
+str_harad_rumor_14|Nigdy nie zaczynaj walki z Bractwem Lwa! Zasłużyli na taką reputację.
 str_harad_rumor_15|Chciałbym żebyśmy mieli więcej broni zrobionych z czarnego żelaza. Wielu nadal musi radzić sobie z brązem, kilku nawet z drewnianymi maczugami i dzidami z czarnego szkła, biegnąc do bitwy nago.
-; str_gunda_rumor_begin|Take warm lands from men we come!
+str_gunda_rumor_begin|Bierz ciepłe ziemie od mężczyzn, których przybywamy!
 str_gunda_rumor_2|Sharkû obiecał ciepłe jaskinie 
 str_gunda_rumor_3|Dosć chowania się w lodowatych górach! Czas wyruszyć do ciepłych ziem ludzi.
-; str_gunda_rumor_4|We saw a slimy skulker in our mountain tunnels, but could never catch him. He just disappeared when we got close.
+str_gunda_rumor_4|W naszych górskich tunelach widzieliśmy śliskiego skulkera, ale nigdy go nie złapiemy. Po prostu zniknął, kiedy się zbliżyliśmy.
 str_gunda_rumor_5|Isengardczycy myślą, że są czymś specjalnym ponieważ stary człowiek ich zaopatrza.
 str_gunda_rumor_6|Spalimy ludzkie wioski by było nam ciepło 
 str_gunda_rumor_7|Człowieczki poczują odmrożenia jakie im sprawimy. A potem ogień. Ha ha ha!
 str_gunda_rumor_8|Azog i Bolg niemal pokonali krasnoludów, elfy i ludzi ostatnim razem. Ale ptasie bestie i niedźwiedzio-ludzie ich uratowały. *tfu*
 str_gunda_rumor_9|Mięso krasnoludów jest twarde i łykowate. Ludzkie jest lepsze.
 str_gunda_rumor_10|Człowiek-niedźwiedź wyszedł z lasu i pożarł Boldusha. Boldush ma pecha! Ha ha ha!
-; str_gunda_rumor_11|Some moved to Moria, much room there. But also Ghâsh in the deep. Best stay away!
+str_gunda_rumor_11|Niektórzy przenieśli się do Morii, gdzie było dużo miejsca. Ale także Ghâsh w głębi. Najlepszy pobyt z dala!
 str_moria_rumor_begin|Kiedy usłyszysz bębny- uciekaj!
 str_moria_rumor_2|Ghâsh jest w głębinach!
-str_moria_rumor_3|Zguba! Zguba! Zguba! Bębny w głębinach
-str_moria_rumor_4|Moria jest wielka, lecz żaden krasnolud już się tu nie panoszy
+str_moria_rumor_3|Zguba! Zguba! Zguba! Bębny w głębinach.
+str_moria_rumor_4|Moria jest wielka, lecz żaden krasnolud już się tu nie panoszy.
 str_moria_rumor_5|Krasnoludy kopały zbyt głęboko. Tym lepiej dla nas. HA HA HA!
 str_moria_rumor_6|Jest wiele tunelów w Morii. Nie odwiedzamy każdego z nich. 
-; str_moria_rumor_7|Some manlings and dwarves sneaked past our sentries in the mines a while ago. We doubled the watch since.
+str_moria_rumor_7|Niektóre manlings i krasnoludki przemykały obok naszych strażników w kopalniach jakiś czas temu. Od tego czasu podwoiliśmy straże.
 str_moria_rumor_8|Krasnoludy już nigdy nie postawią tu stopy! Nigdy!
 str_moria_rumor_9|Kiedy zbierzemy wystarczająco dużo żołnierzy, pójdziemy i spalimy lasy elfów.
 str_moria_rumor_10|Niewiele jedzenia znajduje się w Morii. Jesteśmy głodni. Musimy złapać ludzi i elfów!
 str_moria_rumor_11|Niektórzy udają się do lasu na południe. Nikt nie powrócił.
 str_umbar_rumor_begin|Wszystkie morza będą należeć do czarnych żagli!
 str_umbar_rumor_2|Wszystkie statki Gondoru zostały zatopione, teraz udajmy się w głębie lądu by plądrować.
-str_umbar_rumor_3|Umbar jest naszym przeznaczeniem! Będzie również przeznaczeniem Gondoru.
+; str_umbar_rumor_3|Our Night Raiders can fight in the dark just as well as in broad daylight. They lead our scouting parties far inland.
 str_umbar_rumor_4|Gondorczycy nie potrafią żeglować. Są szczurami lądowymi.
 str_umbar_rumor_5|W przeszłości zabijaliśmy królów Gondoru. Teraz nie mają nawet króla!
 str_umbar_rumor_6|Gondorczycy spalili naszą flotę lata temu. Teraz my spalimy Gondor.
-; str_umbar_rumor_7|Nothing the sea can throw at us frightens a corsair. But we heard some disturbing rumours about abominations on land.
+str_umbar_rumor_7|Nic, co może rzucić na nas morze, przeraża korsarza. Ale usłyszeliśmy niepokojące pogłoski o obrzydliwościach na lądzie.
 str_umbar_rumor_8|Przejdziemy przez Gondor niczym gigantyczna fala i zdobędziemy nasze dawno stracone ziemie.
 str_umbar_rumor_9|Haradrimowie nie piją rumu.Wiedziałeś o tym? My za to go uwielbiamy gdyż pomaga ustabilizować harpun w dłoni.
 str_umbar_rumor_10|Widziałem kilku Variagów z Khand w walce. Nie chciałbym się z nimi mierzyć. Mamy szczęście że są po naszej stronie.
@@ -1452,20 +1473,20 @@ str_khand_rumor_8|Zachód jest słaby i dekadencki. Oni nie mają ducha wojownik
 str_khand_rumor_9|Nie walczymy dla złota czy niewolników, walczymy za honor i chwałę!
 str_khand_rumor_10|Ludzie z Zachodu są aroganccy, Nie wiedzą z czy mogą mieć do czynienia!
 str_khand_rumor_11|Handlujemy z Rhun, Mordrem i Haredem. Czasami również z nimi walczymy. Taką drogą kierują się nasi ludzie.
-; str_khand_rumor_12|Have you made your warrior mask yet? You'll need one soon! If the enemy can't see your face, his spirit won't be able to find you.
-; str_good_rumor_begin|From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.
+str_khand_rumor_12|Czy stworzyłeś już swoją maskę wojownika? Będziesz potrzebował jej wkrótce! Jeśli wróg nie będzie widział twojej twarzy, jego duch nie będzie mógł cię znaleźć.
+str_good_rumor_begin|Z popiołów ogień będzie budzony, Światło z cienia wyskoczy; Odnowione będzie ostrze, które zostało złamane, Bez korony znowu będzie królem.
 str_good_rumor_2|Orkowie walczą lepiej w nocy, niż za dnia.
 str_good_rumor_3|Uruk-hai są inną rasą orków, która nie boi się światła słonecznego!
 str_good_rumor_4|To pokonaniu i po odetchnieniu, cień przyjmuje nową formę i znowu rośnie.
 str_good_rumor_5|Martwe bagna ... splugawiona ziemia, chora i niemożliwa do uzdrowienia.
-; str_good_rumor_6|The Shadow that bred can only mock, it cannot make: not real new things of its own. I don't think it gave life to the orcs, it only ruined them and twisted them.
-; str_good_rumor_7|Greenwood it used to be called and full of elves it was. Greatest of the forests of the Northern world. But now it's Mirkwood. Crawling with all manner of evil creatures.
+str_good_rumor_6|Cień, który wyhodował, może tylko kpić, nie może zrobić: nie jest prawdziwym nową rzeczą. Nie sądzę, żeby to dało życie orkom, tylko je zepsuje i przekręci.
+str_good_rumor_7|Greenwood to kiedyś było nazywane i pełne elfów. Największy z lasów północnego świata. Ale teraz jest to Mirkwood. Czołga się z wszelkiego rodzaju złymi stworzeniami.
 str_good_rumor_8|The Argonath,Królewskie Kolumny, wielcy strażnicy północnej granicy Gondoru.
 str_good_rumor_9|Amon Hen to najbardziej zachodni z trzech szczytów na południowym końcu Nen Hithoel
 str_neutral_rumor_begin|Jutro wszystko może się zmienić...
 str_neutral_rumor_2|Martwe Bagna ... miejsce splugawione i chore.
 str_neutral_rumor_3|Te tereny były kiedyś zupełnie inne.
-str_neutral_rumor_4|Trzymaj się z dala od Fangorn.
+; str_neutral_rumor_4|Men fight weaker at night. But there are some who are used to seeing in the dark.
 str_evil_rumor_begin|Orkowie walczą lepiej w nocy,ludzie walcz lepiej za dnia.
 str_evil_rumor_2|Zwalczaj kawalerię piką, piechotę strzalą a łucznika tarczą !!!
 str_evil_rumor_3|Wielkie rzeźby słabeuszy na wielkiej rzece nie będą dłużej istnieć.
@@ -1476,7 +1497,7 @@ str_legendary_rumor_mirkwood|Kreatury inne niż orkowie pełzają naokoło Mirkw
 str_legendary_rumor_fangorn|Fangorn to las, który lepiej omijać. Dzieją się tam niecodzienne rzeczy.
 str_last_rumor|Ostatnio nie słyszałem niczego interesującego.
 str_ent_rumor_begin|Nie bądź taki pochopny...
-; str_ent_rumor_2|Learn now the lore of Living Creatures! First name the four, the free peoples: Eldest of all, the elf-children; Dwarf the delver, dark are his houses; Ent the earthborn, old as mountains; Man the mortal, master of horses.
+str_ent_rumor_2|Dowiedz się teraz o wiedzy o żywych stworzeniach! Najpierw nazwijcie czwórkę, wolne narody: Najstarszy ze wszystkich, dzieci elfa; Krasnolud męczący, ciemne są jego domy; Ent ziemskie, stare jak góry; Człowieka śmiertelnika, mistrza koni.
 str_ent_rumor_3|Język entów jest pięknym językiem, ale trzeba poświęcić wiele czasu aby cokolwiek w nim powiedzieć, dlatego go nie używamy, chyba że coś jest warte długiego czasu do powiedzenia lub, wysłuchania
 str_gondor_rank_0|Poddany Gondoru
 str_gondor_rank_1|Żołnierz Gondoru
@@ -1701,6 +1722,8 @@ str_fullname_region_s_mirkwood|do gęstwiny lasów południowej Mrocznej Puszczy
 str_fullname_region_above_mirkwook|do Północnego Rhovanionu, krainy pomiędzy Mroczną Puszczą a Szarymi Górami na Północy
 str_fullname_region_grey_mountains|na podnóża Gór Szarych, zamieszkałych przez Krasnoludy
 str_fullname_region_mordor|do Mordoru, mrocznego Królestwa Saurona
+; str_fullname_region_dimrill|Dimrill Dale, at the feet of the Mountains of Moria
+; str_fullname_region_s_rebor|the realm of Dale, at the feet of the Lonely Mountain
 str_shortname_region_unknown|do nienazwanej krainy
 str_shortname_region_pelennor|na Pola Pelennoru
 str_shortname_region_subfac_pelargir|Lenno Lebennin
@@ -1737,6 +1760,8 @@ str_shortname_region_s_mirkwood_|do Południowej części Mrocznej Puszczy
 str_shortname_region_above_mirkwook|do Północnego Rhovanionu
 str_shortname_region_grey_mountains|na podnóża Gór Szarych
 str_shortname_region_mordor|do Mordoru
+; str_shortname_region_dimrill|Dimrill Dale
+; str_shortname_region_s_erebor|the realm of Dale
 str_trait_title_elf_friend|Przyjaci{el/ółka} Elfów
 str_trait_desc_elf_friend|Zyskał{e/a}ś poważanie wśród Elfów i zaufanie sojusznika. Koszt rekrutacji elfów został zmniejszony i od teraz możesz wydawać rozkazy Elfickim Armiom.
 str_trait_title_gondor_friend|Pobłogosławion{y/a} przez Namiestnika
@@ -1766,7 +1791,7 @@ str_trait_desc_accursed|Czujesz, że ściągn{ołeś/ełaś} na sibie gniew zza 
 str_trait_title_stealthy|Cień
 str_trait_desc_stealthy|Opanowujesz sztukę infiltracji. Otrzymujesz premię do ukrycia w misjach wymagających tego typu talentów.
 str_trait_title_berserker|Berserker
-str_trait_desc_berserker|Po wielu bitwach, walcząc bez zbroi, wściekłość czyni cię odporn{ym/ą} na wszelkie rany. W bitwie, gdy zostaniesz ciężko poranion{y/a} otrzymasz jednokrotnie premię do zdrowia. Nie przywróci to w pełni sił lecz utrzyma przy życiu gdy inni już dawno by padli od ran.
+; str_trait_desc_berserker|After many battles where you eschewed the use of armor your ferocious will has become like iron. While fighting lightly armoured, each slain foe fills you with grim vigor.
 str_trait_title_infantry_captain|Kapitan{/a} Piechoty
 str_trait_desc_infantry_captain|Zyskał{e/a}ś niespotykane umiejętności w dowodzeniu piechotą. Dzięki ciężkiemu szkoleniu oddziały tego typu otrzymają, jednokrotnie w czasie bitwy, premię do zdrowia.
 str_trait_title_archer_captain|Kapitan{/a} Łuczników
@@ -1782,7 +1807,9 @@ str_trait_desc_battle_scarred|Cierpisz od straszliwych ran, otrzymanych w trakci
 str_trait_title_fell_beast|Dzika Bestia
 str_trait_desc_fell_beast|Twa skóra poznaczona jest wieloma bliznami z niezliczonych bitew, a zło trawi cię od środka. Nawet na standardy orków, uruków oraz troli jesteś ocenian{y/a} jako dzika i niebezpieczna bestia. Którzy ci służą płaczą z zachwytu gdy stajesz w polu. Jesteś nieustraszonym wcieleniem wojny.
 str_trait_title_butcher|Rzeźnik
-str_trait_desc_butcher|Doświadczenie udoskonaliło Twoją umiejętność wydobywania więcej mięsa z ciał twoich wrogów. Otrzymujesz dodatkowy kilogram mięsa za każdym razem, gdy zabijasz jednego ze swoich więźniów w celu pozyskania mięsa.
+; str_trait_desc_butcher|Experience has honed your skill in extracting more meat from the flesh of your enemies. You gain an extra pound of flesh every time you slaughter one of your prisoners for meat. You also get more human meat after every battle.
+; str_trait_title_well_travelled|Well-Travelled
+; str_trait_desc_well_travelled|On stone paved roads and mossy animal paths, over the tallest mountains and in the deepest vales, you've discovered hidden places and seen long forgotten marvels. From your experiences, you've learnt to spot enemies before they see you, and the easiest route for your troops.
 str_wound_head|mocne uderzenie w głowę
 str_wound_chest|popękane niektóre żebra
 str_wound_arm|mocno okaleczona ręka
@@ -1878,3 +1905,94 @@ str_beorn_gift2|Ule
 str_beorn_gift3|Bursztynowe Naszyjniki
 str_beorn_gift4|Dobrze Wyszkolone Kucyki
 str_cmenu_follow|Podążaj 
+; str_reset_to_default|Reset to Default
+; str_done|Done
+; str_gondor1|Gondor1
+; str_gondor2|Gondor2
+; str_gondor3|Gondor3
+; str_gondor4|Gondor4
+; str_gondor5|Gondor5
+; str_gondor6|Gondor6
+; str_gondor7|Gondor7
+; str_gondor8|Gondor8
+; str_gondor_end|Gondor1
+; str_gondor_intro|^It is a bitter thought, that a hero of this great kingdom should die within the sight of his land, unaided and helpless.^^The news of Boromir’s death passed like a swift wind through all of Gondor, even to the plains of Pinnath Gelin and the hills of Lamedon, even to the shores of Pelargir and the coasts of Dol Amroth. The hearts of all your people are filled with grief and pity; and more besides, with fear and foreboding, for Gondor is hard pressed and sore beset, ringed by implacable foes or uncertain friends.^^The Shadow rises in the East, as of old; the fractious Corsairs of Umbar grow bolder; the wild men of the East and South press their claims upon Gondorian land.^^No longer can you stand by and wait. Trust you have placed in your captains; sword and spear they will place in your hand. Gondor wanes, but Gondor still stands; and even the end of its strength is still very strong. You have resolved yourself to play what part you may in this coming war against the servants of the Nameless. Much is spoken of in the councils of the great and wise, to which you are not privy, but there is one thing you feel you can be sure of.^^If the valiant hearts of Gondor should fail, and Minas Tirith be lost, then the last light of the West will be extinguished. All will fall beneath the Shadow.
+; str_dwarf_intro|^The Kingdom under the Mountain has done well, of that there can be no dispute. Old King Dáin has just passed his two hundred and fiftieth year, and by any measure he is fabulously wealthy. Under his rule, Erebor thrives, and knows greatness. The waterways, fountains and pools of neighbouring Dale bear witness to how your builders have surpassed the skill of even your forefathers, though their secrets of metalwork have regrettably been lost.^^Yet a darkness from Mordor entered these halls, when Sauron’s foul envoy, with his breath like the hiss of snakes, came bearing evil words. Heavy have been the hearts of your chieftains since then, for the power that has re-entered Mordor has not changed. The Shadow grows and draws nearer - already the Enemy is moving, and war will soon begin.^^You have sworn to take up arms, and stand with your friends against your foes. You will resist, with hope or without it.^^But if the bravery of the Dwarves of Erebor should prove insufficient, then the glory of Durin’s folk will fade away and be forgotten. All will fall beneath the Shadow.
+; str_rohan_intro|^In these days of doubt, one thing you know to be true: open war lies before the proud people of Rohan. None may live now as they have lived, and few shall keep what they call their own. Some close to the King’s ear speak craven counsels, but you have determined to go to him, take a grim oath of service, and stand with such fell-handed captains and thanes as will protect the herds and herdfolk.^^Saruman of Isengard has declared lordship over the lands of Rohan, and bitter is the fighting with Orcs, Wolf-riders and the evil Men of Dunland. The Lord of the Black Land to the east sends raiding parties to steal your horses, choosing always the black ones. Your heart misgives you, for it seems to you that enemies beset your people both east and west.^^But still you will give battle, for if aught is said of the Rohirrim, it is of your unfailing valour in arms, though foe should beleaguer you, or fire encircle you. The steeds of Rohan will stride as wind in the morning. And if death should come for you, then a mound will be raised, but for now, war calls you. Let horse be bridled, horn be sounded!^^Yet, if even the courage of the Sons and Daughters of Eorl should fail, then the last hope of Rohan will fade and die away. The horn will blow no more. All will fall beneath the Shadow.
+; str_mordor_intro|^The dark power rises again in the East. The numbers of the Dark Lord’s legions swell - Easterling men come to serve and pay tribute, hollow-eyed renegades from ancient Numenor craving a chance to regain what their ancestors lost, great hosts of orcs and uruks slavering at the thought of war and killing. The pens are filled with ferocious, fearsome wargs. And high above, in the black skies, fly the winged Nazgûl… the apple of the Great Eye, with power deep beyond the reach of your muddy dreams.^^You have resolved to rise in the ranks, by any means, and gain the favour of Lugbúrz. By wit, hardiness, and ruthless skill in battle you shall crush all who stand in your way. You will earn the favour of the Dark Lord of Mordor, he who is to rule all after this coming War… or you will die trying.^^The light of the West shall be snuffed out. The time of Mordor has come!
+; str_isengard_intro|^A new power is rising, and you are part of that power. You march and fight under the banner of the White Hand, and your allegiance is sworn to crafty old Saruman the Great, wise and cunning, who gives you the tasty flesh of man and horse to eat.^^Under his banner march the fighting Uruk-hai. They are slayers of great warriors, winners of battles. Their armour is thick and their shields broad. You will make a name for yourself among your fellows, and hew down many Whiteskins. You will not stop, by sun or moon, by fair weather or storm, until your enemies lie dead and broken.^^The skill of Saruman is great. With it, you will throw down the power of the horse people, and their weak allies; yes, even elf-flesh will be yours to feast upon. Their villages and forests will burn, and their cities too. And then… who is to say if the maggots and apes of Lugbúrz will not defer to the mighty ones of Orthanc, eh? The strong command. The weak will serve.^^The Age of Man is ending. The time of Isengard has come!
+; str_lorien_intro|^It is the custom of your people, the Galadhrim of Laurelindórenan, to dwell in the treetops. The great trees of mighty girth bear leaves of gold and blossoms of yellow, and by the waters of the Nimrodel one may find restful sleep and forgetfulness of grief; but in these darkening days none may long forget the Shadow that hovers near, pressing in from the east, from the dark land of Mordor and nearer still.^^For many a long year, your kin of Lothlórien have had few dealings with other folk. Indeed in nothing is the power of the Dark Lord more clearly shown than in the estrangement that divides those who still oppose him. Yet you are one of those who can perceive that to keep living thus, an island amid many perils, will bring only despair. Some there are among you who sing that the Shadow will draw back, and peace shall come again; and though the world can never be as it was of old, yet will you take up sword and bow, and play your part in the War to come, to defend not only the Dreamflower that you love, but perhaps lands beyond, that will otherwise fall to evil.^^For if the old friendships are not renewed, and thought is taken only to fight the long defeat, then shall the last light of Lórien go out forevermore. All will fall beneath the Shadow.
+; str_imladris_intro|^Alas, for these latter days of grieving memory! In Imladris, the homely house of Elrond Halfelven, one may recall somewhat of the glory and splendour of Eregion in the Elder Days. But the world will never again be as it was of old.^^The fields of Eriador, though lovely to behold, are tilled no more by the hands of Men. The Dúnedain, much diminished in number after the breaking of Arnor, keep their lonely vigils in the desolate wilderness of the North. And the days of Gil-Galad are forever gone, for the Firstborn decrease, and go into the west, while the blood of ancient Númenor dwindles and the race of Westernesse decays.^^Though Rivendell remains a place of sanctuary, the days darken in all the lands around.^^A last rallying call has gone forth, and a great host from Imladris - perhaps the last such in all the Ages of the world - shall march. You are part of this host, and though you will do your duty as instructed by the wise and the great, your heart is not without misgivings. Neither in Imladris, nor in the Grey Havens, nor even in Lórien the Golden Wood, is there strength to withstand the full might of the Enemy, should it come assailing when all else is overthrown.^^Yet a slim hope remains: if the old friendships can be renewed, and all who stand against evil join strength against the common foe, some time may yet be won, so that the final end of the menace of Mordor may yet be sought.^^But if the old alliances should fail, and old friends come to ruin, then nothing shall be left but the days of lengthening darkness, before true Night comes. All will fall beneath the Shadow.
+; str_woodelf_intro|^A shadow lies over the Woodland Realm, a poison spreading through the air itself from Dol Guldur. The Lord of Mordor has returned to his dark tower, and his lieutenants in Dol Guldur have turned much of Greenwood the Great, Eryn Galen, into places of great fear, where even your people, the Silvan Elves of the north, will not freely go.^^Thranduil son of Oropher leads your people, but has been cautious in his policy - fresh is the grief of Dagorlad, perhaps, to his memory. Yet, now that the men of Dale are threatened by the coming war, your king has roused himself. Ever does he look to the south with a deep shadow in his heart, and long will he tarry ere he leads his people into likely ruin, but the day of decision is upon him.^^With spear and blade and bow, you will defend the borders of your realm at your king’s command - and if need be, you are resolved to aid any who would stand against the common foe alongside the Elves of Mirkwood.^^For fear speaks in your heart, as it does for many of your fellows, that if the old friendships are not renewed, and old allies come to ruin, then Mirkwood shall be darkened forever. All will fall beneath the Shadow.
+; str_dale_intro|^For three generations of men, the Kingdom of Dale has prospered. King Brand, grandson of Bard the Bowman, rules justly, and trade has enriched the realm.^^But enemies now encroach, gathering across the border to the east - fractious, quarrelsome nomads, with whom speech is difficult and trust harder still. Toys and bells and pretty dolls must now be set aside, for spear and bow and sturdy shield. Trees must be hewn not for the walls of a new steading, but for quivers and the arrows to fill them with. Young men go not to till the fields or harvest the orchards, but to the barracks, to war and a red dawn.^^Yet Dale has stalwart allies: the Dwarves of the Lonely Mountain, whose masonry decorates every street of Dale. And, too, the Elves of Mirkwood have had traffic with your people, to the good of all. The stout Beornings of the Ford keep the trade routes safe and open. In these dark days, all who reject the overlordship of Mordor must stand together, or be singly cut down like wheat stalks in the field.^^You have resolved to do your part, for if the steadfast defenders of Dale should fail, then the line of Bard will be ended, and the last kingdom of Men in the north will be no more. All will fall beneath the Shadow.
+; str_harad_intro|^From the deep deserts, the thick jungles and the sun-soaked riverlands, we have come. Let the people of Gondor stand in awe of us, and make submission.^^They have said that the lands south of the river Poros are theirs by ancient right, and they therefore call it Harondor, “South Gondor”, and call us invaders. This their claim, we have not understood. Was it not in the time of the Plague that the Great Serpent made his will known in driving the Gondorians out by death and illness, and allowed our forefathers to settle there and grow in numbers? How could any men, without the blessings of the Powers and merely from their own strength, claim this land? Did our ancestors not live here, when theirs died or left?^^Furthermore, they have said that in times long past they first gave us crafts and the skill of growing food upon the land; therefore we should become as vassals unto them. This, too, we have not understood, for well our learned men remember the days of their king Tar-Ciryatan and those after him who took from our people much tribute, and plundered for themselves the richest treasures of our lands. And when they behave arrogantly, saying, “Be grateful, and pay tribute to the Steward of Gondor,” having no king for many long years by reason of immense foolishness, how do they dare to press their claims upon us?^^We like not the company of foul orcs, and the Dark Sorcerer demands great sacrifice. Many young men and women we have given up to him, in the Dark Land, and still he wants more. Yet, with his power and aid, all the lands from the rising of the sun to its setting shall come to us, and we shall own them.^^The Age of Gondor is ending. Let battle be joined!
+; str_rhun_intro|^The wagon cities of your people have roamed the high steppes for many moons. Your chieftains have taken counsel from the power that has once again risen in the land of Mordor. They promise many things to you and your fellow warriors: they will avenge the defeat of the Wainriders and the humiliation of the Balchoth; they will wipe clean for once and all the stain of Gondorian rule, under the ancient kings who had the audacity to name themselves “Vanquishers of the East”; they will win for the clans many slaves and much wealth.^^They say many things, but you know you do not fight for a life of ease, like the fat and weak Lake-people, or the short greedy diggers scurrying around in their tunnels of stone, or the cowardly elves skulking in the trees singing songs.^All that matters is glory, won in battle, and it is not the promises of chieftains that will win you a place of honour on the great Mountain after you die; it is by skill and strength that you will win the right to stand there. If you must fight alongside filthy honourless Orcs for a time, so be it - but your deeds will be your own, and they will be told over and over, around the campfires, for many generations to come.^^The Age of the West is ending. The time of the East has come!
+; str_khand_intro|^The strong rule, and the weak serve. This truth is known to your people, the people of Khand, from birth. Boys and girls alike must survive the fighting pits for many moons, before they may take their place among grown men and women. Such ways have made your people strong. Little wonder, then, that the Lord of the Black Land speaks so fairly to your Shibh! He knows a single sharp halberd in the hands of a Variag of Khand is worth twenty spears in the hands of worthless orcs.^^Many promises have been made to your leaders. A great host has been assembled, the greatest yet in living memory. From the farthest reaches of your lands, the fiercest fighters among your people have answered the summons. You will plunder the lands of the weak, decadent Gondorians. You will take many of them as slaves, and make them work their rich green lands for you, as is the right of the conqueror.^^The Age of the West is ending. The time of the East has come!
+; str_umbar_intro|^The puffed-up nobles in Gondor, so proud of their vast and fertile estates, are sitting on stolen land - it was Castamir, of old, who was rightful king of the realm, before his throne was usurped by faithless curs. His descendants have led your nation well, winning many great victories on the seas and the coasts.^^Time and again, however, the bitter winds of defeat have blown in your face - some years ago, the faithless Gondorians launched a cowardly night attack upon the main haven, sending the better part of Umbar’s strength down to the sea floor. Your ship was lost, your captain with it, and you were among the few survivors of your erstwhile crew.^^But fifty great ships remain, and countless smaller vessels besides. The Dark Lord of Mordor has issued the call. Now is the time for a reckoning. You will join hands with your brothers-in-arms of the Southern lands, the grim-eyed men of Harad, and you will exact your vengeance upon the treacherous men of Gondor, until all Belfalas and Anfalas is in flames, and your coffers overflow with the wealth that is rightfully yours.^^The Age of Gondor is ending. The time of Umbar has come!
+; str_moria_intro|^You have come from the Mines, to avenge your folk, killed by manlings and diggers and elf scum! Your tribe was strong, and rich - the Moria-silver you gathered, in great heaps, and with it won great favour from the Dark Lord in the East. The short ones came, thinking to make their homes here - but you slaughtered them and had great sport in the doing. Then a small band of thieves and brigands came through, and awoke the deep Fire. Ruin, ruin for all! Many places cannot now be reached. Much wealth, much Moria-silver, and all too deep to dig up!^^But now the Dark Lord calls. War comes. The Great Eye will reward faithful servants, yes. He will remember who it was who sent him so much of this shiny Moria-silver, and you will obey him - you will kill, and feast upon the Whiteskins, and all will be well for you and your tribe. And those proud elves, in their golden forest, they won’t be so proud when you and your folk burn their trees down around them!^^The light in the woods shall be snuffed out. The time of Moria has come!
+; str_guldur_intro|^The dark power rises again in the East. The Lord of Barad-dûr has sent his servants to Dol Guldur, where his will once more shall hold sway. The forges overflow with weapons and armour, the pens house thousands of ferocious wargs, the barracks are full to the brim with orcs ready to fight and die.^^And high above, in the darkening skies over Mirkwood, fly the winged Nazgûl… the apple of the Great Eye, with power deep beyond the reach of your muddy dreams. No fewer than three has the Dark Lord sent to this place, from which his power will reach, subduing all who resist, until the enemies of Mordor are broken forever.^^You have resolved to rise in the ranks, by any means, and gain the favour of Dol Guldur and Lugbúrz. By wit, hardiness, and ruthless skill in battle you shall crush all who stand in your way. You will earn the favour of the Dark Lord, he who is to rule all after this coming War… or you will die trying.^^The shadow of Dol Guldur shall spread. The light of the West shall be snuffed out. The time of Mordor has come!
+; str_dunland_intro|^Your people have known nothing but foul injustice at the hands of the black-hearted Forgoil, the strawhead paleskins of Rohan. From the time of mighty Freca, felled by a cowardly blow from the man-eater beast Helm, he whom the Rohirrim called Hammerhand, you have suffered grievously under their heavy yoke. High-handed are their treacheries, too many to number.^^ But now the wind is changing. Wise Saruman, the cunning old master of Isengard, has made promises of friendship to your people. With his help, surely the claim of noble King Wulf, who in happier days rightfully sat the throne of Meduseld in Edoras, will be upheld.^^No longer will your people scrabble in the rocky soil for a hard living. No longer will babes in arms die in the embrace of their mothers, because the milk flows too weakly. No longer will your people cower in fear of the murdering usurpers of Rohan. Your pikes are long, and your axes cruel and sharp. With the help of Saruman the Wise, you cannot fail. You will take back what is rightfully yours.^^You will fight for Saruman. You will die for Saruman!
+; str_beorn_intro|^These woods, these old paths, and the Ford are the only home you have ever known, but old Beorn was one who remembered an older home, far away in the mountains. His son, Chief Grimbeorn the Old, now stands foremost among your people, and like his father, he is apt to sit on the great Carrock at night, setting his sight to the west, deep in his own thoughts.^^For your part, your thoughts are simple. The woods grow dangerous. Foul orcs grow bolder, and walk about even in daylight. The wolves they ride will not listen even to one of your people, so twisted have they become by goblin ways. The air feels and smells different, bad. The further south you go, closer to Dol Guldur, where not so long ago the Sorcerer dwelled and did things unworthy of naming, the worse it gets.^^The Elves huddle in their caves to the north. Most will not come out to protect the woodland, its animals and trees and other things that move and live.^^Your people will fight, as you always have, to keep the Ford and the forest safe. With a stout stick in your hands, you will smash any orcs that dare intrude. And if it should come to greater blows, why, many among your people are more than they seem…^^But if even the grim battle-strength of the Beornings should fail, then the world will know no more the joy of sweet honey, bright flowers, shady forest paths and all things good. All will fall beneath the Shadow.
+; str_intro_strings_end|Intro END
+; str_gondor_intro_2|^While travelling to swear service to your liege lord, you chance upon a caravan being attacked by orcs.
+; str_dwarf_intro_2|^On your way to the gates of Erebor, you chance upon a caravan being attacked by orcs.
+; str_rohan_intro_2|^On your way to Edoras, you chance upon a caravan being attacked by orcs.
+; str_mordor_intro_2|^On your way to the Morannon to report to Lugbúrz, you chance upon some orcs raiding a caravan.
+; str_isengard_intro_2|^On your way to Isengard, you chance upon some orcs raiding a caravan.
+; str_lorien_intro_2|^On your way to Caras Galadhon for an audience with the Lady Galadriel, you come upon some allies preparing to ambush a company of Orcs.
+; str_imladris_intro_2|^On your way back to the main Rivendell camp after a scouting mission, you come upon some allies preparing to ambush a company of Orcs.
+; str_woodelf_intro_2|^On your way back to the Elvenking’s Halls after a patrol in the woods, you come upon some allies preparing to ambush a company of Orcs.
+; str_dale_intro_2|^On your way to the city of Dale, you chance upon a caravan being attacked by orcs.
+; str_harad_intro_2|^Your fellow warriors and riders, as well as the mighty Mûmakil, have established your main camp across the river from the fortified city of the Gondorians, the one they call Pelargir. No doubt when it falls, your chieftains will think of a more fitting name for it. Then shall you hold it forevermore against the dwindling men of the West.^^As you walk through a wooded vale, a sudden small rustling makes you stop. You have heard many tales of the Gondorians who skulk around in these lands, sneaking like cowards - Rangers, they are called. They are deadly with the bow and arrow, like the Gold Serpents of high renown. Are some of them preparing to ambush your party? You had better sound the warning!
+; str_rhun_intro_2|^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan.
+; str_khand_intro_2|^Your fellow Variags have been summoned to the Morannon, the Black Gates that lead into Mordor. You do not relish having to camp so near to filthy honourless orc-kind, but for a time you will oblige. Still, the Lord of Mordor would be foolish indeed not to recognise the worth of your people, and treat you accordingly!^^As you walk through a wooded vale, a sudden small rustling makes you stop. You have heard many tales of the Gondorians who skulk around in these lands, sneaking like cowards - Rangers, they are called. They are deadly with the bow and arrow. Are some of them preparing to ambush your party? You had better sound the warning!
+; str_umbar_intro_2|^On your way to where the Admiral has established the beachhead fortifications, you chance upon some orcs raiding a caravan.
+; str_moria_intro_2|^While returning from a scouting mission in the dale, you chance upon some orcs raiding a caravan.
+; str_guldur_intro_2|^On your way to Dol Guldur, you chance upon some orcs raiding a caravan.
+; str_gundabad_intro_2|^On your way to Mt. Gundabad, you chance upon some orcs raiding a caravan.
+; str_dunland_intro_2|^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan.
+; str_beorn_intro_2|^On your way to Beorn’s House, you come upon some allies preparing to ambush a company of Orcs.
+; str_intro_strings_2_end|Intro 2 END
+; str_gondor_faction_intro|^The South Kingdom of Gondor, “land of stone” in Sindarin, is inhabited by descendants of the ancient Númenoreans. Under the rule of Steward Denethor, these proud men stand as the first and perhaps last line of defence against the Enemy.^^Gondor’s military consists of forces coming from all the different fiefdoms. You get the standard army with solid and well-armoured troops overall: Dol Amroth’s heavy cavalry, green-clad archers and spearmen from Pinnath Gelin, bowmen from the Blackroot Vale, axemen of Lossarnach, heavy marines from Pelargir or hardened clansmen of Lamedon.
+; str_dwarf_faction_intro|^Dwarves, also known as Durin’s Folk, are short, tough and doughty warriors. They are renowned for the craftsmanship of their weaponry and armour, though they say with regret that they cannot match the lost arts of their ancestors. In these latter days, they come from the Lonely Mountain and the Iron Hills.^^Their army consists of an infantry line, a scout/archer line and an Iron Hills line (their heaviest hard-hitting infantry).
+; str_rohan_faction_intro|^Rohirrim are the horse lords of the Mark of Rohan, led by king Théoden.^^Rohirrim have very good cavalry, ranging from heavy lancers to agile horse archers. They have an infantry line as well, branching into shieldwall-forming troops and heavy swordsmen bearing longswords.
+; str_mordor_faction_intro|^Mordor represents Sauron’s own forces bred in the darkness of the Black Land.^^Armies of Mordor consist of orcs, Uruks and evil men (Black Númenoreans). Uruks of Mordor are a better-equipped and stronger breed of orcs, but have no archery line. Most regular orcs are infantry, skirmishers or archers, but there are also orc warg-riders. Black Númenoreans are comparatively rare, but very dangerous as infantry or cavalry. Sauron has also bred fierce battle trolls, but they’re extremely hard to obtain.
+; str_isengard_faction_intro|^Isengard is ruled by Saruman, the traitor wizard. He created his own version of orcs: the Uruk-hai.^^The forces of Isengard are quite well-equipped, though the weapons and armour may seem crude. The orcs are comparable to any other orcs, but the Uruk-hai are truly deadly killing machines wielding pikes, halberds, heavy axes and nasty cleavers. They also have the largest and most powerful bows among any of the orcish races.
+; str_lorien_faction_intro|^The Elves of Lothlórien, known as the tree-dwelling “Galadhrim”, are a powerful group of Nandor and Sindar living in the Lórien woods, led by Lord Celeborn and Lady Galadriel.^^Their forces consist of an infantry line and a scout line, with the occasional incorporation of an elite unit of Noldorin horse archers. All their troops are highly skilled, equipped with the finest arms and armour of Elven make, and overall extremely deadly in combat. A rain of arrows from under the forest cover, followed by a devastating infantry charge, is their main tactic.
+; str_imladris_faction_intro|^The Elves of Imladris (Rivendell) are Sindar and Noldor led by Lord Elrond and his two sons. They are custodians of the ancient lore of the west, as well as powerful and ancient artifacts dating back to the First Age. Under their banner, the Dúnedain of the North march as well – the remnants of the broken Northern kingdoms of Men are tall dark-haired rangers and nobles, clad in sturdy leathers or ancient maille.^^The soldiers of Imladris are among the most highly-skilled in Middle-Earth, and are extremely well-equipped. Their armies are capable of considerable tactical flexibility.
+; str_woodelf_faction_intro|^The Silvan Elves, called “wood-elves” in ancient times, live today in Mirkwood, led by King Thranduil.^^The Elves of Mirkwood have a competent infantry line that features both spears and swords. Their scouts and archers are the mainstay of their armies, more so than for their cousins of Lórien. Their armour is light but affords a great deal of protection.
+; str_dale_faction_intro|^Dale is a city rebuilt by Northmen who share ancestry with the Rohirrim, joined by the survivors from the lake city of Esgaroth (after it was burnt down by Smaug).^^Men of Dale provide tough infantry focused on polearms, famous archer troops including the legendary Barding bowmen, and a merchant guard line acting as reasonably good cavalry.
+; str_harad_faction_intro|^The Haradrim, the “hosts of the South” in Sindarin, come from the deserts and rainforests of the far South. They have a fondness for wearing bright colours and heavy gold ornamentation in warfare.^^Haradrim have average but competent infantry (skirmishers/archers and spearmen/swordsmen) from Great Harad, a cavalry line (incorporating both heavy cavalry and horse archers) from Harondor and a Far Harad line of tribal warriors.
+; str_rhun_faction_intro|^Men of Rhûn are tribal Easterlings hailing from around the sea of Rhûn, far to the east.^^The bulk of their army is cavalry - horse archers and lancers, both very lightly-equipped. Their top-tier cavalrymen ride much larger and heavier mounts, with more barding. Their infantrymen are also quite lightly-armoured and wield large axes and swords. In the open field, a cavalry host of Rhûn can be a fearsome force to face.
+; str_khand_faction_intro|^The Variags of Khand are fierce Easterling raiders who wear terrifying battlemasks into battle.^^They rely on fast light infantry (skirmishers and blademasters) and heavy axemen, while their cavalry line contains both light agile skirmishers and heavy kataphracts. The light infantry fling devastating volleys of throwing spears while screening the advance of the main host. The most savage among them charge into battle wearing little armour, attacking with great strength and ferocity.
+; str_umbar_faction_intro|^The Corsairs of Umbar are southern enemies of Gondor, descendants of the Black Númenoreans who conduct numerous raids on Gondor’s coastlines.^^Corsairs employ both lightly-armoured skirmishers and heavier swordmasters as well as skilled longbowmen. Being a mainly seafaring force, they favour armour that sacrifices toughness for mobility.
+; str_moria_faction_intro|^Orcs of Moria occupy the halls of Khazad Dúm, once a mighty Dwarven kingdom.^^Like regular orcs, their forces consist of a mix of infantry, archers, skirmishers and warg-riders, but generally they have better equipment than other orcs, because they use metal scraps found in Moria. Some lucky few among them also have access to bits of looted dwarven armour and weapons. Orc Chieftains of Moria have proved themselves stronger and fiercer than their kin, and they are fearsome in battle.
+; str_guldur_faction_intro|^Dol Guldur is an old fortress of Sauron in Mirkwood – indeed, it is the reason “Greenwood the Great” is now known by this darker name.^^Here, a contingent loyal to Mordor trains and prepares a great host, sending out frequent raiding parties against the Elves as well as the parties of Men who pass through the woods. The troops of Dol Guldur are mostly orcs, with a lineup very similar to Mordor’s (infantry, skirmishers, archers, warg riders), but with somewhat less variety.
+; str_gundabad_faction_intro|^Gundabad was a place sacred to the Dwarves, but in these days it has become a massive Orc stronghold in the northern mountains.^^The Gundabad orcs, though more savage than their fellows from other places, fight much like any other orcs, with a similar army lineup (infantry, archers, skirmishers, warg riders). Their equipment is primitive and their fighting style barbaric. Their warg riders are unrivalled in toughness and ferocity. Some among the orcs of Gundabad can even whip themselves into a battle-frenzy.
+; str_dunland_faction_intro|^The Dunlendings are the “wild men of Dunland”, enemies of the Rohirrim who drove them from their homeland.^^Dunland is barren and poor. The Dunlendings wear very little real armour – mostly furs and cured leather, with some metal signifying status. For weaponry, they wield long pikes and antler axes, with rare swords serving as emblems of prestige. Their horses are thin and weak, certainly no match for the steeds of Rohan, though occasionally the Dunlendings will ride them into battle as skirmishers. In battle, the pikemen advance en masse, presenting a crude but formidable wall of sharp polearms. Some Dunlendings have also cultivated affinity with creatures of the wild, and may unleash packs of savage wolves against their foes.
+; str_beorn_faction_intro|^Beornings, the descendants of Beorn, are a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. They dwell mostly in the forests, though they keep the Old Ford clear for trade, exacting a toll on merchant caravans for their service.^^As woodsmen, they wield stout sticks and sharp axes, but wear little in the way of armour. Heavier Beorning infantry fight with shields as well. Beorning foresters are skilled bowmen and provide a valuable archer line.
+; str_intro_faction_intro_strings_end|faction intro END
+; str_gondor_extra_info|Good^^Hard^^Gondor (South-East)^^Prince Imrahil^^Mordor, Umbar, Khand, Harad
+; str_dwarf_extra_info|Good^^Easy^^North Rhovanion (North)^^King Dain II Ironfoot^^Rhun, Gundabad
+; str_rohan_extra_info|Good^^Average^^Rohan (South-West)^^King Theoden^^Isengard, Dunland
+; str_mordor_extra_info|Sauron^^Easy^^Gondor (South-East)^^Gothmog^^Gondor
+; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
+; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
+; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
+; str_woodelf_extra_info|^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
+; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
+; str_harad_extra_info|^Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
+; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
+; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
+; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor
+; str_moria_extra_info|Saruman^^Very Hard^^South Rhovanion (Center)^^Master Bolg the Lesser^^Imladris, Lothlorien
+; str_guldur_extra_info|Sauron^^Very Hard^^South Rhovanion (Center)^^Master Fuinur^^Imladris, Lothlorien
+; str_gundabad_extra_info|Saruman^^Very Hard^^North Rhovanion (North)^^Master Burza Krual^^Dale, Dwarves, Mirkwood, Beornings
+; str_dunland_extra_info|Saruman^^Hard^^Rohan (South-West)^^Chief Daeglaf the Black^^Rohan
+; str_beorn_extra_info|Good^^Hard^^North Rhovanion (North)^^Chief Grimbeorn the Old^^Rhun, Gundabad
+; str_intro_strings_extra_end|Intro EXTRA END
+; str_gundabad_intro|You have come from the far north, from the lands of long-lost Angmar, after receiving tidings of the war to come. For years beyond count you and your folk have broken many dwarf shields with your axes and spears, crushed many broken bodies of men and elves below the claws of your fierce wargs, skinned the hides of the bear-people to wear as furs. The great halls of Gundabad in the Misty Mountains are now yours once again, as they were in the time of Bolg and Azog.^^Many of you have perished over the years, somemany of them slain in these very halls and tunnels - but many still remain. Great sport you have had with the greedy little diggers and their friends, in the past - and greater sport you will have now, when you march upon them and take everything for yourselves!^^Vengeance for Bolg, for Azog, for the Great Goblin - vengeance for the goblins of Gundabad!
+; str_show_keybinds|Special Key Bindings: ^^ Formation Keys:^ Ranks - J ^ Shieldwall - K ^ Wedge - L ^ Square - ; ^ Clear Formations - U ^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
+; str_tactical_controls|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. One may target an enemy division through this mechanism.^^Pressing the ENTER key often initiates an overhead Strategy Camera.^^Pressing the BACKSPACE key often initiates a Battle Command Display with 'radar.'
+; str_division_placement|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward.
+; str_formations|The Complex Formations on the Battle Menu are:^^- RANKS with best troops up front^- SHIELD WALL, ranks with shields in front and longer weapons in back^- WEDGE with best troops up front^- SQUARE in no particular order^- NO FORMATION^^Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times.

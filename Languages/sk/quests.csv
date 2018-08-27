@@ -67,7 +67,7 @@ qst_deliver_food|Dovez {s3} {reg5} kusov jedla.
 qst_deliver_food_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov jedla do 10 dní.
 qst_deliver_iron|Prines {reg5} kusov {s6} do {s3}.
 qst_deliver_iron_text|{s9} z {s3} ťa požiadal aby si mu priniesol {reg5} kusov {s6}.
-qst_tld_introduction|Doruč správu o ohyzdoch z Mordoru veleniu.
+qst_tld_introduction|Choďte za vodcom vašej frakcie.
 qst_tld_introduction_text|Nič
 qst_treebeard_kill_orcs|Poraz skupinu ohyzdov rúbajúcich stromy.
 qst_treebeard_kill_orcs_text|Stromobrad chce, aby si našiel a porazil ohyzdov, ktorý rúbajú stromy vo Farngorne.
@@ -75,3 +75,30 @@ qst_oath_of_vengeance|Prísaha pomsty
 qst_oath_of_vengeance_text|Nazúrený smrťou {s1} si zložil prísahu pomsty armádam {s2}. V následujúcich dňoch musíš zničiť toľko armád {s2} koľko len zvládneš. Si si vedomý toho, že tvoji následovníci boli svedkami tvojej prísahy, a ty nechceš byť známy ako krivoprísažník. Krviprelievanie už musí začať!
 qst_deliver_gift|Doruč {s4} z {s1} z {s2} do {s3}
 qst_deliver_gift_text|Bol si požiadaný aby si doručil {s4} z {s1} do {s3} z {s2}.
+qst_ring_hunters|Hľadači Prsteňa
+qst_ring_hunters2|Lovci Prsteňa - Splnené
+qst_deliver_message_hobbit|O Hobitoch
+qst_blank_quest_01|Ochráňte Utečencov
+qst_blank_quest_02|Dolapte Utečencov
+qst_blank_quest_03|Morská Bitka
+qst_blank_quest_04|Zabi {s35} {s36}
+qst_blank_quest_05|Zabi {s35} {s36} vojakov.
+
+
+
+
+
+
+
+
+
+
+qst_blank_quest_16|Posilni Centrum
+qst_blank_quest_17|Zabi {reg22} {s6} v bitkách
+
+
+
+
+qst_guardian_party_quest|Posledný Odpor Isengardu
+qst_quests_end|Koniec Úlohy
+qst_quests_end_text|.

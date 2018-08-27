@@ -40,8 +40,8 @@ trp_farmer|Paraszt
 trp_farmer_pl|Parasztok
 trp_townsman|Városi
 trp_townsman_pl|Városiak
-trp_watchman|Őrszem
-trp_watchman_pl|Őrszemek
+trp_watchman|Városi asszony
+trp_watchman_pl|Városi asszonyok
 trp_woodmen_youth|Erdőnépi
 trp_woodmen_youth_pl|Erdőnépiek
 trp_woodmen_forester|Erdőnépi erdész
@@ -50,26 +50,26 @@ trp_woodmen_skilled_forester|Erdőnépi tapasztalt erdész
 trp_woodmen_skilled_forester_pl|Erdőnépi tapasztalt erdészek
 trp_woodmen_axemen|Erdőnépi baltás
 trp_woodmen_axemen_pl|Erdőnépi baltások
-trp_woodmen_master_axemen|Erdőnépi mesteri baltás
-trp_woodmen_master_axemen_pl|Erdőnépi mesteri baltások
+; trp_woodmen_master_axemen|Night Guard of Mirkwood
+; trp_woodmen_master_axemen_pl|Night Guards of Mirkwood
 trp_woodmen_tracker|Erdőnépi nyomkövető
 trp_woodmen_tracker_pl|Erdőnépi nyomkövetők
 trp_woodmen_scout|Erdőnépi felderítő
 trp_woodmen_scout_pl|Erdőnépi felderítők
 trp_woodmen_archer|Erdőnépi íjász
 trp_woodmen_archer_pl|Erdőnépi íjászok
-trp_fell_huntsmen_of_mirkwood|Bakacsinerdei mestervadász
-trp_fell_huntsmen_of_mirkwood_pl|Bakacsinerdei mestervadászok
+; trp_fell_huntsmen_of_mirkwood|Night Stalker of Mirkwood
+; trp_fell_huntsmen_of_mirkwood_pl|Night Stalkers of Mirkwood
 trp_beorning_vale_man|Beornfi
 trp_beorning_vale_man_pl|Beornfiak
 trp_beorning_warrior|Beornfi harcos
 trp_beorning_warrior_pl|Beornfi harcosok
-trp_beorning_tolltacker|Beornfi vámszedő
-trp_beorning_tolltacker_pl|Beornfi vámszedők
+; trp_beorning_tolltacker|Beorning Toll-Taker
+; trp_beorning_tolltacker_pl|Beorning Toll-Takers
 trp_beorning_sentinel|Beornfi őrszem
 trp_beorning_sentinel_pl|Beornfi őrszemek
 trp_beorning_warden_of_the_ford|Beornfi Gázló őr
-trp_beorning_warden_of_the_ford_pl|Beornfi Gázló őrség
+; trp_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
 trp_beorning_carrock_lookout|Beornfi szirtfői őrszem
 trp_beorning_carrock_lookout_pl|Beornfi szirtfői őrszemek
 trp_beorning_carrock_fighter|Beornfi szirtfői harcos
@@ -80,34 +80,34 @@ trp_dale_militia|Suhatagi nemzetőr
 trp_dale_militia_pl|Suhatagi nemzetőrség
 trp_dale_man_at_arms|Suhatagi vitéz
 trp_dale_man_at_arms_pl|Suhatagi vitézek
-trp_laketown_scout|Tóvárosi felderítő
-trp_laketown_scout_pl|Tóvárosi felderítők
-trp_laketown_bowmen|Tóvárosi íjász
-trp_laketown_bowmen_pl|Tóvárosi íjászok
-trp_laketown_archer|Tóvárosi lövész
-trp_laketown_archer_pl|Tóvárosi lövészek
-trp_barding_bowmen_of_esgaroth|Esgaroth Bardfi íjász
-trp_barding_bowmen_of_esgaroth_pl|Esgaroth Bardfi íjászok
-trp_dale_warrior|Suhatagi harcos
-trp_dale_warrior_pl|Suhatagi harcosok
-trp_dale_veteran_warrior|Suhatagi veterán harcos
-trp_dale_veteran_warrior_pl|Suhatagi veterán harcosok
-trp_dale_marchwarden|Suhatagi határőr
-trp_dale_marchwarden_pl|Suhatagi határőrség
+; trp_laketown_scout|Dale Scout
+trp_laketown_scout_pl|Suhatagi felderítők
+; trp_laketown_bowmen|Dale Bowman
+; trp_laketown_bowmen_pl|Dale Bowmen
+; trp_laketown_archer|Dale Archer
+; trp_laketown_archer_pl|Dale Archers
+; trp_barding_bowmen_of_esgaroth|Barding Bowman
+; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen
+; trp_dale_warrior|Dale Swordsman
+; trp_dale_warrior_pl|Dale Swordsmen
+; trp_dale_veteran_warrior|Dale Sergeant
+; trp_dale_veteran_warrior_pl|Dale Sergeants
+; trp_dale_marchwarden|Hearthman of Dale
+; trp_dale_marchwarden_pl|Hearthmen of Dale
 trp_dale_pikeman|Suhatagi lándzsás
 trp_dale_pikeman_pl|Suhatagi lándzsások
 trp_dale_billman|Suhatagi kampóbárdos
 trp_dale_billman_pl|Suhatagi kampóbárdosok
 trp_dale_bill_master|Suhatagi kampóbárd mester
 trp_dale_bill_master_pl|Suhatagi kampóbárd mesterek
-trp_merchant_squire_or_dale|Suhatag kereskedői fegyverhordozó
-trp_merchant_squire_or_dale_pl|Suhatag kereskedői fegyverhordozók
-trp_merchant_guard_of_dale|Suhatag kereskedői őre
-trp_merchant_guard_of_dale_pl|Suhatag kereskedői őrség
-trp_merchant_protector_of_dale|Suhatag kereskedői védelmezője
-trp_merchant_protector_of_dale_pl|Suhatag kereskedői védelmezői
-trp_girions_guard_of_dale|Suhatag Girion őre
-trp_girions_guard_of_dale_pl|Suhatag Girion őrsége
+; trp_merchant_squire_or_dale|Northmen Retainer
+; trp_merchant_squire_or_dale_pl|Northmen Retainers
+; trp_merchant_guard_of_dale|Northmen Auxiliary
+; trp_merchant_guard_of_dale_pl|Northmen Auxilia
+; trp_merchant_protector_of_dale|Rhovanion Rider
+; trp_merchant_protector_of_dale_pl|Rhovanion Riders
+; trp_girions_guard_of_dale|Rhovanion Marchwarden
+; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
 trp_rhun_tribesman|Rhûni törzstag
 trp_rhun_tribesman_pl|Rhûni törzstagok
 trp_rhun_horse_scout|Rhûni lovasfelderítő
@@ -138,7 +138,7 @@ trp_rhun_light_cavalry|Rhûni könnyűlovas
 trp_rhun_light_cavalry_pl|Rhûni könnyűlovasság
 trp_rhun_noble_cavalry|Rhûni nemesi lovas
 trp_rhun_noble_cavalry_pl|Rhûni nemesi lovasság
-trp_rhun_heavy_noble_cavalry|Rhûni nemesi nehézlovas
+; trp_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalryman
 trp_rhun_heavy_noble_cavalry_pl|Rhûni nemesi nehézlovasság
 trp_dorwinion_noble_of_rhun|Rhûni dorwinioni nemes
 trp_dorwinion_noble_of_rhun_pl|Rhûni dorwinioni nemesek
@@ -166,10 +166,10 @@ trp_dwarven_scout|Törp felderítő
 trp_dwarven_scout_pl|Törp felderítők
 trp_dwarven_bowman|Törp íjász
 trp_dwarven_bowman_pl|Törp íjászok
-trp_dwarven_archer|Törp lövész
-trp_dwarven_archer_pl|Törp lövészek
-trp_marksman_of_ravenhill|Hollóbérci törp mesterlövész
-trp_marksman_of_ravenhill_pl|Hollóbérci törp mesterlövészek
+; trp_dwarven_longaxeman|Longaxe Dwarf
+; trp_dwarven_longaxeman_pl|Longaxe Dwarves
+; trp_iron_hills_warrior|Iron Hills Warrior
+; trp_iron_hills_warrior_pl|Iron Hills Warriors
 trp_iron_hills_miner|Vasdombi bányász
 trp_iron_hills_miner_pl|Vasdombi bányászok
 trp_iron_hills_infantry|Vasdombi gyalogos
@@ -268,10 +268,10 @@ trp_lamedon_leader|Lamedon kapitánya
 trp_lamedon_leader_pl|Lamedon kapitányai
 trp_pinnath_gelin_plainsman|Pinnath Gelini síkföldi
 trp_pinnath_gelin_plainsman_pl|Pinnath Gelini síkföldiek
-trp_pinnath_gelin_spearman|Pinnath Gelin lándzsása
-trp_pinnath_gelin_spearman_pl|Pinnath Gelin lándzsásai
-trp_warrior_of_pinnath_gelin|Pinnath Gelin harcosa
-trp_warrior_of_pinnath_gelin_pl|Pinnath Gelin harcosai
+; trp_pinnath_gelin_spearman|Rider of Pinnath Gelin
+; trp_pinnath_gelin_spearman_pl|Riders of Pinnath Gelin
+; trp_warrior_of_pinnath_gelin|Knight of Pinnath Gelin
+; trp_warrior_of_pinnath_gelin_pl|Knights of Pinnath Gelin
 trp_pinnath_gelin_bowman|Pinnath Gelin íjásza
 trp_pinnath_gelin_bowman_pl|Pinnath Gelin íjászai
 trp_pinnath_gelin_archer|Pinnath Gelin lövésze
@@ -288,8 +288,8 @@ trp_footman_of_blackroot_vale|Feketegyökér-völgy gyalogosa
 trp_footman_of_blackroot_vale_pl|Feketegyökér-völgy gyalogsása
 trp_spearman_of_blackroot_vale|Feketegyökér-völgy lándzsása
 trp_spearman_of_blackroot_vale_pl|Feketegyökér-völgy lándzsásai
-trp_blackroot_leader|Feketegyökér-völgy kapitánya
-trp_blackroot_leader_pl|Feketegyökér-völgy kapitányai
+; trp_blackroot_leader|Morthond Shadow Hunter
+; trp_blackroot_leader_pl|Morthond Shadow Hunters
 trp_dol_amroth_youth|Dol Amtorhi újonc
 trp_dol_amroth_youth_pl|Dol Amrothi újoncok
 trp_squire_of_dol_amroth|Dol Amroth fegyverhordozója
@@ -428,8 +428,8 @@ trp_raider_of_rohan|Fréaláf rablója
 trp_raider_of_rohan_pl|Fréaláf rablói
 trp_heavy_swordsman_of_rohan|Rohan nehéz kardforgatója
 trp_heavy_swordsman_of_rohan_pl|Rohan nehéz kardforgatói
-trp_warden_of_methuseld|Az Aranycsarnok őre
-trp_warden_of_methuseld_pl|Az Aranycsarnok őrei
+; trp_warden_of_methuseld|Warden of Meduseld
+; trp_warden_of_methuseld_pl|Wardens of Meduseld
 trp_skirmisher_of_rohan|Rohan csatározója
 trp_skirmisher_of_rohan_pl|Rohan csatározói
 trp_veteran_skirmisher_of_rohan|Rohan veterán csatározója
@@ -510,16 +510,16 @@ trp_dunnish_pikeman|Dún pikás
 trp_dunnish_pikeman_pl|Dún pikások
 trp_dunnish_veteran_pikeman|Dún veterán pikás
 trp_dunnish_veteran_pikeman_pl|Dún veterán pikások
-trp_dunnish_raven_rider|Dún Hollólovas
-trp_dunnish_raven_rider_pl|Dún Hollólovasok
+; trp_dunnish_raven_rider|Dunnish Crebain Rider
+; trp_dunnish_raven_rider_pl|Dunnish Crebain Riders
 trp_dunnish_vet_warrior|Dún veterán harcos
 trp_dunnish_vet_warrior_pl|Dún veterán harcosok
 trp_dunnish_wolf_warrior|Dún Farkasharcos
 trp_dunnish_wolf_warrior_pl|Dún Farkasharcosok
 trp_dunnish_wolf_guard|Dún Farkasőr
 trp_dunnish_wolf_guard_pl|Dún Farkasőrség
-trp_dunnish_chieftan|Dún törzsfőnök
-trp_dunnish_chieftan_pl|Dún törzsfőnökök
+trp_dunnish_chieftan|Dún Hollólovas
+trp_dunnish_chieftan_pl|Dún Hollólovasok
 trp_easterling_youth|Variag jobbágy
 trp_easterling_youth_pl|Variag jobbágyok
 trp_easterling_warrior|Khand harcosa
@@ -566,14 +566,14 @@ trp_corsair_veteran_raider|Kalóz veterán rabló
 trp_corsair_veteran_raider_pl|Kalóz veterán rablók
 trp_corsair_night_raider|Kalóz éjjeli rabló
 trp_corsair_night_raider_pl|Kalóz éjjeli rablók
-trp_militia_of_umbar|Umbari nemzetőr
-trp_militia_of_umbar_pl|Umbari nemzetőrség
-trp_marksman_of_umbar|Umbar csatározója
-trp_marksman_of_umbar_pl|Umbar csatározói
-trp_veteran_marksman_of_umbar|Umbar veterán csatározója
-trp_veteran_marksman_of_umbar_pl|Umbar veterán csatározói
-trp_master_marksman_of_umbar|Kalóz mesteri csatározó
-trp_master_marksman_of_umbar_pl|Kalóz mesteri csatározók
+; trp_militia_of_umbar|Umbar Marine
+; trp_militia_of_umbar_pl|Umbar Marines
+; trp_marksman_of_umbar|Marksman of Umbar
+; trp_marksman_of_umbar_pl|Marksmen of Umbar
+; trp_veteran_marksman_of_umbar|Veteran Marksman of Umbar
+; trp_veteran_marksman_of_umbar_pl|Veteran Marksmen of Umbar
+; trp_master_marksman_of_umbar|Corsair Master Marksman
+; trp_master_marksman_of_umbar_pl|Corsair Master Marksmen
 trp_corsair_marauder|Umbar kardforgatója
 trp_corsair_marauder_pl|Umbar kardforgatói
 trp_corsair_veteran_marauder|Umbar veterán kardforgatója
@@ -666,8 +666,8 @@ trp_black_uruk_of_barad_dur|Barad-dûr fekete urukja
 trp_black_uruk_of_barad_dur_pl|Barad-dûr fekete urukjai
 trp_uruk_mordor_standard_bearer|Mordori zászlóvivő
 trp_uruk_mordor_standard_bearer_pl|Mordori zászlóvivői
-trp_troll_of_moria|Mória trollja
-trp_troll_of_moria_pl|Mória trolljai
+; trp_troll_of_moria|Cave Troll
+; trp_troll_of_moria_pl|Cave Trolls
 trp_armoured_troll|Páncélozott troll
 trp_armoured_troll_pl|Páncélozott trollok
 trp_olog_hai|Mordori olog-hai
@@ -718,26 +718,26 @@ trp_large_goblin_of_moria|Móriai hatalmas kobold
 trp_large_goblin_of_moria_pl|Móriai hatalmas koboldok
 trp_fell_goblin_of_moria|Móriai irdatlan kobold
 trp_fell_goblin_of_moria_pl|Móriai irdatlan koboldok
-trp_archer_snaga_of_moria|Móriai íjász snaga
-trp_archer_snaga_of_moria_pl|Móriai íjász snagák
+; trp_archer_snaga_of_moria|Goblin Archer of Moria
+; trp_archer_snaga_of_moria_pl|Goblin Archers of Moria
 trp_large_goblin_archer_of_moria|Móriai hatalmas kobold íjász
 trp_large_goblin_archer_of_moria_pl|Móriai hatalmas kobold íjászok
-trp_fell_goblin_archer_of_moria|Móriai irdatlan kobold íjász
-trp_fell_goblin_archer_of_moria_pl|Móriai irdatlan kobold íjászok
+; trp_deep_dweller_of_moria2|Deep-Dweller of Moria
+; trp_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
 trp_goblin_gundabad|Gundabadi kobold
 trp_goblin_gundabad_pl|Gundabadi koboldok
 trp_orc_gundabad|Gundabadi ork
 trp_orc_gundabad_pl|Gundabadi orkok
 trp_orc_fighter_gundabad|Gundabadi ork harcos
 trp_orc_fighter_gundabad_pl|Gundabadi ork harcosok
-trp_fell_orc_warrior_gundabad|Gundabadi irdatlan ork harcos
-trp_fell_orc_warrior_gundabad_pl|Gundabadi irdatlan ork harcosok
-trp_goblin_bowmen_gundabad|Északi kobold lövész
-trp_goblin_bowmen_gundabad_pl|Északi kobold lövészek
-trp_keen_eyed_goblin_archer_gundabad|Északi éles-szemű kobold íjász 
-trp_keen_eyed_goblin_archer_gundabad_pl|Északi éles-szemű kobold íjászok
-trp_fell_goblin_archer_gundabad|Északi irdatlan kobold íjász
-trp_fell_goblin_archer_gundabad_pl|Északi irdatlan kobold íjászok
+; trp_fell_orc_warrior_gundabad|Gundabad Orc Warrior
+; trp_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
+; trp_orc_beserker_gundabad|Gundabad Orc Berserker
+; trp_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
+; trp_warg_skirmisher_gundabad|Gundabad Skirmisher
+; trp_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
+; trp_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
+; trp_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
 trp_goblin_rider_gundabad|Gundabadi kobold lovas
 trp_goblin_rider_gundabad_pl|Gundabadi kobold lovasok
 trp_warg_rider_gundabad|Gundabadi varglovas
@@ -750,8 +750,8 @@ trp_tribal_orc|Törzsi ork
 trp_tribal_orc_pl|Törzsi orkok
 trp_tribal_orc_warrior|Törzsi ork harcos
 trp_tribal_orc_warrior_pl|Törzsi ork harcosok
-trp_tribal_orc_chief|Törzsi ork főnök
-trp_tribal_orc_chief_pl|Törzsi ork főnök
+; trp_tribal_orc_chief2|Orc Chieftain of Moria
+; trp_tribal_orc_chief2_pl|Orc Chieftains of Moria
 trp_black_numenorean_renegade|Fekete númenori áruló
 trp_black_numenorean_renegade_pl|Fekete númenori árulók
 trp_black_numenorean_warrior|Fekete númenori harcos
@@ -810,8 +810,8 @@ trp_black_numenorean_captain|Fekete númenori kapitány
 trp_black_numenorean_captain_pl|Fekete númenori kapitányok
 trp_black_numenorean_lieutenant|Fekete númenori hadnagy
 trp_black_numenorean_lieutenant_pl|Fekete númenori hadnagyok
-trp_dunnish_chieftain|Dún törzsfőnök
-trp_dunnish_chieftain_pl|Dún törzsfőnökök
+; trp_dunnish_night_wolf|Dunnish Night Wolf
+; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
 trp_dunnish_lieutenant|Dún hetman
 trp_dunnish_lieutenant_pl|Dún hetmanek
 trp_goblin_chieftain|Kobold törzsfőnök
@@ -987,8 +987,8 @@ trp_pippin_notmet|félszerzet
 trp_merry_notmet|félszerzet
 trp_pippin|Pippin
 trp_merry|Trufa
-trp_knight_1_1|Angbor
-trp_knight_1_2|Baranor
+; trp_knight_1_1|Angbor the Fearless
+; trp_knight_1_2|Húrin of the Keys
 trp_knight_1_3|Imrahil herceg
 trp_knight_1_4|Orthalion
 trp_knight_1_5|Duinhir
@@ -1048,6 +1048,7 @@ trp_knight_5_6|Hosszúszakállú Fulgni
 trp_knight_5_7|Kősisakos Thorin
 trp_knight_5_11|Fudreim törzsfő
 trp_knight_5_12|Wulf törzsfő
+; trp_knight_6_1|Dervorin
 trp_smith_mtirith|Berethor a Kovács
 trp_smith_mtirith_pl|Helytartó kovácsai
 trp_smith_pelargir|Acélmester Hallatan
@@ -1146,7 +1147,7 @@ trp_smith_gundabad|Hóárus Blurg
 trp_smith_gundabad_pl|kovács
 trp_smith_ironhill|Vasdombi kovács
 trp_smith_ironhill_pl|törp tábori kovácsok
-trp_town_50_weaponsmith|Armourer
+; trp_town_50_weaponsmith|Shruklug Knife Grinder
 trp_town_50_weaponsmith_pl|kovács
 trp_smith_gondor_ac|Páncélkészítő Bor
 trp_smith_gondor_ac_pl|tábori kovács
@@ -1346,8 +1347,8 @@ trp_merchant_gundabad|Ellátmányos mester
 trp_merchant_gundabad_pl|tábori elrejtett készlet
 trp_merchant_ironhill|Ellátmányos mester
 trp_merchant_ironhill_pl|törp készletek
-trp_town_50_horse_merchant|Ellátmányos mester
-trp_town_50_horse_merchant_pl|istálló és raktár
+; trp_town_50_horse_merchant|Gobrip Yellowtooth
+trp_town_50_horse_merchant_pl|varg gödör és készletek
 trp_merchant_calembel|Ellátmányos mester
 trp_merchant_calembel_pl|istálló és raktár
 trp_elder_mtirith|Tirith céhmestere
@@ -1422,7 +1423,7 @@ trp_elder_umbar|Umbari szállásmester
 trp_elder_umbar_pl|a megerősített tábor
 trp_elder_moria|Móriai törzsfő
 trp_elder_moria_pl|a Bányák
-trp_elder_gunda|A Barlangok Őse
+; trp_elder_gunda|Master of the Caves
 trp_elder_gunda_pl|a barlangok
 trp_elder_dale|Suhatagi szállásmester
 trp_elder_dale_pl|a város
@@ -1468,7 +1469,8 @@ trp_elder_guldur_ac|Gulduri táborfő
 trp_elder_guldur_ac_pl|a tábor
 trp_elder_dwarf_ac|Törp tábormester
 trp_elder_dwarf_ac_pl|a tábor
-trp_village_1_elder|Falusi elöljáró
+; trp_village_1_elder|Lord of the Lash
+trp_village_1_elder_pl|a barlangok
 trp_tutorial_chest_1|Közelharci fegyverláda
 trp_tutorial_chest_2|Távolsági fegyverláda
 trp_bonus_chest_1|Bónusz láda
@@ -1531,7 +1533,7 @@ trp_wolf_rider_of_mirkwood|Bakacsinerdei farkaslovas
 trp_wolf_rider_of_mirkwood_pl|Bakacsinerdei farkaslovasok
 trp_warg_rider_of_mirkwood|Bakacsinerdei varglovas
 trp_warg_rider_of_mirkwood_pl|Bakacsinerdei varglovasok
-trp_gate_aggravator|A kapu kitart
+; trp_gate_aggravator|Gate Defence
 trp_orc_pretender|Ork tettető
 trp_human_prisoner|Emberi fogoly
 trp_spider|Bakacsinerdei pók
@@ -1560,3 +1562,23 @@ trp_start_quest_mordor_scout|Mordori felderítő
 trp_start_quest_mordor_scout_pl|Mordori felderítők
 trp_start_quest_beorning|Beornfi szirtfői Medveharcos
 trp_start_quest_beorning_pl|Beornfi szirtfői Medveharcosok
+; trp_beorning_shield_bear|Bear Warrior
+; trp_beorning_shield_bear_pl|Bear Warriors
+; trp_morannon_healer|Okstuk the Healer
+; trp_minas_tirith_healer|Ioreth
+; trp_edoras_healer|Freya the Healer
+; trp_isengard_healer|Nurgal the Patcher
+; trp_guldur_healer|Mornagar the Gramaryer
+; trp_gundabad_healer|Lurgakh Third Eye
+; trp_mirkwood_healer|Corwiel the Soft-Handed
+; trp_hungry_uruk|Hungry Uruk
+; trp_hungry_orc|Hungry Orc
+; trp_longing_lorien|Longing Elf
+; trp_longing_woodelf|Longing Elf
+; trp_longing_imladris|Longing Elf
+; trp_deep_dweller_of_moria|Deep-Dweller of Moria
+; trp_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
+; trp_tribal_orc_chief|Orc Chieftain of Moria
+; trp_tribal_orc_chief_pl|Orc Chieftains of Moria
+; trp_rhovanion_noble|Rhovanion Noble
+; trp_rhovanion_noble_pl|Rhovanion Noblemen

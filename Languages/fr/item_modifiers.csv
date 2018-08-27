@@ -1,12 +1,12 @@
 imod_plain|Plaine %s
-imod_cracked|%s craquelé
-imod_rusty|%s rouillé
+imod_cracked|%s médiocre
+imod_rusty|%s simple
 imod_bent|%s tordu
 imod_chipped|%s ébréché
 imod_battered|%s bosselé
 imod_poor|%s médiocre
-imod_crude|%s simple
-imod_old|Vieux %s
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|%s bon marché
 imod_fine|Excellent %s
 imod_well_made|%s bien fait
@@ -20,14 +20,14 @@ imod_heavy|%s lourd
 imod_strong|%s fort
 imod_powerful|%s puissant
 imod_tattered|%s déchiré
-imod_ragged|%s usé
+imod_ragged|%s rêche
 imod_rough|%s rêche
 imod_sturdy|%s solide
-imod_thick|%s robuste
+; imod_thick|Robust %s
 imod_hardened|%s endurci
 imod_reinforced|%s résistant
 imod_superb|Superbe %s
-imod_lordly|%s de noble
+imod_lordly|Chef d’œuvre %s
 imod_lame|%s estropié
 imod_swaybacked|%s ensorcelé
 imod_stubborn|%s têtu

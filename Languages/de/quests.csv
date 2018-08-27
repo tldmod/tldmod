@@ -67,7 +67,7 @@ qst_deliver_food|Versorgt {s3} mit {reg5} Einheiten Nahrung
 qst_deliver_food_text|Der {s9} von {s3} bat dich, ihm innerhalb von 10 Tagen {reg5} Einheiten Nahrung zu bringen.
 qst_deliver_iron|Bringe {reg5} Einheiten {s6} nach {s3} 
 qst_deliver_iron_text|Der {s9} von {s3} bat dich, ihm {reg5} Einheiten {s6} zu bringen.
-qst_tld_introduction|Überbringe eine Nachricht über die Orks von Mordor an die Führung
+qst_tld_introduction|Triff deinen Anführer.
 qst_tld_introduction_text|Nichts
 qst_treebeard_kill_orcs|Besiegt die holzfällende Orktruppe
 qst_treebeard_kill_orcs_text|Baumbart bat Euch, die Orks, welche die Bäume in Fangorn abholzen, zu finden und zu besiegen.
@@ -75,3 +75,30 @@ qst_oath_of_vengeance|Racheschwur
 qst_oath_of_vengeance_text|Erzürnt durch den Tod von {s1}, schworst du einen Racheeid gegen die Truppen von {s2}. Du musst in den kommenden Tagen möglichst viele Armeen von {s2} zerstören. Du bist dir bewusst, dass deine Gefährten Zeugen dieses Schwurs waren, und du möchtest nicht als Eidbrecher bekannt werden. Eine Orgie des Blutvergießens muss nun beginnen!
 qst_deliver_gift|Überbringe ein {s4} an {s1} von {s2} nach {s3}
 qst_deliver_gift_text|Du hast hast ersucht, ein {s4} an {s1} von {s3} nach {s2} zu überbringen.
+qst_ring_hunters|Ringjäger
+qst_ring_hunters2|Ringjäger - Erledigt
+qst_deliver_message_hobbit|Über Hobbits
+qst_blank_quest_01|Verteidige die Flüchtlinge
+qst_blank_quest_02|Jage die Flüchtlinge
+qst_blank_quest_03|Seegefecht
+qst_blank_quest_04|Töte {s35} {s36}
+qst_blank_quest_05|Töte {s35} {s36}-Truppen.
+
+
+
+
+
+
+
+
+
+
+qst_blank_quest_16|Verstärke eine Garnision
+qst_blank_quest_17|Töte {reg22} {s6} in der Schlacht
+
+
+
+
+qst_guardian_party_quest|Isengards letzte Verteidigung
+qst_quests_end|Quests End
+qst_quests_end_text|.

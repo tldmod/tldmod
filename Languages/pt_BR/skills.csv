@@ -4,10 +4,10 @@ skl_leadership|Liderança
 skl_leadership_desc|Cada ponto aumento o númenro máximo de tropas que você pode comandar por 5, aumenta a moral do grupo e reduz os custos de tropas por 5%%. (Habilidade do Líder)
 skl_prisoner_management|Gestão de Prisioneiros
 skl_prisoner_management_desc|Cada nível dessa habilidade aumenta o número máximo de prisioneiros por %d. (Habilidade do Líder)
-skl_persuasion|Persuasão
-skl_persuasion_desc|Essa habilidade lhe ajuda a fazer com que outras pessoas aceitem seu ponto de vista. ( Habilidade Pessoal)
-skl_engineer|Crafting
-skl_engineer_desc|Cada ponto nesta habilidade diminui ambos os tempos para craftar e melhorar equipamentos, e lhe permite a realizar melhoras com mais qualidade. ( Habilidade do Grupo)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Primeiros Socorros
 skl_first_aid_desc|Heróis recuperam 5%% de HP por ponto de habilidade perdidos durante a missão. (Habilidade de Grupo)
 skl_surgery|Cirurgia

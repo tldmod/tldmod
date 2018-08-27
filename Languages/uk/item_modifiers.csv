@@ -1,12 +1,12 @@
 imod_plain|Простий %s
-imod_cracked|Тріснувший %s
-imod_rusty|Іржавий %s
+imod_cracked|Поганий %s
+imod_rusty|Грубий %s
 imod_bent|Зіпсований %s
 imod_chipped|Зазубрений %s
 imod_battered|Побитий %s
 imod_poor|Поганий %s
-imod_crude|Грубий %s
-imod_old|Старий %s
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|Дешевий %s
 imod_fine|Хороший %s
 imod_well_made|Непоганий %s
@@ -20,14 +20,14 @@ imod_heavy|Важкий %s
 imod_strong|Міцний %s
 imod_powerful|Потужний %s
 imod_tattered|Обірваний %s
-imod_ragged|Поношений %s
+imod_ragged|Грубий %s
 imod_rough|Грубий %s
 imod_sturdy|Стійкий %s
-imod_thick|Товстий %s
+; imod_thick|Robust %s
 imod_hardened|Затверділий %s
 imod_reinforced|Посилений %s
 imod_superb|Чудовий %s
-imod_lordly|Шляхетний %s
+imod_lordly|Чудовий %s
 imod_lame|Кривий %s
 imod_swaybacked|Чахлий %s
 imod_stubborn|Норовистий %s

@@ -1,12 +1,12 @@
 imod_plain|Düz %s
-imod_cracked|Kırık %s
-imod_rusty|Paslanmış %s
+imod_cracked|Perişan %s 
+imod_rusty| İşlenmemiş %s
 imod_bent|Eğrilmiş %s
 imod_chipped|Yontulmuş %s
 imod_battered|Ezilmiş %s
 imod_poor|Perişan %s 
-imod_crude| İşlenmemiş %s
-imod_old|Eski %s
+imod_crude|Basit
+imod_old|Antik
 imod_cheap|Ucuz %s 
 imod_fine|İyi %s 
 imod_well_made|İyi Yapılmış %s 
@@ -20,14 +20,14 @@ imod_heavy|Ağır %s
 imod_strong|Güçlü %s 
 imod_powerful|Kudretli %s 
 imod_tattered|Eski püskü %s 
-imod_ragged|Perişan %s 
+imod_ragged|Berbat %s 
 imod_rough|Berbat %s 
 imod_sturdy|Dayanıklı %s 
-imod_thick|Kalın %s 
+imod_thick|Kalın
 imod_hardened|Sertleştirilmiş %s 
 imod_reinforced|Güçlendirilmiş %s 
 imod_superb|Fevkalade %s 
-imod_lordly|Lorda Yaraşır %s 
+imod_lordly|Usta işi %s 
 imod_lame|Ezik %s 
 imod_swaybacked|Beli Bükük %s 
 imod_stubborn|İnatçı %s 

@@ -1,12 +1,12 @@
 imod_plain|Obican %i
-imod_cracked|Polomnjen %i
-imod_rusty|Zardjal %i
+imod_cracked|Siromasan %i
+imod_rusty|Sirov %i
 imod_bent|Kriv %i
 imod_chipped|Okrnjen %i
 imod_battered|Izubijan %i
 imod_poor|Siromasan %i
-imod_crude|Sirov %i
-imod_old|Star %i
+; imod_crude|Simple %s
+; imod_old|Ancient %s
 imod_cheap|Jeftin %i
 imod_fine|Dobar %i
 imod_well_made|Dobro napravljen %i
@@ -20,14 +20,14 @@ imod_heavy|Tezak
 imod_strong|Jak %i
 imod_powerful|Mocan %i
 imod_tattered|Dronjav %i
-imod_ragged|Cupav %i
+imod_ragged|Cvrst %i
 imod_rough|Cvrst %i
 imod_sturdy|Snazan %i
-imod_thick|Zilav %i
+; imod_thick|Robust %s
 imod_hardened|Ucvrscen %i
 imod_reinforced|Ojacan %i
 imod_superb|Super %i
-imod_lordly|Gospodski
+imod_lordly|Majstorija 
 imod_lame|Lenj %i
 imod_swaybacked|Los %i
 imod_stubborn|Tvrdoglav %i

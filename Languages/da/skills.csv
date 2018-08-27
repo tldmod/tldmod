@@ -4,10 +4,10 @@ skl_leadership|Lederskab
 skl_leadership_desc|Hvert point forhøjer det maksimale nummer of tropper du kan kommandere med 5, forhøjer dit holds morale og reducer troppernes løn med 5%%. (Leder færdighed)
 skl_prisoner_management|Fange Administration
 skl_prisoner_management_desc|Hvert niveau af denne færdighed forhøjer dit maksimale nummer af fanger med %d. (Leder færdighed)
-skl_persuasion|Overbevisning
-skl_persuasion_desc|Denne færdighed hjælper dig med at få andre personer til at acceptere dit synspunkt. (Personlig færdighed)
-skl_engineer|Lave
-skl_engineer_desc|Hvert point til denne færdighed nedsætter både tiden at lave og opgradere udstyr, og det tillader bedre kvalitet opgraderinger. (Hold færdighed)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Førstehjælp
 skl_first_aid_desc|Helte genvinder 5%% per færdigheds niveau af liv-points tabt under missioner. (Hold færdighed) 
 skl_surgery|Kirurgi

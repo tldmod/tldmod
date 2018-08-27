@@ -84,10 +84,10 @@ itm_rhun_horse_g|Rhun Heavy Horse
 itm_rhun_horse_g_pl|Rhun Heavy Horse
 itm_rhun_horse_h|Rhun Heavy Horse
 itm_rhun_horse_h_pl|Rhun Heavy Horse
-itm_dale_horse|Dale Horse
-itm_dale_horse_pl|Dale Horse
-itm_dale_warhorse|Dale Warhorse
-itm_dale_warhorse_pl|Dale Warhorse
+itm_dale_horse|Rhovanion Horse
+itm_dale_horse_pl|Rhovanion Horse
+itm_dale_warhorse|Rhovanion Warhorse
+itm_dale_warhorse_pl|Rhovanion Warhorse
 itm_riv_warhorse|Rivendell Warhorse
 itm_riv_warhorse_pl|Rivendell Warhorse
 itm_riv_warhorse2|Imladris Steed
@@ -136,40 +136,40 @@ itm_wargarmored_3a|Armored Warg
 itm_wargarmored_3a_pl|Armored Warg
 itm_warg_reward|Huge Warg
 itm_warg_reward_pl|Huge Warg
-itm_troll_feet_boots|Troll Feet
-itm_troll_feet_boots_pl|Troll Feet
-itm_troll_head_helm|Troll Head
-itm_troll_head_helm_pl|Troll Head
-itm_troll_head_helm_b|Troll Head
-itm_troll_head_helm_b_pl|Troll Head
-itm_troll_head_helm_c|Troll Head
-itm_troll_head_helm_c_pl|Troll Head
+itm_axe_a|Northmen Axe
+itm_axe_a_pl|Northmen Axe
+itm_axe_b|Northmen Bearded Axe
+itm_axe_b_pl|Northmen Bearded Axe
+itm_axe_c|Northmen Axe
+itm_axe_c_pl|Northmen Axe
+itm_axe_d|Northmen Axe
+itm_axe_d_pl|Northmen Axe
 itm_tree_trunk_club_a|Tree Trunk
 itm_tree_trunk_club_a_pl|Tree Trunk
-itm_tree_trunk_club_b|Tree Trunk
-itm_tree_trunk_club_b_pl|Tree Trunk
-itm_tree_trunk_invis|Tree Trunk
-itm_tree_trunk_invis_pl|Tree Trunk
-itm_giant_hammer|Giant Hammer
-itm_giant_hammer_pl|Giant Hammer
+itm_long_bearded_axe|Northmen Bearded Longaxe
+itm_long_bearded_axe_pl|Northmen Bearded Longaxe
+itm_2_handed_axe|Northmen Longaxe
+itm_2_handed_axe_pl|Northmen Longaxe
+itm_free_giant_hammer|Giant Hammer
+itm_free_giant_hammer_pl|Giant Hammer
 itm_giant_mace|Giant Mace
 itm_giant_mace_pl|Giant Mace
-itm_giant_mace_b|Giant Spiked Mace
-itm_giant_mace_b_pl|Giant Spiked Mace
-itm_olog_feet_boots|Olog Hai Feet
-itm_olog_feet_boots_pl|Olog Hai Feet
-itm_olog_head_helm|Olog Hai Head
-itm_olog_head_helm_pl|Olog Hai Head
-itm_olog_head_helm_b|Olog Hai Head
-itm_olog_head_helm_b_pl|Olog Hai Head
-itm_olog_head_helm_c|Olog Hai Head
-itm_olog_head_helm_c_pl|Olog Hai Head
+itm_free_giant_mace_b|Giant Spiked Mace
+itm_free_giant_mace_b_pl|Giant Spiked Mace
+itm_free_olog_feet_boots|Olog Hai Feet
+itm_free_olog_feet_boots_pl|Olog Hai Feet
+itm_free_olog_head_helm|Olog Hai Head
+itm_free_olog_head_helm_pl|Olog Hai Head
+itm_free_olog_head_helm_b|Olog Hai Head
+itm_free_olog_head_helm_b_pl|Olog Hai Head
+itm_free_olog_head_helm_c|Olog Hai Head
+itm_free_olog_head_helm_c_pl|Olog Hai Head
 itm_olog_body|Olog Hai Armor
 itm_olog_body_pl|Olog Hai Armor
 itm_olog_body_b|Olog Hai Armor
 itm_olog_body_b_pl|Olog Hai Armor
-itm_olog_hands|Olog Hai Hands
-itm_olog_hands_pl|Olog Hai Hands
+itm_free_olog_hands|Olog Hai Hands
+itm_free_olog_hands_pl|Olog Hai Hands
 itm_warg_ghost_armour|HIDEME armour
 itm_warg_ghost_armour_pl|HIDEME armour
 itm_warg_ghost_lance|HIDEME lance
@@ -178,8 +178,8 @@ itm_arrows|Arrows
 itm_arrows_pl|Arrows
 itm_gondor_arrows|Gondor Arrows
 itm_gondor_arrows_pl|Gondor Arrows
-itm_gondor_auxila_arrows|Gondorian Arrows
-itm_gondor_auxila_arrows_pl|Gondorian Arrows
+itm_orc_javelin|Orc Heavy Javelin
+itm_orc_javelin_pl|Orc Heavy Javelin
 itm_khergit_arrows|Barbed Arrows
 itm_khergit_arrows_pl|Barbed Arrows
 itm_rohan_arrows_2|Rohirrim Arrows
@@ -198,54 +198,54 @@ itm_orc_hook_arrow|Orc Hook Arrows
 itm_orc_hook_arrow_pl|Orc Hook Arrows
 itm_isengard_arrow|Isengard Arrows
 itm_isengard_arrow_pl|Isengard Arrows
-itm_pilgrim_disguise|Pilgrim Disguise
-itm_pilgrim_disguise_pl|Pilgrim Disguise
+itm_free_pilgrim_disguise|Pilgrim Disguise
+itm_free_pilgrim_disguise_pl|Pilgrim Disguise
 itm_leather_gloves|Leather Gloves
 itm_leather_gloves_pl|Leather Gloves
 itm_mail_mittens|Mail Mittens
 itm_mail_mittens_pl|Mail Mittens
 itm_leather_boots|Leather Boots
 itm_leather_boots_pl|Leather Boots
-itm_black_dress|Black Dress
-itm_black_dress_pl|Black Dress
-itm_blackwhite_dress|Lady Dress
-itm_blackwhite_dress_pl|Lady Dress
-itm_white_tunic_a|White Tunic
-itm_white_tunic_a_pl|White Tunic
-itm_white_tunic_b|Simple Tunic
-itm_white_tunic_b_pl|Simple Tunic
-itm_white_tunic_c|Tunic Jacket
-itm_white_tunic_c_pl|Tunic Jacket
-itm_blue_tunic|Blue Tunic
-itm_blue_tunic_pl|Blue Tunic
+itm_free_black_dress|Black Dress
+itm_free_black_dress_pl|Black Dress
+itm_free_blackwhite_dress|Lady Dress
+itm_free_blackwhite_dress_pl|Lady Dress
+itm_white_tunic_a|Simple Tunic
+itm_white_tunic_a_pl|Simple Tunic
+itm_free_white_tunic_b|Simple Tunic
+itm_free_white_tunic_b_pl|Simple Tunic
+itm_free_white_tunic_c|Tunic Jacket
+itm_free_white_tunic_c_pl|Tunic Jacket
+itm_free_blue_tunic|Blue Tunic
+itm_free_blue_tunic_pl|Blue Tunic
 itm_black_tunic|Black Tunic
 itm_black_tunic_pl|Black Tunic
-itm_green_tunic|Green Tunic
-itm_green_tunic_pl|Green Tunic
-itm_red_tunic|Red Tunic
-itm_red_tunic_pl|Red Tunic
-itm_leather_apron|Leather Apron
-itm_leather_apron_pl|Leather Apron
-itm_leather_jerkin|Leather Jerkin
-itm_leather_jerkin_pl|Leather Jerkin
-itm_fur_coat|Dale Coat
-itm_fur_coat_pl|Dale Coat
-itm_green_dress|Green Dress
-itm_green_dress_pl|Green Dress
-itm_tld_tunic|Tunic
-itm_tld_tunic_pl|Tunic
-itm_gondor_fine_outfit_dress|Fine Outfit
-itm_gondor_fine_outfit_dress_pl|Fine Outfit
-itm_rohan_fine_outfit_dale_dress|Fine Outfit
-itm_rohan_fine_outfit_dale_dress_pl|Fine Outfit
-itm_robe_generic_dress|Robe
-itm_robe_generic_dress_pl|Robe
-itm_wimple_a|Wimple
-itm_wimple_a_pl|Wimple
-itm_wimple_with_veil|Wimple
-itm_wimple_with_veil_pl|Wimple
-itm_fine_hat|Fine Hat
-itm_fine_hat_pl|Fine Hat
+itm_free_green_tunic|Green Tunic
+itm_free_green_tunic_pl|Green Tunic
+itm_free_red_tunic|Red Tunic
+itm_free_red_tunic_pl|Red Tunic
+itm_free_leather_apron|Leather Apron
+itm_free_leather_apron_pl|Leather Apron
+itm_free_leather_jerkin|Leather Jerkin
+itm_free_leather_jerkin_pl|Leather Jerkin
+itm_free_fur_coat|Dale Coat
+itm_free_fur_coat_pl|Dale Coat
+itm_free_green_dress|Green Dress
+itm_free_green_dress_pl|Green Dress
+itm_free_tld_tunic|Tunic
+itm_free_tld_tunic_pl|Tunic
+itm_free_gondor_fine_outfit_dress|Fine Outfit
+itm_free_gondor_fine_outfit_dress_pl|Fine Outfit
+itm_free_rohan_fine_outfit_dale_dress|Fine Outfit
+itm_free_rohan_fine_outfit_dale_dress_pl|Fine Outfit
+itm_free_robe_generic_dress|Robe
+itm_free_robe_generic_dress_pl|Robe
+itm_free_wimple_a|Wimple
+itm_free_wimple_a_pl|Wimple
+itm_free_wimple_with_veil|Wimple
+itm_free_wimple_with_veil_pl|Wimple
+itm_free_fine_hat|Fine Hat
+itm_free_fine_hat_pl|Fine Hat
 itm_shortened_spear|Shortened Spear
 itm_shortened_spear_pl|Shortened Spear
 itm_spear|Spear
@@ -280,16 +280,16 @@ itm_lg_bow|Eagle Guard Bow
 itm_lg_bow_pl|Eagle Guard Bow
 itm_riv_bow|Rivendell Bow
 itm_riv_bow_pl|Rivendell Bow
-itm_glorfi_bow|Glorfindeil Bow
-itm_glorfi_bow_pl|Glorfindeil Bow
+itm_glorfi_bow|Glorfindel Bow
+itm_glorfi_bow_pl|Glorfindel Bow
 itm_lorien_bow|Galadhrim Bow
 itm_lorien_bow_pl|Galadhrim Bow
 itm_isengard_large_bow|Isengard Large Bow
 itm_isengard_large_bow_pl|Isengard Large Bow
 itm_dale_bow|Dale Bow
 itm_dale_bow_pl|Dale Bow
-itm_uruk_bow|Orc Bow
-itm_uruk_bow_pl|Orc Bow
+itm_uruk_bow|Strong Orc Bow
+itm_uruk_bow_pl|Strong Orc Bow
 itm_mirkwood_bow|Mirkwood Bow
 itm_mirkwood_bow_pl|Mirkwood Bow
 itm_dunland_javelin|Dunland Javelins
@@ -354,8 +354,8 @@ itm_riv_helm_b|Rivendell Archer Helm
 itm_riv_helm_b_pl|Rivendell Archer Helm
 itm_riv_helm_c|Rivendell Infantry Helm
 itm_riv_helm_c_pl|Rivendell Infantry Helm
-itm_riv_helm_glorfi|Glorfi Hair
-itm_riv_helm_glorfi_pl|Glorfi Hair
+itm_free_riv_helm_glorfi|Glorfi Hair
+itm_free_riv_helm_glorfi_pl|Glorfi Hair
 itm_riv_tiara|Elf Lord Tiara
 itm_riv_tiara_pl|Elf Lord Tiara
 itm_riv_shield_a|Rivendell Shield
@@ -368,8 +368,8 @@ itm_riv_1h_sword|Rivendell Sword
 itm_riv_1h_sword_pl|Rivendell Sword
 itm_riv_riding_sword|Rivendell Cavalry Sword
 itm_riv_riding_sword_pl|Rivendell Cavalry Sword
-itm_riv_archer_sword|Rivendell Archer's Sword
-itm_riv_archer_sword_pl|Rivendell Archer's Sword
+itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword_pl|Rivendell Archer Sword
 itm_riv_spear|Rivendell Spear
 itm_riv_spear_pl|Rivendell Spear
 itm_riv_armor_light|Rivendell Armor
@@ -458,18 +458,18 @@ itm_gondor_lamedon_helm|Lamedon Helm
 itm_gondor_lamedon_helm_pl|Lamedon Helm
 itm_gondor_lamedon_leader_helm|Lamedon High Helmet
 itm_gondor_lamedon_leader_helm_pl|Lamedon High Helmet
-itm_blackroot_archer|Blackroot Vale Archer Armor
-itm_blackroot_archer_pl|Blackroot Vale Archer Armor
-itm_blackroot_bowman|Blackroot Vale Bowman Armor
-itm_blackroot_bowman_pl|Blackroot Vale Bowman Armor
-itm_blackroot_footman|Blackroot Vale Footman Armor
-itm_blackroot_footman_pl|Blackroot Vale Footman Armor
-itm_blackroot_warrior|Blackroot Vale Warrior Armor
-itm_blackroot_warrior_pl|Blackroot Vale Warrior Armor
-itm_blackroot_leader|Blackroot Vale Leader Armor
-itm_blackroot_leader_pl|Blackroot Vale Leader Armor
-itm_blackroot_hood|Blackroot Hood
-itm_blackroot_hood_pl|Blackroot Hood
+itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
+itm_blackroot_archer_pl|Blackroot Vale Cloaked Gambeson
+itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
+itm_blackroot_bowman_pl|Blackroot Vale Cloaked Jerkin
+itm_blackroot_footman|Blackroot Vale Jerkin
+itm_blackroot_footman_pl|Blackroot Vale Jerkin
+itm_blackroot_warrior|Blackroot Vale Gambeson
+itm_blackroot_warrior_pl|Blackroot Vale Gambeson
+itm_blackroot_leader|Blackroot Vale Mail
+itm_blackroot_leader_pl|Blackroot Vale Mail
+itm_blackroot_hood|Black Hood
+itm_blackroot_hood_pl|Black Hood
 itm_dol_hauberk|Dol Amroth Hauberk
 itm_dol_hauberk_pl|Dol Amroth Hauberk
 itm_dol_heavy_mail|Dol Amroth Heavy Mail
@@ -498,8 +498,8 @@ itm_lamedon_veteran|Lamedon Veteran Armor
 itm_lamedon_veteran_pl|Lamedon Veteran Armor
 itm_lamedon_vet_warrior|Lamedon Veteran Warrior Armor
 itm_lamedon_vet_warrior_pl|Lamedon Veteran Warrior Armor
-itm_lamedon_hood|Lamedon Hood
-itm_lamedon_hood_pl|Lamedon Hood
+itm_lamedon_hood|Hood
+itm_lamedon_hood_pl|Hood
 itm_pinnath_archer|Pinnath Gelin Archer Armor
 itm_pinnath_archer_pl|Pinnath Gelin Archer Armor
 itm_pinnath_footman|Pinnath Gelin Footman Armor
@@ -522,8 +522,8 @@ itm_pelargir_marine_leader|Pelargir Marine Leader
 itm_pelargir_marine_leader_pl|Pelargir Marine Leader
 itm_pelargir_regular|Pelargir Regular
 itm_pelargir_regular_pl|Pelargir Regular
-itm_pelargir_hood|Pelargir Hood
-itm_pelargir_hood_pl|Pelargir Hood
+itm_pelargir_hood|White Hood
+itm_pelargir_hood_pl|White Hood
 itm_pelargir_helmet_light|Pelargir Helm
 itm_pelargir_helmet_light_pl|Pelargir Helm
 itm_pelargir_helmet_heavy|Pelargir Heavy Helm
@@ -636,8 +636,8 @@ itm_lorien_helm_c|Lorien Infantry Helm
 itm_lorien_helm_c_pl|Lorien Infantry Helm
 itm_orc_chain_greaves|Orc Greaves
 itm_orc_chain_greaves_pl|Orc Greaves
-itm_orc_coif|Orc Coif
-itm_orc_coif_pl|Orc Coif
+itm_orc_coif|Orc Skullcap
+itm_orc_coif_pl|Orc Skullcap
 itm_orc_greaves|Orc Chain Boots
 itm_orc_greaves_pl|Orc Chain Boots
 itm_orc_ragwrap|Orc Ragwrap
@@ -718,14 +718,14 @@ itm_isen_uruk_helm_f|Uruk-Hai Tracker Helm
 itm_isen_uruk_helm_f_pl|Uruk-Hai Tracker Helm
 itm_uruk_pike_a|Uruk Pike
 itm_uruk_pike_a_pl|Uruk Pike
-itm_uruk_pike_b|Uruk Pike
-itm_uruk_pike_b_pl|Uruk Pike
+itm_uruk_pike_b|Mordor Pike
+itm_uruk_pike_b_pl|Mordor Pike
 itm_uruk_falchion_a|Uruk Falchion
 itm_uruk_falchion_a_pl|Uruk Falchion
 itm_uruk_falchion_b|Uruk Falchion
 itm_uruk_falchion_b_pl|Uruk Falchion
-itm_uruk_spear|Uruk Spear
-itm_uruk_spear_pl|Uruk Spear
+itm_uruk_spear|Mordor Spear
+itm_uruk_spear_pl|Mordor Spear
 itm_uruk_skull_spear|Uruk Skull Spear
 itm_uruk_skull_spear_pl|Uruk Skull Spear
 itm_uruk_voulge|Uruk Voulge
@@ -766,12 +766,12 @@ itm_skull_club|Skull Club
 itm_skull_club_pl|Skull Club
 itm_orc_club_a|Orc Club
 itm_orc_club_a_pl|Orc Club
-itm_orc_club_b|Orc Club
-itm_orc_club_b_pl|Orc Club
-itm_orc_club_c|Orc Club
-itm_orc_club_c_pl|Orc Club
-itm_orc_club_d|Orc Club
-itm_orc_club_d_pl|Orc Club
+itm_orc_club_b|Warg Rider Club
+itm_orc_club_b_pl|Warg Rider Club
+itm_orc_club_c|Spiky Orc Club
+itm_orc_club_c_pl|Spiky Orc Club
+itm_orc_club_d|Evil Mace
+itm_orc_club_d_pl|Evil Mace
 itm_orc_sledgehammer|Orc Sledgehammer
 itm_orc_sledgehammer_pl|Orc Sledgehammer
 itm_orc_simple_spear|Orc Spear
@@ -802,8 +802,8 @@ itm_orc_shield_a|Orc Shield
 itm_orc_shield_a_pl|Orc Shield
 itm_orc_shield_b|Orc Shield
 itm_orc_shield_b_pl|Orc Shield
-itm_orc_shield_c|Orc Shield
-itm_orc_shield_c_pl|Orc Shield
+itm_orc_shield_c|Orc Tower Shield
+itm_orc_shield_c_pl|Orc Tower Shield
 itm_mordor_orc_shield_a|Mordor Orc Shield
 itm_mordor_orc_shield_a_pl|Mordor Orc Shield
 itm_mordor_orc_shield_b|Mordor Orc Shield
@@ -826,28 +826,28 @@ itm_mordor_man_shield_b|Mordor Man Shield
 itm_mordor_man_shield_b_pl|Mordor Man Shield
 itm_angmar_shield|Angmar Shield
 itm_angmar_shield_pl|Angmar Shield
-itm_orc_helm_a|Orc Longnosehelm
-itm_orc_helm_a_pl|Orc Longnosehelm
-itm_orc_helm_b|Orc Gratehelm
-itm_orc_helm_b_pl|Orc Gratehelm
-itm_orc_helm_c|Orc Buckethelm
-itm_orc_helm_c_pl|Orc Buckethelm
-itm_orc_helm_d|Orc Grillhelm
-itm_orc_helm_d_pl|Orc Grillhelm
-itm_orc_helm_e|Orc Beakhelm
-itm_orc_helm_e_pl|Orc Beakhelm
-itm_orc_helm_f|Orc Bughelm
-itm_orc_helm_f_pl|Orc Bughelm
-itm_orc_helm_g|Orc Crowhelm
-itm_orc_helm_g_pl|Orc Crowhelm
-itm_orc_helm_h|Orc Jawhelm
-itm_orc_helm_h_pl|Orc Jawhelm
-itm_orc_helm_i|Orc Snouthelm
-itm_orc_helm_i_pl|Orc Snouthelm
-itm_orc_helm_j|Orc Lizardhelm
-itm_orc_helm_j_pl|Orc Lizardhelm
-itm_orc_helm_k|Orc Vulturehelm
-itm_orc_helm_k_pl|Orc Vulturehelm
+itm_orc_nosehelm|Orc Nosehelm
+itm_orc_nosehelm_pl|Orc Nosehelm
+itm_orc_kettlehelm|Orc Kettlehelm
+itm_orc_kettlehelm_pl|Orc Kettlehelm
+itm_orc_buckethelm|Orc Buckethelm
+itm_orc_buckethelm_pl|Orc Buckethelm
+itm_orc_morion|Orc Morion
+itm_orc_morion_pl|Orc Morion
+itm_orc_beakhelm|Orc Beakhelm
+itm_orc_beakhelm_pl|Orc Beakhelm
+itm_orc_bughelm|Orc Bughelm
+itm_orc_bughelm_pl|Orc Bughelm
+itm_orc_visorhelm|Orc Visorhelm
+itm_orc_visorhelm_pl|Orc Visorhelm
+itm_free_orc_helm_g|oldOrc Crowhelm
+itm_free_orc_helm_g_pl|oldOrc Crowhelm
+itm_free_orc_helm_i|oldOrc Snouthelm
+itm_free_orc_helm_i_pl|oldOrc Snouthelm
+itm_free_orc_helm_j|oldOrc Lizardhelm
+itm_free_orc_helm_j_pl|oldOrc Lizardhelm
+itm_free_orc_helm_k|oldOrc Vulturehelm
+itm_free_orc_helm_k_pl|oldOrc Vulturehelm
 itm_m_orc_light_a|Mordor Orc Light Armor
 itm_m_orc_light_a_pl|Mordor Orc Light Armor
 itm_m_orc_light_b|Mordor Orc Light Armor
@@ -870,22 +870,22 @@ itm_m_orc_heavy_e|Mordor Orc Heavy Armor
 itm_m_orc_heavy_e_pl|Mordor Orc Heavy Armor
 itm_m_uruk_light_a|Uruk Harness
 itm_m_uruk_light_a_pl|Uruk Harness
-itm_m_uruk_light_b|Uruk Thick Harness
-itm_m_uruk_light_b_pl|Uruk Thick Harness
-itm_m_uruk_heavy_c|Uruk Leather Armor
-itm_m_uruk_heavy_c_pl|Uruk Leather Armor
-itm_m_uruk_heavy_d|Uruk Segmented Armor
-itm_m_uruk_heavy_d_pl|Uruk Segmented Armor
-itm_m_uruk_heavy_e|Uruk Mail
-itm_m_uruk_heavy_e_pl|Uruk Mail
-itm_m_uruk_heavy_f|Uruk Mail
-itm_m_uruk_heavy_f_pl|Uruk Mail
-itm_m_uruk_heavy_g|Uruk Mail
-itm_m_uruk_heavy_g_pl|Uruk Mail
-itm_m_uruk_heavy_h|Uruk Scale
-itm_m_uruk_heavy_h_pl|Uruk Scale
-itm_m_uruk_heavy_i|Uruk Thick Scale
-itm_m_uruk_heavy_i_pl|Uruk Thick Scale
+itm_m_uruk_light_b|Uruk Leather Armor
+itm_m_uruk_light_b_pl|Uruk Leather Armor
+itm_m_uruk_light_c|Uruk Light Mail
+itm_m_uruk_light_c_pl|Uruk Light Mail
+itm_m_uruk_med_a|Uruk Heavy Leather
+itm_m_uruk_med_a_pl|Uruk Heavy Leather
+itm_m_uruk_med_b|Uruk Heavy Mail
+itm_m_uruk_med_b_pl|Uruk Heavy Mail
+itm_m_uruk_med_c|Uruk Light Scale
+itm_m_uruk_med_c_pl|Uruk Light Scale
+itm_m_uruk_heavy_a|Uruk Heavy Scale
+itm_m_uruk_heavy_a_pl|Uruk Heavy Scale
+itm_m_uruk_heavy_b|Uruk Platemail
+itm_m_uruk_heavy_b_pl|Uruk Platemail
+itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c_pl|Lugburz Platemail
 itm_m_uruk_heavy_j|Uruk Heavy Armor
 itm_m_uruk_heavy_j_pl|Uruk Heavy Armor
 itm_m_uruk_heavy_k|Uruk Guard Armor
@@ -932,8 +932,8 @@ itm_moria_armor_d|Moria Bolted Leather
 itm_moria_armor_d_pl|Moria Bolted Leather
 itm_moria_armor_e|Moria Orc Heavy Mail
 itm_moria_armor_e_pl|Moria Orc Heavy Mail
-itm_moria_orc_shield_a|Moria Orc Shield
-itm_moria_orc_shield_a_pl|Moria Orc Shield
+itm_moria_orc_shield_a|Moria Great Shield
+itm_moria_orc_shield_a_pl|Moria Great Shield
 itm_moria_orc_shield_b|Moria Orc Shield
 itm_moria_orc_shield_b_pl|Moria Orc Shield
 itm_moria_orc_shield_c|Moria Orc Shield
@@ -948,10 +948,10 @@ itm_gundabad_armor_d|Gundabad Orc Armor
 itm_gundabad_armor_d_pl|Gundabad Orc Armor
 itm_gundabad_armor_e|Gundabad Orc Heavy Armor
 itm_gundabad_armor_e_pl|Gundabad Orc Heavy Armor
-itm_gundabad_helm_a|Gundabad Cap
-itm_gundabad_helm_a_pl|Gundabad Cap
-itm_gundabad_helm_b|Gundabad Helm
-itm_gundabad_helm_b_pl|Gundabad Helm
+itm_gundabad_helm_a|Leather Cap
+itm_gundabad_helm_a_pl|Leather Cap
+itm_gundabad_helm_b|Leather Helm
+itm_gundabad_helm_b_pl|Leather Helm
 itm_gundabad_helm_c|Gundabad Helm
 itm_gundabad_helm_c_pl|Gundabad Helm
 itm_gundabad_helm_d|Gundabad Helm
@@ -988,8 +988,8 @@ itm_dun_helm_c|Dunnish Tall Helm
 itm_dun_helm_c_pl|Dunnish Tall Helm
 itm_dun_helm_d|Dunnish Tall Helm
 itm_dun_helm_d_pl|Dunnish Tall Helm
-itm_dun_helm_e|Dun Tall War Helm
-itm_dun_helm_e_pl|Dun Tall War Helm
+itm_dun_helm_e|Dunnish Antler Helm
+itm_dun_helm_e_pl|Dunnish Antler Helm
 itm_dun_shield_a|Dunnish Shield
 itm_dun_shield_a_pl|Dunnish Shield
 itm_dun_shield_b|Dunnish Shield
@@ -1008,42 +1008,42 @@ itm_dunnish_pike|Dunnish Pike
 itm_dunnish_pike_pl|Dunnish Pike
 itm_rohan_armor_a|Rohan Shirt
 itm_rohan_armor_a_pl|Rohan Shirt
-itm_rohan_armor_b|Rohan Shirt Cape
-itm_rohan_armor_b_pl|Rohan Shirt Cape
-itm_rohan_armor_c|Rohan Long Shirt
-itm_rohan_armor_c_pl|Rohan Long Shirt
-itm_rohan_armor_d|Rohan Hauberk
-itm_rohan_armor_d_pl|Rohan Hauberk
+itm_free_rohan_armor_b|Rohan Shirt Cape
+itm_free_rohan_armor_b_pl|Rohan Shirt Cape
+itm_free_rohan_armor_c|Rohan Long Shirt
+itm_free_rohan_armor_c_pl|Rohan Long Shirt
+itm_free_rohan_armor_d|Rohan Hauberk
+itm_free_rohan_armor_d_pl|Rohan Hauberk
 itm_rohan_armor_e|Rohan Hauberk
 itm_rohan_armor_e_pl|Rohan Hauberk
-itm_rohan_armor_f|Rohan Hauberk
-itm_rohan_armor_f_pl|Rohan Hauberk
-itm_rohan_armor_g|Rohan Mail Shirt
-itm_rohan_armor_g_pl|Rohan Mail Shirt
-itm_rohan_armor_h|Rohan Long Mail
-itm_rohan_armor_h_pl|Rohan Long Mail
-itm_rohan_armor_i|Rohan Long Mail
-itm_rohan_armor_i_pl|Rohan Long Mail
-itm_rohan_armor_j|Rohan Hauberk
-itm_rohan_armor_j_pl|Rohan Hauberk
+itm_free_rohan_armor_f|Rohan Hauberk
+itm_free_rohan_armor_f_pl|Rohan Hauberk
+itm_free_rohan_armor_g|Rohan Leather Armor
+itm_free_rohan_armor_g_pl|Rohan Leather Armor
+itm_rohan_armor_h|Rohan Leather Armor
+itm_rohan_armor_h_pl|Rohan Leather Armor
+itm_free_rohan_armor_i|Rohan Leather Armor
+itm_free_rohan_armor_i_pl|Rohan Leather Armor
+itm_free_rohan_armor_j|Rohan Hauberk
+itm_free_rohan_armor_j_pl|Rohan Hauberk
 itm_rohan_armor_k|Rohan Hauberk
 itm_rohan_armor_k_pl|Rohan Hauberk
-itm_rohan_armor_l|Rohan Hauberk
-itm_rohan_armor_l_pl|Rohan Hauberk
-itm_rohan_armor_m|Rohan Scale Armor
-itm_rohan_armor_m_pl|Rohan Scale Armor
+itm_free_rohan_armor_l|Rohan Hauberk
+itm_free_rohan_armor_l_pl|Rohan Hauberk
+itm_free_rohan_armor_m|Rohan Scale Armor
+itm_free_rohan_armor_m_pl|Rohan Scale Armor
 itm_rohan_armor_n|Rohan Scale Armor
 itm_rohan_armor_n_pl|Rohan Scale Armor
-itm_rohan_armor_o|Rohan Scale Armor
-itm_rohan_armor_o_pl|Rohan Scale Armor
+itm_free_rohan_armor_o|Rohan Scale Armor
+itm_free_rohan_armor_o_pl|Rohan Scale Armor
 itm_rohan_armor_p|Rohan Armor
 itm_rohan_armor_p_pl|Rohan Armor
-itm_rohan_armor_q|Rohan Armor
-itm_rohan_armor_q_pl|Rohan Armor
-itm_rohan_armor_r|Rohan Armor
-itm_rohan_armor_r_pl|Rohan Armor
-itm_rohan_armor_s|Rohan Heraldric Mail
-itm_rohan_armor_s_pl|Rohan Heraldric Mail
+itm_free_rohan_armor_q|Rohan Armor
+itm_free_rohan_armor_q_pl|Rohan Armor
+itm_free_rohan_armor_r|Rohan Armor
+itm_free_rohan_armor_r_pl|Rohan Armor
+itm_rohan_armor_s|Rohan Guard Armor
+itm_rohan_armor_s_pl|Rohan Guard Armor
 itm_rohan_light_helmet_a|Rohan Light Helm
 itm_rohan_light_helmet_a_pl|Rohan Light Helm
 itm_rohan_light_helmet_b|Rohan Light Helmet
@@ -1108,14 +1108,14 @@ itm_mirkwood_armor_a|Light Leather
 itm_mirkwood_armor_a_pl|Light Leather
 itm_mirkwood_armor_b|Light Quilted and Scale Armor
 itm_mirkwood_armor_b_pl|Light Quilted and Scale Armor
-itm_mirkwood_armor_c|Light Scale over Mail
-itm_mirkwood_armor_c_pl|Light Scale over Mail
+itm_mirkwood_armor_c|Mirkwood Royal Mail
+itm_mirkwood_armor_c_pl|Mirkwood Royal Mail
 itm_mirkwood_armor_d|Light Quilted Surcoat
 itm_mirkwood_armor_d_pl|Light Quilted Surcoat
 itm_mirkwood_armor_e|Light Mail and Surcoat
 itm_mirkwood_armor_e_pl|Light Mail and Surcoat
-itm_mirkwood_armor_f|Royal Woodelf Armor
-itm_mirkwood_armor_f_pl|Royal Woodelf Armor
+itm_mirkwood_armor_f|Mirkwood Leafscale
+itm_mirkwood_armor_f_pl|Mirkwood Leafscale
 itm_mirkwood_great_spear|Mirkwood Great Spear
 itm_mirkwood_great_spear_pl|Mirkwood Great Spear
 itm_mirkwood_war_spear|Mirkwood War Spear
@@ -1152,8 +1152,8 @@ itm_harad_hauberk|Harondor Hauberk
 itm_harad_hauberk_pl|Harondor Hauberk
 itm_harad_lamellar|Harasjala Armor
 itm_harad_lamellar_pl|Harasjala Armor
-itm_harad_heavy|Harad Swordsman Armor
-itm_harad_heavy_pl|Harad Swordsman Armor
+itm_harad_heavy|Harad Noble Armor
+itm_harad_heavy_pl|Harad Noble Armor
 itm_harad_skirmisher|Light Harad Garb
 itm_harad_skirmisher_pl|Light Harad Garb
 itm_harad_archer|Harad Archer Armor
@@ -1396,56 +1396,56 @@ itm_rhun_greataxe|Rhun Great Axe
 itm_rhun_greataxe_pl|Rhun Great Axe
 itm_rhun_battleaxe|Rhun Battle Axe
 itm_rhun_battleaxe_pl|Rhun Battle Axe
-itm_rhun_falchion|Rhun Falchion
-itm_rhun_falchion_pl|Rhun Falchion
+itm_rhun_falchion|Savage Falchion
+itm_rhun_falchion_pl|Savage Falchion
 itm_rhun_glaive|Rhun Glaive
 itm_rhun_glaive_pl|Rhun Glaive
-itm_rhun_greatfalchion|Rhun Great Falchion
-itm_rhun_greatfalchion_pl|Rhun Great Falchion
-itm_rhun_greatsword|Rhun Great Sword
-itm_rhun_greatsword_pl|Rhun Great Sword
-itm_rhun_shortsword|Rhun Shortsword
-itm_rhun_shortsword_pl|Rhun Shortsword
-itm_rhun_sword|Rhun Sword
-itm_rhun_sword_pl|Rhun Sword
+itm_rhun_greatfalchion|Savage Great Falchion
+itm_rhun_greatfalchion_pl|Savage Great Falchion
+itm_rhun_greatsword|Savage Great Sword
+itm_rhun_greatsword_pl|Savage Great Sword
+itm_rhun_shortsword|Savage Shortsword
+itm_rhun_shortsword_pl|Savage Shortsword
+itm_rhun_sword|Savage Sword
+itm_rhun_sword_pl|Savage Sword
 itm_rhun_shield|Rhun Kite Shield
 itm_rhun_shield_pl|Rhun Kite Shield
-itm_dale_armor_a|Dale Jacket
-itm_dale_armor_a_pl|Dale Jacket
-itm_dale_armor_b|Dale Cloak Jacket
-itm_dale_armor_b_pl|Dale Cloak Jacket
-itm_dale_armor_c|Dale Archer Jacket
-itm_dale_armor_c_pl|Dale Archer Jacket
-itm_dale_armor_d|Dale Archer Jacket
-itm_dale_armor_d_pl|Dale Archer Jacket
-itm_dale_armor_e|Dale Coat Over Mail
-itm_dale_armor_e_pl|Dale Coat Over Mail
-itm_dale_armor_f|Dale Coat Over Mail
-itm_dale_armor_f_pl|Dale Coat Over Mail
-itm_dale_armor_g|Dale Coat Over Mail
-itm_dale_armor_g_pl|Dale Coat Over Mail
-itm_dale_armor_h|Dale Cloak Long Maille
-itm_dale_armor_h_pl|Dale Cloak Long Maille
-itm_dale_armor_i|Dale Cloak Long Maille
-itm_dale_armor_i_pl|Dale Cloak Long Maille
-itm_dale_armor_j|Dale Cloak Long Maille
-itm_dale_armor_j_pl|Dale Cloak Long Maille
-itm_dale_armor_k|Dale Noble Armor
-itm_dale_armor_k_pl|Dale Noble Armor
+itm_dale_light_a|Dale Militia Jacket
+itm_dale_light_a_pl|Dale Militia Jacket
+itm_dale_light_b|Northmen Light Lamellar
+itm_dale_light_b_pl|Northmen Light Lamellar
+itm_dale_med_a|Northmen Heavy Lamellar
+itm_dale_med_a_pl|Northmen Heavy Lamellar
+itm_dale_med_b|Dale Leather Armor
+itm_dale_med_b_pl|Dale Leather Armor
+itm_dale_med_c|Dale Leather Over Mail
+itm_dale_med_c_pl|Dale Leather Over Mail
+itm_dale_med_d|Dale Lamellar Armor
+itm_dale_med_d_pl|Dale Lamellar Armor
+itm_dale_heavy_a|Dale Lamellar Over Mail
+itm_dale_heavy_a_pl|Dale Lamellar Over Mail
+itm_dale_heavy_b|Dale Plated Coat
+itm_dale_heavy_b_pl|Dale Plated Coat
+itm_dale_heavy_c|Rhovanion Mail
+itm_dale_heavy_c_pl|Rhovanion Mail
+itm_free_dale_armor_j|Dale Cloak Long Maille
+itm_free_dale_armor_j_pl|Dale Cloak Long Maille
+itm_free_dale_armor_k|Dale Noble Armor
+itm_free_dale_armor_k_pl|Dale Noble Armor
 itm_dale_armor_l|Dale Noble Gorget
 itm_dale_armor_l_pl|Dale Noble Gorget
 itm_dale_helmet_a|Dale Light Infantry Helm
 itm_dale_helmet_a_pl|Dale Light Infantry Helm
-itm_dale_helmet_b|Dale Light Archer's Helm
-itm_dale_helmet_b_pl|Dale Light Archer's Helm
+itm_dale_helmet_b|Dale Light Archer Helm
+itm_dale_helmet_b_pl|Dale Light Archer Helm
 itm_dale_helmet_c|Dale Infantry Helm
 itm_dale_helmet_c_pl|Dale Infantry Helm
-itm_dale_helmet_d|Dale Archer's Helm
-itm_dale_helmet_d_pl|Dale Archer's Helm
-itm_dale_helmet_e|Dale Heavy Infantry Helm
-itm_dale_helmet_e_pl|Dale Heavy Infantry Helm
-itm_dale_helmet_f|Dale Heavy Archer's Helm
-itm_dale_helmet_f_pl|Dale Heavy Archer's Helm
+itm_dale_helmet_d|Dale Archer Helm
+itm_dale_helmet_d_pl|Dale Archer Helm
+itm_dale_helmet_e|Barding Helm
+itm_dale_helmet_e_pl|Barding Helm
+itm_dale_helmet_f|Barding Helm
+itm_dale_helmet_f_pl|Barding Helm
 itm_dale_sword|Dale Shortsword
 itm_dale_sword_pl|Dale Shortsword
 itm_dale_sword_long|Dale Longsword
@@ -1456,46 +1456,46 @@ itm_dale_pike|Dale Spear
 itm_dale_pike_pl|Dale Spear
 itm_dale_billhook|Dale Billhook
 itm_dale_billhook_pl|Dale Billhook
-itm_dale_shield_a|Dale Shield
-itm_dale_shield_a_pl|Dale Shield
-itm_dale_shield_b|Dale Shield
-itm_dale_shield_b_pl|Dale Shield
-itm_dale_shield_c|Dale Shield
-itm_dale_shield_c_pl|Dale Shield
+itm_dale_shield_a|Dale Tower Shield
+itm_dale_shield_a_pl|Dale Tower Shield
+itm_dale_shield_b|Dale Tower Shield
+itm_dale_shield_b_pl|Dale Tower Shield
+itm_dale_shield_c|Dale Round Shield
+itm_dale_shield_c_pl|Dale Round Shield
 itm_dale_shield_d|Dale Shield
 itm_dale_shield_d_pl|Dale Shield
+itm_free_umb_armor_a1|Corsair Heavy Leather Armor
+itm_free_umb_armor_a1_pl|Corsair Heavy Leather Armor
+itm_free_umb_armor_d|Corsair Heavy Padded Armor
+itm_free_umb_armor_d_pl|Corsair Heavy Padded Armor
+itm_free_umb_armor_g|Corsair Hauberk Pauldrons
+itm_free_umb_armor_g_pl|Corsair Hauberk Pauldrons
 itm_umb_armor_a|Corsair Leather Armor
 itm_umb_armor_a_pl|Corsair Leather Armor
-itm_umb_armor_a1|Corsair Heavy Leather Armor
-itm_umb_armor_a1_pl|Corsair Heavy Leather Armor
 itm_umb_armor_b|Corsair Raider Armor
 itm_umb_armor_b_pl|Corsair Raider Armor
 itm_umb_armor_c|Corsair Padded Armor
 itm_umb_armor_c_pl|Corsair Padded Armor
-itm_umb_armor_d|Corsair Heavy Padded Armor
-itm_umb_armor_d_pl|Corsair Heavy Padded Armor
-itm_umb_armor_e|Corsair Padded Raider Armor
-itm_umb_armor_e_pl|Corsair Padded Raider Armor
-itm_umb_armor_f|Corsair Hauberk
-itm_umb_armor_f_pl|Corsair Hauberk
-itm_umb_armor_g|Corsair Hauberk Pauldrons
-itm_umb_armor_g_pl|Corsair Hauberk Pauldrons
-itm_umb_armor_h|Corsair Heavy Raider Armor
-itm_umb_armor_h_pl|Corsair Heavy Raider Armor
+itm_umb_armor_d|Corsair Padded Raider Armor
+itm_umb_armor_d_pl|Corsair Padded Raider Armor
+itm_umb_armor_e|Corsair Hauberk
+itm_umb_armor_e_pl|Corsair Hauberk
+itm_umb_armor_f|Corsair Heavy Raider Armor
+itm_umb_armor_f_pl|Corsair Heavy Raider Armor
 itm_umb_helm_a|Corsair Shell Helm
 itm_umb_helm_a_pl|Corsair Shell Helm
 itm_umb_helm_b|Corsair Shell Helm
 itm_umb_helm_b_pl|Corsair Shell Helm
 itm_umb_helm_c|Corsair Militia Helm
 itm_umb_helm_c_pl|Corsair Militia Helm
-itm_umb_helm_d|Corsair Militia Helm
-itm_umb_helm_d_pl|Corsair Militia Helm
-itm_umb_helm_e|Corsair Raider Helm
-itm_umb_helm_e_pl|Corsair Raider Helm
-itm_umb_helm_f|Corsair Raider Helm
-itm_umb_helm_f_pl|Corsair Raider Helm
-itm_umb_hood|Umbar Hood
-itm_umb_hood_pl|Umbar Hood
+itm_umb_helm_d|Corsair Raider Helm
+itm_umb_helm_d_pl|Corsair Raider Helm
+itm_umb_helm_e|Corsair High Helm
+itm_umb_helm_e_pl|Corsair High Helm
+itm_umb_helm_f|Corsair High Helm
+itm_umb_helm_f_pl|Corsair High Helm
+itm_umb_hood|Black Hood
+itm_umb_hood_pl|Black Hood
 itm_corsair_boots|Corsair Boots
 itm_corsair_boots_pl|Corsair Boots
 itm_umb_shield_a|Corsair Buckler
@@ -1512,22 +1512,22 @@ itm_umbar_cutlass|Umbar Cutlass
 itm_umbar_cutlass_pl|Umbar Cutlass
 itm_kraken|Kraken Cutlass
 itm_kraken_pl|Kraken Cutlass
-itm_umbar_rapier|Umbar Sword
-itm_umbar_rapier_pl|Umbar Sword
+itm_umbar_rapier|Umbar Boarding Sword
+itm_umbar_rapier_pl|Umbar Boarding Sword
 itm_corsair_harpoon|Corsair Harpoon
 itm_corsair_harpoon_pl|Corsair Harpoon
 itm_corsair_sword|Corsair Eket
 itm_corsair_sword_pl|Corsair Eket
-itm_corsair_throwing_dagger|Umbarian Throwing Daggers
-itm_corsair_throwing_dagger_pl|Umbarian Throwing Daggers
+itm_corsair_throwing_dagger|Crooked Throwing Daggers
+itm_corsair_throwing_dagger_pl|Crooked Throwing Daggers
 itm_umbar_pike|Umbar Pike
 itm_umbar_pike_pl|Umbar Pike
-itm_woodman_tunic|Woodman Tunic
-itm_woodman_tunic_pl|Woodman Tunic
-itm_woodman_scout|Woodman Scout Cape
-itm_woodman_scout_pl|Woodman Scout Cape
-itm_woodman_padded|Woodman Padded Armor
-itm_woodman_padded_pl|Woodman Padded Armor
+itm_woodman_tunic|Woodmen Tunic
+itm_woodman_tunic_pl|Woodmen Tunic
+itm_woodman_scout|Woodmen Scout Cape
+itm_woodman_scout_pl|Woodmen Scout Cape
+itm_woodman_padded|Woodmen Padded Armor
+itm_woodman_padded_pl|Woodmen Padded Armor
 itm_beorn_tunic|Beorning Tunic
 itm_beorn_tunic_pl|Beorning Tunic
 itm_beorn_padded|Beorning Padded Armor
@@ -1538,46 +1538,46 @@ itm_beorn_berserk|Beorning Berserker Kit
 itm_beorn_berserk_pl|Beorning Berserker Kit
 itm_beorn_chief|Beorning Chieftan's Tunic
 itm_beorn_chief_pl|Beorning Chieftan's Tunic
-itm_beorn_helmet|North Skullcap
-itm_beorn_helmet_pl|North Skullcap
+itm_beorn_helmet|Bear Skullcap
+itm_beorn_helmet_pl|Bear Skullcap
 itm_beorn_shield|Northmen Shield
 itm_beorn_shield_pl|Northmen Shield
 itm_beorn_axe|Beorning Axe
 itm_beorn_axe_pl|Beorning Axe
-itm_beorn_staff|Woodman's Staff
-itm_beorn_staff_pl|Woodman's Staff
+itm_beorn_staff|Woodmen Staff
+itm_beorn_staff_pl|Woodmen Staff
 itm_beorn_battle_axe|Beorning War Axe
 itm_beorn_battle_axe_pl|Beorning War Axe
-itm_dwarf_shield_a|Dwarven Shield
-itm_dwarf_shield_a_pl|Dwarven Shield
-itm_dwarf_shield_b|Dwarven Shield
-itm_dwarf_shield_b_pl|Dwarven Shield
-itm_dwarf_shield_c|Dwarven Shield
-itm_dwarf_shield_c_pl|Dwarven Shield
-itm_dwarf_shield_d|Dwarven Shield
-itm_dwarf_shield_d_pl|Dwarven Shield
-itm_dwarf_shield_f|Dwarven Shield
-itm_dwarf_shield_f_pl|Dwarven Shield
-itm_dwarf_shield_g|Dwarven Shield
-itm_dwarf_shield_g_pl|Dwarven Shield
-itm_dwarf_shield_i|Dwarven Shield
-itm_dwarf_shield_i_pl|Dwarven Shield
-itm_dwarf_shield_j|Dwarven Shield
-itm_dwarf_shield_j_pl|Dwarven Shield
-itm_dwarf_shield_k|Dwarven Shield
-itm_dwarf_shield_k_pl|Dwarven Shield
-itm_dwarf_shield_l|Dwarven Shield
-itm_dwarf_shield_l_pl|Dwarven Shield
+itm_dwarf_shield_a|Dwarven Angular Shield
+itm_dwarf_shield_a_pl|Dwarven Angular Shield
+itm_dwarf_shield_b|Dwarven Tower Shield
+itm_dwarf_shield_b_pl|Dwarven Tower Shield
+itm_dwarf_shield_c|Dwarven Fighting Shield
+itm_dwarf_shield_c_pl|Dwarven Fighting Shield
+itm_dwarf_shield_d|Dwarven Round Shield
+itm_dwarf_shield_d_pl|Dwarven Round Shield
+itm_north_round_shield|Dwarven Shield
+itm_north_round_shield_pl|Dwarven Shield
+itm_free_dwarf_shield_g|Dwarven Shield
+itm_free_dwarf_shield_g_pl|Dwarven Shield
+itm_free_dwarf_shield_i|Dwarven Shield
+itm_free_dwarf_shield_i_pl|Dwarven Shield
+itm_free_dwarf_shield_j|Dwarven Shield
+itm_free_dwarf_shield_j_pl|Dwarven Shield
+itm_free_dwarf_shield_k|Dwarven Shield
+itm_free_dwarf_shield_k_pl|Dwarven Shield
+itm_woodmen_heavy|Mirkwood Armor
+itm_woodmen_heavy_pl|Mirkwood Armor
 itm_dwarf_sword_a|Dwarf Sword
 itm_dwarf_sword_a_pl|Dwarf Sword
-itm_dwarf_sword_b|Dwarf Sword
-itm_dwarf_sword_b_pl|Dwarf Sword
+itm_dwarf_sword_b|Beorning Shortsword
+itm_dwarf_sword_b_pl|Beorning Shortsword
 itm_dwarf_sword_c|Dwarf Sword
 itm_dwarf_sword_c_pl|Dwarf Sword
 itm_dwarf_sword_d|Dwarf Sword
 itm_dwarf_sword_d_pl|Dwarf Sword
-itm_dwarf_adz|Dwarf Adz
-itm_dwarf_adz_pl|Dwarf Adz
+itm_dwarf_battle_axe|Dwarf Battle Axe
+itm_dwarf_battle_axe_pl|Dwarf Battle Axe
 itm_dwarf_great_axe|Dwarf Great Axe
 itm_dwarf_great_axe_pl|Dwarf Great Axe
 itm_dwarf_great_mattock|Dwarf Great Mattock
@@ -1596,52 +1596,52 @@ itm_dwarf_spear|Dwarf Spear
 itm_dwarf_spear_pl|Dwarf Spear
 itm_dwarf_spear_b|Dwarf Pike
 itm_dwarf_spear_b_pl|Dwarf Pike
-itm_dwarf_spear_c|Dwarf Pike
-itm_dwarf_spear_c_pl|Dwarf Pike
-itm_dwarf_helm_a|Dwarf Coif
-itm_dwarf_helm_a_pl|Dwarf Coif
-itm_dwarf_helm_b|Dwarf Coif with Mask
-itm_dwarf_helm_b_pl|Dwarf Coif with Mask
-itm_dwarf_helm_c|Dwarf Helm with Mask
-itm_dwarf_helm_c_pl|Dwarf Helm with Mask
-itm_dwarf_helm_h|Dwarf Helm
-itm_dwarf_helm_h_pl|Dwarf Helm
-itm_dwarf_helm_i|Dwarf Frisian Helm
-itm_dwarf_helm_i_pl|Dwarf Frisian Helm
-itm_dwarf_helm_j|Dwarf Frisian Mask
-itm_dwarf_helm_j_pl|Dwarf Frisian Mask
-itm_dwarf_helm_l|Dwarf Hood
-itm_dwarf_helm_l_pl|Dwarf Hood
-itm_dwarf_helm_m|Dwarf Iron Face
-itm_dwarf_helm_m_pl|Dwarf Iron Face
-itm_dwarf_helm_o|Dwarf Nasal Tophelm
-itm_dwarf_helm_o_pl|Dwarf Nasal Tophelm
+itm_dwarf_spear_c|Dwarf Longaxe
+itm_dwarf_spear_c_pl|Dwarf Longaxe
+itm_dwarf_helm_coif|Dwarf Coif
+itm_dwarf_helm_coif_pl|Dwarf Coif
+itm_dwarf_nasal_b|Dwarf Nasal Helm
+itm_dwarf_nasal_b_pl|Dwarf Nasal Helm
+itm_north_skullcap|North Skullcap
+itm_north_skullcap_pl|North Skullcap
+itm_dwarf_helm_kettle|Dwarf Kettle Helm
+itm_dwarf_helm_kettle_pl|Dwarf Kettle Helm
+itm_dwarf_helm_fris|Dwarf Frisian Helm
+itm_dwarf_helm_fris_pl|Dwarf Frisian Helm
+itm_north_leather_skullcap|North Light Skullcap
+itm_north_leather_skullcap_pl|North Light Skullcap
+itm_dwarf_hood|Dwarf Hood
+itm_dwarf_hood_pl|Dwarf Hood
+itm_dwarf_nasal|Dwarf Nasal Tophelm
+itm_dwarf_nasal_pl|Dwarf Nasal Tophelm
+itm_north_nasal_helm|North Nasal Helm
+itm_north_nasal_helm_pl|North Nasal Helm
 itm_dwarf_helm_p|Dwarf King Helm
 itm_dwarf_helm_p_pl|Dwarf King Helm
-itm_dwarf_helm_q|Dwarf Miner Helm
-itm_dwarf_helm_q_pl|Dwarf Miner Helm
-itm_dwarf_helm_r|Dwarf Miner Cap
-itm_dwarf_helm_r_pl|Dwarf Miner Cap
-itm_dwarf_helm_u|Dwarf Round Mask
-itm_dwarf_helm_u_pl|Dwarf Round Mask
-itm_dwarf_helm_v|Dwarf Chain Sallet
-itm_dwarf_helm_v_pl|Dwarf Chain Sallet
-itm_dwarf_helm_x|Dwarf Masked Sallet
-itm_dwarf_helm_x_pl|Dwarf Masked Sallet
-itm_dwarf_armor_a|Dwarven Tunic over Mail
-itm_dwarf_armor_a_pl|Dwarven Tunic over Mail
+itm_dwarf_miner|Dwarf Light Helm
+itm_dwarf_miner_pl|Dwarf Light Helm
+itm_north_chieftain|North Chieftain Helm
+itm_north_chieftain_pl|North Chieftain Helm
+itm_dwarf_helm_round|Dwarf Round Helm
+itm_dwarf_helm_round_pl|Dwarf Round Helm
+itm_free_dwarf_helm_v|Dwarf Chain Sallet
+itm_free_dwarf_helm_v_pl|Dwarf Chain Sallet
+itm_dwarf_helm_sallet|Dwarf Sallet
+itm_dwarf_helm_sallet_pl|Dwarf Sallet
+itm_dwarf_armor_a|Erebor Mail
+itm_dwarf_armor_a_pl|Erebor Mail
 itm_leather_dwarf_armor|Dwarven Pad over Mail
 itm_leather_dwarf_armor_pl|Dwarven Pad over Mail
-itm_dwarf_vest|Dwarven Archer Armor
-itm_dwarf_vest_pl|Dwarven Archer Armor
-itm_dwarf_armor_b|Dwarven Pad over Tunic
-itm_dwarf_armor_b_pl|Dwarven Pad over Tunic
+itm_dwarf_armor_b|Erebor Scale
+itm_dwarf_armor_b_pl|Erebor Scale
+itm_leather_dwarf_armor_b|Dwarven Pad over Tunic
+itm_leather_dwarf_armor_b_pl|Dwarven Pad over Tunic
 itm_dwarf_armor_c|Dwarven Scale over Mail
 itm_dwarf_armor_c_pl|Dwarven Scale over Mail
-itm_leather_dwarf_armor_b|Dwarven Tunic
-itm_leather_dwarf_armor_b_pl|Dwarven Tunic
-itm_dwarf_vest_b|Iron Hills Tunic
-itm_dwarf_vest_b_pl|Iron Hills Tunic
+itm_dwarf_vest|Dwarven Tunic
+itm_dwarf_vest_pl|Dwarven Tunic
+itm_dwarf_vest_b|Iron Hills Mail
+itm_dwarf_vest_b_pl|Iron Hills Mail
 itm_dwarf_pad_boots|Dwarven Padded Boots
 itm_dwarf_pad_boots_pl|Dwarven Padded Boots
 itm_dwarf_chain_boots|Dwarven Mail Chausses
@@ -1654,8 +1654,8 @@ itm_far_harad_shield_paint|Wicker Shield
 itm_far_harad_shield_paint_pl|Wicker Shield
 itm_nazgulrobe|Nazgul Robe
 itm_nazgulrobe_pl|Nazgul Robe
-itm_whiterobe|White Robe
-itm_whiterobe_pl|White Robe
+itm_free_whiterobe|White Robe
+itm_free_whiterobe_pl|White Robe
 itm_mordor_banner|Mordor Banner
 itm_mordor_banner_pl|Mordor Banner
 itm_isengard_banner|Isengard banner
@@ -1674,24 +1674,24 @@ itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 itm_rohan_lance_banner_sun_pl|Rohan Lance With Sun Banner
 itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
 itm_rohan_lance_banner_horse_pl|Rohan Lance With Horse Banner
-itm_merry_outfit|hobbit outfit
-itm_merry_outfit_pl|hobbit outfit
-itm_pippin_outfit|hobbit outfit
-itm_pippin_outfit_pl|hobbit outfit
+itm_free_merry_outfit|hobbit outfit
+itm_free_merry_outfit_pl|hobbit outfit
+itm_free_pippin_outfit|hobbit outfit
+itm_free_pippin_outfit_pl|hobbit outfit
 itm_ent_body|Ent Body
 itm_ent_body_pl|Ent Body
 itm_ent_head_helm|Ent Head
 itm_ent_head_helm_pl|Ent Head
 itm_ent_head_helm2|Ent Head
 itm_ent_head_helm2_pl|Ent Head
-itm_ent_head_helm3|Ent Head
-itm_ent_head_helm3_pl|Ent Head
+itm_free_ent_head_helm3|Ent Head
+itm_free_ent_head_helm3_pl|Ent Head
 itm_ent_feet_boots|Ent Feet
 itm_ent_feet_boots_pl|Ent Feet
 itm_ent_hands|Ent Hands
 itm_ent_hands_pl|Ent Hands
-itm_galadriel|Galadriel suit
-itm_galadriel_pl|Galadriel suit
+itm_free_galadriel|Galadriel suit
+itm_free_galadriel_pl|Galadriel suit
 itm_empty_hands|empty hands
 itm_empty_hands_pl|empty hands
 itm_empty_legs|empty legs
@@ -1784,14 +1784,14 @@ itm_lorien_sword_reward|Galadhrim Sword
 itm_lorien_sword_reward_pl|Galadhrim Sword
 itm_dale_sword_reward|Marchwarden Sword
 itm_dale_sword_reward_pl|Marchwarden Sword
-itm_dale_armor_reward|Esgaroth Noble Gorget
-itm_dale_armor_reward_pl|Esgaroth Noble Gorget
+itm_dale_armor_reward|Dale Noblemen Mail
+itm_dale_armor_reward_pl|Dale Noblemen Mail
 itm_leather_gloves_reward|Hunting Gloves
 itm_leather_gloves_reward_pl|Hunting Gloves
 itm_beorn_shield_reward|Beorning Shield
 itm_beorn_shield_reward_pl|Beorning Shield
-itm_beorn_axe_reward|Bear Axe
-itm_beorn_axe_reward_pl|Bear Axe
+itm_beorn_axe_reward|Bear Club
+itm_beorn_axe_reward_pl|Bear Club
 itm_moria_arrow_reward|Moria Poisoned Arrows
 itm_moria_arrow_reward_pl|Moria Poisoned Arrows
 itm_khamul_helm|Helm of Khamul
@@ -1802,8 +1802,8 @@ itm_sarustaff|Wizards Staff
 itm_sarustaff_pl|Wizards Staff
 itm_rohan_armor_th|Rohan Royal Armor
 itm_rohan_armor_th_pl|Rohan Royal Armor
-itm_denethor_robe|Stewards Robe
-itm_denethor_robe_pl|Stewards Robe
+itm_free_denethor_robe|Stewards Robe
+itm_free_denethor_robe_pl|Stewards Robe
 itm_prisoner_coll_chain|Prisoner Chains
 itm_prisoner_coll_chain_pl|Prisoner Chains
 itm_witchking_helmet|Wicked Helm
@@ -1828,3 +1828,9 @@ itm_defiled_armor_dale|Defiled Dale Noble Armor
 itm_defiled_armor_dale_pl|Defiled Dale Noble Armor
 itm_save_compartibility_item10|INVALID ITEM
 itm_save_compartibility_item10_pl|INVALID ITEM
+itm_gondor_custom|Custom Gondor
+itm_gondor_custom_pl|Custom Gondor
+itm_stones_siege|Siege Stones
+itm_stones_siege_pl|Siege Stones
+itm_beorn_axe_no_attack|Beorning Axe
+itm_beorn_axe_no_attack_pl|Beorning Axe

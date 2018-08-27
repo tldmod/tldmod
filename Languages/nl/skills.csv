@@ -4,10 +4,10 @@ skl_leadership|Leiderschap
 skl_leadership_desc|Elk punt vergroot het maximum aantal troepen dat je kunt besturen. Verbetert het moraal van je groep en vermindert de loonkosten van je troepen met 5%% (Leider vaardigheid)
 skl_prisoner_management|Gevangenen beheer
 skl_prisoner_management_desc|Elk punt voor deze vaardigheid vergroot het maximum aantal gevangenen met %d (Leider vaardigheid)
-skl_persuasion|Overtuiging
-skl_persuasion_desc|Punten in deze vaardigheid zorgen ervoor dat mensen het eens zullen zijn met jou (Persoonlijke vaardigheid)
-skl_engineer|Creeëren
-skl_engineer_desc|Elk punt in deze vaardigheid vermindert de tijd die nodig is om spullen te maken en te verbeteren, laat ook betere verbeteringen toe. (groep's vaardigheid)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|Eerste hulp
 skl_first_aid_desc|Helden krijgen 5%% van hun gezondheidspunten terug tijdens een missie (groep's vaardigheid)
 skl_surgery|heelkunde

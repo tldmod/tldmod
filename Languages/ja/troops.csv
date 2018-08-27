@@ -40,8 +40,8 @@ trp_farmer|農民
 trp_farmer_pl|農民
 trp_townsman|市民
 trp_townsman_pl|市民
-trp_watchman|衛兵
-trp_watchman_pl|衛兵
+trp_watchman|市民
+trp_watchman_pl|市民
 trp_woodmen_youth|森人見習い
 trp_woodmen_youth_pl|森人見習い
 trp_woodmen_forester|森人フォレスター
@@ -50,26 +50,26 @@ trp_woodmen_skilled_forester|森人ベテランフォレスター
 trp_woodmen_skilled_forester_pl|森人ベテランフォレスター
 trp_woodmen_axemen|森人斧使い
 trp_woodmen_axemen_pl|森人斧使い
-trp_woodmen_master_axemen|森人マスター斧使い
-trp_woodmen_master_axemen_pl|森人マスター斧使い
+; trp_woodmen_master_axemen|Night Guard of Mirkwood
+; trp_woodmen_master_axemen_pl|Night Guards of Mirkwood
 trp_woodmen_tracker|森人追跡兵
 trp_woodmen_tracker_pl|森人追跡兵
 trp_woodmen_scout|森人斥候兵
 trp_woodmen_scout_pl|森人斥候兵
 trp_woodmen_archer|森人弓兵
 trp_woodmen_archer_pl|森人弓兵
-trp_fell_huntsmen_of_mirkwood|闇の森の達人ハンター
-trp_fell_huntsmen_of_mirkwood_pl|闇の森の達人ハンター
+; trp_fell_huntsmen_of_mirkwood|Night Stalker of Mirkwood
+; trp_fell_huntsmen_of_mirkwood_pl|Night Stalkers of Mirkwood
 trp_beorning_vale_man|ビヨルンの男
 trp_beorning_vale_man_pl|ビヨルンの男
 trp_beorning_warrior|ビヨルン突撃兵
 trp_beorning_warrior_pl|ビヨルン突撃兵
-trp_beorning_tolltacker|ビヨルントールタッカー
-trp_beorning_tolltacker_pl|ビヨルントールタッカー
+; trp_beorning_tolltacker|Beorning Toll-Taker
+; trp_beorning_tolltacker_pl|Beorning Toll-Takers
 trp_beorning_sentinel|ビヨルンセンチネル
 trp_beorning_sentinel_pl|ビヨルンセンチネル
 trp_beorning_warden_of_the_ford|ビヨルン渡しの番人
-trp_beorning_warden_of_the_ford_pl|ビヨルン渡しの番人
+; trp_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
 trp_beorning_carrock_lookout|ビヨルンカーロックの斥候
 trp_beorning_carrock_lookout_pl|ビヨルンカーロックの斥候
 trp_beorning_carrock_fighter|ビヨルンカーロックの突撃兵
@@ -80,34 +80,34 @@ trp_dale_militia|谷間の国民兵
 trp_dale_militia_pl|谷間の国民兵
 trp_dale_man_at_arms|谷間の国軍兵
 trp_dale_man_at_arms_pl|谷間の国軍兵
-trp_laketown_scout|湖の町斥候兵
-trp_laketown_scout_pl|湖の町斥候兵
-trp_laketown_bowmen|湖の町射手
-trp_laketown_bowmen_pl|湖の町射手
-trp_laketown_archer|湖の町弓兵
-trp_laketown_archer_pl|湖の町弓兵
-trp_barding_bowmen_of_esgaroth|エスガロスのバルド弓兵
-trp_barding_bowmen_of_esgaroth_pl|エスガロスのバルド弓兵
-trp_dale_warrior|谷間の国突撃兵
-trp_dale_warrior_pl|谷間の国突撃兵
-trp_dale_veteran_warrior|谷間の国ベテラン突撃兵
-trp_dale_veteran_warrior_pl|谷間の国ベテラン突撃兵
-trp_dale_marchwarden|谷間の国マーチウォーデン
-trp_dale_marchwarden_pl|谷間の国マーチウォーデン
+; trp_laketown_scout|Dale Scout
+trp_laketown_scout_pl|谷間の国偵察隊
+; trp_laketown_bowmen|Dale Bowman
+; trp_laketown_bowmen_pl|Dale Bowmen
+; trp_laketown_archer|Dale Archer
+; trp_laketown_archer_pl|Dale Archers
+; trp_barding_bowmen_of_esgaroth|Barding Bowman
+; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen
+; trp_dale_warrior|Dale Swordsman
+; trp_dale_warrior_pl|Dale Swordsmen
+; trp_dale_veteran_warrior|Dale Sergeant
+; trp_dale_veteran_warrior_pl|Dale Sergeants
+; trp_dale_marchwarden|Hearthman of Dale
+; trp_dale_marchwarden_pl|Hearthmen of Dale
 trp_dale_pikeman|谷間の国槍兵
 trp_dale_pikeman_pl|谷間の国槍兵
 trp_dale_billman|谷間の国ビル兵
 trp_dale_billman_pl|谷間の国ビル兵
 trp_dale_bill_master|谷間の国精鋭ビル兵
 trp_dale_bill_master_pl|谷間の国精鋭ビル兵
-trp_merchant_squire_or_dale|谷間の国商人の従者
-trp_merchant_squire_or_dale_pl|谷間の国商人の従者
-trp_merchant_guard_of_dale|谷間の国商人の護衛兵
-trp_merchant_guard_of_dale_pl|谷間の国商人の護衛兵
-trp_merchant_protector_of_dale|谷間の国商人の護衛隊長
-trp_merchant_protector_of_dale_pl|谷間の国商人の護衛隊長
-trp_girions_guard_of_dale|谷間の国ギリオン近衛兵
-trp_girions_guard_of_dale_pl|谷間の国ギリオン近衛兵
+; trp_merchant_squire_or_dale|Northmen Retainer
+; trp_merchant_squire_or_dale_pl|Northmen Retainers
+; trp_merchant_guard_of_dale|Northmen Auxiliary
+; trp_merchant_guard_of_dale_pl|Northmen Auxilia
+; trp_merchant_protector_of_dale|Rhovanion Rider
+; trp_merchant_protector_of_dale_pl|Rhovanion Riders
+; trp_girions_guard_of_dale|Rhovanion Marchwarden
+; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
 trp_rhun_tribesman|リューン部族の男
 trp_rhun_tribesman_pl|リューン部族の男
 trp_rhun_horse_scout|リューン斥候騎兵
@@ -138,7 +138,7 @@ trp_rhun_light_cavalry|リューン精鋭騎兵
 trp_rhun_light_cavalry_pl|リューン精鋭騎兵
 trp_rhun_noble_cavalry|リューン上級騎兵
 trp_rhun_noble_cavalry_pl|リューン上級騎兵
-trp_rhun_heavy_noble_cavalry|リューン上級重装騎兵
+; trp_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalryman
 trp_rhun_heavy_noble_cavalry_pl|リューン上級重装騎兵
 trp_dorwinion_noble_of_rhun|ドルイニオン重装騎兵
 trp_dorwinion_noble_of_rhun_pl|ドルイニオン重装騎兵
@@ -166,10 +166,10 @@ trp_dwarven_scout|斥候ドワーフ
 trp_dwarven_scout_pl|斥候ドワーフ
 trp_dwarven_bowman|射手ドワーフ
 trp_dwarven_bowman_pl|射手ドワーフ
-trp_dwarven_archer|弓ドワーフ
-trp_dwarven_archer_pl|弓ドワーフ
-trp_marksman_of_ravenhill|からすが丘狙撃ドワーフ
-trp_marksman_of_ravenhill_pl|からすが丘狙撃ドワーフ
+; trp_dwarven_longaxeman|Longaxe Dwarf
+; trp_dwarven_longaxeman_pl|Longaxe Dwarves
+; trp_iron_hills_warrior|Iron Hills Warrior
+; trp_iron_hills_warrior_pl|Iron Hills Warriors
 trp_iron_hills_miner|くろがね連山鉱夫
 trp_iron_hills_miner_pl|くろがね連山鉱夫
 trp_iron_hills_infantry|くろがね連山突撃兵
@@ -268,10 +268,10 @@ trp_lamedon_leader|ラメドンキャプテン
 trp_lamedon_leader_pl|ラメドンキャプテン
 trp_pinnath_gelin_plainsman|ピンナス・ゲリンの男
 trp_pinnath_gelin_plainsman_pl|ピンナス・ゲリンの男
-trp_pinnath_gelin_spearman|ピンナス・ゲリン槍兵
-trp_pinnath_gelin_spearman_pl|ピンナス・ゲリン槍兵
-trp_warrior_of_pinnath_gelin|ピンナス・ゲリン突撃兵
-trp_warrior_of_pinnath_gelin_pl|ピンナス・ゲリン突撃兵
+; trp_pinnath_gelin_spearman|Rider of Pinnath Gelin
+; trp_pinnath_gelin_spearman_pl|Riders of Pinnath Gelin
+; trp_warrior_of_pinnath_gelin|Knight of Pinnath Gelin
+; trp_warrior_of_pinnath_gelin_pl|Knights of Pinnath Gelin
 trp_pinnath_gelin_bowman|ピンナス・ゲリン射手
 trp_pinnath_gelin_bowman_pl|ピンナス・ゲリン射手
 trp_pinnath_gelin_archer|ピンナス・ゲリン弓兵
@@ -288,8 +288,8 @@ trp_footman_of_blackroot_vale|黒根谷歩兵
 trp_footman_of_blackroot_vale_pl|黒根谷歩兵
 trp_spearman_of_blackroot_vale|黒根谷槍兵
 trp_spearman_of_blackroot_vale_pl|黒根谷槍兵
-trp_blackroot_leader|黒根谷キャプテン
-trp_blackroot_leader_pl|黒根谷キャプテン
+; trp_blackroot_leader|Morthond Shadow Hunter
+; trp_blackroot_leader_pl|Morthond Shadow Hunters
 trp_dol_amroth_youth|ドル・アムロス新兵
 trp_dol_amroth_youth_pl|ドル・アムロス新兵
 trp_squire_of_dol_amroth|ドル・アムロス従者
@@ -428,8 +428,8 @@ trp_raider_of_rohan|フレアラフ遊撃兵
 trp_raider_of_rohan_pl|フレアラフ遊撃兵
 trp_heavy_swordsman_of_rohan|ローハン重装剣士
 trp_heavy_swordsman_of_rohan_pl|ローハン重装剣士
-trp_warden_of_methuseld|黄金館の番人
-trp_warden_of_methuseld_pl|黄金館の番人
+; trp_warden_of_methuseld|Warden of Meduseld
+; trp_warden_of_methuseld_pl|Wardens of Meduseld
 trp_skirmisher_of_rohan|ローハン散兵
 trp_skirmisher_of_rohan_pl|ローハン散兵
 trp_veteran_skirmisher_of_rohan|ローハンベテラン散兵
@@ -510,16 +510,16 @@ trp_dunnish_pikeman|褐色人パイク兵
 trp_dunnish_pikeman_pl|褐色人パイク兵
 trp_dunnish_veteran_pikeman|褐色人ベテランパイク兵
 trp_dunnish_veteran_pikeman_pl|褐色人ベテランパイク兵
-trp_dunnish_raven_rider|褐色人大からす騎兵
-trp_dunnish_raven_rider_pl|褐色人大からす騎兵
+; trp_dunnish_raven_rider|Dunnish Crebain Rider
+; trp_dunnish_raven_rider_pl|Dunnish Crebain Riders
 trp_dunnish_vet_warrior|褐色人ベテラン突撃兵
 trp_dunnish_vet_warrior_pl|褐色人ベテラン突撃兵
 trp_dunnish_wolf_warrior|褐色人狼突撃兵
 trp_dunnish_wolf_warrior_pl|褐色人狼突撃兵
 trp_dunnish_wolf_guard|褐色人狼近衛兵
 trp_dunnish_wolf_guard_pl|褐色人狼近衛兵
-trp_dunnish_chieftan|褐色人族長
-trp_dunnish_chieftan_pl|褐色人族長
+trp_dunnish_chieftan|褐色人大からす騎兵
+trp_dunnish_chieftan_pl|褐色人大からす騎兵
 trp_easterling_youth|ヴァリアグ奴隷兵
 trp_easterling_youth_pl|ヴァリアグ奴隷兵
 trp_easterling_warrior|ハンド突撃兵
@@ -566,14 +566,14 @@ trp_corsair_veteran_raider|海賊ベテラン遊撃兵
 trp_corsair_veteran_raider_pl|海賊ベテラン遊撃兵
 trp_corsair_night_raider|海賊夜襲兵
 trp_corsair_night_raider_pl|海賊夜襲兵
-trp_militia_of_umbar|ウンバール民兵
-trp_militia_of_umbar_pl|ウンバール民兵
-trp_marksman_of_umbar|ウンバール散兵
-trp_marksman_of_umbar_pl|ウンバール散兵
-trp_veteran_marksman_of_umbar|ウンバールベテラン散兵
-trp_veteran_marksman_of_umbar_pl|ウンバールベテラン散兵
-trp_master_marksman_of_umbar|海賊精鋭散兵
-trp_master_marksman_of_umbar_pl|海賊精鋭散兵
+; trp_militia_of_umbar|Umbar Marine
+; trp_militia_of_umbar_pl|Umbar Marines
+; trp_marksman_of_umbar|Marksman of Umbar
+; trp_marksman_of_umbar_pl|Marksmen of Umbar
+; trp_veteran_marksman_of_umbar|Veteran Marksman of Umbar
+; trp_veteran_marksman_of_umbar_pl|Veteran Marksmen of Umbar
+; trp_master_marksman_of_umbar|Corsair Master Marksman
+; trp_master_marksman_of_umbar_pl|Corsair Master Marksmen
 trp_corsair_marauder|ウンバール剣士
 trp_corsair_marauder_pl|ウンバール剣士
 trp_corsair_veteran_marauder|ウンバールベテラン剣士
@@ -666,8 +666,8 @@ trp_black_uruk_of_barad_dur|バラド＝ドゥアの黒ウルク
 trp_black_uruk_of_barad_dur_pl|バラド＝ドゥアの黒ウルク
 trp_uruk_mordor_standard_bearer|モルドール旗手
 trp_uruk_mordor_standard_bearer_pl|モルドール旗手
-trp_troll_of_moria|モリアトロル
-trp_troll_of_moria_pl|モリアトロル
+; trp_troll_of_moria|Cave Troll
+; trp_troll_of_moria_pl|Cave Trolls
 trp_armoured_troll|武装トロル
 trp_armoured_troll_pl|武装トロル
 trp_olog_hai|モルドールオログ＝ハイ
@@ -718,26 +718,26 @@ trp_large_goblin_of_moria|モリア大ゴブリン
 trp_large_goblin_of_moria_pl|モリア大ゴブリン
 trp_fell_goblin_of_moria|モリア猛ゴブリン
 trp_fell_goblin_of_moria_pl|モリア猛ゴブリン
-trp_archer_snaga_of_moria|モリアスナガ弓兵
-trp_archer_snaga_of_moria_pl|モリアスナガ弓兵
+; trp_archer_snaga_of_moria|Goblin Archer of Moria
+; trp_archer_snaga_of_moria_pl|Goblin Archers of Moria
 trp_large_goblin_archer_of_moria|モリア大ゴブリン弓兵
 trp_large_goblin_archer_of_moria_pl|モリア大ゴブリン弓兵
-trp_fell_goblin_archer_of_moria|モリア猛ゴブリン弓兵
-trp_fell_goblin_archer_of_moria_pl|モリア猛ゴブリン弓兵
+; trp_deep_dweller_of_moria2|Deep-Dweller of Moria
+; trp_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
 trp_goblin_gundabad|グンダバドゴブリン
 trp_goblin_gundabad_pl|グンダバドゴブリン
 trp_orc_gundabad|グンダバドオーク
 trp_orc_gundabad_pl|グンダバドオーク
 trp_orc_fighter_gundabad|グンダバドオーク突撃兵
 trp_orc_fighter_gundabad_pl|グンダバドオーク突撃兵
-trp_fell_orc_warrior_gundabad|グンダバド猛オーク突撃兵
-trp_fell_orc_warrior_gundabad_pl|グンダバド猛オーク突撃兵
-trp_goblin_bowmen_gundabad|北国のゴブリン弓兵
-trp_goblin_bowmen_gundabad_pl|北国のゴブリン弓兵
-trp_keen_eyed_goblin_archer_gundabad|北国のゴブリンベテラン弓兵
-trp_keen_eyed_goblin_archer_gundabad_pl|北国のゴブリンベテラン弓兵
-trp_fell_goblin_archer_gundabad|北国の猛ゴブリン弓兵
-trp_fell_goblin_archer_gundabad_pl|北国の猛ゴブリン弓兵
+; trp_fell_orc_warrior_gundabad|Gundabad Orc Warrior
+; trp_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
+; trp_orc_beserker_gundabad|Gundabad Orc Berserker
+; trp_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
+; trp_warg_skirmisher_gundabad|Gundabad Skirmisher
+; trp_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
+; trp_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
+; trp_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
 trp_goblin_rider_gundabad|グンダバドゴブリン騎兵
 trp_goblin_rider_gundabad_pl|グンダバドゴブリン騎兵
 trp_warg_rider_gundabad|グンダバドワーグ騎兵
@@ -750,8 +750,8 @@ trp_tribal_orc|部族オーク
 trp_tribal_orc_pl|部族オーク
 trp_tribal_orc_warrior|部族オーク戦士
 trp_tribal_orc_warrior_pl|部族オーク戦士
-trp_tribal_orc_chief|部族オーク族長
-trp_tribal_orc_chief_pl|部族オーク族長
+; trp_tribal_orc_chief2|Orc Chieftain of Moria
+; trp_tribal_orc_chief2_pl|Orc Chieftains of Moria
 trp_black_numenorean_renegade|黒きヌーメノール背教者
 trp_black_numenorean_renegade_pl|黒きヌーメノール背教者
 trp_black_numenorean_warrior|黒きヌーメノール突撃兵
@@ -810,8 +810,8 @@ trp_black_numenorean_captain|黒きヌーメノールの隊長
 trp_black_numenorean_captain_pl|黒きヌーメノールの隊長
 trp_black_numenorean_lieutenant|黒きヌーメノールの副隊長
 trp_black_numenorean_lieutenant_pl|黒きヌーメノールの副隊長
-trp_dunnish_chieftain|褐色人酋長
-trp_dunnish_chieftain_pl|褐色人酋長
+; trp_dunnish_night_wolf|Dunnish Night Wolf
+; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
 trp_dunnish_lieutenant|褐色人副司令官
 trp_dunnish_lieutenant_pl|褐色人副司令官
 trp_goblin_chieftain|ゴブリンの酋長
@@ -987,8 +987,8 @@ trp_pippin_notmet|ホビット
 trp_merry_notmet|ホビット
 trp_pippin|ピピン
 trp_merry|メリー
-trp_knight_1_1|アングボール
-trp_knight_1_2|バラノール
+; trp_knight_1_1|Angbor the Fearless
+; trp_knight_1_2|Húrin of the Keys
 trp_knight_1_3|イムラヒル大公
 trp_knight_1_4|オルサリオン
 trp_knight_1_5|ドゥインヒア
@@ -1048,6 +1048,7 @@ trp_knight_5_6|長ひげフルグニ
 trp_knight_5_7|石兜トーリン
 trp_knight_5_11|フドレイム族長
 trp_knight_5_12|ウルフ族長
+; trp_knight_6_1|Dervorin
 trp_smith_mtirith|鍛冶屋ベレソール
 trp_smith_mtirith_pl|執政の鍛冶屋
 trp_smith_pelargir|鍛冶職人ハルラタン
@@ -1146,7 +1147,7 @@ trp_smith_gundabad|雪売りのブルルグ
 trp_smith_gundabad_pl|鍛冶屋
 trp_smith_ironhill|くろがね連山の鍛冶屋
 trp_smith_ironhill_pl|ドワーフの鍛冶屋
-trp_town_50_weaponsmith|武器屋
+; trp_town_50_weaponsmith|Shruklug Knife Grinder
 trp_town_50_weaponsmith_pl|鍛冶屋
 trp_smith_gondor_ac|防具屋のボル
 trp_smith_gondor_ac_pl|鍛冶屋
@@ -1346,8 +1347,8 @@ trp_merchant_gundabad|補給係
 trp_merchant_gundabad_pl|物資の隠し場所
 trp_merchant_ironhill|補給係
 trp_merchant_ironhill_pl|ドワーフの貯蔵庫
-trp_town_50_horse_merchant|補給係
-trp_town_50_horse_merchant_pl|馬屋と貯蔵庫
+; trp_town_50_horse_merchant|Gobrip Yellowtooth
+trp_town_50_horse_merchant_pl|ワーグの檻と貯蔵庫
 trp_merchant_calembel|補給係
 trp_merchant_calembel_pl|馬屋と貯蔵庫
 trp_elder_mtirith|ティリスのギルドマスター
@@ -1422,7 +1423,7 @@ trp_elder_umbar|ウンバールの宿舎係
 trp_elder_umbar_pl|要塞化された野営
 trp_elder_moria|モリアの長老
 trp_elder_moria_pl|坑道
-trp_elder_gunda|洞窟のちょろう
+; trp_elder_gunda|Master of the Caves
 trp_elder_gunda_pl|坑道
 trp_elder_dale|谷間の国の宿舎係
 trp_elder_dale_pl|町
@@ -1468,7 +1469,8 @@ trp_elder_guldur_ac|グルドゥアの野営長
 trp_elder_guldur_ac_pl|野営
 trp_elder_dwarf_ac|ドワーフの野営長
 trp_elder_dwarf_ac_pl|野営
-trp_village_1_elder|村の長老
+; trp_village_1_elder|Lord of the Lash
+trp_village_1_elder_pl|坑道
 trp_tutorial_chest_1|近接武器の箱
 trp_tutorial_chest_2|間接武器の箱
 trp_bonus_chest_1|宝箱
@@ -1531,7 +1533,7 @@ trp_wolf_rider_of_mirkwood|闇の森の狼騎兵
 trp_wolf_rider_of_mirkwood_pl|闇の森の狼騎兵
 trp_warg_rider_of_mirkwood|闇の森のワーグ騎兵
 trp_warg_rider_of_mirkwood_pl|闇の森のワーグ騎兵
-trp_gate_aggravator|門は持ちこたえています
+; trp_gate_aggravator|Gate Defence
 trp_orc_pretender|なまいきオーク
 trp_human_prisoner|捕虜の人間
 trp_spider|闇の森の大蜘蛛
@@ -1560,3 +1562,23 @@ trp_start_quest_woodelf_pl|ガラズリム近衛狙撃兵
 ; trp_start_quest_mordor_scout_pl|Mordor Guides
 trp_start_quest_beorning|ビヨルンカーロックの狂戦士
 trp_start_quest_beorning_pl|ビヨルンカーロックの狂戦士
+; trp_beorning_shield_bear|Bear Warrior
+; trp_beorning_shield_bear_pl|Bear Warriors
+; trp_morannon_healer|Okstuk the Healer
+; trp_minas_tirith_healer|Ioreth
+; trp_edoras_healer|Freya the Healer
+; trp_isengard_healer|Nurgal the Patcher
+; trp_guldur_healer|Mornagar the Gramaryer
+; trp_gundabad_healer|Lurgakh Third Eye
+; trp_mirkwood_healer|Corwiel the Soft-Handed
+; trp_hungry_uruk|Hungry Uruk
+; trp_hungry_orc|Hungry Orc
+; trp_longing_lorien|Longing Elf
+; trp_longing_woodelf|Longing Elf
+; trp_longing_imladris|Longing Elf
+; trp_deep_dweller_of_moria|Deep-Dweller of Moria
+; trp_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
+; trp_tribal_orc_chief|Orc Chieftain of Moria
+; trp_tribal_orc_chief_pl|Orc Chieftains of Moria
+; trp_rhovanion_noble|Rhovanion Noble
+; trp_rhovanion_noble_pl|Rhovanion Noblemen

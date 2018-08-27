@@ -4,10 +4,10 @@ skl_leadership|ความเป็นผู้นำ
 skl_leadership_desc|ทุกๆเลเวลจะเพิ่มขนาดกองทัพที่สามารถควบคุมได้ 5 เพิ่มค่ากำลังใจของกองทัพและลดค่าจ้าง 5%% (สกิลสำหรับผู้นำกองทัพ)
 skl_prisoner_management|การจัดการนักโทษ
 skl_prisoner_management_desc|ทุกๆเลเวลของสกิลนี้เพิ่มขีดจำกัดของนักโทษที่จับได้สูงสุด %d (สกิลสำหรับผู้นำกองทัพ)
-skl_persuasion|การชักจูง
-skl_persuasion_desc|สกิลนี้ช่วยให้สามารถโน้มน้าวให้คนอื่นยอมทำตามเราได้ง่ายขึ้น (สกิลส่วนบุคคล)
-skl_engineer|การประดิษฐ์
-skl_engineer_desc|ทุกเลเวลของทักษะนี้จะลดเวลาที่ใช้ในการประดิษฐ์ และ อัพเกรดอุปกรณ์ และสามารถอัพเกรดอุปกรณ์ได้คุณภาพที่ดียิ่งขึ้น (สกิลที่ส่งผลทั้งกองทัพ)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|การปฐมพยาบาลเบื้องต้น
 skl_first_aid_desc|ตัวละครจะฟื้นเลือด 5%% ต่อสกิลเลเวลของเลือดที่เสียไประหว่างทำภารกิจ (สกิลที่ส่งผลทั้งกองทัพ)
 skl_surgery|การผ่าตัด
