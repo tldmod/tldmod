@@ -352,7 +352,7 @@ scn_edoras_castle edoras_castle 1 rohan_meduseld_int bo_rohan_meduseld_int -200 
   1  100000 
   1  833 
  0 
-scn_erebor_castle erebor_castle 1 interior_gondor_training_room_b bo_interior_gondor_training_room_b -40 -40 40 40 -100 0 
+scn_erebor_castle erebor_castle 1 erebor_throne_room_b bo_erebor_throne_room_b -40 -40 40 40 -100 0 
   0 
   1  833 
  0 
