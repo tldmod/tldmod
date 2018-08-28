@@ -196,10 +196,10 @@ scn_aldburg_center aldburg_center 256 none none 0 0 100 100 -100 0x0000000720079
   0 
   0 
  outer_mountains2south 
-scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x00001d63c005114300006228000053bf00004eb9 
+scn_hornburg_center hornburg_center 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
- outer_mountains2south 
+ outer_mountains2east 
 scn_east_emnet_center east_emnet_center 256 none none 0 0 100 100 -100 0x0000000320045abc000308c4000029d9000033bd000009b9 
   0 
   0 
@@ -720,10 +720,10 @@ scn_aldburg_siege aldburg_siege 256 none none 0 0 100 100 -100 0x000000072007956
   0 
   0 
  outer_mountains2south 
-scn_hornburg_siege hornburg_siege 256 none none 0 0 100 100 -100 0x00001d63c005114300006228000053bf00004eb9 
+scn_hornburg_siege hornburg_siege 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
- outer_mountains2south 
+ outer_mountains2east 
 scn_east_emnet_siege east_emnet_siege 256 none none 0 0 100 100 -100 0x0000000320045abc000308c4000029d9000033bd000009b9 
   0 
   0 
@@ -1356,7 +1356,7 @@ scn_s_erebor s_erebor 1792 none none 0 0 100 100 -100 0x00000003a7268ca70005715f
   0 
   0 
  outer_terrain_plain 
-scn_hornburg_near hornburg_near 256 none none 0 0 100 100 -100 0x000000002000056300075d6700004d84800053bf00004eb9 
+scn_hornburg_near hornburg_near 256 none none 0 0 100 100 -100 0x0000000330000500000d234800006228000053bf00004eb9 
   0 
   0 
  outer_terrain_rohan 
