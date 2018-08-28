@@ -2027,6 +2027,7 @@ nazgul_run_away = (20, 0, ti_once,
 tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
     (this_or_next|check_quest_active, "qst_blank_quest_04"),
     (this_or_next|check_quest_active, "qst_blank_quest_05"),
+    (this_or_next|check_quest_active, "qst_blank_quest_17"), #Bandit Kill quest
     (check_quest_active, "qst_oath_of_vengeance"), ],
 
     # trigger param 1 = defeated agent_id
