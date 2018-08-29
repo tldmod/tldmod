@@ -27277,7 +27277,7 @@ if is_a_wb_script==1:
 	(call_script, "script_cf_get_nearest_bandit_party"),
 	(assign, ":target_troop", reg0),
 
-	(store_random_in_range, ":amount", 10, 21),
+	(store_random_in_range, ":amount", 5, 11),
 	(val_add, ":amount", ":player_level"),
 
 	(store_mul, ":xp_reward", ":amount", 3),
@@ -27288,7 +27288,7 @@ if is_a_wb_script==1:
 	(val_min, ":rank_reward", 10),
 	
 	(store_div, ":exp", ":amount", 2),
-	(val_add, ":exp", 5),
+	(val_add, ":exp", 7),
 
 	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
 	(assign, reg56, ":target_troop"),		#quest_target_troop
