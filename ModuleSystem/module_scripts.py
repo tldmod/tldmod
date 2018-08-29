@@ -3495,7 +3495,7 @@ scripts = [
       (store_script_param, ":item_modifier", 3),
 	  #(item_get_type,":itp", ":item_no"),
 
-	  (item_get_slot, ":light_armor", ":item_no", slot_item_light_armor),
+	  #(item_get_slot, ":light_armor", ":item_no", slot_item_light_armor),
 
       (try_begin),
 		(eq,":item_no","itm_lembas"),
@@ -3650,7 +3650,7 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
 		(set_trigger_result, color_item_text_bonus),
 	  (else_try),
-	  	(eq, ":light_armor", 1),
+	  	(eq, ":item_no", "itm_beorn_chief"),
 	  	(try_begin), (eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
 	  	(set_trigger_result, color_item_text_bonus),
       (else_try),
@@ -19818,6 +19818,7 @@ scripts = [
 		  (this_or_next|eq, ":armor", "itm_orc_tribal_a"),
 		  (this_or_next|eq, ":armor", "itm_orc_tribal_b"),
 		  (this_or_next|eq, ":armor", "itm_orc_tribal_c"),
+		  (this_or_next|eq, ":armor", "itm_beorn_chief"), 
 		  (				eq, ":armor", "itm_beorn_berserk"),
 		  (store_random_in_range, ":x", 0, 2),
 		  (val_add, "$trait_check_unarmored_berserker", ":x"),
@@ -24700,7 +24701,9 @@ command_cursor_scripts = [
 	(item_set_slot, "itm_orc_tribal_a",			slot_item_light_armor, 1),
 	(item_set_slot, "itm_orc_tribal_b",			slot_item_light_armor, 1),
 	(item_set_slot, "itm_orc_tribal_c",			slot_item_light_armor, 1),
-	(item_set_slot, "itm_beorn_berserk",		slot_item_light_armor, 1), 
+	(item_set_slot, "itm_beorn_berserk",		slot_item_light_armor, 1),
+
+	(item_set_slot, "itm_beorn_chief",			slot_item_light_armor, 1), 
   ]),
 
 ]
