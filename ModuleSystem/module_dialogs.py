@@ -8460,9 +8460,13 @@ dialogs = [
         (str_store_string, s10, "@Dale, so that if you pass by their lands, you can try to purchase some of their well-known bows"),
       (try_end),
     ],
-    "You are? Of course you are! I have seen that you are a capable warrior. ^^I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. ^^Here, have some of the local currency used by {s10}", "caravan_help3",
+    "You are? Of course you are! I have seen that you are a capable warrior. ^^I am indeed lucky today, so I shall take advantage of this good fortune and make haste to my village and warn my people of these foul beasts. ^^Here, have some of the local currency used by {s10}", "caravan_help_tut",
     []],
   ###Assist Dialogue Conditions - End####
+
+  [trp_start_quest_caravaneer,"caravan_help_tut",
+    [(str_store_faction_name, s11, "$assist"), ],
+    "(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of {s11} are not the ones you earned in your own faction, but the ones you will earn in {s11}. ^^See REPORTS for more information.", "caravan_help3",[]],
   
   [trp_start_quest_caravaneer|plyr,"caravan_help3",
     [],
@@ -8471,9 +8475,13 @@ dialogs = [
   
   [trp_start_quest_caravaneer,"caravan_help4",
     [],
-    "I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!","caravan_help5",
+    "I look forward to it. My guards here have seen you fight and will definitely tell their Lord all about you. ^^If you assist their people enough times, you will definitely become reknowned amongst them, which can lead to many great things! ^^I for one am well known, and have even been given a monthly income for all the work that I do!","caravan_help_fac_tut",
     []],
   
+  [trp_start_quest_caravaneer,"caravan_help_fac_tut",
+    [],
+    "(FACTION RANKS TUTORIAL) ^^Rank points allow you to rise up in the ranks of your faction (and/or other factions). ^^This will determine your max party size, weekly faction resource income, and unlock other faction specific rewards.", "caravan_help5",[]],
+
   [trp_start_quest_caravaneer|plyr, "caravan_help5",
     [],
     "I will remember that. Thank you Torbal, and stay safe.", "close_window",

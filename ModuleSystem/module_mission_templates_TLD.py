@@ -1633,6 +1633,25 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 		(troop_set_slot,":npc",slot_companion_agent_id,0),
 		(troop_set_slot,":npc",slot_troop_wounded,0),
 	(try_end),
+
+	# Night Troop message
+	(try_begin),
+		(is_currently_night),
+		(party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+	    (assign, ":yes",0),
+	    (try_for_range, ":stack", 0, ":num_stacks"),
+	    	(eq, ":yes", 0),
+			(party_stack_get_troop_id, ":troop_id", "p_main_party", ":stack"),
+			(this_or_next|eq, ":troop_id", "trp_dunnish_night_wolf"),
+			(this_or_next|eq, ":troop_id", "trp_woodmen_master_axemen"),
+			(this_or_next|eq, ":troop_id", "trp_fell_huntsmen_of_mirkwood"),
+			(this_or_next|eq, ":troop_id", "trp_corsair_night_raider"),
+			(this_or_next|eq, ":troop_id", "trp_far_harad_panther_guard"),
+			(			  eq, ":troop_id", "trp_blackroot_leader"),
+			(assign, ":yes",1),
+			(display_message, "@Some of your troops can see better in the dark. (Night Troops are not affected by night time penalties)", color_neutral_news),
+		(try_end),
+	(try_end),
 ])
 
 # cheer instead of jump on space if battle is won  (mtarini)
