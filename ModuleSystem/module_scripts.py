@@ -1907,6 +1907,9 @@ scripts = [
 		(faction_set_slot, ":faction_wc", slot_faction_war_council, 0),
 	(try_end),
 
+	# Set Light Armor Slot for Berserker Trait
+	(call_script, "script_set_slot_light_armor"),
+
     #Rafa: Savegame version
     (assign,"$savegame_version",4),
 
@@ -3491,6 +3494,9 @@ scripts = [
       (store_script_param, ":extra_text_id", 2),
       (store_script_param, ":item_modifier", 3),
 	  #(item_get_type,":itp", ":item_no"),
+
+	  (item_get_slot, ":light_armor", ":item_no", slot_item_light_armor),
+
       (try_begin),
 		(eq,":item_no","itm_lembas"),
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+30 to Party Morale"),(try_end),
@@ -3643,6 +3649,10 @@ scripts = [
 		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Less Wargs upkeep"),(try_end),
 		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@when equipped"),(try_end),
 		(set_trigger_result, color_item_text_bonus),
+	  (else_try),
+	  	(eq, ":light_armor", 1),
+	  	(try_begin), (eq, ":extra_text_id", 0), (set_result_string, "@Light Armor"), (try_end),
+	  	(set_trigger_result, color_item_text_bonus),
       (else_try),
 		#(store_and,reg20,":itp", itp_food), (neq, reg20,0),
 		#(eq,":itp", itp_food), 
@@ -24669,6 +24679,30 @@ command_cursor_scripts = [
 
 # Last Faction Stand Scripts End
 
+# script_set_slot_light_armor
+# input: none; output: runs in game start script
+
+("set_slot_light_armor", [
+	
+	(item_set_slot, "itm_isen_uruk_light_a", 	slot_item_light_armor, 1),
+	(item_set_slot, "itm_isen_uruk_light_b",	slot_item_light_armor, 1),
+	(item_set_slot, "itm_rhun_armor_a",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_rhun_armor_b",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_rhun_armor_d",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_rhun_armor_j",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_rhun_armor_m",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_rhun_armor_n",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_harad_champion",		slot_item_light_armor, 1),
+	(item_set_slot, "itm_panther_guard",		slot_item_light_armor, 1),
+	(item_set_slot, "itm_khand_light",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_gundabad_armor_a",		slot_item_light_armor, 1),
+	(item_set_slot, "itm_gundabad_armor_d",		slot_item_light_armor, 1),
+	(item_set_slot, "itm_orc_tribal_a",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_orc_tribal_b",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_orc_tribal_c",			slot_item_light_armor, 1),
+	(item_set_slot, "itm_beorn_berserk",		slot_item_light_armor, 1), 
+  ]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
@@ -27267,5 +27301,6 @@ if is_a_wb_script==1:
 	(assign, reg63, 10),					#quest_dont_give_again_period
 
 ]),
+
 
 ]
