@@ -310,7 +310,7 @@ tld_morale_triggers = [
 
 	# Custom trigger, ensures agents get to position and when they do, remove them, but
 	# only after 90 seconds, to ensure agents have time to advance and engage in 
-	# battle before immediately fleeing, otherwise there is no fight. -CppCoder - Changed to 1.5 mins (kham)
+	# battle before immediately fleeing, otherwise there is no fight. -CppCoder - Changed to 3.5 mins (kham)
       	(0.1, 0, 0, [(eq, "$tld_option_morale", 1),(store_mission_timer_a,reg1),(ge,reg1,210)], 
 	[
 		(try_for_agents, ":cur_agent"),

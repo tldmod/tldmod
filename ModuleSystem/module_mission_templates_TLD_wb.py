@@ -2066,6 +2066,8 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
       (this_or_next|gt, ":moria", 0),
       (gt, ":gundabad", 0),
       (eq, ":type", tf_troll),
+      (this_or_next|eq, ":result", 0), #killed
+      (eq, ":result", 1), #or wounded
       (val_add, "$oath_kills", 3),
     (try_end),
 
@@ -2091,8 +2093,9 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
         (call_script, "script_succeed_quest", "qst_blank_quest_04"),
       (try_end),
 
-    (else_try),
+    (try_end),
 
+    (try_begin),
       (check_quest_active, "qst_blank_quest_05"), #Faction Troop Kill Quest
       (neg|check_quest_succeeded, "qst_blank_quest_05"),
       (store_character_level, ":player_level", "trp_player"),
@@ -2101,7 +2104,8 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
       (quest_get_slot, ":target_amount", "qst_blank_quest_05", slot_quest_target_amount),
       (store_faction_of_troop, ":troop_faction", ":troop_id"),
       (eq, ":target_faction", ":troop_faction"),
-      (eq, ":result", 0),
+      (this_or_next|eq, ":result", 0), #killed
+      (eq, ":result", 1), #or wounded
       (try_begin),
         (gt, ":player_level", 20),
         (eq, ":killer", ":player"),
@@ -2120,8 +2124,9 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
         (ge, ":current_amount", ":target_amount"),
         (call_script, "script_succeed_quest", "qst_blank_quest_05"),
       (try_end),
+    (try_end),
 
-    (else_try),
+    (try_begin),
       (check_quest_active, "qst_blank_quest_17"), #Bandit Kill quest
       (neg|check_quest_succeeded, "qst_blank_quest_17"),
       (quest_get_slot, ":target", "qst_blank_quest_17", slot_quest_target_troop),
@@ -2130,7 +2135,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
       (eq, ":target", ":troop_id"),
       (this_or_next|eq, ":result", 0), #killed
       (eq, ":result", 1), #or wounded
-      (eq, ":killer", ":player"),
+      #(eq, ":killer", ":player"),
       (val_add, ":current_amount", 1),
       (quest_set_slot, "qst_blank_quest_17", slot_quest_current_state, ":current_amount"),
 

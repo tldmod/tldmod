@@ -8369,6 +8369,11 @@ game_menus = [
 						 (set_jump_mission, "mt_town_center"),
 						 (jump_to_scene, "scn_minas_tirith_center_top"),
 						 (change_screen_mission)]),
+  	  ("erebor_gates",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_erebor"),(eq,"$entry_to_town_forbidden",0)
+						], "Visit the Great Gates.",
+						[(set_jump_mission, "mt_town_center"),
+						 (jump_to_scene, "scn_erebor_outside"),
+						 (change_screen_mission)]),
 						
       ("town_leave",[],"Leave...",[
             (assign, "$g_permitted_to_center",0),
@@ -10863,7 +10868,7 @@ game_menus = [
         [(jump_to_menu, "mnu_alternate_training_fight")],
       ),
 
-      ("alternate_training_finish",[(gt, "$g_arena_training_kills", 0)],"Leave the arena...",
+      ("alternate_training_finish",[(gt, "$g_arena_training_kills", 0), (quest_set_slot, "qst_raise_troops", slot_quest_current_state, "$g_arena_training_kills")],"Leave the arena...",
         [(change_screen_map)],
       ),
   ]),

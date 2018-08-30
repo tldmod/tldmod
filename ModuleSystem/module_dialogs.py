@@ -6505,6 +6505,7 @@ dialogs = [
       (eq,":lords_quest","qst_raise_troops"),
       ] + (is_a_wb_dialog and [
         (lt, "$g_arena_training_kills", 1),
+        (quest_slot_eq, "qst_raise_troops", slot_quest_current_state, -1),
         ] or []) + [
       (quest_get_slot, ":quest_target_troop", ":lords_quest", slot_quest_target_troop),
       (quest_get_slot, ":quest_target_amount", ":lords_quest", slot_quest_target_amount),
@@ -6528,6 +6529,7 @@ dialogs = [
         (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
         (store_partner_quest,":lords_quest"),
         (eq,":lords_quest","qst_raise_troops"),
+        (quest_slot_ge, "qst_raise_troops", slot_quest_current_state, 1),
         (quest_get_slot, ":quest_target_amount", ":lords_quest", slot_quest_target_amount),
         (store_sub, ":trained_troops", ":quest_target_amount", "$g_arena_training_kills"),
         (assign, reg1, "$g_arena_training_kills"),
