@@ -6,7 +6,7 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop bu
     rm -rf _wb
 
     # fixed Linux case-sensitive language files detection
-    mv Languages languages
+    mv -T Languages languages
 
     # paste the original optimized warband glsl shaders in GLShadersOptimized
     curl https://github.com/tldmod/tldmod/releases/download/TLD3.3REL/vanilla_glsl_opt.zip -L -O
@@ -25,6 +25,7 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into a Steam Workshop bu
     rm -f  ./Data/*.bat
     rm -f  ./Data/*_old.xml
     rm -f  ./Data/*.xml.weapons_lay_down
+    rm -f  ./Data/flora_kinds_*.txt
 
     rm -f  ./languages/*
     rm -rf ./languages/.tx
