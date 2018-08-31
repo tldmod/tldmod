@@ -7163,8 +7163,7 @@ scripts = [
             (assign, ":result", ":quest_no"),
             (assign, ":quest_expiration_days", 120),
             (assign, ":quest_dont_give_again_period", 15),
-            (quest_set_slot, "qst_raise_troops", slot_quest_current_state, -1),
-            
+
           (try_end),
         # (else_try),
           # (eq, ":quest_no", "qst_collect_taxes"),

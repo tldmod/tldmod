@@ -395,5 +395,6 @@ mesh_choose_icon_good = 393
 mesh_choose_icon_evil = 394
 mesh_choose_icon_eye = 395
 mesh_choose_icon_hand = 396
+mesh_choose_icon_elf = 397
 
 

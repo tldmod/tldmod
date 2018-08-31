@@ -6503,8 +6503,8 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
                      (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
                                          (store_partner_quest,":lords_quest"),
                                          (eq,":lords_quest","qst_raise_troops"),
+                                         (quest_get_slot, reg66, "qst_raise_troops", slot_quest_current_state),                                
                                          ] + (is_a_wb_dialog and [
-                                         (lt, "$g_arena_training_kills", 1),
                                          (quest_slot_eq, "qst_raise_troops", slot_quest_current_state, -1),
                                          ] or []) + [ 
                                          (quest_get_slot, ":quest_target_troop", ":lords_quest", slot_quest_target_troop),
@@ -7131,6 +7131,7 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
  Thank you for your help.", "close_window",
    [(call_script,"script_stand_back"),
     (call_script, "script_start_quest", "$random_quest_no", "$g_talk_troop"),
+    (quest_set_slot, "qst_raise_troops", slot_quest_current_state, -1),
     #(call_script, "script_troop_add_gold", "trp_player",100),
     (call_script, "script_add_faction_rps", "$g_talk_troop_faction", 100),
     
@@ -10954,7 +10955,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 #Kham - Reinforce Center Completion END
 #### Kham Kill Quest Bandit Completion Start ####
 
-[anyone,"mayor_talk", [
+[anyone,"mayor_begin", [
     (check_quest_active, "qst_blank_quest_17"),
     (check_quest_succeeded, "qst_blank_quest_17"),
     (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),
@@ -10971,9 +10972,6 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     ]],
 
 [anyone|plyr,"mayor_kill_bandit_quest_complete", [
-    (check_quest_active, "qst_blank_quest_17"),
-    (check_quest_succeeded, "qst_blank_quest_17"),
-    (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),
     (try_begin),
       (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
       (str_store_string, s5, "@It was nothing. I will keep watch should they resurface."),
@@ -10985,7 +10983,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (call_script, "script_stand_back"),
     ]],
 
-[anyone,"mayor_talk", [
+[anyone,"mayor_begin", [
     (check_quest_active, "qst_blank_quest_17"),
     (check_quest_failed, "qst_blank_quest_17"),
     (quest_slot_eq, "qst_blank_quest_17", slot_quest_object_troop,"$g_talk_troop"),],

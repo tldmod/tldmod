@@ -3365,7 +3365,7 @@ presentations = [
       (try_begin),
         (eq, ":object", "$g_presentation_obj_1"),
         (presentation_set_duration, 0),
-        (jump_to_menu, "mnu_start_game_1"),
+        (jump_to_menu, "mnu_auto_quit"),
       (else_try),
         (eq, ":object", "$g_presentation_obj_2"),
         #(presentation_set_duration, 0),
@@ -3504,7 +3504,7 @@ presentations = [
     (overlay_set_color, "$g_option_evil_text", 0x50FF50),
 
     #logo
-      (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+      (create_image_button_overlay, "$g_option_evil", "mesh_choose_icon_elf", "mesh_choose_icon_elf"),
            (position_set_x, pos1, 485),
            (position_set_y, pos1, 380),
            (overlay_set_position, "$g_option_evil", pos1),
