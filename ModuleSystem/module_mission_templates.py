@@ -2562,7 +2562,7 @@ mission_templates = [ # not used in game
       (call_script,"script_fail_quest","qst_ring_hunters"),
       (faction_get_slot,":loss","fac_beorn",slot_faction_strength_tmp),
       (val_sub, ":loss", 50),
-      (display_message,"@You receive word that Beorning villages were attacked. Beornings lose faction strength",color_bad_news),
+      (display_message,"@You receive word that Beorning villages were attacked. Beornings lose faction strength.",color_bad_news),
       (faction_get_slot,":evil","fac_mordor",slot_faction_strength_tmp),
       (val_add, ":evil", 30),
       (display_message,"@You receive word that the Ring Hunter Leaders were seen travelling towards Mordor, a chest in tow. Mordor gains faction strength.",color_bad_news),
