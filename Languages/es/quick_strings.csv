@@ -84,6 +84,19 @@ qstr_Close|Cerrar
 ; qstr_Learn_about_the_diff|Learn about the different factions of Middle-Earth
 ; qstr_The_DAWN_of_a_New_Er|The DAWN of a New Era
 ; qstr_The_TWILIGHT_of_Man|The TWILIGHT of Man
+; qstr_Select_your_Race?|Select your Race?
+; qstr_Man|Man
+; qstr_Elf|Elf
+qstr_Dwarf|Enano
+; qstr_Whom_Do_You_Serve?|Whom Do You Serve?
+; qstr_SAURON_of_Mordor_The|SAURON of Mordor, The Lord of the Rings
+; qstr_SARUMAN_of_Isengard_|SARUMAN of Isengard, The White Hand
+; qstr_an_ORC^_serving_the_|an ORC,^ serving the Lidless Eye
+; qstr_an_URUK^_the_new_bre|an URUK,^ the new breed of Orcs
+; qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
+; qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
+; qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
+; qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
 qstr_Click_the_center_but|Haz clic en el botón central para cambiar de facción^Haz clic en cada avatar para ver sus respectivos detalles
 qstr_Level:_{reg3}^Health|Nivel: {reg3}^Salud: {reg4}
 qstr_Attributes|Atributos
@@ -157,7 +170,7 @@ qstr_Free_Mode_Custom_Cam|Cámara personalizada libre
 qstr_None|Nada
 ; qstr_Army_rotates_to_face|Army rotates to face enemy center: 
 ; qstr_Prevent_AI_from_takin|Prevent AI from taking defensive: 
-; qstr_AI_Controls_Troops_W|AI Controls Troops When Player is KO'd: \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+; qstr_AI_Controls_Troops_W|AI Controls Troops When Player is KO'd: 
 qstr_You_gained_{reg0}_Re|Has conseguido {reg0} Puntos de Recursos de {s0}.
 qstr_You_lost_{reg0}_Reso|Has perdido {reg0} Puntos de Recursos de {s0}.
 qstr_{s24}:|{s24}:
@@ -608,33 +621,7 @@ qstr___Archer_formation_d|Formación de Arqueros cancelada.
 ; qstr_support|support
 ; qstr_bodyguard|bodyguard
 ; qstr_undetermined_type_of|undetermined type of
-; qstr_Lame|Lame
-; qstr_Swaybacked|Swaybacked
-; qstr_Timid|Timid
-; qstr_Meek|Meek
-; qstr_Stubborn|Stubborn
-; qstr_Heavy|Heavy
-; qstr_Spirited|Spirited
-; qstr_Champion|Champion
-; qstr_Cracked|Cracked
-; qstr_Battered|Battered
-; qstr_Thick|Thick
-; qstr_Reinforced|Reinforced
-; qstr_Rusty|Rusty
-; qstr_Tattered|Tattered
-; qstr_Ragged|Ragged
-; qstr_Crude|Crude
-; qstr_Sturdy|Sturdy
-; qstr_Hardened|Hardened
-; qstr_Lordly|Lordly
-; qstr_Broken|Broken
-; qstr_Bent|Bent
-; qstr_Chipped|Chipped
-; qstr_Strong|Strong
-; qstr_Balanced|Balanced
-; qstr_Tempered|Tempered
-; qstr_Masterwork|Masterwork
-; qstr_Large_Bag_of|Large Bag of
+
 qstr_{s1}_has_fled_the_ba|¡{s1} ha huido de la batalla!
 qstr_Your_troops_are_at_{|¡Tus tropas tienen un {reg1}% de cohesión (+{reg3}% de bonificación), los enemigos tienen un {reg2}%!
 qstr_Morale_of_your_troop|¡La moral de tus tropas flaquea!
@@ -725,11 +712,12 @@ qstr_Cannot_leave_now.|No puedes abandonar ahora.
 ; qstr_You_have_found_the_l|You have found the local smithy... (+{reg3} XP)
 ; qstr_You_have_found_the_lo|You have found the local authority...(+{reg3} XP)
 ; qstr_You_have_found_the_loc|You have found the local warehouse...(+{reg3} XP)
+; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
 qstr__cancelled_the_{reg1|({reg10} cancelado pts. de exp. ganados por matar prisioneros)
 qstr_Forming_ranks.|Formando filas.
 ; qstr_{reg2?You:Your_mount|{reg2?You:Your mount} received {reg1} extra damage!
 ; qstr_{reg2?You_strike:You|{reg2?You strike:Your horse charges} for {reg1} bonus damage!
-; qstr_Division_Placement|Division Placement
+qstr_Division_Placement|Colocación de divisiones
 ; qstr_Complex_Formations|Complex Formations
 ; qstr_Formations_turned_OF|Formations turned OFF in options menu
 ; qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
@@ -739,6 +727,8 @@ qstr_Forming_ranks.|Formando filas.
 ; qstr_Three_Nazgul_are_cir|Three Nazgul are circling in the sky above the battlefield!
 ; qstr_Two_Nazgul_are_circl|Two Nazgul are circling in the sky above the battlefield!
 qstr_A_Nazgul_is_circling|¡Un Nazgûl está dando vueltas en el cielo sobre el campo de batalla!
+; qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
+; qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
 ; qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
 qstr_Nazgul_sweep!|¡El Nazgûl ataca!
 qstr_You_and_your_horse_p|Tú y tu caballo entraís en pánico, ¡el grito del Nazgûl es insoportable!
@@ -748,19 +738,13 @@ qstr_knocked_unconscious|dejado inconsciente
 qstr_Nazgul_diving_attack|¡Nazgûl ataca en picado en {s11}!
 qstr_{s11}_is_{s10}_in_th|¡{s11} es {s10} en el ataque del Nazgûl!
 ; qstr_Received_{reg66}_dam|Received {reg66} damage.
+qstr_You_yell_for_your_ho|Llamas a tu caballo.
 qstr_{s1}_s_morale:_{reg1|Moral de {s1}: {reg1}
 ; qstr_You_do_not_need_to_r|You do not need to rally your troops yet.
 qstr_You_rally_your_troop|¡Reagrupas tus tropas!
 qstr_{s5}_rallies_{reg65?|¡{s5} reagrupa a {reg65?sus:sus} tropas!
 qstr_You_have_killed_{reg|¡Has matado {reg1} enemigos en esta batalla!
 qstr_Your_bravery_inspire|¡Tu valentía inspira a tus tropas!
-qstr_Everyone|Todos
-qstr_Infantry|Infantería
-qstr_Archers|Arqueros
-qstr_Cavalry|Caballería
-qstr_{s1}_and_{s2}|{s1} y {s2}
-qstr_{s1}_{s2}_and_{s3}|{s1}, {s2} y {s3}
-qstr_{s10}_Move_over_ther|¡{s10}, Moveos hacia ahí!
 ; qstr_Your_mount_has_falle|Your mount has fallen to the ground beneath you!
 ; qstr_Receive_{reg22}_dama|Receive {reg22} damage.
 ; qstr_You_have_been_knocke|You have been knocked unconscious by {s22}.
@@ -1053,10 +1037,11 @@ qstr_{s1}_has_been_defeat|{s1} ha sido derrotado. Misión cancelada.
 qstr_You_must_follow_{s1}|¡Debes seguir a {s1}!
 qstr_You_must_follow_{s1}!|¡Debes seguir a {s1}! ¡Este es tu último aviso!
 qstr_{s1}_parties_defeate|Has acabado con {reg1} destacamentos de {s1}, quedan {reg2}.
-; qstr_{reg69}_Moria_and/or|{reg69} Moria and/or Gundabad troops killed.
-; qstr_{reg69}_{s2}_troops_|{reg69} {s2} troops killed.
-; qstr_{reg69}_{s2}_{s4}_tr|{reg69} {s2} {s4} troops killed.
-; qstr_{reg69}_{s4}_killed.|{reg69} {s4} killed.
+; qstr_{reg65}_Moria_and/or|{reg65} Moria and/or Gundabad troops killed. (Counter refreshes every hour)
+; qstr_{reg65}_{s3}_troops_|{reg65} {s3} troops killed. (Counter refreshes every hour)
+; qstr_{reg66}_{s5}_troops_|{reg66} {s5} troops killed. (Counter refreshes every hour)
+; qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} troops killed. (Counter refreshes every hour)
+; qstr_{reg68}_{s10}_killed|{reg68} {s10} killed. (Counter refreshes every hour)
 qstr_{s1}_is_scouted.|Has rastreado {s1}.
 qstr_The_Age_of_Men_has_f|La Edad de los Hombres ha llegado a su fin. A partir de ahora las Dos Torres reunirán lo que queda de sus huestes y aliados para decidir quién será el único e indiscutible gobernante de la Tierra Media.
 qstr_The_War_of_the_Two_T|¡La Guerra de las Dos Torres ha comenzado!
@@ -1155,7 +1140,7 @@ qstr_Pippin|Pippin
 qstr_the_Citadel| la Ciudadela
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Senescal Denethor
-; qstr_Golden_Hall|Golden Hall
+; qstr_the_Golden_Hall|the Golden Hall
 qstr_Edoras|Edoras
 qstr_King_Theoden|Rey Théoden
 ; qstr_Merry_asked_you_to_d|Merry asked you to deliver a message to his cousin, Pippin, in Minas Tirith.
@@ -1213,19 +1198,19 @@ qstr_It_is_my_duty_to_prot|Es mi deber proteger a nuestros aliados.
 qstr_I_am_{s4}_{s15}_of_{|Soy {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Soy {s4}, señor de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? y dueño de {s8}.:.
-; qstr_Very_well_done_{play|Very well done, {playername}! You captured both the spy and his handler, just as I'd hoped,          and the pair are now safely locked up, waiting to be questioned.          They will have some explaining to do! Anyway, I'm very pleased with your success, {playername}, and I give you        this purse as a token of my appreciation.
-; qstr_Beautiful_work_{play|Beautiful work, {playername}! You captured both the spy and his handler, just as you were told,          and the pair are now safely locked up in my dungeon, waiting to be questioned.          My torturer shall be busy tonight! Anyway, I'm very pleased with your success, {playername}, and I give you        this purse as a token of my appreciation.
+qstr_Very_well_done_{play|¡Muy bien hecho, {playername}! Habéis capturado a ambos, el espía y su contratista, tal y como esperaba, y ambos están ahora bajo llave, esperando a ser interrogados. ¡Tendrán que darnos alguna explicación ahora!. De cualquier modo, estoy muy satisfecho con los resultados, {playername}, y os doy esta bolsa como una muestra de aprecio.
+qstr_Beautiful_work_{play|¡Un trabajo excelente, {playername}! Has capturado a ambos, al espía y a su contratista, tal y como os dijeron, y ambos se encuentran enjaulados en mi mazmorra, esperando para ser interrogados. ¡Mi torturador estará ocupado esta noche!. Pero bueno, estoy satisfecho con los resultados, {playername}, y quiero ofrecerte esta bolsa como muestra de mi aprecio.
 ; qstr_Foiling_the_enemy_s_|Foiling the enemy's attempts at attacking the refugee trains have weakened their resolve ({s1} has lost {reg19} faction strength due to your victory against {reg18} raiders).
 ; qstr_The_slaughter_and_lo|The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained 50 faction strength).
-; qstr_You_did_however_defe|You did, however, defeated {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
+; qstr_You_did_however_defe|You did, however, defeat {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
 ; qstr_The_slaughter_and_loo|The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained {reg20} faction strength).
 ; qstr_Killing_the_refugees|Killing the refugees from {s1} and enslaving the survivors have demoralized their people ({s1} has lost {reg19} faction strength).
 ; qstr_{reg20}_refugee_trai|{reg20} refugee trains escaped and improved the enemy's morale ({s1} has gained {reg22} faction strength).
 ; qstr_You_did_however_defea|You did, however, defeat {reg18} refugee trains, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
 ; qstr_My_lord_{s12}_is_saf|My lord, {s12} is safe. The Corsairs were defeated.
-; qstr_My_lord_Esgaroth_is_|My lord, Esgaroth is safe. The men of Rhûn were defeated.
-; qstr_{s12}_burns._The_pil|{s12} burns. The pillaging was glorious indeed!
-; qstr_Esgaroth_burns._The_|Esgaroth burns. The pillaging was glorious indeed!
+; qstr_My_lord_Esgaroth_is_|My lord, Esgaroth is safe. The men of RhÃ»n were defeated.
+; qstr_The_surroundings_of_|The surroundings of {s12} burn. The pillaging was glorious indeed!
+; qstr_The_surroundings_of_E|The surroundings of Esgaroth burn. The pillaging was glorious indeed!
 ; qstr_This_is_welcome_news|This is welcome news indeed, {playername}. We were ill-prepared for such bold action from the Corsairs. But thanks to you, the black sails have been driven away, at least for a time, and we may hope, at least, that we have struck them a blow this day. You have our thanks.
 ; qstr__Good_work_{playerna| Good work, {playername}! They showed more cunning than we credited them with, I'll give them that. But these Easterlings don't fight half as well on their boats as they do on their horses, it would seem! Perhaps we, too, should consider launching a fleet of our own... In any case, we thank you, {playername}, on behalf of Esgaroth and all the people of Dale.
 ; qstr_Even_from_here_we_co|Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Gondor, for they know now that not even their mightiest strongholds are beyond our reach!
@@ -1268,10 +1253,10 @@ qstr_Riders_of_Rohan|Jinetes Rohirrim
 ; qstr_About_time_you_showe|About time you showed up, {playername}. We're at war now and I will not tolerate any insubordination. We are fighting against {s11}, but we have to gather our strength and smite the enemy in the field before we can move against their fortresses. Each defeat of our enemies will strengthen our war efforts and bring them closer to their utter destruction. So I trust you to fight our enemy at every opportunity, be it a mere scout party or a war host. Also, you are to support our captains and our allies if you see them fight. Do not fail them or I will know.
 qstr_we_are_fighting_agai|estamos luchando contra {s13}
 qstr_we_are_not_fighting_|no estamos en guerra con nadie ahora mismo
-; qstr_Oh?_Let_me_see_that.|Oh? Let me see that...          Well well well! It was good of you to bring me this, {playername}. Take my seal as proof that I've received it,        and give my regards to {s9} when you see him again.
-; qstr_Give_me_that!_______|Give me that!        Hrmph! Good that you brought me this, {playername}, you are a useful servant. Tell {s9} to employ you more often.
+qstr_Oh?_Let_me_see_that.|¿Oh? Déjame verlo... ¡Bien, bien, bien! Has hecho bien en traerme esto, {playername}. Aquí tienes mi sello como prueba de que lo he recibido, saluda a {s9} de mi parte cuando le vuelvas a ver.
+qstr_Give_me_that!_Hrmph!|¡Dame eso! ¡Humrm! Has hecho bien en traerme esto, {playername}, eres un sirviente útil. Espero que hagas saber a {s9} que haga uso de ti más a menudo
 qstr_What?_Let_me_see_tha|¿Qué? Déjame verlo... Hummm. Ha estado muy listo al traérmelo, {playername}. Ahora, fuera.
-qstr_Give_me_that!_Hrmph!|¡Dame eso! ¡Jmurm! eres un sirviente útil para con tus Amos, {playername}, pero todos vosotros moriréis tarde o temprano. Aunque no ahora, así que ¡fuera de mi vista!
+qstr_Give_me_that!_Hrmph!_|¡Dame eso! ¡Jmurm! eres un sirviente útil para con tus Amos, {playername}, pero todos vosotros moriréis tarde o temprano. Aunque no ahora, así que ¡fuera de mi vista!
 ; qstr_My_king|My king
 qstr_Lord|Señor
 ; qstr_my_king|my king
@@ -1283,6 +1268,23 @@ qstr_Moria|Moria
 qstr_Gundabad|Gundabad
 ; qstr_You_swear_an_oath_of|You swear an oath of vengeance against {s3}. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^.
 qstr_The_search_for_the_L|La búsqueda de las lanzas perdidas te ha traído a Dorwinion, hogar del antiguo reino norteño del rey Bladorthin. CONTINUARÁ
+; qstr__You_need_to_be_{s24|(You need to be {s24} or higher).
+; qstr_You_are_not_worthy_o|You are not worthy of my skills. Prove yourself first, and rise above {s25}. {s2}
+; qstr_I_am_sorry._I_cannot|I am sorry. I cannot attend to you as a {s25} as there are more pressing issues. {s2}
+; qstr_Yes_I_am_and_I_can_h|Yes, I am, and I can help you for a price.
+; qstr_You_heard_right_and_|You heard right, and yes, I can aid you.
+; qstr__Costs_1000_Resource|(Costs 1000 Resource, 5 Influence)
+; qstr_I_can_see_that._I_ll|I can see that. I'll have my men stand guard while I deal with you. It will take some time. {s2}
+; qstr_Yes_I_see_that._I_ca|Yes, I see that. I can do tend to you yes, but it will take me away from important tasks. {s2}
+; qstr__Costs_1500_Resource|(Costs 1500 Resource, 10 Influence)
+; qstr_I_ll_have_my_persona|I'll have my personal healers deal with you. They are the best. Tell me when you want them here. {s2}
+; qstr_I_ll_have_my_personal|I'll have my personal healers tend to your men. They are the best at what they do. Let me know when you need them. {s2}
+; qstr_I_ll_have_them_here_|I'll have them here shortly.
+; qstr_Let_us_begin._My_hea|Let us begin. My healers will take care of you and your men.
+; qstr_Alright!_This_is_goi|Alright! This is going to hurt... a lot.
+; qstr_Let_us_begin._It_may|Let us begin. It may take some time. Just relax and leave the rest to me.
+; qstr_Impressive..._You_di|Impressive... You didn't flinch much. Go back to your post.
+; qstr_Rest_the_wounds_have|Rest, the wounds have been taken care of.
 ; qstr_Your_party_must_be_a|Your party must be at least 30 strong to begin this quest
 qstr_You_were_tasked_to_h|Se te ha encomendado acabar con los bandidos causantes de tanto daño en el Norte. Puedes combatirles en su guarida del Bosque Negro o cerca de la casa de Beorn.
 qstr_Mordor_Gains_Faction|La facción de Mordor gana fuerza al recibir un arma desconocida.
@@ -1385,6 +1387,8 @@ qstr_No_commander_should_|Ningún señor debería admitir esto, {playername}, es
 qstr_No_commander_should_h|Ningún Amo debería admitir esto, {playername}, estaba inspeccionando a mis soldados el otro día y ejecuté a algunos por incompetentes. Necesitan a alguien con el acero en su regazo e inculcarles ciertos valores o matarlos en el intento. Eres un guerrero de renombre, {playername}. ¿Entrenarías a algunas de mis tropas? Conseguiré que te resulte... rentable.
 qstr_{s9}_asked_you_to_rai|{s9} te ha pedido que le lleves {reg1} {s14}.
 qstr_{s9}_asked_you_to_hu|{s9} te ha pedido que des caza a un fugitivo llamado {s4}. Se cree que ahora mismo se esconde en {s3}.
+; qstr_{s9}_asked_you_to_defe|{s9} asked you to defend 3 groups of refugees on their way to {s3}.
+; qstr_{s9}_asked_you_to_hun|{s9} asked you to hunt down 3 groups of refugees on their way to {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} te ha pedido que atrapes a tres grupos de esclavos fugitivos y los conduzcas, vivos, de vuelta a {s4}. Los grupos estaban huyendo hacia {s3}.
 qstr_{s11}_asked_you_to_f|{s11} te ha pedido que sigas a un espía que saldrá de {s12}. Debes tener cuidado y no dejar que el espía te aviste, o podría sospechar y darse la vuelta. Una vez que el espía se encuentre con su contacto, desbes capturarlos y llevarlos de regreso a {s11}.
 qstr_{s11}_asked_you_to_c|{s11} te ha pedido que captures a un señor enemigo y que luego se lo lleves a {s11} para interrogarlo.
@@ -1507,10 +1511,10 @@ qstr_The_{s9}_of_{s13}_ha|El {s9} de {s13} te ha pedido que te ocupes de los orc
 qstr_{s9}_of_{s3}_asked_y|{s9} de {s3} te ha pedido que le lleves {reg5} unidades de {s6} al {s10} en {s4} en {reg6} días.
 ; qstr_The_{s9}_of_{s4}_ask|The {s9} of {s4} asked you to reinforce {s3} with at least {reg5} troops within {reg6} days. Speak to {s3}'s barracks master. The quality of the troop you provide does not matter.
 ; qstr_You_have_reinforced_{|You have reinforced {s3} with 0 troops.
-; qstr_Thank_you_for_offeri|Thank you for offering to help, {playername}.^^          The caravans going to and fro the city have been attacked multiple times by {s6}. They are getting bolder with every ambush, and are moving closer and closer to the city.
-; qstr_Good_of_you_to_ask_{|Good of you to ask, {playername}.^^          There are {s6} moving about the area, thinking that they are in charge. No one is doing anything so they are getting bolder and are taking what is rightfully ours.
-; qstr_The_people_have_aske|The people have asked for help in slaying at least {reg22} {s6}, in hopes that this will keep them away for some time.          ^^Would you be able to do this?
-; qstr_I_want_you_to_slay_a|I want you to slay at least {reg22} {s6}, to show those weaklings that they are inconsequential.          ^^What do you say?
+; qstr_Thank_you_for_offeri|Thank you for offering to help, {playername}.^^The caravans going to and fro the city have been attacked multiple times by {s6}. They are getting bolder with every ambush, and are moving closer and closer to the city.
+; qstr_Good_of_you_to_ask_{|Good of you to ask, {playername}.^^There are {s6} moving about the area, thinking that they are in charge. No one is doing anything so they are getting bolder and are taking what is rightfully ours.
+; qstr_The_people_have_aske|The people have asked for help in slaying at least {reg22} {s6}, in hopes that this will keep them away for some time.^^Would you be able to do this?
+; qstr_I_want_you_to_slay_a|I want you to slay at least {reg22} {s6}, to show those weaklings that they are inconsequential.^^What do you say?
 ; qstr_We_will_get_rid_of_t|We will get rid of these pests.
 ; qstr_{s9}_wants_you_to_sl|{s9} wants you to slay {reg22} {s6} in battles.
 qstr_The_{s9}_of_{s3}_ask|El {s9} de {s3} te ha pedido que le lleves {reg5} unidades de comida en {reg6} días.

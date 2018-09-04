@@ -476,8 +476,8 @@ trp_harad_swordsman|Haradský šermiar
 trp_harad_swordsman_pl|Haradskí šermiari
 trp_harad_lion_guard|Leví strážca
 trp_harad_lion_guard_pl|Levia stráž
-trp_harad_skirmisher|Haradský ľahkoodenec
-trp_harad_skirmisher_pl|Haradskí ľahkoodenci
+; trp_harad_skirmisher|Harad Hunter
+; trp_harad_skirmisher_pl|Harad Hunters
 trp_harad_archer|Haradský lukostrelec
 trp_harad_archer_pl|Haradskí lukostrelci
 trp_harad_eagle_guard|Orlý strážca
@@ -488,14 +488,14 @@ trp_harondor_rider|Jazdec z Harondoru
 trp_harondor_rider_pl|Jazdci z Harondoru
 trp_harondor_light_cavalry|Ľahký jazdec z Harondoru
 trp_harondor_light_cavalry_pl|Ľahká jazda Harondoru
-trp_fang_heavy_cavalry|Ťažký kavalerista Fangu
-trp_fang_heavy_cavalry_pl|Ťažká jazda Fangu
-trp_harad_horse_archer|Jazdecký lukostrelec z Haradu
-trp_harad_horse_archer_pl|Jazdeckí lukostrelci z Haradu
-trp_black_snake_horse_archer|Jazdecký lukostrelec Čierneho Hada
-trp_black_snake_horse_archer_pl|Jazdeckí lukostrelci Čierneho Hada
-trp_gold_serpent_horse_archer|Jazdecký lukostrelec Zlatého Jaštera
-trp_gold_serpent_horse_archer_pl|Jazdeckí lukostrelci Zletého Jaštera
+; trp_fang_heavy_cavalry|Gold Serpent Knight
+; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+; trp_black_snake_horse_archer|Harondor Horse Archer
+; trp_black_snake_horse_archer_pl|Harondor Horse Archers
+trp_gold_serpent_horse_archer|Jazdecký lukostrelec Čierneho Hada
+trp_gold_serpent_horse_archer_pl|Jazdeckí lukostrelci Čierneho Hada
 trp_far_harad_tribesman|Divoch z Ďalekého Haradu
 trp_far_harad_tribesman_pl|Divosi z Ďalekého Haradu
 trp_far_harad_champion|Šampión z Ďalekého Haradu

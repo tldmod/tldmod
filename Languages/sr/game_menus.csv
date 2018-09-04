@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Za sta se boris?
 mno_start_good|Zora nove ere 
 mno_start_evil|Sumrak covecanstva
 mno_go_bback|Idi nazad
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^ Srednja Zemlja. Senka se nadzire na istoku, ^ i mracne stvari izlaze na povrsinu koje nisu vidjene dosta vremena. ^ Slobodni ljudo se spemaju za rat,rat koji nisu mogucni ni zamisliti. ^ Ljudi, Vilenjaci, Patuljci i Orkovi; svi ce ucestvvati. ^^ Kako? To cemo tek videti...
 mno_go_forth|Idi napred ka tvom izabranom putu...
 menu_start_game_3|^^^^^^^^Izaberite vas scenario:
 mno_custom_battle_scenario_1|Btika, Gondor vs Harad
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|Pošalji poruku da ćeš mu se uskoro pridružiti.
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^Izaberi svoju stranu i prednost:
 mno_good_equal|Dobra frakcija
 mno_bad_equal|Zla frakcija
 mno_replay_prev|Ponovo odigraj prosla podesavanja

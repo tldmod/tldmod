@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^자네는 무엇을 위해 싸우는가?
 mno_start_good|새로운 시대의 시작
 mno_start_evil|인간의 황혼
 mno_go_bback|돌아가기
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^가운데땅. 그림자는 동쪽에서 커 나가고 있고,^ 암흑의 족속들은 오랜 은둔을 끝내고 나오고 있다.^ 자유민들은 그들이 이 때까지 보지 못했던 전쟁을 준비하고 있다.^인간, 요정, 난쟁이 그리고 오크들은 그들의 역할을 행할것이다.^^다만, 어떠한 역할인가는 앞으로 지켜봐야 할 것이리라...
 mno_go_forth|당신이 선택한 길을 따라 앞으로 가십시오...
 menu_start_game_3|^^^^^^^당신의 이야기를 선택하세요:
 mno_custom_battle_scenario_1|교전, 곤도르 vs 하라드
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|곧 합류할 것이라 전하기
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^당신의 진영과 이점을 선택하세요:
 mno_good_equal|선한 진영
 mno_bad_equal|사악한 진영
 mno_replay_prev|이전 설정 불러오기

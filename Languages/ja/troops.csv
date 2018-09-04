@@ -476,8 +476,8 @@ trp_harad_swordsman|ハラド剣士
 trp_harad_swordsman_pl|ハラド剣士
 trp_harad_lion_guard|ライオン近衛兵
 trp_harad_lion_guard_pl|ライオン近衛兵
-trp_harad_skirmisher|ハラド散兵
-trp_harad_skirmisher_pl|ハラド散兵
+; trp_harad_skirmisher|Harad Hunter
+; trp_harad_skirmisher_pl|Harad Hunters
 trp_harad_archer|ハラド弓兵
 trp_harad_archer_pl|ハラド弓兵
 trp_harad_eagle_guard|イーグル近衛兵
@@ -488,14 +488,14 @@ trp_harondor_rider|ハロンドール騎兵
 trp_harondor_rider_pl|ハロンドール騎兵
 trp_harondor_light_cavalry|ハロンドール軽騎兵
 trp_harondor_light_cavalry_pl|ハロンドール軽騎兵
-trp_fang_heavy_cavalry|ファング重装騎兵
-trp_fang_heavy_cavalry_pl|ファング重装騎兵
-trp_harad_horse_archer|ハラド弓騎兵
-trp_harad_horse_archer_pl|ハラド弓騎兵
-trp_black_snake_horse_archer|黒の蛇弓騎兵
-trp_black_snake_horse_archer_pl|黒の蛇弓騎兵
-trp_gold_serpent_horse_archer|金の蛇弓騎兵
-trp_gold_serpent_horse_archer_pl|金の蛇弓騎兵
+; trp_fang_heavy_cavalry|Gold Serpent Knight
+; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+; trp_black_snake_horse_archer|Harondor Horse Archer
+; trp_black_snake_horse_archer_pl|Harondor Horse Archers
+trp_gold_serpent_horse_archer|黒の蛇弓騎兵
+trp_gold_serpent_horse_archer_pl|黒の蛇弓騎兵
 trp_far_harad_tribesman|遠ハラド部族民
 trp_far_harad_tribesman_pl|遠ハラド部族民
 trp_far_harad_champion|遠ハラドチャンピオン

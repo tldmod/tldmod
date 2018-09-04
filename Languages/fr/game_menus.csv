@@ -2,7 +2,7 @@ menu_start_game_1|Pour quoi vous battrez-vous?
 mno_start_good|L'AUBE d'une nouvelle ère
 mno_start_evil|Le CRÉPUSCULE des Hommes
 mno_go_bback|Retour
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|La Terre du Milieu. ^Une Ombre grandit à l'Est et de sombres créatures remontent des profondeurs de la terre. ^ Les Peuples libres se préparent à la guerre, une guerre telle qu'il n'en a pas été vue depuis le précedent Âge. ^ les Hommes, les Elfes, les Nains et les Orques ; tous joueront leur rôle. ^^ Quel rôle, cependant, cela reste à voir...
 mno_go_forth|Validez vos choix et partez à l'aventure....
 menu_start_game_3|^^^^^^^^Choisissez votre scénario :
 mno_custom_battle_scenario_1|Embuscade, Gondor contre Harad
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|Passez le mot selon lequel vous le rejoindrez rapid
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^Choisissez votre camp et votre avantage :
 mno_good_equal|Faction du Bien
 mno_bad_equal|Faction du Mal
 mno_replay_prev|Rejouer configuration précédente

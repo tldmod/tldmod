@@ -6,8 +6,8 @@ str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} y {s51}
 str_s5_s_party| Grupo de {s5}
 str_s5_s_host| Hueste de {s5}
-str_given_by_s1_at_s2|Proporcionado por {s1} en {s2}
-str_given_by_s1_in_wilderness|Proporcionado por {s1} en el campo de batalla
+str_given_by_s1_at_s2|Dada por {s1} en {s2}
+str_given_by_s1_in_wilderness|Dada por {s1} en campaña
 str_s7_raiders|Asaltantes {s7}
 str_bandits_eliminated_by_another|Otro grupo se ha adelantado y ha acabado con los bandidos problemáticos.
 str_msg_battle_won|¡Victoria! Pulsa Tab para salir...
@@ -20,10 +20,10 @@ str_flip_vertical|Girar en vertical
 str_hold_fire|Alto el fuego
 str_blunt_hold_fire|Armas contundentes / Alto el fuego                
 str_tutorial_ammo_refilled|Munición recargada.
-; str_tutorial_failed|You have been beaten this time, but don't worry. Follow the instructions carefully and you'll do better next time. Press the Tab key to return to to the menu where you can retry this tutorial.
-; str_tutorial_1_msg_1|In this tutorial you will learn the basics of movement and combat. In Mount&Blade you use the mouse to control where you are looking, and the WASD keys of your keyboard to move. Your first task in the training is to locate the flag in the room and move over it. You can press the Tab key at any time to quit this tutorial or to exit any other area in the game. Go to the flag now.
-; str_tutorial_1_msg_2|Well done. Next we will cover attacking with weapons. For the purposes of this tutorial you have been equipped with bow and arrows, a sword and a shield. You can draw different weapons from your weapon slots by using the scroll wheel of your mouse. In the default configuration, scrolling up pulls out your next weapon, and scrolling down pulls out your shield. If you are already holding a shield, scrolling down will put your shield away instead. Try changing your wielded equipment with the scroll wheel now. When you are ready, go to the flag to move on to your next task.
-; str_tutorial_1_msg_3|Excellent. The next part of this tutorial covers attacking with melee weapons. You attack with your currently wielded weapon by using your left mouse button. Press and hold the button to ready an attack, then release the button to strike. If you hold down the left mouse button for a while before releasing, your attack will be more powerful. Now draw your sword and destroy the four dummies in the room.
+str_tutorial_failed|Te han derrotado esta vez, pero no te preocupes. Sigue las instrucciones cuidadosamente y lo harás mejor la próxima vez. Pulsa Tab para volver al menú donde podrás reintentar este tutorial.
+str_tutorial_1_msg_1|En este tutorial aprenderás los conceptos básicos de movimiento y combate. En Mount&Blade se usa el ratón para controlar hacia dónde miras, y las teclas WASD del teclado para moverte. Tu primer objetivo en el entrenamiento es localizar la bandera en esta habitación y moverte hasta ella. Puedes pulsar Tab en cualquier momento para salir de este tutorial o para salir de cualquier otra área del juego. Ahora ve hasta la bandera.
+str_tutorial_1_msg_2|Bien hecho. Ahora aprenderemos a atacar con armas. Durante esta parte del tutorial, se te ha equipado con un arco y flechas, una espda y un escudo. Puedes desenvainar las distintas armas equipadas en tus ranuras de armas usando la rueda del ratón. En la configuración por defecto, mover la rueda hacia arriba te permite sacar el arma siguiente y moverla hacia abajo saca el escudo. Si ya estás sujetando un escudo, mover al rueda hacia abajo guardará el escudo. Intenta cambiar el armamento de tus manos usando la rueda. Cuando hayas termiando, ve hasta la bandera para pasar a la siguiente tarea.
+str_tutorial_1_msg_3|Excelente. La próxima parte del tutorial te enseñará a atacar con armas de cuerpo a cuerpo. Para atacar con el arma que tengas en la mano usa el botón izquierdo del ratón. Mantén el botón pulsado para preparar un ataque, y suéltalo para golpear. Si mantienes pulsado el botón durante un tiempo antes de soltarlo, yu ataque será más poderoso. Ahora saca tu espada y destruye los cuatro maniquíes que hay en la habitación.
 ; str_tutorial_1_msg_4|Nice work! You've destroyed all four dummies. You can now move on to the next room.
 ; str_tutorial_1_msg_5|As you see, there is an archery target on the far side of the room. Your next task is to use your bow to put three arrows into that target. Press and hold down the left mouse button to notch an arrow. You can then fire the arrow by releasing the left mouse button. Note the targeting reticule in the centre of your screen, which shows you the accuracy of your shot. In order to achieve optimal accuracy, let fly your arrow when the reticule is at its smallest. Try to shoot the target now.
 ; str_tutorial_1_msg_6|Well done! You've learned the basics of moving and attacking. With a little bit of practice you will soon master them. In the second tutorial you can learn more advanced combat skills and face armed opponents. You can press the Tab key at any time to return to the tutorial menu.
@@ -457,7 +457,7 @@ str_npc11_backstory_later|Arg! ¡Así que eras tú! Te olí, por eso sabía que 
 str_npc12_backstory_later|Tengo mis órdenes. Cualquier intruso que encuentren mis chicos aquí arriba será desplumado; dientes, uñas, pelo, todo. Pero tengo mis informadores. Sabemos que están ocurriendo cosas extrañas: con los jefazos yendo a la guerra, y todo eso. Ocurren cosas importantes allá lejos en el oeste. Estar aquí sentado sin hacer nada es más de lo que puedo soportar.
 str_npc13_backstory_later|Mi papel aquí se ajusta bien a la causa de la oscuridad, y una vez más los Norteños temen al sur. Veo grandes victorias en el futuro, y ríos de sangre detrás de nosotros. Pero con cada victoria veo a mi pueblo más corrompido, con sus mentes esclavizadas por su voluntad maligna. Tener que contemplar esto me desespera. 
 str_npc14_backstory_later|Has vuelto, extranjero, quizás esto sea un presagio. He estado contemplando las aguas, y las he visto oscurecerse. La mar cambia los ojos de un hombre, y le enseña a utilizarlos para comprender el lenguaje de las aguas.
-str_npc15_backstory_later|Incontables han sido las súplicas para probar mis pociones sanadoras. Demasiados amantes de caballos y elfos de cara pálida, he tenido que dejar mi cabaña una y otra vez, y ahora... bueno, Gran Señor, desde que nos separamos mi suerte no ha repuntado, y apreciabas mis habilidades...
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 str_npc17_backstory_later|El otro día vi un pino muy viejo. Los pinos pueden llegar a ser muy viejos. Hay que respetar a los árboles viejos. Pero también he visto gente que no respeta nada a los árboles. Tú respetas a los árboles, ¿verdad?
 str_npc1_backstory_response_1|Si obtienes licencia, me vendría muy bien un guerrero y explorador experimentado.
@@ -1979,9 +1979,9 @@ str_cmenu_follow|Acompañar
 ; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
 ; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
 ; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
-; str_woodelf_extra_info|^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
+; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
 ; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
-; str_harad_extra_info|^Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
+; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
 ; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
 ; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
 ; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor
@@ -1995,4 +1995,4 @@ str_cmenu_follow|Acompañar
 ; str_show_keybinds|Special Key Bindings: ^^ Formation Keys:^ Ranks - J ^ Shieldwall - K ^ Wedge - L ^ Square - ; ^ Clear Formations - U ^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
 ; str_tactical_controls|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. One may target an enemy division through this mechanism.^^Pressing the ENTER key often initiates an overhead Strategy Camera.^^Pressing the BACKSPACE key often initiates a Battle Command Display with 'radar.'
 ; str_division_placement|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward.
-; str_formations|The Complex Formations on the Battle Menu are:^^- RANKS with best troops up front^- SHIELD WALL, ranks with shields in front and longer weapons in back^- WEDGE with best troops up front^- SQUARE in no particular order^- NO FORMATION^^Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times.
+str_formations|Las formacione complejas del Menú de Batalla son:^^- LÍNEAS con las mejore tropas al frente^- MURO DE ESCUDOS, líneas con escudos al frente y armas largas detrás^- CUÑA con las mejores tropas al frente^- CUADRO, sin orden particular^- SIN FORMACIÓN^^Incluso en el último caso, el jugador puede crear formaciones de hasta cuatro líneas ordenando Mantenéos Juntos repetidas veces.

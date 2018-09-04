@@ -40,7 +40,7 @@ itm_rhun_horse_e|Bitewny Koń z Rhunu
 itm_rhun_horse_f|Bitewny Koń z Rhunu
 itm_rhun_horse_g|Bitewny Koń z Rhunu
 itm_rhun_horse_h|Bitewny Koń z Rhunu
-; itm_dale_horse|Rhovanion Horse
+itm_dale_horse|Koń z Rhovanion 
 itm_dale_warhorse|Koń Bojowy z Dale
 itm_riv_warhorse|Koń Bojowy z Rivendell
 itm_riv_warhorse2|Wierzchowiec z Imladris
@@ -66,14 +66,14 @@ itm_wargarmored_2b|Opancerzony Warg
 itm_wargarmored_2c|Opancerzony Warg
 itm_wargarmored_3a|Opancerzony Warg
 itm_warg_reward|Olbrzymi Warg
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
+itm_axe_a|Topór Północy
+itm_axe_b|Północny Brodaty Topór
+itm_axe_c|Topór Północy
+itm_axe_d|Topór Północy
 itm_tree_trunk_club_a|Pień
 itm_tree_trunk_club_b|Pień
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
+itm_long_bearded_axe|Północny Długi Topór
+itm_2_handed_axe|Północny Długi Topór
 itm_giant_hammer|Wielki Młot
 itm_giant_mace|Wielka Maczuga
 itm_giant_mace_b|Wielka Nabijana Maczuga
@@ -141,7 +141,7 @@ itm_glorfi_bow|Łuk Glorfindela
 itm_lorien_bow|Łuk Galadrimów
 itm_isengard_large_bow|Isengardzki Wielki Łuk
 itm_dale_bow|Łuk z Dale
-; itm_uruk_bow_pl|Strong Orc Bow
+itm_uruk_bow_pl|Silny Orkowy Łuk
 itm_mirkwood_bow|Łuk z Mrocznej Puszczy
 itm_dunland_javelin|Dunlandzkie Oszczepy
 itm_orc_throwing_arrow|Orkowe Rzutki
@@ -181,7 +181,7 @@ itm_riv_shield_b|Tarcza z Rivendell
 itm_riv_bas_sword|Miecz Półtoraręczny z Rivendell
 itm_riv_1h_sword|Miecz z Rivendell
 itm_riv_riding_sword|Miecz Kawaleryjski z Rivendell
-; itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword|Miecz Zwiadowcy z Rivendell
 itm_riv_spear|Włócznia z Rivendell
 itm_riv_armor_light|Zbroja z Rivendell
 itm_riv_armor_light_inf|Zbroja z Rivendell
@@ -226,12 +226,12 @@ itm_gondor_dolamroth_helm|Hełm z Dol Amroth
 itm_swan_knight_helm|Hełm Łabędziego Rycerza
 itm_gondor_lamedon_helm|Lamedoński Hełm
 itm_gondor_lamedon_leader_helm|Lamedoński Wspaniały Hełm
-; itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
-; itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
-; itm_blackroot_footman|Blackroot Vale Jerkin
-; itm_blackroot_warrior|Blackroot Vale Gambeson
-; itm_blackroot_leader|Blackroot Vale Mail
-; itm_blackroot_hood|Black Hood
+itm_blackroot_archer|Blackroot Vale ukryty Gambeson
+itm_blackroot_bowman|Blackroot Vale ukryty Jerkin
+itm_blackroot_footman|Blackroot Vale Jerkin
+itm_blackroot_warrior|Blackroot Vale Gambeson
+itm_blackroot_leader|Kolczuga Blackroot Vale 
+itm_blackroot_hood|Czarny Kaptur
 itm_dol_hauberk|Koszula Kolcza z Dol Amroth
 itm_dol_heavy_mail|Ciężka Kolczuga z Dol Amroth
 itm_dol_padded_coat|Aketon z Dol Amroth
@@ -246,7 +246,7 @@ itm_lamedon_leader_surcoat_cloak|Lamedońska Zbroja Łucznika
 itm_lamedon_warrior|Lamedońska Zbroja Wojownika
 itm_lamedon_veteran|Lamedońska Zbroja Weterana
 itm_lamedon_vet_warrior|Lamedońska Zbroja Doborowego Wojownika
-; itm_lamedon_hood|Hood
+itm_lamedon_hood|Kaptur
 itm_pinnath_archer|Zbroja Łucznika z Pinnath Gelin
 itm_pinnath_footman|Zbroja Piechura z Pinnath Gelin
 itm_pinnath_leader|Zbroja Przywódcy z Pinnath Gelin
@@ -258,7 +258,7 @@ itm_pel_leader|Skórznia z Pelargiru
 itm_pel_marine|Żeglarz z Pelargiru
 itm_pelargir_marine_leader|Przywódca Żeglarzy z Pelargiru
 itm_pelargir_regular|Zołnierz z Pelargiru
-; itm_pelargir_hood|White Hood
+itm_pelargir_hood|Biały Kaptur
 itm_pelargir_helmet_light|Hełm z Pelargiru
 itm_pelargir_helmet_heavy|Ciężki z Pelargiru
 itm_pelargir_greaves|Nagolenniki z Pelargiru
@@ -316,7 +316,7 @@ itm_lorien_helm_b|Hełm Łucznika z Lorien
 itm_lorien_helm_c|Hełm Piechoty z Lorien
 itm_orc_chain_greaves|Orkowe Nagolenniki
 
-; itm_orc_coif|Orc Skullcap\t\t\t\t\t\t 
+itm_orc_coif|Orkowa Czacha
 itm_orc_greaves|Orkowe Kolcze Buty
 itm_orc_ragwrap|Orkowe Szmaty
 itm_orc_furboots|Orkowe Futrzane Buty
@@ -382,8 +382,8 @@ itm_bone_cudgel|Kościana Pałka
 itm_skull_club|Laga z Czaszką
 itm_orc_club_a|Orkowa Pałka
 itm_orc_club_b|Orkowa Pałka
-; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Spiky Orc Club
+itm_orc_club_c|Kolczasta Orkowa Pałka
+itm_orc_club_d|Kolczasta Orkowa Pałka
 itm_orc_sledgehammer|Orkowy Kafar
 itm_orc_simple_spear|Orkowy Włócznia
 itm_orc_skull_spear|Orkowa Włócznia z Czaszką
@@ -412,21 +412,21 @@ itm_mordor_man_shield_a|Mordorska Tarcza ludzi
 itm_mordor_man_shield_b|Mordorska Tarcza ludzi
 itm_angmar_shield|Tarcza z Angmaru
 
-; itm_orc_nosehelm|Orc Nosehelm
+itm_orc_nosehelm|Orkowy Nosowy Hełm
 
-; itm_orc_kettlehelm|Orc Kettlehelm
+itm_orc_kettlehelm|Orkowy Czajnik
 
 itm_orc_buckethelm|Orkowy Hełm
 
-; itm_orc_morion|Orc Morion
+itm_orc_morion|Orkowy Kwarc
 
 itm_orc_beakhelm|Orkowy Hełm z Dziobem
 
 itm_orc_bughelm|Orkowy Hełm
 
-; itm_orc_visorhelm|Orc Visorhelm
+itm_orc_visorhelm|Orkowa Przyłbica
 
-; itm_orc_visorhelm_pl|Orc Visorhelm
+itm_orc_visorhelm_pl|Orkowa Przyłbica
 
 itm_m_orc_light_a|Mordorska Orkowa lekka Zbroja
 itm_m_orc_light_b|Mordorska Orkowa lekka Zbroja
@@ -442,19 +442,19 @@ itm_m_uruk_light_a|Pancerz Uruka
 
 itm_m_uruk_light_b|Skórznia Uruka
 
-; itm_m_uruk_light_c|Uruk Light Mail
+itm_m_uruk_light_c|Lekka Kolczuga Uruk
 
-; itm_m_uruk_med_a|Uruk Heavy Leather
+itm_m_uruk_med_a|Ciężka Skóra Uruk
 
-; itm_m_uruk_med_b|Uruk Heavy Mail
+itm_m_uruk_med_b|Ciężka Kolczuga Uruk
 
-; itm_m_uruk_med_c|Uruk Light Scale
+itm_m_uruk_med_c|Lekka Zbroja Uruk
 
-; itm_m_uruk_heavy_a|Uruk Heavy Scale
+itm_m_uruk_heavy_a|Ciężka Zbroja Uruk
 
-; itm_m_uruk_heavy_b|Uruk Platemail
+itm_m_uruk_heavy_b|Płytowa Zbroja Uruk
 
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c|Lugburz Płytowa Zbroja
 itm_m_uruk_heavy_j|Ciężka Zbroja Uruka
 itm_m_uruk_heavy_k|Zbroja Warty Uruków
 itm_m_cap_armor|Mordorska Zbroja Kapitana
@@ -478,7 +478,7 @@ itm_moria_armor_b|Napierśnik z Naramiennikami z Morii
 itm_moria_armor_c|Orkowa Kolczuga z Morii
 itm_moria_armor_d|Nitowana Skórznia z Morii
 itm_moria_armor_e|Orkowa Ciężka Kolczuga z Morii
-; itm_moria_orc_shield_a|Moria Great Shield
+itm_moria_orc_shield_a|Wielka Tarcza Morii
 itm_moria_orc_shield_b|Orkowa Tarcza z Morii
 itm_moria_orc_shield_c|Orkowa Tarcza z Morii
 itm_gundabad_armor_a|Gundabadzkie Orkowe Kamasze
@@ -486,8 +486,8 @@ itm_gundabad_armor_b|Gundabadzkie Orkowe Futro
 itm_gundabad_armor_c|Gundabadzka Orkowa Zbroja
 itm_gundabad_armor_d|Gundabadzki Orkowt Pancerz
 itm_gundabad_armor_e|Gundabadzka Orkowa Ciężka Zbroja
-; itm_gundabad_helm_a|Leather Cap
-; itm_gundabad_helm_b|Leather Helm
+itm_gundabad_helm_a|Skurzany Kaptur
+itm_gundabad_helm_b|Skórzany Hełm
 itm_gundabad_helm_c|Gundabadzki Hełm
 itm_gundabad_helm_d|Gundabadzki Hełm
 itm_gundabad_helm_e|Hełm Jeźdźców Wargów
@@ -507,7 +507,7 @@ itm_dun_helm_b|Dunlandzka Jelenia Czapa
 itm_dun_helm_c|Dunlandzki Wspaniały Hełm
 itm_dun_helm_d|Dunlandzki Wspaniały Hełm
 
-; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
+itm_dun_helm_e|Dun Hełm Wysokiej Wojny\t\t\t\t\t\t\t\t
 itm_dun_shield_a|Dunlandzka Tarcza
 itm_dun_shield_b|Dunlandzka Tarcza
 itm_dun_berserker|Dunlandzki Miecz Herszta
@@ -518,11 +518,11 @@ itm_dunland_spear|Dunlandzka Włócznia
 itm_dunnish_pike|Dunlandzka Pika
 itm_rohan_armor_a|Rohańska Koszula
 itm_rohan_armor_e|Rohański Haubert
-; itm_rohan_armor_h|Rohan Leather Armor
+itm_rohan_armor_h|Rohańska Skórzana Zbroja
 itm_rohan_armor_k|Rohański Haubert
 itm_rohan_armor_n|Rohańska Łuskowa Zbroja
 itm_rohan_armor_p|Rohańska Zbroja
-; itm_rohan_armor_s|Rohan Guard Armor
+itm_rohan_armor_s|Rohańska Zbroja Strażnika
 itm_rohan_light_helmet_a|Rohański lekki Hełm
 itm_rohan_light_helmet_b|Rohański lekki Hełm
 itm_rohan_inf_helmet_a|Rohański Hełm Piechoty
@@ -556,11 +556,11 @@ itm_mirkwood_light_scale|Lekka Zbroja Łuskowa Leśnych Elfów
 itm_mirkwood_armor_a|Lekka Skórznia
 itm_mirkwood_armor_b|Lekka Zbroja Łuskowa
 
-; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
+itm_mirkwood_armor_c|Królewska Kolczuga z Mirkwood \t\t\t\t\t\t\t
 itm_mirkwood_armor_d|Lekka Przeszywanica z Surkotem
 itm_mirkwood_armor_e|Lekka Kolczuga z Surkotem
 
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+itm_mirkwood_armor_f|Zbroja Liścia Mirkwood \t\t\t\t\t\t\t\t
 itm_mirkwood_great_spear|Długa Włócznia z Mrocznej Puszczy
 itm_mirkwood_war_spear|Bitewna Włócznia z Mrocznej Puszczy
 itm_mirkwood_short_spear|Włócznia z Mrocznej Puszczy
@@ -579,7 +579,7 @@ itm_harad_tunic|Haradzka Szata
 itm_harad_padded|Przeszywanica z Harondoru
 itm_harad_hauberk|Kolczuga z Harondoru
 itm_harad_lamellar|Pancerz Harasjala
-; itm_harad_heavy|Harad Noble Armor
+itm_harad_heavy|Szlachecka Zbroja Harad
 itm_harad_skirmisher|Haradzkie Okrycie
 itm_harad_archer|Haradzka Zbroja Łucznika
 itm_black_snake_armor|Pancerz Maranka
@@ -701,57 +701,57 @@ itm_rhun_helm_n|Hełm Wodza Rhunu
 itm_rhun_helm_o|Hełm Wodza Rhunu
 itm_rhun_greataxe|Wielki Topór z Rhunu
 itm_rhun_battleaxe|Bojowy Topór z Rhunu
-; itm_rhun_falchion|Savage Falchion\t\t\t\t\t\t\t\t 
+itm_rhun_falchion|Dziki Falchion
 itm_rhun_glaive|Glewia z Rhunu
 
-; itm_rhun_greatfalchion|Savage Great Falchion\t\t\t\t\t\t\t\t\t\t\t
-; itm_rhun_greatsword|Savage Great Sword
-; itm_rhun_shortsword|Savage Shortsword
+itm_rhun_greatfalchion|Dziki Wielki Falchion
+itm_rhun_greatsword|Dziki Duży Miecz
+itm_rhun_shortsword|Dziki Krótki Miecz
 
-; itm_rhun_sword|Savage Sword\t\t\t\t\t\t   
+itm_rhun_sword|Dziki Miecz
 itm_rhun_shield|Trójkątna Tarcza z Rhunu
-; itm_dale_light_a|Dale Militia Jacket
+itm_dale_light_a|Kurtka Milicji z Dale
 
-; itm_dale_light_b|Northmen Light Lamellar
+itm_dale_light_b|Północna Lekka Lamela
 
-; itm_dale_med_a|Northmen Heavy Lamellar
+itm_dale_med_a|Północna Ciężka Lamela
 
-; itm_dale_med_b|Dale Leather Armor
+itm_dale_med_b|Skórzana Zbroja z Dale
 
-; itm_dale_med_c|Dale Leather Over Mail
+itm_dale_med_c|Skórzana Kolczuga z Dale
 
-; itm_dale_med_d|Dale Lamellar Armor
+itm_dale_med_d|Lamelowa Zbroja Dale
 
-; itm_dale_heavy_a|Dale Lamellar Over Mail
+itm_dale_heavy_a|Lamelowa Kolczuga Dale
 
-; itm_dale_heavy_b|Dale Plated Coat
+itm_dale_heavy_b|Płytowy Płaszcz Dale
 
-; itm_dale_heavy_c|Rhovanion Mail
+itm_dale_heavy_c|Kolczuga Rhovanion
 
 itm_dale_armor_l|Szlachecka Zbroja z Dale
 
 itm_dale_helmet_a|Hełm z Nosalem z Osłoną Kolczą
 
-; itm_dale_helmet_b|Dale Light Archer Helm
+itm_dale_helmet_b|Lekki Hełm Łucznika Dale
 
 itm_dale_helmet_c|Okrągły Hełm z Osłoną Kolczą
 
-; itm_dale_helmet_d|Dale Archer Helm
+itm_dale_helmet_d|Hełm Łucznika z Dale
 
-; itm_dale_helmet_e|Barding Helm
+itm_dale_helmet_e|Hełm
 
-; itm_dale_helmet_f|Barding Helm
+itm_dale_helmet_f|Hełm
 
 itm_dale_sword|Krótki Miecz z Dale
 itm_dale_sword_long|Długi Miecz z Dale
 itm_dale_sword_broad|Szeroki Miecz z Dale
 itm_dale_pike|Włócznia z Dale
 itm_dale_billhook|Glewia z Dale
-; itm_dale_shield_a|Dale Tower Shield
+itm_dale_shield_a|Tarcza Wieży z Dale
 
-; itm_dale_shield_b|Dale Tower Shield
+itm_dale_shield_b|Tarcza Wieży z Dale
 
-; itm_dale_shield_c|Dale Round Shield
+itm_dale_shield_c|Okrągła Tarcza z Dale
 itm_dale_shield_d|Tarcza z Dale
 itm_umb_armor_a|Skórzana Zbroja Korsarza
 
@@ -773,11 +773,11 @@ itm_umb_helm_c|Hełm Korsarza
 
 itm_umb_helm_d|Hełm Łupieżcy z Umbaru
 
-; itm_umb_helm_e|Corsair High Helm
+itm_umb_helm_e|Ciężki Hełm Korsarzy
 
-; itm_umb_helm_f|Corsair High Helm
+itm_umb_helm_f|Ciężki Hełm Korsarzy
 
-; itm_umb_hood|Black Hood
+itm_umb_hood|Czarny Kaptur
 
 itm_corsair_boots|Buty Korsarza
 itm_umb_shield_a|Puklerz Korsarza
@@ -787,35 +787,35 @@ itm_umb_shield_d|Puklerz Korsarza
 itm_umb_shield_e|Puklerz Korsarza
 itm_umbar_cutlass|Umbarski Kordelas
 itm_kraken|Kordelas Krakena
-; itm_umbar_rapier|Umbar Boarding Sword
+itm_umbar_rapier|Umbardzki Miecz
 
 itm_corsair_harpoon|Harpun Korsarza
 itm_corsair_sword|Eket Korsarza
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers\t\t\t\t\t\t\t\t\t
+itm_corsair_throwing_dagger|Krzywe Sztylety 
 itm_umbar_pike|Umbarska Pika
-; itm_woodman_tunic|Woodmen Tunic
+itm_woodman_tunic|Tunika Drwali
 
-; itm_woodman_scout|Woodmen Scout Cape\t\t\t\t\t\t\t\t\t
-; itm_woodman_padded|Woodmen Padded Armor
+itm_woodman_scout|Peleryna Zwiadowcy Lasu
+itm_woodman_padded|Wyściełana Zbroja Drwala
 itm_beorn_tunic|Ubiór Beorninga
 itm_beorn_padded|Lekka Zbroja Beorninga
 itm_beorn_heavy|Ciężka Zbroja Beorninga
 itm_beorn_berserk|Ekwipunek Berserkera Beorningów
 itm_beorn_chief|Tunika Wodza Beorningów
 
-; itm_beorn_helmet|Bear Skullcap
+itm_beorn_helmet|Niedźwiedzia Czacha
 itm_beorn_shield|Tarcza z Północy
 itm_beorn_axe|Topór Beorningów
-; itm_beorn_staff|Woodmen Staff
+itm_beorn_staff|Laska Drwali
 itm_beorn_battle_axe|Bojowy Topór Beorningów
-; itm_dwarf_shield_a|Dwarven Angular Shield
+itm_dwarf_shield_a|Krasnoludzka Koścista Tarcza
 
-; itm_dwarf_shield_b|Dwarven Tower Shield
+itm_dwarf_shield_b|Krasnoludzka Tarcza Wieży
 
-; itm_dwarf_shield_c|Dwarven Fighting Shield
+itm_dwarf_shield_c|Krasnoludzka Tarcza Bojowa
 
-; itm_dwarf_shield_d|Dwarven Round Shield
+itm_dwarf_shield_d|Krasnoludzka Okrągła Tarcza 
 
 itm_north_round_shield|Krasnoludzka Tarcza
 
@@ -827,15 +827,15 @@ itm_free_dwarf_shield_j|Krasnoludzka Tarcza
 
 itm_free_dwarf_shield_k|Krasnoludzka Tarcza
 
-; itm_woodmen_heavy|Mirkwood Armor
+itm_woodmen_heavy|Zbroja z Mirkwood
 
 itm_dwarf_sword_a|Krasnoludzki Miecz
 
-; itm_dwarf_sword_b|Beorning Shortsword
+itm_dwarf_sword_b|Krótki Miecz Beorningów
 itm_dwarf_sword_c|Krasnoludzki Miecz
 itm_dwarf_sword_d|Krasnoludzki Miecz
 
-; itm_dwarf_battle_axe|Dwarf Battle Axe
+itm_dwarf_battle_axe|K|rasnoludzki Topór Bitewny
 
 itm_dwarf_great_axe|Krasnoludzki Wielki Topór
 
@@ -855,43 +855,43 @@ itm_dwarf_spear|Krasnoludzka Włcznia
 
 itm_dwarf_spear_b|Krasnoludzka Pika
 
-; itm_dwarf_spear_c|Dwarf Longaxe
+itm_dwarf_spear_c|Krasnoludzki Długi Topór
 
 itm_dwarf_helm_coif|Krasnoludzki Czepiec
 
-; itm_dwarf_nasal_b|Dwarf Nasal Helm
+itm_dwarf_nasal_b|Krasnoludzki Nosowy Hełm
 
 itm_north_skullcap|Hełm z Północy
 
-; itm_dwarf_helm_kettle|Dwarf Kettle Helm
+itm_dwarf_helm_kettle|Krasnoludzki Czajnik 
 
 itm_dwarf_helm_fris|Krasnoludzki Stożkowy Hełm
 
-; itm_north_leather_skullcap|North Light Skullcap
+itm_north_leather_skullcap|Północny Lekka Czacha
 
 itm_dwarf_hood|Krasnoludzki Kaptur
 
 itm_dwarf_nasal|Krasnoludzki Hełm z Nosalem
 
-; itm_north_nasal_helm|North Nasal Helm
+itm_north_nasal_helm|Północny Hełm Nosowy
 
 itm_dwarf_helm_p|Krasnoludzki Hełm Króla
 
-; itm_dwarf_miner|Dwarf Light Helm
+itm_dwarf_miner|Krasnoludzki lekki Hełm
 
-; itm_north_chieftain|North Chieftain Helm
+itm_north_chieftain|Hełm wodza Północy
 
-; itm_dwarf_helm_round|Dwarf Round Helm
+itm_dwarf_helm_round|Krasnoludzki Okrągły Hełm
 
 itm_free_dwarf_helm_v|Krasnoludzka Łebka
 
-; itm_dwarf_helm_sallet|Dwarf Sallet
+itm_dwarf_helm_sallet|Krasnoludzki Sallet
 
-; itm_dwarf_armor_a|Erebor Mail
+itm_dwarf_armor_a|Kolczuga z Ereboru
 
 itm_leather_dwarf_armor|Krasnoludzka Kryta Zbroja
 
-; itm_dwarf_armor_b|Erebor Scale
+itm_dwarf_armor_b|Łuska Ereboru
 
 itm_leather_dwarf_armor_b|Krasnoludzka Przeszywanica
 
@@ -899,7 +899,7 @@ itm_dwarf_armor_c|Krasnoludzka Karacena
 
 itm_dwarf_vest|Krasnoludzka Tunika
 
-; itm_dwarf_vest_b|Iron Hills Mail
+itm_dwarf_vest_b|Żelazna Kolczuga
 itm_dwarf_pad_boots|Krasnoludzkie Skórzane Buty
 itm_dwarf_chain_boots|Krasnoludzkie Kolcze Nogawice
 itm_dwarf_scale_boots|Krasnoludzkie Łuskowe Nogawice
@@ -960,17 +960,17 @@ itm_miruvor_reward|Manierka z Miruvorem
 itm_wheeled_cage|Wielka Ruchoma Klatka
 itm_orc_throwing_axes_reward|Gundabadzkie Latające Topory
 itm_corsair_throwing_dagger_reward|Zatrute Sztylety do Rzucania
-itm_dwarf_shield_reward|Krasnoludzka Tarcza Mithril
+itm_dwarf_shield_reward|Tarcza z Kheled-zaram
 itm_dwarf_great_axe_reward|Krasnoludzki Ostry Topór
 itm_isen_uruk_heavy_reward|Zbroja Generała Uruk-hai
 itm_lorien_bow_reward|Noldorski Łuk
 itm_lorien_sword_reward|Miecz Galadrimów
-itm_dale_sword_reward|Miecz Strażników
+itm_dale_sword_reward|Królewski Miecz z Dale
 
-; itm_dale_armor_reward|Dale Noblemen Mail
+itm_dale_armor_reward|Szlachecka Kolczuga z Dale
 itm_leather_gloves_reward|Rękawice Łowcy
 itm_beorn_shield_reward|Boerinska Tarcza
-; itm_beorn_axe_reward|Bear Club
+itm_beorn_axe_reward|Niedźwiedzia Pałka
 itm_moria_arrow_reward|Zatrute Strzały z Morii
 itm_khamul_helm|Hełm Khamula
 itm_gandstaff|Kostur Czarodzieja

@@ -10938,7 +10938,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (faction_get_slot,":strength",":fac",slot_faction_strength_tmp),
   (val_add, ":strength", 80), #50 Str Points increase for completing the quest
   (assign, reg50, 80),
-  (display_message, "@Reinforcing {s1} has strengthen {s2}. ({s2} has gained {reg50} faction strength).", color_good_news),
+  (display_message, "@Reinforcing {s1} has strengthened {s2}. ({s2} has gained {reg50} faction strength).", color_good_news),
   (faction_set_slot,":fac",slot_faction_strength_tmp,":strength"),
   (try_begin),
     (gt, reg10, 0),

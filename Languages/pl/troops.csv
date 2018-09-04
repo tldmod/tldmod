@@ -50,26 +50,26 @@ trp_woodmen_skilled_forester|Doświadczony Leśnik
 trp_woodmen_skilled_forester_pl|Doświadczonych Leśników
 trp_woodmen_axemen|Leśny Topornik
 trp_woodmen_axemen_pl|Leśnych Toporników
-; trp_woodmen_master_axemen|Night Guard of Mirkwood
-; trp_woodmen_master_axemen_pl|Night Guards of Mirkwood
+trp_woodmen_master_axemen|Nocna Straż z Mirkwood
+trp_woodmen_master_axemen_pl|Nocna Straż z Mirkwood
 trp_woodmen_tracker|Leśny Tropiciel
 trp_woodmen_tracker_pl|Leśnych Tropicieli
 trp_woodmen_scout|Leśny Zwiadowca
 trp_woodmen_scout_pl|Leśnych Zwiadowców
 trp_woodmen_archer|Leśny Łucznik
 trp_woodmen_archer_pl|Leśnych Łuczników
-; trp_fell_huntsmen_of_mirkwood|Night Stalker of Mirkwood
-; trp_fell_huntsmen_of_mirkwood_pl|Night Stalkers of Mirkwood
+trp_fell_huntsmen_of_mirkwood|Nocny Zwiadowca z Mirkwood
+trp_fell_huntsmen_of_mirkwood_pl|Nocny Zwiadowca z Mirkwood
 trp_beorning_vale_man|Beorninski Mężczyzna
 trp_beorning_vale_man_pl|Beorninskich Mężczyzn
 trp_beorning_warrior|Beorninski Wojownik
 trp_beorning_warrior_pl|Beorninskich Wojowników
-; trp_beorning_tolltacker|Beorning Toll-Taker
-; trp_beorning_tolltacker_pl|Beorning Toll-Takers
+trp_beorning_tolltacker|Beorning Toll-Taker
+trp_beorning_tolltacker_pl|Beorning Toll-Taker
 trp_beorning_sentinel|Beorninski Wartownik
 trp_beorning_sentinel_pl|Beorninskich Wartowników
 trp_beorning_warden_of_the_ford|Beorninski Strażnik Brodu
-; trp_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
+trp_beorning_warden_of_the_ford_pl|Beorninskich Strażników Brodu
 trp_beorning_carrock_lookout|Beorninski Skaut Carrock
 trp_beorning_carrock_lookout_pl|Beorninskich Skautów Carrock
 trp_beorning_carrock_fighter|Beorninski Wojownik Carrock
@@ -80,34 +80,34 @@ trp_dale_militia|Milicjant Dale
 trp_dale_militia_pl|Milicji Dale
 trp_dale_man_at_arms|Zbrojny Dale
 trp_dale_man_at_arms_pl|Zbrojnych Dale
-; trp_laketown_scout|Dale Scout
+trp_laketown_scout|Zwiadowca Dale
 trp_laketown_scout_pl|Oddział Zwiadowców Dale
-; trp_laketown_bowmen|Dale Bowman
-; trp_laketown_bowmen_pl|Dale Bowmen
-; trp_laketown_archer|Dale Archer
-; trp_laketown_archer_pl|Dale Archers
-; trp_barding_bowmen_of_esgaroth|Barding Bowman
-; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen
-; trp_dale_warrior|Dale Swordsman
-; trp_dale_warrior_pl|Dale Swordsmen
-; trp_dale_veteran_warrior|Dale Sergeant
-; trp_dale_veteran_warrior_pl|Dale Sergeants
-; trp_dale_marchwarden|Hearthman of Dale
-; trp_dale_marchwarden_pl|Hearthmen of Dale
+trp_laketown_bowmen|Łucznik Dale
+trp_laketown_bowmen_pl|Łucznik Dale
+trp_laketown_archer|Łucznik Dale
+trp_laketown_archer_pl|Łucznik Dale
+trp_barding_bowmen_of_esgaroth|Łucznik Barding
+trp_barding_bowmen_of_esgaroth_pl|Łucznik Barding
+trp_dale_warrior|Miecznik Dale
+trp_dale_warrior_pl|Miecznik Dale
+trp_dale_veteran_warrior|Sierżant Dale
+trp_dale_veteran_warrior_pl|Sierżant Dale
+trp_dale_marchwarden|Hearthman z Dale
+trp_dale_marchwarden_pl|Hearthman z Dale
 trp_dale_pikeman|Włócznik Dale
 trp_dale_pikeman_pl|Włóczników Dale
 trp_dale_billman|Halabardzista Dale
 trp_dale_billman_pl|Halabardzistów Dale
 trp_dale_bill_master|Doborowy Halabardzista Dale
 trp_dale_bill_master_pl|Doborowych Halabardzistów Dale
-; trp_merchant_squire_or_dale|Northmen Retainer
-; trp_merchant_squire_or_dale_pl|Northmen Retainers
-; trp_merchant_guard_of_dale|Northmen Auxiliary
-; trp_merchant_guard_of_dale_pl|Northmen Auxilia
-; trp_merchant_protector_of_dale|Rhovanion Rider
-; trp_merchant_protector_of_dale_pl|Rhovanion Riders
-; trp_girions_guard_of_dale|Rhovanion Marchwarden
-; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
+trp_merchant_squire_or_dale|Northmen Retainer
+trp_merchant_squire_or_dale_pl|Northmen Retainer
+trp_merchant_guard_of_dale|Northmen Auxiliary
+trp_merchant_guard_of_dale_pl|Northmen Auxiliary
+trp_merchant_protector_of_dale|Rhovanion Jeździec
+trp_merchant_protector_of_dale_pl|Rhovanion Jeździec
+trp_girions_guard_of_dale|Rhovanion Marchwarden
+trp_girions_guard_of_dale_pl|Rhovanion Marchwarden
 trp_rhun_tribesman|Plemieniec Rhun
 trp_rhun_tribesman_pl|Plemieńców Rhun
 trp_rhun_horse_scout|Konny Zwiadowca Rhun
@@ -138,7 +138,7 @@ trp_rhun_light_cavalry|Lekki Kawalerzysta Rhun
 trp_rhun_light_cavalry_pl|Lekkich Kawalerzystów Rhun
 trp_rhun_noble_cavalry|Szlachecki Kawalerzysta Rhun
 trp_rhun_noble_cavalry_pl|Szlacheckich Kawalerzystów Rhun
-; trp_rhun_heavy_noble_cavalry|Rhun Heavy Noble Cavalryman
+trp_rhun_heavy_noble_cavalry|Rhun Ciężki Szlachcic Kawalerzysta  
 trp_rhun_heavy_noble_cavalry_pl|Ciężkich Szlacheckich Kawalerzystów Rhun
 trp_dorwinion_noble_of_rhun|Dorwinionski Szlachcic Rhun
 trp_dorwinion_noble_of_rhun_pl|Dorwinionskich Szlachciców Rhun
@@ -166,10 +166,10 @@ trp_dwarven_scout|Krasnolud Zwiadowca
 trp_dwarven_scout_pl|Krasnoludów Zwiadowców
 trp_dwarven_bowman|Krasnolud Łucznik
 trp_dwarven_bowman_pl|Krasnoludów Łuczników
-; trp_dwarven_longaxeman|Longaxe Dwarf
-; trp_dwarven_longaxeman_pl|Longaxe Dwarves
-; trp_iron_hills_warrior|Iron Hills Warrior
-; trp_iron_hills_warrior_pl|Iron Hills Warriors
+trp_dwarven_longaxeman|Longaxe Krasnolód
+trp_dwarven_longaxeman_pl|Longaxe Krasnolód
+trp_iron_hills_warrior|Wojownik Żelaznych Wzgóż 
+trp_iron_hills_warrior_pl|Wojownik Żelaznych Wzgóż 
 trp_iron_hills_miner|Górnik z Żelaznych Wzgórz
 trp_iron_hills_miner_pl|Górnik z Żelaznych Wzgórz
 trp_iron_hills_infantry|Piechur Żelaznych Wzgórz
@@ -268,10 +268,10 @@ trp_lamedon_leader|Kapitan Lamedon
 trp_lamedon_leader_pl|Kapitanów Lamedon
 trp_pinnath_gelin_plainsman|Mieszkaniec Pinnath Gelin
 trp_pinnath_gelin_plainsman_pl|Mieszkańców Pinnath Gelin
-; trp_pinnath_gelin_spearman|Rider of Pinnath Gelin
-; trp_pinnath_gelin_spearman_pl|Riders of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin|Knight of Pinnath Gelin
-; trp_warrior_of_pinnath_gelin_pl|Knights of Pinnath Gelin
+trp_pinnath_gelin_spearman|Jeździec z Pinnath Gelin
+trp_pinnath_gelin_spearman_pl|Jeździec z Pinnath Gelin
+trp_warrior_of_pinnath_gelin|Rycerz z Pinnath Gelin
+trp_warrior_of_pinnath_gelin_pl|Rycerz z Pinnath Gelin
 trp_pinnath_gelin_bowman|Łucznik Pinnath Gelin
 trp_pinnath_gelin_bowman_pl|Łuczników Pinnath Gelin
 trp_pinnath_gelin_archer|Strzelec Pinnath Gelin
@@ -288,8 +288,8 @@ trp_footman_of_blackroot_vale|Pieszy Blackroot Vale
 trp_footman_of_blackroot_vale_pl|Pieszych Blackroot Vale
 trp_spearman_of_blackroot_vale|Włócznik Blackroot Vale
 trp_spearman_of_blackroot_vale_pl|Włóczników Blackroot Vale
-; trp_blackroot_leader|Morthond Shadow Hunter
-; trp_blackroot_leader_pl|Morthond Shadow Hunters
+trp_blackroot_leader|Myśliwy Morthond
+trp_blackroot_leader_pl|Myśliwy Morthond
 trp_dol_amroth_youth|Rekrut Dol Amroth
 trp_dol_amroth_youth_pl|Rekrutów Dol Amroth
 trp_squire_of_dol_amroth|Giermek Dol Amroth
@@ -428,8 +428,8 @@ trp_raider_of_rohan|Jeździec Frealafa
 trp_raider_of_rohan_pl|Jeźdźców Frealafa
 trp_heavy_swordsman_of_rohan|Ciężki Rohański Zbrojny
 trp_heavy_swordsman_of_rohan_pl|Ciężkich Rohańskich Zbrojnych
-; trp_warden_of_methuseld|Warden of Meduseld
-; trp_warden_of_methuseld_pl|Wardens of Meduseld
+trp_warden_of_methuseld|Warden z Meduseld
+trp_warden_of_methuseld_pl|Warden z Meduseld
 trp_skirmisher_of_rohan|Rohański Harcownik
 trp_skirmisher_of_rohan_pl|Rohańskich Harcowników
 trp_veteran_skirmisher_of_rohan|Doświadczony Rohański Harcownik
@@ -476,8 +476,8 @@ trp_harad_swordsman|Haradrimski Zbrojny
 trp_harad_swordsman_pl|Haradrimskich Zbrojnych
 trp_harad_lion_guard|Gwardzista Lwa
 trp_harad_lion_guard_pl|Gwardzistów Lwa
-trp_harad_skirmisher|Haradrimski Harcownik
-trp_harad_skirmisher_pl|Haradrimskich Harcowników
+trp_harad_skirmisher|Harad Łowca
+trp_harad_skirmisher_pl|Harad Łowca
 trp_harad_archer|Haradrimski Strzelec
 trp_harad_archer_pl|Haradrimskich Strzelców
 trp_harad_eagle_guard|Gwardzista Orła
@@ -488,14 +488,14 @@ trp_harondor_rider|Jeździec z Harondoru
 trp_harondor_rider_pl|Jeźdźców z Harondoru
 trp_harondor_light_cavalry|Lekki Kawalerzysta z Harondoru
 trp_harondor_light_cavalry_pl|Lekkich Kawalerzystów z Harondoru
-trp_fang_heavy_cavalry|Ciężki Kawalerzysta Kła
-trp_fang_heavy_cavalry_pl|Ciężkich Kawalerzystów Kła
-trp_harad_horse_archer|Haradrimski Strzelec Konny
-trp_harad_horse_archer_pl|Haradrimskich Strzelców Konnych
-trp_black_snake_horse_archer|Strzelec Konny Czarnego Węża
-trp_black_snake_horse_archer_pl|Strzelców Konnych Czarnego Węża
-trp_gold_serpent_horse_archer|Strzelec Konny Złotego Węża
-trp_gold_serpent_horse_archer_pl|Strzelców Konnych Złotego Węża
+trp_fang_heavy_cavalry|Rycerz Złotego Węża
+trp_fang_heavy_cavalry_pl|Rycerz Złotego Węża
+trp_harad_horse_archer|Harondor Skirmisher
+trp_harad_horse_archer_pl|Harondor Skirmisher
+trp_black_snake_horse_archer|Harondor Konny Łucznik
+trp_black_snake_horse_archer_pl|Harondor Konny Łucznik
+trp_gold_serpent_horse_archer|Strzelec Konny Czarnego Węża
+trp_gold_serpent_horse_archer_pl|Strzelców Konnych Czarnego Węża
 trp_far_harad_tribesman|Plemieniec Dalekiego Haradu
 trp_far_harad_tribesman_pl|Plemieńców Dalekiego Haradu
 trp_far_harad_champion|Orędownik z Dalekiego Haradu
@@ -510,8 +510,8 @@ trp_dunnish_pikeman|Dunlandzki Pikinier
 trp_dunnish_pikeman_pl|Dunlandzkich Pikinierów
 trp_dunnish_veteran_pikeman|Doborowy Dunlandzki Pikinier
 trp_dunnish_veteran_pikeman_pl|Doborowych Dunlandzkich Pkinierów
-; trp_dunnish_raven_rider|Dunnish Crebain Rider
-; trp_dunnish_raven_rider_pl|Dunnish Crebain Riders
+trp_dunnish_raven_rider|Dunnish Crebain Jeździec
+trp_dunnish_raven_rider_pl|Dunnish Crebain Jeździec
 trp_dunnish_vet_warrior|Doświadczony Dunlandzki Wojownik
 trp_dunnish_vet_warrior_pl|Doświadczonych Dunlandzkich Wojowników
 trp_dunnish_wolf_warrior|Dunlandzki Wilczy Wojownik
@@ -566,14 +566,14 @@ trp_corsair_veteran_raider|Umbarski Doświadczony Łupieżca
 trp_corsair_veteran_raider_pl|Umbarskich Doświadczonych Łupieżców
 trp_corsair_night_raider|Umbarski Nocny Łupieżca
 trp_corsair_night_raider_pl|Umbarskich Nocnych Łupieżców
-; trp_militia_of_umbar|Umbar Marine
-; trp_militia_of_umbar_pl|Umbar Marines
-; trp_marksman_of_umbar|Marksman of Umbar
-; trp_marksman_of_umbar_pl|Marksmen of Umbar
-; trp_veteran_marksman_of_umbar|Veteran Marksman of Umbar
-; trp_veteran_marksman_of_umbar_pl|Veteran Marksmen of Umbar
-; trp_master_marksman_of_umbar|Corsair Master Marksman
-; trp_master_marksman_of_umbar_pl|Corsair Master Marksmen
+trp_militia_of_umbar|Umbar Marine
+trp_militia_of_umbar_pl|Umbar Marine
+trp_marksman_of_umbar|Strzelec z Umbar
+trp_marksman_of_umbar_pl|Strzelec z Umbar
+trp_veteran_marksman_of_umbar|Veteran z Umbar
+trp_veteran_marksman_of_umbar_pl|Veteran z Umbar
+trp_master_marksman_of_umbar|Korsarz Mistrz Strzelców
+trp_master_marksman_of_umbar_pl|Korsarz Mistrz Strzelców
 trp_corsair_marauder|Umbarski Zbrojny
 trp_corsair_marauder_pl|Umbarskich Zbrojnych
 trp_corsair_veteran_marauder|Doświadczony Umbarski Zbrojny
@@ -666,8 +666,8 @@ trp_black_uruk_of_barad_dur|Czarny Uruk Barad-Dur
 trp_black_uruk_of_barad_dur_pl|Czarnych Uruków Barad-Dur
 trp_uruk_mordor_standard_bearer|Mordorski Chorąży
 trp_uruk_mordor_standard_bearer_pl|Mordorskich Chorążych
-; trp_troll_of_moria|Cave Troll
-; trp_troll_of_moria_pl|Cave Trolls
+trp_troll_of_moria|Jaskiniowy Troll
+trp_troll_of_moria_pl|Jaskiniowy Troll
 trp_armoured_troll|Opancerzony Trol
 trp_armoured_troll_pl|Opancerzonych Troli
 trp_olog_hai|Mordorski Olog-Hai
@@ -718,26 +718,26 @@ trp_large_goblin_of_moria|Wielki Goblin z Morii
 trp_large_goblin_of_moria_pl|Wielkich Goblinów z Morii
 trp_fell_goblin_of_moria|Dziki Goblin z Morii
 trp_fell_goblin_of_moria_pl|Dzikich Goblinów z Morii
-; trp_archer_snaga_of_moria|Goblin Archer of Moria
-; trp_archer_snaga_of_moria_pl|Goblin Archers of Moria
+trp_archer_snaga_of_moria|Goblin Łucznik z Morii
+trp_archer_snaga_of_moria_pl|Goblin Łucznik z Morii
 trp_large_goblin_archer_of_moria|Wielki Łucznik Goblin z Morii
 trp_large_goblin_archer_of_moria_pl|Wielkich Łuczników Goblinów z Morii
-; trp_deep_dweller_of_moria2|Deep-Dweller of Moria
-; trp_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
+trp_deep_dweller_of_moria2|Dwellers z Moria
+trp_deep_dweller_of_moria2_pl|Dwellers z Moria
 trp_goblin_gundabad|Gundabadzki Goblin
 trp_goblin_gundabad_pl|Gundabadzkich Goblinów
 trp_orc_gundabad|Gundabadzki Ork
 trp_orc_gundabad_pl|Gundabadzkich Orków
 trp_orc_fighter_gundabad|Gundabadzki Ork Wojownik
 trp_orc_fighter_gundabad_pl|Gundabadzkich Orków Wojowników
-; trp_fell_orc_warrior_gundabad|Gundabad Orc Warrior
-; trp_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
-; trp_orc_beserker_gundabad|Gundabad Orc Berserker
-; trp_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
-; trp_warg_skirmisher_gundabad|Gundabad Skirmisher
-; trp_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
-; trp_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
-; trp_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
+trp_fell_orc_warrior_gundabad|Gundabad Ork Wojownik
+trp_fell_orc_warrior_gundabad_pl|Gundabad Ork Wojownik
+trp_orc_beserker_gundabad|Gundabad Ork Berserker
+trp_orc_beserker_gundabad_pl|Gundabad Ork Berserker
+trp_warg_skirmisher_gundabad|Gundabad Skirmisher
+trp_warg_skirmisher_gundabad_pl|Gundabad Skirmisher
+trp_goblin_north_clan_skirmisher|Goblin Północny Klan Skirmisher
+trp_goblin_north_clan_skirmisher_pl|Goblin Północny Klan Skirmisher
 trp_goblin_rider_gundabad|Gundabadzki Goblini Jeździec
 trp_goblin_rider_gundabad_pl|Gundabadzkich Goblinich Jeźdźców
 trp_warg_rider_gundabad|Gundabadzki Jeździec Wargów
@@ -750,8 +750,8 @@ trp_tribal_orc|Plemienny Ork
 trp_tribal_orc_pl|Plemiennych Orków
 trp_tribal_orc_warrior|Plemienny Ork Wojownik
 trp_tribal_orc_warrior_pl|Plemiennych Orków Wojowników
-; trp_tribal_orc_chief2|Orc Chieftain of Moria
-; trp_tribal_orc_chief2_pl|Orc Chieftains of Moria
+trp_tribal_orc_chief2|Wódz Orków z Moria
+trp_tribal_orc_chief2_pl|Wódz Orków z Moria
 trp_black_numenorean_renegade|Renegat - Czarny Numenorejczyk
 trp_black_numenorean_renegade_pl|Renegatów - Czarnych Numenorejczyków
 trp_black_numenorean_warrior|Wojownik - Czarny Numenorejczyk
@@ -810,8 +810,8 @@ trp_black_numenorean_captain|Kapitan Czarnych Numenorejczyków
 trp_black_numenorean_captain_pl|Kapitanów Czarnych Numenorejczyków
 trp_black_numenorean_lieutenant|Porucznik Czarnych Numenorejczyków
 trp_black_numenorean_lieutenant_pl|Poruczników Czarnych Numenorejczyków
-; trp_dunnish_night_wolf|Dunnish Night Wolf
-; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
+trp_dunnish_night_wolf|Dunnish Nocny Wilk
+trp_dunnish_night_wolf_pl|Dunnish Nocny Wilk
 trp_dunnish_lieutenant|Dunlandzki Hetman
 trp_dunnish_lieutenant_pl|Dunlandzkich Hetmen
 trp_goblin_chieftain|Gobliński Herszt
@@ -987,8 +987,8 @@ trp_pippin_notmet|Niziołek
 trp_merry_notmet|Niziołek
 trp_pippin|Pippin
 trp_merry|Merry
-; trp_knight_1_1|Angbor the Fearless
-; trp_knight_1_2|Húrin of the Keys
+trp_knight_1_1|Angbor the Fearless
+trp_knight_1_2|Húrin of the Keys
 trp_knight_1_3|Książę Imrahil
 trp_knight_1_4|Orthalion
 trp_knight_1_5|Duinhir
@@ -1048,7 +1048,7 @@ trp_knight_5_6|Fulgni Długobrody
 trp_knight_5_7|Thorin Kamienny Hełm
 trp_knight_5_11|Fudreim
 trp_knight_5_12|Wulf
-; trp_knight_6_1|Dervorin
+trp_knight_6_1|Dervorin
 trp_smith_mtirith|Kowal Berethor
 trp_smith_mtirith_pl|Kowal Namiestnika
 trp_smith_pelargir|Mistrz Kowalski Hallatan
@@ -1147,7 +1147,7 @@ trp_smith_gundabad|Blurg Handlarz Śniegiem
 trp_smith_gundabad_pl|smithy
 trp_smith_ironhill|Kowal Żelaznych Wzgórz
 trp_smith_ironhill_pl|Dwarven camp smiths
-; trp_town_50_weaponsmith|Shruklug Knife Grinder
+trp_town_50_weaponsmith|Shruklug Knife Grinder
 trp_town_50_weaponsmith_pl|smithy
 trp_smith_gondor_ac|Płatnerz Bor
 trp_smith_gondor_ac_pl|camp smithy
@@ -1347,7 +1347,7 @@ trp_merchant_gundabad|Zaopatrzeniowiec
 trp_merchant_gundabad_pl|camp stash
 trp_merchant_ironhill|Kwatermistrz
 trp_merchant_ironhill_pl|Dwarven supplies
-; trp_town_50_horse_merchant|Gobrip Yellowtooth
+trp_town_50_horse_merchant|Gobrip Yellowtooth
 trp_town_50_horse_merchant_pl|warg pit and supplies
 trp_merchant_calembel|Zaopatrzeniowiec
 trp_merchant_calembel_pl|stable and warehouse
@@ -1423,7 +1423,7 @@ trp_elder_umbar|Umbarski Kwatermistrz
 trp_elder_umbar_pl|the fortified camp
 trp_elder_moria|Przywódca z Morii
 trp_elder_moria_pl|the Mines
-; trp_elder_gunda|Master of the Caves
+trp_elder_gunda|Mistrz z Jaskini
 trp_elder_gunda_pl|the caves
 trp_elder_dale|Kwatermistrz Dale
 trp_elder_dale_pl|the city
@@ -1469,7 +1469,7 @@ trp_elder_guldur_ac|Przywódca Obozu Guldur
 trp_elder_guldur_ac_pl|the camp
 trp_elder_dwarf_ac|Krasnoludzki Zarządca
 trp_elder_dwarf_ac_pl|the camp
-; trp_village_1_elder|Lord of the Lash
+trp_village_1_elder|Władca z Lash
 trp_village_1_elder_pl|the caves
 trp_tutorial_chest_1|Skrzynia z Bronią Białą
 trp_tutorial_chest_2|Skrzynia z Bronią Dystansową
@@ -1533,7 +1533,7 @@ trp_wolf_rider_of_mirkwood|Wilczy Jeździec z Mrocznej Puszczy
 trp_wolf_rider_of_mirkwood_pl|Wilczych Jeźdźców z Mrocznej Puszczy
 trp_warg_rider_of_mirkwood|Jeździec Wargów z Mrocznej Puszczy
 trp_warg_rider_of_mirkwood_pl|Jeźdźców Wargów z Mrocznej Puszczy
-; trp_gate_aggravator|Gate Defence
+trp_gate_aggravator|Obrona Bram
 trp_orc_pretender|Ork Pretendent
 trp_human_prisoner|Więzień
 trp_spider|Pająk z Mrocznej Puszczy
@@ -1562,23 +1562,23 @@ trp_start_quest_mordor_scout|Przewodnik Mordoru
 trp_start_quest_mordor_scout_pl|Przewodnicy Mordoru
 trp_start_quest_beorning|Beorninski Berserker Carrock
 trp_start_quest_beorning_pl|Beorninskich Berserkerów Carrock
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
-; trp_morannon_healer|Okstuk the Healer
-; trp_minas_tirith_healer|Ioreth
-; trp_edoras_healer|Freya the Healer
-; trp_isengard_healer|Nurgal the Patcher
-; trp_guldur_healer|Mornagar the Gramaryer
-; trp_gundabad_healer|Lurgakh Third Eye
-; trp_mirkwood_healer|Corwiel the Soft-Handed
-; trp_hungry_uruk|Hungry Uruk
-; trp_hungry_orc|Hungry Orc
-; trp_longing_lorien|Longing Elf
-; trp_longing_woodelf|Longing Elf
-; trp_longing_imladris|Longing Elf
-; trp_deep_dweller_of_moria|Deep-Dweller of Moria
-; trp_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
-; trp_tribal_orc_chief|Orc Chieftain of Moria
-; trp_tribal_orc_chief_pl|Orc Chieftains of Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+trp_beorning_shield_bear|Niedźwiedzi Wojownik
+trp_beorning_shield_bear_pl|Niedźwiedzi Wojownik
+trp_morannon_healer|Okstuk Uzdrowiciel
+trp_minas_tirith_healer|Ioreth
+trp_edoras_healer|Freya Uzdrowicielka
+trp_isengard_healer|Nurgal the Patcher
+trp_guldur_healer|Mornagar Gramaryer
+trp_gundabad_healer|Lurgakh Trzy Oczny
+trp_mirkwood_healer|Corwiel Miękka-Ręka
+trp_hungry_uruk|Głodny Uruk
+trp_hungry_orc|Głodny Ork
+trp_longing_lorien|Elf
+trp_longing_woodelf|Elf
+trp_longing_imladris|Elf
+trp_deep_dweller_of_moria|Dwellers z Moria
+trp_deep_dweller_of_moria_pl|Dwellers z Moria
+trp_tribal_orc_chief|Wódz Orków z Moria
+trp_tribal_orc_chief_pl|Wódz Orków z Moria
+trp_rhovanion_noble|Szlachcic Rhovanionu
+trp_rhovanion_noble_pl|Szlachcic Rhovanionu

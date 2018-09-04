@@ -316,7 +316,7 @@ itm_lorien_helm_b|Heaume d'archer de la Lórien
 itm_lorien_helm_c|Heaume d'infanterie de la Lórien
 itm_orc_chain_greaves|Jambières orques
 
-; itm_orc_coif|Orc Skullcap\t\t\t\t\t\t 
+; itm_orc_coif|Orc Skullcap
 itm_orc_greaves|Bottes en mailles orques
 itm_orc_ragwrap|Bandeau orque
 itm_orc_furboots|Bottes orques de fourrure
@@ -701,14 +701,14 @@ itm_rhun_helm_n|Casque de chef de Rhûn
 itm_rhun_helm_o|Casque de chef de Rhûn
 itm_rhun_greataxe|Grande hache de Rhûn
 itm_rhun_battleaxe|Hache de bataille de Rhûn
-; itm_rhun_falchion|Savage Falchion\t\t\t\t\t\t\t\t 
+; itm_rhun_falchion|Savage Falchion
 itm_rhun_glaive|Glaive de Rhûn
 
-; itm_rhun_greatfalchion|Savage Great Falchion\t\t\t\t\t\t\t\t\t\t\t
+; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
 
-; itm_rhun_sword|Savage Sword\t\t\t\t\t\t   
+; itm_rhun_sword|Savage Sword
 itm_rhun_shield|Bouclier triangulaire de Rhûn
 ; itm_dale_light_a|Dale Militia Jacket
 
@@ -792,11 +792,11 @@ itm_kraken|Coutelas kraken
 itm_corsair_harpoon|Harpon corsaire
 itm_corsair_sword|Poignard corsaire
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers\t\t\t\t\t\t\t\t\t
+; itm_corsair_throwing_dagger|Crooked Throwing Daggers
 itm_umbar_pike|Pique de l'Umbar
 ; itm_woodman_tunic|Woodmen Tunic
 
-; itm_woodman_scout|Woodmen Scout Cape\t\t\t\t\t\t\t\t\t
+; itm_woodman_scout|Woodmen Scout Cape
 ; itm_woodman_padded|Woodmen Padded Armor
 itm_beorn_tunic|Tunique beornide
 itm_beorn_padded|Armure rembourrée beornide
@@ -960,12 +960,12 @@ itm_miruvor_reward|Flasque de Miruvor
 itm_wheeled_cage|Cage géante sur roues
 itm_orc_throwing_axes_reward|Haches de lancer de Gundabad
 itm_corsair_throwing_dagger_reward|Dagues de lancer empoisonnées
-itm_dwarf_shield_reward|Bouclier nain de mithril
+; itm_dwarf_shield_reward|Shield of Kheled-zaram
 itm_dwarf_great_axe_reward|Hache aiguisée naine
 itm_isen_uruk_heavy_reward|Armure de général uruk-hai
 itm_lorien_bow_reward|Arc ñoldorin
 itm_lorien_sword_reward|Épée galadhrim
-itm_dale_sword_reward|Épée de Gardien des Marches
+; itm_dale_sword_reward|Dale Royal Sword
 
 ; itm_dale_armor_reward|Dale Noblemen Mail
 itm_leather_gloves_reward|Gants de chasse

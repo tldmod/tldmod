@@ -457,7 +457,7 @@ str_npc11_backstory_later|ああ！あんただったのか！ においでわ�
 str_npc12_backstory_later|俺には任務がある。 俺の子分どもに見つかった侵入者は、 歯を抜かれ、 爪をはがされ、 髪を抜かれるといった具合だ。 だが、 俺にもまた、 監視の目が光っている。 外で普通じゃない事が起こっているのはわかる。 俺たちの親分どもがごっそり戦争に出かけたり、 まあ普通じゃないわいな。 遠く西のほうで、 何かが起こってるっていう話だ。 こんなところでぶらぶらしてるのは、 俺の性に合わん。
 str_npc13_backstory_later|闇の軍勢における俺の役まわりは、 うまくいっていると言える。 北の連中は、 再び南を怖れ始めている。 我が軍の勝利は疑いようがなく、 我々の通った後には、 血が川となって流れるだろう。 しかし、 勝利を重ねるたび、 我が同胞が闇の深みへと落ちていくのが見える。 それには絶望する以外にない。
 str_npc14_backstory_later|よう旅の人、 また来たのかい。 これは何かの兆しなのかもな。 ずっと波の様子を見ていたんだが、 海の色が暗くなっているんだ。 海は人間の目に、 多くを語るのさ。
-str_npc15_backstory_later|多くの連中が、 わしの調合する薬を求めてやって来た。 馬狂いどもや青白い顔のエルフまで来るようになったんで、 わしは再び住みかを後にしなければならなくなった。 それで・・・ 偉大なる指導者さま、 ええっと、 わしはあんまり戦いには強くないんだが、 この治療の腕は、 必ずお役に立つと・・・
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 str_npc17_backstory_later|こないだ、とても大きいアカマツの木を見つけたんだ。 アカマツの木は長寿なんだよ。 年を重ねた木には、敬意を払わなくちゃいけない。 木にこれっぽっちも敬意を払わない連中はいるけどね。 あんたはそうじゃないだろう？
 str_npc1_backstory_response_1|もし{君/あなた}が一緒に来れるなら、追跡術を持つ経験豊富な戦士は大歓迎{だ/よ}。
@@ -1979,9 +1979,9 @@ str_beorn_gift4|よく調教されたポニー
 ; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
 ; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
 ; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
-; str_woodelf_extra_info|^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
+; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
 ; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
-; str_harad_extra_info|^Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
+; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
 ; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
 ; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
 ; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor

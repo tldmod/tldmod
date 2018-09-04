@@ -1,8 +1,8 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
-mno_start_good|Yeni bir çağın ŞAFAĞI
-mno_start_evil|İnsanların ALACAKARANLIĞI
+mno_start_good|Yeni bir çağın Şafağı
+mno_start_evil|İnsanların Alacakaranlığı
 mno_go_bback|Geri Dön
-menu_start_phase_2|^^^Orta Dünya. Doğu'da bir gölge büyüyor, ^Ve karanlık şeyler uzun süredir saklandıkları yerlerden çıkıyor. ^Özgür halklar savaşa hazırlanıyor, Buna benzer bir çağ daha önce görülmemiştir. ^İnsanlar, Elfler, Cüceler ve orklar; Her biri kendi rollerini oynayacaklar. ^^Bununla birlikte hangi rolleri oynayacakları ileride görülecek...
+menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtiğin yolda ilerle...
 menu_start_game_3|^^^^^^^^Senaryonu seç:
 mno_custom_battle_scenario_1|Çatışma, Gondor, Harad'a karşı
@@ -101,10 +101,10 @@ menu_choose_gender|^^^^^^^^^^Cinsiyetin?
 mno_start_male|Erkek
 mno_start_female|Kadın
 mno_proc|Normal olarak devam et
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+menu_start_as_one|^^^^^^^^^^Sen ne tür bir askersin?
 mno_start_default|{s23} Ol (Default)
 mno_start_up1|{s21} Ol (Kolay)
-; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+mno_start_up2|{s22} ol\n(Kolay)\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_continue|Devam et...
 menu_character_report|^^^^^Grup Morali: {reg8}^Grup Boyut Limiti: {reg7}^{s5}
 menu_camp|^^^^Sen {s1}.{s2}desin^^Ne yapmak istiyorsun?
@@ -115,7 +115,7 @@ mno_camp_wait_here|Burada bir süreliğine kamp kur.
 mno_camp_options|TLD ayarını değiştir
 mno_Cheat_enable|Hile/modlama ayarlarını etkinleştir.
 menu_game_options|^^^^^^^^Değiştirmek için bir ayara tıklayın:
-; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+mno_game_options_war_level_start| {s1} levelde savaş başlar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_game_options_restrict_items|Kısıtlı oyuncu ekipmanı: {s7}
 mno_game_options_formations|Savaş düzenleri ve yapay zeka: {s7}
 mno_game_options_siege_ai|Gelişmiş Kuşatma AI: {s7}
@@ -128,7 +128,7 @@ mno_game_options_morale|Savaş morali sistemi: {s7}
 mno_game_options_animal_ambushes|Hayvan pususu :{s7}
 ; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
 ; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
+mno_game_options_camera_pref|Tercih Edilen Kamera Modu : {s7}
 mno_game_options_tweaks|Oyun Ayarı
 mno_game_options_back|Kamp menüsüne geri dön
 mno_game_options_start_back|Geri.
@@ -284,7 +284,7 @@ mno_isengard_underground|Yeraltı mağaralarına git.
 mno_tirith_toplevel|Zirveye tırman.
 mno_town_leave|Ayrıl...
 mno_town_leave_door|Bölgeden Ayrıl
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|{s2} sancağı altındaki bu merkeze saldırdın.
 menu_disembark|Karaya çıkmak mı istiyorsun?
 mno_disembark_yes|Evet.
 mno_disembark_no|Hayır.
@@ -359,7 +359,7 @@ mno_training_continue|Eğitime başla...
 menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Tekrar dene...
 mno_alternate_training_finish|Arenadan ayrıl...
-menu_custom_battle_choose_faction1|^^^^^^^^^^Tarafını ve alacağın Avantajı seç:
+menu_custom_battle_choose_faction1|^^^^^^^^^^Tarafını ve avantajını seç:
 mno_good_equal|İyi taraf
 mno_bad_equal|Kötü taraf
 mno_replay_prev|Önceki kurulumu oynat.

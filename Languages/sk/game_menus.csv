@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Za čo budeš bojovať?
 mno_start_good|ÚSVIT nového veku
 mno_start_evil|SÚMRAK ľudstva
 mno_go_bback|Späť
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravuje na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju rolu. ^^ Jakú rolu, to sa ešte ukáže...
 mno_go_forth|Vydaj sa na svoju zvolenú cestu...
 menu_start_game_3|^^^^^^^^Zvoľ si scénar
 mno_custom_battle_scenario_1|Bitka, Gondorské frakcie proti Haradu
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojí�
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^Zvol si svoju stranu a výhody:
 mno_good_equal|Frakcia dobra
 mno_bad_equal|Frakcia zla
 mno_replay_prev|Opakovať predošlé nastavenia

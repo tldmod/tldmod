@@ -457,7 +457,7 @@ str_npc11_backstory_later|Ар! Это ты, я так и знал! Я тебя 
 str_npc12_backstory_later|У меня есть приказ. Всякого, кто тут ходит без разрешения, надо "раздеть": ну, выдрать зубы, ногти, волосы и всё такое. Но у меня есть свои осведомители. Мы пронюхали, что забавные вещи творятся: вот большие начальники свалили на войну, и всё такое. Большие дела катятся всё дальше на запад, так говорят. А сидеть здесь и ни хрена не делать - этого моё брюхо и заслуживает.
 str_npc13_backstory_later|То, чем я тут занимаюсь, идёт на благо Тьме, да и пусть Юг лишний раз наведёт страх на северян. Я вижу впереди великие победы и позади нас - кровавые реки. Но я вижу, как с каждой победой мои родичи развращаются, их сердца подпадают под его злую волю. И вид этого приводит меня в отчаяние.
 str_npc14_backstory_later|Вы вернулись, странни{к/ца}. Возможно, это знак. Я читал знамения на воде и видел, как она потемнела. Море меняет человеческий взор и учит при помощи глаз внимать языку вод.
-str_npc15_backstory_later|Немало великих воинов молили меня, чтобы я излечил их своими зельями. Но кругом много лошадников и бледнолицых эльфов, и мне пришлось снова покидать своё укрытие, и... Ну, Великий Владыка, мне бы повезло, если бы мы сражались вместе и вы были бы мне благодарны за мои умения...
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 str_npc17_backstory_later|На днях я видел очень старую сосну. Сосны вообще могут жить очень долго. Вам следует уважать старые деревья. Хотя слыхал я, что некоторые не уважают деревья вовсе. Вы деревья уважаете, так ведь?
 str_npc1_backstory_response_1|Если ты можешь уйти отсюда, то мне бы пригодился опытный воин и следопыт.
@@ -1979,9 +1979,9 @@ str_cmenu_follow|Сопровождать
 ; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
 ; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
 ; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
-; str_woodelf_extra_info|^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
+; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
 ; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
-; str_harad_extra_info|^Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
+; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
 ; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
 ; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
 ; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor

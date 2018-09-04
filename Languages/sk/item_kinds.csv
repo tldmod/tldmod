@@ -316,7 +316,7 @@ itm_lorien_helm_b|Lorienská lukostrelecká prilba
 itm_lorien_helm_c|Lorienská pechotná prilba
 itm_orc_chain_greaves|Ohyzdie holenné pláty
 
-itm_orc_coif|Ohyzdia prilba z lebky
+; itm_orc_coif|Orc Skullcap
 itm_orc_greaves|Ohyzdie krúžkové topánky
 itm_orc_ragwrap|Ohyzdia šatka
 itm_orc_furboots|Ohyzdie kožušinové topánky
@@ -701,14 +701,14 @@ itm_rhun_helm_n|Rhunská náčelnícka helma
 itm_rhun_helm_o|Rhunská náčelnícka helma
 itm_rhun_greataxe|Rhunská veľká sekera
 itm_rhun_battleaxe|Rhunská vojnová sekera
-; itm_rhun_falchion|Savage Falchion\t\t\t\t\t\t\t\t 
+; itm_rhun_falchion|Savage Falchion
 itm_rhun_glaive|Rhunský sudlico-meč
 
-; itm_rhun_greatfalchion|Savage Great Falchion\t\t\t\t\t\t\t\t\t\t\t
+; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
 
-; itm_rhun_sword|Savage Sword\t\t\t\t\t\t   
+; itm_rhun_sword|Savage Sword
 itm_rhun_shield|Rhunský štít vo tvare slzy
 ; itm_dale_light_a|Dale Militia Jacket
 
@@ -792,11 +792,11 @@ itm_kraken|Krakenská šabľa
 itm_corsair_harpoon|Korzárska harpúna
 itm_corsair_sword|Korzársky krátky meč
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers\t\t\t\t\t\t\t\t\t
+; itm_corsair_throwing_dagger|Crooked Throwing Daggers
 itm_umbar_pike|Umbarská dlhá kopija
 ; itm_woodman_tunic|Woodmen Tunic
 
-; itm_woodman_scout|Woodmen Scout Cape\t\t\t\t\t\t\t\t\t
+; itm_woodman_scout|Woodmen Scout Cape
 ; itm_woodman_padded|Woodmen Padded Armor
 itm_beorn_tunic|Grizlovská tunika
 itm_beorn_padded|Grizlovské vystužené brnenie
@@ -960,12 +960,12 @@ itm_miruvor_reward|Miruvorská čutora
 itm_wheeled_cage|Obrovská klec s kolesami
 itm_orc_throwing_axes_reward|Gundabadské lietajúce sekery
 itm_corsair_throwing_dagger_reward|Otrávené vrhacie dýky
-itm_dwarf_shield_reward|Trpasličí štít z Mithrilu
+; itm_dwarf_shield_reward|Shield of Kheled-zaram
 itm_dwarf_great_axe_reward|Trpasličia ostrá sekera
 itm_isen_uruk_heavy_reward|Uruk-haiské generálske brnenie
 itm_lorien_bow_reward|Noldorský luk
 itm_lorien_sword_reward|Meč Galadhrim
-itm_dale_sword_reward|Meč Hraničnej stráže
+; itm_dale_sword_reward|Dale Royal Sword
 
 ; itm_dale_armor_reward|Dale Noblemen Mail
 itm_leather_gloves_reward|Lovecké rukavice

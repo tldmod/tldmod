@@ -5,8 +5,8 @@ imod_bent|Słabej Jakości %s
 imod_chipped|Kiepskiej Ostrości %s
 imod_battered|%s o Niskiej Odporności 
 imod_poor|Nędznej Jakości %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Zwykły %s
+imod_old|Starożytny %s
 imod_cheap|Tani %s
 imod_fine|Dobry %s
 imod_well_made|Dobrego Wykonania %s
@@ -23,7 +23,7 @@ imod_tattered|%s o Niechlujnym Wyglądzie
 imod_ragged|Prymitywnego Wykonania %s
 imod_rough|Prymitywnego Wykonania %s
 imod_sturdy|Dobrej Jakości %s
-; imod_thick|Robust %s
+imod_thick|Solidny %s
 imod_hardened|%s o Dużej Twardości
 imod_reinforced|%s o Wysokiej Wytrzymałości
 imod_superb|Znakomity %s

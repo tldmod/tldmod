@@ -457,7 +457,7 @@ str_npc11_backstory_later|Ar! Bu sensin! Kokundan yakınlarda bir yerde olduğun
 str_npc12_backstory_later|Emirlerim var. Adamlarım tarafından yakalanan günahkarların tüm dişleri,tırnakları ve saçları çekilecek. Kendi gözcülerim var ve bazı garip şeylerin döndüğünü biliyorum. Batıda büyük şeyler olduğunu söylüyorlar. Burada oturup göbek büyütmekten başka yapacaklarım var.
 str_npc13_backstory_later|Yaptıklarım karanlığın büyümesine neden oluyor. Bir kez daha Kuzeyliler güneyden korkuyorlar. Önümüzde büyük zaferler görüyorum ve kan dolu nehirler. Ancak kazandığımız her zaferin benim türümü bozduğunu görüyorum, onların kalpleri onun kötülüğüyle çarpılmış durumda. Bunu görmek beni umutsuzluğa sevk ediyor.
 str_npc14_backstory_later|Geri döndün yabancı, belki de bu bir işarettir. Suları okudum ve karardığını gördüm. Deniz, bir adamın gözlerini değiştirir ve ona dilini anlaması için gözlerini kullanmasını öğretir.
-str_npc15_backstory_later|İksirlerim tarafından iyileştirilmek için bana yalvarılmış olanlar çoktur. Atlılar ve solgun yüzlü Elfler. Kulübemi daha önce de terk etmek zorunda kalmıştım ve yine terk etmeye hazırım... Peki, Büyük Lord, şu sıralar birlikte savaştığımız ve yeteneklerime minnettar olduğunuz zamanlar kadar şanslı değilim...
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 str_npc17_backstory_later|Geçen gün çok yaşlı bir çam gördüm. Çamlar çok yaşlı olabilir. Yaşlı ağaçlara saygı gösterilmeli. Ama ağaçlara hiç saygı duymayan bazı insanlar gördüm. Ağaçlara saygı duyuyorsun, değil mi?
 str_npc1_backstory_response_1|Eğer terk edersen, deneyimli  bir savaşçıya ve izleyiciye daha çok ihtiyacım olacak
@@ -1979,9 +1979,9 @@ str_done|Tamam
 ; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
 ; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
 ; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
-; str_woodelf_extra_info|^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
+; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
 ; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
-; str_harad_extra_info|^Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
+; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
 ; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
 ; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
 ; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor

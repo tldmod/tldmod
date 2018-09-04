@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^何のために戦いますか？
 mno_start_good|新しい時代の夜明け
 mno_start_evil|人類の黄昏
 mno_go_bback|戻る
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^ここは中つ国。東に広がる闇は日々ふくれあがり、^遠く忘れ去られてきた暗いものたちが、その姿をあらわす。^自由の民は、長く経験したことのない未曾有の戦いに、その身を固くする。^人間、エルフ、ドワーフ、そしてオーク。^すべてのものがそれぞれの運命を演じていく。^^運命の先にあるものは何か、それはまだわからない・・・
 mno_go_forth|小道で敵を迎え撃て
 menu_start_game_3|^^^^^^^^シナリオを選んでください:
 mno_custom_battle_scenario_1|小規模戦闘、 ゴンドール勢 vs ハラド
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|すぐにはせ参じる、と伝える。
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^陣営とアドバンテージを選んでください
 mno_good_equal|光のファクション
 mno_bad_equal|闇のファクション
 mno_replay_prev|前回の設定でもう一度プレイする

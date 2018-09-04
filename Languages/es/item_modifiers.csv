@@ -5,8 +5,8 @@ imod_bent|%s con dobleces
 imod_chipped|%s astillado
 imod_battered|%s con golpes
 imod_poor|%s de mala calidad
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|%s corriente
+imod_old|%s de tiempos remotos
 imod_cheap|%s de poco valor
 imod_fine|%s de buen material
 imod_well_made|%s de buena calidad
@@ -23,7 +23,7 @@ imod_tattered|%s en mal estado
 imod_ragged|%s dispar
 imod_rough|%s dispar
 imod_sturdy|%s resistente
-; imod_thick|Robust %s
+imod_thick|%s de gran robustez
 imod_hardened|%s durable
 imod_reinforced|%s con refuerzos
 imod_superb|%s de calidad soberbia

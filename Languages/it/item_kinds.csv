@@ -316,7 +316,7 @@ itm_lorien_helm_b|Elmo da Arciere di Lorien
 itm_lorien_helm_c|Elmo da Fanteria di Lorien
 itm_orc_chain_greaves|Gambali Orcheschi
 
-; itm_orc_coif|Orc Skullcap\t\t\t\t\t\t 
+; itm_orc_coif|Orc Skullcap
 itm_orc_greaves|Stivali di Maglia di Ferro Orcheschi
 itm_orc_ragwrap|Stracci Orcheschi
 itm_orc_furboots|Stivali di Pelliccia Orcheschi
@@ -701,14 +701,14 @@ itm_rhun_helm_n|Elmo del Capoclan di Rhûn
 itm_rhun_helm_o|Elmo del Capoclan di Rhûn
 itm_rhun_greataxe|Ascia a Due Mani di Rhûn
 itm_rhun_battleaxe|Ascia da Battaglia di Rhûn
-; itm_rhun_falchion|Savage Falchion\t\t\t\t\t\t\t\t 
+; itm_rhun_falchion|Savage Falchion
 itm_rhun_glaive|Falcione di Rhûn
 
-; itm_rhun_greatfalchion|Savage Great Falchion\t\t\t\t\t\t\t\t\t\t\t
+; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
 
-; itm_rhun_sword|Savage Sword\t\t\t\t\t\t   
+; itm_rhun_sword|Savage Sword
 itm_rhun_shield|Scudo a Mandorla di Rhûn
 ; itm_dale_light_a|Dale Militia Jacket
 
@@ -792,11 +792,11 @@ itm_kraken|Sciabola Corsara del Kraken
 itm_corsair_harpoon|Arpione da Corsaro
 itm_corsair_sword|Eket da Corsaro
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers\t\t\t\t\t\t\t\t\t
+; itm_corsair_throwing_dagger|Crooked Throwing Daggers
 itm_umbar_pike|Picca di Humbar
 ; itm_woodman_tunic|Woodmen Tunic
 
-; itm_woodman_scout|Woodmen Scout Cape\t\t\t\t\t\t\t\t\t
+; itm_woodman_scout|Woodmen Scout Cape
 ; itm_woodman_padded|Woodmen Padded Armor
 itm_beorn_tunic|Tunica di Beorn
 itm_beorn_padded|Armatura Imbottita di Beorn
@@ -960,12 +960,12 @@ itm_miruvor_reward|Fiaschetta di Miruvor
 itm_wheeled_cage|Gabbia Enorme su Ruote
 itm_orc_throwing_axes_reward|Accette Volanti di Gundabad
 itm_corsair_throwing_dagger_reward|Daghe da Lancio Avvelenate
-itm_dwarf_shield_reward|Scudo in Mithril Nanico
+; itm_dwarf_shield_reward|Shield of Kheled-zaram
 itm_dwarf_great_axe_reward|Accetta Nanica Affilata
 itm_isen_uruk_heavy_reward|Armatura da generale Uruk-Hai
 itm_lorien_bow_reward|Arco Noldor
 itm_lorien_sword_reward|Spada dei Galadhrim 
-itm_dale_sword_reward|Spada da Guardiano del Confine di Dale
+; itm_dale_sword_reward|Dale Royal Sword
 
 ; itm_dale_armor_reward|Dale Noblemen Mail
 itm_leather_gloves_reward|Guanti da Caccia

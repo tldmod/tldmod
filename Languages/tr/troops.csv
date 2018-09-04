@@ -100,14 +100,14 @@ trp_dale_billman|Dale Baltacısı
 trp_dale_billman_pl|Dale Baltacıları
 trp_dale_bill_master|Dale Usta Baltacısı
 trp_dale_bill_master_pl|Dale Usta Baltacıları
-; trp_merchant_squire_or_dale|Northmen Retainer
-; trp_merchant_squire_or_dale_pl|Northmen Retainers
-; trp_merchant_guard_of_dale|Northmen Auxiliary
-; trp_merchant_guard_of_dale_pl|Northmen Auxilia
+trp_merchant_squire_or_dale|Kuzeyli Toplama
+trp_merchant_squire_or_dale_pl|Kuzeyli Toplamalar
+trp_merchant_guard_of_dale|Kuzeyli Yardımcı
+trp_merchant_guard_of_dale_pl|Kuzeyli Yardımcılar
 trp_merchant_protector_of_dale|Rhovanion Sürücüsü
 trp_merchant_protector_of_dale_pl|Rhovanion Sürücüleri
-; trp_girions_guard_of_dale|Rhovanion Marchwarden
-; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
+trp_girions_guard_of_dale|Rhovanion Muhafız Gözcüsü
+trp_girions_guard_of_dale_pl|Rhovanion Muhafız Gözcüleri
 trp_rhun_tribesman|Rhunlu Kabile Üyesi
 trp_rhun_tribesman_pl|Rhunlu Kabile Üyeleri
 trp_rhun_horse_scout|Rhun Gözcüsü
@@ -476,8 +476,8 @@ trp_harad_swordsman|Harad Kılıç Ustası
 trp_harad_swordsman_pl|Harad Kılıç Ustaları
 trp_harad_lion_guard|Aslan Muhafız
 trp_harad_lion_guard_pl|Aslan Muhafızları
-trp_harad_skirmisher|Harad Çatışmacısı
-trp_harad_skirmisher_pl|Harad Çatışmacıları
+trp_harad_skirmisher|Harad Avcısı
+trp_harad_skirmisher_pl|Harad Avcıları
 trp_harad_archer|Harad Okçusu
 trp_harad_archer_pl|Harad Okçuları
 trp_harad_eagle_guard|Kartal Muhafı
@@ -488,14 +488,14 @@ trp_harondor_rider|Harondor Atlısı
 trp_harondor_rider_pl|Harondor Atlıları
 trp_harondor_light_cavalry|Harondor Hafif Süvarisi
 trp_harondor_light_cavalry_pl|Harandor Hafif Süvarisi
-trp_fang_heavy_cavalry|Fang Ağır Süvarisi
-trp_fang_heavy_cavalry_pl|Fang Ağır Süvarisi
-trp_harad_horse_archer|Harad Atlı Okçusu
-trp_harad_horse_archer_pl|Harad Atlı Okçuları
-trp_black_snake_horse_archer|Kara Yılan Atlı Okçusu
-trp_black_snake_horse_archer_pl|Kara Yılan Atlı Okçuları
-trp_gold_serpent_horse_archer|Altın Yılan Atlı Okçusu
-trp_gold_serpent_horse_archer_pl|Altın Yılan Atlı Okçusu
+trp_fang_heavy_cavalry|Altın Engerek Şovalyesi
+trp_fang_heavy_cavalry_pl|Altın Engerek Şovalyeleri
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+trp_black_snake_horse_archer|Harondor Atlı Okçusu
+trp_black_snake_horse_archer_pl|Harondor Atlı Okçuları
+trp_gold_serpent_horse_archer|Kara Yılan Atlı Okçusu
+trp_gold_serpent_horse_archer_pl|Kara Yılan Atlı Okçuları
 trp_far_harad_tribesman|Uzak Haradli kabile insani
 trp_far_harad_tribesman_pl|Uzak Harad Kabilelileri
 trp_far_harad_champion|Uzak Harad Şampiyonu
@@ -566,14 +566,14 @@ trp_corsair_veteran_raider|Kıdemli Korsan Akıncısı
 trp_corsair_veteran_raider_pl|Kıdemli Korsan Akıncıları
 trp_corsair_night_raider|Korsan Gece Akıncısı
 trp_corsair_night_raider_pl|Korsan Gece Akıncısı
-; trp_militia_of_umbar|Umbar Marine
-; trp_militia_of_umbar_pl|Umbar Marines
-; trp_marksman_of_umbar|Marksman of Umbar
-; trp_marksman_of_umbar_pl|Marksmen of Umbar
-; trp_veteran_marksman_of_umbar|Veteran Marksman of Umbar
-; trp_veteran_marksman_of_umbar_pl|Veteran Marksmen of Umbar
-; trp_master_marksman_of_umbar|Corsair Master Marksman
-; trp_master_marksman_of_umbar_pl|Corsair Master Marksmen
+trp_militia_of_umbar|Umbar Denizcisi
+trp_militia_of_umbar_pl|Umbar Denizcileri
+trp_marksman_of_umbar|Umbar Nişancısı
+trp_marksman_of_umbar_pl|Umbar Nişancıları
+trp_veteran_marksman_of_umbar|Umbar Elit Nişancısı
+trp_veteran_marksman_of_umbar_pl|Umbar Elit Nişancıları
+trp_master_marksman_of_umbar|Korsan Ustası Nişancı
+trp_master_marksman_of_umbar_pl|Korsan Ustası Nişancıları
 trp_corsair_marauder|Umbar Kılıç Ustası
 trp_corsair_marauder_pl|Umbar Kılıç Ustaları
 trp_corsair_veteran_marauder|Kıdemli Umbar Kılıç Ustası
@@ -988,7 +988,7 @@ trp_merry_notmet|buçukluk
 trp_pippin|Pippin
 trp_merry|Merry
 trp_knight_1_1|Korkusuz Angbor
-; trp_knight_1_2|Húrin of the Keys
+trp_knight_1_2|Húrin of the Keys
 trp_knight_1_3|Prens Imrahil
 trp_knight_1_4|Orthalion
 trp_knight_1_5|Duinhir
@@ -1469,7 +1469,7 @@ trp_elder_guldur_ac|Guldur'lu Kamp Şefi
 trp_elder_guldur_ac_pl|kamp
 trp_elder_dwarf_ac|Cüce Kamp Efendsi
 trp_elder_dwarf_ac_pl|kamp
-; trp_village_1_elder|Lord of the Lash
+trp_village_1_elder|Kirpiğin Lordu
 trp_village_1_elder_pl|mağaralar
 trp_tutorial_chest_1|Yakın Silah Sandığı
 trp_tutorial_chest_2|Menzilli Silah Sandığı
@@ -1568,14 +1568,14 @@ trp_morannon_healer|Hekim Okstuk
 trp_minas_tirith_healer|Loreth
 trp_edoras_healer|Hekim Freya
 ; trp_isengard_healer|Nurgal the Patcher
-; trp_guldur_healer|Mornagar the Gramaryer
+trp_guldur_healer|Gramer Mornagar
 trp_gundabad_healer|Üçüncü göz Lurgakh
-; trp_mirkwood_healer|Corwiel the Soft-Handed
+trp_mirkwood_healer|Yumuşak-El Corwiel
 trp_hungry_uruk|Acıkmış Uruk
 trp_hungry_orc|Acıkmış Ork
-; trp_longing_lorien|Longing Elf
-; trp_longing_woodelf|Longing Elf
-; trp_longing_imladris|Longing Elf
+trp_longing_lorien|Özlemli Elf
+trp_longing_woodelf|Özlemli Elf
+trp_longing_imladris|Özlemli Elf
 trp_deep_dweller_of_moria|Moria'nın Derin kazıcısı
 trp_deep_dweller_of_moria_pl|Moria'nın Derin kazıcıları
 trp_tribal_orc_chief|Moria Ork Şefi

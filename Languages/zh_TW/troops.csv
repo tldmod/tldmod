@@ -476,8 +476,8 @@ trp_harad_swordsman|哈 拉 德 劍 士
 trp_harad_swordsman_pl|哈 拉 德 劍 士 
 trp_harad_lion_guard|獅 衛 士 
 trp_harad_lion_guard_pl|獅 衛 士 
-trp_harad_skirmisher|哈 拉 德 輕 裝 步 兵
-trp_harad_skirmisher_pl|哈 拉 德 輕 裝 步 兵
+; trp_harad_skirmisher|Harad Hunter
+; trp_harad_skirmisher_pl|Harad Hunters
 trp_harad_archer|哈 拉 德 弓 箭 手 
 trp_harad_archer_pl|哈 拉 德 弓 箭 手 
 trp_harad_eagle_guard|鷹 衛 士 
@@ -488,14 +488,14 @@ trp_harondor_rider|哈 隆 鐸 騎 兵
 trp_harondor_rider_pl|哈 隆 鐸 騎 兵 
 trp_harondor_light_cavalry|哈 隆 鐸 輕 騎 兵 
 trp_harondor_light_cavalry_pl|哈 隆 鐸 輕 騎 兵 
-trp_fang_heavy_cavalry|銳 牙 重 騎 兵 
-trp_fang_heavy_cavalry_pl|銳 牙 重 騎 兵 
-trp_harad_horse_archer|哈 拉 德 騎 射 手 
-trp_harad_horse_archer_pl|哈 拉 德 騎 射 手 
-trp_black_snake_horse_archer|黑 蛇 騎 射 手 
-trp_black_snake_horse_archer_pl|黑 蛇 騎 射 手 
-trp_gold_serpent_horse_archer|金 蛇 騎 射 手 
-trp_gold_serpent_horse_archer_pl|金 蛇 騎 射 手 
+; trp_fang_heavy_cavalry|Gold Serpent Knight
+; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+; trp_black_snake_horse_archer|Harondor Horse Archer
+; trp_black_snake_horse_archer_pl|Harondor Horse Archers
+trp_gold_serpent_horse_archer|黑 蛇 騎 射 手 
+trp_gold_serpent_horse_archer_pl|黑 蛇 騎 射 手 
 trp_far_harad_tribesman|遙 遠 哈 拉 德 部 落 民 
 trp_far_harad_tribesman_pl|遙 遠 哈 拉 德 部 落 民 
 trp_far_harad_champion|遙 遠 哈 拉 德 鬥 士 

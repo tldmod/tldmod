@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Во имя чего вы сражаетесь?
 mno_start_good|во имя ВОСХОДА новой эпохи
 mno_start_evil|во имя ЗАКАТА человечества
 mno_go_bback|Назад
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^ Средиземье. Тень сгущается на Востоке, ^ и из своих укрытий выползают долго таившиеся тёмные сушества. ^ Свободные народы готовятся к войне, какой не видели целую Эпоху. ^ Люди, эльфы, гномы, орки - всем суждено сыграть свою роль. ^^ Но какую именно - ещё предстоит узнать... 
 mno_go_forth| Вступить на выбранную вами стезю...
 menu_start_game_3|^^^^^^^^Выберите сценарий боя:
 mno_custom_battle_scenario_1| Стычка: гондорские фракции против Харада.
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|Передать, что вы скоро будет
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^Выберите вашу сторону и степень превосходства:
 mno_good_equal|Фракция Добра
 mno_bad_equal|Фракция Зла
 mno_replay_prev|Воспроизвести предыдущую установку.

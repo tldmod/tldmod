@@ -476,8 +476,8 @@ trp_harad_swordsman|하라드 검사
 trp_harad_swordsman_pl|하라드 검사
 trp_harad_lion_guard|하라드 사자 근위 검사
 trp_harad_lion_guard_pl|하라드 사자 근위 검사
-trp_harad_skirmisher|하라드 척후병
-trp_harad_skirmisher_pl|하라드 척후병
+; trp_harad_skirmisher|Harad Hunter
+; trp_harad_skirmisher_pl|Harad Hunters
 trp_harad_archer|하라드 궁수
 trp_harad_archer_pl|하라드 궁수
 trp_harad_eagle_guard|하라드 독수리 근위 궁수
@@ -488,14 +488,14 @@ trp_harondor_rider|하론도르 기마대
 trp_harondor_rider_pl|하론도르 기마대
 trp_harondor_light_cavalry|하론도르 경기병
 trp_harondor_light_cavalry_pl|하론도르 경기병
-trp_fang_heavy_cavalry|늑대 중기병
-trp_fang_heavy_cavalry_pl|늑대 중기병
-trp_harad_horse_archer|하라드 궁기병
-trp_harad_horse_archer_pl|하라드 궁기병
-trp_black_snake_horse_archer|하라드 흑뱀 궁기병
-trp_black_snake_horse_archer_pl|하라드 흑뱀 궁기병
-trp_gold_serpent_horse_archer|황금뱀 궁기병
-trp_gold_serpent_horse_archer_pl|황금뱀 궁기병
+; trp_fang_heavy_cavalry|Gold Serpent Knight
+; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+; trp_black_snake_horse_archer|Harondor Horse Archer
+; trp_black_snake_horse_archer_pl|Harondor Horse Archers
+trp_gold_serpent_horse_archer|하라드 흑뱀 궁기병
+trp_gold_serpent_horse_archer_pl|하라드 흑뱀 궁기병
 trp_far_harad_tribesman|남끝 하라드 부족민
 trp_far_harad_tribesman_pl|남끝 하라드 부족민
 trp_far_harad_champion|남끝 하라드 챔피언

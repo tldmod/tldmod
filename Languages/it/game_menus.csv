@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Per cosa combatti ?
 mno_start_good|L'alba di una nuova Era
 mno_start_evil|Il tramonto degli Uomini
 mno_go_bback|Torna Indietro
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|Terra di Mezzo. Un'ombra cresce a oriente, ^ oscure entità da lungo tempo nascoste, emergono  nuovamente. ^ I popoli liberi si preparano alla guerra, di una portata tale come non se n'era vista da un'era. ^ Uomini, Elfi, Nani e Orchi; tutti ne saranno parte. ^^ Cosa avverrà, comunque, è tutto da vedere... 
 mno_go_forth|Prosegui per il sentiero che hai scelto...
 menu_start_game_3|^^^^^^^^Scegli il tuo scenario:
 mno_custom_battle_scenario_1|Schermaglia, Fazioni di Gondor vs Harad
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|Fagli sapere che presto ti unirai a lui.
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^Scegli il tuo lato e il vantaggio:
 mno_good_equal|Fazione buona
 mno_bad_equal|Fazione malvagia
 mno_replay_prev|Utilizza le impostazioni precedenti

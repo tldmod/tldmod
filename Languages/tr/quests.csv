@@ -67,7 +67,7 @@ qst_deliver_food|{s3}'e {reg5} tane yiyecek götür.
 qst_deliver_food_text|{s3}'ün {s9}'ü ona 10 gün içinde {reg5} tane yiyecek götürmeni istedi.
 qst_deliver_iron|{s3}'e {reg5} tane {s6} götür.
 qst_deliver_iron_text|{s3}'ün {s9}'ü ona {reg5} tane {s6} götürmeni istedi.
-; qst_tld_introduction|Go to your faction leader.
+qst_tld_introduction|Lidere git
 qst_tld_introduction_text|Hiçbiri
 qst_treebeard_kill_orcs|Ağaçları katleden Ork grubunu bozguna uğrat.
 qst_treebeard_kill_orcs_text|Ağaçsakal, Fangorn'da ağaçları kesen Orkları bulmanı ve onları yok etmeni istiyor.
@@ -77,12 +77,12 @@ qst_deliver_gift|{s1}'in {s4}'ünü {s2}'den {s3}'e teslim et
 qst_deliver_gift_text|{s1}'in {s4}'ünü {s2}'den {s3}'e teslim etmen istendi.
 qst_ring_hunters|Yüzük Avcıları
 qst_ring_hunters2|Yüzük Avcıları - Tamamlandı
-; qst_deliver_message_hobbit|Concerning Hobbits
-; qst_blank_quest_01|Defend Refugees
-; qst_blank_quest_02|Hunt Down Refugees
-; qst_blank_quest_03|Sea Battle
-; qst_blank_quest_04|Kill {s35} {s36}
-; qst_blank_quest_05|Kill {s35} {s36} troops.
+qst_deliver_message_hobbit|Hobbitler hakkında
+qst_blank_quest_01|Sığınmacıları koru
+qst_blank_quest_02|Sığınmacıları avla
+qst_blank_quest_03|Deniz savaşı
+qst_blank_quest_04|{s35} {s36} öldür
+qst_blank_quest_05|{s35} {s36} birimlerini öldür
 
 
 
@@ -93,12 +93,12 @@ qst_ring_hunters2|Yüzük Avcıları - Tamamlandı
 
 
 
-; qst_blank_quest_16|Reinforce Center
-; qst_blank_quest_17|Slay {reg22} {s6} in battles
+qst_blank_quest_16|Takviye Merkezi
+qst_blank_quest_17|Savaşta {reg22} {s6} katlet
 
 
 
 
-; qst_guardian_party_quest|Isengard's Last Stand
-; qst_quests_end|Quests End
-; qst_quests_end_text|.
+qst_guardian_party_quest|Isengard'ın son savunması
+qst_quests_end|Görevler bitti
+qst_quests_end_text|.

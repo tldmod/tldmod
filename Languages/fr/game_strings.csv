@@ -457,7 +457,7 @@ str_npc11_backstory_later|Ar ! C'était vous ! Je vous ai senti, je savais que v
 str_npc12_backstory_later|J'ai mes ordres. Tout intrus trouvé par mes gars doit être dépouillé : dents, ongles, cheveux et tout le reste. Mais j'ai mes informateurs. Nous savons qu'il se passe de drôles de choses, avec les grands patrons à la guerre, et tout ça. De grandes choses se passent à l'Ouest, qu'ils disent. Rester assis ici à ne rien faire est plus que peut supporter mon ventre.
 str_npc13_backstory_later|Mon rôle ici sert bien la cause noire, et une fois de plus les Hommes du Nord craignent le Sud. Je vois de grandes victoires devant nous, et des rivières de sang dans notre sillage. Mais à chaque victoire, je vois les miens corrompus. Leurs cœurs tordus par sa malveillance. La vue de ceci me désespère.
 str_npc14_backstory_later|Vous êtes revenu, étranger, c'est peut-être un présage. J'ai lu les eaux, et je les ai vu s'assombrir. La mer change les yeux d'un homme, et lui apprend à les utiliser pour comprendre son langage.
-str_npc15_backstory_later|Nombreux sont les grands qui ont souhaité être guéris par mes potions. Les amoureux des chevaux et les Elfes à la peau pâle sont nombreux, cependant, et j'ai dû abandonner ma hutte une fois encore et... très bien, Grand Seigneur, je ne suis pas aussi chanceux que lorsque nous combattions ensemble, et vous étiez reconnaissant de mes compétences...
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 str_npc17_backstory_later|J'ai aperçu un très vieux pin, l'autre jour. Les pins peuvent vivre très longtemps. Vous devez respecter les vieux arbres. Mais j'ai aussi vu des gens qui ne respectent aucun arbre. Vous respectez les arbres, n'est-ce pas ?
 str_npc1_backstory_response_1|Si vous pouvez partir, j'ai besoin d'un guerrier et d'un pisteur expérimenté.
@@ -1979,9 +1979,9 @@ str_cmenu_follow|Accompagner
 ; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
 ; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
 ; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
-; str_woodelf_extra_info|^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
+; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
 ; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
-; str_harad_extra_info|^Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
+; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
 ; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
 ; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
 ; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor

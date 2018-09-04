@@ -476,8 +476,8 @@ trp_harad_swordsman|Харадский мечник
 trp_harad_swordsman_pl|Харадские мечники
 trp_harad_lion_guard|Воин львиной гвардии
 trp_harad_lion_guard_pl|Воины львиной гвардии
-trp_harad_skirmisher|Харадский застрельщик
-trp_harad_skirmisher_pl|Харадские застрельщики
+; trp_harad_skirmisher|Harad Hunter
+; trp_harad_skirmisher_pl|Harad Hunters
 trp_harad_archer|Харадский лучник
 trp_harad_archer_pl|Харадские лучники
 trp_harad_eagle_guard|Воин орлиной гвардии
@@ -488,14 +488,14 @@ trp_harondor_rider|Харондорский всадник
 trp_harondor_rider_pl|Харондорские всадники
 trp_harondor_light_cavalry|Харондорский лёгкий конник
 trp_harondor_light_cavalry_pl|Харондорские лёгкие конники
-trp_fang_heavy_cavalry|Тяжёлый змеиный конник
-trp_fang_heavy_cavalry_pl|Тяжёлые змеиные конники
-trp_harad_horse_archer|Харадский конный лучник
-trp_harad_horse_archer_pl|Харадские конные лучники
-trp_black_snake_horse_archer|Конный лучник Чёрной змеи
-trp_black_snake_horse_archer_pl|Конные лучники Чёрной змеи
-trp_gold_serpent_horse_archer|Конный лучник Золотой змеи
-trp_gold_serpent_horse_archer_pl|Конные лучники Золотой змеи
+; trp_fang_heavy_cavalry|Gold Serpent Knight
+; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+; trp_black_snake_horse_archer|Harondor Horse Archer
+; trp_black_snake_horse_archer_pl|Harondor Horse Archers
+trp_gold_serpent_horse_archer|Конный лучник Чёрной змеи
+trp_gold_serpent_horse_archer_pl|Конные лучники Чёрной змеи
 trp_far_harad_tribesman|Дальнехарадский воин племени
 trp_far_harad_tribesman_pl|Дальнехарадские воины племени
 trp_far_harad_champion|Дальнехарадский прославленный воин

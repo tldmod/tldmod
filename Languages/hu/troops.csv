@@ -476,8 +476,8 @@ trp_harad_swordsman|Haradi kardforgató
 trp_harad_swordsman_pl|Haradi kardforgatók
 trp_harad_lion_guard|Oroszlán őr
 trp_harad_lion_guard_pl|Oroszlán őrség
-trp_harad_skirmisher|Haradi csatározó
-trp_harad_skirmisher_pl|Haradi csatározók
+; trp_harad_skirmisher|Harad Hunter
+; trp_harad_skirmisher_pl|Harad Hunters
 trp_harad_archer|Haradi íjász
 trp_harad_archer_pl|Haradi íjászok
 trp_harad_eagle_guard|Sas őr
@@ -488,14 +488,14 @@ trp_harondor_rider|Harondori lovas
 trp_harondor_rider_pl|Harondori lovasok
 trp_harondor_light_cavalry|Harandori könnyű lovas
 trp_harondor_light_cavalry_pl|Harandori könnyű lovasság
-trp_fang_heavy_cavalry|Agyar nehéz lovas
-trp_fang_heavy_cavalry_pl|Agyar nehéz lovasság
-trp_harad_horse_archer|Haradi lovasíjász
-trp_harad_horse_archer_pl|Haradi lovasíjászok
-trp_black_snake_horse_archer|Fekete Sikló lovasíjász
-trp_black_snake_horse_archer_pl|Fekete Sikló lovasíjászok
-trp_gold_serpent_horse_archer|Arany Kígyó lovasíjász
-trp_gold_serpent_horse_archer_pl|Arany Kígyó lovasijászok
+; trp_fang_heavy_cavalry|Gold Serpent Knight
+; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+; trp_black_snake_horse_archer|Harondor Horse Archer
+; trp_black_snake_horse_archer_pl|Harondor Horse Archers
+trp_gold_serpent_horse_archer|Fekete Sikló lovasíjász
+trp_gold_serpent_horse_archer_pl|Fekete Sikló lovasíjászok
 trp_far_harad_tribesman|Messze-haradi törzstag
 trp_far_harad_tribesman_pl|Messze-haradi törzstagok
 trp_far_harad_champion|Messze-haradi bajnok

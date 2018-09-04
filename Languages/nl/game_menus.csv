@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Waar vecht u voor?
 mno_start_good|De OPKOMST van een nieuw Tijdperk
 mno_start_evil|De SCHEMERING van Mensheid
 mno_go_bback|Ga Terug
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|Midden Aarde. Een schaduw is groeiende in het Oosten, en donkere zaken komen naar voren die lang zijn verborgen. De vrije mensheid bereidt zich voor op oorlog, wat lange tijd niet is gezien. Mensen, Elven, Dwergen en Orks; allen spelen hun rol. Welke rol, blijft echter nog te bezien...
 mno_go_forth|Ga heen op jouw gekozen pad...
 menu_start_game_3|^^^^^^^^Kies je scenario:
 mno_custom_battle_scenario_1|Skirmish, Gondor facties vs Harad
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|Stuur woord dat u zich binnenkort aansluit.
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^Kies een kant en voordeel:
 mno_good_equal|Goede factie
 mno_bad_equal|Kwade factie
 mno_replay_prev|Herspeel vorige setup

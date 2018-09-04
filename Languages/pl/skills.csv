@@ -4,10 +4,10 @@ skl_leadership|Przywództwo
 skl_leadership_desc|Każdy punkt zwiększa maksymalną ilość jednostek w oddziale o 5, zwiększa morale i obniża ich koszt najmu oraz żołd o 5%%. (Umiejętność dowódcy)
 skl_prisoner_management|Zarządzanie więźniami
 skl_prisoner_management_desc|Każdy poziom tej umiejętności zwiększa maksymalną ilość jeńców o %d. (Umiejętność dowódcy)
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_persuasion|Wildcraft
+skl_persuasion_desc|Zdolność do przetrwania na pustyni i zginania jej zgodnie z twoją wolą. Ta umiejętność wpływa na zdolność strony do ukrywania się przed wrogiem, a także na jej prędkość w zalesionym terenie. (Wymagane umiejętności stron)
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Pierwsza pomoc
 skl_first_aid_desc|Bohaterowie, na każdy poziom tej umiejętności, odzyskują 5%% straconych podczas misji punktów zdrowia. (Umiejętność oddziału)
 skl_surgery|Chirurgia

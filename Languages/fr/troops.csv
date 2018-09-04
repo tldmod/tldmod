@@ -476,8 +476,8 @@ trp_harad_swordsman|Épéiste du Harad
 trp_harad_swordsman_pl|Épéistes du Harad
 trp_harad_lion_guard|Garde du Lion
 trp_harad_lion_guard_pl|Gardes du Lion
-trp_harad_skirmisher|Tirailleur du Harad
-trp_harad_skirmisher_pl|Tirailleurs du Harad
+; trp_harad_skirmisher|Harad Hunter
+; trp_harad_skirmisher_pl|Harad Hunters
 trp_harad_archer|Archer du Harad
 trp_harad_archer_pl|Archers du Harad
 trp_harad_eagle_guard|Garde de l'Aigle
@@ -488,14 +488,14 @@ trp_harondor_rider|Cavalier de l'Harondor
 trp_harondor_rider_pl|Cavaliers de l'Harondor
 trp_harondor_light_cavalry|Cavalerie légère de l'Harondor
 trp_harondor_light_cavalry_pl|Cavalerie légère de l'Harondor
-trp_fang_heavy_cavalry|Cavalier lourd du Croc
-trp_fang_heavy_cavalry_pl|Cavalerie lourde du Croc
-trp_harad_horse_archer|Archer monté du Harad
-trp_harad_horse_archer_pl|Archers montés du Harad
-trp_black_snake_horse_archer|Archer monté du Serpent noir
-trp_black_snake_horse_archer_pl|Archers montés du Serpent noir
-trp_gold_serpent_horse_archer|Archer monté du Serpent d'Or
-trp_gold_serpent_horse_archer_pl|Archers montés du Serpent d'Or
+; trp_fang_heavy_cavalry|Gold Serpent Knight
+; trp_fang_heavy_cavalry_pl|Gold Serpent Knights
+; trp_harad_horse_archer|Harondor Skirmisher
+; trp_harad_horse_archer_pl|Harondor Skirmishers
+; trp_black_snake_horse_archer|Harondor Horse Archer
+; trp_black_snake_horse_archer_pl|Harondor Horse Archers
+trp_gold_serpent_horse_archer|Archer monté du Serpent noir
+trp_gold_serpent_horse_archer_pl|Archers montés du Serpent noir
 trp_far_harad_tribesman|Guerrier tribal du Harad Lointain
 trp_far_harad_tribesman_pl|Guerriers tribaux du Harad Lointain
 trp_far_harad_champion|Champion du Harad Lointain

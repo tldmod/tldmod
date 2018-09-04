@@ -316,7 +316,7 @@ itm_lorien_helm_b|Лориэнский шлем лучника
 itm_lorien_helm_c|Лориэнский шлем пехотинца
 itm_orc_chain_greaves|Орочьи поножи
 
-; itm_orc_coif|Orc Skullcap\t\t\t\t\t\t 
+; itm_orc_coif|Orc Skullcap
 itm_orc_greaves|Орочьи кольчужные сапоги
 itm_orc_ragwrap|Орочьи рваные обмотки
 itm_orc_furboots|Орочьи меховые сапоги
@@ -701,14 +701,14 @@ itm_rhun_helm_n|Рунийский шлем вождя
 itm_rhun_helm_o|Рунийский шлем вождя
 itm_rhun_greataxe|Рунийский большой топор
 itm_rhun_battleaxe|Рунийский боевой топор
-; itm_rhun_falchion|Savage Falchion\t\t\t\t\t\t\t\t 
+; itm_rhun_falchion|Savage Falchion
 itm_rhun_glaive|Рунийская глефа
 
-; itm_rhun_greatfalchion|Savage Great Falchion\t\t\t\t\t\t\t\t\t\t\t
+; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
 
-; itm_rhun_sword|Savage Sword\t\t\t\t\t\t   
+; itm_rhun_sword|Savage Sword
 itm_rhun_shield|Рунийский каплевидный щит
 ; itm_dale_light_a|Dale Militia Jacket
 
@@ -792,11 +792,11 @@ itm_kraken|Абордажная сабля Кракена
 itm_corsair_harpoon|Корсарский гарпун
 itm_corsair_sword|Корсарский экет
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers\t\t\t\t\t\t\t\t\t
+; itm_corsair_throwing_dagger|Crooked Throwing Daggers
 itm_umbar_pike|Умбарская пика
 ; itm_woodman_tunic|Woodmen Tunic
 
-; itm_woodman_scout|Woodmen Scout Cape\t\t\t\t\t\t\t\t\t
+; itm_woodman_scout|Woodmen Scout Cape
 ; itm_woodman_padded|Woodmen Padded Armor
 itm_beorn_tunic|Беорнингская одежда
 itm_beorn_padded|Беорнингская подбитая броня
@@ -960,12 +960,12 @@ itm_miruvor_reward|Фляжка мирувора
 itm_wheeled_cage|Огромная клетка на колёсах
 itm_orc_throwing_axes_reward|Гундабадские метательные топоры 
 itm_corsair_throwing_dagger_reward|Отравленные метательные кинжалы
-itm_dwarf_shield_reward|Гномий митрилевый щит 
+; itm_dwarf_shield_reward|Shield of Kheled-zaram
 itm_dwarf_great_axe_reward|Гномья острая секира
 itm_isen_uruk_heavy_reward|Броня воеводы урук-хай
 itm_lorien_bow_reward|Нолдорский лук
 itm_lorien_sword_reward|Галадримский меч
-itm_dale_sword_reward|Меч стража границ
+; itm_dale_sword_reward|Dale Royal Sword
 
 ; itm_dale_armor_reward|Dale Noblemen Mail
 itm_leather_gloves_reward|Охотничьи перчатки

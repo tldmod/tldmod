@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^你 為 哪 一 方 而 戰 ？
 mno_start_good|新 紀 元 的 黎 明 
 mno_start_evil|人 類 的 黃 昏 
 mno_go_bback|後 退 
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^ 中 土 世 界。 黑 暗 的 陰 影 正 在 東 方 蔓 延 ·· ^潛 伏 了 近 一 個 紀 元 的 邪 惡 勢 力 重 現 世 間 。 ^中 土 的 自 由 之 人 類 是 否 可 以 再 一 次 戰 勝 黑 暗 。 ^人 類 、 精 靈 、 矮 人 和 獸 人 ， 各 種 勢 力 在 這 里 繼 續 角 逐 ^^現 在， 正 義 與 邪 惡 的 戰 爭 即 將 拉 開 帷 幕 ... 
 mno_go_forth|往你選擇的道路前進
 menu_start_game_3|^^^^^^^^選 擇 你 的 戰 役 ： 
 mno_custom_battle_scenario_1|小 規 模 戰 役 ， 剛 鐸 vs哈 拉 德 
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|回 報 說 你 馬 上 就 會 加 入 。
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^選 擇 你 的 傾 向 和 優 點 ： 
 mno_good_equal|良 善 陣 營 
 mno_bad_equal|邪 惡 陣 營 
 mno_replay_prev|重 回 前 個 設 定 
