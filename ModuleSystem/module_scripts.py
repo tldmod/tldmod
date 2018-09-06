@@ -14373,6 +14373,7 @@ scripts = [
     (try_begin), # if player chose woman, preserve woman. If chose orc/dwarf troop - force orc/dwarf
 	   (this_or_next|neq, ":playerace", tf_female),
 	   (this_or_next|is_between, ":race", tf_orc_begin,tf_orc_end),
+	   (this_or_next|is_between, ":race", tf_elf_begin,tf_elf_end),
 	   (eq, ":race", tf_dwarf),
 	   (troop_set_type,"trp_player",":race"),
 	(try_end),
@@ -27306,5 +27307,76 @@ if is_a_wb_script==1:
 
 ]),
 
+("clone_troop", [
+	(store_script_param_1, ":troop_to_clone"),
+	(store_script_param_2, ":troop_clone"),
+
+	#Clone face
+	(str_store_troop_face_keys, s22, ":troop_to_clone"),
+    (troop_set_face_keys, ":troop_clone", s22),
+    
+	# Clone Faction
+    (store_troop_faction, ":fac", ":troop_to_clone"),
+	(troop_set_faction, ":troop_clone", ":fac"),
+	
+	# Clone Race
+	(troop_get_type,":race",":troop_to_clone"),
+    (try_begin),
+	   (this_or_next|is_between, ":race", tf_orc_begin,tf_orc_end),
+	   (this_or_next|is_between, ":race", tf_elf_begin,tf_elf_end),
+	   (eq, ":race", tf_dwarf),
+	   (troop_set_type,":troop_clone",":race"),
+	(try_end),
+
+	# Clone gear
+	(troop_clear_inventory, ":troop_clone"),
+	(troop_get_inventory_capacity, ":slots", ":troop_clone"),
+	(try_for_range, ":i", 0, ":slots"),
+		(troop_set_inventory_slot, ":troop_clone", ":i", -1),
+		(troop_set_inventory_slot_modifier, ":troop_clone", ":i", 0),
+	(try_end),
+
+		(assign, ":clone_slot", 10),
+		(troop_set_auto_equip, ":troop_clone", 1),
+
+	(try_for_range, ":i", 0, ":slots"),
+		(troop_get_inventory_slot, ":item_id", ":troop_to_clone", ":i"),
+		(neq, ":item_id", -1),
+		(troop_get_inventory_slot_modifier, ":item_imod", ":troop_to_clone", ":i"),
+		(troop_set_inventory_slot, ":troop_clone",  ":clone_slot", ":item_id"),
+		(troop_set_inventory_slot_modifier, ":troop_clone", ":clone_slot", ":item_imod"),
+
+		(val_add, ":clone_slot", 1),
+	(try_end),
+
+	# Clone Stats
+
+	# Attrib
+    (try_for_range, ":i", 0, 4),
+	  (store_attribute_level, ":x",":troop_to_clone",":i"),
+	  (troop_raise_attribute,  ":troop_clone",":i",-1000), 	  
+	  (troop_raise_attribute,  ":troop_clone",":i",":x"), 
+	  #(assign, reg10, ":x"),(assign, reg11, ":i"),(display_message, "@Rising skill {reg11} to {reg10}"),
+	(try_end),
+	
+	# Skills
+	(assign, "$disable_skill_modifiers", 1),
+    (try_for_range, ":i", 0, 38 ),
+	  (store_skill_level, ":x", ":i", ":troop_to_clone"),
+	  (troop_raise_skill,  ":troop_clone",":i",-1000), 	  
+	  (troop_raise_skill,  ":troop_clone",":i",":x"), 
+	(try_end),
+	(assign, "$disable_skill_modifiers", 0),
+	
+	# copy stats: proficienceis
+    (try_for_range, ":i", 0, 6),
+	  (store_proficiency_level, ":x", ":i", ":troop_to_clone"),
+	  (troop_raise_proficiency,  ":troop_clone",":i",-1000), 	  
+	  #(val_div, ":x", 4), # weapon proficiencies are too high!
+	  #(val_min, ":x", 60),
+	  (troop_raise_proficiency,  ":troop_clone",":i",":x"), 
+	(try_end),
+
+]),
 
 ]

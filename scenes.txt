@@ -1,5 +1,5 @@
 scenesfile version 1
- 412
+ 413
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1648,3 +1648,7 @@ scn_advcamp_rhun_siege advcamp_rhun_siege 256 none none 0 0 200 200 -0.5 0x00000
   0 
   0 
  outer_terrain_rohan 
+scn_erebor_castle_2 erebor_castle_2 1 erebor_throne_room_b bo_erebor_throne_room_b -40 -40 40 40 -100 0 
+  0 
+  1  833 
+ 0 

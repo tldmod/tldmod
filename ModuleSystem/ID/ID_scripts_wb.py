@@ -712,5 +712,6 @@ script_cf_batching_ti_agent_spawn_human = 710
 script_cf_batching_ti_agent_spawn_mount = 711
 script_cf_get_nearest_bandit_party = 712
 script_cf_init_kill_quest_bandit = 713
+script_clone_troop = 714
 
 

@@ -2664,3 +2664,5 @@ slot_faction_last_stand = 307
 slot_faction_guardian_party_spawned = 308
 
 slot_item_light_armor = 86
+
+slot_troop_player_clone = 155

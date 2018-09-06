@@ -632,5 +632,8 @@ scenes = [
 ("advcamp_guldur_siege" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("advcamp_gundabad_siege" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 ("advcamp_rhun_siege" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
+
+("erebor_castle_2",sf_indoors ,"erebor_throne_room_b", "bo_erebor_throne_room_b", (-40,-40),(40,40),-100,"0",[],["player_chest"]), 
+ 
 ]
 

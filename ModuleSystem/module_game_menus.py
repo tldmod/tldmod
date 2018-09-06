@@ -250,8 +250,10 @@ game_menus = [
 		[(assign, "$g_custom_battle_scenario", 5),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_7" ,[],"Ambush, Orcs vs Mirkwood",
 		[(assign, "$g_custom_battle_scenario", 6),(jump_to_menu, "mnu_custom_battle_2"),]),
-	#("custom_battle_scenario_8",[],"           Attack, Gondor vs Corsairs",
-	#	[(assign, "$g_custom_battle_scenario", 7),(jump_to_menu, "mnu_custom_battle_2"),]),
+	] + (is_a_wb_menu==1 and [
+	("custom_battle_scenario_8",[],"The Last Stand of Durin's Folk",
+		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
+	] or []) + [
 #	("custom_battle_scenario_9",[],"Football fun        ",
 #		[(assign, "$g_custom_battle_scenario", 8),(jump_to_menu, "mnu_custom_battle_2"),]),
 
@@ -816,6 +818,29 @@ game_menus = [
 		(set_visitors, 28, "trp_greenwood_spearman",					3),
 		(str_store_string, s16, "str_custom_battle_6"),
      (else_try),
+     ########################################## Ori's Last Stand
+       	(eq, "$g_custom_battle_scenario", 8),
+       	(assign, "$g_custom_battle_scene", "scn_erebor_castle_2"),
+
+
+
+       	(modify_visitors_at_site, "$g_custom_battle_scene"),
+       	(assign, "$g_player_troop", "trp_multiplayer_profile_troop_male"),
+       	(set_visitor, 0, "$g_player_troop"),
+
+		(set_visitor, 1, "trp_generic_hero_infantry"),
+		(set_visitor, 2, "trp_generic_hero_ranged"),
+		(set_visitor, 3, "trp_generic_hero_knight"),
+		(set_visitor, 4, "trp_generic_hero_mounted_archer"),
+		
+## ENEMY
+		(set_visitors, 16, "trp_snaga_of_moria",						5),
+		(set_visitors, 17, "trp_snaga_of_moria",						5),
+		(set_visitors, 18, "trp_snaga_of_moria",						5),
+		
+		(str_store_string, s16, "@Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once Dwarf-city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming of up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. [2] After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside chamber. Barring the gates, Ori and the few survivors set up a final defense."),
+		(set_background_mesh, "mesh_town_erebor"),
+     (else_try),
 ########################################## GONDOR VS CORSAIRS  
        (eq, "$g_custom_battle_scenario", 7),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_outside"),
@@ -1146,7 +1171,9 @@ game_menus = [
     [("custom_battle_go",[],"Start.",
        [(try_begin),(eq, "$g_custom_battle_scenario", 5),(set_jump_mission,"mt_custom_battle_5"),
          (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),#(rest_for_hours,8,1000,0),
-#		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_custom_battle_football"),
+		 ] + (is_a_wb_menu==1 and [
+		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_ori_last_stand"),
+		 ] or []) + [
          (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
          (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),
          (else_try),(eq, "$g_custom_battle_scenario",26),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),

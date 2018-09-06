@@ -1,4 +1,4 @@
-1787
+1809
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -914,6 +914,20 @@ qstr_Gaaaar!! Gaaaar!!
 qstr_{s31}_scouts_have_app {s31}_scouts_have_appeared_to_aid_the_refugees!
 qstr_Hurry_men!_Help_the_ Hurry,_men!_Help_the_refugees!_Kill_all_the_scum_and_do_not_let_them_escape!
 qstr_Cannot_leave Cannot_leave
+qstr_Longbeard_Kinsman Longbeard_Kinsman
+qstr_Ori_Longbeard Ori_Longbeard
+qstr_We_shall_make_our_st We_shall_make_our_stand_here!_FOR_BALIN!
+qstr_Noooo!_You_orcs_will Noooo!_You_orcs_will_pay_for_this!
+qstr_Arghhh!!_Nooo!! Arghhh!!_Nooo!!
+qstr_I_will_take_down_as_ I_will_take_down_as_many_as_I_can_before_I_fall!
+qstr_Raaa!! Raaa!!
+qstr_Kill_the_dwarves! Kill_the_dwarves!
+qstr_Finish_them! Finish_them!
+qstr_We_will_feast_on_you We_will_feast_on_your_flesh!
+qstr_Dwarf_meat! Dwarf_meat!
+qstr_DEBUG:_Continuous_fl DEBUG:_Continuous_flow_of_Snagas!
+qstr_Eru_Iluvatar_has_dec Eru_Iluvatar_has_decided_the_fate_of_Balin's_Company,_and_it_cannot_be_changed.
+qstr_They_are_coming....! They_are_coming....!
 qstr_swy_ui_opacity swy_ui_opacity
 qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_so_beautiful_from_a_distance!
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
@@ -931,6 +945,7 @@ qstr_{s1}___{reg1} {s1}_-_{reg1}
 qstr_{s4}:_M{reg3}_2M{reg {s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
 qstr_Dressing_Room Dressing_Room
 qstr_Formations_Test Formations_Test
+qstr_Four_years_after_bri Four_years_after_bringing_a_group_of_Dwarves_from_Erebor_to_attempt_to_resettle_the_once_Dwarf-city_of_Khazad-dûm,_Balin_was_killed_by_an_Orc_arrow_while_peering_into_Lake_Mirrormere,_and_his_people_became_immediately_engaged_with_many_Orcs_coming_of_up_the_Silverlode_River._After_a_continuous_retreat_from_the_East-gate_and_First_Hall,_then_the_Bridge_of_Khazad-dûm_and_Second_Hall,_the_remaining_Longbeards_were_forced_all_the_way_back_into_the_Twenty-first_Hall._[2]_After_an_unsuccessful_attempt_to_escape_through_the_Doors_of_Durin_that_saw_the_death_of_Óin,_the_Chamber_of_Mazarbul_became_the_last_hold-out_of_the_Colony_after_losing_the_Twenty-first_Hall_just_outside_chamber._Barring_the_gates,_Ori_and_the_few_survivors_set_up_a_final_defense.
 qstr_TEST:_troll_VS_infan TEST:_troll_VS_infantry
 qstr_TEST:_troll_VS_arche TEST:_troll_VS_archers
 qstr_TEST:_troll_VS_chava TEST:_troll_VS_chavalry
@@ -1786,3 +1801,10 @@ qstr_{s31}{reg28?Those:That}_ {s31}{reg28?Those:That}_brave_{reg28?soldiers:sold
 qstr_{s31}{reg28?Those:That}_u {s31}{reg28?Those:That}_useful_{reg28?troops:troop}_will_help_us_wreak_more_havoc.{s32}^{s23}^^[earned_{reg14}_Resource_Points_of_{s14}]
 qstr_Good_luck_in_your_tr Good_luck_in_your_travels.
 qstr_Try_not_getting_your Try_not_getting_yourself_killed.
+qstr_We_cannot_hold..._we We_cannot_hold..._we_are_finished...
+qstr_How_long_can_we_keep How_long_can_we_keep_this_up?_I_cannot_hold_my_axe_anymore....
+qstr_You...._good....dwar You...._good....dwarf....
+qstr_There_are_too_many.. There_are_too_many..._there_are_too_many....
+qstr_It_is_off_to_work_we It_is_off_to_work_we_go....
+qstr_............... ...............
+qstr_For_Balin!! For_Balin!!

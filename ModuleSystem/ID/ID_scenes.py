@@ -410,3 +410,4 @@ scn_advcamp_moria_siege = 408
 scn_advcamp_guldur_siege = 409
 scn_advcamp_gundabad_siege = 410
 scn_advcamp_rhun_siege = 411
+scn_erebor_castle_2 = 412

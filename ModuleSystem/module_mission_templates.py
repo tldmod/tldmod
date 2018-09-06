@@ -8027,7 +8027,554 @@ tld_remove_riderless_animals,
       ]),
     ],
   ),
-  ### Kham Freelancer Training END  
+  ### Kham Freelancer Training END
+
+
+(
+    "ori_last_stand",mtf_battle_mode|mtf_synch_inventory,charge,
+    "You lead your men to battle.",
+    [
+      # Companions
+      (0,mtef_team_0|mtef_attackers|mtef_use_exact_number,0,aif_start_alarmed,1,[]),
+      (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (4,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (5,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (6,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (7,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (8,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (9,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (10,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (11,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (12,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (13,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (14,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+      (15,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+
+      # Enemies (Add more for more companions)
+      (16,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (17,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (18,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (19,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (20,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (21,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (22,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (23,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (24,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (25,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (26,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (27,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (28,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+      (29,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+
+   ],
+  # Triggers
+  tld_common_battle_scripts+
+  moto_formations_triggers +  [
+
+  # Make the teams enemies... and disable morale
+  (ti_before_mission_start, 0, ti_once, [], [
+    (team_set_relation, 1, 0, -1),
+    (assign, "$tld_option_morale", 0),
+    (assign, "$enemy_reinforcement_stage", 0),
+    (assign, "$ally_reinforcement_stage", 0), #Use this to trigger dialogues
+    (assign, "$g_custom_battle_team1_death_count", 0), #Used to track Kills
+    (assign, "$g_custom_battle_team2_death_count", 0), # Used to track last kill before round ends
+    (assign, "$temp", 0), #To pause waves
+    (assign, "$temp2", 0), #To keep track of big guys
+    (assign, "$mouse_coordinates", 0),
+
+    (troop_set_slot, "trp_player", "$g_player_troop", slot_troop_player_clone),
+    (troop_set_slot, "$g_player_troop", slot_troop_morality_state, 0),
+    (assign, "$g_player_troop", "trp_multiplayer_profile_troop_male"),
+    (call_script, "script_clone_troop", "trp_dwarven_apprentice", "$g_player_troop"),
+    (str_store_troop_face_keys, s2, "trp_knight_5_6"),
+    (troop_set_face_keys, "$g_player_troop", s2),
+    (troop_set_name, "$g_player_troop", "@Longbeard Kinsman"),
+
+    (troop_clear_inventory, "$g_player_troop"),
+
+    (try_for_range, ":inventory_slot", ek_item_0, ek_head), 
+      (troop_set_inventory_slot, "$g_player_troop", ":inventory_slot", -1),
+    (try_end),
+
+    (set_player_troop, "$g_player_troop"),
+
+    (troop_add_item, "$g_player_troop", "itm_wood_club"),
+    (troop_add_item, "$g_player_troop", "itm_dwarf_hood"),
+    (troop_add_item, "$g_player_troop", "itm_dwarf_vest"),
+    (troop_add_item, "$g_player_troop", "itm_dwarf_pad_boots"),
+    (troop_equip_items, "$g_player_troop"),
+
+
+    # Heroes
+    (troop_set_slot, "trp_generic_hero_infantry", slot_troop_hp_shield, 9999999999),
+    (troop_set_slot, "trp_generic_hero_ranged", slot_troop_hp_shield, 300),
+    (troop_set_slot, "trp_generic_hero_knight", slot_troop_hp_shield, 300),
+    (troop_set_slot, "trp_generic_hero_mounted_archer", slot_troop_hp_shield, 200),
+
+    (troop_set_name, "trp_generic_hero_infantry", "@Ori Longbeard"),
+    (troop_set_name, "trp_generic_hero_ranged", "@Longbeard Kinsman"),
+    (troop_set_name, "trp_generic_hero_knight", "@Longbeard Kinsman"),
+    (troop_set_name, "trp_generic_hero_mounted_archer", "@Longbeard Kinsman"),
+
+    (call_script, "script_clone_troop", "trp_dwarf_lord", "trp_generic_hero_infantry"),
+    (call_script, "script_clone_troop", "trp_knight_5_6", "trp_generic_hero_ranged"),
+    (call_script, "script_clone_troop", "trp_knight_5_7", "trp_generic_hero_knight"),
+    (call_script, "script_clone_troop", "trp_grors_guard", "trp_generic_hero_mounted_archer"),
+
+    (troop_equip_items, "trp_generic_hero_infantry"),
+    (troop_equip_items, "trp_generic_hero_ranged"),
+    (troop_equip_items, "trp_generic_hero_knight"),
+    (troop_equip_items, "trp_generic_hero_mounted_archer"),
+
+  ]),
+
+  (10, 0, ti_once, [], [(str_store_string, s30, "@We shall make our stand here! FOR BALIN!"),(call_script, "script_troop_talk_presentation", "trp_generic_hero_infantry", 7, 0)]),
+
+  (0, 0, ti_once, 
+  [
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 0, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+  ], 
+  []),
+
+(10, 0, 0, 
+  [ 
+    (assign, ":continue", 0),
+    (try_begin),
+      (eq, "$enemy_reinforcement_stage", 0),
+      (all_enemies_defeated, 1),
+      #(display_message, "@DEBUG: All Enemies Defeated in this Stage"),
+      (assign, ":continue", 1),
+      (play_sound, "snd_new_rank_good"),
+    (else_try),
+      (eq, "$temp", 1),
+      (all_enemies_defeated, 1),
+      #(display_message, "@DEBUG: Stage 2 kill count reached"),
+      (assign, ":continue", 1),
+      (play_sound, "snd_new_rank_good"),
+    (try_end),
+
+    (eq, ":continue", 1),
+    
+  ],
+  [
+    (try_begin),
+      (eq, "$enemy_reinforcement_stage", 0),
+      (assign, "$enemy_reinforcement_stage", 1),
+      (assign, "$g_talk_troop", "trp_generic_hero_infantry"),
+      (start_mission_conversation, "trp_generic_hero_infantry"),
+    (else_try),
+      (assign, "$g_talk_troop", "trp_generic_hero_infantry"),
+      (start_mission_conversation, "trp_generic_hero_infantry"),
+    (try_end),
+
+    (assign, "$g_custom_battle_team2_death_count", "$g_custom_battle_team1_death_count"),
+  ]),
+
+(ti_on_agent_killed_or_wounded, 0, 0, [],
+  [
+    (store_trigger_param_1, ":killed"),
+    (store_trigger_param_2, ":killer"),
+    (store_trigger_param_3, ":result"),
+
+    # trigger param 1 = defeated agent_id
+    # trigger param 2 = attacker agent_id
+    # trigger param 3 = wounded flag: 0 = agent is killed, 1 = agent is wounded
+
+    (agent_is_active, ":killed"),
+    (agent_is_active, ":killer"),
+    (agent_is_human, ":killed"),
+    (agent_is_human, ":killer"),
+    (gt, ":killer", 0),
+    (gt, ":killed", 0),
+
+    (get_player_agent_no, ":player"),
+    (agent_get_team, ":player_team", ":player"),
+    (agent_get_troop_id, ":troop_id", ":killed"),
+    (troop_get_type, ":race", ":troop_id"),
+    (agent_get_team, ":killer_team", ":killer"),
+    
+    (ge, ":result", 0),
+
+    (try_begin),
+      (is_between, ":troop_id", "trp_generic_hero_ranged", "trp_last"),
+      (store_random_in_range, ":death_cry", 0, 3),
+      (try_begin),
+        (eq, ":death_cry", 0),
+        (str_store_string, s30, "@Noooo! You orcs will pay for this!"),
+      (else_try),
+        (eq, ":death_cry", 1),
+        (str_store_string, s30, "@Arghhh!! Nooo!!"),
+      (else_try),
+        (str_store_string, s30, "@I will take down as many as I can before I fall!"),
+      (try_end),
+      (call_script, "script_troop_talk_presentation", "trp_generic_hero_infantry", 7,0),
+      (play_sound, "snd_lord_dies"),
+
+    (else_try),
+
+      (eq, ":killer_team", ":player_team"),
+        
+      (val_add, "$g_custom_battle_team1_death_count", 1),
+
+      (try_begin),
+        (gt, "$temp2",0), #Big guys are present
+        (eq, ":race", tf_troll),
+        (val_sub, "$temp2", 1),
+        (val_max, "$temp2", 0),
+      (try_end),
+
+      (try_begin),
+        (eq, "$enemy_reinforcement_stage", 2),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 25),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (assign, "$ally_reinforcement_stage", 1),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 3),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 35),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (assign, "$ally_reinforcement_stage", 2),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 4),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 40),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (assign, "$ally_reinforcement_stage", 3),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 5),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 40),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (assign, "$ally_reinforcement_stage", 4),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 6),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 5),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (le, "$temp2", 0), #No more big guys?
+        (assign, "$ally_reinforcement_stage", 5),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 7),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 40),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (assign, "$ally_reinforcement_stage", 6),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 8),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 50),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (assign, "$ally_reinforcement_stage", 7),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 9),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 5),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (le, "$temp2", 0), #No more big guys?
+        (assign, "$ally_reinforcement_stage", 8),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 10),
+        (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 60),
+        (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+        (assign, "$ally_reinforcement_stage", 9),
+        (assign, "$temp", 1), #Pause when kill count is reached
+      (try_end),
+    
+    (try_end),
+
+    #(assign, reg68, "$g_custom_battle_team1_death_count"),
+    #(assign, reg69, "$enemy_reinforcement_stage"),
+    #(assign, reg70, "$ally_reinforcement_stage"),
+    #(display_message, "@{reg68} Current Kills", color_good_news),
+    #(display_message, "@Current Stage: {reg69} - Kill Stage: {reg70}", color_bad_news),
+    
+  ]),
+
+## Enemy Swarm Triggers: 
+  (5, 4, 0, [
+      (neg|conversation_screen_is_active),
+      (assign, ":continue", 0),
+
+      (try_begin),
+        (eq, "$enemy_reinforcement_stage", 1),
+        (assign, "$enemy_reinforcement_stage", 2), #Stage 2
+        (assign, ":enemy_melee_troop", "trp_snaga_of_moria"),
+        (assign, ":enemy_ranged_troop", -1),
+        (assign, ":num_enemies", 11),
+        (assign, ":continue", 1),
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 2),
+        (eq, "$ally_reinforcement_stage", 1), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_snaga_of_moria"),
+        (assign, ":enemy_ranged_troop", -1),
+        (assign, ":num_enemies", 15),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 3), #Stage 3
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 3),
+        (eq, "$ally_reinforcement_stage", 2), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_snaga_of_moria"),
+        (assign, ":enemy_ranged_troop", "trp_archer_snaga_of_moria"),
+        (assign, ":num_enemies", 15),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 4), #Stage 4
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 4),
+        (eq, "$ally_reinforcement_stage", 3), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_goblin_of_moria"),
+        (assign, ":enemy_ranged_troop", "trp_archer_snaga_of_moria"),
+        (assign, ":num_enemies", 16),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 5), #Stage 5
+        (try_for_agents, ":agent_id"),
+          (agent_is_active, ":agent_id"),
+          (agent_is_alive, ":agent_id"),
+          (agent_is_human, ":agent_id"),
+          (gt, ":agent_id", 0),
+          (agent_get_troop_id, ":troop_id", ":agent_id"),
+          (eq, ":troop_id", "trp_generic_hero_ranged"),
+          (agent_set_slot, ":agent_id", slot_agent_hp_shield, 0), 
+          (agent_set_hit_points, ":agent_id", 50),
+        (try_end),
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 5),
+        (eq, "$ally_reinforcement_stage", 4), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_troll_of_moria"),
+        (assign, ":enemy_ranged_troop", -1),
+        (assign, "$temp2", 1),
+        (assign, ":num_enemies", 1),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 6), #Stage 6
+        (try_for_agents, ":agent_id"),
+          (agent_is_active, ":agent_id"),
+          (agent_is_human, ":agent_id"),
+          (agent_is_alive, ":agent_id"),
+          (gt, ":agent_id", 0),
+          (agent_get_troop_id, ":troop_id", ":agent_id"),
+          (eq, ":troop_id", "trp_generic_hero_mounted_archer"),
+          (agent_set_slot, ":agent_id", slot_agent_hp_shield, 0), 
+          (agent_set_hit_points, ":agent_id", 25),
+        (try_end),
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 6),
+        (eq, "$ally_reinforcement_stage", 5), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_large_goblin_of_moria"),
+        (assign, ":enemy_ranged_troop", "trp_large_goblin_archer_of_moria"),
+        (assign, ":num_enemies", 16),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 7), #Stage 7
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 7),
+        (eq, "$ally_reinforcement_stage", 6), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_deep_dweller_of_moria"),
+        (assign, ":enemy_ranged_troop", -1),
+        (assign, ":num_enemies", 20),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 8), #Stage 8
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 8),
+        (eq, "$ally_reinforcement_stage", 7), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_armoured_troll"),
+        (assign, ":enemy_ranged_troop", -1),
+        (assign, ":num_enemies", 2),
+        (assign, "$temp2", 2),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 9), #Stage 9
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 9),
+        (eq, "$ally_reinforcement_stage", 8), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_tribal_orc_chief"),
+        (assign, ":enemy_ranged_troop", "trp_deep_dweller_of_moria"),
+        (assign, ":num_enemies", 20),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 10), #Stage 10
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 10),
+        (eq, "$ally_reinforcement_stage", 9), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_tribal_orc_chief"),
+        (assign, ":enemy_ranged_troop", "trp_deep_dweller_of_moria"),
+        (assign, ":num_enemies", 30),
+        (assign, ":continue", 1),
+      (try_end),
+
+      (eq, ":continue", 1),
+
+      (store_random_in_range, ":rand_speech", 0, 6),
+      (try_begin),
+        (eq, ":rand_speech", 0),
+        (str_store_string, s30, "@Raaa!!"),
+      (else_try),
+        (eq, ":rand_speech", 1),
+        (str_store_string, s30, "@Kill the dwarves!"),
+      (else_try),
+        (eq, ":rand_speech", 2),
+        (str_store_string, s30, "@Kill them all!"),
+      (else_try),
+        (eq, ":rand_speech", 3),
+        (str_store_string, s30, "@Finish them!"),
+      (else_try),
+        (eq, ":rand_speech", 4),
+        (str_store_string, s30, "@We will feast on your flesh!"),
+      (else_try),
+        (str_store_string, s30, "@Dwarf meat!"),
+      (try_end),
+      (call_script, "script_troop_talk_presentation", ":enemy_melee_troop", 7, 0),
+    
+
+      (store_random_in_range, ":enemy_entry", 16, 19), #This just randomizes the entry points the enemy comes from.
+      (entry_point_get_position, pos5, ":enemy_entry"),
+      (set_spawn_position, pos5), 
+
+      #This spawns the troops, coin flip on whether troops are ranged / melee, as per the above troop assignments.
+      (try_begin),
+        (eq, ":enemy_ranged_troop", -1),
+        (assign, ":enemy_ranged_troop", ":enemy_melee_troop"),
+      (try_end),
+
+      (try_for_range, ":unused", 0, ":num_enemies"),
+        (store_random_in_range, ":rnd_troop", 0,100),
+        (le, ":rnd_troop", 50),
+        (spawn_agent, ":enemy_melee_troop"),
+        (agent_set_team, reg0, 1),
+      (else_try),
+        (spawn_agent, ":enemy_ranged_troop"),
+        (agent_set_team, reg0, 1),
+      (try_end),
+
+      #This asks them to charge, secretly.
+      (set_show_messages, 0),
+      (team_give_order, 1, grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+ 
+      ],
+    [
+      #(display_message, "@DEBUG: Enemy Reinforced!")
+    ]
+  ),
+
+# Continuous flow of snagas
+  (7, 0, 0, [
+    (neg|conversation_screen_is_active),
+    (ge, "$enemy_reinforcement_stage", 1),
+    (eq, "$temp", 0), #Un-Paused
+    
+    (assign, ":num_cont_enemies", 3),
+    (assign, ":cont_enemy_type", "trp_snaga_of_moria"),
+
+    (try_begin),
+      (is_between, "$enemy_reinforcement_stage", 6, 8), #after troll
+      (val_add, ":num_cont_enemies", 1),
+      (assign, ":cont_enemy_type", "trp_goblin_of_moria"),
+    (else_try),
+      (ge, "$enemy_reinforcement_stage", 8),
+      (val_add, ":num_cont_enemies", 2),
+      (assign, ":cont_enemy_type", "trp_goblin_of_moria"),
+    (else_try),
+      (gt, "$enemy_reinforcement_stage", 9),
+      (val_add, ":num_cont_enemies", 5),
+      (assign, ":cont_enemy_type", "trp_fell_goblin_of_moria"),
+    (try_end),
+
+
+    (store_random_in_range, ":enemy_entry", 16, 19), #This just randomizes the entry points the enemy comes from.
+    (entry_point_get_position, pos5, ":enemy_entry"),
+    (set_spawn_position, pos5), 
+
+    (try_for_range, ":unused", 0, ":num_cont_enemies"),
+        (spawn_agent, ":cont_enemy_type"),
+        (agent_set_team, reg0, 1),
+    (try_end),
+
+    #This asks them to charge, secretly.
+    (set_show_messages, 0),
+    (team_give_order, 1, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+
+    ],
+  [
+    (display_message, "@DEBUG: Continuous flow of Snagas!")
+  ]
+),
+
+ (ti_inventory_key_pressed, 0, 0, [(set_trigger_result,1)],[]),
+
+ #Anti Cheat
+ (0, 0, 0, [
+    (eq, cheat_switch, 0),
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
+    (this_or_next|key_is_down, key_f4),
+    #(this_or_next|key_is_down, key_left_alt),
+    #(this_or_next|key_is_down, key_right_alt),
+    (key_is_down, key_h)],
+    [ (get_player_agent_no, ":player"),
+      (agent_deliver_damage_to_agent, ":player", ":player", 45),
+      (display_message, "@Eru Iluvatar has decided the fate of Balin's Company, and it cannot be changed.", color_bad_news),]),
+
+# Ending the Mission
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (neg|main_hero_fallen),
+      (display_message,"str_can_not_retreat"),
+    (else_try),
+      (main_hero_fallen),
+      (call_script, "script_custom_battle_end"),
+      (jump_to_menu, "mnu_custom_battle_end"),
+      (assign, "$tld_option_morale", 1),
+      (troop_get_slot, ":player_clone", "trp_player", slot_troop_player_clone),
+      (set_player_troop, ":player_clone"),
+      (finish_mission),
+    (try_end),
+  ]),
+
+  (3,1,0,[(main_hero_fallen),(lt, "$mouse_coordinates", 3)],
+  [
+    (try_begin),
+      (eq, "$mouse_coordinates", 0),
+      #(mission_cam_set_screen_color,        0x00FFFFFF), 
+      #(mission_cam_animate_to_screen_color, 0xFFFFFFFF, 2000),
+      (mission_cam_animate_to_screen_color, 0xFF000000, 2500),
+      (val_add, "$mouse_coordinates", 1),
+    (else_try),
+      (eq, "$mouse_coordinates", 1),
+      (str_store_string, s30, "@They are coming....!"),
+      (call_script, "script_troop_talk_presentation", "trp_generic_hero_infantry", 7,0),
+      (play_sound, "snd_troll_grunt_long"),
+      (val_add, "$mouse_coordinates", 1),
+    (else_try),
+      (call_script, "script_custom_battle_end"),
+      (jump_to_menu, "mnu_custom_battle_end"),
+      (assign, "$tld_option_morale", 1),
+      (troop_get_slot, ":player_clone", "trp_player", slot_troop_player_clone),
+      (set_player_troop, ":player_clone"),
+      (finish_mission),
+      (val_add, "$mouse_coordinates", 1),
+    (try_end),
+
+  ]),
+   
+  common_music_situation_update,
+      
+    ],
+  ),  
 
 ] or []) + [ 
 
