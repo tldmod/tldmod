@@ -8509,7 +8509,7 @@ tld_remove_riderless_animals,
 
     ],
   [
-    (display_message, "@DEBUG: Continuous flow of Snagas!")
+    #(display_message, "@DEBUG: Continuous flow of Snagas!")
   ]
 ),
 

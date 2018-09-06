@@ -11475,6 +11475,16 @@ There are {s6} moving about the area, thinking that they are in charge. No one i
       (setup_quest_text,"qst_blank_quest_17"),
       (str_store_string, s2, "@{s9} wants you to slay {reg22} {s6} in battles."),
       (call_script, "script_start_quest", "qst_blank_quest_17", "$g_talk_troop"),
+      (quest_get_slot, ":target_template", "qst_blank_quest_17", slot_quest_target_party_template),
+      (store_random_in_range, ":rand", 2, 5),
+      (try_for_range, ":unused", 1, ":rand"),
+        (store_random_in_range, ":rand_dist", 50, 76),
+        (set_spawn_radius, ":rand_dist"),
+        (spawn_around_party, "$g_encountered_party", ":target_template"),
+        (assign, ":spawned", reg0),
+        (party_add_members, ":spawned", ":quest_target_troop", ":rand"),
+      (try_end),
+
 ]],
 
 [anyone|plyr,"mayor_mission_told_kill_quest_bandit", [

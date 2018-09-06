@@ -389,5 +389,7 @@ mesh_choose_icon_evil = 387
 mesh_choose_icon_eye = 388
 mesh_choose_icon_hand = 389
 mesh_choose_icon_elf = 390
+mesh_choose_icon_dwarf = 391
+mesh_choose_icon_orc = 392
 
 

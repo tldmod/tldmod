@@ -6319,6 +6319,7 @@ scripts = [
 				(assign, ":quest_rank_reward", reg61),						
 				(assign, ":quest_expiration_days", reg62),					
 				(assign, ":quest_dont_give_again_period", reg63),
+				(assign, ":quest_target_party_template", reg64),
 
 				(assign, ":result", ":quest_no"),
 			(try_end),
@@ -27237,7 +27238,7 @@ if is_a_wb_script==1:
 
 # script_cf_get_nearest_bandit_party
 # Input: none
-# Output: Nearest Bandit Troop to -player party
+# Output: Nearest Bandit Troop to -player party, saves party template too
 
 ("cf_get_nearest_bandit_party", [
 
@@ -27252,7 +27253,7 @@ if is_a_wb_script==1:
 		(call_script, "script_get_tld_distance", "p_main_party", ":nearest_bandit_party"),
 		(assign, ":dist", reg0),
 		#(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
-		(le, ":dist", 100),
+		(le, ":dist", 75), 
 		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0), 
 		(assign, ":found", 1),
 
@@ -27268,6 +27269,7 @@ if is_a_wb_script==1:
 
 	(gt, ":troop", 0),
 	(assign, reg0, ":troop"),
+	(assign, reg1, ":party_template"),
 
 ]),
 
@@ -27281,6 +27283,7 @@ if is_a_wb_script==1:
 	
 	(call_script, "script_cf_get_nearest_bandit_party"),
 	(assign, ":target_troop", reg0),
+	(assign, ":target_template", reg1),
 
 	(store_random_in_range, ":amount", 5, 11),
 	(val_add, ":amount", ":player_level"),
@@ -27304,6 +27307,7 @@ if is_a_wb_script==1:
 	(assign, reg61, ":rank_reward"),		#quest_rank_reward
 	(assign, reg62, ":exp"),				#quest_expiration_days
 	(assign, reg63, 10),					#quest_dont_give_again_period
+	(assign, reg64, ":target_template"),	#quest_target_party_template
 
 ]),
 

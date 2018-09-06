@@ -1,4 +1,4 @@
-1809
+1806
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -93,8 +93,6 @@ qstr_Quick_Start:_Gondor Quick_Start:_Gondor
 qstr_Quick_Start:_Mordor Quick_Start:_Mordor
 qstr_The_DAWN_of_a_New_Er The_DAWN_of_a_New_Era
 qstr_The_TWILIGHT_of_Man The_TWILIGHT_of_Man
-qstr_After_visiting_the_r After_visiting_the_recruiting_center_you_were_accepted_into_the_army_and_spent_several_months_training_at_the_Imperial_Academy._As_your_last_task_before_graduation_you_were_given_a_small_ship_and_sent_to_Coruscant_to_pledge_your_loyalty_before_Emperor_Palpatine_himself.
-qstr_Using_some_of_your_l Using_some_of_your_local_contacts_you_eventually_arranged_a_meeting_with_a_rebel_commander._After_working_with_his_unit_for_several_months_you_have_been_given_a_small_ship_and_sent_to_Yavin_IV_to_pledge_your_loyalty_before_Mon_Mothma_herself.
 qstr_{reg65}_{reg66}_{reg {reg65},_{reg66},_{reg67}
 qstr_Select_your_Race? Select_your_Race?
 qstr_Man Man
@@ -925,7 +923,6 @@ qstr_Kill_the_dwarves! Kill_the_dwarves!
 qstr_Finish_them! Finish_them!
 qstr_We_will_feast_on_you We_will_feast_on_your_flesh!
 qstr_Dwarf_meat! Dwarf_meat!
-qstr_DEBUG:_Continuous_fl DEBUG:_Continuous_flow_of_Snagas!
 qstr_Eru_Iluvatar_has_dec Eru_Iluvatar_has_decided_the_fate_of_Balin's_Company,_and_it_cannot_be_changed.
 qstr_They_are_coming....! They_are_coming....!
 qstr_swy_ui_opacity swy_ui_opacity

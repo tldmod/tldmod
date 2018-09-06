@@ -533,4 +533,6 @@ meshes+=[
 ("choose_icon_eye",   0, "icon_eye",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 ("choose_icon_hand",   0, "icon_hand",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 ("choose_icon_elf",   0, "icon_elf",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+("choose_icon_dwarf",   0, "icon_dwarf",   0, 0, 0, 0, 0, 0, 1, 1, 1),
+("choose_icon_orc",   0, "icon_orc",   0, 0, 0, 0, 0, 0, 1, 1, 1),
 ]

@@ -3382,14 +3382,10 @@ presentations = [
         (presentation_set_duration, 0),
       (else_try),
         (eq, ":object", "$g_option_good"),
-        (str_store_string,s13,"@After visiting the recruiting center you were accepted into the army and spent several months training at the Imperial Academy. As your last task before graduation you were given a small ship and sent to Coruscant to pledge your loyalty before Emperor Palpatine himself."),
-        #(assign,"$faction_choice",cb0_empire),
         (assign, "$intro_presentation_stage", 2),
         (start_presentation, "prsnt_faction_selection_good"),
       (else_try),
         (eq, ":object", "$g_option_evil"),
-        (str_store_string,s13,"@Using some of your local contacts you eventually arranged a meeting with a rebel commander. After working with his unit for several months you have been given a small ship and sent to Yavin IV to pledge your loyalty before Mon Mothma herself."),
-        #(assign,"$faction_choice",cb0_rebel),
         (start_presentation, "prsnt_faction_selection_evil"),
       (try_end),
     ]),
@@ -3521,7 +3517,7 @@ presentations = [
     (overlay_set_color, "$g_presentation_obj_item_select_2", 0xA52A2A),
 
     #logo
-      (create_image_button_overlay, "$g_presentation_obj_item_select_3", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+      (create_image_button_overlay, "$g_presentation_obj_item_select_3", "mesh_choose_icon_dwarf", "mesh_choose_icon_dwarf"),
            (position_set_x, pos1, 685),
            (position_set_y, pos1, 380),
            (overlay_set_position, "$g_presentation_obj_item_select_3", pos1),
@@ -3824,7 +3820,7 @@ presentations = [
 
     #logo
       #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
-      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_orc", "mesh_choose_icon_orc"),
            (position_set_x, pos1, 285),
            (position_set_y, pos1, 380),
            (overlay_set_position, "$g_option_good", pos1),
@@ -4021,7 +4017,7 @@ presentations = [
 
     #logo
       #(create_image_button_overlay_with_tableau_material, "$g_option_good", -1, "tableau_faction_note_mesh_banner", "fac_gondor"),
-      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_man", "mesh_choose_icon_man"),
+      (create_image_button_overlay, "$g_option_good", "mesh_choose_icon_orc", "mesh_choose_icon_orc"),
            (position_set_x, pos1, 285),
            (position_set_y, pos1, 380),
            (overlay_set_position, "$g_option_good", pos1),
@@ -5376,6 +5372,7 @@ if wb_compile_switch==1:
       (set_fixed_point_multiplier, 1000),
       (try_begin),
         (this_or_next|eq, "$g_display_agent_labels", 0),
+        (this_or_next|eq, "$tld_camera_on", 1),
         (eq, "$show_hide_labels", 0),
         (presentation_set_duration, 0),
       (else_try),
