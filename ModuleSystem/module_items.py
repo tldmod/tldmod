@@ -1101,24 +1101,25 @@ items =[
 ["free_dale_armor_k","Dale_Noble_Armor",[("northmen_heavy_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ["dale_armor_l","Dale_Noble_Gorget",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2000,weight(22)|head_armor(2)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ###########HELMS##########
-["dale_helmet_a","Dale Light Infantry Helm",[("dale_helmet_a",0),("dale_helmet_a",imodbit_plain),("dale_helmet_a_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,700,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
-["dale_helmet_b","Dale Light Archer Helm",[("dale_helmet_b",imodbit_plain),("dale_helmet_b",0),("dale_helmet_b_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,600,weight(2)|head_armor(25)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_a","Dale Light Infantry Helm",[("dale_helmet_a",0),("dale_helmet_a",imodbit_plain),("dale_helmet_a_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,550,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
+["dale_helmet_b","Dale Light Archer Helm",[("dale_helmet_b",imodbit_plain),("dale_helmet_b",0),("dale_helmet_b_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,450,weight(2)|head_armor(25)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["dale_helmet_c","Dale Infantry Helm",[("dale_helmet_c",imodbit_plain),("dale_helmet_c",0),("dale_helmet_c_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,900,weight(2)|head_armor(33)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["dale_helmet_d","Dale Archer Helm",[("dale_helmet_d",imodbit_plain),("dale_helmet_d",0),("dale_helmet_d_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["dale_helmet_e","Barding_Helm",[("dale_inf_helm_a",0)],itp_type_head_armor|itp_shop,0,1100,weight(3)|head_armor(35)|difficulty(0),imodbits_armor],
 ["dale_helmet_f","Barding Helm",[("dale_inf_helm_c",0)],itp_type_head_armor|itp_shop,0,1100,weight(3)|head_armor(35)|difficulty(0),imodbits_armor],
 #["dale_hood", "Dale Hood",[("dale_hood",0)], itp_shop| itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 #########WEAPONS##########
-["dale_sword","Dale_Shortsword",[("dale_sword_b",0),("scab_dale_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(108)|weapon_length(88)|swing_damage(28,cut)|thrust_damage(21,pierce),imodbits_weapon],
-["dale_sword_long","Dale_Longsword",[("dale_sword_a",0),("scab_dale_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(95)|swing_damage(29,cut)|thrust_damage(22,pierce),imodbits_weapon],
-["dale_sword_broad","Dale_Broadsword",[("dale_sword_c",0),("scab_dale_sword_c",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(77)|swing_damage(30,cut)|thrust_damage(21,pierce),imodbits_weapon],
+["dale_sword","Dale_Shortsword",[("dale_sword_c",0),("scab_dale_sword_c",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,200,weight(1)|difficulty(0)|spd_rtng(108)|weapon_length(77)|swing_damage(26,cut)|thrust_damage(23,pierce),imodbits_weapon],
+["dale_sword_long","Dale_Longsword",[("dale_sword_a",0),("scab_dale_sword_a",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(0)|spd_rtng(101)|weapon_length(95)|swing_damage(29,cut)|thrust_damage(19,pierce),imodbits_weapon],
+["dale_sword_broad","Dale_Infantry_Sword",[("dale_sword_b",0),("scab_dale_sword_b",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,420,weight(1.25)|difficulty(0)|spd_rtng(103)|weapon_length(88)|swing_damage(30,cut)|thrust_damage(21,pierce),imodbits_weapon],
 ["dale_pike","Dale_Spear",[("dale_spear",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_penalty_with_shield|itp_wooden_parry,itc_lance_upstab,125,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(171)|swing_damage(20,blunt)|thrust_damage(30,pierce),imodbits_weapon_wood],
-["dale_billhook","Dale_Billhook",[("dale_billhook",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_two_handed|itp_wooden_parry,itc_cutting_spear,125,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(185)|swing_damage(36,cut)|thrust_damage(31,pierce),imodbits_weapon_wood],
+["dale_billhook","Dale_Billhook",[("dale_billhook",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_cant_use_on_horseback|itp_two_handed|itp_wooden_parry,itc_cutting_spear,360,weight(3)|difficulty(0)|spd_rtng(95)|weapon_length(185)|swing_damage(36,cut)|thrust_damage(31,pierce),imodbits_weapon_wood],
 #####SHIELDS##########
 ["dale_shield_a","Dale_Tower_Shield",[("dale_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2)|hit_points(450)|body_armor(3)|spd_rtng(70)|weapon_length(90),imodbits_shield,],
-["dale_shield_b","Dale_Tower_Shield",[("dale_shield_i",0),("dale_shield_j",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(2)|hit_points(450)|body_armor(8)|spd_rtng(70)|weapon_length(90),imodbits_shield,],
-["dale_shield_c","Dale_Round_Shield",[("dwarf_round_shield_e",0),("dwarf_round_shield_m",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,300,weight(2)|hit_points(360)|body_armor(5)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
-["dale_shield_d","Dale_Shield",[("dwarf_round_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(360)|body_armor(5)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+["dale_shield_b","Dale_Tower_Shield",[("dale_shield_i",0),("dale_shield_j",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,360,weight(2)|hit_points(450)|body_armor(7)|spd_rtng(70)|weapon_length(90),imodbits_shield,],
+["dale_shield_c","Dale_Round_Shield",[("dwarf_round_shield_e",0),("dwarf_round_shield_m",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,300,weight(2)|hit_points(360)|body_armor(8)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
+#unused Aug/Sept 2018:
+["dale_shield_d","Dale_Shield",[("dwarf_round_shield_m",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_round_shield,200,weight(2)|hit_points(360)|body_armor(8)|spd_rtng(82)|weapon_length(50),imodbits_shield,],
 #TLD UMBAR ITEMS##########
 ##ARMOR##########
 
@@ -1141,7 +1142,7 @@ items =[
 ["umb_helm_d","Corsair_Raider_Helm",[("raider_helmet",0),("raider_helmet_b",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(28)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["umb_helm_e","Corsair_High_Helm",[("umbar_tall_helmet",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["umb_helm_f","Corsair_High_Helm",[("umbar_tall_helmet_b",0)],itp_type_head_armor|itp_shop,0,1200,weight(3)|head_armor(35)|difficulty(0),imodbits_elf_armor],
-["umb_hood","Black_Hood",[("umbar_hood",0),("umbar_hood_mask",imodbits_elf_cloth),("umbar_hood_mask",imodbit_sturdy)],itp_type_head_armor|itp_shop,0,300,weight(1)|head_armor(10)|difficulty(0),imodbits_cloth],
+["umb_hood","Black_Hood",[("umbar_hood",0),("umbar_hood_mask",imodbits_elf_cloth),("umbar_hood_mask",imodbit_sturdy)],itp_type_head_armor|itp_shop,0,250,weight(1)|head_armor(10)|difficulty(0),imodbits_cloth],
 ["corsair_boots","Corsair_Boots",[("corsair_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,400,weight(1)|leg_armor(14)|difficulty(0),imodbits_cloth],
 ########SHIELDS##########
 ["umb_shield_a","Corsair_Buckler",[("corsair_buckler_long_a",0),("corsair_buckler_long_a_carry",ixmesh_carry)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_buckler_left,200,weight(2)|hit_points(360)|body_armor(1)|spd_rtng(100)|weapon_length(30),imodbits_shield,],
@@ -1187,7 +1188,7 @@ items =[
 ["dwarf_shield_b","Dwarven_Tower_Shield",[("dwarf_tear_shield_a",0),("dwarf_tear_shield_b",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_c","Dwarven_Fighting_Shield",[("dwarf_fighting_shield_a",0),("dwarf_fighting_shield_b",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(86)|weapon_length(60),imodbits_shield_good,],
 ["dwarf_shield_d","Dwarven_Round_Shield",[("dwarf_round_shield_n",0),("dwarf_round_shield_e",imodbits_shield_good)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(50),imodbits_shield_good,],
-["north_round_shield","Dwarven_Shield",[("dwarf_round_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(360)|body_armor(4)|spd_rtng(82)|weapon_length(50),imodbits_shield_good,],
+["north_round_shield","Northmen_Round_Shield",[("dwarf_round_shield_n",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,200,weight(3)|hit_points(360)|body_armor(4)|spd_rtng(82)|weapon_length(50),imodbits_shield_good,],
 #all shields from here free, May 2018
 ["free_dwarf_shield_g","Dwarven_Shield",[("dale_shield_b",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],
 ["free_dwarf_shield_i","Dwarven_Shield",[("dale_shield_i",0)],itp_type_shield|itp_wooden_parry|itp_shop,itcf_carry_kite_shield,400,weight(3)|hit_points(700)|body_armor(10)|spd_rtng(82)|weapon_length(60),imodbits_shield_good,],

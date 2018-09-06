@@ -2166,10 +2166,10 @@ itemsfile version 2
  itm_dale_armor_l Dale_Noble_Gorget Dale_Noble_Gorget 1  dale_reward 0  16842765 0 2000 704643072 22 100 2 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_a Dale_Light_Infantry_Helm Dale_Light_Infantry_Helm 3  dale_helmet_a 0  dale_helmet_a 1  dale_helmet_a_good 704643072  65548 0 700 704643238 2 100 28 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_a Dale_Light_Infantry_Helm Dale_Light_Infantry_Helm 3  dale_helmet_a 0  dale_helmet_a 1  dale_helmet_a_good 704643072  65548 0 550 704643238 2 100 28 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_helmet_b Dale_Light_Archer_Helm Dale_Light_Archer_Helm 3  dale_helmet_b 1  dale_helmet_b 0  dale_helmet_b_good 704643072  65548 0 600 704643238 2 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_dale_helmet_b Dale_Light_Archer_Helm Dale_Light_Archer_Helm 3  dale_helmet_b 1  dale_helmet_b 0  dale_helmet_b_good 704643072  65548 0 450 704643238 2 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dale_helmet_c Dale_Infantry_Helm Dale_Infantry_Helm 3  dale_helmet_c 1  dale_helmet_c 0  dale_helmet_c_good 704643072  65548 0 900 704643238 2 100 33 0 0 0 0 0 0 0 0 0 0
@@ -2184,31 +2184,31 @@ itemsfile version 2
  itm_dale_helmet_f Barding_Helm Barding_Helm 1  dale_inf_helm_c 0  65548 0 1100 704643236 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_sword Dale_Shortsword Dale_Shortsword 2  dale_sword_b 0  scab_dale_sword_b 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 28672 108 0 88 0 277 28
+ itm_dale_sword Dale_Shortsword Dale_Shortsword 2  dale_sword_c 0  scab_dale_sword_c 3458764513820540928  4259842 9223388564182532111 200 287892 1 100 0 0 0 0 26624 108 0 77 0 279 26
 0
 
- itm_dale_sword_long Dale_Longsword Dale_Longsword 2  dale_sword_a 0  scab_dale_sword_a 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 103 0 95 0 278 29
+ itm_dale_sword_long Dale_Longsword Dale_Longsword 2  dale_sword_a 0  scab_dale_sword_a 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 29696 101 0 95 0 275 29
 0
 
- itm_dale_sword_broad Dale_Broadsword Dale_Broadsword 2  dale_sword_c 0  scab_dale_sword_c 3458764513820540928  4259842 9223388564182532111 500 287892 1.25 100 0 0 0 0 30720 103 0 77 0 277 30
+ itm_dale_sword_broad Dale_Infantry_Sword Dale_Infantry_Sword 2  dale_sword_b 0  scab_dale_sword_b 3458764513820540928  4259842 9223388564182532111 420 287892 1.25 100 0 0 0 0 30720 103 0 88 0 277 30
 0
 
  itm_dale_pike Dale_Spear Dale_Spear 1  dale_spear 0  407207940 9254615759470985472 125 271496 3 100 0 0 0 0 20480 95 0 171 0 286 532
 0
 
- itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  275087364 4222124851987200 125 271496 3 100 0 0 0 0 36864 95 0 185 0 287 36
+ itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  275087364 4222124851987200 360 271496 3 100 0 0 0 0 36864 95 0 185 0 287 36
 0
 
  itm_dale_shield_a Dale_Tower_Shield Dale_Tower_Shield 1  dale_shield_b 0  327687 4831838208 200 251658402 2 100 0 3 0 0 450 70 0 90 0 0 0
 0
 
- itm_dale_shield_b Dale_Tower_Shield Dale_Tower_Shield 2  dale_shield_i 0  dale_shield_j 771751936  327687 4831838208 200 251658402 2 100 0 8 0 0 450 70 0 90 0 0 0
+ itm_dale_shield_b Dale_Tower_Shield Dale_Tower_Shield 2  dale_shield_i 0  dale_shield_j 771751936  327687 4831838208 360 251658402 2 100 0 7 0 0 450 70 0 90 0 0 0
 0
 
- itm_dale_shield_c Dale_Round_Shield Dale_Round_Shield 2  dwarf_round_shield_e 0  dwarf_round_shield_m 771751936  327687 5100273664 300 251658402 2 100 0 5 0 0 360 82 0 50 0 0 0
+ itm_dale_shield_c Dale_Round_Shield Dale_Round_Shield 2  dwarf_round_shield_e 0  dwarf_round_shield_m 771751936  327687 5100273664 300 251658402 2 100 0 8 0 0 360 82 0 50 0 0 0
 0
 
- itm_dale_shield_d Dale_Shield Dale_Shield 1  dwarf_round_shield_m 0  327687 5100273664 200 251658402 2 100 0 5 0 0 360 82 0 50 0 0 0
+ itm_dale_shield_d Dale_Shield Dale_Shield 1  dwarf_round_shield_m 0  327687 5100273664 200 251658402 2 100 0 8 0 0 360 82 0 50 0 0 0
 0
 
  itm_free_umb_armor_a1 Corsair_Heavy_Leather_Armor Corsair_Heavy_Leather_Armor 1  corsair_leather_pauldron 0  16842765 0 500 1116815228928 9 100 0 14 6 0 0 0 0 0 0 0 0
@@ -2256,7 +2256,7 @@ itemsfile version 2
  itm_umb_helm_f Corsair_High_Helm Corsair_High_Helm 1  umbar_tall_helmet_b 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_umb_hood Black_Hood Black_Hood 3  umbar_hood 0  umbar_hood_mask 251658240  umbar_hood_mask 16777216  65548 0 300 1116815228928 1 100 10 0 0 0 0 0 0 0 0 0 0
+ itm_umb_hood Black_Hood Black_Hood 3  umbar_hood 0  umbar_hood_mask 251658240  umbar_hood_mask 16777216  65548 0 250 1116815228928 1 100 10 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 1116815228928 1 100 0 0 14 0 0 0 0 0 0 0 0
@@ -2349,7 +2349,7 @@ itemsfile version 2
  itm_dwarf_shield_d Dwarven_Round_Shield Dwarven_Round_Shield 2  dwarf_round_shield_n 0  dwarf_round_shield_e 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 50 0 0 0
 0
 
- itm_north_round_shield Dwarven_Shield Dwarven_Shield 1  dwarf_round_shield_n 0  327687 4831838208 200 771751936 3 100 0 4 0 0 360 82 0 50 0 0 0
+ itm_north_round_shield Northmen_Round_Shield Northmen_Round_Shield 1  dwarf_round_shield_n 0  327687 4831838208 200 771751936 3 100 0 4 0 0 360 82 0 50 0 0 0
 0
 
  itm_free_dwarf_shield_g Dwarven_Shield Dwarven_Shield 1  dale_shield_b 0  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
