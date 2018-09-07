@@ -6491,6 +6491,7 @@ scripts = [
             (try_end),
 	        (call_script,"script_cf_spawn_around_party_on_walkable_terrain",":giver_party_no",":quest_target_party_template",15),
 	        (assign,"$qst_destroy_scout_camp_party",reg0),
+	        (call_script, "script_move_scout_camp_to_hardcoded_locations"), #Checks if party needs to be moved.
 
             (store_faction_of_party,":cur_target_faction",":cur_target_center"), ## Store Faction of Target - So that we can set up appropriate guards/troops
             (assign, ":quest_target_faction", ":cur_target_faction"),
@@ -24708,6 +24709,63 @@ command_cursor_scripts = [
 
 	(item_set_slot, "itm_beorn_chief",			slot_item_light_armor, 1), 
   ]),
+
+# Called in 
+("move_scout_camp_to_hardcoded_locations", [
+	(call_script, "script_get_region_of_party", "$qst_destroy_scout_camp_party"),
+	(assign, ":region", reg1),
+	(set_fixed_point_multiplier,100.0),
+	(party_get_position, pos1, "$qst_destroy_scout_camp_party"),
+	(position_get_x, ":x", pos1),
+	(position_get_y, ":y", pos1),
+	(set_fixed_point_multiplier,100.0),
+
+	(try_begin),
+		(eq, ":region", region_lebennin),
+		(gt, ":y", 7000),
+		(store_random_in_range, ":rand_y", 6700, 6850),
+		(position_set_y, pos1, ":rand_y"),
+		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
+		#(display_message, "@Scout Camp Party moved - Lebennin!"),
+	(else_try),
+		(eq, ":region", region_dagorlad),
+		(store_random_in_range, ":rand_x", -7032, -6887),
+		(store_random_in_range, ":rand_y", -4495, -3473),
+		(position_set_x, pos1, ":rand_x"),
+		(position_set_y, pos1, ":rand_y"),
+		#(assign, reg55, ":rand_x"),
+		#(assign, reg56, ":rand_y"),
+		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
+		#(display_message, "@Scout Camp Party moved - Dagorlad! - {reg55}, {reg56}"),
+	(else_try),
+		(eq, ":region", region_s_mirkwood),
+		(store_random_in_range, ":rand_x", -4354, -4016),
+		(store_random_in_range, ":rand_y", -15094, -12166),
+		(position_set_x, pos1, ":rand_x"),
+		(position_set_y, pos1, ":rand_y"),
+		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
+		#(display_message, "@Scout Camp Party moved! - S Mirkwood"),
+	(else_try),
+		(lt, ":x", -7000),
+		(lt, ":y", -18000),
+		(store_random_in_range, ":rand_x", -3134, -2435),
+		(store_random_in_range, ":rand_y", -19130, -17900),
+		(position_set_x, pos1, ":rand_x"),
+		(position_set_y, pos1, ":rand_y"),
+		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
+		#(display_message, "@Scout Camp Party moved! - North"),
+	(else_try),
+		(this_or_next|eq, ":region", region_gap_of_rohan),
+		(this_or_next|eq, ":region", region_misty_mountains),
+		(eq, ":region", region_anduin_banks),
+		(gt, ":x", 5500),
+		(store_random_in_range, ":rand_x", 3000, 100),
+		(position_set_x, pos1, ":rand_x"),
+		(party_set_position, "$qst_destroy_scout_camp_party", pos1),
+		#(display_message, "@Scout Camp Party moved! - Misty Mountains"),
+	(try_end),
+
+]),
 
 ]
 

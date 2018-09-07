@@ -1,4 +1,4 @@
-1615
+1617
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -890,6 +890,8 @@ qstr_OFF OFF
 qstr_ON ON
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{reg63}_followers {reg63}_followers
+qstr_{s1}___X:_{reg60}___ {s1}_-_X:_{reg60}_-_Y:{reg61}
+qstr_Scout_camp_party_spa Scout_camp_party_spawned_and_positioned_in_Dagorlad
 qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
