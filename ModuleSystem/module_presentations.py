@@ -25,6 +25,7 @@ import string
 # Set debug_show_presentation_coordinates on module_constants.py
 coord_helper = [
   (ti_on_presentation_load, [
+      (eq, cheat_switch, 1),
       #(eq, debug_show_presentation_coordinates, 1),
       (create_text_overlay, "$mouse_coordinates", "str_empty_string"),
       (overlay_set_color, "$mouse_coordinates", 0xFF0000),
@@ -33,6 +34,7 @@ coord_helper = [
       (overlay_set_position, "$mouse_coordinates", pos1),
   ]),
   (ti_on_presentation_run, [
+      (eq, cheat_switch, 1),
       #(eq, debug_show_presentation_coordinates, 1),
       (set_fixed_point_multiplier, 1000),
       
