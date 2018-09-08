@@ -3507,7 +3507,7 @@ scripts = [
         (set_trigger_result, color_item_text_morale),
       (else_try),
 		(eq,":item_no","itm_rohan_saddle"),
-		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Riding Skill"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@+1 to Riding Skill in Battles"),(try_end),
 		#(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@+1 to Horse Archery"),(try_end),
         (set_trigger_result, color_item_text_bonus),
       (else_try),
