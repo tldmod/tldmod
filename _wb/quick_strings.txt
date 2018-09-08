@@ -1,4 +1,4 @@
-1807
+1808
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -232,7 +232,8 @@ qstr_Gondor_AI_Tweaks___M Gondor_AI_Tweaks_-_Make_Gondor_marshall_a_bit_stronger
 qstr_Gondor_AI_Tweaks___G Gondor_AI_Tweaks_-_Gondro_Party_Size_Boost
 qstr_+30_to_Party_Morale +30_to_Party_Morale
 qstr_+20_to_Party_Morale +20_to_Party_Morale
-qstr_+1_to_Riding_Skill_i +1_to_Riding_Skill_in_Battles
+qstr_+1_to_Riding_Skill +1_to_Riding_Skill
+qstr_during_battles during_battles
 qstr_+1_to_Pathfinding +1_to_Pathfinding
 qstr_+1_to_Athletics +1_to_Athletics
 qstr_Use_from Use_from
@@ -258,7 +259,7 @@ qstr_+1_to_Surgery +1_to_Surgery
 qstr_+1_to_Wildcraft +1_to_Wildcraft
 qstr_+1_to_Ironflesh +1_to_Ironflesh
 qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
-qstr_+2_to_Crafting +2_to_Crafting
+qstr_+2_to_Tactics +2_to_Tactics
 qstr_+3_to_Spotting +3_to_Spotting
 qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep
