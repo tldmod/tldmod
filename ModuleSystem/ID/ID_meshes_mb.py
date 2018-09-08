@@ -391,5 +391,7 @@ mesh_choose_icon_hand = 389
 mesh_choose_icon_elf = 390
 mesh_choose_icon_dwarf = 391
 mesh_choose_icon_orc = 392
+mesh_choose_icon_uruk = 393
+mesh_choose_icon_evilman = 394
 
 
