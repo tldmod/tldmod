@@ -25,6 +25,7 @@ import string
 # Set debug_show_presentation_coordinates on module_constants.py
 coord_helper = [
   (ti_on_presentation_load, [
+    ]+concatenate_scripts([[
       (eq, cheat_switch, 1),
       #(eq, debug_show_presentation_coordinates, 1),
       (create_text_overlay, "$mouse_coordinates", "str_empty_string"),
@@ -32,8 +33,10 @@ coord_helper = [
       (position_set_x, pos1, 10),
       (position_set_y, pos1, 700),
       (overlay_set_position, "$mouse_coordinates", pos1),
+      ] for ct in range(cheat_switch)])+[ 
   ]),
   (ti_on_presentation_run, [
+    ]+concatenate_scripts([[
       (eq, cheat_switch, 1),
       #(eq, debug_show_presentation_coordinates, 1),
       (set_fixed_point_multiplier, 1000),
@@ -43,6 +46,7 @@ coord_helper = [
       (position_get_y, reg66, pos1),
       (position_get_z, reg67, pos1),
       (overlay_set_text, "$mouse_coordinates", "@{reg65}, {reg66}, {reg67}"),
+       ] for ct in range(cheat_switch)])+[ 
   ])
 ]
 
@@ -3309,7 +3313,8 @@ presentations = [
         (position_set_x, pos1, 450),
         (position_set_y, pos1, 100),
         (overlay_set_position, "$g_presentation_obj_2", pos1),
-
+        
+        ]+concatenate_scripts([[
         (try_begin),
           (eq, cheat_switch, 1),
           (create_button_overlay, "$g_presentation_obj_3", "@Quick Start: Gondor", tf_center_justify),
@@ -3321,6 +3326,7 @@ presentations = [
           (position_set_y, pos1, 140),
           (overlay_set_position, "$g_presentation_obj_4", pos1),
         (try_end),
+        ] for ct in range(cheat_switch)])+[ 
 
     #FACTION SIDE GOOD
     #text

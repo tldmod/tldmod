@@ -1211,6 +1211,24 @@ game_menus = [
    	]
  ),
 
+( "custom_battle_durin_end",mnf_disable_all_keys,
+    "^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.",
+    "none",
+    [(set_background_mesh, "mesh_ui_default_menu_window"),
+     (music_set_situation, 0),
+     (assign, reg5, "$g_custom_battle_team2_death_count"),
+     (get_player_agent_kill_count, ":kill_count"),
+     (get_player_agent_kill_count, ":wound_count", 1),
+     (store_add, reg7, ":kill_count", ":wound_count"),
+	],
+
+	# (CppCoder) Ease not for only testing but for playing as well.
+    	[
+		("replay_cbd",[],"Play this battle again.",[(assign, "$battle_won", 0),(jump_to_menu, "mnu_custom_battle_2")]),
+    		("continue_dot_cbd",[],"Continue.",[(try_begin),(eq,"$g_custom_battle_scenario",26),(jump_to_menu, "mnu_quick_battle_general_test"),(else_try),(change_screen_quit),(try_end)]),
+   	]
+ ),
+
 ######################################
 #TLD Troll quick battle choser
 ( "quick_battle_general_test",mnf_disable_all_keys,

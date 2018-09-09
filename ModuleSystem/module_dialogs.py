@@ -2609,6 +2609,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone,"lord_start", [
     (check_quest_active, "qst_blank_quest_04"),
+    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
     (check_quest_succeeded, "qst_blank_quest_04"),
     (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
     ],
@@ -2619,6 +2620,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone,"lord_start", [
     (check_quest_active, "qst_blank_quest_04"),
+    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
     (check_quest_failed, "qst_blank_quest_04"),
     (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_failed",[
@@ -2629,6 +2631,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone,"lord_start", [
     (check_quest_active, "qst_blank_quest_05"),
+    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
     (check_quest_succeeded, "qst_blank_quest_05"),
     (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
     ],
@@ -2639,6 +2642,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 [anyone,"lord_start", [
     (check_quest_active, "qst_blank_quest_05"),
+    (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),
     (check_quest_failed, "qst_blank_quest_05"),
     (quest_slot_eq, "qst_blank_quest_05", slot_quest_object_troop,"$g_talk_troop"),],
 "I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "kill_quest_failed",[
@@ -9039,7 +9043,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
       (lt, ":rank", 3),
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
-      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 3), #to s24
+      (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 4), #to s24
       (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),
       (str_store_string, s2, "@(You need to be {s24} or higher)."),
       (try_begin),

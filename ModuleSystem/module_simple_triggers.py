@@ -1656,7 +1656,7 @@ simple_triggers = [
       #not in the victory menus because parties are still not defeated then
       (try_begin),
         (check_quest_active, "qst_eliminate_patrols"),
-        (neg|check_quest_concluded, "qst_eliminate_patrols"),
+        #(neg|check_quest_concluded, "qst_eliminate_patrols"),
         (quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
         (quest_get_slot, ":quest_target_faction", "qst_eliminate_patrols", slot_quest_target_faction),
         (try_begin),
@@ -1704,7 +1704,7 @@ simple_triggers = [
       #Report number of kills for the oath of vengeance quest
       (try_begin),
         (check_quest_active, "qst_oath_of_vengeance"),
-        (neg|check_quest_concluded, "qst_oath_of_vengeance"),
+        #(neg|check_quest_concluded, "qst_oath_of_vengeance"),
         (quest_get_slot, ":target","qst_oath_of_vengeance", 2),
         (str_store_faction_name, s3, ":target"),
         (assign, reg65, "$oath_kills"),
@@ -1720,7 +1720,7 @@ simple_triggers = [
       #Report number of kills for the kill quest
       (try_begin),
         (check_quest_active, "qst_blank_quest_05"),
-        (neg|check_quest_concluded, "qst_blank_quest_05"),
+        #(neg|check_quest_concluded, "qst_blank_quest_05"),
         (quest_get_slot, ":target_faction", "qst_blank_quest_05", slot_quest_target_faction),
         (quest_get_slot, ":current_amount", "qst_blank_quest_05", slot_quest_current_state),
         (str_clear, s5),
@@ -1740,7 +1740,7 @@ simple_triggers = [
       #Report number of kills for the targeted kill quest
       (try_begin),
         (check_quest_active, "qst_blank_quest_04"),
-        (neg|check_quest_concluded, "qst_blank_quest_04"),
+        #(neg|check_quest_concluded, "qst_blank_quest_04"),
         (quest_get_slot, ":target_faction", "qst_blank_quest_04", slot_quest_target_faction),
         (quest_get_slot, ":target_troop", "qst_blank_quest_04", slot_quest_target_troop),
         (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
@@ -1762,13 +1762,13 @@ simple_triggers = [
       #Report number of kills for the bandit kill quest
       (try_begin),
         (check_quest_active, "qst_blank_quest_17"),
-        (neg|check_quest_concluded, "qst_blank_quest_17"),
+        #(neg|check_quest_concluded, "qst_blank_quest_17"),
         (quest_get_slot, ":target_troop", "qst_blank_quest_17", slot_quest_target_troop),
         (quest_get_slot, ":current_amount", "qst_blank_quest_17", slot_quest_current_state),
         (str_store_troop_name, s10, ":target_troop"),
         (assign, reg68, ":current_amount"),
         (str_store_string, s11, "@{reg68} {s10} killed. (Counter refreshes every hour)"),
-        (add_quest_note_from_sreg, "qst_blank_quest_17", 2, s3, 0),
+        (add_quest_note_from_sreg, "qst_blank_quest_17", 2, s11, 0),
       (try_end),
       
       
