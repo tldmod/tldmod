@@ -8281,7 +8281,7 @@ tld_remove_riderless_animals,
         (assign, "$ally_reinforcement_stage", 8),
         (assign, "$temp", 1), #Pause when kill count is reached
       (else_try),
-        (eq, "$enemy_reinforcement_stage", 10),
+        (ge, "$enemy_reinforcement_stage", 10),
         (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 60),
         (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
         (assign, "$ally_reinforcement_stage", 9),
@@ -8405,13 +8405,14 @@ tld_remove_riderless_animals,
         (assign, ":continue", 1),
         (assign, "$enemy_reinforcement_stage", 10), #Stage 10
       (else_try),
-        (eq, "$enemy_reinforcement_stage", 10),
+        (ge, "$enemy_reinforcement_stage", 10),
         (eq, "$ally_reinforcement_stage", 9), #Kill count reached
         (eq, "$temp", 0), #wait to unpause before next stage
         (assign, ":enemy_melee_troop", "trp_tribal_orc_chief"),
         (assign, ":enemy_ranged_troop", "trp_deep_dweller_of_moria"),
         (assign, ":num_enemies", 30),
         (assign, ":continue", 1),
+        (val_add, "$enemy_reinforcement_stage", 1), #Stage Infinity
       (try_end),
 
       (eq, ":continue", 1),
@@ -8488,7 +8489,9 @@ tld_remove_riderless_animals,
       (assign, ":cont_enemy_type", "trp_goblin_of_moria"),
     (else_try),
       (gt, "$enemy_reinforcement_stage", 9),
+      (store_sub, ":reinf_boost", "$enemy_reinforcement_stage", 10),
       (val_add, ":num_cont_enemies", 5),
+      (val_add, ":num_cont_enemies", ":reinf_boost"),
       (assign, ":cont_enemy_type", "trp_fell_goblin_of_moria"),
     (try_end),
 
