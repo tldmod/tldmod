@@ -14379,7 +14379,6 @@ scripts = [
     (try_begin), # if player chose woman, preserve woman. If chose orc/dwarf troop - force orc/dwarf
 	   (this_or_next|neq, ":playerace", tf_female),
 	   (this_or_next|is_between, ":race", tf_orc_begin,tf_orc_end),
-	   (this_or_next|is_between, ":race", tf_elf_begin,tf_elf_end),
 	   (eq, ":race", tf_dwarf),
 	   (troop_set_type,"trp_player",":race"),
 	(try_end),
