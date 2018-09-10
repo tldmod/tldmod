@@ -3336,4 +3336,15 @@ One may memorize the placement of selected divisions relative to the player by p
 - SQUARE in no particular order^\
 - NO FORMATION^^\
 Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times."),
+
+#Dale Walker Customization strings
+
+("dale_coat", "dale_coat"),
+("dale_coat_2", "dale_coat_2"),
+("dale_coat_3", "dale_coat_3"),
+("tld_wear", "tld_wear"),
+("tld_wear_2", "tld_wear_2"),
+("tld_wear_3", "tld_wear_3"),
+("dale_coat_end", "dale_coat_end"),
+
 ]

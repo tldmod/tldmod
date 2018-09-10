@@ -190,8 +190,8 @@ simple_triggers = [
       (assign, "$current_player_region", ":new_region"),
   ]),
   
-  # (13) Party AI: pruning some of the prisoners in each center (once a week)
-  (24*3,[(try_for_range, ":center_no", centers_begin, centers_end),
+  # (13) Party AI: pruning some of the prisoners in each center (once a week) - Kham: Changed from 72 to 46 hours
+  (24*2,[(try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (party_get_num_prisoner_stacks, ":num_prisoner_stacks",":center_no"),

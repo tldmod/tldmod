@@ -1969,6 +1969,17 @@ scripts = [
 	(item_set_slot, "itm_gondor_custom", slot_item_init_script, -1),
 	(item_set_slot, "itm_gondor_custom", slot_item_num_components, 1),
 
+	(item_set_slot, "itm_white_tunic_a", slot_item_player_color, 1),
+	(item_set_slot, "itm_white_tunic_a", slot_item_num_components, 1),
+	(item_set_slot, "itm_white_tunic_a", slot_item_materials_begin, "str_dale_coat"),
+	(item_set_slot, "itm_white_tunic_a", slot_item_materials_end, "str_dale_coat_end"),
+	(troop_set_slot, "trp_townsman", slot_troop_has_custom_armour, 1),
+	(troop_set_slot, "trp_watchman", slot_troop_has_custom_armour, 1),
+	(troop_set_slot, "trp_walker_woman_rohan_t", slot_troop_has_custom_armour, 1),
+	(troop_set_slot, "trp_walker_woman_rohan_d", slot_troop_has_custom_armour, 1),
+	(troop_set_slot, "trp_walker_woman_gondor_b", slot_troop_has_custom_armour, 1),
+	(troop_set_slot, "trp_walker_woman_gondor_bw", slot_troop_has_custom_armour, 1),
+
 	#Init HP shield
 
 	(try_for_range, ":has_hp_shield", heroes_begin, heroes_end),
@@ -27442,6 +27453,26 @@ if is_a_wb_script==1:
 	  (troop_raise_proficiency,  ":troop_clone",":i",":x"), 
 	(try_end),
 
+]),
+
+("cf_get_custom_armor_ranges", [
+	(store_script_param_1, ":troop_id"),
+	(store_script_param_2, ":item_id"),
+
+	(troop_get_inventory_slot_modifier, ":imod", ":troop_id", ek_body),
+	(gt, ":imod", 0),
+
+	(try_begin),
+		(eq, ":imod", imod_powerful),
+		(eq, ":item_id", "itm_white_tunic_a"),
+		(assign, reg0, "str_dale_coat"),
+		(assign, reg1, "str_tld_wear"),
+	(else_try),
+		(eq, ":imod", imod_fresh),
+		(eq, ":item_id", "itm_white_tunic_a"),
+		(assign, reg0, "str_tld_wear"),
+		(assign, reg1, "str_dale_coat_end"),
+	(try_end),
 ]),
 
 ]

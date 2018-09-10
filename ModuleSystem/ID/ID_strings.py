@@ -2288,5 +2288,12 @@ str_show_keybinds = 2286
 str_tactical_controls = 2287
 str_division_placement = 2288
 str_formations = 2289
+str_dale_coat = 2290
+str_dale_coat_2 = 2291
+str_dale_coat_3 = 2292
+str_tld_wear = 2293
+str_tld_wear_2 = 2294
+str_tld_wear_3 = 2295
+str_dale_coat_end = 2296
 
 

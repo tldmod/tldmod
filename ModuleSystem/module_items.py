@@ -28,11 +28,18 @@ from module_info import wb_compile_switch as is_a_wb_item
 
 def custom_reskin(item):
   return (ti_on_init_item, [
+    ] + (is_a_wb_item==1 and [
     # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
     (store_trigger_param_2, ":troop_no"),
+    (troop_slot_eq, ":troop_no", slot_troop_has_custom_armour, 1),
+
+    (call_script, "script_cf_get_custom_armor_ranges", ":troop_no", item),
+    (assign, ":start", reg0),
+    (assign, ":end", reg1),
+
     (str_clear, s1),
-    (item_get_slot, ":start", item, slot_item_materials_begin),
-    (item_get_slot, ":end", item, slot_item_materials_end),
+    #(item_get_slot, ":start", item, slot_item_materials_begin),
+    #(item_get_slot, ":end", item, slot_item_materials_end),
     (store_sub, ":total", ":end", ":start"),
     (gt, ":total", 0),
     (try_begin),
@@ -49,6 +56,7 @@ def custom_reskin(item):
       (str_store_string, s1, ":value"),
       (cur_item_set_material, s1, 0),
     (try_end),
+    ] or []) + [ 
     ])
 
 # Dunde's 1 Liner Heraldic Code
@@ -271,7 +279,7 @@ items =[
 #all marked civilian items free Jan 2017, -> itm_white_tunic_a
 ["free_black_dress","Black_Dress",[("gondor_dress_a",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
 ["free_blackwhite_dress","Lady_Dress",[("gondor_dress_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,500,weight(3)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0),imodbits_cloth,[]],
-["white_tunic_a","Civilian_Outfit",[("gondor_tunic_b",0),("generic_tunic_a",imodbit_day_old),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("generic_leather_jerkin",imodbit_exquisite),("smith_leather_apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(1)|difficulty(0),imodbits_cloth,[]],
+["white_tunic_a","Civilian_Outfit",[("gondor_tunic_b",0),("generic_tunic_a",imodbit_day_old),("tld_robe_generic_dress",imodbit_fresh),("rohan_fine_outfit_dale_dress",imodbit_rotten),("gondor_fine_outfit_dress",imodbit_large_bag),("rohan_dress",imodbit_rough),("dale_coat",imodbit_powerful),("generic_leather_jerkin",imodbit_exquisite),("smith_leather_apron",imodbit_deadly),("rohan_tunic",imodbit_sharp),("dale_tunic",imodbit_well_made),("generic_tunic_c",imodbit_cheap),("gondor_dress_a",imodbit_poor),("gondor_dress_b",imodbit_old),],itp_type_body_armor|itp_covers_legs|itp_civilian,0,100,weight(2)|head_armor(0)|body_armor(6)|leg_armor(1)|difficulty(0),imodbits_cloth,[custom_reskin("itm_white_tunic_a")]],
 ["free_white_tunic_b","Simple_Tunic",[("gondor_tunic_b",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["free_white_tunic_c","Tunic_Jacket",[("generic_tunic_c",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
 ["free_blue_tunic","Blue_Tunic",[("dale_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_civilian|itp_shop,0,100,weight(2)|head_armor(0)|body_armor(3)|leg_armor(3)|difficulty(0),imodbits_cloth,[]],
