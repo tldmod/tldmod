@@ -1404,6 +1404,9 @@ mission_templates = [ # not used in game
         (assign, "$first_time_town",1),
       (try_end),
       ]),
+
+  #(0,0,0, [(key_clicked, key_b)],[(display_message, "@Mordor Cloud added"),(call_script, "script_set_mordor_cloud_scene_prop")]),
+
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
 			(try_begin),# remove beam bridges in osgiliath (for non battle scenes)
@@ -1929,6 +1932,9 @@ mission_templates = [ # not used in game
 			],[
 			(add_reinforcements_to_entry,3,10),
 			(val_add,"$attacker_reinforcement_stage",1)]),
+  
+  #(0,0,0, [(key_clicked, key_b)],[(display_message, "@Mordor Cloud added"),(call_script, "script_set_mordor_cloud_scene_prop")]),
+
   (6, 0 , ti_once, [
       (eq, "$tld_option_formations", 1),
       (le, "$formations_tutorial", 2)],

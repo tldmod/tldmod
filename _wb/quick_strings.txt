@@ -1,4 +1,4 @@
-1822
+1823
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -790,6 +790,7 @@ qstr_ready_polearms ready_polearms
 qstr_shields_up shields_up
 qstr_doff_shields doff_shields
 qstr_Distance___{reg70}__ Distance_-_{reg70}_-_{s11}_Party_-_{s12}_Troop
+qstr_Mordor_Cloud_Spawned Mordor_Cloud_Spawned
 qstr_Your_mount_stumbles! Your_mount_stumbles!_It_seems_to_be_lame.
 qstr_Bitten_by_your_own_w Bitten_by_your_own_warg_mount!
 qstr_You_weigh_too_much_f You_weigh_too_much_for_a_pony!

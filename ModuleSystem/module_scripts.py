@@ -27477,4 +27477,13 @@ if is_a_wb_script==1:
 	(try_end),
 ]),
 
+("set_mordor_cloud_scene_prop", [
+	(get_player_agent_no, ":player"),
+	(agent_get_position, pos23, ":player"),
+	(set_spawn_position, pos23),
+	(spawn_scene_prop, "spr_mordor_clouds_3", 0),
+	(assign, ":mordor_clouds", reg0),
+	(set_fixed_point_multiplier, 10),
+	(prop_instance_set_scale, ":mordor_clouds", 500,500,500),
+	(display_message, "@Mordor Cloud Spawned"),]),
 ]

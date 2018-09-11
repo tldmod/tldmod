@@ -715,5 +715,6 @@ script_cf_get_nearest_bandit_party = 713
 script_cf_init_kill_quest_bandit = 714
 script_clone_troop = 715
 script_cf_get_custom_armor_ranges = 716
+script_set_mordor_cloud_scene_prop = 717
 
 

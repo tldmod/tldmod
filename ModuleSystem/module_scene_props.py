@@ -2758,8 +2758,11 @@ scene_props = [
 ("isen_pillar_adorno",0,"isen_pillar_adorno","bo_isen_pillar_adorno", []),
 #InVain props end
 
-("save_compartibility2",0,"0","0", []),
-("save_compartibility3",0,"0","0", []),
+("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
+("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
+
+#("save_compartibility2",0,"0","0", []),
+#("save_compartibility3",0,"0","0", []),
 ("save_compartibility4",0,"0","0", []),
 ("save_compartibility5",0,"0","0", []),
 ("save_compartibility6",0,"0","0", []),
