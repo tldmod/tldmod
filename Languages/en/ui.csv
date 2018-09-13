@@ -312,7 +312,7 @@ ui_capture|Capture
 ui_party_capcity_reached|(Party capacity reached)
 ui_all| all
 ui_joining_cost_weekly_wage|Joining cost: %d, Weekly wage: %d
-ui_weekly_wage|Weekly wage: %d denars
+ui_weekly_wage|Weekly wage: %d Resource Pts.
 ui_price|Price: %d
 ui_number_ready_to_upgrade|%d ready to be upgraded.
 ui_upgrade_to_value| Upgrade to %s 

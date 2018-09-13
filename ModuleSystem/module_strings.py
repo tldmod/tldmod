@@ -2824,7 +2824,7 @@ We apologize sincerely if you contributed your suggestions and feedback but were
 ("fullname_region_rohan5", "Helm's Deep, a valley of the White Mountains, in Rohan"), 
 
 ("fullname_region_the_wold", "the Wold, the Northeastern area of the Riddermark of Rohan"), # region_the_wold
-("fullname_region_gap_of_rohan","the Gap of Rohan, the eastermost border of Rohan, a contested area between the Rohirrim and the Dunlendings."),
+("fullname_region_gap_of_rohan","the Gap of Rohan, the westernmost border of Rohan, a contested area between the Rohirrim and the Dunlendings."),
 
 ("fullname_region_entwash", "the Mouths of the Entwash, where the Rohan river Entwash joins the Anduin"), # region_entwash = 20
 ("fullname_region_wetwang", "Nindalf, the swamps of Wetwang"), # region_wetwang = 21

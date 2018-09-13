@@ -2371,7 +2371,7 @@ itemsfile version 2
  itm_dwarf_sword_a Dwarf_Sword Dwarf_Sword 4  dwarf_sword_a 0  scab_dwarf_sword_a 3458764513820540928  dwarf_sword_b 156672  scab_dwarf_sword_b 3458764513820697600  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29
 0
 
- itm_dwarf_sword_b Beorning_Shortsword Beorning_Shortsword 2  beorning_seax_mb 0  beorning_seax_sheath_mb 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 31744 105 0 58 0 277 31
+ itm_dwarf_sword_b Beorning_Shortsword Beorning_Shortsword 2  beorning_seax 0  beorning_seax_sheath 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 31744 105 0 58 0 277 31
 0
 
  itm_dwarf_sword_c Dwarf_Sword Dwarf_Sword 2  dwarf_sword_c 0  scab_dwarf_sword_c 3458764513820540928  4259842 9223388564987838479 400 156672 1.25 100 0 0 0 0 29696 103 0 66 0 277 29
@@ -2699,10 +2699,10 @@ itemsfile version 2
  itm_leather_gloves_reward Hunting_Gloves Hunting_Gloves 3  lthr_glove_L 0  ent_hand_L 2097152  olog_hand_L 4  4111 0 200 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
- itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield_mb 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0
+ itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0
 0
 
- itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club_mb 0  4587522 9223388532775583758 2000 156672 2.5 100 0 0 0 0 28672 90 0 67 0 0 540
+ itm_beorn_axe_reward Bear_Club Bear_Club 1  beorning_club 0  4587522 9223388532775583758 2000 156672 2.5 100 0 0 0 0 28672 90 0 67 0 0 540
 0
 
  itm_moria_arrow_reward Moria_Poisoned_Arrows Moria_Poisoned_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  5 1610612736 700 4398046520456 3 100 0 0 0 0 0 0 0 95 40 11 0
