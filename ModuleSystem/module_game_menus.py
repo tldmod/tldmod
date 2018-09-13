@@ -3328,26 +3328,13 @@ game_menus = [
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     ("test_presentation",[],"Test Presentation", [(start_presentation, "prsnt_faction_intro_text")]),
     ("what_theater",[], "Which Theater Am I in / Followers?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
-  (assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news), (call_script, "script_move_scout_camp_to_hardcoded_locations"),]),
+  (assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news)]),
     ] + (is_a_wb_menu==1 and [
-    ("what_region",[], "How far am I from Isengard?", 
-    	[(party_get_position, pos1, "p_main_party"),
-    	 (party_get_position, pos2, "p_town_isengard"),
-    	 (get_distance_between_positions_in_meters, ":distance", pos1, pos2),
-    	 (assign, reg65, ":distance"),
-    	 (display_message, "@{reg65} meters away from Isengard", color_neutral_news),
+    ("what_region",[], "Get Battlesize", 
+    	[(options_get_battle_size, reg65), (assign, reg66, reg65), (display_message, "@{reg65}", color_good_news), 
     	]),
+    ("player_control_allies",[],"Battlesize set to {reg66}", [(options_set_battle_size, reg66),]),
      ] or []) + [
-    ("player_control_allies",[
-    	(try_begin),
-    		(eq, "$player_control_allies",0),
-    		(str_store_string, s7, "@OFF"),
-    	(else_try),
-    		(str_store_string, s7, "@ON"),
-    	(try_end),
-    	],"Let Player Command Allies: {s7}", [
-    	(store_sub, "$player_control_allies",1, "$player_control_allies"), 
-    	(val_clamp, "$player_control_allies",0,2)]),
     ("spawn_orc_horde",[],"Spawn Orc Horde", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_orc_horde"),(display_message, "@Orc Horde Spawned!"),]),
     ("spawn_vet_archer",[],"Spawn Vet Archer", [(set_spawn_radius,3),(spawn_around_party, "p_main_party", "pt_vet_archer"),(display_message, "@Vet Archer Spawned!")]),
     ("melee_ai_test",[],"Melee AI Test", [
@@ -6410,7 +6397,7 @@ game_menus = [
            (val_div, reg0, 3), #scale down the advantage a bit in sieges.
            ] + (is_a_wb_menu==1 and [
            (options_get_battle_size, "$player_battlesize"),
-           (options_set_battle_size, 1416), #200
+           (options_set_battle_size, 415), #200
            (assign, "$player_battlesize_changed", 1),
            	] or []) + [
            (set_battle_advantage, reg0),
@@ -6715,8 +6702,7 @@ game_menus = [
 			(else_try),
 				(str_store_string, s12, "str_empty_string"),
 			(try_end),
-	  ]
-	  ,"Get the book"),
+	  ]),
 	  ##Kham - Player Initiated Siege BEGIN
 	  ("player_castle_initiate_siege",
 	 	[#(eq, "$cheat_mode",1),
@@ -6783,7 +6769,7 @@ game_menus = [
 		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
 		 ] + (is_a_wb_menu==1 and [
          (options_get_battle_size, "$player_battlesize"),
-         (options_set_battle_size, 1416), #200
+         (options_set_battle_size, 415), #200
          (assign, "$player_battlesize_changed", 1),
      	 ] or []) + [
 		 (set_battle_advantage, reg0),
@@ -7119,7 +7105,7 @@ game_menus = [
            (val_div, ":battle_advantage", 3), #scale down the advantage a bit in sieges.
            ] + (is_a_wb_menu==1 and [
            (options_get_battle_size, "$player_battlesize"),
-           (options_set_battle_size, 1416), #200
+           (options_set_battle_size, 415), #200
            (assign, "$player_battlesize_changed", 1),
            	] or []) + [
            (set_battle_advantage, ":battle_advantage"),
@@ -7686,7 +7672,7 @@ game_menus = [
               (val_div, reg0, 3), #scale down the advantage a bit.
               ] + (is_a_wb_menu==1 and [
               (options_get_battle_size, "$player_battlesize"),
-           	  (options_set_battle_size, 1416), #200
+           	  (options_set_battle_size, 415), #200
           	  (assign, "$player_battlesize_changed", 1),
           	  ] or []) + [
               (set_battle_advantage, reg0),
@@ -8330,7 +8316,7 @@ game_menus = [
 		 (val_div, reg0, 3), #scale down the advantage a bit in sieges.
 		 ] + (is_a_wb_menu==1 and [
          (options_get_battle_size, "$player_battlesize"),
-         (options_set_battle_size, 1416), #200
+         (options_set_battle_size, 415), #200
          (assign, "$player_battlesize_changed", 1),
          ] or []) + [
 		 (set_battle_advantage, reg0),

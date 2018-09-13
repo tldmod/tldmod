@@ -1892,8 +1892,8 @@ mission_templates = [ # not used in game
 
 ( "lead_charge",mtf_battle_mode,charge,
   "You lead your men to battle.",
-	[(1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,18,[]),(0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,18,[]),(4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
+	[(1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,35,[]),(0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,35,[]),(4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
      (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 5th entry, for WARGS
      (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 6th entry, for WARGS
      (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),  # this needs be the 7th entry, for WARGS
@@ -4111,19 +4111,19 @@ mission_templates = [ # not used in game
     ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
     
     # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,1,[]),
-     (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,1,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,3,[]),
+     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
+     (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,3,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,1,[]),
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
 
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]), # team left flank
-     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]), # team center
-     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]), # team right flank
+     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team left flank
+     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team center
+     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team right flank
 
      # Defender reinforcements (was 15)
      (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
@@ -4131,21 +4131,21 @@ mission_templates = [ # not used in game
      (46,mtef_defenders|mtef_team_4,af_override_horse,aif_start_alarmed,0,[]),
 
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,5,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
-     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,5,[]),
-     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,5,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,7,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,7,[]),
+     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,7,[]),
 
      # defender archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team left flank
-     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team center
-     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team right flank
-   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
+     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
+     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
+   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
   ],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
@@ -4709,42 +4709,43 @@ mission_templates = [ # not used in game
 
     ## Kham - Distributed Teams using the mtef_team_X flag. 0, 2, 4 are defenders; 1, 3, 5 are attackers. 6 is for the gate. This allows for the attacker_team / defender_team globals to work.
     
-    # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,1,[]),
+   # Attacker initial spawn point (was 0) - Split this into 3 and distribute teams    
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,3,[]),
+     (47,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,3,[]),
+     (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,3,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,3,[]),
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
 
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team left flank
-     (42,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team center
-     (43,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,0,[]), # team right flank
+     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team left flank
+     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team center
+     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team right flank
 
      # Defender reinforcements (was 15)
-     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,2,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
-     (45,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,2,[]),
-     (46,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,2,[]),
+     (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
+     (45,mtef_defenders|mtef_team_2,af_override_horse,aif_start_alarmed,0,[]),
+     (46,mtef_defenders|mtef_team_4,af_override_horse,aif_start_alarmed,0,[]),
 
      # Attacker reinforcements (was 0)
-     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,5,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
-     (48,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,5,[]),
-     (49,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,5,[]),
+     (47,mtef_attackers|mtef_team_1,af_override_horse,aif_start_alarmed,7,[]), #entry 8 for add_reinforcements_to_entry - 12, Kham
+     (48,mtef_attackers|mtef_team_3,af_override_horse,aif_start_alarmed,7,[]),
+     (49,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,7,[]),
 
      # defender archer target positions (was 40-43)
-     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team left flank
-     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-   (54,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team center
-     (55,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
-     (56,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]), # team right flank
-   (57,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (58,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
-     (59,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,1,[]),
+     (50,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team left flank
+     (51,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (52,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (53,mtef_defenders|mtef_team_0|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+   (54,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]), # team center
+     (55,mtef_defenders|mtef_team_2|mtef_archers_first,af_override_horse,aif_start_alarmed,3,[]),
+     (56,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]), # team right flank
+   (57,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (58,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     (59,mtef_defenders|mtef_team_4|mtef_archers_first,af_override_horse,aif_start_alarmed,2,[]),
+     
   ],
    tld_common_wb_muddy_water+
     common_deathcam_triggers+
