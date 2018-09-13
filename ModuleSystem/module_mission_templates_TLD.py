@@ -543,13 +543,27 @@ common_battle_mission_start = (ti_before_mission_start, 0, 0, [],[
 	(team_set_relation, 0, 2, 1),
 	(team_set_relation, 1, 3, 1),
 	(call_script, "script_change_banners_and_chest"),
-	(set_rain, 0,100), # switch off ingame weather
+	#(set_rain, 0,100), # switch off ingame weather
+	] + ((is_a_wb_mt==1) and [
+	(party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+	(try_begin),
+		(eq, ":encounter_effect", LORIEN_MIST),
+		(set_rain, 2,500), #yellow thingies in elven places
+	(else_try),
+		(eq, ":encounter_effect", SARUMAN_STORM),
+		(set_rain, 1,300),
+	(else_try),
+		(set_rain, 0, 100),
+	(try_end),
+	
+	] or [(set_rain, 0, 100)]) + [
 	])
 
 common_battle_tab_press = (ti_tab_pressed, 0, 0, [],[
 	(try_begin),
 		(eq, "$battle_won", 1),
 		(call_script, "script_count_mission_casualties_from_agents"),
+		(party_set_slot, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
 		(finish_mission,0),
 	(else_try), #MV added this section
 		(main_hero_fallen),
@@ -559,6 +573,7 @@ common_battle_tab_press = (ti_tab_pressed, 0, 0, [],[
 		(assign, "$g_battle_result", -1),
 		(set_mission_result,-1),
 		(call_script, "script_count_mission_casualties_from_agents"),
+		(party_set_slot, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
 		(finish_mission,0),
 	(else_try),
 		(call_script, "script_cf_check_enemies_nearby"),
@@ -800,7 +815,7 @@ moto_formations_triggers = (not is_a_wb_mt==1 and
 or  
 
   field_ai_triggers + order_weapon_type_triggers +
-  utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto + [
+  utility_triggers + extended_battle_menu + common_division_data + division_order_processing + real_deployment + formations_triggers_moto + AI_triggers_moto + battle_encounters_effects + [
   tld_kill_or_wounded_triggers,
 ])
 
@@ -1598,7 +1613,7 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	(assign,"$warg_to_be_replaced",-1),	#  this warg needs replacing
 	(assign,"$nazgul_team", -1), # will be found when needed
 	(call_script, "script_check_agent_armor"), # check for berserker trait
-	(set_rain, 0,100), #switch off vanilla rain and snow
+	#(set_rain, 0,100), #switch off vanilla rain and snow
 
 	# CC: Maybe we could add a chance that if the player is playing as a mordor orc, a nazgul may come to his aid?
 
@@ -2183,9 +2198,9 @@ custom_troll_hitting = ((is_a_wb_mt==1) and (
 				#	(display_message, "@Debug: Troll attack key pressed."),
 				(try_end),
 			(else_try),
-				# AI attacks 10% of times, if at least a victim is in range
+				# AI attacks 10% of times, if at least a victim is in range - changed to 20% (kham)
 				(store_random_in_range,":random",1,101),
-				(le,":random",10), 
+				(le,":random",20), 
 				(agent_get_position, pos1,":troll"),
 				(try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
 					(eq,":status",0),
@@ -2444,9 +2459,9 @@ or
 				#	(display_message, "@Debug: Troll attack key pressed."),
 				(try_end),
 			(else_try),
-				# AI attacks 10% of times, if at least a victim is in range
+				# AI attacks 10% of times, if at least a victim is in range - changed to 20% (kham)
 				(store_random_in_range,":random",1,101),
-				(le,":random",10), 
+				(le,":random",20), 
 				(agent_get_position,1,":troll"),
 				(agent_get_team, ":troll_team", ":troll"),
 				(try_for_agents,":victim"),

@@ -1347,6 +1347,29 @@ mission_templates = [ # not used in game
 				(try_end),
 			(try_end),
 		(try_end)]),
+
+ ] + ((is_a_wb_mt==1) and [
+  
+  (ti_before_mission_start, 0, ti_once, [
+     (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+     (gt, ":encounter_effect", NO_EFFECT_PRESENT),
+     
+  ],[
+
+      (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+      (try_begin),
+        (eq, ":encounter_effect", LORIEN_MIST),
+        (set_rain, 2,500), #yellow thingies in elven places
+      (else_try),
+        (eq, ":encounter_effect", SARUMAN_STORM),
+        (set_rain, 1,300),
+     # (else_try),
+     #   (set_rain, 0, 100),
+      (try_end),
+  ]),
+
+  ] or []) + [
+
 ]),
 #----------------------------------------------------------------
 #mission templates before this point are hardwired into the game.

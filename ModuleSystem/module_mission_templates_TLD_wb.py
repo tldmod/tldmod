@@ -3411,3 +3411,109 @@ formations_triggers_moto = [ #4 triggers
 #      (call_script, "script_switch_from_noswing_weapons_moto", ":dead_agent_no"),
 #  ]),
 ]#end formations triggers
+
+
+battle_encounters_effects = [
+
+(ti_after_mission_start, 0, ti_once, [
+
+  (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+  (neq, ":encounter_effect", NO_EFFECT_PRESENT),
+
+  ],[
+
+  (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+
+  (try_begin),
+    (eq, ":encounter_effect", LORIEN_MIST),
+    #(set_rain, 2,500), #yellow thingies in elven places
+    (set_fog_distance,400,0xFFF09D),
+    #(display_message, "@DEBUG: LORIEN_MIST"),
+    (call_script, "script_lorien_mist_effect"), 
+  (else_try),
+    (eq, ":encounter_effect", SAURON_DARKNESS),
+    (set_fog_distance,350,0x212020),
+    (set_global_cloud_amount, 100),
+    #(display_message, "@DEBUG: SAURON_DARKNESS"),
+    (call_script, "script_sauron_darkness_effect"), 
+  (else_try),
+    (eq, ":encounter_effect", SARUMAN_STORM),
+    #(set_rain, 1,300), 
+    (set_fog_distance,400,0x212020),
+    (set_global_cloud_amount, 100),
+    #(display_message, "@DEBUG: SARUMAN_STORM"),
+    (call_script, "script_saruman_storm_effect"), 
+  (else_try),
+    (eq, ":encounter_effect", GULDUR_FOG),
+    (set_fog_distance,350,0x4B6047),
+    #(display_message, "@DEBUG: GULDUR_FOG"),
+    (call_script, "script_guldur_fog_effect"), 
+  (try_end),
+
+ ]),
+
+
+# Thunder storms
+  (1, 0, ti_once, #preparations 2
+    [
+      (assign, "$lightning_cycle", -1),
+      (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
+    ],
+    [
+      
+      (assign, "$lightning_cycle", 0),
+      
+      (eq, "$lightning_cycle", 0),
+      (get_startup_sun_light, pos1),
+      (position_get_x, "$sun_r", pos1), # r
+      (position_get_y, "$sun_g", pos1), # g
+      (position_get_z, "$sun_b", pos1), # b
+      (get_startup_ambient_light, pos1),
+      (position_get_x, "$amb_r", pos1), # r
+      (position_get_y, "$amb_g", pos1), # g
+      (position_get_z, "$amb_b", pos1), # b
+      
+  ]),
+  
+  (3, 0.2, 6,       #lightning 1
+    [
+      (eq,"$lightning_cycle",0),
+      (store_random_in_range,":chance",1,5),
+      (eq,":chance",1),
+      (play_sound,"snd_thunder"),
+      (set_startup_sun_light, 1000, 1000, 1000),
+      (set_startup_ambient_light, 1000, 1000, 1000),
+    ],
+    [
+      (set_startup_sun_light, 0, 0, 0),
+      (set_startup_ambient_light, 0, 0, 0),
+      (assign, "$lightning_cycle",1),
+  ]),
+  
+  (0.4,0.1, 6,      #lightning 2
+    [
+      (eq,"$lightning_cycle",1),
+      
+      (set_startup_sun_light, 220, 220, 220),
+      (set_startup_ambient_light, 220, 220, 220),
+    ],
+    [
+      (set_startup_sun_light, 1, 1, 1),
+      (set_startup_ambient_light, 1, 1, 1),
+      (assign,"$lightning_cycle",2),
+  ]),
+  
+  (0.5,0.1, 6,      #lightning 3
+    [
+      (eq,"$lightning_cycle",2),
+      (set_startup_sun_light, 150, 150, 150),
+      (set_startup_ambient_light, 150, 150, 150),
+    ],
+    [
+      (set_startup_sun_light, "$sun_r", "$sun_g", "$sun_b"),
+      (set_startup_ambient_light, "$amb_r", "$amb_g", "$amb_b"),
+      (assign,"$lightning_cycle", 0),
+  ]),
+
+
+]

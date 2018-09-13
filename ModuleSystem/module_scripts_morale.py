@@ -368,6 +368,40 @@ morale_scripts = [
 			(store_mul, ":morale_bonus", reg0, 3),
 			(val_sub, reg1, ":morale_bonus"),
 		(try_end),
+
+		# Morale Buffs/Debuffs of Encounter Effects
+
+ 	] + ((is_a_wb_script==1) and [
+		(try_begin),
+
+			(party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
+			(ge, ":encounter_effect", LORIEN_MIST), #Encounter effect present
+
+			(call_script, "script_cf_agent_get_faction", ":agent_no"),
+			(assign, ":faction_id", reg0),
+			(faction_get_slot, ":faction_side", ":faction_id", slot_faction_side),
+			(gt, ":faction_id", -1),
+
+			(try_begin),
+				(eq, ":encounter_effect", LORIEN_MIST),
+				(try_begin),
+					(eq, ":faction_side", faction_side_good),
+					(val_sub, reg1, ENCOUNTER_EFFECT_MORALE_BUFF),
+				(else_try),
+					(val_add, reg1, ENCOUNTER_EFFECT_MORALE_DEBUFF),
+				(try_end),
+			(else_try),
+				(is_between, ":encounter_effect", SAURON_DARKNESS, END_EFFECTS),
+				(try_begin),
+					(eq, ":faction_side", faction_side_good),
+					(val_add, reg1, ENCOUNTER_EFFECT_MORALE_DEBUFF),
+				(else_try),
+					(val_sub, reg1, ENCOUNTER_EFFECT_MORALE_BUFF),
+				(try_end),
+			(try_end),
+		(try_end),
+	] or []) + [
+
 	]),
 
 	# script_cf_spawn_routed_parties

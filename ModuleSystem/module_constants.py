@@ -2143,7 +2143,7 @@ faction_player_icons = [
     (fac_dale    ,icon_player_horseman			,icon_player		,icon_player),
     (fac_dwarf   ,icon_player_horseman			,icon_dwarf			,icon_dwarf),
     (fac_dunland ,icon_dunland_captain			,icon_dunlander		,icon_dunlander),
-    (fac_beorn   ,icon_player_horseman			,icon_player		,icon_player),
+    (fac_beorn   ,icon_player_horseman			,icon_axeman		,icon_axeman),
 ]
 subfac_regular = 0  # the capital (Gondor or Rohan)
 
@@ -2667,3 +2667,29 @@ slot_item_light_armor = 86
 
 slot_troop_player_clone = 155
 slot_troop_has_custom_armour = 156
+
+slot_party_battle_encounter_effect = 308
+
+NO_EFFECT_PRESENT = 0
+LORIEN_MIST = 1
+GIANT_BOULDERS = 2
+EAGLES_ABOVE = 3
+SAURON_DARKNESS = 4
+SARUMAN_STORM = 5
+GULDUR_FOG = 6
+END_EFFECTS = 7
+
+RANGED_ACCURACY_DEBUFF = 85
+RANGED_ACCURACY_BUFF = 115
+RANGED_DAMAGE_DEBUFF = 90
+RANGED_DAMAGE_BUFF = 110
+RANGED_RELOAD_SPEED_DEBUFF = 85
+RANGED_RELOAD_SPEED_BUFF = 115
+WEAPON_DAMAGE_DEBUFF = 90
+WEAPON_DAMAGE_BUFF = 110
+SPEED_DEBUFF = 90
+SPEED_BUFF = 110
+MAX_HEALTH_BUFF = 110
+MAX_HEALTH_DEBUFF = 90
+ENCOUNTER_EFFECT_MORALE_BUFF = 10
+ENCOUNTER_EFFECT_MORALE_DEBUFF = 10

@@ -1656,7 +1656,7 @@ simple_triggers = [
       #not in the victory menus because parties are still not defeated then
       (try_begin),
         (check_quest_active, "qst_eliminate_patrols"),
-        #(neg|check_quest_concluded, "qst_eliminate_patrols"),
+        (neg|check_quest_concluded, "qst_eliminate_patrols"),
         (quest_get_slot, ":quest_target_party_template", "qst_eliminate_patrols", slot_quest_target_party_template),
         (quest_get_slot, ":quest_target_faction", "qst_eliminate_patrols", slot_quest_target_faction),
         (try_begin),
@@ -3476,6 +3476,133 @@ simple_triggers = [
       (try_end),
   ]),
   
+  # Encounter Effects Trigger - InVain & Kham
+
+  (5, [
+
+] + (is_a_wb_trigger==1 and [
+    (assign, ":continue", 0),
+
+    (try_begin),
+      (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
+      (assign, ":continue", 1),
+    (else_try),
+      (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
+      #(display_message, "@EFFECTS CLEARED", color_bad_news),
+    (try_end),
+
+    (eq, ":continue", 1),
+
+
+    (call_script, "script_get_region_of_party", "p_main_party"),
+    (assign, ":region", reg1),
+
+    (faction_get_slot, ":mordor_strength", "fac_mordor", slot_faction_strength),
+    (store_div, ":chance_darkness", ":mordor_strength", 20),
+
+    (faction_get_slot, ":isengard_strength", "fac_isengard", slot_faction_strength),
+    (store_div, ":chance_storm", ":isengard_strength", 20),
+
+    (faction_get_slot, ":guldur_strength", "fac_guldur", slot_faction_strength),
+    (store_div, ":chance_fog", ":guldur_strength", 20),
+
+    (faction_get_slot, ":lorien_strength", "fac_lorien", slot_faction_strength),
+    (store_div, ":chance_mist", ":lorien_strength", 20),
+
+    (store_random_in_range, ":random_chance", 0, 100),
+
+    (try_begin),
+      (eq, "$relocated", 1),
+      (party_get_position, pos5, "p_pointer_player"),
+    (else_try),
+      (party_get_position, pos5, "p_main_party"),
+    (try_end),
+    
+    (try_begin), # LORIEN MIST
+      (faction_slot_eq, "fac_lorien", slot_faction_state, sfs_active),
+      (party_get_position, pos6, "p_town_caras_galadhon"),
+      (party_get_position, pos7, "p_town_cerin_dolen"),
+      (party_get_position, pos8, "p_town_cerin_amroth"),
+      (assign, ":continue_lorien", 0),
+      (try_begin),
+        (get_distance_between_positions_in_meters, ":distance_lorien", pos5, pos6),
+        (le, ":distance_lorien", 12),
+        (assign, ":continue_lorien", 1),
+      (else_try),
+        (get_distance_between_positions_in_meters, ":distance_lorien", pos5, pos7),
+        (le, ":distance_lorien", 12),
+        (assign, ":continue_lorien", 1),
+      (else_try),
+        (get_distance_between_positions_in_meters, ":distance_lorien", pos5, pos8),
+        (le, ":distance_lorien", 12),
+        (assign, ":continue_lorien", 1),
+      (try_end),
+      (eq, ":continue_lorien", 1),
+      (lt, ":random_chance", ":chance_mist"),
+      (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, LORIEN_MIST),
+      #(display_message, "@LORIEN_MIST", color_good_news),
+
+    
+    (else_try), #SAURON DARKNESS
+      (faction_slot_eq, "fac_mordor", slot_faction_state, sfs_active),
+      (this_or_next|eq, ":region", region_dagorlad),
+      (is_between, ":region", region_n_ithilien, region_druadan_forest),
+      (lt, ":random_chance", ":chance_darkness"),
+      (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, SAURON_DARKNESS),
+      #(display_message, "@SAURON_DARKNESS", color_good_news),
+
+    (else_try), #SARUMAN STORM
+      (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
+      (party_get_position, pos6, "p_town_isengard"),
+      (party_get_position, pos7, "p_town_troll_cave"),
+      (party_get_position, pos8, "p_town_moria"),
+      (party_get_position, pos9, "p_town_goblin_north_outpost"),
+      (assign, ":continue_saruman", 0),
+      (try_begin),
+        (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos6),
+        (le, ":distance_saruman", 20),
+        (assign, ":continue_saruman", 1),
+      (else_try),
+        (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos7),
+        (le, ":distance_saruman", 20),
+        (assign, ":continue_saruman", 1),
+      (else_try),
+        (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos8),
+        (le, ":distance_saruman", 20),
+        (assign, ":continue_saruman", 1),
+      (else_try),
+        (get_distance_between_positions_in_meters, ":distance_saruman", pos5, pos9),
+        (le, ":distance_saruman", 20),
+        (assign, ":continue_saruman", 1),
+      (try_end),
+      (eq, ":continue_saruman", 1),
+      (lt, ":random_chance", ":chance_storm"),
+      (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
+      #(display_message, "@DEBUG: SARUMAN_STORM", color_good_news),
+
+    (else_try), #GULDUR FOG
+      (faction_slot_eq, "fac_guldur", slot_faction_state, sfs_active),
+      (party_get_position, pos6, "p_town_dol_guldur"),
+      (party_get_position, pos7, "p_town_dol_guldur_north_outpost"),
+      (assign, ":continue_guldur", 0),
+      (try_begin),
+        (get_distance_between_positions_in_meters, ":distance_guldur", pos5, pos6),
+        (le, ":distance_guldur", 12),
+        (assign, ":continue_guldur", 1),
+      (else_try),
+        (get_distance_between_positions_in_meters, ":distance_guldur", pos5, pos7),
+        (le, ":distance_guldur", 12),
+        (assign, ":continue_guldur", 1),
+      (try_end),
+      (eq, ":continue_guldur", 1),
+      (lt, ":random_chance", ":chance_fog"),
+      (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, GULDUR_FOG),
+      #(display_message, "@DEBUG: GULDUR_FOG", color_good_news),
+    
+    (try_end),
+  ] or [ ]) + [
+
+]),
   
   
   ##############################################
@@ -3494,10 +3621,10 @@ simple_triggers = [
   #trigger reserved for future save game compatibility
   #(999,[]), # Replaced by guardian party quest
   #trigger reserved for future save game compatibility
-  (999,[]),
+  #(999,[]), # Replaced by Battle Encounter Effects
   
   #trigger reserved for future save game compatibility
-  (999,[]),
+  (999,[]), 
   #trigger reserved for future save game compatibility
   (999,[]),
   #trigger reserved for future save game compatibility

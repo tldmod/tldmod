@@ -4933,8 +4933,8 @@ scripts = [
 #		    (val_sub, ":strength",":party_value"),   # lesser parties dying can't shift faction strength through threshold
 #	    (try_end),
           (try_begin),
-		  (ge, "$tld_war_began", 1), #Invain: no faction strength changes before war starts
-	      (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
+			  (ge, "$tld_war_began", 1), #Invain: no faction strength changes before war starts
+		      (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
           (try_end),
           # add half victory points to the winner faction
           (try_begin),
@@ -27486,4 +27486,178 @@ if is_a_wb_script==1:
 	(set_fixed_point_multiplier, 10),
 	(prop_instance_set_scale, ":mordor_clouds", 500,500,500),
 	(display_message, "@Mordor Cloud Spawned"),]),
+
+("lorien_mist_effect", [
+
+	(get_player_agent_no, ":player"),
+	(agent_get_team, ":player_team", ":player"),
+	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+
+	(try_for_agents, ":agent"),
+		(agent_is_active, ":agent"),
+		(agent_is_alive, ":agent"),
+		(agent_get_team, ":agent_team", ":agent"),
+		(try_begin),
+			(eq, ":player_side", faction_side_good), #If Good
+			(try_begin),
+				(eq, ":agent_team", ":player_team"),
+				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_BUFF),
+				(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_BUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.", color_neutral_news),
+				(try_end),
+			(else_try),
+				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
+				(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.", color_neutral_news),
+				(try_end),
+			(try_end),
+		(else_try), #If Player is Evil
+			(eq, ":agent_team", ":player_team"), #And agent is in player's team
+			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
+			(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.", color_neutral_news),
+				(try_end),
+		(else_try), #If Player is Evil
+			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_BUFF), #and agent is not in player's team, they must be good.
+			(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_BUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.", color_neutral_news),
+				(try_end),
+		(try_end),
+	(try_end),
+ ]),
+
+
+("sauron_darkness_effect", [
+
+	(get_player_agent_no, ":player"),
+	(agent_get_team, ":player_team", ":player"),
+	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+
+	(try_for_agents, ":agent"),
+		(agent_is_active, ":agent"),
+		(agent_is_alive, ":agent"),
+		(agent_get_team, ":agent_team", ":agent"),
+		(try_begin),
+			(eq, ":player_side", faction_side_good), #If Good
+			(try_begin),
+				(eq, ":agent_team", ":player_team"),
+				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
+				(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrify your men.", color_neutral_news),
+				(try_end),
+			(else_try),
+				(agent_set_damage_modifier, ":agent", WEAPON_DAMAGE_BUFF),
+				(agent_set_speed_modifier, ":agent", SPEED_BUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.", color_neutral_news),
+				(try_end),
+			(try_end),
+		(else_try), #If Player is Evil
+			(eq, ":agent_team", ":player_team"), #And agent is in player's team
+			(agent_set_damage_modifier, ":agent", WEAPON_DAMAGE_BUFF),
+			(agent_set_speed_modifier, ":agent", SPEED_BUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@Dark clouds from Mordor cover the battlefield. The Dark Lord's presence strengthens you and your men.", color_neutral_news),
+				(try_end),
+		(else_try), #If Player is Evil
+			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF), #and agent is not in player's team, they must be good.
+			(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrify your men.", color_neutral_news),
+				(try_end),
+		(try_end),
+	(try_end),
+ ]),
+
+("saruman_storm_effect", [
+
+	(get_player_agent_no, ":player"),
+	(agent_get_team, ":player_team", ":player"),
+	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+
+	(try_for_agents, ":agent"),
+		(agent_is_active, ":agent"),
+		(agent_is_alive, ":agent"),
+		(agent_get_team, ":agent_team", ":agent"),
+		(try_begin),
+			(eq, ":player_side", faction_side_good), #If Good
+			(try_begin),
+				(eq, ":agent_team", ":player_team"),
+				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
+				(agent_set_speed_modifier, ":agent", SPEED_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.", color_neutral_news),
+				(try_end),
+			(else_try),
+				(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.", color_neutral_news),
+				(try_end),
+			(try_end),
+		(else_try), #If Player is Evil
+			(eq, ":agent_team", ":player_team"), #And agent is in player's team
+			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Archers have difficulty in this weather.", color_neutral_news),
+				(try_end),
+		(else_try), #If Player is Evil
+			(agent_set_accuracy_modifier, ":agent", RANGED_ACCURACY_DEBUFF), #and agent is not in player's team, they must be good.
+			(agent_set_speed_modifier, ":agent", SPEED_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A thunderstorm from the Misty Mountains rages over the battlefield. Your troops are slowed down, and the superstitious amongst the men feel scared.", color_neutral_news),
+				(try_end),
+		(try_end),
+	(try_end),
+ ]),
+
+("guldur_fog_effect", [
+
+	(get_player_agent_no, ":player"),
+	(agent_get_team, ":player_team", ":player"),
+	(faction_get_slot, ":player_side", "$players_kingdom", slot_faction_side),
+
+	(try_for_agents, ":agent"),
+		(agent_is_active, ":agent"),
+		(agent_is_alive, ":agent"),
+		(agent_get_team, ":agent_team", ":agent"),
+		(try_begin),
+			(eq, ":player_side", faction_side_good), #If Good
+			(try_begin),
+				(eq, ":agent_team", ":player_team"),
+				(agent_set_max_hit_points, ":agent", MAX_HEALTH_DEBUFF),
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A poisonous fog from Dol Guldur lingers on the battlefield. You and your troops feel weakened. There is fear amongst the men.", color_neutral_news),
+				(try_end),
+			(try_end),
+		(else_try), #If Player is Evil
+			(eq, ":agent_team", ":player_team"), #And agent is in player's team
+			# Do nothing
+				(try_begin), #DEBUG
+					(eq, ":agent", ":player"),
+					(display_message, "@A poisonous fog from Dol Guldur lingers on the battlefield. You do not feel any different, but you hear your enemies suffer and you can smell their fear.", color_neutral_news),
+				(try_end),
+		(else_try), #If Player is Evil
+			(agent_set_max_hit_points, ":agent", MAX_HEALTH_DEBUFF), #and agent is not in player's team, they must be good.
+		(try_end),
+	(try_end),
+ ]),
+
 ]

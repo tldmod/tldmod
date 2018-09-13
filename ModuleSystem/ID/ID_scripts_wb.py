@@ -716,5 +716,9 @@ script_cf_init_kill_quest_bandit = 714
 script_clone_troop = 715
 script_cf_get_custom_armor_ranges = 716
 script_set_mordor_cloud_scene_prop = 717
+script_lorien_mist_effect = 718
+script_sauron_darkness_effect = 719
+script_saruman_storm_effect = 720
+script_guldur_fog_effect = 721
 
 
