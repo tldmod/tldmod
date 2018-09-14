@@ -415,7 +415,13 @@ dialogs = [
     (else_try),
       (str_store_string, s2, "@Pippin asked you to deliver a message to his cousin, Merry, in Edoras."),
     (try_end),
-    (call_script, "script_start_quest", "qst_deliver_message_hobbit", "$g_talk_troop")] 
+    (call_script, "script_start_quest", "qst_deliver_message_hobbit", "$g_talk_troop"),
+    (try_begin),
+      (eq, "$g_talk_troop", "trp_merry_notmet"),
+      (quest_set_slot, "qst_deliver_message_hobbit", slot_quest_target_troop, "trp_pippin_notmet"),
+    (else_try),
+      (quest_set_slot, "qst_deliver_message_hobbit", slot_quest_target_troop, "trp_merry_notmet"),
+    (try_end),] 
 ],
 
 [anyone|plyr,   "hobbit_general_talk_ask_3", [
@@ -481,12 +487,14 @@ dialogs = [
 ##Kham - Hobbit Deliver Start
 
 [anyone|plyr, "hobbit_merry_talk_met", [
-  (check_quest_active, "qst_deliver_message_hobbit")], 
+  (check_quest_active, "qst_deliver_message_hobbit"),
+  (quest_slot_eq, "qst_deliver_message_hobbit", slot_quest_target_troop, "trp_merry_notmet"),], 
     "Hello, messer Merry. I have a message here from your cousin, Pippin, in Minas Tirith.","hobbit_deliver_message",[]
 ],
 
 [anyone|plyr, "hobbit_pippin_talk_met", [
-  (check_quest_active, "qst_deliver_message_hobbit")], 
+  (check_quest_active, "qst_deliver_message_hobbit"),
+  (quest_slot_eq, "qst_deliver_message_hobbit", slot_quest_target_troop, "trp_pippin_notmet"),], 
     "Hello, messer Pippin. I have a message here from your cousin, Merry, in Edoras.","hobbit_deliver_message",[]
 ],
 
@@ -2991,6 +2999,18 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     ],
 "{s5}", "lord_guardian_party_start",[]],
 
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_guardian_party_quest"),
+    (quest_slot_ge, "qst_guardian_party_quest", slot_quest_dont_give_again_period, 1),   
+    (neg|quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 3), 
+    (quest_get_slot, ":giver_troop", "qst_guardian_party_quest", slot_quest_target_troop),
+    (eq, "$g_talk_troop", ":giver_troop"),
+    (str_store_string, s5, "@Are you ready to meet Isengard's last stand?"),
+    ],
+"{s5}", "lord_guardian_party_start",[]],
+
+
 [anyone|plyr,"lord_pretalk", [
     (check_quest_active, "qst_guardian_party_quest"),
     (neg|quest_slot_eq, "qst_guardian_party_quest", slot_quest_dont_give_again_period, 0),    
@@ -3014,7 +3034,16 @@ How could I expect someone like {playername} to be up to the challenge. My serva
   (quest_set_slot, "qst_guardian_party_quest", slot_quest_dont_give_again_period, ":wait_time"),]],
 
 
-[anyone,"lord_guardian_party_agree", [
+[anyone,"lord_guardian_party_agree", [ (party_get_num_companions, ":party_size", "p_main_party",), (lt, ":party_size", 31),
+    (str_store_string, s5, "@You do not have enough troops to help in this battle. Raise at least 30 men and join me soon!"),
+    ],
+"{s5}", "close_window",[
+  (quest_get_slot, ":wait_time", "qst_guardian_party_quest", slot_quest_dont_give_again_period),
+  (val_add, ":wait_time", 1),
+  (quest_set_slot, "qst_guardian_party_quest", slot_quest_dont_give_again_period, ":wait_time"),]],
+
+
+[anyone,"lord_guardian_party_agree", [ (party_get_num_companions, ":party_size", "p_main_party",), (ge, ":party_size", 31),
     (str_store_string, s5, "@Stay close, we will take position near the enemy. When we have all gathered, we will strike."),
     ],
 "{s5}", "close_window",[
@@ -3027,7 +3056,7 @@ How could I expect someone like {playername} to be up to the challenge. My serva
     (quest_get_slot, ":wait_time", "qst_guardian_party_quest", slot_quest_dont_give_again_period),
     (try_begin),
       (gt, ":wait_time", 2),
-      (str_store_string, s5, "@You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and when in 3 days time, we will strike."),
+      (str_store_string, s5, "@You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and in 3 days time, we will strike."),
     (else_try),
       (str_store_string, s5, "@Make haste, {playername}. We do not want them to recover."),
     (try_end),
@@ -3039,6 +3068,8 @@ How could I expect someone like {playername} to be up to the challenge. My serva
       (quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 3),
     (try_end),
     (call_script,"script_stand_back"),(eq,"$talk_context",tc_party_encounter),(assign, "$g_leave_encounter", 1)]],
+
+#### Kham Guardian Party Quest END
 
 
 [anyone,"lord_start", [(store_partner_quest,":lords_quest"),

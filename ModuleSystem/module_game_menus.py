@@ -9368,6 +9368,26 @@ game_menus = [
 
 ## Kham - Center Besieged Menu - END
 
+## Kham - Guardian Party Spawned - Start
+
+("guardian_party_spawned",0,
+   "^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.",
+    "none",
+    [   (set_background_mesh, "mesh_ui_default_menu_window"),
+        (set_fixed_point_multiplier, 100),
+        (position_set_x, pos0, 65),
+        (position_set_y, pos0, 30),
+        (position_set_z, pos0, 170),
+    	(set_game_menu_tableau_mesh, "tableau_faction_note_mesh_banner", reg70, pos0),
+
+    ],
+
+   	[("guardian_party_spawned_close", [], "Close", [(change_screen_return)]),
+
+]),
+
+## Kham - Guardian Party Spawned - END
+
 ( "auto_return_to_map",0,"stub","none",[(change_screen_map)],[]),
 #MV: hackery to get around change_screen_exchange_with_party limitations
 ( "auto_player_garrison",0,"stub","none",

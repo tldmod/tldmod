@@ -79,6 +79,19 @@ ai_scripts = [
 	   (ge,"$tld_war_began",1),  # faction AI can change only if War started, GA
        
 	   (store_script_param_1, ":faction_no"),
+
+    (assign, ":guardian_party_quest_active", 0),
+
+     (try_begin),
+      (check_quest_active, "qst_guardian_party_quest"),
+      (quest_get_slot, ":guardian_party_attacker", "qst_guardian_party_quest", slot_quest_object_center),
+      (eq, ":faction_no", ":guardian_party_attacker"),
+      (assign, ":guardian_party_quest_active", 1),
+     (try_end),
+
+     (this_or_next|faction_slot_eq, ":faction_no", slot_faction_last_stand, 0), #Kham - No Faction AI during last stand event
+     (neq, ":guardian_party_quest_active", 1), #No Faction AI for guardian party attacker faction
+
 	   (faction_get_slot, ":old_faction_ai_state", ":faction_no", slot_faction_ai_state),
        (faction_get_slot, ":old_faction_ai_object", ":faction_no", slot_faction_ai_object),
        (faction_get_slot, ":old_faction_ai_last_offensive_time", ":faction_no", slot_faction_ai_last_offensive_time),
@@ -1858,6 +1871,8 @@ ai_scripts = [
 ("process_hero_ai",
     [ (store_script_param_1, ":troop_no"),
       (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+      (neg|party_slot_eq, ":party_no", slot_party_scripted_ai, 1), #Kham - override AI when scripted.
+
       (try_begin),
         (party_is_active, ":party_no"),
         (store_faction_of_party, ":faction_no", ":party_no"),
@@ -2287,6 +2302,7 @@ ai_scripts = [
 ("decide_kingdom_party_ais", [
    (try_begin),
       (ge,"$tld_war_began",1),  # party AI can change only if War started, GA
+
       (try_for_range, ":faction_no", kingdoms_begin, kingdoms_end),
          (faction_slot_eq, ":faction_no", slot_faction_state, sfs_active),
          (neq, ":faction_no", "fac_player_supporters_faction"),
@@ -2298,6 +2314,7 @@ ai_scripts = [
          (neq, ":faction_marshall", "trp_player"),
          (troop_get_slot, ":faction_marshall_party", ":faction_marshall", slot_troop_leaded_party),
          (gt, ":faction_marshall_party", 0),
+
          (try_begin),
             (eq, ":faction_ai_state", sfai_gathering_army),
             (try_begin), #TLD: if there is an advance camp, travel there to gather your army

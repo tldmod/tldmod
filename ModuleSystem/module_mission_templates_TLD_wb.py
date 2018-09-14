@@ -3476,7 +3476,7 @@ battle_encounters_effects = [
   ]),
   
   (3, 0.2, 6,       #lightning 1
-    [
+    [ (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
       (eq,"$lightning_cycle",0),
       (store_random_in_range,":chance",1,5),
       (eq,":chance",1),
@@ -3491,7 +3491,7 @@ battle_encounters_effects = [
   ]),
   
   (0.4,0.1, 6,      #lightning 2
-    [
+    [ (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
       (eq,"$lightning_cycle",1),
       
       (set_startup_sun_light, 220, 220, 220),
@@ -3504,7 +3504,7 @@ battle_encounters_effects = [
   ]),
   
   (0.5,0.1, 6,      #lightning 3
-    [
+    [ (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
       (eq,"$lightning_cycle",2),
       (set_startup_sun_light, 150, 150, 150),
       (set_startup_ambient_light, 150, 150, 150),

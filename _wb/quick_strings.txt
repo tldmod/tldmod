@@ -1,4 +1,4 @@
-1830
+1827
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -730,9 +730,6 @@ qstr_Formula:_[_A:{reg67}_+ Formula:_[(A:{reg67}_+_B:{reg69}_-_C:{reg64})_*_D:_{
 qstr_Total:_{reg62} Total:_{reg62}
 qstr_lord_{reg1}:_{s1}_is_at lord_{reg1}:_{s1}_is_attacking_{s2}
 qstr_lord_{reg1}:_{s1}_NOT_a lord_{reg1}:_{s1}_NOT_attacking_{s2}
-qstr_Lords_attempting_to_ Lords_attempting_to_follow_marshall
-qstr_Marshall_Travelling_ Marshall_Travelling_to_Position_Near_Guardian_Party_-_Distance:_{reg70}_--_Cur_Hours:_{reg68}_-__Wait_Time:{reg69}
-qstr_Marshall_Attacking_I Marshall_Attacking_Isengard_Guardian_Party
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}
@@ -1297,8 +1294,6 @@ qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
 qstr_You_have_{reg69}_all You_have_{reg69}_ally_party_following_you
 qstr_You_have_{reg69}_ally You_have_{reg69}_ally_parties_following_you
 qstr_The_forces_of_{s2}_h The_forces_of_{s2}_have_regrouped_and_march_on_to_{s15}!
-qstr_{reg70}___Qst_GP_Tri {reg70}_-_Qst_GP_Trigger_0
-qstr_{reg70}___Qst_GP_Trig {reg70}_-_Qst_GP_Trigger_1
 qstr_{s1}_from_{s2} {s1}_from_{s2}
 qstr_When_dealing_with_lo When_dealing_with_locals_in_{s11},_remember_that_they_do_not_know_you_and_they_don't_necessarily_acknowledge_the_merits_you've_earned_in_{s10}.^^(the_Resource_Points_which_you_can_dispose_of_among_people_from_{s11}_are_not_the_ones_you_earned_in_{s10},_but_the_ones_you_will_earn_in_{s11}_--_see_also_the_Report_screen)
 qstr_Info Info
@@ -1463,11 +1458,13 @@ qstr_This_is_evil_news_you This_is_evil_news_you_bring._The_Easterlings_grow_eve
 qstr_Pah!_It_seems_you_we Pah!_It_seems_you_weren't_able_to_find_your_sea-legs,_{playername}._Now_they_sit,_these_men_of_Gondor,_high_in_their_towers,_vain_as_kings,_laughing_as_the_black_sails_burn!_Perhaps_a_stint_at_the_oars_of_a_galley_would_be_fitting_punishment_for_your_troops;_a_pity_they_are_under_your_command,_and_not_mine._The_Eye_will_not_be_pleased._Leave_me_now._
 qstr_Have_you_nothing_bet Have_you_nothing_better_than_weak_excuses_to_offer_for_your_failure,_{playername}?_Perhaps_you_are_not_as_strong_as_we_had_believed._Serve_our_cause_better_in_future,_{playername}._There_will_be_no_mercy_for_the_weak!
 qstr_{playername}_we_have {playername},_we_have_Isengard_on_their_knees._They_have_launched_their_last_stand_and_is_protecting_Saruman_in_his_tower._Ride_with_me_and_meet_them!
+qstr_Are_you_ready_to_mee Are_you_ready_to_meet_Isengard's_last_stand?
 qstr_I_am_ready_to_ride_w I_am_ready_to_ride_with_you_against_Isengard.
 qstr_I_am_ready_to_ride_wi I_am_ready_to_ride_with_you_and_meet_them._Let_us_end_this_now.
 qstr_I_am_not_ready_to_ri I_am_not_ready_to_ride_with_you_yet._I_need_some_more_time.
+qstr_You_do_not_have_enou You_do_not_have_enough_troops_to_help_in_this_battle._Raise_at_least_30_men_and_join_me_soon!
 qstr_Stay_close_we_will_t Stay_close,_we_will_take_position_near_the_enemy._When_we_have_all_gathered,_we_will_strike.
-qstr_You_have_taken_too_l You_have_taken_too_long..._We_shall_ride_now,_with_or_without_you._We_will_gather_near_the_enemy,_and_when_in_3_days_time,_we_will_strike.
+qstr_You_have_taken_too_l You_have_taken_too_long..._We_shall_ride_now,_with_or_without_you._We_will_gather_near_the_enemy,_and_in_3_days_time,_we_will_strike.
 qstr_Make_haste_{playerna Make_haste,_{playername}._We_do_not_want_them_to_recover.
 qstr_Your_mission_is_comp Your_mission_is_complete,_{s9}_wants_you_to_resume_following_his_army_until_further_notice.
 qstr_{s13}_asked_you_to_g {s13}_asked_you_to_gather_{reg3}_units_of_{s4}_and_deliver_them_back_to_him.

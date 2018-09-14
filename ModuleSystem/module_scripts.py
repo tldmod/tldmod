@@ -22080,6 +22080,13 @@ command_cursor_scripts = [
     (call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, ":lord_to_follow"),
     (party_set_ai_initiative, ":party", 10),
 
+    (try_begin),
+    	(check_quest_active, "qst_guardian_party_quest"),
+    	(party_set_slot, ":party", slot_party_scripted_ai, 1),
+	    (call_script, "script_party_set_ai_state", ":party", spai_accompanying_army, ":lord_to_follow"),
+    	(party_set_ai_initiative, ":party", 10),
+    (try_end),
+
     (assign, ":OK", 1),    
   (try_end),
 
@@ -24544,8 +24551,14 @@ command_cursor_scripts = [
     #(neg|party_slot_eq,   ":party", slot_party_ai_state, spai_besieging_center),
     #(neg|party_slot_eq,   ":party", slot_party_ai_state, spai_retreating_to_center),
     (call_script, "script_party_set_ai_state", ":party", spai_engaging_army, ":party_to_attack"),
+    (party_set_slot, ":party", slot_party_scripted_ai, 1),
     (party_set_ai_initiative, ":party", 10),
     
+    (faction_get_slot, ":guardian_party_exists", "fac_isengard", slot_faction_guardian_party), # Guardian Party spawned
+    (try_begin),
+    	(party_is_active, ":guardian_party_exists"),
+    	(call_script, "script_party_set_ai_state", ":guardian_party_exists", spai_engaging_army, ":party"), #Force GP to attack
+    (try_end),
 
     (assign, ":OK", 1),    
   (try_end),
@@ -24574,12 +24587,14 @@ command_cursor_scripts = [
       (neq, ":accompany_marshall", ":quest_target_troop"),
       (call_script, "script_accompany_marshall", ":accompany_marshall", ":quest_target_troop"),
     (try_end),
-    (display_message, "@Lords attempting to follow marshall", color_good_news), #Debug
+   # (display_message, "@Lords attempting to follow marshall", color_good_news), #Debug
     (try_begin),
     	(neg|check_quest_active, "qst_guardian_party_quest"), #Don't travel yet when player accepts the quest
     	(le, ":quest_slot", 2), #Dont set the slot when marshall is waiting
     	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 3), #3 for waiting marshall
     (try_end),
+ 	#(quest_get_slot, reg65, "qst_guardian_party_quest", slot_quest_current_state),
+ 	#(display_message, "@{reg65} - Current State: Following Script.", color_good_news),
  ]),
 
 #script_cf_gp_marshall_travel_to_position
@@ -24598,15 +24613,20 @@ command_cursor_scripts = [
     (get_distance_between_positions, ":dist", pos56,pos57),
     (store_current_hours, ":cur_hours"),
     (try_begin),
-    	(le, ":dist", 1000),
-	    (store_add, ":gathering_time", ":cur_hours", 3*24), #3 days of waiting
-	    (assign, reg69, ":gathering_time"),
+    	(neg|quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 4),
+    	(le, ":dist", 2300),
+    	#(display_message, "@Distance Check and State Passed", color_bad_news),
+	    (store_add, ":gathering_time", ":cur_hours", 24), #1 day of waiting
     	(quest_set_slot, "qst_guardian_party_quest", slot_quest_expiration_days, ":gathering_time"),
     	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 4), #4 for travelling marshall
     (try_end),
-    (assign, reg70, ":dist"),
-    (assign, reg68, ":cur_hours"),
-    (display_message, "@Marshall Travelling to Position Near Guardian Party - Distance: {reg70} -- Cur Hours: {reg68} -  Wait Time:{reg69}", color_good_news), #Debug
+    #(quest_get_slot, reg69, "qst_guardian_party_quest", slot_quest_expiration_days),
+    #(assign, reg70, ":dist"),
+    #(assign, reg68, ":cur_hours"),
+    
+    #(display_message, "@Marshall Travelling to Position Near Guardian Party - Distance: {reg70} -- Cur Hours: {reg68} -  Wait Time:{reg69}", color_good_news), #Debug
+ 	#(quest_get_slot, reg65, "qst_guardian_party_quest", slot_quest_current_state),
+ 	#(display_message, "@{reg65} - Current State: Travelling Script.", color_good_news),
  ]),
 
 #script_cf_gp_quest_attack_guardian
@@ -24622,7 +24642,7 @@ command_cursor_scripts = [
 	(troop_get_slot, ":party_2", ":quest_target_troop_2", slot_troop_leaded_party),
 	(party_is_active, ":party_2"),
 	(call_script, "script_attack_party", ":quest_target_troop_2", ":guardian_party"),
-	(display_message, "@Marshall Attacking Isengard Guardian Party", color_good_news),
+	#(display_message, "@Marshall Attacking Isengard Guardian Party", color_good_news),
 	(try_begin),
 		(neg|party_is_active, ":guardian_party"),
 		(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.

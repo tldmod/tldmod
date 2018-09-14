@@ -2438,9 +2438,10 @@ simple_triggers = [
           (display_log_message,"@{s2} was defeated!"),
           
           #reinforce next theaters - Kham
-          (faction_get_slot, ":defeated_theater", ":cur_kingdom", slot_faction_active_theater),
-          (call_script, "script_cf_reinforce_next_theater", ":defeated_theater", ":cur_kingdom"),
-          
+          (try_begin),
+            (faction_get_slot, ":defeated_theater", ":cur_kingdom", slot_faction_active_theater),
+            (call_script, "script_cf_reinforce_next_theater", ":defeated_theater", ":cur_kingdom"),
+          (try_end),
           # now update active theaters for all factions
           (call_script, "script_update_active_theaters"),
           
@@ -2457,6 +2458,22 @@ simple_triggers = [
           
           #This menu must be at the end because faction banner will change after this menu if the player's supported pretender's original faction is cur_kingdom - but not in TLD!
           (call_script, "script_add_notification_menu", "mnu_notification_faction_defeated", ":cur_kingdom", 0),
+          
+          (try_begin), #Guardian Party Quest
+            (eq, ":cur_kingdom", "fac_isengard"),
+            (check_quest_active, "qst_guardian_party_quest"),
+            (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
+            (call_script, "script_succeed_quest", "qst_guardian_party_quest"),
+            (call_script, "script_end_quest", "qst_guardian_party_quest"),
+            (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
+              (store_troop_faction, ":lord_fac", ":lords"),
+              (eq, ":lord_fac", ":attacking_faction"),
+              (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
+              (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
+              #(display_message, "@Scripted Party AI cleared"),
+            (try_end),
+          (try_end),
+          
           #If the player's home faction was defeated, offer the player to join another faction of the same side
           (try_begin),
             (eq, "$players_kingdom", ":cur_kingdom"),
@@ -2687,6 +2704,8 @@ simple_triggers = [
             (assign, ":news_color", color_bad_news),
           (try_end),
           (str_store_party_name, s7, ":capital"),
+          (assign, reg70, ":faction"),
+          (jump_to_menu, "mnu_guardian_party_spawned"),
           (display_log_message, "@Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.", ":news_color"),
         (try_end),
       (try_end),
@@ -2856,8 +2875,40 @@ simple_triggers = [
   (3,[
     (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
       (faction_slot_eq, ":faction", slot_faction_state, sfs_active), #still active
-      (faction_slot_eq, ":faction", slot_faction_last_stand, 1), #last stand event triggered
+      (faction_get_slot, ":last_stand_counter", ":faction", slot_faction_last_stand),
+      (gt, ":last_stand_counter", 0),
       (call_script, "script_last_faction_stand", ":faction"),
+      (val_add, ":last_stand_counter", 1),
+      (faction_set_slot, ":faction", slot_faction_last_stand, ":last_stand_counter"),
+      #(assign, reg50, ":last_stand_counter"),
+      #(display_message, "@Current Last Stand Counter: {reg50}"),
+    (try_end),
+
+    (try_begin),
+      (troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test
+      (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
+        (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
+        (faction_slot_ge, ":enemy_faction", slot_faction_last_stand, 11),
+        (faction_get_slot, ":capital", ":enemy_faction", slot_faction_capital),
+        (call_script, "script_cf_get_random_enemy_center_within_range", ":capital", tld_max_quest_distance),
+        (assign, ":cur_target_center", reg0),
+        (store_faction_of_party, ":besieger_faction", ":cur_target_center"),
+        (try_for_range, ":besieger_heroes", kingdom_heroes_begin, kingdom_heroes_end),
+          (neq, ":besieger_heroes", "trp_lorien_lord"),
+          (neq, ":besieger_heroes", "trp_gondor_lord"),
+          (neq, ":besieger_heroes", "trp_isengard_lord"),
+          (store_troop_faction, ":lord_faction", ":besieger_heroes"),
+          (eq, ":lord_faction", ":besieger_faction"),
+          (troop_get_slot, ":lord_party", ":besieger_heroes", slot_troop_leaded_party),
+          (party_is_active, ":lord_party"),
+          (call_script, "script_party_set_ai_state", ":lord_party", spai_besieging_center, ":capital"),
+          (party_set_ai_behavior, ":lord_party", ai_bhvr_attack_party),
+          (party_set_ai_object, ":lord_party", ":capital"),
+          (party_set_flags, ":lord_party", pf_default_behavior, 1),
+          (party_set_slot, ":lord_party", slot_party_ai_substate, 1),
+          #(display_message, "@Lord Starts Besieging last stand capital"),
+        (try_end),
+      (try_end),
     (try_end),
 
   ]),
@@ -3396,12 +3447,12 @@ simple_triggers = [
   
   #Guardian Party Quest Trigger
   
-  (3, [
-      (troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Test
+  (1, [
+      #(troop_slot_eq, "trp_player", slot_troop_home, 22), #Kham Test
       (faction_get_slot, ":guardian_party_exists", "fac_isengard", slot_faction_guardian_party), # Guardian Party spawned
-      (assign, reg70, ":guardian_party_exists"),
+      #(assign, reg70, ":guardian_party_exists"),
       (gt, ":guardian_party_exists", 0),
-      (display_message, "@{reg70} - Qst GP Trigger 0"),
+      #(display_message, "@{reg70} - Qst GP Trigger 0"),
       (faction_get_slot, ":side", "$players_kingdom", slot_faction_side),
       (eq, ":side", faction_side_good),
       
@@ -3417,7 +3468,7 @@ simple_triggers = [
       
       (eq, ":continue", 1),
       
-      (display_message, "@{reg70} - Qst GP Trigger 1"),
+      #(display_message, "@{reg70} - Qst GP Trigger 1"),
       #Good Guys attack Guardian Party gets resolved here:
       
       (try_begin),
@@ -3578,6 +3629,7 @@ simple_triggers = [
       (eq, ":continue_saruman", 1),
       (lt, ":random_chance", ":chance_storm"),
       (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
+      (set_rain, 1, 500),
       #(display_message, "@DEBUG: SARUMAN_STORM", color_good_news),
 
     (else_try), #GULDUR FOG
