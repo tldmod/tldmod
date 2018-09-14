@@ -44,8 +44,8 @@ pt_esgaroth_scouts Esgaroth_Scouts 562949957615723 0 11 183 52 1 1 0 51 1 3 0 49
 pt_dwarf_scouts Dwarven_Lookouts 562949957615729 0 4 183 93 1 1 0 84 1 3 0 91 4 6 0 -1 -1 -1 
 pt_beorn_scouts Beorning_Scouts 281474980905036 0 20 183 45 1 1 0 41 3 5 0 39 3 8 0 -1 -1 -1 
 pt_woodmen_scouts Woodmen_Scouts 281474980905036 0 20 183 37 1 1 0 35 2 3 0 31 3 6 0 -1 -1 -1 
-pt_mordor_scouts Mordor_Scouts 281474980905081 0 6 183 367 1 1 0 360 1 3 0 366 2 5 0 359 2 6 0 -1 -1 
-pt_morgul_scouts Morgul_Scouts 281474980905081 0 6 183 367 1 1 0 365 1 2 0 366 2 5 0 364 3 5 0 -1 -1 
+pt_mordor_scouts Mordor_Scouts 281474980905081 0 6 183 370 1 1 0 360 1 3 0 368 2 5 0 359 2 6 0 -1 -1 
+pt_morgul_scouts Morgul_Scouts 281474980905081 0 6 183 370 1 1 0 365 1 2 0 368 2 5 0 364 3 5 0 -1 -1 
 pt_isengard_scouts Isengard_Scouts 281474980905082 0 7 183 334 1 1 0 333 2 6 0 332 3 7 0 -1 -1 -1 
 pt_isengard_scouts_warg Isengard_Warg_Riders 281474980905084 0 7 183 322 1 1 0 321 3 6 0 320 3 6 0 -1 -1 -1 
 pt_harad_scouts Haradrim_Scouts 281474980905059 0 12 183 261 1 1 0 260 1 4 0 256 4 8 0 -1 -1 -1 
@@ -72,7 +72,7 @@ pt_harad_raiders Haradrim_Raiders 562949957615715 0 12 238 250 1 1 0 253 10 20 0
 pt_khand_raiders Khand_Raiders 562949957615714 0 14 238 285 1 1 0 282 5 10 0 284 5 15 0 -1 -1 -1 
 pt_umbar_raiders Umbar_Raiders 562949957615718 0 15 238 300 1 1 0 306 4 8 0 305 4 8 0 297 6 15 0 -1 -1 
 pt_moria_raiders Moria_Raiders 562949957615737 0 16 238 934 1 3 0 379 3 9 0 376 5 15 0 378 8 16 0 -1 -1 
-pt_guldur_raiders Dol_Guldur_Raiders 562949957615739 0 17 238 367 1 1 0 360 4 10 0 357 8 16 0 368 8 16 0 356 15 30 0 -1 
+pt_guldur_raiders Dol_Guldur_Raiders 562949957615739 0 17 238 367 1 1 0 360 4 10 0 359 8 16 0 357 8 16 0 356 15 30 0 -1 
 pt_gundabad_raiders Gundabad_Raiders 562949957615739 0 18 238 391 1 3 0 387 6 12 0 389 6 12 0 383 18 32 0 352 0 1 0 -1 
 pt_rhun_raiders Rhun_Raiders 281474980905057 0 13 238 79 1 3 0 66 8 16 0 77 10 20 0 -1 -1 -1 
 pt_gondor_patrol Gondor_Patrol 562949957615719 0 3 238 114 1 1 0 118 3 6 0 108 3 6 0 117 8 20 0 107 8 20 0 -1 
@@ -129,7 +129,7 @@ pt_lorien_p_train Lothlorien_Prisoner_Train 4194444 0 8 14 166 6 10 0 173 6 10 0
 pt_woodelf_p_train Mirkwood_Prisoner_Train 4194444 0 10 14 187 2 4 0 191 2 4 0 190 6 10 0 182 6 8 0 181 25 35 0 -1 
 pt_dale_p_train Dale_Prisoner_Train 4194444 0 11 14 60 1 2 0 53 1 2 0 50 1 2 0 48 4 6 0 49 6 10 0 47 21 25 0 
 pt_dwarf_p_train Dwarven_Prisoner_Train 4194444 0 4 14 84 2 4 0 92 4 6 0 83 4 6 0 91 8 14 0 82 25 35 0 -1 
-pt_mordor_p_train Mordor_Prisoner_Train 562949957615745 0 6 14 360 6 8 0 366 6 10 0 359 16 24 0 368 16 24 0 358 40 60 0 -1 
+pt_mordor_p_train Mordor_Prisoner_Train 562949957615745 0 6 14 360 6 8 0 368 6 10 0 359 16 24 0 368 16 24 0 358 40 60 0 -1 
 pt_isengard_p_train Isengard_Prisoner_Train 562949957615744 0 7 14 321 4 6 0 316 10 14 0 315 24 36 0 314 40 60 0 -1 -1 
 pt_kingdom_hero_party War_Party 4259913 0 1 238 -1 -1 -1 -1 -1 -1 
 pt_gondor_reinf_d _ 0 0 1 0 115 1 2 0 119 2 4 0 109 1 2 0 106 1 2 0 -1 -1 
@@ -191,8 +191,8 @@ pt_moria_reinf_a _ 0 0 1 0 374 4 8 0 375 2 4 0 -1 -1 -1 -1
 pt_moria_reinf_b _ 0 0 1 0 379 4 7 0 375 2 4 0 376 2 4 0 -1 -1 -1 
 pt_moria_reinf_c _ 0 0 1 0 371 2 4 0 376 1 3 0 352 1 1 0 -1 -1 -1 
 pt_guldur_reinf_a _ 0 0 1 0 356 8 16 0 -1 -1 -1 -1 -1 
-pt_guldur_reinf_b _ 0 0 1 0 368 4 7 0 357 3 6 0 -1 -1 -1 -1 
-pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 369 1 2 0 366 1 2 0 360 1 2 0 354 0 1 0 -1 
+pt_guldur_reinf_b _ 0 0 1 0 357 4 7 0 359 3 6 0 -1 -1 -1 -1 
+pt_guldur_reinf_c _ 0 0 1 0 362 1 2 0 366 2 4 0 360 1 2 0 354 0 1 0 -1 -1 
 pt_beorn_reinf_a _ 0 0 1 0 39 2 4 0 38 2 4 0 29 3 6 0 -1 -1 -1 
 pt_beorn_reinf_b _ 0 0 1 0 35 2 4 0 31 1 2 0 40 1 2 0 43 1 2 0 -1 -1 
 pt_beorn_reinf_c _ 0 0 1 0 41 1 3 0 44 2 3 0 32 1 2 0 -1 -1 -1 

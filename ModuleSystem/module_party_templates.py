@@ -90,8 +90,8 @@ party_templates = [
 ("beorn_scouts"    ,"Beorning Scouts"      ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_beorning_carrock_berserker,1,1),(trp_beorning_sentinel,3,5),(trp_beorning_warrior,3,8)]), #55-93 stronger, no raiders/patrols
 ("woodmen_scouts"  ,"Woodmen Scouts"       ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_fell_huntsmen_of_mirkwood,1,1),(trp_woodmen_scout,2,3),(trp_woodmen_skilled_forester,3,6)]), #46-70
 
-("mordor_scouts"    ,"Mordor Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_large_orc_of_mordor,1,3),(trp_orc_tracker_of_mordor,2,5),(trp_orc_of_mordor,2,6)]), #29-66
-("morgul_scouts"    ,"Morgul Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_fell_morgul_orc,1,2),(trp_orc_tracker_of_mordor,2,5),(trp_morgul_orc,3,5)]), #29-66
+("mordor_scouts"    ,"Mordor Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_fell_orc_archer_of_mordor,1,1),(trp_large_orc_of_mordor,1,3),(trp_orc_archer_of_mordor,2,5),(trp_orc_of_mordor,2,6)]), #29-66
+("morgul_scouts"    ,"Morgul Scouts"       ,icon_orc             |carries_goods(1)|pf_show_faction,0,fac_mordor  ,scout_personality,[(trp_fell_orc_archer_of_mordor,1,1),(trp_fell_morgul_orc,1,2),(trp_orc_archer_of_mordor,2,5),(trp_morgul_orc,3,5)]), #29-66
 ("isengard_scouts"  ,"Isengard Scouts"     ,icon_orc_isengard    |carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_fighting_uruk_hai_tracker,1,1),(trp_large_uruk_hai_tracker,2,6),(trp_uruk_hai_tracker,3,7)]), #33-73
 ("isengard_scouts_warg","Isengard Warg Riders",icon_wargrider_run|carries_goods(1)|pf_show_faction,0,fac_isengard,scout_personality,[(trp_white_hand_rider,1,1),(trp_warg_rider_of_isengard,3,6),(trp_wolf_rider_of_isengard,3,6)]), #32-56 fast but weaker
 ("harad_scouts"     ,"Haradrim Scouts"     ,icon_harad_horseman  |carries_goods(1)|pf_show_faction,0,fac_harad   ,scout_personality,[(trp_black_snake_horse_archer,1,1),(trp_harad_horse_archer,1,4),(trp_harondor_scout,4,8)]), #31-65
@@ -123,7 +123,7 @@ party_templates = [
 ("khand_raiders"   ,"Khand Raiders"     ,icon_cataphract    |carries_goods(2)|pf_show_faction,0,fac_khand   ,soldier_personality,[(trp_easterling_horsemaster,1,1),(trp_easterling_rider,5,10),(trp_easterling_veteran_horseman,5,15)]), #81-191
 ("umbar_raiders"   ,"Umbar Raiders"     ,icon_umbar_corsair |carries_goods(2)|pf_show_faction,0,fac_umbar   ,soldier_personality,[(trp_corsair_night_raider,1,1),(trp_corsair_veteran_marauder,4,8),(trp_corsair_marauder,4,8),(trp_corsair_warrior,6,15)]), #100-196 good at it
 ("moria_raiders"   ,"Moria Raiders"     ,icon_orc           |carries_goods(2)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_tribal_orc_chief,1,3),(trp_large_goblin_archer_of_moria,3,9),(trp_large_goblin_of_moria,5,15),(trp_archer_snaga_of_moria,8,16)]), #72-176
-("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_guldur  ,soldier_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_large_orc_of_mordor,4,10),(trp_orc_of_guldur,8,16),(trp_orc_archer_of_mordor,8,16),(trp_orc_snaga_of_guldur,15,30)]), #91-184
+("guldur_raiders"  ,"Dol Guldur Raiders",icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_guldur  ,soldier_personality,[(trp_fell_orc_tracker_of_mordor,1,1),(trp_large_orc_of_mordor,4,10),(trp_orc_of_mordor,8,16),(trp_orc_of_guldur,8,16),(trp_orc_snaga_of_guldur,15,30)]), #91-184
 ("gundabad_raiders","Gundabad Raiders"  ,icon_orc_tribal    |carries_goods(2)|pf_show_faction,0,fac_gundabad,soldier_personality,[(trp_goblin_north_clan_rider,1,3),(trp_warg_skirmisher_gundabad,6,12),(trp_goblin_rider_gundabad,6,12),(trp_orc_gundabad,18,32),(trp_troll_of_moria,0,1)]), #128-234 was 93-163
 ("rhun_raiders"    ,"Rhun Raiders"      ,icon_easterling_horseman|carries_goods(1)|pf_show_faction,0,fac_rhun    ,soldier_personality,[(trp_rhun_heavy_noble_cavalry,1,3),(trp_rhun_horse_archer,8,16),(trp_rhun_light_cavalry,10,20)]), #124-264, was 100-184
 
@@ -219,7 +219,7 @@ party_templates = [
 ("dale_p_train"    ,"Dale Prisoner Train"      ,icon_mule         |pf_show_faction,0,fac_dale    ,prisoner_train_personality,[(trp_merchant_guard_of_dale,1,2), (trp_dale_warrior,1,2), (trp_laketown_bowmen,1,2), (trp_dale_man_at_arms,4,6), (trp_laketown_scout,6,10), (trp_dale_militia,21,25)]), # strength 100-150
 ("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         |pf_show_faction,0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_hardened_warrior,2,4), (trp_dwarven_scout,4,6), (trp_dwarven_warrior,4,6), (trp_dwarven_lookout,8,14), (trp_dwarven_apprentice,25,35)]), # strength 140-220
 
-("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2)|pf_show_faction,0,fac_mordor  , prisoner_train_personality, [(trp_large_orc_of_mordor,6,8), (trp_orc_tracker_of_mordor,6,10), (trp_orc_of_mordor,16,24), (trp_orc_archer_of_mordor,16,24), (trp_orc_snaga_of_mordor,40,60)]), # strength 196-294
+("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2)|pf_show_faction,0,fac_mordor  , prisoner_train_personality, [(trp_large_orc_of_mordor,6,8), (trp_orc_archer_of_mordor,6,10), (trp_orc_of_mordor,16,24), (trp_orc_archer_of_mordor,16,24), (trp_orc_snaga_of_mordor,40,60)]), # strength 196-294
 ("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2)|pf_show_faction,0,fac_isengard, prisoner_train_personality, [(trp_warg_rider_of_isengard,4,6), (trp_large_orc_of_isengard,10,14), (trp_orc_of_isengard,24,36), (trp_orc_snaga_of_isengard,40,60)]), # strength 182-268
 
 ("kingdom_hero_party","War Party",icon_player_horseman|pf_show_faction|pf_default_behavior,0,fac_commoners,soldier_personality,[]),
@@ -308,8 +308,8 @@ party_templates = [
 ("moria_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_wolf_rider_of_moria,2,4),(trp_large_goblin_of_moria,1,3),(trp_troll_of_moria,1,1),]), #InVain: removed archers, because B has so many, less cav, fewer t3
 #Dol Guldur - same as Mordor without uruks and Numenoreans (8-16, 7-13, 5-10)
 ("guldur_reinf_a"  ,"_",0,0,fac_commoners,0,[(trp_orc_snaga_of_guldur,8,16),]),
-("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_orc_archer_of_mordor,4,7),(trp_orc_of_guldur,3,6),]),
-("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_warg_rider_of_gorgoroth,1,2),(trp_large_orc_archer_of_mordor,1,2),(trp_orc_tracker_of_mordor,1,2),(trp_large_orc_of_mordor,1,2),(trp_olog_hai,0,1),]),
+("guldur_reinf_b"  ,"_",0,0,fac_commoners,0,[(trp_orc_of_guldur,4,7),(trp_orc_of_mordor,3,6),]),
+("guldur_reinf_c"  ,"_",0,0,fac_commoners,0,[(trp_warg_rider_of_gorgoroth,1,2),(trp_orc_tracker_of_mordor,2,4),(trp_large_orc_of_mordor,1,2),(trp_olog_hai,0,1),]),
 #Beornings - two trees, Beornings favored over Woodmen (7-14, 5-10, 4-8)
 ("beorn_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_beorning_warrior,2,4),(trp_beorning_vale_man,2,4),(trp_woodmen_youth,3,6)]),
 ("beorn_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_woodmen_scout,2,4),(trp_woodmen_skilled_forester,1,2),(trp_beorning_tolltacker,1,2),(trp_beorning_carrock_lookout,1,2)]),
