@@ -1,5 +1,5 @@
 scene_propsfile version 1
- 1685
+ 1719
 spr_invalid_object 0 0 question_mark 0 0
 
 
@@ -954,7 +954,7 @@ spr_merchant_sign 0 0 merchant_sign bo_tavern_sign 0
 spr_tavern_sign 0 0 tavern_sign bo_tavern_sign 0
 
 
-spr_sack 0 0 sack 0 0
+spr_sack 0 0 sack_new 0 0
 
 
 spr_skull_a 0 0 skull_a 0 0
@@ -990,10 +990,10 @@ spr_straw_b 0 0 straw_b 0 0
 spr_straw_c 0 0 straw_c 0 0
 
 
-spr_cloth_a 0 0 cloth_a 0 0
+spr_cloth_a 0 0 cloth_a_new 0 0
 
 
-spr_cloth_b 0 0 cloth_b 0 0
+spr_cloth_b 0 0 cloth_b_new 0 0
 
 
 spr_mat_a 0 0 mat_a 0 0
@@ -1002,10 +1002,10 @@ spr_mat_a 0 0 mat_a 0 0
 spr_mat_b 0 0 mat_b 0 0
 
 
-spr_mat_c 0 0 mat_c 0 0
+spr_mat_c 0 0 Gutek_mat_c 0 0
 
 
-spr_mat_d 0 0 mat_d 0 0
+spr_mat_d 0 0 Gutek_mat_d 0 0
 
 
 spr_wood_a 0 0 wood_a bo_wood_a 0
@@ -1020,7 +1020,7 @@ spr_wood_b 0 0 wood_b bo_wood_b 0
 spr_wood_b_E 0 0 wood_b 0 0
 
 
-spr_wood_heap 0 0 wood_heap_a bo_wood_heap_a 0
+spr_wood_heap 0 0 Gutek_wood_heap_a bo_wood_heap_a 0
 
 
 spr_wood_heap_E 0 0 wood_heap_a 0 0
@@ -1545,7 +1545,7 @@ spr_arena_block_i 0 0 arena_block_i bo_arena_block_ghi 0
 spr_arena_block_i_E 0 0 arena_block_i 0 0
 
 
-spr_arena_palisade_a 0 0 arena_palisade_a bo_arena_palisade_a 0
+spr_arena_palisade_a 0 0 arena_palisade_a_new bo_arena_palisade_a_new 0
 
 
 spr_arena_palisade_a_E 0 0 arena_palisade_a 0 0
@@ -1788,7 +1788,7 @@ spr_towngate_rectangle_door_left 0 0 towngate_rectangle_door_left bo_towngate_re
 spr_towngate_rectangle_door_right 0 0 towngate_rectangle_door_right bo_towngate_rectangle_door_right 0
 
 
-spr_door_screen 0 0 door_screen 0 0
+spr_door_screen 0 0 door_screen_new 0 0
 
 
 spr_door_a 0 0 door_a bo_door_a 0
@@ -1892,10 +1892,10 @@ spr_tripod_cauldron_a 0 0 tripod_cauldron_a bo_tripod_cauldron_a 0
 spr_tripod_cauldron_b 0 0 tripod_cauldron_b bo_tripod_cauldron_b 0
 
 
-spr_open_stable_a 0 0 open_stable_a bo_open_stable_a 0
+spr_open_stable_a 0 0 Gutek_open_stable_a bo_open_stable_a 0
 
 
-spr_open_stable_b 0 0 open_stable_b bo_open_stable_b 0
+spr_open_stable_b 0 0 Gutek_open_stable_b bo_open_stable_b 0
 
 
 spr_plate_a 0 0 plate_a 0 0
@@ -5112,6 +5112,108 @@ spr_riven_bridge_modular_a 0 0 riven_bridge_modular_a bo_bridge_modular_a 0
 
 
 spr_isen_pillar_adorno 0 0 isen_pillar_adorno bo_isen_pillar_adorno 0
+
+
+spr_khazad_dwarf_cup_1 0 0 khazad_dwarf_cup_1 0 0
+
+
+spr_khazad_dwarf_ale_keg_1 0 0 khazad_dwarf_ale_keg_1 0 0
+
+
+spr_khazad_dwarf_ale_pint_1 0 0 khazad_dwarf_ale_pint_1 0 0
+
+
+spr_khazad_dwarf_ale_pint_2 0 0 khazad_dwarf_ale_pint_2 0 0
+
+
+spr_CWE_kitchen_herbs_a 0 0 CWE_kitchen_herbs_a 0 0
+
+
+spr_CWE_kitchen_herbs_b 0 0 CWE_kitchen_herbs_b 0 0
+
+
+spr_CWE_kitchen_herbs_c 0 0 CWE_kitchen_herbs_c 0 0
+
+
+spr_CWE_kitchen_herbs_d 0 0 CWE_kitchen_herbs_d 0 0
+
+
+spr_CWE_refined_pitcher_a 0 0 CWE_refined_pitcher_a 0 0
+
+
+spr_CWE_refined_pitcher_b 0 0 CWE_refined_pitcher_b 0 0
+
+
+spr_CWE_refined_pitcher_c 0 0 CWE_refined_pitcher_c 0 0
+
+
+spr_CWE_refined_pitcher_d 0 0 CWE_refined_pitcher_d 0 0
+
+
+spr_CWE_refined_pitcher_e 0 0 CWE_refined_pitcher_e 0 0
+
+
+spr_CWE_refined_pitcher_f 0 0 CWE_refined_pitcher_f 0 0
+
+
+spr_CWE_exquisite_dish_a 0 0 CWE_exquisite_dish_a 0 0
+
+
+spr_CWE_exquisite_dish_b 0 0 CWE_exquisite_dish_b 0 0
+
+
+spr_CWE_exquisite_dish_c 0 0 CWE_exquisite_dish_c 0 0
+
+
+spr_CWE_exquisite_dish_d 0 0 CWE_exquisite_dish_d 0 0
+
+
+spr_CWE_exquisite_dish_e 0 0 CWE_exquisite_dish_e 0 0
+
+
+spr_CWE_exquisite_cup_a 0 0 CWE_exquisite_cup_a 0 0
+
+
+spr_CWE_exquisite_cup_b 0 0 CWE_exquisite_cup_b 0 0
+
+
+spr_CWE_elegant_lamp_a 0 0 CWE_elegant_lamp_a bo_CWE_elegant_lamp_a_col 0
+
+
+spr_CWE_elegant_lamp_b 0 0 CWE_elegant_lamp_b bo_CWE_elegant_lamp_b_col 0
+
+
+spr_CWE_elegant_lamp_c 0 0 CWE_elegant_lamp_c 0 0
+
+
+spr_CWE_elegant_lamp_d 0 0 CWE_elegant_lamp_d 0 0
+
+
+spr_CWE_svet_tower_a 0 0 CWE_svet_tower_a bo_CWE_svet_tower_a_col 0
+
+
+spr_CWE_svet_tower_b 0 0 CWE_svet_tower_b bo_CWE_svet_tower_b_col 0
+
+
+spr_Gutek_straw_a 0 0 Gutek_straw_a 0 0
+
+
+spr_Gutek_straw_b 0 0 Gutek_straw_b 0 0
+
+
+spr_Gutek_straw_c 0 0 Gutek_straw_c 0 0
+
+
+spr_Gutek_cart 0 0 Gutek_cart bocart 0
+
+
+spr_Gutek_awning_d 0 0 Gutek_awning_d bo_awning_d 0
+
+
+spr_Gutek_stand_cloth 0 0 Gutek_stand_cloth bo_stand_cloth 0
+
+
+spr_Gutek_stand_thatched 0 0 Gutek_stand_thatched bo_stand_thatched 0
 
 
 spr_mordor_clouds_2 69632 0 skybox_cloud_overlay_2 0 0
