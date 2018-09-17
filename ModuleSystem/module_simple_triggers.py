@@ -2900,6 +2900,7 @@ simple_triggers = [
           (store_troop_faction, ":lord_faction", ":besieger_heroes"),
           (eq, ":lord_faction", ":besieger_faction"),
           (troop_get_slot, ":lord_party", ":besieger_heroes", slot_troop_leaded_party),
+          (party_slot_eq, ":lord_party", slot_party_type, spt_kingdom_hero_party), #Host
           (party_is_active, ":lord_party"),
           (call_script, "script_party_set_ai_state", ":lord_party", spai_besieging_center, ":capital"),
           (party_set_ai_behavior, ":lord_party", ai_bhvr_attack_party),
@@ -3539,6 +3540,7 @@ simple_triggers = [
       (assign, ":continue", 1),
     (else_try),
       (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
+      (set_global_cloud_amount, 0), # Clear Cloudiness
       #(display_message, "@EFFECTS CLEARED", color_bad_news),
     (try_end),
 

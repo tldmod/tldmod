@@ -8040,7 +8040,7 @@ tld_remove_riderless_animals,
       tld_cheer_on_space_when_battle_over_press,
       tld_cheer_on_space_when_battle_over_release,
       (ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave")], []),
-      (ti_before_mission_start, 0, 0, [], [(assign, "$g_arena_training_kills", 0),]),
+      (ti_before_mission_start, 0, 0, [], [(assign, "$g_arena_training_kills", 0), (get_player_agent_no, ":player"), (agent_set_hit_points, ":player", 100),]),
       
       (0, 0, ti_once, [],
         [
