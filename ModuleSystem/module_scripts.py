@@ -24659,6 +24659,7 @@ command_cursor_scripts = [
 	(store_script_param_1, ":faction"),
 
 	(faction_get_slot, ":capital", ":faction", slot_faction_capital),
+	(faction_set_slot, ":faction", slot_faction_side, sfai_default),
 
 	(try_for_range, ":lord", heroes_begin, heroes_end),
 		(store_troop_faction, ":lord_faction", ":lord"),

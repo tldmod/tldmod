@@ -276,7 +276,6 @@ ai_scripts = [
            
            (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
            (party_get_slot, ":siegable", ":enemy_walled_center", slot_center_siegability),
-           
            (neq, ":siegable", tld_siegable_never), #some places are never siegable
            
            #MV: make sure the enemy faction is weak enough to be sieged
@@ -295,7 +294,7 @@ ai_scripts = [
            #MV: a small, 10% chance to ignore the center, to add variety to sieging targets
            (store_random_in_range, ":random_ignore", 0, 100),
            (this_or_next|lt, ":random_ignore", 90),
-           (this_or_next|faction_slot_eq, ":center_faction", slot_faction_last_stand, 1), #Dont ignore if last stand.
+           (this_or_next|faction_slot_ge, ":center_faction", slot_faction_last_stand, 1), #Dont ignore if last stand.
            (eq, ":old_target_attacking_center", ":enemy_walled_center"), #don't ignore if we are currently sieging it
            
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
@@ -304,7 +303,8 @@ ai_scripts = [
              (ge, ":besieger_party", 0),
              (party_is_active, ":besieger_party"),
              (store_faction_of_party, ":besieger_faction", ":besieger_party"),
-             (eq, ":besieger_faction", ":faction_no"),
+             (this_or_next|eq, ":besieger_faction", ":faction_no"),
+             (faction_slot_ge, ":center_faction", slot_faction_last_stand, 1), #Let ALL theater factions attack the weakened faction.
              (assign, ":besieger_own_faction", 1),
            (try_end),
            (this_or_next|eq, ":besieger_party", -1),
@@ -382,16 +382,6 @@ ai_scripts = [
        
          (val_mul, ":chance_attacking_center", ":offensive_rating"),
          (val_div, ":chance_attacking_center", 100),
-
-         (store_faction_of_party, ":target_to_besiege_faction", ":target_attacking_center"),
-         
-         (try_begin),
-          (faction_slot_ge, ":target_to_besiege_faction", slot_faction_last_stand, 1),
-          (val_mul, ":chance_attacking_center", 1000000), # We go on a super offensive against last stand factions
-          #(str_store_faction_name, s22, ":target_to_besiege_faction"),
-          #(str_store_faction_name, s23, ":faction_no"),
-          #(display_message, "@DEBUG: Super Offensive against {s22}", color_neutral_news),
-         (try_end),
        (try_end),
 
 #Attacking enemy army that is sieging
@@ -1609,7 +1599,7 @@ ai_scripts = [
           (ge, ":cur_center_left_strength", ":min_strength_behind"),#stay inside if center strength is too low
           (assign, ":continue", 0),
 	  #(party_get_num_companions, ":party_size", ":party_no"), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege - Kham - Change to calculate Fit
-          (call_script, "script_party_count_fit_for_battle", ":party_no"), #Kham
+          (call_script, "script_party_count_fit_regulars", ":party_no"), #Kham
       	  (gt, reg0, tld_siege_min_party_size), 
          
           (try_begin),
@@ -1641,12 +1631,23 @@ ai_scripts = [
             (party_slot_eq, ":enemy_walled_center", slot_center_theater, ":faction_theater"),
             
             (party_get_slot, ":other_besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
+            (faction_get_slot, ":current_troop_faction_side", ":faction_no", slot_faction_side),
+            (store_faction_of_party, ":enemy_walled_center_faction", ":enemy_walled_center"),
             (assign, ":besieger_own_faction", 0),
             (try_begin),
               (ge, ":other_besieger_party", 0),
               (party_is_active, ":other_besieger_party"),
               (store_faction_of_party, ":besieger_faction", ":other_besieger_party"),
-              (eq, ":besieger_faction", ":faction_no"),
+              (faction_get_slot, ":besieger_faction_side", ":besieger_faction", slot_faction_side),
+              #Kham - added code here to allow lords of the same side to besiege last stand capitals
+              (assign, ":same_side_besieger_and_last_stand", 0),
+              (try_begin),
+                (faction_slot_ge, ":enemy_walled_center_faction", slot_faction_last_stand, 1),
+                (eq, ":besieger_faction_side", ":current_troop_faction_side"),
+                (assign, ":same_side_besieger_and_last_stand", 1),
+              (try_end),
+              (this_or_next|eq, ":besieger_faction", ":faction_no"),
+              (eq, ":same_side_besieger_and_last_stand", 1),
               (assign, ":besieger_own_faction", 1),
             (try_end),
             (this_or_next|eq, ":other_besieger_party", -1),
@@ -1698,6 +1699,7 @@ ai_scripts = [
           (ge, ":best_besiege_center", 0),
           (assign, ":chance_besiege_enemy_center", 20),
           (assign, ":target_besiege_enemy_center", ":best_besiege_center"),
+
           (try_begin),
             (eq, ":old_target_besiege_enemy_center", ":target_besiege_enemy_center"),
             (val_mul, ":chance_besiege_enemy_center", 100),
@@ -1808,7 +1810,7 @@ ai_scripts = [
 ##        (try_end),
 
 # no village raids or sieges so far, GA
-        (assign, ":chance_besiege_enemy_center", 0), 
+        #(assign, ":chance_besiege_enemy_center", 0), 
         (assign, ":chance_raid_around_center", 0),
 ##########################################
 		
@@ -1872,6 +1874,7 @@ ai_scripts = [
          (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
            (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
            (gt, ":party_no", 0),
+           (neg|party_slot_eq, ":party_no", slot_party_scripted_ai, 1), #Kham - override AI when scripted.
              (call_script, "script_process_hero_ai", ":troop_no"),
        (try_end),
 ]),
@@ -1882,7 +1885,6 @@ ai_scripts = [
 ("process_hero_ai",
     [ (store_script_param_1, ":troop_no"),
       (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
-      (neg|party_slot_eq, ":party_no", slot_party_scripted_ai, 1), #Kham - override AI when scripted.
 
       (try_begin),
         (party_is_active, ":party_no"),
@@ -1895,7 +1897,7 @@ ai_scripts = [
             (party_slot_eq, ":ai_object", slot_center_is_besieged_by, -1),
 	    #(party_get_num_companions, ":party_size", ":party_no"),
 	    #(gt, ":party_size", tld_siege_min_party_size), # CC Bugfix: Need at least tld_siege_min_party_size troops to siege - Changed to calculate fit - Kham
-            (call_script, "script_party_count_fit_for_battle", ":party_no"), #Kham
+            (call_script, "script_party_count_fit_regulars", ":party_no"), #Kham
             (gt, reg0, tld_siege_min_party_size), 
             (store_distance_to_party_from_party, ":distance", ":party_no", ":ai_object"),
             (lt, ":distance", 3),

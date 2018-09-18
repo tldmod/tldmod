@@ -1,4 +1,4 @@
-1827
+1829
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -1280,6 +1280,7 @@ qstr_{s1}_is_scouted. {s1}_is_scouted.
 qstr_The_Age_of_Men_has_f The_Age_of_Men_has_finally_passed._Now_the_Two_Towers_gather_their_remaining_hosts_and_allies_to_decide_who_will_be_the_sole_ruler_of_Middle_Earth!
 qstr_The_War_of_the_Two_T The_War_of_the_Two_Towers_has_started!
 qstr_{s2}_was_defeated! {s2}_was_defeated!
+qstr_{s30}_scripted_AI_cl {s30}_scripted_AI_cleared
 qstr_The_forces_of_{s22}_ The_forces_of_{s22}_have_rallied!_{s22}_is_now_{s23}.
 qstr_The_might_of_{s22}_h The_might_of_{s22}_has_diminished!_{s22}_is_now_{s23}.
 qstr_In_a_desperate_attem In_a_desperate_attempt_to_defend_against_his_enemies,_Sauron_sends_out_his_legions_of_Mordor!
@@ -1288,6 +1289,7 @@ qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
 qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
+qstr_{s31}_scripted_AI_se {s31}_scripted_AI_set
 qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
 qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
 qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
