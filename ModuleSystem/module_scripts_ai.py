@@ -295,6 +295,7 @@ ai_scripts = [
            #MV: a small, 10% chance to ignore the center, to add variety to sieging targets
            (store_random_in_range, ":random_ignore", 0, 100),
            (this_or_next|lt, ":random_ignore", 90),
+           (this_or_next|faction_slot_eq, ":center_faction", slot_faction_last_stand, 1), #Dont ignore if last stand.
            (eq, ":old_target_attacking_center", ":enemy_walled_center"), #don't ignore if we are currently sieging it
            
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
@@ -381,6 +382,16 @@ ai_scripts = [
        
          (val_mul, ":chance_attacking_center", ":offensive_rating"),
          (val_div, ":chance_attacking_center", 100),
+
+         (store_faction_of_party, ":target_to_besiege_faction", ":target_attacking_center"),
+         
+         (try_begin),
+          (faction_slot_ge, ":target_to_besiege_faction", slot_faction_last_stand, 1),
+          (val_mul, ":chance_attacking_center", 1000000), # We go on a super offensive against last stand factions
+          #(str_store_faction_name, s22, ":target_to_besiege_faction"),
+          #(str_store_faction_name, s23, ":faction_no"),
+          #(display_message, "@DEBUG: Super Offensive against {s22}", color_neutral_news),
+         (try_end),
        (try_end),
 
 #Attacking enemy army that is sieging

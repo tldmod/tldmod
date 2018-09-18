@@ -23537,10 +23537,10 @@ command_cursor_scripts = [
 		(assign, reg56, ":cur_object_center"),	#quest_object_center
 		(assign, reg57, ":cur_target_center"),	#quest_target_center
 		(assign, reg58, 8),						#quest_importance
-		(assign, reg59, 300),					#quest_xp_reward
-		(assign, reg60, 600),					#quest_gold_reward
-		(assign, reg61, 9),						#quest_rank_reward
-		(assign, reg62, 10),					#quest_expiration_days
+		(assign, reg59, 400),					#quest_xp_reward
+		(assign, reg60, 750),					#quest_gold_reward
+		(assign, reg61, 18),					#quest_rank_reward
+		(assign, reg62, 15),					#quest_expiration_days
 		(assign, reg63, 15),					#quest_dont_give_again_period
 ]),
 
@@ -27379,17 +27379,17 @@ if is_a_wb_script==1:
 	(assign, ":target_troop", reg0),
 	(assign, ":target_template", reg1),
 
-	(store_random_in_range, ":amount", 5, 11),
+	(store_random_in_range, ":amount", 15, 26),
 	(val_add, ":amount", ":player_level"),
 
-	(store_mul, ":xp_reward", ":amount", 3),
-	(store_add, ":gold_reward", ":xp_reward", 20),
+	(store_mul, ":xp_reward", ":amount", 4),
+	(store_add, ":gold_reward", ":xp_reward", 40),
 
 	
 	(store_div, ":rank_reward", ":xp_reward", 20),
 	(val_min, ":rank_reward", 10),
 	
-	(store_div, ":exp", ":amount", 2),
+	(store_div, ":exp", ":amount", 3),
 	(val_add, ":exp", 7),
 
 	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop

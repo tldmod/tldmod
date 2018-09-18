@@ -2201,6 +2201,8 @@ simple_triggers = [
           (neg|faction_slot_ge, ":cur_kingdom", slot_faction_strength, 1), # TLD or faction strength down
           (faction_slot_eq, ":cur_kingdom", slot_faction_last_stand, 0),
           (faction_set_slot, ":cur_kingdom", slot_faction_last_stand, 1),
+          #(str_store_faction_name, s10, ":cur_kingdom"),
+          #(display_message, "@DEBUG: {s10} is now in Last Stand mode", color_neutral_news),
         (else_try),
           (eq, ":has_guardian", 1),
           (faction_slot_eq, ":cur_kingdom", slot_faction_guardian_party_spawned, 1), #Guardian party has spawned
@@ -2890,18 +2892,17 @@ simple_triggers = [
         (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
         (faction_slot_ge, ":enemy_faction", slot_faction_last_stand, 11),
         (faction_get_slot, ":capital", ":enemy_faction", slot_faction_capital),
+        (party_slot_eq, ":capital", slot_center_destroyed, 0),
         (call_script, "script_cf_get_random_enemy_center_within_range", ":capital", tld_max_quest_distance),
         (assign, ":cur_target_center", reg0),
         (store_faction_of_party, ":besieger_faction", ":cur_target_center"),
         (try_for_range, ":besieger_heroes", kingdom_heroes_begin, kingdom_heroes_end),
-          (neq, ":besieger_heroes", "trp_lorien_lord"),
-          (neq, ":besieger_heroes", "trp_gondor_lord"),
-          (neq, ":besieger_heroes", "trp_isengard_lord"),
+          (call_script, "script_cf_fails_if_sitting_king", ":besieger_heroes"),
           (store_troop_faction, ":lord_faction", ":besieger_heroes"),
           (eq, ":lord_faction", ":besieger_faction"),
           (troop_get_slot, ":lord_party", ":besieger_heroes", slot_troop_leaded_party),
-          (party_slot_eq, ":lord_party", slot_party_type, spt_kingdom_hero_party), #Host
           (party_is_active, ":lord_party"),
+          (party_slot_eq, ":lord_party", slot_party_type, spt_kingdom_hero_party), #Host
           (call_script, "script_party_set_ai_state", ":lord_party", spai_besieging_center, ":capital"),
           (party_set_ai_behavior, ":lord_party", ai_bhvr_attack_party),
           (party_set_ai_object, ":lord_party", ":capital"),
