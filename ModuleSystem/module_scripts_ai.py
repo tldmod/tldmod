@@ -245,10 +245,6 @@ ai_scripts = [
           (lt, ":offensive_hours", 60), #Kham - Lets make Gondor lords wait a bit longer
           (lt, ":faction_marshall_num_followers", 3), #Kham - Gondor needs more lords when they start walking around
           (assign, ":chance_gathering_army", 1000), ##Kham - Lets make gondor wait longer
-          (try_begin),
-            (eq, "$cheat_mode",1),
-            (display_message, "@Gondor AI Tweaks - Gondor waits longer"),
-          (try_end),
          (else_try),
           (lt, ":offensive_hours", 48), #wait for lords for two days max
           (lt, ":faction_marshall_num_followers", 2), #if we have two+ lords in tow, go and do something creative
@@ -294,7 +290,6 @@ ai_scripts = [
            #MV: a small, 10% chance to ignore the center, to add variety to sieging targets
            (store_random_in_range, ":random_ignore", 0, 100),
            (this_or_next|lt, ":random_ignore", 90),
-           (this_or_next|faction_slot_ge, ":center_faction", slot_faction_last_stand, 1), #Dont ignore if last stand.
            (eq, ":old_target_attacking_center", ":enemy_walled_center"), #don't ignore if we are currently sieging it
            
            (party_get_slot, ":besieger_party", ":enemy_walled_center", slot_center_is_besieged_by),
@@ -318,7 +313,13 @@ ai_scripts = [
            (call_script, "script_get_tld_distance", ":enemy_walled_center", ":faction_marshall_party"),
            (assign, ":dist", reg0),
            (val_add, ":dist", 20),
-           (val_mul, ":dist", 10), #TLD: give more weight on distance consideration
+           (try_begin),
+            (this_or_next|eq, ":center_faction", "fac_gondor"),
+            (eq, ":center_faction", "fac_rohan"),
+            (val_mul, ":dist", 2), #When Gondor/Rohan, Distance doesn't matter much, cause everything is too far (sept 2018)
+           (else_try),
+            (val_mul, ":dist", 10), #TLD: give more weight on distance consideration
+           (try_end),
            (party_get_slot, ":center_str", ":enemy_walled_center", slot_party_cached_strength),
            (party_get_slot, ":center_near_str", ":enemy_walled_center", slot_party_nearby_friend_strength),
            (val_add, ":center_str", ":center_near_str"),
@@ -1660,7 +1661,13 @@ ai_scripts = [
             #(store_distance_to_party_from_party, ":dist", ":enemy_walled_center", ":party_no"),
             (call_script, "script_get_tld_distance", ":enemy_walled_center", ":party_no"),
             (assign, ":dist", reg0),
-            (store_sub, ":dist_factor", 75, ":dist"),
+            (try_begin), #Distance matters less if Gondor / Rohan Center
+              (this_or_next|eq, ":enemy_walled_center_faction", "fac_gondor"),
+              (eq, ":enemy_walled_center_faction", "fac_rohan"),
+              (store_sub, ":dist_factor", 100, ":dist"),
+            (else_try),  
+              (store_sub, ":dist_factor", 75, ":dist"),
+            (try_end),
             (val_max, ":dist_factor", 3),
             (party_get_slot, ":center_str", ":enemy_walled_center", slot_party_cached_strength),
             (party_get_slot, ":center_near_str", ":enemy_walled_center", slot_party_nearby_friend_strength),
@@ -2448,11 +2455,29 @@ ai_scripts = [
          (faction_set_slot, ":troop_faction_no", slot_faction_hosts,":hosts"), # host is spawned
          
          (party_set_slot, ":party", slot_party_type, spt_kingdom_hero_party), # TLD party type changed to host
-         (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
+         
+         #Kham - Change Host VP for Gondor (Sept 2018)
+
+         (try_begin),
+            (eq, ":troop_faction_no", "fac_gondor"),
+            (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), #only if player is Good
+            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp/2), # TLD victory points/2 for Gondor
+         (else_try),
+            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp), # TLD victory points for party kill
+         (try_end),
+
          (try_begin), #MV: double that for kings
+            (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
+            (eq, ":troop_faction_no", "fac_gondor"),
+            (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good), #only if player is Good
+            (party_set_slot, ":party", slot_party_victory_value, ws_host_vp),
+         (else_try),
             (faction_slot_eq, ":troop_faction_no", slot_faction_marshall, ":hero"),
             (party_set_slot, ":party", slot_party_victory_value, ws_host_vp*2),
          (try_end),
+
+         #Kham - Change Host VP for Gondor END (Sept 2018)
+
          (str_store_faction_name, s6, ":troop_faction_no"), # TLD host naming after faction
          (str_store_troop_name, s5, ":hero"),
          (str_store_troop_name_link, s7, ":hero"),

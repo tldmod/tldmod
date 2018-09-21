@@ -1980,6 +1980,22 @@ scripts = [
 	(troop_set_slot, "trp_walker_woman_gondor_b", slot_troop_has_custom_armour, 1),
 	(troop_set_slot, "trp_walker_woman_gondor_bw", slot_troop_has_custom_armour, 1),
 
+	(item_set_slot, "itm_rhun_armor_a", slot_item_player_color, 1),
+	(item_set_slot, "itm_rhun_armor_a", slot_item_num_components, 1),
+	(item_set_slot, "itm_rhun_armor_a", slot_item_materials_begin, "str_rhunarmortexture_fem"),
+	(item_set_slot, "itm_rhun_armor_a", slot_item_materials_end, "str_female_mats_end"),
+
+	(item_set_slot, "itm_rhun_armor_b", slot_item_player_color, 1),
+	(item_set_slot, "itm_rhun_armor_b", slot_item_num_components, 1),
+	(item_set_slot, "itm_rhun_armor_b", slot_item_materials_begin, "str_rhunarmortexture_fem"),
+	(item_set_slot, "itm_rhun_armor_b", slot_item_materials_end, "str_female_mats_end"),
+
+	(item_set_slot, "itm_rhun_armor_d", slot_item_player_color, 1),
+	(item_set_slot, "itm_rhun_armor_d", slot_item_num_components, 1),
+	(item_set_slot, "itm_rhun_armor_d", slot_item_materials_begin, "str_rhunarmortexture_fem"),
+	(item_set_slot, "itm_rhun_armor_d", slot_item_materials_end, "str_female_mats_end"),
+	
+
 	#Init HP shield
 
 	(try_for_range, ":has_hp_shield", heroes_begin, heroes_end),
@@ -23372,18 +23388,18 @@ command_cursor_scripts = [
 			(party_slot_ge, ":cur_party", slot_center_destroy_on_capture, 1), #Is the center destroyable?
 			(party_slot_eq, ":cur_party", slot_center_destroyed, 0), #if it is destroyable, is it destroyed?
 			(val_add, ":centers_left", 1), #If the center is destroyable, but not destroyed, add 1
-			(str_store_party_name, s3, ":cur_party"),
-			(display_message, "@{s3} - not-destroyed"),	
+			#(str_store_party_name, s3, ":cur_party"),
+			#(display_message, "@{s3} - not-destroyed"),	
 		(else_try),
 			(party_slot_eq, ":cur_party", slot_center_destroy_on_capture, 0), #Is the center NOT destroyable (changes hands)?
 			(eq, ":orig_faction", ":fac"),  #If it does change hands, is it with its original faction?
 			(val_add, ":centers_left", 1), #If so, add 1
-			(str_store_party_name, s3, ":cur_party"),
-			(display_message, "@{s3} - not taken"),
+			#(str_store_party_name, s3, ":cur_party"),
+			#(display_message, "@{s3} - not taken"),
 		(else_try),
 			(val_add, ":centers_left",0), # all else, don't add anything
-			(str_store_party_name, s3, ":cur_party"),
-			(display_message, "@{s3} - nothing added"),
+			#(str_store_party_name, s3, ":cur_party"),
+			#(display_message, "@{s3} - nothing added"),
 		(try_end),
 	(try_end), #try for range end
 
@@ -27680,5 +27696,39 @@ if is_a_wb_script==1:
 		(try_end),
 	(try_end),
  ]),
+
+
+  #script_agent_reassign_team
+  # INPUT: arg1 = agent_no
+  # OUTPUT: none
+  ("agent_reassign_team",
+    [
+      (store_script_param, ":agent_no", 1),
+      (get_player_agent_no, ":player_agent"),
+      (try_begin),
+        (ge, ":player_agent", 0),
+        (agent_is_human, ":agent_no"),
+        (agent_is_ally, ":agent_no"),
+        (agent_get_party_id, ":party_no", ":agent_no"),
+        (neq, ":party_no", "p_main_party"),
+        (assign, ":continue", 1),
+        (store_faction_of_party, ":party_faction", ":party_no"),
+        (try_begin),
+          (eq, ":party_faction", "$players_kingdom"),
+          (is_between, "$players_kingdom", kingdoms_begin, kingdoms_end),
+          (faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
+          (assign, ":continue", 0),
+        (else_try),
+          (party_stack_get_troop_id, ":leader_troop_id", ":party_no", 0),
+          (neg|is_between, ":leader_troop_id", "trp_npc1", "trp_smith_mtirith"),
+          (assign, ":continue", 0),
+        (try_end),
+        (eq, ":continue", 1),
+        (agent_get_team, ":player_team", ":player_agent"),
+        (val_add, ":player_team", 2),
+        (agent_set_team, ":agent_no", ":player_team"),
+      (try_end),
+  ]),
+  
 
 ]

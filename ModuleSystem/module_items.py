@@ -59,6 +59,40 @@ def custom_reskin(item):
     ] or []) + [ 
     ])
 
+
+# Female Armour Variation
+
+def custom_female(item):
+  return (ti_on_init_item, [
+    ] + (is_a_wb_item==1 and [
+    # (store_trigger_param_1, ":agent_no"), #disabled to suppress compiler warnings
+    (store_trigger_param_2, ":troop_no"),
+
+    (troop_get_type, ":is_female", ":troop_no"),
+    (eq, ":is_female", tf_female),
+    
+    (str_clear, s1),
+    (item_get_slot, ":start", item, slot_item_materials_begin),
+    (item_get_slot, ":end", item, slot_item_materials_end),
+    (store_sub, ":total", ":end", ":start"),
+    (gt, ":total", 0),
+    (try_begin),
+      (gt, ":troop_no", -1),
+      (troop_is_hero, ":troop_no"),
+      (item_get_slot, ":value", item, slot_item_player_color),
+      (neq, ":value", -1),
+      (val_mod, ":value", ":total"),
+      (val_add, ":value", ":start"),
+    (else_try),
+      (store_random_in_range, ":value", ":start", ":end"),
+    (try_end),
+    (try_begin),
+      (str_store_string, s1, ":value"),
+      (cur_item_set_material, s1, 0),
+    (try_end),
+    ] or []) + [ 
+    ])
+
 # Dunde's 1 Liner Heraldic Code
 def heraldic(item_tableau):
   return (ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", item_tableau, ":agent_no", ":troop_no")])
@@ -651,7 +685,7 @@ items =[
 ["isengard_sword","Isengard_Sword",[("isengard_sword",0)],itp_type_one_handed_wpn|itp_primary|itp_shop,itc_bastardfalchion|itcf_carry_sword_left_hip,105,weight(2.5)|difficulty(0)|spd_rtng(93)|weapon_length(75)|swing_damage(30,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["isengard_axe","Isengard_Axe",[("isengard_axe",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_secondary|itp_bonus_against_shield|itp_wooden_parry,itc_scimitar|itcf_carry_axe_left_hip,300,weight(2)|difficulty(0)|spd_rtng(85)|weapon_length(73)|swing_damage(35,cut)|thrust_damage(0,pierce),imodbits_weapon_bad],
 ["isengard_hammer","Isengard_Hammer",[("isengard_hammer",0)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_wooden_parry,itc_scimitar|itcf_carry_mace_left_hip,200,weight(3)|difficulty(0)|spd_rtng(85)|weapon_length(61)|swing_damage(24,blunt)|thrust_damage(15,blunt),imodbits_weapon_bad],
-["isengard_halberd","Isengard_Halberd",[("isengard_halberd",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback,itc_staff,352,weight(4.5)|difficulty(0)|spd_rtng(83)|weapon_length(156)|swing_damage(38,cut)|thrust_damage(21,pierce),imodbits_weapon_bad],
+["isengard_halberd","Isengard_Halberd",[("isengard_halberd",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback|itp_no_blur,itc_staff,352,weight(4.5)|difficulty(0)|spd_rtng(83)|weapon_length(156)|swing_damage(38,cut)|thrust_damage(21,pierce),imodbits_weapon_bad],
 ["isengard_mallet","Isengard_Mallet",[("isengard_mallet",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_wooden_parry|itp_wooden_attack,itc_nodachi,300,weight(7)|difficulty(0)|spd_rtng(82)|weapon_length(83)|swing_damage(35,blunt)|thrust_damage(0,pierce),imodbits_weapon_wood],
 ["isengard_heavy_axe","Isengard_Heavy_Axe",[("isengard_heavy_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_cant_use_on_horseback|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,300,weight(4.5)|difficulty(0)|spd_rtng(87)|weapon_length(116)|swing_damage(38,cut),imodbits_weapon_bad],
 ["isengard_heavy_sword","Isengard_Heavy_Sword",[("isengard_heavy_sword",0)],itp_type_two_handed_wpn|itp_primary|itp_cant_use_on_horseback|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_shop,itc_nodachi|itcf_carry_sword_left_hip,500,weight(4.5)|difficulty(0)|spd_rtng(90)|weapon_length(102)|swing_damage(40,cut),imodbits_weapon_bad],
@@ -1048,10 +1082,10 @@ items =[
 ###TLD RHUN ITEMS##########
 ["furry_boots","Furry_Boots",[("furry_boots",0)],itp_type_foot_armor|itp_shop,0,200,weight(3)|leg_armor(10)|difficulty(0),imodbits_orc_cloth],
 ###ARMOR##########
-["rhun_armor_a","Rhun_Light_Battlewear",[("RhunArmorLight1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,20,weight(5)|head_armor(0)|body_armor(2)|leg_armor(6)|difficulty(0),imodbits_cloth,],
-["rhun_armor_b","Rhun_Light_Battlewear",[("RhunArmorLight2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,30,weight(5)|head_armor(0)|body_armor(3)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["rhun_armor_a","Rhun_Light_Battlewear",[("RhunArmorLight1",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,20,weight(5)|head_armor(0)|body_armor(2)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
+["rhun_armor_b","Rhun_Light_Battlewear",[("RhunArmorLight2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,30,weight(5)|head_armor(0)|body_armor(3)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 #["rhun_armor_c", "Rhun Armor",[("RhunArmorLight3",0)], itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["rhun_armor_d","Rhun_Light_Battlewear",[("RhunArmorLight4",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,31,weight(6)|head_armor(0)|body_armor(4)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["rhun_armor_d","Rhun_Light_Battlewear",[("RhunArmorLight4",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,31,weight(6)|head_armor(0)|body_armor(4)|leg_armor(6)|difficulty(0),imodbits_cloth,[]],
 #["rhun_armor_e", "Rhun Armor",[("RhunArmorLight5",0)], itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 #["rhun_armor_f", "Rhun Armor",[("RhunArmorHeavy1",0)], itp_shop|itp_type_body_armor|itp_covers_legs,0,65, weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["rhun_armor_g","Rhun_Heavy_Battlewear",[("RhunArmorHeavy2",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(10)|head_armor(0)|body_armor(18)|leg_armor(16)|difficulty(0),imodbits_armor,],

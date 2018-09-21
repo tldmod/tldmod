@@ -4884,10 +4884,10 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
      (neg|faction_slot_ge, "$g_talk_troop_faction", slot_faction_strength, 3200), #Kham - Changed from fac_str_ok
      (call_script, "script_faction_strength_string_to_s23", "$g_talk_troop_faction"),     
    ], "We can hardly afford to meet the enemy head on, {playername}. We still need to build up our forces and become strong, alas we are merely {s23}.", "lord_pretalk",[]],
-[anyone, "marshall_ask", [ #busy campaigning
-     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_ai_state, sfai_default), #not on campaign
-     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_ai_state, sfai_gathering_army), #not gathering army
-   ], "We are on a campaign, {playername}, your advice would have to wait.", "lord_pretalk",[]],
+#[anyone, "marshall_ask", [ #busy campaigning - Kham: Removed this. If player is rank 8, they should make time for them (sept 18)
+#     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_ai_state, sfai_default), #not on campaign
+#     (neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_ai_state, sfai_gathering_army), #not gathering army
+#   ], "We are on a campaign, {playername}, your advice would have to wait.", "lord_pretalk",[]],
 [anyone, "marshall_ask", [], "I'm listening, {playername}. What do you suggest?", "marshall_suggest",[]],
 
 ##Kham - Player initiated sieges BEGIN

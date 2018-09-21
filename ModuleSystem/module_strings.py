@@ -3347,4 +3347,8 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("tld_wear_3", "tld_wear_3"),
 ("dale_coat_end", "dale_coat_end"),
 
+#Female Materials
+("rhunarmortexture_fem", "rhunarmortexture_fem"),
+("female_mats_end", "female_mats_end"),
+
 ]

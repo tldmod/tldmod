@@ -3330,8 +3330,8 @@ game_menus = [
     ("what_theater",[], "Which Theater Am I in / Followers?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
   (assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news)]),
     ] + (is_a_wb_menu==1 and [
-    ("what_region",[], "Get Battlesize", 
-    	[(options_get_battle_size, reg65), (assign, reg66, reg65), (display_message, "@{reg65}", color_good_news), 
+    ("what_region",[], "Get Troop Number", 
+    	[(call_script, "script_party_count_fit_regulars", "p_main_party"), (display_message, "@{reg0} Fit Regulars"), (call_script, "script_party_count_fit_for_battle", "p_main_party"), (display_message, "@{reg0} Fit for battle"), 
     	]),
     ("player_control_allies",[],"Battlesize set to {reg66}", [(options_set_battle_size, reg66),]),
      ] or []) + [

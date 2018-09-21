@@ -720,5 +720,6 @@ script_lorien_mist_effect = 718
 script_sauron_darkness_effect = 719
 script_saruman_storm_effect = 720
 script_guldur_fog_effect = 721
+script_agent_reassign_team = 722
 
 

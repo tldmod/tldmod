@@ -1,4 +1,4 @@
-1615
+1611
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -542,7 +542,6 @@ qstr_Go_to_{s1}_and_speak Go_to_{s1}_and_speak_with_{s9}.
 qstr_The_Remnant_Forces_o The_Remnant_Forces_of_{s22}_have_gathered_to_reinforce_the_{s15}_theater!
 qstr_The_strength_of_the_ The_strength_of_the_remaining_allied_factions_of_the_{s15}_theater_has_increased
 qstr_{s30}_reinforced_by_ {s30}_reinforced_by_{reg65}_fac_str
-qstr_Gondor_AI_Tweaks___Go Gondor_AI_Tweaks_-_Gondor_waits_longer
 qstr_{s1}_has_been_besieg {s1}_has_been_besieged_by_{s2}_of_{s3}.
 qstr_Gondor_AI_Tweaks___Mo Gondor_AI_Tweaks_-_More_frequent_hosts
 qstr_The_forces_of_{s2}_m The_forces_of_{s2}_march_to_{s15}!
@@ -605,9 +604,6 @@ qstr_{s11}_{s10} {s11}_{s10}
 qstr_{s13}_{s14} {s13}_{s14}
 qstr_Something_wrong_not_ Something_wrong,_not_enough_troops_to_remove
 qstr_Troop:_{s6}___Level: Troop:_{s6}_-_Level:_{reg1}
-qstr_{s3}___not_destroyed {s3}_-_not-destroyed
-qstr_{s3}___not_taken {s3}_-_not_taken
-qstr_{s3}___nothing_added {s3}_-_nothing_added
 qstr_{reg6}_Centers_Left_ {reg6}_Centers_Left_for_{s2}
 qstr_DEBUG:_{reg0}_troop_ DEBUG:_{reg0}_troop_stacks_of_{s1}_found
 qstr_DEBUG:_8_Hours_to_hi DEBUG:_8_Hours_to_hide
@@ -1098,7 +1094,7 @@ qstr_Guard_Legion_of_{s6} Guard_Legion_of_{s6}
 qstr_Scouts_report_that_{ Scouts_report_that_{s6}_gathered_a_large_army_in_the_vicinity_of_{s7},_in_a_last_ditch_attempt_to_defend_the_capital.
 qstr_The_forces_of_{s2}_e The_forces_of_{s2}_established_an_advanced_camp_in_{s15}!
 qstr_The_hosts_of_{s2}_ma The_hosts_of_{s2}_march_back_to_defend_their_homes!
-qstr_{s31}_scripted_AI_se {s31}_scripted_AI_set
+qstr_{reg70}___Last_Stand {reg70}_-_Last_Stand
 qstr_Gondor_has_called_fo Gondor_has_called_for_aide!
 qstr_Gondor_is_accompanyi Gondor_is_accompanying_the_marshall!
 qstr_{s5}_has_stopped_fol {s5}_has_stopped_following_you.
