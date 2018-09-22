@@ -1118,7 +1118,7 @@ itemsfile version 2
  itm_isengard_halberd Isengard_Halberd Isengard_Halberd 1  isengard_halberd 0  2251800088772612 4222124851990272 352 286870 4.5 100 0 0 0 0 38912 83 0 156 0 277 38
 0
 
- itm_isengard_mallet Isengard_Mallet Isengard_Mallet 1  isengard_mallet 0  6750212 9223635919670608096 300 271496 7 100 0 0 0 0 35840 82 0 83 0 256 547
+ itm_isengard_mallet Isengard_Mallet Isengard_Mallet 1  isengard_mallet 0  2251799820435460 9223635919670608096 300 271496 7 100 0 0 0 0 35840 82 0 83 0 256 547
 0
 
  itm_isengard_heavy_axe Isengard_Heavy_Axe Isengard_Heavy_Axe 1  isengard_heavy_axe 0  342163460 9223635923965575392 300 286870 4.5 100 0 0 0 0 38912 87 0 116 0 0 38
@@ -1127,10 +1127,10 @@ itemsfile version 2
  itm_isengard_heavy_sword Isengard_Heavy_Sword Isengard_Heavy_Sword 1  isengard_heavy_sword 0  342163459 9223635919939043552 500 286870 4.5 100 0 0 0 0 40960 90 0 102 0 0 40
 0
 
- itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  275087364 9254615759470988544 200 271496 2.5 100 0 0 0 0 20480 96 0 150 0 283 532
+ itm_isengard_spear Isengard_Spear Isengard_Spear 1  isengard_spear 0  2251800088772612 9254615759470988544 200 271496 2.5 100 0 0 0 0 20480 96 0 150 0 283 532
 0
 
- itm_isengard_pike Isengard_Pike Isengard_Pike 1  isengard_pike 0  275087364 4222124851987200 500 271496 3.5 100 0 0 0 0 16384 92 0 226 0 282 528
+ itm_isengard_pike Isengard_Pike Isengard_Pike 1  isengard_pike 0  2251800088772612 4222124851987200 500 271496 3.5 100 0 0 0 0 16384 92 0 226 0 282 528
 0
 
  itm_isen_orc_shield_a Isen_Orc_Shield Isen_Orc_Shield 1  isen_orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 6 0 0 310 96 0 40 0 0 0

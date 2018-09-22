@@ -2914,6 +2914,7 @@ simple_triggers = [
 
         (try_for_range, ":besieger_faction", kingdoms_begin, kingdoms_end),
           (faction_slot_eq, ":besieger_faction", slot_faction_state, sfs_active), #must be active
+          (faction_slot_ge, ":besieger_faction", slot_faction_strength, fac_str_ok),
           (faction_get_slot, ":attacker_faction_theater", ":besieger_faction", slot_faction_active_theater),
           (eq, ":attacker_faction_theater", ":enemy_faction_current_theater"), #Should be same theater
           (store_relation, ":reln", ":besieger_faction", ":enemy_faction"),
@@ -3525,6 +3526,7 @@ simple_triggers = [
       (try_begin),
         (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
         (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_active), #Rohan still active,
+        (faction_slot_ge, "fac_rohan", slot_faction_strength, fac_str_ok),
         (call_script, "script_get_faction_rank", "fac_rohan"), (assign, ":rank", reg0), #rank points to rank number 0-9
         (gt, ":rank", 5), #Rank 6 with Rohan
         (jump_to_menu, "mnu_guardian_party_quest"),
@@ -3535,6 +3537,7 @@ simple_triggers = [
         (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),
         (faction_slot_eq, "fac_rohan", slot_faction_state, sfs_defeated), #Rohan defeated,
         (faction_slot_eq, "fac_gondor", slot_faction_state, sfs_active), #Gondor still active,
+        (faction_slot_ge, "fac_gondor", slot_faction_strength, fac_str_ok),
         (call_script, "script_get_faction_rank", "fac_gondor"), (assign, ":rank", reg0), #rank points to rank number 0-9
         (gt, ":rank", 5), #Rank 6 with Gondor
         (jump_to_menu, "mnu_guardian_party_quest"),
@@ -3550,6 +3553,7 @@ simple_triggers = [
           (gt, ":relation", 0),
           (faction_slot_eq, ":surviving_good", slot_faction_active_theater, theater_SW), #In Rohan
           (faction_slot_eq, ":surviving_good", slot_faction_state, sfs_active),
+          (faction_slot_ge, ":surviving_good", slot_faction_strength, fac_str_ok),
           (call_script, "script_get_faction_rank", ":surviving_good"), (assign, ":rank", reg0), #rank points to rank number 0-9
           (gt, ":rank", 4), #Rank 5 with whoever is still alive
           (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 0),

@@ -24609,6 +24609,17 @@ command_cursor_scripts = [
     	(le, ":quest_slot", 2), #Dont set the slot when marshall is waiting
     	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 3), #3 for waiting marshall
     (try_end),
+
+    (try_for_parties, ":patrols"),
+    	(party_is_active, ":patrols"),
+    	(party_get_slot, ":type", ":patrols", slot_party_type),
+    	(this_or_next|eq, ":type", spt_raider),
+    	(eq, ":type", spt_patrol),
+    	(store_faction_of_party, ":patrol_fac", ":patrols"),
+    	(eq, ":patrol_fac", ":attacking_faction"),
+    	(call_script, "script_accompany_marshall", ":patrols", ":quest_target_troop"),
+    (try_end),
+    
  	#(quest_get_slot, reg65, "qst_guardian_party_quest", slot_quest_current_state),
  	#(display_message, "@{reg65} - Current State: Following Script.", color_good_news),
  ]),
@@ -24618,6 +24629,7 @@ command_cursor_scripts = [
 ("cf_gp_marshall_travel_to_position", [
 	(quest_get_slot, ":quest_target_troop", "qst_guardian_party_quest", slot_quest_target_troop),
 	(troop_get_slot, ":party", ":quest_target_troop", slot_troop_leaded_party),
+	(party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party),
 	(set_fixed_point_multiplier, 10),
  	(position_set_x, pos56, 452),
     (position_set_y, pos56, -476),
@@ -24657,6 +24669,7 @@ command_cursor_scripts = [
 	(quest_get_slot, ":quest_target_troop_2", "qst_guardian_party_quest", slot_quest_target_troop),
 	(troop_get_slot, ":party_2", ":quest_target_troop_2", slot_troop_leaded_party),
 	(party_is_active, ":party_2"),
+	(party_slot_eq, ":party_2", slot_party_type, spt_kingdom_hero_party),
 	(call_script, "script_attack_party", ":quest_target_troop_2", ":guardian_party"),
 	#(display_message, "@Marshall Attacking Isengard Guardian Party", color_good_news),
 	(try_begin),
