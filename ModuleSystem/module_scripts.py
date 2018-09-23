@@ -1948,8 +1948,8 @@ scripts = [
 	(party_set_slot, "p_main_party", slot_party_pref_wu_harcher, 1),
 	(party_set_slot, "p_main_party", slot_party_pref_wu_spear, 1),
 	(party_set_slot, "p_main_party", slot_party_pref_dmg_tweaks, 1),
-	(party_set_slot, "p_main_party", slot_party_pref_div_dehorse, 9),
-    (party_set_slot, "p_main_party", slot_party_pref_div_no_ammo, 9),
+	(party_set_slot, "p_main_party", slot_party_pref_div_dehorse, grc_infantry),
+    (party_set_slot, "p_main_party", slot_party_pref_div_no_ammo, grc_infantry),
 
 	# Squelch Compiler Warnings
 	(assign, "$g_custom_armor_param_count", 0),
@@ -19955,6 +19955,7 @@ scripts = [
 			(display_message, "@{s1}_has_been_killed.", color_bad_news),
 			(troop_set_slot, ":npc", slot_troop_wound_mask, wound_death),
 			(remove_member_from_party,":npc","p_main_party"),
+			(add_troop_to_site, ":npc", "scn_erebor_castle_2", 0), #Teleport them somewhere else! 
 			(call_script, "script_build_mound_for_dead_hero", ":npc", "p_main_party"),
 		(else_try),
 			(eq,":npc", "trp_player"),
@@ -24619,7 +24620,7 @@ command_cursor_scripts = [
     	(eq, ":patrol_fac", ":attacking_faction"),
     	(call_script, "script_accompany_marshall", ":patrols", ":quest_target_troop"),
     (try_end),
-    
+
  	#(quest_get_slot, reg65, "qst_guardian_party_quest", slot_quest_current_state),
  	#(display_message, "@{reg65} - Current State: Following Script.", color_good_news),
  ]),
