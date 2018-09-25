@@ -400,5 +400,6 @@ mesh_choose_icon_dwarf = 398
 mesh_choose_icon_orc = 399
 mesh_choose_icon_uruk = 400
 mesh_choose_icon_evilman = 401
+mesh_draw_funeral_pyre_oath = 402
 
 

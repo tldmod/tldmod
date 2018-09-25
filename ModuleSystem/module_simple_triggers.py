@@ -2904,7 +2904,8 @@ simple_triggers = [
     (try_end),
 
     (try_begin),
-      (troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test
+      #(troop_slot_eq, "trp_player", slot_troop_home, 22), #kham test
+      (eq, "$cheat_mode", 1),
       (try_for_range, ":enemy_faction", kingdoms_begin, kingdoms_end),
         (faction_slot_eq, ":enemy_faction", slot_faction_state, sfs_active),
         (faction_slot_ge, ":enemy_faction", slot_faction_last_stand, 11),
@@ -2919,13 +2920,14 @@ simple_triggers = [
           (eq, ":attacker_faction_theater", ":enemy_faction_current_theater"), #Should be same theater
           (store_relation, ":reln", ":besieger_faction", ":enemy_faction"),
           (lt, ":reln", 0), #Must be enemies
+          (faction_get_slot, ":faction_ai_state",  ":besieger_faction", slot_faction_ai_state),
+          (neq, ":faction_ai_state", sfai_gathering_army), #Make sure they can gather army
           (faction_get_slot, ":besieger_marshall", ":besieger_faction", slot_faction_marshall), 
           (troop_get_slot, ":marshall_party", ":besieger_marshall", slot_troop_leaded_party),
           (gt, ":marshall_party", 0),
           (neg|party_slot_eq, ":marshall_party", slot_party_type, spt_kingdom_hero_alone), #Should not be alone
           (call_script, "script_party_count_fit_regulars", ":marshall_party"), 
           (ge, reg0, tld_siege_min_party_size),
-          (faction_slot_ge, ":besieger_faction", slot_faction_ai_offensive_max_followers, 1), #Must have at least 1 follower
           (faction_set_slot, ":besieger_faction", slot_faction_state, sfai_attacking_center),
           (call_script, "script_party_set_ai_state", ":marshall_party", spai_besieging_center, ":capital"),
           (party_set_ai_behavior, ":marshall_party", ai_bhvr_attack_party),

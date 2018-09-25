@@ -11291,6 +11291,60 @@ game_menus = [
 	],[
     ("leave_mound", [], "Leave_the_mound.", [(leave_encounter),(change_screen_return)]),
  ]),
+
+( "funeral_pyre_oath", 0, 
+  "You loudly swear an oath of vengeance for the death of {s4}. \
+  You would relentlessly seek out the forces of {s3} and destroy them. \
+  Your words carry far on the wind and who can say that they were not heard beyond the sea?", "none",
+	[(set_background_mesh, "mesh_draw_funeral_pyre_oath"),
+	(store_encountered_party, ":mound"),
+	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
+	(str_store_troop_name, s4, ":hero"),
+	(store_troop_faction, ":target", ":hero"),
+	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
+	(quest_set_slot, "qst_oath_of_vengeance", 5, ":hero"), # CppCoder: remember source hero
+	
+	(assign,":count",1000000),  # choose nearest enemy capital as target faction
+	(assign,":target", 0),
+	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
+		(store_relation, ":dist", ":fac", "fac_player_faction"),
+		(lt, ":dist", 0), #enemies only
+		(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
+		(faction_get_slot, ":capital", ":fac", slot_faction_capital),
+		(store_distance_to_party_from_party,":dist",":mound",":capital"),  # choose nearest enemy capital for vengeance
+		(lt, ":dist", ":count"),
+			(assign,":count",":dist"),
+			(assign,":target", ":fac"),
+	(try_end),
+	
+	(str_store_faction_name, s3, ":target"),
+	(store_current_day, ":day"),
+	(quest_set_slot, "qst_oath_of_vengeance", 1, ":day"),
+	(quest_set_slot, "qst_oath_of_vengeance", 2, ":target"), # target faction
+	
+	#Kham - Oath of Vengeance Refactor Start
+	#(assign,":count", 0), # count and store initial killcount of target faction' parties
+	#(try_for_range, ":ptemplate", "pt_gondor_scouts", "pt_kingdom_hero_party"),
+	#	(spawn_around_party,"p_main_party",":ptemplate"),
+	#	(store_faction_of_party,":fac", reg0),
+	#	(call_script, "script_safe_remove_party", reg0),
+	#	(eq, ":fac", ":target"),
+	#	(store_num_parties_destroyed_by_player, ":n", ":ptemplate"),
+	#	(val_add,":count",":n"),
+	#(try_end),
+	#(quest_set_slot, "qst_oath_of_vengeance", 3, ":count"), # counter for destroyed parties of target faction at quest start
+	
+	(assign, "$oath_kills",0),
+	#Kham - Oath of Vengeance Refactor END
+
+	(party_set_slot, ":mound", slot_mound_state, 3), # no more oaths from here
+        (setup_quest_text, "qst_oath_of_vengeance"),
+        (str_store_string, s2, "@Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!"),
+	(call_script, "script_start_quest", "qst_oath_of_vengeance", "trp_player"),
+	],[
+    ("leave_pyre_oath", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]),
+ ]),
+
 ( "burial_mound_despoil", 0, 
   "You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.\
   Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.", "none", 
@@ -11324,7 +11378,7 @@ game_menus = [
 					(party_get_slot, ":state", ":mound", slot_mound_state),
 					(eq, ":state", 1),
 					(check_quest_active|neg, "qst_oath_of_vengeance")],
-   "Swear_an_oath_of_vengeance!",  [(jump_to_menu, "mnu_burial_mound_oath")]),  
+   "Swear_an_oath_of_vengeance!",  [(jump_to_menu, "mnu_funeral_pyre_oath")]),  
  ("leave_pyre", [], "Leave_the_pyre.", [(leave_encounter),(change_screen_return)]), 
  ]),
 ( "town_ruins",mnf_enable_hot_keys|city_menu_color,
