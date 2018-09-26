@@ -6660,7 +6660,7 @@ game_menus = [
 
 	  ("moria_enter",[
 				(eq, "$current_town", "p_town_moria"),
-				(this_or_next|eq, "$found_moria_entrance", 1),(eq,"$cheat_mode",1)
+				(this_or_next|eq, "$found_moria_entrance", 1),(eq,"$cheat_mode",1), (eq, "$moria_book_given",0),
 	        ], "Return into main hall of Moria trough the secret entrance",[
 			(modify_visitors_at_site,"scn_moria_center",),
 			(reset_visitors),

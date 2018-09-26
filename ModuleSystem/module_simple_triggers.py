@@ -1714,7 +1714,7 @@ simple_triggers = [
         (else_try),
           (str_store_string, s4, "@{reg65} {s3} troops killed. (Counter refreshes every hour)"),
         (try_end),
-        (add_quest_note_from_sreg, "qst_oath_of_vengeance", 2, s3, 0),
+        (add_quest_note_from_sreg, "qst_oath_of_vengeance", 2, s4, 0),
       (try_end),
       
       #Report number of kills for the kill quest
