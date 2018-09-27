@@ -4929,6 +4929,33 @@ scripts = [
         (ge, ":root_party", 0), #MV fix for script errors
   #TLD assign faction strength penalties for party destruction, GA
         (store_faction_of_party, ":faction", ":root_party"),
+
+        # Check if Isengard Guardian Party
+        
+        (faction_get_slot, ":guardian_party_exists", "fac_isengard", slot_faction_guardian_party),
+
+        (try_begin),
+        	(eq, ":root_party", ":guardian_party_exists"),
+        	(neg|check_quest_active, "qst_guardian_party_quest"),
+        	(quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 1), #Or Lords are going to be scripted
+        	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.
+       	(else_try),
+       		(eq, ":root_party", ":guardian_party_exists"),
+        	(check_quest_active, "qst_guardian_party_quest"),
+        	(quest_set_slot, "qst_guardian_party_quest", slot_quest_current_state, 5), #5 when GP is defeated.
+        	(quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
+        	(call_script, "script_succeed_quest", "qst_guardian_party_quest"),
+        	(call_script, "script_end_quest", "qst_guardian_party_quest"),
+            (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
+              (store_troop_faction, ":lord_fac", ":lords"),
+              (eq, ":lord_fac", ":attacking_faction"),
+              (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
+              (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
+            (try_end),
+        (try_end),
+
+     	# Guardian Party Quest - END
+     	
 	    (try_begin),
 	      (is_between, ":faction", kingdoms_begin, kingdoms_end),
 	      (faction_get_slot,":strength",":faction",slot_faction_strength_tmp),

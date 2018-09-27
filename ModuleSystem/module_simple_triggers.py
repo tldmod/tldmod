@@ -3502,9 +3502,19 @@ simple_triggers = [
         (quest_slot_ge, "qst_guardian_party_quest", slot_quest_current_state, 2), #Good guys attack Guardian Party W/O Player
         (neg|quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 5), #When party is defeated, end all AI
         (assign, ":continue", 1),
+      (else_try),
+        (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 5), #When party is defeated, end all AI
+        (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
+        (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
+          (store_troop_faction, ":lord_fac", ":lords"),
+          (eq, ":lord_fac", ":attacking_faction"),
+          (troop_get_slot, ":lord_party", ":lords", slot_troop_leaded_party),
+          (party_set_slot, ":lord_party", slot_party_scripted_ai, 0),
+        (try_end),
       (try_end),
       
       (eq, ":continue", 1),
+      (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
       
       #(display_message, "@{reg70} - Qst GP Trigger 1"),
       #Good Guys attack Guardian Party gets resolved here:
