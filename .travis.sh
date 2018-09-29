@@ -98,6 +98,10 @@ _fold_start_ "[Packaging and stripping revision $SVNREV into usable incremental 
                           -e '/^$/d' \
                           -e 's/^.+TLD_GA\///' > diff_mod.txt
 
+    # swy: fix the "R099	_wb/Resource/iv_fake_houses.brf	Resource/iv_fake_houses.brf" lines by changing
+    #      them to "R	Resource/iv_fake_houses.brf"; that way we handle the copying correctly after this
+    sed -ri 's/^R[0-9]+.+\t(.*)$/R\t\1/' diff_mod.txt
+
     mkdir ../TLD
 
     cat ./diff_mod.txt | while read i; do cp --parents "${i:2}" "../TLD/"; done
