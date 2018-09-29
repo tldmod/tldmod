@@ -3505,6 +3505,8 @@ simple_triggers = [
       (else_try),
         (quest_slot_eq, "qst_guardian_party_quest", slot_quest_current_state, 5), #When party is defeated, end all AI
         (faction_slot_eq, "fac_isengard", slot_faction_state, sfs_active),
+        (quest_get_slot, ":attacking_faction", "qst_guardian_party_quest", slot_quest_object_center),
+        (gt, ":attacking_faction", 0),
         (try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
           (store_troop_faction, ":lord_fac", ":lords"),
           (eq, ":lord_fac", ":attacking_faction"),

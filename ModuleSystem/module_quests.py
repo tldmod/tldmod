@@ -281,7 +281,7 @@ quests = [
 ),
 
 # Kill Quest Targeted
-("blank_quest_04", "Kill {s35} {s36}", 0,
+("blank_quest_04", "Kill {s35} {s6} {s7}", 0,
   "{!}Placeholder"
 ),
 
