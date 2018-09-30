@@ -3420,6 +3420,15 @@ formations_triggers_moto = [ #4 triggers
 
 battle_encounters_effects = [
 
+(ti_before_mission_start, 0, ti_once, [
+  (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
+
+  ],[
+
+  (set_rain, 1, 500),
+  
+]),
+
 (ti_after_mission_start, 0, ti_once, [
 
   (party_get_slot, ":encounter_effect", "p_main_party", slot_party_battle_encounter_effect),
