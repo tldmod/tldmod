@@ -411,5 +411,5 @@ party_templates = [
 
 
 ## Kham - Retreat Troops
-("retreat_troops","Cover Troops",icon_axeman|carries_goods(3),0,fac_outlaws,merchant_personality,[]),
+("retreat_troops","Cover Troops",icon_axeman|carries_goods(3),0,fac_outlaws,merchant_personality,[(trp_farmer,1,1)]),
 ] + common_warp_templates

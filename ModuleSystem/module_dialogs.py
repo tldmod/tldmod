@@ -11927,13 +11927,13 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 [anyone,"prisoner_chat_00", [], "You put me in chains already, what more do you want?", "prisoner_chat_3",[]],
 [anyone|plyr,"prisoner_chat_3", [],"Don't try anything, you scum!", "prisoner_chat_4",[]],
 [anyone|plyr,"prisoner_chat_3", [
-  (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),(neg|troop_is_hero,"$g_talk_troop"),
+  (neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),(neg|troop_is_hero,"$g_talk_troop"), (neg|is_between, "$g_talk_troop", heroes_begin, heroes_end),
   (str_clear, s20),(try_begin),(neq, "$talk_context", tc_troop_review_talk ),(str_store_string, s20, "@_Guards, slaughter him!"), (try_end),
 ], 
 "You happen to be our next dinner!{s20}", "prisoner_slaughter",[]],
 [anyone,"prisoner_chat_4", [],"Yeah, like I'm in a position for trying? Get lost!", "close_window",[(call_script,"script_stand_back"),]],
 
-[anyone,"prisoner_slaughter", [(eq, "$talk_context", tc_troop_review_talk)], "One day you will pay!", "prisoner_slaughter_02",[
+[anyone,"prisoner_slaughter", [(eq, "$talk_context", tc_troop_review_talk), (neg|is_between, "$g_talk_troop", heroes_begin, heroes_end), ], "One day you will pay!", "prisoner_slaughter_02",[
   (try_begin),
     (lt, "$butcher_trait_kills",35),
     (val_add, "$butcher_trait_kills",1),
