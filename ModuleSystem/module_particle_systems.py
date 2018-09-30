@@ -921,7 +921,7 @@ particle_systems = [
      0.5                        #rotation damping
     ),
     
-    ("water_foam",  psf_turn_to_velocity | psf_always_emit|psf_randomize_size, "prt_foam_a",
+    ("water_foam",  psf_turn_to_velocity | psf_always_emit|psf_randomize_size, "prt_foam_a_TLD",
      1, 1.7, 1, 0.0, 0.0, 0.0,     #num_particles, life, damping, gravity_strength, turbulance_size, turbulance_strength
      (0.7, 0.7), (1, 0.0),        #alpha keys
      (1.0, 1.0), (1, 1.0),      #red keys
