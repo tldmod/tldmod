@@ -2695,3 +2695,7 @@ ENCOUNTER_EFFECT_MORALE_BUFF = 10
 ENCOUNTER_EFFECT_MORALE_DEBUFF = 10
 
 slot_party_scripted_ai = 309
+
+
+slot_troll_agent_charging = 50
+slot_troll_agent_last_charge = 51

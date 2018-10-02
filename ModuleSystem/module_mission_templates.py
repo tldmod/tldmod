@@ -926,6 +926,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 ] or [])
 
 
+
 tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 
     ### WB only triggers 
@@ -952,7 +953,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 	#tld_wargs_attack_horses, # WIP (CppCoder)
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
-	custom_tld_horses_hate_trolls, custom_troll_hitting,
+	custom_tld_horses_hate_trolls, #custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	nazgul_sweeps,
 	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); Improved, but still WIP. (CppCoder)

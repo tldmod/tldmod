@@ -3426,7 +3426,7 @@ battle_encounters_effects = [
   ],[
 
   (set_rain, 1, 500),
-  
+
 ]),
 
 (ti_after_mission_start, 0, ti_once, [
@@ -3536,4 +3536,84 @@ battle_encounters_effects = [
   ]),
 
 
+]
+
+voice_commands = [(ti_on_order_issued,0,3, [
+  
+  #(store_trigger_param_1, ":order_issued"),
+  (store_trigger_param_2, ":agent_id"),
+  (get_player_agent_no, ":player"),
+  (agent_is_alive, ":player"),
+  (eq, ":agent_id", ":player"),
+
+  ],[
+
+  (store_trigger_param_1, ":order_issued"),
+  (store_trigger_param_2, ":agent_id"),
+  (get_player_agent_no, ":player"),
+  (agent_is_alive, ":player"),
+  (eq, ":agent_id", ":player"),
+
+  (assign, ":sound_to_play", 0), # You can put a default sound here just in case. 
+
+  (try_begin),
+    (eq, ":order_issued", mordr_hold), #Hold Command
+    (assign, ":sound_to_play", "snd_thunder"),  #add the sound you want here
+  (else_try),
+    (eq, ":order_issued", mordr_follow), #Follow Command
+    (assign, ":sound_to_play", "snd_thunder"), 
+  (else_try),
+    (eq, ":order_issued", mordr_charge), #Charge Command
+    (assign, ":sound_to_play", "snd_thunder"), 
+  (else_try),
+    (eq, ":order_issued", mordr_mount), #Mount Command
+    (assign, ":sound_to_play", "snd_thunder"), 
+  (try_end),
+
+  (agent_play_sound, ":player", ":sound_to_play"),
+
+]),
+
+(0,0,3, [
+
+  (assign, ":continue", 0),
+  (assign, ":last_gk", gk_reverse_order_group),
+  (get_player_agent_no, ":player"),
+  (agent_is_alive, ":player"),
+  (try_for_range, ":game_key", gk_everyone_hear, ":last_gk"),
+    (game_key_clicked, ":game_key"),
+    (assign, ":continue", 1),
+    (assign, ":last_gk", 0), #loop breaker
+  (try_end),
+
+  (eq, ":continue", 1),
+
+  ], [
+
+  (get_player_agent_no, ":player"),
+  (agent_is_alive, ":player"),
+
+  (assign, ":continue", 0),
+  (assign, ":last_gk", gk_reverse_order_group),
+
+  (try_for_range, ":game_key", gk_everyone_hear, ":last_gk"),
+    (game_key_clicked, ":game_key"),
+    (assign, ":continue", 1),
+    (assign, ":last_gk", 0), #loop breaker
+    (assign, ":game_key_clicked", ":game_key"),
+  (try_end),
+
+  (eq, ":continue", 1),
+
+  (assign, ":sound_to_play", 0), # You can put a default sound here just in case. 
+
+  (try_begin),
+    (eq, ":game_key_clicked", gk_everyone_hear),
+    (assign, ":sound_to_play", "snd_thunder"), 
+  (else_try), 
+    (eq, ":game_key_clicked", gk_infantry_hear),
+    (assign, ":sound_to_play", "snd_thunder"), 
+  (try_end),
+  (agent_play_sound, ":player", ":sound_to_play"),
+])
 ]
