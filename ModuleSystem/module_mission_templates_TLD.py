@@ -2160,6 +2160,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	(eq, ":type", tf_troll),
 
 	(agent_set_speed_modifier, ":troll", 30),
+	(agent_set_max_hit_points, ":troll", 25),
  ]),
 
 (ti_on_agent_hit, 0, 7, [

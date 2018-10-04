@@ -953,7 +953,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 	#tld_wargs_attack_horses, # WIP (CppCoder)
 	tld_slow_wounded,
  	custom_tld_spawn_troop, custom_tld_init_battle,
-	custom_tld_horses_hate_trolls, #custom_troll_hitting,
+	custom_tld_horses_hate_trolls, custom_troll_hitting,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
 	nazgul_sweeps,
 	custom_warg_sounds, custom_lone_wargs_are_aggressive, #custom_lone_wargs_special_attack, # WIP, needs more work (mtarini); Improved, but still WIP. (CppCoder)
@@ -967,7 +967,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack
+] + tld_morale_triggers + fade  + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack
 
 
 tld_siege_battle_scripts = [
@@ -5372,7 +5372,7 @@ mission_templates = [ # not used in game
 	common_custom_battle_tab_press,
 	common_custom_battle_question_answered,
 	common_inventory_not_available,
-	(0, 0, ti_once, [],[ (assign, "$g_battle_result", 0),(call_script, "script_combat_music_set_situation_with_culture")]),
+	(0, 0, ti_once, [],[ (assign, "$g_battle_result", 0),(call_script, "script_combat_music_set_situation_with_culture"), ]),
 	common_music_situation_update,
 	custom_battle_check_victory_condition,
 	common_battle_victory_display,

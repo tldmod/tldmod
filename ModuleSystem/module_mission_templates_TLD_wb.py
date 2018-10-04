@@ -1759,7 +1759,18 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (store_trigger_param_2, ":dealer"),
     (store_trigger_param_3, ":damage"),
   
+    (get_player_agent_no, ":player"),
+    (agent_get_troop_id, ":troop_id", ":agent"),
+
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
+
+    (try_begin),
+      (eq, ":troop_id", "trp_olog_hai"),
+      (gt, ":current_hp_shield", 0),
+      (lt, ":damage", 4),
+      (assign, ":damage", 0),
+    (try_end),
+
     (try_begin),
       (gt, ":current_hp_shield", 0),
       (val_sub, ":current_hp_shield", ":damage"),
@@ -1773,8 +1784,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       #(assign, reg3, ":current_hp_shield"),
       #(display_message, "@Hp shield: {reg3} left."), 
 
-    (get_player_agent_no, ":player"),
-    (agent_get_troop_id, ":troop_id", ":agent"),
+   
     
     (try_begin),
       (eq, ":dealer", ":player"),
