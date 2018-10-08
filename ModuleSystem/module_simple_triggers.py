@@ -489,10 +489,13 @@ simple_triggers = [
 				(try_begin),
 					(gt, "$tld_war_began", 0),
 					(eq, ":faction_no", "$players_kingdom"),
+					(gt, ":strength_income", 5),
 					(store_character_level, ":player_level", "trp_player"),
-					(val_mul, ":player_level", 2),
+					(val_mul, ":player_level", 3),
+					(val_div, ":player_level", 2),
+					(val_min, ":player_level", 40),
 					(val_sub, ":strength_income", ":player_level"),
-					(val_max, ":strength_income", 0), #still has to be >0
+					(val_max, ":strength_income", 5), #still has to be >0
 				(try_end),
 				(try_begin), #evil handicap: if player is evil, evil factions get less
 					(neg|faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
