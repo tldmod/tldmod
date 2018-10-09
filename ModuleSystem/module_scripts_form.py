@@ -5850,6 +5850,9 @@ formAI_scripts = [
     [
       	(store_script_param, ":order_no", 1),
       	(store_script_param, ":agent_no", 2),
+
+      	(assign, ":agent_no", ":agent_no"),
+      	
 	(try_begin),
 		(eq|this_or_next, ":order_no", mordr_dismount),
 		(eq|this_or_next, ":order_no", mordr_charge),

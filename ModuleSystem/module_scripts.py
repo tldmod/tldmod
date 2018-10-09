@@ -1896,7 +1896,17 @@ scripts = [
 	(assign, "$FormAI_AI_no_defense",0), #Kham - FormAI - don't allow AI Defensive
 	(party_set_slot, "p_main_party", slot_party_number_following_player, 0),
 	
+	#Kham - Squelch compiler warnings
+	(assign, "$battle_renown_total", 0), 
+	(assign, "$hold_f1", 0),  
+	(assign, "$dormant_spawn_radius", 0), 
 
+	(val_mul, "$battle_renown_total", "$hold_f1"),
+	(val_mul, "$battle_renown_total", "$dormant_spawn_radius"),
+	(val_mul, "$hold_f1", "$battle_renown_total"),
+
+	#Kham - Squelch compiler warnings END
+	
 	#(try_for_range, ":beacon", "p_amon_din", "p_spawn_points_end"),
 	#	(set_position_delta, -3.0,6.0,65.0),
 	#	(party_add_particle_system, ":beacon", "psys_lamp_fire"),
@@ -2013,6 +2023,22 @@ scripts = [
    	(assign, "$g_wp_ai_hr_active", 1),       	  # Set to 0 to prevent AI regeneration.  1 to activate.
 
 	] or []) + [
+
+	#Squelch MB 1.011 Compiler Warnings
+	] + ((not is_a_wb_script==1) and [
+
+	(assign, "$bright_nights", 1),
+	(assign, "$show_key_binds_toggle", 0),
+	(assign, "$g_last_archery_point_earned", 0),
+	(assign, "$tutorial_num_total_dummies_destroyed", 0),
+
+	(val_add, "$bright_nights", "$show_key_binds_toggle"),
+	(val_add, "$g_last_archery_point_earned", "$show_key_binds_toggle"),
+	(val_add, "$show_key_binds_toggle", "$bright_nights"),
+	(val_add, "$tutorial_num_total_dummies_destroyed", "$g_last_archery_point_earned"),
+
+	] or []) + [
+	#Squelch MB 1.011 Compiler Warnings END
 ]),    
 
 # script_refresh_volunteers_in_town (mtarini and others)
@@ -26158,7 +26184,8 @@ if is_a_wb_script==1:
       (cur_tableau_clear_override_items),
       #(troop_get_inventory_slot, ":armor", ":troop_no", ek_body),
       (assign, ":flags", 0),
-      
+      (assign, ":troop_no", ":troop_no"),
+
       #(try_begin),
       #  (gt, ":armor", itm_no_item),
       #  (item_has_property, ":armor", itp_replaces_helm),
