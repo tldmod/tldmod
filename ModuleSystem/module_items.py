@@ -26,6 +26,85 @@ from module_info import wb_compile_switch as is_a_wb_item
 ####################################################################################################################
 #
 
+
+def troll_aoe(item):
+  return (ti_on_weapon_attack, [
+    ] + (is_a_wb_item==1 and [
+
+    (store_trigger_param_1, ":agent_no"),
+
+
+    (agent_is_active, ":agent_no"),
+    (agent_is_alive, ":agent_no"),
+
+    (store_random_in_range, ":rand", 0, 2),
+    (eq, ":rand", 0), # 1/2 chance of dealing AOE
+
+    (agent_get_attack_action, ":action", ":agent_no"),
+
+    (try_begin),
+      (eq, ":action", 0),
+      (agent_get_combat_state, ":state", ":agent_no"),
+      (eq, ":state", 1),  
+      (agent_ai_get_look_target,":agent2", ":agent_no"),
+      (agent_is_alive, ":agent2"),
+      (agent_is_active, ":agent2"),
+      (assign, ":bone", 8), # by default, aim at torax
+      (agent_get_bone_position, pos13, ":agent2", ":bone", 1), # pos13 = target BONE pos
+      (agent_set_look_target_position, ":agent_no", pos13),      # override aimed location
+    (try_end),
+
+                
+    (is_between, ":action", 2, 7),
+    #(display_message, "@Clear"), 
+
+    (agent_get_position, pos9, ":agent_no"),
+    (set_fixed_point_multiplier, 100),
+
+    (try_for_agents, ":aoe_hit", pos9, 200),
+      (agent_is_active, ":aoe_hit"),
+      (agent_is_alive, ":aoe_hit"),
+      (agent_is_human, ":aoe_hit"),
+      (neq, ":aoe_hit", ":agent_no"), #don't hit yourself
+      (gt, ":aoe_hit", 0),
+
+      (agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
+      (troop_get_type, ":victim_type", ":victim_troop_id"),
+      (agent_get_horse, ":victim_horse", ":aoe_hit"),
+      
+      (store_random_in_range, ":flyback_anim", 0, 2),
+      # then, set animation
+      (try_begin),
+        (eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
+        (agent_set_animation, ":aoe_hit", "anim_strike_fall_back_rise"),
+      (else_try),
+      
+      # human (non trolls, non horse) victims
+        (try_begin),
+          (eq, ":flyback_anim", 0),
+      # troll is in front of victim
+          (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise_from_left"), # send them flying back
+        (else_try),
+          (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise"), # send them flying back
+        (try_end),
+
+        (try_begin),
+          (gt, ":victim_horse", 1),
+          (agent_start_running_away, ":victim_horse"),
+          (agent_stop_running_away, ":victim_horse"),
+        (try_end),
+        (store_random_in_range,":random_timings",1,5),
+        (agent_set_animation_progress, ":aoe_hit", ":random_timings"), # differentiate timings a bit
+
+        (item_get_swing_damage, ":damage", item),
+        (val_div, ":damage", 3),
+        (agent_deliver_damage_to_agent, ":agent_no", ":aoe_hit", ":damage"),
+
+      (try_end),
+    (try_end),
+     ] or []) + [ 
+    ])
+
 def custom_reskin(item):
   return (ti_on_init_item, [
     ] + (is_a_wb_item==1 and [
@@ -261,14 +340,14 @@ items =[
 # ["free_troll_head_helm_b","Troll_Head",[("troll_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
 # ["free_troll_head_helm_c","Troll_Head",[("troll_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
 # #
-["tree_trunk_club_a","Tree_Trunk",[("troll_club",0),("tree_trunk_club",imodbit_poor),("0",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(87)|weapon_length(155)|swing_damage(48,cut)|thrust_damage(48,cut),0],
+["tree_trunk_club_a","Tree_Trunk",[("troll_club",0),("tree_trunk_club",imodbit_poor),("0",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_penetrate_shield,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(55)|weapon_length(155)|swing_damage(48,cut)|thrust_damage(48,cut),0, []],
 ["long_bearded_axe","Northmen_Bearded_Longaxe",[("long_bearded_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,800,weight(7)|difficulty(10)|spd_rtng(84)|weapon_length(106)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["2_handed_axe","Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 
 # ["free_tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 # ["free_tree_trunk_invis","Tree_Trunk",[("0",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 ["free_giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,cut)|thrust_damage(65,cut),0],
-["giant_mace","Giant_Mace",[("giant_mace",0),("giant_hammer",imodbit_poor),("giant_mace_b",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(130)|swing_damage(65,cut)|thrust_damage(48,cut),0],
+["giant_mace","Giant_Mace",[("giant_mace",0),("giant_hammer",imodbit_poor),("giant_mace_b",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_crush_through|itp_can_penetrate_shield,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(55)|weapon_length(130)|swing_damage(65,cut)|thrust_damage(48,cut),0,[]],
 ["free_giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,cut)|thrust_damage(65,cut),0],
 #
 ["free_olog_feet_boots","Olog_Hai_Feet",[("olog_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(62)|difficulty(70),0],

@@ -1769,6 +1769,11 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (gt, ":current_hp_shield", 0),
       (lt, ":damage", 4),
       (assign, ":damage", 0),
+    (else_try),
+      (eq, ":troop_id", "trp_troll_of_moria"),
+      (gt, ":current_hp_shield", 0),
+      (lt, ":damage", 25),
+      (assign, ":damage", 0),
     (try_end),
 
     (try_begin),

@@ -404,9 +404,12 @@ game_menus = [
     (call_script, "script_get_faction_rank", "$players_kingdom"),
     (assign, reg13, reg0),
 	(call_script, "script_get_own_rank_title_to_s24", "$players_kingdom", reg13),
-	(str_store_string, s11, "@{s24} ({reg13})"),  # first title (own faction)
-	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})"),  # first inf
-	(str_store_string, s15, "@Resource Points:^ {reg12} (in {s16})"),  # first rp
+	(store_add, ":next_rank", reg13, 1),
+	(call_script, "script_get_rank_points_for_rank", ":next_rank"), #convert to rank points
+	(assign, reg20, reg0),
+	(str_store_string, s11, "@{s24} ({reg13}) - {reg20} until next promotion^"),  # first title (own faction)
+	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})^"),  # first inf
+	(str_store_string, s15, "@Resource Points:^ {reg12} (in {s16})^"),  # first rp
 
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
 		(neg|eq,"$players_kingdom", ":fac"),
@@ -418,19 +421,22 @@ game_menus = [
 		(call_script, "script_get_faction_rank", ":fac"),
 		(assign, reg13, reg0),
 		(call_script, "script_get_allied_rank_title_to_s24", ":fac", reg13),
+		(store_add, ":next_rank_ally", reg13, 1),
+		(call_script, "script_get_rank_points_for_rank", ":next_rank_ally"), #convert to rank points
+		(assign, reg21, reg0),
 		(try_begin), 
-			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11}, {s24} ({reg13})"),  # title
+			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11} {s24} ({reg13}) - {reg21} until next promotion^"),  # title
 		(try_end),
 		(try_begin), 
-			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13}, {reg11} (with {s16})"),  # finf
+			(this_or_next|gt, reg11, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s13, "@{s13} {reg11} (with {s16})^"),  # finf
 		(try_end),
 		(try_begin), 
-			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15}, {reg12} (in {s16})"),  # first rp
+			(this_or_next|gt, reg12, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s15, "@{s15} {reg12} (in {s16})^"),  # first rp
 		(try_end),
 	(try_end),
 	(str_store_troop_name, s10, "$g_player_troop"),
 #	(troop_get_slot, reg2, "trp_player", slot_troop_renown),
-	(str_store_string, s9, "@-={s10}=-^{s11}.^^{s13}.^^{s15}."),
+	(str_store_string, s9, "@-={s10}=-^{s11}^^^{s13}^^^{s15}."),
     ],
     [ 
  ]+concatenate_scripts([[		
@@ -913,6 +919,7 @@ game_menus = [
        (assign, "$g_player_troop", "trp_gondor_veteran_swordsmen"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
+       (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 150),
        (set_visitor, 0, "$g_player_troop"),
 	   (set_visitors, 1, "trp_gondor_veteran_spearmen",		8),
 	   (set_visitors, 16, "trp_troll_of_moria",				1),
@@ -934,6 +941,7 @@ game_menus = [
        (eq, "$g_custom_battle_scenario", 11),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
        (assign, "$g_player_troop", "trp_archer_of_the_tower_guard"),
+       (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 150),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),
@@ -945,6 +953,7 @@ game_menus = [
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 12),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 150),
        (assign, "$g_player_troop", "trp_eorl_guard_of_rohan"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
@@ -956,6 +965,7 @@ game_menus = [
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 13),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
+       (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 150),
        (assign, "$g_player_troop", "trp_elite_lancer_of_rohan"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
@@ -968,6 +978,8 @@ game_menus = [
        (eq, "$g_custom_battle_scenario", 14),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
        (assign, "$g_player_troop", "trp_fighting_uruk_hai_berserker"),
+       (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 150),
+       (troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, 150),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
        (set_visitor, 0, "$g_player_troop"),

@@ -2159,128 +2159,11 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	(troop_get_type, ":type", ":troop_id"),
 	(eq, ":type", tf_troll),
 
-	(agent_set_speed_modifier, ":troll", 30),
+	(agent_set_speed_modifier, ":troll", 50),
 	(agent_set_max_hit_points, ":troll", 25),
  ]),
 
-(ti_on_agent_hit, 0, 7, [
 
-# Trigger Param 1: receiver agent no
- # Trigger Param 2: dealer agent no
- # Trigger Param 3: inflicted damage
- # Trigger Param 4: raw damage (before being soaked by armor)
- # Trigger Param 5: hit bone
- # Trigger Param 6: item kind no
- # Trigger Param 7: item modifier
- # Trigger Param 8: missile item kind no
- # Trigger Param 9: missile item modifier
- # Trigger Param 10: damage type
- # Position Register 0: position of the blow
- #                      rotation gives the direction of the blow
- # Trigger Result: if set, damage dealt to agent
- 
-	(store_trigger_param_1, ":reciever"),
-	(store_trigger_param_2, ":dealer"),
-
-	(gt, "$trolls_in_battle", 0),
-
-	#(agent_is_alive, ":reciever"),
-	(agent_is_active, ":reciever"),
-	(agent_is_human, ":reciever"),
-
-	(gt, ":reciever", 0),
-
-	(agent_is_alive, ":dealer"),
-	(agent_is_active, ":dealer"),
-	(agent_is_human, ":dealer"),
-
-	(gt, ":dealer", 0),
-
-	(agent_get_troop_id, ":troop_id", ":dealer"),
-	(troop_get_type, ":type", ":troop_id"),
-	(eq, ":type", tf_troll),
-	(store_random_in_range, ":rand", 0, 3),
-	(eq, ":rand", 0), # 1/3 chance of dealing AOE
-
-	],[
-
-	(store_trigger_param_1, ":reciever"),
-	(store_trigger_param_2, ":dealer"),
-	(store_trigger_param_3, ":damage"),
-
-
-	#(agent_is_alive, ":reciever"),
-	(agent_is_active, ":reciever"),
-	(agent_is_human, ":reciever"),
-
-	(gt, ":reciever", 0),
-
-	(agent_is_alive, ":dealer"),
-	(agent_is_active, ":dealer"),
-	(agent_is_human, ":dealer"),
-
-	(gt, ":dealer", 0),
-
-	(agent_get_troop_id, ":troop_id", ":dealer"),
-	(troop_get_type, ":type", ":troop_id"),
-	(eq, ":type", tf_troll),
-
-	(agent_get_position, pos1, ":dealer"),
-	(agent_get_position, pos9, ":reciever"),
-	(set_fixed_point_multiplier, 100),
-
-	(try_for_agents, ":aoe_hit", pos9, 200),
-		(agent_is_active, ":aoe_hit"),
-		(agent_is_alive, ":aoe_hit"),
-		(agent_is_human, ":aoe_hit"),
-		(neq, ":aoe_hit", ":dealer"), #don't hit yourself
-		(gt, ":aoe_hit", 0),
-
-		(agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
-		(troop_get_type, ":victim_type", ":victim_troop_id"),
-		(agent_get_horse, ":victim_horse", ":aoe_hit"),
-		
-		(store_random_in_range, ":flyback_anim", 0, 2),
-		# then, set animation
-		(try_begin),
-			(eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
-			(agent_set_animation, ":aoe_hit", "anim_strike_fall_back_rise"),
-		(else_try),
-		
-		# human (non trolls, non horse) victims
-			(try_begin),
-				(position_is_behind_position,pos1,pos9), # troll is on back of victim
-				(agent_set_animation, ":aoe_hit", "anim_strike_fly_front_rise"), # send them flying front
-			(else_try),
-				(eq, ":flyback_anim", 0),
-		# troll is in front of victim
-				(agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise_from_left"), # send them flying back
-			(else_try),
-				(agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise"), # send them flying back
-			(try_end),
-
-			(try_begin),
-				(gt, ":victim_horse", 1),
-				(agent_start_running_away, ":victim_horse"),
-				(agent_stop_running_away, ":victim_horse"),
-			(try_end),
-			(store_random_in_range,":random_timings",1,5),
-			(agent_set_animation_progress, ":aoe_hit", ":random_timings"), # differentiate timings a bit
-		(try_end),
-
-		(store_div, ":half_damage", ":damage", 2),
-
-		(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit",  ":half_damage"),
-	(try_end),
-
-	(agent_get_horse, ":first_victim_horse", ":reciever"),
-	(agent_set_animation, ":reciever", "anim_strike_fly_front_rise"),
-	(try_begin),
-		(gt, ":first_victim_horse", 1),
-		(agent_start_running_away, ":first_victim_horse"),
-		(agent_stop_running_away, ":first_victim_horse"),
-	(try_end),
- ]),
 
 (ti_on_agent_hit, 0, 0, [
 	
@@ -2308,7 +2191,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
  	(troop_get_type, ":type", ":troll"),
  	(eq, ":type", tf_troll),
  	
- 	(gt, ":damage", 5),
+ 	(gt, ":damage", 2),
 
 	],[
 
@@ -2322,7 +2205,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
  	(agent_get_troop_id, ":troll", ":receiver"),
  	(troop_get_type, ":type", ":troll"),
  	(eq, ":type", tf_troll),
- 	(gt, ":damage", 5),
+
+ 	(gt, ":damage", 2),
 
  	(agent_get_slot, ":last_charge", ":receiver", slot_troll_agent_last_charge),
  	(store_mission_timer_a, ":time"),
@@ -2337,13 +2221,64 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
  		(agent_slot_eq, ":receiver", slot_troll_agent_charging, 0),
 		(val_add, ":last_charge", ":cooldown"),
 		(gt, ":time", ":last_charge"),
-	 	(agent_set_speed_modifier, ":receiver", 200),
+	 	(agent_set_speed_modifier, ":receiver", 500),
 	 	(agent_set_slot, ":receiver", slot_troll_agent_charging, 1),
 	 	(store_mission_timer_a, ":time"),
 	 	(agent_set_slot, ":receiver", slot_troll_agent_last_charge, ":time"),
+	 	(agent_play_sound, ":receiver", "snd_troll_grunt_long"),
+
+		(agent_get_position, pos9, ":receiver"),
+		(set_fixed_point_multiplier, 100),
+
+		(try_for_agents, ":aoe_hit", pos9, 200),
+			(agent_is_active, ":aoe_hit"),
+			(agent_is_alive, ":aoe_hit"),
+			(agent_is_human, ":aoe_hit"),
+			(neq, ":aoe_hit", ":receiver"), #don't hit yourself
+			(gt, ":aoe_hit", 0),
+
+			(agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
+			(troop_get_type, ":victim_type", ":victim_troop_id"),
+			(agent_get_horse, ":victim_horse", ":aoe_hit"),
+			
+			(store_random_in_range, ":flyback_anim", 0, 3),
+			# then, set animation
+			(try_begin),
+				(eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
+				(agent_set_animation, ":aoe_hit", "anim_strike_fall_back_rise"),
+			(else_try),
+			
+			# human (non trolls, non horse) victims
+				(try_begin),
+					(eq, ":flyback_anim", 0),
+			# troll is in front of victim
+					(agent_set_animation, ":aoe_hit", "anim_strike_fall_back_rise"), # send them flying back
+				(else_try),
+					(eq, ":flyback_anim", 1),
+					(agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise"), # send them flying back
+				(else_try),
+					(agent_set_animation, ":aoe_hit", "anim_strike_legs_front"), # stagger
+				(try_end),
+				(try_begin),
+					(gt, ":victim_horse", 1),
+					(agent_start_running_away, ":victim_horse"),
+					(agent_stop_running_away, ":victim_horse"),
+				(try_end),
+				(store_random_in_range,":random_timings",1,5),
+				(agent_set_animation_progress, ":aoe_hit", ":random_timings"), # differentiate timings a bit
+			(try_end),
+		(try_end),
+		(agent_get_position, pos19, ":aoe_hit"),
+		
+		(call_script, "script_point_y_toward_position", pos9, pos19),
+		(position_move_y, pos9,  15),
+		(agent_set_scripted_destination_no_attack, ":receiver", pos9),
+
+	 	(agent_set_animation, ":receiver", "anim_troll_charge", 0),
 	 	(agent_set_animation, ":receiver", "anim_cheer", 1),
 	 	(display_message, "@Troll is Charging!"), 
-	 	(agent_play_sound, ":receiver", "snd_troll_grunt_long"),
+	 	(agent_clear_scripted_mode, ":receiver"),
+
 	(else_try),
 		(agent_slot_eq, ":receiver", slot_troll_agent_charging, 1),
 		(set_trigger_result, 0),
@@ -2370,7 +2305,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(val_add, ":time_last_charge", 10),
 		(gt, ":time", ":time_last_charge"),
 		(agent_set_slot, ":troll", slot_troll_agent_charging, 0),
-		(agent_set_speed_modifier, ":troll", 30),
+		(agent_set_speed_modifier, ":troll", 50),
 		(assign, reg65, ":time"),
 		(assign, reg66, ":time_last_charge"),
 		(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),
@@ -2405,24 +2340,26 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(agent_get_horse, ":victim_horse", ":nearby_enemies"),
 			(neq, ":victim_type", tf_troll), #no plowthrough for trolls
 			
-			(store_random_in_range, ":flyback_anim", 0, 2),
+			(store_random_in_range, ":flyback_anim", 0, 3),
 			# then, set animation
 			# human (non trolls, non horse) victims
-				(try_begin),
-					(eq, ":flyback_anim", 0),
-			# troll is in front of victim
-					(agent_set_animation, ":nearby_enemies", "anim_strike_fly_back_rise_from_left"), # send them flying back
-				(else_try),
-					(agent_set_animation, ":nearby_enemies", "anim_strike_fly_back_rise"), # send them flying back
-				(try_end),
-
-				(try_begin),
-					(gt, ":victim_horse", 1),
-					(agent_start_running_away, ":victim_horse"),
-					(agent_stop_running_away, ":victim_horse"),
-				(try_end),
-				(store_random_in_range,":random_timings",1,5),
-				(agent_set_animation_progress, ":nearby_enemies", ":random_timings"), # differentiate timings a bit
+			(try_begin),
+				(eq, ":flyback_anim", 0),
+		# troll is in front of victim
+				(agent_set_animation, ":nearby_enemies", "anim_strike_fall_back_rise"), # send them flying back
+			(else_try),
+				(eq, ":flyback_anim", 1),
+				(agent_set_animation, ":nearby_enemies", "anim_strike_fly_back_rise"), # send them flying back
+			(else_try),
+				(agent_set_animation, ":nearby_enemies", "anim_strike_legs_front"), # stagger
+			(try_end),
+			(try_begin),
+				(gt, ":victim_horse", 1),
+				(agent_start_running_away, ":victim_horse"),
+				(agent_stop_running_away, ":victim_horse"),
+			(try_end),
+			(store_random_in_range,":random_timings",1,5),
+			(agent_set_animation_progress, ":nearby_enemies", ":random_timings"), # differentiate timings a bit
 		(try_end),
 	(try_end),
 

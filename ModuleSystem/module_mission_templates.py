@@ -967,7 +967,7 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
   reset_fog,
   horse_whistle_init,
   horse_whistle,
-] + tld_morale_triggers + fade  + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack
+] + tld_morale_triggers + fade + khams_custom_player_camera + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack
 
 
 tld_siege_battle_scripts = [
@@ -1429,7 +1429,7 @@ mission_templates = [ # not used in game
       (try_end),
       ]),
 
-  #(0,0,0, [(key_clicked, key_b)],[(display_message, "@Mordor Cloud added"),(call_script, "script_set_mordor_cloud_scene_prop")]),
+  #(0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (agent_set_animation, ":player", "anim_cheer", 1),(agent_set_animation, ":player", "anim_troll_charge", 0), ]),
 
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
