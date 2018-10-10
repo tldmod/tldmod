@@ -1815,36 +1815,21 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
    (neg|item_has_property, ":weapon", itp_type_crossbow),
 
    (assign, ":continue", 0),
+   (get_player_agent_no, ":agent_player"),
 
-   (try_begin), # Player has berserker trait?
-      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
-      (troop_get_inventory_slot, ":armor", "trp_player", ek_body), #and is not wearing anything or is wearing berserk appropriate clothing?
-      (this_or_next|neg|ge, ":armor", 1),
-      (this_or_next|eq, ":armor", "itm_isen_uruk_light_a"),
-      (this_or_next|eq, ":armor", "itm_isen_uruk_light_b"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_a"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_b"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_d"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_j"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_m"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_n"),
-      (this_or_next|eq, ":armor", "itm_harad_champion"),
-      (this_or_next|eq, ":armor", "itm_panther_guard"),
-      (this_or_next|eq, ":armor", "itm_khand_light"),
-      (this_or_next|eq, ":armor", "itm_gundabad_armor_a"),
-      (this_or_next|eq, ":armor", "itm_gundabad_armor_d"),
-      (this_or_next|eq, ":armor", "itm_orc_tribal_a"),
-      (this_or_next|eq, ":armor", "itm_orc_tribal_b"),
-      (this_or_next|eq, ":armor", "itm_orc_tribal_c"),
-      (this_or_next|eq, ":armor", "itm_beorn_chief"), 
-      (       eq, ":armor", "itm_beorn_berserk"), 
-      (get_player_agent_no, ":agent_player"),
+   (try_begin), 
+      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1), # Player has berserker trait?
+      (troop_get_inventory_slot, ":armor", "trp_player", ek_body),
+      (this_or_next|eq, ":armor", -1), #and is not wearing anything 
+      (item_slot_eq, ":armor", slot_item_light_armor, 1), #or is the player wearing light armour / berserk appropriate clothing
       (eq, ":agent_killer", ":agent_player"),
       (assign, ":continue", 1),
    (else_try), # Is it a lord?
+      (neq, ":agent_killer", ":agent_player"),
       (is_between, ":agent_killer", heroes_begin, heroes_end),
       (assign, ":continue", 1),
    (else_try),  #Berserkers
+      (neq, ":agent_killer", ":agent_player"),
       (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
       (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
@@ -1864,41 +1849,26 @@ health_restore_on_kill = (ti_on_agent_killed_or_wounded, 0, 0,
     # Is this a valid kill worth gaining morale?
     (agent_is_human, ":agent_victim"),
     (agent_get_troop_id, ":troop_killer", ":agent_killer"),
+    (get_player_agent_no, ":agent_player"),
 
     (assign, ":continue", 0),
 
     # Determine health amount to regenerate
-    (try_begin), # Player has berserker trait?
-      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),
-      (troop_get_inventory_slot, ":armor", "trp_player", ek_body), #and is not wearing anything or is wearing berserk appropriate clothing?
-      (this_or_next|neg|ge, ":armor", 1),
-      (this_or_next|eq, ":armor", "itm_isen_uruk_light_a"),
-      (this_or_next|eq, ":armor", "itm_isen_uruk_light_b"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_a"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_b"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_d"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_j"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_m"),
-      (this_or_next|eq, ":armor", "itm_rhun_armor_n"),
-      (this_or_next|eq, ":armor", "itm_harad_champion"),
-      (this_or_next|eq, ":armor", "itm_panther_guard"),
-      (this_or_next|eq, ":armor", "itm_khand_light"),
-      (this_or_next|eq, ":armor", "itm_gundabad_armor_a"),
-      (this_or_next|eq, ":armor", "itm_gundabad_armor_d"),
-      (this_or_next|eq, ":armor", "itm_orc_tribal_a"),
-      (this_or_next|eq, ":armor", "itm_orc_tribal_b"),
-      (this_or_next|eq, ":armor", "itm_orc_tribal_c"),
-      (this_or_next|eq, ":armor", "itm_beorn_chief"), 
-      (       eq, ":armor", "itm_beorn_berserk"), 
-      (get_player_agent_no, ":agent_player"),
+    (try_begin), 
       (eq, ":agent_killer", ":agent_player"),
+      (troop_slot_eq, "trp_traits", slot_trait_berserker, 1),# Player has berserker trait?
+      (troop_get_inventory_slot, ":armor", "trp_player", ek_body),
+      (this_or_next|eq, ":armor", -1), #and is not wearing anything 
+      (item_slot_eq, ":armor", slot_item_light_armor, 1), #or is the player wearing light armour / berserk appropriate clothing
       (assign, ":health_regeneration", wp_hr_player_rate),
       (assign, ":continue", 1),
     (else_try), # Is it a lord?
+      (neq, ":agent_killer", ":agent_player"),
       (is_between, ":agent_killer", heroes_begin, heroes_end),
       (assign, ":health_regeneration", wp_hr_lord_rate),
       (assign, ":continue", 1),
     (else_try),  #Berserkers
+      (neq, ":agent_killer", ":agent_player"),
       (this_or_next|eq, ":troop_killer", "trp_npc9"), #Gulm
       (this_or_next|eq, ":troop_killer", "trp_beorning_carrock_berserker"),
       (this_or_next|eq, ":troop_killer", "trp_fighting_uruk_hai_berserker"),
