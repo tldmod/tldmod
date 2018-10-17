@@ -464,6 +464,9 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
       (agent_is_alive, ":enemy_agent"),
       (agent_is_human, ":enemy_agent"),
       (agent_is_active, ":enemy_agent"),
+      (gt, ":enemy_agent", 0),
+      (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
+      (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
       (agent_get_position, pos8, ":enemy_agent"),
       (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
       (lt, ":dist", 300),
@@ -721,13 +724,17 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
   (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
     (neq, ":enemy_in_front", 1),
     (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
+    (agent_is_active, ":enemy_agent"),
     (agent_is_alive, ":enemy_agent"),
+    (gt, ":enemy_agent", 0),
+    (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
+    (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
     (agent_get_position, pos8, ":enemy_agent"),
     (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
     (lt, ":dist", 300),
     (neg|position_is_behind_position, pos8, pos6), #2, 1
     (assign, ":enemy_in_front", 1),
-    (try_end),
+  (try_end),
   
     (eq, ":enemy_in_front", 1),
 
@@ -746,6 +753,10 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
     (agent_ai_get_cached_enemy, ":enemy_agent", ":agent", ":nearby_agent_no"),
     (agent_is_alive, ":enemy_agent"),
       (agent_is_human, ":enemy_agent"),
+      (agent_is_active, ":enemy_agent"),
+      (gt, ":enemy_agent", 0),
+      (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
+      (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
       (agent_get_position, pos8, ":enemy_agent"),
       (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
       (lt, ":dist", 300),
@@ -853,6 +864,13 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
     (else_try),
       (eq, ":agent_trp", "trp_player"),
       (assign, ":base_chance", -1),
+    (else_try),
+      (eq, ":agent_trp", "trp_npc17"),
+      (store_character_level, ":dimborn_level", "trp_npc17"),
+      (assign, ":base_chance", 1),
+      (val_mul, ":dimborn_level", 5),
+      (val_add, ":base_chance", ":dimborn_level"),
+      (val_min, ":base_chance", 100),
     (try_end),
 
 
@@ -1429,7 +1447,7 @@ mission_templates = [ # not used in game
       (try_end),
       ]),
 
-  #(0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (agent_set_animation, ":player", "anim_cheer", 1),(agent_set_animation, ":player", "anim_troll_charge", 0), ]),
+  (0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (agent_set_animation, ":player", "anim_troll_charge"), ]),
 
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),

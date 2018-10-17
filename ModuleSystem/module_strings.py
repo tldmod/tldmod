@@ -3349,6 +3349,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 #Female Materials
 ("rhunarmortexture_fem", "rhunarmortexture_fem"),
+("beornings_female", "beornings_female"),
 ("female_mats_end", "female_mats_end"),
 
 ]

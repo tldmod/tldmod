@@ -2296,6 +2296,7 @@ str_tld_wear_2 = 2294
 str_tld_wear_3 = 2295
 str_dale_coat_end = 2296
 str_rhunarmortexture_fem = 2297
-str_female_mats_end = 2298
+str_beornings_female = 2298
+str_female_mats_end = 2299
 
 

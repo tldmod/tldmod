@@ -1039,6 +1039,7 @@ tld_move_ai = (0.01, 0, 0, [(eq,"$field_ai_lord",1)],
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
       (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
+      (this_or_next|eq, ":lord", "trp_olog_hai"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
@@ -1065,6 +1066,7 @@ tld_ai_kicking = (1, 0, 0, [(eq,"$field_ai_lord",1)],
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
       (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
+      (this_or_next|eq, ":lord", "trp_olog_hai"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active,":agent1"),
@@ -1123,6 +1125,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
       (agent_get_troop_id, ":lord", ":agent1"),
       (this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
       (this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
+      (this_or_next|eq, ":lord", "trp_olog_hai"),
       (is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
 
       (agent_is_active, ":agent1"),
@@ -1172,7 +1175,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
           (neq,":anim","anim_strike3_abdomen_front"),#Prevents mass kicking
           
           (agent_set_animation, ":agent2", "anim_strike3_abdomen_front"),#kicked
-          (play_sound_at_position, 124, pos2),#Play dat phat bass boiz
+          (play_sound_at_position, "snd_blunt_hit", pos2),#Play dat phat bass boiz
           
           (store_random_in_range, ":dmg", 1, 6),
           (agent_deliver_damage_to_agent, ":agent1", ":agent2", ":dmg"),
@@ -1765,15 +1768,25 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
 
     (try_begin),
-      (eq, ":troop_id", "trp_olog_hai"),
+      (this_or_next|eq, ":troop_id", "trp_olog_hai"),
+      (this_or_next|eq, ":troop_id", "trp_armoured_troll"),
+      (eq, ":troop_id", "trp_ent"),
       (gt, ":current_hp_shield", 0),
-      (lt, ":damage", 4),
-      (assign, ":damage", 0),
+      (try_begin),
+        (lt, ":damage", 15),
+        (assign, ":damage", 0),
+       (else_try),
+        (val_sub, ":damage", 15),
+       (try_end),
     (else_try),
       (eq, ":troop_id", "trp_troll_of_moria"),
       (gt, ":current_hp_shield", 0),
-      (lt, ":damage", 25),
-      (assign, ":damage", 0),
+      (try_begin),
+        (lt, ":damage", 40),
+        (assign, ":damage", 0),
+       (else_try),
+        (val_sub, ":damage", 40),
+       (try_end),
     (try_end),
 
     (try_begin),

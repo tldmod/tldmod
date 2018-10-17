@@ -33,7 +33,6 @@ def troll_aoe(item):
 
     (store_trigger_param_1, ":agent_no"),
 
-
     (agent_is_active, ":agent_no"),
     (agent_is_alive, ":agent_no"),
 
@@ -41,20 +40,7 @@ def troll_aoe(item):
     (eq, ":rand", 0), # 1/2 chance of dealing AOE
 
     (agent_get_attack_action, ":action", ":agent_no"),
-
-    (try_begin),
-      (eq, ":action", 0),
-      (agent_get_combat_state, ":state", ":agent_no"),
-      (eq, ":state", 1),  
-      (agent_ai_get_look_target,":agent2", ":agent_no"),
-      (agent_is_alive, ":agent2"),
-      (agent_is_active, ":agent2"),
-      (assign, ":bone", 8), # by default, aim at torax
-      (agent_get_bone_position, pos13, ":agent2", ":bone", 1), # pos13 = target BONE pos
-      (agent_set_look_target_position, ":agent_no", pos13),      # override aimed location
-    (try_end),
-
-                
+  
     (is_between, ":action", 2, 7),
     #(display_message, "@Clear"), 
 
@@ -74,11 +60,10 @@ def troll_aoe(item):
       
       (store_random_in_range, ":flyback_anim", 0, 2),
       # then, set animation
-      (try_begin),
-        (eq, ":victim_type", tf_troll), # trolls don't send other trolls flying back: they just knowk them back
-        (agent_set_animation, ":aoe_hit", "anim_strike_fall_back_rise"),
-      (else_try),
       
+      (neq, ":victim_type", tf_troll), #no flyback for trolls
+
+      (try_begin),   
       # human (non trolls, non horse) victims
         (try_begin),
           (eq, ":flyback_anim", 0),
@@ -87,6 +72,26 @@ def troll_aoe(item):
         (else_try),
           (agent_set_animation, ":aoe_hit", "anim_strike_fly_back_rise"), # send them flying back
         (try_end),
+
+      (store_random_in_range, ":rand_sound", 0, 6),
+      (try_begin),
+        (eq, ":rand_sound", 0),
+        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_low_damage"),
+      (else_try),
+        (eq, ":rand_sound", 1),
+        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_low_armor_high_damage"),
+      (else_try),
+        (eq, ":rand_sound", 2),
+        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
+      (else_try),
+        (eq, ":rand_sound", 3),
+        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_low_damage"),
+      (else_try),
+        (eq, ":rand_sound", 4),
+        (agent_play_sound, ":aoe_hit", "snd_wooden_hit_high_armor_high_damage"),
+      (else_try),
+        (agent_play_sound, ":aoe_hit", "snd_blunt_hit"),
+      (try_end),
 
         (try_begin),
           (gt, ":victim_horse", 1),
@@ -97,7 +102,7 @@ def troll_aoe(item):
         (agent_set_animation_progress, ":aoe_hit", ":random_timings"), # differentiate timings a bit
 
         (item_get_swing_damage, ":damage", item),
-        (val_div, ":damage", 3),
+        (val_div, ":damage", 2),
         (agent_deliver_damage_to_agent, ":agent_no", ":aoe_hit", ":damage"),
 
       (try_end),
@@ -340,15 +345,15 @@ items =[
 # ["free_troll_head_helm_b","Troll_Head",[("troll_head_b",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
 # ["free_troll_head_helm_c","Troll_Head",[("troll_head_c",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
 # #
-["tree_trunk_club_a","Tree_Trunk",[("troll_club",0),("tree_trunk_club",imodbit_poor),("0",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_penetrate_shield,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(55)|weapon_length(155)|swing_damage(48,cut)|thrust_damage(48,cut),0, []],
+["tree_trunk_club_a","Tree_Trunk",[("troll_club",0),("tree_trunk_club",imodbit_poor),("0",imodbit_old)],itp_no_pick_up_from_ground|itp_can_knock_down|itp_type_two_handed_wpn|itp_primary|itp_no_parry|itp_wooden_attack|itp_crush_through|itp_can_penetrate_shield,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(75)|weapon_length(155)|swing_damage(58,cut)|thrust_damage(48,cut),0, [troll_aoe("itm_tree_trunk_club_a")]],
 ["long_bearded_axe","Northmen_Bearded_Longaxe",[("long_bearded_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,800,weight(7)|difficulty(10)|spd_rtng(84)|weapon_length(106)|swing_damage(45,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 ["2_handed_axe","Northmen_Longaxe",[("2_handed_axe",0)],itp_type_polearm|itp_shop|itp_primary|itp_two_handed|itp_bonus_against_shield|itp_wooden_parry|itp_cant_use_on_horseback,itc_nodachi|itcf_carry_axe_back,700,weight(8)|difficulty(10)|spd_rtng(82)|weapon_length(110)|swing_damage(47,cut)|thrust_damage(0,pierce),imodbits_weapon_good],
 
 # ["free_tree_trunk_club_b","Tree_Trunk",[("tree_trunk_club",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 # ["free_tree_trunk_invis","Tree_Trunk",[("0",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(92)|weapon_length(175)|swing_damage(48,cut)|thrust_damage(48,cut),0],
 ["free_giant_hammer","Giant_Hammer",[("giant_hammer",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(80,cut)|thrust_damage(65,cut),0],
-["giant_mace","Giant_Mace",[("giant_mace",0),("giant_hammer",imodbit_poor),("giant_mace_b",imodbit_old)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|itp_crush_through|itp_can_penetrate_shield,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(55)|weapon_length(130)|swing_damage(65,cut)|thrust_damage(48,cut),0,[]],
-["free_giant_mace_b","Giant_Spiked_Mace",[("giant_mace_b",0)],itp_no_pick_up_from_ground|itp_type_one_handed_wpn|itp_primary|0,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(96)|weapon_length(150)|swing_damage(90,cut)|thrust_damage(65,cut),0],
+["giant_mace","Giant_Mace",[("giant_mace",0),("giant_hammer",imodbit_poor),("giant_mace_b",imodbit_old)],itp_no_pick_up_from_ground|itp_can_knock_down|itp_type_two_handed_wpn|itp_primary|itp_crush_through|itp_can_penetrate_shield|itp_wooden_attack|itp_no_parry,itc_big_weapon|0,1,weight(250)|difficulty(0)|spd_rtng(70)|weapon_length(130)|swing_damage(65,cut)|thrust_damage(48,cut),0,[]],
+["troll_shield_a","Troll_Shield",[("troll_shield_a",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,100,weight(50)|hit_points(500)|body_armor(10)|spd_rtng(96)|weapon_length(115),imodbits_shield,],
 #
 ["free_olog_feet_boots","Olog_Hai_Feet",[("olog_feet",0)],itp_no_pick_up_from_ground|itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(62)|difficulty(70),0],
 ["free_olog_head_helm","Olog_Hai_Head",[("olog_head",0)],itp_no_pick_up_from_ground|itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(62)|difficulty(70),0],
@@ -1289,7 +1294,7 @@ items =[
 ["beorn_tunic","Beorning_Tunic",[("beorn_tunic",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,30,weight(4)|head_armor(0)|body_armor(5)|leg_armor(3)|difficulty(0),imodbits_cloth,],
 ["beorn_padded","Beorning_Padded_Armor",[("beorn_padded",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(12)|head_armor(0)|body_armor(12)|leg_armor(6)|difficulty(0),imodbits_cloth,],
 ["beorn_heavy","Beorning_Heavy_Armor",[("beorn_heavy",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,600,weight(15)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0),imodbits_elf_armor,],
-["beorn_berserk","Beorning_Berserker_Kit",[("beorn_berserker",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,],
+["beorn_berserk","Beorning_Berserker_Kit",[("beorn_berserker",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,500,weight(6)|head_armor(0)|body_armor(10)|leg_armor(6)|difficulty(0),imodbits_cloth,[custom_female("itm_beorn_berserk")]],
 ["beorn_chief","Beorning_Chieftan's_Tunic",[("beorn_chieftain",0)],itp_type_body_armor|itp_covers_legs,0,1200,weight(18)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(0),imodbits_elf_armor,],
 ######HELMS##########
 ["beorn_helmet","Bear_Skullcap",[("beorn_helmet",0)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_armor | imodbit_cracked],
