@@ -1389,7 +1389,7 @@ troops = [
    [itm_giant_mace,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands,],
       str_255| agi_3| int_3| cha_3|level(61),wp(175),knows_power_strike_10|knows_ironflesh_10,troll_face1,troll_face2],
 ["olog_hai","Olog_Hai_of_Mordor","Olog_Hai_of_Mordor",tf_troll|tfg_shield| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_troll_shield_a, itm_giant_mace,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands,],
+   [itm_giant_mace,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands,],
       str_255| agi_3| int_3| cha_3|level(61),wp(200),knows_power_strike_10|knows_ironflesh_10,troll_face1,troll_face2],
 ["ent","Ent","Ents",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_commoners,
    [itm_tree_trunk_invis,itm_ent_body,itm_ent_hands,itm_ent_feet_boots,itm_ent_head_helm,itm_ent_water,itm_ent_head_helm2,itm_ent_head_helm3,],

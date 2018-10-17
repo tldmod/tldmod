@@ -1447,7 +1447,7 @@ mission_templates = [ # not used in game
       (try_end),
       ]),
 
-  (0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (agent_set_animation, ":player", "anim_troll_charge"), ]),
+  #(0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (agent_set_animation, ":player", "anim_troll_charge"), ]),
 
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
