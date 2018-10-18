@@ -10829,6 +10829,7 @@ scripts = [
 		(this_or_next|eq,":landmark","p_town_linhir"), #InVain: Keep this BEFORE region_lebennin and the other Gondor regions
 		(this_or_next|eq,":landmark","p_town_tarnost"),
 		(eq,":landmark","p_town_umbar_camp"),
+		(assign, "$small_scene_used", 1),
 			(store_random_in_range, ":scene", 0, 4),
 	        (try_begin),
 	        	(eq, ":scene",0),
