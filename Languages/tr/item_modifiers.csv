@@ -5,8 +5,8 @@ imod_bent|Eğrilmiş %s
 imod_chipped|Yontulmuş %s
 imod_battered|Ezilmiş %s
 imod_poor|Perişan %s 
-imod_crude|Basit
-imod_old|Antik
+imod_crude|Basit %s
+imod_old|Antik %s
 imod_cheap|Ucuz %s 
 imod_fine|İyi %s 
 imod_well_made|İyi Yapılmış %s 
@@ -23,7 +23,7 @@ imod_tattered|Eski püskü %s
 imod_ragged|Berbat %s 
 imod_rough|Berbat %s 
 imod_sturdy|Dayanıklı %s 
-imod_thick|Kalın
+imod_thick|Kalın %s
 imod_hardened|Sertleştirilmiş %s 
 imod_reinforced|Güçlendirilmiş %s 
 imod_superb|Fevkalade %s 

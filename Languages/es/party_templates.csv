@@ -87,14 +87,14 @@ pt_lossarnach_patrol|Patrulla de Lossarnach
 pt_brv_patrol|Patrulla del Valle de la Raíz Negra
 pt_pinnath_patrol|Patrulla de Pinnath
 pt_lamedon_patrol|Patrulla de Lamedon
-pt_mordor_war_party|Grupo de Guerra de Mordor
-pt_isengard_war_party|Grupo de Guerra de Isengard
-pt_harad_war_party|Grupo de Guerra Haradrim
-pt_dunland_war_party|Banda de Guerra Dunlendina
-pt_khand_war_party|Grupo de Guerra de Khand
-pt_moria_war_party|Grupo de Guerra de Moria
-pt_dale_war_party|Grupo de Guerra de Valle
-pt_rhun_war_party|Grupo de Guerra de Rhûn
+pt_mordor_war_party|Tropa de Mordor
+pt_isengard_war_party|Tropa de Isengard
+pt_harad_war_party|Tropa Haradrim
+pt_dunland_war_party|Tropa Dunlendina
+pt_khand_war_party|Tropa de Khand
+pt_moria_war_party|Tropa de Moria
+pt_dale_war_party|Tropa de Valle
+pt_rhun_war_party|Tropa de Rhûn
 pt_gondor_company|Patrulla de Minas Tirith
 pt_rohan_company|Compañía de Rohan
 pt_imladris_company|Compañía de Rivendel
@@ -128,7 +128,7 @@ pt_dale_p_train|Caravana de prisioneros de Valle
 pt_dwarf_p_train|Caravana Enana de prisioneros
 pt_mordor_p_train|Caravana de prisioneros de Mordor
 pt_isengard_p_train|Caravana de prisioneros de Isengard
-pt_kingdom_hero_party|Grupo de Guerra
+pt_kingdom_hero_party|Tropa
 pt_caravan_survivors|Caravana de Supervivientes
 pt_routed_allies|Aliados Huidos
 pt_routed_enemies|Enemigos Huidos
@@ -137,10 +137,10 @@ pt_legion_udun|Legión de Udûn
 pt_legion_gorgoroth|Legión de Gorgoroth
 pt_legion_barad_dur|Legión de Barad-Dûr
 pt_beorn_messenger|Mensajero Beórnida
-pt_village|Poblado
-pt_ring_hunters|Cazanillos
-pt_scout_camp_small|Campamento de Exploración
-pt_scout_camp_large|Campamento de Exploración Fortificado
-pt_beorn_caravan|Caravana Bosqueña
+pt_village|Aldea
+pt_ring_hunters|Caza-anillos
+pt_scout_camp_small|Campamento de Exploradores
+pt_scout_camp_large|Campamento de Exploradores Fortificado
+pt_beorn_caravan|Caravana de los Bosques
 pt_orc_horde|Horda Orca
 pt_vet_archer|Arquero Veterano

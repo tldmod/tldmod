@@ -40,7 +40,7 @@ itm_rhun_horse_e|Cheval lourd de Rhûn
 itm_rhun_horse_f|Cheval lourd de Rhûn
 itm_rhun_horse_g|Cheval lourd de Rhûn
 itm_rhun_horse_h|Cheval lourd de Rhûn
-; itm_dale_horse|Rhovanion Horse
+itm_dale_horse|Cheval de Rhovanion
 itm_dale_warhorse|Cheval de guerre de Dale
 itm_riv_warhorse|Cheval de guerre de Fondcombe
 itm_riv_warhorse2|Coursier d'Imladris
@@ -66,14 +66,14 @@ itm_wargarmored_2b|Warg en armure
 itm_wargarmored_2c|Warg en armure
 itm_wargarmored_3a|Warg en armure
 itm_warg_reward|Warg gigantesque
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
+itm_axe_a|Hache d'Homme du Nord
+itm_axe_b|Hache à barbe d'Homme du Nord
+itm_axe_c|Hache d'Homme du Nord
+itm_axe_d|Hache d'Homme du Nord
 itm_tree_trunk_club_a|Tronc d'arbre
 itm_tree_trunk_club_b|Tronc d'arbre
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
+itm_long_bearded_axe|Hache longue à barbe d'Homme du Nord
+itm_2_handed_axe|Hache longue d'Homme du Nord
 itm_giant_hammer|Marteau géant
 itm_giant_mace|Masse d'arme géante
 itm_giant_mace_b|Masse d'arme géante à pointes
@@ -141,7 +141,7 @@ itm_glorfi_bow|Arc de Glorfindel
 itm_lorien_bow|Arc galadhrim
 itm_isengard_large_bow|Arc long de l'Isengard
 itm_dale_bow|Arc de Dale
-; itm_uruk_bow_pl|Strong Orc Bow
+itm_uruk_bow_pl|Arc solide d'Orc
 itm_mirkwood_bow|Arc de la Forêt Noire
 itm_dunland_javelin|Javelots du Pays de Dun
 itm_orc_throwing_arrow|Fléchettes orques
@@ -181,7 +181,7 @@ itm_riv_shield_b|Bouclier de Fondcombe
 itm_riv_bas_sword|Épée bâtarde de Fondcombe
 itm_riv_1h_sword|Épée de Fondcombe
 itm_riv_riding_sword|Épée de cavalerie de Fondcombe
-; itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword|Épée d'archer de Fondcombe
 itm_riv_spear|Lance de Fondcombe
 itm_riv_armor_light|Armure de Fondcombe
 itm_riv_armor_light_inf|Armure de Fondcombe
@@ -226,12 +226,12 @@ itm_gondor_dolamroth_helm|Heaume de Dol Amroth
 itm_swan_knight_helm|Heaume de Chevalier du Cygne
 itm_gondor_lamedon_helm|Casque du Lamedon
 itm_gondor_lamedon_leader_helm|Casque du Lamedon
-; itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
-; itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
-; itm_blackroot_footman|Blackroot Vale Jerkin
-; itm_blackroot_warrior|Blackroot Vale Gambeson
-; itm_blackroot_leader|Blackroot Vale Mail
-; itm_blackroot_hood|Black Hood
+itm_blackroot_archer|Gambison avec manteau du Val de Blackroot
+itm_blackroot_bowman|Justaucorps avec manteau du Val de Blackroot
+itm_blackroot_footman|Justaucorps du Val de Blackroot
+itm_blackroot_warrior|Gambison du Val de Blackroot
+itm_blackroot_leader|Cotte de mailles du Val de Blackroot
+itm_blackroot_hood|Capuchon noir
 itm_dol_hauberk|Haubert de Dol Amroth
 itm_dol_heavy_mail|Cotte de mailles lourde de Dol Amroth
 itm_dol_padded_coat|Veste rembourrée de Dol Amroth
@@ -246,7 +246,7 @@ itm_lamedon_leader_surcoat_cloak|Armure de capitaine du Lamedon
 itm_lamedon_warrior|Armure de guerrier du Lamedon
 itm_lamedon_veteran|Armure de vétéran du Lamedon
 itm_lamedon_vet_warrior|Armure de guerrier vétéran du Lamedon
-; itm_lamedon_hood|Hood
+itm_lamedon_hood|Capuchon
 itm_pinnath_archer|Armure d'archer de Pinnath Gelin
 itm_pinnath_footman|Armure de fantassin de Pinnath Gelin
 itm_pinnath_leader|Armure de capitaine de Pinnath Gelin
@@ -258,7 +258,7 @@ itm_pel_leader|Armure de capitaine de Pelargir
 itm_pel_marine|Marin de Pelargir
 itm_pelargir_marine_leader|Capitaine des Marins de Pelargir
 itm_pelargir_regular|Régulier de Pelargir
-; itm_pelargir_hood|White Hood
+itm_pelargir_hood|Capuchon blanc
 itm_pelargir_helmet_light|Casque de Pelargir
 itm_pelargir_helmet_heavy|Casque lourd de Pelargir
 itm_pelargir_greaves|Jambières de Pelargir
@@ -316,7 +316,7 @@ itm_lorien_helm_b|Heaume d'archer de la Lórien
 itm_lorien_helm_c|Heaume d'infanterie de la Lórien
 itm_orc_chain_greaves|Jambières orques
 
-; itm_orc_coif|Orc Skullcap
+itm_orc_coif|Calotte d'orque
 itm_orc_greaves|Bottes en mailles orques
 itm_orc_ragwrap|Bandeau orque
 itm_orc_furboots|Bottes orques de fourrure
@@ -382,8 +382,8 @@ itm_bone_cudgel|Gourdin en os
 itm_skull_club|Massue de crâne
 itm_orc_club_a|Massue orque
 itm_orc_club_b|Massue orque
-; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Spiky Orc Club
+itm_orc_club_c|Massue à pointe orque
+itm_orc_club_d|Massue à pointe orque
 itm_orc_sledgehammer|Marteau orque
 itm_orc_simple_spear|Lance orque
 itm_orc_skull_spear|Lance de crâne orque
@@ -412,21 +412,21 @@ itm_mordor_man_shield_a|Bouclier d'Homme du Mordor
 itm_mordor_man_shield_b|Bouclier d'Homme du Mordor
 itm_angmar_shield|Bouclier d'Angmar
 
-; itm_orc_nosehelm|Orc Nosehelm
+itm_orc_nosehelm|Casque nasal Orc
 
-; itm_orc_kettlehelm|Orc Kettlehelm
+itm_orc_kettlehelm|Casque chapel Orc
 
 itm_orc_buckethelm|Heaume orque
 
-; itm_orc_morion|Orc Morion
+itm_orc_morion|Casque morion orque
 
 itm_orc_beakhelm|Casque à bec orque
 
 itm_orc_bughelm|Casque d'insecte orque
 
-; itm_orc_visorhelm|Orc Visorhelm
+itm_orc_visorhelm|Casque à visière orque
 
-; itm_orc_visorhelm_pl|Orc Visorhelm
+itm_orc_visorhelm_pl|Casque à visière orque
 
 itm_m_orc_light_a|Armure légère d'Orque du Mordor
 itm_m_orc_light_b|Armure légère d'Orque du Mordor
@@ -442,19 +442,19 @@ itm_m_uruk_light_a|Harnais uruk
 
 itm_m_uruk_light_b|Armure de cuir uruk
 
-; itm_m_uruk_light_c|Uruk Light Mail
+itm_m_uruk_light_c|Cotte de mailles légère uruk
 
-; itm_m_uruk_med_a|Uruk Heavy Leather
+itm_m_uruk_med_a|Armure de cuire lourde uruk
 
-; itm_m_uruk_med_b|Uruk Heavy Mail
+itm_m_uruk_med_b|Cotte de mailles lourde uruk
 
-; itm_m_uruk_med_c|Uruk Light Scale
+itm_m_uruk_med_c|Armure d'écailles légère uruk
 
-; itm_m_uruk_heavy_a|Uruk Heavy Scale
+itm_m_uruk_heavy_a|Armure d'écailles lourde uruk
 
-; itm_m_uruk_heavy_b|Uruk Platemail
+itm_m_uruk_heavy_b|Armure de plates uruk
 
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_heavy_c|Armure de plates de Lugburz
 itm_m_uruk_heavy_j|Armure lourde uruk
 itm_m_uruk_heavy_k|Armure de garde uruk
 itm_m_cap_armor|Armure de capitaine du Mordor
@@ -478,7 +478,7 @@ itm_moria_armor_b|Protection pectorale de la Moria
 itm_moria_armor_c|Cotte de mailles d'Orque de la Moria
 itm_moria_armor_d|Cuir clouté de la Moria
 itm_moria_armor_e|Cotte de mailles lourde d'Orque de la Moria
-; itm_moria_orc_shield_a|Moria Great Shield
+itm_moria_orc_shield_a|Grand bouclier de la Moria
 itm_moria_orc_shield_b|Bouclier d'Orque de la Moria
 itm_moria_orc_shield_c|Bouclier d'Orque de la Moria
 itm_gundabad_armor_a|Haillons d'Orque de Gundabad
@@ -486,8 +486,8 @@ itm_gundabad_armor_b|Foururre d'Orque de Gundabad
 itm_gundabad_armor_c|Armure d'Orque de Gundabad
 itm_gundabad_armor_d|Armure d'Orque de Gundabad
 itm_gundabad_armor_e|Armure lourde d'Orque de Gundabad
-; itm_gundabad_helm_a|Leather Cap
-; itm_gundabad_helm_b|Leather Helm
+itm_gundabad_helm_a|Calotte en cuir
+itm_gundabad_helm_b|Casque en cuir
 itm_gundabad_helm_c|Casque de Gundabad
 itm_gundabad_helm_d|Casque de Gundabad
 itm_gundabad_helm_e|Casque de Chevaucheur de Warg
@@ -507,7 +507,7 @@ itm_dun_helm_b|Capuchon à andouillers de Dun
 itm_dun_helm_c|Grand casque du Pays de Dun
 itm_dun_helm_d|Grand casque du Pays de Dun
 
-; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
+itm_dun_helm_e|Grand casque de guerre du Pays de Dun\t\t\t\t\t\t\t\t  
 itm_dun_shield_a|Bouclier du Pays de Dun
 itm_dun_shield_b|Bouclier du Pays de Dun
 itm_dun_berserker|Épée de chef du Pays de Dun
@@ -518,11 +518,11 @@ itm_dunland_spear|Lance du Pays de Dun
 itm_dunnish_pike|Pique du Pays de Dun
 itm_rohan_armor_a|Chemise du Rohan
 itm_rohan_armor_e|Haubert du Rohan
-; itm_rohan_armor_h|Rohan Leather Armor
+itm_rohan_armor_h|Armure de cuir du Rohan
 itm_rohan_armor_k|Haubert du Rohan
 itm_rohan_armor_n|Armure d'écailles du Rohan
 itm_rohan_armor_p|Armure du Rohan
-; itm_rohan_armor_s|Rohan Guard Armor
+itm_rohan_armor_s|Armure de garde du Rohan
 itm_rohan_light_helmet_a|Casque léger du Rohan
 itm_rohan_light_helmet_b|Casque léger du Rohan
 itm_rohan_inf_helmet_a|Casque d'infanterie du Rohan
@@ -556,11 +556,11 @@ itm_mirkwood_light_scale|Armure légère d'écailles d'Elfe sylvain
 itm_mirkwood_armor_a|Cuir léger
 itm_mirkwood_armor_b|Armure légère d'écailles matelassée
 
-; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
+itm_mirkwood_armor_c|Cotte de mailles royale de la Forêt Noire\t\t\t\t\t\t\t
 itm_mirkwood_armor_d|Surcot léger matelassé
 itm_mirkwood_armor_e|Cotte de mailles légère avec surcot
 
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+itm_mirkwood_armor_f|Cuirasse de feuilles de la Forêt Noire\t\t\t\t\t\t\t\t\t   
 itm_mirkwood_great_spear|Grande lance de la Forêt Noire
 itm_mirkwood_war_spear|Lance de guerre de la Forêt Noire
 itm_mirkwood_short_spear|Lance de la Forêt Noire
@@ -579,7 +579,7 @@ itm_harad_tunic|Tunique du Harad
 itm_harad_padded|Armure matelassée du Harondor
 itm_harad_hauberk|Haubert du Harondor
 itm_harad_lamellar|Armure harasjala
-; itm_harad_heavy|Harad Noble Armor
+itm_harad_heavy|Armure de noble haradrim
 itm_harad_skirmisher|Costume léger haradhrim
 itm_harad_archer|Armure d'archer haradhrim
 itm_black_snake_armor|Armure maranka
@@ -701,57 +701,57 @@ itm_rhun_helm_n|Casque de chef de Rhûn
 itm_rhun_helm_o|Casque de chef de Rhûn
 itm_rhun_greataxe|Grande hache de Rhûn
 itm_rhun_battleaxe|Hache de bataille de Rhûn
-; itm_rhun_falchion|Savage Falchion
+itm_rhun_falchion|Fauchon sauvage
 itm_rhun_glaive|Glaive de Rhûn
 
-; itm_rhun_greatfalchion|Savage Great Falchion
-; itm_rhun_greatsword|Savage Great Sword
-; itm_rhun_shortsword|Savage Shortsword
+itm_rhun_greatfalchion|Grand fauchon sauvage
+itm_rhun_greatsword|Grande épée sauvage
+itm_rhun_shortsword|Épée courte sauvage 
 
-; itm_rhun_sword|Savage Sword
+itm_rhun_sword|Épée sauvage
 itm_rhun_shield|Bouclier triangulaire de Rhûn
-; itm_dale_light_a|Dale Militia Jacket
+itm_dale_light_a|Manteau de milicien de Dale
 
-; itm_dale_light_b|Northmen Light Lamellar
+itm_dale_light_b|Armure légère lamellaire d'Homme du Nord
 
-; itm_dale_med_a|Northmen Heavy Lamellar
+itm_dale_med_a|Armure lourde lamellaire d'Homme du Nord
 
-; itm_dale_med_b|Dale Leather Armor
+itm_dale_med_b|Armure de cuir de Dale
 
-; itm_dale_med_c|Dale Leather Over Mail
+itm_dale_med_c|Cuir sur mailles de Dale
 
-; itm_dale_med_d|Dale Lamellar Armor
+itm_dale_med_d|Armure lamellaire de Dale
 
-; itm_dale_heavy_a|Dale Lamellar Over Mail
+itm_dale_heavy_a|Lamellaire sur mailles de Dale
 
-; itm_dale_heavy_b|Dale Plated Coat
+itm_dale_heavy_b|Manteau de plates de Dale
 
-; itm_dale_heavy_c|Rhovanion Mail
+itm_dale_heavy_c|Cotte de mailles du Rhovanion
 
 itm_dale_armor_l|Gorgerette noble de Dale
 
 itm_dale_helmet_a|Casque léger d'infanterie de Dale
 
-; itm_dale_helmet_b|Dale Light Archer Helm
+itm_dale_helmet_b|Casque d'archer léger de Dale
 
 itm_dale_helmet_c|Casque d'infanterie de Dale
 
-; itm_dale_helmet_d|Dale Archer Helm
+itm_dale_helmet_d|Casque d'archer de Dale
 
-; itm_dale_helmet_e|Barding Helm
+itm_dale_helmet_e|Casque de Bard
 
-; itm_dale_helmet_f|Barding Helm
+itm_dale_helmet_f|Casque de Bard
 
 itm_dale_sword|Épée courte de Dale
 itm_dale_sword_long|Épée longue de Dale
 itm_dale_sword_broad|Épée à double tranchant de Dale
 itm_dale_pike|Lance de Dale
 itm_dale_billhook|Serpe de Dale
-; itm_dale_shield_a|Dale Tower Shield
+itm_dale_shield_a|Pavois de Dale
 
-; itm_dale_shield_b|Dale Tower Shield
+itm_dale_shield_b|Pavois de Dale
 
-; itm_dale_shield_c|Dale Round Shield
+itm_dale_shield_c|Bouclier rond de Dale
 itm_dale_shield_d|Bouclier de Dale
 itm_umb_armor_a|Armure de cuir corsaire
 
@@ -773,11 +773,11 @@ itm_umb_helm_c|Casque de milicien corsaire
 
 itm_umb_helm_d|Casque de cavalier corsaire
 
-; itm_umb_helm_e|Corsair High Helm
+itm_umb_helm_e|Grand casque corsaire
 
-; itm_umb_helm_f|Corsair High Helm
+itm_umb_helm_f|Grand casque corsaire
 
-; itm_umb_hood|Black Hood
+itm_umb_hood|Capuchon noir
 
 itm_corsair_boots|Bottes corsaires
 itm_umb_shield_a|Bouclier corsaire
@@ -787,35 +787,35 @@ itm_umb_shield_d|Bouclier corsaire
 itm_umb_shield_e|Bouclier corsaire
 itm_umbar_cutlass|Coutelas d'Umbar
 itm_kraken|Coutelas kraken
-; itm_umbar_rapier|Umbar Boarding Sword
+itm_umbar_rapier|Épée d'abordage d'Umbar
 
 itm_corsair_harpoon|Harpon corsaire
 itm_corsair_sword|Poignard corsaire
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers
+itm_corsair_throwing_dagger|Dagues de jet tordues
 itm_umbar_pike|Pique de l'Umbar
-; itm_woodman_tunic|Woodmen Tunic
+itm_woodman_tunic|Tunique de la Forêt Noire
 
-; itm_woodman_scout|Woodmen Scout Cape
-; itm_woodman_padded|Woodmen Padded Armor
+itm_woodman_scout|Cape d'éclaireurs forestier
+itm_woodman_padded|Armure rembourrée de forestiers
 itm_beorn_tunic|Tunique beornide
 itm_beorn_padded|Armure rembourrée beornide
 itm_beorn_heavy|Armure lourde beornide
 itm_beorn_berserk|Équipement de berserk beornide
 itm_beorn_chief|Tunique de chef beornide
 
-; itm_beorn_helmet|Bear Skullcap
+itm_beorn_helmet|Calotte d'ours
 itm_beorn_shield|Bouclier d'Homme du Nord
 itm_beorn_axe|Hache beornide
-; itm_beorn_staff|Woodmen Staff
+itm_beorn_staff|Bâton des Forestiers
 itm_beorn_battle_axe|Hache de guerre beornide
-; itm_dwarf_shield_a|Dwarven Angular Shield
+itm_dwarf_shield_a|Bouclier nain angulaire
 
-; itm_dwarf_shield_b|Dwarven Tower Shield
+itm_dwarf_shield_b|Pavois nain
 
-; itm_dwarf_shield_c|Dwarven Fighting Shield
+itm_dwarf_shield_c|Bouclier de combat nain
 
-; itm_dwarf_shield_d|Dwarven Round Shield
+itm_dwarf_shield_d|Bouclier rond nain
 
 itm_north_round_shield|Bouclier nain
 
@@ -827,15 +827,15 @@ itm_free_dwarf_shield_j|Bouclier nain
 
 itm_free_dwarf_shield_k|Bouclier nain
 
-; itm_woodmen_heavy|Mirkwood Armor
+itm_woodmen_heavy|Armure de la Forêt Noire
 
 itm_dwarf_sword_a|Épée naine
 
-; itm_dwarf_sword_b|Beorning Shortsword
+itm_dwarf_sword_b|Épée courte beornide
 itm_dwarf_sword_c|Épée naine
 itm_dwarf_sword_d|Épée naine
 
-; itm_dwarf_battle_axe|Dwarf Battle Axe
+itm_dwarf_battle_axe|Hache de bataille naine
 
 itm_dwarf_great_axe|Grande hache naine
 
@@ -855,43 +855,43 @@ itm_dwarf_spear|Lance naine
 
 itm_dwarf_spear_b|Pique naine
 
-; itm_dwarf_spear_c|Dwarf Longaxe
+itm_dwarf_spear_c|Hache longue naine
 
 itm_dwarf_helm_coif|Coiffe naine
 
-; itm_dwarf_nasal_b|Dwarf Nasal Helm
+itm_dwarf_nasal_b|Casque nasal nain
 
 itm_north_skullcap|Calotte du Nord
 
-; itm_dwarf_helm_kettle|Dwarf Kettle Helm
+itm_dwarf_helm_kettle|Casque chapel Nain
 
 itm_dwarf_helm_fris|Casque nain frison
 
-; itm_north_leather_skullcap|North Light Skullcap
+itm_north_leather_skullcap|Calotte légère du Nord
 
 itm_dwarf_hood|Cagoule naine
 
 itm_dwarf_nasal|Casque nasal nain
 
-; itm_north_nasal_helm|North Nasal Helm
+itm_north_nasal_helm|Casque nasal nordique
 
 itm_dwarf_helm_p|Casque de roi nain
 
-; itm_dwarf_miner|Dwarf Light Helm
+itm_dwarf_miner|Casque léger nain
 
-; itm_north_chieftain|North Chieftain Helm
+itm_north_chieftain|Casque de chef de clan nordique
 
-; itm_dwarf_helm_round|Dwarf Round Helm
+itm_dwarf_helm_round|Casque rond nain
 
 itm_free_dwarf_helm_v|Salade de mailles naine
 
-; itm_dwarf_helm_sallet|Dwarf Sallet
+itm_dwarf_helm_sallet|Casque salade nain
 
-; itm_dwarf_armor_a|Erebor Mail
+itm_dwarf_armor_a|Cotte de mailles d'Erebor
 
 itm_leather_dwarf_armor|Gambison nain sur cotte de mailles
 
-; itm_dwarf_armor_b|Erebor Scale
+itm_dwarf_armor_b|Armure d'écailles d'Erebor
 
 itm_leather_dwarf_armor_b|Gambison nain
 
@@ -899,7 +899,7 @@ itm_dwarf_armor_c|Écailles sur mailles naines
 
 itm_dwarf_vest|Tunique naine
 
-; itm_dwarf_vest_b|Iron Hills Mail
+itm_dwarf_vest_b|Cotte de mailles des Monts du Fer
 itm_dwarf_pad_boots|Bottes naines rembourrées
 itm_dwarf_chain_boots|Chausses naines avec mailles
 itm_dwarf_scale_boots|Bottes d'écailles naines
@@ -960,17 +960,17 @@ itm_miruvor_reward|Flasque de Miruvor
 itm_wheeled_cage|Cage géante sur roues
 itm_orc_throwing_axes_reward|Haches de lancer de Gundabad
 itm_corsair_throwing_dagger_reward|Dagues de lancer empoisonnées
-; itm_dwarf_shield_reward|Shield of Kheled-zaram
+itm_dwarf_shield_reward|Bouclier de Kheled-zaram
 itm_dwarf_great_axe_reward|Hache aiguisée naine
 itm_isen_uruk_heavy_reward|Armure de général uruk-hai
 itm_lorien_bow_reward|Arc ñoldorin
 itm_lorien_sword_reward|Épée galadhrim
-; itm_dale_sword_reward|Dale Royal Sword
+itm_dale_sword_reward|Épée royale de Dale
 
-; itm_dale_armor_reward|Dale Noblemen Mail
+itm_dale_armor_reward|Cotte de mailles de noble de Dale
 itm_leather_gloves_reward|Gants de chasse
 itm_beorn_shield_reward|bouclier ennuyeux
-; itm_beorn_axe_reward|Bear Club
+itm_beorn_axe_reward|Massue ours
 itm_moria_arrow_reward|Flèches empoisonnées de la Moria
 itm_khamul_helm|Heaume de Khamûl
 itm_gandstaff|Bâton de magicien

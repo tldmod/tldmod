@@ -19,11 +19,11 @@ mno_warg_battle_scenario|Testovaci bitvy s vrrky
 mno_build_your_own_scene|**Postav svou vlastni scenu pro TLD**
 menu_tutorial|^^TLD má mnoho funkcí neznámých z původního M&B. Jsou popsané detailně bez prozrazení zápletky v PDF přibaleném s modem. Pokud chcete projít tutoriál, udělejte to prosím v Native - základní hře, ne v modu.
 menu_tutorial|^^TLD má mnoho funkcí neznámých z původního M&B. Jsou popsané detailně bez prozrazení zápletky v PDF přibaleném s modem. Pokud chcete projít tutoriál, udělejte to prosím v Native - základní hře, ne v modu.
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
+mno_tutorial_1|Tutoriál #1: Základní pohyb a výběr zbraní. {s1}
+mno_tutorial_2|Tutoriál #2: Boj se štítem. {s2}
+mno_tutorial_3|Tutoriál #3: Boj bez štítu. {s3}
+mno_tutorial_3b_door|další úroveň
+mno_tutorial_4|Tutoriál #4: Řízení koně nebo vrrka. {s4}
 ; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
 mno_go_back_dot|Jdi zpět.
 mno_action_view_troop_trees|přehled stromu jednotek
@@ -77,7 +77,7 @@ mno_start_la|Lamedon, knizectvi horskych klanu
 mno_start_pg|Pinnath Gelin, knizectvi Zelenych kopcu
 mno_start_do|Dol Amroth, knizectvi labutich rytiru
 mno_start_pe|Pelargir, pobrezni knizectvi
-mno_start_bl|Udoli Cernokoranu, knizectvi lucistniku
+mno_start_bl|Morthond, Knizectvi Lucistniku
 menu_start_eye_man|^^^^^^^^^^Zvol svuj narod:
 mno_start_hr|Haradrim, lide z rozpaleneho Jihu
 mno_start_bn|Cerni Numenorejci, odpadlici ze Zapadu
@@ -101,10 +101,10 @@ menu_choose_gender|^^^^^^^^^^Tve pohlavi?
 mno_start_male|Muž
 mno_start_female|Žena
 mno_proc|Pokračuj
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+menu_start_as_one|^^^^^^^^^^Jaký typ Vojáka jsi?
+mno_start_default|Staň se {s23} (Default)
+mno_start_up1|Staň se {s21} (Easy)
+mno_start_up2|Staň se {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_continue|Pokračuj
 menu_character_report|^^^^^Skupinova moralka: {reg8}^Maximalni velikost skupiny: {reg7}^{s5}
 menu_camp|^^^^Jsi v {s1}.{s2}^^Co chces delat?
@@ -115,10 +115,10 @@ mno_camp_wait_here|Nejakou dobu tu taborit.
 mno_camp_options|Zmenit NASTAVENI TLD.
 mno_Cheat_enable|Zapnout cheaty/modderske nastaveni.
 menu_game_options|^^^^^^^^Klikni na moznost pro prepnuti:
-; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+mno_game_options_war_level_start|Válka začíná v úrovni: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_game_options_restrict_items|Omezit hracovo vybaveni: {s7}
 mno_game_options_formations|Bitevni formace a specialni umela inteligence: {s7}
-; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
+mno_game_options_siege_ai|Pokročilé obléhací AI: {s7}
 mno_game_options_town_menu|NPC ve mestech vzdy dostupna z Menu: {s7}
 mno_game_options_cutscenes|Pribehove filmecky: {s7}
 mno_game_options_injuries|Spolecnici mohou byt zraneni: {s7}.
@@ -128,14 +128,14 @@ mno_game_options_morale|System bitevni moralky: {s7}
 mno_game_options_animal_ambushes|Divoka zvirata: {s7}
 ; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
 ; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
+mno_game_options_camera_pref|Preferovaný mód kamery: {s7}.
 mno_game_options_tweaks|Upravy hratelnosti...
 mno_game_options_back|Zpet do taboroveho menu.
 mno_game_options_start_back|Zpet.
 menu_camp_tweaks|^^^^^^^^Vyber moznost kterou chces upravit.
 mno_tweak_options_compat|Upravy kompatibility...
 mno_tweak_options_strat|Strategicke upravy...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_tweak_options_battlefield_ai|UI Bitevního pole se ladí...\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_tweak_options_back|Zpet do menu nastaveni.
 menu_camp_compat_tweaks|^^^^^^^^Klikni na moznost pro zmenu (podrz SHIFT k snizeni):^(tohle slouzi k zvyseni kompatibility s ruznymi pocitaci a nejedna se o cheaty)
 mno_game_options_compat_party|Maximalni mnostvi skupin na mape: {s1}
@@ -183,7 +183,7 @@ mno_leave|Odejit.
 menu_simple_encounter|^^^^^{s2}^Mas k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrava v{s3}{s4}.^^Jake jsou tve rozkazy?
 ; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
 mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?attack:face them} bez tebe.
-; mno_encounter_hide|Hide from the enemy...
+mno_encounter_hide|Skryj se před nepřítelem...
 ; mno_special_whip|Rush forward toward them cracking the {s4}.
 mno_encounter_leave|uvolnit se od nepřítele.
 mno_encounter_retreat|Nech za sebou nějaké vojáky, aby kryli tvůj ústup.
@@ -338,7 +338,7 @@ mno_defend_villagers|braň vesničany !
 mno_raid_villagers|přepadni vesnici
 ; mno_go_away|Leave and regroup for now.
 ; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
-; mno_attack_scout_camp|Attack the Scout Camp!
+mno_attack_scout_camp|Zaútočit na tábořiště zvědů!
 ; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
 ; mno_sb_defend_the_town|Board them! Destroy their fleet!
 ; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
@@ -357,8 +357,8 @@ mno_guardian_party_send_word|Pošli zprávu, že se k němu brzy připojíš.
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
 ; mno_training_continue|Begin training...
 ; menu_alternate_training_conclusion|{s5}
-; mno_alternate_training_retry|Try again...
-; mno_alternate_training_finish|Leave the arena...
+mno_alternate_training_retry|Zkusit znova...
+mno_alternate_training_finish|Opustit arénu...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Vyber si svoji stranu a výhod:
 mno_good_equal|Frakce dobra
 mno_bad_equal|Frakce zla

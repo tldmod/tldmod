@@ -24,12 +24,12 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|我想我曾在刚�
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|我明白，我来自很远的地方！我是一个霍比特人，{先生/女士}，来自夏尔。
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|啊，那一定是我亲爱的表弟！皮瑞格林·图克，我们都叫他皮平。我们都是霍比特人，{先生/女士}，我们都来自夏尔。好个老皮平，真好奇他正在米那斯提力斯做什么。
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|啊，那一定是我亲爱的堂兄！梅里雅达克·烈酒鹿，我们都叫他梅里。我们都是霍比特人，{先生/女士}，我们都来自夏尔。好个老梅里，真好奇他正在伊多拉斯做什么。
-; dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|May I ask a favour of you, {my lord/my lady}.
-; dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Of course, {s1}. What is it?
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|我能够劳烦您帮个忙吗，{先生/女士}
+dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|当然，{s1}. 什么事？
 ; dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.
 ; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|I will be passing by {s1} and will be glad to pass on this message to your cousin.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|抱歉，我没时间。
-dlga_hobbit_general_talk_ask_accept:close_window|谢了！
+dlga_hobbit_general_talk_ask_accept:close_window|谢了！{s1}
 ; dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|I understand. I'll send it to the next caravan to {s1} then.
 dlga_hobbit_general_talk_3:close_window|再会！
 dlga_start:hobbit_merry_talk_met.1|{playername}，我们又见面了

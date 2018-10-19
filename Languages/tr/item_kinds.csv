@@ -316,7 +316,7 @@ itm_lorien_helm_b|Lorien Okçu Miğferi
 itm_lorien_helm_c|Lorien Piyade Miğferi
 itm_orc_chain_greaves|Ork Baldır Zırhı
 
-; itm_orc_coif|Orc Skullcap
+itm_orc_coif|Ork Kafatası başlık
 itm_orc_greaves|Ork Zincir Çizme
 itm_orc_ragwrap|Ork Bandana
 itm_orc_furboots|Ork Kürk Çizme
@@ -418,15 +418,15 @@ itm_orc_kettlehelm|Ork Miğferi
 
 itm_orc_buckethelm|Ork Kova Miğferi
 
-; itm_orc_morion|Orc Morion
+itm_orc_morion|Ork Morion
 
 itm_orc_beakhelm|Ork Gaga Miğferi
 
 itm_orc_bughelm|Ork Kasketi
 
-; itm_orc_visorhelm|Orc Visorhelm
+itm_orc_visorhelm|Ork Kapalı Miğfer
 
-; itm_orc_visorhelm_pl|Orc Visorhelm
+itm_orc_visorhelm_pl|Ork Kapalı Miğfer
 
 itm_m_orc_light_a|Mordor Ork Hafif Zırhı
 itm_m_orc_light_b|Mordor Ork Hafif Zırhı
@@ -560,7 +560,7 @@ itm_mirkwood_armor_c|Mirkwood Kraliyet Zırhı
 itm_mirkwood_armor_d|Hafif Kapiton Cüppesi
 itm_mirkwood_armor_e|Hafif Örgü Zırh ve Cüppe
 
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+itm_mirkwood_armor_f|Kuyutorman Leafscale\t\t\t\t\t\t\t\t\t
 itm_mirkwood_great_spear|Kuytuorman Büyük Mızrağı
 itm_mirkwood_war_spear|Kuytuorman Savaş Mızrağı
 itm_mirkwood_short_spear|Kuytuorman Mızrağı
@@ -701,14 +701,14 @@ itm_rhun_helm_n|Rhun Kabile Reisi Miğferi
 itm_rhun_helm_o|Rhun Kabile Reisi Miğferi
 itm_rhun_greataxe|Rhun Büyük Balta
 itm_rhun_battleaxe|Rhun Savaş Baltası
-; itm_rhun_falchion|Savage Falchion
+itm_rhun_falchion|Vahşi Kılıcı
 itm_rhun_glaive|Rhun Gönderli Kılıcı
 
-; itm_rhun_greatfalchion|Savage Great Falchion
+itm_rhun_greatfalchion|Vahşi Büyük Kılıcı
 itm_rhun_greatsword|Vahşi Büyük Kılıç
 itm_rhun_shortsword|Vahşi Kısa Kılıç
 
-; itm_rhun_sword|Savage Sword
+itm_rhun_sword|Vahşi Kılıcı
 itm_rhun_shield|Rhun Uçurtma Kalkanı
 itm_dale_light_a|Dale Milis Ceketi
 
@@ -792,11 +792,11 @@ itm_umbar_rapier|Umbar Yatılı Kılıç
 itm_corsair_harpoon|Korsan Zıpkını
 itm_corsair_sword|Korsan Eket
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers
+itm_corsair_throwing_dagger|Çarpık Fırlatma Hançeri
 itm_umbar_pike|Umbar Kargısı
 itm_woodman_tunic|Oduncu Tuniği
 
-; itm_woodman_scout|Woodmen Scout Cape
+itm_woodman_scout|Ormancı İzci Pelerini
 itm_woodman_padded|Orman halkı Destekli Zırhı
 itm_beorn_tunic|Beorning Tuniği
 itm_beorn_padded|Beorning Pamuklu Zırhı
@@ -960,12 +960,12 @@ itm_miruvor_reward|Miruvor Şişesi
 itm_wheeled_cage|Dev Tekerli Kafes
 itm_orc_throwing_axes_reward|Gundabad Uçan Baltaları
 itm_corsair_throwing_dagger_reward|Zehirli Fırlatma Bıçakları
-; itm_dwarf_shield_reward|Shield of Kheled-zaram
+itm_dwarf_shield_reward|Kheled-zaram Kalkanı
 itm_dwarf_great_axe_reward|Dwarf Keskin Baltası
 itm_isen_uruk_heavy_reward|Uruk-hai General Zırhı
 itm_lorien_bow_reward|Noldorin Yayı
 itm_lorien_sword_reward|Galadhrim Kılıcı
-; itm_dale_sword_reward|Dale Royal Sword
+itm_dale_sword_reward|Dale Kraliyet Kılıcı
 
 itm_dale_armor_reward|Dale Soylu Giysisi
 itm_leather_gloves_reward|Avlanma Eldiveni

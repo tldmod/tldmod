@@ -431,7 +431,7 @@ dlga_lord_tell_objective:lord_pretalk.12|Nem tudom: {reg1} {s1}
 
 ; dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.
 ; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Consider it done.
-; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|I do not have the time for this.
+dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|Erre most nincs időm.
 ; dlga_lord_mission_destroy_scout_camp_accept:close_window|We shall await news of your success.
 ; dlga_lord_mission_destroy_scout_camp_reject:close_window|I see. That is disappointing.
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on its way to a village near {s12}.

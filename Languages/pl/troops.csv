@@ -40,8 +40,8 @@ trp_farmer|Rolnik
 trp_farmer_pl|Rolników
 trp_townsman|Mieszczanin
 trp_townsman_pl|Mieszczan
-trp_watchman|Mieszczka
-trp_watchman_pl|Mieszczek
+trp_watchman|Mieszczanka
+trp_watchman_pl|Mieszczanki
 trp_woodmen_youth|Człowiek Lasu
 trp_woodmen_youth_pl|Ludzi Lasu
 trp_woodmen_forester|Leśnik
@@ -50,26 +50,26 @@ trp_woodmen_skilled_forester|Doświadczony Leśnik
 trp_woodmen_skilled_forester_pl|Doświadczonych Leśników
 trp_woodmen_axemen|Leśny Topornik
 trp_woodmen_axemen_pl|Leśnych Toporników
-trp_woodmen_master_axemen|Nocna Straż z Mirkwood
-trp_woodmen_master_axemen_pl|Nocna Straż z Mirkwood
+trp_woodmen_master_axemen|Nocny Strażnik z Mrocznej Puszczy
+trp_woodmen_master_axemen_pl|Nocni Strażnicy z Mrocznej Puszczy
 trp_woodmen_tracker|Leśny Tropiciel
 trp_woodmen_tracker_pl|Leśnych Tropicieli
 trp_woodmen_scout|Leśny Zwiadowca
 trp_woodmen_scout_pl|Leśnych Zwiadowców
 trp_woodmen_archer|Leśny Łucznik
 trp_woodmen_archer_pl|Leśnych Łuczników
-trp_fell_huntsmen_of_mirkwood|Nocny Zwiadowca z Mirkwood
-trp_fell_huntsmen_of_mirkwood_pl|Nocny Zwiadowca z Mirkwood
+trp_fell_huntsmen_of_mirkwood|Nocny Zwiadowca z Mrocznej Puszczy
+trp_fell_huntsmen_of_mirkwood_pl|Nocni Zwiadowcy z Mrocznej Puszczy
 trp_beorning_vale_man|Beorninski Mężczyzna
 trp_beorning_vale_man_pl|Beorninskich Mężczyzn
 trp_beorning_warrior|Beorninski Wojownik
 trp_beorning_warrior_pl|Beorninskich Wojowników
-trp_beorning_tolltacker|Beorning Toll-Taker
-trp_beorning_tolltacker_pl|Beorning Toll-Taker
+trp_beorning_tolltacker|Beorniński Poborca
+trp_beorning_tolltacker_pl|Beornińscy Poborcy
 trp_beorning_sentinel|Beorninski Wartownik
 trp_beorning_sentinel_pl|Beorninskich Wartowników
 trp_beorning_warden_of_the_ford|Beorninski Strażnik Brodu
-trp_beorning_warden_of_the_ford_pl|Beorninskich Strażników Brodu
+trp_beorning_warden_of_the_ford_pl|Beornińscy Strażnicy Brodu
 trp_beorning_carrock_lookout|Beorninski Skaut Carrock
 trp_beorning_carrock_lookout_pl|Beorninskich Skautów Carrock
 trp_beorning_carrock_fighter|Beorninski Wojownik Carrock
@@ -83,29 +83,29 @@ trp_dale_man_at_arms_pl|Zbrojnych Dale
 trp_laketown_scout|Zwiadowca Dale
 trp_laketown_scout_pl|Oddział Zwiadowców Dale
 trp_laketown_bowmen|Łucznik Dale
-trp_laketown_bowmen_pl|Łucznik Dale
+trp_laketown_bowmen_pl|Łucznicy Dale
 trp_laketown_archer|Łucznik Dale
-trp_laketown_archer_pl|Łucznik Dale
+trp_laketown_archer_pl|Łucznicy Dale
 trp_barding_bowmen_of_esgaroth|Łucznik Barding
-trp_barding_bowmen_of_esgaroth_pl|Łucznik Barding
+trp_barding_bowmen_of_esgaroth_pl|Łucznicy Barding
 trp_dale_warrior|Miecznik Dale
-trp_dale_warrior_pl|Miecznik Dale
+trp_dale_warrior_pl|Miecznicy Dale
 trp_dale_veteran_warrior|Sierżant Dale
-trp_dale_veteran_warrior_pl|Sierżant Dale
+trp_dale_veteran_warrior_pl|Sierżanci Dale
 trp_dale_marchwarden|Hearthman z Dale
-trp_dale_marchwarden_pl|Hearthman z Dale
+trp_dale_marchwarden_pl|Hearthmani z Dale
 trp_dale_pikeman|Włócznik Dale
 trp_dale_pikeman_pl|Włóczników Dale
 trp_dale_billman|Halabardzista Dale
 trp_dale_billman_pl|Halabardzistów Dale
 trp_dale_bill_master|Doborowy Halabardzista Dale
 trp_dale_bill_master_pl|Doborowych Halabardzistów Dale
-trp_merchant_squire_or_dale|Northmen Retainer
-trp_merchant_squire_or_dale_pl|Northmen Retainer
-trp_merchant_guard_of_dale|Northmen Auxiliary
-trp_merchant_guard_of_dale_pl|Northmen Auxiliary
-trp_merchant_protector_of_dale|Rhovanion Jeździec
-trp_merchant_protector_of_dale_pl|Rhovanion Jeździec
+trp_merchant_squire_or_dale|Północny Najemca
+trp_merchant_squire_or_dale_pl|Północnych Najemców
+trp_merchant_guard_of_dale|Wojownik z Północy
+trp_merchant_guard_of_dale_pl|Wojowników z Północy
+trp_merchant_protector_of_dale|Jeździec Rhovanion 
+trp_merchant_protector_of_dale_pl|Jeźdźcy Rhovanion 
 trp_girions_guard_of_dale|Rhovanion Marchwarden
 trp_girions_guard_of_dale_pl|Rhovanion Marchwarden
 trp_rhun_tribesman|Plemieniec Rhun
@@ -166,8 +166,8 @@ trp_dwarven_scout|Krasnolud Zwiadowca
 trp_dwarven_scout_pl|Krasnoludów Zwiadowców
 trp_dwarven_bowman|Krasnolud Łucznik
 trp_dwarven_bowman_pl|Krasnoludów Łuczników
-trp_dwarven_longaxeman|Longaxe Krasnolód
-trp_dwarven_longaxeman_pl|Longaxe Krasnolód
+trp_dwarven_longaxeman|Krasnolud topornik
+trp_dwarven_longaxeman_pl|Krasnoludzcy topornicy
 trp_iron_hills_warrior|Wojownik Żelaznych Wzgóż 
 trp_iron_hills_warrior_pl|Wojownik Żelaznych Wzgóż 
 trp_iron_hills_miner|Górnik z Żelaznych Wzgórz
@@ -510,8 +510,8 @@ trp_dunnish_pikeman|Dunlandzki Pikinier
 trp_dunnish_pikeman_pl|Dunlandzkich Pikinierów
 trp_dunnish_veteran_pikeman|Doborowy Dunlandzki Pikinier
 trp_dunnish_veteran_pikeman_pl|Doborowych Dunlandzkich Pkinierów
-trp_dunnish_raven_rider|Dunnish Crebain Jeździec
-trp_dunnish_raven_rider_pl|Dunnish Crebain Jeździec
+trp_dunnish_raven_rider|Dunlandzki Jeździec Krebaina
+trp_dunnish_raven_rider_pl|Dunlandzcy Jeźdźcy Krebainów
 trp_dunnish_vet_warrior|Doświadczony Dunlandzki Wojownik
 trp_dunnish_vet_warrior_pl|Doświadczonych Dunlandzkich Wojowników
 trp_dunnish_wolf_warrior|Dunlandzki Wilczy Wojownik
@@ -566,14 +566,14 @@ trp_corsair_veteran_raider|Umbarski Doświadczony Łupieżca
 trp_corsair_veteran_raider_pl|Umbarskich Doświadczonych Łupieżców
 trp_corsair_night_raider|Umbarski Nocny Łupieżca
 trp_corsair_night_raider_pl|Umbarskich Nocnych Łupieżców
-trp_militia_of_umbar|Umbar Marine
-trp_militia_of_umbar_pl|Umbar Marine
-trp_marksman_of_umbar|Strzelec z Umbar
-trp_marksman_of_umbar_pl|Strzelec z Umbar
-trp_veteran_marksman_of_umbar|Veteran z Umbar
-trp_veteran_marksman_of_umbar_pl|Veteran z Umbar
+trp_militia_of_umbar|Umbarski Morski Najeźdźca
+trp_militia_of_umbar_pl|Umbarscy Morscy Najeźdźcy
+trp_marksman_of_umbar|Strzelec z Umbaru
+trp_marksman_of_umbar_pl|Strzelec z Umbaru
+trp_veteran_marksman_of_umbar|Weteran z Umbaru
+trp_veteran_marksman_of_umbar_pl|Weterani z Umbaru
 trp_master_marksman_of_umbar|Korsarz Mistrz Strzelców
-trp_master_marksman_of_umbar_pl|Korsarz Mistrz Strzelców
+trp_master_marksman_of_umbar_pl|Korsarze Mistrzowie Strzelców
 trp_corsair_marauder|Umbarski Zbrojny
 trp_corsair_marauder_pl|Umbarskich Zbrojnych
 trp_corsair_veteran_marauder|Doświadczony Umbarski Zbrojny
@@ -722,22 +722,22 @@ trp_archer_snaga_of_moria|Goblin Łucznik z Morii
 trp_archer_snaga_of_moria_pl|Goblin Łucznik z Morii
 trp_large_goblin_archer_of_moria|Wielki Łucznik Goblin z Morii
 trp_large_goblin_archer_of_moria_pl|Wielkich Łuczników Goblinów z Morii
-trp_deep_dweller_of_moria2|Dwellers z Moria
-trp_deep_dweller_of_moria2_pl|Dwellers z Moria
+trp_deep_dweller_of_moria2|Przybysz z Głębi Morii
+trp_deep_dweller_of_moria2_pl|Przybysze z Głębi Morii
 trp_goblin_gundabad|Gundabadzki Goblin
 trp_goblin_gundabad_pl|Gundabadzkich Goblinów
 trp_orc_gundabad|Gundabadzki Ork
 trp_orc_gundabad_pl|Gundabadzkich Orków
 trp_orc_fighter_gundabad|Gundabadzki Ork Wojownik
 trp_orc_fighter_gundabad_pl|Gundabadzkich Orków Wojowników
-trp_fell_orc_warrior_gundabad|Gundabad Ork Wojownik
-trp_fell_orc_warrior_gundabad_pl|Gundabad Ork Wojownik
-trp_orc_beserker_gundabad|Gundabad Ork Berserker
-trp_orc_beserker_gundabad_pl|Gundabad Ork Berserker
-trp_warg_skirmisher_gundabad|Gundabad Skirmisher
-trp_warg_skirmisher_gundabad_pl|Gundabad Skirmisher
-trp_goblin_north_clan_skirmisher|Goblin Północny Klan Skirmisher
-trp_goblin_north_clan_skirmisher_pl|Goblin Północny Klan Skirmisher
+trp_fell_orc_warrior_gundabad|Gundabadzki Ork Wojownik
+trp_fell_orc_warrior_gundabad_pl|Gundabadzkich Orków Wojowników
+trp_orc_beserker_gundabad|Gundabadzki Ork Berserker
+trp_orc_beserker_gundabad_pl|Gundabadzkich Orków Berserkerów
+trp_warg_skirmisher_gundabad|Gundabadzki Harcownik
+trp_warg_skirmisher_gundabad_pl|Gundabadzkich Harcowników
+trp_goblin_north_clan_skirmisher|Goblin Harcownik Północnych Klanów
+trp_goblin_north_clan_skirmisher_pl|Goblinów Harcowników Północnych Klanów 
 trp_goblin_rider_gundabad|Gundabadzki Goblini Jeździec
 trp_goblin_rider_gundabad_pl|Gundabadzkich Goblinich Jeźdźców
 trp_warg_rider_gundabad|Gundabadzki Jeździec Wargów
@@ -750,8 +750,8 @@ trp_tribal_orc|Plemienny Ork
 trp_tribal_orc_pl|Plemiennych Orków
 trp_tribal_orc_warrior|Plemienny Ork Wojownik
 trp_tribal_orc_warrior_pl|Plemiennych Orków Wojowników
-trp_tribal_orc_chief2|Wódz Orków z Moria
-trp_tribal_orc_chief2_pl|Wódz Orków z Moria
+trp_tribal_orc_chief2|Wódz Orków z Morii
+trp_tribal_orc_chief2_pl|Wodzowie Orków z Morii
 trp_black_numenorean_renegade|Renegat - Czarny Numenorejczyk
 trp_black_numenorean_renegade_pl|Renegatów - Czarnych Numenorejczyków
 trp_black_numenorean_warrior|Wojownik - Czarny Numenorejczyk
@@ -810,8 +810,8 @@ trp_black_numenorean_captain|Kapitan Czarnych Numenorejczyków
 trp_black_numenorean_captain_pl|Kapitanów Czarnych Numenorejczyków
 trp_black_numenorean_lieutenant|Porucznik Czarnych Numenorejczyków
 trp_black_numenorean_lieutenant_pl|Poruczników Czarnych Numenorejczyków
-trp_dunnish_night_wolf|Dunnish Nocny Wilk
-trp_dunnish_night_wolf_pl|Dunnish Nocny Wilk
+trp_dunnish_night_wolf|Dunlandzki Nocny Wilk
+trp_dunnish_night_wolf_pl|Dunlandzkich Nocnych Wilków
 trp_dunnish_lieutenant|Dunlandzki Hetman
 trp_dunnish_lieutenant_pl|Dunlandzkich Hetmen
 trp_goblin_chieftain|Gobliński Herszt
@@ -1509,7 +1509,7 @@ trp_ent_3|Fladrif
 trp_gandalf|Gandalf
 trp_gandalf_pl|Home-grown Gandalves
 trp_nazgul|Nazgul
-trp_nazgul_pl|Domesticated Nazgul
+trp_nazgul_pl|Udomowiony Nazgul
 trp_barman|Karczmarz
 trp_elder|Starszy
 trp_gear_merchant|Kupiec
@@ -1520,9 +1520,9 @@ trp_dorwinion_bandit_pl|Dorwinionskich Bandytów
 trp_dorwinion_raider|Dorwinionski Łupieżca
 trp_dorwinion_raider_pl|Dorwinionskich Łupieżców
 trp_city_guard|Strażnik Miejski
-trp_city_guard_pl|city guard
+trp_city_guard_pl|strażnik miejski
 trp_orc_sentry|Orkowy Strażnik
-trp_orc_sentry_pl|orc sentry
+trp_orc_sentry_pl|orkowy strażnik
 trp_uruk_hai_sentry|Strażnik Uruk-hai
 trp_uruk_hai_sentry_pl|uruk hai sentry
 trp_black_numenorean_sorcerer|Czarownik Czarnych Numenorejczyków
@@ -1578,7 +1578,7 @@ trp_longing_woodelf|Elf
 trp_longing_imladris|Elf
 trp_deep_dweller_of_moria|Dwellers z Moria
 trp_deep_dweller_of_moria_pl|Dwellers z Moria
-trp_tribal_orc_chief|Wódz Orków z Moria
-trp_tribal_orc_chief_pl|Wódz Orków z Moria
+trp_tribal_orc_chief|Wódz Orków z Morii
+trp_tribal_orc_chief_pl|Wodzowie Orków z Morii
 trp_rhovanion_noble|Szlachcic Rhovanionu
-trp_rhovanion_noble_pl|Szlachcic Rhovanionu
+trp_rhovanion_noble_pl|Szlachcice Rhovanionu

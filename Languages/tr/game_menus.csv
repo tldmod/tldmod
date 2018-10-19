@@ -1,6 +1,6 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
-mno_start_good|Yeni bir çağın Şafağı
-mno_start_evil|İnsanların Alacakaranlığı
+mno_start_good|Yeni bir çagın Şafagı
+mno_start_evil|İnsanların Alacakaranlıgı
 mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
 mno_go_forth|Seçtiğin yolda ilerle...
@@ -126,8 +126,8 @@ mno_game_options_death|Lordlar ve Yoldaşlar için kalıci ölüm: {s7}.
 mno_game_options_death2|Oyuncu için kalıcı ölüm (Bu SENSİN!): {s7}.
 mno_game_options_morale|Savaş morali sistemi: {s7}
 mno_game_options_animal_ambushes|Hayvan pususu :{s7}
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+mno_game_options_horse_ko|Binekten düşen süvari hasar mesajları: {s7}
+mno_game_options_bright_nights|Daha aydınlık geceler: {s7}.
 mno_game_options_camera_pref|Tercih Edilen Kamera Modu : {s7}
 mno_game_options_tweaks|Oyun Ayarı
 mno_game_options_back|Kamp menüsüne geri dön
@@ -135,7 +135,7 @@ mno_game_options_start_back|Geri.
 menu_camp_tweaks|^^^^^^^^Ayarlamak istediğiniz bir görüş seçin.
 mno_tweak_options_compat|Uygunluk Ayarları
 mno_tweak_options_strat|Strateji Ayarları
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_tweak_options_battlefield_ai|Savaş Alanı Yapay Zekası ayarları...\t\t\t\t\t\t\t\t\t
 mno_tweak_options_back|Ayarlar menüsüne geri dön.
 menu_camp_compat_tweaks|^^^^^^^^Degistirmek için bir ayara tiklayin (azaltmak için shift e basili tutun):^(bunlar hile degil)
 mno_game_options_compat_party|Max Parti Üyesi: {s1}
@@ -144,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Degistirmek için bir ayara tiklayin:^(Uyarı: Bu
 mno_strat_tweaks_siege_reqs|Kuşatma gücü gereklilikleri: {s7}
 mno_strat_tweaks_siege_relax_rate|Kuşatma str. req. Gecikme İhtimali: {reg1}
 mno_strat_tweaks_regen_rate|Güç Yenilenmesi İhtimali: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
+mno_strat_tweaks_siege_regen_limit|Nifak güç yenilenmesi {reg1} civarında yavaşlıyor.
 mno_strat_tweaks_influence_gain_rate|Etki kazanım oranı: {s7}
 mno_strat_tweaks_rank_gain_rate|Rütbe kazanım oranı: {s7}
 mno_strat_tweaks_back|Ayarlar menüsüne dön.
@@ -316,17 +316,17 @@ mno_explore|Etrafı keşfet
 menu_ring_hunter_lair|^^^^Yüzük avcılarının izini Kuyutormanı'nın içinden takip ettin ve {s1}'e vardın. Bir sandıkla gitmeye hazırlandıklarını görüyorsun.
 mno_attack_lair|Onlara şimdi saldır
 mno_leave_bandit_lair|Şimdilik ayrıl
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+menu_gondor_reinforcement_event|^^^^^Gondor işaret ateşleri hazır, Minas Tirith yardım çağrısı yapıyor!^^Güney topraklarının lordları gelecek olan karanlığa karşı Ak Şehri savunmak için kuzeye ilerliyor.
 mno_gondor_reinforcement_event_close|Kapat
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_gondor_beacons|Bir zamanlar kuzeyden güney Gondor'a tehlike sinyali veren Gondor işaret kulelerinden biri {s1} bakıyorsun.
 mno_gondor_beacons_close|Ayrıl...
-; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+menu_player_added_to_war_council|^^^^^Bir ulak geldi ve şuanda sana {s24} olarak, {s2} Savaş Konseyi'ne  katılmanı istiyor. Şimdi savaşın seyrini değiştirebilecek stratejiler önerme hakkına sahipsin.
 mno_player_added_to_war_council_close|Kapat
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+menu_player_added_to_siege_reports|^^^^^Bir ulak geldi ve şuanda {s24} olarak, her ne zaman {s2} bir merkezi kuşattığında veya {s2}'nin merkezleri kuşatıldığında sana bir rapor gönderileceğini söylüyor.
 mno_player_added_to_siege_reports_close|Kapat
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda bir {s24} olarak bir {s2}'yi maksimum takipçi sayısı {reg55} olarak seni takip etmesini emredebileceğini duyurdu.
 mno_player_added_to_allow_follow_close|Kapat
-; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldığını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat
 mno_intro_next|Devam et...
 mno_start_defend_caravan|Karavanı Savun!
@@ -339,22 +339,22 @@ mno_raid_villagers|Köyü Yağmala!
 mno_go_away|Şimdilik ayrıl ve yeniden gruplandır.
 menu_scout_camp_quest|Yakındaki keşif kampını görüyorsun. Adamlarını onlara saldıracak şekilde hazırlıyorsun
 mno_attack_scout_camp|İzci Kampına Saldır!
-; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
+menu_sea_battle_quest|Bir düşman filosuyla karşılaştın.Gemiler yakınlaşıyor ve tayfa bordalamaya hazırlanıyor...
 mno_sb_defend_the_town|Bordalayın onları! Filolarını yok edin!
-; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
-; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
-; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
-; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
-; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
-; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
-; mno_defend_refugees|Keep your eye out for raiders...
-; mno_attack_refugees|Attack the refugee train...
+mno_sb_attack_the_town|Yolumuzu kesmeye çalışıyorlar! Filoyu savun!
+menu_camp_field_ai|^^^^^Değiştirmek için bir seçeneğe tıkla.^^^Bir veya Daha Fazla Seçeneği Kapatmak Performansı Arttıracaktır. (FPS)
+mno_lord_field_ai|Lordlar Gelişmiş Savaş Alanı Yapay Zekasına Sahip Olacak: {s7}
+mno_horse_archer_field_ai|Atlı Okçular Gelişmiş Savaş Alanı Yapay Zekasına Sahip Olacak: {s7}
+mno_vs_orcs_field_ai|Okçular orklara karşı daha iyi nişan alsınlar (orkların kafalarına hedef almazlar): {s7}
+mno_battlefield_animals|Warg olmayan / At veya Hayvan Yoldaşları Savaşta oluştur: {s7}
+mno_defend_refugees|Yağmacılar için tetikte kal....
+mno_attack_refugees|Mülteci kervanına saldır...
 mno_leave_refugees|Onları şimdilik bırakın...
 mno_evil_war_tut_continue|Devam et...
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+menu_guardian_party_quest|{s8}  Isengard'ın hala ayaklarının üstünde olduğunu ve son direnişi için hazırlıklarını tamamladığını bildiriyor. Isengard'ın Ordularına karşı olacak bu son savaşa katılmanı diliyor. Orduya en az {reg13} sayıda asker getirmen gerekiyor, yeterli sayıda askerin yoksa tez zamanda daha fazla asker yetiştirmen bildirildi.
 mno_guardian_party_reject|Ona katılmayacağını ilet.
 mno_guardian_party_send_word|Hemen gelip ona katılacagini ilet.
-; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
+menu_alternate_training_fight|{reg5} Düşmanla yüzleşeceksin. Hazır mısın?
 mno_training_continue|Eğitime başla...
 menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Tekrar dene...

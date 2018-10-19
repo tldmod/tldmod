@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^Za čo budeš bojovať?
 mno_start_good|ÚSVIT nového veku
 mno_start_evil|SÚMRAK ľudstva
 mno_go_bback|Späť
-menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravuje na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju rolu. ^^ Jakú rolu, to sa ešte ukáže...
+menu_start_phase_2|^^^^^ Stredozem. Temnota na Východe narastá, ^ prichádzajú odtiaľ dlho schované temné bytosti. ^ Slobodné národy sa pripravujú na vojnu. Vojnu, ktorú nezažili už celý vek. ^ Ľudia, Elfovia, Trpaslíci a Ohyzdi; všetci zohrajú svoju rolu. ^^ Jakú rolu, to sa ešte ukáže...
 mno_go_forth|Vydaj sa na svoju zvolenú cestu...
 menu_start_game_3|^^^^^^^^Zvoľ si scénar
 mno_custom_battle_scenario_1|Bitka, Gondorské frakcie proti Haradu
@@ -19,12 +19,12 @@ mno_warg_battle_scenario|Bitka pre testovanie vrrkov
 mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
 menu_tutorial|^^TLD má veľa fukncií neznámych pre pôvodný M&B. Sú detailne popísané bez prezradenia zápletky v PDF, ktoré je pribalené s módom. Pokiaľ chcete prejsť návodom mechanik základnej hry, urobte tak prosím v základnej hre - nie v móde. 
 menu_tutorial|^^TLD má veľa fukncií neznámych pre pôvodný M&B. Sú detailne popísané bez prezradenia zápletky v PDF, ktoré je pribalené s módom. Pokiaľ chcete prejsť návodom mechanik základnej hry, urobte tak prosím v základnej hre - nie v móde. 
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_tutorial_1|Cvičenie #1: Základný pohyb a výber zbrane. {s1}
+mno_tutorial_2|Cvičenie #2: Boj zo štítom. {s2}
+mno_tutorial_3|Cvičenie #3: Boj bez štítu. {s3}
+mno_tutorial_3b_door|Ďalší Level
+mno_tutorial_4|Cvičenie #4: Jazdenie na koni alebo na vrrkovi. {s4}
+mno_tutorial_5|Cvičenie #5: Rozkazovanie skupine vojakov. {s5}
 mno_go_back_dot|Späť
 mno_action_view_troop_trees|Prezrieť si strom jednotiek
 mno_view_upkeep_costs|Zobraziť žold družiny.
@@ -101,10 +101,10 @@ menu_choose_gender|^^^^^^^^^^Tvoje pohlavie?
 mno_start_male|Muž
 mno_start_female|Žena
 mno_proc|Pokračuj
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+menu_start_as_one|^^^^^^^^^^Aký si typ vojaka?
+mno_start_default|Bude z teba {s23} (Default)
+mno_start_up1|Bude z teba {s21} (Easy)
+mno_start_up2|Bude z teba {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_continue|Pokračuj
 menu_character_report|^^^^^Morálka družiny: {reg8}^Maximálna veľkosť družiny: {reg7}^{s5}
 menu_camp|^^^^Si v {s1}.{s2}^^Čo chceš robiť?
@@ -115,10 +115,10 @@ mno_camp_wait_here|Utáboriť sa tu na nejaký čas.
 mno_camp_options|Zmeniť nastavenia TLD.
 mno_Cheat_enable|Povoliť cheaty/modderske nastavenia.
 menu_game_options|^^^^^^^^Klikni na možnosť pre prepnutie:
-; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+mno_game_options_war_level_start|Vojna začína na Leveli: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_game_options_restrict_items|Obmedziť hráčovo vybavenie: {s7}
 mno_game_options_formations|Bojové formácie a umelá inteligencia: {s7}
-; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
+mno_game_options_siege_ai|Pokročilé obliehanie AI: {s7}
 mno_game_options_town_menu|NPC v mestách vždy dostupné v menu: {s7}
 mno_game_options_cutscenes|Minifilmy: {s7}
 mno_game_options_injuries|Zranenia spoločníkov: {s7}.
@@ -127,8 +127,8 @@ mno_game_options_death2|Hráč (TY!) môže trvale zomrieť: {s7}
 mno_game_options_morale|Systém morálky v bitkách: {s7}
 mno_game_options_animal_ambushes|Prepadnutia divokými zvieratami: {s7}
 ; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
+mno_game_options_bright_nights|Jasnejšie noci: {s7}.
+mno_game_options_camera_pref|Preferovaný kamerový režim: {s7}.
 mno_game_options_tweaks|Úpravy hratelnosti...
 mno_game_options_back|Späť do táborového menu.
 mno_game_options_start_back|Späť.
@@ -183,7 +183,7 @@ mno_leave|Odísť.
 menu_simple_encounter|^^^^^{s2}^ Máš k dispozícií {reg22} jednotiek v boji proti {reg11}.^^Bitka sa odohráva v {s3}{s4}.^^Tvoje rozkazy ?
 mno_encounter_attack|{reg21?Zaútočiť na nich:Pripraviť sa čeliť im}.
 mno_encounter_order_attack|Prikázať svojím vojakom aby {reg21?zaútočili:čelili im} bez teba.
-; mno_encounter_hide|Hide from the enemy...
+mno_encounter_hide|Skry sa pred nepriateľom
 mno_special_whip|Vrhnúť sa vpred naproti nim lámajúc {s4}.
 mno_encounter_leave|Odísť.
 mno_encounter_retreat|Nechať za sebou niekoľko vojakov, aby kryli tvoj ústup.
@@ -326,7 +326,7 @@ mno_player_added_to_war_council_close|Zavrieť
 mno_player_added_to_siege_reports_close|Zavrieť
 ; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
 mno_player_added_to_allow_follow_close|Zavrieť
-; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+menu_center_besieged_event|^^^^^Posol ti doniesol správu že {s1} je obliehané {s2}om z {s3}u.
 mno_center_besieged_event_close|Zavrieť
 mno_intro_next|Pokračuj
 mno_start_defend_caravan|Brániť karavanu!
@@ -336,29 +336,29 @@ mno_start_kill_scouts|Zastaviť zvedov ohlasujúcich tvoj príchod.
 mno_go_your_way|Nechať to tak.
 mno_defend_villagers|Brániť dedinčanov!
 mno_raid_villagers|Vyrabovať dedinu!
-; mno_go_away|Leave and regroup for now.
+mno_go_away|Stiahni sa a preskup, pre teraz.
 ; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
-; mno_attack_scout_camp|Attack the Scout Camp!
-; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
-; mno_sb_defend_the_town|Board them! Destroy their fleet!
-; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
-; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
-; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
-; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
-; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
+mno_attack_scout_camp|Zaútoč na prieskumnícky kemp
+menu_sea_battle_quest|Stretol si nepriateľskú flotilu. Lode sa priblížia a námorníci zhodia dosky...
+mno_sb_defend_the_town|Na palubu! Zničte ich flotily!
+mno_sb_attack_the_town|Snažia sa nás preraziť! Chráňte flotilu!
+menu_camp_field_ai|^^^^^Klikni na voľbu aby si ju prepol.^^^Vypnutie volieb zlepší výkon (FPS)
+mno_lord_field_ai|Vládcovia majú zlepšené bojiskové AI: {s7}
+mno_horse_archer_field_ai|Lukostrelci na koňoch majú zlepšené bojiskové AI: {s7}
+mno_vs_orcs_field_ai|Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
-; mno_defend_refugees|Keep your eye out for raiders...
-; mno_attack_refugees|Attack the refugee train...
-; mno_leave_refugees|Leave them for now...
+mno_defend_refugees|Pozor na nájazdníkov...
+mno_attack_refugees|Zaútoč na utečencov...
+mno_leave_refugees|Nechaj ich, pre teraz...
 mno_evil_war_tut_continue|Pokračuj
 ; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_reject|Pošli správu že sa k nemu nemôžeš pripojiť.
 mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
-; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
-; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
-; mno_alternate_training_retry|Try again...
-; mno_alternate_training_finish|Leave the arena...
+menu_alternate_training_fight|Budeš bojovať proti {reg5} protivníkom. Si pripravený? 
+mno_training_continue|Začni s tréningom...
+menu_alternate_training_conclusion|{s5}
+mno_alternate_training_retry|Skús znovu...
+mno_alternate_training_finish|Odíď...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Zvol si svoju stranu a výhody:
 mno_good_equal|Frakcia dobra
 mno_bad_equal|Frakcia zla

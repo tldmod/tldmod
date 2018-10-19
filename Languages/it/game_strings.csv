@@ -247,7 +247,7 @@ str_persuasion_summary_very_bad|Fai del tuo meglio cercando di persuadere {s50},
 str_persuasion_summary_bad|Provi a persuadere {s50}, ma {reg51?lei:lui} superandoti in astuzia ti aggira fin dall'inizio, facendo risultare vuoti i tuoi propositi perfino alle tue stesse orecchie.  Ad ogni modo, non sei riuscito ad impressionare troppo {s50}.
 str_persuasion_summary_average|{s50} si rivela essere un abile conversatore con una mente acuta e tu sembri non riuscire a presentare nulla di concreto che {reg51?lei:lui} non possa facilmente controbattere a suo favore. Alla fine, tuttavia, nessuno dei due raggiunge un risultato.
 str_persuasion_summary_good|Grazie alla tua decisione e alla chiarezza delle tue motivazioni, riesci a presentare ottimamente ciò che pensi, costringendo {s50} a considerare molti punti a tuo favore. Comunque, {reg51?lei:lui} continua ad avere dubbi riguardo le tue richieste.
-str_persuasion_summary_very_good|Pari ad una poesia, il tuo discorso viene ascoltato da molte orecchie. Il mondo intero sembra zittirsi mentre parli. Le parole ispirate hanno commosso profondamente {s50}, e {reg51?lei:lui} sembra essere disposto ad aiutarti.
+str_persuasion_summary_very_good|Pari ad una poesia, il tuo discorso viene ascoltato da molte orecchie. Il mondo intero sembra zittirsi mentre parli. Le tue parole ispirate hanno commosso profondamente {s50}, e {reg51?lei:lui} sembra essere disposto ad aiutarti.
 str_surname_1|{s50} di Tarnost
 str_surname_2|{s50} di Lossarnach
 str_surname_3|{s50} di Erech
@@ -1112,7 +1112,7 @@ str_lord_insult_goodnatured|persona sgradevole
 str_lord_insult_upstanding|disgraziata canaglia
 str_rebellion_dilemma_default|[feudatario]
 str_rebellion_dilemma_martial|{s45} ha chiaramente subito un torto. Anche se ho prestato giuramento a {s46}, non mi lega a fornirgli supporto se ha usurpato il trono.
-str_rebellion_dilemma_quarrelsome|Hmm. {s46} non mi ha mai dato ciò che mi spetta, quindi non credo di dovergli molto. Tuttavia, magari {s45} non sarà tanto meglio, e {s46} si è almeno mostrato.
+str_rebellion_dilemma_quarrelsome|Hmm. {s46} non mi ha mai dato ciò che mi spetta, quindi non credo di dovergli molto. Tuttavia, magari {s45} non sarà tanto meglio, e {s46} almeno ha dato prova di sè.
 str_rebellion_dilemma_pitiless|Hmm. {s45} dice che {reg3?lei:lui} è il legittimo erede al trono.  Questo è un bene -- mi ascioglie dal mio giuramento a {s46}. Ma nonostante ciò, devo comunque soppesare le mie decisioni con attenzione.
 str_rebellion_dilemma_cunning|Hmm. Ho fatto un giuramento di lealtà a {s46}, tuttavia i potenti non sono legati ai loro giuramenti come le normali persone. Il nostro compito ci è dato dalla nostra stessa capacità di governare, d'imporre l'ordine e prevenire la guerra totale.
 str_rebellion_dilemma_sadistic|Hmm. in questo vile mondo un'uomo saggio deve pensare solo a se stesso. Quindi, che ci guadagno ? 

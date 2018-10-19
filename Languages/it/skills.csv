@@ -5,9 +5,9 @@ skl_leadership_desc|Ogni punto incrementa di cinque unità il numero massimo di 
 skl_prisoner_management|Controllo Prigionieri
 skl_prisoner_management_desc|Ogni livello incrementa di %d il numero massimo di prigionieri. (Abilità del Comandante)
 ; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_persuasion_desc|La capacità di sopravvivere nella natura selvaggia e piegarla alla tua volontà. Questa abilità influisce sulla capacità della compagni di nascondersi dal nemico e sulla velocità del gruppo mentre si trova in un terreno boscoso. (Abilità di gruppo)
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Pronto Soccorso
 skl_first_aid_desc|Per ogni punto in questa abilità gli eroi recuperano il 5%% di salute persa in battaglia. (Abilità di Gruppo)
 skl_surgery|Chirurgia

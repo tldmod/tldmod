@@ -92,8 +92,8 @@ trp_dale_warrior|Dale Kılıç Ustası
 trp_dale_warrior_pl|Dale Kılıç Ustaları
 trp_dale_veteran_warrior|Dale Çavuşu
 trp_dale_veteran_warrior_pl|Dale Çavuşları
-; trp_dale_marchwarden|Hearthman of Dale
-; trp_dale_marchwarden_pl|Hearthmen of Dale
+trp_dale_marchwarden|Dale Yüreklisi
+trp_dale_marchwarden_pl|Dale Yüreklileri
 trp_dale_pikeman|Dale Mızrakçısı
 trp_dale_pikeman_pl|Dale Mızrakçıları
 trp_dale_billman|Dale Baltacısı
@@ -104,8 +104,8 @@ trp_merchant_squire_or_dale|Kuzeyli Toplama
 trp_merchant_squire_or_dale_pl|Kuzeyli Toplamalar
 trp_merchant_guard_of_dale|Kuzeyli Yardımcı
 trp_merchant_guard_of_dale_pl|Kuzeyli Yardımcılar
-trp_merchant_protector_of_dale|Rhovanion Sürücüsü
-trp_merchant_protector_of_dale_pl|Rhovanion Sürücüleri
+trp_merchant_protector_of_dale|Rhovanion Binicisi
+trp_merchant_protector_of_dale_pl|Rhovanion Binicileri
 trp_girions_guard_of_dale|Rhovanion Muhafız Gözcüsü
 trp_girions_guard_of_dale_pl|Rhovanion Muhafız Gözcüleri
 trp_rhun_tribesman|Rhunlu Kabile Üyesi
@@ -142,22 +142,22 @@ trp_rhun_heavy_noble_cavalry|Rhun Ağır Soylu Süvariler
 trp_rhun_heavy_noble_cavalry_pl|Rhunlu Ağır Soylu Süvari
 trp_dorwinion_noble_of_rhun|Rhunun Dorwinion Soylusu
 trp_dorwinion_noble_of_rhun_pl|Rhunun Dorwinion Soyluları
-trp_dwarven_apprentice|Dwarf Çırağı
-trp_dwarven_apprentice_pl|Dwarf Çırakları
-trp_dwarven_warrior|Dwarf Savaşçısı
-trp_dwarven_warrior_pl|Dwarf Savaşçıları
+trp_dwarven_apprentice|Cüce Çırağı
+trp_dwarven_apprentice_pl|Cüce Çırakları
+trp_dwarven_warrior|Cüce Savaşçısı
+trp_dwarven_warrior_pl|Cüce Savaşçıları
 trp_dwarven_hardened_warrior|Zırhlı Cüce Savaşçısı
 trp_dwarven_hardened_warrior_pl|Zırhlı Cüce Savaşçıları
-trp_dwarven_spearman|Mızraklı Dwarf
-trp_dwarven_spearman_pl|Mızraklı Dwarflar
-trp_dwarven_pikeman|Mızraklı Cüce
-trp_dwarven_pikeman_pl|Mızraklı Cüceler
+trp_dwarven_spearman|Mızraklı Cüce
+trp_dwarven_spearman_pl|Mızraklı Cüceler
+trp_dwarven_pikeman|Kargıcı Cüce
+trp_dwarven_pikeman_pl|Kargıcı Cüceler
 trp_dwarven_halberdier|Uzun Mızraklı Cüce
 trp_dwarven_halberdier_pl|Uzun Mızraklı Cüceler
-trp_dwarven_axeman|Baltalı Dwarf
-trp_dwarven_axeman_pl|Baltalı Dwarflar
-trp_dwarven_expert_axeman|Uzman Baltalı Dwarf
-trp_dwarven_expert_axeman_pl|Uzman Baltalı Dwarflar
+trp_dwarven_axeman|Baltalı Cüce
+trp_dwarven_axeman_pl|Baltalı Cüceler
+trp_dwarven_expert_axeman|Usta Baltalı Cüce
+trp_dwarven_expert_axeman_pl|Usta Baltalı Cüceler
 trp_longbeard_axeman|Uzun Sakallı Baltacı Cüce
 trp_longbeard_axeman_pl|Uzun Sakallı Baltacı Cüceler
 trp_dwarven_lookout|Uyanık-cüce
@@ -178,8 +178,8 @@ trp_iron_hills_battle_infantry|Demir Tepe Savaş Cücesi
 trp_iron_hills_battle_infantry_pl|Demir Tepe Savaş Cüceleri
 trp_grors_guard|Gror'un Koruması
 trp_grors_guard_pl|Gror'un Korumaları
-trp_gondor_commoner|Gondor İcracısı
-trp_gondor_commoner_pl|Gondor İcracıları
+trp_gondor_commoner|Gondor Acemisi
+trp_gondor_commoner_pl|Gondor Acemileri
 trp_gondor_militiamen|Gondor Gözcüsü
 trp_gondor_militiamen_pl|Gondor Gözcüleri
 trp_footmen_of_gondor|Gondor Piyade Eri
@@ -217,7 +217,7 @@ trp_veteran_archer_of_gondor_pl|Kıdemli Gondor Nişancıları
 trp_archer_of_the_tower_guard|Hisar Kılıç Ustaları
 trp_archer_of_the_tower_guard_pl|Hisar Kılıç Ustaları
 trp_steward_guard|Vekilharç Koruması
-trp_steward_guard_pl|Vekilharç Koruması
+trp_steward_guard_pl|Vekilharç Korumaları
 trp_ranger_of_ithilien|Ithilien Okçusu
 trp_ranger_of_ithilien_pl|Ithilien Okçuları
 trp_veteran_ranger_of_ithilien|Tecrübeli Ithilien Okçusu
@@ -423,7 +423,7 @@ trp_veteran_footman_of_rohan_pl|Kıdemli Rohan Erleri
 trp_elite_footman_of_rohan|Seçkin Rohan Eri
 trp_elite_footman_of_rohan_pl|Seçkin Rohan Erleri
 trp_folcwine_guard_of_rohan|Folcwine Rohan Muhafızı
-trp_folcwine_guard_of_rohan_pl|Folcwine Rohan Muhafızlar
+trp_folcwine_guard_of_rohan_pl|Folcwine Rohan Muhafızları
 trp_raider_of_rohan|Frealaf Akıncısı
 trp_raider_of_rohan_pl|Frealaf Akıncıları
 trp_heavy_swordsman_of_rohan|Rohan Ağır Kılıç Ustası
@@ -490,8 +490,8 @@ trp_harondor_light_cavalry|Harondor Hafif Süvarisi
 trp_harondor_light_cavalry_pl|Harandor Hafif Süvarisi
 trp_fang_heavy_cavalry|Altın Engerek Şovalyesi
 trp_fang_heavy_cavalry_pl|Altın Engerek Şovalyeleri
-; trp_harad_horse_archer|Harondor Skirmisher
-; trp_harad_horse_archer_pl|Harondor Skirmishers
+trp_harad_horse_archer|Harondor Avcısı
+trp_harad_horse_archer_pl|Harondor Avcıları
 trp_black_snake_horse_archer|Harondor Atlı Okçusu
 trp_black_snake_horse_archer_pl|Harondor Atlı Okçuları
 trp_gold_serpent_horse_archer|Kara Yılan Atlı Okçusu
@@ -1567,7 +1567,7 @@ trp_beorning_shield_bear_pl|Ayı Savaşçıları
 trp_morannon_healer|Hekim Okstuk
 trp_minas_tirith_healer|Loreth
 trp_edoras_healer|Hekim Freya
-; trp_isengard_healer|Nurgal the Patcher
+trp_isengard_healer|Yamalı Nurgal
 trp_guldur_healer|Gramer Mornagar
 trp_gundabad_healer|Üçüncü göz Lurgakh
 trp_mirkwood_healer|Yumuşak-El Corwiel

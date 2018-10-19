@@ -1,15 +1,15 @@
 skl_trade|Comercio
-skl_trade_desc|Cada nivel de esta habilidad hace posible conseguir más equipo con menos Puntos de recursos. (Habilidad de Grupo)
+skl_trade_desc|Cada nivel de esta habilidad hace posible conseguir más equipo con menos Puntos de Recursos. (Habilidad de Grupo)
 skl_leadership|Liderazgo
-skl_leadership_desc|Cada punto incrementa el número máximo de tropas que podéis liderar en 5, incrementa la moral del grupo y reduce los salarios en un 5%%. (Habilidad de líder)
+skl_leadership_desc|Cada punto incrementa el número máximo de tropas que puedes liderar en 5, incrementa la moral del grupo y reduce los salarios en un 5%%. (Habilidad de líder)
 skl_prisoner_management|Manejo de prisioneros
 skl_prisoner_management_desc|Cada nivel de esta habilidad incrementa el número máximo de prisioneros en %d. (Habilidad de líder)
 skl_persuasion|Dominio de las tierras salvajes
-skl_persuasion_desc|La habiliad para sobrevivir en la naturaleza salvaje y doblegarla a tu voluntad. Esra habilidad afecta a la capacidad del grupo para esconderse de los enemigos, y la velocidad del frupo en terreno boscoso. (Habilidad de Grupo)
+skl_persuasion_desc|La habiliad para sobrevivir en la naturaleza salvaje y doblegarla a tu voluntad. Esra habilidad afecta a la capacidad del grupo para esconderse de los enemigos, y la velocidad del grupo en terreno boscoso. (Habilidad de Grupo)
 skl_engineer|-----
 skl_engineer_desc|-----
 skl_first_aid|Primeros Auxilios
-skl_first_aid_desc|Los héroes regeneran un 5%% de sus puntos de golpe perdidos por nivel de habilidad durante una misión. (Habilidad de grupo)
+skl_first_aid_desc|Los héroes regeneran un 5%% de sus puntos de vida perdidos por nivel de habilidad durante una misión. (Habilidad de grupo)
 skl_surgery|Cirugía
 skl_surgery_desc|Cada punto de esta habilidad añade una probabilidad de 4%% de que un miembro del grupo que reciba un golpe mortal resulte herido y no muerto. (Habilidad de grupo)
 skl_wound_treatment|Tratamiento de Heridas
@@ -27,16 +27,16 @@ skl_tracking_desc|Se obtiene más información sobre los rastros. (Habilidad de 
 skl_trainer|Instrucción
 skl_trainer_desc|Cada héroe con esta habilidad añade diariamente algo de experiencia a todos los miembros de su grupo cuyo nivel sea menor que el suyo. La experiencia se gana así: {0,4,10,16,23,30,38,46,55,65,80}. (Habilidad personal)
 skl_looting|Saqueo
-skl_looting_desc|Esta habilidad incrementa la cantidad obtenida en el saqueo en un 10%% por nivel de habilidad. (Habilidad de grupo)
+skl_looting_desc|Esta habilidad incrementa la cantidad de botín obtenida en un 10%% por nivel de habilidad. (Habilidad de grupo)
 skl_horse_archery|Arquería Montada
-skl_horse_archery_desc|Reduce la penalización de daño y puntería al utilizar arcos y armas arrojadizas desde caballos. (Habilidad personal)
+skl_horse_archery_desc|Reduce la penalización de daño y puntería al utilizar arcos y armas arrojadizas desde la montura. (Habilidad personal)
 skl_riding|Cabalgar
-skl_riding_desc|Permite montar caballos (u otras bestias) de mayor nivel de dificultad e incrementa vuestra velocidad y maniobrabilidad. (Habilidad personal)
+skl_riding_desc|Permite montar caballos (u otras bestias) de mayor nivel de dificultad e incrementa tu velocidad y maniobrabilidad cuando montas. (Habilidad personal)
 skl_athletics|Atletismo
 skl_athletics_desc|Incrementa la velocidad al correr. (Habilidad personal)
 skl_shield|Escudo
-skl_shield_desc|Reduce el daño a los escudos (en un 8%% por nivel de habilidad) y mejora la velocidad al escudarse y cubrirse. (Habilidad personal)
-skl_weapon_master|Maese Armero
+skl_shield_desc|Reduce el daño a los escudos (en un 8%% por nivel de habilidad) y mejora la velocidad y la cobertura del escudo. (Habilidad personal)
+skl_weapon_master|Maestría con armas
 skl_weapon_master_desc|Facilita el aprendizaje de las competencias en armas e incrementa los límites de estas competencias. Los límites funcionan así: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Habilidad personal)
 skl_power_draw|Arquería
 skl_power_draw_desc|Permite a los personajes utilizar mejores arcos. Cada punto de esta habilidad (hasta cuatro puntos por encima de los requerimientos del arco) incrementa el daño hecho por los arcos en un 14%%. (Habilidad personal)
@@ -45,4 +45,4 @@ skl_power_throw_desc|Cada punto de esta habilidad incrementa el daño de lanzami
 skl_power_strike|Potencia de Golpe
 skl_power_strike_desc|Cada punto de esta habilidad incrementa el daño cuerpo a cuerpo en un 8%%. (Habilidad personal)
 skl_ironflesh|Piel curtida
-skl_ironflesh_desc|Cada punto de esta habilidad incrementa los puntos de daño en +2. (Habilidad personal)
+skl_ironflesh_desc|Cada punto de esta habilidad incrementa los puntos de vida en +2. (Habilidad personal)

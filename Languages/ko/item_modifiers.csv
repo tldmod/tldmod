@@ -5,8 +5,8 @@ imod_bent|휘어진 %s
 imod_chipped|깨진 %s
 imod_battered|낡은 %s
 imod_poor|질 나쁜 %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|단순한 %s
+imod_old|낡은 %s
 imod_cheap|싸구려 %s
 imod_fine|준수한 %s
 imod_well_made|잘 만든 %s
@@ -23,7 +23,7 @@ imod_tattered|누더기 %s
 imod_ragged|거친 %s
 imod_rough|거친 %s
 imod_sturdy|튼튼한 %s
-; imod_thick|Robust %s
+imod_thick|두꺼운 %s
 imod_hardened|단련된 %s
 imod_reinforced|강화된 %s
 imod_superb|훌륭한 %s
@@ -40,4 +40,4 @@ imod_day_old|하루 지난 %s
 imod_two_day_old|이틀 지난 %s
 imod_smelling|냄새나는 %s
 imod_rotten|상한 %s
-imod_large_bag|%s이 든 큰 가방
+imod_large_bag|대량의 %s

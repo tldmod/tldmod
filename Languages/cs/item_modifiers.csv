@@ -5,7 +5,7 @@ imod_bent|Ohnutý
 imod_chipped|Naštípnutý
 imod_battered|Omlácený
 imod_poor|Spatny
-; imod_crude|Simple %s
+imod_crude|Jednoduchý
 imod_old|Pravěký
 imod_cheap|Levny
 imod_fine|Dobry
@@ -23,7 +23,7 @@ imod_tattered|Potrhany
 imod_ragged|Hruby
 imod_rough|Hruby
 imod_sturdy|Pevny
-; imod_thick|Robust %s
+imod_thick|Robustní
 imod_hardened|Tvrzeny
 imod_reinforced|Vyztuzeny
 imod_superb|Vynikajici

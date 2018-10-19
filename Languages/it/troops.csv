@@ -50,26 +50,26 @@ trp_woodmen_skilled_forester|Guardiano dei Boschi Esperto
 trp_woodmen_skilled_forester_pl|Guardiani dei Boschi Esperti
 trp_woodmen_axemen|Taglialegna dei Boschi
 trp_woodmen_axemen_pl|Taglialegna dei Boschi
-; trp_woodmen_master_axemen|Night Guard of Mirkwood
-; trp_woodmen_master_axemen_pl|Night Guards of Mirkwood
+trp_woodmen_master_axemen|Guardia Notturna di Bosco Atro
+trp_woodmen_master_axemen_pl|Guardie Notturne di Bosco Atro
 trp_woodmen_tracker|Inseguitore dei Boschi
 trp_woodmen_tracker_pl|Inseguitori dei Boschi
 trp_woodmen_scout|Esploratore dei Boschi
 trp_woodmen_scout_pl|Esploratori dei Boschi
 trp_woodmen_archer|Arciere dei Boschi
 trp_woodmen_archer_pl|Arcieri dei Boschi
-; trp_fell_huntsmen_of_mirkwood|Night Stalker of Mirkwood
-; trp_fell_huntsmen_of_mirkwood_pl|Night Stalkers of Mirkwood
+trp_fell_huntsmen_of_mirkwood|Cacciatore Notturno di Bosco Atro
+trp_fell_huntsmen_of_mirkwood_pl|Cacciatori Notturni di Bosco Atro
 trp_beorning_vale_man|Uomo di Beorn
 trp_beorning_vale_man_pl|Uomini di Beorn
 trp_beorning_warrior|Guerriero di Beorn
 trp_beorning_warrior_pl|Guerrieri di Beorn
-; trp_beorning_tolltacker|Beorning Toll-Taker
-; trp_beorning_tolltacker_pl|Beorning Toll-Takers
+trp_beorning_tolltacker|Gabelliere di Beorn
+trp_beorning_tolltacker_pl|Gabellieri di Beorn
 trp_beorning_sentinel|Sentinella di Beorn
 trp_beorning_sentinel_pl|Sentinelle di Beorn
 trp_beorning_warden_of_the_ford|Guardiani del Guado di Beorn
-; trp_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
+trp_beorning_warden_of_the_ford_pl|Custodi del Guado di Beorn
 trp_beorning_carrock_lookout|Vedetta della Carroccia di Beorn
 trp_beorning_carrock_lookout_pl|Vedette della Carroccia di Beorn
 trp_beorning_carrock_fighter|Combattente della Carroccia di Beorn
@@ -80,7 +80,7 @@ trp_dale_militia|Miliziano di Dale
 trp_dale_militia_pl|Miliziani di Dale
 trp_dale_man_at_arms|Armigero di Dale
 trp_dale_man_at_arms_pl|Armigeri di Dale
-; trp_laketown_scout|Dale Scout
+trp_laketown_scout|Esploratore di Dale
 trp_laketown_scout_pl|Esploratori di Dale
 ; trp_laketown_bowmen|Dale Bowman
 ; trp_laketown_bowmen_pl|Dale Bowmen

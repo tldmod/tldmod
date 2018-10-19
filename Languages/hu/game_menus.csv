@@ -19,12 +19,12 @@ mno_warg_battle_scenario|Varg Csata Tesztelés
 mno_build_your_own_scene|**Alkosd meg saját csatajelenetedet az Utolsó Napok-hoz.
 menu_tutorial|^^Az Utolsó Napok rengeteg funkcióval rendelkezik ami ismeretlen az eredeti M&B-hez képest. Ezek megvannak határozva a hozzácsatolt, részletes, spoiler nélküli PDF kiadásban.  Az alapvető játék mechanikák megtanulásához kérjük használd az Eredeti modult.
 menu_tutorial|^^Az Utolsó Napok rengeteg funkcióval rendelkezik ami ismeretlen az eredeti M&B-hez képest. Ezek megvannak határozva a hozzácsatolt, részletes, spoiler nélküli PDF kiadásban.  Az alapvető játék mechanikák megtanulásához kérjük használd az Eredeti modult.
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_tutorial_1|Oktatás #1: Alapvető mozgás és fegyverválasztás. {s1}
+mno_tutorial_2|Oktatás #2: Harc pajzzsal. {s2}
+mno_tutorial_3|Oktatás #3: Harc pajzs nélkül. {s3}
+mno_tutorial_3b_door|következő szint
+mno_tutorial_4|Oktatás #4: Lovaglás lovon vagy wargon. {s4}
+mno_tutorial_5|Oktatás #5: Parancsosztás egy csapat katonának. {s5}
 mno_go_back_dot|Vissza.
 mno_action_view_troop_trees|Egység-fák megtekintése
 mno_view_upkeep_costs|Fenntartási költségek megtekintése.
@@ -101,7 +101,7 @@ menu_choose_gender|^^^^^^^^^Nemed?
 mno_start_male|Férfi
 mno_start_female|Nő
 mno_proc|Szokásos eljárás
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+menu_start_as_one|^^^^^^^^^^Milyen típusú katona vagy?
 ; mno_start_default|Become a {s23} (Default)
 ; mno_start_up1|Become a {s21} (Easy)
 ; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   

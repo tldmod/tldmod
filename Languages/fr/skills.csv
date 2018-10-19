@@ -4,10 +4,10 @@ skl_leadership|Commandement
 skl_leadership_desc|Chaque point augmente le nombre de soldats que le personnage peut commander de 5, augmente le moral du groupe et diminue la solde des troupes de 5%%. (Compétence du commandant)
 skl_prisoner_management|Gestion de prisonniers
 skl_prisoner_management_desc|Chaque niveau de cette compétence augmente le nombre maximum de prisonniers que le personnage peut détenir de %d. (Compétence du commandant)
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_persuasion|Vie Forestière
+skl_persuasion_desc|La capacité de survivre dans les régions sauvages et les plier à votre volonté. Cette compétence influence la capacité de votre groupe à se cacher des ennemis, et la vitesse de votre groupe dans les forêts. (Compétence de groupe) 
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Premiers secours
 skl_first_aid_desc|Les héros récupèrent 5%% des points de vie perdus pendant les batailles par niveau de compétence. (Compétence du groupe)
 skl_surgery|Chirurgie

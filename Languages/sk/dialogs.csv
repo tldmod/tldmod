@@ -1,5 +1,5 @@
 dlga_start:mutiny_pretalk_1|Zdravím, veliteľ {playername}. Čujte..^Chlapi sa sťažujú! Chcú viac zábavy, menej pochodovania.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Späť do rady, červ! Sme vo vojne a já som tvoj veliteľ.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Späť do rady, červ! Sme vo vojne a ja som tvoj veliteľ.
 dlga_mutiny_pretalk_2:close_window|Jak chceš, veliteľ. Jak chceš...
 dlga_start:mutiny_talk_1|Zdravíčko, veliteľ. Počúvajte... Chlapi nie sú veľmi spokojný, vlastne vôbec. ^Málo ľudského mäsa, málo zábavy, ^Chlapi hovoria, že nie ste veliteľ na nič !
 dlga_mutiny_talk_1:mutiny_talk_2|Čože? Vzbura počas vojny? ^To sa trestá smrťou, červ!
@@ -24,13 +24,13 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Myslím, že už som
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Viem. Prišiel som z ďaleka! Som hobit, {pane/paní}, z Kraja.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, to musí byť môj drahý bratranec! Pútnik Bral, či Pipin, ako ho prezývajú. Sme hobiti, {pane/paní}, a prišli sme z Kraja, obaja! Starý dobrý Pipin, zaujímalo by ma ako sa mu darí v Minas Tirith.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Ach, to musí byť môj drahý bratranec! Chicholm Brandylen, alebo Chicho, ako ho prezývajú. Sme hobiti, {pane/paní}, a prišli sme z Kraja, obaja! Starý dobrý Chicholm, zaujímalo by ma ako sa mu darí v Edorase
-; dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|May I ask a favour of you, {my lord/my lady}.
-; dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Of course, {s1}. What is it?
-; dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.
-; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|I will be passing by {s1} and will be glad to pass on this message to your cousin.
-; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|I'm sorry, {s1}, but I do not have the time.
-; dlga_hobbit_general_talk_ask_accept:close_window|Thanks! {s1}
-; dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|I understand. I'll send it to the next caravan to {s1} then.
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Môžem požiadať o láskavosť, {my lord/my lady}.
+dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Pravdaže, {s1}. Čo potrebuješ?
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Mohol by si Doručiť list môjmu bratrancovi, {s1}? Jeho lokácia je {s2}, {s3}, v službe {s4}.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Budem prechádzať popri {s1} a veľmi rád odovzdám túto správu vášmu bratrancovi.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Prepáč, {s1}, mám len dve nohy ktoré nestačia na prácu ktorú teraz vykonávam, možno nabudúce.
+dlga_hobbit_general_talk_ask_accept:close_window|Dakujem! {s1}
+dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Rozumiem. Pošlem to ďalším karavanom do {s1}.
 dlga_hobbit_general_talk_3:close_window|Tak zatiaľ zbohom.
 dlga_start:hobbit_merry_talk_met.1|Vitaj späť, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Vitaj späť, {playername}!
@@ -66,7 +66,7 @@ dlga_start:close_window.3|Mmmrhrrhmm?
 dlga_start:looters_2_join|Skloň sa pred mocou {s4} a slúz mi !
 dlga_looters_2_join:close_window|Budeme počúvať, pane.
 dlga_start:close_window.4|^^VRRRRRR!^^
-; dlga_start:close_window.5|^^GROWL!^^\t\t\t\t\t\t\t\t\t
+dlga_start:close_window.5|^^GHRRR^^\t\t\t\t\t\t\t\t\t
 dlga_start:member_castellan_talk|Áno, {playername}?  Čo pre teba môžem urobiť ?
 dlga_member_castellan_pretalk:member_castellan_talk|Ešte niečo ?
 dlga_member_castellan_talk:member_review_castle_garrison|Chcem si prezrieť posádku hradu.
@@ -220,10 +220,10 @@ dlga_lord_start:lord_generic_mission_completed.4|Spozoroval som plamene šľahaj
 dlga_lord_start:raid_village_failed|Všimli sme si niekoľkých ľudí uháňajúcich od {12}. A ty sa ešte opovažuješ prísť sem a vystavovať sa, {playername}?. ^^Vojna sa blíži, ale s takýmito neúspechmi môžeš byť jej prvou obeťou. 
 dlga_raid_village_failed:close_window|Nabudúce už bude, pripravený.
 ; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
-; dlga_lord_start:kill_quest_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
+dlga_lord_start:kill_quest_failed|Dopočul som sa že si neuspel. Sklamal si ma, {playername}.
 ; dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
 dlga_kill_quest_failed:close_window|Nabudúce už budem lepšie pripravený.
-; dlga_lord_start:lord_follow_spy_completed|{s4}
+dlga_lord_start:lord_follow_spy_completed|{s4}
 dlga_lord_start:lord_follow_spy_half_completed|Do pekla s tebou! Chcel som DVOCH väzňov, {playername} -- a ty si mi priniesol len ďalšie zbytočné starosti! Už viem všetko, čo vedel špeh, ale bol to manipulátor ktorého som chcel. Tu máš, za polovičnú prácu polovičná mzda. Zober si to a zmizni.
 dlga_lord_start:lord_follow_spy_half_completed.1|Žiadal som ťa o dvoch zajatcov, {playername}, nie jedného. Dvoch. No aj tak, myslím, že sa ti podarilo zajať manipulanta, ten bol dôležitý viac. Špeh sa neodváži vrátiť a bude celkom zbytočný pre pána, ktorému slúžil. Je to lepšie než nič. No dúfam, že chápeš, keď ti zaplatím len polovicu sľúbenej odmeny za polovičný úspech.
 dlga_lord_start:lord_follow_spy_failed|Ty si úplne neschopný , {playername}, a hlavne nespoľahlivý. Zlyhať v zajatí špeha A jeho manipulanta dáva úplne nový rozmer slovu zlyhať. Zabudni na nejakú odmenu. Neurobil si nič pre to, aby si si ju zaslúžil.
@@ -232,10 +232,10 @@ dlga_lord_follow_spy_completed:lord_pretalk|Ďakujem, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm. Ako si želáš, {s65}.
 ; dlga_lord_start:lord_generic_mission_completed.7|I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.
 ; dlga_lord_start:lord_defend_refugees_failed|{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...
-; dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Forgive me, {s65}, I was unable to defend them.
+dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Odpusť mi, {s65}, Nepodarilo sa mi ich ochrániť.
 ; dlga_lord_defend_refugees_failed_1a:lord_pretalk|It is the innocent that suffer the most in wars. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
 ; dlga_lord_start:lord_defend_refugees_half_completed|I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
-; dlga_lord_defend_refugees_half_completed:lord_pretalk|I will be more prepared next time, my lord. 
+dlga_lord_defend_refugees_half_completed:lord_pretalk|Nabudúce sa lepšie pripravím, pane.
 ; dlga_lord_start:lord_generic_mission_completed.8|I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.
 ; dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?
 ; dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|They were slippery, master. I was unable to track them down.
@@ -290,14 +290,14 @@ dlga_lord_talk:lord_request_mission_ask|Nemáš pre mňa nejakú prácu ?
 ; dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|I ventured deep into the Mines of Moria and found record of Balin's company.
 ; dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|You speak of my kin as though they are a memory. Is it so?
 ; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...
-; dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'We cannot get out. We cannot get out...They are coming.'
+dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'Nedostaneme sa z tadeto. Nemôžeme ujsť...Prichádzajú.'
 ; dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.
 ; dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|You have done Erebor a great service, {playername}, and your deed will not go unrewarded.
-; dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Thank you, {s3}.
-; dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|What will you do now?
-; dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.
+dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Ďakujem, {s3}.
+dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Čo urobíš teraz?
+dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|Nenecháme vraždy našich vlastných bez odpovedi! Prinesieme spád a smrť tým ktorý nám ublížili. Od najvyššieho vrchu Mt. Gundabádu až do najhlbších kútov Khazad-dûmu, Hmlové Vrchy budú Nasiaknuté čiernou krvou goblinov!
 ; dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, I wish to help {s4} people avenge Balin and his company.
-; dlga_dwarf_lord_book_give_i:lord_pretalk|I wish you good luck with that.
+dlga_dwarf_lord_book_give_i:lord_pretalk|Veľa šťastia s tým.
 ; dlga_dwarf_lord_avenge:close_window|Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.
 dlga_lord_talk:find_lost_spears_permission|Môj pane, prajem si vstúpiť do Osamelej Hory. Hľadám stratené kopije Kráľa Bladorthina.
 dlga_find_lost_spears_permission:lord_pretalk|Už som ti udelil povolenie, {playername}.
@@ -309,13 +309,13 @@ dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Veľmi zaujímavé. Tento starod�
 dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|V mechu bola i táto helma z Rhunu. Prezradí nám to viac o tom čo sa stalo s kopijami?
 ; dlga_tell_dorwinion_sack_3:lord_pretalk|Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for. NOTE: THIS QUEST IS NOT YET COMPLETED. TO BE CONTINUED.
 ; dlga_lord_talk:lord_healer_wound_ask|I have heard that you were a great healer. Is this true, and can you help me?
-; dlga_lord_healer_wound_ask:lord_pretalk|{s1}
-; dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
+dlga_lord_healer_wound_ask:lord_pretalk|{s1}
+dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
 ; dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
 ; dlga_lord_healer_wound_ask_check:lord_healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
 ; dlga_lord_healer_wound_ask_check:lord_pretalk|Not right now.
-; dlga_lord_healer_wound_heal:lord_healers_wound_check|{s1}
-; dlga_lord_healer_injured_ask:lord_healers_injured_check|{s1}
+dlga_lord_healer_wound_heal:lord_healers_wound_check|{s1}
+dlga_lord_healer_injured_ask:lord_healers_injured_check|{s1}
 ; dlga_lord_healers_injured_check:lord_healers_injured_heal|Yes, attend to us.
 ; dlga_lord_healers_wound_check:lord_healers_wound_heal|Yes, attend to us.
 ; dlga_lord_healers_wound_check:lord_pretalk|Not right now.
@@ -828,7 +828,7 @@ dlga_mayor_deliver_iron_completed:close_window|Robím čo môžem.
 ; dlga_mayor_sea_battle_yes:close_window|Good. Have your troops board the ship now, we will set sail soon.
 ; dlga_mayor_sea_battle_no:close_window|Hurry, we don't have much time before we must set sail.
 ; dlga_mayor_talk:mayor_reinforced_center_finished|I have reinforced {s3} as you have asked me to.
-; dlga_mayor_talk:kill_quest_bandits_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
+dlga_mayor_talk:kill_quest_bandits_failed|Dopočul som sa že si neuspel. Sklamal si ma, {playername}.
 dlga_kill_quest_bandits_failed:close_window|Nabudúce už budem lepšie pripravený.
 dlga_mayor_talk:mayor_deliver_food|Tu je vaše jedlo, {reg9} kusov.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Veľmi dobrá práca,  {playername}, naše sýpky sú zas plné a nikdo zatiaľ nebude hladovať. 

@@ -67,7 +67,7 @@ qst_deliver_food|Rifornisci {s3} con {reg5} unità di cibo
 qst_deliver_food_text|Il {s9} di {s3} ti ha chiesto di consegnargli {reg5} unità di cibo in 10 giorni.
 qst_deliver_iron|Rifornisci {s3} con {reg5} unità di {s6}
 qst_deliver_iron_text|Il {s9} di {s3} ti ha chiesto di consegnargli {reg5} unità di {s6}.
-; qst_tld_introduction|Go to your faction leader.
+qst_tld_introduction|Recati dal capo della tua fazione.
 qst_tld_introduction_text|Nessuno
 qst_treebeard_kill_orcs|Sconfiggi la compagnia di orchi taglialegna
 qst_treebeard_kill_orcs_text|Barbalbero vuole che trovi e sconfiggi gli orchi che stanno disturbando Fangorn.

@@ -102,9 +102,9 @@ mno_start_male|Mężczyzna
 mno_start_female|Kobieta
 mno_proc|Postępować normalnie.
 menu_start_as_one|^^^^^^^^^^Jakim jesteś typem Żołnierza?
-mno_start_default|Stać się {s23}. (Domyślnie)
-mno_start_up1|Stać się {s21}. (Łatwy)
-mno_start_up2|Stać się {s22}. (Łatwy)
+mno_start_default|Stań się {s23}. (Domyślnie)
+mno_start_up1|Stań się {s21}. (Łatwy)
+mno_start_up2|Stań się {s22}. (Łatwy)
 mno_continue|Dalej...
 menu_character_report|^^^^^Morale oddziału: {reg8}^Limit wielkości oddziału: {reg7}^
 menu_camp|^^^^Rozbijasz obóz.{s2}^^Co chcesz zrobić?
@@ -118,7 +118,7 @@ menu_game_options|^^^^^^^^Naciśnij opcję aby ją zmienić:
 mno_game_options_war_level_start|Wojna rozpoczyna się na poziomie: {s1}.\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_game_options_restrict_items|Restrykcje przedmiotów: {s7}
 mno_game_options_formations|Formacje bitewne oraz AI: {s7}
-mno_game_options_siege_ai|Zaawansowane oblężenie AI: {s7}
+mno_game_options_siege_ai|Zaawansowana AI oblężenia: {s7}
 mno_game_options_town_menu|NPC zawsze dostępni z poziomu menu miasta: {s7}
 mno_game_options_cutscenes|Cutscenki: {s7}
 mno_game_options_injuries|Urazy dla towarzyszy: {s7}.
@@ -135,7 +135,7 @@ mno_game_options_start_back|Wróć.
 menu_camp_tweaks|^^^^^^^^Wybierz opcję, którą chcesz dostosować.
 mno_tweak_options_compat|Usprawnienia zgodności...
 mno_tweak_options_strat|Usprawnienia strategii...
-mno_tweak_options_battlefield_ai|Pole bitewne AI usprawnia. . .\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_tweak_options_battlefield_ai|Usprawnienia bitewnego AI. . .\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_tweak_options_back|Wróć do menu opcji.
 menu_camp_compat_tweaks|^^^^^^^^Kliknij opcję, aby zmienić (przytrzymaj shift, aby zmniejszyć):^(te opcje mają poprawić wydajność i nie są oszustwem)
 mno_game_options_compat_party|Maksymalna liczba grup: {s1}
@@ -302,7 +302,7 @@ menu_tld_player_defeated|^^^^^Nagle w tyle swojej głowy odczuwasz przerażając
 menu_recover_after_death_fangorn|Budzisz się. Las jest wciąż wokół ciebie. Każda kość boli. Żyjesz, cudem. ^^To było klęską, ale przynajmniej byłeś w stanie zobaczyć, co się stało. Jeśli wiesz, co dzieje się w tym przeklętym lesie, ^Wiesz, co się w nim dzieje i ocalałeś, aby to powiedzieć. Czy ktokolwiek wam uwierzy?
 menu_recover_after_death_moria|^^^^^^Odzyskujesz przytomność. Leżycie na miękkiej ziemi, na twarzy wieje świeże powietrze. Jesteś na zewnątrz!^Orkowie musieli cię zabrać za martwego.
 mno_whatever|Wstawaj
-menu_recover_after_death_default|\n^^^^^^Odzyskasz przytomność. Leżymy w miejscu, w którym upadliśmy. Wrogowie musieli cię zabrać na śmierć i tam cię zostawić. Wydaje się jednak, że żadna z ran nie była zabójcza i choć czujesz się okropnie, dowiadujesz się, że nadal możesz chodzić. Wstajesz i starasz się szukać innych ocalałych.
+menu_recover_after_death_default|^^^^^^Odzyskasz przytomność. Leżymy w miejscu, w którym upadliśmy. Wrogowie musieli cię zabrać na śmierć i tam cię zostawić. Wydaje się jednak, że żadna z ran nie była zabójcza i choć czujesz się okropnie, dowiadujesz się, że nadal możesz chodzić. Wstajesz i starasz się szukać innych ocalałych.
 menu_recover_after_death_town|^^^^Odzyskujesz świadomość. Znajdujesz się na obrzeżach miasta i wciąż żyjesz. Nikogo nie ma w pobliżu dlatego podnosisz się i wydostajesz z miasta. Wygląda na to że żadna z ran nie była śmiertelna i mimo że czujesz się paskudnie to wciąż możesz chodzić.
 menu_recover_after_death_town_alone|Odzyskasz przytomność i znajdziesz się blisko granicy miasta. Ty żyjesz! Nikt nie jest w pobliżu i można skorzystać z okazji, aby wyciągnąć się poza miasto. Znajdą Cię Twoi towarzysze. Wydaje się, że żadna z ran nie była śmiertelna i choć czujesz się okropnie, dowiadujesz się, że nadal możesz chodzić.
 menu_notification_center_under_siege|{s1} jest pod oblężeniem wrogich oddziałów, którymi dowodzi {s2} ({s3})!
@@ -311,7 +311,7 @@ menu_notification_total_defeat|^^^^^Dla Ciebie to już koniec Wojny o Pierście�
 menu_notification_your_faction_collapsed|^^^^^Twoja {s11} ojczyzna została pokonana!^^^^^Twoi, pozostali sprzymierzeńcy pozostają w stanie wojny. Przyłączając się do kogokolwiek z {s11}, możesz pomóc swojej stronie wygrać.
 menu_notification_faction_defeated|^^^^^Pokonano {s1}!^{s1} już nie istnieje!
 menu_ruins|^^^^Gdy zbliżasz się do {s1}. Niegdyś silne obozowisko zostało zrównane z ziemią, choć wciąż widać ślady umocnień i rozrzuconej, zardzewiałej broni.
-menu_legendary_place|\n^^^^Ty postępowałeś zgodnie z pogłoskami i znalazłeś {s1}. Teraz możesz odkryć to miejsce i przekonać się na własne oczy, czy plotki są prawdziwe.
+menu_legendary_place|^^^^Ty postępowałeś zgodnie z pogłoskami i znalazłeś {s1}. Teraz możesz odkryć to miejsce i przekonać się na własne oczy, czy plotki są prawdziwe.
 mno_explore|Zbadaj to miejsce.
 menu_ring_hunter_lair|^^^^Podążałeś za Łowcami Pierścienia przez las Mirkwood i dotarłeś do {s1}. Widzisz ich przygotowujących się do opuszczenia z skrzynią.
 mno_attack_lair|Zaatakuj teraz.
@@ -320,11 +320,11 @@ menu_gondor_reinforcement_event|^^^^^Zapalają się sygnały nawigacyjne z Gondo
 mno_gondor_reinforcement_event_close|Zamknij
 menu_gondor_beacons|Spoglądasz na {s1}, jeden z sygnałów ostrzegawczych Gondora, używany do podniesienia alarmu w północnym i południowym Gondorze.
 mno_gondor_beacons_close|Odejdź...
-menu_player_added_to_war_council|\n^^^^^Przyszedł i poinformował, że teraz, jako {s24}, {s2} poprosił Cię o członkostwo w jego Radzie Wojennej. Możecie teraz zaproponować strategie, które mogą mieć wpływ na przebieg tej wojny.
+menu_player_added_to_war_council|^^^^^Przyszedł i poinformował, że teraz, jako {s24}, {s2} poprosił Cię o członkostwo w jego Radzie Wojennej. Możecie teraz zaproponować strategie, które mogą mieć wpływ na przebieg tej wojny.
 mno_player_added_to_war_council_close|Zamknij
-menu_player_added_to_siege_reports|\n^^^^A powiadomił Cię, że teraz, jako {s24}, będziesz otrzymywać raporty, gdy {s2} oblężymy centrum lub gdy centra {s2} będą oblężone.
+menu_player_added_to_siege_reports|^^^^A powiadomił Cię, że teraz, jako {s24}, będziesz otrzymywać raporty, gdy {s2} oblężymy centrum lub gdy centra {s2} będą oblężone.
 mno_player_added_to_siege_reports_close|Zamknij
-menu_player_added_to_allow_follow|\n^^^^^Przyszedł i poinformował, że teraz, jako {s24}, będziesz miał możliwość podążania za Tobą poleceniem {s2}, łącznie dla maksymalnej liczby naśladowców {s55
+menu_player_added_to_allow_follow|^^^^^Przyszedł i poinformował, że teraz, jako {s24}, będziesz miał możliwość podążania za Tobą poleceniem {s2}, łącznie dla maksymalnej liczby naśladowców {s55}
 mno_player_added_to_allow_follow_close|Zamknij
 menu_center_besieged_event|^^^^Wiadomość informująca, że {s1} było oblężone przez {s2} z {s3}.
 mno_center_besieged_event_close|Zamknij
@@ -337,27 +337,27 @@ mno_go_your_way|Zostaw ich samych
 mno_defend_villagers|Broń mieszkańców wioski!
 mno_raid_villagers|Splądruj wioskę!
 mno_go_away|Odejdź i przegrupuj się na chwilę obecną.
-menu_scout_camp_quest|\nW pobliżu znajduje się obóz zwiadowców. Przygotowujesz swoie wpjsko do zaatakowania ich.
+menu_scout_camp_quest|W pobliżu znajduje się obóz zwiadowców. Przygotowujesz swoie wpjsko do zaatakowania ich.
 mno_attack_scout_camp|Atakuj obóz zwiadowców!
 menu_sea_battle_quest|Spotykasz flotę wrogą. Statki są blisko, a marynarze rzucają deski. . .
-mno_sb_defend_the_town|Wpuść ich na pokład! Zniszcz ich flotę!
+mno_sb_defend_the_town|Do abordażu! Zniszcz ich flotę!
 mno_sb_attack_the_town|Próbują nas przechwycić! Obrona floty!
-menu_camp_field_ai|\nKliknij na opcję przełączania. ^^^^Turning Off One or More Options Will Improve Performance (FPS) (Wyłączanie jednej lub więcej opcji zwiększy wydajność (FPS)).
-mno_lord_field_ai|Panowie ulepszyli pole bitwy AI: {s7}.
-mno_horse_archer_field_ai|Łucznicy koni ulepszyli pole bitwy AI: {s7}.
+menu_camp_field_ai|^^^^^ Kliknij opcję, aby przełączyć. ^^^ Wyłączenie jednej lub więcej opcji poprawi wydajność (FPS)
+mno_lord_field_ai|Lordowie mają ulepszone bitewne AI: {s7}.
+mno_horse_archer_field_ai|Konni Łucznicy mają ulepszone bitewne AI: {s7}.
 mno_vs_orcs_field_ai|Łucznicy mają lepszy cel przeciwko orkom (nie celują nad głowicami orków): {s7}.
 mno_battlefield_animals|Towarzysze zwierząt innych niż wojsko / konie w bitwie: {s7}.
 mno_defend_refugees|Uważaj na rajderów. . .
-mno_attack_refugees|\nAtakuj uchodźców. . .
-mno_leave_refugees|Zostaw je na teraz. . .
+mno_attack_refugees|Atakuj uchodźców. . .
+mno_leave_refugees|Zostaw ich na razie. . .
 mno_evil_war_tut_continue|Dalej...
 menu_guardian_party_quest|{s8} wysyła wiadomość, że Isengard jest na kolanach i przygotował swoje ostatnie tchnienie. Życzy on ci przyłączenia się do tej ostatniej bitwy z armiami Isengarda. Musisz przynieść co najmniej {reg13} żołnierzy do wojska, i są instruowani, aby podnieść więcej wojowników z należnym pośpiechem, jeśli nie masz wystarczająco dużo.
-mno_guardian_party_reject|Wyślij wiadomość,nie możesz do niego dołączyć.
-mno_guardian_party_send_word|Wyślij wiadomość, że wkrótce do niego dołączysz
-menu_alternate_training_fight|Będziesz miał do czynienia z przeciwnikami {reg5}. Jesteś gotowy?
+mno_guardian_party_reject|Wyślij wiadomość, że nie możesz do niego dołączyć.
+mno_guardian_party_send_word|Wyślij wiadomość, że wkrótce do niego dołączysz.
+menu_alternate_training_fight|Będziesz miał do czynienia z {reg5} przeciwnikami. Jesteś gotowy?
 mno_training_continue|Rozpocząć szkolenie. . .
 menu_alternate_training_conclusion|{s5}
-mno_alternate_training_retry|\nSpróbuj ponownie. . .
+mno_alternate_training_retry|Spróbuj ponownie. . .
 mno_alternate_training_finish|Wyjdź z areny. . .
 menu_custom_battle_choose_faction1|^^^^^^^^^^Wybierz swoją frakcję:
 mno_good_equal|Dobra frakcja.
@@ -387,7 +387,7 @@ mno_next_rescue_scene_door|Kontynuuj dalej!
 mno_pick_troops1|Wybierz kompanów na tą misję, {reg0}  wybrano
 menu_pick_troops|Kogo zabrałbyś ze sobą na misję?    Narazie wybrałeś {reg0} kompanów. Możesz zabrać maksymalnie dziesięciu ze sobą.
 mno_go_forward|Zakończ wybieranie kompanów i przejdź dalej.
-menu_burial_mound|Zbliża się pan do kopca pochówku {s1} z {s2}. Jest zwałowana z karbowaną bronią jego upadłych wrogów.
+menu_burial_mound|Zbliżasz się do kopca pogrzebowego {s1} z {s2}. Piętrzy się na nim wyszczerbiona broń pokonanych wrogów.
 mno_pay_respects|Uklęknij i oddaj należyty szacunek.
 mno_swear_oath|Przysięgnij zemstę!
 mno_despoil|Zbezcześć to miejsce 
@@ -395,7 +395,7 @@ mno_leave_mound|Opuść ten kopiec.
 menu_burial_mound_respects|Uklęknij i oddaj szacunek {s1}, cicho modląc się o szybką podróż do życia pośmiertnego. Nie zostało tu już nic do zrobienia.
 menu_burial_mound_oath|Głośno przysięgasz pomścić śmierć {s4}.   Będziesz nieustannie szukasz sił {s3} aby je zniszczyć. Twoje słowa wędrują daleko na wietrze i kto wie, być może dotarły nawet za morze?
 menu_burial_mound_despoil|Pomnik rozbijasz własnymi rękoma na {s1}, a same kamienie defoliujesz przekleństwami, spadającymi śpiewami i niewypowiedzianymi czynami. Twoi naśladowcy spadają z powrotem w strachu przed zmarłymi, ale wydaje się, że odnowiony szacunek dla niegodziwości.
-menu_funeral_pyre|\nPodchodzisz do zwęglonych resztek stosu pogrzebowego {s3} z {s2}. Tu jego trup został uroczyście spalony przez osobistych ochroniarzy. Nie pozostaje nic wartościowego.
+menu_funeral_pyre|Podchodzisz do zwęglonych resztek stosu pogrzebowego {s3} z {s2}. Tu jego trup został uroczyście spalony przez osobistych ochroniarzy. Nie pozostaje nic wartościowego.
 mno_leave_pyre|Odejdź od stosu.
 menu_town_ruins|W momencie gdy się zbliżasz, zauważasz, że {s1} to {s2}
 mno_ruin_menu_0|Zbadaj to miejsce.

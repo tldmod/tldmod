@@ -1,37 +1,37 @@
-ui_at_learning_limit|(en el límite de aprendizaje para esta raza)
-ui_not_enough_skill_points_to_learn|(sin suficientes puntos de habilidad para aprender)
-ui_not_enough_attributetype_to_learn_this_skill|(sin suficiente %s para aprender esta habilidad)
+ui_at_learning_limit|(límite de aprendizaje alcanzado para esta raza)
+ui_not_enough_skill_points_to_learn|(puntos de habilidad insuficientes para aprender)
+ui_not_enough_attributetype_to_learn_this_skill|(%s insuficiente para aprender esta habilidad)
 ui_explanation_agility|Agilidad: Cada punto proporciona cinco puntos de armas e incrementa la velocidad del arma en un 0.5%. Las siguientes habilidades no pueden desarrollarse por encima de 1/3 de Agilidad: Escudo, Atletismo, Maestro de armas, Cabalgar, Arquero montado, Saquear.
 ui_retreated_battle|%s ha huido del campo de batalla.
-ui_riding_skill_not_adequate_to_mount|(Habilidad de cabalgar no adecuada para montar)
+ui_riding_skill_not_adequate_to_mount|(Habilidad de cabalgar demasiado baja)
 ui_camp|Acciones
-ui_tutorial_inventory|En «The Last Days» necesitas Puntos de Recursos para conseguir equipamiento. Estos Puntos miden el apoyo de una facción para mantenerte bien surtido y limitan los recursos obtenibles dependiendo de tus proezas.
+ui_tutorial_inventory|En «The Last Days» necesitas Puntos de Recursos para conseguir equipamiento. Estos Puntos son una medida del esfuerzo que está dispuesta a hacer una facción para proporcionarte suministros, y de qué cantidad de sus recursos te permite disponer.
 ui_you_dont_have_value|No tienes: %s.
-ui_merchant_cant_afford_value|¡%s: Nos estás dando más de lo que necesitamos! Tal vez sea mejor que compres algo más (estás ofreciendo bienes valorados en %s, nosotros sólo podemos tener %s).
-ui_merchant_pay_whatever|No, no necesito para nada, quédatelo.
+ui_merchant_cant_afford_value|¡%s: Nos estás dando más de lo que necesitamos! Tal vez debería quedarte con algo más (estás ofreciendo bienes valorados en %s, nosotros sólo podemos dar%s).
+ui_merchant_pay_whatever|No, no necesito nada más, quédatelo.
 ui_horse|Montura
-ui_reclaim_your_sold_goods|¡Pedir la devolución de lo ofrecido antes de darlo!
-ui_return_your_bought_goods|¡Devolver los bienes que te has llevado antes de dar eso!
-ui_return_price|Precio de vuelta: %d P. de Rec.
+ui_reclaim_your_sold_goods|¡Reclama lo que ya has dado antes de dar eso!
+ui_return_your_bought_goods|¡Devuelve los bienes que has tomado antes de dar eso!
+ui_return_price|Devolución: %d P. de Rec.
 ui_sell_price|Precio de venta: %d P. de Rec.
-ui_reclaim_price|Precio de vuelta: -%d P. de Rec.
+ui_reclaim_price|Devolución: -%d P. de Rec.
 ui_buying_price|Precio de compra: -%d P. de Rec.
-ui_notification_riding_skill_not_enough|No tienes habilidad suficiente para montar esta bestia.
-ui_notification_payment_value|Tienes que pagar %s.
+ui_notification_riding_skill_not_enough|Habilidad de cabalgar insuficiente para montar esta bestia.
+ui_notification_payment_value|Consumes %s.
 ui_notification_payment_receive_value|Consigues %s.
 ui_weekly_cost_value|Coste de mantenimiento: %s
-ui_sell|Vender
+ui_sell|Entregar
 ui_hire|Reclutar
 ui_notification_cant_hire|(sin P. de Rec. suf. para reclutar)
-ui_joining_cost_weekly_wage|Coste de unirse: %d Pts. de Rec, coste semanal: %d Pts. de Rec.
+ui_joining_cost_weekly_wage|Reclutamiento: %d Pts. de Rec, coste semanal: %d Pts. de Rec.
 ui_weekly_wage|Coste de mantenimiento: %d P. de Rec.
-ui_price|Precio: %d P. de Rec.
+ui_price|Valor: %d P. de Rec.
 ui_cant_reload_this_weapon_on_horseback|No se puede recargar a lomos de una montura.
-ui_delivered_number_damage_to_horse|La montura ha sufrido %d puntos de daño.
+ui_delivered_number_damage_to_horse|Has hecho %d puntos de daño a la montura.
 ui_horse_charged_for_number_damage|La montura embiste con %d puntos de daño.
 ui_horse_received_number_damage|La montura ha recibido %d puntos de daño.
-ui_horse_fell_dead|Han acabado con tu montura...
-ui_horse_crippled|Montura herida...
+ui_horse_fell_dead|La montura ha caido muerta...
+ui_horse_crippled|Montura lisiada...
 ui_you_got_value|Has conseguido %s.
 ui_has_deserted_the_party|ha dejado el grupo.
 ui_have_deserted_the_party|han dejado el grupo.
@@ -43,6 +43,6 @@ ui_hold_fire_e_|¡%s, no disparéis!
 ui_fire_at_will_e_|¡%s, disparad!
 ui_recent_messages|Últimos mensajes
 ui_value_denars|%d ptos. de recursos
-ui_cannot_be_used_on_horseback|No se puede utilizar a lomos de tu montura
+ui_cannot_be_used_on_horseback|No se puede utilizar a lomos de una montura
 ui_upgrade_to_value| Mejorar a %s
-ui_notification_cant_upgrade|(No puedes subir de nivel mientras intercambias tropas)
+ui_notification_cant_upgrade|(No puedes mejorar mientras intercambias tropas)

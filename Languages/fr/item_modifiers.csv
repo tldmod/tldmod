@@ -5,8 +5,8 @@ imod_bent|%s tordu
 imod_chipped|%s ébréché
 imod_battered|%s bosselé
 imod_poor|%s médiocre
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Simple
+imod_old|Ancien
 imod_cheap|%s bon marché
 imod_fine|Excellent %s
 imod_well_made|%s bien fait
@@ -23,7 +23,7 @@ imod_tattered|%s déchiré
 imod_ragged|%s rêche
 imod_rough|%s rêche
 imod_sturdy|%s solide
-; imod_thick|Robust %s
+imod_thick|Robuste
 imod_hardened|%s endurci
 imod_reinforced|%s résistant
 imod_superb|Superbe %s

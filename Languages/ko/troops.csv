@@ -80,20 +80,20 @@ trp_dale_militia|너른골 민병대
 trp_dale_militia_pl|너른골 민병대
 trp_dale_man_at_arms|너른골 보병
 trp_dale_man_at_arms_pl|너른골 보병
-; trp_laketown_scout|Dale Scout
+trp_laketown_scout|너른골 정찰병
 trp_laketown_scout_pl|너른골 순찰자
-; trp_laketown_bowmen|Dale Bowman
-; trp_laketown_bowmen_pl|Dale Bowmen
-; trp_laketown_archer|Dale Archer
-; trp_laketown_archer_pl|Dale Archers
+trp_laketown_bowmen|너른골 활잡이
+trp_laketown_bowmen_pl|너른골 활잡이
+trp_laketown_archer|너른골 궁수
+trp_laketown_archer_pl|너른골 궁수
 ; trp_barding_bowmen_of_esgaroth|Barding Bowman
 ; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen
-; trp_dale_warrior|Dale Swordsman
-; trp_dale_warrior_pl|Dale Swordsmen
-; trp_dale_veteran_warrior|Dale Sergeant
-; trp_dale_veteran_warrior_pl|Dale Sergeants
+trp_dale_warrior|너른골 검사
+trp_dale_warrior_pl|너른골 검사
+trp_dale_veteran_warrior|너른골 고참병
+trp_dale_veteran_warrior_pl|너른골 고참병
 ; trp_dale_marchwarden|Hearthman of Dale
-; trp_dale_marchwarden_pl|Hearthmen of Dale
+trp_dale_marchwarden_pl|로바니온 기수
 trp_dale_pikeman|너른골 창병
 trp_dale_pikeman_pl|너른골 창병
 trp_dale_billman|너른골 미늘창병
@@ -104,8 +104,8 @@ trp_dale_bill_master_pl|너른골 정예 미늘창병
 ; trp_merchant_squire_or_dale_pl|Northmen Retainers
 ; trp_merchant_guard_of_dale|Northmen Auxiliary
 ; trp_merchant_guard_of_dale_pl|Northmen Auxilia
-; trp_merchant_protector_of_dale|Rhovanion Rider
-; trp_merchant_protector_of_dale_pl|Rhovanion Riders
+trp_merchant_protector_of_dale|로바니온 기수
+trp_merchant_protector_of_dale_pl|로바니온 기수
 ; trp_girions_guard_of_dale|Rhovanion Marchwarden
 ; trp_girions_guard_of_dale_pl|Rhovanion Marchwardens
 trp_rhun_tribesman|룬 부족민

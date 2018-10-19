@@ -5,8 +5,8 @@ imod_bent|%s - (Incurvato)
 imod_chipped|%s - (Scheggiato)
 imod_battered|%s - (Malandato)
 imod_poor|%s - (Povero)
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Semplice
+imod_old|Antico
 imod_cheap|%s - (Economico)
 imod_fine|%s - (Fine)
 imod_well_made|%s - (Ben Fatto)
@@ -23,7 +23,7 @@ imod_tattered|%s - (Malandato)
 imod_ragged|%s - (Rozzo)
 imod_rough|%s - (Rozzo)
 imod_sturdy|%s - (Robusto)
-; imod_thick|Robust %s
+imod_thick|Robusto
 imod_hardened|%s - (Indurito)
 imod_reinforced|%s - (Rinforzato)
 imod_superb|%s - (Superbo)

@@ -40,7 +40,7 @@ itm_rhun_horse_e|Rhunský těžký kůň
 itm_rhun_horse_f|Rhunský těžký kůň
 itm_rhun_horse_g|Rhunský těžký kůň
 itm_rhun_horse_h|Rhunský těžký kůň
-; itm_dale_horse|Rhovanion Horse
+itm_dale_horse|Rhovanionský kůň
 itm_dale_warhorse|Dolský válečný kůň
 itm_riv_warhorse|Rivendelský válečný kůň
 itm_riv_warhorse2|Imladriský oř
@@ -67,13 +67,13 @@ itm_wargarmored_2c|Obrněný warg
 itm_wargarmored_3a|Obrněný warg
 itm_warg_reward|Obrovský warg
 itm_axe_a|Severská sekyra
-; itm_axe_b|Northmen Bearded Axe
+itm_axe_b|Severská Bradatice
 itm_axe_c|Severská sekyra
 itm_axe_d|Severská sekyra
 itm_tree_trunk_club_a|Kmen stromu
 itm_tree_trunk_club_b|Kmen stromu
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
+itm_long_bearded_axe|Dlouhá Severská Bradatice
+itm_2_handed_axe|Dlouhá Severská Sekera
 itm_giant_hammer|Velká palice
 itm_giant_mace|Velký palcat
 itm_giant_mace_b|Velký palcát s bodci
@@ -141,7 +141,7 @@ itm_glorfi_bow|Glorfindeilský luk
 itm_lorien_bow|Galadhrimský luk
 itm_isengard_large_bow|Isengardský mohutný luk
 itm_dale_bow|Dolský luk
-; itm_uruk_bow_pl|Strong Orc Bow
+itm_uruk_bow_pl|Silný Skřetí Luk
 itm_mirkwood_bow|Mirkwůdský luk
 itm_dunland_javelin|Dunlandské oštěpy
 itm_orc_throwing_arrow|Šipky orků
@@ -181,7 +181,7 @@ itm_riv_shield_b|Rivendelský štít
 itm_riv_bas_sword|Rivendelský meč bastard
 itm_riv_1h_sword|Rivendelský meč
 itm_riv_riding_sword|Rivendelský jezdecký meč
-; itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword|Rivendellský Lučišnický Meč
 itm_riv_spear|Rivendelské kopí
 itm_riv_armor_light|Rivendelská zbroj
 itm_riv_armor_light_inf|Rivendelská zbroj
@@ -226,14 +226,14 @@ itm_gondor_dolamroth_helm|Dol Amrothska helma
 itm_swan_knight_helm|Labuti prilba rytire
 itm_gondor_lamedon_helm|Lamendonská Helma
 itm_gondor_lamedon_leader_helm|Lamendonská Vysoká Helma
-; itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
-; itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
-; itm_blackroot_footman|Blackroot Vale Jerkin
-; itm_blackroot_warrior|Blackroot Vale Gambeson
-; itm_blackroot_leader|Blackroot Vale Mail
-; itm_blackroot_hood|Black Hood
+itm_blackroot_archer|Morthondský Gambeson s Pláštěm
+itm_blackroot_bowman|Morthondská Kožená Vesta s Pláštěm
+itm_blackroot_footman|Morthondská Kožená Vesta
+itm_blackroot_warrior|Morthondský Gambeson
+itm_blackroot_leader|Morthondská Kroužková Zbroj
+itm_blackroot_hood|Černá Kápě
 itm_dol_hauberk|Dol Amrothske brneni
-; itm_dol_heavy_mail|Dol Amroth Heavy Mail
+itm_dol_heavy_mail|Dol Amrothská Těžká Kroužková Zbroj
 itm_dol_padded_coat|Dol Amrothsky vycpavany kabatec 
 itm_dol_shirt|Dol Amrothska kosile
 ; itm_dol_very_heavy_mail|Dol Amroth Very Heavy Mail
@@ -246,19 +246,19 @@ itm_dol_shoes|Dol Amrothske lehke boty
 ; itm_lamedon_warrior|Lamedon Warrior Armor
 ; itm_lamedon_veteran|Lamedon Veteran Armor
 ; itm_lamedon_vet_warrior|Lamedon Veteran Warrior Armor
-; itm_lamedon_hood|Hood
+itm_lamedon_hood|Kápě
 ; itm_pinnath_archer|Pinnath Gelin Archer Armor
 ; itm_pinnath_footman|Pinnath Gelin Footman Armor
 ; itm_pinnath_leader|Pinnath Gelin Leader Armor
 ; itm_pinnath_vet_footman|Pinnath Gelin Veteran Footman Armor
 ; itm_pinnath_warrior|Pinnath Gelin Warrior Armor
 ; itm_pel_footman|Pelargir Footman Armor
-; itm_pel_jerkin|Pelargir Jerkin
+itm_pel_jerkin|Pelagirská Vesta
 ; itm_pel_leader|Pelargir Leader Armor
 itm_pel_marine|Pelargirsky namornik
 ; itm_pelargir_marine_leader|Pelargir Marine Leader
 ; itm_pelargir_regular|Pelargir Regular
-; itm_pelargir_hood|White Hood
+itm_pelargir_hood|Bílá Kápě
 itm_pelargir_helmet_light|Pelargirska helma
 itm_pelargir_helmet_heavy|Pelargirska tezka helma
 itm_pelargir_greaves|Pelargirske naholeniky
@@ -294,7 +294,7 @@ itm_gondor_citadel_sword|Mec Gondorske citadely
 itm_gondor_cav_sword|Gondorsky jezdecky mec
 ; itm_gondor_spear|Gondorian Spear
 ; itm_gondor_tower_spear|Gondorian Tower Spear
-; itm_gondor_lance|Gondor Lance
+itm_gondor_lance|Gondorské Kopí
 ; itm_loss_axe|Lossarnach Fighting Axe
 ; itm_loss_war_axe|Lossarnach War Axe
 itm_lorien_sword_a|Loriensky dlouhy mec
@@ -306,11 +306,11 @@ itm_lorien_armor_a|Zbroj lorienskeho pesaka
 ; itm_lorien_armor_c|Lorien Royal Archer Armor
 ; itm_lorien_armor_d|Lorien Royal Swordsman Armor
 itm_lorien_armor_e|Plast lorienskeho ochrance
-; itm_lorien_armor_f|Lorien Elite Armor
+itm_lorien_armor_f|Lorienské Elitní Brnění
 itm_lorien_boots|Lorienske boty
 itm_lorien_shield_b|Lorienska paveza
 ; itm_lorien_shield_c|Lorien Kite Shield
-; itm_lorien_round_shield|Lorien Round Shield
+itm_lorien_round_shield|Lorienský Kulatý Štít
 itm_lorien_helm_a|Přilba lorienských lučištníků
 itm_lorien_helm_b|Přilba lorienských lučištníků
 itm_lorien_helm_c|Přilba lorienské pěchoty
@@ -324,8 +324,8 @@ itm_orc_furboot_tall|Skreti kozene boty
 ; itm_orc_tribal_a|Untreated Skin
 ; itm_orc_tribal_b|Untreated Skin
 ; itm_orc_tribal_c|Untreated Skin
-; itm_evil_gauntlets_a|Gauntlets
-; itm_evil_gauntlets_b|Gauntlets
+itm_evil_gauntlets_a|Rukavice
+itm_evil_gauntlets_b|Rukavice
 itm_isen_orc_armor_a|Skreti zbroj ze Zelezneho pasu
 itm_isen_orc_armor_b|Skreti zbroj ze Zelezneho pasu
 itm_isen_orc_armor_c|Skreti zbroj ze Zelezneho pasu
@@ -365,8 +365,8 @@ itm_uruk_pike_b|Skuruti pika
 ; itm_uruk_voulge|Uruk Voulge
 ; itm_uruk_heavy_axe|Uruk Heavy Axe
 itm_isengard_sword|Mec ze zelezneho pasu
-; itm_isengard_axe|Isengard Axe
-; itm_isengard_hammer|Isengard Hammer
+itm_isengard_axe|Sekera Železného Pasu
+itm_isengard_hammer|Kladivo Železného Pasu
 itm_isengard_halberd|Halapartna ze Zelezneho pasu
 ; itm_isengard_mallet|Isengard Mallet
 ; itm_isengard_heavy_axe|Isengard Heavy Axe
@@ -379,7 +379,7 @@ itm_isengard_pike|Pika ze Zelezneho pasu
 itm_wood_club|Dreveny kyj
 itm_twohand_wood_club|Velky dreveny kyj
 ; itm_bone_cudgel|Bone Cudgel
-; itm_skull_club|Skull Club
+itm_skull_club|Palice s Lebkou
 itm_orc_club_a|Skřetí obušek
 itm_orc_club_b|Skřetí obušek
 ; itm_orc_club_c|Spiky Orc Club
@@ -486,8 +486,8 @@ itm_mordor_longsword|Mordorsky mec
 ; itm_gundabad_armor_c|Gundabad Orc Armor
 ; itm_gundabad_armor_d|Gundabad Orc Armor
 ; itm_gundabad_armor_e|Gundabad Orc Heavy Armor
-; itm_gundabad_helm_a|Leather Cap
-; itm_gundabad_helm_b|Leather Helm
+itm_gundabad_helm_a|Kožená Čapka
+itm_gundabad_helm_b|Kožená Helma
 itm_gundabad_helm_c|Gundabadska helma
 itm_gundabad_helm_d|Gundabadska helma
 itm_gundabad_helm_e|Helma vrciho jezdce
@@ -563,7 +563,7 @@ itm_rohirrim_long_hafted_axe|Rohirska sekyra na dlouhem toporu
 ; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
 ; itm_mirkwood_great_spear|Mirkwood Great Spear
 ; itm_mirkwood_war_spear|Mirkwood War Spear
-; itm_mirkwood_short_spear|Mirkwood Spear
+itm_mirkwood_short_spear|Mirkwoodské Kopí
 itm_mirkwood_knife|Bily nuz z Temneho hvozdu
 itm_mirkwood_sword|Mec z Temneho hvozdu
 ; itm_mirkwood_spear_shield_a|Mirkwood Spearman Shield
@@ -777,7 +777,7 @@ itm_dale_shield_d|Dolský štít
 
 ; itm_umb_helm_f|Corsair High Helm
 
-; itm_umb_hood|Black Hood
+itm_umb_hood|Černá Kápě
 
 ; itm_corsair_boots|Corsair Boots
 ; itm_umb_shield_a|Corsair Buckler

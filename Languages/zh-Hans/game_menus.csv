@@ -19,12 +19,12 @@ mno_warg_battle_scenario|座狼测试战
 mno_build_your_own_scene|**建立你的最后之日场景**
 menu_tutorial|^^ 在最后之日中，有部分功能是骑马与砍杀所沒有的。一些细节可以在游戏提示中看到。游戏教程和原版一样。
 menu_tutorial|^^ 在最后之日中，有部分功能是骑马与砍杀所沒有的。一些细节可以在游戏提示中看到。游戏教程和原版一样。
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_tutorial_1|教程#1：基本动作和武器选择。{s1}
+mno_tutorial_2|教程#2：持盾作战。{s2}
+mno_tutorial_3|教程#3：无盾作战。{s3}
+mno_tutorial_3b_door|下一关
+mno_tutorial_4|教程#4：骑马与座狼。{s4}
+mno_tutorial_5|教程#5：指挥一支部队。{s5}
 mno_go_back_dot|返回
 mno_action_view_troop_trees|查看兵种树
 mno_view_upkeep_costs|查看维护费用
@@ -101,10 +101,10 @@ menu_choose_gender|^^^^^^^^^^你的性别？
 mno_start_male|男性
 mno_start_female|女性
 mno_proc|正常进行
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+menu_start_as_one|^^^^^^^^^^你是何种士兵?
+mno_start_default|成为 {s23} （默认）
+mno_start_up1|成为 {s21} （简单）
+mno_start_up2|成为 {s22} （简单） 
 mno_continue|继续...
 menu_character_report|^^^^^部队士气：{reg8} ^部队规模上限：{reg7} ^ {s5}
 menu_camp|^^^^您现在位于{s1}。{s2} ^^您想要做什么？

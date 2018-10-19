@@ -49,7 +49,7 @@ qst_deliver_cattle_to_army|Doruč {reg3} kusů jídla k {s13}
 qst_deliver_cattle_to_army_text|Nic.
 qst_join_siege_with_army|Připoj se k obléhání {s14}
 qst_join_siege_with_army_text|Nic.
-; qst_scout_waypoints|Scout {s13}, {s14} and {s15}
+qst_scout_waypoints|Prozkoumej {s13}, {s14} a {s15}
 qst_scout_waypoints_text|Nic.
 qst_move_cattle_herd|Pod ku {s13} {s12}
 ; qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
@@ -74,14 +74,14 @@ qst_treebeard_kill_orcs_text|Treebeard chce aby si nasiel a porazil orkou ktory 
 qst_oath_of_vengeance|Přísaha pomsty.
 qst_oath_of_vengeance_text|Rozzuren smrti {s1}, pronesl jsi prisahu pomsty vuci silam {s2}. V nasledujicich dnech musis zničit tolik armad {s2}, kolik je mozne. Jsi si jasne vedom toho, ze tvi nasledovnici byli svedky tve prisahy a nechces aby te povazovali za krivopriseznika. Krveproliti musi zacit!
 qst_deliver_gift|Doručte {s4} z {s1} od {s2} do {s3}
-; qst_deliver_gift_text|You have requested to deliver a {s4} of {s1} to {s3} from {s2}.
+qst_deliver_gift_text|Byl jsi požádán o doručení {s4} z {s1} do {s3} z {s2}.
 qst_ring_hunters|hledači prstenu
 ; qst_ring_hunters2|Ring Hunters - Completed
 ; qst_deliver_message_hobbit|Concerning Hobbits
 qst_blank_quest_01|Ochraň uprchlíky
 qst_blank_quest_02|Zabij uprchlíky
 qst_blank_quest_03|Námořní bitva
-; qst_blank_quest_04|Kill {s35} {s36}
+qst_blank_quest_04|Zabij {s35} {s36}
 ; qst_blank_quest_05|Kill {s35} {s36} troops.
 
 
@@ -94,11 +94,11 @@ qst_blank_quest_03|Námořní bitva
 
 
 qst_blank_quest_16|Posílit střed
-; qst_blank_quest_17|Slay {reg22} {s6} in battles
+qst_blank_quest_17|Pobij {reg22} {s6} v bitvách
 
 
 
 
-; qst_guardian_party_quest|Isengard's Last Stand
+qst_guardian_party_quest|Poslední vzdor Železných
 qst_quests_end|Konec úkolu
 qst_quests_end_text|.

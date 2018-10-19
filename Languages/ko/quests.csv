@@ -1,77 +1,104 @@
 qst_deliver_message|{s13}에게 메시지 전달
 qst_deliver_message_text|{s9}이 당신에게 이 메시지를 {s13}에게 전달하라는 임무를 주었다. {s13}은 이 임무를 받을쯤에 {s4}에 있을것이다
 qst_deliver_message_to_enemy_lord|{s13}에게 메시지 전달
-; qst_deliver_message_to_enemy_lord_text|{s9} asked you to take a message to {s13} of {s15}. {s13} was at {s4} when you were given this quest.
-; qst_raise_troops|Raise {reg1} {s14}
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
+qst_deliver_message_to_enemy_lord_text|{s9}이 당신에게 이 메시지를 {s15}의 {s13}에게 전달하라는 임무를 주었다. {s13}은 이 임무를 받을쯤에 {s4}에 있을것이다
+qst_raise_troops|{reg1}를 {s14}명 모아라
+qst_raise_troops_text|{s9}가 {reg1}를 {s14}명 훈련 시켜 {그/그녀}에게 인도하길 요청했다.
 qst_escort_messenger|{s14}까지 전령 호위하기
-; qst_escort_messenger_text|None
-; qst_hunt_down_fugitive|Hunt down {s4}
-; qst_hunt_down_fugitive_text|{s9} asked you to hunt down the fugitive named {s4}. He is currently believed to be at {s3}.
+qst_escort_messenger_text|없음
+qst_hunt_down_fugitive|{s4}를 추적하여 잡기
+qst_hunt_down_fugitive_text|{s9}은 {s4}이름을 가진 탈주자를 추적하라고 말한다. 그는 지금 {s3}에 있는 걸로 안다.
 qst_bring_back_runaway_serfs|탈출노예 잡아오기
-; qst_bring_back_runaway_serfs_text|{s9} asked you to bring back the three groups of runaway slaves back to {s2}. He said all three groups must be running away in the direction of {s3}.
-; qst_follow_spy|Follow the Spy to Meeting
-; qst_follow_spy_text|{s11} asked you to follow the spy that will leave {s12}. You must be careful not to be seen by the spy during his travel, or else he may get suspicious and turn back. Once the spy meets with his accomplice, you are to ambush and capture them and bring them both back to {s11}.
-qst_capture_enemy_hero|적 지휘관 생포
-; qst_capture_enemy_hero_text|{s11} asked you to capture an enemy commander.
-; qst_lend_companion|Lend Your Companion {s3} to {s9}
-; qst_lend_companion_text|{s9} asked you to lend your companion {s3} to him for a week.
-; qst_capture_prisoners|Bring {reg1} enemy prisoners
-; qst_capture_prisoners_text|{s9} wanted you to bring him {reg1} enemy prisoners.
-qst_investigate_fangorn|팡고른 조사
-; qst_investigate_fangorn_text|{s9} asked you to find out what is going on in the Fangorn forest, and to report back.
+qst_bring_back_runaway_serfs_text|{s9}가 세 무리의 도망 노예들을 {s2}로 잡아 오기를 요청했다. 노예들은 {s3} 방향으로 도망칠 것이라 한다.
+qst_follow_spy|스파이를 접선장소까지 미행하시오
+qst_follow_spy_text|{s11}이 {s12}을 떠나는 스파이를 미행할 것을 요청했다. 미행이 발각되면 스파이는 수상히 여겨 돌아갈 것이다. 스파이가 공범과 만나면 그들을 급습해, 생포하여 {s11}로 데려와야 한다.
+qst_capture_enemy_hero|적 지휘관을 생포하라
+qst_capture_enemy_hero_text|{s11}가 적 지휘관을 생포하길 요청했다.
+qst_lend_companion|동료 {s3}을 {s9}에게 빌려주기
+qst_lend_companion_text|{s9}는 당신의 동료 {s3}을 한 주동안 빌려주기를 요청했다.
+qst_capture_prisoners|{reg1} 포로를 데려오십시오
+qst_capture_prisoners_text|{s9}이 {reg1} 적 포로를 잡아오길 요청했다.
+qst_investigate_fangorn|팡고른을 조사하라
+qst_investigate_fangorn_text|{s9}는 당신이 팡고른에서 일어나는 일들을 조사하고, 보고하길 요청했다.
 qst_capture_troll|트롤 생포
-; qst_capture_troll_text|{s9} asked you to bring back a savage troll for use in his army.
-; qst_kill_troll|Dispatch raging Troll
-; qst_kill_troll_text|{s9} asked you to free {s13} from the menace of a Troll raging in its outskirts.
-qst_mirkwood_sorcerer|어둠숲의 강령술사 사살
-; qst_mirkwood_sorcerer_text|Galadriel's power to defend Lothlorien has been undermined by the foul rituals of a sorcerer of Dol Guldur.  Though he is a mortal, he represents a great threat to the Elves. Search for him in Mirkwood forest, not far from Dol Guldur itself. Use stealth to prevent the alarm from being raised as there will be only one opportunity to defeat him.
-; qst_find_lost_spears|Find the lost spears of king Bladorthin
-; qst_find_lost_spears_text|{s9} asked you to find the lost spears dwarves once made for king Bladorthin. You have to ask the dwarves permission to search for the spears in the depths of the Lonely Mountain.
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
-; qst_destroy_scout_camp|Destroy Scout Camp
-; qst_rescue_prisoners|Rescue {reg1} Prisoners
-; qst_rescue_prisoners_text|{s9} wanted you to rescue {reg1} prisoners.
+qst_capture_troll_text|{s9}는 그의 군대에 사용할 수 있도록 사나운 트롤을 가져오라고 지시한다.
+qst_kill_troll|성난 트롤을 처치해라.
+qst_kill_troll_text|{s9}이 {s13}를 위협하는 교외의 성난 트롤을 처리해 주길 요청했다.
+qst_mirkwood_sorcerer|어둠숲의 마술사 사살
+qst_mirkwood_sorcerer_text|돌 굴두르 마술사의 사악한 의식으로, 로스로리엔을 수호하는 갈라드리엘의 힘이 약화되었습니다. 그는 비록 필멸자지만 엘프들에게 커다란 위협이 됩니다. 돌 굴두르 근처의 어둠의 숲에서 그를 찾아내십시오. 그를 잡을 기회는 단 한 번 뿐이니, 경보를 울리지 않도록 은신을 사용하십시오.
+qst_find_lost_spears|왕 블라도르딘의 잃어버린 창들을 찾아라
+qst_find_lost_spears_text|{s9}이 난장이들이 블라도르신 왕에게 만들어 줬던, 잃어버린 창을 찾아주길 요청했습니다. 외로운 산 심처를 수색하려면 난장이들의 허가를 받아야 합니다.
+qst_defend_village|마을을 방어하시오
+qst_raid_village|마을을 습격하시오
+qst_destroy_scout_camp|정찰 기지 파괴
+qst_rescue_prisoners|{reg1} 포로 구출
+qst_rescue_prisoners_text|{s9}이 {reg1} 포로들을 구출해오길 원한다.
 qst_scout_enemy_town|적 도시 정찰
-; qst_scout_enemy_town_text|{s9} asked you to scout around {s13}.
-; qst_dispatch_scouts|Dispatch a Scout Party
-; qst_dispatch_scouts_text|{s9} asked you to dispatch a scout party near {s13}.
-; qst_eliminate_patrols|Eliminate {reg1} Enemy Parties
-; qst_eliminate_patrols_text|{s9} asked you to eliminate {reg1} {s13} enemy parties.
-; qst_lend_surgeon|Lend Your Surgeon {s3} to {s1}
-; qst_lend_surgeon_text|Lend your experienced surgeon {s3} to {s1}.
+qst_scout_enemy_town_text|{s9}는 당신에게 {s13} 주변을 정찰하라고 했다.
+qst_dispatch_scouts|정찰 부대 처치
+qst_dispatch_scouts_text|{s9}는 {s13} 주변의 정찰 부대를 처치하길 바란다.
+qst_eliminate_patrols|{reg1} 적 부대 제거
+qst_eliminate_patrols_text|{s9}는 {reg1}의 {s13} 적 부대를 제거하길 바란다.
+qst_lend_surgeon|당신의 군의관 {s3}을 {s1}에게 빌려주기
+qst_lend_surgeon_text|당신의 경험 많은 군의관 {s3}을 {s1}에게 빌려주십시오.
 qst_follow_army|{s9}의 부대와 동행
-; qst_follow_army_text|None
+qst_follow_army_text|없음
 qst_report_to_army|{s13}에 보고
-; qst_report_to_army_text|None
-; qst_deliver_cattle_to_army|Deliver {reg3} units of food to {s13}
-; qst_deliver_cattle_to_army_text|None
+qst_report_to_army_text|없음
+qst_deliver_cattle_to_army|{reg3}의 가축을 {s13}에게 조달하라
+qst_deliver_cattle_to_army_text|없음
 qst_join_siege_with_army|{s14} 포위전에 참가
-; qst_join_siege_with_army_text|None
-; qst_scout_waypoints|Scout {s13}, {s14} and {s15}
-; qst_scout_waypoints_text|None
-; qst_move_cattle_herd|Move {s12} to {s13}
-; qst_move_cattle_herd_text|The Elder of {s10} asked you to move some {s12} to {s13}.
-; qst_escort_merchant_caravan|Escort Supply Train to {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
-; qst_deliver_wine|Deliver {reg5} Units of {s6} to {s4}
-; qst_deliver_wine_text|The {s9} of {s3} asked you to deliver {reg5} units of {s6} to {s4} in 7 days.
-; qst_troublesome_bandits|Hunt Down Troublesome Goblins
-; qst_troublesome_bandits_text|The {s9} of {s4} asked you to hunt down the troublesome goblins in the vicinity of the town.
-; qst_deal_with_looters|Deal with Tribal Orcs
-; qst_deal_with_looters_text|The Elder of {s4} has asked you to deal with several bands of tribal orcs around {s4}.
-; qst_deal_with_night_bandits|Deal with Rogue Goblins
-; qst_deal_with_night_bandits_text|The Elder of {s14} has asked you to deal with night goblins at {s14}.
-; qst_deliver_food|Supply {s3} with {reg5} Units of food
-; qst_deliver_food_text|The {s9} of {s3} asked you to bring him {reg5} units of food in 10 days.
-; qst_deliver_iron|Supply {s3} with {reg5} Units of {s6}
-; qst_deliver_iron_text|The {s9} of {s3} asked you to bring him {reg5} units of {s6}.
-qst_tld_introduction|모르도르 오크들에 대한 메시지를 사령관에게 전달
-; qst_tld_introduction_text|None
+qst_join_siege_with_army_text|없음
+qst_scout_waypoints|{s13}, {s14} 그리고 {s15} 정찰
+qst_scout_waypoints_text|없음
+qst_move_cattle_herd|{s12}를 {s13}으로 이동시켜라
+qst_move_cattle_herd_text|{s10}의 장로가 {s12}를 {s13}으로 옮겨주길 요청했습니다.
+qst_escort_merchant_caravan|수송 행렬을 {s8}까지 호위하라
+qst_escort_merchant_caravan_text|수송 행렬을 {s8}까지 호위하고, 도착하면 말을 거십시오.
+qst_deliver_wine|{s6} {reg5}개를 {s4}로 배달하라
+qst_deliver_wine_text|{s3}의 {s9}는 7일 이내에 {s6} {reg5}개를 {s4}로 배달해 주길 요청했습니다.
+qst_troublesome_bandits|골칫거리 고블린 추적
+qst_troublesome_bandits_text|{s4}의 {s9}가 도시 부근의 골칫거리 고블린을 추적해 주길 요청했습니다.
+qst_deal_with_looters|부족 오크 처리
+qst_deal_with_looters_text|{s4}의 장로가 {s4} 근처의 부족 오크 몇 무리를 처리해 주길 바랍니다.
+qst_deal_with_night_bandits|도둑 고블린을 처리하라
+qst_deal_with_night_bandits_text|{s14}의 장로가 {s14}의 밤고블린을 처리해 주길 바랍니다.
+qst_deliver_food|{s3}으로 식량 {reg5}개 조달
+qst_deliver_food_text|{s3}의 {s9}가 10일 이내로 {reg5}의 식량을 가져다 주길 바랍니다.
+qst_deliver_iron|{s3}으로 {s6} {reg5}개 조달
+qst_deliver_iron_text|{s3}의 {s9}가 {reg5}의 {s6}을 가져다 주길 바랍니다.
+qst_tld_introduction|팩션 지도자에게 돌아가십시오.
+qst_tld_introduction_text|없음
 qst_treebeard_kill_orcs|벌목하는 오크무리 토벌
 qst_treebeard_kill_orcs_text|나무수염은 당신이 벌목하는 오크들을 찾아내어 죽이는걸 원합니다
-; qst_oath_of_vengeance|Oath of Vengeance
-; qst_oath_of_vengeance_text|Enraged by the death of {s1}, you have sworn an oath of vengeance upon the forces of {s2}. You must now destroy as many of the armies of {s2} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
-; qst_deliver_gift|Deliver a {s4} of {s1} from {s2} to {s3}
-; qst_deliver_gift_text|You have requested to deliver a {s4} of {s1} to {s3} from {s2}.
+qst_oath_of_vengeance|복수의 맹세
+qst_oath_of_vengeance_text|당신은 {s1}의 죽음에 분노하여, {s2}군대에 대한 복수를 맹세했습니다. 당신은 앞으로 최대한 많은 {s2}군대를 격파해야 합니다. 당신의 동료들이 맹세의 증인이며 당신은 맹세파괴자라 불리고 싶지 않습니다. 피바다를 만들어 줄 시간입니다!
+qst_deliver_gift|{s2}에서 {s3}로 {s1}의 {s4}를 운반하라
+qst_deliver_gift_text|당신은 {s2}에서 {s3}로 {s1}의 {s4}를 운반하라는 의뢰를 받았습니다.
+qst_ring_hunters|반지 추적자
+qst_ring_hunters2|반지 추적자 - 완료
+qst_deliver_message_hobbit|걱정스러운 호빗
+qst_blank_quest_01|난민 보호
+qst_blank_quest_02|난민 추살
+qst_blank_quest_03|해전
+qst_blank_quest_04|{s35} {s36}을 죽여라
+qst_blank_quest_05|{s35} {s36}군대를 괴멸시키십시오.
+
+
+
+
+
+
+
+
+
+
+qst_blank_quest_16|본대 증원
+qst_blank_quest_17|전투에서 {reg22} {s6}을 죽여라
+
+
+
+
+qst_guardian_party_quest|아이센가드, 그 최후의 저항
+qst_quests_end|퀘스트 종료
+qst_quests_end_text|.
