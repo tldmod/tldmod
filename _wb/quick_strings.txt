@@ -1,4 +1,4 @@
-1834
+1833
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -1139,7 +1139,6 @@ qstr_The_battle_was_lost. The_battle_was_lost._Your_forces_were_utterly_crushed.
 qstr_Your_companions_carr Your_companions_carry_you_away_from_the_fighting.
 qstr_You_have_defeated_th You_have_defeated_the_enemy.
 qstr_You_have_retreated_f You_have_retreated_from_the_fight.
-qstr_^_You_Personally_Def ^_You_Personally_Defeated_{reg55}_Enemies
 qstr_^^Ally_Casualties:{s ^^Ally_Casualties:{s0}
 qstr_You_and_{s3}_celebra You_and_{s3}_celebrate_your_victory_against_{s4}.
 qstr_News_of_your_victory News_of_your_victory_against_{s4}_reach_{s3}.
