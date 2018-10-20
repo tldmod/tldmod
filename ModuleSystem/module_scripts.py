@@ -1993,22 +1993,22 @@ scripts = [
 	(item_set_slot, "itm_rhun_armor_a", slot_item_player_color, 1),
 	(item_set_slot, "itm_rhun_armor_a", slot_item_num_components, 1),
 	(item_set_slot, "itm_rhun_armor_a", slot_item_materials_begin, "str_rhunarmortexture_fem"),
-	(item_set_slot, "itm_rhun_armor_a", slot_item_materials_end, "str_beornings_female"),
+	(item_set_slot, "itm_rhun_armor_a", slot_item_materials_end, "str_female_mats_end"),
 
 	(item_set_slot, "itm_rhun_armor_b", slot_item_player_color, 1),
 	(item_set_slot, "itm_rhun_armor_b", slot_item_num_components, 1),
 	(item_set_slot, "itm_rhun_armor_b", slot_item_materials_begin, "str_rhunarmortexture_fem"),
-	(item_set_slot, "itm_rhun_armor_b", slot_item_materials_end, "str_beornings_female"),
+	(item_set_slot, "itm_rhun_armor_b", slot_item_materials_end, "str_female_mats_end"),
 
 	(item_set_slot, "itm_rhun_armor_d", slot_item_player_color, 1),
 	(item_set_slot, "itm_rhun_armor_d", slot_item_num_components, 1),
 	(item_set_slot, "itm_rhun_armor_d", slot_item_materials_begin, "str_rhunarmortexture_fem"),
-	(item_set_slot, "itm_rhun_armor_d", slot_item_materials_end, "str_beornings_female"),
+	(item_set_slot, "itm_rhun_armor_d", slot_item_materials_end, "str_female_mats_end"),
 
 	(item_set_slot, "itm_beorn_berserk", slot_item_player_color, 1),
 	(item_set_slot, "itm_beorn_berserk", slot_item_num_components, 1),
 	(item_set_slot, "itm_beorn_berserk", slot_item_materials_begin, "str_beornings_female"),
-	(item_set_slot, "itm_beorn_berserk", slot_item_materials_end, "str_female_mats_end"),
+	(item_set_slot, "itm_beorn_berserk", slot_item_materials_end, "str_compat_string_end"),
 	
 
 	#Init HP shield
