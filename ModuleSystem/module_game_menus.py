@@ -10735,6 +10735,11 @@ game_menus = [
         ],"Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}",[
         (store_sub, "$tld_spawn_battle_animals", 1, "$tld_spawn_battle_animals"),(val_clamp, "$tld_spawn_battle_animals", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
 
+	("slow_when_wounded",[(str_clear, s7),(try_begin),(neq, "$slow_when_wounded", 1),(str_store_string, s7, "@OFF"),
+								(else_try),(str_store_string, s7, "@ON"),(try_end),
+        ],"Agents become Slow when Wounded:  {s7}",[
+        (store_sub, "$slow_when_wounded", 1, "$slow_when_wounded"),(val_clamp, "$slow_when_wounded", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
+   
    ("game_options_compat_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
 
     ]),

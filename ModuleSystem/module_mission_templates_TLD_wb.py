@@ -201,7 +201,7 @@ common_rotate_deathcam_wb = (0, 0, 0,
 from header_skills import *
 
 dplmc_horse_speed = (  #called in field_ai_triggers
-  1, 0, 0, [],
+  1, 0, 0, [(eq, "$slow_when_wounded", 1)],
   [  
   (try_for_agents, ":agent_no"),
     (agent_is_alive, ":agent_no"),

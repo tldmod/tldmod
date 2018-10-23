@@ -440,7 +440,7 @@ tld_fallen_riders_get_damaged = (is_a_wb_mt==1 and
 		
 
 # This trigger makes wounded agents move slower. -CC
-tld_slow_wounded  = (1, 0, 0, [],
+tld_slow_wounded  = (1, 0, 0, [(eq, "$slow_when_wounded", 1),],
 	[
 				(try_for_agents, ":cur_agent"),
 					(agent_is_human, ":cur_agent"),
@@ -449,6 +449,28 @@ tld_slow_wounded  = (1, 0, 0, [],
 	 		 		(troop_get_type, ":race", ":troop"),
 	 				(neq, ":race", tf_troll),			# trolls are not influenced by wounds.
 					(agent_get_horse, ":horse", ":cur_agent"),
+				
+				] + ((is_a_wb_mt==1) and [
+					(try_begin),
+						(le, ":horse", -1),
+						(store_agent_hit_points, ":hp", ":cur_agent"),
+						(try_begin),
+							(lt, ":hp", 25),
+	  						(agent_set_speed_limit,":cur_agent", 2),
+						(else_try),
+							(lt, ":hp", 50),
+	  						(agent_set_speed_limit,":cur_agent", 4),
+						(else_try),
+							(le, ":hp", 75),
+	  						(agent_set_speed_limit,":cur_agent", 8),
+						(else_try),
+							(gt, ":hp", 75),
+	  						(agent_set_speed_limit,":cur_agent", 100), # no speed limit
+						(try_end),
+					(try_end),
+				(try_end),
+				
+				] or [
 					(try_begin),
 						(gt, ":horse", -1),
 						(store_agent_hit_points, ":hp", ":horse"),
@@ -462,8 +484,7 @@ tld_slow_wounded  = (1, 0, 0, [],
 							(le, ":hp", 75),
 	  						(agent_set_speed_limit,":cur_agent", 32),
 						(else_try),
-							(gt, ":hp", 75),
-	  						(agent_set_speed_limit,":cur_agent", 100), # no speed limit
+							(agent_set_speed_limit,":cur_agent", 100), # no speed limit
 						(try_end),
 					(else_try),
 						(store_agent_hit_points, ":hp", ":cur_agent"),
@@ -482,6 +503,7 @@ tld_slow_wounded  = (1, 0, 0, [],
 						(try_end),
 					(try_end),
 				(try_end),
+				]) + [
 	])
 			
 	

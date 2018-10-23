@@ -1129,7 +1129,7 @@ simple_triggers = [
       
       #Update Savegame for Horse Meat
       (try_begin),
-        (lt, "$savegame_version", 5),
+        (lt, "$savegame_version", 6),
         (call_script, "script_update_savegame"),
       (try_end),
   ]),

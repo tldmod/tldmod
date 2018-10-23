@@ -1921,7 +1921,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",4),
+    (assign,"$savegame_version",5),
 
 	] + (is_a_wb_script==1 and [
 
@@ -1941,6 +1941,7 @@ scripts = [
 	(assign, "$FormAI_autorotate", 1), #Autorotate for New Formations force to 1
 	(assign, "$player_deploy_troops", 1), #Make sure troops hold when battle starts.
 	(assign, "$FormAI_AI_Control_Troops", 1), #AI Control Dead Player's Troops (FormV5)
+	(assign, "$slow_when_wounded",1), #Kham - Agents get slower when wounded
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
@@ -23235,6 +23236,15 @@ command_cursor_scripts = [
     	(lt,"$savegame_version",5),
     	(item_set_slot, "itm_horse_meat", slot_item_food_bonus, 5),
     	(assign, "$savegame_version",5),
+    (try_end),
+    (try_begin), #Kham - Jan 2018
+    	(lt,"$savegame_version",6),
+		(item_set_slot, "itm_beorn_berserk", slot_item_player_color, 1),
+		(item_set_slot, "itm_beorn_berserk", slot_item_num_components, 1),
+		(item_set_slot, "itm_beorn_berserk", slot_item_materials_begin, "str_beornings_female"),
+		(item_set_slot, "itm_beorn_berserk", slot_item_materials_end, "str_compat_string_end"),
+		(assign, "$slow_when_wounded", 1),
+    	(assign, "$savegame_version",6),
     (try_end),
 ]),
 
