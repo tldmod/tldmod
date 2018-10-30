@@ -1,4 +1,4 @@
-1833
+1835
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -1573,6 +1573,8 @@ qstr_Gift Gift
 qstr_You_have_requested_t You_have_requested_to_deliver_a_gift_of_{s1}_to_{s3}_from_{s2}._The_people_of_{s3}_will_surely_appreciate_this_kind_gesture.
 qstr_Bribe Bribe
 qstr_You_have_requested_to You_have_requested_to_deliver_a_bribe_of_{s1}_to_{s3}_from_{s2}._Hopefully_you_can_get_some_sort_of_reward_from_them_in_exchange.
+qstr_{reg3}_hours. {reg3}_hours.
+qstr_hour. hour.
 qstr_Taking_{reg0}_inf._A Taking_{reg0}_inf._Alt?={reg1}
 qstr_You_spent_{reg0}_of_ You_spent_{reg0}_of_your_influence_with_{s1},_with_{reg1}_remaining.
 qstr_The_War_is_over_{pla The_War_is_over,_{playername},_haven't_you_heard?

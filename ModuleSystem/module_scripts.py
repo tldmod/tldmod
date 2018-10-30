@@ -2351,15 +2351,20 @@ scripts = [
 			(store_div, ":attacker_strength", ":attacker_strength", 20),
 			(val_min, ":attacker_strength", 50),
 			(val_add, ":attacker_strength", 1),
-			(try_begin),
-				#For sieges increase attacker casualties and reduce defender casualties.
-				(this_or_next|party_slot_eq, ":root_defender_party", slot_party_type, spt_castle),
-				(party_slot_eq, ":root_defender_party", slot_party_type, spt_town),
-				(val_mul, ":defender_strength", 3),
-				(val_div, ":defender_strength", 2),
-				(val_div, ":attacker_strength", 2),
-			(try_end),
+         	(try_begin),
+            	#For sieges increase attacker casualties and reduce defender casualties.
+            	(this_or_next|party_slot_eq, ":root_defender_party", slot_party_type, spt_castle),
+            	(party_slot_eq, ":root_defender_party", slot_party_type, spt_town),
+            	(val_mul, ":defender_strength", 123), #it was 1.5 in old version, now it is only 1.23
+            	(val_div, ":defender_strength", 100),
+      
+            	(val_mul, ":attacker_strength", 100), #it was 0.5 in old version, now it is only 1 / 1.23
+            	(val_div, ":attacker_strength", 123),
+          	(try_end),
 
+	        (call_script, "script_party_count_fit_for_battle", "p_collective_ally", 0),
+          	(assign, ":old_defender_strength", reg0),
+			
 			(try_begin),
 				# night in TLD is primary WAR TIME =)! GA
 				#             (neg|is_currently_night), #Don't fight at night
@@ -2383,6 +2388,17 @@ scripts = [
 				(this_or_next|eq, ":new_attacker_strength", 0),
 				(eq, ":new_defender_strength", 0),
 				# Battle concluded! determine winner
+
+	            (assign, ":do_not_end_battle", 0),
+	            (try_begin),
+	              (neg|troop_is_wounded, "trp_player"),
+	              (eq, ":new_defender_strength", 0),              
+	              (eq, "$auto_enter_town", "$g_encountered_party"),
+	              (eq, ":old_defender_strength", ":new_defender_strength"),
+	              (assign, ":do_not_end_battle", 1),
+	            (try_end),            
+	            (eq, ":do_not_end_battle", 0),
+	            
 				(try_begin),
 					(eq, ":new_attacker_strength", 0),
 					(eq, ":new_defender_strength", 0),
@@ -8852,7 +8868,9 @@ scripts = [
         (try_end),
         ## ADD some XP initially
         (try_for_range, ":unused", 0, 7),
-          (store_random_in_range, ":xp", 1500, 2000),
+          (store_mul, ":xp_range_min", 150, ":garrison_strength"),
+          (store_mul, ":xp_range_max", 200, ":garrison_strength"),
+          (store_random_in_range, ":xp", ":xp_range_min", ":xp_range_max"),
           (party_upgrade_with_xp, ":center_no", ":xp", 0),
         (try_end),
       (try_end),
@@ -15754,7 +15772,7 @@ scripts = [
        (assign, ":max_skill", ":cur_skill"),
        (assign, ":skill_owner", ":stack_troop"),
      (try_end),
-     (assign, reg0, ":max_skill"),
+     (party_get_skill_level, reg0, "p_main_party", ":skill_no"),
      (assign, reg1, ":skill_owner"),
 ]),
 

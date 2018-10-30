@@ -591,9 +591,9 @@ simple_triggers = [
   # (25) Process alarms
   (3,[(call_script, "script_process_alarms")]),
   
-  # (26) Process siege ai
+  # (26) Process siege ai - modified with script - Kham (Oct 2018)
   (3,[(store_current_hours, ":cur_hours"),
-      (try_for_range, ":center_no", centers_begin, centers_end),
+      (store_random_in_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (party_get_slot, ":besieger_party", ":center_no", slot_center_is_besieged_by),
@@ -623,6 +623,7 @@ simple_triggers = [
             (party_slot_eq, ":party_no", slot_party_ai_object, ":center_no"),
             (assign, ":continue", 1),
           (else_try),
+      (party_slot_eq, ":party_no", slot_party_ai_state, spai_accompanying_army),
             (party_get_slot, ":commander_party", ":party_no", slot_party_commander_party),
             (gt, ":commander_party", 0),
             (party_is_active, ":commander_party"),
@@ -673,7 +674,7 @@ simple_triggers = [
           (try_end),
           (try_begin),
             (gt, ":random_up_limit", -100), #never attack if the strength ratio is less than 1:1 (was 2:1)
-            (store_div, ":siege_begin_hours_effect", ":siege_begin_hours", 3),
+            (store_div, ":siege_begin_hours_effect", ":siege_begin_hours", 2),
             (val_add, ":random_up_limit", ":siege_begin_hours_effect"),
           (try_end),
           (val_div, ":random_up_limit", 5),
@@ -682,7 +683,7 @@ simple_triggers = [
           (val_max, ":random_down_limit", 0),
           (try_begin),
             (store_random_in_range, ":rand", 0, 100),
-            (val_add, ":random_up_limit", 20), #kham - lets start sieges earlier
+            #(val_add, ":random_up_limit", 20), #kham - lets start sieges earlier
             (lt, ":rand", ":random_up_limit"),
             (gt, ":siege_begin_hours", 24),#initial preparation
             (assign, ":launch_attack", 1),
@@ -694,43 +695,15 @@ simple_triggers = [
         (else_try),
           (assign, ":call_attack_back", 1),
         (try_end),
+        
+        #Assault the fortress
         (try_begin),
           (eq, ":launch_attack", 1),
-          (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
-            (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
-            #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
-            (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
-            (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
-            (gt, ":party_no", 0),
-            (party_is_active, ":party_no"), #Kham - Fix
-            
-            (assign, ":continue", 0),
-            (try_begin),
-              (party_slot_eq, ":party_no", slot_party_ai_state, spai_besieging_center),
-              (party_slot_eq, ":party_no", slot_party_ai_object, ":center_no"),
-              (party_slot_eq, ":party_no", slot_party_ai_substate, 0),
-              (assign, ":continue", 1),
-            (else_try),
-              (party_get_slot, ":commander_party", ":party_no", slot_party_commander_party),
-              (gt, ":commander_party", 0),
-              (party_is_active, ":commander_party"),
-              (party_slot_eq, ":commander_party", slot_party_ai_state, spai_besieging_center),
-              (party_slot_eq, ":commander_party", slot_party_ai_object, ":center_no"),
-              (call_script, "script_party_set_ai_state", ":party_no", spai_besieging_center, ":center_no"),
-              (assign, ":continue", 1),
-            (try_end),
-            (eq, ":continue", 1),
-            
-            (party_set_ai_behavior, ":party_no", ai_bhvr_attack_party),
-            (party_set_ai_object, ":party_no", ":center_no"),
-            (party_set_flags, ":party_no", pf_default_behavior, 1),
-            (party_set_slot, ":party_no", slot_party_ai_substate, 1),
-          (try_end),
+          (call_script, "script_begin_assault_on_center", ":center_no"),
         (else_try),
           (eq, ":call_attack_back", 1),
           (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
             (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
-            #(troop_slot_eq, ":troop_no", slot_troop_is_prisoner, 0),
             (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
             (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
             (gt, ":party_no", 0),
@@ -744,8 +717,8 @@ simple_triggers = [
             (party_set_slot, ":center_no", slot_center_siege_begin_hours, ":cur_hours"),
           (try_end),
         (try_end),
-      (try_end),
-  ]),
+        # (try_end),
+    ]),
   
   # (27) Reset hero quest status
   # Change hero relation

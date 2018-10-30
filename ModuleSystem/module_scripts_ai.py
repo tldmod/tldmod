@@ -781,6 +781,9 @@ ai_scripts = [
         (neq, ":party_no", ":cur_troop_party"),
         (party_get_slot, ":str", ":cur_troop_party", slot_party_cached_strength),
         (try_begin),
+          (neg|is_between, ":party_no", centers_begin, centers_end),
+          (party_slot_eq, ":cur_troop_party", slot_party_ai_state, spai_accompanying_army),
+          (party_get_slot, ":commander_party", ":cur_troop_party", slot_party_ai_object),
           (party_get_slot, ":commander_party", ":cur_troop_party", slot_party_commander_party),
           (eq, ":commander_party", ":party_no"),
           (val_add, ":follower_strength", ":str"),
@@ -3178,6 +3181,50 @@ ai_scripts = [
 # (str_store_party_name, s14, ":party2"),
 # (display_message, "@Debug: TLD distance between {s13} and {s14}: {reg0} (regular: {reg1})."),
 ]),
+
+# Kham - Attack Center Script
+
+# script_begin_assault_on_center
+  # Input: arg1: faction_no
+  # Output: none
+  #called from triggers
+  ("begin_assault_on_center",
+    [
+      (store_script_param, ":center_no", 1),
+      
+      (try_for_range, ":troop_no", kingdom_heroes_begin, kingdom_heroes_end),
+        (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+        (neg|troop_slot_ge, ":troop_no", slot_troop_prisoner_of_party, 0),
+        (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+        (gt, ":party_no", 0),
+        (party_is_active, ":party_no"),
+        
+        (assign, ":continue", 0),
+        (try_begin),
+          (party_slot_eq, ":party_no", slot_party_ai_state, spai_besieging_center),
+          (party_slot_eq, ":party_no", slot_party_ai_object, ":center_no"),
+          (party_slot_eq, ":party_no", slot_party_ai_substate, 0),
+          (assign, ":continue", 1),
+        (else_try),
+          (party_slot_eq, ":party_no", slot_party_ai_state, spai_accompanying_army),
+          (party_get_slot, ":commander_party", ":party_no", slot_party_ai_object),
+          (gt, ":commander_party", 0),
+          (party_is_active, ":commander_party"),
+          (party_slot_eq, ":commander_party", slot_party_ai_state, spai_besieging_center),
+          (party_slot_eq, ":commander_party", slot_party_ai_object, ":center_no"),
+          (call_script, "script_party_set_ai_state", ":party_no", spai_besieging_center, ":center_no"),
+          (assign, ":continue", 1),
+        (try_end),
+        
+        (eq, ":continue", 1),
+        
+        (party_set_ai_behavior, ":party_no", ai_bhvr_attack_party),
+        (party_set_ai_object, ":party_no", ":center_no"),
+        (party_set_flags, ":party_no", pf_default_behavior, 1),
+        (party_set_slot, ":party_no", slot_party_ai_substate, 1),
+      (try_end),
+  ]),
+
 ]
 
 #Date: 24/05/2017

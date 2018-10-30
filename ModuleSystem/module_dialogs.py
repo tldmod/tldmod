@@ -5402,6 +5402,93 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
   (val_div, "$tld_action_cost", 3),
      (try_end)]],
 
+#Suggest to attack besieged center ASAP - Kham
+[anyone|plyr,"lord_give_order", [
+    (party_slot_eq, "$g_talk_troop_party", slot_party_ai_state, spai_besieging_center),
+    (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+    (party_slot_eq, ":ai_object", slot_center_is_besieged_by, "$g_talk_troop_party"),
+    (str_store_party_name, s11, ":ai_object"),
+
+    (assign, "$temp_action_cost", tld_command_cost_engage), #25,
+    (try_begin),
+      (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+      (val_mul, "$temp_action_cost", 2),
+      (val_div, "$temp_action_cost", 3), # 16 for tld_command_cost_engage=25
+    (try_end),
+    (assign, reg1, "$temp_action_cost"),
+    (faction_get_slot, reg2, "$g_talk_troop_faction", slot_faction_influence),
+    (ge, reg2, "$temp_action_cost"),
+  ],
+ "Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]", "lord_give_order_assault",
+[ (assign, "$tld_action_cost", tld_command_cost_engage),
+  (try_begin),
+    (troop_slot_eq, "trp_traits", slot_trait_command_voice, 1),
+    (val_mul, "$tld_action_cost", 2),
+    (val_div, "$tld_action_cost", 3),
+  (try_end)]],   
+  
+[anyone,"lord_give_order_assault", [
+  (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+  (party_get_slot, ":besieging_party", ":ai_object", slot_center_is_besieged_by),
+  (neq, ":besieging_party", "$g_talk_troop_party"),
+  (party_stack_get_troop_id, ":siege_commander", ":besieging_party", 0),
+  (str_store_troop_name, s4, ":siege_commander"),
+  ],
+ "{s4} is directing this siege. I suggest you speak to them.", "lord_pretalk",
+[]],
+
+[anyone,"lord_give_order_assault", [
+  (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+  (party_get_slot, ":siege_begun", ":ai_object", slot_center_siege_begin_hours),
+  (store_current_hours, ":cur_hour"),
+  (store_sub, ":hours_of_siege", ":cur_hour", ":siege_begun"),
+  
+  (try_begin),
+    (assign, ":hours_required", 6),
+  (try_end),
+  (val_sub, ":hours_required", ":hours_of_siege"),
+  (gt, ":hours_required", 0),
+  (try_begin),
+    (gt, ":hours_required", 1),
+    (assign, reg3, ":hours_required"),
+    (str_store_string, s11, "@{reg3} hours."),
+  (else_try),
+    (str_store_string, s11, "@hour."),
+  (try_end),
+  ],
+   "Our preparations are not yet ready. We need another {s11}", "lord_pretalk",
+[]],
+
+[anyone,"lord_give_order_assault", [
+  ],
+   "Very well -- Attack the walls!", "close_window",
+  [
+  (party_get_slot, ":ai_object", "$g_talk_troop_party", slot_party_ai_object),
+  (call_script, "script_begin_assault_on_center", ":ai_object"),
+
+  (assign, "$g_leave_encounter", 1),
+  (call_script,"script_stand_back"),
+  (store_current_hours, ":cur_time"),
+  (store_add, ":obey_until_time", ":cur_time", 5*24), # commands last 5 days
+  (troop_get_slot, ":party_no", "$g_talk_troop", slot_troop_leaded_party),
+  (party_set_slot, ":party_no", slot_party_follow_player_until_time, ":obey_until_time"), #no lord ai changes until this time
+  (faction_get_slot, ":influence", "$g_talk_troop_faction", slot_faction_influence),
+  (try_begin),
+    (eq, cheat_switch, 1),
+    (assign, reg0, "$tld_action_cost"),
+    (assign, reg1, "$temp_action_cost"),
+    (display_message, "@Taking {reg0} inf. Alt?={reg1}"),
+  (try_end),
+  (val_sub, ":influence", "$tld_action_cost"),
+  (faction_set_slot, "$g_talk_troop_faction", slot_faction_influence, ":influence"),
+  (assign, reg0, "$tld_action_cost"),
+  (assign, reg1, ":influence"),
+  (str_store_faction_name, s1, "$g_talk_troop_faction"),
+  (display_message, "@You spent {reg0} of your influence with {s1}, with {reg1} remaining."),
+  (val_add, "$trait_check_commands_issued", 1),
+]],
+   
+
 [anyone|plyr,"lord_give_order", [(neg|troop_slot_eq, "$g_talk_troop", slot_troop_player_order_state, spai_undefined)],
    "I won't need you for some time. You are free to do as you like.", "lord_give_order_stop", []],
 
