@@ -241,6 +241,8 @@ simple_triggers = [
         # (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD - not destroyed - redundant since (party_is_active, ":center_no")
         # (party_get_slot, ":cur_wealth", ":center_no", slot_town_wealth),
         (party_slot_eq, ":center_no", slot_center_is_besieged_by, -1), #center not under siege #InVain uncommented
+        (store_faction_of_party, ":faction", ":center_no"),
+        (neg|faction_slot_eq, ":faction", slot_faction_last_stand, 1), #No more garrisons for last stand factions
         # (assign, ":hiring_budget", ":cur_wealth"),
         # (val_div, ":hiring_budget", 5),
         # (gt, ":hiring_budget", reinforcement_cost),
