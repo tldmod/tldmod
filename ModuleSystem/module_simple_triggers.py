@@ -2912,6 +2912,7 @@ simple_triggers = [
           (party_set_ai_object, ":marshall_party", ":capital"),
           (party_set_flags, ":marshall_party", pf_default_behavior, 1),
           (party_set_slot, ":marshall_party", slot_party_ai_substate, 1),
+          (call_script, "script_begin_assault_on_center", ":capital"),
           (party_set_slot, ":marshall_party", slot_party_scripted_ai, 1),
           (party_set_ai_initiative, ":marshall_party", 10),
           #(str_store_troop_name, s31, ":besieger_marshall"),
