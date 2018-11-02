@@ -1072,6 +1072,9 @@ heroes_end   = kingdom_heroes_end
 companions_begin = trp_npc1
 companions_end   = trp_npc17 + 1
 
+new_companions_begin = trp_npc18
+new_companions_end = trp_last
+
 soldiers_begin = trp_farmer
 soldiers_end = trp_town_walker_1
 

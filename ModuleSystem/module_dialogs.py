@@ -147,7 +147,8 @@ dialogs = [
 
 [anyone ,"member_chat_00", [(store_conversation_troop, "$g_talk_troop"),
                            (try_begin),
-                               (is_between, "$g_talk_troop", companions_begin, companions_end),
+                               (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
+                               (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                                (talk_info_show, 1),
                                (call_script, "script_setup_talk_info_companions"),
                            (try_end),
@@ -192,7 +193,8 @@ dialogs = [
 
 [anyone ,"event_triggered", [(store_conversation_troop, "$g_talk_troop"),
                            (try_begin),
-                               (is_between, "$g_talk_troop", companions_begin, companions_end),
+                               (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
+                               (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                                (talk_info_show, 1),
                                (call_script, "script_setup_talk_info_companions"),
                            (try_end),
@@ -938,19 +940,19 @@ dialogs = [
   (try_end)],
 "{s12}", "do_member_trade",[]],
 
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (this_or_next|eq, "$talk_context", tc_court_talk), #TLD
                      (this_or_next|eq, "$talk_context", tc_town_talk), #TLD
                      (eq, "$talk_context", tc_tavern_talk),
                      (main_party_has_troop, "$g_talk_troop")],
 "Let's leave whenever you are ready.", "close_window", [(call_script,"script_stand_back"),]],
 
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 1)],
 "Please do not waste any more of my time today. Perhaps we shall meet again.", "close_window", [(call_script,"script_stand_back"),]],
 
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (eq, "$g_talk_troop_met", 0),
                      (troop_get_slot, ":intro", "$g_talk_troop", slot_troop_intro),
@@ -1049,25 +1051,39 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 ".", "companion_recruit_signup_confirm", []],
   
 [anyone, "companion_recruit_payment", [
-      (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
-      (store_add, ":dialog_line", "str_npc1_payment", ":npc_offset"),
-      (troop_get_slot, reg14, "$g_talk_troop", slot_troop_payment_request),
-      (store_troop_faction, ":faction", "$g_talk_troop"),
-      (str_store_faction_name, s14, ":faction"),
-      (str_store_string, s5, ":dialog_line")],
+        (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
+        (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
+        (try_begin),
+            (is_between, "$g_talk_troop", companions_begin, companions_end),
+            (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
+            (store_add, ":dialog_line", "str_npc1_payment", ":npc_offset"),
+        (else_try),
+            (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc18"),
+            (store_add, ":dialog_line", "str_npc18_payment", ":npc_offset"),
+        (try_end),
+        (troop_get_slot, reg14, "$g_talk_troop", slot_troop_payment_request),
+        (store_troop_faction, ":faction", "$g_talk_troop"),
+        (str_store_faction_name, s14, ":faction"),
+        (str_store_string, s5, ":dialog_line")],
 "{s5}", "companion_recruit_payment_response", []],
 
 [anyone|plyr, "companion_recruit_payment_response", [
-                    (hero_can_join, "p_main_party"),
+          (hero_can_join, "p_main_party"),
           (store_troop_faction, ":fac", "$g_talk_troop"),
-                    (faction_get_slot, ":inf", ":fac", slot_faction_influence),#
-                    (troop_get_slot, ":amount_requested", "$g_talk_troop", slot_troop_payment_request),#
-                    (ge, ":inf", ":amount_requested"),#
-                    (assign, reg14, ":amount_requested"),
+          (faction_get_slot, ":inf", ":fac", slot_faction_influence),#
+          (troop_get_slot, ":amount_requested", "$g_talk_troop", slot_troop_payment_request),#
+          (ge, ":inf", ":amount_requested"),#
+          (assign, reg14, ":amount_requested"),
           (assign, reg15, ":inf"),
-                    (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
-                    (store_add, ":dialog_line", "str_npc1_payment_response", ":npc_offset"),
-                    (str_store_string, s6, ":dialog_line")],
+          (try_begin),
+            (is_between, "$g_talk_troop", companions_begin, companions_end),
+            (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc1"),
+            (store_add, ":dialog_line", "str_npc1_payment_response", ":npc_offset"),
+          (else_try),
+            (store_sub, ":npc_offset", "$g_talk_troop", "trp_npc18"),
+            (store_add, ":dialog_line", "str_npc18_payment_response", ":npc_offset"),
+          (try_end),
+          (str_store_string, s6, ":dialog_line")],
 "{s6}", "companion_recruit_signup_confirm", [
                     (troop_get_slot, ":amount_requested", "$g_talk_troop", slot_troop_payment_request),#
                     (gt, ":amount_requested", 0),
@@ -1079,7 +1095,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
                      (str_store_string, s7, ":signup_response")],
 "Well, there's little I can do then.", "close_window", [(call_script,"script_stand_back"),]],
 
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 1),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, 0)],
@@ -1096,7 +1112,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "{s4}", "close_window", [(call_script,"script_stand_back"),]],
 
 
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_met_previously, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, 0)],
@@ -1122,17 +1138,30 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone, "companion_recruit_signup_confirm", [], "Good! Give me a few moments to prepare and I'll be ready to move.", "close_window",
    [(call_script,"script_stand_back"),
-   (call_script, "script_recruit_troop_as_companion", "$g_talk_troop")]],
+   (call_script, "script_recruit_troop_as_companion", "$g_talk_troop"),
+   (try_begin),
+    (eq, "$g_talk_troop", "trp_npc18"),
+    (neg|troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate), #First time
+    (troop_remove_item, "trp_npc18","itm_feet_chains"),
+    (troop_remove_item, "trp_npc18","itm_prisoner_coll_chain"),
+    (troop_add_item, "trp_npc18", "itm_khand_light"),
+    (troop_add_item, "trp_npc18", "itm_javelin"),
+    (troop_add_item, "trp_npc18", "itm_leather_boots"),
+    (troop_add_item, "trp_npc18", "itm_khand_helmet_mask2"),
+    (troop_add_item, "trp_npc18", "itm_khand_pitsword"),
+    (troop_add_item, "trp_npc18", "itm_easterling_hawk_shield"),
+    (troop_equip_items, "trp_npc18"),
+  (try_end),]],
 
 
 
 ### Rehire dialogues
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate)],
 "My offer to rejoin you still stands, if you'll have me.", "companion_rehire", []],
 
 ### If the companion and the player were separated in battle
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_scattered),
                      (assign, ":battle_fate", "str_battle_fate_1"),
                      (store_random_in_range, ":fate_roll", 0, 5),
@@ -1144,7 +1173,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
    "companion_rehire", [(troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate),]],
 
 ### If the player and the companion parted on bad terms
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_turned_down_twice, 0),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_quit),
@@ -1153,7 +1182,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 "{s5}", "companion_rehire", [(troop_set_slot, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate)]],
 
 ###If the player and the companion parted on good terms
-[anyone, "start", [(is_between, "$g_talk_troop", companions_begin, companions_end),
+[anyone, "start", [(this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end), (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                      (troop_slot_eq, "$g_talk_troop", slot_troop_occupation, 0),
                      #(troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_dismissed),
                      (troop_get_slot, ":honorific", "$g_talk_troop", slot_troop_honorific),
@@ -4178,7 +4207,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
   (else_try),
   # Check If any companions are wounded before continuing with dialogue
-  (try_for_range, ":npc", companions_begin, companions_end),
+  (try_for_range, ":npc", companions_begin, new_companions_end),
+    (this_or_next|is_between, ":npc", companions_begin, companions_end),
+    (is_between, ":npc", new_companions_begin, new_companions_end),
     (main_party_has_troop, ":npc"),
     (troop_get_slot, ":wound_mask_npc", ":npc", slot_troop_wound_mask),
     (neq, ":wound_mask_npc", 0),
@@ -4310,7 +4341,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
         #If any companion is wounded & Evil Side - heal then hurt them
         (try_begin),
-          (try_for_range, ":npc", companions_begin, companions_end),
+          (try_for_range, ":npc", companions_begin, new_companions_end),
+            (this_or_next|is_between, ":npc", companions_begin, companions_end),
+            (is_between, ":npc", new_companions_begin, new_companions_end),
             (troop_slot_eq, ":npc", slot_troop_needs_healing, 1),
             (call_script, "script_healing_routine_full", ":npc"),
             (troop_set_slot, ":npc", slot_troop_needs_healing, 0), #Set the Slot
@@ -4335,7 +4368,9 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
         
         #If any companion is wounded & Good Side - heal then rest
         (try_begin),
-          (try_for_range, ":npc", companions_begin, companions_end),
+          (try_for_range, ":npc", companions_begin, new_companions_end),
+            (this_or_next|is_between, ":npc", companions_begin, companions_end),
+            (is_between, ":npc", new_companions_begin, new_companions_end),
             (troop_slot_eq, ":npc", slot_troop_needs_healing, 1),
             (call_script, "script_healing_routine_full", ":npc"),
             (troop_set_slot, ":npc", slot_troop_needs_healing, 0), #Set the slot
@@ -9237,6 +9272,19 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (str_store_troop_name, s3, ":npc"),
     #(display_message, "@DEBUG:{s3} is wounded"),
   (try_end),
+    (try_for_range, ":npc", new_companions_begin, new_companions_end),
+    (main_party_has_troop, ":npc"),
+    (troop_get_slot, ":wound_mask_npc", ":npc", slot_troop_wound_mask),
+    (neq, ":wound_mask_npc", 0),
+    #(assign, ":wounds", 0), 
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_head ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_chest),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_arm  ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (try_begin),(store_and,":y",":wound_mask_npc",wound_leg  ),(neq,":y",0),(val_add,":wounds",1),(try_end),
+    (troop_set_slot, ":npc", slot_troop_needs_healing, 1), #Set the slot
+    (str_store_troop_name, s3, ":npc"),
+    #(display_message, "@DEBUG:{s3} is wounded"),
+  (try_end),
   (try_end),
 
   #Do we continue?
@@ -9375,6 +9423,20 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
               (troop_set_health, ":npc", ":npc_hp"),
             (try_end),
           (try_end),
+
+          (try_for_range, ":npc", new_companions_begin, new_companions_end),
+            (troop_slot_eq, ":npc", slot_troop_needs_healing, 1),
+            (call_script, "script_healing_routine_full", ":npc"),
+            (troop_set_slot, ":npc", slot_troop_needs_healing, 0), #Set the Slot
+            (store_troop_health, ":npc_hp", ":npc"),
+            (val_sub, ":npc_hp", 20),
+            (try_begin),
+              (le, ":npc_hp", 0),
+              (troop_set_health, ":npc", 5),
+            (else_try),
+              (troop_set_health, ":npc", ":npc_hp"),
+            (try_end),
+          (try_end),
         (try_end),
 
       #If Player is Wounded & Good Side - Heal then Rest
@@ -9388,6 +9450,12 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         #If any companion is wounded & Good Side - heal then rest
         (try_begin),
           (try_for_range, ":npc", companions_begin, companions_end),
+            (troop_slot_eq, ":npc", slot_troop_needs_healing, 1),
+            (call_script, "script_healing_routine_full", ":npc"),
+            (troop_set_slot, ":npc", slot_troop_needs_healing, 0), #Set the slot
+          (try_end),
+
+          (try_for_range, ":npc", new_companions_begin, new_companions_end),
             (troop_slot_eq, ":npc", slot_troop_needs_healing, 1),
             (call_script, "script_healing_routine_full", ":npc"),
             (troop_set_slot, ":npc", slot_troop_needs_healing, 0), #Set the slot
@@ -13148,7 +13216,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 # CppCoder: Reclaiming companions lost due to lack of RPs. This is a catch dialog.
 
 [anyone,"start", [
-      (is_between, "$g_talk_troop", companions_begin, companions_end),
+      (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
+      (is_between, "$g_talk_troop", new_companions_begin, new_companions_end),
                       (troop_get_slot, ":intro", "$g_talk_troop", slot_troop_rehire_speech),
                       (str_store_string, s5, ":intro"),
     ], 

@@ -2187,6 +2187,15 @@ presentations = [
             (val_add, ":num_companions_departed", 1),
           (try_end),
         (try_end),
+        (try_for_range, ":troop_no", new_companions_begin, new_companions_end),
+          (try_begin),
+            (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_player_companion),
+            (val_add, ":num_companions_joined", 1),
+          (else_try),
+            (troop_slot_ge, ":troop_no", slot_troop_playerparty_history, 1),
+            (val_add, ":num_companions_departed", 1),
+          (try_end),
+        (try_end),
         (store_div, ":num_companions_joined_effect", ":num_companions_joined", 2),
         (val_add, ":total_effect", ":num_companions_joined_effect"),
         (store_div, ":num_companions_departed_effect", ":num_companions_departed", -4),
@@ -3317,11 +3326,11 @@ presentations = [
         ]+concatenate_scripts([[
         (try_begin),
           (eq, cheat_switch, 1),
-          (create_button_overlay, "$g_presentation_obj_3", "@Quick Start: Gondor", tf_center_justify),
+          (create_button_overlay, "$g_presentation_obj_3", "@Dev Quick Start: Gondor", tf_center_justify),
           (position_set_x, pos1, 280),
           (position_set_y, pos1, 140),
           (overlay_set_position, "$g_presentation_obj_3", pos1),
-          (create_button_overlay, "$g_presentation_obj_4", "@Quick Start: Mordor", tf_center_justify),
+          (create_button_overlay, "$g_presentation_obj_4", "@Dev Quick Start: Mordor", tf_center_justify),
           (position_set_x, pos1, 680),
           (position_set_y, pos1, 140),
           (overlay_set_position, "$g_presentation_obj_4", pos1),
@@ -3449,7 +3458,7 @@ presentations = [
     (try_end),
     ]),
 
-  ] + coord_helper
+  ]
 ),
 
 ("faction_selection_good",0,mesh_load_window,[
@@ -3648,7 +3657,7 @@ presentations = [
 
     ]),
 
-  ] + coord_helper
+  ]
 ),
 
   ("faction_selection_evil",0,mesh_load_window,[
@@ -3790,7 +3799,7 @@ presentations = [
     (try_end),
     ]),
 
-  ] + coord_helper
+  ]
 ),
 
 
@@ -3992,7 +4001,7 @@ presentations = [
 
     ]),
 
-  ] + coord_helper
+  ]
 ),
 
 ("faction_selection_hand",0,mesh_load_window,[
@@ -4193,7 +4202,7 @@ presentations = [
 
     ]),
 
-  ] + coord_helper
+  ]
 ),
 ]
 

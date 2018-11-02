@@ -861,7 +861,9 @@ triggers = [
       #Set their relation to the player
       (assign, ":npcs_in_party", 0),
       (assign, ":grievance_divisor", 100),
-      (try_for_range, ":npc1", companions_begin, companions_end),
+      (try_for_range, ":npc1", companions_begin, new_companions_end),
+        (this_or_next|is_between, ":npc1", companions_begin, companions_end),
+        (is_between, ":npc1", new_companions_begin, new_companions_end),
         (main_party_has_troop, ":npc1"),
         (val_add, ":npcs_in_party", 1),
       (try_end),
@@ -889,7 +891,9 @@ triggers = [
       #
       
       
-      (try_for_range, ":npc", companions_begin, companions_end),
+      (try_for_range, ":npc", companions_begin, new_companions_end),
+        (this_or_next|is_between, ":npc", companions_begin, companions_end),
+        (is_between, ":npc", new_companions_begin, new_companions_end),
         ###Reset meeting variables
         (troop_set_slot, ":npc", slot_troop_turned_down_twice, 0),
         (try_begin),

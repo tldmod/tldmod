@@ -1679,6 +1679,10 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 		(troop_set_slot,":npc",slot_companion_agent_id,0),
 		(troop_set_slot,":npc",slot_troop_wounded,0),
 	(try_end),
+	(try_for_range, ":npc",new_companions_begin,new_companions_end), #reset KO tracking for companions
+		(troop_set_slot,":npc",slot_companion_agent_id,0),
+		(troop_set_slot,":npc",slot_troop_wounded,0),
+	(try_end),
 
 	# Night Troop message
 	(try_begin),
@@ -1899,7 +1903,9 @@ custom_tld_spawn_troop = (ti_on_agent_spawn, 0, 0, [],
   (try_end),
   
   (try_begin),
-    (is_between, ":agent_trp", companions_begin, companions_end), # track companion injuries in battle
+    (this_or_next|is_between, ":agent_trp", companions_begin, companions_end), # track companion injuries in battle
+    (is_between, ":agent_trp", new_companions_begin, new_companions_end), # track companion injuries in battle
+
     #--
     (troop_set_slot, ":agent_trp", slot_troop_wounded, 0),
     (troop_set_slot, ":agent_trp", slot_companion_agent_id, ":agent"),
@@ -3305,6 +3311,12 @@ custom_lone_wargs_are_aggressive = (1.5,0,0, [],[ #GA: increased interval to 1.5
 
 custom_track_companion_casualties = (0.5,0,0, [],[ 
 	(try_for_range, ":npc",companions_begin,companions_end),
+		(troop_get_slot,":agent",":npc",slot_companion_agent_id),
+		(gt,":agent",0),
+		(neg|agent_is_alive, ":agent"),
+		(troop_set_slot, ":npc", slot_troop_wounded, 1),
+	(try_end),
+	(try_for_range, ":npc",new_companions_begin,new_companions_end),
 		(troop_get_slot,":agent",":npc",slot_companion_agent_id),
 		(gt,":agent",0),
 		(neg|agent_is_alive, ":agent"),

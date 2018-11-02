@@ -87,11 +87,10 @@ qstr_{reg75} {reg75}
 qstr_What_do_you_fight_fo What_do_you_fight_for?
 qstr_Go_Back... Go_Back...
 qstr_Learn_about_the_diff Learn_about_the_different_factions_of_Middle-Earth
-qstr_Quick_Start:_Gondor Quick_Start:_Gondor
-qstr_Quick_Start:_Mordor Quick_Start:_Mordor
+qstr_Dev_Quick_Start:_Gon Dev_Quick_Start:_Gondor
+qstr_Dev_Quick_Start:_Mor Dev_Quick_Start:_Mordor
 qstr_The_DAWN_of_a_New_Er The_DAWN_of_a_New_Era
 qstr_The_TWILIGHT_of_Man The_TWILIGHT_of_Man
-qstr_{reg65}_{reg66}_{reg {reg65},_{reg66},_{reg67}
 qstr_Select_your_Race? Select_your_Race?
 qstr_Man Man
 qstr_Elf Elf
@@ -421,6 +420,7 @@ qstr_{s50}_Caves {s50}_Caves
 qstr_{s50}_Mines {s50}_Mines
 qstr_{s50}_Woods {s50}_Woods
 qstr_ERROR:_Companion_str ERROR:_Companion_strings_actual/needed:_{reg1}/{reg2}
+qstr_ERROR:_Companion_stri ERROR:_Companion_strings_actual/needed:_{reg11}/{reg22}
 qstr_{s4}_looks_upset. {s4}_looks_upset.
 qstr_your_party your_party
 qstr_{reg0?One_of_your_pr {reg0?One_of_your_prisoners,_:}{s1}_of_{s3}_has_escaped_from_captivity!

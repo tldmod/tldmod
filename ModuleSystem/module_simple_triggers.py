@@ -1918,7 +1918,9 @@ simple_triggers = [
         (try_end),
       (else_try), ###check for regional background
         (eq, "$disable_local_histories", 0),
-        (try_for_range, ":npc", companions_begin, companions_end),
+        (try_for_range, ":npc", companions_begin, new_companions_end),
+          (this_or_next|is_between, ":npc", companions_begin, companions_end),
+          (is_between, ":npc", new_companions_begin, new_companions_end),
           (eq, "$npc_map_talk_context", 0),
           (main_party_has_troop, ":npc"),
           (troop_slot_eq, ":npc", slot_troop_home_speech_delivered, 0),
@@ -1932,7 +1934,9 @@ simple_triggers = [
         (try_end),
         (neq, "$npc_map_talk_context", 0), #fail if nothing happened here
       (else_try), ###TLD: complain about NPC's home faction getting demolished
-        (try_for_range, ":npc", companions_begin, companions_end),
+        (try_for_range, ":npc", companions_begin, new_companions_end),
+          (this_or_next|is_between, ":npc", companions_begin, companions_end),
+          (is_between, ":npc", new_companions_begin, new_companions_end),
           (eq, "$npc_map_talk_context", 0),
           (main_party_has_troop, ":npc"),
           (store_troop_faction, ":npc_faction", ":npc"),
@@ -2933,7 +2937,9 @@ simple_triggers = [
   # (61)
   (1,[(try_begin), # npc and player healing from wounds (should be 25 hours)
         (eq, "$tld_option_injuries",1),
-        (try_for_range, ":npc",companions_begin,companions_end),
+        (try_for_range, ":npc",companions_begin,new_companions_end),
+          (this_or_next|is_between, ":npc", companions_begin, companions_end),
+          (is_between, ":npc", new_companions_begin, new_companions_end),
           (store_random_in_range, reg12,0,70),
           (eq,reg12,0), #10% chance for healing
           (call_script, "script_healing_routine", ":npc"),

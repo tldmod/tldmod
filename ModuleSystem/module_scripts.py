@@ -7490,7 +7490,8 @@ scripts = [
             (try_for_range, ":i_stack", 0, ":num_stacks"),
               (party_stack_get_troop_id, ":stack_troop","p_main_party",":i_stack"),
               (troop_is_hero, ":stack_troop"),
-              (is_between, ":stack_troop", companions_begin, companions_end),
+              (this_or_next|is_between, ":stack_troop", companions_begin, companions_end),
+              (is_between, ":stack_troop", new_companions_begin, new_companions_end),
               (store_character_level, ":stack_level", ":stack_troop"),
               (ge, ":stack_level", 15),
               (assign, ":is_quest_hero", 0),
@@ -11208,7 +11209,9 @@ scripts = [
 
       # TLD NPC companions
       (val_max, ":cur_pos", 17), # if no one else in court, skip 16 (could be a throne)
-      (try_for_range, ":cur_troop", companions_begin, companions_end),
+      (try_for_range, ":cur_troop", companions_begin, new_companions_end),
+      	(this_or_next|is_between, ":cur_troop", companions_begin, companions_end),
+      	(is_between, ":cur_troop", new_companions_begin, new_companions_end),
         (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
         (neg|main_party_has_troop, ":cur_troop"), # not already hired
         (assign, ":on_lease", 0),
@@ -15197,7 +15200,8 @@ scripts = [
            (             eq, ":troop_no", "trp_player"),
            (assign, ":banner_troop", ":troop_no"),
          (else_try),
-           (is_between, ":troop_no", companions_begin, companions_end),
+           (this_or_next|is_between, ":troop_no", companions_begin, companions_end),
+           (is_between, ":troop_no", new_companions_begin, new_companions_end),
            (assign, ":banner_troop", "trp_player"),
          (else_try),
            (assign, ":banner_mesh", "mesh_banners_default_a"),
@@ -15211,7 +15215,8 @@ scripts = [
          (agent_get_party_id, ":agent_party", ":agent_no"),
          (try_begin),
            (lt, ":agent_party", 0),
-           (is_between, ":troop_id", companions_begin, companions_end),
+           (this_or_next|is_between, ":troop_id", companions_begin, companions_end),
+           (is_between, ":troop_id", new_companions_begin, new_companions_end),
            (main_party_has_troop, ":troop_id"),
            (assign, ":agent_party", "p_main_party"),
          (try_end),
@@ -15415,7 +15420,8 @@ scripts = [
 		(try_begin), # TLD equipment appropriateness check
 			(eq, "$tld_option_crossdressing", 0),
 			(this_or_next|eq, ":troop_no", "trp_player"),
-			(is_between, ":troop_no", companions_begin, companions_end),
+			(this_or_next|is_between, ":troop_no", companions_begin, companions_end),
+			(is_between, ":troop_no", new_companions_begin, new_companions_end),
 			(call_script, "script_check_equipped_items", ":troop_no"),
 		(try_end),
        
@@ -16255,7 +16261,64 @@ scripts = [
         (troop_set_slot, "trp_npc17", slot_troop_cur_center, "p_town_woodsmen_village"),  #TLD
         (troop_set_slot, "trp_npc17", slot_troop_rank_request, 0),  #TLD
 
+# New Companions
+	    # Turmbathu
+	    (troop_set_slot, "trp_npc18", slot_troop_morality_type, tmt_aristocratic),
+	    (troop_set_slot, "trp_npc18", slot_troop_morality_value, 3), 
+	    (troop_set_slot, "trp_npc18", slot_troop_2ary_morality_type, -1), 
+	    (troop_set_slot, "trp_npc18", slot_troop_2ary_morality_value, 0),
+	    (troop_set_slot, "trp_npc18", slot_troop_personalityclash_object, "trp_npc16"), #Varfang
+	    (troop_set_slot, "trp_npc18", slot_troop_personalityclash2_object, "trp_npc9"),  #Gulm
+	    (troop_set_slot, "trp_npc18", slot_troop_personalitymatch_object, "trp_npc13"),  #Lykada
+	    (troop_set_slot, "trp_npc18", slot_troop_home, "p_legend_amonhen"),
+	    (troop_set_slot, "trp_npc18", slot_troop_payment_request, 1500 / companionPriceMult ),
+	    (troop_set_slot, "trp_npc18", slot_troop_cur_center, "p_town_khand_camp"),  #TLD
+	    (troop_set_slot, "trp_npc18", slot_troop_rank_request, 4),  #TLD
+
+	    # Heidrek
+	    (troop_set_slot, "trp_npc19", slot_troop_morality_type, tmt_egalitarian),
+	    (troop_set_slot, "trp_npc19", slot_troop_morality_value, 2), 
+	    (troop_set_slot, "trp_npc19", slot_troop_2ary_morality_type, -1), 
+	    (troop_set_slot, "trp_npc19", slot_troop_2ary_morality_value, 0),
+	    (troop_set_slot, "trp_npc19", slot_troop_personalityclash_object, "trp_npc11"), #Ufthak
+	    (troop_set_slot, "trp_npc19", slot_troop_personalityclash2_object, "trp_npc1"),  #Mablung/None
+	    (troop_set_slot, "trp_npc19", slot_troop_personalitymatch_object, "trp_npc16"),  #Varfang
+	    (troop_set_slot, "trp_npc19", slot_troop_home, "p_town_edoras"),
+	    (troop_set_slot, "trp_npc19", slot_troop_payment_request, 800 / companionPriceMult ),
+	    (troop_set_slot, "trp_npc19", slot_troop_cur_center, "p_town_dunland_camp"),  #TLD
+	    (troop_set_slot, "trp_npc19", slot_troop_rank_request, 3),  #TLD
+
+	    # Zigûrphel
+	    (troop_set_slot, "trp_npc20", slot_troop_morality_type, tmt_honest),
+	    (troop_set_slot, "trp_npc20", slot_troop_morality_value, 2), 
+	    (troop_set_slot, "trp_npc20", slot_troop_2ary_morality_type, tmt_aristocratic), 
+	    (troop_set_slot, "trp_npc20", slot_troop_2ary_morality_value, 3),
+	    (troop_set_slot, "trp_npc20", slot_troop_personalityclash_object, "trp_npc14"), #Fuldimir
+	    (troop_set_slot, "trp_npc20", slot_troop_personalityclash2_object, "trp_npc13"),  #Lykada
+	    (troop_set_slot, "trp_npc20", slot_troop_personalitymatch_object, "trp_npc15"),  #Bolzog
+	    (troop_set_slot, "trp_npc20", slot_troop_home, "p_town_erebor"),
+	    (troop_set_slot, "trp_npc20", slot_troop_payment_request, 2000 / companionPriceMult ),
+	    (troop_set_slot, "trp_npc20", slot_troop_cur_center, "p_town_dol_guldur"),  #TLD
+	    (troop_set_slot, "trp_npc20", slot_troop_rank_request, 5),  #TLD
+
+	    #Others (placeholder)
+	    (try_for_range, ":placeholder_troops", "trp_npc21", "trp_last"),
+		   	(troop_set_slot, ":placeholder_troops", slot_troop_morality_type, -1),
+		    (troop_set_slot, ":placeholder_troops", slot_troop_morality_value, 0), 
+		    (troop_set_slot, ":placeholder_troops", slot_troop_2ary_morality_type, -1), 
+		    (troop_set_slot, ":placeholder_troops", slot_troop_2ary_morality_value, 0),
+		    (troop_set_slot, ":placeholder_troops", slot_troop_personalityclash_object, "trp_npc14"), #Fuldimir
+		    (troop_set_slot, ":placeholder_troops", slot_troop_personalityclash2_object, "trp_npc13"),  #Lykada
+		    (troop_set_slot, ":placeholder_troops", slot_troop_personalitymatch_object, "trp_npc15"),  #Bolzog
+		    (troop_set_slot, ":placeholder_troops", slot_troop_home, -1),
+		    (troop_set_slot, ":placeholder_troops", slot_troop_payment_request, 2000 / companionPriceMult ),
+		    (troop_set_slot, ":placeholder_troops", slot_troop_cur_center, -1),  #TLD
+		    (troop_set_slot, ":placeholder_troops", slot_troop_rank_request, 0),  #TLD
+		(try_end),
+
         (store_sub, "$number_of_npc_slots", slot_troop_strings_end, slot_troop_intro), # 131-101=30 strings per NPC 
+        
+        # Old Companions
         (store_sub, ":total_companions", companions_end, companions_begin),
         (try_begin),
           (store_sub, reg1, "str_companion_strings_end", "str_npc1_intro"), #total actual strings
@@ -16276,6 +16339,29 @@ scripts = [
                 (troop_set_slot, ":npc", ":slot", ":string"),
             (try_end),
         (try_end),
+
+        # New Companions
+        (store_sub, ":total_companions_new", new_companions_end, new_companions_begin),
+        (try_begin),
+          (store_sub, reg11, "str_new_companion_strings_end", "str_npc18_intro"), #total actual strings
+          (store_mul, reg22, "$number_of_npc_slots", ":total_companions_new"), #total strings needed
+          (neq, reg11, reg22),
+          (display_message, "@ERROR: Companion strings actual/needed: {reg11}/{reg22}", color_good_news),
+        (try_end),
+        
+        (try_for_range, ":npc_new", new_companions_begin, new_companions_end),
+            (try_for_range, ":slot_addition_new", 0, "$number_of_npc_slots"),
+                (store_add, ":slot_new", ":slot_addition_new", slot_troop_intro), #101
+                
+                (store_mul, ":string_addition_new", ":slot_addition_new", ":total_companions_new"), #MV: was 16 (0*3)
+                (store_add, ":string_new", "str_npc18_intro", ":string_addition_new"),  #2301 + 0
+                (val_add, ":string_new", ":npc_new"), #(2301 + 940)
+                (val_sub, ":string_new", new_companions_begin), #(3241-940) = 1361
+
+                (troop_set_slot, ":npc_new", ":slot_new", ":string_new"),
+            (try_end),
+        (try_end),
+
         (call_script, "script_add_log_entry", logent_game_start, "trp_player", -1, -1, -1),
 ]),
 
@@ -16287,7 +16373,9 @@ scripts = [
 #        (display_message, "@Objectionable action check: {s12}"),
         (assign, ":grievance_minimum", -2),
         (assign, ":npc_last_displayed", 0),
-        (try_for_range, ":npc", companions_begin, companions_end),
+        (try_for_range, ":npc", companions_begin, new_companions_end),
+        	(this_or_next|is_between, ":npc", companions_begin, companions_end),
+        	(is_between, ":npc", new_companions_begin, new_companions_end),
             (main_party_has_troop, ":npc"),
 ###Primary morality check
             (try_begin),
@@ -16369,7 +16457,9 @@ scripts = [
 ("post_battle_personality_clash_check",
 [
 #            (display_message, "@Post-victory personality clash check"),
-            (try_for_range, ":npc", companions_begin, companions_end),
+            (try_for_range, ":npc", companions_begin, new_companions_end),
+            	(this_or_next|is_between, ":npc", companions_begin, companions_end),
+        		(is_between, ":npc", new_companions_begin, new_companions_end),
                 (eq, "$disable_npc_complaints", 0),
 
                 (main_party_has_troop, ":npc"),
@@ -16390,7 +16480,9 @@ scripts = [
 
             (try_end),
 
-            (try_for_range, ":npc", companions_begin, companions_end),
+            (try_for_range, ":npc", companions_begin, new_companions_end),
+            	(this_or_next|is_between, ":npc", companions_begin, companions_end),
+        		(is_between, ":npc", new_companions_begin, new_companions_end),
                 (troop_slot_eq, ":npc", slot_troop_personalitymatch_state, 0),
                 (eq, "$disable_npc_complaints", 0),
                 (main_party_has_troop, ":npc"),
@@ -20136,7 +20228,9 @@ scripts = [
 		(eq, ":rnd", 0),
 		(heal_party, "p_main_party"),
 	(else_try),
-		(try_for_range, ":npc", companions_begin, companions_end),
+		(try_for_range, ":npc", companions_begin, new_companions_end),
+    		(this_or_next|is_between, ":npc", companions_begin, companions_end),
+        	(is_between, ":npc", new_companions_begin, new_companions_end),
 			(party_count_companions_of_type, ":num", "p_main_party", ":npc"),
 			(eq, ":num", 1),
 			(store_troop_health, ":hp", ":npc", 0),
@@ -20166,7 +20260,9 @@ scripts = [
 	#    (try_end),
 		(troop_set_health, "trp_player", ":hp"),
 	(try_end),
-	(try_for_range, ":troop", companions_begin, companions_end),
+	(try_for_range, ":troop", companions_begin, new_companions_end),
+    	(this_or_next|is_between, ":troop", companions_begin, companions_end),
+        (is_between, ":troop", new_companions_begin, new_companions_end),
 		(troop_get_slot, ":local3", ":troop", 0),
 		(eq, ":local3", 1),
 		(store_troop_health, ":hp", ":troop", 0),
@@ -20717,7 +20813,9 @@ scripts = [
 			(eq, ":local5", 1),
 
 			#swy: both lists are contiguous, that's why this seems to work. was hardcoded
-			(try_for_range, ":npc", companions_begin, heroes_end),
+			(try_for_range, ":npc", companions_begin, new_companions_end),
+		    	(this_or_next|is_between, ":npc", companions_begin, heroes_end),
+        		(is_between, ":npc", new_companions_begin, new_companions_end),
 				(eq, ":troop_comp", ":npc"),
 				(assign, ":local8", ":local0"),
 				(val_add, ":local8", 5),
@@ -20864,7 +20962,9 @@ scripts = [
 		(agent_is_human, ":agent"),
 		(agent_is_ally, ":agent"),
 		(agent_get_troop_id, ":local2", ":agent"),
-		(try_for_range, ":npc", companions_begin, companions_end),
+		(try_for_range, ":npc", companions_begin, new_companions_end),
+	    	(this_or_next|is_between, ":npc", companions_begin, companions_end),
+        	(is_between, ":npc", new_companions_begin, new_companions_end),
 			(eq, ":local2", ":npc"),
 			(troop_get_slot, ":local4", ":npc", slot_troop_wound_mask),
 			(assign, ":hp", 100),
@@ -20947,7 +21047,9 @@ scripts = [
         (try_begin),
             (party_slot_eq, "$current_town", slot_town_castle, -1), #no town castle
             (neq, "$sneaked_into_town", 1), #haven't sneaked in
-            (try_for_range, ":cur_troop", companions_begin, companions_end),
+            (try_for_range, ":cur_troop", companions_begin, new_companions_end),
+            	(this_or_next|is_between, ":cur_troop", companions_begin, companions_end),
+        		(is_between, ":cur_troop", new_companions_begin, new_companions_end),
                 (troop_slot_eq, ":cur_troop", slot_troop_cur_center, "$current_town"),
                 (neg|main_party_has_troop, ":cur_troop"), #not already hired
                 (assign, ":on_lease", 0),
@@ -21077,7 +21179,9 @@ scripts = [
 ("injure_companions",[
  	 (try_begin),
 		(eq, "$tld_option_injuries",1),
-		(try_for_range, ":npc",companions_begin,companions_end), # assume companions are always in our main party, if ever spawned on battlefield
+		(try_for_range, ":npc",companions_begin,new_companions_end), # assume companions are always in our main party, if ever spawned on battlefield
+        	(this_or_next|is_between, ":npc", companions_begin, companions_end),
+    		(is_between, ":npc", new_companions_begin, new_companions_end),
 			(troop_slot_eq, ":npc", slot_troop_wounded, 1), # was wounded in this battle?
 			(call_script, "script_injury_routine", ":npc"),
 			(troop_set_slot,":npc", slot_troop_wounded, 0),

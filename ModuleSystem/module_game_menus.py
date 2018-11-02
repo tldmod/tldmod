@@ -490,6 +490,16 @@ game_menus = [
             (troop_get_slot, reg7, ":npc", slot_troop_personalitymatch_state),    
             (display_message, "@{s4}: M{reg3}, 2M{reg4}, PC{reg5}, 2PC{reg6}, PM{reg7}"),
         (try_end),
+        (try_for_range, ":npc", new_companions_begin, new_companions_end),
+            (main_party_has_troop, ":npc"),
+            (str_store_troop_name, s4, ":npc"),
+            (troop_get_slot, reg3, ":npc", slot_troop_morality_state),
+            (troop_get_slot, reg4, ":npc", slot_troop_2ary_morality_state),
+            (troop_get_slot, reg5, ":npc", slot_troop_personalityclash_state),    
+            (troop_get_slot, reg6, ":npc", slot_troop_personalityclash2_state),    
+            (troop_get_slot, reg7, ":npc", slot_troop_personalitymatch_state),    
+            (display_message, "@{s4}: M{reg3}, 2M{reg4}, PC{reg5}, 2PC{reg6}, PM{reg7}"),
+        (try_end),
         ]),
 #NPC companion changes end
       ("view_faction_strengths_report",[],"View faction strengths report.",[(jump_to_menu, "mnu_faction_strengths_report"),]),
@@ -2034,9 +2044,13 @@ game_menus = [
 	("camp_cctest_injure_party_heroes", [], "Injure Companions",
 	[
 		(try_for_range, ":npc", companions_begin, companions_end),
-            		(main_party_has_troop, ":npc"),
+    		(main_party_has_troop, ":npc"),
 			(call_script,"script_injury_routine", ":npc"),
-        	(try_end),
+    	(try_end),
+		(try_for_range, ":npc", new_companions_begin, new_companions_end),
+    		(main_party_has_troop, ":npc"),
+			(call_script,"script_injury_routine", ":npc"),
+    	(try_end),
 	]),
 
     	("camp_cctest_heal",[],"Heal my Injuries. (Does not fix prof. or attributes.)",[(troop_set_slot, "trp_player", slot_troop_wound_mask, 0)]),
@@ -5768,6 +5782,14 @@ game_menus = [
 				(eq,reg12,0), #10% chance for injury
 				(call_script,"script_injury_routine", ":npc"), # chances to get injury halved when victory
 			(try_end),
+			(try_for_range, ":npc",new_companions_begin,new_companions_end), # assume companions are always in our main party, if ever spawned on battlefield
+				(main_party_has_troop,":npc"),
+				(troop_slot_eq, ":npc", slot_troop_wounded, 1), # was wounded in this battle?
+				(troop_set_slot,":npc", slot_troop_wounded, 0),
+				(store_random_in_range, reg12,0,10),
+				(eq,reg12,0), #10% chance for injury
+				(call_script,"script_injury_routine", ":npc"), # chances to get injury halved when victory
+			(try_end),
 		(try_end),
 		## Kham - Oath of Vengeance Kills Start
 		(try_begin),
@@ -5914,6 +5936,14 @@ game_menus = [
 			(try_begin),
 				(eq, "$tld_option_injuries",1),
 				(try_for_range, ":npc",companions_begin,companions_end), # assume companions are always in our main party, if ever spawned on battlefield
+					(main_party_has_troop,":npc"),
+					(troop_slot_eq, ":npc", slot_troop_wounded, 1), # was wounded in this battle?
+					(troop_set_slot,":npc", slot_troop_wounded, 0),
+					(store_random_in_range, reg12,0,5),
+					(eq,reg12,0), #20% chance for injury
+					(call_script, "script_injury_routine", ":npc"),
+				(try_end),
+				(try_for_range, ":npc",new_companions_begin,new_companions_end), # assume companions are always in our main party, if ever spawned on battlefield
 					(main_party_has_troop,":npc"),
 					(troop_slot_eq, ":npc", slot_troop_wounded, 1), # was wounded in this battle?
 					(troop_set_slot,":npc", slot_troop_wounded, 0),
@@ -8783,6 +8813,17 @@ game_menus = [
               (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
               (troop_set_health, ":npc", 100),
             (try_end),
+            (try_for_range, ":npc", new_companions_begin, new_companions_end),
+              (main_party_has_troop, ":npc"),
+              (store_random_in_range, ":rand", 0, 100),
+              (lt, ":rand", 30),
+              (remove_member_from_party, ":npc", "p_main_party"),
+              (troop_set_slot, ":npc", slot_troop_occupation, 0),
+              (troop_set_slot, ":npc", slot_troop_playerparty_history, pp_history_scattered),
+              (store_faction_of_party, ":victorious_faction", "$g_encountered_party"),
+              (troop_set_slot, ":npc", slot_troop_playerparty_history_string, ":victorious_faction"),
+              (troop_set_health, ":npc", 100),
+            (try_end),
             
 			(change_screen_map),
 			(display_message,"@Time passes..."),
@@ -11603,6 +11644,11 @@ game_menus = [
 		(set_visitor, ":cur_entry", ":npc"),
 		(val_add, ":cur_entry", 1),
 	(try_end),
+	(try_for_range, ":npc", new_companions_begin, new_companions_end),
+		(main_party_has_troop, ":npc"),
+		(set_visitor, ":cur_entry", ":npc"),
+		(val_add, ":cur_entry", 1),
+	(try_end),
 
 	(assign, ":cur_entry", 17),
 	(try_for_range, ":unused", 0, reg21),
@@ -11676,6 +11722,11 @@ game_menus = [
 	(assign, reg1, 0),
 	(assign, reg2, 0),
 	(try_for_range, ":npc", companions_begin, companions_end),
+		(main_party_has_troop, ":npc"),
+		(assign, reg0, 0),
+		(val_add, reg1, 1),
+	(try_end),
+	(try_for_range, ":npc", new_companions_begin, new_companions_end),
 		(main_party_has_troop, ":npc"),
 		(assign, reg0, 0),
 		(val_add, reg1, 1),

@@ -3147,7 +3147,49 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 ["generic_hero_knight","generic_hero_knight","generic_hero_knight",tf_hero|tf_male| tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 ["generic_hero_mounted_archer","generic_hero_mounted_archer","generic_hero_mounted_archer",tf_hero|tf_male|tfg_armor| tfg_helm| tfg_boots| tfg_shield,0,0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],knight_attrib_1,wp_tier_4,knight_skills_2,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],
 
+# New Companions Begin
 
+["npc18","Turmbathu","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_khand,
+   [itm_prisoner_coll_chain, itm_feet_chains],
+      str_16|agi_15|int_4|cha_3|level(9),wp_one_handed(70)|wp_two_handed(80)|wp_polearm(80)|wp_archery(70)|wp_throwing(90),knows_athletics_3|knows_power_strike_4|knows_shield_1|knows_ironflesh_4|knows_weapon_master_2,0x00000008ff00200007e68b1850a756c400000000001f34720000000000000000],
+
+["npc19","Heidrek","_",tf_hero| tf_evil_man | tf_unmoveable_in_party_window,0,0,fac_dunland,
+   [itm_dunland_armor_g,itm_dunland_wolfboots,itm_dunland_spear,itm_dunland_javelin,],
+      str_11|agi_12|int_5|cha_5|level(5),wp_one_handed(60)|wp_two_handed(60)|wp_polearm(60)|wp_archery(60)|wp_throwing(60),knows_athletics_2|knows_power_strike_1|knows_shield_1|knows_ironflesh_2|knows_weapon_master_1|knows_power_throw_1|knows_riding_1|knows_leadership_1,0x00000006a8001186532b56da62752d6400000000001d5ab20000000000000000],
+
+["npc20","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+["npc21","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+["npc22","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+["npc23","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+["npc24","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+["npc25","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+["npc26","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+["npc27","Zigûrphel","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_guldur,
+   [itm_evil_light_armor,itm_mordor_longsword,(itm_leather_boots, imod_meek),(itm_leather_gloves, imod_meek),],
+      str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
+
+# New Companions END
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],

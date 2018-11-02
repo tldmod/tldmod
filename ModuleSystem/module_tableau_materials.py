@@ -45,7 +45,8 @@ tableaus = [
 	(try_begin), # TLD equipment appropriateness check
 		(eq, "$tld_option_crossdressing", 0),
 		(this_or_next|eq, ":troop_no", "trp_player"),
-		(is_between, ":troop_no", companions_begin, companions_end),
+		(this_or_next|is_between, ":troop_no", companions_begin, companions_end),
+    (is_between, ":troop_no", new_companions_begin, new_companions_end),
 		(call_script, "script_check_equipped_items", ":troop_no"),
 	(try_end),
 
