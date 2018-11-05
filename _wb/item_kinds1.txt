@@ -2438,7 +2438,7 @@ itemsfile version 2
  itm_dwarf_nasal Dwarf_Nasal_Tophelm Dwarf_Nasal_Tophelm 4  DwarfHelmIronheadNasal 1  DwarfHelmIronheadNasal 0  DwarfHelmIronheadNasal_reinf 134217728  DwarfHelmIronheadFace 536870912  65548 0 1200 704643072 2 100 37 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_north_nasal_helm North_Nasal_Helm North_Nasal_Helm 3  north_nasal 1  north_nasal 0  north_nasal_2d 704643072  65548 0 800 704643072 2 100 32 0 0 0 0 0 0 0 0 0 0
+ itm_north_nasal_helm North_Nasal_Helm North_Nasal_Helm 3  north_nasal 1  north_nasal 0  north_nasal_good 704643072  65548 0 800 704643072 2 100 32 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_helm_p Dwarf_King_Helm Dwarf_King_Helm 1  DwarfHelmKingCrown 0  12 0 2000 704643072 2 100 50 0 0 0 0 0 0 0 0 0 0
@@ -2447,7 +2447,7 @@ itemsfile version 2
  itm_dwarf_miner Dwarf_Light_Helm Dwarf_Light_Helm 4  DwarfHelmMinerCap 1  DwarfHelmMinerCap 0  DwarfHelmMiner 134217728  DwarfHelmMiner 67108864  65548 0 500 251658240 2 100 14 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_north_chieftain North_Chieftain_Helm North_Chieftain_Helm 1  north_nasal_2d 1  65548 0 1200 704643072 2 100 34 0 0 0 0 0 0 0 0 0 0
+ itm_north_chieftain North_Chieftain_Helm North_Chieftain_Helm 1  north_nasal_good 1  65548 0 1200 704643072 2 100 34 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_helm_round Dwarf_Round_Helm Dwarf_Round_Helm 3  DwarfHelmRoundChain 0  DwarfHelmRoundChain 0  DwarfHelmRoundMask 704643072  65548 0 1000 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0

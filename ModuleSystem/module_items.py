@@ -1364,11 +1364,11 @@ items =[
 ["dwarf_hood","Dwarf_Hood",[("DwarfHelmHood",0)],itp_type_head_armor|itp_shop,0,100,weight(1)|head_armor(12)|difficulty(0),imodbits_elf_cloth],
 ["dwarf_nasal","Dwarf_Nasal_Tophelm",[("DwarfHelmIronheadNasal",imodbit_plain),("DwarfHelmIronheadNasal",0),("DwarfHelmIronheadNasal_reinf",imodbit_reinforced),("DwarfHelmIronheadFace",imodbit_lordly)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(37)|difficulty(0),imodbits_elf_armor],
 #["dwarf_helm_n", "Dwarf Helm",[("DwarfHelmIronheadLeather",0)],  itp_shop|itp_type_head_armor   ,0, 479 , weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
-["north_nasal_helm","North_Nasal_Helm",[("north_nasal",imodbit_plain),("north_nasal",0),("north_nasal_2d",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_elf_armor],
+["north_nasal_helm","North_Nasal_Helm",[("north_nasal",imodbit_plain),("north_nasal",0),("north_nasal_good",imodbits_armor_good)],itp_type_head_armor|itp_shop,0,800,weight(2)|head_armor(32)|difficulty(0),imodbits_elf_armor],
 #next one only for reward item. NPCs use imod -> witchkinghelm
 ["dwarf_helm_p","Dwarf_King_Helm",[("DwarfHelmKingCrown",0)],itp_type_head_armor|0,0,2000,weight(2)|head_armor(50)|difficulty(0),imodbits_elf_armor],
 ["dwarf_miner","Dwarf_Light_Helm",[("DwarfHelmMinerCap",imodbit_plain),("DwarfHelmMinerCap",0),("DwarfHelmMiner",imodbit_reinforced),("DwarfHelmMiner",imodbit_hardened)],itp_type_head_armor|itp_shop,0,500,weight(2)|head_armor(14)|difficulty(0),imodbits_elf_cloth],
-["north_chieftain","North_Chieftain_Helm",[("north_nasal_2d",imodbit_plain)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(34)|difficulty(0),imodbits_elf_armor],
+["north_chieftain","North_Chieftain_Helm",[("north_nasal_good",imodbit_plain)],itp_type_head_armor|itp_shop,0,1200,weight(2)|head_armor(34)|difficulty(0),imodbits_elf_armor],
 ["dwarf_helm_round","Dwarf_Round_Helm",[("DwarfHelmRoundChain",0),("DwarfHelmRoundChain",0),("DwarfHelmRoundMask",imodbits_elf_armor)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 ["free_dwarf_helm_v","Dwarf_Chain_Sallet",[("DwarfHelmSalletChain",0)],itp_type_head_armor|itp_shop,0,1000,weight(2)|head_armor(35)|difficulty(0),imodbits_elf_armor],
 #["dwarf_helm_w", "Dwarf Helm",[("DwarfHelmSalletLeather",0)],    itp_shop|itp_type_head_armor   ,0, 479 , weight(2.25)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
