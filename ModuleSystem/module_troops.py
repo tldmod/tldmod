@@ -3134,6 +3134,13 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       str_11|agi_13|int_21|cha_10|level(20),wp_one_handed(100)|wp_two_handed(100)|wp_polearm(100)|wp_archery(100)|wp_throwing(100),knows_athletics_3|knows_power_strike_2|knows_shield_1|knows_ironflesh_3|knows_weapon_master_2|knows_power_throw_2|knows_riding_4|knows_trainer_6|knows_tactics_2|knows_wound_treatment_7|knows_surgery_7|knows_first_aid_7|knows_persuasion_2|knows_leadership_2|knows_prisoner_management_2,0x00000005ff001003074372d248664b2700000000001fd6b50000000000000000],
 
 # New Companions END
+
+# Werewolf
+
+["werewolf","Werewolf","Werewolves", tf_orc| tfg_gloves| tfg_armor| tfg_helm| tfg_horse| tfg_boots| tf_no_capture_alive,0,0,fac_outlaws,
+  [itm_warg_ghost_lance,itm_warg_ghost_armour,itm_empty_legs,itm_empty_hands,itm_empty_head,itm_werewolf],
+    str_30|agi_7|int_4|cha_4|level(25),0,knows_riding_10|knows_ironflesh_10|knows_power_strike_2,orc_face7,orc_face2], #0x7D = str_127
+
 ["last","BUG","BUG",tf_hero,0,0,fac_commoners,[],0,0,0,0],
 
 ["multiplayer_profile_troop_male","multiplayer_profile_troop_male","multiplayer_profile_troop_male", tf_hero, 0, 0,fac_commoners,[itm_leather_jerkin, itm_leather_boots],0,0,0,0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000],

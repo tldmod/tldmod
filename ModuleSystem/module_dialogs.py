@@ -849,6 +849,60 @@ dialogs = [
             # (assign, "$npc_quit_morale", reg0),
       ]],
 
+## Ziggy Convo Here after Ritual Success
+
+[anyone|plyr,"member_talk", [(eq, "$g_talk_troop", "trp_npc20"), (troop_slot_eq, "trp_npc20", slot_troop_wealth, 2)], 
+  "Zigûrphel, I require another Wolf of you. Can you do this?", "ziggy_ask_more",
+  []],
+
+[anyone,"ziggy_ask_more", [(party_get_num_prisoners, ":num_prisoners", "p_main_party"), (lt, ":num_prisoners", 1),], 
+  "You have no life to offer, Commander.", "close_window",
+  [(change_screen_map)]],
+
+
+[anyone,"ziggy_ask_more", [(store_current_hours, ":cur_hours"), (troop_get_slot, ":ziggy_rested", "trp_npc20", slot_troop_trainer_met), (lt, ":cur_hours", ":ziggy_rested")], 
+  "Give me some more time, Commander. The ritual drained me.", "ziggy_not_rested",
+  []],
+
+[anyone,"ziggy_ask_more", [
+  (party_get_num_prisoners, ":num_prisoners", "p_main_party"), (ge, ":num_prisoners", 1),
+  (store_current_hours, ":cur_hours"), (troop_get_slot, ":ziggy_rested", "trp_npc20", slot_troop_trainer_met), (ge, ":cur_hours", ":ziggy_rested"),
+  (party_get_num_companion_stacks,":stacks","p_main_party"),
+  (assign, ":num_werewolves", 0),
+  (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", ":stack"),
+    (eq, ":troop_id", "trp_werewolf"),
+    (val_add, ":num_werewolves", 1),
+  (try_end),
+  (store_character_level, ":ziggy_level", "trp_npc20"),
+  (store_sub, ":ziggy_wolves", ":ziggy_level", 19),
+  (ge, ":num_werewolves", ":ziggy_wolves"),
+  ],
+  "I can only control so much. I'll need to become more powerful...", "close_window",
+  [(change_screen_map)]],
+
+[anyone,"ziggy_ask_more", [
+  (party_get_num_prisoners, ":num_prisoners", "p_main_party"), (ge, ":num_prisoners", 1),
+  (store_current_hours, ":cur_hours"), (troop_get_slot, ":ziggy_rested", "trp_npc20", slot_troop_trainer_met), (ge, ":cur_hours", ":ziggy_rested"),
+  (party_get_num_companion_stacks,":stacks","p_main_party"),
+  (assign, ":num_werewolves", 0),
+  (try_for_range,":stack",0,":stacks"),
+    (party_stack_get_troop_id, ":troop_id", ":stack"),
+    (eq, ":troop_id", "trp_werewolf"),
+    (val_add, ":num_werewolves", 1),
+  (try_end),
+  (store_character_level, ":ziggy_level", "trp_npc20"),
+  (store_sub, ":ziggy_wolves", ":ziggy_level", 19),
+  (lt, ":num_werewolves", ":ziggy_wolves"),], 
+  "Of course, Commander. Which one do you have to offer?", "ziggy_choose_prisoners",
+  []],
+
+[anyone|plyr,"ziggy_not_rested", [], 
+  "Rest quick then, I need more of these.", "close_window",
+  [(change_screen_map)]],
+
+
+
 # (CppCoder): TODO: Fix companions going back to ruins if there hometown is destroyed.
 [anyone,"member_separate", [#            (gt, "$npc_quit_morale", 30),
         (troop_get_slot, ":home_center", "$g_talk_troop", slot_troop_cur_center),
@@ -1295,6 +1349,120 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
      # (troop_get_type, reg3, "$temp"),
      # (assign, "$g_center_taken_by_player_faction", -1),
      # ]],
+
+# Ziggy's Werewolf Convo First / Second Time
+
+[anyone, "event_triggered", [
+                     (eq, "$g_talk_troop", "trp_npc20"), #Ziggy
+                     (eq, "$talk_context", tc_starting_quest),  
+                     (troop_slot_eq, "trp_npc20", slot_troop_wealth, 0), #First time talk 
+                     ],
+  "Commander, a word. You have crushed our foes, and taken some prisoners - well and good. I have a mighty gift to offer you, if you would but grant me a small thing in exchange: give into my hands one of those we captured.", "ziggy_ask_prisoners", []],
+
+[anyone, "event_triggered", [
+                     (eq, "$g_talk_troop", "trp_npc20"), #Ziggy
+                     (eq, "$talk_context", tc_starting_quest),  
+                     (troop_slot_eq, "trp_npc20", slot_troop_wealth, 1), #Second time talk 
+                     ],
+  "Commander, congratulations on your triumph. If you remember what I told you the last time, I have a use for one of these captives. It will be to your benefit, Commander, I assure you.", "ziggy_ask_prisoners", []],
+
+[anyone|plyr, "ziggy_ask_prisoners", [],
+  "Enough of your mysteries, Zigûrphel! Speak plainly! What do you want a prisoner for?", "ziggy_ask_why", []],
+
+[anyone, "ziggy_ask_why", [],
+  "Patience, patience, Commander! Only indulge me in this trifling matter, and I will show you a marvel.", "ziggy_reason", []],
+
+[anyone|plyr, "ziggy_reason", [],
+  "You intrigue me. Very well. I will leave one of the captives to your... tender care.", "ziggy_yes", []],
+
+
+[anyone|plyr, "ziggy_reason", [],
+  "Not at this time, Zigûrphel. Go back to your post.", "ziggy_no", []],
+
+[anyone, "ziggy_no", [(troop_slot_eq, "trp_npc20", slot_troop_wealth, 0)],
+  "Very well, Commander, but you would be a fool to forego my gift.", "close_window", [(troop_set_slot, "trp_npc20", slot_troop_wealth, 1),(change_screen_map)]],
+
+[anyone, "ziggy_no", [(troop_slot_ge, "trp_npc20", slot_troop_wealth, 1)],
+  "Very well, Commander.", "close_window", [(change_screen_map)]],
+
+[anyone, "ziggy_yes", [],
+  "Excellent. Which of these specimens would you give?", "ziggy_choose_prisoners", []],
+
+[anyone|plyr|repeat_for_troops, "ziggy_choose_prisoners", 
+  [   (party_get_num_prisoner_stacks, ":num_prisoners", "p_main_party"),
+      (ge, ":num_prisoners", 1),
+      (store_repeat_object, ":prisoners"),
+      (neg|is_between, ":prisoners", kingdom_heroes_begin, kingdom_heroes_end),
+      (party_count_prisoners_of_type, ":prisoner_type", "p_main_party", ":prisoners"),
+      (gt, ":prisoner_type", 1),
+      (str_store_troop_name, s1, ":prisoners"),
+  ],
+  
+  "{s1}", "ziggy_chosen_prisoner", 
+  [(store_repeat_object, "$temp"),
+   ]],
+
+[anyone|plyr, "ziggy_choose_prisoners", 
+  [],
+  "I have none to offer.", "ziggy_no", 
+  [(troop_set_slot, "trp_npc20", slot_troop_wealth, 2)]],
+
+[anyone, "ziggy_chosen_prisoner", [(neg|troop_slot_eq, "trp_npc20", slot_troop_wealth, 2)],
+  "Thank you, Commander! A moment... ah yes, this one should do nicely... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!", "ziggy_ritual", 
+  [(store_character_level, ":ziggy_level", "trp_npc20"),
+   (store_character_level, ":prisoner_level", "$temp"),
+   (store_mul, ":chance", ":ziggy_level", 2),
+   (val_add, ":chance", ":prisoner_level"),
+   (val_min, ":chance", 100),
+   (assign, "$temp2", 0),
+   (store_random_in_range, ":random", 0, 100),
+   (try_begin),
+    (le,":random", ":chance"),
+    (assign, "$temp2", 1),
+   (else_try),
+    (assign, "$temp2", 0),
+   (try_end)]],
+
+[anyone, "ziggy_chosen_prisoner", [(troop_slot_eq, "trp_npc20", slot_troop_wealth, 2)],
+  " What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!", "ziggy_ritual", 
+  [(store_character_level, ":ziggy_level", "trp_npc20"),
+   (store_character_level, ":prisoner_level", "$temp"),
+   (store_mul, ":chance", ":ziggy_level", 2),
+   (val_add, ":chance", ":prisoner_level"),
+   (val_min, ":chance", 100),
+   (assign, "$temp2", 0),
+   (store_random_in_range, ":random", 0, 100),
+   (try_begin),
+    (le,":random", ":chance"),
+    (assign, "$temp2", 1),
+   (else_try),
+    (assign, "$temp2", 0),
+   (try_end)]],
+
+[anyone, "ziggy_ritual", [(troop_slot_eq, "trp_npc20", slot_troop_wealth, 0), (eq, "$temp2", 1),],
+  "Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.", "ziggy_ritual_succeed", 
+  [(party_remove_prisoners, "p_main_party", "$temp", 1),(troop_set_slot, "trp_npc20", slot_troop_wealth, 2),
+   (party_force_add_members, "p_main_party", "trp_werewolf", 1),
+   ]],
+
+[anyone, "ziggy_ritual", [(troop_slot_ge, "trp_npc20", slot_troop_wealth, 2), (eq, "$temp2", 1),],
+  "Always such a joy to bring a foe properly to heel.", "ziggy_ritual_succeed", 
+  [(party_remove_prisoners, "p_main_party", "$temp", 1),
+   (party_force_add_members, "p_main_party", "trp_werewolf", 1),
+   ]],
+
+[anyone, "ziggy_ritual", [(eq, "$temp2", 0),],
+  "Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!", "ziggy_choose_prisoners", 
+  [(party_remove_prisoners, "p_main_party", "$temp", 1),]],
+
+[anyone, "ziggy_ritual_succeed", [],
+  "And of course, allow me but a little rest; then you may pass another captive into my care. I will do the rest.", "close_window", 
+  [(store_current_hours, ":cur_hours"),
+   (val_add, ":cur_hours", 24), #add one day
+   (troop_set_slot, "trp_npc20", slot_troop_trainer_met, ":cur_hours"), #use this slot to check if Ziggy can provide more wolves
+   (change_screen_map)]],
+
+
 #Morality objections
 [anyone, "event_triggered", [
                      (store_conversation_troop, "$map_talk_troop"),

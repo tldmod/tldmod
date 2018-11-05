@@ -1397,8 +1397,9 @@ items =[
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 #free, Jan 2017, -> rohan_armor_th:
 ["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0),("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_covers_head|itp_replaces_helm|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
-["free_whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,], #unused since Jan 2018, =itm_nazgulrobe
-#BANNERS 
+["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(30)|horse_speed(60)|horse_maneuver(60)|horse_charge(25)|horse_scale(100),imodbits_none,[]],
+#["free_whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,], #unused since Jan 2018, =itm_nazgulrobe
+#BANNERS  
 # TODO: PLEASE DO NOT CHANGE BANNER ORDER, THIS IS A PLANNED FEATURE FOR THE MORALE SYSTEM. -CC #
 ["mordor_banner","Mordor_Banner",[("banner_mordor",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_weapon_wood],
 ["isengard_banner","Isengard_banner",[("banner_isengard",0)],itp_type_two_handed_wpn|itp_primary|itp_two_handed|itp_wooden_parry|itp_cant_use_on_horseback, itc_banner,1000,weight(3)|difficulty(0)|spd_rtng(90)|weapon_length(120)|swing_damage(20,blunt)|thrust_damage(25,blunt),imodbits_weapon_wood],

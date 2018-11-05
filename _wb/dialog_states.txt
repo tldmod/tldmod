@@ -65,6 +65,9 @@ do_member_trade
 view_member_char_requested
 do_member_view_char
 member_separate
+ziggy_ask_more
+ziggy_not_rested
+ziggy_choose_prisoners
 member_separate_confirm
 member_separate_yes
 member_question
@@ -93,6 +96,14 @@ companion_recruit_backstory_delayed_response
 companion_rehire
 companion_was_dismissed
 companion_rehire_refused
+ziggy_ask_prisoners
+ziggy_ask_why
+ziggy_reason
+ziggy_yes
+ziggy_no
+ziggy_chosen_prisoner
+ziggy_ritual
+ziggy_ritual_succeed
 companion_objection_response
 companion_personalityclash2_b
 companion_personalityclash2_response

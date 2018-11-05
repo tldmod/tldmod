@@ -2934,20 +2934,35 @@ simple_triggers = [
 
   ]),
 
-  # (61)
-  (1,[(try_begin), # npc and player healing from wounds (should be 25 hours)
-        (eq, "$tld_option_injuries",1),
-        (try_for_range, ":npc",companions_begin,new_companions_end),
-          (this_or_next|is_between, ":npc", companions_begin, companions_end),
-          (is_between, ":npc", new_companions_begin, new_companions_end),
-          (store_random_in_range, reg12,0,70),
-          (eq,reg12,0), #10% chance for healing
-          (call_script, "script_healing_routine", ":npc"),
-        (try_end),
-        (store_random_in_range, reg12,0,35),
-        (eq,reg12,0), #20% chance for healing
-        (call_script, "script_healing_routine", "trp_player"),
+  # (61) # Heal Wounds every 10 hours + check prisoners for Sorceress Companion
+  (10,[
+
+    (try_begin), # npc and player healing from wounds (should be 25 hours) - kham changed to 10 hours, was 1.
+      (eq, "$tld_option_injuries",1),
+      (party_get_skill_level, ":wound_treatment", skl_wound_treatment),
+      (try_for_range, ":npc",companions_begin,new_companions_end),
+        (this_or_next|is_between, ":npc", companions_begin, companions_end),
+        (is_between, ":npc", new_companions_begin, new_companions_end),
+        (store_add, ":chance", 15, ":wound_treatment"),
+        (store_random_in_range, ":random",0,100),
+        (le,":random",":chance"), #10% chance for healing - Kham: changed to 15% and added wound treatment effect
+        (call_script, "script_healing_routine", ":npc"),
       (try_end),
+      (store_random_in_range, ":random_2",0,100),
+      (store_add, ":chance_2", 30, ":wound_treatment"),
+      (le,":random_2",":chance_2"), #20% chance for healing - changed to 30% and added wound treatment effect
+      (call_script, "script_healing_routine", "trp_player"),
+    (try_end),
+
+    (try_begin),
+      (main_party_has_troop, "trp_npc20"), #player has Zigurphel
+      (troop_get_slot, ":ziggy_talk", "trp_npc20", slot_troop_wealth), #Use this to check if she has asked and player has accepted already.
+      (le, ":ziggy_talk", 1), 
+      (party_get_num_prisoners, ":prisoners", "p_main_party"),
+      (ge, ":prisoners", 6),
+      (assign, "$talk_context", tc_starting_quest), #Use this for Ziggy's first convo
+      (start_map_conversation, "trp_npc20"),
+    (try_end),
   ]),
   
   # (62) Control Gandalf and Nazgul states
