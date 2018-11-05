@@ -3983,7 +3983,7 @@ mission_templates = [ # not used in game
         (eq, ":faction", "fac_umbar"),
         (assign, ":allies_melee_tier_1", "trp_pelargir_infantry"),
         #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_pelargir_infantry",0), #Commented out - If we want to upgrade allies too.
-        (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
+        (assign, ":allies_archer_tier_1", "trp_pelargir_watchman"),
         #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
         #(display_message, "@DEBUG: Gondor Troops Spawned", color_bad_news),
       (else_try), #Dale

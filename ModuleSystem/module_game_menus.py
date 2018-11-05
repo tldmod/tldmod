@@ -9995,28 +9995,49 @@ game_menus = [
 	        (store_random_in_range, ":random_no", 0, 2),
 	        (try_begin),
 	          (eq, ":quest_object_faction","fac_gondor"),
-	          (eq, ":random_no", 0),
-	          (assign, ":bandit_troop_1", "trp_corsair_warrior"),
-	          (assign, ":bandit_troop_2", "trp_militia_of_umbar"),
+				(try_begin),				
+					(eq, ":random_no", 0),
+					(assign, ":bandit_troop_1", "trp_corsair_warrior"),
+					(assign, ":bandit_troop_2", "trp_militia_of_umbar"),
+				(else_try),						
+					(assign, ":bandit_troop_1", "trp_large_orc_despoiler"),
+					(assign, ":bandit_troop_2", "trp_wolf_rider_of_isengard"),	
+				(try_end),
 	        (else_try),
 	          (eq, ":quest_object_faction","fac_rohan"),
-	          (eq, ":random_no", 0),
-	          (assign, ":bandit_troop_1", "trp_dunnish_wildman"),
-	          (assign, ":bandit_troop_2", "trp_dunnish_raven_rider"),
+			  	(try_begin),				
+					(eq, ":random_no", 0),
+					(assign, ":bandit_troop_1", "trp_dunnish_wildman"),
+					(assign, ":bandit_troop_2", "trp_dunnish_raven_rider"),
+				(else_try),						
+					(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
+					(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),	
+				(try_end),
 	        (else_try),
-	          (eq, ":random_no", 0),
+
 	          (this_or_next|eq, ":quest_object_faction", "fac_dwarf"),
 	          (			    eq, ":quest_object_faction", "fac_dale"),
-	          (assign, ":bandit_troop_1", "trp_rhun_tribal_warrior"),
-	          (assign, ":bandit_troop_2", "trp_rhun_horse_scout"),
+				(try_begin),
+					(eq, ":random_no", 0),
+					(assign, ":bandit_troop_1", "trp_rhun_tribal_warrior"),
+					(assign, ":bandit_troop_2", "trp_rhun_horse_scout"),
+				(else_try),						
+					(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
+					(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),	
+				(try_end),
 		    (else_try),
 	          (eq, ":quest_object_faction","fac_beorn"),
-	          (eq, ":random_no", 0),
-	          (assign, ":bandit_troop_1", "trp_fell_orc_warrior_gundabad"),
-	          (assign, ":bandit_troop_2", "trp_warg_skirmisher_gundabad"),
-	        (else_try),
-	          (assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
-	          (assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),
+				(try_begin),
+				  (eq, ":random_no", 0),
+					(assign, ":bandit_troop_1", "trp_fell_orc_warrior_gundabad"),
+					(assign, ":bandit_troop_2", "trp_goblin_rider_gundabad"),
+				(else_try),
+					(assign, ":bandit_troop_1", "trp_large_goblin_of_moria"),
+					(assign, ":bandit_troop_2", "trp_wolf_rider_of_moria"),
+				(try_end),
+			(else_try),
+				(assign, ":bandit_troop_1", "trp_large_orc_of_mordor"),
+				(assign, ":bandit_troop_2", "trp_warg_rider_of_gorgoroth"),					
 	        (try_end),
 
 		#Set Which Scene Village is at
@@ -10052,6 +10073,7 @@ game_menus = [
 	        #(val_div, ":level", 2),
 	        #(store_add, ":min_bandits", ":level", 18),
 	        (store_mul, ":min_bandits", ":level", 2), #InVain - nerf attacker numbers and scale them better to the player's level (might be too easy now, we'll see)
+			(val_min, ":min_bandits", 40),
 	        (store_add, ":max_bandits", ":min_bandits", 10),
 	        (store_random_in_range, ":random_no", ":min_bandits", ":max_bandits"),
 	        (set_jump_entry, 0), 
@@ -10060,7 +10082,7 @@ game_menus = [
 	        (set_visitors, 16, ":bandit_troop_1", ":random_no"),
 	        (set_visitors, 10, "trp_farmer", 8),
 	        (set_visitors, 11, "trp_peasant_woman", 8),
-	        (val_div,":random_no",3),
+	        (val_div,":random_no",4),
 	        (set_visitors, 18, ":bandit_troop_2", ":random_no"),
 	        (set_party_battle_mode),
 	        (set_battle_advantage, 0),
@@ -10500,11 +10522,11 @@ game_menus = [
 						#ally infantry, entries 2-7
 						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 2),(set_visitors, 4, "trp_pelargir_vet_infantry", 2),(set_visitors, 5, "trp_footmen_of_gondor", 2),(set_visitors, 6, "trp_footmen_of_gondor", 2),(set_visitors, 7, "trp_pelargir_infantry", 2),
 						#ally archers, entries 8-10
-						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
+						(set_visitors, 8, "trp_pelargir_watchman", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_corsair_marauder", 3),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 3),(set_visitors, 15, "trp_corsair_marauder", 3),(set_visitors, 16, "trp_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_militia_of_umbar", 4),(set_visitors, 19, "trp_harad_skirmisher", 4),(set_visitors, 20, "trp_militia_of_umbar", 4),
+						(set_visitors, 18, "trp_militia_of_umbar", 3),(set_visitors, 19, "trp_harad_skirmisher", 3),(set_visitors, 20, "trp_militia_of_umbar", 3),
 				(else_try),
 					(ge, ":level", 25),
 						#ally infantry, entries 2-7
@@ -10514,7 +10536,7 @@ game_menus = [
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_swordsman", 3),(set_visitors, 14, "trp_harad_infantry", 5),(set_visitors, 15, "trp_corsair_veteran_marauder", 3),(set_visitors, 16, "trp_corsair_marauder", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_marksman_of_umbar", 4),(set_visitors, 19, "trp_harad_archer", 4),(set_visitors, 20, "trp_militia_of_umbar", 4),
+						(set_visitors, 18, "trp_marksman_of_umbar", 3),(set_visitors, 19, "trp_harad_archer", 3),(set_visitors, 20, "trp_militia_of_umbar", 3),
 				(try_end),
 			(else_try),
 			#(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
@@ -10532,7 +10554,7 @@ game_menus = [
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_tribal_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_rhun_tribal_warrior", 5),(set_visitors, 16, "trp_rhun_light_horseman", 5),(set_visitors, 17, "trp_rhun_swift_horseman", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_rhun_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+						(set_visitors, 18, "trp_rhun_horse_archer", 4),(set_visitors, 19, "trp_rhun_horse_archer", 4),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 4),
 				  
 				(else_try),
 					(ge, ":level", 25),
@@ -10543,7 +10565,7 @@ game_menus = [
 						#enemy infantry, entries 12-17
 						(set_visitors, 12, "trp_rhun_tribal_infantry", 5),(set_visitors, 13, "trp_rhun_vet_infantry", 5),(set_visitors, 14, "trp_rhun_vet_infantry", 5),(set_visitors, 15, "trp_infantry_of_the_ox", 5),(set_visitors, 16, "trp_rhun_light_cavalry", 5),(set_visitors, 17, "trp_rhun_noble_cavalry", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_rhun_veteran_horse_archer", 5),(set_visitors, 19, "trp_rhun_horse_archer", 5),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 5),
+						(set_visitors, 18, "trp_rhun_veteran_horse_archer", 4),(set_visitors, 19, "trp_rhun_horse_archer", 4),(set_visitors, 20, "trp_rhun_veteran_horse_archer", 4),
 						
 					(try_end),
 			(try_end),
@@ -10645,7 +10667,7 @@ game_menus = [
 						#enemy infantry, entries 2-7
 						(set_visitors, 2, "trp_pelargir_watchman", 3),(set_visitors, 3, "trp_pelargir_infantry", 3),(set_visitors, 4, "trp_pelargir_vet_infantry", 3),(set_visitors, 5, "trp_footmen_of_gondor", 3),(set_visitors, 6, "trp_footmen_of_gondor", 3),(set_visitors, 7, "trp_pelargir_infantry", 3),
 						#enemy archers, entries 8-10
-						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
+						(set_visitors, 8, "trp_pelargir_watchman", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 2),(set_visitors, 10, "trp_pelargir_marine", 2),
 						#ally infantry, entries 12-17
 						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20
@@ -10655,7 +10677,7 @@ game_menus = [
 						#enemy infantry, entries 2-7
 						(set_visitors, 2, "trp_pelargir_infantry", 3),(set_visitors, 3, "trp_pelargir_vet_infantry", 3),(set_visitors, 4, "trp_pelargir_vet_infantry", 3),(set_visitors, 5, "trp_gondor_swordsmen", 3),(set_visitors, 6, "trp_gondor_veteran_swordsmen", 3),(set_visitors, 7, "trp_pelargir_infantry", 3),
 						#enemy archers, entries 8-10
-						(set_visitors, 8, "trp_pelargir_vet_marine", 3),(set_visitors, 9, "trp_archer_of_gondor", 3),(set_visitors, 10, "trp_pelargir_vet_marine", 3),
+						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_archer_of_gondor", 2),(set_visitors, 10, "trp_pelargir_vet_marine", 2),
 						#ally infantry, entries 12-17
 						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20
