@@ -3472,66 +3472,13 @@ battle_encounters_effects = [
 
 
 # Thunder storms
-  (1, 0, ti_once, #preparations 2
-    [
-      (assign, "$lightning_cycle", -1),
-      (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
-    ],
-    [
-      
-      (assign, "$lightning_cycle", 0),
-      
-      (eq, "$lightning_cycle", 0),
-      (get_startup_sun_light, pos1),
-      (position_get_x, "$sun_r", pos1), # r
-      (position_get_y, "$sun_g", pos1), # g
-      (position_get_z, "$sun_b", pos1), # b
-      (get_startup_ambient_light, pos1),
-      (position_get_x, "$amb_r", pos1), # r
-      (position_get_y, "$amb_g", pos1), # g
-      (position_get_z, "$amb_b", pos1), # b
-      
-  ]),
-  
-  (3, 0.2, 6,       #lightning 1
-    [ (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
-      (eq,"$lightning_cycle",0),
-      (store_random_in_range,":chance",1,5),
-      (eq,":chance",1),
-      (play_sound,"snd_thunder"),
-      (set_startup_sun_light, 1000, 1000, 1000),
-      (set_startup_ambient_light, 1000, 1000, 1000),
-    ],
-    [
-      (set_startup_sun_light, 0, 0, 0),
-      (set_startup_ambient_light, 0, 0, 0),
-      (assign, "$lightning_cycle",1),
-  ]),
-  
-  (0.4,0.1, 6,      #lightning 2
-    [ (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
-      (eq,"$lightning_cycle",1),
-      
-      (set_startup_sun_light, 220, 220, 220),
-      (set_startup_ambient_light, 220, 220, 220),
-    ],
-    [
-      (set_startup_sun_light, 1, 1, 1),
-      (set_startup_ambient_light, 1, 1, 1),
-      (assign,"$lightning_cycle",2),
-  ]),
-  
-  (0.5,0.1, 6,      #lightning 3
-    [ (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM),
-      (eq,"$lightning_cycle",2),
-      (set_startup_sun_light, 150, 150, 150),
-      (set_startup_ambient_light, 150, 150, 150),
-    ],
-    [
-      (set_startup_sun_light, "$sun_r", "$sun_g", "$sun_b"),
-      (set_startup_ambient_light, "$amb_r", "$amb_g", "$amb_b"),
-      (assign,"$lightning_cycle", 0),
-  ]),
+
+  (3, 0.2, 5, [(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (store_random_in_range,":rnd",1,4),(eq,":rnd",1),(set_fog_distance, 200, 0xaaaaaa),],
+        [(set_fog_distance, 80, 0x010101),(get_player_agent_no,":plyr"),(agent_play_sound, ":plyr", "snd_thunder"),(assign, "$lightning_cycle",1),]),
+  (0.4,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",1),(set_fog_distance, 150, 0x777777),],   ###### Lightning afterflashes 
+        [(set_fog_distance, 80, 0x010101),(assign,"$lightning_cycle",2),]),
+  (0.5,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",2),(set_fog_distance, 120, 0x555555),],
+        [(set_fog_distance, 80, 0x010101),(assign,"$lightning_cycle",0),]),
 
 
 ]
