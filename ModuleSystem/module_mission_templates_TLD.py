@@ -1652,6 +1652,7 @@ custom_tld_init_battle = (ti_before_mission_start,0,0,[],
 	# CC: Fixed the broken system. It was checking *parties* against *party templates*, plus some other bugs.
 	(try_begin),
 		(party_get_template_id, ":p_template_1", "$g_encountered_party"),
+		(neg|main_party_has_troop, "trp_npc5"), #Glorfindel scares Nazguls away.
 		(assign, ":p_template_2", -1),
 		(try_begin),
 			(gt, "$g_encountered_party_2", 0),
