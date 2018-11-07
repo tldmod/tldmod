@@ -287,6 +287,30 @@ ai_scripts = [
            (this_or_next|eq, ":siegable", tld_siegable_always), # camps and such can always be sieged
            (neq, ":siegable", tld_siegable_capital), #if a capital, needs also fac_str_very_weak
 
+          # If Gondor Capital is targeted, make sure at least 6 centers have fallen (Nov 2018)
+
+           (assign, ":continue_selection", 1),
+
+           (try_begin),
+            (eq, ":enemy_walled_center", "p_town_minas_tirith"),
+            (assign, ":num_gondor_centers", 0),
+            (try_for_range, ":gondor_centers", centers_begin, centers_end),
+              (party_is_active,":gondor_centers"),
+              (store_faction_of_party, ":fac_center", ":gondor_centers"),
+              (eq, ":fac_center", "fac_gondor"),
+              (neq, ":fac_center", "p_town_minas_tirith"),
+              (party_slot_eq, ":fac_center", slot_center_destroyed, 0),
+              (val_add, ":num_gondor_centers", 1),
+            (try_end),
+            (gt, ":num_gondor_centers", 12-6), #12 gondor centers (w/o MT)
+            (assign, ":continue_selection", 0),
+            #(display_message, "@MT can't be sieged yet as not enough Gondor Centers have fallen", color_neutral_news),
+           (try_end),
+
+           (eq, ":continue_selection", 1),
+
+           # END Gondor Center Checks
+
            #MV: a small, 10% chance to ignore the center, to add variety to sieging targets
            (store_random_in_range, ":random_ignore", 0, 100),
            (this_or_next|lt, ":random_ignore", 90),
@@ -512,7 +536,7 @@ ai_scripts = [
            (eq, ":center_faction", ":faction_no"),
            (try_begin),
              (store_random_in_range, ":random_patrol", 0, 100),
-             (lt, ":random_patrol", 50), #50%
+             (lt, ":random_patrol", 40), #50% - Changed to 40% - Kham (Nov 2018)
              (val_max, ":attack_army_score", 5), #MV: always some small chance of patrol around home towns
            (try_end),
            (val_mul, ":attack_army_score", 4),
@@ -1707,7 +1731,7 @@ ai_scripts = [
           (try_end),
       
           (ge, ":best_besiege_center", 0),
-          (assign, ":chance_besiege_enemy_center", 20),
+          (assign, ":chance_besiege_enemy_center", 35), #Changed from 20 - Kham (Nov 2018)
           (assign, ":target_besiege_enemy_center", ":best_besiege_center"),
 
           (try_begin),
