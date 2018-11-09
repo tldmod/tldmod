@@ -2986,6 +2986,7 @@ mission_templates = [ # not used in game
   
 
   common_battle_on_player_down,
+  tld_remove_volunteer_troops,
 
   # Make the teams enemies... and disable morale
   (ti_before_mission_start, 0, 0, [], [(team_set_relation, 0, 1, -1),(assign, "$battle_won", 0), (assign, "$tld_option_morale", 0),]),

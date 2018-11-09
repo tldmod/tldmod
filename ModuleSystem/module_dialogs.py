@@ -1388,13 +1388,15 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone, "ziggy_yes", [],
   "Excellent. Which of these specimens would you give?", "ziggy_choose_prisoners", []],
 
-[anyone|plyr|repeat_for_troops, "ziggy_choose_prisoners", 
+[anyone|plyr|repeat_for_1000, "ziggy_choose_prisoners", 
   [   (party_get_num_prisoner_stacks, ":num_prisoners", "p_main_party"),
       (ge, ":num_prisoners", 1),
       (store_repeat_object, ":prisoners"),
+      (val_add, ":prisoners", soldiers_begin),
+      (is_between, ":prisoners", soldiers_begin, soldiers_end),
       (neg|is_between, ":prisoners", kingdom_heroes_begin, kingdom_heroes_end),
       (party_count_prisoners_of_type, ":prisoner_type", "p_main_party", ":prisoners"),
-      (gt, ":prisoner_type", 1),
+      (gt, ":prisoner_type", 0),
       (str_store_troop_name, s1, ":prisoners"),
   ],
   
@@ -1404,7 +1406,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 
 [anyone|plyr, "ziggy_choose_prisoners", 
   [],
-  "I have none to offer.", "ziggy_no", 
+  "I have none I want to offer.", "ziggy_no", 
   [(troop_set_slot, "trp_npc20", slot_troop_wealth, 2)]],
 
 [anyone, "ziggy_chosen_prisoner", [(neg|troop_slot_eq, "trp_npc20", slot_troop_wealth, 2)],
@@ -12568,6 +12570,8 @@ Maybe nearby friendly towns have enough for us too. What do you say?", "merchant
 
 # CppCoder bugfix: Trolls go rawr...   
 [anyone,"member_chat_00", [(troop_get_type, ":troll", "$g_talk_troop"),(eq, ":troll", tf_troll), (agent_set_animation, "$g_talk_agent", "anim_troll_or_ent_bend_continue")], "^^GROWL!^^", "close_window",[]],
+
+[anyone,"member_chat_00", [(eq, "$g_talk_troop", "trp_werewolf")], "^^Grrrrr.....^^", "close_window",[]],
 
 [anyone,"member_chat_00", [(troop_slot_eq,  "$g_talk_troop", slot_troop_upkeep_not_paid,0)], # or else, incipit is different
 "Your orders, Commander?", "regular_member_talk",[]],
