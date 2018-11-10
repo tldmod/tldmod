@@ -4164,14 +4164,14 @@ mission_templates = [ # not used in game
      (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,3,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
 
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team left flank
-     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team center
-     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team right flank
+     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team left flank
+     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team center
+     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team right flank
 
      # Defender reinforcements (was 15)
      (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
@@ -4445,7 +4445,7 @@ mission_templates = [ # not used in game
 
   ## This block is what checks for reinforcements. Attackers first, then defenders.
   
-  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",10)],[ #InVain: max reinf stage was 15, it's no possible that siege attacks stop
+  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",30)],[ #Less than defenders. Attackers don't go all in. Also makes it easier to defend against sieges.
     (assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
@@ -4459,7 +4459,7 @@ mission_templates = [ # not used in game
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
 
-  (3, 0, 5, [(lt,"$defender_reinforcement_stage", 25),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
+  (3, 0, 5, [(lt,"$defender_reinforcement_stage", 75),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #iterate through 5 6 7 - Changed to 9,10,11
     (try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
@@ -4467,9 +4467,11 @@ mission_templates = [ # not used in game
       (val_add,":defteam",2),
       (val_add,":entry",1),
       (lt,":num_defenders",14),
-      (add_reinforcements_to_entry, ":entry", 6), #TLD, was 4, 7 #InVain, was 7, now 6
+      (add_reinforcements_to_entry, ":entry", 9), #1.5x attackers, to push them back.
       #(display_message, "@Defenders Reinforced", color_good_news),
       (val_add,"$defender_reinforcement_stage",1),
+	  #(assign, reg0,"$defender_reinforcement_stage"),
+	  #(display_message, "@Defenders Reinforced #{reg0}", color_good_news),												  																	   
     (try_end),
     
     ## This block controls when Defender starts their desperate charge. I've added some improvements VC added to their sieges.
@@ -4763,14 +4765,14 @@ mission_templates = [ # not used in game
      (47,mtef_attackers|mtef_team_5,af_override_horse,aif_start_alarmed,3,[]),
      
      # Initial defender spawn point (was 11)  - Split this into 3 and distribute teams   
-     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]),
+     (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
      (40,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,2,[]),
 
      # Defender choke points (was 10)
-     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team left flank
-     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team center
-     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,4,[]), # team right flank
+     (41,mtef_defenders|mtef_team_0|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team left flank
+     (42,mtef_defenders|mtef_team_2|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team center
+     (43,mtef_defenders|mtef_team_4|mtef_infantry_first,af_override_horse,aif_start_alarmed,8,[]), # team right flank
 
      # Defender reinforcements (was 15)
      (44,mtef_defenders|mtef_team_0,af_override_horse,aif_start_alarmed,0,[]), #entry 5 for add_reinforcements_to_entry - 9, Kham
@@ -4845,7 +4847,7 @@ mission_templates = [ # not used in game
 
   ## This block is what checks for reinforcements. Attackers first, then defenders.
   
-  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",10)],[ #InVain: max reinf stage was 15, it's no possible that siege attacks stop
+  (1, 0, 5,[(lt,"$attacker_reinforcement_stage",30)],[ #InVain: max reinf stage was 15, it's no possible that siege attacks stop
     (assign,":atkteam","$attacker_team"),
     (assign,":entry",11), #iterate through 8 9 10 - changed to 12,13,14
     (try_for_range,":unused",0,3), #cycle through attacker teams, check if depleted and reinforce
@@ -4858,7 +4860,7 @@ mission_templates = [ # not used in game
       (val_add,"$attacker_reinforcement_stage", 1),
       (assign, "$attacker_archer_melee",1), #Kham - Every reinforcement event leads to a refresh of attack mode.
     (try_end)]),
-  (3, 0, 5, [(lt,"$defender_reinforcement_stage", 25),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
+  (3, 0, 5, [(lt,"$defender_reinforcement_stage", 75),(store_mission_timer_a,":mission_time"),(ge,":mission_time",10)],[ #InVain: max reinf stage was 15, defenders fight to the end. May need to adjust desperate charge conditions below.
     (assign,":defteam","$defender_team"),
     (assign,":entry",8), #iterate through 5 6 7 - Changed to 9,10,11
     (try_for_range,":unused",0,3), #cycle through defender teams, check if depleted and reinforce
@@ -4866,7 +4868,7 @@ mission_templates = [ # not used in game
       (val_add,":defteam",2),
       (val_add,":entry",1),
       (lt,":num_defenders",14),
-      (add_reinforcements_to_entry, ":entry", 6), #TLD, was 4, 7 #InVain, was 7, now 6
+      (add_reinforcements_to_entry, ":entry", 9), #TLD, was 4, 7 #InVain, was 7, now 6
       #(display_message, "@Defenders Reinforced", color_good_news),
       (val_add,"$defender_reinforcement_stage",1),
     (try_end),
