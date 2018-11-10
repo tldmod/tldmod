@@ -2009,7 +2009,12 @@ scripts = [
 	(item_set_slot, "itm_beorn_berserk", slot_item_player_color, 1),
 	(item_set_slot, "itm_beorn_berserk", slot_item_num_components, 1),
 	(item_set_slot, "itm_beorn_berserk", slot_item_materials_begin, "str_beornings_female"),
-	(item_set_slot, "itm_beorn_berserk", slot_item_materials_end, "str_compat_string_end"),
+	(item_set_slot, "itm_beorn_berserk", slot_item_materials_end, "str_khand_light_fem"),
+
+	(item_set_slot, "itm_khand_light", slot_item_player_color, 1),
+	(item_set_slot, "itm_khand_light", slot_item_num_components, 1),
+	(item_set_slot, "itm_khand_light", slot_item_materials_begin, "str_khand_light_fem"),
+	(item_set_slot, "itm_khand_light", slot_item_materials_end, "str_npc18_intro"),
 	
 
 	#Init HP shield
@@ -6576,6 +6581,7 @@ scripts = [
 	        #(call_script, "script_force_faction_center_by_region", ":giver_party_no", ":faction_side"),
 	        (call_script,"script_cf_get_random_enemy_center_in_theater",":giver_party_no"), # Gets a enemy center in the current theater
             (assign, ":cur_target_center", reg0),
+            (neq, ":cur_target_center", "p_town_henneth_annun"), # HA not allowed
             #(neq, ":cur_target_center", ":giver_center_no"),#Skip current center
             (try_begin),
 	            (is_between, ":player_level", 11,17), #levels 11-16
@@ -7755,6 +7761,8 @@ scripts = [
           (try_begin),
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
+            (neq, ":quest_target_center", "p_town_henneth_annun"), # HA not allowed
+
             (assign, ":dist", reg1),
             (assign, ":quest_target_troop", 0), #abuse this as a boolean flag: if town scouted
             
@@ -7777,6 +7785,7 @@ scripts = [
             
             (call_script, "script_cf_get_random_enemy_center_within_range", "p_main_party", tld_max_quest_distance),
             (assign, ":quest_target_center", reg0),
+            (neq, ":quest_target_center", "p_town_henneth_annun"), # HA not allowed
             (assign, ":dist", reg1),
             
             (assign, ":quest_object_faction", ":giver_faction_no"),
@@ -11209,26 +11218,27 @@ scripts = [
 
       # TLD NPC companions
       (val_max, ":cur_pos", 17), # if no one else in court, skip 16 (could be a throne)
-      (try_for_range, ":cur_troop", companions_begin, new_companions_end),
-      	(this_or_next|is_between, ":cur_troop", companions_begin, companions_end),
-      	(is_between, ":cur_troop", new_companions_begin, new_companions_end),
-        (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
-        (neg|main_party_has_troop, ":cur_troop"), # not already hired
-        (assign, ":on_lease", 0),
-        (try_begin),
-          (check_quest_active,"qst_lend_companion"),
-          (quest_slot_eq, "qst_lend_companion", slot_quest_target_troop, ":cur_troop"),
-          (assign, ":on_lease", 1),
-        (try_end),
-        (eq, ":on_lease", 0),
-        (store_faction_of_party, ":center_faction", ":center_no"),
-        (store_troop_faction, ":troop_faction", ":cur_troop"),
-        (store_relation, ":rel", ":center_faction", ":troop_faction"),
-        (ge, ":rel", 0),      # only spawn if friendly center
-        (lt, ":cur_pos", 32), # spawn up to entry point 31, can have multiple companions in a single town castle
-        (set_visitor, ":cur_pos", ":cur_troop"),
-        (val_add,":cur_pos", 1),
-      (try_end),
+    #  (try_for_range, ":cur_troop", companions_begin, new_companions_end),
+    #  	(this_or_next|is_between, ":cur_troop", companions_begin, companions_end),
+    #  	(is_between, ":cur_troop", new_companions_begin, new_companions_end),
+    #    (troop_slot_eq, ":cur_troop", slot_troop_cur_center, ":center_no"),
+    #    (neg|main_party_has_troop, ":cur_troop"), # not already hired
+    #    (neq, ":cur_troop", "trp_npc20"), #Exception for Zigûrphel
+    #    (assign, ":on_lease", 0),
+    #    (try_begin),
+    #      (check_quest_active,"qst_lend_companion"),
+    #      (quest_slot_eq, "qst_lend_companion", slot_quest_target_troop, ":cur_troop"),
+    #      (assign, ":on_lease", 1),
+    #    (try_end),
+    #    (eq, ":on_lease", 0),
+    #    (store_faction_of_party, ":center_faction", ":center_no"),
+    #    (store_troop_faction, ":troop_faction", ":cur_troop"),
+    #    (store_relation, ":rel", ":center_faction", ":troop_faction"),
+    #    (ge, ":rel", 0),      # only spawn if friendly center
+    #    (lt, ":cur_pos", 32), # spawn up to entry point 31, can have multiple companions in a single town castle
+    #    (set_visitor, ":cur_pos", ":cur_troop"),
+    #    (val_add,":cur_pos", 1),
+    #  (try_end),
 	
 	(jump_to_scene,":castle_scene"),
 	(scene_set_slot, ":castle_scene", slot_scene_visited, 1),
@@ -21045,7 +21055,8 @@ scripts = [
         #MV replaced by companion NPC, if any, and no castle
         #TLD NPC companions
         (try_begin),
-            (party_slot_eq, "$current_town", slot_town_castle, -1), #no town castle
+        	#(this_or_next|eq, "$current_town", "p_town_dol_guldur"),
+            #(party_slot_eq, "$current_town", slot_town_castle, -1), #no town castle
             (neq, "$sneaked_into_town", 1), #haven't sneaked in
             (try_for_range, ":cur_troop", companions_begin, new_companions_end),
             	(this_or_next|is_between, ":cur_troop", companions_begin, companions_end),
@@ -23364,7 +23375,11 @@ command_cursor_scripts = [
 		(item_set_slot, "itm_beorn_berserk", slot_item_player_color, 1),
 		(item_set_slot, "itm_beorn_berserk", slot_item_num_components, 1),
 		(item_set_slot, "itm_beorn_berserk", slot_item_materials_begin, "str_beornings_female"),
-		(item_set_slot, "itm_beorn_berserk", slot_item_materials_end, "str_compat_string_end"),
+		(item_set_slot, "itm_beorn_berserk", slot_item_materials_end, "str_khand_light_fem"),
+		(item_set_slot, "itm_khand_light", slot_item_player_color, 1),
+		(item_set_slot, "itm_khand_light", slot_item_num_components, 1),
+		(item_set_slot, "itm_khand_light", slot_item_materials_begin, "str_khand_light_fem"),
+		(item_set_slot, "itm_khand_light", slot_item_materials_end, "str_npc18_intro"),
 		(assign, "$slow_when_wounded", 1),
     	(assign, "$savegame_version",6),
     (try_end),

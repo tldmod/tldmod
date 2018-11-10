@@ -1128,7 +1128,7 @@ items =[
 ["khand_helmet_mask1","Khand_Mask",[("Khand_Helmet_Mask1",0)],itp_type_head_armor|itp_shop|itp_doesnt_cover_hair,0,300,weight(2)|head_armor(20)|difficulty(0),imodbits_armor | imodbit_cracked],
 ["khand_helmet_mask2","Khand_Mask",[("Khand_Helmet_Mask2",0)],itp_type_head_armor|itp_shop|itp_doesnt_cover_hair,0,300,weight(2)|head_armor(20)|difficulty(0),imodbits_armor | imodbit_cracked],
 #########ARMOR##########
-["khand_light","Khand_Kilt",[("khand_light",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,40,weight(7)|head_armor(0)|body_armor(2)|leg_armor(8)|difficulty(0),imodbits_cloth,],
+["khand_light","Khand_Kilt",[("khand_light",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,40,weight(7)|head_armor(0)|body_armor(2)|leg_armor(8)|difficulty(0),imodbits_cloth, [custom_female("itm_khand_light")]],
 ["khand_foot_lam_a","Khand_Armor",[("khand_foot_lam_a",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(18)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0),imodbits_armor,],
 ["khand_foot_lam_b","Khand_Armor",[("khand_foot_lam_b",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1100,weight(18)|head_armor(0)|body_armor(21)|leg_armor(8)|difficulty(0),imodbits_armor,],
 ["khand_foot_lam_c","Khand_Armor",[("khand_foot_lam_c",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1000,weight(17)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0),imodbits_armor,],

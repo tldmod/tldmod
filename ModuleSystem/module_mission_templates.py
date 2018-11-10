@@ -60,7 +60,9 @@ bright_nights= ((is_a_wb_mt==1) and [
   
   (ti_before_mission_start, 0, 2,
     [ (eq, "$bright_nights", 1),
-      (is_currently_night)],[
+      (is_currently_night),
+      (neg|party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), # Make it dark during Saruman Storm
+      ],[
       (set_startup_ambient_light,15,24,37), #27,46,67 
       #(display_message, "@Bright Nights active")
     ])

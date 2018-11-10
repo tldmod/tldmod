@@ -3351,7 +3351,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("rhunarmortexture_fem", "rhunarmortexture_fem"),
 ("female_mats_end", "female_mats_end"),
 ("beornings_female", "beornings_female"),
-("compat_string_end", "compat_string_end"),
+("khand_light_fem", "khand_light_fem"),
 
 
 #New Companion Strings
