@@ -1593,7 +1593,7 @@ mission_templates = [ # not used in game
                               (eq, ":troop", "trp_npc18"),
                               (eq, "$current_town", "p_town_khand_camp")],
                             [ (store_trigger_param_1, ":agent"),
-                              (agent_set_animation, ":agent", "anim_stay_tied"),]),
+                              (agent_set_stand_animation, ":agent", "anim_stay_tied"),]),
 ]),
 ( "visit_town_castle",0,-1,
   "You enter the halls of the lord.",
