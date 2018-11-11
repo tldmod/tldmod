@@ -24639,6 +24639,7 @@ command_cursor_scripts = [
 	#E = a*(c/b-1) = (ac/b) - a
 	
 	(store_sub, ":ally_str", "$g_starting_strength_friends", "$g_starting_strength_main_party"), #b
+	(val_max, ":ally_str", 1), #>0, sometimes you happen to help parties that have 0 troops left
 	(assign, ":enemy_str", "$g_starting_strength_enemy_party"),	#c
 	(store_mul, ":max_enemy_str", ":ally_str", 2), #so the helping bonus doesn't go out of hand, we only scale it up to twice outnumbered allies
 	(val_min, ":enemy_str", ":max_enemy_str"),
