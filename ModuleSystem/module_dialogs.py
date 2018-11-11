@@ -1198,7 +1198,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
     (neg|troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate), #First time
     (troop_remove_item, "trp_npc18","itm_feet_chains"),
     (troop_remove_item, "trp_npc18","itm_prisoner_coll_chain"),
-    (troop_add_item, "trp_npc18", "itm_khand_light"),
+    #(troop_add_item, "trp_npc18", "itm_khand_light"),
     (troop_add_item, "trp_npc18", "itm_javelin"),
     (troop_add_item, "trp_npc18", "itm_leather_boots"),
     (troop_add_item, "trp_npc18", "itm_khand_helmet_mask2"),

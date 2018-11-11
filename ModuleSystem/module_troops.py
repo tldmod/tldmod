@@ -3094,7 +3094,7 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
 # New Companions Begin
 
 ["npc18","Turmbathu","_",tf_hero| tf_female | tf_unmoveable_in_party_window,0,0,fac_khand,
-   [itm_prisoner_coll_chain, itm_feet_chains],
+   [itm_prisoner_coll_chain, itm_feet_chains, itm_khand_light],
       str_16|agi_15|int_4|cha_3|level(9),wp_one_handed(70)|wp_two_handed(80)|wp_polearm(80)|wp_archery(70)|wp_throwing(90),knows_athletics_3|knows_power_strike_4|knows_shield_1|knows_ironflesh_4|knows_weapon_master_2,0x00000008ff00200007e68b1850a756c400000000001f34720000000000000000],
 
 ["npc19","Heidrek","_",tf_hero| tf_evil_man | tf_unmoveable_in_party_window,0,0,fac_dunland,
