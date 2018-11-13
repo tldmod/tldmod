@@ -8351,6 +8351,16 @@ scripts = [
         (get_party_ai_behavior, ":behavior", ":party_no"),
         (neq, ":behavior", ai_bhvr_in_town),
         (neg|party_slot_eq, ":party_no", slot_party_type, spt_cattle_herd), #TLD: "cattle" won't join
+
+        (assign, ":caravan_continue", 1),
+
+        (try_begin),
+        	(party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan), #Caravans
+        	(party_is_in_any_town, ":party_no"),
+        	(assign, ":caravan_continue", 0),
+        (try_end),
+
+        (eq, ":caravan_continue", 1),
       
         (store_distance_to_party_from_party, ":distance", ":party_no", "p_main_party"),
         (lt, ":distance", ":join_distance"),
