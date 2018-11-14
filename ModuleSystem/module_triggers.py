@@ -1277,7 +1277,7 @@ triggers = [
   # ),
   
   #################################################################################
-  (1, 0, 168, [], [ #traits crunching
+  (1, 0, 90, [], [ #traits crunching
       # traits effect on influence
       (try_begin),
         (try_begin),

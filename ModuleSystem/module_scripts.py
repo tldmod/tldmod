@@ -20315,6 +20315,9 @@ scripts = [
 ("hero_leader_killed_abstractly",[
 	(store_script_param_1, ":hero"),
 	(store_script_param_2, ":place"),
+
+	(store_faction_of_party, ":place_faction", ":place"),
+	(str_store_faction_name, s28, ":place_faction"),
 	(troop_set_slot, ":hero", slot_troop_wound_mask, wound_death),
 	(str_store_troop_name, s1, ":hero"),
 	(store_troop_faction,":fac",":hero"),
@@ -20328,7 +20331,7 @@ scripts = [
 	(else_try),
         (play_sound, "snd_lord_dies"),
 	(try_end),
-	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle!", ":news_color"),
+	(display_message, "@News_has_arrived_that_{s1}_of_{s2}_was_killed_in_battle_by_the_forces_of_{s28}!", ":news_color"),
 	(call_script,"script_build_mound_for_dead_hero",":hero",":place"),
     (call_script, "script_update_troop_notes", ":hero"),
  ]),
@@ -20339,6 +20342,7 @@ scripts = [
 	(troop_set_slot, ":hero", slot_troop_wound_mask, wound_death),
 	(str_store_troop_name, s1, ":hero"),
 	(store_troop_faction,":fac",":hero"),
+	(store_faction_of_party, ":place_faction", ":place"),
     (set_spawn_radius, 0),
 	(try_begin),
 		(faction_slot_eq, ":fac", slot_faction_side, faction_side_good),
@@ -20351,6 +20355,8 @@ scripts = [
 	#(party_set_faction,reg0,":fac"),
 	(party_set_slot, reg0, slot_mound_state, 1),
 	(party_set_slot, reg0, slot_party_commander_party, ":hero"),
+	(party_set_slot, reg0, slot_mound_killer_faction, ":place_faction"),
+
  ]),
 #script_display_dead_heroes
 ("display_dead_heroes",[

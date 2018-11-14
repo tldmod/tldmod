@@ -2159,7 +2159,7 @@ game_menus = [
      (troop_add_gold, "trp_player", 1000000),
 	 (troop_set_health, "trp_player", 100),
      (troop_add_item, "trp_player","itm_gondor_lance",imod_balanced),
-     (troop_add_item, "trp_player","itm_gondor_shield_d",imod_reinforced),
+     (troop_add_item, "trp_player","itm_shield_of_tuor",imod_reinforced),
      (troop_add_item, "trp_player","itm_gondor_ranger_sword",imod_masterwork),
      (troop_add_item, "trp_player","itm_gondor_hunter",imod_champion),
      (troop_add_item, "trp_player","itm_riv_helm_c",imod_lordly),
@@ -11306,13 +11306,16 @@ game_menus = [
  ]),  
 ( "burial_mound", 0, 
   "You_approach_the_burial_mound_of_{s1}_of_{s2}._\
+  Defeated in battle by the forces of {s28}.\
   It_is_heaped_with_the_notched_weapons_of_his_fallen_enemies.", "none",
    [	(set_background_mesh, "mesh_draw_mound_visit"),
 		(store_encountered_party, ":mound"),
 		(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 		(store_troop_faction, reg1,":hero"),
 		(str_store_faction_name, s2, reg1),
-		(str_store_troop_name, s1, ":hero")], [
+		(str_store_troop_name, s1, ":hero"),
+		(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
+		(str_store_faction_name, s28, ":killer_faction"),], [
   ("pay_respects", [(store_encountered_party, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(store_troop_faction,":faction",":hero"),
@@ -11367,18 +11370,24 @@ game_menus = [
 	(store_troop_faction, ":target", ":hero"),
 	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
 	(quest_set_slot, "qst_oath_of_vengeance", 5, ":hero"), # CppCoder: remember source hero
-	
+	(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
 	(assign,":count",1000000),  # choose nearest enemy capital as target faction
 	(assign,":target", 0),
-	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-		(store_relation, ":dist", ":fac", "fac_player_faction"),
-		(lt, ":dist", 0), #enemies only
-		(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
-		(faction_get_slot, ":capital", ":fac", slot_faction_capital),
-		(store_distance_to_party_from_party,":dist",":mound",":capital"),  # choose nearest enemy capital for vengeance
-		(lt, ":dist", ":count"),
+	
+	(try_begin),
+		(faction_slot_eq, ":killer_faction", slot_faction_state, sfs_active),
+		(assign, ":target", ":killer_faction"),
+	(else_try),
+		(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
+			(store_relation, ":dist", ":fac", "fac_player_faction"),
+			(lt, ":dist", 0), #enemies only
+			(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
+			(faction_get_slot, ":capital", ":fac", slot_faction_capital),
+			(store_distance_to_party_from_party,":dist",":mound",":capital"),  # choose nearest enemy capital for vengeance
+			(lt, ":dist", ":count"),
 			(assign,":count",":dist"),
 			(assign,":target", ":fac"),
+		(try_end),
 	(try_end),
 	
 	(str_store_faction_name, s3, ":target"),
@@ -11479,14 +11488,17 @@ game_menus = [
  ]),
 ( "funeral_pyre", 0, 
   "You approach the charred remnants of the funeral pyre of {s3} of {s2}. \
-  Here his corpse was ceremoniously burned by his personal bodyguards. \
+  Defeated in battle by the forces of {s28}.\
+  Here, the corpse was ceremoniously burned by his personal bodyguards. \
   Nothing of value remains.", "none", 
    [(set_background_mesh, "mesh_draw_funeral_pyre"),
     (store_encountered_party, ":mound"),
 	(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 	(str_store_troop_name, s3, ":hero"),
 	(store_troop_faction,":faction",":hero"),
-	(str_store_faction_name, s2, ":faction")],[
+	(str_store_faction_name, s2, ":faction"),
+	(party_get_slot, ":killer_faction", ":mound", slot_mound_killer_faction),
+	(str_store_faction_name, s28, ":killer_faction"),],[
  ("swear_oath",   [(store_encountered_party, ":mound"),
 					(party_get_slot, ":hero", ":mound", slot_party_commander_party),
 					(store_troop_faction,":faction",":hero"),
