@@ -2827,7 +2827,7 @@ troops = [
 
 # Gandalf and Nazgul for conversations
 ["gandalf","Gandalf","Home-grown Gandalves",tf_hero| tf_mounted| tfg_armor| tfg_horse| tfg_boots,0,0,fac_commoners,
-   [itm_mearas_reward,itm_whiterobe,itm_leather_boots,itm_sword_of_arathorn,],
+   [itm_mearas_reward,itm_whiterobe,itm_leather_boots,],
       attr_tier_7,wp_tier_7,knows_riding_10|knows_athletics_10|knows_power_strike_10|knows_ironflesh_10|knows_pathfinding_10,0x0000000fc000234721419ab9eeafbeff00000000001d89110000000000000000],
 ["nazgul","Nazgul","Domesticated Nazgul",tf_hero| tf_mounted| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_commoners,
    [itm_uruk_greaves,itm_evil_gauntlets_a,itm_nazgulrobe,itm_empty_head,itm_nazgul_sword,itm_mordor_warhorse2,],

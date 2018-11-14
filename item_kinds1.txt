@@ -668,7 +668,7 @@ itemsfile version 2
  itm_gondor_leader_helm Gondor_High_Helmet Gondor_High_Helmet 1  gondor_leader_helm 0  65548 0 3000 704643072 2.5 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_tower_guard_helm Tower_Guard_Helm Tower_Guard_Helm 1  gondor_tower_guard_helm 0  65548 0 3000 704643072 2.5 100 40 0 0 0 0 0 0 0 0 0 0
+ itm_tower_guard_helm Tower_Guard_Helm Tower_Guard_Helm 1  gondor_tower_guard_helm 0  12 0 4000 704643072 2.5 100 46 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_gondor_citadel_knight_helm Citadel_Knight_Helm Citadel_Knight_Helm 1  gondor_citadel_knight_helm 0  65548 0 3000 704643072 2.5 100 40 0 0 0 0 0 0 0 0 0 0
@@ -842,7 +842,7 @@ itemsfile version 2
  itm_gondor_shield_d Gondor_Kite_Shield Gondor_Kite_Shield 1  gondorian_kite_shield 0  327687 4831838208 400 251658402 2.5 100 0 12 0 0 480 82 0 70 0 0 0
 0
 
- itm_gondor_shield_e Gondor_Royal_Shield Gondor_Royal_Shield 1  denethor_shield 0  262151 4831838208 1000 771751936 2.5 100 0 12 0 0 480 82 0 90 0 0 0
+ itm_gondor_shield_e Gondor_Citadel_Shield Gondor_Citadel_Shield 1  denethor_shield 0  262151 4831838208 1000 771751936 2.5 100 0 16 0 0 480 92 0 90 0 0 0
 0
 
  itm_gon_tab_shield_a Heraldic_Gondor_Round_Shield Heraldic_Gondor_Round_Shield 1  tableau_shield_round 0  327687 5100273664 200 251658402 2 100 0 3 0 0 310 105 0 40 0 0 0
@@ -2222,22 +2222,22 @@ itemsfile version 2
  itm_free_umb_armor_g Corsair_Hauberk_Pauldrons Corsair_Hauberk_Pauldrons 1  corsair_chain_pauldron 0  16842765 0 2000 704643072 22 100 0 25 7 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_a Corsair_Leather_Armor Corsair_Leather_Armor 2  corsair_leather 0  corsair_leather_pauldron 251658240  16842765 0 260 1116815228928 7 100 0 10 4 0 0 0 0 0 0 0 0
+ itm_umb_armor_a Corsair_Leather_Vest Corsair_Leather_Vest 2  corsair_leather 0  corsair_leather_pauldron 251658240  16842765 0 260 1116815228928 7 100 0 10 4 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_b Corsair_Raider_Armor Corsair_Raider_Armor 2  corsair_leather_cape 0  corsair_leather_cape_pauldron 251658240  16842765 0 400 1116815228928 8 100 0 12 5 0 0 0 0 0 0 0 0
+ itm_umb_armor_b Corsair_Leather_Armor Corsair_Leather_Armor 2  corsair_leather_cape 0  corsair_leather_cape_pauldron 251658240  16842765 0 400 1116815228928 8 100 0 12 5 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_c Corsair_Padded_Armor Corsair_Padded_Armor 2  corsair_padded 0  corsair_padded_pauldron 251658240  16842765 0 500 1116815228928 12 100 0 15 4 0 0 0 0 0 0 0 0
+ itm_umb_armor_c Corsair_Light_Scale Corsair_Light_Scale 2  corsair_padded 0  corsair_padded_pauldron 251658240  16842765 0 500 1116815228928 12 100 0 15 4 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_d Corsair_Padded_Raider_Armor Corsair_Padded_Raider_Armor 2  corsair_padded_cape 0  corsair_padded_cape_pauldron 251658240  16842765 0 600 1116815228928 13 100 0 16 5 0 0 0 0 0 0 0 0
+ itm_umb_armor_d Corsair_Scale_Armor Corsair_Scale_Armor 2  corsair_padded_cape 0  corsair_padded_cape_pauldron 251658240  16842765 0 600 1116815228928 13 100 0 16 5 0 0 0 0 0 0 0 0
 0
 
  itm_umb_armor_e Corsair_Hauberk Corsair_Hauberk 2  corsair_chain 0  corsair_chain_pauldron 704643072  16842765 0 1200 704643236 20 100 1 21 7 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_f Corsair_Heavy_Raider_Armor Corsair_Heavy_Raider_Armor 2  corsair_chain_cape 0  corsair_chain_cape_pauldron 704643072  16842765 0 1300 704643072 21 100 0 22 8 0 0 0 0 0 0 0 0
+ itm_umb_armor_f Corsair_Captain's_Armor Corsair_Captain's_Armor 2  corsair_chain_cape 0  corsair_chain_cape_pauldron 704643072  16842765 0 1300 704643072 21 100 0 22 8 0 0 0 0 0 0 0 0
 0
 
  itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
@@ -2611,7 +2611,7 @@ itemsfile version 2
  itm_mearas_reward Mearh_Stallion Mearh_Stallion 1  mearh 0  4097 0 400 16139943936 0 100 0 60 0 2 180 40 45 0 0 40 0
 0
 
- itm_sword_of_arathorn Arathorn's_Sword Arathorn's_Sword 2  aragorn_sword 0  scab_aragorn_sword 3458764513820540928  71307267 9223635954298781951 2000 156672 2 100 0 0 0 15 40960 110 0 120 0 286 296
+ itm_shield_of_tuor Shield_of_Tuor Shield_of_Tuor 1  Avelium_shield_of_tuor 0  266247 4831838208 4000 0 4 100 0 22 0 0 930 77 0 96 0 0 0
 0
 
  itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 12 100 2 50 20 15 0 0 0 0 0 0 0
