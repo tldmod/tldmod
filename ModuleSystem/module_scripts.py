@@ -8343,6 +8343,8 @@ scripts = [
         (assign, ":join_distance", 3), #Kham - Changed from 3
       (try_end),
       (try_for_parties, ":party_no"),
+        (neq, ":party_no", "p_main_party"),
+        (neq, ":party_no", "$g_enemy_party"),
         (party_is_active, ":party_no"), # Warband fix
         (party_get_battle_opponent, ":opponent",":party_no"),
         (lt, ":opponent", 0), #party is not itself involved in a battle
@@ -8380,6 +8382,13 @@ scripts = [
           (store_relation, ":reln_with_enemy", ":faction_no", ":enemy_faction"),
         (try_end),
 
+        (assign, ":deserters", 0),
+
+        (try_begin),
+        	(eq, ":enemy_faction", "fac_deserters"),
+        	(assign, ":deserters", 1),
+        (try_end),
+
         (assign, ":enemy_side", 1),
         (try_begin),
           (neq, "$g_enemy_party", "$g_encountered_party"),
@@ -8394,15 +8403,16 @@ scripts = [
           #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
           (neq, ":party_type", spt_town), #...except towns
 
-          (get_party_ai_behavior, ":ai_bhvr", ":party_no"),
-          (neq, ":ai_bhvr", ai_bhvr_avoid_party),
+          #(get_party_ai_behavior, ":ai_bhvr", ":party_no"),
+          #(neq, ":ai_bhvr", ai_bhvr_avoid_party), - Kham Removed (Nov 2018)
           (party_quick_attach_to_current_battle, ":party_no", ":enemy_side"), #attach as enemy
           (str_store_party_name, s1, ":party_no"),
           (display_message, "str_s1_joined_battle_enemy", color_bad_news),
         (else_try),
           (eq, ":dont_add_friends", 0),
           (gt, ":reln_with_player", 0),
-          (lt, ":reln_with_enemy", 0),
+          (this_or_next|lt, ":reln_with_enemy", 0), 
+          (eq, ":deserters", 1), # Added Help against Deserters (Nov 2018)
           (assign, ":do_join", 1),
           (try_begin),
             (eq, ":besiege_mode", 1),
