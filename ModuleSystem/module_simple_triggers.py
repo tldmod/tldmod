@@ -3603,16 +3603,16 @@ simple_triggers = [
     (assign, ":region", reg1),
 
     (faction_get_slot, ":mordor_strength", "fac_mordor", slot_faction_strength),
-    (store_div, ":chance_darkness", ":mordor_strength", 150),
+    (store_div, ":chance_darkness", ":mordor_strength", 200),
 
     (faction_get_slot, ":isengard_strength", "fac_isengard", slot_faction_strength),
-    (store_div, ":chance_storm", ":isengard_strength", 150),
+    (store_div, ":chance_storm", ":isengard_strength", 200),
 
     (faction_get_slot, ":guldur_strength", "fac_guldur", slot_faction_strength),
-    (store_div, ":chance_fog", ":guldur_strength", 150),
+    (store_div, ":chance_fog", ":guldur_strength", 200),
 
     (faction_get_slot, ":lorien_strength", "fac_lorien", slot_faction_strength),
-    (store_div, ":chance_mist", ":lorien_strength", 150),
+    (store_div, ":chance_mist", ":lorien_strength", 200),
 
     (store_random_in_range, ":random_chance", 0, 100),
 

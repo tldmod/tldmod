@@ -5028,25 +5028,91 @@ scripts = [
 #		  (eq,":s0",":s"),
 #		    (val_sub, ":strength",":party_value"),   # lesser parties dying can't shift faction strength through threshold
 #	    (try_end),
+          
+
           (try_begin),
 			  (ge, "$tld_war_began", 1), #Invain: no faction strength changes before war starts
 		      (faction_set_slot,":faction",slot_faction_strength_tmp,":strength"),  # new strength stored in tmp slot to be processed in a trigger every 2h
           (try_end),
-          # add half victory points to the winner faction
+          
+          # add half victory points to the winner faction (for non-player victories), distribute full points to theater factions in player victories (Kham Nov 2018)
+          
           (try_begin),
             (ge, "$tld_war_began", 1), #Invain: no faction strength changes before war starts
             (neq, "$tld_option_regen_rate", 3), #None - no regen, even from battles
             (is_between, ":winner_faction", kingdoms_begin, kingdoms_end),
-            (faction_get_slot,":winner_strength",":winner_faction",slot_faction_strength_tmp),
-		    (store_div, ":win_value", ":party_value", 2), #this formula could be balanced after playtesting
-		    (val_add, ":winner_strength", ":win_value"),
-            (val_min, ":winner_strength", fac_str_max), #limit max strength
-	        (faction_set_slot,":winner_faction",slot_faction_strength_tmp,":winner_strength"),
-            #debug stuff
-            (faction_get_slot, ":debug_gain", ":winner_faction", slot_faction_debug_str_gain),
-		    (val_add, ":debug_gain", ":win_value"),
-            (faction_set_slot, ":winner_faction", slot_faction_debug_str_gain, ":debug_gain"),
+            (try_begin),
+            	(eq, "$player_won_last_battle", 1),
+            	(call_script, "script_find_theater", "p_main_party"),
+            	(assign, ":player_theater", reg0),
+            	(assign, ":num_allied_factions_in_theater", 0),
+            	(try_for_range, ":ally_factions_in_theater", kingdoms_begin, kingdoms_end),
+      				(faction_slot_eq, ":ally_factions_in_theater", slot_faction_state, sfs_active),
+            		(store_relation, ":rel_w_player", "$players_kingdom", ":ally_factions_in_theater"),
+            		(gt, ":rel_w_player", 0),
+            		(faction_slot_eq, ":ally_factions_in_theater", slot_faction_active_theater, ":player_theater"),
+            		(val_add, ":num_allied_factions_in_theater", 1),
+            	(try_end),
+
+            	(gt, ":num_allied_factions_in_theater", 0),
+
+            	(try_begin), #Revert to original formula if there is only 1 faction in a theater
+            		(eq, ":num_allied_factions_in_theater", 1),
+            		(assign, ":num_allied_factions_in_theater", 2),
+            	(try_end), 
+
+            	(store_div, ":win_value", ":party_value", ":num_allied_factions_in_theater"), 
+            	
+            	(try_for_range, ":str_share", kingdoms_begin, kingdoms_end),
+      				(faction_slot_eq, ":str_share", slot_faction_state, sfs_active),
+            		(store_relation, ":rel_w_player_2", "$players_kingdom", ":str_share"),
+            		(gt, ":rel_w_player_2", 0),
+            		(faction_slot_eq, ":str_share", slot_faction_active_theater, ":player_theater"),
+            		(faction_get_slot,":winner_strength",":str_share",slot_faction_strength_tmp),
+            		(val_add, ":winner_strength", ":win_value"),
+            		(val_min, ":winner_strength", fac_str_max), #limit max strength
+            		(faction_set_slot,":str_share",slot_faction_strength_tmp,":winner_strength"),
+
+		            #debug stuff
+		            (faction_get_slot, ":debug_gain", ":str_share", slot_faction_debug_str_gain),
+				    (val_add, ":debug_gain", ":win_value"),
+		            (faction_set_slot, ":str_share", slot_faction_debug_str_gain, ":debug_gain"),
+
+                    #debug
+		          	(try_begin),
+			            (eq, cheat_switch, 1),
+				        (assign,reg60,":party_value"),
+				        (assign,reg61,":strength"),
+				        (assign,reg62,":win_value"),
+				        (assign,reg63,":winner_strength"),
+				        (str_store_faction_name,s1,":faction"),
+				        (str_store_faction_name,s2,":str_share"),
+			            (try_begin),
+			              (is_between, ":str_share", kingdoms_begin, kingdoms_end),
+				          #(display_message,"@DEBUG: {s1} strength -{reg60} to {reg61}, {s2} strength +{reg62} to {reg63}."), #mvdebug
+			            (else_try),
+				          #(display_message,"@DEBUG: {s1} strength -{reg60} to {reg61}, defeat by {s2}."), #mvdebug
+			            (try_end),
+		         	(try_end),
+
+            	(try_end), #End range pot sharing
+            	(assign, "$player_won_last_battle", 0),
+
+            (else_try), #Start non-player victories
+
+	            (faction_get_slot,":winner_strength",":winner_faction",slot_faction_strength_tmp),
+			    (store_div, ":win_value", ":party_value", 2), #this formula could be balanced after playtesting
+			    (val_add, ":winner_strength", ":win_value"),
+	            (val_min, ":winner_strength", fac_str_max), #limit max strength
+		        (faction_set_slot,":winner_faction",slot_faction_strength_tmp,":winner_strength"),
+
+                #debug stuff
+	            (faction_get_slot, ":debug_gain", ":winner_faction", slot_faction_debug_str_gain),
+			    (val_add, ":debug_gain", ":win_value"),
+	            (faction_set_slot, ":winner_faction", slot_faction_debug_str_gain, ":debug_gain"),
+		    (try_end),       
           (try_end),
+         
           #debug
           (try_begin),
             (eq, cheat_switch, 1),
@@ -5071,6 +5137,7 @@ scripts = [
           (party_get_attached_party_with_rank, ":attached_party", ":root_party", ":attached_party_rank"),
           (call_script, "script_clear_party_group", ":attached_party", ":winner_faction"), # TLD bug here: this will give str loss/gain twice in player battles
         (try_end),
+
 	  (try_end),
 ]),
 
@@ -16557,6 +16624,12 @@ scripts = [
        # (try_end),
      # (try_end),
 
+     (try_begin),
+     	(eq, "$g_battle_result", 1),
+     	(assign, "$player_won_last_battle", 1),
+     	#(display_message, "@Player won last battle", color_neutral_news), #debug
+     (try_end),
+
 ]),
 
 #script_event_player_captured_as_prisoner
@@ -22342,41 +22415,41 @@ command_cursor_scripts = [
     (store_script_param_1, ":party"),
     (assign, ":OK", 0),
     (try_for_range, ":center", centers_begin, centers_end), 
-	    (party_is_active, ":center"),
+	    #(party_is_active, ":center"),
 	    (store_faction_of_party, ":faction",":center"),
 	    (faction_get_slot, ":home_theater", ":faction", slot_faction_home_theater),
 	    (party_get_position, pos1, ":party"),
 		(party_get_position, pos2, ":center"),
 		(get_distance_between_positions, ":dist", pos1, pos2),
-	    (lt, ":dist", 2400), #MV: was 3200
+	    (lt, ":dist", 3200), #MV: was 3200
 	    (try_begin),
 	    	(eq, ":OK",0),
 	    	(eq, ":home_theater",theater_SE),
 	      	(assign, reg0, theater_SE),
 	      	(assign, ":OK",1),
-	      	#(display_message, "@Debug: Theater_SE"),
+	      	(display_message, "@Debug: Theater_SE"),
 	    (else_try),
 	    	(eq, ":OK",0),
 	    	(eq, ":home_theater",theater_SW),
 	      	(assign, reg0, theater_SW),
 	      	(assign, ":OK",1),
-	      	#(display_message, "@Debug: Theater_SW"),
+	      	(display_message, "@Debug: Theater_SW"),
 	    (else_try),
 	        (eq, ":OK",0),
 	    	(eq, ":home_theater",theater_C),
 	      	(assign, reg0, theater_C),
 	      	(assign, ":OK",1),
-	      	#(display_message, "@Debug: Theater_C"),
+	      	(display_message, "@Debug: Theater_C"),
 	    (else_try),
 	    	(eq, ":home_theater",theater_C),
 	      	(assign, reg0, theater_N),
 	      	(assign, ":OK",1),
-	      	#(display_message, "@Debug: Theater_N"),
+	      	(display_message, "@Debug: Theater_N"),
 	    (else_try),
 	    	(eq, ":OK",0),
 	    	(assign, reg0, 0),
 	    	(assign, ":OK",1),
-	    	#(display_message, "@Debug: Can't Find"),
+	    	(display_message, "@Debug: Can't Find"),
 	    (try_end),
     (try_end),
 ]),
