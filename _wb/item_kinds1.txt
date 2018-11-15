@@ -2222,22 +2222,22 @@ itemsfile version 2
  itm_free_umb_armor_g Corsair_Hauberk_Pauldrons Corsair_Hauberk_Pauldrons 1  corsair_chain_pauldron 0  16842765 0 2000 704643072 22 100 0 25 7 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_a Corsair_Leather_Vest Corsair_Leather_Vest 2  corsair_leather 0  corsair_leather_pauldron 251658240  16842765 0 260 1116815228928 7 100 0 10 4 0 0 0 0 0 0 0 0
+ itm_umb_armor_a Corsair_Leather_Armor Corsair_Leather_Armor 2  corsair_light_leather_0 0  corsair_light_leather_1 251658240  16842765 0 260 1116815228928 7 100 0 10 4 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_b Corsair_Leather_Armor Corsair_Leather_Armor 2  corsair_leather_cape 0  corsair_leather_cape_pauldron 251658240  16842765 0 400 1116815228928 8 100 0 12 5 0 0 0 0 0 0 0 0
+ itm_umb_armor_b Corsair_Raider_Armor Corsair_Raider_Armor 2  corsair_light_leather_1b 0  corsair_light_leather_cape_pauldron 251658240  16842765 0 400 1116815228928 8 100 0 12 5 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_c Corsair_Light_Scale Corsair_Light_Scale 2  corsair_padded 0  corsair_padded_pauldron 251658240  16842765 0 500 1116815228928 12 100 0 15 4 0 0 0 0 0 0 0 0
+ itm_umb_armor_c Corsair_Padded_Armor Corsair_Padded_Armor 2  corsair_scale_pad_0 0  corsair_scale_pad_cape_pauldron 251658240  16842765 0 500 1116815228928 12 100 0 15 4 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_d Corsair_Scale_Armor Corsair_Scale_Armor 2  corsair_padded_cape 0  corsair_padded_cape_pauldron 251658240  16842765 0 600 1116815228928 13 100 0 16 5 0 0 0 0 0 0 0 0
+ itm_umb_armor_d Corsair_Padded_Raider_Armor Corsair_Padded_Raider_Armor 2  corsair_scale_pad_1b 0  corsair_scale_pad_2 251658240  16842765 0 600 1116815228928 13 100 0 16 5 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_e Corsair_Hauberk Corsair_Hauberk 2  corsair_chain 0  corsair_chain_pauldron 704643072  16842765 0 1200 704643236 20 100 1 21 7 0 0 0 0 0 0 0 0
+ itm_umb_armor_e Corsair_Hauberk Corsair_Hauberk 2  corsair_heavy_0 0  corsair_heavy_2 704643072  16842765 0 1200 704643236 20 100 1 21 7 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_f Corsair_Captain's_Armor Corsair_Captain's_Armor 2  corsair_chain_cape 0  corsair_chain_cape_pauldron 704643072  16842765 0 1300 704643072 21 100 0 22 8 0 0 0 0 0 0 0 0
+ itm_umb_armor_f Corsair_Heavy_Raider_Armor Corsair_Heavy_Raider_Armor 2  corsair_heavy_cape 0  corsair_heavy_3 704643072  16842765 0 1300 704643072 21 100 0 22 8 0 0 0 0 0 0 0 0
 0
 
  itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
@@ -2264,19 +2264,19 @@ itemsfile version 2
  itm_corsair_boots Corsair_Boots Corsair_Boots 1  corsair_boots 0  536940302 0 400 1116815228928 1 100 0 0 14 0 0 0 0 0 0 0 0
 0
 
- itm_umb_shield_a Corsair_Buckler Corsair_Buckler 2  corsair_buckler_long_a 0  corsair_buckler_long_a_carry 3458764513820540928  327687 5100273664 200 251658402 2 100 0 1 0 0 360 100 0 30 0 0 0
+ itm_umb_shield_a Corsair_Shield Corsair_Shield 2  corsair_buckler_long_a 0  corsair_buckler_long_a_carry 3458764513820540928  327687 5100273664 200 251658402 2 100 0 1 0 0 420 89 0 35 0 0 0
 0
 
- itm_umb_shield_b Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_a 0  corsair_buckler_round_a_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 1 0 0 360 100 0 20 0 0 0
+ itm_umb_shield_b Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_a 0  corsair_buckler_round_a_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 8 0 0 360 100 0 20 0 0 0
 0
 
- itm_umb_shield_c Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_b 0  corsair_buckler_round_b_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 1 0 0 360 100 0 20 0 0 0
+ itm_umb_shield_c Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_b 0  corsair_buckler_round_b_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 8 0 0 360 100 0 20 0 0 0
 0
 
- itm_umb_shield_d Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 1 0 0 360 100 0 20 0 0 0
+ itm_umb_shield_d Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 8 0 0 360 100 0 20 0 0 0
 0
 
- itm_umb_shield_e Corsair_Buckler Corsair_Buckler 2  corsair_buckler_long_b 0  corsair_buckler_long_b_carry 3458764513820540928  327687 5100273664 200 251658402 2 100 0 1 0 0 360 100 0 30 0 0 0
+ itm_umb_shield_e Corsair_Shield Corsair_Shield 2  corsair_buckler_long_b 0  corsair_buckler_long_b_carry 3458764513820540928  327687 5100273664 200 251658402 2 100 0 1 0 0 420 89 0 35 0 0 0
 0
 
  itm_umbar_cutlass Umbar_Cutlass Umbar_Cutlass 2  corsair_cutlass 0  scab_corsair_cutlass 3458764513820540928  4259842 9223388529822793742 200 286870 1.5 100 0 0 0 0 26624 106 0 86 0 256 26
