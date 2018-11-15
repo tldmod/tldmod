@@ -3616,12 +3616,8 @@ simple_triggers = [
 
     (store_random_in_range, ":random_chance", 0, 100),
 
-    (try_begin),
-      (eq, "$relocated", 1),
-      (party_get_position, pos5, "p_pointer_player"),
-    (else_try),
-      (party_get_position, pos5, "p_main_party"),
-    (try_end),
+    (party_get_position, pos5, "p_main_party"),
+
     
     (try_begin), # LORIEN MIST
       (faction_slot_eq, "fac_lorien", slot_faction_state, sfs_active),
