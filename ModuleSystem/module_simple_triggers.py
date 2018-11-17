@@ -685,7 +685,7 @@ simple_triggers = [
           (val_max, ":random_down_limit", 0),
           (try_begin),
             (store_random_in_range, ":rand", 0, 100),
-            #(val_add, ":random_up_limit", 20), #kham - lets start sieges earlier
+            (val_add, ":random_up_limit", 20), #kham - lets start sieges earlier
             (lt, ":rand", ":random_up_limit"),
             (gt, ":siege_begin_hours", 24),#initial preparation
             (assign, ":launch_attack", 1),
