@@ -1,4 +1,4 @@
-1839
+1834
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -687,11 +687,6 @@ qstr_lord_{reg1}:_{s1}_is_ lord_{reg1}:_{s1}_is_patrolling_around_{s2}
 qstr_lord_{reg1}:_{s1}_NOT lord_{reg1}:_{s1}_NOT_patrolling_around_{s2}
 qstr_lord_{reg1}:_{s1}_is_a lord_{reg1}:_{s1}_is_accompanying_{s2}
 qstr_lord_{reg1}:_{s1}_NOT_ lord_{reg1}:_{s1}_NOT_accompanying_{s2}
-qstr_Debug:_Theater_SE Debug:_Theater_SE
-qstr_Debug:_Theater_SW Debug:_Theater_SW
-qstr_Debug:_Theater_C Debug:_Theater_C
-qstr_Debug:_Theater_N Debug:_Theater_N
-qstr_Debug:_Can_t_Find Debug:_Can't_Find
 qstr_Gained_permanent_+1_to_P Gained_permanent_+1_to_Pathfinding.
 qstr_Gained_permanent_+1_to_S Gained_permanent_+1_to_Spotting.
 qstr_INVALID_PARTY_BEING_ INVALID_PARTY_BEING_REMOVED_({s1})!_DISABLED_INSTEAD._PLEASE_LET_THE_DEVS_KNOW._THIS_IS_A_TEST_AGAINST_SAVE_GAME_CORRUPTION.
