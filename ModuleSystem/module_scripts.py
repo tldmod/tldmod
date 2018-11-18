@@ -226,6 +226,14 @@ scripts = [
 	(else_try),
 		(assign, "$player_looks_like_an_orc",0),
 	(try_end),
+
+	] + (is_a_wb_script==1 and [
+
+	# swy-- at this point should be safe to set the correct good/evil UI skin on Warband; keep in mind that $players_kingdom
+	#       gets first set when script_player_join_faction gets called by script_start_as_one in one of the previous menus.
+	(call_script, "script_tld_internal_set_good_or_evil_ui"),
+
+	] or []) + [
 ]),
 
 #############################  TLD PLAYER REWARD SYSTEM --- SCRIPTS   (mtarini)  #############################?#
@@ -28093,6 +28101,29 @@ if is_a_wb_script==1:
         (agent_set_team, ":agent_no", ":player_team"),
       (try_end),
   ]),
-  
 
+
+  #tld_internal_set_good_or_evil_ui
+  #  INPUT: none
+  # OUTPUT: none
+  ("tld_internal_set_good_or_evil_ui",
+    [ (set_fixed_point_multiplier, 100),
+
+      ] + (is_a_wb_script==1 and [
+
+      #swy-- WB: skin the global interface elements on Warband via shader uniform depending on the allegiance of the player,
+      #          the UI materials should use the swy_tld_ui_evil_mixing or swy_tld_hp_overlay shaders,
+      #          use the 'diffuse' texture for good and the 'diffuse2' slot for evil.
+      (try_begin),
+        (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+        (set_shader_param_float, "@swy_ui_evil",   0),
+      (else_try),
+        (set_shader_param_float, "@swy_ui_evil", 100), # = 1.0
+      (try_end),
+
+      #swy--
+
+      ] or []) + [
+
+  ]),
 ]

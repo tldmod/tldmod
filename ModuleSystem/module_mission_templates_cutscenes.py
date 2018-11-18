@@ -11,7 +11,8 @@ from module_info import wb_compile_switch as is_a_wb_cutscene
 
 #swy-- macro to select exit mode on all the cutscenes, that way we maintain compatibility and still works well in both games.
 #swy-- this also makes the HP UI visible again, controlled by shader uniforms.
-return_exit_macro = (is_a_wb_cutscene==1 and [ (set_shader_param_float, "@swy_ui_opacity", 100), #rustic equivalent to 1.0f = 0xff = 255 alpha = show it!
+return_exit_macro = (is_a_wb_cutscene==1 and [ (set_fixed_point_multiplier, 100),
+                                               (set_shader_param_float, "@swy_ui_opacity", 100), #rustic equivalent to 1.0f = 0xff = 255 alpha = show it!
                                                (jump_to_menu, "mnu_auto_return_to_map") ]
                                                
                                           or [ (change_screen_return) ])

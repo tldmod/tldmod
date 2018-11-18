@@ -4,6 +4,7 @@ from header_operations import *
 from header_triggers import *
 from ID_sounds import *
 
+from module_info import wb_compile_switch as is_a_wb_map_icon
 from module_map_icons_mapscribbler import *
 
 ####################################################################################################################
@@ -187,7 +188,19 @@ map_icons = map_icons_scribbler + [
   ("minas_tirith",mcn_no_shadow,"Minas_Tirith", 0.8,0, 0.0,-0.75,3.6,[(ti_on_init_map_icon,[(store_trigger_param_1,":center"),(party_slot_eq,":center",slot_center_destroyed,1),(cur_map_icon_set_tableau_material, "tableau_icon_burnable","mesh_icon_minastirith")])]),
   
   ("minasmorgul",mcn_no_shadow,"minasmorgul", 0.7,0),
-  ("morannon",mcn_no_shadow,"Morannon", 1.0,0),
+  ("morannon",mcn_no_shadow,"Morannon", 1.0, 0, is_a_wb_map_icon and
+  [
+    # swy-- after thinking for the best place to trigger the run-only-on-new-games-and-after-loading-a-savegame turns out that using ti_on_init_map_icon
+    #       on some icon that is used in the map is the best way to go. It's perfect, so early that it seems like the map bring-up is
+    #       invariably done right at the end of the loading screen.
+    (ti_on_init_map_icon,
+      [
+         # (dialog_box, "@LOLOL","@INITIALIZED morannon"),
+           (call_script, "script_tld_internal_set_good_or_evil_ui"),
+      ]
+    ),
+  ] or []
+),
   ("moria",mcn_no_shadow,"moria", 1.0,0),
   ("moria_bak",mcn_no_shadow,"moria_bak", 1.0,0), #unused
   ("nomadcamp",mcn_no_shadow,"nomadcamp", 1.0,0),

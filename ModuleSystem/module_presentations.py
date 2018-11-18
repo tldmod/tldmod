@@ -2796,7 +2796,7 @@ presentations = [
         ] + (wb_compile_switch==1 and [
         
         #swy-- transparent mask for the WB HP bar
-        (set_shader_param_float, "@swy_ui_opacity", 0.0),
+        (set_shader_param_float, "@swy_ui_opacity", 0),
         
         ] or []) + [
         

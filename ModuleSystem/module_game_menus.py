@@ -1534,6 +1534,15 @@ game_menus = [
 ("start_as_one",0, "^^^^^^^^^^What type of Soldier are you?","none", 
 
 	[
+
+		] + (is_a_wb_menu==1 and [
+
+		# swy-- at this point should be safe to set the correct good/evil UI skin on Warband; keep in mind that $players_kingdom
+		#       gets first set when script_player_join_faction gets called by script_start_as_one in one of the previous menus.
+		(call_script, "script_tld_internal_set_good_or_evil_ui"),
+
+		] or []) + [
+
 		(str_store_troop_name, s23, "$player_current_troop_type"),
 		(troop_get_upgrade_troop,reg0,"$player_current_troop_type",0),
 		(troop_get_upgrade_troop, reg1,"$player_current_troop_type",1),
@@ -1541,7 +1550,6 @@ game_menus = [
 		(str_store_troop_name,s21,reg0),
 		(gt,reg1,0),
 		(str_store_troop_name,s22,reg1),
-
 	],
 	    
     [

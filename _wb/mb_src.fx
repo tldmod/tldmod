@@ -22,6 +22,10 @@
 /* swyter-- used to hide the HP overlay on TLD cutscenes */
 float swy_ui_opacity = 1.0f;
 
+/* swyter-- used to mix between the good and evil UI background
+            texture variants depending on the player */
+float swy_ui_evil = 0.0f;
+
 /* swyter-- used to make everything darker when the Mordor faction is strong */
 float swy_mordor_strength_factor = 1.0f;
 
@@ -627,11 +631,23 @@ VS_OUTPUT_FONT_X vs_main_no_shadow(float4 vPosition : POSITION, float3 vNormal :
 
 	return Out;
 }
-PS_OUTPUT ps_main_no_shadow(VS_OUTPUT_FONT_X In, uniform const bool swy_is_ui = false) 
+PS_OUTPUT ps_main_no_shadow(VS_OUTPUT_FONT_X In, uniform const bool swy_is_ui = false, uniform const bool swy_is_faction_mix = false) 
 { 
 	PS_OUTPUT Output;
 	float4 tex_col = tex2D(MeshTextureSampler, In.Tex0);
 	INPUT_TEX_GAMMA(tex_col.rgb);
+
+
+	if (swy_is_faction_mix)
+	{
+		/* swyter -- linearly interpolate/mix between both GUI background textures, suggested by Kham and Merlkir! */
+		float4 tex_col_evil = tex2D(Diffuse2Sampler, In.Tex0); INPUT_TEX_GAMMA(tex_col_evil.rgb);
+		tex_col = lerp(tex_col, tex_col_evil, swy_ui_evil);
+	}
+
+    /* tex_col *= float4(1, 0.5, 1, 1); /* <- swy: rosy tinting for debugging */
+
+
 	Output.RGBColor =  In.Color * tex_col;
 	OUTPUT_GAMMA(Output.RGBColor.rgb);
 	
@@ -667,16 +683,16 @@ VS_OUTPUT_SPIRITUAL vs_font_spiritual(float4 vPosition : POSITION, float4 vColor
    float3 vViewN = normalize(mul((float3x3)matWorldView, vNormal)); //normal in view space
    
    
-   //tc += sin(time_var) // (1.0 - abs(vViewN.zzz * 2.)) * 3;
+    //tc += sin(time_var) // (1.0 - abs(vViewN.zzz * 2.)) * 3;
    
-		//float seed = time_var + (vPosition.x/vPosition.y/vPosition.z);
+    //float seed = time_var + (vPosition.x/vPosition.y/vPosition.z);
 
-		//vPositionw.y += ((sin(seed+cos(vPosition.x))*0.4f)* vPosition.x)/vPosition.z;
+    //vPositionw.y += ((sin(seed+cos(vPosition.x))*0.4f)* vPosition.x)/vPosition.z;
 
     
     //vPosition.x += sin(sin(time_var+vPosition.x)) / vPosition.z;
-   // vPosition.y += cos(sin(time_var+vPosition.y)) / vPosition.z;
-   // vPosition.z += sin(cos(time_var+vPosition.z)) / vPosition.z;
+    //vPosition.y += cos(sin(time_var+vPosition.y)) / vPosition.z;
+    //vPosition.z += sin(cos(time_var+vPosition.z)) / vPosition.z;
    
    
     vPosition.x += sin(vWorldPos.x + time_var*8.) / 50.;
@@ -777,7 +793,16 @@ technique swy_tld_hp_overlay //Uses gamma
 	pass P0
 	{
 		VertexShader = vs_font_compiled_2_0;
-		PixelShader = compile ps_2_0 ps_main_no_shadow(true);
+		PixelShader = compile ps_2_0 ps_main_no_shadow(true, true);
+	}
+}
+/* swyter-- custom technique to mix between the good and evil interface textures */
+technique swy_tld_evil_mixing //Uses gamma
+{
+	pass P0
+	{
+		VertexShader = vs_font_compiled_2_0;
+		PixelShader = compile ps_2_0 ps_main_no_shadow(false, true);
 	}
 }
 technique simple_shading_no_filter //Uses gamma
