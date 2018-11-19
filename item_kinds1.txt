@@ -84,13 +84,13 @@ itemsfile version 2
  itm_hunter Hunter Hunter 1  hunting_horse 0  65537 0 500 16139943936 0 100 0 20 0 3 90 34 36 0 0 18 0
 0
 
- itm_pony Pony Pony 1  pony 0  65537 0 300 119890247680 0 100 0 0 0 0 30 40 20 0 0 1 0
+ itm_pony Pony Pony 1  pony 0  65537 0 300 119353376768 0 100 0 0 0 0 30 40 20 0 0 1 0
 0
 
- itm_arnor_warhorse Arnorian_Warhorse Arnorian_Warhorse 1  arnor_mail 0  65537 0 3000 119890247680 0 100 0 65 0 4 140 32 35 0 0 35 0
+ itm_arnor_warhorse Arnorian_Warhorse Arnorian_Warhorse 1  arnor_mail 0  65537 0 3000 119353376768 0 100 0 65 0 4 140 32 35 0 0 35 0
 0
 
- itm_dunedain_warhorse Dunedain_Warhorse Dunedain_Warhorse 1  arnor_leather 0  65537 0 1500 119890247680 0 100 0 52 0 4 135 34 36 0 0 30 0
+ itm_dunedain_warhorse Dunedain_Warhorse Dunedain_Warhorse 1  arnor_leather 0  65537 0 1500 119353376768 0 100 0 52 0 4 135 34 36 0 0 30 0
 0
 
  itm_rohirrim_courser Rohirrim_Courser Rohirrim_Courser 1  rohan_horse01 0  65537 0 900 16139943936 0 100 0 10 0 2 90 40 46 0 0 18 0
@@ -102,10 +102,10 @@ itemsfile version 2
  itm_rohirrim_courser2 Rohirrim_Courser Rohirrim_Courser 1  rohan_horse03 0  65537 0 900 16139943936 0 100 0 10 0 2 100 40 46 0 0 18 0
 0
 
- itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 1500 119890247680 0 100 0 46 0 4 135 34 36 0 0 25 0
+ itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 1500 119353376768 0 100 0 46 0 4 135 34 36 0 0 25 0
 0
 
- itm_thengel_warhorse Thengel_Guard_Warhorse Thengel_Guard_Warhorse 1  rohan_warhorse02 0  65537 0 1500 119890247680 0 100 0 42 0 4 135 34 36 0 0 30 0
+ itm_thengel_warhorse Thengel_Guard_Warhorse Thengel_Guard_Warhorse 1  rohan_warhorse02 0  65537 0 1500 119353376768 0 100 0 42 0 4 135 34 36 0 0 30 0
 0
 
  itm_rhun_horse_a Rhun_Horse Rhun_Horse 1  rhunhorselight1 0  65537 0 500 16139943936 0 100 0 10 0 2 70 39 35 0 0 10 0
@@ -135,16 +135,16 @@ itemsfile version 2
  itm_dale_warhorse Rhovanion_Warhorse Rhovanion_Warhorse 1  hunting_horse 0  65537 0 1000 16139943936 0 100 0 17 0 3 90 34 37 0 0 10 0
 0
 
- itm_riv_warhorse Rivendell_Warhorse Rivendell_Warhorse 1  rivendell_warhorse01 0  65537 0 1500 119890247680 0 100 0 46 0 4 135 36 38 0 0 30 0
+ itm_riv_warhorse Rivendell_Warhorse Rivendell_Warhorse 1  rivendell_warhorse01 0  65537 0 1500 119353376768 0 100 0 46 0 4 135 36 38 0 0 30 0
 0
 
- itm_riv_warhorse2 Imladris_Steed Imladris_Steed 1  rivendell_warhorse02 0  65537 0 1500 119890247680 0 100 0 46 0 4 135 36 38 0 0 30 0
+ itm_riv_warhorse2 Imladris_Steed Imladris_Steed 1  rivendell_warhorse02 0  65537 0 1500 119353376768 0 100 0 46 0 4 135 36 38 0 0 30 0
 0
 
  itm_mordor_warhorse Mordor_Warhorse Mordor_Warhorse 1  mordor_warhorse01 0  65537 0 1500 16139943936 0 100 0 43 0 4 135 34 36 0 0 33 0
 0
 
- itm_mordor_warhorse2 Mordor_Sinister_Warhorse Mordor_Sinister_Warhorse 1  mordor_warhorse02 0  4097 0 2000 119890247680 0 100 0 60 0 4 150 34 35 0 0 40 0
+ itm_mordor_warhorse2 Mordor_Sinister_Warhorse Mordor_Sinister_Warhorse 1  mordor_warhorse02 0  4097 0 2000 119353376768 0 100 0 60 0 4 150 34 35 0 0 40 0
 0
 
  itm_gondor_courser Gondor_Courser Gondor_Courser 1  gondor_horse02 0  65537 0 900 16139943936 0 100 0 16 0 2 80 37 43 0 0 10 0
@@ -153,10 +153,10 @@ itemsfile version 2
  itm_gondor_hunter Gondor_Hunter Gondor_Hunter 1  gondor_horse01 0  65537 0 724 16139943936 0 100 0 21 0 3 100 36 40 0 0 18 0
 0
 
- itm_dol_amroth_warhorse Dol_Amroth_Warhorse Dol_Amroth_Warhorse 1  da_warhorse02 0  65537 0 1500 119890247680 0 100 0 35 0 4 140 33 35 0 0 30 0
+ itm_dol_amroth_warhorse Dol_Amroth_Warhorse Dol_Amroth_Warhorse 1  da_warhorse02 0  65537 0 1500 119353376768 0 100 0 35 0 4 140 33 35 0 0 30 0
 0
 
- itm_dol_amroth_warhorse2 Dol_Amroth_Heavy_Warhorse Dol_Amroth_Heavy_Warhorse 1  da_warhorse01 0  65537 0 2000 119890247680 0 100 0 35 0 4 140 33 35 0 0 35 0
+ itm_dol_amroth_warhorse2 Dol_Amroth_Heavy_Warhorse Dol_Amroth_Heavy_Warhorse 1  da_warhorse01 0  65537 0 2000 119353376768 0 100 0 35 0 4 140 33 35 0 0 35 0
 0
 
  itm_gondor_warhorse Gondor_Warhorse Gondor_Warhorse 1  gondor_warhorse01 0  65537 0 1500 16139943936 0 100 0 46 0 4 135 34 36 0 0 26 0
@@ -165,7 +165,7 @@ itemsfile version 2
  itm_gondor_lam_horse Lamedon_Armored_Horse Lamedon_Armored_Horse 1  lam_warhorse01 0  65537 0 1500 16139943936 0 100 0 35 0 4 135 34 36 0 0 26 0
 0
 
- itm_lorien_warhorse Lothlorien_Warhorse Lothlorien_Warhorse 1  loth_warhorse01 0  65537 0 1500 119890247680 0 100 0 46 0 4 135 34 36 0 0 32 0
+ itm_lorien_warhorse Lothlorien_Warhorse Lothlorien_Warhorse 1  loth_warhorse01 0  65537 0 1500 119353376768 0 100 0 46 0 4 135 34 36 0 0 32 0
 0
 
  itm_harad_horse Harad_Horse Harad_Horse 1  harad_horse01 0  65537 0 900 16139943936 0 100 0 10 0 2 80 34 36 0 0 10 0
@@ -389,37 +389,37 @@ itemsfile version 2
 1
 -50  3 2071 1 1224979098644774912 2072 1 1224979098644774913 1 4 325 8 1224979098644774912 1224979098644774913 
 
- itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 50 656522 1 100 0 0 88 0 0 99 48 0 0 25 0
+ itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 50 525450 1 100 0 0 86 0 0 99 46 0 0 23 0
 0
 
- itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  6357000 5905584128 100 656522 1 100 0 0 92 1 0 98 52 0 0 26 0
+ itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  6357000 6174019584 100 525450 1 100 0 0 92 1 0 98 52 0 0 26 0
 0
 
- itm_nomad_bow Nomad_Bow Nomad_Bow 2  nomad_bow 0  nomad_bow_case 3458764513820540928  6357000 37312532480 200 656522 1.25 100 0 0 86 2 0 96 48 0 0 26 0
+ itm_nomad_bow Nomad_Bow Nomad_Bow 2  nomad_bow 0  nomad_bow_case 3458764513820540928  6357000 37312532480 200 525450 1.25 100 0 0 86 2 0 96 48 0 0 24 0
 0
 
- itm_gondor_bow Gondor_Bow Gondor_Bow 2  gondor_bow 0  gondor_bow_carry 3458764513820540928  274792456 5905584128 600 656522 1.75 100 0 0 88 3 0 82 57 0 0 30 0
+ itm_gondor_bow Gondor_Bow Gondor_Bow 2  gondor_bow 0  gondor_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.75 100 0 0 88 3 0 82 57 0 0 30 0
 0
 
- itm_strong_bow Strong_Bow Strong_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  6357000 37312532480 400 656522 1.25 100 0 0 85 3 0 94 50 0 0 26 0
+ itm_strong_bow Strong_Bow Strong_Bow 2  strong_bow 0  strong_bow_case 3458764513820540928  6357000 37312532480 400 525450 1.25 100 0 0 85 3 0 94 52 0 0 26 0
 0
 
  itm_elven_bow Elven_Bow Elven_Bow 2  GA_BowE_Longbow_A 0  GA_BowE_Longbow_A_Carry 3458764513820540928  274792456 5905584128 1000 656384 1.5 100 0 0 93 3 0 93 65 0 0 276 0
 0
 
- itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  274792456 5905584128 900 656522 1.5 100 0 0 87 4 0 80 58 0 0 276 0
+ itm_corsair_bow Corsair_Bow Corsair_Bow 2  corsair_bow 0  corsair_bow_carry 3458764513820540928  274792456 5905584128 900 525450 1.5 100 0 0 87 4 0 80 58 0 0 276 0
 0
 
- itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 500 656384 1.25 100 0 0 86 3 0 84 56 0 0 26 0
+ itm_dwarf_horn_bow Dwarf_Horn_Bow Dwarf_Horn_Bow 2  dwarf_horn_bow 0  dwarf_horn_bow 3458764513820540928  6357000 2952794112 500 656384 1.25 100 0 0 86 3 0 84 56 0 0 28 0
 0
 
- itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 300 656522 1.25 100 0 0 84 1 0 86 53 0 0 25 0
+ itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 300 525450 1.25 100 0 0 84 1 0 86 53 0 0 25 0
 0
 
- itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 6174019584 300 656522 1.25 100 0 0 84 1 0 95 56 0 0 27 0
+ itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 6174019584 300 525450 1.25 100 0 0 84 1 0 95 56 0 0 27 0
 0
 
- itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  274792456 6174019584 1100 656522 1.25 100 0 0 93 4 0 90 56 0 0 28 0
+ itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  274792456 6174019584 1100 525450 1.25 100 0 0 93 4 0 90 56 0 0 28 0
 0
 
  itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 279 0
@@ -431,13 +431,13 @@ itemsfile version 2
  itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  274792456 5905584128 1300 656384 1.5 100 0 0 96 4 0 93 65 0 0 279 0
 0
 
- itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  274792456 5905584128 800 656522 1.5 100 0 0 84 3 0 81 58 0 0 275 0
+ itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  274792456 5905584128 800 525450 1.5 100 0 0 84 3 0 81 58 0 0 275 0
 0
 
- itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 600 656522 1.5 100 0 0 91 4 0 93 58 0 0 26 0
+ itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.5 100 0 0 91 4 0 93 58 0 0 26 0
 0
 
- itm_uruk_bow Strong_Orc_Bow Strong_Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2952794112 500 656522 1.25 100 0 0 84 2 0 94 57 0 0 23 0
+ itm_uruk_bow Strong_Orc_Bow Strong_Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2952794112 500 525450 1.25 100 0 0 84 2 0 94 57 0 0 23 0
 0
 
  itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.5 100 0 0 93 4 0 95 65 0 0 277 0
@@ -1203,7 +1203,7 @@ itemsfile version 2
  itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 300 0 5 100 0 0 80 0 0 99 20 53 7 40 0
 0
 
- itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 656522 1.25 100 0 0 74 0 0 86 53 0 0 20 0
+ itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 525450 1.25 100 0 0 74 0 0 86 53 0 0 20 0
 0
 
  itm_orc_shield_a Orc_Shield Orc_Shield 1  orc_shield_a 0  327687 5100273664 100 251658402 3 100 0 2 0 0 100 96 0 40 0 0 0

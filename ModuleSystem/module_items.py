@@ -196,7 +196,7 @@ imodbits_pick   =           0#imodbit_rusty | imodbit_chipped | imodbit_balanced
 imodbits_thrown   =       0#imodbit_bent | imodbit_heavy| imodbit_balanced| imodbit_large_bag
 #
 imodbits_horse_basic = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stubborn | imodbit_timid | imodbit_thick
-imodbits_horse_good = imodbit_spirited | imodbit_heavy | imodbit_thick | imodbit_reinforced | imodbit_champion | imodbit_lordly
+imodbits_horse_good = imodbit_spirited | imodbit_heavy | imodbit_thick | imodbit_reinforced | imodbit_champion
 imodbits_warg = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stubborn | imodbit_thick | imodbit_reinforced
 #
 imodbits_good   = 0#imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_reinforced
@@ -221,8 +221,8 @@ imodbits_elf_good = imodbit_thick | imodbit_reinforced | imodbit_lordly| imodbit
 #
 imodbits_missile  = imodbit_crude | imodbit_bent | imodbit_large_bag | imodbit_fine | imodbit_balanced
 imodbits_good_missile  = imodbit_large_bag | imodbit_fine | imodbit_balanced
-imodbits_bow = imodbit_cracked | imodbit_bent | imodbit_crude | imodbit_fine | imodbit_strong | imodbit_masterwork
-imodbits_good_bow = imodbit_fine | imodbit_strong | imodbit_masterwork
+imodbits_bow = imodbit_cracked | imodbit_bent | imodbit_crude | imodbit_fine | imodbit_strong
+imodbits_good_bow = imodbit_fine | imodbit_strong | imodbit_masterwork 
 #
 imodbits_shield  = imodbit_cracked | imodbit_battered | imodbit_crude | imodbit_sturdy | imodbit_hardened | imodbit_thick | imodbit_reinforced
 imodbits_shield_good = imodbit_thick | imodbit_hardened | imodbit_reinforced | imodbit_lordly
@@ -454,14 +454,14 @@ items =[
 #
 #RANGED
 #["stones","Troll Stones",[("throwing_stone",0)], itp_type_thrown |itp_primary ,itcf_throw_stone, 1, weight(4)|difficulty(0)|spd_rtng(97) | shoot_speed(30) | thrust_damage(11 ,  blunt)|max_ammo(18)|weapon_length(8),imodbit_large_bag ],
-["short_bow","Short_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,50,weight(1)|difficulty(0)|shoot_speed(48)|spd_rtng(99)|thrust_damage(25,cut)|accuracy(88),imodbits_bow,[] ],
-["regular_bow","Bow",[("regular_bow",0),("regular_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,100,weight(1)|difficulty(1)|shoot_speed(52)|spd_rtng(98)|thrust_damage(26,cut)|accuracy(92),imodbits_bow,[] ],
-["nomad_bow","Nomad_Bow",[("nomad_bow",0),("nomad_bow_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,200,weight(1.3)|difficulty(2)|shoot_speed(48)|spd_rtng(96)|thrust_damage(26,cut)|accuracy(86),imodbits_bow,[] ],
+["short_bow","Short_Bow",[("small_bow",0),("small_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back,50,weight(1)|difficulty(0)|shoot_speed(46)|spd_rtng(99)|thrust_damage(23,cut)|accuracy(86),imodbits_bow,[] ],
+["regular_bow","Bow",[("regular_bow",0),("regular_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bow_back|itp_cant_use_on_horseback,100,weight(1)|difficulty(1)|shoot_speed(52)|spd_rtng(98)|thrust_damage(26,cut)|accuracy(92),imodbits_bow,[] ],
+["nomad_bow","Nomad_Bow",[("nomad_bow",0),("nomad_bow_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,200,weight(1.3)|difficulty(2)|shoot_speed(48)|spd_rtng(96)|thrust_damage(24,cut)|accuracy(86),imodbits_bow,[] ],
 ["gondor_bow","Gondor_Bow",[("gondor_bow",0),("gondor_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,600,weight(1.8)|difficulty(3)|shoot_speed(57)|spd_rtng(82)|thrust_damage(30,cut)|accuracy(88),imodbits_bow,[] ],
-["strong_bow","Strong_Bow",[("strong_bow",0),("strong_bow_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,400,weight(1.3)|difficulty(3)|shoot_speed(50)|spd_rtng(94)|thrust_damage(26,cut)|accuracy(85),imodbits_bow,[] ],
+["strong_bow","Strong_Bow",[("strong_bow",0),("strong_bow_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,400,weight(1.3)|difficulty(3)|shoot_speed(52)|spd_rtng(94)|thrust_damage(26,cut)|accuracy(85),imodbits_bow,[] ],
 ["elven_bow","Elven_Bow",[("GA_BowE_Longbow_A",0),("GA_BowE_Longbow_A_Carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,1000,weight(1.5)|difficulty(3)|shoot_speed(65)|spd_rtng(93)|thrust_damage(20,pierce)|accuracy(93),imodbits_good_bow,[] ],
 ["corsair_bow","Corsair_Bow",[("corsair_bow",0),("corsair_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,900,weight(1.5)|difficulty(4)|shoot_speed(58)|spd_rtng(80)|thrust_damage(20,pierce)|accuracy(87),imodbits_bow,[] ],
-["dwarf_horn_bow","Dwarf_Horn_Bow",[("dwarf_horn_bow",0),("dwarf_horn_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left,500,weight(1.3)|difficulty(3)|shoot_speed(56)|spd_rtng(84)|thrust_damage(26,cut)|accuracy(86),imodbits_good_bow,[] ],
+["dwarf_horn_bow","Dwarf_Horn_Bow",[("dwarf_horn_bow",0),("dwarf_horn_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left,500,weight(1.3)|difficulty(3)|shoot_speed(56)|spd_rtng(84)|thrust_damage(28,cut)|accuracy(86),imodbits_good_bow,[] ],
 ["dwarf_short_bow","Dwarf_Short_Bow",[("dwarf_short_bow",0),("dwarf_short_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left,300,weight(1.3)|difficulty(1)|shoot_speed(53)|spd_rtng(86)|thrust_damage(25,cut)|accuracy(84),imodbits_bow,[] ],
 ["harad_bow","Harad_Curved_Bow",[("harad_bow",0),("harad_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_back,300,weight(1.3)|difficulty(1)|shoot_speed(56)|spd_rtng(95)|thrust_damage(27,cut)|accuracy(84),imodbits_bow,[] ],
 ["lg_bow","Eagle_Guard_Bow",[("lg_bow",0),("lg_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_back,1100,weight(1.3)|difficulty(4)|shoot_speed(56)|spd_rtng(90)|thrust_damage(28,cut)|accuracy(93),imodbits_bow,[] ],
