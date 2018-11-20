@@ -595,7 +595,7 @@ simple_triggers = [
   
   # (26) Process siege ai - modified with script - Kham (Oct 2018)
   (3,[(store_current_hours, ":cur_hours"),
-      (store_random_in_range, ":center_no", centers_begin, centers_end),
+      (try_for_range, ":center_no", centers_begin, centers_end),
         (party_is_active, ":center_no"), #TLD
         (party_slot_eq, ":center_no", slot_center_destroyed, 0), #TLD
         (party_get_slot, ":besieger_party", ":center_no", slot_center_is_besieged_by),
@@ -625,7 +625,6 @@ simple_triggers = [
             (party_slot_eq, ":party_no", slot_party_ai_object, ":center_no"),
             (assign, ":continue", 1),
           (else_try),
-      (party_slot_eq, ":party_no", slot_party_ai_state, spai_accompanying_army),
             (party_get_slot, ":commander_party", ":party_no", slot_party_commander_party),
             (gt, ":commander_party", 0),
             (party_is_active, ":commander_party"),
@@ -676,7 +675,7 @@ simple_triggers = [
           (try_end),
           (try_begin),
             (gt, ":random_up_limit", -100), #never attack if the strength ratio is less than 1:1 (was 2:1)
-            (store_div, ":siege_begin_hours_effect", ":siege_begin_hours", 2),
+            (store_div, ":siege_begin_hours_effect", ":siege_begin_hours", 3),
             (val_add, ":random_up_limit", ":siege_begin_hours_effect"),
           (try_end),
           (val_div, ":random_up_limit", 5),
@@ -719,7 +718,7 @@ simple_triggers = [
             (party_set_slot, ":center_no", slot_center_siege_begin_hours, ":cur_hours"),
           (try_end),
         (try_end),
-        # (try_end),
+       (try_end),
     ]),
   
   # (27) Reset hero quest status
