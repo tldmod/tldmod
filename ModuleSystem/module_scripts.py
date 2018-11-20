@@ -8432,8 +8432,12 @@ scripts = [
         (assign, ":caravan_continue", 1),
 
         (try_begin),
-        	(party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan), #Caravans
+        	(party_get_template_id, ":template_type", ":party_no"),
+        	(this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan), #Caravans
+        	(is_between, ":template_type", "pt_gondor_caravan", "pt_gondor_p_train"), #again, caravans
         	(party_is_in_any_town, ":party_no"),
+        	(party_get_attached_to, ":attached_to_party", ":party_no"),
+         	(is_between, ":attached_to_party", centers_begin, centers_end),
         	(assign, ":caravan_continue", 0),
         (try_end),
 
