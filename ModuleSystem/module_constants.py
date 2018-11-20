@@ -1682,7 +1682,7 @@ center_list = [
 
 (p_town_moria, [scn_moria_center, -1, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_moria_siege,mesh_town_moria],
 	[trp_barman_moria, trp_smith_moria, trp_merchant_moria, trp_elder_moria, pt_moria_recruits, trp_moria_lord,trp_i1_snaga_of_moria,trp_i2_goblin_of_moria,trp_c3_wolf_rider_of_moria,trp_i3_large_goblin_of_moria], 
-	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med*2, 1, tld_siegable_capital),
+	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_med, 950, 1, tld_siegable_capital),
 (p_town_troll_cave, [scn_troll_cave_center, -1, -1,-1,-1,scn_troll_cave_siege, mesh_ui_default_menu_window],
 	[-1, trp_no_troop, trp_no_troop, trp_no_troop, pt_moria_recruits, trp_moria_lord,trp_i1_snaga_of_moria,trp_i2_goblin_of_moria,trp_c3_wolf_rider_of_moria,trp_i3_large_goblin_of_moria], 
 	[icon_mfc_moria],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 1, tld_siegable_always),
@@ -1709,7 +1709,7 @@ center_list = [
 	
 (p_town_dol_guldur, [scn_dol_guldur_center, scn_mordor_castle, scn_mordor_prison,scn_mordor_tavern,scn_mordor_arena,scn_dol_guldur_siege,mesh_town_dol_guldur],
 	[trp_barman_dolguldur, trp_smith_dolguldur, trp_merchant_dolguldur, trp_elder_dolguldur, pt_guldur_recruits, trp_guldur_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
-	[icon_mfc_guldur],[900],[2,1,4,1,4,1], str_income_high, garrison_limit_evil_high*2, 1, tld_siegable_capital),
+	[icon_mfc_guldur],[900],[2,1,4,1,4,1], str_income_high, 800, 1, tld_siegable_capital),
 (p_town_dol_guldur_north_outpost, [scn_dol_guldur_north_outpost_center, -1, -1,-1,-1,scn_dol_guldur_north_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_smith_dolguldur, trp_merchant_dolguldur, trp_no_troop, pt_guldur_recruits, trp_guldur_lord, trp_uruk_of_mordor, trp_orc_of_mordor, trp_large_orc_of_mordor, trp_orc_tracker_of_mordor], 
 	[icon_mfc_guldur],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_high, 2, tld_siegable_normal),
@@ -1726,7 +1726,7 @@ center_list = [
 # Gundabad camp
 (p_town_gundabad,     [scn_gundabad_camp_center, -1, -1,-1, scn_mordor_arena,scn_gundabad_siege, mesh_town_gundabad],
 	[-1, trp_smith_gundabad, trp_merchant_gundabad, trp_elder_gunda, pt_gundabad_cap_recruits, trp_gundabad_lord,trp_i1_goblin_gundabad,trp_i2_orc_gundabad,trp_i3_orc_fighter_gundabad,trp_c4_warg_rider_gundabad], 
-	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, garrison_limit_evil_med*2, 2, tld_siegable_capital),
+	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_med, 900, 2, tld_siegable_capital),
 (p_town_gundabad_ne_outpost, [scn_gundabad_ne_outpost_center, -1, -1,-1,-1,scn_gundabad_ne_outpost_center_siege, mesh_town_evilcamp],
 	[-1, trp_no_troop, trp_merchant_gundabad, trp_no_troop, pt_gundabad_recruits, trp_gundabad_lord,trp_i1_goblin_gundabad,trp_i2_orc_gundabad,trp_i3_orc_fighter_gundabad,trp_c4_warg_rider_gundabad], 
 	[icon_mfc_gundabad],[900],[2,1,4,1,4,1], str_income_low, garrison_limit_evil_high, 2, tld_siegable_always),
