@@ -2162,25 +2162,25 @@ subfaction_gondor_player_icons = [
     (subfac_rangers  ,		icon_knight_gondor	,icon_footman_gondor	,icon_ithilien_ranger),
 ]
 
-# Daytime/Nighttime penalties system (foxyman)
+# Daytime/Nighttime penalties system (foxyman), increased and also affecting melee wp (InVain)
 Penalties_sys = [
-    (tf_male,    [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-    (tf_female,  [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-    (tf_gondor,  [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-    (tf_rohan,   [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-    (tf_dunland, [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
+    (tf_male,    [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_female,  [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_gondor,  [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_rohan,   [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_dunland, [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
     (tf_orc,     [("skl_athletics", -3),("skl_spotting", -1),("skl_pathfinding", -1)], [(wpt_one_handed_weapon, -20),(wpt_two_handed_weapon, -20),(wpt_polearm, -20),(wpt_archery, -50),(wpt_throwing, -20)]),
     (tf_uruk,    [("skl_athletics", -3),("skl_spotting", -1),("skl_pathfinding", -1)], [(wpt_one_handed_weapon, -20),(wpt_two_handed_weapon, -20),(wpt_polearm, -20),(wpt_archery, -50),(wpt_throwing, -20)]),
     (tf_urukhai, [        ], [        ]),
-    (tf_harad,   [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-    (tf_dwarf,   [        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-    (tf_troll,   [		  ], [(wpt_one_handed_weapon, -20),(wpt_two_handed_weapon, -20),(wpt_polearm, -20)]),
-    (tf_dunedain,[        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-    (tf_lorien,  [        ], [(wpt_archery, 15),(wpt_throwing, 15)]),
-    (tf_imladris,[        ], [(wpt_archery, 15),(wpt_throwing, 15)]),
-    (tf_woodelf, [        ], [(wpt_archery, 15),(wpt_throwing, 15)]),
-    (tf_evil_man,[        ], [(wpt_archery, 30),(wpt_throwing, 30)]),
-]
+    (tf_harad,   [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_dwarf,   [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_troll,   [          ], [(wpt_one_handed_weapon, -20),(wpt_two_handed_weapon, -20),(wpt_polearm, -20)]),
+    (tf_dunedain,[        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_lorien,  [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_imladris,[        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_woodelf, [        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+    (tf_evil_man,[        ], [(wpt_archery, 60),(wpt_throwing, 60),(wpt_one_handed_weapon, 40),(wpt_two_handed_weapon, 40),(wpt_polearm, 40)]),
+]	
 
 skill2item_list = [0,"skl_riding","skl_leadership","skl_power_strike","skl_persuasion","skl_horse_archery","skl_first_aid","skl_shield","skl_power_draw","skl_surgery","skl_power_throw","skl_trade","skl_tactics","skl_ironflesh","skl_athletics","skl_looting"]
 
