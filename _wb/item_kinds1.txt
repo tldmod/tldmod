@@ -704,7 +704,7 @@ itemsfile version 2
  itm_blackroot_warrior Blackroot_Vale_Gambeson Blackroot_Vale_Gambeson 1  blackroot_warrior 0  16842765 0 1200 704643072 15 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_leader Blackroot_Vale_Mail Blackroot_Vale_Mail 1  blackroot_leader 0  16842765 0 3000 704643072 20 100 0 30 10 0 0 0 0 0 0 0 0
+ itm_blackroot_leader Blackroot_Vale_Mail Blackroot_Vale_Mail 1  blackroot_leader 0  16842765 0 3000 704643072 20 100 0 26 10 0 0 0 0 0 0 0 0
 0
 
  itm_blackroot_hood Black_Hood Black_Hood 4  blackroot_hood 0  gondor_wimple_a 8  gondor_wimple_b 2  gondor_fine_fem_hat 4  1610678284 0 100 1116815228928 0.5 100 12 0 0 0 0 0 0 0 0 0 0
@@ -761,7 +761,7 @@ itemsfile version 2
  itm_pinnath_footman Pinnath_Gelin_Footman_Armor Pinnath_Gelin_Footman_Armor 1  pinnath_footman 0  16842765 0 400 704643072 12 100 0 16 4 0 0 0 0 0 0 0 0
 0
 
- itm_pinnath_leader Pinnath_Gelin_Leader_Armor Pinnath_Gelin_Leader_Armor 1  pinnath_leader 0  16842765 0 1100 704643072 18 100 0 30 8 0 0 0 0 0 0 0 0
+ itm_pinnath_leader Pinnath_Gelin_Knight_Armor Pinnath_Gelin_Knight_Armor 1  pinnath_leader 0  16842765 0 1100 704643072 22 100 0 26 10 0 0 0 0 0 0 0 0
 0
 
  itm_pinnath_vet_footman Pinnath_Gelin_Veteran_Footman_Armor Pinnath_Gelin_Veteran_Footman_Armor 1  pinnath_vet_footman 0  16842765 0 600 704643072 14 100 0 20 4 0 0 0 0 0 0 0 0
