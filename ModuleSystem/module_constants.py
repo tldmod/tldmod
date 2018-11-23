@@ -1969,11 +1969,11 @@ fac_tableau_list = [
 ## TODO: fill out the list, these are test values
 fac_reward_items_list = [
 #fac_gondor
-[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4,itm_gondor_shield_e, 0), (5, itm_silmarillion_reward, imod_reinforced), (6, itm_gon_tower_knight, 0), (7, itm_tower_guard_helm, 0), (8, itm_westernesse1h_reward, 0), (9, itm_horn_gondor_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_athelas_reward,0),(4,itm_gondor_shield_e, 0), (5, itm_silmarillion_reward, 0), (6, itm_gon_tower_knight, 0), (7, itm_tower_guard_helm, 0), (8, itm_westernesse1h_reward, 0), (9, itm_horn_gondor_reward, 0)],
 #fac_dwarf
 [(2,itm_cooking_cauldron,0),(3,itm_hammer_reward ,0),(4,itm_scroll_reward, 0), (5, itm_dwarf_shield_reward, 0), (6, itm_ring_a_reward, 0), (7, itm_dwarf_armor_c, imod_lordly), (8, itm_dwarf_great_axe_reward, 0), (9, itm_dwarf_helm_p, imod_lordly)],
 #fac_rohan
-[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_rohirrim_hunter, imod_champion), (5, itm_rohan_lance_banner_horse, imod_balanced), (6, itm_rohan_armor_th, 0), (7, itm_rohan_saddle, 0), (8, itm_eorl_cavalry_sword, 0), (9, itm_mearas_reward, 0)],
+[(2,itm_cooking_cauldron,0),(3,itm_map           ,0),(4,itm_rohirrim_courser2, imod_heavy), (5, itm_rohan_lance_banner_horse, imod_balanced), (6, itm_rohan_armor_th, 0), (7, itm_rohan_saddle, 0), (8, itm_eorl_cavalry_sword, 0), (9, itm_mearas_reward, 0)],
 #fac_mordor
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_mordor_warhorse2, imod_heavy), (5, itm_warg_reward, 0), (6, itm_angmar_whip_reward, 0), (7, itm_m_cap_armor, imod_lordly), (8, itm_nazgul_sword, 0), (9, itm_witchking_helmet, 0)],
 #fac_isengard
