@@ -2420,7 +2420,7 @@ itemsfile version 2
  itm_dwarf_nasal_b Dwarf_Nasal_Helm Dwarf_Nasal_Helm 1  DwarfHelmConical_BChain 0  65548 0 800 704643072 2 100 33 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_north_skullcap North_Skullcap North_Skullcap 4  north_skullcap_bad 164  north_skullcap_ok 1  north_skullcap_ok 0  north_skullcap_2a 704643072  65548 0 600 704643238 2 100 25 0 0 0 0 0 0 0 0 0 0
+ itm_north_skullcap North_Skullcap North_Skullcap 4  north_skullcap_bad 164  north_skullcap_ok 1  north_skullcap_ok 0  unused_north_skullcap_2b 704643072  65548 0 600 704643238 2 100 25 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_helm_kettle Dwarf_Kettle_Helm Dwarf_Kettle_Helm 3  DwarfHelmConicalChain 1  DwarfHelmConicalChain 0  DwarfHelmConicalMask 536870912  65548 0 1000 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
