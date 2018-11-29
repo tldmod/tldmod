@@ -411,6 +411,8 @@ itc_great_lance_upstab =  itc_greatlance|itcf_force_64_bits|itcf_overswing_spear
 itc_pike_upstab = itc_parry_polearm|itcf_force_64_bits|itcf_overswing_spear|itcf_thrust_polearm
 #Hoboistice end
 
+itc_overhead_only = itcf_force_64_bits|itcf_overswing_onehanded | itcf_overswing_twohanded
+
 #EXtra Mesh IDs
 ixmesh_inventory   = 0x1000000000000000
 ixmesh_flying_ammo = 0x2000000000000000

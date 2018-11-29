@@ -14,3 +14,4 @@ psf_turn_to_velocity    = 0x0000000400
 psf_randomize_rotation  = 0x0000001000
 psf_randomize_size      = 0x0000002000
 psf_2d_turbulance       = 0x0000010000
+psf_next_effect_is_lod  = 0x0000020000

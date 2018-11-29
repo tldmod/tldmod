@@ -1,4 +1,4 @@
-1835
+1837
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -840,6 +840,8 @@ qstr_You_rally_your_troop You_rally_your_troops!
 qstr_{s5}_rallies_{reg65? {s5}_rallies_{reg65?her:his}_troops!
 qstr_You_have_killed_{reg You_have_killed_{reg1}_enemies_in_this_battle!
 qstr_Your_bravery_inspire Your_bravery_inspires_your_troops!
+qstr_Troll_is_Charging! Troll_is_Charging!
+qstr_Charge_turned_off___ Charge_turned_off_--_Time:_{reg65},_Last_Charge:_{reg66}
 qstr_Your_mount_has_falle Your_mount_has_fallen_to_the_ground_beneath_you!
 qstr_Receive_{reg22}_dama Receive_{reg22}_damage.
 qstr_You_have_been_knocke You_have_been_knocked_unconscious_by_{s22}.
@@ -1070,19 +1072,19 @@ qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
 qstr_Kham_Cheat_Mode_ON! Kham_Cheat_Mode_ON!
-qstr_{s7}_Garrison_Remove {s7}_Garrison_Removed!
-qstr_OFF OFF
-qstr_ON ON
+qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
+qstr_1_troll_added! 1_troll_added!
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{reg63}_followers {reg63}_followers
 qstr_{reg0}_Fit_Regulars {reg0}_Fit_Regulars
 qstr_{reg0}_Fit_for_battl {reg0}_Fit_for_battle
-qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
 qstr_Player_Siege_Enabled Player_Siege_Enabled
 qstr_You_are_not_in_the_r You_are_not_in_the_right_region_to_spawn_animal_ambushes._Please_go_to_N_Mirkwood,_S_Mirkwood,_Grey_Mountains,_or_Misty_Mountains
+qstr_ON ON
 qstr_OFF__cheat_ OFF_(cheat)
+qstr_OFF OFF
 qstr_All_messages All_messages
 qstr_{reg0}__will_most_li {reg0}_(will_most_likely_cause_save_crashes)
 qstr_{reg0}__could_possib {reg0}_(could_possibly_cause_save_crashes)

@@ -1991,10 +1991,10 @@ animations = [
    [1.4, "man_walk", 0, 32, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.0],
  ],
  # flyback animations (for troll victims) then rise  
- ["strike_fly_back_near_rise", acf_enforce_lowerbody|acf_align_with_ground|acf_displace_position,  amf_priority_striked|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
+ ["strike_fly_back_near_rise", acf_enforce_lowerbody|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [1.7, "ani_fall_flyback1_near_rise", 0, 43, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-1.6,0), 0.5],
  ],
- ["strike_fly_back_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_striked|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
+ ["strike_fly_back_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [2.09, "ani_fall_flyback1_med_rise", 0, 53, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.19,  -2.7  ,0), 0.5],
    [2.214,"ani_fall_flyback1_far_rise", 0, 56, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.19,  -4.4  ,0), 0.5],
    [2.1,  "ani_fall_flyback2_med_rise", 0, 49, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.933, -2.454,0), 0.5],
@@ -2003,7 +2003,7 @@ animations = [
    [2.2,  "ani_fall_flyback3_far_rise", 0, 64, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.0345,-4.81 ,0), 0.5],
  ],
  # the same, but when hit from left...
-  ["strike_fly_back_rise_from_left", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_striked|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
+  ["strike_fly_back_rise_from_left", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [2.09, "ani_fall_flyback1_med_rise_from_left", 0, 53, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.19, -2.7,0), 0.5],
    [2.214,"ani_fall_flyback1_far_rise_from_left", 0, 56, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.19, -4.4,0), 0.5],
    [2.1,  "ani_fall_flyback2_med_rise_from_left", 0, 49, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.933, -2.454,0), 0.5],
@@ -2012,18 +2012,18 @@ animations = [
    [2.2,  "ani_fall_flyback3_far_rise", 0, 64, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.0345, -4.81,0), 0.5],
  ],
  # hit from back: fly forward
- ["strike_fly_front_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_striked|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
+ ["strike_fly_front_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [1.12, "ani_fall_flyfront_rise", 0, 77, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.36,2.93,0), 1.0],
  ],
  # flyback animations (troll victims),  but don't rise (UNUSED -- should substitute death animations but cannot do that)
- ["strike_fly_back_near", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_striked|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
+ ["strike_fly_back_near", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [0.59, "ani_fall_flyback1_near_rise", 0, 15, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-1.6,0), 0.5],
  ],
- ["strike_fly_back", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_striked|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
+ ["strike_fly_back", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [0.59, "ani_fall_flyback1_med_rise", 0, 15, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-2.7,0), 0.5],
    [0.62, "ani_fall_flyback1_far_rise", 0, 15, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (0.19,-4.4,0), 0.5],
  ],
- ["strike_fly_front", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_striked|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
+ ["strike_fly_front", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [0.59, "ani_fall_flyfront_rise", 0, 40, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), (-0.36,2.93,0), 0.5],
  ],
  
@@ -2171,11 +2171,11 @@ animations = [
    [3.0, "anim_human", 80, 82, arf_use_stand_progress|arf_cyclic|arf_two_handed_blade, 0, (0, 0, 0), 0.5],
  ],
 
-  ["troll_roar", acf_enforce_all|acf_rotate_body, amf_client_prediction|amf_priority_die|amf_play|amf_start_instantly|amf_continue_to_next,
+  ["troll_roar", acf_enforce_all, amf_client_prediction|amf_priority_die|amf_play|amf_start_instantly|amf_continue_to_next,
    [2.3, "man_cheer", 200, 289, arf_blend_in_1],
  ],
-  ["troll_charge", acf_displace_position|acf_rotate_body|acf_enforce_all, amf_client_prediction|amf_priority_die|amf_play, 
-   [2.3, "sprint", 0, 59, arf_blend_in_1, 0, (0, 9.4, 0), 0], 
+  ["troll_charge", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_die|amf_play|amf_accurate_body,
+   [2.6, "sprint", 0, 59, arf_blend_in_1, 0, (0, 9.4, 0), 0], 
  ],
 
 

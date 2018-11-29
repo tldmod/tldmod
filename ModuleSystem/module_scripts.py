@@ -2036,6 +2036,11 @@ scripts = [
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
 
+	(troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 250),
+	(troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, 200),
+	(troop_set_slot, "trp_armoured_troll", slot_troop_hp_shield, 200),
+	(troop_set_slot, "trp_ent", slot_troop_hp_shield, 200),
+
 	#Init Health Regeneration on Kill
 
 	(assign, "$g_wp_player_hr_active", 1),      # Set to 0 to prevent player regeneration.  1 to activate.
@@ -8431,13 +8436,14 @@ scripts = [
 
         (assign, ":caravan_continue", 1),
 
+
         (try_begin),
         	(party_get_template_id, ":template_type", ":party_no"),
         	(this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_kingdom_caravan), #Caravans
         	(is_between, ":template_type", "pt_gondor_caravan", "pt_gondor_p_train"), #again, caravans
         	#(display_message, "@Caravan - Check", color_bad_news),
-        	#(party_is_in_any_town, ":party_no"),
         	(party_get_attached_to, ":attached_to_party", ":party_no"),
+        	(this_or_next|party_is_in_any_town, ":party_no"),
          	(is_between, ":attached_to_party", centers_begin, centers_end),
         	(assign, ":caravan_continue", 0),
         	#(display_message, "@Caravan - Denied", color_good_news),
