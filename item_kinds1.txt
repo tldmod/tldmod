@@ -704,7 +704,7 @@ itemsfile version 2
  itm_blackroot_warrior Blackroot_Vale_Gambeson Blackroot_Vale_Gambeson 1  blackroot_warrior 0  16842765 0 1200 704643072 15 100 0 20 8 0 0 0 0 0 0 0 0
 0
 
- itm_blackroot_leader Blackroot_Vale_Mail Blackroot_Vale_Mail 1  blackroot_leader 0  16842765 0 3000 704643072 20 100 0 26 10 0 0 0 0 0 0 0 0
+ itm_blackroot_leader Blackroot_Vale_Mail Blackroot_Vale_Mail 1  blackroot_leader 0  16842765 0 1400 704643072 20 100 0 26 10 0 0 0 0 0 0 0 0
 0
 
  itm_blackroot_hood Black_Hood Black_Hood 4  blackroot_hood 0  gondor_wimple_a 8  gondor_wimple_b 2  gondor_fine_fem_hat 4  1610678284 0 100 1116815228928 0.5 100 12 0 0 0 0 0 0 0 0 0 0
@@ -761,7 +761,7 @@ itemsfile version 2
  itm_pinnath_footman Pinnath_Gelin_Footman_Armor Pinnath_Gelin_Footman_Armor 1  pinnath_footman 0  16842765 0 400 704643072 12 100 0 16 4 0 0 0 0 0 0 0 0
 0
 
- itm_pinnath_leader Pinnath_Gelin_Knight_Armor Pinnath_Gelin_Knight_Armor 1  pinnath_leader 0  16842765 0 1100 704643072 22 100 0 26 10 0 0 0 0 0 0 0 0
+ itm_pinnath_leader Pinnath_Gelin_Knight_Armor Pinnath_Gelin_Knight_Armor 1  pinnath_leader 0  16842765 0 1500 704643072 22 100 0 26 10 0 0 0 0 0 0 0 0
 0
 
  itm_pinnath_vet_footman Pinnath_Gelin_Veteran_Footman_Armor Pinnath_Gelin_Veteran_Footman_Armor 1  pinnath_vet_footman 0  16842765 0 600 704643072 14 100 0 20 4 0 0 0 0 0 0 0 0
@@ -2454,31 +2454,31 @@ itemsfile version 2
  itm_dwarf_helm_round Dwarf_Round_Helm Dwarf_Round_Helm 3  DwarfHelmRoundChain 0  DwarfHelmRoundChain 0  DwarfHelmRoundMask 704643072  65548 0 1000 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_free_dwarf_helm_v Dwarf_Chain_Sallet Dwarf_Chain_Sallet 1  DwarfHelmSalletChain 0  65548 0 1000 704643072 2 100 35 0 0 0 0 0 0 0 0 0 0
-0
-
  itm_dwarf_helm_sallet Dwarf_Sallet Dwarf_Sallet 3  DwarfHelmSalletChain 1  DwarfHelmSalletChain 0  DwarfHelmSalletSargeant 704643072  65548 0 1200 704643072 2 100 40 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_a Erebor_Mail Erebor_Mail 4  dwarf_tunicmail 1  dwarf_tunicmail 0  dwarf_tunicmailarcher 27  dwarf_tunicmailarcher 29  16842765 0 1008 704643072 16 100 0 28 13 0 0 0 0 0 0 0 0
+ itm_dwarf_armor_d Iron_Hills_Coat_of_Scales Iron_Hills_Coat_of_Scales 2  dwarven_scale_mail 1  dwarven_scale_mail 0  16842765 0 2008 704643072 26 100 0 43 10 18 0 0 0 0 0 0 0
 0
 
- itm_leather_dwarf_armor Dwarven_Pad_over_Mail Dwarven_Pad_over_Mail 1  dwarf_padmail 1  16842765 0 1108 704643072 16 100 0 35 13 0 0 0 0 0 0 0 0
+ itm_dwarf_armor_a Erebor_Surcoat_over_Mail Erebor_Surcoat_over_Mail 2  dwarven_tunic_over_mail_2 0  dwarven_tunic_over_mail_1 704643072  16842765 0 1008 704643072 13 100 0 29 13 13 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_b Erebor_Scale Erebor_Scale 4  dwarf_tunicmail_scale 1  dwarf_tunicmail_scale 0  dwarf_tunicmailarcher_scale 27  dwarf_tunicmailarcher_scale 29  16842765 0 1108 704643072 14 100 0 37 14 0 0 0 0 0 0 0 0
+ itm_leather_dwarf_armor Dwarven_Padded_Coat Dwarven_Padded_Coat 1  dwarven_paddedlongcoat 1  16842765 0 1308 704643072 16 100 0 35 13 15 0 0 0 0 0 0 0
 0
 
- itm_leather_dwarf_armor_b Dwarven_Pad_over_Tunic Dwarven_Pad_over_Tunic 1  dwarf_padtunic 0  16842765 0 908 251658240 10 100 0 18 8 0 0 0 0 0 0 0 0
+ itm_dwarf_armor_b Erebor_Tunic_over_Mail Erebor_Tunic_over_Mail 2  dwarf_tunicmail 0  dwarf_tunicmail_scale 704643072  16842765 0 1108 704643072 16 100 0 34 13 14 0 0 0 0 0 0 0
 0
 
- itm_dwarf_armor_c Dwarven_Scale_over_Mail Dwarven_Scale_over_Mail 4  dwarf_scalemail_light 1  dwarf_scalemail_light 0  dwarf_scalemail 27  dwarf_scalemail 29  16842765 0 2008 704643072 23 100 2 43 13 0 0 0 0 0 0 0 0
+ itm_leather_dwarf_armor_b Dwarven_Padded_Jerkin Dwarven_Padded_Jerkin 2  dwarf_padtunic 0  dwarf_padmail 251658240  16842765 0 908 251658240 10 100 0 18 8 0 0 0 0 0 0 0 0
 0
 
- itm_dwarf_vest Dwarven_Tunic Dwarven_Tunic 5  dwarf_tunic_erebor 0  dwarf_tunic_erebor 1  dwarf_tunic_ironhills 33554432  dwarf_tunic_ironhills 134217728  dwarf_tunic_ironhills 67108864  16842765 0 258 251658240 5 100 0 14 6 0 0 0 0 0 0 0 0
+ itm_dwarf_armor_c Erebor_Scale_Mail Erebor_Scale_Mail 2  dwarf_scalemail_light 0  dwarf_scalemail_dwarfonly_backup 704643072  16842765 0 2008 704643072 23 100 2 43 13 18 0 0 0 0 0 0 0
 0
 
- itm_dwarf_vest_b Iron_Hills_Mail Iron_Hills_Mail 1  dwarf_mail 0  16842765 0 1008 704643072 18 100 0 30 10 0 0 0 0 0 0 0 0
+ itm_dwarf_vest Dwarven_Tunic Dwarven_Tunic 2  dwarf_tunic_erebor 0  dwarf_tunic_ironhills 251658240  16842765 0 258 251658240 5 100 0 14 6 0 0 0 0 0 0 0 0
+0
+
+ itm_dwarf_vest_b Iron_Hills_Mail Iron_Hills_Mail 1  dwarf_mail 0  16842765 0 1208 704643072 18 100 0 35 10 0 0 0 0 0 0 0 0
 0
 
  itm_dwarf_pad_boots Dwarven_Padded_Boots Dwarven_Padded_Boots 1  dwarf_pad_boots 0  69390 0 708 251658240 1 100 0 0 15 0 0 0 0 0 0 0 0

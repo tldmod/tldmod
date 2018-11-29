@@ -86,7 +86,7 @@ party_templates = [
 ("imladris_scouts","Dunedain Scouts",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_imladris,scout_personality,[(trp_dunedain_master_ranger,1,1),(trp_dunedain_trained_scout,1,3),(trp_dunedain_scout,2,5)]), #37-65
 ("dale_scouts"     ,"Dale Scouts"          ,icon_generic_knight  |carries_goods(2)|pf_show_faction,0,fac_dale    ,scout_personality,[(trp_dale_veteran_warrior,1,1),(trp_dale_man_at_arms,2,6),(trp_dale_militia,4,8)]), #25-49 weak
 ("esgaroth_scouts" ,"Esgaroth Scouts"    ,icon_ithilien_ranger|carries_goods(2)|pf_show_faction,0,fac_dale    ,scout_personality,[(trp_barding_bowmen_of_esgaroth,1,1),(trp_laketown_archer,1,3),(trp_laketown_scout,4,6)]), #41-67 stronger than dale
-("dwarf_scouts"    ,"Dwarven Lookouts"     ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,scout_personality,[(trp_dwarven_bowman,1,1),(trp_dwarven_hardened_warrior,1,3),(trp_dwarven_lookout,4,6)]), #41-63
+("dwarf_scouts"    ,"Dwarven Lookouts"     ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,scout_personality,[(trp_a4_dwarven_bowman,1,1),(trp_i3_dwarven_hardened_warrior,1,3),(trp_a2_dwarven_lookout,4,6)]), #41-63
 ("beorn_scouts"    ,"Beorning Scouts"      ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_beorning_carrock_berserker,1,1),(trp_beorning_sentinel,3,5),(trp_beorning_warrior,3,8)]), #55-93 stronger, no raiders/patrols
 ("woodmen_scouts"  ,"Woodmen Scouts"       ,icon_axeman       |carries_goods(1)|pf_show_faction,0,fac_beorn   ,scout_personality,[(trp_fell_huntsmen_of_mirkwood,1,1),(trp_woodmen_scout,2,3),(trp_woodmen_skilled_forester,3,6)]), #46-70
 
@@ -111,7 +111,7 @@ party_templates = [
 ("lorien_raiders"  ,"Lothlorien Foragers",icon_lorien_elf_a |carries_goods(2)|pf_show_faction,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_warden,1,1),(trp_lothlorien_archer,7,15),(trp_lothlorien_infantry,6,12)]), #71-152
 ("woodelf_raiders" ,"Mirkwood Foragers"  ,icon_mirkwood_elf |carries_goods(2)|pf_show_faction,0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman,1,1),(trp_greenwood_veteran_spearman,4,10),(trp_greenwood_archer,5,10)]), #73-150
 ("dale_raiders"    ,"Dale Foragers"      ,icon_generic_knight  |carries_goods(2)|pf_show_faction,0,fac_dale    ,soldier_personality,[(trp_girions_guard_of_dale,1,1),(trp_merchant_squire_or_dale,4,10),(trp_dale_man_at_arms,4,10),(trp_laketown_scout,4,12)]), #64-144
-("dwarf_raiders"   ,"Dwarven Foragers"   ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_expert_axeman,1,1),(trp_dwarven_hardened_warrior,4,12),(trp_dwarven_lookout,5,15)]), #66-162
+("dwarf_raiders"   ,"Dwarven Foragers"   ,icon_dwarf        |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,soldier_personality,[(trp_i5_dwarven_expert_axeman,1,1),(trp_i3_dwarven_hardened_warrior,4,12),(trp_a2_dwarven_lookout,5,15)]), #66-162
 ("ranger_raiders"  ,"Ranger Raiders"   ,icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_master_ranger_of_ithilien,1,3),(trp_veteran_ranger_of_ithilien,5,8),(trp_ranger_of_ithilien,5,10)]), #118-211 real raiders have more punch #InVain: 180-350 can attack Mordor supply trains
 #("beorning_raiders","Beorning Foragers" ,icon_axeman  |carries_goods(1),0,fac_beorn   ,soldier_personality,[(trp_blank,10,15),(trp_blank,10,15),(trp_blank,1,1)]),
 
@@ -137,7 +137,7 @@ party_templates = [
 ("woodelf_patrol" ,"Mirkwood Patrol"  ,icon_mirkwood_elf   |carries_goods(2)|pf_show_faction,0,fac_woodelf ,soldier_personality,[(trp_thranduils_royal_marksman,1,1),(trp_greenwood_master_archer,3,6),(trp_greenwood_veteran_archer,4,10),(trp_greenwood_royal_spearman,4,10),(trp_greenwood_veteran_spearman,4,10),(trp_greenwood_archer,8,16)]), #250-525
 ("dale_patrol"    ,"Dale Patrol"      ,icon_generic_knight    |carries_goods(2)|pf_show_faction,0,fac_dale    ,soldier_personality,[(trp_girions_guard_of_dale,1,1),(trp_dale_marchwarden,4,8),(trp_dale_bill_master,3,8),(trp_dale_billman,4,10),(trp_laketown_archer,6,12),(trp_dale_man_at_arms,6,12)]), #242-518
 ("esgaroth_patrol","Esgaroth Patrol"  ,icon_ithilien_ranger|carries_goods(2)|pf_show_faction,0,fac_dale    ,soldier_personality,[(trp_girions_guard_of_dale,1,1),(trp_barding_bowmen_of_esgaroth,6,10),(trp_dale_billman,4,10),(trp_laketown_archer,10,15),(trp_laketown_scout,6,12)]), #242-518
-("dwarf_patrol"   ,"Dwarven Patrol"   ,icon_dwarf          |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,soldier_personality,[(trp_longbeard_axeman,1,1),(trp_dwarven_bowman,8,16),(trp_dwarven_spearman,5,10),(trp_dwarven_axeman,8,20),(trp_dwarven_lookout,10,25)]), #257-542
+("dwarf_patrol"   ,"Dwarven Patrol"   ,icon_dwarf          |carries_goods(2)|pf_show_faction,0,fac_dwarf   ,soldier_personality,[(trp_i6_longbeard_axeman,1,1),(trp_a4_dwarven_bowman,8,16),(trp_i4_dwarven_spearman,5,10),(trp_i4_dwarven_axeman,8,20),(trp_a2_dwarven_lookout,10,25)]), #257-542
 
 ("ranger_patrol"  ,"Ranger Patrol"    ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_ithilien_leader,1,1),(trp_master_ranger_of_ithilien,5,9),(trp_veteran_ranger_of_ithilien,8,14),(trp_ranger_of_ithilien,8,25)]), #299-603 #InVain 410-820 can attack lone hosts
 ("amroth_patrol" ,"Dol Amroth Patrol",icon_knight_dolamroth|carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_dol_amroth_leader,1,1),(trp_swan_knight_of_dol_amroth,2,6),(trp_knight_of_dol_amroth,6,14),(trp_veteran_squire_of_dol_amroth,8,20),(trp_squire_of_dol_amroth,16,30)]), #241-541
@@ -157,7 +157,7 @@ party_templates = [
 ("moria_war_party"   ,"Moria_War_Party"   ,icon_orc_tribal_x4    |carries_goods(3)|pf_show_faction,0,fac_moria   ,soldier_personality,[(trp_i4_fell_goblin_of_moria,5,10),(trp_a3_large_goblin_archer_of_moria,10,20),(trp_i3_large_goblin_of_moria,12,24),(trp_i2_goblin_of_moria,15,30),(trp_i1_snaga_of_moria,20,50),(trp_troll_of_moria,1,2)]), #262-534
 #Northern war
 ("dale_war_party"  ,"Dale_War_Party"   ,icon_generic_knight       |carries_goods(3)|pf_show_faction,0,fac_dale   ,soldier_personality,[(trp_dale_man_at_arms,8,13),(trp_dale_veteran_warrior,8,20),(trp_barding_bowmen_of_esgaroth,8,16),(trp_laketown_archer,5,20),(trp_dale_billman,10,25),(trp_merchant_squire_or_dale,4,15)]), # NOT USED and unbalanced 383-953
-#("dwarf_war_party" ,"Dwarven_War_Party",icon_dwarf_x3              |carries_goods(3),0,fac_dwarf  ,soldier_personality,[(trp_dwarven_apprentice      ,8,13),(trp_grors_guard,8,20),(trp_dwarven_warrior,8,16),(trp_dwarven_expert_axeman,5,20),(trp_dwarven_lookout,4,15),(trp_dwarven_bowman,4,15)]),
+#("dwarf_war_party" ,"Dwarven_War_Party",icon_dwarf_x3              |carries_goods(3),0,fac_dwarf  ,soldier_personality,[(trp_i1_dwarven_apprentice      ,8,13),(trp_i6_grors_guard,8,20),(trp_i2_dwarven_warrior,8,16),(trp_i5_dwarven_expert_axeman,5,20),(trp_a2_dwarven_lookout,4,15),(trp_a4_dwarven_bowman,4,15)]),
 ("rhun_war_party"  ,"Rhun_War_Party"   ,icon_easterling_horseman_x3|carries_goods(3)|pf_show_faction,0,fac_rhun   ,soldier_personality,[(trp_dorwinion_noble_of_rhun,2,4),(trp_rhun_heavy_noble_cavalry,5,10),(trp_rhun_veteran_swift_horseman,8,16),(trp_rhun_veteran_horse_archer,8,16),(trp_rhun_tribal_warrior,12,24),(trp_rhun_tribesman,18,36)]), #358-716 was 260-552
 
 ####TLD Companies (only Gondorian used, as a MT patrol)
@@ -167,7 +167,7 @@ party_templates = [
 ("lorien_company"  ,"Lothlorien Company",icon_lorien_elf_b        ,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_infantry,30,30),(trp_lothlorien_elite_infantry,30,30),(trp_lothlorien_veteran_warden,30,30),(trp_galadhrim_royal_warden,5,5),(trp_galadhrim_royal_swordsman,5,5),(trp_elf_captain_of_lothlorien,1,1)]),
 ("woodelf_company" ,"Mirkwood Company"  ,icon_mirkwood_elf        ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_archer,21,22),(trp_greenwood_master_archer,21,22),(trp_thranduils_royal_marksman,8,12)]),
 ("dale_company"    ,"Dale Company"      ,icon_generic_knight         ,0,fac_dale    ,soldier_personality,[(trp_laketown_archer,20,20),(trp_barding_bowmen_of_esgaroth,20,20),(trp_dale_veteran_warrior,20,20),(trp_dale_bill_master,20,20),(trp_girions_guard_of_dale,20,20)]),
-("dwarf_company"   ,"Dwarven Company"   ,icon_dwarf               ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_hardened_warrior,25,25),(trp_dwarven_lookout,25,25),(trp_dwarven_warrior,20,20),(trp_dwarven_expert_axeman,20,20),(trp_dwarven_bowman,10,10)]),
+("dwarf_company"   ,"Dwarven Company"   ,icon_dwarf               ,0,fac_dwarf   ,soldier_personality,[(trp_i3_dwarven_hardened_warrior,25,25),(trp_a2_dwarven_lookout,25,25),(trp_i2_dwarven_warrior,20,20),(trp_i5_dwarven_expert_axeman,20,20),(trp_a4_dwarven_bowman,10,10)]),
 
 ####TLD Elite Companies (not used)
 ("gondor_elite_company"  ,"Gondor Elite Company"    ,icon_knight_gondo_trot_x3,0,fac_gondor  ,soldier_personality,[(trp_guard_of_the_fountain_court,15,30),(trp_knight_of_the_citadel,15,30),(trp_archer_of_the_tower_guard,15,30),(trp_swordsmen_of_the_tower_guard,15,30),(trp_captain_of_gondor,1,1)]),
@@ -176,7 +176,7 @@ party_templates = [
 ("lorien_elite_company"  ,"Lothlorien Elite Company",icon_lorien_elf_b_x3     ,0,fac_lorien  ,soldier_personality,[(trp_galadhrim_royal_marksman   ,13,25),(trp_galadhrim_royal_swordsman,13,25),(trp_galadhrim_royal_archer,13,25),(trp_galadhrim_royal_warden,13,25),(trp_noldorin_commander,1,1)]),
 ("woodelf_elite_company" ,"Mirkwood Elite Company"  ,icon_mirkwood_elf_x3     ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman   ,20,40),(trp_thranduils_royal_marksman,20,40),(trp_elf_captain_of_mirkwood,0,0)]),
 ("dale_elite_company"    ,"Dale Elite Company"      ,icon_generic_knight         ,0,fac_dale    ,soldier_personality,[(trp_dale_bill_master           ,13,25),(trp_dale_marchwarden,13,25),(trp_girions_guard_of_dale,13,25),(trp_barding_bowmen_of_esgaroth,13,25),(trp_knight_5_1,13,25)]),
-("dwarf_elite_company"   ,"Dwarven Elite Company"   ,icon_dwarf_x3            ,0,fac_dwarf   ,soldier_personality,[(trp_dwarven_warrior            ,18,34),(trp_dwarven_expert_axeman,18,34),(trp_dwarven_bowman,18,34),(trp_knight_5_6,1,1)]),
+("dwarf_elite_company"   ,"Dwarven Elite Company"   ,icon_dwarf_x3            ,0,fac_dwarf   ,soldier_personality,[(trp_i2_dwarven_warrior            ,18,34),(trp_i5_dwarven_expert_axeman,18,34),(trp_a4_dwarven_bowman,18,34),(trp_knight_5_6,1,1)]),
 
 ####TLD Legions
 #("gondor_legion","Gondor Legion",icon_|carries_goods(2),0,fac_,soldier_personality,[(trp_,0,0)]),
@@ -199,7 +199,7 @@ party_templates = [
 ("lorien_caravan"  ,"Lothlorien Caravan",icon_mule         |carries_goods(10)|pf_show_faction,0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_veteran_warden,2,6),(trp_lothlorien_elite_infantry,4,10),(trp_lothlorien_archer,14,30),(trp_lothlorien_warden,12,18),(trp_lothlorien_veteran_infantry,16,28)]), # strength 298-600
 ("woodelf_caravan" ,"Mirkwood Caravan"  ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_vet_sentinel,1,4),(trp_greenwood_royal_spearman,4,10),(trp_greenwood_sentinel,12,24),(trp_greenwood_veteran_scout,10,16),(trp_greenwood_spearman,14,24)]), # strength 254-508
 ("dale_caravan"    ,"Dale Caravan"      ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_dale    ,prisoner_train_personality,[(trp_merchant_protector_of_dale,1,5),(trp_laketown_archer,5,10),(trp_merchant_guard_of_dale,4,8),(trp_dale_warrior,8,16),(trp_laketown_scout,18,30)]), # strength 198-399
-("dwarf_caravan"   ,"Dwarven Caravan"   ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_axeman,2,6),(trp_dwarven_bowman,2,4),(trp_dwarven_hardened_warrior,12,24),(trp_dwarven_lookout,16,24),(trp_dwarven_warrior,20,40)]), # strength 264-514
+("dwarf_caravan"   ,"Dwarven Caravan"   ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_dwarf   ,prisoner_train_personality,[(trp_i4_dwarven_axeman,2,6),(trp_a4_dwarven_bowman,2,4),(trp_i3_dwarven_hardened_warrior,12,24),(trp_a2_dwarven_lookout,16,24),(trp_i2_dwarven_warrior,20,40)]), # strength 264-514
 
 ("mordor_caravan"  ,"Mordor Supply Train"  ,icon_supply_mordor  |carries_goods(10)|pf_show_faction,0,fac_mordor  ,prisoner_train_personality, [(trp_large_uruk_of_mordor, 4, 12), (trp_large_orc_archer_of_mordor, 8, 18), (trp_large_orc_of_mordor, 8, 18), (trp_orc_archer_of_mordor, 14, 22), (trp_orc_of_mordor, 18, 30)]), # strength 200-408
 ("isengard_caravan","Isengard Supply Train",icon_supply_isengard|carries_goods(10)|pf_show_faction,0,fac_isengard,prisoner_train_personality, [(trp_warg_rider_of_isengard, 3, 8), (trp_large_uruk_hai_of_isengard, 6, 16), (trp_uruk_hai_of_isengard, 6, 10), (trp_uruk_hai_tracker, 6, 10), (trp_orc_of_isengard, 20, 40)]), # strength 159-336
@@ -217,7 +217,7 @@ party_templates = [
 ("lorien_p_train"  ,"Lothlorien Prisoner Train",icon_mule         |pf_show_faction,0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_archer,6,10), (trp_lothlorien_veteran_infantry,6,10), (trp_lothlorien_warden,6,10), (trp_lothlorien_infantry,25,35)]), # strength 152-240
 ("woodelf_p_train" ,"Mirkwood Prisoner Train"  ,icon_mule         |pf_show_faction,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_sentinel,2,4), (trp_greenwood_veteran_spearman,2,4), (trp_greenwood_spearman,6,10), (trp_greenwood_veteran_scout,6,8), (trp_greenwood_scout,25,35)]), # strength 138-216
 ("dale_p_train"    ,"Dale Prisoner Train"      ,icon_mule         |pf_show_faction,0,fac_dale    ,prisoner_train_personality,[(trp_merchant_guard_of_dale,1,2), (trp_dale_warrior,1,2), (trp_laketown_bowmen,1,2), (trp_dale_man_at_arms,4,6), (trp_laketown_scout,6,10), (trp_dale_militia,21,25)]), # strength 100-150
-("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         |pf_show_faction,0,fac_dwarf   ,prisoner_train_personality,[(trp_dwarven_hardened_warrior,2,4), (trp_dwarven_scout,4,6), (trp_dwarven_warrior,4,6), (trp_dwarven_lookout,8,14), (trp_dwarven_apprentice,25,35)]), # strength 140-220
+("dwarf_p_train"   ,"Dwarven Prisoner Train"   ,icon_mule         |pf_show_faction,0,fac_dwarf   ,prisoner_train_personality,[(trp_i3_dwarven_hardened_warrior,2,4), (trp_a3_dwarven_scout,4,6), (trp_i2_dwarven_warrior,4,6), (trp_a2_dwarven_lookout,8,14), (trp_i1_dwarven_apprentice,25,35)]), # strength 140-220
 
 ("mordor_p_train"  ,"Mordor Prisoner Train"    ,icon_slaver_mordor  |carries_goods(2)|pf_show_faction,0,fac_mordor  , prisoner_train_personality, [(trp_large_orc_of_mordor,6,8), (trp_orc_archer_of_mordor,6,10), (trp_orc_of_mordor,16,24), (trp_orc_archer_of_mordor,16,24), (trp_orc_snaga_of_mordor,40,60)]), # strength 196-294
 ("isengard_p_train","Isengard Prisoner Train"  ,icon_slaver_isengard|carries_goods(2)|pf_show_faction,0,fac_isengard, prisoner_train_personality, [(trp_warg_rider_of_isengard,4,6), (trp_large_orc_of_isengard,10,14), (trp_orc_of_isengard,24,36), (trp_orc_snaga_of_isengard,40,60)]), # strength 182-268
@@ -323,9 +323,9 @@ party_templates = [
 ("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_merchant_squire_or_dale,0,1),(trp_laketown_bowmen,3,5),(trp_dale_pikeman,1,2),(trp_dale_warrior,1,2),]),
 ("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_merchant_protector_of_dale,2,4),(trp_dale_billman,1,2),(trp_dale_veteran_warrior,1,2),]),
 #Erebor (7-14, 5-10, 4-8)
-("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_warrior,1,2),(trp_dwarven_lookout,1,1),(trp_iron_hills_miner,1,2),(trp_dwarven_apprentice,4,8),]), #InVain: fewer archers
-("dwarf_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_scout,2,4),(trp_dwarven_bowman,1,2),(trp_dwarven_hardened_warrior,2,4),(trp_iron_hills_miner,0,1),]), #InVain: More archers, less infantry
-("dwarf_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_dwarven_axeman,2,4),(trp_dwarven_spearman,2,4),(trp_iron_hills_infantry,1,2),]), #InVain: No archers, more Erebor infantry
+("dwarf_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_i2_dwarven_warrior,1,2),(trp_a2_dwarven_lookout,1,1),(trp_i2_iron_hills_miner,1,2),(trp_i1_dwarven_apprentice,4,8),]), #InVain: fewer archers
+("dwarf_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_a3_dwarven_scout,2,4),(trp_a4_dwarven_bowman,1,2),(trp_i3_dwarven_hardened_warrior,2,4),(trp_i2_iron_hills_miner,0,1),]), #InVain: More archers, less infantry
+("dwarf_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_i4_dwarven_axeman,2,4),(trp_i4_dwarven_spearman,2,4),(trp_i4_iron_hills_infantry,1,2),]), #InVain: No archers, more Erebor infantry
 #Dunlenders (7-14, 5-10, 4-8)
 ("dunland_reinf_a" ,"_",0,0,fac_commoners,0,[(trp_dunnish_warrior,3,6),(trp_dunnish_wildman,4,8),]),
 ("dunland_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_dunnish_vet_warrior,3,6),(trp_dunnish_pikeman,2,4),]),
@@ -366,8 +366,8 @@ party_templates = [
 ("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,3,6)]),
 ("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,3,7)]),
 ("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,1)]), #T1 and T2
-("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_dwarven_apprentice,2,4)]), #T1 and T2
-("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_iron_hills_miner,1,3)]), #T1 and T2
+("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_dwarven_apprentice,2,4)]), #T1 and T2
+("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_i2_iron_hills_miner,1,3)]), #T1 and T2
 ("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,3,7)]),
 
 ("caravan_survivors","Caravan Survivors",icon_generic_knight|carries_goods(2),0,fac_neutral,merchant_personality,[(trp_sea_raider,5,5)]),
