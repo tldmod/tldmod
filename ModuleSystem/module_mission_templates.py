@@ -161,6 +161,18 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
           (position_move_z, pos7, 80),
         (try_end),
         (mission_cam_animate_to_position, pos7, 100),
+      (else_try),
+        (eq, "$cam_shoulder", 2),
+        (set_fixed_point_multiplier, 100),
+        (agent_get_look_position, pos7, "$cam_current_agent"),
+        (position_move_z, pos7,  180),
+        (position_move_y, pos7, -210),
+        (agent_get_horse, ":horse_agent", "$cam_current_agent"),
+        (try_begin),
+          (ge, ":horse_agent", 0),
+          (position_move_z, pos7, 80),
+        (try_end),
+        (mission_cam_animate_to_position, pos7, 100),
       (try_end),
     (else_try),
       (lt, "$cam_mode", 3),
@@ -240,6 +252,12 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
     (this_or_next|key_is_down, key_right_control),
     (             key_is_down, key_left_control),
     (key_clicked, "$key_camera_toggle"),
+    (try_begin),
+      (is_camera_in_first_person),
+      (display_message, "@Cannot Change Camera Mode while in First Person.", color_bad_news),
+      (display_message, "@Switch Back to 3rd Person View to Cycle Camera.", color_bad_news),
+    (try_end),
+    (neg|is_camera_in_first_person),
     (lt, "$cam_mode", 3),
     (neq, "$shoot_mode", 1)
   ],
@@ -250,6 +268,7 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
       (assign, "$cam_mode", 2),
       (display_message, "@Fixed Custom Camera"),
       (display_message, "@Press Ctrl + Left / Ctrl + Right Arrow Keys to Switch Shoulders"),
+      (display_message, "@Press Ctrl + Down to Center"),
 
     (else_try),
       (eq,     "$cam_mode", 2),
@@ -300,6 +319,20 @@ khams_custom_player_camera = ((is_a_wb_mt==1) and [
       (eq,     "$cam_mode",     2),
       (assign, "$cam_shoulder", 1),
       (display_message, "@Fixed Camera - Left Shoulder"),
+    (try_end)
+  ], []),
+
+  #+-- camera_cycle_behind
+
+  (0, 0, 0,
+  [
+    (this_or_next|key_is_down, key_right_control),
+    (             key_is_down, key_left_control),
+    (key_clicked, key_down),
+    (try_begin),
+      (eq,     "$cam_mode",     2),
+      (assign, "$cam_shoulder", 2),
+      (display_message, "@Fixed Camera - Center"),
     (try_end)
   ], []),
 
@@ -963,6 +996,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     ### WB only triggers 
     tld_archer_aim_fix,
     tld_archer_aim_fix_on_release,
+    tld_troll_aim_fix,
+    tld_troll_aim_fix_on_release,
     tld_move_ai,
     tld_ai_kicking,
     tld_ai_is_kicked,

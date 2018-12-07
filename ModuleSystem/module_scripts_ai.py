@@ -272,6 +272,8 @@ ai_scripts = [
            
            (store_faction_of_party, ":center_faction", ":enemy_walled_center"),
            (party_get_slot, ":siegable", ":enemy_walled_center", slot_center_siegability),
+
+           (neg|party_slot_eq, ":enemy_walled_center", slot_center_siegability, tld_siegable_never), #double check here
            (neq, ":siegable", tld_siegable_never), #some places are never siegable
            
            #MV: make sure the enemy faction is weak enough to be sieged
@@ -395,7 +397,7 @@ ai_scripts = [
            (try_end),
          (try_end),
       
-         (ge, ":best_besiege_center", 0),
+         (gt, ":best_besiege_center", 0), #hopefully remove division by zero errors - Kham Nov 2018
          #Center with equal strength at 30 kms away will have a center_score of 1300 (with -40 reln)
          (store_div, ":chance_attacking_center", ":best_besiege_center_score", 15),
          (val_min, ":chance_attacking_center", 1000),

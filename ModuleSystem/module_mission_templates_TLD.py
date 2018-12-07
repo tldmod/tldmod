@@ -2459,7 +2459,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		
 ]),
 
-(2.5,0,1, [(gt, "$trolls_in_battle", 0)],[
+(0.2,0,0.5, [(gt, "$trolls_in_battle", 0)],[
 
 	(try_for_agents, ":troll"),
 		(agent_is_active, ":troll"),
