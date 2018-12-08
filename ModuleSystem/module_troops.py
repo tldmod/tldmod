@@ -2531,7 +2531,7 @@ troops = [
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_6,man_face_young_1,man_face_older_2],
 ["merchant_erebor","Supply_Master","Dwarven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_armor_a,itm_dwarf_pad_boots,],
-      def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_1,man_face_young_1,man_face_older_2],
+      attr_dwarf_tier_3|level(5),wp(20),knows_inventory_management_10|knows_riding_1,man_face_young_1,man_face_older_2],
 ["merchant_dunland","Dun_Stash_Master","camp_stash",tf_hero| tf_dunland| tf_is_merchant,0,0,fac_dunland,
    [itm_dunland_armor_h,itm_dunland_wolfboots,],
       def_attrib|level(2),wp(20),knows_inventory_management_10|knows_riding_2,0x000000003f00520137da6c7bd86f36db00000000001e42f80000000000000000],
@@ -2561,7 +2561,7 @@ troops = [
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_6,man_face_young_1,man_face_older_2],
 ["merchant_ironhill","Supply_Master","Dwarven_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_armor_a,itm_dwarf_pad_boots,],
-      def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_1,dwarf_face_3,dwarf_face_4],
+      attr_dwarf_tier_3|level(5),wp(20),knows_inventory_management_10|knows_riding_1,dwarf_face_3,dwarf_face_4],
 ["town_50_horse_merchant","Gobrip_Yellowtooth","warg_pit_and_supplies",tf_hero| tf_randomize_face| tf_is_merchant| tf_orc,0,0,fac_gundabad,
    [itm_gundabad_armor_c,itm_orc_furboots,],
       def_attrib|level(5),wp(20),knows_inventory_management_10|knows_riding_2,man_face_young_1,man_face_older_2],
@@ -2688,7 +2688,7 @@ troops = [
       def_attrib|level(2),wp(20),knows_common,mercenary_face_1,mercenary_face_2],
 ["elder_erebor","Erebor_Guildmaster","the_Halls",tf_hero| tf_randomize_face| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_armor_a,itm_dwarf_pad_boots,],
-      def_attrib|level(2),wp(20),knows_common_dwarf,dwarf_face_3,dwarf_face_4],
+      attr_dwarf_tier_3|level(2),wp(20),knows_common_dwarf,dwarf_face_3,dwarf_face_4],
 ["elder_dolguldur","Guldur_Chief","the_black_castle",tf_hero| tf_randomize_face| tf_uruk,0,0,fac_guldur,
    [itm_m_uruk_light_b,itm_uruk_greaves,],
       def_attrib|level(2),wp(20),knows_common,mordor_man1,mordor_man2],
@@ -2746,7 +2746,7 @@ troops = [
       def_attrib|level(2),wp(20),knows_common,mordor_man1,mordor_man2],   
 ["elder_dwarf_ac","Dwarven_Campmaster","the_camp",tf_hero| tf_randomize_face| tf_dwarf,0,0,fac_dwarf,
    [itm_dwarf_armor_a,itm_dwarf_pad_boots,],
-      def_attrib|level(2),wp(20),knows_common_dwarf,dwarf_face_3,dwarf_face_4],
+      attr_dwarf_tier_3|level(2),wp(20),knows_common_dwarf,dwarf_face_3,dwarf_face_4],
     
     
 #Village stores
