@@ -1,11 +1,11 @@
 imod_plain       = 0  # Default item modifier. No effects. Item name is not modified.
-imod_cracked     = 1  # -5 damage, -4 armor, -46 hp
-imod_rusty       = 2  # -3 damage, -3 armor
+imod_cracked     = 1  # -5 damage, -4 armor, -46 hp 	= "poor"
+imod_rusty       = 2  # -3 damage, -3 armor				= "crude"
 imod_bent        = 3  # -3 damage, ................. -3 speed
 imod_chipped     = 4  # -1 damage
 imod_battered    = 5  # .......... -2 armor, -26 hp
 imod_poor        = 6  # --------
-imod_crude       = 7  # -2 damage, -1 armor
+imod_crude       = 7  # -2 damage, -1 armor				= "simple"
 imod_old         = 8  # --------
 imod_cheap       = 9  # --------
 imod_fine        = 10 # +1 damage

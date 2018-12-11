@@ -5613,7 +5613,7 @@ scripts = [
        (try_end),
      (else_try),  #opponents
        (try_begin),(eq,"$g_talk_troop","trp_trainer_gondor"),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
-        (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_rohan_armor_a"), 
+        (else_try),(eq,"$g_talk_troop","trp_trainer_rohan" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_rohan_recruit"), 
         (else_try),(eq,"$g_talk_troop","trp_trainer_elf"   ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
         (else_try),(eq,"$g_talk_troop","trp_trainer_dwarf" ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
         (else_try),(eq,"$g_talk_troop","trp_trainer_dale"  ),(mission_tpl_entry_add_override_item,"mt_training_ground_training",":entry_point","itm_black_tunic"),
