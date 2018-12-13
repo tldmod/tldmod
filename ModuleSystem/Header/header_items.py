@@ -411,6 +411,7 @@ itc_great_lance_upstab =  itc_greatlance|itcf_force_64_bits|itcf_overswing_spear
 itc_pike_upstab = itc_parry_polearm|itcf_force_64_bits|itcf_overswing_spear|itcf_thrust_polearm
 #Hoboistice end
 
+itc_troll_attack = itcf_force_64_bits|itcf_thrust_musket |itc_parry_two_handed | itc_parry_onehanded | itcf_overswing_twohanded | itcf_overswing_onehanded
 itc_overhead_only = itcf_force_64_bits|itcf_overswing_onehanded | itcf_overswing_twohanded
 
 #EXtra Mesh IDs

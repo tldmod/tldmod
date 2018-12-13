@@ -987,16 +987,16 @@
   0.3 1h_spear_thrust_overhead 26 22 6 0 0 0 0 0.0 
  blocked_overswing_musket 0 35651599  1
   0.3 1h_spear_thrust_overhead 26 22 6 0 0 0 0 0.0 
- ready_thrust_musket 524288 1679818762  1
-  0.35 musket_thrust_forward 1 19 7 0 0 0 0 0.0 
- release_thrust_musket 524288 2183135242  1
-  0.9 musket_thrust_forward 19 50 6 0 0 0 0 0.0 
+ ready_thrust_musket 66560 572522497  1
+  0.35 troll_slash_right 1 28 44 0 0 0 0 0.0 
+ release_thrust_musket 66560 572522506  1
+  0.125 troll_slash_right 34 43 6 0 0 0 0 0.0 
  release_thrust_musket_continue 0 572522497  1
-  0.2 musket_thrust_forward 50 54 3 0 0 0 0 0.0 
+  0 troll_slash_right 1 28 44 0 0 0 0 0.0 
  parried_thrust_musket 0 35651599  1
-  0.6 musket_thrust_forward_parry 1 9 3 0 0 0 0 0.0 
+  0.7 anim_human 26015 26016 6 0 0 0 0 0.0 
  blocked_thrust_musket 0 35651599  1
-  0.3 musket_thrust_forward_parry 1 9 3 0 0 0 0 0.0 
+  0.6 anim_human 26015 26016 6 0 0 0 0 0.0 
  equip_pistol_melee 0 184549446  1
   0.3 equip_pistol 0 10 1 0 0 0 0 0.0 
  unequip_pistol_melee 0 184549446  1

@@ -3223,6 +3223,7 @@ simple_triggers = [
   
   (12,[
       (try_for_range, ":faction_wc", kingdoms_begin, kingdoms_end),
+        (faction_slot_eq, ":faction_wc", slot_faction_state, sfs_active), #Needs to be alive
         (call_script, "script_get_faction_rank", ":faction_wc"),
         (assign, ":rank", reg0), #rank points to rank number 0-9
         (try_begin),

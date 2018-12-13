@@ -996,8 +996,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
     ### WB only triggers 
     tld_archer_aim_fix,
     tld_archer_aim_fix_on_release,
-    tld_troll_aim_fix,
-    tld_troll_aim_fix_on_release,
+    #tld_troll_aim_fix,
+    #tld_troll_aim_fix_on_release,
     tld_move_ai,
     tld_ai_kicking,
     tld_ai_is_kicked,
