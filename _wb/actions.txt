@@ -990,13 +990,13 @@
  ready_thrust_musket 66560 572522497  1
   0.35 troll_slash_right 1 28 44 0 0 0 0 0.0 
  release_thrust_musket 66560 572522506  1
-  0.125 troll_slash_right 34 43 6 0 0 0 0 0.0 
+  0.145833333333 troll_slash_right 34 43 6 0 0 0 0 0.0 
  release_thrust_musket_continue 0 572522497  1
-  0 troll_slash_right 1 28 44 0 0 0 0 0.0 
+  0.6 troll_slash_right 34 43 44 0 0 0 0 0.0 
  parried_thrust_musket 0 35651599  1
-  0.7 anim_human 26015 26016 6 0 0 0 0 0.0 
+  0.6 parry_single_righttoleft 0 14 6 0 0 0 0 0.0 
  blocked_thrust_musket 0 35651599  1
-  0.6 anim_human 26015 26016 6 0 0 0 0 0.0 
+  0.3 parry_single_righttoleft 0 14 6 0 0 0 0 0.0 
  equip_pistol_melee 0 184549446  1
   0.3 equip_pistol 0 10 1 0 0 0 0 0.0 
  unequip_pistol_melee 0 184549446  1
@@ -1156,9 +1156,9 @@
   3 anim_human 60 62 1342177280 0 0 0 0  0.75 
   3 anim_human 70 72 1342177280 0 0 0 0  0.25 
   3 anim_human 80 82 1358954496 0 0 0 0  0.5 
- troll_roar 1024 2197880927  1
+ troll_roar 1024 50397279  1
   2.3 man_cheer 200 289 2 0 0 0 0 0.0 
- troll_charge 17410 41943135  1
+ troll_charge 17410 42008671  1
   2.6 sprint 0 59 2 0 0 9.4 0  0 
  unused_human_anim_97 0 0  1
   1 anim_human 0 1 0 0 0 0 0 0.0 

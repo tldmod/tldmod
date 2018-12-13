@@ -2424,9 +2424,14 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(agent_set_animation_progress, ":nearby_agent_no", ":random_timings"), # differentiate timings a bit
 		(try_end),
 		(agent_play_sound, ":troll", "snd_troll_grunt_long"),
-	 	(agent_set_animation, ":troll", "anim_troll_roar", 0),
-	 	(agent_set_animation, ":troll", "anim_troll_roar", 1),
-	 	(display_message, "@Troll is Charging!"), 
+		(store_random_in_range, ":rand_charge", 0, 100),
+		(try_begin),
+			(lt, ":rand_charge", 50),
+	 		(agent_set_animation, ":troll", "anim_troll_roar", 0),
+	 	(else_try),
+	 		(agent_set_animation, ":troll", "anim_troll_charge", 0),
+	 	(try_end),
+	 	#(display_message, "@Troll is Charging!"), 
 	(try_end),
 
 ]),
@@ -2454,12 +2459,12 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(agent_set_speed_modifier, ":troll", 50),
 		(assign, reg65, ":time"),
 		(assign, reg66, ":time_last_charge"),
-		(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),
+		#(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),
 	(try_end), 
 		
 ]),
 
-(0.2,0,0.5, [(gt, "$trolls_in_battle", 0)],[
+(0.2,0.5,2, [(gt, "$trolls_in_battle", 0)],[
 
 	(try_for_agents, ":troll"),
 		(agent_is_active, ":troll"),
