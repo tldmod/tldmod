@@ -3025,12 +3025,12 @@ str_30| agi_7| int_4| cha_4|level(15),0,knows_riding_10|knows_ironflesh_10|knows
       attr_tier_4,wp_tier_4,knows_common|knows_athletics_5|knows_shield_5|knows_power_strike_5|knows_ironflesh_5|knows_power_throw_5,rhun_man1,rhun_man2],
 
 ["dorwinion_spirit_leader","Spirit","_", tf_urukhai|tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
-  [(itm_dunland_armor_k,imod_old),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_old)],
-    def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
+  [(itm_dunland_armor_k,imod_old),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_old), itm_khand_axe_great],
+    attr_tier_6,wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
 
 ["dorwinion_spirit","Lesser Spirit","_", tf_uruk|tfg_armor| tfg_boots| tfg_helm|tfg_gloves,0,0,fac_neutral,
-  [(itm_dunland_armor_k,imod_poor),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_poor)],
-    def_attrib|level(45),wp(255),knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
+  [(itm_dunland_armor_k,imod_poor),(itm_leather_gloves,imod_poor),itm_dunland_wolfboots,(itm_empty_head,imod_poor), itm_dunnish_war_axe, itm_orc_shield_b, itm_orc_shield_c],
+    attr_tier_3,wp_tier_4,knows_common|knows_athletics_6|knows_power_strike_6|knows_ironflesh_6,0,0],
 
 ["dummy_troop",  "bug","_", tf_hero, 0, 0, fac_gondor, [], lord_attrib,0,0,0],
 ["dummy_troop_b","bug","_", tf_hero, 0, 0, fac_gondor, [], lord_attrib,0,0,0],

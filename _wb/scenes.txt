@@ -1,5 +1,5 @@
 scenesfile version 1
- 413
+ 414
 scn_random_scene random_scene 1792 none none 0 0 240 240 -0.5 0x0000000329602800000691a400003efe00004b34000059be 
   0 
   0 
@@ -1652,3 +1652,7 @@ scn_erebor_castle_2 erebor_castle_2 1 erebor_throne_room_b bo_erebor_throne_room
   0 
   1  833 
  0 
+scn_random_scene_plain_forest_custom_5 random_scene_plain_forest_custom_5 256 none none 0 0 240 240 -0.5 0x00000000bc618a63000d234800004a3e00005cd6000045cc 
+  0 
+  0 
+ outer_terrain_forest 

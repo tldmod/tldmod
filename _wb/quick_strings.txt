@@ -1,4 +1,4 @@
-1837
+1842
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -930,6 +930,10 @@ qstr_We_will_feast_on_you We_will_feast_on_your_flesh!
 qstr_Dwarf_meat! Dwarf_meat!
 qstr_Eru_Iluvatar_has_dec Eru_Iluvatar_has_decided_the_fate_of_Balin's_Company,_and_it_cannot_be_changed.
 qstr_They_are_coming....! They_are_coming....!
+qstr_Who...dares...enter. Who...dares...enter...
+qstr_You_are_not_welcome_ You_are_not_welcome_here!
+qstr_Finally_I_found_you! Finally,_I_found_you!_Let's_get_out_of_here!
+qstr_You...are....ours... You...are....ours...
 qstr_swy_ui_opacity swy_ui_opacity
 qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_so_beautiful_from_a_distance!
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
@@ -948,6 +952,7 @@ qstr_{s4}:_M{reg3}_2M{reg {s4}:_M{reg3},_2M{reg4},_PC{reg5},_2PC{reg6},_PM{reg7}
 qstr_Dressing_Room Dressing_Room
 qstr_Formations_Test Formations_Test
 qstr_Four_years_after_bri Four_years_after_bringing_a_group_of_Dwarves_from_Erebor_to_attempt_to_resettle_the_once_Dwarf-city_of_Khazad-dûm,_Balin_was_killed_by_an_Orc_arrow_while_peering_into_Lake_Mirrormere,_and_his_people_became_immediately_engaged_with_many_Orcs_coming_of_up_the_Silverlode_River._After_a_continuous_retreat_from_the_East-gate_and_First_Hall,_then_the_Bridge_of_Khazad-dûm_and_Second_Hall,_the_remaining_Longbeards_were_forced_all_the_way_back_into_the_Twenty-first_Hall._[2]_After_an_unsuccessful_attempt_to_escape_through_the_Doors_of_Durin_that_saw_the_death_of_Óin,_the_Chamber_of_Mazarbul_became_the_last_hold-out_of_the_Colony_after_losing_the_Twenty-first_Hall_just_outside_chamber._Barring_the_gates,_Ori_and_the_few_survivors_set_up_a_final_defense.
+qstr_You_chase_an_orc_sco You_chase_an_orc_scout_party_into_the_forest...
 qstr_TEST:_troll_VS_infan TEST:_troll_VS_infantry
 qstr_TEST:_troll_VS_Weak_ TEST:_troll_VS_Weak_infantry
 qstr_TEST:_troll_VS_Elves TEST:_troll_VS_Elves

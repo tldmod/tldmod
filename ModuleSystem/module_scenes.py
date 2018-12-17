@@ -635,6 +635,8 @@ scenes = [
 ("advcamp_rhun_siege" ,sf_generate,"none","none",(0,0),(200,200),-0.5,"0x000000013000050000034cd300003efe00004b34000059be",[],[],"outer_terrain_rohan"),
 
 ("erebor_castle_2",sf_indoors ,"erebor_throne_room_b", "bo_erebor_throne_room_b", (-40,-40),(40,40),-100,"0",[],["player_chest"]), 
- 
+
+("random_scene_plain_forest_custom_5",sf_generate,"none", "none", (0,0),(240,240),-0.5,"0x00000000bc618a63000d234800004a3e00005cd6000045cc",
+  [],[], "outer_terrain_forest"),
 ]
 

@@ -987,12 +987,13 @@
   0.3 1h_spear_thrust_overhead 26 22 6 0 0 0 0 0.0 
  blocked_overswing_musket 0 35651599  1
   0.3 1h_spear_thrust_overhead 26 22 6 0 0 0 0 0.0 
- ready_thrust_musket 66560 572522497  1
-  0.35 troll_slash_right 1 28 44 0 0 0 0 0.0 
- release_thrust_musket 66560 572522506  1
-  0.145833333333 troll_slash_right 34 43 6 0 0 0 0 0.0 
+ ready_thrust_musket 1679949824 1679818762  1
+  0.35 attacks_single_righttoleft_low 2 5 7 0 0 0 0 0.0 
+ release_thrust_musket 1679949824 2183135242  2
+  0.6 attacks_single_righttoleft_low 5 28 6 0 0 0 0 0.0 
+  0.6 swing_1h_underswing 0 24 6 0 0 0 0 0.0 
  release_thrust_musket_continue 0 572522497  1
-  0.6 troll_slash_right 34 43 44 0 0 0 0 0.0 
+  0.4 attacks_single_righttoleft_low 28 44 2 0 0 0 0 0.0 
  parried_thrust_musket 0 35651599  1
   0.6 parry_single_righttoleft 0 14 6 0 0 0 0 0.0 
  blocked_thrust_musket 0 35651599  1

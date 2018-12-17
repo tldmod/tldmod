@@ -166,10 +166,12 @@ slot_agent_is_alive_before_retreat= 3
 slot_agent_is_in_scripted_mode    = 4
 slot_agent_is_not_reinforcement   = 5
 slot_agent_tournament_point       = 6
+slot_agent_knocked_down			  = slot_agent_tournament_point # Use for tracking Knockbacks - Kham
 slot_agent_arena_team_set         = 7
 slot_agent_map_overlay_id         = 10
 slot_agent_target_entry_point     = 11
-slot_agent_walker_type            = 12    
+slot_agent_walker_type            = 12
+slot_agent_last_knockdown_time    = slot_agent_walker_type #Use for tracking Knockbacks    
 
 # TLD
 

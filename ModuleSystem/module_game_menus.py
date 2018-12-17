@@ -262,6 +262,8 @@ game_menus = [
 #		[(assign, "$g_custom_battle_scenario", 1),(jump_to_menu, "mnu_custom_battle_2"),]),
 
 	]+concatenate_scripts([[
+	("custom_battle_scenario_88",[],"Chasing an Orc Scout Party",
+		[(assign, "$g_custom_battle_scenario", 88),(jump_to_menu, "mnu_custom_battle_2"),]),
 	("custom_battle_scenario_11",[],"Test Battles (Tune Balancing!)",
 		[(jump_to_menu, "mnu_quick_battle_general_test"),]),
 	("custom_battle_scenario_10",[],"Scenery test battle",
@@ -856,6 +858,25 @@ game_menus = [
 		
 		(str_store_string, s16, "@Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once Dwarf-city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming of up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. [2] After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside chamber. Barring the gates, Ori and the few survivors set up a final defense."),
 		(set_background_mesh, "mesh_town_erebor"),
+	 (else_try),
+     ########################################## Darkness Attack
+       	(eq, "$g_custom_battle_scenario", 88),
+       	(assign, "$g_custom_battle_scene", "scn_random_scene_plain_forest_custom_5"),
+       	(troop_set_slot, "trp_dorwinion_spirit_leader", slot_troop_hp_shield, 200),
+       	(assign, "$g_player_troop", "trp_knight_1_7"),
+    	(set_player_troop, "$g_player_troop"),
+	    (modify_visitors_at_site, "$g_custom_battle_scene"),
+
+       	(set_visitor, 0, "$g_player_troop"),
+		(set_visitors, 4, "trp_orc_snaga_of_mordor", 2),
+		(set_visitors, 5, "trp_orc_snaga_of_mordor", 2),
+		(set_visitors, 6, "trp_orc_snaga_of_mordor", 2),
+
+		
+## ENEMY
+		
+		(str_store_string, s16, "@You chase an orc scout party into the forest..."),
+		(set_background_mesh, "mesh_draw_orc_raiders"),
      (else_try),
 ########################################## GONDOR VS CORSAIRS  
        (eq, "$g_custom_battle_scenario", 7),
@@ -978,6 +999,7 @@ game_menus = [
        (eq, "$g_custom_battle_scenario", 12),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
        (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 200),
+       (troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, 200),
        (assign, "$g_player_troop", "trp_eorl_guard_of_rohan"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
@@ -990,6 +1012,7 @@ game_menus = [
        (eq, "$g_custom_battle_scenario", 13),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
        (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 200),
+       (troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, 200),
        (assign, "$g_player_troop", "trp_elite_lancer_of_rohan"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),
@@ -1222,6 +1245,7 @@ game_menus = [
          (else_try),(eq, "$g_custom_battle_scenario", 3),(set_jump_mission,"mt_custom_battle_HD"),#(rest_for_hours,8,1000,0),
 		 ] + (is_a_wb_menu==1 and [
 		 (else_try),(eq, "$g_custom_battle_scenario", 8),(set_jump_mission,"mt_ori_last_stand"),
+		 (else_try),(eq, "$g_custom_battle_scenario", 88),(set_jump_mission,"mt_darkness_attack"),(rest_for_hours,3,1000,0),(stop_all_sounds, 1),
 		 ] or []) + [
          (else_try),(eq, "$g_custom_battle_scenario", 9),(set_jump_mission,"mt_custom_battle_dynamic_scene"),
          (else_try),(eq, "$g_custom_battle_scenario",16),(set_jump_mission,"mt_custom_battle_parade"),#(rest_for_hours,12,1000,0),

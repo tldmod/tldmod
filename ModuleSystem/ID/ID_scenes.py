@@ -411,3 +411,4 @@ scn_advcamp_guldur_siege = 409
 scn_advcamp_gundabad_siege = 410
 scn_advcamp_rhun_siege = 411
 scn_erebor_castle_2 = 412
+scn_random_scene_plain_forest_custom_5 = 413

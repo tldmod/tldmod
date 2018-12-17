@@ -2200,7 +2200,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	(eq, ":type", tf_troll),
 
 	(agent_set_speed_modifier, ":troll", 65),
-	(agent_set_max_hit_points, ":troll", 25),
+	(agent_set_max_hit_points, ":troll", 35),
 	(agent_ai_set_aggressiveness, ":troll", 500),
 
  ]),
@@ -2264,7 +2264,20 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
       (this_or_next|neq, ":current_anim", "anim_strike_fall_back_rise"),
       (neq, ":current_anim", "anim_strike_fly_back_rise"),
 
-      (try_begin),   
+      (assign, ":continue_ko", 0), 
+
+	  (store_mission_timer_a, ":timer"),
+	  (try_begin),
+		(agent_slot_eq, ":aoe_hit", slot_agent_knocked_down, 0),
+		(assign, ":continue_ko", 1),
+		(agent_set_slot, ":aoe_hit", slot_agent_knocked_down, 1),
+		(val_add, ":timer", 4), #4 seconds after Knock Down
+		(agent_set_slot, ":aoe_hit", slot_agent_last_knockdown_time, ":timer"),
+	  (try_end),
+      
+      (eq, ":continue_ko", 1),
+
+      (try_begin),
       # human (non trolls, non horse) victims
         (try_begin),
           (eq, ":flyback_anim", 0),
@@ -2306,17 +2319,18 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
         #(store_random_in_range,":random_timings",1,5),
         #(agent_set_animation_progress, ":aoe_hit", ":random_timings"), # differentiate timings a bit
 
-        (agent_get_wielded_item, ":item", ":dealer", 0),
-        (item_get_swing_damage, ":damage", ":item"),
-        (val_max, ":damage", 2),
-        (val_div, ":damage", 2),
-        #(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", ":damage"),
-
-		(store_agent_hit_points, ":hp", ":aoe_hit", 1), 
-		(val_sub,":hp",":damage"),
-		(agent_set_hit_points, ":aoe_hit", ":hp", 1),
-
       (try_end),
+
+      (agent_get_wielded_item, ":item", ":dealer", 0),
+      (item_get_swing_damage, ":damage", ":item"),
+      (val_max, ":damage", 2),
+      (val_div, ":damage", 2),
+     #(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", ":damage"),
+
+	  (store_agent_hit_points, ":hp", ":aoe_hit", 1), 
+	  (val_sub,":hp",":damage"),
+	  (agent_set_hit_points, ":aoe_hit", ":hp", 1),
+
     (try_end),
 
 ]),
@@ -2425,13 +2439,19 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(try_end),
 		(agent_play_sound, ":troll", "snd_troll_grunt_long"),
 		(store_random_in_range, ":rand_charge", 0, 100),
+	 	(try_begin), 
+	 		(this_or_next|eq, ":troll_troop_id", "trp_olog_hai"),
+	 		(eq, ":troll_troop_id", "trp_armoured_troll"),
+	 		(agent_unequip_item, ":troll", "itm_troll_shield_a"),
+	 		(agent_equip_item, ":troll", "itm_troll_shield_a"), #Moves shield to back
+	 	(try_end),
 		(try_begin),
 			(lt, ":rand_charge", 50),
 	 		(agent_set_animation, ":troll", "anim_troll_roar", 0),
 	 	(else_try),
 	 		(agent_set_animation, ":troll", "anim_troll_charge", 0),
 	 	(try_end),
-	 	#(display_message, "@Troll is Charging!"), 
+	 	#(display_message, "@Troll is Charging!"),
 	(try_end),
 
 ]),
@@ -2447,6 +2467,16 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(agent_is_active, ":troll"),
 		(agent_is_human, ":troll"),
 		(gt, ":troll", 0),
+		(store_mission_timer_a, ":time"),
+		(agent_get_slot, ":knocked_down", ":troll", slot_agent_knocked_down),
+		(agent_get_slot, ":knocked_down_time", ":troll", slot_agent_last_knockdown_time),
+
+		(try_begin),
+			(eq, ":knocked_down", 1),
+			(ge, ":time", ":knocked_down_time"),
+			(agent_set_slot, ":troll", slot_agent_knocked_down, 0),
+		(try_end),
+
 		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
 		(troop_get_type, ":troll_type", ":troll_troop_id"),
 		(eq, ":troll_type", tf_troll),
@@ -2460,6 +2490,12 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 		(assign, reg65, ":time"),
 		(assign, reg66, ":time_last_charge"),
 		#(display_message, "@Charge turned off -- Time: {reg65}, Last Charge: {reg66}"),
+		(try_begin),
+			(agent_get_troop_id, ":troop_id", ":troll"),
+			(this_or_next|eq, ":troop_id", "trp_olog_hai"),
+			(eq, ":troop_id", "trp_armoured_troll"),
+ 			(agent_set_wielded_item, ":troll", "itm_troll_shield_a"),
+ 		(try_end),
 	(try_end), 
 		
 ]),
@@ -2501,6 +2537,17 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
 			(neq, ":cur_anim", "anim_strike_fly_back_rise"),
 
+			(assign, ":continue_ko", 0),
+			(store_mission_timer_a, ":timer"),
+			(try_begin),
+				(agent_slot_eq, ":nearby_agent_no", slot_agent_knocked_down, 0),
+				(assign, ":continue_ko", 1),
+				(agent_set_slot, ":nearby_agent_no", slot_agent_knocked_down, 1),
+				(val_add, ":timer", 2), #2 seconds after Knock Down
+				(agent_set_slot, ":nearby_agent_no", slot_agent_last_knockdown_time, ":timer"),
+			(try_end),
+
+			(eq, ":continue_ko", 1),
 			
 			(store_random_in_range, ":flyback_anim", 0, 2),
 			# then, set animation

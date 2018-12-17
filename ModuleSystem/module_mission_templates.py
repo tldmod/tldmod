@@ -1495,7 +1495,19 @@ mission_templates = [ # not used in game
       (try_end),
       ]),
 
-  #(0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (agent_set_animation, ":player", "anim_troll_charge"), ]),
+  #(0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (call_script, "script_flash_and_animate", ":player", 1), ]),
+  #(0,0,0, [(key_clicked, key_h)],[(get_player_agent_no, ":player"), 
+  #  (assign, ":walker_found", 0),
+  #  (try_for_agents, ":walker"),
+  #    (eq, ":walker_found", 0),
+  #    (agent_is_alive, ":walker"),
+  #    (agent_is_human, ":walker"),
+  #    (agent_get_troop_id, ":walker_troop", ":walker"),
+  #    (is_between, ":walker_troop", "trp_walker_man_gondor_black", "trp_walker_man_rohan_t"),
+  #    (assign, ":walker_found", 1),
+  #    (call_script, "script_get_position_and_teleport_behind_agent", ":walker", ":player", 60),
+  #  (try_end), 
+  #]),
 
 	(ti_before_mission_start, 0, 0, [], [
 			(call_script, "script_change_banners_and_chest"),
@@ -8680,7 +8692,7 @@ tld_remove_riderless_animals,
       (val_add, "$mouse_coordinates", 1),
     (else_try),
       (call_script, "script_custom_battle_end"),
-      (jump_to_menu, "mnu_custom_battle_end"),
+      (jump_to_menu, "mnu_custom_battle_durin_end"),
       (assign, "$tld_option_morale", 1),
       (troop_get_slot, ":player_clone", "trp_player", slot_troop_player_clone),
       (set_player_troop, ":player_clone"),
@@ -8694,6 +8706,537 @@ tld_remove_riderless_animals,
       
     ],
   ),  
+
+
+# Darkness MT
+
+("darkness_attack",mtf_battle_mode,charge,
+ "You chase an orc scouting party...",
+ [
+  # Player
+  (0,mtef_visitor_source|mtef_team_0,af_override_horse,0,1,[]),
+  (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
+  (2,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+  (3,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+
+  # Enemies:
+  (4,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,2,[]),
+  (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,2,[]),
+  (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,2,[]),
+  (7,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+  (8,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
+
+ ],
+  # Triggers
+  tld_common_wb_muddy_water+
+  common_deathcam_triggers + 
+  khams_custom_player_camera+
+  fade+ [
+  
+  common_battle_on_player_down,
+  tld_move_ai,
+  tld_ai_kicking,
+  tld_ai_is_kicked,
+  tld_melee_ai,
+
+  # Make the teams enemies...
+  (ti_before_mission_start, 0, 0, [], 
+    [
+    (team_set_relation, 0, 1, -1),
+    (assign, "$tld_option_morale", 0),
+    (assign, "$enemy_reinforcement_stage", 0),
+    (assign, "$ally_reinforcement_stage", 0), #Use this to trigger dialogues
+    (assign, "$g_custom_battle_team1_death_count", 0), #Used to track Kills
+    (assign, "$g_custom_battle_team2_death_count", 0), # Used to track last kill before round ends
+    (assign, "$mouse_coordinates", 0),
+    #(set_fog_distance, 15,0x212020),
+    (stop_all_sounds, 1),
+  ]),
+
+
+(0, 0, ti_once, 
+  [
+    #(str_store_troop_name, s1, reg20),
+    #(display_message, "@DEBUG: Enemy to spawn: {s1}"),
+    #(display_message, "@DEBUG: Enemies to spawn: {reg21}"),
+
+    # Make enemies charge...
+    (set_show_messages, 0),
+      (team_give_order, 1, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+
+    (get_player_agent_no, ":player"),
+    (store_agent_hit_points, ":hp", ":player", 1),
+    (val_mul, ":hp", 2),
+    (agent_set_max_hit_points, ":player", ":hp", 1),
+    (agent_set_hit_points, ":player", 100),
+    
+    (stop_all_sounds, 1),
+    
+  ], 
+[]),
+
+
+# Continuous flow of snagas
+  (10, 0, 2, [
+    (neg|conversation_screen_is_active),
+    (ge, "$enemy_reinforcement_stage", 1),
+    (eq, "$temp", 0), #Un-Paused
+    
+    (assign, ":num_cont_enemies", 1),
+    (assign, ":cont_enemy_type", "trp_dorwinion_spirit"),
+
+    (try_begin),
+      (eq, "$enemy_reinforcement_stage", 1,),
+      (val_add, ":num_cont_enemies", 1),
+      (assign, ":cont_enemy_type", "trp_dorwinion_spirit"),
+    (else_try),
+      (eq, "$enemy_reinforcement_stage", 2),
+      (val_add, ":num_cont_enemies", 2),
+      (assign, ":cont_enemy_type", "trp_dorwinion_spirit"),
+    (else_try),
+      (eq, "$enemy_reinforcement_stage", 3),
+      (val_add, ":num_cont_enemies", 3),
+      (assign, ":cont_enemy_type", "trp_dorwinion_spirit"),
+    (else_try),
+      (eq, "$enemy_reinforcement_stage", 4),
+      (val_add, ":num_cont_enemies", 4),
+      (assign, ":cont_enemy_type", "trp_dorwinion_spirit"),
+    (try_end),
+
+    (store_random_in_range, ":rand_no", 0, 100),
+    (try_begin),
+      (lt, ":rand_no", 33),
+      (entry_point_get_position, pos4, 4),
+    (else_try),
+      (is_between, ":rand_no", 33, 67),
+      (entry_point_get_position, pos4, 5),
+    (else_try),
+      (entry_point_get_position, pos4, 6),
+    (try_end),
+
+    (position_set_z_to_ground_level, pos4),
+    (set_spawn_position, pos4),
+
+    (try_for_range, ":unused", 0, ":num_cont_enemies"),
+        (spawn_agent, ":cont_enemy_type"),
+        (agent_set_team, reg0, 1),
+        (agent_set_is_alarmed, reg0, 1),
+        (agent_ai_set_aggressiveness, reg0, 1000),
+    (try_end),
+
+    (store_random_in_range, ":teleport_them", 0, 100),
+    (try_begin),
+      (le, ":teleport_them", 40),
+      (get_player_agent_no, ":player"),
+      (call_script, "script_get_position_and_teleport_behind_agent", ":player", reg0, 800),
+    (try_end),
+
+    #This asks them to charge, secretly.
+    (set_show_messages, 0),
+    (team_give_order, 1, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+
+    ],
+  [
+    #(display_message, "@DEBUG: Continuous flow of Snagas!")
+  ]
+),
+
+
+# Kill Counter
+
+(ti_on_agent_killed_or_wounded, 0, 0, [],
+  [
+    (store_trigger_param_1, ":killed"),
+    (store_trigger_param_2, ":killer"),
+    (store_trigger_param_3, ":result"),
+
+    # trigger param 1 = defeated agent_id
+    # trigger param 2 = attacker agent_id
+    # trigger param 3 = wounded flag: 0 = agent is killed, 1 = agent is wounded
+
+    (agent_is_active, ":killed"),
+    (agent_is_active, ":killer"),
+    (agent_is_human, ":killed"),
+    (agent_is_human, ":killer"),
+    (gt, ":killer", 0),
+    (gt, ":killed", 0),
+
+    (get_player_agent_no, ":player"),
+    
+    (ge, ":result", 0),
+
+    (eq, ":killer", ":player"),
+    
+    (val_add, "$g_custom_battle_team1_death_count", 1),
+
+    (try_begin),
+      (eq, "$enemy_reinforcement_stage", 2),
+      (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 7),
+      (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+      (assign, "$ally_reinforcement_stage", 1),
+      (assign, "$temp", 1), #Pause when kill count is reached
+    (else_try),
+      (eq, "$enemy_reinforcement_stage", 3),
+      (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 12),
+      (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+      (assign, "$ally_reinforcement_stage", 2),
+      (assign, "$temp", 1), #Pause when kill count is reached
+    (else_try),
+      (eq, "$enemy_reinforcement_stage", 4),
+      (store_add, ":to_next_stage", "$g_custom_battle_team2_death_count", 20),
+      (gt, "$g_custom_battle_team1_death_count", ":to_next_stage"),
+      (assign, "$ally_reinforcement_stage", 3),
+      (assign, "$temp", 1), #Pause when kill count is reached
+    (try_end),
+
+    #(assign, reg68, "$g_custom_battle_team1_death_count"),
+    #(assign, reg69, "$enemy_reinforcement_stage"),
+    #(assign, reg70, "$ally_reinforcement_stage"),
+    #(display_message, "@{reg68} Current Kills", color_good_news),
+    #(display_message, "@Current Stage: {reg69} - Kill Stage: {reg70}", color_bad_news),
+    
+  ]),
+
+## Check first round
+
+(10, 0, 0, 
+  [ 
+    (assign, ":continue", 0),
+    (try_begin),
+      (eq, "$enemy_reinforcement_stage", 0),
+      (all_enemies_defeated, 1),
+      #(display_message, "@DEBUG: All Enemies Defeated in this Stage"),
+      (assign, ":continue", 1),
+      (mission_cam_set_screen_color,        0xFF000000), 
+      (mission_cam_animate_to_screen_color, 0x00000000, 5000),
+      (set_fog_distance, 15,0x212020),
+      (str_store_string, s30, "@Who...dares...enter..."),
+      (play_sound, "snd_thunder"),
+      (call_script, "script_troop_talk_presentation", "trp_dorwinion_spirit_leader", 7,0),
+    (else_try),
+      (eq, "$temp", 1),
+      (all_enemies_defeated, 1),
+      #(display_message, "@DEBUG: Stage 2 kill count reached"),
+      (assign, ":continue", 1),
+      (get_player_agent_no, ":player"),
+      (store_agent_hit_points, ":hp", ":player"),
+      (val_add, ":hp", 20),
+      (val_max, ":hp", 100),
+      (agent_set_hit_points, ":player", ":hp"),
+    (try_end),
+
+    (eq, ":continue", 1),
+
+    (get_player_agent_no, ":player"),
+
+    (try_begin),
+      (eq, "$enemy_reinforcement_stage", 0),
+      (assign, "$enemy_reinforcement_stage", 1),
+    (else_try),
+      (entry_point_get_position, pos5, 4),
+      (position_set_z_to_ground_level, pos5),
+      (set_spawn_position, pos5),
+      (spawn_agent, "trp_dorwinion_spirit_leader"),
+      (assign, ":nazgul", reg0),
+      (agent_set_damage_modifier, ":nazgul", 40),
+      (agent_set_team, ":nazgul", 1),
+      (call_script, "script_get_position_and_teleport_behind_agent", ":player", ":nazgul", 800),
+      (str_store_string, s30, "@You are not welcome here!"),
+      (call_script, "script_troop_talk_presentation", "trp_dorwinion_spirit_leader", 7,0),
+      (agent_play_sound, ":nazgul", "snd_nazgul_skreech_short"),
+    (try_end),
+
+    #This asks them to charge, secretly.
+    (set_show_messages, 0),
+    (team_give_order, 1, grc_everyone, mordr_charge),
+    (set_show_messages, 1),
+
+    (assign, "$g_custom_battle_team2_death_count", "$g_custom_battle_team1_death_count"),
+  ],
+  [
+  ]),
+
+(10, 0, 0, [], [(set_show_messages, 0), (team_give_order, 1, grc_everyone, mordr_charge), (set_show_messages, 1), (get_player_agent_no, ":player"),
+  (try_for_agents, ":agent"),
+    (neq, ":agent", ":player"),
+    (agent_is_alive, ":agent"),
+    (agent_is_active, ":agent"),
+    (agent_is_human, ":agent"),
+    (agent_set_look_target_agent, ":agent", ":player"),
+    (try_begin),
+      (ge, "$enemy_reinforcement_stage", 1),
+      (entry_point_get_position, pos0, 4),
+      (play_sound_at_position, snd_ghost_ambient_long, pos0, 0), #spooky
+    (try_end),
+  (try_end),]),
+
+## Enemy Swarm Triggers: 
+  (5, 4, 0, [
+      (neg|conversation_screen_is_active),
+      (assign, ":continue", 0),
+      (get_player_agent_no, ":player"),
+
+      (try_begin),
+        (eq, "$enemy_reinforcement_stage", 1),
+        (assign, "$enemy_reinforcement_stage", 2), #Stage 2
+        (assign, ":enemy_melee_troop", "trp_dorwinion_spirit"),
+        (assign, ":num_enemies", 5),
+        (assign, ":continue", 1),
+        (set_show_messages, 1),
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 2),
+        (eq, "$ally_reinforcement_stage", 1), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_dorwinion_spirit"),
+        (assign, ":num_enemies", 8),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 3), #Stage 3
+        (set_show_messages, 1),
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 3),
+        (eq, "$ally_reinforcement_stage", 2), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_dorwinion_spirit"),
+        (assign, ":num_enemies", 12),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 4), #Stage 4
+        (set_show_messages, 1),
+      (else_try),
+        (eq, "$enemy_reinforcement_stage", 4),
+        (eq, "$ally_reinforcement_stage", 3), #Kill count reached
+        (eq, "$temp", 0), #wait to unpause before next stage
+        (assign, ":enemy_melee_troop", "trp_dorwinion_spirit"),
+        (assign, ":num_enemies", 8),
+        (assign, ":continue", 1),
+        (assign, "$enemy_reinforcement_stage", 5), #Stage 4
+        (set_show_messages, 1),
+      (try_end),
+
+      (eq, ":continue", 1),
+
+      (store_random_in_range, ":rand_no", 0, 100),
+      (try_begin),
+        (lt, ":rand_no", 33),
+        (entry_point_get_position, pos4, 4),
+      (else_try),
+        (is_between, ":rand_no", 33, 67),
+        (entry_point_get_position, pos4, 5),
+      (else_try),
+        (entry_point_get_position, pos4, 6),
+      (try_end),
+
+      (position_set_z_to_ground_level, pos4),
+      (set_spawn_position, pos4), 
+
+      (try_for_range, ":unused", 0, ":num_enemies"),
+        (store_random_in_range, ":random_position", 0, 100), #This just randomizes the entry points the enemy comes from.
+        (spawn_agent, ":enemy_melee_troop"),
+        (agent_set_team, reg0, 1),
+        (agent_set_is_alarmed, reg0, 1),
+        (agent_ai_set_aggressiveness, reg0, 1000),
+        (agent_set_damage_modifier, reg0, 40),
+        (store_random_in_range, ":random_location", 600, 1000),
+        (try_begin),
+          (eq, "$enemy_reinforcement_stage", 1),
+          (lt, ":random_position", 85),
+          (call_script, "script_get_position_and_teleport_behind_agent", ":player", reg0, ":random_location"),
+        (else_try),
+          (lt, ":random_position", 35),
+          (call_script, "script_get_position_and_teleport_behind_agent", ":player", reg0, ":random_location"),
+          #(display_message, "@teleported"),
+        (try_end),
+      (try_end),
+
+      #This asks them to charge, secretly.
+      (set_show_messages, 0),
+      (team_give_order, 1, grc_everyone, mordr_charge),
+      (set_show_messages, 1),
+ 
+      ],
+    [
+      #(display_message, "@DEBUG: Enemy Reinforced!")
+    ]
+  ),
+
+(5, 0, ti_once, [
+
+  (eq, "$enemy_reinforcement_stage", 5), 
+  (add_visitors_to_current_scene, 0, "trp_gandalf", 1),
+  ], 
+  [(get_player_agent_no, ":player"),
+    (agent_get_position, pos2, ":player"),
+    (try_for_agents, ":gandalf"),
+      (neq, ":gandalf", ":player"),
+      (agent_is_alive, ":gandalf"),
+      (agent_is_active, ":gandalf"),
+      (agent_is_human, ":gandalf"),
+      (agent_get_troop_id, ":is_gandalf", ":gandalf"),
+      (eq, ":is_gandalf", "trp_gandalf"),
+      (agent_equip_item, ":gandalf", "itm_gandstaff"),
+      (agent_set_wielded_item, ":gandalf", "itm_gandstaff"),
+      (agent_set_scripted_destination, ":gandalf", pos2),
+    (try_end),
+    (assign, "$mouse_coordinates", 1),
+]),
+
+(0,0,0, [(eq, "$enemy_reinforcement_stage", 5), (eq, "$mouse_coordinates", 1),],
+  [(get_player_agent_no, ":player"),
+    (try_for_agents, ":gandalf"),
+      (agent_is_human, ":gandalf"),
+      (neq, ":gandalf", ":player"),
+      (agent_get_troop_id, ":is_gandalf", ":gandalf"),
+      (eq, ":is_gandalf", "trp_gandalf"),
+      (agent_get_position, pos0, ":player"),
+      (agent_set_scripted_destination, ":gandalf", pos0),
+      (agent_get_position, pos1, ":gandalf"),
+      (get_distance_between_positions, ":distance", pos0, pos1),
+      (le, ":distance", 1000),
+      (str_store_string, s30, "@Finally, I found you! Let's get out of here!"),
+      (call_script, "script_troop_talk_presentation", "trp_gandalf", 7,0),
+      (assign, "$mouse_coordinates", 2),
+    (try_end),
+]),
+
+(10, 0, ti_once, [(eq, "$enemy_reinforcement_stage", 5), (eq, "$mouse_coordinates", 2)],
+  [ (get_player_agent_no, ":player"),
+    (try_for_agents, ":gandalf"),
+      (agent_is_human, ":gandalf"),
+      (neq, ":gandalf", ":player"),
+      (agent_get_troop_id, ":is_gandalf", ":gandalf"),
+      (eq, ":is_gandalf", "trp_gandalf"),
+      (call_script, "script_flash_and_animate", ":gandalf", 1),
+      (assign, "$mouse_coordinates", 3),
+      (set_fog_distance,1000000,0x999999),
+    (try_end),
+]),
+
+
+(8, 0, 0, [(eq, "$enemy_reinforcement_stage", 5), (ge, "$mouse_coordinates", 3),],
+  [ 
+  (try_begin),
+    (lt, "$mouse_coordinates", 5),
+    (val_add, "$mouse_coordinates", 1),
+  (else_try),
+    (call_script, "script_custom_battle_end"),
+    (jump_to_menu, "mnu_custom_battle_durin_end"),
+    (set_show_messages, 1),
+    (finish_mission),
+  (try_end),
+]),
+
+  common_battle_order_panel,
+  common_battle_order_panel_tick,
+
+# Modified HP Shield Triggers for Nazgul
+
+(ti_on_agent_spawn, 0, 0, [
+  (store_trigger_param_1, ":agent"),
+  (agent_is_human, ":agent"),
+  (agent_get_troop_id, ":troop_id", ":agent"),
+  (troop_get_slot, ":has_shield", ":troop_id", slot_troop_hp_shield),
+  (gt, ":has_shield", 0)],
+  
+  [
+    (store_trigger_param_1, ":agent"),
+    (agent_is_human, ":agent"),
+    (agent_get_troop_id, ":troop_id", ":agent"),
+    (troop_get_slot, ":shield", ":troop_id", slot_troop_hp_shield),
+    (agent_set_slot, ":agent", slot_agent_hp_shield_active, 1),
+    (agent_set_slot, ":agent", slot_agent_hp_shield, ":shield"),
+
+    #Debug
+    #(assign, reg2, ":shield"),
+    #(str_store_troop_name, s33, ":troop_id"),
+    #(display_message, "@{s33}: {reg2} set hp shield."),   
+
+  ]),
+
+
+(ti_on_agent_hit, 0, 0, [
+  (store_trigger_param_1, ":agent"),
+
+  (agent_slot_eq, ":agent", slot_agent_hp_shield_active, 1),
+
+  (agent_is_alive, ":agent"),
+  (agent_is_human, ":agent"),
+  ],
+  
+  [  
+    (store_trigger_param_1, ":agent"),
+    #(store_trigger_param_2, ":dealer"),
+    (store_trigger_param_3, ":damage"),
+  
+    (agent_get_troop_id, ":troop_id", ":agent"),
+
+    (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
+
+    (eq, ":troop_id", "trp_dorwinion_spirit_leader"),
+
+    (try_begin),
+      (gt, ":current_hp_shield", 0),
+      (val_sub, ":current_hp_shield", ":damage"),
+      (val_max, ":current_hp_shield", 0),
+      (agent_set_slot, ":agent", slot_agent_hp_shield, ":current_hp_shield"),  
+    (else_try),
+      (call_script, "script_flash_and_animate", ":agent", 0),
+      (set_show_messages, 0),
+      (call_script, "script_find_exit_position_at_pos4", ":agent"),
+      (agent_set_position, ":agent", pos4),
+      (remove_agent, ":agent"),
+      (assign, "$temp", 0),
+      (play_sound, "snd_nazgul_skreech_long"),
+    (try_end),
+      
+      #Debug
+      #(assign, reg3, ":current_hp_shield"),
+      #(display_message, "@Hp shield: {reg3} left."), 
+
+    (set_trigger_result, 0),
+  ]),  
+
+
+
+# Ending the Mission
+  (ti_tab_pressed,0,0,[],
+  [
+    (try_begin),
+      (neg|main_hero_fallen),
+      (display_message,"str_can_not_retreat"),
+    (else_try),
+      (main_hero_fallen),
+      (call_script, "script_custom_battle_end"),
+      (jump_to_menu, "mnu_custom_battle_durin_end"),
+      (finish_mission),
+    (try_end),
+  ]),
+
+  (3,1,0,[(main_hero_fallen),(lt, "$mouse_coordinates", 3)],
+  [
+    (try_begin),
+      (eq, "$mouse_coordinates", 0),
+      #(mission_cam_set_screen_color,        0x00FFFFFF), 
+      #(mission_cam_animate_to_screen_color, 0xFFFFFFFF, 2000),
+      (mission_cam_animate_to_screen_color, 0xFF000000, 2500),
+      (val_add, "$mouse_coordinates", 1),
+    (else_try),
+      (eq, "$mouse_coordinates", 1),
+      (str_store_string, s30, "@You...are....ours..."),
+      (call_script, "script_troop_talk_presentation", "trp_nazgul", 7,0),
+      (play_sound, "snd_nazgul_skreech_long"),
+      (val_add, "$mouse_coordinates", 1),
+    (else_try),
+      (call_script, "script_custom_battle_end"),
+      (jump_to_menu, "mnu_custom_battle_end"),
+      (finish_mission),
+      (val_add, "$mouse_coordinates", 1),
+    (try_end),
+  ]),
+
+]),
+
+
 
 ] or []) + [ 
 

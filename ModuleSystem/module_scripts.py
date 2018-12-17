@@ -15403,6 +15403,8 @@ scripts = [
 
 	(try_begin),#TLD: mouth of sauron keeps his hood
 		(this_or_next|eq,":troop_no","trp_mordor_lord"),
+		(this_or_next|eq,":troop_no","trp_dorwinion_spirit"),
+		(this_or_next|eq,":troop_no","trp_dorwinion_spirit_leader"),
 		(eq, ":troop_no", "trp_nazgul"),
 		(cur_tableau_set_override_flags, af_override_weapons),
 	(else_try),
@@ -25203,6 +25205,7 @@ command_cursor_scripts = [
 
 ]),
 
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts
@@ -28138,4 +28141,44 @@ if is_a_wb_script==1:
       ] or []) + [
 
   ]),
+
+
+
+("flash_and_animate", [
+	
+	(store_script_param_1, ":agent"),
+	(store_script_param_2, ":colour"),
+
+	(try_begin),
+		(eq, ":colour", 1),
+		(mission_cam_set_screen_color, 0xFFFFFFFF),
+		(mission_cam_animate_to_screen_color, 0x00000000, 5000),
+	(else_try),
+		(mission_cam_set_screen_color,        0xFF000000), 
+        (mission_cam_animate_to_screen_color, 0x00000000, 5000),
+    (try_end),
+    (agent_get_horse, ":horse", ":agent"),
+    (try_begin),
+    	(ge, ":horse", 0),
+    	(agent_set_animation, ":agent", "anim_defend_up_onehanded_keep"),
+    (else_try),
+    	(agent_set_animation, ":agent", "anim_defend_up_onehanded_keep", 1),
+    (try_end),
+
+	]),
+
+("get_position_and_teleport_behind_agent", [
+	(store_script_param, ":target_agent", 1),
+	(store_script_param, ":teleport_agent",2),
+	(store_script_param, ":distance", 3),
+
+	(val_mul, ":distance", -1),
+	(agent_get_look_position, pos3, ":target_agent"),
+    (position_move_y, pos3, ":distance"),
+    #(position_rotate_z, pos3, 180),
+	(position_set_z_to_ground_level, pos3),
+	(agent_set_position, ":teleport_agent", pos3),
+]),
+
+
 ]
