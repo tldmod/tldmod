@@ -102,10 +102,10 @@ itemsfile version 2
  itm_rohirrim_courser2 Rohirrim_Courser Rohirrim_Courser 1  rohan_horse03 0  65537 0 900 16139943936 0 100 0 10 0 2 100 40 46 0 0 18 0
 0
 
- itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 1500 119353376768 0 100 0 46 0 4 135 34 36 0 0 25 0
+ itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_leather_warhorse_brown 0  65537 0 1500 119353376768 0 100 0 46 0 4 135 34 36 0 0 25 0
 0
 
- itm_thengel_warhorse Thengel_Guard_Warhorse Thengel_Guard_Warhorse 1  rohan_warhorse02 0  65537 0 1500 119353376768 0 100 0 42 0 4 135 34 36 0 0 30 0
+ itm_thengel_warhorse Rohirrim_Heavy_Warhorse Rohirrim_Heavy_Warhorse 1  rohan_scale_warhorse_white 0  65537 0 1500 119353376768 0 100 0 42 0 4 135 34 36 0 0 30 0
 0
 
  itm_rhun_horse_a Rhun_Horse Rhun_Horse 1  rhunhorselight1 0  65537 0 500 16139943936 0 100 0 10 0 2 70 39 35 0 0 10 0
@@ -1517,40 +1517,40 @@ itemsfile version 2
  itm_dunnish_pike Dunnish_Pike Dunnish_Pike 1  dunland_pike 0  407207940 9254615759470985472 400 271496 3 100 0 0 0 0 0 85 0 205 0 282 0
 0
 
- itm_rohan_armor_a Rohan_Shirt Rohan_Shirt 3  L_roh_shirt_M1 0  L_roh_shirt_cape_M2 33554432  L_roh_shirt_cape_M2 67108864  16842765 0 50 1116815228928 2 100 0 3 2 0 0 0 0 0 0 0 0
+ itm_rohan_armor_a Rohan_Shirt Rohan_Shirt 1  rohan_recruit_poor 0  16842765 0 50 1116815228928 2 100 0 3 2 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_b Rohan_Shirt_Cape Rohan_Shirt_Cape 1  L_roh_shirt_cape_M2 0  16842765 0 400 1116815228928 3 100 0 5 3 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_b Rohan_Shirt_Cape Rohan_Shirt_Cape 1  rohan_recruit_poor 0  16842765 0 400 1116815228928 3 100 0 5 3 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_c Rohan_Long_Shirt Rohan_Long_Shirt 1  L_roh_long_shirt_cape_M4 0  16842765 0 500 1116815228928 5 100 0 8 5 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_c Rohan_Long_Shirt Rohan_Long_Shirt 1  rohan_recruit_poor 0  16842765 0 500 1116815228928 5 100 0 8 5 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_d Rohan_Hauberk Rohan_Hauberk 1  LH_roh_hauberk_cape_b_M7 0  16842765 0 800 704643236 12 100 0 20 9 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_d Rohan_Hauberk Rohan_Hauberk 1  rohan_mail 0  16842765 0 800 704643236 12 100 0 20 9 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_e Rohan_Hauberk Rohan_Hauberk 3  LH_roh_hauberk_cape_a_M6 164  LH_roh_hauberk_cape_b_M7 1  LH_roh_hauberk_cape_c_M5 704643072  16842765 0 800 704643236 12 100 0 20 9 0 0 0 0 0 0 0 0
+ itm_rohan_armor_e Rohan_Hauberk Rohan_Hauberk 1  rohan_mail 0  16842765 0 800 704643236 12 100 0 20 9 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_f Rohan_Hauberk Rohan_Hauberk 1  LH_roh_hauberk_cape_c_M5 0  16842765 0 1000 704643236 12 100 0 22 9 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_f Rohan_Hauberk Rohan_Hauberk 1  rohan_mail 0  16842765 0 1000 704643236 12 100 0 22 9 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_g Rohan_Leather_Armor Rohan_Leather_Armor 1  M_roh_shirt_cape_b_M2 0  16842765 0 700 704643236 15 100 0 18 7 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_g Rohan_Leather_Armor Rohan_Leather_Armor 1  rohan_lamellar 0  16842765 0 700 704643236 15 100 0 18 7 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_h Rohan_Leather_Armor Rohan_Leather_Armor 3  M_roh_shirt_cape_b_M2 164  M_roh_long_shirt_cape_b_M4 1  M_roh_long_shirt_cape_c_M3 704643072  16842765 0 750 704643236 15 100 0 18 9 0 0 0 0 0 0 0 0
+ itm_rohan_armor_h Rohan_Leather_Armor Rohan_Leather_Armor 1  rohan_lamellar 0  16842765 0 750 704643236 15 100 0 18 9 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_i Rohan_Leather_Armor Rohan_Leather_Armor 1  M_roh_long_shirt_cape_c_M3 0  16842765 0 900 704643236 15 100 0 20 9 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_i Rohan_Leather_Armor Rohan_Leather_Armor 1  rohan_lamellar 0  16842765 0 900 704643236 15 100 0 20 9 0 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_j Rohan_Hauberk Rohan_Hauberk 1  MH_roh_hauberk_leather_cape_a_M6 0  16842765 0 1500 704643236 17 100 0 30 12 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_j Rohan_Hauberk Rohan_Hauberk 1  rohan_rider 0  16842765 0 1500 704643236 17 100 0 30 12 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_armor_k Rohan_Hauberk Rohan_Hauberk 3  LH_roh_hauberk_cape_a_M6 164  LH_roh_hauberk_cape_b_M7 0  LH_roh_hauberk_cape_c_M5 704643072  16842765 0 1500 704643236 17 100 0 30 12 10 0 0 0 0 0 0 0
+ itm_rohan_armor_k Rohan_Hauberk Rohan_Hauberk 1  rohan_rider 0  16842765 0 1500 704643236 17 100 0 30 12 10 0 0 0 0 0 0 0
 0
 
- itm_free_rohan_armor_l Rohan_Hauberk Rohan_Hauberk 3  LH_roh_hauberk_cape_a_M6 164  LH_roh_hauberk_cape_b_M7 0  LH_roh_hauberk_cape_c_M5 704643072  16842765 0 1600 704643236 18 100 0 33 12 0 0 0 0 0 0 0 0
+ itm_free_rohan_armor_l Rohan_Hauberk Rohan_Hauberk 1  rohan_rider 0  16842765 0 1600 704643236 18 100 0 33 12 0 0 0 0 0 0 0 0
 0
 
  itm_rohan_recruit Rohan_Padded_Jerkin Rohan_Padded_Jerkin 3  rohan_recruit_poor 164  rohan_recruit 0  rohan_recruit_reinforced 704643072  16842765 0 150 1116815228928 2 100 0 8 2 0 0 0 0 0 0 0 0
