@@ -2002,6 +2002,7 @@ animations = [
  ],
  ["strike_fly_back_rise", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_fall_from_horse|amf_play|amf_accurate_body|amf_restart|amf_client_prediction,
    [2.09, "ani_fall_flyback1_med_rise", 0, 53, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.19,  -2.7  ,0), 0.5],
+   [2.09, "human_salto_hit",            0, 53, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.19,  -2.7  ,0), 0.5],
    [2.214,"ani_fall_flyback1_far_rise", 0, 56, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.19,  -4.4  ,0), 0.5],
    [2.1,  "ani_fall_flyback2_med_rise", 0, 49, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.933, -2.454,0), 0.5],
    [2.1,  "ani_fall_flyback2_far_rise", 0, 49, arf_blend_in_2|arf_make_custom_sound, pack2f(0.4, 0.0), ( 0.933, -3.80 ,0), 0.5],

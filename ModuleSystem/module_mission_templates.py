@@ -8934,6 +8934,8 @@ tld_remove_riderless_animals,
     (try_begin),
       (eq, "$enemy_reinforcement_stage", 0),
       (assign, "$enemy_reinforcement_stage", 1),
+      (entry_point_get_position, pos0, 4),
+      (play_sound_at_position, snd_ghost_ambient_long, pos0), #spooky
     (else_try),
       (entry_point_get_position, pos5, 4),
       (position_set_z_to_ground_level, pos5),
@@ -8958,6 +8960,46 @@ tld_remove_riderless_animals,
   [
   ]),
 
+(ti_on_agent_killed_or_wounded, 0, 0, [
+  
+  (ge, "$enemy_reinforcement_stage", 1),
+
+  (store_trigger_param_1, ":agent_victim"),
+  #(store_trigger_param_2, ":agent_killer"),
+  
+  (agent_is_active, ":agent_victim"),
+  (agent_is_human, ":agent_victim"),
+  
+  (agent_get_troop_id, ":troop_id", ":agent_victim"),
+  (eq, ":troop_id", "trp_dorwinion_spirit"),
+
+  ],[
+
+
+  (ge, "$enemy_reinforcement_stage", 1),
+
+  (store_trigger_param_1, ":agent_victim"),
+  #(store_trigger_param_2, ":agent_killer"),
+  (store_trigger_param_3, ":result"),
+  
+  (agent_is_active, ":agent_victim"),
+  (agent_is_human, ":agent_victim"),
+  
+  (agent_get_troop_id, ":troop_id", ":agent_victim"),
+  (eq, ":troop_id", "trp_dorwinion_spirit"),
+
+  (this_or_next|eq, ":result", 0), #killed
+  (eq, ":result", 1), #or wounded
+
+  (agent_get_bone_position, pos33, ":agent_victim", human_thorax, 1), #chest
+  (particle_system_burst, "psys_dummy_smoke", pos33, 60),
+
+  (call_script, "script_find_exit_position_at_pos4", ":agent_victim"),
+  (agent_set_position, ":agent_victim", pos4),
+  (remove_agent, ":agent_victim"),
+
+]),
+
 (10, 0, 0, [], [(set_show_messages, 0), (team_give_order, 1, grc_everyone, mordr_charge), (set_show_messages, 1), (get_player_agent_no, ":player"),
   (try_for_agents, ":agent"),
     (neq, ":agent", ":player"),
@@ -8965,11 +9007,6 @@ tld_remove_riderless_animals,
     (agent_is_active, ":agent"),
     (agent_is_human, ":agent"),
     (agent_set_look_target_agent, ":agent", ":player"),
-    (try_begin),
-      (ge, "$enemy_reinforcement_stage", 1),
-      (entry_point_get_position, pos0, 4),
-      (play_sound_at_position, snd_ghost_ambient_long, pos0, 0), #spooky
-    (try_end),
   (try_end),]),
 
 ## Enemy Swarm Triggers: 
@@ -9036,8 +9073,8 @@ tld_remove_riderless_animals,
         (agent_set_team, reg0, 1),
         (agent_set_is_alarmed, reg0, 1),
         (agent_ai_set_aggressiveness, reg0, 1000),
-        (agent_set_damage_modifier, reg0, 40),
-        (store_random_in_range, ":random_location", 600, 1000),
+        (agent_set_damage_modifier, reg0, 20),
+        (store_random_in_range, ":random_location", 400, 700),
         (try_begin),
           (eq, "$enemy_reinforcement_stage", 1),
           (lt, ":random_position", 85),

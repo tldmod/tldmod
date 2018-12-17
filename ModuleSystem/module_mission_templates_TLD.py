@@ -2442,6 +2442,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	 	(try_begin), 
 	 		(this_or_next|eq, ":troll_troop_id", "trp_olog_hai"),
 	 		(eq, ":troll_troop_id", "trp_armoured_troll"),
+	 		(agent_refill_wielded_shield_hit_points, ":troll"),
 	 		(agent_unequip_item, ":troll", "itm_troll_shield_a"),
 	 		(agent_equip_item, ":troll", "itm_troll_shield_a"), #Moves shield to back
 	 	(try_end),
@@ -2476,7 +2477,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(ge, ":time", ":knocked_down_time"),
 			(agent_set_slot, ":troll", slot_agent_knocked_down, 0),
 		(try_end),
-
+		
 		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
 		(troop_get_type, ":troll_type", ":troll_troop_id"),
 		(eq, ":troll_type", tf_troll),
@@ -2495,6 +2496,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(this_or_next|eq, ":troop_id", "trp_olog_hai"),
 			(eq, ":troop_id", "trp_armoured_troll"),
  			(agent_set_wielded_item, ":troll", "itm_troll_shield_a"),
+ 			(agent_refill_wielded_shield_hit_points, ":troll"),
  		(try_end),
 	(try_end), 
 		

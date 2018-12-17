@@ -1127,7 +1127,7 @@ game_menus = [
 		#(modify_visitors_at_site, "$g_custom_battle_scene"),
 		#(assign, "$g_player_troop", "$testbattle_team_a_troop"),
 		#(set_player_troop, "$g_player_troop"),
-		
+	   (troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, 200),
 	   (assign, "$g_player_troop", "trp_knight_3_6"),
        (set_player_troop, "$g_player_troop"),
        (modify_visitors_at_site, "$g_custom_battle_scene"),

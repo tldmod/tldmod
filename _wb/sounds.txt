@@ -635,7 +635,7 @@ soundsfile version 2
  new_rank_good.wav 1793
  woman_yell_1.ogg 2640
  woman_yell_2.ogg 2640
- ghost_ambient_long02.wav 907
+ ghost_ambient_long02.wav 499
  trollSnarl.wav 2656
  bees_people.wav 907
  bees_birds.wav 907
@@ -918,7 +918,7 @@ snd_spider_die 2656 1 630
 snd_new_rank_evil 1793 1 631 
 snd_new_rank_good 1793 1 632 
 snd_woman_yell 2640 2 633 634 
-snd_ghost_ambient_long 907 1 635 
+snd_ghost_ambient_long 499 1 635 
 snd_bear_strike 2656 3 552 553 495 
 snd_spider_strike 2656 2 628 636 
 snd_wolf_strike 2656 2 550 636 

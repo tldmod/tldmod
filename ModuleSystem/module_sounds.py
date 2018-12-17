@@ -352,7 +352,7 @@ sounds = [
 
 ("woman_yell",sf_priority_5|sf_vol_10, ["woman_yell_1.ogg", "woman_yell_2.ogg"]),  
 
-("ghost_ambient_long"         ,sf_2d|sf_priority_8|sf_vol_3|sf_looping|sf_stream_from_hd, ["ghost_ambient_long02.wav"]),
+("ghost_ambient_long"         ,sf_2d|sf_priority_15|sf_vol_1|sf_looping, ["ghost_ambient_long02.wav"]),
 
 ("bear_strike",   sf_priority_6|sf_vol_10, ["warg_howl02.wav", "warg_howl03.wav", "troll_growl.wav",]),
 ("spider_strike", sf_priority_6|sf_vol_10, ["spider_battle01.wav", "trollSnarl.wav",]),
