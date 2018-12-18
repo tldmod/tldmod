@@ -80,7 +80,7 @@ party_templates = [
 ("pinnath_gelin_auxila","Pinnath Gelin Auxilia",icon_footman_pinnath|carries_goods(1)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_pinnath_gelin_bowman,1,3),(trp_pinnath_gelin_spearman,1,2),(trp_pinnath_gelin_plainsman,3,6)]), #30-69
 ("ranger_scouts"       ,"Ranger Scouts" ,icon_ithilien_ranger|carries_goods(0)|pf_show_faction,0,fac_gondor,scout_personality,[(trp_veteran_ranger_of_ithilien,1,2),(trp_ranger_of_ithilien,1,4)]), #43-102 more punch for rangers, elites operating in enemy territory
 
-("rohan_scouts"    ,"Rohirrim Scouts"      ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,scout_personality,[(trp_elite_skirmisher_of_rohan,1,1),(trp_veteran_skirmisher_of_rohan,1,4),(trp_skirmisher_of_rohan,3,5)]), #43-82 rohan good at scouting
+("rohan_scouts"    ,"Rohirrim Scouts"      ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,scout_personality,[(trp_ac5_elite_skirmisher_of_rohan,1,1),(trp_ac4_veteran_skirmisher_of_rohan,1,4),(trp_ac3_skirmisher_of_rohan,3,5)]), #43-82 rohan good at scouting
 ("lorien_scouts"   ,"Lothlorien Scouts"    ,icon_lorien_elf_a |carries_goods(1)|pf_show_faction,0,fac_lorien  ,scout_personality,[(trp_lothlorien_veteran_warden,1,2),(trp_lothlorien_veteran_scout,3,4),(trp_lothlorien_scout,3,4)]), #31-62
 ("woodelf_scouts"  ,"Mirkwood Elven Scouts",icon_mirkwood_elf |carries_goods(1)|pf_show_faction,0,fac_woodelf ,scout_personality,[(trp_greenwood_master_archer,1,1),(trp_greenwood_veteran_scout,1,5),(trp_greenwood_scout,2,5)]), #37-65
 ("imladris_scouts","Dunedain Scouts",icon_ithilien_ranger|carries_goods(1)|pf_show_faction,0,fac_imladris,scout_personality,[(trp_dunedain_master_ranger,1,1),(trp_dunedain_trained_scout,1,3),(trp_dunedain_scout,2,5)]), #37-65
@@ -106,7 +106,7 @@ party_templates = [
 ####TLD Raiders
 #MV: in general, average strength should be 80-160, good sides weaker, evil stronger (foraging vs. raiding)
 ("gondor_raiders"  ,"Gondor Foragers"    ,icon_knight_gondor|carries_goods(1)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_veteran_squire_of_gondor,1,1),(trp_footmen_of_gondor,6,12),(trp_bowmen_of_gondor,6,12)]), #78-150
-("rohan_raiders"   ,"Rohirrim Foragers"  ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,soldier_personality,[(trp_elite_rider_of_rohan,1,1),(trp_rider_of_rohan,3,8),(trp_skirmisher_of_rohan,3,8),(trp_squire_of_rohan,5,10)]), #72-152
+("rohan_raiders"   ,"Rohirrim Foragers"  ,icon_knight_rohan |carries_goods(1)|pf_show_faction,0,fac_rohan   ,soldier_personality,[(trp_c5_elite_rider_of_rohan,1,1),(trp_c3_rider_of_rohan,3,8),(trp_ac3_skirmisher_of_rohan,3,8),(trp_c2_squire_of_rohan,5,10)]), #72-152
 ("imladris_raiders","Rivendell Foragers" ,icon_knight_rivendell|carries_goods(2)|pf_show_faction,0,fac_imladris,soldier_personality,[(trp_knight_of_rivendell,2,4),(trp_rivendell_cavalry,3,8),(trp_rivendell_infantry,6,12)]), #97-194 # less but stronger troops, cavalry
 ("lorien_raiders"  ,"Lothlorien Foragers",icon_lorien_elf_a |carries_goods(2)|pf_show_faction,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_warden,1,1),(trp_lothlorien_archer,7,15),(trp_lothlorien_infantry,6,12)]), #71-152
 ("woodelf_raiders" ,"Mirkwood Foragers"  ,icon_mirkwood_elf |carries_goods(2)|pf_show_faction,0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman,1,1),(trp_greenwood_veteran_spearman,4,10),(trp_greenwood_archer,5,10)]), #73-150
@@ -131,7 +131,7 @@ party_templates = [
 ####TLD Patrols
 #MV: in general, average strength should be 300-600, Mordor and Isengard about 20% better than Gondor and Rohan
 ("gondor_patrol"  ,"Gondor Patrol"    ,icon_footman_gondor |carries_goods(2)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_veteran_knight_of_gondor,1,1),(trp_veteran_archer_of_gondor,3,6),(trp_gondor_veteran_swordsmen,3,6),(trp_archer_of_gondor,8,20),(trp_gondor_swordsmen,8,20)]), #256-568
-("rohan_patrol"   ,"Rohirrim Patrol"  ,icon_knight_rohan   |carries_goods(2)|pf_show_faction,0,fac_rohan   ,soldier_personality,[(trp_thengel_guard_of_rohan,1,1),(trp_elite_skirmisher_of_rohan,3,6),(trp_lancer_of_rohan,3,6),(trp_veteran_skirmisher_of_rohan,6,14),(trp_skirmisher_of_rohan,6,14),(trp_rider_of_rohan,8,20)]), #238-505 fast!
+("rohan_patrol"   ,"Rohirrim Patrol"  ,icon_knight_rohan   |carries_goods(2)|pf_show_faction,0,fac_rohan   ,soldier_personality,[(trp_ac6_skirmisher_guard_of_rohan,1,1),(trp_ac5_elite_skirmisher_of_rohan,3,6),(trp_c4_lancer_of_rohan,3,6),(trp_ac4_veteran_skirmisher_of_rohan,6,14),(trp_ac3_skirmisher_of_rohan,6,14),(trp_c3_rider_of_rohan,8,20)]), #238-505 fast!
 ("imladris_patrol","Dunedain Patrol"  ,icon_knight_rivendell  |carries_goods(0)|pf_show_faction,0,fac_imladris,soldier_personality,[(trp_knight_of_arnor,1,1),(trp_arnor_horsemen,4,10),(trp_high_swordsman_of_arnor,3,5),(trp_arnor_master_at_arms,8,20),(trp_arnor_man_at_arms,8,20)]), #252-554
 ("lorien_patrol"  ,"Lothlorien Patrol",icon_lorien_elf_b   |carries_goods(2)|pf_show_faction,0,fac_lorien  ,soldier_personality,[(trp_galadhrim_royal_archer,1,1),(trp_lothlorien_master_archer,3,6),(trp_lothlorien_veteran_archer,4,10),(trp_lothlorien_elite_infantry,8,16),(trp_lothlorien_archer,8,16),(trp_lothlorien_veteran_infantry,10,20)]), #312-615
 ("woodelf_patrol" ,"Mirkwood Patrol"  ,icon_mirkwood_elf   |carries_goods(2)|pf_show_faction,0,fac_woodelf ,soldier_personality,[(trp_thranduils_royal_marksman,1,1),(trp_greenwood_master_archer,3,6),(trp_greenwood_veteran_archer,4,10),(trp_greenwood_royal_spearman,4,10),(trp_greenwood_veteran_spearman,4,10),(trp_greenwood_archer,8,16)]), #250-525
@@ -162,7 +162,7 @@ party_templates = [
 
 ####TLD Companies (only Gondorian used, as a MT patrol)
 ("gondor_company" ,"Minas Tirith Patrol",icon_knight_gondor |carries_goods(4)|pf_show_faction,0,fac_gondor  ,soldier_personality,[(trp_captain_of_gondor,1,1),(trp_veteran_knight_of_gondor,2,4),(trp_knight_of_gondor,8,16),(trp_gondor_veteran_swordsmen,10,20),(trp_veteran_archer_of_gondor,10,20),(trp_gondor_veteran_spearmen,10,20)]), #573-1121 elite, rare, overpowered #InVain 754-1474 (new formula) added a few more knights
-("rohan_company"   ,"Rohan Company"     ,icon_knight_rohan        ,0,fac_rohan   ,soldier_personality,[(trp_elite_rider_of_rohan,25,25),(trp_elite_skirmisher_of_rohan,25,25),(trp_elite_footman_of_rohan,25,25),(trp_eorl_guard_of_rohan,12,12),(trp_thengel_guard_of_rohan,12,12),(trp_captain_of_rohan,1,1)]),
+("rohan_company"   ,"Rohan Company"     ,icon_knight_rohan        ,0,fac_rohan   ,soldier_personality,[(trp_c5_elite_rider_of_rohan,25,25),(trp_ac5_elite_skirmisher_of_rohan,25,25),(trp_i5_elite_footman_of_rohan,25,25),(trp_c6_rider_guard_of_rohan,12,12),(trp_ac6_skirmisher_guard_of_rohan,12,12),(trp_captain_of_rohan,1,1)]),
 ("imladris_company","Rivendell Company" ,icon_rivendell_elf       ,0,fac_imladris,soldier_personality,[(trp_rivendell_infantry,20,33),(trp_rivendell_veteran_infantry,20,33),(trp_rivendell_elite_infantry,20,33),(trp_rivendell_royal_infantry,3,6),(trp_elf_captain_of_rivendell,1,1)]),
 ("lorien_company"  ,"Lothlorien Company",icon_lorien_elf_b        ,0,fac_lorien  ,soldier_personality,[(trp_lothlorien_veteran_infantry,30,30),(trp_lothlorien_elite_infantry,30,30),(trp_lothlorien_veteran_warden,30,30),(trp_galadhrim_royal_warden,5,5),(trp_galadhrim_royal_swordsman,5,5),(trp_elf_captain_of_lothlorien,1,1)]),
 ("woodelf_company" ,"Mirkwood Company"  ,icon_mirkwood_elf        ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_spearman,21,22),(trp_greenwood_veteran_archer,21,22),(trp_greenwood_master_archer,21,22),(trp_thranduils_royal_marksman,8,12)]),
@@ -171,7 +171,7 @@ party_templates = [
 
 ####TLD Elite Companies (not used)
 ("gondor_elite_company"  ,"Gondor Elite Company"    ,icon_knight_gondo_trot_x3,0,fac_gondor  ,soldier_personality,[(trp_guard_of_the_fountain_court,15,30),(trp_knight_of_the_citadel,15,30),(trp_archer_of_the_tower_guard,15,30),(trp_swordsmen_of_the_tower_guard,15,30),(trp_captain_of_gondor,1,1)]),
-("rohan_elite_company"   ,"Rohan Elite Company"     ,icon_knight_rohan_x3     ,0,fac_rohan   ,soldier_personality,[(trp_eorl_guard_of_rohan        ,10,20),(trp_thengel_guard_of_rohan,10,20),(trp_folcwine_guard_of_rohan,10,20),(trp_warden_of_methuseld,10,20),(trp_raider_of_rohan,10,20),(trp_captain_of_rohan,1,1)]),
+("rohan_elite_company"   ,"Rohan Elite Company"     ,icon_knight_rohan_x3     ,0,fac_rohan   ,soldier_personality,[(trp_c6_rider_guard_of_rohan        ,10,20),(trp_ac6_skirmisher_guard_of_rohan,10,20),(trp_i6_footman_guard_of_rohan,10,20),(trp_i6_warden_of_methuseld,10,20),(trp_i6_frealaf_raider,10,20),(trp_captain_of_rohan,1,1)]),
 ("imladris_elite_company","Rivendell Elite Company" ,icon_knight_rivendell    ,0,fac_imladris,soldier_personality,[(trp_rivendell_royal_infantry   ,25,50),(trp_knight_of_rivendell,25,50),(trp_elf_captain_of_rivendell,1,1)]),
 ("lorien_elite_company"  ,"Lothlorien Elite Company",icon_lorien_elf_b_x3     ,0,fac_lorien  ,soldier_personality,[(trp_galadhrim_royal_marksman   ,13,25),(trp_galadhrim_royal_swordsman,13,25),(trp_galadhrim_royal_archer,13,25),(trp_galadhrim_royal_warden,13,25),(trp_noldorin_commander,1,1)]),
 ("woodelf_elite_company" ,"Mirkwood Elite Company"  ,icon_mirkwood_elf_x3     ,0,fac_woodelf ,soldier_personality,[(trp_greenwood_royal_spearman   ,20,40),(trp_thranduils_royal_marksman,20,40),(trp_elf_captain_of_mirkwood,0,0)]),
@@ -194,7 +194,7 @@ party_templates = [
 # - in general, caravans are stronger than raiders, but weaker than patrols
 # - aim for strength 250-500
 ("gondor_caravan"  ,"Gondor Caravan"    ,icon_supply_gondor|carries_goods(10)|pf_show_faction,0,fac_gondor  ,prisoner_train_personality,[(trp_knight_of_gondor,1,4),(trp_squire_of_gondor,4,10),(trp_gondor_swordsmen,4,10),(trp_gondor_spearmen,4,10),(trp_archer_of_gondor,7,14),(trp_gondor_militiamen,30,50)]), # strength 280-582
-("rohan_caravan"   ,"Rohan Caravan"     ,icon_supply_rohan |carries_goods(10)|pf_show_faction,0,fac_rohan   ,prisoner_train_personality,[(trp_veteran_rider_of_rohan,1,4),(trp_squire_of_rohan,4,10),(trp_veteran_skirmisher_of_rohan,7,14),(trp_veteran_footman_of_rohan,6,14),(trp_guardsman_of_rohan,26,42)]), # strength 246-496
+("rohan_caravan"   ,"Rohan Caravan"     ,icon_supply_rohan |carries_goods(10)|pf_show_faction,0,fac_rohan   ,prisoner_train_personality,[(trp_c4_veteran_rider_of_rohan,1,4),(trp_c2_squire_of_rohan,4,10),(trp_ac4_veteran_skirmisher_of_rohan,7,14),(trp_i4_veteran_footman_of_rohan,6,14),(trp_i2_guardsman_of_rohan,26,42)]), # strength 246-496
 ("imladris_caravan","Rivendell Caravan" ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_imladris,prisoner_train_personality,[(trp_rivendell_cavalry,1,4),(trp_rivendell_veteran_sentinel,4,10),(trp_rivendell_sentinel,12,24),(trp_rivendell_veteran_scout,10,16),(trp_rivendell_infantry,14,24)]), # strength 254-508
 ("lorien_caravan"  ,"Lothlorien Caravan",icon_mule         |carries_goods(10)|pf_show_faction,0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_veteran_warden,2,6),(trp_lothlorien_elite_infantry,4,10),(trp_lothlorien_archer,14,30),(trp_lothlorien_warden,12,18),(trp_lothlorien_veteran_infantry,16,28)]), # strength 298-600
 ("woodelf_caravan" ,"Mirkwood Caravan"  ,icon_mule         |carries_goods(10)|pf_show_faction,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_vet_sentinel,1,4),(trp_greenwood_royal_spearman,4,10),(trp_greenwood_sentinel,12,24),(trp_greenwood_veteran_scout,10,16),(trp_greenwood_spearman,14,24)]), # strength 254-508
@@ -212,7 +212,7 @@ party_templates = [
 # - prisoner trains should be about half the size of caravans, but slow and interceptable, so give them more slow tier 1 troops and no/less cavalry
 # - aim for strength 150-250
 ("gondor_p_train"  ,"Gondor Prisoner Train"    ,icon_supply_gondor|pf_show_faction,0,fac_gondor  ,prisoner_train_personality,[(trp_footmen_of_gondor,1,2), (trp_bowmen_of_gondor,4,6), (trp_gondor_militiamen,15,25), (trp_gondor_commoner,30,45)]), # strength 150-238
-("rohan_p_train"   ,"Rohan Prisoner Train"     ,icon_supply_rohan |pf_show_faction,0,fac_rohan   ,prisoner_train_personality,[(trp_footman_of_rohan,2,4), (trp_skirmisher_of_rohan,4,6), (trp_squire_of_rohan,4,6), (trp_guardsman_of_rohan,8,12), (trp_rohan_youth,24,30)]), # strength 132-192
+("rohan_p_train"   ,"Rohan Prisoner Train"     ,icon_supply_rohan |pf_show_faction,0,fac_rohan   ,prisoner_train_personality,[(trp_i3_footman_of_rohan,2,4), (trp_ac3_skirmisher_of_rohan,4,6), (trp_c2_squire_of_rohan,4,6), (trp_i2_guardsman_of_rohan,8,12), (trp_i1_rohan_youth,24,30)]), # strength 132-192
 ("imladris_p_train","Rivendell Prisoner Train" ,icon_mule         |pf_show_faction,0,fac_imladris,prisoner_train_personality,[(trp_rivendell_veteran_infantry,2,4), (trp_rivendell_sentinel,2,4), (trp_rivendell_infantry,6,10), (trp_rivendell_veteran_scout,6,8), (trp_rivendell_scout,25,35)]), # strength 138-216
 ("lorien_p_train"  ,"Lothlorien Prisoner Train",icon_mule         |pf_show_faction,0,fac_lorien  ,prisoner_train_personality,[(trp_lothlorien_archer,6,10), (trp_lothlorien_veteran_infantry,6,10), (trp_lothlorien_warden,6,10), (trp_lothlorien_infantry,25,35)]), # strength 152-240
 ("woodelf_p_train" ,"Mirkwood Prisoner Train"  ,icon_mule         |pf_show_faction,0,fac_woodelf ,prisoner_train_personality,[(trp_greenwood_sentinel,2,4), (trp_greenwood_veteran_spearman,2,4), (trp_greenwood_spearman,6,10), (trp_greenwood_veteran_scout,6,8), (trp_greenwood_scout,25,35)]), # strength 138-216
@@ -263,9 +263,9 @@ party_templates = [
 ("blackroot_reinf_b" ,"_",0,0,fac_commoners,0,[(trp_footman_of_blackroot_vale,1,2),(trp_veteran_blackroot_vale_archer,1,2),(trp_blackroot_vale_archer,3,6),]), #no T3
 ("blackroot_reinf_c" ,"_",0,0,fac_commoners,0,[(trp_veteran_blackroot_vale_archer,2,4),(trp_footman_of_blackroot_vale,2,4),]),
 #rohan	
-("rohan_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_squire_of_rohan,1,2),(trp_guardsman_of_rohan,2,4),(trp_rohan_youth,4,8),]),
-("rohan_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_rider_of_rohan,1,2),(trp_skirmisher_of_rohan,3,5),(trp_footman_of_rohan,1,2),(trp_squire_of_rohan,0,1),]),
-("rohan_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_veteran_rider_of_rohan,1,2),(trp_lancer_of_rohan,1,2),(trp_veteran_skirmisher_of_rohan,1,2),(trp_veteran_footman_of_rohan,1,2),]),
+("rohan_reinf_a"   ,"_",0,0,fac_commoners,0,[(trp_c2_squire_of_rohan,1,2),(trp_i2_guardsman_of_rohan,2,4),(trp_i1_rohan_youth,4,8),]),
+("rohan_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_c3_rider_of_rohan,1,2),(trp_ac3_skirmisher_of_rohan,3,5),(trp_i3_footman_of_rohan,1,2),(trp_c2_squire_of_rohan,0,1),]),
+("rohan_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_c4_veteran_rider_of_rohan,1,2),(trp_c4_lancer_of_rohan,1,2),(trp_ac4_veteran_skirmisher_of_rohan,1,2),(trp_i4_veteran_footman_of_rohan,1,2),]),
 #Isengard - two short trees (up to T4/T5), easier to upgrade, so lower tier reinforcements; also extra orcs (8-16, 7-13, 5-10)
 ("isengard_reinf_a","_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,1,2),(trp_orc_snaga_of_isengard,2,5),(trp_uruk_hai_tracker,1,2),(trp_uruk_hai_of_isengard,1,2),(trp_orc_of_isengard,2,4),]), #two T1 #InVain: mixed a bit, see Mordor
 ("isengard_reinf_b","_",0,0,fac_commoners,0,[(trp_wolf_rider_of_isengard,2,3),(trp_uruk_hai_tracker,2,4),(trp_uruk_hai_of_isengard,1,2),(trp_orc_of_isengard,2,4),(trp_large_uruk_hai_tracker,1,3),(trp_large_orc_of_isengard,1,2),]), #more T2 troops #InVain: More archers, t3 archers+orcs
@@ -346,8 +346,8 @@ party_templates = [
 ("ithilien_recruits"  ,"_",0,0,fac_commoners,0,[(trp_ranger_of_ithilien,1,2)]), #T4! nerf
 ("blackroot_recruits" ,"_",0,0,fac_commoners,0,[(trp_blackroot_vale_archer,1,4)]), #T2
 
-("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,4)]),
-("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_rohan_youth,2,6)]),
+("rohan_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,4)]),
+("rohan_cap_recruits" ,"_",0,0,fac_commoners,0,[(trp_i1_rohan_youth,2,6)]),
 ("isengard_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_isengard,2,3),(trp_orc_snaga_of_isengard,2,4),(trp_dunnish_wildman,1,2)]), #two T1
 ("morannon_recruits"  ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,3,5),(trp_black_numenorean_renegade,1,1),(trp_easterling_youth,1,3),]), #two T1 & prize
 ("mordor_recruits"    ,"_",0,0,fac_commoners,0,[(trp_uruk_snaga_of_mordor,1,2),(trp_orc_snaga_of_mordor,3,5)]), #two T1
