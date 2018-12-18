@@ -1565,13 +1565,13 @@ itemsfile version 2
  itm_rohan_rider Rohan_Rider_Armor Rohan_Rider_Armor 3  rohan_rider_poor 164  rohan_rider 0  rohan_rider_reinforced 704643072  16842765 0 1000 704643236 14 100 0 25 12 0 0 0 0 0 0 0 0
 0
 
- itm_rohan_scale Rohan_Scale_Armor Rohan_Scale_Armor 3  rohan_scale_poor 164  rohan_scale 0  rohan_scale_reinforced 704643072  16842765 0 1200 704643236 20 100 0 38 15 16 0 0 0 0 0 0 0
+ itm_rohan_scale Rohan_Scale_Armor Rohan_Scale_Armor 3  rohan_scale_poor 164  rohan_scale 0  rohan_scale_reinforced 704643072  16842765 0 1200 704643236 20 100 0 32 15 16 0 0 0 0 0 0 0
 0
 
- itm_rohan_surcoat Rohan_Surcoat Rohan_Surcoat 3  rohan_tabard_poor 164  rohan_tabard 0  rohan_tabard_reinforced 704643072  16842765 0 2000 704643236 20 100 0 34 15 18 0 0 0 0 0 0 0
+ itm_rohan_surcoat Rohan_Surcoat Rohan_Surcoat 3  rohan_tabard_poor 164  rohan_tabard 0  rohan_tabard_reinforced 704643072  16842765 0 2000 704643236 20 100 0 36 15 18 0 0 0 0 0 0 0
 0
 
- itm_rohan_guard Rohan_Guard_Armor Rohan_Guard_Armor 3  rohan_royal_guard_armor2 164  rohan_royal_guard_armor1 0  rohan_royal_guard_armor1_lordly 704643072  16842765 0 3000 704643236 22 100 0 37 17 20 0 0 0 0 0 0 0
+ itm_rohan_guard Rohan_Guard_Armor Rohan_Guard_Armor 3  rohan_royal_guard_armor2 164  rohan_royal_guard_armor1 0  rohan_royal_guard_armor1_lordly 704643072  16842765 0 3000 704643236 22 100 0 38 17 20 0 0 0 0 0 0 0
 0
 
  itm_rohan_light_helmet_a Rohan_Light_Helm Rohan_Light_Helm 3  rohan_recruit_helm_a 164  rohan_recruit_helm_b 0  rohan_recruit_helm_c 704643072  65548 0 500 704643238 1 100 26 0 0 0 0 0 0 0 0 0 0
@@ -1662,7 +1662,7 @@ itemsfile version 2
  itm_rohirrim_short_axe Rohirrim_Short_Axe Rohirrim_Short_Axe 1  rohan_1haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 110 0 50 0 256 35
 0
 
- itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  80019458 9223388530091229198 500 287892 2 100 0 0 0 0 35840 92 0 70 0 256 35
+ itm_rohirrim_long_hafted_axe Rohirrim_Long_Hafted_Axe Rohirrim_Long_Hafted_Axe 1  rohan_2haxe 0  205848579 9223652412881895662 500 287892 2 100 0 0 0 0 35840 92 0 76 0 256 35
 0
 
  itm_rohan_2h_sword Rohan_War_Sword Rohan_War_Sword 1  rohan_sword_a_2h 0  274792451 9223635924301119728 524 287892 3 100 0 0 0 0 40960 94 0 101 0 287 40
@@ -2333,7 +2333,7 @@ itemsfile version 2
  itm_beorn_axe Beorning_Axe Beorning_Axe 1  beorning_axe 0  342163460 9223635923965575392 300 156672 5 100 0 0 0 0 41984 94 0 92 0 256 41
 0
 
- itm_beorn_staff Woodmen_Staff Woodmen_Staff 1  woodman_staff 0  138903556 4222129415393024 100 271496 2 100 0 0 0 0 20480 104 0 104 0 532 532
+ itm_beorn_staff Woodmen_Staff Woodmen_Staff 1  woodman_staff 0  138903556 4222129415393024 100 271496 2 100 0 0 0 0 20480 114 0 104 0 532 532
 0
 
  itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  342163460 9223635923965575392 300 156672 6 100 0 0 0 0 44032 91 0 85 0 256 43
@@ -2616,22 +2616,22 @@ itemsfile version 2
  itm_riv_armor_reward Rivendell_Decorated_Armor Rivendell_Decorated_Armor 1  rivendellrewardarmour 0  16777229 0 6000 704643072 12 100 2 44 20 15 0 0 0 0 0 0 0
 0
 
- itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 3000 156672 1.25 100 0 0 0 15 40960 130 0 77 0 286 296
+ itm_westernesse1h_reward Sword_of_Westernesse Sword_of_Westernesse 2  westernesse_1h 0  scab_1h_westernesse 3458764513820540928  71307266 9223388564182532111 3000 156672 1.25 100 0 0 0 15 38912 117 0 77 0 301 294
 0
 
- itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 120 0 120 0 301 306
+ itm_westernesse2h_reward Sword_of_The_Great_Serpent Sword_of_The_Great_Serpent 2  westernesse_2h 0  scab_2h_westernesse 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 15 51200 110 0 92 0 301 50
 0
 
- itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 120 0 120 0 301 306
+ itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307267 9223388564182532111 200 156672 3 100 0 0 0 15 43008 110 0 88 0 301 298
 0
 
- itm_nazgul_sword Nazgul_Sword Nazgul_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 120 0 120 0 301 306
+ itm_nazgul_sword Nazgul_Sword Nazgul_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  73404419 9223635954298781951 200 156672 3 100 0 0 0 18 51200 103 0 112 0 301 306
 0
 
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 12 56320 100 0 105 0 286 55
+ itm_eorl_cavalry_sword Sword_of_Eorl Sword_of_Eorl 1  eorl_cavalry_sword_b 0  71307266 9223388529822793743 3000 156672 1.25 100 0 0 0 15 56320 97 0 105 0 278 55
 0
 
  itm_garlic_reward Garlic Garlic 1  garlic 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2691,7 +2691,7 @@ itemsfile version 2
  itm_lorien_sword_reward Galadhrim_Sword Galadhrim_Sword 2  lorien_sword_hand_and_half 0  scab_lorien_sword_hand_and_half 3458764513820540928  4198403 9223635954298781951 900 0 2.5 100 0 0 0 0 33792 125 0 103 0 289 33
 0
 
- itm_dale_sword_reward Dale_Royal_Sword Dale_Royal_Sword 2  Mandible_royal_sword 0  Mandible_royal_sword_scabbard 3458764513820540928  4198402 9223388564182532111 500 0 1.25 100 0 0 0 0 41984 98 0 91 0 280 41
+ itm_dale_sword_reward Dale_Royal_Sword Dale_Royal_Sword 2  Mandible_royal_sword 0  Mandible_royal_sword_scabbard 3458764513820540928  4198402 9223388564182532111 500 0 1.25 100 0 0 0 12 49152 101 0 95 0 286 48
 0
 
  itm_dale_armor_reward Dale_Noblemen_Mail Dale_Noblemen_Mail 1  dale_reward 0  16781325 0 2000 0 22 100 4 38 15 0 0 0 0 0 0 0 0
