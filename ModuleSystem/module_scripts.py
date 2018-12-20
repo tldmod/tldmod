@@ -28181,5 +28181,32 @@ if is_a_wb_script==1:
 	(agent_set_position, ":teleport_agent", pos3),
 ]),
 
+("wield_agent_weapons", [
+	(store_script_param_1, ":agent"),
+
+	(agent_get_troop_id, ":troop", ":agent"),
+	(assign, ":found", 0),
+	(try_for_range, ":weapons", ek_item_0, ek_head),
+		(eq, ":found", 0),
+		(troop_get_inventory_slot, ":to_wield", ":troop", ":weapons"),
+		(gt, ":to_wield", 0),
+		(item_get_type, ":type", ":to_wield"),
+		(this_or_next|eq,":type", itp_type_one_handed_wpn),
+		(this_or_next|eq,":type", itp_type_two_handed_wpn),
+		(eq, ":type", itp_type_polearm),
+		(agent_set_wielded_item, ":agent", ":to_wield"),
+		(assign, ":found", 1),
+	(try_end),
+	(assign, ":found_2", 0),
+	(try_for_range, ":weapons", ek_item_0, ek_head),
+		(eq, ":found_2", 0),
+		(troop_get_inventory_slot, ":to_wield", "trp_player", ":weapons"),
+		(gt, ":to_wield", 0),
+		(item_get_type, ":type", ":to_wield"),
+		(eq, ":type", itp_type_shield),
+		(agent_set_wielded_item, ":agent", ":to_wield"),
+		(assign, ":found_2", 1),
+	(try_end),
+	]),
 
 ]

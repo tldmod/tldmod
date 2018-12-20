@@ -409,6 +409,7 @@ game_menus = [
 	(store_add, ":next_rank", reg13, 1),
 	(call_script, "script_get_rank_points_for_rank", ":next_rank"), #convert to rank points
 	(assign, reg20, reg0),
+	(val_sub, reg20, reg10),
 	(str_store_string, s11, "@{s24} ({reg13}) - {reg20} until next promotion^"),  # first title (own faction)
 	(str_store_string, s13, "@Influence:^ {reg11} (with {s16})^"),  # first inf
 	(str_store_string, s15, "@Resource Points:^ {reg12} (in {s16})^"),  # first rp
@@ -426,6 +427,7 @@ game_menus = [
 		(store_add, ":next_rank_ally", reg13, 1),
 		(call_script, "script_get_rank_points_for_rank", ":next_rank_ally"), #convert to rank points
 		(assign, reg21, reg0),
+		(val_sub, reg21, reg10),
 		(try_begin), 
 			(this_or_next|gt, reg10, 0),(eq, "$ambient_faction", ":fac"), (str_store_string, s11, "@{s11} {s24} ({reg13}) - {reg21} until next promotion^"),  # title
 		(try_end),
@@ -4959,6 +4961,9 @@ game_menus = [
         (spawn_around_party, "p_main_party", "pt_retreat_troops"),
         (assign, ":retreat_party", reg0),
         (party_set_faction, ":retreat_party", "$players_kingdom"),
+        (faction_get_slot, ":tier_1_troop", "$players_kingdom", slot_faction_tier_1_troop),
+        (party_add_members, ":retreat_party", ":tier_1_troop",1),
+        (party_remove_members, ":retreat_party", "trp_farmer", 1),
          ] + (is_a_wb_menu==1 and [
         (party_set_aggressiveness, ":retreat_party",15),
         ] or []) + [
@@ -5004,7 +5009,7 @@ game_menus = [
 
 			# This is here so when you flee it checks for routed parties -CC
 		  (try_begin),(call_script, "script_cf_spawn_routed_parties"),(try_end),
-		  (party_ignore_player, "$g_encountered_party", 1), #Kham - Fix
+		  (party_ignore_player, "$g_encountered_party", 3), #Kham - Fix
 	      (leave_encounter),(change_screen_return)]),
     ]
  ),

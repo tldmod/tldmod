@@ -397,7 +397,9 @@ ai_scripts = [
            (try_end),
          (try_end),
       
-         (gt, ":best_besiege_center", 0), #hopefully remove division by zero errors - Kham Nov 2018
+         (gt, ":best_besiege_center_score", 0), #hopefully remove division by zero errors - Kham Nov 2018
+         (neg|party_slot_eq, ":best_besiege_center", slot_center_siegability, tld_siegable_never), #triple check here
+
          #Center with equal strength at 30 kms away will have a center_score of 1300 (with -40 reln)
          (store_div, ":chance_attacking_center", ":best_besiege_center_score", 15),
          (val_min, ":chance_attacking_center", 1000),
