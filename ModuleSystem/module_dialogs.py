@@ -4336,7 +4336,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 
 [anyone,"lord_healer_wound_ask", [
       (call_script, "script_get_faction_rank", "$g_talk_troop_faction"), (assign, ":rank", reg0), #rank points to rank number 0-9
-      (lt, ":rank", 4),
+      (lt, ":rank", 3),
       (call_script, "script_get_rank_title_to_s24", "$g_talk_troop_faction"), (str_store_string_reg, s25, s24), #to s25 (current rank)
       (call_script, "script_get_any_rank_title_to_s24", "$g_talk_troop_faction", 3), #to s24
       (faction_get_slot, ":side", "$g_talk_troop_faction", slot_faction_side),

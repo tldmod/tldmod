@@ -2514,6 +2514,7 @@ scripts = [
                             (store_sub, ":last_chance", ":total_lords", 1),
                             (val_mul, ":last_chance", 10),
                             (lt, ":rnd_last_chance", ":last_chance"), # die for real?
+                            (gt, ":nonempty_winner_party", 0),
 							(call_script, "script_hero_leader_killed_abstractly", ":cur_troop_id",":nonempty_winner_party"),
 						(try_end),
 					(try_end),
@@ -15674,9 +15675,18 @@ scripts = [
 #script_spawn_bandits
 ("spawn_bandits",
     [(set_spawn_radius,5),
+
+     (try_begin),
+     	(lt, "$tld_war_began", 1),
+     	(assign, ":bandit_multiplier", 3),
+     (else_try),
+     	(assign, ":bandit_multiplier", 2),
+     (try_end),
+
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_mountain_bandits"),
-       (lt,":num_parties",num_mountain_bandit_spawn_points*2), # 2 bandits per spawn point on average - was 4
+       (store_mul, ":max_num_parties", num_mountain_bandit_spawn_points, ":bandit_multiplier"),
+       (lt,":num_parties",":max_num_parties"), # 2 bandits per spawn point on average - was 4
        (store_random,":spawn_point",num_mountain_bandit_spawn_points),
        (val_add,":spawn_point","p_mountain_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_mountain_bandits"),
@@ -15684,7 +15694,8 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_forest_bandits"),
-       (lt,":num_parties",num_forest_bandit_spawn_points*2),
+       (store_mul, ":max_num_parties", num_forest_bandit_spawn_points, ":bandit_multiplier"),
+       (lt,":num_parties",":max_num_parties"),
        (store_random,":spawn_point",num_forest_bandit_spawn_points),
        (val_add,":spawn_point","p_forest_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_forest_bandits"),
@@ -15692,7 +15703,8 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_sea_raiders"),
-       (lt,":num_parties",num_sea_raider_spawn_points*2),
+       (store_mul, ":max_num_parties", num_sea_raider_spawn_points, ":bandit_multiplier"),
+       (lt,":num_parties",":max_num_parties"),
        (store_random,":spawn_point",num_sea_raider_spawn_points),
        (val_add,":spawn_point","p_sea_raider_spawn_point_1"),
        (spawn_around_party,":spawn_point","pt_sea_raiders"),
@@ -15700,7 +15712,8 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_steppe_bandits"),
-       (lt,":num_parties",num_steppe_bandit_spawn_points*2),
+       (store_mul, ":max_num_parties", num_steppe_bandit_spawn_points, ":bandit_multiplier"),
+       (lt,":num_parties",":max_num_parties"),
        (store_random,":spawn_point",num_steppe_bandit_spawn_points),
        (val_add,":spawn_point","p_steppe_bandit_spawn_point"),
        (spawn_around_party,":spawn_point","pt_steppe_bandits"),
@@ -15708,7 +15721,7 @@ scripts = [
      (try_end),
      (try_begin),
        (store_num_parties_of_template, ":num_parties", "pt_looters"),
-       (lt,":num_parties",20), # 1 looter per 3 towns
+       (lt,":num_parties",30), # 1 looter per 3 towns
        (store_random_in_range,":spawn_point",centers_begin,advcamps_begin),
        (spawn_around_party,":spawn_point","pt_looters"),
        (party_set_slot, reg0, slot_party_type, spt_bandit), # Added by foxyman, TLD

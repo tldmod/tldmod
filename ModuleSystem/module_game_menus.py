@@ -11467,11 +11467,11 @@ game_menus = [
 	(quest_set_slot, "qst_oath_of_vengeance", 4, ":target"), # remember source ally faction
 	(quest_set_slot, "qst_oath_of_vengeance", 5, ":hero"), # CppCoder: remember source hero
 	
-	(assign,":count",1000000),  # choose nearest enemy capital as target faction
+	(assign,":count",10000000),  # choose nearest enemy capital as target faction
 	(assign,":target", 0),
 	(try_for_range, ":fac", kingdoms_begin, kingdoms_end),
-		(store_relation, ":dist", ":fac", "fac_player_faction"),
-		(lt, ":dist", 0), #enemies only
+		(store_relation, ":rel", ":fac", "fac_player_faction"),
+		(lt, ":rel", 0), #enemies only
 		(faction_slot_eq,":fac",slot_faction_state, sfs_active), # enemy not dead yet
 		(faction_get_slot, ":capital", ":fac", slot_faction_capital),
 		(store_distance_to_party_from_party,":dist",":mound",":capital"),  # choose nearest enemy capital for vengeance
