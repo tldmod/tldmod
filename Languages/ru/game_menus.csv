@@ -20,11 +20,11 @@ mno_build_your_own_scene| ** Создайте собственный сцена�
 menu_tutorial|^^TLD содержит много особенностей, которых нет в оригинальном M&B. Они описаны в кратком руководстве (файл PDF в папке мода). Для обучения основам игровой механики используйте модуль Native.
 menu_tutorial|^^TLD содержит много особенностей, которых нет в оригинальном M&B. Они описаны в кратком руководстве (файл PDF в папке мода). Для обучения основам игровой механики используйте модуль Native.
 ; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_tutorial_2|Сражение с щитом.
+mno_tutorial_3|Сражение без щита.
+mno_tutorial_3b_door|Следующий уровень
+mno_tutorial_4|Езда на коне или варге.
+mno_tutorial_5|Командование отрядом солдат
 mno_go_back_dot|Назад.
 mno_action_view_troop_trees|Просмотр ветвей развития войск
 mno_view_upkeep_costs|Отчёт о содержании отряда.
@@ -101,7 +101,7 @@ menu_choose_gender|^^^^^^^^^^Ваш пол?
 mno_start_male|Мужской
 mno_start_female|Женский
 mno_proc|Proceed as normal
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
+menu_start_as_one|^^^^^^^^^^Какой ты Воин?
 ; mno_start_default|Become a {s23} (Default)
 ; mno_start_up1|Become a {s21} (Easy)
 ; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
@@ -183,7 +183,7 @@ mno_leave|Продолжить.
 menu_simple_encounter|^^^^^{s2}^У вас {reg22} бойцов против {reg11} воинов противника.^^Битва разворачивается в земле, известной как {s3}{s4}.^^Каковы будут ваши приказы?
 mno_encounter_attack|{reg21?В атаку!:Приготовиться к бою}
 mno_encounter_order_attack|Приказать воинам {reg21?атаковать:сражаться с врагом} без вашего участия.
-; mno_encounter_hide|Hide from the enemy...
+mno_encounter_hide|Спрятаться от врага...
 mno_special_whip|Рвануться навстречу врагу, щелкнув Кнутом Господина.
 mno_encounter_leave|Отступить.
 mno_encounter_retreat|Отступить, оставив часть воинов прикрывать отход.
@@ -336,9 +336,9 @@ mno_start_kill_scouts|Не дать разведчикам оповестить 
 mno_go_your_way|Бросить их на произвол судьбы
 mno_defend_villagers|Защитить жителей деревни!
 mno_raid_villagers|Разграбить деревню!
-; mno_go_away|Leave and regroup for now.
+mno_go_away|Отойти и перегруппироваться.
 ; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
-; mno_attack_scout_camp|Attack the Scout Camp!
+mno_attack_scout_camp|Атаковать лагерь разведчиков!
 ; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
 ; mno_sb_defend_the_town|Board them! Destroy their fleet!
 ; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
@@ -355,10 +355,10 @@ mno_evil_war_tut_continue|Далее...
 ; mno_guardian_party_reject|Send a message you cannot join him.
 mno_guardian_party_send_word|Передать, что вы скоро будете.
 ; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
-; mno_training_continue|Begin training...
+mno_training_continue|Начать тренировку...
 ; menu_alternate_training_conclusion|{s5}
-; mno_alternate_training_retry|Try again...
-; mno_alternate_training_finish|Leave the arena...
+mno_alternate_training_retry|Попытаться снова...
+mno_alternate_training_finish|Покинуть арену...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Выберите вашу сторону и степень превосходства:
 mno_good_equal|Фракция Добра
 mno_bad_equal|Фракция Зла

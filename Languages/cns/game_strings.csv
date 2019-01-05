@@ -457,7 +457,7 @@ str_npc11_backstory_later|啊！是你！我闻到你了！我知道你来了！
 str_npc12_backstory_later|我得到命令，伙计们在这里发现的任何侵入者都要好好剥开；牙齿，指甲，头发，一切！但我有其他的渠道，我知道有趣儿的事要发生了：大头儿要发动战争啦！大头儿要向西方打啦！呆在这里什么都不干可不是我的价值！
 str_npc13_backstory_later|我在黑暗事业中扮演的角色在这里进展的很好，北方人再一次的惧怕着南方。我可以预见到伟大的胜利正在面前，而血流成河的场面留在后面。但每次胜利，我都看到对我族亲的腐蚀更近了一步，他们的内心进一步的转向了他的邪恶意志，这场面让我绝望。
 str_npc14_backstory_later|你又回来了陌生人，这可能是一个预兆。我一直在阅读水，他们变暗了。海洋会改变一个人的眼睛，教他用眼睛倾听她的语言。
-str_npc15_backstory_later|很多伟大的人都曾请求我的药剂治疗他们的疾病！甚至还有很多恋马佬（对洛汗人的贬义称呼）和白皮佬（对精灵的贬义称呼）！但我不得不再次放弃我的小屋，还有…好吧，伟大的领袖，我是不太走运，但当我们一起战斗时，你会需要我的技能哒…
+; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
 ; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
 str_npc17_backstory_later|我前几天看到了一颗非常老的松树。松树可以长得非常老。你要最终老树。但我见过一些一点都不尊重树的。你尊重树，不是么？
 str_npc1_backstory_response_1|如果你真的可以离开的话，我的确迫切需要一名精锐战士和追踪者。
@@ -1979,9 +1979,9 @@ str_cmenu_follow|陪伴
 ; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
 ; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
 ; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
-; str_woodelf_extra_info|^Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
+; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
 ; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
-; str_harad_extra_info|^Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
+; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
 ; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
 ; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
 ; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor

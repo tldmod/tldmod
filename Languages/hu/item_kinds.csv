@@ -181,7 +181,7 @@ itm_riv_shield_b|Völgyzugolyi pajzs
 itm_riv_bas_sword|Völgyzugolyi fattyúkard
 itm_riv_1h_sword|Völgyzugolyi kard
 itm_riv_riding_sword|Völgyzugolyi lovassági kard
-; itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword|Völgyzugolyi íjász kard
 itm_riv_spear|Völgyzugolyi lándzsa
 itm_riv_armor_light|Völgyzugolyi páncélzat
 itm_riv_armor_light_inf|Völgyzugolyi páncélzat
@@ -231,7 +231,7 @@ itm_gondor_lamedon_leader_helm|Lamedoni fősisak
 ; itm_blackroot_footman|Blackroot Vale Jerkin
 ; itm_blackroot_warrior|Blackroot Vale Gambeson
 ; itm_blackroot_leader|Blackroot Vale Mail
-; itm_blackroot_hood|Black Hood
+itm_blackroot_hood|Fekete csuklya
 itm_dol_hauberk|Dol Amrothi láncvért
 itm_dol_heavy_mail|Dol Amrothi nehézvért
 itm_dol_padded_coat|Dol Amrothi párnázott kabát
@@ -246,7 +246,7 @@ itm_lamedon_leader_surcoat_cloak|Lamedoni parancsnoki páncélzat
 itm_lamedon_warrior|Lamedoni harcospáncélzat
 itm_lamedon_veteran|Lamedoni veteránpáncélzat
 itm_lamedon_vet_warrior|Lamedoni veterán harcospáncélzat
-; itm_lamedon_hood|Hood
+itm_lamedon_hood|Csuklya
 itm_pinnath_archer|Pinnath Gelini íjászpáncélzat
 itm_pinnath_footman|Pinnath Gelini gyalogospáncélzat
 itm_pinnath_leader|Pinnath Gelini parancsnoki páncélzat
@@ -258,7 +258,7 @@ itm_pel_leader|Pelargiri parancsnoki páncélzat
 itm_pel_marine|Pelargiri tengerészruha
 itm_pelargir_marine_leader|Pelargiri tengerész parancsnoki ruha
 itm_pelargir_regular|Pelargiri hétköznapi ruha
-; itm_pelargir_hood|White Hood
+itm_pelargir_hood|Fehér csuklya
 itm_pelargir_helmet_light|Pelargiri sisak
 itm_pelargir_helmet_heavy|Pelargiri nehéz sisak
 itm_pelargir_greaves|Pelargiri lábszárvédő
@@ -382,8 +382,8 @@ itm_bone_cudgel|Csonthusáng
 itm_skull_club|Koponyás bunkó
 itm_orc_club_a|Ork bunkó
 itm_orc_club_b|Ork bunkó
-; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Spiky Orc Club
+itm_orc_club_c|Tüskés ork bunkó
+itm_orc_club_d|Tüskés ork bunkó
 itm_orc_sledgehammer|Ork kőtörő-kalapács
 itm_orc_simple_spear|Ork lándzsa
 itm_orc_skull_spear|Ork koponyás lándzsa
@@ -442,7 +442,7 @@ itm_m_uruk_light_a|Uruk hámpáncél
 
 itm_m_uruk_light_b|Uruk bőrpáncélzat
 
-; itm_m_uruk_light_c|Uruk Light Mail
+itm_m_uruk_light_c|Uruk könnyű páncéling
 
 ; itm_m_uruk_med_a|Uruk Heavy Leather
 
@@ -478,7 +478,7 @@ itm_moria_armor_b|Móriai mellkas- és vállvédő
 itm_moria_armor_c|Móriai ork páncéling
 itm_moria_armor_d|Móriai szögecselt bőrpáncél
 itm_moria_armor_e|Móriai ork nehéz páncéling
-; itm_moria_orc_shield_a|Moria Great Shield
+itm_moria_orc_shield_a|Móriai nagy pajzs
 itm_moria_orc_shield_b|Móriai ork pajzs
 itm_moria_orc_shield_c|Móriai ork pajzs
 itm_gundabad_armor_a|Gundabadi ork rongyok
@@ -710,13 +710,13 @@ itm_rhun_glaive|Rhûni tőrlándzsa
 
 ; itm_rhun_sword|Savage Sword
 itm_rhun_shield|Rhûni levélpajzs
-; itm_dale_light_a|Dale Militia Jacket
+itm_dale_light_a|Suhatagi nemzetőr zubbony
 
 ; itm_dale_light_b|Northmen Light Lamellar
 
 ; itm_dale_med_a|Northmen Heavy Lamellar
 
-; itm_dale_med_b|Dale Leather Armor
+itm_dale_med_b|Suhatagi bőrpáncélzat
 
 ; itm_dale_med_c|Dale Leather Over Mail
 
@@ -777,7 +777,7 @@ itm_umb_helm_d|Kalóz rabló sisak
 
 ; itm_umb_helm_f|Corsair High Helm
 
-; itm_umb_hood|Black Hood
+itm_umb_hood|Fekete csuklya
 
 itm_corsair_boots|Kalóz csizmák
 itm_umb_shield_a|Kalóz tányérpajzs
@@ -835,7 +835,7 @@ itm_dwarf_sword_a|Törp kard
 itm_dwarf_sword_c|Törp kard
 itm_dwarf_sword_d|Törp kard
 
-; itm_dwarf_battle_axe|Dwarf Battle Axe
+itm_dwarf_battle_axe|Törp csatabalta
 
 itm_dwarf_great_axe|Törp nagy balta
 
@@ -855,7 +855,7 @@ itm_dwarf_spear|Törp lándzsa
 
 itm_dwarf_spear_b|Törp pika
 
-; itm_dwarf_spear_c|Dwarf Longaxe
+itm_dwarf_spear_c|Törp hosszúbalta
 
 itm_dwarf_helm_coif|Törp sapka
 
@@ -877,7 +877,7 @@ itm_dwarf_nasal|Törp orrsisak
 
 itm_dwarf_helm_p|Törp királysisak
 
-; itm_dwarf_miner|Dwarf Light Helm
+itm_dwarf_miner|Törp könnyű sisak
 
 ; itm_north_chieftain|North Chieftain Helm
 

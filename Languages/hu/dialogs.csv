@@ -24,8 +24,8 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Szavamra, szerintem 
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Tudom. Messziről jöttem! Hobbit vagyok, {uram/hölgyem}, a Megyéből.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Ó, ő biztos az egyik drága unokatestvérem volt! Tuk Peregrin, vagy Pippin, ahogy hívják. Hobbitok vagyunk, {uram/hölgyem}, és a Megyéből jövünk, mindketten! Jó öreg Pippin, kíváncsi vagyok hogyan boldogulhat Minas Tirithben.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Ó, ő biztos az egyik drága unokatestvérem volt! Borbak Trufiádok, vagy Trufa, ahogy hívják. Hobbitok vagyunk, {uram/hölgyem}, és a Megyéből jövünk, mindketten! Jó öreg Trufa, kíváncsi vagyok hogyan boldogulhat Edorasban.
-; dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|May I ask a favour of you, {my lord/my lady}.
-; dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Of course, {s1}. What is it?
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Kérhetnék egy szívességet tőled, {my lord/my lady}?
+dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Természetesen, {s1}. Mi lenne az?
 ; dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.
 ; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|I will be passing by {s1} and will be glad to pass on this message to your cousin.
 ; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|I'm sorry, {s1}, but I do not have the time.

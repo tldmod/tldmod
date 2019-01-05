@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^你為哪一方而戰?
 mno_start_good|新紀元的黎明
 mno_start_evil|人類的黃昏
 mno_go_bback|返回
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^ 中土世界. 黑暗的陰影正在東方蔓延, ^潛伏了近一個紀元的邪惡勢力重現世間. ^中土的自由之人類是否可以再一次戰勝黑暗. ^人類, 精靈, 矮人和獸人, 各種勢力在這裡繼續角逐^^現在, 正義與邪惡的戰爭即將拉開帷幕...
 mno_go_forth|向你選擇的路前進吧...
 menu_start_game_3|^^^^^^^^選擇你的戰役:
 mno_custom_battle_scenario_1|小規模戰役, 剛鐸VS哈拉德.
@@ -359,7 +359,7 @@ mno_guardian_party_send_word|寄信 , 很快你會加入他.
 ; menu_alternate_training_conclusion|{s5}
 ; mno_alternate_training_retry|Try again...
 ; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+menu_custom_battle_choose_faction1|^^^^^^^^^^選擇你的陣營和優勢:
 mno_good_equal|正義陣營
 mno_bad_equal|邪惡陣營
 mno_replay_prev|重選之前的設置

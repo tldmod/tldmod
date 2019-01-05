@@ -1,36 +1,36 @@
-dlga_start:mutiny_pretalk_1|Eeee, {playername}. Powiemy ci coś.. ^Chłopaki nie są zadowoleni! Chcą więcej zabawy, a mniej maszerowania.
+dlga_start:mutiny_pretalk_1|Eee, {playername}. Powiemy ci coś.. ^Chłopaki nie są zadowolone! Chcą więcej rozrywki, mniej maszerowania.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Wracaj do szeregu, czerwiu! Trwa wojna, a ja jestem twoim dowódcą.
-dlga_mutiny_pretalk_2:close_window|Jak każesz, dowódco. Jak każesz...
-dlga_start:mutiny_talk_1|Dowódco. Powiemy ci coś.. Chłopaki nie są zadowoleni, ani trochę. ^Nie ma dość ludzkiego mięsa, nie ma zabawy. ^Chłopaki mówią, że nie jesteś dość dobr{y/a}, dowódco!
-dlga_mutiny_talk_1:mutiny_talk_2|Co? Bunt? ^Karą jest śmierć, czerwiu!
+dlga_mutiny_pretalk_2:close_window|Jak rozkażesz, dowódco. Jak rozkażesz...
+dlga_start:mutiny_talk_1|Dowódco. Powiemy ci coś.. Chłopaki nie są zadowolone, ani trochę. ^Mało ludzkiego mięsa, to mało zabawy. ^Chłopaki mówią, że nie jesteś wystarczająco dobr{y/a}, dowódco!
+dlga_mutiny_talk_1:mutiny_talk_2|Co? Bunt podczas wojny? ^Karą jest śmierć, czerwiu!
 dlga_mutiny_talk_2:close_window|Powiemy ci coś.. ^Chłopaki mówią, że ja będę lepszym dowódcą, gdy CIĘ ZABIJĘ!
 dlga_start:troll_introduce_1|Jakiś problem?
-dlga_start:troll_talk_1|Ty być szalony?
+dlga_start:troll_talk_1|Ty pojebany?
 dlga_troll_introduce_1:troll_goodbye|Do licha! Gadający troll?!
 dlga_troll_introduce_1:close_window|Mam konia.
 dlga_troll_talk_1:troll_talk_2|Strolluj mnie, trollu.
 dlga_troll_talk_1:close_window|Mam konia.
 dlga_troll_talk_2:troll_talk_3|Wyzwanie podjęte!^^{s4}
-dlga_troll_beaten:troll_talk_1|Kłaniam się przed twą mądrością, Wielki Trollu Mistrzu Trollowania!
+dlga_troll_beaten:troll_talk_1|Kłaniam się przed twą mądrością, Wielki Trollu, Mistrzu Trollowania!
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Witaj ponownie, {playername}!
 dlga_start:hobbit_pippin_talk_met|Witaj ponownie, {playername}!
-dlga_start:hobbit_general_talk_1|Witaj, {panie/pani}! Nazywam się Meriadoc Brandybuck ale możesz mi mówić Merry!
+dlga_start:hobbit_general_talk_1|Witaj, {panie/pani}! Nazywam się Meriadoc Brandybuck, ale możesz mi mówić Merry!
 dlga_start:hobbit_general_talk_1.1|Witaj, {panie/pani}! Nazywam się Peregrin Took ale możesz mi mówić Pippin!
 dlga_hobbit_general_talk_1:close_window|Nie mam teraz czasu.
-dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Chyba jeszcze nikogo nie spotkał{e/a}m z twego rodzaju.
+dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Mów. Chyba jeszcze nikogo nie spotkał{e/a}m z twego gatunku.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Chyba już spotkał{e/a}m kogoś takiego jak ty, w Edoras.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Chyba już spotkał{e/a}m kogoś takiego jak ty, w Minas Tirith.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Wiem. Przybyłem z daleka! Jestem Hobbitem, {panie/pani}, z Shire.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Och, to musiał być mój drogi krewny! Peregrin Took, Pippin. Jesteśmy Hobbitami, {panie/pani}, z Shire. Dobry, stary Pippin, martwię się o niego, jak sobie radzi w Minas Tirith?
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Och, to musiał być mój drogi krewny! Meriadoc Brandybuck, Merry. Jesteśmy Hobbitami, {panie/pani}, z Shire. Dobry, stary Merry, martwię się o niego, jak sobie radzi w Edoras?
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Czy mogę prosić cię o przysługę, {my lord/my lady}.
-dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Oczywiście, {s1}. Co to jest?
+dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Oczywiście, {s1}. O co chodzi?
 dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Mógłbyś dostarczyć wiadomość mojemu kuzynowi, {s1}? Jest w {s2} pod {s3} w służbie {s4}.
-dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Będę przechodził obok {s1} i z przyjemnością przekażę tę wiadomość waszemu kuzynowi.
-dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Wybacz {s1} ale nie mam teraz czasu.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Będę przejeżdżał obok {s1} i z przyjemnością przekażę tę wiadomość waszemu kuzynowi.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Wybacz {s1}, ale nie mam teraz czasu.
 dlga_hobbit_general_talk_ask_accept:close_window|Dzięki! {s1}
-dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Zrozumiałem. Wyślę zatem następną karawanę do {s1}.
+dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Rozumiem. Wyślę to zatem z następną karawaną do {s1}.
 dlga_hobbit_general_talk_3:close_window|Cóż, do zobaczenia.
 dlga_start:hobbit_merry_talk_met.1|Witaj ponownie, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Witaj ponownie, {playername}!
@@ -46,7 +46,7 @@ dlga_treebeard_introduce_3:treebeard_introduce_4|(Stwór powoli otwiera usta, uk
 dlga_treebeard_introduce_4:treebeard_introduce_5|Och, jesteś Entem! Legendy mówią o tobie i jestem zaszczyzon{y/a} mogąc cię poznać. Nie chcę się narzucać i odejdę jeśli tego sobie życzysz.
 dlga_treebeard_introduce_5:treebeard_questtalk|(Stwory stoją przez wiele minut w ciszy, podczas gdy wiatr przepływa przez ich liściaste włosy i brody. Spoglądają na siebie przez kolejny długi moment, póki jeden z nich, podobny do jarzębiny Ent, wygląda jakby miał zacząć mówić. Jednakże nie odzywa się, czekając aż ten który dotychczas z tobą rozmawiał zacznie mówić:)
 dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Jak już powiedziałem...:Hroom... Doceniamy twą uprzejmość. {reg1?To niespotykane u twojej rasy:Miło znów porozmawiać z elfami}.} Czasy nie są dobre, odkąd nasze żony zniknęły - a teraz uwolnione przez Mrocznego Lorda kreatury chcą zniszczyć nasz dom. Szukamy kogoś szybkiego ale nie pochopnego. Kogoś kto pomoże nam przedysktuować następny ruch.^Wiele band orków najeżdża las i pali nasze drzewa ognistymi strzałami - jeśli pokonasz orków i upewnisz, że nie będą zagrażać drzewom zyskasz naszą wdzięczność i staniesz naszym prawdziwym przyjacielem. Zrób to, a porozmawiamy ponownie.
-dlga_treebeard_quest_brief:close_window|Orkowie rzeczywiście są podli. Postaram się, by więcej nie szkodzili lasowi.
+dlga_treebeard_quest_brief:close_window|Orkowie rzeczywiście są podli. Dopilnuję, żeby już nigdy nie krzywdzili lasu.
 dlga_treebeard_quest_brief:treebeard_pretalk|Przepraszam. Nie mam teraz czasu.
 dlga_treebeard_questtalk:close_window|(Wódz Entów powoli otwiera usta, podobnie reszta, wydobywa bardzo głęboki dzwięk, tak że ziemia zaczyna z lekka drżeć - zdajesz sobie sprawę, że to śmiech. Stosunkowo młode drzewo Jarzębiny uderza swą wielką stopą w ziemię, doporowadzając cie niemal do upadku.)^'Spokojnie, Quickbeam, nie chcemy skrzywdzić nasze{go/j} młode{go/j} wojownicze{go/j} przyjaci{ela/ółki}. Hrrrm... Jestem drzewiec, najstarszy z Entów, i jesteśmy ci wdzięczni za pomoc... Hrrrm... Przyjmij ten oto dar, Wodę Entów.'
 dlga_treebeard_questtalk:close_window.1|(Stwory stoją w ciszy, podczas gdy wiatr przepływa przez ich liściaste włosy i brody.)
@@ -54,7 +54,7 @@ dlga_treebeard_pretalk:treebeard_talk_response|Hrooom... Co chcesz wiedzieć, m�
 dlga_treebeard_talk_response:treebeard_about_himself|Opowiedz mi coś więcej o sobie.
 dlga_treebeard_talk_response:treebeard_about_entwives|Opowiedz mi o Rzece Entów.
 dlga_treebeard_talk_response:treebeard_about_ents|Opowiedz mi o Entach.
-dlga_treebeard_talk_response:close_window|Nieważne, Do zobaczenia.
+dlga_treebeard_talk_response:close_window|Nieważne, do zobaczenia.
 dlga_treebeard_about_himself:treebeard_pretalk|(Wódz Entów wygląda uroczyście i patetycznie. Po chwili powoli mówi:)^'Nie ma pośpiechu... możemy o tym porozmawiać gdy lasy będą bezpieczne od orków.'
 dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Jestem najstarszy z mego rodzaju hmmm... Znany jestem jako Drzewiec przez niewielu śmiertelników, a Elfy zwą mnie Fangorn. Hummm... Ja, Skinbark i Leaflock jesteśmy jedynymi Entami przemierzającymi lasy przed Ciemnością. Nie jestem już tak giętki jak kiedyś... młody Quickbeam może się wyginać i kołysać, niczym smukłe drzewo na wietrze... Hummm... Gdyby nasze żony tu były...
 dlga_treebeard_about_entwives:treebeard_pretalk|(Wódz Entów nagle posmutniał, a jego głos stał się niezmierzenie głęboki.)^'Hummm... To smutna opowieść... gdy las będzie wolny od orków będziemy mogli o tym porozmawiać.'
@@ -65,8 +65,8 @@ dlga_start:close_window.2|Mmhhrmmm?
 dlga_start:close_window.3|Mmmrhrrhmm?
 dlga_start:looters_2_join|Kłaniaj się przed potęgą {s4} i służ mi!
 dlga_looters_2_join:close_window|Będziemy posłuszni, Panie.
-dlga_start:close_window.4|^^Ryk!^^{reg5?a:y}.
-dlga_start:close_window.5|^^GROWL!^^
+dlga_start:close_window.4|^^AAAARGHH!^^{reg5?a:y}.
+dlga_start:close_window.5|^^AAAARGHH!^^
 dlga_start:member_castellan_talk|Tak, {playername}? Co mogę dla ciebie zrobić?
 dlga_member_castellan_pretalk:member_castellan_talk|Coś jeszcze?
 dlga_member_castellan_talk:member_review_castle_garrison|Chcę przejrzeć garnizon zamku.

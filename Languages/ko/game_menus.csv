@@ -144,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^변경을 위해 옵션 클릭:^(경고 : 이건 
 mno_strat_tweaks_siege_reqs|공성에 필요한 힘 요구량:{s7}
 mno_strat_tweaks_siege_relax_rate|공성에 필요한 힘과 휴식 비율 : {reg1}
 mno_strat_tweaks_regen_rate|힘 회복 비율:{s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
+mno_strat_tweaks_siege_regen_limit|{reg1} 에서 진영의 체력 회복 속도가 더뎌집니다. 
 mno_strat_tweaks_influence_gain_rate|영향력 획득 비율: {s7}
 mno_strat_tweaks_rank_gain_rate|지위 획득 비율: {s7}
 mno_strat_tweaks_back|조정 메뉴로 돌아가기
@@ -284,7 +284,7 @@ mno_isengard_underground|지하 선술집에 들어가기
 mno_tirith_toplevel|꼭대기층으로 올라가기
 mno_town_leave|떠나기
 mno_town_leave_door|떠나기
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|당신은 {s2}의 깃발 아래 중심지를 공격했습니다.
 menu_disembark|내리시겠습니까?
 mno_disembark_yes|그래
 mno_disembark_no|아니
@@ -316,17 +316,17 @@ mno_explore|이 장소 탐험하기
 menu_ring_hunter_lair|^^^^당신은 어둠숲 속 반지 추적자들의 흔적을 따라갔고 {s1}에 도착했고 그들이 상자를 들고 떠나려는 것을 목격했습니다.
 mno_attack_lair|지금 그들을 공격하자
 mno_leave_bandit_lair|지금은 떠나자
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+menu_gondor_reinforcement_event|^^^^^곤도르의 봉화대에 불이 지펴졌군요,  미나스 티리스에 도움이 필요합니다!^^ 남쪽 영지의 군주들은 백색도시에 다가오는 어둠의 무리로부터 미나스 티리스를 구원하기 위해 북쪽을 향할것입니다.
 mno_gondor_reinforcement_event_close|닫기
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_gondor_beacons|당신은 곤도르의 봉화중 하나이자, 북부와 남부 곤도르에 신호를 보내기 위해 사용돼었던 {s1}을 방문했습니다.
 mno_gondor_beacons_close|떠나기
 menu_player_added_to_war_council|^^^^^전령이 말하길{s2}가 당신을 그의 전쟁 자문회에 {s24}로서 참여하길 원한다고 합니다. 당신은 이제 이 전쟁의 방식에 영향을 줄 수 있는 전략들을 제안할 수 있습니다.
 mno_player_added_to_war_council_close|닫기
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+menu_player_added_to_siege_reports|^^^^^전령이 와 말하길, 당신은 {s24}로서 {s2}가 적진을 공략하거나 되려 {s2}가 공략당할 때 보고를 받게 될 것이라고 했습니다.
 mno_player_added_to_siege_reports_close|닫기
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|^^^^^전령이 당신에게 다가와서 당신은 이제 최대 {reg55}명의 군사를 가진 {s24}로서 {s2}에게 당신을 따르도록 명령할 수 있다고 전했습니다. 
 mno_player_added_to_allow_follow_close|닫기
-; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
+menu_center_besieged_event|^^^^^전령이 당신에게 황급히 달려와 {s3}의 {s2}가 {s1}을 포위하고 있다고 보고했습니다.
 mno_center_besieged_event_close|닫기
 mno_intro_next|계속...
 mno_start_defend_caravan|캐러밴을 지키자!
@@ -347,7 +347,7 @@ mno_lord_field_ai|향상된 영주 AI: {s7}
 mno_horse_archer_field_ai|향상된 궁기병 AI: {s7}
 mno_vs_orcs_field_ai|궁수가 오크를 상대로 정확히 조준함 (오크의 머리 위를 조준하지 않음): {s7}
 mno_battlefield_animals|바르그 / 말이 아닌 동물 동료가 전투에 참여함: {s7}
-; mno_defend_refugees|Keep your eye out for raiders...
+mno_defend_refugees|침략자들을 주시한다...
 mno_attack_refugees|난민 무리를 공격한다...
 mno_leave_refugees|잠시 놔둔다...
 mno_evil_war_tut_continue|계속...
@@ -388,7 +388,7 @@ mno_pick_troops1|미션을 수행할 동료를 선택하세요,[reg0}이 선택�
 menu_pick_troops|잠입 임무에 누구를 데려갈까요? 현재 당신은 {reg0} 명을 선택했습니다. 최대 10명까지 동행할 수 있습니다.
 mno_go_forward|선택 종료 및 진행
 menu_burial_mound|당신은 {s2}의 {s1}의 봉분에 다가갔다. 그가 쓰러뜨린 적들의 망가진 무기들로 가득하다.
-mno_pay_respects|무릎꿇고 존경하기
+mno_pay_respects|무릎을 꿇고 경의를 표하기
 mno_swear_oath|배반의 맹세를 하라!
 mno_despoil|이 장소를 훼손
 mno_leave_mound|봉분 떠나기

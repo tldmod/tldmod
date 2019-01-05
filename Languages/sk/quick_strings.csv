@@ -73,30 +73,30 @@ qstr_Thighs|Stehná
 qstr_Legs|Nohy
 qstr_Rotate|Otočiť
 qstr_Close|Zavrieť
-; qstr_Faction_Side:^^Campa|Faction Side:^^Campaign Difficulty*:^^Home Theater:^^Marshall:^^Enemies:^^
-; qstr_Campaign_Difficulty_|Campaign Difficulty is based on starting faction strength, theater enemies,^ and faction troop tree & troop equipment.
+qstr_Faction_Side:^^Campa|Frakcia strana: ^ ^ Obtiažnosť kampane *: ^ ^ Domáce divadlo: ^ ^ Marshall: ^ ^ Nepriatelia: ^ ^
+qstr_Campaign_Difficulty_|Obtiažnosť kampane je založená na štartovacej sile frakcií, divadelných nepriateľoch, skupinách a jednotkách frakčných jednotiek.
 
 ; qstr_Rallies:|Rallies:
-; qstr_View_Keybinds__Press|View Keybinds (Press Insert)
+qstr_View_Keybinds__Press|Zobraziť klávesové skratky (stlačte klávesu Insert)
 
-; qstr_What_do_you_fight_fo|What do you fight for?
-; qstr_Go_Back...|Go Back...
-; qstr_Learn_about_the_diff|Learn about the different factions of Middle-Earth
+qstr_What_do_you_fight_fo|Na čo bojujete?
+qstr_Go_Back...|Vráť sa...
+qstr_Learn_about_the_diff|Zoznámte sa s rôznymi frakciami Strednej Zeme
 ; qstr_The_DAWN_of_a_New_Er|The DAWN of a New Era
 ; qstr_The_TWILIGHT_of_Man|The TWILIGHT of Man
 ; qstr_Select_your_Race?|Select your Race?
 ; qstr_Man|Man
-; qstr_Elf|Elf
+qstr_Elf|Elf
 ; qstr_Dwarf|Dwarf
-; qstr_Whom_Do_You_Serve?|Whom Do You Serve?
-; qstr_SAURON_of_Mordor_The|SAURON of Mordor, The Lord of the Rings
-; qstr_SARUMAN_of_Isengard_|SARUMAN of Isengard, The White Hand
-; qstr_an_ORC^_serving_the_|an ORC,^ serving the Lidless Eye
-; qstr_an_URUK^_the_new_bre|an URUK,^ the new breed of Orcs
-; qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
-; qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
-; qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
-; qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
+qstr_Whom_Do_You_Serve?|Kto slúži?
+qstr_SAURON_of_Mordor_The|SAURON z Mordoru, Pán prsteňov
+qstr_SARUMAN_of_Isengard_|SARUMAN z Isengard, biela ruka
+qstr_an_ORC^_serving_the_|ORC, ktorý slúži Ľudskému oku
+qstr_an_URUK^_the_new_bre|URUK, - nové plemeno orkov
+qstr_a_MAN^_subjugated_by|Člověk, podriadený Sauronom
+qstr_an_ORC^_serving_the_W|ORC, ktorý slúži bielej ruke
+qstr_an_URUK_HAI^_bred_in|URUK-HAI, ktorý sa narodil v Isengarde
+qstr_a_MAN_of_Dunland^_th|muž z Dunlandu, Západné planiny
 qstr_Click_the_center_but|Klikaj na prostredné tlačítko pre vybratie frakcie^Klikni na obrázok frakcie, pokiaľ o nej chceš vedieť viac.
 qstr_Level:_{reg3}^Health|Úroveň: {reg3}^Život: {reg4}
 qstr_Attributes|Vlastnosti
@@ -106,8 +106,8 @@ qstr_Ironflesh^Power_Stri|Valibuk^Mocný úder^Mocný vrh^Silné napnutie^Štít
 qstr_Proficiencies|Zvláštne schopnosti
 qstr_1H_Weapons^2H_Weapon|1R Zbrane^2R Zbrane^Týčové zbrane^Lukostreľba^Kušostreľba^Vrhanie
 qstr_Equipment|Vybavenie
-; qstr_The_Last_Days_Mod_Op|The Last Days Mod Options
-; qstr_War_Starts_at_Level:|War Starts at Level: 
+qstr_The_Last_Days_Mod_Op|Možnosti Last Days Mod
+qstr_War_Starts_at_Level:|Vojna začína na úrovni:
 
 
 
@@ -116,61 +116,61 @@ qstr_Equipment|Vybavenie
 
 
 
-; qstr_Restrict_Player_Equi|Restrict Player Equipment:  
-; qstr_Battle_Formations_an|Battle Formations and AI:  
-; qstr_Native|Native
-; qstr_TLD_FormAI__Original|TLD FormAI (Original)
-; qstr_TLD_New_FormAI__Beta|TLD New FormAI (Beta)
-; qstr_Advanced_Siege_AI:__|Advanced Siege AI:  
-; qstr_On|On
-; qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
-; qstr_Cutscenes:__|Cutscenes:  
-; qstr_Injuries_for_compani|Injuries for companions:  
-; qstr_Permanent_death_for_|Permanent death for lords and companions:  
-; qstr_Permanent_death_for_p|Permanent death for player (that is YOU!):  
-; qstr_Battle_morale_system|Battle morale system:  
-; qstr_Animal_ambushes:__|Animal ambushes:  
-; qstr_Fallen_rider_damage_|Fallen rider damage messages:  
-; qstr_No_Messages|No Messages
-; qstr_Player_damage_only|Player damage only
-; qstr_All_Messages|All Messages
-; qstr_Troop_Identifier_in_|Troop Identifier in Battles (Press Y during battle to show/hide):
-; qstr_Disable|Disable
-; qstr_Enable_without_Facti|Enable without Faction Names
-; qstr_Enable_with_Faction_|Enable with Faction Names
-; qstr_Simple:_Red___Enemy_|Simple: Red - Enemy / Green - Allies
-; qstr_Preferred_Camera_Mod|Preferred Camera Mode:  
+qstr_Restrict_Player_Equi|Obmedzte možnosti prehrávača:
+qstr_Battle_Formations_an|Bojové formácie a AI:
+qstr_Native|Native 
+qstr_TLD_FormAI__Original|TLD FormAI (originál)
+qstr_TLD_New_FormAI__Beta|TLD FormAI (Beta)
+qstr_Advanced_Siege_AI:__|Rozšírené obliehanie AI:
+qstr_On|na
+qstr_Town_NPCs_Always_Acc|Mestské NPC vždy dostupné z menu:
+qstr_Cutscenes:__|filmové scény:
+qstr_Injuries_for_compani|Zranenia pre spoločníkov:
+qstr_Permanent_death_for_|Trvalá smrť pre pánov a spoločníkov:
+qstr_Permanent_death_for_p|Trvalá smrť hráča (to jsi ty!): 
+qstr_Battle_morale_system|Systém bojovej morálky
+qstr_Animal_ambushes:__|Zvieracie zálohy:
+qstr_Fallen_rider_damage_|Správa o poškodení jazdca:
+qstr_No_Messages|Žiadne správy
+qstr_Player_damage_only|Iba poškodenie hráča
+qstr_All_Messages|Všetky správy
+qstr_Troop_Identifier_in_|Identifikátor vojakov v bitkách (stlačte tlačidlo Y počas bitky na zobrazenie / skrytie):
+qstr_Disable|zakázať
+qstr_Enable_without_Facti|Povoliť bez názvov Frakce 
+qstr_Enable_with_Faction_|Povoliť názvy Frakci 
+qstr_Simple:_Red___Enemy_|Jednoduché: Červené - Nepriateľ / Zelená - Spojenci
+qstr_Preferred_Camera_Mod|Preferovaný režim Kamery 
 qstr_Default_Camera|Základná kamera
 qstr_Free_Mode_Custom_Cam|Voľný režim vlastnej kamery 
-; qstr_Fixed_Over_The_Shoul|Fixed Over-The-Shoulder Camera
-; qstr_Prevent_AI_from_taki|Prevent AI from taking defensive:  
-; qstr_Brighter_Nights:__|Brighter Nights:  
-; qstr_Done|Done
-; qstr_Gameplay_Tweaks|Gameplay Tweaks
-; qstr_Beta_Formations_Twea|Beta Formations Tweaks
-; qstr_War_Will_Start_at_Le|War Will Start at Level {reg0}
-; qstr_Troop_Tree|Troop Tree
-; qstr__Click_on_a_unit_for|(Click on a unit for details)
+qstr_Fixed_Over_The_Shoul|Pevná kamera cez rameno
+qstr_Prevent_AI_from_taki|Zabráňte útoku AI:
+qstr_Brighter_Nights:__|Jasnejšie noci:
+qstr_Done|hotový
+qstr_Gameplay_Tweaks|Vylepšenia hry
+qstr_Beta_Formations_Twea|Beta vylepšenia formaci 
+qstr_War_Will_Start_at_Le|Vojna začne na úrovni {reg0}
+qstr_Troop_Tree|Vojenský strom
+qstr__Click_on_a_unit_for|(Podrobnosti získate kliknutím na jednotku)
 
 
-; qstr_Weapons|Weapons
-; qstr_Armors|Armors
-; qstr_Others|Others
+qstr_Weapons|Zbraně 
+qstr_Armors|brnenie
+qstr_Others|ostatné
 
-; qstr_F4___Complex_formati|F4 - Complex formations
-; qstr_F7___Memorize_div._p|F7 - Memorize div. placement
-; qstr_F8___Default_divisio|F8 - Default division placement
-; qstr_F4___Ranks|F4 - Ranks
-; qstr_F5___Shield_Wall|F5 - Shield Wall
-; qstr_F6___Wedge|F6 - Wedge
-; qstr_F7___Square|F7 - Square
-; qstr_F8___No_Formation|F8 - No Formation
-; qstr_Extended_Formations_|Extended Formations and AI Options
-; qstr_Put_player_in_divisi|Put player in division: 
+qstr_F4___Complex_formati|F4 - Komplexné formácie
+qstr_F7___Memorize_div._p|F7 - Pamätaj div. umiestnenia
+qstr_F8___Default_divisio|F8 - Predvolené umiestnenie rozdelenia
+qstr_F4___Ranks|F4 - hodnosti
+qstr_F5___Shield_Wall|F5 - Štítová stena
+qstr_F6___Wedge|F6 - Klin
+qstr_F7___Square|F7 - štvorcové
+qstr_F8___No_Formation|F8 - Bez formácie
+qstr_Extended_Formations_|Rozšírené formácie a možnosti AI
+qstr_Put_player_in_divisi|Dajte hráča do divízie:
 qstr_None|Nič
-; qstr_Army_rotates_to_face|Army rotates to face enemy center: 
-; qstr_Prevent_AI_from_takin|Prevent AI from taking defensive: 
-; qstr_AI_Controls_Troops_W|AI Controls Troops When Player is KO'd: 
+qstr_Army_rotates_to_face|Armáda sa otáča tvárou v tvár nepriateľskému stredu:
+qstr_Prevent_AI_from_takin|Zabráňte útoku AI:
+qstr_AI_Controls_Troops_W|AI kontroluje vojakov, keď je hráč KO'd:
 qstr_You_gained_{reg0}_Re|Získal si {reg0} Bodov Zásob z {s0}.
 qstr_You_lost_{reg0}_Reso|Stratil si {reg0} Bodov Zásob z {s0}.
 qstr_{s24}:|{s24}:
@@ -229,7 +229,7 @@ qstr_+1_to_Strength|+1 k Sile
 qstr_+1_to_Agility|+1 k Pohyblivosti
 qstr_+1_to_Leadership|+1 k Vodcovstvu
 qstr_+1_to_Power_Draw|+1 k Silnému napnutiu
-; qstr_Turns_nature_to_your|Turns nature to your side (effect scales with Wildcraft)
+qstr_Turns_nature_to_your|Otočí prírodu na svoju stranu (efektívne váhy so systémom Wildcraft)
 qstr_+1_to_Trainer|+1 k Trénerovi
 qstr_Recruits_Tribal_Orcs|Najať Klanových ohyzdov
 qstr_rally|vyburcovať
@@ -237,7 +237,7 @@ qstr_rallies|inšpiruje
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} v boji
 qstr_+1_to_Charisma|+1 k Charisme
 qstr_+1_to_Surgery|+1 k Chirurgii
-; qstr_+1_to_Wildcraft|+1 to Wildcraft
+qstr_+1_to_Wildcraft|+1 na Wildcraft
 qstr_+1_to_Ironflesh|+1 k Valibukovi
 qstr_+1_to_Prisoner_Mgmt|+1 k Väzneniu
 qstr_+2_to_Crafting|+2 k Výrobe
@@ -248,7 +248,7 @@ qstr_+{reg1}_to_Party_Mor|+{reg1} k Morálke družiny
 qstr_Do_you_want_to_disem|Chceš vystúpiť?
 qstr_Move_here|Poď sem
 qstr_View_notes|Prezrieť si poznámky
-; qstr_Looted_your_items|Looted your items
+qstr_Looted_your_items|Previedli svoje položky
 qstr_nothing|nič
 qstr_Good|Dobrý
 qstr_Med|Stredný
@@ -266,15 +266,15 @@ qstr_near_the_Great_East_|neďaleko Veľkej Východnej Cesty, dnes už starej a 
 qstr_near_what_is_left_of|neďaleko pozostatku Starej Lesnej Cesty, pradávnej trpasličiej cesty, ktorá viedla skrz hustý les
 qstr_close_to_the_Hand_sh|neďaleko Sarumanovho znaku v podobe ruky, ktorý ukazuje smerom k veži Orthanc
 qstr_in_sight_of_the_maje|na dohľad majestátnych Mestských Hradbieb Minas Tirith, Bieleho Mesta
-; qstr_in_sight_of_Edoras_t|in sight of Edoras, the capital of Rohan
-; qstr_in_sight_of_the_Horn|in sight of the Hornburg, the great fortress of Rohan
-; qstr_in_sight_of_Dol_Amro|in sight of Dol Amroth, the seat of the Princes of Belfalas
-; qstr_in_sight_of_the_Mora|in sight of the Morannon, the Black Gate of Mordor
-; qstr_in_sight_of_Dol_Guld|in sight of Dol Guldur, Sauron's northern fortress
-; qstr_on_the_green_pasture|on the green pastures and many-flowered meadows surrounding Beorn's House
-; qstr_on_the_shores_of_Lak|on the shores of Lake Mirrormere, near the East Gate of Moria
-; qstr_on_the_shores_of_the|on the shores of the Long Lake, in sight of Esgaroth, the Laketown
-; qstr_near_the_coast_of_Go|near the coast of Gondor. You can hear the distant sound of the waves and the cries of the seagulls.
+qstr_in_sight_of_Edoras_t|v pohľade na Edoras, hlavné mesto Rohan
+qstr_in_sight_of_the_Horn|pri pohľade na Hornburg, veľkú pevnosť Rohan
+qstr_in_sight_of_Dol_Amro|v očiach Dol Amroth, sídla princov Belfalas
+qstr_in_sight_of_the_Mora|v pohľade na Morannon, Čiernu bránu Mordoru
+qstr_in_sight_of_Dol_Guld|v očiach Dol Guldur, severnej pevnosti Sauron
+qstr_on_the_green_pasture|na zelených pasienkoch a mnohých kvetinových lúkach obklopujúcich Beornov dom
+qstr_on_the_shores_of_Lak|na brehoch jazera Mirrormere, v blízkosti východnej brány Moria
+qstr_on_the_shores_of_the|na brehoch dlhého jazera, pri pohľade na Esgaroth, Laketown
+qstr_near_the_coast_of_Go|v blízkosti pobrežia Gondoru. Môžete počuť vzdialený zvuk vln a výkriky čajok.
 qstr_in_the_outskirts_of_|na predmestiach Osgilliathu, bývalého hlavného mesta Gondoru
 qstr_in_sight_of_the_entr|na dohľad k vstupu do Ereboru, trpasličej pevnosti
 qstr_in_sight_of_the_dark|na dohľad od temnej veže Orthanc
@@ -447,12 +447,12 @@ qstr_Poor|Chudobný
 qstr_Average|Priemerný
 qstr_Rich|Bohatý
 qstr_Very_Rich|Veľmi bohatý
-; qstr_Strength|Strength
-; qstr_Agility|Agility
-; qstr_Intelligence|Intelligence
-; qstr_Charisma|Charisma
-; qstr_You_ve_gained_{s6}_f|You've gained {s6} from gaining {s7}
-; qstr_You_ve_lost_{s6}_fro|You've lost {s6} from losing {s7}
+qstr_Strength|sila 
+qstr_Agility|obratnosť
+qstr_Intelligence|inteligence 
+qstr_Charisma|charizma
+qstr_You_ve_gained_{s6}_f|Získali ste {s6} z získania {s7}
+qstr_You_ve_lost_{s6}_fro|Ztratili ste {s6} zo straty {s7}
 qstr_{s50}_Caves|{s50} Jaskyne
 qstr_{s50}_Mines|{s50} Bane
 qstr_{s50}_Woods|{s50} Lesy
@@ -572,17 +572,17 @@ qstr_Noone..._oppossssses|Nikto... kto odporujeeee... Barad Duru... prežijeeee!
 qstr_All..._must..._submi|Všetci.... sa musia... podrobiť... a... slúžiť...
 qstr_I_serve_the_Eye!|Slúžim Oku!
 qstr_I_shall_serve_the_Ey|Musím slúžiť oku!
-; qstr_Go_to_{s1}_and_speak|Go to {s1} and speak with {s9}.
-; qstr_The_Remnant_Forces_o|The Remnant Forces of {s22} have gathered to reinforce the {s15} theater!
-; qstr_The_strength_of_the_|The strength of the remaining allied factions of the {s15} theater has increased
-; qstr_{s30}_reinforced_by_|{s30} reinforced by {reg65} fac str
+qstr_Go_to_{s1}_and_speak|Prejdite na stránku {s1} a hovorte s {s9}.
+qstr_The_Remnant_Forces_o|Zvyšné sily {s22} sa zhromaždili na posilnenie divadla {s15}!
+qstr_The_strength_of_the_|Sila zostávajúcich spojeneckých frakcií {s15} divadla sa zvýšila
+qstr_{s30}_reinforced_by_|{s30} zosilnené {reg 65} fac str
 qstr_{s1}_has_been_besieg|{s1} je obliehané {s2}om z {s3}u.
 qstr_The_forces_of_{s2}_m|Vojská {s2}u pochodujú do {s15}u!
 qstr_Rohan_capital_moved_|Rohanské hlavné mesto už nie je Edoras, ale Helmov žľab!
-; qstr_Gondor_capital_moved|Gondor capital moved from Minas Tirith to Dol Amroth!
-; qstr_Dale_capital_moved_f|Dale capital moved from Dale to Esgaroth!
-; qstr_Gundabad_capital_mov|Gundabad capital moved from Gundabad to Goblin Town!
-; qstr_The_hosts_of_{s2}_re|The hosts of {s2} retreat back to their homes!
+qstr_Gondor_capital_moved|Gondor kapitál prešiel z Minas Tirith do Dol Amroth!
+qstr_Dale_capital_moved_f|Dale kapitál sa presťahoval z Dale do Esgaroth!
+qstr_Gundabad_capital_mov|Gundabad kapitál sa presunul z Gundabadu do Gobliní věže 
+qstr_The_hosts_of_{s2}_re|Hostia {s2} ustupujú späť do svojich domovov!
 qstr____Ruins_of_{s1}___|Ruiny {s1}
 qstr_ranks|línie
 qstr_shield_wall|štítová hradba
@@ -598,29 +598,29 @@ qstr___Not_enough_archers|Nedostatok lukostrelcov pre vytvorenie formácie {s1},
 qstr___Infantry_formation|Formácia pechoty zrušená.
 qstr___Cavalry_formation_|Formácia kavalérie zrušená.
 qstr___Archer_formation_d|Formácia lukostrelcov zrušená.
-; qstr_Division_{reg1}_{s2}|Division {reg1} {s2} forming {s1}.
-; qstr_Not_enough_troops_in|Not enough troops in division {reg1} {s2} to form {s1}.
-; qstr_Division_{reg1}_{s2}_|Division {reg1} {s2} is an {s3} division and cannot form {s1}.
-; qstr_{s1}:_infantry_forma|{s1}: infantry formation disassembled.
-; qstr_{s1}:_archer_formati|{s1}: archer formation disassembled.
-; qstr_{s1}:_skirmisher_for|{s1}: skirmisher formation disassembled.
-; qstr_{s1}:_cavalry_format|{s1}: cavalry formation disassembled.
-; qstr_{s1}:_formation_disa|{s1}: formation disassembled.
-; qstr_Cavalry_formation_di|Cavalry formation disassembled.
-; qstr_The_placement_of_{s1|The placement of {s1} division {reg0} memorized.
-; qstr_The_placement_of_{s1}|The placement of {s1} division {reg0} set to default.
-; qstr_Your_party_s_tactica|Your party's tactical skill limits how far away you can deploy your troops!
-; qstr_...and_attack_enemy_|...and attack enemy {s1} division!
-; qstr_{s2}:_returning_afte|{s2}: returning after destroying enemy {s1} division.
-; qstr_infantry|infantry
-; qstr_archer|archer
-; qstr_cavalry|cavalry
+qstr_Division_{reg1}_{s2}|Divízia {reg1} {s2} tvorí {s1}.
+qstr_Not_enough_troops_in|Nie je dostatok vojsk v divízii {reg1} {s2} na vytvorenie {s1}.
+qstr_Division_{reg1}_{s2}_|Divízia {reg1} {s2} je divízia {s3} a nemôže tvoriť {s1}.
+qstr_{s1}:_infantry_forma|{s1}: rozmiestnenie pechoty.
+qstr_{s1}:_archer_formati|{s1}: demontáž lukostrelca.
+qstr_{s1}:_skirmisher_for|{s1}: rozobratie formácie skirmisher.
+qstr_{s1}:_cavalry_format|{s1}: rozloženie kavalérie.
+qstr_{s1}:_formation_disa|{s1}: rozloženie zostavy.
+qstr_Cavalry_formation_di|Formácia kavalérie bola rozobratá.
+qstr_The_placement_of_{s1|Umiestnenie {s1} divízie {reg0} bolo uložené do pamäte.
+qstr_The_placement_of_{s1}|Umiestnenie {s1} divízie {reg0} je nastavené na predvolené.
+qstr_Your_party_s_tactica|Taktická zručnosť vašej strany obmedzuje, ako ďaleko môžete nasadiť svoje jednotky!
+qstr_...and_attack_enemy_|... a napadnúť nepriateľské {s1} divízie!
+qstr_{s2}:_returning_afte|{s2}: návrat po zničení nepriateľskej {s1} divízie.
+qstr_infantry|pechota
+qstr_archer|lukostrelec
+qstr_cavalry|kavalérie
 ; qstr_polearm|polearm
 ; qstr_skirmisher|skirmisher
-; qstr_mounted_archer|mounted archer
-; qstr_support|support
-; qstr_bodyguard|bodyguard
-; qstr_undetermined_type_of|undetermined type of
+qstr_mounted_archer|montovaný lukostrelec
+qstr_support|podpora
+qstr_bodyguard|osobný strážca
+qstr_undetermined_type_of|neurčitý typ
 
 qstr_{s1}_has_fled_the_ba|{s1} utiekol z boja!
 qstr_Your_troops_are_at_{|Tvoje jednotky sú na {reg1}% jednoty (+{reg3}% bonus), nepriateľ na {reg2}%!
@@ -634,43 +634,43 @@ qstr_Your_troops_flee_in_|Tvoje jednotky utekajú z boja!
 qstr_Many_of_your_troops_|Väčšina tvojich jednotiek uteká z boja.
 qstr_Some_of_your_troops_|Niekoľko tvojich jednotiek uteká z boja.
 qstr_A_few_of_your_troops|Malá časť tvojích jednotiek uteká z boja.
-; qstr_Gained_permanent_+1_to_P|Gained permanent +1 to Pathfinding.
-; qstr_Gained_permanent_+1_to_S|Gained permanent +1 to Spotting.
-; qstr_{s11}_recovered_from|{s11} recovered from a serious wound.
+qstr_Gained_permanent_+1_to_P|Získal trvalé hodnotenie +1 pre Hľadanie cesty. 
+qstr_Gained_permanent_+1_to_S|Získal +1 pre bodovanie.
+qstr_{s11}_recovered_from|{s11} sa zotavil zo závažnej rany.
 qstr_Volunteers|Dobrovoľníci
-; qstr_Reserves|Reserves
-; qstr_have_taken_measure_o|have taken measure of your faction's current strength and has grown bolder.
-; qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
-; qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
-; qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
-; qstr_Something_wrong_not_|Something wrong, not enough troops to remove
-; qstr_Raiders|Raiders
-; qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
-; qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
-; qstr_loses_Faction_Strength_|loses Faction Strength due to the your success at the sea.
-; qstr_You_spent_{reg67}_of|You spent {reg67} of your influence with {s1}, with {reg66} remaining.
+qstr_Reserves|rezervy
+qstr_have_taken_measure_o|vzali si súčasnú silu vašej frakcie a stali sa odvážnejšou.
+qstr_loses_Faction_Streng|stráca silu frakcie, pretože dodávky boli narušené.
+qstr_loses_Faction_Strengt|stráca silu frakcie kvôli zničeniu ich tábora.
+qstr_gains_Faction_Streng|získava silu frakcie ako správy o vašom víťazstve.
+qstr_Something_wrong_not_|Niečo zle, nie je dostatok vojakov na odstránenie
+qstr_Raiders|nájazdníkov
+qstr_have_won_the_sea_bat|vyhrali morskú bitku, demoralizovali svoje jednotky. Nepriateľ môže využiť túto porážku a útok častejšie.
+qstr_loses_Faction_Strength|stráca silu frakcie v dôsledku ničivého náletu.
+qstr_loses_Faction_Strength_|stráca silu frakcie kvôli vášmu úspechu na mori.
+qstr_You_spent_{reg67}_of|Strávil si {reg 67} svojho vplyvu s {s1}, pričom zostal {reg 66}.
 qstr_No_Troops_Left.|Neostávajú žiadne jednotky.
-; qstr_avoid_melee|avoid melee
-; qstr_stand_and_fight|stand and fight
+qstr_avoid_melee|vyhnúť sa bitky na blízko 
+qstr_stand_and_fight|postaviť sa a bojovať
 qstr_Everyone|Všetci
-; qstr_Shield___{reg31}_|Shield (-{reg31})
+qstr_Shield___{reg31}_|Štít (- {reg 31})
 ; qstr_Power_Draw___{reg31}|Power Draw (-{reg31})
-; qstr_Riding___{reg31}_|Riding (-{reg31})
-; qstr_Horse_Archery___{reg|Horse Archery (-{reg31})
+qstr_Riding___{reg31}_|Jazda na koni (- {reg 31})
+qstr_Horse_Archery___{reg|koňský lukostrelec (- {reg31})
 ; qstr_Athletics___{reg31}_|Athletics (-{reg31})
-; qstr_No_Skill_Penalty_Ass|No Skill Penalty Assigned
-; qstr_Inventory|Inventory
-; qstr_Show_stats|Show stats
-; qstr_Show_item_details__|Show item details  
-; qstr_Troop_detail|Troop detail
+qstr_No_Skill_Penalty_Ass|Nie je priradené žiadne trestné postihnutie
+qstr_Inventory|inventár
+qstr_Show_stats|Zobraziť štatistiky
+qstr_Show_item_details__|Zobraziť podrobnosti o položke
+qstr_Troop_detail|Detail o vojsku 
 ; qstr_{s1}^|{s1}^
-; qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
+qstr_{s1}Level:_{reg1}^|{s1} Úroveň: {reg1} ^
 ; qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
-; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
+qstr_{s1}Atributes:_^___S|{s1} Atribúty: ^ Sila: ^
 ; qstr_{s2}^{reg1}^|{s2}^{reg1}^
 ; qstr_{s1}___Agility:|{s1}   Agility:
 ; qstr_{s2}{reg1}|{s2}{reg1}
-; qstr_{s1}Main_skills:_^|{s1}Main skills: ^
+qstr_{s1}Main_skills:_^|{s1} Hlavné zručnosti: ^
 ; qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
 ; qstr_{s2}{reg1}^|{s2}{reg1}^
 ; qstr_{s1}___Athletics:^|{s1}   Athletics:^

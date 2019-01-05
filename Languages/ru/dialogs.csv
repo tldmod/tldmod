@@ -26,17 +26,17 @@ dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|О, должно б�
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|О, должно быть, это мой дорогой кузен! Мериадок Брендибак, или Мерри, как мы его зовем. Мы хоббиты, {господин/госпожа}, и мы прибыли из Шира, мы оба! Старый добрый Мерри, интересно, как он поживает там, в Эдорасе?
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Могу я вас попросить об услуге, {мой господин/моя леди}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Разумеется, {s1}. Говорите.
-; dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.
-; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|I will be passing by {s1} and will be glad to pass on this message to your cousin.
-; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|I'm sorry, {s1}, but I do not have the time.
-; dlga_hobbit_general_talk_ask_accept:close_window|Thanks! {s1}
-; dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|I understand. I'll send it to the next caravan to {s1} then.
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Не мог бы ты передать сообщение моему кузену?, {s1}? Он находится в {s2}, в {s3}, на службе у {s4}.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Я буду проезжать мимо {s1} и буду рад передать сообщение вашему кузену.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Прости, {s1}, но у меня нет времени.
+dlga_hobbit_general_talk_ask_accept:close_window|Спасибо, {s1}!
+dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Я понимаю. Тогда я отправлю его следующим караваном в {s1}.
 dlga_hobbit_general_talk_3:close_window|Хорошо, до встречи.
 dlga_start:hobbit_merry_talk_met.1|С возвращением, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|С возвращением, {playername}!
-; dlga_hobbit_merry_talk_met:hobbit_deliver_message|Hello, messer Merry. I have a message here from your cousin, Pippin, in Minas Tirith.
-; dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Hello, messer Pippin. I have a message here from your cousin, Merry, in Edoras.
-; dlga_hobbit_deliver_message:close_window|Thank you, {playername}. It was good of you to bring this to me.
+dlga_hobbit_merry_talk_met:hobbit_deliver_message|Здравствуйте, сир Мерри. У меня сообщение от твоего кузена Пиппина из Минас-Тирита.
+dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Здравствуйте, сир Пиппин. У меня сообщение от твоего кузена Мерри из Эдораса.
+dlga_hobbit_deliver_message:close_window|Спасибо, {playername}. Хорошо, что ты принес это мне.
 dlga_hobbit_merry_talk_met:close_window|Здравствуйте, господин Мерри.
 dlga_hobbit_pippin_talk_met:close_window|Здравствуйте, господин Пиппин.
 dlga_start:treebeard_introduce_1|(Вы обнаруживаете, что смотрите на удивительнейшее создание. Оно очень высокое и с негнущимися конечностями, его кожа похожа на древесную кору, а вместо волос - листья. Местами его покрывает мох. Покуда же вы обращаете внимание только на его впалые глаза. Они осматривают вас медленно и серьёзно, но очень умно и проницательно. Кажется, они коричневые, с озорным зелёным огоньком, как будто за ними скрывается нечто необъятное, исполненное памяти веков и долгих, медленных, спокойных размышлений. Но внешне глаза искрятся не прошлым, а настоящим... подобно игре солнечных бликов в кроне большого дерева или на волнах очень глубокого озера)
@@ -66,7 +66,7 @@ dlga_start:close_window.3|Mммрхррхмм?
 dlga_start:looters_2_join|Склонитесь перед властью Кнута Господина и служите мне!
 dlga_looters_2_join:close_window|Мы подчиняемся, госпо{дин/жа}.
 dlga_start:close_window.4|^^ГРРРРР!^^
-; dlga_start:close_window.5|^^GROWL!^^\t\t\t\t\t\t\t\t\t
+dlga_start:close_window.5|^^ГРРРРР!^^\t\t\t\t\t\t\t\t\t
 dlga_start:member_castellan_talk|Да, {playername}? Чем могу помочь?
 dlga_member_castellan_pretalk:member_castellan_talk|Еще что-нибудь?
 dlga_member_castellan_talk:member_review_castle_garrison|Я хочу осмотреть гарнизон замка.
@@ -103,7 +103,7 @@ dlga_member_question_2:member_health|Как ваше здоровье?
 dlga_member_question_2:member_background_recap|Расскажите снова о себе.
 dlga_member_background_recap_3:do_member_trade|Вскоре после этого я присоединился к вам.
 dlga_do_member_view_char:member_talk|Еще что-нибудь?
-dlga_start:close_window.6|Можешь уйти в любое время.
+dlga_start:close_window.6|Давай уйдем, когда ты будешь готов.
 dlga_start:close_window.7|Пожалуйста, больше не тратьте моё время сегодня. Возможно, мы увидимся позже.
 dlga_companion_recruit_signup_response:close_window|Сожалею, я не могу принять в свой отряд первого встречного.
 dlga_companion_recruit_rank:close_window|Кажется, вы не заслужили расположения моего народа, {playername}. Ваш ранг - {s29}, а должен быть {s24}, чтобы я присоединился к вам [нужно ещё {reg3} очков ранга].^Возвращайтесь снова, когда будете лучше подготовлены.
@@ -208,7 +208,7 @@ dlga_lord_capture_troll_completed_two_trolls_thankyou_refuse:lord_pretalk|Как
 dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_pretalk|Ты осмеливаешься просить бронированного тролля, {playername}, под своё командование? Это немалая просьба. Но ты способный слуга, и Мы понимаем твоё желание. Нам это нравится. Ты получишь награду.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_raise:lord_capture_troll_completed_two_trolls_thankyou|Как смеешь ты просить для себя большего, чем Мы задумали в Наших великих планах? {playername}, ныне ты сослужил{/а} изрядную службу, но не испытывай Наше терпение в дальнейшем.
 dlga_lord_capture_troll_completed_one_troll:close_window|Превосходно, {playername}. Ты сам{ый/ая} верн{ый/ая} и полезн{ый/ая} из слуг. Этот тролль пригодится для Наших целей. Теперь он будет отправлен в подземелья!
-dlga_lord_start:close_window.1|Когда-то давно Мы попросили тебя добыть живого тролля. Но Нам следовало бы узнать всё заранее. Как могли Мы ожидать, что кто-то вроде тебя, {playername}, сможет принять вызов! Мой слуга оказался недостаточно обученным и верным.
+dlga_lord_start:close_window.1|Когда-то давно я попросил тебя добыть живого тролля. Но я должен был догадаться. Как мы могли ожидать, что кто-то вроде тебя, {playername}, сможет принять вызов?! Мой слуга оказался недостаточно обученным и верным.
 dlga_lord_start:lord_generic_mission_completed.1|Известия о твоих достижениях в укрощении диких троллей достигли меня. {s12} теперь имеет одной заботой меньше, благодаря тебе, {playername}.
 dlga_lord_start:lord_generic_mission_completed.2|Наши разведчики недалеко от {s12} рассказали о твоём успехе. Это отучит их шпионить за нами.^^Уничтожение этого лагеря определённо остановит продвижение наших врагов.
 ; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12}'s camp saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
@@ -230,15 +230,15 @@ dlga_lord_start:lord_follow_spy_failed|И вправду, {playername}, ты с�
 dlga_lord_follow_spy_half_completed:lord_pretalk|Я приложил{/а} все усилия, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Благодарю, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Хм. Как вам будет угодно, {s65}.
-; dlga_lord_start:lord_generic_mission_completed.7|I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.
-; dlga_lord_start:lord_defend_refugees_failed|{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...
-; dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Forgive me, {s65}, I was unable to defend them.
-; dlga_lord_defend_refugees_failed_1a:lord_pretalk|It is the innocent that suffer the most in wars. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
-; dlga_lord_start:lord_defend_refugees_half_completed|I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
-; dlga_lord_defend_refugees_half_completed:lord_pretalk|I will be more prepared next time, my lord. 
-; dlga_lord_start:lord_generic_mission_completed.8|I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.
-; dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?
-; dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|They were slippery, master. I was unable to track them down.
+dlga_lord_start:lord_generic_mission_completed.7|Я получил известия о том, что все беженцы были сопровождены в безопасности. Мы благодарим тебя {playername} за твою помощь. В этой войне больше всего страдают невинные.
+dlga_lord_start:lord_defend_refugees_failed|{playername}, до меня дошли известия о том, что все беженцы были перехвачены налетчиками и убиты. Это очень печально...
+dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Простите меня, {s65}, я не смог их защитить.
+dlga_lord_defend_refugees_failed_1a:lord_pretalk|Именно невинные люди страдают в войнах больше всего. В будущем, возможно, будет больше групп беженцев, {playername}. Я надеюсь, что в следующий раз ты будешь более подготовлен.
+dlga_lord_start:lord_defend_refugees_half_completed|До меня дошли известия о том, что только {reg17} группы беженцев достигли места назначения . Это прискорбно, но такова цена этой войны. В будущем, возможно, этих беженцев будет больше, {playername}. Я надеюсь, что в следующий раз ты будешь более подготовлен.
+dlga_lord_defend_refugees_half_completed:lord_pretalk|В следующий раз я буду более подготовленным, милорд.
+dlga_lord_start:lord_generic_mission_completed.8|До меня дошли известия о том, что все беженцы были убиты, и что скоро прибудут поезда с заключенными... Ты хорошо справился, {playername}. Это только начало, довольно скоро мы будем править этими землями.
+dlga_lord_start:lord_hunt_refugees_failed|{playername}, наши шпионы рассказали нам, что ты не смог перехватить {reg1} группы беженцев . Они были слабы и медленно двигались, но ты все равно не справился. Какая от тебя польза?
+dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Они были слишком юркими, хозяин. Я не смог их выследить.
 ; dlga_lord_hunt_refugees_failed_1:lord_pretalk|Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.
 dlga_lord_start:lord_generic_mission_completed.9|Будь я проклят, ты сделал{/а} это, {playername}! Все рабы возвращены и готовы к сбору урожая. Ты полностью отработал{/а} свою награду. Вот, бери, с моими наилучшими пожеланиями.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}, я с нетерпением ждал моих рабов, но ты их не вернул{/а}. Объяснись! Тебя обманули тупые животные, или ты настолько неумел{ый/ая}?
@@ -297,7 +297,7 @@ dlga_lord_talk:lord_request_mission_ask|Есть ли у вас поручени
 ; dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|What will you do now?
 ; dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.
 ; dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, I wish to help {s4} people avenge Balin and his company.
-; dlga_dwarf_lord_book_give_i:lord_pretalk|I wish you good luck with that.
+dlga_dwarf_lord_book_give_i:lord_pretalk|Желаю тебе удачи в этом деле.
 ; dlga_dwarf_lord_avenge:close_window|Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.
 dlga_lord_talk:find_lost_spears_permission|Господин, я хочу войти в подземелья Одинокой горы для поисков потерянных копий короля Бладортина.
 dlga_find_lost_spears_permission:lord_pretalk|Я уже дал тебе разрешение, {playername}.

@@ -24,7 +24,7 @@ mno_tutorial_2|Tutoriál #2: Boj se štítem. {s2}
 mno_tutorial_3|Tutoriál #3: Boj bez štítu. {s3}
 mno_tutorial_3b_door|další úroveň
 mno_tutorial_4|Tutoriál #4: Řízení koně nebo vrrka. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_tutorial_5|Tutoriál #5: Ovládání skupinky vojáků. {s5}
 mno_go_back_dot|Jdi zpět.
 mno_action_view_troop_trees|přehled stromu jednotek
 mno_view_upkeep_costs|Zobrazit náklady družiny.
@@ -126,8 +126,8 @@ mno_game_options_death|Velitele vsech frakci a spolecnici mohou trvale zemrit: {
 mno_game_options_death2|Hrac (TY!) muze trvale umrit: {s7}.
 mno_game_options_morale|System bitevni moralky: {s7}
 mno_game_options_animal_ambushes|Divoka zvirata: {s7}
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
+mno_game_options_horse_ko|Zpráva o zranění upadnutého jezdce {s7}
+mno_game_options_bright_nights|Světlejší noci: {s7}.
 mno_game_options_camera_pref|Preferovaný mód kamery: {s7}.
 mno_game_options_tweaks|Upravy hratelnosti...
 mno_game_options_back|Zpet do taboroveho menu.
@@ -144,9 +144,9 @@ menu_camp_strat_tweaks|^^^^^^^^Klikni na moznost k prepnuti:^(varovani: tohle js
 mno_strat_tweaks_siege_reqs|Pozadovana sila k dobyvani: {s7}
 mno_strat_tweaks_siege_relax_rate|Rychlost snizovani pozadavku na silu pro dobyvani: {reg1}
 mno_strat_tweaks_regen_rate|Rychlost obnovy sily frakce: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
-; mno_strat_tweaks_influence_gain_rate|Influence gain rate: {s7}
-; mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
+mno_strat_tweaks_siege_regen_limit|Síla frakce se regeneruje pomaleji v: {reg1}
+mno_strat_tweaks_influence_gain_rate|Nárůst vlivu: {s7}
+mno_strat_tweaks_rank_gain_rate|Nárůst ůrovně: {s7}
 mno_strat_tweaks_back|Zpet do menu uprav.
 menu_camp_action|^^^^^^^^^ Ktery predmet?
 mno_camp_customize_defilement|Vytvor si Poskvrnenou Zbroj
@@ -168,7 +168,7 @@ menu_fangorn_killed_troop_only|^^^^^^^^Prochazis hustym a temnym lese. Tvi vojac
 mno_get_out|Musime zmizet z tohoto prokleteho mista!
 menu_can_capture_troll|Poražení divocí skřeti stále dýchají!^^Jejich ďábelské oči na tebe shlížejí, plné bolesti a zuřivosti.^I teď když byli poraženi, a leží bezmocně v kaluži jejich krve, stále vypadají velmi nebezpečně...
 mno_killit|Doraž to a ujisti se že je to mrtvé.
-; mno_cageit1|Cage it and drag it around.
+mno_cageit1|Zamkněte to do klece a táhněte to s sebou.
 mno_cageit2|Zavři to do klece s ostatními skřety
 mno_cheat_disabable|Vypnout cheaty/nastaveni módu.
 menu_drank_ent_water_human|^^^Napil jsi se vody. Chutná čistě a svěže. Má pižmovou vůni.^Cítíš se osvěžen.^^Nicméně, máš také zvláštní nepřirozený pocit. Něco ti říká, že bude lepší nikdy více nepít tuto vodu.
@@ -181,7 +181,7 @@ mno_cattle_drive_away|Rozkázat jim aby tě následovali
 mno_cattle_stop|Přimět je aby zastavili.
 mno_leave|Odejit.
 menu_simple_encounter|^^^^^{s2}^Mas k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrava v{s3}{s4}.^^Jake jsou tve rozkazy?
-; mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
+mno_encounter_attack|{reg21?Zaútočte na ně:Připravte se čelit jim}.
 mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?attack:face them} bez tebe.
 mno_encounter_hide|Skryj se před nepřítelem...
 ; mno_special_whip|Rush forward toward them cracking the {s4}.

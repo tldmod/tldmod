@@ -50,26 +50,26 @@ trp_woodmen_skilled_forester|숙련된 나무꾼 숲지기
 trp_woodmen_skilled_forester_pl|숙련된 나무꾼 숲지기
 trp_woodmen_axemen|나무꾼 도끼병
 trp_woodmen_axemen_pl|나무꾼 도끼병
-; trp_woodmen_master_axemen|Night Guard of Mirkwood
-; trp_woodmen_master_axemen_pl|Night Guards of Mirkwood
+trp_woodmen_master_axemen|어둠숲 경비대
+trp_woodmen_master_axemen_pl|어둠숲 경비대
 trp_woodmen_tracker|나무꾼 길잡이
 trp_woodmen_tracker_pl|나무꾼 길잡이
 trp_woodmen_scout|나무꾼 순찰자
 trp_woodmen_scout_pl|나무꾼 순찰자
 trp_woodmen_archer|나무꾼 궁수
 trp_woodmen_archer_pl|나무꾼 궁수
-; trp_fell_huntsmen_of_mirkwood|Night Stalker of Mirkwood
-; trp_fell_huntsmen_of_mirkwood_pl|Night Stalkers of Mirkwood
+trp_fell_huntsmen_of_mirkwood|어둠숲 감시자
+trp_fell_huntsmen_of_mirkwood_pl|어둠숲 감시자
 trp_beorning_vale_man|베오른 일족
 trp_beorning_vale_man_pl|베오른 일족
 trp_beorning_warrior|베오른 전사
 trp_beorning_warrior_pl|베오른 전사
-; trp_beorning_tolltacker|Beorning Toll-Taker
-; trp_beorning_tolltacker_pl|Beorning Toll-Takers
+trp_beorning_tolltacker|베오른 수비대
+trp_beorning_tolltacker_pl|베오른 수비대
 trp_beorning_sentinel|베오른 파수꾼
 trp_beorning_sentinel_pl|베오른 파수꾼
 trp_beorning_warden_of_the_ford|베오른 여울감시자
-; trp_beorning_warden_of_the_ford_pl|Beorning Wardens of the Ford
+trp_beorning_warden_of_the_ford_pl|베오른 여울감시자
 trp_beorning_carrock_lookout|베오른 망꾼
 trp_beorning_carrock_lookout_pl|베오른 망꾼
 trp_beorning_carrock_fighter|베오른 망루 전사
@@ -86,14 +86,14 @@ trp_laketown_bowmen|너른골 활잡이
 trp_laketown_bowmen_pl|너른골 활잡이
 trp_laketown_archer|너른골 궁수
 trp_laketown_archer_pl|너른골 궁수
-; trp_barding_bowmen_of_esgaroth|Barding Bowman
-; trp_barding_bowmen_of_esgaroth_pl|Barding Bowmen
+trp_barding_bowmen_of_esgaroth|바르드일족 궁수
+trp_barding_bowmen_of_esgaroth_pl|바르드일족 궁수
 trp_dale_warrior|너른골 검사
 trp_dale_warrior_pl|너른골 검사
 trp_dale_veteran_warrior|너른골 고참병
 trp_dale_veteran_warrior_pl|너른골 고참병
-; trp_dale_marchwarden|Hearthman of Dale
-trp_dale_marchwarden_pl|로바니온 기수
+trp_dale_marchwarden|너른골 후견인
+trp_dale_marchwarden_pl|너른골 후견인
 trp_dale_pikeman|너른골 창병
 trp_dale_pikeman_pl|너른골 창병
 trp_dale_billman|너른골 미늘창병

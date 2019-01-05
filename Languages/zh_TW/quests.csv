@@ -1,13 +1,13 @@
 qst_deliver_message|傳 達 消 息 到 {s13}
-qst_deliver_message_text|{s9}要 你 給 {s13}送 信 。 你 接 受 這 個 任 務 時 {s13}曾 在 {s4}。 
+qst_deliver_message_text|{s9} 要 你 傳 訊 息 給 {s13} 。 你 接 受 這 個 任 務 時 {s13}曾 在 {s4}。 
 qst_deliver_message_to_enemy_lord|傳 達 消 息 到 {s13}
-qst_deliver_message_to_enemy_lord_text|{s9}要 你 給 {s15}的 {s13}送 信 。 你 接 受 這 個 任 務 時 {s13}曾在 {s4}。 
-qst_raise_troops|去 {s14}征 {reg1}的 稅 
-; qst_raise_troops_text|{s9} asked you to raise {reg1} {s14} and bring them to {him/her}.
+qst_deliver_message_to_enemy_lord_text|{s9} 要 你 傳 訊 息 給 {s15} 的 {s13}。 你 接 受 這 個 任 務 時 {s13}曾在 {s4}。 
+qst_raise_troops|訓 練 {reg1} 位 {s14}
+qst_raise_troops_text|{s9} 要 你 訓 練 {reg1}位 {s14} 並 帶 給 {他/她}
 qst_escort_messenger|護 送 信 使 到 {s14}
 qst_escort_messenger_text|無 
 qst_hunt_down_fugitive|抓 捕 {s4}
-qst_hunt_down_fugitive_text|{s9}要 你 去 抓 捕 亡 命 徒 {s4}。 他 目 前 據 信 在 {s3}。 
+qst_hunt_down_fugitive_text|{s9}要 你 去 抓 捕 亡 命 的 {s4}。據 信 他 目 前 在 {s3}。 
 qst_bring_back_runaway_serfs|追 回 逃 跑 的 奴 隸 
 qst_bring_back_runaway_serfs_text|{s9}要 求 你 把 三 隊 逃 跑 的 奴 隸 帶 回 {s2}。 他 說 這 三 隊 人 都 朝 {s3}的 方 向 跑 了 。 
 qst_follow_spy|跟 蹤 間 諜 會 面 
@@ -20,27 +20,27 @@ qst_capture_prisoners|帶 來 {reg1}個 敵 軍 俘 虜
 qst_capture_prisoners_text|{s9}要 你 帶 給 他 {reg1}個 敵 軍 俘 虜 。 
 qst_investigate_fangorn|調 查 法 貢 森 林 
 qst_investigate_fangorn_text|{s9}要 你 去 找 出 法 貢 森 林 在 發 生 什 麼 ， 並 且 回 報 信 息 。 
-qst_capture_troll|俘 獲 一 隻 巨 魔 
-qst_capture_troll_text|{s9}要 你 帶 回 一 個 兇 暴 的 巨 魔 為 了 軍 用 。
-qst_kill_troll|打 發 憤 怒 的 巨 魔
-qst_kill_troll_text|{s9}要 你 從 近 郊 一 隻 狂 暴 的 巨 魔 的 威 脅 下 解 救 {s13}。 
+qst_capture_troll|俘 獲 一 隻 食 人 妖
+qst_capture_troll_text|{s9}要 你 為 軍 隊 帶 回 一 個 兇 暴 的 食 人 妖。
+qst_kill_troll|處 理 掉 憤 怒 的 食 人 妖
+qst_kill_troll_text|{s9}要 你 從 近 郊 一 隻 狂 暴 食 人 妖 的 威 脅 下 解 救 {s13}。 
 qst_mirkwood_sorcerer|殺 死 幽 暗 森 林 的 巫 師 
-qst_mirkwood_sorcerer_text|凱 蘭 崔 爾 保 衛 羅 斯 洛 立 安 的 力 量 已 經 被 多 爾 哥 多 的 巫 師 的 骯 髒 儀 式 破 壞 。  儘 管 他 是 凡 人 ， 代 表 了 他 對 精 靈 們 是 很 大 的 威 脅 。 在 幽 暗 密 林 中 尋 找 他 ， 其 實 離 多 爾 哥 多 并 不 遠 。 請 秘 密 行 動 來 避 免 引 發 警 報 ， 畢 竟 衹 有 一 次 機 會 去 擊 敗 他 （ 注 意 存 檔 ） 
+qst_mirkwood_sorcerer_text|凱 蘭 崔 爾 保 衛 羅 斯 洛 立 安 的 力 量 已 經 被 多 爾 哥 多 的 巫 師 的 骯 髒 儀 式 破 壞 。  儘 管 他 是 凡 人 ， 代 表 了 他 對 精 靈 們 是 很 大 的 威 脅 。 在 幽 暗 密 林 中 尋 找 他 ， 其 實 離 多 爾 哥 多 并 不 遠 。 請 秘 密 行 動 來 避 免 被 發 現 ， 畢 竟 只 有 一 次 機 會 去 擊 敗 他 。
 qst_find_lost_spears|尋 找 布 拉 多 辛 國 王 丟 失 的 長 矛 
 qst_find_lost_spears_text|{s9}讓 你 去 尋 找 丟 失 的 長 矛 ， 長 矛 是 矮 人 爲 布 拉 多 辛 國 王 打 造 的 。 你 需 要 尋  求 矮 人 的 許 可  去 尋 找 長 矛 在 孤 山 的深 處 。 
-; qst_defend_village|Defend Village
-; qst_raid_village|Raid Village
-; qst_destroy_scout_camp|Destroy Scout Camp
+qst_defend_village|保 衛 村 莊
+qst_raid_village|襲 擊 村 莊
+qst_destroy_scout_camp|摧 毀 斥 候 營 地
 qst_rescue_prisoners|營 救 {reg1}的 囚 犯 
 qst_rescue_prisoners_text|{s9}想 要 你 去 營 救 {reg1}的 囚 犯 。 
 qst_scout_enemy_town|偵 查 敵 人 的 城 鎮 
 qst_scout_enemy_town_text|{s9}要 求 你 去 偵 察 {s13}。 
 qst_dispatch_scouts|派 遣 偵 察 隊 
-qst_dispatch_scouts_text|{s9}讓 你 派 出 一 支 偵 察 隊 在 {s13}附 近 。 
+qst_dispatch_scouts_text|{s9} 要 你 在 {s13} 附 近 派 出 一 支 偵 察 隊  。 
 qst_eliminate_patrols|消 滅 {reg1}敵 人 隊 伍 
 qst_eliminate_patrols_text|{s9}要 求 你 去 消 滅 {reg1}{s13}敵 人 隊 伍 
-qst_lend_surgeon|借 用 你 的 外 科 醫 生 {s3}給 {s1}
-qst_lend_surgeon_text|借 用 你 經 驗 豐 富 的 外 科 醫 生 {s3}給 {s1}。 
+qst_lend_surgeon|借 你 的 醫 生 {s3}給 {s1}
+qst_lend_surgeon_text|借 你 經 驗 豐 富 的 醫 生 {s3}給 {s1}。 
 qst_follow_army|跟 隨 {s9}的 部 隊 
 qst_follow_army_text|無 
 qst_report_to_army|向 {s13}報 告 
@@ -54,35 +54,35 @@ qst_scout_waypoints_text|無
 qst_move_cattle_herd|移 動 {s12}到 {s13}
 qst_move_cattle_herd_text|{s10}的 長 老 要 你 帶 一 些 {s12}去 {s13}。 
 qst_escort_merchant_caravan|護 送 補 給 隊 到 {s8}
-; qst_escort_merchant_caravan_text|Escort the supply train to {s8} and speak to them when near.
+qst_escort_merchant_caravan_text|護 衛 運 輸 隊 到 {s8} 並 在 快 抵 達 時 與 其 對 話
 qst_deliver_wine|給 {s4}帶  {reg5}單 位 的 {s6}
 qst_deliver_wine_text|{s3}的 {s9}要 你 在 7 天 內 帶 {reg5}單 位 的 {s6}到 {s4}。 
 qst_troublesome_bandits|獵 殺 棘 手 的 哥 布 林 
 qst_troublesome_bandits_text|{s4}的 {s9}要 你 去 獵 殺 在 鎮 附 近  棘 手 的 哥 布 林 。 
-qst_deal_with_looters|解 決 部 落 獸 人 
-qst_deal_with_looters_text|{s4}的 長 老 要 你 解 決 {s4}附 近 的 幾 隊 部 落 獸 人 。 
+qst_deal_with_looters|解 決 部 落 半 獸 人 
+qst_deal_with_looters_text|{s4}的 長 老 要 你 解 決 {s4}附 近 的 幾 隊 部 落 半 獸 人 。 
 qst_deal_with_night_bandits|解 決 狂 暴 的 哥 布 林 
 qst_deal_with_night_bandits_text|{s14}的 長 老 要 你 解 決 {s14}的 暗 夜 哥 布 林 。 
 qst_deliver_food|向 {s3}支 援 {reg5}單 位 的 食 物 
 qst_deliver_food_text|{s3}的 {s9}要 你 10 天 內 帶 給 他 {reg5}單 位 的 食 物 。 
 qst_deliver_iron|向 {s3}支 援 {reg5}單 位 的 {s6}
 qst_deliver_iron_text|{s3}的 {s9}要 你 帶 給 他 {reg5}單 位 的 {s6}。 
-; qst_tld_introduction|Go to your faction leader.
+qst_tld_introduction|去 找 你 的 陣 營 領 導
 qst_tld_introduction_text|無 
-qst_treebeard_kill_orcs|打 敗 伐 樹 的 獸 人 部 隊 
-qst_treebeard_kill_orcs_text|樹 人 希 望 你 找 到 并 打 敗 在 法 貢 森 林 伐 樹 的 獸 人 。 
+qst_treebeard_kill_orcs|打 敗 伐 樹 的 半 獸 人 部 隊 
+qst_treebeard_kill_orcs_text|樹 人 希 望 你 找 到 并 打 敗 在 法 貢 森 林 伐 樹 的 半 獸 人 。 
 qst_oath_of_vengeance|復 仇 的 誓 言 
-qst_oath_of_vengeance_text|{s1}的 死 亡 而 激 怒 了 你 ， 你 在 {s2}部 隊 前 發 了 一 個 復 仇 的 誓 言 。 您 現 在 必 須 在 未 來 的 日 子 裡 盡 可 能 摧 毀 更 多 的 {s2}軍 隊 。 您 確 切 地 感 知 您 的 追 隨 者 們 都 是 您 誓 言 的 見 證 者 ， 而 您 不 會 希 望 被 認 為 是 背 誓 者 的 。 那 麽 ， 現 在 就 開 始 飲 血 狂 歡 吧 ！ 
+qst_oath_of_vengeance_text|{s1}的 死 亡 而 激 怒 了 你 ， 你 在 {s2}部 隊 前 發 了 一 個 復 仇 的 誓 言 。 您 現 在 必 須 在 未 來 的 日 子 裡 盡 可 能 摧 毀 更 多 的 {s2}軍 隊 。 您 確 切 地 感 知 您 的 追 隨 者 們 都 是 您 誓 言 的 見 證 者 ， 而 您 不 會 希 望 被 認 為 是 背 誓 者 的 。 開 始 血 祭 吧 ！ 
 qst_deliver_gift|從 {s2}帶 {s1}的 {s4}給 {s3}
-qst_deliver_gift_text|你 已 經 要 求 從 {s2}傳 遞 {s1}的 {s4}給 {s3}。 
-; qst_ring_hunters|Ring Hunters
-; qst_ring_hunters2|Ring Hunters - Completed
-; qst_deliver_message_hobbit|Concerning Hobbits
-; qst_blank_quest_01|Defend Refugees
-; qst_blank_quest_02|Hunt Down Refugees
-; qst_blank_quest_03|Sea Battle
-; qst_blank_quest_04|Kill {s35} {s36}
-; qst_blank_quest_05|Kill {s35} {s36} troops.
+qst_deliver_gift_text|你 已 經 要 求 從 {s2}傳 遞 {s1}的 {s4}給 {s3} 了。 
+qst_ring_hunters|戒 指 獵 人
+qst_ring_hunters2|戒 指 獵 人 - 完 成
+qst_deliver_message_hobbit|關 於 哈 比 人
+qst_blank_quest_01|保 衛 難 民
+qst_blank_quest_02|獵 殺 難 民
+qst_blank_quest_03|海 戰
+qst_blank_quest_04|殺 掉 {s35} {s36}
+qst_blank_quest_05|殺 掉 {s35} {s36} 的 士 兵
 
 
 
@@ -93,12 +93,12 @@ qst_deliver_gift_text|你 已 經 要 求 從 {s2}傳 遞 {s1}的 {s4}給 {s3}�
 
 
 
-; qst_blank_quest_16|Reinforce Center
-; qst_blank_quest_17|Slay {reg22} {s6} in battles
+qst_blank_quest_16|支 援 中 心
+qst_blank_quest_17|在 戰 鬥 中 殺 掉 {reg22}位 {s6}
 
 
 
 
-; qst_guardian_party_quest|Isengard's Last Stand
-; qst_quests_end|Quests End
-; qst_quests_end_text|.
+qst_guardian_party_quest|艾 辛 格 的 最 後 一 戰
+qst_quests_end|任 務 結 束
+qst_quests_end_text|.

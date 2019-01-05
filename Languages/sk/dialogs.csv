@@ -34,9 +34,9 @@ dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Rozumiem. Pošlem to �
 dlga_hobbit_general_talk_3:close_window|Tak zatiaľ zbohom.
 dlga_start:hobbit_merry_talk_met.1|Vitaj späť, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Vitaj späť, {playername}!
-; dlga_hobbit_merry_talk_met:hobbit_deliver_message|Hello, messer Merry. I have a message here from your cousin, Pippin, in Minas Tirith.
-; dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Hello, messer Pippin. I have a message here from your cousin, Merry, in Edoras.
-; dlga_hobbit_deliver_message:close_window|Thank you, {playername}. It was good of you to bring this to me.
+dlga_hobbit_merry_talk_met:hobbit_deliver_message|Dobrý deň, posielajte Merry. Mám tu správu od vášho bratranca, Pippina, v Minas Tirith.
+dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Dobrý deň, posielame Pippin. Mám tu správu od vášho bratranca, Merry, v Edorase.
+dlga_hobbit_deliver_message:close_window|Ďakujeme, {hračovo jmeno}. Bolo to pre vás dobré, aby ste mi to priniesli.
 dlga_hobbit_merry_talk_met:close_window|Zdravím, pán Chicholm.
 dlga_hobbit_pippin_talk_met:close_window|Zdravím, pán Pipin. 
 dlga_start:treebeard_introduce_1|(Zisťuješ, že sa pozeráš na prazvláštne stvorenie. Je veľmi vysoké, má silné končatiny s kožou ako kôra a porastom listov. Části jeho tela pokrývá mech. Ale v tejto chvíli si všímaš len oči. Hlboké oči ťa pozorujú, pomalé a vážné, ale veľmi bystré a prenikajúce. Myslíš si, že sú hnedé, so zelenkastým svitom, ako keby si sa cez ne díval do hlbočiznej studne plnej prastarých spomienok a dlhého, pomalého a vytrvalého premýšľania. Ich povrch sa však trblieta prítomnosťou... ako slnko žiariace na krajných listoch ohromného stromu, alebo vlnky veľmi hlbokého jazera.)
@@ -211,7 +211,7 @@ dlga_lord_capture_troll_completed_one_troll:close_window|Výborne, {playername}.
 dlga_lord_start:close_window.1|Už dávno som ti rozkázal, aby si mi priviedol jedného živého trola. Ale mal som to vedieť. Ako som len mohol čakať od niekoho ako {playername} že by sa bol schopný postaviť takejto výzve. Môj služobník nebol dosť schopný či verný.
 dlga_lord_start:lord_generic_mission_completed.1|Správy o tvojom úspechu proti divokým trolom ku mne dorazili. {s12} má o jednu starosť menej, vďaka tebe, {playername}.
 dlga_lord_start:lord_generic_mission_completed.2|Naši prieskumníci neďaleko {s12} nám povedali o tvojom úspechu. To ich naučí, sledovať nás.^^Zničenie toho táboru určite zastaví nepriateľský predstih.
-; dlga_lord_start:destroy_scout_camp_failed|Our scouts near {s12}'s camp saw you and your men retreat. This is disappointing, {playername}. ^^Your failure resulted in the attack of vital supply lines. It will take some time to recover.
+dlga_lord_start:destroy_scout_camp_failed|Naši prieskumníci pri tábore {s12} videli, že ste sa s vašimi mužmi ustúpili. Toto je sklamanie, {playername}. Vaše zlyhanie viedlo k útoku životne dôležitých zásobovacích vedení. Bude trvať určitý čas, kým sa zotavíte.
 dlga_destroy_scout_camp_failed:close_window|Nabudúce už budem lepšie pripravený.
 dlga_lord_start:lord_generic_mission_completed.3|Naši zvedi neďaleko {s12} hlásia, že si statočne ubránil dedinu. Tí nájazdníci sú každým dňom trúfalejší a bezočivejší... ^^Páchne to vojnou. Znova ti musím poďakovať, {playername}. 
 dlga_lord_start:defend_village_failed|Naši zvedovia neďaleko {s12} hlásia,  že sa ti tú dedinu nepodarilo ubrániť. Dedinčania boli zmasakrovaní alebo zotročení. Tí nájazdníci sú každým dňom trúfalejší a bezočivejší... ^^Páchne to vojnou.
@@ -219,9 +219,9 @@ dlga_defend_village_failed:close_window|Nabudúce už budem pripravený.
 dlga_lord_start:lord_generic_mission_completed.4|Spozoroval som plamene šľahajúce z dediny neďaleko {s12}. Počuli sme krik a rev. Toto je len začiatok,{playername}. ^^Onedlho nastane vojna.
 dlga_lord_start:raid_village_failed|Všimli sme si niekoľkých ľudí uháňajúcich od {12}. A ty sa ešte opovažuješ prísť sem a vystavovať sa, {playername}?. ^^Vojna sa blíži, ale s takýmito neúspechmi môžeš byť jej prvou obeťou. 
 dlga_raid_village_failed:close_window|Nabudúce už bude, pripravený.
-; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
+dlga_lord_start:lord_generic_mission_completed.5|Vaši muži boli svedkami vašej statočnosti v bitke, {playername}. Ukázali ste im, že sme nadriadenými silami.
 dlga_lord_start:kill_quest_failed|Dopočul som sa že si neuspel. Sklamal si ma, {playername}.
-; dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
+dlga_lord_start:lord_generic_mission_completed.6|Vaši muži boli svedkami vašej statočnosti v bitke, {playername}. Vyhral si si úctu.
 dlga_kill_quest_failed:close_window|Nabudúce už budem lepšie pripravený.
 dlga_lord_start:lord_follow_spy_completed|{s4}
 dlga_lord_start:lord_follow_spy_half_completed|Do pekla s tebou! Chcel som DVOCH väzňov, {playername} -- a ty si mi priniesol len ďalšie zbytočné starosti! Už viem všetko, čo vedel špeh, ale bol to manipulátor ktorého som chcel. Tu máš, za polovičnú prácu polovičná mzda. Zober si to a zmizni.
@@ -230,16 +230,16 @@ dlga_lord_start:lord_follow_spy_failed|Ty si úplne neschopný , {playername}, a
 dlga_lord_follow_spy_half_completed:lord_pretalk|Urobil som čo bolo v mojich silách, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Ďakujem, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hrm. Ako si želáš, {s65}.
-; dlga_lord_start:lord_generic_mission_completed.7|I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.
-; dlga_lord_start:lord_defend_refugees_failed|{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...
+dlga_lord_start:lord_generic_mission_completed.7|Dostal som správy, že všetci utečenci boli bezpečne eskortovaní. Ďakujeme vám {playername} za vašu pomoc. V tejto vojne trpí najviac nevinní.
+dlga_lord_start:lord_defend_refugees_failed|{playername}, dostali hlásenia o tom, že utečencov boli zachytení nájazdníci a všetci boli zabití. Toto je veľmi sklamaním ...
 dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Odpusť mi, {s65}, Nepodarilo sa mi ich ochrániť.
-; dlga_lord_defend_refugees_failed_1a:lord_pretalk|It is the innocent that suffer the most in wars. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
-; dlga_lord_start:lord_defend_refugees_half_completed|I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
+dlga_lord_defend_refugees_failed_1a:lord_pretalk|Je to nevinné, ktoré trpí najviac vo vojnách. V budúcnosti by mohlo byť viac utečencov, {playername}. Dúfam, že budete nabudúce pripravený.
+dlga_lord_start:lord_defend_refugees_half_completed|Dostal som správy, že iba cieľové vlaky {reg17} utečencov dosiahli cieľ. Je to nešťastné, ale to je cena vojny. V budúcnosti by mohlo byť viac utečencov, {playername}. Dúfam, že budete nabudúce pripravený.
 dlga_lord_defend_refugees_half_completed:lord_pretalk|Nabudúce sa lepšie pripravím, pane.
-; dlga_lord_start:lord_generic_mission_completed.8|I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.
-; dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?
-; dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|They were slippery, master. I was unable to track them down.
-; dlga_lord_hunt_refugees_failed_1:lord_pretalk|Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.
+dlga_lord_start:lord_generic_mission_completed.8|Dostal som správy, že utečenci boli všetci zabití a že väzenské vlaky prídu čoskoro ... Urobil si dobre, {playername}. Toto je len začiatok, budeme nad touto krajinou vládnuť čoskoro.
+dlga_lord_start:lord_hunt_refugees_failed|{playername}, naši špioni hovoria, že ste nepodarili zachytiť {reg1} vlakov utečencov. Sú slabé a pomaly a stále sa vám nepodarí. Aké využitie ste?
+dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Boli kluzký, majster. Nedokázal som ich vystopovať.
+dlga_lord_hunt_refugees_failed_1:lord_pretalk|Možno nie ste dostatočne dobrí, aby ste prikázali armádám, ktoré prinesú tento svet k jeho podpätku, ak nemôžete dokonca poraziť zranených a chorých! ^ ^ Zbavte sa a modlite sa, dám vám druhú šancu.
 dlga_lord_start:lord_generic_mission_completed.9|Nech sa pod zem prepadnem, ty si to zvládol, {playername}. Všetci otroci sú späť. Nedáme im pokoja, dokiaľ nebudú pripravený na žatvu. Zaslúžiš si svoju odmenu. Tu máš, ber. Vďaka.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}. trpezlivo som čakal na mojich otrokov, ale žiaden z nich sa nevrátil. Máš pre to vysvetlenie? Boli ste porazený primitívnymi zvieratami, alebo si proste neschopný ?
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Ospravedlňujem sa, {s65}, tí otroci boli klzký ako úhory. Nedalo sa ich chytiť.
@@ -262,7 +262,7 @@ dlga_lord_mission_told_deliver_cattle_to_army_rejected:close_window|To .... je n
 dlga_lord_start:lord_report_to_army_asked|Ah, dorazil si posledný, {playername}. Už som ťa očakával. Dúfam, že si so sebou priviedol dostatok skúsených jednotiek.
 dlga_lord_report_to_army_asked:lord_report_to_army_completed|Mám so sebou skupinu dobrých, vycvičených vojakov. Sme pripravený sa k tebe pripojiť.
 dlga_lord_report_to_army_asked:lord_report_to_army_continue|Zatiaľ nemám dostatok jednotiek. Budem potrebovať ešte trochu času.
-; dlga_lord_report_to_army_completed:close_window|Excellent. I will send the word when I have a task for you. {s3}
+dlga_lord_report_to_army_completed:close_window|Výborne. Pošlem slovo, keď mám úlohu pre vás. {S3}
 dlga_lord_report_to_army_continue:close_window|Potom by si sa mal poponáhľať. Onedlho budeme pochodovať proti nepriateľovi a mne sa zíde každý schopný meč. 
 dlga_lord_start:lord_mission_told_scout_waypoints|{playername}, potrebujem dobrovoľníka, aby preskúmal oblasť. Máme nedostatok informácií, a ja jednoducho potrebujem mať lepší prehľad o situácií pred tým, než budeme pokračovať. Potrebujem, aby si šiel do {s13}, {s14} a {s15} a nahlásil všetko, čo si videl.
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|Našli ste svojho dobrovoľníka, pane.
@@ -274,8 +274,8 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Nuž, je celý váš.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Mám pre neho iné plány.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Výborne! Pošlem svojich mužov aby ho premiestnili do nášho žalára patričným spôsobom. Určite to pomôže naším zámerom.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Veľká škoda, mohol pre nás byť veľmi vzácny, {playername}.
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital or if their strength is crushed, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
-; dlga_lord_start:lord_pretalk|Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there, for you to store your personal belongings.
+dlga_tld_intro_1:lord_pretalk|Vojenský výcvik: ^^ - Frakcie len iniciujú obliehanie, keď sú dostatočne silné. ^ - Väčšina osád môže byť obetovaná len vtedy, ak je ich frakcia dostatočne oslabená. Zvyčajne budú hlavné body obetované ako posledné ^ ^ - Ak frakcia stratí svoj kapitál alebo ak ich sila rozdrví, budú porazené ^ - Factions získavajú silu z víťazstiev na poli a z držania určitých kľúčových osídlení. z porážok v teréne alebo zo straty osídlenia ^ - Niektoré questy alebo udalosti môžu ovplyvniť silu frakcie ^ - Môžete porovnať aktuálne hodnoty pevnosti frakcie v menu 'Správy' ^ ^ - Ďalšie stránky TLD nájdete na informačných stránkach.
+dlga_lord_start:lord_pretalk|Ah, vitajte, {s24}. ^ Už by ste mali vedieť, že {s12}. Vašou povinnosťou je pomôcť v našom boji, {playername}. Keď sa ukážeš hodným mojej dôvery [level {reg1}], dovolím vám tiež prístup k tú truhlu tam, aby si uložil svoje osobné veci.
 dlga_lord_start:lord_talk|Čo sa deje ?
 dlga_lord_pretalk:lord_talk|Ešte niečo ?
 dlga_lord_talk:lord_lend_companion_end|Chcel by som aby ste mi vrátili {s14}, {s65}, pokiaľ už nepotrebujete{reg3?jej:jeho} služby.
@@ -285,20 +285,20 @@ dlga_lord_talk:lord_message_delivered|Nesiem správu od {s9}.
 dlga_lord_talk:lord_message_delivered_enemy|Nesiem správu od {s9}.
 dlga_lord_talk:lord_active_mission_1|O úlohe, ktorú si mi zadal...
 dlga_lord_talk:lord_request_mission_ask|Nemáš pre mňa nejakú prácu ?
-; dlga_lord_talk:dwarf_lord_book|{s3}, I have a matter which I must bring to your attention.
-; dlga_dwarf_lord_book:dwarf_lord_book_give|Speak freely, {playername}.
-; dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|I ventured deep into the Mines of Moria and found record of Balin's company.
-; dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|You speak of my kin as though they are a memory. Is it so?
-; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...
+dlga_lord_talk:dwarf_lord_book|{s3}, mám záležitosť, ktorú musím upozorniť.
+dlga_dwarf_lord_book:dwarf_lord_book_give|Hovorte voľne, {playername}.
+dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|Vpustil som sa hlboko do baní Moria a našiel som záznam o spoločnosti Balin.
+dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|Hovoríte o svojich rodičoch, akoby boli pamäťou. Je to tak?
+dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|Obávam sa, že to je. Bol by som hľadal ďalej, ale bol som obťažený škriatkami a vo veľkom počte. Prinášam len to ...
 dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'Nedostaneme sa z tadeto. Nemôžeme ujsť...Prichádzajú.'
-; dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.
-; dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|You have done Erebor a great service, {playername}, and your deed will not go unrewarded.
+dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|Takže som sa obával. Balinovi som poradil proti tejto expedícii, ale bol vyriešený. Blázon, ktorý som mu dal za to, že mu nechal ísť.
+dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|Urobil si Erebor skvelú službu, {playername}, a tvoja čin nebude ponechaná neoprávnená.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Ďakujem, {s3}.
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Čo urobíš teraz?
 dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|Nenecháme vraždy našich vlastných bez odpovedi! Prinesieme spád a smrť tým ktorý nám ublížili. Od najvyššieho vrchu Mt. Gundabádu až do najhlbších kútov Khazad-dûmu, Hmlové Vrchy budú Nasiaknuté čiernou krvou goblinov!
-; dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, I wish to help {s4} people avenge Balin and his company.
+dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, chcem pomôcť {s4} ľuďom pomstiť Balinovi a jeho spoločnosti.
 dlga_dwarf_lord_book_give_i:lord_pretalk|Veľa šťastia s tým.
-; dlga_dwarf_lord_avenge:close_window|Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.
+dlga_dwarf_lord_avenge:close_window|Veľmi dobré, {playername}. Choďte s požehnaním Durinovho ľudu a prineste smrť našim nepriateľom. Dajte im vedieť bolesť a strach, ako ich ľudia poznali.
 dlga_lord_talk:find_lost_spears_permission|Môj pane, prajem si vstúpiť do Osamelej Hory. Hľadám stratené kopije Kráľa Bladorthina.
 dlga_find_lost_spears_permission:lord_pretalk|Už som ti udelil povolenie, {playername}.
 dlga_find_lost_spears_permission:find_lost_spears_permission_yes|Dobre, {playername}, môžeš vstúpiť do hory.
@@ -307,52 +307,52 @@ dlga_find_lost_spears_permission_yes:lord_pretalk|Ďakujem, môj pane.
 dlga_lord_talk:tell_dorwinion_sack|Môj pane, našiel som mech s vyblednutým symbolom zobrazujúcim hrozno, a vnútri úlomky dreva a kovu ktoré mohli byť súčasťou kopije.
 dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|Veľmi zaujímavé. Tento starodávny mech je označený značkou najlepších vín, aké boli produkované len v Dorwinione. 
 dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|V mechu bola i táto helma z Rhunu. Prezradí nám to viac o tom čo sa stalo s kopijami?
-; dlga_tell_dorwinion_sack_3:lord_pretalk|Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for. NOTE: THIS QUEST IS NOT YET COMPLETED. TO BE CONTINUED.
-; dlga_lord_talk:lord_healer_wound_ask|I have heard that you were a great healer. Is this true, and can you help me?
+dlga_tell_dorwinion_sack_3:lord_pretalk|Karavany sú často prehliadané pozdĺž cesty. Táto helma pochádza od skautov Rhuna. Postupujte po rieke južne smerom k moru Rhun a vyhľadajte obchodné cesty na Dorwinion a môžete nájsť to, čo hľadáte. POZNÁMKA: TENTO QUEST NIE JE VYPLNENÝ. POKRAČOVANIE NABUDÚCE.
+dlga_lord_talk:lord_healer_wound_ask|Počul som, že ste boli veľkým liečiteľom. Je to pravda a môžete mi pomôcť?
 dlga_lord_healer_wound_ask:lord_pretalk|{s1}
 dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
-; dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
-; dlga_lord_healer_wound_ask_check:lord_healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
-; dlga_lord_healer_wound_ask_check:lord_pretalk|Not right now.
+dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|Moji muži a ja máme rany, ktoré vyžadujú viac ako len čas na liečenie. Môžete liečiť naše rany?
+dlga_lord_healer_wound_ask_check:lord_healer_injured_ask|Moji muži a ja sme zranení a nemáme čas čakať na ich uzdravenie. Môžete poskytnúť pomoc?
+dlga_lord_healer_wound_ask_check:lord_pretalk|Teraz nie.
 dlga_lord_healer_wound_heal:lord_healers_wound_check|{s1}
 dlga_lord_healer_injured_ask:lord_healers_injured_check|{s1}
-; dlga_lord_healers_injured_check:lord_healers_injured_heal|Yes, attend to us.
-; dlga_lord_healers_wound_check:lord_healers_wound_heal|Yes, attend to us.
-; dlga_lord_healers_wound_check:lord_pretalk|Not right now.
-; dlga_lord_healers_injured_check:lord_pretalk|Not right now.
+dlga_lord_healers_injured_check:lord_healers_injured_heal|Áno, navštevujte nás
+dlga_lord_healers_wound_check:lord_healers_wound_heal|Áno, navštevujte nás
+dlga_lord_healers_wound_check:lord_pretalk|Teraz nie.
+dlga_lord_healers_injured_check:lord_pretalk|Teraz nie.
 dlga_lord_talk:ring_hunters_start|Môj pane, som pripravený splniť náročnejšie úlohy, ktorými by som vám pomohol ukončiť vojnu. Čo pre vás môžem vykonať?
-; dlga_ring_hunters_start:ring_hunters_check|{playername}, you have done great deeds and proven yourself worthy of the task I will now request of you. I trust you to deal with this matter as best you see fit, but know that our foe is dangerous and bloodshed will be unavoidable. Is your company strong enough for battle?
+dlga_ring_hunters_start:ring_hunters_check|{playername}, urobili ste veľké činy a preukázali ste, že ste hodný úlohy, ktorú od vás teraz žiadam. Verím, že sa s touto záležitosťou zaobchádzate čo najlepšie, ale viete, že náš nepriateľ je nebezpečný a krviprelievanie bude nevyhnutné. Je vaša spoločnosť dostatočne silná na boj?
 dlga_ring_hunters_check:ring_hunters_1|Áno, môj pane. Velím skupine dobre vycvičených, bojom zocelených mužom. Sme pripravený na čokoľvek.
 dlga_ring_hunters_check:ring_hunters_check_failed|Obávam sa, že nie, môj pane.
-; dlga_ring_hunters_check_failed:lord_pretalk|Then you are not ready for this task yet,{playername}. Go and gather more troops.
-; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.   The first is returning with their loot to their encampment on the eaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.
+dlga_ring_hunters_check_failed:lord_pretalk|Potom ešte nie ste pripravení na tento úlohu, {playername}. Choďte a zbierajte viac vojakov.
+dlga_ring_hunters_1:ring_hunters_2|Výborne. Sever bol v poslednej dobe sužovaný obťažujúcou skupinou psancov, ktorí vyrážajú dediny a spúšťajú pasažierov hľadajúc prstene ľubovoľného druhu. Musíte loviť týchto banditov dole a skončiť ich hľadaním. Pozostalí z ich posledného drancovania hlásili dve skupiny. Prvý sa vracia s ich kořisti do svojho tábora na okraji Mirkwood. Druhý, k veľkému počtu sa dostal k Beornovmu domu a obávam sa, čo sa môže stať, ak zostane nerušené.
 dlga_ring_hunters_2:ring_hunters_what|Môj pane, čo by sa tak urputne snažili nájsť?
 dlga_ring_hunters_2:ring_hunters_accept|Môj pane, urobím všetko preto aby som raz a navždy zastavil týchto... ´Lovcov Prsteňa*
 dlga_ring_hunters_2:ring_hunters_reject|Nie som na takúto úlohu pripravený.
-; dlga_ring_hunters_accept:close_window|With bravery in your heart and sharp steel in your hands you will, {playername}. We will await news of your success.
+dlga_ring_hunters_accept:close_window|S odvahou v srdci a ostrými oceľami vo svojich rukách budete {playername}. Budeme čakať správy o vašom úspechu.
 dlga_ring_hunters_reject:lord_pretalk|Rozumiem. Hlás sa u mňa keď budeš, ale daj si načas. Nechceme, aby uspeli.
-; dlga_ring_hunters_what:ring_hunters_2|Designs of the Enemy are hidden from us, but we can see thes ruffians are bent on finding what they are looking for.  I cannot reveal all that we know, for much hangs in the balance and secrecy is paramount. Whatever they seek must be a powerful weapon, one to be used to cause more destruction in the Dark Lord's name.
-; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for them, or others like them...   Whether true or not, they must not fall into the Dark Lord's hands.
-; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news... Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
-; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news,{playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something... a disturbance.
+dlga_ring_hunters_what:ring_hunters_2|Vzory nepriateľa sú skryté pred nami, ale môžeme si všimnúť, že tí ruskí sú ohýbaní na hľadaní toho, čo hľadajú. Nemôžem odhaliť všetko, čo vieme, pretože veľa visí v rovnováhe a tajomstvo je prvoradé. Čokoľvek hľadajú, musia byť silnou zbraňou, ktorá sa má používať na to, aby spôsobila viac zničenia v mene Temného pána.
+dlga_ring_hunters_what:ring_hunters_2.1|Temný pán predtým vyslal vyslancov do rôznych trpasličích klanov a pýtal sa na prstence moci, ktoré sa dali našim ľuďom. Títo banditi ich možno hľadajú alebo iní ako oni ... Či sú pravdiví, alebo nie, nesmú spadať do ruky Temného pána.
+dlga_lord_talk:ring_hunter_party_defeated|Môj pane, prídem zlé správy ... Aj keď som porazil lovcov prsteňov terorizujúcich dediny, ich vodcovia neboli tam. Možno našli to, čo hľadali
+dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|To nie je zlá správa, {playername}. Počuli sme o tvojom veľkom víťazstve! Život tých dedinčanov má na našu záležitosť väčšiu zámienku než akákoľvek zbraň. Ako hovoríme, posvätné posmieva ich silu, oživené vašim víťazstvom. Navyše, neveríme tomu, že títo Ring Hunters našli to, čo hľadajú. Keby to bola zbraň, o ktorú sme sa báli, potom by sme cítili niečo ... narušenie.
 dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|V tom prípade som rád. Akákoľvek zbraň to mohla byť... možno ju stále hľadajú. Budem ostražitý a poprípade to vyriešim i ďalšími Lovcami Prsteňa. 
 dlga_ring_hunter_quest_end:close_window|To my všetci. Ešte raz ti ďakujem za tvoje služby, {playername}.
-; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able to defeat their leaders in their lair. They had this in their possession.
-; dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|I see, a ring, but not THE ring. Not even one of the great rings, yet not a mere trinket either. There is some power woven into it.
-; dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we were right to snatch it from the Dark Lord’s fingers, before he could use it to spread his Shadow over the land and have it seep into the hearts of many.
-; dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use it to fight the Enemy and his armies. I trust you to use it well.
-; dlga_ring_hunter_lair_quest_end:close_window|This is an honour, my Lord, thank you! My heart will stay true and my arm strong.
-; dlga_start:ring_hunters_party_attack|Look here, men. More lambs to the slaughter.
-; dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampage has come to an end.
-; dlga_ring_hunters_party_attack_2:close_window|Check their packs and their fingers. Save one to torture. Everyone else is for eating!
+dlga_lord_talk:ring_hunter_lair_defeated_elf|Môj pane, aj keď nebol schopný zachytiť lovcov prsteňov terorizujúcich dediny, som dokázal poraziť svojich vodcov v ich doupěti. Mali to v ich vlastníctve.
+dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|Vidím, prsteň, ale nie krúžok. Ani jeden z veľkých krúžkov, ale nie len obyčajný trinket. V nej je nejaká energia.
+dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Potom sme mali pravdu, aby sme ho chytili z prstov Temného pána, skôr ako by ho mohol použiť na šírenie svojho Stínu nad zemou a nechať ho preniknúť do mnohých sŕdc.
+dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|Tento prsteň musíte držať a používať ho na boj s nepriateľom a jeho armádami. Verím, že ju používate dobre.
+dlga_ring_hunter_lair_quest_end:close_window|Toto je česť, môj Pane, ďakujem! Moje srdce zostane pravé a moje rameno silné.
+dlga_start:ring_hunters_party_attack|Pozrite sa, muži. Viac jahniat na porážku
+dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Vaša šarvátka sa skončila.
+dlga_ring_hunters_party_attack_2:close_window|Skontrolujte ich balenia a prsty. Uložte ho na mučenie. Všetci ostatní sú na jedenie!
 dlga_start:ring_hunter_lair_defeat|Ten prsteň patrí Temnému Pánovi! Nesmieš ho nosiť!
-; dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|It belongs to me now.
-; dlga_ring_hunter_lair_defeat2:close_window|Do you think you’ve won a great victory? A pale tattered shade of one, perhaps. Bah! Our warband marched out long before you arrived. You are too late to save those they went after!
-; dlga_start:beorn_message|My lord/lady, we received a warning from {s1} that a large outlaw warband was headed our way! Alas, there was no time to gather enough warriors. Having heard the sound of battle, we prepared for the worst!
-; dlga_beorn_message:beorn_message2|That was no band of ordinary outlaws. They were the Dark Lord's worst of the worst, at least here in the North. Their leaders, however, were not here. Their den lies near Mirkwood Forest and I must make haste.
-; dlga_beorn_message2:beorn_message_end|Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!
-; dlga_beorn_message_end:beorn_message_close|I must report back and tell {s1} about the battle. Go back to your village and dispatch scouts. There may be stragglers.
-; dlga_beorn_message_close:close_window|Yes, commander. We shall remain vigilant and send for more men from the distant hamlets. Your victory today has inspired us all.
+dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Teraz patrí mne.
+dlga_ring_hunter_lair_defeat2:close_window|Myslíte si, že ste vyhrali veľké víťazstvo? Môže to byť bledý roztrhnutý. Bah! náš
+dlga_start:beorn_message|Môj pán / dámu, dostali sme varovanie od {s1}, že na našom ceste smerovala veľká vojenská zakázka! Bohužiaľ, nebol čas zbierať dostatok bojovníkov. Keď sme počuli zvuk bitky, pripravili sme sa na najhoršie!
+dlga_beorn_message:beorn_message2|To nebola skupina bežných žalárov. Boli to najhoršie z najhoršieho Temného pána, aspoň tu na severe. Ich vodcovia však tu neboli. Ich den leží v blízkosti lesa Mirkwood a musím sa ponáhľať.
+dlga_beorn_message2:beorn_message_end|Áno, boli sme o tábore tiež varovaní a poslali sme k nemu skautov. Videli sme ich, že ich spálime a rýchlo ideme na Mordor. Ak ste sa rozhodli tam najprv spěchať, možno ste nám nemohli pomôcť. Sme naozaj vďační za vaše víťazstvo!
+dlga_beorn_message_end:beorn_message_close|Musím ohlásiť a povedať {s1} o bitke. Vráťte sa späť do dediny a vysielajte skautov. Môžu to byť stratitelia.
+dlga_beorn_message_close:close_window|Áno, veliteľ. Budeme ostražití a posielať viac ľudí z vzdialených osád. Vaše víťazstvo dnes nás všetkých inšpirovalo.
 dlga_lord_give_troops:lord_give_troops_check|Posilniť moju družinu? Stále sa mi hodí viac vojakov.
 dlga_lord_give_troops:lord_pretalk|Bohužiaľ nemáš žiadnych {s14} vojakov aby si posilnil moju družinu.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Dovoľ mi pozrieť sa na zoznam vojakov...
@@ -372,10 +372,10 @@ dlga_marshall_ask:lord_pretalk.3|Sme na vojenskom ťažení, {playername}, tvoje
 dlga_marshall_ask:marshall_suggest|Počúvam, {playername}. Čo navrhuješ ?
 dlga_marshall_suggest:marshall_answer|Mali by sme vyraziť a dobiť {s1}.
 dlga_marshall_suggest:lord_pretalk|No nič, verím tvojmu úsudku.
-; dlga_player_siege_discuss:player_siege_discuss_1|I am listening, my Lord.
-; dlga_player_siege_resource_check:lord_pretalk|No, the time is not yet right.
-; dlga_player_siege_check_passed:player_siege_accept|Very well. Go, {playername}, and march with the blessings of {s2}. We are counting on you to lead our people to victory.
-; dlga_player_siege_accept:close_window|Thank you, my Lord. I will not let you and {s2} down.
+dlga_player_siege_discuss:player_siege_discuss_1|Počúvam, môj Pane.
+dlga_player_siege_resource_check:lord_pretalk|Nie, čas ešte nie je správny.
+dlga_player_siege_check_passed:player_siege_accept|Veľmi dobre. Choďte {playername} a pochodujte s požehnaním {s2}. Spoliehame sa na vás, aby ste viedli našich ľudí k víťazstvu.
+dlga_player_siege_accept:close_window|Ďakujem, môj Pane. Nenechám vás a {s2} dole.
 dlga_marshall_answer:close_window|Výborne, {playername}, musím pristúpiť na tvoj návrh. Musím vyslať poslov a zhromaždiť naše sily.^Následuj ma a drž sa blízko - pochodujeme na {s4}!
 dlga_lord_talk:deliver_gift_1|Prinášam dar {s1} od {s3} ľudu {s2}.
 dlga_send_gift_1:lord_pretalk|Ty už si {s4}, {playername}. Bolo by múdre doručiť najprv toto.
@@ -426,26 +426,26 @@ dlga_lord_tell_objective:lord_pretalk.9|Bojujeme proti {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.10|Robíme spoločnosť {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.11|Zvažujeme naše ďalšie kroky.
 dlga_lord_tell_objective:lord_pretalk.12|Ja neviem: {reg1} {s1}
-; dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|I cannot do this now.
-; dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|I cannot do this now.
+dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|Teraz to nemôžem urobiť.
+dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|Teraz to nemôžem urobiť.
 
-; dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.
-; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Consider it done.
-; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|I do not have the time for this.
-; dlga_lord_mission_destroy_scout_camp_accept:close_window|We shall await news of your success.
-; dlga_lord_mission_destroy_scout_camp_reject:close_window|I see. That is disappointing.
-; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on its way to a village near {s12}.
+dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, dostali sme slovo, že {s3} má prieskumný tábor v okolí. Uistite sa, že ste ho nevideli a ničili, skôr ako sa dozvedia o našich plánoch.
+dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Považujte to za vybavené.
+dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|Považujte to za vybavené.
+dlga_lord_mission_destroy_scout_camp_accept:close_window|Budeme čakať správy o vašom úspechu.
+dlga_lord_mission_destroy_scout_camp_reject:close_window|Vidím. To je sklamanie.
+dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, dostali sme správy od našich skautov, že útočisko je na ceste do dediny v blízkosti {s12}.
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Môžete tam poslať svojich ľudí?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Áno, ale mobilizácia zabere čas. Nedorazili by sme tam včas. ^^Ale ty a tvoja družina to ešte môžete stihnúť. Dokážeš obrániť tú dedinu?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|Chlapci a ja sme pripravený. Môžeme okamžite vyraziť.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|Obávam sa, že túto úlohu nemôžem splniť.
 dlga_lord_mission_defend_accept:close_window|Vďaka, {playername}. Teraz choď, a rýchlo! 
 dlga_lord_mission_defend_reject:close_window|Rozumiem. Nuž, hneď tam pošlem každého kto je pripravený. Dúfajme že nie je neskoro.
-; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
+dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, v blízkosti je dedina, ktorá je zrelá na zber. Naši skauti nám hovoria, že sú chránení {s3}, ale sú málo a môžu byť ľahko porazení. ^ ^ Ty si náhodou prvý veliteľ, ktorého som povedal. Čo chcete s týmito informáciami robiť?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Vyplienim dedinu, zabijem každého muža, ktorého uvidím a zotročím všetky ženy a deti!
 dlga_lord_mission_raid_village_a:lord_raid_village_reject|Nemám čas na vykorisťovanie ubohých dedín.
 dlga_lord_raid_village_accept:close_window|Tak na čo tu ešte čakáme?
-; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting.
+dlga_lord_raid_village_reject:close_window|Výhovorky zbabelcov. Choď preč, váš zbabelý zápach je urážlivý.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Černokňažník z Temnohvozdu bol zabitý, moja Paní.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Odpusťte mi, moja Paní, ale naliehavejšie záležitosti mi zabránili v zabití černokňažníka, a medzitým utiekol.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Černokňažník z Temnohvozdu je stále nažive. Narušili sme jeho rituály, ale utiekol.
@@ -525,23 +525,23 @@ dlga_lord_mission_deliver_message_accepted:close_window|Vážim si to, {playerna
 dlga_lord_mission_deliver_message_rejected:lord_pretalk|Ah, no dobre. Ale som si istý, že nájdem niekoho iného. 
 dlga_lord_tell_mission:lord_mission_deliver_message.1|Potrebujem niekoho, kto by doručil dopis {s13} z {s15}, ktorý je práve v {s4}. Doručil by si mu dopis pokiaľ mieriš tým smerom? Správu musí dostať do 40 dní.
 dlga_lord_tell_mission:lord_mission_told|Je tu jedna naliehavá záležitosť... Môj posol musí oboznámiť našich veliteľov v {s14} o naších bojových plánoch. Jeho výprava už bolo niekoľko krát odložená kvôli ťažkostiam na cestách, ale tento raz sa k nim tie plány už naozaj musia dostať.. Chcel som sa teda uistiť, že bude dobre strážený. Dôverujem ti, {playername}, takže by som ti bol veľmi vďačný, ak by si ho eskortoval do {s14} a postarál sa, aby posol dorazil bez úhony.
-; dlga_lord_tell_mission:lord_mission_told.1|I have a friend here, an old warrior, who is very sick. Pestilence has infected an old battle wound,and unless he is seen to by a surgeon soon, he will surely die. This man is dear to me, {playername},but he's also stubborn as a hog and refuses to have anyone look at his injury because he doesn't trust the physicians here.I have heard that you've a capable surgeon with you. If you would let your surgeon come here and have a look,{reg3?she:he} may be able to convince him to give his consent to an operation.Please, I will be deeply indebted to you if you grant me this request.
+dlga_lord_tell_mission:lord_mission_told.1|Mám tu priateľa, starého bojovníka, ktorý je veľmi chorý. Pestičenie nakazilo starú bitku, a ak ju čoskoro nevidí, zanikne. Tento muž je pre mňa drahý, {playername}, ale je tiež tvrdohlavý ako prasa a odmieta mať niekoho, kto sa pozrie na jeho zranenie, pretože nedôveruje lekárom tu. Počul som, že ste s tebou schopný chirurg. Ak by ste nechali svojho chirurga prísť sem a pozrieť sa,{reg3?she:he} mohol by byť schopný ho presvedčiť, aby dal svoj súhlas s operáciou. Prosím, budem vám hlboko zadĺžený, ak mi udelíte túto požiadavku.
 dlga_lord_tell_mission_raise_troops:lord_tell_mission_raise_troops_2|Koľko mužov potrebuješ ?
 dlga_lord_tell_mission_raise_troops_2:lord_mission_raise_troops_told|Pokiaľ dokážeš vycvičiť {reg1} {s14} a priviesť mi ich, mohlo by to stačiť.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_accepted|Samozrejme, {s65}. Daj mi {reg1} čerstvých odvedencov a ja ich vytrénujem na {s14}.
-; dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|I suggest another method, {s65}. I'll take {reg1} fresh recruits to the arena teach them a thing or two...
-; dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|I suggest another method, {s65}.... I'll take {reg1} fresh recruits to the arena teach them a thing or two. They won't become {s14} afterwards, but this is one step towards that.
+dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_alternate_1|Navrhujem inú metódu, {s65}. Vezmem {reg1} čerstvé rekruty do arény naučiť ich niečo ...
+dlga_lord_mission_raise_troops_alternate_1:lord_mission_raise_troops_alternate|Navrhujem inú metódu, {s65} .... vezmem {reg1} čerstvé rekruty do arény, naučiť ich jednu alebo dve veci. Neskôr sa nestane {s14}, ale je to jeden krok smerom k tomu.
 dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Bohužiaľ som príliš zaneprázdnený, aby som niekoho trénoval.
 dlga_lord_mission_raise_troops_accepted:close_window|Sňal si zo mňa veľké bremeno, {playername}. Určite prikážem svojím veliteľom, aby ti poslali odvedencov a previedli ich pod tvoje velenie. Tiež ti dám nejakú zálohu, aby som ti pomohol vyrovnať náklady. Tu máš, tento mešec by to mal urovnať. Ďakujem za tvoju pomoc.
-; dlga_lord_mission_raise_troops_alternate:close_window|This is an interesting proposal, {playername}. I shall tell my sergeants to send the recruits to the arena. Follow them there, and whip them up to shape. I will be watching. Thank you for your help.
+dlga_lord_mission_raise_troops_alternate:close_window|Je to zaujímavý návrh, {playername}. Poviem svojim seržantom, aby poslali rekrutov do arény. Sledujte ich tam, a bič ich do tvaru. Budem sa pozerať. Ďakujem za tvoju pomoc.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Oh, samozrejme. Očakával som to. Tak veľa šťastia.
 dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Možno že by si mi mohol s niečim pomôcť, potrebujem dolapiť darebáka známeho ako {s4}.  Zavraždil jedného člena mojej osobnej stráže a od vtedy uteká pred spravodlivým rozsudkom. Dostal som správu, že ten utečenec bol videný v {s3}. Postaraj sa o neho a vykonaj na ňom spravodlivosť.. Na oplátku dostaneš peknú odmenu.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Nájdem ho a vykonám na ňom zákon.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Momentálne nemám čas na to, aby som ho prenásledoval.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Výborne, {playername}. Bol by som ti veľmi vďačný a samozrejme budú tvoje schopnosti riadne zaznamenané. Tak, šťastný lov. 
 dlga_lord_mission_hunt_down_fugitive_rejected:lord_pretalk|Jak chceš, {playername}. Predpokladám, že sa tu v okolí nájde dosť nájomných lovcov, ktorý túto prácu splnia...
-; dlga_lord_tell_mission:lord_mission_told.2|There are refugees on their way to {s6}. They will be moving slow, and as such, is a moving target to our enemies. Defend them until they reach their destination.
-; dlga_lord_tell_mission:lord_mission_told.3|Our spies tell us that there are refugees on their way to {s6}. They will be slow because of all the old, the sick, and the dying. Hunt them down, kill all the men, and take everyone else as slaves. Make sure none arrive at their destination!
+dlga_lord_tell_mission:lord_mission_told.2|Na ceste do {s6} sú utečenci. Budú sa pohybovať pomaly, a ako taký, je pohyblivým cieľom voči našim nepriateľom. Obrancujte ich, kým nedosiahnu svoj cieľ.
+dlga_lord_tell_mission:lord_mission_told.3|Naši špióni hovoria, že na ceste do {s6} sú utečenci. Budú pomalé kvôli všetkým starým, chorým a zomierajúcim. Prenasledujte ich, zabite všetkých mužov a vezmite všetkých ako otrokov. Uistite sa, že nikto nepríde na miesto určenia!
 dlga_lord_tell_mission:lord_mission_told.4|Niekoľko z otrokov pracujúcich v {s4} utieklo. Nevďačné svine, ktorých životy sme ušetrili ! Z toho čo som počul utekajú do {s3} tak rýchlo, ako len vládzu. Rozdelili sa do troch skupín, aby predišli chyteniu. Chcem, aby si dohnal a chytil všetky tri skupiny a dovliekol ich späť do {s4} za každú cenu. Mal by som ich obesiť za pokus o útek, ale každá ruka sa nám teraz hodí, takže im len dáme poriadnu príučku a necháme to tentoraz tak.
 dlga_lord_tell_mission:lord_tell_mission_follow_spy|Mám spoľahlivé informácie že človek v tomto meste je nepriateľský špeh. Mali by sme sa ho chopiť a obesiť za jeho trúfalosť. Tiež sme však dostali správu, že čoskoro opustí mesto, aby sa stretol s jeho pánom, mužom ktorému špeh našepkáva všetky klebety a malé tajomstvá. Samotný špeh pre nás nemá takmer žiadny význam, ale jeho pán by mohol byť nebezpečný človek. Určite by nám toho mohol prezradiť veľa, keby sme ho len dokázali chytiť...
 dlga_lord_tell_mission_follow_spy:lord_tell_mission_follow_spy_2|Chcem, aby si tu počkal dokiaľ špeh neopustí mesto. Potom ho musíš nenápadne prenásledovať na miesto stretnutia. Musíš byť veľmi dôkladný, aby ťa špeh behom cesty nevidel, pretože by mohol začať byť podozrievavý, a vrátiť sa späť. Keď sa jeho pán objaví, musíš ich prepadnúť a zajať. Priveď ich oboch ku mne. Ale živých.
@@ -631,25 +631,25 @@ dlga_castle_gate_open:close_window.4|Môj lord {s2} ťa tu nechce. A už ma neo
 dlga_start:caravan_help1|Vďaka za pomoc! Už sme v bezpečí. Moje meno je Torbal, práve som dohliadal na doručenie nejakého tovaru, keď nás zrazu napadli. ^^Videl si už pred tým týchto veľkých ohyzdov? Nevyzerajú ako tí bežný horský, ktorých sme už zvyknutý ľahko zastrašiť a odrážať. A tá maľba na ich štítoch je určite znak Mordoru. Ten som na tejto strane rieky nevidel už veľmi dlho. ^^Čakajú nás ťažké časy.. Vojna sa blíži! ^^Radím ti, choď do najbližšieho mesta a varuj každého. Povedz komukoľvek kto bude stáť na čele čo si tu videl. Je to dôležité, tak sa ponáhľaj. 
 dlga_caravan_help1:caravan_help2|Nie, nikdy pred tým som takého veľkého ohyzda nevidel. Šeredné bytosti... ^^Som vojak v tejto nadchádzajúcej vojne. Bolo už len otázkou času, kedy začne.
 dlga_caravan_help2:caravan_help_tut|Ozaj ? Samozrejme že si! Všimol som si, že si schopný bojovník. ^^Dnes mám skutočné šťastie. Trochu využijem dnešnú šťastenu a rýchlo pôjdem varovať ľudí do dediny o týchto odporných beštiách. ^^Tu máš, mám nejaké drobné z miestnej meny používanej {s10}.
-; dlga_caravan_help_tut:caravan_help3|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of {s11} are not the ones you earned in your own faction, but the ones you will earn in {s11}. ^^See REPORTS for more information.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+dlga_caravan_help_tut:caravan_help3|(Resource Points TUTORIAL) ^ ^ Zdroje, ktoré môžete použiť na nákup od ľudí z {s11}, nie sú tie, ktoré ste zarobili vo svojej vlastnej frakcii, ale tie, ktoré zarobíte v {s11}. ^^ Viac informácií nájdete v SPRÁVE \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 dlga_caravan_help3:caravan_help4|Bezpečnú cestu, Torbal. Určite sa ešte stretneme.
 dlga_caravan_help4:caravan_help_fac_tut|Tiež dúfam. Tuto moje stráže ťa videli bojovať a určite o tebe porozprávajú svojím lordom. ^^Pokiaľ ich ľudu pomôžeš dosť krát, určite sa u nich staneš známym, čo môže vieš ku skvelým príležitostiam! ^^Tak napríklad ja som už dobre známy, a dostávam mesačný príjem za všetku tú prácu, čo robím. 
 dlga_caravan_help_fac_tut:caravan_help5|(NÁVOD HODNOSTI VO FRAKCII)^^Body Hodnosti ti umožňujú povýšenie v hodnosti svojej frakcie (a/alebo ostatných frakciách). ^^Tvoja hodnosť ovlivní maximálnu veľkosť tvojej družiny, týždenný príjem Bodov Zásob frakcie, a odomkne ti ďalšie odmeny špecifickej frakcie.
 dlga_caravan_help5:close_window|Budem si to pamätať. Ďakujem Torbal, a opatruj sa.
-; dlga_start:caravan_attack1|And who are you? We needed none of your interference, nar!
-; dlga_caravan_attack3:close_window|Weakling? Let’s see who the weakling is! (Difficult)
-; dlga_caravan_attack3:close_window.1|Go on then, coward. I'll see your corpse in the fields.
+dlga_start:caravan_attack1|A kto si ty? Nepotrebovali sme žiadnu z vašich zásahov, nar!
+dlga_caravan_attack3:close_window|Slaboch? Pozrime sa, kto je slabý! (Obtiažne)
+dlga_caravan_attack3:close_window.1|Pokračuj, zbaběle. Uvidím tvoje mŕtvola na poliach.
 dlga_start:caravan_duel1|Hehe...Ten je nevychovaný, no nie? Nevšímajte si to! Zachránil si mi tam kožu! A tiež niekoľko mojich chlapov! ^^Tu máš,  našli sme tie prachy vo vreckách našich mrtvých druhov. {s10} 
 dlga_start:caravan_duel1.1|Hádam, že som povýšený. Si krutý bojovník. Tu máš, zober si kus koristi z karavany. Stráže si tiež vsadili proti tebe., ale ja nie..hehe...Videl som, čo si tam vonku porobil....^^{s10}
 dlga_caravan_duel1:caravan_duel2|Mohol by som ťa proste zabiť a vziať si všetko... ale už som urobil dosť. Choď preč.
 dlga_caravan_duel2:caravan_duel3|Chlapi ťa teraz určite rešpektujú! Alebo sú proste z teba vystrašený! Za každú cenu o tebe povedia svojím veliteľom, a tiež čo si tu vykonal. Keď na veliteľov budeš robiť dojem, možno ti dajú špeciálne predmety! Koňský ľud z Rhunu mi raz daroval koňa! ZOŽRAL SOM HO! HA HA HA HA!
-; dlga_start:caravan_res_tut1|*snicker* No harm in biding one’s time, warrior! Some of the lads might not think so much of you, but not me, oh no. I saw you fight. Won’t bet against you! {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
-; dlga_start:caravan_res_tut2|*snicker* I s’pose I’m the leader now. You are a fierce warrior, yes! Take your share of the loot. Some o’ the lads were betting on you being warg meat, but not me, oh no. I saw you fight. Won’t bet against you!^^Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
+dlga_start:caravan_res_tut1|* snicker * Žiadne škody v tom, že niekto má čas, bojovník! Niektorí chlapci si z teba nemyslia toľko, ale nie ja, ó nie. Videl som ťa bojovať. Nebude stáť proti vám! {s10} ^ ^ Ale my všetci sme na svoj vlastný druh, my to robíme. Slúžte oči, slúžte Temnému pánovi, áno, ale urobte skutok na východe a Juh neberie na vedomie a podobne. Pomôžte oči a biela ruka nezaujíma. Pomôžte starcovi a Temná veža si myslí, prečo strácate čas tým, že pre ňu nepracujete!
+dlga_start:caravan_res_tut2|* Snicker * Ja som teraz vodca. Ste silný bojovník, áno! Vezmite svoj podiel z kořisti. Niektorí chlapci vsadili na to, že si vyháňate mäso, ale nie ja, ó nie. Videl som ťa bojovať. Nezasadí proti tebe! ^ ^ Naši priatelia a spojenci o tebe počujú, nepochybuj! Možno by boli ochotní vám dať nový hore alebo nový čepel. Nikto nemá čas pre slabých, ale ak ste silní, ha, pomôžeme tým, ktorí nám pomáhajú, vidíte? {s10} ^ ^ Ale my všetci sme na svoj vlastný druh, my to robíme. Slúžte oči, slúžte Temnému pánovi, áno, ale urobte skutok na východe a Juh neberie na vedomie a podobne. Pomôžte oči a biela ruka nezaujíma. Pomôžte starcovi a Temná veža si myslí, prečo strácate čas tým, že pre ňu nepracujete!
 dlga_caravan_res_tut1:caravan_noduel|(NÁVOD O BODOCH ZÁSOB)^^ Body Zásob ktoré môžeš použiť na obchod s Mordorom nie sú rovnaké, aké si získal vo svojej vlastne frakcii, ale rovnaké, aké budeš získavať od ľudí a ohyzdov v Mordore. ^^Pozri HLÁSENIE pre viac informácií.
 dlga_caravan_res_tut2:caravan_duel1|(NÁVOD O BODOCH ZÁSOB)^^ Body Zásob ktoré môžeš použiť na obchod s Mordorom nie sú rovnaké, aké si získal vo svojej vlastne frakcii, ale rovnaké, aké budeš získavať od ľudí a ohyzdov v Mordore. ^^Pozri HLÁSENIE pre viac informácií.
-; dlga_caravan_noduel:caravan_duel2|I could kill him as easily as I spit! But I have nothing to prove to the likes of him.
+dlga_caravan_noduel:caravan_duel2|Mohol by som ho zabiť tak ľahko, ako som pľuvať! Ale ja nemám nič, čo by som mu dokázal dokázať.
 dlga_caravan_duel1:caravan_duel2|Mohol by som ťa proste zabiť a vziať si všetko... ale už som urobil dosť. Choď preč.
-; dlga_caravan_duel2:caravan_fac_tut|Fair enough, fair enough! Look at these cowering wretches around us! Ha! They fear you, oh yes, as they should, as they should! I don’t. Heh. But then, I owe you a favour, don’t I! I’ll do you a good turn in my way. I’ll tell the Bosses about you today. Word’ll get around. And when the Bosses hear enough about you… why, could be they’d have something special for you. Gifts, power, respect! I’m going back now for a nice big helping myself!
+dlga_caravan_duel2:caravan_fac_tut|Spravodlivé, dosť spravodlivé! Pozrite sa na tých zbytočných biednych ľudí okolo nás! Ha! Obávajú sa vás, áno, ako by mali, ako mali! Ja nemám. Heh. Ale potom vám dlžím láskavosť, nie? Urobím vám dobrú cestu. Dnes vám poviem šéfom o vás. Slovo sa dostane okolo. A keď šéfovia o vás počujú dosť ... prečo by mohli mať niečo špeciálne pre vás. Darčeky, moc, rešpekt! Teraz sa vrátim na pekný veľký pomáhať!
 dlga_caravan_fac_tut:caravan_duel3|(NÁVOD HODNOSTI VO FRAKCII)^^Body Hodnosti ti umožňujú povýšenie v hodnosti svojej frakcie (a/alebo ostatných frakciách). ^^Tvoja hodnosť ovlivní maximálnu veľkosť tvojej družiny, týždenný príjem Bodov Zásob frakcie, a odomkne ti ďalšie odmeny špecifickej frakcie.
 dlga_woodelf_help_6:woodelf_help_7|(NÁVOD O HODNOSTI VO FRAKCII)^^Body Hodnosti ti umožňujú povýšenie v hodnosti svojej frakcie (a/alebo ostatných frakciách). ^^Tvoja hodnosť ovlivní maximálnu veľkosť tvojej družiny, týždenný príjem Bodov Zásob od frakcie, a odomkne ti ďalšie odmeny špecifickej frakcie.
 dlga_woodelf_help_7:close_window.1|(Zdvihneš ruku a odídeš bez slova)
@@ -666,36 +666,36 @@ dlga_beorn_help5:beorn_help6|Možno že sme široký a chlpatý, nepekný a tmav
 dlga_beorn_help6:beorn_help7|(NÁVOD O HODNOSTI VO FRAKCII)^^Body Hodnosti ti umožňujú povýšenie v hodnosti svojej frakcie (a/alebo ostatných frakciách). ^^Tvoja hodnosť ovlivní maximálnu veľkosť tvojej družiny, týždenný príjem Bodov Zásob frakcie, a odomkne ti ďalšie odmeny špecifickej frakcie.
 dlga_beorn_help7:close_window|Le fael, priateľ! Sbohom.
 dlga_beorn_help7:close_window.1|(zamávaš rukou a odídeš bez slova)
-; dlga_start:kill_scout_1|Great eyes and ears you have there! If you hadn’t warned us, those green-clad tree-climbers would’ve had the jump on us, I warrant - or perhaps escaped, and brought down more of their fellows on our heads! Now they’re for the maggots and crows, and our mission is safe. Ai! The Bosses will be pleased.
-; dlga_kill_scout_1:kill_scout_2|Watch where you’re taking us, Orc. We have not travelled this far to perish in an ambush, before the war has even begun!
-; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
+dlga_start:kill_scout_1|Skvelé oči a uši, ktoré tam máte! Keby si nás neviedol, títo zelení stromoví horolezci by na nás mali skákať, musel som si to - alebo možno utiecť - a zvrhli viac našich ľudí na naše hlavy! Teraz sú pre červy a vrany a naše poslanie je bezpečné. Ai! Šéfovia budú spokojní.
+dlga_kill_scout_1:kill_scout_2|Sledujte, kde nás beriete, Orc. Nešli sme sa tak ďaleko, aby sme zahynuli pred prepustením vojny ešte predtým, než vojna začala!
+dlga_kill_scout_2:kill_scout_3|A budeme mať vojnu! Nemáš strach, bojovník, Mordor je spojenec s tebou a tvojou. Vezmite si tento chit - získajte nejaké zásoby. Dobré na použitie vo všetkých základňoch Mordor! Získajte na mňa kolo orca varenie!
 dlga_kill_scout_3:kill_scout_4|(NÁVOD O BODOCH ZÁSOB)^^ Body Zásob ktoré môžeš použiť na obchod s Mordorom nie sú rovnaké, aké si získal vo svojej vlastne frakcii, ale rovnaké, aké budeš získavať od ľudí a ohyzdov v Mordore. ^^Pozri HLÁSENIE pre viac informácií.
-; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill? We'd rather be drinking our own piss.
-; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
+dlga_kill_scout_4:kill_scout_5|Chcete, aby sme napili Orc swill? Radšej by sme pili naše vlastné piss.
+dlga_kill_scout_5:kill_scout_6|Ha! Vedel som, že ste cudzinci robili také veci! Vyhral som svoju stávku s Gothmogom, ďakujem vám! ^ ^ Poviem mu a ostatným šéfom o vás, iste. Lugbúrz bude vedieť, ako užitočné ste boli dnes, nebojte sa! Veľké oko je na vás, teraz! ^ ^ Ale my všetci sme na svoj vlastný druh, my to robíme. Slúžte oči, slúžte Temnému pánovi, áno, ale urobte skutok na východe a Juh neberie na vedomie a podobne. Pomôžte oči a biela ruka nezaujíma. Pomôžte starcovi a Temná veža si myslí, prečo strácate čas tým, že pre ňu nepracujete!
 dlga_kill_scout_6:kill_scout_7|(NÁVOD HODNOSTI VO FRAKCII)^^Body Hodnosti ti umožňujú povýšenie v hodnosti svojej frakcie (a/alebo ostatných frakciách). ^^Tvoja hodnosť ovlivní maximálnu veľkosť tvojej družiny, týždenný príjem Bodov Zásob frakcie, a odomkne ti ďalšie odmeny špecifickej frakcie.
-; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!
-; dlga_kill_scout_8:close_window|As you wish, as you wish. This way!
+dlga_kill_scout_7:kill_scout_8|To, čo robím, nie je nič z vašej záležitosti, nechutné stvorenie. Teraz poďme!
+dlga_kill_scout_8:close_window|Ako chcete, ako chcete. Tadiaľto!
 dlga_woodelf_help_1:woodelf_help_2.1|Nikdy pred tým som nevidel takého obrovského ohyzda. Odporné kreatúry. Ale nemám z nich strach. Som vojakom v nadchádzajúcej vojne, ktorú sme už všetci očakávali. 
 dlga_woodelf_help_2:woodelf_help_3.1|Vážne? Samozrejme že si! Videl som, že si schopný bojovník. Dnes mám teda šťastie. Mal by som toho využiť a ponáhľať sa do dediny upozorniť ľudí na tieto nečisté beštie. 
 dlga_woodelf_help_3:close_window|Bezpečnú cestu, Torbal. Určite sa ešte stretneme.
-; dlga_healers_ask:healer_who|What do you do?.
-; dlga_healers_ask:healer_wound_ask|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
-; dlga_healers_ask:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
+dlga_healers_ask:healer_who|Čo robíš?.
+dlga_healers_ask:healer_wound_ask|Moji muži a ja máme rany, ktoré vyžadujú viac ako len čas na liečenie. Môžete liečiť naše rany?
+dlga_healers_ask:healer_injured_ask|Moji muži a ja sme zranení a nemáme čas čakať na ich uzdravenie. Môžete poskytnúť pomoc?
 dlga_healers_ask:close_window|Nič.
-; dlga_healers_injured_check:healers_injured_heal|Yes, attend to us.
-; dlga_healers_wound_check:healers_wound_heal|Yes, attend to us.
-; dlga_healers_wound_check:close_window|Not right now.
-; dlga_healers_injured_check:close_window|Not right now.
-; dlga_hungry_orc_1:hungry_orc_2|What do you expect me to do about it, rat?
-; dlga_hungry_orc_2:hungry_orc_choice|Those weaklings over there are no use in a proper fight, anyway. Let us eat THEM!
-; dlga_hungry_orc_choice:hungry_orc_eat|All right, grab them! [Kill a few weaklings to feed your orcs.]
-; dlga_hungry_orc_choice:hungry_orc_no_check|No way. None of my men get eaten! Fall back in line or I'll have you eat your own tongue! [Leadership Check]
-; dlga_start:sad_elf_1|Look, my {lord/lady}, gulls! A wonder they are to me and a trouble to my heart.
-; dlga_sad_elf_1:sad_elf_2|I hear their voices. What news do they bring?
-; dlga_sad_elf_2:sad_elf_choice|Ah, tales from the sea. And from beyond. My {lord/lady}, I have grown weary of this war we fight, weary of this soil we drag ourselves on. I fear Ennor (Middle-Earth) is lost for me. Let me leave!
-; dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
-; dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
-; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
+dlga_healers_injured_check:healers_injured_heal|Áno, navštevujte nás
+dlga_healers_wound_check:healers_wound_heal|Áno, navštevujte nás
+dlga_healers_wound_check:close_window|Teraz nie.
+dlga_healers_injured_check:close_window|Teraz nie.
+dlga_hungry_orc_1:hungry_orc_2|Čo očakávate, že s tým urobím, potkan?
+dlga_hungry_orc_2:hungry_orc_choice|Títo slabší ľudia tu vôbec nepoužívajú v správnom boji. Poďme ich jesť!
+dlga_hungry_orc_choice:hungry_orc_eat|Dobre, chyťte ich! [Zabite pár slabých ľudí, aby ste nakŕmili vašich orkov.]
+dlga_hungry_orc_choice:hungry_orc_no_check|V žiadnom prípade. Nikto z mojich mužov sa nezjedol! Späť do radu alebo vás budem jesť svojim jazykom! [Leadership Check]
+dlga_start:sad_elf_1|Pozrite, môj {pán/lady}, račni! Som divu, že sú pre mňa a majú problémy so svojím srdcom.
+dlga_sad_elf_1:sad_elf_2|Počujem ich hlasy. Aké novinky prinášajú?
+dlga_sad_elf_2:sad_elf_choice|Ach, príbehy z mora. A ďalej. Moja {lpán / lady}, som sa unavila touto vojnou, s ktorou sme bojovali, unavení z tejto pôdy, ktorú sme sa tiahli. Obávam sa, že sa pre mňa stratí Ennor (Stredná Zeme). Nechaj ma odísť!
+dlga_sad_elf_choice:sad_elf_leave|Cítim tvoju bolesť. Vykonali ste svoj podiel v tejto vojne. Môžete odísť.
+dlga_sad_elf_choice:sad_elf_no|Elfovia nesmú opustiť Strednú zem do tieňa. V tejto vojne bojujeme nie pre seba a každý z nás bude musieť hrať svoju úlohu. Nemôžem vám odísť. [Leadership Check]
+dlga_sad_elf_leave:close_window|Ďakujem, môj {pán / lady}! ^^ k moru, k moru! Biele čajky plačú, vietor fúka a biela pena lieta. Západ, na západe, klesá kruhové slnko.
 dlga_start:close_window.11|Dorazil si práve v čas. Spojme naše sily a dajme nepriateľom poriadnu lekciu.
 dlga_start:close_window.12|Robíš veľkú chybu že proti nám bojuješ.
 dlga_start:ally_thanks_meet|Nemyslím že sme sa už riadne zoznámili. Zachránil si mi síce život, ale ja stále neviem ani tvoje meno...
@@ -822,12 +822,12 @@ dlga_mayor_talk:mayor_deliver_iron.1|Tu je vaša dodávka šrotu, {reg9} kusov 
 dlga_mayor_talk:mayor_deliver_iron.2|Doviezol som viac šrotu, {reg8} kusov {s4}, aj keď vy ste žiadali {reg9}.
 dlga_mayor_deliver_iron:mayor_deliver_iron_completed|Veľmi dobrá práca, {playername}. Naši kováči určite dobre využijú všetko, čo dostanú.
 dlga_mayor_deliver_iron_completed:close_window|Robím čo môžem.
-; dlga_mayor_sea_battle_start:mayor_sea_battle_question|Excellent! We are in dire need of crewmen. Are you ready to board the ships?
-; dlga_mayor_sea_battle_question:mayor_sea_battle_yes|Yes, I am.
-; dlga_mayor_sea_battle_question:mayor_sea_battle_no|I need some time to get ready.
-; dlga_mayor_sea_battle_yes:close_window|Good. Have your troops board the ship now, we will set sail soon.
-; dlga_mayor_sea_battle_no:close_window|Hurry, we don't have much time before we must set sail.
-; dlga_mayor_talk:mayor_reinforced_center_finished|I have reinforced {s3} as you have asked me to.
+dlga_mayor_sea_battle_start:mayor_sea_battle_question|Výborne! Máme veľkú potrebu posádky. Ste pripravený na palubu lodí?
+dlga_mayor_sea_battle_question:mayor_sea_battle_yes|Áno som.
+dlga_mayor_sea_battle_question:mayor_sea_battle_no|Potrebujem nejaký čas, aby som sa pripravil.
+dlga_mayor_sea_battle_yes:close_window|Dobre. Nechajte svoje vojsko na palube lode, čoskoro budeme plachtiť.
+dlga_mayor_sea_battle_no:close_window|Ponáhľajte sa, nemáme veľa času predtým, ako budeme musieť plachtiť.
+dlga_mayor_talk:mayor_reinforced_center_finished|Posilnil som {s3}, ako ste ma požiadali.
 dlga_mayor_talk:kill_quest_bandits_failed|Dopočul som sa že si neuspel. Sklamal si ma, {playername}.
 dlga_kill_quest_bandits_failed:close_window|Nabudúce už budem lepšie pripravený.
 dlga_mayor_talk:mayor_deliver_food|Tu je vaše jedlo, {reg9} kusov.
@@ -875,11 +875,11 @@ dlga_merchant_quest_requested:merchant_quest_brief.1|Hľadal som niekoho, kto b
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_wine|Mám náklad {s6}, ktorý potrebujem odovzdať do {s10} do {s4}. Potrebujeme aby sa {reg5} kusov {s6} dostalo do {s4} do {reg6} dní. Urobíš to?^^[získaš {reg14} Bodov Zásob {s14u}]
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_taken|Dobre. Doručím objednávku.
 dlga_merchant_quest_brief_deliver_wine:merchant_quest_stall|Zdá sa že toľko nákladu neunesiem.
-; dlga_merchant_quest_requested:merchant_quest_brief.2|Thanks for offering to help.^^This war has waged for so long that some of our centers are no longer looking good.^^Perhaps you can go and reinforce a center in need...
-; dlga_merchant_quest_brief:merchant_quest_brief_reinforce_center|{s5} has been battered by the enemy. We will need to send help. ^^I need someone to reinforce {s5} by at least {reg5} soldiers.^^ It does not matter if they are experienced or not. They just need whatever you can provide.^^ If you are able to do this, they can withstand more attacks.^^ What do you say?
-; dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Alright. I will do what I can.
+dlga_merchant_quest_requested:merchant_quest_brief.2|Vďaka za to, že ste nám pomohli. ^ ^ Táto vojna trvala tak dlho, že niektoré naše centrá už nevyzerajú dobre.
+dlga_merchant_quest_brief:merchant_quest_brief_reinforce_center|{s5} bol nepriateľom zbitý. Budeme musieť poslať pomoc. ^ ^ Potrebujem niekoho, aby posilnil {s5} najmenej {reg5} vojakov. ^ ^ Nezáleží na tom, či sú skúsení alebo nie. Potrebujú všetko, čo môžete poskytnúť. ^^ Ak to dokážete, môžu vydržať viac útokov. ^ ^ Čo to hovoríte?
+dlga_merchant_quest_brief_reinforce_center:merchant_quest_taken|Poriadku. Urobím čo môžem.
 dlga_merchant_quest_brief_reinforce_center:merchant_quest_stall|Je mi ľúto, ale potrebuješ na to nájsť niekoho iného.
-; dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|I cannot do this now.
+dlga_mayor_mission_told_kill_quest_bandit:merchant_quest_stall|Teraz to nemôžem urobiť.
 dlga_merchant_quest_requested:merchant_quest_brief.4|Vlastne som hľadal niekoho, kdo by nás zásobil s jedlom - dochádzajú nám zásoby. Možno, že by si nám mohol pomôcť...
 dlga_merchant_quest_brief:merchant_quest_brief_deliver_food|Naše sýpky sú už takmer prázdne a zásobovacie cesty sú stále nebezpečnejšie kvôli nepriateľom. Potrebujem niekoho, kdo by nám priniesol {reg5} kusov jedla do {reg6} dní, inak začneme hladovať. Možnože ho okolité mesta majú dostatok aj pre nás. Čo hovoríš ?
 dlga_merchant_quest_brief_deliver_food:merchant_quest_taken|Dobre. Nájdem a prinesiem vám nejaké jedlo.
@@ -919,7 +919,7 @@ dlga_merchant_quest_brief:move_cattle_herd_quest_brief|Skupina musí doraziť do
 dlga_move_cattle_herd_quest_brief:move_cattle_herd_quest_taken|Dobre, vezmem ich do {s13}.
 dlga_move_cattle_herd_quest_brief:merchant_quest_stall|Prepáčte, ale nie.
 dlga_move_cattle_herd_quest_taken:mayor_pretalk|Skvele! Nájdeš ich pred mestom. Po tom, čo ich zavedieš do {s13}, sa vráť späť ku mne. Zaplatím ti.
-; dlga_merchant_quest_requested:mayor_pretalk|Nothing right now, Commander. There’ll be more to do soon enough! Keep your blades sharp and wet.
+dlga_merchant_quest_requested:mayor_pretalk|Nič práve teraz, veliteľ. Bude to ešte čoskoro urobiť! Udržujte ostrie ostré a mokré.
 dlga_goods_merchant_talk:goods_trade_requested|Chcem si kúpiť pár vecí... a možno nejaké predať.
 dlga_goods_trade_requested:goods_trade_completed|Dobre, v poriadku... Tuto, môj sklad.
 dlga_goods_trade_completed:goods_merchant_talk|Ešte niečo ?
@@ -951,7 +951,7 @@ dlga_start:town_merchant_talk.1|Dobrý deň. Poslúžim?
 dlga_town_merchant_talk:trade_requested_weapons|Potrebujem novú výbavu. Ukáž čo máš na skalde.
 dlga_town_merchant_talk:trade_requested_horse|Premýšľam o kúpe jazdeckého zvieraťa.
 dlga_trade_requested_weapons:merchant_trade|Ah áno, veliteľ. Lepší tovar než tento budete ťažko hľadať.
-; dlga_trade_requested_horse:merchant_trade|Fierce mounts for the riding and killing, and meat to feed them with! You won't find better beasts than these anywhere else.
+dlga_trade_requested_horse:merchant_trade|Žeravé úchytky na jazdenie a zabíjanie a mäso, ktoré je živí! Nenájdete lepšie zvieratá, než kdekoľvek inde.
 dlga_merchant_trade:town_merchant_talk|Ešte niečo ?
 dlga_town_merchant_talk:merchant_gossip|Kolujú medzi ľuďmi nejaké drby? 
 dlga_town_merchant_talk:close_window|Dovidenia.

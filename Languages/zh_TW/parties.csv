@@ -14,9 +14,9 @@ p_town_calembel|卡 倫 貝 爾
 p_town_edoras|伊 多 拉 斯 
 p_town_aldburg|奧 德 博 格 
 p_town_hornburg|號 角 堡 
-p_town_east_emnet|東 洛 汗 
+p_town_east_emnet|東 埃 姆 內 特
 p_town_westfold|西 谷 
-p_town_west_emnet|西 洛 汗 
+p_town_west_emnet|西 埃 姆 內 特
 p_town_eastfold|東 谷 
 p_town_morannon|莫 拉 農 
 p_town_minas_morgul|米 那 斯 魔 窟 
@@ -30,14 +30,14 @@ p_town_urukhai_r_camp|強 獸 人 河 流 營 地
 p_town_caras_galadhon|卡 拉 斯 加 拉 頓 
 p_town_cerin_dolen|瑟 林 朵 蓮 
 p_town_cerin_amroth|瑟 林 安 羅 斯 
-p_town_thranduils_halls|瑟 蘭 督 伊 的 廳 堂 
+p_town_thranduils_halls|瑟 蘭 督 伊 的 殿 堂 
 p_town_woodelf_camp|木 精 靈 營 地 
 p_town_woodelf_west_camp|木 精 靈 西 營 地 
-p_town_woodsmen_village|樵 夫 村 莊 
-p_town_beorning_village|波 寧 村 莊 
+p_town_woodsmen_village|山 林 村 莊 
+p_town_beorning_village|比 翁 村 莊 
 p_town_beorn_house|比 翁 之 家 
-p_town_moria|摩 瑞 亞 大 門 
-p_town_troll_cave|巨 魔 洞 穴 
+p_town_moria|摩 瑞 亞 之 門 
+p_town_troll_cave|食 人 妖 洞 穴 
 p_town_dale|河 谷 鎮 
 p_town_esgaroth|長 湖 鎮 
 p_town_dunland_camp|登 蘭 德 人 營 地 
@@ -53,11 +53,11 @@ p_town_rhun_north_camp|盧 恩 北 方 前 哨
 p_town_gundabad|剛 達 巴 
 p_town_gundabad_ne_outpost|剛 達 巴 東 北 前 哨 
 p_town_gundabad_nw_outpost|剛 達 巴 西 北 前 哨 
-; p_town_goblin_north_outpost|Goblin Town
+p_town_goblin_north_outpost|半 獸 人 城 鎮
 p_town_goblin_south_outpost|半 獸 人 南 方 前 哨 
 p_town_gundabad_m_outpost|剛 達 巴 幽 暗 密 林 前 哨 
 p_town_erebor|孤 山 
-p_town_ironhill_camp|鐵 丘 陵 採 石 場 
+p_town_ironhill_camp|鐵 丘 陵 礦 場 
 p_advcamp_gondor|剛 鐸 前 線 營 地 
 p_advcamp_rohan|洛 汗 前 線 營 地 
 p_advcamp_isengard|艾 辛 格 前 線 營 地 
@@ -75,7 +75,7 @@ p_advcamp_gundabad|剛 達 巴 前 線 營 地
 p_advcamp_dale|河 谷 鎮 前 線 營 地 
 p_advcamp_dwarf|孤 山 前 線 營 地 
 p_advcamp_dunland|登 蘭 德 前 線 營 地 
-p_advcamp_beorn|波 寧 前 線 營 地 
+p_advcamp_beorn|比 翁 前 線 營 地 
 p_argonath|亞 苟 那 斯 
 p_argonath2|亞 苟 那 斯 
 p_hand_isen|艾 辛 格 白 掌 
@@ -101,7 +101,7 @@ p_ford_moria|銀 流 河
 p_legend_amonhen|阿 蒙 漢 山 脈 
 p_legend_deadmarshes|死 亡 沼 澤 
 p_legend_mirkwood|幽 暗 密 林 
-p_legend_fangorn|法 貢 樹 人 會 議 
-; p_ring_hunter_lair|Ring Hunters Lair
-; p_raft|Raft Men
+p_legend_fangorn|法 貢 樹 人 議 會 
+p_ring_hunter_lair|戒 指 獵 人 的 巢 穴
+p_raft|擺 渡 者
 p_ancient_ruins|古 代 遺 跡 

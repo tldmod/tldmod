@@ -67,7 +67,7 @@ qst_deliver_food|Forneça {s3} com {reg5} Unidades de alimentos
 qst_deliver_food_text|O {s9} do {s3} pediu-lhe para trazê-lo {reg5} unidades de alimentos em 10 dias.
 qst_deliver_iron|Fornecem {s3} com {reg5} unidades de {s6}
 qst_deliver_iron_text|O {s9} do  {s3} pediu-lhe para trazê-lo {reg5} unidades de {s6}.
-; qst_tld_introduction|Go to your faction leader.
+qst_tld_introduction|Vá até o líder da sua facção.
 qst_tld_introduction_text|Nenhum
 qst_treebeard_kill_orcs|Derrotar o partido de orc para cortar árvore
 qst_treebeard_kill_orcs_text|Treebeard quer que você encontrar e derrotar os orcs o corte de árvores em Fangorn .
@@ -78,7 +78,7 @@ qst_deliver_gift_text|Você pediu para entregar uma {s4} do {s1} para {s3} a par
 qst_ring_hunters|Caçador de aneis
 ; qst_ring_hunters2|Ring Hunters - Completed
 ; qst_deliver_message_hobbit|Concerning Hobbits
-; qst_blank_quest_01|Defend Refugees
+qst_blank_quest_01|Defenda os Refugiados 
 ; qst_blank_quest_02|Hunt Down Refugees
 ; qst_blank_quest_03|Sea Battle
 ; qst_blank_quest_04|Kill {s35} {s36}

@@ -85,9 +85,9 @@ qstr_Close|Fechar
 ; qstr_The_DAWN_of_a_New_Er|The DAWN of a New Era
 ; qstr_The_TWILIGHT_of_Man|The TWILIGHT of Man
 ; qstr_Select_your_Race?|Select your Race?
-; qstr_Man|Man
-; qstr_Elf|Elf
-; qstr_Dwarf|Dwarf
+qstr_Man|Homem  
+qstr_Elf|Elfo 
+qstr_Dwarf|Anão 
 ; qstr_Whom_Do_You_Serve?|Whom Do You Serve?
 ; qstr_SAURON_of_Mordor_The|SAURON of Mordor, The Lord of the Rings
 ; qstr_SARUMAN_of_Isengard_|SARUMAN of Isengard, The White Hand
@@ -450,7 +450,7 @@ qstr_Very_Rich|Muito Rico
 ; qstr_Strength|Strength
 ; qstr_Agility|Agility
 ; qstr_Intelligence|Intelligence
-; qstr_Charisma|Charisma
+qstr_Charisma|Carisma 
 ; qstr_You_ve_gained_{s6}_f|You've gained {s6} from gaining {s7}
 ; qstr_You_ve_lost_{s6}_fro|You've lost {s6} from losing {s7}
 qstr_{s50}_Caves|{s50} Cavernas
@@ -613,12 +613,12 @@ qstr___Archer_formation_d|Formação de arqueiros desmontada.
 ; qstr_...and_attack_enemy_|...and attack enemy {s1} division!
 ; qstr_{s2}:_returning_afte|{s2}: returning after destroying enemy {s1} division.
 ; qstr_infantry|infantry
-; qstr_archer|archer
-; qstr_cavalry|cavalry
+qstr_archer|Arqueiro
+qstr_cavalry|Cavalaria 
 ; qstr_polearm|polearm
 ; qstr_skirmisher|skirmisher
 ; qstr_mounted_archer|mounted archer
-; qstr_support|support
+qstr_support|Suporte 
 ; qstr_bodyguard|bodyguard
 ; qstr_undetermined_type_of|undetermined type of
 
@@ -638,7 +638,7 @@ qstr_A_few_of_your_troops|Um pequeno número de suas tropas estão fugindo da ba
 ; qstr_Gained_permanent_+1_to_S|Gained permanent +1 to Spotting.
 ; qstr_{s11}_recovered_from|{s11} recovered from a serious wound.
 qstr_Volunteers|Voluntários
-; qstr_Reserves|Reserves
+qstr_Reserves|Reservas 
 ; qstr_have_taken_measure_o|have taken measure of your faction's current strength and has grown bolder.
 ; qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
 ; qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.

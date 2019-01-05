@@ -2,7 +2,7 @@ menu_start_game_1|^^^^^^^^^^你为何而战？
 mno_start_good|新纪元的黎明
 mno_start_evil|人类的黄昏
 mno_go_bback|返回
-; menu_start_phase_2|^^^^^Middle Earth. A shadow is growing in the East, ^and dark things come forth that have long been hidden. ^The free peoples prepare for war, the like of which has not been seen for an age. ^Men, Elves, Dwarves and Orcs; all will play their part. ^^What part, however, remains to be seen... 
+menu_start_phase_2|^^^^^中土世界。 黑暗的阴影正在东方蔓延，^潜伏了近一个纪元的邪恶势力重现世间。 ^中土世界的自由之民能否再一次战胜黑暗。 ^人类，精灵，矮人和半兽人，各种势力在这里继续角逐^^现在，正义与邪恶的战争即将拉开帷幕…
 mno_go_forth|向着你选择的道路前进
 menu_start_game_3|^^^^^^^^选择情景：
 mno_custom_battle_scenario_1|小规模冲突，刚铎vs哈拉德
@@ -19,12 +19,12 @@ mno_warg_battle_scenario|座狼测试战
 mno_build_your_own_scene|**建立你的最后之日场景**
 menu_tutorial|^^ 在最后之日中，有部分功能是骑马与砍杀所沒有的。一些细节可以在游戏提示中看到。游戏教程和原版一样。
 menu_tutorial|^^ 在最后之日中，有部分功能是骑马与砍杀所沒有的。一些细节可以在游戏提示中看到。游戏教程和原版一样。
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+mno_tutorial_1|教程#1：基本动作和武器选择。{s1}
+mno_tutorial_2|教程#2：持盾作战。{s2}
+mno_tutorial_3|教程#3：无盾作战。{s3}
+mno_tutorial_3b_door|下一关
+mno_tutorial_4|教程#4：骑马与座狼。{s4}
+mno_tutorial_5|教程#5：指挥一支部队。{s5}
 mno_go_back_dot|返回
 mno_action_view_troop_trees|查看兵种树
 mno_view_upkeep_costs|查看维护费用
@@ -101,10 +101,10 @@ menu_choose_gender|^^^^^^^^^^你的性别？
 mno_start_male|男性
 mno_start_female|女性
 mno_proc|正常进行
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+menu_start_as_one|^^^^^^^^^^你是何种士兵?
+mno_start_default|成为 {s23} （默认）
+mno_start_up1|成为 {s21} （简单）
+mno_start_up2|成为 {s22} （简单） 
 mno_continue|继续...
 menu_character_report|^^^^^部队士气：{reg8} ^部队规模上限：{reg7} ^ {s5}
 menu_camp|^^^^您现在位于{s1}。{s2} ^^您想要做什么？
@@ -320,7 +320,7 @@ mno_leave_bandit_lair|立即离开
 mno_gondor_reinforcement_event_close|关闭
 ; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
 mno_gondor_beacons_close|离开…
-; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+menu_player_added_to_war_council|^^^^^一个信使来了并且告诉你，{s24}，{s2}邀请你成为军事会议的一员。你现在能提出能够影响战争进程的策略了。
 mno_player_added_to_war_council_close|关闭
 ; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
 mno_player_added_to_siege_reports_close|关闭
@@ -340,26 +340,26 @@ mno_raid_villagers|掠夺村庄！
 ; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
 ; mno_attack_scout_camp|Attack the Scout Camp!
 ; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
-; mno_sb_defend_the_town|Board them! Destroy their fleet!
+mno_sb_defend_the_town|登舰！摧毁他们的舰队！
 ; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
 ; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
 ; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
 ; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
-; mno_defend_refugees|Keep your eye out for raiders...
+mno_defend_refugees|注意袭击者……
 ; mno_attack_refugees|Attack the refugee train...
-; mno_leave_refugees|Leave them for now...
+mno_leave_refugees|暂时离开他们……
 mno_evil_war_tut_continue|继续...
 ; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_reject|表示你不能加入他。
 mno_guardian_party_send_word|让信使回去报告，告诉他你很快就会过去。
-; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
-; mno_training_continue|Begin training...
+menu_alternate_training_fight|你的对手将会是{reg5}。准备好了吗？
+mno_training_continue|开始训练……
 ; menu_alternate_training_conclusion|{s5}
-; mno_alternate_training_retry|Try again...
-; mno_alternate_training_finish|Leave the arena...
-; menu_custom_battle_choose_faction1|^^^^^^^^^^Choose your side and advantage:\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_alternate_training_retry|再试一次……
+mno_alternate_training_finish|离开竞技场……
+menu_custom_battle_choose_faction1|^^^^^^^^^^选择你的阵营和优势：
 mno_good_equal|正义阵营
 mno_bad_equal|邪恶阵营
 mno_replay_prev|重选之前的设置

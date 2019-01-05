@@ -1,17 +1,17 @@
-dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão e menos marchas.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para sua linha, seu verme! Estamos em guerra e sou eu que mando.
+dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão e menos marchar.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para as fileiras, verme! Estamos em guerra e eu sou seu comandante.
 dlga_mutiny_pretalk_2:close_window|Como quiser, comandante. Como quiser...
-dlga_start:mutiny_talk_1|Hey, comandante. Escute aqui... Os rapazes não estão felizes, nenhum pouco felizes. Não tem carne humana o suficiente, não tem diversão. Os rapazes dizem que você não é bom o suficiente, comandante!
-dlga_mutiny_talk_1:mutiny_talk_2|O que? Insubordinação durante a guerra? Isso é punido com a morte, verme!
-dlga_mutiny_talk_2:close_window|Nós vamos te dizer uma coisa... Os rapazes aqui acham que eu serei um melhor comandante para eles quando EU MATAR VOCÊ!
+dlga_start:mutiny_talk_1|Ei, comandante. Escute aqui... Os rapaz não estão felizes, nenhum pouco felizes. ^Não tem carne humana o suficiente, não tem diversão. ^Os rapaz diz que você não é bom o suficiente, comandante!
+dlga_mutiny_talk_1:mutiny_talk_2|O que? Insubordinação durante a guerra? Isso é punível com a morte, verme!
+dlga_mutiny_talk_2:close_window|Vamos te dizer uma coisa... Os rapaz aqui acham vou ser melhor comandante para eles quando EU MATAR VOCÊ!
 dlga_start:troll_introduce_1|Algum problema?
-dlga_start:troll_talk_1|Ficou puto?
+dlga_start:troll_talk_1|Tá putin?
 dlga_troll_introduce_1:troll_goodbye|Whoa! Um troll falante?!
 dlga_troll_introduce_1:close_window|Eu tenho um cavalo.
-dlga_troll_talk_1:troll_talk_2|Eu troll, eu sou um troll.
+dlga_troll_talk_1:troll_talk_2|Troll, mim ser troll.
 dlga_troll_talk_1:close_window|Eu tenho um cavalo.
 dlga_troll_talk_2:troll_talk_3|Desafio aceito!^^{s4}
-dlga_troll_beaten:troll_talk_1|Eu me curvo diante de sua inteligência, Mestre dos Trolls Mordedores
+dlga_troll_beaten:troll_talk_1|Eu me curvo diante de sua sabedoria, Mestre Provocador de Trolls!
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Olá novamente, {playername}!
 dlga_start:hobbit_pippin_talk_met|Olá novamente, {playername}!
@@ -24,22 +24,22 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Te dizer, acho que c
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei. Eu vim de longe! Sou um Hobbit, {sir/madam}, from the Shire.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, só pode ter sido o meu querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits, {senhor/senhora}, e nós viemos do Condado, nós dois! Bom e velho Pippin, eu fico imaginando como ele está em Minas Tirith.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, só pode ter sido o meu querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits, {senhor/senhora}, e nós viemos de Shire, nós dois! Bom e velho Merry, eu fico imaginando como ele está em Edoras.
-dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Posso pedir um favor de ti, {meu senhor/senhora}.
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Posso pedir-te um favor, {meu senhor/senhora}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Claro, {s1}. O que é?
-dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Você poderia encaminhar uma mensagem para o meu primo, {s1}? Ele está em {s2}, em {s3}, no serviço de {s4}.
-dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Eu pretendo passar por {s1} e ficarei grato em passar esta mensagem para o teu primo.
-dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Lamento, {s1}, mas não estou com tempo.
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Você poderia encaminhar uma mensagem para o meu primo, {s1}? Ele está em {s2}, em {s3}, a serviço de {s4}.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Estarei passando por {s1} e ficarei feliz em passar esta mensagem para o seu primo.
+dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Lamento, {s1}, mas não tenho tempo.
 dlga_hobbit_general_talk_ask_accept:close_window|Obrigado! {s1}
-dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Entendo, então passarei a minha mensagem para a próxima caravana indo em direção a {s1}.
+dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Eu entendo. Mandarei para a próxima caravana em direção a {s1} então.
 dlga_hobbit_general_talk_3:close_window|Bom, adeus!
 dlga_start:hobbit_merry_talk_met.1|Bem-vindo de volta, {nome do jogador}!
 dlga_start:hobbit_pippin_talk_met.1|Bem-vindo de volta, {nome do jogador}!
 dlga_hobbit_merry_talk_met:hobbit_deliver_message|Olá, messer Merry. Tenho uma mensagem do teu primo, Pippin, em Minas Tirith.
 dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Olá, messer Pippin. Tenho uma mensagem do teu primo, Merry, em Edoras.
-dlga_hobbit_deliver_message:close_window|Obrigado, {playername}. Foi ter trazido isso para mim.
+dlga_hobbit_deliver_message:close_window|Obrigado, {playername}. Foi bom você ter trazido isso para mim.
 dlga_hobbit_merry_talk_met:close_window|Olá, messer Merry.
 dlga_hobbit_pippin_talk_met:close_window|Olá, messer Pippin.
-dlga_start:treebeard_introduce_1|(Você percebe que está observando criatura extraordinária. Ele é muito alto e com membros rígidos, pele de casca e cabelo de folhas. Parte de seu corpo é coberto de musgo. Mas o que você mais repara são os olhos. Os olhos profundos estão inspecionando você, devagar e solenes, mas muito afiados e penetrantes. Você acha que são marrons, meio esverdeados, como se tivesse um enorme poço atrás deles, repleto de memórias e longos, vagarosos pensamentos constantes. Mas a superfície de seus olhos brilha com o presente... como o sol brilhando na parte de fora das folhas de uma vasta árvore, ou as ondulações de um lago profundo.)
+dlga_start:treebeard_introduce_1|(Você se encontra observando uma criatura extraordinária. Ele é muito alto e com membros rígidos, pele de casca e cabelo de folhas. O musgo cobre partes de seu corpo. Mas no momento o que você mais repara são os olhos. Os olhos profundos estão te inspecionando, cautelosos e solenes, mas muito afiados e penetrantes. Você acha que são marrons, raiados de verde, como se houvesse um enorme poço atrás deles, repleto de eras de memórias e longos, vagarosos pensamentos constantes. Mas na superfície seus olhos fulguram com o presente... como o sol cintilando nas folhas da copa de uma vasta árvore, ou as ondulações de um lago muito profundo.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Você está prestes a dizer algo, mas uma estranha sensação sufocante recai sobre você, como se o ar é muito rarefeito ou demasiado escasso para respirar... com uma inspiração quase desesperada de ar consegue agitar frouxamente o sentimento e a criatura enorme árvore cai a intensidade do seu olhar um pouco mais. A criatura continua a olhar para você e você notar que as outras criaturas de árvore enorme estão olhando para você também, como se esperasse que fale...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Perdõe minha intrusão... não sou mais do que um cansado viajante procurando refúgio dos eventos recentes... meu nome é {playername}. Posso perguntar quem você é?
 dlga_treebeard_introduce_3:treebeard_introduce_4|(A duro-limbed árvore gigante lentamente abre sua boca que está escondida atrás de pequenos ramos, folhas e musgo. Com uma voz muito profunda, lenta e em franca expansão, ele expõe muito lentamente de forma mais dominante:) ^ ' Hrooom... Hmmm... * Eu * não vou dizer o meu nome... ainda não de qualquer forma. Por um lado, levaria muito tempo. Meu nome está crescendo o tempo todo e eu vivi um tempo muito longo; Então, meu nome é como uma história. Nomes reais contar a história das coisas que pertencem na minha língua, no velho Entês, como vocês dizem. É um lindo idioma, mas demora muito tempo a dizer nada, porque não dizemos nada, a não ser que vale a pena levar muito tempo para dizer e ouvir.'

@@ -62,10 +62,10 @@ str_tutorial_ammo_refilled|Munizioni Ricaricate.
 ; str_tutorial_5_msg_6|Excellent! You have completed your first field battle in Mount & Blade. Intelligent command of your troops in battle is paramount to your success as a commander in battle. Make sure to learn the different how to move your troops in advantageous positions.^^In The Last Days of the Third Age, there are complex formations for more advanced maneouvers such as Infantry Shieldwall and Cavalry Wedges. You can learn more about it in-game.^^You can press TAB anytime to leave the tutorial.
 ; str_trainer_help_1|This is a training ground where you can learn the basics of the game. Use A, S, D, W keys to move and the mouse to look around.
 ; str_trainer_help_2|To speak with the trainer, go near him, look at him and press the 'F' key when you see the word 'Talk' under his name. When you wish to leave this or any other area or retreat from a battle, you can press the TAB key.
-; str_custom_battle_1|Angbor the Fearless and his Gondor company intercepted a Harad reinforcement group. Shouting out his warcry, he spurs his horse forward, and leads his loyal men to a fierce battle.
-; str_custom_battle_2|Celeborn from Lorien is leading a patrol of horsemen and archers when a forward lookout brings a warning of a force of ash-faced evil men approaching. It's the dreaded Black Numenoreans! Those were not seen near Lothlorien for ages, but now they must be driven back to the neverworld.
+str_custom_battle_1|Angbor l'Impavido e la sua compagnia di Gondor hanno intercettato dei rinforzi di Harad. Lanciando il suo grido di guerra, sprona avanti il suo destriero e guida i suoi leali soldati verso una feroce battaglia.
+str_custom_battle_2|Celeborn da Lorien guida una pattuglia di cavalieri e arcieri quando una vedetta in avanscoperta li avverte della malvagia presenza di una forza composta da uomini dal volto cinereo in avvicinamento. Si tratta dei temuti Numenoreani Neri! Da tempo immemore non venivano visti nei pressi del Lothlorien, ma ora devono essere ricacciati nell'oblio.
 str_custom_battle_3|Lord Grimbold di Rohan sta guidando l'ultima disperata difesa delle mura contro le armate di Isengard. Gli assedianti si stanno ora preparando per l'assalto finale alle mura, e lui dovrà difenderle con il coraggio e l'acciaio.
-; str_custom_battle_4|When the scouts inform Lord Beranhelm of the approach of a Rhun war band, he decides to quickly prepare the defences of his camp and try to hold against superior numbers.
+str_custom_battle_4|Quando gli esploratori di Lord Beranhelm lo informano dell'avvicinamento di una compagnia armata di Rhun, egli rapidamente decide di approntare le difese del suo campo nel tentativo di resistere a forze soverchianti.
 str_custom_battle_5|Ugluk ha portato i suoi feroci ochi da Ovest con la promessa di un bottino. Se quest'oggi riuscirà a far cadere questa roccaforte nanica, a Barad-Dur saranno enormemente soddisfatti.
 str_custom_battle_6|Ugluk e la sua squadra di orchi razziatori sono stati schivi il più possibile per evitare le pattuglie Elfiche. Ma la fortuna non può durare per sempre e sembra che quei luridi pelle-chiara avranno ciò che gli spetta ora.
 str_custom_battle_7|I Corsari hanno allestito il loro campo sulle rive di Gondor ! Come hanno osato. Assaliamoli prima che possano stabilire una testa di ponte e possano ricevere rifornimenti, dobbiamo rispedirli in mare, al quale appartengono.
@@ -349,7 +349,7 @@ str_npc5_intro|I miei saluti {playername}. Mae govannen !
 str_npc6_intro|Lasciami in pace, straniero, non desidero parlarti.
 str_npc7_intro|Kili, figlio di Dwalin, al tuo servizio !
 str_npc8_intro|Benvenuto a Dale, viandante ! Come posso aiutarti ?
-; str_npc9_intro|Ssh! If you so much as wave to the guards, I'll slice out your gizzard and feed it to the wargs!
+str_npc9_intro|Ssh! Se fai tanto di attirare le guardi, ti sgozzo e ti do in pasto ai mannari!
 str_npc10_intro|Tu!
 str_npc11_intro|Arr! Non sei di queste parti, vero ? Posso capirlo dall'odore e se provi a dire che non è così di fronte agli altri ti strappo gli occhi!
 str_npc12_intro|Oho ! Cosa pensi di fare nascosto qui ?
@@ -407,11 +407,11 @@ str_npc12_backstory_a|Sono al comando di un gruppo qui. Il mio nome è Gorbag e 
 str_npc13_backstory_a|Io ? Sono un granello di terra dalle sabbie del sud, spinto a nord dai freddi e oscuri venti della notte. Mi chiamo Lykyada, sono un Lord Serpente di Haradwaith. Lord del Serpente d'Oro, veleno della tribù del Serpente Nero, ora alleato per servire i voleri dell'Oscuro Signore.
 str_npc14_backstory_a|Il mio nome è Fuldimir, figlio del regno meridionale di Umbar, a sud di Harondor, e della Baia di Belfalas; tutti e due sono casa per me e il mio popolo. Siamo i signori del mare e della vela, per alcuni siamo Corsari, figli della Baia di Belfalas le cui acque dominiamo.
 str_npc15_backstory_a|Sono Bolzog il Dotato, Incastonatore d'Ossa, Prossimo alle ferite e Sciamano della guarigione. Se andrai in guerra per l'Occhio, senza dubbio tu e i tuoi compagni sarete feriti dai volti pallidi o dagli amanti dei cavalli. Ora, -nar-nar-nar! - gli Orchi li rimpiazzi con facilità, Grande Capo, ma puoi rimpiazzare un Warg ? Un Gigante ? Un Troll delle caverne ? Shi-Shi ! No ! Hai bisogno di me, del Grande Bolzog !
-; str_npc16_backstory_a|Well now, it is the stranger who should declare himself first. Nevertheless, I am Varfang of the Balchoth kin... I can tell that you have not yet heard the songs or tales of my land that speak the name of the Balchoth, for the very name would check your courage and fill your heart with woe.
+str_npc16_backstory_a|Beh, veramente dovrebbe essere lo straniero a dichiararsi per primo. Nondimeno, dirò che sono Varfang dei Balchoth.. Posso immaginare che tu non abbia ancora ascoltato le canzoni e i racconti che parlano dei Balchoth, altrimenti udirne il solo nome avrebbe dovuto mettere alla prova il tuo coraggio e riempire il tuo cuore di terrore.
 str_npc17_backstory_a|Mi chiamano Dímborn e lavoro nella foresta. Qui è bello. Mi piacciono le foreste. Ci sono tanti alberi. A me piacciono gli alberi. Ho lavorato nelle foreste per tutta la vita, perché sono forte e perché mi piacciono gli alberi.
 str_npc1_backstory_b|Devi sapere che sono un Ranger di Ithilien di discendenza e di valore Dúnedain. Ho esperienza nel seguire tracce e nell'esplorazione, le mie abilità con arco e spada sono ben note agli Orchi. Sono anche in grado di addestrare ogni anima che vorrà combattere l'Ombra che si approssima.
 str_npc2_backstory_b|Sono stato addestrato in qualità di guardiano di Minas Tirith, per mantenere l'ordine nella Città Bianca e servire il lord Sovrintendente.
-; str_npc3_backstory_b|I am a Rider of the Westfold éored - they left without me on a long patrol to the Isen fords. I know their conduct will be worthy of the green banner, but I fear many won't return.
+str_npc3_backstory_b|Sono un cavaliere dell'éored dell'Ovestfalda - sono partiti senza di me diretti ai guadi dell'Isen. So che si comporteranno in modo degno della verde bandiera, ma temo che molti fra loro non faranno ritorno.
 str_npc4_backstory_b|Ho avuto i miei natali in una nobile famiglia e ho servito Lady Éowyn come damigella d'onore da quando eravamo piccole. I nostri padri furono tanto saggi da permetterci di addestrarci con i nostri fratelli al combattimento, per diventare scudiere di Rohan.
 str_npc5_backstory_b|Lord Elrond mi ha inviato come emissario a Lord Celeborn, per avvisare che è richiesto il suo intervento in guerra in questa parte del Rhovanion.
 str_npc6_backstory_b|Mi piace percorrere i sentieri nascosti nella nostra splendida foresta. Alle volte passeggio tranquillamente fra gli alberi e osservo la vita dei molti animali del bosco. Il canto di un raro volatile o i rumori di un cinghiale nella sua tana, sono per me belli come il clangore delle armi o le alte mura di Edain.
@@ -424,7 +424,7 @@ str_npc12_backstory_b|Quei Nazgul mi danno i brividi. Ti fanno uscire il corpo d
 str_npc13_backstory_b|Ho visto di recente come la parola dell'Oscuro Signore si è sparsa nella mia famiglia, e come si è insinuata nelle loro menti e nei loro cuori. Molti sono stati portati nelle sue tenebre, e al posto del loro coraggio è cresciuto un insaziabile appetito per la violenza, così che quando le loro orecchie udirono la sua chiamata, questi burattini furono pronti a rispondere.
 str_npc14_backstory_b|Molte cose mutano in un uomo che cavalca i tumulti dei venti e dei mari delle acque di Belfalas, e coloro che restano a combattere contro di lei saranno come bambini. È per uomini robusti l'andare incontro alla tempesta e cavalcarla. Ho posato i miei occhi sulla sua marea più scura e ne sono rimasto il dominatore.
 str_npc15_backstory_b|Molte lune fa, quando ero fresco come un fiore appena nato, il mio antenato guidava la tribù giù nelle miniere, dove i nani sono morti di recente. Uno Spettro di Fuoco era passato, e l'ambiente era confortevole e accogliente. Prosperammo, ma ogni tanto un crudele avventuriero o un eroe nano, veniva e uccideva e mutilava alcuni di noi nei nostri pacifici tunnel. Le mie mani hanno imparato a chiudere una ferita di spada o di ascia, e la mia mente ha appreso come vedere la linea tra le ossa e i tendini benché nascosta. Oggi posso creare una pozione o mettere a posto una frattura con la stessa abilità.
-; str_npc16_backstory_b|The Balchoth were a fierce race of men from my home land, slaughtered by these westerlings to all but a few men. Chased down like beasts of burden as food for their blades. The blood spilt by those blades is the same blood that flows within me, for within me their house continues.
+str_npc16_backstory_b|I Balchoth erano una razza fiera proveniente dalla mia terra natale, massacrati da questi westerlings fino a non farne rimanere che pochi. Inseguiti come bestie e cibo per le loro spade. Il sangue versato da quelle lame è lo stesso che scorre dentro di me, poiché tramite me la loro stirpe vive ancora.
 str_npc17_backstory_b|Puoi fare uscire molte cose dagli alberi, sai. È quello che faccio io. Lavoro con gli alberi e faccio uscire delle cose dagli alberi. Anche dai cespugli a volte. Ma mi piacciono di più gli alberi.
 str_npc1_backstory_c|Tuttavia, temo che la nostra condizione sia disperata - siamo sovrastati dagli avversari qui in Ithilien senza rinforzi o audaci azioni da parte del nostro Sovrintendente. Vorrei aiutare dove le mie azioni hanno più efficacia, se il mio Capitano Faramir mi lasciasse andare.
 str_npc2_backstory_c|Quali che siano i miei compiti qui, sono piuttosto ansioso di vedere il combattimento dal vivo e... Elfi e alberi parlanti e Olifanti ! Sembri una persona navigata, comandante, e non lo dico solo per l'aspetto, si capisce. Imparo in fretta e so cucinare.. Beh, quanto basta per i soldati, ecco. Sbaglio o stavate cercando dei volontari ?
@@ -457,8 +457,8 @@ str_npc11_backstory_later|Ar ! Sei tu ! Ho sentito il tuo odore, sapevo che stav
 str_npc12_backstory_later|Ho i miei ordini. Chiunque cerchi di passare verrà fatto a pezzi dai miei compagni; denti, unghie, capelli e tutto il resto. Ma ho le mie vedette. Sappiamo che stanno succedendo cose interessanti: i grandi capi che sono partiti per la guerra e tutte queste faccende. Cose grosse stanno succedendo a ovest, dicono. Stare qui seduto a far niente è più di quello che la mia pancia possa sopportare.
 str_npc13_backstory_later|Quello che faccio va bene alla causa oscura, e ancora una volta quelli del nord temono il sud. Vedo grandi vittorie di fronte a noi, fiumi di sangue seguono la nostra scia. Ma ad ogni vittoria vedo i miei consanguinei corrotti, i loro cuori inclinati alla sua malvagità. La vista di tutto questo mi porta alla disperazione.
 str_npc14_backstory_later|Sei tornato, straniero, forse è un presagio. Ho letto nelle acque, le ho viste oscurarsi. Il mare cambia gli occhi di un uomo, e gli insegna a usare i suoi occhi per comprendere il suo linguaggio.
-; str_npc15_backstory_later|Many have been the great ones who have begged to be healed by my potions. Horselovers and the pale-faced elves are many though, and I have had to abandon my hut once more, and am... well, Great Lord, I am not so lucky as when we fought together, and you were grateful for my skills...
-; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
+str_npc15_backstory_later|Molti sono stati i grandi che hanno supplicato per essere sanati dalle mie pozioni. Molti fra gli amanti dei cavalli e gli elfi dal pallido volto, e ho dovuto abbandonare la mia casa ancora una volta,  e sono.. Beh, Gran Signore, non ho più la stessa fortuna di quando combattevamo insieme, e voi avevate gratitudine per le mie abilità...
+str_npc16_backstory_later|A lungo la storia del mio popolo ha raccontato le vicende di queste terre. Non so cosa dicano le loro infide storie riguardo i giorni che precedettero l'ingresso della mia gente in queste lande, ma amari e oscuri saranno le loro vicende ora che il mio popolo vi entra. Con una tempesta di zoccoli che scalpitano e spade e frecce, li trascineremo alla rovina come i Balchoth prima di noi.
 str_npc17_backstory_later|Ho visto un pino molto vecchio l'altro giorno. I pini possono raggiungere un'età molto avanzata. Si devono rispettare i vecchi alberi. Ho visto alcuni che non hanno alcun rispetto per gli alberi. Tu hai rispetto, vero ?
 str_npc1_backstory_response_1|Se potesse concederti licenza, avrei davvero bisogno di un guerriero ed esploratore esperto.
 str_npc2_backstory_response_1|Dici il vero, sto cercando volontari.
@@ -605,7 +605,7 @@ str_npc7_morality_speech|Non ho gradito la tua decisione di {s21}. Cadere in bat
 str_npc8_morality_speech|Comandante, devo obiettare. {s21} è crudele e inutile per gli uomini. Faccio quello che posso per alleviare le loro sofferenze, ma ti prego di non fare altri dispendiosi errori.
 str_npc9_morality_speech|Gli Uruk-Hai combattenti decidono mai di {s21}. Se il capo mostra poco coraggio, potrebbe trovarsi solo nel cuore della notte. Gulm ha parlato.
 str_npc15_morality_speech|Puoi pensare che Bolzog il Grande può curare tutto, {playername}, ma anche io ho i miei limiti ! Se continui a {s21} anche il mio talento avrà difficoltà ! Devi darmi una mano ! Non posso far risorgere i morti, se muoiono o vengono fatti a pezzi !
-; str_npc1_2ary_morality_speech|Captain, I have been raised as a Dúnadan, both in valor and honour. I would prefer if we don't {s21}.
+str_npc1_2ary_morality_speech|Comandante, sono stato creciuto come Dúnadan, sia nel valore che nell'onore. Preferirei che noi non {s21}.
 str_npc4_2ary_morality_speech|Chiedo scusa, comandante. Le donne del mio rango possono accettare la morte, ma non il disonore. Che {s21} porta la vergogna alla mia casata e ai miei antenati.
 str_npc15_2ary_morality_speech|Hi-hi-hi ! Sei furbo, mio Signore ! Hai preso l'oro e annuendo hai detto 'si padrone'.. Ma per tutto il tempo hai progettato questo ! Hi-Hi ! Solo, dobbiamo fare attenzione, che il Grande Capo non si accorga che l'hai ingannato..
 str_npc1_personalityclash_speech|Ho già detto che odio {s11} ?
@@ -693,7 +693,7 @@ str_npc14_personalitymatch_speech|Ho già detto che mi piace {s11} ?
 str_npc15_personalitymatch_speech|Ho già detto che mi piace {s11} ?
 str_npc16_personalitymatch_speech|Ho già detto che mi piace {s11} ?
 str_npc17_personalitymatch_speech|Umm, capo. Penso che {s11} possa cavarsela bene nei boschi. Sa distinguere un frassino da un salice.
-; str_npc1_personalitymatch_speech_b|I find the company of {s11} very pleasing and her native woodcraft a rare glimpse of what remains of Sindarin skills in the world. You know, my father named me after the legendary Sindarin Elf captain serving King Thingol of Doriath and I always feel a special bond to the fair race.
+str_npc1_personalitymatch_speech_b|Ho trovato la compagnia di {s11} molto gradevole e che il loro legno nativo sia un raro scorcio di ciò che rimane delle abilità dei Sindarin nel mondo. Sai, mio padre mi ha chiamato dopo il leggendario capitano degli Elfi Sindarin al servizio di Re Thingol di Doriath e io ho sempre percepito un legame speciale verso l'antica razza.
 str_npc2_personalitymatch_speech_b|I miei mi raccontavano sempre storie sui Ranger di Ithilien e ora posso vedere da me che sono tutte vere. Se tutte lo sono {s11}, sento che Gondor è più al sicuro.
 str_npc3_personalitymatch_speech_b|Comandante, come favore personale, posso chiederti di ordinare a {s11} di rimanere più vicino alla retroguardia, nella prossima battaglia ? Non sopporterei di vederla ferita, e non è la birra che parla.
 str_npc4_personalitymatch_speech_b|Salvare vite è l'atto più nobile che ci sia, e mi sento affine a quell'anima gentile, benché i nostri mondi siano distanti tra loro.
@@ -748,7 +748,7 @@ str_npc1_home_intro|Capitano, ci stiamo avvicinando ad Osgiliath, cerchiamo quin
 str_npc2_home_intro|Sii vigile comandante, quella dovrebbe essere Minas Morgul. Non senti qualcosa che ci sta osservando ?
 str_npc3_home_intro|Una parola, comandante. Iniziamo ad avvicinarci nell'Entobosco... i cavalli sono sempre più irrequieti, mio signore. Alcuni la chiamano la foresta di Fangorn.
 str_npc4_home_intro|Fermiamoci qui per un minuto, comandante. Davanti di noi, tra l'Anduin e Limlight, si trova il Campo di Celebrant, dove Eorl il Giovane accorse in aiuto dei nostri alleati di Gondor.
-; str_npc5_home_intro|Daro! That's Angrenost and the black tower of Orthanc ahead. Much has changed since I last saw them, and none for the better.
+str_npc5_home_intro|Daro (alt)! Ecco la fortezza di Angrenost e, al centro d'essa, svetta la torre di Orthanc. Molte cose sono cambiate dall'ultima volta che ho visto questo luogo, e nessuna d'esse in bene.
 str_npc6_home_intro|Perdonami, {playername}. I sentieri da questa parte diventano più contorti, alcuni di questi portano a vicoli ciechi. Ci stiamo avvicinando a Dol Guldur.
 str_npc7_home_intro|Hey, capitano ! Questo dev'essere il vecchio sentiero che va fino all'entrata orientale di Khazad-dûm, o Moria, se preferisci. Si può vedere in lontananza il lago scintillante di Kheled-zâram, e attraverso le nuvole, i tre picchi, conosciuti da queste parti come le Montagne Nebbiose.
 str_npc8_home_intro|Oh, un fatto curioso ! Ho sentito storie di questo posto, dove robusti boscaioli vivono in armonia con piante e animali. Si chiamano Beorniani, credo.
@@ -766,7 +766,7 @@ str_npc2_home_description|Venne chiamata Minas Ithil molti anni fa, le storie ra
 str_npc3_home_description|È fatta di tronchi e rami e di ogni sorta di alberi, e io non voglio avventurarmi lì dove ci sono strane creature che vagano per la foresta, soprattutto se non tutte sono innocue.
 str_npc4_home_description|' Dove sono ora il cavallo ed il cavaliere ? dove si trova il corno che soffiava ? ^ dove si trova il timone e l'usbergo e i brillanti capelli ?... ^ sono passati come pioggia sulla montagna, come vento nel prato; ^ i giorni sono passati nell'ovest all'ombra delle colline... '
 str_npc5_home_description|Fu costruita dal Regno del sud, ora è la casa di uno che abbiamo chiamato lo Stregone Bianco, e il come faccia ad aumentare così tanto il suo potere a scapito degli altri è intrigante, senza dubbio.
-; str_npc6_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazgul here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
+str_npc6_home_description|Non mi sono mai avventurato a queste distanze, ma ho udito dai nostri esploratori di Boscoverde che possono esserci dei Nazgul qui. Percepisco una presenza malvagia, ma non riesco a darle un nome. È potente, in ogni caso, quindi restiamo desti.
 str_npc7_home_description|A giudicare dalla desolazione e a tutte queste tracce di orchi, ho paura per il destino del coraggioso Balin e della sua spedizione. Sembra che Moria sia caduta nell'ombra, dovremmo procedere con cautela.
 str_npc8_home_description|Non troppo spesso, un mercante itinerante arriva al mercato di Dale e offre il più buon miele che abbia mai assaggiato. Per qualche curioso motivo, dice che "è stato fatto dagli orsi", e ride.
 str_npc9_home_description|Le sue dannate mura sono troppo alte e resistenti per essere abbattute dal mio martello. Ritengo che se dovessimo mai scacciare gli ometti dai loro porcili in Edoras, fuggirebbero quaggiù per rifugiarsi dietro le mura.
@@ -787,13 +787,13 @@ str_npc6_home_description_2|Sento gli eserciti del male dietro le loro mura, pro
 str_npc7_home_description_2|Se le sorti della guerra ci provvedessero una grande armata, dovremmo tentare di accedere alle Miniere e recuperarne i grandi tesori.
 str_npc8_home_description_2|Posso sentire il profumo di molti dolci fiori e vedere le api che ne raccolgono il nettare. Se non ti spiace, raccoglierò alcune erbe per noi tutti, ci vorrà solo un momento.
 str_npc9_home_description_2|Non ha senso arrancare qui attorno senza avere con noi una grossa orda di Uruk-Hai. Sempre che non ti vada di fare delle smorfie alle guardie sulle mura, ecco.
-; str_npc10_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+str_npc10_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har!
 str_npc11_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
 str_npc12_home_description_2|L'Orthanc non sembra un gigante.. O qualcosa del genere ?
-; str_npc13_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc14_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc15_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc16_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+str_npc13_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har!
+str_npc14_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har!
+str_npc15_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har!
+str_npc16_home_description_2|Minas Morgul, dove i Nazgul bevono ogni giorno, har-har!
 str_npc17_home_description_2|Potrei fabbricare un bel tubo. Lo vuoi un tubo ?
 str_npc1_home_recap|Sono nato e cresciuto in Ithilien , da una lunga stirpe di guerrieri risalente al Dúnedain meridionale.
 str_npc2_home_recap|Sono Nato a Minas Tirith, in una famiglia umile, ma orgogliosa.
@@ -1279,7 +1279,7 @@ str_gondor_rumor_13|Non riferire a nessuno che ho detto questo, ma penso che il 
 str_gondor_rumor_14|La gente dice che i Nove sono usciti da Minas Morgul ancora una volta. Vorrei che avessimo più comandanti coraggiosi come Boromir per comandare i nostri uomini in battaglia contro questi antichi nemici.
 str_gondor_rumor_15|Gli Uomini del Sud ci stanno spingendo fuori da Harondor. Hanno compiuto pesanti razzie per un periodo di tempo. Vorrei poter passeggiare di nuovo in sicurezza per i campi di Lebennin. Ma ci è stato detto "No.", perché i nostri soldati devono proteggere il cuore del regno.
 str_gondor_rumor_16|L'amico di mio cugino è un arciere al servizio di Hirluin il Giusto. Hanno di gran lunga le più belle uniformi, lascia che te lo dica.
-; str_gondor_rumor_17|Those who dwell in the deep vale of the Morthond are accustomed to the shadows. I heard that they see well at night.
+str_gondor_rumor_17|Chi abita nella profonda valle del Morthond è abituato all'ombra. Ho sentito che vedono bene di notte.
 str_gondor_rumor_18|Siamo gente sincera, noi di Gondor. Ci vantiamo di rado di qualocosa, passiamo ai fatti, o moriamo tentando.
 str_dwarf_rumor_begin|Ci chiedono se i nani hanno amici. Certo che abbiamo degli amici. Ma non ci piacciono.
 str_dwarf_rumor_2|Orchi ? Pfft ! Grasso per le asce, ecco cosa sono.
@@ -1354,7 +1354,7 @@ str_rhun_rumor_12|Gli orchi sono bestie immonde senza abiiltà né coraggio. Non
 str_rhun_rumor_13|Qual'è il meglio nella vita ? Schiacciare i nemici, inseguirli mentre fuggono e ascoltare i lamenti delle femmine.
 str_dunland_rumor_begin|Non riposeremo finchè non avremo vendetta e le teste di paglia saranno in ginocchio !
 str_dunland_rumor_2|I bastardi dei Rohirim sono gentili con i loro cavalli la notte ! Ha ha ha !
-; str_dunland_rumor_3|Night Wolfs can see in the darkness. Even at night, their throwing spears never miss their target.
+str_dunland_rumor_3|I Lupi della Notte possono vedere nell'oscurità. Financo la notte, le loro aste da lancio non mancano mai il bersaglio.
 str_dunland_rumor_4|Morte ai Forgoil ! Morte ai Testadipaglia ! Morte ai ladri del Nord !
 str_dunland_rumor_5|Adesso la chiamano Rohan, ma era la nostra terra ancestrale ! Noi vendicheremo i nostri Antenati e cacceremo quei sporchi ladri di terre !
 str_dunland_rumor_6|Non lasciare che Forgoil ti prenda, o ti tortureranno e ti bruceranno vivo !
@@ -1376,7 +1376,7 @@ str_beorn_rumor_9|Abbiamo dormito durante lo scorso inverno. Cosa ? Si, hai biso
 str_beorn_rumor_10|Gli uomini di Rohan sono nostri parenti, gli orsi sono nel nostro sangue, i goblins sono la nostra preda !
 str_beorn_rumor_11|Mutarci in orsi ? È ovvio che non possiamo. Chi ti ha detto una cosa simile ? Ha ha ha !
 str_beorn_rumor_12|Beorn era un grande uomo. No, non un uomo, un gigante !
-; str_beorn_rumor_13|The best and boldest woodmen warriors do not fear the shadows of the forest. They can fight in the darkness just as well as orcs and other filth who stalk the woods.
+str_beorn_rumor_13|I migliori e più audaci guerrieri del bosco non temono le ombre della foresta. Essi possono combattere nell'oscurità bene quanto gli orchi e le altre oscenità che si aggirano tra i boschi.
 str_beorn_rumor_14|Non andartene in giro da solo per le montagne ! Orsi e lupi stanno alla larga dai grossi gruppi di uomini. Ma la fame, o in alcuni giorni.. l'ombra degli spiriti, può spingerli abbastanza vicini da attaccarti.
 str_lorien_rumor_begin|Oh Lórien ! L'inverno sta arrivando, il giorno nudo e privo di foglie; le foglie cadono nel torrente, il flume le trascina via.
 str_lorien_rumor_2|Non parlare in modo malvagio di Lady Galadriel ! Non c'è in lei e in questa terra alcun male, a meno che un uomo non lo porti cons sé. Quindi fa attenzione !
@@ -1454,7 +1454,7 @@ str_moria_rumor_10|Non c'è molto cibo a Moria. Siamo affamati. Dobbiamo cattura
 str_moria_rumor_11|Alcuni sono entrati nella foresta a sud. Nessuno è tornato.
 str_umbar_rumor_begin|Tutti i mari apparterranno alle vele nere !
 str_umbar_rumor_2|Non ci sono più navi di Gondor da affondare, ora andiamo a predare l'entroterra.
-; str_umbar_rumor_3|Our Night Raiders can fight in the dark just as well as in broad daylight. They lead our scouting parties far inland.
+str_umbar_rumor_3|I nostri Predoni della Notte possono combattere nell'oscurità quanto alla piena luce del giorno. Essi conducono i nostri esploratori nell'entroterra.
 str_umbar_rumor_4|I Gondoriani non possono navigare ! Hanno gambe buone solo per stare a terra.
 str_umbar_rumor_5|Abbiamo già ucciso re di Gondor in passato. Ora non hanno nemmeno un re per noi da uccidere.
 str_umbar_rumor_6|I perfidi Gondoriani hanno dato alle fiamme la nostra flotta, anni fa. Ora sarà Gondor a bruciare.
@@ -1486,7 +1486,7 @@ str_good_rumor_9|Amon Hen è il più occidentale delle tre cime del confine meri
 str_neutral_rumor_begin|Domani tutto potrebbe cambiare...
 str_neutral_rumor_2|Le Paludi Morte.. Un luogo contaminato e malato.
 str_neutral_rumor_3|Queste terre erano molto differenti, una volta.
-; str_neutral_rumor_4|Men fight weaker at night. But there are some who are used to seeing in the dark.
+str_neutral_rumor_4|Gli uomini combattono con meno forza la notte. Ma ce ne sono alcuni che sono abituati a vedere al buio.
 str_evil_rumor_begin|Gli orchi combattono meglio di notte, gli uomini combattono meglio di giorno.
 str_evil_rumor_2|Combatti i cavalieri con la picca, i fanti con le frecce e gli arcieri con lo scudo !
 str_evil_rumor_3|Le grandi statue dei deboli sul grande fiume non resteranno in piedi a lungo.
@@ -1791,7 +1791,7 @@ str_trait_desc_accursed|Senti che hai provocato la collera delle potenze aldilà
 str_trait_title_stealthy|Silenziosamente
 str_trait_desc_stealthy|Hai sviluppato una sconcertante abilità nell'arte dell'infiltrarsi silenziosamente. Ricevi un bonus per la tua silenziosità valutato quando intraprendi missioni stealth.
 str_trait_title_berserker|Berserker 
-; str_trait_desc_berserker|After many battles where you eschewed the use of armor your ferocious will has become like iron. While fighting lightly armoured, each slain foe fills you with grim vigor.
+str_trait_desc_berserker|Dopo molte battaglie in cui hai ignorato l'uso di un'armatura, la tua feroce determinazione è divenuta come il ferro. Mentre combatti con leggere protezioni, ogni nemico ucciso ti riempe di risoluto vigore.
 str_trait_title_infantry_captain|Capitano di Fanteria
 str_trait_desc_infantry_captain|Hai sviluppato una sconcertante abilità nel comando della fanteria. Grazie al rigoroso e specializzato allenamento molte truppe riceveranno un piccolo miglioramento di vita una volta a battaglia.
 str_trait_title_archer_captain|Capitano degli Arcieri

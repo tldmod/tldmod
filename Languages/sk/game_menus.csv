@@ -126,7 +126,7 @@ mno_game_options_death|Velitelia všetkých frakcií a spoločníci môžu trval
 mno_game_options_death2|Hráč (TY!) môže trvale zomrieť: {s7}
 mno_game_options_morale|Systém morálky v bitkách: {s7}
 mno_game_options_animal_ambushes|Prepadnutia divokými zvieratami: {s7}
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
+mno_game_options_horse_ko|Správy i zranení padlého jazdca: {s7}
 mno_game_options_bright_nights|Jasnejšie noci: {s7}.
 mno_game_options_camera_pref|Preferovaný kamerový režim: {s7}.
 mno_game_options_tweaks|Úpravy hratelnosti...
@@ -135,7 +135,7 @@ mno_game_options_start_back|Späť.
 menu_camp_tweaks|^^^^^^^^Vyber si možnosť ktorú by si chcel upraviť
 mno_tweak_options_compat|Úpravy kompatibility...
 mno_tweak_options_strat|Úpravy stratégie...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_tweak_options_battlefield_ai|Zlepšenia AI v bitke...\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_tweak_options_back|Späť do menu nastavení.
 menu_camp_compat_tweaks|^^^^^^^^Klikni na možnosť pre zmenu (podrž shift pre zníženie):^(toto slúži pre zlepšenie kompatibility na počítači a nie sú to cheaty)
 mno_game_options_compat_party|Maximálny počet družín na mape: {s1}
@@ -144,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Klikni na možnosť pre prepnutie:^(pozor: toto s
 mno_strat_tweaks_siege_reqs|Požadovaná sila pre obliehanie: {s7}
 mno_strat_tweaks_siege_relax_rate|Rychlosť znižovania požiadavkov pre obliehanie: {reg1}
 mno_strat_tweaks_regen_rate|Rychlosť obnovy síly frakcie: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
+mno_strat_tweaks_siege_regen_limit|Sila frakcie sa začne obnovovať pomalšie na: {reg1}
 mno_strat_tweaks_influence_gain_rate|Hodnota získaného Vlivu: {s7}
 mno_strat_tweaks_rank_gain_rate|Hodnota získanej Hodnosti: {s7}
 mno_strat_tweaks_back|Späť do menu úprav.
@@ -284,7 +284,7 @@ mno_isengard_underground|Ísť do podzemných jaskýň.
 mno_tirith_toplevel|Vyšplhať na horné poschodie.
 mno_town_leave|Odísť...
 mno_town_leave_door|Opustiť oblasť
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|Zaútočil si na mesto pod zástavou {s2}.
 menu_disembark|Praješ si vystúpiť?
 mno_disembark_yes|Áno.
 mno_disembark_no|Nie.
@@ -316,15 +316,15 @@ mno_explore|Preskúmať toto miesto.
 menu_ring_hunter_lair|^^^^Následoval si stopy Lovcov Prsteňa skrz Temnohvozd a dorazil si k {s1}. Vidíš ich, ako sa pripravujú na odchod s truhlicou.
 mno_attack_lair|Zaútočiť na nich teraz.
 mno_leave_bandit_lair|Zatiaľ ich nechať.
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
+menu_gondor_reinforcement_event|^^^^^Majáky Gondoru vzbĺkli, Minas TIrith volá o pomoc!^^Lordi z panstiev na juhu vypochodujú na sever, aby ubránili Biele Mesto pred blížiacou sa temnotou.
 mno_gondor_reinforcement_event_close|Zavrieť
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_gondor_beacons|Pozrieš sa hore na {s1}, jeden z výstražných majákov Gondoru, ktoré hlásali ohňom poplach v severnom i južnom Gondore. 
 mno_gondor_beacons_close|Odísť...
-; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
+menu_player_added_to_war_council|^^^^^Posol, ktorý dorazil, ti oznámil, že ťa ako {s24} {s2} požiadal, aby si sa stal súčasťou jeho Vojenskej Rady. Od teraz môžeš navrhovať stratégie a taktiky, ktoré môžu ovplyvniť priebeh vojny.
 mno_player_added_to_war_council_close|Zavrieť
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
+menu_player_added_to_siege_reports|Prišiel posol a povedal vám, že teraz, ako {s24}, budete dostávať správy vždy, keď {s2} obliehajú centrá alebo keď sú strediská {s2} obťažované.
 mno_player_added_to_siege_reports_close|Zavrieť
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
+menu_player_added_to_allow_follow|Prišiel posol a povedal vám, že teraz, ako {s24}, budete mať povolený príkaz {s2}, ktorý vás bude nasledovať, pre celkom maximálnych nasledovníkov {reg55}.
 mno_player_added_to_allow_follow_close|Zavrieť
 menu_center_besieged_event|^^^^^Posol ti doniesol správu že {s1} je obliehané {s2}om z {s3}u.
 mno_center_besieged_event_close|Zavrieť
@@ -337,7 +337,7 @@ mno_go_your_way|Nechať to tak.
 mno_defend_villagers|Brániť dedinčanov!
 mno_raid_villagers|Vyrabovať dedinu!
 mno_go_away|Stiahni sa a preskup, pre teraz.
-; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+menu_scout_camp_quest|Vidíte prieskumný tábor v okolí. Pripravujete svojich mužov, aby ich napadli
 mno_attack_scout_camp|Zaútoč na prieskumnícky kemp
 menu_sea_battle_quest|Stretol si nepriateľskú flotilu. Lode sa priblížia a námorníci zhodia dosky...
 mno_sb_defend_the_town|Na palubu! Zničte ich flotily!
@@ -346,12 +346,12 @@ menu_camp_field_ai|^^^^^Klikni na voľbu aby si ju prepol.^^^Vypnutie volieb zle
 mno_lord_field_ai|Vládcovia majú zlepšené bojiskové AI: {s7}
 mno_horse_archer_field_ai|Lukostrelci na koňoch majú zlepšené bojiskové AI: {s7}
 mno_vs_orcs_field_ai|Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}
-; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+mno_battlefield_animals|Živočíšni spoločníci, ktorí nie sú zločinci / zvieratá z koní, sa rozmnožia v bitke: {s7}
 mno_defend_refugees|Pozor na nájazdníkov...
 mno_attack_refugees|Zaútoč na utečencov...
 mno_leave_refugees|Nechaj ich, pre teraz...
 mno_evil_war_tut_continue|Pokračuj
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
+menu_guardian_party_quest|{s8} posiela správu, že je Isengard na podpätku a pripravil svoj posledný stánok. Chce, aby ste sa pripojili k poslednej bitke proti Isengardovým armádám. Musíte priviesť najmenej {reg13} vojakov do armády a dostať pokyny na zvýšenie počtu bojovníkov so všetkou námahou, ak nemáte dostatok.
 mno_guardian_party_reject|Pošli správu že sa k nemu nemôžeš pripojiť.
 mno_guardian_party_send_word|Poslať odkaz, že sa k nemu čo najskôr pripojíš.
 menu_alternate_training_fight|Budeš bojovať proti {reg5} protivníkom. Si pripravený? 

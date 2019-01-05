@@ -24,9 +24,9 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Diga. Acho que já e
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei. Eu vim de longe! Eu sou um Hobbit,  {senhor/senhora}, do Condado.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Ah, deve ter sido meu querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits,  {senhor/senhora}, e viemos do Condado, nós dois! Bom e velho Pippin, me pergunto como ele está em Minas Tirith.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Ah, deve ter sido me querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits,  {senhor/senhora}, e viemos do Condado, nós dois! Bom e velho Merry, me pergunto como ele está em Edoras.
-; dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|May I ask a favour of you, {my lord/my lady}.
-; dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Of course, {s1}. What is it?
-; dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Could you deliver a message to my cousin, {s1}? He is at {s2}, in {s3}, in the service of {s4}.
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Posso pedir-vos um favor, {my lord/my lady}.
+dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Com certeza, {s1}. Que desejais?
+dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Podeis enviar uma mensagem para o meu primo, {s1}? Ele encontra-se em {s2}, está {s3}, está ao serviço de {s4}.
 ; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|I will be passing by {s1} and will be glad to pass on this message to your cousin.
 ; dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|I'm sorry, {s1}, but I do not have the time.
 ; dlga_hobbit_general_talk_ask_accept:close_window|Thanks! {s1}

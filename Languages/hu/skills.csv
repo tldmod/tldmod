@@ -6,8 +6,8 @@ skl_prisoner_management|Fogolytartás
 skl_prisoner_management_desc|Ez a képesség növeli a maximum foglyok számát %d-al. (Vezető képesség)
 ; skl_persuasion|Wildcraft
 ; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Elsősegély
 skl_first_aid_desc|A hősök szintenként 5%% életerőt nyernek vissza egy küldetés során elvesztett életerejükből. (Csapat képesség)
 skl_surgery|Sebészet

@@ -5,14 +5,14 @@ imod_bent|彎 曲 的 %s
 imod_chipped|有 缺 口 的 %s
 imod_battered|有 凹 陷 的 %s
 imod_poor|劣 質 的 %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|簡 單 的 %s
+imod_old|古 老 的 %s
 imod_cheap|便 宜 的 %s
 imod_fine|優 質 的 %s
 imod_well_made|精 良 的 %s
 imod_sharp|鋒 利 的 %s
 imod_balanced|平 衡 的 %s
-imod_tempered|回 火 的 %s
+imod_tempered|精 鍛 的 %s
 imod_deadly|致 命 的 %s
 imod_exquisite|精 致 的 %s
 imod_masterwork|極 品 %s
@@ -23,7 +23,7 @@ imod_tattered|破 爛 的 %s
 imod_ragged|粗 糙 的 %s
 imod_rough|粗 糙 的 %s
 imod_sturdy|結 實 的 %s
-; imod_thick|Robust %s
+imod_thick|強 大 的 %s
 imod_hardened|加 硬 %s
 imod_reinforced|加 強 %s
 imod_superb|華 麗 的 %s

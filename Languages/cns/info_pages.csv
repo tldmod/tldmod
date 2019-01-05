@@ -12,8 +12,8 @@ ip_trolls|食人妖
 ip_trolls_text|食人妖非常强大！哪怕是邪恶方的玩家也不能简单的招募到它们，但是有其他的方法可以获得一两只。食人妖不会听从指挥，所以最好让你的部队离它们的攻击远一点！^^如果食人妖是你的任务目标的话，你可以在被骚扰地点的附近发现游荡的它们(虽然友方部队有时会赶走它们或者在你之前就消灭了它们)，你也可以在迷雾山脉食人妖洞穴的附近找到它们。
 ip_custom_camera|自定义相机
 ip_custom_camera_text|最后之日模组采用了一个自定义相机功能，以绕开游戏系统对于短小种族 (比如半兽人和矮人)的限制。使用它很简单，只不过需要一些时间熟悉。^^自定义相机功能包含2种模式：固定模式和自由模式。^^固定模式是所有种族的默认模式，但无法变更。^^自由模式将角色中置于屏幕。这个相机可以按照玩家所需调整。当使用远程武器和投掷武器瞄准的时候，相机会自动回归默认以帮助瞄准(一开始可能会很难，但相信我，你会习惯的)。一旦完成远程武器抛射，相机会返回自定义模式。^^键位设置：^^同时按“Ctrl”和“End”键以切换三种不同的相机模式：默认模式/ 固定模式/自由模式。^^当你正处于自由模式时，按住“Ctrl”和“Page Up”(或“Page Down”)键以修正相机高度。^^当你正处于自由模式时，按住“Ctrl”和小键盘“+”(或小键盘“-”)键以控制相机拉近拉远。^^除此以外，你还可以在移动相机或拉远拉近相机时按“Shift”键以便微调。
-; ip_tactical_controls|Tactical Controls
-; ip_tactical_controls_text|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. You may target an enemy division through this mechanism.
+ip_tactical_controls|战术控制
+ip_tactical_controls_text|使用数字键盘选择一个部队，按“0”键选择所有部队。^^使用F1-F4为选中的部队下达指令。按住F1以选择多个部队，你可以用这个办法集火选中的特定敌方部队。
 ; ip_division_placement|Division Placement
 ; ip_division_placement_text|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward. Placement is overridden for any division the player chooses to personally head through the Formations Options menu.^^If the camp menu game option is set, divisions will rotate to face the enemy. Otherwise, they will maintain the facing that the player had when they were placed.
 ; ip_formations|Formations

@@ -5,8 +5,8 @@ imod_bent|Elhajlott %s
 imod_chipped|Kicsorbult %s
 imod_battered|Kopott %s
 imod_poor|Silány %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Egyszerű %s
+imod_old|Ősi %s
 imod_cheap|Olcsó %s
 imod_fine|Jó %s
 imod_well_made|Szakszerű %s
@@ -23,7 +23,7 @@ imod_tattered|Foszlott %s
 imod_ragged|Durva %s
 imod_rough|Durva %s
 imod_sturdy|Kemény %s
-; imod_thick|Robust %s
+imod_thick|Robusztus %s
 imod_hardened|Keményített %s
 imod_reinforced|Megerősített %s
 imod_superb|Remek %s

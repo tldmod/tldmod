@@ -1,7 +1,7 @@
 itm_horse_meat|馬 肉 
 itm_practice_sword|練 習 劍 
 itm_arena_lance|騎 槍 
-itm_practice_staff|木 棍 
+itm_practice_staff|木 杖
 itm_practice_bow|練 習 弓 
 itm_wooden_javelin|木 標 槍 
 itm_human_meat|人 肉 
@@ -9,25 +9,25 @@ itm_maggoty_bread|長 蛆 的 麵 包
 itm_cram|裝 滿 的 配 給 
 itm_lembas|蘭 巴 斯 精 靈 餅 乾 
 itm_smoked_fish|熏 魚 
-itm_dried_meat|風 乾 肉 
+itm_dried_meat|肉 乾 
 itm_cattle_meat|牛 肉 
 itm_grain|小 麥 
 itm_tools|工 具 
 itm_siege_supply|補 給 品 
 itm_quest_wine|葡 萄 酒 
-itm_quest_ale|麥 芽 酒 
+itm_quest_ale|麥 酒 
 itm_metal_scraps_bad|低 級 金 屬 廢 料 
 itm_metal_scraps_medium|可 用 的 金 屬 廢 料 
 itm_metal_scraps_good|優 質 的 金 屬 廢 料 
 itm_oliphant|象 牙 號 角 
 itm_sumpter_horse|馱 馬 
-itm_saddle_horse|旅 行 馬 
+itm_saddle_horse|有 鞍 的 馬 
 itm_steppe_horse|草 原 馬 
 itm_courser|駿 馬 
 itm_hunter|獵 馬 
-itm_pony|小 型 馬 
+itm_pony|小 馬 
 itm_arnor_warhorse|亞 爾 諾 戰 馬 
-itm_dunedain_warhorse|杜 內 丹 戰 馬 
+itm_dunedain_warhorse|登 丹 戰 馬 
 itm_rohirrim_courser|洛 汗 駿 馬 
 itm_rohirrim_hunter|洛 汗 獵 馬 
 itm_rohirrim_courser2|洛 汗 駿 馬 
@@ -40,8 +40,8 @@ itm_rhun_horse_e|重 盧 恩 馬
 itm_rhun_horse_f|重 盧 恩 馬 
 itm_rhun_horse_g|重 盧 恩 馬 
 itm_rhun_horse_h|重 盧 恩 馬 
-itm_dale_horse|河 谷 馬 
-itm_dale_warhorse|河 谷 戰 馬 
+itm_dale_horse|羅 馬 尼 安 馬
+itm_dale_warhorse|河 谷 鎮 戰 馬 
 itm_riv_warhorse|瑞 文 戴 爾 戰 馬 
 itm_riv_warhorse2|瑞 文 戴 爾 駿 馬 
 itm_mordor_warhorse|魔 多 戰 馬 
@@ -66,26 +66,27 @@ itm_wargarmored_2b|披 甲 座 狼
 itm_wargarmored_2c|披 甲 座 狼 
 itm_wargarmored_3a|披 甲 座 狼 
 itm_warg_reward|巨 型 座 狼 
-itm_troll_feet_boots|巨 魔 腳 
-itm_troll_head_helm|巨 魔 頭 
-itm_troll_head_helm_b|巨 魔 頭 
-itm_troll_head_helm_c|巨 魔 頭 
+itm_axe_a|北 方 斧
+itm_axe_b|北 方 鉤 斧
+itm_axe_c|北 方 斧
+itm_axe_d|北 方 斧
 itm_tree_trunk_club_a|樹 幹 
 itm_tree_trunk_club_b|樹 幹 
-itm_tree_trunk_invis|樹 幹 
+itm_long_bearded_axe|北 方 鉤 長 斧
+itm_2_handed_axe|北 方 長 斧
 itm_giant_hammer|巨 鎚 
 itm_giant_mace|巨 錘 
 itm_giant_mace_b|巨 釘 錘 
-; itm_olog_feet_boots|Olog Hai Feet
-; itm_olog_head_helm|Olog Hai Head
-; itm_olog_head_helm_b|Olog Hai Head
-; itm_olog_head_helm_c|Olog Hai Head
-; itm_olog_body|Olog Hai Armor
-; itm_olog_body_b|Olog Hai Armor
-; itm_olog_hands|Olog Hai Hands
+itm_olog_feet_boots|  歐 羅 海 腳
+itm_olog_head_helm|歐 羅 海 頭
+itm_olog_head_helm_b|歐 羅 海 頭
+itm_olog_head_helm_c|歐 羅 海 頭
+itm_olog_body|歐 羅 海 鎧 甲
+itm_olog_body_b|歐 羅 海 鎧 甲
+itm_olog_hands|歐 羅 海 手
 itm_arrows|箭 
 itm_gondor_arrows|剛 鐸 箭 
-itm_gondor_auxila_arrows|剛 鐸 之 箭 
+itm_gondor_auxila_arrows|剛 鐸 箭 
 itm_khergit_arrows|倒 刺 箭 
 itm_rohan_arrows_2|洛 汗 箭 
 itm_harad_arrows|哈 拉 德 箭 
@@ -93,7 +94,7 @@ itm_corsair_arrows|海 盜 箭
 itm_ithilien_arrows|伊 錫 利 恩 箭 
 itm_woodelf_arrows|木 精 靈 箭 
 itm_elven_arrows|精 靈 箭 
-itm_orc_hook_arrow|獸 人 倒 鈎 箭 
+itm_orc_hook_arrow|半 獸 人 倒 鈎 箭 
 itm_isengard_arrow|艾 辛 格 箭 
 itm_pilgrim_disguise|朝 聖 者 偽 裝 
 itm_leather_gloves|皮 手 套 
@@ -101,806 +102,890 @@ itm_mail_mittens|鏈 甲 手 套
 itm_leather_boots|皮 靴 
 itm_black_dress|黑 色 連 身 裙 
 itm_blackwhite_dress|女 士 連 身 裙 
-itm_white_tunic_a|白 色 短 外 衣 
-itm_white_tunic_b|簡 單 短 外 衣 
-itm_white_tunic_c|束 腰夾 克 
-itm_blue_tunic|藍 色 短 外 衣 
-itm_black_tunic|黑 色 短 外 衣 
-itm_green_tunic|綠 色 短 外 衣 
-itm_red_tunic|紅 色 短 外 衣 
+itm_white_tunic_a|簡 單 寬 鬆 外 衣
+itm_white_tunic_b|簡 單 寬 鬆 外 衣
+itm_white_tunic_c|寬 鬆 夾 克 
+itm_blue_tunic|藍 色 寬 鬆 外 衣
+itm_black_tunic|黑 色 寬 鬆 外 衣 
+itm_green_tunic|綠 色 寬 鬆 外 衣
+itm_red_tunic|紅 色 寬 鬆 外 衣
 itm_leather_apron|皮 圍 裙 
-itm_leather_jerkin|皮 短 袖 衣 
-itm_fur_coat|河 谷 外 衣 
+itm_leather_jerkin|皮 短 上 衣 
+itm_fur_coat|河 谷 鎮 外 套 
 itm_green_dress|綠 色 連 身 裙 
-itm_tld_tunic|短 外 衣 
-; itm_gondor_fine_outfit_dress|Fine Outfit
-; itm_rohan_fine_outfit_dale_dress|Fine Outfit
-; itm_robe_generic_dress|Robe
-; itm_wimple_a|Wimple
-; itm_wimple_with_veil|Wimple
-; itm_fine_hat|Fine Hat
-; itm_shortened_spear|Shortened Spear
-; itm_spear|Spear
-; itm_light_lance|Light Lance
+itm_tld_tunic|寬 鬆 外 衣
+itm_gondor_fine_outfit_dress|良 好 服 裝
+itm_rohan_fine_outfit_dale_dress|良 好 服 裝
+itm_robe_generic_dress|長 袍
+itm_wimple_a|頭 巾
+itm_wimple_with_veil|頭 巾
+itm_fine_hat|良 好 帽 子
+itm_shortened_spear|短 槍
+itm_spear|長 槍
+itm_light_lance|輕 型 騎 槍
 itm_lance|騎 槍 
-; itm_tab_shield_small_round_b|Round Cavalry Shield
-; itm_short_bow|Short Bow
-; itm_regular_bow|Bow
-; itm_nomad_bow|Nomad Bow
-; itm_gondor_bow|Gondor Bow
-; itm_strong_bow|Strong Bow
-; itm_elven_bow|Elven Bow
-; itm_corsair_bow|Corsair Bow
-; itm_dwarf_horn_bow|Dwarf Horn Bow
-; itm_dwarf_short_bow|Dwarf Short Bow
-; itm_harad_bow|Harad Curved Bow
-; itm_lg_bow|Eagle Guard Bow
-; itm_riv_bow|Rivendell Bow
-; itm_glorfi_bow|Glorfindeil Bow
-; itm_lorien_bow|Galadhrim Bow
-; itm_isengard_large_bow|Isengard Large Bow
-; itm_dale_bow|Dale Bow
-; itm_uruk_bow|Orc Bow
-; itm_mirkwood_bow|Mirkwood Bow
-; itm_dunland_javelin|Dunland Javelins
-; itm_orc_throwing_arrow|Orc Darts
-; itm_heavy_throwing_spear|Heavy Throwing Spear
-; itm_javelin|Javelin
-; itm_harad_javelin|Harad Javelin
-; itm_gondor_javelin|Gondor Javelin
-; itm_rohirrim_throwing_axe|Rohirrim Throwing Axes
-; itm_loss_throwing_axes|Lossarnach Throwing Axes
-; itm_arnor_helm_a|Arnor Helm
-; itm_arnor_helm_b|Arnor Helm
-; itm_arnor_helm_c|Arnor Helm
-; itm_dunedain_helm_a|Dunedain Hood
-; itm_dunedain_helm_b|Arnor Decorated Helm
-; itm_arnor_armor_a|Arnorian Armor
-; itm_arnor_armor_b|Arnorian Armor
-; itm_arnor_armor_c|Dunedain Ranger Leather
-; itm_arnor_armor_d|Dunedain Ranger Leather
-; itm_arnor_armor_e|Arnorian Reinforced Jerkin
-; itm_arnor_armor_f|Arnorian High Armor
-; itm_arnor_greaves|Arnorian Greaves
-; itm_arnor_splinted|Arnorian Splinted Greaves
-; itm_arnor_shield_a|Arnor Shield
-; itm_arnor_shield_c|Arnor Cavalry Shield
-; itm_arnor_shield_b|Arnor Shield
-; itm_arnor_shield_d|Arnor Cavalry Shield
-; itm_arnor_sword_a|Arnor Bastard Sword
-; itm_arnor_sword_c|Arnor Bastard Sword
-; itm_arnor_sword_f|Arnor Shortsword
-; itm_riv_helm_a|Rivendell Coif
-; itm_riv_helm_b|Rivendell Archer Helm
-; itm_riv_helm_c|Rivendell Infantry Helm
-; itm_riv_helm_glorfi|Glorfi Hair
-; itm_riv_tiara|Elf Lord Tiara
-; itm_riv_shield_a|Rivendell Shield
-; itm_riv_shield_b|Rivendell Shield
-; itm_riv_bas_sword|Rivendell Bastard Sword
-; itm_riv_1h_sword|Rivendell Sword
-; itm_riv_riding_sword|Rivendell Cavalry Sword
-; itm_riv_archer_sword|Rivendell Archer's Sword
-; itm_riv_spear|Rivendell Spear
-; itm_riv_armor_light|Rivendell Armor
-; itm_riv_armor_light_inf|Rivendell Armor
-; itm_riv_armor_archer|Rivendell Armor
-; itm_riv_armor_m_archer|Rivendell Armor
-; itm_riv_armor_med|Rivendell Armor
-; itm_riv_armor_heavy|Rivendell Armor
-; itm_riv_armor_h_archer|Rivendell Armor
-; itm_riv_armor_leader|Rivendell Leader Armor
-; itm_riv_boots|Rivendell Boots
-; itm_gon_footman|Gondor Mail Shirt
-; itm_gon_jerkin|Gondor Jerkin
-; itm_gon_regular|Gondor Heavy Mail
-; itm_gon_bowman|Gondor Gambeson
-; itm_gon_archer|Gondor Gambeson with Cloak
-; itm_gon_noble_cloak|Gondor Noble's Jerkin
-; itm_gon_squire|Gondor Mail with Cloak
-; itm_gon_knight|Gondor Heavy Mail and Cloak
-; itm_gon_ranger_cloak|Gondor Ranger Cloak
-; itm_gon_ranger_skirt|Gondor Ranger Skirt
-; itm_gon_steward_guard|Gondor Steward Guard Armor
-; itm_gon_tower_guard|Gondor Tower Guard Armor
-; itm_gon_tower_knight|Gondor Tower Knight Armor
-; itm_gon_leader_surcoat_cloak|Gondor Leader's Surcoat
-; itm_gondor_ranger_hood|Green Hood
-; itm_gondor_ranger_hood_mask|Gondor Ranger Hood
-; itm_gondor_light_greaves|Gondorian Leather Greaves
-; itm_gondor_med_greaves|Gondorian Medium Greaves
-; itm_gondor_heavy_greaves|Gondorian Mailed Greaves
-; itm_gondorian_light_helm|Gondorian Footman Helm
-; itm_gondor_infantry_helm|Gondor Infantry Helm
-; itm_gondor_auxila_helm|Gondorian Auxilia Helm
-; itm_gondorian_light_helm_b|Gondorian Bowman Helm
-; itm_gondorian_archer_helm|Gondorian Archer Helm
-; itm_tower_archer_helm|Tower Archer Helm
-; itm_gondor_leader_helm|Gondor High Helmet
-; itm_tower_guard_helm|Tower Guard Helm
-; itm_gondor_citadel_knight_helm|Citadel Knight Helm
-; itm_gondor_squire_helm|Gondor Squire Helm
-; itm_gondor_knight_helm|Gondor Knight Helm
-; itm_gondor_dolamroth_helm|Dol Amroth Helm
-; itm_swan_knight_helm|Swan Knight Helm
-; itm_gondor_lamedon_helm|Lamedon Helm
-; itm_gondor_lamedon_leader_helm|Lamedon High Helmet
-; itm_blackroot_archer|Blackroot Vale Archer Armor
-; itm_blackroot_bowman|Blackroot Vale Bowman Armor
-; itm_blackroot_footman|Blackroot Vale Footman Armor
-; itm_blackroot_warrior|Blackroot Vale Warrior Armor
-; itm_blackroot_leader|Blackroot Vale Leader Armor
-; itm_blackroot_hood|Blackroot Hood
-; itm_dol_hauberk|Dol Amroth Hauberk
-; itm_dol_heavy_mail|Dol Amroth Heavy Mail
-; itm_dol_padded_coat|Dol Amroth Padded Coat
-; itm_dol_shirt|Dol Amroth Shirt
-; itm_dol_very_heavy_mail|Dol Amroth Very Heavy Mail
-; itm_dol_greaves|Dol Amroth Greaves
-; itm_dol_shoes|Dol Amroth Light Boots
-; itm_lamedon_clansman|Lamedon Clansman Armor
-; itm_lamedon_footman|Lamedon Footman Armor
-; itm_lamedon_knight|Lamedon Knight Armor
-; itm_lamedon_leader_surcoat_cloak|Lamedon Leader Armor
-; itm_lamedon_warrior|Lamedon Warrior Armor
-; itm_lamedon_veteran|Lamedon Veteran Armor
-; itm_lamedon_vet_warrior|Lamedon Veteran Warrior Armor
-; itm_lamedon_hood|Lamedon Hood
-; itm_pinnath_archer|Pinnath Gelin Archer Armor
-; itm_pinnath_footman|Pinnath Gelin Footman Armor
-; itm_pinnath_leader|Pinnath Gelin Leader Armor
-; itm_pinnath_vet_footman|Pinnath Gelin Veteran Footman Armor
-; itm_pinnath_warrior|Pinnath Gelin Warrior Armor
-; itm_pel_footman|Pelargir Footman Armor
-; itm_pel_jerkin|Pelargir Jerkin
-; itm_pel_leader|Pelargir Leader Armor
-itm_pel_marine|佩 拉 吉 爾 重 戰 士 
-; itm_pelargir_marine_leader|Pelargir Marine Leader
-; itm_pelargir_regular|Pelargir Regular
-; itm_pelargir_hood|Pelargir Hood
-; itm_pelargir_helmet_light|Pelargir Helm
-; itm_pelargir_helmet_heavy|Pelargir Heavy Helm
-; itm_pelargir_greaves|Pelargir Greaves
-; itm_lossarnach_shirt|Lossarnach Shirt
-; itm_lossarnach_axeman|Lossarnach Axeman Armor
-; itm_lossarnach_leader|Lossarnach Leader Armor
-; itm_lossarnach_vet_axeman|Lossarnach Veteran Axeman Armor
-; itm_lossarnach_vet_warrior|Lossarnach Veteran Warrior Armor
-; itm_lossarnach_warrior|Lossarnach Warrior Armor
-; itm_lossarnach_cloth_cap|Lossarnach Cloth Cap
-; itm_lossarnach_leather_cap|Lossarnach Leather Cap
-; itm_lossarnach_scale_cap|Lossarnach Scale Cap
-; itm_lossarnach_greaves|Lossarnach Greaves
-; itm_gondor_shield_a|Gondor Square Shield
-; itm_gondor_shield_b|Gondor Kite Shield
-; itm_gondor_shield_c|Gondor Tower Shield
-; itm_gondor_shield_d|Gondor Kite Shield
-; itm_gondor_shield_e|Gondor Royal Shield
-; itm_gon_tab_shield_a|Heraldic Gondor Round Shield
-; itm_gon_tab_shield_b|Heraldic Gondor Square Shield
-; itm_gon_tab_shield_c|Heraldic Gondor Kite Shield
-; itm_gon_tab_shield_d|Heraldic Gondor Tower Shield
-; itm_amroth_sword_a|Dol Amroth Sword
-; itm_amroth_sword_b|Dol Amroth Knight Sword
-; itm_gondor_sword|Gondor Infantry Sword
-; itm_amroth_bastard|Dol Amroth Heavy Sword
-; itm_gondor_short_sword|Linhir Eket
-; itm_pelargir_eket|Pelargir Eket
-; itm_pelargir_sword|Pelargir Sword
-; itm_gondor_ranger_sword|Gondor Ranger Sword
-; itm_gondor_bastard|Gondor Bastard Sword
-; itm_gondor_citadel_sword|Gondor Citadel Sword
-; itm_gondor_cav_sword|Gondor Cavalry Sword
-; itm_gondor_spear|Gondorian Spear
-; itm_gondor_tower_spear|Gondorian Tower Spear
-; itm_gondor_lance|Gondor Lance
-; itm_loss_axe|Lossarnach Fighting Axe
-; itm_loss_war_axe|Lossarnach War Axe
-; itm_lorien_sword_a|Lorien Longsword
-; itm_lorien_sword_b|Lorien Shortsword
-; itm_lorien_sword_c|Lorien War Sword
-; itm_lorien_archer|Lorien Archer Armor
-; itm_lorien_armor_a|Lorien Infantry Armor
-; itm_lorien_armor_b|Lorien Heavy Infantry Armor
-; itm_lorien_armor_c|Lorien Royal Archer Armor
-; itm_lorien_armor_d|Lorien Royal Swordsman Armor
-; itm_lorien_armor_e|Lorien Warden Cloak
-; itm_lorien_armor_f|Lorien Elite Armor
-; itm_lorien_boots|Lothlorien Boots
-; itm_lorien_shield_b|Lorien Tower Shield
-; itm_lorien_shield_c|Lorien Kite Shield
-; itm_lorien_round_shield|Lorien Round Shield
-; itm_lorien_helm_a|Lorien Archer Helm
-; itm_lorien_helm_b|Lorien Archer Helm
-; itm_lorien_helm_c|Lorien Infantry Helm
-; itm_orc_chain_greaves|Orc Greaves
-; itm_orc_coif|Orc Coif
-; itm_orc_greaves|Orc Chain Boots
-; itm_orc_ragwrap|Orc Ragwrap
-; itm_orc_furboots|Orc Fur Boots
-; itm_orc_furboot_tall|Orc Fur Boots
-; itm_orc_tribal_a|Untreated Skin
-; itm_orc_tribal_b|Untreated Skin
-; itm_orc_tribal_c|Untreated Skin
-; itm_evil_gauntlets_a|Gauntlets
-; itm_evil_gauntlets_b|Gauntlets
-; itm_isen_orc_armor_a|Isengard Orc Armor
-; itm_isen_orc_armor_b|Isengard Orc Armor
-; itm_isen_orc_armor_c|Isengard Orc Armor
-; itm_isen_orc_armor_d|Isengard Orc Armor
-; itm_isen_orc_armor_e|Isengard Orc Armor
-; itm_isen_orc_armor_f|Isengard Orc Armor
-; itm_isen_orc_armor_g|Isengard Orc Armor
-; itm_isen_uruk_light_a|Uruk-hai Light Harness
-; itm_isen_uruk_light_b|Uruk-hai Leather Armor
-; itm_isen_uruk_light_c|Uruk-hai Leather Armor
-; itm_isen_uruk_light_d|Uruk-hai Mail and Leather
-; itm_isen_uruk_light_e|Uruk-hai Mail Harness
-; itm_isen_uruk_heavy_a|Uruk-hai Mail and Leather
-; itm_isen_uruk_heavy_b|Uruk-hai Heavy Armor
-; itm_isen_uruk_heavy_c|Uruk-hai Heavy Armor
-; itm_isen_uruk_heavy_d|Uruk-hai Tracker Leather
-; itm_isen_uruk_heavy_e|Uruk-hai Tracker Leather
-; itm_uruk_tracker_boots|Uruk Tracker Boots
-; itm_uruk_greaves|Uruk Greaves
-; itm_uruk_chain_greaves|Uruk Chain Greaves
-; itm_uruk_ragwrap|Uruk Ragwrap
-; itm_isen_orc_helm_a|Isen Orc Helm
-; itm_isen_orc_helm_b|Isen Orc Helm
-; itm_isen_orc_helm_c|Isen Orc Helm
-; itm_isen_uruk_helm_a|Uruk-Hai Helm
-; itm_isen_uruk_helm_b|Uruk-Hai Helm
-; itm_isen_uruk_helm_c|Uruk-Hai Helm
-; itm_isen_uruk_helm_d|Uruk-Hai Captain Helm
-; itm_isen_uruk_helm_e|Uruk-Hai Tracker Helm
-; itm_isen_uruk_helm_f|Uruk-Hai Tracker Helm
-; itm_uruk_pike_a|Uruk Pike
-; itm_uruk_pike_b|Uruk Pike
-; itm_uruk_falchion_a|Uruk Falchion
-; itm_uruk_falchion_b|Uruk Falchion
-; itm_uruk_spear|Uruk Spear
-; itm_uruk_skull_spear|Uruk Skull Spear
-; itm_uruk_voulge|Uruk Voulge
-; itm_uruk_heavy_axe|Uruk Heavy Axe
-; itm_isengard_sword|Isengard Sword
-; itm_isengard_axe|Isengard Axe
-; itm_isengard_hammer|Isengard Hammer
-; itm_isengard_halberd|Isengard Halberd
-; itm_isengard_mallet|Isengard Mallet
-; itm_isengard_heavy_axe|Isengard Heavy Axe
-; itm_isengard_heavy_sword|Isengard Heavy Sword
-; itm_isengard_spear|Isengard Spear
-; itm_isengard_pike|Isengard Pike
-; itm_isen_orc_shield_a|Isen Orc Shield
-; itm_isen_orc_shield_b|Isen Orc Shield
-; itm_isen_uruk_shield_b|Isen Uruk Shield
-; itm_wood_club|Wooden Club
-; itm_twohand_wood_club|Large Wooden Club
-; itm_bone_cudgel|Bone Cudgel
-; itm_skull_club|Skull Club
-; itm_orc_club_a|Orc Club
-; itm_orc_club_b|Orc Club
-; itm_orc_club_c|Orc Club
-; itm_orc_club_d|Orc Club
-; itm_orc_sledgehammer|Orc Sledgehammer
-; itm_orc_simple_spear|Orc Spear
-; itm_orc_skull_spear|Orc Skull Spear
-; itm_orc_bill|Orc Bill
-; itm_orc_slasher|Orc Slasher
-; itm_orc_falchion|Orc Falchion
-; itm_orc_scimitar|Orc Scimitar
-; itm_orc_sabre|Orc Sabre
-; itm_orc_machete|Orc Machete
-; itm_orc_axe|Orc Axe
-; itm_orc_two_handed_axe|Orc Double Handed Axe
-; itm_orc_throwing_axes|Orc Throwing Axes
-; itm_orc_bow|Orc Bow
-; itm_orc_shield_a|Orc Shield
-; itm_orc_shield_b|Orc Shield
-; itm_orc_shield_c|Orc Shield
-; itm_mordor_orc_shield_a|Mordor Orc Shield
-; itm_mordor_orc_shield_b|Mordor Orc Shield
-; itm_mordor_orc_shield_c|Mordor Orc Shield
-; itm_mordor_orc_shield_d|Mordor Orc Shield
-; itm_mordor_orc_shield_e|Mordor Orc Shield
-; itm_mordor_uruk_shield_a|Mordor Uruk Shield
-; itm_mordor_uruk_shield_b|Mordor Uruk Shield
-; itm_mordor_uruk_shield_c|Mordor Uruk Shield
-; itm_mordor_man_shield_a|Mordor Man Shield
-; itm_mordor_man_shield_b|Mordor Man Shield
-; itm_angmar_shield|Angmar Shield
-; itm_orc_helm_a|Orc Longnosehelm
-; itm_orc_helm_b|Orc Gratehelm
-; itm_orc_helm_c|Orc Buckethelm
-; itm_orc_helm_d|Orc Grillhelm
-; itm_orc_helm_e|Orc Beakhelm
-; itm_orc_helm_f|Orc Bughelm
-; itm_orc_helm_g|Orc Crowhelm
-; itm_orc_helm_h|Orc Jawhelm
-; itm_orc_helm_i|Orc Snouthelm
-; itm_orc_helm_j|Orc Lizardhelm
-; itm_orc_helm_k|Orc Vulturehelm
-; itm_m_orc_light_a|Mordor Orc Light Armor
-; itm_m_orc_light_b|Mordor Orc Light Armor
-; itm_m_orc_light_c|Mordor Orc Light Armor
-; itm_m_orc_light_d|Mordor Orc Light Armor
-; itm_m_orc_light_e|Mordor Orc Light Armor
-; itm_m_orc_heavy_a|Mordor Orc Heavy Armor
-; itm_m_orc_heavy_b|Mordor Orc Heavy Armor
-; itm_m_orc_heavy_c|Mordor Orc Heavy Armor
-; itm_m_orc_heavy_d|Mordor Orc Heavy Armor
-; itm_m_orc_heavy_e|Mordor Orc Heavy Armor
-; itm_m_uruk_light_a|Uruk Harness
-; itm_m_uruk_light_b|Uruk Thick Harness
-; itm_m_uruk_heavy_c|Uruk Leather Armor
-; itm_m_uruk_heavy_d|Uruk Segmented Armor
-; itm_m_uruk_heavy_e|Uruk Mail
-; itm_m_uruk_heavy_f|Uruk Mail
-; itm_m_uruk_heavy_g|Uruk Mail
-; itm_m_uruk_heavy_h|Uruk Scale
-; itm_m_uruk_heavy_i|Uruk Thick Scale
-; itm_m_uruk_heavy_j|Uruk Heavy Armor
-; itm_m_uruk_heavy_k|Uruk Guard Armor
-; itm_m_cap_armor|Mordor Captain Armor
-; itm_black_num_armor|Black Numenorean Armor
-; itm_m_armor_a|Mordor Armor
-; itm_m_armor_b|Mordor Armor
-; itm_evil_light_armor|Sinister Garb
-; itm_uruk_helm_a|Uruk Helm
-; itm_uruk_helm_b|Uruk Helm
-; itm_uruk_helm_c|Uruk Beak Helm
-; itm_uruk_helm_d|Uruk Grill Helm
-; itm_uruk_helm_e|Uruk Mask Helm
-; itm_uruk_helm_f|Uruk Helm
-; itm_mordor_cap_helm|Mordor Captain Helm
-; itm_mordor_helm|Mordor Helm
-; itm_black_num_helm|Black Numenorean Helm
-; itm_mordor_sword|Bastard Sword of Mordor
-; itm_mordor_longsword|Sword of Mordor
-; itm_moria_armor_a|Moria Breast Harness
-; itm_moria_armor_b|Moria Breast and Shoulders
-; itm_moria_armor_c|Moria Orc Mail
-; itm_moria_armor_d|Moria Bolted Leather
-; itm_moria_armor_e|Moria Orc Heavy Mail
-; itm_moria_orc_shield_a|Moria Orc Shield
-; itm_moria_orc_shield_b|Moria Orc Shield
-; itm_moria_orc_shield_c|Moria Orc Shield
-; itm_gundabad_armor_a|Gundabad Orc Rags
-; itm_gundabad_armor_b|Gundabad Orc Fur
-; itm_gundabad_armor_c|Gundabad Orc Armor
-; itm_gundabad_armor_d|Gundabad Orc Armor
-; itm_gundabad_armor_e|Gundabad Orc Heavy Armor
-; itm_gundabad_helm_a|Gundabad Cap
-; itm_gundabad_helm_b|Gundabad Helm
-; itm_gundabad_helm_c|Gundabad Helm
-; itm_gundabad_helm_d|Gundabad Helm
-; itm_gundabad_helm_e|Wargrider Helm
-; itm_dunland_wolfboots|Dunland Wolfboots
-; itm_dunland_armor_a|Dunnish Fur Armor
-; itm_dunland_armor_b|Dunnish Fur Armor
-; itm_dunland_armor_c|Dunnish Fur Armor
-; itm_dunland_armor_d|Dunnish Fur Armor
-; itm_dunland_armor_e|Dunnish Fur Armor
-; itm_dunland_armor_g|Dunnish Fur Armor
-; itm_dunland_armor_h|Dun Long Fur Armor
-; itm_dunland_armor_i|Dunnish Hauberk
-; itm_dunland_armor_j|Dunland Hauberk
-; itm_dunland_armor_k|Dun Chief Armor
-; itm_dun_helm_a|Dunnish Wolf Cap
-; itm_dun_helm_b|Dunnish Antler Cap
-; itm_dun_helm_c|Dunnish Tall Helm
-; itm_dun_helm_d|Dunnish Tall Helm
-; itm_dun_helm_e|Dun Tall War Helm
-; itm_dun_shield_a|Dunnish Shield
-; itm_dun_shield_b|Dunnish Shield
-; itm_dun_berserker|Dunland Chieftain Sword
-; itm_dunnish_antler_axe|Dunnish Antler Axe
-; itm_dunnish_war_axe|Dunnish War Axe
-; itm_dunnish_axe|Dunnish Axe
-; itm_dunland_spear|Dunnish Spear
-; itm_dunnish_pike|Dunnish Pike
-; itm_rohan_armor_a|Rohan Shirt
-; itm_rohan_armor_b|Rohan Shirt Cape
-; itm_rohan_armor_c|Rohan Long Shirt
-; itm_rohan_armor_d|Rohan Hauberk
-; itm_rohan_armor_e|Rohan Hauberk
-; itm_rohan_armor_f|Rohan Hauberk
-; itm_rohan_armor_g|Rohan Mail Shirt
-; itm_rohan_armor_h|Rohan Long Mail
-; itm_rohan_armor_i|Rohan Long Mail
-; itm_rohan_armor_j|Rohan Hauberk
-; itm_rohan_armor_k|Rohan Hauberk
-; itm_rohan_armor_l|Rohan Hauberk
-; itm_rohan_armor_m|Rohan Scale Armor
-; itm_rohan_armor_n|Rohan Scale Armor
-; itm_rohan_armor_o|Rohan Scale Armor
-; itm_rohan_armor_p|Rohan Armor
-; itm_rohan_armor_q|Rohan Armor
-; itm_rohan_armor_r|Rohan Armor
-; itm_rohan_armor_s|Rohan Heraldric Mail
-; itm_rohan_light_helmet_a|Rohan Light Helm
-; itm_rohan_light_helmet_b|Rohan Light Helmet
-; itm_rohan_inf_helmet_a|Rohan Infantry Helm
-; itm_rohan_inf_helmet_b|Rohan Infantry Helm
-; itm_rohan_archer_helmet_a|Rohan Archer Helmet
-; itm_rohan_archer_helmet_b|Rohan Archer Helmet
-; itm_rohan_archer_helmet_c|Rohan Horse Archer Helmet
-; itm_rohan_cav_helmet_a|Rohan Cavalry Helmet
-; itm_rohan_cav_helmet_b|Rohan Cavalry Helmet
-; itm_rohan_cav_helmet_c|Rohan Cavalry Helmet
-; itm_rohan_captain_helmet|Rohan Captain Helmet
-; itm_rohan_shield_a|Rohan Shield
-; itm_rohan_shield_b|Rohan Shield
-; itm_rohan_shield_c|Rohan Shield
-; itm_rohan_shield_d|Rohan Shield
-; itm_rohan_shield_e|Rohan Shield
-; itm_rohan_shield_f|Rohan Shield
-; itm_rohan_shield_g|Rohan Royal Shield
-; itm_rohan_light_greaves|Rohan Light Greaves
-; itm_rohirrim_war_greaves|Rohirrim War Greaves
-; itm_rohan_shoes|Leather Shoes
-; itm_rohan_cav_sword|Rohan Riding Sword
-; itm_rohan_inf_sword|Rohan Sword
-; itm_rohan_spear|Rohan Spear
-; itm_rohan_lance|Rohan Lance
-; itm_rohan_sword_c|Rohan Sword
-; itm_rohirrim_short_axe|Rohirrim Short Axe
-; itm_rohirrim_long_hafted_axe|Rohirrim Long Hafted Axe
-; itm_rohan_2h_sword|Rohan War Sword
-; itm_mirkwood_light_scale|Light Woodelf Scale
-; itm_mirkwood_armor_a|Light Leather
-; itm_mirkwood_armor_b|Light Quilted and Scale Armor
-; itm_mirkwood_armor_c|Light Scale over Mail
-; itm_mirkwood_armor_d|Light Quilted Surcoat
-; itm_mirkwood_armor_e|Light Mail and Surcoat
-; itm_mirkwood_armor_f|Royal Woodelf Armor
-; itm_mirkwood_great_spear|Mirkwood Great Spear
-; itm_mirkwood_war_spear|Mirkwood War Spear
-; itm_mirkwood_short_spear|Mirkwood Spear
-; itm_mirkwood_knife|Mirkwood White Knife
-; itm_mirkwood_sword|Mirkwood Sword
-; itm_mirkwood_spear_shield_a|Mirkwood Spearman Shield
-; itm_mirkwood_spear_shield_b|Mirkwood War Shield
-; itm_mirkwood_spear_shield_c|Mirkwood Swordsman Shield
-; itm_mirkwood_helm_a|Mirkwood Archer Helm
-; itm_mirkwood_helm_b|Mirkwood Helm
-; itm_mirkwood_helm_c|Mirkwood Royal Spearman Helm
-; itm_mirkwood_helm_d|Mirkwood Royal Archer Helm
-; itm_mirkwood_boots|Mirkwood boots
-; itm_mirkwood_leather_greaves|Mirkwood Leather Greaves
-; itm_harad_tunic|Harad Tunic
-; itm_harad_padded|Harondor Padded Armor
-; itm_harad_hauberk|Harondor Hauberk
-; itm_harad_lamellar|Harasjala Armor
-; itm_harad_heavy|Harad Swordsman Armor
-; itm_harad_skirmisher|Light Harad Garb
-; itm_harad_archer|Harad Archer Armor
-; itm_black_snake_armor|Maranka Armor
-; itm_harad_champion|Far Harad Garb
-; itm_panther_guard|Panther Hide
-; itm_harad_scale|Harad Scale Armor
-; itm_harad_tiger_scale|Tiger Guard Armor
-; itm_harad_lion_scale|Lion Guard Armor
-; itm_harad_dragon_helm|Kiloka Helm
-; itm_harad_cav_helm_a|Harondor Cavalry Helm
-; itm_harad_cav_helm_b|Harondor Cavalry Helm
-; itm_black_snake_helm|Maranka Helm
-; itm_harad_finhelm|Great Harad Helmet
-; itm_harad_heavy_inf_helm|Great Harad Helmet
-; itm_harad_wavy_helm|Great Harad Helmet
-; itm_harad_eaglehelm|Eagle Guard Helm
-; itm_lion_helm|Lion Guard Helm
-; itm_harad_pantherhelm|Panther Guard Cap
-; itm_harad_khopesh|Harad Khopesh
-; itm_black_snake_sword|Harad Heavy Falchion
-; itm_harad_heavy_sword|Harad Heavy Sword
-; itm_horandor_a|Harad Scimitar
-; itm_skirmisher_sword|Harad Skirmisher Sword
-; itm_harad_sabre|Harad Sabre
-; itm_harad_mace|Far Harad Mace
-; itm_far_harad_2h_mace|Far Harad Two Handed Mace
-; itm_harad_dagger|Harad Knife
-; itm_harad_short_spear|Harad Short Spear
-; itm_harad_long_spear|Harad Spear
-; itm_eagle_guard_spear|Harasjala Polearm
-; itm_harad_long_shield_a|Harad Leopard Shield
-; itm_harad_long_shield_b|Harad Bronze Shield
-; itm_harad_long_shield_c|Harad Sun Shield
-; itm_harad_long_shield_d|Harad Snake Shield
-; itm_harad_long_shield_e|Harad Snake Shield
-; itm_harad_shield_a|Harondor Shield
-; itm_harad_shield_b|Harondor Buckler
-; itm_harad_shield_c|Harondor Buckler
-; itm_harad_tribal_a|Far Harad Shield
-; itm_harad_tribal_b|Far Harad Shield
-; itm_harad_yellow_shield|Harad Shield
-; itm_desert_boots|Desert Boots
-; itm_harad_leather_greaves|Harad Greaves
-; itm_harad_scale_greaves|Harad Boots
-; itm_harad_lamellar_greaves|Harad Boots
-; itm_khand_helmet_a1|Khand Helm With Camail
-; itm_khand_helmet_a2|Khand Helm
-; itm_khand_helmet_a3|Khand Veiled Helm
-; itm_khand_helmet_b1|Khand Decorated Helm
-; itm_khand_helmet_b2|Khand Masked Helm
-; itm_khand_helmet_b3|Khand Veiled Helm
-; itm_khand_helmet_b4|Khand Helm With Camail
-; itm_khand_helmet_c3|Khand Infantry Helm
-; itm_khand_helmet_c4|Khand Infantry Helm
-; itm_khand_helmet_d1|Khand Masked Helm
-; itm_khand_helmet_d2|Khand Helm With Camail
-; itm_khand_helmet_d3|Khand Masked Helm
-; itm_khand_helmet_e1|Khand Veiled Helm
-; itm_khand_helmet_e2|Khand Helm With Camail
-; itm_khand_helmet_e3|Khand Helm
-; itm_khand_helmet_e4|Khand Veiled Helm
-; itm_khand_helmet_f1|Khand Veiled Helm
-; itm_khand_helmet_mask1|Khand Mask
-; itm_khand_helmet_mask2|Khand Mask
-; itm_khand_light|Khand Kilt
-; itm_khand_foot_lam_a|Khand Armor
-; itm_khand_foot_lam_b|Khand Armor
-; itm_khand_foot_lam_c|Khand Armor
-; itm_khand_heavy_lam|Khand Heavy Lamellar
-; itm_khand_light_lam|Khand Light Lamellar
-; itm_khand_med_lam_b|Khand Medium Lamellar
-; itm_khand_med_lam_c|Khand Medium Lamellar
-; itm_khand_med_lam_d|Khand Medium Lamellar
-; itm_khand_noble_lam|Khand Noble Armor
-; itm_variag_greaves|Variag Greaves
-; itm_khand_axe_great|Khand Great Axe
-; itm_khand_axe_winged|Khand Winged Axe
-; itm_khand_halberd|Khand Halberd
-; itm_khand_trident|Khand Trident
-; itm_khand_voulge|Khand Voulge
-; itm_khand_mace1|Khand Mace
-; itm_khand_mace2|Khand Mace
-; itm_khand_mace_spiked|Khand Spiked Mace
-; itm_khand_rammace|Khand Ram Mace
-; itm_khand_pitsword|Pit Fighter Sword
-; itm_khand_tulwar|Khand Tulwar
-; itm_khand_2h_tulwar|Khand Tulwar
-; itm_khand_lance|Khand Lance
-; itm_easterling_round_horseman|Easterling Round Shield
-; itm_variag_gladiator_shield|Variag Gladiator Shield
-; itm_easterling_hawk_shield|Easterling Hawk Shield
-; itm_rhun_bull1_shield|Rhun Shield
-; itm_rhun_bull2_shield|Rhun Shield
-; itm_rhun_bull3_shield|Rhun Shield
-; itm_furry_boots|Furry Boots
-; itm_rhun_armor_a|Rhun Light Battlewear
-; itm_rhun_armor_b|Rhun Light Battlewear
-; itm_rhun_armor_d|Rhun Light Battlewear
-; itm_rhun_armor_g|Rhun Heavy Battlewear
-; itm_rhun_armor_h|Rhun Heavy Battlewear
-; itm_rhun_armor_j|Rhun Medium Battlewear
-; itm_rhun_armor_m|Rhun Medium Battlewear
-; itm_rhun_armor_n|Rhun Medium Battlewear
-; itm_rhun_armor_o|Rhun Medium Battlewear
-; itm_rhun_armor_p|Rhun Noble Armor
-; itm_rhun_armor_k|Rhun Noble Armor
-; itm_rhun_helm_a|Rhun Barbed Helm
-; itm_rhun_helm_b|Rhun Barbed Helm Camail
-; itm_rhun_helm_c|Rhun Horde Helm
-; itm_rhun_helm_e|Rhun Horde Horned Helm
-; itm_rhun_helm_g|Rhun Horned Pot
-; itm_rhun_helm_h|Rhun Horned Pot
-; itm_rhun_helm_i|Rhun Round Helm
-; itm_rhun_helm_j|Rhun Round Masked Helm
-; itm_rhun_helm_k|Rhun Leather Helm
-; itm_rhun_helm_l|Rhun Leather Helm
-; itm_rhun_helm_m|Rhun Leather Helm
-; itm_rhun_helm_n|Rhun Chieftain Helm
-; itm_rhun_helm_o|Rhun Chieftain Helm
-; itm_rhun_greataxe|Rhun Great Axe
-; itm_rhun_battleaxe|Rhun Battle Axe
-; itm_rhun_falchion|Rhun Falchion
-; itm_rhun_glaive|Rhun Glaive
-; itm_rhun_greatfalchion|Rhun Great Falchion
-; itm_rhun_greatsword|Rhun Great Sword
-; itm_rhun_shortsword|Rhun Shortsword
-; itm_rhun_sword|Rhun Sword
-; itm_rhun_shield|Rhun Kite Shield
-; itm_dale_armor_a|Dale Jacket
-; itm_dale_armor_b|Dale Cloak Jacket
-; itm_dale_armor_c|Dale Archer Jacket
-; itm_dale_armor_d|Dale Archer Jacket
-; itm_dale_armor_e|Dale Coat Over Mail
-; itm_dale_armor_f|Dale Coat Over Mail
-; itm_dale_armor_g|Dale Coat Over Mail
-; itm_dale_armor_h|Dale Cloak Long Maille
-; itm_dale_armor_i|Dale Cloak Long Maille
-; itm_dale_armor_j|Dale Cloak Long Maille
-; itm_dale_armor_k|Dale Noble Armor
-; itm_dale_armor_l|Dale Noble Gorget
-; itm_dale_helmet_a|Dale Light Infantry Helm
-; itm_dale_helmet_b|Dale Light Archer's Helm
-; itm_dale_helmet_c|Dale Infantry Helm
-; itm_dale_helmet_d|Dale Archer's Helm
-; itm_dale_helmet_e|Dale Heavy Infantry Helm
-; itm_dale_helmet_f|Dale Heavy Archer's Helm
-; itm_dale_sword|Dale Shortsword
-; itm_dale_sword_long|Dale Longsword
-; itm_dale_sword_broad|Dale Broadsword
-; itm_dale_pike|Dale Spear
-; itm_dale_billhook|Dale Billhook
-; itm_dale_shield_a|Dale Shield
-; itm_dale_shield_b|Dale Shield
-; itm_dale_shield_c|Dale Shield
-; itm_dale_shield_d|Dale Shield
-; itm_umb_armor_a|Corsair Leather Armor
-; itm_umb_armor_a1|Corsair Heavy Leather Armor
-; itm_umb_armor_b|Corsair Raider Armor
-; itm_umb_armor_c|Corsair Padded Armor
-; itm_umb_armor_d|Corsair Heavy Padded Armor
-; itm_umb_armor_e|Corsair Padded Raider Armor
-; itm_umb_armor_f|Corsair Hauberk
-; itm_umb_armor_g|Corsair Hauberk Pauldrons
-; itm_umb_armor_h|Corsair Heavy Raider Armor
-; itm_umb_helm_a|Corsair Shell Helm
-; itm_umb_helm_b|Corsair Shell Helm
-; itm_umb_helm_c|Corsair Militia Helm
-; itm_umb_helm_d|Corsair Militia Helm
-; itm_umb_helm_e|Corsair Raider Helm
-; itm_umb_helm_f|Corsair Raider Helm
-; itm_umb_hood|Umbar Hood
-; itm_corsair_boots|Corsair Boots
-; itm_umb_shield_a|Corsair Buckler
-; itm_umb_shield_b|Corsair Buckler
-; itm_umb_shield_c|Corsair Buckler
-; itm_umb_shield_d|Corsair Buckler
-; itm_umb_shield_e|Corsair Buckler
-; itm_umbar_cutlass|Umbar Cutlass
-; itm_kraken|Kraken Cutlass
-; itm_umbar_rapier|Umbar Sword
-; itm_corsair_harpoon|Corsair Harpoon
-; itm_corsair_sword|Corsair Eket
-; itm_corsair_throwing_dagger|Umbarian Throwing Daggers
-; itm_umbar_pike|Umbar Pike
-; itm_woodman_tunic|Woodman Tunic
-; itm_woodman_scout|Woodman Scout Cape
-; itm_woodman_padded|Woodman Padded Armor
-; itm_beorn_tunic|Beorning Tunic
-; itm_beorn_padded|Beorning Padded Armor
-; itm_beorn_heavy|Beorning Heavy Armor
-; itm_beorn_berserk|Beorning Berserker Kit
-; itm_beorn_chief|Beorning Chieftan's Tunic
-; itm_beorn_helmet|North Skullcap
-; itm_beorn_shield|Northmen Shield
-; itm_beorn_axe|Beorning Axe
-; itm_beorn_staff|Woodman's Staff
-; itm_beorn_battle_axe|Beorning War Axe
-; itm_dwarf_shield_a|Dwarven Shield
-; itm_dwarf_shield_b|Dwarven Shield
-; itm_dwarf_shield_c|Dwarven Shield
-; itm_dwarf_shield_d|Dwarven Shield
-; itm_dwarf_shield_f|Dwarven Shield
-; itm_dwarf_shield_g|Dwarven Shield
-; itm_dwarf_shield_i|Dwarven Shield
-; itm_dwarf_shield_j|Dwarven Shield
-; itm_dwarf_shield_k|Dwarven Shield
-; itm_dwarf_shield_l|Dwarven Shield
-; itm_dwarf_sword_a|Dwarf Sword
-; itm_dwarf_sword_b|Dwarf Sword
-; itm_dwarf_sword_c|Dwarf Sword
-; itm_dwarf_sword_d|Dwarf Sword
-; itm_dwarf_adz|Dwarf Adz
-; itm_dwarf_great_axe|Dwarf Great Axe
-; itm_dwarf_great_mattock|Dwarf Great Mattock
-; itm_dwarf_great_pick|Dwarf Great Pick
-; itm_dwarf_war_pick|Dwarf War Pick
-; itm_dwarf_mattock|Dwarf Mattock
-; itm_dwarf_hand_axe|Dwarf Short Axe
-; itm_dwarf_throwing_axe|Dwarf Throwing Axe
-; itm_dwarf_spear|Dwarf Spear
-; itm_dwarf_spear_b|Dwarf Pike
-; itm_dwarf_spear_c|Dwarf Pike
-; itm_dwarf_helm_a|Dwarf Coif
-; itm_dwarf_helm_b|Dwarf Coif with Mask
-; itm_dwarf_helm_c|Dwarf Helm with Mask
-; itm_dwarf_helm_h|Dwarf Helm
-; itm_dwarf_helm_i|Dwarf Frisian Helm
-; itm_dwarf_helm_j|Dwarf Frisian Mask
-; itm_dwarf_helm_l|Dwarf Hood
-; itm_dwarf_helm_m|Dwarf Iron Face
-; itm_dwarf_helm_o|Dwarf Nasal Tophelm
-; itm_dwarf_helm_p|Dwarf King Helm
-; itm_dwarf_helm_q|Dwarf Miner Helm
-; itm_dwarf_helm_r|Dwarf Miner Cap
-; itm_dwarf_helm_u|Dwarf Round Mask
-; itm_dwarf_helm_v|Dwarf Chain Sallet
-; itm_dwarf_helm_x|Dwarf Masked Sallet
-; itm_dwarf_armor_a|Dwarven Tunic over Mail
-; itm_leather_dwarf_armor|Dwarven Pad over Mail
-; itm_dwarf_vest|Dwarven Archer Armor
-; itm_dwarf_armor_b|Dwarven Pad over Tunic
-; itm_dwarf_armor_c|Dwarven Scale over Mail
-; itm_leather_dwarf_armor_b|Dwarven Tunic
-; itm_dwarf_vest_b|Iron Hills Tunic
-; itm_dwarf_pad_boots|Dwarven Padded Boots
-; itm_dwarf_chain_boots|Dwarven Mail Chausses
-; itm_dwarf_scale_boots|Dwarven Scale Boots
-; itm_good_mace|Mace
-; itm_far_harad_shield_paint|Wicker Shield
-; itm_nazgulrobe|Nazgul Robe
-; itm_whiterobe|White Robe
-; itm_mordor_banner|Mordor Banner
-; itm_isengard_banner|Isengard banner
-; itm_woodelf_banner|Mirkwood Banner
-; itm_lorien_banner|Lothlorien Banner
-; itm_imladris_banner|Imladris Banner
-; itm_gondor_lance_banner|Gondor Lance With Banner
-; itm_amroth_lance_banner|Dol Amroth Lance With Banner
-; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
-; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
-; itm_ent_body|Ent Body
-; itm_ent_head_helm|Ent Head
-; itm_ent_head_helm2|Ent Head
-; itm_ent_head_helm3|Ent Head
-; itm_ent_feet_boots|Ent Feet
-; itm_ent_hands|Ent Hands
-; itm_galadriel|Galadriel suit
-; itm_ent_water|Strange bowl of water
-; itm_map|Maps of Middle Earth
-; itm_athelas_reward|Athelas Plant
-; itm_phial_reward|Light of Galadriel
-; itm_scroll_reward|On the Fall of Gondolin
-; itm_hammer_reward|Smith's Hammer
-; itm_khand_knife_reward|Khand Sacrificial Knife
-; itm_angmar_whip_reward|Master's Whip
-; itm_horn_gondor_reward|Horn of Gondor
-; itm_harad_totem_reward|Harad Totem
-; itm_elven_amulet_reward|Elven Amulet
-; itm_torque_reward|Evil Torque
-; itm_orc_brew|Orc Brew
-; itm_rohan_saddle|Saddle of Thengel
-; itm_mearas_reward|Mearh Stallion
-; itm_sword_of_arathorn|Arathorn's Sword
-; itm_riv_armor_reward|Rivendell Decorated Armor
-; itm_westernesse1h_reward|Sword of Westernesse
-; itm_westernesse2h_reward|Sword of The Great Serpent
-; itm_mirkwood_sword_reward|Greenwood Relic Sword
-; itm_nazgul_sword|Nazgul Sword
-; itm_cooking_cauldron|Cooking Cauldron
-; itm_eorl_cavalry_sword|Sword of Eorl
-; itm_garlic_reward|Garlic
-; itm_silmarillion_reward|Silmarillion
-; itm_herbarium_reward|Middle Earth Herbarium
-; itm_book_of_moria|Book of Mazarbul
-; itm_ring_a_reward|Tulcarisil
-; itm_ring_b_reward|Finwarisil
-; itm_dale_bow_reward|Bow of Bard
-; itm_explosive_reward|Isengard Mine
-; itm_corsair_trident|Trident of Sea Fury
-; itm_crebain_reward|Isengard Crebain
-; itm_miruvor_reward|Miruvor Flask
-; itm_wheeled_cage|Giant wheeled cage
-; itm_orc_throwing_axes_reward|Gundabad Flying Axes
-; itm_corsair_throwing_dagger_reward|Poisoned Throwing Daggers
-; itm_dwarf_shield_reward|Mithril Dwarven Shield
-; itm_dwarf_great_axe_reward|Dwarf Sharp Axe
-; itm_isen_uruk_heavy_reward|Uruk-hai General Armor
-; itm_lorien_bow_reward|Noldorin Bow
-; itm_lorien_sword_reward|Galadhrim Sword
-; itm_dale_sword_reward|Marchwarden Sword
-; itm_dale_armor_reward|Esgaroth Noble Gorget
-; itm_leather_gloves_reward|Hunting Gloves
-; itm_beorn_shield_reward|Beorning Shield
-; itm_beorn_axe_reward|Bear Axe
-; itm_moria_arrow_reward|Moria Poisoned Arrows
-; itm_khamul_helm|Helm of Khamul
-; itm_gandstaff|Wizards Staff
-; itm_sarustaff|Wizards Staff
-; itm_rohan_armor_th|Rohan Royal Armor
-; itm_denethor_robe|Stewards Robe
-; itm_prisoner_coll_chain|Prisoner Chains
-; itm_witchking_helmet|Wicked Helm
-; itm_lorien_royal_armor|Lorien Royal Armor
-; itm_feet_chains|Feet Chains
-; itm_feet_chains_dwarf|Feet Chains
-; itm_spider|Spider
+itm_tab_shield_small_round_b|騎 兵 圓 盾
+itm_short_bow|短 弓
+itm_regular_bow|弓
+itm_nomad_bow|游 牧 弓
+itm_gondor_bow|剛 鐸 弓
+itm_strong_bow|強 弓
+itm_elven_bow|精 靈 弓
+itm_corsair_bow|海 盜 弓
+itm_dwarf_horn_bow|矮 人 角 弓
+itm_dwarf_short_bow|矮 人 短 弓
+itm_harad_bow|哈 拉 德 曲 弓
+itm_lg_bow|鷹 衛 隊 弓
+itm_riv_bow|瑞 文 戴 爾 弓
+itm_glorfi_bow|葛 羅 芬 戴 爾 弓
+itm_lorien_bow|加 拉 茲 民 弓
+itm_isengard_large_bow|艾 辛 格 大 弓
+itm_dale_bow|河 谷 鎮 弓
+itm_uruk_bow_pl|半 獸 人 強 弓
+itm_mirkwood_bow|幽 暗 密 林 弓
+itm_dunland_javelin|登 蘭 德 鏢 槍
+itm_orc_throwing_arrow|半 獸 人 飛 鏢
+itm_heavy_throwing_spear|重 型 擲 槍
+itm_javelin|標 槍
+itm_harad_javelin|哈 拉 德 標 槍
+itm_gondor_javelin|剛 鐸 標 槍
+itm_rohirrim_throwing_axe|洛 汗 擲 斧
+itm_loss_throwing_axes|羅 蕯 那 奇 擲 斧
+itm_arnor_helm_a|亞 爾 諾 盔
+itm_arnor_helm_b|亞 爾 諾 盔
+itm_arnor_helm_c|亞 爾 諾 盔
+itm_dunedain_helm_a|登 丹 兜 帽
+itm_dunedain_helm_b|亞 爾 諾 裝 飾 盔
+itm_arnor_armor_a|亞 爾 諾 鎧 甲
+itm_arnor_armor_b|亞 爾 諾 鎧 甲
+itm_arnor_armor_c|登 丹 遊 俠 皮 革
+itm_arnor_armor_d|登 丹 遊 俠 皮 革
+itm_arnor_armor_e|亞 爾 諾 加 強 短 上 衣
+itm_arnor_armor_f|亞 爾 諾 高 等 鎧
+itm_arnor_greaves|亞 爾 諾 脛 甲
+itm_arnor_splinted|亞 爾 諾 夾 板 脛 甲
+itm_arnor_shield_a|亞 爾 諾 盾
+itm_arnor_shield_c|亞 爾 諾 騎 兵 盾
+itm_arnor_shield_b|亞 爾 諾 盾
+itm_arnor_shield_d|亞 爾 諾 騎 兵 盾
+itm_arnor_sword_a|亞 爾 諾 半 手 劍
+itm_arnor_sword_c|亞 爾 諾 半 手 劍
+itm_arnor_sword_f|亞 爾 諾 短 劍
+itm_riv_helm_a|瑞 文 戴 爾 頭 巾
+itm_riv_helm_b|瑞 文 戴 爾 弓 兵 盔
+itm_riv_helm_c|瑞 文 戴 爾 步 兵 盔
+itm_riv_helm_glorfi|葛 羅 芬 戴 爾 髮
+itm_riv_tiara|精 靈 領 主 王 冠
+itm_riv_shield_a|瑞 文 戴 爾 盾
+itm_riv_shield_b|瑞 文 戴 爾 盾
+itm_riv_bas_sword|瑞 文 戴 爾 半 手 劍
+itm_riv_1h_sword|瑞 文 戴 爾 劍
+itm_riv_riding_sword|瑞 文 戴 爾 騎 兵 劍
+itm_riv_archer_sword|瑞 文 戴 爾 弓 兵 劍
+itm_riv_spear|瑞 文 戴 爾 長 槍
+itm_riv_armor_light|瑞 文 戴 爾 鎧 甲
+itm_riv_armor_light_inf|瑞 文 戴 爾 鎧 甲
+itm_riv_armor_archer|瑞 文 戴 爾 鎧 甲
+itm_riv_armor_m_archer|瑞 文 戴 爾 鎧 甲
+itm_riv_armor_med|瑞 文 戴 爾 鎧 甲
+itm_riv_armor_heavy|瑞 文 戴 爾 鎧 甲
+itm_riv_armor_h_archer|瑞 文 戴 爾 鎧 甲
+itm_riv_armor_leader|瑞 文 戴 爾 領 隊 鎧 甲
+itm_riv_boots|瑞 文 戴 爾 靴 子
+itm_gon_footman|剛 鐸 鎖 子 甲 上 衣
+itm_gon_jerkin|剛 鐸 短 上 衣
+itm_gon_regular|剛 鐸 重 型 鎖 子 甲
+itm_gon_bowman|剛 鐸 布 鎧
+itm_gon_archer|剛 鐸 布 鎧 加 披 風
+itm_gon_noble_cloak|剛 鐸 貴 族 短 上 衣
+itm_gon_squire|剛 鐸 鎖 子 甲 加 披 風
+itm_gon_knight|剛 鐸 重 型 鎖 子 甲 和 披 風
+itm_gon_ranger_cloak|剛 鐸 遊 俠 披 風
+itm_gon_ranger_skirt|剛 鐸 遊 俠 裙
+itm_gon_steward_guard|剛 鐸 攝 政 王 衛 隊 鎧 甲
+itm_gon_tower_guard|剛 鐸 塔 衛 隊 鎧 甲
+itm_gon_tower_knight|剛 鐸 塔 騎 士 鎧 甲
+itm_gon_leader_surcoat_cloak|剛 鐸 領 隊 外 套
+itm_gondor_ranger_hood|綠 色 兜 帽
+itm_gondor_ranger_hood_mask|剛 鐸 遊 俠 兜 帽
+itm_gondor_light_greaves|剛 鐸 皮 脛 甲
+itm_gondor_med_greaves|剛 鐸 中 型 脛 甲
+itm_gondor_heavy_greaves|剛 鐸 鎖 子 脛 甲
+itm_gondorian_light_helm|剛 鐸 步 兵 盔
+itm_gondor_infantry_helm|剛 鐸 步 兵 盔
+itm_gondor_auxila_helm|剛 鐸 外 族 兵 團 盔
+itm_gondorian_light_helm_b|剛 鐸 弓 箭 手 盔
+itm_gondorian_archer_helm|剛 鐸 弓 兵 頭 盔
+itm_tower_archer_helm|塔 弓 兵 盔
+itm_gondor_leader_helm|剛 鐸 高 等 盔
+itm_tower_guard_helm|塔 衛 隊 盔
+itm_gondor_citadel_knight_helm|堡 壘 騎 士 盔
+itm_gondor_squire_helm|剛 鐸 鄉 紳 盔
+itm_gondor_knight_helm|剛 鐸 騎 士 盔
+itm_gondor_dolamroth_helm|多 爾 安 羅 斯 盔
+itm_swan_knight_helm|天 鵝 騎 士 盔
+itm_gondor_lamedon_helm|拉 密 頓 盔
+itm_gondor_lamedon_leader_helm|拉 密 頓 高 等 盔
+itm_blackroot_archer|墨 松 德 布 甲 與 披 風
+itm_blackroot_bowman|墨 松 德 短 上 衣 與 披 風
+itm_blackroot_footman|墨 松 德 短 上 衣
+itm_blackroot_warrior|墨 松 德 布 甲
+itm_blackroot_leader|墨 松 德 鎖 子 甲
+itm_blackroot_hood|黑 色 兜 帽
+itm_dol_hauberk|多 爾 安 羅 斯 胸 甲
+itm_dol_heavy_mail|多 爾 安 羅 斯 重 型 鎖 子 甲
+itm_dol_padded_coat|多 爾 安 羅 斯 綿 外 套
+itm_dol_shirt|多 爾 安 羅 斯 上 衣
+itm_dol_very_heavy_mail|多 爾 安 羅 斯 超 重 型 鎖 子 甲
+itm_dol_greaves|多 爾 安 羅 斯 脛 甲
+itm_dol_shoes|多 爾 安 羅 斯 輕 靴 子
+itm_lamedon_clansman|拉 密 頓 族 人 鎧 甲
+itm_lamedon_footman|拉 密 頓 步 兵 鎧 甲
+itm_lamedon_knight|拉 密 頓 騎 士 鎧 甲
+itm_lamedon_leader_surcoat_cloak|拉 密 頓 領 隊 鎧 甲
+itm_lamedon_warrior|拉 密 頓 戰 士 鎧 甲
+itm_lamedon_veteran|拉 密 頓 老 兵 鎧 甲
+itm_lamedon_vet_warrior|拉 密 頓 戰 士 老 兵 鎧 甲
+itm_lamedon_hood|兜 帽
+itm_pinnath_archer|皮 那 斯 傑 林 弓 兵 鎧 甲
+itm_pinnath_footman|皮 那 斯 傑 林 步 兵 鎧 甲
+itm_pinnath_leader|皮 那 斯 傑 林 領 隊 鎧 甲
+itm_pinnath_vet_footman|皮 那 斯 傑 林 資 深 步 兵 鎧 甲
+itm_pinnath_warrior|皮 那 斯 傑 林 戰 士 鎧 甲
+itm_pel_footman|佩 拉 吉 爾 步 兵 鎧 甲
+itm_pel_jerkin|佩 拉 吉 爾 短 上 衣
+itm_pel_leader|佩 拉 吉 爾 領 隊 鎧 甲
+itm_pel_marine|佩 拉 吉 爾 海 兵
+itm_pelargir_marine_leader|佩 拉 吉 爾 海 兵 領 隊
+itm_pelargir_regular|佩 拉 吉 爾 正 規 軍
+itm_pelargir_hood|白 色 兜 帽
+itm_pelargir_helmet_light|佩 拉 吉 爾 盔
+itm_pelargir_helmet_heavy|佩 拉 吉 爾 重 盔
+itm_pelargir_greaves|佩 拉 吉 爾 脛 甲
+itm_lossarnach_shirt|羅 蕯 那 奇 上 衣
+itm_lossarnach_axeman|羅 蕯 那 奇 斧 手 鎧 甲
+itm_lossarnach_leader|羅 蕯 那 奇 領 隊 鎧 甲
+itm_lossarnach_vet_axeman|羅 蕯 那 奇 資 深 斧 手 鎧 甲
+itm_lossarnach_vet_warrior|羅 蕯 那 奇 資 深 戰 士 鎧 甲
+itm_lossarnach_warrior|羅 蕯 那 奇 戰 士 鎧 甲
+itm_lossarnach_cloth_cap|羅 蕯 那 奇 布 帽 子
+itm_lossarnach_leather_cap|羅 蕯 那 奇 皮 帽 子
+itm_lossarnach_scale_cap|羅 蕯 那 奇 鱗 帽 子
+itm_lossarnach_greaves|羅 蕯 那 奇 脛 甲
+itm_gondor_shield_a|剛 鐸 鄉 紳 盾
+itm_gondor_shield_b|剛 鐸 箏 盾
+itm_gondor_shield_c|剛 鐸 塔 盾
+itm_gondor_shield_d|剛 鐸 箏 盾
+itm_gondor_shield_e|剛 鐸 皇 家 盾
+itm_gon_tab_shield_a|剛 鐸 紋 章 圓 盾
+itm_gon_tab_shield_b|剛 鐸 紋 章 方 盾
+itm_gon_tab_shield_c|剛 鐸 紋 章 箏 盾
+itm_gon_tab_shield_d|剛 鐸 紋 章 塔 盾
+itm_amroth_sword_a|多 爾 安 羅 斯 劍
+itm_amroth_sword_b|多 爾 安 羅 斯 騎 士 劍
+itm_gondor_sword|剛 鐸 步 兵 劍
+itm_amroth_bastard|多 爾 安 羅 斯 重 劍
+itm_gondor_short_sword|林 何 短 劍
+itm_pelargir_eket|佩 拉 吉 爾 短 劍
+itm_pelargir_sword|佩 拉 吉 爾 劍
+itm_gondor_ranger_sword|剛 鐸 遊 俠 劍
+itm_gondor_bastard|剛 鐸 半 手 劍
+itm_gondor_citadel_sword|剛 鐸 堡 壘 劍
+itm_gondor_cav_sword|剛 鐸 騎 兵 劍
+itm_gondor_spear|剛 鐸 長 槍
+itm_gondor_tower_spear|剛 鐸 塔 長 槍
+itm_gondor_lance|剛 鐸 騎 槍
+itm_loss_axe|羅 蕯 那 奇 戰 鬥 斧
+itm_loss_war_axe|羅 蕯 那 奇 戰 斧
+itm_lorien_sword_a|羅 斯 洛 立 安 長 劍
+itm_lorien_sword_b|羅 斯 洛 立 安 短 劍
+itm_lorien_sword_c|羅 斯 洛 立 安 戰 劍
+itm_lorien_archer|羅 斯 洛 立 安 弓 兵 鎧 甲
+itm_lorien_armor_a|羅 斯 洛 立 安 步 兵 鎧 甲
+itm_lorien_armor_b|羅 斯 洛 立 安 重 型 步 兵 鎧 甲
+itm_lorien_armor_c|羅 斯 洛 立 安 皇 家 弓 兵 鎧 甲
+itm_lorien_armor_d|羅 斯 洛 立 安 皇 家  劍 士 鎧 甲
+itm_lorien_armor_e|羅 斯 洛 立 安 守 望 者 披 風
+itm_lorien_armor_f|羅 斯 洛 立 安 菁 英 鎧 甲
+itm_lorien_boots|羅 斯 洛 立 安 靴 子
+itm_lorien_shield_b|羅 斯 洛 立 安 塔 盾
+itm_lorien_shield_c|羅 斯 洛 立 安 箏 盾
+itm_lorien_round_shield|羅 斯 洛 立 安 圓 盾
+itm_lorien_helm_a|羅 斯 洛 立 安 弓 兵 盔
+itm_lorien_helm_b|羅 斯 洛 立 安 弓 兵 盔
+itm_lorien_helm_c|羅 斯 洛 立 安 步 兵 盔
+itm_orc_chain_greaves|半 獸 人 脛 甲
+
+itm_orc_coif|半 獸 人 頭 盔
+itm_orc_greaves|半 獸 人 鏈 靴
+itm_orc_ragwrap|半 獸 人 破 布 巾
+itm_orc_furboots|半 獸 人 毛 靴
+itm_orc_furboot_tall|半 獸 人 毛 靴
+itm_orc_tribal_a|未 治 療 的 皮 膚
+itm_orc_tribal_b|未 治 療 的 皮 膚
+itm_orc_tribal_c|未 治 療 的 皮 膚
+itm_evil_gauntlets_a|金 屬 手 套
+itm_evil_gauntlets_b|金 屬 手 套
+itm_isen_orc_armor_a|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_armor_b|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_armor_c|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_armor_d|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_armor_e|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_armor_f|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_orc_armor_g|艾 辛 格 半 獸 人 鎧 甲
+itm_isen_uruk_light_a|強 獸 人 輕 輓 俱
+itm_isen_uruk_light_b|強 獸 人 皮 甲
+itm_isen_uruk_light_c|強 獸 人 皮 甲
+itm_isen_uruk_light_d|強 獸 人 鎖 子 甲 與 皮 革
+itm_isen_uruk_light_e|強 獸 人 鎖 子 輓 俱
+itm_isen_uruk_heavy_a|強 獸 人 鎖 子 甲 與 皮 革
+itm_isen_uruk_heavy_b|強 獸 人 重 型 鎧 甲
+itm_isen_uruk_heavy_c|強 獸 人 重 型 鎧 甲
+itm_isen_uruk_heavy_d|強 獸 人 追 蹤 者 皮 革
+itm_isen_uruk_heavy_e|強 獸 人 追 蹤 者 皮 革
+itm_uruk_tracker_boots|半 獸 人 追 蹤 者 靴 子
+itm_uruk_greaves|半 獸 人 脛 甲
+itm_uruk_chain_greaves|半 獸 人 鏈 子 脛 甲
+itm_uruk_ragwrap|半 獸 人 破 布 巾
+itm_isen_orc_helm_a|艾 辛 格 半 獸 人 盔
+itm_isen_orc_helm_b|艾 辛 格 半 獸 人 盔
+itm_isen_orc_helm_c|艾 辛 格 半 獸 人 盔
+itm_isen_uruk_helm_a|強 獸 人 盔
+itm_isen_uruk_helm_b|強 獸 人 盔
+itm_isen_uruk_helm_c|強 獸 人 盔
+itm_isen_uruk_helm_d|強 獸 人 上 尉 盔
+itm_isen_uruk_helm_e|強 獸 人 追 蹤 者 盔
+itm_isen_uruk_helm_f|強 獸 人 追 蹤 者 盔
+itm_uruk_pike_a|半 獸 人 長 矛
+itm_uruk_pike_b|半 獸 人 長 矛
+itm_uruk_falchion_a|半 獸 人 彎 刀
+itm_uruk_falchion_b|半 獸 人 彎 刀
+itm_uruk_spear|半 獸 人 長 槍
+itm_uruk_skull_spear|半 獸 人 頭 骨 長 槍
+itm_uruk_voulge|半 獸 人 鉤 鐮 槍
+itm_uruk_heavy_axe|半 獸 人 重 斧
+itm_isengard_sword|艾 辛 格 劍
+itm_isengard_axe|艾 辛 格 斧
+itm_isengard_hammer|艾 辛 格 錘
+itm_isengard_halberd|艾 辛 格 戟
+itm_isengard_mallet|艾 辛 格 槌
+itm_isengard_heavy_axe|艾 辛 格 重 斧
+itm_isengard_heavy_sword|艾 辛 格 重 劍
+itm_isengard_spear|艾 辛 格 長 槍
+itm_isengard_pike|艾 辛 格 長 矛
+itm_isen_orc_shield_a|艾 辛 格 半 獸 人 盾
+itm_isen_orc_shield_b|艾 辛 格 半 獸 人 盾
+itm_isen_uruk_shield_b|艾 辛 格 強 獸 人 盾
+itm_wood_club|木 棍
+itm_twohand_wood_club|大 木 棍
+itm_bone_cudgel| 骨 棒
+itm_skull_club|頭 骨 棍
+itm_orc_club_a|半 獸 人 棍
+itm_orc_club_b|半 獸 人 棍
+itm_orc_club_c|半 獸 人 帶 刺 棍
+itm_orc_club_d|半 獸 人 帶 刺 棍
+itm_orc_sledgehammer|半 獸 人 大 槌
+itm_orc_simple_spear|半 獸 人 長 槍
+itm_orc_skull_spear|半 獸 人 頭 骨 長 槍
+itm_orc_bill|半 獸 人 長 柄 鍥
+itm_orc_slasher|半 獸 人 砍 刀
+itm_orc_falchion|半 獸 人 彎 刀
+itm_orc_scimitar|半 獸 人 半 月 刀
+itm_orc_sabre|半 獸 人 軍 刀
+itm_orc_machete|半 獸 人 柴 刀
+itm_orc_axe|半 獸 人 斧
+itm_orc_two_handed_axe|半 獸 人 雙 手 斧
+itm_orc_throwing_axes|半 獸 人 擲 斧
+itm_orc_bow|半 獸 人 弓
+itm_orc_shield_a|半 獸 人 盾
+itm_orc_shield_b|半 獸 人 盾
+itm_orc_shield_c|半 獸 人 盾
+itm_mordor_orc_shield_a|魔 多 半 獸 人 盾
+itm_mordor_orc_shield_b|魔 多 半 獸 人 盾
+itm_mordor_orc_shield_c|魔 多 半 獸 人 盾
+itm_mordor_orc_shield_d|魔 多 半 獸 人 盾
+itm_mordor_orc_shield_e|魔 多 半 獸 人 盾
+itm_mordor_uruk_shield_a|魔 多 半 獸 人 盾
+itm_mordor_uruk_shield_b|魔 多 半 獸 人 盾
+itm_mordor_uruk_shield_c|魔 多 半 獸 人 盾
+itm_mordor_man_shield_a|魔 多 人 盾
+itm_mordor_man_shield_b|魔 多 人 盾
+itm_angmar_shield|安 格 馬 盾
+
+itm_orc_nosehelm|半 獸 人 覆 鼻 盔
+
+itm_orc_kettlehelm|半 獸 人 壺 盔
+
+itm_orc_buckethelm|半 獸 人 圓 盔
+
+itm_orc_morion|半 獸 人 船 狀 盔
+
+itm_orc_beakhelm|半 獸 人 鳥 嘴 盔
+
+itm_orc_bughelm|半 獸 人 蟲 盔
+
+itm_orc_visorhelm|半 獸 人 覆 面 盔
+
+itm_orc_visorhelm_pl|半 獸 人 覆 面 盔
+
+itm_m_orc_light_a|魔 多 半 獸 人 輕 型 鎧 甲
+itm_m_orc_light_b|魔 多 半 獸 人 輕 型 鎧 甲
+itm_m_orc_light_c|魔 多 半 獸 人 輕 型 鎧 甲
+itm_m_orc_light_d|魔 多 半 獸 人 輕 型 鎧 甲
+itm_m_orc_light_e|魔 多 半 獸 人 輕 型 鎧 甲
+itm_m_orc_heavy_a|魔 多 半 獸 人 重 型 鎧 甲
+itm_m_orc_heavy_b|魔 多 半 獸 人 重 型 鎧 甲
+itm_m_orc_heavy_c|魔 多 半 獸 人 重 型 鎧 甲
+itm_m_orc_heavy_d|魔 多 半 獸 人 重 型 鎧 甲
+itm_m_orc_heavy_e|魔 多 半 獸 人 重 型 鎧 甲
+itm_m_uruk_light_a|半 獸 人 輓 俱
+
+itm_m_uruk_light_b|半 獸 人 皮 甲
+
+itm_m_uruk_light_c|半 獸 人 輕 型 鎖 子 甲
+
+itm_m_uruk_med_a|半 獸 人 重 型 皮 革
+
+itm_m_uruk_med_b|半 獸 人 重 型 鎖 子 甲
+
+itm_m_uruk_med_c|半 獸 人 輕 型 鱗 甲
+
+itm_m_uruk_heavy_a|半 獸 人 重 型 鱗 甲
+
+itm_m_uruk_heavy_b|半 獸 人 鎖 子 裝 甲
+
+itm_m_uruk_heavy_c|路 格 柏 茲 鎖 子 裝 甲
+itm_m_uruk_heavy_j|半 獸 人 重 型 鎧 甲
+itm_m_uruk_heavy_k|半 獸 人 衛 隊 鎧 甲
+itm_m_cap_armor|魔 多 上 尉 鎧 甲
+itm_black_num_armor|黑 努 曼 諾 爾 鎧 甲
+itm_m_armor_a|魔 多 鎧 甲
+itm_m_armor_b|魔 多 鎧 甲
+itm_evil_light_armor|邪 惡 外 衣
+itm_uruk_helm_a|半 獸 人 盔
+itm_uruk_helm_b|半 獸 人 盔
+itm_uruk_helm_c|半 獸 人 尖 嘴 盔
+itm_uruk_helm_d|半 獸 人 網 盔
+itm_uruk_helm_e|半 獸 人 面 具 盔
+itm_uruk_helm_f|半 獸 人 盔
+itm_mordor_cap_helm|魔 多 上 尉 盔
+itm_mordor_helm|魔 多 盔
+itm_black_num_helm|黑 努 曼 諾 爾 盔
+itm_mordor_sword|魔 多 半 手 劍
+itm_mordor_longsword|魔 多 劍
+itm_moria_armor_a|摩 瑞 亞 胸 輓 俱
+itm_moria_armor_b|摩 瑞 亞 胸 和 肩 膀
+itm_moria_armor_c|摩 瑞 亞 半 獸 人 鎖 子 甲
+itm_moria_armor_d|摩 瑞 亞 鉚 釘 皮 革
+itm_moria_armor_e|摩 瑞 亞 半 獸 人 重 型 鎖 子 甲
+itm_moria_orc_shield_a|摩 瑞 亞 大 盾
+itm_moria_orc_shield_b|摩 瑞 亞 半 獸 人 盾
+itm_moria_orc_shield_c|摩 瑞 亞 半 獸 人 盾
+itm_gundabad_armor_a|剛 達 巴 半 獸 人 破 布
+itm_gundabad_armor_b|剛 達 巴 半 獸 人 毛 皮
+itm_gundabad_armor_c|剛 達 巴 半 獸 人 鎧 甲
+itm_gundabad_armor_d|剛 達 巴 半 獸 人 鎧 甲
+itm_gundabad_armor_e|剛 達 巴 半 獸 人 重 型 鎧 甲
+itm_gundabad_helm_a|皮 帽 子
+itm_gundabad_helm_b|皮 盔
+itm_gundabad_helm_c|剛 達 巴 半 獸 人 盔
+itm_gundabad_helm_d|剛 達 巴 半 獸 人 盔
+itm_gundabad_helm_e|座 狼 騎 士 盔
+itm_dunland_wolfboots|登 蘭 德 狼 靴
+itm_dunland_armor_a|登 蘭 德 毛 甲
+itm_dunland_armor_b|登 蘭 德 毛 甲
+itm_dunland_armor_c|登 蘭 德 毛 甲
+itm_dunland_armor_d|登 蘭 德 毛 甲
+itm_dunland_armor_e|登 蘭 德 毛 甲
+itm_dunland_armor_g|登 蘭 德 毛 甲
+itm_dunland_armor_h|登 蘭 德 長 毛 甲
+itm_dunland_armor_i|登 蘭 德 胸 甲
+itm_dunland_armor_j|登 蘭 德 胸 甲
+itm_dunland_armor_k|登 蘭 德 酋 長 鎧 甲
+itm_dun_helm_a|登 蘭 德 狼 帽
+itm_dun_helm_b|登 蘭 德 鹿 角 帽
+itm_dun_helm_c|登 蘭 德 高 盔
+itm_dun_helm_d|登 蘭 德 高 盔
+
+itm_dun_helm_e|登 蘭 德 高 戰 盔\t\t\t\t\t\t\t
+itm_dun_shield_a|登 蘭 德 盾
+itm_dun_shield_b|登 蘭 德 盾
+itm_dun_berserker|登 蘭 德 頭 目 劍
+itm_dunnish_antler_axe|登 蘭 德 鹿 角 斧
+itm_dunnish_war_axe|登 蘭 德 戰 斧
+itm_dunnish_axe|登 蘭 德 斧
+itm_dunland_spear|登 蘭 德 長 槍
+itm_dunnish_pike|登 蘭 德 長 矛
+itm_rohan_armor_a|洛 汗 上 衣
+itm_rohan_armor_e|洛 汗 胸 甲
+itm_rohan_armor_h|洛 汗 皮 甲
+itm_rohan_armor_k|洛 汗 胸 甲
+itm_rohan_armor_n|洛 汗 鱗 甲
+itm_rohan_armor_p|洛 汗 鎧 甲
+itm_rohan_armor_s|洛 汗 衛 隊 鎧 甲
+itm_rohan_light_helmet_a|洛 汗 輕 盔
+itm_rohan_light_helmet_b|洛 汗 輕 盔
+itm_rohan_inf_helmet_a|洛 汗 步 兵 盔
+itm_rohan_inf_helmet_b|洛 汗 步 兵 盔
+itm_rohan_archer_helmet_a|洛 汗 弓 兵 盔
+itm_rohan_archer_helmet_b|洛 汗 弓 兵 盔
+itm_rohan_archer_helmet_c|洛 汗 馬 騎 弓 兵 盔
+itm_rohan_cav_helmet_a|洛 汗 騎 兵 盔
+itm_rohan_cav_helmet_b|洛 汗 騎 兵 盔
+itm_rohan_cav_helmet_c|洛 汗 騎 兵 盔
+itm_rohan_captain_helmet|洛 汗上 尉 盔
+itm_rohan_shield_a|洛 汗 盾
+itm_rohan_shield_b|洛 汗 盾
+itm_rohan_shield_c|洛 汗 盾
+itm_rohan_shield_d|洛 汗 盾
+itm_rohan_shield_e|洛 汗 盾
+itm_rohan_shield_f|洛 汗 盾
+itm_rohan_shield_g|洛 汗 皇 家  盾
+itm_rohan_light_greaves|洛 汗 輕 型 脛 甲
+itm_rohirrim_war_greaves|洛 汗 戰 脛 甲
+itm_rohan_shoes|皮 鞋
+itm_rohan_cav_sword|洛 汗 騎 乘 劍
+itm_rohan_inf_sword|洛 汗 劍
+itm_rohan_spear|洛 汗 長 槍
+itm_rohan_lance|洛 汗 騎 槍
+itm_rohan_sword_c|洛 汗 劍
+itm_rohirrim_short_axe|洛 汗 短 斧
+itm_rohirrim_long_hafted_axe|洛 汗 長 半 斧
+itm_rohan_2h_sword|洛 汗 戰 劍
+itm_mirkwood_light_scale|木 精 靈 輕 型 鱗 甲
+itm_mirkwood_armor_a|輕 型 皮 革
+itm_mirkwood_armor_b|輕 型 絮 綿 鱗 甲
+
+itm_mirkwood_armor_c|幽 暗 密 林 皇 家  鎖 子 甲\t\t\t\t\t\t\t
+itm_mirkwood_armor_d|輕 型 絮 綿 外 套
+itm_mirkwood_armor_e|輕 型 鎖 子 甲 與 外 套
+
+itm_mirkwood_armor_f|幽 暗 密 林 葉 鱗 甲\t\t\t\t\t\t\t\t\t
+itm_mirkwood_great_spear|幽 暗 密 林 大 槍
+itm_mirkwood_war_spear|幽 暗 密 林 戰 槍
+itm_mirkwood_short_spear|幽 暗 密 林 長 槍
+itm_mirkwood_knife|幽 暗 密 林 白 刃
+itm_mirkwood_sword|幽 暗 密 林 劍
+itm_mirkwood_spear_shield_a|幽 暗 密 林 長 槍 兵 盾
+itm_mirkwood_spear_shield_b|幽 暗 密 林 戰 盾
+itm_mirkwood_spear_shield_c|幽 暗 密 林 劍 士 盾
+itm_mirkwood_helm_a|幽 暗 密 林 弓 兵 盔
+itm_mirkwood_helm_b|幽 暗 密 林 頭 盔
+itm_mirkwood_helm_c|幽 暗 密 林 皇 家  長 槍 兵 盔
+itm_mirkwood_helm_d|幽 暗 密 林 皇 家  弓 兵 盔
+itm_mirkwood_boots|幽 暗 密 林 靴 子
+itm_mirkwood_leather_greaves|幽 暗 密 林 皮 脛 甲
+itm_harad_tunic|哈 拉 德 寬 鬆 外 衣
+itm_harad_padded|哈 隆 鐸 綿 甲
+itm_harad_hauberk|哈 隆 鐸 胸 甲
+itm_harad_lamellar|哈 拉 加 拉 鎧 甲
+itm_harad_heavy|哈 拉 德 貴 族 鎧 甲
+itm_harad_skirmisher|哈 拉 德 輕 外 衣
+itm_harad_archer|哈 拉 德 弓 兵 鎧 甲
+itm_black_snake_armor|馬 拉 卡 鎧 甲
+itm_harad_champion|遠 哈 拉 德 外 衣
+itm_panther_guard|豹 皮
+itm_harad_scale|哈 拉 德 鱗 甲
+itm_harad_tiger_scale|虎 衛 隊 鎧 甲
+itm_harad_lion_scale|獅 衛 隊 鎧 甲
+itm_harad_dragon_helm|奇 洛 卡 盔
+itm_harad_cav_helm_a|哈 隆 鐸 騎 兵 盔
+itm_harad_cav_helm_b|哈 隆 鐸 騎 兵 盔
+itm_black_snake_helm|馬 拉 卡 盔
+itm_harad_finhelm|哈 拉 德 大 盔
+itm_harad_heavy_inf_helm|哈 拉 德 大 盔
+itm_harad_wavy_helm|哈 拉 德 大 盔
+itm_harad_eaglehelm|鷹 衛 隊 盔
+itm_lion_helm|獅 衛 隊 盔
+itm_harad_pantherhelm|豹 衛 隊 帽
+itm_harad_khopesh|哈 拉 德 鐮 狀 劍
+itm_black_snake_sword|哈 拉 德 重 彎 刀
+itm_harad_heavy_sword|哈 拉 德 重 劍
+itm_horandor_a|哈 拉 德 半 月 刀
+itm_skirmisher_sword|哈 拉 德 散 兵 劍
+itm_harad_sabre|哈 拉 德 軍 刀
+itm_harad_mace|遠 哈 拉 德 戰 錘
+itm_far_harad_2h_mace|遠 哈 拉 德 雙 手 錘
+itm_harad_dagger|哈 拉 德 刃
+itm_harad_short_spear|哈 拉 德 短 槍
+itm_harad_long_spear|哈 拉 德 長 槍
+itm_eagle_guard_spear|哈 拉 加 拉 長 柄 武 器
+itm_harad_long_shield_a|哈 拉 德 豹 盾
+itm_harad_long_shield_b|哈 拉 德 銅 盾
+itm_harad_long_shield_c|哈 拉 德 太 陽 盾
+itm_harad_long_shield_d|哈 拉 德 蛇 盾
+itm_harad_long_shield_e|哈 拉 德 蛇 盾
+itm_harad_shield_a|哈 隆 鐸 盾
+itm_harad_shield_b|哈 隆 鐸 圓 盾
+itm_harad_shield_c|哈 隆 鐸 圓 盾
+itm_harad_tribal_a|遠 哈 拉 德 盾
+itm_harad_tribal_b|遠 哈 拉 德 盾
+itm_harad_yellow_shield|哈 拉 德 盾
+itm_desert_boots|沙 漠 靴 子
+itm_harad_leather_greaves|哈 拉 德 脛 甲
+itm_harad_scale_greaves|哈 拉 德 靴 子
+itm_harad_lamellar_greaves|哈 拉 德 靴 子
+itm_khand_helmet_a1|侃 德 頭 盔 加 披 肩
+itm_khand_helmet_a2|侃 德 頭 盔
+itm_khand_helmet_a3|侃 德 面 罩 頭 盔
+itm_khand_helmet_b1|侃 德 裝 飾 頭 盔
+itm_khand_helmet_b2|侃 德 面 具 頭 盔
+itm_khand_helmet_b3|侃 德 面 罩 頭 盔
+itm_khand_helmet_b4|侃 德 頭 盔 加 披 肩
+itm_khand_helmet_c3|侃 德 步 兵 盔
+itm_khand_helmet_c4|侃 德 步 兵 盔
+itm_khand_helmet_d1|侃 德 面 具 頭 盔
+itm_khand_helmet_d2|侃 德 頭 盔 加 披 肩
+itm_khand_helmet_d3|侃 德 面 具 頭 盔
+itm_khand_helmet_e1|侃 德 面 罩 頭 盔
+itm_khand_helmet_e2|侃 德 頭 盔 加 披 肩
+itm_khand_helmet_e3|侃 德 頭 盔
+itm_khand_helmet_e4|侃 德 面 罩 頭 盔
+itm_khand_helmet_f1|侃 德 面 罩 頭 盔
+itm_khand_helmet_mask1|侃 德 面 具
+itm_khand_helmet_mask2|侃 德 面 具
+itm_khand_light|侃 德 呢 短 裙
+itm_khand_foot_lam_a|侃 德 鎧 甲
+itm_khand_foot_lam_b|侃 德 鎧 甲
+itm_khand_foot_lam_c|侃 德 鎧 甲
+itm_khand_heavy_lam|侃 德 重 型 片 甲
+itm_khand_light_lam|侃 德 輕 型 片 甲
+itm_khand_med_lam_b|侃 德 中 型 片 甲
+itm_khand_med_lam_c|侃 德 中 型 片 甲
+itm_khand_med_lam_d|侃 德 中 型 片 甲
+itm_khand_noble_lam|侃 德 貴  族 鎧 甲
+itm_variag_greaves|維 瑞 亞 脛 甲
+itm_khand_axe_great|侃 德 大 斧
+itm_khand_axe_winged|侃 德 翼 斧
+itm_khand_halberd|侃 德 戟
+itm_khand_trident|侃 德 三 叉 戟
+itm_khand_voulge|侃 德 鉤 鐮 槍
+itm_khand_mace1|侃 德 戰 錘
+itm_khand_mace2|侃 德 戰 錘
+itm_khand_mace_spiked|侃 德 釘 錘
+itm_khand_rammace|侃 德 公 羊 錘
+itm_khand_pitsword|競 技 場 劍
+itm_khand_tulwar|侃 德 彎 刀
+itm_khand_2h_tulwar|侃 德 彎 刀
+itm_khand_lance|侃 德 騎 槍
+itm_easterling_round_horseman|東 方 圓 盾
+itm_variag_gladiator_shield|維 瑞 亞 角 鬥 士 盾
+itm_easterling_hawk_shield|東 方 鷹 盾
+itm_rhun_bull1_shield|盧 恩 盾
+itm_rhun_bull2_shield|盧 恩 盾
+itm_rhun_bull3_shield|盧 恩 盾
+itm_furry_boots|毛 靴
+itm_rhun_armor_a|盧 恩 輕 型 戰 裝
+itm_rhun_armor_b|盧 恩 輕 型 戰 裝
+itm_rhun_armor_d|盧 恩 輕 型 戰 裝
+itm_rhun_armor_g|盧 恩 重 型 戰 裝
+itm_rhun_armor_h|盧 恩 重 型 戰 裝
+itm_rhun_armor_j|盧 恩 中 型 戰 裝
+itm_rhun_armor_m|盧 恩 中 型 戰 裝
+itm_rhun_armor_n|盧 恩 中 型 戰 裝
+itm_rhun_armor_o|盧 恩 中 型 戰 裝
+itm_rhun_armor_p|盧 恩 貴 族 鎧 甲
+itm_rhun_armor_k|盧 恩 貴 族 鎧 甲
+itm_rhun_helm_a|盧 恩 帶 刺 盔
+itm_rhun_helm_b|盧 恩 帶 刺 盔 與 披 肩
+itm_rhun_helm_c|盧 恩 群 眾 盔
+itm_rhun_helm_e|盧 恩 群 眾 帶 角 盔
+itm_rhun_helm_g|盧 恩 帶 角 壺
+itm_rhun_helm_h|盧 恩 帶 角 壺
+itm_rhun_helm_i|盧 恩 圓 盔
+itm_rhun_helm_j|盧 恩 面 具 盔
+itm_rhun_helm_k|盧 恩 皮 盔
+itm_rhun_helm_l|盧 恩 皮 盔
+itm_rhun_helm_m|盧 恩 皮 盔
+itm_rhun_helm_n|盧 恩 頭 目 盔
+itm_rhun_helm_o|盧 恩 頭 目 盔
+itm_rhun_greataxe|盧 恩 大 斧
+itm_rhun_battleaxe|盧 恩 戰 斧
+itm_rhun_falchion|野 蠻 彎 刀
+itm_rhun_glaive|盧 恩 長 柄 刀
+
+itm_rhun_greatfalchion|野 蠻 大 彎 刀
+itm_rhun_greatsword|野 蠻 大 劍
+itm_rhun_shortsword|野 蠻 短 劍
+
+itm_rhun_sword|野 蠻 劍
+itm_rhun_shield|盧 恩 箏 盾
+itm_dale_light_a|河 谷 鎮 民 兵 夾 克 
+
+itm_dale_light_b|北 方 輕 型 片 甲
+
+itm_dale_med_a|北 方 重 型 片 甲
+
+itm_dale_med_b|河 谷 鎮 皮 甲
+
+itm_dale_med_c|河 谷 鎮 皮 覆 鎖 子 甲
+
+itm_dale_med_d|河 谷 鎮 片 甲
+
+itm_dale_heavy_a|河 谷 鎮 片 覆 鎖 子 甲
+
+itm_dale_heavy_b|河 谷 鎮 裝 甲 外 套
+
+itm_dale_heavy_c|羅 馬 尼 安 鎖 子 甲
+
+itm_dale_armor_l|河 谷 鎮 貴 族 護 喉
+
+itm_dale_helmet_a|河 谷 鎮 輕 型 步 兵 盔
+
+itm_dale_helmet_b|河 谷 鎮 輕 型 弓 兵 盔
+
+itm_dale_helmet_c|河 谷 鎮 步 兵 盔
+
+itm_dale_helmet_d|河 谷 鎮 弓 兵 盔
+
+itm_dale_helmet_e|巴 德 盔
+
+itm_dale_helmet_f|巴 德 盔
+
+itm_dale_sword|河 谷 鎮 短 劍
+itm_dale_sword_long|河 谷 鎮 長 劍
+itm_dale_sword_broad|河 谷 鎮 闊 劍
+itm_dale_pike|河 谷 鎮 長 槍
+itm_dale_billhook|河 谷 鎮 鍥 刀
+itm_dale_shield_a|河 谷 鎮 塔 盾
+
+itm_dale_shield_b|河 谷 鎮 塔 盾
+
+itm_dale_shield_c|河 谷 鎮 圓 盾
+itm_dale_shield_d|河 谷 鎮 盾
+itm_umb_armor_a|海 盜 皮 甲
+
+itm_umb_armor_b|海 盜 掠 奪 者 鎧 甲
+
+itm_umb_armor_c|海 盜 綿 甲
+
+itm_umb_armor_d|海 盜 掠 奪 者 綿 甲
+
+itm_umb_armor_e|海 盜 胸 甲
+
+itm_umb_armor_f|海 盜 重 型 掠 奪 者 鎧 甲
+
+itm_umb_helm_a|海 盜 硬 殼 盔
+
+itm_umb_helm_b|海 盜 硬 殼 盔
+
+itm_umb_helm_c|海 盜 民 兵 盔
+
+itm_umb_helm_d|海 盜 掠 奪 者 盔
+
+itm_umb_helm_e|海 盜 高 等 盔
+
+itm_umb_helm_f|海 盜 高 等 盔
+
+itm_umb_hood|黑 色 兜 帽
+
+itm_corsair_boots|海 盜 靴 子
+itm_umb_shield_a|海 盜 圓 盾
+itm_umb_shield_b|海 盜 圓 盾
+itm_umb_shield_c|海 盜 圓 盾
+itm_umb_shield_d|海 盜 圓 盾
+itm_umb_shield_e|海 盜 圓 盾
+itm_umbar_cutlass|昂 巴 短 劍
+itm_kraken|海 怪 彎 刀
+itm_umbar_rapier|昂 巴 登 船 劍
+
+itm_corsair_harpoon|海 盜 魚 叉
+itm_corsair_sword|海 盜 短 劍
+
+itm_corsair_throwing_dagger|歪 曲 投 擲 匕 首
+itm_umbar_pike|昂 巴 長 矛
+itm_woodman_tunic|山 林 人 寬 鬆 外 衣
+
+itm_woodman_scout|山 林 人 斥 候 帽
+itm_woodman_padded|山 林 人 綿 甲
+itm_beorn_tunic|比 翁 寬 鬆 外 衣
+itm_beorn_padded|比 翁  綿 甲
+itm_beorn_heavy|比 翁  重 型 鎧 甲
+itm_beorn_berserk|比 翁  狂 戰 士 裝 備
+itm_beorn_chief|比 翁  頭 目 寬 鬆 外 衣
+
+itm_beorn_helmet|熊 頭 盔
+itm_beorn_shield|北 方 人 盾
+itm_beorn_axe|比 翁  斧
+itm_beorn_staff|山 林 人 杖
+itm_beorn_battle_axe|比 翁 戰 斧
+itm_dwarf_shield_a|矮 人 角 盾
+
+itm_dwarf_shield_b|矮 人 塔 盾
+
+itm_dwarf_shield_c|矮 人 戰 鬥 盾
+
+itm_dwarf_shield_d|矮 人 圓 盾
+
+itm_north_round_shield|矮 人 盾
+
+itm_free_dwarf_shield_g|矮 人 盾
+
+itm_free_dwarf_shield_i|矮 人 盾
+
+itm_free_dwarf_shield_j|矮 人 盾
+
+itm_free_dwarf_shield_k|矮 人 盾
+
+itm_woodmen_heavy|幽 暗 密 林 鎧 甲
+
+itm_dwarf_sword_a|矮 人 劍
+
+itm_dwarf_sword_b|比 翁 短 劍
+itm_dwarf_sword_c|矮 人 劍
+itm_dwarf_sword_d|矮 人 劍
+
+itm_dwarf_battle_axe|矮 人 戰 斧
+
+itm_dwarf_great_axe|矮 人 大 斧
+
+itm_dwarf_great_mattock|矮 人 大 鶴 嘴 鋤
+
+itm_dwarf_great_pick|矮 人 大 十 字 鎬
+
+itm_dwarf_war_pick|矮 人 戰 十 字 鎬
+
+itm_dwarf_mattock|矮 人 鶴 嘴 鋤
+
+itm_dwarf_hand_axe|矮 人 短 斧
+
+itm_dwarf_throwing_axe|矮 人 擲 斧
+
+itm_dwarf_spear|矮 人 長 槍
+
+itm_dwarf_spear_b|矮 人 釘 錘
+
+itm_dwarf_spear_c|矮 人 長 斧
+
+itm_dwarf_helm_coif|矮 人 頭 巾
+
+itm_dwarf_nasal_b|矮 人 覆 鼻 盔
+
+itm_north_skullcap|北 方 頭 盔
+
+itm_dwarf_helm_kettle|矮 人 壺 盔
+
+itm_dwarf_helm_fris|矮 人 弗 里 斯 蘭 盔
+
+itm_north_leather_skullcap|北 方 輕 型 頭 盔
+
+itm_dwarf_hood|矮 人 兜 帽
+
+itm_dwarf_nasal|矮 人 覆 鼻 高 盔
+
+itm_north_nasal_helm|北 方 覆 鼻 盔
+
+itm_dwarf_helm_p|矮 人 王 盔
+
+itm_dwarf_miner|矮 人 輕 盔
+
+itm_north_chieftain|北 方 頭 目 盔
+
+itm_dwarf_helm_round|矮 人 圓 盔
+
+itm_free_dwarf_helm_v|矮 人 鏈 子 覆 頭 盔
+
+itm_dwarf_helm_sallet|矮 人 覆 頭 盔
+
+itm_dwarf_armor_a|孤 山 鎖 子 甲
+
+itm_leather_dwarf_armor|矮 人 綿 覆 鎖 子 甲
+
+itm_dwarf_armor_b|孤 山 鱗 甲
+
+itm_leather_dwarf_armor_b|矮 人 綿 覆 寬 鬆 外 衣
+
+itm_dwarf_armor_c|矮 人 鱗 覆 鎖 子 甲
+
+itm_dwarf_vest|矮 人 寬 鬆 外 衣
+
+itm_dwarf_vest_b|鐵 丘 陵 鎖 子 甲
+itm_dwarf_pad_boots|矮 人 綿 甲
+itm_dwarf_chain_boots|矮 人 鎖 子 馬 褲
+itm_dwarf_scale_boots|矮 人 鱗 靴
+itm_good_mace|錘
+itm_far_harad_shield_paint|柳 盾
+itm_nazgulrobe|戒 靈 長 袍
+
+itm_mordor_banner|魔 多 旗 幟
+itm_isengard_banner|艾 辛 格 旗 幟
+itm_woodelf_banner|幽 暗 密 林 旗 幟
+itm_lorien_banner|羅 斯 洛 立 安 旗 幟
+itm_imladris_banner|伊 姆 拉 崔 旗 幟
+itm_gondor_lance_banner|剛 鐸 騎 槍 加 旗 幟
+itm_amroth_lance_banner|多 爾 安 羅 斯 騎 槍 加 旗 幟
+itm_rohan_lance_banner_sun|洛 汗 騎 槍 加 太 陽 旗
+itm_rohan_lance_banner_horse|洛 汗 騎 槍 加 馬 旗
+itm_ent_body|樹 人 身 體
+itm_ent_head_helm|樹 人 頭
+itm_ent_head_helm2|樹 人 頭
+itm_ent_head_helm3|樹 人 頭
+itm_ent_feet_boots|樹 人 腳
+itm_ent_hands|樹 人 手
+itm_galadriel|凱 蘭 崔 爾 裝 束
+itm_ent_water|奇 怪 的 一 碗 水
+itm_map|中 土 地 圖
+itm_athelas_reward|阿 系 拉 斯 草
+itm_phial_reward|凱 蘭 崔 爾 之 光
+itm_scroll_reward|貢 多 林 的 陷 落
+itm_hammer_reward|鐵 匠 錘
+itm_khand_knife_reward|侃 德 獻 祭 刃
+itm_angmar_whip_reward|主 人 之 鞭
+itm_horn_gondor_reward|剛 鐸 號 角
+itm_harad_totem_reward|哈 拉 德 圖 騰
+itm_elven_amulet_reward|精 靈 護 身 符
+itm_torque_reward|邪 惡 項 鍊
+itm_orc_brew|半 獸 人 酒
+itm_rohan_saddle|塞 哲 爾 之 鞍
+itm_mearas_reward|米 亞 拉 神 駒
+itm_sword_of_arathorn|亞 拉 松 之 劍
+itm_riv_armor_reward|瑞 文 戴 爾 裝 飾 鎧 甲
+itm_westernesse1h_reward|西 方 之 劍
+itm_westernesse2h_reward|大 蛇 之 劍
+itm_mirkwood_sword_reward|綠 巨 森 遺 跡 劍
+itm_nazgul_sword|戒 靈 劍
+itm_cooking_cauldron|煮 鍋
+itm_eorl_cavalry_sword|伊 歐 之 劍
+itm_garlic_reward|大 蒜
+itm_silmarillion_reward|精 靈 寶 鑽
+itm_herbarium_reward|中 土 植 物 學
+itm_book_of_moria|馬 薩 布 爾 之 書
+itm_ring_a_reward|突 卡 利 西 之 戒
+itm_ring_b_reward|芬 瓦 利 西 之 戒
+itm_dale_bow_reward|巴 德 弓
+itm_explosive_reward|艾 辛 格 炸 彈
+itm_corsair_trident|海 怒 三 叉 戟
+itm_crebain_reward|艾 辛 格 大 烏 鴉
+itm_miruvor_reward|米 盧 沃 酒
+itm_wheeled_cage|巨 大 有 輪 籠 子
+itm_orc_throwing_axes_reward|剛 達 巴 半 獸 人 飛 斧
+itm_corsair_throwing_dagger_reward|有 毒 投 擲 匕 首
+itm_dwarf_shield_reward|鏡 影 湖 之 盾
+itm_dwarf_great_axe_reward|矮 人 銳 斧
+itm_isen_uruk_heavy_reward|強 獸 人 將 軍 盔
+itm_lorien_bow_reward|諾 多 弓
+itm_lorien_sword_reward|加 拉 茲 民 劍
+itm_dale_sword_reward|河 谷 鎮 皇 家  劍
+
+itm_dale_armor_reward|河 谷 鎮 貴 族 鎖 子 甲
+itm_leather_gloves_reward|獵 人 手 套
+itm_beorn_shield_reward|比 翁 盾
+itm_beorn_axe_reward|熊 棍
+itm_moria_arrow_reward|摩 瑞 亞 毒 箭
+itm_khamul_helm|克 哈 穆 爾 之 盔
+itm_gandstaff|巫 師 法 杖
+itm_sarustaff|巫 師 法 杖
+itm_rohan_armor_th|洛 汗 皇 家 鎧 甲
+itm_denethor_robe|攝 政 王 長 袍
+itm_prisoner_coll_chain|囚 鏈
+itm_witchking_helmet|邪 惡 盔
+itm_lorien_royal_armor|羅 斯 洛 立 安 皇 家 鎧 甲
+itm_feet_chains|腳 鏈
+itm_feet_chains_dwarf|腳 鏈
+itm_spider|蜘 蛛
 itm_bear|熊 
 itm_wolf|狼 
-; itm_defiled_armor_gondor|Defiled Gondor Leader's Surcoat
-; itm_defiled_armor_rohan|Defiled Rohan Hauberk
-; itm_defiled_armor_dale|Defiled Dale Noble Armor
+itm_defiled_armor_gondor|骯 髒 的 剛 鐸 領 隊 外 套
+itm_defiled_armor_rohan|骯 髒 的 洛 汗 皇 家 胸 甲
+itm_defiled_armor_dale|骯 髒 的 河 谷 鎮 貴 族 鎧 甲
+itm_beorn_axe_no_attack|比 翁 斧

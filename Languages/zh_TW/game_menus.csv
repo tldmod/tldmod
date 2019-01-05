@@ -2,43 +2,43 @@ menu_start_game_1|^^^^^^^^^^你 為 哪 一 方 而 戰 ？
 mno_start_good|新 紀 元 的 黎 明 
 mno_start_evil|人 類 的 黃 昏 
 mno_go_bback|後 退 
-menu_start_phase_2|^^^^^ 中 土 世 界。 黑 暗 的 陰 影 正 在 東 方 蔓 延 ·· ^潛 伏 了 近 一 個 紀 元 的 邪 惡 勢 力 重 現 世 間 。 ^中 土 的 自 由 之 人 類 是 否 可 以 再 一 次 戰 勝 黑 暗 。 ^人 類 、 精 靈 、 矮 人 和 獸 人 ， 各 種 勢 力 在 這 里 繼 續 角 逐 ^^現 在， 正 義 與 邪 惡 的 戰 爭 即 將 拉 開 帷 幕 ... 
+menu_start_phase_2|^^^^^ 中 土 世 界。 黑 暗 的 陰 影 正 在 東 方 蔓 延 ·· ^潛 伏 了 近 一 個 紀 元 的 邪 惡 勢 力 重 現 世 間 。 ^中 土 的 自 由 之 人 類 是 否 可 以 再 一 次 戰 勝 黑 暗 。 ^人 類 、 精 靈 、 矮 人 和 獸 人 ， 各 種 勢 力 在 這 里 繼 續 角 逐 ^^現 在， 善 良 與 邪 惡 的 戰 爭 即 將 拉 開 帷 幕 ... 
 mno_go_forth|往你選擇的道路前進
 menu_start_game_3|^^^^^^^^選 擇 你 的 戰 役 ： 
 mno_custom_battle_scenario_1|小 規 模 戰 役 ， 剛 鐸 vs哈 拉 德 
 mno_custom_battle_scenario_12|選 擇 戰 鬥 派 系 
 mno_custom_battle_scenario_3|小 規 模 戰 役 ， 精 靈 vs黑 努 美 諾 爾 人 
 mno_custom_battle_scenario_4|聖 盔 谷 防 禦 戰 , 洛 汗 vs艾 辛 格 
-mno_custom_battle_scenario_5|小 規 模 戰 役 ， 北 方 自 由 民 vs魯 恩 
+mno_custom_battle_scenario_5|小 規 模 戰 役 ， 北 方 自 由 民 vs 盧 恩 
 mno_custom_battle_scenario_6|攻 城 戰 ， 半 獸 人 vs矮 人 
 mno_custom_battle_scenario_7|伏 擊 戰 ， 半 獸 人 vs幽 暗 密 林 精 靈 
 mno_custom_battle_scenario_11|測 試 戰 鬥 (調 整 平 衡 ！ )
 mno_custom_battle_scenario_10|風 景 測 試 戰 鬥 
-mno_troll_battle_scenario|測 試 巨 魔 戰 鬥 
+mno_troll_battle_scenario|測 試 食 人 妖 戰 鬥 
 mno_warg_battle_scenario|測 試 坐 狼 戰 鬥 
 mno_build_your_own_scene|** 建 造 你 自 己 的 TLD場 景 **
-menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 看 到。 遊 戲 教 程 同 原 版 一 樣。 
-menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 看 到。 遊 戲 教 程 同 原 版 一 樣。 
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 找 到。 但 遊 戲 玩 法 基 本 上 跟 原 版 一 樣。 
+menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 找 到。 但 遊 戲 玩 法 基 本 上 跟 原 版 一 樣。 
+mno_tutorial_1|教 學 #1: 基 本 移 動 和 武 器 選 項 {s1}
+mno_tutorial_2|教 學 #2: 持 盾 戰 鬥 {s2}
+mno_tutorial_3|教 學 #3: 不 持 盾 戰 鬥 {s3}
+mno_tutorial_3b_door|下 一 個 階 級
+mno_tutorial_4|教 學 #4: 騎 乘 馬 或 座 狼 {s4}
+mno_tutorial_5|教 學 #5: 指 揮 一 隊 士 兵 {s5}
 mno_go_back_dot|後 退 
-; mno_action_view_troop_trees|View troop trees.
-mno_view_upkeep_costs|查 看 維 護 成 本 
+mno_action_view_troop_trees|查 閱 兵 隊 樹 狀 圖
+mno_view_upkeep_costs|查 看 消 耗 成 本
 mno_view_character_report|查 看 人 物 報 告 
 mno_view_party_size_report|查 看 部 隊 上 限 
 mno_view_morale_report|查 看 部 隊 士 氣 
 mno_view_character_report_02|NPC 狀 態 確 認 
-mno_view_faction_strengths_report|查 看 勢 力 力 量 
+mno_view_faction_strengths_report|查 看 派 系 力 量 
 mno_view_traits_report|查 看 人 物 稱 號 
 mno_resume_travelling|繼 續 旅 程 
 mno_custom_battle_go|開 始 
 mno_leave_custom_battle_2|取 消 
-menu_custom_battle_end|^^^^^^戰 鬥 結 束 。 {s1}你 的 隊 伍 殺 死 了 {reg5}人 ， 敵 人 的 隊 伍 殺 死 了 {reg6}人 。 你 殺 死 了 {reg7}人 。 
-mno_replay|在 玩 一 次 戰 役 
+menu_custom_battle_end|^^^^^^戰 鬥 結 束 。 {s1}你 的 隊 伍 殺 死 了 {reg5}人 ， 敵 人 的 隊 伍 殺 死 了 {reg6}人 。 你 親 手 殺 死 了 {reg7}人 。 
+mno_replay|再 玩 一 次 戰 役 
 mno_continue_dot|繼 續 
 mno_dot_go_back|後 退 
 menu_start_good|^^^^^^^^^^選 擇 你 的 種 族 ： 
@@ -56,12 +56,12 @@ mno_start_em|人 類 ，屈 從 於 索 倫
 menu_start_hand|^^^^^^^^^你 的 主 人 是 白 袍 巫 師 薩 魯 曼 ^選 擇 你 的 種 族 
 mno_start_whor|半 獸 人 ， 薩 魯 曼 的 奴 僕 
 mno_start_isur|強 獸 人 ， 繁 衍 於 艾 辛 格 
-mno_start_duma|登 蘭 德 的 人 類 ， 位 於 西 方 平 原 
+mno_start_duma|登 蘭 德 人， 來 自 西 方 平 原 
 menu_start_good_man|^^^^^^^^^^選 擇 你 的 人 類 陣 營 ： 
-mno_start_go|剛 鐸， 白 樹 之 國 
-mno_start_ro|洛 汗， 驃 騎 之 鄉 
+mno_start_go|剛 鐸， 白 塔 之 國 
+mno_start_ro|洛 汗， 騎 馬 之 民 
 mno_start_du|登 丹 人， 古 努 曼 諾 爾 王 朝 後 裔 
-mno_start_be|波 寧 人， 熊 人 後 代 
+mno_start_be|比 翁 人， 熊 人 後 代 
 mno_start_da|河 谷 人， 北 方 王 國 
 menu_start_good_elf|^^^^^^^^^^你 來 自 哪 個 森 林 ，長 者 ？ 
 mno_start_ri|瑞 文 戴 爾  ， 屬 精 靈 王 埃 爾 隆 德 
@@ -72,12 +72,12 @@ mno_start_er|孤 山 的 矮 人
 mno_start_ih|鐵 丘 陵 的 礦 工 
 menu_start_gondor|^^^^^^^^^^你 來 自 剛 鐸 哪 里 ？ 
 mno_start_mt|米 納 斯 蒂 里 斯 ， 剛 鐸 首 都 
-mno_start_ls|羅 薩 那 奇 ， 戰 斧 的 領 地 
-mno_start_la|拉 密 頓 ， 山 地 騎 士 的 領 地 
+mno_start_ls|羅 薩 那 奇 ， 斧 手 的 領 地 
+mno_start_la|拉 密 頓 ， 山 地 氏 族 的 領 地 
 mno_start_pg|皮 那 斯 傑 林 ， 綠 色 丘 陵 的 領 地 
 mno_start_do|多 爾 安 羅 斯 ， 天 鵝 騎 士 的 領 地 
 mno_start_pe|佩 拉 格 ， 海 岸 領 地 
-mno_start_bl|黑 根 谷 ， 遊 俠 的 領 地 
+mno_start_bl|墨 松 德， 遊 俠 的 領 地 
 menu_start_eye_man|^^^^^^^^^^選 擇 你 的 人 類 陣 營 ： 
 mno_start_hr|哈 拉 德 人 ， 中 土 南 部 的 沙 漠 之 民 
 mno_start_bn|黑 努 美 諾 爾 人 ， 西 方 的 叛 變 者 
@@ -85,10 +85,10 @@ mno_start_um|昂 巴 人 ， 南 方 海 域 的 海 盜
 mno_start_rh|盧 恩 人 ， 東 方 的 野 蠻 人 
 mno_start_kh|侃 德 人 ， 東 南 方 的 強 盜 
 menu_start_eye_orc|^^^^^^^^^^你 匿 伏 在 哪 里 ？ 
-mno_start_arm|魔 多 的 囤 積 軍 隊 中 
+mno_start_arm|魔 多 駐 紮 的 軍 隊 中 
 mno_start_cav|多 爾 哥 多 的 洞 穴 
 menu_start_hand_orc|^^^^^^^^^^你 匿 伏 在 哪 里 ？ 
-mno_start_armis|艾 辛 格 的 囤 積 軍 隊 中
+mno_start_armis|艾 辛 格 駐 紮 的 軍 隊 中
 mno_start_minmo|摩 瑞 亞 的 礦 坑 
 mno_start_cliff|剛 達 巴 山 的 峭 壁 內 
 menu_start_gondor_mt|^^^^^^^^^^選 擇 你 的 出 身 ： 
@@ -101,24 +101,24 @@ menu_choose_gender|^^^^^^^^^^你 的 性 別 ？
 mno_start_male|男 
 mno_start_female|女 
 mno_proc|正 常 進 行 
-; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
-; mno_start_default|Become a {s23} (Default)
-; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+menu_start_as_one|^^^^^^^^^^你 是 什 麼 兵 種?
+mno_start_default|成 為 {s23} (預 設)
+mno_start_up1|成 為 {s21} (簡 單)
+mno_start_up2|成 為 {s22} (簡 單)\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_continue|繼 續 ...
 menu_character_report|^^^^^隊 伍 士 氣 ： {reg8}^隊 伍 人 數 上 限 ： {reg7}^{s5}
 menu_camp|^^^^你目前在 {s1}。 {s2}^^你 想 要 做 什 麽 ？ 
 mno_camp_scene|四 處 走 走 
 mno_camp_troop|查 看 {reg10?部 隊 :}{reg12?和 :}{reg11?囚 犯 :}
 mno_camp_action|使 用 物 品 
-mno_camp_wait_here|在 這 裡 待 些 時 間 
+mno_camp_wait_here|在 這 裡 露 營 一 些 時 間 
 mno_camp_options|修 改 TLD 選 項
 mno_Cheat_enable|啟 用 作 弊 /模 組 選 項 
 menu_game_options|^^^^^^^^點 擊 切 換 選 項 ： 
-; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+mno_game_options_war_level_start|戰 爭 始 於 等 級: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_game_options_restrict_items|限 制 玩 家 裝 備 ： {s7}
 mno_game_options_formations|戰 鬥 陣 型 與 AI： {s7} 
-; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
+mno_game_options_siege_ai|進 階 攻 城 人 工 智 慧: {s7}
 mno_game_options_town_menu|城 鎮 NPC可 從 選 單 訪 問 ： {s7}
 mno_game_options_cutscenes|過 場 動 畫 ： {s7} 
 mno_game_options_injuries|同 伴 會 受 傷 ： {s7}
@@ -126,16 +126,16 @@ mno_game_options_death|領 主 和 同 伴 會 死 亡 ： {s7}
 mno_game_options_death2|玩 家 會 死 亡 (就 是 你 ！ )： {s7}
 mno_game_options_morale|戰 鬥 士 氣 系 統 ： {s7}
 mno_game_options_animal_ambushes|動 物 伏 擊 ： {s7}
-; mno_game_options_horse_ko|Fallen rider damage messages:  {s7}
-; mno_game_options_bright_nights|Brighter Nights:  {s7}.
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
+mno_game_options_horse_ko|殞 落 騎 士 損 傷 信 息: {s7}
+mno_game_options_bright_nights|較 明 亮 的 夜 晚: {s7}.
+mno_game_options_camera_pref|喜 好 的 攝 影 機 模 式: {s7}.
 mno_game_options_tweaks|遊 戲 調 整 ...
 mno_game_options_back|退 回 營 地 選 單 
 mno_game_options_start_back|後 退 
 menu_camp_tweaks|^^^^^^^^選 擇 一 個 你 想 調 整 的 選 項 
 mno_tweak_options_compat|相 容 性 調 整 ...
 mno_tweak_options_strat|戰 略 調 整 ...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_tweak_options_battlefield_ai|戰 場 人 工 智 慧 調 整...\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_tweak_options_back|返 回 選 項 選 單 
 menu_camp_compat_tweaks|^^^^^^^^點 擊 要 更 改 的 選 項 (按 住 shift 鍵 可 減 少 )： ^(這 是 相 容 性 調 整 ， 不 是 作 弊 )
 mno_game_options_compat_party|最 大 部 隊 規 模 ： {s1}
@@ -143,17 +143,17 @@ mno_game_options_compat_back|返 回 調 整 選 單
 menu_camp_strat_tweaks|^^^^^^^^點 擊 切 換 選 項 ： ^(警 告 ！ 這 屬 於 作 弊 ！ ) 
 mno_strat_tweaks_siege_reqs|攻 城 勢 力 力 量 的 需 求 ： {s7}
 mno_strat_tweaks_siege_relax_rate|攻 城 勢 力 需 求 鬆 弛 率 ： {reg1}
-mno_strat_tweaks_regen_rate|勢 力 再 生 率 ： {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
-mno_strat_tweaks_influence_gain_rate|影 響 收 益 率 ： {s7}
-mno_strat_tweaks_rank_gain_rate|評 價 收 益 率 ： {s7}
+mno_strat_tweaks_regen_rate|勢 力 恢 復 率 ： {s7}
+mno_strat_tweaks_siege_regen_limit|陣 營 強 度 恢 復 速 度 減 緩 至: {reg1}
+mno_strat_tweaks_influence_gain_rate|影 響 力 增 加 率 ： {s7}
+mno_strat_tweaks_rank_gain_rate|等 級 增 加 率 ： {s7}
 mno_strat_tweaks_back|返 回 調 整 選 單 
 menu_camp_action|^^^^^^^^^ 哪 件 事 ？ 
 mno_camp_customize_defilement|自 訂 汙 損 裝 甲 
-mno_camp_drink_water|喝 樹 人 聖 水 ！ 
+mno_camp_drink_water|喝 下 樹 人 之 水 ！ 
 mno_camp_action_4|後 退 
 menu_assasins_attack_player_won|你 成 功 擊 敗 從 {s2}來 的 刺 客 ， {s3}的 手 下。 
-menu_assasins_attack_player_retreat|你 失 去 了 你 的 生 命 ！ 
+menu_assasins_attack_player_retreat|你 逃 過 一 劫！ 
 menu_fangorn_danger|^^^^^^奇 怪 ， 你 聽 到 四 周 發 出 一 些 威 脅 的 噪 音 ^這 些 樹 在 交 談 ？ 它 們 的 話 語 中 包 含 憤 怒 與 痛 苦 。 ^你 打 算 如 何 ？ 
 mno_be_quiet_elf|尊 重 這 些 憤 怒 的 古 樹 ， 悄 悄 地 往 前 移 動 。 
 mno_be_quiet|收 起 武 器 且 保 持 安 靜 ！ 馬 上 離 開 這 裡 ！ 
@@ -161,15 +161,15 @@ mno_be_bold|繼 續 前 行 ！ 我 不 害 怕 這 些 植 物 和 那 些 古 
 mno_fight_back|讓 我 們 來 一 探 究 竟 吧 ！ 搜 索 區 域 ！ 燒 毀 它 們 ！  
 menu_fangorn_search_fails|^^^^^^你 搜 索 到 天 黑 ， 但 是 並 沒 有 找 到 什 麽 。 ^現 在 ， 你 感 到 來 自 四 周 的 威 脅 越 來 越 多 。 
 menu_fangorn_battle_debrief_won|^^^一 場 偉 大 的 勝 利 ！ ^^^這 就 是 法 貢 森 林 的 神 話 ...
-menu_fangorn_killed_player_only|^^^^^^你 在 這 個 又 黑 又 密 的 森 林 迷 失 方 向 了 。 ^突 然 ， 一 個 東 西 砸 到 你 的 頭 ！ 大 概 是 沉 重 樹 枝 吧 ？ ^你 昏 迷 一 段 時 間 後 醒 來 ， 你 傷 得 很 重 ， 但 能 繼 續 前 行 。 
+menu_fangorn_killed_player_only|^^^^^^你 在 這 個 又 黑 又 密 的 森 林 迷 失 方 向 了 。 ^突 然 ， 一 個 東 西 砸 到 你 的 頭 ！ 大 概 是 樹 枝 吧 ？ ^你 昏 迷 一 段 時 間 後 醒 來 ， 你 傷 得 很 重 ， 但 能 繼 續 前 行 。 
 mno_ow_get_out|哎 ！ 讓 我 們 離 開 這 個 被 詛 咒 的 地 方 ！ 
-menu_fangorn_killed_troop_and_player|^^^^^^你 在 這 個 又 黑 又 密 的 森 林 迷 失 方 向 了 。 ^突 然 ， 一 個 東 西 砸 到 你 的 頭 ！ 大 概 是 沉 重 樹 枝 吧 ？ ^^當 你 幾 分 鐘 後 恢 復 意 識 ， 你 發 現 ， 你 的 部 隊 並 非 所 有 人 都 是 那 麼 幸 運 。 ^^
+menu_fangorn_killed_troop_and_player|^^^^^^你 在 這 個 又 黑 又 密 的 森 林 迷 失 方 向 了 。 ^突 然 ， 一 個 東 西 砸 到 你 的 頭 ！ 大 概 是 樹 枝 吧 ？ ^^當 你 幾 分 鐘 後 恢 復 意 識 ， 你 發 現 ，並 非 所 有 人 都 那 麼 幸 運 。 ^^
 menu_fangorn_killed_troop_only|^^^^^^^^你 在 這 個 又 黑 又 密 的 森 林 迷 失 方 向 了 。 你 的 隊 伍 十 分 恐 懼 。 ^^突 然， 你 從 後 方 聽 到 一 陣 慘 叫 ！ 你 趕 緊 跑 了 過 去 ， 只 發 現 幾 個 部 下 倒 在 血 泊 中 。 ^^其 他 少 數 人 已 經 找 不 到 了 ...
 mno_get_out|讓 我 們 離 開 這 個 被 詛 咒 的 地 方 ！ 
-menu_can_capture_troll|被 擊 倒 的 野 生 巨 魔 仍 然 喘 息 著 ！ ^^充 滿 痛 苦 和 憤 怒 的 邪 惡 眼 睛 \n緊 盯 著 你 。 ^即 使 現 在 他 已 被 擊 倒 ， 且 無 助 地 躺 在 血 泊 之 中 ， 它 看 起 來 仍 舊 相 當 危 險 ...
+menu_can_capture_troll|被 擊 倒 的 野 生 食 人 妖 仍 然 喘 息 著 ！ ^^充 滿 痛 苦 和 憤 怒 的 邪 惡 眼 睛 緊 盯 著 你 。 ^即 使 現 在 他 已 被 擊 倒 ， 且 無 助 地 躺 在 血 泊 之 中 ， 它 看 起 來 仍 舊 相 當 危 險 ...
 mno_killit|宰 了 它 ， 快 。 確 定 它 已 死 。
 mno_cageit1|關 住 它 並 拖 著 走 。 
-mno_cageit2|把 它 和 其 他 巨 魔 一 起 關 著 。 
+mno_cageit2|把 它 和 其 他 食 人 妖 一 起 關 著 。 
 mno_cheat_disabable|停 用 作 弊 /模 組 選 項 
 menu_drank_ent_water_human|^^^你 喝 了 水 。 它 嘗 起 來 清 澈 且 甜 美 。 它 有 種 宜 人 的 香 氣 ， 如 麝 香 。 ^你 感 到 神 清 氣 爽 。 ^^不 過 ， 你 也 有 種 奇 怪 ， 不 自 然 的 感 覺 。 感  覺 告 訴 你 ， 你 最 好 永 遠 ， 永 遠 別 再 喝  這 種 水 。 
 menu_drank_ent_water_orc|^^^你 喝 了 水 。 這 僅 僅 是 水 。 ^突 然 你 抓 住 了 喉 嚨 ， 在 痛 苦 翻 騰 。 ^中 毒 了 ！ ^你 窒 息 ， 你 噴 出 黑 色 的 血 ， 你 幾 乎 失 去 意 識 。 ^^好 痛 ， 好 痛 。 
@@ -178,14 +178,14 @@ menu_end_game|^^^^^主 意 已 定 ， 你 決 定 放 棄 你 的 冒 險 家 �
 mno_end_game_bye|告 別 了 。
 menu_cattle_herd|你 遇 到 了 一 些 人 。 
 mno_cattle_drive_away|命 令 他 們 跟 隨 
-mno_cattle_stop|帶 領 他 們 停 下 
+mno_cattle_stop|讓 他 們 停 下 
 mno_leave|離 開 
 menu_simple_encounter|^^^^^{s2}^你 有 {reg22}名 可 戰 鬥 的 隊 員 對 抗 {reg11}名 敵 軍 。 ^^戰 鬥 將 在 {s3}{s4}展 開 。 你 的 命 令 是 ？ 
 mno_encounter_attack|{reg21?突 擊 進 攻 :準 備 好 迎 敵 }。 
 mno_encounter_order_attack|你 坐 鎮 指 揮 命 令 你 的 部 下 {reg21?進 攻 :迎 擊 }。 
-; mno_encounter_hide|Hide from the enemy...
+mno_encounter_hide|躲 避 敵 人...
 mno_special_whip|往 前 衝 突 破 {s4}。 
-mno_encounter_leave|斷 絕 
+mno_encounter_leave|不 打 了。
 mno_encounter_retreat|撤 退 ， 留 下 一 些 士 兵 掩 護 主 力 撤 退 。 
 mno_hide_close|繼 續 ...
 menu_encounter_retreat_confirm|^^^^^隊 員 中 最 高 戰 術 技 能 為 ({reg2}) 級 ，{reg3?你 擬 定 :{s3}擬 定 }了 一 個 計 劃 ， 讓 你 和 你 的 主 力 部 隊 能 逃 離 戰 鬥 。 但 是 你 必 須 犧 牲 {reg4}名 士 兵 來 進 行 掩 護 。 
@@ -202,10 +202,10 @@ menu_kingdom_army_quest_report_to_army|{s8}派 來 信 使 ， 他 希 望 你 �
 mno_reject|讓 信 使 回 報 訊 息 ， 說 你 現 在 很 忙 。 
 mno_send_word|回 報 說 你 馬 上 就 會 加 入 。 
 menu_kingdom_army_quest_messenger|{s8}派 信 使 來 告 訴 你 ， 他 要 指 定 一 個 任 務 給 你 ， 並 要 求 你 盡 快 去 見 他 。 
-menu_kingdom_army_quest_join_siege_order|{s8}派 信 使 來 命 令 你 加 入 對 {s9}圍 攻 。 無 論 付 出 多 大 代 價 ， 必 須 拿 下 {s9} 。 
+menu_kingdom_army_quest_join_siege_order|{s8}派 信 使 來 命 令 你 加 入 對 {s9}圍 攻 。 無 論 付 出 多 大 代 價 都 必 須 拿 下 {s9} 。 
 menu_kingdom_army_follow_failed|在 遠 征 中 你 違 反 了 軍 令， 和 {s8}走 散 了。 他 假 設 你 有 更 重 要 的 問 題 要 處 理 ， 但 也 警 告 他 的 耐 心 不 是 無 限 的 。
 menu_battle_debrief|{s11} ^^ 我 軍 傷 亡 ：{s8} {s10}^^ 敵 軍 傷 亡 ：{s9}
-mno_inspect_troll|檢 查 被 擊 倒 的 巨 魔 
+mno_inspect_troll|檢 查 被 擊 倒 的 食 人 妖 
 menu_pre_join|^^^^^你遇到 {s2}和 {s1}的 戰 鬥 。 你 決 定 ...
 mno_pre_join_help_attackers|前 往 幫 助 {s2}。 
 mno_pre_join_help_defenders|趕 往 援 助 {s1}。 
@@ -227,14 +227,14 @@ menu_join_siege_outside|^^^^^^{s1}正 被 {s2}圍 攻 。
 mno_approach_besiegers|進 入 圍 城 營 地 。 
 mno_pass_through_siege|穿 過 圍 城 進 入 {s1}。 
 menu_cut_siege_without_fight|圍 城 方 放 你 進 入 了 城 堡 。 
-menu_besiegers_camp_with_allies|{s1}依 然 在 被 圍 困 中 ， 你 和 你 的 部 隊 在 上 空 飛 揚 著 {s2}旗 幟 的 營 地 中 被 熱 烈 的 歡 迎 了 。 
+menu_besiegers_camp_with_allies|{s1}依 然 被 圍 困 中 ， 你 和 你 的 部 隊 在 上 空 飛 揚 著 {s2}旗 幟 的 營 地 中 受 到 熱 烈 的 歡 迎 。 
 mno_talk_to_siege_commander|要 求 和 指 揮 官 會 面 。 
 mno_join_siege_with_allies|加 入 下 一 輪 的 攻 城 。 
 mno_join_siege_stay_back|僅 命 令 你 的 部 隊 協 助 下 一 輪 的 攻 城 。 
-; menu_moria_must_escape|^^The book seems to give the account of the last attempt of dwarves to resettle in Moria. Attempt which apparently ended with gruesome death for all involved. Perusing the book,  you stumble on the words 'true silver'! Studying the pages you suddenly understand  that those are the descriptions of dwarven stashes somewhere on the lower levels. Hah!  Would not it be cool to uncover the long lost dwarven mithril!?  ^You eagerly follow the directions, into a narrow winding tunnel and down...  ^...^After a couple of hours of fruitless search you understand that you are lost deep in Moria and need to find a way out.
+menu_moria_must_escape|^^這 本 書 似 乎 紀 錄 矮 人 最 後 一 次 嘗 試 在 摩 瑞 亞 生 活 的 日 子。這 個 嘗 試 最 終 全 部 以 全 部 人 慘 死 做 結。繼 續 閱 讀，你 注 意 到 '真 銀' 等 字! 細 讀 那 幾 頁 之 後 你 終 於 理 解 那 是 描 述 矮 人 秘 銀 儲 藏 在 底 層 某 處 的 意 思。哈! 如 果 能 找 到 那 些 失 傳 的 秘 銀 不 就 酷 斃 了 嗎!? ^你 飢 渴 的 跟 隨 指 示，進 入 一 道 狹 窄 又 曲 折 的 隧 道 向 下 走... ^...^經 過 幾 個 小 時 的 無 功 搜 尋 你 發 覺 到 自 己 走 失 在 摩 瑞 亞 底 部 並 需 要 找 到 一 條 出 路
 mno_moria_exit_scene|找 到 你 的 出 路 ！ 
 menu_castle_outside|你 在 {s2}的 外 面 。 {s11} {s3} {s4}
-mno_moria_enter|回 到 摩 瑞 亞 秘 密 入 口 的 主 大 廳 
+mno_moria_enter|從 秘 密 入 口 回 到 摩 瑞 亞 的 主 殿 
 mno_moria_enter_door|進 入 摩 瑞 亞 
 mno_castle_start_siege|圍 攻 這 個 {reg6?城 鎮 :城 堡 }。 
 mno_castle_leave|離 開 
@@ -246,65 +246,65 @@ mno_attack_stay_back|命 令 你 的 部 隊 攻 擊 而 你 留 下
 mno_build_ladders|準 備 梯 子 攻 擊 城 牆 
 mno_lift_siege|放 棄 圍 城 
 menu_siege_attack_meets_sally|^^^^^^守 城 方 出 兵 迎 擊 你
-menu_construct_ladders|隊 員 中 最 高 工 程 技 能 為 {reg2}級 ， {reg3?你 預 期 :{s3}預 期 }將 需 要 {reg4}小 時 來 安 設 雲 梯 。 
+menu_construct_ladders|隊 員 中 最 高 工 程 技 能 為 {reg2}級 ， {reg3?你 預 期 :{s3}預 期 }將 需 要 {reg4}小 時 來 安 裝 攻 城 梯。 
 mno_build_ladders_cont|繼 續 執 行 
 menu_castle_attack_walls_simulate|{s4}^^我 軍 傷 亡 ： {s8}^^敵 軍 傷 亡 ： {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^我 軍 傷 亡 ： {s8}^^盟 軍 傷 亡 ：{s9}^^敵 軍 傷 亡 ：{s10}
 menu_castle_taken|你 的 部 隊 攻 陷 了 {s3} ， 現 在 你 已 經 完 全 地 掌 控 了 這 個 {reg2? 城 鎮 :城 堡 } 。 {reg1?看 起 來 已 經 沒 有 什 麽 能 阻 止 你 將 它 佔 為 己 有 ...: }
 menu_castle_taken_2|你 的 部 隊 攻 陷 了 {s3} ， 現 在 你 已 經 完 全 地 掌 控 了 這 個 城 堡 。 現 在 應 該 把 這 個 勝 利 的 消 息 告 訴 給 {s9}了 。 {s5}
-mno_castle_taken_no_claim|什 麽 也 不 要 求 
-menu_siege_started_defender|{s1}正 在 攻 擊 {s2}的 城 墻 。 你 方 有 {reg22}人 可 以 參 戰 對 抗 敵 人 的 {reg11}人 。 你 決 定 ...
+mno_castle_taken_no_claim|不 要 求 獎 賞
+menu_siege_started_defender|{s1} 正 在 攻 擊 {s2}的 城 墻 。 己 方 有 {reg22}人 可 以 參 戰 對 抗 敵 人 的 {reg11}人 。 你 決 定 ...
 mno_siege_defender_join_battle|加 入 戰 鬥 
 mno_siege_defender_troops_join_battle|僅 命 令 你 的 部 隊 攻 擊 
 menu_siege_join_defense|{s4}^^我 軍 傷 亡 ： {s8}^^盟 軍 傷 亡 ：{s9}^^敵 軍 傷 亡 ：{s10}
 menu_village_hunt_down_fugitive_defeated|^^^^^敵 人 的 沉 重 打 擊 將 你 擊 倒 在 地 ， 你 的 意 識 旋 轉 和 熄 滅 。 隨 著 時 間 流 逝 。 當 你 再 次 睜 開 眼 睛 時 ， 你 發 現 自 己 滿 身 傷 痕 和 血 跡 ， 但 幸 運 的 是 似 乎 沒 有 傷 口 是 致 命 的 。 
-menu_town_bandits_succeeded|^^^^^哥 布 林 在 你 面 前 倒 下 如 同 割 下 的 小 麥 ！很 快 只 剩 你 獨 自 站 著 ， 而 大 部 分 的 攻 擊 者 都 昏 迷 ， 死 亡 或 瀕 死 。 當 然 ， 當 地 人 會 很 感 激 你 從 這 種 威 脅 中 拯 救 他 們 。 
+menu_town_bandits_succeeded|^^^^^哥 布 林 在 你 面 前 如 同 割 下 的 小 麥 般 倒 下 ！很 快 只 剩 你 獨 自 站 著 ，大 部 分 的 攻 擊 者 都 陷 入 昏 迷， 死 亡 不 然 就 是 瀕 死 。 當 然 ， 當 地 人 會 很 感 激 你 從 這 種 威 脅 中 拯 救 他 們 。 
 menu_town_brawl_lost|^^^^^^你 被 擊 昏 倒 下 。 人 們 迅 速 洗 劫 了 你 身 上 所 有 的 貴 重 財 物 。 
-menu_town_brawl_won|^^^^^你 擊 敗 了 你 的 對 手 ， 守 衛 已 經 發 出 警 號 。 你 迅 速 地 搜 刮 它 們 身 上 的 貴 重 物 品 並 消 失 直 到 情 緒 穩 定 。 ^也 許 ， 下 次 他 們 會 給 你 更多 尊 重 而 離 開 。  
-; menu_close|Nothing.
+menu_town_brawl_won|^^^^^你 擊 敗 了 你 的 對 手 ，但 守 衛 已 經 發 出 警 號 。 你 迅 速 地 搜 刮 他 們 身 上 的 貴 重 物 品 並 消 失 等 待 風 頭 過 去 。 ^也 許 下 次 他 們 會 對 你 更 尊 重 且 自 行 離 開 。  
+menu_close|無
 menu_town|你 抵 達 {s60}。 {s12}{s13}
-mno_town_menu_0|前 往 某 處 位 置 
-mno_town_menu_0_door|進 入 某 處 
+mno_town_menu_0|前 往 某 個 位 置 
+mno_town_menu_0_door|通 往 某 處 的 門
 mno_town_approach|穿 越 {s1}...
 mno_town_castle|前 往 {s1}
 mno_town_castle_door|進 入 城 堡 
 mno_town_center|步 行 至 主 要 廣 場 ...
-mno_town_center_door|進 入 城 鎮 中 心 
+mno_town_center_door|進 入 城 鎮 中 心 的 門
 mno_aw_chamber_door|開 門 
 mno_trade_with_arms_merchant|訪 問 {s40}
 mno_trade_with_horse_merchant|訪 問  {s41}
 mno_town_prison_door|進 入 監 獄 
-mno_dungeon_enter|搜 索 山 內 遺 失 的 長 矛 
+mno_dungeon_enter|搜 索 山 內 失 落 的 長 槍
 mno_dungeon_enter_door|開 門 
-; mno_dwarven_warehouse|Visit the Dwarven Warehouse
-; mno_dwarven_warehouse_door|Enter Dwarven Warehouse
+mno_dwarven_warehouse|拜 訪 矮 人 倉 庫
+mno_dwarven_warehouse_door|進 入 矮 人 倉 庫
 mno_talk_to_castle_commander|訪 問 {s61}兵 營 
 mno_speak_with_elder|與 {s6}談 話 
 mno_isengard_underground|前 往 地 底 洞 穴 
 mno_tirith_toplevel|爬 到 最 上 層 
 mno_town_leave|離 開 ...
 mno_town_leave_door|離 開 此 地 
-; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
+menu_player_initiated_siege_result|你在 {s2}的 旗 幟 下 進 攻 這 個 中 心
 menu_disembark|你 想 上 岸 嗎 ？ 
 mno_disembark_yes|是 
 mno_disembark_no|否 
 menu_ship_reembark|你 想 上 船 嗎 ？ 
 mno_reembark_yes|是 
 mno_reembark_no|否 
-menu_center_reports|城 鎮 名 稱 ： {s1}^租 金 收 入 ：  {reg1}第 納 爾 ^關 稅 收 入 ： {reg2} 第 納 爾^食 物 存 貨 ： 供應 {reg3}天 
+menu_center_reports|城 鎮 名 稱 ： {s1}^ 租 金 收 入 ：  {reg1}迪 納 爾 ^關 稅 收 入 ： {reg2} 迪 納 爾^食 物 存 貨 ： 能 供 應 {reg3}天 
 menu_sneak_into_town_suceeded|假 裝 成 穿 著 破 爛 的 朝 聖 者 ， 你 騙 過 了 守 衛 ， 順 利 的 混 入 城 里 。 
 menu_sneak_into_town_caught|在 你 嘗 試 溜 進 去 時 ， 一 名 守 衛 發 現 了 你 並 發 出 了 警 報 ！ 你 必 須 在 所 有 守 衛 都 開 始 搜 捕 你 之 前 從 大 門 逃 出 去 。 
 mno_sneak_caught_fight|殺 出 一 條 血 路 ！ 
 mno_sneak_caught_surrender|投 降 
 menu_sneak_into_town_caught_dispersed_guards|你 輕 易 的 甩 掉 了 守 衛 ， 消 失 在 街 道 的 深 處 。 
 menu_sneak_into_town_caught_ran_away|你 用 你 的 方 式 終 於 通 過 大 門 且 迅 速 撤 退 到 安 全 的 城 外 。
-menu_tld_player_defeated|^^^^^突 然 你 的 頭 部 一 陣 劇 痛 ！  \\ 你 全 身 顫 抖 ， 世 界 在 你 眼 中 越 來 越 黑 ...^這 就 是 你 的 終 點 了 ？ 
+menu_tld_player_defeated|^^^^^你 的 頭 部 一 陣 劇 痛 ！  \\ 你 全 身 顫 抖 ， 世 界 在 你 眼 中 越 來 越 黑 ...^難 道 這 就 是 你 的 終 點 了 嗎？ 
 menu_recover_after_death_fangorn|你 醒 了 過 來， 發 現 四 周 是 一 片 森 林。 每 個 骨 頭 都 痛 得 厲 害， 你 還 奇  蹟 似 的 活 著 ！ ^^這 是 一 場 慘 敗 ， 但 至 少 你 看 到 發 生 了 什 麼 。 ^現 在 你 知 道 這 該 死 的 森 林 是 怎 麼 回 事 了 ， ^而 你 還 活 著 。  ^^有 誰 會 相 信 你 嗎 ？ 
-menu_recover_after_death_moria|^^^^^你 漸 漸 恢 複 意 識 ， 你 躺 在 軟 土 上 清 新 微 風 吹 在 你 的 臉 上 ， 你 到 外 面 了 ！^獸 人 必 定 認 為 你 已 經 死 了 而 把 你 扔 在 陰 暗 的 坑 中 。^你 一 定 是 經 由 地 下 河 流 把 你 帶 到 外 面 。
+menu_recover_after_death_moria|^^^^^你 漸 漸 恢 複 意 識 ， 你 躺 在 泥 土 中，清 新 的 微 風 吹 在 你 的 臉 上 ， 你 到 外 面 了 ！^半 獸 人 必 定 認 為 你 已 經 死 了 並 將 你 扔 在 陰 暗 的 坑 中 。^大 概 是 地 下 河 流 把 你 帶 到 外 面 的。
 mno_whatever|起 來 ！ 
 menu_recover_after_death_default|^^^^^你 漸 漸 恢 複 意 識 。 你 躺 在 你 倒 下 地 方 。 敵人 必 定 認 為 你 已 經 死 了 而 把 你 丟 在 這 裡 。 然 而 ， 你 的 傷 口 似 乎 都 不 是 致 命 的 ， 雖 然 你 感 覺 很 糟 糕 ， 但 仍 然 可 以 走 路 。 你 站 起 來 ， 並 試 圖 尋 找 你 的 部 隊 的 其 他 倖 存 者 。 
-menu_recover_after_death_town|^^^^你 的 意 識 恢 複 ， 並 發 現 自 己 在 鎮 郊 外 。  你 還 活 著 ！ 周 圍 沒 有 人 ， 你 嘗 試 著 把 自 己 帶 往 鎮 外 。 看 來 ， 沒 有 傷 口 是 致 命 的 ， 雖 然 你 感 覺 很 糟 糕 ， 但 仍 然 可 以 走 路 。 
-menu_recover_after_death_town_alone|你 的 意 識 恢 複 ， 並 發 現 自 己 在 鎮 郊 外 。 你 還 活 著 ！ 周 圍 沒 有 人 ， 你 嘗 試 著 把 自 己 帶 往 鎮 外 。 你 的 同 伴 找 到 了 你 。 看 來 ， 沒 有 傷 口 是 致 命 的 ， 雖 然 你 感 覺 很 糟 糕 ， 但 仍 然 可 以 走 路 。 
+menu_recover_after_death_town|^^^^你 的 意 識 恢 複 ， 並 發 現 自 己 在 城 鎮 郊 外 。  你 還 活 著 ！ 周 圍 沒 有 人 ， 你 嘗 試 自 行 前 往 鎮 外 。 看 來 沒 有 致 命 傷 ， 雖 然 你 感 覺 很 糟 糕 ， 但 仍 然 可 以 走 路 。 
+menu_recover_after_death_town_alone|你 的 意 識 恢 複 ， 並 發 現 自 己 在 城 鎮 郊 外 。 你 還 活 著 ！ 周 圍 沒 有 人 ， 你 嘗 試 自 行 前 往 鎮 外 。 你 的 同 伴 找 到 了 你 。 看 來 沒 有 致 命 傷 ， 雖 然 你 感 覺 很 糟 糕 ， 但 仍 然 可 以 走 路 。 
 menu_notification_center_under_siege|{s1} 正 被 {s3}的 {s2}圍 困 ！ 
 menu_notification_one_side_left|^^^^^魔 戒 之 戰 結 束 了 ！ ^^{s1}方 陣 營 擊 敗 了 所 有 敵 人 從 而 營 得 了 最 終 的 勝 利 ！ ！  
 menu_notification_total_defeat|^^^^^對 於 你 來 說 ， 魔 戒 戰 爭 已 經 結 束 了 ！ ^^{s1}方 陣 營 被 他 們 的 敵 人 所 擊 敗 ， 而 你 徹 底 失 敗 了 ！ 
@@ -313,56 +313,56 @@ menu_notification_faction_defeated|^^^^^{s1}被 擊 敗 了 ！ ^{s1}從 此 將
 menu_ruins|^^^^你 來 到 了{s1}。 昔 日 兵 力 強 盛 的 營 地 現 在 已 經 是 一 片 廢 墟 ， 但 你 仍 可 看 到 防 禦 工 事 的 殘 餘 及 各 種 生 銹 的 武 器 碎 片 被 胡 亂 丟 棄 在 地 上 。 
 menu_legendary_place|^^^^你 遵 循 傳 聞 從 而 發 現 了 {s1}。 現 在 ， 你 可 以 探 索 下 這 地 方 ， 看 看 傳 聞 是 真 是 假 。 
 mno_explore|探 索 這 個 地 方 
-; menu_ring_hunter_lair|^^^^You have followed the trail of the Ring Hunters through Mirkwood Forest and have arrived at the {s1}. You see them getting ready to leave with a chest.
-; mno_attack_lair|Attack them now
-; mno_leave_bandit_lair|Leave for now.
-; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
-; mno_gondor_reinforcement_event_close|Close
-; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
+menu_ring_hunter_lair|^^^^你 跟 隨 戒 指 獵 人 穿 過 幽 暗 密 林 並 抵 達 {s1}。你 看 見 他 們 準 備 帶 著 一 個 箱 子 離 開
+mno_attack_lair|攻 擊 他 們
+mno_leave_bandit_lair|暫 時 離 開
+menu_gondor_reinforcement_event|^^^^^剛 鐸 的 烽 火 被 點 燃 了，米 那 斯 提 力 斯 請 求 支 援!^^ 南 方 的 領 主 們 現 將 前 往 北 方 去 從 即 將 降 臨 的 黑 暗 中 保 衛 白 城
+mno_gondor_reinforcement_event_close|關 閉
+menu_gondor_beacons|你 抬 頭 望 向 {s1}， 其 中 一 座 剛 鐸 的 烽 火 台， 用 來 警 示 北 方 和 南 方 剛 鐸 的 緊 急 事 件
 mno_gondor_beacons_close|離 開 ...
-; menu_player_added_to_war_council|^^^^^A messenger arrived and has told you that now, as {s24}, {s2} has asked you to be part of his War Council. You can now suggest strategies that can influence the course of this war.
-; mno_player_added_to_war_council_close|Close
-; menu_player_added_to_siege_reports|^^^^^A messenger arrived and has told you that now, as {s24}, you will be receiving reports whenever {s2} besieges a center or when {s2}'s centers are sieged.
-; mno_player_added_to_siege_reports_close|Close
-; menu_player_added_to_allow_follow|^^^^^A messenger arrived and has told you that now, as {s24}, you will be allowed command {s2} to follow you, for a total of {reg55} maximum followers.
-; mno_player_added_to_allow_follow_close|Close
-; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
-; mno_center_besieged_event_close|Close
+menu_player_added_to_war_council|^^^^^一 位 信 差 抵 達 並 告 訴 你，作 為 {s24}， {s2} 邀 請 你 加 入 他 的 戰 爭 議 會。你 現 在 可 以 建 議 戰 術 並 影 響 戰 爭 的 走 向。
+mno_player_added_to_war_council_close|關 閉
+menu_player_added_to_siege_reports|^^^^^一 位 信 差 抵 達 並 告 訴 你， 作 為 {s24}， 每 當 {s2} 攻 擊 一 個 中 心 或 {s2} 的 中 心 受 到 攻 擊 時，你 將 收 到 報 告。
+mno_player_added_to_siege_reports_close|關 閉
+menu_player_added_to_allow_follow|^^^^^一 位 信 差 抵 達 並 告 訴 你， 作 為 {s24}，你 將 可 以 命 令 {s2} 跟 隨 你， 跟 隨 者 的 上 限 是 {reg55} 人
+mno_player_added_to_allow_follow_close|關 閉
+menu_center_besieged_event|^^^^^一 位 信 差 抵 達 並 報 告 {s1} 正 被 {s3} 的 {s2} 攻 打
+mno_center_besieged_event_close|關 閉
 mno_intro_next|繼 續 ...
-; mno_start_defend_caravan|Defend the Caravan!
-; mno_start_raid_caravan|Raid the Caravan!
-; mno_start_ambush_orcs|Ambush the Orcs!
-; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
-mno_go_your_way|遠 離 他 們 
-; mno_defend_villagers|Defend the Villagers!
-; mno_raid_villagers|Raid the Village!
-; mno_go_away|Leave and regroup for now.
-; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
-; mno_attack_scout_camp|Attack the Scout Camp!
-; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
-; mno_sb_defend_the_town|Board them! Destroy their fleet!
-; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
-; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
-; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
-; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
-; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
-; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
-; mno_defend_refugees|Keep your eye out for raiders...
-; mno_attack_refugees|Attack the refugee train...
-; mno_leave_refugees|Leave them for now...
+mno_start_defend_caravan|保 衛 商 隊!
+mno_start_raid_caravan|襲 擊 商 隊!
+mno_start_ambush_orcs|埋 伏 半 獸 人!
+mno_start_kill_scouts|阻 止 斥 候 匯 報 你 的 抵 達!
+mno_go_your_way|不 管 他 們 
+mno_defend_villagers|保 衛 村 民!
+mno_raid_villagers|襲 擊 村 莊!
+mno_go_away|暫 時 離 開 並 重 整 旗 鼓
+menu_scout_camp_quest|你 看 到 斥 候 營 地 就 近。你 讓 手 下 準 備 攻 擊 他 們
+mno_attack_scout_camp|攻 擊 斥 候 營 地!
+menu_sea_battle_quest|你 遇 見 敵 方 艦 隊。他 們 的 船 靠 近 並 丟 下 木 板...
+mno_sb_defend_the_town|登 上 他 們 的 船! 摧 毀 他 們 的 艦 隊!
+mno_sb_attack_the_town|他 們 想 阻 止 我 們! 保 衛 艦 隊!
+menu_camp_field_ai|^^^^^點 擊 選 項 來 開 關。^^^關 閉 一 個 或 多 個 選 項 可 以 增 進 效 果 (幀 率)
+mno_lord_field_ai|領 主 有 改 善 的 戰 場 人 工 智 慧: {s7}
+mno_horse_archer_field_ai|馬 騎 弓 兵 有 改 善 的 戰 場 人 工 智 慧: {s7}
+mno_vs_orcs_field_ai|弓 兵 對 半 獸 人 有 更 好 的 準 度(不 會 瞄 準 半 獸 人 頭 部 以 上): {s7}
+mno_battlefield_animals|非 座 狼 / 馬 等 動 物 同 伴 出 現 在 戰 場 上: {s7}
+mno_defend_refugees|留 意 掠 奪 者...
+mno_attack_refugees|攻 擊 難 民 隊 伍...
+mno_leave_refugees|暫 時 不 管 他 們...
 mno_evil_war_tut_continue|繼 續 ...
-; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_guardian_party_reject|Send a message you cannot join him.
+menu_guardian_party_quest|{s8} 告 知 你 艾 辛 格 已 經 被 逼 進 角 落 並 正 在 準 備 最 後 一 戰。他 希 望 你 能 加 入 這 場 跟 艾 辛 格 軍 隊 的 最 終 決 戰。你 需 要 帶 上 至 少 {reg13} 人 的 軍 隊，如 果 你 人 數 不 足 則 得 盡 快 補 充。
+mno_guardian_party_reject|向 他 送 一 封 信 息 告 訴 他 說 你 不 能 加 入
 mno_guardian_party_send_word|回 報 說 你 馬 上 就 會 加 入 。 
-; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
-; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
-; mno_alternate_training_retry|Try again...
-; mno_alternate_training_finish|Leave the arena...
-menu_custom_battle_choose_faction1|^^^^^^^^^^選 擇 你 的 傾 向 和 優 點 ： 
+menu_alternate_training_fight|你 將 會 面 對 {reg5}個 對 手。你 準 備 好 了 嗎?
+mno_training_continue|開 始 訓 練...
+menu_alternate_training_conclusion|{s5}
+mno_alternate_training_retry|再 試 一 次...
+mno_alternate_training_finish|離 開 區 域...
+menu_custom_battle_choose_faction1|^^^^^^^^^^選 擇 你 的 陣 營 和 優 點 ： 
 mno_good_equal|良 善 陣 營 
 mno_bad_equal|邪 惡 陣 營 
-mno_replay_prev|重 回 前 個 設 定 
+mno_replay_prev|返 回 前 一 個 設 定 
 menu_custom_battle_choose_faction2|^^^^^^^^^^選 擇 良 善 陣 營 
 mno_cb_gondor|剛 鐸 
 mno_cb_gondor1|洛 汗 
@@ -385,31 +385,31 @@ mno_cb_mordor8|海 盜
 mno_rescue_mission|在 黑 夜 的 掩 護 下 ， 潛 入 巫 師 巢 穴 
 mno_next_rescue_scene_door|繼 續 往 前 ！ 
 mno_pick_troops1|選 擇 執 行 任 務 同 伴 ， 已 選 擇 了 {reg0}位 
-menu_pick_troops|你 要 選 擇 誰 和 你 一 起 執 行 這 次 行 動 ？ 你 已 選 出 了 {reg0}人 。 你 能 選 出 10 人 。 
+menu_pick_troops|你 要 選 擇 誰 和 你 一 起 執 行 這 次 行 動 ？ 你 已 選 出 了 {reg0}人 。 你 最 多 能 選 出 10 人 。 
 mno_go_forward|結 束 同 伴 選 擇 且 繼 續 
 menu_burial_mound|你 來 到 於 {s1} 之 {s2}的 墓 塚 。 它 是 由 那 些 死 去 的 敵 人 的 破 損 武 器 堆 積 而 成 的 。
-mno_pay_respects|跪下 並 獻 上 你 的 敬 意 
+mno_pay_respects|跪 下 並 獻 上 你 的 敬 意
 mno_swear_oath|宣 讀 復 仇 的 誓 言 
 mno_despoil|褻 瀆 這 個 地 區 
 mno_leave_mound|離 開 墓 塚 
 menu_burial_mound_respects|你 滿 懷 敬 意 的 在 {s1}之 墓 面 前 跪 下 ， 默 念 禱 言 祈 求 未 來 旅 途 順 利 。 這 裡 已 經 沒 什 麼 事 要 做 了 。  
-menu_burial_mound_oath|你 為 {S4}的 死 亡 大 聲 宣 讀 復 仇 的 誓 言 。 你 會 堅 持 不 懈 地 尋 求 {s3}的力量 並 摧 毀 它 。 你誓 言 隨 風 而 遠 去 ， 誰 又 能 說 海 外 沒 有 聽 到 ？ 
+menu_burial_mound_oath|你 為 {S4}的 死 亡 大 聲 宣 讀 復 仇 的 誓 言 。 你 會 堅 持 不 懈 地 尋 求 {s3}的 力 量 並 摧 毀 它 。 你 的 誓 言 隨 風 而 遠 去 ， 誰 又 能 說 海 外 沒 有 聽 到 ？ 
 menu_burial_mound_despoil|你 親 手 推 倒 了 {s1}的 墓 碑 ， 惡 毒 地 詛 咒  謾 罵 ， 對 這 個 石 塊 做 了 一 些 無 法 形 容 的 暴 行 。 你 的 追 隨 者 因 感 到 恐 懼 而 後 退 ， 但 他 們 卻 為 你 的 惡 行 再 一 次 對 你 到 敬 畏 。  
 menu_funeral_pyre|你 來 到 於 {s1} 之 {s2}的 葬 禮 殘 骸 。 在 這 裡 ， 他 的 屍 體 被 他 的 親 衛 隆 重 地 燒 毀 。 沒 留 下 什 麼 值 錢 的 東 西 。 
 mno_leave_pyre|離 開 殘 推 
-menu_town_ruins|當 你 靠 近 ， 你 看 到 了 {s1}是 {s2}。
+menu_town_ruins|當 你 靠 近 ， 你 看 到 {s1} 已 是 {s2}。
 mno_ruin_menu_0|探 索 這 個 地 方 
 mno_ruin_leave|離 開 ...
 menu_death|你 已 經 被 殺 害 。 雖 然 戰 爭 仍 舊 火 熱 ， 但 你 將 不 再 是 它 的 一 部 分 。 
-menu_animal_ambush|從 你 的 隊 伍 休 息 時 你 和 你 的 同 伴 找 到 你 自 己 的 分 歧 ，然 後 突 然 ..
+menu_animal_ambush|你 和 你 的 同 伴 發 現 跟 其 他 人 走 散 了，突 然 間...
 menu_animal_ambush_success|{s2}在 你 前 面 {reg0?倒 下 :倒 下 }如 同 割 下 的 小 麥 ！ 很 快 大 部 分 的 攻 擊 者 都 倒 地 ， 死 亡 或 瀕 死 。 {s3}
 menu_animal_ambush_fail|動 物 撕 咬 你 {reg0?,: 和 你 的 同 伴 {reg2?,:,}}但 幸 運 的 是 你 設 法 避 開 他  們 。 希 望 它 們 不 會 再 攻 擊 你 。 
-menu_build_your_scene|你 可 以 在 這 里 編 輯 你 自 己 的 戰 鬥 場 景 。 首 先 請 打 開 編 輯 模 式 ， 接 著 選 擇 下 方 顯 示 的 一 個 槽 (存 放 位 置 )。 你 可 以 把 自 己 的 作 品 提 交 給 TLD — — Dev 制 作 組 ， 如 果 你 做 的 很 好 ， 你 的 場 景 會 在 下 一 版 本 中 的 隨 機 戰 鬥 中 出 現 。 提 交 時 請 寫 出 名 字 ， 並 提 交 sco 文 件 或 SceneObj 文 件 夾 。 如 果 可 能 ， 你 可 以 試 著 做 一 個 位 於 中 土 大 陸 上 的 場 景 (譯 者 註 ： 即 能 體 現 當 地 民 族 或 地 理 的 特 色 )。 提 示 ： 不 要 做 深 水 或 高 山 ， 以 及 任 何 無 法 經 過 的 東 西 — — 除 非 你 是 一 個 資 深 的 場 景 制 作 師 並 且 明 白 如 何 用 路 點 是 AI 自 己 繞 開 那 些 東 西 。 ^ (條 目  #0-1 是 給 攻 擊 方 ，  #4 給 防 禦 方 ， 不 要 碰 #5-8
+menu_build_your_scene|你 可 以 在 這 里 編 輯 你 自 己 的 戰 鬥 場 景 。 首 先 請 打 開 編 輯 模 式 ， 接 著 選 擇 下 方 顯 示 的 一 個 槽 (存 放 位 置 )。 你 可 以 把 自 己 的 作 品 提 交 給 TLD 開 發 團 隊 ， 如 果 你 做 的 很 好 ， 你 的 場 景 會 在 下 一 版 本 中 的 隨 機 戰 鬥 中 出 現 。 提 交 時 請 寫 出 名 字 ， 並 提 交 sco 文 件 或 SceneObj 文 件 夾 。 如 果 可 能 ， 你 可 以 試 著 做 一 個 位 於 中 土 大 陸 上 的 場 景 (譯 者 註 ： 即 能 體 現 當 地 民 族 或 地 理 的 特 色 )。 提 示 ： 不 要 做 深 水 或 高 山 ， 以 及 任 何 無 法 經 過 的 東 西 — — 除 非 你 是 一 個 資 深 的 場 景 制 作 師 並 且 明 白 如 何 用 路 點 是 AI 自 己 繞 開 那 些 東 西 。 ^ (條 目  #0-1 是 給 攻 擊 方 ，  #4 給 防 禦 方 ， 不 要 碰 #5-8
 mno_scene1|場 景 5 (file scn battlefield5.sco)
 mno_scene2|場 景 6 (file scn battlefield6.sco)
 mno_scene3|場 景 7 (file scn battlefield7.sco)
 mno_scene4|場 景 8 (file scn battlefield8.sco)
 mno_scene5|場 景 9 (file scn battlefield9.sco)
-mno_back_3dot|後 退 ...
-mno_back|後 退 
-; mno_next|Next...
+mno_back_3dot|返 回 ...
+mno_back|返 回
+mno_next|下 一 個...

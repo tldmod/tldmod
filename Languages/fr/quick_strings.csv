@@ -665,38 +665,38 @@ qstr_Show_item_details__|Voir les détails de l'objet
 qstr_Troop_detail|Détail des troupes
 qstr_{s1}^|{s1}^
 qstr_{s1}Level:_{reg1}^|{s1}Niveau: {reg1}^
-; qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
-; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
+qstr_{s1}Hit_Points:_{reg|{s1}Points de touche: {reg1}
+qstr_{s1}Atributes:_^___S|{s1}Attributs: ^ Force:^
 qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1}   Agilité:
 qstr_{s2}{reg1}|{s2}{reg1}
-; qstr_{s1}Main_skills:_^|{s1}Main skills: ^
-; qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
+qstr_{s1}Main_skills:_^|{s1}Compétences principales: ^
+qstr_{s1}___Power_Strike:|{s1} Force de frappe:^
 qstr_{s2}{reg1}^|{s2}{reg1}^
 qstr_{s1}___Athletics:^|{s1}   Athlétisme:^
-; qstr_{s1}___Riding:^|{s1}   Riding:^
+qstr_{s1}___Riding:^|{s1} Équitation:^
 qstr_{s2}_^|{s2}-^
-; qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
-; qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
+qstr_{s1}___Power_Throw:^|{s1} Puissance de Jet:^
+qstr_{s1}___Power_Draw:^^|{s1} Puissance de tension:^^
 qstr_{s2}{reg1}^^|{s2}{reg1}^^
 qstr_{s2}_^^|{s2}-^^
 qstr_{s1}Weapons:^|{s1}Armes:^
 qstr_{s1}___One_Handed:^|{s1}   A une main:^
 qstr_{s1}___Two_Handed:^|{s1}   A deux mains:^
-; qstr_{s1}___Polearms:^|{s1}   Polearms:^
-; qstr_{s1}___Archery:^|{s1}   Archery:^
-; qstr_{s1}___Crossbow:^|{s1}   Crossbow:^
-; qstr_{s1}___Throwing:^|{s1}   Throwing:^
+qstr_{s1}___Polearms:^|{s1} Armes d'hast:^
+qstr_{s1}___Archery:^|{s1} Archerie:^
+qstr_{s1}___Crossbow:^|{s1}   Arbalète:^
+qstr_{s1}___Throwing:^|{s1}   Jet:^
 ; qstr_{s1}___Slings:|{s1}   Slings:
-; qstr_{s2}_|{s2}-
-; qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
-; qstr_ready_bows_and_missi|ready bows and missiles
+qstr_{s2}_|{s2}-
+qstr__Click_on_the_troop_|(Clique sur une troupe pour la tourner)^^Clique sur les pièces d'équipement ^(Casque, armure, gants et bottes)^ pour les afficher.
+qstr_ready_bows_and_missi|arcs et missiles prêts
 ; qstr_ready_side_arms|ready side arms
 ; qstr_ready_two_hander|ready two-hander
 ; qstr_ready_polearms|ready polearms
 qstr_shields_up|Boucliers levés
 qstr_doff_shields|Enlever les boucliers
-; qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Party - {s12} Troop
+qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Armée - {s12} Troupe
 qstr_Your_mount_stumbles!|Votre monture trébuche ! Elle semble boiter.
 qstr_Bitten_by_your_own_w|Mordu par votre propre Warg !
 qstr_You_weigh_too_much_f|Vous êtes trop lourd pour un poney !
@@ -1272,7 +1272,7 @@ qstr__You_need_to_be_{s24|(Vous devez être {s24} ou plus).
 qstr_You_are_not_worthy_o|Vous n’êtes pas assez digne pour que je mette a votre services mes compétences. Prouvez d'abord votre valeur et élevez vous au dessus du rang de {s25}. {s2} 
 qstr_I_am_sorry._I_cannot|Je suis désolé. Je ne peux pas vous aidez en tant que {s25} alors que d'autres tâches plus urgentes m'attendent. {s2}
 qstr_Yes_I_am_and_I_can_h|Oui je le suis, et je peux vous aidez pour un certain prix.
-; qstr_You_heard_right_and_|You heard right, and yes, I can aid you.
+qstr_You_heard_right_and_|Vous avez bien entendu, et oui, je peux vous aider.
 qstr__Costs_1000_Resource|(Coûte 1000 ressources, 5 influence)
 qstr_I_can_see_that._I_ll|Je vois ça. Je vais demandez a mes hommes de monter la garde pendant que je m'occupe de vous. Cela va prendre un certain temps. {s2}
 qstr_Yes_I_see_that._I_ca|Oui je vois ça. Nous pouvons vous soignez mais cela va me détourner de tâches importantes. {s2}
@@ -1343,9 +1343,9 @@ qstr_We_are_at_war_with_{|Nous sommes en guerre avec {s12}. Cependant, nous comb
 qstr_We_are_at_war_with_{s|Nous sommes en guerre avec {s12}. Cependant, il n’y a que de petites escarmouches pour l’instant.
 qstr_we_are_not_too_conce|Ils ne nous préocupent pas vraiment pour l’instant, nous combattons d’autres ennemis plus proches de nos terres.
 qstr__under_your_orders|, à vos ordres
-; qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to personally defeat {reg22} {s6}.
+qstr_{playername}_the_men|{playername}, les hommes ont entendu parler de troupes ennemies féroces. Les histoires de ces terreurs démoralisent les hommes. Je veux que vous montriez aux hommes qu'ils n'ont rien à craindre. Je veux que vous battiez personnellement {reg22} {s6}.
 ; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!
-; qstr_I_will_do_what_you_a|I will do what you asked, and the men will witness.
+qstr_I_will_do_what_you_a|Je ferai ce que vous avez demandé et les hommes en témoigneront.
 qstr_{s9}_wants_you_to_pe|{s9} veut que vous tuiez personnellement {reg22} {s6}.
 
 
@@ -1353,20 +1353,20 @@ qstr_I_want_you_to_person|Je vous que vous tuiez personnellement
 qstr_I_want_you_and_your_|Je veux que vous et vos hommes tuiez
 ; qstr_{playername}_you_nee|{playername}, you need to earn my respect and that of your men. {s6} {reg22} {s7} troops!
 qstr_{s9}_wants_you_to_per|{s9} veut que vous tuiez personnellement {reg22} {s6}.
-; qstr_{s9}_wants_you_and_y|{s9} wants you and your men to kill {reg22} {s6} troops.
+qstr_{s9}_wants_you_and_y|{s9} veut que vous et vos hommes tuiez des soldats {reg22} {s6}.
 ; qstr_{playername}_we_have_|{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ We must intercept the fleet before it reaches the city. Hasten to {s6}, and speak to the local authorities.
 ; qstr_{playername}_we_have_r|{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must intercept the fleet before it reaches the city. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!
 ; qstr_If_you_seek_pillage_|If you seek pillage and plunder, here is a matchless opportunity, {playername}.^^ A Corsair fleet is launching from the port at {s7}, and will set a course straight for {s6}, which is ripe for the plucking! Join them in their assault, and share in the spoils!
 ; qstr_The_soft_weaklings_o|The soft weaklings of Esgaroth are no match for our swift horsemen and ferocious warriors, {playername}. This is known. The Lake-men believe themselves safe, across the water from us, but we shall soon show them otherwise!^^ We have made boats, and rafts, good enough to carry our warriors straight across the lake. They won't be expecting us! ^^Go to the Main Camp, and speak to the camp commander if you wish to join the assault.
-; qstr_{s9}_asked_you_to_he|{s9} asked you to help defend {s3} against a Corsair raid. Hasten to the city, speak to the guild master, and lend your aid to the local garrison.
-; qstr_{s9}_asked_you_to_hel|{s9} asked you to help defend Esgaroth against a naval incursion, of all things, made by Rhûn. Hasten to the Lake-town, speak to the guild master, and lend your aid to the local garrison.
-; qstr_{s9}_offered_you_an_|{s9} offered you an opportunity to join a naval raid against {s3}. Make your way to {s4}, speak to the camp commander, and join the assault.
-; qstr_{s9}_offered_you_an_o|{s9} offered you an opportunity to join a naval raid against Esgaroth. Make your way to {s4}, speak to the camp commander, and join the assault.
-; qstr_We_will_go_as_swiftl|We will go as swiftly as we may, and pray we are not too late.
+qstr_{s9}_asked_you_to_he|{s9} vous a demandé de défendre {s3} contre un raid corsaire. Chevauchez jusqu’à la cité, parlez au maître de guilde et prêtez main forte à la garnison.
+qstr_{s9}_asked_you_to_hel|{s9} vous a demandé de défendre Esgaroth contre une invasion navale menée par Rhûn. Rendez vous à Lacvillle, parlez au maître de guilde et prêter main forte a la garnison.
+qstr_{s9}_offered_you_an_|{s9} vous a offert l'opportunité de vous joindre à un assaut naval contre {s3}. Rendez vous à {s4}, parler au commandant du camp et joignez vous à l'assaut.
+qstr_{s9}_offered_you_an_o|{s9} vous a offert l'opportunité de vous joindre à un assaut naval sur Esgaroth. Rendez vous à {s4}, parler au commandant du camp et joignez vous à l'assaut.
+qstr_We_will_go_as_swiftl|Nous irons le plus vite possible, et priez pour que nous ne soyons pas en retard.
 qstr_We_shall_plunder_the|Nous devons piller leur port et saisir leurs richesses pour nous!
 qstr_We_shall_plunder_the_|Nous devons piller Lacville et saisir leurs richesses pour nous!
 qstr_I_m_sorry_but_we_can|Je suis désolé, mais nous ne pouvons pas les aider pour le moment.
-; qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
+qstr_Bah!_Far_more_glory_|Bah! Il y a des choses bien plus glorieuses que cette ridicule piraterie.
 qstr_This_raid_does_not_i|Ce raid ne m’intéresse pas. Je devrais gagner de la gloire ailleurs.
 qstr_{s9}_asked_you_to_de|{s9} vous a demandé de détruire un camp d'éclaireurs près de {s1}.
 qstr_{s9}_asked_you_to_def|{s9} vous a demandé de défendre un village près de {s1}.
@@ -1407,24 +1407,24 @@ qstr_We_need_to_take_the_|Nous avons besoin de porter le combat sur l'ennemi, {p
 qstr_We_need_to_grind_dow|Nous devons broyer nos stupides adversaires, {playername}. Leurs patrouilles et leurs caravanes de ravitaillement deviennent trop fréquents à mon goût. Je veux que vous éliminiez {reg1} groupes de {s13}, qu'ils craignent alors ce qui va leur arriver.
 qstr_{s9}_asked_you_to_el|{s9} vous a demandé d’éliminer {reg1} groupes de {s13}.
 qstr_{s9}_asked_you_to_fr|{s9} vous a demandé de délivrer {s13} de la menace d’un troll déchaîné dans ses environs.
-; qstr_the_Dwarves_so_that_|the Dwarves, so that if you pass by Erebor or the Iron Hills, you can try to arm yourself with the fabled Dwarven weaponry
-; qstr_Gondor_so_that_if_yo|Gondor, so that if you pass by their lands, you can try to purchase some of their well-known armours
-; qstr_Rohan_so_that_if_you|Rohan, so that if you pass by their lands, you can try to purchase some of their fabled horses
-; qstr_Dale_so_that_if_you_|Dale, so that if you pass by their lands, you can try to purchase some of their well-known bows
-; qstr_Without_my_help_you_|Without my help you would all lie dead and burnt!^^ I come to answer the call of Saruman, of Isengard. Cross me at your peril!
-; qstr_Without_my_help_you_w|Without my help you would all lie dead and burnt!^^ I come to answer the call of the Lord of Mordor, who will soon be Lord of all the World.
-; qstr__*snort*_There_is_on| *snort* There is only one Lord of all the world, scum. Soon or late, you will answer to Lugbúrz, weakling!
-; qstr_*snort*_Another_one_|*snort* Another one for the meat-shield, to eat arrows! Be off, weakling. We have no use for you.
-; qstr_Go_to_Moria_and_get_|Go to Moria, and get a nice warg for yourself - or some snagas of your own, if you like!
-; qstr_Go_to_Isengard_and_g|Go to Isengard, and get something for yourself - maybe some of the fighting Uruk-Hai will follow you!
-; qstr_Go_up_north_to_Gunda|Go up north, to Gundabad - dumb and ugly, they are, but they have good furs.
-; qstr_Get_some_snagas_of_y|Get some snagas of your own, like these fellows here who follow me. Maybe you'll have a war party of your own soon enough!
-; qstr_Our_friends_and_alli|Our friends and allies will hear of you, don't doubt it! Might be they'd be willing to give you a new mount, or a new blade. No one has time for the weak, but if you're strong, ha, we help those who help us, see? Trade some of those spoils for a good horse, maybe, with those Men of Rhûn - for riding or eating, your choice, har!
-; qstr_Trade_some_of_those_|Trade some of those spoils for a good horse, maybe, with those Men of Rhûn - for riding or eating, your choice, har!
-; qstr_That_is_not_a_smart_|That is not a smart thing to say in front of a Rhun Warrior...Next time I see you, I will kill you.
-; qstr_They_will_all_know_m|They will all know my name... They will know to fear it
-; qstr_Suilad_mellon!_It_is|Suilad, mellon! It is not oft we meet folk from the Hidden Valley in our realm. We give thanks to the stars they lead you to our aid, and to you as well - le hannon!
-; qstr_Suilad_mellon!_It_is_|Suilad, mellon! It is rare to have one of our woodland kin come to our aid - le hannon!
+qstr_the_Dwarves_so_that_|des Nains, si vous passez par Erebor ou les Monts De Fer, vous pourrez vous équipez d'une arme sorti des légendaires forges naines.
+qstr_Gondor_so_that_if_yo|Gondor, si vous passer sur leurs terres vous pourrez achetez une de leurs célèbres armures
+qstr_Rohan_so_that_if_you|Rohan, si vous traversez leurs terres vous pourrez acquérir un de leurs superbes chevaux.
+qstr_Dale_so_that_if_you_|Dale, si vous traversez leurs terres, vous pourrez vous équiper d'un de leurs célèbres arcs.
+qstr_Without_my_help_you_|Sans mon aide vous seriez tous morts et enterrés!^^Je viens répondre à l'appel de Saroumane de l'Isengard. Contrariez moi et je vous élimine!
+qstr_Without_my_help_you_w|Sans mon aide vous seriez tous morts et enterrés!^^Je viens répondre à l'appel du Seigneur du Mordor, qui sera bientôt le Seigneur du Monde.
+qstr__*snort*_There_is_on|*grognement* Il n'y a qu'un seul Seigneur du Monde vermine. Tôt ou tard, vous devrez en répondre à Lugbúrz, mauviette!
+qstr_*snort*_Another_one_|*grognement* Encore de la chair à canon, bon pour l'abbatoir! Degagez mauviette, nous n'avons pas besoin de vous.
+qstr_Go_to_Moria_and_get_|Allez à la Moria, et prenez vous un bon warg , ou quelques snagas si vous préférez!
+qstr_Go_to_Isengard_and_g|Allez en Isengard et prenez vous quelques chose, peut être certains guerriers Uruk-Hai voudront vous accompagner!
+qstr_Go_up_north_to_Gunda|Allez au nord à Gundabad, ils sont moches et stupides mais ils ont de bonnes fourrures.
+qstr_Get_some_snagas_of_y|Prenez vous quelques snagas, comme ceux qui me suivent. Bientôt vous aurez peut être votre propre armée!
+qstr_Our_friends_and_alli|Nos amis et alliés entendront parlez de vous, n'en doutez pas! Peut être voudront ils vous donnez une nouvelle mouture ou une nouvelle épée. Personne n'a de temps pour les faibles, mais si vous êtes forts, ah ! Nous aidons ceux qui nous aident vous voyez ? Échangez un peu de ce butin avec les hommes de Rhûn pour un bon cheval, pour le monter ou le manger, au choix!
+qstr_Trade_some_of_those_|Échangez un peu de ce butin avec les hommes de Rhûn pour un bon cheval, pour le monter ou le manger, au choix!
+qstr_That_is_not_a_smart_|C'est n'est pas une chose très intelligente à dire devant un guerrier de Rhûn... A notre prochaine rencontre, je vous tuerais.
+qstr_They_will_all_know_m|Tous apprendront mon nom.... et ils apprendront à le craindre.
+qstr_Suilad_mellon!_It_is|Suilad, mellon! Ce n'est pas souvent que nous croisons des gens dans la vallée caché de notre royaume. Nous remercions les étoiles de vous avoir conduit à nous - Le hannon!
+qstr_Suilad_mellon!_It_is_|Suilad, mellon! Il est rare qu'un nos compatriotes des bois vienne nous aider - Le hannon!
 ; qstr_Suilad_mellon!_That_|Suilad, mellon! That is - thank you, friend!^^ At first I wasn’t sure if a goblin sabre, or a raging bear would be our doom. Alas, the stars were kind to send you to our aid.
 ; qstr_Alas_it_is_not_a_ple|Alas, it is not a pleasant purpose or mere wandering that bring me and others serving lord Elrond to these lands... 
 qstr_You_wouldn_t_have_ne|Vous n'auriez pas eu besoin de notre aide si vous surveilliez vos frontières !

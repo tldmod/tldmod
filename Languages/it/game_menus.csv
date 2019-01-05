@@ -144,7 +144,7 @@ menu_camp_strat_tweaks|^^^^^^^^Clicca su un'opzione per attivarla:^(attenzione: 
 mno_strat_tweaks_siege_reqs|Forza richiesta per assedi: {s7}
 mno_strat_tweaks_siege_relax_rate|Relazione della richiesta di forza per assediare: {reg1}
 mno_strat_tweaks_regen_rate|Tasso di rigenerazione della forza: {s7}
-; mno_strat_tweaks_siege_regen_limit|Faction strength regenerate slower at: {reg1}
+mno_strat_tweaks_siege_regen_limit|La potenza della fazione si rigenera più lentamente a: {reg1}
 mno_strat_tweaks_influence_gain_rate|Tasso d'influenza guadagnata: {s7}
 mno_strat_tweaks_rank_gain_rate|Tasso di Rango guadagnato: {s7}
 mno_strat_tweaks_back|Ritorna al menu delle modifiche.

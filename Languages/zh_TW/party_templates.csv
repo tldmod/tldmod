@@ -6,31 +6,31 @@ pt_ruins|廢 墟
 pt_legendary_place|傳 說 中 的 地 方 
 pt_mound|英 雄 塚 
 pt_pyre|英 雄 火 葬 堆 
-pt_wild_troll|野 生 巨 魔 
-pt_raging_trolls|憤 怒 的 巨 魔 
+pt_wild_troll|野 生 食 人 妖
+pt_raging_trolls|憤 怒 的 食 人 妖
 pt_looters|部 落 半 獸 人 
-pt_forest_bandits|半 獸 人 流 浪 者 
+pt_forest_bandits|半 獸 人 殘 兵 
 pt_mountain_bandits|野 生 哥 布 林 
 pt_steppe_bandits|登 蘭 德 放 逐 者 
 pt_sea_raiders|昂 巴 海 盜 叛 徒 
 pt_deserters|逃 兵 
-pt_merchant_caravan|商 旅 馬 隊 
+pt_merchant_caravan|商 隊 
 pt_troublesome_bandits|棘 手 的 哥 布 林 
 pt_fangorn_orcs|半 獸 人 伐 木 隊 
 pt_village_farmers|農 夫 
 pt_spy_partners|可 疑 的 旅 人 
 pt_spy_partners_evil|可 疑 的 旅 人 
 pt_runaway_serfs|逃 走 的 奴 隸 
-pt_spy|孤 單 騎 兵 
-pt_spy_evil|孤 單 騎 兵 
+pt_spy|孤 獨 騎 手
+pt_spy_evil|孤 獨 騎 手
 pt_sacrificed_messenger|犧 牲 的 信 差 
-pt_gandalf|孤 單 騎 兵 
-pt_nazgul|孤 單 騎 兵 
+pt_gandalf|孤 獨 騎 手
+pt_nazgul|孤 獨 騎 手
 pt_gondor_scouts|剛 鐸 偵 察 隊 
-pt_blackroot_auxila|黑 根 谷 部 落 軍 
-pt_lamedon_auxila|拉 密 頓 部 落 軍 
-pt_lossarnach_auxila|羅 蕯 那 奇 部 落 軍 
-pt_pinnath_gelin_auxila|皮 那 斯 傑 林 部 落 軍 
+pt_blackroot_auxila|墨 松 德 外 族 兵 團 
+pt_lamedon_auxila|拉 密 頓 外 族 兵 團 
+pt_lossarnach_auxila|羅 蕯 那 奇 外 族 兵 團 
+pt_pinnath_gelin_auxila|皮 那 斯 傑 林 外 族 兵 團 
 pt_ranger_scouts|哈 拉 德 斥 候 
 pt_rohan_scouts|洛 汗 斥 候 
 pt_lorien_scouts|羅 斯 洛 立 安 斥 候 
@@ -39,7 +39,7 @@ pt_imladris_scouts|登 丹 斥 侯
 pt_dale_scouts|河 谷 鎮 斥 候 
 pt_esgaroth_scouts|長 湖 鎮 斥 候 
 pt_dwarf_scouts|矮 人 斥 候 
-pt_beorn_scouts|波 寧 斥 候 
+pt_beorn_scouts|比 翁 斥 候 
 pt_woodmen_scouts|山 林 人 斥 候 
 pt_mordor_scouts|魔 多 斥 候 
 pt_morgul_scouts|魔 窟 斥 候 
@@ -84,7 +84,7 @@ pt_ranger_patrol|遊 俠 巡 邏 隊
 pt_amroth_patrol|多 爾 安 姆 羅 斯 巡 邏 隊 
 pt_pelargir_patrol|佩 拉 格 巡 邏 隊 
 pt_lossarnach_patrol|羅 蕯 那 奇 巡 邏 隊 
-pt_brv_patrol|黑 根 谷 巡 邏 隊 
+pt_brv_patrol|墨 松 德 巡 邏 隊 
 pt_pinnath_patrol|皮 那 斯 傑 林 巡 邏 隊 
 pt_lamedon_patrol|拉 密 頓 巡 邏 隊 
 pt_mordor_war_party|魔 多 戰 隊 
@@ -130,17 +130,17 @@ pt_mordor_p_train|魔 多 俘 虜 押 送 隊
 pt_isengard_p_train|艾 辛 格 俘 虜 押 送 隊 
 pt_kingdom_hero_party|戰 隊 
 pt_caravan_survivors|商 隊 幸 存 者 
-pt_routed_allies|路 線 盟 友 
-pt_routed_enemies|路 線 敵 人 
+pt_routed_allies|被 圍 住 的 盟 友 
+pt_routed_enemies|被 圍 住 的 敵 人 
 pt_legion_minas_morgul|米 那 斯 魔 窟 軍 團 
 pt_legion_udun|烏 頓 軍 團 
 pt_legion_gorgoroth|葛 哥 洛 斯 軍 團 
 pt_legion_barad_dur|巴 拉 多 軍 團 
-; pt_beorn_messenger|Beorning Messenger
-; pt_village|Village
-; pt_ring_hunters|Ring Hunters
-; pt_scout_camp_small|Scout Camp
-; pt_scout_camp_large|Fortified Scout Camp
-; pt_beorn_caravan|Woodsmen Caravan
-; pt_orc_horde|Orc Horde
-; pt_vet_archer|Veteran Archer
+pt_beorn_messenger|比 翁 信 差
+pt_village|村 莊
+pt_ring_hunters|戒 指 獵 人
+pt_scout_camp_small|斥 候 營 地
+pt_scout_camp_large|加 強 斥 候 營 地
+pt_beorn_caravan|山 林 人 商 隊
+pt_orc_horde|半 獸 人 群
+pt_vet_archer|熟 練 弓 兵
