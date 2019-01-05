@@ -7193,7 +7193,7 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 ]
 ],
 [anyone|plyr, "lord_mission_mirkwood_sorcerer_2", [], "Forgive me, my Lady. I have some pressing matters to attend before I can help your people with this endevour.", "lord_mission_mirkwood_sorcerer_rejected", []],
-[anyone, "lord_mission_mirkwood_sorcerer_rejected", [], "I understand, {playername}. But do not tally for too long, I'm growing tired of resisting his evil magic.", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]], 
+[anyone, "lord_mission_mirkwood_sorcerer_rejected", [], "I understand, {playername}. But do not tally for too long, for the effort of resisting his magic is wearying me.", "lord_pretalk",[(troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]], 
 
 # TLD mission: slay mirkwood sorcerer (GA, fixed by CppCoder) -- end
 
@@ -7560,7 +7560,7 @@ Please, I will be deeply indebted to you if you grant me this request.", "lord_m
 [anyone,"lord_tell_mission", [(eq,"$random_quest_no","qst_hunt_down_fugitive")],
 "I have something you could help with, an issue with the lawless villain known as {s4}. \
  He murdered one of my bodyguards and has been on the run from his judgment ever since.\
- There were news recently that the fugitive has been seen at {s3}.\
+ There has been news recently that the fugitive has been seen at {s3}.\
  You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.", "lord_mission_hunt_down_fugitive_told", [
      (quest_get_slot, ":quest_target_center", "$random_quest_no", slot_quest_target_center),
      (quest_get_slot, ":quest_target_dna", "$random_quest_no", slot_quest_target_dna),

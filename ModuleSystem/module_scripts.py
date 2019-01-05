@@ -10428,7 +10428,7 @@ scripts = [
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
 			(eq, ":factionA", fac_rohan ),
-			(str_store_string, s4,"@{s14}Riders of Rohan! Remember what do you fight for!"), 
+			(str_store_string, s4,"@{s14}Riders of Rohan! Remember what you fight for!"), 
 			(assign, ":done", 1),
 		(else_try),(eq,":rand",next_count()),
 			(eq, ":factionA", fac_mordor),
@@ -21531,7 +21531,7 @@ scripts = [
       
       (str_store_string, s50, "@Ah, what a coincidence, running into you, {playername}! You might not know me, but are not unknown to me. I am on my way to {s4}, but I have just come from {s3} and your name has come up. {s3} is counting on you in these perilous times and if you had thought to pursue some distracting course of action, you might wish to reconsider it and focus on aiding {s3} to your utmost capabilities."),
       (str_store_string, s51, "@Who are you?"),
-      (str_store_string, s52, "@A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, lest we make count our every action to oppose it!"),
+      (str_store_string, s52, "@A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, unless we make count our every action to oppose it!"),
       (str_store_string, s53, "@What should I do?"),
       (str_store_string, s54, "@Find {s3}'s whereabouts immediately and speak with him. Good luck!"),
       (assign, "$g_tld_convo_lines", 5),
@@ -27991,7 +27991,7 @@ if is_a_wb_script==1:
 				(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
 				(try_begin), #DEBUG
 					(eq, ":agent", ":player"),
-					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrify your men.", color_neutral_news),
+					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.", color_neutral_news),
 				(try_end),
 			(else_try),
 				(agent_set_damage_modifier, ":agent", WEAPON_DAMAGE_BUFF),
@@ -28014,7 +28014,7 @@ if is_a_wb_script==1:
 			(agent_set_reload_speed_modifier, ":agent", RANGED_RELOAD_SPEED_DEBUFF),
 				(try_begin), #DEBUG
 					(eq, ":agent", ":player"),
-					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrify your men.", color_neutral_news),
+					(display_message, "@Dark clouds from Mordor cover the battlefield. Your archers have trouble seeing the enemy, and the presence of evil terrifies your men.", color_neutral_news),
 				(try_end),
 		(try_end),
 	(try_end),
