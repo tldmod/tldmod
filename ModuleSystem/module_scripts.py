@@ -1,4 +1,4 @@
-# -*- coding: cp1254 -*-
+﻿# -*- coding: utf-8 -*-
 from header_common import *
 from header_operations import *
 from module_constants import *

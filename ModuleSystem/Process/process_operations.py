@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import string
 import types
 
@@ -337,6 +338,11 @@ def search_quick_string_keys(key, quick_strings):
 def insert_quick_string_with_auto_id(sentence,quick_strings):
   index = 0
   text = convert_to_identifier_with_no_lowercase(sentence)
+  
+  #swy-- strip non ANSI codepoints to avoid encoding problems. e.g: Lórien -> Lrien
+  #   -- qstr_A_golden_mist_from_L0xC3 -> qstr_A_golden_mist_from_Lr
+  text = text.decode("utf-8").encode("ascii", "ignore")
+
   sentence = replace_spaces(sentence)
   done = 0
   i = 20
