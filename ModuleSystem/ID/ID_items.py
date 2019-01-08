@@ -913,3 +913,6 @@ itm_defiled_armor_gondor = 911
 itm_defiled_armor_rohan = 912
 itm_defiled_armor_dale = 913
 itm_save_compartibility_item10 = 914
+itm_gondor_custom = 915
+itm_stones_siege = 916
+itm_beorn_axe_no_attack = 917
