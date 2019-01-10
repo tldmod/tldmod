@@ -1412,13 +1412,14 @@ items =[
 #both free, Jan 2017, ->rohan_armor_th:
 ["free_merry_outfit","hobbit_outfit",[("merry",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
 ["free_pippin_outfit","hobbit_outfit",[("pippin",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(1)|head_armor(0)|body_armor(0)|leg_armor(0)|difficulty(0),0,],
-#
+
+#Trolls and Ents
 ["ent_body","Ent_Body",[("ent_body",0),("olog_body",imodbit_rusty),("olog_body_b",imodbit_tattered),],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(62)|leg_armor(0)|difficulty(70),0,],
 ["ent_head_helm","Ent_Head",[("ent_head1",0),("olog_head",imodbit_hardened),("olog_head_b",imodbit_reinforced),("olog_head_c",imodbit_lordly),("ent_head2",imodbit_rotten),("ent_head3",imodbit_day_old)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
-["ent_head_helm2","Ent_Head",[("ent_head2",0),("troll_head",imodbit_rotten),("troll_head_b",imodbit_two_day_old),("troll_head_c",imodbit_day_old)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
-["free_ent_head_helm3","Ent_Head",[("ent_head3",0)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(60)|difficulty(70),0],
+["troll_head","troll_head",[("ent_head2",0),("troll_head",imodbit_rotten),("troll_head_b",imodbit_two_day_old),("troll_head_c",imodbit_day_old)],itp_type_head_armor|itp_unique,0,1,weight(250)|head_armor(40)|difficulty(70),0],
+["troll_body","troll_body",[("troll_body",0),("troll_body",imodbit_rotten),("troll_body",imodbit_two_day_old),("troll_body",imodbit_day_old)],itp_no_pick_up_from_ground|itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(45)|leg_armor(0)|difficulty(70),0,],
 ["ent_feet_boots","Ent_Feet",[("ent_foot",0),("troll_feet",imodbit_cracked),("olog_feet",imodbit_hardened)],itp_type_foot_armor|itp_unique,0,1,weight(250)|head_armor(0)|body_armor(0)|leg_armor(60)|difficulty(70),0],
-["ent_hands","Ent_Hands",[("ent_hand_L",0)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
+["ent_hands","Ent_Hands",[("ent_hand_L",0),("troll_handL",imodbit_cracked)],itp_type_hand_armor|itp_unique,0,1,weight(250)|body_armor(1)|difficulty(70),0],
 #free, Jan 2017, -> rohan_armor_th:
 ["free_galadriel","Galadriel_suit",[("galadriel",0)],itp_type_body_armor|itp_covers_legs|itp_unique|itp_civilian,0,1,weight(225)|head_armor(60)|body_armor(80)|leg_armor(60)|difficulty(0),0,],
 ["empty_hands","empty_hands",[("0",0)],itp_type_hand_armor|itp_unique|itp_no_pick_up_from_ground,0,130,weight(225)|body_armor(1)|difficulty(0),0],

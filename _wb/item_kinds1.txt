@@ -2541,16 +2541,16 @@ itemsfile version 2
  itm_ent_head_helm Ent_Head Ent_Head 6  ent_head1 0  olog_head 67108864  olog_head_b 134217728  olog_head_c 536870912  ent_head2 2199023255552  ent_head3 274877906944  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_ent_head_helm2 Ent_Head Ent_Head 4  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
+ itm_troll_head troll_head troll_head 4  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
 0
 
- itm_free_ent_head_helm3 Ent_Head Ent_Head 1  ent_head3 0  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
+ itm_troll_body troll_body troll_body 4  troll_body 0  troll_body 2199023255552  troll_body 549755813888  troll_body 274877906944  137455734797 0 1 0 58 100 0 45 0 70 0 0 0 0 0 0 0
 0
 
  itm_ent_feet_boots Ent_Feet Ent_Feet 3  ent_foot 0  troll_feet 2  olog_feet 67108864  4110 0 1 0 58 100 0 0 60 70 0 0 0 0 0 0 0
 0
 
- itm_ent_hands Ent_Hands Ent_Hands 1  ent_hand_L 0  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
+ itm_ent_hands Ent_Hands Ent_Hands 2  ent_hand_L 0  troll_handL 2  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
 0
 
  itm_free_galadriel Galadriel_suit Galadriel_suit 1  galadriel 0  553652237 0 1 0 33 100 60 80 60 0 0 0 0 0 0 0 0

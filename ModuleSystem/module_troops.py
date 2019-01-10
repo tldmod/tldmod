@@ -417,9 +417,13 @@ itm_fine_hat = (itm_blackroot_hood, imodbit_rusty)
 itm_riv_helm_glorfi = (itm_witchking_helmet, imod_rotten)
 itm_troll_feet_boots = (itm_ent_feet_boots, imod_cracked)
 itm_olog_feet_boots = (itm_ent_feet_boots, imod_hardened)
-itm_troll_head_helm = (itm_ent_head_helm2, imod_rotten)
-itm_troll_head_helm_b = (itm_ent_head_helm2, imod_day_old)
-itm_troll_head_helm_c = (itm_ent_head_helm2, imod_two_day_old)
+itm_troll_head_helm = (itm_troll_head, imod_rotten)
+itm_troll_head_helm_b = (itm_troll_head, imod_day_old)
+itm_troll_head_helm_c = (itm_troll_head, imod_two_day_old)
+itm_troll_body_a = (itm_troll_head, imod_rotten)
+itm_troll_body_b = (itm_troll_head, imod_day_old)
+itm_troll_body_c = (itm_troll_head, imod_two_day_old)
+itm_troll_hands = (itm_ent_hands, imod_cracked)
 itm_olog_head_helm = (itm_ent_head_helm, imod_hardened)
 itm_olog_head_helm_b = (itm_ent_head_helm, imod_reinforced)
 itm_olog_head_helm_c = (itm_ent_head_helm, imod_lordly)
@@ -1340,14 +1344,14 @@ troops = [
 ["uruk_mordor_standard_bearer","Mordor_Standard_Bearer","Mordor_Standard_Bearers",tf_uruk| tfg_shield| tfg_armor| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_mordor,[itm_uruk_helm_b,itm_uruk_helm_c,itm_uruk_helm_d,itm_m_uruk_heavy_c, itm_m_uruk_heavy_c_good, itm_m_uruk_heavy_c_bad,itm_evil_gauntlets_b,itm_uruk_greaves,itm_uruk_chain_greaves,itm_mordor_banner,],attr_evil_tier_5,wp_tier_5,knows_athletics_6|knows_power_strike_5|knows_ironflesh_10,uruk_hai_face1,uruk_hai_face2],
 
 #Trolls  & ents
-["troll_of_moria","Cave_Troll","Cave_Trolls",tf_troll| tfg_helm| tfg_boots| tf_no_capture_alive,0,0,fac_moria,
-   [itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_b,itm_tree_trunk_club_b,itm_troll_feet_boots,itm_troll_head_helm,itm_troll_head_helm_b,itm_troll_head_helm_c,],
+["troll_of_moria","Cave_Troll","Cave_Trolls",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_moria,
+   [itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_a,itm_tree_trunk_club_b,itm_tree_trunk_club_b,itm_troll_feet_boots,itm_troll_body_a,itm_troll_body_b,itm_troll_body_c,itm_troll_head_helm,itm_troll_head_helm_b,itm_troll_head_helm_c,itm_troll_hands],
       str_255| agi_3| int_3| cha_3|level(58),wp(150),knows_power_strike_10|knows_ironflesh_10,troll_face1,troll_face2],
 ["armoured_troll","Armored_Troll","Armored_Trolls",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_isengard,
-   [itm_giant_mace,itm_troll_shield_a, itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands,],
+   [itm_giant_mace,itm_troll_shield_a, itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands],
       str_255| agi_3| int_3| cha_3|level(61),wp(175),knows_power_strike_13|knows_ironflesh_13,troll_face1,troll_face2],
 ["olog_hai","Olog_Hai_of_Mordor","Olog_Hai_of_Mordor",tf_troll|tfg_shield| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_mordor,
-   [itm_giant_mace, itm_troll_shield_a, itm_troll_shield_a,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands,],
+   [itm_giant_mace, itm_troll_shield_a, itm_troll_shield_a,itm_giant_mace_b,itm_giant_hammer,itm_olog_feet_boots,itm_olog_body,itm_olog_body_b,itm_olog_head_helm,itm_olog_head_helm_b,itm_olog_head_helm_c,itm_olog_hands],
       str_255| agi_3| int_3| cha_3|level(61),wp(250),knows_power_strike_15|knows_ironflesh_15,troll_face1,troll_face2],
 ["ent","Ent","Ents",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive,0,0,fac_commoners,
    [itm_tree_trunk_invis,itm_ent_body,itm_ent_hands,itm_ent_feet_boots,itm_ent_head_helm,itm_ent_water,itm_ent_head_helm2,itm_ent_head_helm3,],
@@ -2823,8 +2827,8 @@ troops = [
    [itm_evil_light_armor,itm_leather_boots,itm_mordor_sword,itm_mordor_man_shield_b,itm_mordor_longsword,itm_mordor_warhorse,],
       attr_tier_4,wp_tier_4,knows_common|knows_riding_3|knows_athletics_2|knows_power_strike_3|knows_ironflesh_3,bandit_face1,bandit_face2],
 #MV: Easter Egg Troll in Troll Cave
-["easter_egg_troll","The Troll","_",tf_troll| tfg_helm| tfg_boots| tf_no_capture_alive| tf_hero,scn_troll_cave_center|entry(8),0,fac_moria,
-   [itm_tree_trunk_club_a,itm_troll_feet_boots,itm_troll_head_helm,],
+["easter_egg_troll","The Troll","_",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive| tf_hero,scn_troll_cave_center|entry(8),0,fac_moria,
+   [itm_tree_trunk_club_a,itm_troll_feet_boots,itm_troll_head_helm,itm_troll_body_a,itm_troll_hands],
       str_255| agi_3| int_30| cha_18|level(30),wp(200),knows_power_strike_10|knows_ironflesh_10,troll_face1],
 ["treebeard","Treebeard","_",tf_troll| tfg_helm| tfg_boots| tfg_armor| tfg_gloves| tf_no_capture_alive| tf_hero,scn_fangorn|entry(16),0,fac_commoners,
    [itm_tree_trunk_invis,itm_ent_body,itm_ent_hands,itm_ent_feet_boots,itm_ent_head_helm,itm_ent_water,],
