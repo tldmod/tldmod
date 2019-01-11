@@ -1886,48 +1886,72 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (store_trigger_param_1, ":agent"),
     (store_trigger_param_2, ":dealer"),
     (store_trigger_param_3, ":damage"),
-  
+    
+    (assign, ":weapon", reg0),
+    (str_store_item_name, s2, ":weapon"),
+
+
+    (item_get_type, ":type", ":weapon"),
+
     (get_player_agent_no, ":player"),
     (agent_get_troop_id, ":troop_id", ":agent"),
 
     (agent_get_slot, ":current_hp_shield", ":agent", slot_agent_hp_shield),
-    (agent_get_horse, ":horse", ":dealer"),
 
     (try_begin),
       (this_or_next|eq, ":troop_id", "trp_olog_hai"),
       (this_or_next|eq, ":troop_id", "trp_armoured_troll"),
       (eq, ":troop_id", "trp_ent"),
       (gt, ":current_hp_shield", 0),
+
+      #(assign, reg55, ":damage"),
+      (agent_get_bone_position, pos1, ":agent", 7, 1),
+      (get_distance_between_positions, ":dist", pos0, pos1),
+      #(assign, reg57, ":dist"),
+
       (try_begin),
-        (ge, ":horse", 0),
-        (val_min, ":damage", 50),
+        (eq, ":type", itp_type_bow),
+        (gt, ":dist", 30),
+        (val_div, ":damage", 3),
       (try_end),
+
+      #(assign, reg56, ":damage"),
+      #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
+
       (try_begin),
-        (lt, ":damage", 15),
-        (assign, ":damage", 0),
-       (else_try),
-        (ge, ":damage", 50),
-        (val_sub, ":damage", 15),
+        (ge, ":damage", 100),
+        (val_div, ":damage", 2),
+        (val_add, ":damage", 10),
+      (else_try),
+        (ge, ":damage", 30),
         (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
-       (else_try),
-        (val_sub, ":damage", 15),
-       (try_end),
+      (try_end),
     (else_try),
       (eq, ":troop_id", "trp_troll_of_moria"),
       (gt, ":current_hp_shield", 0),
+
+      #(assign, reg55, ":damage"),
+      (agent_get_bone_position, pos1, ":agent", 7, 1),
+      (get_distance_between_positions, ":dist", pos0, pos1),
+      #(assign, reg57, ":dist"),
+
       (try_begin),
-        (ge, ":horse", 0),
-        (val_min, ":damage", 80),
+        (eq, ":type", itp_type_bow),
+        (gt, ":dist", 30),
+        (val_div, ":damage", 3),
       (try_end),
+
+      #(assign, reg56, ":damage"),
+      #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
+      
       (try_begin),
-        (lt, ":damage", 40),
-        (assign, ":damage", 0),
+        (ge, ":damage", 150),
+        (val_div, ":damage", 3),
       (else_try),
-        (ge, ":damage", 80),
-        (val_sub, ":damage", 40),
+        (ge, ":damage", 100),
+        (store_random_in_range, ":rand", 0, 100),
+        (ge, ":rand", 50),
         (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
-      (else_try),
-        (val_sub, ":damage", 40),
       (try_end),
     (try_end),
 
@@ -1950,13 +1974,13 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (eq, ":dealer", ":player"),
       (assign, reg60, ":damage"),
       (display_message, "@Delivered {reg60} damage."),
-      (set_show_messages, 0),
       (set_trigger_result, 0),
     (else_try),
       (set_trigger_result, 0),
     (try_end),
 
-    (set_show_messages, 1),
+    (assign, reg0, ":weapon"),
+
   ])  
 
 ## Health Restore on Kill Begin - Credit to Windyplains (Kham)

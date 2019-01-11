@@ -2036,10 +2036,10 @@ scripts = [
 	(troop_set_slot, "trp_killer_witcher", slot_troop_hp_shield, 200),
 	(troop_set_slot, "trp_badass_theo", slot_troop_hp_shield, 200),
 
-	(troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, 250),
-	(troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, 200),
-	(troop_set_slot, "trp_armoured_troll", slot_troop_hp_shield, 200),
-	(troop_set_slot, "trp_ent", slot_troop_hp_shield, 200),
+	(troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
+	(troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
+	(troop_set_slot, "trp_armoured_troll", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
+	(troop_set_slot, "trp_ent", slot_troop_hp_shield, OLOG_ENT_HP_SHIELD),
 
 	#Init Health Regeneration on Kill
 
@@ -6700,7 +6700,7 @@ scripts = [
           (eq, ":quest_no", "qst_capture_troll"),
 		  (try_begin),
 			(eq, ":giver_troop", "trp_isengard_lord"),  # only saruman gives this quest
-			(ge, ":player_level", 3),
+			(ge, ":player_level", 7),
 			(assign, ":quest_expiration_days", 15),
 			(assign, ":quest_dont_give_again_period", 20),
 			(store_free_inventory_capacity,":tmp"),(gt,":tmp",0), # otherwise,  no room for cage
@@ -6714,7 +6714,7 @@ scripts = [
 		  #mtarini: good-sided lords wants a troll be killed
           (eq, ":quest_no", "qst_kill_troll"),
 		  (try_begin),
-			(gt, ":player_level", 4),
+			(gt, ":player_level", 6),
 			(faction_slot_eq, ":giver_faction_no", slot_faction_side, faction_side_good),
 			#(faction_slot_eq, ":giver_faction_no", slot_faction_leader, ":giver_troop"),
 			(call_script, "script_cf_select_random_town_with_faction", ":giver_faction_no"),#Can fail
