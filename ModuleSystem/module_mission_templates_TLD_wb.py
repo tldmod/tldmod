@@ -1888,6 +1888,8 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
     (store_trigger_param_3, ":damage"),
     
     (assign, ":weapon", reg0),
+    (gt, ":weapon", 0),
+
     (str_store_item_name, s2, ":weapon"),
 
 
@@ -1919,13 +1921,21 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
 
       (try_begin),
+        (neg|item_has_property, ":weapon", itp_couchable),
         (ge, ":damage", 100),
         (val_div, ":damage", 2),
         (val_add, ":damage", 10),
       (else_try),
+        (item_has_property, ":weapon", itp_couchable),
+        (ge, ":damage", 100),
+        (store_div, ":couched_damage", OLOG_ENT_HP_SHIELD, 4),
+        (assign, ":damage", ":couched_damage"),
+        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"), 
+      (else_try),
         (ge, ":damage", 30),
         (agent_set_animation, ":agent", "anim_strike3_abdomen_front"),
       (try_end),
+
     (else_try),
       (eq, ":troop_id", "trp_troll_of_moria"),
       (gt, ":current_hp_shield", 0),
@@ -1945,8 +1955,15 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       #(display_message, "@{s2} weapon - {reg55} Before - {reg56} after - {reg57} Dist from Head"),
       
       (try_begin),
+        (neg|item_has_property, ":weapon", itp_couchable),
         (ge, ":damage", 150),
         (val_div, ":damage", 3),
+      (else_try),
+        (item_has_property, ":weapon", itp_couchable),
+        (ge, ":damage", 150),
+        (store_div, ":couched_damage", MORIA_TROLL_HP_SHIELD, 3),
+        (assign, ":damage", ":couched_damage"),
+        (agent_set_animation, ":agent", "anim_strike3_abdomen_front"), 
       (else_try),
         (ge, ":damage", 100),
         (store_random_in_range, ":rand", 0, 100),
