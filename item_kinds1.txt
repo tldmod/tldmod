@@ -129,10 +129,10 @@ itemsfile version 2
  itm_rhun_horse_h Rhun_Heavy_Horse Rhun_Heavy_Horse 1  rhunhorseheav4 0  65537 0 1500 16139943936 0 100 0 35 0 4 160 32 34 0 0 25 0
 0
 
- itm_dale_horse Rhovanion_Horse Rhovanion_Horse 1  sumpter_horse 0  65537 0 724 16139943936 0 100 0 11 0 2 65 35 38 0 0 10 0
+ itm_dale_horse Rhovanion_Horse Rhovanion_Horse 1  sumpter_horse 0  65537 0 724 16139943936 0 100 0 16 0 2 90 35 40 0 0 8 0
 0
 
- itm_dale_warhorse Rhovanion_Warhorse Rhovanion_Warhorse 1  hunting_horse 0  65537 0 1000 16139943936 0 100 0 17 0 3 90 34 37 0 0 10 0
+ itm_dale_warhorse Rhovanion_Warhorse Rhovanion_Warhorse 1  hunting_horse 0  65537 0 1000 16139943936 0 100 0 24 0 3 110 32 38 0 0 10 0
 0
 
  itm_riv_warhorse Rivendell_Warhorse Rivendell_Warhorse 1  rivendell_warhorse01 0  65537 0 1500 119353376768 0 100 0 46 0 4 135 36 38 0 0 30 0
@@ -222,10 +222,10 @@ itemsfile version 2
  itm_tree_trunk_club_a Tree_Trunk Tree_Trunk 3  troll_club 0  tree_trunk_club 64  0 256  141755285507 9259400833873739810 1 0 58 100 0 0 0 0 49152 60 0 155 0 24 48
 0
 
- itm_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  342163460 9223635923965575392 800 156672 7 100 0 0 0 10 46080 84 0 106 0 256 45
+ itm_long_bearded_axe Northmen_Bearded_Longaxe Northmen_Bearded_Longaxe 1  long_bearded_axe 0  38996869124 9223635923965575392 800 156672 7 100 0 0 0 10 46080 84 0 106 0 256 45
 0
 
- itm_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  342163460 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
+ itm_2_handed_axe Northmen_Longaxe Northmen_Longaxe 1  2_handed_axe 0  38996869124 9223635923965575392 700 156672 8 100 0 0 0 10 48128 82 0 110 0 256 47
 0
 
  itm_free_giant_hammer Giant_Hammer Giant_Hammer 1  giant_hammer 0  137443147778 9223372036854775808 1 0 58 100 0 0 0 0 16384 96 0 150 0 65 80
@@ -2336,7 +2336,7 @@ itemsfile version 2
  itm_beorn_staff Woodmen_Staff Woodmen_Staff 1  woodman_staff 0  275016810500 4222129415393024 100 271496 2 100 0 0 0 0 20480 114 0 104 0 532 532
 0
 
- itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  38996869124 9223635923965575392 300 156672 6 100 0 0 0 0 44032 91 0 85 0 256 43
+ itm_beorn_battle_axe Beorning_War_Axe Beorning_War_Axe 1  beorning_war_axe 0  4637130756 9223635923965575392 300 156672 6 100 0 0 0 0 44032 91 0 85 0 256 43
 0
 
  itm_dwarf_shield_a Dwarven_Angular_Shield Dwarven_Angular_Shield 2  dwarf_angular_shield_a 0  dwarf_angular_shield_b 771751936  327687 4831838208 400 771751936 3 100 0 10 0 0 700 82 0 60 0 0 0
