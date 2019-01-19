@@ -2275,16 +2275,16 @@ itemsfile version 2
  itm_umb_shield_d Corsair_Buckler Corsair_Buckler 2  corsair_buckler_round_c 0  corsair_buckler_round_c_carry 3458764513820540928  327687 5368709120 200 251658402 2 100 0 8 0 0 360 100 0 20 0 0 0
 0
 
- itm_umbar_spear Umbar_Short_Spear Umbar_Short_Spear 1  umbar_spear 0  4554756 9254615759470988544 400 271496 2 100 0 0 0 0 0 102 0 132 0 282 0
+ itm_umbar_spear Umbar_Short_Spear Umbar_Short_Spear 1  corsair_spear 0  4554756 9254615759470988544 400 271496 2 100 0 0 0 0 0 102 0 132 0 282 0
 0
 
- itm_umbar_cutlass Umbar_Cutlass Umbar_Cutlass 2  corsair_cutlass 0  scab_corsair_cutlass 3458764513820540928  4259842 9223388529822793742 200 286870 1.5 100 0 0 0 0 26624 106 0 86 0 256 26
+ itm_umbar_cutlass Umbar_Cutlass Umbar_Cutlass 2  corsair_cutlass 0  scab_corsair_cutlass 3458764513820540928  4259842 9223388529822793742 200 286870 1.5 100 0 0 0 0 26624 104 0 86 0 256 26
 0
 
- itm_kraken Kraken_Cutlass Kraken_Cutlass 2  umbar_weapon_kraken_cutlass 0  scab_kraken_cutlass 3458764513820540928  4259842 9223388529822793742 200 286870 1.5 100 0 0 0 0 30720 108 0 103 0 256 30
+ itm_kraken Kraken_Cutlass Kraken_Cutlass 2  umbar_weapon_kraken_cutlass 0  scab_kraken_cutlass 3458764513820540928  4259842 9223388529822793742 200 286870 1.5 100 0 0 0 0 28672 108 0 103 0 256 28
 0
 
- itm_umbar_rapier Umbar_Boarding_Sword Umbar_Boarding_Sword 2  corsair_sword_a 0  scab_corsair_sword_a 3458764513820540928  4259842 9223388564182532111 400 286870 1.5 100 0 0 0 0 28672 101 0 81 0 287 28
+ itm_umbar_rapier Umbar_Boarding_Sword Umbar_Boarding_Sword 2  corsair_sword_a 0  scab_corsair_sword_a 3458764513820540928  4259842 9223388564182532111 400 286870 1.5 100 0 0 0 0 29696 96 0 81 0 282 29
 0
 
  itm_corsair_harpoon Corsair_Harpoon Corsair_Harpoon 1  corsair_harpoon 0  71368714 34360000512 200 0 4 100 0 0 86 0 0 85 27 87 2 319 0
