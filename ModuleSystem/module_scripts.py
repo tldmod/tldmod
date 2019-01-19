@@ -22035,7 +22035,7 @@ scripts = [
 			(this_or_next|eq, ":troop_id", "trp_dunnish_night_wolf"),
 			(this_or_next|eq, ":troop_id", "trp_woodmen_master_axemen"),
 			(this_or_next|eq, ":troop_id", "trp_fell_huntsmen_of_mirkwood"),
-			(this_or_next|eq, ":troop_id", "trp_corsair_night_raider"),
+			(this_or_next|eq, ":troop_id", "trp_i5_corsair_night_raider"),
 			(this_or_next|eq, ":troop_id", "trp_far_harad_panther_guard"),
 			(this_or_next|eq, ":troop_id", "trp_i6_frealaf_raider"),
 			(			  eq, ":troop_id", "trp_blackroot_leader"),

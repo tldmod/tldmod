@@ -3623,10 +3623,10 @@ mission_templates = [ # not used in game
       #Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
       (try_begin),
         (eq, ":faction", "fac_gondor"),
-        (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
-        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
-        (assign, ":enemy_archer_tier_1", "trp_militia_of_umbar"),
-        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
+        (assign, ":enemy_melee_tier_1", "trp_i3_corsair_swordsman"),
+        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_i3_corsair_swordsman",0),
+        (assign, ":enemy_archer_tier_1", "trp_a2_corsair_marine"),
+        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_a3_corsair_marksman",0),
       #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
       (else_try), #Dale
         (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),
@@ -3948,10 +3948,10 @@ mission_templates = [ # not used in game
       #Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
       (try_begin),
         (eq, ":faction", "fac_umbar"),
-        (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
-        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
-        (assign, ":enemy_archer_tier_1", "trp_militia_of_umbar"),
-        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0),
+        (assign, ":enemy_melee_tier_1", "trp_i3_corsair_swordsman"),
+        #(troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_i3_corsair_swordsman",0),
+        (assign, ":enemy_archer_tier_1", "trp_a2_corsair_marine"),
+        #(troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_a3_corsair_marksman",0),
       #  (display_message, "@DEBUG: Umbar Troops Spawned", color_bad_news),
       (else_try), #Rhun
         (assign, ":enemy_melee_tier_1", "trp_rhun_tribal_warrior"),

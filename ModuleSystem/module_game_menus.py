@@ -905,19 +905,19 @@ game_menus = [
 		(set_visitors, 14, "trp_veteran_archer_of_gondor",		2),
 ## ENEMY
 		(set_visitors, 16, "trp_olog_hai",				2),
-		(set_visitors, 16, "trp_corsair_youth",					6),
-		(set_visitors, 17, "trp_corsair_warrior",				6),
-		(set_visitors, 18, "trp_corsair_marauder",				6),
-		(set_visitors, 19, "trp_corsair_veteran_marauder",		4),
-		(set_visitors, 20, "trp_corsair_night_raider",			4),
-		(set_visitors, 21, "trp_militia_of_umbar",				4),
-		(set_visitors, 22, "trp_marksman_of_umbar",				4),
-		(set_visitors, 23, "trp_veteran_marksman_of_umbar",		4),
-		(set_visitors, 24, "trp_master_marksman_of_umbar",		4),
-		(set_visitors, 25, "trp_corsair_marauder",				4),
-		(set_visitors, 26, "trp_corsair_veteran_marauder",		4),
-		(set_visitors, 27, "trp_corsair_elite_marauder",		4),
-		(set_visitors, 28, "trp_assassin_of_umbar",				4),
+		(set_visitors, 16, "trp_i1_corsair_youth",					6),
+		(set_visitors, 17, "trp_i2_corsair_warrior",				6),
+		(set_visitors, 18, "trp_i3_corsair_swordsman",				6),
+		(set_visitors, 19, "trp_i4_corsair_veteran_swordsman",		4),
+		(set_visitors, 20, "trp_i5_corsair_night_raider",			4),
+		(set_visitors, 21, "trp_a2_corsair_marine",				4),
+		(set_visitors, 22, "trp_a3_corsair_marksman",				4),
+		(set_visitors, 23, "trp_a4_corsair_veteran_marksman",		4),
+		(set_visitors, 24, "trp_a5_corsair_master_marksman",		4),
+		(set_visitors, 25, "trp_i3_corsair_swordsman",				4),
+		(set_visitors, 26, "trp_i4_corsair_veteran_swordsman",		4),
+		(set_visitors, 27, "trp_i5_corsair_master_swordsman",		4),
+		(set_visitors, 28, "trp_a4_corsair_assassin",				4),
 		(str_store_string, s16, "str_custom_battle_7"),
  ]+concatenate_scripts([[
 	(else_try),
@@ -1169,7 +1169,7 @@ game_menus = [
 			(eq,":bfac",1),(assign,":trp_bad_min","trp_harad_desert_warrior" ),(assign,":trp_bad_max","trp_gold_serpent_horse_archer" ),(else_try),
 			(eq,":bfac",2),(assign,":trp_bad_min","trp_dunnish_wildman"      ),(assign,":trp_bad_max","trp_dunnish_chieftan"           ),(else_try),
 			(eq,":bfac",3),(assign,":trp_bad_min","trp_easterling_youth"     ),(assign,":trp_bad_max","trp_easterling_elite_skirmisher"),(else_try),
-			(eq,":bfac",4),(assign,":trp_bad_min","trp_corsair_youth"        ),(assign,":trp_bad_max","trp_pike_master_of_umbar"       ),(else_try),
+			(eq,":bfac",4),(assign,":trp_bad_min","trp_i1_corsair_youth"        ),(assign,":trp_bad_max","trp_i5_corsair_master_pikeman"       ),(else_try),
 			(eq,":bfac",5),(assign,":trp_bad_min","trp_orc_snaga_of_isengard"),(assign,":trp_bad_max","trp_fighting_uruk_hai_pikeman"  ),(else_try),
 			(eq,":bfac",6),(assign,":trp_bad_min","trp_orc_snaga_of_mordor"  ),(assign,":trp_bad_max","trp_fell_orc_archer_of_mordor"  ),(else_try),
 			(eq,":bfac",7),(assign,":trp_bad_min","trp_c3_wolf_rider_of_moria"  ),(assign,":trp_bad_max","trp_i5_deep_dweller_of_moria"),(else_try),
@@ -1486,7 +1486,7 @@ game_menus = [
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
  ("start_hr",[],"HARADRIM, the desert people from the South",    [(jump_to_menu,"mnu_start_haradrim"),]),  
  ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_choose_gender"),]),
- ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
+ ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_i1_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
  ("start_rh",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_rhun_tribesman"),           (jump_to_menu,"mnu_choose_gender"),]),
  ("start_kh",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_easterling_youth"),         (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
@@ -10034,8 +10034,8 @@ game_menus = [
 	          (eq, ":quest_object_faction","fac_gondor"),
 				(try_begin),				
 					(eq, ":random_no", 0),
-					(assign, ":bandit_troop_1", "trp_corsair_warrior"),
-					(assign, ":bandit_troop_2", "trp_militia_of_umbar"),
+					(assign, ":bandit_troop_1", "trp_i2_corsair_warrior"),
+					(assign, ":bandit_troop_2", "trp_a2_corsair_marine"),
 				(else_try),						
 					(assign, ":bandit_troop_1", "trp_large_orc_despoiler"),
 					(assign, ":bandit_troop_2", "trp_wolf_rider_of_isengard"),	
@@ -10507,10 +10507,10 @@ game_menus = [
 	   			# (assign, ":allies_archer_tier_1", "trp_pelargir_marine"),
 	   			# (troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_pelargir_marine",0),   #Commented out - If we want to upgrade allies too.
 
-	   			# (assign, ":enemy_melee_tier_1", "trp_corsair_marauder"),
-	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_corsair_marauder",0),
-	   			# (assign, ":enemy_archer_tier_1", "trp_marksman_of_umbar"),
-	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_marksman_of_umbar",0), 
+	   			# (assign, ":enemy_melee_tier_1", "trp_i3_corsair_swordsman"),
+	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_i3_corsair_swordsman",0),
+	   			# (assign, ":enemy_archer_tier_1", "trp_a3_corsair_marksman"),
+	   			# (troop_get_upgrade_troop, ":enemy_archer_tier_2", "trp_a3_corsair_marksman",0), 
    			# (else_try), #Dale
 	   			# (eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
 	   			# (assign, ":allies_melee_tier_1", "trp_merchant_guard_of_dale"),
@@ -10561,9 +10561,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_watchman", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_marauder", 3),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 3),(set_visitors, 15, "trp_corsair_marauder", 3),(set_visitors, 16, "trp_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 3),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 3),(set_visitors, 15, "trp_i3_corsair_swordsman", 3),(set_visitors, 16, "trp_i2_corsair_warrior", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 3),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_militia_of_umbar", 3),(set_visitors, 19, "trp_harad_skirmisher", 3),(set_visitors, 20, "trp_militia_of_umbar", 3),
+						(set_visitors, 18, "trp_a2_corsair_marine", 3),(set_visitors, 19, "trp_harad_skirmisher", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
 				(else_try),
 					(ge, ":level", 25),
 						#ally infantry, entries 2-7
@@ -10571,9 +10571,9 @@ game_menus = [
 						#ally archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 3),(set_visitors, 10, "trp_pelargir_marine", 3),
 						#enemy infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_swordsman", 3),(set_visitors, 14, "trp_harad_infantry", 5),(set_visitors, 15, "trp_corsair_veteran_marauder", 3),(set_visitors, 16, "trp_corsair_marauder", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_swordsman", 3),(set_visitors, 14, "trp_harad_infantry", 5),(set_visitors, 15, "trp_i4_corsair_veteran_swordsman", 3),(set_visitors, 16, "trp_i3_corsair_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_veteran_warrior", 5),
 						#enemy archers, entries 18-20
-						(set_visitors, 18, "trp_marksman_of_umbar", 3),(set_visitors, 19, "trp_harad_archer", 3),(set_visitors, 20, "trp_militia_of_umbar", 3),
+						(set_visitors, 18, "trp_a3_corsair_marksman", 3),(set_visitors, 19, "trp_harad_archer", 3),(set_visitors, 20, "trp_a2_corsair_marine", 3),
 				(try_end),
 			(else_try),
 			#(eq, ":object_fac", "fac_dale"), #If Dale, Allies are Dale
@@ -10646,10 +10646,10 @@ game_menus = [
 		# #Once checked, we then spawn the troop we want. For higher level players, they get upgraded.
 	       	# (try_begin),
 	   			# (eq, ":object_fac", "fac_umbar"), #If Umbar, Allies are Umbar
-	   			# (assign, ":allies_melee_tier_1", "trp_corsair_marauder"),
-	   			# #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_corsair_marauder",0), #Commented out - If we want to upgrade allies too.
-	   			# (assign, ":allies_archer_tier_1", "trp_marksman_of_umbar"),
-	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_marksman_of_umbar",0),   #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_melee_tier_1", "trp_i3_corsair_swordsman"),
+	   			# #(troop_get_upgrade_troop, ":allies_melee_tier_2", "trp_i3_corsair_swordsman",0), #Commented out - If we want to upgrade allies too.
+	   			# (assign, ":allies_archer_tier_1", "trp_a3_corsair_marksman"),
+	   			# #(troop_get_upgrade_troop, ":allies_archer_tier_2", "trp_a3_corsair_marksman",0),   #Commented out - If we want to upgrade allies too.
 
 	   			# (assign, ":enemy_melee_tier_1", "trp_pelargir_infantry"),
 	   			# (troop_get_upgrade_troop, ":enemy_melee_tier_2", "trp_pelargir_infantry",0),
@@ -10706,9 +10706,9 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_watchman", 3),(set_visitors, 9, "trp_bowmen_of_gondor", 2),(set_visitors, 10, "trp_pelargir_marine", 2),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20
-						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
+						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
 				(else_try),
 					(ge, ":level", 25),
 						#enemy infantry, entries 2-7
@@ -10716,9 +10716,9 @@ game_menus = [
 						#enemy archers, entries 8-10
 						(set_visitors, 8, "trp_pelargir_marine", 3),(set_visitors, 9, "trp_archer_of_gondor", 2),(set_visitors, 10, "trp_pelargir_vet_marine", 2),
 						#ally infantry, entries 12-17
-						(set_visitors, 12, "trp_corsair_marauder", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_corsair_marauder", 5),(set_visitors, 16, "trp_corsair_veteran_marauder", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
+						(set_visitors, 12, "trp_i3_corsair_swordsman", 5),(set_visitors, 13, "trp_harad_infantry", 5),(set_visitors, 14, "trp_harad_swordsman", 5),(set_visitors, 15, "trp_i3_corsair_swordsman", 5),(set_visitors, 16, "trp_i4_corsair_veteran_swordsman", 5),(set_visitors, 17, "trp_black_numenorean_warrior", 5),
 						#ally archers, entries 18-20
-						(set_visitors, 18, "trp_marksman_of_umbar", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_marksman_of_umbar", 5),
+						(set_visitors, 18, "trp_a3_corsair_marksman", 5),(set_visitors, 19, "trp_harad_skirmisher", 5),(set_visitors, 20, "trp_a3_corsair_marksman", 5),
 				(try_end),
 			(else_try),
 			#(eq, ":object_fac", "fac_rhun"), #If Rhun, Allies are Rhun
