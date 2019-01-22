@@ -72,13 +72,31 @@ triggers = [
         #swy-- get the latest item, add one because that's how the game loops work...
         (store_add,":last_item_plus_one", "itm_ent_body", 1),
         
-        (try_begin), # bad guys have shitty quality shops
-          (neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
-          (set_merchandise_modifier_quality, 50),
-        (else_try),
-          (set_merchandise_modifier_quality,100),
+        # Add Center Relations modifier to Item Quality in Smiths
+        (assign, ":base_chance", 75),
+        (store_troop_faction, ":smith_faction", ":cur_merchant"),
+        (assign, ":smith_found", 0),
+        (try_for_range, ":center_list", centers_begin, centers_end),
+          (eq, ":smith_found", 0),
+          (store_faction_of_party, ":center_faction", ":center_list"),
+          (eq, ":center_faction", ":smith_faction"),
+          (party_slot_eq, ":center_list", slot_town_weaponsmith, ":cur_merchant"),
+          (assign, ":smith_found", 1),
+          (party_get_slot, ":center_relation", ":center_list", slot_center_player_relation),
+          (store_mul, ":quality_modifier", ":center_relation", 2), #Tweakable.
+          (val_add, ":quality_modifier", ":base_chance"),
         (try_end),
+
+
+        #(try_begin), # bad guys have shitty quality shops - modified above
+        #  (neg|faction_slot_eq, ":faction", slot_faction_side, faction_side_good),
+        #  (set_merchandise_modifier_quality, 50),
+        #(else_try),
+        #  (set_merchandise_modifier_quality,100),
+        #(try_end),
         
+        (set_merchandise_modifier_quality, ":quality_modifier"), #new formula
+
         #swy-- for every item in the list, check if matches the seller's
         #      faction + subfaction and add it to the probability list if so...
         (try_for_range,":item","itm_no_item",":last_item_plus_one"), # items with faction != merchant get 0 probability

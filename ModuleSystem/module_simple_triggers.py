@@ -3586,9 +3586,12 @@ simple_triggers = [
 
 ] + (is_a_wb_trigger==1 and [
     (assign, ":continue", 0),
+    (ge, "$tld_war_began", 1), #Only happens during war
 
     (try_begin),
       (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
+      (store_random_in_range, ":rand_prob", 0, 100),
+      (le, ":rand_prob", 65), #65% base chance of happening. 
       (assign, ":continue", 1),
     (else_try),
       (party_set_slot, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
