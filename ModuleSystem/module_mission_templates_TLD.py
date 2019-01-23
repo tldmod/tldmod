@@ -2232,9 +2232,15 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
  	(eq, ":type_dealer", tf_troll),
  	
 	],[
-	
- 	(store_trigger_param_2, ":dealer"),
 
+	(store_trigger_param_1, ":receiver"),
+ 	(store_trigger_param_2, ":dealer"),
+ 	(store_trigger_param_3, ":damage"),
+
+ 	(agent_is_active, ":receiver"),
+ 	(agent_is_alive, ":receiver"),
+ 	(gt, ":receiver", 0),
+ 	
  	(agent_is_active, ":dealer"),
  	(agent_is_alive, ":dealer"),
  	(gt, ":dealer", 0),
@@ -2242,17 +2248,18 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
  	(troop_get_type, ":type_dealer", ":troll_dealer"),
  	(eq, ":type_dealer", tf_troll),
 
-    (agent_get_position, pos3, ":dealer"),
+    (agent_get_position, pos3, ":receiver"),
     (set_fixed_point_multiplier, 100),
 
-    (try_for_agents, ":aoe_hit", pos3, 200),
+    (try_for_agents, ":aoe_hit", pos3, 150),
       (agent_is_active, ":aoe_hit"),
       (agent_is_alive, ":aoe_hit"),
       (agent_is_human, ":aoe_hit"),
       (neq, ":aoe_hit", ":dealer"), #don't hit yourself
+      (neq, ":aoe_hit", ":receiver"),
       (gt, ":aoe_hit", 0),
-      (agent_get_position, pos17, ":aoe_hit"),
-      (neg|position_is_behind_position, pos17, pos18),
+      #(agent_get_position, pos17, ":aoe_hit"),
+      #(neg|position_is_behind_position, pos17, pos18),
       (agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
       (troop_get_type, ":victim_type", ":victim_troop_id"),
       (agent_get_horse, ":victim_horse", ":aoe_hit"),
@@ -2322,15 +2329,15 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
       (try_end),
 
-      (agent_get_wielded_item, ":item", ":dealer", 0),
-      (item_get_swing_damage, ":damage", ":item"),
+      #(agent_get_wielded_item, ":item", ":dealer", 0),
+      #(item_get_swing_damage, ":damage", ":item"),
       (val_max, ":damage", 2),
       (val_div, ":damage", 2),
-     #(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", ":damage"),
+      (agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", ":damage"),
 
-	  (store_agent_hit_points, ":hp", ":aoe_hit", 1), 
-	  (val_sub,":hp",":damage"),
-	  (agent_set_hit_points, ":aoe_hit", ":hp", 1),
+	  #(store_agent_hit_points, ":hp", ":aoe_hit", 1), 
+	  #(val_sub,":hp",":damage"),
+	  #(agent_set_hit_points, ":aoe_hit", ":hp", 1),
 
     (try_end),
 
