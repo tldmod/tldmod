@@ -4733,7 +4733,7 @@ if wb_compile_switch==1:
         (create_combo_button_overlay, "$tld_options_overlay_2"),
         (overlay_add_item, "$tld_options_overlay_2", "@Native"),
         (overlay_add_item, "$tld_options_overlay_2", "@TLD FormAI (Original)"),
-        (overlay_add_item, "$tld_options_overlay_2", "@TLD New FormAI (Beta)"),
+        (overlay_add_item, "$tld_options_overlay_2", "@TLD New FormAI"),
         (copy_position, pos1, pos0),
         (store_add, reg2, ":y_pos", 0),
         (position_set_y, pos1, reg2),

@@ -802,9 +802,9 @@ tld_archer_aim_fix = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
                 (assign, ":bone", 8), # by default, aim at torax
            
               # consider current distance to target to decide stuff (e.g. aim at head or torax? shoot or not?)
-                (agent_get_position, pos2, ":agent2"),  # pos2 = target pos
-                (agent_get_position, pos3, ":agent1"),  # pos3 = shooter pos
-                (get_distance_between_positions, ":distance", pos3, pos2),
+                (agent_get_position, pos72, ":agent2"),  # pos72 = target pos
+                (agent_get_position, pos73, ":agent1"),  # pos73 = shooter pos
+                (get_distance_between_positions, ":distance", pos73, pos72),
                 
                 (try_begin),
                   (ge, ":distance", 6300),
@@ -821,11 +821,11 @@ tld_archer_aim_fix = (0, 0, 0, [(eq,"$field_ai_archer_aim",1)],
                 
                 (eq, ":continue", 1), #Do we modify aim? It will be based on distance
 
-                (agent_is_in_line_of_sight, ":agent1", pos2),
+                (agent_is_in_line_of_sight, ":agent1", pos72),
                
-                (agent_get_bone_position, pos1, ":agent2", ":bone", 1), # pos1 = target BONE pos
+                (agent_get_bone_position, pos71, ":agent2", ":bone", 1), # pos1 = target BONE pos
                 (agent_set_attack_action, ":agent1", 0, 0),      # enforce shooting (DISABLED)
-                (agent_set_look_target_position, ":agent1", pos1),      # override aimed location
+                (agent_set_look_target_position, ":agent1", pos71),      # override aimed location
                #(agent_set_look_target_agent, ":agent1", ":agent2"),    # desperate attempt at making archer fight on and actually shoot
               (try_end),
             (try_end),
@@ -1173,9 +1173,9 @@ tld_move_ai = (0.01, 0, 0, [(eq,"$field_ai_lord",1)],
       
       (agent_get_animation, ":anim", ":agent1"),
       (eq, ":anim", "anim_strike3_abdomen_front"),
-      (agent_get_position, pos1, ":agent1"),
-      (position_move_y, pos1, -1 , 0),
-      (agent_set_position, ":agent1", pos1),
+      (agent_get_position, pos81, ":agent1"),
+      (position_move_y, pos81, -1 , 0),
+      (agent_set_position, ":agent1", pos81),
     (try_end),
 ])
 
@@ -1212,11 +1212,11 @@ tld_ai_kicking = (1, 0, 0, [(eq,"$field_ai_lord",1)],
       (agent_get_team, ":team2", ":agent2"),
       (neq, ":team1", ":team2"),
       
-      (agent_get_position, pos1, ":agent1"),
-      (agent_get_position, pos2, ":agent2"),
+      (agent_get_position, pos81, ":agent1"),
+      (agent_get_position, pos82, ":agent2"),
       
-      (neg|position_is_behind_position, pos1, pos2),
-      (get_distance_between_positions, ":dist", pos1, pos2),
+      (neg|position_is_behind_position, pos81, pos82),
+      (get_distance_between_positions, ":dist", pos81, pos82),
       
       (agent_get_attack_action, ":action1", ":agent1"),
       (agent_get_attack_action, ":action2", ":agent2"),
@@ -1262,9 +1262,9 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
       (agent_get_team, ":agent1_team", ":agent1"),
       
       (set_fixed_point_multiplier, 100),
-      (agent_get_position, pos19, ":agent1"),
+      (agent_get_position, pos89, ":agent1"),
 
-      (try_for_agents, ":agent2", pos19, 100),
+      (try_for_agents, ":agent2", pos89, 100),
         (neq, ":agent1", ":agent2"),
         (agent_is_active, ":agent2"),
         (agent_is_alive, ":agent2"),
@@ -1274,20 +1274,20 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
         (agent_get_horse, ":horse2", ":agent2"),
         (le, ":horse2", 0),
       
-        (agent_get_position, pos2, ":agent2"),
+        (agent_get_position, pos82, ":agent2"),
         (agent_get_team, ":agent2_team", ":agent2"),
         (neq, ":agent1_team", ":agent2_team"),
         
-        (agent_get_bone_position, pos1, ":agent1", 6, 1),
+        (agent_get_bone_position, pos81, ":agent1", 6, 1),
         
         (assign, ":kicked", 0),
         (try_for_range, ":bone", 0, 20),
           (eq, ":kicked", 0),
           
-          (agent_get_bone_position, pos2, ":agent2", ":bone", 1),
+          (agent_get_bone_position, pos82, ":agent2", ":bone", 1),
           
-          (neg|position_is_behind_position, pos1, pos2),
-          (get_distance_between_positions, ":dist", pos1, pos2),
+          (neg|position_is_behind_position, pos81, pos82),
+          (get_distance_between_positions, ":dist", pos81, pos82),
           
           (le, ":dist", 25),
           
@@ -1298,7 +1298,7 @@ tld_ai_is_kicked = (0.2, 0, 0, [(eq,"$field_ai_lord",1)],
           (neq,":anim","anim_strike3_abdomen_front"),#Prevents mass kicking
           
           (agent_set_animation, ":agent2", "anim_strike3_abdomen_front"),#kicked
-          (play_sound_at_position, "snd_blunt_hit", pos2),#Play dat phat bass boiz
+          (play_sound_at_position, "snd_blunt_hit", pos82),#Play dat phat bass boiz
           
           (store_random_in_range, ":dmg", 1, 6),
           (agent_deliver_damage_to_agent, ":agent1", ":agent2", ":dmg"),
@@ -1350,11 +1350,11 @@ tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
           (agent_get_team, ":team2", ":agent2"),
           (neq, ":team1", ":team2"),
           
-          (agent_get_position, pos1, ":agent1"),
-          (agent_get_position, pos2, ":agent2"),
+          (agent_get_position, pos81, ":agent1"),
+          (agent_get_position, pos82, ":agent2"),
           
-          (neg|position_is_behind_position, pos1, pos2),
-          (get_distance_between_positions, ":dist", pos1, pos2),
+          (neg|position_is_behind_position, pos81, pos82),
+          (get_distance_between_positions, ":dist", pos81, pos82),
           
           
           #Must be a legit melee weapon used
@@ -1612,18 +1612,18 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                 (neg|eq, ":hold_fire", aordr_hold_your_fire),
                 (neg|eq, ":weapon_usage_order", wordr_use_melee_weapons),
                 (eq, ":movement_order", mordr_charge),
-                (agent_get_position, pos50, ":agent_no"), 
-                (agent_get_speed, pos31, ":agent_no"),
-                (position_get_y,":speed_y",pos31),
+                (agent_get_position, pos100, ":agent_no"), 
+                (agent_get_speed, pos91, ":agent_no"),
+                (position_get_y,":speed_y",pos91),
                 (assign, ":distance_closest", 100000),#1000m
                 (assign, ":enemies_closest", -1),
                 (try_for_agents, ":enemies"),
                     (agent_is_alive, ":enemies"),
                     (agent_is_human, ":enemies"),
-                    (agent_get_position, pos36, ":enemies"),
+                    (agent_get_position, pos96, ":enemies"),
                     (agent_get_team, ":enemies_team", ":enemies"),
                     (teams_are_enemies, ":team_no", ":enemies_team"),
-                    (get_distance_between_positions, ":distance", pos50, pos36),
+                    (get_distance_between_positions, ":distance", pos100, pos96),
                     (try_begin),
                       (agent_slot_eq, ":enemies", slot_agent_is_running_away, 1),
                       (val_add, ":distance", 10000),
@@ -1631,8 +1631,8 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                     (try_begin),
                       (agent_get_horse, ":enemies_horse", ":enemies"),
                       (gt, ":enemies_horse", -1),
-                      (agent_get_speed, pos32, ":enemies"),
-                      (position_get_y,":speed_y_enemies",pos32),
+                      (agent_get_speed, pos92, ":enemies"),
+                      (position_get_y,":speed_y_enemies",pos92),
                       (val_sub, ":speed_y_enemies", ":speed_y"),
                       (store_div, ":distance_cavalry", ":speed_y_enemies",5),
                       (val_max, ":distance_cavalry", 0),
@@ -1648,8 +1648,8 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                     (assign, ":enemies_closest", ":enemies"),
                 (try_end),
                 (neq, ":enemies_closest", -1),
-                (agent_get_position, pos51, ":enemies_closest"),
-                (get_distance_between_positions, ":distance_true", pos50, pos51),
+                (agent_get_position, pos101, ":enemies_closest"),
+                (get_distance_between_positions, ":distance_true", pos100, pos101),
                 (try_begin),
                   (agent_slot_eq, ":enemies_closest", slot_agent_is_running_away, 0),
                   (gt,":distance_true",200),
@@ -1667,9 +1667,9 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                     (this_or_next|eq, ":weapon_type", itp_type_bow),
                     (this_or_next|eq, ":weapon_type", itp_type_pistol),
                     (eq, ":weapon_type", itp_type_musket),
-                    (agent_get_bone_position, pos53, ":agent_no", 8, 1),
-                    (agent_get_bone_position, pos54, ":enemies_closest", 9, 1),
-                    (position_has_line_of_sight_to_position, pos53, pos54),
+                    (agent_get_bone_position, pos103, ":agent_no", 8, 1),
+                    (agent_get_bone_position, pos104, ":enemies_closest", 9, 1),
+                    (position_has_line_of_sight_to_position, pos103, pos104),
                     (agent_set_look_target_agent, ":agent_no", ":enemies_closest"),
                     (try_begin),
                       (assign, ":shoot_distance", 4000),
@@ -1704,18 +1704,18 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                   (agent_slot_eq, ":enemies_closest", slot_agent_is_running_away, 0),
                   (lt, ":distance_closest", 10000),
                   (try_begin),
-                    (get_scene_boundaries, pos2, pos3),
-                    (position_transform_position_to_local, pos4, pos2,pos50),
-                    (position_get_x, ":left", pos4),
-                    (position_get_y, ":down", pos4),
-                    (position_transform_position_to_local, pos4, pos2,pos3),
-                    (position_get_x, ":map_width", pos4),
-                    (position_get_y, ":map_height", pos4),
+                    (get_scene_boundaries, pos112, pos113),
+                    (position_transform_position_to_local, pos114, pos112,pos100),
+                    (position_get_x, ":left", pos114),
+                    (position_get_y, ":down", pos114),
+                    (position_transform_position_to_local, pos114, pos112,pos113),
+                    (position_get_x, ":map_width", pos114),
+                    (position_get_y, ":map_height", pos114),
                     (store_sub, ":right", ":map_width", ":left"),
                     (store_sub, ":up", ":map_height", ":down"),
-                    (position_transform_position_to_local, pos4, pos50, pos51),
-                    (position_get_x, ":enemies_x", pos4),
-                    (position_get_y, ":enemies_y", pos4),
+                    (position_transform_position_to_local, pos114, pos100, pos101),
+                    (position_get_x, ":enemies_x", pos114),
+                    (position_get_y, ":enemies_y", pos114),
                     (assign, ":effect", 0),
                     (try_begin),
                       (neg|gt, ":distance_closest", 1000),
@@ -1736,13 +1736,13 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                       (agent_slot_eq, ":enemies_closest", slot_agent_is_running_away, 0),
                       (store_div, ":map_middle_x", ":map_width", 20),
                       (store_div, ":map_middle_y", ":map_height", 20),
-                      (position_copy_origin, pos4, pos2),
-                      (position_move_x, pos4, ":map_middle_x", 1),
-                      (position_move_y, pos4, ":map_middle_y", 1),
-                      (get_distance_between_positions,":distance_middle", pos4, pos50),
-                      (position_transform_position_to_local, pos4, pos50, pos4),
-                      (position_get_x, ":map_middle_x", pos4),
-                      (position_get_y, ":map_middle_y", pos4),
+                      (position_copy_origin, pos114, pos112),
+                      (position_move_x, pos114, ":map_middle_x", 1),
+                      (position_move_y, pos114, ":map_middle_y", 1),
+                      (get_distance_between_positions,":distance_middle", pos114, pos100),
+                      (position_transform_position_to_local, pos114, pos100, pos114),
+                      (position_get_x, ":map_middle_x", pos114),
+                      (position_get_y, ":map_middle_y", pos114),
                       (val_mul, ":map_middle_x", 100),
                       (val_mul, ":map_middle_y", 100),
                       (val_mul, ":enemies_x", 100),
@@ -1785,10 +1785,10 @@ tld_improved_horse_archer_ai =  (0.5, 0, 0, [
                     (store_mul, ":k_y2", ":cos", ":enemies_x",),
                     (store_add, ":move_x",":k_x1", ":k_x2"),
                     (store_sub, ":move_y",":k_y1", ":k_y2"),
-                    (position_move_x, pos50, ":move_x", 0),
-                    (position_move_y, pos50, ":move_y", 0),
+                    (position_move_x, pos100, ":move_x", 0),
+                    (position_move_y, pos100, ":move_y", 0),
                   (try_end),
-                  (agent_set_scripted_destination, ":agent_no", pos50, 1),
+                  (agent_set_scripted_destination, ":agent_no", pos100, 1),
                 (else_try),
                   (agent_clear_scripted_mode, ":agent_no"),
                   (agent_force_rethink, ":agent_no"),
