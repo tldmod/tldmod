@@ -2707,3 +2707,5 @@ slot_troll_agent_last_charge = 51
 
 OLOG_ENT_HP_SHIELD = 350
 MORIA_TROLL_HP_SHIELD = 500
+
+slot_troop_has_combat_ai = 157

@@ -322,7 +322,7 @@ skins = [
      ("womanface_brown",0xffaf9f7e,["hair_blonde"],[0xff19100c, 0xff0c0d19, 0xff07080c]),
 	 ("womanface_elf"  ,0xffe3e8ef,["hair_blonde"],[0xffffffff, 0xffb04717, 0xff502a19, 0xff19100c]),
      ],#woman_face_textures
-    [(voice_die,"snd_woman_die"),(voice_hit,"snd_woman_hit")], #voice sounds
+    [(voice_die,"snd_woman_die"),(voice_hit,"snd_woman_hit"),(voice_yell,"snd_woman_yell"), (voice_victory,"snd_woman_yell")], #voice sounds
     "skel_human", 1.0,
     psys_game_blood,psys_game_blood_2,
   ),

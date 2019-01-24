@@ -197,6 +197,7 @@ map_icons = map_icons_scribbler + [
       [
          # (dialog_box, "@LOLOL","@INITIALIZED morannon"),
            (call_script, "script_tld_internal_set_good_or_evil_ui"),
+           (call_script, "script_update_savegame"),
       ]
     ),
   ] or []

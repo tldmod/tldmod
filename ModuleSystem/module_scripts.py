@@ -1929,7 +1929,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",5),
+    (assign,"$savegame_version",7),
 
 	] + (is_a_wb_script==1 and [
 
@@ -2045,6 +2045,21 @@ scripts = [
 
 	(assign, "$g_wp_player_hr_active", 1),      # Set to 0 to prevent player regeneration.  1 to activate.
    	(assign, "$g_wp_ai_hr_active", 1),       	  # Set to 0 to prevent AI regeneration.  1 to activate.
+
+   	# Init Advanced Combat AI
+
+   	(try_for_range, ":has_combat_ai", kingdom_heroes_begin, kingdom_heroes_end),
+   		(troop_set_slot, ":has_combat_ai", slot_troop_has_combat_ai, 1),
+   	(try_end),
+
+   	(troop_set_slot, "trp_npc5", slot_troop_has_combat_ai, 1), #Glorfindel
+   	(troop_set_slot, "trp_npc13", slot_troop_has_combat_ai, 1), #Lykyada
+
+   	(troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_has_combat_ai, 1),
+   	(troop_set_slot, "trp_nazgul", slot_troop_has_combat_ai, 1),
+   	(troop_set_slot, "trp_badass_theo", slot_troop_has_combat_ai, 1),
+   	(troop_set_slot, "trp_killer_witcher", slot_troop_has_combat_ai, 1),
+
 
 	] or []) + [
 
@@ -23517,6 +23532,22 @@ command_cursor_scripts = [
 		(item_set_slot, "itm_khand_light", slot_item_materials_end, "str_npc18_intro"),
 		(assign, "$slow_when_wounded", 1),
     	(assign, "$savegame_version",6),
+    (try_end),
+
+    (try_begin), #Kham - Jan 2019
+    	(lt,"$savegame_version",7),
+	   	(try_for_range, ":has_combat_ai", kingdom_heroes_begin, kingdom_heroes_end),
+	   		(troop_set_slot, ":has_combat_ai", slot_troop_has_combat_ai, 1),
+	   	(try_end),
+
+	   	(troop_set_slot, "trp_npc5", slot_troop_has_combat_ai, 1), #Glorfindel
+	   	(troop_set_slot, "trp_npc13", slot_troop_has_combat_ai, 1), #Lykyada
+
+	   	(troop_set_slot, "trp_black_numenorean_sorcerer", slot_troop_has_combat_ai, 1),
+	   	(troop_set_slot, "trp_nazgul", slot_troop_has_combat_ai, 1),
+	   	(troop_set_slot, "trp_badass_theo", slot_troop_has_combat_ai, 1),
+	   	(troop_set_slot, "trp_killer_witcher", slot_troop_has_combat_ai, 1),
+    	(assign, "$savegame_version",7),
     (try_end),
 ]),
 
