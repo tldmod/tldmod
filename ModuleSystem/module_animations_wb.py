@@ -2178,20 +2178,24 @@ animations = [
    [3.0, "anim_human", 80, 82, arf_use_stand_progress|arf_cyclic|arf_two_handed_blade, 0, (0, 0, 0), 0.5],
  ],
 
-  ["troll_roar", acf_enforce_all, amf_client_prediction|amf_priority_die|amf_play|amf_start_instantly,
+ ["troll_roar", acf_enforce_all, amf_client_prediction|amf_priority_die|amf_play|amf_start_instantly,
    [2.3, "man_cheer", 200, 289, arf_blend_in_1],
  ],
-  ["troll_charge", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_die|amf_play|amf_start_instantly|amf_accurate_body,
+ 
+ ["troll_charge", acf_enforce_all|acf_align_with_ground|acf_displace_position,  amf_priority_die|amf_play|amf_start_instantly|amf_accurate_body,
    [2.6, "sprint", 0, 59, arf_blend_in_1, 0, (0, 9.4, 0), 0], 
  ],
 
+ ["troll_pushback", acf_enforce_all, amf_client_prediction|amf_priority_die|amf_play|amf_start_instantly,
+   [3.0, "troll_pushback", 0, 63, arf_blend_in_1],
+ ],
 
 
  #Hoboistice begin
  #Since the 1.143 animations were added back, 30 of the unused animations had to go in order to make room.
  #["unused_human_anim_95", 0, 0, [1.0, "anim_human", 0, 1, 0]], - troll charge
  #["unused_human_anim_96", 0, 0, [1.0, "anim_human", 0, 1, 0]], - troll roar
- ["unused_human_anim_97", 0, 0, [1.0, "anim_human", 0, 1, 0]],
+ #["unused_human_anim_97", 0, 0, [1.0, "anim_human", 0, 1, 0]], - troll pushback
  ["unused_human_anim_98", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_99", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_100", 0, 0, [1.0, "anim_human", 0, 1, 0]],

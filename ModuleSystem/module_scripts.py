@@ -28253,4 +28253,80 @@ if is_a_wb_script==1:
 	(try_end),
 	]),
 
+("cf_surrounded_pushback", [
+	(store_script_param_1, ":agent"),\
+	(store_script_param_2, ":step"),
+
+
+	(agent_get_position, pos69, ":agent"),
+	(agent_get_team, ":agent_team", ":agent"),
+
+	(set_fixed_point_multiplier, 100),
+
+    (agent_slot_eq, ":agent", slot_troll_agent_charging, 0), #troll should not be charging
+	
+	(assign, ":counter", 0),
+
+	(try_begin),
+		(eq, ":step", 1),
+
+		(try_for_agents, ":count", pos69, 200),
+			(neq, ":count", ":agent"),
+			(agent_is_alive, ":count"),
+			(agent_is_active, ":count"),
+			(agent_is_human, ":count"),
+			(gt, ":count", 0),
+			(agent_get_team, ":count_team", ":count"),
+			(neq, ":count_team", ":agent_team"),
+			(agent_get_troop_id, ":troop_id", ":count"),
+		  	(neg|is_between, ":troop_id", warg_ghost_begin, warg_ghost_end),
+		  	(val_add, ":counter", 1),
+		(try_end),
+
+		#Debug:
+		#(assign, reg77, ":counter"),
+		#(display_message, "@{reg77} agents nearby", color_bad_news),
+
+		(ge, ":counter", 4), #when surrounded by 4 enemies
+		(agent_set_animation, ":agent", "anim_troll_pushback"),
+
+		(agent_set_slot, ":agent", slot_agent_troll_swing_status, 1),
+		(store_mission_timer_a_msec, ":timer"),
+		
+		#Debug:
+		#(assign, reg78, ":timer"),
+		#(display_message, "@{reg78} - Current Time", color_good_news),
+		
+		(val_add, ":timer", 2000),
+		(agent_set_slot, ":agent", slot_agent_troll_swing_move, ":timer"),
+	(else_try),
+		(eq, ":step", 2),
+
+		(agent_slot_eq, ":agent", slot_agent_troll_swing_status, 1),
+		(store_mission_timer_a_msec, ":timer_2"),
+		(agent_slot_ge, ":agent", slot_agent_troll_swing_move, ":timer_2"),
+
+		(try_for_agents, ":nearby", pos69, 300),
+			(neq, ":nearby", ":agent"),
+			(agent_is_alive, ":nearby"),
+			(agent_is_active, ":nearby"),
+			(agent_is_human, ":nearby"),
+			(gt, ":nearby", 0),
+			(agent_get_troop_id, ":enemy_troop_id", ":nearby"),
+		  	(neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+		  	(agent_get_horse, ":target_horse", ":nearby"),
+		    (try_begin),
+		      (lt, ":target_horse", 0),
+		      (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+		    (else_try),
+		      (gt, ":target_horse", 0),
+		      (assign, ":hit_anim", "anim_strike_fly_back_rise"),
+		      (agent_start_running_away, ":target_horse"),
+		      (agent_stop_running_away, ":target_horse"),
+		    (try_end),
+		  	(agent_set_animation, ":nearby", ":hit_anim"),
+  		    (agent_slot_eq, ":agent", slot_agent_troll_swing_status, 0),
+	    (try_end),
+	(try_end),
+]),
 ]

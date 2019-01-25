@@ -1343,7 +1343,7 @@ tld_melee_ai = (0, 0, 0, [(eq,"$field_ai_lord",1),
            #TLD Check
           (agent_get_troop_id, ":lord", ":agent1"),
           (troop_slot_eq, ":lord", slot_troop_has_combat_ai, 1), 
-          
+
           #(this_or_next|is_between, ":lord", kingdom_heroes_begin, kingdom_heroes_end),
           #(this_or_next|eq, ":lord", "trp_black_numenorean_sorcerer"),
           #(is_between, ":lord", "trp_badass_theo", "trp_guldur_healer"),
@@ -1937,7 +1937,7 @@ hp_shield_trigger = (ti_on_agent_hit, 0, 0, [
       (else_try),
         (item_has_property, ":weapon", itp_couchable),
         (ge, ":damage", 100),
-        (store_div, ":couched_damage", OLOG_ENT_HP_SHIELD, 4),
+        (store_div, ":couched_damage", OLOG_ENT_HP_SHIELD, 3),
         (assign, ":damage", ":couched_damage"),
         (agent_set_animation, ":agent", "anim_strike3_abdomen_front"), 
       (else_try),

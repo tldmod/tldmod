@@ -2705,7 +2705,7 @@ slot_party_scripted_ai = 309
 slot_troll_agent_charging = 50
 slot_troll_agent_last_charge = 51
 
-OLOG_ENT_HP_SHIELD = 350
+OLOG_ENT_HP_SHIELD = 320
 MORIA_TROLL_HP_SHIELD = 500
 
 slot_troop_has_combat_ai = 157

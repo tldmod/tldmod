@@ -1162,8 +1162,8 @@
   2.3 man_cheer 200 289 2 0 0 0 0 0.0 
  troll_charge 17410 42008671  1
   2.6 sprint 0 59 2 0 0 9.4 0  0 
- unused_human_anim_97 0 0  1
-  1 anim_human 0 1 0 0 0 0 0 0.0 
+ troll_pushback 1024 50397279  1
+  3 troll_pushback 0 63 2 0 0 0 0 0.0 
  unused_human_anim_98 0 0  1
   1 anim_human 0 1 0 0 0 0 0 0.0 
  unused_human_anim_99 0 0  1

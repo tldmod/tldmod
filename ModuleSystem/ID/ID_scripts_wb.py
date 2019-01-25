@@ -726,5 +726,6 @@ script_tld_internal_set_good_or_evil_ui = 724
 script_flash_and_animate = 725
 script_get_position_and_teleport_behind_agent = 726
 script_wield_agent_weapons = 727
+script_cf_surrounded_pushback = 728
 
 

@@ -2260,6 +2260,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
       #(agent_get_position, pos17, ":aoe_hit"),
       #(neg|position_is_behind_position, pos17, pos18),
       (agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
+      (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
       (troop_get_type, ":victim_type", ":victim_troop_id"),
       (agent_get_horse, ":victim_horse", ":aoe_hit"),
       
@@ -2354,6 +2355,63 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 ]),
 
+# Surrounded Pushback - Step 1
+
+(5, 5, 7, [(gt, "$trolls_in_battle", 0)], 
+	[
+
+ 	(try_for_agents, ":troll"),
+		(agent_is_active, ":troll"),
+		(agent_is_alive, ":troll"),
+		(agent_is_human, ":troll"),
+		(gt, ":troll", 0),
+		(agent_get_troop_id, ":troll_troop_id", ":troll"),
+		(troop_get_type, ":troll_type", ":troll_troop_id"),
+		(eq, ":troll_type", tf_troll),
+		(call_script, "script_cf_surrounded_pushback", ":troll", 1),
+	(try_end),
+
+	]),
+
+# Surrounded Pushback - Step 2
+
+(0, 0, 0, [
+	(gt, "$trolls_in_battle", 0),
+	(assign, ":troll_found", 0),
+ 	(try_for_agents, ":troll"),
+		(agent_is_active, ":troll"),
+		(agent_is_alive, ":troll"),
+		(agent_is_human, ":troll"),
+		(gt, ":troll", 0),
+		(eq, ":troll_found", 0),
+		(agent_get_troop_id, ":troll_troop_id", ":troll"),
+		(troop_get_type, ":troll_type", ":troll_troop_id"),
+		(eq, ":troll_type", tf_troll),
+		(agent_slot_eq, ":troll", slot_agent_troll_swing_status, 1),
+		(assign, ":troll_found", 1),
+	(try_end),
+
+	(eq, ":troll_found", 1),
+
+	],[
+
+ 	(try_for_agents, ":troll"),
+		(agent_is_active, ":troll"),
+		(agent_is_alive, ":troll"),
+		(agent_is_human, ":troll"),
+		(gt, ":troll", 0),
+		(agent_get_troop_id, ":troll_troop_id", ":troll"),
+		(troop_get_type, ":troll_type", ":troll_troop_id"),
+		(eq, ":troll_type", tf_troll),
+		(agent_slot_eq, ":troll", slot_agent_troll_swing_status, 1),
+		(call_script, "script_cf_surrounded_pushback", ":troll", 2),
+	(try_end),
+
+	]),
+
+# End Surrounded Pushback
+
+# Troll Charge
 (10, 0, 5, [
 	
 
@@ -2477,6 +2535,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 ]),
 
 
+# Troll Charge Deactivate
 (5, 0, 1, [
 
 	(gt, "$trolls_in_battle"),
@@ -2520,6 +2579,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 	(try_end), 
 		
 ]),
+
+# Troll Charge Mode Pushbacks
 
 (0.2,0.5,2, [(gt, "$trolls_in_battle", 0)],[
 

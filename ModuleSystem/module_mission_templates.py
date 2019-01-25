@@ -1495,7 +1495,7 @@ mission_templates = [ # not used in game
       (try_end),
       ]),
 
-  #(0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (call_script, "script_flash_and_animate", ":player", 1), ]),
+  #(0,0,0, [(key_clicked, key_b)],[(get_player_agent_no, ":player"), (call_script, "script_cf_surrounded_pushback", ":player"), ]),
   #(0,0,0, [(key_clicked, key_h)],[(get_player_agent_no, ":player"), 
   #  (assign, ":walker_found", 0),
   #  (try_for_agents, ":walker"),
