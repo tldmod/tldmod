@@ -2235,7 +2235,7 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
 	(store_trigger_param_1, ":receiver"),
  	(store_trigger_param_2, ":dealer"),
- 	(store_trigger_param_3, ":damage"),
+ 	#(store_trigger_param_3, ":damage"),
 
  	(agent_is_active, ":receiver"),
  	(agent_is_alive, ":receiver"),
@@ -2248,15 +2248,14 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
  	(troop_get_type, ":type_dealer", ":troll_dealer"),
  	(eq, ":type_dealer", tf_troll),
 
-    (agent_get_position, pos3, ":receiver"),
+    (agent_get_position, pos3, ":receiver"), #throwback + aoe around the receiver, to have it somewhat directional
     (set_fixed_point_multiplier, 100),
 
-    (try_for_agents, ":aoe_hit", pos3, 150),
+    (try_for_agents, ":aoe_hit", pos3, 100), #tweakable
       (agent_is_active, ":aoe_hit"),
       (agent_is_alive, ":aoe_hit"),
       (agent_is_human, ":aoe_hit"),
       (neq, ":aoe_hit", ":dealer"), #don't hit yourself
-      (neq, ":aoe_hit", ":receiver"),
       (gt, ":aoe_hit", 0),
       #(agent_get_position, pos17, ":aoe_hit"),
       #(neg|position_is_behind_position, pos17, pos18),
@@ -2329,15 +2328,27 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
       (try_end),
 
-      #(agent_get_wielded_item, ":item", ":dealer", 0),
-      #(item_get_swing_damage, ":damage", ":item"),
-      (val_max, ":damage", 2),
-      (val_div, ":damage", 2),
-      (agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", ":damage"),
+      (agent_get_wielded_item, ":item", ":dealer", 0), #InVain: Calculate raw damage, since trigger only prints out damage-armour. Formula: damage = base_damage* (1+ power_strike*0,08) = [base_damage*100 + (base_damage*power_strike*8)]/100
+      (item_get_swing_damage, ":damage", ":item"), #base_damage
+	  (store_skill_level,":power_strike",skl_power_strike,":dealer"),
+	  (val_mul, ":power_strike", 8), #8% damage bonus per power strike, not taking into account weapon proficiency
+	  (val_mul, ":power_strike", ":damage"), 
+	  
+	  (val_mul, ":damage", 100),
+	  (val_add, ":damage", ":power_strike"),
+	 
+	  (store_random_in_range, ":rand_damage", 150, 250), #tweakable, randomize aoe damage a bit	 
+      (val_div, ":damage", ":rand_damage"),
+	  (val_max, ":damage", 2),
+	  
+	  (try_begin),
+			(neq, ":aoe_hit", ":receiver"),
+			(agent_deliver_damage_to_agent, ":dealer", ":aoe_hit", ":damage"),
 
 	  #(store_agent_hit_points, ":hp", ":aoe_hit", 1), 
 	  #(val_sub,":hp",":damage"),
 	  #(agent_set_hit_points, ":aoe_hit", ":hp", 1),
+	  (try_end),
 
     (try_end),
 
