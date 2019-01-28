@@ -315,11 +315,11 @@ party_templates = [
 ("beorn_reinf_b"   ,"_",0,0,fac_commoners,0,[(trp_woodmen_scout,2,4),(trp_woodmen_skilled_forester,1,2),(trp_beorning_tolltacker,1,2),(trp_beorning_carrock_lookout,1,2)]),
 ("beorn_reinf_c"   ,"_",0,0,fac_commoners,0,[(trp_beorning_sentinel,1,3),(trp_beorning_carrock_fighter,2,3),(trp_woodmen_axemen,1,2),]),
 #Mt. Gundabad - see Moria (8-16, 7-13, 5-10)
-("gundabad_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,4,8),(trp_i2_orc_gundabad,3,6)]), #InVain: traded some t1 for t2
+("gundabad_reinf_a","_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,6,12),(trp_i2_orc_gundabad,5,8)]), #InVain: traded some t1 for t2 /#InVain: increased number of infantry by 50%, so lords have less space left for warg riders (hope this works)
 ("gundabad_reinf_b","_",0,0,fac_commoners,0,[(trp_ca4_warg_skirmisher_gundabad,1,3),(trp_i2_orc_gundabad,3,5),(trp_i3_orc_fighter_gundabad,2,3),]), #InVain t3 orcs, less t2 orcs
 ("gundabad_reinf_c","_",0,0,fac_commoners,0,[(trp_c3_goblin_rider_gundabad,1,2),(trp_i3_orc_fighter_gundabad,2,3),(trp_troll_of_moria,1,1),]), 
 #Dale (7-14, 5-10, 4-8)
-("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_dale_man_at_arms,1,2),(trp_laketown_scout,1,2),(trp_dale_militia,5,10),]),
+("dale_reinf_a"    ,"_",0,0,fac_commoners,0,[(trp_merchant_squire_or_dale,1,2),(trp_dale_man_at_arms,1,2),(trp_laketown_scout,1,2),(trp_dale_militia,5,10),]), #InVain: added 
 ("dale_reinf_b"    ,"_",0,0,fac_commoners,0,[(trp_merchant_squire_or_dale,0,1),(trp_laketown_bowmen,3,5),(trp_dale_pikeman,1,2),(trp_dale_warrior,1,2),]),
 ("dale_reinf_c"    ,"_",0,0,fac_commoners,0,[(trp_merchant_protector_of_dale,2,4),(trp_dale_billman,1,2),(trp_dale_veteran_warrior,1,2),]),
 #Erebor (7-14, 5-10, 4-8)
@@ -365,7 +365,7 @@ party_templates = [
 ("woodman_recruits"   ,"_",0,0,fac_commoners,0,[(trp_woodmen_youth,2,5)]),
 ("gundabad_recruits"  ,"_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,3,6)]),
 ("gundabad_cap_recruits","_",0,0,fac_commoners,0,[(trp_i1_goblin_gundabad,3,7)]),
-("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,1)]), #T1 and T2
+("dale_recruits"      ,"_",0,0,fac_commoners,0,[(trp_dale_militia,1,4),(trp_merchant_squire_or_dale,1,2)]), #T1 and T2
 ("dwarf_recruits"     ,"_",0,0,fac_commoners,0,[(trp_i1_dwarven_apprentice,2,4)]), #T1 and T2
 ("dwarf_iron_recruits","_",0,0,fac_commoners,0,[(trp_i2_iron_hills_miner,1,3)]), #T1 and T2
 ("dunland_recruits"   ,"_",0,0,fac_commoners,0,[(trp_dunnish_wildman,3,7)]),

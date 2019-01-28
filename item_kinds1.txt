@@ -180,28 +180,28 @@ itemsfile version 2
  itm_variag_kataphrakt Easterling_Warhorse Easterling_Warhorse 1  easterling_warhorse01 0  65537 0 2000 16139943936 0 100 0 48 0 4 135 37 37 0 0 35 0
 0
 
- itm_warg_1b Warg Warg 1  warg_1B 0  65537 0 600 16274161664 0 100 0 10 0 2 80 64 33 0 0 45 0
+ itm_warg_1b Warg Warg 1  warg_1B 0  65537 0 600 16274161664 0 100 0 10 0 2 80 64 33 0 0 35 0
 0
 
- itm_warg_1c Warg Warg 1  warg_1C 0  65537 0 600 16274161664 0 100 0 10 0 2 80 64 33 0 0 45 0
+ itm_warg_1c Warg Warg 1  warg_1C 0  65537 0 600 16274161664 0 100 0 10 0 2 80 64 33 0 0 35 0
 0
 
- itm_warg_1d Warg Warg 1  warg_1D 0  65537 0 600 16274161664 0 100 0 10 0 2 80 64 33 0 0 45 0
+ itm_warg_1d Warg Warg 1  warg_1D 0  65537 0 600 16274161664 0 100 0 10 0 2 80 64 33 0 0 35 0
 0
 
- itm_wargarmored_1b Armored_Warg Armored_Warg 1  wargArmored_1B 0  65537 0 1200 16274161664 0 100 0 30 0 4 100 61 30 0 0 50 0
+ itm_wargarmored_1b Armored_Warg Armored_Warg 1  wargArmored_1B 0  65537 0 1200 16274161664 0 100 0 25 0 4 100 61 30 0 0 38 0
 0
 
- itm_wargarmored_1c Armored_Warg Armored_Warg 1  wargArmored_1C 0  65537 0 1200 16274161664 0 100 0 30 0 4 100 61 30 0 0 50 0
+ itm_wargarmored_1c Armored_Warg Armored_Warg 1  wargArmored_1C 0  65537 0 1200 16274161664 0 100 0 25 0 4 100 61 30 0 0 38 0
 0
 
- itm_wargarmored_2b Armored_Warg Armored_Warg 1  wargArmored_2B 0  65537 0 1200 16274161664 0 100 0 30 0 4 110 61 30 0 0 50 0
+ itm_wargarmored_2b Armored_Warg Armored_Warg 1  wargArmored_2B 0  65537 0 1200 16274161664 0 100 0 30 0 4 110 61 30 0 0 40 0
 0
 
- itm_wargarmored_2c Armored_Warg Armored_Warg 1  wargArmored_2C 0  65537 0 1200 16274161664 0 100 0 30 0 4 120 61 30 0 0 50 0
+ itm_wargarmored_2c Armored_Warg Armored_Warg 1  wargArmored_2C 0  65537 0 1200 16274161664 0 100 0 30 0 4 120 61 30 0 0 40 0
 0
 
- itm_wargarmored_3a Armored_Warg Armored_Warg 1  wargArmored_3A 0  65537 0 2500 16274161664 0 100 0 40 0 5 130 60 29 0 0 55 0
+ itm_wargarmored_3a Armored_Warg Armored_Warg 1  wargArmored_3A 0  65537 0 2500 16274161664 0 100 0 35 0 5 130 60 29 0 0 45 0
 0
 
  itm_warg_reward Huge_Warg Huge_Warg 1  wargArmored_huge 0  4097 0 3000 16139943936 0 100 0 45 0 5 180 62 35 0 0 62 0
