@@ -8957,7 +8957,11 @@ formAI_scripts = [
       (eq, ":team", ":fteam"),
       (agent_is_alive, ":agent"),
       (agent_is_human, ":agent"),
-      (agent_slot_eq, ":agent", slot_agent_is_running_away, 0),]),
+      (agent_slot_eq, ":agent", slot_agent_is_running_away, 0),
+      #MV: troll check - they don't belong to formations
+      (agent_get_troop_id, ":agent_troop", ":agent"),
+      (troop_get_type, ":agent_race", ":agent_troop"),
+      (neq, ":agent_race", tf_troll),]),
   
   # #Player team formations functions
   # script_player_attempt_formation

@@ -476,7 +476,7 @@ tld_animal_strikes = ((is_a_wb_mt==1) and (
       (eq|this_or_next, ":agent_trp", "trp_werewolf"),
       (eq, ":agent_trp", "trp_wolf"),
       (try_begin),
-        (le, ":rnd_2", 20),
+        (le, ":rnd_2", 15),
         (assign, ":anim", "anim_warg_leapattack"),
       (else_try),
         (assign, ":anim", "anim_wolf_snap"),
@@ -8138,7 +8138,7 @@ tld_remove_riderless_animals,
       tld_cheer_on_space_when_battle_over_press,
       tld_cheer_on_space_when_battle_over_release,
       (ti_tab_pressed, 0, 0, [(display_message, "@Cannot leave")], []),
-      (ti_before_mission_start, 0, 0, [], [(assign, "$g_arena_training_kills", 0), (get_player_agent_no, ":player"), (agent_set_hit_points, ":player", 100),]),
+      (ti_after_mission_start, 0, ti_once, [], [(assign, "$g_arena_training_kills", 0), (get_player_agent_no, ":player"), (agent_set_hit_points, ":player", 100),]),
       
       (0, 0, ti_once, [],
         [

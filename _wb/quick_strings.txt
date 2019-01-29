@@ -1,4 +1,4 @@
-1843
+1844
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -1078,16 +1078,17 @@ qstr_C_advance_camps_spawn C_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_N_advance_camps_spawn N_advance_camps_spawned_around_{reg2},{reg3}!
 qstr_Gandalf_would_like_t Gandalf_would_like_to_have_a_little_chat!
 qstr_Kham_Cheat_Mode_ON! Kham_Cheat_Mode_ON!
-qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_1_troll_added! 1_troll_added!
 qstr_Raft_Men_party_enabl Raft_Men_party_enabled._They_are_down_River_Running
 qstr_{reg63}_followers {reg63}_followers
 qstr_{reg0}_Fit_Regulars {reg0}_Fit_Regulars
 qstr_{reg0}_Fit_for_battl {reg0}_Fit_for_battle
+qstr_Orc_Horde_Spawned! Orc_Horde_Spawned!
 qstr_Vet_Archer_Spawned! Vet_Archer_Spawned!
 qstr_Killer_WItcher_Spawn Killer_WItcher_Spawned,_Badass_King_Theo_added!
 qstr_Player_Siege_Enabled Player_Siege_Enabled
 qstr_You_are_not_in_the_r You_are_not_in_the_right_region_to_spawn_animal_ambushes._Please_go_to_N_Mirkwood,_S_Mirkwood,_Grey_Mountains,_or_Misty_Mountains
+qstr_{reg1} {reg1}
 qstr_ON ON
 qstr_OFF__cheat_ OFF_(cheat)
 qstr_OFF OFF

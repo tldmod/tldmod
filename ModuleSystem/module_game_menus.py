@@ -3402,18 +3402,10 @@ game_menus = [
     ("action_view_all_items",[],"View all items.", [(assign, "$temp", 0), (start_presentation, "prsnt_all_items")]),
     ("give_custom_armor",[],"Give Custom Armor", [(troop_add_item, "trp_player", "itm_gondor_custom"), (troop_add_item, "trp_player", "itm_uruk_spear")]),
     ] or []) + [
-    ("troll_party_1",[],"Spawn Party with 2 Trolls", [
-    	(set_spawn_radius,3),
-    	(spawn_around_party, "p_main_party", "pt_orc_horde"),
-    	(party_add_members, reg0, "trp_olog_hai", 2),
-    	(display_message, "@Orc Horde Spawned!"),]),
-    ("troll_party_2",[],"Spawn Party with 5 Trolls", [
-    	(set_spawn_radius,3),
-    	(spawn_around_party, "p_main_party", "pt_orc_horde"),
-    	(party_add_members, reg0, "trp_olog_hai", 5),
-    	(display_message, "@Orc Horde Spawned!"),]),
+    ("spawn_orc_horde_troll",[],"Spawn Orc Horde with Trolls",[
+        (jump_to_menu, "mnu_orc_horde_troll")]),
     ("add_trolls",[],"Add 1 Troll to your party (spam for more!)",[
-        (party_add_members, "p_main_party", "trp_olog_hai", 1),
+        (party_force_add_members, "p_main_party", "trp_olog_hai", 1),
         (display_message, "@1 troll added!")]),
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
@@ -3448,6 +3440,35 @@ game_menus = [
     ("camp_khamtest_back",[],"Back",[(jump_to_menu, "mnu_dev_menu")]),
  ]),
 
+( "orc_horde_troll",0,
+	"^^^^^^^^Click on an option to change number of trolls in the orc horde to spawn","none",[],
+	[	
+	 ("orc_horde_choice",
+		[
+			(assign, reg1, "$temp2"),
+			(str_store_string, s1, "@{reg1}"),
+
+		],
+
+		"Number of trolls to add to Orc Horde: {s1}",
+		[
+				(val_add, "$temp2", 1),
+				(try_begin),
+					(gt, "$temp2", 30),
+					(assign, "$temp2", 1),
+				(try_end),
+				(jump_to_menu, "mnu_auto_orc_horde_troll"),
+		]),
+	("orc_horde_select", [(assign, reg1, "$temp2"),], "Spawn Orc Horde with {reg1} Olog Hai", [
+		(set_spawn_radius,3),
+    	(spawn_around_party, "p_main_party", "pt_orc_horde"),
+    	(party_add_members, reg0, "trp_olog_hai", reg1),
+    	(display_message, "@Orc Horde Spawned!"),
+    	]),
+
+    ("orc_horde_back",[],"Back to Kham Test menu.",[(jump_to_menu, "mnu_camp_khamtest")]),
+	]
+),
 ## Kham Test End
 ( "game_options",0,
 	"^^^^^^^^Click on an option to toggle:","none",[(try_begin), (lt, "$savegame_version",4),(call_script, "script_update_savegame"), (try_end)],
@@ -3726,6 +3747,11 @@ game_menus = [
     [(jump_to_menu, "mnu_camp_compat_tweaks")],[]
  ),
 
+( "auto_orc_horde_troll",0,
+    "This menu automatically returns to caller.",
+    "none",
+    [(jump_to_menu, "mnu_orc_horde_troll")],[]
+ ),
  
 #-swy- Nothing leads to this menu, not even with cheats/dev thingie on, probably disabled for a good reason.
 ( "camp_chest_fill",0,

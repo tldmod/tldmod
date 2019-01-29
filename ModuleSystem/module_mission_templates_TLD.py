@@ -2207,6 +2207,54 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 
  ]),
 
+(1,0,ti_once, [(gt, "$trolls_in_battle", 0)], [
+	
+	(try_for_agents,":troll"),
+		(agent_is_alive,":troll"),
+		(agent_is_human,":troll"),
+		(agent_is_active, ":troll"),
+		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		(troop_get_type, ":troll_type", ":troll_troop_id"),
+		(eq, ":troll_type", tf_troll),
+
+		(agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
+        (gt, ":num_nearby_agents", 0),
+        #Trolls charging - begin
+
+        #(agent_get_team, ":troll_team", ":troll"),
+        (agent_get_position, pos67, ":troll"),
+
+        #get the closest noncav enemy
+        (assign, ":min_dist", 1000000),
+        (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+        	(agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
+            (agent_is_alive, ":enemy_agent"),
+            (agent_is_human, ":enemy_agent"),
+            (agent_is_active, ":enemy_agent"),
+            (agent_get_class, ":enemy_class_no", ":enemy_agent"),
+            (neq, ":enemy_class_no", grc_cavalry),
+            (agent_get_position, pos68, ":enemy_agent"),
+            (get_distance_between_positions, ":dist", pos68, pos67),
+            (gt, ":min_dist", ":dist"),
+            (assign, ":min_dist", ":dist"),
+            (copy_position, pos69, pos68), #pos69 holds the nearest enemy position
+        (try_end),
+    
+      # (assign, reg0, ":min_dist"),
+      # (assign, reg1, ":troll"),
+      # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+        
+        (try_begin),
+          (this_or_next|eq, ":min_dist", 1000000),
+          (lt, ":min_dist", 500),
+          (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
+        (else_try),
+          (agent_set_scripted_destination, ":troll", pos69, 1), # head for the nearest enemy
+        (try_end),
+        #Trolls charging - end
+    (try_end),
+  ]),
+
 (ti_on_agent_hit, 0, 0, [
 	
 # Trigger Param 1: receiver agent no
@@ -2584,6 +2632,52 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 # Troll Charge Mode Pushbacks
 
 (0.2,0.5,2, [(gt, "$trolls_in_battle", 0)],[
+
+	(try_for_agents,":troll"),
+		(agent_is_alive,":troll"),
+		(agent_is_human,":troll"),
+		(agent_is_active, ":troll"),
+		(agent_get_troop_id,":troll_troop_id",":troll"), # is it a troll?
+		(troop_get_type, ":troll_type", ":troll_troop_id"),
+		(eq, ":troll_type", tf_troll),
+
+		(agent_ai_get_num_cached_enemies, ":num_nearby_agents", ":troll"),
+        (gt, ":num_nearby_agents", 0),
+        #Trolls charging - begin
+
+        #(agent_get_team, ":troll_team", ":troll"),
+        (agent_get_position, pos67, ":troll"),
+
+        #get the closest noncav enemy
+        (assign, ":min_dist", 1000000),
+        (try_for_range, ":nearby_agent_no", 0, ":num_nearby_agents"),
+        	(agent_ai_get_cached_enemy, ":enemy_agent", ":troll", ":nearby_agent_no"),
+            (agent_is_alive, ":enemy_agent"),
+            (agent_is_human, ":enemy_agent"),
+            (agent_is_active, ":enemy_agent"),
+            (agent_get_class, ":enemy_class_no", ":enemy_agent"),
+            (neq, ":enemy_class_no", grc_cavalry),
+            (agent_get_position, pos68, ":enemy_agent"),
+            (get_distance_between_positions, ":dist", pos68, pos67),
+            (gt, ":min_dist", ":dist"),
+            (assign, ":min_dist", ":dist"),
+            (copy_position, pos70, pos68), #pos70 holds the nearest enemy position
+        (try_end),
+    
+      # (assign, reg0, ":min_dist"),
+      # (assign, reg1, ":troll"),
+      # (display_message, "@Debug: Troll {reg1} distance to enemy: {reg0}."),
+        
+        (try_begin),
+          (this_or_next|eq, ":min_dist", 1000000),
+          (lt, ":min_dist", 500),
+          (agent_clear_scripted_mode, ":troll"), # leave the troll on its own if close enough to the enemy
+        (else_try),
+          (agent_set_scripted_destination, ":troll", pos70, 1), # head for the nearest enemy
+        (try_end),
+        #Trolls charging - end
+    (try_end),
+
 
 	(try_for_agents, ":troll"),
 		(agent_is_active, ":troll"),
