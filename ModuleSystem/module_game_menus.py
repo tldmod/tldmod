@@ -10866,6 +10866,11 @@ game_menus = [
         ],"Agents become Slow when Wounded:  {s7}",[
         (store_sub, "$slow_when_wounded", 1, "$slow_when_wounded"),(val_clamp, "$slow_when_wounded", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
    
+   ("battle_encounter_effects",[(str_clear, s7),(try_begin),(neq, "$battle_encounter_effects", 1),(str_store_string, s7, "@OFF"),
+								(else_try),(str_store_string, s7, "@ON"),(try_end),
+        ],"Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}",[
+        (store_sub, "$battle_encounter_effects", 1, "$battle_encounter_effects"),(val_clamp, "$battle_encounter_effects", 0, 2), (jump_to_menu, "mnu_auto_field_ai")]),
+   
    ("game_options_compat_back",[],"Back to tweaks menu.",[(jump_to_menu, "mnu_camp_tweaks")]),
 
     ]),

@@ -3588,6 +3588,8 @@ simple_triggers = [
     (assign, ":continue", 0),
     (ge, "$tld_war_began", 1), #Only happens during war
 
+    (eq, "$battle_encounter_effects", 1), #Toggle
+
     (try_begin),
       (party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, NO_EFFECT_PRESENT),
       (store_random_in_range, ":rand_prob", 0, 100),

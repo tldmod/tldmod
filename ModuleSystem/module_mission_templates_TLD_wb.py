@@ -3654,7 +3654,7 @@ battle_encounters_effects = [
   (else_try),
     (eq, ":encounter_effect", SARUMAN_STORM),
     #(set_rain, 1,300), 
-    (set_fog_distance,":fog_str",0x212020),
+    (set_fog_distance, 500, 0x010101),
     (store_random_in_range, ":cloud_amount", 65, 90),
     (set_global_cloud_amount, ":cloud_amount"),
     #(display_message, "@DEBUG: SARUMAN_STORM"),
@@ -3670,13 +3670,13 @@ battle_encounters_effects = [
 
 
 # Thunder storms
-
+  
   (3, 0.2, 5, [(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (store_random_in_range,":rnd",1,4),(eq,":rnd",1),(set_fog_distance, 200, 0xaaaaaa),],
-        [(set_fog_distance, 80, 0x010101),(get_player_agent_no,":plyr"),(agent_play_sound, ":plyr", "snd_thunder"),(assign, "$lightning_cycle",1),]),
-  (0.4,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",1),(set_fog_distance, 150, 0x777777),],   ###### Lightning afterflashes 
-        [(set_fog_distance, 80, 0x010101),(assign,"$lightning_cycle",2),]),
-  (0.5,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",2),(set_fog_distance, 120, 0x555555),],
-        [(set_fog_distance, 80, 0x010101),(assign,"$lightning_cycle",0),]),
+        [(set_fog_distance, 500, 0x010101),(get_player_agent_no,":plyr"),(agent_play_sound, ":plyr", "snd_thunder"),(assign, "$lightning_cycle",1),]),
+  (0.4,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",1),(set_fog_distance, 650, 0x777777),],   ###### Lightning afterflashes 
+        [(set_fog_distance, 500, 0x010101),(assign,"$lightning_cycle",2),]),
+  (0.5,0.1, 5,[(party_slot_eq, "p_main_party", slot_party_battle_encounter_effect, SARUMAN_STORM), (eq,"$lightning_cycle",2),(set_fog_distance, 620, 0x555555),],
+        [(set_fog_distance, 500, 0x010101),(assign,"$lightning_cycle",0),]),
 
 
 ]

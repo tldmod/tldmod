@@ -1929,7 +1929,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",7),
+    (assign,"$savegame_version",8),
 
 	] + (is_a_wb_script==1 and [
 
@@ -1950,6 +1950,7 @@ scripts = [
 	(assign, "$player_deploy_troops", 1), #Make sure troops hold when battle starts.
 	(assign, "$FormAI_AI_Control_Troops", 1), #AI Control Dead Player's Troops (FormV5)
 	(assign, "$slow_when_wounded",1), #Kham - Agents get slower when wounded
+	(assign, "$battle_encounter_effects",1), #Kham - Special Effects on Battlefield
 
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
@@ -23550,6 +23551,12 @@ command_cursor_scripts = [
 	   	(troop_set_slot, "trp_badass_theo", slot_troop_has_combat_ai, 1),
 	   	(troop_set_slot, "trp_killer_witcher", slot_troop_has_combat_ai, 1),
     	(assign, "$savegame_version",7),
+    (try_end),
+
+    (try_begin), #Kham - Jan 2019
+    	(lt,"$savegame_version",7),
+    	(assign, "$battle_encounter_effects", 1),
+    	(assign, "$savegame_version",8),
     (try_end),
 ]),
 
