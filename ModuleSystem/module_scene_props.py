@@ -2794,6 +2794,36 @@ scene_props = [
 ( "Gutek_stand_cloth"                          ,0,"Gutek_stand_cloth","bo_stand_cloth",[]),
 ( "Gutek_stand_thatched"                       ,0,"Gutek_stand_thatched","bo_stand_thatched",[]),
 
+( "durins_stone"           			            ,0,"durins_stone","0",[]),
+
+( "gon_mt_stone_house_a",0,"gondor_stone_house_a","bo_gondor_stone_house_a",[]),
+( "gon_mt_stone_house_b",0,"gondor_stone_house_b","bo_gondor_stone_house_b",[]),
+( "gon_mt_stone_house_c",0,"gondor_stone_house_c","bo_gondor_stone_house_c",[]),
+( "gon_mt_stone_house_d",0,"gondor_stone_house_d","bo_gondor_stone_house_d",[]),
+( "gon_mt_stone_house_e",0,"gondor_stone_house_e","bo_gondor_stone_house_e",[]),
+( "gon_mt_stone_house_f",0,"gondor_stone_house_f","bo_gondor_stone_house_f",[]),
+( "gon_mt_stone_house_g",0,"gondor_stone_house_g","bo_gondor_stone_house_g",[]),
+( "gon_mt_stone_house_h",0,"gondor_stone_house_h","bo_gondor_stone_house_h",[]),
+( "gon_mt_stone_house_i",0,"gondor_stone_house_i","bo_gondor_stone_house_i",[]),
+( "gon_mt_stone_house_j",0,"gondor_stone_house_j","bo_gondor_stone_house_j",[]),
+( "gon_mt_stone_house_k",0,"gondor_stone_house_k","bo_gondor_stone_house_k",[]),
+( "gon_mt_stone_house_l",0,"gondor_stone_house_l","bo_gondor_stone_house_l",[]),
+( "gon_mt_stone_house_m",0,"gondor_stone_house_m","bo_gondor_stone_house_m",[]),
+( "gon_mt_stone_house_n",0,"gondor_stone_house_n","bo_gondor_stone_house_n",[]),
+( "gon_mt_stone_house_o",0,"gondor_stone_house_o","bo_gondor_stone_house_o",[]),
+( "gon_mt_stone_keep",0,"gondor_stone_keep","bo_gondor_stone_keep",[]),
+( "gon_mt_stone_passage_house_a",0,"gondor_stone_passage_house_a","bo_gondor_stone_passage_house_a",[]),
+( "gon_mt_upper_storey_d",0,"gondor_upper_storey_d","0",[]),
+( "gon_mt_upper_storey_f",0,"gondor_upper_storey_f","0",[]),
+( "gon_mt_upper_storey_j",0,"gondor_upper_storey_j","0",[]),
+( "gon_mt_upper_storey_m",0,"gondor_upper_storey_m","0",[]),
+( "gon_mt_upper_storey_n",0,"gondor_upper_storey_n","0",[]),
+( "gon_mt_upper_storey_p",0,"gondor_upper_storey_p","0",[]),
+( "gon_mt_upper_storey_q",0,"gondor_upper_storey_q","0",[]),
+("gon_mt_stone_bridge",0,"gondor_stone_bridge","bo_gondor_stone_bridge", []),
+
+
+
 #InVain props end
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
