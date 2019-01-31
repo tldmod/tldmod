@@ -11127,7 +11127,7 @@ game_menus = [
         [(jump_to_menu, "mnu_alternate_training_fight")],
       ),
 
-      ("alternate_training_finish",[(gt, "$g_arena_training_kills", 0), (quest_set_slot, "qst_raise_troops", slot_quest_current_state, "$g_arena_training_kills")],"Leave the arena...",
+      ("alternate_training_finish",[(gt, "$g_arena_training_kills", 0), (quest_set_slot, "qst_raise_troops", slot_quest_current_state, "$g_arena_training_kills"), (troop_set_health, "trp_player", 100)],"Leave the arena...",
         [(change_screen_map)],
       ),
   ]),
