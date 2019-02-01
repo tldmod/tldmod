@@ -2820,14 +2820,17 @@ scene_props = [
 ( "gon_mt_upper_storey_n",0,"gondor_upper_storey_n","0",[]),
 ( "gon_mt_upper_storey_p",0,"gondor_upper_storey_p","0",[]),
 ( "gon_mt_upper_storey_q",0,"gondor_upper_storey_q","0",[]),
-("gon_mt_stone_bridge",0,"gondor_stone_bridge","bo_gondor_stone_bridge", []),
+( "gon_mt_stone_bridge",0,"gondor_stone_bridge","bo_gondor_stone_bridge", []),
 
-
+( "khazad_dwarf_wall_decor_1",0,"khazad_dwarf_wall_decor_1","bo_khazad_dwarf_wall_decor_1",[]),
+( "khazad_dwarf_wall_decor_2",0,"khazad_dwarf_wall_decor_2","bo_khazad_dwarf_wall_decor_2",[]),
+( "khazad_dwarf_bench_2",0,"khazad_dwarf_bench_2","bo_khazad_dwarf_bench_2",[]),
 
 #InVain props end
 
 ("mordor_clouds_2",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_2","0",[]),
 ("mordor_clouds_3",sokf_moveable|sokf_place_at_origin,"skybox_cloud_overlay_3","0",[]),
+
 
 #("save_compartibility2",0,"0","0", []),
 #("save_compartibility3",0,"0","0", []),
