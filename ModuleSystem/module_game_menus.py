@@ -1013,7 +1013,7 @@ game_menus = [
 	    # TROLL TEST
        (eq, "$g_custom_battle_scenario", 13),
        (assign, "$g_custom_battle_scene", "scn_minas_tirith_center"),
-       (troop_set_slot, "trp_troll_of_moria", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
+       (troop_set_slot, "trp_olog_hai", slot_troop_hp_shield, MORIA_TROLL_HP_SHIELD),
 																   
        (assign, "$g_player_troop", "trp_c5_elite_lancer_of_rohan"),
        (set_player_troop, "$g_player_troop"),

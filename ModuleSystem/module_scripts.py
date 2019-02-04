@@ -7573,6 +7573,7 @@ scripts = [
           (try_begin),
             #(eq, "$players_kingdom", ":giver_faction_no"),
             #(neg|faction_slot_eq, "$players_kingdom", slot_faction_marshall, "trp_player"),
+            (ge, "$tld_war_began", 1), # War started
             (ge, ":player_level", 15),
             #(call_script, "script_cf_faction_get_random_enemy_faction", ":giver_faction_no"),#Can fail
             #(assign, ":quest_target_faction", reg0),
@@ -7841,6 +7842,7 @@ scripts = [
         (else_try),
           (eq, ":quest_no", "qst_rescue_prisoners"),
           (try_begin),
+          	(ge, "$tld_war_began", 1),
             (store_character_level, ":quest_target_amount", "trp_player"),
             (gt, ":quest_target_amount", 7),
             (val_clamp, ":quest_target_amount", 8, 21),
