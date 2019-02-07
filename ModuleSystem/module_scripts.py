@@ -9873,7 +9873,7 @@ scripts = [
          (store_character_level, ":level", ":stack_troop"),         
          (try_begin),
             (troop_is_hero, ":stack_troop"),
-            (val_add, ":num_men", 3),
+            (val_add, ":num_men", 1), #InVain: Was 3, reduced to WB standart
             (val_add, ":level_total", ":level"),
          (else_try),
             (party_stack_get_size, ":stack_size","p_main_party",":i_stack"),
@@ -9900,6 +9900,11 @@ scripts = [
          (store_mul, ":double", ":num_men", 2),
          (gt, ":morale_penalty_for_size", ":double"),
          (assign, ":morale_penalty_for_size", ":double"),
+      (try_end),
+	  
+      (try_begin),
+         (lt, ":num_men", 10), #InVain: Crude patch for the counterintuitive small party malus.
+         (assign, ":morale_penalty_for_size", 0),
       (try_end),
 
       (assign, "$g_player_party_morale_modifier_party_size", ":morale_penalty_for_size"),

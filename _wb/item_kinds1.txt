@@ -896,7 +896,7 @@ itemsfile version 2
  itm_gondor_spear Gondorian_Spear Gondorian_Spear 1  gondor_spear 0  4554756 9254615759470988544 200 156672 2.25 100 0 0 0 0 20480 102 0 153 0 286 532
 0
 
- itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  4433739780 9254615759470988544 600 156672 2.25 100 0 0 0 0 23552 99 0 173 0 293 23
+ itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  138772484 9254615759470988544 600 156672 2.25 100 0 0 0 0 23552 99 0 173 0 293 23
 0
 
  itm_gondor_lance Gondor_Lance Gondor_Lance 1  amroth_lance 0  2286256132 201326848 400 156672 2.25 100 0 0 0 0 0 89 0 204 0 284 0
@@ -1689,13 +1689,13 @@ itemsfile version 2
  itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16777229 0 4000 704643072 20 100 3 40 14 22 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  4570054660 9236601360760176896 900 156672 2.5 100 0 0 0 0 0 101 0 148 0 291 0
+ itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  6651908 9236601360760176896 900 156672 2.5 100 0 0 0 0 0 104 0 148 0 291 0
 0
 
- itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  407207940 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 99 0 150 0 287 532
+ itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 99 0 150 0 287 532
 0
 
- itm_mirkwood_short_spear Mirkwood_Spear Mirkwood_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 96 0 117 0 283 532
+ itm_mirkwood_short_spear Mirkwood_Spear Mirkwood_Spear 1  mirkwood_short_spear 0  4554756 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 97 0 117 0 283 532
 0
 
  itm_mirkwood_knife Mirkwood_White_Knife Mirkwood_White_Knife 2  mirkwood_white_knife 0  scab_mirkwood_white_knife 3458764513820540928  12664834 9223372072313421839 400 286870 0.75 100 0 0 0 0 24576 120 0 51 0 273 24
