@@ -2,30 +2,35 @@ skinkey_chin_size|حجم الذقن
 skinkey_chin_shape|شكل الذقن
 skinkey_chin_forward|الذقن الى الامام
 skinkey_jaw_width|عرض الفك
-skinkey_jaw_position|موقع الفك
+; skinkey_lower_lip|Lower Lip
+; skinkey_upper_lip|Upper Lip
 skinkey_mouth_nose_distance|البعد بين الفك و الانف
 skinkey_mouth_width|عرض الفم
-skinkey_cheeks|الخدين
+; skinkey_nostril_size|Nostril Size
 skinkey_nose_height|طول الانف
 skinkey_nose_width|عرض الانف
 skinkey_nose_size|حجم الانف
 skinkey_nose_shape|شكل الانف
 skinkey_nose_bridge|الفرق للانف
-skinkey_cheek_bones|عظام الخدين
+
 skinkey_eye_width|عرض العينين
 skinkey_eye_to_eye_dist|المسافة بين العينين
 skinkey_eye_shape|شكل العين
 skinkey_eye_depth|عمق العين
 skinkey_eyelids|الجفون
-skinkey_eyebrow_position|مكان الحاجب
+skinkey_cheeks|الخدين
+skinkey_cheek_bones|عظام الخدين
 skinkey_eyebrow_height|ارتفاع الحاجب
-skinkey_eyebrow_depth|عمق الحاجب
+
 skinkey_eyebrow_shape|شكل الحاجب
 skinkey_temple_width|عرض المعبد
 skinkey_face_depth|عمق الوجه
 skinkey_face_ratio|نسبة الوجه
 skinkey_face_width|عرض الوجه
 skinkey_post_edit|ما بعد التحرير
+skinkey_jaw_position|موقع الفك
+skinkey_eyebrow_position|مكان الحاجب
+skinkey_eyebrow_depth|عمق الحاجب
 skinkey_snout_height|ارتفاع الخطم
 skinkey_snout_width|عرض الخطم
 skinkey_snout_size|حجم الخطم

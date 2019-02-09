@@ -51,7 +51,7 @@ trp_woodmen_skilled_forester_pl|山 林 人 熟 練 森 林 行 者
 trp_woodmen_axemen|山 林 人 斧 兵
 trp_woodmen_axemen_pl|山 林 人 斧 兵
 trp_woodmen_master_axemen|幽 暗 密 林 暗 夜 衛 兵
-trp_woodmen_master_axemen_pl|幽 暗 密 林 暗 夜 衛 隊
+trp_woodmen_master_axemen_pl|幽 暗 密 林 暗 夜 衛 兵
 trp_woodmen_tracker|山 林 人 追 蹤 者 
 trp_woodmen_tracker_pl|山 林 人 追 蹤 者 
 trp_woodmen_scout|山 林 人 斥 候 
@@ -142,42 +142,42 @@ trp_rhun_heavy_noble_cavalry|盧 恩 貴 族 重 騎 兵
 trp_rhun_heavy_noble_cavalry_pl|盧 恩 貴 族 重 騎 兵
 trp_dorwinion_noble_of_rhun|盧 恩 多 溫 尼 安 貴 族 
 trp_dorwinion_noble_of_rhun_pl|盧 恩 多 溫 尼 安 貴 族 
-trp_dwarven_apprentice|矮 人 學 徒 
-trp_dwarven_apprentice_pl|矮 人 學 徒 
-trp_dwarven_warrior|矮 人 戰 士 
-trp_dwarven_warrior_pl|矮 人 戰 士
-trp_dwarven_hardened_warrior|矮 人 強 壯 戰 士 
-trp_dwarven_hardened_warrior_pl|矮 人 強 壯 戰 士
-trp_dwarven_spearman|長 槍 矮 人 
-trp_dwarven_spearman_pl|長 槍 矮 人 
-trp_dwarven_pikeman|長 矛 矮 人 
-trp_dwarven_pikeman_pl|長 矛 矮 人
-trp_dwarven_halberdier|巨 矛 矮 人 
-trp_dwarven_halberdier_pl|巨 矛 矮 人
-trp_dwarven_axeman|矮 人 斧 手
-trp_dwarven_axeman_pl|矮 人 斧 手
-trp_dwarven_expert_axeman|矮 人 專 業 斧 手 
-trp_dwarven_expert_axeman_pl|矮 人 專 業 斧 手 
-trp_longbeard_axeman|矮 人 長 鬚 斧 手 
-trp_longbeard_axeman_pl|矮 人 長 鬚 斧 手 
-trp_dwarven_lookout|矮 人 哨 兵 
-trp_dwarven_lookout_pl|矮 人 哨 兵
-trp_dwarven_scout|矮 人 斥 侯 
-trp_dwarven_scout_pl|矮 人 斥 侯 
-trp_dwarven_bowman|矮 人 弓 手 
-trp_dwarven_bowman_pl|矮 人 弓 手
-trp_dwarven_longaxeman|長 斧 矮 人
-trp_dwarven_longaxeman_pl|長 斧 矮 人
-trp_iron_hills_warrior|鐵 丘 陵 戰 士
-trp_iron_hills_warrior_pl|鐵 丘 陵 戰 士
-trp_iron_hills_miner|鐵 丘 陵 礦 工 
-trp_iron_hills_miner_pl|鐵 丘 陵 礦 工 
-trp_iron_hills_infantry|鐵 丘 陵 步 兵 
-trp_iron_hills_infantry_pl|鐵 丘 陵 步 兵
-trp_iron_hills_battle_infantry|鐵 丘 陵 戰 鬥 矮 人 
-trp_iron_hills_battle_infantry_pl|鐵 丘 陵 戰 鬥 矮 人 
-trp_grors_guard|葛 爾 侍 衛 
-trp_grors_guard_pl|葛 爾 衛 隊
+trp_i1_dwarven_apprentice|矮 人 學 徒 
+trp_i1_dwarven_apprentice_pl|矮 人 學 徒 
+trp_i2_dwarven_warrior|矮 人 戰 士 
+trp_i2_dwarven_warrior_pl|矮 人 戰 士
+trp_i3_dwarven_hardened_warrior|強 壯 矮 人 戰 士 
+trp_i3_dwarven_hardened_warrior_pl|強 壯 矮 人 戰 士
+trp_i4_dwarven_spearman|長 槍 矮 人 
+trp_i4_dwarven_spearman_pl|長 槍 矮 人 
+trp_i5_dwarven_pikeman|長 矛 矮 人 
+trp_i5_dwarven_pikeman_pl|長 矛 矮 人
+trp_i6_dwarven_longpikeman|巨 矛 矮 人 
+trp_i6_dwarven_longpikeman_pl|巨 矛 矮 人
+trp_i4_dwarven_axeman|矮 人 斧 手
+trp_i4_dwarven_axeman_pl|矮 人 斧 手
+trp_i5_dwarven_expert_axeman|矮 人 專 業 斧 手 
+trp_i5_dwarven_expert_axeman_pl|矮 人 專 業 斧 手 
+trp_i6_longbeard_axeman|矮 人 長 鬚 斧 手 
+trp_i6_longbeard_axeman_pl|矮 人 長 鬚 斧 手 
+trp_a2_dwarven_lookout|矮 人 哨 兵 
+trp_a2_dwarven_lookout_pl|矮 人 哨 兵
+trp_a3_dwarven_scout|矮 人 斥 侯 
+trp_a3_dwarven_scout_pl|矮 人 斥 侯 
+trp_a4_dwarven_bowman|矮 人 弓 手 
+trp_a4_dwarven_bowman_pl|矮 人 弓 手
+trp_i6_dwarven_longaxeman|長 斧 矮 人
+trp_i6_dwarven_longaxeman_pl|長 斧 矮 人
+trp_i3_iron_hills_warrior|鐵 丘 陵 戰 士
+trp_i3_iron_hills_warrior_pl|鐵 丘 陵 戰 士
+trp_i2_iron_hills_miner|鐵 丘 陵 礦 工 
+trp_i2_iron_hills_miner_pl|鐵 丘 陵 礦 工 
+trp_i4_iron_hills_infantry|鐵 丘 陵 步 兵
+trp_i4_iron_hills_infantry_pl|鐵 丘 陵 步 兵
+trp_i5_iron_hills_battle_infantry|鐵 丘 陵 戰 鬥 矮 人 
+trp_i5_iron_hills_battle_infantry_pl|鐵 丘 陵 戰 鬥 矮 人 
+trp_i6_grors_guard|葛 爾 侍 衛 
+trp_i6_grors_guard_pl|葛 爾 侍 衛 
 trp_gondor_commoner|剛 鐸 徵 召 兵 
 trp_gondor_commoner_pl|剛 鐸 徵 召 兵
 trp_gondor_militiamen|剛 鐸 哨 兵 
@@ -189,7 +189,7 @@ trp_gondor_spearmen_pl|剛 鐸 長 槍 兵
 trp_gondor_veteran_spearmen|剛 鐸 熟 練 長 槍 兵 
 trp_gondor_veteran_spearmen_pl|剛 鐸 熟 練 長 槍 兵
 trp_guard_of_the_fountain_court|湧 泉 衛 兵 
-trp_guard_of_the_fountain_court_pl|湧 泉 衛 隊 
+trp_guard_of_the_fountain_court_pl|湧 泉 衛 兵
 trp_gondor_swordsmen|剛 鐸 劍 士 
 trp_gondor_swordsmen_pl|剛 鐸 劍 士
 trp_gondor_veteran_swordsmen|剛 鐸 熟 練 劍 士 
@@ -217,7 +217,7 @@ trp_veteran_archer_of_gondor_pl|剛 鐸 熟 練 弓 兵
 trp_archer_of_the_tower_guard|塔 衛 弓 兵 
 trp_archer_of_the_tower_guard_pl|塔 衛 弓 兵
 trp_steward_guard|攝 政 王 侍 衛
-trp_steward_guard_pl|攝 政 王 衛 隊
+trp_steward_guard_pl|攝 政 王 侍 衛
 trp_ranger_of_ithilien|伊 錫 利 恩 遊 俠 
 trp_ranger_of_ithilien_pl|伊 錫 利 恩 遊 俠 
 trp_veteran_ranger_of_ithilien|伊 錫 利 恩 熟 練 遊 俠 
@@ -353,7 +353,7 @@ trp_greenwood_sentinel_pl|巨 綠 森 哨 兵
 trp_greenwood_vet_sentinel|巨 綠 森 熟 練 哨 兵 
 trp_greenwood_vet_sentinel_pl|巨 綠 森 熟 練 哨 兵 
 trp_mirkwood_guardsman|巨 綠 森 衛 兵
-trp_mirkwood_guardsman_pl|巨 綠 森 衛 隊
+trp_mirkwood_guardsman_pl|巨 綠 森 衛 兵
 trp_greenwood_spearman|巨 綠 森 步 兵 
 trp_greenwood_spearman_pl|巨 綠 森 步 兵 
 trp_greenwood_veteran_spearman|巨 綠 森 熟 練 步 兵 
@@ -412,58 +412,58 @@ trp_dunedain_veteran_ranger|登 丹 熟 練 遊 俠
 trp_dunedain_veteran_ranger_pl|登 丹 熟 練 遊 俠 
 trp_dunedain_master_ranger|登 丹 遊 俠 大 師 
 trp_dunedain_master_ranger_pl|登 丹 遊 俠 大 師 
-trp_rohan_youth|洛 汗 青 年 
-trp_rohan_youth_pl|洛 汗 青 年 
-trp_guardsman_of_rohan|洛 汗 衛 兵
-trp_guardsman_of_rohan_pl|洛 汗 衛 隊
-trp_footman_of_rohan|洛 汗 步 兵 
-trp_footman_of_rohan_pl|洛 汗 步 兵 
-trp_veteran_footman_of_rohan|洛 汗 熟 練 步 兵 
-trp_veteran_footman_of_rohan_pl|洛 汗 熟 練 步 兵 
-trp_elite_footman_of_rohan|洛 汗 精 英 步 兵 
-trp_elite_footman_of_rohan_pl|洛 汗 精 英 步 兵 
-trp_folcwine_guard_of_rohan|洛 汗 佛 卡 溫 衛 兵
-trp_folcwine_guard_of_rohan_pl|洛 汗 佛 卡 溫 衛 隊
-trp_raider_of_rohan|佛 瑞 拉 夫 掠 奪 者 
-trp_raider_of_rohan_pl|佛 瑞 拉 夫 掠 奪 者 
-trp_heavy_swordsman_of_rohan|洛 汗 重 劍 士 
-trp_heavy_swordsman_of_rohan_pl|洛 汗 重 劍 士 
-trp_warden_of_methuseld|美 杜 賽 爾 德 守 望 者
-trp_warden_of_methuseld_pl|美 杜 賽 爾 德 守 望 者
-trp_skirmisher_of_rohan|洛 汗 散 兵
-trp_skirmisher_of_rohan_pl|洛 汗 散 兵
-trp_veteran_skirmisher_of_rohan|洛 汗 熟 練 散 兵
-trp_veteran_skirmisher_of_rohan_pl|洛 汗 熟 練 散 兵
-trp_elite_skirmisher_of_rohan|洛 汗 精 英 散 兵
-trp_elite_skirmisher_of_rohan_pl|洛 汗 精 英 散 兵
-trp_thengel_guard_of_rohan|洛 汗 塞 哲 爾 衛 兵
-trp_thengel_guard_of_rohan_pl|洛 汗 塞 哲 爾 衛 隊
-trp_lancer_of_rohan|洛 汗 槍 騎 兵 
-trp_lancer_of_rohan_pl|洛 汗 槍 騎 兵 
-trp_elite_lancer_of_rohan|洛 汗 精 英 槍 騎 兵 
-trp_elite_lancer_of_rohan_pl|洛 汗 精 英 槍 騎 兵 
-trp_brego_guard_of_rohan|洛 汗 布 理 哥 衛 兵
-trp_brego_guard_of_rohan_pl|洛 汗 布 理 哥 衛 隊
-trp_king_s_man_of_rohan|國 王 侍 衛
-trp_king_s_man_of_rohan_pl|國 王 衛 隊
-trp_squire_of_rohan|洛 汗 侍 從 
-trp_squire_of_rohan_pl|洛 汗 侍 從 
-trp_rider_of_rohan|洛 汗 騎 手
-trp_rider_of_rohan_pl|洛 汗 騎 手
-trp_veteran_rider_of_rohan|洛 汗 熟 練 騎 手
-trp_veteran_rider_of_rohan_pl|洛 汗 熟 練 騎 手
-trp_elite_rider_of_rohan|洛 汗 精 英 騎 手 
-trp_elite_rider_of_rohan_pl|洛 汗 精 英 騎 手
-trp_eorl_guard_of_rohan|洛 汗 伊 歐 衛 兵
-trp_eorl_guard_of_rohan_pl|洛 汗 伊 歐 衛 隊 
-trp_dismounted_skirmisher_of_rohan|洛 汗 散 兵
-trp_dismounted_skirmisher_of_rohan_pl|洛 汗 散 兵
+trp_i1_rohan_youth|洛 汗 青 年 
+trp_i1_rohan_youth_pl|洛 汗 青 年 
+trp_i2_guardsman_of_rohan|洛 汗 衛 兵
+trp_i2_guardsman_of_rohan_pl|洛 汗 衛 兵
+trp_i3_footman_of_rohan|洛 汗 步 兵 
+trp_i3_footman_of_rohan_pl|洛 汗 步 兵 
+trp_i4_veteran_footman_of_rohan|洛 汗 熟 練 步 兵 
+trp_i4_veteran_footman_of_rohan_pl|洛 汗 熟 練 步 兵 
+trp_i5_elite_footman_of_rohan|洛 汗 精 英 步 兵 
+trp_i5_elite_footman_of_rohan_pl|洛 汗 精 英 步 兵 
+trp_i6_footman_guard_of_rohan|洛 汗 佛 卡 溫 衛 兵
+trp_i6_footman_guard_of_rohan_pl|洛 汗 佛 卡 溫 衛 兵
+trp_i6_frealaf_raider|佛 瑞 拉 夫 掠 奪 者 
+trp_i6_frealaf_raider_pl|佛 瑞 拉 夫 掠 奪 者 
+trp_i5_raider_of_rohan|洛 汗 掠 奪 者
+trp_i5_raider_of_rohan_pl|洛 汗 掠 奪 者
+trp_i6_warden_of_methuseld|美 杜 賽 爾 德 守 望 者
+trp_i6_warden_of_methuseld_pl|美 杜 賽 爾 德 守 望 者
+trp_ac3_skirmisher_of_rohan|洛 汗 散 兵
+trp_ac3_skirmisher_of_rohan_pl|洛 汗 散 兵
+trp_ac4_veteran_skirmisher_of_rohan|洛 汗 熟 練 散 兵
+trp_ac4_veteran_skirmisher_of_rohan_pl|洛 汗 熟 練 散 兵
+trp_ac5_elite_skirmisher_of_rohan|洛 汗 精 英 散 兵
+trp_ac5_elite_skirmisher_of_rohan_pl|洛 汗 精 英 散 兵
+trp_ac6_skirmisher_guard_of_rohan|洛 汗 塞 哲 爾 衛 兵
+trp_ac6_skirmisher_guard_of_rohan_pl|洛 汗 塞 哲 爾 衛 兵
+trp_c4_lancer_of_rohan|洛 汗 槍 騎 兵 
+trp_c4_lancer_of_rohan_pl|洛 汗 槍 騎 兵 
+trp_c5_elite_lancer_of_rohan|洛 汗 精 英 槍 騎 兵 
+trp_c5_elite_lancer_of_rohan_pl|洛 汗 精 英 槍 騎 兵 
+trp_c6_lancer_guard_of_rohan|洛 汗 布 理 哥 衛 兵
+trp_c6_lancer_guard_of_rohan_pl|洛 汗 布 理 哥 衛 兵
+trp_c6_king_s_man_of_rohan|國 王 侍 衛
+trp_c6_king_s_man_of_rohan_pl|國 王 侍 衛
+trp_c2_squire_of_rohan|洛 汗 侍 從 
+trp_c2_squire_of_rohan_pl|洛 汗 侍 從 
+trp_c3_rider_of_rohan|洛 汗 騎 手
+trp_c3_rider_of_rohan_pl|洛 汗 騎 手
+trp_c4_veteran_rider_of_rohan|洛 汗 熟 練 騎 手
+trp_c4_veteran_rider_of_rohan_pl|洛 汗 熟 練 騎 手
+trp_c5_elite_rider_of_rohan|洛 汗 精 英 騎 手 
+trp_c5_elite_rider_of_rohan_pl|洛 汗 精 英 騎 手
+trp_c6_rider_guard_of_rohan|洛 汗 伊 歐 衛 兵
+trp_c6_rider_guard_of_rohan_pl|洛 汗 伊 歐 衛 兵
+trp_i6_2h_guard_of_rohan|洛 汗 盔 衛 兵
+trp_i6_2h_guard_of_rohan_pl|洛 汗 盔 衛 兵
 trp_dismounted_veteran_skirmisher_of_rohan|洛 汗 熟 練 散 兵
 trp_dismounted_veteran_skirmisher_of_rohan_pl|洛 汗 熟 練 散 兵
 trp_dismounted_elite_skirmisher_of_rohan|洛 汗 精 英 散 兵
 trp_dismounted_elite_skirmisher_of_rohan_pl|洛 汗 精 英 散 兵
 trp_dismounted_thengel_guard_of_rohan|洛 汗 塞 哲 爾 衛 兵
-trp_dismounted_thengel_guard_of_rohan_pl|洛 汗 塞 哲 爾 衛 隊 
+trp_dismounted_thengel_guard_of_rohan_pl|洛 汗 塞 哲 爾 衛 兵
 trp_harad_desert_warrior|哈 拉 德 徵 召 兵 
 trp_harad_desert_warrior_pl|哈 拉 德 徵 召 兵 
 trp_harad_infantry|哈 拉 德 輕 步 兵 
@@ -471,17 +471,17 @@ trp_harad_infantry_pl|哈 拉 德 輕 步 兵
 trp_harad_veteran_infantry|哈 拉 德 長 槍 兵 
 trp_harad_veteran_infantry_pl|哈 拉 德 長 槍 兵 
 trp_harad_tiger_guard|虎 衛 兵
-trp_harad_tiger_guard_pl|虎 衛 隊
+trp_harad_tiger_guard_pl|虎 衛 兵
 trp_harad_swordsman|哈 拉 德 劍 士 
 trp_harad_swordsman_pl|哈 拉 德 劍 士 
 trp_harad_lion_guard|獅 衛 兵
-trp_harad_lion_guard_pl|獅 衛 隊
+trp_harad_lion_guard_pl|獅 衛 兵
 trp_harad_skirmisher|哈 拉 德 獵 人
 trp_harad_skirmisher_pl|哈 拉 德 獵 人
 trp_harad_archer|哈 拉 德 弓 兵
 trp_harad_archer_pl|哈 拉 德 弓 兵
 trp_harad_eagle_guard|鷹 衛 兵
-trp_harad_eagle_guard_pl|鷹 衛 隊
+trp_harad_eagle_guard_pl|鷹 衛 兵
 trp_harondor_scout|哈 隆 鐸 斥 候 
 trp_harondor_scout_pl|哈 隆 鐸 斥 候 
 trp_harondor_rider|哈 隆 鐸 騎 手
@@ -501,7 +501,7 @@ trp_far_harad_tribesman_pl|遠 哈 拉 德 部 落 民
 trp_far_harad_champion|遠 哈 拉 德 冠 軍
 trp_far_harad_champion_pl|遠 哈 拉 德 冠 軍 
 trp_far_harad_panther_guard|豹 衛 兵
-trp_far_harad_panther_guard_pl|豹 衛 隊
+trp_far_harad_panther_guard_pl|豹 衛 兵
 trp_dunnish_wildman|登 蘭 德 野 人 
 trp_dunnish_wildman_pl|登 蘭 德 野 人 
 trp_dunnish_warrior|登 蘭 德 戰 士 
@@ -517,7 +517,7 @@ trp_dunnish_vet_warrior_pl|登 蘭 德 熟 練 戰 士
 trp_dunnish_wolf_warrior|登 蘭 德 狼 戰 士 
 trp_dunnish_wolf_warrior_pl|登 蘭 德 狼 戰 士 
 trp_dunnish_wolf_guard|登 蘭 德 狼 衛 兵
-trp_dunnish_wolf_guard_pl|登 蘭 德 狼 衛 隊
+trp_dunnish_wolf_guard_pl|登 蘭 德 狼 衛 兵
 trp_dunnish_chieftan|登 蘭 德 渡 鴉 騎 手 
 trp_dunnish_chieftan_pl|登 蘭 德 渡 鴉  騎 手
 trp_easterling_youth|維 瑞 亞 奴 隸 
@@ -556,40 +556,40 @@ trp_easterling_veteran_skirmisher|維 瑞 亞 熟 練 散 兵
 trp_easterling_veteran_skirmisher_pl|維 瑞 亞 熟 練 散 兵
 trp_easterling_elite_skirmisher|維 瑞 亞 重 裝 散 兵
 trp_easterling_elite_skirmisher_pl|維 瑞 亞 重 裝 散 兵
-trp_corsair_youth|昂 巴 水 手 
-trp_corsair_youth_pl|昂 巴 水 手 
-trp_corsair_warrior|昂 巴 戰 士 
-trp_corsair_warrior_pl|昂 巴 戰 士 
-trp_corsair_pikeman|昂 巴 長 矛 兵 
-trp_corsair_pikeman_pl|昂 巴 長 矛 兵 
-trp_corsair_veteran_raider|海 盜 熟 練 掠 奪 者 
-trp_corsair_veteran_raider_pl|海 盜 熟 練 掠 奪 者 
-trp_corsair_night_raider|海 盜 夜 行 掠 奪 者 
-trp_corsair_night_raider_pl|海 盜 夜 行 掠 奪 者 
-trp_militia_of_umbar|昂 巴 海 兵
-trp_militia_of_umbar_pl|昂 巴 海 兵
-trp_marksman_of_umbar|昂 巴 狙 擊 手
-trp_marksman_of_umbar_pl|昂 巴 狙 擊 手
-trp_veteran_marksman_of_umbar|昂 巴 老 練 狙 擊 手
-trp_veteran_marksman_of_umbar_pl|昂 巴 老 練 狙 擊 手
-trp_master_marksman_of_umbar|海 盜 狙 擊 大 師
-trp_master_marksman_of_umbar_pl|海 盜 狙 擊 大 師
-trp_corsair_marauder|昂 巴 劍 士 
-trp_corsair_marauder_pl|昂 巴 劍 士 
-trp_corsair_veteran_marauder|昂 巴 熟 練 劍 士 
-trp_corsair_veteran_marauder_pl|昂 巴 熟 練 劍 士 
-trp_corsair_elite_marauder|海 盜 劍 士 大 師 
-trp_corsair_elite_marauder_pl|海 盜 劍 士 大 師 
-trp_assassin_of_umbar|昂 巴 刺 客 
-trp_assassin_of_umbar_pl|昂 巴 刺 客 
-trp_master_assassin_of_umbar|海 盜 刺 客 
-trp_master_assassin_of_umbar_pl|海 盜 刺 客 
-trp_pikeman_of_umbar|昂 巴 長 矛 兵 
-trp_pikeman_of_umbar_pl|昂 巴 長 矛 兵 
-trp_veteran_pikeman_of_umbar|昂 巴 熟 練 長 矛 兵 
-trp_veteran_pikeman_of_umbar_pl|昂 巴 熟 練 長 矛 兵 
-trp_pike_master_of_umbar|海 盜 長 矛 大 師 
-trp_pike_master_of_umbar_pl|海 盜 長 矛 大 師 
+trp_i1_corsair_youth|昂 巴 水 手 
+trp_i1_corsair_youth_pl|昂 巴 水 手 
+trp_i2_corsair_warrior|昂 巴 戰 士 
+trp_i2_corsair_warrior_pl|昂 巴 戰 士 
+trp_i3_corsair_spearman|昂 巴 長 槍 兵
+trp_i3_corsair_spearman_pl|昂 巴 長 槍 兵
+trp_i4_corsair_raider|海 盜 掠 奪 者
+trp_i4_corsair_raider_pl|海 盜 掠 奪 者
+trp_i5_corsair_night_raider|海 盜 夜 襲 者 
+trp_i5_corsair_night_raider_pl|海 盜 夜 襲 者 
+trp_a2_corsair_marine|昂 巴 海 兵
+trp_a2_corsair_marine_pl|昂 巴 海 兵
+trp_a3_corsair_marksman|昂 巴 狙 擊 手
+trp_a3_corsair_marksman_pl|昂 巴 狙 擊 手
+trp_a4_corsair_veteran_marksman|昂 巴 老 練 狙 擊 手
+trp_a4_corsair_veteran_marksman_pl|昂 巴 老 練 狙 擊 手
+trp_a5_corsair_master_marksman|海 盜 狙 擊 大 師
+trp_a5_corsair_master_marksman_pl|海 盜 狙 擊 大 師
+trp_i3_corsair_swordsman|昂 巴 劍 士 
+trp_i3_corsair_swordsman_pl|昂 巴 劍 士 
+trp_i4_corsair_veteran_swordsman|昂 巴 熟 練 劍 士 
+trp_i4_corsair_veteran_swordsman_pl|昂 巴 熟 練 劍 士 
+trp_i5_corsair_master_swordsman|海 盜 劍 士 大 師 
+trp_i5_corsair_master_swordsman_pl|海 盜 劍 士 大 師 
+trp_a4_corsair_assassin|海 盜 刺 客 
+trp_a4_corsair_assassin_pl|海 盜 刺 客 
+trp_a5_corsair_master_assassin|海 盜 刺 客 
+trp_a5_corsair_master_assassin_pl|海 盜 刺 客 
+trp_i4_corsair_veteran_spearman|老 練 昂 巴 長 槍 兵
+trp_i4_corsair_veteran_spearman_pl|老 練 昂 巴 長 槍 兵
+trp_i5_corsair_master_spearman|昂 巴 長 槍 大 師
+trp_i5_corsair_master_spearman_pl|昂 巴 長 槍 大 師
+trp_i5_corsair_master_pikeman|昂 巴 長 矛 大 師
+trp_i5_corsair_master_pikeman_pl|昂 巴 長 矛 大 師
 trp_orc_snaga_of_isengard|艾 辛 格 半 獸 人 新 兵
 trp_orc_snaga_of_isengard_pl|艾 辛 格 半 獸 人 新 兵
 trp_orc_of_isengard|艾 辛 格 半 獸 人 
@@ -676,8 +676,8 @@ trp_ent|樹 人
 trp_ent_pl|樹 人 
 trp_orc_snaga_of_guldur|多 爾 哥 多 半 獸 人 新 兵 
 trp_orc_snaga_of_guldur_pl|多 爾 哥 多 半 獸 人 新 兵 
-trp_orc_of_guldur|多 爾 哥 多 半 獸 人 
-trp_orc_of_guldur_pl|多 爾 哥 多 半 獸 人 
+trp_orc_of_guldur|多 爾 哥 多 半 獸 人 追 蹤 者
+trp_orc_of_guldur_pl|多 爾 哥 多 半 獸 人 追 蹤 者
 trp_orc_snaga_of_mordor|魔 多 半 獸 人 新 兵 
 trp_orc_snaga_of_mordor_pl|魔 多 半 獸 人 新 兵 
 trp_orc_of_mordor|魔 多 半 獸 人 
@@ -694,64 +694,64 @@ trp_morgul_orc|魔 窟 半 獸 人
 trp_morgul_orc_pl|魔 窟 半 獸 人 
 trp_fell_morgul_orc|魔 窟 殘 暴 半 獸 人 
 trp_fell_morgul_orc_pl|魔 窟 殘 暴 半 獸 人 
-trp_orc_tracker_of_mordor|魔 多 半 獸 人 追 蹤 者 
-trp_orc_tracker_of_mordor_pl|魔 多 半 獸 人 追 蹤 者 
-trp_fell_orc_tracker_of_mordor|魔 多 殘 暴 半 獸 人 追 蹤 者 
-trp_fell_orc_tracker_of_mordor_pl|魔 多 殘 暴 半 獸 人 追 蹤 者 
+trp_orc_tracker_of_mordor|多 爾 哥 多 大 型 半 獸 人 追 蹤 者
+trp_orc_tracker_of_mordor_pl|多 爾 哥 多 大 型 半 獸 人 追 蹤 者
+trp_fell_orc_tracker_of_mordor|多 爾 哥 多 殘 暴 半 獸 人 追 蹤 者
+trp_fell_orc_tracker_of_mordor_pl|多 爾 哥 多 殘 暴 半 獸 人 追 蹤 者
 trp_orc_archer_of_mordor|魔 多 半 獸 人 弓 兵
 trp_orc_archer_of_mordor_pl|魔 多 半 獸 人 弓 兵
 trp_large_orc_archer_of_mordor|魔 多 大 型 半 獸 人 弓 兵
 trp_large_orc_archer_of_mordor_pl|魔 多 大 型 半 獸 人 弓 兵
 trp_fell_orc_archer_of_mordor|魔 多 殘 暴 半 獸 人 弓 兵
 trp_fell_orc_archer_of_mordor_pl|魔 多 殘 暴 半 獸 人 弓 兵
-trp_wolf_rider_of_moria|摩 瑞 亞 狼 騎 手
-trp_wolf_rider_of_moria_pl|摩 瑞 亞 狼 騎 手 
-trp_warg_rider_of_moria|摩 瑞 亞 座 狼 騎 手 
-trp_warg_rider_of_moria_pl|摩 瑞 亞 座 狼 騎 手 
-trp_bolg_clan_rider|博 爾 格 氏 族 騎 手 
-trp_bolg_clan_rider_pl|博 爾 格 氏 族 騎 手 
-trp_snaga_of_moria|摩 瑞 亞 新 兵 
-trp_snaga_of_moria_pl|摩 瑞 亞 新 兵 
-trp_goblin_of_moria|摩 瑞 亞 哥 布 林 
-trp_goblin_of_moria_pl|摩 瑞 亞 哥 布 林 
-trp_large_goblin_of_moria|摩 瑞 亞 大 型 哥 布 林 
-trp_large_goblin_of_moria_pl|摩 瑞 亞 大 型 哥 布 林 
-trp_fell_goblin_of_moria|摩 瑞 亞 殘 暴 哥 布 林 
-trp_fell_goblin_of_moria_pl|摩 瑞 亞 殘 暴 哥 布 林 
-trp_archer_snaga_of_moria|摩 瑞 亞 哥 布 林 弓 兵
-trp_archer_snaga_of_moria_pl|摩 瑞 亞 哥 布 林 弓 兵
-trp_large_goblin_archer_of_moria|摩 瑞 亞 大 型 哥 布 林 弓 兵
-trp_large_goblin_archer_of_moria_pl|摩 瑞 亞 大 型 哥 布 林 弓 兵
-trp_deep_dweller_of_moria2|摩 瑞 亞 深 淵 民
-trp_deep_dweller_of_moria2_pl|摩 瑞 亞 深 淵 民
-trp_goblin_gundabad|剛 達 巴 哥 布 林 
-trp_goblin_gundabad_pl|剛 達 巴 哥 布 林 
-trp_orc_gundabad|剛 達 巴 半 獸 人 
-trp_orc_gundabad_pl|剛 達 巴 半 獸 人 
-trp_orc_fighter_gundabad|剛 達 巴 半 獸 人 鬥 士 
-trp_orc_fighter_gundabad_pl|剛 達 巴 半 獸 人 鬥 士 
-trp_fell_orc_warrior_gundabad|剛 達 巴 半 獸 人 戰 士
-trp_fell_orc_warrior_gundabad_pl|剛 達 巴 半 獸 人 戰 士
-trp_orc_beserker_gundabad|剛 達 巴 半 獸 人 狂 戰 士
-trp_orc_beserker_gundabad_pl|剛 達 巴 半 獸 人 狂 戰 士
-trp_warg_skirmisher_gundabad|剛 達 巴 散 兵
-trp_warg_skirmisher_gundabad_pl|剛 達 巴 散 兵
-trp_goblin_north_clan_skirmisher|哥 布 林 北 方 氏 族 散 兵
-trp_goblin_north_clan_skirmisher_pl|哥 布 林 北 方 氏 族 散 兵
-trp_goblin_rider_gundabad|剛 達 巴 哥 布 林 騎 手
-trp_goblin_rider_gundabad_pl|剛 達 巴 哥 布 林 騎 手 
-trp_warg_rider_gundabad|剛 達 巴 座 狼 騎 手 
-trp_warg_rider_gundabad_pl|剛 達 巴 座 狼 騎 手 
-trp_goblin_north_clan_rider|哥 布 林 北 方 氏 族 騎 手 
-trp_goblin_north_clan_rider_pl|哥 布 林 北 方 氏 族 騎 手
+trp_c3_wolf_rider_of_moria|摩 瑞 亞 狼 騎 手
+trp_c3_wolf_rider_of_moria_pl|摩 瑞 亞 狼 騎 手 
+trp_c4_warg_rider_of_moria|摩 瑞 亞 座 狼 騎 手 
+trp_c4_warg_rider_of_moria_pl|摩 瑞 亞 座 狼 騎 手 
+trp_c5_bolg_clan_rider|博 爾 格 氏 族 騎 手 
+trp_c5_bolg_clan_rider_pl|博 爾 格 氏 族 騎 手 
+trp_i1_snaga_of_moria|摩 瑞 亞 新 兵 
+trp_i1_snaga_of_moria_pl|摩 瑞 亞 新 兵 
+trp_i2_goblin_of_moria|摩 瑞 亞 哥 布 林 
+trp_i2_goblin_of_moria_pl|摩 瑞 亞 哥 布 林 
+trp_i3_large_goblin_of_moria|摩 瑞 亞 大 型 哥 布 林 
+trp_i3_large_goblin_of_moria_pl|摩 瑞 亞 大 型 哥 布 林 
+trp_i4_fell_goblin_of_moria|摩 瑞 亞 殘 暴 哥 布 林 
+trp_i4_fell_goblin_of_moria_pl|摩 瑞 亞 殘 暴 哥 布 林 
+trp_a2_archer_snaga_of_moria|摩 瑞 亞 哥 布 林 弓 兵
+trp_a2_archer_snaga_of_moria_pl|摩 瑞 亞 哥 布 林 弓 兵
+trp_a3_large_goblin_archer_of_moria|摩 瑞 亞 大 型 哥 布 林 弓 兵
+trp_a3_large_goblin_archer_of_moria_pl|摩 瑞 亞 大 型 哥 布 林 弓 兵
+trp_i5_deep_dweller_of_moria2|摩 瑞 亞 深 淵 民
+trp_i5_deep_dweller_of_moria2_pl|摩 瑞 亞 深 淵 民
+trp_i1_goblin_gundabad|剛 達 巴 哥 布 林 
+trp_i1_goblin_gundabad_pl|剛 達 巴 哥 布 林 
+trp_i2_orc_gundabad|剛 達 巴 半 獸 人 
+trp_i2_orc_gundabad_pl|剛 達 巴 半 獸 人 
+trp_i3_orc_fighter_gundabad|剛 達 巴 半 獸 人 鬥 士 
+trp_i3_orc_fighter_gundabad_pl|剛 達 巴 半 獸 人 鬥 士 
+trp_i4_fell_orc_warrior_gundabad|剛 達 巴 半 獸 人 戰 士
+trp_i4_fell_orc_warrior_gundabad_pl|剛 達 巴 半 獸 人 戰 士
+trp_i4_orc_beserker_gundabad|剛 達 巴 半 獸 人 狂 戰 士
+trp_i4_orc_beserker_gundabad_pl|剛 達 巴 半 獸 人 狂 戰 士
+trp_ca4_warg_skirmisher_gundabad|剛 達 巴 散 兵
+trp_ca4_warg_skirmisher_gundabad_pl|剛 達 巴 散 兵
+trp_ca5_goblin_north_clan_skirmisher|哥 布 林 北 方 氏 族 散 兵
+trp_ca5_goblin_north_clan_skirmisher_pl|哥 布 林 北 方 氏 族 散 兵
+trp_c3_goblin_rider_gundabad|剛 達 巴 哥 布 林 騎 手
+trp_c3_goblin_rider_gundabad_pl|剛 達 巴 哥 布 林 騎 手 
+trp_c4_warg_rider_gundabad|剛 達 巴 座 狼 騎 手 
+trp_c4_warg_rider_gundabad_pl|剛 達 巴 座 狼 騎 手 
+trp_c5_goblin_north_clan_rider|哥 布 林 北 方 氏 族 騎 手 
+trp_c5_goblin_north_clan_rider_pl|哥 布 林 北 方 氏 族 騎 手
 trp_mountain_goblin|山 地 哥 布 林 
 trp_mountain_goblin_pl|山 地 哥 布 林 
 trp_tribal_orc|部 落 半 獸 人
 trp_tribal_orc_pl|部 落 半 獸 人 
 trp_tribal_orc_warrior|部 落 半 獸 人 戰 士
 trp_tribal_orc_warrior_pl|部 落 半 獸 人 戰 士
-trp_tribal_orc_chief2|摩 瑞 亞 半 獸 人 頭 目
-trp_tribal_orc_chief2_pl|摩 瑞 亞 半 獸 人 頭 目
+trp_i5_orc_chieftain_of_moria2|摩 瑞 亞 半 獸 人 頭 目
+trp_i5_orc_chieftain_of_moria2_pl|摩 瑞 亞 半 獸 人 頭 目
 trp_black_numenorean_renegade|黑 努 美 諾 爾 叛 徒
 trp_black_numenorean_renegade_pl|黑 努 美 諾 爾 叛 徒
 trp_black_numenorean_warrior|黑 努 美 諾 爾 戰 士 
@@ -1242,7 +1242,7 @@ trp_barman_dale_pl|城 堡
 trp_barman_esgaroth|酒 館 老 闆
 trp_barman_esgaroth_pl|大 殿 
 trp_barman_erebor|酒 館 老 闆
-trp_barman_erebor_pl|領 主 的 房 間
+trp_barman_erebor_pl|索 爾 的 大 房 間
 trp_barman_dolguldur|酒 館 老 闆
 trp_barman_dolguldur_pl|城 堡 
 trp_merchant_mtirith|補 給 官
@@ -1576,9 +1576,9 @@ trp_hungry_orc|飢 餓 的 半 獸 人
 trp_longing_lorien|思 鄉 的 精 靈
 trp_longing_woodelf|思 鄉 的 精 靈
 trp_longing_imladris|思 鄉 的 精 靈
-trp_deep_dweller_of_moria|摩 瑞 亞 深 淵 民
-trp_deep_dweller_of_moria_pl|摩 瑞 亞 深 淵 民
-trp_tribal_orc_chief|摩 瑞 亞 半 獸 人 頭 目
-trp_tribal_orc_chief_pl|摩 瑞 亞 半 獸 人 頭 目
+trp_i5_deep_dweller_of_moria|摩 瑞 亞 深 淵 民
+trp_i5_deep_dweller_of_moria_pl|摩 瑞 亞 深 淵 民
+trp_i5_orc_chieftain_of_moria|摩 瑞 亞 半 獸 人 頭 目
+trp_i5_orc_chieftain_of_moria_pl|摩 瑞 亞 半 獸 人 頭 目
 trp_rhovanion_noble|羅 馬 尼 安 貴 族
 trp_rhovanion_noble_pl|羅 馬 尼 安 貴 族

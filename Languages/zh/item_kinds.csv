@@ -32,7 +32,7 @@ itm_rohirrim_courser|洛汗駿馬
 itm_rohirrim_hunter|洛汗獵馬
 itm_rohirrim_courser2|洛汗駿馬
 itm_rohan_warhorse|洛汗戰馬
-itm_thengel_warhorse|洛汗森格爾守衛戰馬
+; itm_thengel_warhorse|Rohirrim Heavy Warhorse
 itm_rhun_horse_a|盧恩馱馬
 itm_rhun_horse_b|盧恩馱馬
 itm_rhun_horse_d|盧恩馱馬
@@ -41,7 +41,7 @@ itm_rhun_horse_f|盧恩重裝馬
 itm_rhun_horse_g|盧恩重裝馬
 itm_rhun_horse_h|盧恩重裝馬
 ; itm_dale_horse|Rhovanion Horse
-itm_dale_warhorse|河谷鎮戰馬
+; itm_dale_warhorse|Rhovanion Warhorse
 itm_riv_warhorse|瑞文戴爾戰馬
 itm_riv_warhorse2|瑞文戴爾駿馬
 itm_mordor_warhorse|魔多戰馬
@@ -71,22 +71,14 @@ itm_warg_reward|大型座狼
 ; itm_axe_c|Northmen Axe
 ; itm_axe_d|Northmen Axe
 itm_tree_trunk_club_a|樹幹
-itm_tree_trunk_club_b|樹幹
 ; itm_long_bearded_axe|Northmen Bearded Longaxe
 ; itm_2_handed_axe|Northmen Longaxe
-itm_giant_hammer|大錘
+itm_free_giant_hammer|大錘
 itm_giant_mace|巨錘
-itm_giant_mace_b|巨型尖刺錘
-itm_olog_feet_boots|歐羅海腳
-itm_olog_head_helm|歐羅海頭
-itm_olog_head_helm_b|歐羅海頭
-itm_olog_head_helm_c|歐羅海頭
-itm_olog_body|歐羅海甲冑
-itm_olog_body_b|歐羅海甲冑
-itm_olog_hands|歐羅海手
+; itm_troll_shield_a|Troll Shield
 itm_arrows|箭
 itm_gondor_arrows|剛鐸箭
-itm_gondor_auxila_arrows|剛鐸箭
+; itm_orc_javelin|Orc Heavy Javelin
 itm_khergit_arrows|倒刺箭
 itm_rohan_arrows_2|洛汗箭
 itm_harad_arrows|哈拉德箭
@@ -96,30 +88,11 @@ itm_woodelf_arrows|木精靈箭
 itm_elven_arrows|精靈箭
 itm_orc_hook_arrow|半獸人倒刺箭
 itm_isengard_arrow|艾辛格箭
-itm_pilgrim_disguise|朝聖者服
 itm_leather_gloves|皮手套
 itm_mail_mittens|鏈甲手套
 itm_leather_boots|皮靴
-itm_black_dress|黑色長裙
-itm_blackwhite_dress|女士長裙
-itm_white_tunic_a|普通束腰外衣
-itm_white_tunic_b|普通束腰外衣
-itm_white_tunic_c|束腰夾克
-itm_blue_tunic|藍色束腰外衣
+; itm_white_tunic_a|Civilian Outfit
 itm_black_tunic|黑色束腰外衣
-itm_green_tunic|綠色束腰外衣
-itm_red_tunic|紅色束腰外衣
-itm_leather_apron|皮圍裙
-itm_leather_jerkin|皮短袖衣
-itm_fur_coat|河谷鎮大衣
-itm_green_dress|綠色裙子
-itm_tld_tunic|束腰外衣
-itm_gondor_fine_outfit_dress|上等旅裝
-itm_rohan_fine_outfit_dale_dress|上等旅裝
-itm_robe_generic_dress|長袍
-itm_wimple_a|包頭巾
-itm_wimple_with_veil|包頭巾
-itm_fine_hat|上等帽子
 itm_shortened_spear|短柄矛
 itm_spear|矛
 itm_light_lance|輕型騎槍
@@ -137,11 +110,11 @@ itm_dwarf_short_bow|矮人短弓
 itm_harad_bow|哈拉德彎弓
 itm_lg_bow|雄鷹衛隊弓
 itm_riv_bow|瑞文戴爾弓
-itm_glorfi_bow|葛羅芬戴爾弓
+; itm_glorfi_bow|Glorfindel Bow
 itm_lorien_bow|凱蘭崔爾弓
 itm_isengard_large_bow|艾辛格巨弓
 itm_dale_bow|河谷鎮弓
-; itm_uruk_bow_pl|Strong Orc Bow
+; itm_uruk_bow|Strong Orc Bow
 itm_mirkwood_bow|幽暗密林弓
 itm_dunland_javelin|登蘭德標槍
 itm_orc_throwing_arrow|半獸人飛鏢
@@ -174,7 +147,6 @@ itm_arnor_sword_f|亞爾諾短劍
 itm_riv_helm_a|瑞文戴爾兜帽
 itm_riv_helm_b|瑞文戴爾射手盔
 itm_riv_helm_c|瑞文戴爾步兵盔
-itm_riv_helm_glorfi|葛羅芬戴爾頭髮
 itm_riv_tiara|精靈王冠
 itm_riv_shield_a|瑞文戴爾盾
 itm_riv_shield_b|瑞文戴爾盾
@@ -249,7 +221,7 @@ itm_lamedon_vet_warrior|剛鐸拉密頓資深勇士鎧甲
 ; itm_lamedon_hood|Hood
 itm_pinnath_archer|皮那斯傑林射手鎧甲
 itm_pinnath_footman|皮那斯傑林步兵鎧甲
-itm_pinnath_leader|皮那斯傑林首領鎧甲
+; itm_pinnath_leader|Pinnath Gelin Knight Armor
 itm_pinnath_vet_footman|皮那斯傑林資深步兵鎧甲
 itm_pinnath_warrior|皮那斯傑林勇士鎧甲
 itm_pel_footman|佩拉格步兵鎧甲
@@ -276,7 +248,7 @@ itm_gondor_shield_a|剛鐸方盾
 itm_gondor_shield_b|剛鐸箏型盾
 itm_gondor_shield_c|剛鐸塔盾
 itm_gondor_shield_d|剛鐸箏型盾
-itm_gondor_shield_e|剛鐸皇家盾
+; itm_gondor_shield_e|Gondor Citadel Shield
 itm_gon_tab_shield_a|剛鐸圓形紋章盾
 itm_gon_tab_shield_b|剛鐸方型紋章盾
 itm_gon_tab_shield_c|剛鐸箏型紋章盾
@@ -315,7 +287,6 @@ itm_lorien_helm_a|羅斯洛立安射手盔
 itm_lorien_helm_b|羅斯洛立安射手盔
 itm_lorien_helm_c|羅斯洛立安步兵盔
 itm_orc_chain_greaves|半獸人護脛
-
 ; itm_orc_coif|Orc Skullcap
 itm_orc_greaves|半獸人鏈甲靴
 itm_orc_ragwrap|半獸人破圍巾
@@ -357,10 +328,10 @@ itm_isen_uruk_helm_d|強獸人隊長盔
 itm_isen_uruk_helm_e|強獸人追踪者盔
 itm_isen_uruk_helm_f|強獸人追踪者盔
 itm_uruk_pike_a|強獸人長槍
-itm_uruk_pike_b|強獸人長槍
+; itm_uruk_pike_b|Mordor Pike
 itm_uruk_falchion_a|強獸人彎刃大刀
 itm_uruk_falchion_b|強獸人彎刃大刀
-itm_uruk_spear|強獸人矛
+; itm_uruk_spear|Mordor Spear
 itm_uruk_skull_spear|強獸人骷髏矛
 itm_uruk_voulge|強獸人鉤鐮槍
 itm_uruk_heavy_axe|強獸人重斧
@@ -381,9 +352,9 @@ itm_twohand_wood_club|巨大木棒
 itm_bone_cudgel|骨質棒
 itm_skull_club|骷髏棒
 itm_orc_club_a|半獸人棍棒
-itm_orc_club_b|半獸人棍棒
+; itm_orc_club_b|Warg Rider Club
 ; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Spiky Orc Club
+; itm_orc_club_d|Evil Mace
 itm_orc_sledgehammer|半獸人長柄大錘
 itm_orc_simple_spear|半獸人矛
 itm_orc_skull_spear|半獸人骷髏矛
@@ -399,7 +370,7 @@ itm_orc_throwing_axes|半獸人擲斧
 itm_orc_bow|半獸人弓
 itm_orc_shield_a|半獸人盾
 itm_orc_shield_b|半獸人盾
-itm_orc_shield_c|半獸人盾
+; itm_orc_shield_c|Orc Tower Shield
 itm_mordor_orc_shield_a|魔多半獸人盾
 itm_mordor_orc_shield_b|魔多半獸人盾
 itm_mordor_orc_shield_c|魔多半獸人盾
@@ -411,23 +382,13 @@ itm_mordor_uruk_shield_c|魔多強獸人盾
 itm_mordor_man_shield_a|魔多人類同盟用盾
 itm_mordor_man_shield_b|魔多人類同盟用盾
 itm_angmar_shield|安格馬盾
-
 ; itm_orc_nosehelm|Orc Nosehelm
-
 ; itm_orc_kettlehelm|Orc Kettlehelm
-
 itm_orc_buckethelm|半獸人人桶盔
-
 ; itm_orc_morion|Orc Morion
-
 itm_orc_beakhelm|半獸人鳥嘴盔
-
 itm_orc_bughelm|半獸人頭盔
-
 ; itm_orc_visorhelm|Orc Visorhelm
-
-; itm_orc_visorhelm_pl|Orc Visorhelm
-
 itm_m_orc_light_a|魔多半獸人輕甲
 itm_m_orc_light_b|魔多半獸人輕甲
 itm_m_orc_light_c|魔多半獸人輕甲
@@ -439,21 +400,13 @@ itm_m_orc_heavy_c|魔多半獸人重鎧
 itm_m_orc_heavy_d|魔多半獸人重鎧
 itm_m_orc_heavy_e|魔多半獸人重鎧
 itm_m_uruk_light_a|強獸人輕甲
-
 itm_m_uruk_light_b|強獸人皮甲
-
 ; itm_m_uruk_light_c|Uruk Light Mail
-
 ; itm_m_uruk_med_a|Uruk Heavy Leather
-
 ; itm_m_uruk_med_b|Uruk Heavy Mail
-
 ; itm_m_uruk_med_c|Uruk Light Scale
-
 ; itm_m_uruk_heavy_a|Uruk Heavy Scale
-
 ; itm_m_uruk_heavy_b|Uruk Platemail
-
 ; itm_m_uruk_heavy_c|Lugburz Platemail
 itm_m_uruk_heavy_j|強獸人重鎧
 itm_m_uruk_heavy_k|強獸人護衛甲
@@ -507,7 +460,7 @@ itm_dun_helm_b|丹尼斯鹿角帽
 itm_dun_helm_c|丹尼斯巨盔
 itm_dun_helm_d|丹尼斯巨盔
 
-; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
+; itm_dun_helm_e|Dunnish Antler Helm
 itm_dun_shield_a|丹尼斯盾
 itm_dun_shield_b|丹尼斯盾
 itm_dun_berserker|登蘭德酋長劍
@@ -520,20 +473,24 @@ itm_rohan_armor_a|洛汗上衣
 itm_rohan_armor_e|洛汗鎖子甲
 ; itm_rohan_armor_h|Rohan Leather Armor
 itm_rohan_armor_k|洛汗鎖子甲
-itm_rohan_armor_n|洛汗鱗甲
-itm_rohan_armor_p|洛汗鎧甲
-; itm_rohan_armor_s|Rohan Guard Armor
+; itm_rohan_recruit|Rohan Padded Jerkin
+; itm_rohan_leather|Rohan Leather Vest
+itm_rohan_mail|洛汗鎖子甲
+; itm_rohan_rider|Rohan Rider Armor
+itm_rohan_scale|洛汗鱗甲
+; itm_rohan_surcoat|Rohan Surcoat
+; itm_rohan_guard|Rohan Guard Armor
 itm_rohan_light_helmet_a|洛汗輕盔
 itm_rohan_light_helmet_b|洛汗輕盔
-itm_rohan_inf_helmet_a|洛汗步兵盔
-itm_rohan_inf_helmet_b|洛汗步兵盔
-itm_rohan_archer_helmet_a|洛汗射手盔
-itm_rohan_archer_helmet_b|洛汗射手盔
-itm_rohan_archer_helmet_c|洛汗騎射手盔
-itm_rohan_cav_helmet_a|洛汗騎兵盔
-itm_rohan_cav_helmet_b|洛汗騎兵盔
-itm_rohan_cav_helmet_c|洛汗騎兵盔
-itm_rohan_captain_helmet|洛汗隊長盔
+; itm_rohan_inf_helmet_a|Rohan Eyeguard Helm
+; itm_rohan_inf_helmet_b|Rohan Eyeguard Helm
+; itm_rohan_archer_helmet_a|Rohan Nasal Helm
+; itm_rohan_archer_helmet_b|Rohan Nasal Helm
+; itm_rohan_archer_helmet_c|Rohan Guard Helm
+; itm_rohan_cav_helmet_a|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_b|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_c|Rohan Cavalry Helm
+; itm_rohan_captain_helmet|Rohan Captain Helm
 itm_rohan_shield_a|洛汗盾
 itm_rohan_shield_b|洛汗盾
 itm_rohan_shield_c|洛汗盾
@@ -555,12 +512,10 @@ itm_rohan_2h_sword|洛汗戰劍
 itm_mirkwood_light_scale|木精靈輕鱗甲
 itm_mirkwood_armor_a|輕皮
 itm_mirkwood_armor_b|輕型鱗甲
-
-; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
+; itm_mirkwood_armor_c|Mirkwood Royal Mail
 itm_mirkwood_armor_d|輕型棉甲
 itm_mirkwood_armor_e|輕型鏈甲加外套
-
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+; itm_mirkwood_armor_f|Mirkwood Leafscale
 itm_mirkwood_great_spear|幽暗密林長矛
 itm_mirkwood_war_spear|幽暗密林戰爭矛
 itm_mirkwood_short_spear|幽暗密林矛
@@ -703,7 +658,6 @@ itm_rhun_greataxe|盧恩大斧
 itm_rhun_battleaxe|盧恩戰爭斧
 ; itm_rhun_falchion|Savage Falchion
 itm_rhun_glaive|盧恩彎刀
-
 ; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
@@ -744,7 +698,7 @@ itm_dale_helmet_c|河谷鎮步兵盔
 
 itm_dale_sword|河谷鎮短劍
 itm_dale_sword_long|河谷鎮長劍
-itm_dale_sword_broad|河谷鎮寬刃劍
+; itm_dale_sword_broad|Dale Infantry Sword
 itm_dale_pike|河谷鎮矛
 itm_dale_billhook|河谷鎮鉤鐮槍
 ; itm_dale_shield_a|Dale Tower Shield
@@ -780,20 +734,28 @@ itm_umb_helm_d|海盜入侵者盔
 ; itm_umb_hood|Black Hood
 
 itm_corsair_boots|海盜靴
-itm_umb_shield_a|海盜圓盾
+
+; itm_umb_shield_a|Corsair Shield
+
 itm_umb_shield_b|海盜圓盾
+
 itm_umb_shield_c|海盜圓盾
+
 itm_umb_shield_d|海盜圓盾
-itm_umb_shield_e|海盜圓盾
+
+; itm_umbar_spear|Umbar Short Spear
+
 itm_umbar_cutlass|昂巴短劍
+
 itm_kraken|鲲短劍
+
 ; itm_umbar_rapier|Umbar Boarding Sword
 
 itm_corsair_harpoon|海盜鱼叉
 itm_corsair_sword|海盜刃
 
 ; itm_corsair_throwing_dagger|Crooked Throwing Daggers
-itm_umbar_pike|昂巴長槍
+; itm_umbar_pike|Corsair Trident
 ; itm_woodman_tunic|Woodmen Tunic
 
 ; itm_woodman_scout|Woodmen Scout Cape
@@ -817,7 +779,7 @@ itm_beorn_battle_axe|波寧戰爭斧
 
 ; itm_dwarf_shield_d|Dwarven Round Shield
 
-itm_north_round_shield|矮人盾
+; itm_north_round_shield|Northmen Round Shield
 
 itm_free_dwarf_shield_g|矮人盾
 
@@ -883,19 +845,18 @@ itm_dwarf_helm_p|矮人國王冠
 
 ; itm_dwarf_helm_round|Dwarf Round Helm
 
-itm_free_dwarf_helm_v|矮人鏈式輕盔
-
 ; itm_dwarf_helm_sallet|Dwarf Sallet
 
-; itm_dwarf_armor_a|Erebor Mail
+; itm_dwarf_armor_d|Iron Hills Coat of Scales
+; itm_dwarf_armor_a|Erebor Surcoat over Mail
 
-itm_leather_dwarf_armor|矮人輕鏈甲
+; itm_leather_dwarf_armor|Dwarven Padded Coat
 
-; itm_dwarf_armor_b|Erebor Scale
+; itm_dwarf_armor_b|Erebor Tunic over Mail
 
-itm_leather_dwarf_armor_b|矮人厚束腰鎧甲
+; itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
 
-itm_dwarf_armor_c|矮人鱗甲罩鎖甲
+; itm_dwarf_armor_c|Erebor Scale Mail
 
 itm_dwarf_vest|矮人束腰外衣
 
@@ -907,6 +868,7 @@ itm_good_mace|狼牙棒
 itm_far_harad_shield_paint|柳條盾
 itm_nazgulrobe|戒靈長袍
 
+; itm_werewolf|Werewolf
 itm_mordor_banner|魔多旗幟
 itm_isengard_banner|艾辛格旗幟
 itm_woodelf_banner|幽暗密林旗幟
@@ -916,13 +878,7 @@ itm_gondor_lance_banner|剛鐸旗槍
 itm_amroth_lance_banner|多爾安姆羅斯旗槍
 itm_rohan_lance_banner_sun|洛汗烈日旗槍
 itm_rohan_lance_banner_horse|洛汗驃騎旗槍
-itm_ent_body|樹人軀幹
-itm_ent_head_helm|樹人頭顱
-itm_ent_head_helm2|樹人頭顱
-itm_ent_head_helm3|樹人頭顱
-itm_ent_feet_boots|樹人腳
-itm_ent_hands|樹人手
-itm_galadriel|凱蘭崔爾套裝
+
 itm_ent_water|一碗奇怪的水
 itm_map|中土地圖
 itm_athelas_reward|阿西拉斯植物
@@ -938,7 +894,8 @@ itm_torque_reward|邪惡項鏈
 itm_orc_brew|半獸人釀造酒
 itm_rohan_saddle|塞哲爾之鞍
 itm_mearas_reward|駿馬麥赫
-itm_sword_of_arathorn|阿拉松之劍
+
+; itm_shield_of_tuor|Shield of Tuor
 itm_riv_armor_reward|瑞文戴爾精致鎧甲
 itm_westernesse1h_reward|西方皇族劍
 itm_westernesse2h_reward|偉大的蛇之劍
@@ -976,7 +933,6 @@ itm_khamul_helm|克哈穆爾頭盔
 itm_gandstaff|指環王棍棒
 itm_sarustaff|指環王棍棒
 itm_rohan_armor_th|洛汗皇家鎧甲
-itm_denethor_robe|攝政王白袍
 itm_prisoner_coll_chain|俘虜鏈
 itm_witchking_helmet|邪惡盔
 itm_lorien_royal_armor|羅斯洛立安皇家鎧甲

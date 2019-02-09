@@ -1,7 +1,7 @@
 ui_at_learning_limit|(a faj tanulási maximumán)
 ui_not_enough_skill_points_to_learn|(nincs elég képességpont)
 ui_not_enough_attributetype_to_learn_this_skill|(nincs elég %s a tulajdonság fejlesztéséhez)
-ui_explanation_agility|Mozgékonyság: Minden pont öt fegyver pontot ad és megnöveli a fegyver sebességét 0,5 %-kal. A következő képességeket nem lehet a Mozgékonyság 1/3-a fölé növelni: Fegyvermester, Pajzshasználat, Atlétika, Lovaglás, Lovasíjászat, Zsákmányszerzés.
+ui_explanation_agility|Mozgékonyság: Minden pont öt fegyverforgatói pontot ad és megnöveli a fegyver sebességét 0,5 %-kal. A következő képességeket nem lehet a Mozgékonyság 1/3-a fölé növelni: Fegyvermester, Pajzshasználat, Atlétika, Lovaglás, Lovasíjászat, Zsákmányszerzés.
 ui_retreated_battle|%s elmenekült.
 ui_riding_skill_not_adequate_to_mount|(Lovaglás képesség túl alacsony)
 ui_camp|Cselekedetek
@@ -46,3 +46,8 @@ ui_value_denars|%d Nyersanyag Pontok.
 ui_cannot_be_used_on_horseback|Nem használhatod amíg megülsz valamit
 ui_upgrade_to_value|Fejlesztés %s
 ui_notification_cant_upgrade|(Nem fejleszthetsz amíg egységeket adsz át)
+ui_lance_control|Kopja irányítás:
+ui_manual_easy|Kézi (Könnyű)
+ui_manual_hard|Kézi (Nehéz)
+ui_campaign_ai|Kampány MI (Használaton kívül)
+ui_crouch|Guggolás (Használaton kívül)

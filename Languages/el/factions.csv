@@ -8,7 +8,7 @@ fac_mordor|Μόρντορ
 fac_isengard|Άισενγκάρντ
 fac_lorien|Λοθλόριεν
 fac_imladris|Ιμλάντρις
-fac_woodelf|Ξωτικά του Μίρκγουντ
+; fac_woodelf|The Woodland Realm
 fac_dale|Ντέιλ
 fac_harad|Χάραντ
 fac_rhun|Ρουν
@@ -17,8 +17,8 @@ fac_umbar|Άμπαρ
 fac_moria|Μόρια
 fac_guldur|Ντολ Γκουντούρ
 fac_gundabad|Βουνό Γκούνταμπαντ
-fac_dunland|Κάτοικοι του Ντούνλεντιν
-fac_beorn|Απόγονοι του Μπέορ
+; fac_dunland|Dunland
+; fac_beorn|The Vale of Anduin
 fac_player_supporters_faction|Φατρία του παίκτη
 fac_player_faction|Φατρία του παίκτη
 fac_brigands|Ληστές

@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|聖 盔 谷 防 禦 戰 , 洛 汗 vs艾 辛 格
 mno_custom_battle_scenario_5|小 規 模 戰 役 ， 北 方 自 由 民 vs 盧 恩 
 mno_custom_battle_scenario_6|攻 城 戰 ， 半 獸 人 vs矮 人 
 mno_custom_battle_scenario_7|伏 擊 戰 ， 半 獸 人 vs幽 暗 密 林 精 靈 
+mno_custom_battle_scenario_8|都 靈 之 子 的 最 後 一 戰
+mno_custom_battle_scenario_88|追 擊 一 隊 半 獸 人 偵 查 隊
 mno_custom_battle_scenario_11|測 試 戰 鬥 (調 整 平 衡 ！ )
 mno_custom_battle_scenario_10|風 景 測 試 戰 鬥 
 mno_troll_battle_scenario|測 試 食 人 妖 戰 鬥 
 mno_warg_battle_scenario|測 試 坐 狼 戰 鬥 
 mno_build_your_own_scene|** 建 造 你 自 己 的 TLD場 景 **
-menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 找 到。 但 遊 戲 玩 法 基 本 上 跟 原 版 一 樣。 
-menu_tutorial|^^TLD有 部 分 功 能 是 M&B所 沒 有 的。 一 些 細 節 可 以 在 遊 戲 提 示 中 找 到。 但 遊 戲 玩 法 基 本 上 跟 原 版 一 樣。 
+; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 mno_tutorial_1|教 學 #1: 基 本 移 動 和 武 器 選 項 {s1}
 mno_tutorial_2|教 學 #2: 持 盾 戰 鬥 {s2}
 mno_tutorial_3|教 學 #3: 不 持 盾 戰 鬥 {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|取 消
 menu_custom_battle_end|^^^^^^戰 鬥 結 束 。 {s1}你 的 隊 伍 殺 死 了 {reg5}人 ， 敵 人 的 隊 伍 殺 死 了 {reg6}人 。 你 親 手 殺 死 了 {reg7}人 。 
 mno_replay|再 玩 一 次 戰 役 
 mno_continue_dot|繼 續 
+; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|再 玩 一 次 戰 役 
+mno_continue_dot_cbd|繼 續 
 mno_dot_go_back|後 退 
 menu_start_good|^^^^^^^^^^選 擇 你 的 種 族 ： 
 mno_start_ma|人 類 
@@ -55,7 +59,7 @@ mno_start_ur|強 獸 人 ， 半 獸 人 新 品 種
 mno_start_em|人 類 ，屈 從 於 索 倫 
 menu_start_hand|^^^^^^^^^你 的 主 人 是 白 袍 巫 師 薩 魯 曼 ^選 擇 你 的 種 族 
 mno_start_whor|半 獸 人 ， 薩 魯 曼 的 奴 僕 
-mno_start_isur|強 獸 人 ， 繁 衍 於 艾 辛 格 
+mno_start_isur|一 位 強 獸 人，生 於 艾 辛 格。
 mno_start_duma|登 蘭 德 人， 來 自 西 方 平 原 
 menu_start_good_man|^^^^^^^^^^選 擇 你 的 人 類 陣 營 ： 
 mno_start_go|剛 鐸， 白 塔 之 國 
@@ -104,7 +108,7 @@ mno_proc|正 常 進 行
 menu_start_as_one|^^^^^^^^^^你 是 什 麼 兵 種?
 mno_start_default|成 為 {s23} (預 設)
 mno_start_up1|成 為 {s21} (簡 單)
-mno_start_up2|成 為 {s22} (簡 單)\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_start_up2|成 為 一 個  {s22}  (簡單)
 mno_continue|繼 續 ...
 menu_character_report|^^^^^隊 伍 士 氣 ： {reg8}^隊 伍 人 數 上 限 ： {reg7}^{s5}
 menu_camp|^^^^你目前在 {s1}。 {s2}^^你 想 要 做 什 麽 ？ 
@@ -113,9 +117,11 @@ mno_camp_troop|查 看 {reg10?部 隊 :}{reg12?和 :}{reg11?囚 犯 :}
 mno_camp_action|使 用 物 品 
 mno_camp_wait_here|在 這 裡 露 營 一 些 時 間 
 mno_camp_options|修 改 TLD 選 項
+mno_Dev_Menu|開 發 者 選 單
+; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|啟 用 作 弊 /模 組 選 項 
 menu_game_options|^^^^^^^^點 擊 切 換 選 項 ： 
-mno_game_options_war_level_start|戰 爭 始 於 等 級: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_game_options_war_level_start|戰 爭 在 等 級: {s1} 時 開 始 。
 mno_game_options_restrict_items|限 制 玩 家 裝 備 ： {s7}
 mno_game_options_formations|戰 鬥 陣 型 與 AI： {s7} 
 mno_game_options_siege_ai|進 階 攻 城 人 工 智 慧: {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|後 退
 menu_camp_tweaks|^^^^^^^^選 擇 一 個 你 想 調 整 的 選 項 
 mno_tweak_options_compat|相 容 性 調 整 ...
 mno_tweak_options_strat|戰 略 調 整 ...
-mno_tweak_options_battlefield_ai|戰 場 人 工 智 慧 調 整...\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_tweak_options_battlefield_ai|戰 場 AI 調 整 ...
 mno_tweak_options_back|返 回 選 項 選 單 
 menu_camp_compat_tweaks|^^^^^^^^點 擊 要 更 改 的 選 項 (按 住 shift 鍵 可 減 少 )： ^(這 是 相 容 性 調 整 ， 不 是 作 弊 )
 mno_game_options_compat_party|最 大 部 隊 規 模 ： {s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|隊 員 中 最 高 工 程 技 能 為 {reg2}級 ， {re
 mno_build_ladders_cont|繼 續 執 行 
 menu_castle_attack_walls_simulate|{s4}^^我 軍 傷 亡 ： {s8}^^敵 軍 傷 亡 ： {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^我 軍 傷 亡 ： {s8}^^盟 軍 傷 亡 ：{s9}^^敵 軍 傷 亡 ：{s10}
+menu_castle_taken_by_friends|這 裡 沒 什 麼 好 看 的 。
 menu_castle_taken|你 的 部 隊 攻 陷 了 {s3} ， 現 在 你 已 經 完 全 地 掌 控 了 這 個 {reg2? 城 鎮 :城 堡 } 。 {reg1?看 起 來 已 經 沒 有 什 麽 能 阻 止 你 將 它 佔 為 己 有 ...: }
 menu_castle_taken_2|你 的 部 隊 攻 陷 了 {s3} ， 現 在 你 已 經 完 全 地 掌 控 了 這 個 城 堡 。 現 在 應 該 把 這 個 勝 利 的 消 息 告 訴 給 {s9}了 。 {s5}
 mno_castle_taken_no_claim|不 要 求 獎 賞
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|訪 問 {s61}兵 營
 mno_speak_with_elder|與 {s6}談 話 
 mno_isengard_underground|前 往 地 底 洞 穴 
 mno_tirith_toplevel|爬 到 最 上 層 
+mno_erebor_gates|前 往 榮 耀 大 門 。
 mno_town_leave|離 開 ...
 mno_town_leave_door|離 開 此 地 
 menu_player_initiated_siege_result|你在 {s2}的 旗 幟 下 進 攻 這 個 中 心
@@ -328,6 +336,7 @@ menu_player_added_to_allow_follow|^^^^^一 位 信 差 抵 達 並 告 訴 你�
 mno_player_added_to_allow_follow_close|關 閉
 menu_center_besieged_event|^^^^^一 位 信 差 抵 達 並 報 告 {s1} 正 被 {s3} 的 {s2} 攻 打
 mno_center_besieged_event_close|關 閉
+menu_guardian_party_spawned|^^^^^斥 猴 回 報 {s6} 在 {s7}  附 聚 集 了 一 支 人 數 眾 多 的 軍 隊，並 想 要 拚 死 捍 衛 他 們 的 首 都 !
 mno_intro_next|繼 續 ...
 mno_start_defend_caravan|保 衛 商 隊!
 mno_start_raid_caravan|襲 擊 商 隊!
@@ -347,6 +356,8 @@ mno_lord_field_ai|領 主 有 改 善 的 戰 場 人 工 智 慧: {s7}
 mno_horse_archer_field_ai|馬 騎 弓 兵 有 改 善 的 戰 場 人 工 智 慧: {s7}
 mno_vs_orcs_field_ai|弓 兵 對 半 獸 人 有 更 好 的 準 度(不 會 瞄 準 半 獸 人 頭 部 以 上): {s7}
 mno_battlefield_animals|非 座 狼 / 馬 等 動 物 同 伴 出 現 在 戰 場 上: {s7}
+mno_slow_when_wounded|特 務 會 在 受 傷 時 變 得 緩 慢: {s7}
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_defend_refugees|留 意 掠 奪 者...
 mno_attack_refugees|攻 擊 難 民 隊 伍...
 mno_leave_refugees|暫 時 不 管 他 們...
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|繼 續 往 前 ！
 mno_pick_troops1|選 擇 執 行 任 務 同 伴 ， 已 選 擇 了 {reg0}位 
 menu_pick_troops|你 要 選 擇 誰 和 你 一 起 執 行 這 次 行 動 ？ 你 已 選 出 了 {reg0}人 。 你 最 多 能 選 出 10 人 。 
 mno_go_forward|結 束 同 伴 選 擇 且 繼 續 
-menu_burial_mound|你 來 到 於 {s1} 之 {s2}的 墓 塚 。 它 是 由 那 些 死 去 的 敵 人 的 破 損 武 器 堆 積 而 成 的 。
+menu_burial_mound|你 靠 近  {s1} 的 {s2} 的 墳 墓 。 他 在 與 {s28} 的 軍 隊 的 戰 鬥 中 戰 敗 了 。 附 近 堆 滿 了 死 去 敵 人 鈍 掉 的 武 器 。
 mno_pay_respects|跪 下 並 獻 上 你 的 敬 意
 mno_swear_oath|宣 讀 復 仇 的 誓 言 
 mno_despoil|褻 瀆 這 個 地 區 
 mno_leave_mound|離 開 墓 塚 
 menu_burial_mound_respects|你 滿 懷 敬 意 的 在 {s1}之 墓 面 前 跪 下 ， 默 念 禱 言 祈 求 未 來 旅 途 順 利 。 這 裡 已 經 沒 什 麼 事 要 做 了 。  
 menu_burial_mound_oath|你 為 {S4}的 死 亡 大 聲 宣 讀 復 仇 的 誓 言 。 你 會 堅 持 不 懈 地 尋 求 {s3}的 力 量 並 摧 毀 它 。 你 的 誓 言 隨 風 而 遠 去 ， 誰 又 能 說 海 外 沒 有 聽 到 ？ 
+menu_funeral_pyre_oath|你 為 {S4}的 死 亡 大 聲 宣 讀 復 仇 的 誓 言 。 你 會 堅 持 不 懈 地 尋 求 {s3}的 力 量 並 摧 毀 它 。 你 的 誓 言 隨 風 而 遠 去 ， 誰 又 能 說 海 外 沒 有 聽 到 ？ 
+mno_leave_pyre_oath|離 開 火 葬 堆
 menu_burial_mound_despoil|你 親 手 推 倒 了 {s1}的 墓 碑 ， 惡 毒 地 詛 咒  謾 罵 ， 對 這 個 石 塊 做 了 一 些 無 法 形 容 的 暴 行 。 你 的 追 隨 者 因 感 到 恐 懼 而 後 退 ， 但 他 們 卻 為 你 的 惡 行 再 一 次 對 你 到 敬 畏 。  
-menu_funeral_pyre|你 來 到 於 {s1} 之 {s2}的 葬 禮 殘 骸 。 在 這 裡 ， 他 的 屍 體 被 他 的 親 衛 隆 重 地 燒 毀 。 沒 留 下 什 麼 值 錢 的 東 西 。 
+menu_funeral_pyre|你 慢 慢 靠 近 {s3} 的 {s2} 的 燃 燒 帶 殆 盡 的 葬 禮 柴 堆 。 他 在 戰 場 上 被 來 自 {s28} 的 軍 隊 擊 敗 了 。 現 在 ， 他 的 屍 體 被 他 的 貼 身 護 衛 隆 重 的 火 葬 了 。 沒 有 剩 下 任 何 有 價 值 的 東 西 了 。
 mno_leave_pyre|離 開 殘 推 
 menu_town_ruins|當 你 靠 近 ， 你 看 到 {s1} 已 是 {s2}。
 mno_ruin_menu_0|探 索 這 個 地 方 

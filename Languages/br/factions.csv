@@ -8,7 +8,7 @@ fac_mordor|Mordor
 fac_isengard|Isengard
 fac_lorien|Lothlorian
 fac_imladris|Imladris
-fac_woodelf|Elfed Mirkwood
+; fac_woodelf|The Woodland Realm
 fac_dale|Traonienn
 fac_harad|Harad
 fac_rhun|Rhun
@@ -17,8 +17,8 @@ fac_umbar|Umbar
 fac_moria|Moria
 fac_guldur|Dol Guldur
 fac_gundabad|Mz. Gundabad
-fac_dunland|Dulendingoù
-fac_beorn|Beormings
+; fac_dunland|Dunland
+; fac_beorn|The Vale of Anduin
 fac_player_supporters_faction|Ged ar C'hoarier
 fac_player_faction|Ged ar C'hoarier
 fac_brigands|Laerien

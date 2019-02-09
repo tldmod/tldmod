@@ -142,42 +142,42 @@ trp_rhun_noble_cavalry_pl|룬 귀족 기병
 trp_rhun_heavy_noble_cavalry_pl|룬 귀족 중기병
 trp_dorwinion_noble_of_rhun|룬 도르위니온 귀족
 trp_dorwinion_noble_of_rhun_pl|룬 도르위니온 귀족
-trp_dwarven_apprentice|난쟁이 견습공
-trp_dwarven_apprentice_pl|난쟁이 견습공
-trp_dwarven_warrior|난쟁이 전사
-trp_dwarven_warrior_pl|난쟁이 전사
-trp_dwarven_hardened_warrior|난쟁이 단련된 전사
-trp_dwarven_hardened_warrior_pl|난쟁이 단련된 전사
-trp_dwarven_spearman|난쟁이 창병
-trp_dwarven_spearman_pl|난쟁이 창병
-trp_dwarven_pikeman|난쟁이 장창병
-trp_dwarven_pikeman_pl|난쟁이 장창병
-trp_dwarven_halberdier|난쟁이 롱파이크
-trp_dwarven_halberdier_pl|난쟁이 롱파이크
-trp_dwarven_axeman|난쟁이 도끼병
-trp_dwarven_axeman_pl|난쟁이 도끼병
-trp_dwarven_expert_axeman|난쟁이 숙련 도끼병
-trp_dwarven_expert_axeman_pl|난쟁이 숙련 도끼병
-trp_longbeard_axeman|난쟁이 긴수염 도끼병
-trp_longbeard_axeman_pl|난쟁이 긴수염 도끼병
-trp_dwarven_lookout|난쟁이 망꾼
-trp_dwarven_lookout_pl|난쟁이 망꾼
-trp_dwarven_scout|난쟁이 정찰병
-trp_dwarven_scout_pl|난쟁이 정찰병
-trp_dwarven_bowman|난쟁이 활잡이
-trp_dwarven_bowman_pl|난쟁이 활잡이
-; trp_dwarven_longaxeman|Longaxe Dwarf
-; trp_dwarven_longaxeman_pl|Longaxe Dwarves
-; trp_iron_hills_warrior|Iron Hills Warrior
-; trp_iron_hills_warrior_pl|Iron Hills Warriors
-trp_iron_hills_miner|철산 난쟁이 광부
-trp_iron_hills_miner_pl|철산 난쟁이 광부
-trp_iron_hills_infantry|철산 난쟁이 보병
-trp_iron_hills_infantry_pl|철산 난쟁이 보병
-trp_iron_hills_battle_infantry|철산 난쟁이 전투 보병
-trp_iron_hills_battle_infantry_pl|철산 난쟁이 전투 보병
-trp_grors_guard|난쟁이 그로르의 근위대
-trp_grors_guard_pl|난쟁이 그로르의 근위대
+trp_i1_dwarven_apprentice|난쟁이 견습공
+trp_i1_dwarven_apprentice_pl|난쟁이 견습공
+trp_i2_dwarven_warrior|난쟁이 전사
+trp_i2_dwarven_warrior_pl|난쟁이 전사
+trp_i3_dwarven_hardened_warrior|난쟁이 단련된 전사
+trp_i3_dwarven_hardened_warrior_pl|난쟁이 단련된 전사
+trp_i4_dwarven_spearman|난쟁이 창병
+trp_i4_dwarven_spearman_pl|난쟁이 창병
+trp_i5_dwarven_pikeman|난쟁이 장창병
+trp_i5_dwarven_pikeman_pl|난쟁이 장창병
+trp_i6_dwarven_longpikeman|난쟁이 롱파이크
+trp_i6_dwarven_longpikeman_pl|난쟁이 롱파이크
+trp_i4_dwarven_axeman|난쟁이 도끼병
+trp_i4_dwarven_axeman_pl|난쟁이 도끼병
+trp_i5_dwarven_expert_axeman|난쟁이 숙련 도끼병
+trp_i5_dwarven_expert_axeman_pl|난쟁이 숙련 도끼병
+trp_i6_longbeard_axeman|난쟁이 긴수염 도끼병
+trp_i6_longbeard_axeman_pl|난쟁이 긴수염 도끼병
+trp_a2_dwarven_lookout|난쟁이 망꾼
+trp_a2_dwarven_lookout_pl|난쟁이 망꾼
+trp_a3_dwarven_scout|난쟁이 정찰병
+trp_a3_dwarven_scout_pl|난쟁이 정찰병
+trp_a4_dwarven_bowman|난쟁이 활잡이
+trp_a4_dwarven_bowman_pl|난쟁이 활잡이
+; trp_i6_dwarven_longaxeman|Longaxe Dwarf
+; trp_i6_dwarven_longaxeman_pl|Longaxe Dwarves
+; trp_i3_iron_hills_warrior|Iron Hills Warrior
+; trp_i3_iron_hills_warrior_pl|Iron Hills Warriors
+trp_i2_iron_hills_miner|철산 난쟁이 광부
+trp_i2_iron_hills_miner_pl|철산 난쟁이 광부
+trp_i4_iron_hills_infantry|철산 난쟁이 보병
+trp_i4_iron_hills_infantry_pl|철산 난쟁이 보병
+trp_i5_iron_hills_battle_infantry|철산 난쟁이 전투 보병
+trp_i5_iron_hills_battle_infantry_pl|철산 난쟁이 전투 보병
+trp_i6_grors_guard|난쟁이 그로르의 근위대
+trp_i6_grors_guard_pl|난쟁이 그로르의 근위대
 trp_gondor_commoner|곤도르 징집병
 trp_gondor_commoner_pl|곤도르 징집병
 trp_gondor_militiamen|곤도르 보초병
@@ -412,52 +412,52 @@ trp_dunedain_veteran_ranger|두네다인 고참 레인저
 trp_dunedain_veteran_ranger_pl|두네다인 고참 레인저
 trp_dunedain_master_ranger|두네다인 정예 레인저
 trp_dunedain_master_ranger_pl|두네다인 정예 레인저
-trp_rohan_youth|로한 신병
-trp_rohan_youth_pl|로한 신병
-trp_guardsman_of_rohan|로한 경비병
-trp_guardsman_of_rohan_pl|로한 경비병
-trp_footman_of_rohan|로한 보병
-trp_footman_of_rohan_pl|로한 보병
-trp_veteran_footman_of_rohan|로한 고참 보병
-trp_veteran_footman_of_rohan_pl|로한 고참 보병
-trp_elite_footman_of_rohan|로한 정예 보병
-trp_elite_footman_of_rohan_pl|로한 정예 보병
-trp_folcwine_guard_of_rohan|로한 폴크위네 근위대
-trp_folcwine_guard_of_rohan_pl|로한 폴크위네 근위대
-trp_raider_of_rohan|프레알라프 약탈자
-trp_raider_of_rohan_pl|프레알라프 약탈자
-trp_heavy_swordsman_of_rohan|로한 중장 검사
-trp_heavy_swordsman_of_rohan_pl|로한 중장 검사
-; trp_warden_of_methuseld|Warden of Meduseld
-; trp_warden_of_methuseld_pl|Wardens of Meduseld
-trp_skirmisher_of_rohan|로한 척후병
-trp_skirmisher_of_rohan_pl|로한 척후병
-trp_veteran_skirmisher_of_rohan|로한 고참 척후병
-trp_veteran_skirmisher_of_rohan_pl|로한 고참 척후병
-trp_elite_skirmisher_of_rohan|로한 정예 척후병
-trp_elite_skirmisher_of_rohan_pl|로한 정예 척후병
-trp_thengel_guard_of_rohan|로한 셍겔 근위대
-trp_thengel_guard_of_rohan_pl|로한 셍겔 근위대
-trp_lancer_of_rohan|로한 창기병
-trp_lancer_of_rohan_pl|로한 창기병
-trp_elite_lancer_of_rohan|로한 정예 창기병
-trp_elite_lancer_of_rohan_pl|로한 정예 창기병
-trp_brego_guard_of_rohan|로한 브레고 근위대
-trp_brego_guard_of_rohan_pl|로한 브레고 근위대
-trp_king_s_man_of_rohan|로한 왕의 근위대
-trp_king_s_man_of_rohan_pl|로한 왕의 근위대
-trp_squire_of_rohan|로한 종자
-trp_squire_of_rohan_pl|로한 종자
-trp_rider_of_rohan|로한 기마대
-trp_rider_of_rohan_pl|로한 기마대
-trp_veteran_rider_of_rohan|로한 고참 기마대
-trp_veteran_rider_of_rohan_pl|로한 고참 기마대
-trp_elite_rider_of_rohan|로한 정예 기마대
-trp_elite_rider_of_rohan_pl|로한 정예 기마대
-trp_eorl_guard_of_rohan|로한 에오를 근위대
-trp_eorl_guard_of_rohan_pl|로한 에오를 근위대
-trp_dismounted_skirmisher_of_rohan|로한 척후병
-trp_dismounted_skirmisher_of_rohan_pl|로한 척후병
+trp_i1_rohan_youth|로한 신병
+trp_i1_rohan_youth_pl|로한 신병
+trp_i2_guardsman_of_rohan|로한 경비병
+trp_i2_guardsman_of_rohan_pl|로한 경비병
+trp_i3_footman_of_rohan|로한 보병
+trp_i3_footman_of_rohan_pl|로한 보병
+trp_i4_veteran_footman_of_rohan|로한 고참 보병
+trp_i4_veteran_footman_of_rohan_pl|로한 고참 보병
+trp_i5_elite_footman_of_rohan|로한 정예 보병
+trp_i5_elite_footman_of_rohan_pl|로한 정예 보병
+trp_i6_footman_guard_of_rohan|로한 폴크위네 근위대
+trp_i6_footman_guard_of_rohan_pl|로한 폴크위네 근위대
+trp_i6_frealaf_raider|프레알라프 약탈자
+trp_i6_frealaf_raider_pl|프레알라프 약탈자
+; trp_i5_raider_of_rohan|Raider of Rohan
+; trp_i5_raider_of_rohan_pl|Raiders of Rohan
+; trp_i6_warden_of_methuseld|Warden of Meduseld
+; trp_i6_warden_of_methuseld_pl|Wardens of Meduseld
+trp_ac3_skirmisher_of_rohan|로한 척후병
+trp_ac3_skirmisher_of_rohan_pl|로한 척후병
+trp_ac4_veteran_skirmisher_of_rohan|로한 고참 척후병
+trp_ac4_veteran_skirmisher_of_rohan_pl|로한 고참 척후병
+trp_ac5_elite_skirmisher_of_rohan|로한 정예 척후병
+trp_ac5_elite_skirmisher_of_rohan_pl|로한 정예 척후병
+trp_ac6_skirmisher_guard_of_rohan|로한 셍겔 근위대
+trp_ac6_skirmisher_guard_of_rohan_pl|로한 셍겔 근위대
+trp_c4_lancer_of_rohan|로한 창기병
+trp_c4_lancer_of_rohan_pl|로한 창기병
+trp_c5_elite_lancer_of_rohan|로한 정예 창기병
+trp_c5_elite_lancer_of_rohan_pl|로한 정예 창기병
+trp_c6_lancer_guard_of_rohan|로한 브레고 근위대
+trp_c6_lancer_guard_of_rohan_pl|로한 브레고 근위대
+trp_c6_king_s_man_of_rohan|로한 왕의 근위대
+trp_c6_king_s_man_of_rohan_pl|로한 왕의 근위대
+trp_c2_squire_of_rohan|로한 종자
+trp_c2_squire_of_rohan_pl|로한 종자
+trp_c3_rider_of_rohan|로한 기마대
+trp_c3_rider_of_rohan_pl|로한 기마대
+trp_c4_veteran_rider_of_rohan|로한 고참 기마대
+trp_c4_veteran_rider_of_rohan_pl|로한 고참 기마대
+trp_c5_elite_rider_of_rohan|로한 정예 기마대
+trp_c5_elite_rider_of_rohan_pl|로한 정예 기마대
+trp_c6_rider_guard_of_rohan|로한 에오를 근위대
+trp_c6_rider_guard_of_rohan_pl|로한 에오를 근위대
+; trp_i6_2h_guard_of_rohan|Helm Guard of Rohan
+; trp_i6_2h_guard_of_rohan_pl|Helm Guards of Rohan
 trp_dismounted_veteran_skirmisher_of_rohan|로한 고참 척후병
 trp_dismounted_veteran_skirmisher_of_rohan_pl|로한 고참 척후병
 trp_dismounted_elite_skirmisher_of_rohan|로한 정예 척후병
@@ -556,40 +556,40 @@ trp_easterling_veteran_skirmisher|바리아그 고참 척후병
 trp_easterling_veteran_skirmisher_pl|바리아그 고참 척후병
 trp_easterling_elite_skirmisher|바리아그 중장 척후병
 trp_easterling_elite_skirmisher_pl|바리아그 중장 척후병
-trp_corsair_youth|움바르 선원
-trp_corsair_youth_pl|움바르 선원
-trp_corsair_warrior|움바르 전사
-trp_corsair_warrior_pl|움바르 전사
-trp_corsair_pikeman|움바르 장창병
-trp_corsair_pikeman_pl|움바르 장창병
-trp_corsair_veteran_raider|해적 고참 약탈자
-trp_corsair_veteran_raider_pl|해적 고참 약탈자
-trp_corsair_night_raider|해적 야습자
-trp_corsair_night_raider_pl|해적 야습자
-; trp_militia_of_umbar|Umbar Marine
-; trp_militia_of_umbar_pl|Umbar Marines
-; trp_marksman_of_umbar|Marksman of Umbar
-; trp_marksman_of_umbar_pl|Marksmen of Umbar
-; trp_veteran_marksman_of_umbar|Veteran Marksman of Umbar
-; trp_veteran_marksman_of_umbar_pl|Veteran Marksmen of Umbar
-; trp_master_marksman_of_umbar|Corsair Master Marksman
-; trp_master_marksman_of_umbar_pl|Corsair Master Marksmen
-trp_corsair_marauder|움바르 검사
-trp_corsair_marauder_pl|움바르 검사
-trp_corsair_veteran_marauder|움바르 고참 검사
-trp_corsair_veteran_marauder_pl|움바르 고참 검사
-trp_corsair_elite_marauder|해적 검술 대가
-trp_corsair_elite_marauder_pl|해적 검술 대가
-trp_assassin_of_umbar|움바르 암살자
-trp_assassin_of_umbar_pl|움바르 암살자
-trp_master_assassin_of_umbar|해적 암살자
-trp_master_assassin_of_umbar_pl|해적 암살자
-trp_pikeman_of_umbar|움바르 장창병
-trp_pikeman_of_umbar_pl|움바르 장창병
-trp_veteran_pikeman_of_umbar|움바르 고참 장창병
-trp_veteran_pikeman_of_umbar_pl|움바르 고참 장창병
-trp_pike_master_of_umbar|해적 정예 장창병
-trp_pike_master_of_umbar_pl|해적 정예 장창병
+trp_i1_corsair_youth|움바르 선원
+trp_i1_corsair_youth_pl|움바르 선원
+trp_i2_corsair_warrior|움바르 전사
+trp_i2_corsair_warrior_pl|움바르 전사
+; trp_i3_corsair_spearman|Spearman of Umbar
+; trp_i3_corsair_spearman_pl|Spearmen of Umbar
+; trp_i4_corsair_raider|Corsair Raider
+; trp_i4_corsair_raider_pl|Corsair Raiders
+trp_i5_corsair_night_raider|해적 야습자
+trp_i5_corsair_night_raider_pl|해적 야습자
+; trp_a2_corsair_marine|Umbar Marine
+; trp_a2_corsair_marine_pl|Umbar Marines
+; trp_a3_corsair_marksman|Marksman of Umbar
+; trp_a3_corsair_marksman_pl|Marksmen of Umbar
+; trp_a4_corsair_veteran_marksman|Veteran Marksman of Umbar
+; trp_a4_corsair_veteran_marksman_pl|Veteran Marksmen of Umbar
+; trp_a5_corsair_master_marksman|Corsair Master Marksman
+; trp_a5_corsair_master_marksman_pl|Corsair Master Marksmen
+trp_i3_corsair_swordsman|움바르 검사
+trp_i3_corsair_swordsman_pl|움바르 검사
+trp_i4_corsair_veteran_swordsman|움바르 고참 검사
+trp_i4_corsair_veteran_swordsman_pl|움바르 고참 검사
+trp_i5_corsair_master_swordsman|해적 검술 대가
+trp_i5_corsair_master_swordsman_pl|해적 검술 대가
+trp_a4_corsair_assassin|해적 암살자
+trp_a4_corsair_assassin_pl|해적 암살자
+trp_a5_corsair_master_assassin|해적 암살자
+trp_a5_corsair_master_assassin_pl|해적 암살자
+; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
+; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
+; trp_i5_corsair_master_spearman|Spearmaster of Umbar
+; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
+; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
+; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
 trp_orc_snaga_of_isengard|아이센가드 오르크 노예
 trp_orc_snaga_of_isengard_pl|아이센가드 오르크 노예
 trp_orc_of_isengard|아이센가드 오르크
@@ -676,8 +676,8 @@ trp_ent|엔트
 trp_ent_pl|엔트
 trp_orc_snaga_of_guldur|굴두르 오르크 노예
 trp_orc_snaga_of_guldur_pl|굴두르 오르크 노예
-trp_orc_of_guldur|굴두르 오르크
-trp_orc_of_guldur_pl|굴두르 오르크
+; trp_orc_of_guldur|Orc Tracker of Guldur
+; trp_orc_of_guldur_pl|Orc Trackers of Guldur
 trp_orc_snaga_of_mordor|모르도르 오르크 노예
 trp_orc_snaga_of_mordor_pl|모르도르 오르크 노예
 trp_orc_of_mordor|모르도르 오르크
@@ -694,64 +694,64 @@ trp_morgul_orc|모르굴 오르크
 trp_morgul_orc_pl|모르굴 오르크
 trp_fell_morgul_orc|모르굴 포악한 오르크
 trp_fell_morgul_orc_pl|모르굴 포악한 오르크
-trp_orc_tracker_of_mordor|모르도르 오르크 길잡이
-trp_orc_tracker_of_mordor_pl|모르도르 오르크 길잡이
-trp_fell_orc_tracker_of_mordor|모르도르 포악한 오르크 길잡이
-trp_fell_orc_tracker_of_mordor_pl|모르도르 포악한 오르크 길잡이
+; trp_orc_tracker_of_mordor|Large Orc Tracker of Guldur
+; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Guldur
+; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Guldur
+; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Guldur
 trp_orc_archer_of_mordor|모르도르 오르크 궁수
 trp_orc_archer_of_mordor_pl|모르도르 오르크 궁수
 trp_large_orc_archer_of_mordor|모르도르 큰 오르크 궁수
 trp_large_orc_archer_of_mordor_pl|모르도르 큰 오르크 궁수
 trp_fell_orc_archer_of_mordor|모르도르 포악한 오르크 궁수
 trp_fell_orc_archer_of_mordor_pl|모르도르 포악한 오르크 궁수
-trp_wolf_rider_of_moria|모리아 늑대기수
-trp_wolf_rider_of_moria_pl|모리아 늑대기수
-trp_warg_rider_of_moria|모리아 와르그기수
-trp_warg_rider_of_moria_pl|모리아 와르그기수
-trp_bolg_clan_rider|볼그 부족 기수
-trp_bolg_clan_rider_pl|볼그 부족 기수
-trp_snaga_of_moria|모리아 노예
-trp_snaga_of_moria_pl|모리아 노예
-trp_goblin_of_moria|모리아 고블린
-trp_goblin_of_moria_pl|모리아 고블린
-trp_large_goblin_of_moria|모리아 큰 고블린
-trp_large_goblin_of_moria_pl|모리아 큰 고블린
-trp_fell_goblin_of_moria|모리아 포악한 고블린
-trp_fell_goblin_of_moria_pl|모리아 포악한 고블린
-; trp_archer_snaga_of_moria|Goblin Archer of Moria
-; trp_archer_snaga_of_moria_pl|Goblin Archers of Moria
-trp_large_goblin_archer_of_moria|모리아 큰 고블린 궁수
-trp_large_goblin_archer_of_moria_pl|모리아 큰 고블린 궁수
-; trp_deep_dweller_of_moria2|Deep-Dweller of Moria
-; trp_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
-trp_goblin_gundabad|군다바드 고블린
-trp_goblin_gundabad_pl|군다바드 고블린
-trp_orc_gundabad|군다바드 오르크
-trp_orc_gundabad_pl|군다바드 오르크
-trp_orc_fighter_gundabad|군다바드 오르크 투사
-trp_orc_fighter_gundabad_pl|군다바드 오르크 투사
-; trp_fell_orc_warrior_gundabad|Gundabad Orc Warrior
-; trp_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
-; trp_orc_beserker_gundabad|Gundabad Orc Berserker
-; trp_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
-; trp_warg_skirmisher_gundabad|Gundabad Skirmisher
-; trp_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
-; trp_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
-; trp_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
-trp_goblin_rider_gundabad|군다바드 고블린 기수
-trp_goblin_rider_gundabad_pl|군다바드 고블린 기수
-trp_warg_rider_gundabad|군다바드 와르그기수
-trp_warg_rider_gundabad_pl|군다바드 와르그기수
-trp_goblin_north_clan_rider|북부 부족 고블린 기수
-trp_goblin_north_clan_rider_pl|북부 부족 고블린 기수
+trp_c3_wolf_rider_of_moria|모리아 늑대기수
+trp_c3_wolf_rider_of_moria_pl|모리아 늑대기수
+trp_c4_warg_rider_of_moria|모리아 와르그기수
+trp_c4_warg_rider_of_moria_pl|모리아 와르그기수
+trp_c5_bolg_clan_rider|볼그 부족 기수
+trp_c5_bolg_clan_rider_pl|볼그 부족 기수
+trp_i1_snaga_of_moria|모리아 노예
+trp_i1_snaga_of_moria_pl|모리아 노예
+trp_i2_goblin_of_moria|모리아 고블린
+trp_i2_goblin_of_moria_pl|모리아 고블린
+trp_i3_large_goblin_of_moria|모리아 큰 고블린
+trp_i3_large_goblin_of_moria_pl|모리아 큰 고블린
+trp_i4_fell_goblin_of_moria|모리아 포악한 고블린
+trp_i4_fell_goblin_of_moria_pl|모리아 포악한 고블린
+; trp_a2_archer_snaga_of_moria|Goblin Archer of Moria
+; trp_a2_archer_snaga_of_moria_pl|Goblin Archers of Moria
+trp_a3_large_goblin_archer_of_moria|모리아 큰 고블린 궁수
+trp_a3_large_goblin_archer_of_moria_pl|모리아 큰 고블린 궁수
+; trp_i5_deep_dweller_of_moria2|Deep-Dweller of Moria
+; trp_i5_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
+trp_i1_goblin_gundabad|군다바드 고블린
+trp_i1_goblin_gundabad_pl|군다바드 고블린
+trp_i2_orc_gundabad|군다바드 오르크
+trp_i2_orc_gundabad_pl|군다바드 오르크
+trp_i3_orc_fighter_gundabad|군다바드 오르크 투사
+trp_i3_orc_fighter_gundabad_pl|군다바드 오르크 투사
+; trp_i4_fell_orc_warrior_gundabad|Gundabad Orc Warrior
+; trp_i4_fell_orc_warrior_gundabad_pl|Gundabad Orc Warriors
+; trp_i4_orc_beserker_gundabad|Gundabad Orc Berserker
+; trp_i4_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
+; trp_ca4_warg_skirmisher_gundabad|Gundabad Skirmisher
+; trp_ca4_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
+; trp_ca5_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
+; trp_ca5_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
+trp_c3_goblin_rider_gundabad|군다바드 고블린 기수
+trp_c3_goblin_rider_gundabad_pl|군다바드 고블린 기수
+trp_c4_warg_rider_gundabad|군다바드 와르그기수
+trp_c4_warg_rider_gundabad_pl|군다바드 와르그기수
+trp_c5_goblin_north_clan_rider|북부 부족 고블린 기수
+trp_c5_goblin_north_clan_rider_pl|북부 부족 고블린 기수
 trp_mountain_goblin|산고블린
 trp_mountain_goblin_pl|산고블린
 trp_tribal_orc|부족 오르크
 trp_tribal_orc_pl|부족 오르크
 trp_tribal_orc_warrior|부족 오르크 전사
 trp_tribal_orc_warrior_pl|부족 오르크 전사
-; trp_tribal_orc_chief2|Orc Chieftain of Moria
-; trp_tribal_orc_chief2_pl|Orc Chieftains of Moria
+; trp_i5_orc_chieftain_of_moria2|Orc Chieftain of Moria
+; trp_i5_orc_chieftain_of_moria2_pl|Orc Chieftains of Moria
 trp_black_numenorean_renegade|검은 누메노르 변절자
 trp_black_numenorean_renegade_pl|검은 누메노르 변절자
 trp_black_numenorean_warrior|검은 누메노르 전사
@@ -1242,7 +1242,7 @@ trp_barman_dale_pl|성
 trp_barman_esgaroth|여관 주인
 trp_barman_esgaroth_pl|회랑
 trp_barman_erebor|여관 주인
-trp_barman_erebor_pl|군주의 회의실
+; trp_barman_erebor_pl|the Great Chamber of Thrór
 trp_barman_dolguldur|여관 주인
 trp_barman_dolguldur_pl|성
 trp_merchant_mtirith|보급 담당자
@@ -1576,9 +1576,9 @@ trp_start_quest_beorning_pl|베오른 망루 광전사
 ; trp_longing_lorien|Longing Elf
 ; trp_longing_woodelf|Longing Elf
 ; trp_longing_imladris|Longing Elf
-; trp_deep_dweller_of_moria|Deep-Dweller of Moria
-; trp_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
-; trp_tribal_orc_chief|Orc Chieftain of Moria
-; trp_tribal_orc_chief_pl|Orc Chieftains of Moria
+; trp_i5_deep_dweller_of_moria|Deep-Dweller of Moria
+; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
+; trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
+; trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
 ; trp_rhovanion_noble|Rhovanion Noble
 ; trp_rhovanion_noble_pl|Rhovanion Noblemen

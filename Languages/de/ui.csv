@@ -46,3 +46,8 @@ ui_value_denars|%d Ressourcenpunkte.
 ui_cannot_be_used_on_horseback|Kann reitend nicht benutzt werden
 ui_upgrade_to_value|Befördern zu %s
 ui_notification_cant_upgrade|(Keine Beförderung während der Übergabe möglich)
+ui_lance_control|Lanzenausrichtung:
+ui_manual_easy|Manuell (einfach)
+ui_manual_hard|Manuell (schwer)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

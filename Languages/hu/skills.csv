@@ -4,8 +4,8 @@ skl_leadership|Hadvezetés
 skl_leadership_desc|Minden pont növeli a sereged maximum számát 5-tel, növeli a sereged morálját és csökkenti a katonák fizetségét 5%%-al.\n(Vezető képesség)
 skl_prisoner_management|Fogolytartás
 skl_prisoner_management_desc|Ez a képesség növeli a maximum foglyok számát %d-al. (Vezető képesség)
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+skl_persuasion|Vadonjárás
+skl_persuasion_desc|A vadonban való túlélés és az akaratod alá való hajtásának képessége. Ez a képesség határozza meg a csapat elrejtőző-képességét, és a csapat sebességét erdős területen. (Csapat képesség)
 skl_engineer|-----
 skl_engineer_desc|-----
 skl_first_aid|Elsősegély

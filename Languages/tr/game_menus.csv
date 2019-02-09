@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|Miğfer Dibi Savunması, Rohan Isengard'a karşı
 mno_custom_battle_scenario_5|Çatışma, Kuzey, Rhûn'e karşı.
 mno_custom_battle_scenario_6|Kuşatma, Orklar, Cücelere karşı.
 mno_custom_battle_scenario_7|Pusu, Orklar, Kuyutorman'a karşı.
+mno_custom_battle_scenario_8|Durin Halkının Son Duruşu
+mno_custom_battle_scenario_88|Ork Gözcü Partisini peşine düşme
 mno_custom_battle_scenario_11|Test Savaşı ( Uyum Dengelemesi!)
 mno_custom_battle_scenario_10|Manzara Test Savaşı
 mno_troll_battle_scenario|Troll savaşını test et
 mno_warg_battle_scenario|Warg savaşını test et
 mno_build_your_own_scene|**TLD ile kendi Sahneni Oluştur**
-menu_tutorial|TLD native M&B'nin sahip olmadığı bir çok içeriğe sahip. Bunlardan spoiler olmayacaklar yayınlanan PDF dosyası ile belirtildi . Tutorial ve basit oyun mekanikleri için lütfen Native modulü oynayınız.
-menu_tutorial|TLD native M&B'nin sahip olmadığı bir çok içeriğe sahip. Bunlardan spoiler olmayacaklar yayınlanan PDF dosyası ile belirtildi . Tutorial ve basit oyun mekanikleri için lütfen Native modulü oynayınız.
+; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 mno_tutorial_1|Öğretici #1: Temel Hareketler ve silah seçimi. {s1}
 mno_tutorial_2|Tutorial #2: Kalkan ile birlikte dövüşmek. {s2}
 mno_tutorial_3|Öğretici #3: Kalkan olmadan dövüşmek. {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|İptal.
 menu_custom_battle_end|^^^^^^Savas sona erdi. {s1} Senin tarafin savasta {reg5} düsman öldürdü ve {reg6} asker kaybetti.^Kisisel olarak {reg7} düsman katlettin.
 mno_replay|Savaşı tekrar oyna.
 mno_continue_dot|Devam et.
+; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|Savaşı tekrar oyna.
+mno_continue_dot_cbd|Devam et.
 mno_dot_go_back|Geri dön
 menu_start_good|^^^^^^^^^^Irkını seç
 mno_start_ma|İNSAN
@@ -55,7 +59,7 @@ mno_start_ur|URUK, orkların yeni nesli
 mno_start_em|Sauron'un boyunduruğunda bir İNSAN
 menu_start_hand|^^^^^^^^^Efendin Ak El^Irkini seç
 mno_start_whor|Ak El'e hizmet eden bir ORC
-mno_start_isur|Isengard'da yetiştirilmiş bir URUK-HAI
+mno_start_isur|Isengard'da yetiştirilmiş bir URUK-HAİ
 mno_start_duma|Bir DUNLAND adamı, Batı Ovaları
 menu_start_good_man|^^^^^^^^^^Halkini seç:
 mno_start_go|GONDOR, krallığın beyaz kuleleri
@@ -104,7 +108,7 @@ mno_proc|Normal olarak devam et
 menu_start_as_one|^^^^^^^^^^Sen ne tür bir askersin?
 mno_start_default|{s23} Ol (Default)
 mno_start_up1|{s21} Ol (Kolay)
-mno_start_up2|{s22} ol\n(Kolay)\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_start_up2|Bir {s22} ol (Kolay)
 mno_continue|Devam et...
 menu_character_report|^^^^^Grup Morali: {reg8}^Grup Boyut Limiti: {reg7}^{s5}
 menu_camp|^^^^Sen {s1}.{s2}desin^^Ne yapmak istiyorsun?
@@ -113,9 +117,11 @@ mno_camp_troop|Gözden geçir{reg10? askerler:}{reg12? and:}{reg11? esirler:}.
 mno_camp_action|Bir nesne kullan.
 mno_camp_wait_here|Burada bir süreliğine kamp kur.
 mno_camp_options|TLD ayarını değiştir
+; mno_Dev_Menu|Developer Menu
+; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|Hile/modlama ayarlarını etkinleştir.
 menu_game_options|^^^^^^^^Değiştirmek için bir ayara tıklayın:
-mno_game_options_war_level_start| {s1} levelde savaş başlar\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_game_options_war_level_start|Savaşın Başlayacağı Seviye: {s1}
 mno_game_options_restrict_items|Kısıtlı oyuncu ekipmanı: {s7}
 mno_game_options_formations|Savaş düzenleri ve yapay zeka: {s7}
 mno_game_options_siege_ai|Gelişmiş Kuşatma AI: {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|Geri.
 menu_camp_tweaks|^^^^^^^^Ayarlamak istediğiniz bir görüş seçin.
 mno_tweak_options_compat|Uygunluk Ayarları
 mno_tweak_options_strat|Strateji Ayarları
-mno_tweak_options_battlefield_ai|Savaş Alanı Yapay Zekası ayarları...\t\t\t\t\t\t\t\t\t
+mno_tweak_options_battlefield_ai|Savaş Alanı Yapay Zeka ayarları
 mno_tweak_options_back|Ayarlar menüsüne geri dön.
 menu_camp_compat_tweaks|^^^^^^^^Degistirmek için bir ayara tiklayin (azaltmak için shift e basili tutun):^(bunlar hile degil)
 mno_game_options_compat_party|Max Parti Üyesi: {s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|Mühendislik yeteneği en yüksek olan birlik üyesi ({re
 mno_build_ladders_cont|Yap.
 menu_castle_attack_walls_simulate|{s4}^^Senin kayıpların:{s8}^^Düşmanın kayıpları: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
+menu_castle_taken_by_friends|Burada görülecek bir şey yok.
 menu_castle_taken|{s3} askerlerinin eline geçti ve {reg2?kasaba:kale}. 'nin tüm kontrolü artık sana ait. {reg1? Görünüşe göre kaleyi kendin için almanı engelleyen bir şey yok...:}
 menu_castle_taken_2|{s3} askerlerinin eline geçti ve kalenin tüm kontrolü artık sana ait. Artık zaferin için {s9}' a haber verme vakti geldi. {s5}
 mno_castle_taken_no_claim|Ödül isteme.
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|{s61} kışlasını ziyaret et.
 mno_speak_with_elder| {s6} ile konuş
 mno_isengard_underground|Yeraltı mağaralarına git.
 mno_tirith_toplevel|Zirveye tırman.
+mno_erebor_gates|Büyük Kapıları ziyaret et.
 mno_town_leave|Ayrıl...
 mno_town_leave_door|Bölgeden Ayrıl
 menu_player_initiated_siege_result|{s2} sancağı altındaki bu merkeze saldırdın.
@@ -328,6 +336,7 @@ menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda bir {s24} olara
 mno_player_added_to_allow_follow_close|Kapat
 menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldığını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat
+; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 mno_intro_next|Devam et...
 mno_start_defend_caravan|Karavanı Savun!
 mno_start_raid_caravan|Karavanı Yagmala!
@@ -347,6 +356,8 @@ mno_lord_field_ai|Lordlar Gelişmiş Savaş Alanı Yapay Zekasına Sahip Olacak:
 mno_horse_archer_field_ai|Atlı Okçular Gelişmiş Savaş Alanı Yapay Zekasına Sahip Olacak: {s7}
 mno_vs_orcs_field_ai|Okçular orklara karşı daha iyi nişan alsınlar (orkların kafalarına hedef almazlar): {s7}
 mno_battlefield_animals|Warg olmayan / At veya Hayvan Yoldaşları Savaşta oluştur: {s7}
+mno_slow_when_wounded|Kişiler yaralanınca yavaşlar: [s7]
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_defend_refugees|Yağmacılar için tetikte kal....
 mno_attack_refugees|Mülteci kervanına saldır...
 mno_leave_refugees|Onları şimdilik bırakın...
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|İleri marş!
 mno_pick_troops1|Görev için yoldaş seç, {reg0} seçili.
 menu_pick_troops|Gizlilik görevi için kimi beraberinde götürürdün? Şu anda {reg0}  yoldaş seçtin. Yanında 10'a kadar kişi götürebilirsin.
 mno_go_forward|Yoldaş seçimini bitir ve devam et.
-menu_burial_mound|{s2}'li {s1}'in gömülü olduğu toprağa yaklaşıyorsun. Ölmüş düşmanlarının silahlarıyla kaplanmış.
+menu_burial_mound|{s2} Bölgesinden {s1} isimli kişinin gömülü olduğu toprağa yaklaşıyorsun. {s28} Kuvvetleri tarafından savaşta mağlup edilmiş. Mezar, ölmüş düşmanlarının çentikli silahlarıyla dolu.
 mno_pay_respects|Diz çök ve saygılarını sun.
 mno_swear_oath|İntikam yemini et!
 mno_despoil|Mekanı kirlet.
 mno_leave_mound|Höyüğü terket.
 menu_burial_mound_respects|Diz çöküp {s1}'e saygını sunuyorsun, öteki hayata hızlı geçişi için sessizce dua ediyorsun. Burada yapacak bir şey kalmadı.
 menu_burial_mound_oath|{s4}'ün ölümü üzerine bağırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
+menu_funeral_pyre_oath|{s4}'ün ölümü üzerine bağırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
+mno_leave_pyre_oath|Kremasyon alanını terket.
 menu_burial_mound_despoil| {s1}'ın mezarını ellerinle yıkıyorsun ve taşlarını lanetlerle, merhametsiz şarkılarla ve ağza alınmayacak hareketlerle lekeliyorsun. Yoldaşların ölünün korkusundan geri çekiliyorlar fakat senin kötülüğüne duydukları saygı yenilenmiş gibi görünüyor.
-menu_funeral_pyre|{s2}'li {s3}'ün yakıldığı ağaç yığınının kavrulmuş kalıntılarına yaklaşıyorsun. Cesedi burada, seramonik bir şekilde kişisel korumaları tarafından yakılmış. Değerli bir şey kalmamış.
+; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Kremasyon alanını terket.
 menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştığında..
 mno_ruin_menu_0|Etrafı keşfet.

@@ -8,7 +8,7 @@ fac_mordor|Mordor
 fac_isengard|Isengard
 fac_lorien|Lothlorien
 fac_imladris|Rivendell
-fac_woodelf|Synkmetsän Haltiat
+; fac_woodelf|The Woodland Realm
 fac_dale|Dalet
 fac_harad|Harad
 fac_rhun|Rhun
@@ -17,8 +17,8 @@ fac_umbar|Umbar
 fac_moria|Moria
 fac_guldur|Dol Guldur
 fac_gundabad|Gundabadin vuori
-fac_dunland|Mustainmaalaiset
-fac_beorn|Beornit
+fac_dunland|Dunland
+; fac_beorn|The Vale of Anduin
 fac_player_supporters_faction|Pelaajan ryhmittymä
 fac_player_faction|Pelaajan ryhmä
 fac_brigands|Rosvot

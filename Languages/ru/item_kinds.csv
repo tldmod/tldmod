@@ -32,7 +32,7 @@ itm_rohirrim_courser|Роханская скаковая лошадь
 itm_rohirrim_hunter|Роханский гунтер
 itm_rohirrim_courser2|Роханская скаковая лошадь
 itm_rohan_warhorse|Роханский боевой конь
-itm_thengel_warhorse|Боевой конь гвардии Тенгеля
+itm_thengel_warhorse|Роханский тяжёлый боевой конь
 itm_rhun_horse_a|Рунийская лошадь
 itm_rhun_horse_b|Рунийская лошадь
 itm_rhun_horse_d|Рунийская лошадь
@@ -40,8 +40,8 @@ itm_rhun_horse_e|Рунийская тяжёлая лошадь
 itm_rhun_horse_f|Рунийская тяжёлая лошадь
 itm_rhun_horse_g|Рунийская тяжёлая лошадь
 itm_rhun_horse_h|Рунийская тяжёлая лошадь
-; itm_dale_horse|Rhovanion Horse
-itm_dale_warhorse|Дейльский боевой конь
+itm_dale_horse|Рованионская лошадь
+itm_dale_warhorse|Рованионский боевой конь
 itm_riv_warhorse|Ривендельский боевой конь
 itm_riv_warhorse2|Ривендельский конь
 itm_mordor_warhorse|Мордорский боевой конь
@@ -66,27 +66,19 @@ itm_wargarmored_2b|Варг в броне
 itm_wargarmored_2c|Варг в броне
 itm_wargarmored_3a|Варг в броне
 itm_warg_reward|Огромный варг
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
+itm_axe_a|Северный топор
+itm_axe_b|Северный бородовидный топор
+itm_axe_c|Северный топор
+itm_axe_d|Северный топор
 itm_tree_trunk_club_a|Ствол дерева
-itm_tree_trunk_club_b|Ствол дерева
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
-itm_giant_hammer|Огромный молот
+itm_long_bearded_axe|Северный бердыш
+itm_2_handed_axe|Северный длинный топор
+itm_free_giant_hammer|Огромный молот
 itm_giant_mace|Огромная булава
-itm_giant_mace_b|Огромная булава с шипами
-itm_olog_feet_boots|Ноги олог-хай
-itm_olog_head_helm|Голова олог-хай
-itm_olog_head_helm_b|Голова олог-хай
-itm_olog_head_helm_c|Голова олог-хай
-itm_olog_body|Броня олог-хай
-itm_olog_body_b|Броня олог-хай
-itm_olog_hands|Руки олог-хай
+itm_troll_shield_a|Щит тролля
 itm_arrows|Стрелы
 itm_gondor_arrows|Гондорские стрелы
-itm_gondor_auxila_arrows|Гондорские стрелы
+itm_orc_javelin|Орочий тяжёлый дротик
 itm_khergit_arrows|Зазубренные стрелы
 itm_rohan_arrows_2|Роханские стрелы
 itm_harad_arrows|Харадские стрелы
@@ -96,30 +88,11 @@ itm_woodelf_arrows|Стрелы лесных эльфов
 itm_elven_arrows|Эльфийские стрелы
 itm_orc_hook_arrow|Крючковатые орочьи стрелы
 itm_isengard_arrow|Изенгардские стрелы
-itm_pilgrim_disguise|Одежды путника
 itm_leather_gloves|Кожаные перчатки
 itm_mail_mittens|Кольчужные рукавицы
 itm_leather_boots|Кожаные сапоги
-itm_black_dress|Чёрное платье
-itm_blackwhite_dress|Богатое платье
-itm_white_tunic_a|Простая одежда
-itm_white_tunic_b|Простая одежда
-itm_white_tunic_c|Куртка
-itm_blue_tunic|Синяя одежда
+itm_white_tunic_a|Одежда горожанина
 itm_black_tunic|Чёрная одежда
-itm_green_tunic|Зелёная одежда
-itm_red_tunic|Красная одежда
-itm_leather_apron|Кожаный фартук
-itm_leather_jerkin|Кожаная куртка
-itm_fur_coat|Дейльская одежда
-itm_green_dress|Зелёное платье
-itm_tld_tunic|Рубашка
-itm_gondor_fine_outfit_dress|Красивая одежда
-itm_rohan_fine_outfit_dale_dress|Красивая одежда
-itm_robe_generic_dress|Мантия
-itm_wimple_a|Чепец
-itm_wimple_with_veil|Чепец
-itm_fine_hat|Красивая шляпа
 itm_shortened_spear|Укороченное копьё
 itm_spear|Копьё
 itm_light_lance|Лёгкое кавалерийское копьё
@@ -141,7 +114,7 @@ itm_glorfi_bow|Лук Глорфинделя
 itm_lorien_bow|Галадримский лук
 itm_isengard_large_bow|Изенгардский большой лук
 itm_dale_bow|Дейльский лук
-; itm_uruk_bow_pl|Strong Orc Bow
+itm_uruk_bow|Усиленный орочий лук
 itm_mirkwood_bow|Темнолесский лук
 itm_dunland_javelin|Дунландские дротики
 itm_orc_throwing_arrow|Орочьи дротики
@@ -174,14 +147,13 @@ itm_arnor_sword_f|Арнорский короткий меч
 itm_riv_helm_a|Ривендельский койф
 itm_riv_helm_b|Ривендельский шлем лучника
 itm_riv_helm_c|Ривендельский шлем пехотинца
-itm_riv_helm_glorfi|Волосы Глорфинделя
 itm_riv_tiara|Тиара эльфийского правителя
 itm_riv_shield_a|Ривендельский щит
 itm_riv_shield_b|Ривендельский щит
 itm_riv_bas_sword|Ривендельский меч-полутораручник
 itm_riv_1h_sword|Ривендельский меч
 itm_riv_riding_sword|Ривендельский кавалерийский меч
-; itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword|Ривенделлский Меч Лучника
 itm_riv_spear|Ривендельское копьё
 itm_riv_armor_light|Ривендельская броня
 itm_riv_armor_light_inf|Ривендельская броня
@@ -226,12 +198,12 @@ itm_gondor_dolamroth_helm|Дол-амротский шлем
 itm_swan_knight_helm|Лебединый рыцарский шлем
 itm_gondor_lamedon_helm|Ламедонский шлем
 itm_gondor_lamedon_leader_helm|Ламедонский превосходный шлем
-; itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
-; itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
-; itm_blackroot_footman|Blackroot Vale Jerkin
-; itm_blackroot_warrior|Blackroot Vale Gambeson
-; itm_blackroot_leader|Blackroot Vale Mail
-; itm_blackroot_hood|Black Hood
+itm_blackroot_archer|Мортондский гамбезон с плащом
+itm_blackroot_bowman|Мортондская куртка с плащом
+itm_blackroot_footman|Мортондская куртка
+itm_blackroot_warrior|Мортондский гамбезон
+itm_blackroot_leader|Мортондская кольчуга
+itm_blackroot_hood|Чёрный капюшон
 itm_dol_hauberk|Дол-амротский хауберк
 itm_dol_heavy_mail|Дол-амротская тяжёлая кольчуга
 itm_dol_padded_coat|Дол-амротская подбитая одежда
@@ -246,10 +218,10 @@ itm_lamedon_leader_surcoat_cloak|Ламедонская броня военач�
 itm_lamedon_warrior|Ламедонская броня воина
 itm_lamedon_veteran|Ламедонская броня ветерана
 itm_lamedon_vet_warrior|Ламедонская превосходная броня ветерана
-; itm_lamedon_hood|Hood
+itm_lamedon_hood|Капюшон
 itm_pinnath_archer|Броня лучника Пиннат-Гелина
 itm_pinnath_footman|Броня пехотинца Пиннат-Гелина
-itm_pinnath_leader|Броня военачальника Пиннат-Гелина
+itm_pinnath_leader|Броня рыцаря Пиннат-Гелина
 itm_pinnath_vet_footman|Броня пехотинца-ветерана Пиннат-Гелина
 itm_pinnath_warrior|Броня воина Пиннат-Гелина
 itm_pel_footman|Пеларгирская броня пехотинца
@@ -258,7 +230,7 @@ itm_pel_leader|Пеларгирская броня военачальника
 itm_pel_marine|Пеларгирская броня моряка
 itm_pelargir_marine_leader|Пеларгирская броня капитана
 itm_pelargir_regular|Пеларгирская броня воина
-; itm_pelargir_hood|White Hood
+itm_pelargir_hood|Белый капюшон
 itm_pelargir_helmet_light|Пеларгирский шлем
 itm_pelargir_helmet_heavy|Пеларгирский тяжёлый шлем
 itm_pelargir_greaves|Пеларгирские поножи
@@ -276,7 +248,7 @@ itm_gondor_shield_a|Гондорский прямоугольный щит
 itm_gondor_shield_b|Гондорский каплевидный щит
 itm_gondor_shield_c|Гондорский ростовой щит
 itm_gondor_shield_d|Гондорский каплевидный щит
-itm_gondor_shield_e|Гондорский королевский щит
+itm_gondor_shield_e|Гондорский щит Стража Цитадели
 itm_gon_tab_shield_a|Гондорский круглый щит с гербом
 itm_gon_tab_shield_b|Гондорский прямоугольный щит с гербом
 itm_gon_tab_shield_c|Гондорский каплевидный щит с гербом
@@ -315,8 +287,7 @@ itm_lorien_helm_a|Лориэнский шлем лучника
 itm_lorien_helm_b|Лориэнский шлем лучника
 itm_lorien_helm_c|Лориэнский шлем пехотинца
 itm_orc_chain_greaves|Орочьи поножи
-
-; itm_orc_coif|Orc Skullcap
+itm_orc_coif|Орочий черепник
 itm_orc_greaves|Орочьи кольчужные сапоги
 itm_orc_ragwrap|Орочьи рваные обмотки
 itm_orc_furboots|Орочьи меховые сапоги
@@ -357,10 +328,10 @@ itm_isen_uruk_helm_d|Урук-хайский шлем полководца
 itm_isen_uruk_helm_e|Урук-хайский шлем следопыта
 itm_isen_uruk_helm_f|Урук-хайский шлем следопыта
 itm_uruk_pike_a|Урукская пика
-itm_uruk_pike_b|Урукская пика
+itm_uruk_pike_b|Мордорская пика
 itm_uruk_falchion_a|Урукский фальшион
 itm_uruk_falchion_b|Урукский фальшион
-itm_uruk_spear|Урукское копьё
+itm_uruk_spear|Мордорское копьё
 itm_uruk_skull_spear|Урукское копьё с черепом
 itm_uruk_voulge|Урукский вуж
 itm_uruk_heavy_axe|Урукский тяжёлый топор
@@ -381,9 +352,9 @@ itm_twohand_wood_club|Большая деревянная дубина
 itm_bone_cudgel|Костяная дубина
 itm_skull_club|Дубина с черепом
 itm_orc_club_a|Орочья дубина
-itm_orc_club_b|Орочья дубина
-; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Spiky Orc Club
+itm_orc_club_b|Дубина волчьего всадника
+itm_orc_club_c|Шипастая орочья дубина
+itm_orc_club_d|Зловещая булава
 itm_orc_sledgehammer|Орочья кувалда
 itm_orc_simple_spear|Орочье копьё
 itm_orc_skull_spear|Орочье копьё с черепом
@@ -399,7 +370,7 @@ itm_orc_throwing_axes|Орочьи метательные топоры
 itm_orc_bow|Орочий лук
 itm_orc_shield_a|Орочий щит
 itm_orc_shield_b|Орочий щит
-itm_orc_shield_c|Орочий щит
+itm_orc_shield_c|Орочий ростовой щит
 itm_mordor_orc_shield_a|Мордорский орочий щит
 itm_mordor_orc_shield_b|Мордорский орочий щит
 itm_mordor_orc_shield_c|Мордорский орочий щит
@@ -411,23 +382,13 @@ itm_mordor_uruk_shield_c|Мордорский урукский щит
 itm_mordor_man_shield_a|Мордорский человеческий щит
 itm_mordor_man_shield_b|Мордорский человеческий щит
 itm_angmar_shield|Ангмарский щит
-
-; itm_orc_nosehelm|Orc Nosehelm
-
-; itm_orc_kettlehelm|Orc Kettlehelm
-
+itm_orc_nosehelm|Орочий шлем с наносником
+itm_orc_kettlehelm|Орочий шлем-чайник
 itm_orc_buckethelm|Орочий горшковый шлем
-
-; itm_orc_morion|Orc Morion
-
+itm_orc_morion|Орочий морион
 itm_orc_beakhelm|Орочий шлем с клювом
-
 itm_orc_bughelm|Орочий шлем жука
-
-; itm_orc_visorhelm|Orc Visorhelm
-
-; itm_orc_visorhelm_pl|Orc Visorhelm
-
+itm_orc_visorhelm|Орочий шлем с прорезью
 itm_m_orc_light_a|Мордорская орочья лёгкая броня
 itm_m_orc_light_b|Мордорская орочья лёгкая броня
 itm_m_orc_light_c|Мордорская орочья лёгкая броня
@@ -439,22 +400,14 @@ itm_m_orc_heavy_c|Мордорская орочья тяжёлая броня
 itm_m_orc_heavy_d|Мордорская орочья тяжёлая броня
 itm_m_orc_heavy_e|Мордорская орочья тяжёлая броня
 itm_m_uruk_light_a|Урукская броня
-
 itm_m_uruk_light_b|Урукская кожаная броня
-
-; itm_m_uruk_light_c|Uruk Light Mail
-
-; itm_m_uruk_med_a|Uruk Heavy Leather
-
-; itm_m_uruk_med_b|Uruk Heavy Mail
-
-; itm_m_uruk_med_c|Uruk Light Scale
-
-; itm_m_uruk_heavy_a|Uruk Heavy Scale
-
-; itm_m_uruk_heavy_b|Uruk Platemail
-
-; itm_m_uruk_heavy_c|Lugburz Platemail
+itm_m_uruk_light_c|Урукская лёгкая кольчуга
+itm_m_uruk_med_a|Урукская усиленная кожанка
+itm_m_uruk_med_b|Урукская тяжёлая кольчуга
+itm_m_uruk_med_c|Урукская лёгкая чешуйчатая броня
+itm_m_uruk_heavy_a|Урукская тяжёлая чешуйчатая броня
+itm_m_uruk_heavy_b|Урукская пластинчатая броня
+itm_m_uruk_heavy_c|Доспех Лугбурза
 itm_m_uruk_heavy_j|Урукская тяжёлая броня
 itm_m_uruk_heavy_k|Урукская броня стражи
 itm_m_cap_armor|Мордорская броня полководца
@@ -478,7 +431,7 @@ itm_moria_armor_b|Морийский нагрудник с наплечника�
 itm_moria_armor_c|Морийская орочья кольчуга
 itm_moria_armor_d|Морийская проклёпанная кожаная броня
 itm_moria_armor_e|Морийская орочья тяжёлая кольчуга
-; itm_moria_orc_shield_a|Moria Great Shield
+itm_moria_orc_shield_a|Великий Щит Мории
 itm_moria_orc_shield_b|Морийский орочий щит
 itm_moria_orc_shield_c|Морийский орочий щит
 itm_gundabad_armor_a|Гундабадские орочьи лохмотья
@@ -486,8 +439,8 @@ itm_gundabad_armor_b|Гундабадская орочья меховая оде
 itm_gundabad_armor_c|Гундабадская орочья броня
 itm_gundabad_armor_d|Гундабадская орочья броня
 itm_gundabad_armor_e|Гундабадская орочья тяжёлая броня
-; itm_gundabad_helm_a|Leather Cap
-; itm_gundabad_helm_b|Leather Helm
+itm_gundabad_helm_a|Кожаная шапка
+itm_gundabad_helm_b|Кожаный шлем
 itm_gundabad_helm_c|Гундабадский шлем
 itm_gundabad_helm_d|Гундабадский шлем
 itm_gundabad_helm_e|Шлем волчьего наездника
@@ -507,7 +460,7 @@ itm_dun_helm_b|Дунландский рогатый шлем
 itm_dun_helm_c|Дунландский высокий шлем
 itm_dun_helm_d|Дунландский высокий шлем
 
-; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
+itm_dun_helm_e|Дунландский Олений Шлем
 itm_dun_shield_a|Дунландский щит
 itm_dun_shield_b|Дунландский щит
 itm_dun_berserker|Меч дунландского вождя
@@ -518,22 +471,26 @@ itm_dunland_spear|Дунландское копьё
 itm_dunnish_pike|Дунландская пика
 itm_rohan_armor_a|Роханская одежда
 itm_rohan_armor_e|Роханский хауберк
-; itm_rohan_armor_h|Rohan Leather Armor
+itm_rohan_armor_h|Роханская кожаная броня
 itm_rohan_armor_k|Роханский хауберк
-itm_rohan_armor_n|Роханская чешуйчатая броня
-itm_rohan_armor_p|Роханская броня
-; itm_rohan_armor_s|Rohan Guard Armor
+itm_rohan_recruit|Роханская подбитая куртка
+itm_rohan_leather|Роханский кожаный нагрудник
+itm_rohan_mail|Роханский хауберк
+itm_rohan_rider|Роханская броня всданика
+itm_rohan_scale|Роханская чешуйчатая броня
+itm_rohan_surcoat|Роханское сюрко
+itm_rohan_guard|Роханская броня стражника
 itm_rohan_light_helmet_a|Роханский лёгкий шлем
 itm_rohan_light_helmet_b|Роханский лёгкий шлем
-itm_rohan_inf_helmet_a|Роханский шлем пехотинца
-itm_rohan_inf_helmet_b|Роханский шлем пехотинца
-itm_rohan_archer_helmet_a|Роханский шлем лучника
-itm_rohan_archer_helmet_b|Роханский шлем лучника
-itm_rohan_archer_helmet_c|Роханский шлем конного лучника
-itm_rohan_cav_helmet_a|Роханский кавалерийский шлем
-itm_rohan_cav_helmet_b|Роханский кавалерийский шлем
-itm_rohan_cav_helmet_c|Роханский кавалерийский шлем
-itm_rohan_captain_helmet|Роханский шлем полководца
+itm_rohan_inf_helmet_a|Роханский шлем с прорезью
+itm_rohan_inf_helmet_b|Роханский шлем с прорезью
+itm_rohan_archer_helmet_a|Роханский шлем с наносником
+itm_rohan_archer_helmet_b|Роханский шлем с наносником
+itm_rohan_archer_helmet_c|Роханский шлем стражника
+itm_rohan_cav_helmet_a|Роханский шлем кавалериста
+itm_rohan_cav_helmet_b|Роханский шлем кавалериста
+itm_rohan_cav_helmet_c|Роханский шлем кавалериста
+itm_rohan_captain_helmet|Роханский шлем капитана
 itm_rohan_shield_a|Роханский щит
 itm_rohan_shield_b|Роханский щит
 itm_rohan_shield_c|Роханский щит
@@ -555,12 +512,10 @@ itm_rohan_2h_sword|Роханский боевой меч
 itm_mirkwood_light_scale|Лёгкая чешуйчатая броня лесного эльфа
 itm_mirkwood_armor_a|Лёгкая кожаная броня
 itm_mirkwood_armor_b|Лёгкая стёганая броня с чешуйками
-
-; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
+itm_mirkwood_armor_c|Королевская кольчуга Лихолесья
 itm_mirkwood_armor_d|Лёгкая стёганка
 itm_mirkwood_armor_e|Лёгкая кольчуга поверх стёганки
-
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+itm_mirkwood_armor_f|Чешуйчатый доспех Лихолесья
 itm_mirkwood_great_spear|Темнолесское большое копьё
 itm_mirkwood_war_spear|Темнолесское боевое копьё
 itm_mirkwood_short_spear|Темнолесское копьё
@@ -579,7 +534,7 @@ itm_harad_tunic|Харадская одежда
 itm_harad_padded|Харондорская подбитая броня
 itm_harad_hauberk|Харондорский хауберк
 itm_harad_lamellar|Броня-харасьяла
-; itm_harad_heavy|Harad Noble Armor
+itm_harad_heavy|Харадская благородная броня
 itm_harad_skirmisher|Лёгкое харадское одеяние
 itm_harad_archer|Харадская броня лучника
 itm_black_snake_armor|Броня-маранка
@@ -701,57 +656,56 @@ itm_rhun_helm_n|Рунийский шлем вождя
 itm_rhun_helm_o|Рунийский шлем вождя
 itm_rhun_greataxe|Рунийский большой топор
 itm_rhun_battleaxe|Рунийский боевой топор
-; itm_rhun_falchion|Savage Falchion
+itm_rhun_falchion|Дикарский фальшион
 itm_rhun_glaive|Рунийская глефа
+itm_rhun_greatfalchion|Дикарский большой фальшион
+itm_rhun_greatsword|Дикарский большой меч
+itm_rhun_shortsword|Дикарский короткий меч
 
-; itm_rhun_greatfalchion|Savage Great Falchion
-; itm_rhun_greatsword|Savage Great Sword
-; itm_rhun_shortsword|Savage Shortsword
-
-; itm_rhun_sword|Savage Sword
+itm_rhun_sword|Дикарский меч
 itm_rhun_shield|Рунийский каплевидный щит
-; itm_dale_light_a|Dale Militia Jacket
+itm_dale_light_a|Дейльская куртка ополченца
 
-; itm_dale_light_b|Northmen Light Lamellar
+itm_dale_light_b|Северный лёгкий ламелляр
 
-; itm_dale_med_a|Northmen Heavy Lamellar
+itm_dale_med_a|Северный тяжёлый ламелляр
 
-; itm_dale_med_b|Dale Leather Armor
+itm_dale_med_b|Дейльская кожаная броня
 
-; itm_dale_med_c|Dale Leather Over Mail
+itm_dale_med_c|Дейльская кожанка поверх кольчуги
 
-; itm_dale_med_d|Dale Lamellar Armor
+itm_dale_med_d|Дейльский ламелляр
 
-; itm_dale_heavy_a|Dale Lamellar Over Mail
+itm_dale_heavy_a|Дейльский ламелляр поверх кольчуги
 
-; itm_dale_heavy_b|Dale Plated Coat
+itm_dale_heavy_b|Дейльская пластинчатая куртка
 
-; itm_dale_heavy_c|Rhovanion Mail
+itm_dale_heavy_c|Рованионская кольчуга
 
 itm_dale_armor_l|Дейльская броня с оплечьем
 
 itm_dale_helmet_a|Дейльский лёгкий пехотный шлем 
 
-; itm_dale_helmet_b|Dale Light Archer Helm
+itm_dale_helmet_b|Дейльский лёгкий шлем лучника
 
 itm_dale_helmet_c|Дейльский пехотный шлем
 
-; itm_dale_helmet_d|Dale Archer Helm
+itm_dale_helmet_d|Дейлский Шлем Лучника
 
-; itm_dale_helmet_e|Barding Helm
+itm_dale_helmet_e|Шлем барда-лучника
 
-; itm_dale_helmet_f|Barding Helm
+itm_dale_helmet_f|Шлем барда-лучника
 
 itm_dale_sword|Дейльский короткий меч
 itm_dale_sword_long|Дейльский длинный меч
-itm_dale_sword_broad|Дейльский палаш
+itm_dale_sword_broad|Дейльский меч пехотинца
 itm_dale_pike|Дейльское копьё
 itm_dale_billhook|Дейльская алебарда
-; itm_dale_shield_a|Dale Tower Shield
+itm_dale_shield_a|Дейльский ростовой щит
 
-; itm_dale_shield_b|Dale Tower Shield
+itm_dale_shield_b|Дейльский ростовой щит
 
-; itm_dale_shield_c|Dale Round Shield
+itm_dale_shield_c|Дейлский круглый щит
 itm_dale_shield_d|Дейльский щит
 itm_umb_armor_a|Корсарская кожаная броня
 
@@ -773,51 +727,59 @@ itm_umb_helm_c|Корсарский шлем ополченца
 
 itm_umb_helm_d|Корсарский шлем налётчика
 
-; itm_umb_helm_e|Corsair High Helm
+itm_umb_helm_e|Корсарский высокий шлем
 
-; itm_umb_helm_f|Corsair High Helm
+itm_umb_helm_f|Корсарский высокий шлем
 
-; itm_umb_hood|Black Hood
+itm_umb_hood|Чёрный капюшон
 
 itm_corsair_boots|Корсарские сапоги
-itm_umb_shield_a|Корсарский баклер
+
+itm_umb_shield_a|Корсарский щит
+
 itm_umb_shield_b|Корсарский баклер
+
 itm_umb_shield_c|Корсарский баклер
+
 itm_umb_shield_d|Корсарский баклер
-itm_umb_shield_e|Корсарский баклер
+
+itm_umbar_spear|Умбарское короткое копьё
+
 itm_umbar_cutlass|Умбарская абордажная сабля
+
 itm_kraken|Абордажная сабля Кракена
-; itm_umbar_rapier|Umbar Boarding Sword
+
+itm_umbar_rapier|Умбарский абордажный меч
 
 itm_corsair_harpoon|Корсарский гарпун
 itm_corsair_sword|Корсарский экет
 
-; itm_corsair_throwing_dagger|Crooked Throwing Daggers
-itm_umbar_pike|Умбарская пика
-; itm_woodman_tunic|Woodmen Tunic
+itm_corsair_throwing_dagger|Кривые метательные ножи
+itm_umbar_pike|Корсарский трезубец
+itm_woodman_tunic|Рубаха лесовика
 
-; itm_woodman_scout|Woodmen Scout Cape
-; itm_woodman_padded|Woodmen Padded Armor
+itm_woodman_scout|Шапка лесовика-разведчика
+itm_woodman_padded|Подбитая броня лесовика
 itm_beorn_tunic|Беорнингская одежда
 itm_beorn_padded|Беорнингская подбитая броня
 itm_beorn_heavy|Беорнингская тяжёлая броня
 itm_beorn_berserk|Беорнингская одежда берсерка
 itm_beorn_chief|Беорнингская одежда вождя
 
-; itm_beorn_helmet|Bear Skullcap
+itm_beorn_helmet|Медвежий черепник
 itm_beorn_shield|Северный щит
 itm_beorn_axe|Беорнингский топор
-; itm_beorn_staff|Woodmen Staff
+itm_beorn_staff|Посох лесовика
 itm_beorn_battle_axe|Беорнингский боевой топор
-; itm_dwarf_shield_a|Dwarven Angular Shield
+itm_dwarf_shield_a|Гномий угловой щит
 
-; itm_dwarf_shield_b|Dwarven Tower Shield
+itm_dwarf_shield_b|Гномий ростовой щит
 
-; itm_dwarf_shield_c|Dwarven Fighting Shield
+itm_dwarf_shield_c|Гномий боевой щит
 
-; itm_dwarf_shield_d|Dwarven Round Shield
+itm_dwarf_shield_d|Гномий круглый щит
 
-itm_north_round_shield|Гномий щит
+itm_north_round_shield|Северный круглый щит
 
 itm_free_dwarf_shield_g|Гномий щит
 
@@ -827,15 +789,15 @@ itm_free_dwarf_shield_j|Гномий щит
 
 itm_free_dwarf_shield_k|Гномий щит
 
-; itm_woodmen_heavy|Mirkwood Armor
+itm_woodmen_heavy|Темнолесская броня
 
 itm_dwarf_sword_a|Гномий меч
 
-; itm_dwarf_sword_b|Beorning Shortsword
+itm_dwarf_sword_b|Беорнингский короткий меч
 itm_dwarf_sword_c|Гномий меч
 itm_dwarf_sword_d|Гномий меч
 
-; itm_dwarf_battle_axe|Dwarf Battle Axe
+itm_dwarf_battle_axe|Гномий боевой топор
 
 itm_dwarf_great_axe|Гномий большой топор
 
@@ -855,51 +817,50 @@ itm_dwarf_spear|Гномье копьё
 
 itm_dwarf_spear_b|Гномья пика
 
-; itm_dwarf_spear_c|Dwarf Longaxe
+itm_dwarf_spear_c|Гномий длинный топор
 
 itm_dwarf_helm_coif|Гномий койф
 
-; itm_dwarf_nasal_b|Dwarf Nasal Helm
+itm_dwarf_nasal_b|Гномий шлем с наносником
 
 itm_north_skullcap|Северний черепник
 
-; itm_dwarf_helm_kettle|Dwarf Kettle Helm
+itm_dwarf_helm_kettle|Гномья шапель
 
 itm_dwarf_helm_fris|Гномий хохлатый шлем
 
-; itm_north_leather_skullcap|North Light Skullcap
+itm_north_leather_skullcap|Северный лёгкий черепник
 
 itm_dwarf_hood|Гномий капюшон
 
 itm_dwarf_nasal|Гномий топфхельм с носовой пластиной
 
-; itm_north_nasal_helm|North Nasal Helm
+itm_north_nasal_helm|Северный шлем с наносником
 
 itm_dwarf_helm_p|Гномий королевский шлем
 
-; itm_dwarf_miner|Dwarf Light Helm
+itm_dwarf_miner|Гномий лёгкий шлем
 
-; itm_north_chieftain|North Chieftain Helm
+itm_north_chieftain|Северный шлем предводителя
 
-; itm_dwarf_helm_round|Dwarf Round Helm
+itm_dwarf_helm_round|Гномий закруглённый шлем
 
-itm_free_dwarf_helm_v|Гномий салад с кольчугой
+itm_dwarf_helm_sallet|Гномий саллет
 
-; itm_dwarf_helm_sallet|Dwarf Sallet
+itm_dwarf_armor_d|Чешуйчатая куртка Железных Холмов
+itm_dwarf_armor_a|Эреборская куртка поверх кольчуги
 
-; itm_dwarf_armor_a|Erebor Mail
+itm_leather_dwarf_armor|Гномья подбитая куртка
 
-itm_leather_dwarf_armor|Гномья стёганка поверх кольчуги
+itm_dwarf_armor_b|Эреборская рубаха поверх кольчуги
 
-; itm_dwarf_armor_b|Erebor Scale
+itm_leather_dwarf_armor_b|Гномья подбитая кожанка
 
-itm_leather_dwarf_armor_b|Гномья стёганка поверх рубашки
-
-itm_dwarf_armor_c|Гномья чешуйчатая броня поверх кольчуги
+itm_dwarf_armor_c|Эреборская чешуйчатая кольчуга
 
 itm_dwarf_vest|Гномья одежда
 
-; itm_dwarf_vest_b|Iron Hills Mail
+itm_dwarf_vest_b|Кольчуга Железных Холмов
 itm_dwarf_pad_boots|Гномьи подбитые сапоги
 itm_dwarf_chain_boots|Гномьи кольчужные чулки
 itm_dwarf_scale_boots|Гномьи чешуйчатые сапоги
@@ -907,6 +868,7 @@ itm_good_mace|Булава
 itm_far_harad_shield_paint|Плетёный щит
 itm_nazgulrobe|Мантия назгула
 
+itm_werewolf|Оборотень
 itm_mordor_banner|Мордорское знамя
 itm_isengard_banner|Изенгардское знамя
 itm_woodelf_banner|Темнолесское знамя
@@ -916,13 +878,7 @@ itm_gondor_lance_banner|Гондорское копьё с флажком
 itm_amroth_lance_banner|Дол-амротское копьё с флажком
 itm_rohan_lance_banner_sun|Роханское копьё со знаменем солнца
 itm_rohan_lance_banner_horse|Роханское копьё со знаменем коня
-itm_ent_body|Энтийское туловище
-itm_ent_head_helm|Энтийская голова
-itm_ent_head_helm2|Энтийская голова
-itm_ent_head_helm3|Энтийская голова
-itm_ent_feet_boots|Энтийские ноги
-itm_ent_hands|Энтийские руки
-itm_galadriel|Костюм Галадриэль
+
 itm_ent_water|Странная чаша с водой
 itm_map|Карты Средиземья
 itm_athelas_reward|Побег ателаса
@@ -938,7 +894,8 @@ itm_torque_reward|Ожерелье зла
 itm_orc_brew|Орочье пойло
 itm_rohan_saddle|Седло Тенгеля
 itm_mearas_reward|Жеребец-меар
-itm_sword_of_arathorn|Меч Араторна
+
+itm_shield_of_tuor|Щит Туора
 itm_riv_armor_reward|Ривендельская украшенная броня
 itm_westernesse1h_reward|Нуменорский меч
 itm_westernesse2h_reward|Меч Великого змея
@@ -960,23 +917,22 @@ itm_miruvor_reward|Фляжка мирувора
 itm_wheeled_cage|Огромная клетка на колёсах
 itm_orc_throwing_axes_reward|Гундабадские метательные топоры 
 itm_corsair_throwing_dagger_reward|Отравленные метательные кинжалы
-; itm_dwarf_shield_reward|Shield of Kheled-zaram
+itm_dwarf_shield_reward|Щит Келед-Зарама
 itm_dwarf_great_axe_reward|Гномья острая секира
 itm_isen_uruk_heavy_reward|Броня воеводы урук-хай
 itm_lorien_bow_reward|Нолдорский лук
 itm_lorien_sword_reward|Галадримский меч
-; itm_dale_sword_reward|Dale Royal Sword
+itm_dale_sword_reward|Дэйльский королевский меч
 
-; itm_dale_armor_reward|Dale Noblemen Mail
+itm_dale_armor_reward|Дэйльская благородная кольчуга
 itm_leather_gloves_reward|Охотничьи перчатки
 itm_beorn_shield_reward|беорнингский щит
-; itm_beorn_axe_reward|Bear Club
+itm_beorn_axe_reward|Медвежья дубина
 itm_moria_arrow_reward|Морийские отравленные стрелы
 itm_khamul_helm|Шлем Хамула
 itm_gandstaff|Посох мага
 itm_sarustaff|Посох мага
 itm_rohan_armor_th|Роханская королевская броня
-itm_denethor_robe|Мантия Наместника
 itm_prisoner_coll_chain|Кандалы
 itm_witchking_helmet|Ужасный шлем
 itm_lorien_royal_armor|Лориэнская королевская броня

@@ -1703,7 +1703,7 @@ str_fullname_region_rohan3|安诺瑞安东境，洛汗国的一部分，骑士�
 str_fullname_region_rohan4|安诺瑞安西境，洛汗国的一部分，骑士的据点。
 str_fullname_region_rohan5|圣盔谷，白山脉的一部分，洛汗领地。
 str_fullname_region_the_wold|沃德，北边的骑士据点，洛汗领地。
-; str_fullname_region_gap_of_rohan|the Gap of Rohan, the eastermost border of Rohan, a contested area between the Rohirrim and the Dunlendings.
+; str_fullname_region_gap_of_rohan|the Gap of Rohan, the westernmost border of Rohan, a contested area between the Rohirrim and the Dunlendings.
 str_fullname_region_entwash|树沐河河口，在这里这条洛汗的河与安都因河相汇。
 ; str_fullname_region_wetwang|Nindalf, the swamps of Wetwang
 str_fullname_region_dead_marshes|死亡沼泽，曾经的达哥拉之战就在这里开战，而现在这里是一块受诅咒的地方
@@ -1996,3 +1996,303 @@ str_cmenu_follow|伴随
 ; str_tactical_controls|Use the keyboard NUMBERS to select a division. Press 0 to select your entire force.^^Use F1-F4 to order selected divisions. Keep the F1 key down to place selected divisions. One may target an enemy division through this mechanism.^^Pressing the ENTER key often initiates an overhead Strategy Camera.^^Pressing the BACKSPACE key often initiates a Battle Command Display with 'radar.'
 ; str_division_placement|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward.
 ; str_formations|The Complex Formations on the Battle Menu are:^^- RANKS with best troops up front^- SHIELD WALL, ranks with shields in front and longer weapons in back^- WEDGE with best troops up front^- SQUARE in no particular order^- NO FORMATION^^Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times.
+; str_npc18_intro|Great One, hold a moment! I would speak with you!
+; str_npc19_intro|Hold a moment, Commander. I would have words with you. No, no, you need not kneel, even though you speak to one of royal blood.
+; str_npc20_intro|Wait. You. I've seen you. I know your face. A dream I had, of you - but why would it be you? Now that I see you with mine own eyes, you are little more than a lowly snaga!
+str_npc21_intro|欢迎来到黄金宫，战士！
+str_npc22_intro|嘿！你好，{playername}。
+str_npc23_intro|离我远点，陌生人！我可不希望和你说话！
+str_npc24_intro|我是凯利，德瓦林的儿子。为您服务是我的荣幸！
+str_npc25_intro|迎来到伊顿河谷，旅行者！有什么我可以做的吗？
+; str_npc26_intro|Ssh! If you so much as wave to the guards, I'll slice out your gizzard and feed it to the wargs!
+str_npc27_intro|你！
+; str_npc18_intro_response_1|A slave in stocks, bound for death, would speak with me? What have you to say?
+; str_npc19_intro_response_1|Royal blood you say? Ha! What makes you think you have even a drop of it?
+; str_npc20_intro_response_1|Look here, what do you mean by this, witch? Who are you?
+str_npc21_intro_response_1|问候，我亲爱的女士。我需要用荣誉与谁对话？
+str_npc22_intro_response_1|用我崇高的敬意问候您，精灵王！
+str_npc23_intro_response_1|这就是西尔凡精灵的待客之道？
+str_npc24_intro_response_1|为您服务{playername}。都灵的人们怎么样？
+str_npc25_intro_response_1|您好！我在想这里有没有一些志愿者想要加入到我们的冒险旅途里？
+str_npc26_intro_response_1|不要来威胁我，强兽人！我不是个告密者！
+str_npc27_intro_response_1|你是谁？
+; str_npc18_intro_response_2|I will not waste words on a slave bound for death.
+; str_npc19_intro_response_2|Impudent wretch. Out of my way.
+; str_npc20_intro_response_2|I have no time for your mad ravings, sorceress.
+str_npc21_intro_response_2|对不起，我还有事。
+str_npc22_intro_response_2|对不起，我还有其他的安排。
+str_npc23_intro_response_2|嗯。。。我觉得我该走了。再见！
+str_npc24_intro_response_2|别在意，我只是想呼吸下新鲜空气。
+str_npc25_intro_response_2|别在意，我只不过在这转转，看看风景。
+str_npc26_intro_response_2|我必须上路了，否则我握着剑的手臂会发痒，所以我还是走吧！
+str_npc27_intro_response_2|[无视并离开]
+; str_npc18_backstory_a|I am no mere slave! I am a head-taking warrior, cheated of my rightful place among the ranks! You see that I am a woman, but I am stronger and swifter than many others, and I've outfought more men than I can count. The Pit Master - accursed be he! He set me a test, to fight three men at once. Three!
+; str_npc19_backstory_a|A small drop, to be sure, but my dam has told me all about my lineage. I am Heidrek, direct descendant of King Fengel, closer to the throne of Rohan and Dunland than any of our chieftains! Dark is my hair, but I fancy I have more than a strand of yellow in there somewhere.
+; str_npc20_backstory_a|In my dream, there was a tree. A tree, all of white. And you, you were there, standing beside it. You placed your hand upon its trunk, and lo, it withered down to its very roots. And the shadow in the sky lengthened, and the air grew heavy. I heard a laughter then, from far away in the east. 
+str_npc21_backstory_a|我的名字是格拉密尔。让我告诉你我的故事吧！
+str_npc22_backstory_a|你或许听说过我的事迹。这场战争给精灵族带来了很多的危险。而我相信这将是最后一场战争，我们这族的兴衰就看此一役。
+str_npc23_backstory_a|原谅我的直率，陌生人。不过我们这里没有太多访客，而来的似乎都对我们不怀好意。上周，这个矮人出现。。。对不起，我说多了。我的名字叫做鲁瓦纳。幽暗森林的一个精灵。
+str_npc24_backstory_a|你非常有礼貌，{playername}。我们正在与兽人们战斗，不过到现在我们的军队和河谷镇的盟友们还可以掌握局势。
+str_npc25_backstory_a|我相信你会找到一些你正需要的志愿者，去问问兵营的长官，他们总是乐意把一些待命的新兵交给一些有经验且值得信任的军士。不过我和那些新兵不同，我是一个擅长草药学的医生，或许我会加入一支军队来完成我的事业，赚取一些名利。。。
+str_npc26_backstory_a|好啊！我的名字叫古拉姆。我以前带着一些战士在外游击。有一次我们撞上了人类的部队，我记得那个不要脸的懦夫从前面夹着尾巴逃回来，嘴里大喊着：“快跑！！！”我和其他几个坚守者在敌人冲锋时刺倒了他们的马，然后后来他们被迫后撤，我也扛着几个敌人的尸体全身而退。哈哈！要不是我的坚持，我们可要全军覆没，成了那些食腐虫的食物了。哈哈！
+str_npc27_backstory_a|我是
+; str_npc18_backstory_b|I prevailed! I defeated them! But... one of them was so weak that he perished from the blows I dealt him. If he had been a simple bondsman, that would have been the end of it. But no. He was one of Great Lord Lurmsakun's many sons, by a lesser wife.
+; str_npc19_backstory_b|Well, you will not find any of Rohan or Dunland who will accept my claim, but it is a true one nonetheless. My grand-dam was a herdswoman, living in the hills, and one day it chanced that old King Fengel, the greedy grasping grandfather of Theoden the Pretender, happened to see her on the banks of the Isen. He took a fancy to her, and my dam was his child.
+; str_npc20_backstory_b|Do you not know before whom you stand? Ignorant fool. Know that I am Zigûrphel, of ancient Akallabêth - but like as not you know nothing of that name! Know, also, that I seek to redress the wrongs of long ago, the wrongs wrought upon me and my people by the spite of the Valar, they who sank our Great Armament and our home. Ah, Ar-Pharazôn, great and glorious! Shall your vision be unremembered evermore? No, not so long as Zigûrphel lives and has hands to do her work!
+; str_npc21_backstory_b|I was born into a noble family and I have been serving Lady Éowyn as a maid of honour ever since we were little girls. Our fathers were wise enough to allow us to train alongside our brothers in matters of combat, to become shieldmaidens of Rohan.
+; str_npc22_backstory_b|Lord Elrond sent me as an emissary to Lord Celeborn, to give aid and advice as it's needed in the War in this part of Rhovanion.
+; str_npc23_backstory_b|I like to walk the hidden paths in our beautiful forest. Sometimes I move quietly through the trees and observe the habits of the many woodland animals. The song of a rare bird, the nesting of a wild boar are as beautiful to me as the clash of weapons and great walls are to the Edain.
+; str_npc24_backstory_b|I helped improve the Erebor defenses and trained some younger dwarven folk, under the direction of my venerated father Dwalin, as is our custom.
+; str_npc25_backstory_b|I have treated my King Brand for constipation, a common malaise affecting men going to war. A light brew of wormwood, and both the bowels and the mind are put at ease.
+; str_npc26_backstory_b|So I said to myself, 'Gulm, you want end up as carrion?' and I answered, 'No'.^Next battle, I fell back pretending I was injured. Then, with no one watching, I fell upon my sergeant! Cleaved him almost in half, gharr! Then cut his sidekick snaga nicely^^...Turned out that bloody creeper survived somehow, and started waggling his tongue about all this. Next time I make sure his head is off, gharr...
+str_npc27_backstory_b|我是艾辛格的一个狼骑士，或者说我是一个跟踪专家。
+; str_npc18_backstory_c|And so here I am, cursed at and spit upon, condemned to die for being mightier than the dogs who mock me! Free me, Great One. Free me, speak for me - and my strength is yours. My blade is yours. My life is yours!
+; str_npc19_backstory_c|Naturally, Chief Daeglaf and the rest wish to give me no chance at all for glory, for if I were to perform great deeds in battle, it would lend wings to my claim. Men would flock to my banner then! Your fame runs before you, Commander. If you will allow me to serve under your banner, I can perform those great deeds for you.
+; str_npc20_backstory_c|O Akallabêth, where are you now? Faded, all faded away... Where there once was light, the glory of our nation that was great above all others, now there is only the Shadow. My beautiful home now knows the eternal silence of the sea. But my heart is still full of fire, and dark beasts run wild within it. I know potent arts that you and your kind have never even imagined. Hearken unto me, now! Will you beg for my aid, as you should, or will you go from here skulking, like a worm? Choose swiftly!
+; str_npc21_backstory_c|You might know that women, however skilled, are not allowed to ride with the éoredas. However, I do not think that waiting by the hearth for the warriors to return is my fate. I will not sit idle until all chance of great deeds is gone in this War, and I would welcome your assistance, warrior.
+; str_npc22_backstory_c|However, if the enemies of Lothlórien are on the run, I might consider joining you for a while, {playername}. I sense our fates in this War are interwoven.
+; str_npc23_backstory_c|You wouldn't understand that, I think, seeing you prepared for war. But you must have travelled far and wide - have you seen the other great forests? Can you take me there?
+; str_npc24_backstory_c|There is a lull in the fighting that ill-suits a dwarven warrior of my ancestry and temperament. I gather you get to see much more action in your travels and your cause is friendly with the dwarves? I know a fighting dwarf will greatly improve your chances of survival.
+; str_npc25_backstory_c|I hear there is much fighting elsewhere and our lands are gratefully spared for now. From the scratches on your armor you must have been in danger many times. Maybe my humble skills could be better used with your company, for the greater good of all.
+; str_npc26_backstory_c|I am a fighting Uruk-hai, and a berserker! What there is to know of killing men, I know it. I was in the service of the White Hand, but now the Hand would as likely throw me into the fire-pits.^^I would come with you and hunt men in the south, while the snagas of Isengard gnash their teeth.
+str_npc27_backstory_c|或许您能当我的下一位主人！
+; str_npc18_backstory_later|I have been fortunate, I suppose, that Great Lord Lurmsakun has been occupied elsewhere. His intendants have left me here to rot. But my destiny is not to die as a prisoner! Have you come to grant me my rightful death on the battlefield?
+; str_npc19_backstory_later|Ho there! You have returned, as I knew you would. My hands are kept idle by my jealous chiefs. Let us speak, Commander! I would follow you, and fight in your ranks to win for myself renown.
+; str_npc20_backstory_later|You trouble my dreams still! Will you give me no peace? My dreaming eye sees deep and far. Here in Dol Guldur I still have visions of your works. I say this: if you were wise, you would have asked for my aid again ere now.
+str_npc21_backstory_later|更多的骑手拖着他们残破的身躯回来了，我一直尽我所能去救治他们。不过我还是觉得我太无所事事了，我还是该走出这里,出去征战。
+str_npc22_backstory_later|您重新考虑过了吗？我们的时间不多了。
+str_npc23_backstory_later|我在过去的一段时间观察了大蜘蛛的巢穴。啊，那个好丑。。。您是回来问我要不要加入您的吗？
+str_npc24_backstory_later|建起防御的城墙对所有矮人都有好处。不过我还是不想就这样抛下我的战斧！我随时都准备好跟随一个像您这样的战士出去战斗。
+str_npc25_backstory_later|哎，我还是有胃痛和呕吐的病啊。医生说我需要多活动，或许您愿意带上我。我不会成为累赘的。
+str_npc26_backstory_later|你觉得我该干什么。古拉姆正坐在这儿等着他的奴隶出现。带上我吧，我会好好服侍你的。
+str_npc27_backstory_later|您回心转意了吗？我会好好服侍您的！
+; str_npc18_backstory_response_1|If you are truly as ferocious as you look, perhaps you could fight for me. After we feed you up a bit, of course.
+; str_npc19_backstory_response_1|Very well. As long as you can fight in the battle line, you can be of use, Dunlending.
+; str_npc20_backstory_response_1|Strange way of asking to join me, witch. But very well, you may come along.
+str_npc21_backstory_response_1|我欢迎一个洛汗女盾手的加入，如果您乐意。
+str_npc22_backstory_response_1|可能我对你的要求有些冒昧，但是我的部队在接下来的战役中需要你的才能。
+str_npc23_backstory_response_1|我们环游整个中土大陆，不过当邪恶想要打破平衡时，我们给他们带去战争！
+str_npc24_backstory_response_1|诚然，一个矮人战士是我们非常欢迎的。
+str_npc25_backstory_response_1|我们需要你这样的医生。
+str_npc26_backstory_response_1|噢，狂战士，只要你乐意，欢迎入伍！
+str_npc27_backstory_response_1|你会的。
+; str_npc18_backstory_response_2|Pah! A murderous pit dog is not fit to be a companion of mine.
+; str_npc19_backstory_response_2|You talk of great deeds. Go and do some of your own, before you approach me again!
+; str_npc20_backstory_response_2|Pah! I'm guessing your bark is far worse than your bite. I have work to do!
+str_npc21_backstory_response_2|对不起，我的女士，我什么都做不了。
+str_npc22_backstory_response_2|我会等到洛丝萝林更加安全时再回来的。
+str_npc23_backstory_response_2|抱歉，我必须走了。
+; str_npc24_backstory_response_2|No, sorry. We do well on our own.
+; str_npc25_backstory_response_2|No, sorry. We only visit healers when we need them.
+; str_npc26_backstory_response_2|Bah. I don't trust traitors.
+str_npc27_backstory_response_2|我不需要你，奴隶。
+; str_npc18_signup|Oh, to sink my teeth into meat again! You'll see my true mettle soon enough, once my hands and feet are free, and I have food in my belly!
+; str_npc19_signup|Yes, you may call me that for now, for I am not ashamed of my Dunlending blood. My people have suffered greatly under the tyrant kings of Rohan, and I feel no small kinship with them. I will aid you in this war, and in all your efforts. But in return, Commander, you must help me press my claim when the time comes.
+; str_npc20_signup|I will overlook your haughtiness for a time, but know that someday we shall have words. Perhaps by then, we shall both be standing before the Dark Lord, whom I once knew by a much different name, and then we shall see who has his ear. Perhaps then I shall teach you manners.
+; str_npc21_signup|It is gladly offered, and you can welcome me to your company, commander.
+; str_npc22_signup|I see. I admit I have heard of you and your exploits.
+; str_npc23_signup|I dislike violence and weapons of war, but I know how to defend myself in a hurry.
+; str_npc24_signup|I am skilled with an axe, both the wielding and the throwing type. I can also keep your bills low if you let me talk to the merchants. And I have an eye for finding the best pieces of loot from fallen enemies on the battlefield.
+; str_npc25_signup|Indeed? Well then, I merely need to gather my herbs and recipees.
+; str_npc26_signup|A fighting Uruk is worth more than all your snagas. A fighting Uruk never runs from battle.
+; str_npc27_signup|Really? You would do well to enlist me.
+; str_npc18_signup_2|My mother once told me, I was born to hew many foemen. For you, I will slay many soft weaklings of the West. Only put a good blade into my hands, and I will do the rest!
+; str_npc19_signup_2|I fight as my people do, like wolves in the night - I may fling a spear, or drive a pike into the chest of a charging horseman. Limbs I hew with axe or sword. With you, I will speak openly: I care not if you give more service to the Eye or the White Hand. It is all one to me, as long as I can sit my rightful throne in the Golden Hall.
+; str_npc20_signup_2|But for now, let my lore and craft founded in long years be yoked to your service. Know this: with Zigûrphel's aid, you are as a dragon given its wings in the pit of Utumno. Great things I will do for you and your purpose, though you comprehend them not!
+; str_npc21_signup_2|I have hunted game many times with bows and throwing spears. I will hunt orc under your command. And I have some skill in healing I'm certain will be needed.
+; str_npc22_signup_2|Perhaps by joining your company and striking hard where I am not expected, the Enemy will be unbalanced. I will come.
+; str_npc23_signup_2|Perhaps I can teach you to move faster and make less noise. Let's go.
+; str_npc24_signup_2|If you can keep the tall-folk in your company in line, especially the sneaky Elves, I'll gladly join you.
+; str_npc25_signup_2|I must warn you though, I am fairly useless in battle. But I'm sure you are able to keep a woman of my age safe.
+; str_npc26_signup_2|But you must decide quickly, the guards here are getting suspicious.
+; str_npc27_signup_2|You won't regret taking me on.
+; str_npc18_signup_response_1|I like your spirit. Very well, I will send word to Lurmsakun on your behalf.
+; str_npc19_signup_response_1|Well, then, 'Prince', take up your weapons. You fight for me, now.
+; str_npc20_signup_response_1|I hope, for your sake, that your words are not idle boasting. Do not disappoint me, Zigûrphel.
+str_npc21_signup_response_1|这太感人了我的女士，我们马上就出发。
+str_npc22_signup_response_1|我们的部队很荣幸有您的存在。
+str_npc23_signup_response_1|非常好，不过我可不想看到你一见半兽人就跑了。
+str_npc24_signup_response_1|非常好，矮人先生，我们欢迎您。
+str_npc25_signup_response_1|您与我们在一起非常安全。准备好，我们就要出发了。
+str_npc26_signup_response_1|非常好，如果你能做到你所说的，我会好好犒劳你的。
+str_npc27_signup_response_1|非常好，我们走吧。
+; str_npc18_signup_response_2|Your are fierce... perhaps too fierce. A little more time in the stocks for now might teach you obedience.
+; str_npc19_signup_response_2|You shall have to sit on these bales of hay for a little longer, 'Prince'.
+; str_npc20_signup_response_2|Your brag and abuse grate upon my ears. Tame your tongue before we speak again!
+str_npc21_signup_response_2|向您道歉，我的女士，或许下次我们会有更好的机缘。
+str_npc22_signup_response_2|三思之后，我觉得您还是守在这里吧。
+str_npc23_signup_response_2|对不起，我还是不能想象您上战场的样子。
+str_npc24_signup_response_2|对不起，我们还是不能让您加入。
+str_npc25_signup_response_2|对不起，我的部队里人人都会战斗。
+str_npc26_signup_response_2|我改主意了，不过我相信很快就会有人再来找你的。
+str_npc27_signup_response_2|我改主意了。
+; str_npc18_payment|Surely, a mighty commander of your stature has only but to say the word, and they will release me. [costs {reg14} Influence with {s14}]
+; str_npc19_payment|It seems Daeglaf the Black may seek some excuse to hold me here, Commander. [costs {reg14} Influence with {s14}]
+; str_npc20_payment|Rather, it is you who would do well not to disappoint me or the Master we both serve. Have you done well enough in his estimation? [costs {reg14} Influence with {s14}]
+str_npc21_payment|我很想加入你，可是我走了谁来照顾伤员？[需要{reg14}{s14}影响力]
+str_npc22_payment|虽然我很想跟你走，可是洛丝萝林还需要我。[需要{reg14}{s14}影响力]
+str_npc23_payment|我很想加入您的队伍，不过我的职责是守卫这里。[需要{reg14}{s14}影响力]
+str_npc24_payment|我应该跟您走，可是我怕父亲不能原谅我在需要的时刻离开镇子。[需要{reg14}{s14}影响力]
+str_npc25_payment|我还是不能放弃我的职责，我的国王仍然需要我在这里守卫他。[需要{reg14}{s14}影响力]
+str_npc26_payment|我非常想跟你走，可是我怕门口的守卫不会放行。[需要{reg14}{s14}影响力]
+str_npc27_payment|我很想加入您的队伍，不过我的职责是守卫这里。[需要{reg14}{s14}影响力]
+; str_npc18_payment_response|No doubt of that. Lurmsakun's subordinates will not dare refuse me. [costs {reg14}/{reg15} Influence]
+; str_npc19_payment_response|Chief Daeglaf will have to give way before my wish, once I make it plain. [costs {reg14}/{reg15} Influence]
+; str_npc20_payment_response|Indeed I have. Come now! It is not, after all, a lowly snaga you will follow. [costs {reg14}/{reg15} Influence]
+str_npc21_payment_response|这很伟大，不过一定有办法找到代替你的人。[花费{reg14}/{reg15}影响力]
+str_npc22_payment_response|相信我，你和我在一起更有用。[花费{reg14}/{reg15}影响力]
+str_npc23_payment_response|从今往后你的职责就是效忠我。[花费{reg14}/{reg15}影响力]
+; str_npc24_payment_response|Master Dwalin will understand that a battle-worthy dwarf should not be kept from our enemies for too long. [costs {reg14}/{reg15} Influence]
+str_npc25_payment_response|国王的安危虽然重要，可是跟我走你能拯救更多的人。[花费{reg14}/{reg15}影响力]
+str_npc26_payment_response|噢，放心吧，和我在一起的话守卫不会为难你的。[花费{reg14}/{reg15}影响力]
+str_npc27_payment_response|从今往后你的职责就是效忠我。[花费{reg14}/{reg15}影响力]
+; str_npc18_morality_speech|Great One! My thirst for blood is unslaked! Why do we {s21}, like cowards? Let me fight them!
+; str_npc19_morality_speech|Commander, I mislike it greatly that we {s21}. A king like myself should ever be open-handed, but if the larders are empty I have nothing to give, and our soldiers will desert us.
+; str_npc20_morality_speech|I would say I had expected better of you, Commander, but that would be a lie. Beware, lest your self-serving ways do harm to the lofty designs of your betters!
+; str_npc21_morality_speech|Take no heed to what the soldiers say, sometimes to {s21} is the wisest course of action. I for one appreciate the lives spared and limbs unbroken, if for nothing else but to fight another day, when fate looks upon us with favor.
+str_npc22_morality_speech|您必须注意您的行动和其后果。{s21}使我和其他战士们脸面无存，而我们的盟友知道了也会失去自信。
+; str_npc23_morality_speech|[No primary moral code]
+str_npc24_morality_speech|我很不高兴您决定{21}。在战场上逃亡使我们这里的所有人都丢了一个战士的荣誉。作为一个矮人，我们是很看重气节的，我不知道我的兄弟们听说了会怎么评价我和您。
+str_npc25_morality_speech|指挥官，我必须说，刚刚您决定{s21}了。我认为您这样落荒而逃反而会折兵损将，而这也是没必要的。我尽一切所能来保护那些受伤的军士们，但愿您以后也会注意一些。
+str_npc26_morality_speech|一个会打仗的强兽人从不{s21}。如果主人您现在还有勇气……或许您就快要失去这宝贵的东西了。这就是我要说的。
+; str_npc27_morality_speech|[No primary moral code]
+; str_npc18_2ary_morality_speech|I joined you not to {s21}, Great One, but to bathe in the blood of our foes! You may employ your guile for now, but give me a good slaughter soon, I beg you!
+; str_npc19_2ary_morality_speech|[No secondary moral code]
+; str_npc20_2ary_morality_speech|Ah, our mighty Commander. Great deeds you performed, you say? I wonder how many other of your battles ended this way, with you advancing recklessly into the jaws of a trap, and fleeing with as much haste.
+str_npc21_2ary_morality_speech|向您致意，指挥官。但是即使是一个女人，我也是个战士，我宁可死也不会{s21}。您的决定给我的家族带来了羞耻。希望您能接受我的建议。
+; str_npc22_2ary_morality_speech|[No secondary moral code]
+; str_npc23_2ary_morality_speech|[No secondary moral code]
+; str_npc24_2ary_morality_speech|[No secondary moral code]
+; str_npc25_2ary_morality_speech|[No secondary moral code]
+; str_npc26_2ary_morality_speech|[No secondary moral code]
+; str_npc27_2ary_morality_speech|[No secondary moral code]
+; str_npc18_personalityclash_speech|Great One, if you value Varfang as a warrior, I beg that you keep him as far away from me as possible. I have already warned him that his hands must not go where I will not let them, or I shall chop them off and feed them to his horse. 
+; str_npc19_personalityclash_speech|Commander, I wonder greatly that you retain the services of a lowly creature like Ufthak. Of course, the orc-kind are scum and arrow-shields for our true warriors, but he stalks around the camp giving orders to man and orc alike, as if he were one with authority. I hope you do not miss him too greatly if I slay him. Or perhaps I will simply cleave off the end of his ugly nose.
+; str_npc20_personalityclash_speech|The Southron Lykyada should learn manners, and be taught humility. Insolent is his tongue, and overproud his bearing! I care not that he is a captain among his men - a foolish lesser race they are, in any case, slow to recognise greatness or bow to their betters as they should! If he knew but a small part of what I could do to him...
+str_npc21_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc22_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc23_personalityclash_speech|{playername}，我刚刚看到{s11}走过一个鸟窝，他居然……哎，他怎么能很得下心去杀害这样的生灵呢？
+str_npc24_personalityclash_speech|{s11}大人在战场上非常英勇。但是我认为他把自己看得太高了。他应该稍微谦虚一些，至少对他的同伴。
+str_npc25_personalityclash_speech|指挥官，我刚与{s11}吵了一架。他还在给我起绰号，他叫我“绿精灵”。
+str_npc26_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+str_npc27_personalityclash_speech|我有没有提到我讨厌{ s11 } ?
+; str_npc18_personalityclash_speech_b|Gulm is not only a treacherous beast, Great One - he is proud of being one. He was telling us his story again around the campfire last night, and boasting of his foul deed. You would do well to watch that creature, Great One. If he could betray his commanders when serving the White Hand, what's to stop him from doing the same with you?
+str_npc19_personalityclash_speech_b|我不喜欢{s11}。
+; str_npc20_personalityclash_speech_b|Every time I set eyes upon Fuldimir, a nameless rage within me rises. No, no, it is nothing he has done. But he and his people, the sea-dogs of Umbar, are most unworthy of their blood. They dare call themselves heirs of ancient Anadûnê - but of course, they say 'Númenor', not knowing any better. Why, I would suppose that barely a drop of the true blood is to be found in Fuldimir's veins! Perhaps, if you can spare him, I could find out for myself...
+str_npc21_personalityclash_speech_b|我不喜欢{s11}。
+str_npc22_personalityclash_speech_b|我不喜欢{s11}。
+str_npc23_personalityclash_speech_b|他的矮人之魂或许使他骄傲，但是这也不能让他有权来对他的同伴苛刻！
+str_npc24_personalityclash_speech_b|我们应该拥有一个矮人的英雄在队伍里，而不是现在的那个。我只敬佩像都灵那样的大英雄。
+str_npc25_personalityclash_speech_b|或许我不该上战场，我该自己在后方研究研究草药。不过看着您的士兵在战场上追风，还是非常赏心悦目的。
+str_npc26_personalityclash_speech_b|我不喜欢{s11}。
+str_npc27_personalityclash_speech_b|我不喜欢{s11}。
+; str_npc18_personalityclash2_speech|Great One, I wish to ask, what is the blood price you have set on Varfang's head? If it happens that I kill or maim him, I would pay it to you as recompense. He was leering at me after that battle, licking his foul lips. If he looks at me that way again, I'll carve his eyeballs out and feed them to him.
+; str_npc19_personalityclash2_speech|As I expected, the cowardly orc calling himself Ufthak is of little worth in battle. He skulks behind the line, doing but little to aid his fellows. Your cause - and my fight for my throne - will not be helped overmuch by his kind, I think.
+; str_npc20_personalityclash2_speech|If Lykyada's hands were not of such use to us, Commander, I should remove them from his arms. You know that I am in the habit of walking among our fallen foes after a battle - there is great power in the fear and pain of the dying for one who has the art to use it, though none of you have the knowing of it. Yet he, that swarthy Southron, stalks around giving the gift of a swift death to those whose hurts are too deep for capture. That grain of mercy in his heart prevented me from basking in the death-glow of the fallen! How important is his precious honour to you, I wonder?
+str_npc21_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc22_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc23_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc24_personalityclash2_speech|一场不错的小站斗，不是吗指挥官？但愿下次那位精灵女士{s11}能够和敌人有些接触吧！
+str_npc25_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc26_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+str_npc27_personalityclash2_speech|我有没有提到我讨厌{ s11 } ?
+; str_npc18_personalityclash2_speech_b|That misshapen creature Gulm had better guard his neck, or I'll slice through it! I was about to slay a foe, but he stepped in front of me and made the kill that should have been mine. Then he had the gall to turn around and sneer at me! He and his kind had better remember that they were bred to serve us! Honourless curs.
+str_npc19_personalityclash2_speech_b|我不喜欢{s11}。
+; str_npc20_personalityclash2_speech_b|He cannot possibly be one of us. No, not one like Fuldimir. No, our blood cannot have thinned so much, our line cannot have fallen so far! Do none of you mark how little he speaks of the true speech, how in appearance he is much more like unto those of Haradwaith than of my lost home? We had heroes among us - heroes, who fought with swiftness and strength to rival the Eldar! Fuldimir is slow, and clumsy, and... No, I feel the cold wind blowing out of the West. It chills me... it chills me!
+str_npc21_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc22_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc23_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc24_personalityclash2_speech_b|我看见她在部队的后方慢慢移动，只朝着敌人的大致方向放了一两箭，我告诉她最好留在后方管好那些事……这样我们才能尽全力去宰了敌人。
+str_npc25_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc26_personalityclash2_speech_b|我不喜欢{s11}。
+str_npc27_personalityclash2_speech_b|我不喜欢{s11}。
+; str_npc18_personalitymatch_speech|Great One, do you mark how deadly Lykyada is in battle? How swift his arrows, how sharp his blade! With your permission, Great One, I should like to spend more time training under his tutelage. He has much he could teach me that could make me more useful to you.
+; str_npc19_personalitymatch_speech|The joy of battle sings in my blood! And in Varfang's too, I can see. The man is a terror to behold on the battlefield, laughing as he rides down the worthless foes who flee. These men from the East intrigue me, Commander. We could learn much of horsemanship from them, if the Rohirrim will not teach the Dunlendings after I come into my own.
+; str_npc20_personalitymatch_speech|Behold Bolzog. Bolzog the Great! See how he scurries with his bow-legged gait, coming and going at my whim, doing everything I ask of him. Just as a proper little 'urku' should, I say. I quite like him, Commander. Bolzog! Bring me the unguent! Now!
+str_npc21_personalitymatch_speech|一场完美的战斗，指挥官。我注意到了在击溃敌人后{s11}治疗伤员的认真与细致。我们正需要这样的战友。
+str_npc22_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc23_personalitymatch_speech|{playername}，虽然我非常讨厌战斗，但是{s11}大人在战场摧枯拉朽地消灭敌军之举还是令人钦佩。
+str_npc24_personalitymatch_speech|啊，又一个胜利。在胜利中您可以见证{s11}的出色。
+str_npc25_personalitymatch_speech|又一场胜利，恭喜您。我对您的战术安排非常赞赏，而像{s11}那样的精英战士也把您的战术发挥得淋漓尽致。
+str_npc26_personalitymatch_speech|我说过我喜欢{s11}吗？
+str_npc27_personalitymatch_speech|我说过我喜欢{s11}吗？
+; str_npc18_personalitymatch_speech_b|Great One, it speaks well of you that a warrior like Lykyada fights under your banner. I had thought all Southerners weak and decadent, not so different from the men of the West, but if they have more like him among their ranks, then the days of the West are indeed coming to an end.
+; str_npc19_personalitymatch_speech_b|Commander, Varfang and I were sharing a skin of wine around the campfires last night. Deep-counselled I deem him, for ever mindful is he of the deeds of his forebears, as one should be. I know not if, as he says, the spirits of our ancestors are with us. Indeed, I like not the thought. But a king must know the story of his blood, of mothers and fathers aforetimes. Varfang is one such who knows this.
+; str_npc20_personalitymatch_speech_b|I have never met an 'urku' quite like Bolzog. Oh, I grant you he is unlovely to look upon, but in all my long years he is the first one I've ever encountered who can do more than simply sneak, skulk and slaughter. His gnarled hands are surprisingly deft. Yes, so surprisingly deft... It may be that he can learn more of the arts of bone and sinew than I had reckoned at first.
+str_npc21_personalitymatch_speech_b|虽说许多人认为生命是最可贵的，不过我可以为那善良的灵魂去死，在这个阴暗的世界里那样的人太少见了。
+str_npc22_personalitymatch_speech_b|我喜欢{s11}。
+str_npc23_personalitymatch_speech_b|我在想他有多大年龄，或许比我大几千岁？算了，您不会明白的。
+str_npc24_personalitymatch_speech_b|{s11}的战斗技术虽然不能与矮人相比，不过她还是一个非常可靠的战友，我非常乐意与她并肩战斗。
+str_npc25_personalitymatch_speech_b|我们队伍里的一些人非常好，他们主动保护他们的战友。
+str_npc26_personalitymatch_speech_b|我喜欢{s11}。
+str_npc27_personalitymatch_speech_b|我喜欢{s11}。
+; str_npc18_retirement_speech|I think I want to settle down and raise a family and, I dunno, do embroidery or shit. Bye.
+; str_npc19_retirement_speech|Listen, strange men standing around claiming royal bastardy is no basis for a system of government.
+; str_npc20_retirement_speech|Maybe anger isn't the way. All we need is love. Why can't we all get along?
+str_npc21_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc22_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc23_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc24_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc25_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc26_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+str_npc27_retirement_speech|啊，我似乎对战士的生活有些厌倦了，我准备退伍。
+; str_npc18_rehire_speech|My blade yet thirsts for blood, Great One. Let me come with you again!
+; str_npc19_rehire_speech|It is good to see you again, Commander. Give me leave to rejoin your company.
+; str_npc20_rehire_speech|Let us be off, Commander. This war will not be won with idleness!
+str_npc21_rehire_speech|很高兴再次见到您。我们要不要再次一起走？
+str_npc22_rehire_speech|见到您太好了{playername}，我们要一起走吗？
+str_npc23_rehire_speech|见到您太好了{playername}，我们要一起走吗？
+str_npc24_rehire_speech|我的斧子已经磨利了， {playername}.您要我重新加入您吗？
+str_npc25_rehire_speech|您是一个厉害的队长，我该再次加入您吗？
+str_npc26_rehire_speech|古拉姆准备好为您杀敌了，我们要一起出发吗？
+str_npc27_rehire_speech|我能再次为您服务吗？
+; str_npc18_home_intro|Ah, the Anduin. Great One, you will have heard of the great victories of the Wainriders many generations ago? They made an alliance with us Variags, and together our warriors crushed the pitiful armies of Gondor, under the king they called Ondoher. What a glorious slaughter our forefathers must have enjoyed!
+; str_npc19_home_intro|Ah, Edoras. My rightful seat. Look up there, Commander, at the Golden Hall. Only a few generations ago, it was at the very doors of Meduseld that the last son of Helm Hammerhand was slain, and thereafter Wulf was King, for a time. Not the Wulf who is a Chief of Dunland now, of course - that one is a mere mongrel bearing the name of a greater creature.
+; str_npc20_home_intro|Ah, the Lonely Mountain. The last bastion of Durin's Folk, is it not, in these latter days? It is pleasant to see it with my own eyes at last. Pleasant, yes... but not as pleasant as the memory of that Dwarf's dying moments, which I made longer with my arts. Hardy are the Dwarfs, indeed! Yet Aulë the Maker did them no favours in making them so capable of suffering.
+str_npc21_home_intro|嘿，指挥官，我们在这里停一下吧！看那里，在安都因河口和林莱河之间是凯勒布兰特平原。曾经洛汗的开国王伊欧年轻时在这里集结部队支援刚铎。
+; str_npc22_home_intro|Daro! That's Angrenost and the black tower of Orthanc ahead. Much has changed since I last saw them, and none for the better.
+str_npc23_home_intro|打扰一下,{playername}，看样子这里就是多尔戈多附近了啊。
+; str_npc24_home_intro|Oy, captain! This must be the old path to the Eastern Gates of Khazad-dûm, or Moria as you may prefer. You can see in the distance the glittering lake of Kheled-zâram, and, through the clouds, the three peaks known to grace this part of the Misty Mountains.
+; str_npc25_home_intro|Oh, a curious sight! I heard stories about this place where sturdy woodmen are said to live in harmony with animals and plants. Beornings they are called, I gather.
+str_npc26_home_intro|嘿，那里一定是圣盔谷了。看呐！我们靠近号角堡了，这可是洛汗最坚固的堡垒。
+str_npc27_home_intro|嘿！看啊！
+; str_npc18_home_description|Our wise ones told us all about that war. If it hadn't been for the weakness of the Southerners, losing a battle they should have won, the Gondorians would never have won the Battle of the Camp. The chariots of the Wainriders were smashed, and many fierce heroes died in the swamps of the Dead Marshes.
+; str_npc19_home_description|I would see our peoples united, as they have been in the past. No more will women of dun hair nurse sickly babies at their bosoms, while their fair-haired cousins feast on meat and swoon from wine in warm halls. No more will the black-haired hill man look with resentment upon the herds of horses owned by a crofter with hair of gold. As king, I will see justice done - but first, let the tyrants of Rohan pay their weregild.
+; str_npc20_home_description|I remember him well - Thráin, son of Thrór. Foolhardy, vainglorious would-be scion of a broken line, claimant of a worthless throne! Great torment he endured at my hands. But no one withstands the will of Zigûrphel for long, Commander. No one. I took his Ring from him, in the dungeons of Dol Guldur, and sent it on to the Dark Tower for a great reward. High I rose then, in the Dark Lord's favour!
+str_npc21_home_description|那些骑士和战马们呢；那嘹亮的冲锋号角声呢；那在马上飘逸潇洒的洛汗战士们呢？他们像风和雨一样掠过山岭。但是现在的西方却被黑暗笼罩。
+str_npc22_home_description|这里是南方的王国建立的，那个白袍巫师的家。他现在正躲在这里面妄想凭他的强兽人统治世界呢。
+; str_npc23_home_description|I have never ventured this far, but I overheard our Greenwood scouts say there may be Nazgul here. I feel an evil presence, but I cannot put a name to it. It is powerful, though, so let us be prepared.
+; str_npc24_home_description|Judging by the desolation, and the many orc-tracks, I fear for the fate of the courageous Balin and his expedition. It seems that Moria has fallen to the Shadow and we should tread carefully.
+str_npc25_home_description|上次我在这里遇到了一支商队，他们见我孤身一人旅行就送了我一点面包和蜂蜜，啊，那是我吃过最好吃的蜂蜜。
+str_npc26_home_description|这里的城墙非常坚固，不是我所见过的攻城器可以打破的，攻城方只能冒着箭雨很被动地搭云梯。这堵城墙救过不少洛汗和他们盟友的命。
+str_npc27_home_description|您知道那里吗？
+; str_npc18_home_description_2|It pleases me to be marching with you, Great One. The leaders of my people will want to have this land again, which was once theirs. They may take as much as they like from Gondor and the West. For my part, if I can spill the blood of more enemies on this soil, I will count myself happy.
+; str_npc19_home_description_2|You will speak for me, won't you, Commander, when the long war is over? To whichever Power holds sway over the other - Eye or Hand? You will lend your voice to my claim, that I may hold Edoras and all Rohan in fief to an overlord, as my home and holding?
+; str_npc20_home_description_2|We shall crush the works of the Valar, of which these Dwarfs are a chief part, here in Middle-earth. Yes, it would be sweet to unmake what the Maker wrought. We will grind the Dwarves beneath our heels, shatter the last kingdoms of low Men, and laugh as the Elves fade into the mists like ghosts. Then the day will come when I stand before the Caves of the Forgotten, in Valinor, and call forth my king again!
+str_npc21_home_description_2|我们会愈战愈勇，而洛汗与刚铎的联盟将再次把我们的人民从水深火热中解救出来。
+str_npc22_home_description_2|这里是艾辛格的重兵把守之地，不过我相信光明迟早会驱走这里的黑暗。
+str_npc23_home_description_2|我感觉这里又有大军要出发了。。。去洛丝萝林？我也不知道，但为了我们的家乡请您务必拦住这支大军，如果它真的存在的话。
+str_npc24_home_description_2|如果我们能能打下这里的话，我们也就能拥有一个矿井，也就以为这我们将获得很大的财富。
+str_npc25_home_description_2|我能闻到这里甜美的花香，我能听到这里蜜蜂的声音。。。如果您不介意，我回去搞些蜂蜜，顺便给您也带些。那只要一会儿时间。
+str_npc26_home_description_2|号角堡的城墙非常坚固，守城军士们一般头也不抬就可以从墙后扔出投掷武器。他们一般都不把脸放到城墙之上，除非他们要对无可奈何的强兽人作鬼脸。
+; str_npc27_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+; str_npc18_home_recap|I was a prisoner in stocks, condemned to die for slaying a son of Lurmsakun in the training pit. Three of them set upon me, and I beat them, but one died of his wounds. Then you spoke for me, and freed me. Now I kill for you, and I would die for you if need be.
+; str_npc19_home_recap|I am of the royal blood of Rohan, I swear - King Fengel was my grandfather, though he never took my grandmother to wife. The Chiefs of Dunland are jealous of me, and kept me away from the fighting so I would do no great deeds, and win no glory nor men to my banner. Then you took my under your banner. Now I await the day I can sit in Edoras on my rightful throne.
+; str_npc20_home_recap|What more is there to tell, Commander? I practised my arts in the dungeons of Dol Guldur. My dreaming eye sees deep and far, and I saw you and your works in this War. It would seem I must give you what aid I can, so that the powers of the West may fail and the Power in the East may rise once more and rule until the world's ending.
+; str_npc21_home_recap|I don't find it amusing that you should forget so easily.
+; str_npc22_home_recap|I'll indulge your curiosity, but let us not tarry.
+str_npc23_home_recap|我出生在幽暗密林，作为这里的精灵，我们的木工技术无人能敌。
+str_npc24_home_recap|我是都灵大人忠诚的守护者。
+str_npc25_home_recap|我是一个从河谷镇来的医生和草药学家。
+str_npc26_home_recap|古拉姆会告诉您如果您一定要听，不过讲故事杀不了敌人。
+str_npc27_home_recap|我会很快搞定的。
+; str_npc18_honorific|Great One
+; str_npc19_honorific|Commander
+; str_npc20_honorific|Commander
+str_npc21_honorific|指挥官
+str_npc22_honorific|指挥官
+str_npc23_honorific|战士
+str_npc24_honorific|队长
+str_npc25_honorific|指挥官
+str_npc26_honorific|主人
+str_npc27_honorific|主人

@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|ヘルム峡谷の攻防戦、 ローハン vs ア�
 mno_custom_battle_scenario_5|小規模戦闘、 北方の民 vs リューン
 mno_custom_battle_scenario_6|攻城戦、 オーク vs ドワーフ
 mno_custom_battle_scenario_7|待ち伏せ攻撃、 オーク vs 闇の森のエルフ
+; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
+; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
 mno_custom_battle_scenario_11|戦闘のテスト(バランス調整をしてください！)
 mno_custom_battle_scenario_10|シーナリーのテスト
 mno_troll_battle_scenario|トロルのテスト
 mno_warg_battle_scenario|ワーグのテスト
 mno_build_your_own_scene|** 自分だけのTLDのシーンを作ろう **
-menu_tutorial|^^TLDには、M&Bにはない多くの機能が追加されています。 詳細はこのリリースの配布パッケージに含まれているPDFファイルに、 できるだけネタバレを避ける形で記載されています。 ゲームの基本的な操作方法を学ぶチュートリアルをプレイする場合は、 Nativeモジュールを利用してください。
-menu_tutorial|^^TLDには、M&Bにはない多くの機能が追加されています。 詳細はこのリリースの配布パッケージに含まれているPDFファイルに、 できるだけネタバレを避ける形で記載されています。 ゲームの基本的な操作方法を学ぶチュートリアルをプレイする場合は、 Nativeモジュールを利用してください。
+; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 ; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
 ; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
 ; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|キャンセル
 menu_custom_battle_end|^^^^^^戦闘は終わりました。 {s1} あなたの陣営は敵勢{reg5}名を倒し、味方の兵を{reg6}名失いました。^あなた個人では敵を{reg7}名を倒しました。
 mno_replay|この戦闘をもう一度プレイする
 mno_continue_dot|続ける
+; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|この戦闘をもう一度プレイする
+mno_continue_dot_cbd|続ける
 mno_dot_go_back|戻る
 menu_start_good|^^^^^^^^^^種族を選んでください:
 mno_start_ma|人間
@@ -55,7 +59,7 @@ mno_start_ur|ウルク、新種のオーク
 mno_start_em|人間、サウロンへの服従を誓う
 menu_start_hand|^^^^^^^^^あなたの主人は、白の手となりました。^種族を選んでください
 mno_start_whor|オーク、白の手のしもべ
-mno_start_isur|ウルク＝ハイ、アイゼンガルドで繁殖される新種
+; mno_start_isur|one of the URUK-HAI, bred in Isengard
 mno_start_duma|人間、西方の平野にある褐色人の国の住人
 menu_start_good_man|^^^^^^^^^^民族を選んでください:
 mno_start_go|ゴンドール、白い塔の王国
@@ -104,7 +108,7 @@ mno_proc|通常通り続ける
 ; menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
 ; mno_start_default|Become a {s23} (Default)
 ; mno_start_up1|Become a {s21} (Easy)
-; mno_start_up2|Become a {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+; mno_start_up2|Become a {s22} (Easy)
 mno_continue|続ける・・・
 menu_character_report|^^^^^パーティの士気:{reg8}^パーティの人数上限:{reg7}^{s5}
 menu_camp|^^^^ここは{s1}です。{s2}^^何をしますか？
@@ -113,9 +117,11 @@ mno_camp_troop|{reg10?部下:}{reg12?および:}{reg11?捕虜:}の確認をす�
 mno_camp_action|アイテムを使う
 mno_camp_wait_here|ここで野営する
 mno_camp_options|TLDのオプション
+; mno_Dev_Menu|Developer Menu
+; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|チート/mod作成オプションを有効にする
 menu_game_options|^^^^^^^^項目をクリックするとトグルします
-; mno_game_options_war_level_start|War Starts at Level: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+; mno_game_options_war_level_start|War Starts at Level: {s1}
 mno_game_options_restrict_items|プレイヤーの装備制限:{s7}
 mno_game_options_formations|陣形とAI:{s7}
 ; mno_game_options_siege_ai|Advanced Siege AI:  {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|戻る
 menu_camp_tweaks|^^^^^^^^調整したい項目を選んでください。
 mno_tweak_options_compat|互換性の調整・・・
 mno_tweak_options_strat|戦略上の調整・・・
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
 mno_tweak_options_back|オプションメニューに戻る
 menu_camp_compat_tweaks|^^^^^^^^項目をクリックして調整してください^(SHIFTを押しながらクリックすると数値が減ります)^(これらは互換性に関する調整で、 チートではありません)
 mno_game_options_compat_party|パーティの最大数:{s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|パーティメンバーの中で最も高い 技術者�
 mno_build_ladders_cont|準備に取りかかる。
 menu_castle_attack_walls_simulate|{s4}^^自軍犠牲者:{s8}^^敵軍犠牲者:{s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
+; menu_castle_taken_by_friends|Nothing to see here.
 menu_castle_taken|{s3}はあなたの軍の手に落ち、 現在、 この{reg2?町:城}は完全にあなたの軍の 管理下におかれています。 {reg1? ここをあなたの領地とすることを 止めるものはいません・・・:}
 menu_castle_taken_2|{s3}はあなたの軍の手に落ち、 現在、 この城は完全にあなたの軍の 管理下におかれています。 {s9}に、 この勝利を報告しましょう。 {s5}
 mno_castle_taken_no_claim|褒美の要求をしない。
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|{s61}の兵舎へ行く。
 mno_speak_with_elder|{s6}に会う。
 mno_isengard_underground|地下の洞窟へ行く。
 mno_tirith_toplevel|最上層に登る。
+; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|立ち去る・・・
 mno_town_leave_door|立ち去る
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
@@ -328,6 +336,7 @@ mno_gondor_beacons_close|立ち去る・・・
 ; mno_player_added_to_allow_follow_close|Close
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 ; mno_center_besieged_event_close|Close
+; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 mno_intro_next|続ける・・・
 mno_start_defend_caravan|隊商を守れ！
 mno_start_raid_caravan|隊商を襲え！
@@ -347,6 +356,8 @@ mno_raid_villagers|村を襲え！
 ; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
 ; mno_leave_refugees|Leave them for now...
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|さらに進め！
 mno_pick_troops1|この任務に同行させる部下を選んでください。 {reg0}名が選択されています
 menu_pick_troops|この潜入任務に誰を連れて行きますか？ 現在、{reg0}名が選択されています。 部下を10名まで連れて行くことが出来ます。
 mno_go_forward|同行者の選択を完了し、任務を遂行する。
-menu_burial_mound|あなたは{s2}の{s1}が埋葬された塚に近づいた。   敵の死者から奪った武器が数珠繋ぎにされ、 塚に山積みにされている。
+; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|ひざまずいて敬意を払う。
 mno_swear_oath|復讐の誓いを立てる！
 mno_despoil|この場所を穢す
 mno_leave_mound|この場を去る。
 menu_burial_mound_respects|あなたはひざまずいて{s1}に敬意を払い、 死者がまっすぐに死後の世界へ旅できるよう、 静かな祈りをささげた。 この場所でやるべき事はもうない。
 menu_burial_mound_oath|あなたは声を張り上げ、 {s4}の復讐の誓いを立てた。 あなたは{s3}の軍勢に対し、 容赦なく見つけ出してこれを破壊するだろう。 あなたの力強い言葉は風に乗り、 どこまでも遠く運ばれていった。 海の向こう側には届かないと、 誰に断言できるだろう？
+menu_funeral_pyre_oath|あなたは声を張り上げ、 {s4}の復讐の誓いを立てた。 あなたは{s3}の軍勢に対し、 容赦なく見つけ出してこれを破壊するだろう。 あなたの力強い言葉は風に乗り、 どこまでも遠く運ばれていった。 海の向こう側には届かないと、 誰に断言できるだろう？
+mno_leave_pyre_oath|この場を去る。
 menu_burial_mound_despoil|あなたは{s1}の墓碑をみずからの手で取り壊すと、 墓碑に対して呪いの言葉を浴びせ、 残忍の歌を歌い、 言語に絶する行為を行った。 あなたの部下たちは死者の怒りを恐れて後ずさりをしたが、 あなたの底知れぬ邪悪さに対して敬意を新たにしたようだ。
-menu_funeral_pyre|あなたは{s2}の{s3}の、 火葬壇の炭となった残がいに近づいた。 ここで彼の亡骸は彼の親衛兵たちの手によって火葬された。 何もめぼしいものは見当たらない。
+; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|この場を去る。
 menu_town_ruins|この{s1}は{s2}
 mno_ruin_menu_0|この場所を探索する。

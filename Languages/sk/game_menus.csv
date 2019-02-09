@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|Obrana Helmovho žľabu, Rohan proti Isengardu
 mno_custom_battle_scenario_5|Bitka, Severské frakcie proti Rhûnu
 mno_custom_battle_scenario_6|Dobývanie, Ohyzdi proti Trpaslíkom
 mno_custom_battle_scenario_7|Prepadnutie, Ohyzdi proti Lesným elfom
+; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
+; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
 mno_custom_battle_scenario_11|Testovacie bitky (pre vyvážené nastavenie štátu!)
 mno_custom_battle_scenario_10|Testovacia bitka scény
 mno_troll_battle_scenario|Bitka pre testovanie trolov
 mno_warg_battle_scenario|Bitka pre testovanie vrrkov
 mno_build_your_own_scene|** Vybuduj svoju vlastnú scénu pre TLD **
-menu_tutorial|^^TLD má veľa fukncií neznámych pre pôvodný M&B. Sú detailne popísané bez prezradenia zápletky v PDF, ktoré je pribalené s módom. Pokiaľ chcete prejsť návodom mechanik základnej hry, urobte tak prosím v základnej hre - nie v móde. 
-menu_tutorial|^^TLD má veľa fukncií neznámych pre pôvodný M&B. Sú detailne popísané bez prezradenia zápletky v PDF, ktoré je pribalené s módom. Pokiaľ chcete prejsť návodom mechanik základnej hry, urobte tak prosím v základnej hre - nie v móde. 
+; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 mno_tutorial_1|Cvičenie #1: Základný pohyb a výber zbrane. {s1}
 mno_tutorial_2|Cvičenie #2: Boj zo štítom. {s2}
 mno_tutorial_3|Cvičenie #3: Boj bez štítu. {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|Zrušiť.
 menu_custom_battle_end|^^^^^^Boj skončil. {s1} tvoja strana zabila {reg5} nepriateľov a stratila {reg6} jednotiek v boji.^Ty si v boji zabil {reg7} protivníkov.
 mno_replay|Hrať tento boj znovu.
 mno_continue_dot|Pokračovať.
+; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|Hrať tento boj znovu.
+mno_continue_dot_cbd|Pokračovať.
 mno_dot_go_back|.   Späť
 menu_start_good|^^^^^^^^^^Zvol si svojú rasu:
 mno_start_ma|ČLOVEK
@@ -55,7 +59,7 @@ mno_start_ur|URUK, nový druh Ohyzdov
 mno_start_em|ČLOVEK, zotročený Sauronom
 menu_start_hand|^^^^^^^^^Tvoj pán je Biela Ruka^Zvol si Rasu
 mno_start_whor|OHYZD, slúžiaci Bielej Ruke
-mno_start_isur|URUK-HAI, splodenec Isengardu
+; mno_start_isur|one of the URUK-HAI, bred in Isengard
 mno_start_duma|ČLOVEK z Vrchoviny, zo Západných plání
 menu_start_good_man|^^^^^^^^^^Zvol si svoj ľud:
 mno_start_go|GONDOR, Kráľovstvo Bielej Veže
@@ -104,7 +108,7 @@ mno_proc|Pokračuj
 menu_start_as_one|^^^^^^^^^^Aký si typ vojaka?
 mno_start_default|Bude z teba {s23} (Default)
 mno_start_up1|Bude z teba {s21} (Easy)
-mno_start_up2|Bude z teba {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_start_up2|Become a {s22} (Easy)
 mno_continue|Pokračuj
 menu_character_report|^^^^^Morálka družiny: {reg8}^Maximálna veľkosť družiny: {reg7}^{s5}
 menu_camp|^^^^Si v {s1}.{s2}^^Čo chceš robiť?
@@ -113,9 +117,11 @@ mno_camp_troop|Prezrieť si {reg10? jednotky:}{reg12? and:}{reg11? väzňov:}.
 mno_camp_action|Použiť predmet.
 mno_camp_wait_here|Utáboriť sa tu na nejaký čas.
 mno_camp_options|Zmeniť nastavenia TLD.
+; mno_Dev_Menu|Developer Menu
+; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|Povoliť cheaty/modderske nastavenia.
 menu_game_options|^^^^^^^^Klikni na možnosť pre prepnutie:
-mno_game_options_war_level_start|Vojna začína na Leveli: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_game_options_war_level_start|War Starts at Level: {s1}
 mno_game_options_restrict_items|Obmedziť hráčovo vybavenie: {s7}
 mno_game_options_formations|Bojové formácie a umelá inteligencia: {s7}
 mno_game_options_siege_ai|Pokročilé obliehanie AI: {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|Späť.
 menu_camp_tweaks|^^^^^^^^Vyber si možnosť ktorú by si chcel upraviť
 mno_tweak_options_compat|Úpravy kompatibility...
 mno_tweak_options_strat|Úpravy stratégie...
-mno_tweak_options_battlefield_ai|Zlepšenia AI v bitke...\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
 mno_tweak_options_back|Späť do menu nastavení.
 menu_camp_compat_tweaks|^^^^^^^^Klikni na možnosť pre zmenu (podrž shift pre zníženie):^(toto slúži pre zlepšenie kompatibility na počítači a nie sú to cheaty)
 mno_game_options_compat_party|Maximálny počet družín na mape: {s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|Ako najlepší inžinier v skupine ({reg2}), {reg3?usudzu
 mno_build_ladders_cont|Urobiť to.
 menu_castle_attack_walls_simulate|{s4}^^Tvoje straty:{s8}^^Nepriateľské straty: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
+; menu_castle_taken_by_friends|Nothing to see here.
 menu_castle_taken|{s3} podľahlo tvojím jednotkám. Teraz máš plnú kontrolu nad {reg2?mestom:hradom}. {reg1? Vyzerá to, že ťa nič nezastaví pred tým, aby si si ho zabral pre seba...:}  
 menu_castle_taken_2|Tvoje jednotky dobyli {s3}, teraz máš nad hradom plnú kontrolu. Je čas poslať správu {s9} o tvojom víťazstve. {s5}
 mno_castle_taken_no_claim|Nepožadovať odmenu.
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|Ísť do {s61} kasární.
 mno_speak_with_elder|Prehovoriť s {s6}.
 mno_isengard_underground|Ísť do podzemných jaskýň.
 mno_tirith_toplevel|Vyšplhať na horné poschodie.
+; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|Odísť...
 mno_town_leave_door|Opustiť oblasť
 menu_player_initiated_siege_result|Zaútočil si na mesto pod zástavou {s2}.
@@ -328,6 +336,7 @@ menu_player_added_to_allow_follow|Prišiel posol a povedal vám, že teraz, ako 
 mno_player_added_to_allow_follow_close|Zavrieť
 menu_center_besieged_event|^^^^^Posol ti doniesol správu že {s1} je obliehané {s2}om z {s3}u.
 mno_center_besieged_event_close|Zavrieť
+; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 mno_intro_next|Pokračuj
 mno_start_defend_caravan|Brániť karavanu!
 mno_start_raid_caravan|Vyrabovať karavanu!
@@ -347,6 +356,8 @@ mno_lord_field_ai|Vládcovia majú zlepšené bojiskové AI: {s7}
 mno_horse_archer_field_ai|Lukostrelci na koňoch majú zlepšené bojiskové AI: {s7}
 mno_vs_orcs_field_ai|Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}
 mno_battlefield_animals|Živočíšni spoločníci, ktorí nie sú zločinci / zvieratá z koní, sa rozmnožia v bitke: {s7}
+; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_defend_refugees|Pozor na nájazdníkov...
 mno_attack_refugees|Zaútoč na utečencov...
 mno_leave_refugees|Nechaj ich, pre teraz...
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|Pokračovať vpred!
 mno_pick_troops1|Vybrať si spoločníkov pre misiu, {reg0} vybraných
 menu_pick_troops|Koho by si si vybral na tajnú misiu? Už si si vybral {reg0} spoločníkov. Môžeš si so sebou zobrať až 10 jednotiek.
 mno_go_forward|Ukončiť výber spoločníkov a pokračovať.
-menu_burial_mound|Prichádzaš k mohyle {s1} z {s2}. Na jej vrchole sú navŕšené zbrane jeho padlých protivníkov.
+; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Pokľaknúť a vzdať rešpekt.
 mno_swear_oath|Zložiť prísahu pomsty!
 mno_despoil|Znesvätiť toto miesto.
 mno_leave_mound|Opustiť mohylu.
 menu_burial_mound_respects|Pokľakneš a vzdávaš svoj rešpekt {s1}, potichu šepkajúc modlitbu pre skorú cestu do posmrtného života. Neostáva tu už nič iné čo robiť.
 menu_burial_mound_oath|Hlasno skladáš prísahu pomsty za smrť {s4}. Budeš vytrvalo hľadať armády {s3} a ničiť ich. Tvoje slová sú nesené vetrom do veľkej diaľky... kdo môže povedať, že neboli počuté za morom?
+menu_funeral_pyre_oath|Hlasno skladáš prísahu pomsty za smrť {s4}. Budeš vytrvalo hľadať armády {s3} a ničiť ich. Tvoje slová sú nesené vetrom do veľkej diaľky... kdo môže povedať, že neboli počuté za morom?
+mno_leave_pyre_oath|Opustiť pohrebnú vatru.
 menu_burial_mound_despoil|Demoluješ monument {s1} vlastnými rukami a znesväcuješ kliatbami samotné kamene, zosmiešňuješ žalm a vyvádzaš nevýslovné činy. Tvoji následovníci radšej ustúpia zo strachu pred mrtvým, a kvôli tvojej nesmiernej zlobe si opäť získavaš ich rešpekt. 
-menu_funeral_pyre|Prichádzaš k spáleným zvyškom pohrebnej vatry {s3} z {s2}. Tu bol obradne pochovaný spolu so svojimi osobnými strážcami. Nič z cenností už neostalo.
+; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Opustiť pohrebnú vatru.
 menu_town_ruins|Keď dorazíš, vidíš že {s1} je {s2}
 mno_ruin_menu_0|Preskúmať miesto.

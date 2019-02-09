@@ -96,7 +96,7 @@ dlga_ziggy_ask_more:close_window|You have no life to offer, Commander.
 dlga_ziggy_ask_more:ziggy_not_rested|Give me some more time, Commander. The ritual drained me.
 dlga_ziggy_ask_more:close_window.1|I can only control so much. I'll need to become more powerful...
 dlga_ziggy_ask_more:ziggy_choose_prisoners|Of course, Commander. Which one do you have to offer?
-dlga_ziggy_not_rested:close_window|Rest quick then, I need more of these.																	 
+dlga_ziggy_not_rested:close_window|Rest quick then, I need more of these.
 dlga_member_separate:member_separate_confirm|Oh really? Well, I'm not just going to wait around here. I'm going to go back to {s4}. Is that what you want?
 dlga_member_separate_confirm:member_separate_yes|That's right. We need to part ways.
 dlga_member_separate_confirm:do_member_trade|No, I'd rather have you at my side.
@@ -418,7 +418,7 @@ dlga_lord_give_order:lord_give_order_details_ask.2|Engage enemies around... [Cos
 dlga_lord_give_order:lord_give_order_assault|Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]
 dlga_lord_give_order_assault:lord_pretalk|{s4} is directing this siege. I suggest you speak to them.
 dlga_lord_give_order_assault:lord_pretalk.1|Our preparations are not yet ready. We need another {s11}
-dlga_lord_give_order_assault:close_window|Very well -- Attack the walls!																	
+dlga_lord_give_order_assault:close_window|Very well -- Attack the walls!
 dlga_lord_give_order:lord_give_order_stop|I won't need you for some time. You are free to do as you like.
 dlga_lord_give_order:lord_pretalk|Never mind.
 dlga_lord_give_order_details_ask:lord_give_order_details|Where?
@@ -454,7 +454,6 @@ dlga_lord_tell_objective:lord_pretalk.11|We are reconsidering our next objective
 dlga_lord_tell_objective:lord_pretalk.12|I don't know: {reg1} {s1}
 dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|I cannot do this now.
 dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|I cannot do this now.
-																																																			
 dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Consider it done.
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|I do not have the time for this.
@@ -492,7 +491,6 @@ dlga_capture_enemy_hero_thank_2:lord_pretalk|Certainly, {s65}.
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|It was nothing.
 dlga_lord_active_mission_2:lord_raise_troops_thank|Indeed. I have raised {reg1} {s13}. You can take them.
 dlga_lord_active_mission_2:lord_raise_troops_thank.1|Indeed. I have trained {reg2} troops, and {reg1} of them have learned well. You can take them, they should be more prepared for battle.
-
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|I found {s4} hiding in {s3} and gave him his punishment.
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|I'm afraid he got away.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|And we'll all be a lot better off without him! Thank you, {playername},  for removing this long-festering thorn from my side. 'Tis good to know you can be trusted to handle things  with an appropriate level of tactfulness.  I've sent a note to our intendants already, and you can count on additional supplies from us.
@@ -667,10 +665,6 @@ dlga_caravan_help5:close_window|I will remember that. Thank you Torbal, and stay
 dlga_start:caravan_attack1|And who are you? We needed none of your interference, nar!
 dlga_caravan_attack3:close_window|Weakling? Let’s see who the weakling is! (Difficult)
 dlga_caravan_attack3:close_window.1|Go on then, coward. I'll see your corpse in the fields.
-dlga_start:caravan_duel1|Hehe...He's a grumpy one, isn't he? Never mind him! You saved my skin out there! Some of the men's lives too! ^^Here, we grabbed the money in our dead men's pockets. {s10}
-dlga_start:caravan_duel1.1|I guess I am promoted, then. You are a fierce warrior. Here, take some of our loot from the caravan. The guards were also betting against you, but I wasn't..hehe... I saw what you did out there.... ^^{s10}
-dlga_caravan_duel1:caravan_duel2|I could just kill you and take everything... but I have proven enough. Leave.
-dlga_caravan_duel2:caravan_duel3|The men definitely respects you now! Or they are afraid! No matter what,  they will tell their Lords what you did here. Maybe if you keep impressing them, they'll give you special things! The horse people of Rhun once gave me a horse! I ATE IT! HA HA HA HA!
 dlga_start:caravan_res_tut1|*snicker* No harm in biding one’s time, warrior! Some of the lads might not think so much of you, but not me, oh no. I saw you fight. Won’t bet against you! {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_start:caravan_res_tut2|*snicker* I s’pose I’m the leader now. You are a fierce warrior, yes! Take your share of the loot. Some o’ the lads were betting on you being warg meat, but not me, oh no. I saw you fight. Won’t bet against you!^^Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_caravan_res_tut1:caravan_noduel|(RESOURCE POINT TUTORIAL)^^ Resource Points which you can use to purchase from the people of Mordor are not the ones you earned in your own faction, but the ones you will earn in Mordor. ^^See REPORTS for more information.

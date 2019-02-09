@@ -31,7 +31,7 @@ dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept| {s1} civarından 
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_reject|Üzgünüm, {s1}, ama zamanım yok.
 dlga_hobbit_general_talk_ask_accept:close_window|Teşekkürler! {s1}
 dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Anlıyorum. O halde sonraki karavan ile {s1} e göndereceğim.
-dlga_hobbit_general_talk_3:close_window|Şimdilik hoşçakalın.
+dlga_hobbit_general_talk_3:close_window|Pekala, şimdilik hoşçakalın.
 dlga_start:hobbit_merry_talk_met.1|Tekrar hoş geldin, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Tekrar hoş geldin, {playername}!
 dlga_hobbit_merry_talk_met:hobbit_deliver_message|Merhaba Merry. Minas Tirith'teki kuzenin Pippin'den bir mesaj getirdim. 
@@ -54,7 +54,7 @@ dlga_treebeard_pretalk:treebeard_talk_response|Hrooom... Ne bilmek istersin, gen
 dlga_treebeard_talk_response:treebeard_about_himself|Kendin hakkında daha fazla şey anlat.
 dlga_treebeard_talk_response:treebeard_about_entwives|Bana Dişi-Entleri anlat.
 dlga_treebeard_talk_response:treebeard_about_ents|Bana Entleri anlat.
-dlga_treebeard_talk_response:close_window|Boşver,güle güle.
+dlga_treebeard_talk_response:close_window|Boşver, güle güle.
 dlga_treebeard_about_himself:treebeard_pretalk|(Ent lideri soğuk ve ağır başlı görünür.Bir süre sonra konuşmaya başlar:)^'Aceleci olma... ağaçlar orklardan güvenli bir hale gelince bunun hakkında daha fazla konuşabiliriz.'
 dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Ben Türümün en yaşılısıyım hmmm... Bazı ölümlüler tarafından ağaçsakal olarak bilinirim ve elfer bana Fangorn diye seslenir. Hummm...  Ben, Ciltkabuğu ve Yapraklüle karanlıktan önce ormandan geçen tek entleriz. Eskisi kadar kıvrılabilir değilim... Gençkiriş ince bir ağaç gibi rüzgarda kıvrılabilir ve sallanabilir ...Hummm...  Eğer Ent eşler burada iseler...
 dlga_treebeard_about_entwives:treebeard_pretalk|(Ent Lideri'ni aniden üzgün bir ifade kapladı ve sesi alışılmadık biçimde derinleşti.)^'Hummm... Bu üzücü bir masal... Orman, orklardan tamamen kurtarıldığında bunu tartışabiliriz.'
@@ -66,7 +66,7 @@ dlga_start:close_window.3|Mmmhhrrmmm?
 dlga_start:looters_2_join|{s4}'ün gücüne boyun ey ve bana hizmet et!
 dlga_looters_2_join:close_window|İtaat edeceğiz, Efendim.
 dlga_start:close_window.4|^^HIRRR!^^
-dlga_start:close_window.5|^^HRRR!^^
+dlga_start:close_window.5|^^HIRRR!^^
 dlga_start:member_castellan_talk|Evet, {playername} Senin için ne yapabilirim?
 dlga_member_castellan_pretalk:member_castellan_talk|Başka bir şey?
 dlga_member_castellan_talk:member_review_castle_garrison|Kale garnizonuna göz atmak istiyorum
@@ -91,6 +91,12 @@ dlga_member_trade:do_member_trade.1|Peki, işte hepsi burada...
 dlga_member_talk:view_member_char_requested|Yeteneklerin hakkında bana ne anlatabilirsin?
 dlga_view_member_char_requested:do_member_view_char|Peki, söylememe izin ver...
 dlga_member_talk:member_separate|Bir süreliğine ayrılmamız gerek.
+dlga_member_talk:ziggy_ask_more|Zigûrphel, senden başka bir Kurt istiyorum. Bunu yapabilir misin?
+dlga_ziggy_ask_more:close_window|Bana sunacak bir hayatın yok, Komutan.
+dlga_ziggy_ask_more:ziggy_not_rested|Bana biraz daha zaman ver, Komutan. Ayin beni çok yordu.
+dlga_ziggy_ask_more:close_window.1|Ancak bu kadarını kontrol edebiliyorum. İlerde daha da güçleneceğim.
+dlga_ziggy_ask_more:ziggy_choose_prisoners|Tabii ki Komutan. Hangisini teklif etmek istersin?
+dlga_ziggy_not_rested:close_window|Çabuk dinlen o zaman, bunlardan daha fazlasına ihtiyacım var.
 dlga_member_separate:member_separate_confirm|Ah gerçekten mi? Güzel, Buralarda takılacak değilim. {s4} 'e geri dönüyorum. İstediğin bu mu?
 dlga_member_separate_confirm:member_separate_yes|Evet. Yollarımızı ayırmamız gerekli.
 dlga_member_separate_confirm:do_member_trade|Hayır, Seni yanımda tutmayı tercih ederim.
@@ -123,6 +129,22 @@ dlga_companion_was_dismissed:companion_rehire|{s5}. Tekrar birliğine katılmam�
 dlga_companion_rehire:companion_recruit_signup_confirm|Tekrar hoşgeldin dostum!
 dlga_companion_rehire:companion_rehire_refused|Üzgünüm,şu anda başka birini daha alamam.
 dlga_companion_rehire_refused:close_window|Tamam...Eğer kararını değiştirirsen bana tekrar gel.
+dlga_event_triggered:ziggy_ask_prisoners|Komutan. Düşmanlarımızı ezdin ve bazılarını esir aldın - oldukça iyi. Bana karşılığında küçük bir şey verirseniz, eğer ele geçirdiklerimizden birini verirseniz, size sunacak sağlam bir hediyem var.
+dlga_event_triggered:ziggy_ask_prisoners.1|Komutan, zaferiniz için tebrikler. Size ne söylediğimi hatırlıyorsanız, bu esirlerden birini alacağım. Sizin yararınıza olacak, Komutan, sizi temin ederim.
+dlga_ziggy_ask_prisoners:ziggy_ask_why|Bu kadar gizem yeter, Zigûrphel! Açık konuş! Ne için mahkum istiyorsun?
+dlga_ziggy_ask_why:ziggy_reason|Sabır, sabır, Komutan! Sadece bu önemsiz konuda beni şımart, bende sana bir mucize göstereyim.
+dlga_ziggy_reason:ziggy_yes|İlgimi çekiyorsun. Çok iyi. Esirlerden birini senin... merhametine bırakacağım.
+dlga_ziggy_reason:ziggy_no|Şimdi olmaz Zigûrphel. Kampına geri dön.
+dlga_ziggy_no:close_window|Çok iyi, Komutan, ama bu hediyemi bırakacak kadar aptalsınız demektir.
+dlga_ziggy_no:close_window.1|Pekala, Komutan.
+dlga_ziggy_yes:ziggy_choose_prisoners|Mükemmel. Bu örneklerden hangisini verirsiniz?
+dlga_ziggy_choose_prisoners:ziggy_no|Sunmak istediğim hiçbir şey yok.
+dlga_ziggy_chosen_prisoner:ziggy_ritual|Teşekkürler Komutan! Bir an... ah evet, bu düzgünce yapmalı... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Burada neyimiz var? Gururlu, uyumsuzlar? Korku, olması gerektiği gibi mi? Şimdi size korku için bir neden vereyim mi? Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_ritual:ziggy_ritual_succeed|Oh evet, evet ! Bak, komutan, Zigûrphel’in başardıklarına dikkat edin, sen Angband kurtlarını tanıyor musun, Draugluin ya da Valinor Hound'u Huan'a çeviren güçlü Carcharoth, tıpkı Karanlık Lord'un esir ruhunu kendi amaçları için uygun bir kaba çevirip yakalayabilmesi gibi, ben de daha küçük bir ruhu bağladım ve bize büyük bir gölge canavarı olarak gösterdim. Bu Draugluin'in ilk kanı kadar büyük değil tabiki, hiçbir şey gibi ama hizmet edecektir.
+dlga_ziggy_ritual:ziggy_ritual_succeed.1|Düşmanı dize getirmek her zaman zevklidir. 
+dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! Bu çok zayıftı! Değersiz! Bana daha güçlü bir tane ver, Komutan, başarısız olmayacak bir tane!
+dlga_ziggy_ritual_succeed:close_window|Ve tabii ki de dinlenmem için beni rahat bırakman gerek; sonra sen bana yeni bir esir sunarsın. Gerisini ben hallederim.
 dlga_companion_objection_response:close_window|Teşekkürlerimiz seninle olsun.Desteğinden dolayı minnettarız.
 dlga_companion_objection_response:close_window.1|Umarın bi daha olmaz.
 dlga_companion_objection_response:close_window.2|İtirazın not edildi, ama aklımda daha önemli şeyler var.
@@ -348,7 +370,7 @@ dlga_ring_hunters_party_attack_2:close_window|Çantalarını ve parmaklarını k
 dlga_start:ring_hunter_lair_defeat|Yüzük Karanlık Lord'a ait! Senin olamaz!
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Şimdi bana ait.
 dlga_ring_hunter_lair_defeat2:close_window|Zafer kazandığını mı düsünüyorsun? Soluk, parçalanmış bir zafer belki. Hah! Birliğimiz sen gelmeden çok daha önce buradan gitti. Gittikleri yeri kurtarman için artık çok geç!
-dlga_start:beorn_message|Lordum/Leydim, {s1} 'den büyük bir kanun kaçağı savaş Birliğinin yolumuzun üzerinde olduğuna dair bir uyarı aldık! Ne yazık ki, yeterince savaşçı toplayacak zaman yoktu. Savaşın sesini duyduk ve en kötüsüne hazırlandık!
+dlga_start:beorn_message|{lord/lady}, {s1} 'den büyük bir haydut savaş grubunun yolda olduğuna dair bir uyarı aldık! Ne yazık ki, yeterince savaşçı toplayacak zaman yoktu. Savaşın sesini duyduktan sonra en kötüsüne hazırlandık!
 dlga_beorn_message:beorn_message2|Bu sıradan bir kanun kaçağı Grubu değildi. Karanlık Lord'un en kötü Hizmetkarları, en azından kuzeyde en kötüleriydi. Ancak liderleri burada değildi. Onların ini Kuyutorman'ın yanında yatıyor ve ben de acele etmeliyim.
 dlga_beorn_message2:beorn_message_end|Evet, kamp hakkında da uyarıldık ve izciler yolladık. Onları Yanarken gördük ve Mordor'a doğru hızla ilerledik. İlk önce oraya gitmeyi seçtiyseniz, bize yardım edemeyebilirdiniz. Zaferiniz için gerçekten minnettarız!
 dlga_beorn_message_end:beorn_message_close|Olanları geri bildirmeli ve savaş hakkında {s1} Kişisine bunlar söylemeliyim. Köye geri dön ve izcileri gönder. Daha fazla avare olabilir.
@@ -393,6 +415,10 @@ dlga_lord_give_order:lord_give_order_answer|Beni takip et. [Costs {reg1}/{reg2} 
 dlga_lord_give_order:lord_give_order_details_ask|Git... [Costs {reg1}/{reg2} influence]
 dlga_lord_give_order:lord_give_order_details_ask.1|Etrafında devriye gez... [Costs {reg1}/{reg2} influence] 
 dlga_lord_give_order:lord_give_order_details_ask.2|Çevresindeki düşmanlarla ilgilen... [Costs {reg1}/{reg2} influence] 
+dlga_lord_give_order:lord_give_order_assault|Sen ve ben birlikte [s11]'i alabiliriz. Senin durmaksızın saldırman gerek!.. [[reg1]/[reg2]  tesir puanı harcar]
+dlga_lord_give_order_assault:lord_pretalk|{s4} bu kuşatmayı yönetiyor. Onlarla konuşmanı öneririm.
+dlga_lord_give_order_assault:lord_pretalk.1|Hazırlıklarımız henüz tamamlanmadı. Başka bir {s11} daha ihtiyacımız var.
+dlga_lord_give_order_assault:close_window|Peki -- Duvarlara Saldırın!
 dlga_lord_give_order:lord_give_order_stop|Sana şimdilik ihtiyacım yok. İstediğini yapabilirsin.
 dlga_lord_give_order:lord_pretalk|Boşver.
 dlga_lord_give_order_details_ask:lord_give_order_details|Nerede?
@@ -428,7 +454,6 @@ dlga_lord_tell_objective:lord_pretalk.11|Sonraki hedefimizi düşünüyoruz.
 dlga_lord_tell_objective:lord_pretalk.12|Bilmiyorum: {reg1} {s1}
 dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|Şu an için bunu yapamam.
 dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|Şu an için bunu yapamam.
-
 dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, {s3} yakınlarında casus kampı olduğu haberini aldık, planlarımızı öğrenmeden önce casusların işini bitir ve fark edilmediğinden emin ol.
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Olmuş farz et.
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|Bunun için zamanım yok.
@@ -465,6 +490,7 @@ dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Minnettarım dostum. So
 dlga_capture_enemy_hero_thank_2:lord_pretalk|Kesinlikle, {s65}.
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|Bir şey değildi.
 dlga_lord_active_mission_2:lord_raise_troops_thank|Tabii. {reg1} tane {s13} yetiştirdim. Onları alabilirsiniz.
+dlga_lord_active_mission_2:lord_raise_troops_thank.1|Kesinlikle.. Ben [reg2] askerlerini talim ettirdim, ve onlardan [reg1]'i iyi durumda. Onları alabilirsin, onlar savaş için daha fazla hazırlanmalı.  
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|{s4}'ü {s3}'te saklanırken buldum ve cezasını verdim.
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|Üzgünüm o kaçtı.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|Ve hepimiz onsuz çok daha iyi olacağız. Teşekkürler, {playername}, beni bu çıbandan kurtardığın için. Güvenilir olduğunu ve işlerin uygun bir biçimde üstesinden gelebildiğini bilmek güzel. Üstlerimize bir not yolladım, artık ek levazımat konusunda bize güvenebilirsin.
@@ -517,7 +543,7 @@ dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Leydim, B
 dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Onu Kuyutorman'da ara, Dol Guldur'a çok uzak sayılmaz. Kendisi hem iyi korunmuş hem de tedbirli bir düşman, alarmı tetiklememek için gizliliğini kullanmalısın. Eğer kaçarsa bizim bilmediğimiz başka bir karanlık yere gider ve kötülüklerine karşı koyulamaz bir şekilde devam eder. Onu yok etmek için sadece bir şansımız olacak. Çok fazla şey senin başarına bağlı. İyi dileklerimizle git.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Emredersiniz, Leydim. bu kötülüğü ortadan kaldırmak için elimden geleni yapacağım.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Bağışlayın, leydim. İnsanlarınızın bu derdine yardım etmeden önce ilgilenmem gereken başka acil işlerim var.
-dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Anlıyorum, {playername}. Ama çok uzun sürmesin, Ben onun kara büyüsüne karşı koymada zaman geçtikçe daha da zorlanıyorum.
+dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Anladım, {playername}. Ama çok uzun sürmesin, onun büyüsüne karşı koymaya çalışmak beni yoruyor.
 dlga_lord_tell_mission:lord_mission_deliver_message|{s13}'e bir mektup göndermem gerekiyor. Kendisi şu an {s4} topraklarında olmalı. Eğer o yöne gideceksen, mektubu ona teslim edebilir misin? Mektup 30 gün içerisinde onun elinde olmalı.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Elbette, zaten {s4} civarından geçmek niyetindeydim, sıkıntı olmaz.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Bu yakınlarda {s13} ile görüşeceğimi pek sanmıyorum,  {s65}. Başka biriyle göndermeniz daha iyi olur.
@@ -535,7 +561,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Bu günle
 dlga_lord_mission_raise_troops_accepted:close_window|Omuzlarımdan büyük bir yükü kaldırdın, {playername}. Çavuşlarıma, acemileri gönderip senin komutana vermelerini söyleyeceğim. Ayrıca masrafları karşılamak için sana biraz avans vereceğim. Al, bu kese işini görecektir. Yardımın için teşekkür ederim.
 dlga_lord_mission_raise_troops_alternate:close_window|Bu ilginç bir öneri, {playername}. Çavuşlarıma acemileri arenaya göndermelerini söylemeliyim. Onları arenaya kadar takip et ve bir güzel şekle sok. İzliyor olacağım. Yardımın için teşekkürler.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ah, elbette. Tam da beklediğim gibi. Peki, o zaman sana iyi şanslar
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Yardım edebileceğin bir şey var, {s4} olarak bilinen bir kanunsuz ile ilgili bir sorun. Korumalarımdan birini öldürdü ve o zamandan beri yargılanmaktan kaçıyor. Aldığımız haberlere göre kaçak {s3}'te görülmüş. Eğer onu avlayıp hak ettiği adaleti sağlarsan, karşılığında seni ödüllendireceğim.
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Yardım edebileceğin bir şey var, {s4} olarak bilinen bir kanunsuz ile ilgili bir sorun. Korumalarımdan birini öldürdü ve o zamandan beri yargılanmaktan kaçıyor. Aldığımız haberlere göre kaçak {s3} bölgesinde görülmüş. Eğer onu avlayıp hak ettiği adaleti sağlarsan, karşılığında seni ödüllendireceğim.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Öyleyse onu yakalayacağım ve onu infaz edeceğim.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Onun arkasından koşturamayacak kadar kadar meşgulüm.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Bu Harika, {playname}. Sana minnettar kalacağım,ve tabi ki bu kahramanlığın unutulmaycak. Peki, iyi avlanmalar.
@@ -639,16 +665,12 @@ dlga_caravan_help5:close_window|Bunu unutmayacağım. Sağol Torbal ve güvende 
 dlga_start:caravan_attack1|Ve sen de kimsin? Burada senin yardımına ihtiyacımız yoktu, Hah!
 dlga_caravan_attack3:close_window|Zayıf mı? Sana kimin zayıf olduğunu göstereceğim! (Zor)
 dlga_caravan_attack3:close_window.1|Git o halde, korkak.Senin cesedini kırlarda göreceğim.
-dlga_start:caravan_duel1|Hehe ... O huysuz biri, değil mi? Onu boşver! orada kellemi kurtardın! Bazı adamların hayatlarını da! ^^ İşte al, bu parayı ölü adamlarımızın ceplerinden bulduk. {s10}
-dlga_start:caravan_duel1.1|Sanırım desteklendim. Sen cesur bir savaşçısın. İşte, karavandan yağmaladıklarımızdan bir miktarını al. Muhafızlar da sana karşı bahis oynamışlardı, ama ben o değil..hehe... Orada ne yaptığını gördüm .... ^ ^{s10}
-dlga_caravan_duel1:caravan_duel2|Seni öldürüp her şeyini alabilirim... ama yeterince kanıtladım zaten.Defol.
-dlga_caravan_duel2:caravan_duel3|İnsanlar kesinlikle sana saygı duyuyor! Ya da korkuyorlar! Ne olursa olsun, burada ne yaptıklarını Lordlarına söyleyecekler. Belki onları etkilemeye devam edersen, sana özel şeyler verirler! Rhun'lu adamlar bana bir kez at vermişti! BEN DE ONU YEMİŞTİM! HA HA HA HA!
 dlga_start:caravan_res_tut1|*kotu adam gulusu* Kimsenin vaktini çalmaktan zarar gelmez, savaşçı! Aramızdaki bazı delikanlıların pekte umrunda değilsin, oh hayır! Ben hariç. Dövüşünü izledim. Aleyhinde iddiaya girmek istemezdim! {s10}^^ Ama hep olduğu gibi kendi türümüze bağlıyız. Göz'e hizmet et, Ak El'in umrunda olmaz.Yaşlı Adama hizmet et, ve Kara Kule neden vaktini kendi adına çalısmayarak bosa harcadığını dusunur!
 dlga_start:caravan_res_tut2|*kötü adam gulusu* Sanırım artık lider benim. Sen cılgın bir savascısın, ahh evet! Payına düşen ganimeti al. Ben hariçcoh hayır, aramızdaki bazı kekolar senin warg maması olacağına bahse girmişti. Dövüşünü izledim. Sana karşı iddiaya girmek istemezdim ahbap!^^ Cesaretinin dostlarımız ve müttefiklerimizin kulağına çalınacağından şüphen olmasın! Sana yeni bir binek, veya yeni bir kılıç vermeye istekli olabilirler. Kimsenin zayıflar için vakti yok, ama güçlüysen, hah, bize yardım edenlere biz de ederiz anlarsın ya?{s10}^^Ama hep olduğu gibi kendi türümüze bağlıyız.Göze hizmet et, Karanlık Lord'a hizmet et, evet, doğu da zafer kazan güneylilerin ruhu duymaz, bu hep böyledir.Goz'e hizmet et, Ak El'in umrunda olmaz. Yaşlı Adama hizmet et, ve Kara Kule neden vaktini kendi adına çalışmayarak bosa harcadığını dusunur!
 dlga_caravan_res_tut1:caravan_noduel|(GRUP SEVİYE DERSLERİ) ^^ Mordor halklarını geliştirmek için kullanabileceğiniz Kaynak Puanları Mordor'da kazanılablir . ^^ Daha fazla bilgi için RAPORLAR bölümüne bakınız.
 dlga_caravan_res_tut2:caravan_duel1|(GRUP SEVİYE DERSLERİ) ^^ Mordor halklarını geliştirmek için kullanabileceğiniz Kaynak Puanları Mordor'da kazanılablir . ^^ Daha fazla bilgi için RAPORLAR bölümüne bakınız.
 dlga_caravan_noduel:caravan_duel2|Onu tükürüğümle boğabilirim! Ama onun gibilere bir şey kanıtlamama gerek yok. 
-dlga_caravan_duel1:caravan_duel2|Seni öldürüp her şeyini alabilirim... ama yeterince kanıtladım zaten.Defol.
+dlga_caravan_duel1:caravan_duel2|Yaptıklarım seni ilgilendirmez Ork. Ama müttefiklerimize yardım edeceğim ve düşmanlarımızı öldüreceğim.
 dlga_caravan_duel2:caravan_fac_tut|Oyle olsun, tamam be!  Etraftaki şu zavallılara bak! Hah! Senden korkuyorlar, oh evet, korkmalılar! Ben korkmuyorum. Heh. Ama işe bak, sana bir iyilik borçlandım, değil mi?! Yolculuğumda sana karşılığını fazlasıyla vereceğim. Bugün yaptıklarını Patronlara anlatıcam. Hikayeler dönüp dolaşacak. Ve Patronlar hakkında yeterince hikaye duydukları zaman... senin için özel şeylere sahip olabilirler... Hediyeler, güç, saygınlık!  Şimdi kendime büyük bir el atmak için geri dönmeliyim!
 dlga_caravan_fac_tut:caravan_duel3|(GRUP SEVİYE DERSLERİ) ^^ Seviye puanları, grubunuzun (ve / veya diğer grupların) yükselmesini sağlar. ^^ Bu, maksimum parti büyüklüğünüzü, haftalık grup kaynak gelirinizi ve diğer grup özellikli ödüllerin açılmasını belirleyecektir.
 dlga_woodelf_help_6:woodelf_help_7|(GRUP SEVİYE DERSLERİ) ^^ Seviye puanları, grubunuzun (ve / veya diğer grupların) yükselmesini sağlar. ^^ Bu, maksimum parti büyüklüğünüzü, haftalık grup kaynak gelirinizi ve diğer grup özellikli ödüllerin açılmasını belirleyecektir.
@@ -828,7 +850,7 @@ dlga_mayor_sea_battle_question:mayor_sea_battle_no|Hazırlanmak için biraz zama
 dlga_mayor_sea_battle_yes:close_window|İyi. Şu an bütün birimlerin gemiye bindi, yakında yelken açacağız.
 dlga_mayor_sea_battle_no:close_window|Acele edin, yelken açmadan önce fazla zamanımız yok.
 dlga_mayor_talk:mayor_reinforced_center_finished|Benden istediğin gibi {s3} isimli kişiye destekte bulundum.
-dlga_mayor_talk:kill_quest_bandits_failed|Senden yapmanı istediğim şeyi başaramadığını duydum. Hayal kırıklığına uğradım, {playername}.
+dlga_mayor_begin:kill_quest_bandits_failed|Senden yapmanı istediğim şeyi başaramadığını duydum. Hayal kırıklığına uğradım, {playername}.
 dlga_kill_quest_bandits_failed:close_window|Bir daha ki sefer daha iyi yapacağım.
 dlga_mayor_talk:mayor_deliver_food|Yemeğiniz işte burda, {reg9} tane.
 dlga_mayor_deliver_food:mayor_deliver_food_completed|Çok iyi iş, {playername}, gıda depolarımız yine doldu ve şu an artık kimse açlık çekmiyor.
@@ -1029,13 +1051,26 @@ dlga_party_reinforce_check_1:party_reinforce_end|Demek fikrini değiştirdin...^
 dlga_party_reinforce_check_1:party_reinforce_end.1|Bu askerlerin bize bir faydası yok. ^Geri al onları.
 dlga_start:close_window.29|Senin yüzünden geç kalacağım! Büyücüler asla geç kalmaz!
 dlga_start:close_window.30|O... çağırıyoooor...
+dlga_start:close_window.31|Ordaki! Hayatta mısın? İyi! Bir sopa sallayamazsın! Bunu al!
+dlga_start:ori_choose_1|İyi savaştın kuzen! Şu ana kadar nasıl hayatta kaldığını bilmiyorum. Son zamanlarda bize katıldığını hatırlıyorum, tüm bunlardan önce... Balin düşmeden önce... Nerelisiniz?
+dlga_ori_choose_1:ori_choose_finish|Ben bir izciydim, Ayı halkının yakınındaki ormanlara yollandım. Geçenlerde Balin'in grubunu duydum ve ona katıldım.
+dlga_ori_choose_1:ori_choose_finish.1|Uzaktan bir kuzenim, uzak madenlerden usta bir korumayım. Sonrasında Balin'i duydum ve ona katıldım.
+dlga_ori_choose_1:ori_choose_finish.2|Demir Tepeler'den, savaş ustalarından ve barış zamanında bir madenci olanlardan geliyorum. Balin'i duydum ve katıldım, daha fazla ork öldürmek istiyordum.
+dlga_ori_choose_finish:close_window|Bilmek güzel! Bunları buldum, geçmişinize uygun olarak. Savunmamızı burada tutacağız ve onlardan çoğunun canını alacağız!
+dlga_start:close_window.32|Bu paslı yetenekleri kullanıyor gibisin, ha? İşte, bunun bir kısmını al. Daha iyi hissetmeni sağlayacak. Daha fazla ork geliyor!
+dlga_start:close_window.33|Şu tozlu şeyi çıkar ve bunu giy. Seni daha iyi korur. Bu orklar sert ısırıyor!
+dlga_start:close_window.34|Büyük birşey geliyor! Hazır olun!
+dlga_start:close_window.35|Onlardan çok fazla var... ama biz Cüceyiz!
+dlga_start:close_window.36|Bu orklar hazinelerle dolu bir mağara açtılar. İşte bulduğum bazı şeyler, bunları al ve devam et.
+dlga_start:close_window.37|Hayır... Onları duydum... dışarıdalar! Her yerdeler!
+dlga_start:close_window.38|Burada... Lordumuz Balin'in... bunların hepsine değersin...
 dlga_start:party_encounter_hostile_attacker|Bize karşı hiçbir şansın yok. Şimdi teslim ol ya da hepinizi gebertiriz...
 dlga_party_encounter_hostile_attacker:close_window|Saldırmayın! Teslim oluyoruz.
 dlga_party_encounter_hostile_attacker:close_window.1|Seninle sonuna kadar savaşacağız.
 dlga_start:party_encounter_hostile_defender|Ne istiyorsun?
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|Teslim ol yada öl!
 dlga_party_encounter_hostile_defender:close_window|Hiçbir şey. Seni kendi halinde bırakıyorum.
-dlga_start:close_window.31|* sessizce sana bakar *
+dlga_start:close_window.40|* sessizce sana bakar *
 dlga_start:battle_reason_stated.1|Teslim ol yada öl. Seçim senin.
 dlga_battle_reason_stated:close_window|Senden korkmuyorum.Savaşacağım.
 dlga_start:free|Evet, Senin için ne yapabilirim?

@@ -2,30 +2,35 @@ skinkey_chin_size|Taille du menton
 skinkey_chin_shape|Forme du menton
 skinkey_chin_forward|Avancée du menton
 skinkey_jaw_width|Largeur du menton
-skinkey_jaw_position|Position de la mâchoire
+skinkey_lower_lip|Lèvre inférieur
+skinkey_upper_lip|Lèvre supérieur
 skinkey_mouth_nose_distance|Distance bouche-nez
 skinkey_mouth_width|Largeur de la bouche
-skinkey_cheeks|Joues
+skinkey_nostril_size|Taille des narines
 skinkey_nose_height|Hauteur du nez
 skinkey_nose_width|Largeur du nez
 skinkey_nose_size|Taille du nez
 skinkey_nose_shape|Forme du nez
 skinkey_nose_bridge|Construction du nez
-skinkey_cheek_bones|Ossature des joues
+
 skinkey_eye_width|Largeur des yeux
 skinkey_eye_to_eye_dist|Écart entre les yeux
 skinkey_eye_shape|Forme des yeux
 skinkey_eye_depth|Profondeur des yeux
 skinkey_eyelids|Paupières
-skinkey_eyebrow_position|Position des sourcils
+skinkey_cheeks|Joues
+skinkey_cheek_bones|Ossature des joues
 skinkey_eyebrow_height|Hauteur des sourcils
-skinkey_eyebrow_depth|Profondeur des sourcils
+
 skinkey_eyebrow_shape|Forme des sourcils
 skinkey_temple_width|Largeur entre les tempes
 skinkey_face_depth|Profondeur du visage
 skinkey_face_ratio|Relation des parties du visage
 skinkey_face_width|Largeur du visage
 skinkey_post_edit|Reprendre
+skinkey_jaw_position|Position de la mâchoire
+skinkey_eyebrow_position|Position des sourcils
+skinkey_eyebrow_depth|Profondeur des sourcils
 skinkey_snout_height|Hauteur du museau
 skinkey_snout_width|Largeur du museau
 skinkey_snout_size|Taille du museau

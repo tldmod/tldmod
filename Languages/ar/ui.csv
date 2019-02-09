@@ -46,3 +46,8 @@ ui_value_denars|%d نقاط الموارد.
 ui_cannot_be_used_on_horseback|لا يمكن استخدامه حينما يكون مُركب
 ui_upgrade_to_value| يطور إلى %s
 ui_notification_cant_upgrade|(لا يمكن التطوير حينما يعطى للجنود)
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

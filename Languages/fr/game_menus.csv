@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|Défense du Gouffre de Helm, Rohan contre Isengard
 mno_custom_battle_scenario_5|Embuscade : Nord contre Rhûn
 mno_custom_battle_scenario_6|Attaque de siège, Orques contre Nains
 mno_custom_battle_scenario_7|Embuscade, Orques contre Mirkwood
+mno_custom_battle_scenario_8|Le Baroud d'Honneur du peuple de Durin
+mno_custom_battle_scenario_88|Pourchasser un groupe d'éclaireurs orques
 mno_custom_battle_scenario_11|Batailles de test (équilibrage)
 mno_custom_battle_scenario_10|Bataille de test de scène
 mno_troll_battle_scenario|Batailles de test de Trolls
 mno_warg_battle_scenario|Batailles de test de Wargs
 mno_build_your_own_scene|** Construisez votre propre scène pour TLD **
-menu_tutorial|^^TLD a de nombreuses fonctionnalités étrangères à Native. Celles-ci sont décrites en détail dans le PDF inclus dans l'installation (en anglais), ou sur MundusBellicus.fr, dans la section TLD dans le sous-forum Mount&Blade.
-menu_tutorial|^^TLD a de nombreuses fonctionnalités étrangères à Native. Celles-ci sont décrites en détail dans le PDF inclus dans l'installation (en anglais), ou sur MundusBellicus.fr, dans la section TLD dans le sous-forum Mount&Blade.
+menu_tutorial|^^Bienvenue au Tutoriel de Combat de Mount & Blade. Ici vous apprendrez les bases du combat ainsi qu'un aperçu du commandement de troupes sur le champ de bataille. 
 mno_tutorial_1|Tutoriel #1: Mouvements Basiques et sélection d'arme. {s1}
 mno_tutorial_2|Tutoriel #2: Combattre avec bouclier {s2}
 mno_tutorial_3|Tutoriel #3: Combattre sans bouclier {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|Annuler.
 menu_custom_battle_end|^^^^^^La bataille est terminée. {s1} Votre camp a tué {reg5} ennemis et perdu {reg6} troupes dans les combats.^Vous avez personnellement tué {reg7} opposants durant la bataille.
 mno_replay|Jouer à nouveau cette bataille.
 mno_continue_dot|Continuer.
+menu_custom_battle_durin_end|^^^^^^C'était un baroud d'honneur admirable mais condamné d'avance.^^ Vous et vos compagnons avez défait {reg5} ennemis^Vous avez personnellement vaincu {reg7} adversaires au combat/ 
+mno_replay_cbd|Jouer à nouveau cette bataille.
+mno_continue_dot_cbd|Continuer.
 mno_dot_go_back|. Retour
 menu_start_good|^^^^^^^^^^Choisissez votre race :
 mno_start_ma|Homme
@@ -55,7 +59,7 @@ mno_start_ur|un Uruk, la nouvelle race des Orques
 mno_start_em|un Homme, corrompu par Sauron
 menu_start_hand|^^^^^^^^^Votre Maître est Sarouman^Choisissez votre race
 mno_start_whor|un Orque, servant la Main Blanche
-mno_start_isur|un Uruk-hai, élevé en Isengard
+mno_start_isur|un des Uruk-Hai, élevé en Isengard
 mno_start_duma|un Homme du Pays de Dun venant des Plaines de l'Ouest
 menu_start_good_man|^^^^^^^^^^A qui jurez vous allégence?
 mno_start_go|A l'intendant Denethor, régent du Gondor
@@ -104,7 +108,7 @@ mno_proc|Procéder normalement
 menu_start_as_one|^^^^^^^^^^Quel type de Soldat êtes vous ?
 mno_start_default|Devenir un {s23} (Normal)
 mno_start_up1|Devenir un {s21} (Facile)
-mno_start_up2|Devenir un {s22} (Facile)\t\t\t\t\t\t\t\t\t\t\t\t\t\t   
+mno_start_up2|Devenir un {s22} (Facile)
 mno_continue|Reprendre la route
 menu_character_report|^^^^^Moral du groupe : {reg8}^Limite du groupe : {reg7}^
 menu_camp|^^^^Vous êtes dans {s1}.{s2}^^Que voulez-vous faire ?
@@ -113,9 +117,11 @@ mno_camp_troop|Passer en revue {reg10? troupes:}{reg12?et:}{reg11? prisonniers:}
 mno_camp_action|Utiliser un objet.
 mno_camp_wait_here|Camper ici pour quelque temps.
 mno_camp_options|Changer les options de TLD.
+mno_Dev_Menu|Menu Développeur
+menu_dev_menu|Ce sont les Options Développeurs avec plusieurs outils de triche.^^Cependant, cela peut déclencher des événements, déclencheurs ou changement de campagne en cours de création qui peuvent faire crasher votre partie.^^Utilisez à vos risques et périls!^^Aussi, si vous reportez des bugs, merci de préciser que vous utilisez le Menu de Dev.
 mno_Cheat_enable|Activer la triche/les options de modding.
 menu_game_options|^^^^^^^^Cliquez sur une option pour basculer :
-mno_game_options_war_level_start|La Guerre Commence au Niveau: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+mno_game_options_war_level_start|La Guerre commence au Niveau:{s1}
 mno_game_options_restrict_items|Equipement du joueur restreint : {s7}
 mno_game_options_formations|Formations de bataille et IA : {s7}
 mno_game_options_siege_ai|IA de Siège Avancée:  {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|Retour.
 menu_camp_tweaks|^^^^^^^^Choisissez une option que vous voudriez ajuster.
 mno_tweak_options_compat|Astuces de compatibilité...
 mno_tweak_options_strat|Astuces de stratégie...
-mno_tweak_options_battlefield_ai|Modifications de l'IA en combat...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_tweak_options_battlefield_ai|Modifications de l'IA en combat...
 mno_tweak_options_back|Retour au menu des options.
 menu_camp_compat_tweaks|^^^^^^^^Cliquez sur une option pour la changer (maintenez MAJ pour diminuer):^Ces options sont pour la compatibilité et pas pour la triche)
 mno_game_options_compat_party|Nombre maximal de groupes : {s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|En tant que membre du groupe avec la plus haute compéten
 mno_build_ladders_cont|Allez-y.
 menu_castle_attack_walls_simulate|{s4}^^Vos pertes : {s8}^^Les pertes ennemies : {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4} ^^Vos pertes : {s8}^^Pertes de vos alliés : {s9}^^Pertes ennemies : {s10}
+menu_castle_taken_by_friends|Rien a voir ici.
 menu_castle_taken|{s3} est tombé aux mains de vos troupes, et vous avez maintenant le contrôle total {reg2?de la ville:du château}. {reg1? Il semble que rien ne vous empêche de le garder pour vous-même...:}
 menu_castle_taken_2|{s3} est tombé aux mains de vos troupes, et vous avez maintenant le contrôle total du château. Il est temps d'envoyer un messager à {s9} pour annoncer votre victoire. {s5}
 mno_castle_taken_no_claim|Ne demander aucune récompense.
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|Se rendre aux baraquements {s61}.
 mno_speak_with_elder|Parler avec le {s6}.
 mno_isengard_underground|Aller vers les cavernes souterraines.
 mno_tirith_toplevel|Grimper au dernier niveau.
+mno_erebor_gates|Visiter les Grandes Portes.
 mno_town_leave|Partir
 mno_town_leave_door|Quitter la zone.
 menu_player_initiated_siege_result|Vous attaquez ce lieu sous la bannière de {s2}
@@ -328,6 +336,7 @@ menu_player_added_to_allow_follow|^^^^^Un messager est arrivé et vous informe q
 mno_player_added_to_allow_follow_close|Fermer
 menu_center_besieged_event|^^^^^Un messager est arrivé et vous informe que {s1} est assiégé par {s2} de {s3}.
 mno_center_besieged_event_close|Fermer
+menu_guardian_party_spawned|^^^^Nos éclaireurs nous informent que {s6} regroupe une grande armée aux alentours de {s7}, dans une dernière tentative de défendre la capitale.
 mno_intro_next|Reprendre la route
 mno_start_defend_caravan|Défendez la Caravane!
 mno_start_raid_caravan|Pillez la Caravane!
@@ -347,6 +356,8 @@ mno_lord_field_ai|IA de combat des seigneurs améliorée: {s7}
 mno_horse_archer_field_ai|IA de combat des archers montés améliorée : {s7}
 mno_vs_orcs_field_ai|Les archers ont une meilleure visée contre les orcs (ils ne visent jamais sous la tête):  {s7}
 mno_battlefield_animals|Spawn des animaux (hors monture) des compagnons en combat: {s7}
+mno_slow_when_wounded|Les montures ralentissent quand elles sont blessées: {s7}
+mno_battle_encounter_effects|Effets spéciaux des Factions sur le champ de bataille (ex: orages, brouillards): {s7}
 mno_defend_refugees|Restez attentifs aux pillards...
 mno_attack_refugees|Attaquer le convoi de réfugiés...
 mno_leave_refugees|Les laissez pour l'instant...
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|Continuer à avancer !
 mno_pick_troops1|Choisir des compagnons pour la mission, {reg0} sélectionnés
 menu_pick_troops|Qui voulez-vous emmener dans la mission furtive ? Pour l'instant, vous avez sélectionné {reg0} compagnons. Vous pouvez emmener jusqu'à 10 troupes avec vous.
 mno_go_forward|Fin de la sélection des compagnons et continuer.
-menu_burial_mound|Vous approchez du monument funéraire de {s1} {s2}. Il a été enterré avec ces armes et celles de ses ennemis vaincus au combat.
+menu_burial_mound|Vous approchez du monument funéraire de {s1} de {s2}. Vaincu au combat par les forces de {s28}. Il a été enterré avec ses armes et celles de ses ennemis vaincus au combat.
 mno_pay_respects|S'agenouiller et présenter ses respects.
 mno_swear_oath|Prêter serment de vengeance ! 
 mno_despoil|Profaner le site.
 mno_leave_mound|Quitter le monticule.
 menu_burial_mound_respects|Vous vous agenouillez et présentez vos respects à {s1}, murmurant une prière pour un rapide voyage vers l'au-delà. Il n'y a rien de plus à faire ici.
 menu_burial_mound_oath|Vous prêtez, haut et fort, le serment de venger la mort de {s4}. Vous jurez de traquer sans relâche les forces {s3} et de les détruire. Vos mots ont porté loin avec le vent, et qui sait s'ils n'ont pas été entendus au-delà de la mer ?
+menu_funeral_pyre_oath|Vous prêtez, haut et fort, le serment de venger la mort de {s4}. Vous jurez de traquer sans relâche les forces {s3} et de les détruire. Vos mots ont porté loin avec le vent, et qui sait s'ils n'ont pas été entendus au-delà de la mer ?
+mno_leave_pyre_oath|Quitter le bûcher.
 menu_burial_mound_despoil|Vous démolissez le monument de {s1} de vos propres mains, et souillez les pierres avec des malédictions, des chants déchus et des actes innommables. Vos partisans restent en retrait par peur de la mort, mais semblent avoir une déférence renouvelée envers votre méchanceté.
-menu_funeral_pyre|Vous approchez des restes carbonisés du bûcher funéraire de {s3} {s2}. Le corps a été brûlé avec cérémonie par ses gardes personnels. Il ne reste rien de valeur.
+menu_funeral_pyre|Vous approchez des restes carbonisés du bûcher funéraire de {s3} de {s2}. Vaincu au combat par les forces de {s28}. Le corps a été brûlé avec cérémonie par ses gardes personnels. Il ne reste rien de valeur.
 mno_leave_pyre|Quitter le bûcher.
 menu_town_ruins|En approchant, vous voyez que {s1} est {s2}
 mno_ruin_menu_0|Explorer la zone.

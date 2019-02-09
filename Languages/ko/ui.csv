@@ -46,3 +46,8 @@ ui_value_denars|%d 자원 포인트
 ui_cannot_be_used_on_horseback|말을 타고 있는 상태에선 사용 할 수 없습니다.
 ui_upgrade_to_value|업그레이드 값 %s
 ui_notification_cant_upgrade|(병력을 이동시키는 도중에 병사를 승진 시킬 수 없습니다.)
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

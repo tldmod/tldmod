@@ -8,7 +8,7 @@ fac_mordor|Mordor
 fac_isengard|Isengard
 fac_lorien|Lothlorien
 fac_imladris|Imladris
-fac_woodelf|Dunkelskov elvere 
+; fac_woodelf|The Woodland Realm
 fac_dale|Dale
 fac_harad|Harad
 fac_rhun|Rhun
@@ -17,8 +17,8 @@ fac_umbar|Umbar
 fac_moria|Moria
 fac_guldur|Dol Guldur
 fac_gundabad|Gundabad Bjerget
-fac_dunland|Dunlendings
-fac_beorn|Beorings
+; fac_dunland|Dunland
+; fac_beorn|The Vale of Anduin
 fac_player_supporters_faction|Spiller faction
 fac_player_faction|Spiller faction
 fac_brigands|Røvere

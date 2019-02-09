@@ -18,7 +18,7 @@ p_town_east_emnet|Keletelve
 p_town_westfold|Nyugathalom
 p_town_west_emnet|Nyugatelve
 p_town_eastfold|Kelethalom
-p_town_morannon|Fekete Kapu
+p_town_morannon|Morannon
 p_town_minas_morgul|Minas Morgul
 p_town_cirith_ungol|Ork járőr tábor
 p_town_east_osgiliath|Kelet Osgiliath
@@ -39,7 +39,7 @@ p_town_beorn_house|Beorn Háza
 p_town_moria|Mória Kapui
 p_town_troll_cave|Troll barlang
 p_town_dale|Suhatag
-p_town_esgaroth|Tóváros
+p_town_esgaroth|Esgaroth
 p_town_dunland_camp|Dúnföldi tábor
 p_town_harad_camp|Haradrim tábor
 p_town_khand_camp|Khand tábor
@@ -53,7 +53,7 @@ p_town_rhun_north_camp|Rhûn északi előőrs
 p_town_gundabad|Gundabad
 p_town_gundabad_ne_outpost|Gundabad ÉK előőrs
 p_town_gundabad_nw_outpost|Gundabad ÉNY előőrs
-; p_town_goblin_north_outpost|Goblin Town
+p_town_goblin_north_outpost|Koboldvár
 p_town_goblin_south_outpost|Kobold déli előőrs
 p_town_gundabad_m_outpost|Gundabad bakacsinerdei előőrs
 p_town_erebor|Erebor
@@ -78,7 +78,7 @@ p_advcamp_dunland|Dúnföld előretolt tábora
 p_advcamp_beorn|Beornfiak előretolt tábora
 p_argonath|Argonath
 p_argonath2|Argonath
-; p_hand_isen|Handsign of Isengard
+p_hand_isen|Vasudvard kézjele
 p_mount_doom|Végzet Hegye
 p_town_barad_dur|Barad-dûr
 p_ford_cair_andros1|Anduin

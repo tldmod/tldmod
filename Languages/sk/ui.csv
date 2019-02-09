@@ -46,3 +46,8 @@ ui_value_denars|%d Bodov Z.
 ui_cannot_be_used_on_horseback|Nemožné použiť v sedle
 ui_upgrade_to_value|Vylepšiť na %s
 ui_notification_cant_upgrade|(Nemožné povyšovať jednotky predané do inej skupiny)
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

@@ -32,7 +32,7 @@ itm_rohirrim_courser|Rohirimski Kurser
 itm_rohirrim_hunter|Rohirimski Lovački Konj
 itm_rohirrim_courser2|Rohirimski Kurser
 itm_rohan_warhorse|Rohirimski Ratni Konj
-itm_thengel_warhorse|Ratni Konj Tengelovih Cuvara
+; itm_thengel_warhorse|Rohirrim Heavy Warhorse
 itm_rhun_horse_a|Rhunovski konj
 itm_rhun_horse_b|Rhunovski konj
 itm_rhun_horse_d|Rhunovski konj
@@ -41,7 +41,7 @@ itm_rhun_horse_f|Rhunovski teski konj
 itm_rhun_horse_g|Rhunovski teski konj
 itm_rhun_horse_h|Rhunovski teski konj
 ; itm_dale_horse|Rhovanion Horse
-itm_dale_warhorse|Dalski ratni konj
+; itm_dale_warhorse|Rhovanion Warhorse
 itm_riv_warhorse|Rivendelski ratni konj
 itm_riv_warhorse2|Imladriski konj
 itm_mordor_warhorse|Mordorski ratni konj
@@ -71,22 +71,14 @@ itm_warg_reward|Ogromna Varga
 ; itm_axe_c|Northmen Axe
 ; itm_axe_d|Northmen Axe
 itm_tree_trunk_club_a|Stablo
-itm_tree_trunk_club_b|Stablo
 ; itm_long_bearded_axe|Northmen Bearded Longaxe
 ; itm_2_handed_axe|Northmen Longaxe
-itm_giant_hammer|Džinovski Čekić
+itm_free_giant_hammer|Džinovski Čekić
 itm_giant_mace|Džinovski Buzdovan
-itm_giant_mace_b|Džinovski Bodljikavi Buzdovan
-itm_olog_feet_boots|Noga Olog Hai-ja
-itm_olog_head_helm|Glava Olog Hai-ja
-itm_olog_head_helm_b|Glava Olog Hai-ja
-itm_olog_head_helm_c|Glava Olog Hai-ja
-itm_olog_body|Oklop Olog Hai-ja
-itm_olog_body_b|Oklop Olog Hai-ja
-itm_olog_hands|Ruke Olog Hai-ja
+; itm_troll_shield_a|Troll Shield
 itm_arrows|Strele
 itm_gondor_arrows|Gondorske Strele
-itm_gondor_auxila_arrows|Gondorianske Strele
+; itm_orc_javelin|Orc Heavy Javelin
 itm_khergit_arrows|Bodljikave Strele
 itm_rohan_arrows_2|Rohirimske Strele
 itm_harad_arrows|Haradrimske Strele
@@ -96,30 +88,11 @@ itm_woodelf_arrows|Strele Šumskih vilenjaka
 itm_elven_arrows|Vilovnjačke Strele
 itm_orc_hook_arrow|Orkovske Kukaste Strele
 itm_isengard_arrow|Isengardske Strele
-itm_pilgrim_disguise|Maska Došljaka
 itm_leather_gloves|Kožne Rukavice
 itm_mail_mittens|Mrežaste Rukavice
 itm_leather_boots|Kožne Cipele
-itm_black_dress|Crna Haljina
-itm_blackwhite_dress|Damska Haljina
-itm_white_tunic_a|Jednostavna Tunika
-itm_white_tunic_b|Jednostavna Tunika
-itm_white_tunic_c|Jakna Tunika
-itm_blue_tunic|Plava Tunika
+; itm_white_tunic_a|Civilian Outfit
 itm_black_tunic|Crna Tunika
-itm_green_tunic|zelena Tunika
-itm_red_tunic|Crvena Tunika
-itm_leather_apron|Kožna Kecelja
-itm_leather_jerkin|Kožni Prsluk
-itm_fur_coat|Dejl Krzno
-itm_green_dress|Zelena Haljina
-itm_tld_tunic|Tunika
-itm_gondor_fine_outfit_dress|Fina Odeća
-itm_rohan_fine_outfit_dale_dress|Fina Odeća
-itm_robe_generic_dress|Odora
-itm_wimple_a|Kaluđerički veo
-itm_wimple_with_veil|Kaluđerički veo
-itm_fine_hat|Dobar Šešir
 itm_shortened_spear|Skraćeno Koplje
 itm_spear|Koplje
 itm_light_lance|Lako Dugo Koplje
@@ -137,11 +110,11 @@ itm_dwarf_short_bow|Patuljački Kratki Luk
 itm_harad_bow|Haradski Zakrivljeni Luk
 itm_lg_bow|Luk Orla Čuvara
 itm_riv_bow|Rivendalski Luk
-itm_glorfi_bow|Glofindelov Luk
+; itm_glorfi_bow|Glorfindel Bow
 itm_lorien_bow|Galadrimski Luk
 itm_isengard_large_bow|Isengardski Veliki Luk
 itm_dale_bow|Dejl Luk
-; itm_uruk_bow_pl|Strong Orc Bow
+; itm_uruk_bow|Strong Orc Bow
 itm_mirkwood_bow|Luk Mrke Šume
 itm_dunland_javelin|Danlendsko Koplje
 itm_orc_throwing_arrow|Orkovske Strelice
@@ -174,7 +147,6 @@ itm_arnor_sword_f|Arnorski Kratki Mač
 itm_riv_helm_a|Rivendalska Kapa
 itm_riv_helm_b|Kaciga Rivendalskog Strelca
 itm_riv_helm_c|Kaciga Rivendalskog Pešadinca
-itm_riv_helm_glorfi|Glorfijeva kosa
 itm_riv_tiara|Tijara Vilenjačkog Lorda
 itm_riv_shield_a|Rivendalski Štit
 itm_riv_shield_b|Rivendalski Štit
@@ -249,7 +221,7 @@ itm_lamedon_vet_warrior|Oklop Lamedonskog  Ratnika Veterana
 ; itm_lamedon_hood|Hood
 itm_pinnath_archer|Oklop Strelca iz Pinat Gelina
 itm_pinnath_footman|Oklop Pešadinca iz Pinat Gelina
-itm_pinnath_leader|Oklop Vođe iz Pinat Gelina
+; itm_pinnath_leader|Pinnath Gelin Knight Armor
 itm_pinnath_vet_footman|Oklop Pešadinca Veterana iz Pinat Gelina
 itm_pinnath_warrior|Oklop Ratnika iz Pinat Gelina
 itm_pel_footman|Oklop Pešadinca iz Pelargira
@@ -276,7 +248,7 @@ itm_gondor_shield_a|Gondorski Kockasti Štit
 ; itm_gondor_shield_b|Gondor Kite Shield
 itm_gondor_shield_c|Oklop Gondorske Kule
 ; itm_gondor_shield_d|Gondor Kite Shield
-itm_gondor_shield_e|Gondorski Kraljevski Štit
+; itm_gondor_shield_e|Gondor Citadel Shield
 itm_gon_tab_shield_a|Heraldski Gondorski Okrugli Štit
 itm_gon_tab_shield_b|Heraldski Gondorski Kockasti Štit
 ; itm_gon_tab_shield_c|Heraldic Gondor Kite Shield
@@ -315,7 +287,6 @@ itm_lorien_helm_a|Kaciga Lorienskog Strelca
 itm_lorien_helm_b|Kaciga Lorienskog Strelca
 itm_lorien_helm_c|Kaciga Lorienske Pešadije
 ; itm_orc_chain_greaves|Orc Greaves
-
 ; itm_orc_coif|Orc Skullcap
 itm_orc_greaves|Orkovske Mrežaste Čizme
 itm_orc_ragwrap|Orkovski Dronjak
@@ -357,10 +328,10 @@ itm_isen_uruk_helm_d|Kaciga Uruk-Hai Kapetana
 itm_isen_uruk_helm_e|Kaciga Uruk-Hai Tragača
 itm_isen_uruk_helm_f|Kaciga Uruk-Hai Tragača
 itm_uruk_pike_a|Urukško Veoma Dugo Koplje
-itm_uruk_pike_b|Urukško Veoma Dugo Koplje
+; itm_uruk_pike_b|Mordor Pike
 itm_uruk_falchion_a|Urukška Sablja
 itm_uruk_falchion_b|Urukška Sablja
-itm_uruk_spear|Urukško Koplje
+; itm_uruk_spear|Mordor Spear
 itm_uruk_skull_spear|Urukško Koplje od Lobanje
 itm_uruk_voulge|Urukška Duga Sekira
 itm_uruk_heavy_axe|Urukška Teška Sekira
@@ -381,9 +352,9 @@ itm_twohand_wood_club|Velika Drvena Palica
 itm_bone_cudgel|Toljaga od Kostiju
 itm_skull_club|Palica od Kostiju
 itm_orc_club_a|Orkovska Palica
-itm_orc_club_b|Orkovska Palica
+; itm_orc_club_b|Warg Rider Club
 ; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Spiky Orc Club
+; itm_orc_club_d|Evil Mace
 itm_orc_sledgehammer|Orkovska Macola
 itm_orc_simple_spear|Orkovsko Koplje
 itm_orc_skull_spear|Orkovsko Koplje od Kostiju
@@ -399,7 +370,7 @@ itm_orc_throwing_axes|Orkovska Sekira za Bacanje
 itm_orc_bow|Orkovski Luk
 itm_orc_shield_a|Orkovski Štit
 itm_orc_shield_b|Orkovski Štit
-itm_orc_shield_c|Orkovski Štit
+; itm_orc_shield_c|Orc Tower Shield
 itm_mordor_orc_shield_a|Štit Mordorskog Orka
 itm_mordor_orc_shield_b|Štit Mordorskog Orka
 itm_mordor_orc_shield_c|Štit Mordorskog Orka
@@ -411,23 +382,13 @@ itm_mordor_uruk_shield_c|Štit Mordorskog Uruka
 itm_mordor_man_shield_a|Štit Mordorskog Čoveka
 itm_mordor_man_shield_b|Štit Mordorskog Čoveka
 itm_angmar_shield|Angmarski Štit
-
 ; itm_orc_nosehelm|Orc Nosehelm
-
 ; itm_orc_kettlehelm|Orc Kettlehelm
-
 itm_orc_buckethelm|Orkovska Kofasta Kaciga
-
 ; itm_orc_morion|Orc Morion
-
 itm_orc_beakhelm|Orkovska Kljunasta Kaciga
-
 itm_orc_bughelm|Orkovska Bubasta Kaciga
-
 ; itm_orc_visorhelm|Orc Visorhelm
-
-; itm_orc_visorhelm_pl|Orc Visorhelm
-
 itm_m_orc_light_a|Mordorski Ork Laki Oklop
 itm_m_orc_light_b|Mordorski Ork Laki Oklop
 itm_m_orc_light_c|Mordorski Ork Laki Oklop
@@ -439,21 +400,13 @@ itm_m_orc_heavy_c|Mordorski Ork Teski Oklop
 itm_m_orc_heavy_d|Mordorski Ork Teski Oklop
 itm_m_orc_heavy_e|Mordorski Ork Teski Oklop
 itm_m_uruk_light_a|Urukski Pojas
-
 itm_m_uruk_light_b|Urukski Kozni Oklop
-
 ; itm_m_uruk_light_c|Uruk Light Mail
-
 ; itm_m_uruk_med_a|Uruk Heavy Leather
-
 ; itm_m_uruk_med_b|Uruk Heavy Mail
-
 ; itm_m_uruk_med_c|Uruk Light Scale
-
 ; itm_m_uruk_heavy_a|Uruk Heavy Scale
-
 ; itm_m_uruk_heavy_b|Uruk Platemail
-
 ; itm_m_uruk_heavy_c|Lugburz Platemail
 itm_m_uruk_heavy_j|Urukski Teski Oklop
 itm_m_uruk_heavy_k|Urukski Oklop Garde
@@ -507,7 +460,7 @@ itm_dun_helm_b|Dunska Kaciga Sa Rogovima
 itm_dun_helm_c|Dunska Velika Kaciga
 itm_dun_helm_d|Dunska Velika Kaciga
 
-; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
+; itm_dun_helm_e|Dunnish Antler Helm
 itm_dun_shield_a|Dunski Stit
 itm_dun_shield_b|Dunski Stit
 itm_dun_berserker|Mac Plemenskog Vodlje Dunlanda
@@ -520,20 +473,24 @@ itm_rohan_armor_a|Rohanska Tunika
 itm_rohan_armor_e|Rohanska Oklopna Kosulja
 ; itm_rohan_armor_h|Rohan Leather Armor
 itm_rohan_armor_k|Rohanska Oklopna Kosulja
-itm_rohan_armor_n|Rohanski Krljustni Oklop
-itm_rohan_armor_p|Rohanski Oklop
-; itm_rohan_armor_s|Rohan Guard Armor
+; itm_rohan_recruit|Rohan Padded Jerkin
+; itm_rohan_leather|Rohan Leather Vest
+itm_rohan_mail|Rohanska Oklopna Kosulja
+; itm_rohan_rider|Rohan Rider Armor
+itm_rohan_scale|Rohanski Krljustni Oklop
+; itm_rohan_surcoat|Rohan Surcoat
+; itm_rohan_guard|Rohan Guard Armor
 itm_rohan_light_helmet_a|Rohanski Laki Slem
-itm_rohan_light_helmet_b|Rohanska Laka Kaciga
-itm_rohan_inf_helmet_a|Rohanska Pesadijska Kaciga
-itm_rohan_inf_helmet_b|Rohanska Pesadijska Kaciga
-itm_rohan_archer_helmet_a|Rohanska Kaciga Za Strelce
-itm_rohan_archer_helmet_b|Rohanska Kaciga Za Strelce
-itm_rohan_archer_helmet_c|Rohanska Kaciga Za Strelce Na Konjima
-itm_rohan_cav_helmet_a|Rohanska Konjanicka Kaciga
-itm_rohan_cav_helmet_b|Rohanska Konjanicka Kaciga
-itm_rohan_cav_helmet_c|Rohanska Konjanicka Kaciga
-itm_rohan_captain_helmet|Kaciga Kapetana Rohana
+itm_rohan_light_helmet_b|Rohanski Laki Slem
+; itm_rohan_inf_helmet_a|Rohan Eyeguard Helm
+; itm_rohan_inf_helmet_b|Rohan Eyeguard Helm
+; itm_rohan_archer_helmet_a|Rohan Nasal Helm
+; itm_rohan_archer_helmet_b|Rohan Nasal Helm
+; itm_rohan_archer_helmet_c|Rohan Guard Helm
+; itm_rohan_cav_helmet_a|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_b|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_c|Rohan Cavalry Helm
+; itm_rohan_captain_helmet|Rohan Captain Helm
 itm_rohan_shield_a|Rohanski Stit
 itm_rohan_shield_b|Rohanski Stit
 itm_rohan_shield_c|Rohanski Stit
@@ -555,12 +512,10 @@ itm_rohan_2h_sword|Ratni Mac Rohana
 itm_mirkwood_light_scale|Laki Oklop Sumskih Vilenjaka
 itm_mirkwood_armor_a|Laki Kozni Oklop
 itm_mirkwood_armor_b|Laki Prosiveni Krljustni Oklop
-
-; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
+; itm_mirkwood_armor_c|Mirkwood Royal Mail
 itm_mirkwood_armor_d|Laki Prosiveni Oklop
 itm_mirkwood_armor_e|Laki Verizni Oklop Sa Tunikom
-
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+; itm_mirkwood_armor_f|Mirkwood Leafscale
 itm_mirkwood_great_spear|Mirkvodovo Veliko Koplje
 itm_mirkwood_war_spear|Mirkvudovo Ratno Koplje
 itm_mirkwood_short_spear|Mirkvudovo Koplje
@@ -703,7 +658,6 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_rhun_battleaxe|Rhun Battle Axe
 ; itm_rhun_falchion|Savage Falchion
 ; itm_rhun_glaive|Rhun Glaive
-
 ; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
@@ -744,7 +698,7 @@ itm_harad_lamellar_greaves|Haradske Cizme
 
 ; itm_dale_sword|Dale Shortsword
 ; itm_dale_sword_long|Dale Longsword
-; itm_dale_sword_broad|Dale Broadsword
+; itm_dale_sword_broad|Dale Infantry Sword
 ; itm_dale_pike|Dale Spear
 ; itm_dale_billhook|Dale Billhook
 ; itm_dale_shield_a|Dale Tower Shield
@@ -780,20 +734,28 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_umb_hood|Black Hood
 
 ; itm_corsair_boots|Corsair Boots
-; itm_umb_shield_a|Corsair Buckler
+
+; itm_umb_shield_a|Corsair Shield
+
 ; itm_umb_shield_b|Corsair Buckler
+
 ; itm_umb_shield_c|Corsair Buckler
+
 ; itm_umb_shield_d|Corsair Buckler
-; itm_umb_shield_e|Corsair Buckler
+
+; itm_umbar_spear|Umbar Short Spear
+
 ; itm_umbar_cutlass|Umbar Cutlass
+
 ; itm_kraken|Kraken Cutlass
+
 ; itm_umbar_rapier|Umbar Boarding Sword
 
 ; itm_corsair_harpoon|Corsair Harpoon
 ; itm_corsair_sword|Corsair Eket
 
 ; itm_corsair_throwing_dagger|Crooked Throwing Daggers
-; itm_umbar_pike|Umbar Pike
+; itm_umbar_pike|Corsair Trident
 ; itm_woodman_tunic|Woodmen Tunic
 
 ; itm_woodman_scout|Woodmen Scout Cape
@@ -817,7 +779,7 @@ itm_harad_lamellar_greaves|Haradske Cizme
 
 ; itm_dwarf_shield_d|Dwarven Round Shield
 
-; itm_north_round_shield|Dwarven Shield
+; itm_north_round_shield|Northmen Round Shield
 
 ; itm_free_dwarf_shield_g|Dwarven Shield
 
@@ -883,19 +845,18 @@ itm_harad_lamellar_greaves|Haradske Cizme
 
 ; itm_dwarf_helm_round|Dwarf Round Helm
 
-; itm_free_dwarf_helm_v|Dwarf Chain Sallet
-
 ; itm_dwarf_helm_sallet|Dwarf Sallet
 
-; itm_dwarf_armor_a|Erebor Mail
+; itm_dwarf_armor_d|Iron Hills Coat of Scales
+; itm_dwarf_armor_a|Erebor Surcoat over Mail
 
-; itm_leather_dwarf_armor|Dwarven Pad over Mail
+; itm_leather_dwarf_armor|Dwarven Padded Coat
 
-; itm_dwarf_armor_b|Erebor Scale
+; itm_dwarf_armor_b|Erebor Tunic over Mail
 
-; itm_leather_dwarf_armor_b|Dwarven Pad over Tunic
+; itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
 
-; itm_dwarf_armor_c|Dwarven Scale over Mail
+; itm_dwarf_armor_c|Erebor Scale Mail
 
 ; itm_dwarf_vest|Dwarven Tunic
 
@@ -907,6 +868,7 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_far_harad_shield_paint|Wicker Shield
 ; itm_nazgulrobe|Nazgul Robe
 
+; itm_werewolf|Werewolf
 ; itm_mordor_banner|Mordor Banner
 ; itm_isengard_banner|Isengard banner
 ; itm_woodelf_banner|Mirkwood Banner
@@ -916,13 +878,7 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_amroth_lance_banner|Dol Amroth Lance With Banner
 ; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 ; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
-; itm_ent_body|Ent Body
-; itm_ent_head_helm|Ent Head
-; itm_ent_head_helm2|Ent Head
-; itm_ent_head_helm3|Ent Head
-; itm_ent_feet_boots|Ent Feet
-; itm_ent_hands|Ent Hands
-; itm_galadriel|Galadriel suit
+
 ; itm_ent_water|Strange bowl of water
 ; itm_map|Maps of Middle Earth
 ; itm_athelas_reward|Athelas Plant
@@ -938,7 +894,8 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_orc_brew|Orc Brew
 ; itm_rohan_saddle|Saddle of Thengel
 ; itm_mearas_reward|Mearh Stallion
-; itm_sword_of_arathorn|Arathorn's Sword
+
+; itm_shield_of_tuor|Shield of Tuor
 ; itm_riv_armor_reward|Rivendell Decorated Armor
 ; itm_westernesse1h_reward|Sword of Westernesse
 ; itm_westernesse2h_reward|Sword of The Great Serpent
@@ -976,7 +933,6 @@ itm_harad_lamellar_greaves|Haradske Cizme
 ; itm_gandstaff|Wizards Staff
 ; itm_sarustaff|Wizards Staff
 ; itm_rohan_armor_th|Rohan Royal Armor
-; itm_denethor_robe|Stewards Robe
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Wicked Helm
 ; itm_lorien_royal_armor|Lorien Royal Armor

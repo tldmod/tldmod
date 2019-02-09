@@ -81,7 +81,7 @@ qst_ring_hunters2|Gyűrűvadászok - Teljesítve
 qst_blank_quest_01|Védd meg a menekülteket
 qst_blank_quest_02|Vadász le a menekülteket
 qst_blank_quest_03|Tengeri csata
-; qst_blank_quest_04|Kill {s35} {s36}
+; qst_blank_quest_04|Kill {s35} {s6} {s7}
 ; qst_blank_quest_05|Kill {s35} {s36} troops.
 
 
@@ -99,6 +99,6 @@ qst_blank_quest_03|Tengeri csata
 
 
 
-; qst_guardian_party_quest|Isengard's Last Stand
+qst_guardian_party_quest|Vasudvard utolsó helytállása
 qst_quests_end|Küldetések vége
 qst_quests_end_text|.

@@ -46,3 +46,8 @@ ui_value_denars|‘%d’分配资源
 ui_cannot_be_used_on_horseback|不能在骑马时使用
 ui_upgrade_to_value|你升了‘%s’级
 ui_notification_cant_upgrade|(不能在转移军队时升级)
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|Verteidigung von Helms Klamm; Rohan gegen Isengart
 mno_custom_battle_scenario_5|Gefecht; Reiche des Nordens gegen Rhûn
 mno_custom_battle_scenario_6|Belagerungsangriff; Orks gegen Zwerge
 mno_custom_battle_scenario_7|Hinterhalt; Orks gegen Düsterwald
+mno_custom_battle_scenario_8|Die letzte Schlacht von Durins Volk
+mno_custom_battle_scenario_88|Verfolge einen Orktrupp
 mno_custom_battle_scenario_11|Test-Schlachten (Balancing-Abstimmung)
 mno_custom_battle_scenario_10|Kulissentest: Schlacht
 mno_troll_battle_scenario|Test: Trollschlachten
 mno_warg_battle_scenario|Test: Wargschlachten
 mno_build_your_own_scene|** Erstelle deine eigene Szene für TLD **
-menu_tutorial|^^TLD führt gegenüber M&B einige neue Features ein. Diese finden sich (ohne Spoiler) in einer angefügten PDF-Datei. Grundlegende Spielmechaniken werden im Tutorial des Hauptspiels (Modul 'Native') erklärt.
-menu_tutorial|^^TLD führt gegenüber M&B einige neue Features ein. Diese finden sich (ohne Spoiler) in einer angefügten PDF-Datei. Grundlegende Spielmechaniken werden im Tutorial des Hauptspiels (Modul 'Native') erklärt.
+menu_tutorial|^^ Willkommen im Kampftutorial für Mount&Blade. Hier wirst du die Grundlagen des Kampfes lernen und auch einen kurzen Überblick über das Kommandieren von Truppen in der Schlacht erhalten.
 mno_tutorial_1|Tutorial #1: Bewegung und Waffen. {s1}
 mno_tutorial_2|Tutorial #2: Kämpfen mit Schild. {s2}
 mno_tutorial_3|Tutorial #3: Kämpfen ohne Schild. {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|Abbrechen.
 menu_custom_battle_end|^^^^^^Die Schlacht ist vorüber. {s1} Deine Seite tötete {reg5} Feinde und verlor {reg6} Truppen im Laufe des Gefechts.^Du selbst hast {reg7} Gegner im Kampf erschlagen.
 mno_replay|Dieses Gefecht noch einmal spielen.
 mno_continue_dot|Fortsetzen.
+; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|Dieses Gefecht noch einmal spielen.
+mno_continue_dot_cbd|Fortsetzen.
 mno_dot_go_back|. Zurück
 menu_start_good|^^^^^^^^^^Wählt Eure Art:
 mno_start_ma|MENSCH
@@ -113,6 +117,8 @@ mno_camp_troop|Überprüfe{reg10? Truppen:}{reg12? und:}{reg11? Gefangene:}.
 mno_camp_action|Einen Gegenstand verwenden.
 mno_camp_wait_here|Für einige Zeit Rast machen.
 mno_camp_options|TLD-Optionen ändern.
+mno_Dev_Menu|Entwickler-Cheats
+menu_dev_menu|Diese Entwickleroptionen bieten dir einige Cheats und Werkzeuge, um dich auszuprobieren.^^ Allerdings kann dies zu unvorhersehbaren Ereignissen und Balance-veränderungen führen, die deinen Spielstand unspielbar machen könnten.^^ Nutzung auf eigenes Risiko!^^ Wenn du uns Bugs und Fehler berichtest, teile uns unbedingt mit, ob du Entwicklercheats benutzt hast.
 mno_Cheat_enable|Cheat/Modding-Optionen aktivieren.
 menu_game_options|^^^^^^^^Wähle ein Option um umzuschalten:
 mno_game_options_war_level_start|Krieg beginnt bei Spielerlevel: {s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|Als Truppenmitglied mit der höchsten Baumeisterfertigkei
 mno_build_ladders_cont|Mach es.
 menu_castle_attack_walls_simulate|{s4}^^Deine Verluste:{s8}^^Gegnerische Verluste: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Deine Verluste: {s8}^^Verluste Verbündete: {s9}^^Gegnerische Verluste: {s10}
+menu_castle_taken_by_friends|Hier gibt es nichts zu sehen.
 menu_castle_taken|{s3} ist deinen Truppen in die Hände gefallen, und nun hast du die Kontrolle über die {reg2?Stadt:Feste}. {reg1? Es scheint, dass nichts dich davon abhalten kann, sie dir zu eigen zu machen...:}
 menu_castle_taken_2|{s3} ist an deine Truppen in die Hände gefallen, und nun hast du die Kontrolle über die Feste. Es ist Zeit, Kunde über deinen Sieg nach {s9} auszusenden. {s5}
 mno_castle_taken_no_claim|Verlangt keine Belohnung.
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|Besuche die Kasernen von {s61}
 mno_speak_with_elder|Sprich mit dem {s6}.
 mno_isengard_underground|Gehe zu den unterirdischen Höhlen.
 mno_tirith_toplevel|Klettere auf die höchste Ebene.
+mno_erebor_gates|Suche das Haupttor auf.
 mno_town_leave|Verlassen...
 mno_town_leave_door|Verlasse die Gegend
 menu_player_initiated_siege_result|Du greifst den Ort unter dem Banner von {s2} an.
@@ -328,6 +336,7 @@ menu_player_added_to_allow_follow|^^^^^Ein Bote trifft ein und meldet, dass du a
 mno_player_added_to_allow_follow_close|Schließen
 menu_center_besieged_event|^^^^^Ein Bote trifft ein und berichtet, dass {s1} durch {s2} von {s3} belagert wird.
 mno_center_besieged_event_close|Schließen
+menu_guardian_party_spawned|^^^^^Späher berichten, dass {s6} eine große Armee in der Nähe von {s7} versammelt, um eine letzte Verteidigungslinie zu bilden.
 mno_intro_next|Fortsetzen...
 mno_start_defend_caravan|Verteidige den Kaufmannszug!
 mno_start_raid_caravan|Überfalle den Kaufmannszug!
@@ -347,6 +356,8 @@ mno_lord_field_ai|Verbesserte Kampf-KI für Fürsten:  {s7}
 mno_horse_archer_field_ai|Verbesserte KI für berittene Bogenschützen:  {s7}
 mno_vs_orcs_field_ai|Schützen zielen besser auf Orks (zielen nicht über die Orkköpfe hinweg):  {s7}
 mno_battlefield_animals|Tier-Begleiter in Schlachten - betrifft keine Warge oder Pferde:  {s7}
+mno_slow_when_wounded|Verlangsamung durch Wunden: {s7}
+mno_battle_encounter_effects|Fraktionsspezifische Spezial-Wettereffekte (Stürme, magischer Nebel etc.): {s7}
 mno_defend_refugees|Haltet Ausschau nach Plünderern...
 mno_attack_refugees|Greife den Flüchtlingszug an...
 mno_leave_refugees|Vorerst zurückziehen...
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|Weitergehen!
 mno_pick_troops1|Wähle Gefährten für die Mission, {reg0} ausgewählt
 menu_pick_troops|Wen möchtest du auf die Geheimmission mitnehmen? Bisher hast du {reg0} Gefährten ausgewählt. Du kannst bis zu 10 Truppen mit dir nehmen
 mno_go_forward|Beende die Gefährtenauswahl und fahre fort.
-menu_burial_mound|Du näherst dich dem Grabhügel von {s1} von {s2}. Er wurde mit den schartigen Waffen seiner gefallenen Feinde überhäuft.
+menu_burial_mound|Du näherst dich dem Grabhügel von {s1} von {s2}, getötet im Kampf gegen {s28}. Er wurde mit den schartigen Waffen seiner gefallenen Feinde überhäuft.
 mno_pay_respects|Knie nieder und zoll deinen Respekt.
 mno_swear_oath|Leiste einen Racheschwur!
 mno_despoil|Entweihe den Ort
 mno_leave_mound|Verlasse den Hügel.
 menu_burial_mound_respects|Du kniest nieder und zollst {s1} deinen Respekt, leise ein Gebet für eine schnelle Reise ins Jenseits sprechend. Es gibt hier nichts mehr zu tun.
 menu_burial_mound_oath|Du schwörst lauthals einen Racheschwur für den Tod von {s4}. Du wirst die Kräfte von {s3} schonungslos suchen und sie vernichten. Deine Worte werden vom Wind weit getragen und wer kann sagen, ob sie nicht über das Meer hinweg gehört wurden?
+menu_funeral_pyre_oath|Du schwörst lauthals einen Racheschwur für den Tod von {s4}. Du wirst die Kräfte von {s3} schonungslos suchen und sie vernichten. Deine Worte werden vom Wind weit getragen und wer kann sagen, ob sie nicht über das Meer hinweg gehört wurden?
+mno_leave_pyre_oath|Verlasse den Scheiterhaufen.
 menu_burial_mound_despoil|Du reißt das Monument für {s1} mit deinen eigenen Händen nieder und entweihst die Steine mit Flüchen, fürchterlichem Gesang und unaussprechbaren Handlungen. Dein Gefolge zieht sich aus Furcht vor dem Toten zurück, scheint aber erneuerten Respekt vor deiner Verruchtheit zu haben.
-menu_funeral_pyre|Du näherst dich den verkohlten Überresten des Scheiterhaufens von {s3} von {s2}. Hier wurde sein Körper durch seine persönliche Leibwache feierlich verbrannt. Nichts von Wert verbleibt. 
+menu_funeral_pyre|Du näherst dich den verkohlten Überresten des Scheiterhaufens von {s3} von {s2}, getötet im Kampf gegen {s28}. Hier wurde sein Körper durch seine persönliche Leibwache feierlich verbrannt. Nichts von Wert verbleibt. 
 mno_leave_pyre|Verlasse den Scheiterhaufen.
 menu_town_ruins|Als du dich näherst, siehst du, dass {s1} {s2}.
 mno_ruin_menu_0|Erkunde den Ort.

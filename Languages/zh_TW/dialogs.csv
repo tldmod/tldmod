@@ -66,7 +66,7 @@ dlga_start:close_window.3|姆 哼 哼?
 dlga_start:looters_2_join|向 {s4} 的 力 量 低 頭 並 臣 服 於 我 吧！
 dlga_looters_2_join:close_window|我 們 服 從 於 您，主 人。
 dlga_start:close_window.4|^^吼!^^
-dlga_start:close_window.5|^^吼!^^\t\t\t\t\t\t\t\t\t
+dlga_start:close_window.5|^^吼!^^
 dlga_start:member_castellan_talk|是 的, {playername}? 我 能 為 你 做 些 什 麼 呢?
 dlga_member_castellan_pretalk:member_castellan_talk|還 有 其 他 的 嗎?
 dlga_member_castellan_talk:member_review_castle_garrison|我 想 查 看 城 堡 駐 軍。
@@ -91,6 +91,12 @@ dlga_member_trade:do_member_trade.1|非 常 好, 全 部 都 在 這...
 dlga_member_talk:view_member_char_requested|你 可 以 跟 我 談 一 下 你 的 技 能 嗎?
 dlga_view_member_char_requested:do_member_view_char|好，讓 我 告 訴 你...
 dlga_member_talk:member_separate|我 們 需 要 暫 時 分 開。
+dlga_member_talk:ziggy_ask_more|Zigûrphel，我 需 要 你 提 供 我 另 外 一 頭 狼 。 你 能 做 到 嗎 ?
+dlga_ziggy_ask_more:close_window|你 沒 有 活 口 可 以 提 供，指 揮 官。
+dlga_ziggy_ask_more:ziggy_not_rested|給 我 多 一 點 時 間，指 揮 官。儀 式 消 耗 了 我 很 多 能 量。
+dlga_ziggy_ask_more:close_window.1|我 只 能 控 制 這 麼 多。我 需 要 變 得 更 強 大…
+dlga_ziggy_ask_more:ziggy_choose_prisoners|當 然 了，指 揮 官。你 要 提 供 哪 一 個？
+dlga_ziggy_not_rested:close_window|快 休 息 吧，我 需 要 更 多 這 個。
 dlga_member_separate:member_separate_confirm|真 的 麼？好 吧，我 可 不 想 就 在 這 乾 等，我 會 回 {s4} 去。你 確 定 要 這 樣？
 dlga_member_separate_confirm:member_separate_yes|沒 錯，我 們 需 要 分 開 了。
 dlga_member_separate_confirm:do_member_trade|不，我 需 要 你 的 幫 助。
@@ -123,6 +129,22 @@ dlga_companion_was_dismissed:companion_rehire|{s5}。你 希 望 我 重 新 加
 dlga_companion_rehire:companion_recruit_signup_confirm|歡 迎 回 來，我 的 朋 友！
 dlga_companion_rehire:companion_rehire_refused|抱 歉，我 現 在 沒 辦 法 帶 更 多 人 了。
 dlga_companion_rehire_refused:close_window|好 吧… 如 果 你 改 變 主 意 就 來 找 我 唄？
+dlga_event_triggered:ziggy_ask_prisoners|指 揮 官，你 鎮 壓 了 我 們 的 敵 人，並 俘 虜 了 一 些 作 為 囚 犯 ，很 好 很 好。我 有 一 份 大 禮 物 給 你，如 果 你 拿 一 樣 東 西 作 為 交 換：把 其 中 一 個 俘 虜 給 我。
+dlga_event_triggered:ziggy_ask_prisoners.1|指 揮 官，恭 喜 你 取 得 勝 利。如 果 你 記 得 上 次 我 跟 你 說 的，我 可 以 利 用 其 中 一 個 俘 虜。這 會 對 你 有 好 處，指 揮 官，我 保 證。
+dlga_ziggy_ask_prisoners:ziggy_ask_why|夠 了，不 要 再 打 迷 糊 仗 了 ! Zigûrphel ! 明 白 地 說 ! 你 要 一 個 犯人 幹 嘛 !
+dlga_ziggy_ask_why:ziggy_reason|請 忍 耐，忍 耐，指 揮 官！你 只 需 滿 足 我 這 小 小 的 要 求，你 將 會 看 到 一 個 奇 蹟。
+dlga_ziggy_reason:ziggy_yes|你 引 起 我 的 好 奇 了。好 吧。我 會 留 下 一 個 給 你… 對 他 溫 柔 點。
+dlga_ziggy_reason:ziggy_no|現 在 不 行 ， Zigûrphel.  回 到 你 的 崗 位 上 。
+dlga_ziggy_no:close_window|很 好，指 揮 官，但 你 放 棄 我 的 禮 物 是 愚 蠢 的。
+dlga_ziggy_no:close_window.1|做 得 好 ， 指 揮 官 。
+dlga_ziggy_yes:ziggy_choose_prisoners|很 好 ， 這 些 樣 本 中 你 決 定 交 出 哪 一 些 呢 ?
+dlga_ziggy_choose_prisoners:ziggy_no|我 沒 有 想 要 提 供 的 物 品 。
+dlga_ziggy_chosen_prisoner:ziggy_ritual|實 在 太 感 謝 你 了 指 揮 官 ! 阿 ... 等 我 一 下 ， 喔 這 個 將 可 以 很 好 的 達 成 目 標 .... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!\n
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|瞧 瞧 這 傢 伙 ? 驕 傲 ， 目 中 無 人 ? 又 或 者 是 理 所 當 然 的 恐 懼 呢 ? 確 實 ! 現 在 ， 我 將 給 你 恐 懼 的 理 由 ! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
+dlga_ziggy_ritual:ziggy_ritual_succeed.1|準 確 的 送 人 下 地 獄 總 是 如 此 的 讓 人 愉 悅 。
+dlga_ziggy_ritual:ziggy_choose_prisoners|噁 啊 ! 這 隻 太 瘦 弱 了 ! 換 一 隻 健 康 強 壯 的 給 我 指 揮 官 ， 一 隻 不 會 失 敗 的 !
+dlga_ziggy_ritual_succeed:close_window|阿 當 然 ， 但 在 你 把 另 外 一 個 俘 虜 交 給 我 之 前 ， 請 讓 我 小 小 的 休 息 一 下 。 剩 下 的 我 會 處 理 。
 dlga_companion_objection_response:close_window|謝 謝，感 謝 你 的 支 持。
 dlga_companion_objection_response:close_window.1|下 不 為 例。
 dlga_companion_objection_response:close_window.2|我 知 道 你 反 對，不 過 我 現 在 還 有 更 重 要 的 事 情 要 思 考。
@@ -348,7 +370,7 @@ dlga_ring_hunters_party_attack_2:close_window|檢 查 他 們 的 行 囊 和 �
 dlga_start:ring_hunter_lair_defeat|那 個 戒 指 屬 於 黑 魔 王！你 無 權 持 有！
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|它 現 在 是 我 的 了。
 dlga_ring_hunter_lair_defeat2:close_window|你 認 為 你 贏 了 一 場 勝 利 嗎？ 你 只 贏 了 一 個 蒼 白 又 破 爛 的 影 子，呸! 我 們 的 戰 隊 在 你 到 達 之 前 很 久 就 出 發 了。 你 根 本 沒 救 到 他 們 追 殺 的 人！
-dlga_start:beorn_message|大 人/女 士，我 們 收 到 {s1} 的 警 告，一 大 群 亡 命 之 徒 正 朝 我 們 而 來！ 唉，沒 有 時 間 召 集 足 夠 的 戰 士 了。 而 且 已 經 能 聽 到 戰 鬥 的 聲 音，我 們 該 做 好 最 壞 的 打 算！
+dlga_start:beorn_message|我 的 {lord/lady}, 我 們 收 到 到 來 自 {s1} 的 警 告 ， 有 一 大 群 強 盜 團 正 在 向 我 們 的 方 向 靠 近 ! 而 且 我 們 沒 有 時 間 聚 集 足 夠 的 戰 士 。 在 聽 到 戰 場 的 喧 囂 聲 後 ， 我 們 要 做 最 壞 的 打 算 !
 dlga_beorn_message:beorn_message2|那 不 是 普 通 的 亡 命 之 徒。 他 們 是 黑 魔 王 爪 牙 中 最 棘 手 的，至 少 在 北 方 是 這 樣。然 而，他 們 的 領 隊 不 在 這 裡。 他 們 的 巢 穴 鄰 近 幽 暗 密 林，我 必 須 趕 緊 行 動。
 dlga_beorn_message2:beorn_message_end|是 的，我 們 也 被 警 告 了 營 地 的 事 並 派 了 斥 候。 我 們 看 到 他 們 燒 掉 它 並 迅 速 前 往 魔 多。 如 果 你 選 擇 先 趕 到 那 裡，你 可 能 無 法 幫 助 我 們。 我 們 非 常 感 謝 你 的 勝 利！
 dlga_beorn_message_end:beorn_message_close|我 必 須 回 報 這 場 戰 鬥 給 {s1}。 回 到 你 的 村 莊 並 派 遣 斥 候。 可 能 還 有 殘 兵 。
@@ -393,6 +415,10 @@ dlga_lord_give_order:lord_give_order_answer|跟 隨 我。 [花 費{reg1}/{reg2}
 dlga_lord_give_order:lord_give_order_details_ask|前 往… [花 費{reg1}/{reg2}影 響 力]
 dlga_lord_give_order:lord_give_order_details_ask.1|在… 附 近 巡 邏 [花 費{reg1}/{reg2}影 響 力]
 dlga_lord_give_order:lord_give_order_details_ask.2|在… 附 近 迎 擊 敵 人 [花 費{reg1}/{reg2}影 響 力]
+dlga_lord_give_order:lord_give_order_assault|只 要 你 我 同 心 協 力 ， 我 們 將 可 以 拿 下 {s11}. 你 應 該 馬 上 攻 擊 ..... [Costs {reg1}/{reg2} influence]
+dlga_lord_give_order_assault:lord_pretalk|{s4} 正 在 進 行 一 場 圍 城 。 我 建 議 你 跟 他 談 談 。
+dlga_lord_give_order_assault:lord_pretalk.1|我 們 的 準 備 還 不 夠 齊 全 ! 我 們 還 需 要  {s11}
+dlga_lord_give_order_assault:close_window|非 常 好 ... 現 在 ， 攻 擊 城 牆 !
 dlga_lord_give_order:lord_give_order_stop|我 暫 時 不 需 要 你，你 可 以 自 由 行 動。
 dlga_lord_give_order:lord_pretalk|算 了。
 dlga_lord_give_order_details_ask:lord_give_order_details|哪 裡?
@@ -428,7 +454,6 @@ dlga_lord_tell_objective:lord_pretalk.11|我 們 正 在 考 慮 下 一 個 目
 dlga_lord_tell_objective:lord_pretalk.12|我 不 知 道：{reg1} {s1}。
 dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|我 現 在 不 能 做 這 個。
 dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|我 現 在 不 能 做 這 個。
-
 dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}，我 們 收 到 {s3} 附 近 有 一 個 斥 候 營 地 的 消 息，確 保 他 們 不 會 發 現 你 並 在 他 們 了 解 我 們 的 計 劃 前 摧 毀 它。
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|尊 命。
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|我 現 在 沒 有 時 間 處 理 這 件 事。
@@ -465,6 +490,7 @@ dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|萬 分 感 謝，我 �
 dlga_capture_enemy_hero_thank_2:lord_pretalk|當 然， {s65}。
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|沒 什 麼。
 dlga_lord_active_mission_2:lord_raise_troops_thank|沒 錯，我 已 經 訓 練 好 {reg1} 名 {s13} 了，你 可 以 帶 走 他 們 了。
+dlga_lord_active_mission_2:lord_raise_troops_thank.1|確 實。我 已 經 訓 練 了 {reg2} 的 部 隊 ， 而 其 中 {reg1} 個 士 兵 在 訓 練 中 學 習 良 好 。 你 可 以 帶 走 他 們 ， 他 們 將 會 為 戰 鬥 做 好 準 備 。
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|我 在 {s3} 發 現 了 躲 藏 的 {s4} 並 處 決 了 他。
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|我 很 抱 歉，他 逃 走 了。
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|那 人 不 在 我 們 很 會 過 得 更 好 的！{playername}，謝 謝 你 幫 我 把 這 個 麻 煩 處 理 掉。很 高 興 得 知 你 能 信 賴。我 已 經 跟 地 區 負 責 人 講 好 了，今 後 你 可 以 從 我 們 這 裡 獲 得 額 外 的 補 給。
@@ -517,7 +543,7 @@ dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|我 該 �
 dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|你 可 以 在 離 多 爾 哥 多 不 遠 的 幽 暗 密 林 中 搜 尋 他。他 是 一 位 謹 慎 的 人，所 以 你 需 要 保 持 隱 蔽 以 免 引 起 他 的 警 覺。如 果 他 逃 脫，肯 定 會 躲 到 另 外 一 個 我 們 不 知 道 的 暗 處 繼 續 他 的 邪 惡 儀 式，我 們 只 有 這 一 次 機 會！你 身 上 的 擔 子 很 重，請 帶 上 我 們 的 祝 福 吧。
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|如 您 所 願，女 士。我 會 竭 盡 全 力 剷 除 邪 惡 的。
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|請 原 諒 我，我 的 女 士。在 我 能 幫 助 你 的 人 民 之 前， 還 有 一 些 緊 迫 的 事 情 要 去 完 成。
-dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|我 理 解，{playername}。但 請 不 要 花 太 多 時 間，抵 禦 他 的 邪 惡 魔 法 已 經 讓 我 有 些 疲 憊 了。
+dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|我 理 解 ， {playername} 。 但 不 要 結 合 他 太 久 ， 對 抗 他 的 魔 法 讓 我 感 到 厭 煩 。
 dlga_lord_tell_mission:lord_mission_deliver_message|我 需 要 送 一 封 信 給 {s13}，他 應 該 正 在 {s4}。如 果 你 會 去 那 個 方 向 的 話，能 幫 我 拿 給 他 嗎？這 封 信 需 要 在 30 天 內 送 到 他 的 手 裡。
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|當 然，我 正 打 算 經 過 {s4}，順 手 之 勞。
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|我 恐 怕 近 期 不 會 見 到 {s13}，{s65}。你 最 好 另 外 找 人 去 送。
@@ -535,7 +561,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|我 這 �
 dlga_lord_mission_raise_troops_accepted:close_window|你 真 是 幫 了 我 卸 下 了 一 個 重 擔，{playername}。我 已 經 跟 手 下 的 中 士 講 好 了，他 會 帶 一 些 新 兵 給 你 指 揮 的。我 會 分 擔 一 部 分 的 軍 費。嗯，這 些 應 該 足 夠 了。再 次 感 謝 你 的 協 助。
 dlga_lord_mission_raise_troops_alternate:close_window|真 是 一 個 有 趣 的 提 案，{playername}。 我 會 告 訴 我 的 中 士 將 新 兵 送 到 競 技 場。 在 那 裡 把 他 們 打 成 士 兵 該 有 的 樣 子。 我 會 看 著 的。 感 謝 你 的 協 助。
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|哦，也 是 阿。我 原 本 還 很 期 待 的。好 吧，祝 你 好 運。
-dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|我 有 件 事 情 需 要 你 的 協 助。一 個 叫 {s4} 的 法 外 之 徒 謀 殺 了 我 的 護 衛 之 後 逃 之 夭 夭。這 幾 天 我 聽 到 風 聲，據 稱 有 人 在 {s3} 看 到 他。我 希 望 你 能 追 捕 他，並 帶 給 他 應 得 的 懲 罰。我 會 獎 賞 你 的。
+; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There has been news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|我 馬 上 就 去 追 捕 他 並 以 法 之 名 處 決 他 的。
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|我 很 忙，現 在 沒 時 間 抓 他。
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|太 好 了，{playername}。我 很 感 激，你 的 勇 氣 也 將 被 記 錄 的。祝 你 狩 獵 順 利。
@@ -639,16 +665,12 @@ dlga_caravan_help5:close_window|我 會 記 住 的。托 巴 爾，謝 謝 你�
 dlga_start:caravan_attack1|你 又 是 誰？不 需 要 你 插 手，吶！
 dlga_caravan_attack3:close_window|弱 者？ 讓 我 們 看 看 誰 才 是 弱 者！ （困 難）
 dlga_caravan_attack3:close_window.1|去 啊，懦 夫。 我 會 在 戰 場 上 看 到 你 的 屍 體 的。
-dlga_start:caravan_duel1|呵 呵... 他 脾 氣 很 暴 躁，對 吧？不 用 管 他！你 幫 了 我 一 個 大 忙！當 然 還 救 了 一 些 人 的 性 命！^^看，我 們 從 死 人 的 口 袋 裡 翻 了 點 錢 出 來。{s10}
-dlga_start:caravan_duel1.1|看 來 我 要 晉 升 了。你 是 位 勇 猛 的 戰 士，來，拿 點 我 們 從 商 隊 那 得 到 的 戰 利 品。衛 兵 們 當 時 也 賭 你 輸，但 我 沒 有...呵 呵...你 做 的 我 都 看 到 了...^^{s10}
-dlga_caravan_duel1:caravan_duel2|我 可 以 直 接 殺 了 你 然 後 全 拿 走 的... 但 我 已 經 證 明 夠 多 了。離 開。
-dlga_caravan_duel2:caravan_duel3|這 群 人 現 在 絕 對 尊 敬 你！或 害 怕 你！不 管 怎 樣，他 們 會 告 訴 他 們 的 領 主 你 在 這 裡 所 做 的 一 切。如 果 你 能 繼 續 給 他 們 留 下 好 印 象，他 們 還 會 給 你 特 殊 的 東 西！盧 恩 馬 族 的 人 曾 給 了 我 一 匹 馬！我 吃 掉 了！哈 哈 哈 哈！
 dlga_start:caravan_res_tut1|*竊 笑* 等 一 下 不 會 少 塊 肉 的，戰 士！有 些 小 伙 子 可 能 不 會 認 為 你 怎 麼 樣，但 我 不 同，哦 不。我 看 到 你 戰 鬥 了。 不 會 打 賭 你 輸！ {s10} ^^但 我 們 都 跟 同 類 在 一 起，我 們 都 是。 服 務 於 索 倫 之 眼，為 黑 魔 王 服 務，是 的，但 在 東 方 做 一 件 事，南 方 不 會 注 意 到，反 之 亦 然。 幫 助 索 倫 之 眼，白 掌 不 關 心。 幫 助 老 人，黑 塔 則 會 認 為 你 浪 費 時 間 而 不 為 它 做 工 作！
 dlga_start:caravan_res_tut2|*竊 笑* 看 來 我 現 在 是 領 隊 了。你 是 一 個 勇 猛 的 戰 士，是 的！ 拿 走 你 的 戰 利 品 吧。一 些 小 伙 子 們 打 賭 你 變 成 座 狼 的 午 餐，但 我 不 同，哦 不。 我 看 到 你 戰 鬥 了。 不 會 打 賭 你 輸！^^我 們 的 朋 友 和 盟 友 會 聽 到 你 的 事 蹟，不 用 懷 疑！ 他 們 可 能 給 你 一 個 新 的 坐 騎 或 新 刀。 沒 有 人 會 管 弱 者，但 如 果 你 是 強 者，哈，我 們 會 幫 助 那 些 幫 助 我 們 的 人，懂？ {s10} ^^但 我 們 都 跟 同 類 在 一 起，我 們 都 是。 服 務 於 索 倫 之 眼，為 黑 魔 王 服 務，是 的，但 在 東 方 做 一 件 事，南 方 不 會 注 意 到，反 之 亦 然。 幫 助 索 倫 之 眼，白 掌 不 關 心。 幫 助 老 人，黑 塔 則 會 認 為 你 浪 費 時 間 而 不 為 它 做 工 作！
 dlga_caravan_res_tut1:caravan_noduel|(資 源 點 教 學)^^ 你 可 以 用 來 從 魔 多 的 人 購 買 物 資 的 資 源 點 與 你 自 己 的 派 系 中 獲 得 的 點 數 不 同，而 是 你 能 在 魔 多 才 能 獲 得 的 點 數。 ^^詳 情 請 參 閱 報 告。
 dlga_caravan_res_tut2:caravan_duel1|(資 源 點 教 學)^^ 你 可 以 用 來 從 魔 多 的 人 購 買 物 資 的 資 源 點 與 你 自 己 的 派 系 中 獲 得 的 點 數 不 同，而 是 你 能 在 魔 多 才 能 獲 得 的 點 數。 ^^詳 情 請 參 閱 報 告。
 dlga_caravan_noduel:caravan_duel2|我 吐 口 水 就 能 輕 易 殺 死 他！ 但 我 對 他 沒 什 麼 好 證 明 的。
-dlga_caravan_duel1:caravan_duel2|我 可 以 直 接 殺 了 你 然 後 全 拿 走 的... 但 我 已 經 證 明 夠 多 了。離 開。
+; dlga_caravan_duel1:caravan_duel2|What I do is none of your affair, Orc. But I will help our allies and slay our foes.
 dlga_caravan_duel2:caravan_fac_tut|好 吧，好 吧！ 看 看 我 們 身 邊 這 些 猥 瑣 的 傢 伙！ 哈！ 他 們 害 怕 你，哦，是 的，正 如 他 們 應 該 的 那 樣！ 我 不 同。嘿。 但，我 欠 你 一 個 人 情，不 是 嗎？ 我 會 幫 助 你 的。 我 會 告 訴 頭 領 你 今 天 的 事 蹟。 話 會 傳 開。 而 且 當 頭 頭 們 對 你 有 足 夠 的 了 解 時... 誰 知 呢，他 們 可 能 給 你 一 些 特 別 的 東 西。 禮 物，力 量，尊 重！ 我 現 在 正 要 回 去 領 賞 呢！
 dlga_caravan_fac_tut:caravan_duel3|（派 系 軍 銜 教 學）^^軍 銜 點 允 許 你 提 升 你 在 原 本 派 系（和/或 其 它 派 系）中 的 地 位。^^這 將 決 定 你 的 部 隊 人 數 上 限，每 週 的 派 系 資 源 點 收 入，並 解 鎖 一 些 派 系 特 殊 獎 勵。
 dlga_woodelf_help_6:woodelf_help_7|（派 系 軍 銜 教 學）^^軍 銜 點 允 許 你 提 升 你 在 原 本 派 系（和/或 其 它 派 系）中 的 地 位。^^這 將 決 定 你 的 部 隊 人 數 上 限，每 週 的 派 系 資 源 點 收 入，並 解 鎖 一 些 派 系 特 殊 獎 勵。
@@ -828,7 +850,7 @@ dlga_mayor_sea_battle_question:mayor_sea_battle_no|我 需 要 一 點 時 間 �
 dlga_mayor_sea_battle_yes:close_window|很 好。叫 你 的 部 隊 上 船 吧。我 們 很 快 就 起 航。
 dlga_mayor_sea_battle_no:close_window|趕 快，我 們 沒 多 少 時 間 了，要 馬 上 起 航。
 dlga_mayor_talk:mayor_reinforced_center_finished|我 按 你 的 要 求 加 固 了 {s3}。
-dlga_mayor_talk:kill_quest_bandits_failed|我 聽 說 你 沒 做 到 我 要 求 的 事。 令 人 失 望，{playername}。
+dlga_mayor_begin:kill_quest_bandits_failed|我 聽 說 你 沒 做 到 我 要 求 的 事。 令 人 失 望，{playername}。
 dlga_kill_quest_bandits_failed:close_window|我 下 次 會 做 得 更 好 的。
 dlga_mayor_talk:mayor_deliver_food|這 是 你 的 食 物，{reg9} 個。
 dlga_mayor_deliver_food:mayor_deliver_food_completed|做 得 很 好，{playername}，我 們 的 糧 倉 再 次 滿 了，現 在 沒 人 會 再 吃 不 飽 了。
@@ -975,75 +997,88 @@ dlga_merchant_trade:town_merchant_talk|還 有 其 他 的 嗎?
 ; dlga_town_dweller_talk:town_dweller_ask_rumor|What is the latest rumor around here?
 ; dlga_town_dweller_ask_rumor:town_dweller_talk|I don't know anything that would be of interest to you.
 ; dlga_town_dweller_brawl:town_dweller_brawl_confirm|Are you threatening me? The guards hardly wait for your type to show up.
-; dlga_town_dweller_brawl_confirm:close_window|Oh really? Let's see what you've got.
-; dlga_town_dweller_brawl_confirm:close_window.1|No, I thought you were someone else.
+dlga_town_dweller_brawl_confirm:close_window|是 這 樣 嗎 ? 那 就 讓 我 瞧 瞧 你 有 什 麼  吧 。
+dlga_town_dweller_brawl_confirm:close_window.1|抱 歉 我 把 你 跟 別 人 搞 混 了 。
 dlga_town_dweller_talk:close_window|[離 開]
-; dlga_start:player_castle_guard_talk|Yes, Commander?
-; dlga_player_castle_guard_talk:player_castle_guard_talk_2|How goes the watch, soldier?
-; dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|All is quiet Commander. Nothing to report.
-; dlga_player_castle_guard_talk_3:close_window|Good. Keep your eyes open.
-; dlga_start:close_window.26|Good day, Commander. It's good having you here in {s10}.
-; dlga_start:close_window.27|Mind your manners around here and we'll have no trouble.
-; dlga_start:hall_guard_easter_egg|Ah, just past midnight. You know, an unusual incident happened recently - do you want to hear about it?
-; dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|Yes, please go on.
-; dlga_hall_guard_easter_egg:close_window|No, I don't care for gossip.
+dlga_start:player_castle_guard_talk|有 何 吩 咐 呢 指 揮 官 ?
+dlga_player_castle_guard_talk:player_castle_guard_talk_2|剛 剛 的 巡 邏 怎 麼 樣 阿 士 兵 ?
+dlga_player_castle_guard_talk_2:player_castle_guard_talk_3|一 切 正 常 指 揮 官 。 沒 有 事 情 需 要 報 告 。
+dlga_player_castle_guard_talk_3:close_window|很 好 。 罩 子 放 亮 點 。
+dlga_start:close_window.26|日 安 ， 指 揮 官 。 能 有 你 在 {s10} 是 我 們 的 榮 幸 。
+dlga_start:close_window.27|在 這 裡 只 要 你 注 意 自 己 的 禮 節 我 們 就 不 會 惹 麻 煩 。
+dlga_start:hall_guard_easter_egg|阿 ~ 現 在 剛 過 午 夜 。 你 知 道 嗎 最 近 這 裡 剛 發 生 了 不 尋 常 的 事 件 呢 - 你 想 不 想 聽 呀 ?
+dlga_hall_guard_easter_egg:hall_guard_easter_egg_scene|是 的 ， 請 繼 續 。
+dlga_hall_guard_easter_egg:close_window|沒 錯 我 不 在 意 流 言 蜚 語 。
 ; dlga_hall_guard_easter_egg_scene:close_window|Well.. an unusual group of adventurers appeared recently: a man, a dwarf and an elf, and then...
 dlga_start:hall_guard_talk|有 命 令 嗎，指 揮 官?
-; dlga_start:close_window.28|We are not supposed to talk while on guard, Commander.
-; dlga_hall_guard_talk:hall_guard_duty|Stay on duty and let me know if anyone comes to see me.
-; dlga_hall_guard_duty:close_window|Yes, Commander. As you wish.
-; dlga_hall_guard_talk:hall_guard_arrest|I want you to arrest this man immediately!
-; dlga_hall_guard_arrest:hall_guard_arrest_2|Who do you want arrested, Commander?
+dlga_start:close_window.28|我 們 在 值 勤 時 不 能 說 話 ， 指 揮 官 。
+dlga_hall_guard_talk:hall_guard_duty|繼 續 值 勤 並 且 在 有 人 來 找 我 時 讓 我 知 道 。
+dlga_hall_guard_duty:close_window|是 的 指 揮 官 。 就 按 照 你 的 指 示 。
+dlga_hall_guard_talk:hall_guard_arrest|我 要 你 立 刻 逮 捕 這 名 男 子 !
+dlga_hall_guard_arrest:hall_guard_arrest_2|你 想 要 逮 捕 誰 呢 ， 指 揮 官 ?
 ; dlga_hall_guard_arrest_2:close_window|Ah, never mind my high spirits lads.
-; dlga_hall_guard_arrest_2:close_window.1|Forget it. I will find another way to deal with this.
-; dlga_enemy_defeated:close_window|Arggh! I hate this.
-; dlga_party_relieved:close_window|Thank you for helping us against those bastards.
-; dlga_start:battle_reason_stated|I will drink from your skull!
+dlga_hall_guard_arrest_2:close_window.1|算 了 。 我 會 想 其 他 的 辦 法 來 處 理 這 件 事  。
+dlga_enemy_defeated:close_window|噁 啊 ! 我 討 厭 這 樣 。
+dlga_party_relieved:close_window|謝 謝 你 幫 我 們 對 付 那 些 渾 蛋 。
+dlga_start:battle_reason_stated|我 會 用 你 的 頭 顱 當 酒 杯 !
 dlga_member_chat_00:close_window.1|^^吼!^^
 dlga_member_chat_00:regular_member_talk|有 命 令 嗎，指 揮 官?
 dlga_regular_member_talk:view_regular_char_requested|告 訴 我 關 於 你 自 己 的 事
-; dlga_view_regular_char_requested:do_regular_member_view_char|Yes, Commander. Let me tell you all there is to know about me.
+dlga_view_regular_char_requested:do_regular_member_view_char|是 的 指 揮 官 。 讓 我 告 訴 你 所 有 我 的 事 。
 dlga_do_regular_member_view_char:regular_member_talk|還 有 其 他 的 嗎?
 ; dlga_member_chat_00:disband_regular_member_confirm_yn|It has been an honour to serve {s14} under your command, Commander.^^Now, as you know, I've been reassigned to home defense.^I shall soon leave.^^[you will earn {reg14} Resource Points of {s14}]
 ; dlga_regular_member_talk:disband_regular_member_confirm|Your services are now more urgent back home in {s12}, than here with me.
-; dlga_regular_member_talk:disband_regular_member_confirm.1|You are wounded... you should go back home in {s12}, where you can be more useful than here.
-; dlga_regular_member_talk:close_window|Nothing. Keep moving.
+dlga_regular_member_talk:disband_regular_member_confirm.1|你 受 傷 了 .... 你 應 該 回 你 在  {s12} 的 家 裡 ， 你 的 能 力 在 那裏 才 能 最 好 的 發 揮 。
+dlga_regular_member_talk:close_window|沒 事 的 。 繼 續 前 進 。
 ; dlga_disband_regular_member_confirm:disband_regular_member_confirm_yn|Shall I leave your command, and go back home to defend my hometown?^^[you will earn {reg14} Resource Points of {s14}]
-; dlga_disband_regular_member_confirm_yn:close_window|Yes, go there and await further orders from {s14}. Good luck, soldier!
-; dlga_disband_regular_member_confirm_yn:close_window.1|Not yet, I still need you here.
-; dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|But you are still needed here, as well!
-; dlga_disband_regular_member_insist:close_window|I know, but my duty brings me to different battles.^I will soon leave.
+dlga_disband_regular_member_confirm_yn:close_window|沒 錯 ， 現 在 去 那 裏 等 待  {s14} 的 命 令 ， 祝 你 好 運 ! 士 兵 !
+dlga_disband_regular_member_confirm_yn:close_window.1|時 間 未 到 ， 我 還 是 需 要 你 待 在 這 裡 。
+dlga_disband_regular_member_confirm_yn:disband_regular_member_insist|但 這 裡 也 還 是 需 要 你 的 !
+dlga_disband_regular_member_insist:close_window|我 知 道 ， 但 是 我 的 職 責 呼 喚 我 前 往 另 外 一 個 戰 場 。 我 馬 上 就 會 上 路 了 。
 ; dlga_start:routed_allies_talk|{reg1?My lord:Master}, you have survived! Shall we join you again?
-; dlga_routed_allies_talk:close_window|Yes, together we shall fight for {s1} once again.
-; dlga_routed_allies_talk:close_window.1|Not yet, soldier.
+dlga_routed_allies_talk:close_window|是 的 ， 這 次 我 們 將 再 一 次 共 同 為  {s1} 而 戰 。
+dlga_routed_allies_talk:close_window.1|時 候 未 到 ， 士 兵 。
 dlga_start:routed_allies_talk_troll|^^吼!^^
-; dlga_routed_allies_talk_troll:close_window|[Have them join you again]
+dlga_routed_allies_talk_troll:close_window|[ 讓 他 們 重 新 加 入 你 ]
 dlga_routed_allies_talk_troll:close_window.1|[離 開]
-; dlga_start:party_encounter_friend|{s4} What brings you here, {s24}?
-; dlga_party_reinforce:party_reinforce_end|We haven't seen much enemy activity yet. Maybe later, thanks.
-; dlga_party_reinforce:party_reinforce_end.1|We don't need any more soldiers, thank you.
-; dlga_party_reinforce:party_reinforce_check|Reinforce our party? We can use a few more soldiers, but keep in mind we only accept troops of our faction.
-; dlga_party_reinforce:party_reinforce_end.2|Unfortunately you don't have any {s22} soldiers to reinforce us with.
+dlga_start:party_encounter_friend|{s4} 是 誰 帶 你 到 這 裡 的 ， {s24}?
+dlga_party_reinforce:party_reinforce_end|我 們 目 前 沒 有 偵 查 到 其 他 的 敵 軍 動 態 ， 也 許 晚 點 ， 謝 謝 。
+dlga_party_reinforce:party_reinforce_end.1|我 們 目 前 不 需 要 更 多 的 士 兵 ， 謝 謝 你 。
+dlga_party_reinforce:party_reinforce_check|增 援 我 們 ? 我 們 是 可 以 用 得 上 更 多 的 士 兵 。 但 是 記 住 我 們 只 接 受 來 自 我 們 國 家 的 部 隊 。
+dlga_party_reinforce:party_reinforce_end.2|很 不 幸 的 你 沒 有 任 何 {s22} 的 士 兵 能 來 支 援 我 們 。
 dlga_party_reinforce_check:party_reinforce_check_1|讓 我 檢 查 士 兵 名 冊...
 dlga_party_reinforce_check_1:party_reinforce_end|所 以 你 改 變 主 意 了… ^了 解。
 ; dlga_party_reinforce_check_1:party_reinforce_end.1|Those soldiers are of no use to us. ^Take them back.
-; dlga_start:close_window.29|You are making me late! Wizards are never late!
+dlga_start:close_window.29|你 會 害 我 遲 到 ! 一 個 嗚 時 從 來 不 遲 到 !
 ; dlga_start:close_window.30|It... beckonsssssss...
-; dlga_start:party_encounter_hostile_attacker|You have no chance against us. Surrender now or we will kill you all...
+; dlga_start:close_window.31|You there! You survived? Good! You can't be waving a stick about! Take this!
+; dlga_start:ori_choose_1|You fight well, kinsman! I don't know how you've been surviving so far. I remember you joining us recently, before all this... before Balin fell... Where are you from?
+; dlga_ori_choose_1:ori_choose_finish|I was a tracker, sent to the woods near the Bear people. I recently heard about Balin's company and joined.
+; dlga_ori_choose_1:ori_choose_finish.1|I am a distant cousin, a veteran bodyguard from a mine far away. Then I heard of Balin and joined.
+dlga_ori_choose_1:ori_choose_finish.2|我來自鐵丘，在戰時我是一名老兵，在和平期間我是一個礦工，我是因為巴林的名號才加入的，想殺更多獸人。
+; dlga_ori_choose_finish:close_window|Good to know! I found these, fit for your background. We shall make our stand here and take as many of them with us!
+; dlga_start:close_window.32|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
+dlga_start:close_window.33|脫 掉 你 身 上 的 破 銅 爛 鐵 然 後 換 上 這 個 。 這 應 該 能 更 好 的 保 護 你 。 那 些 獸 人 的 攻 擊 可 是 很 兇 殘 的 呢 !
+dlga_start:close_window.34|有 大 傢 伙 要 來 了 ! 做 好 準 備 ˙阿 !
+dlga_start:close_window.35|他 們 人 數 眾 多 .... 但 我 們 可 是 矮 人 啊 !
+dlga_start:close_window.36|那 些 獸 人 打 開 了 一 個 裝 滿 財 寶 的 大 地 洞 。 這 裡 有 一 些 我 找 到 的 ， 去 吧 動 手 拿 走 他 們 吧 。
+dlga_start:close_window.37|歐 不 .... 我 聽 到 他 們 來 了 ..... 他 們 就 在 外 面 ! 他 們 無 所 不 在 !
+; dlga_start:close_window.38|Here... Our Lord Balin's... you are worthy of these...
+dlga_start:party_encounter_hostile_attacker|你 們 對 上 我 們 一 點 勝 算 都 沒 有 。 投 降 ， 不 然 我 們 將 殺 光 你 們 ...
 dlga_party_encounter_hostile_attacker:close_window|別 攻 擊! 我 們 投 降!
 dlga_party_encounter_hostile_attacker:close_window.1|我 們 會 與 你 戰 鬥 到 底！
 dlga_start:party_encounter_hostile_defender|你 想 要 什 麼？
 dlga_party_encounter_hostile_defender:party_encounter_hostile_ultimatum_surrender|投 降 或 者 死 亡！
-; dlga_party_encounter_hostile_defender:close_window|Nothing. We'll leave you in peace.
-; dlga_start:close_window.31|* stares at you silently *
-; dlga_start:battle_reason_stated.1|Surrender or die. Make your choice.
-; dlga_battle_reason_stated:close_window|I am not afraid of you. I will fight.
+dlga_party_encounter_hostile_defender:close_window|沒 事 的 。 我 們 不 會 打 擾 或 侵 犯 到 你。
+dlga_start:close_window.40|*  靜 靜 地 凝 視 著 你  *
+dlga_start:battle_reason_stated.1|投 降 或 去 死 。 做 出 決 定 。
+dlga_battle_reason_stated:close_window|我 並 不 畏 懼 你 。 我 會 和 你 戰 鬥 。
 dlga_start:free|你 好。我 能 為 你 做 些 什 麼 嗎?
 dlga_free:view_char_requested|告 訴 我 關 於 你 自 己 的 事
-; dlga_view_char_requested:view_char|Very well, listen to this...
+dlga_view_char_requested:view_char|很 好 ， 聽 聽 這 個 .....
 dlga_view_char:free|還 有 其 他 的 嗎?
 dlga_end:close_window|[完 成]
-; dlga_start:threaten_1|Drop your weapons and surrender if you want to live
-; dlga_threaten_1:end|We will fight you first
+dlga_start:threaten_1|如 果 你 們 還 想 活 命 的 話 就 放 下 你 們 的 武 器 並 且 投 降
+dlga_threaten_1:end|我 們 會 先 對 付 你 
 dlga_free:close_window|再 見 了
 dlga_free:close_window.1|[離 開]

@@ -13,13 +13,12 @@ mno_custom_battle_scenario_5|Skirmish, North factions vs Rhûn
 mno_custom_battle_scenario_6|Siege Attack, Orcs vs Dwarves
 mno_custom_battle_scenario_7|Ambush, Orcs vs Mirkwood
 mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-mno_custom_battle_scenario_88|Chasing an Orc Scout Party														
+mno_custom_battle_scenario_88|Chasing an Orc Scout Party
 mno_custom_battle_scenario_11|Test Battles (Tune Balancing!)
 mno_custom_battle_scenario_10|Scenery test battle
 mno_troll_battle_scenario|Test Troll Battles
 mno_warg_battle_scenario|Test Warg Battles
 mno_build_your_own_scene|** Build your own scene for TLD **
-menu_tutorial|^^TLD has a lot of features unknown to native M&B. Those are described in some non-spoilerish detail in PDF included with the release. For tutorial on basic game mechanics please use Native module
 menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
 mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
@@ -42,6 +41,9 @@ mno_leave_custom_battle_2|Cancel.
 menu_custom_battle_end|^^^^^^The battle is over. {s1} Your side killed {reg5} enemies and lost {reg6} troops over the battle.^You personally slew {reg7} opponents in the fighting.
 mno_replay|Play this battle again.
 mno_continue_dot|Continue.
+menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|Play this battle again.
+mno_continue_dot_cbd|Continue.
 mno_dot_go_back|.                 Go back
 menu_start_good|^^^^^^^^^^Select your race:
 mno_start_ma|MAN
@@ -106,7 +108,7 @@ mno_proc|Proceed as normal
 menu_start_as_one|^^^^^^^^^^What type of Soldier are you?
 mno_start_default|Become a {s23} (Default)
 mno_start_up1|Become a {s21} (Easy)
-mno_start_up2|Become a {s22} (Easy)														   
+mno_start_up2|Become a {s22} (Easy)
 mno_continue|Continue...
 menu_character_report|^^^^^Party Morale: {reg8}^Party Size Limit: {reg7}^{s5}
 menu_camp|^^^^You are in {s1}.{s2}^^What do you want to do?
@@ -115,6 +117,8 @@ mno_camp_troop|Review{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
 mno_camp_action|Use an object.
 mno_camp_wait_here|Camp here for some time.
 mno_camp_options|Change TLD options.
+mno_Dev_Menu|Developer Menu
+menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|Enable cheat/modding options.
 menu_game_options|^^^^^^^^Click on an option to toggle:
 mno_game_options_war_level_start|War Starts at Level: {s1}
@@ -353,6 +357,7 @@ mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
 mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
+mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}																									 
 mno_defend_refugees|Keep your eye out for raiders...
 mno_attack_refugees|Attack the refugee train...
 mno_leave_refugees|Leave them for now...

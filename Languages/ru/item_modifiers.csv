@@ -5,8 +5,8 @@ imod_bent|Подпорченн. %s
 imod_chipped|Зазубр. %s
 imod_battered|Побит. %s
 imod_poor|Плох. %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Простой %s
+imod_old|Древний %s
 imod_cheap|Дешев. %s
 imod_fine|Отличн. %s
 imod_well_made|Добротн. %s
@@ -23,7 +23,7 @@ imod_tattered|Изорванн. %s
 imod_ragged|Неотделанн. %s
 imod_rough|Неотделанн. %s
 imod_sturdy|Прочн. %s
-; imod_thick|Robust %s
+imod_thick|Крепкий %s
 imod_hardened|Плотн. %s
 imod_reinforced|Усиленн. %s
 imod_superb|Превосходн. %s

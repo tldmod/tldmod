@@ -2,30 +2,35 @@ skinkey_chin_size|Tamanho do queixo
 skinkey_chin_shape|Forma do queixo
 skinkey_chin_forward|Queixo para frente
 skinkey_jaw_width|Largura da Mandíbula
-skinkey_jaw_position|Posição do Mandíbula
+; skinkey_lower_lip|Lower Lip
+; skinkey_upper_lip|Upper Lip
 skinkey_mouth_nose_distance|Distância da Boca e Nariz
 skinkey_mouth_width|Largura da boca
-skinkey_cheeks|Bochechas
+; skinkey_nostril_size|Nostril Size
 skinkey_nose_height|Altura do Nariz
 skinkey_nose_width|Largura do Nariz
 skinkey_nose_size|Tamanho do Nariz
 skinkey_nose_shape|Forma do Nariz
 skinkey_nose_bridge|Ponte do Nariz
-skinkey_cheek_bones|Maças do Rosto
+
 skinkey_eye_width|Largura dos olhos
 skinkey_eye_to_eye_dist|Distância dos olhos
 skinkey_eye_shape|Forma dos Olhos
 skinkey_eye_depth|Profundidade dos olhos
 skinkey_eyelids|Pálpebras
-skinkey_eyebrow_position|Posição das Sobrancelhas
+skinkey_cheeks|Bochechas
+skinkey_cheek_bones|Maças do Rosto
 skinkey_eyebrow_height|Altura das sobranchelhas
-skinkey_eyebrow_depth|Profundidade das sobrancelhas
+
 skinkey_eyebrow_shape|Forma das sobranchelhas
 skinkey_temple_width|Largura da têmpora
 skinkey_face_depth|Profundidade da face
 skinkey_face_ratio|Proporção da face
 skinkey_face_width|Largura da face
 skinkey_post_edit|Pós edição
+skinkey_jaw_position|Posição do Mandíbula
+skinkey_eyebrow_position|Posição das Sobrancelhas
+skinkey_eyebrow_depth|Profundidade das sobrancelhas
 skinkey_snout_height|Altura do focinho
 skinkey_snout_width|Largura do focinho
 skinkey_snout_size|Tamanho do focinho

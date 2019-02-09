@@ -46,3 +46,8 @@ ui_value_denars|%o resurs poena.
 ui_cannot_be_used_on_horseback|Nemoze se koristiti za vreme jahanja.
 ui_upgrade_to_value|Unapredi za 
 ui_notification_cant_upgrade|Nemoguce nadograditi za vreme davanja vojske.
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

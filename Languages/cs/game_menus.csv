@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|Obrana Helmova žlebu, Rohan proti Železnému pasu
 mno_custom_battle_scenario_5|Šarvátka, Seveřané proti Rhûnu
 mno_custom_battle_scenario_6|Dobývání, skřeti proti trpaslíkům
 mno_custom_battle_scenario_7|Přepadení, skřeti proti elfům z Temného hvozdu
+; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
+mno_custom_battle_scenario_88|Pronásledování orkských průzkumníků
 mno_custom_battle_scenario_11|Testovací bitvy (pro balancováni statu)
 mno_custom_battle_scenario_10|Testovací bitva pro procedurálně generovanou scénu
 mno_troll_battle_scenario|Testovaci bitvy se zlobry
 mno_warg_battle_scenario|Testovaci bitvy s vrrky
 mno_build_your_own_scene|**Postav svou vlastni scenu pro TLD**
-menu_tutorial|^^TLD má mnoho funkcí neznámých z původního M&B. Jsou popsané detailně bez prozrazení zápletky v PDF přibaleném s modem. Pokud chcete projít tutoriál, udělejte to prosím v Native - základní hře, ne v modu.
-menu_tutorial|^^TLD má mnoho funkcí neznámých z původního M&B. Jsou popsané detailně bez prozrazení zápletky v PDF přibaleném s modem. Pokud chcete projít tutoriál, udělejte to prosím v Native - základní hře, ne v modu.
+; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 mno_tutorial_1|Tutoriál #1: Základní pohyb a výběr zbraní. {s1}
 mno_tutorial_2|Tutoriál #2: Boj se štítem. {s2}
 mno_tutorial_3|Tutoriál #3: Boj bez štítu. {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|Zrusit.
 menu_custom_battle_end|^^^^^^Bitva skončila. {s1} Tvá strana zabila {reg5} nepřátel a ztratila {reg6} jednotek během bitvy.^Ty sám jsi zabil {reg7} protivníku v boji.
 mno_replay|Znovu hrat tuto bitvu.
 mno_continue_dot|Pokracovat.
+; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|Znovu hrat tuto bitvu.
+mno_continue_dot_cbd|Pokracovat.
 mno_dot_go_back|. Jdi zpět
 menu_start_good|^^^^^^^^^^Zvol si rasu:
 mno_start_ma|ČLOVĚK
@@ -55,7 +59,7 @@ mno_start_ur|SKURUT, nove skřetí plémě
 mno_start_em|ČLOVĚK, zotročený Sauronem
 menu_start_hand|^^^^^^^^^Tvým pánem je Bílá Ruka^Zvol si rasu
 mno_start_whor|Skřet, sloužící Bílé Ruce
-mno_start_isur|Skurut-hai, zplozenec Železného pasu
+; mno_start_isur|one of the URUK-HAI, bred in Isengard
 mno_start_duma|Člověk z Vrchoviny, ze Západních plání
 menu_start_good_man|^^^^^^^^^^Zvol svůj lid:
 mno_start_go|Gondor, království Bílé věže
@@ -104,7 +108,7 @@ mno_proc|Pokračuj
 menu_start_as_one|^^^^^^^^^^Jaký typ Vojáka jsi?
 mno_start_default|Staň se {s23} (Default)
 mno_start_up1|Staň se {s21} (Easy)
-mno_start_up2|Staň se {s22} (Easy)\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_start_up2|Staň se {s22} (Easy)
 mno_continue|Pokračuj
 menu_character_report|^^^^^Skupinova moralka: {reg8}^Maximalni velikost skupiny: {reg7}^{s5}
 menu_camp|^^^^Jsi v {s1}.{s2}^^Co chces delat?
@@ -113,9 +117,11 @@ mno_camp_troop|Prohlednout{reg10? vojaky:}{reg12? and:}{reg11? zajatce:}.
 mno_camp_action|Pouzit predmet.
 mno_camp_wait_here|Nejakou dobu tu taborit.
 mno_camp_options|Zmenit NASTAVENI TLD.
+; mno_Dev_Menu|Developer Menu
+; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|Zapnout cheaty/modderske nastaveni.
 menu_game_options|^^^^^^^^Klikni na moznost pro prepnuti:
-mno_game_options_war_level_start|Válka začíná v úrovni: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_game_options_war_level_start|Válka začíná na úrovni: {s1}
 mno_game_options_restrict_items|Omezit hracovo vybaveni: {s7}
 mno_game_options_formations|Bitevni formace a specialni umela inteligence: {s7}
 mno_game_options_siege_ai|Pokročilé obléhací AI: {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|Zpet.
 menu_camp_tweaks|^^^^^^^^Vyber moznost kterou chces upravit.
 mno_tweak_options_compat|Upravy kompatibility...
 mno_tweak_options_strat|Strategicke upravy...
-mno_tweak_options_battlefield_ai|UI Bitevního pole se ladí...\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
 mno_tweak_options_back|Zpet do menu nastaveni.
 menu_camp_compat_tweaks|^^^^^^^^Klikni na moznost pro zmenu (podrz SHIFT k snizeni):^(tohle slouzi k zvyseni kompatibility s ruznymi pocitaci a nejedna se o cheaty)
 mno_game_options_compat_party|Maximalni mnostvi skupin na mape: {s1}
@@ -201,9 +207,9 @@ mno_order_retreat|Povolej své vojáky zpět.
 menu_kingdom_army_quest_report_to_army|{s8} ti poslal zprávu že si přeje aby jsi se připojil k novému tažení. máš sebou vzít nejméně {reg13} jednotek. jestli nemáš dostatek jednotek, máš je co nejdříve naverbovat
 mno_reject|Pošli zprávu, že jsi příliš zaneprázdněný
 mno_send_word|Pošli zprávu, že se k němu brzy připojíš.
-; menu_kingdom_army_quest_messenger|{s8} sends word that he wishes to speak with you about a task he needs performed.   He requests you to come and see him as soon as possible.
-; menu_kingdom_army_quest_join_siege_order|{s8} sends word that you are to join the siege of {s9} in preparation for a full assault.    Your troops are to take {s9} at all costs.
-; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
+menu_kingdom_army_quest_messenger|{s8} poslal zprávu, že si s tebou potřebuje promluvit o jedné záležitosti, která je potřeba vykonat. Chce tě vidět co nejdříve to bude možné.
+menu_kingdom_army_quest_join_siege_order|{s8} poslal zprávu, aby si se připojil k obléhání a přípravám k hlavnímu útoku na {s9}. Musíš dostat své jednotku k {s9} za jakoukoliv cenu.
+menu_kingdom_army_follow_failed|Neuposlechl jsi přímý rozkaz a nenásledoval jsi {s8}. Posílá zprávu, že je přesvědčen, že jsi měl mnohem urgentnější úkol, ale jeho trpělivost není nekonečná.
 menu_battle_debrief|{s11}^Tve ztraty:{s8}{s10}^^Nepratelske ztraty:{s9}
 mno_inspect_troll|prohledat padlého trola
 menu_pre_join|přišel jsi k bitvě mezi {s2} a {s1}. rozhodneš se k
@@ -250,6 +256,7 @@ menu_siege_attack_meets_sally|obránci provedli protiútok
 mno_build_ladders_cont|Udělej to.
 menu_castle_attack_walls_simulate|{s4}^^Tvoje ztráty:{s8}^^Nepřátelské ztráty: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
+menu_castle_taken_by_friends|Tady není nic k vidění.
 ; menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
 ; menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
 mno_castle_taken_no_claim|Nežádej o odměnu.
@@ -262,7 +269,7 @@ menu_town_bandits_succeeded|^^^^^Goblini před tebou padají jako obílí před 
 ; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
 menu_close|nic
-; menu_town|You arrived in {s60}.{s12}{s13}
+menu_town|Dorazil jsi do {s60}.{s12}{s13}
 mno_town_menu_0|Jdi na nějeké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
 mno_town_approach|Prijet bliz k {s1}...
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|Navštiv {s61} Kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
 mno_isengard_underground|Jdi do podzemních jeskyň.
 mno_tirith_toplevel|Vyšplhej na horní patro.
+; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|Opusť...
 mno_town_leave_door|Opusť Území
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
@@ -305,17 +313,17 @@ mno_whatever|Vstaň!
 ; menu_recover_after_death_default|^^^^^You regain your conciousness. You lie on the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wounds were lethal,  and although you feel awful, you find out you can still walk.  You get up and try to look for any other survivors from your party.
 ; menu_recover_after_death_town|^^^^You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town.  It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
 ; menu_recover_after_death_town_alone|You regain your conciousness and find yourself at the town outskirts.   You are alive!  Nobody is around and you take your chance to drag yourself outside the town. Your companions found you. It seems that none of your wounds were lethal,  and although you feel awful, you can still walk.
-; menu_notification_center_under_siege|{s1} has been besieged by {s2} of {s3}!
+menu_notification_center_under_siege|{s1} je obléháno {s2} z {s3}!
 menu_notification_one_side_left|^^^^^Valka o Prsten je u konce!^^{s1} porazil vsechny sve nepratele a stava se vitezem!
 menu_notification_total_defeat|^^^^^Valka o Prsten pro tebe konci!^^{s1} byl porazen neprateli a zustavas sam a porazen!
 menu_notification_your_faction_collapsed|^^^^^Tva domovina, {s11}, byla porazena!^Ostatni i nadale bojuji ve Valce. S ostatnimi, kdo zbyli z {s11}, muzes tale pomoci sve strane k vitezstvi.
-; menu_notification_faction_defeated|^^^^^{s1} Defeated!^{s1} is no more, defeated by the forces of {s13}!
+menu_notification_faction_defeated|^^^^^{s1} Je poražen!^{s1} je mrtvý, byl poražen jednotkami {s13}!
 menu_ruins|^^^^Prijizdis k {s1}. Kdysi silne sidlo bylo vypaleno do zakladu, ackoliv stale rozpoznavas stopy po opevneni a roztrousene zrezivele zbrane.
 ; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Prozkoumej toto místo.
 menu_ring_hunter_lair|sledoval jsi stopy lovců prstenu skrz Temný hvozd a došel si k (s1). vidíš je jak se chystají odejít s truhlou
 mno_attack_lair|zaútoč 
-; mno_leave_bandit_lair|Leave for now.
+mno_leave_bandit_lair|Odejít prozatím.
 ; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
 mno_gondor_reinforcement_event_close|blizko
 ; menu_gondor_beacons|You look up at {s1}, one of the warning beacons of Gondor, used to raise the alarm in northern and southern Gondor.
@@ -328,35 +336,38 @@ mno_player_added_to_siege_reports_close|blizko
 mno_player_added_to_allow_follow_close|blizko
 ; menu_center_besieged_event|^^^^^A messenger arrived reporting that {s1} has been besieged by {s2} of {s3}.
 mno_center_besieged_event_close|blizko
+; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 mno_intro_next|Pokračuj
 mno_start_defend_caravan|braň karavanu
 mno_start_raid_caravan|přepadni karavanu
 mno_start_ambush_orcs|Přepadni skřety
-; mno_start_kill_scouts|Stop the scouts from reporting your arrival!
+mno_start_kill_scouts|Zastav průzkumníky před informováním o tvém příchodu.
 mno_go_your_way|Nech je na pokoji.
 mno_defend_villagers|braň vesničany !
 mno_raid_villagers|přepadni vesnici
-; mno_go_away|Leave and regroup for now.
-; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
+mno_go_away|Odejít a přeskupit se prozatím.
+menu_scout_camp_quest|Nedaleko vidíš tábor průzkumníků. Velíš k útoku na ně
 mno_attack_scout_camp|Zaútočit na tábořiště zvědů!
 ; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
-; mno_sb_defend_the_town|Board them! Destroy their fleet!
+mno_sb_defend_the_town|Naloďte se! Zničte jejich flotilu!
 ; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
 ; menu_camp_field_ai|^^^^^Click on an option to toggle.^^^Turning Off One or More Options Will Improve Performance (FPS)
 ; mno_lord_field_ai|Lords Have Improved Battlefield AI:  {s7}
 ; mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
+; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
-; mno_leave_refugees|Leave them for now...
+mno_leave_refugees|Nech je prozatím...
 mno_evil_war_tut_continue|Pokračuj
 ; menu_guardian_party_quest|{s8} sends word that Isengard is on its heels and has prepared its last stand. He wishes you to join this final battle against Isengard's Armies.   You need to bring at least {reg13} troops to the army,   and are instructed to raise more warriors with all due haste if you do not have enough.
-; mno_guardian_party_reject|Send a message you cannot join him.
+mno_guardian_party_reject|Poslat zprávu, že se nemůžeš připojit.
 mno_guardian_party_send_word|Pošli zprávu, že se k němu brzy připojíš.
-; menu_alternate_training_fight|You will be facing {reg5} opponents. Are you ready?
-; mno_training_continue|Begin training...
-; menu_alternate_training_conclusion|{s5}
+menu_alternate_training_fight|Budeš čelit {reg5}. Jsi připravený?
+mno_training_continue|Začít s výcvikem...
+menu_alternate_training_conclusion|{s5}
 mno_alternate_training_retry|Zkusit znova...
 mno_alternate_training_finish|Opustit arénu...
 menu_custom_battle_choose_faction1|^^^^^^^^^^Vyber si svoji stranu a výhod:
@@ -387,17 +398,19 @@ mno_next_rescue_scene_door|Pokračuj vpřed!
 mno_pick_troops1|Vyber spolecniky pro tento ukol, {reg0} vybrano
 ; menu_pick_troops|Whom would you take with you into the stealth mission?    Currently you picked {reg0} companions. You can take up to 10 troops with you
 mno_go_forward|Ukoncit vyber spolecniku a pokracovat.
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   It is heaped with the notched weapons of his fallen enemies.
+; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|Poklekněte
 mno_swear_oath|Slozit prisahu pomsty!
 mno_despoil|Znesvetit toto misto
 mno_leave_mound|Opustit mohylu.
 ; menu_burial_mound_respects|You kneel and pay your respects to {s1}, silently mouthing a prayer for a speedy journey to the afterlife.  There is nothing left to be done here.
 menu_burial_mound_oath|Hlasite prisahas pomstu za smrt {s4}. Bez odpocinku budes patrat po muzich {s3}  a unicis je. Tva slova odnasi vitr a kdo vi, zda je nebylo slyset za morem?
+menu_funeral_pyre_oath|Hlasite prisahas pomstu za smrt {s4}. Bez odpocinku budes patrat po muzich {s3}  a unicis je. Tva slova odnasi vitr a kdo vi, zda je nebylo slyset za morem?
+mno_leave_pyre_oath|Odejít od vatry.
 ; menu_burial_mound_despoil|You tear down the monument to {s1} with your own hands and defile the very stones with curses, fell chants and unspeakable acts.  Your followers fall back in fear of the dead but they seem to have renewed respect for your wickedness.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Here his corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|Odejít od vatry.
-; menu_town_ruins|When you approach, you see that {s1} is {s2}
+menu_town_ruins|Když se přiblížíš, vidíš že {s1} je {s2}
 mno_ruin_menu_0|Prozkoumat to místo.
 mno_ruin_leave|Opusť...
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.

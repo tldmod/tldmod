@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|헬름 협곡 방어전, 로한 vs 아이센가드
 mno_custom_battle_scenario_5|교전, 북부인 vs 룬
 mno_custom_battle_scenario_6|공성 공격, 오크 vs 난쟁이
 mno_custom_battle_scenario_7|기습, 오크 vs 어둠숲
+; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
+; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
 mno_custom_battle_scenario_11|연습 전투(밸런스 조정!)
 mno_custom_battle_scenario_10|배경 연습 전투
 mno_troll_battle_scenario|연습 트롤 전투
 mno_warg_battle_scenario|연습 와르그 전투
 mno_build_your_own_scene|**제 3시대에서 당신만의 이야기를 만드세요 **
-menu_tutorial|^^제 3시대 모드는 마운트 앤 블레이드 원작에서는 없는 많은 특징을 갖고 있습니다. 그것들은 발매될 때 PDF에 포함되었으나 스포일러 되지 않고 묘사된 것들입니다. 원작 모듈을 사용하기 위해 기본적인 게임 기능을 튜토리얼 할 것입니다.
-menu_tutorial|^^제 3시대 모드는 마운트 앤 블레이드 원작에서는 없는 많은 특징을 갖고 있습니다. 그것들은 발매될 때 PDF에 포함되었으나 스포일러 되지 않고 묘사된 것들입니다. 원작 모듈을 사용하기 위해 기본적인 게임 기능을 튜토리얼 할 것입니다.
+; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
 mno_tutorial_1|튜토리얼 #1: 기본 이동 및 무기 선택. {s1}
 mno_tutorial_2|튜토리얼 #2: 방패를 들고 싸우기. {s2}
 mno_tutorial_3|튜토리얼 #3: 방패 없이 싸우기. {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|취소
 menu_custom_battle_end|^^^^^전투가 끝났습니다.{s1}당신의 편은 {reg5}의 적을 죽였고 {reg6}병사를 전투로 잃었습니다.^당신은 {reg7}의 전투중에 적을 직접 죽였습니다.
 mno_replay|전투 다시 하기
 mno_continue_dot|계속
+; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_replay_cbd|전투 다시 하기
+mno_continue_dot_cbd|계속
 mno_dot_go_back|. 돌아간다
 menu_start_good|^^^^^^^^^^당신의 종족을 선택하세요:
 mno_start_ma|인간
@@ -55,7 +59,7 @@ mno_start_ur|오크의 새로운 종, 우루크
 mno_start_em|사우론의 지배를 받는 인간
 menu_start_hand|^^^^^^^^^^당신의 주인은 백색의 사루만 입니다.^종족을 선택하세요.
 mno_start_whor|사루만 휘하의 오크
-mno_start_isur|아이센가드에서 번식된 우루크-하이
+; mno_start_isur|one of the URUK-HAI, bred in Isengard
 mno_start_duma|던랜드의 인간
 menu_start_good_man|^^^^^^^^^^당신의 민족을 선택하세요:
 mno_start_go|백색의 탑 왕국, 곤도르
@@ -104,7 +108,7 @@ mno_proc|일반적으로 진행
 menu_start_as_one|^^^^^^^^^^당신의 병종은 무엇입니까?
 mno_start_default|{s23}되기 (기본)
 mno_start_up1|{s21}되기 (쉬움)
-mno_start_up2|{s22}가 된다 (쉬움)\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_start_up2|Become a {s22} (Easy)
 mno_continue|계속...
 menu_character_report|^^^^^부대 사기 : {reg8}^부대크기 제한:{reg7}^{s5}
 menu_camp|^^^^당신은 {s1}에 있습니다.{s2}^^무엇을 하시겠습니까?
@@ -113,9 +117,11 @@ mno_camp_troop|보기{reg10?병사:}{reg12?그리고:}{reg11? 포로:}.
 mno_camp_action|물품 사용
 mno_camp_wait_here|캠프를 차려 시간을 보낸다
 mno_camp_options|제 3세계 옵션 변경
+; mno_Dev_Menu|Developer Menu
+; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|치트키/모드변경 옵션 사용
 menu_game_options|^^^^^^^변경을 위해 옵션 클릭
-mno_game_options_war_level_start|전투 시작 단계: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_game_options_war_level_start|War Starts at Level: {s1}
 mno_game_options_restrict_items|제한된 플레이어 장비:{s7}
 mno_game_options_formations|진형과 인공지능: {s7}
 mno_game_options_siege_ai|향상된 공성 AI: {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|돌아가기
 menu_camp_tweaks|^^^^^^^^당신이 조정하고 싶은 옵션을 선택하세요.
 mno_tweak_options_compat|호환성 수정....
 mno_tweak_options_strat|전략 수정...
-mno_tweak_options_battlefield_ai|전투 AI 트윅 ...\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
 mno_tweak_options_back|옵션 메뉴로 돌아가기
 menu_camp_compat_tweaks|^^^^^^^옵션변경을 위해 클릭하세요(shift키를 누르면 감소합니다);^(이건 호환성 때문이지 치트가 아닙니다)
 mno_game_options_compat_party|부대의 최대수: {s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|부대원이 가진 가장 높은 건축가 스킬 ({reg2
 mno_build_ladders_cont|실행
 menu_castle_attack_walls_simulate|{s4}^^아군 사상자: {s8}^^적군 사상자: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^아군 사상자: {s8}^^동맹 사상자: {s9}^^적군 사상자: {s10}
+; menu_castle_taken_by_friends|Nothing to see here.
 menu_castle_taken|여기는 볼 일이 없습니다.\nmenu_castle_taken|{s3}는 당신의 군대에게 함락 되었고, 지금 당신은 {reg2?도시의:성의} 모든 통제권을 가졌습니다.{reg1? 당신이 이 곳을 취하는 것을 막을 자는 아무도 없는 것으로 보입니다...:}
 menu_castle_taken_2|{s3}은 당신의 군사에게 함락되었고, 당신은 성의 모든 통제권을 가졌습니다. {s9}에게 당신의 승리에 대한 서신을 보낼 시간입니다. {s5}
 mno_castle_taken_no_claim|보상 요구하지 않기
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|{s61}의 병영을 방문
 mno_speak_with_elder|{s6}와(과) 대화
 mno_isengard_underground|지하 선술집에 들어가기
 mno_tirith_toplevel|꼭대기층으로 올라가기
+; mno_erebor_gates|Visit the Great Gates.
 mno_town_leave|떠나기
 mno_town_leave_door|떠나기
 menu_player_initiated_siege_result|당신은 {s2}의 깃발 아래 중심지를 공격했습니다.
@@ -328,6 +336,7 @@ menu_player_added_to_allow_follow|^^^^^전령이 당신에게 다가와서 당�
 mno_player_added_to_allow_follow_close|닫기
 menu_center_besieged_event|^^^^^전령이 당신에게 황급히 달려와 {s3}의 {s2}가 {s1}을 포위하고 있다고 보고했습니다.
 mno_center_besieged_event_close|닫기
+; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
 mno_intro_next|계속...
 mno_start_defend_caravan|캐러밴을 지키자!
 mno_start_raid_caravan|캐러밴을 습격하자!
@@ -347,6 +356,8 @@ mno_lord_field_ai|향상된 영주 AI: {s7}
 mno_horse_archer_field_ai|향상된 궁기병 AI: {s7}
 mno_vs_orcs_field_ai|궁수가 오크를 상대로 정확히 조준함 (오크의 머리 위를 조준하지 않음): {s7}
 mno_battlefield_animals|바르그 / 말이 아닌 동물 동료가 전투에 참여함: {s7}
+; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_defend_refugees|침략자들을 주시한다...
 mno_attack_refugees|난민 무리를 공격한다...
 mno_leave_refugees|잠시 놔둔다...
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|계속 전진하라!
 mno_pick_troops1|미션을 수행할 동료를 선택하세요,[reg0}이 선택되었습니다.
 menu_pick_troops|잠입 임무에 누구를 데려갈까요? 현재 당신은 {reg0} 명을 선택했습니다. 최대 10명까지 동행할 수 있습니다.
 mno_go_forward|선택 종료 및 진행
-menu_burial_mound|당신은 {s2}의 {s1}의 봉분에 다가갔다. 그가 쓰러뜨린 적들의 망가진 무기들로 가득하다.
+; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
 mno_pay_respects|무릎을 꿇고 경의를 표하기
 mno_swear_oath|배반의 맹세를 하라!
 mno_despoil|이 장소를 훼손
 mno_leave_mound|봉분 떠나기
 menu_burial_mound_respects|당신은 무릎을 꿇어 {s1}에 경의를 표하고, 내세로의 빠른 여행을 위해 조용히 기도했습니다. 이 곳에서 수행할 행동이 더이상 남아있지 않습니다.
 menu_burial_mound_oath|당신은 큰 소리로 {s4}의 죽음에 대한 복수의 맹세를 했습니다. 당신은 끊임없이 {s3}의 힘을 추구하고 그들을 파괴합니다. 당신의 말은 저 멀리 바람에 실려가고 바다 너머 그들이 들었을지 누가 알겠습니까?
+menu_funeral_pyre_oath|당신은 큰 소리로 {s4}의 죽음에 대한 복수의 맹세를 했습니다. 당신은 끊임없이 {s3}의 힘을 추구하고 그들을 파괴합니다. 당신의 말은 저 멀리 바람에 실려가고 바다 너머 그들이 들었을지 누가 알겠습니까?
+mno_leave_pyre_oath|장작더미를 떠나기
 menu_burial_mound_despoil|당신은 직접 {s1}의 기념비를 철거하고 그 돌덩이를 저주, 저속한 노래와 이루 말할 수 없는 행위들을 통해 더럽혔습니다. 당신의 부대원들은 죽은 자에 대한 두려움으로 뒤로 물러섰지만 당신의 사악함에 대한 경외감을 새로 갖게 된 것으로 보입니다.
-menu_funeral_pyre|당신은 {s2}의 {s3}의 불타고 재만 남은 화장용 장작더미에 다가갑니다. 여기에서 그의 경호원들이 그의 시신으로 화장의식을 치뤘습니다. 가치있는 것은 남아있지 않습니다.
+; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
 mno_leave_pyre|장작더미를 떠나기
 menu_town_ruins|당신이 다가갔을때, 당신은 {s1}이 {s2}임을 확인했습니다.
 mno_ruin_menu_0|이 장소 탐험하기

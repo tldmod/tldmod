@@ -46,3 +46,8 @@ ui_value_denars|%d ค่าทรัพยากร
 ui_cannot_be_used_on_horseback|ไม่สามารถใช้ได้เมื่อทำการขี่ม้า/สัตว์
 ui_upgrade_to_value|อัพเกรดเป็น %s
 ui_notification_cant_upgrade|(ไม่สามารถอัพเกรดได้เมื่อกำลังทำการให้ทหาร)
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

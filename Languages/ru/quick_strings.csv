@@ -73,30 +73,28 @@ qstr_Thighs|Вещи
 qstr_Legs|Ноги
 qstr_Rotate|Повернуть
 qstr_Close|Закрыть
-; qstr_Faction_Side:^^Campa|Faction Side:^^Campaign Difficulty*:^^Home Theater:^^Marshall:^^Enemies:^^
-; qstr_Campaign_Difficulty_|Campaign Difficulty is based on starting faction strength, theater enemies,^ and faction troop tree & troop equipment.
-
-; qstr_Rallies:|Rallies:
-; qstr_View_Keybinds__Press|View Keybinds (Press Insert)
-
-; qstr_What_do_you_fight_fo|What do you fight for?
-; qstr_Go_Back...|Go Back...
-; qstr_Learn_about_the_diff|Learn about the different factions of Middle-Earth
-; qstr_The_DAWN_of_a_New_Er|The DAWN of a New Era
-; qstr_The_TWILIGHT_of_Man|The TWILIGHT of Man
-; qstr_Select_your_Race?|Select your Race?
-; qstr_Man|Man
-; qstr_Elf|Elf
-; qstr_Dwarf|Dwarf
-; qstr_Whom_Do_You_Serve?|Whom Do You Serve?
-; qstr_SAURON_of_Mordor_The|SAURON of Mordor, The Lord of the Rings
-; qstr_SARUMAN_of_Isengard_|SARUMAN of Isengard, The White Hand
-; qstr_an_ORC^_serving_the_|an ORC,^ serving the Lidless Eye
-; qstr_an_URUK^_the_new_bre|an URUK,^ the new breed of Orcs
-; qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
-; qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
-; qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
-; qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
+qstr_Faction_Side:^^Campa|Фракция:^^Сложность компании*:^^Родной регион:^^Командир:^^Враги:^^
+qstr_Campaign_Difficulty_|Сложность кампании зависит от начальной силы фракции, врагах в регионе, войск выбранной фракции и снаряжения отряда.
+qstr_Rallies:|Боевые кличи:
+qstr_View_Keybinds__Press|Показать привязки клавиш (Нажмите Insert)
+qstr_What_do_you_fight_fo|За что ты сражаешься?
+qstr_Go_Back...|Назад...
+qstr_Learn_about_the_diff|Узнать о фракциях средиземья
+qstr_The_DAWN_of_a_New_Er|за РАССВЕТ Новой Эры
+qstr_The_TWILIGHT_of_Man|за СУМЕРКИ Рода Людского
+qstr_Select_your_Race?|Выберите свою Расу:
+qstr_Man|Человек
+qstr_Elf|Эльф
+qstr_Dwarf|Гном
+qstr_Whom_Do_You_Serve?|Кому ты служишь?
+qstr_SAURON_of_Mordor_The|Я - слуга САУРОНА, повелителя Мордора, Властелина Колец
+qstr_SARUMAN_of_Isengard_|Я - слуга САРУМАНА, повелителя Изенгарда, Белой Длани
+qstr_an_ORC^_serving_the_|ОРК,^ прислужник немигающего Ока
+qstr_an_URUK^_the_new_bre|УРУК,^ из новой породы орков
+qstr_a_MAN^_subjugated_by|ЧЕЛОВЕК,^ подчинённый воле Саурона
+qstr_an_ORC^_serving_the_W|ОРК,^ слуга Белой Длани
+qstr_an_URUK_HAI^_bred_in|УРУК-ХАЙ,^ взращённый в Изенгарде
+qstr_a_MAN_of_Dunland^_th|ЧЕЛОВЕК из Дунланда,^ с равнин на Западе
 qstr_Click_the_center_but|Нажмите кнопку, чтобы переключить фракцию^Нажмите на аватар, чтобы просмотреть детали
 qstr_Level:_{reg3}^Health|Уровень: {reg3}^Здоровье: {reg4}
 qstr_Attributes|Параметры
@@ -106,71 +104,60 @@ qstr_Ironflesh^Power_Stri|Живучесть^Мощный удар^Мощный 
 qstr_Proficiencies|Оружейные специализации
 qstr_1H_Weapons^2H_Weapon|Одноручное^Двуручное^Древковое^Лук^Арбалет^Метательное
 qstr_Equipment|Снаряжение
-; qstr_The_Last_Days_Mod_Op|The Last Days Mod Options
-; qstr_War_Starts_at_Level:|War Starts at Level: 
-
-
-
-
-
-
-
-
-; qstr_Restrict_Player_Equi|Restrict Player Equipment:  
-; qstr_Battle_Formations_an|Battle Formations and AI:  
-; qstr_Native|Native
-; qstr_TLD_FormAI__Original|TLD FormAI (Original)
-; qstr_TLD_New_FormAI__Beta|TLD New FormAI (Beta)
-; qstr_Advanced_Siege_AI:__|Advanced Siege AI:  
-; qstr_On|On
-; qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
-; qstr_Cutscenes:__|Cutscenes:  
-; qstr_Injuries_for_compani|Injuries for companions:  
-; qstr_Permanent_death_for_|Permanent death for lords and companions:  
-; qstr_Permanent_death_for_p|Permanent death for player (that is YOU!):  
-; qstr_Battle_morale_system|Battle morale system:  
-; qstr_Animal_ambushes:__|Animal ambushes:  
-; qstr_Fallen_rider_damage_|Fallen rider damage messages:  
-; qstr_No_Messages|No Messages
-; qstr_Player_damage_only|Player damage only
-; qstr_All_Messages|All Messages
-; qstr_Troop_Identifier_in_|Troop Identifier in Battles (Press Y during battle to show/hide):
-; qstr_Disable|Disable
-; qstr_Enable_without_Facti|Enable without Faction Names
-; qstr_Enable_with_Faction_|Enable with Faction Names
-; qstr_Simple:_Red___Enemy_|Simple: Red - Enemy / Green - Allies
-; qstr_Preferred_Camera_Mod|Preferred Camera Mode:  
+qstr_The_Last_Days_Mod_Op|Настройки мода The Last Days
+qstr_War_Starts_at_Level:|Война начинается на уровне:
+qstr_Restrict_Player_Equi|Ограничения на снаряжение (нельзя посадить гнома на лошадь, а в его доспех засунуть эльфа):
+qstr_Battle_Formations_an|Формации и улучшенный ИИ в сражениях:
+qstr_Native|Оригинал
+qstr_TLD_FormAI__Original|ИИ формаций TLD (Оригинал)
+; qstr_TLD_New_FormAI|TLD New FormAI
+qstr_Advanced_Siege_AI:__|Продвинутый ИИ на осадах:
+qstr_On|Вкл
+qstr_Town_NPCs_Always_Acc|Городские НПЦ всегда доступны из меню:
+qstr_Cutscenes:__|Катсцены:
+qstr_Injuries_for_compani|Ранения компаньонов:
+qstr_Permanent_death_for_|Окончательная смерть полководцев и соратников:
+qstr_Permanent_death_for_p|Окончательная смерть игрока (то есть ВАС!):
+qstr_Battle_morale_system|Система боевого духа:
+qstr_Animal_ambushes:__|Засады животных:
+qstr_Fallen_rider_damage_|Сообщения об уроне упавшим наездникам:
+qstr_No_Messages|Скрыть сообщения
+qstr_Player_damage_only|Только урон нанесённый игроком
+qstr_All_Messages|Все сообщения
+qstr_Troop_Identifier_in_|Идентификаторы у солдат в битвах (Нажмите Y в бою чтобы показать/скрыть):
+qstr_Disable|Откл
+qstr_Enable_without_Facti|Включить без названий фракций
+qstr_Enable_with_Faction_|Включить с названиями фракций
+qstr_Simple:_Red___Enemy_|Простые: красные - враги, зелёные - друзья
+qstr_Preferred_Camera_Mod|Предпочтительный режим камеры:
 qstr_Default_Camera|Камера по умолчанию
 qstr_Free_Mode_Custom_Cam|Свободная настраиваемая камера
-; qstr_Fixed_Over_The_Shoul|Fixed Over-The-Shoulder Camera
-; qstr_Prevent_AI_from_taki|Prevent AI from taking defensive:  
-; qstr_Brighter_Nights:__|Brighter Nights:  
-; qstr_Done|Done
-; qstr_Gameplay_Tweaks|Gameplay Tweaks
-; qstr_Beta_Formations_Twea|Beta Formations Tweaks
-; qstr_War_Will_Start_at_Le|War Will Start at Level {reg0}
-; qstr_Troop_Tree|Troop Tree
-; qstr__Click_on_a_unit_for|(Click on a unit for details)
-
-
-; qstr_Weapons|Weapons
-; qstr_Armors|Armors
-; qstr_Others|Others
-
-; qstr_F4___Complex_formati|F4 - Complex formations
-; qstr_F7___Memorize_div._p|F7 - Memorize div. placement
-; qstr_F8___Default_divisio|F8 - Default division placement
-; qstr_F4___Ranks|F4 - Ranks
-; qstr_F5___Shield_Wall|F5 - Shield Wall
-; qstr_F6___Wedge|F6 - Wedge
-; qstr_F7___Square|F7 - Square
-; qstr_F8___No_Formation|F8 - No Formation
-; qstr_Extended_Formations_|Extended Formations and AI Options
-; qstr_Put_player_in_divisi|Put player in division: 
+qstr_Fixed_Over_The_Shoul|Закреплённая камера - на плече игрока
+qstr_Prevent_AI_from_taki|Запретить ИИ уходить в оборону:
+qstr_Brighter_Nights:__|Светлые ночи: 
+qstr_Done|Сделано
+qstr_Gameplay_Tweaks|Настройка геймплея... 
+qstr_Beta_Formations_Twea|Альтернативный ИИ формаций
+qstr_War_Will_Start_at_Le|Война начинается на уровне: {reg0}
+qstr_Troop_Tree|Древо развития войск
+qstr__Click_on_a_unit_for|(Нажмите на воина для подробностей)
+qstr_Weapons|Оружие
+qstr_Armors|Броня
+qstr_Others|Прочее
+qstr_F4___Complex_formati|F4 - Сложные формации
+qstr_F7___Memorize_div._p|F7 - запомнить позицию подразделения
+qstr_F8___Default_divisio|F8 - Разместить подразделение по умолчанию
+qstr_F4___Ranks|F4 - Ряды
+qstr_F5___Shield_Wall|F5 - Стена щитов
+qstr_F6___Wedge|F6 - Клин
+qstr_F7___Square|F7 - Квадрат
+qstr_F8___No_Formation|F8 - Без формации
+qstr_Extended_Formations_|Расширенные опции формаций и ИИ:
+qstr_Put_player_in_divisi|Поместить игрока в подразделение:
 qstr_None|нет
-; qstr_Army_rotates_to_face|Army rotates to face enemy center: 
-; qstr_Prevent_AI_from_takin|Prevent AI from taking defensive: 
-; qstr_AI_Controls_Troops_W|AI Controls Troops When Player is KO'd: 
+qstr_Army_rotates_to_face|Войска поворачиваются лицом к врагу:
+qstr_Prevent_AI_from_takin|Запретить ИИ уходить в оборону:
+qstr_AI_Controls_Troops_W|ИИ управляет войсками когда Игрок теряет сознание:
 qstr_You_gained_{reg0}_Re|Вы получили {reg0} Очков Снабжения фракции {s0}.
 qstr_You_lost_{reg0}_Reso|Вы потратили {reg0} Очков Снабжения фракции {s0}.
 qstr_{s24}:|{s24}:
@@ -206,7 +193,6 @@ qstr_Superior_orders_from|Из державы {s11} пришёл приказ п
 qstr_{reg12}_{s10}_left_t|{reg12} {s10} - эти воины покинули ваш отряд!
 qstr_Fangorn_claimed_{reg|Фангорн потребовал от вас жертву: среди ваших бойцов {reg0} убитых и {reg1} раненых!
 qstr_You_were_wounded_in_|Вы были ранены в Фангорне!
-qstr_Volunteers|Добровольцы
 qstr_{s1}_of_{s3}_was_def|{s1} из державы {s3} терпит поражение в битве.
 qstr_{s2}_have_razed_{s1}|Держава {s2} разорила {s1}!
 qstr_Left_for_dead_but_mi|Вы были обречены на смерть, но чудесным образом спаслись: {reg1?{reg1} раз{reg2?:}:НИКОГДА}
@@ -229,7 +215,7 @@ qstr_+1_to_Strength|+1 к силе
 qstr_+1_to_Agility|+1 к ловкости
 qstr_+1_to_Leadership|+1 к навыку лидерства
 qstr_+1_to_Power_Draw|+1 к навыку мощного выстрела
-; qstr_Turns_nature_to_your|Turns nature to your side (effect scales with Wildcraft)
+qstr_Turns_nature_to_your|Силы природы будут сражаться за Вас (эффект растёт с навыком Знание леса)
 qstr_+1_to_Trainer|+1 к навыку обучения
 qstr_Recruits_Tribal_Orcs|Позволяет рекрутировать диких орков
 qstr_rally|сигнал к сбору
@@ -237,10 +223,10 @@ qstr_rallies|сигналы к сбору
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} во время битвы
 qstr_+1_to_Charisma|+1 к харизме
 qstr_+1_to_Surgery|+1 к навыку хирургии
-; qstr_+1_to_Wildcraft|+1 to Wildcraft
+qstr_+1_to_Wildcraft|+1 к знанию леса
 qstr_+1_to_Ironflesh|+1 к навыку железной кожи
 qstr_+1_to_Prisoner_Mgmt|+1 к навыку содержания пленных
-qstr_+2_to_Crafting|+2 к навыку ремесла
+qstr_+2_to_Tactics|+2 к тактике
 qstr_+3_to_Spotting|+3 к навыку слежения
 qstr_Less_Dunnish_upkeep|Снижает содержание дунландцев
 qstr_Less_Wargs_upkeep|Снижает содержание всадников на варгах
@@ -248,7 +234,7 @@ qstr_+{reg1}_to_Party_Mor|+{reg1} к боевому духу отряда
 qstr_Do_you_want_to_disem|Вы хотите высадиться?
 qstr_Move_here|Перейти
 qstr_View_notes|Заметки
-; qstr_Looted_your_items|Looted your items
+qstr_Looted_your_items|Ваши вещи разграблены
 qstr_nothing|ничего
 qstr_Good|Хорошо
 qstr_Med|Средне
@@ -266,22 +252,22 @@ qstr_near_the_Great_East_|близ Великого восточного тра�
 qstr_near_what_is_left_of|близ почти исчезнувшей Старой лесной дороги, древнего гномьего тракта, проходившего через густой лес
 qstr_close_to_the_Hand_sh|близ изваяния в виде Длани Сарумана, указывающей в сторону башни Ортанк
 qstr_in_sight_of_the_maje|близ величественных крепостных стен Минас-Тирита, Белого Города
-; qstr_in_sight_of_Edoras_t|in sight of Edoras, the capital of Rohan
-; qstr_in_sight_of_the_Horn|in sight of the Hornburg, the great fortress of Rohan
-; qstr_in_sight_of_Dol_Amro|in sight of Dol Amroth, the seat of the Princes of Belfalas
-; qstr_in_sight_of_the_Mora|in sight of the Morannon, the Black Gate of Mordor
-; qstr_in_sight_of_Dol_Guld|in sight of Dol Guldur, Sauron's northern fortress
-; qstr_on_the_green_pasture|on the green pastures and many-flowered meadows surrounding Beorn's House
-; qstr_on_the_shores_of_Lak|on the shores of Lake Mirrormere, near the East Gate of Moria
-; qstr_on_the_shores_of_the|on the shores of the Long Lake, in sight of Esgaroth, the Laketown
-; qstr_near_the_coast_of_Go|near the coast of Gondor. You can hear the distant sound of the waves and the cries of the seagulls.
+qstr_in_sight_of_Edoras_t|вас заметили в Эдорасе, столице Рохана
+qstr_in_sight_of_the_Horn|вас заметили в Хорнбурге, великой крепости Рохана
+qstr_in_sight_of_Dol_Amro|вас заметили в Дол Амроте, вотчине принцев Белфаласа
+qstr_in_sight_of_the_Mora|вас заметили у Мораннона, Тёмных Врат Мордора
+qstr_in_sight_of_Dol_Guld|вас заметили в Дол Гулдуре, северной твердыне Саурона
+qstr_on_the_green_pasture|на зелёных пастбищах и цветущих лугах, окружающих Дом Беорна
+qstr_on_the_shores_of_Lak|на берегах Зеркального Озера, у Восточных Врат Мории
+qstr_on_the_shores_of_the|на берегах Длинного Озера, недалеко у Эсгарота, Озёрного Города
+qstr_near_the_coast_of_Go|рядом с побережьем Гондора. Вы могли слышать отдалённый звук волн и крики чаек.
 qstr_in_the_outskirts_of_|на окраинах Осгилиата, бывшей столицы Гондора
 qstr_in_sight_of_the_entr|близ входа в Эребор, гномью твердыню
 qstr_in_sight_of_the_dark|в тени тёмной башни Ортанк
 qstr_near_the_Old_Ford_wh|близ Старого брода, где Старая лесная дорога пересекает реку Андуин
 qstr_near_a_big_ford_cros|близ большого брода через реку {s15}
 qstr_near_a_small_ford_cr|близ маленького брода через реку {s15}
-; qstr_Battle_Advantage_=_{|"Battle Advantage = {reg0}.
+qstr_Battle_Advantage_=_{|"Преимущество в бою = {reg0}.
 qstr_{s9}_wants_you_to_re|Полководец {s9} хочет, чтобы вы продолжили следовать за его армией, дожидаясь следующих указаний.
 qstr__Being_Raided_|(Под нападением)
 qstr__Looted_|(Разграблено)
@@ -371,8 +357,8 @@ qstr_{s14}Double_rations_t|{s14}Двойной паёк тому, кто при�
 qstr_{s14}Kill_these_hors|{s14}Убить этих конокрадов!
 qstr_Kill_them_all!_Take_|Убить всех! Вернуть наше добро!
 qstr_Tonight_there_will_b|К вечеру {s16} лишится ещё одного своего врага!
-qstr_Baruk_Khazâd!_Khazâd|Барук кхазад! Кхазад ай-мену!
-qstr_{s14}Riders_of_Rohan|{s14}Всадники Рохана! Помните, за что вы сражаетесь!
+qstr_Baruk_Khazd!_Khazd_a|Барук кхазад! Кхазад ай-мену!
+qstr_{s14}Riders_of_Rohan|{s14}Всадники Рохана! Вспомните, за что вы сражаетесь!
 qstr_{s14}More_{s19}heads|{s14}Будет ещё больше голов, чтобы украсить врата Мораннона!
 qstr_The_Wise_Master_shal|Премудрый Хозяин будет рад, когда я покажу ему твой труп, {playername}!
 qstr_{s14}Now_we_will_put|{s14}Сейчас мы положим конец страданиям этих нечестивцев.
@@ -447,12 +433,12 @@ qstr_Poor|Бедный
 qstr_Average|Средний
 qstr_Rich|Богатый
 qstr_Very_Rich|Очень богатый
-; qstr_Strength|Strength
-; qstr_Agility|Agility
-; qstr_Intelligence|Intelligence
-; qstr_Charisma|Charisma
-; qstr_You_ve_gained_{s6}_f|You've gained {s6} from gaining {s7}
-; qstr_You_ve_lost_{s6}_fro|You've lost {s6} from losing {s7}
+qstr_Strength|Сила
+qstr_Agility|Ловкость
+qstr_Intelligence|Интеллект
+qstr_Charisma|Харизма
+qstr_You_ve_gained_{s6}_f|Вы получили бонус к {s6} так как у Вас теперь есть {s7}
+qstr_You_ve_lost_{s6}_fro|Вы потеряли бонус к {s6}, лишившись {s7}
 qstr_{s50}_Caves|{s50}
 qstr_{s50}_Mines|{s50}
 qstr_{s50}_Woods|{s50}
@@ -512,7 +498,7 @@ qstr__+1_intelligence_ski|(+1 к навыкам, основанным на ин�
 qstr_The_cracked_ribs_hav|Сломанные рёбра срослись.
 qstr__+20_weapon_skill_|(+20 к боевому мастерству)
 qstr_{s1}_has_had_his_hea|{s1} укрепил своё здоровье
-qstr_News_has_arrived_tha|Пришли вести, что полководец {s1} из державы {s2} был убит в битве!
+qstr_News_has_arrived_tha|Стало известно, что {s1} из {s2} погиб в бою с превосходящими силами {s28}!
 qstr_{s1}_s_Burial_Mound|Курган, где лежит {s1}
 qstr_{s1}_s_Funeral_Pyre|Погребальный костёр, где лежит {s1}
 qstr_{s1}_is_logged_as_de|{s1} считается мёртвым
@@ -544,7 +530,7 @@ qstr_{s24}:_Your_archers_|{s24}: Ваши стрелки чувствуют се
 qstr_{s24}:_Your_cavalry_|{s24}: Ваши всадники чувствуют себя лучше!
 qstr_Ah_what_a_coincidenc|О, какое совпадение, что я повстречался с тобой, {playername}! Ты, наверное, не знаешь меня, но вот я о тебе наслышан. Я еду в дальние края, меня ждёт {s4}. Но совсем недавно {s3} и я говорили о тебе. {s3} рассчитывает на тебя в эти недобрые времена, и если ты задумал{/а} самоустраниться и заняться своими делами, то лучше бы тебе переменить своё решение. {s3} ждёт твоей помощи.
 qstr_Who_are_you?|Кто ты?
-qstr_A_friend_of_{s3}_and|Союзник. {s3} и {s2} - мои друзья. А теперь поторопись! Мордор собирает под свою руку всех злобных существ, Тёмная Сила прилагает всю свою волю для этого. Время на исходе - для всего доброго, что есть в этом мире. Мы должны сделать всё, чтобы противостоять злу!
+qstr_A_friend_of_{s3}_and|Друг {s3} и народа {s2}. Теперь поспеши! Мордор исторг своих самых ужасных слуг, и его тёмная воля стягивает их сюда. Время всего светлого в мире на исходе, если только мы не сделаем всё возможное для нашей борьбы!
 qstr_What_should_I_do?|Дай мне совет, что я долж{ен/на} делать?
 qstr_Find_{s3}_s_whereabo|{s3} ожидает встречи с тобой, отправляйся как можно скорее. Удачи!
 qstr_Good_to_see_the_Shad|Рад видеть, что Тень ещё не сокрушила тебя, {playername}.
@@ -572,17 +558,16 @@ qstr_Noone..._oppossssses|Никто... не с-с-с-сможет выс-с-с�
 qstr_All..._must..._submi|Всякий... должен... покориться... и... стать слугой...
 qstr_I_serve_the_Eye!|Я служу Оку!
 qstr_I_shall_serve_the_Ey|Я буду служить Оку!
-; qstr_Go_to_{s1}_and_speak|Go to {s1} and speak with {s9}.
-; qstr_The_Remnant_Forces_o|The Remnant Forces of {s22} have gathered to reinforce the {s15} theater!
-; qstr_The_strength_of_the_|The strength of the remaining allied factions of the {s15} theater has increased
-; qstr_{s30}_reinforced_by_|{s30} reinforced by {reg65} fac str
+qstr_Go_to_{s1}_and_speak|Отправляйся в {s1} и поговори с {s9}.
+qstr_The_Remnant_Forces_o|Уцелевшие силы из {s22} собрались чтобы присоединиться к {s15}!
+qstr_The_strength_of_the_|Сила оставшихся союзных фракций {s15} возросла.
+qstr_{s30}_reinforced_by_|Сила фракции {s30} увеличилась на {reg65}
 qstr_{s1}_has_been_besieg|{s2} из державы {s3} осаждает {s1}. 
 qstr_The_forces_of_{s2}_m|Войска державы {s2} двинулись в {s15} - на помощь союзникам!
 qstr_Rohan_capital_moved_|Столица Рохана перенесена из Эдораса в Хорнбург!
-; qstr_Gondor_capital_moved|Gondor capital moved from Minas Tirith to Dol Amroth!
-; qstr_Dale_capital_moved_f|Dale capital moved from Dale to Esgaroth!
-; qstr_Gundabad_capital_mov|Gundabad capital moved from Gundabad to Goblin Town!
-; qstr_The_hosts_of_{s2}_re|The hosts of {s2} retreat back to their homes!
+qstr_Dale_capital_moved_f|Столица фракции Дейл перенесена в Эсгарот!
+qstr_Gundabad_capital_mov|Столица фракции Гундабад перенесена в Гоблинабад!
+qstr_The_hosts_of_{s2}_re|Войска державы {s2} возвращаются на защиту своего дома!
 qstr____Ruins_of_{s1}___| Руины поселения {s1} 
 qstr_ranks| в шеренги
 qstr_shield_wall| в стену щитов
@@ -598,29 +583,29 @@ qstr___Not_enough_archers|Недостаточно стрелков, чтобы 
 qstr___Infantry_formation|Построение пехоты отменено.
 qstr___Cavalry_formation_|Построение конницы отменено.
 qstr___Archer_formation_d|Построение стрелков отменено.
-; qstr_Division_{reg1}_{s2}|Division {reg1} {s2} forming {s1}.
-; qstr_Not_enough_troops_in|Not enough troops in division {reg1} {s2} to form {s1}.
-; qstr_Division_{reg1}_{s2}_|Division {reg1} {s2} is an {s3} division and cannot form {s1}.
-; qstr_{s1}:_infantry_forma|{s1}: infantry formation disassembled.
-; qstr_{s1}:_archer_formati|{s1}: archer formation disassembled.
-; qstr_{s1}:_skirmisher_for|{s1}: skirmisher formation disassembled.
-; qstr_{s1}:_cavalry_format|{s1}: cavalry formation disassembled.
-; qstr_{s1}:_formation_disa|{s1}: formation disassembled.
-; qstr_Cavalry_formation_di|Cavalry formation disassembled.
-; qstr_The_placement_of_{s1|The placement of {s1} division {reg0} memorized.
-; qstr_The_placement_of_{s1}|The placement of {s1} division {reg0} set to default.
-; qstr_Your_party_s_tactica|Your party's tactical skill limits how far away you can deploy your troops!
-; qstr_...and_attack_enemy_|...and attack enemy {s1} division!
-; qstr_{s2}:_returning_afte|{s2}: returning after destroying enemy {s1} division.
-; qstr_infantry|infantry
-; qstr_archer|archer
-; qstr_cavalry|cavalry
-; qstr_polearm|polearm
-; qstr_skirmisher|skirmisher
-; qstr_mounted_archer|mounted archer
-; qstr_support|support
-; qstr_bodyguard|bodyguard
-; qstr_undetermined_type_of|undetermined type of
+qstr_Division_{reg1}_{s2}|Подразделение {reg1} {s2} формирует {s1}.
+qstr_Not_enough_troops_in|Недостаточно воинов в подразделении {reg1} {s2} чтобы сформировать {s1}.
+qstr_Division_{reg1}_{s2}_|Подразделение {reg1} {s2} является подразделением {s3} и не может сформировать {s1}.
+qstr_{s1}:_infantry_forma|{s1}: Построение пехоты отменено.
+qstr_{s1}:_archer_formati|{s1}: построение лучников отменено.
+qstr_{s1}:_skirmisher_for|{s1}: построение застрельщиков отменено.
+qstr_{s1}:_cavalry_format|{s1}: построение конницы отменено.
+qstr_{s1}:_formation_disa|{s1}: построение отменено.
+qstr_Cavalry_formation_di|Построение конницы отменено
+qstr_The_placement_of_{s1|Позиция подразделения {s1} {reg0} сохранена.
+qstr_The_placement_of_{s1}|Позиция подразделения {s1} {reg0} - по умолчанию.
+qstr_Your_party_s_tactica|От умения отряда "Тактика" зависит, как далеко вы можете размещать ваши отряды!
+qstr_...and_attack_enemy_|...и нападите на вражеское подразделение {s1}!
+qstr_{s2}:_returning_afte|{s2}: возвращайтесь, когда уничтожите вражеское подразделение {s1} .
+qstr_infantry|пехотинец
+qstr_archer|лучник
+qstr_cavalry|всадник
+qstr_polearm|пикинёр
+qstr_skirmisher|застрельщик
+qstr_mounted_archer|конный лучник
+qstr_support|вспомогательный боец
+qstr_bodyguard|телохранитель
+qstr_undetermined_type_of|неизвестный род войск
 
 qstr_{s1}_has_fled_the_ba|{s1} сбежал с поля боя! 
 qstr_Your_troops_are_at_{|Уровень сплочённости ваших воинов - {reg1}% (бонус +{reg3}% ), у врага - {reg2}%!
@@ -634,69 +619,77 @@ qstr_Your_troops_flee_in_|Ваши войска бегут в ужасе!
 qstr_Many_of_your_troops_|Большая часть ваших воинов убегает с поля боя. 
 qstr_Some_of_your_troops_|Часть ваших воинов убегает с поля боя. 
 qstr_A_few_of_your_troops|Несколько ваших воинов убегает с поля боя. 
-; qstr_Gained_permanent_+1_to_P|Gained permanent +1 to Pathfinding.
-; qstr_Gained_permanent_+1_to_S|Gained permanent +1 to Spotting.
-; qstr_{s11}_recovered_from|{s11} recovered from a serious wound.
+qstr_Gained_permanent_+1_to_P|Навсегда получено +1 к поиску пути.
+qstr_Gained_permanent_+1_to_S|Навсегда получено +1 к слежению.
+qstr_{s11}_recovered_from|{s11} восстановился после серьёзного ранения.
 qstr_Volunteers|Добровольцы
-; qstr_Reserves|Reserves
-; qstr_have_taken_measure_o|have taken measure of your faction's current strength and has grown bolder.
-; qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
-; qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
-; qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
-; qstr_Something_wrong_not_|Something wrong, not enough troops to remove
-; qstr_Raiders|Raiders
-; qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
-; qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
-; qstr_loses_Faction_Strength_|loses Faction Strength due to the your success at the sea.
-; qstr_You_spent_{reg67}_of|You spent {reg67} of your influence with {s1}, with {reg66} remaining.
+qstr_Reserves|Резервы
+qstr_have_taken_measure_o|оценило текущую силу вашей фракции и стало смелее.
+qstr_loses_Faction_Streng|становится слабее, так как линии снабжения были нарушены.
+qstr_loses_Faction_Strengt|становится слабее после уничтожения их лагеря.
+qstr_gains_Faction_Streng|становится сильнее, когда расходится молва о вашей победе.
+qstr_Something_wrong_not_|Что-то не так, не хватает бойцов для разведывательного отряда.
+qstr_Raiders|Налётчики
+qstr_have_won_the_sea_bat|выиграли сражение на воде, деморализовав ваши отряды. Враг может получить превосходство из-за этого поражения и нападать чаще.
+qstr_loses_Faction_Strength|становится слабее после опустошительного рейда.
+qstr_loses_Faction_Strength_|становится слабее после вашей победы на воде.
+qstr_You_spent_{reg67}_of|Вы потратили {reg67} очков влияния на {s1}, осталось {reg66}.
 qstr_No_Troops_Left.|Больше нет войск.
-; qstr_avoid_melee|avoid melee
-; qstr_stand_and_fight|stand and fight
+qstr_avoid_melee|избегать ближний бой
+qstr_stand_and_fight|стоять и сражаться
 qstr_Everyone|Все
-; qstr_Shield___{reg31}_|Shield (-{reg31})
-; qstr_Power_Draw___{reg31}|Power Draw (-{reg31})
-; qstr_Riding___{reg31}_|Riding (-{reg31})
-; qstr_Horse_Archery___{reg|Horse Archery (-{reg31})
-; qstr_Athletics___{reg31}_|Athletics (-{reg31})
-; qstr_No_Skill_Penalty_Ass|No Skill Penalty Assigned
-; qstr_Inventory|Inventory
-; qstr_Show_stats|Show stats
-; qstr_Show_item_details__|Show item details  
-; qstr_Troop_detail|Troop detail
-; qstr_{s1}^|{s1}^
-; qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
-; qstr_{s1}Hit_Points:_{reg|{s1}Hit Points: {reg1}
-; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
-; qstr_{s2}^{reg1}^|{s2}^{reg1}^
-; qstr_{s1}___Agility:|{s1}   Agility:
-; qstr_{s2}{reg1}|{s2}{reg1}
-; qstr_{s1}Main_skills:_^|{s1}Main skills: ^
-; qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
-; qstr_{s2}{reg1}^|{s2}{reg1}^
-; qstr_{s1}___Athletics:^|{s1}   Athletics:^
-; qstr_{s1}___Riding:^|{s1}   Riding:^
-; qstr_{s2}_^|{s2}-^
-; qstr_{s1}___Power_Throw:^|{s1}   Power Throw:^
-; qstr_{s1}___Power_Draw:^^|{s1}   Power Draw:^^
-; qstr_{s2}{reg1}^^|{s2}{reg1}^^
-; qstr_{s2}_^^|{s2}-^^
-; qstr_{s1}Weapons:^|{s1}Weapons:^
-; qstr_{s1}___One_Handed:^|{s1}   One Handed:^
-; qstr_{s1}___Two_Handed:^|{s1}   Two Handed:^
-; qstr_{s1}___Polearms:^|{s1}   Polearms:^
-; qstr_{s1}___Archery:^|{s1}   Archery:^
-; qstr_{s1}___Crossbow:^|{s1}   Crossbow:^
-; qstr_{s1}___Throwing:^|{s1}   Throwing:^
-; qstr_{s1}___Slings:|{s1}   Slings:
-; qstr_{s2}_|{s2}-
-; qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
-; qstr_ready_bows_and_missi|ready bows and missiles
-; qstr_ready_side_arms|ready side arms
-; qstr_ready_two_hander|ready two-hander
-; qstr_ready_polearms|ready polearms
-; qstr_shields_up|shields up
-; qstr_doff_shields|doff shields
-; qstr_Distance___{reg70}__|Distance - {reg70} - {s11} Party - {s12} Troop
+qstr_Shield___{reg31}_|Владение щитом (-{reg31})
+qstr_Power_Draw___{reg31}|Мощный выстрел (-{reg31})
+qstr_Riding___{reg31}_|Верховая езда (-{reg31})
+qstr_Horse_Archery___{reg|Верховая стрельба (-{reg31})
+qstr_Athletics___{reg31}_|Атлетика (-{reg31})
+qstr_No_Skill_Penalty_Ass|Нет штрафов к навыкам
+qstr_Inventory|Снаряжение
+qstr_Show_stats|Показать характеристики
+qstr_Show_item_details__|Показать информацию о предмете
+qstr_Troop_detail|Информация об отряде
+qstr_{s1}^|{s1}^
+qstr_{s1}Level:_{reg1}^|{s1}Уровень: {reg1}^
+qstr_{s1}Hit_Points:_{reg|{s1}Здоровье: {reg1}
+qstr_{s1}Atributes:_^___S|{s1}Характеристики: ^   Сила:^
+qstr_{s2}^{reg1}^|{s2}^{reg1}^
+qstr_{s1}___Agility:|{s1}   Ловкость:
+qstr_{s2}{reg1}|{s2}{reg1}
+qstr_{s1}Main_skills:_^|{s1}Основные навыки: ^
+qstr_{s1}___Power_Strike:|{s1}   Мощный удар:^
+qstr_{s2}{reg1}^|{s2}{reg1}^
+qstr_{s1}___Athletics:^|{s1}   Атлетика:^
+qstr_{s1}___Riding:^|{s1}   Верховая езда:^
+qstr_{s2}_^|{s2}-^
+qstr_{s1}___Power_Throw:^|{s1}   Мощный бросок:^
+qstr_{s1}___Power_Draw:^^|{s1}   Мощный выстрел:^^
+qstr_{s2}{reg1}^^|{s2}{reg1}^^
+qstr_{s2}_^^|{s2}-^^
+qstr_{s1}Weapons:^|{s1}Владение оружием:^
+qstr_{s1}___One_Handed:^|{s1}   Одноручное:^
+qstr_{s1}___Two_Handed:^|{s1}   Двуручное:^
+qstr_{s1}___Polearms:^|{s1}   Древковое:^
+qstr_{s1}___Archery:^|{s1}   Луки:^
+qstr_{s1}___Crossbow:^|{s1}   Арбалеты:^
+qstr_{s1}___Throwing:^|{s1}   Метательное:^
+qstr_{s1}___Slings:|{s1}   Пращи:
+qstr_{s2}_|{s2}-
+qstr__Click_on_the_troop_|(Нажмите на юнита чтобы повернуть его)^^Нажмите на элемент снаряжения^(шлем, броня, перчатки, ботинки)^ чтобы показать их.
+qstr_ready_bows_and_missi|приготовить луки и снаряды
+qstr_ready_side_arms|приготовить одноручное оружие
+qstr_ready_two_hander|приготовить двуручники
+qstr_ready_polearms|приготовить копья
+qstr_shields_up|щиты наизготовку
+qstr_doff_shields|убрать щиты
+qstr_Distance___{reg70}__|Расстояние - {reg70} - {s11} Отряд - {s12}
+qstr_A_golden_mist_from_L|Золотой туман Лориена застилает поле битвы. Ваши войска чувствуют себя ободренными в присутствии Леди.
+qstr_A_golden_mist_from_Lr|Золотой туман Лориена застилает поле битвы. Ведьма совсем рядом. Она насылает дрожь по спине ваших воинов.
+qstr_Dark_clouds_from_Mor|Тёмные облака Мордора сгущаются над полем битвы. Вашим лучникам трудно разглядеть врага, а присутствие зла сеет страх среди ваших людей.
+qstr_Dark_clouds_from_Mord|Тёмные облака Мордора сгущаются на полем битвы. Присутствие Тёмного Владыки придаёт сил вам и вашим воинам.
+qstr_A_thunderstorm_from_|Над полем брани бушует гроза из Туманных Гор. Ваши войска медленнее передвигаются, а суеверные люди напуганы.
+qstr_A_thunderstorm_from_t|Над полем брани бушует гроза из Туманных Гор. Лучникам стало трудно целиться в такую погоду.
+qstr_A_poisonous_fog_from|Ядовитый туман из Дол Гулдура навис прямо над полем битвы. Вы и ваши войска ослаблены. Среди людей ощущается страх.
+qstr_A_poisonous_fog_from_|Ядовитый туман из Дол Гулдура навис прямо над полем битвы. Вы не чувствуете ничего особенного, но слышите, как страдают ваши враги. Вы чувствуете их страх.
 qstr_Your_mount_stumbles!|Ваш скакун спотыкается! Кажется, он охромел.
 qstr_Bitten_by_your_own_w|Вас укусил собственный варг!
 qstr_You_weigh_too_much_f|Ваш вес слишком велик для низкорослой лошади!
@@ -707,25 +700,25 @@ qstr_Use_+/__to_zoom_in/o|Нажмите + / - чтобы увеличить / �
 qstr_Use_Up/Down_arrow_ke|Нажмите стрелки вверх / вниз на клавиатуре чтобы наклонить вверх / вниз
 qstr_Fixed_Camera___Right|Закреплённая камера - правое плечо
 qstr_Fixed_Camera___Left_|Закреплённая камера - левое плечо
-; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
+qstr_While_visiting_towns|Посещая города, поселки и лагеря, вы можете общаться с людьми, гуляющими вокруг. Члены разных фракций могут рассказывать разные вещи: одни позволят вам самим задать вопрос, другие поделятся интересными слухами. Они могут дать вам лучшее понимание их культуры и фракции, могут помочь найти секретные локации или поделятся советами и хитростями для путешествий по Диким землям и сражений в Войне Кольца.
 qstr_Cannot_leave_now.|Сейчас нельзя уйти.
 ; qstr_You_have_found_the_l|You have found the local smithy... (+{reg3} XP)
 ; qstr_You_have_found_the_lo|You have found the local authority...(+{reg3} XP)
 ; qstr_You_have_found_the_loc|You have found the local warehouse...(+{reg3} XP)
-; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
 qstr__cancelled_the_{reg1|(отменены {reg10} очков опыта за убийство пленников)
 qstr_Forming_ranks.|Воины строятся шеренгами.
 ; qstr_{reg2?You:Your_mount|{reg2?You:Your mount} received {reg1} extra damage!
 ; qstr_{reg2?You_strike:You|{reg2?You strike:Your horse charges} for {reg1} bonus damage!
-; qstr_Division_Placement|Division Placement
+qstr_Division_Placement|Передвижение подразделений.
 ; qstr_Complex_Formations|Complex Formations
 ; qstr_Formations_turned_OF|Formations turned OFF in options menu
 ; qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
 ; qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
 ; qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
 ; qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
-; qstr_Three_Nazgul_are_cir|Three Nazgul are circling in the sky above the battlefield!
-; qstr_Two_Nazgul_are_circl|Two Nazgul are circling in the sky above the battlefield!
+qstr_Three_Nazgul_are_cir|Три Назгула кружат в небе над полем битвы!
+qstr_Two_Nazgul_are_circl|Два Назгула кружат в небе над полем битвы!
 qstr_A_Nazgul_is_circling|Назгул кружит над полем боя!
 ; qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 ; qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
@@ -750,7 +743,7 @@ qstr_Your_bravery_inspire|Ваша отвага вдохновляет ваши�
 ; qstr_You_have_been_knocke|You have been knocked unconscious by {s22}.
 ; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
 ; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
-; qstr_A_bear_has_been_summ|A bear has been summoned to battle!
+qstr_A_bear_has_been_summ|Медведь был призван в битву!
 ; qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.
 ; qstr_You_can_also_order_y|You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.
 ; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.
@@ -759,29 +752,26 @@ qstr_You_have_a_clear_per|Вы отчётливо ощущаете опасно�
 qstr_New_ent_reached_batt|Ещё один энт появился на поле боя...
 qstr_You_receive_word_tha|До вас дошел слух, что деревни беорнингов подверглись атаке. Сила государства беорнингов снизилась.
 qstr_You_receive_word_that|До вас дошёл слух, что главарей Охотники за Кольцом видели идущими в Мордор. У них был сундук. Сила государства Мордор выросла.
-; qstr_Enemy_reinforcements|Enemy reinforcements have arrived
+qstr_Enemy_reinforcements|Прибыло подкрепление противника
 ; qstr_Yarrrr!!|Yarrrr!!
 ; qstr_Get_all_of_them!|Get all of them!
-; qstr_Kill_them_all!|Kill them all!
-; qstr_Toss_them_overboard!|Toss them overboard!
-; qstr_It_is_a_good_day_to_|It is a good day to die!
+qstr_Kill_them_all!|Убить их всех!
+qstr_Toss_them_overboard!|Бросить их за борт!
+qstr_It_is_a_good_day_to_|Хороший денёк, чтобы умереть!
 ; qstr_All_hands_on_deck!_T|All hands on deck! Throw them back!
-; qstr_Ally_reinforcements_|Ally reinforcements have arrived
-; qstr_Forward_men!|Forward, men!
-; qstr_Leave_none_of_these_|Leave none of these filth standing!
-; qstr_End_them_all!|End them all!
-; qstr_Drive_them_back!|Drive them back!
-; qstr_Protect_the_City!|Protect the City!
+qstr_Ally_reinforcements_|Прибыло подкрепление союзников
+qstr_Forward_men!|Вперёд!
+qstr_Leave_none_of_these_|Не щадите этих мерзавцев!
+qstr_End_them_all!|Кончай их!
+qstr_Drive_them_back!|Дави их назад!
+qstr_Protect_the_City!|Защищать город!
 ; qstr_Forward!_Board_them!|Forward! Board them!
 ; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
-
-
 qstr_Reached_Gauntlet_wav|Вы дожили до {reg1} волны противников!
 qstr_Ballista:_out_of_amm|Баллиста: кончились стрелы!
 qstr_Ballista:_turn_CURSO|Баллиста: повернуть КУРСОРОМ, нацелить левым SHIFT, выстрелить ПРОБЕЛОМ, поджечь T, уйти F
 qstr_Ballista:_out_of_ammo|Баллиста: кончились стрелы
 qstr_The_ladders_on_Deepi|Лестницы уже у Стены! Будьте начеку!
-qstr_You_yell_for_your_ho|Вы призываете вашего коня.
 qstr_THREE.._TWO..._ONE..|ТРИ... ДВА... ОДИН... В БОЙ!
 ; qstr_You_have_come_upon_t|You have come upon the ruins of Amon Hen, the Hill of Sight, a Gondorian watch-tower atop which rests the Seat of Seeing^^You sense that this place was once great but has long been forgotten
 ; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface
@@ -803,29 +793,47 @@ qstr_Alarm_Level_is_now_at_|Включен уровень тревоги 2!
 qstr_The_sorcerer_has_fle|Колдун сбежал!
 qstr_Report_this_ill_news|Сообщите эту дурную весть Владычице.
 qstr_The_sorcerer_is_flee|Колдун убегает! Убейте его!
-; qstr_The_sorcerer_has_joi|The sorcerer has joined the fight! Kill him!
+qstr_The_sorcerer_has_joi|Колдун вступил в бой! Убить его!
 qstr_The_sorcerer_is_dead|Колдун мёртв!
 qstr_The_battle_is_won!|Битва выиграна!
-; qstr_A_band_of_tribal_orc|A band of tribal orcs have appeared!
+qstr_A_band_of_tribal_orc|Появилась группа Диких орков!
 ; qstr_Gaaaar!!_We_wants_th|Gaaaar!! We wants those human meat!
 ; qstr_{s31}_scouts_have_ap|{s31} scouts have appeared!
 ; qstr_Those_are_ours!_We_h|Those are ours! We have been tracking them since they left! No one stands in our way!
 ; qstr_Trolls_appeared!|Trolls appeared!
 ; qstr_Gaaaar!!|Gaaaar!!
 ; qstr_{s31}_scouts_have_app|{s31} scouts have appeared to aid the refugees!
-; qstr_Hurry_men!_Help_the_|Hurry, men! Help the refugees! Kill all the scum and do not let them escape!
-; qstr_Cannot_leave|Cannot leave
-
+qstr_Hurry_men!_Help_the_|Скорее! Помогите беженцам! Убейте всех подонков и не дайте им сбежать!
+qstr_Cannot_leave|Невозможно уйти
+; qstr_Longbeard_Kinsman|Longbeard Kinsman
+; qstr_Ori_Longbeard|Ori Longbeard
+; qstr_We_shall_make_our_st|We shall make our stand here! FOR BALIN!
+qstr_Noooo!_You_orcs_will|Нееееет! Вы, орки, заплатите за это!
+; qstr_Arghhh!!_Nooo!!|Arghhh!! Nooo!!
+; qstr_I_will_take_down_as_|I will take down as many as I can before I fall!
+; qstr_Raaa!!|Raaa!!
+qstr_Kill_the_dwarves!|Убить гномов!
+qstr_Finish_them!|Кончай их!
+; qstr_We_will_feast_on_you|We will feast on your flesh!
+qstr_Dwarf_meat!|Гномье мясо!
+; qstr_Eru_Iluvatar_has_dec|Eru Iluvatar has decided the fate of Balin's Company, and it cannot be changed.
+qstr_They_are_coming....!|Они идут....!
+; qstr_Who...dares...enter.|Who...dares...enter...
+qstr_You_are_not_welcome_|Тебе здесь не рады!
+qstr_Finally_I_found_you!|Наконец-то я нашёл тебя! Давай выбираться отсюда!
+qstr_You...are....ours...|Ты... наш...
 qstr_Look_at_my_over_the_|Погляди, как красиво я выгляжу в ракурсе с плеча противника, {playername}!
 qstr_You_wish_old_man_my_|Как хочешь, старик, но мой ракурс с плеча противника красивее!
 qstr_You_should_really_se|Тебе действительно стоит посмотреть фотки наместника Денетора на Фэйсбуке, он потрясающий!
 qstr_Press_Space_to_conti|Нажмите Пробел, чтобы продолжить...
-qstr_{s24}__{reg13}_|{s24} ({reg13})
-qstr_Influence:^_{reg11}_|Влияние:^ {reg11} (в державе {s16})
-qstr_Resource_Points:^_{r|Очки снабжения:^ {reg12} (в державе {s16})
-qstr_{s11}_{s24}__{reg13}|{s11}, {s24} ({reg13})
-qstr_{s13}_{reg11}__with_|{s13}, {reg11} (в державе {s16})
-qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (в державе {s16})
+; qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
+; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
+; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
+; qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} until next promotion^
+; qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
+; qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
+; qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
+; qstr_You_chase_an_orc_sco|You chase an orc scout party into the forest...
 qstr_^No_food:___{reg7}|^Нечего есть: -{reg7}
 qstr_Current_party_morale|Текущий боевой дух отряда равен {reg5}.^В данный момент модификаторы боевого духа отряда таковы:^^Базовый боевой дух: +50^Размер отряда: {s2}{reg1}^Лидерство: {s3}{reg2}^Разнообразие пищи: {s4}{reg3}{s5}^Специальные предметы: {s6}{reg6}^Недавние события: {s7}{reg4}^ИТОГО: {reg5}
 qstr_Defending|Обороняется
@@ -1004,7 +1012,7 @@ qstr_Imladris|Имладрис
 ; qstr_^^Your_head_suddenly|^^Your head suddenly fills with a vision - the flaming Eye. All around you, your warriors stop in their tracks. Somehow, you know at that moment that all of you are hearing the same summons, seeing the same vision. Great is the art of the Lidless Eye - great is the power of Barad-dûr!.^^The knowledge, unspoken, seeps into your very bones. The time has come. The Dark Lord commands - you shall all march upon your enemies in open war. Orders from {s2} in {s3} will come. Your part at first will not be great, but you'll prove yourself soon enough.^^ The War has begun; the fall of the West begins!
 ; qstr_{s13}_asked_you_to_j|{s13} asked you to join him with at least {reg13} troops and meet Isengard's Last Stand.
 ; qstr_You_defeated_{reg5}_|You defeated {reg5} enemies and have impressed your commander.
-; qstr_You_defeated_{reg5}_e|You defeated {reg5} enemies.
+qstr_You_defeated_{reg5}_e|Вы победили {reg5} противников.
 ; qstr_You_failed_to_defeat|You failed to defeat any enemy.
 ; qstr_The_sorcerer_slain_y|The sorcerer slain, you and your companions hastily bandage up wounds and slip out into the night. Foul voices shriek at your backs and you can feel many burning eyes looking for you in the shadows. Soon the anger turns to disappointment and the sounds of pursuit are muffled, replaced by the usual heavy silence of Mirkwood. You have escaped
 ; qstr_The_sorcerer_slipped|The sorcerer slipped from your grasp and slithered into the darkness of his domain. With hearts weighted by failure, you and your companions hastily bandage up wounds and withdraw into the night. Mocking voices shriek at your backs and you can feel many burning eyes trying to pierce the shadows. Laughter and insults are soon mercifully muffled, replaced by the usual heavy silence of Mirkwood. You have escaped.
@@ -1090,7 +1098,7 @@ qstr_You_have_failed_to_fu|{s1} пал геройской смертью, и в�
 ; qstr_Your_troops_value_yo|Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, 
 ; qstr_{s22}You_have_fulfil|{s22}You have fulfilled your oath to avenge Balin and his company!
 ; qstr_{s22}You_have_fulfill|{s22}You have fulfilled your oath of vengeance for {s1}'s heroic death!
-; qstr_Reinforcements|Reinforcements
+qstr_Reinforcements|Подкрепление
 ; qstr_Refugees_Escaped:_{r|Refugees Escaped: {reg10} --- Refugees Killed: {reg11}
 ; qstr_Raider_Parties_Kille|Raider Parties Killed: {reg12}
 ; qstr_One_of_the_target_ce|One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.
@@ -1145,13 +1153,13 @@ qstr_Edoras|Эдорас
 qstr_King_Theoden|Король Теоден
 ; qstr_Merry_asked_you_to_d|Merry asked you to deliver a message to his cousin, Pippin, in Minas Tirith.
 ; qstr_Pippin_asked_you_to_|Pippin asked you to deliver a message to his cousin, Merry, in Edoras.
-; qstr_Tell_him_I_ve_grown_|Tell him I've grown another inch!
-; qstr_Tell_Pip_he_smokes_t|Tell Pip he smokes too much!
-; qstr_Tell_him_I_can_ride_|Tell him I can ride a grown horse now!
+qstr_Tell_him_I_ve_grown_|Скажи ему, что я вырос еще на дюйм!
+qstr_Tell_Pip_he_smokes_t|Скажи Пипу, что он слишком много курит!
+qstr_Tell_him_I_can_ride_|Скажи ему, что я уже могу сейчас ездить на взрослой лошади!
 ; qstr_Ask_him_if_he_has_an|Ask him if he has any pipe-weed left!
-; qstr_Tell_him_I_ll_be_the|Tell him I'll be the tall one when we see each other again!
-; qstr_Ask_if_he_s_seen_Gan|Ask if he's seen Gandalf!
-; qstr_You_gained_250_exper|You gained 250 experience.
+qstr_Tell_him_I_ll_be_the|Скажи ему, что я буду высоким, когда мы снова увидимся!
+qstr_Ask_if_he_s_seen_Gan|Спросите, видел ли он Гэндальфа!
+qstr_You_gained_250_exper|Вы получили 250 опыта.
 qstr_Treebeard_wants_you_|Древобрад хочет, чтобы вы нашли уничтожили орков, вырубающих деревья в Фангорне.
 ; qstr_Something_wrong_not_e|Something wrong, not enough troops for scout party
 qstr_my_home_town|мой родной город
@@ -1208,7 +1216,7 @@ qstr_Beautiful_work_{play|Прекрасная работёнка, {playername}!
 ; qstr_{reg20}_refugee_trai|{reg20} refugee trains escaped and improved the enemy's morale ({s1} has gained {reg22} faction strength).
 ; qstr_You_did_however_defea|You did, however, defeat {reg18} refugee trains, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
 ; qstr_My_lord_{s12}_is_saf|My lord, {s12} is safe. The Corsairs were defeated.
-; qstr_My_lord_Esgaroth_is_|My lord, Esgaroth is safe. The men of RhÃ»n were defeated.
+; qstr_My_lord_Esgaroth_is_|My lord, Esgaroth is safe. The men of Rhûn were defeated.
 ; qstr_The_surroundings_of_|The surroundings of {s12} burn. The pillaging was glorious indeed!
 ; qstr_The_surroundings_of_E|The surroundings of Esgaroth burn. The pillaging was glorious indeed!
 ; qstr_This_is_welcome_news|This is welcome news indeed, {playername}. We were ill-prepared for such bold action from the Corsairs. But thanks to you, the black sails have been driven away, at least for a time, and we may hope, at least, that we have struck them a blow this day. You have our thanks.
@@ -1224,11 +1232,13 @@ qstr_Beautiful_work_{play|Прекрасная работёнка, {playername}!
 ; qstr_Pah!_It_seems_you_we|Pah! It seems you weren't able to find your sea-legs, {playername}. Now they sit, these men of Gondor, high in their towers, vain as kings, laughing as the black sails burn! Perhaps a stint at the oars of a galley would be fitting punishment for your troops; a pity they are under your command, and not mine. The Eye will not be pleased. Leave me now. 
 ; qstr_Have_you_nothing_bet|Have you nothing better than weak excuses to offer for your failure, {playername}? Perhaps you are not as strong as we had believed. Serve our cause better in future, {playername}. There will be no mercy for the weak!
 ; qstr_{playername}_we_have|{playername}, we have Isengard on their knees. They have launched their last stand and is protecting Saruman in his tower. Ride with me and meet them!
+; qstr_Are_you_ready_to_mee|Are you ready to meet Isengard's last stand?
 ; qstr_I_am_ready_to_ride_w|I am ready to ride with you against Isengard.
 ; qstr_I_am_ready_to_ride_wi|I am ready to ride with you and meet them. Let us end this now.
 ; qstr_I_am_not_ready_to_ri|I am not ready to ride with you yet. I need some more time.
+; qstr_You_do_not_have_enou|You do not have enough troops to help in this battle. Raise at least 30 men and join me soon!
 ; qstr_Stay_close_we_will_t|Stay close, we will take position near the enemy. When we have all gathered, we will strike.
-; qstr_You_have_taken_too_l|You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and when in 3 days time, we will strike.
+; qstr_You_have_taken_too_l|You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and in 3 days time, we will strike.
 ; qstr_Make_haste_{playerna|Make haste, {playername}. We do not want them to recover.
 qstr_Your_mission_is_comp|Задание выполнено, {s9} хочет, чтобы вы продолжали следовать за его армией в ожидании указаний.
 qstr_{s13}_asked_you_to_g|{s13} нуждается в запасах для армии. Требуется {s4} - {reg3} порций. {s13} попросил вас доставить их ему.
@@ -1287,9 +1297,9 @@ qstr_The_search_for_the_L|Поиски потерянных копий прив�
 ; qstr_Rest_the_wounds_have|Rest, the wounds have been taken care of.
 ; qstr_Your_party_must_be_a|Your party must be at least 30 strong to begin this quest
 qstr_You_were_tasked_to_h|Вам поручили избавиться от бандитов, недавно принесших опустошение на север. Вы можете напасть прямо на их убежище в Темнолесье либо перехватить возле Дома Беорна.
-qstr_Mordor_Gains_Faction|Сила Мордора возросла, так как там получили неизвестное оружие.
+; qstr_Mordor_gains_Faction|Mordor gains Faction Strength as they received an unknown weapon
 qstr_Beornings_gain_Facti|Сила Беорнингов возросла вместе с распространением слухов о вашей победе.
-qstr_Beornings_loses_Fact|Беорнинги ослабели после нападения.
+; qstr_Beornings_lose_Facti|Beornings lose Faction strength when they were attacked.
 qstr__{s14}_gains_faction|Сила государства {s14} возросла вместе с распространением слухов о Кольце Власти.
 qstr_You_must_return_and_|Вам следует вернуться и доложить, что вы победили главарей Охотников за Кольцом и отобрали волшебное кольцо.
 qstr_You_must_return_and_r|Вам следует вернуться и доложить, что вы разгромили отряд Охотников за Кольцом, но их главари, возможно, получили то, что разыскивали.
@@ -1305,22 +1315,22 @@ qstr_It_is_my_duty_to_help|Мой долг - помогать нашим сою�
 ; qstr_{s31}__Can_be_reboug|{s31} (Can be rebought)
 ; qstr_I_wish_to_raze_an_en|I wish to raze an enemy settlement to the ground.
 ; qstr_I_wish_to_lead_our_m|I wish to lead our men in an assault on an enemy settlement.
-; qstr_More_snaga_who_will_|More snaga who will throw themselves at the enemy's walls? Listen close and I might let you try.
+; qstr_More_snaga_who_will_|More snaga who will throw themselves at the enemy’s walls? Listen close and I might let you try.
 ; qstr_Indeed?_Few_men_are_|Indeed? Few men are so quick to volunteer to die on the battlements. There is much we must discuss before I can give you leave to go
 ; qstr_Indeed?_That_is_no_s|Indeed? That is no small undertaking and there are matters which we must discuss before I can give you leave to go.
 ; qstr_First_sieges_are_onl|First, sieges are only an option for the strongest! Here is all that needs doing:
 ; qstr_Here_is_all_that_nee|Here is all that needs doing:
 ; qstr_Firstly_we_must_thin|Firstly, we must think to the hindrances of this task:
-; qstr_You_need_sharp_weapo|You need sharp weapons, fresh meat for your troops and wargs, wood to fuel the fires, and draughts to make the weaklings keep up. You also have to keep your scum in line or they'll all kill each other before you've even got to the walls. We're too busy with our own fights to take care of your lot â€” be prepared to provide what is needed to keep the maggots moving.^[requires {reg3} resources, {reg15} influence]
-; qstr_Steel_must_be_kept_s|Steel must be kept sharp, men and horses fed, fires kept burning, water fetched, wounds tended â€” you and your men are no use to us if you can't maintain your campaign. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
-; qstr_Steel_must_be_kept_sh|Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended â€” a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
-; qstr_Next_if_you_try_to_a|Next, if you try to attack an enemy capital, I'll stick you if you ain't dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten.
+; qstr_You_need_sharp_weapo|You need sharp weapons, fresh meat for your troops and wargs, wood to fuel the fires, and draughts to make the weaklings keep up. You also have to keep your scum in line or they’ll all kill each other before you’ve even got to the walls. We’re too busy with our own fights to take care of your lot — be prepared to provide what is needed to keep the maggots moving.^[requires {reg3} resources, {reg15} influence]
+; qstr_Steel_must_be_kept_s|Steel must be kept sharp, men and horses fed, fires kept burning, water fetched, wounds tended — you and your men are no use to us if you can’t maintain your campaign. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
+; qstr_Steel_must_be_kept_sh|Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended — a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
+; qstr_Next_if_you_try_to_a|Next, if you try to attack an enemy capital, I’ll stick you if you ain’t dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten.
 ; qstr_Secondly_you_do_not_|Secondly, you do not have permission to lead our people against an enemy capital. These places can only be overcome when the full strength of our forces stands united. You are to strike only where our foe has been weakened sufficiently that they would be defeated.
-; qstr_Third_{s2}_is_on_its|Third, {s2} is on its own campaign. We'll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won't last long.
-; qstr_Furthermore_you_must|Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope â€” you may well be forced to stand alone.
-; qstr_Last_remember_that_a|Last, remember that as a {s25}, the Master has got no time for failure. You risk much for {s2} when you fight â€” bring us defeat and we'll make sure you wish you'd never been born.
-; qstr_Finally_remember_tha|Finally, remember that as a {s25}, you live and die by your successes and failures. You risk much for {s2} when you march into battle â€” bring ruin upon it and the consequences will be severe.
-; qstr_Finally_remember_that|Finally, remember that as a {s25}, you may bask in the glory of a victory hard-won and call that victory your own but all who dwell in {s2} will pay the price of your failure. You carry the fate of {s2} into battle with you â€” bring ruin upon it and the consequences will be severe.
+; qstr_Third_{s2}_is_on_its|Third, {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long.
+; qstr_Furthermore_you_must|Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope — you may well be forced to stand alone.
+; qstr_Last_remember_that_a|Last, remember that as a {s25}, the Master has got no time for failure. You risk much for {s2} when you fight — bring us defeat and we’ll make sure you wish you’d never been born.
+; qstr_Finally_remember_tha|Finally, remember that as a {s25}, you live and die by your successes and failures. You risk much for {s2} when you march into battle — bring ruin upon it and the consequences will be severe.
+; qstr_Finally_remember_that|Finally, remember that as a {s25}, you may bask in the glory of a victory hard-won and call that victory your own but all who dwell in {s2} will pay the price of your failure. You carry the fate of {s2} into battle with you — bring ruin upon it and the consequences will be severe.
 ; qstr_Still_think_you_can_|Still think you can handle it?
 ; qstr_Knowing_what_I_have_|Knowing what I have told you, do you still think yourself capable?
 ; qstr_Knowing_what_I_have_t|Knowing what I have told you, do you still wish to proceed?
@@ -1336,6 +1346,8 @@ qstr_Gift|оставить дар
 qstr_You_have_requested_t|Вы пожелали доставить дар - {s1}, державе {s3} от державы {s2}. Народ державы {s3} безуловно оценит столь широкий жест.
 qstr_Bribe|ать взятку
 qstr_You_have_requested_to|Вы пожелали дать {s1}, в качестве взятки, державе {s3} от державы {s2}. Возможно, вы получитие какого-то рода награду за это.
+; qstr_{reg3}_hours.|{reg3} hours.
+; qstr_hour.|hour.
 qstr_Taking_{reg0}_inf._A|Taking {reg0} inf. Alt?={reg1}
 qstr_You_spent_{reg0}_of_|Вы потратили {reg0} очков влияния на державу {s1}, у вас осталось {reg1}.
 qstr_The_War_is_over_{pla|Война окончена, {playername}, разве ты не слышал?
@@ -1343,12 +1355,14 @@ qstr_We_are_at_war_with_{|Мы сражаемся против держав {s12
 qstr_We_are_at_war_with_{s|Мы сражаемся против держав {s12}. Правда, пока идут только мелкие стычки.
 qstr_we_are_not_too_conce|пока они нас мало заботят, так как мы сражаемся против тех врагов, которые недалеко от нас
 qstr__under_your_orders|, под вашим руководством
-; qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to personally defeat {reg22} {s6}.
+; qstr_strong_warriors_from|strong warriors from {s7}
+; qstr_champions_from_{s7}_|champions from {s7}, the strongest in the field
+; qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to challenge and defeat {reg22} {s6}.
 ; qstr_{playername}_I_want_|{playername}, I want you to show the men that enemy troops are of no consequence. I want you to personally slay {reg22} {s6}! Do this to show we are the superiour force!
 ; qstr_I_will_do_what_you_a|I will do what you asked, and the men will witness.
-; qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6}.
-
-
+; qstr_high_level_troops_fr|high level troops from
+; qstr_elite_level_troops_f|elite level troops from
+; qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6} {s7}.
 ; qstr_I_want_you_to_person|I want you to personally slay
 ; qstr_I_want_you_and_your_|I want you and your men to kill
 ; qstr_{playername}_you_nee|{playername}, you need to earn my respect and that of your men. {s6} {reg22} {s7} troops!
@@ -1418,8 +1432,8 @@ qstr_Dale_so_that_if_you_|дейлских денег, так что, если �
 ; qstr_Go_to_Moria_and_get_|Go to Moria, and get a nice warg for yourself - or some snagas of your own, if you like!
 ; qstr_Go_to_Isengard_and_g|Go to Isengard, and get something for yourself - maybe some of the fighting Uruk-Hai will follow you!
 ; qstr_Go_up_north_to_Gunda|Go up north, to Gundabad - dumb and ugly, they are, but they have good furs.
-; qstr_Get_some_snagas_of_y|Get some snagas of your own, like these fellows here who follow me. Maybe you'll have a war party of your own soon enough!
-; qstr_Our_friends_and_alli|Our friends and allies will hear of you, don't doubt it! Might be they'd be willing to give you a new mount, or a new blade. No one has time for the weak, but if you're strong, ha, we help those who help us, see? Trade some of those spoils for a good horse, maybe, with those Men of Rhûn - for riding or eating, your choice, har!
+; qstr_Get_some_snagas_of_y|Get some snagas of your own, like these fellows here who follow me. Maybe you’ll have a war party of your own soon enough!
+; qstr_Our_friends_and_alli|Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? Trade some of those spoils for a good horse, maybe, with those Men of Rhûn - for riding or eating, your choice, har!
 ; qstr_Trade_some_of_those_|Trade some of those spoils for a good horse, maybe, with those Men of Rhûn - for riding or eating, your choice, har!
 qstr_That_is_not_a_smart_|Не самое умное, что можно сказать, глядя в лицо рунийскому воину... В следующий раз я убью тебя.
 qstr_They_will_all_know_m|Они узнают моё имя... Они узнают его, чтобы испытать страх
@@ -1472,16 +1486,16 @@ qstr_What_do_you_want?|Что вы хотите?
 ; qstr_Alright!_Worms!_Get_|Alright! Worms! Get over hear and deal with this!
 ; qstr_Let_us_begin._My_ass|Let us begin. My assistants will take care of you and your men.
 ; qstr_All_done!_Ha!_You_di|All done! Ha! You didn't scream much, impressive! Now go, leave me be.
-; qstr_We_ve_done_what_We_c|We've done what We can. Now you and your men need some rest.
+qstr_We_ve_done_what_We_c|Мы сделали всё, что могли. Теперь вы и ваши люди нуждаетесь в отдыхе.
 ; qstr_Boss_the_lads_are_hu|Boss, the lads are hungry! We're doing all the hard work and still we're starving!
 ; qstr_Master_the_lads_are_|Master, the lads are hungry! We can't do all this fighting on empty stomachs!
 ; qstr_Yes!_With_proper_fed|Yes! With proper fed bellies, we'll serve you twice as well!
-; qstr_As_you_command_maste|As you command, master, heh heh. Meat's back on the menu, boys!
+qstr_As_you_command_maste|Как прикажете, мастер, хе-хе. Мясо снова в меню, ребята!
 ; qstr_Your_Orcs_&_Uruks_at|Your Orcs & Uruks ate {reg1} men!
-; qstr_Yes_master!_As_you_c|Yes master! As you command, master!
+qstr_Yes_master!_As_you_c|Да, мастер! Как прикажете, мастер!
 ; qstr_Harr_harr_harr!_You_|Harr harr harr! You don't frighten ME! Next time it's YOU that we eat!
 ; qstr_One_{s6}_left_the_pa|One {s6} left the party.
-; qstr_I_understand._I_will|I understand. I will stay with you. For a while.
+qstr_I_understand._I_will|Я понимаю. Я останусь с тобой. Какое-то время.
 ; qstr_I_have_played_my_rol|I have played my role for many long years, for many lifetimes of mortal men. This war is for Mankind to fight. I will leave for the West and some may decide to follow me.
 ; qstr_{reg1}_Veteran_Elves|{reg1} Veteran Elves decided to leave your party.
 qstr_You_chose_well_{sir/|You chose well, {sir/madam}. My lads know how to keep their word and earn their pay.
@@ -1500,7 +1514,7 @@ qstr_Well..._better_here_|Ну... Тяжело в учении - легко в �
 ; qstr_Lord_{s3}_has_sent_u|Lord {s3} has sent us, to join the fleet attacking {s4}.
 ; qstr_Excellent_{playernam|Excellent, {playername}! I heard that you gave them more than what I requested. That is great work.^^ Here, take this as an extra reward for exceeding our expectations. ^^ We need to win this war as soon as possible.
 ; qstr_Excellent_{playername|Excellent, {playername}. That will surely help them out. We need to win this war as soon as possible.
-; qstr_Reinforcing_{s1}_has|Reinforcing {s1} has strengthen {s2}. ({s2} has gained {reg50} faction strength).
+; qstr_Reinforcing_{s1}_has|Reinforcing {s1} has strengthened {s2}. ({s2} has gained {reg50} faction strength).
 ; qstr_The_watchmen_in_the_|The watchmen in the city have reported a remarkable decrease in ambushes. You have done your job well. Thank you, {playername}.
 ; qstr_Our_guards_have_seen|Our guards have seen the vermin run away with their tails tucked between their legs. You have done well in showing these pests that we control this area.
 ; qstr_It_was_nothing._I_wi|It was nothing. I will keep watch should they resurface.
@@ -1515,7 +1529,7 @@ qstr_{s9}_of_{s3}_asked_y|{s9} поселения {s3} попросил вас �
 ; qstr_Good_of_you_to_ask_{|Good of you to ask, {playername}.^^There are {s6} moving about the area, thinking that they are in charge. No one is doing anything so they are getting bolder and are taking what is rightfully ours.
 ; qstr_The_people_have_aske|The people have asked for help in slaying at least {reg22} {s6}, in hopes that this will keep them away for some time.^^Would you be able to do this?
 ; qstr_I_want_you_to_slay_a|I want you to slay at least {reg22} {s6}, to show those weaklings that they are inconsequential.^^What do you say?
-; qstr_We_will_get_rid_of_t|We will get rid of these pests.
+qstr_We_will_get_rid_of_t|Мы избавимся от этих вредителей.
 ; qstr_{s9}_wants_you_to_sl|{s9} wants you to slay {reg22} {s6} in battles.
 qstr_The_{s9}_of_{s3}_ask|{s9} поселения {s3} попросил вас привезти ему {reg5} порций провизии в течение {reg6} дней.
 qstr_The_{s9}_of_{s3}_aske|{s9} поселения {s3} попросил вас привезти ему {s6}, {reg5} мешков, в течение {reg0} дней.
@@ -1554,13 +1568,13 @@ qstr_{s4}^We_are_escortin|{s4}^Мы ведём пленников в {s12}.
 qstr_Greetings_do_you_nee|Приветствую, вам нужные подкрепления?
 ; qstr_I_will_need_your_hel|I will need your help, please follow me. [Costs {reg1}/{reg2} influence]
 ; qstr_You_and_your_men_mus|You and your men must follow me. [Costs {reg1}/{reg2} influence]
-; qstr_It_looks_like_you_ha|It looks like you have too many followers already.
+qstr_It_looks_like_you_ha|Похоже, у вас уже слишком много последователей.
 ; qstr_Why_do_you_need_us?_|Why do you need us? You have all you need following you already!
-; qstr_We_will_follow_you_t|We will follow you, though we cannot wander too far.
+qstr_We_will_follow_you_t|Мы будем следовать за вами, но учтите, что мы не можем уходить слишком далеко.
 ; qstr_If_there_is_killing_|If there is killing, we will follow. But we cannot go too far, or we will get in trouble.
 ; qstr_We_cannot_leave_our_|We cannot leave our post to follow you for now. [Not enough influence points (Requires {reg1})]
 ; qstr_Who_are_you_to_comma|Who are you to command us? [Not enough influence points (Requires {reg1})]
-; qstr_Then_let_us_go._Stay|Then let us go. Stay close. I will need you soon.
+qstr_Then_let_us_go._Stay|Тогда пойдём. Будь рядом. Ты мне скоро понадобишься.
 ; qstr_There_will_be_blood_|There will be blood, that is for sure. Stay close, or miss out.
 qstr_Goodbye_friends.|До свидания, друзья.
 qstr_See_you_later_if_you|Ещё увидимся. Если тебя до того не убьют.
@@ -1569,3 +1583,23 @@ qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Эти:Этот} {reg28?храбрые
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Эти:Этот} {reg28?умелые бойцы помогут:умелый боец поможет} нам нанести ещё больший вред врагу!{s32}^{s23}^^[получено {reg14} Очков Снабжения фракции {s14}]
 qstr_Good_luck_in_your_tr|Удачи в ваших странствиях.
 qstr_Try_not_getting_your|Постарайся уберечься от смерти.
+; qstr_You_ready_your_weapo|You ready your weapons, feeling the rush of past experience through your body. (Weapon Profeciencies and Abilities improved)
+; qstr_The_previous_battle_|The previous battle warmed you up. You feel invigorated, and ready for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
+; qstr_You_are_tired_but_ad|You are tired, but adrenaline coursing through your veins steel you for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
+; qstr_These_are_great_weap|These are great weapons indeed. They feel strange to the touch... (Abilities and Weapon Profeciencies Improved)
+; qstr_You_can_barely_raise|You can barely raise your weapon now... but seeing your kinsmen around you strengthen your resolve. (Abilities and Weapon Profeciencies Improved).
+; qstr_With_Lord_Balin_s_tr|With Lord Balin's treasures bestowed upon you and the memory of his death fresh in your mind, your rage burns stronger. (Attributes, Abilities and Weapon Profeciencies Improved)
+; qstr_We_cannot_hold..._we|We cannot hold... we are finished...
+; qstr_You_do_not_know_how_|You do not know how long you can still last...
+; qstr_How_long_can_we_keep|How long can we keep this up? I cannot hold my axe anymore....
+; qstr_You_know_that_the_en|You know that the end is near...
+; qstr_You...._good....dwar|You.... good....dwarf....
+; qstr_You_can_no_longer_ra|You can no longer raise your weapon...
+; qstr_There_are_too_many..|There are too many... there are too many....
+qstr_..........|..........
+; qstr_It_is_off_to_work_we|It is off to work we go....
+; qstr_Your_mind_starts_to_|Your mind starts to wander... thinking of gold and treasures...
+qstr_...............|...............
+; qstr_Sleep_sounds_good...|Sleep sounds good...
+qstr_For_Balin!!|За Балина!!
+qstr_For_Balin...|За Балина...

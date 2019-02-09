@@ -4,10 +4,10 @@ skl_leadership|Лидерство
 skl_leadership_desc|С каждым новым уровнем этого навыка количество людей, которыми вы можете командовать, увеличивается на 5, поднимается боевой дух, а расходы на армию снижаются на 5%% (умение лидера).
 skl_prisoner_management|Содержание пленных
 skl_prisoner_management_desc|С каждым новым уровнем этого навыка максимальное число пленных увеличивается на %d (умение лидера).
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_persuasion|Знание леса
+skl_persuasion_desc|Способность выживать в дикой природе и подчинять её своей воле. Этот навык влияет на способность отряда скрываться от врагов, а также на скорость движения отряда по лесной местности. (Умение отряда)
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Первая помощь
 skl_first_aid_desc|Каждый новый уровень этого навыка восстанавливает у героев 5%% здоровья, потерянного при выполнении задания (умение отряда).
 skl_surgery|Хирургия

@@ -46,3 +46,8 @@ ui_value_denars|%d資 源 點
 ui_cannot_be_used_on_horseback|騎 乘 時 無 法 使 用 。 
 ui_upgrade_to_value|升 級 到 %s
 ui_notification_cant_upgrade|(給 予 士 兵 時 無 法 升 級 )
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

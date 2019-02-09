@@ -32,7 +32,7 @@ itm_rohirrim_courser|로히림 군마
 itm_rohirrim_hunter|로히림 사냥꾼
 itm_rohirrim_courser2|로히림 군마
 itm_rohan_warhorse|로히림 전쟁마
-itm_thengel_warhorse|로한 셍겔 전쟁마
+; itm_thengel_warhorse|Rohirrim Heavy Warhorse
 itm_rhun_horse_a|룬 기마
 itm_rhun_horse_b|룬 기마
 itm_rhun_horse_d|룬 기마
@@ -41,7 +41,7 @@ itm_rhun_horse_f|룬 준마
 itm_rhun_horse_g|룬 준마
 itm_rhun_horse_h|룬 준마
 itm_dale_horse|로바니온 기마
-itm_dale_warhorse|너른골 전쟁마
+; itm_dale_warhorse|Rhovanion Warhorse
 itm_riv_warhorse|리븐델 전쟁마
 itm_riv_warhorse2|임라드리스 말
 itm_mordor_warhorse|모르도르 전쟁마
@@ -71,22 +71,14 @@ itm_warg_reward|거대 와르그
 ; itm_axe_c|Northmen Axe
 ; itm_axe_d|Northmen Axe
 itm_tree_trunk_club_a|나무 줄기
-itm_tree_trunk_club_b|나무 줄기
 ; itm_long_bearded_axe|Northmen Bearded Longaxe
 ; itm_2_handed_axe|Northmen Longaxe
-itm_giant_hammer|거대한 망치
+itm_free_giant_hammer|거대한 망치
 itm_giant_mace|거대한 철퇴
-itm_giant_mace_b|가시박힌 거대한 철퇴
-itm_olog_feet_boots|올로그 하이 발
-itm_olog_head_helm|올로그 하이 머리
-itm_olog_head_helm_b|올로그 하이 머리
-itm_olog_head_helm_c|올로그 하이 머리
-itm_olog_body|올로그 하이 방어구
-itm_olog_body_b|올로그 하이 방어구
-itm_olog_hands|올로그 하이 손
+; itm_troll_shield_a|Troll Shield
 itm_arrows|화살
 itm_gondor_arrows|곤도르 화살
-itm_gondor_auxila_arrows|곤도르 화살
+; itm_orc_javelin|Orc Heavy Javelin
 itm_khergit_arrows|미늘 화살
 itm_rohan_arrows_2|로히림 화살
 itm_harad_arrows|하라드림 화살
@@ -96,30 +88,11 @@ itm_woodelf_arrows|우드엘프 화살
 itm_elven_arrows|엘븐 화살
 itm_orc_hook_arrow|오크 갈고리 화살
 itm_isengard_arrow|아이센가드 화살
-itm_pilgrim_disguise|순례자 위장
 itm_leather_gloves|가죽 장갑
 itm_mail_mittens|사슬 장갑
 itm_leather_boots|가죽 부츠
-itm_black_dress|검은 드레스
-itm_blackwhite_dress|숙녀용 드레스
-itm_white_tunic_a|단순한 튜닉
-itm_white_tunic_b|단순한 튜닉
-itm_white_tunic_c|튜닉 자켓
-itm_blue_tunic|파란색 튜닉
+; itm_white_tunic_a|Civilian Outfit
 itm_black_tunic|검은색 튜닉
-itm_green_tunic|녹색 튜닉
-itm_red_tunic|붉은색 튜닉
-itm_leather_apron|가죽 앞치마
-itm_leather_jerkin|가죽 조끼
-itm_fur_coat|너른골산 코트
-itm_green_dress|녹색 드레스
-itm_tld_tunic|튜닉
-itm_gondor_fine_outfit_dress|고급 의상
-itm_rohan_fine_outfit_dale_dress|고급 의상
-itm_robe_generic_dress|로브
-itm_wimple_a|베일
-itm_wimple_with_veil|베일
-itm_fine_hat|잘 만든 모자
 itm_shortened_spear|짧은 창
 itm_spear|창
 itm_light_lance|가벼운 랜스
@@ -137,11 +110,11 @@ itm_dwarf_short_bow|난쟁이 단궁
 itm_harad_bow|하라드 곡궁
 itm_lg_bow|하라드 수비병 활
 itm_riv_bow|리븐델 활
-itm_glorfi_bow|그로핀데일 활
+; itm_glorfi_bow|Glorfindel Bow
 itm_lorien_bow|갈라드림 활
 itm_isengard_large_bow|아이센가드 장궁
 itm_dale_bow|너른골 활
-; itm_uruk_bow_pl|Strong Orc Bow
+; itm_uruk_bow|Strong Orc Bow
 itm_mirkwood_bow|어둠숲 활
 itm_dunland_javelin|던랜드 투창
 itm_orc_throwing_arrow|오크 다트
@@ -174,7 +147,6 @@ itm_arnor_sword_f|아르노르 숏 소드
 itm_riv_helm_a|리븐델 코이프
 itm_riv_helm_b|리븐델 궁수 헬멧
 itm_riv_helm_c|리븐델 보병 헬멧
-itm_riv_helm_glorfi|글로피 머리카락
 itm_riv_tiara|엘프 군주 머리장식
 itm_riv_shield_a|리븐델 방패
 itm_riv_shield_b|리븐델 방패
@@ -249,7 +221,7 @@ itm_lamedon_vet_warrior|라메돈 고참 전사 갑옷
 ; itm_lamedon_hood|Hood
 itm_pinnath_archer|피나스 겔린 궁수 갑옷
 itm_pinnath_footman|피나스 겔린 시종 갑옷
-itm_pinnath_leader|피나스 겔린 대장 갑옷
+; itm_pinnath_leader|Pinnath Gelin Knight Armor
 itm_pinnath_vet_footman|피나스 겔린 고참 시종 갑옷
 itm_pinnath_warrior|피나스 겔린 전사 갑옷
 itm_pel_footman|펠라르기르 시종 갑옷
@@ -276,7 +248,7 @@ itm_gondor_shield_a|곤도르 사각 방패
 itm_gondor_shield_b|곤도르 연모양 방패
 itm_gondor_shield_c|곤도르 타워 방패
 itm_gondor_shield_d|곤도르 연모양 방패
-itm_gondor_shield_e|곤도르 근위대 방패
+; itm_gondor_shield_e|Gondor Citadel Shield
 itm_gon_tab_shield_a|문양있는 곤도르 원형 방패
 itm_gon_tab_shield_b|문양있는 곤도르 사각 방패
 itm_gon_tab_shield_c|문양있는 곤도르 연모양 방패
@@ -315,7 +287,6 @@ itm_lorien_helm_a|로리엔 궁수 투구
 itm_lorien_helm_b|로리엔 궁수 투구
 itm_lorien_helm_c|로리엔 보병 투구
 itm_orc_chain_greaves|오크 정강이 보호대
-
 ; itm_orc_coif|Orc Skullcap
 itm_orc_greaves|오크 사슬 부츠
 itm_orc_ragwrap|오크 헝겊두건
@@ -357,10 +328,10 @@ itm_isen_uruk_helm_d|우르크 하이 대장 투구
 itm_isen_uruk_helm_e|우르크 하이 추적자 투구
 itm_isen_uruk_helm_f|우르크 하이 추적자 투구
 itm_uruk_pike_a|우르크 파이크
-itm_uruk_pike_b|우르크 파이크
+; itm_uruk_pike_b|Mordor Pike
 itm_uruk_falchion_a|우르크 펄션
 itm_uruk_falchion_b|우르크 펄션
-itm_uruk_spear|우르크 창
+; itm_uruk_spear|Mordor Spear
 itm_uruk_skull_spear|우르크 뼈 창
 itm_uruk_voulge|우르크 할버드
 itm_uruk_heavy_axe|우르크 무거운 도끼
@@ -381,9 +352,9 @@ itm_twohand_wood_club|거대한 나무 클럽
 itm_bone_cudgel|뼈 곤봉
 itm_skull_club|뼈 클럽
 itm_orc_club_a|오크 클럽
-itm_orc_club_b|오크 클럽
+; itm_orc_club_b|Warg Rider Club
 ; itm_orc_club_c|Spiky Orc Club
-; itm_orc_club_d|Spiky Orc Club
+; itm_orc_club_d|Evil Mace
 itm_orc_sledgehammer|오크 슬래지헤머
 itm_orc_simple_spear|오크 창
 itm_orc_skull_spear|오크 뼈 창
@@ -399,7 +370,7 @@ itm_orc_throwing_axes|오크 투척 도끼
 itm_orc_bow|오크 활
 itm_orc_shield_a|오크 방패
 itm_orc_shield_b|오크 방패
-itm_orc_shield_c|오크 방패
+; itm_orc_shield_c|Orc Tower Shield
 itm_mordor_orc_shield_a|모르도르 오크 방패
 itm_mordor_orc_shield_b|모르도르 오크 방패
 itm_mordor_orc_shield_c|모르도르 오크 방패
@@ -411,23 +382,13 @@ itm_mordor_uruk_shield_c|모르도르 우르크 방패
 itm_mordor_man_shield_a|모르도르인 방패
 itm_mordor_man_shield_b|모르도르인 방패
 itm_angmar_shield|앙그마르 방패
-
 ; itm_orc_nosehelm|Orc Nosehelm
-
 ; itm_orc_kettlehelm|Orc Kettlehelm
-
 itm_orc_buckethelm|오크 버켓투구
-
 ; itm_orc_morion|Orc Morion
-
 itm_orc_beakhelm|오크 부리 투구
-
 itm_orc_bughelm|오크 벅헬름
-
 ; itm_orc_visorhelm|Orc Visorhelm
-
-; itm_orc_visorhelm_pl|Orc Visorhelm
-
 itm_m_orc_light_a|모르도르 오크 가벼운 갑옷
 itm_m_orc_light_b|모르도르 오크 가벼운 갑옷
 itm_m_orc_light_c|모르도르 오크 가벼운 갑옷
@@ -439,21 +400,13 @@ itm_m_orc_heavy_c|모르도르 오크 무거운 갑옷
 itm_m_orc_heavy_d|모르도르 오크 무거운 갑옷
 itm_m_orc_heavy_e|모르도르 오크 무거운 갑옷
 itm_m_uruk_light_a|우르크 하네스
-
 itm_m_uruk_light_b|우르크 가죽 갑옷
-
 ; itm_m_uruk_light_c|Uruk Light Mail
-
 ; itm_m_uruk_med_a|Uruk Heavy Leather
-
 ; itm_m_uruk_med_b|Uruk Heavy Mail
-
 ; itm_m_uruk_med_c|Uruk Light Scale
-
 ; itm_m_uruk_heavy_a|Uruk Heavy Scale
-
 ; itm_m_uruk_heavy_b|Uruk Platemail
-
 ; itm_m_uruk_heavy_c|Lugburz Platemail
 itm_m_uruk_heavy_j|우르크 무거운 갑옷
 itm_m_uruk_heavy_k|우르크 가드 갑옷
@@ -507,7 +460,7 @@ itm_dun_helm_b|던랜드인 뿔 모자
 itm_dun_helm_c|던랜드인 높은 투구
 itm_dun_helm_d|던랜드인 높은 투구
 
-; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
+; itm_dun_helm_e|Dunnish Antler Helm
 itm_dun_shield_a|던랜드인 방패
 itm_dun_shield_b|던랜드인 방패
 itm_dun_berserker|던랜드 부족장 검
@@ -520,20 +473,24 @@ itm_rohan_armor_a|로한 셔츠
 itm_rohan_armor_e|로한 사슬갑옷
 ; itm_rohan_armor_h|Rohan Leather Armor
 itm_rohan_armor_k|로한 사슬갑옷
-itm_rohan_armor_n|로한 미늘 갑옷
-itm_rohan_armor_p|로한 갑옷
-; itm_rohan_armor_s|Rohan Guard Armor
+; itm_rohan_recruit|Rohan Padded Jerkin
+; itm_rohan_leather|Rohan Leather Vest
+itm_rohan_mail|로한 사슬갑옷
+; itm_rohan_rider|Rohan Rider Armor
+itm_rohan_scale|로한 미늘 갑옷
+; itm_rohan_surcoat|Rohan Surcoat
+; itm_rohan_guard|Rohan Guard Armor
 itm_rohan_light_helmet_a|로한 가벼운 투구
-itm_rohan_light_helmet_b|로한 가벼운 헬멧
-itm_rohan_inf_helmet_a|로한 보병 투구
-itm_rohan_inf_helmet_b|로한 보병 투구
-itm_rohan_archer_helmet_a|로한 궁수 투구
-itm_rohan_archer_helmet_b|로한 궁수 투구
-itm_rohan_archer_helmet_c|로한 궁기병 투구
-itm_rohan_cav_helmet_a|로한 기사 투구
-itm_rohan_cav_helmet_b|로한 기사 투구
-itm_rohan_cav_helmet_c|로한 기사 투구
-itm_rohan_captain_helmet|로한 대장 투구
+itm_rohan_light_helmet_b|로한 가벼운 투구
+; itm_rohan_inf_helmet_a|Rohan Eyeguard Helm
+; itm_rohan_inf_helmet_b|Rohan Eyeguard Helm
+; itm_rohan_archer_helmet_a|Rohan Nasal Helm
+; itm_rohan_archer_helmet_b|Rohan Nasal Helm
+; itm_rohan_archer_helmet_c|Rohan Guard Helm
+; itm_rohan_cav_helmet_a|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_b|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_c|Rohan Cavalry Helm
+; itm_rohan_captain_helmet|Rohan Captain Helm
 itm_rohan_shield_a|로한 투구
 itm_rohan_shield_b|로한 투구
 itm_rohan_shield_c|로한 투구
@@ -555,12 +512,10 @@ itm_rohan_2h_sword|로한 전쟁 검
 itm_mirkwood_light_scale|가벼운 숲의 요정 사슬갑옷
 itm_mirkwood_armor_a|가벼운 가죽갑옷
 itm_mirkwood_armor_b|가벼운 누비와 사슬갑옷
-
-; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
+; itm_mirkwood_armor_c|Mirkwood Royal Mail
 itm_mirkwood_armor_d|가벼운 누비 겉옷
 itm_mirkwood_armor_e|가벼운 사슬 겉옷
-
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+; itm_mirkwood_armor_f|Mirkwood Leafscale
 itm_mirkwood_great_spear|어둠숲 거대한 창
 itm_mirkwood_war_spear|어둠숲 전쟁 창
 itm_mirkwood_short_spear|어둠숲 창
@@ -703,7 +658,6 @@ itm_khand_halberd|칸드 할버드
 ; itm_rhun_battleaxe|Rhun Battle Axe
 ; itm_rhun_falchion|Savage Falchion
 ; itm_rhun_glaive|Rhun Glaive
-
 ; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
@@ -744,7 +698,7 @@ itm_khand_halberd|칸드 할버드
 
 ; itm_dale_sword|Dale Shortsword
 ; itm_dale_sword_long|Dale Longsword
-; itm_dale_sword_broad|Dale Broadsword
+; itm_dale_sword_broad|Dale Infantry Sword
 ; itm_dale_pike|Dale Spear
 ; itm_dale_billhook|Dale Billhook
 ; itm_dale_shield_a|Dale Tower Shield
@@ -780,20 +734,28 @@ itm_khand_halberd|칸드 할버드
 ; itm_umb_hood|Black Hood
 
 ; itm_corsair_boots|Corsair Boots
-; itm_umb_shield_a|Corsair Buckler
+
+; itm_umb_shield_a|Corsair Shield
+
 ; itm_umb_shield_b|Corsair Buckler
+
 ; itm_umb_shield_c|Corsair Buckler
+
 ; itm_umb_shield_d|Corsair Buckler
-; itm_umb_shield_e|Corsair Buckler
+
+; itm_umbar_spear|Umbar Short Spear
+
 ; itm_umbar_cutlass|Umbar Cutlass
+
 ; itm_kraken|Kraken Cutlass
+
 ; itm_umbar_rapier|Umbar Boarding Sword
 
 ; itm_corsair_harpoon|Corsair Harpoon
 ; itm_corsair_sword|Corsair Eket
 
 ; itm_corsair_throwing_dagger|Crooked Throwing Daggers
-; itm_umbar_pike|Umbar Pike
+; itm_umbar_pike|Corsair Trident
 ; itm_woodman_tunic|Woodmen Tunic
 
 ; itm_woodman_scout|Woodmen Scout Cape
@@ -817,7 +779,7 @@ itm_khand_halberd|칸드 할버드
 
 ; itm_dwarf_shield_d|Dwarven Round Shield
 
-itm_north_round_shield|난쟁이인 방패
+; itm_north_round_shield|Northmen Round Shield
 
 itm_free_dwarf_shield_g|난쟁이인 방패
 
@@ -883,19 +845,18 @@ itm_dwarf_sword_d|난쟁이 검
 
 ; itm_dwarf_helm_round|Dwarf Round Helm
 
-; itm_free_dwarf_helm_v|Dwarf Chain Sallet
-
 ; itm_dwarf_helm_sallet|Dwarf Sallet
 
-; itm_dwarf_armor_a|Erebor Mail
+; itm_dwarf_armor_d|Iron Hills Coat of Scales
+; itm_dwarf_armor_a|Erebor Surcoat over Mail
 
-; itm_leather_dwarf_armor|Dwarven Pad over Mail
+; itm_leather_dwarf_armor|Dwarven Padded Coat
 
-; itm_dwarf_armor_b|Erebor Scale
+; itm_dwarf_armor_b|Erebor Tunic over Mail
 
-; itm_leather_dwarf_armor_b|Dwarven Pad over Tunic
+; itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
 
-; itm_dwarf_armor_c|Dwarven Scale over Mail
+; itm_dwarf_armor_c|Erebor Scale Mail
 
 ; itm_dwarf_vest|Dwarven Tunic
 
@@ -907,6 +868,7 @@ itm_dwarf_sword_d|난쟁이 검
 ; itm_far_harad_shield_paint|Wicker Shield
 ; itm_nazgulrobe|Nazgul Robe
 
+; itm_werewolf|Werewolf
 ; itm_mordor_banner|Mordor Banner
 ; itm_isengard_banner|Isengard banner
 ; itm_woodelf_banner|Mirkwood Banner
@@ -916,13 +878,7 @@ itm_dwarf_sword_d|난쟁이 검
 ; itm_amroth_lance_banner|Dol Amroth Lance With Banner
 ; itm_rohan_lance_banner_sun|Rohan Lance With Sun Banner
 ; itm_rohan_lance_banner_horse|Rohan Lance With Horse Banner
-; itm_ent_body|Ent Body
-; itm_ent_head_helm|Ent Head
-; itm_ent_head_helm2|Ent Head
-; itm_ent_head_helm3|Ent Head
-; itm_ent_feet_boots|Ent Feet
-; itm_ent_hands|Ent Hands
-; itm_galadriel|Galadriel suit
+
 ; itm_ent_water|Strange bowl of water
 ; itm_map|Maps of Middle Earth
 ; itm_athelas_reward|Athelas Plant
@@ -938,7 +894,8 @@ itm_dwarf_sword_d|난쟁이 검
 ; itm_orc_brew|Orc Brew
 ; itm_rohan_saddle|Saddle of Thengel
 ; itm_mearas_reward|Mearh Stallion
-; itm_sword_of_arathorn|Arathorn's Sword
+
+; itm_shield_of_tuor|Shield of Tuor
 ; itm_riv_armor_reward|Rivendell Decorated Armor
 ; itm_westernesse1h_reward|Sword of Westernesse
 ; itm_westernesse2h_reward|Sword of The Great Serpent
@@ -976,7 +933,6 @@ itm_dwarf_sword_d|난쟁이 검
 ; itm_gandstaff|Wizards Staff
 ; itm_sarustaff|Wizards Staff
 ; itm_rohan_armor_th|Rohan Royal Armor
-; itm_denethor_robe|Stewards Robe
 ; itm_prisoner_coll_chain|Prisoner Chains
 ; itm_witchking_helmet|Wicked Helm
 ; itm_lorien_royal_armor|Lorien Royal Armor

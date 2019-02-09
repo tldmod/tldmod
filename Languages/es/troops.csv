@@ -98,8 +98,8 @@ trp_dale_pikeman|Lancero de Valle
 trp_dale_pikeman_pl|Lanceros de Valle
 trp_dale_billman|Archero de Valle
 trp_dale_billman_pl|Archeros de Valle
-trp_dale_bill_master|Maese Archero de Valle
-trp_dale_bill_master_pl|Maeses Archeros de Valle
+trp_dale_bill_master|Maestro Archero de Valle
+trp_dale_bill_master_pl|Maestros Archeros de Valle
 trp_merchant_squire_or_dale|Vasallo Norteño
 trp_merchant_squire_or_dale_pl|Vasallos Norteños
 trp_merchant_guard_of_dale|Auxiliar Norteño
@@ -142,42 +142,42 @@ trp_rhun_heavy_noble_cavalry|Soldado de Caballería Noble Pesado de Rhun
 trp_rhun_heavy_noble_cavalry_pl|Caballería Noble Pesada de Rhûn
 trp_dorwinion_noble_of_rhun|Noble de Dorwinion de Rhûn
 trp_dorwinion_noble_of_rhun_pl|Nobles de Dorwinion de Rhûn
-trp_dwarven_apprentice|Aprendiz Enano
-trp_dwarven_apprentice_pl|Aprendices Enanos
-trp_dwarven_warrior|Guerrero Enano
-trp_dwarven_warrior_pl|Guerreros Enanos
-trp_dwarven_hardened_warrior|Guerrero Enano Curtido
-trp_dwarven_hardened_warrior_pl|Guerreros Enanos Curtidos
-trp_dwarven_spearman|Lancero Enano
-trp_dwarven_spearman_pl|Lanceros Enanos
-trp_dwarven_pikeman|Lancero Pesado Enano
-trp_dwarven_pikeman_pl|Lanceros Pesados Enanos
-trp_dwarven_halberdier|Piquero Enano
-trp_dwarven_halberdier_pl|Piqueros Enanos
-trp_dwarven_axeman|Hachero Enano
-trp_dwarven_axeman_pl|Hacheros Enanos
-trp_dwarven_expert_axeman|Hachero Enano Experto
-trp_dwarven_expert_axeman_pl|Hacheros Enanos Expertos
-trp_longbeard_axeman|Hachero Enano Barbiluengo 
-trp_longbeard_axeman_pl| Hacheros Enanos Barbaluengos
-trp_dwarven_lookout|Vigía Enano
-trp_dwarven_lookout_pl|Vigías Enanos
-trp_dwarven_scout|Explorador Enano
-trp_dwarven_scout_pl|Exploradores Enanos 
-trp_dwarven_bowman|Enano con Arco
-trp_dwarven_bowman_pl|Enanos con Arco
-trp_dwarven_longaxeman|Enano Hachalarga
-trp_dwarven_longaxeman_pl|Enanos Hachalarga
-trp_iron_hills_warrior|Guerrero de las Colinas de Hierro
-trp_iron_hills_warrior_pl|Guerreros de las Colinas de Hierro
-trp_iron_hills_miner|Minero de las Colinas de Hierro
-trp_iron_hills_miner_pl|Mineros de las Colinas de Hierro
-trp_iron_hills_infantry|Infante de las Colinas de Hierro
-trp_iron_hills_infantry_pl|Infantería de las Colinas de Hierro
-trp_iron_hills_battle_infantry|Enano Batallador de las Colinas de Hierro
-trp_iron_hills_battle_infantry_pl|Enanos Batalladoresde las Colinas de Hierro
-trp_grors_guard|Guardia de Gror
-trp_grors_guard_pl|Guardias de Gror
+trp_i1_dwarven_apprentice|Aprendiz Enano
+trp_i1_dwarven_apprentice_pl|Aprendices Enanos
+trp_i2_dwarven_warrior|Guerrero Enano
+trp_i2_dwarven_warrior_pl|Guerreros Enanos
+trp_i3_dwarven_hardened_warrior|Guerrero Enano Curtido
+trp_i3_dwarven_hardened_warrior_pl|Guerreros Enanos Curtidos
+trp_i4_dwarven_spearman|Lancero Enano
+trp_i4_dwarven_spearman_pl|Lanceros Enanos
+trp_i5_dwarven_pikeman|Lancero Pesado Enano
+trp_i5_dwarven_pikeman_pl|Lanceros Pesados Enanos
+trp_i6_dwarven_longpikeman|Piquero Enano
+trp_i6_dwarven_longpikeman_pl|Piqueros Enanos
+trp_i4_dwarven_axeman|Hachero Enano
+trp_i4_dwarven_axeman_pl|Hacheros Enanos
+trp_i5_dwarven_expert_axeman|Hachero Enano Experto
+trp_i5_dwarven_expert_axeman_pl|Hacheros Enanos Expertos
+trp_i6_longbeard_axeman|Hachero Enano Barbiluengo 
+trp_i6_longbeard_axeman_pl| Hacheros Enanos Barbaluengos
+trp_a2_dwarven_lookout|Vigía Enano
+trp_a2_dwarven_lookout_pl|Vigías Enanos
+trp_a3_dwarven_scout|Explorador Enano
+trp_a3_dwarven_scout_pl|Exploradores Enanos 
+trp_a4_dwarven_bowman|Enano con Arco
+trp_a4_dwarven_bowman_pl|Enanos con Arco
+trp_i6_dwarven_longaxeman|Enano Hachalarga
+trp_i6_dwarven_longaxeman_pl|Enanos Hachalarga
+trp_i3_iron_hills_warrior|Guerrero de las Colinas de Hierro
+trp_i3_iron_hills_warrior_pl|Guerreros de las Colinas de Hierro
+trp_i2_iron_hills_miner|Minero de las Colinas de Hierro
+trp_i2_iron_hills_miner_pl|Mineros de las Colinas de Hierro
+trp_i4_iron_hills_infantry|Infante de las Colinas de Hierro
+trp_i4_iron_hills_infantry_pl|Infantería de las Colinas de Hierro
+trp_i5_iron_hills_battle_infantry|Enano Batallador de las Colinas de Hierro
+trp_i5_iron_hills_battle_infantry_pl|Enanos Batalladoresde las Colinas de Hierro
+trp_i6_grors_guard|Guardia de Gror
+trp_i6_grors_guard_pl|Guardias de Gror
 trp_gondor_commoner|Recluta de Gondor
 trp_gondor_commoner_pl|Reclutas de Gondor
 trp_gondor_militiamen|Guardia de Gondor
@@ -241,9 +241,9 @@ trp_lossarnach_leader_pl|Capitanes de Lossarnach
 trp_pelargir_watchman|Vigía de Pelargir
 trp_pelargir_watchman_pl|Vigías de Pelargir
 trp_pelargir_marine|Infante de Marina de Pelargir
-trp_pelargir_marine_pl|Infantería de Marina de Pelargir
+trp_pelargir_marine_pl|Infantes de Marina de Pelargir
 trp_pelargir_vet_marine|Infante de Marina Veterano de Pelargir
-trp_pelargir_vet_marine_pl|Infantería de Marina Veterana de Pelargir
+trp_pelargir_vet_marine_pl|Infantes de Marina Veteranos de Pelargir
 trp_pelargir_infantry|Infante de Pelargir
 trp_pelargir_infantry_pl|Infantería de Pelargir
 trp_pelargir_vet_infantry|Infante Veterano de Pelargir
@@ -412,52 +412,52 @@ trp_dunedain_veteran_ranger|Montaraz Dúnadan Veterano
 trp_dunedain_veteran_ranger_pl|Montaraces Dúnedain Veteranos
 trp_dunedain_master_ranger|Montaraz Experto Dúnadan
 trp_dunedain_master_ranger_pl|Montaraces Expertos Dúnedain
-trp_rohan_youth|Joven de Rohan
-trp_rohan_youth_pl|Jóvenes de Rohan
-trp_guardsman_of_rohan|Guardia de Rohan
-trp_guardsman_of_rohan_pl|Guardias de Rohan
-trp_footman_of_rohan|Infante de Rohan
-trp_footman_of_rohan_pl|Infantería de Rohan
-trp_veteran_footman_of_rohan|Infante Veterano de Rohan
-trp_veteran_footman_of_rohan_pl|Infantería Veterana de Rohan
-trp_elite_footman_of_rohan|Infante de Élite de Rohan
-trp_elite_footman_of_rohan_pl|Infantería de Élite de Rohan
-trp_folcwine_guard_of_rohan|Guardia Folcwine de Rohan
-trp_folcwine_guard_of_rohan_pl|Guardias Folcwine de Rohan
-trp_raider_of_rohan|Incursor Fréaláf de Rohan
-trp_raider_of_rohan_pl|Incursores Fréaláf de Rohan
-trp_heavy_swordsman_of_rohan|Espadachín Pesado de Rohan
-trp_heavy_swordsman_of_rohan_pl|Espadachines Pesados de Rohan
-trp_warden_of_methuseld|Guardián de Meduseld
-trp_warden_of_methuseld_pl|Guardianes de Meduseld
-trp_skirmisher_of_rohan|Escaramuzador de Rohan
-trp_skirmisher_of_rohan_pl|Escaramuzadores de Rohan
-trp_veteran_skirmisher_of_rohan|Escaramuzador Veterano de Rohan
-trp_veteran_skirmisher_of_rohan_pl|Escaramuzadores Veteranos Rohan
-trp_elite_skirmisher_of_rohan|Escaramuzador de Élite de Rohan
-trp_elite_skirmisher_of_rohan_pl|Escaramuzadores de Élite de Rohan
-trp_thengel_guard_of_rohan|Guardia Thengel de Rohan
-trp_thengel_guard_of_rohan_pl|Guardias Thengel de Rohan
-trp_lancer_of_rohan|Lancero de Rohan
-trp_lancer_of_rohan_pl|Lanceros de Rohan
-trp_elite_lancer_of_rohan|Lancero de Élite de Rohan
-trp_elite_lancer_of_rohan_pl|Lanceros de Élite de Rohan
-trp_brego_guard_of_rohan|Guardia Brego de Rohan
-trp_brego_guard_of_rohan_pl|Guardias Brego de Rohan
-trp_king_s_man_of_rohan|Guardia del Rey
-trp_king_s_man_of_rohan_pl|Guardias del Rey
-trp_squire_of_rohan|Escudero de Rohan
-trp_squire_of_rohan_pl|Escuderos de Rohan
-trp_rider_of_rohan|Jinete de Rohan
-trp_rider_of_rohan_pl|Jinetes de Rohan
-trp_veteran_rider_of_rohan|Jinete Veterano de Rohan
-trp_veteran_rider_of_rohan_pl|Jinetes Veteranos de Rohan
-trp_elite_rider_of_rohan|Jinete de Élite de Rohan
-trp_elite_rider_of_rohan_pl|Jinetes de Élite de Rohan
-trp_eorl_guard_of_rohan|Guardia Eorl de Rohan
-trp_eorl_guard_of_rohan_pl|Guardias Eorl de Rohan
-trp_dismounted_skirmisher_of_rohan|Escaramuzador de Rohan
-trp_dismounted_skirmisher_of_rohan_pl|Escaramuzadores de Rohan
+trp_i1_rohan_youth|Joven de Rohan
+trp_i1_rohan_youth_pl|Jóvenes de Rohan
+trp_i2_guardsman_of_rohan|Guardia de Rohan
+trp_i2_guardsman_of_rohan_pl|Guardias de Rohan
+trp_i3_footman_of_rohan|Infante de Rohan
+trp_i3_footman_of_rohan_pl|Infantería de Rohan
+trp_i4_veteran_footman_of_rohan|Infante Veterano de Rohan
+trp_i4_veteran_footman_of_rohan_pl|Infantería Veterana de Rohan
+trp_i5_elite_footman_of_rohan|Infante de Élite de Rohan
+trp_i5_elite_footman_of_rohan_pl|Infantería de Élite de Rohan
+trp_i6_footman_guard_of_rohan|Guardia Folcwine de Rohan
+trp_i6_footman_guard_of_rohan_pl|Guardias Folcwine de Rohan
+trp_i6_frealaf_raider|Incursor Fréaláf de Rohan
+trp_i6_frealaf_raider_pl|Incursores Fréaláf de Rohan
+trp_i5_raider_of_rohan|Incursor de Rohan
+trp_i5_raider_of_rohan_pl|Incursores de Rohan
+trp_i6_warden_of_methuseld|Guardián de Meduseld
+trp_i6_warden_of_methuseld_pl|Guardianes de Meduseld
+trp_ac3_skirmisher_of_rohan|Escaramuzador de Rohan
+trp_ac3_skirmisher_of_rohan_pl|Escaramuzadores de Rohan
+trp_ac4_veteran_skirmisher_of_rohan|Escaramuzador Veterano de Rohan
+trp_ac4_veteran_skirmisher_of_rohan_pl|Escaramuzadores Veteranos de Rohan
+trp_ac5_elite_skirmisher_of_rohan|Escaramuzador de Élite de Rohan
+trp_ac5_elite_skirmisher_of_rohan_pl|Escaramuzadores de Élite de Rohan
+trp_ac6_skirmisher_guard_of_rohan|Guardia Thengel de Rohan
+trp_ac6_skirmisher_guard_of_rohan_pl|Guardias Thengel de Rohan
+trp_c4_lancer_of_rohan|Lancero de Rohan
+trp_c4_lancer_of_rohan_pl|Lanceros de Rohan
+trp_c5_elite_lancer_of_rohan|Lancero de Élite de Rohan
+trp_c5_elite_lancer_of_rohan_pl|Lanceros de Élite de Rohan
+trp_c6_lancer_guard_of_rohan|Guardia Brego de Rohan
+trp_c6_lancer_guard_of_rohan_pl|Guardias Brego de Rohan
+trp_c6_king_s_man_of_rohan|Guardia del Rey
+trp_c6_king_s_man_of_rohan_pl|Guardias del Rey
+trp_c2_squire_of_rohan|Escudero de Rohan
+trp_c2_squire_of_rohan_pl|Escuderos de Rohan
+trp_c3_rider_of_rohan|Jinete de Rohan
+trp_c3_rider_of_rohan_pl|los Jinetes de Rohan
+trp_c4_veteran_rider_of_rohan|Jinete Veterano de Rohan
+trp_c4_veteran_rider_of_rohan_pl|Jinetes Veteranos de Rohan
+trp_c5_elite_rider_of_rohan|Jinete de Élite de Rohan
+trp_c5_elite_rider_of_rohan_pl|Jinetes de Élite de Rohan
+trp_c6_rider_guard_of_rohan|Guardia Eorl de Rohan
+trp_c6_rider_guard_of_rohan_pl|Guardias Eorl de Rohan
+trp_i6_2h_guard_of_rohan|Guardia Helm de Rohan
+trp_i6_2h_guard_of_rohan_pl|Guardias Helm de Rohan
 trp_dismounted_veteran_skirmisher_of_rohan|Escaramuzador Veterano de Rohan
 trp_dismounted_veteran_skirmisher_of_rohan_pl|Escaramuzadores Veteranos de Rohan
 trp_dismounted_elite_skirmisher_of_rohan|Escaramuzador de Élite de Rohan
@@ -556,40 +556,40 @@ trp_easterling_veteran_skirmisher|Escaramuzador Veterano Variag
 trp_easterling_veteran_skirmisher_pl|Escaramuzadores Veteranos Variag
 trp_easterling_elite_skirmisher|Escaramuzador Pesado Variag
 trp_easterling_elite_skirmisher_pl|Escaramuzadores Pesados Variag
-trp_corsair_youth|Marinero de Umbar
-trp_corsair_youth_pl|Marineros de Umbar
-trp_corsair_warrior|Guerrero de Umbar
-trp_corsair_warrior_pl|Guerreros de Umbar
-trp_corsair_pikeman|Piquero de Umbar
-trp_corsair_pikeman_pl|Piqueros de Umbar
-trp_corsair_veteran_raider|Incursor Corsario Veterano
-trp_corsair_veteran_raider_pl|Incursores Corsarios Veteranos
-trp_corsair_night_raider|Incursor Nocturno Corsario
-trp_corsair_night_raider_pl|Incursores Nocturnos Corsarios
-trp_militia_of_umbar|Infante de Marina de Umbar
-trp_militia_of_umbar_pl|Infantes de Marina de Umbar
-trp_marksman_of_umbar|Tirador de Umbar
-trp_marksman_of_umbar_pl|Tiradores de Umbar
-trp_veteran_marksman_of_umbar|Tirador Veterano de Umbar
-trp_veteran_marksman_of_umbar_pl|Tiradores Veteranos de Umbar
-trp_master_marksman_of_umbar|Tirador Maestro Corsario
-trp_master_marksman_of_umbar_pl|Tiradores Maestros Corsarios
-trp_corsair_marauder|Combatiente de Umbar
-trp_corsair_marauder_pl|Combatientes de Umbar
-trp_corsair_veteran_marauder|Combatiente Veterano de Umbar
-trp_corsair_veteran_marauder_pl|Combatientes Veteranos de Umbar
-trp_corsair_elite_marauder|Maestro Espadachín Corsario
-trp_corsair_elite_marauder_pl|Maestros Espadachines Corsarios
-trp_assassin_of_umbar|Asesino de Umbar
-trp_assassin_of_umbar_pl|Asesinos de Umbar
-trp_master_assassin_of_umbar|Asesino Corsario
-trp_master_assassin_of_umbar_pl| Asesinos Corsarios
-trp_pikeman_of_umbar|Piquero de Umbar
-trp_pikeman_of_umbar_pl|Piqueros de Umbar
-trp_veteran_pikeman_of_umbar|Piquero Veterano de Umbar
-trp_veteran_pikeman_of_umbar_pl|Piqueros Veteranos de Umbar
-trp_pike_master_of_umbar|Piquero Experto Corsario
-trp_pike_master_of_umbar_pl|Piqueros Expertos Corsarios
+trp_i1_corsair_youth|Marinero de Umbar
+trp_i1_corsair_youth_pl|Marineros de Umbar
+trp_i2_corsair_warrior|Guerrero de Umbar
+trp_i2_corsair_warrior_pl|Guerreros de Umbar
+trp_i3_corsair_spearman|Lancero de Umbar
+trp_i3_corsair_spearman_pl|Lanceros de Umbar
+trp_i4_corsair_raider|Incursor Corsario
+trp_i4_corsair_raider_pl|Incursores Corsarios
+trp_i5_corsair_night_raider|Incursor Nocturno Corsario
+trp_i5_corsair_night_raider_pl|Incursores Nocturnos Corsarios
+trp_a2_corsair_marine|Infante de Marina de Umbar
+trp_a2_corsair_marine_pl|Infantes de Marina de Umbar
+trp_a3_corsair_marksman|Tirador de Umbar
+trp_a3_corsair_marksman_pl|Tiradores de Umbar
+trp_a4_corsair_veteran_marksman|Tirador Veterano de Umbar
+trp_a4_corsair_veteran_marksman_pl|Tiradores Veteranos de Umbar
+trp_a5_corsair_master_marksman|Tirador Maestro Corsario
+trp_a5_corsair_master_marksman_pl|Tiradores Maestros Corsarios
+trp_i3_corsair_swordsman|Combatiente de Umbar
+trp_i3_corsair_swordsman_pl|Combatientes de Umbar
+trp_i4_corsair_veteran_swordsman|Combatiente Veterano de Umbar
+trp_i4_corsair_veteran_swordsman_pl|Combatientes Veteranos de Umbar
+trp_i5_corsair_master_swordsman|Maestro Espadachín Corsario
+trp_i5_corsair_master_swordsman_pl|Maestros Espadachines Corsarios
+trp_a4_corsair_assassin|Asesino Corsario
+trp_a4_corsair_assassin_pl| Asesinos Corsarios
+trp_a5_corsair_master_assassin|Asesino Corsario
+trp_a5_corsair_master_assassin_pl| Asesinos Corsarios
+trp_i4_corsair_veteran_spearman|Lancero Veterano de Umbar
+trp_i4_corsair_veteran_spearman_pl|Lanceros Veteranos de Umbar
+trp_i5_corsair_master_spearman|Maestro Lancero de Umbar
+trp_i5_corsair_master_spearman_pl|Maestros Lanceros de Umbar
+trp_i5_corsair_master_pikeman|Maestro Piquero de Umbar
+trp_i5_corsair_master_pikeman_pl|Maestros Piqueros de Umbar
 trp_orc_snaga_of_isengard|Orco Snaga de Isengard
 trp_orc_snaga_of_isengard_pl|Orcos Snagae de Isengard
 trp_orc_of_isengard|Orco de Isengard
@@ -676,8 +676,8 @@ trp_ent|Ent
 trp_ent_pl|Ents
 trp_orc_snaga_of_guldur|Orco Snaga de Dol Guldur
 trp_orc_snaga_of_guldur_pl|Orcos Snagae de Dol Guldur
-trp_orc_of_guldur|Orco de Dol Guldur
-trp_orc_of_guldur_pl|Orcos de Dol Guldur
+trp_orc_of_guldur|Rastreador Orco de Guldur
+trp_orc_of_guldur_pl|Rastreadores Orcos de Guldur
 trp_orc_snaga_of_mordor|Orco Snaga de Mordor
 trp_orc_snaga_of_mordor_pl|Orcos Snagae de Mordor
 trp_orc_of_mordor|Orco de Mordor
@@ -694,64 +694,64 @@ trp_morgul_orc|Orco de Morgul
 trp_morgul_orc_pl|Orcos de Morgul
 trp_fell_morgul_orc|Orco Feroz de Morgul
 trp_fell_morgul_orc_pl|Orcos Feroces de Morgul
-trp_orc_tracker_of_mordor|Rastreador Orco de Mordor
-trp_orc_tracker_of_mordor_pl|Rastreadores Orcos de Mordor
-trp_fell_orc_tracker_of_mordor|Rastreador Orco Feroz de Mordor
-trp_fell_orc_tracker_of_mordor_pl|Rastreadores Orcos Feroces de Mordor
+trp_orc_tracker_of_mordor|Gran Rastreador Orco de Guldur
+trp_orc_tracker_of_mordor_pl|Grandes Rastreadores Orcos de Guldur
+trp_fell_orc_tracker_of_mordor|Rastreador Orco Feroz de Guldur
+trp_fell_orc_tracker_of_mordor_pl|Rastreadores Orcos Feroces de Guldur
 trp_orc_archer_of_mordor|Arquero Orco de Mordor
 trp_orc_archer_of_mordor_pl|Arqueros Orcos de Mordor
 trp_large_orc_archer_of_mordor|Gran Arquero Orco de Mordor
 trp_large_orc_archer_of_mordor_pl|Grandes Arqueros Orcos de Mordor
 trp_fell_orc_archer_of_mordor|Arquero Orco Feroz de Mordor
 trp_fell_orc_archer_of_mordor_pl|Arqueros Orcos Feroces de Mordor
-trp_wolf_rider_of_moria|Jinete de Lobo de Moria
-trp_wolf_rider_of_moria_pl|Jinetes de Lobo de Moria
-trp_warg_rider_of_moria|Jinete de Huargo de Moria
-trp_warg_rider_of_moria_pl|Jinetes de Huargo de Moria
-trp_bolg_clan_rider|Jinete del Clan Bolgo
-trp_bolg_clan_rider_pl|Jinetes del Clan Bolgo
-trp_snaga_of_moria|Trasgo Snaga de Moria
-trp_snaga_of_moria_pl|Trasgos Snagae de Moria
-trp_goblin_of_moria|Trasgo de Moria
-trp_goblin_of_moria_pl|Trasgos de Moria
-trp_large_goblin_of_moria|Gran Trasgo de Moria
-trp_large_goblin_of_moria_pl|Trasgos Grandes de Moria
-trp_fell_goblin_of_moria|Trasgo Feroz de Moria
-trp_fell_goblin_of_moria_pl|Trasgo Feroz de Moria
-trp_archer_snaga_of_moria|Trasgo Arquero de Moria
-trp_archer_snaga_of_moria_pl|Trasgos Arqueros de Moria
-trp_large_goblin_archer_of_moria|Gran Trasgo Arquero de Moria
-trp_large_goblin_archer_of_moria_pl|Grandes Trasgos Arqueros de Moria
-trp_deep_dweller_of_moria2|Morador de las Profundidades de Moria
-trp_deep_dweller_of_moria2_pl|Moradores de las Profundidades de Moria
-trp_goblin_gundabad|Trasgo de Gundabad
-trp_goblin_gundabad_pl|Trasgos de Gundabad
-trp_orc_gundabad|Orco de Gundabad
-trp_orc_gundabad_pl|Orcos de Gundabad
-trp_orc_fighter_gundabad|Luchador Orco de Gundabad
-trp_orc_fighter_gundabad_pl|Luchadores Orcos de Gundabad
-trp_fell_orc_warrior_gundabad|Guerrero Orco de Gundabad
-trp_fell_orc_warrior_gundabad_pl|Guerreros Orcos de Gundabad
-trp_orc_beserker_gundabad|Berserker Orco de Gundabad
-trp_orc_beserker_gundabad_pl|Berserkers Orcos de Gundabad
-trp_warg_skirmisher_gundabad|Escaramuzador de Gundabad
-trp_warg_skirmisher_gundabad_pl|Escaramuzadores de Gundabad
-trp_goblin_north_clan_skirmisher|Escaramuzador Trasgo del Clan del Norte
-trp_goblin_north_clan_skirmisher_pl|Escaramuzadores Trasgos del Clan del Norte
-trp_goblin_rider_gundabad|Jinete Trasgo de Gundabad
-trp_goblin_rider_gundabad_pl|Jinetes Trasgos de Gundabad
-trp_warg_rider_gundabad|Jinete de Huargo de Gundabad
-trp_warg_rider_gundabad_pl|Jinetes de Huargo de Gundabad
-trp_goblin_north_clan_rider|Jinete Trasgo del Clan del Norte
-trp_goblin_north_clan_rider_pl|Jinetes Trasgos del Clan del Norte
+trp_c3_wolf_rider_of_moria|Jinete de Lobo de Moria
+trp_c3_wolf_rider_of_moria_pl|Jinetes de Lobo de Moria
+trp_c4_warg_rider_of_moria|Jinete de Huargo de Moria
+trp_c4_warg_rider_of_moria_pl|Jinetes de Huargo de Moria
+trp_c5_bolg_clan_rider|Jinete del Clan Bolgo
+trp_c5_bolg_clan_rider_pl|Jinetes del Clan Bolgo
+trp_i1_snaga_of_moria|Trasgo Snaga de Moria
+trp_i1_snaga_of_moria_pl|Trasgos Snagae de Moria
+trp_i2_goblin_of_moria|Trasgo de Moria
+trp_i2_goblin_of_moria_pl|Trasgos de Moria
+trp_i3_large_goblin_of_moria|Gran Trasgo de Moria
+trp_i3_large_goblin_of_moria_pl|Trasgos Grandes de Moria
+trp_i4_fell_goblin_of_moria|Trasgo Feroz de Moria
+trp_i4_fell_goblin_of_moria_pl|Trasgo Feroz de Moria
+trp_a2_archer_snaga_of_moria|Trasgo Arquero de Moria
+trp_a2_archer_snaga_of_moria_pl|Trasgos Arqueros de Moria
+trp_a3_large_goblin_archer_of_moria|Gran Trasgo Arquero de Moria
+trp_a3_large_goblin_archer_of_moria_pl|Grandes Trasgos Arqueros de Moria
+trp_i5_deep_dweller_of_moria2|Morador de las Profundidades de Moria
+trp_i5_deep_dweller_of_moria2_pl|Moradores de las Profundidades de Moria
+trp_i1_goblin_gundabad|Trasgo de Gundabad
+trp_i1_goblin_gundabad_pl|Trasgos de Gundabad
+trp_i2_orc_gundabad|Orco de Gundabad
+trp_i2_orc_gundabad_pl|Orcos de Gundabad
+trp_i3_orc_fighter_gundabad|Luchador Orco de Gundabad
+trp_i3_orc_fighter_gundabad_pl|Luchadores Orcos de Gundabad
+trp_i4_fell_orc_warrior_gundabad|Guerrero Orco de Gundabad
+trp_i4_fell_orc_warrior_gundabad_pl|Guerreros Orcos de Gundabad
+trp_i4_orc_beserker_gundabad|Berserker Orco de Gundabad
+trp_i4_orc_beserker_gundabad_pl|Berserkers Orcos de Gundabad
+trp_ca4_warg_skirmisher_gundabad|Escaramuzador de Gundabad
+trp_ca4_warg_skirmisher_gundabad_pl|Escaramuzadores de Gundabad
+trp_ca5_goblin_north_clan_skirmisher|Escaramuzador Trasgo del Clan del Norte
+trp_ca5_goblin_north_clan_skirmisher_pl|Escaramuzadores Trasgos del Clan del Norte
+trp_c3_goblin_rider_gundabad|Jinete Trasgo de Gundabad
+trp_c3_goblin_rider_gundabad_pl|Jinetes Trasgos de Gundabad
+trp_c4_warg_rider_gundabad|Jinete de Huargo de Gundabad
+trp_c4_warg_rider_gundabad_pl|Jinetes de Huargo de Gundabad
+trp_c5_goblin_north_clan_rider|Jinete Trasgo del Clan del Norte
+trp_c5_goblin_north_clan_rider_pl|Jinetes Trasgos del Clan del Norte
 trp_mountain_goblin|Trasgo de Montaña
 trp_mountain_goblin_pl|Trasgos de Montaña
 trp_tribal_orc|Orco Tribal
 trp_tribal_orc_pl|Orcos Tribales
 trp_tribal_orc_warrior|Guerrero Orco Tribal
 trp_tribal_orc_warrior_pl|Guerrero Orco Tribal
-trp_tribal_orc_chief2|Cacique Orco de Moria
-trp_tribal_orc_chief2_pl|Caciques Orcos de Moria
+trp_i5_orc_chieftain_of_moria2|Cacique Orco de Moria
+trp_i5_orc_chieftain_of_moria2_pl|Caciques Orcos de Moria
 trp_black_numenorean_renegade|Númenóreano Negro Renegado
 trp_black_numenorean_renegade_pl|Númenóreanos Negros Renegados
 trp_black_numenorean_warrior|Númenóreano Negro Guerrero
@@ -1242,7 +1242,7 @@ trp_barman_dale_pl|l Castillo
 trp_barman_esgaroth|Tabernero
 trp_barman_esgaroth_pl| los Salones
 trp_barman_erebor|Tabernero
-trp_barman_erebor_pl| la Cámara del Señor
+trp_barman_erebor_pl|la Gran Cámara de Thrór
 trp_barman_dolguldur|Tabernero
 trp_barman_dolguldur_pl|l Castillo
 trp_merchant_mtirith|Jefe de Suministros
@@ -1576,9 +1576,9 @@ trp_hungry_orc|Orco Hambriento
 trp_longing_lorien|Elfo Melancólico
 trp_longing_woodelf|Elfo Melancólico
 trp_longing_imladris|Elfo Melancólico
-trp_deep_dweller_of_moria|Morador de la Profundidades de Moria
-trp_deep_dweller_of_moria_pl|Moradores de las Profundidades de Moria
-trp_tribal_orc_chief|Cacique Orco de Moria
-trp_tribal_orc_chief_pl|Caciques Orcos de Moria
+trp_i5_deep_dweller_of_moria|Morador de las Profundidades de Moria
+trp_i5_deep_dweller_of_moria_pl|Moradores de las Profundidades de Moria
+trp_i5_orc_chieftain_of_moria|Cacique Orco de Moria
+trp_i5_orc_chieftain_of_moria_pl|Caciques Orcos de Moria
 trp_rhovanion_noble|Noble de Rhovanion
 trp_rhovanion_noble_pl|Nobles de Rhovanion

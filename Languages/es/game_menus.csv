@@ -12,13 +12,14 @@ mno_custom_battle_scenario_4|Defensa del Abismo de Helm, Rohan contra Isengard
 mno_custom_battle_scenario_5|Escaramuza, Facciones norteñas contra Rhûn
 mno_custom_battle_scenario_6|Asedio, Orcos contra Enanos
 mno_custom_battle_scenario_7|Emboscada, Orcos contra Bosque Negro
+mno_custom_battle_scenario_8|La última defensa del Pueblo de Durin
+mno_custom_battle_scenario_88|Persiguiendo una patrulla de exploradores orcos
 mno_custom_battle_scenario_11|Batallas de prueba (¡Para equilibrar el juego!)
 mno_custom_battle_scenario_10|Batalla de prueba de escenarios
 mno_troll_battle_scenario|Batallas de prueba de trolls
 mno_warg_battle_scenario|Batallas de prueba de huargos
 mno_build_your_own_scene|** Construir tu propio escenario para TLD **
-menu_tutorial|^^TLD tiene varias características desconocidas en M&B Native. Estas están descritas detalladamente sin revelar sorpresas en un PDF incluido con el mod. Para el tutorial de iniciación sobre las mecánicas básicas del juego, practica con el módulo Native.
-menu_tutorial|^^TLD tiene varias características desconocidas en M&B Native. Estas están descritas detalladamente sin revelar sorpresas en un PDF incluido con el mod. Para el tutorial de iniciación sobre las mecánicas básicas del juego, practica con el módulo Native.
+menu_tutorial|^^ Te damos la bienvenida al Tutorial de Combate de Mount & Blade. Aquí aprenderás las mecánicas básicas del combate, así como una breve introducción a comandar tropas en las batallas campales.
 mno_tutorial_1|Tutorial #1: Movimientos básicos y selección de armas. {s1}
 mno_tutorial_2|Tutorial #2: Luchar con escudo. {s2}
 mno_tutorial_3|Tutorial #3: Luchar sin escudo. {s3}
@@ -40,6 +41,9 @@ mno_leave_custom_battle_2|Cancelar.
 menu_custom_battle_end|^^^^^^La batalla ha finalizado. {s1} Tu bando ha acabado con {reg5} enemigos y perdido {reg6} tropas en la batalla. Has matado personalmente a {reg7} oponentes.
 mno_replay|Volver a jugar la batalla.
 mno_continue_dot|Continuar.
+menu_custom_battle_durin_end|^^^^^^La desesperada última defensa fue una gesta admirable, pero la derrota era inevitable.^^ Tú y tus parientes matasteis a {reg5} enemigos.^Tú abatiste personalmente a {reg7} oponentes en el combate.
+mno_replay_cbd|Volver a jugar la batalla.
+mno_continue_dot_cbd|Continuar.
 mno_dot_go_back|.                 Volver atrás
 menu_start_good|^^^^^^^^^^Elige tu raza:
 mno_start_ma|HOMBRE
@@ -56,7 +60,7 @@ mno_start_em|un HOMBRE, subyugado por Sauron
 menu_start_hand|^^^^^^^^^Tu señor es la Mano Blanca^Elige tu raza:
 mno_start_whor|un ORCO, servidor de la Mano Blanca
 mno_start_isur|un URUK-HAI, engendrado en Isengard
-mno_start_duma|un HOMBRE de las Tierras Pardas, en la llanura occidental
+mno_start_duma|un HOMBRE de las Tierras Brunas, en la llanura occidental
 menu_start_good_man|^^^^^^^^^^Elige a tu pueblo:
 mno_start_go|GONDOR, el Reino de la Torre Blanca
 mno_start_ro|ROHAN, los Señores de los Caballos
@@ -113,9 +117,11 @@ mno_camp_troop|Pasar revista a tus{reg10? tropas:}{reg12? y:}{reg11? prisioneros
 mno_camp_action|Usar un objeto.
 mno_camp_wait_here|Acampar aquí durante algún tiempo.
 mno_camp_options|Cambiar opciones de TLD.
+mno_Dev_Menu|Menú de Desarrollo
+menu_dev_menu|Éstas son opciones de desarrollo que te proporcionarán muchos trucos y herramientas con las que jugar.^^ Sin embargo, esto ocasionará que aparezcan eventos, funciones y cambios en la campaña que están todavía en desarrollo y que podrían romper tu partida.^^ ¡Usa estas opciones bajo tu propia responsabilidad! ^^ Además, cuando informes de bugs, por favor haznos saber si estabas usando el Menú de Desarrollo.
 mno_Cheat_enable|Activar las opciones de trucos/modding.
 menu_game_options|^^^^^^^^Haz click sobre una opción para cambiarla:
-mno_game_options_war_level_start|La guerra empieza al alcanzar el nivel: {s1}\t\t\t\t\t\t\t\t\t\t\t\t\t\t  
+mno_game_options_war_level_start|La guerra empieza al alcanzar el nivel: {s1}  
 mno_game_options_restrict_items|Restringir el equipamiento del jugador: {s7}
 mno_game_options_formations|IA y Formaciones de batalla: {s7}
 mno_game_options_siege_ai|IA de asedios avanzada:  {s7}
@@ -135,7 +141,7 @@ mno_game_options_start_back|Atrás.
 menu_camp_tweaks|^^^^^^^^Elige la opción que te gustaría ajustar.
 mno_tweak_options_compat|Ajustes de compatibilidad...
 mno_tweak_options_strat|Ajustes estratégicos...
-mno_tweak_options_battlefield_ai|Ajustes de IA de batalla...\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_tweak_options_battlefield_ai|Ajustes de IA de batalla...
 mno_tweak_options_back|Volver al menú de opciones.
 menu_camp_compat_tweaks|^^^^^^^^Haz clic sobre una opción para cambiarla (Mantén pulsado Mayús para reducirla):^(Esto mejora la compatibilidad y no son trucos)
 mno_game_options_compat_party|Máximo número de grupos: {s1}
@@ -250,6 +256,7 @@ menu_construct_ladders|Como miembro del grupo con la mejor habilidad de ingenier
 mno_build_ladders_cont|Hacerlo.
 menu_castle_attack_walls_simulate|{s4}^^Tus bajas: {s8}^^Bajas enemigas: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Tus bajas: {s8}^^Bajas aliadas: {s9}^^Bajas enemigas: {s10}
+menu_castle_taken_by_friends|Aquí no hay nada que ver.
 menu_castle_taken|{s3} ha caído con la fuerza inexorable de tus tropas, y ahora tienes control absoluto de{reg2? la ciudad:l castillo}.{reg1? Podría decirse que no hay nada que te impida quedártelo...:}
 menu_castle_taken_2|{s3} ha caído con la fuerza inexorable de tus tropas, y ahora tienes control absoluto del castillo. Es hora de comunicárselo a {s9}, y hacerle saber de tu noble victoria. {s5}
 mno_castle_taken_no_claim|No pedir recompensa.
@@ -282,6 +289,7 @@ mno_talk_to_castle_commander|Visitar el cuartel de {s61}.
 mno_speak_with_elder|Hablar con el {s6}.
 mno_isengard_underground|Ir a las cavernas subterráneas.
 mno_tirith_toplevel|Ir al nivel superior.
+mno_erebor_gates|Visitar las Grandes Puertas.
 mno_town_leave|Irse...
 mno_town_leave_door|Salir del área
 menu_player_initiated_siege_result|Atacaste este centro bajo el estandarte de {s2}.
@@ -328,6 +336,7 @@ menu_player_added_to_allow_follow|^^^^^Ha llegado un mensajero a decirte que, a 
 mno_player_added_to_allow_follow_close|Cerrar
 menu_center_besieged_event|^^^^^Ha llegado un mensajero a informarte de que {s2} of {s3} ha puesto {s1} bajo asedio.
 mno_center_besieged_event_close|Cerrar
+menu_guardian_party_spawned|^^^^^Los exploradores informan de que {s6} ha reunido un gran ejeército en las cercanías de {s7}, en un último y desesperado intento por defender la capital.
 mno_intro_next|Continuar...
 mno_start_defend_caravan|¡Defiende la caravana!
 mno_start_raid_caravan|¡Asalta la caravana!
@@ -347,6 +356,8 @@ mno_lord_field_ai|Los señores tienen IA de batalla mejorada:  {s7}
 mno_horse_archer_field_ai|Los arqueros a caballo tienen IA de batalla mejorada:  {s7}
 mno_vs_orcs_field_ai|Los arqueros tienen mejor puntería contra orcos (no apuntan por encima de sus cabezas):  {s7}
 mno_battlefield_animals|Compañeros animales -sin contar huargos / caballos- aparecen en batalla:  {s7}
+mno_slow_when_wounded|Los agentes heridos se vuelven más lentos:  {s7}
+mno_battle_encounter_effects|Efectos especiales de facción en el campo de batalla (ej. tormentas, nieblas):  {s7}
 mno_defend_refugees|Mantenerte ojo avizor por si aparecen saqueadores...
 mno_attack_refugees|Atacar la caravana de refugiados...
 mno_leave_refugees|Dejarlos en paz por ahora...
@@ -375,7 +386,7 @@ mno_cb_gondor7|Beórnidas
 menu_custom_battle_choose_faction3|^^^^^^^^^^Elige una facción del mal
 mno_cb_mordor|Mordor
 mno_cb_mordor1|Isengard
-mno_cb_mordor2|Tierras Pardas
+mno_cb_mordor2|Tierras Brunas
 mno_cb_mordor3|Haradrim
 mno_cb_mordor4|Orientales
 mno_cb_mordor5|Moria
@@ -387,15 +398,17 @@ mno_next_rescue_scene_door|¡Seguir adelante!
 mno_pick_troops1|Elige compañeros para la misión, {reg0} seleccionados
 menu_pick_troops|¿Quién quieres que te acompañe en ésta misión de sigilo?  Por el momento has elegido {reg0} compañeros. Puedes llevarte contigo hasta 10 tropas.
 mno_go_forward|Terminar de elegir compañeros y continuar.
-menu_burial_mound|Te aproximas al túmulo funerario de {s1} de {s2}.  Recubierto por completo por las melladas armas de sus enemigos caídos.
+menu_burial_mound|Te aproximas al túmulo funerario de {s1} de {s2}, que cayó en batalla contra las fuerzas de {s28}.  A sus pies se apilan las melladas armas de sus enemigos caídos.
 mno_pay_respects|Arrodillarte y mostrar tus respetos.
 mno_swear_oath|¡Pronunciar un juramento de venganza!
 mno_despoil|Profanar el lugar
 mno_leave_mound|Dejar el túmulo.
 menu_burial_mound_respects|Te arrodillas y le muestras a {s1} tus respetos, murmurando en silencio una plegaria por un rápido viaje de ida a la otra vida. No hay nada más que quede por hacer aquí.
 menu_burial_mound_oath|Comienzas a pronunciar sonoramente un juramento de venganza por la muerte de {s4}. Buscarás y perseguirás sin descanso a las fuerzas de {s3} hasta su destrucción total y absoluta. A tus palabras se las lleva el viento, y ¿quién te dice que no se hayan oído más allá del gran mar?
+menu_funeral_pyre_oath|Pronuncias en voz alta un juramento de venganza por la muerte de {s4}. Buscarás y perseguirás sin descanso a las fuerzas de {s3}, y las destruirás. Tus palabras llegan lejos, arrastradas por el vientos, ¿y quién te dice que no se hayan oído más allá del mar?
+mno_leave_pyre_oath|Dejar la pira.
 menu_burial_mound_despoil|Derribas el monumento a {s1} con tus propias manos y mancillas el lugar con maldiciones, insultos y todo tipo de comportamientos deplorables. Tus seguidores retroceden con miedo, temiendo la reacción de los muertos, pero parece que te has forjado un renovado respeto gracias a tu denostada malicia.
-menu_funeral_pyre|Te acercas a los restos carbonizados de la pira funeraria de {s3} de {s2}. Donde su cuerpo fue cremado ceremoniosamente por sus guardias personales. No queda nada de valor.
+menu_funeral_pyre|Te acercas a los restos carbonizados de la pira funeraria de {s3} de {s2}, que cayó en batalla contra las fuerzas de {s28}. Aquí su cuerpo fue cremado ceremoniosamente por sus guardias personales. No queda nada de valor. 
 mno_leave_pyre|Dejar la pira.
 menu_town_ruins|Cuando te acercas ves que {s1} está {s2}
 mno_ruin_menu_0|Explorar el lugar.

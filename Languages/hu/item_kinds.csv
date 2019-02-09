@@ -32,7 +32,7 @@ itm_rohirrim_courser|Rohír rohamló
 itm_rohirrim_hunter|Rohír vadászló
 itm_rohirrim_courser2|Rohír rohamló
 itm_rohan_warhorse|Rohír csataló
-itm_thengel_warhorse|Thengel őrségének csatalova
+itm_thengel_warhorse|Rohír nehéz csataló
 itm_rhun_horse_a|Rhûni ló
 itm_rhun_horse_b|Rhûni ló
 itm_rhun_horse_d|Rhûni ló
@@ -40,8 +40,8 @@ itm_rhun_horse_e|Rhûni nehéz ló
 itm_rhun_horse_f|Rhûni nehéz ló
 itm_rhun_horse_g|Rhûni nehéz ló
 itm_rhun_horse_h|Rhûni nehéz ló
-; itm_dale_horse|Rhovanion Horse
-itm_dale_warhorse|Suhatagi csataló
+itm_dale_horse|Rhovanioni ló
+itm_dale_warhorse|Rhovanioni csataló
 itm_riv_warhorse|Völgyzugolyi csataló
 itm_riv_warhorse2|Imlardisi paripa
 itm_mordor_warhorse|Mordori csataló
@@ -66,27 +66,19 @@ itm_wargarmored_2b|Páncélozott varg
 itm_wargarmored_2c|Páncélozott varg
 itm_wargarmored_3a|Páncélozott varg
 itm_warg_reward|Böszme varg
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
+itm_axe_a|Északlakó balta
+itm_axe_b|Északlakó szakállas balta
+itm_axe_c|Északlakó balta
+itm_axe_d|Északlakó balta
 itm_tree_trunk_club_a|Fatörzs
-itm_tree_trunk_club_b|Fatörzs
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
-itm_giant_hammer|Óriási kalapács
+itm_long_bearded_axe|Északlakó szakállas hosszúbalta
+itm_2_handed_axe|Északlakó hosszúbalta
+itm_free_giant_hammer|Óriási kalapács
 itm_giant_mace|Óriási buzogány
-itm_giant_mace_b|Óriási szöges buzogány
-itm_olog_feet_boots|Olog-hai talp
-itm_olog_head_helm|Olog-hai fej
-itm_olog_head_helm_b|Olog-hai fej
-itm_olog_head_helm_c|Olog-hai fej
-itm_olog_body|Olog-hai páncélzat
-itm_olog_body_b|Olog-hai páncélzat
-itm_olog_hands|Olog-hai kezek
+itm_troll_shield_a|Troll pajzs
 itm_arrows|Nyílvesszők
 itm_gondor_arrows|Gondori nyílvesszők
-itm_gondor_auxila_arrows|Gondormódi nyílvesszők
+itm_orc_javelin|Ork nehéz gerely
 itm_khergit_arrows|Fogazott nyílvesszők
 itm_rohan_arrows_2|Rohír nyílvesszők
 itm_harad_arrows|Haradrim nyílvesszők
@@ -96,30 +88,11 @@ itm_woodelf_arrows|Erdőtünde nyílvesszők
 itm_elven_arrows|Tünde nyílvesszők
 itm_orc_hook_arrow|Ork horgas nyílvesszők
 itm_isengard_arrow|Vasudvardi nyílvesszők
-itm_pilgrim_disguise|Zarándok álruha
 itm_leather_gloves|Bőrkesztyűk
 itm_mail_mittens|Lánckesztyűk
 itm_leather_boots|Bőrcsizmák
-itm_black_dress|Fekete ruha
-itm_blackwhite_dress|Női ruha
-itm_white_tunic_a|Egyszerű tunika
-itm_white_tunic_b|Egyszerű tunika
-itm_white_tunic_c|Tunikás zubbony
-itm_blue_tunic|Kék tunika
+itm_white_tunic_a|Polgári öltözet
 itm_black_tunic|Fekete tunika
-itm_green_tunic|Zöld tunika
-itm_red_tunic|Piros tunika
-itm_leather_apron|Bőrkötény
-itm_leather_jerkin|Bőrzeke
-itm_fur_coat|Suhatagi kabát
-itm_green_dress|Zöld ruha
-itm_tld_tunic|Tunika
-itm_gondor_fine_outfit_dress|Szép öltözet
-itm_rohan_fine_outfit_dale_dress|Szép öltözet
-itm_robe_generic_dress|Köpeny
-itm_wimple_a|Fejkendő
-itm_wimple_with_veil|Fejkendő
-itm_fine_hat|Szép kalap
 itm_shortened_spear|Megrövidített lándzsa
 itm_spear|Lándzsa
 itm_light_lance|Könnyű kopja
@@ -137,11 +110,11 @@ itm_dwarf_short_bow|Törp rövid íj
 itm_harad_bow|Haradi visszacsapó íj
 itm_lg_bow|Sas Őrség íja
 itm_riv_bow|Völgyzugolyi íj
-itm_glorfi_bow|Glorfindeili íj
+itm_glorfi_bow|Glorfindeli íj
 itm_lorien_bow|Gakadhrimi íj
 itm_isengard_large_bow|Vasudvardi hatalmas íj
 itm_dale_bow|Suhatagi íj
-; itm_uruk_bow_pl|Strong Orc Bow
+itm_uruk_bow|Ork erős íj
 itm_mirkwood_bow|Bakacsinerdei íj
 itm_dunland_javelin|Dúnföldi gerely
 itm_orc_throwing_arrow|Ork dobónyíl
@@ -174,7 +147,6 @@ itm_arnor_sword_f|Arnoriai rövidkard
 itm_riv_helm_a|Völgyzugolyi főkötő
 itm_riv_helm_b|Völgyzugolyi íjászsisak
 itm_riv_helm_c|Völgyzugolyi gyalogsági sisak
-itm_riv_helm_glorfi|Glorfi haja
 itm_riv_tiara|Tündeúri tiara
 itm_riv_shield_a|Völgyzugolyi pajzs
 itm_riv_shield_b|Völgyzugolyi pajzs
@@ -226,17 +198,17 @@ itm_gondor_dolamroth_helm|Dol Amrothi sisak
 itm_swan_knight_helm|Hattyúlovag sisak
 itm_gondor_lamedon_helm|Lamedoni sisak
 itm_gondor_lamedon_leader_helm|Lamedoni fősisak
-; itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
-; itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
-; itm_blackroot_footman|Blackroot Vale Jerkin
-; itm_blackroot_warrior|Blackroot Vale Gambeson
-; itm_blackroot_leader|Blackroot Vale Mail
+itm_blackroot_archer|Feketegyökér-völgyi köpenyes csatakabát
+itm_blackroot_bowman|Feketegyökér-völgyi köpenyes zeke
+itm_blackroot_footman|Feketegyökér-völgyi zeke
+itm_blackroot_warrior|Feketegyökér-völgyi csatakabát
+itm_blackroot_leader|Feketegyökér-völgyi láncing
 itm_blackroot_hood|Fekete csuklya
 itm_dol_hauberk|Dol Amrothi láncvért
 itm_dol_heavy_mail|Dol Amrothi nehézvért
 itm_dol_padded_coat|Dol Amrothi párnázott kabát
 itm_dol_shirt|Dol Amrothi ing
-itm_dol_very_heavy_mail|Dol Amrothi súlyos láncing
+itm_dol_very_heavy_mail|Dol Amrothi súlyos vért
 itm_dol_greaves|Dol Amrothi lábszárvédő
 itm_dol_shoes|Dol Amrothi könnyű csizmák
 itm_lamedon_clansman|Lamedoni nemzetségtag páncélzat
@@ -249,7 +221,7 @@ itm_lamedon_vet_warrior|Lamedoni veterán harcospáncélzat
 itm_lamedon_hood|Csuklya
 itm_pinnath_archer|Pinnath Gelini íjászpáncélzat
 itm_pinnath_footman|Pinnath Gelini gyalogospáncélzat
-itm_pinnath_leader|Pinnath Gelini parancsnoki páncélzat
+itm_pinnath_leader|Pinnath Gelini lovagpáncélzat
 itm_pinnath_vet_footman|Pinnath Gelini veterán gyalogospáncélzat
 itm_pinnath_warrior|Pinnath Gelini harcospáncélzat
 itm_pel_footman|Pelargiri gyalogospáncélzat
@@ -272,13 +244,13 @@ itm_lossarnach_cloth_cap|Lossarnachi szövetsapka
 itm_lossarnach_leather_cap|Lossarnachi bőrsapka
 itm_lossarnach_scale_cap|Lossarnachi pikkelysapka
 itm_lossarnach_greaves|Lossarnachi lábszárvédő
-itm_gondor_shield_a|Gondori fegyverhordozói pajzs
+itm_gondor_shield_a|Gondori négyszögpajzs
 itm_gondor_shield_b|Gondori levélpajzs
 itm_gondor_shield_c|Gondori toronypajzs
 itm_gondor_shield_d|Gondori levélpajzs
-itm_gondor_shield_e|Gondori királyi pajzs
-itm_gon_tab_shield_a|Gondori címeres kerek pajzs
-itm_gon_tab_shield_b|Gondori címeres szögletes pajzs
+itm_gondor_shield_e|Gondori fellegvárpajzs
+itm_gon_tab_shield_a|Gondori címeres körpajzs
+itm_gon_tab_shield_b|Gondori címeres négyszögpajzs
 itm_gon_tab_shield_c|Gondori címeres levélpajzs
 itm_gon_tab_shield_d|Gondori címeres toronypajzs
 itm_amroth_sword_a|Dol Amrothi kard
@@ -310,13 +282,12 @@ itm_lorien_armor_f|Lórieni elit páncélzat
 itm_lorien_boots|Lothlórieni csizmák
 itm_lorien_shield_b|Lórieni toronypajzs
 itm_lorien_shield_c|Lórieni levélpajzs
-itm_lorien_round_shield|Lórieni kerek pajzs
+itm_lorien_round_shield|Lórieni körpajzs
 itm_lorien_helm_a|Lórieni íjászsisak
 itm_lorien_helm_b|Lórieni íjászsisak
 itm_lorien_helm_c|Lórieni gyalogsági sisak
 itm_orc_chain_greaves|Ork lábszárvédő
-
-; itm_orc_coif|Orc Skullcap
+itm_orc_coif|Ork koponyasisak
 itm_orc_greaves|Ork lánccsizma
 itm_orc_ragwrap|Ork kapcarongy
 itm_orc_furboots|Ork prémcsizmák
@@ -357,10 +328,10 @@ itm_isen_uruk_helm_d|Uruk-hai kapitányi sisak
 itm_isen_uruk_helm_e|Uruk-hai nyomkövetői sisak
 itm_isen_uruk_helm_f|Uruk-hai nyomkövetői sisak
 itm_uruk_pike_a|Uruk pika
-itm_uruk_pike_b|Uruk pika
+itm_uruk_pike_b|Mordori pika
 itm_uruk_falchion_a|Uruk falchion
 itm_uruk_falchion_b|Uruk falchion
-itm_uruk_spear|Uruk lándzsa
+itm_uruk_spear|Mordori lándzsa
 itm_uruk_skull_spear|Uruk koponyás lándzsa
 itm_uruk_voulge|Uruk voulge
 itm_uruk_heavy_axe|Uruk nehéz balta
@@ -381,9 +352,9 @@ itm_twohand_wood_club|Hatalmas fabunkó
 itm_bone_cudgel|Csonthusáng
 itm_skull_club|Koponyás bunkó
 itm_orc_club_a|Ork bunkó
-itm_orc_club_b|Ork bunkó
+itm_orc_club_b|Varglovas bunkó
 itm_orc_club_c|Tüskés ork bunkó
-itm_orc_club_d|Tüskés ork bunkó
+itm_orc_club_d|Gonosz buzogány
 itm_orc_sledgehammer|Ork kőtörő-kalapács
 itm_orc_simple_spear|Ork lándzsa
 itm_orc_skull_spear|Ork koponyás lándzsa
@@ -399,7 +370,7 @@ itm_orc_throwing_axes|Ork dobófejsze
 itm_orc_bow|Ork íj
 itm_orc_shield_a|Ork pajzs
 itm_orc_shield_b|Ork pajzs
-itm_orc_shield_c|Ork pajzs
+itm_orc_shield_c|Ork toronypajzs
 itm_mordor_orc_shield_a|Mordori ork pajzs
 itm_mordor_orc_shield_b|Mordori ork pajzs
 itm_mordor_orc_shield_c|Mordori ork pajzs
@@ -411,23 +382,13 @@ itm_mordor_uruk_shield_c|Mordori uruk pajzs
 itm_mordor_man_shield_a|Mordori ember pajzs
 itm_mordor_man_shield_b|Mordori ember pajzs
 itm_angmar_shield|Angmari pajzs
-
-; itm_orc_nosehelm|Orc Nosehelm
-
+itm_orc_nosehelm|Ork orrsisak
 ; itm_orc_kettlehelm|Orc Kettlehelm
-
 itm_orc_buckethelm|Ork vödörsisak
-
 ; itm_orc_morion|Orc Morion
-
 itm_orc_beakhelm|Ork csőrsisak
-
 itm_orc_bughelm|Ork bogársisak
-
 ; itm_orc_visorhelm|Orc Visorhelm
-
-; itm_orc_visorhelm_pl|Orc Visorhelm
-
 itm_m_orc_light_a|Mordori ork könnyű páncélzat
 itm_m_orc_light_b|Mordori ork könnyű páncélzat
 itm_m_orc_light_c|Mordori ork könnyű páncélzat
@@ -439,21 +400,13 @@ itm_m_orc_heavy_c|Mordori ork nehéz páncélzat
 itm_m_orc_heavy_d|Mordori ork nehéz páncélzat
 itm_m_orc_heavy_e|Mordori ork nehéz páncélzat
 itm_m_uruk_light_a|Uruk hámpáncél
-
 itm_m_uruk_light_b|Uruk bőrpáncélzat
-
 itm_m_uruk_light_c|Uruk könnyű páncéling
-
 ; itm_m_uruk_med_a|Uruk Heavy Leather
-
-; itm_m_uruk_med_b|Uruk Heavy Mail
-
+itm_m_uruk_med_b|Uruk nehéz láncing
 ; itm_m_uruk_med_c|Uruk Light Scale
-
 ; itm_m_uruk_heavy_a|Uruk Heavy Scale
-
 ; itm_m_uruk_heavy_b|Uruk Platemail
-
 ; itm_m_uruk_heavy_c|Lugburz Platemail
 itm_m_uruk_heavy_j|Uruk nehéz páncélzat
 itm_m_uruk_heavy_k|Uruk őrpáncélzat
@@ -507,7 +460,7 @@ itm_dun_helm_b|Dúnmódi agancssapka
 itm_dun_helm_c|Dúnmódi magas sisak
 itm_dun_helm_d|Dúnmódi magas sisak
 
-; itm_dun_helm_e|Dun Tall War Helm\t\t\t\t\t\t\t\t  
+itm_dun_helm_e|Dúnmódi agancssisak
 itm_dun_shield_a|Dúnmódi pajzs
 itm_dun_shield_b|Dúnmódi pajzs
 itm_dun_berserker|Dúnföldi törzsfőnöki kard
@@ -518,22 +471,26 @@ itm_dunland_spear|Dúnmódi lándzsa
 itm_dunnish_pike|Dúnmódi pika
 itm_rohan_armor_a|Rohani ing
 itm_rohan_armor_e|Rohani láncvért
-; itm_rohan_armor_h|Rohan Leather Armor
+itm_rohan_armor_h|Rohani bőrpáncélzat
 itm_rohan_armor_k|Rohani láncvért
-itm_rohan_armor_n|Rohani pikkelypáncélzat
-itm_rohan_armor_p|Rohani páncélzat
-; itm_rohan_armor_s|Rohan Guard Armor
+itm_rohan_recruit|Rohani párnázott zeke
+; itm_rohan_leather|Rohan Leather Vest
+itm_rohan_mail|Rohani láncvért
+itm_rohan_rider|Rohani lovaspáncélzat
+itm_rohan_scale|Rohani pikkelypáncélzat
+; itm_rohan_surcoat|Rohan Surcoat
+itm_rohan_guard|Rohani őrpáncélzat
 itm_rohan_light_helmet_a|Rohani könnyű sisak
 itm_rohan_light_helmet_b|Rohani könnyű sisak
-itm_rohan_inf_helmet_a|Rohani gyalogsági sisak
-itm_rohan_inf_helmet_b|Rohani gyalogsági sisak
-itm_rohan_archer_helmet_a|Rohani íjászsisak
-itm_rohan_archer_helmet_b|Rohani íjászsisak
-itm_rohan_archer_helmet_c|Rohani lovasíjászsisak
-itm_rohan_cav_helmet_a|Rohani lovassági sisak
-itm_rohan_cav_helmet_b|Rohani lovassági sisak
-itm_rohan_cav_helmet_c|Rohani lovassági sisak
-itm_rohan_captain_helmet|Rohani kapitányi sisak
+; itm_rohan_inf_helmet_a|Rohan Eyeguard Helm
+; itm_rohan_inf_helmet_b|Rohan Eyeguard Helm
+; itm_rohan_archer_helmet_a|Rohan Nasal Helm
+; itm_rohan_archer_helmet_b|Rohan Nasal Helm
+; itm_rohan_archer_helmet_c|Rohan Guard Helm
+; itm_rohan_cav_helmet_a|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_b|Rohan Cavalry Helm
+; itm_rohan_cav_helmet_c|Rohan Cavalry Helm
+; itm_rohan_captain_helmet|Rohan Captain Helm
 itm_rohan_shield_a|Rohani pajzs
 itm_rohan_shield_b|Rohani pajzs
 itm_rohan_shield_c|Rohani pajzs
@@ -555,12 +512,10 @@ itm_rohan_2h_sword|Rohani csatakard
 itm_mirkwood_light_scale|Könnyű erdőtünde pikkelypáncél
 itm_mirkwood_armor_a|Könnyű bőrpáncél
 itm_mirkwood_armor_b|Könnyű összetűzött pikkelypáncélzat 
-
-; itm_mirkwood_armor_c|Mirkwood Royal Mail\t\t\t\t\t\t\t
+; itm_mirkwood_armor_c|Mirkwood Royal Mail
 itm_mirkwood_armor_d|Könnyű összetűzött köpönyeg
 itm_mirkwood_armor_e|Könnyű láncing és köpönyeg
-
-; itm_mirkwood_armor_f|Mirkwood Leafscale\t\t\t\t\t\t\t\t\t   
+; itm_mirkwood_armor_f|Mirkwood Leafscale
 itm_mirkwood_great_spear|Bakacsinerdei nagy lándzsa
 itm_mirkwood_war_spear|Bakacsinerdei csatalándzsa
 itm_mirkwood_short_spear|Bakacsinerdei lándzsa
@@ -579,7 +534,7 @@ itm_harad_tunic|Haradi tunika
 itm_harad_padded|Harondori párnázott páncélzat
 itm_harad_hauberk|Harondori láncvért
 itm_harad_lamellar|Harasjalai páncélzat
-; itm_harad_heavy|Harad Noble Armor
+itm_harad_heavy|Harad nemesipáncélzat
 itm_harad_skirmisher|Haradi könnyű garbó
 itm_harad_archer|Haradi íjászpáncélzat
 itm_black_snake_armor|Marankai páncélzat
@@ -610,11 +565,11 @@ itm_harad_dagger|Haradi kés
 itm_harad_short_spear|Haradi rövid lándzsa
 itm_harad_long_spear|Haradi lándzsa
 itm_eagle_guard_spear|Harasjalai lándzsa
-itm_harad_long_shield_a|Haradi Leopárd pajzs
+itm_harad_long_shield_a|Haradi Leopárdpajzs
 itm_harad_long_shield_b|Haradi bronzpajzs
-itm_harad_long_shield_c|Haradi napos pajzs
-itm_harad_long_shield_d|Haradi kígyós pajzs
-itm_harad_long_shield_e|Haradi kígyós pajzs
+itm_harad_long_shield_c|Haradi Nappajzs
+itm_harad_long_shield_d|Haradi Kígyópajzs
+itm_harad_long_shield_e|Haradi Kígyópajzs
 itm_harad_shield_a|Harondori pajzs
 itm_harad_shield_b|Harondori tányérpajzs
 itm_harad_shield_c|Harondori tányérpajzs
@@ -648,12 +603,12 @@ itm_khand_light|Khandi kilt
 itm_khand_foot_lam_a|Khandi páncélzat
 itm_khand_foot_lam_b|Khandi páncélzat
 itm_khand_foot_lam_c|Khandi páncélzat
-itm_khand_heavy_lam|Khandi nehéz lemezpáncél
-itm_khand_light_lam|Khandi könnyű lemezpáncél
-itm_khand_med_lam_b|Khandi középnehéz lemezpáncél
-itm_khand_med_lam_c|Khandi középnehéz lemezpáncél
-itm_khand_med_lam_d|Khandi középnehéz lemezpáncél
-itm_khand_noble_lam|Khandi nemes páncélzat
+itm_khand_heavy_lam|Khandi nehéz lemezespáncél
+itm_khand_light_lam|Khandi könnyű lemezespáncél
+itm_khand_med_lam_b|Khandi középnehéz lemezespáncél
+itm_khand_med_lam_c|Khandi középnehéz lemezespáncél
+itm_khand_med_lam_d|Khandi középnehéz lemezespáncél
+itm_khand_noble_lam|Khandi nemesi páncélzat
 itm_variag_greaves|Variag lábszárvédő
 itm_khand_axe_great|Khandi nagy balta
 itm_khand_axe_winged|Khandi szárnyas balta
@@ -668,7 +623,7 @@ itm_khand_pitsword|Gödörharcos kard
 itm_khand_tulwar|Khandi szablya
 itm_khand_2h_tulwar|Khandi szablya
 itm_khand_lance|Khandi kopja
-itm_easterling_round_horseman|Keletlakó kerek pajzs
+itm_easterling_round_horseman|Keletlakó körpajzs
 itm_variag_gladiator_shield|Variag gladiátorpajzs
 itm_easterling_hawk_shield|Keletlakó sólyompajzs
 itm_rhun_bull1_shield|Rhûni pajzs
@@ -703,7 +658,6 @@ itm_rhun_greataxe|Rhûni nagy balta
 itm_rhun_battleaxe|Rhûni csatabalta
 ; itm_rhun_falchion|Savage Falchion
 itm_rhun_glaive|Rhûni tőrlándzsa
-
 ; itm_rhun_greatfalchion|Savage Great Falchion
 ; itm_rhun_greatsword|Savage Great Sword
 ; itm_rhun_shortsword|Savage Shortsword
@@ -712,17 +666,17 @@ itm_rhun_glaive|Rhûni tőrlándzsa
 itm_rhun_shield|Rhûni levélpajzs
 itm_dale_light_a|Suhatagi nemzetőr zubbony
 
-; itm_dale_light_b|Northmen Light Lamellar
+itm_dale_light_b|Északlakó könnyű lemezespáncél
 
-; itm_dale_med_a|Northmen Heavy Lamellar
+itm_dale_med_a|Északlakó nehéz lemezespáncél
 
 itm_dale_med_b|Suhatagi bőrpáncélzat
 
-; itm_dale_med_c|Dale Leather Over Mail
+itm_dale_med_c|Suhatagi láncingre vett bőrpáncélzat
 
-; itm_dale_med_d|Dale Lamellar Armor
+itm_dale_med_d|Suhatagi lemezespáncélzat
 
-; itm_dale_heavy_a|Dale Lamellar Over Mail
+itm_dale_heavy_a|Suhatagi láncingre vett lemezespáncél
 
 ; itm_dale_heavy_b|Dale Plated Coat
 
@@ -744,14 +698,14 @@ itm_dale_helmet_c|Suhatagi gyalogsági sisak
 
 itm_dale_sword|Suhatagi rövidkard
 itm_dale_sword_long|Suhatagi hosszúkard
-itm_dale_sword_broad|Suhatagi széleskard
+; itm_dale_sword_broad|Dale Infantry Sword
 itm_dale_pike|Suhatagi lándzsa 
 itm_dale_billhook|Suhatagi kampóbárd
-; itm_dale_shield_a|Dale Tower Shield
+itm_dale_shield_a|Suhatagi toronypajzs
 
-; itm_dale_shield_b|Dale Tower Shield
+itm_dale_shield_b|Suhatagi toronypajzs
 
-; itm_dale_shield_c|Dale Round Shield
+itm_dale_shield_c|Suhatagi toronypajzs
 itm_dale_shield_d|Suhatagi pajzs
 itm_umb_armor_a|Kalóz bőrpáncélzat
 
@@ -780,24 +734,32 @@ itm_umb_helm_d|Kalóz rabló sisak
 itm_umb_hood|Fekete csuklya
 
 itm_corsair_boots|Kalóz csizmák
-itm_umb_shield_a|Kalóz tányérpajzs
+
+itm_umb_shield_a|Kalóz pajzs
+
 itm_umb_shield_b|Kalóz tányérpajzs
+
 itm_umb_shield_c|Kalóz tányérpajzs
+
 itm_umb_shield_d|Kalóz tányérpajzs
-itm_umb_shield_e|Kalóz tányérpajzs
+
+; itm_umbar_spear|Umbar Short Spear
+
 itm_umbar_cutlass|Umbari tengerészkard
+
 itm_kraken|Kraken tengerészkard
+
 ; itm_umbar_rapier|Umbar Boarding Sword
 
 itm_corsair_harpoon|Kalóz szigony
 itm_corsair_sword|Kalóz eket
 
 ; itm_corsair_throwing_dagger|Crooked Throwing Daggers
-itm_umbar_pike|Umbari pika
+; itm_umbar_pike|Corsair Trident
 ; itm_woodman_tunic|Woodmen Tunic
 
 ; itm_woodman_scout|Woodmen Scout Cape
-; itm_woodman_padded|Woodmen Padded Armor
+itm_woodman_padded|Erdőlakó párnázott páncélzat
 itm_beorn_tunic|Beornfi tunika
 itm_beorn_padded|Beornfi párnázott páncélzat
 itm_beorn_heavy|Beornfi nehéz páncélzat
@@ -805,29 +767,29 @@ itm_beorn_berserk|Beornfi Medveharcos felszerelés
 itm_beorn_chief|Beornfi törzsfőnöki tunika
 
 ; itm_beorn_helmet|Bear Skullcap
-itm_beorn_shield|Északi pajzs
+itm_beorn_shield|Északlakó pajzs
 itm_beorn_axe|Beornfi balta
 ; itm_beorn_staff|Woodmen Staff
 itm_beorn_battle_axe|Beornfi csatabalta
-; itm_dwarf_shield_a|Dwarven Angular Shield
+itm_dwarf_shield_a|Törpmódi hatszögpajzs
 
-; itm_dwarf_shield_b|Dwarven Tower Shield
+itm_dwarf_shield_b|Törpmódi toronypajzs
 
-; itm_dwarf_shield_c|Dwarven Fighting Shield
+itm_dwarf_shield_c|Törpmódi küzdőpajzs
 
-; itm_dwarf_shield_d|Dwarven Round Shield
+itm_dwarf_shield_d|Törpmódi kerekpajzs
 
-itm_north_round_shield|Törp pajzs
+itm_north_round_shield|Északlakó körpajzs
 
-itm_free_dwarf_shield_g|Törp pajzs
+itm_free_dwarf_shield_g|Törpmódi pajzs
 
-itm_free_dwarf_shield_i|Törp pajzs
+itm_free_dwarf_shield_i|Törpmódi pajzs
 
-itm_free_dwarf_shield_j|Törp pajzs
+itm_free_dwarf_shield_j|Törpmódi pajzs
 
-itm_free_dwarf_shield_k|Törp pajzs
+itm_free_dwarf_shield_k|Törpmódi pajzs
 
-; itm_woodmen_heavy|Mirkwood Armor
+itm_woodmen_heavy|Bakacsinerdei páncélzat
 
 itm_dwarf_sword_a|Törp kard
 
@@ -859,11 +821,11 @@ itm_dwarf_spear_c|Törp hosszúbalta
 
 itm_dwarf_helm_coif|Törp sapka
 
-; itm_dwarf_nasal_b|Dwarf Nasal Helm
+itm_dwarf_nasal_b|Törp orrsisak
 
 itm_north_skullcap|Északi koponyasisak
 
-; itm_dwarf_helm_kettle|Dwarf Kettle Helm
+itm_dwarf_helm_kettle|Törp üstsisak
 
 itm_dwarf_helm_fris|Törp fríz-forma sisak
 
@@ -881,21 +843,20 @@ itm_dwarf_miner|Törp könnyű sisak
 
 ; itm_north_chieftain|North Chieftain Helm
 
-; itm_dwarf_helm_round|Dwarf Round Helm
+itm_dwarf_helm_round|Törp kerek sisak
 
-itm_free_dwarf_helm_v|Törp láncos tarkósisak
+itm_dwarf_helm_sallet|Törp schallersisak
 
-; itm_dwarf_helm_sallet|Dwarf Sallet
+; itm_dwarf_armor_d|Iron Hills Coat of Scales
+; itm_dwarf_armor_a|Erebor Surcoat over Mail
 
-; itm_dwarf_armor_a|Erebor Mail
+itm_leather_dwarf_armor|Törpmódi párnázott kabát
 
-itm_leather_dwarf_armor|Törpmódi páncélingre vett párnázott mellény
+; itm_dwarf_armor_b|Erebor Tunic over Mail
 
-; itm_dwarf_armor_b|Erebor Scale
+itm_leather_dwarf_armor_b|Törpmódi párnázott zeke
 
-itm_leather_dwarf_armor_b|Törpmódi tunikára vett párnázott mellény
-
-itm_dwarf_armor_c|Törpmódi pikkelypáncélra vett láncing
+; itm_dwarf_armor_c|Erebor Scale Mail
 
 itm_dwarf_vest|Törpmódi tunika
 
@@ -907,6 +868,7 @@ itm_good_mace|Buzogány
 itm_far_harad_shield_paint|Gonosz pajzs
 itm_nazgulrobe|Nazgûl köpeny
 
+itm_werewolf|Vérfarkas
 itm_mordor_banner|Mordori lobogó
 itm_isengard_banner|Vasudvardi lobogó
 itm_woodelf_banner|Bakacsinerdei lobogó
@@ -916,13 +878,7 @@ itm_gondor_lance_banner|Gondori lobogós kopja
 itm_amroth_lance_banner|Dol Amrothi lobogós kopja
 itm_rohan_lance_banner_sun|Rohani lobogós kopja
 itm_rohan_lance_banner_horse|Rohani ló lobogós kopja
-itm_ent_body|Ent test
-itm_ent_head_helm|Ent fej
-itm_ent_head_helm2|Ent fej
-itm_ent_head_helm3|Ent fej
-itm_ent_feet_boots|Ent lábfej
-itm_ent_hands|Ent kezek
-itm_galadriel|Galadriel egyberuha
+
 itm_ent_water|Furcsa edényi víz
 itm_map|Középfölde térképei
 itm_athelas_reward|Athelas növény
@@ -938,7 +894,8 @@ itm_torque_reward|Gonosz medál
 itm_orc_brew|Ork főzet
 itm_rohan_saddle|Thengel nyerge
 itm_mearas_reward|Mearh paripa
-itm_sword_of_arathorn|Arathorn kardja
+
+itm_shield_of_tuor|Tuor pajzsa
 itm_riv_armor_reward|Völgyzugolyi díszes páncélzat
 itm_westernesse1h_reward|Nyugathon kardja
 itm_westernesse2h_reward|A Nagy Kígyó kardja
@@ -960,12 +917,12 @@ itm_miruvor_reward|Palacknyi miruvor
 itm_wheeled_cage|Óriási kerekes ketrec
 itm_orc_throwing_axes_reward|Gundabadi Repülő Fejszék
 itm_corsair_throwing_dagger_reward|Mérgezett dobótörők
-; itm_dwarf_shield_reward|Shield of Kheled-zaram
+itm_dwarf_shield_reward|Kheled-zârami pajzs
 itm_dwarf_great_axe_reward|Törp éles balta
 itm_isen_uruk_heavy_reward|Uruk-hai tábornoki páncélzat
 itm_lorien_bow_reward|Ñoldori íj
 itm_lorien_sword_reward|Galadhrim kard
-; itm_dale_sword_reward|Dale Royal Sword
+itm_dale_sword_reward|Suhatagi nemesi kard
 
 ; itm_dale_armor_reward|Dale Noblemen Mail
 itm_leather_gloves_reward|Vadászkesztyűk
@@ -976,7 +933,6 @@ itm_khamul_helm|Khamûl sisakja
 itm_gandstaff|Mágus botja
 itm_sarustaff|Mágus botja
 itm_rohan_armor_th|Rohani nemesi páncélzat
-itm_denethor_robe|Helytartó köpenye
 itm_prisoner_coll_chain|Rabszolga láncai
 itm_witchking_helmet|Gonosz sisak
 itm_lorien_royal_armor|Lórieni királyi páncélzat
