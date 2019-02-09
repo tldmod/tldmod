@@ -424,7 +424,7 @@ itemsfile version 2
  itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 279 0
 0
 
- itm_glorfi_bow Glorfindel_Bow Glorfindel_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 1000 656384 1.75 100 0 0 94 3 0 93 65 0 0 281 0
+ itm_rhun_bow rhun_bow rhun_bow 2  khazad_orc_bow_3 0  khazad_orc_bow_3_case 3458764513820540928  6357000 37312532480 600 525450 1.25 100 0 0 85 3 0 96 52 0 0 26 0
 0
 
  itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  274792456 5905584128 1300 656384 1.5 100 0 0 96 4 0 93 65 0 0 279 0
@@ -436,7 +436,7 @@ itemsfile version 2
  itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.5 100 0 0 91 4 0 93 58 0 0 26 0
 0
 
- itm_uruk_bow Strong_Orc_Bow Strong_Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2952794112 500 525450 1.25 100 0 0 84 2 0 94 57 0 0 23 0
+ itm_uruk_bow Orc_Horn_Bow Orc_Horn_Bow 2  khazad_orc_bow_2 0  khazad_orc_bow_2_case 3458764513820540928  6357000 37312532480 500 525450 1.25 100 0 0 84 2 0 94 57 0 0 23 0
 0
 
  itm_mirkwood_bow Mirkwood_Bow Mirkwood_Bow 2  mirkwood_bow 0  mirkwood_bow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.5 100 0 0 93 4 0 95 65 0 0 277 0
@@ -1996,7 +1996,7 @@ itemsfile version 2
  itm_khand_mace_spiked Khand_Spiked_Mace Khand_Spiked_Mace 1  Khand_Weapon_Mace_Spiked 0  4521986 9223388532775583758 300 286870 3.5 100 0 0 0 0 24576 99 0 82 0 256 536
 0
 
- itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  313539362820 9223635925844623584 500 271496 6 100 0 0 0 0 33792 84 0 102 0 256 545
+ itm_khand_rammace Khand_Ram_Mace Khand_Ram_Mace 1  Khand_Weapon_Mace_Ram 0  279177461764 9223652418519040238 500 271496 6 100 0 0 0 0 33792 84 0 102 0 256 545
 0
 
  itm_khand_pitsword Pit_Fighter_Sword Pit_Fighter_Sword 1  Khand_Weapon_Sword_Pit 0  4259842 9223388529822793743 300 286870 1.25 100 0 0 0 0 29696 96 0 66 0 277 29
@@ -2625,7 +2625,7 @@ itemsfile version 2
  itm_mirkwood_sword_reward Greenwood_Relic_Sword Greenwood_Relic_Sword 2  mirkwood_sword 0  scab_mirkwood_sword 3458764513820540928  71307267 9223388564182532111 200 156672 3 100 0 0 0 15 43008 110 0 88 0 301 298
 0
 
- itm_nazgul_sword Nazgul_Sword Nazgul_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 3 100 0 0 0 18 51200 103 0 112 0 301 306
+ itm_nazgul_sword Wicked_Sword Wicked_Sword 2  nazgul_sword 0  nazgul_sword_scab 3458764513820540928  4368371715 9223635954298781951 200 156672 3 100 0 0 0 18 51200 103 0 112 0 301 306
 0
 
  itm_cooking_cauldron Cooking_Cauldron Cooking_Cauldron 1  cauldron_a 0  4107 0 1000 0 3 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2709,7 +2709,7 @@ itemsfile version 2
  itm_moria_arrow_reward Moria_Poisoned_Arrows Moria_Poisoned_Arrows 3  orc_hook_arrow 0  orc_hook_arrow_flying 2305843009213693952  orc_quiver 3458764513820540928  5 1610612736 700 4398046520456 3 100 0 0 0 0 0 0 0 95 40 11 0
 0
 
- itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small 0  4108 0 3000 0 3 100 50 0 0 12 0 0 0 0 0 0 0
+ itm_khamul_helm Helm_of_Khamul Helm_of_Khamul 1  helmet_khamul_small_new 0  4108 0 3000 0 4 100 50 0 0 15 0 0 0 0 0 0 0
 0
 
  itm_gandstaff Wizards_Staff Wizards_Staff 1  gandstaff 0  138838020 4222124851990272 1 0 2.5 100 0 0 0 0 51200 103 0 118 0 552 562
@@ -2727,7 +2727,7 @@ itemsfile version 2
  itm_prisoner_coll_chain Prisoner_Chains Prisoner_Chains 1  prisoner_coll_chain 0  16777228 0 10 0 10 100 2 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_witchking_helmet Wicked_Helm Wicked_Helm 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 2.5 100 50 0 0 0 0 0 0 0 0 0 0
+ itm_witchking_helmet Wicked_Helm Wicked_Helm 3  witchking_helmet 0  glorfindelhair 2199023255552  DwarfHelmKingCrown 256  4108 0 3000 0 2.5 100 45 0 0 12 0 0 0 0 0 0 0
 0
 
  itm_lorien_royal_armor Lorien_Royal_Armor Lorien_Royal_Armor 1  lorien_royal 0  16777229 0 5000 704643072 19 100 0 45 17 15 0 0 0 0 0 0 0
