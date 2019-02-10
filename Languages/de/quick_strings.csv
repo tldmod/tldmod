@@ -422,7 +422,7 @@ qstr_no_holdings|keine Besitzungen
 qstr_{s57}_and_{s58}|{s57} und {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Sie:Er}
-qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} ist der Herrscher von {s56}.^:{s54} dient {s55} von {s56}.^}}{reg9?{Sie:Er} ist {reg3? die Gebieterin: der Gebieter} von {s58}.:}{s59}{reg10?^{reg3?Sie:Er} starb auf dem Schlachtfeld!:}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} ist der Herrscher von {s56}.^:{s54} dient {s55} von {s56}.^}}{reg9?{reg3?Sie:Er} ist {reg3? die Gebieterin: der Gebieter} von {s58}.:}{s59}{reg10?^{reg3?Sie:Er} starb auf dem Schlachtfeld!:}
 qstr_The_last_time_you_sa|{s1}, als du {reg1?sie:ihn} das letzte Mal sahst.
 qstr_The_last_time_you_he|{s1}, als du das letzte Mal von {reg1?ihr:ihm} hörtest.
 qstr_The_{s50}|{s50}
