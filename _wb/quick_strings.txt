@@ -244,6 +244,7 @@ qstr_when_equipped when_equipped
 qstr_+1_to_Strength +1_to_Strength
 qstr_+1_to_Agility +1_to_Agility
 qstr_+1_to_Leadership +1_to_Leadership
+qstr_+1_to_Wildcraft +1_to_Wildcraft
 qstr_+1_to_Power_Draw +1_to_Power_Draw
 qstr_Turns_nature_to_your Turns_nature_to_your_side_(effect_scales_with_Wildcraft)
 qstr_+1_to_Trainer +1_to_Trainer
@@ -253,7 +254,6 @@ qstr_rallies rallies
 qstr_+{reg1}_{s3}_in_batt +{reg1}_{s3}_in_battle
 qstr_+1_to_Charisma +1_to_Charisma
 qstr_+1_to_Surgery +1_to_Surgery
-qstr_+1_to_Wildcraft +1_to_Wildcraft
 qstr_+1_to_Ironflesh +1_to_Ironflesh
 qstr_+1_to_Prisoner_Mgmt +1_to_Prisoner_Mgmt
 qstr_+2_to_Tactics +2_to_Tactics

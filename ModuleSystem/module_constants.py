@@ -1981,7 +1981,7 @@ fac_reward_items_list = [
 #fac_isengard
 [(2,itm_cooking_cauldron,0),(3,itm_orc_brew      ,0),(4,itm_crebain_reward, 0), (5, itm_warg_reward, imod_heavy), (6, itm_torque_reward, 0), (7, itm_silmarillion_reward, 0), (8, itm_isen_uruk_heavy_reward, imod_lordly), (9, itm_explosive_reward, 0)],
 #fac_lorien
-[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_lorien_sword_reward , 0), (6, itm_silmarillion_reward, 0), (7, itm_lorien_royal_armor, imod_lordly), (8, itm_lorien_bow_reward, 0), (9, itm_phial_reward, 0)],
+[(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_elven_cloak , 0), (6, itm_silmarillion_reward, 0), (7, itm_lorien_royal_armor, imod_lordly), (8, itm_lorien_bow_reward, 0), (9, itm_phial_reward, 0)],
 #fac_imladris
 [(2,itm_lembas          ,0),(3,itm_athelas_reward,0),(4,itm_elven_amulet_reward, 0), (5, itm_miruvor_reward, 0), (6, itm_ring_b_reward, 0), (7, itm_riv_warhorse2, imod_champion), (8, itm_shield_of_tuor, 0), (9, itm_riv_armor_reward, 0)],
 #fac_woodelf
