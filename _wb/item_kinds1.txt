@@ -415,7 +415,7 @@ itemsfile version 2
  itm_dwarf_short_bow Dwarf_Short_Bow Dwarf_Short_Bow 2  dwarf_short_bow 0  dwarf_short_bow 3458764513820540928  6357000 2952794112 300 525450 1.25 100 0 0 84 1 0 86 53 0 0 25 0
 0
 
- itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 6174019584 300 525450 1.25 100 0 0 84 1 0 95 56 0 0 27 0
+ itm_harad_bow Harad_Curved_Bow Harad_Curved_Bow 2  harad_bow 0  harad_bow 3458764513820540928  6357000 6174019584 300 525450 1.25 100 0 0 84 1 0 95 56 0 0 23 0
 0
 
  itm_lg_bow Eagle_Guard_Bow Eagle_Guard_Bow 2  lg_bow 0  lg_bow 3458764513820540928  274792456 6174019584 1100 525450 1.25 100 0 0 93 4 0 90 56 0 0 28 0
@@ -2688,7 +2688,7 @@ itemsfile version 2
  itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 90 5 0 99 50 0 0 280 0
 0
 
- itm_elven_cloak elven_cloak elven_cloak 1  elven_cloak 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
+ itm_elven_cloak Elven_Cloak Elven_Cloak 1  elven_cloak 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
  itm_dale_sword_reward Dale_Royal_Sword Dale_Royal_Sword 2  Mandible_royal_sword 0  Mandible_royal_sword_scabbard 3458764513820540928  4299165698 9223388564182532111 500 0 1.25 100 0 0 0 12 49152 101 0 95 0 286 48
