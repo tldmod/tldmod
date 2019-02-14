@@ -195,9 +195,9 @@ imodbits_mace   =         0#imodbit_rusty | imodbit_chipped | imodbit_balanced |
 imodbits_pick   =           0#imodbit_rusty | imodbit_chipped | imodbit_balanced | imodbit_heavy
 imodbits_thrown   =       0#imodbit_bent | imodbit_heavy| imodbit_balanced| imodbit_large_bag
 #
-imodbits_horse_basic = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stubborn | imodbit_timid | imodbit_thick
-imodbits_horse_good = imodbit_spirited | imodbit_heavy | imodbit_thick | imodbit_reinforced | imodbit_champion
-imodbits_warg = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stubborn | imodbit_thick | imodbit_reinforced
+imodbits_horse_basic = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stubborn | imodbit_timid 
+imodbits_horse_good = imodbit_spirited | imodbit_heavy   | imodbit_champion | imodbit_timid 
+imodbits_warg = imodbit_swaybacked | imodbit_lame | imodbit_heavy | imodbit_stubborn  | imodbit_heavy   | imodbit_champion
 #
 imodbits_good   = 0#imodbit_sturdy | imodbit_thick | imodbit_hardened | imodbit_reinforced
 imodbits_bad    = 0#imodbit_rusty | imodbit_chipped | imodbit_tattered | imodbit_ragged | imodbit_cracked | imodbit_bent
