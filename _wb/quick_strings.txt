@@ -1,4 +1,4 @@
-1844
+1845
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -780,6 +780,7 @@ qstr_ready_polearms ready_polearms
 qstr_shields_up shields_up
 qstr_doff_shields doff_shields
 qstr_Distance___{reg70}__ Distance_-_{reg70}_-_{s11}_Party_-_{s12}_Troop
+qstr_{s70}_target_found {s70}_target_found
 qstr_Mordor_Cloud_Spawned Mordor_Cloud_Spawned
 qstr_A_golden_mist_from_L A_golden_mist_from_Lórien_covers_the_battlefield._Your_troops_feel_encouraged_by_the_presence_of_the_Lady.
 qstr_A_golden_mist_from_Lr A_golden_mist_from_Lórien_covers_the_battlefield._The_witch_is_near,_sending_shivers_down_you_and_your_troops'_spine.

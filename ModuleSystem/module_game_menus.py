@@ -3410,9 +3410,10 @@ game_menus = [
     #("give_siege_stones", [],"Siege Stones Test",[(troop_add_item, "trp_player","itm_stones_siege"), (party_add_members, "p_main_party", "trp_test_vet_archer", 10), (display_message, "@Siege Stones Test")]),
     ("enable_raftmen",[],"Enable Raft Men Party", [(enable_party, "p_raft"), (display_message, "@Raft Men party enabled. They are down River Running", color_good_news)]),
     #("test_presentation",[],"Test Presentation", [(start_presentation, "prsnt_faction_intro_text")]),
-    ("what_theater",[], "Which Theater Am I in / Followers?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
-  (assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news)]),
     ] + (is_a_wb_menu==1 and [
+    ("what_theater",[], "Which Theater Am I in / Followers?", [(call_script, "script_find_theater", "p_main_party"), (party_get_slot, ":num_followers", "p_main_party", slot_party_number_following_player),
+  	(assign, reg63, ":num_followers"), (display_message, "@{reg63} followers", color_bad_news),
+  	(call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", "fac_gondor"),]),
     ("what_region",[], "Get Troop Number", 
     	[(call_script, "script_party_count_fit_regulars", "p_main_party"), (display_message, "@{reg0} Fit Regulars"), (call_script, "script_party_count_fit_for_battle", "p_main_party"), (display_message, "@{reg0} Fit for battle"), 
     	]),

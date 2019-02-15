@@ -27888,6 +27888,84 @@ if is_a_wb_script==1:
 
 ]),
 
+# script_cf_init_defeat_lord_quest
+
+("cf_init_defeat_lord_quest", [
+
+	(store_character_level, ":player_level", "trp_player"),
+	(ge, ":player_level", 18),
+	
+	(store_faction_of_troop, ":quest_giver_faction", "$g_talk_troop"),
+	(call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", ":quest_giver_faction"),
+	(assign, ":target_lord", reg0),
+
+	(assign, ":xp_reward", 50),
+	(assign, ":gold_reward", 100),
+	(assign, ":rank_reward", 50),
+	
+	(assign, ":exp", 30),
+
+	(assign, reg55, "$g_talk_troop"), 		#quest_object_troop
+	(assign, reg56, ":target_lord"),		#quest_target_troop
+	(assign, reg58, 8),						#quest_importance
+	(assign, reg59, ":xp_reward"),			#quest_xp_reward
+	(assign, reg60, ":gold_reward"),		#quest_gold_reward
+	(assign, reg61, ":rank_reward"),		#quest_rank_reward
+	(assign, reg62, ":exp"),				#quest_expiration_days
+	(assign, reg63, 10),					#quest_dont_give_again_period
+
+]),
+
+# script_cf_find_target_patrolling_lord
+
+("cf_find_target_patrolling_enemy_lord", [
+
+	(assign, ":lord_found", 0),
+	(try_for_range, ":lords", kingdom_heroes_begin, kingdom_heroes_end),
+		(eq, ":lord_found", 0),
+		(neg|troop_slot_eq, ":lords", slot_troop_wound_mask, wound_death), #not dead
+		(call_script, "script_cf_fails_if_sitting_king", ":lords"), #fail if sitting king
+		(troop_get_slot, ":party", ":lords", slot_troop_leaded_party),
+		(gt, ":party", 0),
+		(party_is_active, ":party"),
+		(party_slot_eq, ":party", slot_party_type, spt_kingdom_hero_party), #Has a host
+		(party_get_slot, ":action", ":party", slot_party_ai_state),
+		(neq, ":action", spai_besieging_center),
+		(neq, ":action", spai_accompanying_army),
+		(neq, ":action", spai_holding_center),
+		(store_troop_faction, ":fac", ":lords"),
+		(store_relation, ":rel", "$players_kingdom", ":fac"),
+		(lt, ":rel", 0), #enemies
+		(assign, ":lord_found", 1),
+		# Debug
+		(str_store_troop_name, s70, ":lords"),
+		(display_message, "@{s70} target found"),
+		(assign, reg0, ":lords"),
+	(try_end),
+
+	(gt, reg0, 0), 
+
+]),
+
+# script_cf_find_target_patrolling_enemy_lord_in_theater
+
+("cf_find_target_patrolling_enemy_lord_in_theater", [
+
+	(store_script_param_1, ":quest_giver_faction"),
+
+	(call_script, "script_cf_find_target_patrolling_enemy_lord"),
+	(assign, ":target_lord", reg0),
+	(store_troop_faction, ":enemy_fac", ":target_lord"),
+	(faction_get_slot, ":enemy_fac_active_theater", ":enemy_fac", slot_faction_active_theater),
+	(faction_get_slot, ":quest_giver_active_theater", ":quest_giver_faction", slot_faction_active_theater),
+	(eq, ":enemy_fac_active_theater", ":quest_giver_active_theater"), #Target Lord in Active Theater
+	(assign, reg0, ":target_lord"),
+
+	(gt, reg0, 0),
+
+]),
+
+
 ("clone_troop", [
 	(store_script_param_1, ":troop_to_clone"),
 	(store_script_param_2, ":troop_clone"),
