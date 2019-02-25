@@ -445,7 +445,7 @@ itemsfile version 2
  itm_dunland_javelin Dunland_Javelins Dunland_Javelins 1  dunland_javelin 0  71368714 262144 200 0 4 100 0 0 93 0 0 93 47 65 7 50 0
 0
 
- itm_orc_throwing_arrow Orc_Darts Orc_Darts 2  orc_throwing_arrow 0  orc_throwing_arrow_bag 3458764513820540928  71368714 35970613248 200 0 4 100 0 0 87 0 0 89 35 65 7 289 0
+ itm_orc_throwing_arrow Orc_Darts Orc_Darts 2  orc_throwing_arrow 0  orc_throwing_arrow_bag 3458764513820540928  71368714 35970613248 200 0 4 100 0 0 87 0 0 89 35 65 7 33 0
 0
 
  itm_heavy_throwing_spear Heavy_Throwing_Spear Heavy_Throwing_Spear 1  rohan_throwing_spear 0  71368714 262144 200 0 4 100 0 0 84 0 0 82 27 65 2 319 0
@@ -1199,7 +1199,7 @@ itemsfile version 2
  itm_orc_two_handed_axe Orc_Double_Handed_Axe Orc_Double_Handed_Axe 1  orc_twohanded_axe 0  38996623363 9223372041174909152 500 286870 4.5 100 0 0 0 0 35840 87 0 92 0 256 35
 0
 
- itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 300 0 5 100 0 0 80 0 0 99 20 53 7 40 0
+ itm_orc_throwing_axes Orc_Throwing_Axes Orc_Throwing_Axes 1  orc_throwing_axe 0  71368714 196608 300 0 5 100 0 0 80 0 0 99 20 53 5 40 0
 0
 
  itm_orc_bow Orc_Bow Orc_Bow 2  orc_bow 0  orc_bow_carry 3458764513820540928  6357000 2953248768 200 525450 1.25 100 0 0 74 0 0 86 53 0 0 20 0
@@ -2200,10 +2200,10 @@ itemsfile version 2
  itm_dale_billhook Dale_Billhook Dale_Billhook 1  dale_billhook 0  38929793028 4222124851987200 360 271496 3 100 0 0 0 0 36864 95 0 185 0 287 36
 0
 
- itm_dale_shield_a Dale_Tower_Shield Dale_Tower_Shield 1  dale_shield_b 0  327687 4831838208 200 251658402 2 100 0 3 0 0 450 70 0 90 0 0 0
+ itm_dale_shield_a Dale_Tower_Shield Dale_Tower_Shield 1  dale_shield_b 0  268763143 4831838208 200 251658402 2 100 0 3 0 0 450 70 0 90 0 0 0
 0
 
- itm_dale_shield_b Dale_Tower_Shield Dale_Tower_Shield 2  dale_shield_i 0  dale_shield_j 771751936  327687 4831838208 360 251658402 2 100 0 7 0 0 450 70 0 90 0 0 0
+ itm_dale_shield_b Dale_Tower_Shield Dale_Tower_Shield 2  dale_shield_i 0  dale_shield_j 771751936  268763143 4831838208 360 251658402 2 100 0 7 0 0 450 70 0 90 0 0 0
 0
 
  itm_dale_shield_c Dale_Round_Shield Dale_Round_Shield 2  dwarf_round_shield_e 0  dwarf_round_shield_m 771751936  327687 5100273664 300 251658402 2 100 0 8 0 0 360 82 0 50 0 0 0
@@ -2387,7 +2387,7 @@ itemsfile version 2
  itm_dwarf_great_axe Dwarf_Great_Axe Dwarf_Great_Axe 3  dwarf_great_axe 0  dwarf_great_axe 0  dwarf_great_axe_2 156672  4637130755 9223635923965575392 700 156672 4 100 0 0 0 0 48128 86 0 102 0 256 47
 0
 
- itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 3  dwarf_great_mattock 0  dwarf_great_mattock 0  dwarf_war_mattock 156672  38996869123 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
+ itm_dwarf_great_mattock Dwarf_Great_Mattock Dwarf_Great_Mattock 3  dwarf_great_mattock 0  dwarf_great_mattock 1  dwarf_war_mattock 156672  38996869123 9223635923965575392 500 156672 3 100 0 0 0 0 30720 92 0 94 0 256 286
 0
 
  itm_dwarf_great_pick Dwarf_Great_Pick Dwarf_Great_Pick 4  dwarf_great_pick 0  dwarf_great_pick 0  dwarf_war_pick 156672  dwarf_war_pick_old 256  38996869123 9223635923965575392 400 156672 3 100 0 0 0 0 30720 94 0 93 0 256 286
@@ -2396,7 +2396,7 @@ itemsfile version 2
  itm_dwarf_war_pick Dwarf_War_Pick Dwarf_War_Pick 1  dwarf_war_pick 0  342163459 9223635923965575392 400 156672 2 100 0 0 0 0 28672 98 0 94 0 282 284
 0
 
- itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 3  dwarf_mattock 1  dwarf_mattock 0  dwarf_adz 156672  272957443 9223388530091229198 200 156672 3 100 0 0 0 0 23552 96 0 52 0 256 279
+ itm_dwarf_mattock Dwarf_Mattock Dwarf_Mattock 3  dwarf_mattock 1  dwarf_mattock 0  dwarf_adz 156672  272957443 9223652412881895662 200 156672 3 100 0 0 0 0 23552 96 0 52 0 256 279
 0
 
  itm_dwarf_hand_axe Dwarf_Short_Axe Dwarf_Short_Axe 1  dwarf_1h_axe 0  80019458 9223388530091229198 500 156672 2 100 0 0 0 0 36864 97 0 54 0 256 36
@@ -2601,7 +2601,7 @@ itemsfile version 2
  itm_torque_reward Evil_Torque Evil_Torque 1  reward_torque 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 150 0 0
+ itm_orc_brew Orc_Brew Orc_Brew 1  orc_brew 0  33558539 0 1000 0 0 100 0 0 0 0 0 0 0 0 150 0 0
 0
 
  itm_rohan_saddle Saddle_of_Thengel Saddle_of_Thengel 1  RohanSaddle 0  4107 0 5000 0 4 100 0 0 0 0 0 0 0 0 0 0 0
