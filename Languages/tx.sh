@@ -2,10 +2,6 @@
 
 echo "Updating translations from Transifex..."
 
-# mab calls zh => cnt and zh-Hans => cns
-mv cnt zh
-mv cns zh-Hans
-
 # the italian ui.csv file has manual additions from the M&B third-party translation project
 # don't replace it, or entries will be lost
 mv it/ui.csv it/ui.csv_bak
@@ -22,10 +18,6 @@ luajit tx.lua convert
 
 # pull latest translations
 tx pull -a -f --skip --minimum-perc=1
-
-# mab calls zh => cnt and zh-Hans => cns
-mv zh      cnt
-mv zh-Hans cns
 
 # the italian ui.csv file has manual additions from the M&B third-party translation project
 # don't replace it, or entries will be lost

@@ -12,6 +12,7 @@ from module_items import *
 
 import string
 
+from module_info import wb_compile_switch
 from module_info import wb_compile_switch as is_a_wb_cutscene
 
 ####################################################################################################################

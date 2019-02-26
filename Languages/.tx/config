@@ -1,5 +1,6 @@
 [main]
 host = https://www.transifex.com
+lang_map = pt_BR: pt, zh-Hans: chs, zh_TW: cht
 
 [tld.dialogs]
 file_filter = <lang>/dialogs.csv
