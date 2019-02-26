@@ -358,7 +358,7 @@ qstr_{s14}Kill_these_hors|{s14}Uccidete questi ladri di cavalli !
 qstr_Kill_them_all!_Take_|Uccideteli tutti ! Riprendiamoci ciò che ci appartiene !
 qstr_Tonight_there_will_b|Stanotte ci sarà un nemico di {s16} in meno !
 qstr_Baruk_Khazd!_Khazd_a|Baruk Khazâd ! Khazâd ai-mênu !
-; qstr_{s14}Riders_of_Rohan|{s14}Riders of Rohan! Remember what you fight for!
+qstr_{s14}Riders_of_Rohan|{s14}Cavalieri di Rohan! Ricordate ciò per cui combattete!
 qstr_{s14}More_{s19}heads|{s14}Altre {s19}teste per decorare i cancelli del Morannon !
 qstr_The_Wise_Master_shal|Il Saggio Maestro sarà contento quando gli mostrerò il corpo di {playername} !
 qstr_{s14}Now_we_will_put|{s14}Adesso porremo fine alla sofferenza di queste cose disgustose. 
@@ -498,7 +498,7 @@ qstr__+1_intelligence_ski|(+1 intelligenza, +15 abilità con armi a distanza)
 qstr_The_cracked_ribs_hav|Le costole rotte sono guarite.
 qstr__+20_weapon_skill_|(+20 all'abilità con le armi)
 qstr_{s1}_has_had_his_hea|La vita di {s1} è stata potenziata.
-; qstr_News_has_arrived_tha|News has arrived that {s1} of {s2} was killed in battle by the forces of {s28}!
+qstr_News_has_arrived_tha|Giunge notizia secondo cui {s1} di {s2} ha trovato la morte in battaglia contro le forze di {s28}!
 qstr_{s1}_s_Burial_Mound|Tumulo funebre di {s1}
 qstr_{s1}_s_Funeral_Pyre|La pira funeraria di {s1}.
 qstr_{s1}_is_logged_as_de|{s1} è annotato come deceduto
@@ -530,7 +530,7 @@ qstr_{s24}:_Your_archers_|{s24}: I tuoi arcieri si sentono meglio !
 qstr_{s24}:_Your_cavalry_|{s24}: I tuoi cavalieri si sentono meglio !
 qstr_Ah_what_a_coincidenc|Ah, che strana coincidenza, imbattermi proprio in te {playername} ! Tu potresti anche non conoscermi, ma io conosco te. Sono sulla strada per {s4}, ma sono appena partito da {s3} ed è la che ho sentito parlare di te. {s3} conta su di te in questi tempi pericolosi e se hai pensato di intraprendere azioni lontane dal tuo dovere, dovresti riconsiderarle e concentrarti sull'aiutare {s3} con tutte le tue forze.
 qstr_Who_are_you?|Chi sei ?
-; qstr_A_friend_of_{s3}_and|A friend of {s3} and the people of {s2}. Now hurry! Mordor draws all wicked things, and the Dark Power is bending all its will to gather them there. Time is running out for all that is good in this world, unless we make count our every action to oppose it!
+qstr_A_friend_of_{s3}_and|Un amico di {s3} e del popolo di {s2}. Ora fa presto! Mordor ha oscuri disegni e il Potere Oscuro impiega tutta la sua volontà per radunare tutto ciò che è malvagio. Il tempo sta per scadere per tutto ciò che di buono rimane in questo mondo, se non facciamo valere ogni nostra azione per opporci!
 qstr_What_should_I_do?|Cosa dovrei fare ?
 qstr_Find_{s3}_s_whereabo|Scopri immediatamente dove si trova {s3} e parlagli. Buona Fortuna !
 qstr_Good_to_see_the_Shad|È un sollievo vedere che l'Ombra non è ancora riuscita a piegarti, {playername}.
@@ -628,7 +628,7 @@ qstr_Volunteers|Volontari
 ; qstr_loses_Faction_Streng|loses Faction Strength as supply lines were disrupted.
 ; qstr_loses_Faction_Strengt|loses Faction Strength due to the destruction of their camp.
 ; qstr_gains_Faction_Streng|gains Faction Strength as news of your victory spreads.
-; qstr_Something_wrong_not_|Something wrong, not enough troops to remove
+qstr_Something_wrong_not_|Qualcosa non va, non hai abbastanza truppe da rimuovere
 ; qstr_Raiders|Raiders
 ; qstr_have_won_the_sea_bat|have won the sea battle, demoralizing your troops. The enemy may take advantage of this defeat and attack more frequently.
 ; qstr_loses_Faction_Strength|loses Faction Strength due to the destructive raid.
@@ -702,9 +702,9 @@ qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
 ; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
-; qstr_You_have_found_the_l|You have found the local smithy... (+{reg3} XP)
-; qstr_You_have_found_the_lo|You have found the local authority...(+{reg3} XP)
-; qstr_You_have_found_the_loc|You have found the local warehouse...(+{reg3} XP)
+qstr_You_have_found_the_l|Hai trovato il fabbro locale...(+{reg3} XP)
+qstr_You_have_found_the_lo|Hai incontrato l'autorità locale...(+{reg3} XP)
+qstr_You_have_found_the_loc|Hai trovato l'emporio locale...(+{reg3} XP)
 ; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
 qstr__cancelled_the_{reg1|(Cancellati i {reg10} exp guadagnati uccidendo prigionieri)
 qstr_Forming_ranks.|Formare i ranghi.
@@ -722,7 +722,7 @@ qstr_Forming_ranks.|Formare i ranghi.
 qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
 ; qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
 ; qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
-; qstr_Your_mount_is_scared|Your mount is scared by the {reg73?ent:troll}!
+qstr_Your_mount_is_scared|La tua cavalcatura è spaventata dal {reg73?ent:troll}!
 qstr_Nazgul_sweep!|Spazzata Nazgul !
 qstr_You_and_your_horse_p|Tu e il tuo cavallo andate nel panico, le urla dei Nazgul sono insopportabili !
 qstr_Your_horse_panics_th|Il tuo cavallo va nel panico, le urla dei Nazgul sono insopportabili !
@@ -827,11 +827,11 @@ qstr_You_wish_old_man_my_|Te lo sogni, vecchio, la mia vista in terza persona è
 qstr_You_should_really_se|Dovresti vedere le foto di Steward Denetor su facebook, è fantastico !
 qstr_Press_Space_to_conti|Premi spazio per continuare
 ; qstr_{s24}__{reg13}____{r|{s24} ({reg13}) - {reg20} until next promotion^
-; qstr_Influence:^_{reg11}_|Influence:^ {reg11} (with {s16})^
-; qstr_Resource_Points:^_{r|Resource Points:^ {reg12} (in {s16})^
-; qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} until next promotion^
-; qstr_{s13}_{reg11}__with_|{s13} {reg11} (with {s16})^
-; qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (in {s16})^
+qstr_Influence:^_{reg11}_|Influenza:^ {reg11} (with {s16})^
+qstr_Resource_Points:^_{r|Punti Risorsa:^ {reg12} (in {s16})^
+qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} alla prossima promozione^
+qstr_{s13}_{reg11}__with_|{s13} {reg11} (con {s16})^
+qstr_{s15}_{reg12}__in_{s|{s15} {reg12} (a {s16})^
 ; qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
 ; qstr_You_chase_an_orc_sco|You chase an orc scout party into the forest...
 qstr_^No_food:___{reg7}|^Niente cibo: -{reg7}
@@ -991,8 +991,8 @@ qstr_{s11}_{s13}|{s11}, {s13}
 ; qstr_two_scout_parties_and|two scout parties and a raider party from {s3}
 ; qstr_three_scouts_two_for|three scouts, two foragers, and a patrol from {s3}
 ; qstr_three_scouts_two_rai|three scouts, two raiders, and a war party from {s3}
-; qstr_You_see_the_village_|You see the village being raided by bandits. You ask most of your troops to watch out for other raiders while you take a small group and prepare to defend villagers.
-; qstr_You_see_the_village_y|You see the village you were tasked to raid. You and a small group of your raiders prepare to attack the village so as not to be seen.
+qstr_You_see_the_village_|Vedi il villaggio sotto attacco. Chiedi alla gran parte delle tue truppe di cercare altri aggressori, mentre prendi un piccolo contingente e ti prepari a difendere la popolazione.
+qstr_You_see_the_village_y|Vedi l'insediamento che hai ordine di attaccare. Tu ed un piccolo gruppo di attaccanti vi preparate ad assaltare l'insediamento, in modo da non essere individuati
 qstr_The_raiders_are_defe|I predatori sono sconfitti ! I pochi che restano vivi e coscienti si affrettano a tornare nell'oscurità da cui sono usciti, terrorizzati dagli abitanti del villaggio e dal loro nuovo campione.
 qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a sconfiggere i predoni. Essi radono il villaggio al suolo e rendono schiavi gil abitanti che restano.
 qstr_The_village_has_been|Il villaggio è stato razziato, gli abitanti sono stati uccisi o resi schiavi. L'Oscuro Signore ne sarà compiaciuto.
@@ -1024,7 +1024,7 @@ qstr_You_have_evaded_the_|Hai evitato le pattuglie e ti sei arrampicato verso le
 qstr_You_have_found_the_s|Hai trovato lo stregone !
 qstr_You_cannot_leave_unt|Non puoi ritirarti fin quando non disperdi le guardie !
 qstr_Kill_him_quickly_bef|Uccidilo velocemente prima che scappi !
-; qstr_Enraged_by_the_death|Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
+qstr_Enraged_by_the_death|Infuriato per la morte di {s4}, hai giurato vendetta contro le forze di {s3}. Dovrai distruggere quanti più gruppi armati di {s3} potrai nell'arco dei prossimi giorni. Sei profondamente consapevole del fatto che i tuoi uomini hanno assistito a questo giuramento e non desideri diventare noto come uno spergiuro. Ora un bagno di sangue deve avere inizio!
 qstr_flooded._Somebody_or|è allagato. Qualcuno deve aver aperto le dighe di Isengard.
 qstr_destroyed._Only_smol|è distrutto. Restano solo fumanti rovine.
 qstr_^^^You_lost_your_fig|^^^Hai avuto la peggio contro l'ammutinamento ! ^Sembra che la tua armata di orchi ha un nuovo comandante ora .
@@ -1093,7 +1093,7 @@ qstr_{s27}:_Influence_wit|{s27}: Influenza con {s1} aumenta da {reg2} a {reg1}
 qstr_{s27}:_Influence_with|{s27}: Influenza con {s1} diminuisce da {reg2} a {reg1}
 qstr_{s27}:_Party_morale_|{s27}: il morale della Compagnia aumenta.
 qstr_{s27}:_Party_morale_d|{s27}: il morale della Compagnia diminuisce.
-; qstr_You_have_failed_to_f|You have failed to fulfill your oath to avenge Balin and his company!
+qstr_You_have_failed_to_f|Hai mancato di adempiere al tuo giuramento di vendicare Balin e la sua compagnia!
 qstr_You_have_failed_to_fu|Non sei riuscito a soddisfare la tua voglia di vendetta per la morte eroica di {s1} !
 ; qstr_Your_troops_value_yo|Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, 
 ; qstr_{s22}You_have_fulfil|{s22}You have fulfilled your oath to avenge Balin and his company!
@@ -1382,9 +1382,9 @@ qstr__under_your_orders|, ai tuoi ordini
 ; qstr_I_m_sorry_but_we_can|I'm sorry, but we cannot aid them now.
 ; qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
 ; qstr_This_raid_does_not_i|This raid does not interest me. I shall win glory elsewhere.
-; qstr_{s9}_asked_you_to_de|{s9} asked you to destroy a scout camp near {s1}.
+qstr_{s9}_asked_you_to_de|{s9} ti ha chiesto di distruggere un accampamento di esploratori nei pressi di {s1}.
 ; qstr_{s9}_asked_you_to_def|{s9} asked you to defend a village under attack near {s1}.
-; qstr_{s9}_asked_you_to_ra|{s9} asked you to raid a village near {s1}.
+qstr_{s9}_asked_you_to_ra|{s9} ti ha chiesto di assalire un villaggio nei pressi di {s1}.
 qstr_These_soldiers_may_w|Questi soldati potrebbero di sicuro dare la svolta ai miei piani, {playername}. Sono certo che li hai addestrati bene. I miei ringraziamenti e complimenti vanno a te.
 qstr_Good_work_in_shaping|Ottimo lavoro nell' addestramento di quelle reclute, {playername}, sei stato utilissimo. Fiduciosamente dureranno di piu' dell' ultima volta, ma torna a trovarmi se non lo fanno.
 qstr_Well_the_soldiers_ar|Bene, i soldati sono sotto il suo comando, signore. Sono certo che ve ne prenderete cura.
@@ -1450,7 +1450,7 @@ qstr_Alas_it_is_not_a_plea|Ahimé, non è per piacere o semplice gironzolare che
 qstr_You_wouldn_t_have_nee|Non avreste avuto bisogno del nostro aiuto se aveste controllato i confini ! ^^Le storie delle Streghe della Foresta possono spaventare solo gli sciocchi ottusi - non gli sporchi orchi che abbiamo appena ucciso.
 qstr_*growl*_I_know_your_|*ringhio* conosco la tua lingua, elfo, abbastanza da capire se mi prendi in giro o mi ringrazi. ^^ Le stelle non hanno niente a che fare con questo - ho percepito il sudiciume e ho seguito un percorso. Potevo ucciderli sia che foste in pericolo o no.
 qstr_Keep_your_secrets_th|Tienti i tuoi segreti allora, amico, ma le Foreste Dorate sussurrano dell'arrivo dei nostri cugini. ^^Informeremo la nostra Lady Galadriel dell'arrivo di Lord Elrond, anche se sospetto che lei lo sappia già. E parleremo anche di te, a tutto il nostro popolo. ^^Le maethor veleg a gornui ! il tuo valore e le tue gesta devono essere conosciute e le tue necessitò soddisfatte ogni volta che visiti la nostra valle del Canto d'Oro.
-; qstr_We_walk_under_the_su|We walk under the sun and the stars, to dwell in caves is not our desire. Still, your undoubtedly well meant counsel is well received. ^^Your wisdom and brave deeds shall be known, your needs met whenever you wander into our domain.
+qstr_We_walk_under_the_su|Camminiamo sotto il sole e le stelle, abitare nelle caverne non è il nostro desiderio. Tuttavia, il tuo consiglio indubbiamente mosso da buone intenzioni è ben accolto. ^^ La tua saggezza e le tue azioni coraggiose saranno conosciute, i tuoi bisogni saranno soddisfatti ogni volta che vagherai nei nostri domini.
 qstr_*he_sighs_and_smiles|*sospira e sorride lievemente* ^^Molto bene. Per i nostri comuni intenti siamo lieti di condividere ogni cosa, anche se le parole sono scarse nel luogo da dove vieni.
 qstr_For_some_months_we_h|Per alcuni mesi abbiamo osservato i luridi orchi che si moltiplicavano e sporcavano i nostri boschi. ^^Abbiamo informato Lady Galadriel dell'arrivo di Lord Elrond, anche se sospetto che ne fosse già a conoscenza. Parleremo anche di te, a tutto il nostro popolo. ^^Le maethor veleg a gornui ! Il tuo valore e le tue gesta devono essere conosciuti e le tue necessità soddisfatte ogni volta che visiti la nostra valle del Canto d'Oro.
 qstr_Calm_yourself_friend|Calmati, amico. Pedin i phith in aniron, a nin u-cheniathog. ^^Dobbiamo parlare di te al tutto il nostro popolo. Il tuo valore e le tue gesta devono essere conosciuti, le tue necessità devono essere soddisfatte ogni volta che ti crogiolerai alla luce della nostra Valle Dorata.
@@ -1466,7 +1466,7 @@ qstr_Our_bees_make_honey_a|Le nostre api fanno il miele e la cera, i nostri alle
 qstr_If_fate_wills_it_I_s|Se il fato vorrà, tornerò nelle vostre terre ancora, e ne conoscerò tutti i segreti.
 qstr_If_I_ever_have_need_|Se mai avrò bisogno dell'aiuto che Lorien può offrire, verrò. Di qualsiasi utilità potrà essere.
 qstr__nod_and_say_nothing|(non dire niente)
-; qstr_Oh_there_are_many_an|Oh, there are many and any friend of Lorien is welcome to these gifts! ^^Should we stand shoulder to shoulder on the field of battle again, or should you do the bidding of our Lady and her lords, our people will reward your kindness with all you would require - bright weapons, hard corselets of mail, white-feathered arrows and provisions for your troops. ^^Who knows, in time you might become a great {lord/lady} of Lorien yourself, one who could offer counsel to others, or ask favours of them.
+qstr_Oh_there_are_many_an|Oh, ve ne sono molti e ogni amico di Lorien è meritevoli di questi doni! ^^Che ci si trovi spalla a spalla ancora una volta sul campo di battaglia, o che tu sia agli ordini della nostra Signora o del suo seguito, il nostro popolo ricompenserà i tuoi servigi con tutto ciò di cui avrai bisogno - nuove armi, solide armature di maglia, frecce piumate e viveri per le tue truppe. ^^Chi lo sa, col tempo potresti divenire {un grande signore/una grande signora} di Lorien, una persona che può da consiglio ad altri, o chiedere favori.
 qstr_The_joys_of_the_Gold|Le gioie della Valle d'Oro sono monte e i veri amici di Lorien sono bevenuti a goderne.  ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, oppure ci troveremo agli ordini della nostra Lady e dei suoi signori; il nostro popolo ti ricompenserà per il tuo sostegno con ogni cosa tu richieda - armi lucenti, vesti di maglia pesante, frecce letali e cibo nutriente per le tue truppe.^^Chissà, con il tempo potresti diventare Gran {Lord/Lady} di Lorien, una persona che potrebbe dare consiglio, o chiedere favori.
 qstr_Our_Golden_Valley_gi|La nostra Valle Dorata abbonda di doni e un amico di Lorien vi può attingere. ^^Dovremmo stare spalla a spalla sul campo di battaglia ancora una volta, o accorrere alla chiamata della nostra Lady e dei suoi signori; il nostro popolo compenserà il tuo appoggio con tutto ciò che puoi desiderare, mentre sei lontano da casa.
 qstr_I_shall_keep_that_in|Devo tenerelo a mente. ^^ Hantanyel, áva márië !

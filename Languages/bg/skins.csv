@@ -2,30 +2,35 @@ skinkey_chin_size|Големина на брадата
 ; skinkey_chin_shape|Chin Shape
 ; skinkey_chin_forward|Chin Forward
 ; skinkey_jaw_width|Jaw Width
-; skinkey_jaw_position|Jaw Position
+; skinkey_lower_lip|Lower Lip
+; skinkey_upper_lip|Upper Lip
 ; skinkey_mouth_nose_distance|Mouth-Nose Distance
 ; skinkey_mouth_width|Mouth Width
-; skinkey_cheeks|Cheeks
+; skinkey_nostril_size|Nostril Size
 ; skinkey_nose_height|Nose Height
 ; skinkey_nose_width|Nose Width
 skinkey_nose_size|Широчина на носът 
 ; skinkey_nose_shape|Nose Shape
 ; skinkey_nose_bridge|Nose Bridge
-; skinkey_cheek_bones|Cheek Bones
+
 ; skinkey_eye_width|Eye Width
 ; skinkey_eye_to_eye_dist|Eye to Eye Dist
 ; skinkey_eye_shape|Eye Shape
 ; skinkey_eye_depth|Eye Depth
 ; skinkey_eyelids|Eyelids
-; skinkey_eyebrow_position|Eyebrow Position
+; skinkey_cheeks|Cheeks
+; skinkey_cheek_bones|Cheek Bones
 ; skinkey_eyebrow_height|Eyebrow Height
-; skinkey_eyebrow_depth|Eyebrow Depth
+
 ; skinkey_eyebrow_shape|Eyebrow Shape
 ; skinkey_temple_width|Temple Width
 skinkey_face_depth|Дълбочина на лицето
 skinkey_face_ratio|Съотношение на лицето
 skinkey_face_width|Широчина на лицето
 skinkey_post_edit|след редактиране
+; skinkey_jaw_position|Jaw Position
+; skinkey_eyebrow_position|Eyebrow Position
+; skinkey_eyebrow_depth|Eyebrow Depth
 skinkey_snout_height|Височина на зурлата
 skinkey_snout_width|Широчина на зурлата
 skinkey_snout_size|Размер на зурлата

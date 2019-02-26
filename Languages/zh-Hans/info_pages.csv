@@ -16,5 +16,5 @@ ip_tactical_controls|战术控制
 ip_tactical_controls_text|使用数字键盘选择一个部队，按“0”键选择所有部队。^^使用F1-F4为选中的部队下达指令。按住F1以选择多个部队，你可以用这个办法集火选中的特定敌方部队。
 ip_division_placement|兵种布局
 ; ip_division_placement_text|When ONE division is selected, the center of its front rank is placed at the spot indicated.^^When MANY divisions are selected, they are separated and spread out as if the player were standing at the spot indicated.^^One may memorize the placement of selected divisions relative to the player by pressing F2, F7. Default is infantry to the left, cavalry right, and ranged forward. Placement is overridden for any division the player chooses to personally head through the Formations Options menu.^^If the camp menu game option is set, divisions will rotate to face the enemy. Otherwise, they will maintain the facing that the player had when they were placed.
-; ip_formations|Formations
+ip_formations|阵型
 ; ip_formations_text|The Complex Formations on the Battle Menu are:^^- RANKS with best troops up front^- SHIELD WALL, ranks with shields in front and longer weapons in back^- WEDGE with best troops up front^- SQUARE in no particular order^- NO FORMATION^^Even in the last case, the player can make formations up to four lines by ordering Stand Closer enough times.

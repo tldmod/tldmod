@@ -4,10 +4,10 @@ skl_leadership|ٌقائد
 skl_leadership_desc|كل نقطة تُزيد الحد الأقصى للوحدات التي يمكن قيادتها بـ5، تزيد الروح المعنوية للمجموعة وتُنقص اجور الوحدات بـ5%%.(مهارة قائد)
 skl_prisoner_management|إدارة السجناء
 skl_prisoner_management_desc|كل مستوى من هذه المهارة يزيد الحد الأقصى للسجناء بـ%d.(مهارة قائد)
-skl_persuasion|الإقناع
-skl_persuasion_desc|هذه المهارة تساعد على جعل الناس يقبلون وجهة نظرك.(مهارة خاصة)
-skl_engineer|الصياغة
-skl_engineer_desc|كل نقطة الى هذه المهارة تقلل كل من صياغة وتطوير المعدات، وتسمح بزيادة جودة التحسينات.(مهارة المجموعة)
+; skl_persuasion|Wildcraft
+; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
+; skl_engineer|-----
+; skl_engineer_desc|-----
 skl_first_aid|العلاج البدائي
 ; skl_first_aid_desc|Heroes regain 5%% per skill level of hit-points lost during mission. (Party skill)
 ; skl_surgery|Surgery

@@ -19,7 +19,7 @@ mno_custom_battle_scenario_10|風 景 測 試 戰 鬥
 mno_troll_battle_scenario|測 試 食 人 妖 戰 鬥 
 mno_warg_battle_scenario|測 試 坐 狼 戰 鬥 
 mno_build_your_own_scene|** 建 造 你 自 己 的 TLD場 景 **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+menu_tutorial|^^ 歡 迎 來 到 騎 馬 與 砍 殺 的 戰 鬥 教 學。在 這 裡 你 會 學 習 到 戰 鬥 的 基 本，和 戰 場 指 揮 部 隊 的 概 略。
 mno_tutorial_1|教 學 #1: 基 本 移 動 和 武 器 選 項 {s1}
 mno_tutorial_2|教 學 #2: 持 盾 戰 鬥 {s2}
 mno_tutorial_3|教 學 #3: 不 持 盾 戰 鬥 {s3}
@@ -41,7 +41,7 @@ mno_leave_custom_battle_2|取 消
 menu_custom_battle_end|^^^^^^戰 鬥 結 束 。 {s1}你 的 隊 伍 殺 死 了 {reg5}人 ， 敵 人 的 隊 伍 殺 死 了 {reg6}人 。 你 親 手 殺 死 了 {reg7}人 。 
 mno_replay|再 玩 一 次 戰 役 
 mno_continue_dot|繼 續 
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^那 是 一 場 令 人 景 仰 的 最 後 一 戰，但 終 究 無 力 回 天。 ^^ 你 和 你 的 人 馬 殺 了 {reg5} 位 敵 人。^你 在 戰 鬥 中 親 自 斬 殺 了 {reg7} 位 對 手。
 mno_replay_cbd|再 玩 一 次 戰 役 
 mno_continue_dot_cbd|繼 續 
 mno_dot_go_back|後 退 
@@ -118,7 +118,7 @@ mno_camp_action|使 用 物 品
 mno_camp_wait_here|在 這 裡 露 營 一 些 時 間 
 mno_camp_options|修 改 TLD 選 項
 mno_Dev_Menu|開 發 者 選 單
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+menu_dev_menu|這 些 是 開 發 選 單，可 以 為 您 提 供 很 多 作 弊/工 具 來 玩。^^但 是，這 將 導 致 一 些 WIP 事 件，觸 發，戰 略 改 變 導 致 破 壞 遊 戲。^^使 用 風 險 自 負！ ^^此 外，在 回 報 錯 誤 時，請 註 明 您 在 使 用 開 發 者 選 單。
 mno_Cheat_enable|啟 用 作 弊 /模 組 選 項 
 menu_game_options|^^^^^^^^點 擊 切 換 選 項 ： 
 mno_game_options_war_level_start|戰 爭 在 等 級: {s1} 時 開 始 。
@@ -356,8 +356,8 @@ mno_lord_field_ai|領 主 有 改 善 的 戰 場 人 工 智 慧: {s7}
 mno_horse_archer_field_ai|馬 騎 弓 兵 有 改 善 的 戰 場 人 工 智 慧: {s7}
 mno_vs_orcs_field_ai|弓 兵 對 半 獸 人 有 更 好 的 準 度(不 會 瞄 準 半 獸 人 頭 部 以 上): {s7}
 mno_battlefield_animals|非 座 狼 / 馬 等 動 物 同 伴 出 現 在 戰 場 上: {s7}
-mno_slow_when_wounded|特 務 會 在 受 傷 時 變 得 緩 慢: {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_slow_when_wounded|單 位 會 在 受 傷 時 變 得 緩 慢: {s7}
+mno_battle_encounter_effects|根 據 陣 營 分 別 的 戰 場 特 效。 (例 如 暴 風 雨，濃 霧):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
 mno_defend_refugees|留 意 掠 奪 者...
 mno_attack_refugees|攻 擊 難 民 隊 伍...
 mno_leave_refugees|暫 時 不 管 他 們...

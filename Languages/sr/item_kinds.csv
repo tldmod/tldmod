@@ -32,7 +32,7 @@ itm_rohirrim_courser|Rohirimski Kurser
 itm_rohirrim_hunter|Rohirimski Lovački Konj
 itm_rohirrim_courser2|Rohirimski Kurser
 itm_rohan_warhorse|Rohirimski Ratni Konj
-; itm_thengel_warhorse|Rohirrim Heavy Warhorse
+itm_thengel_warhorse|Rohanski teški konj
 itm_rhun_horse_a|Rhunovski konj
 itm_rhun_horse_b|Rhunovski konj
 itm_rhun_horse_d|Rhunovski konj
@@ -40,8 +40,8 @@ itm_rhun_horse_e|Rhunovski teski konj
 itm_rhun_horse_f|Rhunovski teski konj
 itm_rhun_horse_g|Rhunovski teski konj
 itm_rhun_horse_h|Rhunovski teski konj
-; itm_dale_horse|Rhovanion Horse
-; itm_dale_warhorse|Rhovanion Warhorse
+itm_dale_horse|Rohanski konj
+itm_dale_warhorse|Rohanski ratni konj
 itm_riv_warhorse|Rivendelski ratni konj
 itm_riv_warhorse2|Imladriski konj
 itm_mordor_warhorse|Mordorski ratni konj
@@ -66,19 +66,19 @@ itm_wargarmored_2b|Oklopljena Varga
 itm_wargarmored_2c|Oklopljena Varga
 itm_wargarmored_3a|Oklopljena Varga
 itm_warg_reward|Ogromna Varga
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
+itm_axe_a|Severnjačka sekira
+itm_axe_b|Severnjacka bradata sekira
+itm_axe_c|Severnjacka sekira
+itm_axe_d|Severnjačka sekira
 itm_tree_trunk_club_a|Stablo
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
+itm_long_bearded_axe|Severnjačka bradata duga sekira
+itm_2_handed_axe|Severnjačka duga sekira
 itm_free_giant_hammer|Džinovski Čekić
 itm_giant_mace|Džinovski Buzdovan
-; itm_troll_shield_a|Troll Shield
+itm_troll_shield_a|Trolski štit
 itm_arrows|Strele
 itm_gondor_arrows|Gondorske Strele
-; itm_orc_javelin|Orc Heavy Javelin
+itm_orc_javelin|Orkovsko teško kratko koplje
 itm_khergit_arrows|Bodljikave Strele
 itm_rohan_arrows_2|Rohirimske Strele
 itm_harad_arrows|Haradrimske Strele
@@ -91,7 +91,7 @@ itm_isengard_arrow|Isengardske Strele
 itm_leather_gloves|Kožne Rukavice
 itm_mail_mittens|Mrežaste Rukavice
 itm_leather_boots|Kožne Cipele
-; itm_white_tunic_a|Civilian Outfit
+itm_white_tunic_a|Civilno odelo
 itm_black_tunic|Crna Tunika
 itm_shortened_spear|Skraćeno Koplje
 itm_spear|Koplje
@@ -110,11 +110,11 @@ itm_dwarf_short_bow|Patuljački Kratki Luk
 itm_harad_bow|Haradski Zakrivljeni Luk
 itm_lg_bow|Luk Orla Čuvara
 itm_riv_bow|Rivendalski Luk
-; itm_glorfi_bow|Glorfindel Bow
+itm_glorfi_bow|Glorfindelov luk
 itm_lorien_bow|Galadrimski Luk
 itm_isengard_large_bow|Isengardski Veliki Luk
 itm_dale_bow|Dejl Luk
-; itm_uruk_bow|Strong Orc Bow
+itm_uruk_bow|Jaki orkovski luk
 itm_mirkwood_bow|Luk Mrke Šume
 itm_dunland_javelin|Danlendsko Koplje
 itm_orc_throwing_arrow|Orkovske Strelice
@@ -135,14 +135,14 @@ itm_arnor_armor_c|Dunedainska Rendžerska Koža
 itm_arnor_armor_d|Dunedainska Rendžerska Koža
 itm_arnor_armor_e|Arnosko Ojačano Koplje
 itm_arnor_armor_f|Arnorsko Jaki Oklop
-; itm_arnor_greaves|Arnorian Greaves
-; itm_arnor_splinted|Arnorian Splinted Greaves
+itm_arnor_greaves|Arnorske čizme
+itm_arnor_splinted|Arnorske uložne čizme
 itm_arnor_shield_a|Arnorski Štit
 itm_arnor_shield_c|Arnorski Konjanički Štit
 itm_arnor_shield_b|Arnorski Štit
 itm_arnor_shield_d|Arnorski Konjanički Štit
-; itm_arnor_sword_a|Arnor Bastard Sword
-; itm_arnor_sword_c|Arnor Bastard Sword
+itm_arnor_sword_a|Arnorski lažni mač
+itm_arnor_sword_c|Arnorski lažni mač
 itm_arnor_sword_f|Arnorski Kratki Mač
 itm_riv_helm_a|Rivendalska Kapa
 itm_riv_helm_b|Kaciga Rivendalskog Strelca
@@ -153,7 +153,7 @@ itm_riv_shield_b|Rivendalski Štit
 itm_riv_bas_sword|Rivendelski longsword
 itm_riv_1h_sword|Rivendalski Mač
 itm_riv_riding_sword|Rivendalski Konjanički Mač
-; itm_riv_archer_sword|Rivendell Archer Sword
+itm_riv_archer_sword|Rivendelski streljački mač
 itm_riv_spear|Rivendalsko Koplje
 itm_riv_armor_light|Rivendalski Oklop
 itm_riv_armor_light_inf|Rivendalski Oklop
@@ -180,16 +180,16 @@ itm_gon_tower_knight|Oklop viteza kule gondora
 itm_gon_leader_surcoat_cloak|Oklop vodja gondora
 itm_gondor_ranger_hood|Zelena kapuljaca
 itm_gondor_ranger_hood_mask|Kapuljaca rendzera gondora
-; itm_gondor_light_greaves|Gondorian Leather Greaves
-; itm_gondor_med_greaves|Gondorian Medium Greaves
-; itm_gondor_heavy_greaves|Gondorian Mailed Greaves
+itm_gondor_light_greaves|Gondorske kožne čizme
+itm_gondor_med_greaves|Gondorske srednje čizme
+itm_gondor_heavy_greaves|Gondorske verižnačke čizme
 itm_gondorian_light_helm|Kaciga Gondorskog Pešadinca
 itm_gondor_infantry_helm|Kaciga Gondorske Pešadije
-; itm_gondor_auxila_helm|Gondorian Auxilia Helm
-; itm_gondorian_light_helm_b|Gondorian Bowman Helm
-; itm_gondorian_archer_helm|Gondorian Archer Helm
+itm_gondor_auxila_helm|Gondorska plaćenički šlem
+itm_gondorian_light_helm_b|Gondorski streljački šlem
+itm_gondorian_archer_helm|Gondorski streljački šlem
 itm_tower_archer_helm|Kaciga Strelca Kule
-; itm_gondor_leader_helm|Gondor High Helmet
+itm_gondor_leader_helm|Gondorska visoka kaciga
 itm_tower_guard_helm|Kaciga Čuvara Kule
 itm_gondor_citadel_knight_helm|Kaciga Viteza Citadele
 itm_gondor_squire_helm|Kaciga Plemića Gondora
@@ -198,18 +198,18 @@ itm_gondor_dolamroth_helm|Kaciga Dol Amrota
 itm_swan_knight_helm|Kaciga Labudovog Viteza
 itm_gondor_lamedon_helm|Lamedonska Kaciga
 itm_gondor_lamedon_leader_helm|Lamedonska Jača Kaciga
-; itm_blackroot_archer|Blackroot Vale Cloaked Gambeson
-; itm_blackroot_bowman|Blackroot Vale Cloaked Jerkin
-; itm_blackroot_footman|Blackroot Vale Jerkin
-; itm_blackroot_warrior|Blackroot Vale Gambeson
-; itm_blackroot_leader|Blackroot Vale Mail
-; itm_blackroot_hood|Black Hood
+itm_blackroot_archer|Crnokorenasti dolinski ogrtni gambezon
+itm_blackroot_bowman|Crnokorenasto dolinski ogrtni prsluk
+itm_blackroot_footman|Crnokorenasto dolinski prsluk
+itm_blackroot_warrior|Crnokorenasto dolinski gambezon
+itm_blackroot_leader|Crnokorenasto dolinska verežnjača
+itm_blackroot_hood|Crna kapuljača
 itm_dol_hauberk|Dol Amrotska Oklopna košulja
 itm_dol_heavy_mail|Dol Amrotska Teška Verižnjača
 itm_dol_padded_coat|Dol Amrotsko Tapacirano Krzno
 itm_dol_shirt|Dol Amrotska Košulja
 itm_dol_very_heavy_mail|Dol Amrotska Veoma Teška Verižnjača
-; itm_dol_greaves|Dol Amroth Greaves
+itm_dol_greaves|Dol Amrotske čizme
 itm_dol_shoes|Dol Amrotske Lake Čizme
 itm_lamedon_clansman|Lamedonski Klanski Oklop
 itm_lamedon_footman|Oklop Lamedonskog Pešadinca
@@ -218,10 +218,10 @@ itm_lamedon_leader_surcoat_cloak|Oklop Lamedonskog Vođe
 itm_lamedon_warrior|Oklop Lamedonoskog Ratnika
 itm_lamedon_veteran|Oklop Lamedonskog Veterana
 itm_lamedon_vet_warrior|Oklop Lamedonskog  Ratnika Veterana
-; itm_lamedon_hood|Hood
+itm_lamedon_hood|Kapuljača
 itm_pinnath_archer|Oklop Strelca iz Pinat Gelina
 itm_pinnath_footman|Oklop Pešadinca iz Pinat Gelina
-; itm_pinnath_leader|Pinnath Gelin Knight Armor
+itm_pinnath_leader|Pinato Gelinski viteški oklop
 itm_pinnath_vet_footman|Oklop Pešadinca Veterana iz Pinat Gelina
 itm_pinnath_warrior|Oklop Ratnika iz Pinat Gelina
 itm_pel_footman|Oklop Pešadinca iz Pelargira
@@ -230,10 +230,10 @@ itm_pel_leader|Oklop Pelargirskog Vođe
 itm_pel_marine|Pelargirski Marinac
 itm_pelargir_marine_leader|Vođa Pelargirskih Marinaca
 itm_pelargir_regular|Pelargirski Regulaš
-; itm_pelargir_hood|White Hood
+itm_pelargir_hood|Bela kapuljača
 itm_pelargir_helmet_light|Pelargirska Kaciga
 itm_pelargir_helmet_heavy|Pelargirska Teška Kaciga
-; itm_pelargir_greaves|Pelargir Greaves
+itm_pelargir_greaves|Pelargirske čizme
 itm_lossarnach_shirt|Lozarnaška Košulja
 itm_lossarnach_axeman|Oklop Lozarnaškog Sekiraša
 itm_lossarnach_leader|Oklop Lozarnaškog Vođe
@@ -243,7 +243,7 @@ itm_lossarnach_warrior|Oklop Lozarnaškog Ratnika
 itm_lossarnach_cloth_cap|Lozarnaška Platnena Kapa
 itm_lossarnach_leather_cap|Lozarnaška Kožna Kapa
 itm_lossarnach_scale_cap|Lozarnaška Tvrdokožna Kapa
-; itm_lossarnach_greaves|Lossarnach Greaves
+itm_lossarnach_greaves|Losarnačke čizme
 itm_gondor_shield_a|Gondorski Kockasti Štit
 ; itm_gondor_shield_b|Gondor Kite Shield
 itm_gondor_shield_c|Oklop Gondorske Kule
@@ -731,7 +731,7 @@ itm_harad_lamellar_greaves|Haradske Cizme
 
 ; itm_umb_helm_f|Corsair High Helm
 
-; itm_umb_hood|Black Hood
+itm_umb_hood|Crna kapuljača
 
 ; itm_corsair_boots|Corsair Boots
 

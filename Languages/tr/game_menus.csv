@@ -1,5 +1,5 @@
 menu_start_game_1|^^^^^^^^^^Ne için savaşıyorsun?
-mno_start_good|Yeni bir çagın Şafagı
+mno_start_good|Yeni bir çagın ŞAFAĞI
 mno_start_evil|İnsanların Alacakaranlıgı
 mno_go_bback|Geri Dön
 menu_start_phase_2|^^^^^ Orta Dünya. Doğuda bir gölge büyüyor, ^ ve karanlık şeyler uzun süredir saklandıkları yerden dışarı çıktılar. ^ Özgür İnsanlar bir çağdır görülmemiş bir savaş için hazırlanıyorlar. ^ İnsanlar, Elfler, Cüceler ve Orklar; hepsi kendi rollerini oynayacaklar. ^^ Hangi rolleri oynayacakları ise görülecek...
@@ -19,7 +19,7 @@ mno_custom_battle_scenario_10|Manzara Test Savaşı
 mno_troll_battle_scenario|Troll savaşını test et
 mno_warg_battle_scenario|Warg savaşını test et
 mno_build_your_own_scene|**TLD ile kendi Sahneni Oluştur**
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+menu_tutorial|^^Mount & Blade Savaş Öğreticisine hoş geldin. Burada nasıl savaşacağından tut, birliklerini savaş alanında nasıl yönlendireceğine kadar öğreneceksin.
 mno_tutorial_1|Öğretici #1: Temel Hareketler ve silah seçimi. {s1}
 mno_tutorial_2|Tutorial #2: Kalkan ile birlikte dövüşmek. {s2}
 mno_tutorial_3|Öğretici #3: Kalkan olmadan dövüşmek. {s3}
@@ -41,7 +41,7 @@ mno_leave_custom_battle_2|İptal.
 menu_custom_battle_end|^^^^^^Savas sona erdi. {s1} Senin tarafin savasta {reg5} düsman öldürdü ve {reg6} asker kaybetti.^Kisisel olarak {reg7} düsman katlettin.
 mno_replay|Savaşı tekrar oyna.
 mno_continue_dot|Devam et.
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^Bu kabul edilebilir bir son savunmaydı, fakat tamamen yok oldu.^^ Sen ve kuzenlerin {reg5} düşman öldürdünüz.^Sen tek başına {reg7} rakibini katlettin.
 mno_replay_cbd|Savaşı tekrar oyna.
 mno_continue_dot_cbd|Devam et.
 mno_dot_go_back|Geri dön
@@ -117,8 +117,8 @@ mno_camp_troop|Gözden geçir{reg10? askerler:}{reg12? and:}{reg11? esirler:}.
 mno_camp_action|Bir nesne kullan.
 mno_camp_wait_here|Burada bir süreliğine kamp kur.
 mno_camp_options|TLD ayarını değiştir
-; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_Dev_Menu|Geliştirici Menüsü
+menu_dev_menu|Bunlar size oynamak için bir sürü hile ve araç veren geliştirici seçenekleri.^^ Bununla birlikte, bu bazı WIP olaylarına, tetikleyicilere, oyun kırıcı olabilecek kampanya değişikliklerine neden olacaktır.^^ Risk sizindir. ^^ Ayrıca, hataları rapor ederken, lütfen bize Geliştirici Menüsü kullandığınızı söyleyin.
 mno_Cheat_enable|Hile/modlama ayarlarını etkinleştir.
 menu_game_options|^^^^^^^^Değiştirmek için bir ayara tıklayın:
 mno_game_options_war_level_start|Savaşın Başlayacağı Seviye: {s1}
@@ -336,7 +336,7 @@ menu_player_added_to_allow_follow|^^^^^Bir ulak geldi ve şuanda bir {s24} olara
 mno_player_added_to_allow_follow_close|Kapat
 menu_center_besieged_event|^^^^^{s1}'in {s3}'ten {s2} tarafından kuşatıldığını bildiren bir ulak geldi.
 mno_center_besieged_event_close|Kapat
-; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+menu_guardian_party_spawned|^^^^^Gözcüler {s6} 'in  {s7} yakınlarında başkenti son bir kere savunmak amacıyla büyük bir ordu topladığını rapor ediyor.
 mno_intro_next|Devam et...
 mno_start_defend_caravan|Karavanı Savun!
 mno_start_raid_caravan|Karavanı Yagmala!
@@ -357,7 +357,7 @@ mno_horse_archer_field_ai|Atlı Okçular Gelişmiş Savaş Alanı Yapay Zekasın
 mno_vs_orcs_field_ai|Okçular orklara karşı daha iyi nişan alsınlar (orkların kafalarına hedef almazlar): {s7}
 mno_battlefield_animals|Warg olmayan / At veya Hayvan Yoldaşları Savaşta oluştur: {s7}
 mno_slow_when_wounded|Kişiler yaralanınca yavaşlar: [s7]
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_battle_encounter_effects|Savaş Bölgelerinde Gruplaşma Tabanlı Efektler (Örn. fırtınalar, sisler): {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
 mno_defend_refugees|Yağmacılar için tetikte kal....
 mno_attack_refugees|Mülteci kervanına saldır...
 mno_leave_refugees|Onları şimdilik bırakın...
@@ -408,7 +408,7 @@ menu_burial_mound_oath|{s4}'ün ölümü üzerine bağırarak intikam yemini edi
 menu_funeral_pyre_oath|{s4}'ün ölümü üzerine bağırarak intikam yemini ediyorsun. Hiç durmadan {s3} kuvvetlerini arayacak ve onları yok edeceksin. Sözlerin rüzgarla uzaklara taşınıyor, denizin ötesinden duyulmadıklarını kim söyleyebilir?
 mno_leave_pyre_oath|Kremasyon alanını terket.
 menu_burial_mound_despoil| {s1}'ın mezarını ellerinle yıkıyorsun ve taşlarını lanetlerle, merhametsiz şarkılarla ve ağza alınmayacak hareketlerle lekeliyorsun. Yoldaşların ölünün korkusundan geri çekiliyorlar fakat senin kötülüğüne duydukları saygı yenilenmiş gibi görünüyor.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_funeral_pyre| {s3} {s2} arasında kömürleşmiş cenazesinin kalıntılarına yaklaşıyorsun. {s28} 'in güçleri ile savaşta kaybedilmiş. Cesetler, onun muhafızları tarafından törenle yakılmış. Kayda değer hiçbir şey kalmamış.
 mno_leave_pyre|Kremasyon alanını terket.
 menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştığında..
 mno_ruin_menu_0|Etrafı keşfet.

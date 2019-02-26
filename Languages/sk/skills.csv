@@ -4,7 +4,7 @@ skl_leadership|Vodcovstvo
 skl_leadership_desc|Každý bod zvyšuje maximálny počet jednotiek ktorým môžeš veliť o 5, zvyšuje morálku tvojej družiny a znižuje mzdu jednotiek o 5 %%. (Schopnosť vodcu)
 skl_prisoner_management|Väznenie
 skl_prisoner_management_desc|Každá úroveň tejto schopnosti zvyšuje maximálny počet väzňov o %d. (Schopnosť vodcu.)
-skl_persuasion|Lesníctvo
+skl_persuasion|Zbojníctvo
 skl_persuasion_desc|Schopnosť prežiť v divočine a podvoliť si ju. Ovplyvní schopnosť tvojej družiny schovať sa pred nepriateľom a tiež rýchlosť tvojej družiny v lesnatom teréne. (Schopnosť družiny)
 skl_engineer|-----
 skl_engineer_desc|-----
@@ -38,8 +38,8 @@ skl_shield|Štít
 skl_shield_desc|Snižuje poškodenie udeľované tvojmu štítu (o 8%% za úroveň tejto schopnosti) a zvyšuje rýchlosť štítu a pokrytie. (Osobná schopnosť)
 skl_weapon_master|Majster zbrane
 skl_weapon_master_desc|Uľahčuje získavanie zručnosti so zbraňou a zvyšuje limity zručnosti. Limity sú: 60, 100, 140, 180, 220, 260, 300, 340, 380, 420. (Osobná schopnosť)
-skl_power_draw|Silné napnutie
-skl_power_draw_desc|Umožňuje postave používať silnejšie luky. Každý bod tejto schopnosti (až do štvorky plus požiadavky luku pre silný-náťah) zvyšuje poškodenie luku o 14%%. (Osobná schopnosť)
+skl_power_draw|Sila napnutia tetivy
+skl_power_draw_desc|Umožňuje postave používať silnejšie luky. Každý bod tejto schopnosti (až do štvorky plus požiadavky luku pre silu napnutia tetivy) zvyšuje poškodenie luku o 14%%. (Osobná schopnosť)
 skl_power_throw|Mocný vrh
 skl_power_throw_desc|Každý bod tejto schopnosti zvyšuje poškodenie vrhom o 10%%. (Osobná schopnosť)
 skl_power_strike|Mocný úder

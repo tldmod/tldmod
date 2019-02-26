@@ -1,4 +1,4 @@
-dlga_start:mutiny_pretalk_1|Zdravím veliteli {playername}. Poslouchejte.. ^Chlapi si stěžují! Chtějí víc zábavy, a méně pochodování.
+dlga_start:mutiny_pretalk_1|Zdravím {playername}. Poslouchejte.. ^Chlapi si stěžují! Chtějí víc zábavy, a méně pochodování.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Zpátky do řady, červe! Jsme ve válce, a já jsem váš velitel.
 dlga_mutiny_pretalk_2:close_window|Na váš rozkaz, veliteli. Jak si přejete...
 dlga_start:mutiny_talk_1|Zdravim veliteli. Chci vam neco rict... Chlapi nejsou moc nadšeni, vlastně vůbec. ^Malo lidskeho masa, málo zábavy. ^Chlapi říkají, že nejste dost dobrý, veliteli!
@@ -95,7 +95,7 @@ dlga_member_talk:ziggy_ask_more|Zigûrpheli, chci dalšího Vlka od tebe. Zaří
 dlga_ziggy_ask_more:close_window|Nemám žádný život co bych mohl nabídnout, veliteli.
 dlga_ziggy_ask_more:ziggy_not_rested|Potřebuji více času, veliteli. Ten rituál mě úplně vysál.
 ; dlga_ziggy_ask_more:close_window.1|I can only control so much. I'll need to become more powerful...
-; dlga_ziggy_ask_more:ziggy_choose_prisoners|Of course, Commander. Which one do you have to offer?
+dlga_ziggy_ask_more:ziggy_choose_prisoners|Samozřejmě veliteli. Kterou můžete nabídnout?
 dlga_ziggy_not_rested:close_window|Odpočívej rychle, potřebují více takových.
 dlga_member_separate:member_separate_confirm|Skutečně? No já tu nebudu jen tak čekat. Vrátím se do {s4}. Chceš to tak?
 dlga_member_separate_confirm:member_separate_yes|Je to pravda. Musíme se rozdělit.

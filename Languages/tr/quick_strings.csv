@@ -215,7 +215,7 @@ qstr_+1_to_Strength|+1 Güce
 qstr_+1_to_Agility|+1 Çeviklik
 qstr_+1_to_Leadership|+1 Liderliğe 
 qstr_+1_to_Power_Draw|+1 Güçlü Vuruşa
-; qstr_Turns_nature_to_your|Turns nature to your side (effect scales with Wildcraft)
+qstr_Turns_nature_to_your|Doğayı sizin tarafınıza çevirir (efektler Wildraft ile şekillenir)
 qstr_+1_to_Trainer|Talimciliğe +1
 qstr_Recruits_Tribal_Orcs|Kabile Orklarını Topla
 qstr_rally|toparla
@@ -624,7 +624,7 @@ qstr_Gained_permanent_+1_to_S|+1 Güç Kalıcı olarak kazanıldı.
 qstr_{s11}_recovered_from|{s1} ağır bir yaradan kurtuldu.
 qstr_Volunteers|Gönüllüler
 qstr_Reserves|Rezervler
-; qstr_have_taken_measure_o|have taken measure of your faction's current strength and has grown bolder.
+qstr_have_taken_measure_o|Klanınızın güncel gücünü ölçtü ve büyüdü.
 qstr_loses_Faction_Streng|Erzak hatları kesintiye uğradığında Taraf Kuvveti değer kaybeder.
 qstr_loses_Faction_Strengt|Bir Tarafın Kampı yok edildiginde Taraf Kuvveti düşer.
 qstr_gains_Faction_Streng|Zaferinizin haberleri yayıldığında Taraf Kuvveti artar.
@@ -633,7 +633,7 @@ qstr_Raiders|Akıncılar
 qstr_have_won_the_sea_bat|Deniz savaşını kazanmak birliklerinizin moralini düşürebilir. Düşman kendi yenilgisinden faydalanabilir ve daha sık saldırı yapabilir.
 qstr_loses_Faction_Strength|Yıkıcı baskın nedeniyle Taraf gücünü kaybeder.
 qstr_loses_Faction_Strength_|denizdeki başarılardan dolayı Taraf Gücünü kaybeder.
-; qstr_You_spent_{reg67}_of|You spent {reg67} of your influence with {s1}, with {reg66} remaining.
+qstr_You_spent_{reg67}_of|{s1} 'e olan etkinizin {reg67} kadarını kullandın, {reg66} kaldı.
 qstr_No_Troops_Left.|hiç birlik kalmadı.
 qstr_avoid_melee|Yakın dövüşü önlemek
 qstr_stand_and_fight|Durun ve dövüşün
@@ -651,7 +651,7 @@ qstr_Troop_detail|Birim Detayları
 qstr_{s1}^|{s1}^\n
 qstr_{s1}Level:_{reg1}^|{s1}Level: {reg1}^
 qstr_{s1}Hit_Points:_{reg|{s1}Hasar puanı: {reg1}
-; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
+qstr_{s1}Atributes:_^___S|{s1}Özellikler: ^   Güç:^
 qstr_{s2}^{reg1}^|{s2}^{reg1}^
 qstr_{s1}___Agility:|{s1} Çeviklik:
 qstr_{s2}{reg1}|{s2}{reg1}

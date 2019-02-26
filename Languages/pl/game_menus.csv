@@ -19,7 +19,7 @@ mno_custom_battle_scenario_10|Test bitwy krajobrazowej
 mno_troll_battle_scenario|Test bitew troli.
 mno_warg_battle_scenario|Test walki wargów
 mno_build_your_own_scene|** Zbuduj własną scenę dla TLD **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+menu_tutorial|^^Witaj w samouczku walki. Tutaj nauczysz się podstaw walki oraz dowodzenia jednostkami w czasie bitwy.
 mno_tutorial_1|Tutorial #1: Podstawowe ruchy i wybór broni. {s1}
 mno_tutorial_2|Tutorial #2:Walka z tarczą. {s2}
 mno_tutorial_3|Tutorial #3: Walka bez tarczy. {s3}
@@ -41,7 +41,7 @@ mno_leave_custom_battle_2|Anuluj.
 menu_custom_battle_end|^^^^^^Bitwa skończona. {s1} Twój oddział zabił {reg5} wrogów, tracąc przy tym {reg6} ludzi.^Z twej ręki poległo {reg7} wrogów.
 mno_replay|Rozegraj bitwę ponownie
 mno_continue_dot|Dalej.
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^To było godna podziwu walka, ale ostatecznie okazała się być klęską.^^ Ty i twoi żołdacy zabiliście {reg5} wrogów.^Sam osobiście zabiłeś {reg7} przeciwników w walce.
 mno_replay_cbd|Rozegraj bitwę ponownie
 mno_continue_dot_cbd|Dalej.
 mno_dot_go_back|Powrót
@@ -117,8 +117,8 @@ mno_camp_troop|Podgląd{reg10? troops:}{reg12? and:}{reg11? prisoners:}.
 mno_camp_action|Użyj obiektu
 mno_camp_wait_here|Odpocząć przez jakiś czas.
 mno_camp_options|Zmień opcje TLD.
-; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_Dev_Menu|Menu Developerskie
+menu_dev_menu|To są Developerskie Opcje pozwalające Ci na użycie wielu narzędzi/oszustw.^^ Korzystanie z nich może spowodować pewne błędy lub zmiany w kampanii które popsują grę.^^ Używaj na własne ryzyko! ^^ Kiedy będziesz zgłaszał błędy, daj nam znać czy używałeś tego menu.
 mno_Cheat_enable|Włącz oszustwa/tryb moderski
 menu_game_options|^^^^^^^^Naciśnij opcję aby ją zmienić:
 mno_game_options_war_level_start|Wojna rozpoczyna się na poziomie: {s1}
@@ -289,7 +289,7 @@ mno_talk_to_castle_commander|Odwiedź baraki.
 mno_speak_with_elder|Rozmawiaj z miejscowymi władzami.
 mno_isengard_underground|Udaj się do podziemnych jaskini.
 mno_tirith_toplevel|Wspinaj się na wyższy poziom.
-; mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates|Odwiedź Wielką Bramę
 mno_town_leave|Odejdź...
 mno_town_leave_door|Wyjdź
 menu_player_initiated_siege_result|Zaatakowałeś ten ośrodek pod sztandarem {s2}.
@@ -356,8 +356,8 @@ mno_lord_field_ai|Lordowie mają ulepszone bitewne AI: {s7}.
 mno_horse_archer_field_ai|Konni Łucznicy mają ulepszone bitewne AI: {s7}.
 mno_vs_orcs_field_ai|Łucznicy mają lepszy cel przeciwko orkom (nie celują nad głowicami orków): {s7}.
 mno_battlefield_animals|Towarzysze zwierząt innych niż wojsko / konie w bitwie: {s7}.
-; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+mno_slow_when_wounded|Agenci stają się wolni kiedy są ranni:  {s7}
+mno_battle_encounter_effects|Specjalne Efekty Frakcji na polu bitwy (np. sztormy, mgły):  {s7}
 mno_defend_refugees|Uważaj na rajderów. . .
 mno_attack_refugees|Atakuj uchodźców. . .
 mno_leave_refugees|Zostaw ich na razie. . .
@@ -398,7 +398,7 @@ mno_next_rescue_scene_door|Kontynuuj dalej!
 mno_pick_troops1|Wybierz kompanów na tą misję, {reg0}  wybrano
 menu_pick_troops|Kogo zabrałbyś ze sobą na misję?    Narazie wybrałeś {reg0} kompanów. Możesz zabrać maksymalnie dziesięciu ze sobą.
 mno_go_forward|Zakończ wybieranie kompanów i przejdź dalej.
-; menu_burial_mound|You approach the burial mound of {s1} of {s2}.   Defeated in battle by the forces of {s28}.  It is heaped with the notched weapons of his fallen enemies.
+menu_burial_mound|Zbliżasz się do kopca pogrzebowego {s1} z {s2}. Został pokonany w bitwie przeciwko siłom {s28}. Piętrzy się na nim stos wyszczerbionych broni pokonanych wrogów.
 mno_pay_respects|Uklęknij i oddaj należyty szacunek.
 mno_swear_oath|Przysięgnij zemstę!
 mno_despoil|Zbezcześć to miejsce 
@@ -408,7 +408,7 @@ menu_burial_mound_oath|Głośno przysięgasz pomścić śmierć {s4}.   Będzies
 menu_funeral_pyre_oath|Głośno przysięgasz pomścić śmierć {s4}.   Będziesz nieustannie szukasz sił {s3} aby je zniszczyć. Twoje słowa wędrują daleko na wietrze i kto wie, być może dotarły nawet za morze?
 mno_leave_pyre_oath|Odejdź od stosu.
 menu_burial_mound_despoil|Pomnik rozbijasz własnymi rękoma na {s1}, a same kamienie defoliujesz przekleństwami, spadającymi śpiewami i niewypowiedzianymi czynami. Twoi naśladowcy spadają z powrotem w strachu przed zmarłymi, ale wydaje się, że odnowiony szacunek dla niegodziwości.
-; menu_funeral_pyre|You approach the charred remnants of the funeral pyre of {s3} of {s2}.   Defeated in battle by the forces of {s28}.  Here, the corpse was ceremoniously burned by his personal bodyguards.   Nothing of value remains.
+menu_funeral_pyre|Zbliżasz się do zwęglonych resztek stosu pogrzebowego {s3} z {s2}. Został pokonany w bitwie przeciwko siłom {s28}. Jego zwłoki zostały ceremonialnie spalone przez jego osobistych gwardzistów. Nic cennego przy nim nie pozostało.
 mno_leave_pyre|Odejdź od stosu.
 menu_town_ruins|W momencie gdy się zbliżasz, zauważasz, że {s1} to {s2}
 mno_ruin_menu_0|Zbadaj to miejsce.

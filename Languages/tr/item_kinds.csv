@@ -512,10 +512,10 @@ itm_rohan_2h_sword|Rohan Savaş Kılıcı
 itm_mirkwood_light_scale|Hafif Ağaç Elfi Pullu Zırhı
 itm_mirkwood_armor_a|Hafif Deri Zırh
 itm_mirkwood_armor_b|Hafif Kapiton ve Pullu Zırh
-; itm_mirkwood_armor_c|Mirkwood Royal Mail
+itm_mirkwood_armor_c|Kuytuorman Kraliyet Zırhı
 itm_mirkwood_armor_d|Hafif Kapiton Cüppesi
 itm_mirkwood_armor_e|Hafif Örgü Zırh ve Cüppe
-; itm_mirkwood_armor_f|Mirkwood Leafscale
+itm_mirkwood_armor_f|Kuytuorman Leafscale
 itm_mirkwood_great_spear|Kuytuorman Büyük Mızrağı
 itm_mirkwood_war_spear|Kuytuorman Savaş Mızrağı
 itm_mirkwood_short_spear|Kuytuorman Mızrağı
@@ -743,7 +743,7 @@ itm_umb_shield_c|Korsan Küçük Kalkanı
 
 itm_umb_shield_d|Korsan Küçük Kalkanı 
 
-; itm_umbar_spear|Umbar Short Spear
+itm_umbar_spear|Umbar Kısa Mızrağı
 
 itm_umbar_cutlass|Umbar Denizci Kaması
 
@@ -755,7 +755,7 @@ itm_corsair_harpoon|Korsan Zıpkını
 itm_corsair_sword|Korsan Eket
 
 itm_corsair_throwing_dagger|Çarpık Fırlatma Hançeri
-; itm_umbar_pike|Corsair Trident
+itm_umbar_pike|Korsan Üç Dişli Mızrağı
 itm_woodman_tunic|Oduncu Tuniği
 
 itm_woodman_scout|Ormancı İzci Pelerini

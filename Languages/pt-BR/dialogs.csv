@@ -1,30 +1,30 @@
-dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão e menos marchar.
+dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão e menos marcha.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para as fileiras, verme! Estamos em guerra e eu sou seu comandante.
 dlga_mutiny_pretalk_2:close_window|Como quiser, comandante. Como quiser...
-dlga_start:mutiny_talk_1|Ei, comandante. Escute aqui... Os rapaz não estão felizes, nenhum pouco felizes. ^Não tem carne humana o suficiente, não tem diversão. ^Os rapaz diz que você não é bom o suficiente, comandante!
-dlga_mutiny_talk_1:mutiny_talk_2|O que? Insubordinação durante a guerra? Isso é punível com a morte, verme!
-dlga_mutiny_talk_2:close_window|Vamos te dizer uma coisa... Os rapaz aqui acham vou ser melhor comandante para eles quando EU MATAR VOCÊ!
+dlga_start:mutiny_talk_1|Ei, comandante. Escute aqui... Os rapazes não estão felizes, nem um pouco felizes. ^Não tem carne humana o suficiente, não tem diversão. ^Os rapazes dizem que você não é bom o suficiente, comandante!
+dlga_mutiny_talk_1:mutiny_talk_2|O quê? Insubordinação durante a guerra? Isso é punível com a morte, verme!
+dlga_mutiny_talk_2:close_window|Vamos te dizer uma coisa... Os rapazes aqui acham vou ser melhor comandante para eles quando EU MATAR VOCÊ!
 dlga_start:troll_introduce_1|Algum problema?
 dlga_start:troll_talk_1|Tá putin?
-dlga_troll_introduce_1:troll_goodbye|Whoa! Um troll falante?!
+dlga_troll_introduce_1:troll_goodbye|Caraio! Um troll falante?!
 dlga_troll_introduce_1:close_window|Eu tenho um cavalo.
-dlga_troll_talk_1:troll_talk_2|Troll, mim ser troll.
+dlga_troll_talk_1:troll_talk_2|Me trolla aí cachorro.
 dlga_troll_talk_1:close_window|Eu tenho um cavalo.
 dlga_troll_talk_2:troll_talk_3|Desafio aceito!^^{s4}
 dlga_troll_beaten:troll_talk_1|Eu me curvo diante de sua sabedoria, Mestre Provocador de Trolls!
-dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
+dlga_troll_goodbye:close_window|Yeye! trolladinha do malandro.
 dlga_start:hobbit_merry_talk_met|Olá novamente, {playername}!
 dlga_start:hobbit_pippin_talk_met|Olá novamente, {playername}!
-dlga_start:hobbit_general_talk_1|Olá, {ser/madam}! Meu nome é Meriadoc Brandybuck, mas pode me chamar de Merry!
-dlga_start:hobbit_general_talk_1.1|Olá, {sir/madam}! Meu nome é Peregrin Took, mas você pode me chamar de Pippin!
-dlga_hobbit_general_talk_1:close_window|Eu não tenho tempo agora.
-dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Te dizer. Acho que nunca vi ninguém da sua raça.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Te dizer. Acho que conheci outro que nem você, em Edoras.
-dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Te dizer, acho que conheci outro que nem você, em Minas Tirith
-dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei. Eu vim de longe! Sou um Hobbit, {sir/madam}, from the Shire.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, só pode ter sido o meu querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits, {senhor/senhora}, e nós viemos do Condado, nós dois! Bom e velho Pippin, eu fico imaginando como ele está em Minas Tirith.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, só pode ter sido o meu querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits, {senhor/senhora}, e nós viemos de Shire, nós dois! Bom e velho Merry, eu fico imaginando como ele está em Edoras.
-dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Posso pedir-te um favor, {meu senhor/senhora}.
+dlga_start:hobbit_general_talk_1|Olá, {senhor/madame}! Meu nome é Meriadoc Brandybuck, mas pode me chamar de Merry!
+dlga_start:hobbit_general_talk_1.1|Olá, {senhor/madame}! Meu nome é Peregrin Took, mas você pode me chamar de Pippin!
+dlga_hobbit_general_talk_1:close_window|Não tenho tempo agora.
+dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Vou te falar... acho que nunca vi ninguém da sua raça.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Vou te falar...Acho que conheci outro que nem você, em Edoras.
+dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Vou te falar... acho que conheci outro que nem você, em Minas Tirith
+dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Eu sei {senhor/madame}. Eu vim de longe! Sou um Hobbit, do Condado.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, só pode ter sido o meu querido primo! Peregrin Took, ou Pippin, como eles o chamam. Nós somos Hobbits, {senhor/madame}, e nós viemos do Condado, nós dois! Bom e velho Pippin, eu fico imaginando como ele está, lá em Minas Tirith.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Oh, só pode ter sido o meu querido primo! Meriadoc Brandybuck, ou Merry, como eles o chamam. Nós somos Hobbits, {senhor/madame}, e nós viemos do Condado, nós dois! Bom e velho Merry, eu fico imaginando como ele está em Edoras.
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Posso pedir-te um favor, {meu senhor/minha lady}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Claro, {s1}. O que é?
 dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Você poderia encaminhar uma mensagem para o meu primo, {s1}? Ele está em {s2}, em {s3}, a serviço de {s4}.
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Estarei passando por {s1} e ficarei feliz em passar esta mensagem para o seu primo.
@@ -34,53 +34,53 @@ dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Eu entendo. Mandarei p
 dlga_hobbit_general_talk_3:close_window|Bom, adeus!
 dlga_start:hobbit_merry_talk_met.1|Bem-vindo de volta, {nome do jogador}!
 dlga_start:hobbit_pippin_talk_met.1|Bem-vindo de volta, {nome do jogador}!
-dlga_hobbit_merry_talk_met:hobbit_deliver_message|Olá, messer Merry. Tenho uma mensagem do teu primo, Pippin, em Minas Tirith.
-dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Olá, messer Pippin. Tenho uma mensagem do teu primo, Merry, em Edoras.
+dlga_hobbit_merry_talk_met:hobbit_deliver_message|Olá, Merry. Tenho uma mensagem do teu primo, Pippin, que se localiza nas Minas Tirith.
+dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Olá, Pippin. Tenho uma mensagem do teu primo, Merry, que se localiza em Edoras.
 dlga_hobbit_deliver_message:close_window|Obrigado, {playername}. Foi bom você ter trazido isso para mim.
-dlga_hobbit_merry_talk_met:close_window|Olá, messer Merry.
-dlga_hobbit_pippin_talk_met:close_window|Olá, messer Pippin.
+dlga_hobbit_merry_talk_met:close_window|Olá, Merry.
+dlga_hobbit_pippin_talk_met:close_window|Olá, Pippin.
 dlga_start:treebeard_introduce_1|(Você se encontra observando uma criatura extraordinária. Ele é muito alto e com membros rígidos, pele de casca e cabelo de folhas. O musgo cobre partes de seu corpo. Mas no momento o que você mais repara são os olhos. Os olhos profundos estão te inspecionando, cautelosos e solenes, mas muito afiados e penetrantes. Você acha que são marrons, raiados de verde, como se houvesse um enorme poço atrás deles, repleto de eras de memórias e longos, vagarosos pensamentos constantes. Mas na superfície seus olhos fulguram com o presente... como o sol cintilando nas folhas da copa de uma vasta árvore, ou as ondulações de um lago muito profundo.)
-dlga_treebeard_introduce_1:treebeard_introduce_2|(Você está prestes a dizer algo, mas uma estranha sensação sufocante recai sobre você, como se o ar é muito rarefeito ou demasiado escasso para respirar... com uma inspiração quase desesperada de ar consegue agitar frouxamente o sentimento e a criatura enorme árvore cai a intensidade do seu olhar um pouco mais. A criatura continua a olhar para você e você notar que as outras criaturas de árvore enorme estão olhando para você também, como se esperasse que fale...)
+dlga_treebeard_introduce_1:treebeard_introduce_2|(Você está prestes a dizer algo, mas uma estranha sensação sufocante cai sobre você, como se o ar fosse muito rarefeito ou escasso para respirar... com uma inspiração quase desesperada de ar você consegue segurar seus sentimentos e a criatura/árvore libera a intensidade do seu olhar um pouco mais. A criatura continua a olhar para você e você notar que as outras criaturas árvores estão olhando para você também, como se esperassem que você fale algo...)
 dlga_treebeard_introduce_2:treebeard_introduce_3|Perdõe minha intrusão... não sou mais do que um cansado viajante procurando refúgio dos eventos recentes... meu nome é {playername}. Posso perguntar quem você é?
-dlga_treebeard_introduce_3:treebeard_introduce_4|(A duro-limbed árvore gigante lentamente abre sua boca que está escondida atrás de pequenos ramos, folhas e musgo. Com uma voz muito profunda, lenta e em franca expansão, ele expõe muito lentamente de forma mais dominante:) ^ ' Hrooom... Hmmm... * Eu * não vou dizer o meu nome... ainda não de qualquer forma. Por um lado, levaria muito tempo. Meu nome está crescendo o tempo todo e eu vivi um tempo muito longo; Então, meu nome é como uma história. Nomes reais contar a história das coisas que pertencem na minha língua, no velho Entês, como vocês dizem. É um lindo idioma, mas demora muito tempo a dizer nada, porque não dizemos nada, a não ser que vale a pena levar muito tempo para dizer e ouvir.'
-dlga_treebeard_introduce_4:treebeard_introduce_5|Oh, você é um otorrino! As lendas falam de você e me sinto honrado em estar na sua presença. Não pretendo impor e vai deixar, se assim o desejar.
-dlga_treebeard_introduce_5:treebeard_questtalk|(O gigante de presunto-mancou e seus companheiros Ents ficar parado por muitos minutos em silêncio enquanto uma brisa passa através de suas folhas cabelos e barbas. Eles olham para um outro momento prolongado até otorrino anormalmente precipitada, que é semelhante a uma árvore rowan parece querer falar. No entanto, ele fica em silêncio até o gigante continua duro-mancou Ent:)
-dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?As I said before...:Hroom... We appreciate the courteous manners that you display. It is {reg1?unusual from your race:nice to speak with elves again}.} Os tempos não são bons, desde que as Entesposas desapareceram - e agora há muitas criaturas do mal divulgados pelo Dark Lord -se que estão tentando destruir nossas casas. Procuramos alguém que é rápido mas não apressado . . Alguém que possa nos ajudar enquanto discutimos os nossos próximos passos ^ Muitas bandas de orcs invadiram a floresta e queimaram nossas árvores com flechas de fogo - se você fosse para derrotar os orcs e certifique-se de que eles não ameaçam as madeiras que seriam grato e considerá-lo um verdadeiro amigo . Faça isso e vamos falar novamente.
+dlga_treebeard_introduce_3:treebeard_introduce_4|(Uma árvore gigante lentamente abre sua boca que está escondida atrás de pequenos ramos, folhas e musgo. Com uma voz muito profunda, lenta e radiante voz, ele demonstra muito lentamente uma forma mais dominante:) ^ ' Hrooom... Hmmm... * Eu * não vou dizer o meu nome... ainda não de qualquer forma. Por um lado, levaria muito tempo. Meu nome está crescendo o tempo todo e eu vivi um tempo muito longo; Então, meu nome é como uma história. Nomes reais contar a história das coisas que pertencem na minha língua, no meu velho Entês, como vocês dizem. É um lindo idioma, mas demora muito tempo para dizer algo, porque não dizemos nada, a não ser que valha a pena levar muito tempo para dizer e ouvir.'
+dlga_treebeard_introduce_4:treebeard_introduce_5|Oh, você é um Ent! As lendas falam de você e me sinto honrado em estar na sua presença. Não pretendo impor nada e posso sair, se assim desejar.
+dlga_treebeard_introduce_5:treebeard_questtalk|(O gigante de longas folhas e seus companheiros Ents ficaram parados por muitos minutos em silêncio enquanto uma brisa passa através de suas folhas, que formavam seus cabelos e barbas. Eles olham um ao outro por um momento prolongado até que um Ent incrivelmente rápido que é semelhante a uma árvore rowan aparece e aparenta querer falar. No entanto, ele fica em silêncio até o gigante  de longas folhas continuar:)
+dlga_treebeard_questtalk:treebeard_quest_brief|{reg2?Como eu havia dito antes...:Hroom... Nós apreciamos seu respeito. É {reg1?estranho por parte de sua raça: é bom falar com elfos de novo}.} Os tempos não são bons, desde que as nossas Entesposas desapareceram - e agora há muitas criaturas malignas soltas pelo Mão Branca que estão tentando destruir nossas casas. Procuramos alguém que é rápido mas não apressado. Alguém que possa nos ajudar enquanto discutimos os nossos próximos passos. ^ Muitas bandas de orcs invadiram a floresta e queimaram nossas árvores com flechas de fogo - se você conseguisse derrotar os orcs e se certificar de que eles não mais ameaçariam a floresta, nós seriamos gratos e o consideraríamos um verdadeiro amigo. Faça isso e vamos falar novamente.
 dlga_treebeard_quest_brief:close_window|Orcs são de fato criaturas vis. Me certificarei de que eles não machuquem a floresta novamente.
 dlga_treebeard_quest_brief:treebeard_pretalk|Desculpe. Não tenho tempo para isso agora.
-dlga_treebeard_questtalk:close_window|(O líder Ent lentamente abre a boca escondida e os outros Ents Olha para você e também lentamente começam a proferir um som longo e profundo que faz o chão tremer um pouco - você percebe que eles estão rindo de uma forma Entês. Um relativamente jovem Rowan árvore olhando Ent Pisões dele sete dedos grandes pés no chão e o aperto de mão quase te faz cair.) ↑ ' fácil, Quickbeam, não queremos magoar o nosso amigo jovem guerreiro. Hrrrm... Eu sou Barbárvore, o mais velho dos Ents e estamos todos gratos pelos seus serviços... Hrrrm... Deixe-me te dar um presente de água Ent para celebrar seu sucesso.'
-dlga_treebeard_questtalk:close_window.1|(O cadáver-mancou gigante e seu companheiro stand Ents ainda em silêncio, enquanto uma brisa passa através de suas folhas cabelos e barbas).
+dlga_treebeard_questtalk:close_window|(O líder Ent lentamente abre a boca escondida e os outros Ents olham para você e também lentamente começam a proferir um som longo e profundo que faz o chão tremer um pouco - você percebe que eles estão rindo de uma forma Entês. Uma árvore Rowan relativamente jovem olhando para tocos de Ents enfia seus grandes pés no chão e o tremor quase te faz cair.) ↑ Calminha aí, Quickbeam, não queremos machucar o nosso jovem guerreiro e amigo. Hrrrm... Eu sou Treebeard, o mais velho dos Ents e estamos todos gratos pelos seus serviços... Hrrrm... Deixe-me te dar um presente, é água Ent para celebrar, seu sucesso.'
+dlga_treebeard_questtalk:close_window.1|(O gigante de árvore e seus companheiros similares continuaram parados e ainda em silêncio, enquanto uma brisa passava através de suas folhas que formavam cabelos e barbas).
 dlga_treebeard_pretalk:treebeard_talk_response|Hroooom... O que gostaria de saber, jovem amigo?
 dlga_treebeard_talk_response:treebeard_about_himself|Conte-me mais sobre você.
-dlga_treebeard_talk_response:treebeard_about_entwives|Conte-me mais sobre as Entesposas
+dlga_treebeard_talk_response:treebeard_about_entwives|Conte-me mais sobre esposas de sementes.
 dlga_treebeard_talk_response:treebeard_about_ents|Conte-me mais sobre os Ents
 dlga_treebeard_talk_response:close_window|Deixe para lá, adeus.
-dlga_treebeard_about_himself:treebeard_pretalk|(O líder Ent parece distante e solene. Depois de um tempo ele disse lentamente:) ^ 'Don ' t ser precipitado... falamos mais sobre isso quando a floresta está segura contra os orcs.'
-dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Sou o mais velho da minha espécie, hmmm... Sou conhecido como Barbárvore por alguns mortais e os elfos me chamam de Fangorn. Hummm... Eu, Skinbark e Leaflock são os Ents único que andaram as florestas antes da escuridão. Já não sou muito flexível quanto costumava ser... jovem Quickbeam pode dobrar e sway, como uma árvore esbelta no vento... Hummm... Se as Entesposas estiveram aqui...
-dlga_treebeard_about_entwives:treebeard_pretalk|(O líder Ent de repente recebe uma expressão de tristeza, e sua voz é extraordinariamente profundo).^' Hummm... Esta é uma triste história... quando as madeiras são livres dos orcs podemos discutir isto.'
-dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... as Entesposas lindas... eles gostam de plantar e crescer... deveria ter escutado mais eles... Hrooom... então eles deixaram para as terras de Brown para plantar jardins e ensinaram os mortais sobre como fazer as terras férteis... costumávamos visitá-los... até... Sauron atacado... as Entesposas estão perdidas... Hummm... Fimbrethil... seu matiz de grãos maduros... temos olhou para eles... mas não os encontrei... ainda...
-dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... Nós somos pastores das árvores e podemos protegê-los de perigos. Somos mais velhos do que qualquer das raças mortais, mas não tão antigo como os elfos que curou-nos de mudez. As coisas mudaram ao longo dos tempos. No início éramos mais apressada e flexível. Ao longo do tempo, muitos de nós foram perdidos. Alguns de nós são Ents continua a ser verdade, e animada suficiente em nossa moda, mas muitos estão crescendo com sono, indo tree-ish, como você pode dizer. A maioria das árvores é apenas árvores, claro; Mas muitos são meio acordados. Alguns são bastante bem acordadas, e alguns são, bem, ah, bem ficando Entês. Isso está acontecendo o tempo todo. Quando isso acontece a uma árvore, você achar que alguns têm maus corações. Ainda assim, fazemos o que podemos. Podemos afastar estranhos e o temerário; Treinamos e ensinamos, caminhamos e nós de erva.
+dlga_treebeard_about_himself:treebeard_pretalk|(O líder Ent parece ter um pensamento distante. Depois de um tempo ele disse lentamente:) ^'Não seja precipitado... falamos mais sobre isso quando a floresta estiver segura de orcs.'
+dlga_treebeard_about_himself:treebeard_pretalk.1|Hrooom... Sou o mais velho da minha espécie, hmmm... Sou conhecido como Treebeard por alguns mortais e os elfos me chamam de Fangorn. Hummm... Eu, Skinbark e Leaflock somos os únicos Ents que andaram as florestas antes da escuridão. Já não sou muito flexível quanto costumava ser... o jovem Quickbeam pode dobrar e desdobrar com facilidade, como uma muda ao vento... Hummm... se as Entesposas estivessem aqui...
+dlga_treebeard_about_entwives:treebeard_pretalk|(O líder Ent de repente recebe uma expressão de tristeza, e sua voz é extraordinariamente profunda.^' Hummm... Esta é uma triste história... quando a floresta estiver livre de Orcs poderemos discutir sobre isso.'
+dlga_treebeard_about_entwives:treebeard_pretalk.1|Ahummm... as lindas esposas de sementes(Entesposas)... elas gostam de plantar e deixar crescer... nós devíamos tê-las escutado mais... Hrooom... e por conta disso elas saíram e foram até as Terras Marrons para plantar jardins, e lá elas ensinaram mortais a deixarem as terras férteis... nós ás visitávamos... até que... Sauron atacou... as Entesposas estão perdidas... Hummm... Fimbethil... sua tonalidade de grãos maduros... nós as procuramos... mas não as encontramos... ainda...
+dlga_treebeard_about_ents:treebeard_pretalk|Hrooom... Nós somos pastores das árvores e podemos protegê-las de perigos. Somos mais velhos do que qualquer uma das raças mortais, mas não tão antigos como os elfos, que curaram-nos de nossa mudez. As coisas mudaram ao longo dos tempos. No início éramos mais rápidos, apressados e flexíveis. Ao longo das eras, muitos de nós se perderam. Alguns de nós ainda são verdadeiros Ents, e continuam vivendo do antigo jeito, mas muitos estão crescendo com sono, arvorescendo, como você pode dizer. A maioria das árvores são apenas árvores, claro; Mas muitas estão meio acordadas. Algumas estão bem acordadas, e algumas, bem, ah, digamos que ficando ciEntes. E isso está acontecendo o tempo todo. Quando isso acontece a uma árvore, você descobre que algumas têm maus corações. Ainda assim, fazemos o que podemos. Podemos afastar alguns estranhos e os valentes; treinamos e ensinamos, caminhamos e protegemos.
 dlga_start:close_window.1|Hmmmm?
 dlga_start:close_window.2|Mmhhrmmm?
 dlga_start:close_window.3|Mmmrhrrhmm?
-dlga_start:looters_2_join|Curvar-se para o poder do {s4} e me servir!
+dlga_start:looters_2_join|Curve-se para o poder do {s4} e me sirva!
 dlga_looters_2_join:close_window|Nós obedeceremos, Mestre.
-dlga_start:close_window.4|^ ^ROSNAR!^ ^
-dlga_start:close_window.5|^ ^Rosnando!^ ^
+dlga_start:close_window.4|^ ^RAUURR!^ ^
+dlga_start:close_window.5|^ ^RAUURR!^ ^
 dlga_start:member_castellan_talk|Sim, {playername}? O que eu posso fazer por você?
-dlga_member_castellan_pretalk:member_castellan_talk|Algo mais?
-dlga_member_castellan_talk:member_review_castle_garrison|Eu quero rever a guarnição do castelo.
-dlga_member_review_castle_garrison:member_castellan_pretalk|Certamente. Aqui estão nossas listas, me diga de quaisquer mudanças que você necessitar...
+dlga_member_castellan_pretalk:member_castellan_talk|Mais alguma coisa?
+dlga_member_castellan_talk:member_review_castle_garrison|Eu quero revisar a guarnição presente no castelo.
+dlga_member_review_castle_garrison:member_castellan_pretalk|Certamente. Aqui estão nossas listas, me diga se há quaisquer mudanças que você necessita...
 dlga_member_castellan_talk:member_review_castellan_equipment|Deixe-me ver seu equipamento.
 dlga_member_review_castellan_equipment:member_castellan_pretalk|Muito bem, está tudo aqui...
-dlga_member_castellan_talk:member_castellan_join|Eu quero que você abandone o castelo e se junte ao meu exército
-dlga_member_castellan_join:close_window|Eu gosto muito do lugar... Mas se é seu desejo, {playername}, vou acompanhá-lo.
-dlga_member_castellan_join:member_castellan_pretalk|E onde dormimos? Você está arrastando um exército inteiro com você, {playername}, não há mais espaço para todos nós.
+dlga_member_castellan_talk:member_castellan_join|Eu quero que você abandone o castelo e se junte ao meu exército.
+dlga_member_castellan_join:close_window|Eu cresci muito ligado a esse lugar... Mas se é seu desejo, {playername}, vou acompanhá-lo.
+dlga_member_castellan_join:member_castellan_pretalk|E onde iriamos dormir? Você está arrastando um exército inteiro com você, {playername}, não há mais espaço para todos nós.
 dlga_member_castellan_talk:close_window|[Sair]
-dlga_member_chat_00:member_lady_1|{playername}, quando você acha que pode chegar ao nosso destino?
+dlga_member_chat_00:member_lady_1|{playername}, quando você acha que chegaremos ao nosso destino?
 dlga_member_lady_1:close_window|Ainda temos um longo caminho à nossa frente.
 dlga_member_lady_1:close_window.1|Muito em breve. Estamos quase lá.
-dlga_member_chat_00:member_scout_1|Nos estamos prontos para ir a missão de reconhecimento. Nos devemos ir agora?
+dlga_member_chat_00:member_scout_1|Nós estamos próximos do ponto da missão de reconhecimento. Deveremos partir agora?
 dlga_member_scout_1:close_window|Sim, você tem suas ordens. Adeus.
 dlga_member_scout_1:close_window.1|Espere um minuto, ainda não.
 dlga_do_member_trade:member_talk|Algo mais?
@@ -93,14 +93,14 @@ dlga_view_member_char_requested:do_member_view_char|Ok, deixe-me lhe contar...
 dlga_member_talk:member_separate|Temos que nos separar por um tempo.
 dlga_member_talk:ziggy_ask_more|Zigûrphel, eu preciso que me empreste outro lobo seu, pode fazer isso?
 dlga_ziggy_ask_more:close_window|Você não tem vida para oferecer, Comandante.
-dlga_ziggy_ask_more:ziggy_not_rested|Dê-me mais tempo, Comandante. O ritual cansou-me imenso.
-; dlga_ziggy_ask_more:close_window.1|I can only control so much. I'll need to become more powerful...
+dlga_ziggy_ask_more:ziggy_not_rested|Dê-me mais tempo, Comandante. O ritual me exauriu muito.
+dlga_ziggy_ask_more:close_window.1|Eu só posso controlar uma quantia determinada. Eu preciso me tornar mais poderoso...
 dlga_ziggy_ask_more:ziggy_choose_prisoners|Claro, Comandante. Qual deles tem para oferecer?
-dlga_ziggy_not_rested:close_window|Descansem rápido então, eu preciso mais destes.
-dlga_member_separate:member_separate_confirm|Ah sério? Bem, só não vou esperar aqui. Vou voltar para {s4}. É isso que você quer?
-dlga_member_separate_confirm:member_separate_yes|É isso mesmo. Precisamos separar.
-dlga_member_separate_confirm:do_member_trade|Não, eu prefiro voce ao meu lado.
-dlga_member_separate_yes:close_window|Bem... Eu vou estar fora, então. Olha me se precisares de mim.
+dlga_ziggy_not_rested:close_window|Descansem rápido então, eu preciso de mais destes.
+dlga_member_separate:member_separate_confirm|Ah sério? Bem, só não vou ficar esperando aqui. Vou voltar para {s4}. É isso que você quer?
+dlga_member_separate_confirm:member_separate_yes|É isso mesmo. Precisamos nos separar.
+dlga_member_separate_confirm:do_member_trade|Não, eu prefiro muito mais você ao meu lado.
+dlga_member_separate_yes:close_window|Bem... vou estar fora então. Se precisar de mim pode falar.
 dlga_member_talk:member_question|Eu gostaria de te perguntar uma coisa.
 dlga_member_talk:close_window|Deixe para lá.
 dlga_member_question:member_question_2|Muito bem. O que você queria perguntar?
@@ -111,8 +111,8 @@ dlga_member_background_recap_3:do_member_trade|E pouco depois, eu me juntei com 
 dlga_do_member_view_char:member_talk|Algo mais?
 dlga_start:close_window.6|Vamos sair quando você estiver pronto.
 dlga_start:close_window.7|Por favor não gaste mais do meu tempo hoje. Talvez nos encontraremos novamente.
-dlga_companion_recruit_signup_response:close_window|Infelizmente, eu não posso aceitar mais ajuda para minha party agora.
-dlga_companion_recruit_rank:close_window|Parece que você não é estimado bastante pelo meu povo, {playername}. És um {29} e você precisa ser um {s24} para que eu me junte [{reg3} precisavam de mais pontos de classificação]. ^ Let é falar de novo, quando vocês estiverem mais cumpridas.
+dlga_companion_recruit_signup_response:close_window|Infelizmente, eu não posso levar mais pessoas para minha companhia agora.
+dlga_companion_recruit_rank:close_window|Parece que você não é adorado o bastante pelo meu povo, {playername}. És um {29} e você precisa ser um {s24} para que eu me junte [{reg3} precisa de mais pontos de classificação]. ^ Vamos falar de novo, quando você tiver mais reconhecimento.
 dlga_companion_recruit_rank:companion_recruit_payment.1|Estou feliz de ver vocês se tornaram {29}, e eu estou ansioso para me juntar a você.
 dlga_companion_recruit_payment_response:close_window|Há pouco que posso fazer, então.
 dlga_start:companion_recruit_meet_again|Nos encontraremos novamente.

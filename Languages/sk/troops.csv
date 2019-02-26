@@ -426,8 +426,8 @@ trp_i6_footman_guard_of_rohan|Folcwineov rohanský gardista
 trp_i6_footman_guard_of_rohan_pl|Folcwineova rohanská garda
 trp_i6_frealaf_raider|Frealafov marodér
 trp_i6_frealaf_raider_pl|Frealafovi marodéri
-; trp_i5_raider_of_rohan|Raider of Rohan
-; trp_i5_raider_of_rohan_pl|Raiders of Rohan
+trp_i5_raider_of_rohan|Rohanský marodér
+trp_i5_raider_of_rohan_pl|Rohanskí marodéri
 trp_i6_warden_of_methuseld|Ochránca Meduseldu
 trp_i6_warden_of_methuseld_pl|Stráž Meduseldu
 trp_ac3_skirmisher_of_rohan|Rohanský ľahký kavalerista
@@ -456,8 +456,8 @@ trp_c5_elite_rider_of_rohan|Elitný jazdec z Rohanu
 trp_c5_elite_rider_of_rohan_pl|Elitní jazdci z Rohanu
 trp_c6_rider_guard_of_rohan|Eorlov rohanský strážca
 trp_c6_rider_guard_of_rohan_pl|Eorlova rohanská stráž
-; trp_i6_2h_guard_of_rohan|Helm Guard of Rohan
-; trp_i6_2h_guard_of_rohan_pl|Helm Guards of Rohan
+trp_i6_2h_guard_of_rohan|Helmov Strážca z Rohanu
+trp_i6_2h_guard_of_rohan_pl|Helmovi Strážci z rohanu
 trp_dismounted_veteran_skirmisher_of_rohan|Skúsený ľahký kavalerista z Rohanu
 trp_dismounted_veteran_skirmisher_of_rohan_pl|Skúsená ľahká jazda Rohanu
 trp_dismounted_elite_skirmisher_of_rohan|Elitný ľahký kavalerista z Rohanu
@@ -560,10 +560,10 @@ trp_i1_corsair_youth|Umbarský námorník
 trp_i1_corsair_youth_pl|Umbarskí námorníci
 trp_i2_corsair_warrior|Umbarský bojovník
 trp_i2_corsair_warrior_pl|Umbarskí bojovníci
-; trp_i3_corsair_spearman|Spearman of Umbar
-; trp_i3_corsair_spearman_pl|Spearmen of Umbar
-; trp_i4_corsair_raider|Corsair Raider
-; trp_i4_corsair_raider_pl|Corsair Raiders
+trp_i3_corsair_spearman|Umbarský kopijník
+trp_i3_corsair_spearman_pl|Umbarskí kopijníci
+trp_i4_corsair_raider|Korzár nájazdník
+trp_i4_corsair_raider_pl|Korzári nájazdníci
 trp_i5_corsair_night_raider|Nočný korzársky nájazdník
 trp_i5_corsair_night_raider_pl|Noční korzárski nájazdníci
 trp_a2_corsair_marine|Umbarský námorník
@@ -584,12 +584,12 @@ trp_a4_corsair_assassin|Korzársky nájomný vrah
 trp_a4_corsair_assassin_pl|Korzárskí nájomní vrahovia
 trp_a5_corsair_master_assassin|Korzársky nájomný vrah
 trp_a5_corsair_master_assassin_pl|Korzárskí nájomní vrahovia
-; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
-; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
-; trp_i5_corsair_master_spearman|Spearmaster of Umbar
-; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
-; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
-; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
+trp_i4_corsair_veteran_spearman|Skúsený korzársky kopijník
+trp_i4_corsair_veteran_spearman_pl|Skúsení korzárskí kopijníci
+trp_i5_corsair_master_spearman|Majster kopijník z Umbaru
+trp_i5_corsair_master_spearman_pl|Majstri kopijníci z Umbaru
+trp_i5_corsair_master_pikeman|Píkmajster z Umbaru
+trp_i5_corsair_master_pikeman_pl|Píkmajstri z Umbaru
 trp_orc_snaga_of_isengard|Snaga ohyzd z Isengardu
 trp_orc_snaga_of_isengard_pl|Snaga ohyzdi z Isengardu
 trp_orc_of_isengard|Ohyzd z Isengardu
@@ -669,15 +669,15 @@ trp_uruk_mordor_standard_bearer_pl|Zástavníci Mordoru
 trp_troll_of_moria|Jaskynný zlobor
 trp_troll_of_moria_pl|Jaskynní zlobri
 trp_armoured_troll|Obrnený zlobor
-trp_armoured_troll_pl|Obrnení obry
+trp_armoured_troll_pl|Obrnení zlobri
 trp_olog_hai|Olog Hai z Mordoru
 trp_olog_hai_pl|Olog Hai z Mordoru
 trp_ent|Ent
 trp_ent_pl|Enti
 trp_orc_snaga_of_guldur|Snaga ohyzd z Gulduru
 trp_orc_snaga_of_guldur_pl|Snaga ohyzdi z Gulduru
-; trp_orc_of_guldur|Orc Tracker of Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Guldur
+trp_orc_of_guldur|Guldurský ohyzd stopár
+trp_orc_of_guldur_pl|Guldurskí ohyzdi stopári
 trp_orc_snaga_of_mordor|Snaga ohyzd z Mordoru
 trp_orc_snaga_of_mordor_pl|Snaga ohyzdi z Mordoru
 trp_orc_of_mordor|Ohyzd z Mordoru
@@ -694,10 +694,10 @@ trp_morgul_orc|Morgulský ohyzd
 trp_morgul_orc_pl|Morgulskí ohyzdi
 trp_fell_morgul_orc|Divoký Morgulský ohyzd
 trp_fell_morgul_orc_pl|Divokí Morgulskí ohyzdi
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Guldur
+trp_orc_tracker_of_mordor|Guldurský veľký ohyzd stopár
+trp_orc_tracker_of_mordor_pl|Guldurský veľký ohyzd stopár
+trp_fell_orc_tracker_of_mordor|Divoký ohyzdí stopár z Gulduru
+trp_fell_orc_tracker_of_mordor_pl|Divokí ohyzdí stopári z Gulduru
 trp_orc_archer_of_mordor|Mordorský ohyzdí lukostrelec
 trp_orc_archer_of_mordor_pl|Mordorskí ohyzdí lukostrelci
 trp_large_orc_archer_of_mordor|Veľký ohyzdí lukostrelec z Mordoru
@@ -1242,7 +1242,7 @@ trp_barman_dale_pl|Hrad
 trp_barman_esgaroth|Krčmárka
 trp_barman_esgaroth_pl|Sála
 trp_barman_erebor|Krčmárka
-; trp_barman_erebor_pl|the Great Chamber of Thrór
+trp_barman_erebor_pl|Veľká Thrórova Sieň
 trp_barman_dolguldur|Krčmárka
 trp_barman_dolguldur_pl|Hrad
 trp_merchant_mtirith|Obchodník so zásobami

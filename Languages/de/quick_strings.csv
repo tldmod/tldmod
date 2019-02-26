@@ -422,7 +422,7 @@ qstr_no_holdings|keine Besitzungen
 qstr_{s57}_and_{s58}|{s57} und {s58}
 qstr_{s57}_{s58}|{s57}, {s58}
 qstr_{reg3?She:He}|{reg3?Sie:Er}
-qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} ist der Herrscher von {s56}.^:{s54} dient {s55} von {s56}.^}}{reg9?{reg3?Sie:Er} ist {reg3? die Gebieterin: der Gebieter} von {s58}.:}{s59}{reg10?^{reg3?Sie:Er} starb auf dem Schlachtfeld!:}
+qstr_{reg6?:{reg4?{s54}_i|{reg6?:{reg4?{s54} ist der Herrscher von {s56}.^:{s54} dient {s55} von {s56}.^}}{reg9?{reg3?Sie:Er} ist {reg3?die Gebieterin:der Gebieter} von {s58}.:}{s59}{reg10?^{reg3?Sie:Er} starb auf dem Schlachtfeld!:}
 qstr_The_last_time_you_sa|{s1}, als du {reg1?sie:ihn} das letzte Mal sahst.
 qstr_The_last_time_you_he|{s1}, als du das letzte Mal von {reg1?ihr:ihm} hörtest.
 qstr_The_{s50}|{s50}
@@ -805,23 +805,23 @@ qstr_Gaaaar!!|Gaaaar!!
 qstr_{s31}_scouts_have_app|{s31}-Späher tauchen auf, um den Flüchtlingen zu helfen!
 qstr_Hurry_men!_Help_the_|Eilt euch, Männer! Helft den Flüchtlingen! Vernichtet diesen Abschaum und lasst sie nicht entkommen.
 qstr_Cannot_leave|Du kannst jetzt nicht gehen.
-; qstr_Longbeard_Kinsman|Longbeard Kinsman
-; qstr_Ori_Longbeard|Ori Longbeard
-; qstr_We_shall_make_our_st|We shall make our stand here! FOR BALIN!
-; qstr_Noooo!_You_orcs_will|Noooo! You orcs will pay for this!
-; qstr_Arghhh!!_Nooo!!|Arghhh!! Nooo!!
-; qstr_I_will_take_down_as_|I will take down as many as I can before I fall!
-; qstr_Raaa!!|Raaa!!
+qstr_Longbeard_Kinsman|Langbart
+qstr_Ori_Longbeard|Ori Langbart
+qstr_We_shall_make_our_st|Wir werden hier standhalten! Für BALIN!
+qstr_Noooo!_You_orcs_will|Neeein! Ihr Orks werdet dafür bezahlen!
+qstr_Arghhh!!_Nooo!!|Arghhh! Neeein!
+qstr_I_will_take_down_as_|Ich werde so viele wie ich kann niederstrecken, bevor ich falle!
+qstr_Raaa!!|Raaa!!
 qstr_Kill_the_dwarves!|Tötet die Zwerge!
 qstr_Finish_them!|Erledigt sie!
-; qstr_We_will_feast_on_you|We will feast on your flesh!
+qstr_We_will_feast_on_you|Wir werden uns an eurem Fleisch ergötzen!
 qstr_Dwarf_meat!|Zwergenfleisch!
-; qstr_Eru_Iluvatar_has_dec|Eru Iluvatar has decided the fate of Balin's Company, and it cannot be changed.
+qstr_Eru_Iluvatar_has_dec|Aule der Erschaffer hat über das Schicksal von Balins Unternehmen entschieden und es kann nicht mehr geändert werden.
 qstr_They_are_coming....!|Sie kommen...!
-; qstr_Who...dares...enter.|Who...dares...enter...
+qstr_Who...dares...enter.|Wer...wagt...einzutreten...
 qstr_You_are_not_welcome_|Ihr seid hier nicht willkommen!
 qstr_Finally_I_found_you!|Endlich, ich habe euch gefunden! Lasst uns von hier verschwinden!
-; qstr_You...are....ours...|You...are....ours...
+qstr_You...are....ours...|Du... gehörst... uns...
 qstr_Look_at_my_over_the_|Schau dir meine über-die-Schulter-Aufnahme an, {playername}! Aus der Distanz bin ich wunderschön!
 qstr_You_wish_old_man_my_|Das wünschst du dir, alter Mann, meine über-die-Schulter-Ansicht ist viel hübscher!
 qstr_You_should_really_se|Du solltest dir wirklich Truchsess Denetors Facebook-Fotos anschauen, er ist unglaublich!
@@ -832,8 +832,8 @@ qstr_Resource_Points:^_{r|Ressourcenpunkte:^ {reg12} (in {s16})
 qstr_{s11}_{s24}__{reg13}|{s11} {s24} ({reg13}) - {reg21} bis zur Beförderung^
 qstr_{s13}_{reg11}__with_|{s13}, {reg11} (in {s16})
 qstr_{s15}_{reg12}__in_{s|{s15}, {reg12} (in {s16})
-; qstr_Four_years_after_bri|Four years after bringing a group of Dwarves from Erebor to attempt to resettle the once-Dwarven city of Khazad-dûm, Balin was killed by an Orc arrow while peering into Lake Mirrormere, and his people became immediately engaged with many Orcs coming up the Silverlode River. After a continuous retreat from the East-gate and First Hall, then the Bridge of Khazad-dûm and Second Hall, the remaining Longbeards were forced all the way back into the Twenty-first Hall. After an unsuccessful attempt to escape through the Doors of Durin that saw the death of Óin, the Chamber of Mazarbul became the last hold-out of the Colony after losing the Twenty-first Hall just outside the chamber. Barring the gates, Ori and the few survivors set up a final defense.
-; qstr_You_chase_an_orc_sco|You chase an orc scout party into the forest...
+qstr_Four_years_after_bri|Vier Jahre, nachdem er mit einer Gruppe Zwerge vom Erebor ausgezogen war, um das einstige Zwergenreich von Khazad-dûm zurückzugewinnen, wurde Balin von einem Ork getötet, während er in den Spiegelsee schaute. Sein Gefolge wurde unmittelbar darauf von Orks angegriffen, die den Silberlauf heraufkamen. Nach Kämpfen um das Osttor, die erste Halle, die Brücke von Khazad-dûm und die zweite Halle wurden die verbleibenden Zwerge bis in die einundzwanzigste Halle zurückgedrängt. Nach einem erfolglosen Versuch, durch Durins Tür nach Westen zu entkommen, bei dem Óin den Tod fand, wurde die Marzabul-Kammer zum letzten Stützpunkt der Kolonie, die nun auch die einundzwanzigste Halle direkt nebenan verloren hatte. Ori und die letzten Überlebenden versperrten die Tore und bereiteten sich auf eine letzte Schlacht vor.
+qstr_You_chase_an_orc_sco|Ihr verfolgt eine Gruppe von Ork-Spähern in den Wald...
 qstr_^No_food:___{reg7}|^Keine Nahrung: -{reg7}
 qstr_Current_party_morale|Momentane Truppenmoral ist {reg5}.^Momentane Truppenmoral-Modifikatoren:^^Grundmoral: +50^Truppengröße: {s2}{reg1}^Anführerschaft: {s3}{reg2}^Nahrungsvielfalt: {s4}{reg3}{s5}^Spezielle Gegenstände: {s6}{reg6}^Kürzliche Ereignisse: {s7}{reg4}^GESAMT: {reg5}
 qstr_Defending|Verteidigung
@@ -1232,13 +1232,13 @@ qstr_This_is_evil_news_you|Ihr bringt schlimme Neuigkeiten. Die schwarzen Segel 
 qstr_Pah!_It_seems_you_we|Pah! Es sieht so aus, als wärst du eine Landratte, {playername}. Jetzt sitzen sie in ihren hohen Türmen, die Herren von Gondor, eitel und fett wie Könige, und lachen über die schwarzen Segel. Vielleicht wären deine Truppen an den Rudern einer Kriegsgaleere besser aufgehoben. Eine Schande, dass sie unter deinem Befehl stehen, nicht unter meinem. Das Auge wird nicht zufrieden sein, oh nein. Geh nun!
 qstr_Have_you_nothing_bet|Hast du nichts anderes anzubieten als die Ausreden eines Schwächlings, {playername}? Vielleicht bist du doch nicht so stark, wie wir dachten. Diene uns in Zukunft besser, {playername}, denn die Schwachen werden keine Gnade erfahren
 qstr_{playername}_we_have|{playername}, die Macht Isengards ist beinahe gebrochen. Saruman hat sein letztes Aufgebot entsandt, um sich und seinen Turm zu schützen. Reitet mit mir!
-; qstr_Are_you_ready_to_mee|Are you ready to meet Isengard's last stand?
+qstr_Are_you_ready_to_mee|Seid Ihr bereit, um Isengarts letztem Aufgebot zu begegnen?
 qstr_I_am_ready_to_ride_w|Ich bin bereit, mich Euch gegen Isengard zu reiten!
 qstr_I_am_ready_to_ride_wi|Ich bin bereit, mich Euch gegen Isengard zu reiten! Lasst es uns jetzt zu Ende bringen!
 qstr_I_am_not_ready_to_ri|Ich bin noch nicht bereit. Ich brauche noch etwas Zeit, um mich vorzubereiten.
-; qstr_You_do_not_have_enou|You do not have enough troops to help in this battle. Raise at least 30 men and join me soon!
+qstr_You_do_not_have_enou|Ihr habt nicht genügend Truppen, um in dieser Schlacht von Nutzen zu sein. Hebt noch mindestens 30 Männer aus und sucht mich danach rasch wieder auf!
 qstr_Stay_close_we_will_t|Bleibt in der Nähe. Wir werden uns nahe der Stellung des Feindes versammeln. SObald wir genügend Truppen haben, greifen wir an.
-; qstr_You_have_taken_too_l|You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and in 3 days time, we will strike.
+qstr_You_have_taken_too_l|Ihr braucht zu lange... Wir werden nun ausreiten, mit oder ohne Euch. Wir werden uns nahe der Stellung des Feindes sammeln und in 3 Tagen angreifen.
 qstr_Make_haste_{playerna|Eilt Euch, {playername}. Wir dürfen ihnen nicht genügend Zeit geben, sich zu erholen.
 qstr_Your_mission_is_comp|Deine Mission ist erfüllt, {s9} will, dass du bis auf Weiteres seiner Armee folgst.
 qstr_{s13}_asked_you_to_g|{s13} bat dich, {reg3} Einheiten {s4} aufzutreiben und ihm zu überbringen.
@@ -1455,8 +1455,8 @@ qstr_*he_sighs_and_smiles|*Er seufzt und lächelt* ^^Nun gut. Um unseres gemeins
 qstr_For_some_months_we_h|Seit einigen Monaten schon beobachten wir, wie diese abscheulichen Orks sich vermehren und unsere Wälder beschmutzen. ^^Wir werden unserer Herrin Galadriel über das Kommen Herrn Elronds berichten, obgleich ich vermute, dass sie bereits davon weiß. Und wir werden auch von Euch erzählen, und zwar all unseren Leuten. ^^Le maethor veleg a gornui! Euer Mut und Eure Taten sollen bekannt gemacht werden und Ihr stets gut versorgt, wann immer Ihr unser Tal des Singenden Goldes besucht.
 qstr_Calm_yourself_friend|Beruhigt Euch, Freund.  Pedin i phith in aniron, a nin u-cheniathog. ^^Euer Mut und eure Taten sollen allen bekannt gemacht werden, und Ihr stets gut versorgt, wann immer Ihr uns besucht, um Euch am Lichte unseres Goldenen Tals zu laben.
 qstr_Stars_sail_through_t|Die Sterne befahren die Meere des Himmels, Menschen dagegen wandeln auf der Erde. Wahrlich, wer vermag zu sagen, ob ihre Wege einander folgen? Wir werden all unseren Leuten von Euch berichten. Eure Taten sollen bekannt gemacht werden und Ihr gut versorgt, wann immer Ihr einen Stern hier im Goldenen Tall jagt.
-qstr__RESOURCE_POINT_TUTO|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du in Lorien nutzen kannst, musst du hier vedienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
-qstr__RESOURCE_POINT_TUTOR|(Tutorial RESOURCENPUNKTE)^^Resourcenpunkte, die du bei den Beorningern nutzen kannst, musst du hier vedienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
+qstr__RESOURCE_POINT_TUTO|(TUTORIAL RESSOURCENPUNKTE)^^Ressourcenpunkte, die du in Lorien nutzen kannst, musst du hier verdienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
+qstr__RESOURCE_POINT_TUTOR|(TUTORIAL RESSOURCENPUNKTE)^^Ressourcenpunkte, die du bei den Beorningern nutzen kannst, musst du hier verdienen. Es sind nicht diejenigen, welche du in deiner Heimat verdient hast. ^^Siehe BERICHT für weitere Informationen.
 qstr_I_have_long_wished_t|Ich hege schon lange den Wunsch, das Waldlandvolk zu besuchen...
 qstr_What_form_shall_the_|Wie soll Lorien sich erkenntlich zeigen?
 qstr_Our_bees_make_honey_|Unsere Bienen machen Honig und Wachs, unsere Herden geben uns Milch, Butter und Käse...
@@ -1583,22 +1583,22 @@ qstr_{s31}{reg28?Those:That}_|{s31}{reg28?Diese tapferen:Dieser tapfere} {reg28?
 qstr_{s31}{reg28?Those:That}_u|{s31}{reg28?Diese:Dieser} nützliche {reg28?Truppe:Soldat} wird uns helfen, mehr Verwüstung anzurichten.{s32}^{s23}^^[{reg14} Ressourcenpunkte von {s14} verdient]
 qstr_Good_luck_in_your_tr|Viel Glück auf Euren Reisen.
 qstr_Try_not_getting_your|Versucht nicht getötet zu werden.
-; qstr_You_ready_your_weapo|You ready your weapons, feeling the rush of past experience through your body. (Weapon Profeciencies and Abilities improved)
-; qstr_The_previous_battle_|The previous battle warmed you up. You feel invigorated, and ready for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
-; qstr_You_are_tired_but_ad|You are tired, but adrenaline coursing through your veins steel you for more. (Attributes, Abilities, and Weapon Profeciencies Improved)
-; qstr_These_are_great_weap|These are great weapons indeed. They feel strange to the touch... (Abilities and Weapon Profeciencies Improved)
-; qstr_You_can_barely_raise|You can barely raise your weapon now... but seeing your kinsmen around you strengthen your resolve. (Abilities and Weapon Profeciencies Improved).
-; qstr_With_Lord_Balin_s_tr|With Lord Balin's treasures bestowed upon you and the memory of his death fresh in your mind, your rage burns stronger. (Attributes, Abilities and Weapon Profeciencies Improved)
-; qstr_We_cannot_hold..._we|We cannot hold... we are finished...
-; qstr_You_do_not_know_how_|You do not know how long you can still last...
-; qstr_How_long_can_we_keep|How long can we keep this up? I cannot hold my axe anymore....
-; qstr_You_know_that_the_en|You know that the end is near...
-; qstr_You...._good....dwar|You.... good....dwarf....
-; qstr_You_can_no_longer_ra|You can no longer raise your weapon...
-; qstr_There_are_too_many..|There are too many... there are too many....
-; qstr_..........|..........
-; qstr_It_is_off_to_work_we|It is off to work we go....
-; qstr_Your_mind_starts_to_|Your mind starts to wander... thinking of gold and treasures...
+qstr_You_ready_your_weapo|Du zückst deine Waffen und fühlst, wie sich alte Fähigkeiten in dir wieder regen. (Waffenfertigkeiten und Fähigkeiten verbessert)
+qstr_The_previous_battle_|Die Schlacht hat dich aufgewärmt. Du fühlst dich belebt und bereit für den nächsten Kampf. (Attribute, Fähigkeiten und Waffenfertigkeiten verbessert)
+qstr_You_are_tired_but_ad|Du bist etwas müde, aber dein Kampfgeist ist erwacht. (Attribute, Fähigkeiten und Waffenfertigkeiten verbessert)
+qstr_These_are_great_weap|Dies sind wahrlich edle Waffen. Sie fühlen sich in deiner Hand merkwürdig an... (Fähigkeiten und Waffenfertigkeiten verbessert)
+qstr_You_can_barely_raise|Du kannst kaum noch deine Waffen heben... aber der Anblick deiner Verwandten um dich herum stärkt deinen Mut. (Fähigkeiten und Waffenfertigkeiten verbessert)
+qstr_With_Lord_Balin_s_tr|Die Ausrüstung Balins in deinen Verantwortung und die frische Erinnerung an seinen Tod entfachen deinen Kampfeszorn aufs Neue. (Attribute, Fähigkeiten und Waffenfertigkeiten verbessert)
+qstr_We_cannot_hold..._we|Wir können nicht mehr standhalten... Das ist das Ende...
+qstr_You_do_not_know_how_|Du weißt nicht, wie lange du noch standhalten kannst...
+qstr_How_long_can_we_keep|Wie lange können wir durchhalten? Meine Axt wird schwer...
+qstr_You_know_that_the_en|Du weißt, dass das Ende naht...
+qstr_You...._good....dwar|Du...guter...Zwerg...
+qstr_You_can_no_longer_ra|Du kannst deine Waffen kaum noch heben...
+qstr_There_are_too_many..|Dort sind zu viele...dort sind zu viele...
+qstr_..........|.......
+qstr_It_is_off_to_work_we|Hei-ho, wir sind vergnügt und froh...
+qstr_Your_mind_starts_to_|Deine Gedanken schweifen davon... du träumst von Gold und Reichtümern...
 qstr_...............|...............
 qstr_Sleep_sounds_good...|Schlafen hört sich gut an...
 qstr_For_Balin!!|Für Balin!!

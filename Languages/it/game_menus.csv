@@ -19,7 +19,7 @@ mno_custom_battle_scenario_10|Testa Scenario Battaglia
 mno_troll_battle_scenario|Testa Battaglie con Troll
 mno_warg_battle_scenario|Testa Battaglie con Mannari
 mno_build_your_own_scene|** Costruisci il tuo personale scenario per TLD **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+menu_tutorial|^^ Ti diamo il benvenuto alle lezioni di combattimento di TLD. Qui apprenderai le basi del combattimento, oltre ad una panoramica sui comandi da impartire alle truppe sul campo di battaglia.
 ; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
 ; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
 ; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
@@ -345,7 +345,7 @@ mno_start_kill_scouts|Ferma gli esploratori dal segnalare il tuo arrivo !
 mno_go_your_way|Lasciali al loro destino
 mno_defend_villagers|Difendi gli abitanti del villaggio !
 mno_raid_villagers|Razzia il Villaggio !
-; mno_go_away|Leave and regroup for now.
+mno_go_away|Partite e radunatevi, per ora.
 ; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
 ; mno_attack_scout_camp|Attack the Scout Camp!
 ; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...

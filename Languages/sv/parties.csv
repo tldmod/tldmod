@@ -38,7 +38,7 @@ p_town_isengard|Isengård
 ; p_town_beorn_house|Beorn's House
 ; p_town_moria|Gates of Moria
 ; p_town_troll_cave|Troll Cave
-p_town_dale|Dale
+p_town_dale|Dal
 ; p_town_esgaroth|Esgaroth
 ; p_town_dunland_camp|Dunlander Camp
 ; p_town_harad_camp|Haradrim Camp
@@ -53,10 +53,10 @@ p_town_dol_guldur|Dol Guldur
 ; p_town_gundabad|Gundabad
 ; p_town_gundabad_ne_outpost|Gundabad NE Outpost
 ; p_town_gundabad_nw_outpost|Gundabad NW Outpost
-; p_town_goblin_north_outpost|Goblin Northern Outpost
+; p_town_goblin_north_outpost|Goblin Town
 ; p_town_goblin_south_outpost|Goblin Southern Outpost
 ; p_town_gundabad_m_outpost|Gundabad Mirkwood Outpost
-; p_town_erebor|Erebor
+p_town_erebor|Erebor
 ; p_town_ironhill_camp|Iron Hills Quarry
 ; p_advcamp_gondor|Gondor Advance Camp
 ; p_advcamp_rohan|Rohan Advance Camp

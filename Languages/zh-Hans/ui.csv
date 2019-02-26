@@ -3,7 +3,7 @@ ui_not_enough_skill_points_to_learn|(技能点不足)
 ui_not_enough_attributetype_to_learn_this_skill|(%s不足无法学习)
 ui_explanation_agility|敏捷：每一点增加五点武器技能点并增加武器速度0.5%。以下的技能不能高于1/3的敏捷值：武器掌握、盾技、运动、骑术、骑射，以及搜刮战利品。
 ui_retreated_battle|%s逃跑了
-ui_riding_skill_not_adequate_to_mount|(骑术等级不够)
+ui_riding_skill_not_adequate_to_mount|(骑术等级过低)
 ui_camp|做点什么
 ui_tutorial_inventory|在最后之日中，你需要用资源点来获取装备。资源点的多少可以衡量一个派系支持你的程度，也决定了你能使用该派系的多少资源。
 ui_you_dont_have_value|缺少物品：%s
@@ -44,10 +44,10 @@ ui_fire_at_will_e_|%s，自由射击！
 ui_recent_messages|最后的信息
 ui_value_denars|%d资源点。
 ui_cannot_be_used_on_horseback|乘骑状态无法使用
-ui_upgrade_to_value|晋升为%s
+ui_upgrade_to_value|升级为%s
 ui_notification_cant_upgrade|(交出士兵时无法晋升)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch (Unused)
+ui_lance_control|骑枪控制
+ui_manual_easy|手动（简单）
+ui_manual_hard|手动（困难）
+ui_campaign_ai|战役AI（未使用）
+ui_crouch|蹲下（使用）

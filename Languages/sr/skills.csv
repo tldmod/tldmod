@@ -6,8 +6,8 @@ skl_prisoner_management|Menadzment Zarobljenika
 skl_prisoner_management_desc|Svai poen povecava maksimalnu kolicinu zarobljenika za %d (Vodjin skil)
 ; skl_persuasion|Wildcraft
 ; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|Prva Pomoc
 skl_first_aid_desc|Heroji dobijaju 5%% helta natrag koje su izgubili tokom borbe po skilu levela. (Grupni skil)
 skl_surgery|Hirurgija

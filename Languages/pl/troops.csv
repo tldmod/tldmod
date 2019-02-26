@@ -1,5 +1,5 @@
-trp_unarmed_troop|Nieuzbrojona Jednostka
-trp_unarmed_troop_pl|Nieuzbrojonych Jednostek
+trp_unarmed_troop|Nieuzbrojony Piechur
+trp_unarmed_troop_pl|Nieuzbrojonych Piechurów
 trp_tutorial_maceman|Buławnik
 trp_tutorial_maceman_pl|Buławników
 trp_tutorial_archer|Łucznik
@@ -138,7 +138,7 @@ trp_rhun_light_cavalry|Lekki Kawalerzysta Rhun
 trp_rhun_light_cavalry_pl|Lekkich Kawalerzystów Rhun
 trp_rhun_noble_cavalry|Szlachecki Kawalerzysta Rhun
 trp_rhun_noble_cavalry_pl|Szlacheckich Kawalerzystów Rhun
-trp_rhun_heavy_noble_cavalry|Rhun Ciężki Szlachcic Kawalerzysta  
+trp_rhun_heavy_noble_cavalry|Ciężkozbrojny Szlachcic z Rhun
 trp_rhun_heavy_noble_cavalry_pl|Ciężkich Szlacheckich Kawalerzystów Rhun
 trp_dorwinion_noble_of_rhun|Dorwinionski Szlachcic Rhun
 trp_dorwinion_noble_of_rhun_pl|Dorwinionskich Szlachciców Rhun
@@ -169,9 +169,9 @@ trp_a4_dwarven_bowman_pl|Krasnoludów Łuczników
 trp_i6_dwarven_longaxeman|Krasnolud topornik
 trp_i6_dwarven_longaxeman_pl|Krasnoludzcy topornicy
 trp_i3_iron_hills_warrior|Wojownik Żelaznych Wzgóż 
-trp_i3_iron_hills_warrior_pl|Wojownik Żelaznych Wzgóż 
+trp_i3_iron_hills_warrior_pl|Wojowników Żelaznych Wzgóż 
 trp_i2_iron_hills_miner|Górnik z Żelaznych Wzgórz
-trp_i2_iron_hills_miner_pl|Górnik z Żelaznych Wzgórz
+trp_i2_iron_hills_miner_pl|Górników z Żelaznych Wzgórz
 trp_i4_iron_hills_infantry|Piechurów Żelaznych Wzgórz
 trp_i4_iron_hills_infantry_pl|Piechurów Żelaznych Wzgórz
 trp_i5_iron_hills_battle_infantry|Bitewny Krasnolud Żelaznych Wzgórz
@@ -269,9 +269,9 @@ trp_lamedon_leader_pl|Kapitanów Lamedon
 trp_pinnath_gelin_plainsman|Mieszkaniec Pinnath Gelin
 trp_pinnath_gelin_plainsman_pl|Mieszkańców Pinnath Gelin
 trp_pinnath_gelin_spearman|Jeździec z Pinnath Gelin
-trp_pinnath_gelin_spearman_pl|Jeździec z Pinnath Gelin
+trp_pinnath_gelin_spearman_pl|Jeźdźców z Pinnath Gelin
 trp_warrior_of_pinnath_gelin|Rycerz z Pinnath Gelin
-trp_warrior_of_pinnath_gelin_pl|Rycerz z Pinnath Gelin
+trp_warrior_of_pinnath_gelin_pl|Rycerzy z Pinnath Gelin
 trp_pinnath_gelin_bowman|Łucznik Pinnath Gelin
 trp_pinnath_gelin_bowman_pl|Łuczników Pinnath Gelin
 trp_pinnath_gelin_archer|Strzelec Pinnath Gelin
@@ -289,7 +289,7 @@ trp_footman_of_blackroot_vale_pl|Pieszych Blackroot Vale
 trp_spearman_of_blackroot_vale|Włócznik Blackroot Vale
 trp_spearman_of_blackroot_vale_pl|Włóczników Blackroot Vale
 trp_blackroot_leader|Myśliwy Morthond
-trp_blackroot_leader_pl|Myśliwy Morthond
+trp_blackroot_leader_pl|Myśliwych Morthond
 trp_dol_amroth_youth|Rekrut Dol Amroth
 trp_dol_amroth_youth_pl|Rekrutów Dol Amroth
 trp_squire_of_dol_amroth|Giermek Dol Amroth
@@ -426,8 +426,8 @@ trp_i6_footman_guard_of_rohan|Rohański Strażnik Folcwine
 trp_i6_footman_guard_of_rohan_pl|Rohańskich Strażników Folcwine
 trp_i6_frealaf_raider|Jeździec Frealafa
 trp_i6_frealaf_raider_pl|Jeźdźców Frealafa
-; trp_i5_raider_of_rohan|Raider of Rohan
-; trp_i5_raider_of_rohan_pl|Raiders of Rohan
+trp_i5_raider_of_rohan|Rohański Jeździec 
+trp_i5_raider_of_rohan_pl|Rohańscy Jeźdźcy 
 trp_i6_warden_of_methuseld|Warden z Meduseld
 trp_i6_warden_of_methuseld_pl|Warden z Meduseld
 trp_ac3_skirmisher_of_rohan|Rohański Harcownik
@@ -444,8 +444,8 @@ trp_c5_elite_lancer_of_rohan|Elitarny Rohański Lansjer
 trp_c5_elite_lancer_of_rohan_pl|Elitarnych Rohańskich Lansjerów
 trp_c6_lancer_guard_of_rohan|Rohański Strażnik Brego
 trp_c6_lancer_guard_of_rohan_pl|Rohańskich Strażników Brego
-trp_c6_king_s_man_of_rohan|Gwardzista Króla
-trp_c6_king_s_man_of_rohan_pl|Gwardzistów Króla
+trp_c6_king_s_man_of_rohan|Królewski Gwardzista
+trp_c6_king_s_man_of_rohan_pl|Królewskich Gwardzistów
 trp_c2_squire_of_rohan|Rohański Giermek
 trp_c2_squire_of_rohan_pl|Rohańskich Giermków
 trp_c3_rider_of_rohan|Rohański Jeździec
@@ -476,8 +476,8 @@ trp_harad_swordsman|Haradrimski Zbrojny
 trp_harad_swordsman_pl|Haradrimskich Zbrojnych
 trp_harad_lion_guard|Gwardzista Lwa
 trp_harad_lion_guard_pl|Gwardzistów Lwa
-trp_harad_skirmisher|Harad Łowca
-trp_harad_skirmisher_pl|Harad Łowca
+trp_harad_skirmisher|Łowca z Haradu
+trp_harad_skirmisher_pl|Łowców z Haradu
 trp_harad_archer|Haradrimski Strzelec
 trp_harad_archer_pl|Haradrimskich Strzelców
 trp_harad_eagle_guard|Gwardzista Orła
@@ -560,10 +560,10 @@ trp_i1_corsair_youth|Umbarski Żeglarz
 trp_i1_corsair_youth_pl|Umbarskich Żeglarzy
 trp_i2_corsair_warrior|Umbarski Wojownik
 trp_i2_corsair_warrior_pl|Umbarskich Wojowników
-; trp_i3_corsair_spearman|Spearman of Umbar
-; trp_i3_corsair_spearman_pl|Spearmen of Umbar
-; trp_i4_corsair_raider|Corsair Raider
-; trp_i4_corsair_raider_pl|Corsair Raiders
+trp_i3_corsair_spearman|Włócznik z Umbaru
+trp_i3_corsair_spearman_pl|Włóczników z Umbaru
+trp_i4_corsair_raider|Korsarski Jeździec
+trp_i4_corsair_raider_pl|Korsarskich Jeźdźców
 trp_i5_corsair_night_raider|Umbarski Nocny Łupieżca
 trp_i5_corsair_night_raider_pl|Umbarskich Nocnych Łupieżców
 trp_a2_corsair_marine|Umbarski Morski Najeźdźca
@@ -584,12 +584,12 @@ trp_a4_corsair_assassin|Korsarz Zabójca
 trp_a4_corsair_assassin_pl|Korsarzy Zabójców
 trp_a5_corsair_master_assassin|Korsarz Zabójca
 trp_a5_corsair_master_assassin_pl|Korsarzy Zabójców
-; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
-; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
-; trp_i5_corsair_master_spearman|Spearmaster of Umbar
-; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
-; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
-; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
+trp_i4_corsair_veteran_spearman|Doborowy Włócznik z Umbaru
+trp_i4_corsair_veteran_spearman_pl|Doborowych Włóczników z Umbaru
+trp_i5_corsair_master_spearman|Umbarski Mistrz Włóczni
+trp_i5_corsair_master_spearman_pl|Umbarscy Mistrzowie Włóczni
+trp_i5_corsair_master_pikeman|Umbarski Mistrz Piki
+trp_i5_corsair_master_pikeman_pl|Umbarscy Mistrzowie Piki
 trp_orc_snaga_of_isengard|Isengardzki Ork Snaga
 trp_orc_snaga_of_isengard_pl|Isengardzkich Orków Snaga
 trp_orc_of_isengard|Isengardzki Ork
@@ -676,8 +676,8 @@ trp_ent|Ent
 trp_ent_pl|Entów
 trp_orc_snaga_of_guldur|Ork Snaga Dol Guldur
 trp_orc_snaga_of_guldur_pl|Orków Snaga Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Guldur
+trp_orc_of_guldur|Ork Tropiciel z Guldur
+trp_orc_of_guldur_pl|Orkowie Tropiciele z Guldur
 trp_orc_snaga_of_mordor|Mordorski Ork Snaga
 trp_orc_snaga_of_mordor_pl|Mordorskich Orków Snaga
 trp_orc_of_mordor|Mordorski Ork
@@ -694,10 +694,10 @@ trp_morgul_orc|Ork Morgulu
 trp_morgul_orc_pl|Orków Morgulu
 trp_fell_morgul_orc|Dziki Ork Morgulu
 trp_fell_morgul_orc_pl|Dzikich Orków Morgulu
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Guldur
+trp_orc_tracker_of_mordor|Wielki Ork Tropiciel z Guldur
+trp_orc_tracker_of_mordor_pl|Wielcy Orkowie Tropiciele z Guldur
+trp_fell_orc_tracker_of_mordor|Przeraźliwy Ork Tropiciel z Guldur
+trp_fell_orc_tracker_of_mordor_pl|Przeraźliwych Orków Tropicieli z Guldur
 trp_orc_archer_of_mordor|Mordorski Ork Łucznik
 trp_orc_archer_of_mordor_pl|Mordorskich Orków Łuczników
 trp_large_orc_archer_of_mordor|Mordorski Wielki Ork Łucznik

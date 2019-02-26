@@ -32,7 +32,7 @@ itm_rohirrim_courser|Rohański Rumak
 itm_rohirrim_hunter|Rohański Łowca
 itm_rohirrim_courser2|Rohański Rumak
 itm_rohan_warhorse|Rohański Koń Bojowy
-; itm_thengel_warhorse|Rohirrim Heavy Warhorse
+itm_thengel_warhorse|Ciężki Koń Bojowy Rohirrimów
 itm_rhun_horse_a|Koń z Rhunu
 itm_rhun_horse_b|Koń z Rhunu
 itm_rhun_horse_d|Koń z Rhunu
@@ -352,9 +352,9 @@ itm_twohand_wood_club|Dłua Drewniana Maczuga
 itm_bone_cudgel|Kościana Pałka
 itm_skull_club|Laga z Czaszką
 itm_orc_club_a|Orkowa Pałka
-; itm_orc_club_b|Warg Rider Club
+itm_orc_club_b|Buława Jeźdźcy Wargów
 itm_orc_club_c|Kolczasta Orkowa Pałka
-; itm_orc_club_d|Evil Mace
+itm_orc_club_d|Złowroga Buława
 itm_orc_sledgehammer|Orkowy Kafar
 itm_orc_simple_spear|Orkowy Włócznia
 itm_orc_skull_spear|Orkowa Włócznia z Czaszką
@@ -370,7 +370,7 @@ itm_orc_throwing_axes|Orkowe Toporki do Rzucania
 itm_orc_bow|Orkowy Łuk
 itm_orc_shield_a|Orkowa Tarcza
 itm_orc_shield_b|Orkowa Tarcza
-; itm_orc_shield_c|Orc Tower Shield
+itm_orc_shield_c|Orkowy Pawęż
 itm_mordor_orc_shield_a|Mordorska Orkowa Tarcza
 itm_mordor_orc_shield_b|Mordorska Orkowa Tarcza
 itm_mordor_orc_shield_c|Mordorska Orkowa Tarcza
@@ -460,7 +460,7 @@ itm_dun_helm_b|Dunlandzka Jelenia Czapa
 itm_dun_helm_c|Dunlandzki Wspaniały Hełm
 itm_dun_helm_d|Dunlandzki Wspaniały Hełm
 
-; itm_dun_helm_e|Dunnish Antler Helm
+itm_dun_helm_e|Dunlandzki Hełm z Porożem
 itm_dun_shield_a|Dunlandzka Tarcza
 itm_dun_shield_b|Dunlandzka Tarcza
 itm_dun_berserker|Dunlandzki Miecz Herszta
@@ -473,24 +473,24 @@ itm_rohan_armor_a|Rohańska Koszula
 itm_rohan_armor_e|Rohański Haubert
 itm_rohan_armor_h|Rohańska Skórzana Zbroja
 itm_rohan_armor_k|Rohański Haubert
-; itm_rohan_recruit|Rohan Padded Jerkin
+itm_rohan_recruit|Rohański Podszywany Kaftan
 itm_rohan_leather|Rohańska Skórzana Kamizelka
 itm_rohan_mail|Rohański Haubert
 itm_rohan_rider|Zbroja Jeźdźca Rohanu
 itm_rohan_scale|Rohańska Łuskowa Zbroja
-; itm_rohan_surcoat|Rohan Surcoat
+itm_rohan_surcoat|Rohańska Rycerska Szata
 itm_rohan_guard|Rohańska Zbroja Strażnika
 itm_rohan_light_helmet_a|Rohański lekki Hełm
 itm_rohan_light_helmet_b|Rohański lekki Hełm
-; itm_rohan_inf_helmet_a|Rohan Eyeguard Helm
-; itm_rohan_inf_helmet_b|Rohan Eyeguard Helm
-; itm_rohan_archer_helmet_a|Rohan Nasal Helm
-; itm_rohan_archer_helmet_b|Rohan Nasal Helm
-; itm_rohan_archer_helmet_c|Rohan Guard Helm
-; itm_rohan_cav_helmet_a|Rohan Cavalry Helm
-; itm_rohan_cav_helmet_b|Rohan Cavalry Helm
-; itm_rohan_cav_helmet_c|Rohan Cavalry Helm
-; itm_rohan_captain_helmet|Rohan Captain Helm
+itm_rohan_inf_helmet_a|Rohański Ciężki Hełm 
+itm_rohan_inf_helmet_b|Rohański Ciężki Hełm 
+itm_rohan_archer_helmet_a|Rohański Hełm Nosowy
+itm_rohan_archer_helmet_b|Rohański Hełm Nosowy
+itm_rohan_archer_helmet_c|Rohański Hełm Strażnika
+itm_rohan_cav_helmet_a|Rohański Hełm Jeźdźca
+itm_rohan_cav_helmet_b|Rohański Hełm Jeźdźca
+itm_rohan_cav_helmet_c|Rohański Hełm Jeźdźca
+itm_rohan_captain_helmet|Rohański Hełm Dowódcy
 itm_rohan_shield_a|Rohańska Tarcza
 itm_rohan_shield_b|Rohańska Tarcza
 itm_rohan_shield_c|Rohańska Tarcza
@@ -512,10 +512,10 @@ itm_rohan_2h_sword|Rohański Miecz Wojny
 itm_mirkwood_light_scale|Lekka Zbroja Łuskowa Leśnych Elfów
 itm_mirkwood_armor_a|Lekka Skórznia
 itm_mirkwood_armor_b|Lekka Zbroja Łuskowa
-; itm_mirkwood_armor_c|Mirkwood Royal Mail
+itm_mirkwood_armor_c|Królewska Kolczuga z Mirkwood
 itm_mirkwood_armor_d|Lekka Przeszywanica z Surkotem
 itm_mirkwood_armor_e|Lekka Kolczuga z Surkotem
-; itm_mirkwood_armor_f|Mirkwood Leafscale
+itm_mirkwood_armor_f|Zbroja z Mrocznej Puszczy
 itm_mirkwood_great_spear|Długa Włócznia z Mrocznej Puszczy
 itm_mirkwood_war_spear|Bitewna Włócznia z Mrocznej Puszczy
 itm_mirkwood_short_spear|Włócznia z Mrocznej Puszczy
@@ -743,7 +743,7 @@ itm_umb_shield_c|Puklerz Korsarza
 
 itm_umb_shield_d|Puklerz Korsarza
 
-; itm_umbar_spear|Umbar Short Spear
+itm_umbar_spear|Umbarska Krótka Włócznia 
 
 itm_umbar_cutlass|Umbarski Kordelas
 
@@ -755,7 +755,7 @@ itm_corsair_harpoon|Harpun Korsarza
 itm_corsair_sword|Eket Korsarza
 
 itm_corsair_throwing_dagger|Krzywe Sztylety 
-; itm_umbar_pike|Corsair Trident
+itm_umbar_pike|Trójząb Korsarza
 itm_woodman_tunic|Tunika Drwali
 
 itm_woodman_scout|Peleryna Zwiadowcy Lasu
@@ -847,14 +847,14 @@ itm_dwarf_helm_round|Krasnoludzki Okrągły Hełm
 
 itm_dwarf_helm_sallet|Krasnoludzki Sallet
 
-; itm_dwarf_armor_d|Iron Hills Coat of Scales
-; itm_dwarf_armor_a|Erebor Surcoat over Mail
+itm_dwarf_armor_d|Zbroja Lamelkowa Żelaznych Wzgórz
+itm_dwarf_armor_a|Ereborska Kolczuga z Płaszczem
 
-; itm_leather_dwarf_armor|Dwarven Padded Coat
+itm_leather_dwarf_armor|Krasnoludzka Podszywana Przeszywanica
 
-; itm_dwarf_armor_b|Erebor Tunic over Mail
+itm_dwarf_armor_b|Ereborska Kolczuga z Tuniką
 
-; itm_leather_dwarf_armor_b|Dwarven Padded Jerkin
+itm_leather_dwarf_armor_b|Krasnoludzki Podszywany Kaftan
 
 itm_dwarf_armor_c|Zbroja Łuskowa z Ereboru
 

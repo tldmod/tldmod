@@ -80,21 +80,21 @@ qstr_Close|关闭
 ; qstr_What_do_you_fight_fo|What do you fight for?
 ; qstr_Go_Back...|Go Back...
 ; qstr_Learn_about_the_diff|Learn about the different factions of Middle-Earth
-; qstr_The_DAWN_of_a_New_Er|The DAWN of a New Era
+qstr_The_DAWN_of_a_New_Er|新纪元的黎明
 ; qstr_The_TWILIGHT_of_Man|The TWILIGHT of Man
 ; qstr_Select_your_Race?|Select your Race?
-; qstr_Man|Man
-; qstr_Elf|Elf
+qstr_Man|人类
+qstr_Elf|精灵
 qstr_Dwarf|矮人
-; qstr_Whom_Do_You_Serve?|Whom Do You Serve?
-; qstr_SAURON_of_Mordor_The|SAURON of Mordor, The Lord of the Rings
-; qstr_SARUMAN_of_Isengard_|SARUMAN of Isengard, The White Hand
-; qstr_an_ORC^_serving_the_|an ORC,^ serving the Lidless Eye
-; qstr_an_URUK^_the_new_bre|an URUK,^ the new breed of Orcs
-; qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
-; qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
-; qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
-; qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
+qstr_Whom_Do_You_Serve?|你向何人效忠？
+qstr_SAURON_of_Mordor_The|魔多的索伦，众戒之王
+qstr_SARUMAN_of_Isengard_|艾辛格的萨鲁曼，白袍巫师
+qstr_an_ORC^_serving_the_|半兽人，索伦之眼的奴仆
+qstr_an_URUK^_the_new_bre|强兽人，半兽人的新品种
+qstr_a_MAN^_subjugated_by|人类，臣服于索伦
+qstr_an_ORC^_serving_the_W|半兽人，白手奴仆
+qstr_an_URUK_HAI^_bred_in|强兽人，繁衍于艾辛格
+qstr_a_MAN_of_Dunland^_th|登兰德人，来自西部平原
 qstr_Click_the_center_but|单击中心按钮切换派系 ^单击头像以查看详细信息
 qstr_Level:_{reg3}^Health|等级：{reg3} ^生命：{reg4}
 qstr_Attributes|属性
@@ -104,8 +104,8 @@ qstr_Ironflesh^Power_Stri|铁骨^强击^强掷^强弓^盾防^跑动^骑术^骑�
 qstr_Proficiencies|熟练度
 qstr_1H_Weapons^2H_Weapon|单手武器^双手武器^长杆武器^弓箭^弩^投掷
 qstr_Equipment|装备
-; qstr_The_Last_Days_Mod_Op|The Last Days Mod Options
-; qstr_War_Starts_at_Level:|War Starts at Level: 
+qstr_The_Last_Days_Mod_Op|最后之日Mod选项
+qstr_War_Starts_at_Level:|战争始于等级：
 ; qstr_Restrict_Player_Equi|Restrict Player Equipment:  
 ; qstr_Battle_Formations_an|Battle Formations and AI:  
 ; qstr_Native|Native

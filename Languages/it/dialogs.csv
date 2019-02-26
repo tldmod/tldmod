@@ -372,9 +372,9 @@ dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Appartiene a me adesso.
 dlga_ring_hunter_lair_defeat2:close_window|Pensi di aver ottenuto una grande vittoria? Forse la pallida ombra di una vittoria. Bah! La nostra compagnia era in marcia ben prima del tuo arrivo. Sei in ritardo per salvare quelli che c'erano prima!
 dlga_start:beorn_message|{Mio signore/Mia signora}, abbiamo ricevuto un avvertimento da {s1} che un numeroso gruppo di banditi sono diretti verso di noi! Ahimé, non c'è tempo per raccogliere abbastanza guerrieri. Udendo i rumori della battaglia, ci siamo preparati al peggio!
 dlga_beorn_message:beorn_message2|Quella non era un gruppo di banditi qualunque. Erano il peggio del peggio fra i Signori Oscuri, quanto meno qui al Nord. I loro capi, tuttavia, non erano qui. La loro base si trova presso la foresta di Mirkwood e devo fare in fretta.
-; dlga_beorn_message2:beorn_message_end|Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!
-; dlga_beorn_message_end:beorn_message_close|I must report back and tell {s1} about the battle. Go back to your village and dispatch scouts. There may be stragglers.
-; dlga_beorn_message_close:close_window|Yes, commander. We shall remain vigilant and send for more men from the distant hamlets. Your victory today has inspired us all.
+dlga_beorn_message2:beorn_message_end|Si, ci è giunta notizia anche del campo e abbiamo inviato degli esploratori verso di esso. Li abbiamo visti darlo alle fiamme e fuggire rapidamente verso Mordor. Avendo scelto di andare laggiù non hai avuto modo di aiutarci. Ti siamo davvero grati per la tua vittoria!
+dlga_beorn_message_end:beorn_message_close|Devo rientrare e fare rapporto a {s1} in merito alla battaglia. Torna al tuo villaggio e invia degli esploratori. Potrebbero esserci dei ritardatari.
+dlga_beorn_message_close:close_window|Sì, comandante. Rimarremo vigili e manderemo altri uomini dai villaggi lontani. La tua vittoria di oggi ha ispirato tutti noi.
 dlga_lord_give_troops:lord_give_troops_check|Rinforzare la mia compagnia ? Posso sempre usare dei soldati in più.
 dlga_lord_give_troops:lord_pretalk|Sfortunatamente non hai alcun soldato {s14} per darmi rinforzo.
 dlga_lord_give_troops_check:lord_give_troops_check_1|Fammi dare un'occhiata alla lista dei soldati...
@@ -459,18 +459,18 @@ dlga_lord_tell_objective:lord_pretalk.12|Non so: {reg1} {s1}
 ; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|I do not have the time for this.
 ; dlga_lord_mission_destroy_scout_camp_accept:close_window|We shall await news of your success.
 ; dlga_lord_mission_destroy_scout_camp_reject:close_window|I see. That is disappointing.
-; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on its way to a village near {s12}.
+dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, abbiamo ricevuto rapporti dai nostri esploratori riguardo ad un gruppo di assalitori che si sta dirigendo verso un villaggio nei pressi di {s12}.
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|Sei in grado di inviare uomini ?
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|Potremmo, ma ci vorrà del tempo per mobilitarci. Temiamo di accumulare troppo ritardo. ^^Tu e i tuoi uomini sembrate in grado di viaggiare velocemente. Potete difendere questo villaggio ?
 dlga_lord_mission_defend_question:lord_mission_defend_accept|I miei uomini ed io siamo pronti. Possiamo partire immediatamente.
 dlga_lord_mission_defend_question:lord_mission_defend_reject|Temo di non poter svolgere questo compito.
 dlga_lord_mission_defend_accept:close_window|Grazie, {playername}. Ora va, rapidamente !
 dlga_lord_mission_defend_reject:close_window|Vedo. Invierò più truppe possibile. Speriamo di non arrivare troppo tardi.
-; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
+dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, c'è un villaggio nelle vicinanze che è pronto per la raccolta. I nostri esploratori ci riferiscono che sono protetti da {s3}, ma sono pochi e si possono sconfiggere facilmente. ^^Sei la prima persona a cui lo riferisco. Che intendi fare con quest'informazione?
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|Assalirò quel villaggio, ucciderò chiunque si metta sulla nostra strada e ridurrò in schiavitù tutte le donne e i bambini !
 dlga_lord_mission_raid_village_a:lord_raid_village_reject|Non ho tempo per razziare deboli villaggii !
 dlga_lord_raid_village_accept:close_window|E allora perché te ne stai qui impalato ?
-; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting.
+dlga_lord_raid_village_reject:close_window|Le scuse di una persona codarda. Vattene, il puzzo della tua vigliaccheria ha infestato l'aria.
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|Lo stregone di Bosco Atro è stato ucciso, mia Signora.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|Perdonami, mia Signora, ma delle urgenze impellenti mi hanno impedito di eliminare lo stregone, che nel frattempo è fuggito.
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|Lo stregone di Bosco Atro vive ancora. Abbiamo interrotto i suoi rituali ma è riuscito a dileguarsi.
@@ -662,15 +662,15 @@ dlga_caravan_help3:caravan_help4|Che tu possa fare viaggi sereni, Torbal. Sono c
 dlga_caravan_help4:caravan_help_fac_tut|Non vedo l'ora. Le mie guardie ti hanno visto combattere e certamente riferiranno al loro signore riguardo a te. ^^Se soccorrerai più volte il loro popolo, certamente diverrai celebre fra di loro, il che potrà portare a grandi cose ! ^^Io stesso sono ben conosciuto, e mi è stato fornito un reddito mensile per ciò che ho fatto !
 dlga_caravan_help_fac_tut:caravan_help5|(GUIDA AI GRADI NELLE FAZIONI) ^^I punti graduatoria ti permettono di salire di grado nella tua fazione (e/o in altre fazioni). ^^Ciò determina il limite di grandezza della tua compagnia, il reddito fornito da ogni fazione e sblocca altre specifiche ricompense dalle fazioni stesse.
 dlga_caravan_help5:close_window|Me ne ricorderò. Grazie Torbal, abbi cura di te.
-; dlga_start:caravan_attack1|And who are you? We needed none of your interference, nar!
-; dlga_caravan_attack3:close_window|Weakling? Let’s see who the weakling is! (Difficult)
-; dlga_caravan_attack3:close_window.1|Go on then, coward. I'll see your corpse in the fields.
+dlga_start:caravan_attack1|E tu chi sei? Non abbiamo bisogno che t'impicci, nar!
+dlga_caravan_attack3:close_window|Debole? Vediamo chi è il debole! (Difficile)
+dlga_caravan_attack3:close_window.1|Vai avanti, vigliacco. Vedrò il tuo cadavere nei campi.
 ; dlga_start:caravan_res_tut1|*snicker* No harm in biding one’s time, warrior! Some of the lads might not think so much of you, but not me, oh no. I saw you fight. Won’t bet against you! {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 ; dlga_start:caravan_res_tut2|*snicker* I s’pose I’m the leader now. You are a fierce warrior, yes! Take your share of the loot. Some o’ the lads were betting on you being warg meat, but not me, oh no. I saw you fight. Won’t bet against you!^^Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_caravan_res_tut1:caravan_noduel|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dal popolo di Mordor non sono quelli che hai guadagnato nella tua fazione, ma quelli che guadagnerai a Mordor. ^^Controlla la sezione RAPPORTi per maggiori informazioni.
 dlga_caravan_res_tut2:caravan_duel1|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dal popolo di Mordor non sono quelli che hai guadagnato nella tua fazione, ma quelli che guadagnerai a Mordor. ^^Controlla la sezione RAPPORTi per maggiori informazioni.
 ; dlga_caravan_noduel:caravan_duel2|I could kill him as easily as I spit! But I have nothing to prove to the likes of him.
-; dlga_caravan_duel1:caravan_duel2|What I do is none of your affair, Orc. But I will help our allies and slay our foes.
+dlga_caravan_duel1:caravan_duel2|Ciò che faccio non sono affari tuoi, Orco. Ma sosterrò i nostri alleati e ucciderò i nostri nemici.
 ; dlga_caravan_duel2:caravan_fac_tut|Fair enough, fair enough! Look at these cowering wretches around us! Ha! They fear you, oh yes, as they should, as they should! I don’t. Heh. But then, I owe you a favour, don’t I! I’ll do you a good turn in my way. I’ll tell the Bosses about you today. Word’ll get around. And when the Bosses hear enough about you… why, could be they’d have something special for you. Gifts, power, respect! I’m going back now for a nice big helping myself!
 dlga_caravan_fac_tut:caravan_duel3|(GUIDA AI GRADI NELLE FAZIONI) ^^I punti graduatoria ti permettono di salire di grado nella tua fazione (e/o in altre fazioni). ^^Ciò determina il limite di grandezza della tua compagnia, il reddito fornito da ogni fazione e sblocca altre specifiche ricompense dalle fazioni stesse.
 dlga_woodelf_help_6:woodelf_help_7|(GUIDA AI GRADI NELLE FAZIONI) ^^I punti graduatoria ti permettono di salire di grado nella tua fazione (e/o in altre fazioni). ^^Ciò determina il limite di grandezza della tua compagnia, il reddito fornito da ogni fazione e sblocca altre specifiche ricompense dalle fazioni stesse.
@@ -688,15 +688,15 @@ dlga_beorn_help5:beorn_help6|Possiamo essere rozzi e pelosi, cupi e chiusi. Ma a
 dlga_beorn_help6:beorn_help7|(GUIDA AI GRADI NELLE FAZIONI) ^^I punti graduatoria ti permettono di salire di grado nella tua fazione (e/o in altre fazioni). ^^Ciò determina il limite di grandezza della tua compagnia, il reddito fornito da ogni fazione e sblocca altre specifiche ricompense dalle fazioni stesse.
 dlga_beorn_help7:close_window|Le fael, amico ! Addio.
 dlga_beorn_help7:close_window.1|(alza la mano e vattene senza dire una parola)
-; dlga_start:kill_scout_1|Great eyes and ears you have there! If you hadn’t warned us, those green-clad tree-climbers would’ve had the jump on us, I warrant - or perhaps escaped, and brought down more of their fellows on our heads! Now they’re for the maggots and crows, and our mission is safe. Ai! The Bosses will be pleased.
-; dlga_kill_scout_1:kill_scout_2|Watch where you’re taking us, Orc. We have not travelled this far to perish in an ambush, before the war has even begun!
-; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
+dlga_start:kill_scout_1|Che  grandi orecchie, e che grandi occhi hai! Se non ci avessi avvertiti, quegli arrampica-alberi verdi ci sarebbero piombati addosso, lo garantisco - o forse sarebbero fuggiti, richiamando i loro alleati per caderci sulla testa! Ora sono cibo per i vermi e i corvi, la nostra missione è salva. Ai! I capi ne saranno compiaciuti.
+dlga_kill_scout_1:kill_scout_2|Guarda dove ci hai portati, Orco. Non abbiamo viaggiatà tanto lontano solo per morire in un'imboscata, ancor prima che la guerra sia iniziata!
+dlga_kill_scout_2:kill_scout_3|Anche la guerra dovrà esserci, certamente! Non aver paura, guerriero, Mordor è un alleato tuo e della tua gente. Prendi questo - procurati delle provviste. Puoi farne uso in tutti gli avamposti di Mordor! Fatti una birra orchesca per me!
 dlga_kill_scout_3:kill_scout_4|(GUIDA AI PUNTI RISORSA)^^ I Punti Risorsa che puoi usare per comprare dal popolo di Mordor non sono quelli che hai guadagnato nella tua fazione, ma quelli che guadagnerai a Mordor. ^^Controlla la sezione RAPPORTi per maggiori informazioni.
-; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill? We'd rather be drinking our own piss.
-; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
+dlga_kill_scout_4:kill_scout_5|Vuoi che beviamo quella brodaglia degli orchi? Preferiremmo bere il nostro piscio.
+dlga_kill_scout_5:kill_scout_6|Ha! Lo sapevo che gli stranieri facevano cose del genere! Grazie a te, ho vinto la mia scommessa con Gothmog! Perlerò di te con gli altri capi, stanne certo. Lugbúrz saprà quanto sei stato utile oggi, non temere! Il Grande Occhio è su di noi, adesso!^^Ma noi stiamo uniti fra la nostra gente, eccome. Servi l'Occhio, servi il Signore Oscuro, si, ma fa qualcosa a oriente e il sud non se ne accorge, e così via. Aiuta l'Occhio, ma la Mano Bianca non lo sa. Aiuta il Vecchio e la Torre Nera pensa al perché sprechi il tuo tempo non facendo niente per lei!
 dlga_kill_scout_6:kill_scout_7|(GUIDA AI GRADI NELLE FAZIONI) ^^I punti graduatoria ti permettono di salire di grado nella tua fazione (e/o in altre fazioni). ^^Ciò determina il limite di grandezza della tua compagnia, il reddito fornito da ogni fazione e sblocca altre specifiche ricompense dalle fazioni stesse.
-; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!
-; dlga_kill_scout_8:close_window|As you wish, as you wish. This way!
+dlga_kill_scout_7:kill_scout_8|Ciò che faccio non ti riguarda, creatura disgustosa. Ora muoviamoci!
+dlga_kill_scout_8:close_window|Come vuoi, come vuoi.. Da questa parte!
 dlga_woodelf_help_1:woodelf_help_2.1|Non ho mai visto un Orco così grande prima d'ora. Creature oscene. Non agitarti. Sono un soldato in questa guerra imminente che tutti sentono arrivare.
 dlga_woodelf_help_2:woodelf_help_3.1|Lo sei ? Certo che lo sei ! Ho visto che sei un guerriero capace. Sono stato davvero fortunato oggi, e approfittando di questa buona fortuna mi affretterò verso il mio villaggio per avvertire la mia gente della presenza di queste bestie immonde.
 dlga_woodelf_help_3:close_window|Che tu possa fare viaggi sereni, Torbal. Sono certo che c'incontreremo ancora.

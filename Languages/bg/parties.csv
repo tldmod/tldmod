@@ -1,6 +1,6 @@
 ; p_town_minas_tirith|Minas Tirith
 ; p_town_pelargir|Pelargir
-p_town_linhir|Линхир\n
+p_town_linhir|Линхир
 ; p_town_dol_amroth|Dol Amroth
 ; p_town_edhellond|Edhellond
 ; p_town_lossarnach|Lossarnach
@@ -12,7 +12,7 @@ p_town_linhir|Линхир\n
 ; p_town_cair_andros|Cair Andros
 ; p_town_calembel|Calembel
 ; p_town_edoras|Edoras
-p_town_aldburg|Алдбург\n
+p_town_aldburg|Алдбург
 ; p_town_hornburg|Hornburg
 ; p_town_east_emnet|East Emnet
 ; p_town_westfold|Westfold
@@ -53,7 +53,7 @@ p_town_dol_guldur|Дол Гулдур
 ; p_town_gundabad|Gundabad
 ; p_town_gundabad_ne_outpost|Gundabad NE Outpost
 ; p_town_gundabad_nw_outpost|Gundabad NW Outpost
-; p_town_goblin_north_outpost|Goblin Northern Outpost
+; p_town_goblin_north_outpost|Goblin Town
 ; p_town_goblin_south_outpost|Goblin Southern Outpost
 ; p_town_gundabad_m_outpost|Gundabad Mirkwood Outpost
 p_town_erebor|Еребор

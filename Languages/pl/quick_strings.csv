@@ -818,10 +818,10 @@ qstr_We_will_feast_on_you|Będziemy ucztować w waszym mięsie!
 qstr_Dwarf_meat!|Krasnoludzkie mięso.
 qstr_Eru_Iluvatar_has_dec|Eru Iluvatar zdecydował o losie oddziału Balina i nie można tego zmienić.
 qstr_They_are_coming....!|Nadchodzą!
-; qstr_Who...dares...enter.|Who...dares...enter...
+qstr_Who...dares...enter.|Kto...ma czelność... wchodzić...
 qstr_You_are_not_welcome_|Nie jesteś tu mile widziany!
 qstr_Finally_I_found_you!|Wreszcie Cię znalazłem! Wynośmy się stąd!
-; qstr_You...are....ours...|You...are....ours...
+qstr_You...are....ours...|Należysz...do nas...
 qstr_Look_at_my_over_the_|Spójrz na mnie, {playername}! Jestem taki wspaniały z daleka!
 qstr_You_wish_old_man_my_|Jak chcesz, stary, ale mój widok jest znacznie lepszy!
 qstr_You_should_really_se|Naprawdę powinieneś zobaczyć zdjęcia Namiestnika Denetora na Facebooku, jest niesamowity!
@@ -1238,7 +1238,7 @@ qstr_I_am_ready_to_ride_wi|Jestem gotów jeździć z tobą i je spełniać. Zako
 qstr_I_am_not_ready_to_ri|Nie jestem jeszcze gotów jeździć z tobą. Potrzebuję więcej czasu.
 qstr_You_do_not_have_enou|Masz zbyt mały oddział, żeby pomóc w tej walce. Zwiększ liczebność oddziału do 30 ludzi i dołącz do mnie.
 qstr_Stay_close_we_will_t|Trzymajcie się blisko, zajmujemy pozycję blisko wroga. Kiedy wszyscy się zgromadzimy, uderzymy.
-; qstr_You_have_taken_too_l|You have taken too long... We shall ride now, with or without you. We will gather near the enemy, and in 3 days time, we will strike.
+qstr_You_have_taken_too_l|Zajęło Ci to zbyt długo... Pojedziemy teraz, z Tobą lub bez Ciebie. Zbierzemy się nieopodal wroga i za 3 dni uderzymy.
 qstr_Make_haste_{playerna|Spiesz się, {playername}. Nie chcemy ich odzyskać.
 qstr_Your_mission_is_comp|Twoja misja została zakończona, {s9} chce abyś dalej podążał{/a} za jego armią, aż do następnych wskazówek.
 qstr_{s13}_asked_you_to_g|{s13} poprosił cię o przyprowadzenie mu stada złożonego z {reg3} sztuk wołowiny.
@@ -1324,11 +1324,11 @@ qstr_Firstly_we_must_thin|Po pierwsze, musimy pomyśleć o przeszkodach w tym za
 ; qstr_You_need_sharp_weapo|You need sharp weapons, fresh meat for your troops and wargs, wood to fuel the fires, and draughts to make the weaklings keep up. You also have to keep your scum in line or they’ll all kill each other before you’ve even got to the walls. We’re too busy with our own fights to take care of your lot — be prepared to provide what is needed to keep the maggots moving.^[requires {reg3} resources, {reg15} influence]
 ; qstr_Steel_must_be_kept_s|Steel must be kept sharp, men and horses fed, fires kept burning, water fetched, wounds tended — you and your men are no use to us if you can’t maintain your campaign. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
 ; qstr_Steel_must_be_kept_sh|Steel must be kept sharp, soldiers and horses fed, fires kept burning, water fetched, wounds tended — a battle less glorious but no less important than the one you will fight on the ramparts. As we are spread too thin already to give you what is required, you must be prepared to provide what is needed to keep your army operational in a siege.^[requires {reg3} resources, {reg15} influence]
-; qstr_Next_if_you_try_to_a|Next, if you try to attack an enemy capital, I’ll stick you if you ain’t dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten.
+qstr_Next_if_you_try_to_a|Następnie, jeśli spróbujesz zaatakować wrogą stolicę, zabije Cię jeśli jeszcze nie będziesz martwy.... Wkroczymy tam tylko wtedy, gdy Mistrz wyda taki rozkaz. Jedziesz tam, gdzie wróg jest słaby i może zostać pokonany.
 qstr_Secondly_you_do_not_|Po drugie, nie masz pozwolenia na przewodzenie naszym ludziom przeciwko wrogiej stolicy. Miejsca te można pokonać tylko wtedy, gdy cała siła naszych sił stanie się zjednoczona. Masz uderzyć tylko tam, gdzie nasz wróg został wystarczająco osłabiony, aby zostać pokonanym.
 ; qstr_Third_{s2}_is_on_its|Third, {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long.
 ; qstr_Furthermore_you_must|Furthermore, you must know that {s2} is occupied with its own campaign. Our banners will follow you into battle if circumstance permits, but do not trust to hope — you may well be forced to stand alone.
-; qstr_Last_remember_that_a|Last, remember that as a {s25}, the Master has got no time for failure. You risk much for {s2} when you fight — bring us defeat and we’ll make sure you wish you’d never been born.
+qstr_Last_remember_that_a|Na koniec pamiętaj, jako {s25}, Mistrz nie ma czasu na niepowodzenie. Ryzykujesz dużo dla {s2} kiedy walczysz -- przynieś nam klęskę, a będziesz żałował, że się kiedykolwiek narodziłeś.
 ; qstr_Finally_remember_tha|Finally, remember that as a {s25}, you live and die by your successes and failures. You risk much for {s2} when you march into battle — bring ruin upon it and the consequences will be severe.
 ; qstr_Finally_remember_that|Finally, remember that as a {s25}, you may bask in the glory of a victory hard-won and call that victory your own but all who dwell in {s2} will pay the price of your failure. You carry the fate of {s2} into battle with you — bring ruin upon it and the consequences will be severe.
 qstr_Still_think_you_can_|Nadal myślisz, że sobie z tym poradzisz?
@@ -1356,12 +1356,12 @@ qstr_We_are_at_war_with_{s|Naszym wrogiem w wojnie jest {s12}. Jednakże, w tym 
 qstr_we_are_not_too_conce|nie jesteśmy nimi zainteresowani w tym momencie, gdyż walczymy teraz z innymi wrogami bliżej domu
 qstr__under_your_orders|, pod twymi rozkazami
 qstr_strong_warriors_from|silni wojownicy z {s7}
-; qstr_champions_from_{s7}_|champions from {s7}, the strongest in the field
+qstr_champions_from_{s7}_|mistrzowie z {s7}, najlepsi na polu bitwy
 qstr_{playername}_the_men|{playername}, moi ludzie słyszeli okrutne historie o oddziałach wrogach. Opowieści o nich demoralizują naszych żołnierzy. Chcę, żebyś pokazał im, że nie mają, czego się bać. Chcę, abyś osobiście pokonał {reg22} {s6}.
 qstr_{playername}_I_want_|{playername}, chcę, żebyś pokazał ludziom, że wrogie oddziały nie mają żadnych konsekwencji. Chcę, żebyś osobiście zabił {reg22} {s6}! Zrób to, aby pokazać, że jesteśmy siłą nadrzędną!
 qstr_I_will_do_what_you_a|Zrobię to, o co prosiłeś, a ludzie będą świadkami.
-; qstr_high_level_troops_fr|high level troops from
-; qstr_elite_level_troops_f|elite level troops from
+qstr_high_level_troops_fr|jednostki wysokiego poziomu z
+qstr_elite_level_troops_f|elitarne jednostki z
 qstr_{s9}_wants_you_to_pe|{s9} chce, abyś osobiście pokonał {reg22} {s6} {s7}.
 qstr_I_want_you_to_person|Chcę, żebyś osobiście zabił
 qstr_I_want_you_and_your_|Chcę, abyś ty i twoi ludzie zabili

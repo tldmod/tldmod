@@ -1996,9 +1996,9 @@ str_show_keybinds|Specjalne wiązania klucza: Klawisze Formacyjne ^^^ Klawisze F
 str_tactical_controls|Użyj klawiszy LICZBY aby wybrać podział. Naciśnij 0, aby wybrać całą swoją siłę. ^^^Use F1-F4, aby zamówić wybrane podziały. Przytrzymaj klawisz F1, aby umieścić wybrane podziały. Za pomocą tego mechanizmu można wycelować na podział wroga. ^^Przycisk ENTER często inicjuje napowietrzną kamerę strategiczną. ^^Pociskanie klawisza BACKSPACE często inicjuje wyświetlanie poleceń bitwy z 'radarem'.
 str_division_placement|Po wybraniu JEDEN dywizji, środek jego przedniej rangi znajduje się w miejscu wskazanym. ^^Po wybraniu dywizji MANY są one oddzielane i rozkładane tak, jakby gracz stał we wskazanym miejscu. ^^One może zapamiętać położenie wybranych dywizji względem gracza, naciskając klawisze F2, F7. Domyślnie piechota znajduje się z lewej strony, kawaleria z prawej strony, a piechota z przodu.
 str_formations|\nZłożone formacje w menu bitewnym to:^^- RANKI z najlepszymi oddziałami w górę frontu^- MUSIĆ Ściany, rang z tarczami przed i dłuższą bronią w tył^- WEDGE z najlepszymi oddziałami w górę front^- SQUARE w nieszczególnym porządku^- NO FORMATION^^^Even w ostatnim przypadku, gracz może tworzyć formacje do czterech linii, zamawiając Stand Closer wystarczająco dużo razy.
-; str_npc18_intro|Great One, hold a moment! I would speak with you!
-; str_npc19_intro|Hold a moment, Commander. I would have words with you. No, no, you need not kneel, even though you speak to one of royal blood.
-; str_npc20_intro|Wait. You. I've seen you. I know your face. A dream I had, of you - but why would it be you? Now that I see you with mine own eyes, you are little more than a lowly snaga!
+str_npc18_intro|Wspaniały bohaterze, zaczekaj chwilę! Chcę z Tobą porozmawiać!
+str_npc19_intro|Zaczekaj chwilę, dowódco. Chciałbym zamienić z Tobą słowo. Nie, nie, nie musisz klękać, mimo iż rozmawiasz z członkiem królewskiej rodziny.
+str_npc20_intro|Stój. Ty. Gdzieś Cię widziałem. Znam tą twarz. Miałem sen, byłeś w nim - ale czemu akurat ty? Teraz, kiedy widzę Cię na własne oczy, jesteś czymś więcej niż jakimś snagą!
 str_npc21_intro|Witam Cię wojowniku w Meduseld!
 str_npc22_intro|Witaj {playername}. Mae govannen!
 str_npc23_intro|Zostaw mnie, nie chcę z tobą rozmawiać.
@@ -2007,8 +2007,8 @@ str_npc25_intro|Witaj w Dale podróżniku! Mogę ci w czymś pomóc?
 str_npc26_intro|Scho! Jeśli tak bardzo falujesz do strażników, pokroję twój żołądek i nakarmię go wargami!
 str_npc27_intro|Ty!
 ; str_npc18_intro_response_1|A slave in stocks, bound for death, would speak with me? What have you to say?
-; str_npc19_intro_response_1|Royal blood you say? Ha! What makes you think you have even a drop of it?
-; str_npc20_intro_response_1|Look here, what do you mean by this, witch? Who are you?
+str_npc19_intro_response_1|Królewska krew, powiadasz? Ha! Czemu myślisz, że masz chociaż kroplę?
+str_npc20_intro_response_1|Spójrz tutaj, co masz przez to na myśli, wiedźmo? Kim jesteś?
 str_npc21_intro_response_1|Witaj, moja Pani. Z kim mam honor rozmawiać?
 str_npc22_intro_response_1|Witaj elfi Władco! To wielki zaszczyt móc cię spotkać
 str_npc23_intro_response_1|Czy to tak Quendi witają swoich gości?
@@ -2016,7 +2016,7 @@ str_npc24_intro_response_1|{playername} do usług. Jak miewa się lud Durina?
 str_npc25_intro_response_1|Witajcie. Czy są tutaj jacyś ochotnicy, którzy zechcieliby dołączyć do naszej wyprawy?
 str_npc26_intro_response_1|Powstrzymaj swój język, Uruku, zanim dojdzie do bójki- nie jestem kapusiem.
 str_npc27_intro_response_1|Kto ty jesteś?
-; str_npc18_intro_response_2|I will not waste words on a slave bound for death.
+str_npc18_intro_response_2|Nie mam nic do powiedzenia niewolnikowi skazanemu na śmierć.
 ; str_npc19_intro_response_2|Impudent wretch. Out of my way.
 ; str_npc20_intro_response_2|I have no time for your mad ravings, sorceress.
 str_npc21_intro_response_2|Wybacz, mam inne ważne sprawy.
@@ -2027,8 +2027,8 @@ str_npc25_intro_response_2|Nieważne, tylko zwiedzaliśmy.
 str_npc26_intro_response_2|Pójdę więc w swoją stronę, albo ręka zacznie mnie świerzbieć.
 str_npc27_intro_response_2|[Zignoruj i odejdź]
 ; str_npc18_backstory_a|I am no mere slave! I am a head-taking warrior, cheated of my rightful place among the ranks! You see that I am a woman, but I am stronger and swifter than many others, and I've outfought more men than I can count. The Pit Master - accursed be he! He set me a test, to fight three men at once. Three!
-; str_npc19_backstory_a|A small drop, to be sure, but my dam has told me all about my lineage. I am Heidrek, direct descendant of King Fengel, closer to the throne of Rohan and Dunland than any of our chieftains! Dark is my hair, but I fancy I have more than a strand of yellow in there somewhere.
-; str_npc20_backstory_a|In my dream, there was a tree. A tree, all of white. And you, you were there, standing beside it. You placed your hand upon its trunk, and lo, it withered down to its very roots. And the shadow in the sky lengthened, and the air grew heavy. I heard a laughter then, from far away in the east. 
+str_npc19_backstory_a|Kropelkę, jesli być dokładnym, ale mój dam powiedział mi wszystko na temat mojego pochodzenia. Jestem Heidrek, potomek Króla Fengela, bliższy tronu Rohanu i Dunlandu niż ktokolwiek z naszych wodzów! Czarne są moje włosy, ale mam pewność, że gdzieś tam mam więcej niż odrobinę żółci.
+str_npc20_backstory_a|W moim śnie było drzewo. Drzewo, całe białe. I ty,  ty również tam byłeś, stałeś obok. Położyłeś dłon na jego pniu i oto uschło do samych korzeni. I niebo ogarnęła ciemność, a powietrze stało się ciężkie. A potem usłyszałem śmiech, daleko na wschód.
 str_npc21_backstory_a|Nazywam się Gálmynë , i ja zrobiłem to moja sprawa, wiedzieć twoje {playername} . Pozwól mi wyjaśnić , dlaczego.
 str_npc22_backstory_a|Być może słyszeliście opowieści o moich czynach w bitwach przeszłości i zapomniane przez śmiertelnych ludzi . W pełni czasów tej wojny jest jeszcze inny czas niebezpieczeństwa dla Eldarów , ale będzie to ostatnia wojna .
 str_npc23_backstory_a|\nPrzepraszam za moją zuchwałość , obcy , ale nie mamy wielu turystów tutaj i te, które pochodzą nie wyglądają bardzo wiarygodnie. Zaledwie tydzień temu , ten karzeł pojawił się i ... Nieważne . Nazywam się Luevanna , z leśnych elfów z Mrocznej Puszczy ..
@@ -2067,8 +2067,8 @@ str_npc25_backstory_later|Ponownie skontaktowałem się z Królem, tym razem o w
 str_npc26_backstory_later|Jak myślisz, co robię? Gulm siedzi tutaj i czeka na jakiegoś podstępnego snaga, by trzymać go w ciemności. Zabierz mnie ze sobą - będę dobrze służył.
 str_npc27_backstory_later|Czy rozpatrzyłeś to? Będę dobrze służył
 ; str_npc18_backstory_response_1|If you are truly as ferocious as you look, perhaps you could fight for me. After we feed you up a bit, of course.
-; str_npc19_backstory_response_1|Very well. As long as you can fight in the battle line, you can be of use, Dunlending.
-; str_npc20_backstory_response_1|Strange way of asking to join me, witch. But very well, you may come along.
+str_npc19_backstory_response_1|Bardzo dobrze. Będziesz z Ciebie użytek tak długo, jak możesz walczyć na froncie, Dunlending.
+str_npc20_backstory_response_1|Dziwny sposób na pytanie o dołączenie do mnie, wiedźmo. Ale dobrze, możesz pójść ze mną.
 str_npc21_backstory_response_1|Z miłą chęcią przyjąłbym pomoc od Rohańskiej tarczowniczki, jeśli byłaby zaoferowana.
 str_npc22_backstory_response_1|Może to zabrzmieć zarozumiale z mojej strony, ale moja kompania mogłaby wykorzystać twoje umiejętności w nadchodzących bitwach.
 str_npc23_backstory_response_1|Przemierzamy ten świat wzdłuż i wszerz, lecz by bronić sprawiedliwości, walczymy z niesprawiedliwymi.
@@ -2107,8 +2107,8 @@ str_npc25_signup_2|Muszę cię jednak ostrzec, że na nic nie zdam ci się w wal
 str_npc26_signup_2|Musisz się szybko zdecydować, strażnicy zaczynają być podejrzliwi.
 str_npc27_signup_2|Nie pożałujesz zabrania mnie ze sobą.
 ; str_npc18_signup_response_1|I like your spirit. Very well, I will send word to Lurmsakun on your behalf.
-; str_npc19_signup_response_1|Well, then, 'Prince', take up your weapons. You fight for me, now.
-; str_npc20_signup_response_1|I hope, for your sake, that your words are not idle boasting. Do not disappoint me, Zigûrphel.
+str_npc19_signup_response_1|Dobrze, w takim razie, 'Księciu', przygotuj oręż. Walczysz teraz dla mnie.
+str_npc20_signup_response_1|Mam nadzieję, dla twojego spokoju, że te słowa nie są rzucane na wiatr. Nie zawiedź mnie, Zigûrphel.
 str_npc21_signup_response_1|Imponujące. Jesteśmy gotowi do drogi, na twój znak, droga pani.
 str_npc22_signup_response_1|Będziemy zaszczyceni mając cie w kompanii Elficki Lordzie 
 str_npc23_signup_response_1|Bardzo Dobrze. Mam tylko nadzieję że nie uciekniesz od pierwszego ujrzanego orka.

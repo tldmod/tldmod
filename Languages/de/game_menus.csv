@@ -27,7 +27,7 @@ mno_tutorial_3b_door|Nächster Raum
 mno_tutorial_4|Tutorial #4: Reiten. {s4}
 mno_tutorial_5|Tutorial #5: Soldaten Befehle erteilen. {s5}
 mno_go_back_dot|Zurück.
-mno_action_view_troop_trees|Truppenbäume ansehen.
+mno_action_view_troop_trees|Truppenbäume ansehen
 mno_view_upkeep_costs|Unterhaltskosten betrachten.
 mno_view_character_report|Betrachte Charakterbericht
 mno_view_party_size_report|Betrachte Truppengröße-Bericht
@@ -35,13 +35,13 @@ mno_view_morale_report|Betrachte Truppenmoral-Bericht
 mno_view_character_report_02|NPC Statuscheck
 mno_view_faction_strengths_report|Betrachte Fraktionsstärken-Bericht
 mno_view_traits_report|Betrachte Merkmale
-mno_resume_travelling|Weiterreisen.
-mno_custom_battle_go|Beginnen.
-mno_leave_custom_battle_2|Abbrechen.
+mno_resume_travelling|Weiterreisen
+mno_custom_battle_go|Beginnen
+mno_leave_custom_battle_2|Abbrechen
 menu_custom_battle_end|^^^^^^Die Schlacht ist vorüber. {s1} Deine Seite tötete {reg5} Feinde und verlor {reg6} Truppen im Laufe des Gefechts.^Du selbst hast {reg7} Gegner im Kampf erschlagen.
 mno_replay|Dieses Gefecht noch einmal spielen.
-mno_continue_dot|Fortsetzen.
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+mno_continue_dot|Fortsetzen
+menu_custom_battle_durin_end|^^^^^^Es war ein beachtenswerter letzter Kampf, aber zum Scheitern verurteilt.^^ Du und deine Kampfgefährten erschlugt {reg5} Feinde.^Du selbst  erschlugst {reg7} Feinde in diesem Kampf.
 mno_replay_cbd|Dieses Gefecht noch einmal spielen.
 mno_continue_dot_cbd|Fortsetzen.
 mno_dot_go_back|. Zurück
@@ -49,7 +49,7 @@ menu_start_good|^^^^^^^^^^Wählt Eure Art:
 mno_start_ma|MENSCH
 mno_start_el|ELB
 mno_start_dw|ZWERG
-mno_go_back|Zurück.
+mno_go_back|Zurück
 menu_start_evil|^^^^^^^^^^Wem dienst du?
 mno_start_eye|SAURON von Mordor, dem Herrn der Ringe
 mno_start_hand|SARUMAN von Isengart, der Weißen Hand
@@ -185,7 +185,7 @@ mno_end_game_bye|Leb wohl.
 menu_cattle_herd|Du begegnest einigen Leuten.
 mno_cattle_drive_away|Befehle ihnen, dir zu folgen.
 mno_cattle_stop|Bringe sie zum Halt.
-mno_leave|Verlassen.
+mno_leave|Verlassen
 menu_simple_encounter|^^^^^{s2}^Du hast {reg22} einsatzfähige Truppen gegen ihre {reg11}.^^Die Schlacht findet {s3}{s4} statt.^^Deine Befehle?
 mno_encounter_attack|{reg21?Greift sie an:Bereitet euch vor, euch ihnen zu stellen}.
 mno_encounter_order_attack|Befehle deinen Truppen, sie ohne dich {reg21?anzugreifen:zu konfrontieren}.
@@ -243,7 +243,7 @@ menu_castle_outside|Du befindest dich außerhalb von {s2}.{s11} {s3} {s4}
 mno_moria_enter|Kehre durch den geheimen Eingang in die Haupthalle Morias zurück
 mno_moria_enter_door|Betrete Moria.
 mno_castle_start_siege|Belagere die {reg6?Stadt:Feste}.
-mno_castle_leave|Verlassen.
+mno_castle_leave|Verlassen
 menu_castle_besiege|Du belagerst {s1}. {s2} {s3}
 mno_siege_request_meeting|Verlange ein Treffen mit dem Befehlshaber der Feste.
 mno_wait_24_hours|Warte bis morgen.

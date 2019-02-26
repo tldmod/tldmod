@@ -40,8 +40,8 @@ trp_farmer|农民
 trp_farmer_pl|农民
 trp_townsman|市民
 trp_townsman_pl|市民
-trp_watchman|市民
-trp_watchman_pl|市民
+trp_watchman|女市民
+trp_watchman_pl|女市民
 trp_woodmen_youth|林地人
 trp_woodmen_youth_pl|林地人
 trp_woodmen_forester|林地人森林行者
@@ -69,7 +69,7 @@ trp_beorning_tolltacker_pl|波宁收税者
 trp_beorning_sentinel|波宁守卫
 trp_beorning_sentinel_pl|波宁守卫
 trp_beorning_warden_of_the_ford|波宁渡口守护者
-trp_beorning_warden_of_the_ford_pl|波宁浅滩守护者
+trp_beorning_warden_of_the_ford_pl|波宁渡口守护者
 trp_beorning_carrock_lookout|波宁卡洛克哨兵
 trp_beorning_carrock_lookout_pl|波宁卡洛克哨兵
 trp_beorning_carrock_fighter|波宁卡洛克斗士
@@ -92,8 +92,8 @@ trp_dale_warrior|河谷镇剑士
 trp_dale_warrior_pl|河谷镇剑士
 trp_dale_veteran_warrior|河谷镇军士
 trp_dale_veteran_warrior_pl|河谷镇军士
-; trp_dale_marchwarden|Hearthman of Dale
-; trp_dale_marchwarden_pl|Hearthmen of Dale
+trp_dale_marchwarden|河谷镇侍卫
+trp_dale_marchwarden_pl|河谷镇侍卫
 trp_dale_pikeman|河谷镇长枪手
 trp_dale_pikeman_pl|河谷镇长枪手
 trp_dale_billman|河谷镇长柄锲手
@@ -426,8 +426,8 @@ trp_i6_footman_guard_of_rohan|洛汗先王佛卡温护卫
 trp_i6_footman_guard_of_rohan_pl|洛汗先王佛卡温护卫
 trp_i6_frealaf_raider|先王佛瑞拉夫掠夺者
 trp_i6_frealaf_raider_pl|先王佛瑞拉夫掠夺者
-; trp_i5_raider_of_rohan|Raider of Rohan
-; trp_i5_raider_of_rohan_pl|Raiders of Rohan
+trp_i5_raider_of_rohan|洛汗掠夺者
+trp_i5_raider_of_rohan_pl|洛汗掠夺者
 trp_i6_warden_of_methuseld|金殿守护者
 trp_i6_warden_of_methuseld_pl|金殿守护者
 trp_ac3_skirmisher_of_rohan|洛汗散兵
@@ -456,8 +456,8 @@ trp_c5_elite_rider_of_rohan|洛汗精英骑兵
 trp_c5_elite_rider_of_rohan_pl|洛汗精英骑兵
 trp_c6_rider_guard_of_rohan|洛汗先王伊欧护卫
 trp_c6_rider_guard_of_rohan_pl|洛汗先王伊欧护卫
-; trp_i6_2h_guard_of_rohan|Helm Guard of Rohan
-; trp_i6_2h_guard_of_rohan_pl|Helm Guards of Rohan
+trp_i6_2h_guard_of_rohan|洛汗国王侍卫
+trp_i6_2h_guard_of_rohan_pl|洛汗国王侍卫
 trp_dismounted_veteran_skirmisher_of_rohan|洛汗资深散兵
 trp_dismounted_veteran_skirmisher_of_rohan_pl|洛汗资深散兵
 trp_dismounted_elite_skirmisher_of_rohan|洛汗精英散兵
@@ -560,10 +560,10 @@ trp_i1_corsair_youth|昂巴水手
 trp_i1_corsair_youth_pl|昂巴水手
 trp_i2_corsair_warrior|昂巴战士
 trp_i2_corsair_warrior_pl|昂巴战士
-; trp_i3_corsair_spearman|Spearman of Umbar
-; trp_i3_corsair_spearman_pl|Spearmen of Umbar
-; trp_i4_corsair_raider|Corsair Raider
-; trp_i4_corsair_raider_pl|Corsair Raiders
+trp_i3_corsair_spearman|昂巴标枪手
+trp_i3_corsair_spearman_pl|昂巴标枪手
+trp_i4_corsair_raider|海盗掠夺者
+trp_i4_corsair_raider_pl|海盗掠夺者
 trp_i5_corsair_night_raider|海盗夜袭者
 trp_i5_corsair_night_raider_pl|海盗夜袭者
 trp_a2_corsair_marine|昂巴水兵
@@ -584,12 +584,12 @@ trp_a4_corsair_assassin|海盗刺杀者
 trp_a4_corsair_assassin_pl|海盗刺杀者
 trp_a5_corsair_master_assassin|海盗刺杀者
 trp_a5_corsair_master_assassin_pl|海盗刺杀者
-; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
-; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
-; trp_i5_corsair_master_spearman|Spearmaster of Umbar
-; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
-; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
-; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
+trp_i4_corsair_veteran_spearman|昂巴资深标枪手
+trp_i4_corsair_veteran_spearman_pl|昂巴资深标枪手
+trp_i5_corsair_master_spearman|昂巴标枪大师
+trp_i5_corsair_master_spearman_pl|昂巴标枪大师
+trp_i5_corsair_master_pikeman|昂巴长柄枪大师
+trp_i5_corsair_master_pikeman_pl|昂巴长柄枪大师
 trp_orc_snaga_of_isengard|艾辛格半兽人奴兵
 trp_orc_snaga_of_isengard_pl|艾辛格半兽人奴兵
 trp_orc_of_isengard|艾辛格半兽人
@@ -676,8 +676,8 @@ trp_ent|树人
 trp_ent_pl|树人
 trp_orc_snaga_of_guldur|多尔哥多半兽人奴兵
 trp_orc_snaga_of_guldur_pl|多尔哥多半兽人奴兵
-; trp_orc_of_guldur|Orc Tracker of Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Guldur
+trp_orc_of_guldur|多尔哥多半兽人追踪者
+trp_orc_of_guldur_pl|多尔哥多半兽人追踪者
 trp_orc_snaga_of_mordor|魔多半兽人奴兵
 trp_orc_snaga_of_mordor_pl|魔多半兽人奴兵
 trp_orc_of_mordor|魔多半兽人
@@ -694,10 +694,10 @@ trp_morgul_orc|魔窟半兽人
 trp_morgul_orc_pl|魔窟半兽人
 trp_fell_morgul_orc|魔窟暴虐半兽人
 trp_fell_morgul_orc_pl|魔窟暴虐半兽人
-; trp_orc_tracker_of_mordor|Large Orc Tracker of Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Guldur
+trp_orc_tracker_of_mordor|多尔哥多大型半兽人追踪者
+trp_orc_tracker_of_mordor_pl|多尔哥多大型半兽人追踪者
+trp_fell_orc_tracker_of_mordor|多尔哥多暴虐半兽人追踪者
+trp_fell_orc_tracker_of_mordor_pl|多尔哥多暴虐半兽人追踪者
 trp_orc_archer_of_mordor|魔多半兽人射手
 trp_orc_archer_of_mordor_pl|魔多半兽人射手
 trp_large_orc_archer_of_mordor|魔多大型半兽人射手
@@ -988,7 +988,7 @@ trp_merry_notmet|半身人
 trp_pippin|皮平
 trp_merry|梅里
 trp_knight_1_1|无畏者安格柏
-; trp_knight_1_2|Húrin of the Keys
+trp_knight_1_2|携匙者胡林
 trp_knight_1_3|印拉希尔亲王
 trp_knight_1_4|欧萨里昂
 trp_knight_1_5|度因海尔
@@ -1242,7 +1242,7 @@ trp_barman_dale_pl|城堡
 trp_barman_esgaroth|酒店老板
 trp_barman_esgaroth_pl|大厅
 trp_barman_erebor|酒店老板
-; trp_barman_erebor_pl|the Great Chamber of Thrór
+trp_barman_erebor_pl|瑟瑞尔大殿
 trp_barman_dolguldur|酒店老板
 trp_barman_dolguldur_pl|城堡
 trp_merchant_mtirith|物资官
@@ -1347,7 +1347,7 @@ trp_merchant_gundabad|物资官
 trp_merchant_gundabad_pl|后勤营地
 trp_merchant_ironhill|物资官
 trp_merchant_ironhill_pl|矮人补给站
-; trp_town_50_horse_merchant|Gobrip Yellowtooth
+trp_town_50_horse_merchant|黄牙格布里普
 trp_town_50_horse_merchant_pl|狼穴和补给
 trp_merchant_calembel|物资官
 trp_merchant_calembel_pl|马厩和仓库
@@ -1469,7 +1469,7 @@ trp_elder_guldur_ac|多尔哥多营地酋长
 trp_elder_guldur_ac_pl|营地
 trp_elder_dwarf_ac|矮人营长
 trp_elder_dwarf_ac_pl|营地
-; trp_village_1_elder|Lord of the Lash
+trp_village_1_elder|皮鞭领主
 trp_village_1_elder_pl|洞窟
 trp_tutorial_chest_1|近战武器箱
 trp_tutorial_chest_2|远程武器箱
@@ -1569,7 +1569,7 @@ trp_minas_tirith_healer|洛瑞丝
 trp_edoras_healer|治疗者芙蕾雅
 trp_isengard_healer|修补者努高尔
 trp_guldur_healer|妖术师摩恩高尔
-; trp_gundabad_healer|Lurgakh Third Eye
+trp_gundabad_healer|三眼鲁加克
 trp_mirkwood_healer|轻触者克维尔
 trp_hungry_uruk|饥饿的强兽人
 trp_hungry_orc|饥饿的兽人

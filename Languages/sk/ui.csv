@@ -1,7 +1,7 @@
 ui_at_learning_limit|(na hranici pre túto rasu)
 ui_not_enough_skill_points_to_learn|(nedostatok bodov schopnosti)
 ui_not_enough_attributetype_to_learn_this_skill|(nedostatok %s pre túto schopnosť)
-ui_explanation_agility|Obratnosť: Každý bod ti dá päť bodov zbraní a zvyšuje rychlosť zbrane o 0,5%. Následujúce schopnosti nemôžu byť zvýšené nad 1/3 Obratnosti: Majter zbrane, Štít, Atletika, Jazdectvo, Streľba zo sedla, Koristenie
+ui_explanation_agility|Obratnosť: Každý bod ti dá päť bodov zbraní a zvyšuje rychlosť zbrane o 0,5%. Následujúce schopnosti nemôžu byť zvýšené nad 1/3 Obratnosti: Majter zbrane, Štít, Atletika, Jazdectvo, Streľba zo sedla, Koristenie
 ui_retreated_battle|%s zbehlo
 ui_riding_skill_not_adequate_to_mount|(Jazdecká schopnosť príliš nízka)
 ui_camp|Činnosti
@@ -33,7 +33,7 @@ ui_horse_received_number_damage|Zviera utrpelo %d poškodenie.
 ui_horse_fell_dead|Jazdecké zviera zomrelo...
 ui_horse_crippled|Jazdecké zviera zmrzačené...
 ui_you_got_value|%s získané.
-ui_has_deserted_the_party|opustil družinu.
+ui_has_deserted_the_party|opustil/a družinu.
 ui_have_deserted_the_party|opustili družinu.
 ui_loading_textures|Nahrávam textury (buď trpezlivý)...
 ui_order_hold_fire_toggle|Nestrieľajte/Strieľajte podľa vlastného uváženia (prepnúť)
@@ -46,8 +46,8 @@ ui_value_denars|%d Bodov Z.
 ui_cannot_be_used_on_horseback|Nemožné použiť v sedle
 ui_upgrade_to_value|Vylepšiť na %s
 ui_notification_cant_upgrade|(Nemožné povyšovať jednotky predané do inej skupiny)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch (Unused)
+ui_lance_control|Ovladateľnosť jazdeckej kopije
+ui_manual_easy|Manuálny (ľahký)
+ui_manual_hard|Manuálny (ťažkých)
+ui_campaign_ai|Umelá inteligencia behom kampane (Nepoužité):
+ui_crouch|Prikrčenie sa (použité)

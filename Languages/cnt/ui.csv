@@ -46,3 +46,8 @@ ui_value_denars|%d 資源數量.
 ui_cannot_be_used_on_horseback|不能在馬背上使用
 ui_upgrade_to_value|升級到 %s
 ui_notification_cant_upgrade|(費用不足無法升級)
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)

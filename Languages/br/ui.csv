@@ -1,5 +1,5 @@
 ; ui_at_learning_limit|(at learning limit for this race)
-; ui_not_enough_skill_points_to_learn|(not enough skill points to learn)
+ui_not_enough_skill_points_to_learn|(ket trawalc'h a boentoù barregezh evit deskiñ)
 ; ui_not_enough_attributetype_to_learn_this_skill|(not enough %s to learn this skill)
 ; ui_explanation_agility|Agility: Each point gives five weapon points and increases weapon speed by 0.5%. The following skills can not be developed beyond 1/3 of Agility: weapon-master, Shield, Athletics, Riding, Mounted archery, Looting.
 ; ui_retreated_battle|%s has been routed.
@@ -20,7 +20,7 @@ ui_merchant_pay_whatever|Nann, n'em eus ezhomm netra a gement-se, dalc'hit ganeo
 ; ui_notification_payment_value|Consuming %s
 ; ui_notification_payment_receive_value|Gaining %s
 ; ui_weekly_cost_value|Upkeep: %s
-ui_sell|Rei
+ui_sell|Reiñ
 ; ui_hire|Enlist
 ; ui_notification_cant_hire|(not enough R.P. to enlist)
 ; ui_joining_cost_weekly_wage|Enlist: %d Res.Pts.  --  Upkeep: %d Res.Pts.
@@ -41,8 +41,13 @@ ui_sell|Rei
 ; ui_mount_horses_e_|%s, Mount!
 ; ui_hold_fire_e_|%s, Don't shoot!
 ; ui_fire_at_will_e_|%s, Shoot at Will!
-; ui_recent_messages|Last Msgs
-; ui_value_denars|%d Resource Pts.
-; ui_cannot_be_used_on_horseback|Cannot be used while mounted
-; ui_upgrade_to_value| Upgrade to %s
-; ui_notification_cant_upgrade|(Can't upgrade while giving troops)
+ui_recent_messages|Gerigoù dwzhñ
+ui_value_denars|%d a boentoù-mammenn.
+ui_cannot_be_used_on_horseback|N'hall ket bezañ implijet pa vez savet
+ui_upgrade_to_value|Gwellaat e %s
+ui_notification_cant_upgrade|(N'heller ket gwellaat keit ha ro tropelladoù)
+; ui_lance_control|Lance Control:
+; ui_manual_easy|Manual (Easy)
+; ui_manual_hard|Manual (Hard)
+; ui_campaign_ai|Campaign AI (Unused):
+; ui_crouch|Crouch (Unused)
