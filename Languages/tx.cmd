@@ -2,11 +2,6 @@ MODE CON: COLS=110
 @echo off && title Updating translations from Transifex... && set path=%cd%/.tx
 :up
 
-:: the italian ui.csv file has manual additions from the M&B third-party translation project
-:: don't replace it, or entries will be lost
-::@move it\ui.csv it\ui.csv_bak
-
-
 ::convert everything to Joomla INI format
 luajit tx.lua convert
 
@@ -25,9 +20,10 @@ tx pull -a -f --skip --minimum-perc=40 --mode=reviewer
 luajit tx.lua revert
 
 :: the italian ui.csv file has manual additions from the M&B third-party translation project
-:: don't replace it, or entries will be lost
-::del   it\ui.csv
-::@move it\ui.csv_bak it\ui.csv
+:: don't replace it, or entries will be lost; instead we append the result to it at the end
+copy    it\ui.csv                 it\ui_transifex.csv           /y
+copy /b it\ui_native_template.csv+it\ui_transifex.csv it\ui.csv /y
+del     it\ui_transifex.csv
 
 pause
 cls && goto :up

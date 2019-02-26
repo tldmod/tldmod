@@ -77,11 +77,11 @@ qst_deliver_gift|从{s2}将{s1}的{s4}带给{s3}
 qst_deliver_gift_text|你已经请求了从{s2}将{s1}的{s4}带给{s3}。
 qst_ring_hunters|魔戒猎手
 qst_ring_hunters2|魔戒猎手-任务完成
-; qst_deliver_message_hobbit|Concerning Hobbits
+qst_deliver_message_hobbit|担心的霍比特人
 qst_blank_quest_01|抵御难民
 qst_blank_quest_02|追杀难民
 qst_blank_quest_03|海战
-qst_blank_quest_04|杀死{s35} {s36}
+qst_blank_quest_04|消灭{s35} {s6} {s7}
 qst_blank_quest_05|击杀{s35} {s36}部队
 
 
@@ -93,7 +93,7 @@ qst_blank_quest_05|击杀{s35} {s36}部队
 
 
 
-; qst_blank_quest_16|Reinforce Center
+qst_blank_quest_16|加强中心
 qst_blank_quest_17|在战斗中击杀{reg22} {s6} 
 
 

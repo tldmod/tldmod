@@ -4,10 +4,10 @@ skl_leadership|统御
 skl_leadership_desc|每点增加部队命令上限5人，提高部队士气，减少部队开销和工资5%%。(领袖技能)
 skl_prisoner_management|俘虏管理
 skl_prisoner_management_desc|每点增加俘虏上限%d。(领袖技能)
-; skl_persuasion|Wildcraft
-; skl_persuasion_desc|The ability to survive in the wilderness and bend it to your will. This skill affects the party's ability to hide from the enemy, and the party's speed while in wooded terrain. (Party skill)
-; skl_engineer|-----
-; skl_engineer_desc|-----
+skl_persuasion|自然力
+skl_persuasion_desc|助于在野外生存和掌控自然的能力。该能力会影响部队躲避敌人的能力和在有森林覆盖的地区移动的速度。（部队能力）
+skl_engineer|-----
+skl_engineer_desc|-----
 skl_first_aid|急救
 skl_first_aid_desc|每点返还给英雄们5%%在上次战斗中损失的生命值。(队伍技能)
 skl_surgery|手术

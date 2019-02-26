@@ -1,146 +1,146 @@
-; pt_rescued_prisoners|Rescued Prisoners
-; pt_enemy|Enemy
-; pt_hero_party|Hero Party
-; pt_cattle_herd|Cattle Herd
-; pt_ruins|Ruins
-; pt_legendary_place|Legendary Place
-; pt_mound|Hero Mound
-; pt_pyre|Hero Pyre
-; pt_wild_troll|Wild Troll
-; pt_raging_trolls|Raging Trolls
-pt_looters|部落獸人
-; pt_forest_bandits|Orc Stragglers
-; pt_mountain_bandits|Wild Goblins
-; pt_steppe_bandits|Dunland Outcasts
-; pt_sea_raiders|Corsair Renegades
-pt_deserters|逃兵
-; pt_merchant_caravan|Merchant Caravan
-; pt_troublesome_bandits|Troublesome Goblins
-; pt_fangorn_orcs|Tree-chopping Orcs
-; pt_village_farmers|Village Farmers
-; pt_spy_partners|Suspicious Travellers
-; pt_spy_partners_evil|Suspicious Travellers
-; pt_runaway_serfs|Runaway Slaves
-; pt_spy|Lone Rider
-; pt_spy_evil|Lone Rider
-; pt_sacrificed_messenger|Sacrificed Messenger
-; pt_gandalf|Lone Rider
-; pt_nazgul|Lone Rider
-; pt_gondor_scouts|Gondorian Scouts
-; pt_blackroot_auxila|Blackroot Auxilia
-; pt_lamedon_auxila|Lamedon Auxilia
-; pt_lossarnach_auxila|Lossarnach Auxilia
-; pt_pinnath_gelin_auxila|Pinnath Gelin Auxilia
-; pt_ranger_scouts|Ranger Scouts
-; pt_rohan_scouts|Rohirrim Scouts
-; pt_lorien_scouts|Lothlorien Scouts
-; pt_woodelf_scouts|Mirkwood Elven Scouts
-; pt_imladris_scouts|Dunedain Scouts
-; pt_dale_scouts|Dale Scouts
-; pt_esgaroth_scouts|Esgaroth Scouts
-; pt_dwarf_scouts|Dwarven Lookouts
-; pt_beorn_scouts|Beorning Scouts
-; pt_woodmen_scouts|Woodmen Scouts
-; pt_mordor_scouts|Mordor Scouts
-; pt_morgul_scouts|Morgul Scouts
-; pt_isengard_scouts|Isengard Scouts
-; pt_isengard_scouts_warg|Isengard Warg Riders
-; pt_harad_scouts|Haradrim Scouts
-; pt_dunland_scouts|Dunlending Scouts
-; pt_umbar_scouts|Corsair Scouts
-; pt_khand_scouts|Easterling Scouts
-; pt_moria_scouts|Moria Scouts
-; pt_guldur_scouts|Dol Guldur Scouts
-; pt_gundabad_scouts|Gundabad Scouts
-; pt_rhun_scouts|Rhun Scouts
-; pt_gondor_raiders|Gondor Foragers
-; pt_rohan_raiders|Rohirrim Foragers
-; pt_imladris_raiders|Rivendell Foragers
-; pt_lorien_raiders|Lothlorien Foragers
-; pt_woodelf_raiders|Mirkwood Foragers
-; pt_dale_raiders|Dale Foragers
-; pt_dwarf_raiders|Dwarven Foragers
-; pt_ranger_raiders|Ranger Raiders
-; pt_morgul_raiders|Morgul Raiders
-; pt_mordor_raiders|Mordor Raiders
-; pt_isengard_raiders|Isengard Raiders
-; pt_dunland_raiders|Dunlending Raiders
-; pt_harad_raiders|Haradrim Raiders
-; pt_khand_raiders|Khand Raiders
-; pt_umbar_raiders|Umbar Raiders
-; pt_moria_raiders|Moria Raiders
-; pt_guldur_raiders|Dol Guldur Raiders
-; pt_gundabad_raiders|Gundabad Raiders
-; pt_rhun_raiders|Rhun Raiders
-; pt_gondor_patrol|Gondor Patrol
-; pt_rohan_patrol|Rohirrim Patrol
-; pt_imladris_patrol|Dunedain Patrol
-; pt_lorien_patrol|Lothlorien Patrol
-; pt_woodelf_patrol|Mirkwood Patrol
-; pt_dale_patrol|Dale Patrol
-; pt_esgaroth_patrol|Esgaroth Patrol
-; pt_dwarf_patrol|Dwarven Patrol
-; pt_ranger_patrol|Ranger Patrol
-; pt_amroth_patrol|Dol Amroth Patrol
-; pt_pelargir_patrol|Pelargir Patrol
-; pt_lossarnach_patrol|Lossarnach Patrol
-; pt_brv_patrol|Blackroot Patrol
-; pt_pinnath_patrol|Pinnath Patrol
-; pt_lamedon_patrol|Lamedon Patrol
-; pt_mordor_war_party|Mordor War Party
-; pt_isengard_war_party|Isengard War Party
-; pt_harad_war_party|Harad War Party
-; pt_dunland_war_party|Dunlending Warband
-; pt_khand_war_party|Variag War Party
-; pt_moria_war_party|Moria War Party
-; pt_dale_war_party|Dale War Party
-; pt_rhun_war_party|Rhun War Party
-; pt_gondor_company|Minas Tirith Patrol
-; pt_rohan_company|Rohan Company
-; pt_imladris_company|Rivendell Company
-; pt_lorien_company|Lothlorien Company
-; pt_woodelf_company|Mirkwood Company
-; pt_dale_company|Dale Company
-; pt_dwarf_company|Dwarven Company
-; pt_gondor_elite_company|Gondor Elite Company
-; pt_rohan_elite_company|Rohan Elite Company
-; pt_imladris_elite_company|Rivendell Elite Company
-; pt_lorien_elite_company|Lothlorien Elite Company
-; pt_woodelf_elite_company|Mirkwood Elite Company
-; pt_dale_elite_company|Dale Elite Company
-; pt_dwarf_elite_company|Dwarven Elite Company
-; pt_gondor_caravan|Gondor Caravan
-; pt_rohan_caravan|Rohan Caravan
-; pt_imladris_caravan|Rivendell Caravan
-; pt_lorien_caravan|Lothlorien Caravan
-; pt_woodelf_caravan|Mirkwood Caravan
-; pt_dale_caravan|Dale Caravan
-; pt_dwarf_caravan|Dwarven Caravan
-; pt_mordor_caravan|Mordor Supply Train
-; pt_isengard_caravan|Isengard Supply Train
-; pt_gunda_caravan|Gundabad Supply Train
-; pt_gondor_p_train|Gondor Prisoner Train
-; pt_rohan_p_train|Rohan Prisoner Train
-; pt_imladris_p_train|Rivendell Prisoner Train
-; pt_lorien_p_train|Lothlorien Prisoner Train
-; pt_woodelf_p_train|Mirkwood Prisoner Train
-; pt_dale_p_train|Dale Prisoner Train
-; pt_dwarf_p_train|Dwarven Prisoner Train
-; pt_mordor_p_train|Mordor Prisoner Train
-; pt_isengard_p_train|Isengard Prisoner Train
-; pt_kingdom_hero_party|War Party
-; pt_caravan_survivors|Caravan Survivors
-; pt_routed_allies|Routed Allies
-; pt_routed_enemies|Routed Enemies
-; pt_legion_minas_morgul|Legion of Minas Morgul
-; pt_legion_udun|Legion of Udun
-; pt_legion_gorgoroth|Legion of Gorgoroth
-; pt_legion_barad_dur|Legion of Barad-Dur
-; pt_beorn_messenger|Beorning Messenger
-; pt_village|Village
-pt_ring_hunters|魔戒猎手
-; pt_scout_camp_small|Scout Camp
-; pt_scout_camp_large|Fortified Scout Camp
-; pt_beorn_caravan|Woodsmen Caravan
-; pt_orc_horde|Orc Horde
-; pt_vet_archer|Veteran Archer
+pt_rescued_prisoners|獲 救 的 囚 犯 
+pt_enemy|敵 人 
+pt_hero_party|英 雄 部 隊 
+pt_cattle_herd|牛 群 
+pt_ruins|廢 墟 
+pt_legendary_place|傳 說 中 的 地 方 
+pt_mound|英 雄 塚 
+pt_pyre|英 雄 火 葬 堆 
+pt_wild_troll|野 生 食 人 妖
+pt_raging_trolls|憤 怒 的 食 人 妖
+pt_looters|部 落 半 獸 人 
+pt_forest_bandits|半 獸 人 殘 兵 
+pt_mountain_bandits|野 生 哥 布 林 
+pt_steppe_bandits|登 蘭 德 放 逐 者 
+pt_sea_raiders|昂 巴 海 盜 叛 徒 
+pt_deserters|逃 兵 
+pt_merchant_caravan|商 隊 
+pt_troublesome_bandits|棘 手 的 哥 布 林 
+pt_fangorn_orcs|半 獸 人 伐 木 隊 
+pt_village_farmers|農 夫 
+pt_spy_partners|可 疑 的 旅 人 
+pt_spy_partners_evil|可 疑 的 旅 人 
+pt_runaway_serfs|逃 走 的 奴 隸 
+pt_spy|孤 獨 騎 手
+pt_spy_evil|孤 獨 騎 手
+pt_sacrificed_messenger|犧 牲 的 信 差 
+pt_gandalf|孤 獨 騎 手
+pt_nazgul|孤 獨 騎 手
+pt_gondor_scouts|剛 鐸 偵 察 隊 
+pt_blackroot_auxila|墨 松 德 外 族 兵 團 
+pt_lamedon_auxila|拉 密 頓 外 族 兵 團 
+pt_lossarnach_auxila|羅 蕯 那 奇 外 族 兵 團 
+pt_pinnath_gelin_auxila|皮 那 斯 傑 林 外 族 兵 團 
+pt_ranger_scouts|哈 拉 德 斥 候 
+pt_rohan_scouts|洛 汗 斥 候 
+pt_lorien_scouts|羅 斯 洛 立 安 斥 候 
+pt_woodelf_scouts|幽 暗 密 林 精 靈 斥 候 
+pt_imladris_scouts|登 丹 斥 侯 
+pt_dale_scouts|河 谷 鎮 斥 候 
+pt_esgaroth_scouts|長 湖 鎮 斥 候 
+pt_dwarf_scouts|矮 人 斥 候 
+pt_beorn_scouts|比 翁 斥 候 
+pt_woodmen_scouts|山 林 人 斥 候 
+pt_mordor_scouts|魔 多 斥 候 
+pt_morgul_scouts|魔 窟 斥 候 
+pt_isengard_scouts|艾 辛 格 斥 候 
+pt_isengard_scouts_warg|艾 辛 格 座 狼 騎 兵 
+pt_harad_scouts|哈 拉 德 斥 候 
+pt_dunland_scouts|登 丹 斥 候 
+pt_umbar_scouts|海 盜 斥 候 
+pt_khand_scouts|東 方 斥 候 
+pt_moria_scouts|摩 瑞 亞 斥 候 
+pt_guldur_scouts|多 爾 哥 多 斥 候 
+pt_gundabad_scouts|剛 達 巴 斥 候 
+pt_rhun_scouts|盧 恩 斥 候 
+pt_gondor_raiders|剛 鐸 徵 糧 隊 
+pt_rohan_raiders|洛 汗 徵 糧 隊 
+pt_imladris_raiders|瑞 文 戴 爾 徵 糧 隊 
+pt_lorien_raiders|羅 斯 洛 立 安 徵 糧 隊 
+pt_woodelf_raiders|幽 暗 密 林 徵 糧 隊 
+pt_dale_raiders|河 谷 鎮 徵 糧 隊 
+pt_dwarf_raiders|矮 人 徵 糧 隊 
+pt_ranger_raiders|遊 俠 掠 奪 者 
+pt_morgul_raiders|魔 窟 掠 奪 者 
+pt_mordor_raiders|魔 多 掠 奪 者 
+pt_isengard_raiders|艾 辛 格 掠 奪 者 
+pt_dunland_raiders|登 蘭 德 掠 奪 者 
+pt_harad_raiders|哈 拉 德 掠 奪 者 
+pt_khand_raiders|侃 德 掠 奪 者 
+pt_umbar_raiders|昂 巴 掠 奪 者 
+pt_moria_raiders|摩 瑞 亞 掠 奪 者 
+pt_guldur_raiders|多 爾 哥 多 掠 奪 者 
+pt_gundabad_raiders|剛 達 巴 掠 奪 者 
+pt_rhun_raiders|盧 恩 掠 奪 者 
+pt_gondor_patrol|剛 鐸 巡 邏 隊 
+pt_rohan_patrol|洛 汗 巡 邏 隊 
+pt_imladris_patrol|登 丹 巡 邏 隊 
+pt_lorien_patrol|羅 斯 洛 立 安 巡 邏 隊 
+pt_woodelf_patrol|幽 暗 密 林 巡 邏 隊 
+pt_dale_patrol|河 谷 鎮 巡 邏 隊 
+pt_esgaroth_patrol|長 湖 鎮 巡 邏 隊 
+pt_dwarf_patrol|矮 人 巡 邏 隊 
+pt_ranger_patrol|遊 俠 巡 邏 隊 
+pt_amroth_patrol|多 爾 安 姆 羅 斯 巡 邏 隊 
+pt_pelargir_patrol|佩 拉 格 巡 邏 隊 
+pt_lossarnach_patrol|羅 蕯 那 奇 巡 邏 隊 
+pt_brv_patrol|墨 松 德 巡 邏 隊 
+pt_pinnath_patrol|皮 那 斯 傑 林 巡 邏 隊 
+pt_lamedon_patrol|拉 密 頓 巡 邏 隊 
+pt_mordor_war_party|魔 多 戰 隊 
+pt_isengard_war_party|艾 辛 格 戰 隊 
+pt_harad_war_party|哈 拉 德 戰 隊 
+pt_dunland_war_party|登 蘭 德 戰 隊 
+pt_khand_war_party|维 瑞 亞 戰 隊 
+pt_moria_war_party|摩 瑞 亞 戰 隊 
+pt_dale_war_party|河 谷 鎮 戰 隊 
+pt_rhun_war_party|盧 恩 戰 隊 
+pt_gondor_company|米 那 斯 提 力 斯 巡 邏 隊 
+pt_rohan_company|洛 汗 軍 團 
+pt_imladris_company|瑞 文 戴 爾 軍 團 
+pt_lorien_company|羅 斯 洛 立 安 軍 團 
+pt_woodelf_company|幽 暗 密 林 軍 團 
+pt_dale_company|河 谷 鎮 軍 團 
+pt_dwarf_company|矮 人 軍 團 
+pt_gondor_elite_company|剛 鐸 精 英 軍 團 
+pt_rohan_elite_company|洛 汗 精 英 軍 團 
+pt_imladris_elite_company|瑞 文 戴 爾 精 英 軍 團 
+pt_lorien_elite_company|羅 斯 洛 立 安 精 英 軍 團 
+pt_woodelf_elite_company|幽 暗 密 林 精 英 軍 團 
+pt_dale_elite_company|河 谷 鎮 精 英 軍 團 
+pt_dwarf_elite_company|矮 人 精 英 軍 團 
+pt_gondor_caravan|剛 鐸 商 隊 
+pt_rohan_caravan|洛 汗 商 隊 
+pt_imladris_caravan|瑞 文 戴 爾 商 隊 
+pt_lorien_caravan|羅 斯 洛 立 安 商 隊 
+pt_woodelf_caravan|幽 暗 密 林 商 隊 
+pt_dale_caravan|河 谷 鎮 商 隊 
+pt_dwarf_caravan|矮 人 商 隊 
+pt_mordor_caravan|魔 多 補 給 隊 
+pt_isengard_caravan|艾 辛 格 補 給 隊 
+pt_gunda_caravan|剛 達 巴 補 給 隊 
+pt_gondor_p_train|剛 鐸 俘 虜 押 送 隊 
+pt_rohan_p_train|洛 汗 俘 虜 押 送 隊 
+pt_imladris_p_train|瑞 文 戴 爾 俘 虜 押 送 隊 
+pt_lorien_p_train|羅 斯 洛 立 安 俘 虜 押 送 隊 
+pt_woodelf_p_train|幽 暗 密 林 俘 虜 押 送 隊 
+pt_dale_p_train|河 谷 鎮 俘 虜 押 送 隊 
+pt_dwarf_p_train|矮 人 俘 虜 押 送 隊 
+pt_mordor_p_train|魔 多 俘 虜 押 送 隊 
+pt_isengard_p_train|艾 辛 格 俘 虜 押 送 隊 
+pt_kingdom_hero_party|戰 隊 
+pt_caravan_survivors|商 隊 幸 存 者 
+pt_routed_allies|被 圍 住 的 盟 友 
+pt_routed_enemies|被 圍 住 的 敵 人 
+pt_legion_minas_morgul|米 那 斯 魔 窟 軍 團 
+pt_legion_udun|烏 頓 軍 團 
+pt_legion_gorgoroth|葛 哥 洛 斯 軍 團 
+pt_legion_barad_dur|巴 拉 多 軍 團 
+pt_beorn_messenger|比 翁 信 差
+pt_village|村 莊
+pt_ring_hunters|戒 指 獵 人
+pt_scout_camp_small|斥 候 營 地
+pt_scout_camp_large|加 強 斥 候 營 地
+pt_beorn_caravan|山 林 人 商 隊
+pt_orc_horde|半 獸 人 群
+pt_vet_archer|熟 練 弓 兵
