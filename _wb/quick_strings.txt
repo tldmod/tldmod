@@ -57,6 +57,7 @@ qstr_Days_Passed:_{reg0} Days_Passed:_{reg0}
 qstr_Difficulty:_{reg0}% Difficulty:_{reg0}%
 qstr_{reg3?+:}{reg0} {reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0} TOTAL_SCORE:_{reg0}
+qstr_swy_ui_opacity swy_ui_opacity
 qstr_______ ______
 qstr_A_peaceful_village_n A_peaceful_village_not_far_from_Westfold...
 qstr_The_War_is_upon_Roha The_War_is_upon_Rohan!
@@ -936,7 +937,6 @@ qstr_Who...dares...enter. Who...dares...enter...
 qstr_You_are_not_welcome_ You_are_not_welcome_here!
 qstr_Finally_I_found_you! Finally,_I_found_you!_Let's_get_out_of_here!
 qstr_You...are....ours... You...are....ours...
-qstr_swy_ui_opacity swy_ui_opacity
 qstr_Look_at_my_over_the_ Look_at_my_over-the-shoulder_shot,_{playername}!_I'm_so_beautiful_from_a_distance!
 qstr_You_wish_old_man_my_ You_wish,_old_man,_my_over-the-shoulder_view_is_much_prettier!
 qstr_You_should_really_se You_should_really_see_Steward_Denetor's_Facebook_photos,_he's_amazing!

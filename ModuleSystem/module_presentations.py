@@ -12,6 +12,8 @@ from module_items import *
 
 import string
 
+from module_info import wb_compile_switch as is_a_wb_cutscene
+
 ####################################################################################################################
 #  Each presentation record contains the following fields:
 #  1) Presentation id: used for referencing presentations in other files. The prefix prsnt_ is automatically added before each presentation id.
@@ -2712,10 +2714,10 @@ presentations = [
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
-        ] + (wb_compile_switch==1 and [
+        ] + (is_a_wb_cutscene==1 and [
         
         #swy-- transparent mask for the WB HP bar
-        (set_shader_param_float, "@swy_ui_opacity", 0.0),
+        (set_shader_param_float, "@swy_ui_opacity", 0),
         
         ] or []) + [
         
@@ -2793,7 +2795,7 @@ presentations = [
        [(presentation_set_duration, 999999),
         (set_fixed_point_multiplier, 1000),
         
-        ] + (wb_compile_switch==1 and [
+        ] + (is_a_wb_cutscene==1 and [
         
         #swy-- transparent mask for the WB HP bar
         (set_shader_param_float, "@swy_ui_opacity", 0),
