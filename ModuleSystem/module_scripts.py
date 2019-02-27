@@ -8513,7 +8513,7 @@ scripts = [
           (eq, ":besiege_mode", 0),
           (lt, ":reln_with_player", 0),
           (gt, ":reln_with_enemy", 0),
-          (party_get_slot, ":party_type", ":party_no"),
+          (party_get_slot, ":party_type", ":party_no", slot_party_type),
           #(eq, ":party_type", spt_kingdom_hero_party), #TLD: all parties can join
           (neq, ":party_type", spt_town), #...except towns
 
@@ -13750,7 +13750,18 @@ scripts = [
 	[(try_for_agents, ":agent_no"),
 		(agent_is_alive, ":agent_no"),
 		(agent_get_class, ":agent_class", ":agent_no"),
-		#(agent_get_troop_id, ":agent_troop", ":agent_no"),
+	
+	  ] + (is_a_wb_script==1 and [
+	   (agent_get_troop_id, ":agent_troop", ":agent_no"),
+       (try_begin), #Kham : horse archer siege fix?
+          (troop_is_guarantee_ranged, ":agent_troop"),
+          (troop_is_guarantee_horse, ":agent_troop"),
+          (troop_is_mounted, ":agent_troop"),
+          (assign, ":agent_class", grc_archers),
+          ## TODO proficiency check to make sure they're suited to ranged (not throwing)?
+       (try_end),
+      ] or []) + [
+
 		(eq, ":agent_class", grc_archers),
 		#       (agent_slot_eq, ":agent_no", slot_agent_is_not_reinforcement, 0),
 		(try_begin),
