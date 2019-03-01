@@ -1,4 +1,4 @@
-1618
+1619
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -621,6 +621,7 @@ qstr_Formula:_[_A:{reg67}_+ Formula:_[(A:{reg67}_+_B:{reg69}_-_C:{reg64})_*_D:_{
 qstr_Total:_{reg62} Total:_{reg62}
 qstr_lord_{reg1}:_{s1}_is_at lord_{reg1}:_{s1}_is_attacking_{s2}
 qstr_lord_{reg1}:_{s1}_NOT_a lord_{reg1}:_{s1}_NOT_attacking_{s2}
+qstr_{s2}_{reg3?was:is_ar {s2}_{reg3?was:is_around_{s5}.
 qstr_warp_array_created_a warp_array_created_at_{reg1}
 qstr_warp_temp_array_crea warp_temp_array_created_at_{reg1}
 qstr_{s0} {s0}

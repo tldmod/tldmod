@@ -3791,6 +3791,32 @@ scripts = [
           (set_result_string, "@+{reg1} to Party Morale"),
           (set_trigger_result, color_item_text_morale),
         (try_end),
+    ] + (is_a_wb_script==1 and [
+      (else_try),
+      	(this_or_next|is_between, ":item_no", "itm_dunland_javelin", "itm_arnor_helm_a"),
+      	(this_or_next|eq, ":item_no", "itm_orc_javelin"),
+      	(this_or_next|eq, ":item_no", "itm_orc_throwing_axes"),
+      	(this_or_next|eq, ":item_no", "itm_corsair_harpoon"),
+      	(this_or_next|eq, ":item_no", "itm_corsair_throwing_dagger"),
+      	(this_or_next|eq, ":item_no", "itm_dwarf_throwing_axe"),
+      	(this_or_next|eq, ":item_no", "itm_orc_throwing_axes_reward"),
+      	(eq, ":item_no", "itm_corsair_throwing_dagger_reward"),
+      	#(item_has_porperty, ":item_no", itp_type_thrown), #for some reason, this is not working???
+      	(item_get_speed_rating, reg55, ":item_no"),
+      	(item_get_missile_speed, reg56, ":item_no"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Throwing Speed: {reg55}"),(try_end),
+		(try_begin),(eq, ":extra_text_id", 1),(set_result_string, "@Missile Speed: {reg56}"),(try_end),
+		(set_trigger_result, color_item_text_bonus),
+      (else_try),
+      	(this_or_next|is_between, ":item_no", "itm_short_bow", "itm_dunland_javelin"),
+      	(this_or_next|item_has_property, ":item_no", itp_type_bow),
+      	(item_has_property, ":item_no", itp_type_crossbow),
+      	#(neg|item_has_property, ":item_no", itp_type_thrown), # For some reason, asking for itp_type_bow or crossbow, also shows for thrown and arrows???
+      	#(neg|item_has_property, ":item_no", itp_type_arrows),
+      	(item_get_speed_rating, reg55, ":item_no"),
+		(try_begin),(eq, ":extra_text_id", 0),(set_result_string, "@Draw Speed: {reg55}"),(try_end),
+		(set_trigger_result, color_item_text_bonus),
+	] or []) + [
       (try_end),
 ]),
 
@@ -25295,7 +25321,97 @@ command_cursor_scripts = [
 
 ]),
 
+#script_guild_master_update_troop_location_notes
+# INPUT: troop_no
+("guild_master_update_troop_location_notes",
+    [(store_script_param, ":troop_no", 1),
+     (store_script_param, ":see_or_hear", 2),
+     (call_script, "script_guild_master_get_information_about_troops_position", ":troop_no", 1),
+     (try_begin),
+       (neq, reg0, 0),
+       (troop_get_type, reg1, ":troop_no"),
+       (try_begin),
+         (gt, reg1, 1), #MV: non-humans are male
+         (assign, reg1, 0),
+       (try_end),
+       (try_begin),
+         (eq, ":see_or_hear", 0),
+         (add_troop_note_from_sreg, ":troop_no", 2, "@The last time you saw {reg1?her:him}, {s1}", 1),
+       (else_try),
+         (add_troop_note_from_sreg, ":troop_no", 2, "@The last time you heard about {reg1?her:him}, {s1}", 1),
+       (try_end),
+     (try_end),
+     
+     ] + (is_a_wb_script==1 and [
+     
+     #swy-- this is needed to show by default the note entries on Warband...
+     (troop_set_note_available, ":troop_no", 1),
 
+     ] or [])
+),
+
+
+# script_guild_master_get_information_about_troops_position
+# Input: arg1 = troop_no, arg2 = time (0 if present tense, 1 if past tense)
+# Output: s1 = String, reg0 = knows-or-not
+("guild_master_get_information_about_troops_position",
+    [ (store_script_param_1, ":troop_no"),
+      (store_script_param_2, reg3),
+      (troop_get_type, reg4, ":troop_no"),
+      (try_begin),
+        (gt, reg4, 1), #MV: non-humans are male
+        (assign, reg4, 0),
+      (try_end),
+      (str_store_troop_name, s2, ":troop_no"),
+      
+      (assign, ":found", 0),
+      (troop_get_slot, ":center_no", ":troop_no", slot_troop_cur_center),
+      (troop_get_slot, ":party_no", ":troop_no", slot_troop_leaded_party),
+      (try_begin),
+        (gt, ":center_no", 0),
+        (is_between, ":center_no", centers_begin, centers_end),
+        (str_store_party_name_link, s3, ":center_no"),
+        (str_store_string, s1, "@{s2} {reg3?was:is currently} at {s3}."),
+        (assign, ":found", 1),
+      (else_try),
+        (gt, ":party_no", 0),
+        (call_script, "script_get_troop_attached_party", ":troop_no"),
+        (assign, ":center_no", reg0),
+        (is_between, ":center_no", centers_begin, centers_end),
+        (str_store_party_name_link, s3, ":center_no"),
+        (str_store_string, s1, "@{s2} {reg3?was:is currently} at {s3}."),
+        (assign, ":found", 1),
+      (else_try),
+      	(gt, ":party_no", 0),
+      	(party_is_active, ":party_no"),
+      	(call_script, "script_get_region_of_party", ":party_no"),
+      	(assign, ":region", reg1),
+      	(store_add, reg2, str_shortname_region_begin , ":region"),
+        (str_store_string,s5,reg2),
+        (str_store_string, s1, "@{s2} {reg3?was:is around {s5}."),
+        (assign, ":found", 1),
+      (try_end),
+      (try_begin),
+        (eq, ":found", 0),
+        (str_store_string, s1, "@{reg3?{s2}'s location was unknown:I don't know where {s2} is}."),
+      (try_end),
+      (assign, reg0, ":found"),
+]),
+
+#script_encounter_agent_draw_weapon
+#input: none, based on $g_talk_agent
+#output: none, agent wields first available weapon to show aggression
+("encounter_agent_draw_weapon",
+[
+  ] + (is_a_wb_script==1 and [
+    (store_conversation_agent, "$g_talk_agent"),
+    (try_begin),
+      (agent_get_item_slot, ":item_no", "$g_talk_agent", ek_item_0),
+      (gt, ":item_no", 0),
+      (agent_set_wielded_item, "$g_talk_agent", ":item_no"),
+    (try_end),
+  ] or []) + [
+]),
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

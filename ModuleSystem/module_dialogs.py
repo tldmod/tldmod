@@ -651,7 +651,7 @@ dialogs = [
   (try_end),
   (call_script, "script_str_store_party_battle_cry_in_s4", "$g_encountered_party", ":defending" )]],
 
-[anyone,"hostile_dialog", [], "{s4}", "close_window",[(call_script,"script_stand_back"),]],
+[anyone,"hostile_dialog", [(call_script, "script_encounter_agent_draw_weapon"),], "{s4}", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone|plyr,"start", [ (eq,"$talk_context",tc_make_enemy_join_player),
             (str_store_item_name, s4, "itm_angmar_whip_reward")],
@@ -10080,7 +10080,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"fugitive_1", [], "Nothing. Sorry to trouble you.", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone,"fugitive_2", [], "I do not know what you are talking about.\
- You must have confused me with someone else.", "fugitive_3",[]],
+ You must have confused me with someone else.", "fugitive_3",[(call_script, "script_encounter_agent_draw_weapon"),]],
 
 [anyone|plyr,"fugitive_3", [], "Then drop your sword. If you are innocent, you have nothing to fear.\
  We'll go now and talk to the guard captain to see who is confused.", "fugitive_4",[]],
@@ -11643,6 +11643,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"mayor_talk", [(store_partner_quest,reg2),(ge,reg2,0)],
 "About the task you gave me...", "merchant_quest_about_job",[]],
 
+[anyone|plyr,"mayor_talk", [], 
+"I want to know the location of someone.", "mayor_talk_ask_location",[]],
+
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 
 [anyone, "mayor_info_begin", [(str_store_party_name, s9, "$current_town")],
@@ -11652,10 +11655,9 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 [anyone|plyr,"mayor_info_talk",[(eq, "$mayor_info_lord_told",0)], "Who rules this town?", "mayor_info_lord",[]],
 [anyone, "mayor_info_lord", [(party_get_slot, ":town_lord","$current_town",slot_town_lord),(str_store_troop_name, s10, ":town_lord")],
 "Our lord is {s10}.", "mayor_info_talk",[(assign, "$mayor_info_lord_told",1)]],
-  
+
 [anyone|plyr,"mayor_info_talk",[], "That's all I need to know. Thanks.", "mayor_pretalk",[]],
   
-
 [anyone,"merchant_quest_about_job", [], "What about it?", "merchant_quest_about_job_2",[]],
 [anyone|plyr,"merchant_quest_about_job_2", [], "What if I can't finish it?", "merchant_quest_what_if_fail",[]],
 [anyone|plyr,"merchant_quest_about_job_2", [], "Well, I'm still working on it.", "merchant_quest_about_job_working",[]],
@@ -11672,6 +11674,26 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone,"merchant_quest_taken", [], "Excellent. I am counting on you then. Good luck.", "mayor_pretalk",[]],
 [anyone,"merchant_quest_stall", [], "Well, I'll see to find someone else. But tell me if you change your mind.", "mayor_pretalk",[]],
+
+[anyone,"mayor_talk_ask_location", [], "I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.", "mayor_talk_ask_location_2",[]],
+
+[anyone|plyr|repeat_for_troops,"mayor_talk_ask_location_2", [(store_repeat_object, ":troop_no"),
+                                                              (store_troop_faction, ":talk_faction", "$g_talk_troop"),
+                                                              (is_between, ":troop_no", heroes_begin, heroes_end),
+                                                              (troop_slot_eq, ":troop_no", slot_troop_occupation, slto_kingdom_hero),
+                                                              (store_troop_faction, ":faction_no", ":troop_no"),
+                                                              (eq, ":talk_faction", ":faction_no"),
+                                                              (str_store_troop_name, s1, ":troop_no")],
+"{s1}", "mayor_talk_ask_location_3",[(store_repeat_object, "$hero_requested_to_learn_location")]],
+
+[anyone|plyr,"mayor_talk_ask_location_2", [], "Never mind.", "mayor_pretalk",[]],
+
+[anyone,"mayor_talk_ask_location_3",
+   [ (call_script, "script_guild_master_update_troop_location_notes", "$hero_requested_to_learn_location", 1),
+     (call_script, "script_guild_master_get_information_about_troops_position", "$hero_requested_to_learn_location", 0)], 
+"{s1}", "mayor_pretalk",[]],
+  
+
 
 ###################################################################3
 # Random Merchant quests....
