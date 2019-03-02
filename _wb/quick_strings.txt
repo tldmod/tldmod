@@ -1,4 +1,4 @@
-1849
+1847
 qstr_Received_{reg0}_dama Received_{reg0}_damage.
 qstr_Siege_Weapon_damaged Siege_Weapon_damaged_{reg10}_agents
 qstr_Gate_is_breached! Gate_is_breached!
@@ -263,9 +263,7 @@ qstr_Less_Dunnish_upkeep Less_Dunnish_upkeep
 qstr_Less_Wargs_upkeep Less_Wargs_upkeep
 qstr_Light_Armor Light_Armor
 qstr_+{reg1}_to_Party_Mor +{reg1}_to_Party_Morale
-qstr_Throwing_Speed:_{reg Throwing_Speed:_{reg55}
-qstr_Missile_Speed:_{reg5 Missile_Speed:_{reg56}
-qstr_Draw_Speed:_{reg55} Draw_Speed:_{reg55}
+qstr_Shoot_Speed:_{reg55} Shoot_Speed:_{reg55}
 qstr_Do_you_want_to_disem Do_you_want_to_disembark?
 qstr_Move_here Move_here
 qstr_View_notes View_notes
