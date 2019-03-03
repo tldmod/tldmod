@@ -391,7 +391,7 @@ itemsfile version 2
  itm_short_bow Short_Bow Short_Bow 2  small_bow 0  small_bow_carry 3458764513820540928  6357000 5905584128 50 525450 1 100 0 0 86 0 0 99 46 0 0 23 0
 0
 
- itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  274792456 5905584128 100 525450 1 100 0 0 92 1 0 98 52 0 0 26 0
+ itm_regular_bow Bow Bow 2  regular_bow 0  regular_bow_carry 3458764513820540928  274792456 5905584128 100 525450 1 100 0 0 90 1 0 98 52 0 0 26 0
 0
 
  itm_nomad_bow Nomad_Bow Nomad_Bow 2  nomad_bow 0  nomad_bow_case 3458764513820540928  6357000 37312532480 200 525450 1.25 100 0 0 86 2 0 96 48 0 0 24 0
@@ -433,7 +433,7 @@ itemsfile version 2
  itm_isengard_large_bow Isengard_Large_Bow Isengard_Large_Bow 2  isengard_large_bow 0  isengard_large_bow_carry 3458764513820540928  274792456 5905584128 800 525450 1.5 100 0 0 84 3 0 81 58 0 0 275 0
 0
 
- itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.5 100 0 0 91 4 0 93 58 0 0 26 0
+ itm_dale_bow Dale_Bow Dale_Bow 2  dale_bow 0  dale_bow_carry 3458764513820540928  274792456 5905584128 600 525450 1.5 100 0 0 96 4 0 93 64 0 0 27 0
 0
 
  itm_uruk_bow Orc_Horn_Bow Orc_Horn_Bow 2  khazad_orc_bow_2 0  khazad_orc_bow_2_case 3458764513820540928  6357000 37312532480 500 525450 1.25 100 0 0 84 2 0 94 57 0 0 23 0
@@ -1157,10 +1157,10 @@ itemsfile version 2
  itm_orc_club_a Orc_Club Orc_Club 1  orc_club_a 0  4407298 9223372040101167118 5 271496 2.5 100 0 0 0 0 15360 90 0 62 0 256 527
 0
 
- itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 1  orc_club_b 0  138625027 9223652415566250222 5 271496 3 100 0 0 0 0 27648 75 0 77 0 256 539
+ itm_orc_club_b Warg_Rider_Club Warg_Rider_Club 1  orc_club_b 0  138625027 9223652415566250222 350 271496 3 100 0 0 0 0 27648 75 0 77 0 256 539
 0
 
- itm_orc_club_c Spiky_Orc_Club Spiky_Orc_Club 1  orc_club_c 0  4407298 9223372040101167119 5 271496 2.5 100 0 0 0 0 20480 85 0 70 0 281 276
+ itm_orc_club_c Spiky_Orc_Club Spiky_Orc_Club 1  orc_club_c 0  4407298 9223372040101167119 150 271496 2.5 100 0 0 0 0 20480 85 0 70 0 281 276
 0
 
  itm_orc_club_d Evil_Mace Evil_Mace 1  evil_mace 0  274882314242 9223372040101167118 500 271496 3.5 100 0 0 0 0 27648 90 0 59 0 256 539
@@ -2535,10 +2535,10 @@ itemsfile version 2
  itm_free_pippin_outfit hobbit_outfit hobbit_outfit 1  pippin 0  16781325 0 1 0 1 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_ent_body Ent_Body Ent_Body 3  ent_body 0  olog_body 4  olog_body_b 2097152  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
+ itm_ent_body Ent_Body Ent_Body 5  ent_body 0  olog_body 4  olog_body_b 2097152  isen_olog_body 256  isen_olog_body_b 512  137455734797 0 1 0 58 100 0 62 0 70 0 0 0 0 0 0 0
 0
 
- itm_ent_head_helm Ent_Head Ent_Head 6  ent_head1 0  olog_head 67108864  olog_head_b 134217728  olog_head_c 536870912  ent_head2 2199023255552  ent_head3 274877906944  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
+ itm_ent_head_helm Ent_Head Ent_Head 9  ent_head1 0  olog_head 67108864  olog_head_b 134217728  olog_head_c 536870912  ent_head2 2199023255552  ent_head3 274877906944  isen_olog_head 8  isen_olog_head_b 256  isen_olog_head_c 512  4108 0 1 0 58 100 60 0 0 70 0 0 0 0 0 0 0
 0
 
  itm_troll_head troll_head troll_head 4  ent_head2 0  troll_head 2199023255552  troll_head_b 549755813888  troll_head_c 274877906944  4108 0 1 0 58 100 40 0 0 70 0 0 0 0 0 0 0
@@ -2547,7 +2547,7 @@ itemsfile version 2
  itm_troll_body troll_body troll_body 4  troll_body 0  troll_body 2199023255552  troll_body 549755813888  troll_body 274877906944  137455734797 0 1 0 58 100 0 45 0 70 0 0 0 0 0 0 0
 0
 
- itm_ent_feet_boots Ent_Feet Ent_Feet 3  ent_foot 0  troll_feet 2  olog_feet 67108864  4110 0 1 0 58 100 0 0 60 70 0 0 0 0 0 0 0
+ itm_ent_feet_boots Ent_Feet Ent_Feet 4  ent_foot 0  troll_feet 2  olog_feet 67108864  olog_feet 33554432  4110 0 1 0 58 100 0 0 60 70 0 0 0 0 0 0 0
 0
 
  itm_ent_hands Ent_Hands Ent_Hands 2  ent_hand_L 0  troll_handL 2  4111 0 1 0 58 100 0 1 0 70 0 0 0 0 0 0 0
@@ -2652,7 +2652,7 @@ itemsfile version 2
  itm_ring_b_reward Finwarisil Finwarisil 1  reward_ring_b 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
 0
 
- itm_dale_bow_reward Bow_of_Bard Bow_of_Bard 2  elven_bow 0  elven_bow_carry 3458764513820540928  274731016 5905584128 3000 0 1.5 100 0 0 99 5 0 90 69 0 0 284 0
+ itm_dale_bow_reward Bow_of_Bard Bow_of_Bard 2  elven_bow 0  elven_bow_carry 3458764513820540928  274731016 5905584128 3000 0 1.5 100 0 0 100 5 0 90 69 0 0 284 0
 0
 
  itm_explosive_reward Isengard_Mine Isengard_Mine 1  reward_isenmine 0  4107 0 1000 0 5 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2685,7 +2685,7 @@ itemsfile version 2
  itm_isen_uruk_heavy_reward Uruk-hai_General_Armor Uruk-hai_General_Armor 1  urukhai_isen_h 0  16781325 0 3000 0 30 100 0 38 17 0 0 0 0 0 0 0 0
 0
 
- itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 90 5 0 99 50 0 0 280 0
+ itm_lorien_bow_reward Noldorin_Bow Noldorin_Bow 2  Vyrn_bow_1_shortened 0  Vyrn_bow_1_shortened 3458764513820540928  6295560 2952794112 3000 0 1.5 100 0 0 90 5 0 99 54 0 0 280 0
 0
 
  itm_elven_cloak Elven_Cloak Elven_Cloak 1  elven_cloak 0  4107 0 1000 0 0 100 0 0 0 0 0 0 0 0 0 0 0
@@ -2697,7 +2697,7 @@ itemsfile version 2
  itm_dale_armor_reward Dale_Noblemen_Mail Dale_Noblemen_Mail 1  dale_reward 0  16781325 0 2000 0 22 100 4 38 15 0 0 0 0 0 0 0 0
 0
 
- itm_leather_gloves_reward Hunting_Gloves Hunting_Gloves 3  lthr_glove_L 0  ent_hand_L 2097152  olog_hand_L 4  4111 0 200 0 0 100 0 3 0 0 0 0 0 0 0 0 0
+ itm_leather_gloves_reward Hunting_Gloves Hunting_Gloves 4  lthr_glove_L 0  ent_hand_L 2097152  olog_hand_L 4  isen_olog_hand_L 256  4111 0 200 0 0 100 0 3 0 0 0 0 0 0 0 0 0
 0
 
  itm_beorn_shield_reward Beorning_Shield Beorning_Shield 1  beorning_shield 0  266247 5100273664 430 251658402 4.5 100 0 9 0 0 690 95 0 70 0 0 0

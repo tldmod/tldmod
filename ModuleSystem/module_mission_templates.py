@@ -43,7 +43,7 @@ af_prisoner       = af_override_horse | af_override_weapons | af_override_head |
 
 ## Reset Fog 
 reset_fog = (ti_before_mission_start,  0, ti_once, [], 
-            [(set_fog_distance,0,0x999999)])
+            [(set_fog_distance,100000,0x999999)])
 
 ## Fade to Black
 fade =  ((is_a_wb_mt==1) and [

@@ -2629,7 +2629,7 @@ scene_props = [
 ( "tannery_hide_b"                             ,0,"tannery_hide_b","bo_tannery_hide_b",[]),
 #WB only props end
 
-	( "exima_woodplanks"                           ,0,"exima_woodplanks","bo_exima_woodplanks",[]),
+	( "woodplanks_exima"                           ,0,"exima_woodplanks","bo_exima_woodplanks",[]),
 	( "khazad_dwarf_erebor_lake_boat"              ,0,"khazad_dwarf_erebor_lake_boat","bo_khazad_dwarf_erebor_lake_boat",[]),
 	( "khazad_dwarf_forge_stand_tools"             ,0,"khazad_dwarf_forge_stand_tools","0",[]),
 	( "khazad_dwarf_forge_anvil"                   ,0,"khazad_dwarf_forge_anvil","0",[]),
@@ -2822,9 +2822,23 @@ scene_props = [
 ( "gon_mt_upper_storey_q",0,"gondor_upper_storey_q","0",[]),
 ( "gon_mt_stone_bridge",0,"gondor_stone_bridge","bo_gondor_stone_bridge", []),
 
+("gon_mt_fake_house_stone_a",0,"MT_stone_fake_house_far_a","bo_fake_house_far", []),
+("gon_mt_fake_house_stone_b",0,"MT_stone_fake_house_far_b","bo_fake_house_far", []),
+("gon_mt_fake_house_stone_c",0,"MT_stone_fake_house_far_c","bo_fake_house_far", []),
+("gon_mt_fake_house_stone_d",0,"MT_stone_fake_house_far_d","bo_fake_house_far", []),
+("gon_mt_fake_house_stone_e",0,"MT_stone_fake_house_far_e","bo_fake_house_far", []),
+("gon_mt_fake_house_stone_f",0,"MT_stone_fake_house_far_f","bo_fake_house_far", []),
+
 ( "khazad_dwarf_wall_decor_1",0,"khazad_dwarf_wall_decor_1","bo_khazad_dwarf_wall_decor_1",[]),
 ( "khazad_dwarf_wall_decor_2",0,"khazad_dwarf_wall_decor_2","bo_khazad_dwarf_wall_decor_2",[]),
 ( "khazad_dwarf_bench_2",0,"khazad_dwarf_bench_2","bo_khazad_dwarf_bench_2",[]),
+
+( "blood_decal_1",0,"prop_mesh_blood_1","0",[]),
+( "blood_decal_2",0,"prop_mesh_blood_2","0",[]),
+( "blood_decal_3",0,"prop_mesh_blood_3","0",[]),
+( "chain_hanging_5m",0,"chain_hanging_5m","0",[]),
+( "chain_hanging_10m",0,"chain_hanging_10m","0",[]),
+( "isen_sarustaff",0,"sarustaff","0",[]),
 
 #InVain props end
 
