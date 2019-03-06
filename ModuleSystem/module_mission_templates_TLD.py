@@ -1202,7 +1202,13 @@ formations_triggers = [
 		(game_key_is_down, gk_order_1),	#BUT player is holding down key?
 		(assign, "$gk_order_hold_over_there", 1),
 		(assign, "$gk_order", 0),
-		(assign, "$field_ai_horse_archer", 0),
+		(get_player_agent_no, ":player"),
+		(try_begin),
+			(agent_slot_eq, ":player", slot_agent_tournament_point, 0),
+			(eq, "$field_ai_horse_archer", 1),
+			(agent_set_slot, ":player", slot_agent_tournament_point, 1),
+			(assign, "$field_ai_horse_archer", 0),
+		(try_end),
 	]),
 
 	(0, 0, 0, [(eq, "$tld_option_formations", 1),
@@ -1410,7 +1416,13 @@ formations_triggers = [
 		(try_end),
 		(agent_set_position, "$fplayer_agent_no", pos22),
 		(assign, "$gk_order_hold_over_there", 0),
-		(assign, "$field_ai_horse_archer", 1),
+		(get_player_agent_no, ":player"),
+		(try_begin),
+			(agent_slot_eq, ":player", slot_agent_tournament_point, 1),
+			(eq, "$field_ai_horse_archer", 0),
+			(agent_set_slot, ":player", slot_agent_tournament_point, 0),
+			(assign, "$field_ai_horse_archer", 1),
+		(try_end),
 	]),
 
 ] or []) + [

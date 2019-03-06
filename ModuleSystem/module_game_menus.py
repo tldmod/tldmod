@@ -1485,11 +1485,21 @@ game_menus = [
 ( "start_eye_man",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Select your people:", "none",[(assign, "$last_menu", "mnu_start_eye_man")],[
  ("start_hr",[],"HARADRIM, the desert people from the South",    [(jump_to_menu,"mnu_start_haradrim"),]),  
- ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_bn",[],"Black NUMENOREANS, the renegades from the West",[(call_script,"script_start_as_one","trp_black_numenorean_renegade"),(jump_to_menu,"mnu_start_numenorean"),]),
  ("start_um",[],"UMBAR, the pirates from the South Seas",        [(call_script,"script_start_as_one","trp_i1_corsair_youth"),            (jump_to_menu,"mnu_choose_gender"),]),
  ("start_rh",[],"RHUN, the barbarians from the East",            [(call_script,"script_start_as_one","trp_rhun_tribesman"),           (jump_to_menu,"mnu_choose_gender"),]),
  ("start_kh",[],"KHAND, the savage people from South-East",      [(call_script,"script_start_as_one","trp_easterling_youth"),         (jump_to_menu,"mnu_choose_gender"),]),
  ("spacer",[],"_",[]),
+ ("go_back",[],"Go back",[
+ 	#(jump_to_menu, "mnu_start_eye")
+ 	(start_presentation, "prsnt_faction_selection_eye")]),    ]
+ ),
+
+( "start_eye_uruk",menu_text_color(0xFF000000)|mnf_disable_all_keys,
+ "^^^^^^^^^^Where do you lurk?", "none",[(assign, "$last_menu", "mnu_start_eye_uruk")],[
+ ("start_arm_uruk",[],"in the armies amassed at MORDOR", [(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"),   (jump_to_menu,"mnu_start_as_one"),]),
+ ("start_cav_uruk",[],"in the caves of DOL GULDUR",      [(call_script,"script_start_as_one","trp_uruk_snaga_of_mordor"), (call_script, "script_player_join_faction", "fac_guldur"), (jump_to_menu,"mnu_start_as_one"),]),
+ ("spacer" ,[],"_"  ,[]),
  ("go_back",[],"Go back",[
  	#(jump_to_menu, "mnu_start_eye")
  	(start_presentation, "prsnt_faction_selection_eye")]),    ]
@@ -1528,6 +1538,16 @@ game_menus = [
  ("spacer",[],"_",[]),
  ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye_man")]),    ]
  ),
+
+( "start_numenorean",menu_text_color(0xFF000000)|mnf_disable_all_keys,
+ "^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye", "none",[(assign, "$last_menu", "mnu_start_numenorean")],[
+ ("start_1_bn",[],"Next to the Mouth of Sauron, in MORANNON",		[(jump_to_menu,"mnu_choose_gender"),]),
+ ("start_2_bn",[],"In the Fortress of the Necromancer, DOL GULDUR", [(call_script, "script_player_join_faction", "fac_guldur"), (jump_to_menu,"mnu_choose_gender"),]),
+ ("spacer",[],"_",[]),
+ ("go_back",[],"Go back",[(jump_to_menu, "mnu_start_eye_man")]),    ]
+ ),
+
+
 ( "choose_gender",menu_text_color(0xFF000000)|mnf_disable_all_keys,
  "^^^^^^^^^^Your gender?", "none",[],
  [("start_male"  ,[],"Male"   ,[#(assign,"$character_gender",tf_male  ),
@@ -1568,6 +1588,12 @@ game_menus = [
 		(call_script, "script_tld_internal_set_good_or_evil_ui"),
 
 		] or []) + [
+		
+		(assign, reg55, 0),
+		(try_begin),
+			(eq, "$players_kingdom", "fac_guldur"),
+			(assign, reg55, 1),
+		(try_end),
 
 		(str_store_troop_name, s23, "$player_current_troop_type"),
 		(troop_get_upgrade_troop,reg0,"$player_current_troop_type",0),
@@ -1576,12 +1602,13 @@ game_menus = [
 		(str_store_troop_name,s21,reg0),
 		(gt,reg1,0),
 		(str_store_troop_name,s22,reg1),
+
 	],
 	    
     [
      ("start_default",[], "Become a {s23} (Default)", [(troop_add_proficiency_points, "trp_player", 10),(jump_to_menu, "mnu_choose_skill")]),
-     ("start_up1", [(gt,reg0,0)], "Become a {s21} (Easy)", [(call_script, "script_start_as_one", reg0),(troop_add_proficiency_points, "trp_player", 15), (jump_to_menu, "mnu_choose_skill")]),
-     ("start_up2", [(gt,reg1,0)], "Become a {s22} (Easy)", [(call_script, "script_start_as_one", reg1),(troop_add_proficiency_points, "trp_player", 15), (jump_to_menu, "mnu_choose_skill")]),
+     ("start_up1", [(gt,reg0,0)], "Become a {s21} (Easy)", [(call_script, "script_start_as_one", reg0),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
+     ("start_up2", [(gt,reg1,0)], "Become a {s22} (Easy)", [(call_script, "script_start_as_one", reg1),(troop_add_proficiency_points, "trp_player", 15), (try_begin), (eq, reg55, 1), (call_script, "script_player_join_faction", "fac_guldur"), (try_end), (jump_to_menu, "mnu_choose_skill")]),
      ("spacer",[],"_",[]),
      ("go_back"     ,[],"Go back",[(troop_clear_inventory, "trp_player"), (try_for_range, ":i", 0,6), (troop_raise_proficiency, "trp_player", ":i", -10),(try_end),
      	(try_begin), (eq, "$intro_presentation_stage", 33), (start_presentation, "prsnt_faction_selection_hand"),(else_try),
