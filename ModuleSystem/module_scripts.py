@@ -1929,7 +1929,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",8),
+    (assign,"$savegame_version",9),
 
 	] + (is_a_wb_script==1 and [
 
@@ -23594,6 +23594,16 @@ command_cursor_scripts = [
     	(lt,"$savegame_version",7),
     	(assign, "$battle_encounter_effects", 1),
     	(assign, "$savegame_version",8),
+    (try_end),
+ 
+    (try_begin), #Kham - March 2019
+    	(lt, "$savegame_version", 8),
+    	(faction_set_slot, "fac_guldur", slot_faction_tier_1_troop, trp_orc_snaga_of_guldur ),
+    	(faction_set_slot, "fac_guldur", slot_faction_tier_2_troop, trp_orc_of_guldur ),
+    	(faction_set_slot, "fac_guldur", slot_faction_tier_3_troop, trp_orc_tracker_of_mordor ),
+    	(faction_set_slot, "fac_guldur", slot_faction_tier_4_troop, trp_fell_orc_tracker_of_mordor ),
+    	(faction_set_slot, "fac_guldur", slot_faction_tier_5_troop, trp_great_warg_rider_of_mordor ),
+    	(assign, "$savegame_version", 9),
     (try_end),
 ]),
 

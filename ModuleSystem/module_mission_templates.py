@@ -6521,7 +6521,7 @@ mission_templates = [ # not used in game
 	# Triggers
   tld_common_wb_muddy_water+
 	common_deathcam_triggers +
-  moto_formations_triggers + 
+  #moto_formations_triggers + 
   khams_custom_player_camera+
   fade+ [
 	
