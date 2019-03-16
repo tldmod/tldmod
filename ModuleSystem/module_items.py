@@ -1480,7 +1480,7 @@ items =[
 ["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],
 
 ["khamul_helm","Helm_of_Khamul",[("helmet_khamul_small_new",0)],itp_type_head_armor|itp_unique,0,3000,weight(4)|head_armor(50)|difficulty(15),0],
-["gandstaff","Wizards_Staff",[("gandstaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
+["guldur_arrows_reward","Guldur_Arrows",[("khazad_orc_arrow_2",0),("khazad_orc_arrow_2.lod2",ixmesh_flying_ammo),("khazad_orc_arrow_2_quiver",ixmesh_carry)],itp_type_arrows|itp_can_penetrate_shield|itp_crush_through,itcf_carry_quiver_back_right,2000,weight(3)|thrust_damage(3,cut)|max_ammo(30)|weapon_length(95),imodbits_missile,[]],
 ["sarustaff","Wizards_Staff",[("sarustaff",0)],itp_primary|itp_wooden_parry|itp_type_polearm|itp_spear|itp_penalty_with_shield|itp_wooden_attack,itc_staff,1,weight(2.5)|difficulty(0)|spd_rtng(103)|weapon_length(118)|swing_damage(50,blunt)|thrust_damage(40,blunt),0],
 ["rohan_armor_th","Rohan_Royal_Armor",[("theoden_armour",0),("denethor_robe",imodbit_well_made),("dm_nazgulrobe",imodbit_cheap),("pippin",imodbit_battered),("merry",imodbit_chipped),("whiterobe",imodbit_bent), ("old_nazgulrobe",imodbit_old),("galadriel",imodbit_rusty)],itp_type_body_armor|itp_covers_legs,0,4000,weight(20)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(15),imodbits_elf_armor,],
 #free Jan 2017, --> rohan_armor_th
