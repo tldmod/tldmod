@@ -863,22 +863,22 @@ itemsfile version 2
  itm_amroth_sword_a Dol_Amroth_Sword Dol_Amroth_Sword 2  DA_sword_a 0  scab_DA_sword_a 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 28672 105 0 88 0 277 28
 0
 
- itm_amroth_sword_b Dol_Amroth_Knight_Sword Dol_Amroth_Knight_Sword 2  DA_sword_b 0  scab_DA_sword_b 3458764513820540928  4259842 9223388564182532111 700 156672 2 100 0 0 0 0 33792 99 0 100 0 282 33
+ itm_amroth_sword_b Dol_Amroth_Knight_Sword Dol_Amroth_Knight_Sword 2  DA_sword_b 0  scab_DA_sword_b 3458764513820540928  4259842 9223388564182532111 700 156672 2 100 0 0 0 0 33792 97 0 100 0 282 33
 0
 
  itm_gondor_sword Gondor_Infantry_Sword Gondor_Infantry_Sword 2  gondor_inf_new 0  scab_gondor_inf_new 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 28672 99 0 95 0 277 28
 0
 
- itm_amroth_bastard Dol_Amroth_Heavy_Sword Dol_Amroth_Heavy_Sword 2  DA_bastard 0  scab_DA_bastard 3458764513820540928  4259843 9223635954298781951 294 156672 2.25 100 0 0 0 0 37888 96 0 105 0 282 37
+ itm_amroth_bastard Dol_Amroth_Swan_Blade Dol_Amroth_Swan_Blade 2  DA_bastard 0  scab_DA_bastard 3458764513820540928  4259843 9223635954298781951 850 156672 2.25 100 0 0 0 0 37888 96 0 105 0 282 37
 0
 
- itm_gondor_short_sword Linhir_Eket Linhir_Eket 2  linhir_eket 0  scab_linhir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 28672 113 0 53 0 281 28
+ itm_gondor_short_sword Linhir_Eket Linhir_Eket 2  linhir_eket 0  scab_linhir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 26624 113 0 53 0 281 26
 0
 
- itm_pelargir_eket Pelargir_Eket Pelargir_Eket 2  pelargir_eket 0  scab_pelargir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 27648 119 0 49 0 283 27
+ itm_pelargir_eket Pelargir_Eket Pelargir_Eket 2  pelargir_eket 0  scab_pelargir_eket 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 25600 119 0 49 0 283 25
 0
 
- itm_pelargir_sword Pelargir_Sword Pelargir_Sword 2  pelargir_sword 0  scab_pelargir_sword 3458764513820540928  4259842 9223388564182532111 300 287892 1.25 100 0 0 0 0 30720 103 0 72 0 277 30
+ itm_pelargir_sword Pelargir_Sword Pelargir_Sword 2  pelargir_sword 0  scab_pelargir_sword 3458764513820540928  4259842 9223388564182532111 400 287892 1.25 100 0 0 0 0 27648 103 0 72 0 277 27
 0
 
  itm_gondor_ranger_sword Gondor_Ranger_Sword Gondor_Ranger_Sword 2  gondor_bastard 0  scab_gondor_ranger 3458764513820540928  4259843 9223635958593749247 800 287892 2 100 0 0 0 0 37888 100 0 103 0 282 37
@@ -890,13 +890,13 @@ itemsfile version 2
  itm_gondor_citadel_sword Gondor_Citadel_Sword Gondor_Citadel_Sword 2  gondor_citadel 0  scab_gondor_citadel 3458764513820540928  4259842 9223388564182532111 1000 156672 1.25 100 0 0 0 0 35840 100 0 94 0 286 35
 0
 
- itm_gondor_cav_sword Gondor_Cavalry_Sword Gondor_Cavalry_Sword 2  gondor_riding_sword 0  scab_gondor_riding_sword 3458764513820540928  4259842 9223388564182532111 300 287892 2 100 0 0 0 0 28672 103 0 100 0 277 28
+ itm_gondor_cav_sword Gondor_Cavalry_Sword Gondor_Cavalry_Sword 2  gondor_riding_sword 0  scab_gondor_riding_sword 3458764513820540928  4259842 9223388564182532111 400 287892 2 100 0 0 0 0 28672 99 0 100 0 277 28
 0
 
  itm_gondor_spear Gondorian_Spear Gondorian_Spear 1  gondor_spear 0  4554756 9254615759470988544 200 156672 2.25 100 0 0 0 0 20480 102 0 153 0 286 532
 0
 
- itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  138772484 9254615759470988544 600 156672 2.25 100 0 0 0 0 23552 99 0 173 0 293 23
+ itm_gondor_tower_spear Gondorian_Tower_Spear Gondorian_Tower_Spear 1  gondor_tower_spear 0  138772484 9254615759470988544 800 156672 2.25 100 0 0 0 0 23552 99 0 173 0 293 23
 0
 
  itm_gondor_lance Gondor_Lance Gondor_Lance 1  amroth_lance 0  2286256132 201326848 400 156672 2.25 100 0 0 0 0 0 89 0 204 0 284 0
