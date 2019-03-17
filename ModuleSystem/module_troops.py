@@ -1923,7 +1923,7 @@ troops = [
    [itm_dale_warhorse,itm_dale_armor_reward,itm_leather_boots,itm_mail_mittens,itm_dale_helmet_f,itm_dale_sword_reward,itm_dwarf_shield_c_good,itm_lance,],
       attr_tier_6,wp_tier_6,knight_skills_5|knows_trainer_5,0x0000000e3f00018436db75b79b6eb6db00000000001db6eb0000000000000000],
 ["dwarf_lord","King_Dain_II_Ironfoot","King",tf_hero| tf_dwarf| tfg_shield| tfg_armor| tfg_helm| tfg_boots,0,0,fac_dwarf,
-   [itm_dwarf_armor_c,itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_helm_king_NPC,itm_dwarf_throwing_axe,itm_dwarf_great_axe,],
+   [itm_dwarf_armor_c,itm_dwarf_scale_boots,itm_mail_mittens,itm_dwarf_helm_king_NPC,itm_dwarf_throwing_axe,(itm_dwarf_great_axe,imod_rotten)],
       attr_dwarf_tier_6,wp_dwarf_tier_6,knight_skills_5|knows_riding_10|knows_persuasion_3|knows_trainer_4,0x0000000e7f00210133c16e7bb1fffdff00000000001f56f30000000000000000],
 ["dunland_lord","Chief_Daeglaf_the_Black","Chief",tf_hero| tf_dunland| tf_mounted| tfg_shield| tfg_armor| tfg_helm| tfg_horse| tfg_boots,0,0,fac_dunland,
    [itm_saddle_horse,itm_dunland_armor_k,itm_dunland_wolfboots,itm_evil_gauntlets_a,itm_dun_helm_e,itm_dun_berserker,itm_dun_shield_b,itm_dunland_javelin,],
