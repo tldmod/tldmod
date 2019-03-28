@@ -2709,3 +2709,13 @@ OLOG_ENT_HP_SHIELD = 320
 MORIA_TROLL_HP_SHIELD = 500
 
 slot_troop_has_combat_ai = 157
+
+# Guildmaster Companion Strings Start
+slot_troop_gm_companion_ask = 158
+slot_troop_gm_companion_none = 159
+slot_troop_gm_companion_player_none = 160
+slot_troop_gm_companion_player_found = 161
+slot_troop_gm_companion_1 = 162
+slot_troop_gm_companion_2 = 163
+
+slot_party_has_companion = 310

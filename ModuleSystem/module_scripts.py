@@ -25407,6 +25407,35 @@ command_cursor_scripts = [
     (try_end),
   ] or []) + [
 ]),
+
+
+
+# script_initilize_guildmaster_companion_strings
+
+("initialize_guildmaster_companion_strings", [
+
+	(try_for_range, ":guildmasters", mayors_begin, mayors_end),
+		(troop_set_slot, ":guildmasters", slot_troop_gm_companion_ask, -1),
+		(troop_set_slot, ":guildmasters", slot_troop_gm_companion_none, -1),
+		(troop_set_slot, ":guildmasters", slot_troop_gm_companion_player_none, -1),
+		(troop_set_slot, ":guildmasters", slot_troop_gm_companion_player_found, -1),
+		(troop_set_slot, ":guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	# Strings Begin
+	# Gondor
+	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_ask, "str_gondor_guildmaster_companion_player_ask"),
+	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_none, "str_gondor_guildmaster_companion_none"),
+	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_player_none, "str_gondor_guildmaster_companion_player_none_ok"),
+	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_player_found, "str_gondor_guildmaster_player_found_ok"),
+	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_1, "str_gondor_mt_guildmaster_companion"),
+	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_2, "str_gondor_ha_guildmaster_companion"),
+	(party_set_slot, "p_town_minas_tirith", slot_party_has_companion, 1),
+	(party_set_slot, "p_town_henneth_annun", slot_party_has_companion, 1),
+
+]),
+
 ]
 
 scripts = scripts + ai_scripts + formAI_scripts + morale_scripts + command_cursor_scripts + common_warp_scripts

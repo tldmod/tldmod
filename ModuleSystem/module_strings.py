@@ -3696,4 +3696,128 @@ Even in the last case, the player can make formations up to four lines by orderi
 ("npc27_honorific", "Master"),
 
 ("new_companion_strings_end", "INVALID"),
+
+
+## Companion Guildmaster Tip Offs Begin
+
+("gondor_guildmaster_companion_player_ask", "By leave of the Lord of Gondor, I seek valiant confederates. Are there such in this place?"),
+("gondor_guildmaster_companion_none", "Nay, Commander. What valour we have is needed to defend our own walls. You may go to the barracks and find soldiers of courage and experience - mayhap more the former than the latter, I fear. Ever have we been traders, crafters and farmers. The finest of our soldiers go to the capital to enlist - perhaps you should try the White City."),
+("gondor_guildmaster_companion_player_none_ok", "Very well. I thank you for your counsel."),
+("gondor_guildmaster_player_found_ok", "I thank you. May the good will of all good people go with you."),
+
+("gondor_mt_guildmaster_companion", "Why, Commander, there is one, and gladly shall I tell you of him; he is a gate guard, by the name of Cirdil, and even now I warrant you’ll find him at his rounds. He is dutiful and brave - but I spoke with him of late, and it seems to me he wishes to do more than simply stand his watch on the walls while the Shadow gathers beyond them. Surely he will be happy to venture out from the White City in your company."),
+("gondor_ha_guildmaster_companion", " Indeed there are. High in the esteem of our Captain Faramir are two of our commanders, Mablung and Damrod. Damrod is away at our Captain’s behest; but Mablung may be found in the cave yonder, a little way along this path here. We Rangers know much of woodlore and archery; Mablung stands above many of us. He is a man of prowess, and accounted one of our finest. Mayhap he will be given leave to accompany you for a time."),
+
+("rohan_guildmaster_companion_player_ask", "By leave of Theoden King, I seek the aid of valiant Rohirrim. Will any stout warriors here follow me?"),
+("rohan_guildmaster_companion_none", "It were better if you sought to bring aid, rather than asked for it. Horses, swords, spears - these things we need at present. As for your question: go to the barracks. There you will find those of our people willing to ride forth, such as they are - many beardless youths still, and still others unskilled herders and tenders of flocks."),
+("rohan_guildmaster_companion_player_none_ok", "I do take thought for your people as well, Thain. Farewell."),
+("rohan_guildmaster_player_found_ok", "That counsel seems good to me. Health be with thee at thy coming and going!"),
+
+("rohan_edoras_guildmaster_companion", "Indeed, there may be. Dark indeed must the days become before our women ride out to war alongside the menfolk - yet our fearless and high-hearted Lady Eowyn, whom all love, rides and fights as well as any Marshal. Some shieldmaidens have trained with her from childhood, and several may be found around the Golden Hall. Hardy indeed are our women! Seek one called Galmyne - she is skilled in many arts of war, and goes about like a mare chafing at an ill-fitting bridle, for she has not been given leave to ride out with the men."),
+
+("lorien_guildmaster_companion_player_ask", "Elder, I seek aid. The least among the Elves of Lorien fight like heroes of old; will any here join my cause?"),
+("lorien_guildmaster_companion_none", "Evil has been seen and heard even here, among the mallorn-trees; sorrow has been known. In happier days we plucked the strings of harps; in these days we have indeed become skilled at the plucking of bowstrings. I cannot speak of heroes among us, but you should speak to the commander of our garrison here. Perhaps some few of our people may consent to join you for a time."),
+("lorien_guildmaster_companion_player_none_ok", "I had hoped for fairer words in this fair land of yours. But it shall be as you say, Elder."),
+("lorien_guildmaster_player_found_ok", "I thank you for your counsel, Elder. Tiro ven Elbereth!"),
+
+("lorien_ca_guildmaster_companion", "Nan Belain, here is a wonder indeed! At any other time I might have had naught but disappointment for you, but now in the company of the Lord and Lady of the Wood stands none other than the Lord Glorfindel, hero of more battles than even I can remember. I know little of such a great champion’s purpose here - he arrived with the host of Elrond, Lord of Imladris, and his own counsel he keeps, speaking only with Lord Celeborn and Lady Galadriel. Seek him out, Commander. Perhaps his cause may be joined to yours."),
+
+("beorn_guildmaster_companion_player_ask", "Your advice, good fellow - are there any warriors of remarkable prowess here?"),
+("beorn_guildmaster_companion_none", "Well, I don’t know about that. Your question isn’t very clear. What kind of “remarkable prowess” do you want that you can’t find among our garrison, I ask you? We fight with stout staves and sharp hatchets, we shoot well enough with bows. I don’t know what more you could ask for."),
+("beorn_guildmaster_companion_player_none_ok", "Well, then, I suppose I’d best be off. Good day to you, woodsman."),
+("beorn_guildmaster_player_found_ok", "I see. Well, I shall look around for this “Dimborn”. Good day to you, woodsman."),
+
+("beorn_house_guildmaster_companion", "Well, now, there’s a question. I’d say any of us could fight off a goblin or warg well enough, but our chief’s nephew is stouter than most. Spends most of his time just staring at trees, though. Or at nothing in particular. More thew than thought, if you take my meaning. Still, he’s gentle with his friends but fierce to his enemies, as one should be. Walks the woods as well as any Elf, I’d say. We call him Dimborn; not to be unkind, you understand, but we like calling things and people what they are. He ought to be around here somewhere."),
+
+("woodelf_guildmaster_companion_player_ask", "By leave of Thranduil Elvenking, I seek champions of the Greenwood to fight in my command, Elder."),
+("woodelf_guildmaster_companion_none", "Indeed? Then you may ask those of our garrison, and mayhap some will be willing to follow you. But I sense your desire runs deeper than that. Do you fancy yourself a great hero, like those from Nargothrond or Gondolin of old? Our finest warriors are needed to guard against the growing shadow in Mirkwood. Take with you what soldiers we can spare, and be content."),
+("woodelf_guildmaster_companion_player_none_ok", "Very well, Elder. As you say."),
+("woodelf_guildmaster_player_found_ok", "I thank you for your counsel, Elder. Navaer!"),
+
+("woodelf_halls_guildmaster_companion", "Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit - she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands - you may speak with her. Harthon gerithach lend vaer!"),
+
+("dale_guildmaster_companion_player_ask", "Good master, I seek stout warriors of prowess to fight beside me in this war."),
+("dale_guildmaster_companion_none", "Well, now. Here in our town, we have always plied our trades and managed our affairs quietly, and not until recently have we had a great need for fighting men. I suppose you might ask at our barracks, and find what recruits you can from our garrison. I know of none among our captains here who would abandon his post to follow you."),
+("dale_guildmaster_companion_player_none_ok", "I will do that, good master. Farewell to you."),
+("dale_guildmaster_player_found_ok", "Oft the unbidden gift proves the best value. I will speak to Faniul. Farewell!"),
+
+("dale_main_guildmaster_companion", "Well, the King and his Lords have the best claim on the service of good captains. I don’t know that any of great renown are left to follow you - but are mere fighting men all you need? What about binders of wounds, versed in herblore? I know of one such - Faniul, personal healer to the King. She was midwife to my sister - and do not look askance at her age: she is of stout heart and sturdier than she looks. I warrant she’ll bear up well under the strains of travel. Why, I think I see her taking her ease over there, in this courtyard."),
+
+("dwarf_guildmaster_companion_player_ask", "Good master, there seem to be some valiant warriors here. Will any follow my company?"),
+("dwarf_guildmaster_companion_none", "Well, you’re not wrong, there, about our skill in battle, but aren’t our lads from our garrison here good enough for you? Apart from them, I don’t know anyone else who might satisfy you - you talk as though you were a king of some sort, looking for a great champion, like in the old days. Valiant is as valiant does, say I!"),
+("dwarf_guildmaster_companion_player_none_ok", "You needn’t get so annoyed, good master, I was simply asking. Good day to you."),
+("dwarf_guildmaster_player_found_ok", "That is excellent to hear, good master. Good day to you!"),
+
+("dwarf_erebor_guildmaster_companion", "Oh ho! It’s warriors you’re after, are you? Then I have just the Dwarf for you: look for one Kili Goldfinger. A most excellent and audacious Dwarf he is, and a credit to his clan. Fights almost as well as a Longbeard, though he’s still fairly young as we reckon it. Quite good at story-telling, too, and he favours the cheerful sort of tale. Go and have a talk with him - I shouldn’t think he needs much persuading to follow you out into the wide world and do his bit for the war. Now, let me see… he’s not down here at the moment. Not the Great Chamber, either. The upper halls, perhaps - look for him there."),
+
+("rhun_guildmaster_companion_player_ask", "I heard there were great warriors here. Where are they? Who are worthy to join me?"),
+("rhun_guildmaster_companion_none", "Not all our warriors here are blooded, but each of them is stronger and braver than any ten Dalishmen! Go and ask the arms master to see if he can spare any for you."),
+("rhun_guildmaster_companion_player_none_ok", "I ask for great warriors, and you show me drinkers of mother’s milk. Pah!"),
+("rhun_guildmaster_player_found_ok", "That is good to hear. Finally - a warrior with spirit!"),
+
+("rhun_maincamp_guildmaster_companion", "Our greatest swordbearers and riders fight in the retinues of our warlords. But there is one who has found favour with none of our chiefs so far. Not because he is weak; far from it! He does not curb his tongue when he speaks, and he has spoken loudly against our chieftains, saying they are slow to act and over-cautious. If he had his way, I wager the countryside would be covered in flames by now. His name is Varfang, and he spends his hours training near the prisoner cages, not far from this tent."),
+
+
+("guldur_guildmaster_companion_player_ask", "All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?"),
+("guldur_guildmaster_companion_none", "O ho! What do we have here? A great captain, are you? I reckon your bark’s worse than your bite, and no mistake. Orders are orders: you draw your troops from our garrison here, and that’s that. Keep talking like that where they’ve got ears to hear, though, and someone will stick a knife in your back one of these days, see if they don’t."),
+("guldur_guildmaster_companion_player_none_ok", "You’ll watch your words with me, if you know what’s good for you."),
+("guldur_guildmaster_player_found_ok", "Scared witless by this woman, are you? I’ll go see if she’s all you make her out to be. This had better not be a waste of my time!"),
+
+("guldur_main_guildmaster_companion", "We’ve got stout lads aplenty, curse you. Ha… I know what you’re really after. Oh yes, indeed, I know just where you should go, Commander. See that cave over there, with steps leading down? If our boys get hurt badly enough we send them down there, and I reckon almost a third of them make it back up, har! They can do very strange things, down there… and that one in particular, the woman… she gives me the shivers, and that’s saying something. They say she’s got something to do with Number One, or even Higher Up, if you take my meaning. Talk to her, if you dare."),
+
+
+("moria_guildmaster_companion_player_ask", "All I see here is a rabble of treacherous skulkers, more likely to run than fight. Where are your proper warriors?"),
+("moria_guildmaster_companion_none", "Proper warriors, {she/he} says! I reckon any of our snaga could give any of your lubbers a good drubbing. We’re a tough lot, we are, and no mistake. Go speak to our barracks master - but speak with respect, mind, or you’ll not get our stout fellows to follow you. Knife you as soon as your back is turned, if you don’t speak proper."),
+("moria_guildmaster_companion_player_none_ok", "I’ll speak how I like to the lot of you. I save my respect for those much Higher Up than your sort!"),
+("moria_guildmaster_player_found_ok", "Garn! A sawbones, you say? Among this lot? All right, I’ll have a talk with him, but you’d better hope you aren’t telling me a crock of rubbish."),
+
+("moria_main_guildmaster_companion", "Ha! Losing more than you can keep, are you? Throwing our stout lads into the meat grinder, and then cursing when you find you haven’t got enough left to win your battles? A right splendid commander you are, oh yes. Very well - look over there! I’ll give you a helpful hint now, and you’ll remember it, yes? You see that fellow on the crates, the one with blood all over his hands, muttering to himself? Not much of a killer, but where’s the blood from, I hear you ask? Why, it’s the blood from some of our fighters he’s helped put back on their feet. He’s a sawbones, that one. You’ll see for yourself, the next time you lead your troops into another mess and find you need some stitching done."),
+
+
+("isengard_guildmaster_companion_player_ask", "I’ve heard about the fighting Uruk-hai. So far, I’m not impressed. Where are the greatest among them?"),
+("isengard_guildmaster_companion_none", "Leading patrols and armies of their own, no doubt - why would they lower themselves to fight under your command? They’ve got their own Orders to follow, from Higher Up. If you want fighting lads, go talk to the garrison chief! We’ve got stout fellows aplenty."),
+("isengard_guildmaster_companion_player_none_ok", "This rabble isn’t what you make it out to be. Stout fellows? Fighting lads? Snagas aplenty, more like. Slavering swine."),
+("isengard_guildmaster_player_found_ok", "If he kills well, I’ll take him. If not, I’ll gut him like a fish. And if he does turn out to be just another worthless maggot, I’ll come back and pay you for wasting my time!"),
+
+("isengard_main_guildmaster_companion", "A great commander you are, it is plain to see, and wisely do you choose to take only the bravest and most skilled fighters under your banner. And yet, if you will take my counsel - a battle is won not merely with iron and sinew, Commander, but with guile and foreknowledge of the foeman’s doings, his comings and goings. We have a scoutmaster here, an Orc who has sworn allegiance to Saruman the Great. I have heard that he spent many years in the Misty Mountains, catching and taming wargs. A skilled tracker and hunter is Durgash. You will find him a most useful helper, Commander. Look - I see him, standing near the warg pit."),
+("isengard_hunting_camp_guildmaster_companion", "O ho! So you think our finest lads should humble themselves and take orders from you, do you? You’re a bold one, and no mistake. I know just the fellow for you. Calls himself Gulm, and he’s a proper fierce one, he is. Never seen anyone take so much pleasure in bashing in skulls and breaking bones with that mallet of his. And the more foes he kills, the more savage he seems to get. I don’t rightly know where he is at the moment, though - but he’s in this camp for sure, trying not to attract attention for some reason. Does that sound suitable for you, O Great Commander, taking an Uruk-hai berserker into your camp?"),
+
+("dunland_guildmaster_companion_player_ask", "So, these are the Men of the hills who serve the White Hand! A sorry-looking lot. Where are your fighters of note?"),
+("dunland_guildmaster_companion_none", "Following those greater than you, no doubt. If you want warriors, speak to the training masters. See for yourself if any of our young pups will follow you into battle."),
+("dunland_guildmaster_companion_player_none_ok", "Curs and whelps! It is no wonder your people were driven into the hills by the men of Rohan."),
+("dunland_guildmaster_player_found_ok", "A treacherous wolf, I would hardly keep by my side. But a tame hunting dog, I might consider. Let me see which one this Heidrek proves to be."),
+
+("dunland_main_guildmaster_companion", "Despise us at your peril! Even a wretched cur will snap at your heels in a fight. We will have our vengeance on the Forgoil and their allies - and likely it will be Heidrek whom we’ll follow into Edoras. He’s a mongrel, that one - says he’s the grandson of a strawhead king, for all that he looks no different from any of us. He’s a terror in the training yard. If Chief Daeglaf doesn’t watch his back he just might find Heidrek’s spear in it one of these days. Maybe he’ll deign to follow you, if he thinks you’re worth his time. Look for him at the main campfire, where our chieftains stand."),
+
+
+("khand_guildmaster_companion_player_ask", "I heard there were great warriors here. Where are they? Who are worthy to join me?"),
+("khand_guildmaster_companion_none", "Those who have earned their death masks wish to follow commanders of still greater renown, but you may look for new recruits among our pitfighters and levies. Do not presume more than your station, Commander! "),
+("khand_guildmaster_companion_player_none_ok", "I ask for warriors and you show me pit slaves and unblooded peasants. Waste my time at your peril."),
+("khand_guildmaster_player_found_ok", "She sounds like a killer, right enough - but can her ferocity be leashed to useful purpose? We shall have to see."),
+
+("khand_main_guildmaster_companion", "So you want great warriors? We have them aplenty. But let me tell you of one whose savagery even we find astonishing. Her name is Turmbathu - yes, a woman! I would not have believed it myself had I not seen her in the fighting pit with my own eyes. Defeated three men at once, and killed one of them. Unfortunate, that - the one she killed was a son of Great Lord Lurmsakun, and so now you may find her among the prisoners, awaiting a painful death… unless you, Commander, can intercede. Such a pity, to waste such strength."),
+
+("umbar_guildmaster_companion_player_ask", "So, the people here fancy themselves heirs of greatness, do they? Can anyone here stand proof of such claims?"),
+("umbar_guildmaster_companion_none", "You come at the wrong time, Commander. Now we’re all basking in the glory of capturing this holding, and working out the equitable distribution of its wealth - to put it another way, the captains are all at one another’s throats, heated words are being said, and it will not be long ere blood of Umbar is spilled by Umbar hands. Some of the sailors are unhappy, and may consent to follow you instead of their former captains. That’s the best I can do for you at the moment, Commander."),
+("umbar_guildmaster_companion_player_none_ok", "Disappointing. But not unexpected of sea-dogs. I shall have to look elsewhere for the quality I seek."),
+("umbar_guildmaster_player_found_ok", "A corsair with a code of honour! Not unheard of, but not often found. I care only that he will go where I command, and kill as I instruct."),
+
+("umbar_main_guildmaster_companion", "Why, if I guess aright you seek the finest fighters among us to join your ranks. After the recent burning of our Haven, I’m afraid our best sailors and raiders follow only our most experienced captains. But I have a friend, named Fuldimir, who has been passed over for promotion too many times, to my mind. It’s that strange way of thinking he has - he will not steal, he says, from any who still draw breath. Where’s the sense in that, I ask you? Still, he is handy with a cutlass, and as tough as any hardy seafarer. Here he is, in this tent - you may speak with him."),
+
+
+("mordor_guildmaster_companion_player_ask", "So, these are the finest in the Black Land, are they? Not much to look at. Tell me who’s actually useful in a scrap."),
+("mordor_guildmaster_companion_none", "O ho, a mighty champion is here, I see! And of course, the mighty champion wants only the very best fighters, and no mistake! Well, well! Maybe you’ll find that some of the lads here have plans of their own, to rise high in the sight of the Eye. Maybe you’ll find Lugbúrz thinks a little better of them than of you. Won’t surprise me, ha! Why don’t you just go along to the barracks and requisition your troops like everyone else."),
+("mordor_guildmaster_companion_player_none_ok", "Oh, I’ll remember this slight, mark my words. Do me a good turn, and I’ll not forget it, but speak uncivilly to me, and you’ll soon see what I can do about that."),
+("mordor_guildmaster_player_found_ok", "Well, I’ve struck a bit of luck at last, I see! You’ve done well. I’ll report your contribution."),
+
+("mordor_morgul_guildmaster_companion", "You’ll want an Uruk for that, mark my words. The best fighters for sure in this sorry-looking lot. Now, if you’re looking for a trusty lad to watch your back in a fight, I’ll tell you straight: you’ll not find better than old Gorbag. Used to be a comrade of mine, before I got assigned here, a while after the Great Signal went up. Now that he’s off the patrol lists, he could join up with you right enough. He ought to be up there somewhere, by that big ruined Tower where the Bosses meet to talk sometimes. Looking down at the rest of these dunghill rats - he likes to do that, he does, ha!"),
+
+
+("harad_guildmaster_companion_player_ask", "I heard there were great warriors here. Where are they? Who are worthy to join me?"),
+("harad_guildmaster_companion_none", "It is not accordant to our creed for our greatest to join with such as thee, O Commander. In the world, there are the great and the small; for soldiers such as ourselves, always we stand in this relation to one another. I counsel you to seek out those who could learn from you in battle; it is better not to try yoking a mighty stallion to a weakly-made plow, for the stallion would then destroy the plow, to the detriment of all."),
+("harad_guildmaster_companion_player_none_ok", "If I understand you correctly, you’ve just disrespected me. I’ll remember this."),
+("harad_guildmaster_player_found_ok", "I see. I hope this Lykyada is as great a warrior as you say he is."),
+
+("harad_main_guildmaster_companion", " I heard a story around the fires: when the Black Serpent called his bannermen, who are some of our finest horse archers, many boasted of how all the treasures of the West would soon be theirs; but one whom we call Lykyada stood apart and remained silent. And when they asked him what he hoped to take from the West, he stooped, scooped up a handful of sand, and said, “What do I require that the land of my birth has not already given me? Behold, I make a gift to them of the sand on which I have stood.” And so saying, he let the wind from the east blow the sand away, into the west. Then all who heard this repented of their injudicious words, and swore to follow his lead. If he finds you worthy, Commander, he may follow yours. Look for him where he stands in attendance upon our chieftains."),
+
 ]
