@@ -1194,6 +1194,7 @@ Let's speak again when you are more accomplished.", "close_window", [(call_scrip
 [anyone, "companion_recruit_signup_confirm", [], "Good! Give me a few moments to prepare and I'll be ready to move.", "close_window",
    [(call_script,"script_stand_back"),
    (call_script, "script_recruit_troop_as_companion", "$g_talk_troop"),
+   (party_set_slot, "$current_town", slot_party_has_companion, 0),
    (try_begin),
     (eq, "$g_talk_troop", "trp_npc18"),
     (neg|troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, pp_history_indeterminate), #First time
@@ -11645,6 +11646,47 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
 
 [anyone|plyr,"mayor_talk", [], 
 "I want to know the location of someone.", "mayor_talk_ask_location",[]],
+
+# Guild Master + Companion Talk START
+
+[anyone|plyr,"mayor_talk", [
+  (troop_slot_ge, "$g_talk_troop", slot_troop_gm_companion_ask, 0), 
+  (troop_get_slot, ":intro", "$g_talk_troop", slot_troop_gm_companion_ask),
+  (str_store_string, s55, ":intro"),
+], 
+"{s55}", "mayor_talk_ask_companion",[]],
+
+[anyone,"mayor_talk_ask_companion", [
+  (party_slot_eq, "$current_town", slot_party_has_companion, 1),
+  (troop_get_slot, ":companion", "$g_talk_troop", slot_troop_gm_companion_1),
+  (try_begin),
+    (eq, "$current_town", "p_town_henneth_annun"),
+    (troop_get_slot, ":companion", "$g_talk_troop", slot_troop_gm_companion_2),
+  (try_end),
+  (str_store_string, s55, ":companion"),
+], 
+"{s55}", "mayor_talk_companion_thanks",[]],
+
+[anyone,"mayor_talk_ask_companion", [
+  (neg|party_slot_eq, "$current_town", slot_party_has_companion, 1),
+  (troop_get_slot, ":companion", "$g_talk_troop", slot_troop_gm_companion_none),
+  (str_store_string, s55, ":companion"),
+], 
+"{s55}", "mayor_talk_companion_no_thanks",[]],
+
+[anyone|plyr,"mayor_talk_companion_thanks", [
+  (party_slot_eq, "$current_town", slot_party_has_companion, 1),
+  (troop_get_slot, ":companion_found", "$g_talk_troop", slot_troop_gm_companion_player_found),
+  (str_store_string, s55, ":companion_found"),
+], 
+"{s55}", "mayor_talk",[]],
+
+[anyone|plyr,"mayor_talk_companion_no_thanks", [
+  (neg|party_slot_eq, "$current_town", slot_party_has_companion, 1),
+  (troop_get_slot, ":companion", "$g_talk_troop", slot_troop_gm_companion_player_none),
+  (str_store_string, s55, ":companion"),
+], 
+"{s55}", "mayor_talk",[]],
 
 [anyone|plyr,"mayor_talk", [], "[Leave]", "close_window",[(call_script,"script_stand_back"),]],
 

@@ -541,6 +541,9 @@ merchant_quest_requested
 merchant_quest_last_offered_job
 merchant_quest_about_job
 mayor_talk_ask_location
+mayor_talk_ask_companion
+mayor_talk_companion_thanks
+mayor_talk_companion_no_thanks
 mayor_info_talk
 mayor_info_lord
 merchant_quest_about_job_2

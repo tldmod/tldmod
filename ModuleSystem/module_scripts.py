@@ -1955,6 +1955,8 @@ scripts = [
 	#Custom Camera Initialize	
 	(call_script, "script_init_camera"),	
 
+	(call_script, "script_initialize_guildmaster_companion_strings"), 
+
     #Kham -  Reassign divisions
 	(try_for_range, ":troop_no", soldiers_begin, soldiers_end),
 	  (call_script, "script_troop_default_division", ":troop_no", 0),
@@ -25425,15 +25427,247 @@ command_cursor_scripts = [
 
 	# Strings Begin
 	# Gondor
-	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_ask, "str_gondor_guildmaster_companion_player_ask"),
-	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_none, "str_gondor_guildmaster_companion_none"),
-	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_player_none, "str_gondor_guildmaster_companion_player_none_ok"),
-	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_player_found, "str_gondor_guildmaster_player_found_ok"),
+	(try_for_range, ":gondor_guildmasters", "trp_elder_mtirith", "trp_elder_edoras"),
+		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_ask, "str_gondor_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_none, "str_gondor_guildmaster_companion_none"),
+		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_player_none, "str_gondor_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_player_found, "str_gondor_guildmaster_player_found_ok"),
+		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":gondor_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
 	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_1, "str_gondor_mt_guildmaster_companion"),
-	(troop_set_slot, "trp_elder_mtirith", slot_troop_gm_companion_2, "str_gondor_ha_guildmaster_companion"),
+	(troop_set_slot, "trp_elder_henneth", slot_troop_gm_companion_2, "str_gondor_ha_guildmaster_companion"),
+
 	(party_set_slot, "p_town_minas_tirith", slot_party_has_companion, 1),
 	(party_set_slot, "p_town_henneth_annun", slot_party_has_companion, 1),
 
+	# Rohan
+	(try_for_range, ":rohan_guildmasters", "trp_elder_edoras", "trp_elder_morannon"),
+		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_ask, "str_rohan_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_none, "str_rohan_guildmaster_companion_none"),
+		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_player_none, "str_rohan_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_player_found, "str_rohan_guildmaster_player_found_ok"),
+		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":rohan_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_edoras", slot_troop_gm_companion_1, "str_rohan_edoras_guildmaster_companion"),
+
+	(party_set_slot, "p_town_edoras", slot_party_has_companion, 1),
+
+	# Lorien
+	(try_for_range, ":lorien_guildmasters", "trp_elder_cgaladhon", "trp_elder_thalls"),
+		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_ask, "str_lorien_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_none, "str_lorien_guildmaster_companion_none"),
+		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_player_none, "str_lorien_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_player_found, "str_lorien_guildmaster_player_found_ok"),
+		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":lorien_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_camroth", slot_troop_gm_companion_1, "str_lorien_ca_guildmaster_companion"),
+
+	(party_set_slot, "p_town_cerin_amroth", slot_party_has_companion, 1),
+
+	# Beorn
+	(try_for_range, ":beorn_guildmasters", "trp_elder_wvillage", "trp_elder_harad"),
+		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_ask, "str_beorn_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_none, "str_beorn_guildmaster_companion_none"),
+		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_player_none, "str_beorn_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_player_found, "str_beorn_guildmaster_player_found_ok"),
+		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_beorn", slot_troop_gm_companion_1, "str_beorn_house_guildmaster_companion"),
+
+	(party_set_slot, "p_town_beorn_house", slot_party_has_companion, 1),
+
+	# Woodelf
+	(try_for_range, ":woodelf_guildmasters", "trp_elder_thalls", "trp_elder_imladris"),
+		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_ask, "str_woodelf_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_none, "str_woodelf_guildmaster_companion_none"),
+		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_player_none, "str_woodelf_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_player_found, "str_woodelf_guildmaster_player_found_ok"),
+		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":woodelf_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_thalls", slot_troop_gm_companion_1, "str_woodelf_halls_guildmaster_companion"),
+
+	(party_set_slot, "p_town_thranduils_halls", slot_party_has_companion, 1),
+
+
+	# Dale
+	(try_for_range, ":dale_guildmasters", "trp_elder_dale", "trp_elder_erebor"),
+		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_ask, "str_dale_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_none, "str_dale_guildmaster_companion_none"),
+		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_player_none, "str_dale_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_player_found, "str_dale_guildmaster_player_found_ok"),
+		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":dale_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_dale", slot_troop_gm_companion_1, "str_dale_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_dale", slot_party_has_companion, 1),
+
+	# Dwarf
+	(try_for_range, ":dwarf_guildmasters", "trp_elder_erebor", "trp_elder_dolguldur"),
+		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_ask, "str_dwarf_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_none, "str_dwarf_guildmaster_companion_none"),
+		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_player_none, "str_dwarf_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_player_found, "str_dwarf_guildmaster_player_found_ok"),
+		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":dwarf_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_erebor", slot_troop_gm_companion_1, "str_dwarf_erebor_guildmaster_companion"),
+
+	(party_set_slot, "p_town_erebor", slot_party_has_companion, 1),
+
+	# Rhun
+	(try_for_range, ":rhun_guildmasters", "trp_elder_rhun", "trp_elder_khand"),
+		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_ask, "str_rhun_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_none, "str_rhun_guildmaster_companion_none"),
+		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_player_none, "str_rhun_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_player_found, "str_rhun_guildmaster_player_found_ok"),
+		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":rhun_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_rhun", slot_troop_gm_companion_1, "str_rhun_maincamp_guildmaster_companion"),
+
+	(party_set_slot, "p_town_rhun_main_camp", slot_party_has_companion, 1),
+
+	# Guldur
+	(try_for_range, ":guldur_guildmasters", "trp_elder_dolguldur", "trp_elder_gondor_ac"),
+		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_ask, "str_guldur_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_none, "str_guldur_guildmaster_companion_none"),
+		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_player_none, "str_guldur_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_player_found, "str_guldur_guildmaster_player_found_ok"),
+		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":guldur_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_dolguldur", slot_troop_gm_companion_1, "str_guldur_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_dol_guldur", slot_party_has_companion, 1),
+
+	# Moria
+	(try_for_range, ":moria_guildmasters", "trp_elder_moria", "trp_elder_gunda"),
+		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_ask, "str_moria_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_none, "str_moria_guildmaster_companion_none"),
+		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_player_none, "str_moria_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_player_found, "str_moria_guildmaster_player_found_ok"),
+		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":moria_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_moria", slot_troop_gm_companion_1, "str_moria_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_moria", slot_party_has_companion, 1),
+
+	# isengard
+	(try_for_range, ":isengard_guildmasters", "trp_elder_isengard", "trp_elder_cgaladhon"),
+		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_ask, "str_isengard_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_none, "str_isengard_guildmaster_companion_none"),
+		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_player_none, "str_isengard_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_player_found, "str_isengard_guildmaster_player_found_ok"),
+		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":isengard_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_isengard", slot_troop_gm_companion_1, "str_isengard_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_isengard", slot_party_has_companion, 1),
+
+	# dunland
+	(try_for_range, ":dunland_guildmasters", "trp_elder_dunland", "trp_elder_umbar"),
+		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_ask, "str_dunland_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_none, "str_dunland_guildmaster_companion_none"),
+		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_player_none, "str_dunland_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_player_found, "str_dunland_guildmaster_player_found_ok"),
+		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":dunland_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_dunland", slot_troop_gm_companion_1, "str_dunland_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_dunland_camp", slot_party_has_companion, 1),
+
+	# khand
+	(try_for_range, ":khand_guildmasters", "trp_elder_khand", "trp_elder_dunland"),
+		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_ask, "str_khand_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_none, "str_khand_guildmaster_companion_none"),
+		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_player_none, "str_khand_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_player_found, "str_khand_guildmaster_player_found_ok"),
+		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":khand_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_khand", slot_troop_gm_companion_1, "str_khand_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_khand_camp", slot_party_has_companion, 1),
+
+	# Umbar
+	(try_for_range, ":umbar_guildmasters", "trp_elder_umbar", "trp_elder_moria"),
+		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_ask, "str_umbar_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_none, "str_umbar_guildmaster_companion_none"),
+		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_player_none, "str_umbar_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_player_found, "str_umbar_guildmaster_player_found_ok"),
+		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":umbar_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_umbar", slot_troop_gm_companion_1, "str_umbar_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_umbar_camp", slot_party_has_companion, 1),
+
+	# Mordor
+	(try_for_range, ":mordor_guildmasters", "trp_elder_morannon", "trp_elder_isengard"),
+		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_ask, "str_mordor_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_none, "str_mordor_guildmaster_companion_none"),
+		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_player_none, "str_mordor_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_player_found, "str_mordor_guildmaster_player_found_ok"),
+		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":mordor_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_mmorgul", slot_troop_gm_companion_1, "str_mordor_morgul_guildmaster_companion"),
+
+	(party_set_slot, "p_town_minas_morgul", slot_party_has_companion, 1),
+
+	# Harad
+	(try_for_range, ":harad_guildmasters", "trp_elder_harad", "trp_elder_rhun"),
+		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_ask, "str_harad_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_none, "str_harad_guildmaster_companion_none"),
+		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_player_none, "str_harad_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_player_found, "str_harad_guildmaster_player_found_ok"),
+		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":harad_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
+
+	(troop_set_slot, "trp_elder_harad", slot_troop_gm_companion_1, "str_harad_main_guildmaster_companion"),
+
+	(party_set_slot, "p_town_harad_camp", slot_party_has_companion, 1),
+
+]),
+
+("guildmaster_which_faction_companion", [
+
+	(store_script_param, ":town", 1),
+
+	(assign, ":slot", slot_troop_gm_companion_1),
+	
+	(try_begin),
+		(eq, ":town", "p_town_henneth_annun"),
+
+		(assign, ":slot", slot_troop_gm_companion_2),
+	(try_end),
+
+	(assign, reg55, ":slot"),
 ]),
 
 ]
