@@ -28216,6 +28216,8 @@ if is_a_wb_script==1:
 		(assign, ":dist", reg0),
 		#(store_distance_to_party_from_party, ":dist", "p_main_party", ":nearest_bandit_party"),
 		(le, ":dist", 75), 
+		(call_script, "script_party_count_fit_for_battle", ":nearest_bandit_party"),
+		(gt, reg0, 0), 
 		(party_stack_get_troop_id, ":troop", ":nearest_bandit_party", 0), 
 		(assign, ":found", 1),
 
