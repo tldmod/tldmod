@@ -897,7 +897,7 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
     (store_trigger_param_1, ":agent"),
 
     (agent_get_troop_id, ":agent_trp",":agent"),
-    (gt, ":agent_trp", 0),
+    (ge, ":agent_trp", 0),
 
     (this_or_next|eq, ":agent_trp", "trp_dunnish_wolf_guard"),
     (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
@@ -922,6 +922,8 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
       (store_skill_level, ":wildcraft", "skl_persuasion", "trp_player"), 
       (store_mul, ":multiplier", ":wildcraft", 9),
       (val_add, ":base_chance", ":multiplier"),
+      #(assign, reg72, ":base_chance"),
+      
     (else_try),
       (eq, ":agent_trp", "trp_player"),
       (assign, ":base_chance", -1),
@@ -936,12 +938,16 @@ tld_spawn_battle_animals = ((is_a_wb_mt==1) and [
 
 
     (store_random_in_range, ":rnd", 0, 100),
+    #(assign, reg73, ":rnd"),
+    #(display_message, "@Player has Beorning Shield. Base chance = {reg72}, rnd = {reg73}"),
 
     (le, ":rnd", ":base_chance")], 
     [
       (store_trigger_param_1, ":agent"),
 
       (agent_get_troop_id, ":agent_trp",":agent"),
+
+      (ge, ":agent_trp", 0),
 
       (this_or_next|eq, ":agent_trp", "trp_dunnish_wolf_guard"),
       (this_or_next|eq, ":agent_trp", "trp_beorn_lord"),
