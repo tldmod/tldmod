@@ -8037,6 +8037,9 @@ game_menus = [
 		
 		(call_script, "script_unequip_items", "trp_player"), # after a shop, player returns to this menu so check here
 		
+		# Workaround for Isengard underground
+		(troop_set_slot, "trp_player", slot_troop_morality_state, 0),
+
 		(try_begin), # Fix elders and barmen at capturable centers
 			(lt,"$savegame_version",2),
 			(call_script,"script_update_savegame"),
@@ -8584,7 +8587,10 @@ game_menus = [
 
 	  ("isengard_underground",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_isengard"),(eq,"$entry_to_town_forbidden",0)
 						], "Go to the underground caverns.",
-						[(set_jump_mission, "mt_town_center"),
+						[
+						(troop_set_slot, "trp_player", slot_troop_morality_state, 22),
+						(call_script, "script_initialize_center_scene"),
+						#(set_jump_mission, "mt_town_center"),
 						(jump_to_scene, "scn_isengard_underground"),
 						(change_screen_mission)]),
 	  ("tirith_toplevel",[(party_slot_eq,"$current_town",slot_party_type, spt_town),(eq, "$current_town", "p_town_minas_tirith"),(eq,"$entry_to_town_forbidden",0)
