@@ -3820,4 +3820,7 @@ Even in the last case, the player can make formations up to four lines by orderi
 
 ("harad_main_guildmaster_companion", " I heard a story around the fires: when the Black Serpent called his bannermen, who are some of our finest horse archers, many boasted of how all the treasures of the West would soon be theirs; but one whom we call Lykyada stood apart and remained silent. And when they asked him what he hoped to take from the West, he stooped, scooped up a handful of sand, and said, “What do I require that the land of my birth has not already given me? Behold, I make a gift to them of the sand on which I have stood.” And so saying, he let the wind from the east blow the sand away, into the west. Then all who heard this repented of their injudicious words, and swore to follow his lead. If he finds you worthy, Commander, he may follow yours. Look for him where he stands in attendance upon our chieftains."),
 
+#Rohan Horburg Companion added down here for savegame compat.
+("rohan_hornburg_guildmaster_companion", "All here at the Hornburg have their given duties, Commander - all save one, I should say. Maybe that one will ride out with you, for otherwise he should be lucky if another Éored will consent to have him! A drunken sot is our Ulfas - good cheer he brings to his comrades, and he is a skilled Rider, but loth is he to set down a tankard without first draining it! Look for him in the hall yonder, if that does not trouble you."),
+
 ]

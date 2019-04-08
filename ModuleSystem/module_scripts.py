@@ -1929,7 +1929,7 @@ scripts = [
 	(call_script, "script_set_slot_light_armor"),
 
     #Rafa: Savegame version
-    (assign,"$savegame_version",9),
+    (assign,"$savegame_version",10),
 
 	] + (is_a_wb_script==1 and [
 
@@ -23612,6 +23612,12 @@ command_cursor_scripts = [
     	(faction_set_slot, "fac_guldur", slot_faction_tier_5_troop, trp_great_warg_rider_of_mordor ),
     	(assign, "$savegame_version", 9),
     (try_end),
+
+    (try_begin), #Kham - April 2019
+    	(lt, "$savegame_version", 9),
+    	(call_script, "script_initialize_guildmaster_companion_strings"),
+    	(assign, "$savegame_version", 10),
+    (try_end),
 ]),
 
 #Kham
@@ -25458,8 +25464,10 @@ command_cursor_scripts = [
 	(try_end),
 
 	(troop_set_slot, "trp_elder_edoras", slot_troop_gm_companion_1, "str_rohan_edoras_guildmaster_companion"),
+	(troop_set_slot, "trp_elder_hornburg", slot_troop_gm_companion_2, "str_rohan_hornburg_guildmaster_companion"),
 
 	(party_set_slot, "p_town_edoras", slot_party_has_companion, 1),
+	(party_set_slot, "p_town_hornburg", slot_party_has_companion, 1),
 
 	# Lorien
 	(try_for_range, ":lorien_guildmasters", "trp_elder_cgaladhon", "trp_elder_thalls"),
@@ -25531,6 +25539,16 @@ command_cursor_scripts = [
 	(troop_set_slot, "trp_elder_erebor", slot_troop_gm_companion_1, "str_dwarf_erebor_guildmaster_companion"),
 
 	(party_set_slot, "p_town_erebor", slot_party_has_companion, 1),
+
+	# Rivendell
+	#(try_for_range, ":rivendell_guildmasters", "trp_elder_imladris", "trp_elder_wvillage"),
+	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_ask, "str_harad_guildmaster_companion_player_ask"),
+	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_none, "str_harad_guildmaster_companion_none"),
+	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_player_none, "str_harad_guildmaster_companion_player_none_ok"),
+	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_player_found, "str_harad_guildmaster_player_found_ok"),
+	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_1, -1),
+	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_2, -1),
+	#(try_end),
 
 	# Rhun
 	(try_for_range, ":rhun_guildmasters", "trp_elder_rhun", "trp_elder_khand"),
