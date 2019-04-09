@@ -3823,4 +3823,11 @@ Even in the last case, the player can make formations up to four lines by orderi
 #Rohan Horburg Companion added down here for savegame compat.
 ("rohan_hornburg_guildmaster_companion", "All here at the Hornburg have their given duties, Commander - all save one, I should say. Maybe that one will ride out with you, for otherwise he should be lucky if another Éored will consent to have him! A drunken sot is our Ulfas - good cheer he brings to his comrades, and he is a skilled Rider, but loth is he to set down a tankard without first draining it! Look for him in the hall yonder, if that does not trouble you."),
 
+# Imladris Strings
+
+("imladris_guildmaster_companion_player_ask", "Elder, I seek the aid of renowned warriors, Man or Elf, from the fabled North."),
+("imladris_guildmaster_companion_none", "Look well, Commander. Before you is perhaps the last great muster of the North, in this Age and any Age hereafter. Man and Elf alike, we who have come here do not hope to return. From the Last Homely House we have come; from the vales and forests of Eriador the last of the Núnatani, whom you call Dúnedain, have come. Each of us has his appointed tasks - none may follow you as you wish, save that you exercise your writ and recruit from our garrison. "),
+("imladris_guildmaster_companion_player_none_ok", "I understand, Elder. I thank you for your time."),
+("imladris_guildmaster_player_found_ok", "I understand, Elder. I thank you for your time."),
+
 ]

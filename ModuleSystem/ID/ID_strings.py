@@ -2683,5 +2683,9 @@ str_harad_guildmaster_companion_player_none_ok = 2681
 str_harad_guildmaster_player_found_ok = 2682
 str_harad_main_guildmaster_companion = 2683
 str_rohan_hornburg_guildmaster_companion = 2684
+str_imladris_guildmaster_companion_player_ask = 2685
+str_imladris_guildmaster_companion_none = 2686
+str_imladris_guildmaster_companion_player_none_ok = 2687
+str_imladris_guildmaster_player_found_ok = 2688
 
 

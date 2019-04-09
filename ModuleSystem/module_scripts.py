@@ -25541,14 +25541,14 @@ command_cursor_scripts = [
 	(party_set_slot, "p_town_erebor", slot_party_has_companion, 1),
 
 	# Rivendell
-	#(try_for_range, ":rivendell_guildmasters", "trp_elder_imladris", "trp_elder_wvillage"),
-	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_ask, "str_harad_guildmaster_companion_player_ask"),
-	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_none, "str_harad_guildmaster_companion_none"),
-	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_player_none, "str_harad_guildmaster_companion_player_none_ok"),
-	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_player_found, "str_harad_guildmaster_player_found_ok"),
-	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_1, -1),
-	#	(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_2, -1),
-	#(try_end),
+	(try_for_range, ":rivendell_guildmasters", "trp_elder_imladris", "trp_elder_wvillage"),
+		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_ask, "str_imladris_guildmaster_companion_player_ask"),
+		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_none, "str_imladris_guildmaster_companion_none"),
+		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_player_none, "str_imladris_guildmaster_companion_player_none_ok"),
+		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_player_found, "str_imladris_guildmaster_player_found_ok"),
+		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_1, -1),
+		(troop_set_slot, ":rivendell_guildmasters", slot_troop_gm_companion_2, -1),
+	(try_end),
 
 	# Rhun
 	(try_for_range, ":rhun_guildmasters", "trp_elder_rhun", "trp_elder_khand"),
