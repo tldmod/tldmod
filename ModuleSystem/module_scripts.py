@@ -25493,7 +25493,7 @@ command_cursor_scripts = [
 		(troop_set_slot, ":beorn_guildmasters", slot_troop_gm_companion_2, -1),
 	(try_end),
 
-	(troop_set_slot, "trp_elder_beorn", slot_troop_gm_companion_1, "str_beorn_house_guildmaster_companion"),
+	(troop_set_slot, "trp_elder_wvillage", slot_troop_gm_companion_1, "str_beorn_house_guildmaster_companion"),
 
 	(party_set_slot, "p_town_beorn_house", slot_party_has_companion, 1),
 
