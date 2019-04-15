@@ -2719,3 +2719,6 @@ slot_troop_gm_companion_1 = 162
 slot_troop_gm_companion_2 = 163
 
 slot_party_has_companion = 310
+
+# Control allies
+player_control_allies_inf = 7
