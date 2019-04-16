@@ -557,7 +557,7 @@ items =[
 ["gon_ranger_skirt","Gondor_Ranger_Skirt",[("gondor_ranger_skirt",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,1200,weight(10)|head_armor(0)|body_armor(18)|leg_armor(12)|difficulty(0),imodbits_elf_armor,[]],
 ["gon_steward_guard","Gondor_Steward_Guard_Armor",[("gondor_steward_guard",0)],itp_type_body_armor|itp_covers_legs|0,0,4000,weight(22)|head_armor(0)|body_armor(40)|leg_armor(14)|difficulty(0),imodbits_elf_armor,[]],
 ["gon_tower_guard","Gondor_Tower_Guard_Armor",[("gondor_tower_guard",0)],itp_type_body_armor|itp_covers_legs|0,0,5000,weight(22)|head_armor(0)|body_armor(45)|leg_armor(14)|difficulty(0),imodbits_elf_armor,[]],
-["gon_tower_knight","Gondor_Tower_Knight_Armor",[("gon_tower_knight",0)],itp_type_body_armor|itp_covers_legs|0,0,4000,weight(25)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(0),imodbits_elf_armor,[]],
+["gon_tower_knight","Gondor_Tower_Knight_Armor",[("gondor_tower_knight",0)],itp_type_body_armor|itp_covers_legs|0,0,4000,weight(25)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(0),imodbits_elf_armor,[]],
 ["gon_leader_surcoat_cloak","Gondor_Leader's_Surcoat",[("gon_leader_surcoat_cloak",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,4500,weight(25)|head_armor(0)|body_armor(42)|leg_armor(13)|difficulty(0),imodbits_elf_armor,[]],
 ["gondor_ranger_hood","Green_Hood",[("gondor_ranger_hood",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,100,weight(0.5)|head_armor(13)|difficulty(0),imodbits_cloth,[]],
 ["gondor_ranger_hood_mask","Gondor_Ranger_Hood",[("gondor_ranger_hood_mask",0)],itp_type_head_armor|itp_shop|itp_fit_to_head,0,400,weight(0.6)|head_armor(15)|difficulty(0),imodbits_elf_cloth,[]],
