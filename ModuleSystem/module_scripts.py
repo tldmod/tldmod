@@ -4799,6 +4799,39 @@ scripts = [
       (val_div, ":player_party_xp_gain", 100),
       
       (party_add_xp, "p_main_party", ":player_party_xp_gain"),
+
+      # TLD - XP Bonus for INT players / NPCs
+
+      (party_get_num_companions, ":num_companions_main", "p_main_party"),
+      (assign, reg79, ":player_party_xp_gain"),
+      (store_div, ":base_xp_share", ":player_party_xp_gain", ":num_companions_main"),
+
+      (party_get_num_companion_stacks, ":num_stacks_new", "p_main_party"),
+      (try_for_range, ":stack", 0, ":num_stacks_new"),
+      	(party_stack_get_troop_id, ":stack_troop_new", "p_main_party", ":stack"),
+      	(troop_is_hero, ":stack_troop_new"),
+      	(store_attribute_level, ":int", ":stack_troop_new", ca_intelligence),
+      	(assign, reg80, ":int"),
+      	(store_mul, ":int_xp_bonus_multi", ":int", 10),
+      	(assign, reg81, ":int_xp_bonus_multi"),
+      	(val_div, ":int_xp_bonus_multi", 3),
+      	(assign, reg82, ":int_xp_bonus_multi"),
+      	(val_max, ":int_xp_bonus_multi", 1),
+      	(store_mul, ":int_xp_bonus", ":base_xp_share", ":int_xp_bonus_multi"),
+      	(assign, reg83, ":int_xp_bonus"),
+      	(val_div, ":int_xp_bonus", 100),
+      	(assign, reg84, ":int_xp_bonus"),
+      	(val_max, ":int_xp_bonus", 1),
+      	(add_xp_to_troop, ":stack_troop_new", ":int_xp_bonus"),
+      	(try_begin),
+      		(eq, "$cheat_mode", 1),
+	      	(str_store_troop_name, s77, ":stack_troop_new"),
+	      	(display_message, "@{reg79} shared XP", color_good_news),
+	      	(display_message, "@{s77} has {reg80} int - {reg81} Int Bonus Multi before dividing by 3 - {reg82} after dividing by 3"),
+	      	(display_message, "@{reg83} INT XP Bonus before dividing by 100 - {reg84} after dividing by 100"),
+	      	(display_message, "@{s77} received {reg64} bonus XP", color_good_news),
+	    (try_end),
+      (try_end),
       
       (store_mul, ":player_gold_gain", ":total_gain", player_loot_share),
       (val_min, ":player_gold_gain", 60000), #eliminate negative results
