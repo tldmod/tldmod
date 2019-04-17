@@ -4800,7 +4800,7 @@ scripts = [
       
       (party_add_xp, "p_main_party", ":player_party_xp_gain"),
 
-      # TLD - XP Bonus for INT players / NPCs
+      # TLD - XP Bonus for INT Characters
 
       (party_get_num_companions, ":num_companions_main", "p_main_party"),
       (assign, reg79, ":player_party_xp_gain"),
@@ -4823,6 +4823,8 @@ scripts = [
       	(assign, reg84, ":int_xp_bonus"),
       	(val_max, ":int_xp_bonus", 1),
       	(add_xp_to_troop, ":stack_troop_new", ":int_xp_bonus"),
+      	
+      	#Debug
       	(try_begin),
       		(eq, "$cheat_mode", 1),
 	      	(str_store_troop_name, s77, ":stack_troop_new"),
@@ -4831,7 +4833,16 @@ scripts = [
 	      	(display_message, "@{reg83} INT XP Bonus before dividing by 100 - {reg84} after dividing by 100"),
 	      	(display_message, "@{s77} received {reg64} bonus XP", color_good_news),
 	    (try_end),
+
+	    (try_begin),
+	    	(eq, ":stack_troop_new", "trp_player"),
+	    	(gt, ":int_xp_bonus", 0),
+	    	(display_message, "@You gained {reg64} intelligence-bonus XP", color_good_news),
+	    (try_end),
+
       (try_end),
+      
+      # TLD - XP Bonus for INT Characters END
       
       (store_mul, ":player_gold_gain", ":total_gain", player_loot_share),
       (val_min, ":player_gold_gain", 60000), #eliminate negative results
