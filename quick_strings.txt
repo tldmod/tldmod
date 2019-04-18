@@ -1,4 +1,4 @@
-1624
+1625
 qstr_Gate_is_breached! Gate_is_breached!
 qstr_Gate_opens..._You_ha Gate_opens..._You_have_reached_the_most_sacred_place_in_Middle_Earth!
 qstr_Secret_place_discove Secret_place_discovered!
@@ -945,6 +945,7 @@ qstr_A_group_of_{s1}_is_{ A_group_of_{s1}_is_{s10}_toward_you.
 qstr_You_are_attacking_a_ You_are_attacking_a_group_of_{s1}.
 qstr_The_battle_against_t The_battle_against_the_group_of_{s1}_continues.
 qstr_CHEAT:_healed!!! CHEAT:_healed!!!
+qstr_There_are_{reg39}_al There_are_{reg39}_ally_commanders_in_this_battle._You_can_command_them_and_their_troops_for_{reg40}_influence_points.
 qstr_Having_a_small_party Having_a_small_party_has_its_benefits...You_and_your_troops_hide_from_the_enemy_for_a_few_hours_to_be_sure_that_you_are_not_seen.
 qstr_Your_ability_to_surv Your_ability_to_survive_in_harsh_environments_allowed_you_to_find_a_safe_place_to_hide._(Your_skill_in_Wildcraft_allows_you_to_hide_with_{reg1}_troops)
 qstr_{reg4}_will_be_lost. {reg4}_will_be_lost.

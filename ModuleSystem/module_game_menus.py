@@ -4861,40 +4861,23 @@ game_menus = [
 		]),
 
       # Kham - Control Allies for Inf Points
-      ("control_allies", [
-      	(eq, "$cheat_mode", 1),
+      ("control_allies_menu", [
+      	#(eq, "$cheat_mode", 1),
+  	    (call_script, "script_get_faction_rank", "$players_kingdom"), (assign, ":rank", reg0), #rank points to rank number 0-9
+     	(ge, ":rank", 3), #Must be at least rank 3
       	(gt, "$g_starting_strength_friends", 0), # we have allies
       	(neq, "$player_control_allies", 1),
       	(party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
       	(assign, ":num_lords", 0),
-      	(assign, ":base_inf_cost", player_control_allies_inf),
       	(try_for_range, ":stack_no", 0, ":num_stacks"),
       		(party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
       		(is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
       		(val_add, ":num_lords", 1),
       	(try_end),
       	(gt, ":num_lords", 0), # have to have lords in battle
-      	(assign, reg39, ":num_lords"),
-      	(try_begin),
-      		(gt, ":num_lords", 1),
-      		(val_mul, ":num_lords", 3),
-      	(try_end),
-      	(val_add, ":base_inf_cost", ":num_lords"),
-      	(assign, reg40, ":base_inf_cost")
       	],
-      	 "Command {reg39} Commanders and their troops for {reg40} influence and {reg21?Charge_the_enemy:Prepare_to_face_the_enemy}.", [
-      	 (call_script, "script_spend_influence_of", reg40, "$players_kingdom"),
-      	 (assign, "$player_control_allies", 1),
-		(try_begin),
-			# talk with hostile troops after you have chose to attack
-			(eq, "$new_encounter", 1),
-			(assign, "$new_encounter", 0),
-			(assign, "$prebattle_talk_done",1),
-			(assign, "$talk_context", tc_party_encounter),
-			(call_script, "script_setup_party_meeting", "$g_encountered_party"),
-		(else_try),
-			(call_script,"script_start_current_battle"),
-		(try_end),
+      	 "Use Influence to Command Your Allies in the Field.", [
+      	 	(jump_to_menu, "mnu_player_control_allies"),
       ]),
 
       # Kham - Control Allies for Inf Points END
@@ -4992,6 +4975,48 @@ game_menus = [
  ] for ct in range(cheat_switch)])+[
     ]
  ),
+
+# Player Control Allies Menu (Simple Enncounter),
+
+("player_control_allies", 0, 
+	"^^^^^{s60}^^^", "none",
+	[(set_background_mesh, "mesh_ui_default_menu_window"),
+     (gt, "$g_starting_strength_friends", 0), # we have allies
+     (neq, "$player_control_allies", 1),
+     (party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
+     (assign, ":num_lords", 0),
+     (assign, ":base_inf_cost", player_control_allies_inf),
+     (try_for_range, ":stack_no", 0, ":num_stacks"),
+        (party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
+        (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+        (val_add, ":num_lords", 1),
+     (try_end),
+     (gt, ":num_lords", 0), # have to have lords in battle
+     (assign, reg39, ":num_lords"),
+     (try_begin),
+        (gt, ":num_lords", 1),
+        (val_mul, ":num_lords", 3),
+     (try_end),
+     (val_add, ":base_inf_cost", ":num_lords"),
+     (assign, reg40, ":base_inf_cost"),
+     (str_store_string, s60, "@There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points."),
+    ],[
+		("player_control_allies_simple", [], "Command them and charge the enemy", [
+			(call_script, "script_spend_influence_of", reg40, "$players_kingdom"),
+          	(assign, "$player_control_allies", 1),
+  			(try_begin),
+  			   # talk with hostile troops after you have chose to attack
+  			   (eq, "$new_encounter", 1),
+  			   (assign, "$new_encounter", 0),
+  			   (assign, "$prebattle_talk_done",1),
+  			   (assign, "$talk_context", tc_party_encounter),
+  			   (call_script, "script_setup_party_meeting", "$g_encountered_party"),
+  			(else_try),
+  			   (call_script,"script_start_current_battle"),
+  			(try_end),]),
+		("player_control_allies_back", [], "Go back...", [
+			(jump_to_menu, "mnu_simple_encounter"),]),
+	]),
 
 ##Kham - Hide Menu - Skill requirement TBD
 
@@ -6351,42 +6376,22 @@ game_menus = [
 
 
       # Kham - Control Allies for Inf Points
-      ("control_allies_join", [
-      	(eq, "$cheat_mode", 1),
+      ("control_allies_join_menu", [
+      	#(eq, "$cheat_mode", 1),
+  	    (call_script, "script_get_faction_rank", "$players_kingdom"), (assign, ":rank", reg0), #rank points to rank number 0-9
+     	(ge, ":rank", 3), #Must be at least rank 3
       	(neq, "$player_control_allies", 1),
       	(party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
       	(assign, ":num_lords", 0),
-      	(assign, ":base_inf_cost", player_control_allies_inf),
       	(try_for_range, ":stack_no", 0, ":num_stacks"),
       		(party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
       		(is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
       		(val_add, ":num_lords", 1),
       	(try_end),
       	(gt, ":num_lords", 0), # have to have lords in battle
-      	(assign, reg39, ":num_lords"),
-      	(try_begin),
-      		(gt, ":num_lords", 1),
-      		(val_mul, ":num_lords", 3),
-      	(try_end),
-      	(val_add, ":base_inf_cost", ":num_lords"),
-      	(assign, reg40, ":base_inf_cost")
       	],
-      	 "Command {reg39} Commanders and their troops for {reg40} influence and charge the enemy.", [
-      	 (call_script, "script_spend_influence_of", reg40, "$players_kingdom"),
-      	 (assign, "$player_control_allies", 1),
-         (party_set_next_battle_simulation_time, "$g_encountered_party", -1),
-         (assign, "$g_battle_result", 0),
-         (call_script, "script_calculate_renown_value"),
-         (call_script, "script_calculate_battle_advantage"),(set_battle_advantage, reg0),
-         (call_script, "script_calculate_battleside_races"),
-         
-         (set_party_battle_mode),
-         (set_jump_mission,"mt_lead_charge"),
-		
-         (call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
-         (assign, "$g_next_menu", "mnu_join_battle"),
-         (jump_to_menu, "mnu_battle_debrief"),
-         (change_screen_mission),
+      	 "Use Influence Points to Command Your Allies in the Field.", [
+      		(jump_to_menu, "mnu_player_control_allies_join"),
       ]),
 
       ("join_leave",[],"Disengage.",[
@@ -6410,6 +6415,53 @@ game_menus = [
 
     ]
  ),
+
+# Player Control Allies Join
+
+("player_control_allies_join", 0, 
+	"^^^^^{s60}^^^", "none",
+	[(set_background_mesh, "mesh_ui_default_menu_window"),
+     (gt, "$g_starting_strength_friends", 0), # we have allies
+     (neq, "$player_control_allies", 1),
+     (party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
+     (assign, ":num_lords", 0),
+     (assign, ":base_inf_cost", player_control_allies_inf),
+     (try_for_range, ":stack_no", 0, ":num_stacks"),
+        (party_stack_get_troop_id,   ":stack_troop","p_collective_friends",":stack_no"),
+        (is_between, ":stack_troop", kingdom_heroes_begin, kingdom_heroes_end),
+        (val_add, ":num_lords", 1),
+     (try_end),
+     (gt, ":num_lords", 0), # have to have lords in battle
+     (assign, reg39, ":num_lords"),
+     (try_begin),
+        (gt, ":num_lords", 1),
+        (val_mul, ":num_lords", 3),
+     (try_end),
+     (val_add, ":base_inf_cost", ":num_lords"),
+     (assign, reg40, ":base_inf_cost"),
+     (str_store_string, s60, "@There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points."),
+    ],[
+		("player_control_allies_join_menu", [], "Command them and charge the enemy", [
+			(call_script, "script_spend_influence_of", reg40, "$players_kingdom"),
+			(assign, "$player_control_allies", 1),
+			(party_set_next_battle_simulation_time, "$g_encountered_party", -1),
+			(assign, "$g_battle_result", 0),
+			(call_script, "script_calculate_renown_value"),
+			(call_script, "script_calculate_battle_advantage"),(set_battle_advantage, reg0),
+			(call_script, "script_calculate_battleside_races"),
+			
+			(set_party_battle_mode),
+			(set_jump_mission,"mt_lead_charge"),
+			
+			(call_script, "script_jump_to_random_scene","$current_player_region","$current_player_terrain","$current_player_landmark"),
+			(assign, "$g_next_menu", "mnu_join_battle"),
+			(jump_to_menu, "mnu_battle_debrief"),
+			(change_screen_mission),]),
+		("player_control_allies_back", [], "Go back...", [
+			(jump_to_menu, "mnu_join_battle"),]),
+	]),
+
+
 ( "join_order_attack",mnf_disable_all_keys,
     "{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}",
     "none",
