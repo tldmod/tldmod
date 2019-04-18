@@ -4843,7 +4843,7 @@ scripts = [
       (try_end),
       
       # TLD - XP Bonus for INT Characters END
-      
+
       (store_mul, ":player_gold_gain", ":total_gain", player_loot_share),
       (val_min, ":player_gold_gain", 60000), #eliminate negative results
       (store_random_in_range, ":r", 50, 100),
@@ -6564,6 +6564,29 @@ scripts = [
 
 				(assign, ":quest_object_troop", reg55),
 				(assign, ":quest_target_faction", reg56),	
+				(assign, ":quest_target_amount", reg57),	
+				(assign, ":quest_importance", reg58),	
+				(assign, ":quest_xp_reward", reg59),					
+				(assign, ":quest_gold_reward", reg60),					
+				(assign, ":quest_rank_reward", reg61),						
+				(assign, ":quest_expiration_days", reg62),					
+				(assign, ":quest_dont_give_again_period", reg63),
+
+				(assign, ":result", ":quest_no"),
+			(try_end),
+			] or [(eq, 0, 1),]) + [
+		(else_try),
+
+			#Kham - Defeat Lord
+			] + (is_a_wb_script==1 and [
+			(eq, "$tld_war_began", 1),
+			(eq, ":quest_no", "qst_blank_quest_06"),
+			(try_begin),
+				(neg|check_quest_active, "qst_blank_quest_06"),
+				(call_script, "script_cf_init_defeat_lord_quest"),
+
+				(assign, ":quest_object_troop", reg55),
+				(assign, ":quest_target_troop", reg56),	
 				(assign, ":quest_target_amount", reg57),	
 				(assign, ":quest_importance", reg58),	
 				(assign, ":quest_xp_reward", reg59),					
@@ -28353,9 +28376,9 @@ if is_a_wb_script==1:
 	(call_script, "script_cf_find_target_patrolling_enemy_lord_in_theater", ":quest_giver_faction"),
 	(assign, ":target_lord", reg0),
 
-	(assign, ":xp_reward", 50),
-	(assign, ":gold_reward", 100),
-	(assign, ":rank_reward", 50),
+	(assign, ":xp_reward", 150),
+	(assign, ":gold_reward", 350),
+	(assign, ":rank_reward", 55),
 	
 	(assign, ":exp", 30),
 

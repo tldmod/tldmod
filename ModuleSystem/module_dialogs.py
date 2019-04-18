@@ -2814,6 +2814,59 @@ How could I expect someone like {playername} to be up to the challenge. My serva
 
 
 #### Kham Defend / Raid  Village Quests Completion End ####
+
+#### Kham Defeat Lord Completion Start ####
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_06"),
+    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_succeeded, "qst_blank_quest_06"),
+    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),
+    (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+    (str_store_troop_name, s7, ":quest_target_troop"),
+    (str_store_faction_name, s8, ":quest_target_troop"),
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (str_store_string, s5, "@{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of <target Lord> thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least."),
+    (else_try),
+      (str_store_string, s5, "@Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen <target Lord> fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that."),
+    (try_end),
+    ],
+"{s5}", "lord_defeat_lord_complete",[
+    (call_script, "script_finish_quest", "qst_blank_quest_04", 100),
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 5),
+    ]],
+
+[anyone|plyr,"lord_defeat_lord_complete", [
+    (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+    (str_store_troop_name, s7, ":quest_target_troop"),
+    (str_store_faction_name, s8, ":quest_target_troop"),
+    (try_begin),
+      (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+      (str_store_string, s5, "@Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware."),
+    (else_try),
+      (str_store_string, s5, "@ I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!"),
+    (try_end),],
+"{s5}", "close_window",[
+    (call_script, "script_finish_quest", "qst_blank_quest_06", 100),
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", 8),
+    ]],
+
+
+[anyone,"lord_start", [
+    (check_quest_active, "qst_blank_quest_06"),
+    (quest_slot_eq, "qst_blank_quest_04", slot_quest_object_troop,"$g_talk_troop"),
+    (check_quest_failed, "qst_blank_quest_06"),
+    (quest_slot_eq, "qst_blank_quest_06", slot_quest_object_troop,"$g_talk_troop"),],
+"I have heard that you failed to do what I asked you to. Disappointing, {playername}.", "lord_target_lord_failed",[
+    (call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -2),
+    (cancel_quest, "qst_blank_quest_06"),
+    ]],
+
+[anyone|plyr, "lord_target_lord_failed",[],
+  "I will do better next time.", "close_window",[],
+  ],
+
 #### Kham Kill Quests Completion Start ####
 
 [anyone,"lord_start", [
@@ -6213,6 +6266,50 @@ Your duty is to help in our struggle, {playername}. When you prove yourself wort
 #Active quests
 ##### TODO: QUESTS COMMENT OUT BEGIN
 
+## Kham - Defeat Target Lord Quest Init Start
+
+[anyone,"lord_tell_mission", [
+  (eq,"$random_quest_no","qst_blank_quest_06"),
+  (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+  (str_store_troop_name, s7, ":quest_target_troop"),
+  (str_store_faction_name, s8, ":quest_target_troop"),
+  (try_begin),
+    (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+    (str_store_string, s5, "@{playername}, you may have seen the hosts of {s7}. Of all the captains arrayed against us, at present {s7} of {s8} has won the greatest renown. Their mere presence on the field is enough to embolden our enemies and weaken the resolve of our allies. {playername}, if you wish to do a great deed in this war, strike down the host of {s7} in open battle, in sight of all! Thus may hope be rekindled, and dread fill the hearts of those who would come against us."),
+  (else_try),
+    (str_store_string, s5, "@Do you mark how our bravest fighters falter at the mere mention of {s7} of {s8}? A great warrior, oh yes, a capable captain. We cannot allow that to run amok like this! Everywhere their face is shown, our lines bend back, and our foes find new courage. This cannot be. I command that you, {playername}, challenge and defeat the soldiers of <target Lord> in open battle. To see {s7} struck down by you will freeze the blood and marrow of his followers, and show our own troops that our enemies can be thrown down!"),
+  (try_end),],
+ "{s5}", "lord_mission_told_target_lord",[]],
+
+
+[anyone|plyr,"lord_mission_told_target_lord", [
+(eq,"$random_quest_no","qst_blank_quest_06"),
+(try_begin),
+  (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+  (str_store_string, s5, "@This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike."),
+(else_try),
+  (str_store_string, s5, "@Accursed be those who follow {s7} this day, for I shall strike them down for all to see!."),
+(try_end),],
+"{s5}", "lord_mission_accepted",[
+      (quest_get_slot, ":quest_target_troop", "qst_blank_quest_06", slot_quest_target_troop),
+      (str_store_troop_name, s35, ":quest_target_troop"),
+      (str_store_faction_name, s36, ":quest_target_troop"),
+      (str_store_troop_name_link, s9, "$g_talk_troop"),
+      (str_store_string, s10, "@{s9} wants you to defeat {s35} of {s36} in battle."),
+      (setup_quest_text,"$random_quest_no"),
+      (str_store_string, s2, "@{s10}")]],
+
+[anyone|plyr,"lord_mission_told_target_lord", [
+(eq,"$random_quest_no","qst_blank_quest_06"),
+(try_begin),
+  (faction_slot_eq, "$players_kingdom", slot_faction_side, faction_side_good),
+  (str_store_string, s6, "@I humbly ask that you find another for this task. I do not think I could best {s7} in battle."),
+(else_try),
+  (str_store_string, s6, "@Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!"),
+(try_end),
+],
+"{s6}.", "lord_mission_rejected",[]],
+
 
 ## Kham Kill Quest INIT START
 [anyone,"lord_tell_mission", [
@@ -8290,7 +8387,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     #(call_script, "script_change_player_relation_with_troop", "$g_talk_troop", -1),
     (try_begin),
       (quest_slot_eq, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 0),
-      (quest_set_slot, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 1),
+      (quest_set_slot, "$random_quest_no", slot_quest_dont_give_again_remaining_days, 3),
     (try_end),
     (troop_set_slot, "$g_talk_troop", slot_troop_does_not_give_quest, 1)]],
 

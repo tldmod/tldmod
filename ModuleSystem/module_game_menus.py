@@ -4221,7 +4221,7 @@ game_menus = [
 	("scout_camp", [], "Destroy Scout Camp", [(assign, "$cheat_imposed_quest", "qst_destroy_scout_camp")]),
 	("defend_village", [], "Defend Village", [(assign, "$cheat_imposed_quest", "qst_defend_village")]),
 	("raid_village", [], "Raid Village", [(assign, "$cheat_imposed_quest", "qst_raid_village")]),
-    ("eliminate_patrols", [], "Kill Bandits", [(assign, "$cheat_imposed_quest", "qst_blank_quest_17")]),
+    ("eliminate_patrols", [], "Defeat Target Lord", [(assign, "$cheat_imposed_quest", "qst_blank_quest_06")]),
     ("eliminate_troll", [], "Dispatch Troll", [
     	(try_begin),
     		(store_faction_of_party, ":fac", "p_main_party"),
@@ -6001,6 +6001,31 @@ game_menus = [
 				(eq, "$cheat_mode",1),
 				(display_message, "@DEBUG: Target Party - NO"),
 			(try_end),
+		(try_end),
+		## Kham - Eliminate Patrols Assist END
+
+		## Kham - Defeat Target Lord START
+		(try_begin),
+			(check_quest_active, "qst_blank_quest_06"),
+			(quest_get_slot, ":target_lord", "qst_blank_quest_06", slot_quest_target_troop),
+			(troop_get_slot, ":party", ":target_lord", slot_troop_leaded_party),
+			(eq, ":party", "$g_enemy_party"),
+			(call_script, "script_succeed_quest", "qst_blank_quest_06"),
+		(else_try),
+			(check_quest_active, "qst_blank_quest_06"),
+			(quest_get_slot, ":target_lord", "qst_blank_quest_06", slot_quest_target_troop),
+			(troop_get_slot, ":party", ":target_lord", slot_troop_leaded_party),
+			(neq, ":party", "$g_enemy_party"),
+			(party_get_num_companion_stacks, ":num_stacks", "p_collective_enemy"),
+			(assign, ":found", 0),
+			(try_for_range, ":stacks", 0, ":num_stacks"),
+	  			(eq, ":found", 0),
+				(party_stack_get_troop_id, ":stack_troop", "p_collective_enemy", ":stacks"),
+	  			(troop_is_hero, ":stack_troop"),
+	  			(eq, ":stack_troop", ":target_lord"),
+	  			(assign, ":found", 1),
+	  			(call_script, "script_succeed_quest", "qst_blank_quest_06"),
+	  		(try_end),
 		(try_end),
 		## Kham - Eliminate Patrols Assist END
 

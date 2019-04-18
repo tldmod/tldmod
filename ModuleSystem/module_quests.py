@@ -290,7 +290,8 @@ quests = [
   "{!}Placeholder"
 ),
 
-("blank_quest_06", "Placeholder", 0,
+# Defeat Target Lord
+("blank_quest_06", "Defeat {s35} in battle.", 0,
   "{!}Placeholder"
 ),
 
