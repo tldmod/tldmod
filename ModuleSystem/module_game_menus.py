@@ -4984,6 +4984,7 @@ game_menus = [
      (gt, "$g_starting_strength_friends", 0), # we have allies
      (neq, "$player_control_allies", 1),
      (party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
+     (party_get_num_companions, ":num_companions", "p_collective_friends"),
      (assign, ":num_lords", 0),
      (assign, ":base_inf_cost", player_control_allies_inf),
      (try_for_range, ":stack_no", 0, ":num_stacks"),
@@ -4993,11 +4994,14 @@ game_menus = [
      (try_end),
      (gt, ":num_lords", 0), # have to have lords in battle
      (assign, reg39, ":num_lords"),
+     (store_div, ":divide", ":num_companions", 40),
+     (val_max, ":divide", 0),
      (try_begin),
         (gt, ":num_lords", 1),
         (val_mul, ":num_lords", 3),
      (try_end),
      (val_add, ":base_inf_cost", ":num_lords"),
+     (val_add, ":base_inf_cost", ":divide"),
      (assign, reg40, ":base_inf_cost"),
      (str_store_string, s60, "@There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points."),
     ],[
@@ -6449,6 +6453,7 @@ game_menus = [
      (gt, "$g_starting_strength_friends", 0), # we have allies
      (neq, "$player_control_allies", 1),
      (party_get_num_companion_stacks, ":num_stacks", "p_collective_friends"),
+     (party_get_num_companions, ":num_companions", "p_collective_friends"),
      (assign, ":num_lords", 0),
      (assign, ":base_inf_cost", player_control_allies_inf),
      (try_for_range, ":stack_no", 0, ":num_stacks"),
@@ -6458,11 +6463,14 @@ game_menus = [
      (try_end),
      (gt, ":num_lords", 0), # have to have lords in battle
      (assign, reg39, ":num_lords"),
+     (store_div, ":divide", ":num_companions", 40),
+     (val_max, ":divide", 0),
      (try_begin),
         (gt, ":num_lords", 1),
         (val_mul, ":num_lords", 3),
      (try_end),
      (val_add, ":base_inf_cost", ":num_lords"),
+     (val_add, ":base_inf_cost", ":divide"),
      (assign, reg40, ":base_inf_cost"),
      (str_store_string, s60, "@There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points."),
     ],[
