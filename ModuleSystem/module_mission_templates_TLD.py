@@ -1202,7 +1202,7 @@ formations_triggers = [
 		(game_key_is_down, gk_order_1),	#BUT player is holding down key?
 		(assign, "$gk_order_hold_over_there", 1),
 		(assign, "$gk_order", 0),
-		(get_player_agent_no, ":player"),
+		(get_player_agent_no, ":player"), 
 		(try_begin),
 			(agent_slot_eq, ":player", slot_agent_tournament_point, 0),
 			(eq, "$field_ai_horse_archer", 1),
@@ -2322,6 +2322,8 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
       #(neg|position_is_behind_position, pos17, pos18),
       (agent_get_troop_id, ":victim_troop_id", ":aoe_hit"),
       (neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+      (neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+      (neq, ":victim_troop_id", "trp_werewolf"),
       (troop_get_type, ":victim_type", ":victim_troop_id"),
       (agent_get_horse, ":victim_horse", ":aoe_hit"),
       
@@ -2527,7 +2529,10 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(troop_get_type, ":victim_type", ":victim_troop_id"),
 			(agent_get_horse, ":victim_horse", ":nearby_agent_no"),
 			(neq, ":victim_type", tf_troll), #no plowthrough for trolls
-			(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+	      	(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+	      	(neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+	      	(neq, ":victim_troop_id", "trp_werewolf"),
+
 			
 			(agent_get_animation, ":cur_anim", ":nearby_agent_no"),
 			(this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
@@ -2720,8 +2725,10 @@ custom_troll_hitting_new = ((is_a_wb_mt==1) and [
 			(troop_get_type, ":victim_type", ":victim_troop_id"),
 			(agent_get_horse, ":victim_horse", ":nearby_agent_no"),
 			(neq, ":victim_type", tf_troll), #no plowthrough for trolls
-			(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
-			
+	      	(neg|is_between, ":victim_troop_id", warg_ghost_begin, warg_ghost_end),
+	    	(neg|is_between, ":victim_troop_id", "trp_spider", "trp_dorwinion_sack"),
+		    (neq, ":victim_troop_id", "trp_werewolf"),
+					
 			(agent_get_animation, ":cur_anim", ":nearby_agent_no"),
 			(this_or_next|neq, ":cur_anim", "anim_strike_fall_back_rise"),
 			(neq, ":cur_anim", "anim_strike_fly_back_rise"),

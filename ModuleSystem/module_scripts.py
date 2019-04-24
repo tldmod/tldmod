@@ -15936,6 +15936,8 @@ scripts = [
        (agent_is_human, ":cur_agent"),
        (agent_get_troop_id, ":agent_troop_id", ":cur_agent"),
        (neg|is_between, ":agent_troop_id", warg_ghost_begin, warg_ghost_end), # dont count riderless wargs
+       (neg|is_between, ":agent_troop_id", "trp_spider", "trp_dorwinion_sack"),
+       (neq, ":agent_troop_id", "trp_werewolf"),
        (neq, ":agent_troop_id", "trp_gate_aggravator"), # Don't count gate aggravator - Kham
        (agent_get_party_id, ":agent_party", ":cur_agent"),
 
@@ -15946,6 +15948,8 @@ scripts = [
 	(try_begin),
 		(agent_is_routed, ":cur_agent"),
 		(neg|is_between, ":agent_troop_id", warg_ghost_begin, warg_ghost_end),
+        (neg|is_between, ":agent_troop_id", "trp_spider", "trp_dorwinion_sack"),
+        (neq, ":agent_troop_id", "trp_werewolf"),
 		(neq, ":agent_troop_id", "trp_gate_aggravator"), # Don't count gate aggravator - Kham
 		(agent_set_slot, ":cur_agent", slot_agent_routed, 2),
 	(try_end),
@@ -28871,6 +28875,8 @@ if is_a_wb_script==1:
 			(troop_get_type, ":race", ":troop_id"),
 			(neq, ":race", tf_troll),
 		  	(neg|is_between, ":troop_id", warg_ghost_begin, warg_ghost_end),
+  	      	(neg|is_between, ":troop_id", "trp_spider", "trp_dorwinion_sack"),
+      		(neq, ":troop_id", "trp_werewolf"),
 		  	(val_add, ":counter", 1),
 		(try_end),
 
@@ -28907,6 +28913,8 @@ if is_a_wb_script==1:
 			(troop_get_type, ":race", ":enemy_troop_id"),
 			(neq, ":race", tf_troll),
 		  	(neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+  	      	(neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+      		(neq, ":enemy_troop_id", "trp_werewolf"),
 		  	(agent_get_horse, ":target_horse", ":nearby"),
 		    (try_begin),
 		      (lt, ":target_horse", 0),

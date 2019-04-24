@@ -1032,6 +1032,8 @@ kham_damage_fallen_riders = (ti_on_agent_killed_or_wounded, 0, 0, [],
     (agent_is_alive, ":agent_rider"),
     (agent_get_troop_id, ":troop_no", ":agent_rider"),
     (neg|is_between, ":troop_no", warg_ghost_begin, warg_ghost_end), # Dont allow wargs to fall unconscious
+    (neg|is_between, ":troop_no", "trp_spider", "trp_dorwinion_sack"),
+    (neq, ":troop_no", "trp_werewolf"),
     
     
     (agent_get_speed, pos4, ":agent_rider"),

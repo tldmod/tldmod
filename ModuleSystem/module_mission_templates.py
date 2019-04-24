@@ -812,6 +812,8 @@ tld_warg_leap_attack = ((is_a_wb_mt==1) and [
       (gt, ":enemy_agent", 0),
       (agent_get_troop_id, ":enemy_troop_id", ":enemy_agent"),
       (neg|is_between, ":enemy_troop_id", warg_ghost_begin, warg_ghost_end),
+      (neg|is_between, ":enemy_troop_id", "trp_spider", "trp_dorwinion_sack"),
+      (neq, ":enemy_troop_id", "trp_werewolf"),
       (agent_get_position, pos8, ":enemy_agent"),
       (get_distance_between_positions, ":dist", pos6, pos8), #1 , 2
       (lt, ":dist", 300),
