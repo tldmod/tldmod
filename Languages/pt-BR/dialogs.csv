@@ -1,5 +1,5 @@
 dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão e menos marcha.
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para as fileiras, verme! Estamos em guerra e eu sou seu comandante.
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a linha, verme! Estamos em guerra e eu sou seu comandante!
 dlga_mutiny_pretalk_2:close_window|Como quiser, comandante. Como quiser...
 dlga_start:mutiny_talk_1|Ei, comandante. Escute aqui... Os rapazes não estão felizes, nem um pouco felizes. ^Não tem carne humana o suficiente, não tem diversão. ^Os rapazes dizem que você não é bom o suficiente, comandante!
 dlga_mutiny_talk_1:mutiny_talk_2|O quê? Insubordinação durante a guerra? Isso é punível com a morte, verme!
@@ -129,7 +129,7 @@ dlga_companion_was_dismissed:companion_rehire|{s5}. Você quer que eu para se ju
 dlga_companion_rehire:companion_recruit_signup_confirm|Bem vindo de volta, meu amigo!
 dlga_companion_rehire:companion_rehire_refused|Desculpe, não posso receber mais ninguém agora.
 dlga_companion_rehire_refused:close_window|Bem... Me procure se você mudar de ideia, ok?
-; dlga_event_triggered:ziggy_ask_prisoners|Commander, a word. You have crushed our foes, and taken some prisoners - well and good. I have a mighty gift to offer you, if you would but grant me a small thing in exchange: give into my hands one of those we captured.
+dlga_event_triggered:ziggy_ask_prisoners|Comandante, uma palavra. Você destruiu nossos inimigos e capturou alguns prisioneiros - muito bom. Eu tenho um presente maravilhoso para oferecer a você, se você me garantir uma pequena coisa em troca: me dê um dos que você capturou
 ; dlga_event_triggered:ziggy_ask_prisoners.1|Commander, congratulations on your triumph. If you remember what I told you the last time, I have a use for one of these captives. It will be to your benefit, Commander, I assure you.
 ; dlga_ziggy_ask_prisoners:ziggy_ask_why|Enough of your mysteries, Zigûrphel! Speak plainly! What do you want a prisoner for?
 ; dlga_ziggy_ask_why:ziggy_reason|Patience, patience, Commander! Only indulge me in this trifling matter, and I will show you a marvel.

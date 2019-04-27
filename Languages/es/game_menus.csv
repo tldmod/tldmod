@@ -41,7 +41,7 @@ mno_leave_custom_battle_2|Cancelar.
 menu_custom_battle_end|^^^^^^La batalla ha finalizado. {s1} Tu bando ha acabado con {reg5} enemigos y perdido {reg6} tropas en la batalla. Has matado personalmente a {reg7} oponentes.
 mno_replay|Volver a jugar la batalla.
 mno_continue_dot|Continuar.
-menu_custom_battle_durin_end|^^^^^^La desesperada última defensa fue una gesta admirable, pero la derrota era inevitable.^^ Tú y tus parientes matasteis a {reg5} enemigos.^Tú abatiste personalmente a {reg7} oponentes en el combate.
+menu_custom_battle_durin_end|^^^^^^Fue una defensa desesperada y admirable, pero la derrota era inevitable.^^ Tú y tus parientes matasteis a {reg5} enemigos.^Tú abatiste personalmente a {reg7} oponentes en el combate.
 mno_replay_cbd|Volver a jugar la batalla.
 mno_continue_dot_cbd|Continuar.
 mno_dot_go_back|.                 Volver atrás
@@ -357,7 +357,7 @@ mno_horse_archer_field_ai|Los arqueros a caballo tienen IA de batalla mejorada: 
 mno_vs_orcs_field_ai|Los arqueros tienen mejor puntería contra orcos (no apuntan por encima de sus cabezas):  {s7}
 mno_battlefield_animals|Compañeros animales -sin contar huargos / caballos- aparecen en batalla:  {s7}
 mno_slow_when_wounded|Los agentes heridos se vuelven más lentos:  {s7}
-mno_battle_encounter_effects|Efectos especiales de facción en el campo de batalla (ej. tormentas, nieblas):  {s7}
+mno_battle_encounter_effects|Efectos especiales de facción en el campo de batalla (p. ej. tormentas, nieblas):  {s7}
 mno_defend_refugees|Mantenerte ojo avizor por si aparecen saqueadores...
 mno_attack_refugees|Atacar la caravana de refugiados...
 mno_leave_refugees|Dejarlos en paz por ahora...

@@ -104,8 +104,8 @@ qstr_Ironflesh^Power_Stri|Resistenza^Potenza d'Attacco^Potenza di Lancio^Scudo^A
 qstr_Proficiencies|Competenze
 qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi ad Asta^Tiro con l'Arco^Balestre^Lancio
 qstr_Equipment|Equipaggiamento
-; qstr_The_Last_Days_Mod_Op|The Last Days Mod Options
-; qstr_War_Starts_at_Level:|War Starts at Level: 
+qstr_The_Last_Days_Mod_Op|Opzioni Mod The Last Days
+qstr_War_Starts_at_Level:|La Guerra Inizierà al livello:
 ; qstr_Restrict_Player_Equi|Restrict Player Equipment:  
 ; qstr_Battle_Formations_an|Battle Formations and AI:  
 ; qstr_Native|Native
@@ -115,43 +115,43 @@ qstr_Equipment|Equipaggiamento
 ; qstr_On|On
 ; qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
 ; qstr_Cutscenes:__|Cutscenes:  
-; qstr_Injuries_for_compani|Injuries for companions:  
+qstr_Injuries_for_compani|Ferite per i compagni:
 ; qstr_Permanent_death_for_|Permanent death for lords and companions:  
 ; qstr_Permanent_death_for_p|Permanent death for player (that is YOU!):  
 ; qstr_Battle_morale_system|Battle morale system:  
 ; qstr_Animal_ambushes:__|Animal ambushes:  
 ; qstr_Fallen_rider_damage_|Fallen rider damage messages:  
-; qstr_No_Messages|No Messages
+qstr_No_Messages|Nessun messaggio
 ; qstr_Player_damage_only|Player damage only
-; qstr_All_Messages|All Messages
+qstr_All_Messages|Tutti i messaggi
 ; qstr_Troop_Identifier_in_|Troop Identifier in Battles (Press Y during battle to show/hide):
 ; qstr_Disable|Disable
 ; qstr_Enable_without_Facti|Enable without Faction Names
 ; qstr_Enable_with_Faction_|Enable with Faction Names
 ; qstr_Simple:_Red___Enemy_|Simple: Red - Enemy / Green - Allies
-; qstr_Preferred_Camera_Mod|Preferred Camera Mode:  
+qstr_Preferred_Camera_Mod|Modalità Telecamera Preferita:
 qstr_Default_Camera|Inquadratura di default
 qstr_Free_Mode_Custom_Cam|Inquadratura Libera Personalizzata
 ; qstr_Fixed_Over_The_Shoul|Fixed Over-The-Shoulder Camera
 ; qstr_Prevent_AI_from_taki|Prevent AI from taking defensive:  
 ; qstr_Brighter_Nights:__|Brighter Nights:  
-; qstr_Done|Done
+qstr_Done|Fatto
 ; qstr_Gameplay_Tweaks|Gameplay Tweaks
 ; qstr_Beta_Formations_Twea|Beta Formations Tweaks
 ; qstr_War_Will_Start_at_Le|War Will Start at Level {reg0}
 ; qstr_Troop_Tree|Troop Tree
 ; qstr__Click_on_a_unit_for|(Click on a unit for details)
 ; qstr_Weapons|Weapons
-; qstr_Armors|Armors
+qstr_Armors|Armature
 ; qstr_Others|Others
-; qstr_F4___Complex_formati|F4 - Complex formations
+qstr_F4___Complex_formati|F4 - Formazioni complesse
 ; qstr_F7___Memorize_div._p|F7 - Memorize div. placement
 ; qstr_F8___Default_divisio|F8 - Default division placement
 ; qstr_F4___Ranks|F4 - Ranks
 ; qstr_F5___Shield_Wall|F5 - Shield Wall
-; qstr_F6___Wedge|F6 - Wedge
+qstr_F6___Wedge|F6 - Cuneo
 ; qstr_F7___Square|F7 - Square
-; qstr_F8___No_Formation|F8 - No Formation
+qstr_F8___No_Formation|F8 - Rompere le righe
 ; qstr_Extended_Formations_|Extended Formations and AI Options
 ; qstr_Put_player_in_divisi|Put player in division: 
 qstr_None|Nessuno
@@ -433,10 +433,10 @@ qstr_Poor|Povero
 qstr_Average|Media
 qstr_Rich|Ricco
 qstr_Very_Rich|Molto ricco
-; qstr_Strength|Strength
+qstr_Strength|Forza
 ; qstr_Agility|Agility
 ; qstr_Intelligence|Intelligence
-; qstr_Charisma|Charisma
+qstr_Charisma|Carisma
 ; qstr_You_ve_gained_{s6}_f|You've gained {s6} from gaining {s7}
 ; qstr_You_ve_lost_{s6}_fro|You've lost {s6} from losing {s7}
 qstr_{s50}_Caves|{s50} Caverne
@@ -597,7 +597,7 @@ qstr___Archer_formation_d|Formazione arcieri dismessa.
 ; qstr_Your_party_s_tactica|Your party's tactical skill limits how far away you can deploy your troops!
 ; qstr_...and_attack_enemy_|...and attack enemy {s1} division!
 ; qstr_{s2}:_returning_afte|{s2}: returning after destroying enemy {s1} division.
-; qstr_infantry|infantry
+qstr_infantry|Fanteria
 ; qstr_archer|archer
 ; qstr_cavalry|cavalry
 ; qstr_polearm|polearm
@@ -635,7 +635,7 @@ qstr_Something_wrong_not_|Qualcosa non va, non hai abbastanza truppe da rimuover
 ; qstr_loses_Faction_Strength_|loses Faction Strength due to the your success at the sea.
 ; qstr_You_spent_{reg67}_of|You spent {reg67} of your influence with {s1}, with {reg66} remaining.
 qstr_No_Troops_Left.|Nessuna Truppa Rimasta.
-; qstr_avoid_melee|avoid melee
+qstr_avoid_melee|evita lo scontro fisico
 ; qstr_stand_and_fight|stand and fight
 qstr_Everyone|Tutti
 ; qstr_Shield___{reg31}_|Shield (-{reg31})
@@ -644,7 +644,7 @@ qstr_Everyone|Tutti
 ; qstr_Horse_Archery___{reg|Horse Archery (-{reg31})
 ; qstr_Athletics___{reg31}_|Athletics (-{reg31})
 ; qstr_No_Skill_Penalty_Ass|No Skill Penalty Assigned
-; qstr_Inventory|Inventory
+qstr_Inventory|Inventario
 ; qstr_Show_stats|Show stats
 ; qstr_Show_item_details__|Show item details  
 ; qstr_Troop_detail|Troop detail
@@ -654,7 +654,7 @@ qstr_Everyone|Tutti
 ; qstr_{s1}Atributes:_^___S|{s1}Atributes: ^   Strength:^
 ; qstr_{s2}^{reg1}^|{s2}^{reg1}^
 ; qstr_{s1}___Agility:|{s1}   Agility:
-; qstr_{s2}{reg1}|{s2}{reg1}
+qstr_{s2}{reg1}|{s2}{reg1}
 ; qstr_{s1}Main_skills:_^|{s1}Main skills: ^
 ; qstr_{s1}___Power_Strike:|{s1}   Power Strike:^
 ; qstr_{s2}{reg1}^|{s2}{reg1}^
@@ -673,7 +673,7 @@ qstr_Everyone|Tutti
 ; qstr_{s1}___Crossbow:^|{s1}   Crossbow:^
 ; qstr_{s1}___Throwing:^|{s1}   Throwing:^
 ; qstr_{s1}___Slings:|{s1}   Slings:
-; qstr_{s2}_|{s2}-
+qstr_{s2}_|{s2}-
 ; qstr__Click_on_the_troop_|(Click on the troop to rotate it)^^Click on pieces of gear ^(helmet, armor, gloves and boots)^ to display them.
 ; qstr_ready_bows_and_missi|ready bows and missiles
 ; qstr_ready_side_arms|ready side arms
@@ -710,8 +710,8 @@ qstr__cancelled_the_{reg1|(Cancellati i {reg10} exp guadagnati uccidendo prigion
 qstr_Forming_ranks.|Formare i ranghi.
 ; qstr_{reg2?You:Your_mount|{reg2?You:Your mount} received {reg1} extra damage!
 ; qstr_{reg2?You_strike:You|{reg2?You strike:Your horse charges} for {reg1} bonus damage!
-; qstr_Division_Placement|Division Placement
-; qstr_Complex_Formations|Complex Formations
+qstr_Division_Placement|Disposizione delle Divisioni
+qstr_Complex_Formations|Formazioni Complesse
 ; qstr_Formations_turned_OF|Formations turned OFF in options menu
 ; qstr_Division_{reg1}_{s2}_g|Division {reg1} {s2} goes to its memorized position...
 ; qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
@@ -738,12 +738,12 @@ qstr_You_rally_your_troop|Sproni le tue truppe !
 qstr_{s5}_rallies_{reg65?|{s5} sprona {reg65?le sue:le sue} truppe !
 qstr_You_have_killed_{reg|Hai ucciso {reg1} nemici in questa battaglia !
 qstr_Your_bravery_inspire|Il tuo coraggio ispira le tue truppe !
-; qstr_Your_mount_has_falle|Your mount has fallen to the ground beneath you!
+qstr_Your_mount_has_falle|La tua cavalcatura è crollata a terra sotto di te!
 ; qstr_Receive_{reg22}_dama|Receive {reg22} damage.
 ; qstr_You_have_been_knocke|You have been knocked unconscious by {s22}.
 ; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
 ; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
-; qstr_A_bear_has_been_summ|A bear has been summoned to battle!
+qstr_A_bear_has_been_summ|Un orso è stato chiamato in battaglia!
 ; qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, your troops will position themselves and hold at the beginning of each battle, instead of blindly charging.^^To order your troops into formation, press 'J' for Ranks, 'K' for Shield-Wall, 'L' for Wedge, ';' for Square. To undo the formation, press 'U'. ^If your troops are fleeing, you can press 'V' to rally them. You get only a limited amount of rallies per battle, and the amount depends on your leadership and charisma.
 ; qstr_You_can_also_order_y|You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.
 ; qstr_The_Last_Days_of_the|The Last Days of the Third Age has implemented a Custom Camera in order to bypass the current camera limitation with regards to shorter races (e.g Orcs and Dwarves).^^Press CTRL + END to cycle through the 2 camera modes: Fixed Position and Free-Mode.^^Fixed position is the optimal position for all races, however it cannot be configured. You can press CTRL+Left/Right Arrow Keys to switch shoulders.^^Free-Mode Camera puts the character in the middle of the screen. You can press CTRL+Up/Down arrow keys to tilt the camera and CTRL+ Numpad +/- to zoom.^^See Info Pages for how to control the different camera modes.
@@ -754,18 +754,18 @@ qstr_You_receive_word_tha|Ti giungono voci secondo cui dei villaggi di Beorn son
 qstr_You_receive_word_that|Ti giungono notizie secondo cui i Capi dei Cacciatori dell'Anello sono stati visti viaggiare per Mordor, trasportando una cassa. La fazione di Mordor acquisisce potenza.
 ; qstr_Enemy_reinforcements|Enemy reinforcements have arrived
 ; qstr_Yarrrr!!|Yarrrr!!
-; qstr_Get_all_of_them!|Get all of them!
+qstr_Get_all_of_them!|Prendeteli tutti!
 ; qstr_Kill_them_all!|Kill them all!
-; qstr_Toss_them_overboard!|Toss them overboard!
+qstr_Toss_them_overboard!|Buttateli fuori bordo!
 ; qstr_It_is_a_good_day_to_|It is a good day to die!
 ; qstr_All_hands_on_deck!_T|All hands on deck! Throw them back!
-; qstr_Ally_reinforcements_|Ally reinforcements have arrived
+qstr_Ally_reinforcements_|I rinforzi alleati sono arrivati
 ; qstr_Forward_men!|Forward, men!
 ; qstr_Leave_none_of_these_|Leave none of these filth standing!
-; qstr_End_them_all!|End them all!
+qstr_End_them_all!|Finiteli tutti!
 ; qstr_Drive_them_back!|Drive them back!
-; qstr_Protect_the_City!|Protect the City!
-; qstr_Forward!_Board_them!|Forward! Board them!
+qstr_Protect_the_City!|Proteggi la città!
+qstr_Forward!_Board_them!|Avanti! All'arrembaggio!
 ; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
 qstr_Reached_Gauntlet_wav|Raggiunta l'ondata sfida {reg1} !
 qstr_Ballista:_out_of_amm|Ballista: munizioni terminate !
@@ -797,11 +797,11 @@ qstr_The_sorcerer_is_flee|Lo stregone sta scappando ! Uccidilo !
 qstr_The_sorcerer_is_dead|Lo stregone è morto !
 qstr_The_battle_is_won!|La battaglia è vinta !
 ; qstr_A_band_of_tribal_orc|A band of tribal orcs have appeared!
-; qstr_Gaaaar!!_We_wants_th|Gaaaar!! We wants those human meat!
+qstr_Gaaaar!!_We_wants_th|Gaaaar!! Vogliamo quella carne umana!
 ; qstr_{s31}_scouts_have_ap|{s31} scouts have appeared!
 ; qstr_Those_are_ours!_We_h|Those are ours! We have been tracking them since they left! No one stands in our way!
-; qstr_Trolls_appeared!|Trolls appeared!
-; qstr_Gaaaar!!|Gaaaar!!
+qstr_Trolls_appeared!|Sono apparsi i troll!
+qstr_Gaaaar!!|Gaaaar!!
 ; qstr_{s31}_scouts_have_app|{s31} scouts have appeared to aid the refugees!
 ; qstr_Hurry_men!_Help_the_|Hurry, men! Help the refugees! Kill all the scum and do not let them escape!
 ; qstr_Cannot_leave|Cannot leave
@@ -1255,7 +1255,7 @@ qstr_Your_wish_is_my_comm|Ogni tuo desiderio è un ordine per me.
 ; qstr_Saruman_in_Isengard_|Saruman in Isengard and the Wildmen of Dunland
 ; qstr_Orcs_of_Moria_and_Do|Orcs of Moria and Dol Guldur
 ; qstr_Orcs_of_Gundabad_and|Orcs of Gundabad and the Warriors of Rhun
-; qstr_Men_of_Gondor|Men of Gondor
+qstr_Men_of_Gondor|Uomini di Gondor
 qstr_Riders_of_Rohan|Cavallerizzi di Rohan
 ; qstr_Elves_of_Imladris_an|Elves of Imladris and Lothlorien
 ; qstr_Men_of_Dale_Dwarves_|Men of Dale, Dwarves of Erebor, Beorn's kinsmen, and the Elves of Mirkwood
@@ -1269,11 +1269,11 @@ qstr_What?_Let_me_see_tha|Cosa? Fammi vedere... Hmmm. È un bene che me lo hai p
 qstr_Give_me_that!_Hrmph!_|Dammelo ! Hrmph ! Sei un buon servitore del tuo padrone, {playername}, ma sarai morto in breve tempo. Non ora, però, sparisci.
 ; qstr_My_king|My king
 qstr_Lord|Lord
-; qstr_my_king|my king
+qstr_my_king|mio re
 ; qstr_lord|lord
 ; qstr_our|our
 ; qstr_your|your
-; qstr_Moria_and_Gundabad|Moria and Gundabad
+qstr_Moria_and_Gundabad|Moria e Gundabad
 qstr_Moria|Moria
 qstr_Gundabad|Gundabad 
 ; qstr_You_swear_an_oath_of|You swear an oath of vengeance against {s3}. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^.
@@ -1364,7 +1364,7 @@ qstr__under_your_orders|, ai tuoi ordini
 ; qstr_elite_level_troops_f|elite level troops from
 ; qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6} {s7}.
 ; qstr_I_want_you_to_person|I want you to personally slay
-; qstr_I_want_you_and_your_|I want you and your men to kill
+qstr_I_want_you_and_your_|Voglio che tu e i tuoi uomini uccidiate
 ; qstr_{playername}_you_nee|{playername}, you need to earn my respect and that of your men. {s6} {reg22} {s7} troops!
 ; qstr_{s9}_wants_you_to_per|{s9} wants you to personally kill {reg22} {s6} troops.
 ; qstr_{s9}_wants_you_and_y|{s9} wants you and your men to kill {reg22} {s6} troops.
@@ -1494,7 +1494,7 @@ qstr_What_do_you_want?|Che cosa vuoi ?
 ; qstr_Your_Orcs_&_Uruks_at|Your Orcs & Uruks ate {reg1} men!
 ; qstr_Yes_master!_As_you_c|Yes master! As you command, master!
 ; qstr_Harr_harr_harr!_You_|Harr harr harr! You don't frighten ME! Next time it's YOU that we eat!
-; qstr_One_{s6}_left_the_pa|One {s6} left the party.
+qstr_One_{s6}_left_the_pa|Un'unita di {s6} ha lasciato la compagnia.
 ; qstr_I_understand._I_will|I understand. I will stay with you. For a while.
 ; qstr_I_have_played_my_rol|I have played my role for many long years, for many lifetimes of mortal men. This war is for Mankind to fight. I will leave for the West and some may decide to follow me.
 ; qstr_{reg1}_Veteran_Elves|{reg1} Veteran Elves decided to leave your party.
@@ -1523,7 +1523,7 @@ qstr_town|città
 qstr_village|villaggio 
 qstr_The_{s9}_of_{s13}_ha|Il {s9} di {s13} ti ha chiesto di occuparti delle tribù di orchi nelle campagne limitrofe.
 qstr_{s9}_of_{s3}_asked_y|{s9} di {s3} ti ha chiesto di portare {reg5} unità di {s6} a {s10} a {s4} in {reg6} giorni.
-; qstr_The_{s9}_of_{s4}_ask|The {s9} of {s4} asked you to reinforce {s3} with at least {reg5} troops within {reg6} days. Speak to {s3}'s barracks master. The quality of the troop you provide does not matter.
+qstr_The_{s9}_of_{s4}_ask|Il {s9} di {s4} ti ha chiesto di dare rinforzi a {s3} con almeno {reg5} soldati entro {reg6} giorni. Vai a parlare con il comandante della caserma di {s3}. La qualità e il tipo di truppa che fornirai non ha importanza.
 ; qstr_You_have_reinforced_{|You have reinforced {s3} with 0 troops.
 ; qstr_Thank_you_for_offeri|Thank you for offering to help, {playername}.^^The caravans going to and fro the city have been attacked multiple times by {s6}. They are getting bolder with every ambush, and are moving closer and closer to the city.
 ; qstr_Good_of_you_to_ask_{|Good of you to ask, {playername}.^^There are {s6} moving about the area, thinking that they are in charge. No one is doing anything so they are getting bolder and are taking what is rightfully ours.
@@ -1566,7 +1566,7 @@ qstr_{s4}^We_are_patrolli|{s4}^Stiamo pattugliando intorno a {s11}.
 qstr_{s4}^We_are_carrying|{s4}^Stiamo trasportando risorse da {s11} a {s12}.
 qstr_{s4}^We_are_escortin|{s4}^Stiamo scortando prigionieri a {s12}.
 qstr_Greetings_do_you_nee|Salute, ti servono rinforzi?
-; qstr_I_will_need_your_hel|I will need your help, please follow me. [Costs {reg1}/{reg2} influence]
+qstr_I_will_need_your_hel|Avrò bisogno del tuo aiuto, ti prego di seguirmi. [Costo {reg1}/{reg2} influenza]
 ; qstr_You_and_your_men_mus|You and your men must follow me. [Costs {reg1}/{reg2} influence]
 ; qstr_It_looks_like_you_ha|It looks like you have too many followers already.
 ; qstr_Why_do_you_need_us?_|Why do you need us? You have all you need following you already!

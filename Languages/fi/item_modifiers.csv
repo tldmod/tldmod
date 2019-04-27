@@ -1,40 +1,40 @@
-; imod_plain|Plain %s
+imod_plain|Tavallinen %s
 imod_cracked|Huono %s
 imod_rusty|Karu %s
 imod_bent|Taipunut %s
-; imod_chipped|Chipped %s
-; imod_battered|Battered %s
+imod_chipped|Lohjennut %s
+imod_battered|Kolhiintunut %s
 imod_poor|Huono %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Yksinkertainen %s
+imod_old|Muinainen %s
 imod_cheap|Halpa %s
-; imod_fine|Fine %s
+imod_fine|Mainio%s
 imod_well_made|Hyvin Tehty %s
 imod_sharp|Terävä %s
-; imod_balanced|Balanced %s
-; imod_tempered|Tempered %s
+imod_balanced|Tasapainoinen %s
+imod_tempered|Muunneltu %s
 imod_deadly|Tappava %s
-; imod_exquisite|Exquisite %s
-; imod_masterwork|Masterwork %s
+imod_exquisite|Ainutlaatuinen %s
+imod_masterwork|Mestarillinen %s
 imod_heavy|Raskas %s
 imod_strong|Vahva %s
-; imod_powerful|Powerful %s
-; imod_tattered|Tattered %s
-; imod_ragged|Rough %s
-; imod_rough|Rough %s
-; imod_sturdy|Sturdy %s
-; imod_thick|Robust %s
-; imod_hardened|Hardened %s
-; imod_reinforced|Reinforced %s
-; imod_superb|Superb %s
-; imod_lordly|Masterwork %s
-; imod_lame|Lame %s
-; imod_swaybacked|Swaybacked %s
-; imod_stubborn|Stubborn %s
-; imod_timid|Timid %s
-; imod_meek|Meek %s
-; imod_spirited|Spirited %s
-; imod_champion|Champion %s
+imod_powerful|Voimakas %s
+imod_tattered|Riekalainen %s
+imod_ragged|Rosoinen %s
+imod_rough|Rosoinen %s
+imod_sturdy|Tukeva %s
+imod_thick|Vankka %s
+imod_hardened|Kovetettu %s
+imod_reinforced|Vahvistettu %s
+imod_superb|Erinomainen %s
+imod_lordly|Mestarillinen %s
+imod_lame|Heikko %s
+imod_swaybacked|Notkoselkäinen %s
+imod_stubborn|Itsepintainen %s
+imod_timid|Arka %s
+imod_meek|Nöyrä %s
+imod_spirited|Kiihkeä %s
+imod_champion|Mestari %s
 imod_fresh|Tuore %s
 imod_day_old|Päivän vanha %s
 imod_two_day_old|Kaksi Päivää vanha %s

@@ -110,7 +110,7 @@ qstr_Restrict_Player_Equi|Ограничения на снаряжение (не
 qstr_Battle_Formations_an|Формации и улучшенный ИИ в сражениях:
 qstr_Native|Оригинал
 qstr_TLD_FormAI__Original|ИИ формаций TLD (Оригинал)
-; qstr_TLD_New_FormAI|TLD New FormAI
+qstr_TLD_New_FormAI|TLD New FormAI
 qstr_Advanced_Siege_AI:__|Продвинутый ИИ на осадах:
 qstr_On|Вкл
 qstr_Town_NPCs_Always_Acc|Городские НПЦ всегда доступны из меню:
@@ -702,7 +702,7 @@ qstr_Fixed_Camera___Right|Закреплённая камера - правое �
 qstr_Fixed_Camera___Left_|Закреплённая камера - левое плечо
 qstr_While_visiting_towns|Посещая города, поселки и лагеря, вы можете общаться с людьми, гуляющими вокруг. Члены разных фракций могут рассказывать разные вещи: одни позволят вам самим задать вопрос, другие поделятся интересными слухами. Они могут дать вам лучшее понимание их культуры и фракции, могут помочь найти секретные локации или поделятся советами и хитростями для путешествий по Диким землям и сражений в Войне Кольца.
 qstr_Cannot_leave_now.|Сейчас нельзя уйти.
-; qstr_You_have_found_the_l|You have found the local smithy... (+{reg3} XP)
+qstr_You_have_found_the_l|Вы обнаружили местную кузницу... (+50 ХР)
 ; qstr_You_have_found_the_lo|You have found the local authority...(+{reg3} XP)
 ; qstr_You_have_found_the_loc|You have found the local warehouse...(+{reg3} XP)
 ; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
@@ -1368,7 +1368,7 @@ qstr__under_your_orders|, под вашим руководством
 ; qstr_{playername}_you_nee|{playername}, you need to earn my respect and that of your men. {s6} {reg22} {s7} troops!
 ; qstr_{s9}_wants_you_to_per|{s9} wants you to personally kill {reg22} {s6} troops.
 ; qstr_{s9}_wants_you_and_y|{s9} wants you and your men to kill {reg22} {s6} troops.
-; qstr_{playername}_we_have_|{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ We must intercept the fleet before it reaches the city. Hasten to {s6}, and speak to the local authorities.
+qstr_{playername}_we_have_|{playername}, мы получили мрачные вести. Корсары Умбара становятся все смелее, и пока мы говорим, их флот собирается недалеко от города {s6} . В настоящий момент они уже плывут вдоль береговой линии и скоро достигнут самого города.^^ Мы должны перехватить флот до того, как он его достигнет. Поспешите к {s6}, и поговорите с местными властями.
 ; qstr_{playername}_we_have_r|{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must intercept the fleet before it reaches the city. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!
 ; qstr_If_you_seek_pillage_|If you seek pillage and plunder, here is a matchless opportunity, {playername}.^^ A Corsair fleet is launching from the port at {s7}, and will set a course straight for {s6}, which is ripe for the plucking! Join them in their assault, and share in the spoils!
 ; qstr_The_soft_weaklings_o|The soft weaklings of Esgaroth are no match for our swift horsemen and ferocious warriors, {playername}. This is known. The Lake-men believe themselves safe, across the water from us, but we shall soon show them otherwise!^^ We have made boats, and rafts, good enough to carry our warriors straight across the lake. They won't be expecting us! ^^Go to the Main Camp, and speak to the camp commander if you wish to join the assault.

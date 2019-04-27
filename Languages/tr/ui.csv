@@ -46,8 +46,8 @@ ui_value_denars|%d Araştırma Puanları
 ui_cannot_be_used_on_horseback|Binek üzerinde kullanılamaz
 ui_upgrade_to_value|Upgrade to %s
 ui_notification_cant_upgrade|(Birlik veriyorken yükseltme yapılamaz)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch (Unused)
+ui_lance_control|Kargı Kontrolü:
+ui_manual_easy|Manuel (Kolay)
+ui_manual_hard|Manuel (Zor)
+ui_campaign_ai|Kampanya AI (Kullanılmıyor):
+ui_crouch|çömelme (Kullanılmıyor)

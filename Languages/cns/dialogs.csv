@@ -91,7 +91,7 @@ dlga_member_trade:do_member_trade.1|没问题，全都在这里了。
 dlga_member_talk:view_member_char_requested|告诉我你都会些什么？
 dlga_view_member_char_requested:do_member_view_char|好的，让我告诉你…
 dlga_member_talk:member_separate|我们需要分开一会。
-; dlga_member_talk:ziggy_ask_more|Zigûrphel, I require another Wolf of you. Can you do this?
+dlga_member_talk:ziggy_ask_more|Zigûrphel, 我可以要你的狼嗎?
 dlga_ziggy_ask_more:close_window|你无命可奉献，指挥官
 dlga_ziggy_ask_more:ziggy_not_rested|再给我点时间，指挥官。这个仪式使我筋疲力尽。
 dlga_ziggy_ask_more:close_window.1|我只能控制这么多。我需要变得更强大…
@@ -134,15 +134,15 @@ dlga_event_triggered:ziggy_ask_prisoners.1|祝贺你的胜利，指挥官。也�
 dlga_ziggy_ask_prisoners:ziggy_ask_why|我已经听够了你的不幸遭遇。有话快说，你要一个囚犯干什么？
 dlga_ziggy_ask_why:ziggy_reason|冷静，冷静，指挥官！让我去处理这杂乱事，我会带给你惊喜。
 dlga_ziggy_reason:ziggy_yes|非常有趣。很好。我会给予你我的俘虏之一。。。小心照顾。
-; dlga_ziggy_reason:ziggy_no|Not at this time, Zigûrphel. Go back to your post.
+dlga_ziggy_reason:ziggy_no|Zigûrphel, 還不是時候。回去你的崗位。
 dlga_ziggy_no:close_window|很好，指挥官。但是只有傻瓜才会错过我的礼物
 dlga_ziggy_no:close_window.1|好的，指挥官。
 dlga_ziggy_yes:ziggy_choose_prisoners|很好，你想给我哪一个？
 dlga_ziggy_choose_prisoners:ziggy_no|我没有我想提供的。
-; dlga_ziggy_chosen_prisoner:ziggy_ritual|Thank you, Commander! A moment... ah yes, this one should do nicely... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual|指揮官，謝謝你！等等... 這個會令你做得更好... (咒語)
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|你在做什麼? 做一隻驕兵? 你值得嗎? 我現在要給你一個確實恐懼的理由。(咒語)
 ; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
-; dlga_ziggy_ritual:ziggy_ritual_succeed.1|Always such a joy to bring a foe properly to heel.
+dlga_ziggy_ritual:ziggy_ritual_succeed.1|将敌人刚好放倒总是那么令人高兴。
 ; dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!
 ; dlga_ziggy_ritual_succeed:close_window|And of course, allow me but a little rest; then you may pass another captive into my care. I will do the rest.
 dlga_companion_objection_response:close_window|谢谢，感谢你的支持。
@@ -241,9 +241,9 @@ dlga_defend_village_failed:close_window|我下次会做得更好的。
 dlga_lord_start:lord_generic_mission_completed.4|我们看到{s12}附近的村庄闪着火光。 我们听到尖叫。然而这只是开始，{playername}。 ^^战争就要来了。
 dlga_lord_start:raid_village_failed|{playername}，我们看到一些你的人疯狂的逃离了{s12}附近的村庄。你还有脸回来？^^战争已成必然，但像这样的惨败，你恐怕将是这场战争的第一批伤亡者。
 dlga_raid_village_failed:close_window|我下次会做得更好的。
-; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
+dlga_lord_start:lord_generic_mission_completed.5|你的手下见证了你在战场上的勇猛，{playername}。你向他们展示了我们至高无上的力量。
 dlga_lord_start:kill_quest_failed|我听说你没能完成我给你的任务。 {playername}，你真是令人失望。
-; dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
+dlga_lord_start:lord_generic_mission_completed.6|你的手下见证了你在战场上的勇猛，{playername}。请让我向你表示敬意。
 dlga_kill_quest_failed:close_window|我会做得更好的。
 dlga_lord_start:lord_follow_spy_completed|{s4}
 dlga_lord_start:lord_follow_spy_half_completed|该死的！{playername}，我要的是两个囚犯，但你只给我带回来一人！这和完全没有本质上没多大区别，因为这个间谍知道的一切我都知道，我真正需要的是接头人。一半的工作一半的奖励，拿着钱快点走人！
@@ -252,11 +252,11 @@ dlga_lord_start:lord_follow_spy_failed|说实话，{playername}，你比无能�
 dlga_lord_follow_spy_half_completed:lord_pretalk|我尽力了，{s65}。
 dlga_lord_follow_spy_completed:lord_pretalk|谢谢你，{s65}。
 dlga_lord_follow_spy_failed:lord_pretalk|唉，随你的便吧，{s65}。
-; dlga_lord_start:lord_generic_mission_completed.7|I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.
+dlga_lord_start:lord_generic_mission_completed.7|我收到报告说所有的难民都被安全得护送到了目的地。谢谢你的帮助，{playername}。在这场战争中，最受折磨的还是这帮无辜的人。
 dlga_lord_start:lord_defend_refugees_failed|{playername}，我接到报告称，所有的难民都被劫掠者阻截并屠杀了，这真是让人心痛……
 dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|请原谅我，{s65}，我没能保护他们。
 dlga_lord_defend_refugees_failed_1a:lord_pretalk|城门失火，殃及池鱼。{playername}，将来会有更多的难民，希望你下次能够准备更加充分。
-; dlga_lord_start:lord_defend_refugees_half_completed|I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
+dlga_lord_start:lord_defend_refugees_half_completed|我接到报告说只有{reg17}的难民到达了目的地。太不幸了，但这就是战争的代价。接下来可能会有更多的难民，{playername}。希望下次你能准备得更充分一点。
 dlga_lord_defend_refugees_half_completed:lord_pretalk|大人，我会准备得更好的。
 ; dlga_lord_start:lord_generic_mission_completed.8|I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.
 ; dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?
@@ -312,7 +312,7 @@ dlga_dwarf_lord_book:dwarf_lord_book_give|请讲, {playername}。
 ; dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|I ventured deep into the Mines of Moria and found record of Balin's company.
 ; dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|You speak of my kin as though they are a memory. Is it so?
 ; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...
-; dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'We cannot get out. We cannot get out...They are coming.'
+dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'我们不能出去，我们不能出去……他们来了。'
 ; dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.
 ; dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|You have done Erebor a great service, {playername}, and your deed will not go unrewarded.
 dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|谢谢你，{s3}。
@@ -397,7 +397,7 @@ dlga_marshall_suggest:lord_pretalk|没什么，我相信你目前的判断。
 dlga_player_siege_discuss:player_siege_discuss_1|洗耳恭听，大人。
 ; dlga_player_siege_resource_check:lord_pretalk|No, the time is not yet right.
 ; dlga_player_siege_check_passed:player_siege_accept|Very well. Go, {playername}, and march with the blessings of {s2}. We are counting on you to lead our people to victory.
-; dlga_player_siege_accept:close_window|Thank you, my Lord. I will not let you and {s2} down.
+dlga_player_siege_accept:close_window|谢谢，大人。我不会让你和{s2}失望的。
 dlga_marshall_answer:close_window|{playername}，我尊重你的判断。我现在就派出传令兵集结部队。跟我来，我们立刻向{s4}进军！
 dlga_lord_talk:deliver_gift_1|我从{s3}那里带来了{s1}的礼物送给{s2}人民
 dlga_send_gift_1:lord_pretalk|你已经在{s4}了，{playername}，最好第一时间去交付。
@@ -418,7 +418,7 @@ dlga_lord_give_order:lord_give_order_details_ask.2|与敌交战…[花费{reg1}/
 ; dlga_lord_give_order:lord_give_order_assault|Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]
 ; dlga_lord_give_order_assault:lord_pretalk|{s4} is directing this siege. I suggest you speak to them.
 ; dlga_lord_give_order_assault:lord_pretalk.1|Our preparations are not yet ready. We need another {s11}
-; dlga_lord_give_order_assault:close_window|Very well -- Attack the walls!
+dlga_lord_give_order_assault:close_window|很好……开始攻城！
 dlga_lord_give_order:lord_give_order_stop|我暂时不需要你，你可以自由行动。
 dlga_lord_give_order:lord_pretalk|没什么。
 dlga_lord_give_order_details_ask:lord_give_order_details|哪里？
@@ -458,7 +458,7 @@ dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|我还不能做�
 ; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Consider it done.
 ; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|I do not have the time for this.
 dlga_lord_mission_destroy_scout_camp_accept:close_window|我们会等你成功的消息。
-; dlga_lord_mission_destroy_scout_camp_reject:close_window|I see. That is disappointing.
+dlga_lord_mission_destroy_scout_camp_reject:close_window|我知道了。真是令人失望。
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on its way to a village near {s12}.
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|你能够派出一些援军么？
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|我们可以，但动员起来需要时间。我们担心到那时就太晚了。^^你和你的人看起来现在就能骑马离开。你能帮忙守护那个村庄吗？
@@ -669,7 +669,7 @@ dlga_caravan_help5:close_window|我会铭记的。谢谢你，托巴尔，注意
 ; dlga_start:caravan_res_tut2|*snicker* I s’pose I’m the leader now. You are a fierce warrior, yes! Take your share of the loot. Some o’ the lads were betting on you being warg meat, but not me, oh no. I saw you fight. Won’t bet against you!^^Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_caravan_res_tut1:caravan_noduel|(资源点教程)^^ 能在魔多用于交易的资源点和你在初始派系取得的的资源点不同，你要在魔多取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
 dlga_caravan_res_tut2:caravan_duel1|(资源点教程)^^ 能在魔多用于交易的资源点和你在初始派系取得的的资源点不同，你要在魔多取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
-; dlga_caravan_noduel:caravan_duel2|I could kill him as easily as I spit! But I have nothing to prove to the likes of him.
+dlga_caravan_noduel:caravan_duel2|我吐口痰的功夫就能杀死他！我没必要向他这样的人证明什么。
 ; dlga_caravan_duel1:caravan_duel2|What I do is none of your affair, Orc. But I will help our allies and slay our foes.
 ; dlga_caravan_duel2:caravan_fac_tut|Fair enough, fair enough! Look at these cowering wretches around us! Ha! They fear you, oh yes, as they should, as they should! I don’t. Heh. But then, I owe you a favour, don’t I! I’ll do you a good turn in my way. I’ll tell the Bosses about you today. Word’ll get around. And when the Bosses hear enough about you… why, could be they’d have something special for you. Gifts, power, respect! I’m going back now for a nice big helping myself!
 dlga_caravan_fac_tut:caravan_duel3|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
@@ -696,7 +696,7 @@ dlga_kill_scout_3:kill_scout_4|(资源点教程)^^ 能在魔多用于交易的�
 ; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_kill_scout_6:kill_scout_7|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
 ; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!
-; dlga_kill_scout_8:close_window|As you wish, as you wish. This way!
+dlga_kill_scout_8:close_window|好吧，好吧。走这边！
 dlga_woodelf_help_1:woodelf_help_2.1|我从没见过如此大的半兽人。真是些肮脏的东西…不用担心，我是一名正为未来大战做准备的士兵。
 dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？毫无疑问！你精湛的武艺我刚刚已经见识过了。看来今天的确走运，我应该趁此机会返回村庄，把这群肮脏野兽的消息通知给我的村民们。
 dlga_woodelf_help_3:close_window|祝你一路平安，托巴尔。我想我们会再见面的。
@@ -715,7 +715,7 @@ dlga_healers_injured_check:close_window|现在不行
 ; dlga_start:sad_elf_1|Look, my {lord/lady}, gulls! A wonder they are to me and a trouble to my heart.
 ; dlga_sad_elf_1:sad_elf_2|I hear their voices. What news do they bring?
 ; dlga_sad_elf_2:sad_elf_choice|Ah, tales from the sea. And from beyond. My {lord/lady}, I have grown weary of this war we fight, weary of this soil we drag ourselves on. I fear Ennor (Middle-Earth) is lost for me. Let me leave!
-; dlga_sad_elf_choice:sad_elf_leave|I feel your pain. You have done your share in this war. You may leave.
+dlga_sad_elf_choice:sad_elf_leave|我可以理解你的苦衷。你已经在战争中尽了你应尽的职责了。你现在可以走了。
 ; dlga_sad_elf_choice:sad_elf_no|The Elves must not abandon Middle-earth to the shadow. This war we fight not for ourselves and each of us will have to play their role. I cannot give you leave. [Leadership Check]
 ; dlga_sad_elf_leave:close_window|Thank you, my {lord/lady}!^^To the Sea, to the Sea! The white gulls are crying,^The wind is blowing, and the white foam is flying.^West, west away, the round sun is falling.
 dlga_start:close_window.11|你来得正好。让我们合并我们的军队给敌人好好上一课。

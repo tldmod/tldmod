@@ -142,30 +142,30 @@ trp_rhun_heavy_noble_cavalry|Cavaliere Nobile Pesante di Rhun
 trp_rhun_heavy_noble_cavalry_pl|Cavalleria Nobile Pesante del Rhûn 
 trp_dorwinion_noble_of_rhun|Nobile Dorwinion del Rhûn 
 trp_dorwinion_noble_of_rhun_pl|Nobili Dowinion del Rhûn 
-trp_i1_dwarven_apprentice|Nano Apprendista
-trp_i1_dwarven_apprentice_pl|Nani Apprendisti
-trp_i2_dwarven_warrior|Guerriero Nano
-trp_i2_dwarven_warrior_pl|Guerrieri Nani
+trp_i1_dwarven_apprentice|Nano Novizio
+trp_i1_dwarven_apprentice_pl|Nani Novizi
+trp_i2_dwarven_warrior|Guerriero Nanico
+trp_i2_dwarven_warrior_pl|Guerrieri Nanici
 trp_i3_dwarven_hardened_warrior|Guerriero Nano Temprato
-trp_i3_dwarven_hardened_warrior_pl|Guerrieri Nani Temprati
-trp_i4_dwarven_spearman|Nano Lanciere
-trp_i4_dwarven_spearman_pl|Nani Lancieri
-trp_i5_dwarven_pikeman|Picchiere Nano
-trp_i5_dwarven_pikeman_pl|Picchieri Nani
-trp_i6_dwarven_longpikeman|Alabardiere Nano
-trp_i6_dwarven_longpikeman_pl|Alabardieri Nani
+trp_i3_dwarven_hardened_warrior_pl|Guerrieri Nanici Temprati
+trp_i4_dwarven_spearman|Picchiere Nanico
+trp_i4_dwarven_spearman_pl|Picchieri Nanici
+trp_i5_dwarven_pikeman|Picchiere Nanico
+trp_i5_dwarven_pikeman_pl|Lancieri Nanici
+trp_i6_dwarven_longpikeman|Alabardiere Nanico
+trp_i6_dwarven_longpikeman_pl|Alabardieri Nanici
 trp_i4_dwarven_axeman|Nano con Ascia
 trp_i4_dwarven_axeman_pl|Nani con Ascia
 trp_i5_dwarven_expert_axeman|Nano Esperto con Ascia
 trp_i5_dwarven_expert_axeman_pl|Nani Esperti con Ascia
 trp_i6_longbeard_axeman|Nano Barbuto con Ascia 
 trp_i6_longbeard_axeman_pl|Nani Barbuti con Ascia
-trp_a2_dwarven_lookout|Osservatore Nano
-trp_a2_dwarven_lookout_pl|Vedette dei Nani
-trp_a3_dwarven_scout|Esploratore Nano
-trp_a3_dwarven_scout_pl|Esploratori Nani
+trp_a2_dwarven_lookout|Osservatore Nanico
+trp_a2_dwarven_lookout_pl|Vedette Naniche
+trp_a3_dwarven_scout|Nano Esploratore
+trp_a3_dwarven_scout_pl|Esploratori Nanici
 trp_a4_dwarven_bowman|Arciere Novizio Nano
-trp_a4_dwarven_bowman_pl|Arcieri Novizi Nani
+trp_a4_dwarven_bowman_pl|Arcieri Nanici
 ; trp_i6_dwarven_longaxeman|Longaxe Dwarf
 ; trp_i6_dwarven_longaxeman_pl|Longaxe Dwarves
 ; trp_i3_iron_hills_warrior|Iron Hills Warrior
@@ -419,13 +419,13 @@ trp_i2_guardsman_of_rohan_pl|Guardie di Rohan
 trp_i3_footman_of_rohan|Fante di Rohan
 trp_i3_footman_of_rohan_pl|Fanti di Rohan
 trp_i4_veteran_footman_of_rohan|Fante veterano di Rohan
-trp_i4_veteran_footman_of_rohan_pl|Fanti veterani di Rohan
-trp_i5_elite_footman_of_rohan|Fante d'élite di Rohan
-trp_i5_elite_footman_of_rohan_pl|Fanti d'élite di Rohan
-trp_i6_footman_guard_of_rohan|Guardia amico del popolo di Rohan
-trp_i6_footman_guard_of_rohan_pl|Guardie amico del popolo di Rohan
+trp_i4_veteran_footman_of_rohan_pl|Fanti Veterani di Rohan
+trp_i5_elite_footman_of_rohan|Fante d'Elite di Rohan
+trp_i5_elite_footman_of_rohan_pl|Fanti d'Elite di Rohan
+trp_i6_footman_guard_of_rohan|Guardia dell'Ordine di Folcwine di Rohan
+trp_i6_footman_guard_of_rohan_pl|Guardie dell'Ordine di Folcwine di Rohan
 trp_i6_frealaf_raider|Cacciatore dell'ordine di Frealaf
-trp_i6_frealaf_raider_pl|Cacciatori dell'ordine di Frealaf
+trp_i6_frealaf_raider_pl|Cacciatori dell'Ordine di Frealaf
 ; trp_i5_raider_of_rohan|Raider of Rohan
 ; trp_i5_raider_of_rohan_pl|Raiders of Rohan
 trp_i6_warden_of_methuseld|Guardiano di Meduseld
@@ -433,11 +433,11 @@ trp_i6_warden_of_methuseld_pl|Guardiani di Meduseld
 trp_ac3_skirmisher_of_rohan|Schermagliatore di Rohan
 trp_ac3_skirmisher_of_rohan_pl|Schermagliatori di Rohan
 trp_ac4_veteran_skirmisher_of_rohan|Schermagliatore veterano di Rohan
-trp_ac4_veteran_skirmisher_of_rohan_pl|Schermagliatori veterani di Rohan
+trp_ac4_veteran_skirmisher_of_rohan_pl|Schermagliatori Veterani di Rohan
 trp_ac5_elite_skirmisher_of_rohan|Schermagliatore d'élite di Rohan
 trp_ac5_elite_skirmisher_of_rohan_pl|Schermagliatori d'élite di Rohan
 trp_ac6_skirmisher_guard_of_rohan|Guardia dell'ordine di Thengel di Rohan
-trp_ac6_skirmisher_guard_of_rohan_pl|Guardie dell'ordine di Thengel di Rohan
+trp_ac6_skirmisher_guard_of_rohan_pl|Guardie dell'Ordine di Thengel di Rohan
 trp_c4_lancer_of_rohan|Lanciere di Rohan
 trp_c4_lancer_of_rohan_pl|Lancieri di Rohan
 trp_c5_elite_lancer_of_rohan|Lanciere d'élite di Rohan
@@ -454,7 +454,7 @@ trp_c4_veteran_rider_of_rohan|Cavallerizzo veterano di Rohan
 trp_c4_veteran_rider_of_rohan_pl|Cavallerizzi veterani di Rohan
 trp_c5_elite_rider_of_rohan|Cavallerizzo d'élite di Rohan
 trp_c5_elite_rider_of_rohan_pl|Cavallerizzi d'élite di Rohan
-trp_c6_rider_guard_of_rohan|Guardia dell'ordine di Eorl di Rohan
+trp_c6_rider_guard_of_rohan|Guardia dell'Ordine di Eorl di Rohan
 trp_c6_rider_guard_of_rohan_pl|Guardie dell'ordine di Eorl di Rohan
 ; trp_i6_2h_guard_of_rohan|Helm Guard of Rohan
 ; trp_i6_2h_guard_of_rohan_pl|Helm Guards of Rohan
@@ -556,17 +556,17 @@ trp_easterling_veteran_skirmisher|Schermagliatore Veterano Variag
 trp_easterling_veteran_skirmisher_pl|Schermagliatori Veterani Variag
 trp_easterling_elite_skirmisher|Schermagliatore Pesante Variag
 trp_easterling_elite_skirmisher_pl|Schermagliatori Pesanti Variag
-trp_i1_corsair_youth|Marinaio Umbar
-trp_i1_corsair_youth_pl|Marinai Umbar
-trp_i2_corsair_warrior|Guerriero Umbar
-trp_i2_corsair_warrior_pl|Guerrieri Umbar
+trp_i1_corsair_youth|Marinaio di Umbar
+trp_i1_corsair_youth_pl|Marinai di Umbar
+trp_i2_corsair_warrior|Guerriero di Umbar
+trp_i2_corsair_warrior_pl|Guerrieri di Umbar
 ; trp_i3_corsair_spearman|Spearman of Umbar
 ; trp_i3_corsair_spearman_pl|Spearmen of Umbar
 ; trp_i4_corsair_raider|Corsair Raider
 ; trp_i4_corsair_raider_pl|Corsair Raiders
 trp_i5_corsair_night_raider|Razziatore Corsaro Notturno
 trp_i5_corsair_night_raider_pl|Razziatori Corsari Notturni
-trp_a2_corsair_marine|Marinaio di Umbar
+trp_a2_corsair_marine|Marittimo di Umbar
 trp_a2_corsair_marine_pl|Marinai di Umbar
 trp_a3_corsair_marksman|Tiratore Scelto di Umbar
 trp_a3_corsair_marksman_pl|Tiratori Scelti di Umbar
@@ -579,7 +579,7 @@ trp_i3_corsair_swordsman_pl|Spadaccini di Umbar
 trp_i4_corsair_veteran_swordsman|Spadaccino Veterano di Umbar
 trp_i4_corsair_veteran_swordsman_pl|Spadaccini Veterani di Umbar
 trp_i5_corsair_master_swordsman|Mastro di Spada Corsaro
-trp_i5_corsair_master_swordsman_pl|Mastri di Spada Corsaro
+trp_i5_corsair_master_swordsman_pl|Mastri di Spada Corsari
 trp_a4_corsair_assassin|Corsaro Assassino
 trp_a4_corsair_assassin_pl|Corsari Assassini
 trp_a5_corsair_master_assassin|Corsaro Assassino
@@ -706,8 +706,8 @@ trp_fell_orc_archer_of_mordor|Orco Caduto Arciere di Mordor
 trp_fell_orc_archer_of_mordor_pl|Orchi Caduti Arcieri di Mordor
 trp_c3_wolf_rider_of_moria|Cavalca-Lupo di Moria
 trp_c3_wolf_rider_of_moria_pl|Cavalca-Lupi di Moria
-trp_c4_warg_rider_of_moria|Cavalca-Mannaro di Moria
-trp_c4_warg_rider_of_moria_pl|Cavalca-Mannari di Moria
+trp_c4_warg_rider_of_moria|Cavalca-Warg di Moria
+trp_c4_warg_rider_of_moria_pl|Cavalca-Warg di Moria
 trp_c5_bolg_clan_rider|Cavalcatore del Clan Bolg
 trp_c5_bolg_clan_rider_pl|Cavalcatori del Clan Bolg
 trp_i1_snaga_of_moria|Snaga di Moria
@@ -716,8 +716,8 @@ trp_i2_goblin_of_moria|Goblin di Moria
 trp_i2_goblin_of_moria_pl|Goblin di Moria
 trp_i3_large_goblin_of_moria|Grande Goblin di Moria
 trp_i3_large_goblin_of_moria_pl|Grandi Goblin di Moria
-trp_i4_fell_goblin_of_moria|Goblin Caduto di Moria
-trp_i4_fell_goblin_of_moria_pl|Goblin Caduti di Moria
+trp_i4_fell_goblin_of_moria|Goblin Crudele di Moria
+trp_i4_fell_goblin_of_moria_pl|Goblin Crudeli di Moria
 trp_a2_archer_snaga_of_moria|Arciere Goblin di Moria
 trp_a2_archer_snaga_of_moria_pl|Arcieri Goblin di Moria
 trp_a3_large_goblin_archer_of_moria|Grande Goblin Arciere di Moria
@@ -728,8 +728,8 @@ trp_i1_goblin_gundabad|Goblin di Gundabad
 trp_i1_goblin_gundabad_pl|Goblin di Gundabad
 trp_i2_orc_gundabad|Orco di Gundabad
 trp_i2_orc_gundabad_pl|Orchi di Gundabad
-trp_i3_orc_fighter_gundabad|Combattente Orco di Gundabad
-trp_i3_orc_fighter_gundabad_pl|Combattenti Orchi di Gundabad
+trp_i3_orc_fighter_gundabad|Orco Combattente di Gundabad
+trp_i3_orc_fighter_gundabad_pl|Orchi Combattenti di Gundabad
 trp_i4_fell_orc_warrior_gundabad|Orco Guerriero di Gundabad
 trp_i4_fell_orc_warrior_gundabad_pl|Orchi Guerrieri di Gundabad
 ; trp_i4_orc_beserker_gundabad|Gundabad Orc Berserker
@@ -740,18 +740,18 @@ trp_i4_fell_orc_warrior_gundabad_pl|Orchi Guerrieri di Gundabad
 ; trp_ca5_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
 trp_c3_goblin_rider_gundabad|Cavalcatore Goblin di Gundabad
 trp_c3_goblin_rider_gundabad_pl|Cavalcatori Goblin di Gundabad
-trp_c4_warg_rider_gundabad|Cavalca-Mannaro di Gundabad
-trp_c4_warg_rider_gundabad_pl|Cavalca-Mannari di Gundabad
-trp_c5_goblin_north_clan_rider|Goblin Cavalcatore del Clan Nord
-trp_c5_goblin_north_clan_rider_pl|Goblin Cavalcatori del Clan Nord
+trp_c4_warg_rider_gundabad|Cavalca-Warg di Gundabad
+trp_c4_warg_rider_gundabad_pl|Cavalca-Warg di Gundabad
+trp_c5_goblin_north_clan_rider|Cavalcatore Goblin del Clan Nordico
+trp_c5_goblin_north_clan_rider_pl|Cavalcatori Goblin del Clan Nordico
 trp_mountain_goblin|Goblin di Montagna
 trp_mountain_goblin_pl|Goblin di Montagna
 trp_tribal_orc|Orco Tribale
 trp_tribal_orc_pl|Orchi Tribali
 trp_tribal_orc_warrior|Orco Tribale Guerriero
 trp_tribal_orc_warrior_pl|Orchi Tribali Guerrieri
-trp_i5_orc_chieftain_of_moria2|Capitano Orco di Moria
-trp_i5_orc_chieftain_of_moria2_pl|Capitani Orchi di Moria
+trp_i5_orc_chieftain_of_moria2|Orco Capitano di Moria
+trp_i5_orc_chieftain_of_moria2_pl|Orchi Capitani di Moria
 trp_black_numenorean_renegade|Rinnegato Numenoreano Nero
 trp_black_numenorean_renegade_pl|Rinnegati Numenoreani Neri
 trp_black_numenorean_warrior|Guerriero Numeroreano Nero
@@ -1578,7 +1578,7 @@ trp_start_quest_beorning_pl|Berserker della Carroccia di Beorn
 ; trp_longing_imladris|Longing Elf
 ; trp_i5_deep_dweller_of_moria|Deep-Dweller of Moria
 ; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
-trp_i5_orc_chieftain_of_moria|Capitano Orco di Moria
-trp_i5_orc_chieftain_of_moria_pl|Capitani Orchi di Moria
+trp_i5_orc_chieftain_of_moria|Orco Capitano di Moria
+trp_i5_orc_chieftain_of_moria_pl|Orchi Capitani di Moria
 ; trp_rhovanion_noble|Rhovanion Noble
 ; trp_rhovanion_noble_pl|Rhovanion Noblemen

@@ -132,15 +132,15 @@ dlga_companion_rehire_refused:close_window|Nos... keress meg ha meggondolnád ma
 dlga_event_triggered:ziggy_ask_prisoners|Parancsnok, egy szóra. Szétzúztad az ellenfeleinket, és szereztél pár foglyot is - szép és jó. Lenne egy hatalmas ajándékom számodra, ha adnál cserébe egy aprócska kis dolgot: adj át nekem néhányat azok közül akiket elfogtunk.
 dlga_event_triggered:ziggy_ask_prisoners.1|Parancsnok, gratulálok a diadalodhoz. Ha emlékszel arra amit legutoljára mondtam neked, hasznát tudnám venni a foglyok egyikének. A hasznodra fog válni Parancsnok, biztosíthatlak róla.
 dlga_ziggy_ask_prisoners:ziggy_ask_why|Elég a rejtélyeidből, Zigûrphel! Mondd meg nyíltan! Mire kell neked a fogoly?
-; dlga_ziggy_ask_why:ziggy_reason|Patience, patience, Commander! Only indulge me in this trifling matter, and I will show you a marvel.
+dlga_ziggy_ask_why:ziggy_reason|Türelem, türelem Parancsnok! Csak nézze el nekem ezt a csekélyke gondot, és mutatok önnek egy csodát.
 ; dlga_ziggy_reason:ziggy_yes|You intrigue me. Very well. I will leave one of the captives to your... tender care.
-; dlga_ziggy_reason:ziggy_no|Not at this time, Zigûrphel. Go back to your post.
+dlga_ziggy_reason:ziggy_no|Ne most, Zigûrphel. Menj vissza a posztodra. 
 ; dlga_ziggy_no:close_window|Very well, Commander, but you would be a fool to forego my gift.
 ; dlga_ziggy_no:close_window.1|Very well, Commander.
-; dlga_ziggy_yes:ziggy_choose_prisoners|Excellent. Which of these specimens would you give?
-; dlga_ziggy_choose_prisoners:ziggy_no|I have none I want to offer.
-; dlga_ziggy_chosen_prisoner:ziggy_ritual|Thank you, Commander! A moment... ah yes, this one should do nicely... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_yes:ziggy_choose_prisoners|Kitűnő. Melyik példányokat adnád oda?
+dlga_ziggy_choose_prisoners:ziggy_no|Nincs semmi, amit felajánlhatnék.
+dlga_ziggy_chosen_prisoner:ziggy_ritual|Köszönöm, Parancsnok! Egy pillanat... á, igen, ez megteszi... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|Mivel van dolgunk? Büszke, dacos? Félelmetes, amilyennek lennie kell? Most valódi okot adok a félelemre! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 ; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
 ; dlga_ziggy_ritual:ziggy_ritual_succeed.1|Always such a joy to bring a foe properly to heel.
 ; dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!
@@ -245,16 +245,16 @@ dlga_lord_start:lord_generic_mission_completed.2|A felderítőink {s12} közelé
 ; dlga_lord_start:kill_quest_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
 ; dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
 ; dlga_kill_quest_failed:close_window|I will do better next time.
-; dlga_lord_start:lord_follow_spy_completed|{s4}
+dlga_lord_start:lord_follow_spy_completed|{s4}
 dlga_lord_start:lord_follow_spy_half_completed|Átok és kín reád! KÉT foglyot akartam, {playername} -- amit elém hoztál az egy lépésre van a használhatatlantól! Már mindent tudtam amit a kém tudott, engem az összekötője érdekelt. Tessék, fél munkáért fél fizetség jár. Vedd el, és takarodj.
 dlga_lord_start:lord_follow_spy_half_completed.1|Két foglyot kértem tőled {playername}, nem egyet. Kettőt. Ennek ellenére, úgy látszik sikerült elfognod a kém összekötőjét, a pár fontosabb tagját. A kém nem fog merni visszajönni és valószínűleg semmi használhatót nem fog tudni nyújtani annak az akármilyen mesternek akit szolgált. Több mint a semmi. Bár, meg kell értened hogy csak a felét fizetem az ígért összegnek, a fél munkádért amit végeztél.
 dlga_lord_start:lord_follow_spy_failed|Őszintén, {playername}, nem vagy több mint egy rakás szerencsétlenség. Hagytad meglógni a kémet ÉS az összeköttetőjét is szinte hihetetlenül magasabb szintre emeli a bukás fogalmát. Felejts el bármiféle jutalmat, amit ajánlottam neked. Nem tettél semmit azért, hogy kiérdemeld.
 dlga_lord_follow_spy_half_completed:lord_pretalk|Én megtettem minden tőlem telhetőt, {s65}.
 dlga_lord_follow_spy_completed:lord_pretalk|Köszönöm, {s65}.
 dlga_lord_follow_spy_failed:lord_pretalk|Hmm. Ahogy óhajtja, {s65}.
-; dlga_lord_start:lord_generic_mission_completed.7|I have received reports that all refugees were safely escorted. We thank you {playername} for your help. In this war, it is the innocent that suffer the most.
-; dlga_lord_start:lord_defend_refugees_failed|{playername}, I have received reports that the refugees were intercepted by raiders and were all slaughtered. This is very disappointing...
-; dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Forgive me, {s65}, I was unable to defend them.
+dlga_lord_start:lord_generic_mission_completed.7|Megkaptam a jelentést, miszerint minden menekült biztonságban megérkezett. Köszönet a segítségedért, {playername}. Ebben a háborúban az ártatlanok szenvednek a legtöbbet.
+dlga_lord_start:lord_defend_refugees_failed|{playername}, a jelentés szerint fosztogatók támadták meg a menekülteket, és mindnyájukat lemészárolták. Ez nagy csalódást okozott...
+dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|Bocsáss meg {s65}, nem tudtam megvédeni őket.
 ; dlga_lord_defend_refugees_failed_1a:lord_pretalk|It is the innocent that suffer the most in wars. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
 ; dlga_lord_start:lord_defend_refugees_half_completed|I have received reports that only {reg17} refugee trains reached their destination. This is unfortunate, but that is the cost of war. There might be more refugee trains in the future, {playername}. I hope you are more prepared next time.
 ; dlga_lord_defend_refugees_half_completed:lord_pretalk|I will be more prepared next time, my lord. 
@@ -316,7 +316,7 @@ dlga_lord_talk:lord_request_mission_ask|Van valamilyen feladatod számomra?
 ; dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.
 ; dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|You have done Erebor a great service, {playername}, and your deed will not go unrewarded.
 ; dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|Thank you, {s3}.
-; dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|What will you do now?
+dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|Mit fogsz most tenni?
 ; dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.
 ; dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, I wish to help {s4} people avenge Balin and his company.
 ; dlga_dwarf_lord_book_give_i:lord_pretalk|I wish you good luck with that.

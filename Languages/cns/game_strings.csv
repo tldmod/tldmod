@@ -20,12 +20,12 @@ str_flip_vertical|垂直翻转
 str_hold_fire|停止射击
 str_blunt_hold_fire|钝器/停止射击
 str_tutorial_ammo_refilled|填满弹药。
-; str_tutorial_failed|You have been beaten this time, but don't worry. Follow the instructions carefully and you'll do better next time. Press the Tab key to return to to the menu where you can retry this tutorial.
-; str_tutorial_1_msg_1|In this tutorial you will learn the basics of movement and combat. In Mount&Blade you use the mouse to control where you are looking, and the WASD keys of your keyboard to move. Your first task in the training is to locate the flag in the room and move over it. You can press the Tab key at any time to quit this tutorial or to exit any other area in the game. Go to the flag now.
-; str_tutorial_1_msg_2|Well done. Next we will cover attacking with weapons. For the purposes of this tutorial you have been equipped with bow and arrows, a sword and a shield. You can draw different weapons from your weapon slots by using the scroll wheel of your mouse. In the default configuration, scrolling up pulls out your next weapon, and scrolling down pulls out your shield. If you are already holding a shield, scrolling down will put your shield away instead. Try changing your wielded equipment with the scroll wheel now. When you are ready, go to the flag to move on to your next task.
-; str_tutorial_1_msg_3|Excellent. The next part of this tutorial covers attacking with melee weapons. You attack with your currently wielded weapon by using your left mouse button. Press and hold the button to ready an attack, then release the button to strike. If you hold down the left mouse button for a while before releasing, your attack will be more powerful. Now draw your sword and destroy the four dummies in the room.
-; str_tutorial_1_msg_4|Nice work! You've destroyed all four dummies. You can now move on to the next room.
-; str_tutorial_1_msg_5|As you see, there is an archery target on the far side of the room. Your next task is to use your bow to put three arrows into that target. Press and hold down the left mouse button to notch an arrow. You can then fire the arrow by releasing the left mouse button. Note the targeting reticule in the centre of your screen, which shows you the accuracy of your shot. In order to achieve optimal accuracy, let fly your arrow when the reticule is at its smallest. Try to shoot the target now.
+str_tutorial_failed|这次你输了，不过别担心。仔细遵循说明，下次你会做得更好。按Tab键返回菜单，您可以在其中重试本教程。
+str_tutorial_1_msg_1|在本教程中，您将学习运动和战斗的基础知识。在mount&amp;blade中，您使用鼠标控制您要查看的位置，并使用键盘上的wasd键移动。你在训练中的第一个任务是找到房间里的旗子并移到上面。您可以随时按Tab键退出本教程或退出游戏中的任何其他区域。现在去旗子那里。
+str_tutorial_1_msg_2|做得好。下一步我们将用武器掩护进攻。在本教程中，您已经装备了弓和箭、剑和盾牌。你可以使用鼠标滚轮从武器槽中取出不同的武器。在默认配置中，向上滚动会拉出你的下一个武器，向下滚动会拉出你的盾牌。如果你已经拿着一个盾牌，向下滚动将把你的盾牌收起来。现在试着用滚轮改变你的装备。准备好后，转到标记以继续执行下一个任务。
+str_tutorial_1_msg_3|杰出的。本教程的下一部分将介绍如何使用近战武器进行攻击。你用鼠标左键攻击当前使用的武器。按住按钮准备攻击，然后释放按钮进行攻击。如果你在释放前按住鼠标左键一段时间，你的攻击将更加强大。现在拔出你的剑，摧毁房间里的四个假人。
+str_tutorial_1_msg_4|干得好！你毁了所有四个假人。你现在可以去下一个房间了。
+str_tutorial_1_msg_5|如你所见，房间的另一边有一个射箭靶。你的下一个任务是用弓把三支箭射入目标。按下并按住鼠标左键以切出箭头。然后，您可以通过释放鼠标左键来触发箭头。注意屏幕中央的瞄准网，它显示了你的射击精度。为了达到最佳的精度，让你的箭在最小的时候飞。现在试着射击目标。
 ; str_tutorial_1_msg_6|Well done! You've learned the basics of moving and attacking. With a little bit of practice you will soon master them. In the second tutorial you can learn more advanced combat skills and face armed opponents. You can press the Tab key at any time to return to the tutorial menu.
 ; str_tutorial_2_msg_1|This tutorial will teach you how to defend yourself with a shield and how to battle armed opponents. For the moment you are armed with nothing but a shield. Your task is not to attack, but to successfully protect yourself from harm with your shield. There is an armed opponent waiting for you in the next room. He will try his best to knock you unconscious, while you must protect yourself with your shield by pressing and holding the right mouse button. Go into the next room now to face your opponent. Remember that you can press the Tab key at any time to quit this tutorial or to exit any other area in the game.
 ; str_tutorial_2_msg_2|Press and hold down the right mouse button to raise your shield. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
@@ -1906,7 +1906,7 @@ str_beorn_gift3|琥珀项链
 str_beorn_gift4|训练有素的矮种马
 str_cmenu_follow|陪伴
 ; str_reset_to_default|Reset to Default
-; str_done|Done
+str_done|完成
 ; str_gondor1|Gondor1
 ; str_gondor2|Gondor2
 ; str_gondor3|Gondor3

@@ -560,10 +560,10 @@ trp_i1_corsair_youth|Umbar Denizcisi
 trp_i1_corsair_youth_pl|Umbar Denizcileri
 trp_i2_corsair_warrior|Umbar Savaşçısı
 trp_i2_corsair_warrior_pl|Umbar Savaşçısı
-; trp_i3_corsair_spearman|Spearman of Umbar
-; trp_i3_corsair_spearman_pl|Spearmen of Umbar
-; trp_i4_corsair_raider|Corsair Raider
-; trp_i4_corsair_raider_pl|Corsair Raiders
+trp_i3_corsair_spearman|Umbar Mızraklısı
+trp_i3_corsair_spearman_pl|Umbar Mızraklıları
+trp_i4_corsair_raider|Korsan Yağmacı
+trp_i4_corsair_raider_pl|Korsan Yağmacılar
 trp_i5_corsair_night_raider|Korsan Gece Akıncısı
 trp_i5_corsair_night_raider_pl|Korsan Gece Akıncısı
 trp_a2_corsair_marine|Umbar Denizcisi
@@ -584,12 +584,12 @@ trp_a4_corsair_assassin|Korsan Suikastçisi
 trp_a4_corsair_assassin_pl|Korsan Suikastçileri
 trp_a5_corsair_master_assassin|Korsan Suikastçisi
 trp_a5_corsair_master_assassin_pl|Korsan Suikastçileri
-; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
-; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
-; trp_i5_corsair_master_spearman|Spearmaster of Umbar
-; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
-; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
-; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
+trp_i4_corsair_veteran_spearman|Umbar Kıdemli Mızraklısı
+trp_i4_corsair_veteran_spearman_pl|Umbar Kıdemli Mızraklıları
+trp_i5_corsair_master_spearman|Umbar Mızrak Ustası
+trp_i5_corsair_master_spearman_pl|Umbar Mızrak Ustaları
+trp_i5_corsair_master_pikeman|Umbar Kargı Ustası
+trp_i5_corsair_master_pikeman_pl|Umbar Kargı Ustaları
 trp_orc_snaga_of_isengard|Isengardlı Ork Snaga
 trp_orc_snaga_of_isengard_pl|Isengardlı Ork Snagalar
 trp_orc_of_isengard|Isengard Orku

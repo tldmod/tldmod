@@ -3,12 +3,12 @@ dlga_mutiny_pretalk_1:mutiny_pretalk_2|Zpátky do řady, červe! Jsme ve válce,
 dlga_mutiny_pretalk_2:close_window|Na váš rozkaz, veliteli. Jak si přejete...
 dlga_start:mutiny_talk_1|Zdravim veliteli. Chci vam neco rict... Chlapi nejsou moc nadšeni, vlastně vůbec. ^Malo lidskeho masa, málo zábavy. ^Chlapi říkají, že nejste dost dobrý, veliteli!
 dlga_mutiny_talk_1:mutiny_talk_2|Cože?! Vzpoura ve válce? ^To se trestá smrtí, červe!
-dlga_mutiny_talk_2:close_window|Víte co? ^Chlapi mysli ze budu pro ně lepší velitel, když vás ZABIJU!
-dlga_start:troll_introduce_1|Problem?
+dlga_mutiny_talk_2:close_window|Víte co? ^Chlapi myslí že budu pro ně lepší velitel, když vás ZABIJU!
+dlga_start:troll_introduce_1|Problém?
 dlga_start:troll_talk_1|Máš nervy?
 dlga_troll_introduce_1:troll_goodbye|Co to.. Mluvící troll?!
 dlga_troll_introduce_1:close_window|Vlastním koně.
-dlga_troll_talk_1:troll_talk_2|Vytroll mě trolle.
+dlga_troll_talk_1:troll_talk_2|Vytroll mě, trolle.
 dlga_troll_talk_1:close_window|Vlastním koně.
 dlga_troll_talk_2:troll_talk_3|Výzva prijata!^^{s4}
 dlga_troll_beaten:troll_talk_1|Klaním se před vaší moudrosti, mistře Baitre od Trollu!
@@ -24,7 +24,7 @@ dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Pokud si vzpomínám
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Vim. Prisel jsem z dalky! Jsem hobbit, {sire/madam}, z Kraje.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, to musi byt muj drahý bratranec! Peregrin Bral, aneb Pippin, jak mu rikaji. Jsme hobbiti, {sire/madam}, oba dva jsme prisli z Kraje! Jo, starej dobrej Pippin, docela by me zajmalo jak se mu dari v Minas Tirithu.
 dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Ach, to musí být můj drahý bratranec! Smělmír Brandorád, nebo Smíšek mu také říkají. Jsme hobbiti, {sire/madam}, a přišli jsme z Kraje. Oba! Copak Smíšek, Zajímalo by mě, jak se mu daří v Edorasu.
-dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Mohu Vás požádat o laskavost, {my lord/my lady}?
+dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Mohu Vás požádat o laskavost, můj pane/má paní}?
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Samozřejmě, {s1}. Co potřebuješ?
 dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Mohl by jste předat zprávu mému bratranci, {s1}? Je u {s2}, v {s3}, ve službách {s4}.\n 
 dlga_hobbit_general_talk_ask_3:hobbit_general_talk_ask_accept|Pojedu kolem {s1}, a rád předám tuto zprávu vašemu bratranci.
@@ -131,7 +131,7 @@ dlga_companion_rehire:companion_rehire_refused|Omlouvam se, ale nemohu prijmout 
 dlga_companion_rehire_refused:close_window|Nuze... podivejte se po me pokud zmenite nazor, eh?
 ; dlga_event_triggered:ziggy_ask_prisoners|Commander, a word. You have crushed our foes, and taken some prisoners - well and good. I have a mighty gift to offer you, if you would but grant me a small thing in exchange: give into my hands one of those we captured.
 ; dlga_event_triggered:ziggy_ask_prisoners.1|Commander, congratulations on your triumph. If you remember what I told you the last time, I have a use for one of these captives. It will be to your benefit, Commander, I assure you.
-; dlga_ziggy_ask_prisoners:ziggy_ask_why|Enough of your mysteries, Zigûrphel! Speak plainly! What do you want a prisoner for?
+dlga_ziggy_ask_prisoners:ziggy_ask_why|Dost tvých záhad, Zigûrphel! Mluv jasně! K čemu chceš ty vězně?
 ; dlga_ziggy_ask_why:ziggy_reason|Patience, patience, Commander! Only indulge me in this trifling matter, and I will show you a marvel.
 ; dlga_ziggy_reason:ziggy_yes|You intrigue me. Very well. I will leave one of the captives to your... tender care.
 dlga_ziggy_reason:ziggy_no|Teď ne, Zigûrpheli. Vrať se na svoje stanoviště.
@@ -143,8 +143,8 @@ dlga_ziggy_choose_prisoners:ziggy_no|Nemám žádné, které bych nabídl.
 ; dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
 ; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
 ; dlga_ziggy_ritual:ziggy_ritual_succeed.1|Always such a joy to bring a foe properly to heel.
-; dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!
-; dlga_ziggy_ritual_succeed:close_window|And of course, allow me but a little rest; then you may pass another captive into my care. I will do the rest.
+dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! Tenhle byl až moc slabý! Bezcenný! Dejte mi silnějšího, Velitele, který nezklame!
+dlga_ziggy_ritual_succeed:close_window|A samozřejmě, dovolte mi jen trochu odpočinout; potom můžete přenést jiného zajatce do mé péče. Udělám zbytek.
 dlga_companion_objection_response:close_window|Dekuji, ocenuji si vasi podporu.
 dlga_companion_objection_response:close_window.1|Doufejme, ze se to nebude opakovat.
 dlga_companion_objection_response:close_window.2|Vase namitka je zapsana, ale mam dulezitejsi veci na praci.
@@ -259,7 +259,7 @@ dlga_lord_defend_refugees_failed_1a:lord_pretalk|Jsou to nevinní, kdo ve válk�
 dlga_lord_start:lord_defend_refugees_half_completed|Donesly se mi zprávy, že pouze {reg17} uprchlické karavany dorazily do cíle. Je to smutné, ale to je daň za válku. Je možné, že v budoucnu bude více těchto uprchlických karavan. Doufám, že příště budete lépe {připrave/připravena}.
 dlga_lord_defend_refugees_half_completed:lord_pretalk|Příště budu lépe {připraven/připravena}.
 dlga_lord_start:lord_generic_mission_completed.8|Donesly se mi hlášení, že všichni uprchlíci byli zabiti a, že zajatecké transporty dorazí zanedlouho... {Vedl/Vedla} sis dobře. Tohle je pouze začátek, ale brzy budeme tomuto území vládnout.
-; dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?
+dlga_lord_start:lord_hunt_refugees_failed|{playername}, naši špióni nám říkají, že jste nezachytili {reg1} vlaků uprchlíků. Jsou slabé a pomalé, a přesto selžete. K čemu nám jste?
 ; dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|They were slippery, master. I was unable to track them down.
 ; dlga_lord_hunt_refugees_failed_1:lord_pretalk|Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.
 ; dlga_lord_start:lord_generic_mission_completed.9|Damn me, but you've done it, {playername}. All the slaves are back and they're busy preparing for the harvest. You certainly earned your reward. Here, take it, with my compliments.

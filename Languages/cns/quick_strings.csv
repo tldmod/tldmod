@@ -75,14 +75,14 @@ qstr_Rotate|旋转
 qstr_Close|关闭
 ; qstr_Faction_Side:^^Campa|Faction Side:^^Campaign Difficulty*:^^Home Theater:^^Marshall:^^Enemies:^^
 ; qstr_Campaign_Difficulty_|Campaign Difficulty is based on starting faction strength, theater enemies,^ and faction troop tree & troop equipment.
-; qstr_Rallies:|Rallies:
-; qstr_View_Keybinds__Press|View Keybinds (Press Insert)
-; qstr_What_do_you_fight_fo|What do you fight for?
+qstr_Rallies:|集合
+qstr_View_Keybinds__Press|綁定鍵(按下想要的綁定鍵)
+qstr_What_do_you_fight_fo|你為何而戰?
 ; qstr_Go_Back...|Go Back...
 ; qstr_Learn_about_the_diff|Learn about the different factions of Middle-Earth
 qstr_The_DAWN_of_a_New_Er|新纪元的黎明
-; qstr_The_TWILIGHT_of_Man|The TWILIGHT of Man
-; qstr_Select_your_Race?|Select your Race?
+qstr_The_TWILIGHT_of_Man|人類的暮光
+qstr_Select_your_Race?|選擇你的種族
 qstr_Man|人类
 qstr_Elf|精灵
 qstr_Dwarf|矮人
@@ -106,12 +106,12 @@ qstr_1H_Weapons^2H_Weapon|单手武器^双手武器^长杆武器^弓箭^弩^投�
 qstr_Equipment|装备
 qstr_The_Last_Days_Mod_Op|最后之日Mod选项
 qstr_War_Starts_at_Level:|战争始于等级：
-; qstr_Restrict_Player_Equi|Restrict Player Equipment:  
+qstr_Restrict_Player_Equi|不能裝備
 ; qstr_Battle_Formations_an|Battle Formations and AI:  
 ; qstr_Native|Native
 ; qstr_TLD_FormAI__Original|TLD FormAI (Original)
 ; qstr_TLD_New_FormAI|TLD New FormAI
-; qstr_Advanced_Siege_AI:__|Advanced Siege AI:  
+qstr_Advanced_Siege_AI:__|電腦難度
 ; qstr_On|On
 ; qstr_Town_NPCs_Always_Acc|Town NPCs Always Accessible from Menus:  
 ; qstr_Cutscenes:__|Cutscenes:  
@@ -123,9 +123,9 @@ qstr_War_Starts_at_Level:|战争始于等级：
 ; qstr_Fallen_rider_damage_|Fallen rider damage messages:  
 ; qstr_No_Messages|No Messages
 ; qstr_Player_damage_only|Player damage only
-; qstr_All_Messages|All Messages
+qstr_All_Messages|所有消息
 ; qstr_Troop_Identifier_in_|Troop Identifier in Battles (Press Y during battle to show/hide):
-; qstr_Disable|Disable
+qstr_Disable|禁用
 ; qstr_Enable_without_Facti|Enable without Faction Names
 ; qstr_Enable_with_Faction_|Enable with Faction Names
 ; qstr_Simple:_Red___Enemy_|Simple: Red - Enemy / Green - Allies
@@ -133,9 +133,9 @@ qstr_War_Starts_at_Level:|战争始于等级：
 qstr_Default_Camera|默认相机
 qstr_Free_Mode_Custom_Cam|自由模式自定义相机
 ; qstr_Fixed_Over_The_Shoul|Fixed Over-The-Shoulder Camera
-; qstr_Prevent_AI_from_taki|Prevent AI from taking defensive:  
+qstr_Prevent_AI_from_taki|防止電腦採取防禦措施
 ; qstr_Brighter_Nights:__|Brighter Nights:  
-; qstr_Done|Done
+qstr_Done|完成
 ; qstr_Gameplay_Tweaks|Gameplay Tweaks
 ; qstr_Beta_Formations_Twea|Beta Formations Tweaks
 ; qstr_War_Will_Start_at_Le|War Will Start at Level {reg0}

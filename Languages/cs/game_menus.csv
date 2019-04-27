@@ -252,7 +252,7 @@ mno_attack_stay_back|Nařiď svým vojákům, aby zaútočili, mezitím co se bu
 mno_build_ladders|Připravit žebříky na útok na zdi.
 mno_lift_siege|zrušit obléhání
 menu_siege_attack_meets_sally|obránci provedli protiútok
-; menu_construct_ladders|As the party member with the highest Engineer skill ({reg2}), {reg3?you estimate:{s3} estimates} that it will take {reg4} hours to build enough scaling ladders for the assault.
+menu_construct_ladders|Jakožto člen skupiny s nejvyššími Inženýrskými dovednostmi ({reg2}), {reg3?you estimate:{s3} estimates} že ti bude trvat {reg4} hodin postavit žebříky pro útok.
 mno_build_ladders_cont|Udělej to.
 menu_castle_attack_walls_simulate|{s4}^^Tvoje ztráty:{s8}^^Nepřátelské ztráty: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
@@ -260,7 +260,7 @@ menu_castle_taken_by_friends|Tady není nic k vidění.
 ; menu_castle_taken|{s3} has fallen to your troops, and you now have full control of the {reg2?town:castle}.  {reg1? It would seem that there is nothing stopping you from taking it for yourself...:}
 ; menu_castle_taken_2|{s3} has fallen to your troops, and you now have full control of the castle. It is time to send word to {s9} about your victory. {s5}
 mno_castle_taken_no_claim|Nežádej o odměnu.
-menu_siege_started_defender|{s1} zahajuje utok na opevneni {s2}. Mas {reg22} bojeschopnych jednotek proti nepratelskym {reg11}. Rozhodnes se...
+menu_siege_started_defender|{s1} zahajuje útok na opevnění {s2}. Máš {reg22} bojeschopných jednotek proti nepřátelským {reg11}. Rozhodneš se...
 mno_siege_defender_join_battle|Připojit se k bitvě.
 mno_siege_defender_troops_join_battle|Přikaž svým mužům, aby se připojili do bitvy bez tebe.
 menu_siege_join_defense|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
@@ -268,7 +268,7 @@ menu_siege_join_defense|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^
 menu_town_bandits_succeeded|^^^^^Goblini před tebou padají jako obílí před kosou! Brzy stojíš sám, zatímco většina útočníků leží v bezvědomí, mrtvá nebo umírající. Místní obyvatelé by byli jistě velmi vděční za to, že jsi je zachránil před tímto nebezpečím.
 ; menu_town_brawl_lost|^^^^^^You have been knocked out cold. The people you attacked quickly search you for valuables, before carrying on with their daily business.
 ; menu_town_brawl_won|^^^^^You have beaten all the opponents and the guards sent to quell the disturbance. You quickly frisk them for valuables then vanish until tempers quieten down.^Maybe next time they would show more respect and back off.
-menu_close|nic
+menu_close|Nic.
 menu_town|Dorazil jsi do {s60}.{s12}{s13}
 mno_town_menu_0|Jdi na nějeké místo.
 mno_town_menu_0_door|Dveře do nějaké lokace.
@@ -289,7 +289,7 @@ mno_talk_to_castle_commander|Navštiv {s61} Kasárnu.
 mno_speak_with_elder|Promluv si s {s6}.
 mno_isengard_underground|Jdi do podzemních jeskyň.
 mno_tirith_toplevel|Vyšplhej na horní patro.
-; mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates|Navštiv Velké Brány.
 mno_town_leave|Opusť...
 mno_town_leave_door|Opusť Území
 ; menu_player_initiated_siege_result|You attacked this center under the banner of {s2}.
@@ -300,14 +300,14 @@ menu_ship_reembark|Přeješ si nastoupit?
 mno_reembark_yes|Ano.
 mno_reembark_no|Ne.
 ; menu_center_reports|Town Name: {s1}^Rent Income: {reg1} denars^Tariff Income: {reg2} denars^Food Stock: for {reg3} days
-; menu_sneak_into_town_suceeded|Disguised in the garments of a poor pilgrim, you fool the guards and make your way into the town.
-; menu_sneak_into_town_caught|As you try to sneak in, one of the guards recognizes you and raises the alarm! You must flee back through the gates before all the guards in the town come down on you!
+menu_sneak_into_town_suceeded|Přestrojil ses v oděvech chudého poutníka, oklamal jsi stráže a přišel si do města.
+menu_sneak_into_town_caught|Když ses pokoušel vplížit do města, jeden ze stráží tě poznal a vyvolal poplach! Musíš utéct přes bránu než tě všechny ostatní stráže ve městě obklíčí!
 mno_sneak_caught_fight|Pokus se probojovat ven!
 mno_sneak_caught_surrender|vzdát se.
 ; menu_sneak_into_town_caught_dispersed_guards|You drive off the guards and cover your trail before running off, easily losing your pursuers in the maze of streets.
 menu_sneak_into_town_caught_ran_away|probil jsi si cestu zpět k bráně a rychle se stahuješ z města
-; menu_tld_player_defeated|^^^^^Suddenly a shattering pain explodes in the back of your head! \\ You shiver, as all the world goes black around you...^Is this your end?
-; menu_recover_after_death_fangorn|You wake up. The forest is still around you. Every bone hurts. You are alive, by miracle.^^It was a defeat, but at least you were able to see what happened. ^Now you know what is going on in this accursed forest,^and you survived to tell. ^^Will anyone ever believe you?
+menu_tld_player_defeated|^^^^^Najednou začneš cítit tříštivou bolest vzadu v hlavě! \\ Třeseš se, když celý svět vedle tebe upadá do temnoty...^Je tohle tvůj konec?
+menu_recover_after_death_fangorn|Vzbudil ses. Stále se nacházíš v lese. Každá kost tě bolí. Zázrakem jsi přežil.^^Byla to porážka, alespoň jsi byl schopen vidět, co se stalo. ^Teď už víš, co se v tomto prokletém lese děje,^a přežil jsi, abys tohle mohl říct. ^^Bude ti někdo vůbec věřit?  
 ; menu_recover_after_death_moria|^^^^^You regain your conciousness. You are lying on soft soil, fresh air breezing on your face. You are outside!^The orcs must have taken you for dead and thrown you in some murky pit.^You must have been carried to the surface by an underground stream.
 mno_whatever|Vstaň!
 ; menu_recover_after_death_default|^^^^^You regain your conciousness. You lie on the spot you fell.  The enemies must have taken you up for dead and left you there.  However, it seems that none of your wounds were lethal,  and although you feel awful, you find out you can still walk.  You get up and try to look for any other survivors from your party.
@@ -321,8 +321,8 @@ menu_notification_faction_defeated|^^^^^{s1} Je poražen!^{s1} je mrtvý, byl po
 menu_ruins|^^^^Prijizdis k {s1}. Kdysi silne sidlo bylo vypaleno do zakladu, ackoliv stale rozpoznavas stopy po opevneni a roztrousene zrezivele zbrane.
 ; menu_legendary_place|^^^^You have followed the rumors and found {s1}. You can now explore this place and see for yourself if the rumors are true.
 mno_explore|Prozkoumej toto místo.
-menu_ring_hunter_lair|sledoval jsi stopy lovců prstenu skrz Temný hvozd a došel si k (s1). vidíš je jak se chystají odejít s truhlou
-mno_attack_lair|zaútoč 
+menu_ring_hunter_lair|^^^^Sledoval jsi stopy Lovců Prstenu skrz Temný hvozd a došel jsi k {s1}. Vidíš je ,jak se chystají odejít s truhlou.
+mno_attack_lair|Zaútoč na ně teď
 mno_leave_bandit_lair|Odejít prozatím.
 ; menu_gondor_reinforcement_event|^^^^^The beacons of Gondor are lit, Minas Tirith calls for aid!^^The lords of the southern fiefs will now march north to defend the White City against the coming darkness.
 mno_gondor_reinforcement_event_close|blizko

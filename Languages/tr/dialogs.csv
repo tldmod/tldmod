@@ -264,7 +264,7 @@ dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|Çok hızlıydılar e
 dlga_lord_hunt_refugees_failed_1:lord_pretalk|Hasta ve sakatları bile yenemiyorsan belki de dünyayı önünde diz çöktürecek orduları komuta edecek kadar iyi değilsindir. Defol ve sana ikinci bir şans vermem için dua et.
 dlga_lord_start:lord_generic_mission_completed.9|Kahretsin, bunu başardın, {playername}. Tüm köleler geri döndü ve hasat için hazırlanmakla meşguller. Ödülünü kesinlikle hak ettin. Övgülerimle beraber al bunu.
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}, sabırlı bir şekilde kölelerimi bekledim, ama hala hiçbiri geri dönmedi. Bir açıklaman var mı? Önemsiz hayvanlar tarafından alt mı edildin  yoksa yalnızca beceriksiz biri misin?
-dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Beni affedin, {s65}, köleler yılan balığı kadar sıvışkanlardı.
+dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|Beni affedin, {s65}, köleler yılan balığı kadar kaypaklardı.
 dlga_lord_bring_back_runaway_serfs_failed_1a:lord_pretalk|Hmph, başarısızlık için buna bahane denemez bile, {playername}. Şimdi izninle, hepimiz açlıktan ölmeden önce tarlaları sürecek yeni adamlar yakalamalıyım.
 dlga_lord_start:lord_runaway_serf_half_completed|Beni hayal kırıklığına uğrattın, {playername}. Bana geri getirmen için seni görevlendirdiğim 3 köle grubu vardı. 3. {reg17} değil. Sanırım bu getirdiklerin kaçanların yerine iki katı daha fazla çalışmak zorunda kalacaklar. Ödülüne gelince, {playername}, Sana sadece geri getirdiğin köleler için ödeme yapacağım, elinden kaçırdıkların için değil. İşte, al şunu da bu işte burada bitsin.
 dlga_lord_runaway_serf_half_completed:lord_pretalk|Teşekkür ederim, {s65}. Gerçekten cömertsiniz.
@@ -728,7 +728,7 @@ dlga_ally_thanks_meet_2:close_window|İçten selamlarımla {playername}. Benim a
 dlga_ally_thanks_meet_2:close_window.1|Tanıştığımıza memnun oldum {playername}. Sana bu yaptığın için borçluyum. Umuyorum ki bir gün bunun karşılığını ödemek için bir yol bulacağım.
 dlga_ally_thanks_meet_2:close_window.2|Tanıştığımıza memnun oldum {playername}. Ben {s1}.Yardımın için teşekkürler ve umarım tekrar karşılaşırız.
 dlga_start:close_window.13|Yine kellemizi kurtardın, {playername}! Kesinlikle sen arkadaşlardan en iyisisin.{s43}
-dlga_start:close_window.14|Tam zamanında geldin, {playername}. Yardımını unutmayacağım.{s43}
+dlga_start:close_window.14|Tam zamanında geldin, {playername}. En derinden teşekkürlerimle!{s43}
 dlga_start:close_window.15|Tam zamanında geldin, {playername}. Yardımını unutmayacağım.{s43}
 dlga_start:close_window.16|Seni görmek güzel! {playername}. {s43}
 dlga_start:close_window.19|Yardımınız için teşekkürler, kumandan. Orada {reg1?hayatımızı:hayatımı} kurtardın.

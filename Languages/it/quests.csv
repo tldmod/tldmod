@@ -80,8 +80,8 @@ qst_ring_hunters|Cacciatori dell'Anello
 ; qst_deliver_message_hobbit|Concerning Hobbits
 ; qst_blank_quest_01|Defend Refugees
 ; qst_blank_quest_02|Hunt Down Refugees
-; qst_blank_quest_03|Sea Battle
-; qst_blank_quest_04|Kill {s35} {s6} {s7}
+qst_blank_quest_03|Battaglia Navale
+qst_blank_quest_04|Uccisioni {s35} {s6} {s7}
 ; qst_blank_quest_05|Kill {s35} {s36} troops.
 
 
@@ -101,4 +101,4 @@ qst_ring_hunters|Cacciatori dell'Anello
 
 ; qst_guardian_party_quest|Isengard's Last Stand
 ; qst_quests_end|Quests End
-; qst_quests_end_text|.
+qst_quests_end_text|.

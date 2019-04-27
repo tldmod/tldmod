@@ -12,14 +12,14 @@ mno_custom_battle_scenario_4|圣盔谷之战，洛汗vs艾辛格
 mno_custom_battle_scenario_5|小规模冲突，北方自由民vs卢恩
 mno_custom_battle_scenario_6|围攻，半兽人vs矮人
 mno_custom_battle_scenario_7|伏击，半兽人vs幽暗密林
-; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
+mno_custom_battle_scenario_8|都灵人的最后一站
+mno_custom_battle_scenario_88|追随一名斥候
 mno_custom_battle_scenario_11|测试战(平衡性调整)
 mno_custom_battle_scenario_10|场景测试战
 mno_troll_battle_scenario|食人妖测试战
 mno_warg_battle_scenario|座狼测试战
 mno_build_your_own_scene|**建立你的最后之日场景**
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+menu_tutorial|^^歡迎使用骑砍的戰鬥教程。 在這裡，您將學習戰鬥的基本知識，以及野戰期間部隊指揮的簡要概述。
 mno_tutorial_1|教程#1：基本动作和武器选择。{s1}
 mno_tutorial_2|教程#2：持盾作战。{s2}
 mno_tutorial_3|教程#3：无盾作战。{s3}
@@ -117,7 +117,7 @@ mno_camp_troop|检查{reg10? 士兵:} {reg12? 和:} {reg11? 囚犯:}。
 mno_camp_action|做些事情。
 mno_camp_wait_here|在这里待一会儿。
 mno_camp_options|更改最后之日选项。
-; mno_Dev_Menu|Developer Menu
+mno_Dev_Menu|开发者菜单
 ; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
 mno_Cheat_enable|启用作弊/模组选项。
 menu_game_options|^^^^^^^^点击以更换选项：
@@ -134,14 +134,14 @@ mno_game_options_morale|战斗士气系统: {s7}
 mno_game_options_animal_ambushes|动物伏击: {s7}
 mno_game_options_horse_ko|掉落伤害显示:
 mno_game_options_bright_nights|夜晚亮度:
-; mno_game_options_camera_pref|Preferred Camera Mode:  {s7}.
+mno_game_options_camera_pref|首选相机模式： {s7}。
 mno_game_options_tweaks|游戏调整…
 mno_game_options_back|回到营地菜单
 mno_game_options_start_back|返回
 menu_camp_tweaks|^^^^^^^^选择一个你想调整的选项.
 mno_tweak_options_compat|兼容性调整...
 mno_tweak_options_strat|战略调整...
-; mno_tweak_options_battlefield_ai|Battlefield AI tweaks...
+mno_tweak_options_battlefield_ai|战场AI调整...
 mno_tweak_options_back|回到选项菜单.
 menu_camp_compat_tweaks|^^^^^^^^点击要更改的选项 (同时按住shift键为下降):^(这是调整兼容性 , 不是作弊)
 mno_game_options_compat_party|最大部队规模: {s1}
@@ -347,7 +347,7 @@ mno_defend_villagers|保护村民！
 mno_raid_villagers|掠夺村庄！
 ; mno_go_away|Leave and regroup for now.
 ; menu_scout_camp_quest|You see the scout camp nearby. You prepare your men to attack them
-; mno_attack_scout_camp|Attack the Scout Camp!
+mno_attack_scout_camp|攻击斥候营地！
 ; menu_sea_battle_quest|You meet an enemy fleet. The ships close in and sailors throw down planks...
 mno_sb_defend_the_town|登舰！摧毁他们的舰队！
 ; mno_sb_attack_the_town|They try to intercept us! Defend the fleet!
