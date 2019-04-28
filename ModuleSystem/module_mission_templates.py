@@ -384,7 +384,8 @@ tld_animals_init = (
   [  (store_trigger_param_1, ":agent_no"),
      (agent_is_human, ":agent_no"),
      (agent_get_troop_id,":troopid", ":agent_no"),
-     (is_between,  ":troopid", "trp_spider", "trp_dorwinion_sack"),
+     (this_or_next|is_between,  ":troopid", "trp_spider", "trp_dorwinion_sack"),
+     (eq, ":troopid", "trp_werewolf"),
      (assign,"$animal_is_present",1),#general to activate scripts
    ])
 
@@ -1060,7 +1061,11 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 ] + tld_morale_triggers + fade + khams_custom_player_camera + custom_troll_hitting_new + tld_fallen_riders_get_damaged + bright_nights + tld_spawn_battle_animals + tld_warg_leap_attack
 
 
-tld_siege_battle_scripts = [
+tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
+
+  health_restore_on_kill, #Testing if this will be resource intensive.
+
+  ] or [] ) + [
 	#tld_fix_viewpoint,
  	custom_tld_spawn_troop, custom_tld_init_battle,
 	tld_cheer_on_space_when_battle_over_press, tld_cheer_on_space_when_battle_over_release,
