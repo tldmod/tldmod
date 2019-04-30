@@ -1064,6 +1064,8 @@ tld_common_battle_scripts = ((is_a_wb_mt==1) and [
 tld_siege_battle_scripts =  ((is_a_wb_mt==1) and [
 
   health_restore_on_kill, #Testing if this will be resource intensive.
+  hp_shield_init,
+  hp_shield_trigger,
 
   ] or [] ) + [
 	#tld_fix_viewpoint,
