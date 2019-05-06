@@ -2274,7 +2274,7 @@ tld_kill_or_wounded_triggers = (ti_on_agent_killed_or_wounded, 0, 0, [
       (store_character_level, ":target_level", ":target"),
       (quest_get_slot, ":current_amount", "qst_blank_quest_04", slot_quest_current_state),
       (quest_get_slot, ":target_amount", "qst_blank_quest_04", slot_quest_target_amount),
-      (store_character_level, ":killed_level", ":killed"), 
+      (store_character_level, ":killed_level", ":troop_id"), 
       (store_faction_of_troop, ":troop_faction", ":troop_id"),
       (eq, ":target_faction", ":troop_faction"),
       (ge, ":killed_level", ":target_level"),
