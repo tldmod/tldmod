@@ -76,13 +76,13 @@ qst_oath_of_vengeance_text|Enfurecido pela morte de {s1}, você fez um juramento
 qst_deliver_gift|entregar um  {s4} de  {s1} a partir de {s2} para {s3}
 qst_deliver_gift_text|Você pediu para entregar uma {s4} do {s1} para {s3} a partir de {s2}.
 qst_ring_hunters|Caçador de aneis
-; qst_ring_hunters2|Ring Hunters - Completed
-; qst_deliver_message_hobbit|Concerning Hobbits
+qst_ring_hunters2|Caçadores de Anel - Concluído
+qst_deliver_message_hobbit|Em relação aos Hobbits
 qst_blank_quest_01|Defenda os Refugiados 
-; qst_blank_quest_02|Hunt Down Refugees
-; qst_blank_quest_03|Sea Battle
-; qst_blank_quest_04|Kill {s35} {s6} {s7}
-; qst_blank_quest_05|Kill {s35} {s36} troops.
+qst_blank_quest_02|Caça aos Refugiados
+qst_blank_quest_03|Batalha do Mar
+qst_blank_quest_04|Mate {s35} {s6} {s7}
+qst_blank_quest_05|Mate {s35} {s36} tropas.
 
 
 
@@ -93,12 +93,12 @@ qst_blank_quest_01|Defenda os Refugiados
 
 
 
-; qst_blank_quest_16|Reinforce Center
-; qst_blank_quest_17|Slay {reg22} {s6} in battles
+qst_blank_quest_16|Reforçar Centro
+qst_blank_quest_17|Mate {reg22} {s6} nas batalhas
 
 
 
 
-; qst_guardian_party_quest|Isengard's Last Stand
-; qst_quests_end|Quests End
-; qst_quests_end_text|.
+qst_guardian_party_quest|A Última Posição de Isengard's
+qst_quests_end|Fim da Missão
+qst_quests_end_text|.

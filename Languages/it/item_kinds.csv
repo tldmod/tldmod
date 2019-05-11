@@ -66,13 +66,13 @@ itm_wargarmored_2b|Mannaro corazzato
 itm_wargarmored_2c|Mannaro corazzato
 itm_wargarmored_3a|Mannaro corazzato
 itm_warg_reward|Mannaro enorme
-; itm_axe_a|Northmen Axe
-; itm_axe_b|Northmen Bearded Axe
-; itm_axe_c|Northmen Axe
-; itm_axe_d|Northmen Axe
+itm_axe_a|Ascia Nordica
+itm_axe_b|Ascia Barbuta Nordica
+itm_axe_c|Ascia Nordica
+itm_axe_d|Ascia Nordica
 itm_tree_trunk_club_a|Tronco d'albero
-; itm_long_bearded_axe|Northmen Bearded Longaxe
-; itm_2_handed_axe|Northmen Longaxe
+itm_long_bearded_axe|Ascia Barbuta Lunga Nordica
+itm_2_handed_axe|Ascia Lunga Nordica
 itm_free_giant_hammer|Martello Gigante
 itm_giant_mace|Mazza gigante
 ; itm_troll_shield_a|Troll Shield
@@ -382,13 +382,13 @@ itm_mordor_uruk_shield_c|Scudo da Uruk di Mordor
 itm_mordor_man_shield_a|Scudo Umano di Mordor
 itm_mordor_man_shield_b|Scudo Umano di Mordor
 itm_angmar_shield|Scudo di Angmar
-; itm_orc_nosehelm|Orc Nosehelm
-; itm_orc_kettlehelm|Orc Kettlehelm
+itm_orc_nosehelm|Elmo Nasale Orchesco
+itm_orc_kettlehelm|Elmo a Pentola Orchesco
 itm_orc_buckethelm|Elmo a Secchio Orchesco
-; itm_orc_morion|Orc Morion
+itm_orc_morion|Morione Orchesco
 itm_orc_beakhelm|Elmo a Becco Orschesco
 itm_orc_bughelm|Elmo insetto Orchesco
-; itm_orc_visorhelm|Orc Visorhelm
+itm_orc_visorhelm|Elmo con Visiera Orchesco
 itm_m_orc_light_a|Armatura Leggera Orchesca di Mordor
 itm_m_orc_light_b|Armatura Leggera Orchesca di Mordor
 itm_m_orc_light_c|Armatura Leggera Orchesca di Mordor
@@ -401,12 +401,12 @@ itm_m_orc_heavy_d|Armatura Pesante Orchesca di Mordor
 itm_m_orc_heavy_e|Armatura Pesante Orchesca di Mordor
 itm_m_uruk_light_a|Bardatura Uruk
 itm_m_uruk_light_b|Bardatura di Pelle Uruk
-; itm_m_uruk_light_c|Uruk Light Mail
-; itm_m_uruk_med_a|Uruk Heavy Leather
-; itm_m_uruk_med_b|Uruk Heavy Mail
-; itm_m_uruk_med_c|Uruk Light Scale
-; itm_m_uruk_heavy_a|Uruk Heavy Scale
-; itm_m_uruk_heavy_b|Uruk Platemail
+itm_m_uruk_light_c|Maglia Leggera Uruk
+itm_m_uruk_med_a|Armatura Pesante in Pelle Uruk
+itm_m_uruk_med_b|Maglia Pesante Uruk
+itm_m_uruk_med_c|Armatura Leggera Uruk
+itm_m_uruk_heavy_a|Armatura Pesante Uruk
+itm_m_uruk_heavy_b|Armatura a Piatre Uruk
 itm_m_uruk_heavy_c|Armatura a Piastre di Lugburz
 itm_m_uruk_heavy_j|Armatura Pesante Uruk
 itm_m_uruk_heavy_k|Armatura della Guardia Uruk
@@ -664,23 +664,23 @@ itm_rhun_shortsword|Spada Corta Barbara
 
 itm_rhun_sword|Spada Barbara
 itm_rhun_shield|Scudo a Mandorla di Rhûn
-; itm_dale_light_a|Dale Militia Jacket
+itm_dale_light_a|Giaccone della Milizia di Dale
 
-; itm_dale_light_b|Northmen Light Lamellar
+itm_dale_light_b|Armatura Lamellare Leggera Nordica
 
-; itm_dale_med_a|Northmen Heavy Lamellar
+itm_dale_med_a|Armatura Lamellare Pesante Nordica
 
-; itm_dale_med_b|Dale Leather Armor
+itm_dale_med_b|Armatura in Pelle di Dale
 
-; itm_dale_med_c|Dale Leather Over Mail
+itm_dale_med_c|Armatura in Pelle di Dale
 
-; itm_dale_med_d|Dale Lamellar Armor
+itm_dale_med_d|Armatura Lamellare di Dale
 
-; itm_dale_heavy_a|Dale Lamellar Over Mail
+itm_dale_heavy_a|Armatura Lamellare di Dale
 
-; itm_dale_heavy_b|Dale Plated Coat
+itm_dale_heavy_b|Casacca con Piastre di Dale
 
-; itm_dale_heavy_c|Rhovanion Mail
+itm_dale_heavy_c|Maglia del Rhovanion
 
 itm_dale_armor_l|Gorgiera da Nobile di Dale
 
@@ -779,7 +779,7 @@ itm_dwarf_shield_c|Scudo da Combattimento Nanico
 
 itm_dwarf_shield_d|Scudo Tondo Nanico
 
-; itm_north_round_shield|Northmen Round Shield
+itm_north_round_shield|Scudo Tondo Nordico
 
 itm_free_dwarf_shield_g|Scudo Nanico
 
@@ -789,7 +789,7 @@ itm_free_dwarf_shield_j|Scudo Nanico
 
 itm_free_dwarf_shield_k|Scudo Nanico
 
-; itm_woodmen_heavy|Mirkwood Armor
+itm_woodmen_heavy|Armatura di Bosco Atro
 
 itm_dwarf_sword_a|Spada Nanica
 
@@ -821,31 +821,31 @@ itm_dwarf_spear_c|Ascia Lunga Nanica
 
 itm_dwarf_helm_coif|Elmo Nanico
 
-; itm_dwarf_nasal_b|Dwarf Nasal Helm
+itm_dwarf_nasal_b|Elmo Nasale Nanico
 
 itm_north_skullcap|Elmo da Uomo del Nord
 
-; itm_dwarf_helm_kettle|Dwarf Kettle Helm
+itm_dwarf_helm_kettle|Elmo a Pentola Nanico
 
 itm_dwarf_helm_fris|Elmo Frigio Nanico
 
-; itm_north_leather_skullcap|North Light Skullcap
+itm_north_leather_skullcap|Elmo a Teschio Nordico
 
 itm_dwarf_hood|Cappuccio Nanico
 
 itm_dwarf_nasal|Grande Elmo con Protezione Nasale Nanico
 
-; itm_north_nasal_helm|North Nasal Helm
+itm_north_nasal_helm|Elmo Nasale Nordico
 
 itm_dwarf_helm_p|Elmo da Re Nanico
 
-; itm_dwarf_miner|Dwarf Light Helm
+itm_dwarf_miner|Elmo Leggero Nanico
 
-; itm_north_chieftain|North Chieftain Helm
+itm_north_chieftain|Elmo da Capitano Nordico
 
-; itm_dwarf_helm_round|Dwarf Round Helm
+itm_dwarf_helm_round|Elmo Tondo Nanico
 
-; itm_dwarf_helm_sallet|Dwarf Sallet
+itm_dwarf_helm_sallet|Celata Nanica
 
 ; itm_dwarf_armor_d|Iron Hills Coat of Scales
 itm_dwarf_armor_a|Sopravveste in maglia di Erebor

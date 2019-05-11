@@ -1,4 +1,4 @@
-dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão e menos marcha.
+dlga_start:mutiny_pretalk_1|Ei, {playername}. Escute aqui... Os rapazes estão resmungando! Querem mais diversão, e menos marcha.
 dlga_mutiny_pretalk_1:mutiny_pretalk_2|Volte para a linha, verme! Estamos em guerra e eu sou seu comandante!
 dlga_mutiny_pretalk_2:close_window|Como quiser, comandante. Como quiser...
 dlga_start:mutiny_talk_1|Ei, comandante. Escute aqui... Os rapazes não estão felizes, nem um pouco felizes. ^Não tem carne humana o suficiente, não tem diversão. ^Os rapazes dizem que você não é bom o suficiente, comandante!
@@ -8,7 +8,7 @@ dlga_start:troll_introduce_1|Algum problema?
 dlga_start:troll_talk_1|Tá putin?
 dlga_troll_introduce_1:troll_goodbye|Caraio! Um troll falante?!
 dlga_troll_introduce_1:close_window|Eu tenho um cavalo.
-dlga_troll_talk_1:troll_talk_2|Me trolla aí cachorro.
+dlga_troll_talk_1:troll_talk_2|Me trolla, seu troll.
 dlga_troll_talk_1:close_window|Eu tenho um cavalo.
 dlga_troll_talk_2:troll_talk_3|Desafio aceito!^^{s4}
 dlga_troll_beaten:troll_talk_1|Eu me curvo diante de sua sabedoria, Mestre Provocador de Trolls!
@@ -130,21 +130,21 @@ dlga_companion_rehire:companion_recruit_signup_confirm|Bem vindo de volta, meu a
 dlga_companion_rehire:companion_rehire_refused|Desculpe, não posso receber mais ninguém agora.
 dlga_companion_rehire_refused:close_window|Bem... Me procure se você mudar de ideia, ok?
 dlga_event_triggered:ziggy_ask_prisoners|Comandante, uma palavra. Você destruiu nossos inimigos e capturou alguns prisioneiros - muito bom. Eu tenho um presente maravilhoso para oferecer a você, se você me garantir uma pequena coisa em troca: me dê um dos que você capturou
-; dlga_event_triggered:ziggy_ask_prisoners.1|Commander, congratulations on your triumph. If you remember what I told you the last time, I have a use for one of these captives. It will be to your benefit, Commander, I assure you.
-; dlga_ziggy_ask_prisoners:ziggy_ask_why|Enough of your mysteries, Zigûrphel! Speak plainly! What do you want a prisoner for?
-; dlga_ziggy_ask_why:ziggy_reason|Patience, patience, Commander! Only indulge me in this trifling matter, and I will show you a marvel.
+dlga_event_triggered:ziggy_ask_prisoners.1|Comandante, parabéns pelo seu triunfo. Se você se lembrar do que eu disse da última vez, eu tenho um uso para um desses cativos. Será para seu benefício, Comandante, asseguro-lhe.
+dlga_ziggy_ask_prisoners:ziggy_ask_why|Chega de seus mistérios, Zigûrphel! Fale claramente! O que você quer um prisioneiro?
+dlga_ziggy_ask_why:ziggy_reason|Paciência, paciência, comandante! Somente me entregue a esta questão insignificante, e lhe mostrarei uma maravilha.
 dlga_ziggy_reason:ziggy_yes|Você intriga-me. Muito bem. Irei deixar um dos prisioneiros para si... cuide dele.
 dlga_ziggy_reason:ziggy_no|Não agora, Zigûrphel. Volte para o seu lugar.
-; dlga_ziggy_no:close_window|Very well, Commander, but you would be a fool to forego my gift.
+dlga_ziggy_no:close_window|Muito bem, Comandante, mas você seria um tolo em renunciar ao meu presente.
 dlga_ziggy_no:close_window.1|Muito bem, Comandante.
 dlga_ziggy_yes:ziggy_choose_prisoners|Excelente. Qual destes espécimes poderia me oferecer?
 dlga_ziggy_choose_prisoners:ziggy_no|Não tenho nada que queira oferecer.
-; dlga_ziggy_chosen_prisoner:ziggy_ritual|Thank you, Commander! A moment... ah yes, this one should do nicely... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_chosen_prisoner:ziggy_ritual.1| What have we here? Proud, defiant? Fearful, as you should be? Now shall I give you a reason for fear, indeed! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
-; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
-; dlga_ziggy_ritual:ziggy_ritual_succeed.1|Always such a joy to bring a foe properly to heel.
-; dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!
-; dlga_ziggy_ritual_succeed:close_window|And of course, allow me but a little rest; then you may pass another captive into my care. I will do the rest.
+dlga_ziggy_chosen_prisoner:ziggy_ritual|Obrigado comandante! Um momento ... ah sim, este deve fazer bem ... Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_chosen_prisoner:ziggy_ritual.1|O que temos aqui? Orgulhoso, desafiador? Temeroso, como você deveria ser? Agora eu vou te dar uma razão para o medo, de fato! Agannūlo burudan kinum! Kadō nakh, îdô ugru-dalad dâira!
+dlga_ziggy_ritual:ziggy_ritual_succeed|Ah sim ... sim! Eis comandante! Contemple o que eu, Zigûrphel, consegui! Conhece você dos lobos de Angband? De Draugluin, ou do poderoso Carcharoth que matou Huan o Cão de Valinor? Assim como o Lorde das Trevas podia torcer e prender um espírito cativo em um vaso adequado aos seus propósitos, eu também amarrei um espírito menor e o uni como um grande animal de sombra! Este não é tão grande quanto a primeira ninhada de Draugluin, é claro, nada como, mas servirá.
+dlga_ziggy_ritual:ziggy_ritual_succeed.1|Sempre tamanha alegria trazer um inimigo corretamente para o calcanhar.
+dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! Este foi muito fraco! Inútil! Dá-me um mais forte, Comandante, aquele que não falhará!
+dlga_ziggy_ritual_succeed:close_window|E claro, permita-me um pouco de descanso; então você pode passar outro cativo para o meu cuidado. Eu farei o resto.
 dlga_companion_objection_response:close_window|Obrigado, agradeço o apoio.
 dlga_companion_objection_response:close_window.1|Com sorte não acontecerá de novo.
 dlga_companion_objection_response:close_window.2|Seu protesto anotado, mas tenho coisas mais importantes na minha mente.
@@ -370,7 +370,7 @@ dlga_ring_hunters_party_attack_2:close_window|Verifique seus bolsos e dedos. Sal
 dlga_start:ring_hunter_lair_defeat|Esse anel pertence ao Senhor das Trevas! Não podes ficar com ele!
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|Isto pertence a mim agora.
 dlga_ring_hunter_lair_defeat2:close_window|Você acha que você conseguiu uma grande vitória? Uma pálida e imunda vitória, talvez. Bah! Nosso exército marchou por muito tempo antes de você chegar. Está tarde demais para salvar aqueles que foram caçados!
-; dlga_start:beorn_message|My {lord/lady}, we received a warning from {s1} that a large outlaw warband was headed our way! Alas, there was no time to gather enough warriors. Having heard the sound of battle, we prepared for the worst!
+dlga_start:beorn_message|Meu {lorde/dama}, recebemos um aviso de {s1} que um grande bando de bandidos estava vindo em nossa direção! Infelizmente, não havia tempo para reunir guerreiros suficientes. Tendo ouvido o som da batalha, nos preparamos para o pior!
 dlga_beorn_message:beorn_message2|Aquilo não é um bando ordinário de criminosos. Eram os piores dos piores do Senhor da Escuridão, pelo menos aqui no Norte. Seus líderes, porém, não estavam presentes. Seu covil permanece nos beirais da Floresta de Mirkwood e devo ir depressa.
 dlga_beorn_message2:beorn_message_end|Sim, fomos avisados sobre o acampamento e enviamos batedores. Nós vimos eles queimarem tudo e rapidamente cavalgar até Mordor. Se tivesse escolhido ir até lá primeiro, você provavelmente não poderia ter nos ajudado. Estamos muito gratos pela sua vitória!
 dlga_beorn_message_end:beorn_message_close|Devo informar {s1} sobre a batalha. Regresse à tua vila e envie batedores. Podem haver vagantes.
@@ -415,8 +415,8 @@ dlga_lord_give_order:lord_give_order_answer|Siga-me. [Os custos {reg1} / {reg2} 
 dlga_lord_give_order:lord_give_order_details_ask|Vamos para... [Costs {reg1}/{reg2} influence]
 dlga_lord_give_order:lord_give_order_details_ask.1|Patrulhar em torno ... [Costs {reg1}/{reg2} influence]
 dlga_lord_give_order:lord_give_order_details_ask.2|Envolver os inimigos ao redor ...[Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order:lord_give_order_assault|Together, you and I can take {s11}. You should assault immediately... [Costs {reg1}/{reg2} influence]
-; dlga_lord_give_order_assault:lord_pretalk|{s4} is directing this siege. I suggest you speak to them.
+dlga_lord_give_order:lord_give_order_assault|Juntos, você e eu podemos levar {s11}. Você deve atacar imediatamente ... [Custo {reg1}/{reg2} influência]
+dlga_lord_give_order_assault:lord_pretalk|{s4} está direcionando esse cerco. Eu sugiro que você fale com eles.
 dlga_lord_give_order_assault:lord_pretalk.1|Ainda não estamos preparados. Precisamos de mais um {s11}
 dlga_lord_give_order_assault:close_window|Muito bem -- Ataquem as muralhas!
 dlga_lord_give_order:lord_give_order_stop|Não preciso de você por algum tempo. Você é livre para fazer o que você gosta.
@@ -490,7 +490,7 @@ dlga_capture_enemy_hero_thank:capture_enemy_hero_thank_2|Muito obrigado , meu am
 dlga_capture_enemy_hero_thank_2:lord_pretalk|Certamente, {s65}.
 dlga_capture_enemy_hero_thank_2:lord_pretalk.1|Não foi nada.
 dlga_lord_active_mission_2:lord_raise_troops_thank|Na verdade. Levantei {reg1} {s13}. Você pode levá-los.
-; dlga_lord_active_mission_2:lord_raise_troops_thank.1|Indeed. I have trained {reg2} troops, and {reg1} of them have learned well. You can take them, they should be more prepared for battle.
+dlga_lord_active_mission_2:lord_raise_troops_thank.1|De fato. Eu treinei tropas {reg2}, e {reg1} delas aprendi bem. Você pode pegá-los, eles devem estar mais preparados para a batalha.
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_success|I encontrado {s4} escondendo em {s3}  e deu-lhe a sua punição .
 dlga_lord_active_mission_2:lord_hunt_down_fugitive_fail|Temo que ele fugiu.
 dlga_lord_hunt_down_fugitive_success:lord_hunt_down_fugitive_success_2|E nós estaremos muito melhores sem ele! Obrigado, {playername}, para remover este espinho longo-purulenta do meu lado. ' É bom saber que você pode ser confiável para lidar com as coisas com um nível adequado de tactfulness.  Enviei uma nota para nossos intendentes já, e você pode contar com fontes adicionais de nós.
@@ -543,7 +543,7 @@ dlga_lord_mission_mirkwood_sorcerer_0:lord_mission_mirkwood_sorcerer_1|Onde poss
 dlga_lord_mission_mirkwood_sorcerer_1:lord_mission_mirkwood_sorcerer_2|Procure-o na floresta das trevas, não muito longe de Dol Guldur propriamente dito. Ele é um bem guardado e um adversário cauteloso, então você precisará usar stealth para evitar o alarme de que está sendo gerado. Se ele escapar, ele vai se mudar para outros lugares escuros que não sabe nada e continuar sua maldade Incontestada. Haverá apenas uma oportunidade para derrotá-lo. Muito depende de seu sucesso. Acompanhe nossas bênçãos.
 dlga_lord_mission_mirkwood_sorcerer_2:lord_pretalk|Às suas ordens , senhora. Vou tentar o meu melhor para eliminar este mal .
 dlga_lord_mission_mirkwood_sorcerer_2:lord_mission_mirkwood_sorcerer_rejected|Perdoe-me, minha senhora . Tenho algumas questões prementes para assistir antes que eu possa ajudar o seu povo com este endevour .
-; dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|I understand, {playername}. But do not tally for too long, for the effort of resisting his magic is wearying me.
+dlga_lord_mission_mirkwood_sorcerer_rejected:lord_pretalk|Eu entendo, {nomedojogador}. Mas não conte por muito tempo, pois o esforço de resistir à sua magia está me cansando.
 dlga_lord_tell_mission:lord_mission_deliver_message|Eu preciso enviar uma carta para {s13}  quem deve estar atualmente em {s4}. Se você vai estar caminhando para lá, você iria entregar a ele ? A carta deve ser em suas mãos em 30 dias.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_accepted|Certamente , eu pretendo passar por {s4}  e seria nenhum problema.
 dlga_lord_mission_deliver_message:lord_mission_deliver_message_rejected|Eu duvido que vou estar vendo {s13} em breve, {s65}. É melhor enviá-lo com outra pessoa.
@@ -561,7 +561,7 @@ dlga_lord_mission_raise_troops_told:lord_mission_raise_troops_rejected|Estou mui
 dlga_lord_mission_raise_troops_accepted:close_window|Você tirou um peso dos meus ombros, {playername}. Vou contar a minhas sargentos para lhe enviar os recrutas e anexá-los ao seu comando. Além disso, eu vou adiantar algum dinheiro para ajudar com as despesas. Aqui, esta bolsa deve fazê-lo. Obrigado por sua ajuda.
 dlga_lord_mission_raise_troops_alternate:close_window|Isso é uma proposta interessante, {playername}. direi aos meu sargentos para enviar os recrutas à arena. Siga-os até lá, e coloquem-os em forma. Estarei observando. Obrigado pela ajuda.
 dlga_lord_mission_raise_troops_rejected:lord_pretalk|Ah, claro. Eu esperava tanto. Bem, boa sorte para você, então 
-; dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|I have something you could help with, an issue with the lawless villain known as {s4}.  He murdered one of my bodyguards and has been on the run from his judgment ever since. There has been news recently that the fugitive has been seen at {s3}. You might be able to hunt him down and deliver him swift justice, and I'll reward you in turn.
+dlga_lord_tell_mission:lord_mission_hunt_down_fugitive_told|Eu tenho algo que você poderia ajudar, um problema com o vilão sem lei conhecido como {s4}. Ele assassinou um dos meus guarda-costas e está fugindo de seu julgamento desde então. Recentemente, houve notícias de que o fugitivo foi visto em {s3}. Você pode ser capaz de caçá-lo e entregar-lhe á  veloz justiça, e eu recompensarei você por sua vez.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_accepted|Então eu vou caçá-lo e executar a lei.
 dlga_lord_mission_hunt_down_fugitive_told:lord_mission_hunt_down_fugitive_rejected|Estou muito ocupado para ir atrás dele no momento.
 dlga_lord_mission_hunt_down_fugitive_accepted:close_window|Isso é excelente, {playername}.  Eu serei grato, e claro sua proeza wil ser devidamente anotado.  Bem, boa caça para você.
@@ -670,7 +670,7 @@ dlga_start:caravan_res_tut2|*relincho* Suponho que eu seja o líder agora. Você
 dlga_caravan_res_tut1:caravan_noduel|(TUTORIAL DE PONTOS DE RECURSO)^^ Pontos de Recurso que você pode usar para comprar do povo de Mordos não são aqueles que você ganhou da sua própria facção, mas aqueles que você conseguirá em Mordor. ^^Veja RELATÓRIOS para mais informações
 dlga_caravan_res_tut2:caravan_duel1|(TUTORIAL DE PONTOS DE RECURSO)^^ Pontos de Recurso que você pode usar para comprar do povo de Mordos não são aqueles que você ganhou da sua própria facção, mas aqueles que você conseguirá em Mordor. ^^Veja RELATÓRIOS para mais informações
 dlga_caravan_noduel:caravan_duel2|Eu poderia matá-lo facilmente quanto eu cuspo! Mas eu tenho nada para provar para ele.
-; dlga_caravan_duel1:caravan_duel2|What I do is none of your affair, Orc. But I will help our allies and slay our foes.
+dlga_caravan_duel1:caravan_duel2|O que eu faço não é da sua conta, Orc. Mas vou ajudar nossos aliados e matar nossos inimigos.
 dlga_caravan_duel2:caravan_fac_tut|Justo, justo! Olhe para esses vermes covardes ao redor de nós! Ha! Eles temem você, oh sim, assim como deveriam, como deveriam! Eu não o temo. Heh. Mas então, eu lhe devo um favor, não é! Lhe farei bem. Vou contar aos chefes sobre você hoje. A palavra vai espalhar. E quando os chefes ouvirem o suficiente sobre ti... Ora, eles poderiam oferecer algo especial para você. Presentes, poder, respeito! Retornarei agora para uma grande ajuda!
 dlga_caravan_fac_tut:caravan_duel3|(TUTORIAL DE RANQUES DA FACÇÃO) ^^Pontos de Ranque permitem que você suba nos ranques da sua facção (e/ou outras facções). ^^Isso determinará o tamanha máximo do seu grupo, o salário semanal vindo da facção, e destravará outras recompensas específicas da facção.
 dlga_woodelf_help_6:woodelf_help_7|(TUTORIAL DE RANQUES DA FACÇÃO) ^^Pontos de Ranque permitem que você suba nos ranques da sua facção (e/ou outras facções). ^^Isso determinará o tamanha máximo do seu grupo, o salário semanal vindo da facção, e destravará outras recompensas específicas da facção.
@@ -1051,18 +1051,18 @@ dlga_party_reinforce_check_1:party_reinforce_end|\nEntão você mudou sua mente 
 dlga_party_reinforce_check_1:party_reinforce_end.1|Esses soldados são de nenhuma utilidade para nós. ^ Levá-los de volta.
 dlga_start:close_window.29|Você está me atrasando! Os feiticeiros são nunca tarde!
 dlga_start:close_window.30|Ele.... Chaaamaaaa
-; dlga_start:close_window.31|You there! You survived? Good! You can't be waving a stick about! Take this!
-; dlga_start:ori_choose_1|You fight well, kinsman! I don't know how you've been surviving so far. I remember you joining us recently, before all this... before Balin fell... Where are you from?
-; dlga_ori_choose_1:ori_choose_finish|I was a tracker, sent to the woods near the Bear people. I recently heard about Balin's company and joined.
-; dlga_ori_choose_1:ori_choose_finish.1|I am a distant cousin, a veteran bodyguard from a mine far away. Then I heard of Balin and joined.
-; dlga_ori_choose_1:ori_choose_finish.2|I am from the Iron Hills, a veteran of the wars, and a miner during peace. I heard of Balin and joined, wanting more kill orcs.
-; dlga_ori_choose_finish:close_window|Good to know! I found these, fit for your background. We shall make our stand here and take as many of them with us!
-; dlga_start:close_window.32|It looks like you are shaking off those rusty skills, eh? Here, take a swig of this. It will make you feel better. More orcs are coming!
-; dlga_start:close_window.33|Take that dusty thing off you and wear this. Should protect you better. These orcs bite hard!
+dlga_start:close_window.31|Você aí! Você sobreviveu? Boa! Você não pode estar agitando um pedaço de pau! Pegue isso!
+dlga_start:ori_choose_1|Você luta bem, compatriota! Eu não sei como você tem sobrevivido até agora. Lembro que você se juntou a nós recentemente, antes de tudo isso ... antes que Balin caísse ... De onde você é?
+dlga_ori_choose_1:ori_choose_finish|Eu era um rastreador, enviado para a floresta perto do povo do Urso. Eu ouvi recentemente sobre a companhia de Balin e entrei.
+dlga_ori_choose_1:ori_choose_finish.1|Eu sou um primo distante, um guarda-costas veterano de uma mina distante. Então ouvi falar de Balin e me juntei.
+dlga_ori_choose_1:ori_choose_finish.2|Eu sou de Colinas de Ferro, um veterano das guerras, e um minerador durante a paz. Eu ouvi falar de Balin e me juntei, querendo matar mais orcs.
+dlga_ori_choose_finish:close_window|Bom saber! Eu encontrei estes, aptos para o seu fundo. Vamos nos posicionar aqui e levar o maior número deles conosco!
+dlga_start:close_window.32|Parece que você está se livrando dessas habilidades enferrujadas, hein? Aqui, tome um gole disso. Isso fará você se sentir melhor. Mais orcs estão chegando!
+dlga_start:close_window.33|Tire essa coisa empoeirada de você e use isso. Deve protegê-lo melhor. Esses orcs mordem com força!
 dlga_start:close_window.34|Algo grande está para vir! Preparem-se!
 dlga_start:close_window.35|Eles são muitos... mas nós somos dwarves!
-; dlga_start:close_window.36|Those orcs opened up a cavern filled with treasures. Here are some that I found, go ahead and take them.
-; dlga_start:close_window.37|No.... I hear them... they are outside! They are everywhere!
+dlga_start:close_window.36|Aqueles orcs abriram uma caverna cheia de tesouros. Aqui estão algumas que eu encontrei, vá em frente e leve-as.
+dlga_start:close_window.37|Não .... eu os ouço ... eles estão lá fora! Eles estão em todo lugar!
 dlga_start:close_window.38|Aqui está... meu Lorde Balin's... você mereces estes...
 dlga_start:party_encounter_hostile_attacker|Você não tem chance contra nós. Renda-se agora ou mataremos vocês todos...
 dlga_party_encounter_hostile_attacker:close_window|Não ataque! Nos rendemos.

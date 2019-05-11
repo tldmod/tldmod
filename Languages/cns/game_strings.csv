@@ -363,7 +363,7 @@ str_npc2_intro_response_1|我当然有很重要的事情，你是谁？
 str_npc3_intro_response_1|同样祝你有个美好的一天，有什么问题么？
 str_npc4_intro_response_1|向你问好，我的女士。我是否有幸得知您的芳名？
 str_npc5_intro_response_1|您好，精灵贵族！与您相见真是三生有幸。（注：葛罗芬戴尔是诺多精灵王族，在魔戒魔戒同盟卷二第一章中被甘道夫评价为：‘首生儿女中大有力量的人物之一’‘隶属王侯家族的精灵领主’；首生儿女是精灵族别称）
-str_npc6_intro_response_1|这是西尔凡精灵（木精灵别称）向客人打招呼的方式？
+str_npc6_intro_response_1|这是西尔凡精灵(木精灵别称)向客人打招呼的方式？
 str_npc7_intro_response_1|{playername}竭诚为您服务。都灵的子民们过得如何？
 str_npc8_intro_response_1|向你问好，我还在想是否有志愿者可以加入我们的旅程呢。
 str_npc9_intro_response_1|把你的敌意放下，强兽人！我不是告密者。
@@ -1720,7 +1720,7 @@ str_fullname_region_anduin_banks|安都因河谷，迷雾山脉与幽暗密林�
 str_fullname_region_n_mirkwood|幽暗密林北部，木精灵的家。
 str_fullname_region_s_mirkwood|幽暗密林南部，据说被奇怪生物侵扰
 str_fullname_region_above_mirkwook|北罗马尼安，幽暗密林和灰色山脉之间的区域
-str_fullname_region_grey_mountains|灰色山脉山麓，矮人领地
+str_fullname_region_grey_mountains|灰色山脉山麓，矮人的领地
 str_fullname_region_mordor|魔多，索伦的黑暗王国
 ; str_fullname_region_dimrill|Dimrill Dale, at the feet of the Mountains of Moria
 ; str_fullname_region_s_rebor|the realm of Dale, at the feet of the Lonely Mountain

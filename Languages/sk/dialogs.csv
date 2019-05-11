@@ -15,15 +15,15 @@ dlga_troll_beaten:troll_talk_1|Klaniam sa vašej múdrosti, Majster Balter od T
 dlga_troll_goodbye:close_window|TROLLOLOLOLOLOLOLOLOLOL!
 dlga_start:hobbit_merry_talk_met|Opäť zdravím, {playername}!
 dlga_start:hobbit_pippin_talk_met|Opäť zdravím, {playername}!
-dlga_start:hobbit_general_talk_1|Zdravím,{pane/paní}! Moje meno je Chicholm Brandylen no môžete ma volať proste Chicho !
-dlga_start:hobbit_general_talk_1.1|Zdravím, {pane/paní}! Moje meno je Pútnik Bral ale môžete ma volať proste Pipin !
+dlga_start:hobbit_general_talk_1|Zdravím,{pane/paní}! Moje meno je Chicholm Brandylen, no môžete ma volať proste Chicho!
+dlga_start:hobbit_general_talk_1.1|Zdravím, {pane/paní}! Moje meno je Pútnik Bral, ale môžete ma pokojne volať jednoducho Pipin !
 dlga_hobbit_general_talk_1:close_window|Teraz nemám čas. 
 dlga_hobbit_general_talk_1:hobbit_general_talk_first_met|Popravde. Ešte nikdy som nevidel niekoho z tvojho druhu.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met|Myslím, že už som sa stretol s jedným, ktorý bol podobný tebe, v Edorase.
 dlga_hobbit_general_talk_1:hobbit_general_talk_second_met.1|Myslím, že už som stretol niekoho podobného ako ty, v Minas Tirith.
 dlga_hobbit_general_talk_first_met:hobbit_general_talk_3|Viem. Prišiel som z ďaleka! Som hobit, {pane/paní}, z Kraja.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, to musí byť môj drahý bratranec! Pútnik Bral, či Pipin, ako ho prezývajú. Sme hobiti, {pane/paní}, a prišli sme z Kraja, obaja! Starý dobrý Pipin, zaujímalo by ma ako sa mu darí v Minas Tirith.
-dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Ach, to musí byť môj drahý bratranec! Chicholm Brandylen, alebo Chicho, ako ho prezývajú. Sme hobiti, {pane/paní}, a prišli sme z Kraja, obaja! Starý dobrý Chicholm, zaujímalo by ma ako sa mu darí v Edorase
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask|Oh, to musí byť môj drahý bratranec! Pútnik Bral, či Pipin, ako ho prezývajú. Sme hobiti, {pane/paní} a prišli sme z Kraja, obaja! Starý dobrý Pipin, zaujímalo by ma ako sa mu darí v Minas Tirith.
+dlga_hobbit_general_talk_second_met:hobbit_general_talk_ask.1|Ach, to musí byť môj drahý bratranec! Chicholm Brandylen, alebo Chicho, ako ho prezývajú. Sme hobiti, {pane/pani}, prišli sme z Kraja, obaja! Starý dobrý Chicholm, zaujímalo by ma ako sa mu darí v Edorase
 dlga_hobbit_general_talk_ask:hobbit_general_talk_ask_1|Môžem požiadať o láskavosť, {my lord/my lady}.
 dlga_hobbit_general_talk_ask_1:hobbit_general_talk_ask_2|Pravdaže, {s1}. Čo potrebuješ?
 dlga_hobbit_general_talk_ask_2:hobbit_general_talk_ask_3|Mohol by si Doručiť list môjmu bratrancovi, {s1}? Jeho lokácia je {s2}, {s3}, v službe {s4}.
@@ -34,11 +34,11 @@ dlga_hobbit_general_talk_ask_reject:hobbit_general_talk_3|Rozumiem. Pošlem to �
 dlga_hobbit_general_talk_3:close_window|Tak zatiaľ zbohom.
 dlga_start:hobbit_merry_talk_met.1|Vitaj späť, {playername}!
 dlga_start:hobbit_pippin_talk_met.1|Vitaj späť, {playername}!
-dlga_hobbit_merry_talk_met:hobbit_deliver_message|Dobrý deň, posielajte Merry. Mám tu správu od vášho bratranca, Pippina, v Minas Tirith.
-dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Dobrý deň, posielame Pippin. Mám tu správu od vášho bratranca, Merry, v Edorase.
+dlga_hobbit_merry_talk_met:hobbit_deliver_message|Ahoj, Chicho. Mám tu správu od tvojho bratranca, Pipina, z Minas Tirith.
+dlga_hobbit_pippin_talk_met:hobbit_deliver_message|Ahoj, Pipin. Mám tu správu od tvojho bratranca, Chicha, z Edorasu.
 dlga_hobbit_deliver_message:close_window|Ďakujeme, {hračovo jmeno}. Bolo to pre vás dobré, aby ste mi to priniesli.
 dlga_hobbit_merry_talk_met:close_window|Zdravím, pán Chicholm.
-dlga_hobbit_pippin_talk_met:close_window|Zdravím, pán Pipin. 
+dlga_hobbit_pippin_talk_met:close_window|Zdravím, pán Pipin.
 dlga_start:treebeard_introduce_1|(Zisťuješ, že sa pozeráš na prazvláštne stvorenie. Je veľmi vysoké, má silné končatiny s kožou ako kôra a porastom listov. Části jeho tela pokrývá mech. Ale v tejto chvíli si všímaš len oči. Hlboké oči ťa pozorujú, pomalé a vážné, ale veľmi bystré a prenikajúce. Myslíš si, že sú hnedé, so zelenkastým svitom, ako keby si sa cez ne díval do hlbočiznej studne plnej prastarých spomienok a dlhého, pomalého a vytrvalého premýšľania. Ich povrch sa však trblieta prítomnosťou... ako slnko žiariace na krajných listoch ohromného stromu, alebo vlnky veľmi hlbokého jazera.)
 dlga_treebeard_introduce_1:treebeard_introduce_2|(Chystáš sa niečo povedať, ale zaľahne ťa divný dusivý pocit, ako keby bol vzduch príliš riedky či skromný na dýchanie... skoro so zúfalým nadýchnutím vzduchu sa ti podarí zbaviť toho pocitu a obrovské stvorenie podobné stromu zmierni svoj pohľad. Tvor sa na teba aj naďalej díva a ty si všimneš ďalšie obrovské stromové tvory, ktoré ťa pozorujú rovnako, ako keby čakali pokiaľ prehovoríš...)"
 dlga_treebeard_introduce_2:treebeard_introduce_3|Veľmi sa ospravedlňujem za vyrušenie... Som len unavený pútnik hľadajúci úkryt kvôli nedávnym udalostiam... moje meno je {playername}. Nevadilo by, keby som sa vás spýtal, čo ste zač ?
@@ -296,7 +296,7 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|Nuž, je celý váš.
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|Mám pre neho iné plány.
 dlga_lord_buy_prisoner_accept:lord_pretalk|Výborne! Pošlem svojich mužov aby ho premiestnili do nášho žalára patričným spôsobom. Určite to pomôže naším zámerom.
 dlga_lord_buy_prisoner_deny:lord_pretalk|Veľká škoda, mohol pre nás byť veľmi vzácny, {playername}.
-dlga_tld_intro_1:lord_pretalk|Vojenský výcvik: ^^ - Frakcie len iniciujú obliehanie, keď sú dostatočne silné. ^ - Väčšina osád môže byť obetovaná len vtedy, ak je ich frakcia dostatočne oslabená. Zvyčajne budú hlavné body obetované ako posledné ^ ^ - Ak frakcia stratí svoj kapitál alebo ak ich sila rozdrví, budú porazené ^ - Factions získavajú silu z víťazstiev na poli a z držania určitých kľúčových osídlení. z porážok v teréne alebo zo straty osídlenia ^ - Niektoré questy alebo udalosti môžu ovplyvniť silu frakcie ^ - Môžete porovnať aktuálne hodnoty pevnosti frakcie v menu 'Správy' ^ ^ - Ďalšie stránky TLD nájdete na informačných stránkach.
+dlga_tld_intro_1:lord_pretalk|PREROBIŤ\nVojenský výcvik: ^^ - Frakcie len iniciujú obliehanie, keď sú dostatočne silné. ^ - Väčšina osád môže byť obetovaná len vtedy, ak je ich frakcia dostatočne oslabená. Zvyčajne budú hlavné body obetované ako posledné ^ ^ - Ak frakcia stratí svoj kapitál alebo ak ich sila rozdrví, budú porazené ^ - Frakcie získavajú silu z víťazstiev na poli a z držania určitých kľúčových osídlení. z porážok v teréne alebo zo straty osídlenia ^ - Niektoré questy alebo udalosti môžu ovplyvniť silu frakcie ^ - Môžete porovnať aktuálne hodnoty pevnosti frakcie v menu 'Správy' ^ ^ - Ďalšie stránky TLD nájdete na informačných stránkach.
 dlga_lord_start:lord_pretalk|Ah, vitajte, {s24}. ^ Už by ste mali vedieť, že {s12}. Vašou povinnosťou je pomôcť v našom boji, {playername}. Keď sa ukážeš hodným mojej dôvery [level {reg1}], dovolím vám tiež prístup k tú truhlu tam, aby si uložil svoje osobné veci.
 dlga_lord_start:lord_talk|Čo sa deje ?
 dlga_lord_pretalk:lord_talk|Ešte niečo ?

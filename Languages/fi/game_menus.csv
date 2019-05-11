@@ -19,7 +19,7 @@ mno_custom_battle_scenario_10|Maisemien testitaistelu
 mno_troll_battle_scenario|Testi peikkotaistelut
 mno_warg_battle_scenario|Testi villisusitaistelut
 mno_build_your_own_scene|** Rakenna oma taistelupaikkasi TLD:tä varten **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
+menu_tutorial|^^ Tervetuloa taistelualkuoppaaseen Mount & Bladessa. Tässä opit perusteet taistelemisesta ja hiukan joukkojen komentamisesta taistelun aikana.
 mno_tutorial_1|Alkukurssi #1: Perusliike ja aseen valitsiminen. {s1}
 mno_tutorial_2|Alkukurssi #2: Taistelu kilven kanssa. {s2}
 mno_tutorial_3|Alkukurssi 3#: Taistelu ilman kilpeä. {s3}
@@ -177,16 +177,16 @@ mno_killit|Tapa se nyt. Tee varmaksi, että se kuolee.
 mno_cageit1|Laita häkkiin ja raahaa ympäriinsä.
 mno_cageit2|Pistä yhdessä häkkiin toisen peikon kanssa.
 mno_cheat_disabable|Kytke pois huijauksen/modaamisen asetukset.
-; menu_drank_ent_water_human|^^^You drink the water. It tastes clean and refreshing. It has a pleasant fragrance, as of musk.^You feel refreshed.^^However, you also have a strange, unnatural feeling. Something tells you that you'd better never, ever again drink this water.
-; menu_drank_ent_water_orc|^^^You drink the water. It is just water.^Suddenly, you grasp your throath, in a raptus of pain.^Poisoned!^You choke, you throw up black blood, you almost pass away.^^It hurts, oh, it hurts.
+menu_drank_ent_water_human|^^^Juot vettä. Se maistuu puhtaalta ja virkistävältä. Siinä on mieluisa tuoksu.^Tunnet itsesi virkistyneeltä.^^Kuitenkin sinulla on myös outo epäluonnollinen tunne, kuin sinun ei kannattaisi juoda tätä vettä enään ikinä.
+menu_drank_ent_water_orc|^^^Juot vettä. Se on vain vettä.^ Yhtäkkiä pitelet kädellä kurkustasi kivun takia.^Sinut on myrkytetty!^Tuntuu kuin kuristuisit! Oksennat mustaa verta ja menetät tajuntasi piakkoin.^^ Sinuun sattuu, tosi paljon. 
 mno_i_shall_surv|Minä... pitää... selviytyä!
-; menu_end_game|^^^^^The decision is made, and you resolve to give up your adventurer's life and settle down. You sell off your weapons and armour, gather up all your belongings, and ride off into the sunset....
+menu_end_game|^^^^^Olet tehnyt päätöksen ja jätät seikkailijan elämän taaksesi ja asetut aloillesi. Myyt aseesi ja panssarisi, keräät tavarasi ja ratsastat aamunkoittoa vasten...
 mno_end_game_bye|Näkemiin.
 menu_cattle_herd|Kohtaat joitakin ihmisiä.
 mno_cattle_drive_away|Käske heidän seurata.
 mno_cattle_stop|Pysäytä heidät siihen paikkaan.
 mno_leave|Poistu.
-; menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
+menu_simple_encounter|^^^^^{s2}^Sinulla on {reg22} joukkoa valmiina taistelemaan heidän {reg11} vastaan.^^Taistelu käydään {s3}{s4}.^^Käskysi?
 mno_encounter_attack|{reg21?Hyökätkää heidän kimppuun:Valmistautukaa kohtaamaan heidät}.
 mno_encounter_order_attack|Käske miestesi liittyä taisteluun {reg21?attack:face} ilman sinua.
 mno_encounter_hide|Piiloudu viholliselta...
@@ -212,7 +212,7 @@ menu_kingdom_army_quest_messenger|{s8} lähettää sanan, että hän haluaa puhu
 ; menu_kingdom_army_follow_failed|You have disobeyed orders and failed to follow {s8}. He sends a message he assumes you have more pressing matters, but warns his patience is not unlimited.
 menu_battle_debrief|{s11}^Sinun tappiot:{s8}{s10}^^Vihollisen tappiot:{s9}
 mno_inspect_troll|Tarkastele kaatunutta peikkoa
-; menu_pre_join|^^^^^You come across a battle between {s2} and {s1}. You decide to...
+menu_pre_join|^^^^^Kohtaat taistelun {s2} ja {s1} välillä. Päätät...
 mno_pre_join_help_attackers|Liiku auttaaksesi {s2}.
 mno_pre_join_help_defenders|Kiiruhda auttaaksesi {s1}.
 mno_pre_join_help_refugees|Kiiruhda auttaaksesi {s1}.

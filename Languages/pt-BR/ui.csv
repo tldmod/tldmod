@@ -46,8 +46,8 @@ ui_value_denars|%d Pontos de Recurso.
 ui_cannot_be_used_on_horseback|Não pode ser usado enquanto estiver em uma montaria
 ui_upgrade_to_value|Melhorar para %s
 ui_notification_cant_upgrade|(Não é possível melhor enquanto estiver fornecendo tropas)
-; ui_lance_control|Lance Control:
-; ui_manual_easy|Manual (Easy)
-; ui_manual_hard|Manual (Hard)
-; ui_campaign_ai|Campaign AI (Unused):
-; ui_crouch|Crouch (Unused)
+ui_lance_control|Controle da Lança:
+ui_manual_easy|Manual (Fácil)
+ui_manual_hard|Manual (Difícil)
+ui_campaign_ai|Campanha AI (Não utilizada):
+ui_crouch|Agachar (Não utilizado).

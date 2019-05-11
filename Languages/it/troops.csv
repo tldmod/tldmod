@@ -810,7 +810,7 @@ trp_black_numenorean_captain|Capitano Numenoreano Nero
 trp_black_numenorean_captain_pl|Capitani Numenoreani Neri
 trp_black_numenorean_lieutenant|Tenente Numenoreano Nero
 trp_black_numenorean_lieutenant_pl|Tenenti Numenoreani Neri
-; trp_dunnish_night_wolf|Dunnish Night Wolf
+trp_dunnish_night_wolf|Lupo della Notte Dunladiano
 ; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
 trp_dunnish_lieutenant|Etmano Dunnish
 trp_dunnish_lieutenant_pl|Etmani Dunnish
@@ -1048,7 +1048,7 @@ trp_knight_5_6|Fulgni Barbalunga
 trp_knight_5_7|Thorin, Elmo di Pietra
 trp_knight_5_11|Capo Fudreim
 trp_knight_5_12|Capo Wulf
-; trp_knight_6_1|Dervorin
+trp_knight_6_1|Dervorin
 trp_smith_mtirith|Berethor, il Fabbro
 trp_smith_mtirith_pl|Fabbro del Sovrintendente
 trp_smith_pelargir|Mastro del Metallo Hallatan
@@ -1562,23 +1562,23 @@ trp_start_quest_mordor_scout|Guida di Mordor
 trp_start_quest_mordor_scout_pl|Guide di Mordor
 trp_start_quest_beorning|Berserker della Carroccia di Beorn
 trp_start_quest_beorning_pl|Berserker della Carroccia di Beorn
-; trp_beorning_shield_bear|Bear Warrior
-; trp_beorning_shield_bear_pl|Bear Warriors
-; trp_morannon_healer|Okstuk the Healer
-; trp_minas_tirith_healer|Ioreth
-; trp_edoras_healer|Freya the Healer
-; trp_isengard_healer|Nurgal the Patcher
+trp_beorning_shield_bear|Guerriero Orso
+trp_beorning_shield_bear_pl|Guerrieri Orsi
+trp_morannon_healer|Okstuk il Guaritore
+trp_minas_tirith_healer|Ioreth
+trp_edoras_healer|Freya la Guaritrice
+trp_isengard_healer|Nurgal il rattoppatore
 ; trp_guldur_healer|Mornagar the Gramaryer
-; trp_gundabad_healer|Lurgakh Third Eye
-; trp_mirkwood_healer|Corwiel the Soft-Handed
-; trp_hungry_uruk|Hungry Uruk
-; trp_hungry_orc|Hungry Orc
-; trp_longing_lorien|Longing Elf
-; trp_longing_woodelf|Longing Elf
-; trp_longing_imladris|Longing Elf
+trp_gundabad_healer|Lurgakh Terzo Occhio
+trp_mirkwood_healer|Corwiel Manleggera
+trp_hungry_uruk|Uruk Affamato
+trp_hungry_orc|Orco Affamato
+trp_longing_lorien|Elfo Bramoso
+trp_longing_woodelf|Elfo Bramoso
+trp_longing_imladris|Elfo Bramoso
 ; trp_i5_deep_dweller_of_moria|Deep-Dweller of Moria
 ; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
 trp_i5_orc_chieftain_of_moria|Orco Capitano di Moria
 trp_i5_orc_chieftain_of_moria_pl|Orchi Capitani di Moria
-; trp_rhovanion_noble|Rhovanion Noble
-; trp_rhovanion_noble_pl|Rhovanion Noblemen
+trp_rhovanion_noble|Nobile del Rhovanion
+trp_rhovanion_noble_pl|Nobile del Rhovanion

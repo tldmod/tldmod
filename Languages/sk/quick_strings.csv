@@ -89,7 +89,7 @@ qstr_Dwarf|Trpaslík
 qstr_Whom_Do_You_Serve?|Kto slúži?
 qstr_SAURON_of_Mordor_The|SAURON z Mordoru, Pán prsteňov
 qstr_SARUMAN_of_Isengard_|SARUMAN z Isengard, biela ruka
-qstr_an_ORC^_serving_the_|ORC, ktorý slúži Ľudskému oku
+qstr_an_ORC^_serving_the_|Ohyzd, ktorý slúži Oku bez viečka
 qstr_an_URUK^_the_new_bre|URUK, - nové plemeno orkov
 qstr_a_MAN^_subjugated_by|Člověk, podriadený Sauronom
 qstr_an_ORC^_serving_the_W|ORC, ktorý slúži bielej ruke
@@ -1009,13 +1009,13 @@ qstr_Woodelf|Lesný elf
 qstr_^^^^^^^You_come_upon|^^^^^^^Narazil si na utečencov opúšťajúcich {s2} na ceste do {s3}u. ^^Sú to poväčšine zoslábli ľudia, najmä ženy a deti.^^ Sú medzi nimi stráže, ale nie dosť, aby ich ochránili pred nájazdom.
 qstr_^^^^^^^You_come_upon_|^^^^^^^Narazil si na utečencov, ktorých si stopoval od {s2}u. Vyzerá to, že mieria do {s3}u. Väčšina z nich je zoslabnutá a stará. ^^ Je medzi nimi pár stráži, ale nie dosť na to aby teba a tvojich mužov zastavili pred tým, aby ste ich zmasakrovali.
 qstr_^^At_last_the_Master|^^Konečne, náš Pán vydal rozkazy! Tisíce fakieľ sa rozhorelo, ich oheň sa odráža na lesku smrtiacich zbraní. Ty a tvoji statní chlapci už onedlho dostanete rozkazy. Aj, bude sa bojovať, a veľa, a sláva nikoho neminie!^^Máš tu česť byť povolaný na audienciu s Pánom v Jeho Veži. Najprv zrejme dostaneš podradné úlohy vhodné tak pre snagy - vypľundruj dedinu tu, prepadni konvoj tam. Ale čoskoro sa preukáže tvoja cena. Kto môže tvrdiť, že vo vojne nezohraješ rovnako veľkú úlohu, ako akýkoľvek veliteľ {s2}a z {s3}u?^^Vojnové ohne zbĺkli, pád Ľudí a ich spojencov započal!
-; qstr_^^Your_head_suddenly|^^Your head suddenly fills with a vision - the flaming Eye. All around you, your warriors stop in their tracks. Somehow, you know at that moment that all of you are hearing the same summons, seeing the same vision. Great is the art of the Lidless Eye - great is the power of Barad-dûr!.^^The knowledge, unspoken, seeps into your very bones. The time has come. The Dark Lord commands - you shall all march upon your enemies in open war. Orders from {s2} in {s3} will come. Your part at first will not be great, but you'll prove yourself soon enough.^^ The War has begun; the fall of the West begins!
-; qstr_{s13}_asked_you_to_j|{s13} asked you to join him with at least {reg13} troops and meet Isengard's Last Stand.
-; qstr_You_defeated_{reg5}_|You defeated {reg5} enemies and have impressed your commander.
-; qstr_You_defeated_{reg5}_e|You defeated {reg5} enemies.
-; qstr_You_failed_to_defeat|You failed to defeat any enemy.
-; qstr_The_sorcerer_slain_y|The sorcerer slain, you and your companions hastily bandage up wounds and slip out into the night. Foul voices shriek at your backs and you can feel many burning eyes looking for you in the shadows. Soon the anger turns to disappointment and the sounds of pursuit are muffled, replaced by the usual heavy silence of Mirkwood. You have escaped
-; qstr_The_sorcerer_slipped|The sorcerer slipped from your grasp and slithered into the darkness of his domain. With hearts weighted by failure, you and your companions hastily bandage up wounds and withdraw into the night. Mocking voices shriek at your backs and you can feel many burning eyes trying to pierce the shadows. Laughter and insults are soon mercifully muffled, replaced by the usual heavy silence of Mirkwood. You have escaped.
+qstr_^^Your_head_suddenly|^^Odrazu tvoje vedomie a zmysli pohltí vidina - ohnivé Oko. Všetci vôkol teba v úžase strnú. Niečo ti hovorí, že vidia rovnaký výjav a čujú to isté volanie. Veľká je sila Oka bez viečka - veľká je moc Bard-dûru!.^^V samotných kostiach údoch tvojho tela pocítiš poznanie. Čas nadišiel. Temný Pán vydal svoj rozkaz - budeš pochodovať v ústrety svojim nepriateľom v otvorenej vojne. Čakaj rozkazy od {s2}a v {s3}u. Spočiatku tvoj údel v tomto boji nebude veľký, ale krst ohňom vojny onedlho preverí každého schopnosti a vlohy.^^ Vojna započala a s ňou aj pád Západu!
+qstr_{s13}_asked_you_to_j|{s13} ti prikazuje, aby si sa k nemu pridal s najmenej {13} jednotkami a účastnil sa Posledného Vzdoru Isengardu.
+qstr_You_defeated_{reg5}_|Pobil si {reg5} nepriateľov a urobil si na svojho veliteľa dojem.
+qstr_You_defeated_{reg5}_e|Pobil si {reg5} protivníkov.
+qstr_You_failed_to_defeat|Nepodarilo sa ti poraziť jediného nepriateľa.
+qstr_The_sorcerer_slain_y|Vo chvíli, keď černokňažník padne mrtvý k zemi, ty a tvoji spoločníci si narýchlo ošetríte svoje najväčšie zranenia a vykĺznete von do nekonečnej nočnej tmy. Odporné hlasy a škreky sa ozývajú za vami a ty pociťuješ, ako po vás v tieňoch pátra nespočet ohnivých očí. Onedlho zúrivosť v ich hlasoch vystrieda sklamanie a čoskoro sa vôkol rozhostí ťažké ticho, prirodzené pre bezútešný Temnohvozd. Unikol si.
+qstr_The_sorcerer_slipped|Černokňažník ti vykĺzol spod rúk a unikol do temnoty svojho úkrytu. So srdcom ťažkým z porážky si ty a tvoji spoločníci narýchlo ošetríte svoje najväčšie zranenia a uniknete do nočnej tmy. Ostré výsmešné hlasy a škrekoty sa ozývajú za vami a cítiš, že mnoho ohnivých očí sa prediera tmavou spleťou lesa len aby vás našli. Rehot a nadávky onedlho utíchnu, vystrieda ich ťažké ticho, prirodzené pre bezútešný Temnohvozd. Unikol si.
 qstr_You_approach_a_heavi|Prechádzaš prísne stráženou oblasťou lesa...
 qstr_You_wait_for_darknes|Čakáš, kým opadne temnota...
 qstr_You_are_quickly_disc|Onedlho si odhalený nepriateľmi.
@@ -1024,7 +1024,7 @@ qstr_You_have_evaded_the_|Vyhol si sa prieskumníkom a dostal si sa blízko k ru
 qstr_You_have_found_the_s|Našiel si černokňažníka!
 qstr_You_cannot_leave_unt|Nemôžeš odísť, dokiaľ ťa stráže vidia!
 qstr_Kill_him_quickly_bef|Rýchlo, zabite ho pred tým, než unikne!
-; qstr_Enraged_by_the_death|Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
+qstr_Enraged_by_the_death|Smrť {s4}a v tebe vznietila neskrotný plameň, skladáš prísahu pomsty armádam {s3}u. V nasledujúcich dňoch musíš zničiť čo najviac jednotiek {s3}u. Si si vedomý toho, že tvoji muži nadšene prizerali učineniu sľubu a ty nechceš byť známy ako krivoprísažník. Zafarbi rieky, potoky a bystriny krvou svojich nepriateľov!
 qstr_flooded._Somebody_or|Potopené. Niekto či niečo muselo zničiť priehrady Železného pasu.
 qstr_destroyed._Only_smol|Zničené. Ostali len tlejúce ruiny.
 qstr_^^^You_lost_your_fig|^^^Prehral si súboj so vzbúrencom! ^Zdá sa, že tvoji ohyzdi majú nového veliteľa.
@@ -1038,18 +1038,18 @@ qstr_The_war_expands_comm|Vojna sa rozrástla, velitelia sú trúfalejší! (Na 
 qstr_Your_party_is_spotte|Tvoju družinu pozorujú z {s1}u.
 qstr_Party_has_nothing_to|Družina hladuje!
 qstr_You_pay_for_accommod|Platíš za ubytovanie.
-; qstr_Your_scouts_have_rep|Your scouts have reported that there is a {s2} near {s3}.
+qstr_Your_scouts_have_rep|Tvoji prieskumníci hlásia, že sa {s2} nachádza neďaleko {s3}u.
 qstr_The_troll_outside_{s|Trol pred {s2}om bol zabitý. Misia je zrušená. 
 qstr_{s1}_was_killed_on_t|{s1} bol zabitý v boji. Úloha zrušená.
 qstr_{s1}_has_been_defeat|{s1} bol porazený. Misia zrušená.
 qstr_You_must_follow_{s1}|Musíš nasledovať {s1}a!
 qstr_You_must_follow_{s1}!|Musíš nasledovať {s1}a! Toto je posledné varovanie!
 qstr_{s1}_parties_defeate|{s1} Pobitých skupín: {reg1} z {reg2}
-; qstr_{reg65}_Moria_and/or|{reg65} Moria and/or Gundabad troops killed. (Counter refreshes every hour)
-; qstr_{reg65}_{s3}_troops_|{reg65} {s3} troops killed. (Counter refreshes every hour)
-; qstr_{reg66}_{s5}_troops_|{reg66} {s5} troops killed. (Counter refreshes every hour)
-; qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} troops killed. (Counter refreshes every hour)
-; qstr_{reg68}_{s10}_killed|{reg68} {s10} killed. (Counter refreshes every hour)
+qstr_{reg65}_Moria_and/or|{reg65} Morijských a/alebo Gundabadských jednotiek zabitých. (Počítadlo sa obnovuje každú hodinu)
+qstr_{reg65}_{s3}_troops_|{reg65} jednotiek {s3}u zabitých. (Počítadlo sa obnovuje každú hodinu)
+qstr_{reg66}_{s5}_troops_|{reg66} jednotiek {s5}u zabitých. (Počítadlo sa obnovuje každú hodinu)
+qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} jednotiek {s8}u zabitých. (Počítadlo sa obnovuje každú hodinu)
+qstr_{reg68}_{s10}_killed|{reg68} jednotiek {s10}u zabitých. (Počítadlo sa obnovuje každú hodinu)
 qstr_{s1}_is_scouted.|{s1} je preskúmané.
 qstr_The_Age_of_Men_has_f|Vek Ľudí skončil. Dve Veže zhromažďujú pozostatky svojich síl a budú bojovať o to, kto sa stane vládcom nad celou Stredozemou!
 qstr_The_War_of_the_Two_T|Vojna Dvoch Veží započala!
@@ -1062,12 +1062,12 @@ qstr_Guard_Legion_of_{s6}|Légia ochrancov {s6}
 qstr_Scouts_report_that_{|Prieskumníci hlásia, že {s6} shromáždil veľkú armádu neďaleko {s7} v poslednom nádeji ochrániť hlavné mesto.
 qstr_The_forces_of_{s2}_e|Vojská {s2} založili vojenský tábor v {s15}!
 qstr_The_hosts_of_{s2}_ma|Páni {s2}u vyrážajú späť brániť domovinu!
-; qstr_Gondor_has_called_fo|Gondor has called for aide!
-; qstr_Gondor_is_accompanyi|Gondor is accompanying the marshall!
-; qstr_{s5}_has_stopped_fol|{s5} has stopped following you.
-; qstr_You_have_{reg69}_all|You have {reg69} ally party following you
-; qstr_You_have_{reg69}_ally|You have {reg69} ally parties following you
-; qstr_The_forces_of_{s2}_h|The forces of {s2} have regrouped and march on to {s15}!
+qstr_Gondor_has_called_fo|Gondor volá o pomoc!
+qstr_Gondor_is_accompanyi|Gondorskí muži sprevádzajú maršála!
+qstr_{s5}_has_stopped_fol|{s5} ťa už nesprevádza.
+qstr_You_have_{reg69}_all|{reg69} spojenecká družina ťa následuje.
+qstr_You_have_{reg69}_ally|Následuje ťa {reg69} družín spojencov.
+qstr_The_forces_of_{s2}_h|Armády {s2}u sa preskupili a pochodujú na {s15}!
 qstr_{s1}_from_{s2}|{s1} z {s2}
 qstr_When_dealing_with_lo|Pokiaľ jednáš s miestnymi v {s11}e, a nemuseli sa ešte dopočuť o tvojich úspechoch v {s10}e. ^^(Body Zásob, ktorým disponuješ medzi obyvateľstvom v {s11}e, nie sú rovnaké, aké si získal v {s10}, ale rovnaké, aké bude i naďalej získavať v {s11} -- pozri Hlásenie)
 qstr_Info|Info
@@ -1093,15 +1093,15 @@ qstr_{s27}:_Influence_wit|{s27}: Vplyv v {s1}e sa zvyšuje z {reg2} na {reg1}.
 qstr_{s27}:_Influence_with|{s27}: Vplyv v {s1} sa snižuje z {reg2} na {reg1}.
 qstr_{s27}:_Party_morale_|{s27}: Morálka družiny sa zvýšila.
 qstr_{s27}:_Party_morale_d|{s27}: Morálka družiny sa snížila.
-; qstr_You_have_failed_to_f|You have failed to fulfill your oath to avenge Balin and his company!
+qstr_You_have_failed_to_f|Nepodarilo sa ti naplniť prísahu a pomstiť smrť Balina a jeho družiny!
 qstr_You_have_failed_to_fu|Nesplnil si sľub pomsty, ktorý si zložil za hrdinskú smrť {s1}a!
-; qstr_Your_troops_value_yo|Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, 
-; qstr_{s22}You_have_fulfil|{s22}You have fulfilled your oath to avenge Balin and his company!
-; qstr_{s22}You_have_fulfill|{s22}You have fulfilled your oath of vengeance for {s1}'s heroic death!
-; qstr_Reinforcements|Reinforcements
-; qstr_Refugees_Escaped:_{r|Refugees Escaped: {reg10} --- Refugees Killed: {reg11}
-; qstr_Raider_Parties_Kille|Raider Parties Killed: {reg12}
-; qstr_One_of_the_target_ce|One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.
+qstr_Your_troops_value_yo|Muži si vážia tvojej snahy naplniť prísahu, ale všimli si, že celá záležitosť sa vyvŕbila akosi prirýchlo. Vo výsledku
+qstr_{s22}You_have_fulfil|{s22} sa ti podarilo splniť prísažný sľub pomsty za Balina a jeho družinu!
+qstr_{s22}You_have_fulfill|{s22} sa ti podarilo splniť prísažný sľub za hrdinskú smrť {s1}a!
+qstr_Reinforcements|Posily
+qstr_Refugees_Escaped:_{r|Utečenci, ktorým sa podaril ujsť: {reg10} --- Zabitých utečencov: {reg11}
+qstr_Raider_Parties_Kille|Počet pobitých Nájazdníckých bánd: {reg12}
+qstr_One_of_the_target_ce|Jedna z utečeneckých základní bola zničená. Utečenci sa rozpŕchli a nie je po nich ani vidu.
 qstr_As_an_Orc_or_a_Dwarf|Ako ohyzd alebo trpaslík môžeš používať Vlastnú Kameru, ktorú sme vložili do hry, aby sme vylepšili váš zážitok z TLD behom hrania za nižšie rasy. Pre viac informácií pozri Komponenty Hry.
 qstr_Custom_Camera|Vlastná kamera
 qstr_{reg65?my_Lady:my_Lo|{reg65?moja Pani:môj Pane}
@@ -1148,20 +1148,20 @@ qstr_Pippin|Pútnik Bral
 qstr_the_Citadel|Citadela
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Správca Denethor
-; qstr_the_Golden_Hall|the Golden Hall
+qstr_the_Golden_Hall|Zlatá Sieň!
 qstr_Edoras|Edoras
 qstr_King_Theoden|Kráľ Theoden
-; qstr_Merry_asked_you_to_d|Merry asked you to deliver a message to his cousin, Pippin, in Minas Tirith.
-; qstr_Pippin_asked_you_to_|Pippin asked you to deliver a message to his cousin, Merry, in Edoras.
-; qstr_Tell_him_I_ve_grown_|Tell him I've grown another inch!
-; qstr_Tell_Pip_he_smokes_t|Tell Pip he smokes too much!
-; qstr_Tell_him_I_can_ride_|Tell him I can ride a grown horse now!
-; qstr_Ask_him_if_he_has_an|Ask him if he has any pipe-weed left!
-; qstr_Tell_him_I_ll_be_the|Tell him I'll be the tall one when we see each other again!
-; qstr_Ask_if_he_s_seen_Gan|Ask if he's seen Gandalf!
-; qstr_You_gained_250_exper|You gained 250 experience.
+qstr_Merry_asked_you_to_d|Chicho ťa požiadal, aby si doručil dopis jeho bratrancovi, Pipinovi, do Minas Tirith.
+qstr_Pippin_asked_you_to_|Pipin ťa požiadal, aby si doručil dopis jeho bratrancovi, Chichovi, do Edorasu.
+qstr_Tell_him_I_ve_grown_|Odkáž mu, že som už vyrástol o celý palec!
+qstr_Tell_Pip_he_smokes_t|Odkáž Pipovi, že príliš fajčí!
+qstr_Tell_him_I_can_ride_|Odkáž mu, že už dokážem jazdiť na dospelom koni!
+qstr_Ask_him_if_he_has_an|Nezabudni sa ho spýtať, či mu neostal ešte nejaký fajkový tabák!
+qstr_Tell_him_I_ll_be_the|Odkáž mu, že keď sa nabudúce uvidíme, budem ja ten vysoký!
+qstr_Ask_if_he_s_seen_Gan|Spýtaj sa ho, či videl Gandalfa!
+qstr_You_gained_250_exper|Získal si 250 skúseností.
 qstr_Treebeard_wants_you_|Stromobrad chce, aby si našiel a porazil ohyzdov, ktorý rúbajú stromy vo Farngorne.
-; qstr_Something_wrong_not_e|Something wrong, not enough troops for scout party
+qstr_Something_wrong_not_e|Niečo nie je v poriadku, nedostatok jednotiek pre prieskumnú skupinu.
 qstr_my_home_town|moje rodné mesto
 qstr_I_am_in_perfect_heal|Som úplne zdravý.
 qstr_I_am_suffering_from_|Mám {s1}.
@@ -1199,7 +1199,7 @@ qstr_^{s22}_is_grateful_t|^{s22} je ti vďačný, {s23}, {s29}^
 qstr_{s31}{reg28?Those:Th|{s31}{reg28?Títo:Tento} odvážny {reg28?vojaci:vojak} nám určite pomôžu obrániť {s21}.{s32}^^[získavaš {reg14} Bodov Zásob {s14}u]
 qstr_{s31}{reg28?Those:Tha|{s31}{reg28?Tieto:Táto} {reg28?jednotky:jednotka} budú užitočne pri obrane {s21}u.{s32}^^[získavaš {reg14} Bodov Zásob {s14}u]
 qstr_{s4}_^Oh_and_take_ba|{s4} ^Oh, a zober si späť tých vojakov, čo nepatria k našemu ľudu.
-; qstr_You_have_reinforced_|You have reinforced {s8} with {reg55} troops.
+qstr_You_have_reinforced_|Posilnil si obrannú posádku {s8}u o {reg55} jednotiek.
 qstr_I_don_t_need_them_an|I tak ich nepotrebujem, nechajte si ich.
 qstr_It_is_my_duty_to_pro|Je mojou povinnosťou chrániť náš ľud.
 qstr_It_is_my_duty_to_prot|Je mojou povinnosťou chrániť našich spojencov.
@@ -1208,25 +1208,25 @@ qstr_I_am_{s4}_a_commande|Som {s4}, veliteľ {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? a panovník {s8}.:.
 qstr_Very_well_done_{play|Výborná práca, {playername}! Chytil si špeha i jeho navádzača, presne ako som dúfal. Tento párik teraz trčí v cele čakajúc na výsluch. Budú nám musieť vysvetliť niekoľko vecičiek. Tak či onak, som nadmieru spokojný s tvojím úspechom, {playername}. Dám ti tento mešec ako znak môjho uznania.
 qstr_Beautiful_work_{play|Vynikajúca práca, {playername}! Zajal si špeha i jeho navádzača, presne podľa rozkazu, a tí dvaja teraz trčia dôkladne uväznení v žalári, čakajúc na výsluch. Môj mučiteľ bude dnes večer zaneprázdnený! Tak či onak, som nadmieru spokojný s tvojím úspechom, {playername}. Dám ti tento mešec na znak môjho uznania.
-; qstr_Foiling_the_enemy_s_|Foiling the enemy's attempts at attacking the refugee trains have weakened their resolve ({s1} has lost {reg19} faction strength due to your victory against {reg18} raiders).
-; qstr_The_slaughter_and_lo|The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained 50 faction strength).
-; qstr_You_did_however_defe|You did, however, defeat {reg18} raiders, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
-; qstr_The_slaughter_and_loo|The slaughter and looting of the refugee train has strengthened the enemy ({s1} has gained {reg20} faction strength).
-; qstr_Killing_the_refugees|Killing the refugees from {s1} and enslaving the survivors have demoralized their people ({s1} has lost {reg19} faction strength).
-; qstr_{reg20}_refugee_trai|{reg20} refugee trains escaped and improved the enemy's morale ({s1} has gained {reg22} faction strength).
-; qstr_You_did_however_defea|You did, however, defeat {reg18} refugee trains, weakening the enemy's resolve ({s1} has lost {reg19} faction strength).
-; qstr_My_lord_{s12}_is_saf|My lord, {s12} is safe. The Corsairs were defeated.
-; qstr_My_lord_Esgaroth_is_|My lord, Esgaroth is safe. The men of Rhûn were defeated.
-; qstr_The_surroundings_of_|The surroundings of {s12} burn. The pillaging was glorious indeed!
-; qstr_The_surroundings_of_E|The surroundings of Esgaroth burn. The pillaging was glorious indeed!
-; qstr_This_is_welcome_news|This is welcome news indeed, {playername}. We were ill-prepared for such bold action from the Corsairs. But thanks to you, the black sails have been driven away, at least for a time, and we may hope, at least, that we have struck them a blow this day. You have our thanks.
-; qstr__Good_work_{playerna| Good work, {playername}! They showed more cunning than we credited them with, I'll give them that. But these Easterlings don't fight half as well on their boats as they do on their horses, it would seem! Perhaps we, too, should consider launching a fleet of our own... In any case, we thank you, {playername}, on behalf of Esgaroth and all the people of Dale.
-; qstr_Even_from_here_we_co|Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Gondor, for they know now that not even their mightiest strongholds are beyond our reach!
-; qstr_Even_from_here_we_cou|Even from here, we could see the flames and smell the despair of our enemies on the wind! You have done splendidly, {playername}. Let terror now strike the heart of every man, woman and child in Dale, for they know now that not even their mightiest strongholds are beyond our reach!
-; qstr_My_lord_they_fell_up|My lord, they fell upon us with great force. We could not repel the Corsairs.
-; qstr_My_lord_they_fell_upo|My lord, they fell upon us with great force. We could not repel the warriors of Rhûn.
-; qstr_The_raid_on_{s12}_fa|The raid on {s12} failed, thanks to the incompetence of our allies!
-; qstr_This_raid_was_ill_fa|This raid was ill-fated from the start. We should never have gotten on those rickety rafts!
+qstr_Foiling_the_enemy_s_|Prekazenie nepriateľských útokov na utečenecké davy oslabilo sily tvojich protivníkov ({s1} stratil {reg19} bodov sily frakcie vďaka tvojmu víťazstvu nad {reg18} nájazdníkmi).
+qstr_The_slaughter_and_lo|Vybíjanie, prepadávanie a vykorisťovanie utečeneckých davov posilnilo nepriateľské rady ({s1} získal 50 bodov frakčnej sily).
+qstr_You_did_however_defe|Avšak ty si pobil {reg18} nájazdníkov, čo oslabilo nepriateľské sily ({s1} stratil {reg19} bodov frakčnej sily).
+qstr_The_slaughter_and_loo|Vybíjanie, prepadávanie a vykorisťovanie utečeneckých davov posilnilo nepriateľské rady ({s1} získal {reg20} bodov frakčnej sily).
+qstr_Killing_the_refugees|Vybíjanie utečencov z {s1}u a zotročovanie preživších oslabilo ducha ich ľudu ({s1} stratil {reg19} bodov frakčnej sily).
+qstr_{reg20}_refugee_trai|{reg20} davom utečencov sa podarilo uniknúť a to posilnilo nepriateľského ducha ({s1} získal {reg22} bodov frakčnej sily).
+qstr_You_did_however_defea|Avšak ty si pobil {reg18} davov utečencov, čo oslabilo ducha tvojich nepriateľov ({s1} stratil {reg19} bodov frakčnej sily).
+qstr_My_lord_{s12}_is_saf|Môj pane, {s12} je v mimo ohrozenie. Korzári sú porazení.
+qstr_My_lord_Esgaroth_is_|Môj pane, Esgaroth je v mimo ohrozenie. Bojovníci z kmeňa Rhûn sú porazení.
+qstr_The_surroundings_of_|Podhradie {s12} je v plameňoch. Drancovačka sa podarila.
+qstr_The_surroundings_of_E|Okolie Esgarothu je v plameňoch. Drancovačka sa podarila.
+qstr_This_is_welcome_news|To sú úžasné správy, {playername}. Na útok tohoto rozsahu od Korzárov sme neboli pripravení. Ale vďaka tebe sme nakoniec čierne vlajky zahnali späť, ďaleko na morské vody, teda aspoň na čas. Dúfajme, že sme im dnes uštedrili drvivú porážku. Máš našu vďaku.
+qstr__Good_work_{playerna|Skvelá práca, {playername}! Preukázali väčšiu chytrosť, než sme im pripisovali, uznávam. Východniari nebojujú ani spolovice tak dobre na palube svojich lodí než na konských chrbtoch, zdá sa. Možno by sme mali zvážiť vybudovanie vlastnej flotily... Tak či onak, patrí ti naša vďaka, {playername}, vďaka Esgarothu i všetkého ľudu Dalského.
+qstr_Even_from_here_we_co|Dokonca až odtiaľ sme zočili plamene a vyňuchali strach nepriateľov pri tom strete! Viedol si si bravúrne, {playername}. Zasial si strach do ľudských srdcí a teraz už každý muž, žena i dieťa v Gondore vie, že ich pred nami neochránia ani tie najskvelejšie pevnosti!
+qstr_Even_from_here_we_cou|Dokonca až odtiaľ sme zočili plamene a vyňuchali strach nepriateľov pri tom strete! Viedol si si bravúrne, {playername}. Zasial si strach do ľudských srdcí a teraz už každý Dálsky muž, žena i dieťa vie, že ich pred nami neochránia ani tie najskvelejšie pevnosti!
+qstr_My_lord_they_fell_up|Môj pane, čelili sme ohromnému útoku. Nemohli sme Korzárov odraziť.
+qstr_My_lord_they_fell_upo|Môj pane, čelili sme ohromnému útoku. Nemohli sme bojovníkov z kmeňa Rhûn nijako odraziť.
+qstr_The_raid_on_{s12}_fa|Nájazd na {s12} sa nepodaril a to kvôli neschopnosti našich spojencov!
+qstr_This_raid_was_ill_fa|Zlyhanie nájazdu bolo jasné už od začiatku. Nikdy sme sa nemali nalodiť na hentie rozhegané vory.
 ; qstr_This_is_evil_news_yo|This is evil news you bring. The black sails grow ever bolder, and all of Belfalas now lies ever more under their shadow. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for Gondor, and we must fight to keep what remains of it alive.
 ; qstr_This_is_evil_news_you|This is evil news you bring. The Easterlings grow ever bolder, and Esgaroth burns. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for our kingdom, and we must fight to keep what remains of it alive.
 ; qstr_Pah!_It_seems_you_we|Pah! It seems you weren't able to find your sea-legs, {playername}. Now they sit, these men of Gondor, high in their towers, vain as kings, laughing as the black sails burn! Perhaps a stint at the oars of a galley would be fitting punishment for your troops; a pity they are under your command, and not mine. The Eye will not be pleased. Leave me now. 

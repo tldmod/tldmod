@@ -133,7 +133,7 @@ qstr_Disable|禁用
 qstr_Default_Camera|默认相机
 qstr_Free_Mode_Custom_Cam|自由模式自定义相机
 ; qstr_Fixed_Over_The_Shoul|Fixed Over-The-Shoulder Camera
-qstr_Prevent_AI_from_taki|防止電腦採取防禦措施
+qstr_Prevent_AI_from_taki|防止电脑采取防御措施
 ; qstr_Brighter_Nights:__|Brighter Nights:  
 qstr_Done|完成
 ; qstr_Gameplay_Tweaks|Gameplay Tweaks
@@ -147,7 +147,7 @@ qstr_Done|完成
 ; qstr_F4___Complex_formati|F4 - Complex formations
 ; qstr_F7___Memorize_div._p|F7 - Memorize div. placement
 ; qstr_F8___Default_divisio|F8 - Default division placement
-; qstr_F4___Ranks|F4 - Ranks
+qstr_F4___Ranks|F4 - 队形
 ; qstr_F5___Shield_Wall|F5 - Shield Wall
 ; qstr_F6___Wedge|F6 - Wedge
 ; qstr_F7___Square|F7 - Square
@@ -755,14 +755,14 @@ qstr_You_receive_word_that|你接到线报说魔戒猎手头领拖着一个箱�
 ; qstr_Enemy_reinforcements|Enemy reinforcements have arrived
 ; qstr_Yarrrr!!|Yarrrr!!
 ; qstr_Get_all_of_them!|Get all of them!
-; qstr_Kill_them_all!|Kill them all!
+qstr_Kill_them_all!|杀死他们！
 ; qstr_Toss_them_overboard!|Toss them overboard!
 ; qstr_It_is_a_good_day_to_|It is a good day to die!
 ; qstr_All_hands_on_deck!_T|All hands on deck! Throw them back!
 ; qstr_Ally_reinforcements_|Ally reinforcements have arrived
 ; qstr_Forward_men!|Forward, men!
 ; qstr_Leave_none_of_these_|Leave none of these filth standing!
-; qstr_End_them_all!|End them all!
+qstr_End_them_all!|杀死他们！
 ; qstr_Drive_them_back!|Drive them back!
 ; qstr_Protect_the_City!|Protect the City!
 ; qstr_Forward!_Board_them!|Forward! Board them!
@@ -817,11 +817,11 @@ qstr_The_battle_is_won!|战斗胜利！
 ; qstr_We_will_feast_on_you|We will feast on your flesh!
 ; qstr_Dwarf_meat!|Dwarf meat!
 ; qstr_Eru_Iluvatar_has_dec|Eru Iluvatar has decided the fate of Balin's Company, and it cannot be changed.
-; qstr_They_are_coming....!|They are coming....!
+qstr_They_are_coming....!|他们来了……！
 ; qstr_Who...dares...enter.|Who...dares...enter...
-; qstr_You_are_not_welcome_|You are not welcome here!
-; qstr_Finally_I_found_you!|Finally, I found you! Let's get out of here!
-; qstr_You...are....ours...|You...are....ours...
+qstr_You_are_not_welcome_|我们不欢迎你！
+qstr_Finally_I_found_you!|我终于找到你了！我们赶快离开这！
+qstr_You...are....ours...|你…是…我们的……
 qstr_Look_at_my_over_the_|看看我的头像，{playername}！我真漂亮！
 qstr_You_wish_old_man_my_|如您所愿，老人家，我的头像其实更好！
 qstr_You_should_really_se|你真应该看看摄政王迪耐瑟二世的书脸，他的照片赞极了！
@@ -1012,8 +1012,8 @@ qstr_Imladris|瑞文戴尔
 ; qstr_^^Your_head_suddenly|^^Your head suddenly fills with a vision - the flaming Eye. All around you, your warriors stop in their tracks. Somehow, you know at that moment that all of you are hearing the same summons, seeing the same vision. Great is the art of the Lidless Eye - great is the power of Barad-dûr!.^^The knowledge, unspoken, seeps into your very bones. The time has come. The Dark Lord commands - you shall all march upon your enemies in open war. Orders from {s2} in {s3} will come. Your part at first will not be great, but you'll prove yourself soon enough.^^ The War has begun; the fall of the West begins!
 ; qstr_{s13}_asked_you_to_j|{s13} asked you to join him with at least {reg13} troops and meet Isengard's Last Stand.
 ; qstr_You_defeated_{reg5}_|You defeated {reg5} enemies and have impressed your commander.
-; qstr_You_defeated_{reg5}_e|You defeated {reg5} enemies.
-; qstr_You_failed_to_defeat|You failed to defeat any enemy.
+qstr_You_defeated_{reg5}_e|你击败了{reg5}个敌人。
+qstr_You_failed_to_defeat|你未能打败任何敌人。
 ; qstr_The_sorcerer_slain_y|The sorcerer slain, you and your companions hastily bandage up wounds and slip out into the night. Foul voices shriek at your backs and you can feel many burning eyes looking for you in the shadows. Soon the anger turns to disappointment and the sounds of pursuit are muffled, replaced by the usual heavy silence of Mirkwood. You have escaped
 ; qstr_The_sorcerer_slipped|The sorcerer slipped from your grasp and slithered into the darkness of his domain. With hearts weighted by failure, you and your companions hastily bandage up wounds and withdraw into the night. Mocking voices shriek at your backs and you can feel many burning eyes trying to pierce the shadows. Laughter and insults are soon mercifully muffled, replaced by the usual heavy silence of Mirkwood. You have escaped.
 qstr_You_approach_a_heavi|你进入了森林中一个戒备森严的地方...
@@ -1038,7 +1038,7 @@ qstr_The_war_expands_comm|随着战事的如火如荼，指挥官们变得更加
 qstr_Your_party_is_spotte|你的部队被{s1}发现了。
 qstr_Party_has_nothing_to|部队食物短缺了！
 qstr_You_pay_for_accommod|你支付了宿金。
-; qstr_Your_scouts_have_rep|Your scouts have reported that there is a {s2} near {s3}.
+qstr_Your_scouts_have_rep|你的斥候打听到消息，在{s3}附近有一个{s2}
 qstr_The_troll_outside_{s|{s2}外的食人妖被杀了。任务取消。
 qstr_{s1}_was_killed_on_t|{s1}已经战死沙场。任务取消。
 qstr_{s1}_has_been_defeat|{s1}已被击败。任务取消。
@@ -1064,7 +1064,7 @@ qstr_The_forces_of_{s2}_e|{s2}的军队在{s15}建立了一个前线营地！
 qstr_The_hosts_of_{s2}_ma|{s2}的军队前来保卫他们的家园！
 ; qstr_Gondor_has_called_fo|Gondor has called for aide!
 ; qstr_Gondor_is_accompanyi|Gondor is accompanying the marshall!
-; qstr_{s5}_has_stopped_fol|{s5} has stopped following you.
+qstr_{s5}_has_stopped_fol|{s5}不再跟随你。
 ; qstr_You_have_{reg69}_all|You have {reg69} ally party following you
 ; qstr_You_have_{reg69}_ally|You have {reg69} ally parties following you
 ; qstr_The_forces_of_{s2}_h|The forces of {s2} have regrouped and march on to {s15}!

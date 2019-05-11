@@ -5,8 +5,8 @@ imod_bent|Com Dobras %s
 imod_chipped|Com Entalhes %s
 imod_battered|Com Danos %s
 imod_poor|De má qualidade %s
-; imod_crude|Simple %s
-; imod_old|Ancient %s
+imod_crude|Simples %s
+imod_old|Antigo %s
 imod_cheap|Barato %s
 imod_fine|Fino %s
 imod_well_made|Bem Feito %s
@@ -23,7 +23,7 @@ imod_tattered|Esfarrapado %s
 imod_ragged|Diferente %s
 imod_rough|Diferente %s
 imod_sturdy|Resistente %s
-; imod_thick|Robust %s
+imod_thick|Robusto %s
 imod_hardened|Fortificado %s
 imod_reinforced|Reforçado %s
 imod_superb|Soberbo %s

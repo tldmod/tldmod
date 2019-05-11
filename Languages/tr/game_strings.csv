@@ -1,7 +1,7 @@
 
 str_yes|Evet.
 str_no|Hayır.
-str_noone|hiçkimse
+str_noone|hiç kimse
 str_s50_comma_s51|{s50}, {s51}
 str_s50_and_s51|{s50} ve {s51}
 str_s5_s_party|{s5}'in Grubu
@@ -458,7 +458,7 @@ str_npc12_backstory_later|Emirlerim var. Adamlarım tarafından yakalanan günah
 str_npc13_backstory_later|Yaptıklarım karanlığın büyümesine neden oluyor. Bir kez daha Kuzeyliler güneyden korkuyorlar. Önümüzde büyük zaferler görüyorum ve kan dolu nehirler. Ancak kazandığımız her zaferin benim türümü bozduğunu görüyorum, onların kalpleri onun kötülüğüyle çarpılmış durumda. Bunu görmek beni umutsuzluğa sevk ediyor.
 str_npc14_backstory_later|Geri döndün yabancı, belki de bu bir işarettir. Suları okudum ve karardığını gördüm. Deniz, bir adamın gözlerini değiştirir ve ona dilini anlaması için gözlerini kullanmasını öğretir.
 str_npc15_backstory_later|Pek çokları, iksirlerim tarafından iyileştirilmek için yalvaran harikalardı. At seviciler ve soluk yüzlü elfler çoktur. ve kulübemi bir kez daha terk etmek zorunda kaldım ve ben... peki, Yüce Lord, birlikte savaştığımız ve yeteneklerim için minnettar olduğun zamanki kadar şanslı değilim...
-; str_npc16_backstory_later|Long does the history of my people recount these lands. I know not what their treacherous histories say of days when my people before entered this land, but sad and dark will their histories be as my people enter it now. Like a storm of hooves and swords and arrows, we will bring them doom like the Balchoth before us.
+str_npc16_backstory_later|Halkımın tarihi bu toprakları anlatır. Halkım bu topraklara adım attığı günlerde onların güvenilmez tarihlerinin bizim hakkımızda neler dediğini bilmiyorum,  ama üzücü ve karanlık geçmişleri halkımın bu topraklara girdiği günlerdeki gibi tekrar yaşanacak. Toynaklar, kılıçlar ve oklar fırtına gibi onları kasıp kavuracak, onlara eskiden Balcoth'un getirdiği gibi azap getireceğiz.
 str_npc17_backstory_later|Geçen gün çok yaşlı bir çam gördüm. Çamlar çok yaşlı olabilir. Yaşlı ağaçlara saygı gösterilmeli. Ama ağaçlara hiç saygı duymayan bazı insanlar gördüm. Ağaçlara saygı duyuyorsun, değil mi?
 str_npc1_backstory_response_1|Eğer terk edersen, deneyimli  bir savaşçıya ve izleyiciye daha çok ihtiyacım olacak
 str_npc2_backstory_response_1|Haklısın, Bir kaç gönüllü arıyorum.
@@ -562,13 +562,13 @@ str_npc14_signup_response_2|Fikrimi degiştirdim.
 str_npc15_signup_response_2|Aslında, sanırım gerçek bir şifacı bulacağım, bir üç kağıtcı değil.
 str_npc16_signup_response_2|Ben bunlardan yeterince aldım.
 str_npc17_signup_response_2|Öte yandan , sanırım fikrimi değiştireceğim. Sen biraz delisin sanırım. Değil mi ?
-str_npc1_payment|Sana katılırdım, ama Yüzbaşı Faramir yokluğumu arayacaktır. [costs {reg14} Influence with {s14}]
-str_npc2_payment|Korucu çavuş gitmeme izin vermeyecektir, korkuyorum. [costs {reg14} Influence with {s14}]
-str_npc3_payment|Öhöm, görünüşe bakılırsa bu güzel meyhanede fazla çıkıntı duruyorum var, ayrılmadan önce hesabımı halletmeliyim. [costs {reg14} Influence with {s14}]
-str_npc4_payment|Sana katılırdım ama şehir saldırıya uğradığında yaralılarla kim ilgilenecek?  [costs {reg14} Influence with {s14}]
-str_npc5_payment|Yakında gitmeliyiz. Düşmanla çarpışmadan önce burada olan varlığımı algılarsa, gelişimimin değeri azalacaktır. Ama Lothlórien'in de bana ihtiyacı var.  [costs {reg14} Influence with {s14}]
-str_npc6_payment|Sana katılırdım, ama görevim burada. [cost {reg14}, Infulance {s14}]
-str_npc7_payment|Sana katılırdım Fakat Dwalin böylesine ihtiyaç duyulan bir zamanda ayrılmamı anlayışla karşılayamaz.  [costs {reg14} Influence with {s14}]
+str_npc1_payment|Sana katılırdım, ama Yüzbaşı Faramir yokluğumu arayacaktır. [maliyet {s14} ile birlikte {reg14} nüfuz ]
+str_npc2_payment|Korucu çavuş gitmeme izin vermeyecektir, korkuyorum. [maliyet {s14} ile birlikte {reg14} nüfuz ]
+str_npc3_payment|Öhöm, görünüşe bakılırsa bu güzel meyhanede fazla çıkıntı duruyorum var, ayrılmadan önce hesabımı halletmeliyim. [maliyet {s14} ile birlikte {reg14} nüfuz ]
+str_npc4_payment|Sana katılırdım ama şehir saldırıya uğradığında yaralılarla kim ilgilenecek?   [maliyet {s14} ile birlikte {reg14} nüfuz ]
+str_npc5_payment|Yakında gitmeliyiz. Düşmanla çarpışmadan önce burada olan varlığımı algılarsa, gelişimimin değeri azalacaktır. Ama Lothlórien'in de bana ihtiyacı var. [maliyet {s14} ile birlikte {reg14} nüfuz ]
+str_npc6_payment|Sana katılırdım, ama görevim burada. [maliyet {s14} ile birlikte {reg14} nüfuz ]
+str_npc7_payment|Sana katılırdım Fakat Dwalin böylesine ihtiyaç duyulan bir zamanda ayrılmamı anlayışla karşılayamaz.   [maliyet {s14} ile birlikte {reg14} nüfuz ]
 str_npc8_payment|Görevimi bırakamam, Kralımın hâlâ bana ihtiyacı var.Onun sağlığı için çok endişeliyim. [costs {reg14} Influence with {s14}]
 str_npc9_payment|Seninle gelmek istiyorum.Fakat kapıdaki gardiyanlar gitmeme izin vermeyecektir, korkuyorum. [costs {reg14} Influence with {s14}]
 str_npc10_payment|Sana katılırdım, ama görevim burada. [cost {reg14}, Infulance {s14} gerekli]
@@ -1791,7 +1791,7 @@ str_trait_desc_accursed|Öfkenin denizleri aştığınızı hissediyorsun. Takip
 str_trait_title_stealthy|Gizli
 str_trait_desc_stealthy|Gizli sızma sanatında esrarengiz bir yetenek geliştirdiniz. Bu tür görevleri üstlenirken sızma becerinize bir bonus verilecek.
 str_trait_title_berserker|Vahşi Savaşçı
-; str_trait_desc_berserker|After many battles where you eschewed the use of armor your ferocious will has become like iron. While fighting lightly armoured, each slain foe fills you with grim vigor.
+str_trait_desc_berserker|Zırh kullanımından kaçındığın bir çok savaştan sonra yırtıcılığın demir gibi olacak. Hafif zırhlı savaşırken, yaptığın her katliam sizi korkunç bir kuvvetle doldurur.
 str_trait_title_infantry_captain|Piyade Kaptanı
 str_trait_desc_infantry_captain|Piyade birliklerini komuta etmede bir yetenek geliştirdiniz. Güçlü ve uzmanlaşmış eğitimler nedeniyle, bu birliklere savaş başında küçük bir sağlık desteği sağlanacaktır.
 str_trait_title_archer_captain|Okçu Kaptanı
@@ -1916,7 +1916,7 @@ str_gondor6|Gondor6
 str_gondor7|Gondor7
 str_gondor8|Gondor8
 str_gondor_end|Gondor1
-; str_gondor_intro|^It is a bitter thought, that a hero of this great kingdom should die within the sight of his land, unaided and helpless.^^The news of Boromir’s death passed like a swift wind through all of Gondor, even to the plains of Pinnath Gelin and the hills of Lamedon, even to the shores of Pelargir and the coasts of Dol Amroth. The hearts of all your people are filled with grief and pity; and more besides, with fear and foreboding, for Gondor is hard pressed and sore beset, ringed by implacable foes or uncertain friends.^^The Shadow rises in the East, as of old; the fractious Corsairs of Umbar grow bolder; the wild men of the East and South press their claims upon Gondorian land.^^No longer can you stand by and wait. Trust you have placed in your captains; sword and spear they will place in your hand. Gondor wanes, but Gondor still stands; and even the end of its strength is still very strong. You have resolved yourself to play what part you may in this coming war against the servants of the Nameless. Much is spoken of in the councils of the great and wise, to which you are not privy, but there is one thing you feel you can be sure of.^^If the valiant hearts of Gondor should fail, and Minas Tirith be lost, then the last light of the West will be extinguished. All will fall beneath the Shadow.
+str_gondor_intro|^Bu acı bir düşünce, bu büyük krallığın kahramanı topraklarının manzarası içinde ölmeli, yardımsız ve çaresiz. Boromir'in ölüm haberi Gondor topraklarından hızlı bir rüzgar gibi geçti Pinnath Gelin düzlüklerinden, Lamedon dağlarından, Pelargir kıyılarından ve Dol Amroth sahillerinden. Bütün halkının kalbi acıma duygusu ve keder ile doldu; ve bunların ötesinde, korku ve farkındalık ile, Gondor acımasız düşmanlar veya belirsiz dostluklar içinde sertçe sıkıştırılmış ve şiddetle kuşatılmış halde.^^Gölge doğuda yükseliyor, eskiden olduğu gibi; Umbar'ın huysuz korsanları dahada cesurlaşıyor; Doğulu ve Güneyli vahşi adamlar Gondor topraklarındaki hak iddialarını arttırıyor.^^Artık öylece durup bekleyemezsin. Kaptanlarına verdiğin güven; kılıç ve mızrak elinizdeki yerini alacak. Gondor soluyor, ama hala yerinde duruyor; ve son zamanlarında bile kuvveti hala yerli yerinde. İsimsiz'in hizmetkarlarına karşı bu gelecek savaşta hangi rolü oynayacağınızı kararlaştırdınız bile. Büyük ve bilge meclislerinde, sizin özel olmadığınıza dair pek çok şey konuşuluyor, ancak emin olabileceğiniz bir şey var.^^Eğer Gondor'un yiğit yürekleri başarısız olursa, Minas Tirith kaybedilirse, batıdaki son büyük ışıkta sönmüş olacak. Hepsi gölgenin içine düşecek.
 str_dwarf_intro|^Dağın altındaki krallık doğru olanı yaptı, burada anlaşmazlık olamaz. Yaşlı Kral Dáin iki yüz ellinci yılını geçti ve her ölçüye göre inanılmaz derecede zengin. Onun yönetimi altında, Erebor büyür ve büyüklüğü bilinir. Su yolları, çeşmeler ve havuzlar, komşunuz olan Dale halkı bile şimdiki Cüce inşaatçılarının eski atalarının bile becerilerini nasıl aştığına tanık oluyor. Metal işçiliğinin sırları bir şekilde kaybolmuş olsa bile. ^^ Ancak, Mordor'un karanlığı bu salonlara girdi, Sauron’un kötü elçisi, nefesini yılan hissiyle birlikte kötü sözlerle ortaya çıkardı. Mordor'a geri dönen güç değişmedi, çünkü o zamandan beri efendilerinin kalbi ağırdı. Gölge büyüyor ve yaklaşıyor - Düşman hareket ediyor ve savaş yakında başlayacak. ^^ Silah almaya yemin ettin ve arkadaşlarınla düşmanlarına karşı durdun. Umutla ya da umutsuzca direneceksin. ^^ Ama Erebor Cücelerinin cesareti bu durumda yetersiz kalırsa, Durin halkının şerefi kaybolacak ve unutulacak. Hepsi gölgenin altına düşecek.
 ; str_rohan_intro|^In these days of doubt, one thing you know to be true: open war lies before the proud people of Rohan. None may live now as they have lived, and few shall keep what they call their own. Some close to the King’s ear speak craven counsels, but you have determined to go to him, take a grim oath of service, and stand with such fell-handed captains and thanes as will protect the herds and herdfolk.^^Saruman of Isengard has declared lordship over the lands of Rohan, and bitter is the fighting with Orcs, Wolf-riders and the evil Men of Dunland. The Lord of the Black Land to the east sends raiding parties to steal your horses, choosing always the black ones. Your heart misgives you, for it seems to you that enemies beset your people both east and west.^^But still you will give battle, for if aught is said of the Rohirrim, it is of your unfailing valour in arms, though foe should beleaguer you, or fire encircle you. The steeds of Rohan will stride as wind in the morning. And if death should come for you, then a mound will be raised, but for now, war calls you. Let horse be bridled, horn be sounded!^^Yet, if even the courage of the Sons and Daughters of Eorl should fail, then the last hope of Rohan will fade and die away. The horn will blow no more. All will fall beneath the Shadow.
 str_mordor_intro|^Karanlık güç Doğu'da tekrar yükseliyor. Karanlık Lord’un lejyonlarının sayıları artıyor - Doğulu adamlar, Eski Numenor'un çirkin gözlü insanları, atalarının kaybettiğini yeniden kazanma şansı istedi. Savaş ve öldürme fikriyle köleleştirilen orklar ve urukların büyük ev sahipleri. Kafesler vahşi ve korkunç Warglar, yukarıda yükseklerde, siyah göklerde kanatlı Nazgûl… Büyük Göz'ün elması, güç ile çamurlu hayallerinizin ulaşamayacağı derinlikte. ^^Her halükarda saflarda yükselmeye ve Lugbúrz'un lütfuna sahip olmaya karar verdin. Zekâ, sertlik ve savaştaki acımasız becerilerin ile yolunda duran herkesi ezeceksin. Mordor'un Karanlık Lordu'nun iyiliğini kazanacaksın, o gelecek Savaştan sonra hepsine hükmedecek… ya da bunun olması uğrunda öleceksin. ^^ Batı'nın ışığı sönecek. Mordor'un zamanı geldi!
@@ -2138,13 +2138,13 @@ str_npc26_payment|Seninle gelmek istiyorum.Fakat kapıdaki gardiyanlar gitmeme i
 str_npc27_payment|Sana katılırdım, ama görevim burada. [cost {reg14}, Infulance {s14} gerekli]
 str_npc18_payment_response|Bundan şüphe yok. Lurmsakun'un astları beni reddetmeye cesaret edemezler. [{reg14}/{reg15} nüfuz]
 ; str_npc19_payment_response|Chief Daeglaf will have to give way before my wish, once I make it plain. [costs {reg14}/{reg15} Influence]
-; str_npc20_payment_response|Indeed I have. Come now! It is not, after all, a lowly snaga you will follow. [costs {reg14}/{reg15} Influence]
+str_npc20_payment_response|Aslında bende var. Şimdi gel! Sonuçta, takip edeceğiniz kimse düşük bir snaga değil. [maliyet {reg14} / {reg15} Nüfuz]
 str_npc21_payment_response|Asil bir sebep, ancak eminim yedek bulunabilir. [costs {reg14}/{reg15} Influence]
 str_npc22_payment_response|Güven bana , benimle birlikte daha işe yarar olacaksın. [costs {reg14}/{reg15} Influence]
 str_npc23_payment_response|Şu andan itibaren seninle birlikte görev yapıyorum. [costs {reg14}/{reg15} Influence]
 str_npc24_payment_response|Üstat Dwalin, iyi savaşan bir cücenin düşmanlarımızdan çok uzun süre ayrı tutulmaması gerektiğini anlayacaktır.  [costs {reg14}/{reg15} Influence]
 str_npc25_payment_response|Kral'ın refahı önemlidir, ancak benimle daha çok hayat kurtaracaksın.[costs {reg14}/{reg15} Influence]
-str_npc26_payment_response|Oh, Fakat eğer benimle olursan bekçiler beni durdurmaya cesaret edemez, [costs {reg14}/{reg15} Influence]
+str_npc26_payment_response|Oh, Fakat eğer benimle olursan bekçiler beni durdurmaya cesaret edemez, [Maliyet {reg14}/{reg15} nüfuz]
 str_npc27_payment_response|Şu andan itibaren seninle birlikte görev yapıyorum. [costs {reg14}/{reg15} Influence]
 str_npc18_morality_speech|Sağlam bir tane! Kana olan susuzluğum azalmamış! Neden korkak gibi {s21} yapıyoruz? Onlarla savaşmama izin ver!
 ; str_npc19_morality_speech|Commander, I mislike it greatly that we {s21}. A king like myself should ever be open-handed, but if the larders are empty I have nothing to give, and our soldiers will desert us.
@@ -2227,7 +2227,7 @@ str_npc25_personalitymatch_speech_b|Dale insanları Yalnız Dağdaki dayanıklı
 str_npc26_personalitymatch_speech_b|{s11}'in hareketlerini beğeniyorum.
 str_npc27_personalitymatch_speech_b|{s11}'in hareketlerini beğeniyorum.
 str_npc18_retirement_speech|Bence sakinleşmek ve bir aile kurmak istiyorum ve,bilmiyorum,nakış yaparım veya başka bi bok.Bye
-; str_npc19_retirement_speech|Listen, strange men standing around claiming royal bastardy is no basis for a system of government.
+str_npc19_retirement_speech|Dinle, kraliyet piçinin etrafında duran yabancı adamlar bir devlet sistemi için temel değildir.
 str_npc20_retirement_speech|Belki de asıl yol öfke değildir. Tek ihtiyacımız olan sevgi. Neden hepimiz birlikte olamıyoruz?
 str_npc21_retirement_speech|Savaşçı hayatından yorulmaya başladım, emekli olacağım.
 str_npc22_retirement_speech|Savaşçı hayatından yorulmaya başladım, emekli olacağım.
@@ -2276,7 +2276,7 @@ str_npc24_home_description_2|Savaşın kaderi bize büyük bir ordu sunarsa, Mad
 str_npc25_home_description_2|Bir sürü tatlı çiçeğin kokusunu alabiliyorum ve arıları, onların nektarlarını hasat ederken görüyorum. Eğer sakıncası yoksa, kişisel kullanım için biraz bitki toplayacağım, sadece biraz zaman alacak.
 str_npc26_home_description_2|Eğer büyük bir Uruh-hai kalabalığımız tarafından desteklenmiyorsa, burada dolaşmanın faydası yok. Eğer duvardaki gözcülere tanınmak istemiyorsan, tabii.
 str_npc27_home_description_2|Minas Morgul, Nazullerin tüm gün içip zaman harcadığı yerdir, Hah-hah!
-; str_npc18_home_recap|I was a prisoner in stocks, condemned to die for slaying a son of Lurmsakun in the training pit. Three of them set upon me, and I beat them, but one died of his wounds. Then you spoke for me, and freed me. Now I kill for you, and I would die for you if need be.
+str_npc18_home_recap|Ben stoklardaki bir tutsaktım, eğitim çukurunda Lurmsakun'un bir oğlunu katlettiği için ölüm hükmü giymiş bir tutsak. Üç tanesi üstüme çullandı, ve ben onları yendim, ama bir tanesi yaraları yüzünden öldü. Sonra sen benim için konuştun ve beni serbest bıraktın. Şimdi senin için öldürür, ve gerekirse senin için ölürüm.
 ; str_npc19_home_recap|I am of the royal blood of Rohan, I swear - King Fengel was my grandfather, though he never took my grandmother to wife. The Chiefs of Dunland are jealous of me, and kept me away from the fighting so I would do no great deeds, and win no glory nor men to my banner. Then you took my under your banner. Now I await the day I can sit in Edoras on my rightful throne.
 ; str_npc20_home_recap|What more is there to tell, Commander? I practised my arts in the dungeons of Dol Guldur. My dreaming eye sees deep and far, and I saw you and your works in this War. It would seem I must give you what aid I can, so that the powers of the West may fail and the Power in the East may rise once more and rule until the world's ending.
 str_npc21_home_recap|Bunu bu kadar kolay unutmanızı eğlenceli bulmuyorum.
