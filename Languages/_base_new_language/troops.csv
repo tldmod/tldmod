@@ -73,7 +73,7 @@ trp_woodmen_archer_pl|Woodmen Archers
 trp_fell_huntsmen_of_mirkwood|Night Stalker of Mirkwood
 trp_fell_huntsmen_of_mirkwood_pl|Night Stalkers of Mirkwood
 trp_beorning_vale_man|Beorning Man
-trp_beorning_vale_man_pl|Beorning Man
+trp_beorning_vale_man_pl|Beorning Men
 trp_beorning_warrior|Beorning Warrior
 trp_beorning_warrior_pl|Beorning Warriors
 trp_beorning_tolltacker|Beorning Toll-Taker
@@ -588,40 +588,40 @@ trp_easterling_elite_skirmisher|Variag Heavy Skirmisher
 trp_easterling_elite_skirmisher_pl|Variag Heavy Skirmishers
 trp_khand_items|BUG
 trp_khand_items_pl| 
-trp_corsair_youth|Umbar Sailor
-trp_corsair_youth_pl|Umbar Sailors
-trp_corsair_warrior|Umbar Warrior
-trp_corsair_warrior_pl|Umbar Warriors
-trp_corsair_pikeman|Swordsman of Umbar
-trp_corsair_pikeman_pl|Swordsmen of Umbar
-trp_corsair_veteran_raider|Veteran Swordsman of Umbar
-trp_corsair_veteran_raider_pl|Veteran Swordsmen of Umbar
-trp_corsair_night_raider|Corsair Night Raider
-trp_corsair_night_raider_pl|Corsair Night Raiders
-trp_militia_of_umbar|Umbar Marine
-trp_militia_of_umbar_pl|Umbar Marines
-trp_marksman_of_umbar|Marksman of Umbar
-trp_marksman_of_umbar_pl|Marksmen of Umbar
-trp_veteran_marksman_of_umbar|Veteran Marksman of Umbar
-trp_veteran_marksman_of_umbar_pl|Veteran Marksmen of Umbar
-trp_master_marksman_of_umbar|Corsair Master Marksman
-trp_master_marksman_of_umbar_pl|Corsair Master Marksmen
-trp_corsair_marauder|Swordsman of Umbar
-trp_corsair_marauder_pl|Swordsmen of Umbar
-trp_corsair_veteran_marauder|Veteran Swordsman of Umbar
-trp_corsair_veteran_marauder_pl|Veteran Swordsmen of Umbar
-trp_corsair_elite_marauder|Corsair Swordmaster
-trp_corsair_elite_marauder_pl|Corsair Swordmasters
-trp_assassin_of_umbar|Corsair Assassin
-trp_assassin_of_umbar_pl|Corsair Assassins
-trp_master_assassin_of_umbar|Corsair Assassin
-trp_master_assassin_of_umbar_pl|Corsair Assassins
-trp_pikeman_of_umbar|Swordsman of Umbar
-trp_pikeman_of_umbar_pl|Swordsmen of Umbar
-trp_veteran_pikeman_of_umbar|Veteran Swordsman of Umbar
-trp_veteran_pikeman_of_umbar_pl|Veteran Swordsmen of Umbar
-trp_pike_master_of_umbar|Corsair Swordmaster
-trp_pike_master_of_umbar_pl|Corsair Swordmasters
+trp_i1_corsair_youth|Umbar Sailor
+trp_i1_corsair_youth_pl|Umbar Sailors
+trp_i2_corsair_warrior|Umbar Warrior
+trp_i2_corsair_warrior_pl|Umbar Warriors
+trp_i3_corsair_spearman|Spearman of Umbar
+trp_i3_corsair_spearman_pl|Spearmen of Umbar
+trp_i4_corsair_raider|Corsair Raider
+trp_i4_corsair_raider_pl|Corsair Raiders
+trp_i5_corsair_night_raider|Corsair Night Raider
+trp_i5_corsair_night_raider_pl|Corsair Night Raiders
+trp_a2_corsair_marine|Umbar Marine
+trp_a2_corsair_marine_pl|Umbar Marines
+trp_a3_corsair_marksman|Marksman of Umbar
+trp_a3_corsair_marksman_pl|Marksmen of Umbar
+trp_a4_corsair_veteran_marksman|Veteran Marksman of Umbar
+trp_a4_corsair_veteran_marksman_pl|Veteran Marksmen of Umbar
+trp_a5_corsair_master_marksman|Corsair Master Marksman
+trp_a5_corsair_master_marksman_pl|Corsair Master Marksmen
+trp_i3_corsair_swordsman|Swordsman of Umbar
+trp_i3_corsair_swordsman_pl|Swordsmen of Umbar
+trp_i4_corsair_veteran_swordsman|Veteran Swordsman of Umbar
+trp_i4_corsair_veteran_swordsman_pl|Veteran Swordsmen of Umbar
+trp_i5_corsair_master_swordsman|Corsair Swordmaster
+trp_i5_corsair_master_swordsman_pl|Corsair Swordmasters
+trp_a4_corsair_assassin|Corsair Assassin
+trp_a4_corsair_assassin_pl|Corsair Assassins
+trp_a5_corsair_master_assassin|Corsair Assassin
+trp_a5_corsair_master_assassin_pl|Corsair Assassins
+trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
+trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
+trp_i5_corsair_master_spearman|Spearmaster of Umbar
+trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
+trp_i5_corsair_master_pikeman|Pikemaster of Umbar
+trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
 trp_umbar_items|BUG
 trp_umbar_items_pl| 
 trp_orc_snaga_of_isengard|Orc Snaga of Isengard
@@ -708,10 +708,10 @@ trp_olog_hai|Olog Hai of Mordor
 trp_olog_hai_pl|Olog Hai of Mordor
 trp_ent|Ent
 trp_ent_pl|Ents
-trp_orc_snaga_of_guldur|Orc Snaga of Guldur
-trp_orc_snaga_of_guldur_pl|Orc Snagas of Guldur
-trp_orc_of_guldur|Orc Tracker of Guldur
-trp_orc_of_guldur_pl|Orc Trackers of Guldur
+trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
+trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+trp_orc_of_guldur|Orc Tracker of Dol Guldur
+trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
 trp_orc_snaga_of_mordor|Orc Snaga of Mordor
 trp_orc_snaga_of_mordor_pl|Orc Snagas of Mordor
 trp_orc_of_mordor|Orc of Mordor
@@ -724,14 +724,14 @@ trp_warg_rider_of_gorgoroth|Warg Rider of Gorgoroth
 trp_warg_rider_of_gorgoroth_pl|Warg Riders of Gorgoroth
 trp_great_warg_rider_of_mordor|Great Warg Rider of Udun
 trp_great_warg_rider_of_mordor_pl|Great Warg Riders of Udun
-trp_morgul_orc|Morgul Orc
-trp_morgul_orc_pl|Morgul Orcs
-trp_fell_morgul_orc|Fell Morgul Orc
-trp_fell_morgul_orc_pl|Fell Morgul Orcs
-trp_orc_tracker_of_mordor|Large Orc Tracker of Guldur
-trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Guldur
-trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Guldur
-trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Guldur
+trp_morgul_orc|Orc of Minas Morgul
+trp_morgul_orc_pl|Orcs of Minas Morgul
+trp_fell_morgul_orc|Fell Orc of Minas Morgul
+trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
+trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
+trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
+trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
 trp_orc_archer_of_mordor|Orc Archer of Mordor
 trp_orc_archer_of_mordor_pl|Orc Archers of Mordor
 trp_large_orc_archer_of_mordor|Large Orc Archer of Mordor
@@ -756,8 +756,8 @@ trp_a2_archer_snaga_of_moria|Goblin Archer of Moria
 trp_a2_archer_snaga_of_moria_pl|Goblin Archers of Moria
 trp_a3_large_goblin_archer_of_moria|Large Goblin Archer of Moria
 trp_a3_large_goblin_archer_of_moria_pl|Large Goblin Archers of Moria
-trp_i5_deep_dweller_of_moria2|Deep-Dweller of Moria
-trp_i5_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
+trp_a4_fell_goblin_archer_of_moria|Fell Goblin Archer of Moria
+trp_a4_fell_goblin_archer_of_moria_pl|Fell Goblin Archers of Moria
 trp_moria_items|BUG
 trp_moria_items_pl|BUG
 trp_i1_goblin_gundabad|Gundabad Goblin
@@ -788,8 +788,8 @@ trp_tribal_orc|Tribal Orc
 trp_tribal_orc_pl|Tribal Orcs
 trp_tribal_orc_warrior|Tribal Orc Warrior
 trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-trp_i5_orc_chieftain_of_moria2|Orc Chieftain of Moria
-trp_i5_orc_chieftain_of_moria2_pl|Orc Chieftains of Moria
+trp_i5_orc_champion_gundabad|Gundabad Orc Champion
+trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
 trp_black_numenorean_renegade|Black Numenorean Renegade
 trp_black_numenorean_renegade_pl|Black Numenorean Renegades
 trp_black_numenorean_warrior|Black Numenorean Warrior
@@ -1898,6 +1898,14 @@ trp_npc27|Zigûrphel
 trp_npc27_pl| 
 trp_werewolf|Werewolf
 trp_werewolf_pl|Werewolves
+trp_mountain_goblin2|Mountain Goblin
+trp_mountain_goblin2_pl|Mountain Goblins
+trp_tribal_orc2|Tribal Orc
+trp_tribal_orc2_pl|Tribal Orcs
+trp_tribal_orc_warrior2|Tribal Orc Warrior
+trp_tribal_orc_warrior2_pl|Tribal Orc Warriors
+trp_tribal_orc_chief2|Tribal Orc Chief
+trp_tribal_orc_chief2_pl|Tribal Orc Chiefs
 trp_last|BUG
 trp_last_pl|BUG
 trp_multiplayer_profile_troop_male|multiplayer profile troop male

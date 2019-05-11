@@ -131,6 +131,9 @@ mno_start_bn|Black NUMENOREANS, the renegades from the West
 mno_start_um|UMBAR, the pirates from the South Seas
 mno_start_rh|RHUN, the barbarians from the East
 mno_start_kh|KHAND, the savage people from South-East
+menu_start_eye_uruk|^^^^^^^^^^Where do you lurk?
+mno_start_arm_uruk|in the armies amassed at MORDOR
+mno_start_cav_uruk|in the caves of DOL GULDUR
 menu_start_eye_orc|^^^^^^^^^^Where do you lurk?
 mno_start_arm|in the armies amassed at MORDOR
 mno_start_cav|in the caves of DOL GULDUR
@@ -144,6 +147,9 @@ mno_start_2_hib|High-born
 menu_start_haradrim|^^^^^^^You are an Haradrim,^a Man of the Desert.^Select your line
 mno_start_1_des|Desert Man
 mno_start_2_far|Far Harad Tribesman
+menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Your gender?
 mno_start_male|Male
 mno_start_female|Female
@@ -276,8 +282,7 @@ menu_camp_khamtest|^^^^^Click on an option to toggle.^^^Tweaks Gondor to have mo
 mno_enable_kham_cheat|Enable Kham Cheat Mode
 mno_action_view_all_items|View all items.
 mno_give_custom_armor|Give Custom Armor
-mno_troll_party_1|Spawn Party with 2 Trolls
-mno_troll_party_2|Spawn Party with 5 Trolls
+mno_spawn_orc_horde_troll|Spawn Orc Horde with Trolls
 mno_add_trolls|Add 1 Troll to your party (spam for more!)
 mno_enable_raftmen|Enable Raft Men Party
 mno_what_theater|Which Theater Am I in / Followers?
@@ -289,6 +294,10 @@ mno_melee_ai_test|Melee AI Test
 mno_player_enable_siege|Enable Player Siege
 mno_animal_test|Animal Ambush Test
 mno_camp_khamtest_back|Back
+menu_orc_horde_troll|^^^^^^^^Click on an option to change number of trolls in the orc horde to spawn
+mno_orc_horde_choice|Number of trolls to add to Orc Horde: {s1}
+mno_orc_horde_select|Spawn Orc Horde with {reg1} Olog Hai
+mno_orc_horde_back|Back to Kham Test menu.
 menu_game_options|^^^^^^^^Click on an option to toggle:
 mno_game_options_war_level_start|War Starts at Level: {s1}
 mno_game_options_restrict_items|Restricted player equipment:  {s7}
@@ -326,6 +335,7 @@ mno_strat_tweaks_rank_gain_rate|Rank gain rate: {s7}
 mno_strat_tweaks_back|Back to tweaks menu.
 menu_auto_strat_tweak|This menu automatically returns to caller.
 menu_auto_compat_tweak|This menu automatically returns to caller.
+menu_auto_orc_horde_troll|This menu automatically returns to caller.
 menu_camp_chest_fill|^^^^^^^^Please choose faction to get items from.
 mno_f_gondor|Gondor items
 mno_f_rohan|Rohan items
@@ -401,7 +411,7 @@ mno_spears|Lost Spears
 mno_scout_camp|Destroy Scout Camp
 mno_defend_village|Defend Village
 mno_raid_village|Raid Village
-mno_eliminate_patrols|Kill Bandits
+mno_eliminate_patrols|Defeat Target Lord
 mno_eliminate_troll|Dispatch Troll
 mno_mi21|{s21}
 menu_teleport_to_town_part_two|^^^^^^^^Ride Shadowfax:^to which city inside {s11}?
@@ -453,6 +463,7 @@ mno_leave|Leave.
 menu_simple_encounter|^^^^^{s2}^You have {reg22} troops fit for battle against their {reg11}.^^The battle is taking place in {s3}{s4}.^^Your orders?
 mno_encounter_attack|{reg21?Charge them:Prepare to face them}.
 mno_encounter_order_attack|Order your troops to {reg21?attack:face them} without you.
+mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Rush forward toward them cracking the {s4}.
 mno_debug_leave|DEBUG: avoid this battle.
@@ -460,6 +471,9 @@ mno_encounter_leave|Disengage.
 mno_encounter_retreat|Pull back, leaving some soldiers behind to cover your retreat.
 mno_encounter_surrender|DEBUG: surrender.
 mno_encounter_cheat_heal|CHEAT: heal yourself.
+menu_player_control_allies|^^^^^{s60}^^^
+mno_player_control_allies_simple|Command them and charge the enemy
+mno_player_control_allies_back|Go back...
 menu_hide|^^^^^{s5}^^^
 mno_hide_close|Continue...
 menu_encounter_retreat_confirm|^^^^^As the party member with the highest tactics skill,   ({reg2}), {reg3?you devise:{s3} devises} a plan that will allow you and your men to escape with your lives,   but you'll have to leave {reg4} soldiers behind to stop the enemy from giving chase.
@@ -493,8 +507,11 @@ mno_pre_join_leave|Don't get involved.
 menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 mno_join_attack|Charge the enemy.
 mno_join_order_attack|Order your troops to attack with your allies while you stay back.
+mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Disengage.
 mno_join_cheat_heal|CHEAT: heal yourself.
+menu_player_control_allies_join|^^^^^{s60}^^^
+mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Your casualties: {s8}^^Allies' casualties: {s9}^^Enemy casualties: {s10}
 menu_test_scene|You enter the test scene.
 mno_enter|Enter.
@@ -687,6 +704,7 @@ mno_horse_archer_field_ai|Horse Archers Have Improved Battlefield AI:  {s7}
 mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
+mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
 menu_auto_field_ai|This menu automatically returns to caller.
 menu_hungry_orc|none
 menu_leaving_elf|none
@@ -873,7 +891,7 @@ mno_choose_scene_86|dale center: generate
 mno_choose_scene_87|dale siege: generate
 mno_choose_scene_88|dale siege inner: generate
 mno_choose_scene_89|deadmarshes: generate|auto entry points
-mno_choose_scene_90|dimrill dale: generate|randomize|auto entry points
+mno_choose_scene_90|dimrill dale: generate|auto entry points|randomize
 menu_choose_scenes_91|Choose a scene: (Page 8 of 32)
 mno_choose_scene_91|dol amroth castle: indoors
 mno_choose_scene_92|dol amroth center: generate
@@ -883,7 +901,7 @@ mno_choose_scene_95|dol guldur north outpost center: generate
 mno_choose_scene_96|dol guldur north outpost center siege: generate
 mno_choose_scene_97|dol guldur siege: generate
 mno_choose_scene_98|dolamroth outside 1: generate
-mno_choose_scene_99|dolamroth outside 2: generate|randomize|auto entry points
+mno_choose_scene_99|dolamroth outside 2: generate|auto entry points|randomize
 mno_choose_scene_100|dolguldur outside 1: generate
 mno_choose_scene_101|dolguldur outside 2: generate
 mno_choose_scene_102|duel scene: generate
@@ -1020,7 +1038,7 @@ mno_choose_scene_222|isengard arena: generate
 mno_choose_scene_223|isengard castle: indoors
 mno_choose_scene_224|isengard center: generate
 mno_choose_scene_225|isengard center flooded: generate
-mno_choose_scene_226|isengard outside: generate|randomize|auto entry points
+mno_choose_scene_226|isengard outside: generate|auto entry points|randomize
 mno_choose_scene_227|isengard siege: generate
 mno_choose_scene_228|isengard underground: generate
 mno_choose_scene_229|khand arena: generate
@@ -1102,7 +1120,7 @@ menu_choose_scenes_299|Choose a scene: (Page 24 of 32)
 mno_choose_scene_299|quick battle ambush: generate
 mno_choose_scene_300|quick battle corsair: generate
 mno_choose_scene_301|quick battle random: generate|randomize
-mno_choose_scene_302|random scene: generate|randomize|auto entry points
+mno_choose_scene_302|random scene: generate|auto entry points|randomize
 mno_choose_scene_303|random scene desert: generate|randomize
 mno_choose_scene_304|random scene desert forest: generate|randomize
 mno_choose_scene_305|random scene desert small: generate|randomize
@@ -1136,7 +1154,7 @@ mno_choose_scene_330|rohan castle a: indoors
 mno_choose_scene_331|rohan castle b: indoors
 mno_choose_scene_332|rohan prison: indoors
 mno_choose_scene_333|rohan tavern: indoors
-mno_choose_scene_334|s erebor: generate|randomize|auto entry points
+mno_choose_scene_334|s erebor: generate|auto entry points|randomize
 mno_choose_scene_335|scout camp gondor battlefield 1: generate
 mno_choose_scene_336|scout camp gondor battlefield 2: generate
 mno_choose_scene_337|scout camp gondor evil big: generate

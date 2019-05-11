@@ -110,11 +110,10 @@ itm_dwarf_short_bow|Dwarf Short Bow
 itm_harad_bow|Harad Curved Bow
 itm_lg_bow|Eagle Guard Bow
 itm_riv_bow|Rivendell Bow
-itm_glorfi_bow|Glorfindel Bow
 itm_lorien_bow|Galadhrim Bow
 itm_isengard_large_bow|Isengard Large Bow
 itm_dale_bow|Dale Bow
-itm_uruk_bow|Strong Orc Bow
+itm_uruk_bow|Orc Horn Bow
 itm_mirkwood_bow|Mirkwood Bow
 itm_dunland_javelin|Dunland Javelins
 itm_orc_throwing_arrow|Orc Darts
@@ -256,7 +255,7 @@ itm_gon_tab_shield_d|Heraldic Gondor Tower Shield
 itm_amroth_sword_a|Dol Amroth Sword
 itm_amroth_sword_b|Dol Amroth Knight Sword
 itm_gondor_sword|Gondor Infantry Sword
-itm_amroth_bastard|Dol Amroth Heavy Sword
+itm_amroth_bastard|Dol Amroth Swan Blade
 itm_gondor_short_sword|Linhir Eket
 itm_pelargir_eket|Pelargir Eket
 itm_pelargir_sword|Pelargir Sword
@@ -702,23 +701,15 @@ itm_dale_sword_broad|Dale Infantry Sword
 itm_dale_pike|Dale Spear
 itm_dale_billhook|Dale Billhook
 itm_dale_shield_a|Dale Tower Shield
-
 itm_dale_shield_b|Dale Tower Shield
-
 itm_dale_shield_c|Dale Round Shield
 itm_dale_shield_d|Dale Shield
-itm_umb_armor_a|Corsair Leather Armor
-
-itm_umb_armor_b|Corsair Raider Armor
-
-itm_umb_armor_c|Corsair Padded Armor
-
-itm_umb_armor_d|Corsair Padded Raider Armor
-
+itm_umb_armor_a|Corsair Leather Vest
+itm_umb_armor_b|Corsair Leather Armor
+itm_umb_armor_c|Corsair Light Scale
+itm_umb_armor_d|Corsair Scale
 itm_umb_armor_e|Corsair Hauberk
-
-itm_umb_armor_f|Corsair Heavy Raider Armor
-
+itm_umb_armor_f|Corsair Noble Armour
 itm_umb_helm_a|Corsair Shell Helm
 
 itm_umb_helm_b|Corsair Shell Helm
@@ -900,7 +891,8 @@ itm_riv_armor_reward|Rivendell Decorated Armor
 itm_westernesse1h_reward|Sword of Westernesse
 itm_westernesse2h_reward|Sword of The Great Serpent
 itm_mirkwood_sword_reward|Greenwood Relic Sword
-itm_nazgul_sword|Nazgul Sword
+itm_nazgul_sword|Wicked Sword
+
 itm_cooking_cauldron|Cooking Cauldron
 itm_eorl_cavalry_sword|Sword of Eorl
 itm_garlic_reward|Garlic
@@ -921,7 +913,7 @@ itm_dwarf_shield_reward|Shield of Kheled-zaram
 itm_dwarf_great_axe_reward|Dwarf Sharp Axe
 itm_isen_uruk_heavy_reward|Uruk-hai General Armor
 itm_lorien_bow_reward|Noldorin Bow
-itm_lorien_sword_reward|Galadhrim Sword
+itm_elven_cloak|Elven Cloak
 itm_dale_sword_reward|Dale Royal Sword
 
 itm_dale_armor_reward|Dale Noblemen Mail
@@ -930,7 +922,7 @@ itm_beorn_shield_reward|Beorning Shield
 itm_beorn_axe_reward|Bear Club
 itm_moria_arrow_reward|Moria Poisoned Arrows
 itm_khamul_helm|Helm of Khamul
-itm_gandstaff|Wizards Staff
+itm_guldur_arrows_reward|Guldur Arrows
 itm_sarustaff|Wizards Staff
 itm_rohan_armor_th|Rohan Royal Armor
 itm_prisoner_coll_chain|Prisoner Chains

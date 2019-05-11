@@ -280,16 +280,16 @@ itm_lg_bow|Eagle Guard Bow
 itm_lg_bow_pl|Eagle Guard Bow
 itm_riv_bow|Rivendell Bow
 itm_riv_bow_pl|Rivendell Bow
-itm_glorfi_bow|Glorfindel Bow
-itm_glorfi_bow_pl|Glorfindel Bow
+itm_rhun_bow|rhun bow
+itm_rhun_bow_pl|rhun bow
 itm_lorien_bow|Galadhrim Bow
 itm_lorien_bow_pl|Galadhrim Bow
 itm_isengard_large_bow|Isengard Large Bow
 itm_isengard_large_bow_pl|Isengard Large Bow
 itm_dale_bow|Dale Bow
 itm_dale_bow_pl|Dale Bow
-itm_uruk_bow|Strong Orc Bow
-itm_uruk_bow_pl|Strong Orc Bow
+itm_uruk_bow|Orc Horn Bow
+itm_uruk_bow_pl|Orc Horn Bow
 itm_mirkwood_bow|Mirkwood Bow
 itm_mirkwood_bow_pl|Mirkwood Bow
 itm_dunland_javelin|Dunland Javelins
@@ -574,8 +574,8 @@ itm_amroth_sword_b|Dol Amroth Knight Sword
 itm_amroth_sword_b_pl|Dol Amroth Knight Sword
 itm_gondor_sword|Gondor Infantry Sword
 itm_gondor_sword_pl|Gondor Infantry Sword
-itm_amroth_bastard|Dol Amroth Heavy Sword
-itm_amroth_bastard_pl|Dol Amroth Heavy Sword
+itm_amroth_bastard|Dol Amroth Swan Blade
+itm_amroth_bastard_pl|Dol Amroth Swan Blade
 itm_gondor_short_sword|Linhir Eket
 itm_gondor_short_sword_pl|Linhir Eket
 itm_pelargir_eket|Pelargir Eket
@@ -1470,18 +1470,18 @@ itm_free_umb_armor_d|Corsair Heavy Padded Armor
 itm_free_umb_armor_d_pl|Corsair Heavy Padded Armor
 itm_free_umb_armor_g|Corsair Hauberk Pauldrons
 itm_free_umb_armor_g_pl|Corsair Hauberk Pauldrons
-itm_umb_armor_a|Corsair Leather Armor
-itm_umb_armor_a_pl|Corsair Leather Armor
-itm_umb_armor_b|Corsair Raider Armor
-itm_umb_armor_b_pl|Corsair Raider Armor
-itm_umb_armor_c|Corsair Padded Armor
-itm_umb_armor_c_pl|Corsair Padded Armor
-itm_umb_armor_d|Corsair Padded Raider Armor
-itm_umb_armor_d_pl|Corsair Padded Raider Armor
+itm_umb_armor_a|Corsair Leather Vest
+itm_umb_armor_a_pl|Corsair Leather Vest
+itm_umb_armor_b|Corsair Leather Armor
+itm_umb_armor_b_pl|Corsair Leather Armor
+itm_umb_armor_c|Corsair Light Scale
+itm_umb_armor_c_pl|Corsair Light Scale
+itm_umb_armor_d|Corsair Scale
+itm_umb_armor_d_pl|Corsair Scale
 itm_umb_armor_e|Corsair Hauberk
 itm_umb_armor_e_pl|Corsair Hauberk
-itm_umb_armor_f|Corsair Heavy Raider Armor
-itm_umb_armor_f_pl|Corsair Heavy Raider Armor
+itm_umb_armor_f|Corsair Noble Armour
+itm_umb_armor_f_pl|Corsair Noble Armour
 itm_umb_helm_a|Corsair Shell Helm
 itm_umb_helm_a_pl|Corsair Shell Helm
 itm_umb_helm_b|Corsair Shell Helm
@@ -1506,8 +1506,8 @@ itm_umb_shield_c|Corsair Buckler
 itm_umb_shield_c_pl|Corsair Buckler
 itm_umb_shield_d|Corsair Buckler
 itm_umb_shield_d_pl|Corsair Buckler
-itm_umb_shield_e|Corsair Shield
-itm_umb_shield_e_pl|Corsair Shield
+itm_umbar_spear|Umbar Short Spear
+itm_umbar_spear_pl|Umbar Short Spear
 itm_umbar_cutlass|Umbar Cutlass
 itm_umbar_cutlass_pl|Umbar Cutlass
 itm_kraken|Kraken Cutlass
@@ -1520,8 +1520,8 @@ itm_corsair_sword|Corsair Eket
 itm_corsair_sword_pl|Corsair Eket
 itm_corsair_throwing_dagger|Crooked Throwing Daggers
 itm_corsair_throwing_dagger_pl|Crooked Throwing Daggers
-itm_umbar_pike|Umbar Pike
-itm_umbar_pike_pl|Umbar Pike
+itm_umbar_pike|Corsair Trident
+itm_umbar_pike_pl|Corsair Trident
 itm_woodman_tunic|Woodmen Tunic
 itm_woodman_tunic_pl|Woodmen Tunic
 itm_woodman_scout|Woodmen Scout Cape
@@ -1682,10 +1682,10 @@ itm_ent_body|Ent Body
 itm_ent_body_pl|Ent Body
 itm_ent_head_helm|Ent Head
 itm_ent_head_helm_pl|Ent Head
-itm_ent_head_helm2|Ent Head
-itm_ent_head_helm2_pl|Ent Head
-itm_free_ent_head_helm3|Ent Head
-itm_free_ent_head_helm3_pl|Ent Head
+itm_troll_head|troll head
+itm_troll_head_pl|troll head
+itm_troll_body|troll body
+itm_troll_body_pl|troll body
 itm_ent_feet_boots|Ent Feet
 itm_ent_feet_boots_pl|Ent Feet
 itm_ent_hands|Ent Hands
@@ -1738,8 +1738,8 @@ itm_westernesse2h_reward|Sword of The Great Serpent
 itm_westernesse2h_reward_pl|Sword of The Great Serpent
 itm_mirkwood_sword_reward|Greenwood Relic Sword
 itm_mirkwood_sword_reward_pl|Greenwood Relic Sword
-itm_nazgul_sword|Nazgul Sword
-itm_nazgul_sword_pl|Nazgul Sword
+itm_nazgul_sword|Wicked Sword
+itm_nazgul_sword_pl|Wicked Sword
 itm_cooking_cauldron|Cooking Cauldron
 itm_cooking_cauldron_pl|Cooking Cauldron
 itm_eorl_cavalry_sword|Sword of Eorl
@@ -1780,8 +1780,8 @@ itm_isen_uruk_heavy_reward|Uruk-hai General Armor
 itm_isen_uruk_heavy_reward_pl|Uruk-hai General Armor
 itm_lorien_bow_reward|Noldorin Bow
 itm_lorien_bow_reward_pl|Noldorin Bow
-itm_lorien_sword_reward|Galadhrim Sword
-itm_lorien_sword_reward_pl|Galadhrim Sword
+itm_elven_cloak|Elven Cloak
+itm_elven_cloak_pl|Elven Cloak
 itm_dale_sword_reward|Dale Royal Sword
 itm_dale_sword_reward_pl|Dale Royal Sword
 itm_dale_armor_reward|Dale Noblemen Mail
@@ -1796,8 +1796,8 @@ itm_moria_arrow_reward|Moria Poisoned Arrows
 itm_moria_arrow_reward_pl|Moria Poisoned Arrows
 itm_khamul_helm|Helm of Khamul
 itm_khamul_helm_pl|Helm of Khamul
-itm_gandstaff|Wizards Staff
-itm_gandstaff_pl|Wizards Staff
+itm_guldur_arrows_reward|Guldur Arrows
+itm_guldur_arrows_reward_pl|Guldur Arrows
 itm_sarustaff|Wizards Staff
 itm_sarustaff_pl|Wizards Staff
 itm_rohan_armor_th|Rohan Royal Armor

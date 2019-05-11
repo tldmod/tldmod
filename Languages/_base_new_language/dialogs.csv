@@ -304,6 +304,10 @@ dlga_defend_village_failed:close_window|I will do better next time.
 dlga_lord_start:lord_generic_mission_completed.4|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
 dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
 dlga_raid_village_failed:close_window|I will do better next time.
+dlga_lord_start:lord_defeat_lord_complete|{s5}
+dlga_lord_defeat_lord_complete:close_window|{s5}
+dlga_lord_start:lord_target_lord_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
+dlga_lord_target_lord_failed:close_window|I will do better next time.
 dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
 dlga_lord_start:kill_quest_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
@@ -555,6 +559,9 @@ dlga_lord_tell_objective:lord_pretalk.9|We are fighting against {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.10|We are accompanying {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.11|We are reconsidering our next objective.
 dlga_lord_tell_objective:lord_pretalk.12|I don't know: {reg1} {s1}
+dlga_lord_tell_mission:lord_mission_told_target_lord|{s5}
+dlga_lord_mission_told_target_lord:lord_mission_accepted|{s5}
+dlga_lord_mission_told_target_lord:lord_mission_rejected|{s6}.
 dlga_lord_tell_mission:lord_mission_told_kill_quest_targeted|{s5}
 dlga_lord_mission_told_kill_quest_targeted:lord_mission_accepted|{s7}
 dlga_lord_tell_mission:lord_mission_told_kill_quest_faction|{s5}
@@ -1028,6 +1035,12 @@ dlga_mayor_talk:mayor_info_begin|Can you tell me about what you do?
 dlga_mayor_talk:merchant_quest_requested|How can I serve our cause?
 dlga_mayor_talk:merchant_quest_last_offered_job|About that task you needed me to do...
 dlga_mayor_talk:merchant_quest_about_job|About the task you gave me...
+dlga_mayor_talk:mayor_talk_ask_location|I want to know the location of someone.
+dlga_mayor_talk:mayor_talk_ask_companion|{s55}
+dlga_mayor_talk_ask_companion:mayor_talk_companion_thanks|{s55}
+dlga_mayor_talk_ask_companion:mayor_talk_companion_no_thanks|{s55}
+dlga_mayor_talk_companion_thanks:mayor_talk|{s55}
+dlga_mayor_talk_companion_no_thanks:mayor_talk|{s55}
 dlga_mayor_talk:close_window|[Leave]
 dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
 dlga_mayor_info_talk:mayor_info_lord|Who rules this town?
@@ -1042,6 +1055,10 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|I hope you don't fail. We cannot 
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Well, just do your best to finish it.
 dlga_merchant_quest_taken:mayor_pretalk|Excellent. I am counting on you then. Good luck.
 dlga_merchant_quest_stall:mayor_pretalk|Well, I'll see to find someone else. But tell me if you change your mind.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location_2:mayor_talk_ask_location_3|{s1}
+dlga_mayor_talk_ask_location_2:mayor_pretalk|Never mind.
+dlga_mayor_talk_ask_location_3:mayor_pretalk|{s1}
 dlga_merchant_quest_requested:merchant_quest_brief|Well, you look able enough. I think I might have something you could do.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near the {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion. I need somebody to teach those orcs a lesson. Sound like your kind of work?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Aye, I'll do it.

@@ -674,10 +674,10 @@ trp_olog_hai|Olog Hai of Mordor
 trp_olog_hai_pl|Olog Hai of Mordor
 trp_ent|Ent
 trp_ent_pl|Ents
-trp_orc_snaga_of_guldur|Orc Snaga of Guldur
-trp_orc_snaga_of_guldur_pl|Orc Snagas of Guldur
-trp_orc_of_guldur|Orc Tracker of Guldur
-trp_orc_of_guldur_pl|Orc Trackers of Guldur
+trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
+trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+trp_orc_of_guldur|Orc Tracker of Dol Guldur
+trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
 trp_orc_snaga_of_mordor|Orc Snaga of Mordor
 trp_orc_snaga_of_mordor_pl|Orc Snagas of Mordor
 trp_orc_of_mordor|Orc of Mordor
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Warg Rider of Gorgoroth
 trp_warg_rider_of_gorgoroth_pl|Warg Riders of Gorgoroth
 trp_great_warg_rider_of_mordor|Great Warg Rider of Udun
 trp_great_warg_rider_of_mordor_pl|Great Warg Riders of Udun
-trp_morgul_orc|Morgul Orc
-trp_morgul_orc_pl|Morgul Orcs
-trp_fell_morgul_orc|Fell Morgul Orc
-trp_fell_morgul_orc_pl|Fell Morgul Orcs
-trp_orc_tracker_of_mordor|Large Orc Tracker of Guldur
-trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Guldur
-trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Guldur
-trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Guldur
+trp_morgul_orc|Orc of Minas Morgul
+trp_morgul_orc_pl|Orcs of Minas Morgul
+trp_fell_morgul_orc|Fell Orc of Minas Morgul
+trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+trp_orc_tracker_of_mordor|Large Orc Tracker of Dol Guldur
+trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
+trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
+trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
 trp_orc_archer_of_mordor|Orc Archer of Mordor
 trp_orc_archer_of_mordor_pl|Orc Archers of Mordor
 trp_large_orc_archer_of_mordor|Large Orc Archer of Mordor
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Goblin Archer of Moria
 trp_a2_archer_snaga_of_moria_pl|Goblin Archers of Moria
 trp_a3_large_goblin_archer_of_moria|Large Goblin Archer of Moria
 trp_a3_large_goblin_archer_of_moria_pl|Large Goblin Archers of Moria
-trp_i5_deep_dweller_of_moria2|Deep-Dweller of Moria
-trp_i5_deep_dweller_of_moria2_pl|Deep-Dwellers of Moria
+trp_a4_fell_goblin_archer_of_moria|Fell Goblin Archer of Moria
+trp_a4_fell_goblin_archer_of_moria_pl|Fell Goblin Archers of Moria
+
 trp_i1_goblin_gundabad|Gundabad Goblin
 trp_i1_goblin_gundabad_pl|Gundabad Goblins
 trp_i2_orc_gundabad|Gundabad Orc
@@ -750,8 +751,8 @@ trp_tribal_orc|Tribal Orc
 trp_tribal_orc_pl|Tribal Orcs
 trp_tribal_orc_warrior|Tribal Orc Warrior
 trp_tribal_orc_warrior_pl|Tribal Orc Warriors
-trp_i5_orc_chieftain_of_moria2|Orc Chieftain of Moria
-trp_i5_orc_chieftain_of_moria2_pl|Orc Chieftains of Moria
+trp_i5_orc_champion_gundabad|Gundabad Orc Champion
+trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
 trp_black_numenorean_renegade|Black Numenorean Renegade
 trp_black_numenorean_renegade_pl|Black Numenorean Renegades
 trp_black_numenorean_warrior|Black Numenorean Warrior
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Orc Chieftain of Moria
 trp_i5_orc_chieftain_of_moria_pl|Orc Chieftains of Moria
 trp_rhovanion_noble|Rhovanion Noble
 trp_rhovanion_noble_pl|Rhovanion Noblemen
+trp_npc18|Turmbathu
+trp_npc19|Heidrek
+trp_npc20|Zigûrphel
+trp_werewolf|Werewolf
+trp_werewolf_pl|Werewolves
+trp_mountain_goblin2|Mountain Goblin
+trp_mountain_goblin2_pl|Mountain Goblins
+trp_tribal_orc2|Tribal Orc
+trp_tribal_orc2_pl|Tribal Orcs
+trp_tribal_orc_warrior2|Tribal Orc Warrior
+trp_tribal_orc_warrior2_pl|Tribal Orc Warriors
+trp_tribal_orc_chief2|Tribal Orc Chief
+trp_tribal_orc_chief2_pl|Tribal Orc Chiefs
