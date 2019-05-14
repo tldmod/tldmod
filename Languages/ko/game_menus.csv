@@ -88,6 +88,9 @@ mno_start_bn|서쪽에서 온 탈주자들, 검은 누메노르인
 mno_start_um|남쪽 바다에서 온 해적, 움바르
 mno_start_rh|동쪽에서 온 야만인, 룬
 mno_start_kh|남동쪽에서 온 약탈 민족, 칸드
+menu_start_eye_uruk|^^^^^^^^^어디에 숨어있습니까?
+mno_start_arm_uruk|모르도르의 군대 집결지
+mno_start_cav_uruk|돌 굴드르 동굴 속
 menu_start_eye_orc|^^^^^^^^^어디에 숨어있습니까?
 mno_start_arm|모르도르의 군대 집결지
 mno_start_cav|돌 굴드르 동굴 속
@@ -101,6 +104,9 @@ mno_start_2_hib|귀족
 menu_start_haradrim|^^^^^^^당신은 하라드인,^사막의 민족입니다.^ 당신의 계통을 선택하세요
 mno_start_1_des|사막 민족
 mno_start_2_far|남끝 하라드 부족민
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^성별은?
 mno_start_male|남자
 mno_start_female|여자
@@ -189,10 +195,13 @@ mno_leave|떠나기
 menu_simple_encounter|^^^^^{s2}^당신은 {reg11}명의 적군에 맞서 싸울 {reg22}명의 병사를 가지고 있습니다.\n^^전투는 {s3}{s4}에서 일어나고 있습니다.^^당신의 명령은?
 mno_encounter_attack|{reg21?적을 향해 돌격한다:적과 싸울 준비를 한다}
 mno_encounter_order_attack|당신이 뒤로 물러나 있는 동안 병사들에게 {reg21?공격하라고:싸우라고} 명령한다
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|적으로부터 숨는다...
 mno_special_whip|{s4}을(를) 채찍질하며 그들을 향해 돌격한다
 mno_encounter_leave|떠나기
 mno_encounter_retreat|몇몇 병사들을 당신이 후퇴할 때 남겨놓기
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|계속...
 menu_encounter_retreat_confirm|^^^^^부대원이 가진 가장 높은 전략가 스킬({reg2})로, {reg3?당신은:{s3}은(는)} 당신과 부대원들을 살아서 탈출시킬 계획을 궁리해냈지만, 적을 멈추기 위해 {reg4}명의 군사를 뒤에 남겨야만 합니다.
 mno_leave_behind|계속 간다. 그들의 희생이 남은 이들을 살릴 것이다
@@ -220,7 +229,9 @@ mno_pre_join_leave|참전하지 않는다
 menu_join_battle|당신은 {s1}에 맞서 {s2}의 군단에 가세했습니다.^우리측 {reg22}명의 군대로 {reg11}명의 적군에 맞서싸워야 합니다.^^전투는 {s3}{s4}에서 일어나고 있습니다.
 mno_join_attack|적에게 돌격하기
 mno_join_order_attack|당신이 뒤에 있는동안 동맹군과 함께 공격하라고 명령한다.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|떠나기
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^당신의 피해: {s8}^^동맹의' 피해: {s9}^^적의 피해: {s10}
 mno_enter|들어가기
 menu_battlefields|^^^^^^^^^전장을 선택하세요...
@@ -357,7 +368,9 @@ mno_horse_archer_field_ai|향상된 궁기병 AI: {s7}
 mno_vs_orcs_field_ai|궁수가 오크를 상대로 정확히 조준함 (오크의 머리 위를 조준하지 않음): {s7}
 mno_battlefield_animals|바르그 / 말이 아닌 동물 동료가 전투에 참여함: {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 mno_defend_refugees|침략자들을 주시한다...
 mno_attack_refugees|난민 무리를 공격한다...
 mno_leave_refugees|잠시 놔둔다...
@@ -413,6 +426,7 @@ mno_leave_pyre|장작더미를 떠나기
 menu_town_ruins|당신이 다가갔을때, 당신은 {s1}이 {s2}임을 확인했습니다.
 mno_ruin_menu_0|이 장소 탐험하기
 mno_ruin_leave|떠나기
+; menu_premutiny|none
 menu_death|당신은 죽었습니다. 전쟁은 계속되고 있지만 당신은 이제 거기에 끼지 못합니다.
 menu_animal_ambush|당신과 당신의 동료들은 나머지 일행과 떨어져 있다는 것을 알아차렸습니다, 그리고 갑자기...
 menu_animal_ambush_success|{s2}들은 당신 앞에 낫에 잘린 벼이삭마냥 {reg0?쓰러졌습니다:쓰러졌습니다} !  곧 당신을 공격한 이들은 전부 죽거나 기절해 쓰러져 있습니다. {s3}

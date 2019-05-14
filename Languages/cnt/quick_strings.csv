@@ -14,7 +14,7 @@ qstr_Stand_Closer|靠攏
 qstr_Spread_Out|散開
 qstr_Stand_Ground|站在原地
 qstr_Dismount|下馬
-qstr_Use_Any_Weapon|使用各種武器
+qstr_Use_Any_Weapon|任意武器
 qstr_Use_Blunt_Weapons|使用鈍器
 qstr_Hold_Your_Fire|停止射擊
 qstr_Fire_At_Will|自 由 開 火
@@ -54,7 +54,7 @@ qstr_Days_Passed:_{reg0}|經 過 天 數 : {reg0}
 qstr_Difficulty:_{reg0}%|困 難 度 : {reg0}%
 qstr_{reg3?+:}{reg0}|{reg3?+:}{reg0}
 qstr_TOTAL_SCORE:_{reg0}|總 分 : {reg0}
-qstr_A_peaceful_village_n|一個在Westfold不遠處的平靜村子
+qstr_A_peaceful_village_n|一個在西谷不遠處的平靜村子
 qstr_The_War_is_upon_Roha|戰 爭 要 蔓 延 到 洛 汗 了！
 qstr_Minas_Tirith___The_W|米那斯提力斯 - 潔白之城
 qstr_The_White_Tree_stand|由於國王隊的戰線失敗，白樹已經死了
@@ -73,8 +73,8 @@ qstr_Thighs|大 腿
 qstr_Legs|雙 腳
 qstr_Rotate|旋 轉
 qstr_Close|關 閉
-qstr_Faction_Side:^^Campa|派系方面：^^戰役難度*：^^Home Theater：^^Home Theater：^^敵人：^^
-qstr_Campaign_Difficulty_|戰役難度是基於開始派系力量，戰區敵人、派系部隊樹和部隊裝備。
+qstr_Faction_Side:^^Campa|派 系 方 面 :^^戰 役 難 度 :^^家 園 :^^統 治 者 :^^敵 人 :^^
+qstr_Campaign_Difficulty_|戰 役 難 度 是 基 於 開 始 派 系 力 量 , 戰 區 敵 人 , 派 系 部 隊 樹 和 部 隊 裝 備.
 qstr_Rallies:|集合:
 qstr_View_Keybinds__Press|查看键绑定(按Insert键)
 qstr_What_do_you_fight_fo|你 為 了 什 麼 而 戰？
@@ -214,6 +214,7 @@ qstr_when_equipped|已 裝 備 時
 qstr_+1_to_Strength|+1 力 量
 qstr_+1_to_Agility|+1 敏 捷
 qstr_+1_to_Leadership|+1 統 御
+qstr_+1_to_Wildcraft|+1 野 外 求 生
 qstr_+1_to_Power_Draw|+1 強 弓
 qstr_Turns_nature_to_your|將自然轉化為你的一方(效果與Wildcraft一起擴展)
 qstr_+1_to_Trainer|+1 教 練
@@ -223,14 +224,15 @@ qstr_rallies|集結
 qstr_+{reg1}_{s3}_in_batt|戰 鬥 中 +{reg1} {s3}
 qstr_+1_to_Charisma|+1 魅 力
 qstr_+1_to_Surgery|+1 手 術
-qstr_+1_to_Wildcraft|+1 野 外 求 生
 qstr_+1_to_Ironflesh|+1 鐵 骨
 qstr_+1_to_Prisoner_Mgmt|+1 俘 虜 管 理
 qstr_+2_to_Tactics|+2 工 程
 qstr_+3_to_Spotting|+3 偵 察
 qstr_Less_Dunnish_upkeep|減 少 登 丹 的 消 耗
 qstr_Less_Wargs_upkeep|減 少 座 狼 的 消 耗
+qstr_Light_Armor|輕型鎧甲
 qstr_+{reg1}_to_Party_Mor|+{reg1} 部 隊 士 氣
+qstr_Shoot_Speed:_{reg55}|射擊速度：{reg55}
 qstr_Do_you_want_to_disem|你 想 上 岸 嗎？
 qstr_Move_here|移 到 此 處
 qstr_View_notes|查 看 筆 記
@@ -873,6 +875,7 @@ qstr_Unknown_{reg3}_|未知 ({reg3})
 qstr_ON|開
 qstr_OFF__cheat_|關(作弊)
 qstr_OFF|關
+qstr_All_messages|所有消息
 qstr_{reg0}__will_most_li|{reg0} (極大概率導致存檔崩潰)
 qstr_{reg0}__could_possib|{reg0} (有概率導致存檔崩潰)
 qstr_Normal|正常
@@ -912,6 +915,7 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|一群{s1}正向你{s10}。
 qstr_You_are_attacking_a_|你正攻擊一群{s1}
 qstr_The_battle_against_t|對抗一群{s1}的戰鬥繼續
+qstr_There_are_{reg39}_al|在這場戰鬥中有{reg39}盟軍指揮官。 你可以命令他們和他們的部隊獲得{reg40}影響點。
 qstr_Having_a_small_party|舉辦小型派對有其好處......你和你的部隊躲避敵人幾個小時，以確保你不被看見。
 qstr_Your_ability_to_surv|您在惡劣環境中生存的能力使您能夠找到一個安全的地方來隱藏。(你的野外技能讓你可以隱藏{reg1}部隊)
 qstr_{reg4}_will_be_lost.|{reg4} 將會丟失。
@@ -1206,6 +1210,10 @@ qstr_It_is_my_duty_to_prot|保護盟友是我的天職。
 qstr_I_am_{s4}_{s15}_of_{|我是 {s4}，{s6 }的 {s15}
 qstr_I_am_{s4}_a_commande|我是 {s4}，{s6} 的指揮官
 qstr_{s9}{reg5?_and_the_r|{s9} {reg5?和{s8}的統治者。 :}
+qstr_{playername}_our_sco|{playername}，我們的探子帶來了你成功的消息。願你在這幸福的歲月裡度過這一天！你大勝利擊退了{s7}，敵人的大舉進攻的計畫已經失敗了。我們希望他們會為了自己的失敗而吵架。我們也希望他們現在對你會感到恐懼！至少你讓我們暫時休息了一下。
+qstr_Well_{playername}_yo|那麼，{playername}，你已經回來了，而且對我們來說是個好消息。我現在看到你不是在吹噓和欺騙，如果我能親眼目睹{s7}落在你面前！ 毫無疑問，我們的敵人將會非常沮喪。我保證，他們失去了理智。如他們所說，把蛇的頭割下來，交易就完成了。好吧，我現在必須帶領我的主人贏得真正的勝利。你的貢獻將被報告，<Player>。不要害怕。
+qstr_Alas_that_I_could_no|唉，我無法終結{s8}的{s7}，但如果我們再次見面，那就讓他們小心吧。
+qstr__I_should_rather_mak|我寧願自己報告我對{s8} {s7}的勝利 - 主要的榮耀是我的，你不會忘記的！
 qstr_Very_well_done_{play|做得很好！ {playername}！正如我所期望的，你抓住了間諜和他的接頭人。他們現在正拷在一起等待問詢；他們有很多事情要好好的解釋一下了。 {playername}，我非常高興你能完成這個任務。請收下這袋錢，這是你應得的獎賞。
 qstr_Beautiful_work_{play|做得很好！ {playername}！你抓住了間諜和他的接頭人。他們現在正關在牢裡等待問詢；很顯然今晚的我檢察官有的要忙了。 {playername}，我非常高興你能完成這個任務。請收下這袋錢，這是你應得的獎賞。
 qstr_Foiling_the_enemy_s_|挫敗敵人攻擊難民企圖削弱了他們的決心\n{s1} 由於你對{reg18}入侵者的勝利而失去了{reg19}派系力量。
@@ -1355,6 +1363,13 @@ qstr_We_are_at_war_with_{|我們正與{s12}交戰。但交戰的重心其實是�
 qstr_We_are_at_war_with_{s|我們正與{s12}交戰。但其實目前只有一點小衝突。
 qstr_we_are_not_too_conce|我們目前沒工夫理他們，因為我們正與離家更近的敵人交戰。
 qstr__under_your_orders|，聽從指揮。
+qstr_{playername}_you_may|{playername}，您可能已經看過{s7}的主人。\n在所有反對我們的領主中，目前{s8}的{s7}贏得了最大的聲譽。\n他們僅僅出現在戰場上就足以使我們的敵人更加強大，削弱我們盟友的決心。\n{playername}，如果你想在這場戰爭中做出一件偉大的事情，在公開戰鬥中擊敗{s7}的主人！ 這樣希望將被重新點燃，並且讓恐懼填滿那些反對者人的心。
+qstr_Do_you_mark_how_our_|當你提到{s8}的{s7}時，你知道我們最勇敢的戰士是如何動搖的嗎？一個偉大的戰士，哦，是的，一個有能力的隊長。我們不能讓它像這樣亂跑！無論他們出現在哪裡，我們就會跑向那裏，我們的敵人會找到新的勇氣。這不可能。我們不能讓它像這樣運行！ 他們的臉上到處都顯示出來，我們的線條向後彎曲，我們的敵人找到了新的勇氣。這不可能。我命令你，{playername}，在公開戰鬥中挑戰並擊敗{s7}的士兵。看到被你擊倒的{s7}將凍結他的追隨者的血液和骨髓，向我們自己的部隊展示我們的敵人可以被擊倒！
+qstr_This_is_a_chance_for|這是個展現自我實力的機會。 我將在敵人和盟友的視線中擊敗{s7}。
+qstr_Accursed_be_those_wh|今日跟從{s7}的必受到咒詛，因為我要擊殺他們，讓大家看見！。
+qstr_{s9}_wants_you_to_de|{s9}希望你在戰鬥中擊敗{s36} {s35}。
+qstr_I_humbly_ask_that_yo|我謙卑地問你為這個任務找到了另一個人。我不認為{s7}能在戰鬥中能做到最好。
+qstr_Mercy_I_crave!_To_fa|憐憫，我渴望！ 在公開戰鬥中面對{s7}絕對是愚蠢的！ 我不能做這件事！
 qstr_strong_warriors_from|來自 {s7} 的強大戰士
 qstr_champions_from_{s7}_|來自 {s7} 的冠軍，是該領域最強者
 qstr_{playername}_the_men|{playername}，這些人聽說過有關敵軍兇猛的故事。\n這些恐怖的故事使士兵們的士氣低落。\n我要你讓他們知道他們沒有什麼可害怕的。\n我希望你挑戰並擊敗{reg22} {s6}。

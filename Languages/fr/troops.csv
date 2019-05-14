@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Guetteurs de Pelargir
 trp_pelargir_marine|Marin de Pelargir
 trp_pelargir_marine_pl|Marins de Pelargir
 trp_pelargir_vet_marine|Marin vétéran de Pelargir
-trp_pelargir_vet_marine_pl|Marins vétérans de Pelargir
+; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
 trp_pelargir_infantry|Fantassin de Pelargir
 trp_pelargir_infantry_pl|Infanterie de Pelargir
 trp_pelargir_vet_infantry|Fantassin vétéran de Pelargir
@@ -674,10 +674,10 @@ trp_olog_hai|Olog-hai du Mordor
 trp_olog_hai_pl|Olog-hai du Mordor
 trp_ent|Ent
 trp_ent_pl|Ents
-trp_orc_snaga_of_guldur|Orque snaga de Guldur
-trp_orc_snaga_of_guldur_pl|Orques snagas de Guldur
-trp_orc_of_guldur|Traqueur Orque de Guldur
-trp_orc_of_guldur_pl|Traqueurs Orques de Guldur
+; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
+; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+; trp_orc_of_guldur|Orc Tracker of Dol Guldur
+; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
 trp_orc_snaga_of_mordor|Orque snaga du Mordor
 trp_orc_snaga_of_mordor_pl|Orques snagas du Mordor
 trp_orc_of_mordor|Orque du Mordor
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Chevaucheur de Warg de Gorgoroth
 trp_warg_rider_of_gorgoroth_pl|Chevaucheurs de Wargs de Gorgoroth
 trp_great_warg_rider_of_mordor|Grand chevaucheur de Warg d'Udûn
 trp_great_warg_rider_of_mordor_pl|Grands chevaucheurs de Wargs d'Udûn
-trp_morgul_orc|Orque de Morgul
-trp_morgul_orc_pl|Orques de Morgul
-trp_fell_morgul_orc|Orque féroce de Morgul
-trp_fell_morgul_orc_pl|Orques féroces de Morgul
-trp_orc_tracker_of_mordor|Grand Traqueur Orque de Guldur
-trp_orc_tracker_of_mordor_pl|Grands Traqueurs Orques de Guldur
-trp_fell_orc_tracker_of_mordor|Traqueur Orque Féroce de Guldur
-trp_fell_orc_tracker_of_mordor_pl|Traqueurs Orques Féroces de Guldur
+; trp_morgul_orc|Orc of Minas Morgul
+; trp_morgul_orc_pl|Orcs of Minas Morgul
+; trp_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
+; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
 trp_orc_archer_of_mordor|Archer orque du Mordor
 trp_orc_archer_of_mordor_pl|Archers orques du Mordor
 trp_large_orc_archer_of_mordor|Grand archer orque du Mordor
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Archer gobelin de la Moria
 trp_a2_archer_snaga_of_moria_pl|Archers gobelins de la Moria
 trp_a3_large_goblin_archer_of_moria|Grand archer gobelin de la Moria
 trp_a3_large_goblin_archer_of_moria_pl|Grands archers gobelins de la Moria
-trp_i5_deep_dweller_of_moria2|Guerrier d'élite de la Moria
-trp_i5_deep_dweller_of_moria2_pl|Guerriers d'élite de la Moria
+trp_a4_fell_goblin_archer_of_moria|Archer gobelin féroce de la Moria
+trp_a4_fell_goblin_archer_of_moria_pl|Archers gobelins féroces de la Moria
+
 trp_i1_goblin_gundabad|Gobelin de Gundabad
 trp_i1_goblin_gundabad_pl|Gobelins de Gundabad
 trp_i2_orc_gundabad|Orque de Gundabad
@@ -750,8 +751,8 @@ trp_tribal_orc|Orque tribal
 trp_tribal_orc_pl|Orques tribaux
 trp_tribal_orc_warrior|Guerrier orque tribal
 trp_tribal_orc_warrior_pl|Guerriers orques tribaux
-trp_i5_orc_chieftain_of_moria2|Chef de clan orque de la Moria
-trp_i5_orc_chieftain_of_moria2_pl|Chefs de clan orque de la Moria
+; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
+; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
 trp_black_numenorean_renegade|Númenoréen noir renégat
 trp_black_numenorean_renegade_pl|Númenoréens noirs renégats
 trp_black_numenorean_warrior|Guerrier Númenoréen noir
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Chef de clan orque de la Moria
 trp_i5_orc_chieftain_of_moria_pl|Chefs de clan orque de la Moria
 trp_rhovanion_noble|Noble du Rhovanion
 trp_rhovanion_noble_pl|Nobles du Rhovanion
+; trp_npc18|Turmbathu
+; trp_npc19|Heidrek
+; trp_npc20|Zigûrphel
+trp_werewolf|Loup-Garou
+; trp_werewolf_pl|Werewolves
+trp_mountain_goblin2|Gobelin des Montagnes
+trp_mountain_goblin2_pl|Gobelins des Montagnes
+trp_tribal_orc2|Orque tribal
+trp_tribal_orc2_pl|Orques tribaux
+trp_tribal_orc_warrior2|Guerrier orque tribal
+trp_tribal_orc_warrior2_pl|Guerriers orques tribaux
+trp_tribal_orc_chief2|Chef orque tribal
+trp_tribal_orc_chief2_pl|Chefs orques tribaux

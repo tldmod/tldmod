@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|다음엔 더 잘하겠습니다.
 dlga_lord_start:lord_generic_mission_completed.4|{s12} 근처 마을에서 이는 화염을 보았다. 비명소리도 들었지. 이건 시작에 불과하다 {playername}.^^전쟁이 다가오고 있다.
 dlga_lord_start:raid_village_failed|{s12} 근처 마을에서 달아나는 네 부하들을 보았다. 감히 이곳에 돌아와 그 낯짝을 내밀 생각은 아니겠지 {playername}?^^곧 전쟁이 일어날 거다, 헌데 이런 실패가 이어진다면 그 첫 희생자는 네가 될 것이다.
 dlga_raid_village_failed:close_window|다음엔 더 잘하겠습니다.
+dlga_lord_start:lord_target_lord_failed|내가 시킨 일을 실패했다고 들었다. 실망스럽군 {playername}.
+dlga_lord_target_lord_failed:close_window|다음엔 더 잘하겠습니다.
 dlga_lord_start:lord_generic_mission_completed.5|너의 용맹을 네 부하들이 칭송하더군 {playername}. 저들에게 우리의 압도적인 강함을 잘 보여주었다.
 dlga_lord_start:kill_quest_failed|내가 시킨 일을 실패했다고 들었다. 실망스럽군 {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|너의 용맹을 네 부하들이 칭송하더군 {playername}. 경의를 표한다.
@@ -874,6 +876,7 @@ dlga_mayor_pretalk:mayor_talk|예?
 ; dlga_mayor_talk:merchant_quest_requested|How can I serve our cause?
 ; dlga_mayor_talk:merchant_quest_last_offered_job|About that task you needed me to do...
 dlga_mayor_talk:merchant_quest_about_job|시키신 일에 대해서는...
+; dlga_mayor_talk:mayor_talk_ask_location|I want to know the location of someone.
 dlga_mayor_talk:close_window|[떠나기]
 ; dlga_mayor_info_begin:mayor_info_talk|I am the local authority here in {s9}. You can say I am in charge of everyday tasks. There is always something to do, so if you want to help let me know.
 ; dlga_mayor_info_talk:mayor_info_lord|Who rules this town?
@@ -888,6 +891,8 @@ dlga_mayor_talk:close_window|[떠나기]
 ; dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Well, just do your best to finish it.
 ; dlga_merchant_quest_taken:mayor_pretalk|Excellent. I am counting on you then. Good luck.
 ; dlga_merchant_quest_stall:mayor_pretalk|Well, I'll see to find someone else. But tell me if you change your mind.
+; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|신경쓰지 말게나.
 ; dlga_merchant_quest_requested:merchant_quest_brief|Well, you look able enough. I think I might have something you could do.
 ; dlga_merchant_quest_brief:merchant_quest_looters_choice|We've had some fighting near the {s5} lately, with all the chaos that comes with it, and that's attracted a few bands of tribal orcs to raid the surroundings during the confusion. I need somebody to teach those orcs a lesson. Sound like your kind of work?
 ; dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Aye, I'll do it.

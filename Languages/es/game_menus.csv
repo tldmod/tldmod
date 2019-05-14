@@ -88,6 +88,9 @@ mno_start_bn|NUMENÓREANOS NEGROS, los renegados del Oeste
 mno_start_um|UMBAR, Los piratas de los mares del Sur
 mno_start_rh|RHUN, los bárbaros del Este
 mno_start_kh|KHAND, el pueblo salvaje del Sureste
+menu_start_eye_uruk|^^^^^^^^^^¿Desde donde acechas al enemigo?
+mno_start_arm_uruk|desde los ejércitos reunidos en MORDOR
+mno_start_cav_uruk|desde las cuevas de DOL GULDUR
 menu_start_eye_orc|^^^^^^^^^^¿Desde donde acechas al enemigo?
 mno_start_arm|desde los ejércitos reunidos en MORDOR
 mno_start_cav|desde las cuevas de DOL GULDUR
@@ -101,6 +104,9 @@ mno_start_2_hib|De alta alcurnia
 menu_start_haradrim|^^^^^^^Perteneces al publo Haradrim,^los Hombres del Desierto.^Elige tu linaje
 mno_start_1_des|Pueblo del Desierto
 mno_start_2_far|Miembro de las tribus de la Lejana Harad
+menu_start_numenorean|^^^^^^^Eres uno de los Númenóreanos Negros,^ leal a la Oscuridad y a Morgoth.^Selecciona dónde sirves al Ojo
+mno_start_1_bn|Junto a la Boca de Sauron, en MORANNON
+mno_start_2_bn|En la fortaleza del Nigromante, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^¿Cual es tu sexo?
 mno_start_male|Hombre
 mno_start_female|Mujer
@@ -189,10 +195,13 @@ mno_leave|Irse.
 menu_simple_encounter|^^^^^{s2}^Cuentas con {reg22} tropas listas para la batalla, frenta a las {reg11} del enemigo.^^La batalla tendrá lugar en {s3}{s4}.^^¿Cuáles son tus órdenes?
 mno_encounter_attack|{reg21?Cargar contra ellos:Prepararse para el enfrentamiento}.
 mno_encounter_order_attack|Ordenar a tus tropas {reg21?atacar:enfrentarse a ellos} sin tu ayuda.
+mno_control_allies_menu|Usar Influencia para dar órdenes a tus aliados en el campo de batalla
 mno_encounter_hide|Esconderse del enemigo...
 mno_special_whip|Acercarse rápidamente hacia ellos restallando el {s4}.
 mno_encounter_leave|Separarse.
 mno_encounter_retreat|Huir, dejando a algún soldado detrás para cubrir tu retirada.
+mno_player_control_allies_simple|Ponerlos bajo tus órdenes y enfrentarse al enemigo.
+mno_player_control_allies_back|Atrás...
 mno_hide_close|Continuar...
 menu_encounter_retreat_confirm|^^^^^Como el miembro del grupo con mayor habilidad táctica, ({reg2}), {reg3?trazas:{s3} traza} un plan que os permitirá a ti y a los tuyos escapar sanos y salvos, pero tendrás que dejar {reg4} soldados atrás para distraer al enemigo y que no os dé caz.
 mno_leave_behind|Adelante. El sacrificio de unos pocos salvará al resto.
@@ -220,7 +229,9 @@ mno_pre_join_leave|No involucrarse.
 menu_join_battle|^^^Estás colaborando con {s2} en la lucha contra {s1}.^ Cuentas con {reg22} tropas listas para la batalla, frente a las {reg11} del enemigo.^^La batalla tendrá lugar en {s3}{s4}.
 mno_join_attack|Enfrentarse al enemigo.
 mno_join_order_attack|Ordenar a tus tropas que ataquen al enemigo junto con tus aliados mientras te mantienes al margen.
+mno_control_allies_join_menu|Usar puntos de Influencia para dar órdenes a tus aliados en el campo de batalla
 mno_join_leave|Replegarse.
+mno_player_control_allies_join_menu|Ponerlos bajo tus órdenes y enfrentarse al enemigo.
 menu_join_order_attack|{s4}^^Tus bajas: {s8}^^Bajas aliadas: {s9}^^Bajas enemigas: {s10}
 mno_enter|Entrar.
 menu_battlefields|^^^^^^^^^Selecciona un campo...
@@ -358,6 +369,8 @@ mno_vs_orcs_field_ai|Los arqueros tienen mejor puntería contra orcos (no apunta
 mno_battlefield_animals|Compañeros animales -sin contar huargos / caballos- aparecen en batalla:  {s7}
 mno_slow_when_wounded|Los agentes heridos se vuelven más lentos:  {s7}
 mno_battle_encounter_effects|Efectos especiales de facción en el campo de batalla (p. ej. tormentas, nieblas):  {s7}
+menu_hungry_orc|ninguno
+menu_leaving_elf|ninguno
 mno_defend_refugees|Mantenerte ojo avizor por si aparecen saqueadores...
 mno_attack_refugees|Atacar la caravana de refugiados...
 mno_leave_refugees|Dejarlos en paz por ahora...
@@ -413,6 +426,7 @@ mno_leave_pyre|Dejar la pira.
 menu_town_ruins|Cuando te acercas ves que {s1} está {s2}
 mno_ruin_menu_0|Explorar el lugar.
 mno_ruin_leave|Irse...
+menu_premutiny|ninguno
 menu_death|Te han matado. Aunque la guerra sigue su sangriento curso tú ya no formarás parte de ella nunca más.
 menu_animal_ambush|Tú y tus compañeros os encontráis separados del resto del grupo cuando de repente...
 menu_animal_ambush_success|{reg0?El:Los} {s2} {reg0?cae:caen} ante ti como el trigo seco bajo la guadaña. Poco después todos tus atacantes yacen en el suelo, muertos o heridos. {s3}

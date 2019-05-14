@@ -26,13 +26,13 @@ imod_sturdy|Bagol %s
 ; imod_thick|Robust %s
 imod_hardened|Kaletaet %s
 imod_reinforced|Kreñvaet %s
-imod_superb|Dibar %s
+; imod_cloak|%s with cloak
 imod_lordly|Labour-mestr %s
 imod_lame|Gwan %s
 imod_swaybacked|Rodennet %s
 imod_stubborn|Penn-kallet %s
 imod_timid|Lent %s
-imod_meek|Dous %s
+; imod_meek|Blood-covered %s
 imod_spirited|Tan gantañ %s
 imod_champion|Kampion %s
 imod_fresh|Fresk %s

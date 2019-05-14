@@ -26,13 +26,13 @@ imod_sturdy|%s, solide
 imod_thick|%s, robust
 imod_hardened|%s, gehärtet
 imod_reinforced|%s, verstärkt
-imod_superb|%s, superb
+imod_cloak|%s mit Mantel
 imod_lordly|%s, meisterhaft
 imod_lame|%s, lahm
 imod_swaybacked|%s, bucklig
 imod_stubborn|%s, stur
 imod_timid|%s, scheu
-imod_meek|%s, sanftmütig
+; imod_meek|Blood-covered %s
 imod_spirited|%s, lebhaft
 imod_champion|%s, heldenhaft
 imod_fresh|%s, frisch

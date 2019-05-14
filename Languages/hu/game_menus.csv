@@ -88,6 +88,9 @@ mno_start_bn|Fekete NÚMERONIAK, a Nyugat köpönyegforgatói
 mno_start_um|UMBAR, a Déli Tenger kalózai
 mno_start_rh|RHÛN, a Kelet barbárjai
 mno_start_kh|KHAND, a Dél-Kelet vademberei
+menu_start_eye_uruk|^^^^^^^^^^Hol tanyázol?
+mno_start_arm_uruk|A MORDOR-ban felgyűlt seregben
+mno_start_cav_uruk|DOL GULDUR barlangjaiban
 menu_start_eye_orc|^^^^^^^^^^Hol tanyázol?
 mno_start_arm|A MORDOR-ban felgyűlt seregben
 mno_start_cav|DOL GULDUR barlangjaiban
@@ -101,6 +104,9 @@ mno_start_2_hib|Nemes
 menu_start_haradrim|^^^^^^^Egy Haradrim vagy,^ a Sivatag embere.^ Válassz nemzetséget
 mno_start_1_des|Sivatagi ember
 mno_start_2_far|Messze-haradi törzstag
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^Nemed?
 mno_start_male|Férfi
 mno_start_female|Nő
@@ -189,10 +195,13 @@ mno_leave|Távozás.
 menu_simple_encounter|^^^^^{s2}^{reg22} csapatod áll készen a csatára {reg11} ellen.^^A csata {s3}{s4} területén zajlik le.^^Parancsaid?
 mno_encounter_attack|{reg21?Megrohamozni őket:Felkészülni a csatára.}
 mno_encounter_order_attack|Parancsold meg csapataidnak, {reg21?támadjanak:nézzenek szembe velük} nélküled.
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|Elbújsz az ellenfelek elől...
 mno_special_whip|Rohanj velük szembe, megroppantva a {s4}t.
 mno_encounter_leave|Visszavonulás.
 mno_encounter_retreat|Visszavonulás, néhány katonát hátrahagyva, hogy fedezzék a visszavonulásodat.
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|Folytatás...
 menu_encounter_retreat_confirm|^^^^^A legnagyobb taktikai képzettséggel rendelkező csapattagként, ({reg2}), {reg3?kiötölsz:{s3}kitalál} egy tervet, mely lehetővé teszi számodra és embereid számára, hogy elmeneküljetek, hátra kell azonban hagynod {reg4} katonát, hogy lefoglalják az ellenséget. 
 mno_leave_behind|Gyerünk. Ezeknek az embereknek a feláldozása megmenti a többiek életét.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Nem avatkozol közbe.
 menu_join_battle|^^^{s2} segítségére sietsz {s1} ellen.^ {reg22} katona áll készen a csatára az ellenség {reg11} egysége ellen.^^A csata {s3}{s4} területén zajlik le.
 mno_join_attack|Az ellenség megrohamozása.
 mno_join_order_attack|Utasítsd csapataidat szövetségeseiddel az ellenség megtámadására, miközben te hátra maradsz.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Visszavonulás.
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Veszteségeid: {s8}^^Szövetségesek vesztesége: {s9}^^Ellenség vesztesége: {s10}
 mno_enter|Belépés.
 menu_battlefields|^^^^^^^^^^Válassz mezőt...
@@ -357,7 +368,9 @@ mno_horse_archer_field_ai|A lovasíjászoknak jobb csatatéri MI lesz:  {s7}
 mno_vs_orcs_field_ai|Az íjászok jobban fognak célozni orkok ellen (nem fognak a fejük felé célozni):  {s7}
 mno_battlefield_animals|Nem-varg / Ló-állati társak fognak leteremtődni a csatatérre:  {s7}
 mno_slow_when_wounded|Az ügynökök lelassulnak ha megsérülnek:  {s7}
-mno_battle_encounter_effects|Különleges népalapú effektek jelennek meg a csatatéren (pl. viharok, ködök):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 mno_defend_refugees|Tartsd nyitva a szemed a fosztogatók ellen...
 mno_attack_refugees|Támadd meg a menekült konvojt...
 mno_leave_refugees|Hagyd békén őket egyelőre...
@@ -413,6 +426,7 @@ mno_leave_pyre|Hagyd ott a halotti máglyát.
 menu_town_ruins|Amikor megközelíted, látod hogy {s1} már {s2}
 mno_ruin_menu_0|Fedezd fel a helyszínt.
 mno_ruin_leave|Távozás...
+; menu_premutiny|none
 menu_death|Megöltek. Bár a háború továbbfolyik, te nem leszel többé részese.
 menu_animal_ambush|Te és a társaid elszakadva találjátok magatokat a csapatotok többi tagjától, amikor hirtelen...
 menu_animal_ambush_success|A {s2} {reg0?elhull:elhullanak} előtted mint búza a kasza előtt! Hamarosan az összes támadód a földön fetreng, sebesülten vagy holtan. {s3}

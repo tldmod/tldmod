@@ -26,13 +26,13 @@ imod_sturdy|Čvrsto %s
 ; imod_thick|Robust %s
 imod_hardened|Prekaljeno %s
 imod_reinforced|Ojačano %s
-imod_superb|Veličanstveno %s
+; imod_cloak|%s with cloak
 imod_lordly|Remekdjelo %
 imod_lame|Jadno %s
 imod_swaybacked|Pogrbljenost %s
 imod_stubborn|Tvrdoglav %s
 imod_timid|Plah %s
-imod_meek|Krotak %s
+; imod_meek|Blood-covered %s
 imod_spirited|Srčan %s
 imod_champion|Prvak %s
 imod_fresh|Svjež %s

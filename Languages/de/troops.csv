@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Wachmänner von Pelargir
 trp_pelargir_marine|Seemann von Pelargir
 trp_pelargir_marine_pl|Seemänner von Pelargir
 trp_pelargir_vet_marine|Erfahrener Seemann von Pelargir
-trp_pelargir_vet_marine_pl|Erfahrene Seemänner von Pelargir
+; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
 trp_pelargir_infantry|Soldat von Pelargir
 trp_pelargir_infantry_pl|Soldaten von Pelargir
 trp_pelargir_vet_infantry|Erfahrener Soldat von Pelargir
@@ -676,8 +676,8 @@ trp_ent|Ent
 trp_ent_pl|Ents
 trp_orc_snaga_of_guldur|Snaga von Dol Guldur
 trp_orc_snaga_of_guldur_pl|Snagas von Dol Guldur
-trp_orc_of_guldur|Ork-Aufspürer von Guldur
-trp_orc_of_guldur_pl|Ork-Aufspürer von Guldur
+trp_orc_of_guldur|Ork-Aufspürer von Dol Guldur
+trp_orc_of_guldur_pl|Ork-Aufspürer von Dol Guldur
 trp_orc_snaga_of_mordor|Snaga aus Mordor
 trp_orc_snaga_of_mordor_pl|Snagas aus Mordor
 trp_orc_of_mordor|Ork aus Mordor
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Wargreiter von Gorgoroth
 trp_warg_rider_of_gorgoroth_pl|Wargreiter von Gorgoroth
 trp_great_warg_rider_of_mordor|Großer Wargreiter von Udun
 trp_great_warg_rider_of_mordor_pl|Große Wargreiter von Udun
-trp_morgul_orc|Morgul-Ork
-trp_morgul_orc_pl|Morgul-Orks
-trp_fell_morgul_orc|Grausamer Morgul-Ork
-trp_fell_morgul_orc_pl|Grausame Morgul-Orks
-trp_orc_tracker_of_mordor|Großer Ork-Aufspürer von Guldur
-trp_orc_tracker_of_mordor_pl|Große Ork-Aufspürer von Guldur
-trp_fell_orc_tracker_of_mordor|Grausamer Ork-Aufspürer von Guldur
-trp_fell_orc_tracker_of_mordor_pl|Grausame Ork-Aufspürer von Guldur
+trp_morgul_orc|Ork von Minas Morgul
+trp_morgul_orc_pl|Orks von Minas Morgul
+trp_fell_morgul_orc|Grausamer Ork von Minas Morgul
+trp_fell_morgul_orc_pl|Grausamer Orks von Minas Morgul
+; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
+trp_orc_tracker_of_mordor_pl|Großer Ork-Aufspürer von Dol Guldur
+trp_fell_orc_tracker_of_mordor|Grausamer Ork-Aufspürer von Dol Guldur
+trp_fell_orc_tracker_of_mordor_pl|Grausame Ork-Aufspürer von Dol Guldur
 trp_orc_archer_of_mordor|Ork-Bogenschütze aus Mordor
 trp_orc_archer_of_mordor_pl|Ork-Bogenschützen aus Mordor
 trp_large_orc_archer_of_mordor|Großer Ork-Bogenschütze aus Mordor
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Ork-Bogenschütze von Moria
 trp_a2_archer_snaga_of_moria_pl|Ork-Bogenschützen von Moria
 trp_a3_large_goblin_archer_of_moria|Großer Ork-Bogenschütze von Moria
 trp_a3_large_goblin_archer_of_moria_pl|Große Ork-Bogenschützen von Moria
-trp_i5_deep_dweller_of_moria2|Tiefen-Ork von Moria
-trp_i5_deep_dweller_of_moria2_pl|Tiefen-Orks von Moria
+trp_a4_fell_goblin_archer_of_moria|Grausamer Ork-Bogenschütze von Moria
+trp_a4_fell_goblin_archer_of_moria_pl|Grausame Ork-Bogenschützen von Moria
+
 trp_i1_goblin_gundabad|Snaga von Gundabad
 trp_i1_goblin_gundabad_pl|Snagas von Gundabad
 trp_i2_orc_gundabad|Ork von Gundabad
@@ -750,8 +751,8 @@ trp_tribal_orc|Stammesork
 trp_tribal_orc_pl|Stammesorks
 trp_tribal_orc_warrior|Ork-Stammeskrieger
 trp_tribal_orc_warrior_pl|Ork-Stammeskrieger
-trp_i5_orc_chieftain_of_moria2|Orkhäuptling von Moria
-trp_i5_orc_chieftain_of_moria2_pl|Orkhäuptlinge von Moria
+trp_i5_orc_champion_gundabad|Kriegsheld aus Gundabad
+trp_i5_orc_champion_gundabad_pl|Kriegshelden aus Gundabad
 trp_black_numenorean_renegade|Schwarzer Numenorer
 trp_black_numenorean_renegade_pl|Schwarze Numenorer
 trp_black_numenorean_warrior|Krieger der Schwarzen Numenorer
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Orkhäuptling von Moria
 trp_i5_orc_chieftain_of_moria_pl|Orkhäuptlinge von Moria
 trp_rhovanion_noble|Edelmann aus Rhovanion
 trp_rhovanion_noble_pl|Edelmänner aus Rhovanion
+trp_npc18|Turmbathu
+trp_npc19|Heidrek
+trp_npc20|Zigûrphel
+trp_werewolf|Werwolf
+trp_werewolf_pl|Werwölfe
+trp_mountain_goblin2|Bergork
+trp_mountain_goblin2_pl|Bergorks
+trp_tribal_orc2|Stammesork
+trp_tribal_orc2_pl|Stammesorks
+trp_tribal_orc_warrior2|Ork-Stammeskrieger
+trp_tribal_orc_warrior2_pl|Ork-Stammeskrieger
+trp_tribal_orc_chief2|Ork-Stammeshäuptling
+trp_tribal_orc_chief2_pl|Ork-Stammeshäuptlinge

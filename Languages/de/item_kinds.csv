@@ -110,11 +110,11 @@ itm_dwarf_short_bow|Zwergischer Kurzbogen
 itm_harad_bow|Rundbogen aus Harad
 itm_lg_bow|Bogen der Adlerschützen
 itm_riv_bow|Bogen aus Bruchtal
-itm_glorfi_bow|Glorfindels Bogen
+; itm_rhun_bow|Rhun Bow
 itm_lorien_bow|Bogen der Galadhrim
 itm_isengard_large_bow|Großer Bogen aus Isengart
 itm_dale_bow|Bogen aus Thal
-itm_uruk_bow|Verstärkter Orkbogen
+; itm_uruk_bow|Orc Horn Bow
 itm_mirkwood_bow|Bogen aus dem Düsterwald
 itm_dunland_javelin|Wurfspeere aus Dunland
 itm_orc_throwing_arrow|Orkischer Wurfspieß
@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|Langer Wappenschild aus Gondor
 itm_amroth_sword_a|Schwert aus Dol Amroth
 itm_amroth_sword_b|Ritterschwert aus Dol Amroth
 itm_gondor_sword|Schwert aus Gondor
-itm_amroth_bastard|Schweres Schwert aus Dol Amroth
+; itm_amroth_bastard|Dol Amroth Swan Blade
 itm_gondor_short_sword|Eket aus Linhir
 itm_pelargir_eket|Eket aus Pelargir
 itm_pelargir_sword|Schwert aus Pelargir
@@ -702,23 +702,15 @@ itm_dale_sword_broad|Hiebschwert aus Thal
 itm_dale_pike|Speer aus Thal
 itm_dale_billhook|Hippe aus Thal
 itm_dale_shield_a|Turmschild aus Thal
-
 itm_dale_shield_b|Turmschild aus Thal
-
 itm_dale_shield_c|Rundschild aus Thal
 itm_dale_shield_d|Schild aus Thal
-itm_umb_armor_a|Korsaren-Lederrüstung
-
-itm_umb_armor_b|Plündererrüstung der Korsaren
-
-itm_umb_armor_c|Gepolsterte Korsarenrüstung
-
-itm_umb_armor_d|Gepolsterte Plündererrüstung der Korsaren
-
+; itm_umb_armor_a|Corsair Leather Vest
+itm_umb_armor_b|Korsaren-Lederrüstung
+; itm_umb_armor_c|Corsair Light Scale
+; itm_umb_armor_d|Corsair Scale
 itm_umb_armor_e|Korsarenrüstung
-
-itm_umb_armor_f|Schwere Plündererrüstung der Korsaren
-
+; itm_umb_armor_f|Corsair Noble Armour
 itm_umb_helm_a|Schalenhelm der Korsaren
 
 itm_umb_helm_b|Schalenhelm der Korsaren
@@ -900,7 +892,8 @@ itm_riv_armor_reward|Dekorierte Rüstung aus Bruchtal
 itm_westernesse1h_reward|Schwert von Westernis
 itm_westernesse2h_reward|Schwert der Großen Schlange
 itm_mirkwood_sword_reward|Reliquienschwert des Grünwalds
-itm_nazgul_sword|Schwert der Nazgul
+; itm_nazgul_sword|Wicked Sword
+
 itm_cooking_cauldron|Kessel
 itm_eorl_cavalry_sword|Eorls Schwert
 itm_garlic_reward|Knoblauch
@@ -921,7 +914,7 @@ itm_dwarf_shield_reward|Schild von Kheled-zaram
 itm_dwarf_great_axe_reward|Scharfe Zwergenaxt
 itm_isen_uruk_heavy_reward|Feldherrenrüstung der Urk-hai
 itm_lorien_bow_reward|Bogen der Noldor
-itm_lorien_sword_reward|Schwert der Galadhrim
+itm_elven_cloak|Elbenmantel
 itm_dale_sword_reward|Königliches Schwert von Thal
 
 itm_dale_armor_reward|Fürstliche Rüstung von Thal
@@ -930,7 +923,7 @@ itm_beorn_shield_reward|Bärenfratze
 itm_beorn_axe_reward|Bärenpranke
 itm_moria_arrow_reward|Giftpfeile aus Moria
 itm_khamul_helm|Helm von Khamul
-itm_gandstaff|Stab des Zauberers
+; itm_guldur_arrows_reward|Guldur Arrows
 itm_sarustaff|Stab des Zauberers
 itm_rohan_armor_th|Königliche Rüstung von Rohan
 itm_prisoner_coll_chain|Gefangenenketten

@@ -26,13 +26,13 @@ imod_sturdy|Robusto %s
 ; imod_thick|Robust %s
 imod_hardened|Endurecido %s
 imod_reinforced|Reforçado %s
-imod_superb|Soberbo %s
+; imod_cloak|%s with cloak
 imod_lordly|Obra-prima %s
 imod_lame|Aleijado %s
 imod_swaybacked|Curvado %s
 imod_stubborn|Teimoso %s
 imod_timid|Medroso %s
-imod_meek|Dócil %s
+; imod_meek|Blood-covered %s
 imod_spirited|Vigoroso %s
 imod_champion|Campeão %s
 imod_fresh|Fresco %s

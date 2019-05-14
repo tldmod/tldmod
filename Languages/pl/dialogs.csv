@@ -66,7 +66,7 @@ dlga_start:close_window.3|Mmmrhrrhmm?
 dlga_start:looters_2_join|Kłaniaj się przed potęgą {s4} i służ mi!
 dlga_looters_2_join:close_window|Będziemy posłuszni, Panie.
 dlga_start:close_window.4|^^AAAARGHH!^^{reg5?a:y}.
-dlga_start:close_window.5|^^AAAARGHH!^^{reg5?a:y}.
+dlga_start:close_window.5|^^AAAARGHH!^^
 dlga_start:member_castellan_talk|Tak, {playername}? Co mogę dla ciebie zrobić?
 dlga_member_castellan_pretalk:member_castellan_talk|Coś jeszcze?
 dlga_member_castellan_talk:member_review_castle_garrison|Chcę przejrzeć garnizon zamku.
@@ -92,7 +92,7 @@ dlga_member_talk:view_member_char_requested|Co możesz mi powiedzieć o twoich u
 dlga_view_member_char_requested:do_member_view_char|W porządku, powiem ci...
 dlga_member_talk:member_separate|Na jakiś czas musimy się rozstać.
 dlga_member_talk:ziggy_ask_more|Zigûrphel, potrzebny mi kolejny Wilk od Ciebie. Mógłbyś mi pomóc?
-dlga_ziggy_ask_more:close_window|Nie masz do zaoferowania żadnego życia, Dowódco.
+dlga_ziggy_ask_more:close_window|Nie masz do zaoferowania żadnego życia, dowódco.
 dlga_ziggy_ask_more:ziggy_not_rested|Daj mi trochę czasu, dowódco. Rytuał mnie wykończył.
 dlga_ziggy_ask_more:close_window.1|Jestem w stanie tylko tyle kontrolować. Muszę stać się potężniejszy...
 dlga_ziggy_ask_more:ziggy_choose_prisoners|Oczywiście, dowódco. Którego chciałbyś zaoferować?
@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|Postaram się lepiej następnym razem
 dlga_lord_start:lord_generic_mission_completed.4|Widzieliśmy płomienie pochodzących ze wsi niedaleko {s12}. Słyszeliśmy krzyki. To dopiero początek, {playername}. ^^ Wojna nadchodzi.
 dlga_lord_start:raid_village_failed|Widzieliśmy niektórych z twoich ludzi uciekających z wioski nieopodal {s12}. Jak śmiesz tu wracać i pokazywać swoją twarz, {playername} ?. ^^ To oznacza wojnę, ale z powodów, takich jak ten, możesz być jej pierwszą ofiarą.
 dlga_raid_village_failed:close_window|Postaram się lepiej następnym razem
+dlga_lord_start:lord_target_lord_failed|Słyszałem, że nie zrobił pan tego, o co pana poprosiłem. Rozczarowujące, {playername}.
+dlga_lord_target_lord_failed:close_window|Postaram się lepiej następnym razem
 dlga_lord_start:lord_generic_mission_completed.5|Moi ludzie byli świadkami twojej odwagi w walce, {playername}. Pokazaliście im, że jesteśmy potężni.
 dlga_lord_start:kill_quest_failed|Słyszałem, że nie zrobił pan tego, o co pana poprosiłem. Rozczarowujące, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Moi ludzie byli świadkami twojej odwagi w walce, {playername}. Zasłużyłeś sobie na mój szacunek.
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|Możesz mi powiedzieć czym się zajmujesz?
 dlga_mayor_talk:merchant_quest_requested|Może masz dla mnie jakąś pracę?
 dlga_mayor_talk:merchant_quest_last_offered_job|W sprawie tej pracy, którą oferowałeś...
 dlga_mayor_talk:merchant_quest_about_job|W sprawie tej pracy, którą mi zleciłeś...
+dlga_mayor_talk:mayor_talk_ask_location|Chciał{/a}bym wiedzieć, gdzie obecnie znajduje się pewna osoba.
 dlga_mayor_talk:close_window|[Odejdź]
 dlga_mayor_info_begin:mayor_info_talk|Jestem zarządcą {s9}. Mogę pomóc ci znaleźć uczciwą pracę, jeśli takowej szukasz.
 dlga_mayor_info_talk:mayor_info_lord|Kto rządzi tym miastem?
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|Mam nadzieję, że nie zawiedzies
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Cóż, daj z siebie wszystko, by jednak to zrobić.
 dlga_merchant_quest_taken:mayor_pretalk|Wspaniale. Liczę na ciebie zatem. Powodzenia.
 dlga_merchant_quest_stall:mayor_pretalk|Cóż, praca będzie dostępna jeszcze przez kilka dni, jak sądzę. Daj mi znać, jeśli się jednak zdecydujesz.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Zrobię co w mojej mocy. O ich nadejściu słyszę tylko wtedy gdy niedawno pojawią się w jakimś centrum. Gdy ich nie ma w centrum, to słyszę o regionie w jakim się znajdują od ludzi z karawany.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|Nieważne.
 dlga_merchant_quest_requested:merchant_quest_brief|Cóż, wyglądasz na kogoś, kto potrafi sobie poradzić w różnych sytuacjach. Myślę, że znalazłaby się dla ciebie jakaś praca.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Mieliśmy ostatnio trochę walk w pobliżu {s5}, a w całym tym chaosie liczne bandy orków znalazły okazję do grabieży. Potrzebuję kogoś, kto dałby tym łajdakom nauczkę. Czy to robota dobra dla ciebie?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Dobrze, zrobię to.

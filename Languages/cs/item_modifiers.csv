@@ -26,13 +26,13 @@ imod_sturdy|Pevny
 imod_thick|Robustní
 imod_hardened|Tvrzeny
 imod_reinforced|Vyztuzeny
-imod_superb|Vynikajici
+; imod_cloak|%s with cloak
 imod_lordly|Mistrovsky
 imod_lame|Chromy
 imod_swaybacked|Hrbaty
 imod_stubborn|Tvrdohlavy
 imod_timid|Mirny
-imod_meek|Trpelivy
+; imod_meek|Blood-covered %s
 imod_spirited|Kurazny
 imod_champion|Sampion
 imod_fresh|Cerstvy

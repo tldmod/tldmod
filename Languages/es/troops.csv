@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Vigías de Pelargir
 trp_pelargir_marine|Infante de Marina de Pelargir
 trp_pelargir_marine_pl|Infantes de Marina de Pelargir
 trp_pelargir_vet_marine|Infante de Marina Veterano de Pelargir
-trp_pelargir_vet_marine_pl|Infantes de Marina Veteranos de Pelargir
+trp_pelargir_vet_marine_pl|Infantes de Marina Veterana de Pelargir
 trp_pelargir_infantry|Infante de Pelargir
 trp_pelargir_infantry_pl|Infantería de Pelargir
 trp_pelargir_vet_infantry|Infante Veterano de Pelargir
@@ -676,8 +676,8 @@ trp_ent|Ent
 trp_ent_pl|Ents
 trp_orc_snaga_of_guldur|Orco Snaga de Dol Guldur
 trp_orc_snaga_of_guldur_pl|Orcos Snagae de Dol Guldur
-trp_orc_of_guldur|Rastreador Orco de Guldur
-trp_orc_of_guldur_pl|Rastreadores Orcos de Guldur
+trp_orc_of_guldur|Rastreador Orco de Dol Guldur
+trp_orc_of_guldur_pl|Rastreadores Orcos de Dol Guldur
 trp_orc_snaga_of_mordor|Orco Snaga de Mordor
 trp_orc_snaga_of_mordor_pl|Orcos Snagae de Mordor
 trp_orc_of_mordor|Orco de Mordor
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Jinete de Huargo de Gorgoroth
 trp_warg_rider_of_gorgoroth_pl|Jinetes de Huargo de Gorgoroth
 trp_great_warg_rider_of_mordor|Gran Jinete de Huargo de Udûn
 trp_great_warg_rider_of_mordor_pl|Grandes Jinetes de Huargos de Udûn
-trp_morgul_orc|Orco de Morgul
-trp_morgul_orc_pl|Orcos de Morgul
-trp_fell_morgul_orc|Orco Feroz de Morgul
-trp_fell_morgul_orc_pl|Orcos Feroces de Morgul
-trp_orc_tracker_of_mordor|Gran Rastreador Orco de Guldur
-trp_orc_tracker_of_mordor_pl|Grandes Rastreadores Orcos de Guldur
-trp_fell_orc_tracker_of_mordor|Rastreador Orco Feroz de Guldur
-trp_fell_orc_tracker_of_mordor_pl|Rastreadores Orcos Feroces de Guldur
+trp_morgul_orc|Orco de Minas Morgul
+trp_morgul_orc_pl|Orcos de Minas Morgul
+trp_fell_morgul_orc|Orco Feroz de Minas Morgul
+trp_fell_morgul_orc_pl|Orcos Feroces de Minas Morgul
+trp_orc_tracker_of_mordor|Grandes Rastreadores Orcos de Dol Guldur
+trp_orc_tracker_of_mordor_pl|Grandes Rastreadores Orcos de Dol Guldur
+trp_fell_orc_tracker_of_mordor|Rastreador Orco Feroz de Dol Guldur
+trp_fell_orc_tracker_of_mordor_pl|Rastreadores Orcos Feroces de Dol Guldur
 trp_orc_archer_of_mordor|Arquero Orco de Mordor
 trp_orc_archer_of_mordor_pl|Arqueros Orcos de Mordor
 trp_large_orc_archer_of_mordor|Gran Arquero Orco de Mordor
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Trasgo Arquero de Moria
 trp_a2_archer_snaga_of_moria_pl|Trasgos Arqueros de Moria
 trp_a3_large_goblin_archer_of_moria|Gran Trasgo Arquero de Moria
 trp_a3_large_goblin_archer_of_moria_pl|Grandes Trasgos Arqueros de Moria
-trp_i5_deep_dweller_of_moria2|Morador de las Profundidades de Moria
-trp_i5_deep_dweller_of_moria2_pl|Moradores de las Profundidades de Moria
+trp_a4_fell_goblin_archer_of_moria|Trasgo Arquero Feroz de Moria
+trp_a4_fell_goblin_archer_of_moria_pl|Trasgos Arqueros Feroces de Moria
+
 trp_i1_goblin_gundabad|Trasgo de Gundabad
 trp_i1_goblin_gundabad_pl|Trasgos de Gundabad
 trp_i2_orc_gundabad|Orco de Gundabad
@@ -750,8 +751,8 @@ trp_tribal_orc|Orco Tribal
 trp_tribal_orc_pl|Orcos Tribales
 trp_tribal_orc_warrior|Guerrero Orco Tribal
 trp_tribal_orc_warrior_pl|Guerrero Orco Tribal
-trp_i5_orc_chieftain_of_moria2|Cacique Orco de Moria
-trp_i5_orc_chieftain_of_moria2_pl|Caciques Orcos de Moria
+trp_i5_orc_champion_gundabad|Campeón Orco de Gundabad
+trp_i5_orc_champion_gundabad_pl|Campeones Orcos de Gundabad
 trp_black_numenorean_renegade|Númenóreano Negro Renegado
 trp_black_numenorean_renegade_pl|Númenóreanos Negros Renegados
 trp_black_numenorean_warrior|Númenóreano Negro Guerrero
@@ -945,7 +946,7 @@ trp_npc13|Lykyada
 trp_npc14|Fuldimir
 trp_npc15|Bolzog
 trp_npc16|Varfang
-trp_npc17|Dimborn
+trp_npc17|Tarugo
 trp_gondor_lord|Senescal Denethor
 trp_gondor_lord_pl|Senescal
 trp_rohan_lord|Rey Théoden
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Cacique Orco de Moria
 trp_i5_orc_chieftain_of_moria_pl|Caciques Orcos de Moria
 trp_rhovanion_noble|Noble de Rhovanion
 trp_rhovanion_noble_pl|Nobles de Rhovanion
+trp_npc18|Turmbathu
+trp_npc19|Heidrek
+trp_npc20|Zigûrphel
+trp_werewolf|Licántropo
+trp_werewolf_pl|Licántropos
+trp_mountain_goblin2|Trasgo de Montaña
+trp_mountain_goblin2_pl|Trasgos de Montaña
+trp_tribal_orc2|Orco Tribal
+trp_tribal_orc2_pl|Orcos Tribales
+trp_tribal_orc_warrior2|Guerrero Tribal Orco
+trp_tribal_orc_warrior2_pl|Guerreros Tribales Orcos
+trp_tribal_orc_chief2|Jefe Tribal Orco
+trp_tribal_orc_chief2_pl|Jefes Tribales Orcos

@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|佩拉格看守
 trp_pelargir_marine|佩拉格水兵
 trp_pelargir_marine_pl|佩拉格水兵
 trp_pelargir_vet_marine|佩拉格资深水兵
-trp_pelargir_vet_marine_pl|佩拉格资深水兵
+; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
 trp_pelargir_infantry|佩拉格步兵
 trp_pelargir_infantry_pl|佩拉格步兵
 trp_pelargir_vet_infantry|佩拉格资深步兵
@@ -674,10 +674,10 @@ trp_olog_hai|魔多异化食人妖
 trp_olog_hai_pl|魔多异化食人妖
 trp_ent|树人
 trp_ent_pl|树人
-trp_orc_snaga_of_guldur|多尔哥多半兽人奴兵
-trp_orc_snaga_of_guldur_pl|多尔哥多半兽人奴兵
-trp_orc_of_guldur|多尔哥多半兽人追踪者
-trp_orc_of_guldur_pl|多尔哥多半兽人追踪者
+; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
+; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+; trp_orc_of_guldur|Orc Tracker of Dol Guldur
+; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
 trp_orc_snaga_of_mordor|魔多半兽人奴兵
 trp_orc_snaga_of_mordor_pl|魔多半兽人奴兵
 trp_orc_of_mordor|魔多半兽人
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|葛哥洛斯平原座狼骑兵
 trp_warg_rider_of_gorgoroth_pl|葛哥洛斯平原座狼骑兵
 trp_great_warg_rider_of_mordor|乌顿巨型座狼骑兵
 trp_great_warg_rider_of_mordor_pl|乌顿巨型座狼骑兵
-trp_morgul_orc|魔窟半兽人
-trp_morgul_orc_pl|魔窟半兽人
-trp_fell_morgul_orc|魔窟暴虐半兽人
-trp_fell_morgul_orc_pl|魔窟暴虐半兽人
-trp_orc_tracker_of_mordor|多尔哥多大型半兽人追踪者
-trp_orc_tracker_of_mordor_pl|多尔哥多大型半兽人追踪者
-trp_fell_orc_tracker_of_mordor|多尔哥多暴虐半兽人追踪者
-trp_fell_orc_tracker_of_mordor_pl|多尔哥多暴虐半兽人追踪者
+; trp_morgul_orc|Orc of Minas Morgul
+; trp_morgul_orc_pl|Orcs of Minas Morgul
+; trp_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
+; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
 trp_orc_archer_of_mordor|魔多半兽人射手
 trp_orc_archer_of_mordor_pl|魔多半兽人射手
 trp_large_orc_archer_of_mordor|魔多大型半兽人射手
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|摩瑞亚半兽人射手
 trp_a2_archer_snaga_of_moria_pl|摩瑞亚半兽人射手
 trp_a3_large_goblin_archer_of_moria|摩瑞亚大型半兽人射手
 trp_a3_large_goblin_archer_of_moria_pl|摩瑞亚大型半兽人射手
-trp_i5_deep_dweller_of_moria2|摩瑞亚深渊居民
-trp_i5_deep_dweller_of_moria2_pl|摩瑞亚深渊居民
+trp_a4_fell_goblin_archer_of_moria|摩瑞亚暴虐半兽人射手
+trp_a4_fell_goblin_archer_of_moria_pl|摩瑞亚暴虐半兽人射手
+
 trp_i1_goblin_gundabad|刚达巴半兽人
 trp_i1_goblin_gundabad_pl|刚达巴半兽人
 trp_i2_orc_gundabad|刚达巴半兽人
@@ -750,8 +751,8 @@ trp_tribal_orc|部落半兽人
 trp_tribal_orc_pl|部落半兽人
 trp_tribal_orc_warrior|部落半兽人战士
 trp_tribal_orc_warrior_pl|部落半兽人战士
-trp_i5_orc_chieftain_of_moria2|摩瑞亚兽人酋长
-trp_i5_orc_chieftain_of_moria2_pl|摩瑞亚兽人酋长
+; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
+; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
 trp_black_numenorean_renegade|黑暗努曼诺尔堕落者
 trp_black_numenorean_renegade_pl|黑暗努曼诺尔堕落者
 trp_black_numenorean_warrior|黑暗努曼诺尔战士
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|摩瑞亚兽人酋长
 trp_i5_orc_chieftain_of_moria_pl|摩瑞亚兽人酋长
 trp_rhovanion_noble|罗马尼安贵族
 trp_rhovanion_noble_pl|罗马尼安贵族
+; trp_npc18|Turmbathu
+; trp_npc19|Heidrek
+; trp_npc20|Zigûrphel
+trp_werewolf|狼人
+; trp_werewolf_pl|Werewolves
+trp_mountain_goblin2|山地半兽人
+trp_mountain_goblin2_pl|山地半兽人
+trp_tribal_orc2|部落半兽人
+trp_tribal_orc2_pl|部落半兽人
+trp_tribal_orc_warrior2|部落半兽人战士
+trp_tribal_orc_warrior2_pl|部落半兽人战士
+trp_tribal_orc_chief2|部落半兽人酋长
+trp_tribal_orc_chief2_pl|部落半兽人酋长

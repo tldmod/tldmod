@@ -88,6 +88,9 @@ mno_start_bn|Čierny NÚMENOREJCI, vzbúrenci zo Západu
 mno_start_um|UMBAR, piráti Južnách Morí
 mno_start_rh|RHUN, barbary z Východu
 mno_start_kh|KHAND, divoký ľud z Juhovýchodu
+menu_start_eye_uruk|^^^^^^^^^^Kde sa potĺkaš?
+mno_start_arm_uruk|v armádach shromáždených v MORDORE
+mno_start_cav_uruk|v jaskyniach DOL GULDURU
 menu_start_eye_orc|^^^^^^^^^^Kde sa potĺkaš?
 mno_start_arm|v armádach shromáždených v MORDORE
 mno_start_cav|v jaskyniach DOL GULDURU
@@ -101,6 +104,9 @@ mno_start_2_hib|Šľachtic
 menu_start_haradrim|^^^^^^^Si Haraďan,^ človek z púští Juhu.^Zvol si svoj pôvod
 mno_start_1_des|Púštny človek
 mno_start_2_far|Divoch z Ďalekého Haradu
+menu_start_numenorean|^^^^^^^Si Čierny Númenorejec,^verný Temnote a Morgothovy.^Zvoľ si miesto odkiaľ slúžiš Oku
+mno_start_1_bn|Pod vedením Sauronových úst, v MORRANONE
+mno_start_2_bn|V pevnosti Nekromanta, DOL GULDÚRE
 menu_choose_gender|^^^^^^^^^^Tvoje pohlavie?
 mno_start_male|Muž
 mno_start_female|Žena
@@ -189,10 +195,13 @@ mno_leave|Odísť.
 menu_simple_encounter|^^^^^{s2}^ Máš k dispozícií {reg22} jednotiek v boji proti {reg11}.^^Bitka sa odohráva v {s3}{s4}.^^Tvoje rozkazy ?
 mno_encounter_attack|{reg21?Zaútočiť na nich:Pripraviť sa čeliť im}.
 mno_encounter_order_attack|Prikázať svojím vojakom aby {reg21?zaútočili:čelili im} bez teba.
+mno_control_allies_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
 mno_encounter_hide|Skry sa pred nepriateľom
 mno_special_whip|Vrhnúť sa vpred naproti nim lámajúc {s4}.
 mno_encounter_leave|Odísť.
 mno_encounter_retreat|Nechať za sebou niekoľko vojakov, aby kryli tvoj ústup.
+mno_player_control_allies_simple|Prevziať nad nimi velenie a zaútočiť na nepriateľa
+mno_player_control_allies_back|Návrat...
 mno_hide_close|Pokračuj
 menu_encounter_retreat_confirm|^^^^^Ako najskúsenejší taktik v družine, ({reg2}), {reg3?navrhuješ:{s3} navrhuje} plán, podľa ktorého sa tebe a tvojím mužom podarí zachrániť si život, ale budeš musieť obetovať {reg4} vojakov aby zastavili nepriateľovo prenasledovanie.
 mno_leave_behind|Obetovanie týchto mužov zachráni zbytok.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Nezapojiť sa.
 menu_join_battle|^^^Pomáhaš {s2} proti {s1}.^ Máš k dispozícií {reg22} vojakov proti {reg11} nepriateľom.^^Bitka sa odohráva v {s3}{s4}.
 mno_join_attack|Zaútočiť na nepriateľov.
 mno_join_order_attack|Prikázať svojím jednotkám zaútočiť spolu so spojencami, zatiaľ čo sa ty budeš držať vzadu.
+mno_control_allies_join_menu|Použi svoje Body vplyvu aby si velil jednotkám svojich spojencov v poli.
 mno_join_leave|Odísť.
+mno_player_control_allies_join_menu|Prevziať nad nimi velenie a zaútočiť na nepriateľa
 menu_join_order_attack|{s4}^^Tvoje straty: {s8}^^ Straty spojencov: {s9}^^Straty nepriateľov: {s10}
 mno_enter|Vstúpiť.
 menu_battlefields|^^^^^^^^^Vybrať si bojové pole...
@@ -357,7 +368,9 @@ mno_horse_archer_field_ai|Lukostrelci na koňoch majú zlepšené bojiskové AI:
 mno_vs_orcs_field_ai|Lukostrelci mieria lepšie proti ohyzdom (nemieria im nad hlavy): {s7}
 mno_battlefield_animals|Živočíšni spoločníci, ktorí nie sú zločinci / zvieratá z koní, sa rozmnožia v bitke: {s7}
 mno_slow_when_wounded|Agenti sa stanú Pomalými ak sú Zranení: {s7}
-mno_battle_encounter_effects|Špeciálne Efekty danej Frakcie v Boji (napr. búrky, hmla):\n{s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+mno_battle_encounter_effects|Výnimočný účinok frakcie na bojové pole (napr. búrky, hmla): {s7}
+menu_hungry_orc|nič
+menu_leaving_elf|nič
 mno_defend_refugees|Pozor na nájazdníkov...
 mno_attack_refugees|Zaútoč na utečencov...
 mno_leave_refugees|Nechaj ich, pre teraz...
@@ -413,6 +426,7 @@ mno_leave_pyre|Opustiť pohrebnú vatru.
 menu_town_ruins|Keď dorazíš, vidíš že {s1} je {s2}
 mno_ruin_menu_0|Preskúmať miesto.
 mno_ruin_leave|Odísť...
+menu_premutiny|nič
 menu_death|Bol si zabitý. Vojna pokračuje, ale ty už naďalej nie si jej súčasťou.
 menu_animal_ambush|Ty a tvoji spoločníci ste sa oddelili od zvyšku družiny, keď odrazu...
 menu_animal_ambush_success|{s2} pred tebou {reg0?padol:padajú} ako pšenica pred kosou! Onedlho ležia všetci tvojí protivníci na podlahe, zranený či mrtvý. {s3}

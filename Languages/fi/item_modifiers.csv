@@ -26,13 +26,13 @@ imod_sturdy|Tukeva %s
 imod_thick|Vankka %s
 imod_hardened|Kovetettu %s
 imod_reinforced|Vahvistettu %s
-imod_superb|Erinomainen %s
+; imod_cloak|%s with cloak
 imod_lordly|Mestarillinen %s
 imod_lame|Heikko %s
 imod_swaybacked|Notkoselkäinen %s
 imod_stubborn|Itsepintainen %s
 imod_timid|Arka %s
-imod_meek|Nöyrä %s
+; imod_meek|Blood-covered %s
 imod_spirited|Kiihkeä %s
 imod_champion|Mestari %s
 imod_fresh|Tuore %s

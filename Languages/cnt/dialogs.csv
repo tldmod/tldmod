@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|我 下 次 會 做 得 更 好 的。
 dlga_lord_start:lord_generic_mission_completed.4|我 們 看 到 {s12} 附 近 的 村 莊 閃 著 火 光，也 聽 到 了 尖 叫 聲。然 而 這 只 是 開 始，{playername}。 ^^戰 爭 就 要 來 了。
 dlga_lord_start:raid_village_failed|{playername}，我 們 看 到 一 些 你 的 人 逃 離 了 {s12} 附 近 的 村 莊。你 還 有 臉 回 來？ ^^戰 爭 已 成 必 然，但 像 這 樣 的 慘 敗，你 恐 怕 是 這 場 戰 爭 的 第 一 批 傷 者。
 dlga_raid_village_failed:close_window|我 下 次 會 做 得 更 好 的。
+dlga_lord_start:lord_target_lord_failed|我 聽 說 你 沒 做 到 我 要 求 的 事。 令 人 失 望，{playername}。
+dlga_lord_target_lord_failed:close_window|我 下 次 會 做 得 更 好 的。
 dlga_lord_start:lord_generic_mission_completed.5|{playername}，你 的 手 下 目 睹 了 你 戰 鬥 的 英 姿。 你 向 他 們 示 範 了 我 軍 的 強 大。
 dlga_lord_start:kill_quest_failed|我 聽 說 你 沒 做 到 我 要 求 的 事。 令 人 失 望，{playername}。
 dlga_lord_start:lord_generic_mission_completed.6|{playername}，你 的 手 下 目 睹 了 你 戰 鬥 的 英 姿。我 向 你 致 敬。
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|你 能 告 訴 我 你 是 做 什 麼 嗎？
 dlga_mayor_talk:merchant_quest_requested|我 能 如 何 援 助 我 們 的目 標 呢？
 dlga_mayor_talk:merchant_quest_last_offered_job|關 於 那 個 你 要 我 做 的 事…
 dlga_mayor_talk:merchant_quest_about_job|關 於 你 給 的 那 個 任 務…
+dlga_mayor_talk:mayor_talk_ask_location|我 想 知 道 某 人 現 在 的 位 置。
 dlga_mayor_talk:close_window|[離 開]
 dlga_mayor_info_begin:mayor_info_talk|我 是 {s9} 的 受 權 代 理 人。這 裡 所 有 事 情 都 由 我 管 理。這 裡 的 人 手 永 遠 都 不 足 夠，如 果 你 想 幫 忙 就 跟 我 說 吧。
 dlga_mayor_info_talk:mayor_info_lord|誰 在 統 治 這 城 鎮？
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|我 希 望 你 不 會 失 敗�
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|好 吧，你 就 盡 力 去 做 吧。
 dlga_merchant_quest_taken:mayor_pretalk|非 常 好。接 下 來 就 拜 託 你 了。祝 你 好 運。
 dlga_merchant_quest_stall:mayor_pretalk|好 吧，我 會 找 其 他 人。但 如 果 你 改 變 主 意 記 得 要 跟 我 說。
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|我會盡力的。我只聽到他們來來去去，如果他們最近在另一個中心。如果他們不在中心，我聽說他們是從大篷車周圍的地區。
+dlga_mayor_talk_ask_location_2:mayor_pretalk|算 了。
 dlga_merchant_quest_requested:merchant_quest_brief|你 看 起 來 很 能 幹。我 想 我 有 一 些 事 要 給 你 做。
 dlga_merchant_quest_brief:merchant_quest_looters_choice|我 們 最 近 在 {s5} 受 到 了 一 點 衝 突。這 場 混 亂 吸 引 了 附 近 幾 群 部 落 半 獸 人 過 來 掠 奪。我 需 要 人 去 給 這 些 半 獸 人 教 訓。你 是 很 擅 長 這 工 作 是 吧？
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|好，我 做。

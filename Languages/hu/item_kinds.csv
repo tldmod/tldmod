@@ -110,11 +110,11 @@ itm_dwarf_short_bow|Törp rövid íj
 itm_harad_bow|Haradi visszacsapó íj
 itm_lg_bow|Sas Őrség íja
 itm_riv_bow|Völgyzugolyi íj
-itm_glorfi_bow|Glorfindel íja
+; itm_rhun_bow|Rhun Bow
 itm_lorien_bow|Galadhrim íj
 itm_isengard_large_bow|Vasudvardi hatalmas íj
 itm_dale_bow|Suhatagi íj
-itm_uruk_bow|Ork erős íj
+; itm_uruk_bow|Orc Horn Bow
 itm_mirkwood_bow|Bakacsinerdei íj
 itm_dunland_javelin|Dúnföldi gerely
 itm_orc_throwing_arrow|Ork dobónyíl
@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|Gondori címeres toronypajzs
 itm_amroth_sword_a|Dol Amrothi kard
 itm_amroth_sword_b|Dol Amrothi lovagkard
 itm_gondor_sword|Gondori gyalogsági kard
-itm_amroth_bastard|Dol Amrothi nehéz kard
+; itm_amroth_bastard|Dol Amroth Swan Blade
 itm_gondor_short_sword|Linhiri eket
 itm_pelargir_eket|Pelargiri eket
 itm_pelargir_sword|Pelargiri kard
@@ -702,23 +702,15 @@ itm_dale_sword_broad|Suhatagi gyalogsági kard
 itm_dale_pike|Suhatagi lándzsa 
 itm_dale_billhook|Suhatagi kampóbárd
 itm_dale_shield_a|Suhatagi toronypajzs
-
 itm_dale_shield_b|Suhatagi toronypajzs
-
 itm_dale_shield_c|Suhatagi toronypajzs
 itm_dale_shield_d|Suhatagi pajzs
-itm_umb_armor_a|Kalóz bőrpáncélzat
-
-itm_umb_armor_b|Kalóz rablópáncélzat
-
-itm_umb_armor_c|Kalóz párnázott páncélzat
-
-itm_umb_armor_d|Kalóz párnázott rablópáncélzat
-
+; itm_umb_armor_a|Corsair Leather Vest
+itm_umb_armor_b|Kalóz bőrpáncélzat
+; itm_umb_armor_c|Corsair Light Scale
+; itm_umb_armor_d|Corsair Scale
 itm_umb_armor_e|Kalóz láncvért
-
-itm_umb_armor_f|Kalóz nehéz rablópáncélzat
-
+; itm_umb_armor_f|Corsair Noble Armour
 itm_umb_helm_a|Kalóz ráksisak
 
 itm_umb_helm_b|Kalóz ráksisak
@@ -900,7 +892,8 @@ itm_riv_armor_reward|Völgyzugolyi díszes páncélzat
 itm_westernesse1h_reward|Nyugathon kardja
 itm_westernesse2h_reward|A Nagy Kígyó kardja
 itm_mirkwood_sword_reward|Zöldlombi relikvia kard
-itm_nazgul_sword|Nazgûl kard
+; itm_nazgul_sword|Wicked Sword
+
 itm_cooking_cauldron|Főzőüst 
 itm_eorl_cavalry_sword|Eorl kardja
 itm_garlic_reward|Fokhagyma
@@ -921,7 +914,7 @@ itm_dwarf_shield_reward|Kheled-zârami pajzs
 itm_dwarf_great_axe_reward|Törp éles balta
 itm_isen_uruk_heavy_reward|Uruk-hai tábornoki páncélzat
 itm_lorien_bow_reward|Ñoldori íj
-itm_lorien_sword_reward|Galadhrim kard
+; itm_elven_cloak|Elven Cloak
 itm_dale_sword_reward|Suhatagi nemesi kard
 
 itm_dale_armor_reward|Suhatagi nemesi láncing
@@ -930,7 +923,7 @@ itm_beorn_shield_reward|Beornfi pajzs
 itm_beorn_axe_reward|Medvebunkó
 itm_moria_arrow_reward|Móriai mérgezett nyílvesszők
 itm_khamul_helm|Khamûl sisakja
-itm_gandstaff|Mágus botja
+; itm_guldur_arrows_reward|Guldur Arrows
 itm_sarustaff|Mágus botja
 itm_rohan_armor_th|Rohani nemesi páncélzat
 itm_prisoner_coll_chain|Rabszolga láncai

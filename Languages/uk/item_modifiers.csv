@@ -26,13 +26,13 @@ imod_sturdy|Стійкий %s
 ; imod_thick|Robust %s
 imod_hardened|Затверділий %s
 imod_reinforced|Посилений %s
-imod_superb|Чудовий %s
+; imod_cloak|%s with cloak
 imod_lordly|Чудовий %s
 imod_lame|Кривий %s
 imod_swaybacked|Чахлий %s
 imod_stubborn|Норовистий %s
 imod_timid|Боязкий %s
-imod_meek|Покірний %s\n
+; imod_meek|Blood-covered %s
 imod_spirited|Жвавий %s
 imod_champion|Першокласний %s\n
 imod_fresh|Свіжий %s

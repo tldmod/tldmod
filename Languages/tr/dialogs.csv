@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|Bir daha ki sefer daha iyi yapacağım
 dlga_lord_start:lord_generic_mission_completed.4|{s12} yakınlarındaki köyden alevlerin yükseldiğini gördük. Bağırışları duyduk. Bu sadece başlangıç, {playername}. ^^Savaş yaklaşıyor.
 dlga_lord_start:raid_village_failed|{s12} yakınındaki köyün yanından adamlarının kaçtığını gördük. Bir de buraya gelip yüzünü göstermeye mi kalkışıyorsun {playername}?. ^^Bir savaş olacak, ama böyle hatalarla, ilk zaiyatı sen olabilirsin.
 dlga_raid_village_failed:close_window|Bir daha ki sefer daha iyi yapacağım.
+dlga_lord_start:lord_target_lord_failed|Senden yapmanı istediğim şeyi başaramadığını duydum. Hayal kırıklığına uğradım, {playername}.
+dlga_lord_target_lord_failed:close_window|Bir daha ki sefer daha iyi yapacağım.
 dlga_lord_start:lord_generic_mission_completed.5|Ordunuz savaştaki cesaretinize şahit oldu {playername}.  Onlara sizin daha güçlü olduğunuzu kanıtladınız.
 dlga_lord_start:kill_quest_failed|Senden yapmanı istediğim şeyi başaramadığını duydum. Hayal kırıklığına uğradım, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Ordunuz savaştaki cesaretinize şahit oldu, {playername}. Saygımı kazandınız.
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|Ne yaptığın hakkında bana bilgi verebilir m
 dlga_mayor_talk:merchant_quest_requested|Davamıza nasıl hizmet edebilirim?
 dlga_mayor_talk:merchant_quest_last_offered_job|Yapmamı istediğiniz görev hakkında...
 dlga_mayor_talk:merchant_quest_about_job|Bana verdiğiniz görev hakkında...
+dlga_mayor_talk:mayor_talk_ask_location|Birinin yerini öğrenmek istiyorum.
 dlga_mayor_talk:close_window|[Ayrıl]
 dlga_mayor_info_begin:mayor_info_talk|{s9}'da patron benim. Günlük işlerden sorumlu olduğum söylenebilir.  Yapacak bir iş her zaman vardır, yani yardım etmek istersen haberim olsun.
 dlga_mayor_info_talk:mayor_info_lord|Bu kasabayı kim yönetiyor?
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|Umarım başarısız olmazsın. K
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Peki, sadece elinden gelenin en iyisini yap ve bu işi bitir.
 dlga_merchant_quest_taken:mayor_pretalk|Mükemmel.Ozaman sana güveniyorum.İyi şanslar
 dlga_merchant_quest_stall:mayor_pretalk|Tamam, başka birini bulacağım. Ama fikrini değiştirirsen haber ver.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Elimden geleni yapacağım. Eğer yakın bir merkezdelerse sadece geliş ve gidişlerinin haberlerini duyuyorum. Ancak bir merkezde değillerse, etraftaki karavanlar aracılığıyla bulundukları bölgeden haber alabiliyorum.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|Boşver.
 dlga_merchant_quest_requested:merchant_quest_brief|Peki,Sen yapabilecek gibi görünüyorsun.Sanırım senin yapabileceğin bir kaç işim var.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Yakın zamanda {s5} civarında bir savaş yaşandı, tüm o kaosla beraber, bir kaç grup ork kabilesi, fırsattan istifade çevredekilere akın etmek için geldiler. O orklara bir ders verecek birine ihtiyacım var. Tam senlik bir iş gibi?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Tamam, yapacağım.

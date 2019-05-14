@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Pelargir Gözcüleri
 trp_pelargir_marine|Pelargir Denizcisi
 trp_pelargir_marine_pl|Pelargir Denizcileri
 trp_pelargir_vet_marine|Pelargir Kıdemli Denizcisi
-trp_pelargir_vet_marine_pl|Pelargir Kıdemli Denizcileri
+; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
 trp_pelargir_infantry|Pelargir Piyadesi
 trp_pelargir_infantry_pl|Pelargir Piyadeleri
 trp_pelargir_vet_infantry|Pelargir Kıdemli Piyadesi
@@ -674,10 +674,10 @@ trp_olog_hai|Mordor Olog Hai
 trp_olog_hai_pl|Mordor Olog Hai 
 trp_ent|Ağaç Adam
 trp_ent_pl|Ağaç Adamlar
-trp_orc_snaga_of_guldur|Guldur'lu Ork Snaga
-trp_orc_snaga_of_guldur_pl|Guldur'lu Ork Snagalar
-trp_orc_of_guldur|Guldur Ork İzcisi
-trp_orc_of_guldur_pl|Guldur Ork İzcileri
+trp_orc_snaga_of_guldur|Dol Guldur Ork Snaga
+trp_orc_snaga_of_guldur_pl|Dol Guldur'lu Ork Snagalar
+trp_orc_of_guldur|Dol Guldur Ork İzcisi
+trp_orc_of_guldur_pl|Dol Guldur Ork İzcileri
 trp_orc_snaga_of_mordor|Mordor'lu Ork Snaga
 trp_orc_snaga_of_mordor_pl|Mordor'lu Ork Snagalar
 trp_orc_of_mordor|Mordor Orku
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Gorgoroth Warg Binicisi
 trp_warg_rider_of_gorgoroth_pl|Gorgoroth Warg Binicileri
 trp_great_warg_rider_of_mordor|Udun'un Yüce Warg Binicisi
 trp_great_warg_rider_of_mordor_pl|Udun'un Yüce Warg Binicileri
-trp_morgul_orc|Morgul Orku
-trp_morgul_orc_pl|Morgul Orkları
-trp_fell_morgul_orc|Zalim Morgul Orku
-trp_fell_morgul_orc_pl|Zalim Morgul Orkları
-trp_orc_tracker_of_mordor|Guldur İri Ork İzcisi
-trp_orc_tracker_of_mordor_pl|Guldur İri Ork İzcileri
-trp_fell_orc_tracker_of_mordor|Guldur Zalim Ork İzcisi
-trp_fell_orc_tracker_of_mordor_pl|Guldur Ork İzcileri
+trp_morgul_orc|Minas Morgul Orku
+trp_morgul_orc_pl|Minas Morgul Orkları
+trp_fell_morgul_orc|Zalim Minas Morgul Orku
+trp_fell_morgul_orc_pl|Zalim Minas Morgul Orkları
+; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
+trp_orc_tracker_of_mordor_pl|Dol Guldur İri Ork izcileri
+trp_fell_orc_tracker_of_mordor|Dol Guldur Zalim Ork İzcisi
+trp_fell_orc_tracker_of_mordor_pl|Dol Guldur Zalim Ork İzcileri
 trp_orc_archer_of_mordor|Mordor'lu Ork Okçusu
 trp_orc_archer_of_mordor_pl|Mordor'lu Ork Okçuları
 trp_large_orc_archer_of_mordor|Mordor'lu Büyük Ork Okçusu
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Moria Goblin Okçusu
 trp_a2_archer_snaga_of_moria_pl|Moria Goblin Okçuları
 trp_a3_large_goblin_archer_of_moria|Büyük Moria Goblin Okçusu
 trp_a3_large_goblin_archer_of_moria_pl|Büyük Moria Goblin Okçuları
-trp_i5_deep_dweller_of_moria2|Moria'nın Derin kazıcısı
-trp_i5_deep_dweller_of_moria2_pl|Moria'nın Derin kazıcıları
+trp_a4_fell_goblin_archer_of_moria|Zalim Moria Goblin Okçusu
+trp_a4_fell_goblin_archer_of_moria_pl|Zalim Moria Goblin Okçuları
+
 trp_i1_goblin_gundabad|Gundabad Goblini
 trp_i1_goblin_gundabad_pl|Gundabad Goblinleri
 trp_i2_orc_gundabad|Gundabad Orku
@@ -750,8 +751,8 @@ trp_tribal_orc|Kabile Orku
 trp_tribal_orc_pl|Kabile Orkları
 trp_tribal_orc_warrior|Kabile Ork Savaşçısı
 trp_tribal_orc_warrior_pl|Kabile Ork Savaşçıları
-trp_i5_orc_chieftain_of_moria2|Moria Ork Şefi
-trp_i5_orc_chieftain_of_moria2_pl|Moria Ork Şefleri
+trp_i5_orc_champion_gundabad|Gundabad Ork Şampiyonu
+trp_i5_orc_champion_gundabad_pl|Gundabad Ork Şampiyonları
 trp_black_numenorean_renegade|Kara Numenor Haini
 trp_black_numenorean_renegade_pl|Kara Numenor Hainleri
 trp_black_numenorean_warrior|Kara Numenor Savaşçısı
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Moria Ork Şefi
 trp_i5_orc_chieftain_of_moria_pl|Moria Ork Şefleri
 trp_rhovanion_noble|Rhovanion soylusu
 trp_rhovanion_noble_pl|Rhovanion Soyluları
+trp_npc18|Turmbathu
+trp_npc19|Heidrek
+trp_npc20|Zigûrphel
+trp_werewolf|Kurtadam
+trp_werewolf_pl|kurt adamlar
+trp_mountain_goblin2|Dağ Goblini
+trp_mountain_goblin2_pl|Dağ Goblinleri
+trp_tribal_orc2|Kabile Orku
+trp_tribal_orc2_pl|Kabile Orkları
+trp_tribal_orc_warrior2|Kabile Ork Savaşçısı
+trp_tribal_orc_warrior2_pl|Kabile Ork Savaşçıları
+trp_tribal_orc_chief2|Kabile Ork Şefi
+trp_tribal_orc_chief2_pl|Kabile Ork Şefleri

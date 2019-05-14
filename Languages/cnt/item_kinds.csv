@@ -110,11 +110,11 @@ itm_dwarf_short_bow|矮 人 短 弓
 itm_harad_bow|哈 拉 德 曲 弓
 itm_lg_bow|鷹 衛 隊 弓
 itm_riv_bow|瑞 文 戴 爾 弓
-itm_glorfi_bow|格 洛 芬 德 之 弓
+itm_rhun_bow|盧 恩 弓
 itm_lorien_bow|加 拉 茲 民 弓
 itm_isengard_large_bow|艾 辛 格 大 弓
 itm_dale_bow|河 谷 鎮 弓
-itm_uruk_bow|半 獸 人 強 弓
+itm_uruk_bow|半 獸 人 角 弓
 itm_mirkwood_bow|幽 暗 密 林 弓
 itm_dunland_javelin|登 蘭 德 鏢 槍
 itm_orc_throwing_arrow|半 獸 人 飛 鏢
@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|剛 鐸 紋 章 塔 盾
 itm_amroth_sword_a|多 爾 安 羅 斯 劍
 itm_amroth_sword_b|多 爾 安 羅 斯 騎 士 劍
 itm_gondor_sword|剛 鐸 步 兵 劍
-itm_amroth_bastard|多 爾 安 羅 斯 重 劍
+itm_amroth_bastard|多 爾 安 姆 羅 斯 天 鵝 刀
 itm_gondor_short_sword|林 何 短 劍
 itm_pelargir_eket|佩 拉 吉 爾 短 劍
 itm_pelargir_sword|佩 拉 吉 爾 劍
@@ -702,23 +702,15 @@ itm_dale_sword_broad|河 谷 鎮 步 兵 盔
 itm_dale_pike|河 谷 鎮 長 槍
 itm_dale_billhook|河 谷 鎮 鍥 刀
 itm_dale_shield_a|河 谷 鎮 塔 盾
-
 itm_dale_shield_b|河 谷 鎮 塔 盾
-
 itm_dale_shield_c|河 谷 鎮 圓 盾
 itm_dale_shield_d|河 谷 鎮 盾
-itm_umb_armor_a|海 盜 皮 甲
-
-itm_umb_armor_b|海 盜 掠 奪 者 鎧 甲
-
-itm_umb_armor_c|海 盜 加 厚 布 甲
-
-itm_umb_armor_d|海 盜 掠 奪 者 加 厚 布 甲
-
+itm_umb_armor_a|海 盜 皮 革 背 心
+itm_umb_armor_b|海 盜 皮 甲
+itm_umb_armor_c|海 盜 輕 型 鱗 甲
+itm_umb_armor_d|海 盜 鱗 甲
 itm_umb_armor_e|海 盜 胸 甲
-
-itm_umb_armor_f|海 盜 重 型 掠 奪 者 鎧 甲
-
+itm_umb_armor_f|海 盜 貴 族 盔 甲
 itm_umb_helm_a|海 盜 硬 殼 盔
 
 itm_umb_helm_b|海 盜 硬 殼 盔
@@ -900,7 +892,8 @@ itm_riv_armor_reward|瑞 文 戴 爾 裝 飾 鎧 甲
 itm_westernesse1h_reward|西 方 之 劍
 itm_westernesse2h_reward|大 蛇 之 劍
 itm_mirkwood_sword_reward|綠 巨 森 遺 跡 劍
-itm_nazgul_sword|戒 靈 劍
+itm_nazgul_sword|邪 惡 的 劍
+
 itm_cooking_cauldron|煮 鍋
 itm_eorl_cavalry_sword|伊 歐 之 劍
 itm_garlic_reward|大 蒜
@@ -921,7 +914,7 @@ itm_dwarf_shield_reward|鏡 影 湖 之 盾
 itm_dwarf_great_axe_reward|矮 人 銳 斧
 itm_isen_uruk_heavy_reward|強 獸 人 將 軍 盔
 itm_lorien_bow_reward|諾 多 弓
-itm_lorien_sword_reward|加 拉 茲 民 劍
+itm_elven_cloak|精 靈 斗 篷
 itm_dale_sword_reward|河 谷 鎮 皇 家  劍
 
 itm_dale_armor_reward|河 谷 鎮 貴 族 鎖 子 甲
@@ -930,7 +923,7 @@ itm_beorn_shield_reward|比 翁 盾
 itm_beorn_axe_reward|熊 棍
 itm_moria_arrow_reward|摩 瑞 亞 毒 箭
 itm_khamul_helm|克 哈 穆 爾 之 盔
-itm_gandstaff|巫 師 法 杖
+itm_guldur_arrows_reward|多 爾 哥 多 箭
 itm_sarustaff|巫 師 法 杖
 itm_rohan_armor_th|洛 汗 皇 家 鎧 甲
 itm_prisoner_coll_chain|囚 鏈

@@ -26,13 +26,13 @@ imod_sturdy|Snazan %i
 ; imod_thick|Robust %s
 imod_hardened|Ucvrscen %i
 imod_reinforced|Ojacan %i
-imod_superb|Super %i
+; imod_cloak|%s with cloak
 imod_lordly|Majstorija 
 imod_lame|Lenj %i
 imod_swaybacked|Los %i
 imod_stubborn|Tvrdoglav %i
 imod_timid|Pitom %i
-imod_meek|Krot %ki
+; imod_meek|Blood-covered %s
 imod_spirited|Vatren %i
 imod_champion|Sampion &ski
 imod_fresh|Svez %i

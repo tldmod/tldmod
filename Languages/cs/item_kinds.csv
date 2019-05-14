@@ -110,11 +110,11 @@ itm_dwarf_short_bow|Trpasličí krátký luk
 itm_harad_bow|Haradský zakřivený luk
 itm_lg_bow|Luk Orlí stráže
 itm_riv_bow|Rivendelský luk
-itm_glorfi_bow|Glorfindeilský luk
+; itm_rhun_bow|Rhun Bow
 itm_lorien_bow|Galadhrimský luk
 itm_isengard_large_bow|Isengardský mohutný luk
 itm_dale_bow|Dolský luk
-itm_uruk_bow|Silný Skřetí Luk
+; itm_uruk_bow|Orc Horn Bow
 itm_mirkwood_bow|Mirkwůdský luk
 itm_dunland_javelin|Dunlandské oštěpy
 itm_orc_throwing_arrow|Šipky orků
@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|Heraldická gondorská pavéza
 itm_amroth_sword_a|Meč z Dol Amroth
 itm_amroth_sword_b|Dol Amrothsky rytirsky mec
 itm_gondor_sword|Meč gondorské pěchoty
-; itm_amroth_bastard|Dol Amroth Heavy Sword
+; itm_amroth_bastard|Dol Amroth Swan Blade
 ; itm_gondor_short_sword|Linhir Eket
 ; itm_pelargir_eket|Pelargir Eket
 itm_pelargir_sword|Pelargirsky mec
@@ -702,23 +702,15 @@ itm_dale_sword_long|Dolsky dlouhy mec
 itm_dale_pike|Dolské kopí
 ; itm_dale_billhook|Dale Billhook
 ; itm_dale_shield_a|Dale Tower Shield
-
 ; itm_dale_shield_b|Dale Tower Shield
-
 ; itm_dale_shield_c|Dale Round Shield
 itm_dale_shield_d|Dolský štít
-itm_umb_armor_a|Kožená zbroj Korzárů
-
-itm_umb_armor_b|Zbroj Korzárských nájezdníků
-
-; itm_umb_armor_c|Corsair Padded Armor
-
-; itm_umb_armor_d|Corsair Padded Raider Armor
-
+; itm_umb_armor_a|Corsair Leather Vest
+itm_umb_armor_b|Kožená zbroj Korzárů
+; itm_umb_armor_c|Corsair Light Scale
+; itm_umb_armor_d|Corsair Scale
 ; itm_umb_armor_e|Corsair Hauberk
-
-itm_umb_armor_f|Těžká zbroj Korzárských nájezdníků
-
+; itm_umb_armor_f|Corsair Noble Armour
 ; itm_umb_helm_a|Corsair Shell Helm
 
 ; itm_umb_helm_b|Corsair Shell Helm
@@ -900,7 +892,8 @@ itm_mearas_reward|Mearhsky hrebec
 ; itm_westernesse1h_reward|Sword of Westernesse
 ; itm_westernesse2h_reward|Sword of The Great Serpent
 ; itm_mirkwood_sword_reward|Greenwood Relic Sword
-itm_nazgul_sword|Meč Nazgůlů
+; itm_nazgul_sword|Wicked Sword
+
 ; itm_cooking_cauldron|Cooking Cauldron
 itm_eorl_cavalry_sword|Eorluv mec
 itm_garlic_reward|Česnek
@@ -921,7 +914,7 @@ itm_corsair_throwing_dagger_reward|Otrávené vrhací dýky
 itm_dwarf_great_axe_reward|Trpasličí ostrá sekera
 itm_isen_uruk_heavy_reward|Zbroj generála Uruk-hai
 ; itm_lorien_bow_reward|Noldorin Bow
-; itm_lorien_sword_reward|Galadhrim Sword
+; itm_elven_cloak|Elven Cloak
 ; itm_dale_sword_reward|Dale Royal Sword
 
 ; itm_dale_armor_reward|Dale Noblemen Mail
@@ -930,7 +923,7 @@ itm_leather_gloves_reward|Lovecké rukavice
 ; itm_beorn_axe_reward|Bear Club
 ; itm_moria_arrow_reward|Moria Poisoned Arrows
 ; itm_khamul_helm|Helm of Khamul
-itm_gandstaff|Carodejova hul
+; itm_guldur_arrows_reward|Guldur Arrows
 itm_sarustaff|Carodejova hul
 itm_rohan_armor_th|Rohanská královská zbroj
 ; itm_prisoner_coll_chain|Prisoner Chains

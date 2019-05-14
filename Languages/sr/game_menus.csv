@@ -5,27 +5,27 @@ mno_go_bback|Idi nazad
 menu_start_phase_2|^^^^^ Srednja Zemlja. Senka se nadzire na istoku, ^ i mracne stvari izlaze na povrsinu koje nisu vidjene dosta vremena. ^ Slobodni ljudo se spemaju za rat,rat koji nisu mogucni ni zamisliti. ^ Ljudi, Vilenjaci, Patuljci i Orkovi; svi ce ucestvvati. ^^ Kako? To cemo tek videti...
 mno_go_forth|Idi napred ka tvom izabranom putu...
 menu_start_game_3|^^^^^^^^Izaberite vas scenario:
-mno_custom_battle_scenario_1|Btika, Gondor vs Harad
+mno_custom_battle_scenario_1|Sukob, Gondor protiv Harada
 mno_custom_battle_scenario_12|Izaberite frakcije za bitku
-mno_custom_battle_scenario_3|Bitka, Vilenjaci vs Black Numenoreans
+mno_custom_battle_scenario_3|Bitka, Vilenjaci protiv Crnih Numenoriana
 mno_custom_battle_scenario_4|Helmov ponor, Rohan vs Isendard
-mno_custom_battle_scenario_5|Btika, Severne fakcije vs Rhuna
+mno_custom_battle_scenario_5|Sukob, Severne fakcije vs Rhuna
 mno_custom_battle_scenario_6|Opsada - napad, Orkovi vs Patuljaka
-mno_custom_battle_scenario_7|Zaseda, Orkovi vs Mirkwood
-; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
+mno_custom_battle_scenario_7|Zaseda, Orkovi protiv Mirkwooda
+mno_custom_battle_scenario_8|Poslednji okrsaj Durinovih ljudi
+mno_custom_battle_scenario_88|Gonjenje grupe orkova izvidjaca
 mno_custom_battle_scenario_11|Test bitke (Treba izbalansirati!)
 mno_custom_battle_scenario_10|Scenska test bitka
 mno_troll_battle_scenario|Troll test bitke
 mno_warg_battle_scenario|Warg test bitke
 mno_build_your_own_scene|** Napravi tvoju scenu za TLD **
-; menu_tutorial|^^ Welcome to the Combat Tutorial for Mount & Blade. Here you will learn the basics of combat, as well as a brief overview of troop command during field battles.
-; mno_tutorial_1|Tutorial #1: Basic movement and weapon selection. {s1}
-; mno_tutorial_2|Tutorial #2: Fighting with a shield. {s2}
-; mno_tutorial_3|Tutorial #3: Fighting without a shield. {s3}
-; mno_tutorial_3b_door|next level
-; mno_tutorial_4|Tutorial #4: Riding a horse or a warg. {s4}
-; mno_tutorial_5|Tutorial #5: Commanding a band of soldiers. {s5}
+menu_tutorial|^^Dobrodosli u Combat Tutorijal za Mount & Blade. Ovde ces nauciti osnove u borbi, kao i kratak pregled komandi vojske tokom bitke.
+mno_tutorial_1|Tutorijal #1: Osnovni pokreti i odabir oruzija. {s1}
+mno_tutorial_2|Tutorijal #2: Borba sa stitom. {s2}
+mno_tutorial_3|Tutorijal #3: Borba bez stita. {s3}
+mno_tutorial_3b_door|sledeci nivo
+mno_tutorial_4|Tutorijal #4: Jahanje konja ili vuka. {s4}
+mno_tutorial_5|Tutorijal #5: upravljanje grupom vojnika. {s5}
 mno_go_back_dot|Nazad
 mno_action_view_troop_trees|Pogledaj podelu vojnika.
 mno_view_upkeep_costs|Pogledaj cenu.
@@ -88,6 +88,9 @@ mno_start_bn|Crni NUMENOREANI, izbeglica za zapada
 mno_start_um|UMBAR, pirata sa juznih mora
 mno_start_rh|RHUN, varvara sa istoka
 mno_start_kh|KHAND, surovih ljudi za jugo - istoka
+menu_start_eye_uruk|^^^^^^^^^^Gde obitavas?
+mno_start_arm_uruk|u armijama MORDORA
+mno_start_cav_uruk|u pecinama DOL GULDURA
 menu_start_eye_orc|^^^^^^^^^^Gde obitavas?
 mno_start_arm|u armijama MORDORA
 mno_start_cav|u pecinama DOL GULDURA
@@ -101,6 +104,9 @@ mno_start_2_hib|Vlastela
 menu_start_haradrim|^^^^^^^Ti si jedan od harada,^naroda iz pustinje.^Izaberi svoj rod
 mno_start_1_des|Pustinjski covek
 mno_start_2_far|Clan plemena
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Musko ili Zensko?
 mno_start_male|Musko
 mno_start_female|Zensko
@@ -189,10 +195,13 @@ mno_leave|Odlazi.
 menu_simple_encounter|YYYYY{s2}^Imaš {reg22} vojnika spremnih za bitku protiv njihovih {reg11}.^^Bitka se održava u {s3}{s4}.^^Tvoja naređenja?
 mno_encounter_attack|{reg21?Jurišati na njih:Pripremite se da se suočite sa njima}.
 mno_encounter_order_attack|Naredi svojim vojnicima da {reg21?napadnu:suoče sa njima} bez tebe.
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 ; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Idi za njima i rasturaj {s4}.
 mno_encounter_leave|Odustani.
 mno_encounter_retreat|Povuci se, ostavljajući neke od vojnika da pokriju tvoje povlačenje.
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|Nastavi...
 menu_encounter_retreat_confirm|^^^^^Kao član družine sa najvećom osobinom taktike, ({reg2}), {reg3?smislio si:{s3} smislio je} plan koji će tebi i tvojim ljudima pomoći da izvučete žive glave, ali ćeš morati da ostaviš {reg4} vojnika iza sebe da spreče neprijatelja da krenu u poteru.
 mno_leave_behind|Nastavi. Žrtva ovih ljudi će spasiti ostale.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Ne mešaj se.
 menu_join_battle|^^^Pomažeš {s2} protiv {s1}.^ Imaš {reg22} vojnika spremnih za bitku protiv neprijateljevih {reg11}.^^Bitka se održava u {s3}{s4}.
 mno_join_attack|Juriš na neprijatelja.
 mno_join_order_attack|Naredi svojih trupama da napadnu zajedno sa tvojim saveznicima dok ti ostaješ pozadi.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Odustani.
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Tvoje žrtve: {s8}^^Saveznikove žrtve: {s9}^^Neprijateljske žrtve: {s10}
 mno_enter|Uđi.
 menu_battlefields|^^^^^^^^^Izaberi polje...
@@ -357,7 +368,9 @@ mno_raid_villagers|Napdni selo!
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
 ; mno_leave_refugees|Leave them for now...
@@ -413,6 +426,7 @@ mno_leave_pyre|Napusti lomacu.
 menu_town_ruins|Kada si prisao, video si da je {s1} {s2}
 mno_ruin_menu_0|Istrazi lokaciju...
 mno_ruin_leave|Napusti...
+; menu_premutiny|none
 menu_death|Ubijen si. Iako rat idalje besni, ti u njemu vise neces ucestvovati.
 menu_animal_ambush|Ti i tvoji saborci bivate odvojeni od ostatka grupa, kada odjednom...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} je pred tebe kao zito sto pada od kose! Uskoro, svi tvoji napadaci leze na zemlji, mrtvi ili ranjeni. {s3}

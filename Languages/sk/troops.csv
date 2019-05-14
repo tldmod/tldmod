@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Stráž Pelargiru
 trp_pelargir_marine|Pelargirský námorník
 trp_pelargir_marine_pl|Pelargirskí námorníci
 trp_pelargir_vet_marine|Pelargirský skúsený námorník
-trp_pelargir_vet_marine_pl|Pelargirskí skúsení námorníci
+; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
 trp_pelargir_infantry|Pelargirský pešiak
 trp_pelargir_infantry_pl|Pelargirskí pešiaci
 trp_pelargir_vet_infantry|Pelargirský skúsený pešiak
@@ -674,10 +674,10 @@ trp_olog_hai|Olog Hai z Mordoru
 trp_olog_hai_pl|Olog Hai z Mordoru
 trp_ent|Ent
 trp_ent_pl|Enti
-trp_orc_snaga_of_guldur|Snaga ohyzd z Gulduru
-trp_orc_snaga_of_guldur_pl|Snaga ohyzdi z Gulduru
-trp_orc_of_guldur|Guldurský ohyzd stopár
-trp_orc_of_guldur_pl|Guldurskí ohyzdi stopári
+trp_orc_snaga_of_guldur|Snaga ohyzd z Dol Guldúru
+trp_orc_snaga_of_guldur_pl|Snaga ohyzdu z Dol Guldúru
+trp_orc_of_guldur|Ohyzdí stopár z Dol Guldúru
+trp_orc_of_guldur_pl|Ohyzdí stopári z Dol Guldúru
 trp_orc_snaga_of_mordor|Snaga ohyzd z Mordoru
 trp_orc_snaga_of_mordor_pl|Snaga ohyzdi z Mordoru
 trp_orc_of_mordor|Ohyzd z Mordoru
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Vrrčí jazdec z Gorgorothu
 trp_warg_rider_of_gorgoroth_pl|Vrrčí jazdci z Gorgorothu
 trp_great_warg_rider_of_mordor|Jazdec na veľkom vrrkovy z Udunu
 trp_great_warg_rider_of_mordor_pl|Jazdci na veľkých vrrkoch z Udunu
-trp_morgul_orc|Morgulský ohyzd
-trp_morgul_orc_pl|Morgulskí ohyzdi
-trp_fell_morgul_orc|Divoký Morgulský ohyzd
-trp_fell_morgul_orc_pl|Divokí Morgulskí ohyzdi
-trp_orc_tracker_of_mordor|Guldurský veľký ohyzd stopár
-trp_orc_tracker_of_mordor_pl|Guldurský veľký ohyzd stopár
-trp_fell_orc_tracker_of_mordor|Divoký ohyzdí stopár z Gulduru
-trp_fell_orc_tracker_of_mordor_pl|Divokí ohyzdí stopári z Gulduru
+trp_morgul_orc|Ohyzd z Minas Morgul
+trp_morgul_orc_pl|Ohyzdi z Minas Morgul
+trp_fell_morgul_orc|Divoký ohyzd z Minas Morgul
+trp_fell_morgul_orc_pl|Divokí ohyzdi z Minas Morgul
+; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
+trp_orc_tracker_of_mordor_pl|Veľkí ohyzdí stopári z Minas Morgul
+trp_fell_orc_tracker_of_mordor|Divoký ohyzdí stopár z Dol Guldúru
+trp_fell_orc_tracker_of_mordor_pl|Divokí ohyzdí stopári z Dol Guldúru
 trp_orc_archer_of_mordor|Mordorský ohyzdí lukostrelec
 trp_orc_archer_of_mordor_pl|Mordorskí ohyzdí lukostrelci
 trp_large_orc_archer_of_mordor|Veľký ohyzdí lukostrelec z Mordoru
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Gobliní lukostrelec z Morie
 trp_a2_archer_snaga_of_moria_pl|Gobliní lukostrelci z Morie
 trp_a3_large_goblin_archer_of_moria|Veľký gobliní lukostrelec z Morie
 trp_a3_large_goblin_archer_of_moria_pl|Veľkí gobliní lukostrelci z Morie
-trp_i5_deep_dweller_of_moria2|Ohyzd z hĺbin Morie
-trp_i5_deep_dweller_of_moria2_pl|Ohyzdi z hĺbin Morie
+trp_a4_fell_goblin_archer_of_moria|Divoký gobliní lukostrelec z Morie
+trp_a4_fell_goblin_archer_of_moria_pl|Divokí gobliní lukostrelci z Morie
+
 trp_i1_goblin_gundabad|Goblin z Gundabadu
 trp_i1_goblin_gundabad_pl|Goblini z Gundabadu
 trp_i2_orc_gundabad|Ohyzd z Gundabadu
@@ -750,8 +751,8 @@ trp_tribal_orc|Kmeňový ohyzd
 trp_tribal_orc_pl|Kmeňoví ohyzdi
 trp_tribal_orc_warrior|Bojový kmneňový ohyzd
 trp_tribal_orc_warrior_pl|Bojoví kmeňoví ohyzdi
-trp_i5_orc_chieftain_of_moria2|Ohyzdí náčelník z Morie
-trp_i5_orc_chieftain_of_moria2_pl|Ohyzdí náčelníci z Morie
+trp_i5_orc_champion_gundabad|Ohyzdí šampión z Gundabadu
+trp_i5_orc_champion_gundabad_pl|Ohyzdí šampióni z Gundabadu
 trp_black_numenorean_renegade|Čierno-Númenorejský odpadlík
 trp_black_numenorean_renegade_pl|Čierno-Númenorejskí odpadlíci
 trp_black_numenorean_warrior|Čierno-Númenorejský bojovník
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Ohyzdí náčelník z Morie
 trp_i5_orc_chieftain_of_moria_pl|Ohyzdí náčelníci z Morie
 trp_rhovanion_noble|Rhovanionský šľachtic
 trp_rhovanion_noble_pl|Rhovanionskí šľachtici
+trp_npc18|Turmbathu
+trp_npc19|Heidrek
+trp_npc20|Zigûrphel
+trp_werewolf|Vlkodlak
+trp_werewolf_pl|Vlkodlaci
+trp_mountain_goblin2|Horský goblin
+trp_mountain_goblin2_pl|Horský goblini
+trp_tribal_orc2|Kmeňový ohyzd
+trp_tribal_orc2_pl|Kmeňoví ohyzdi
+trp_tribal_orc_warrior2|Bojový kmneňový ohyzd
+trp_tribal_orc_warrior2_pl|Bojoví kmeňoví ohyzdi
+trp_tribal_orc_chief2|Ohyzdí náčelník kmeňa
+trp_tribal_orc_chief2_pl|Ohyzdí náčelníci kmeňa

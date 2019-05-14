@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Pelargiri őrállók
 trp_pelargir_marine|Pelargiri tengerész
 trp_pelargir_marine_pl|Pelargiri tengerészek
 trp_pelargir_vet_marine|Pelargiri veterán tengerész
-trp_pelargir_vet_marine_pl|Pelargiri veterán tengerészek
+; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
 trp_pelargir_infantry|Pelargiri gyalogos
 trp_pelargir_infantry_pl|Pelargiri gyalogság
 trp_pelargir_vet_infantry|Pelargiri veterán gyalogos
@@ -674,10 +674,10 @@ trp_olog_hai|Mordori olog-hai
 trp_olog_hai_pl|Mordori olog-haiok
 trp_ent|Ent
 trp_ent_pl|Entek
-trp_orc_snaga_of_guldur|Gulduri ork snaga
-trp_orc_snaga_of_guldur_pl|Gulduri ork snagák
-trp_orc_of_guldur|Gulduri ork nyomkövető
-trp_orc_of_guldur_pl|Gulduri ork nyomkövetők
+; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
+; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+; trp_orc_of_guldur|Orc Tracker of Dol Guldur
+; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
 trp_orc_snaga_of_mordor|Mordori ork snaga
 trp_orc_snaga_of_mordor_pl|Mordori ork snagák
 trp_orc_of_mordor|Mordori ork
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Gorgorthi varglovas
 trp_warg_rider_of_gorgoroth_pl|Gorgorothi varglovasság
 trp_great_warg_rider_of_mordor|Udûni irdatlan varglovas
 trp_great_warg_rider_of_mordor_pl|Udûni irdatlan varglovasság
-trp_morgul_orc|Morguli ork
-trp_morgul_orc_pl|Morguli orkok
-trp_fell_morgul_orc|Morguli irdatlan ork
-trp_fell_morgul_orc_pl|Morguli irdatlan orkok
-trp_orc_tracker_of_mordor|Gulduri nagy ork nyomkövető
-trp_orc_tracker_of_mordor_pl|Gulduri nagy ork nyomkövetők
-trp_fell_orc_tracker_of_mordor|Gulduri irdatlan ork nyomkövető
-trp_fell_orc_tracker_of_mordor_pl|Gulduri irdatlan ork nyomkövetők
+; trp_morgul_orc|Orc of Minas Morgul
+; trp_morgul_orc_pl|Orcs of Minas Morgul
+; trp_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
+; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
 trp_orc_archer_of_mordor|Mordori ork íjász
 trp_orc_archer_of_mordor_pl|Mordori ork íjászok
 trp_large_orc_archer_of_mordor|Mordori hatalmas ork íjász
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Móriai kobold íjász
 trp_a2_archer_snaga_of_moria_pl|Móriai kobold íjászok
 trp_a3_large_goblin_archer_of_moria|Móriai hatalmas kobold íjász
 trp_a3_large_goblin_archer_of_moria_pl|Móriai hatalmas kobold íjászok
-trp_i5_deep_dweller_of_moria2|Móriai mélylakó
-trp_i5_deep_dweller_of_moria2_pl|Móriai mélylakók
+trp_a4_fell_goblin_archer_of_moria|Móriai irdatlan kobold íjász
+trp_a4_fell_goblin_archer_of_moria_pl|Móriai irdatlan kobold íjászok
+
 trp_i1_goblin_gundabad|Gundabadi kobold
 trp_i1_goblin_gundabad_pl|Gundabadi koboldok
 trp_i2_orc_gundabad|Gundabadi ork
@@ -750,8 +751,8 @@ trp_tribal_orc|Törzsi ork
 trp_tribal_orc_pl|Törzsi orkok
 trp_tribal_orc_warrior|Törzsi ork harcos
 trp_tribal_orc_warrior_pl|Törzsi ork harcosok
-trp_i5_orc_chieftain_of_moria2|Mória ork törzsfője
-trp_i5_orc_chieftain_of_moria2_pl|Mória ork törzsfői
+; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
+; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
 trp_black_numenorean_renegade|Fekete númenor köpönyegforgató
 trp_black_numenorean_renegade_pl|Fekete númenor köpönyegforgatók
 trp_black_numenorean_warrior|Fekete númenor harcos
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Mória ork törzsfője
 trp_i5_orc_chieftain_of_moria_pl|Mória ork törzsfői
 trp_rhovanion_noble|Rhovanioni nemes
 trp_rhovanion_noble_pl|Rhovanioni nemesek
+; trp_npc18|Turmbathu
+; trp_npc19|Heidrek
+; trp_npc20|Zigûrphel
+trp_werewolf|Vérfarkas
+; trp_werewolf_pl|Werewolves
+trp_mountain_goblin2|Hegyi kobold
+trp_mountain_goblin2_pl|Hegyi koboldok
+trp_tribal_orc2|Törzsi ork
+trp_tribal_orc2_pl|Törzsi orkok
+trp_tribal_orc_warrior2|Törzsi ork harcos
+trp_tribal_orc_warrior2_pl|Törzsi ork harcosok
+trp_tribal_orc_chief2|Törzsi ork főnök
+trp_tribal_orc_chief2_pl|Törzsi ork főnök

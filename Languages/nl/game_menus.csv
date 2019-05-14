@@ -88,6 +88,9 @@ mno_start_bn|Black NUMENOREANS, De overlopers vanuit het Westen
 mno_start_um|UMAR, Piraten van de Zuiden Zeeën 
 mno_start_rh|RHUN, Barbaren van het Oosten
 mno_start_kh|KHAND, Woeste mensen van het Zuidoosten 
+menu_start_eye_uruk|^^^^^^^^^^Waar loer jij?
+mno_start_arm_uruk|In de grote legers bij MORDOR
+mno_start_cav_uruk|In de grotten van DOL GULDUR
 menu_start_eye_orc|^^^^^^^^^^Waar loer jij?
 mno_start_arm|In de grote legers bij MORDOR
 mno_start_cav|In de grotten van DOL GULDUR
@@ -101,6 +104,9 @@ mno_start_2_hib|Hoog Geboren
 menu_start_haradrim|^^^^^^^Je bent een Haradrim,^een Mens van de Woestijn.^Kies uw lijn
 mno_start_1_des|Woestijn Mens
 mno_start_2_far|Far Harad Stamlid
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Je geslacht?
 mno_start_male|Man
 mno_start_female|Vrouw
@@ -189,10 +195,13 @@ mno_leave|Ga weg.
 menu_simple_encounter|^^^^^{s2}^Je hebt {reg22} troepen klaar voor het gevecht tegen hun {reg11}.^^Het gevecht neemt zich plaats in {s3}{s4}.^^Je orders?
 mno_encounter_attack|{reg21?Val ze aan:Bereid je voor om aan te vallen}. 
 mno_encounter_order_attack|Order je troepen om {reg21?attack:face them} zonder jou.
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 ; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|Ren naar ze toe {s4}.
 mno_encounter_leave|Stop met aanvallen.
 mno_encounter_retreat|Trek terug, laat wat soldaten achter om je te verdedigen.
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|Vervolgen...
 menu_encounter_retreat_confirm|^^^^^Als partij lid met de hoogste tactiek vaardigheid,({reg2}), {reg3?you devise:{s3} devises} een plan dat er voor zorgt dat je veilig kunt ontsnappen. maar, je moet wat {reg4} soldat achterlaten zodat de vijand je niet kan achtervolgen.
 mno_leave_behind|Ga door. Het offer van deze mannen zal de rest redden.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Doe niet mee.
 menu_join_battle|^^^Je helpt {s2} tegen {s1}.^ Je hebt {reg22} troepen klaar voor de strijd tegen de vijanden {reg11}.^^De strijd neem plaats in {s3}{s4}.
 mno_join_attack|Val de vijand aan.
 mno_join_order_attack|Order je troepen om aan te vallen met je bondgenoten, terwijl je terug blijft.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Stop met aanvallen.
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Uw slachtoffers: {s8}^^Geallieerden slachtoffers: {s9}^^Vijandelijke slachtoffers: {s10}
 mno_enter|Treed binnen.
 menu_battlefields|^^^^^^^^^Selecteer een veld...
@@ -357,7 +368,9 @@ mno_raid_villagers|Plunder het Dorp!
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
 ; mno_leave_refugees|Leave them for now...
@@ -413,6 +426,7 @@ mno_leave_pyre|Verlaat de brandstapel.
 menu_town_ruins|Wanneer je nadert, zie je dat {s1} is {s2}
 mno_ruin_menu_0|Verken de plaats.
 mno_ruin_leave|Ga weg...
+; menu_premutiny|none
 menu_death|Je bent gedood, Hoewel de oorlog nog steeds woedt, zal je er niet langer een deel van uitmaken.
 menu_animal_ambush|U en uw gezelschap zijn gescheiden van de rest van uw partij, wanneer plotseling...
 menu_animal_ambush_success|De {s2} {reg0?fall:falls} Valt voor je als een tarwe aan ene zeis! Al snel liggen al uw aanvallers op de vloer, dood of gewond. {s3}

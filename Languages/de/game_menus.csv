@@ -88,6 +88,9 @@ mno_start_bn|Schwarze NUMENORER, die Abtrünnigen aus dem Westen
 mno_start_um|UMBAR, die Piraten aus den Meeren des Südens
 mno_start_rh|RHUN, die Barbaren aus dem Osten
 mno_start_kh|KHAND, das wilde Volk aus dem Südosten
+menu_start_eye_uruk|^^^^^^^^^^Wo haust du?
+mno_start_arm_uruk|In den Feldlagern MORDORS
+mno_start_cav_uruk|In den Höhlen unter DOL GOLDUR
 menu_start_eye_orc|^^^^^^^^^^Wo haust du?
 mno_start_arm|In den Feldlagern MORDORS
 mno_start_cav|In den Höhlen unter DOL GOLDUR
@@ -101,6 +104,9 @@ mno_start_2_hib|Von edler Geburt
 menu_start_haradrim|^^^^^^^Du bist einer der Haradrim,^ein Mensch der Wüste.^Wähle deine Abstammung.
 mno_start_1_des|Wüstenmensch
 mno_start_2_far|Stammeskrieger aus Fern-Harad
+menu_start_numenorean|^^^^^^^Ihr seid ein Schwarzer Numenorer,^der Dunkelheit und dem Morgoth treu.^Wählt, wo Ihr dem Auge dient.
+mno_start_1_bn|Neben Saurons Mund, in MORANNON
+mno_start_2_bn|In der Festung des Geisterbeschwörers, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Dein Geschlecht?
 mno_start_male|Männlich
 mno_start_female|Weiblich
@@ -189,10 +195,13 @@ mno_leave|Verlassen
 menu_simple_encounter|^^^^^{s2}^Du hast {reg22} einsatzfähige Truppen gegen ihre {reg11}.^^Die Schlacht findet {s3}{s4} statt.^^Deine Befehle?
 mno_encounter_attack|{reg21?Greift sie an:Bereitet euch vor, euch ihnen zu stellen}.
 mno_encounter_order_attack|Befehle deinen Truppen, sie ohne dich {reg21?anzugreifen:zu konfrontieren}.
+mno_control_allies_menu|Einfluss verwenden, im Feld die Befehlsgewalt über deine Verbündeten zu übernehmen.
 mno_encounter_hide|Verberge dich vor dem Feind....
 mno_special_whip|Stürme voran, mit der {s4} knallend.
 mno_encounter_leave|Zurückziehen.
 mno_encounter_retreat|Zieh dich zurück und lasse einige Soldaten zurück, um deinen Rückzug zu decken.
+mno_player_control_allies_simple|Befehlige sie und greif den Feind an
+mno_player_control_allies_back|Zurück...
 mno_hide_close|Fortsetzen...
 menu_encounter_retreat_confirm|^^^^^Als Truppenmitglied mit dem größten Taktikverständnis, ({reg2}), {reg3?entwirfst du:entwirft {s3}} einen Plan, der es dir und deinen Männern erlaubt, mit dem Leben davonzukommen, aber du musst {reg4} Truppen zurücklassen, um den Feind an der Verfolgung zu hindern.
 mno_leave_behind|Weiter. Das Opfer dieser Männer wird die anderen retten.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Nicht eingreifen.
 menu_join_battle|^^^Du unterstützst {s2} gegen {s1}.^ Du hast {reg22} kampfbereite Truppen gegen {reg11} Feinde.^^Die Schlacht wird {s3}{s4} ausgetragen.
 mno_join_attack|Greif den Feind an.
 mno_join_order_attack|Befiehl deinen Truppen, mit deinen Verbündeten anzugreifen, während du zurückbleibst.
+mno_control_allies_join_menu|Einflusspunkte verwenden, im Feld die Befehlsgewalt über deine Verbündeten zu übernehmen.
 mno_join_leave|Zurückfallen.
+mno_player_control_allies_join_menu|Befehlige sie und greif den Feind an
 menu_join_order_attack|{s4}^^Deine Verluste: {s8}^^Verluste Verbündete: {s9}:^^Gegnerische Verluste: {s10}
 mno_enter|Eintreten.
 menu_battlefields|^^^^^^^^^Wähle ein Gebiet...
@@ -357,7 +368,9 @@ mno_horse_archer_field_ai|Verbesserte KI für berittene Bogenschützen:  {s7}
 mno_vs_orcs_field_ai|Schützen zielen besser auf Orks (zielen nicht über die Orkköpfe hinweg):  {s7}
 mno_battlefield_animals|Tier-Begleiter in Schlachten - betrifft keine Warge oder Pferde:  {s7}
 mno_slow_when_wounded|Verlangsamung durch Wunden: {s7}
-mno_battle_encounter_effects|Fraktionsspezifische Spezial-Wettereffekte (Stürme, magischer Nebel etc.): {s7}
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 mno_defend_refugees|Haltet Ausschau nach Plünderern...
 mno_attack_refugees|Greife den Flüchtlingszug an...
 mno_leave_refugees|Vorerst zurückziehen...
@@ -413,6 +426,7 @@ mno_leave_pyre|Verlasse den Scheiterhaufen.
 menu_town_ruins|Als du dich näherst, siehst du, dass {s1} {s2}.
 mno_ruin_menu_0|Erkunde den Ort.
 mno_ruin_leave|Verlassen...
+; menu_premutiny|none
 menu_death|Du wurdest getötet. Auch wenn der Krieg andauert, wirst du nicht länger Teil davon sein.
 menu_animal_ambush|Du und deine Gefährten finden sich vom Rest der Truppen getrennt, als plötzlich...
 menu_animal_ambush_success|Die {s2} {reg0?fallen:fällt} vor dir wie die Fliegen! Schon bald liegen all deine Angreifer am Boden, verwundet oder tot. {s3}

@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|Nabudúce už budem pripravený.
 dlga_lord_start:lord_generic_mission_completed.4|Spozoroval som plamene šľahajúce z dediny neďaleko {s12}. Počuli sme krik a rev. Toto je len začiatok,{playername}. ^^Onedlho nastane vojna.
 dlga_lord_start:raid_village_failed|Všimli sme si niekoľkých ľudí uháňajúcich od {12}. A ty sa ešte opovažuješ prísť sem a vystavovať sa, {playername}?. ^^Vojna sa blíži, ale s takýmito neúspechmi môžeš byť jej prvou obeťou. 
 dlga_raid_village_failed:close_window|Nabudúce už bude, pripravený.
+dlga_lord_start:lord_target_lord_failed|Dopočul som sa že si neuspel. Sklamal si ma, {playername}.
+dlga_lord_target_lord_failed:close_window|Nabudúce už budem lepšie pripravený.
 dlga_lord_start:lord_generic_mission_completed.5|Vaši muži boli svedkami vašej statočnosti v bitke, {playername}. Ukázali ste im, že sme nadriadenými silami.
 dlga_lord_start:kill_quest_failed|Dopočul som sa že si neuspel. Sklamal si ma, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Vaši muži boli svedkami vašej statočnosti v bitke, {playername}. Vyhral si si úctu.
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|Mohli by ste mi povedať čo robíte?
 dlga_mayor_talk:merchant_quest_requested|Jak môžem poslúžiť našej veci?
 dlga_mayor_talk:merchant_quest_last_offered_job|O úlohe ktorou ste ma poveril...
 dlga_mayor_talk:merchant_quest_about_job|O úlohe, ktorú ste mi zadal...
+dlga_mayor_talk:mayor_talk_ask_location|Chcem vedieť, kde sa niekto nachádza.
 dlga_mayor_talk:close_window|[Odísť]
 dlga_mayor_info_begin:mayor_info_talk|Som miestna autorita tu v {s9}. Jeden by mohol povedať že mám na starosti každodenné záležitosti tohoto miesta. Vždy je tu čo robiť, takže keby si chcel pomôcť tak príď za mnou.
 dlga_mayor_info_talk:mayor_info_lord|Kdo vládne tomuto mestu?
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|Dúfam, že si nezlyhal. Nemôžm
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Nuž, urob všetko pre to aby si to splnil.
 dlga_merchant_quest_taken:mayor_pretalk|Výborne. V tom prípade sa na teba spolieham. Veľa šťastia.
 dlga_merchant_quest_stall:mayor_pretalk|Nuž, asi budem musieť nájsť niekoho iného. Ale daj mi vedieť ak zmeníš názor.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Uvidím, čo sa s tým dá robiť. O ich tulkách sa mi donesú správy, len ak nedávno navštívili nejaké mesto. Pokiaľ sa práve nezdržiavajú v meste, dopočujem sa len o kraji, v ktorom sa nachádzajú, a to hlavne od konvojov a karaván.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|Už nič.
 dlga_merchant_quest_requested:merchant_quest_brief|Nuž, vyzeráš schopne. Myslím, že mám niečo čo by si mohol spraviť. 
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Nedávno došlo k niekoľkým potyčkám neďaleko {s5}, a všetok ten chaos prilákal niekoľko skupín klanových ohyzdov, ktorý počas toho zmätku plienili a robili nájazdy v okolí. Potrebujem niekoho, kdo im dá poriadnu lekciu. Vyzerá to na prácu pre teba, nie?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|To teda, urobím to.

@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|Ich werde nicht noch einmal versagen.
 dlga_lord_start:lord_generic_mission_completed.4|Wir sahen die Flammen über dem Dorf nahe {s12}. Wir hörten die Schreie. Dies ist nur der Anfang, {playername}. ^^Der große Krieg naht.
 dlga_lord_start:raid_village_failed|Wir sahen einige deiner Krieger aus dem Dorf in der Nähe von {s12} fliehen. Du wagst es, hierher zurückzukommen und dein Gesicht zu zeigen, {playername}? ^^Es wird Krieg geben, aber wenn du noch einmal so versagst, wirst du der erste Tote sein. 
 dlga_raid_village_failed:close_window|Ich werde nicht noch einmal versagen.
+dlga_lord_start:lord_target_lord_failed|Ich hörte dass ihr versäumt habt, worum ich euch gebeten hatte. Enttäuschend, {playername}.
+dlga_lord_target_lord_failed:close_window|Ich werde nicht noch einmal versagen.
 dlga_lord_start:lord_generic_mission_completed.5|Deine Männer bezeugen deine Tapferkeit in der Schlacht, {playername}. DU hast ihnen gezeigt, dass wir siegen werden.
 dlga_lord_start:kill_quest_failed|Ich hörte dass du nicht geschafft hast, was ich dir aufgetragen habe. Enttäuschend, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Eure Männer bezeugen Eure Tapferkeit in der Schlacht, {playername}. Ihr habt Euch meine Achtung verdient.
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|Könnt Ihr mir erzählen, was Ihr tut?
 dlga_mayor_talk:merchant_quest_requested|Wie kann ich unsere Sache unterstützen?
 dlga_mayor_talk:merchant_quest_last_offered_job|Wegen der Aufgabe, die ich für Euch erledigen sollte...
 dlga_mayor_talk:merchant_quest_about_job|Wegen der Aufgabe, die Ihr mir gabt...
+dlga_mayor_talk:mayor_talk_ask_location|Ich will den Aufenthaltsort von jemandem wissen.
 dlga_mayor_talk:close_window|[Verlassen]
 dlga_mayor_info_begin:mayor_info_talk|Ich bin der Verantwortliche hier in {s9}. Man könnte sagen, dass ich für die tagtäglichen Aufgaben zuständig bin. Es gibt immer irgendwas zu tun, also fragt mich, wenn Ihr helfen wollt.
 dlga_mayor_info_talk:mayor_info_lord|Wer herrscht über diese Stadt?
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|Ich hoffe, alles geht gut. Wir k�
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Nun, tut Euer Bestes, sie zu erledigen.
 dlga_merchant_quest_taken:mayor_pretalk|Sehr gut. Ich zähle auf Euch. Viel Glück.
 dlga_merchant_quest_stall:mayor_pretalk|Nun, ich versuche, jemand anderen zu finden. Aber sagt Bescheid, wenn Ihr Euch umentscheidet.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Ich tue was ich kann. Ich höre sie kommen und gehen nur wenn sie kürzlich an einer anderen Siedlung waren.  Sonst höre ich von den Kaufmannszügen, um welche Gegend sie sich befinden.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|Schon gut.
 dlga_merchant_quest_requested:merchant_quest_brief|Nun, Ihr seht fähig genug aus. Ich glaube, ich hätte was für Euch.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Wir hatten kürzlich ein paar Kämpfe hier in der {s5}umgebung, mit all dem Chaos, das darauf folgt. Und das hat ein paar Banden von Stammesorks dazu verleitet, die Gegend zu überfallen. Ich brauche jemanden, der den Orks eine Lektion erteilt. Wäre das was?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Ja, ich mache es.

@@ -88,6 +88,9 @@ mno_start_bn|黒きヌーメノール人、西方から来た背教者
 mno_start_um|ウンバール、南の海からやってきた海賊
 mno_start_rh|リューン、東方の蛮族
 mno_start_kh|ハンド、南東に住む獰猛な民族
+menu_start_eye_uruk|^^^^^^^^^^どこに潜伏しているのですか？
+mno_start_arm_uruk|モルドールに集結する軍勢
+mno_start_cav_uruk|ドル・グルドゥアの洞窟
 menu_start_eye_orc|^^^^^^^^^^どこに潜伏しているのですか？
 mno_start_arm|モルドールに集結する軍勢
 mno_start_cav|ドル・グルドゥアの洞窟
@@ -101,6 +104,9 @@ mno_start_2_hib|高貴な生まれ
 menu_start_haradrim|^^^^^^^あなたはハラドリム、^砂漠の民です。^部族を選んでください
 mno_start_1_des|砂漠の住人
 mno_start_2_far|遠ハラドの部族
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^あなたの性別は？
 mno_start_male|男性
 mno_start_female|女性
@@ -189,10 +195,13 @@ mno_leave|立ち去る。
 menu_simple_encounter|^^^^^{s2}^この戦闘に参加できるあなたの部隊は総勢{reg22}名、 対する敵勢は{reg11}名です。^^この戦いは{s3}{s4}で行われます。^^どうしますか？
 mno_encounter_attack|{reg21?攻撃開始:迎え撃つ}。
 mno_encounter_order_attack|部下に{reg21?攻撃を開始する:迎え撃つ}よう命令し、 自身は後方に待機する。
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 ; mno_encounter_hide|Hide from the enemy...
 mno_special_whip|{s4}を打ちながら威圧する。
 mno_encounter_leave|撤退する。
 mno_encounter_retreat|何人かの兵をしんがりに残し、撤退する。
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|続ける・・・
 menu_encounter_retreat_confirm|^^^^^パーティの中で最も高い戦略スキル({reg2})を持つ {reg3?あなた:{s3}}は、 敵を振り切って部隊を無事に撤退させる作戦を 考え出しましたが、 敵の追撃を食い止めるための兵を{reg4}名、 しんがりとして犠牲にしなければなりません。
 mno_leave_behind|この作戦でいこう。彼らの犠牲は無駄にしない。
@@ -220,7 +229,9 @@ mno_pre_join_leave|巻き込まれないようにする。
 menu_join_battle|^^^{s1}と戦っている、 {s2}に加勢します。^敵勢{reg11}名に対して、 戦える状態の味方の兵は{reg22}名です。^^この戦いは{s3}{s4}で行われます。
 mno_join_attack|攻撃を開始する。
 mno_join_order_attack|部下に友軍と共に戦うよう指示をし、自分は後方に待機する。
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|撤退する。
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^自軍犠牲者:{s8}^^友軍犠牲者:{s9}^^敵軍犠牲者:{s10}
 mno_enter|入る。
 menu_battlefields|^^^^^^^^^戦場を選んでください・・・
@@ -357,7 +368,9 @@ mno_raid_villagers|村を襲え！
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
 ; mno_leave_refugees|Leave them for now...
@@ -413,6 +426,7 @@ mno_leave_pyre|この場を去る。
 menu_town_ruins|この{s1}は{s2}
 mno_ruin_menu_0|この場所を探索する。
 mno_ruin_leave|立ち去る・・・
+; menu_premutiny|none
 menu_death|あなたは殺されました。 戦争の猛威はいまだ弱まる気配すらありませんが、 あなたの役目はここで終わりました。
 menu_animal_ambush|あなたとコンパニオンは、他の兵とはぐれてしまいました。すると突然・・・
 menu_animal_ambush_success|{s2}{reg0?の一群は:は}、 あなたの前に、 鎌に刈られる小麦のようになぎ倒されました！ 地面に横たわり、 ぴくりとも動きません。 {s3}

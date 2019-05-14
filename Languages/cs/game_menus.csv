@@ -88,6 +88,9 @@ mno_start_bn|Cerni Numenorejci, odpadlici ze Zapadu
 mno_start_um|Umbar, pirati z jiznich mori
 mno_start_rh|Rhun, barbari z Vychodu
 mno_start_kh|Varjagove, divosi z Khandu na jihovychode
+menu_start_eye_uruk|^^^^^^^^^^Kde se potloukas?
+mno_start_arm_uruk|v armadach shromazdenych v MORDORU
+mno_start_cav_uruk|v jeskynich DOL GULDURU
 menu_start_eye_orc|^^^^^^^^^^Kde se potloukas?
 mno_start_arm|v armadach shromazdenych v MORDORU
 mno_start_cav|v jeskynich DOL GULDURU
@@ -101,6 +104,9 @@ mno_start_2_hib|Slechtic
 menu_start_haradrim|^^^^^^^Jsi Haradan,^clovek z pousti ci pralesu na jihu.^Zvol svuj puvod
 mno_start_1_des|Clovek z Pouste
 mno_start_2_far|Divoch z pralesu Dalneho Haradu
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Tve pohlavi?
 mno_start_male|Muž
 mno_start_female|Žena
@@ -189,10 +195,13 @@ mno_leave|Odejit.
 menu_simple_encounter|^^^^^{s2}^Mas k dispozici {reg22} jednotek k boji proti jejich {reg11}.^^Bitva se odehrava v{s3}{s4}.^^Jake jsou tve rozkazy?
 mno_encounter_attack|{reg21?Zaútočte na ně:Připravte se čelit jim}.
 mno_encounter_order_attack|Přikaž svým jednotkám, aby {reg21?attack:face them} bez tebe.
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|Skryj se před nepřítelem...
 ; mno_special_whip|Rush forward toward them cracking the {s4}.
 mno_encounter_leave|uvolnit se od nepřítele.
 mno_encounter_retreat|Nech za sebou nějaké vojáky, aby kryli tvůj ústup.
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|Pokračuj
 menu_encounter_retreat_confirm|^^^^^Jako nejzkusenejsi taktik v druzine,   ({reg2}), {reg3?navrhujes:{s3} navrhuje} plan, ktery tobe a tvym muzum umozni uprchnout a zachranit si zivot,   ale budes muset obetovat {reg4} vojáku, aby zastavili nepratelske pronasledovani.
 mno_leave_behind|Vykonat. Obětováním těchto mužů zachráníš ostatní.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Nezapojit se.
 menu_join_battle|^^^pomáháš {s2} proti {s1}.^ máš {reg22} připravených proti {reg11}.^^ 
 mno_join_attack|Zaútočit na nepřítele.
 mno_join_order_attack|Nařiď svým jednotkám, aby zaútočili s tvými spojenic, mezitím co ty zůstaneš vzadu.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Uvolnit se od nepřítele.
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Tvoje ztráty:  {s8}^^Spojenecké ztráty:  {s9}^^Nepřátelské ztráty: {s10}
 mno_enter|Vstup.
 menu_battlefields|^^^^^^^^^Vyber bojové pole...
@@ -357,7 +368,9 @@ mno_sb_defend_the_town|Naloďte se! Zničte jejich flotilu!
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 ; mno_battlefield_animals|Non-Warg / Horse Animal Companions Spawn in Battle:  {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 ; mno_defend_refugees|Keep your eye out for raiders...
 ; mno_attack_refugees|Attack the refugee train...
 mno_leave_refugees|Nech je prozatím...
@@ -413,6 +426,7 @@ mno_leave_pyre|Odejít od vatry.
 menu_town_ruins|Když se přiblížíš, vidíš že {s1} je {s2}
 mno_ruin_menu_0|Prozkoumat to místo.
 mno_ruin_leave|Opusť...
+; menu_premutiny|none
 menu_death|Byl jsi zabit. Válka pokračuje, ale bez tebe.
 menu_animal_ambush|ty a tví přátelé jste se ocitli mimo vaši skupinu, když najednou...
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}

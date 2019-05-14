@@ -110,11 +110,11 @@ itm_dwarf_short_bow|Arco Corto Enano
 itm_harad_bow|Arco Curvo de Harad
 itm_lg_bow|Arco de la Guardia del Águila
 itm_riv_bow|Arco de Rivendel
-itm_glorfi_bow|Arco de Glorfindeil
+itm_rhun_bow|Arco de Rhûn
 itm_lorien_bow|Arco Galadhrim
 itm_isengard_large_bow|Arco Largo de Isengard
 itm_dale_bow|Arco de Valle
-itm_uruk_bow|Arco Fuerte Orco
+itm_uruk_bow|Arco Orco de Cuerno
 itm_mirkwood_bow|Arco del Bosque Negro
 itm_dunland_javelin|Jabalinas Dunlendinas
 itm_orc_throwing_arrow|Dardos Orcos
@@ -256,7 +256,7 @@ itm_gon_tab_shield_d|Pavés Heráldico de Gondor
 itm_amroth_sword_a|Espada de Dol Amroth
 itm_amroth_sword_b|Espada de Caballero de Dol Amroth
 itm_gondor_sword|Espada de Infantería de Gondor
-itm_amroth_bastard|Espada Pesada de Dol Amroth
+itm_amroth_bastard|Hoja del Cisne de Dol Amroth
 itm_gondor_short_sword|Eket de Linhir
 itm_pelargir_eket|Eket de Pelargir
 itm_pelargir_sword|Espada de Pelargir
@@ -702,23 +702,15 @@ itm_dale_sword_broad|Espada de Infantería de Valle
 itm_dale_pike|Lanza de Valle
 itm_dale_billhook|Corquete de Valle
 itm_dale_shield_a|Pavés de Valle
-
 itm_dale_shield_b|Pavés de Valle
-
 itm_dale_shield_c|Escudo Redondo de Valle
 itm_dale_shield_d|Escudo de Valle
-itm_umb_armor_a|Armadura Corsaria de Cuero
-
-itm_umb_armor_b|Armadura de Incursor Corsario
-
-itm_umb_armor_c|Armadura Acolchada de Corsario
-
-itm_umb_armor_d|Armadura Acolchada de Incursor Corsario
-
+itm_umb_armor_a|Justillo de Cuero Corsario
+itm_umb_armor_b|Armadura Corsaria de Cuero
+itm_umb_armor_c|Armadura de Escamas Ligera Corsaria
+itm_umb_armor_d|Armadura de Escamas Corsaria
 itm_umb_armor_e|Cota de Malla de Corsario
-
-itm_umb_armor_f|Armadura Pesada de Incursor Corsario
-
+itm_umb_armor_f|Armadura Nobiliaria Corsaria
 itm_umb_helm_a|Yelmo Caracola de Corsario
 
 itm_umb_helm_b|Yelmo Caracola de Corsario
@@ -900,7 +892,8 @@ itm_riv_armor_reward|Armadura Decorada de Rivendel
 itm_westernesse1h_reward|Espada de Oesternesse
 itm_westernesse2h_reward|Espada de La Gran Serpiente
 itm_mirkwood_sword_reward|Espada Reliquia del Bosque Verde
-itm_nazgul_sword|Espada de Názgul
+itm_nazgul_sword|Espada Maldita
+
 itm_cooking_cauldron|Caldero de cocina
 itm_eorl_cavalry_sword|Espada de Eorl
 itm_garlic_reward|Ajos
@@ -921,7 +914,7 @@ itm_dwarf_shield_reward|Escudo del Kheled-zaram
 itm_dwarf_great_axe_reward|Gran Hacha Afilada Enana
 itm_isen_uruk_heavy_reward|Armadura de General Uruk-hai
 itm_lorien_bow_reward|Arco Noldorin
-itm_lorien_sword_reward|Espada Galadhrim
+itm_elven_cloak|Capa Élfica
 itm_dale_sword_reward|Espada Real de Vallle
 
 itm_dale_armor_reward|Cota de Malla Noble de Valle 
@@ -930,7 +923,7 @@ itm_beorn_shield_reward|Escudo Beórnida
 itm_beorn_axe_reward|Garrote de Oso
 itm_moria_arrow_reward|Flechas Envenenadas de Moria
 itm_khamul_helm|Yelmo de Khamul
-itm_gandstaff|Bastón de Mago
+itm_guldur_arrows_reward|Flechas de Dol Guldur
 itm_sarustaff|Bastón de Mago
 itm_rohan_armor_th|Armadura Real de Rohan
 itm_prisoner_coll_chain|Cadenas de Prisionero

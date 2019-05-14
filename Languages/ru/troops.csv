@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Пеларгирские стражники
 trp_pelargir_marine|Пеларгирский моряк
 trp_pelargir_marine_pl|Пеларгирские моряки
 trp_pelargir_vet_marine|Пеларгирский опытный моряк
-trp_pelargir_vet_marine_pl|Пеларгирские опытные моряки
+; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
 trp_pelargir_infantry|Пеларгирский пехотинец
 trp_pelargir_infantry_pl|Пеларгирские пехотинцы
 trp_pelargir_vet_infantry|Пеларгирский опытный пехотинец
@@ -674,10 +674,10 @@ trp_olog_hai|Мордорский олог-хай
 trp_olog_hai_pl|Мордорские олог-хай
 trp_ent|Энт
 trp_ent_pl|Энты
-trp_orc_snaga_of_guldur|Орк-снага Дол-Гулдура
-trp_orc_snaga_of_guldur_pl|Орки-снаги Дол-Гулдура
-trp_orc_of_guldur|Гулдурский орк-следопыт
-trp_orc_of_guldur_pl|Гулдурские орки-следопыты
+; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
+; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
+; trp_orc_of_guldur|Orc Tracker of Dol Guldur
+; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
 trp_orc_snaga_of_mordor|Мордорский орк снага
 trp_orc_snaga_of_mordor_pl|Орки-снаги Мордора
 trp_orc_of_mordor|Мордорский орк
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Волчий всадник Горгорота
 trp_warg_rider_of_gorgoroth_pl|Волчьи всадники Горгорота
 trp_great_warg_rider_of_mordor|Удунский всадник на варге
 trp_great_warg_rider_of_mordor_pl|Удунские всадники на варгах
-trp_morgul_orc|Моргульский орк
-trp_morgul_orc_pl|Моргульские орки
-trp_fell_morgul_orc|Свирепый моргульский орк
-trp_fell_morgul_orc_pl|Свирепые моргульские орки
-trp_orc_tracker_of_mordor|Гулдурский крупный орк-следопыт
-trp_orc_tracker_of_mordor_pl|Гулдурские крупные орки-следопыты
-trp_fell_orc_tracker_of_mordor|Гулдурский свирепый орк-следопыт
-trp_fell_orc_tracker_of_mordor_pl|Гулдурские свирепые орки-следопыты
+; trp_morgul_orc|Orc of Minas Morgul
+; trp_morgul_orc_pl|Orcs of Minas Morgul
+; trp_fell_morgul_orc|Fell Orc of Minas Morgul
+; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
+; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
+; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
+; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
 trp_orc_archer_of_mordor|Мордорский орк-лучник
 trp_orc_archer_of_mordor_pl|Мордорские орки-лучники
 trp_large_orc_archer_of_mordor|Крупный орк-лучник Мордора
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|Гоблин-лучник Мории
 trp_a2_archer_snaga_of_moria_pl|Гоблины-лучники Мории
 trp_a3_large_goblin_archer_of_moria|Крупный гоблин-лучник Мории
 trp_a3_large_goblin_archer_of_moria_pl|Крупные гоблины-лучники Мории
-trp_i5_deep_dweller_of_moria2|Глубинный житель Мории
-trp_i5_deep_dweller_of_moria2_pl|Глубинные жители Мории
+trp_a4_fell_goblin_archer_of_moria|Свирепый гоблин-лучник Мории
+trp_a4_fell_goblin_archer_of_moria_pl|Свирепые гоблины-лучники Мории
+
 trp_i1_goblin_gundabad|Гундабадский гоблин
 trp_i1_goblin_gundabad_pl|Гундабадские гоблины
 trp_i2_orc_gundabad|Гундабадский орк
@@ -750,8 +751,8 @@ trp_tribal_orc|Дикий орк
 trp_tribal_orc_pl|Дикие орки
 trp_tribal_orc_warrior|Дикий орк-воин
 trp_tribal_orc_warrior_pl|Дикие орки-воины
-trp_i5_orc_chieftain_of_moria2|Орк-командир Мории
-trp_i5_orc_chieftain_of_moria2_pl|Орки-командиры Мории
+; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
+; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
 trp_black_numenorean_renegade|Чёрный нуменорец
 trp_black_numenorean_renegade_pl|Чёрные нуменорцы
 trp_black_numenorean_warrior|Чёрный нуменорец-воин
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|Орк-командир из Мории
 trp_i5_orc_chieftain_of_moria_pl|Орки-командиры Мории
 trp_rhovanion_noble|Знатный всадник Рованиона
 trp_rhovanion_noble_pl|Знатная конница Рованиона
+trp_npc18|Турмбату
+trp_npc19|Хейдрек
+trp_npc20|Зигурфель
+trp_werewolf|Оборотень
+; trp_werewolf_pl|Werewolves
+trp_mountain_goblin2|Горный гоблин
+trp_mountain_goblin2_pl|Горные гоблины
+trp_tribal_orc2|Дикий орк
+trp_tribal_orc2_pl|Дикие орки
+trp_tribal_orc_warrior2|Дикий орк-воин
+trp_tribal_orc_warrior2_pl|Дикие орки-воины
+trp_tribal_orc_chief2|Вождь диких орков
+trp_tribal_orc_chief2_pl|Вожди диких орков

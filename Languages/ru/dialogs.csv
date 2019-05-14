@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|В следующий раз я пост
 dlga_lord_start:lord_generic_mission_completed.4|Мы видели огни в деревне недалеко от {s12}. Мы слышали крики. Это только начало, {playername}. ^^Война близко.
 dlga_lord_start:raid_village_failed|Мы видели твоих воинов, удирающих из деревни возле {s12}. Ты осмеливаешься показывать здесь своё лицо, {playername}? ^^Скоро война, но с такими раскладами ты можешь стать её первой жертвой.
 dlga_raid_village_failed:close_window|В следующий раз я постараюсь быть лучше.
+dlga_lord_start:lord_target_lord_failed|Я слышал что Вы не справились с моим поручением. Я огорчён, {playername}.
+dlga_lord_target_lord_failed:close_window|В следующий раз я постараюсь быть лучше.
 dlga_lord_start:lord_generic_mission_completed.5|Ваши люди превозносят Вашу храбрость в бою, {playername}. Вы показали им, что мы теперь - сила, с которой следует считаться.
 dlga_lord_start:kill_quest_failed|Я слышал что Вы не справились с моим поручением. Я огорчён, {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Ваши люди превозносят Вашу храбрость в бою,, {playername}. Вы заслужили моё уважение.
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|Не могли бы вы рассказать,
 dlga_mayor_talk:merchant_quest_requested|Как я могу послужить нашему делу?
 dlga_mayor_talk:merchant_quest_last_offered_job|Касательно того задания, что вы мне дали...
 dlga_mayor_talk:merchant_quest_about_job|Касательно того задания, что вы мне дали...
+dlga_mayor_talk:mayor_talk_ask_location|Мне нужно знать, кто где находится.
 dlga_mayor_talk:close_window|[Уйти]
 dlga_mayor_info_begin:mayor_info_talk|Я управитель поселения {s9}. Можно сказать, что я занимаюсь повседневными вопросами. У меня всегда найдётся дело для добровольца, так что если вы хотите помочь, то дайте мне знать.
 dlga_mayor_info_talk:mayor_info_lord|Кто правит этим городом?
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|Я надеюсь, что вы н
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Гм, просто постарайтесь выполнить его.
 dlga_merchant_quest_taken:mayor_pretalk|Отлично. В таком случае я на вас рассчитываю. Удачи.
 dlga_merchant_quest_stall:mayor_pretalk|Что ж, я попытаюсь найти кого-либо ещё. Но, если вы передумаете, скажите мне.
+; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|Неважно.
 dlga_merchant_quest_requested:merchant_quest_brief|Ну, вы, кажется, годитесь для этой работы. Я могу кое-что вам предложить.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Недавно рядом с нашим городом произошла битва - со всей неразберихой, которая сопутствует таким событиям. Это привлекло несколько племён диких орков, которые стали грабить окрестности, пользуясь ситуацией. Мне нужен кто-то, кто мог бы преподать мародёрам урок. Вам не кажется, что эта работа как раз для вас?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Ладно, я сделаю это.

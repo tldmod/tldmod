@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|次はうまくやる。
 ; dlga_lord_start:lord_generic_mission_completed.4|We saw the flames coming from the village near {s12}. We heard the screams. This is only the beginning, {playername}. ^^War is coming.
 ; dlga_lord_start:raid_village_failed|We saw some of your men running away from the village near {s12}. You dare come back here and show your face, {playername}?. ^^There will be war, but with failures like this, you may be its first casualty.
 dlga_raid_village_failed:close_window|次はうまくやる。
+; dlga_lord_start:lord_target_lord_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
+dlga_lord_target_lord_failed:close_window|次はうまくやる。
 ; dlga_lord_start:lord_generic_mission_completed.5|Your men have witnessed your bravery in battle, {playername}. You have shown them that we are the superiour force.
 ; dlga_lord_start:kill_quest_failed|I have heard that you failed to do what I asked you to. Disappointing, {playername}.
 ; dlga_lord_start:lord_generic_mission_completed.6|Your men have witnessed your bravery in battle, {playername}. You have earned my respect.
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|{君/あなた}の仕事について教えて�
 dlga_mayor_talk:merchant_quest_requested|私に何か役に立てる事はあるか？
 dlga_mayor_talk:merchant_quest_last_offered_job|さっき話していた仕事についてなんだが・・・
 dlga_mayor_talk:merchant_quest_about_job|頼まれていた例の件についてなんだが・・・
+dlga_mayor_talk:mayor_talk_ask_location|指揮官たちの現在地を知りたい。
 dlga_mayor_talk:close_window|[立ち去る]
 dlga_mayor_info_begin:mayor_info_talk|私はここ、{s9}の内政責任者です。 いうならば、 日常的な、 あらゆる事を管轄しています。 仕事が尽きるということがないので、 あなたがもし仕事を探しているのなら、 私に言って頂きたい。
 dlga_mayor_info_talk:mayor_info_lord|ここの統治者は誰{だ/なの}？
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|あなたは失敗しないと信
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|では、全力を尽くしてください。
 dlga_merchant_quest_taken:mayor_pretalk|素晴らしい。頼りにしてますよ。幸運を祈ります。
 dlga_merchant_quest_stall:mayor_pretalk|仕方ない、他を当たってみます。 でも、もしあなたの気が変わったら、 私に教えてください。
+; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|なんでもない。
 dlga_merchant_quest_requested:merchant_quest_brief|おや、あなたは頼りになりそうだ。 あなたにちょうど良い仕事がありますよ。
 dlga_merchant_quest_brief:merchant_quest_looters_choice|最近、{s5}の近くで結構な規模の戦闘がありまして、 周辺一帯はそれにともなう混乱が起こったんです。 すると、 その混乱をかぎつけた部族オークどもの群れがいくつかやって来て、 混乱に乗じて周辺一帯を襲うようになったのです。 あのオークどもは懲らしめてやらないとなりません。 あなた向きの仕事だと思うのですが、 どうでしょう？
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|よし、引き受けよう。

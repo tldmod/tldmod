@@ -88,6 +88,9 @@ mno_start_bn|Siyah NUMENOREANLAR, Batının hainleri
 mno_start_um|UMBAR, Güney Denizlerin korsanları.
 mno_start_rh|RHUN, Doğudaki barbarlar
 mno_start_kh|KHAND, Güneydoğudaki vahşi insanlar
+menu_start_eye_uruk|^^^^^^^^^^Nerede pusuya yatiyorsun?
+mno_start_arm_uruk|MORDOR'DAN toplanmış orduda
+mno_start_cav_uruk|DOL GULDUR mağaralarında
 menu_start_eye_orc|^^^^^^^^^^Nerede pusuya yatiyorsun?
 mno_start_arm|MORDOR'DAN toplanmış orduda
 mno_start_cav|DOL GULDUR mağaralarında
@@ -101,6 +104,9 @@ mno_start_2_hib|Soylu
 menu_start_haradrim|^^^^^^^Sen bir Haradrimsin,^Bir Çöl Insani.^Soyunu seç
 mno_start_1_des|Çöl insanı
 mno_start_2_far|Far Harad Kabile Üyesi
+menu_start_numenorean|^^^^^^^Sen bir Kara Numenorlusun,^Karanlığa ve Morgoth'a sadıksın.^Göze hizmet edeceğin yeri seç
+mno_start_1_bn|Sauron'un Ağzı'nın yanında, MORANNON'da
+mno_start_2_bn|Ölü Çağıran'ın kalesinde, DOL GULDUR'da
 menu_choose_gender|^^^^^^^^^^Cinsiyetin?
 mno_start_male|Erkek
 mno_start_female|Kadın
@@ -189,10 +195,13 @@ mno_leave|Ayrıl.
 menu_simple_encounter|^^^^^{s2}^Senin {reg22} askerin onların {reg11} askerine karşı savaşa hazır.^^Savaş {s3}{s4}'de yapılıyor.^^Emirlerin?
 mno_encounter_attack|{reg21?Hücum et:Karşılaşmaya hazırlan}.
 mno_encounter_order_attack|Askerlerine sensiz {reg21?saldırmalarını:çarpışmalarını} emret.
+mno_control_allies_menu|Alanda müttefikleri yönetmek için Nüfuz kullan.
 mno_encounter_hide|Düşmandan saklan...
 mno_special_whip|Parçalamak için ileri atıl {s4}.
 mno_encounter_leave|Geri çekil.
 mno_encounter_retreat|Kaçışını sağlamaları için birkaç askerini arkada bırakarak geri çekil.
+mno_player_control_allies_simple|Onları yönet ve düşmana saldır
+mno_player_control_allies_back|Geri çekilin...
 mno_hide_close|Devam et...
 menu_encounter_retreat_confirm|^^^^^Grubunun taktik yetenekleri en yüksek üyesi olarak,({reg2}), {reg3?you devise:{s3} devises} senin ve askerlerinin hayatlarının kurtararak kaçmalarını sağlayacak bir plan öneriyor, fakat düşmanın seni takip etmesini engellemek için {reg4} taneaskerini arkada bırakmak zorunda kalacaksın.
 mno_leave_behind|Devam et. Bu adamların fedakarlığı geri kalanları kurtaracak.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Karışma.
 menu_join_battle|^^^{s1} e rakip olarak {s2}'ye yardım ediyorsun.^ Düşmanın {reg11} askerine karşı senin {reg22} askerin bulunuyor.^^Savaş {s3}{s4}'da gerçekleşiyor .
 mno_join_attack|Düşmana hücum et.
 mno_join_order_attack|Askerlerine, sen geride kalırken müttefiklerinizle saldırmalarını emret.
+mno_control_allies_join_menu|Alanda müttefikleri yönetmek için Nüfuz puanı kullan.
 mno_join_leave|Geri çekil.
+mno_player_control_allies_join_menu|Onları yönet ve düşmana saldır
 menu_join_order_attack|{s4}^^Senin kayıpların: {s8}^^Müttefikinin kayıpları: {s9}^^Düşmanın kayıpları: {s10}
 mno_enter|Giriş.
 menu_battlefields|^^^^^^^^^^Savaş Bölgesi Seç.
@@ -357,7 +368,9 @@ mno_horse_archer_field_ai|Atlı Okçular Gelişmiş Savaş Alanı Yapay Zekasın
 mno_vs_orcs_field_ai|Okçular orklara karşı daha iyi nişan alsınlar (orkların kafalarına hedef almazlar): {s7}
 mno_battlefield_animals|Warg olmayan / At veya Hayvan Yoldaşları Savaşta oluştur: {s7}
 mno_slow_when_wounded|Kişiler yaralanınca yavaşlar: [s7]
-mno_battle_encounter_effects|Savaş Bölgelerinde Gruplaşma Tabanlı Efektler (Örn. fırtınalar, sisler): {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+menu_hungry_orc|hiçbiri
+menu_leaving_elf|hiçbiri
 mno_defend_refugees|Yağmacılar için tetikte kal....
 mno_attack_refugees|Mülteci kervanına saldır...
 mno_leave_refugees|Onları şimdilik bırakın...
@@ -413,6 +426,7 @@ mno_leave_pyre|Kremasyon alanını terket.
 menu_town_ruins|{s1} 'in {s2} oldupunu görmek için yaklaştığında..
 mno_ruin_menu_0|Etrafı keşfet.
 mno_ruin_leave|Ayrıl...
+menu_premutiny|hiçbirşey
 menu_death|Öldürüldün. Savaş devam etse bile artık onun bir parçası değilsin.
 menu_animal_ambush|Yoldaşlarınla birlikte kendinizi grubunuzdan izole edilmiş olarak buluyorsunuz ve aniden...
 menu_animal_ambush_success|Tıpkı ekinlerin orağa boyun eğdiği gibi, {s2}'de sana {reg0?eğiliyor:eğiliyorlar}! Çok geçmeden tüm saldırganlar yerde yatıyor, yaralı ya da ölü. {s3}

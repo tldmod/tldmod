@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|Je ferais mieux la prochaine fois.
 dlga_lord_start:lord_generic_mission_completed.4|Nous avons vu les flammes s'élever depuis un village proche de {s12}. Nous avons entendu les hurlements par delà les bois. Ce n'est que le commencement {playername}. ^^Bientôt la guerre embrasera le monde.
 dlga_lord_start:raid_village_failed|Nous avons vu certains de vos hommes fuir du village près de {s12}. Vous osez revenir ici et montrer votre visage, {playername}?. ^^Bientôt nous serons en guerre, et un échec de cette sorte vous coutera la vie.
 dlga_raid_village_failed:close_window|Je ferais mieux la prochaine fois.
+dlga_lord_start:lord_target_lord_failed|J'ai appris que vous aviez échoué à accomplir ce que je vous ai demandé. C'est décevant {playername}.
+dlga_lord_target_lord_failed:close_window|Je ferais mieux la prochaine fois.
 dlga_lord_start:lord_generic_mission_completed.5|Vos hommes ont été témoins de votre bravoure au combat {playername}. Vous avez démontré notre supériorité.
 dlga_lord_start:kill_quest_failed|J'ai appris que vous aviez échoué à accomplir ce que je vous ai demandé. C'est décevant {playername}.
 dlga_lord_start:lord_generic_mission_completed.6|Vos hommes ont été témoins de votre bravoure au combat {playername}. Vous avez gagné mon respect.
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|Pouvez-vous me dire ce que vous faites ?
 dlga_mayor_talk:merchant_quest_requested|Comment puis-je servir notre cause ?
 dlga_mayor_talk:merchant_quest_last_offered_job|À propos de la tâche que vous m'aviez proposée...
 dlga_mayor_talk:merchant_quest_about_job|À propos de la tâche que vous m'aviez donnée...
+dlga_mayor_talk:mayor_talk_ask_location|Je voudrais connaître la position de quelqu'un.
 dlga_mayor_talk:close_window|[Quitter]
 dlga_mayor_info_begin:mayor_info_talk|Je suis l'autorité locale ici à {s9}. Vous pouvez dire que je suis en charge des tâches quotidiennes. Il y a toujours quelque chose à faire, donc si vous voulez aider, faites-le moi savoir.
 dlga_mayor_info_talk:mayor_info_lord|Qui règne sur cette ville ?
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|J'espère que vous n'avez pas éc
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Très bien, faites de votre mieux.
 dlga_merchant_quest_taken:mayor_pretalk|Excellent. Alors je compte sur vous. Bonne chance.
 dlga_merchant_quest_stall:mayor_pretalk|Bien, je vais devoir trouver quelqu'un d'autre. Mais dites-moi si vous changez d'avis.
+; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|Tout bien consideré, je ne pense pas que cela soit nécessaire
 dlga_merchant_quest_requested:merchant_quest_brief|Bien, vous semblez assez habile. Je pense que je dois avoir quelque chose que vous pouvez faire.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Nous avons eu quelques affrontements aux alentours de {s5} récemment, avec tout le chaos qui va avec, et cela a attiré quelques bandes d'Orques tribaux voulant piller les environs durant la confusion. J'ai besoin de quelqu'un pour donner à ces Orques une bonne leçon. C'est dans vos cordes ?
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|Oui, je vais le faire.

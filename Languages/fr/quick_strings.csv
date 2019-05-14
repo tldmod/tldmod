@@ -214,6 +214,7 @@ qstr_when_equipped|lorsque équipé
 qstr_+1_to_Strength|+1 de Force
 qstr_+1_to_Agility|+1 d'Agilité
 qstr_+1_to_Leadership|+1 de Sens du commandement
+qstr_+1_to_Wildcraft|+1 en Vie Forestière
 qstr_+1_to_Power_Draw|+1 de Puissance de tension
 qstr_Turns_nature_to_your|Rendre la nature de votre coté (équilibre les effets de la compétence Vie Forestière)
 qstr_+1_to_Trainer|+1 à la compétence Mentor
@@ -223,14 +224,15 @@ qstr_rallies|rallie
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} au combat
 qstr_+1_to_Charisma|+1 de Charisme
 qstr_+1_to_Surgery|+1 en Chirurgie
-qstr_+1_to_Wildcraft|+1 en Vie Forestière
 qstr_+1_to_Ironflesh|+1 de Santé de Fer
 qstr_+1_to_Prisoner_Mgmt|+1 en Gestion des prisonniers
 qstr_+2_to_Tactics|+2 en Tactique
 qstr_+3_to_Spotting|+3 en Repérage
 qstr_Less_Dunnish_upkeep|coût d'entretien des Hommes du Pays de Dun réduit
 qstr_Less_Wargs_upkeep|coût d'entretien des Wargs réduit
+; qstr_Light_Armor|Light Armor
 qstr_+{reg1}_to_Party_Mor|+{reg1} au moral du groupe
+; qstr_Shoot_Speed:_{reg55}|Shoot Speed: {reg55}
 qstr_Do_you_want_to_disem|Voulez-vous débarquer ?
 qstr_Move_here|Se déplacer ici
 qstr_View_notes|Voir notes
@@ -873,6 +875,7 @@ qstr_Unknown_{reg3}_|Inconnu({reg3})
 qstr_ON|ACTIVÉ
 qstr_OFF__cheat_|DÉSACTIVÉ (triche)
 qstr_OFF|DÉSACTIVÉ
+; qstr_All_messages|All messages
 qstr_{reg0}__will_most_li|{reg0} (causera probablement de crashes de sauvegarde)
 qstr_{reg0}__could_possib|{reg0} (peut causer des crashs de sauvegarde)
 qstr_Normal|Normal
@@ -912,6 +915,7 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Un groupe de {s1} est {s10} vers vous.
 qstr_You_are_attacking_a_|Vous attaquez un groupe de {s1}.
 qstr_The_battle_against_t|La bataille contre le groupe de {s1} continue.
+; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
 qstr_Having_a_small_party|Avoir un petit groupe à ses avantages... Vous et vos troupes vous cachez de l'ennemi pendant quelques heures pour être sur de ne pas avoir été vus.
 qstr_Your_ability_to_surv|Votre habilité à survivre en environnement hostiles vous à permis de trouver un endroit sur pour vous cacher. (Vottre compétence en Vie Forestière vous permet de vous cacher avec {reg1} troupes)
 qstr_{reg4}_will_be_lost.|{reg4} seront perdus.
@@ -1206,6 +1210,10 @@ qstr_It_is_my_duty_to_prot|C'est mon devoir de protéger nos alliés.
 qstr_I_am_{s4}_{s15}_of_{|Je suis {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Je suis {s4}, un commandant de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? et le dirigeant de {s8}.:.
+; qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
+; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that.
+; qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
+; qstr__I_should_rather_mak| I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!
 qstr_Very_well_done_{play|Très bien, {playername} ! Vous avez capturé à la fois l'espion et son commanditaire, comme je l'espérais, et le duo est maintenant sous bonne garde, attendant d'être interrogé. Ils auront quelques explications à donner ! En tout cas, je suis très heureux de votre succès, {playername}, et je vous donne cette bourse en témoignage de ma gratitude.
 qstr_Beautiful_work_{play|Beau travail, {playername} ! Vous avez capturé à la fois l'espion et son commanditaire, comme il vous l'était demandé, et la paire est maintenant sous bonne garde dans mon donjon, attendant d'être interrogée. Mon bourreau sera occupé, cette nuit ! Quoi qu'il en soit, je suis très satisfais de votre succès, {playername}, et je vous donne cette bourse en guise en gage de ma gratitude.
 qstr_Foiling_the_enemy_s_|Déjouer les tentatives de l'ennemi d'attaquer les convois de réfugiés à affaibli leur résolution. ({s1} à perdu {reg19} puissance de faction suite à votre victoire contre {reg18} pillards).
@@ -1355,6 +1363,13 @@ qstr_We_are_at_war_with_{|Nous sommes en guerre avec {s12}. Cependant, nous comb
 qstr_We_are_at_war_with_{s|Nous sommes en guerre avec {s12}. Cependant, il n’y a que de petites escarmouches pour l’instant.
 qstr_we_are_not_too_conce|Ils ne nous préocupent pas vraiment pour l’instant, nous combattons d’autres ennemis plus proches de nos terres.
 qstr__under_your_orders|, à vos ordres
+; qstr_{playername}_you_may|{playername}, you may have seen the hosts of {s7}. Of all the captains arrayed against us, at present {s7} of {s8} has won the greatest renown. Their mere presence on the field is enough to embolden our enemies and weaken the resolve of our allies. {playername}, if you wish to do a great deed in this war, strike down the host of {s7} in open battle, in sight of all! Thus may hope be rekindled, and dread fill the hearts of those who would come against us.
+; qstr_Do_you_mark_how_our_|Do you mark how our bravest fighters falter at the mere mention of {s7} of {s8}? A great warrior, oh yes, a capable captain. We cannot allow that to run amok like this! Everywhere their face is shown, our lines bend back, and our foes find new courage. This cannot be. I command that you, {playername}, challenge and defeat the soldiers of {s7} in open battle. To see {s7} struck down by you will freeze the blood and marrow of his followers, and show our own troops that our enemies can be thrown down!
+; qstr_This_is_a_chance_for|This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike.
+; qstr_Accursed_be_those_wh|Accursed be those who follow {s7} this day, for I shall strike them down for all to see!.
+; qstr_{s9}_wants_you_to_de|{s9} wants you to defeat {s35} of {s36} in battle.
+; qstr_I_humbly_ask_that_yo|I humbly ask that you find another for this task. I do not think I could best {s7} in battle.
+; qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!
 qstr_strong_warriors_from|puissant guerriers de {s7}
 qstr_champions_from_{s7}_|champions de {s7}, les meilleures au combat
 qstr_{playername}_the_men|{playername}, les hommes ont entendu parler de troupes ennemies féroces. Les histoires de ces terreurs démoralisent les hommes. Je veux que vous montriez aux hommes qu'ils n'ont rien à craindre. Je veux que vous battiez personnellement {reg22} {s6}.

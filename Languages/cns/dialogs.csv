@@ -241,6 +241,8 @@ dlga_defend_village_failed:close_window|我下次会做得更好的。
 dlga_lord_start:lord_generic_mission_completed.4|我们看到{s12}附近的村庄闪着火光。 我们听到尖叫。然而这只是开始，{playername}。 ^^战争就要来了。
 dlga_lord_start:raid_village_failed|{playername}，我们看到一些你的人疯狂的逃离了{s12}附近的村庄。你还有脸回来？^^战争已成必然，但像这样的惨败，你恐怕将是这场战争的第一批伤亡者。
 dlga_raid_village_failed:close_window|我下次会做得更好的。
+dlga_lord_start:lord_target_lord_failed|我听说你没能完成我给你的任务。 {playername}，你真是令人失望。
+dlga_lord_target_lord_failed:close_window|我下次会做得更好的。
 dlga_lord_start:lord_generic_mission_completed.5|你的手下见证了你在战场上的勇猛，{playername}。你向他们展示了我们至高无上的力量。
 dlga_lord_start:kill_quest_failed|我听说你没能完成我给你的任务。 {playername}，你真是令人失望。
 dlga_lord_start:lord_generic_mission_completed.6|你的手下见证了你在战场上的勇猛，{playername}。请让我向你表示敬意。
@@ -874,6 +876,7 @@ dlga_mayor_talk:mayor_info_begin|你能告诉我你是做什么的吗？
 dlga_mayor_talk:merchant_quest_requested|我该如何为我们共同的事业奋斗？
 dlga_mayor_talk:merchant_quest_last_offered_job|关于你需要我完成那件任务…
 dlga_mayor_talk:merchant_quest_about_job|关于你给我的那件任务…
+dlga_mayor_talk:mayor_talk_ask_location|我想了解某人现在的位置。
 dlga_mayor_talk:close_window|[离开]
 dlga_mayor_info_begin:mayor_info_talk|我是{s9}的地方长官，或者说我帮助这里的领主处理一些日常工作。我这儿总是有不少活要干，如果你想帮忙的话请告诉我。
 dlga_mayor_info_talk:mayor_info_lord|谁统治这个城镇？
@@ -888,6 +891,8 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|我希望你不要失败，我们
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|嗯，尽力而为吧。
 dlga_merchant_quest_taken:mayor_pretalk|很好。我可就指望你了。祝你好运。
 dlga_merchant_quest_stall:mayor_pretalk|好吧，我会试着找其他志愿者帮忙，如果你改变主意的话请告诉我。
+; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location_2:mayor_pretalk|没什么。
 dlga_merchant_quest_requested:merchant_quest_brief|嗯，你看起来很有能力的样子。我想我的确有一些事情可以交给你去做。
 dlga_merchant_quest_brief:merchant_quest_looters_choice|我们最近在{s5}周围打了一仗，现在看来那里的混乱吸引了几支部落半兽人在周边劫掠。我希望有人能给那群蠢货好好上一课。你觉得自己适合这份工作么？
 dlga_merchant_quest_looters_choice:merchant_quest_looters_brief|好，我会搞定的。

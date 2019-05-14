@@ -674,8 +674,8 @@ trp_olog_hai|魔 多 歐 羅 海
 trp_olog_hai_pl|魔 多 歐 羅 海
 trp_ent|樹 人 
 trp_ent_pl|樹 人 
-trp_orc_snaga_of_guldur|多 爾 哥 多 半 獸 人 新 兵 
-trp_orc_snaga_of_guldur_pl|多 爾 哥 多 半 獸 人 新 兵 
+trp_orc_snaga_of_guldur|多爾哥多半獸人奴隸
+trp_orc_snaga_of_guldur_pl|多爾哥多半獸人奴隸
 trp_orc_of_guldur|多 爾 哥 多 半 獸 人 追 蹤 者
 trp_orc_of_guldur_pl|多 爾 哥 多 半 獸 人 追 蹤 者
 trp_orc_snaga_of_mordor|魔 多 半 獸 人 新 兵 
@@ -690,10 +690,10 @@ trp_warg_rider_of_gorgoroth|葛 哥 洛 斯 座 狼 騎 手
 trp_warg_rider_of_gorgoroth_pl|葛 哥 洛 斯 座 狼 騎 手
 trp_great_warg_rider_of_mordor|烏 頓 大 座 狼 騎 手
 trp_great_warg_rider_of_mordor_pl|烏 頓 大 座 狼 騎 手 
-trp_morgul_orc|魔 窟 半 獸 人 
-trp_morgul_orc_pl|魔 窟 半 獸 人 
-trp_fell_morgul_orc|魔 窟 殘 暴 半 獸 人 
-trp_fell_morgul_orc_pl|魔 窟 殘 暴 半 獸 人 
+trp_morgul_orc|米那斯魔窟半獸人
+trp_morgul_orc_pl|米那斯魔窟半獸人
+trp_fell_morgul_orc|米那斯魔窟殘暴半獸人
+trp_fell_morgul_orc_pl|米那斯魔窟殘暴半獸人
 trp_orc_tracker_of_mordor|多 爾 哥 多 大 型 半 獸 人 追 蹤 者
 trp_orc_tracker_of_mordor_pl|多 爾 哥 多 大 型 半 獸 人 追 蹤 者
 trp_fell_orc_tracker_of_mordor|多 爾 哥 多 殘 暴 半 獸 人 追 蹤 者
@@ -722,8 +722,9 @@ trp_a2_archer_snaga_of_moria|摩 瑞 亞 哥 布 林 弓 兵
 trp_a2_archer_snaga_of_moria_pl|摩 瑞 亞 哥 布 林 弓 兵
 trp_a3_large_goblin_archer_of_moria|摩 瑞 亞 大 型 哥 布 林 弓 兵
 trp_a3_large_goblin_archer_of_moria_pl|摩 瑞 亞 大 型 哥 布 林 弓 兵
-trp_i5_deep_dweller_of_moria2|摩 瑞 亞 深 淵 民
-trp_i5_deep_dweller_of_moria2_pl|摩 瑞 亞 深 淵 民
+trp_a4_fell_goblin_archer_of_moria|摩 瑞 亞 殘 暴 哥 布 林 弓 兵
+trp_a4_fell_goblin_archer_of_moria_pl|摩 瑞 亞 殘 暴 哥 布 林 弓 兵
+
 trp_i1_goblin_gundabad|剛 達 巴 哥 布 林 
 trp_i1_goblin_gundabad_pl|剛 達 巴 哥 布 林 
 trp_i2_orc_gundabad|剛 達 巴 半 獸 人 
@@ -750,8 +751,8 @@ trp_tribal_orc|部 落 半 獸 人
 trp_tribal_orc_pl|部 落 半 獸 人 
 trp_tribal_orc_warrior|部 落 半 獸 人 戰 士
 trp_tribal_orc_warrior_pl|部 落 半 獸 人 戰 士
-trp_i5_orc_chieftain_of_moria2|摩 瑞 亞 半 獸 人 頭 目
-trp_i5_orc_chieftain_of_moria2_pl|摩 瑞 亞 半 獸 人 頭 目
+trp_i5_orc_champion_gundabad|剛 達 巴 半 獸 人 冠 軍
+trp_i5_orc_champion_gundabad_pl|剛 達 巴 半 獸 人 冠 軍
 trp_black_numenorean_renegade|黑 努 美 諾 爾 叛 徒
 trp_black_numenorean_renegade_pl|黑 努 美 諾 爾 叛 徒
 trp_black_numenorean_warrior|黑 努 美 諾 爾 戰 士 
@@ -1582,3 +1583,16 @@ trp_i5_orc_chieftain_of_moria|摩 瑞 亞 半 獸 人 頭 目
 trp_i5_orc_chieftain_of_moria_pl|摩 瑞 亞 半 獸 人 頭 目
 trp_rhovanion_noble|羅 馬 尼 安 貴 族
 trp_rhovanion_noble_pl|羅 馬 尼 安 貴 族
+; trp_npc18|Turmbathu
+; trp_npc19|Heidrek
+trp_npc20|齊格爾菲爾
+trp_werewolf|狼 人
+; trp_werewolf_pl|Werewolves
+trp_mountain_goblin2|山 地 哥 布 林 
+trp_mountain_goblin2_pl|山 地 哥 布 林 
+trp_tribal_orc2|部 落 半 獸 人
+trp_tribal_orc2_pl|部 落 半 獸 人 
+trp_tribal_orc_warrior2|部 落 半 獸 人 戰 士
+trp_tribal_orc_warrior2_pl|部 落 半 獸 人 戰 士
+trp_tribal_orc_chief2|部 落 半 獸 人 酋 長
+trp_tribal_orc_chief2_pl|部 落 半 獸 人 酋 長

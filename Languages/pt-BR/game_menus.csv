@@ -88,6 +88,9 @@ mno_start_bn|NUMENORIANOS negros, os renegados do Oeste
 mno_start_um|UMBAR, os piratas dos Mares do Sul
 mno_start_rh|RHUN, os bárbaros do Leste
 mno_start_kh|KHÂND, o povo selvagem do Sudeste
+menu_start_eye_uruk|^^^^^^^^^^Onde você irá se esconder? 
+mno_start_arm_uruk|nos exércitos de MORDOR
+mno_start_cav_uruk|nas cavernas de DOL GULDUR
 menu_start_eye_orc|^^^^^^^^^^Onde você irá se esconder?
 mno_start_arm|nos exércitos de MORDOR
 mno_start_cav|nas cavernas de DOL GULDUR
@@ -101,6 +104,9 @@ mno_start_2_hib|Bem nascido
 menu_start_haradrim|^^^^^^^Você é um Haradrim, ^um Homem do Deserto.^Selecione sua linhagem
 mno_start_1_des|Homem do Deserto
 mno_start_2_far|Homem da distante tribo de Harad
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Seu sexo?
 mno_start_male|Masculino
 mno_start_female|Feminino
@@ -189,10 +195,13 @@ mno_leave|Vai embora.
 menu_simple_encounter|^^^^^{s2}^Você tem {reg22} tropas à disposição para batalhar contra seus {reg11}.^^A batalha será em {s3}{s4}.^^Suas ordens?
 mno_encounter_attack|{reg21?Carregá-los: Preparar para encará-los}.
 mno_encounter_order_attack|Ordena suas tropas para {reg21?attack:face them} sem você.
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|Esconder-se do inimigo...
 mno_special_whip|Precipitar-se na direção deles, fraturando o {s4}.
 mno_encounter_leave|Separar.
 mno_encounter_retreat|Recuar, deixando alguns soldados para trás para encobrir sua retirada.
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|Continuar...
 menu_encounter_retreat_confirm|^^^^^Como membro do grupo com as melhores habilidades táticas, ({reg2}), {reg3?you devise:{s3} devises} um plano que permitirá você e seus homens de escapar com vida, mas você terá que deixar {reg4} alguns soldados para trás, como forma de fazer o inimigo parar de persegui-los.
 mno_leave_behind|Vai em frente. O sacrifício desses homens irá salvar a vida do resto.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Não se envolver.
 menu_join_battle|^^^Você está ajudando {s2} contra {s1}.^ Você tem {reg22} tropas prontas para a batalha contra o inimigo {reg11}.^^A batalha está acontecendo em {s3}{s4}.
 mno_join_attack|Investir contra o inimigo.
 mno_join_order_attack|Ordenar suas tropas para atacar junto dos aliados enquanto você fica atrás.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Separar.
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Suas vítimas: {s8}^^Vítimas dos aliados: {s9}^^Vítimas do inimigo: {s10}
 mno_enter|Entrar.
 menu_battlefields|^^^^^^^^^Selecione um campo...
@@ -357,7 +368,9 @@ mno_horse_archer_field_ai|Arqueiros a cavalo têm IA de combate melhorados: {s7}
 mno_vs_orcs_field_ai|Arqueiros têm mira melhor contra orcs (não miram acima das cabeças dos orcs): {s7}
 mno_battlefield_animals|Não-Warg / cavalo animais companheiros aparecem em batalha: {s7}
 mno_slow_when_wounded|Agentes ficam mais Devagar quando estão Feridos: {s7}
-mno_battle_encounter_effects|Efeitos Especiais Baseados em Facções em Campos de Batalha (por exemplo, tempestades, névoas):  {s7} \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 mno_defend_refugees|Mantenha a vigia por saqueadores...
 mno_attack_refugees|Atacar o comboio de refugiados...
 mno_leave_refugees|Deixá-los por enquanto...
@@ -413,6 +426,7 @@ mno_leave_pyre|Abandonar a pira.
 menu_town_ruins|Quando você se aproxima, você vê que {s1} é {s2}
 mno_ruin_menu_0|Explorar o lugar.
 mno_ruin_leave|Sair... 
+; menu_premutiny|none
 menu_death|Você foi morto. Apesar da guerra continuar, você não mais faz parte dela.
 menu_animal_ambush|Você e seus companheiros se encontram separados do resto do grupo, quando de repente...
 menu_animal_ambush_success|Os {s2} {reg0?fall:falls} antes de você como o trigo para a foice! Logo todos os seus agressores caem no chão, feridos ou mortos. {s3}

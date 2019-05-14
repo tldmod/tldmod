@@ -214,6 +214,7 @@ qstr_when_equipped|pokiaľ je nasadené
 qstr_+1_to_Strength|+1 k Sile
 qstr_+1_to_Agility|+1 k Pohyblivosti
 qstr_+1_to_Leadership|+1 k Vodcovstvu
+qstr_+1_to_Wildcraft|+1 na Wildcraft
 qstr_+1_to_Power_Draw|+1 k Silnému napnutiu
 qstr_Turns_nature_to_your|Otočí prírodu na svoju stranu (efektívne váhy so systémom Wildcraft)
 qstr_+1_to_Trainer|+1 k Trénerovi
@@ -223,14 +224,15 @@ qstr_rallies|inšpiruje
 qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} v boji
 qstr_+1_to_Charisma|+1 k Charisme
 qstr_+1_to_Surgery|+1 k Chirurgii
-qstr_+1_to_Wildcraft|+1 na Wildcraft
 qstr_+1_to_Ironflesh|+1 k Valibukovi
 qstr_+1_to_Prisoner_Mgmt|+1 k Väzneniu
 qstr_+2_to_Tactics|+2 k Taktike
 qstr_+3_to_Spotting|+3 k Pozorovaniu
 qstr_Less_Dunnish_upkeep|Menší žold Vrchovcov
 qstr_Less_Wargs_upkeep|Menší žold vrrkov
+qstr_Light_Armor|Ľahké brnenie
 qstr_+{reg1}_to_Party_Mor|+{reg1} k Morálke družiny
+qstr_Shoot_Speed:_{reg55}|Rýchlosť strely: {reg55}
 qstr_Do_you_want_to_disem|Chceš vystúpiť?
 qstr_Move_here|Poď sem
 qstr_View_notes|Prezrieť si poznámky
@@ -288,7 +290,7 @@ qstr_dwarven|trpasličí
 qstr_orc|ohyzdí
 qstr_uruk|uruskský
 qstr_uruk_hai|uruk-haiský
-qstr_trollish|trolský
+qstr_trollish|zlobrí
 qstr_man|ľudský
 qstr_riding|jazdectvo
 qstr_marching|pochodovanie
@@ -746,7 +748,7 @@ qstr_{s21}_{reg24?killed:|{s21} {reg24?bol zabitý, upadol do bezvedomia}, môž
 qstr_A_bear_has_been_summ|Na bojišti sa objavil medveď!
 qstr_In_The_Last_Days_of_|V Posledných Dňoch Tretieho Veku sa tvoje jednotky na začiatku každého boja umiestnia samé namiesto toho, aby bezhlavo zaútočili.^^Aby si im prikázal vytvoriť formáciu, stlač 'J' pre Línie, 'K' pre Štítovú stenu, 'L' pre Klín, ';' pre Štvorec. Pre zrušenie formácie stlač 'U'. ^Pokiaľ tvoje jednotky uháňajú z boja, môžeš stisnúť 'V', aby si ich vyburcoval/inšpiroval. V jednom boji máš len obmedzené množstvo burcovania jednotiek, a množstvo závisí na tvojom Vodcovstve a Charizme.
 qstr_You_can_also_order_y|Tiež môžeš svojim jednotkám určiť, aký typ zbrane majú v boji používať.^^ Stlač O pre výber z niekoľkých Rozkazov pre Zbrane. Stisni P pre výber z Rozkazov pre Štíty.
-qstr_The_Last_Days_of_the|Posledné Dni Tretieho Veku majú zabudovanú Vlastnú Kameru, aby bolo predídené obmedzeniam základnej kamery vzhľadom na menšie rasy (napr. ohyzdi a trpaslíci).^^Stisni CTRL + END pre výber medzi 2 režimami kamery: Upravená pozícia a Voľný režim.^^ Upravená pozícia je optimálna pozícia pre všetky rasy, ale nemôže byť už ďalej upravovaná. Môžeš stisnúť CTRL+Ľavú/Pravú klávesu šipky pre výber medzi kamerou z pohľadu ramien.^^Voľný mód kamery je nastavený tak, aby bola vaša postava vždy uprostred obrazovky. Môžete stlačiť CTRL+Horná/Dolná klávesa šipky pre nastavenie náklonu kamery a CTRL+ klávesa čísel +/- pre odďaľovanie a približovanie.^^ Nazrite do Info Stránok pre vysvetlenie, ako nastavovať rôzne kamerové režimy.
+qstr_The_Last_Days_of_the|Posledné Dni Tretieho Veku majú zabudovanú Vlastnú Kameru, aby bolo predídené obmedzeniam základnej kamery vzhľadom na menšie rasy (napr. ohyzdi a trpaslíci).^^Stisni CTRL + END pre výber medzi 2 režimami kamery: Upravená pozícia a Voľný režim.^^ Upravená pozícia je optimálna pozícia pre všetky rasy, ale nemôže byť už ďalej upravovaná. Môžeš stisnúť CTRL+Ľavú/Pravú klávesu šipky pre výber medzi kamerou z pohľadu ramien.^^Voľný mód kamery je nastavený tak, aby bola vaša postava vždy uprostred obrazovky. Môžete stlačiť CTRL+Horná/Dolná klávesa šipky pre nastavenie náklonu kamery a CTRL+ klávesa čísel +/- pre odďaľovanie a približovanie.^^ Nazrite do Info Stránok pre vysvetlenie, ako nastavovať rôzne kamerové režimy.
 qstr_Battlefield_is_too_s|Bojové pole je príliš malé pre komplexné formácie umelej inteligencie.
 qstr_You_have_a_clear_per|Vnímaš všade v okolí veľké hroziace nebezpečenstvo!
 qstr_New_ent_reached_batt|Nový ent dorazil do boja...
@@ -873,6 +875,7 @@ qstr_Unknown_{reg3}_|Neznámy ({reg3})
 qstr_ON|ON
 qstr_OFF__cheat_|OFF (cheat - kódy, podvádzanie)
 qstr_OFF|OFF
+qstr_All_messages|Všetky správy
 qstr_{reg0}__will_most_li|{reg0} (s veľkou pravdepodobnosťou bude spôsobovať crashe - zamŕzanie hry)
 qstr_{reg0}__could_possib|{reg0} (pravdepodobne bude spôsobovať crashe - zamŕzanie hry)
 qstr_Normal|Normálne
@@ -884,8 +887,8 @@ qstr_Tripled|Trojnásobné
 qstr_Quadrupled|Štvornásobné
 qstr_You_drank_the_Ent_Wa|Vypil si Entskú vodu...
 qstr_Fangorn_search:_fail|Skúmanie Farngornu: neúspešné.
-qstr_Troll_caged_in_wheel|Trol uväznený vo voze.
-qstr_A_second_troll_is_ca|Druhý trol uväznený vo voze.
+qstr_Troll_caged_in_wheel|Zlobor uväznený vo voze.
+qstr_A_second_troll_is_ca|Druhý zlobor uväznený vo voze.
 qstr_Here_you_are.|Tak tu si.
 qstr_Player_was_moved_to_|Hráč bol presunutý do {s10}.
 qstr_neutral_whereabouts|neutrálna oblasť
@@ -897,7 +900,7 @@ qstr_dunlander|vrchovec
 qstr_urukhai|urukhai
 qstr_haradrim|haraďan
 qstr_dwarf|trpaslík
-qstr_troll|trol
+qstr_troll|zlobor
 qstr_dunedain|dunedain
 qstr_lothlorien|lothlorien
 qstr_rivendell|imladris
@@ -912,6 +915,7 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Skupina {s1} je {s10} ti naproti.
 qstr_You_are_attacking_a_|Útočíš na skupinu {s1}.
 qstr_The_battle_against_t|Bitka proti skupine {s1} pokračuje.
+; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
 qstr_Having_a_small_party|Vedenie malej družiny má svoje výhody...Ty a tvoje jednotky sa schovávate niekoľko hodín pred nepriateľmi, aby ste sa uistili, že vás nik nespozoruje.
 qstr_Your_ability_to_surv|Tvoja schopnosť prežiť za drsných podmienok ti umožňuje nájsť si bezpečnú skrýšu. (Tvoja schopnosť Zbojníctvo ti dovoľuje schovať sa s {reg1} jednotkami)
 qstr_{reg4}_will_be_lost.|{reg4} zahynie.
@@ -1039,7 +1043,7 @@ qstr_Your_party_is_spotte|Tvoju družinu pozorujú z {s1}u.
 qstr_Party_has_nothing_to|Družina hladuje!
 qstr_You_pay_for_accommod|Platíš za ubytovanie.
 qstr_Your_scouts_have_rep|Tvoji prieskumníci hlásia, že sa {s2} nachádza neďaleko {s3}u.
-qstr_The_troll_outside_{s|Trol pred {s2}om bol zabitý. Misia je zrušená. 
+qstr_The_troll_outside_{s|Zlobor pred {s2}om bol zabitý. Misia je zrušená. 
 qstr_{s1}_was_killed_on_t|{s1} bol zabitý v boji. Úloha zrušená.
 qstr_{s1}_has_been_defeat|{s1} bol porazený. Misia zrušená.
 qstr_You_must_follow_{s1}|Musíš nasledovať {s1}a!
@@ -1127,14 +1131,14 @@ qstr_What_s_zupdog?|Čo je to zupdog?
 qstr_My_zupdog_is_ill_but|Môj zupdog je chorý, ale priniesol som si svoj zupmaiass.
 qstr_Wai_no_plate_armour_|Počkať, v tomto móde nie je plátové brnenie???
 qstr_What_is_plate_armour|Čo to je plátové brnenie? Nikdy som i niečom takom nepočul.
-qstr_Wai_no_female_trolls|Počkať, žiadne trolie samice? Eh? Eh? Ty moja dievčica!
+qstr_Wai_no_female_trolls|Počkať, žiadne zlobrie samice? Eh? Eh? Ty moja dievčica!
 qstr_WHEN_U_REALSE_MOD?!!|KEDY VYDÁTE MÓD!!?
 qstr_But_we_did_release._|Ale my sme ho už vydali. Práve si v ňom. A vôbec, prečo kričíš?
 qstr_YES!_ALSO_SOMETIMES_|ÁNO! TIEŽ NIEKEDY JE!
 qstr_Wai_u_no_work_wiht_o|Poškaď, to nepracujede z ostatními mótmi aby ste vytvoriľy super LOTR mót?
 qstr_Every_mod_team_works|Každý módovací tým pracuje podľa ich štandardov. Nemôžeš spolupracovať s niekým, kto má rozdielne ciele. 
 qstr_Because_we_don_t_hav|Pretože nemáme zmysel pre humor a väčšina z nich je pre nás príliš smiešna.
-qstr_In_movies_trolls_are|Vo filmoch sú trolovia veľký a macatý, prečo ste z nich urobili špáradlá? 
+qstr_In_movies_trolls_are|Vo filmoch sú zlobri veľkí a macatí, prečo ste z nich urobili špáradlá? 
 qstr_We_interpreted_Tolki|Urobili sme ich podľa Tolkiena.
 qstr_But_we_did_make_you_|Ale urobili sme ťa hlúpym podobne ako vo filmoch. Bod pre nás, dobrá práca.
 qstr_What_is_news?_Got_an|Máte nejaké novinky? A screenshoty?
@@ -1206,6 +1210,10 @@ qstr_It_is_my_duty_to_prot|Je mojou povinnosťou chrániť našich spojencov.
 qstr_I_am_{s4}_{s15}_of_{|Som {s4}, {s15} z {s6}u
 qstr_I_am_{s4}_a_commande|Som {s4}, veliteľ {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? a panovník {s8}.:.
+; qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
+; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that.
+; qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
+; qstr__I_should_rather_mak| I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!
 qstr_Very_well_done_{play|Výborná práca, {playername}! Chytil si špeha i jeho navádzača, presne ako som dúfal. Tento párik teraz trčí v cele čakajúc na výsluch. Budú nám musieť vysvetliť niekoľko vecičiek. Tak či onak, som nadmieru spokojný s tvojím úspechom, {playername}. Dám ti tento mešec ako znak môjho uznania.
 qstr_Beautiful_work_{play|Vynikajúca práca, {playername}! Zajal si špeha i jeho navádzača, presne podľa rozkazu, a tí dvaja teraz trčia dôkladne uväznení v žalári, čakajúc na výsluch. Môj mučiteľ bude dnes večer zaneprázdnený! Tak či onak, som nadmieru spokojný s tvojím úspechom, {playername}. Dám ti tento mešec na znak môjho uznania.
 qstr_Foiling_the_enemy_s_|Prekazenie nepriateľských útokov na utečenecké davy oslabilo sily tvojich protivníkov ({s1} stratil {reg19} bodov sily frakcie vďaka tvojmu víťazstvu nad {reg18} nájazdníkmi).
@@ -1355,6 +1363,13 @@ qstr_We_are_at_war_with_{|Sme vo vojne s {s12}. Ale bojujeme hlavne s {s13}.
 qstr_We_are_at_war_with_{s|Sme vo vojne s {s12}. Ale momentálne dochádza len k potyčkám.
 qstr_we_are_not_too_conce|momentálne sa s nimi veľmi nezaoberáme, pretože bojujeme s nepriateľmi, ktorý sú bližšie k našej domovine
 qstr__under_your_orders|, pod tvojím velením
+; qstr_{playername}_you_may|{playername}, you may have seen the hosts of {s7}. Of all the captains arrayed against us, at present {s7} of {s8} has won the greatest renown. Their mere presence on the field is enough to embolden our enemies and weaken the resolve of our allies. {playername}, if you wish to do a great deed in this war, strike down the host of {s7} in open battle, in sight of all! Thus may hope be rekindled, and dread fill the hearts of those who would come against us.
+; qstr_Do_you_mark_how_our_|Do you mark how our bravest fighters falter at the mere mention of {s7} of {s8}? A great warrior, oh yes, a capable captain. We cannot allow that to run amok like this! Everywhere their face is shown, our lines bend back, and our foes find new courage. This cannot be. I command that you, {playername}, challenge and defeat the soldiers of {s7} in open battle. To see {s7} struck down by you will freeze the blood and marrow of his followers, and show our own troops that our enemies can be thrown down!
+; qstr_This_is_a_chance_for|This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike.
+; qstr_Accursed_be_those_wh|Accursed be those who follow {s7} this day, for I shall strike them down for all to see!.
+; qstr_{s9}_wants_you_to_de|{s9} wants you to defeat {s35} of {s36} in battle.
+; qstr_I_humbly_ask_that_yo|I humbly ask that you find another for this task. I do not think I could best {s7} in battle.
+; qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!
 ; qstr_strong_warriors_from|strong warriors from {s7}
 ; qstr_champions_from_{s7}_|champions from {s7}, the strongest in the field
 ; qstr_{playername}_the_men|{playername}, the men have heard stories about fierce enemy troops. Stories of these terrors are demoralizing the men. I want you to show the men that they have nothing to fear. I want you to challenge and defeat {reg22} {s6}.
@@ -1389,7 +1404,7 @@ qstr_These_soldiers_may_w|Títo muži môžu mojím plánom veľmi prospieť, {p
 qstr_Good_work_in_shaping|Dobrá práca čo sa výcviku tých holobriadkov týka, {playername}, veľmi si mi pomohol. Snáď vydržia viac, než tá posledná skupina. Pokiaľ nie, príď za mnou znova.
 qstr_Well_the_soldiers_ar|Nuž, tí vojaci sú teraz pod vaším velením, pane. Verím, že sa o nich dobre postaráte.
 qstr_Well_you_may_do_as_y|Konaj ako myslíš. Ja a moji spoločníci stále môžeme vycvičiť ďalších, ak bude treba.
-qstr_{s9}_asked_you_to_br|{s9} chce, aby si mu priviedol divokého trola pre použitie do jeho armády.
+qstr_{s9}_asked_you_to_br|{s9} chce, aby si mu priviedol divokého zlobra pre posilnenie jeho armády.
 qstr_{s9}_asked_you_to_fi|{s9} ťa žiada, aby si zistil čo sa deje vo Farngorne a ohlásil mu to.
 qstr_{s9}_asked_you_to_fin|{s9} ťa požiadal, aby si našiel stratené kopije, ktoré kedysi vyrobili trpaslíci pre kráľa Bladorthina. Budeš si musieť zažiadať o povolenie od {s5}a, aby si mohol hľadať kopije v hlbinách Osamelej hory.
 qstr_{s9}_has_asked_you_t|{s9} chce, aby si zabil černokňažníka z Dol Gulduru.
@@ -1420,7 +1435,7 @@ qstr_{s9}_asked_you_to_di|{s9} ťa požiadal, aby si vysadil prieskumnícku skup
 qstr_We_need_to_take_the_|Potrebujeme dostať nepriateľa na bojové pole, {playername}. Avšak momentálne sa zameriavame na ich hliadky a stráže na cestách. Chcem, aby si rozdrvil {reg1} {s13} skupín. Pomohlo by nám to opäť získať výhodu v počtoch.
 qstr_We_need_to_grind_dow|Potrebujeme už konečne rozdrviť našich ubohých nepriateľov, {playername}. Ich hliadky a zásobovacie vozy sú na môj vkus príliš smelé. Chcem, aby si zmasakroval {reg1} {s13} skupín, aby so strachom čakali na to, čo ich čaká.
 qstr_{s9}_asked_you_to_el|{s9} chce, aby si eliminoval {reg1} {s13} skupín.
-qstr_{s9}_asked_you_to_fr|{s9} chce, aby si zbavil {s13} nebezpečného trola, ktorý vyčíňa v tých krajoch.
+qstr_{s9}_asked_you_to_fr|{s9} chce, aby si zbavil {s13} nebezpečného zlobra, ktorý vyčíňa v tých krajoch.
 qstr_the_Dwarves_so_that_|Trpaslíci, pokiaľ budeš prechádzať cez Erebor alebo Železné hory, môžeš sa vyzbrojiť v preslávených trpasličích zbrojniciach.
 qstr_Gondor_so_that_if_yo|Gondor, pokiaľ budeš prechádzať týmto prastarým kráľovstvom, môžeš si skúsiť zaobstarať jedno z ich preslávených brnení vysokej kvality.
 qstr_Rohan_so_that_if_you|Rohan, pokiaľ budeš prechádzať touto krajinou, skús si kúpiť koňa z jedného zo slávnych plemien.

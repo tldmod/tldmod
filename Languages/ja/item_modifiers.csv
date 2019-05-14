@@ -26,13 +26,13 @@ imod_sturdy|頑丈な%s
 ; imod_thick|Robust %s
 imod_hardened|補強をした%s
 imod_reinforced|丈夫な%s
-imod_superb|見事な%s
+; imod_cloak|%s with cloak
 imod_lordly|完璧な%s
 imod_lame|足をくじいた%s
 imod_swaybacked|体の曲がった%s
 imod_stubborn|頑強な%s
 imod_timid|臆病な%s
-imod_meek|おとなしい%s
+; imod_meek|Blood-covered %s
 imod_spirited|気性の強い%s
 imod_champion|最高の%s
 imod_fresh|新鮮な%s

@@ -88,6 +88,9 @@ mno_start_bn|Mustat NUMERONILAISET, lännen kapinalliset
 mno_start_um|UMBAR, Etelän merien piraatit
 mno_start_rh|RHUN, idän barbaarit
 mno_start_kh|KHAND, Kaakon villi-ihmiset
+menu_start_eye_uruk|^^^^^^^^^Missä sinä väijyt?
+mno_start_arm_uruk|Armeijoiden kasaumassa Mordorissa
+mno_start_cav_uruk|DOL GULDURIN luolastoissa
 menu_start_eye_orc|^^^^^^^^^Missä sinä piilottelet?
 mno_start_arm|Armeijoiden kasaumassa Mordorissa
 mno_start_cav|DOL GULDURIN luolastoissa
@@ -101,6 +104,9 @@ mno_start_2_hib|Jalosukuinen
 menu_start_haradrim|^^^^^^^Olet Haradrimilainen,^Aavikon mies.^Valitse sukulinjasi
 mno_start_1_des|Aavikko mies
 mno_start_2_far|Kaukaisen Haradin heimolainen
+; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
+; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
+; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Sukupuolesi?
 mno_start_male|Mies
 mno_start_female|Nainen
@@ -189,10 +195,13 @@ mno_leave|Poistu.
 menu_simple_encounter|^^^^^{s2}^Sinulla on {reg22} joukkoa valmiina taistelemaan heidän {reg11} vastaan.^^Taistelu käydään {s3}{s4}.^^Käskysi?
 mno_encounter_attack|{reg21?Hyökätkää heidän kimppuun:Valmistautukaa kohtaamaan heidät}.
 mno_encounter_order_attack|Käske miestesi liittyä taisteluun {reg21?attack:face} ilman sinua.
+; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
 mno_encounter_hide|Piiloudu viholliselta...
 mno_special_whip|Kiiruhda eteenpäin heitä kohti murtaen {s4}.
 mno_encounter_leave|Irroittaudu taistelusta.
 mno_encounter_retreat|Peräänny, jättäen joitakin sotilaita perääsi suojaten vetääntymisesi.
+; mno_player_control_allies_simple|Command them and charge the enemy
+; mno_player_control_allies_back|Go back...
 mno_hide_close|Jatka...
 menu_encounter_retreat_confirm|^^^^^Seurueen parhaimpana jäsenenä taktisessa taidossa, ({reg2}), {reg3?you devise:{s3} devises} suunnitelma, joka aikoo antaa sinun ja miestesi paeta elävänä, mutta sinun pitää jättää {reg4} sotilaita perään pysäyttääkseen vihollisen ajojahdin.
 mno_leave_behind|Jatka. Näiden miesten uhraaminen pelastaa loput.
@@ -220,7 +229,9 @@ mno_pre_join_leave|Älä osallistu tähän.
 ; menu_join_battle|^^^You are helping {s2} against {s1}.^ You have {reg22} troops fit for battle against the enemy's {reg11}.^^The battle is taking place in {s3}{s4}.
 mno_join_attack|Hyökkää vihollisten kimppuun.
 mno_join_order_attack|Käske sotilaittesi hyökätä liittolaistesi kanssa, samalla kun pysyttelet itse takana.
+; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Irroittaudu taistelusta.
+; mno_player_control_allies_join_menu|Command them and charge the enemy
 menu_join_order_attack|{s4}^^Sinun tappiot: {s8}^^Liittolaisiesi tappiot: {s9}^^Vihollisen tappiot: {s10}
 mno_enter|Astu sisään.
 menu_battlefields|^^^^^^^^^Valitse kenttä...
@@ -357,7 +368,9 @@ mno_sb_attack_the_town|He yrittävät pysäyttää meidät! Puolusta laivastoa!
 ; mno_vs_orcs_field_ai|Archers have better aim against orcs (doesn't aim above orc heads):  {s7}
 mno_battlefield_animals|Ei-susi / hevonen eläinseuralainen syntyy taisteluun:  {s7}
 ; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 
+; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+; menu_hungry_orc|none
+; menu_leaving_elf|none
 mno_defend_refugees|Pidä silmät auki hyökkääjien varalta...
 mno_attack_refugees|Hyökkää pakolaisjunaan...
 mno_leave_refugees|Jätä heidät toistaiseksi...
@@ -413,6 +426,7 @@ mno_leave_pyre|Poistu roviolta.
 menu_town_ruins|Kun lähestyt, näet että {s1} on {s2}
 mno_ruin_menu_0|Tutki paikka.
 mno_ruin_leave|Poistu...
+; menu_premutiny|none
 menu_death|Sinä olet kaatunut. Vaikka sota jatkuukin vielä, sinä et enää tule olemaan osa sitä.
 menu_animal_ambush|Sinä ja seuralaisesi huomaatte olevanne erotettu muusta ryhmästä, kunnes yht'äkkiä.
 ; menu_animal_ambush_success|The {s2} {reg0?fall:falls} before you as wheat to a scythe! Soon all your attackers lie on the floor, wounded or dead. {s3}
