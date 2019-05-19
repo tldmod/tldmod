@@ -104,9 +104,9 @@ mno_start_2_hib|Wysoko urodzony
 menu_start_haradrim|^^^^^^^Jesteś Haradrimem,^człowiekiem Pustyni.^pochodzisz z...
 mno_start_1_des|Pustyni, jesteś nomadem
 mno_start_2_far|Dalekiego Haradu, jesteś plemieńcem
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|Jesteś Black Numenorean,^ wiernym Ciemności i Morgoth.^Wybierz gdzie będziesz służyć Oku.
+mno_start_1_bn|Obok Paszczy Saurona, w MORANNON
+mno_start_2_bn|W fortecy nekromanty, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Twoja płeć?
 mno_start_male|Mężczyzna
 mno_start_female|Kobieta
@@ -195,13 +195,13 @@ mno_leave|Odejdź.
 menu_simple_encounter|^^^^^{s2}^Masz {reg22} ludzi zdolnych do walki przeciwko {reg11}.^^Bitwa ma miejsce w {s3}{s4}^^Twe rozkazy?
 mno_encounter_attack|{reg21?Ruszamy na nich:Przygotować się do walki}.
 mno_encounter_order_attack|Rozkaż swoim oddziałom {reg21?zaatakować:stawić im czoła}, ty zaś zaczekaj na tyłach.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+mno_control_allies_menu|Użyj Wpływu aby dowodzić swoimi sojusznikami na polu walki
 mno_encounter_hide|Ukryj się przed wrogiem. . .
 mno_special_whip|Rusz w ich kierunku łamiąc {s4}.
 mno_encounter_leave|Wycofaj się.
 mno_encounter_retreat|Wycofaj się, zostawiając kilku żołnierzy, by osłaniali twój odwrót.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|Przejmij dowodzenie i szarżuj na wrogów 
+mno_player_control_allies_back|Wróć...
 mno_hide_close|Dalej...
 menu_encounter_retreat_confirm|^^^^^Jako członek oddziału z najwyższymi umiejętnościami taktycznymi,   ({reg2}), {reg3?obmyślasz:{s3} obmyśla} plan, który pozwoli tobie i twoim ludziom uciec, ratując życie. Będziesz musiał jednak zostawić {reg4} żołnierzy, by powstrzymać wroga od ruszenia w pościg.
 mno_leave_behind|Dalej. Poświęcenie tych kilku ludzi ocali resztę.
@@ -229,9 +229,9 @@ mno_pre_join_leave|Nie mieszać do tej walki.
 menu_join_battle|^^^{s2} wznoszą bojowy okrzyk widząc, jak ruszasz im na pomoc. {s1} muszą się teraz zmierzyć z waszymi połączonymi siłami.^ Macie łącznie {reg10} żołnierzy przeciwko {reg11} żołnierzom wroga.
 mno_join_attack|Zaatakuj wroga.
 mno_join_order_attack|Rozkaż swoim ludziom by pomogli sprzymierzeńcom w walce z wrogiem.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|Użyj Punktów Wpływu aby dowodzić swoimi sojusznikami na polu walki
 mno_join_leave|Odejdź.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|Przejmij dowodzenie i szarżuj na wrogów 
 menu_join_order_attack|{s4}^^Twoje straty: {s8}^^Straty sprzymierzeńców: {s9}^^Straty wroga: {s10}
 mno_enter|Wejdź.
 menu_battlefields|^^^^^^^^Wybierz pole...
@@ -368,9 +368,9 @@ mno_horse_archer_field_ai|Konni Łucznicy mają ulepszone bitewne AI: {s7}.
 mno_vs_orcs_field_ai|Łucznicy mają lepszy cel przeciwko orkom (nie celują nad głowicami orków): {s7}.
 mno_battlefield_animals|Towarzysze zwierząt innych niż wojsko / konie w bitwie: {s7}.
 mno_slow_when_wounded|Agenci stają się wolni kiedy są ranni:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
+mno_battle_encounter_effects|Specjalne efekty pola walki bazowane na frakcji (np. burze, mgły): {s7}
+menu_hungry_orc|Żaden
+menu_leaving_elf|Żaden
 mno_defend_refugees|Uważaj na rajderów. . .
 mno_attack_refugees|Atakuj uchodźców. . .
 mno_leave_refugees|Zostaw ich na razie. . .
@@ -426,7 +426,7 @@ mno_leave_pyre|Odejdź od stosu.
 menu_town_ruins|W momencie gdy się zbliżasz, zauważasz, że {s1} to {s2}
 mno_ruin_menu_0|Zbadaj to miejsce.
 mno_ruin_leave|Wyjdz...
-; menu_premutiny|none
+menu_premutiny|Żaden
 menu_death|Powinieneś być martwy. Chociaż wojna wciąż trwa, ty nie jesteś już jej częścią.
 menu_animal_ambush|Ty i twoi kompani oddzieliliście się od reszty drużyny, kiedy nagle...
 menu_animal_ambush_success|{s2} {reg0?fall:falls} przed wami jak zboże skoszone sierpem! Wkrótce wszyscy przeciwnicy leżą na ziemi - ranni, lub martwi. {s3}

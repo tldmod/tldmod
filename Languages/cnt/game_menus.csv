@@ -104,9 +104,9 @@ mno_start_2_hib|貴 族
 menu_start_haradrim|^^^^^^^你 是 一 名 哈 拉 德 人 ， ^沙 漠 之 民 。 ^選 擇 你 的 出 身 
 mno_start_1_des|沙 漠 人
 mno_start_2_far|遙 遠 哈 拉 德 威 治 部 落 成 員 
-menu_start_numenorean|^^^^^^^你是黑努美諾爾，^忠於黑暗和魔苟斯。^選擇你服務的地方
-mno_start_1_bn|在黑門附近的索倫之口
-mno_start_2_bn|在死靈法師的堡壘，多爾哥多
+menu_start_numenorean|^^^^^^^你 是 黑 努 美 諾 爾 ，^忠 於 黑 暗 和 魔 苟 斯 。^選 擇 你 服 務 的 地 方
+mno_start_1_bn|在 黑 門 附 近 的 索 倫 之 口
+mno_start_2_bn|在 死 靈 法 師 的 堡 壘 ， 多 爾 哥 多
 menu_choose_gender|^^^^^^^^^^你 的 性 別 ？ 
 mno_start_male|男 
 mno_start_female|女 
@@ -195,13 +195,13 @@ mno_leave|離 開
 menu_simple_encounter|^^^^^{s2}^你 有 {reg22}名 可 戰 鬥 的 隊 員 對 抗 {reg11}名 敵 軍 。 ^^戰 鬥 將 在 {s3}{s4}展 開 。 你 的 命 令 是 ？ 
 mno_encounter_attack|{reg21?突 擊 進 攻 :準 備 好 迎 敵 }。 
 mno_encounter_order_attack|你 坐 鎮 指 揮 命 令 你 的 部 下 {reg21?進 攻 :迎 擊 }。 
-mno_control_allies_menu|使用影響力來指揮你在戰場上的盟友。
+mno_control_allies_menu|使 用 影 響 力 來 指 揮 你 在 戰 場 上 的 盟 友 。
 mno_encounter_hide|躲 避 敵 人...
 mno_special_whip|往 前 衝 突 破 {s4}。 
 mno_encounter_leave|不 打 了。
 mno_encounter_retreat|撤 退 ， 留 下 一 些 士 兵 掩 護 主 力 撤 退 。 
-mno_player_control_allies_simple|指揮他們向敵人進攻
-mno_player_control_allies_back|回去...
+mno_player_control_allies_simple|指 揮 他 們 向 敵 人 進 攻
+mno_player_control_allies_back|回 去 ...
 mno_hide_close|繼 續 ...
 menu_encounter_retreat_confirm|^^^^^隊 員 中 最 高 戰 術 技 能 為 ({reg2}) 級 ，{reg3?你 擬 定 :{s3}擬 定 }了 一 個 計 劃 ， 讓 你 和 你 的 主 力 部 隊 能 逃 離 戰 鬥 。 但 是 你 必 須 犧 牲 {reg4}名 士 兵 來 進 行 掩 護 。 
 mno_leave_behind|實 行 計 劃， 犧 牲 那 些 人 來 拯 救 其 他  人 。  
@@ -229,9 +229,9 @@ mno_pre_join_leave|不 卷 入 紛 爭 。
 menu_join_battle|^^^你 決 定 幫 助 {s2}對 抗 {s1}，^ 你 將 有 {reg22}名 隊 員 參 加 戰 鬥 對 抗 {reg11}個 敵 人 。 ^^ 戰 鬥 將 在 {s3}{s4} 展 開 。
 mno_join_attack|攻 入 敵 陣 。
 mno_join_order_attack|命 令 你 的 部 隊 加 入 盟 友 而 你 留 下 。 
-mno_control_allies_join_menu|使用影響力命令你在戰場上的盟友。
+mno_control_allies_join_menu|使 用 影 響 力 命 令 你 在 戰 場 上 的 盟 友 。
 mno_join_leave|離 開 
-mno_player_control_allies_join_menu|指揮他們向敵人進攻
+mno_player_control_allies_join_menu|指 揮 他 們 向 敵 人 進 攻
 menu_join_order_attack|{s4}^^我 軍 傷 亡 ： {s8}^^盟 軍 傷 亡 ：{s9}^^敵 軍 傷 亡 ：{s10}
 mno_enter|進 入 
 menu_battlefields|^^^^^^^^^選 擇 戰 場 ...
@@ -368,7 +368,7 @@ mno_horse_archer_field_ai|馬 騎 弓 兵 有 改 善 的 戰 場 人 工 智 �
 mno_vs_orcs_field_ai|弓 兵 對 半 獸 人 有 更 好 的 準 度(不 會 瞄 準 半 獸 人 頭 部 以 上): {s7}
 mno_battlefield_animals|非 座 狼 / 馬 等 動 物 同 伴 出 現 在 戰 場 上: {s7}
 mno_slow_when_wounded|單 位 會 在 受 傷 時 變 得 緩 慢: {s7}
-mno_battle_encounter_effects|特殊派系對戰場的影響(如風暴，迷霧)：{s7}
+mno_battle_encounter_effects|特 殊 派 系 對 戰 場 的 影 響 ( 如 風 暴 ， 迷 霧) ： {s7}
 menu_hungry_orc|無
 menu_leaving_elf|無
 mno_defend_refugees|留 意 掠 奪 者...

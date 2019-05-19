@@ -676,8 +676,8 @@ trp_ent|Ent
 trp_ent_pl|Entów
 ; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
 ; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Dol Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
+trp_orc_of_guldur|Ork Tropiciel z Dol Guldur
+trp_orc_of_guldur_pl|Orkowie Tropiciele z Dol Guldur
 trp_orc_snaga_of_mordor|Mordorski Ork Snaga
 trp_orc_snaga_of_mordor_pl|Mordorskich Orków Snaga
 trp_orc_of_mordor|Mordorski Ork
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|Jeździec Wargów Gorgoroth
 trp_warg_rider_of_gorgoroth_pl|Jeźdźców Wargów Gorgoroth
 trp_great_warg_rider_of_mordor|Mordorski Doświadczony Jeździec Wargów
 trp_great_warg_rider_of_mordor_pl|Mordorskich Doświadczonych Jeźdźców Wargów
-; trp_morgul_orc|Orc of Minas Morgul
-; trp_morgul_orc_pl|Orcs of Minas Morgul
-; trp_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
+trp_morgul_orc|Ork z Minas Morgul
+trp_morgul_orc_pl|Orkowie z Minas Morgul
+trp_fell_morgul_orc|Spaczony Ork z Minas Morgul
+trp_fell_morgul_orc_pl|Spaczeni Orkowie z Minas Morgul
+trp_orc_tracker_of_mordor|Wielki Ork Tropiciel z Dol Guldur
+trp_orc_tracker_of_mordor_pl|Wielki Ork Tropiciel z Dol Guldur
+trp_fell_orc_tracker_of_mordor|Spaczony Ork Tropiciel z Dol Guldur
+trp_fell_orc_tracker_of_mordor_pl|Spaczeni Orkowie Tropiciele z Dol Guldur
 trp_orc_archer_of_mordor|Mordorski Ork Łucznik
 trp_orc_archer_of_mordor_pl|Mordorskich Orków Łuczników
 trp_large_orc_archer_of_mordor|Mordorski Wielki Ork Łucznik
@@ -1587,7 +1587,7 @@ trp_npc18|Turmbathu
 trp_npc19|Heidrek
 trp_npc20|Zigûrphel
 trp_werewolf|Wilkołak
-; trp_werewolf_pl|Werewolves
+trp_werewolf_pl|Wilkołaki
 trp_mountain_goblin2|Górski Goblin
 trp_mountain_goblin2_pl|Górskich Goblinów
 trp_tribal_orc2|Plemienny Ork

@@ -3,7 +3,7 @@ mno_start_good|O amanhecer de uma nova Era
 mno_start_evil|O crepúsculo do homem
 mno_go_bback|Voltar
 menu_start_phase_2|^^^^^ Terra-Média. Uma sombra está crescendo no Oriente, ^ e coisas da escuridão avançam de onde se escondem . ^ Os povos livres se preparam para a guerra , como a de que não foi visto por uma época . ^ Homens, Elfos, Anões e Orcs ; todos vão desempenhar o seu papel . ^^ Qual papel , no entanto, permanece a ser visto...
-; mno_go_forth|          Go forth upon your chosen path...
+mno_go_forth|Vá em frente no caminho que escolheu...
 menu_start_game_3|^^^^^^^^Escolha o seu cenário:
 mno_custom_battle_scenario_1|Escaramuçada , facções de Gondor vs Harad
 mno_custom_battle_scenario_12|Escolha as facções para batalha
@@ -399,7 +399,7 @@ mno_cb_gondor7|Beornings
 ; menu_custom_battle_choose_faction3|^^^^^^^^^^Choose evil faction
 mno_cb_mordor|Mordor
 mno_cb_mordor1|Isengard
-; mno_cb_mordor2|Dunland
+mno_cb_mordor2|Dunland
 ; mno_cb_mordor3|Haradrim
 ; mno_cb_mordor4|Easterlings
 mno_cb_mordor5|Moria
