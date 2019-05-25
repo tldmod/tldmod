@@ -9870,7 +9870,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
       (call_script, "script_change_player_party_morale", 4), #If the player just has no food (ie, party morale is > low morale constant, we'll just add +5 morale.
     (try_end),
    (try_end),
-   (change_screen_return)]],
+   (change_screen_map)]],
 
 [anyone,"start", [(this_or_next|eq, "$g_talk_troop", "trp_longing_lorien"), (this_or_next|eq, "$g_talk_troop", "trp_longing_imladris"),(eq, "$g_talk_troop", "trp_longing_woodelf")],"Look, my {lord/lady}, gulls! A wonder they are to me and a trouble to my heart.", "sad_elf_1", []],
 [anyone|plyr,"sad_elf_1", [],"I hear their voices. What news do they bring?", "sad_elf_2", []],
@@ -9892,7 +9892,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   (call_script, "script_change_player_party_morale", 5),
  (try_end),
  (set_show_messages, 1),
- (change_screen_return)]],
+ (change_screen_map)]],
 
 [anyone,"sad_elf_no", [
     (party_get_skill_level, ":leadership", "p_main_party", skl_leadership),
@@ -9975,7 +9975,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
     (call_script, "script_change_player_party_morale", 4),
    (try_end),
    (set_show_messages, 1),
-   (change_screen_return)]],
+   (change_screen_map)]],
 
 # Morale Troops Dialogue END - Kham
 
