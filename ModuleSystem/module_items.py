@@ -466,7 +466,7 @@ items =[
 ["harad_bow","Harad_Curved_Bow",[("harad_bow",0),("harad_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_back,300,weight(1.3)|difficulty(1)|shoot_speed(56)|spd_rtng(95)|thrust_damage(23,cut)|accuracy(84),imodbits_bow,[] ],
 ["lg_bow","Eagle_Guard_Bow",[("lg_bow",0),("lg_bow",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_back,1100,weight(1.3)|difficulty(4)|shoot_speed(56)|spd_rtng(90)|thrust_damage(28,cut)|accuracy(93),imodbits_bow,[] ],
 ["riv_bow","Rivendell_Bow",[("rivendellbow",0),("rivendellbow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,1100,weight(1.8)|difficulty(3)|shoot_speed(65)|spd_rtng(88)|thrust_damage(23,pierce)|accuracy(90),imodbits_good_bow,[] ],
-["rhun_bow","Rhun_Bow",[("khazad_orc_bow_3",0),("khazad_orc_bow_3_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,600,weight(1.3)|difficulty(3)|shoot_speed(52)|spd_rtng(96)|thrust_damage(26,cut)|accuracy(85),imodbits_bow,[] ],
+["rhun_bow","Balchoth_Bow",[("khazad_orc_bow_3",0),("khazad_orc_bow_3_case",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop,itcf_shoot_bow|itcf_carry_bowcase_left|itcf_show_holster_when_drawn,600,weight(1.3)|difficulty(3)|shoot_speed(52)|spd_rtng(96)|thrust_damage(26,cut)|accuracy(85),imodbits_bow,[] ],
 ["lorien_bow","Galadhrim_Bow",[("Elfbow",0),("Elfbow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,1300,weight(1.5)|difficulty(4)|shoot_speed(65)|spd_rtng(93)|thrust_damage(23,pierce)|accuracy(96),imodbits_good_bow,[] ],
 ["isengard_large_bow","Isengard_Large_Bow",[("isengard_large_bow",0),("isengard_large_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,800,weight(1.5)|difficulty(3)|shoot_speed(58)|spd_rtng(81)|thrust_damage(19,pierce)|accuracy(84),imodbits_bow,[] ],
 ["dale_bow","Dale_Bow",[("dale_bow",0),("dale_bow_carry",ixmesh_carry)],itp_type_bow|itp_primary|itp_two_handed|itp_shop|itp_cant_use_on_horseback,itcf_shoot_bow|itcf_carry_bow_back,600,weight(1.5)|difficulty(4)|shoot_speed(64)|spd_rtng(93)|thrust_damage(27,cut)|accuracy(96),imodbits_bow,[] ],
@@ -1012,7 +1012,7 @@ items =[
 ["mirkwood_armor_e","Light_Mail_and_Surcoat",[("mirkwood_maillewithsurcoat_01",0)],itp_type_body_armor|itp_covers_legs|itp_shop,0,2500,weight(15)|head_armor(0)|body_armor(35)|leg_armor(14)|difficulty(18),imodbits_elf_armor,],
 ["mirkwood_armor_f","Mirkwood_Leafscale",[("mirkwood_scaleovermaille_01",0)], itp_type_body_armor  |itp_covers_legs ,0, 4000, weight(20)|abundance(100)|head_armor(3)|body_armor(40)|leg_armor(14)|difficulty(22) ,imodbits_elf_armor ],
 #WEAPONS##########
-["mirkwood_great_spear","Mirkwood_Great_Spear",[("mirkwood_great_spear_large",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_two_handed|itp_wooden_parry,itc_pike_upstab,900,weight(2.5)|difficulty(0)|spd_rtng(104)|weapon_length(148)|thrust_damage(35,pierce),imodbits_weapon_good],
+["mirkwood_great_spear","Mirkwood_Great_Spear",[("mirkwood_great_spear_large",0)],itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,900,weight(2.5)|difficulty(0)|spd_rtng(104)|weapon_length(148)|thrust_damage(35,pierce),imodbits_weapon_good],
 ["mirkwood_war_spear","Mirkwood_War_Spear",[("mirkwood_war_spear",0)],            itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_penalty_with_shield|itp_wooden_parry,itc_spear_upstab,500,weight(2.5)|difficulty(0)|spd_rtng(99)|weapon_length(150)|swing_damage(20,blunt)|thrust_damage(31,pierce),imodbits_weapon_good],
 ["mirkwood_short_spear","Mirkwood_Spear",[("mirkwood_short_spear",0)],            itp_type_polearm|itp_shop|itp_primary|itp_spear|itp_wooden_parry,itc_spear_upstab,500,weight(2.5)|difficulty(0)|spd_rtng(97)|weapon_length(117)|swing_damage(20,blunt)|thrust_damage(27,pierce),imodbits_weapon_good],
 ["mirkwood_knife","Mirkwood_White_Knife",[("mirkwood_white_knife",0),("scab_mirkwood_white_knife",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_shop|itp_primary|itp_secondary|itp_no_parry,itc_dagger|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn,400,weight(0.75)|difficulty(0)|spd_rtng(120)|weapon_length(51)|swing_damage(24,cut)|thrust_damage(17,pierce),imodbits_weapon_bad],
@@ -1397,7 +1397,7 @@ items =[
 #["rohan_shield_a"        , "Rohan Shield" ,[("rohan_shield_green",0)],itp_shop|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield, 80  , weight(2.5)|hit_points(310)|body_armor(8)|spd_rtng(96)|weapon_length(40),imodbits_shield,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_rohan_plain_shield",0)])]],
 #free, Jan 2017, -> rohan_armor_th:
 ["nazgulrobe","Nazgul_Robe",[("nazgulrobe",0),("old_nazgulrobe",imodbit_old)],itp_type_body_armor|itp_covers_legs|itp_covers_head|itp_replaces_helm|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,],
-["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(30)|horse_speed(60)|horse_maneuver(60)|horse_charge(25)|horse_scale(100),imodbits_none,[]],
+["werewolf","Werewolf",    [("mm_warg_a",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(30)|horse_speed(60)|horse_maneuver(60)|horse_charge(25)|horse_scale(100)|difficulty(10),imodbits_none,[]],
 #["free_whiterobe","White_Robe",[("whiterobe",0)],itp_type_body_armor|itp_covers_legs|itp_civilian,0,1,weight(5)|head_armor(60)|body_armor(70)|leg_armor(70)|difficulty(0),0,], #unused since Jan 2018, =itm_nazgulrobe
 #BANNERS  
 # TODO: PLEASE DO NOT CHANGE BANNER ORDER, THIS IS A PLANNED FEATURE FOR THE MORALE SYSTEM. -CC #
@@ -1493,8 +1493,8 @@ items =[
 ["feet_chains_dwarf","Feet Chains",[("chains_full_dwarf",0)],itp_type_foot_armor|itp_attach_armature,0,200,weight(10)|leg_armor(0)|difficulty(0),imodbits_none],
 
 ["spider","Spider",[("spider",0)], itp_type_horse|itp_unique|itp_disable_agent_sounds, 0, 1200, hit_points(60)|body_armor(30)|difficulty(3)|horse_speed(50)|horse_maneuver(75)|horse_charge(25),imodbits_none,[]],
-["bear","Bear",    [("bear",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(40)|horse_speed(50)|horse_maneuver(40)|horse_charge(25)|horse_scale(120),imodbits_none,[]],
-["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25)|horse_scale(85),imodbits_none,[]],
+["bear","Bear",    [("bear",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(130)|body_armor(40)|horse_speed(50)|horse_maneuver(40)|horse_charge(25)|horse_scale(120)|difficulty(10),imodbits_none,[]],
+["wolf","Wolf",    [("wolf",0)],   itp_type_horse|itp_unique, 0, 1200, hit_points(50)|body_armor(25)|horse_speed(50)|horse_maneuver(50)|horse_charge(25)|horse_scale(85)|difficulty(10),imodbits_none,[]],
 
 #next three currently not in use (no defilement system)
 ["defiled_armor_gondor","Defiled_Gondor_Leader's_Surcoat",[("defile_gondor",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,3000,weight(21)|head_armor(0)|body_armor(30)|leg_armor(6)|difficulty(0),imodbits_none,[(ti_on_init_item,[(cur_item_set_tableau_material, "tableau_defiled_gondor_armor",0)])]],

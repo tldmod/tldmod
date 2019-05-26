@@ -424,7 +424,7 @@ itemsfile version 2
  itm_riv_bow Rivendell_Bow Rivendell_Bow 2  rivendellbow 0  rivendellbow_carry 3458764513820540928  274792456 5905584128 1100 656384 1.75 100 0 0 90 3 0 88 65 0 0 279 0
 0
 
- itm_rhun_bow Rhun_Bow Rhun_Bow 2  khazad_orc_bow_3 0  khazad_orc_bow_3_case 3458764513820540928  6357000 37312532480 600 525450 1.25 100 0 0 85 3 0 96 52 0 0 26 0
+ itm_rhun_bow Balchoth_Bow Balchoth_Bow 2  khazad_orc_bow_3 0  khazad_orc_bow_3_case 3458764513820540928  6357000 37312532480 600 525450 1.25 100 0 0 85 3 0 96 52 0 0 26 0
 0
 
  itm_lorien_bow Galadhrim_Bow Galadhrim_Bow 2  Elfbow 0  Elfbow_carry 3458764513820540928  274792456 5905584128 1300 656384 1.5 100 0 0 96 4 0 93 65 0 0 279 0
@@ -1689,7 +1689,7 @@ itemsfile version 2
  itm_mirkwood_armor_f Mirkwood_Leafscale Mirkwood_Leafscale 1  mirkwood_scaleovermaille_01 0  16777229 0 4000 704643072 20 100 3 40 14 22 0 0 0 0 0 0 0
 0
 
- itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  6651908 9236601360760176896 900 156672 2.5 100 0 0 0 0 0 104 0 148 0 291 0
+ itm_mirkwood_great_spear Mirkwood_Great_Spear Mirkwood_Great_Spear 1  mirkwood_great_spear_large 0  138772484 9254615759470988544 900 156672 2.5 100 0 0 0 0 0 104 0 148 0 291 0
 0
 
  itm_mirkwood_war_spear Mirkwood_War_Spear Mirkwood_War_Spear 1  mirkwood_war_spear 0  138772484 9254615759470988544 500 156672 2.5 100 0 0 0 0 20480 99 0 150 0 287 532
@@ -2499,7 +2499,7 @@ itemsfile version 2
  itm_nazgulrobe Nazgul_Robe Nazgul_Robe 2  nazgulrobe 0  old_nazgulrobe 256  2705326093 0 1 0 5 100 60 70 70 0 0 0 0 0 0 0 0
 0
 
- itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 30 0 0 130 60 60 100 0 25 0
+ itm_werewolf Werewolf Werewolf 1  mm_warg_a 0  4097 0 1200 0 0 100 0 30 0 10 130 60 60 100 0 25 0
 0
 
  itm_mordor_banner Mordor_Banner Mordor_Banner 1  banner_mordor 0  274989059 4222124717768960 1000 271496 3 100 0 0 0 0 20480 90 0 120 0 537 532
@@ -2742,10 +2742,10 @@ itemsfile version 2
  itm_spider Spider Spider 1  spider 0  18014398509486081 0 1200 0 0 100 0 30 0 3 60 75 50 0 0 25 0
 0
 
- itm_bear Bear Bear 1  bear 0  4097 0 1200 0 0 100 0 40 0 0 130 40 50 120 0 25 0
+ itm_bear Bear Bear 1  bear 0  4097 0 1200 0 0 100 0 40 0 10 130 40 50 120 0 25 0
 0
 
- itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0 100 0 25 0 0 50 50 50 85 0 25 0
+ itm_wolf Wolf Wolf 1  wolf 0  4097 0 1200 0 0 100 0 25 0 10 50 50 50 85 0 25 0
 0
 
  itm_defiled_armor_gondor Defiled_Gondor_Leader's_Surcoat Defiled_Gondor_Leader's_Surcoat 1  defile_gondor 0  16781325 0 3000 0 21 100 0 30 6 0 0 0 0 0 0 0 0

@@ -2839,6 +2839,11 @@ scene_props = [
 ( "chain_hanging_5m",0,"chain_hanging_5m","0",[]),
 ( "chain_hanging_10m",0,"chain_hanging_10m","0",[]),
 ( "isen_sarustaff",0,"sarustaff","0",[]),
+("isen_pillar_marble_adorno",0,"isen_pillar_marble_adorno","bo_isen_pillar_adorno", []),
+("isen_pillar_iron_adorno",0,"isen_pillar_iron_adorno","bo_isen_pillar_adorno", []),
+("isen_pillar_bronze_adorno",0,"isen_pillar_bronze_adorno","bo_isen_pillar_adorno", []),
+("isen_pillar_steel_adorno",0,"isen_pillar_steel_adorno","bo_isen_pillar_adorno", []),
+
 
 #InVain props end
 
