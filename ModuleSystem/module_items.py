@@ -390,8 +390,8 @@ items =[
 #["pilgrim_hood", "Pilgrim Hood",[("pilgrim_hood",0)], 0|itp_type_head_armor |itp_civilian  ,0, 35 , weight(1.25)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ###ARMOR
 #handwear
-["leather_gloves","Leather_Gloves",[("lthr_glove_L",0), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_cloth,[]],
-["mail_mittens","Mail_Mittens",[("mail_mitten_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(0.5)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
+["leather_gloves","Leather_Gloves",[("CWE_gloves_a_L",0),("CWE_gloves_lord_L",imodbits_elf_cloth), ("undeadtest_handL",imodbit_poor)],itp_type_hand_armor|itp_shop,0,200,weight(0.2)|body_armor(2)|difficulty(0),imodbits_cloth,[]],
+["mail_mittens","Mail_Mittens",[("CWE_gauntlets_crysader_L",0)],itp_type_hand_armor|itp_shop,0,600,weight(1)|body_armor(4)|difficulty(0),imodbits_elf_armor,[]],
 ["leather_boots","Leather_Boots",[("rohan_leather_boots",0)],itp_type_foot_armor|itp_shop|itp_attach_armature|itp_civilian,0,200,weight(1)|leg_armor(12)|difficulty(0),imodbits_cloth],
 # TLD civilian wear
 #all marked civilian items free Jan 2017, -> itm_white_tunic_a
@@ -716,8 +716,8 @@ items =[
 ["orc_tribal_a","Untreated_Skin",[("orc_tribal_a",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(3)|leg_armor(0)|difficulty(0),imodbits_orc_cloth,],
 ["orc_tribal_b","Untreated_Skin",[("orc_tribal_b",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(2)|leg_armor(1)|difficulty(0),imodbits_orc_cloth,],
 ["orc_tribal_c","Untreated_Skin",[("orc_tribal_c",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,1,weight(3)|head_armor(0)|body_armor(1)|leg_armor(2)|difficulty(0),imodbits_orc_cloth,],
-["evil_gauntlets_a","Gauntlets",[("gauntlet_a_L",0)],itp_type_hand_armor|itp_shop,0,500,weight(1)|body_armor(4)|difficulty(0),imodbits_armor],
-["evil_gauntlets_b","Gauntlets",[("gauntlet_b_L",0)],itp_type_hand_armor|itp_shop,0,500,weight(1)|body_armor(4)|difficulty(0),imodbits_armor],
+["evil_gauntlets_a","Black_Gloves",[("CWE_gloves_a_black_L",0),("CWE_gloves_lord_black_L",imodbits_elf_cloth),("CWE_gauntlets_arabs_a_L",imodbit_reinforced)],itp_type_hand_armor|itp_shop,0,500,weight(0.4)|body_armor(2)|difficulty(0),imodbits_orc_cloth],
+["evil_gauntlets_b","Black_Gauntlets",[("narf_wisby_gauntlets_black_L",0),("narf_wisby_gauntlets_red_R",imodbits_armor_good)],itp_type_hand_armor|itp_shop,0,500,weight(1.2)|body_armor(4)|difficulty(0),imodbits_armor],
 #
 ###ISENGARD ITEMS##########
 ##########ARMORS##########
@@ -1474,7 +1474,7 @@ items =[
 #["lorien_sword_reward","Galadhrim_Sword",[("lorien_sword_hand_and_half",0),("scab_lorien_sword_hand_and_half",ixmesh_carry)],itp_type_two_handed_wpn|itp_primary|itp_unique,itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,900,weight(2.5)|difficulty(0)|spd_rtng(115)|weapon_length(103)|swing_damage(43,cut)|thrust_damage(33,pierce),imodbits_none],
 ["dale_sword_reward","Dale_Royal_Sword",[("Mandible_royal_sword",0),("Mandible_royal_sword_scabbard",ixmesh_carry)],itp_type_one_handed_wpn|itp_primary|itp_unique|itp_crush_through,itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,500,weight(1.25)|difficulty(12)|spd_rtng(101)|weapon_length(95)|swing_damage(48,cut)|thrust_damage(30,pierce),imodbits_none],
 ["dale_armor_reward","Dale_Noblemen_Mail",[("dale_reward",0)],itp_type_body_armor|itp_covers_legs|itp_unique,0,2000,weight(22)|head_armor(4)|body_armor(38)|leg_armor(15)|difficulty(0),imodbits_none,],
-["leather_gloves_reward","Hunting_Gloves",[("lthr_glove_L",0),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty),("isen_olog_hand_L",imodbit_old)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
+["leather_gloves_reward","Hunting_Gloves",[("CWE_gloves_lord_L",0),("ent_hand_L",imodbit_tattered),("olog_hand_L",imodbit_rusty),("isen_olog_hand_L",imodbit_old)],itp_type_hand_armor|itp_unique,0,200,weight(0.2)|body_armor(3)|difficulty(0),imodbits_none,[]],
 ["beorn_shield_reward","Beorning_Shield",[("beorning_shield",0)],itp_type_shield|itp_wooden_parry|itp_unique,itcf_carry_round_shield,  430 , weight(4.5)|hit_points(690)|body_armor(9)|spd_rtng(95)|weapon_length(70),imodbits_shield,],
 ["beorn_axe_reward","Bear_Club",[("beorning_club",0)],itp_type_one_handed_wpn|itp_primary|itp_wooden_parry|itp_wooden_attack|itp_crush_through|itp_can_knock_down,itc_scimitar|itcf_carry_mace_left_hip,2000,weight(2.5)|difficulty(8)|spd_rtng(93)|weapon_length(67)|swing_damage(32,blunt),imodbits_weapon_good],
 ["moria_arrow_reward","Moria_Poisoned_Arrows",[("orc_hook_arrow",0),("orc_hook_arrow_flying",ixmesh_flying_ammo),("orc_quiver",ixmesh_carry)],itp_type_arrows,itcf_carry_quiver_back_right,700,weight(3)|thrust_damage(11,cut)|max_ammo(40)|weapon_length(95),imodbits_missile,[]],

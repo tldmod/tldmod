@@ -624,6 +624,12 @@ itm_umb_armor_d_cloak = (itm_umb_armor_d, imod_cloak)
 itm_umb_armor_e_cloak = (itm_umb_armor_e, imod_cloak)
 itm_umb_armor_f_cloak = (itm_umb_armor_f, imod_cloak)
 
+#handwear variations
+itm_leather_gloves_good = 	(itm_leather_gloves, imod_thick)
+itm_evil_gauntlets_a_good = 	(itm_evil_gauntlets_a, imod_thick)
+itm_evil_gauntlets_a_lordly = 	(itm_evil_gauntlets_a, imod_reinforced)
+itm_evil_gauntlets_b_good = 	(itm_evil_gauntlets_b, imod_thick)
+
 # 0x000000018000004136db6db6db6db6db00000000001db6db0000000000000000  default player face
 # 0x000000018000000136db6db6db6db6db00000000001db6db0000000000000000  bearded player face
  
