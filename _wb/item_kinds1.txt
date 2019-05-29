@@ -628,7 +628,7 @@ itemsfile version 2
  itm_gon_tower_knight Gondor_Tower_Knight_Armor Gondor_Tower_Knight_Armor 1  gondor_tower_knight 0  16777229 0 4000 704643072 25 100 0 40 15 0 0 0 0 0 0 0 0
 0
 
- itm_gon_leader_surcoat_cloak Gondor_Leader's_Surcoat Gondor_Leader's_Surcoat 1  gon_leader_surcoat_cloak 0  16842765 0 4500 704643072 25 100 0 42 13 0 0 0 0 0 0 0 0
+ itm_gon_leader_surcoat_cloak Gondor_Leader's_Surcoat Gondor_Leader's_Surcoat 2  gon_leader_surcoat 0  gon_leader_surcoat_cloak 268435456  16842765 0 4500 973078528 25 100 0 42 13 0 0 0 0 0 0 0 0
 0
 
  itm_gondor_ranger_hood Green_Hood Green_Hood 1  gondor_ranger_hood 0  1073807372 0 100 1116815228928 0.5 100 13 0 0 0 0 0 0 0 0 0 0
@@ -2221,22 +2221,22 @@ itemsfile version 2
  itm_free_umb_armor_g Corsair_Hauberk_Pauldrons Corsair_Hauberk_Pauldrons 1  corsair_chain_pauldron 0  16842765 0 2000 704643072 22 100 0 25 7 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_a Corsair_Leather_Vest Corsair_Leather_Vest 4  corsair_light_leather_1 0  corsair_light_leather_0 164  corsair_light_leather_2 704643072  corsair_light_leather_1b 268435456  16842765 0 260 704643236 7 100 0 10 4 0 0 0 0 0 0 0 0
+ itm_umb_armor_a Corsair_Leather_Vest Corsair_Leather_Vest 4  corsair_light_leather_1 0  corsair_light_leather_0 164  corsair_light_leather_2 704643072  corsair_light_leather_1b 268435456  16842765 0 260 973078692 7 100 0 10 4 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_b Corsair_Leather_Armor Corsair_Leather_Armor 4  corsair_leather_pad_1 0  corsair_leather_pad_0 164  corsair_leather_pad_2 704643072  corsair_leather_pad_1b 268435456  16842765 0 400 704643236 8 100 0 12 5 0 0 0 0 0 0 0 0
+ itm_umb_armor_b Corsair_Leather_Armor Corsair_Leather_Armor 4  corsair_leather_pad_1 0  corsair_leather_pad_0 164  corsair_leather_pad_2 704643072  corsair_leather_pad_1b 268435456  16842765 0 400 973078692 8 100 0 12 5 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_c Corsair_Light_Scale Corsair_Light_Scale 4  corsair_light_scale_1 0  corsair_light_scale_0 164  corsair_light_scale_2 704643072  corsair_light_scale_1b 268435456  16842765 0 500 704643236 12 100 0 15 4 0 0 0 0 0 0 0 0
+ itm_umb_armor_c Corsair_Light_Scale Corsair_Light_Scale 4  corsair_light_scale_1 0  corsair_light_scale_0 164  corsair_light_scale_2 704643072  corsair_light_scale_1b 268435456  16842765 0 500 973078692 12 100 0 15 4 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_d Corsair_Scale Corsair_Scale 4  corsair_scale_pad_1 0  corsair_scale_pad_0 164  corsair_scale_pad_3 704643072  corsair_scale_pad_cape_pauldron 268435456  16842765 0 600 704643236 13 100 0 16 5 0 0 0 0 0 0 0 0
+ itm_umb_armor_d Corsair_Scale Corsair_Scale 4  corsair_scale_pad_1 0  corsair_scale_pad_0 164  corsair_scale_pad_3 704643072  corsair_scale_pad_cape_pauldron 268435456  16842765 0 600 973078692 13 100 0 16 5 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_e Corsair_Hauberk Corsair_Hauberk 4  corsair_mail_1 0  corsair_mail_0 164  corsair_mail_3 704643072  corsair_mail_1b 268435456  16842765 0 1200 704643236 20 100 1 21 7 0 0 0 0 0 0 0 0
+ itm_umb_armor_e Corsair_Hauberk Corsair_Hauberk 4  corsair_mail_1 0  corsair_mail_0 164  corsair_mail_3 704643072  corsair_mail_1b 268435456  16842765 0 1200 973078692 20 100 1 21 7 0 0 0 0 0 0 0 0
 0
 
- itm_umb_armor_f Corsair_Noble_Armour Corsair_Noble_Armour 4  corsair_heavy_1 0  corsair_heavy_0 164  corsair_heavy_2 704643072  corsair_heavy_3 268435456  16842765 0 1300 704643236 21 100 0 22 8 0 0 0 0 0 0 0 0
+ itm_umb_armor_f Corsair_Noble_Armour Corsair_Noble_Armour 4  corsair_heavy_1 0  corsair_heavy_0 164  corsair_heavy_2 704643072  corsair_heavy_3 268435456  16842765 0 1300 973078692 21 100 0 22 8 0 0 0 0 0 0 0 0
 0
 
  itm_umb_helm_a Corsair_Shell_Helm Corsair_Shell_Helm 1  shell_helmet 0  65548 0 1200 704643072 3 100 35 0 0 0 0 0 0 0 0 0 0
