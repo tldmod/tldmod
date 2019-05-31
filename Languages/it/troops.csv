@@ -502,24 +502,24 @@ trp_far_harad_champion|Campione di Far Harad
 trp_far_harad_champion_pl|Campioni di Far Harad
 trp_far_harad_panther_guard|Guardia dell'Ordine della Pantera
 trp_far_harad_panther_guard_pl|Guardie dell'Ordine della Pantera
-trp_dunnish_wildman|Uomo selvaggio dei Dunnish
-trp_dunnish_wildman_pl|Uomini selvaggi dei Dunnish
-trp_dunnish_warrior|Guerriero dei Dunnish
-trp_dunnish_warrior_pl|Guerrieri dei Dunnish
-trp_dunnish_pikeman|Picchiere dei Dunnish
-trp_dunnish_pikeman_pl|Picchieri dei Dunnish
-trp_dunnish_veteran_pikeman|Picchiere veterano dei Dunnish
-trp_dunnish_veteran_pikeman_pl|Picchieri veterani dei Dunnish
+trp_dunnish_wildman|Uomo selvaggio Dunladiano
+trp_dunnish_wildman_pl|Uomini selvaggi del Dunland
+trp_dunnish_warrior|Guerriero Dunladiano
+trp_dunnish_warrior_pl|Guerrieri Dunladiani
+trp_dunnish_pikeman|Picchiere del Dunland
+trp_dunnish_pikeman_pl|Picchieri del Dunland
+trp_dunnish_veteran_pikeman|Picchiere Veterano del Dunland
+trp_dunnish_veteran_pikeman_pl|Picchieri Veterani del Dunland
 trp_dunnish_raven_rider|Cavallerizzo Corvo Dunladiano
 trp_dunnish_raven_rider_pl|Cavallerizzi Corvo Dunladiano
-trp_dunnish_vet_warrior|Guerriero veterano dei Dunnish
-trp_dunnish_vet_warrior_pl|Guerrieri veterani dei Dunnish
-trp_dunnish_wolf_warrior|Guerriero Dunnish dell'Ordine del Lupo
-trp_dunnish_wolf_warrior_pl|Guerrieri Dunnish dell'Ordine del Lupo
-trp_dunnish_wolf_guard|Guardia Dunnish dell'Ordine del Lupo
-trp_dunnish_wolf_guard_pl|Guardie Dunnish dell'Ordine del Lupo
-trp_dunnish_chieftan|Cavallerizzo Corvo dei Dunnish
-trp_dunnish_chieftan_pl|Cavallerizzi Corvo dei Dunnish
+trp_dunnish_vet_warrior|Guerriero Veterano del Dunland
+trp_dunnish_vet_warrior_pl|Guerrieri Veterani del Dunland
+trp_dunnish_wolf_warrior|Guerriero Dunladiano dell'Ordine del Lupo
+trp_dunnish_wolf_warrior_pl|Guerriero Dunladiani dell'Ordine del Lupo
+trp_dunnish_wolf_guard|Guardia Dunladiana dell'Ordine del Lupo
+trp_dunnish_wolf_guard_pl|Guardie Dunladiane dell'Ordine del Lupo
+trp_dunnish_chieftan|Cavallerizzo Corvo Dunladiano
+trp_dunnish_chieftan_pl|Cavallerizzi Corvo Dunladiani
 trp_easterling_youth|Schiavo Variag
 trp_easterling_youth_pl|Schiavi Variag
 trp_easterling_warrior|Guerriero di Khand
@@ -812,9 +812,9 @@ trp_black_numenorean_captain_pl|Capitani Numenoreani Neri
 trp_black_numenorean_lieutenant|Tenente Numenoreano Nero
 trp_black_numenorean_lieutenant_pl|Tenenti Numenoreani Neri
 trp_dunnish_night_wolf|Lupo della Notte Dunladiano
-; trp_dunnish_night_wolf_pl|Dunnish Night Wolfs
-trp_dunnish_lieutenant|Etmano Dunnish
-trp_dunnish_lieutenant_pl|Etmani Dunnish
+trp_dunnish_night_wolf_pl|Lupi della Notte Dunladiani
+trp_dunnish_lieutenant|Etmano del Dunland
+trp_dunnish_lieutenant_pl|Etmani del Dunland
 trp_goblin_chieftain|Capo Goblin
 trp_goblin_chieftain_pl|Capi Goblin
 trp_captain_of_gondor|Capitano di Gondor
@@ -1569,7 +1569,7 @@ trp_morannon_healer|Okstuk il Guaritore
 trp_minas_tirith_healer|Ioreth
 trp_edoras_healer|Freya la Guaritrice
 trp_isengard_healer|Nurgal il rattoppatore
-; trp_guldur_healer|Mornagar the Gramaryer
+trp_guldur_healer|Mornagar, il Necromante
 trp_gundabad_healer|Lurgakh Terzo Occhio
 trp_mirkwood_healer|Corwiel Manleggera
 trp_hungry_uruk|Uruk Affamato

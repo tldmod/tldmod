@@ -21,11 +21,11 @@ str_hold_fire|停止射击
 str_blunt_hold_fire|钝器/停止射击
 str_tutorial_ammo_refilled|填满弹药。
 str_tutorial_failed|这次你输了，不过别担心。仔细遵循说明，下次你会做得更好。按Tab键返回菜单，您可以在其中重试本教程。
-str_tutorial_1_msg_1|在本教程中，您将学习运动和战斗的基础知识。在mount&amp;blade中，您使用鼠标控制您要查看的位置，并使用键盘上的wasd键移动。你在训练中的第一个任务是找到房间里的旗子并移到上面。您可以随时按Tab键退出本教程或退出游戏中的任何其他区域。现在去旗子那里。
+str_tutorial_1_msg_1|在本教程中，你将学习移动和战斗的基础知识。在mount&blade中，你使用鼠标控制你要查看的位置，并使用键盘上的wasd键移动。你在训练中的第一个任务是找到房间里的旗子并移到上面。你可以随时按Tab键退出本教程或退出游戏中的任何其他区域。现在去旗子那里。
 str_tutorial_1_msg_2|做得好。下一步我们将用武器掩护进攻。在本教程中，您已经装备了弓和箭、剑和盾牌。你可以使用鼠标滚轮从武器槽中取出不同的武器。在默认配置中，向上滚动会拉出你的下一个武器，向下滚动会拉出你的盾牌。如果你已经拿着一个盾牌，向下滚动将把你的盾牌收起来。现在试着用滚轮改变你的装备。准备好后，转到标记以继续执行下一个任务。
-str_tutorial_1_msg_3|杰出的。本教程的下一部分将介绍如何使用近战武器进行攻击。你用鼠标左键攻击当前使用的武器。按住按钮准备攻击，然后释放按钮进行攻击。如果你在释放前按住鼠标左键一段时间，你的攻击将更加强大。现在拔出你的剑，摧毁房间里的四个假人。
+str_tutorial_1_msg_3|好极了。本教程的下一部分将介绍如何使用近战武器进行攻击。你用鼠标左键攻击当前使用的武器。按住按钮准备攻击，然后释放按钮进行攻击。如果你在释放前按住鼠标左键一段时间，你的攻击将更加强大。现在拔出你的剑，摧毁房间里的四个假人。
 str_tutorial_1_msg_4|干得好！你毁了所有四个假人。你现在可以去下一个房间了。
-str_tutorial_1_msg_5|如你所见，房间的另一边有一个射箭靶。你的下一个任务是用弓把三支箭射入目标。按下并按住鼠标左键以切出箭头。然后，您可以通过释放鼠标左键来触发箭头。注意屏幕中央的瞄准网，它显示了你的射击精度。为了达到最佳的精度，让你的箭在最小的时候飞。现在试着射击目标。
+str_tutorial_1_msg_5|如你所见，房间的另一边有一个箭靶。你的下一个任务是用弓把三支箭射入目标。按下并按住鼠标左键以切出箭头。然后，您可以通过释放鼠标左键来触发箭头。注意屏幕中央的瞄准网，它显示了你的射击精度。为了达到最佳的精度，在瞄准网缩至最小时射出你的箭。现在试着射击目标。
 ; str_tutorial_1_msg_6|Well done! You've learned the basics of moving and attacking. With a little bit of practice you will soon master them. In the second tutorial you can learn more advanced combat skills and face armed opponents. You can press the Tab key at any time to return to the tutorial menu.
 ; str_tutorial_2_msg_1|This tutorial will teach you how to defend yourself with a shield and how to battle armed opponents. For the moment you are armed with nothing but a shield. Your task is not to attack, but to successfully protect yourself from harm with your shield. There is an armed opponent waiting for you in the next room. He will try his best to knock you unconscious, while you must protect yourself with your shield by pressing and holding the right mouse button. Go into the next room now to face your opponent. Remember that you can press the Tab key at any time to quit this tutorial or to exit any other area in the game.
 ; str_tutorial_2_msg_2|Press and hold down the right mouse button to raise your shield. Try to remain standing for thirty seconds. You have {reg3} seconds to go.
@@ -110,22 +110,22 @@ str_do_you_wish_to_surrender|你希望投降么？
 str_can_not_retreat|不能撤退，附近有很多敌人！
 str_s1_joined_battle_enemy|这场战斗{s1}加入敌方。
 str_s1_joined_battle_friend|这场战斗{s1}加入我方。
-str_entrance_to_town_forbidden|城镇的守卫正在搜索入侵者，看起来你无法轻易的从大门溜进去。
-str_sneaking_to_town_impossible|城镇的守卫被惊动了，看起来你没法轻易的从大门溜进去。
+str_entrance_to_town_forbidden|城镇的守卫正在搜索入侵者，看起来你无法轻易地从大门溜进去。
+str_sneaking_to_town_impossible|城镇的守卫被惊动了，看起来你没法轻易地从大门溜进去。
 str_battle_won|你赢得了战斗！
 str_battle_lost|你输掉了战斗！
 str_player_down|你被击昏了，但是你的部下仍在战斗！
 str_attack_walls_success|经过血腥的战斗，你勇敢的战士们设法爬上了敌方城墙。
-str_attack_walls_failure|你的战士们像海浪一般冲击着城墙，又像饺子一般落下。少数还活着的很快就由站了起来重新冲锋，很快就淹没在人潮中不见了踪影。
+str_attack_walls_failure|你的战士们像海浪一般冲击着城墙，又像饺子一般落下。少数还活着的很快就又站了起来重新冲锋，很快就淹没在人潮中不见了踪影。
 str_attack_walls_continue|这是一场血腥的战斗，双方都投入了相同的人力和勇气。尽管你的部队很努力，但城堡仍在敌军手中。
 str_order_attack_success|你的士兵勇敢地战斗并击败了敌人。
-str_order_attack_failure|你绝望的看着敌人一个个砍翻你的战士，并将最后几名衣衫褴褛的幸存者赶走。
+str_order_attack_failure|你绝望地看着敌人一个个砍翻你的战士，并将最后几名衣衫褴褛的幸存者赶走。
 str_order_attack_continue|尽管经历了几场小规模战斗，你的部队还没赢得决定性胜利。
-str_join_order_attack_success|你的士兵与盟友合作的极好，在敌人被打败时你们共享荣耀。
-str_join_order_attack_failure|你绝望的看着敌人一个个砍翻你的战士，并将最后几名衣衫褴褛的幸存者赶走。
+str_join_order_attack_success|你的士兵与盟友合作得极好，在敌人被打败时你们共享荣耀。
+str_join_order_attack_failure|你绝望地看着敌人一个个砍翻你的战士，并将最后几名衣衫褴褛的幸存者赶走。
 str_join_order_attack_continue|尽管经历了几场小规模战斗，任意一方都还没赢得决定性胜利。
 str_siege_defender_order_attack_success|驻军用技巧和勇气守住了他们的城墙并打破敌军的冲锋。他们还巧妙地将敌军的小败转变成一个完全的溃败。
-str_siege_defender_order_attack_failure|敌军的冲锋迅速变的异常血腥。个人的武勇变得无用起来；数量严重不足的守军渐渐无法守住城墙，抵抗者正被敌军一个个杀死。
+str_siege_defender_order_attack_failure|敌军的冲锋迅速变得异常血腥。个人的武勇变得无用；数量严重不足的守军渐渐无法守住城墙，抵抗者正被敌军一个个杀死。
 str_siege_defender_order_attack_continue|敌军试图占领城墙的血腥企图依旧没有得逞，但守方仍然无法庆祝胜利，毕竟周围还有很多敌军。围攻继续。
 str_hero_taken_prisoner|{s3}的{s1}被{s2}俘虏了。
 str_hero_freed|{s3}的{s1}被从{s2}的监禁中解救了。
@@ -236,11 +236,11 @@ str_village_prosperity_90|这个名为{s60}的村子雕梁画栋
 str_village_prosperity_100|这个名为{s60}的村子沃壤千里
 str_war_report_minus_4|我们几乎要输掉这场战争了
 str_war_report_minus_3|形势看起来很严峻
-str_war_report_minus_2|战事进展的不太顺利
-str_war_report_minus_1|团结起来我很还是有可能胜利的
+str_war_report_minus_2|战事进展得不太顺利
+str_war_report_minus_1|如果我们能团结起来，我们仍然可能取得胜利。
 str_war_report_0|我们与敌人不相上下
 str_war_report_plus_1|我们获胜的概率稍高一点
-str_war_report_plus_2|战事进展的相当顺利
+str_war_report_plus_2|战事进展得相当顺利
 str_war_report_plus_3|打败他们不费吹灰之力
 str_war_report_plus_4|我们马上就要赢得战争了
 str_persuasion_summary_very_bad|你尽最大努力去说服{s50}，但是你没有一个论证是正确的。每次你开始想使表达的东西变得有意义，但是你说的东西似乎都是彻底错误的，以至于使你自己的思路都断了。当你结束交涉的时候，你都没能把你认同的某一个观点表达清楚，而且你意识到你所做的一切是在把自己推进一个越挖越深的大坑里。毫不奇怪，{s50}完全不为你动。
@@ -787,13 +787,13 @@ str_npc6_home_description_2|我能感觉到墙后的邪恶大军正准备出发�
 str_npc7_home_description_2|如果命运带给我们一大支军队的话，我想我们应该冒险进入矿井，取回他们的巨大财富。
 str_npc8_home_description_2|我闻到了甜蜜的花香，也看到了蜜蜂收获的蜜糖。如果您不介意的，我能去弄点蜂蜜自用么？我只需要几分钟就能搞定。
 str_npc9_home_description_2|如果我们没有大量强兽人在背后支持的话，留在这里一点儿用处都没有。当然，如果你想对墙上的哨兵做鬼脸那就是另一回事儿了，哈哈！
-; str_npc10_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+str_npc10_home_description_2|米那斯魔窟，戒灵们整日饮酒的地方，哈哈！
 str_npc11_home_description_2|奥桑克塔看起来像是个巨大的…某个东西？
 str_npc12_home_description_2|奥桑克塔看起来像是个巨大的…某个东西？
-; str_npc13_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc14_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc15_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
-; str_npc16_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+str_npc13_home_description_2|米那斯魔窟，戒灵们整日饮酒的地方，哈哈！
+str_npc14_home_description_2|米那斯魔窟，戒灵们整日饮酒的地方，哈哈！
+str_npc15_home_description_2|米那斯魔窟，戒灵们整日饮酒的地方，哈哈！
+str_npc16_home_description_2|米那斯魔窟，戒灵们整日饮酒的地方，哈哈！
 str_npc17_home_description_2|我可以凿一个优质烟斗给您。您需要烟斗么？
 str_npc1_home_recap|我生长在伊西力安的一个战士家庭中，我的祖先甚至可以追溯到登丹人那里去。
 str_npc2_home_recap|我出生在米那斯提力斯一个窘迫但我为之引以为豪的家庭。
@@ -1907,15 +1907,15 @@ str_beorn_gift4|训练有素的矮种马
 str_cmenu_follow|陪伴
 ; str_reset_to_default|Reset to Default
 str_done|完成
-; str_gondor1|Gondor1
-; str_gondor2|Gondor2
-; str_gondor3|Gondor3
-; str_gondor4|Gondor4
-; str_gondor5|Gondor5
-; str_gondor6|Gondor6
-; str_gondor7|Gondor7
-; str_gondor8|Gondor8
-; str_gondor_end|Gondor1
+str_gondor1|刚铎1
+str_gondor2|刚铎2
+str_gondor3|刚铎3
+str_gondor4|刚铎4
+str_gondor5|刚铎5
+str_gondor6|刚铎6
+str_gondor7|刚铎7
+str_gondor8|刚铎8
+str_gondor_end|刚铎1
 ; str_gondor_intro|^It is a bitter thought, that a hero of this great kingdom should die within the sight of his land, unaided and helpless.^^The news of Boromir’s death passed like a swift wind through all of Gondor, even to the plains of Pinnath Gelin and the hills of Lamedon, even to the shores of Pelargir and the coasts of Dol Amroth. The hearts of all your people are filled with grief and pity; and more besides, with fear and foreboding, for Gondor is hard pressed and sore beset, ringed by implacable foes or uncertain friends.^^The Shadow rises in the East, as of old; the fractious Corsairs of Umbar grow bolder; the wild men of the East and South press their claims upon Gondorian land.^^No longer can you stand by and wait. Trust you have placed in your captains; sword and spear they will place in your hand. Gondor wanes, but Gondor still stands; and even the end of its strength is still very strong. You have resolved yourself to play what part you may in this coming war against the servants of the Nameless. Much is spoken of in the councils of the great and wise, to which you are not privy, but there is one thing you feel you can be sure of.^^If the valiant hearts of Gondor should fail, and Minas Tirith be lost, then the last light of the West will be extinguished. All will fall beneath the Shadow.
 ; str_dwarf_intro|^The Kingdom under the Mountain has done well, of that there can be no dispute. Old King Dáin has just passed his two hundred and fiftieth year, and by any measure he is fabulously wealthy. Under his rule, Erebor thrives, and knows greatness. The waterways, fountains and pools of neighbouring Dale bear witness to how your builders have surpassed the skill of even your forefathers, though their secrets of metalwork have regrettably been lost.^^Yet a darkness from Mordor entered these halls, when Sauron’s foul envoy, with his breath like the hiss of snakes, came bearing evil words. Heavy have been the hearts of your chieftains since then, for the power that has re-entered Mordor has not changed. The Shadow grows and draws nearer - already the Enemy is moving, and war will soon begin.^^You have sworn to take up arms, and stand with your friends against your foes. You will resist, with hope or without it.^^But if the bravery of the Dwarves of Erebor should prove insufficient, then the glory of Durin’s folk will fade away and be forgotten. All will fall beneath the Shadow.
 ; str_rohan_intro|^In these days of doubt, one thing you know to be true: open war lies before the proud people of Rohan. None may live now as they have lived, and few shall keep what they call their own. Some close to the King’s ear speak craven counsels, but you have determined to go to him, take a grim oath of service, and stand with such fell-handed captains and thanes as will protect the herds and herdfolk.^^Saruman of Isengard has declared lordship over the lands of Rohan, and bitter is the fighting with Orcs, Wolf-riders and the evil Men of Dunland. The Lord of the Black Land to the east sends raiding parties to steal your horses, choosing always the black ones. Your heart misgives you, for it seems to you that enemies beset your people both east and west.^^But still you will give battle, for if aught is said of the Rohirrim, it is of your unfailing valour in arms, though foe should beleaguer you, or fire encircle you. The steeds of Rohan will stride as wind in the morning. And if death should come for you, then a mound will be raised, but for now, war calls you. Let horse be bridled, horn be sounded!^^Yet, if even the courage of the Sons and Daughters of Eorl should fail, then the last hope of Rohan will fade and die away. The horn will blow no more. All will fall beneath the Shadow.
@@ -1948,8 +1948,8 @@ str_done|完成
 ; str_khand_intro_2|^Your fellow Variags have been summoned to the Morannon, the Black Gates that lead into Mordor. You do not relish having to camp so near to filthy honourless orc-kind, but for a time you will oblige. Still, the Lord of Mordor would be foolish indeed not to recognise the worth of your people, and treat you accordingly!^^As you walk through a wooded vale, a sudden small rustling makes you stop. You have heard many tales of the Gondorians who skulk around in these lands, sneaking like cowards - Rangers, they are called. They are deadly with the bow and arrow. Are some of them preparing to ambush your party? You had better sound the warning!
 ; str_umbar_intro_2|^On your way to where the Admiral has established the beachhead fortifications, you chance upon some orcs raiding a caravan.
 ; str_moria_intro_2|^While returning from a scouting mission in the dale, you chance upon some orcs raiding a caravan.
-; str_guldur_intro_2|^On your way to Dol Guldur, you chance upon some orcs raiding a caravan.
-; str_gundabad_intro_2|^On your way to Mt. Gundabad, you chance upon some orcs raiding a caravan.
+str_guldur_intro_2|在你前往多尔哥多的路上，你遭遇了一支正在掠夺商队的半兽人。
+str_gundabad_intro_2|在你前往刚达巴山的路上，你遭遇了一支正在掠夺商队的半兽人。
 ; str_dunland_intro_2|^On your way to the main battle-camp of your people, you chance upon some orcs raiding a caravan.
 ; str_beorn_intro_2|^On your way to Beorn’s House, you come upon some allies preparing to ambush a company of Orcs.
 ; str_intro_strings_2_end|Intro 2 END
@@ -1972,24 +1972,24 @@ str_done|完成
 ; str_dunland_faction_intro|^The Dunlendings are the “wild men of Dunland”, enemies of the Rohirrim who drove them from their homeland.^^Dunland is barren and poor. The Dunlendings wear very little real armour – mostly furs and cured leather, with some metal signifying status. For weaponry, they wield long pikes and antler axes, with rare swords serving as emblems of prestige. Their horses are thin and weak, certainly no match for the steeds of Rohan, though occasionally the Dunlendings will ride them into battle as skirmishers. In battle, the pikemen advance en masse, presenting a crude but formidable wall of sharp polearms. Some Dunlendings have also cultivated affinity with creatures of the wild, and may unleash packs of savage wolves against their foes.
 ; str_beorn_faction_intro|^Beornings, the descendants of Beorn, are a people of the upper Vales of Anduin, between Mirkwood and the Misty Mountains. They dwell mostly in the forests, though they keep the Old Ford clear for trade, exacting a toll on merchant caravans for their service.^^As woodsmen, they wield stout sticks and sharp axes, but wear little in the way of armour. Heavier Beorning infantry fight with shields as well. Beorning foresters are skilled bowmen and provide a valuable archer line.
 ; str_intro_faction_intro_strings_end|faction intro END
-; str_gondor_extra_info|Good^^Hard^^Gondor (South-East)^^Prince Imrahil^^Mordor, Umbar, Khand, Harad
-; str_dwarf_extra_info|Good^^Easy^^North Rhovanion (North)^^King Dain II Ironfoot^^Rhun, Gundabad
-; str_rohan_extra_info|Good^^Average^^Rohan (South-West)^^King Theoden^^Isengard, Dunland
-; str_mordor_extra_info|Sauron^^Easy^^Gondor (South-East)^^Gothmog^^Gondor
-; str_isengard_extra_info|Saruman^^Easy^^Rohan (South-West)^^Ugluk^^Rohan
-; str_lorien_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Celeborn^^Moria, Dol Guldur
-; str_imladris_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^Lord Elrond^^Moria, Dol Guldur
-; str_woodelf_extra_info|Good^^Very Easy^^South Rhovanion (Center)^^King Thranduil^^Moria, Dol Guldur
-; str_dale_extra_info|Good^^Average^^North Rhovanion (North)^^King Brand^^Rhun, Gundabad
-; str_harad_extra_info|Sauron^^Easy^^Gondor (South-East)^^Chief Ul-Ulcari^^Gondor
-; str_rhun_extra_info|Sauron^^Hard^^North Rhovanion (North)^^Jarl Helcaroth^^Dale, Dwarves, Mirkwood, Beornings
-; str_khand_extra_info|Sauron^^Easy^^Gondor (South-East)^^Shibh Krukmahur^^Gondor
-; str_umbar_extra_info|Sauron^^Easy^^Gondor (South-East)^^Admiral Tulmir^^Gondor
-; str_moria_extra_info|Saruman^^Very Hard^^South Rhovanion (Center)^^Master Bolg the Lesser^^Imladris, Lothlorien
-; str_guldur_extra_info|Sauron^^Very Hard^^South Rhovanion (Center)^^Master Fuinur^^Imladris, Lothlorien
-; str_gundabad_extra_info|Saruman^^Very Hard^^North Rhovanion (North)^^Master Burza Krual^^Dale, Dwarves, Mirkwood, Beornings
-; str_dunland_extra_info|Saruman^^Hard^^Rohan (South-West)^^Chief Daeglaf the Black^^Rohan
-; str_beorn_extra_info|Good^^Hard^^North Rhovanion (North)^^Chief Grimbeorn the Old^^Rhun, Gundabad
+str_gondor_extra_info|正义^^困难^^刚铎 (南方-东方)^^印拉希尔亲王^^魔多, 昂巴, 侃德, 哈拉德
+str_dwarf_extra_info|正义^^简单^^北罗马尼安^^丹恩二世.铁足^^卢恩, 刚达巴
+str_rohan_extra_info|正义^^平均^^洛汗 (南方-西方)^^希优顿国王^^艾辛格, 登兰德
+str_mordor_extra_info|索伦^^简单^^刚铎 (南方-东方)^^葛斯摩^^刚铎
+str_isengard_extra_info|萨鲁曼^^简单^^洛汗 (南方-西方)^^乌骨陆^^洛汗
+str_lorien_extra_info|正义^^非常简单^^南罗马尼安 (中央)^^凯勒鹏^^摩瑞亚, 多尔哥多
+str_imladris_extra_info|正义^^非常简单^^南罗马尼安（中央）^^埃尔隆德领主^^摩瑞亚, 多尔哥多
+str_woodelf_extra_info|正义^^非常简单^^南罗马尼安（中央）^^瑟兰督伊^^摩瑞亚, 多尔哥多
+str_dale_extra_info|正义^^平均^^北罗马尼安（北方）^^布兰德国王^^卢恩, 刚达巴
+str_harad_extra_info|索伦^^简单^^刚铎 (南方-东方)^^酋长乌-乌凯瑞^^刚铎
+str_rhun_extra_info|索伦^^困难^^北罗马尼安（北方）^^王储海尔卡若斯^^河谷镇, 矮人, 幽暗密林, 波宁人
+str_khand_extra_info|索伦^^简单^^刚铎 (南方-东方)^^克拉克马瑟尔大汗r^^刚铎
+str_umbar_extra_info|索伦^^简单^^刚铎 (南方-东方)^^托米尔上将^^刚铎
+str_moria_extra_info|萨鲁曼^^非常困难^^南罗马尼安（中央）^^小个子波尔格^^瑞文戴尔, 罗斯洛立安
+str_guldur_extra_info|索伦^^非常困难^^南罗马尼安（中央）^^富努尔^^瑞文戴尔, 罗斯洛立安
+str_gundabad_extra_info|萨鲁曼^^非常困难^^北罗马尼安（北方）^^波杂克鲁^^河谷镇, 矮人, 幽暗密林, 波宁人
+str_dunland_extra_info|萨鲁曼^^困难^^洛汗 (南方-西方)^^忧郁者代格拉夫^^洛汗
+str_beorn_extra_info|正义^^困难^^北罗马尼安^^郁比翁^^卢恩, 刚达巴
 ; str_intro_strings_extra_end|Intro EXTRA END
 ; str_gundabad_intro|You have come from the far north, from the lands of long-lost Angmar, after receiving tidings of the war to come. For years beyond count you and your folk have broken many dwarf shields with your axes and spears, crushed many broken bodies of men and elves below the claws of your fierce wargs, skinned the hides of the bear-people to wear as furs. The great halls of Gundabad in the Misty Mountains are now yours once again, as they were in the time of Bolg and Azog.^^Many of you have perished over the years, somemany of them slain in these very halls and tunnels - but many still remain. Great sport you have had with the greedy little diggers and their friends, in the past - and greater sport you will have now, when you march upon them and take everything for yourselves!^^Vengeance for Bolg, for Azog, for the Great Goblin - vengeance for the goblins of Gundabad!
 ; str_show_keybinds|Special Key Bindings: ^^ Formation Keys:^ Ranks - J ^ Shieldwall - K ^ Wedge - L ^ Square - ; ^ Clear Formations - U ^^ Cycle Through Weapon Usage - O ^^ Cycle Through Camera Type - CTRL+END ^^ Rally - V ^^ Call Horse - M ^^ View Orders / Minimap - Backspace
@@ -2187,7 +2187,7 @@ str_npc25_personalityclash_speech_b|它是由浸在酒中的蒿木制成，受�
 str_npc26_personalityclash_speech_b|我厌恶{s11}。
 str_npc27_personalityclash_speech_b|我厌恶{s11}。
 ; str_npc18_personalityclash2_speech|Gulm is not only a treacherous beast, Great One - he is proud of being one. He was telling us his story again around the campfire last night, and boasting of his foul deed. You would do well to watch that creature, Great One. If he could betray his commanders when serving the White Hand, what's to stop him from doing the same with you?
-; str_npc19_personalityclash2_speech|I hate {s11}
+str_npc19_personalityclash2_speech|我厌恶{s11}
 ; str_npc20_personalityclash2_speech|Every time I set eyes upon Fuldimir, a nameless rage within me rises. No, no, it is nothing he has done. But he and his people, the sea-dogs of Umbar, are most unworthy of their blood. They dare call themselves heirs of ancient Anadûnê - but of course, they say 'Númenor', not knowing any better. Why, I would suppose that barely a drop of the true blood is to be found in Fuldimir's veins! Perhaps, if you can spare him, I could find out for myself...
 str_npc21_personalityclash2_speech|我之前提到过我厌恶{s11}吗？
 str_npc22_personalityclash2_speech|我之前提到过我厌恶{s11}吗？
@@ -2275,7 +2275,7 @@ str_npc23_home_description_2|我能感觉到墙后的邪恶大军正准备出发
 str_npc24_home_description_2|如果命运带给我们一大支军队的话，我想我们应该冒险进入矿井，取回他们的巨大财富。
 str_npc25_home_description_2|我闻到了甜蜜的花香，也看到了蜜蜂收获的蜜糖。如果您不介意的，我能去弄点蜂蜜自用么？我只需要几分钟就能搞定。
 str_npc26_home_description_2|如果我们没有大量强兽人在背后支持的话，留在这里一点儿用处都没有。当然，如果你想对墙上的哨兵做鬼脸那就是另一回事儿了，哈哈！
-; str_npc27_home_description_2|Minas Morgul, where Nazgul drink all day, har-har!
+str_npc27_home_description_2|米那斯魔窟，戒灵们整日饮酒的地方，哈哈！
 ; str_npc18_home_recap|I was a prisoner in stocks, condemned to die for slaying a son of Lurmsakun in the training pit. Three of them set upon me, and I beat them, but one died of his wounds. Then you spoke for me, and freed me. Now I kill for you, and I would die for you if need be.
 ; str_npc19_home_recap|I am of the royal blood of Rohan, I swear - King Fengel was my grandfather, though he never took my grandmother to wife. The Chiefs of Dunland are jealous of me, and kept me away from the fighting so I would do no great deeds, and win no glory nor men to my banner. Then you took my under your banner. Now I await the day I can sit in Edoras on my rightful throne.
 ; str_npc20_home_recap|What more is there to tell, Commander? I practised my arts in the dungeons of Dol Guldur. My dreaming eye sees deep and far, and I saw you and your works in this War. It would seem I must give you what aid I can, so that the powers of the West may fail and the Power in the East may rise once more and rule until the world's ending.
@@ -2287,8 +2287,8 @@ str_npc25_home_recap|我是一名来自河谷镇的治疗师兼草药医生。
 str_npc26_home_recap|葛玛会说如果你一定要听，但讲故事可杀不死敌人。
 str_npc27_home_recap|我会尽快搞定的。
 ; str_npc18_honorific|Great One
-; str_npc19_honorific|Commander
-; str_npc20_honorific|Commander
+str_npc19_honorific|指挥官
+str_npc20_honorific|指挥官
 str_npc21_honorific|指挥官
 str_npc22_honorific|指挥官
 str_npc23_honorific|战士

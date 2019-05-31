@@ -74,7 +74,7 @@ qstr_Legs|Gambe
 qstr_Rotate|Ruotare
 qstr_Close|Chiudi
 qstr_Faction_Side:^^Campa|Lato Fazione.^^Difficoltà Campagna*:^^Teatro Casalingo:^^Comandante:^^Nemici:^^
-; qstr_Campaign_Difficulty_|Campaign Difficulty is based on starting faction strength, theater enemies,^ and faction troop tree & troop equipment.
+qstr_Campaign_Difficulty_|La difficoltà di una campagna è basata sulla forza iniziale della fazione, le posizioni nemiche, l'organigramma delle truppe e il loro equipaggiamento.
 qstr_Rallies:|Incitamenti:
 qstr_View_Keybinds__Press|Combinazione Tasti (Premi Ins)
 qstr_What_do_you_fight_fo|Per cosa combatti?
@@ -82,19 +82,19 @@ qstr_Go_Back...|Indietro
 qstr_Learn_about_the_diff|Scopri le diverse fazioni della Terra di Mezzo
 qstr_The_DAWN_of_a_New_Er|L'ALBA di una Nuova Era
 qstr_The_TWILIGHT_of_Man|Il TRAMONTO dell'Uomo
-; qstr_Select_your_Race?|Select your Race?
+qstr_Select_your_Race?|Scegli la tua razza?
 qstr_Man|Uomo
 qstr_Elf|Elfo
 qstr_Dwarf|Nano
 qstr_Whom_Do_You_Serve?|Chi servi?
 qstr_SAURON_of_Mordor_The|SAURON di Mordor, il Signore degli Anelli
 qstr_SARUMAN_of_Isengard_|SARUMAN di Isengard, La Mano Bianca
-; qstr_an_ORC^_serving_the_|an ORC,^ serving the Lidless Eye
+qstr_an_ORC^_serving_the_|un ORCO,^ servitore dell'Occhio
 qstr_an_URUK^_the_new_bre|un URUK,^la nuova razza di Orchi
-; qstr_a_MAN^_subjugated_by|a MAN,^ subjugated by Sauron
-; qstr_an_ORC^_serving_the_W|an ORC,^ serving the White Hand
-; qstr_an_URUK_HAI^_bred_in|an URUK-HAI,^ bred in Isengard
-; qstr_a_MAN_of_Dunland^_th|a MAN of Dunland,^ the Western Plains
+qstr_a_MAN^_subjugated_by|un UOMO,^ soggiogato da Sauron
+qstr_an_ORC^_serving_the_W|un ORCO,^ servo della Mano Bianca
+qstr_an_URUK_HAI^_bred_in|un URUK-HAI,^ allevato ad Isengard
+qstr_a_MAN_of_Dunland^_th|un UOMO del Dunland,^ Le Pianure Occidentali
 qstr_Click_the_center_but|Clicca sul pulsante centrale per selezionare la fazione^Clicca l'avatar per visualizzare i loro dettagli
 qstr_Level:_{reg3}^Health|Livello: {reg3}^Punti Ferita: {reg4}
 qstr_Attributes|Attributi
@@ -106,7 +106,7 @@ qstr_1H_Weapons^2H_Weapon|1H Armi^2H Armi^Armi Lunghe^Tiro con l'Arco^Balestre^L
 qstr_Equipment|Equipaggiamento
 qstr_The_Last_Days_Mod_Op|Opzioni Mod The Last Days
 qstr_War_Starts_at_Level:|La Guerra Inizierà al livello:
-; qstr_Restrict_Player_Equi|Restrict Player Equipment:  
+qstr_Restrict_Player_Equi|Limita Equipaggiamento Giocatore:
 qstr_Battle_Formations_an|Formazioni da Battaglia e IA:
 qstr_Native|Native
 qstr_TLD_FormAI__Original|FormIA TLD (Originale)
@@ -124,7 +124,7 @@ qstr_Fallen_rider_damage_|Messaggi di danno dal fantino caduto:
 qstr_No_Messages|Nessun messaggio
 qstr_Player_damage_only|Solo danni al giocatore
 qstr_All_Messages|Tutti i messaggi
-; qstr_Troop_Identifier_in_|Troop Identifier in Battles (Press Y during battle to show/hide):
+qstr_Troop_Identifier_in_|Identificatore Truppe in Battaglia (Premi Y durante una battaglia per mostrarlo/nasconderlo):
 qstr_Disable|Disattiva
 qstr_Enable_without_Facti|Abilita senza Nomi di Fazione
 qstr_Enable_with_Faction_|Abilita con Nomi Fazioni
@@ -136,7 +136,7 @@ qstr_Fixed_Over_The_Shoul|Telecamera-Sopra la spalla
 qstr_Prevent_AI_from_taki|Previeni la IA dall'assumere la difesa:
 qstr_Brighter_Nights:__|Notti più luminose:
 qstr_Done|Fatto
-; qstr_Gameplay_Tweaks|Gameplay Tweaks
+qstr_Gameplay_Tweaks|Modifiche al Gameplay
 qstr_Beta_Formations_Twea|Modifica Formazioni Beta
 qstr_War_Will_Start_at_Le|La Guerra inizierà al livello {reg0}
 qstr_Troop_Tree|Organigramma Truppe
@@ -145,7 +145,7 @@ qstr_Weapons|Armi
 qstr_Armors|Armature
 qstr_Others|Altri
 qstr_F4___Complex_formati|F4 - Formazioni complesse
-; qstr_F7___Memorize_div._p|F7 - Memorize div. placement
+qstr_F7___Memorize_div._p|F7 - Memorizza la disp. reparti
 qstr_F8___Default_divisio|F8 - Disposizione Predefinita dei Reparti
 qstr_F4___Ranks|F4 - Ranghi
 qstr_F5___Shield_Wall|F5 - Muro di Scudi
@@ -228,7 +228,7 @@ qstr_+1_to_Ironflesh|+1 in Resistenza
 qstr_+1_to_Prisoner_Mgmt|+1 in Controllo prigionieri
 ; qstr_+2_to_Tactics|+2 to Tactics
 qstr_+3_to_Spotting|+3 in Individuare
-qstr_Less_Dunnish_upkeep|Minore gestione Dunnish
+qstr_Less_Dunnish_upkeep|Minore gestione Dunladiana
 qstr_Less_Wargs_upkeep|Minore gestione Wargs
 ; qstr_Light_Armor|Light Armor
 qstr_+{reg1}_to_Party_Mor|+{reg1} al morale della compagnia
@@ -256,11 +256,11 @@ qstr_close_to_the_Hand_sh|vicino al segno a forma di mano di Saruman, puntando v
 qstr_in_sight_of_the_maje|in vista delle maestose mura della città di Minas Tirith, la Città Bianca
 qstr_in_sight_of_Edoras_t|In vista di Edoras, la capitale di Rohan
 qstr_in_sight_of_the_Horn|In vista del Fosso di Helm, la grande fortezza di Rohan
-; qstr_in_sight_of_Dol_Amro|in sight of Dol Amroth, the seat of the Princes of Belfalas
+qstr_in_sight_of_Dol_Amro|in vista di Dol Amroth, la sede dei Principi di Belfalas
 qstr_in_sight_of_the_Mora|in vista del Morannon, il Nero Cancello di Mordor
 qstr_in_sight_of_Dol_Guld|in vista di Dol Guldur, la fortezza settentrionale di Sauron
 qstr_on_the_green_pasture|sui verdi pascoli e sui prati sontuosamente fioriti che circondano la Casa di Beorn
-; qstr_on_the_shores_of_Lak|on the shores of Lake Mirrormere, near the East Gate of Moria
+qstr_on_the_shores_of_Lak|sulle rive del Mirolago, nei pressi del Cancello Orientale di Moria
 qstr_on_the_shores_of_the|sulle rive di Lagolungo, in vista di Esgaroth, la Città sul Lago
 qstr_near_the_coast_of_Go|nei pressi della costa di Gondor. Puoi sentire il suono distante delle onde e le grida dei gabbiani.
 qstr_in_the_outskirts_of_|nella periferia di Osgiliath, l'antica capitale di Gondor
@@ -588,9 +588,9 @@ qstr___Archer_formation_d|Formazione arcieri dismessa.
 qstr_Division_{reg1}_{s2}|Reparto {reg1} {s2} formazione {s1}.
 qstr_Not_enough_troops_in|Non ci sono truppe a sufficienza nel reparto {reg1} {s2} per formare un {s1}.
 qstr_Division_{reg1}_{s2}_|Il reparto {reg1} {s2} è una divisione {s3} e non può comporsi a {s1}.
-; qstr_{s1}:_infantry_forma|{s1}: infantry formation disassembled.
+qstr_{s1}:_infantry_forma|{s1}: formazione di fanteria disciolta.
 qstr_{s1}:_archer_formati|{s1}: formazione arcieri scomposta.
-; qstr_{s1}:_skirmisher_for|{s1}: skirmisher formation disassembled.
+qstr_{s1}:_skirmisher_for|{s1}: formazione schermagliatori disciolta.
 qstr_{s1}:_cavalry_format|{s1}: formazione di cavalleria a ranghi liberi.
 qstr_{s1}:_formation_disa|{s1}: formazione sciolta.
 qstr_Cavalry_formation_di|Formazione di cavalleria sciolta.
@@ -598,7 +598,7 @@ qstr_The_placement_of_{s1|dispiegamento del reparto {s1} {reg0} memorizzato.
 qstr_The_placement_of_{s1}|La disposizione del reparto {s1} {reg0} impostato come predefinito.
 qstr_Your_party_s_tactica|L'abilità tattica della tua compagnia limita quando distante puoi dislocare le tue truppe!
 qstr_...and_attack_enemy_|...e attacca il reparto nemico di {s1}!
-; qstr_{s2}:_returning_afte|{s2}: returning after destroying enemy {s1} division.
+qstr_{s2}:_returning_afte|{s2}: di ritorno dopo aver distrutto la divisione {s1} nemica.
 qstr_infantry|Fanteria
 qstr_archer|arciere
 qstr_cavalry|cavalleria
@@ -623,7 +623,7 @@ qstr_Some_of_your_troops_|Alcune delle tue truppe stanno scappando dalla battagl
 qstr_A_few_of_your_troops|Un paio delle tue truppe stanno scappando dalla battaglia.
 qstr_Gained_permanent_+1_to_P|Ottenuto un valore +1 permanente in Orientamento.
 qstr_Gained_permanent_+1_to_S|Ottenuto un +1 permanente in Individuare.
-; qstr_{s11}_recovered_from|{s11} recovered from a serious wound.
+qstr_{s11}_recovered_from|{s11} ha recuperato dopo una grave ferita.
 qstr_Volunteers|Volontari
 qstr_Reserves|Riserve
 qstr_have_taken_measure_o|hanno soppesato la forza attuale della tua fazione e sono divenuti più audaci.
@@ -678,11 +678,11 @@ qstr_{s1}___Slings:|{s1}   Fionde:
 qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(Clicca sulla truppa per farla ruotare)^^Clicca sulle parti dell'equipaggiamento ^(elmo, armatura, manopole e stivali)^ per mostrarle.
 qstr_ready_bows_and_missi|preparare archi e giavellotti
-; qstr_ready_side_arms|ready side arms
+qstr_ready_side_arms|preparare la armi al fianco
 qstr_ready_two_hander|preparare due mani
 qstr_ready_polearms|preparare le armi lunghe
 qstr_shields_up|Scudi alzati
-; qstr_doff_shields|doff shields
+qstr_doff_shields|posare gli scudi
 qstr_Distance___{reg70}__|Distanza - {reg70} - {s11} Compagnia - {s12} Truppa
 ; qstr_A_golden_mist_from_L|A golden mist from Lórien covers the battlefield. Your troops feel encouraged by the presence of the Lady.
 ; qstr_A_golden_mist_from_Lr|A golden mist from Lórien covers the battlefield. The witch is near, sending shivers down you and your troops' spine.
@@ -702,12 +702,12 @@ qstr_Use_+/__to_zoom_in/o|Usa +/- per zoomare dentro/fuori
 qstr_Use_Up/Down_arrow_ke|Usa le frecce su/giù per inclinare su/giù
 qstr_Fixed_Camera___Right|Inquadratura Fissa - Spalla Destra
 qstr_Fixed_Camera___Left_|Inquadratura Fissa - Spalla Sinistra
-; qstr_While_visiting_towns|While visiting towns, settlements and camps, you can talk to people walking around. Members of different factions have different things to say - some will let you in on their own thoughts, others will share rumours. Both could merely give you a better understanding of the person's culture and faction, or they might hold clues to finding secret locations, or tips and tricks for travelling through the Wilderness and fighting in the War of the Ring.
+qstr_While_visiting_towns|Mentre visiti le città gli insediamenti e i gli accampamenti, puoi parlare con le persone che vi si aggirano. I membri delle diverse fazioni hanno cose differenti da dire - alcuni ti sveleranno i loro timori, altri condivideranno indiscrezioni e voci di corridoio. Tutti potranno comunque darti una migliore comprensione della cultura della loro fazione, oppure potrebbero essere detentori d'indizi per trovare luoghi segrenti, o di consigli per viaggiare nella natura selvaggia e combattere nella Guerra dell'Anello.
 qstr_Cannot_leave_now.|Non puoi allontanarti in questo momento.
 qstr_You_have_found_the_l|Hai trovato il fabbro locale...(+{reg3} XP)
 qstr_You_have_found_the_lo|Hai incontrato l'autorità locale...(+{reg3} XP)
 qstr_You_have_found_the_loc|Hai trovato l'emporio locale...(+{reg3} XP)
-; qstr_You_look_through_Hen|You look through Henneth Annun, the Window of the Sunset. The beautiful sight restores your faith in the West and the Powers beyond.
+qstr_You_look_through_Hen|Guardi verso Henneth Annun, la Finestra del Tramonto. La splendida vista ripristina la tua fede nell'Ovest e nelle forze al di là dell'orizzonte.
 qstr__cancelled_the_{reg1|(Cancellati i {reg10} exp guadagnati uccidendo prigionieri)
 qstr_Forming_ranks.|Formare i ranghi.
 qstr_{reg2?You:Your_mount|{reg2?Tu:La tua cavalcatura} ricevuti {reg1} danni extra!
@@ -722,8 +722,8 @@ qstr_DEBUG__Health_Regen_|DEBUG (Rigenerazione Salute: {s1} riprende {reg0}% sal
 qstr_Three_Nazgul_are_cir|Tre Nazgul stanno volando in circolo sul campo di battaglia!
 qstr_Two_Nazgul_are_circl|Due Nazgul volano in circolo sopra al campo di battaglia!
 qstr_A_Nazgul_is_circling|Un Nazgul vola circolarmente nei cieli sul campo di battaglia.
-; qstr_Some_of_your_human_t|Some of your human troops are not daunted by the darkness.(Night Troops are not affected by night time penalties)
-; qstr_You_are_filled_with_|You are filled with just rage as you set your eyes upon the enemy (Berserk active).
+qstr_Some_of_your_human_t|Alcune delle tue truppe umane non sono scoraggiate dall'oscurità. (I Combattenti Notturni non sono influenzati dai rigori della notte)
+qstr_You_are_filled_with_|La rabbia ti pervade mentre fissi il nemico (Berserk attivo).
 qstr_Your_mount_is_scared|La tua cavalcatura è spaventata dal {reg73?ent:troll}!
 qstr_Nazgul_sweep!|Spazzata Nazgul !
 qstr_You_and_your_horse_p|Tu e il tuo cavallo andate nel panico, le urla dei Nazgul sono insopportabili !
@@ -743,11 +743,11 @@ qstr_Your_bravery_inspire|Il tuo coraggio ispira le tue truppe !
 qstr_Your_mount_has_falle|La tua cavalcatura è crollata a terra sotto di te!
 qstr_Receive_{reg22}_dama|Ricevi {reg22} danno.
 qstr_You_have_been_knocke|Hai perso i sensi per mano di {s22}.
-; qstr_{s21}_has_been_knock|{s21} has been knocked off of {reg23?her:his} mount when it fell.
-; qstr_{s21}_{reg24?killed:|{s21} {reg24?killed:knocked unconscious} by {s22}.
+qstr_{s21}_has_been_knock|{s21} è {reg23?stata disarcionata:stato disarcionato} dalla sua cavalcatura cadendo.
+qstr_{s21}_{reg24?killed:|{s21} {reg24?ucciso:tramortito} da {s22}.
 qstr_A_bear_has_been_summ|Un orso è stato chiamato in battaglia!
 qstr_In_The_Last_Days_of_|In The Last Days of the Third Age, le tue truppe si disporranno da sole tenendo la posizione all'inizi di ogni battaglia, invece di partire ciecamente alla carica.^^Per ordinare alle tue truppe di assumere una formazione, premi 'J' per Ranghi, 'K' per Muro di Scudi, 'L' per Cuneo e ';' per Quadrato. Per rompere le righe premi 'U'. ^Se le tue truppe sono in rotta, puoi premere 'V' per incintarli. Ha un numero limitato di incitamenti ad ogni battaglia, e il loro l'ammontare dipende dal livello del tuo comando e del tuo carisma.
-; qstr_You_can_also_order_y|You can also order your troops to cycle through the type of weapon you want them to use.^^ Press O to cycle between Weapon Order types. Press P to cycle between Shield Order types.
+qstr_You_can_also_order_y|Puoi anche ordinare alle tue truppe di selezionare il tipo di arma che intendi far usare loro.^^ Premi O per scegliere fra i vari tipi d'arma. Premi P per scegliere fra i vari tipi di scudo.
 qstr_The_Last_Days_of_the|The Last Days of the Third Age ha implementato una personalizzazione della telecamer in modo da superare gli attuali limiti nelle inquadrature con l'attenzione posta verso le razze di bassa statura (es. Orchi e Nani).^^ Premi CTRL + END per scorrere fra le 2 modalità della telecamera: Posizone Fissa e Modalità Libera.^^Posizione Fissa è la scelta ottimale per tutte le razze, tuttavia non può essere configurata. Puoi premere CTRL+FRECCIA SINISTRA/DESTRA per cambiare spalla.^^La Modalità Libera pone il personaggio nel mezzo dello schermo. Puoi premere CTRL+FRECCIA SU/GIÚ per inclinare la telecamera e CTRL+ Numpad +/- per zummare.^^ Vedi le pagine informative per sapere come controllare le diverse modalità della telecamera.
 qstr_Battlefield_is_too_s|Il campo di battaglia è troppo piccolo per formazioni IA complesse.
 qstr_You_have_a_clear_per|Hai la chiara percezione di un grande pericolo imminente, lo senti intorno a te !
@@ -760,15 +760,15 @@ qstr_Get_all_of_them!|Prendeteli tutti!
 qstr_Kill_them_all!|Uccideteli tutti!
 qstr_Toss_them_overboard!|Buttateli fuori bordo!
 qstr_It_is_a_good_day_to_|è un bel giorno per morire!
-; qstr_All_hands_on_deck!_T|All hands on deck! Throw them back!
+qstr_All_hands_on_deck!_T|Tutti in coperta! Ributtiamoli indietro!
 qstr_Ally_reinforcements_|I rinforzi alleati sono arrivati
 qstr_Forward_men!|Avanti, uomini!
-; qstr_Leave_none_of_these_|Leave none of these filth standing!
+qstr_Leave_none_of_these_|Non lasciate in piedi niente di questa feccia!
 qstr_End_them_all!|Finiteli tutti!
 qstr_Drive_them_back!|Ricacciamoli indietro!
 qstr_Protect_the_City!|Proteggi la città!
 qstr_Forward!_Board_them!|Avanti! All'arrembaggio!
-; qstr_The_Last_Days_of_the_|The Last Days of the Third Age has an Advanced Siege AI, vastly different from Native. All troops, including the player's, are distributed amongst different teams (Left Flank / Center / Right Flank).^^ The player is then in charge of commanding their team, while the AI is in charge of commanding the other teams. This allows for a smarter, squad-based, siege battles.^^ Starting troops and reinforcements are commanded to CHARGE during the first few seconds after deployment. After that, your team can be commanded again.
+qstr_The_Last_Days_of_the_|The Last Days of the Third Age dispone di una IA Avanzata per gli Assedi, molto differente dalla versione Native. Tutte le truppe, inclusi i giocatori, sono  distribuite in diverse squadre (Fianco Sinistro / Centro / Fianco Destro).^^ Il giocatore è quindi in carica per comandare la propria squadra, mentre la IA si occupa di comandare le altre. Ciò permette che vi siano battaglie d'assedio più sensate e basate sulle squadre.^^ Inizialmente sia le truppe che i rinforzi hanno l'ordine di CARICARE per i primi secondi dopo il loro dispiegamento. Dopo ciò, la tua squadra può ricevere nuovi ordini.
 qstr_Reached_Gauntlet_wav|Raggiunta l'ondata sfida {reg1} !
 qstr_Ballista:_out_of_amm|Ballista: munizioni terminate !
 qstr_Ballista:_turn_CURSO|Ballista: muovi con CURSORE, mira con LSHIFT, fuoco con SPAZIO, imposta fuoco con T, esci con F
@@ -776,7 +776,7 @@ qstr_Ballista:_out_of_ammo|Ballista: munizioni terminate
 qstr_The_ladders_on_Deepi|Le scale sulle Mura fossato ! Attenti !
 qstr_THREE.._TWO..._ONE..|TRE... DUE... UNO... COMBATTERE !
 qstr_You_have_come_upon_t|Giungi sulle rovine di Amon Hen, il Colle dell'Occhio, una torre di guardia Gondoriana sulla cui vetta si trova il Seggio della Vista^^Percepisci che questo luogo era grandioso un tempo, ma è da lungi dimenticato. 
-; qstr_You_have_come_upon_th|You have come upon the Dead Marshes, site of the battle of Dagorlad during the War of the Last Alliance^^The marshlands have swallowed up what was once a grassy plain, and now the only green is the scum of livid weed on the dark greasy surfaces of the sullen waters^^Dead grasses and rotting reeds loom up in the mists like ragged shadows of long forgotten summers, and bodies of men, elves, and orcs float in the murky depths^^The air feels cold and clammy, and you can't help but shiver as you see candle-lights flickering in the eyes of an elf corpse just beneath the water's surface
+qstr_You_have_come_upon_th|Hai raggiunto le Paludi Morte, il luogo della battaglia di Dagorlad durante la Guerra dell'Ultima Alleanza^^Le paludi hanno inghiottito quella che un tempo era una pianura erbosa, e ora l'unico verde che vedi è rappresentato dalla schiuma livida su grasse superfici scure fra cupe acque^^La vegetazione morta e le canne putrescenti si ergono nelle nebbie come ombre lacere di lunghe estati dimenticate, mentre i corpi di uomini, elfi e orchi galleggiano fra le fosche profondità^^L'aria è fredda e umida, e non puoi fare a meno di rabbbrividire quando vedi fiammelle come di candela bruciare negli occhi del cadavere di un elfo, appena sotto la superficie dell'acqua.
 qstr_You_have_entered_the|Ti addentri nelle foreste meridionali di Bosco Atro, una volta conosciuto come Boscoverde il Grande^^La fortezza di Dol Guldur è vicina e proietta un'ombra oscura sulla foresta. I boschi qui sono ammalati e decadenti. Le quercie secolari sono invase da marciume e funghi e grandi tele aggrovigliate si allungano da tronco a tronco^^ L'aria è eternamente immobile, oscura e opprimente, è come se tu stessi lentamente soffocando
 qstr_You_have_found_the_D|Hai trovato il magazzino dei Nani dove si potrebbe trovare la Lancia Leggendaria. Fai rapporto sulle tue scoperte a {s3}
 qstr_Leave_the_Warehouse?|Lasciare il Magazzino ?
@@ -804,7 +804,7 @@ qstr_{s31}_scouts_have_ap|{s31} sono apparsi degli esploratori!
 qstr_Those_are_ours!_We_h|Sono nostri! Gli abbiamo dato la caccia sin dalla loro partenza! Nessuno deve mettersi sulla nostra strada!
 qstr_Trolls_appeared!|Sono apparsi i troll!
 qstr_Gaaaar!!|Gaaaar!!
-; qstr_{s31}_scouts_have_app|{s31} scouts have appeared to aid the refugees!
+qstr_{s31}_scouts_have_app|{s31} esploratori sono apparsi per aiutare i rifugiati!
 qstr_Hurry_men!_Help_the_|Presto uomini! Aiutate i rifugiati! Uccidete tutta questa feccia e non lasciateli fuggire!
 qstr_Cannot_leave|Impossibile andare
 ; qstr_Longbeard_Kinsman|Longbeard Kinsman
@@ -930,7 +930,7 @@ qstr_^^Ally_Casualties:{s|^^Perdite alleate:{s0}
 qstr_You_and_{s3}_celebra|Tu e {s3} festeggiate la vostra vittoria contro {s4}.
 qstr_News_of_your_victory|Le notizie della tua vittoria contro {s4} giungono a {s3}
 qstr_{s3}_witnesses_your_|{s3} Testimonia la tua vittoria contro {s4}.
-; qstr_Even_though_there_we|Even though there were no allies to witness your victory, your troops nevertheless celebrate your triumph.
+qstr_Even_though_there_we|Benché non vi siano alleati a testimoniare la tua vittoria, le tue truppe nondimeno celebrano il tuo trionfo.
 qstr_{s1}_of_{s3}_managed|{s1} di {s3} sono riusciti a scappare.
 qstr_Prisoners_rescued_so|Prigionieri salvati per ora: {reg1}
 qstr_Victory_comment._Pla|Commento della vittoria. Il giocatore era solo
@@ -994,7 +994,7 @@ qstr_a_scout_party_from_{|un gruppo di esploratori da {s3}
 qstr_two_scout_parties_an|due gruppi di esploratori e uno di foraggiatori da {s3}
 qstr_two_scout_parties_and|due squadre di esploratori e un gruppo di assaltatori da {s3}
 qstr_three_scouts_two_for|tre esploratori, due foraggiatori e una pattuglia da {s3}
-; qstr_three_scouts_two_rai|three scouts, two raiders, and a war party from {s3}
+qstr_three_scouts_two_rai|tre esploratori, due assaltattori e una compagnia d'armi da {s3}
 qstr_You_see_the_village_|Vedi il villaggio sotto attacco. Chiedi alla gran parte delle tue truppe di cercare altri aggressori, mentre prendi un piccolo contingente e ti prepari a difendere la popolazione.
 qstr_You_see_the_village_y|Vedi l'insediamento che hai ordine di attaccare. Tu ed un piccolo gruppo di attaccanti vi preparate ad assaltare l'insediamento, in modo da non essere individuati
 qstr_The_raiders_are_defe|I predatori sono sconfitti ! I pochi che restano vivi e coscienti si affrettano a tornare nell'oscurità da cui sono usciti, terrorizzati dagli abitanti del villaggio e dal loro nuovo campione.
@@ -1002,8 +1002,8 @@ qstr_Try_as_you_might_you|Fai tutto ciò che è in tuo potere, ma non riesci a s
 qstr_The_village_has_been|Il villaggio è stato razziato, gli abitanti sono stati uccisi o resi schiavi. L'Oscuro Signore ne sarà compiaciuto.
 qstr_You_failed_to_raid_t|Hai fallito nel razziare il villaggio e vieni mandato in fuga con i tuoi compagni. Senti le grida dei vincitori mentre percepisci lo sguardo di disapprovazione dell'Occhio.
 qstr_The_Scout_Camp_has_b|Il Campo degli Esploratori è stato raso al suolo, questo rallenterà l'avanzata del nemico.
-; qstr_You_failed_to_destro|You failed to destroy the Scout Camp. The enemy has taken measure of your faction and has decidedly stuck.
-; qstr_You_have_defeated_the|You have defeated the raiding fleet! This is a heavy blow to the enemy's plans!
+qstr_You_failed_to_destro|Hai fallito nel distruggere il Campo degli Esploratori. Il nemico ha soppesato la tua fazione e ha alzato le difese.
+qstr_You_have_defeated_the|Hai sconfitto la flotta assalitrice! Si tratta di un duro colpo ai piani del nemico!
 qstr_You_defeated_the_int|Hai sconfitto la flotta nemica! Benché tu non disponga di forze sufficienti ad assaltare la città, si tratta di una grande vittoria!
 qstr_You_drove_back_the_e|Hai respinto la flotta nemica, ma hai perso la maggior parte delle tue navi!
 qstr_You_were_defeated_by|Hai fallito nell'intercettare la flotta nemica e nell'assalire la città!
@@ -1011,13 +1011,13 @@ qstr_Lorien|Lorien
 qstr_Imladris|Gran Burrone
 qstr_Woodelf|Elfo Silvano
 qstr_^^^^^^^You_come_upon|^^^^^^^Arrivi presso i rifugiati che stanno lasciando {s2} diretti a {s3}.^^Sono soprattutto vecchi e infermi, accompagnati da donne e bambini.^^Ci sono delle guardie, ma non abbastanza per poter proteggere tutti da un'incursione.
-; qstr_^^^^^^^You_come_upon_|^^^^^^^You come upon the refugees you have been tracking since {s2}. They seem to be on their way to {s3}, and are mostly the old and the infirmed. ^^ There are few guards, but not enough to stop you and your men from killing all of them.
+qstr_^^^^^^^You_come_upon_|{s31}T'imbatti sui rifugiati sulle cui tracce eri sin da {s2}. Sembra che siano diretti verso {s3}, e si tratta per lo più di vecchi e infermi. ^^ Ci sono alcune guerdie, ma non a sufficienza per impedire a te e a tuoi di ucciderli tutti.
 qstr_^^At_last_the_Master|^^Infine, il Padrone sta facendo la sua mossa! Le torce bruciano luminose. Le armi affilate brillano. Tu e i tuoi coraggiosi compagni riceverete ben presto l'ordine di marciare. Ah, ci sarà da combattere, molto, e gloria per tutti!^^Ha ricevuto l'onore di essere convocato in udienza dal Padrone nella sua torre. Probabilmente i tuoi primi ordini riguarderanno lavori di snaga - razzia un villaggio qui, preda una carovana là.. Ma dari prova di te molto presto. Chi osa dire che non potrai avere un ruolo di comandante di {s2} a {s3}?^^La Guerra è iniziata; la caduta dell'Uomo e dei loro alleati ha inizio!
 qstr_^^Your_head_suddenly|^^Nella tua mente si materializza una visione - l'Occhio fiammeggiante. Tutto intorno a te, i tuoi guerrieri si fermano. in qualche modo, sai che in quel momento tutti voi udite la stessa chiamata, avete la stessa visione. Grande è la magia dell'Occhio senza Palpebra - grande è il potere di Barad-dûr!.^^ Il sapere, pur senza parola, ti penetra fin nelle ossa. Il tempo è giunto. Il Signore Oscuro comanda - dovrai marciare sui tuoi nemici in guerra aperta. Giungeranno ordini da {s2} a {s3}. La tua parte all'inizio non sarà importante, ma darai prova di te ben presto.^^ La Guerra è iniziata; la caduta dell'Ovest è prossima! 
 qstr_{s13}_asked_you_to_j|{s13} ti ha chiesto di unirti al suo esercito con almeno {reg13} soldati e raggiungere l'ultima difesa di Isengard.
 qstr_You_defeated_{reg5}_|Hai abbattuto {reg5} avversari e hai colpito il tuo comandante.
 qstr_You_defeated_{reg5}_e|Hai sconfitto {reg5} nemici.
-; qstr_You_failed_to_defeat|You failed to defeat any enemy.
+qstr_You_failed_to_defeat|Hai fallito nello sconfiggere il nemico.
 qstr_The_sorcerer_slain_y|Lo stregone è morto, tu e i tuoi compagni curate frettolosamente le vostre ferite e vi dileguate nella notte. Folli schiamazzi gridano dietro le vostre spalle e percepisci occhi ardenti che ti cercano nell'oscurità. Presto l'ira si trasforma in delusione e i suoni dell'inseguimento si attutiscono, sostituiti dal solito pesante silenzio di Bosco Atro. La fuga è riuscita.
 qstr_The_sorcerer_slipped|Lo stregone ti sfugge fra le dita e scivola nelle oscurità dei suoi domini. Col cuore pesante a causa del vostro fallimento, tu e i tuoi compagni curate le vostre ferite e vi ritirate nella notte. Alle tue spalle grida beffarde ti raggiungono mentre occhi ardenti penetrano nell'ombra. Poi le risate e gli insulti sembrano misericordiosamente attenuarsi, il loro posto è preso dall'abituale pesante silenzio della foresta di Bosco Atro. Hai avuto modo di fuggire.
 qstr_You_approach_a_heavi|Ti avvicini ad una regione altamente sorvegliata della foresta...
@@ -1049,11 +1049,11 @@ qstr_{s1}_has_been_defeat|{s1} è stato sconfitto. La missione è cancellata.
 qstr_You_must_follow_{s1}|Devi seguire {s1} !
 qstr_You_must_follow_{s1}!|Devi seguire {s1} ! Questo è l'ultimo avvertimento !
 qstr_{s1}_parties_defeate|{s1} gruppi sconfitti: {reg1} di {reg2}
-; qstr_{reg65}_Moria_and/or|{reg65} Moria and/or Gundabad troops killed. (Counter refreshes every hour)
-; qstr_{reg65}_{s3}_troops_|{reg65} {s3} troops killed. (Counter refreshes every hour)
-; qstr_{reg66}_{s5}_troops_|{reg66} {s5} troops killed. (Counter refreshes every hour)
-; qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} troops killed. (Counter refreshes every hour)
-; qstr_{reg68}_{s10}_killed|{reg68} {s10} killed. (Counter refreshes every hour)
+qstr_{reg65}_Moria_and/or|{reg65} guerrieri di Moria e/o di Gundabad uccisi. (La conta si aggiorna ogni ora)
+qstr_{reg65}_{s3}_troops_|{reg65} {s3} nemici uccisi. (La conta si aggiorna ogni ora)
+qstr_{reg66}_{s5}_troops_|{reg66} {s5} nemici uccisi. (La conta si aggiorna ogni ora)
+qstr_{reg67}_{s7}_{s8}_tr|{reg67} {s7} {s8} nemici uccisi. (La conta si aggiorna ogni ora)
+qstr_{reg68}_{s10}_killed|{reg68} {s10} uccisi. (La conta si aggiorna ogni ora)
 qstr_{s1}_is_scouted.|{s1} è stato esplorato.
 qstr_The_Age_of_Men_has_f|L'era degli Uomini è finalmente cominciata. Ora le due torri accolgono i loro ospiti e gli alleati rimanenti per decidere chi sarà l'unico sovrano della Terra di Mezzo !
 qstr_The_War_of_the_Two_T|La guerra delle Due Torri è cominciata !
@@ -1069,8 +1069,8 @@ qstr_The_hosts_of_{s2}_ma|I proprietari terrieri di {s2} rientrano per difendere
 qstr_Gondor_has_called_fo|Gondor ha chiesto aiuto!
 qstr_Gondor_is_accompanyi|Gondor sta accompagnando il Comandante in Capo!
 qstr_{s5}_has_stopped_fol|{s5} ha smesso di seguirti.
-; qstr_You_have_{reg69}_all|You have {reg69} ally party following you
-; qstr_You_have_{reg69}_ally|You have {reg69} ally parties following you
+qstr_You_have_{reg69}_all|Hai {reg69} compagnie alleate che ti seguono
+qstr_You_have_{reg69}_ally|Hai {reg69} compagnie alleate al tuo seguito
 qstr_The_forces_of_{s2}_h|Le forze di {s2} si sono radunate e marciano verso {s15}!
 qstr_{s1}_from_{s2}|{s1} da {s2}
 qstr_When_dealing_with_lo|Quando si parla della popolazione locale in {s11}, ricorda che non ti conoscono e non ti riconoscono necessariamente i meriti guadagnati presso {s10}. ^^(I Punti Risorsa che puoi spendere tra le persone di {s11} non sono quelli guadagnati presso {s10}, ma solo quelli guadagnati con {s11})
@@ -1100,12 +1100,12 @@ qstr_{s27}:_Party_morale_d|{s27}: il morale della Compagnia diminuisce.
 qstr_You_have_failed_to_f|Hai mancato di adempiere al tuo giuramento di vendicare Balin e la sua compagnia!
 qstr_You_have_failed_to_fu|Non sei riuscito a soddisfare la tua voglia di vendetta per la morte eroica di {s1} !
 qstr_Your_troops_value_yo|Le tue truppe valutano i tuoi sforzi per assolvere il tuo giuramento, ma si rendono conto che gli eventi si sono svolti troppo in fretta. Come risultato,
-; qstr_{s22}You_have_fulfil|{s22}You have fulfilled your oath to avenge Balin and his company!
+qstr_{s22}You_have_fulfil|{s22}Hai adempiuto al tuo giuramento di vendicare Balin e la sua compagnia!
 qstr_{s22}You_have_fulfill|{s22}Hai adempiuto al tuo giuramento di vendetta per l'eroica morte di {s1}!
 qstr_Reinforcements|Rinforzi
 qstr_Refugees_Escaped:_{r|Rifugiati Fuggiti:  {reg10} --- Rifugiati Uccisi: {reg11}
 qstr_Raider_Parties_Kille|Gruppi di Razziatori Uccisi: {reg12}
-; qstr_One_of_the_target_ce|One of the target centers by the refugee trains have been destroyed. The refugees have scattered, and are nowhere to be found.
+qstr_One_of_the_target_ce|Una delle destinazioni delle carovane dei rifugiati è stata distrutta. I fuggiaschi sono dispersi e non li si trova da nessuna parte.
 qstr_As_an_Orc_or_a_Dwarf|In qualità di Orco o di Nano, puoi trarre vantaggio dall'Inquadratura Personalizzata che abbiamo implementato per migliorare l'esperienza di gioco in TLD con l'uso di razze di bassa statura. Consulta la sezione Concetti di Gioco per maggiori informazioni circa il suo utilizzo.
 qstr_Custom_Camera|Inquadratura personalizzata
 qstr_{reg65?my_Lady:my_Lo|{reg65?Mia Signora:mio Signore}
@@ -1152,14 +1152,14 @@ qstr_Pippin|Pipino
 qstr_the_Citadel|La Cittadella
 qstr_Minas_Tirith|Minas Tirith
 qstr_Steward_Denethor|Denethor, il Sovrintendente
-; qstr_the_Golden_Hall|the Golden Hall
+qstr_the_Golden_Hall|il Palazzo d'Oro
 qstr_Edoras|Edoras
 qstr_King_Theoden|Re Theoden
 qstr_Merry_asked_you_to_d|Merry ti ha chiesto di consegnare un messaggio a suo cugino, Pippin, a Minas Tirith.
 qstr_Pippin_asked_you_to_|Peregrino Tuc ti ha chiesto di consegnare un messaggio a suo cugino Meriadoc, a Edoras.
 qstr_Tell_him_I_ve_grown_|Digli che sono cresciuto di un altro pollice!
-; qstr_Tell_Pip_he_smokes_t|Tell Pip he smokes too much!
-; qstr_Tell_him_I_can_ride_|Tell him I can ride a grown horse now!
+qstr_Tell_Pip_he_smokes_t|Dì a Pip che fuma troppo!
+qstr_Tell_him_I_can_ride_|Digli che ora posso cavalcare un cavallo adulto!
 qstr_Ask_him_if_he_has_an|Chiedigli se ha un po' di erba-pipa da parte!
 qstr_Tell_him_I_ll_be_the|Digli che sarò quello più alto la prossima volta che ci vedremo!
 qstr_Ask_if_he_s_seen_Gan|Chiedigli se ha visto Gandalf!
@@ -1225,29 +1225,29 @@ qstr_{reg20}_refugee_trai|{reg20} carovane di rifugiati sono fuggite e hanno raf
 qstr_You_did_however_defea|L'hai fatto, comunque, sconfiggere {reg18} carovane di rifugiati, indebolendo il nemico determina che ({s1} ha perso {reg19} forza della fazione).
 qstr_My_lord_{s12}_is_saf|Mio signore, {s12} è al sicuro. I Corsari sono stati sconfitti.
 qstr_My_lord_Esgaroth_is_|Mio signore, Esgaroth è al sicuro. Gli uomini di Rhûn sono stati sconfitti.
-; qstr_The_surroundings_of_|The surroundings of {s12} burn. The pillaging was glorious indeed!
-; qstr_The_surroundings_of_E|The surroundings of Esgaroth burn. The pillaging was glorious indeed!
+qstr_The_surroundings_of_|I sobborghi di {s12} bruciano. Il saccheggio è stato davvero glorioso!
+qstr_The_surroundings_of_E|I sobborghi di Esgaroth bruciano. Il saccheggio è stato davvero glorioso!
 qstr_This_is_welcome_news|Queste sono davvero buone notizie, {playername}. Non eravamo pronti per fronteggiare un'azione audace dei Corsari. Ma grazie a te, le vele nere sono state respinte, almeno per un po', e ora possiamo sperare, infine, di aver inferto loro un duro colpo in questo giorno. Hai tutta la nostra gratitudine.
 qstr__Good_work_{playerna|Bel lavoro, {playername}! Loro hanno mostrato d'avere più arguzia di quanta gliene attribuissimo, glielo concedo. Ma questi Easterlings non combattono bene sulle imbarcazioni nemmeno la metà di quanto facciano a cavallo, a quanto pare! Forse noi, a nostra volta, dovremmo considerare l'idea di varare una nostra flotta... In ogni caso, ti ringraziamo {playername}, da parte di Esgaroth e di tutto il popolo di Dale.
 qstr_Even_from_here_we_co|Anche da qui, possiamo vedere le fiamme e percepire l'odore della disperazione dei nostri nemici portato dal vento! Hai agito splendidamente, {playername}. Che il terrore adesso colpisca il cuore di ogni uomo, donna e infante di Gondor, perché ora sanno che nemmeno le loro più possenti roccaforti sono irraggiungibili per noi!
 qstr_Even_from_here_we_cou|Anche da qui, possiamo vedere le fiamme e percepire la disperazione dei nostri nemici portata dal vento! Hai agito splendidamente, {playername}. Lasciamo che il terrore colpisca il cuore di ogni uomo, donna e bambino di Dale, perché sappiano che nemmeno le loro possenti roccaforti sono al di fuori della nostra portata!
 qstr_My_lord_they_fell_up|Mio signore, sono piombati su di noi con una grande forza. Non siamo stati in  grado di respingere i Corsari.
-; qstr_My_lord_they_fell_upo|My lord, they fell upon us with great force. We could not repel the warriors of Rhûn.
+qstr_My_lord_they_fell_upo|Mio signore, sono piombati su di noi con ingenti forze. Non abbiamo potuto respingere i guerrieri di Rhûn.
 qstr_The_raid_on_{s12}_fa|L'assalto su {s12} è fallito, grazie all'incompetenza dei nostri alleati!
 qstr_This_raid_was_ill_fa|Questo assalto è stato marchiato dalla sfortuna sin dall'inizio. Non avremmo mai dovuto usare quelle zattere traballanti!
-; qstr_This_is_evil_news_yo|This is evil news you bring. The black sails grow ever bolder, and all of Belfalas now lies ever more under their shadow. I will not blame you overmuch, {playername}, for your failure, but we have been struck a sore blow indeed, a sore blow. Go now. Hope dwindles for Gondor, and we must fight to keep what remains of it alive.
+qstr_This_is_evil_news_yo|Sono davvero cattive notizie quelle che porti. Le vele nere si fanno sempre più audaci, e ora tutta Belfalas giace sempre più sotto la loro ombra. Non t'incolperò più di tanto, {playername}, per il tuo fallimento, ma non possiamo negare di aver subito un duro colpo, davvero pesante. Va ora. Le speranze si affievoliscono per Gondor, e ora dovremo proteggere ciò che rimane.
 qstr_This_is_evil_news_you|Porti amare notizie. Gli Easterling si fanno sempre più audaci, mentre Esgaroth brucia. Non ti rimprovererò più di tanto, {playername}, per il tuo fallimento, ma abbiamo subito davvero un duro colpo. Va ora. Le speranze si affievoliscono per il nostro regno, e dobbiamo combattere per tenere in vita ciò che ne è rimasto.
 qstr_Pah!_It_seems_you_we|Bah! Sembra che tu abbia perso il tuo piede marino, {playername}. Ora se ne stanno comodi, questi uomini di Gondor, nell'alto delle loro torri, vanitosi come re, ridendo di noi mentre le vele nere bruciano! Forse una costrizione ai remi di una galera sarebbe la punizione giusta per i tuoi uomini; peccatto che siano sotto il tuo comando e non al mio. L'occhio non ne sarà compiaciuto. Vattene ora.
-; qstr_Have_you_nothing_bet|Have you nothing better than weak excuses to offer for your failure, {playername}? Perhaps you are not as strong as we had believed. Serve our cause better in future, {playername}. There will be no mercy for the weak!
+qstr_Have_you_nothing_bet|Non hai niente di meglio che deboli scuse per giustificare il tuo fallimento, {playername}? Forse non sei così forte come pensavo. Servi la nostra causa meglio di così in futuro, {playername}. Non ci srà pietà per i deboli!
 qstr_{playername}_we_have|{playername}, abbiamo messo Isengard in ginocchio. Hanno allestito la loro ultima difesa e stanno proteggendo Saruman nella sua torre. Calvalca con me per incontrarli!
 ; qstr_Are_you_ready_to_mee|Are you ready to meet Isengard's last stand?
-; qstr_I_am_ready_to_ride_w|I am ready to ride with you against Isengard.
+qstr_I_am_ready_to_ride_w|Posso cavalcare con te contro Isengard.
 qstr_I_am_ready_to_ride_wi|Siamo pronti a cavalcare con te per incontrarli. Poniamo fine a tutto questo.
 qstr_I_am_not_ready_to_ri|Non posso ancora cavalcare al tuo fianco. Ho bisogno di un po' di tempo.
 ; qstr_You_do_not_have_enou|You do not have enough troops to help in this battle. Raise at least 30 men and join me soon!
 qstr_Stay_close_we_will_t|Restate vicini, prenderemo posizione vicino al nemico. Quando ci saremo radunati, attaccheremo.
 qstr_You_have_taken_too_l|Hai impiegato troppo tempo... Adesso dobbiamo andare, con te o senza di te. Ci raduneremo nei pressi del nemico ed entro tre giorni, colpiremo.
-; qstr_Make_haste_{playerna|Make haste, {playername}. We do not want them to recover.
+qstr_Make_haste_{playerna|Fa in fretta, {playername}. Non vogliamo che si riprendano.
 qstr_Your_mission_is_comp|La tua missione è completa, {s9} vuole te per riprendere a seguire la sua armata fino a nuovo avviso.
 qstr_{s13}_asked_you_to_g|{s13} ti ha chiesto di raccogliere {reg3} unità di {s4} e riportarglieli.
 qstr_Moreover_should_you_|Inoltre, se dovessi diventare {s24}, avrai accesso al mio Consiglio di guerra, dove potrai prendere decisioni che influenzeranno il corso della nostra campagna. Per il momento, come {s25}, seguici e resta in zona. Ci sposteremo presto.
@@ -1259,7 +1259,7 @@ qstr_Superb_work_{playern|Che lavoro superbo, {playername}. Ammiro il tuo spirit
 qstr_Your_efficiency_is_p|La tua efficienza è piacevole, {playername}. Continua così ed arriverai lontano.
 qstr_It_was_an_honour_to_|È un onore servire.
 qstr_Your_wish_is_my_comm|Ogni tuo desiderio è un ordine per me.
-; qstr_Sauron_in_Mordor_the|Sauron in Mordor, the Corsairs of Umbar, the Variags of Khand, and Harad Tribesmen
+qstr_Sauron_in_Mordor_the|Sauron a Mordor, i Corsari di Umbar, I Variagi di Khand, e gli uomini delle tribù di Harad
 qstr_Saruman_in_Isengard_|Saruman a Isengard e gli Uomini Selvaggi del Dunland
 qstr_Orcs_of_Moria_and_Do|Orchi di Moria e Dol Guldur
 qstr_Orcs_of_Gundabad_and|Orchi di Gundabad e i Guerrieri di Rhun
@@ -1284,24 +1284,24 @@ qstr_your|tuo/tua/tuoi/tue
 qstr_Moria_and_Gundabad|Moria e Gundabad
 qstr_Moria|Moria
 qstr_Gundabad|Gundabad 
-; qstr_You_swear_an_oath_of|You swear an oath of vengeance against {s3}. You must now kill as many of the troops of Moria and Gundabad as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!^.
+qstr_You_swear_an_oath_of|Hai giurato vendetta contro {s3}. Ora dovrai uccidere quante più truppe di Moria e Gundabad ti sarà possibile nei prossimi giorni. Sei profondamente consapevole del fatto che i tuoi seguaci hanno assistito a questo giuramento e non desideri avere la fama di chi non mantiene la parola data. Un'orgia di sangue sta per avere inizio!^.
 qstr_The_search_for_the_L|La ricerca delle Lance Perdute ti ha portato a Dorwinion, il sito dell'antico regno nordico di Re Bladorthin. CONTINUA
-; qstr__You_need_to_be_{s24|(You need to be {s24} or higher).
-; qstr_You_are_not_worthy_o|You are not worthy of my skills. Prove yourself first, and rise above {s25}. {s2}
-; qstr_I_am_sorry._I_cannot|I am sorry. I cannot attend to you as a {s25} as there are more pressing issues. {s2}
-; qstr_Yes_I_am_and_I_can_h|Yes, I am, and I can help you for a price.
+qstr__You_need_to_be_{s24|(Devi essere {s24} o maggiore).
+qstr_You_are_not_worthy_o|Non meriti le mie abilità. Dai prova di te prima di tutto, e sali sopra {s25}. {s2}
+qstr_I_am_sorry._I_cannot|Mi spiace. Non posso assisterti quale {s25} visto che ci sono faccende più urgenti. {s2}
+qstr_Yes_I_am_and_I_can_h|Si, lo sono, e posso aiutarti dietro compenso.
 qstr_You_heard_right_and_|Hai sentito bene, e si, posso aiutarti.
-; qstr__Costs_1000_Resource|(Costs 1000 Resource, 5 Influence)
-; qstr_I_can_see_that._I_ll|I can see that. I'll have my men stand guard while I deal with you. It will take some time. {s2}
-; qstr_Yes_I_see_that._I_ca|Yes, I see that. I can do tend to you yes, but it will take me away from important tasks. {s2}
-; qstr__Costs_1500_Resource|(Costs 1500 Resource, 10 Influence)
-; qstr_I_ll_have_my_persona|I'll have my personal healers deal with you. They are the best. Tell me when you want them here. {s2}
-; qstr_I_ll_have_my_personal|I'll have my personal healers tend to your men. They are the best at what they do. Let me know when you need them. {s2}
+qstr__Costs_1000_Resource|(Costo 1000 Punti Risorsa, 5 Punti Influenza)
+qstr_I_can_see_that._I_ll|Posso vederlo. Ci saranno i miei uomini di guardia mentre mi prenderò cura di te. Ci vorrò un po' di tempo. {s2}
+qstr_Yes_I_see_that._I_ca|Si, lo vedo. Posso prendermi cura di te, ma ciò mi distoglierà da compiti importanti. {s2}
+qstr__Costs_1500_Resource|(Costo 1500 Punti Risorsa, 10 Punti Influenza)
+qstr_I_ll_have_my_persona|Ho i miei guaritori perché si prendano cura di voi. Sono i migliori. Dimmi quando li vorrai qui. {s2}
+qstr_I_ll_have_my_personal|I miei guaritori si prenderanno cura dei tuoi uomini. Sono i migliori in ciò che fanno. Fammi sapere quando avrai bisogno di loro. {s2}
 qstr_I_ll_have_them_here_|Li avrò qui a breve.
-; qstr_Let_us_begin._My_hea|Let us begin. My healers will take care of you and your men.
-; qstr_Alright!_This_is_goi|Alright! This is going to hurt... a lot.
-; qstr_Let_us_begin._It_may|Let us begin. It may take some time. Just relax and leave the rest to me.
-; qstr_Impressive..._You_di|Impressive... You didn't flinch much. Go back to your post.
+qstr_Let_us_begin._My_hea|Cominciamo. I miei guaritori si prenderanno cura di te e dei tuoi uomini.
+qstr_Alright!_This_is_goi|Va bene! Questo farà male... un sacco.
+qstr_Let_us_begin._It_may|Cominciamo. Potrebbe volerci del tempo. Rilassati e lascia fare a me.
+qstr_Impressive..._You_di|Impressionante... Non hai indietreggiato molto. Torna al tuo posto.
 qstr_Rest_the_wounds_have|Riposa, le ferite sono state curate.
 qstr_Your_party_must_be_a|La tua compagnia deve avere una forza di almeno 30 elementi per iniziare questa missione
 qstr_You_were_tasked_to_h|Eri stato incaricato di dare la caccia ai banditi che hanno recentemente scatenato il caos nel Nord. Puoi attaccarli nel loro nascondiglio nei pressi di Bosco Atro o di intercettarli vicino alla Casa di Beorn.
@@ -1320,27 +1320,27 @@ qstr_{s4}_^Oh_and_take_bac|{s4} ^Oh, e riprenditi quei soldati che non sono dell
 qstr_It_is_my_duty_to_hel|È il mio dovere aiutare la nostra gente.
 qstr_It_is_my_duty_to_help|È il mio dovere aiutare i nostri alleati.
 qstr_{s31}__Consumable._C|{s31} (Consumabile. Può essere ripreso)
-; qstr_{s31}__Can_be_reboug|{s31} (Can be rebought)
+qstr_{s31}__Can_be_reboug|{s31} (È possibile il riacquisto)
 qstr_I_wish_to_raze_an_en|Vorrei radere al suolo un insediamento nemico.
 qstr_I_wish_to_lead_our_m|Vorrei guidare i nostri uomini in un assalto ad un insediamento nemico.
 qstr_More_snaga_who_will_|Più snaga che si lancino sulle mura nemiche? Ascolta attentamente potrei farti provare.
-; qstr_Indeed?_Few_men_are_|Indeed? Few men are so quick to volunteer to die on the battlements. There is much we must discuss before I can give you leave to go
-; qstr_Indeed?_That_is_no_s|Indeed? That is no small undertaking and there are matters which we must discuss before I can give you leave to go.
+qstr_Indeed?_Few_men_are_|Davvero? Così pochi uomini sono stati pronti ad offrirsi volontari per morire sui bastioni.. C'è molto di cui parlare prima che tu vada.
+qstr_Indeed?_That_is_no_s|Davvero? Non è un'impresa da poco, e ci sono questioni che dobbiamo discutere prima che tu vada.
 qstr_First_sieges_are_onl|Prima di tutto, gli assedi sono soltanto un'opzione per i più forti! Ecco quello che è necessario fare:
 qstr_Here_is_all_that_nee|Ecco tutto quello che si deve fare:
 qstr_Firstly_we_must_thin|In primo luogo, dobbiamo pensare agli ostacoli da affrontare in questo compito:
 qstr_You_need_sharp_weapo|Hai bisogno di armi affilate, carne fresca per le tue truppe e warg, legna per alimentare il fuoco, e forza per tener su i deboli. Dovrai anche tenere la tua feccia in riga o si ammazzeranno l'uno con l'altro prima che tu raggiunga le mura. Siamo troppo occupati nelle nostre lotte per prenderci cura del vostro destino - preparati per fare quel che serve per tenere quei vermi in movimento.^[richiede {reg3} punti risorsa, {reg15} punti influenza]
 qstr_Steel_must_be_kept_s|L'acciaio dev'essere affilato, i soldati e i cavalli nutriti, i fuochi devono essere tenuti accesi, l'acqua raccolta — una battaglia meno gloriosa ma non meno importante di quella che combatterete sui bastioni. Giacché siamo già nelle ristrettezze per fornirti quel che serve, dovrai prepararti a fornire il necessario per tenere il tuo esercito efficace durante un assedio.^[richiede {reg3} risorse, {reg15} punti influenza]
 qstr_Steel_must_be_kept_sh|L'acciaio dev'essere affilato, i soldati e i cavalli nutriti, i fuochi devono essere tenuti accesi, l'acqua raccolta — una battaglia meno gloriosa ma non meno importante di quella che combatterete sui bastioni. Giacché siamo già nelle ristrettezze per fornirti quel che serve, dovrai prepararti a fornire il necessario per tenere il tuo esercito efficace durante un assedio.^[richiede {reg3} risorse, {reg15} punti influenza]
-; qstr_Next_if_you_try_to_a|Next, if you try to attack an enemy capital, I’ll stick you if you ain’t dead already.. We only march there when the Master commands it. You go where the enemy is weak and can be beaten.
+qstr_Next_if_you_try_to_a|Quindi, se cercherai di attaccare una capitale nemica, ti attaccherò io se non ti avranno già ucciso.. Ci mettiamo in marcia solo quando il Padrone lo ordina. Tu vai dove il nemico è debole e può essere battuto.
 qstr_Secondly_you_do_not_|Secondariamente, non hai il permesso di guidare il nostro popolo contro una capitale nemica. Quei luoghi possono essere vinti solo quando la piena potenza delle nostre forze resta unit. Devi colpire solo dove il nostro nemico è stato indebolito tanto da essere sconfitto.
-; qstr_Third_{s2}_is_on_its|Third, {s2} is on its own campaign. We’ll fight with you if the pickings look good, but you better be strong enough to win on your own, or you won’t last long.
+qstr_Third_{s2}_is_on_its|Terzo, {s2} sta portando avanti la propria campagna. Noi combatteremo con te gli auspici saranno buoni, ma farai meglio ad essere forte abbastanza da vincere senza l'aiuto di nessuno, o non durerai a lungo.
 qstr_Furthermore_you_must|Inoltre, devi sapere che {s2} è impegnato nella sua campagna. I nostri stendardi ti seguiranno in battaglia se le circostanze lo permetteranno, ma non farci assoluto affidamento — ti potrebbe accadere di restare senza nessuno.
 qstr_Last_remember_that_a|Infine, ricorda che in qualità di {s25}, il Capo non ha tempo da perdere con i fallimenti. RIschi molto per {s2} quando combatti - portaci la sconfitta e ci assicureremo che tu desideri di non aver mai visto la luce.
 qstr_Finally_remember_tha|Infine, ricorda che in qualità di {s25}, vivrai e morirai in base ai tuoi successi o ai fallimenti. Rischi molto per {s2} quando marci in battaglia - porta la rovina su di esso e le conseguenze saranno gravi.
 qstr_Finally_remember_that|Infine, ricorda che in qualitò di {s25}, potrai anche crogiolarti nella gloria di una vittoria ottenuta con sacrificio e attribuirne il merito solo a te, ma tutti coloro che dimorano a {s2} pagheranno il prezzo del tuo fallimento. Porti sulle tue spalle il destino di {s2} quando scendi in battaglia - porta la rovina su di esso e le conseguenze saranno gravi.
 qstr_Still_think_you_can_|Pensi ancora di potertene occupare?
-; qstr_Knowing_what_I_have_|Knowing what I have told you, do you still think yourself capable?
+qstr_Knowing_what_I_have_|Sapendo ciò che ti ho detto, ti ritieni ancora in grado?
 qstr_Knowing_what_I_have_t|Sapendo ciò che ti ho detto, vuoi ancora procedere?
 qstr_Give_me_the_banner_o|Dammi lo stendardo del Padrone!
 qstr_Yes_my_lord._Let_me_|Si, mio signore. Lascia che porti il nostro stendardo in battaglia.
@@ -1377,25 +1377,25 @@ qstr_{playername}_I_want_|{playername}, voglio che mostri agli uomini che i nemi
 qstr_I_will_do_what_you_a|Farò quello che mi hai chiesto, e gli uomini ne saranno testimoni.
 ; qstr_high_level_troops_fr|high level troops from
 ; qstr_elite_level_troops_f|elite level troops from
-; qstr_{s9}_wants_you_to_pe|{s9} wants you to personally defeat {reg22} {s6} {s7}.
+qstr_{s9}_wants_you_to_pe|{s9} vuole che tu in persona abbatta {reg22} {s6} {s7}.
 qstr_I_want_you_to_person|Voglio che tu personalmente abbatta
 qstr_I_want_you_and_your_|Voglio che tu e i tuoi uomini uccidiate
 qstr_{playername}_you_nee|{playername}, dovrai guadagnarti il mio rispetto e quello degli tuoi uomini. {s6} {reg22} {s7} truppe!
 qstr_{s9}_wants_you_to_per|{s9} desidera che tu abbatta di persona {reg22} {s6} nemici.
 qstr_{s9}_wants_you_and_y|{s9} desidera che tu e i tuoi uomini uccidiate {reg22} {s6} avversari.
-; qstr_{playername}_we_have_|{playername}, we have received grim tidings. The Corsairs of Umbar grow ever bolder, and even as we speak, a fleet gathers not far from {s6}. Already they reave along the coastline, and soon they shall be upon the city itself.^^ We must intercept the fleet before it reaches the city. Hasten to {s6}, and speak to the local authorities.
-; qstr_{playername}_we_have_r|{playername}, we have received grim tidings. The savages of Rhûn have more cunning and boldness than we thought - unseen by our scouts, they have built a sufficiency of boats and rafts to carry them across the Long Lake, and they are striking directly at Esgaroth!^^ We must intercept the fleet before it reaches the city. Lead your troops there as swiftly as you can, and drive the barbarians back across the water!
+qstr_{playername}_we_have_|{playername}, abbiamo ricevuto tremende notizie. i Corsari di Umbar si sono fatti sempre più audaci, e proprio mentre parliamo, una flotta si sta radunando non lontano da {s6}. Sono già nei pressi della costa e fra non molto raggiungeranno la città stessa.^^ Dobbiamo intercettare la loro flotta prima che raggiunga la città. Affrettati a raggiungere {s6} e parla con le autorità locali.
+qstr_{playername}_we_have_r|{playername}, abbiamo ricevuto spaventose notizie. I selvaggi di Rhûn sono dotati di più audacia e astuzia di quanto pensassimo - non visti dai nostri esploratori, hanno costruito barche e zattere a sufficienza per fargli attraversare Lago Lungo e portare l'attacco direttamente ad Esgaroth!^^ Dobbiamo intercettare la loro flotta prima che arrivi alla città. Guida le tue truppe laggiù più in fretta possibile, e respingi quei barbari al di là delle acque!
 qstr_If_you_seek_pillage_|Se cerchi ricchezze e saccheggio, ecco un'opportunità senza pari, {playername}.^^ Una flotta Corsara sta per salpare dal porto di {s7}, e farà rotta verso {s6}, che è come una gallina pronta da spennare! Unisciti al loro assalto e dividi le spoglie!
 qstr_The_soft_weaklings_o|Gli smidollati e deboli di Esgaroth non possono competere con i nostri veloci cavalieri e i nostri feroci guerrieri, {playername}. Questo è risaputo. Gli Uomini del Lago credono di essere al sicuro, con le acque che ci separano, ma ben presto gli dimostreremo il contrario!^^ Abbiamo fabbricato navi, e zattere, buone abbastanza da trasportare i nostri guerrieri attraverso il lago. Loro non se l'aspetteranno! ^^Vai al nostro campo principale, e parla con il comandante se vuoi unirti all'assalto.
 qstr_{s9}_asked_you_to_he|{s9} ti ha chiesto di sostenere la difesa di {s3} da un assalto Corsaro. Corri alla città, parla con il borgomastro e offri il tuo aiuto alla guarnigione locale.
 qstr_{s9}_asked_you_to_hel|{s9} ti ha chiesto di difendere Esgaroth da un attacco navale portato da Rhûn. Va subito a Pontelagolungo, parla con il borgomastro e offri il tuo aiuto alla guarnigione locale.
 qstr_{s9}_offered_you_an_|{s9} ti ha offerto un'opportunità per unirti ad un attacco navale contro {s3}. Raggiungi {s4}, parla al comandante del campo e unisciti all'assalto.
-; qstr_{s9}_offered_you_an_o|{s9} offered you an opportunity to join a naval raid against Esgaroth. Make your way to {s4}, speak to the camp commander, and join the assault.
+qstr_{s9}_offered_you_an_o|{s9} ti ha offerto l'occasione di unirti ad un assalto navale contro Esgaroth. Raggiungi {s4}, parla col comandante del campo e unisciti all'assalto.
 qstr_We_will_go_as_swiftl|Andremo il prima possibile, sperando di non giungere troppo tardi.
-; qstr_We_shall_plunder_the|We shall plunder their port and seize their riches for ourselves!
+qstr_We_shall_plunder_the|Saccheggeremo il loro porto e c'impadroniremo delle loro ricchezze!
 qstr_We_shall_plunder_the_|Saccheggeremo la città del lago e c'impadroniremo delle loro ricchezze!
 qstr_I_m_sorry_but_we_can|Mi dispiace, ma non possiamo aiutarli adesso.
-; qstr_Bah!_Far_more_glory_|Bah! Far more glory to be won elsewhere than with paltry piracy.
+qstr_Bah!_Far_more_glory_|Bah! Si è trovata molta più gloria altrove che con la meschina pirateria.
 qstr_This_raid_does_not_i|Questa razzia non m'interessa. Cercherò gloria altrove.
 qstr_{s9}_asked_you_to_de|{s9} ti ha chiesto di distruggere un accampamento di esploratori nei pressi di {s1}.
 qstr_{s9}_asked_you_to_def|{s9} ti ha chiesto di difendere un villaggio sotto attacco nei pressi di {s1}.
@@ -1416,8 +1416,8 @@ qstr_No_commander_should_|Nessun comandante dovrebbe ammetterlo, {playername} , 
 qstr_No_commander_should_h|Nessun comandante dovrebbe mai ammetterlo, {playername}, però stavo ispezionando i miei soldati l'altro giorno e ne ho giustiziati alcuni per incompetenza. Hanno bisogno di qualcuno con una schiena di ferro per frustargli del coraggio dentro di loro, o ucciderli provandoci. Tu sei un guerriero di fama, {playername}. Addestreresti alcuni soldati per me? Posso ricompensarti.
 qstr_{s9}_asked_you_to_rai|{s9} ti ha chiesto di addestrare {reg1} {s14} e portarli da lui.
 qstr_{s9}_asked_you_to_hu|{s9} ti ha chiesto di cacciare un fuggitivo {s4}. Al momento si pensa possa essere a {s3}.
-; qstr_{s9}_asked_you_to_defe|{s9} asked you to defend 3 groups of refugees on their way to {s3}.
-; qstr_{s9}_asked_you_to_hun|{s9} asked you to hunt down 3 groups of refugees on their way to {s3}.
+qstr_{s9}_asked_you_to_defe|{s9} ti ha chiesto di difendere 3 gruppi di rifugiati in viaggio verso {s3}.
+qstr_{s9}_asked_you_to_hun|{s9} ti ha chiesto di dare la caccia a 3 gruppi di fuggiaschi diretti a {s3}.
 qstr_{s9}_asked_you_to_ca|{s9} ti ha chiesto di catturare i tre gruppi di schiavi fuggiaschi e di riportarli indietro a {s4}, vivi e vegeti. Ha detto che tutti i tre gruppi si stanno dirigendo verso {s3}.
 qstr_{s11}_asked_you_to_f|{s11} ti ha chiesto di seguire la spia che lascerà {s12}. Fai attenzione a non farti notare durante il pedinamento, o potrebbe insospettirsi e tornare indietro. Quando la spia incontrerà il suo complice, dovrai catturarli e riportarli a {s11}.
 qstr_{s11}_asked_you_to_c|{s11} ti ha chiesto di catturare un comandante nemico e di riportarglielo indietro per un'interrogatorio.
@@ -1443,9 +1443,9 @@ qstr_Dale_so_that_if_you_|Dale, se attraversi le loro contee, puoi cercare di ac
 qstr_Without_my_help_you_|Senza il mio aiuto sareste tutti morti e sepolti!^^ Sono qui per rispondere alla chiamata di Saruma, di Isengard. Se m'intralciate sarà a vostro rischio e pericolo!
 qstr_Without_my_help_you_w|Senza il mio aiuto sareste tutti morti e sepolti!^^ Sono qui per rispondere alla chiamata del Signore di Mordor, che ben presto sarà il Signore di tutto il Mondo.
 qstr__*snort*_There_is_on| *snort* C'è un sollo Signore in tutto il mondo, feccia. Presto o tardi, risponderai a Lugbúrz, mingherlino!
-; qstr_*snort*_Another_one_|*snort* Another one for the meat-shield, to eat arrows! Be off, weakling. We have no use for you.
+qstr_*snort*_Another_one_|*sbuffa* Ecco un altro scudo di carne, un mangiatore di frecce! Sparisci, debole. Non sappiamo che farcene di te.
 qstr_Go_to_Moria_and_get_|Vai a Moria e prenditi un bel warg per te - o qualche snaga dei tuoi, se ti piace!
-; qstr_Go_to_Isengard_and_g|Go to Isengard, and get something for yourself - maybe some of the fighting Uruk-Hai will follow you!
+qstr_Go_to_Isengard_and_g|Va ad Isengard, e prendi quello che ti serve - forse alcuni Uruk-Hai combattenti ti seguiranno!
 qstr_Go_up_north_to_Gunda|Va a nord, a Gundabad - sono stupidi e brutti, ma hanno delle belle pellicce.
 qstr_Get_some_snagas_of_y|Prenditi qualche snaga del tuo genere, come questi che sono al mio seguito. Forse presto avrai anche tu una tua compagnia in armi!
 qstr_Our_friends_and_alli|I nostri amici e alleati udranno di te, non dubitare! Potrebbero volerti donare una nuova cavalcatura o una spada nuova. Nessuno ha tempo per i deboli, ma sei hai forza, ha, noi aiutiamo quelli che ci aiutano, vedi? Scambia parte di quelle spoglie per un buon cavallo, magari con quegli uomini di Rhûn - per cavalcare o mangiarlo, la scelta è tua, har!
@@ -1489,7 +1489,7 @@ qstr_That_may_be_so_some_|Così può essere, alcune strade del mondo sono contor
 qstr_I_seldom_wander_far_|Raramente mi allontano da casa. Andiamo via di qui, il più velocemente possibile. Ci potrebbero essere altri goblin che si aggirano da queste parti.
 qstr_Who_are_you?_A_mere_|Chi sei tu? Un semplice {s25}? Non ho tempo per quelli della tua sorta! Lasciami in pace! {s2}
 qstr_What_do_you_want?|Che cosa vuoi ?
-; qstr_Greetings_{playernam|Greetings, {playername}. What can I do for you?
+qstr_Greetings_{playernam|Salute, {playername}. Cosa posso fare per te?
 qstr_What?_You_come_to_me|Cosa? Vieni da me e non sai di cosa mi occupo? Dai un'occhiata in giro.^^ Vedi del sangue? Senti dei lamenti? Senti il loro dolore? Questo è ciò che faccio! Rompo cose per renderle migliori! Se vieni da me, ferito e dolorante, posso farti sentire meglio!
 qstr_I_am_a_healer._Come_|Io guarisco. Vieni da me quando tu o i tuoi compagni sarete seriamente feriti, e io curerò le vostre ferite al meglio delle mie capacità.
 qstr__Costs_500_Resource_|(Costo 500 Punti Risorsa, 5 Punti Influenza)
@@ -1510,9 +1510,9 @@ qstr_Your_Orcs_&_Uruks_at|I tuoi Orchi & Uruk mangiano {reg1} men!
 qstr_Yes_master!_As_you_c|Si padrone! Come comandi, padrone!
 qstr_Harr_harr_harr!_You_|Harr harr harr! Non mi fai paura! Sarai TU il prossimo che mangeremo!
 qstr_One_{s6}_left_the_pa|Un'unita di {s6} ha lasciato la compagnia.
-; qstr_I_understand._I_will|I understand. I will stay with you. For a while.
-; qstr_I_have_played_my_rol|I have played my role for many long years, for many lifetimes of mortal men. This war is for Mankind to fight. I will leave for the West and some may decide to follow me.
-; qstr_{reg1}_Veteran_Elves|{reg1} Veteran Elves decided to leave your party.
+qstr_I_understand._I_will|Capisco. Resterò con te. Per un po'.
+qstr_I_have_played_my_rol|Ho interpretato il mio ruolo per molti lunghi anni, per molte vite degli uomini mortali. Questa guerra dev'essere combattuta dal genere umano. Andro ad Ovest, qualcuno potrebbe scegliere di seguirmi.
+qstr_{reg1}_Veteran_Elves|{reg1} Elfi Veterani hanno deciso di lasciare la tua compagnia.
 qstr_You_chose_well_{sir/|Ha scelto bene, {signore/signora}. I miei ragazzi sanno mantenere la parola e guadagnarsi la paga.
 qstr_Well_done_{sir/madam|Ben Fatto, {sire/signora}. Continua a mandarci soldi e vino, e non dovrai aver paura di nessun tuo nemico.
 qstr_We_are_at_your_servi|Siamo al tuo servizio, {signore/signora}. Mandaci nella direzione di coloro che devono essere uccisi, noi faremo il resto.
@@ -1530,7 +1530,7 @@ qstr_Lord_{s3}_has_sent_u|Lord {s3} ci ha inviati, per unirci alla flotta che st
 qstr_Excellent_{playernam|Eccellente, {playername}! Ho saputo che gli hai dato più di quanto avevo chiesto. Ottimo lavoro.^^ Ecco, prendi questi e una ricompensa extra per aver superato le nostre aspettative. ^^ Abbiamo bisogno di vincere questa guerra il prima possibile.
 qstr_Excellent_{playername|Eccellente, {playername}. Questo certamente li aiuterà. Abbiamo bisogno di vincere questa guerra nel tempo più breve possibile.
 qstr_Reinforcing_{s1}_has|I rinforzi a {s1} hanno rafforzato {s2}. ({s2} ha ottenuto {reg50} punti forza per la fazione).
-; qstr_The_watchmen_in_the_|The watchmen in the city have reported a remarkable decrease in ambushes. You have done your job well. Thank you, {playername}.
+qstr_The_watchmen_in_the_|Le guardie in città hanno notato una rimarchevole diminuzione degli agguati. Hai svolto bene il tuo lavoro. Grazie, {playername}.
 qstr_Our_guards_have_seen|Le nostre guardie hanno visto quei parassiti scappare con la coda fra le gambe. Hai agito bene mostrando a quegli insetti chi controlla questa zona.
 qstr_It_was_nothing._I_wi|Non era niente. Terrò gli occhi aperti di guardia per vedere se tornano.
 qstr_Slaying_these_maggot|Uccidere questi vermi è stata cosa da niente. Terrò gli occhi aperti per controllare che non si facciano di nuovo baldanzosi.
@@ -1583,7 +1583,7 @@ qstr_{s4}^We_are_escortin|{s4}^Stiamo scortando prigionieri a {s12}.
 qstr_Greetings_do_you_nee|Salute, ti servono rinforzi?
 qstr_I_will_need_your_hel|Avrò bisogno del tuo aiuto, ti prego di seguirmi. [Costo {reg1}/{reg2} influenza]
 qstr_You_and_your_men_mus|Tu e i tuoi uomini dovete seguirmi. [Costo {reg1}/{reg2} punti influenza]
-; qstr_It_looks_like_you_ha|It looks like you have too many followers already.
+qstr_It_looks_like_you_ha|a quanto pare hai già troppi seguaci.
 qstr_Why_do_you_need_us?_|Perché hai bisogno di noi? Hai già al tuo seguito tutto ciò che ti serve!
 qstr_We_will_follow_you_t|Ti seguiremo, anche se non possiamo andare troppo lontano.
 qstr_If_there_is_killing_|Se ci sarà da combattere, noi ti seguiremo. Ma non possiamo allontanarci troppo, o finiremo nei guai.

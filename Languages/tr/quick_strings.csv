@@ -674,7 +674,7 @@ qstr_{s1}___Polearms:^|{s1} Gönderli Silah:^
 qstr_{s1}___Archery:^|{s1} Okçuluk:^
 qstr_{s1}___Crossbow:^|{s1} Arbalet:^
 qstr_{s1}___Throwing:^|{s1} Fırlatma:^
-; qstr_{s1}___Slings:|{s1}   Slings:
+qstr_{s1}___Slings:|{s1} Sapanlar :
 qstr_{s2}_|{s2}-
 qstr__Click_on_the_troop_|(Üniteyi döndürmek için üzerine tıkla)^^Teçhizatları ^(miğfer, zırh, eldiven ve botlar)^ görüntülemek için tıklayın.
 qstr_ready_bows_and_missi|Yayları ve okları Hazırlayın
@@ -716,8 +716,8 @@ qstr_Division_Placement|Birlik Yerleşimi
 qstr_Complex_Formations|Karmaşık Formasyonlar
 qstr_Formations_turned_OF|Formasyonlar ayarlar menusunden kapandı.
 qstr_Division_{reg1}_{s2}_g|Bölük {reg1} {s2} ezberlenmiş pozisyona doğru ilerler...\n
-; qstr_Division_{reg1}_{s2}_f|Division {reg1} {s2} forms line (memorized).
-; qstr_Division_{reg1}_{s2}_fo|Division {reg1} {s2} forms {reg0} lines (memorized).
+qstr_Division_{reg1}_{s2}_f|{reg1} . Kuvvetler {s2} çizgi oluşturdu(Ezberlendi)
+qstr_Division_{reg1}_{s2}_fo|{reg1}. Kuvvetleri {s2} {reg0} Tane Çizgi oluşturdu(Ezberlendi).
 ; qstr_DEBUG__Health_Regen_|DEBUG (Health Regen): {s1} regains {reg0}% health.  = +{reg1}% STR
 qstr_Three_Nazgul_are_cir|Üç Nazgul savaş alanının üstündeki gökyüzünde dolaşıyor!
 qstr_Two_Nazgul_are_circl|İki Nazgul savaş alanının üstündeki gökyüzünde dolaşıyor!

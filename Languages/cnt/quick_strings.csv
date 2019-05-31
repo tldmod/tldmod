@@ -1179,43 +1179,43 @@ qstr_My_apologies_if_I_wa|對 不 起 ， 我 剛 剛 很 魯 莽 。 你 能 �
 qstr_I_was_reconsidering_|我 重 新 考 慮 了 我 們 上 次 的 對 話 。 你 能 再 說 一 遍 你 的 故 事 麼 ？
 qstr_Greetings_{s23}_{s24|向 你 問 好 ， {s23} ， {s24} 。
 qstr_Greetings_{s23}.|向 你 問 好 ， {s23} 。
-qstr_So_you_are_{s23}._I_|啊，你是{s23}。我聽說你為我們的朋友{s25}戰鬥，所以我覺得我該把你當成盟友。
-qstr_I_need_volunteers_wi|我需要一些自願跟我去完成危險任務的志願者。
-qstr_I_need_some_soldiers|我需要一些士兵來補充戰損。
-qstr_{playername}_s_Reser|{playername} 的預備隊
-qstr_Excellent_job_{s23}!|幹得漂亮，{s23}！真希望我方的所有指揮官都像你這樣盡責。 ^
-qstr_Nicely_done_{s23}.|幹得很好，{s23}。
-qstr_Good_work_{s23}.|幹的好，{s23}。
-qstr_The_more_you_capture|抓的越多越好，{s23}。
-qstr_Caught_a_few_straggl|抓到了幾個掉隊的士兵，{s23}？
-qstr_I_am_sorry_no_one_el|不好意思，沒人已經做好了出發的準備。 ^他們會在這裡堅守並為{s22}效忠。
-qstr_Tough_luck_but_we_do|真不走運，我們一個士兵都不剩了。晚些再來吧。
-qstr_There_are_brave_sold|我們是有一些英勇的士兵願意犧牲他們的性命。但在這個黑暗的時代，我無法承受讓他們離開城堡所帶來的風險。 ^^^[資源點不足]
-qstr_We_have_some_spare_t|我們是有一些預備役的士兵。但我無法承受讓他們跟你離開所帶來的風險。 ^^^[資源點不足]
-qstr_There_are_brave_soldi|我們是有一些勇敢的士兵志願上前線。 ^^我想我能讓他們中的幾個跟著你。
-qstr_There_are_spare_troo|這裡的預備役應該不介意上前線。 ^^我想我能讓他們中的幾個跟著你。
-qstr_Strenghten_defences_|你想增強{s21}的守備？歡迎！歡迎！不過請記住，我們只接受本派系的人。
-qstr_Strenghten_defences_i|你想增強{s21}的守備？好啊，只要他們不會嚇得尿褲子，為什麼不呢？不過麻煩只把屬於本派系的人送過來，我們是不會用外人的。
-qstr_Please_return_them_i|請把他們活著地送回來。我深知他們每一個人的英勇，而我們需要每一名英勇的靈魂。
-qstr_Don_t_let_them_all_d|別讓他們堆在一起死。讓懦夫之外的人站在前排，這就是我們的戰術。
-qstr_Thank_you_commander.|謝謝你，指揮官。 ^
-qstr_^{s22}_is_grateful_t|^{s22}由衷的感激你，{s23}，{s29}^
-qstr_{s31}{reg28?Those:Th|{s31}{reg28?這群:這名}勇敢的{reg28?士兵:士兵}定能極大地增強{s21}的防禦。 {s32}^^[獲得{s14}的{reg14}資源點]
-qstr_{s31}{reg28?Those:Tha|{s31}{reg28?這群:這名}有用的{reg28?士兵們:士兵}將幫助我們守護{s21}。 {s32}^^[獲得{s14}的{reg14}資源點]
-qstr_{s4}_^Oh_and_take_ba|{s4} ^噢，請將這些士兵帶回去吧，他們並不是我們的同類。
-qstr_You_have_reinforced_|你已經用 {s8} 部隊加強了 {reg55}。
-qstr_I_don_t_need_them_an|我不再需要他們了，你留著吧。
-qstr_It_is_my_duty_to_pro|保護人民是我的天職。
-qstr_It_is_my_duty_to_prot|保護盟友是我的天職。
-qstr_I_am_{s4}_{s15}_of_{|我是 {s4}，{s6 }的 {s15}
-qstr_I_am_{s4}_a_commande|我是 {s4}，{s6} 的指揮官
-qstr_{s9}{reg5?_and_the_r|{s9} {reg5?和{s8}的統治者。 :}
-qstr_{playername}_our_sco|{playername}，我們的探子帶來了你成功的消息。願你在這幸福的歲月裡度過這一天！你大勝利擊退了{s7}，敵人的大舉進攻的計畫已經失敗了。我們希望他們會為了自己的失敗而吵架。我們也希望他們現在對你會感到恐懼！至少你讓我們暫時休息了一下。
-qstr_Well_{playername}_yo|那麼，{playername}，你已經回來了，而且對我們來說是個好消息。我現在看到你不是在吹噓和欺騙，如果我能親眼目睹{s7}落在你面前！ 毫無疑問，我們的敵人將會非常沮喪。我保證，他們失去了理智。如他們所說，把蛇的頭割下來，交易就完成了。好吧，我現在必須帶領我的主人贏得真正的勝利。你的貢獻將被報告，<Player>。不要害怕。
-qstr_Alas_that_I_could_no|唉，我無法終結{s8}的{s7}，但如果我們再次見面，那就讓他們小心吧。
-qstr__I_should_rather_mak|我寧願自己報告我對{s8} {s7}的勝利 - 主要的榮耀是我的，你不會忘記的！
-qstr_Very_well_done_{play|做得很好！ {playername}！正如我所期望的，你抓住了間諜和他的接頭人。他們現在正拷在一起等待問詢；他們有很多事情要好好的解釋一下了。 {playername}，我非常高興你能完成這個任務。請收下這袋錢，這是你應得的獎賞。
-qstr_Beautiful_work_{play|做得很好！ {playername}！你抓住了間諜和他的接頭人。他們現在正關在牢裡等待問詢；很顯然今晚的我檢察官有的要忙了。 {playername}，我非常高興你能完成這個任務。請收下這袋錢，這是你應得的獎賞。
+qstr_So_you_are_{s23}._I_|啊 ， 你 是 {s23} 。 我 聽 說 你 為 我 們 的 朋 友 {s25} 戰 鬥 ， 所 以 我 覺 得 我 該 把 你 當 成 盟 友 。
+qstr_I_need_volunteers_wi|我 需 要 一 些 志 願 者 跟 我 去 完 成 危 險 的 任 務 。
+qstr_I_need_some_soldiers|我 需 要 一 些 士 兵 來 補 充 戰 損 。
+qstr_{playername}_s_Reser|{playername} 的 預 備 隊
+qstr_Excellent_job_{s23}!|幹 得 漂 亮 ， {s23} ！ 真 希 望 我 方 的 所 有 指 揮 官 都 像 你 這 樣 盡 責 。 ^
+qstr_Nicely_done_{s23}.|幹 得 很 好 ， {s23} 。
+qstr_Good_work_{s23}.|幹 的 好 ， {s23} 。
+qstr_The_more_you_capture|抓 的 越 多 越 好 ， {s23} 。
+qstr_Caught_a_few_straggl|俘 虜 了 幾 個 士 兵 ， {s23} ？
+qstr_I_am_sorry_no_one_el|不 好 意 思 ， 沒 人 已 經 做 好 了 出 發 的 準 備 。 ^他 們 會 在 這 裡 堅 守 並 為 {s22} 效 忠 。
+qstr_Tough_luck_but_we_do|我 們 一 個 士 兵 都 不 剩 了 。 晚 些 再 來 吧 。
+qstr_There_are_brave_sold|我 們 是 有 一 些 英 勇 的 士 兵 願 意 犧 牲 他 們 的 性 命 。 但 在 這 個 黑 暗 的 時 代 ， 我 無 法 承 受 讓 他 們 離 開 城 堡 所 帶 來 的 風 險 。 ^^^[資 源 點 不 足 ]
+qstr_We_have_some_spare_t|我 們 是 有 一 些 預 備 的 士 兵 。 但 我 無 法 承 受 讓 他 們 跟 你 離 開 所 帶 來 的 風 險 。 ^^^[資 源 點 不 足 ]
+qstr_There_are_brave_soldi|我 們 是 有 一 些 勇 敢 的 士 兵 志 願 上 陣 。 ^^我 想 我 能 讓 他 們 中 的 幾 個 跟 著 你 。
+qstr_There_are_spare_troo|這 裡 的 預 備 兵 應 該 不 介 意 上 陣 。 ^^我 想 我 能 讓 他 們 中 的 幾 個 跟 著 你 。
+qstr_Strenghten_defences_|你 想 增 強 {s21} 的 守 備 ？ 歡 迎 ！ 歡 迎 ！ 不 過 請 記 住 ， 我 們 只 接 受 本 派 系 的 人 。
+qstr_Strenghten_defences_i|你 想 增 強 {s21} 的 守 備 ？ 好 啊 ， 只 要 他 們 不 會 嚇 得 尿 褲 子 ， 不 過 麻 煩 只 把 屬 於 本 派 系 的 人 送 過 來 ， 我 們 是 不 會 用 外 人 的 。
+qstr_Please_return_them_i|請 把 他 們 活 著 地 送 回 來 。 我 深 知 他 們 每 一 個 人 的 英 勇 ， 而 我 們 需 要 每 一 名 英 勇 的 戰 士 。
+qstr_Don_t_let_them_all_d|別 讓 他 們 堆 在 一 起 死 。 讓 懦 夫 之 外 的 人 站 在 前 排 ， 這 就 是 我 們 的 戰 術 。
+qstr_Thank_you_commander.|謝 謝 你 ， 指 揮 官 。 ^
+qstr_^{s22}_is_grateful_t|^{s22} 由 衷 的 感 激 你 ， {s23} ， {s29}^
+qstr_{s31}{reg28?Those:Th|{s31} {reg28?這 群:這 名} 勇 敢 的 {reg28?士 兵:士 兵} 定 能 極 大 地 增 強 {s21} 的 防 禦 。 {s32}^^[獲 得 {s14} 的 {reg14} 資 源 點 ]
+qstr_{s31}{reg28?Those:Tha|{s31} {reg28?這 群:這 名} 有 用 的 {reg28?士 兵 們:士 兵} 將 幫 助 我 們 守 護 {s21} 。 {s32}^^[獲 得 {s14} 的 {reg14} 資 源 點 ]
+qstr_{s4}_^Oh_and_take_ba|{s4} ^噢 ， 請 將 這 些 士 兵 帶 回 去 吧 ， 他 們 並 不 是 我 們 的 同 類 。
+qstr_You_have_reinforced_|你 已 經 用 {s8} 部 隊 加 強 了 {reg55} 。
+qstr_I_don_t_need_them_an|我 不 再 需 要 他 們 了 ， 你 留 著 吧 。
+qstr_It_is_my_duty_to_pro|保 護 人 民 是 我 的 職 責 。
+qstr_It_is_my_duty_to_prot|保 護 盟 友 是 我 的 職 責 。
+qstr_I_am_{s4}_{s15}_of_{|我 是 {s4} ， {s6 } 的 {s15}
+qstr_I_am_{s4}_a_commande|我 是 {s4} ， {s6} 的 指 揮 官
+qstr_{s9}{reg5?_and_the_r|{s9} {reg5?和 {s8} 的 統 治 者 。 :}
+qstr_{playername}_our_sco|{playername} ， 我 們 的 探 子 帶 來 了 你 成 功 的 消 息 。 願 你 在 這 幸 福 的 歲 月 裡 度 過 這 一 天 ！ 你 大 勝 利 擊 退 了 {s7} ， 敵 人 的 大 舉 進 攻 的 計 畫 已 經 失 敗 了 。 我 們 希 望 他 們 會 為 了 自 己 的 失 敗 而 吵 架 。 我 們 也 希 望 他 們 現 在 對 你 會 感 到 恐 懼 ！ 至 少 你 讓 我 們 暫 時 休 息 了 一 下 。
+qstr_Well_{playername}_yo|那 麼 ， {playername} ， 你 已 經 回 來 了 ， 而 且 對 我 們 來 說 是 個 好 消 息 。 我 現 在 看 到 你 不 是 在 吹 噓 和 欺 騙 ， 如 果 我 能 親 眼 目 睹 {s7} 落 在 你 面 前 ！ 毫 無 疑 問 ， 我 們 的 敵 人 將 會 非 常 沮 喪 。 我 保 證 ， 他 們 失 去 了 理 智 。 如 他 們 所 說 ， 把 蛇 的 頭 割 下 來 ， 交 易 就 完 成 了 。 好 吧 ， 我 現 在 必 須 帶 領 我 的 主 人 贏 得 真 正 的 勝 利 。 你 的 貢 獻 將 被 報 告 ， <Player> 。 不 要 害 怕 。
+qstr_Alas_that_I_could_no|唉 ， 我 無 法 終 結 {s8} 的 {s7} ， 但 如 果 我 們 再 次 見 面 ， 那 就 讓 他 們 小 心 吧 。
+qstr__I_should_rather_mak|我 寧 願 自 己 報 告 我 對 {s8} {s7} 的 勝 利 - 主 要 的 榮 耀 是 我 的 ， 你 不 會 忘 記 的 ！
+qstr_Very_well_done_{play|做 得 很 好 ！  {playername} ！ 正 如 我 所 期 望 的 ， 你 抓 住 了 間 諜 和 他 的 接 頭 人 。 他 們 現 在 正 拷 在 一 起 等 待 問 詢 ； 他 們 有 很 多 事 情 要 好 好 的 解 釋 一 下 了 。 {playername} ， 我 非 常 高 興 你 能 完 成 這 個 任 務 。 請 收 下 這 袋 錢 ， 這 是 你 應 得 的 獎 賞 。
+qstr_Beautiful_work_{play|做 得 很 好 ！  {playername} ！ 你 抓 住 了 間 諜 和 他 的 接 頭 人 。 他 們 現 在 正 關 在 牢 裡 等 待 問 詢 ； 很 顯 然 今 晚 的 我 檢 察 官 有 的 要 忙 了 。 {playername} ， 我 非 常 高 興 你 能 完 成 這 個 任 務 。 請 收 下 這 袋 錢 ， 這 是 你 應 得 的 獎 賞 。
 qstr_Foiling_the_enemy_s_|挫敗敵人攻擊難民企圖削弱了他們的決心\n{s1} 由於你對{reg18}入侵者的勝利而失去了{reg19}派系力量。
 qstr_The_slaughter_and_lo|屠殺難民和搶劫使敵人更加強大({s1}獲得了50個派系的力量)。
 qstr_You_did_however_defe|然而，你確實擊敗了 {reg18} 入侵者，削弱了敵人的決心({s1} 已經失去了 {reg19} 派系的力量)。

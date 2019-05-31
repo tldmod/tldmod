@@ -124,7 +124,7 @@ mno_camp_action|Usar un objeto.
 mno_camp_wait_here|Acampar aquí durante algún tiempo.
 mno_camp_options|Cambiar opciones de TLD.
 mno_Dev_Menu|Menú de Desarrollo
-menu_dev_menu|Éstas son opciones de desarrollo que te proporcionarán muchos trucos y herramientas con las que jugar.^^ Sin embargo, ocasionarán que aparezcan eventos, funciones y cambios en la campaña que todavía están en desarrollo, y que podrían fastidiar tu partida.^^ ¡No nos hacemos responsables de lo que pueda pasar! ^^ Además te pedimos que nos comuniques que estabas usando el Menú de Desarrollo al informar de problemas.
+menu_dev_menu|Éstas son opciones de desarrollo que te proporcionarán muchos trucos y herramientas con las que jugar.^^ Sin embargo, ocasionarán que aparezcan eventos, funciones y cambios en la campaña que todavía están en desarrollo, y que podrían fastidiar tu partida.^^ ¡No nos hacemos responsables de lo que pueda pasar! ^^ Además te pedimos que nos comuniques si estabas usando el Menú de Desarrollo al informar de problemas o bugs.
 mno_Cheat_enable|Activar las opciones de trucos/modding.
 menu_game_options|^^^^^^^^Haz click sobre una opción para cambiarla:
 mno_game_options_war_level_start|La guerra empieza al alcanzar el nivel: {s1}  
@@ -174,8 +174,8 @@ mno_fight_back|¡Vamos a ver! ¡Peinad el área! ¡Quemad un árbol o dos!
 menu_fangorn_search_fails|^^^^^^Buscas en la espesura del oscuro bosque pero no encuentras nada.^Aún así te sientes {observado y amenazado/observada y amenazada}, cada vez más y más...
 menu_fangorn_battle_debrief_won|^^^¡Una gran victoria!^^^Así que que es ésto a lo que se referían los viejos mitos sobre Fangorn...
 menu_fangorn_killed_player_only|^^^^^^Vagas por el espeso y oscuro bosque.^¡De repente, algo te golpea! ¿Habrá ssido una rama pesada que ha caído sobre tu cabeza?^Permaneces inconsciente sólo durante algunos minutos... despiertas {maltrecho/maltrecha} pero puedes seguir adelante.
-mno_ow_get_out|¡Augh! Salir ahora mismo de este maldito lugar.
-menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuro bosque.^^Cuando de repente... ¡notas que algo te golpea! Puede que una rama pesada haya caído sobre tu cabeza.^^Cuando te recuperas del golpe unos minutos después, descubres que no todas tus tropas han sido tan afortunadas...
+mno_ow_get_out|¡Ay! Salgamos ahora mismo de este maldito lugar.
+menu_fangorn_killed_troop_and_player|^^^^^^Vagas por el espeso y oscuro bosque.^^Cuando de repente... ¡notas que algo te golpea! Puede que una rama pesada haya caído sobre tu cabeza.^^Cuando te recuperas del golpe unos minutos después, descubres que no todas tus tropas han tenido la misma suerte...
 menu_fangorn_killed_troop_only|^^^^^^^^Deambulas por el frondoso y oscuro bosque. Tus tropas están aterrorizadas.^^De repente, escuchas gritos que provienen desde la retaguardia, sólo para encontrarte con un puñado de tus tropas en el suelo, bañadas en su propia sangre.^^Otros tantos han desaparecido sin más...
 mno_get_out|¡Salgamos de este maldito lugar!
 menu_can_capture_troll|¡El troll caído todavía respira!^^Sus ojos malignos te miran fijamente, llenos de rabia y dolor.^Incluso ahora, que ha sido derribado, y yace indefenso en un charco de su propia sangre, parece increíblemente peligroso...
@@ -184,7 +184,7 @@ mno_cageit1|Enjaularlo y llevarlo a rastras.
 mno_cageit2|Enjaularlo junto con el otro troll.
 mno_cheat_disabable|Desactivar las opciones de trucos/modding.
 menu_drank_ent_water_human|^^^Bebes el agua. Es clara y refrescante. Tiene una fragancia agradable, almizclada incluso.^Te sientes como {nuevo/nueva}.^^No obstante, también notas una sensación extraña y anormal. Algo te dice que nunca jamás deberías volver a beber de este agua.
-menu_drank_ent_water_orc|^^^Bebes el agua. Sólo es agua.^De repente, te llevas alas manos a la garganta en un ataque de dolor.^¡Es veneno!^Te atragantas, vomitas sangre negra, casi mueres en el acto.^^Y duele, vaya si duele.
+menu_drank_ent_water_orc|^^^Bebes el agua. Sólo es agua.^De repente, te llevas las manos a la garganta en un ataque de dolor.^¡Es veneno!^Te atragantas, vomitas sangre negra, casi mueres en el acto.^^Y duele, vaya si duele.
 mno_i_shall_surv|¡Sob... re... viviré!
 menu_end_game|^^^^^Has tomado tu decisión, y te propones dejar atrás tu vida de aventuras y sentar la cabeza. Vendes tus armas y armadura, reúnes todas tus pertenencias, y cabalgas hacia el amanecer...
 mno_end_game_bye|Buen viaje.
@@ -249,7 +249,7 @@ mno_talk_to_siege_commander|Pedir una audiencia con el comandante.
 mno_join_siege_with_allies|Unirse al siguiente asalto.
 mno_join_siege_stay_back|Ordenar a tus tropas que se unan al próximo asalto sin tu ayuda.
 menu_moria_must_escape|^^El libro parece dar cuenta del último intento de los enanos por volver a establecerse en Moria. Un intento que al parecer terminó con la cruenta muerte de todos los involucrados. Hojeando el libro, te topas con las palabras «plata auténtica». Estudiando las páginas con detenimiento de repente entiendes que son las descripciones de un alijo de cofres enanos en algún punto de los niveles inferiores. Vaya, no estaría mal descubrir el mithril enano perdido. ^Comienzas a seguir las indicaciones con entusiasmo, internándote en un estrecho y tortuoso túnel descendente...^...^Tras un par de horas de búsqueda infructuosa comprendes que te has perdido en las profundidades de Moria y necesitas encontrar una salida a la superficie como sea.
-mno_moria_exit_scene|¡Encontrar un camino de salida!
+mno_moria_exit_scene|¡Encuentra un camino de salida!
 menu_castle_outside|Te encuentras en las afueras de {s2}.{s11} {s3} {s4}
 mno_moria_enter|Volver al salón principal de Moria a través de la entrada secreta
 mno_moria_enter_door|Entrar en Moria.
@@ -313,22 +313,22 @@ mno_reembark_no|No.
 menu_center_reports|Nombre de la ciudad: {s1}^Ingresos por rentas: {reg1} denarios ^Ingresos por impuestos: {reg2} denarios^Reserva de comida: suficiente para {reg3} días
 menu_sneak_into_town_suceeded|Disfrazado con los harapos de un pobre peregrino engañas a los guardias y te abres paso dentro de la población.
 menu_sneak_into_town_caught|Según entras intentando escabullirte, uno de los guardias te reconoce y... ¡da la alarma! Debes huir retrocediendo hacia las puertas antes de que te encuentres frente a todos y cada uno de los guardias de la ciudad.
-mno_sneak_caught_fight|¡Intentar abrirte paso luchando!
+mno_sneak_caught_fight|¡Intenta abrirte paso luchando!
 mno_sneak_caught_surrender|Rendirse.
 menu_sneak_into_town_caught_dispersed_guards|Esquivas a los guardias y cubres tu rastro antes de huir a toda prisa, perdiendo a tus perseguidores en el laberinto de calles.
 menu_sneak_into_town_caught_ran_away|Retrocedes rápidamente hasta las puertas y te retiras a la seguridad de las afueras de la ciudad.
 menu_tld_player_defeated|^^^^^¡Un repentino dolor lacerante surca la parte de atrás de tu cabeza!^Tiemblas y te encoges, mientras el mundo se tiñe de negro a tu alrededor...^¿Será éste tu final?
 menu_recover_after_death_fangorn|Te despiertas con el bosque todavía a tu alrededor. Cada hueso duele. Pero sigues vivo, de milagro.^^Fue una derrota, pero al menos tuviste la suerte de ver el resultado.^Ahora sabes de verdad que es lo que está pasando en esta foresta maldita, y vivirás para contarlo.^^Pero, ¿habrá alguien que te crea?
 menu_recover_after_death_moria|^^^^^Recuperas la consciencia. Te encuentras sobre tierra suave y húmeda, el aire fresco acariciando tu cara. Los orcos debieron darte por {muerto/muerta} y te tiraron a algún pozo turbio. ^Has debido de llegar a la la superficie a través de alguna corriente subterránea.
-mno_whatever|¡Levantarse!
+mno_whatever|¡Levántate!
 menu_recover_after_death_default|^^^^^Recuperas tu consciencia y te encuentras sólo en el mismo sitio donde caíste. Los enemigos debieron tomarte por muerto y te dejaron allí. Parece ser que ninguna de tus heridas ha sido letal, y aunque te sientes muy mal, todavía puedes caminar con normalidad. Te levantas y vas en busca de supervivientes de tu grupo.
 menu_recover_after_death_town|^^^^Recuperas tu consciencia y te encuentras sólo en las afueras de la ciudad. ¡Estás vivo! Nadie parece estar cerca y tienes tu oportunidad de arrastrarte fuera del lugar. Parece ser que ninguna de tus heridas ha sido letal, y aunque te sientes muy mal, todavía puedes caminar con normalidad.
 menu_recover_after_death_town_alone|Recuperas tu consciencia y te encuentras sólo en las afueras de la ciudad. ¡Estás vivo! Nadie parece estar cerca y tienes tu oportunidad de arrastrarte fuera del lugar. Tus compañeros te encuentran. Parece ser que ninguna de tus heridas ha sido letal, y aunque te sientes muy mal, todavía puedes caminar con normalidad.
 menu_notification_center_under_siege|¡{s1} ha sido asediado por {s2} de {s3}!
 menu_notification_one_side_left|^^^^^¡La Guerra del Anillo ha terminado!^^Las {s1} han derrotado a todos sus enemigos y se erigen victoriosas!
-menu_notification_total_defeat|^^^^^¡La Guerra del Anillo ha terminado para ti! Las {s1} han sido derrotadas por sus enemigos y tu te mantienes sólo y abandonado en la derrota.
-menu_notification_your_faction_collapsed|^^^^^¡{s11}, tu antiguo hogar, ha caído!^Pero no temas, otros aliados permanecen activos en la Guerra. Tú, junto con cualquiera de los supervivientes de {s11} que sigan en pie, todavía podéis plantar cara al enemigo y ayudar a que tu facción gane.
-menu_notification_faction_defeated|^^^^^¡{s1} ha sido derrotado!^{s1} ya no existe, gracias los esfuerzos combinados de {s13}.
+menu_notification_total_defeat|^^^^^¡La Guerra del Anillo ha terminado para ti! Las {s1} han sido derrotadas por sus enemigos y tu te has quedado {solo y abandonado/sola y abandonada} tras la derrota.
+menu_notification_your_faction_collapsed|^^^^^¡{s11}, tu antiguo hogar, ha caído!^Pero no temas, otros aliados permanecen activos en la Guerra. Tú, junto con cualquiera de los supervivientes de {s11} que sigan en pie, todavía podéis plantar cara al enemigo y seguir luchando por la victoria de vuestro bando.
+menu_notification_faction_defeated|^^^^^¡{s1} ha caído!^{s1} ya no existe, gracias los esfuerzos combinados de {s13}.
 menu_ruins|^^^^Te acercas a las {s1}. El que una vez fuera un fuerte campamento fortificado se encuentra ahora arrasado hasta los cimientos, pasto de las llamas, aunque todavía puedes ver los restos de edificaciones y armas oxidadas a ambos lados de tu campo de visión.
 menu_legendary_place|^^^^Has seguido los rumores y encontrado {s1}. A partir de ahora puedes explorar este lugar y comprobar por tu cuenta y riesgo si los rumores de los que tanto has oído hablar son ciertos.
 mno_explore|Explorar el lugar.

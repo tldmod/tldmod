@@ -521,12 +521,12 @@ str_npc7_signup_2|Jeśli tylko potrafisz przypilnować swej drużyny, szczególn
 str_npc8_signup_2|Muszę cię jednak ostrzec, że na nic nie zdam ci się w walce. Niemniej z pewnością obronię niewiasty w mym wieku.
 str_npc9_signup_2|Musisz się szybko zdecydować, strażnicy zaczynają być podejrzliwi.
 str_npc10_signup_2|Nie pożałujesz zabrania mnie ze sobą.
-str_npc11_signup_2|You won't regret taking me on.
-str_npc12_signup_2|You won't regret taking me on.
-str_npc13_signup_2|You won't regret taking me on.
-str_npc14_signup_2|You won't regret taking me on.
-str_npc15_signup_2|You won't regret taking me on.
-str_npc16_signup_2|You won't regret taking me on.
+str_npc11_signup_2|Nie pożałujesz zabrania mnie ze sobą.
+str_npc12_signup_2|Nie pożałujesz zabrania mnie ze sobą.
+str_npc13_signup_2|Nie pożałujesz zabrania mnie ze sobą.
+str_npc14_signup_2|Nie pożałujesz zabrania mnie ze sobą.
+str_npc15_signup_2|Nie pożałujesz zabrania mnie ze sobą.
+str_npc16_signup_2|Nie pożałujesz zabrania mnie ze sobą.
 str_npc17_signup_2|Odłożę tylko me narzędzia i możemy ruszać. Nieopodal jest pewien dąb, który muszę ci pokazać!
 str_npc1_signup_response_1|Zatrudniłbym doświadczonego strzelca, możesz do nas dołączyć.
 str_npc2_signup_response_1|Bardzo dobrze. Możemy dodać sobie otuchy w tych mrocznych czasach.
@@ -539,11 +539,11 @@ str_npc8_signup_response_1|Będziesz bezpieczniejszy z nami, obiecuje ci. Niedł
 str_npc9_signup_response_1|Bardzo dobrze. Rób, jak ci kazano,  a dobrze cię wyżywię.
 str_npc10_signup_response_1|Doskonale. Ruszajmy.
 str_npc11_signup_response_1|Doskonale. Ruszajmy.
-str_npc12_signup_response_1|Very well. Let's go.
-str_npc13_signup_response_1|Very well. Let's go.
+str_npc12_signup_response_1|Doskonale. Ruszajmy.
+str_npc13_signup_response_1|Doskonale. Ruszajmy.
 str_npc14_signup_response_1|Doskonale. Ruszajmy.
-str_npc15_signup_response_1|Very well. Let's go.
-str_npc16_signup_response_1|Very well. Let's go.
+str_npc15_signup_response_1|Doskonale. Ruszajmy.
+str_npc16_signup_response_1|Doskonale. Ruszajmy.
 str_npc17_signup_response_1|Przykro mi, ale po prostu nie mogę sobie ciebie wyo
 str_npc1_signup_response_2|Nie potrzebuję Twojej kompanii w tym momencie, powodzenia.
 str_npc2_signup_response_2|Wybacz. Zmieniłem zdanie.
@@ -1703,7 +1703,7 @@ str_fullname_region_rohan3|do Wschodniej Bruzdy, części Rohanu, Riddermarki
 str_fullname_region_rohan4|do Zachodniej Bruzdy, części Rohanu, Riddermarki
 str_fullname_region_rohan5|do Helmowego Jaru, krętego wąwózu w Górach Białych, w Rohanie
 str_fullname_region_the_wold|do Wold, Północnowschodniej części Riddermarki Rohanu
-; str_fullname_region_gap_of_rohan|the Gap of Rohan, the westernmost border of Rohan, a contested area between the Rohirrim and the Dunlendings.
+str_fullname_region_gap_of_rohan|Przełom Rohanu, najbardziej na zachód wysunięta granica Rohanu, sporny obszar między Rohirrim i Dunlendings.
 str_fullname_region_entwash|do Ust Rzeki Entów, gdzie Rohańska część Rzeki Entów łączy się z Aduiną
 str_fullname_region_wetwang|na Nindalf, moczary Wetwang
 str_fullname_region_dead_marshes|na Martwe Bagna, miejsce starożytnej bitwy na równienie Dagorlad, obecnie miejsca przeklętego
@@ -2006,7 +2006,7 @@ str_npc24_intro|Kíli, syn Dwalina, gotowy do służby!
 str_npc25_intro|Witaj w Dale podróżniku! Mogę ci w czymś pomóc?
 str_npc26_intro|Scho! Jeśli tak bardzo falujesz do strażników, pokroję twój żołądek i nakarmię go wargami!
 str_npc27_intro|Ty!
-; str_npc18_intro_response_1|A slave in stocks, bound for death, would speak with me? What have you to say?
+str_npc18_intro_response_1|Niewolnik w zapasach, skazany na śmierć, rozmawiałby ze mną? Co masz do powiedzenia?
 str_npc19_intro_response_1|Królewska krew, powiadasz? Ha! Czemu myślisz, że masz chociaż kroplę?
 str_npc20_intro_response_1|Spójrz tutaj, co masz przez to na myśli, wiedźmo? Kim jesteś?
 str_npc21_intro_response_1|Witaj, moja Pani. Z kim mam honor rozmawiać?
@@ -2017,7 +2017,7 @@ str_npc25_intro_response_1|Witajcie. Czy są tutaj jacyś ochotnicy, którzy zec
 str_npc26_intro_response_1|Powstrzymaj swój język, Uruku, zanim dojdzie do bójki- nie jestem kapusiem.
 str_npc27_intro_response_1|Kto ty jesteś?
 str_npc18_intro_response_2|Nie mam nic do powiedzenia niewolnikowi skazanemu na śmierć.
-; str_npc19_intro_response_2|Impudent wretch. Out of my way.
+str_npc19_intro_response_2|Bezczelny nędzarz. Z drogi.
 str_npc20_intro_response_2|Nie mam czasu na twoje brednie, wiedźmo!
 str_npc21_intro_response_2|Wybacz, mam inne ważne sprawy.
 str_npc22_intro_response_2|Przepraszam, mam mniej ważnych ludzi z którymi wolę rozmawiać.

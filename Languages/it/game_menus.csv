@@ -12,8 +12,8 @@ mno_custom_battle_scenario_4|Difesa del Fosso di Helm, Rohan vs Isengard
 mno_custom_battle_scenario_5|Schermaglia, Fazioni del Nord vs Rhûn
 mno_custom_battle_scenario_6|Assedio, Orchi vs Nani
 mno_custom_battle_scenario_7|Imboscata, Orchi vs Bosco Atro
-; mno_custom_battle_scenario_8|The Last Stand of Durin's Folk
-; mno_custom_battle_scenario_88|Chasing an Orc Scout Party
+mno_custom_battle_scenario_8|L'ultima difesa del Popolo di Durin
+mno_custom_battle_scenario_88|All'inseguimento di una compagnia di Orchi
 mno_custom_battle_scenario_11|Testa Battaglie (Bilanciamento !)
 mno_custom_battle_scenario_10|Testa Scenario Battaglia
 mno_troll_battle_scenario|Testa Battaglie con Troll
@@ -267,7 +267,7 @@ menu_construct_ladders|In quanto membro della compagnia con maggiore abilità In
 mno_build_ladders_cont|Fallo.
 menu_castle_attack_walls_simulate|{s4}^^Le tue perdite: {s8}^^Perdite nemiche: {s9}
 menu_castle_attack_walls_with_allies_simulate|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti nemici: {s10}
-; menu_castle_taken_by_friends|Nothing to see here.
+menu_castle_taken_by_friends|Niente da vedere qui.
 menu_castle_taken|{s3} ha perso le sue truppe, e adesso tu hai il pieno controllo del {reg2?town:castle}. {reg1? Sembrerebbe che non ci sia nulla ti impedisce di prenderlo per te ...:}
 menu_castle_taken_2|{s3} ha perso le sue truppe, e adesso hai il pieno controllo del castello. E tempo di passare parola a {s9} riguardo la tua vittoria. {s5}
 mno_castle_taken_no_claim|Non pretendere una ricompensa.
@@ -300,7 +300,7 @@ mno_talk_to_castle_commander|Visita le caserme di {s61}.
 mno_speak_with_elder|Parla con il {s6}.
 mno_isengard_underground|Dirigiti verso le caverne sotterranee 
 mno_tirith_toplevel|Raggiungi il livello più alto
-; mno_erebor_gates|Visit the Great Gates.
+mno_erebor_gates|Visita i Grandi Cancelli.
 mno_town_leave|Vattene...
 mno_town_leave_door|Abbandona l'area
 menu_player_initiated_siege_result|Hai attaccato questo centro sotto lo stendardo di {s2}.
@@ -347,7 +347,7 @@ menu_player_added_to_allow_follow|^^^^^È giunto un messaggero che ti ha riferit
 mno_player_added_to_allow_follow_close|Chiudi
 menu_center_besieged_event|^^^^^Giunge un messaggero informando che {s1} è sotto assedio da parte di {s2} di {s3}.
 mno_center_besieged_event_close|Chiudi
-; menu_guardian_party_spawned|^^^^^Scouts report that {s6} gathered a large army in the vicinity of {s7}, in a last ditch attempt to defend the capital.
+menu_guardian_party_spawned|^^^^^Gli esploratori riferiscono che {s6} ha radunato un grande esercito nei pressi di {s7}, in un ultimo disperato tentativo di difendere la capitale.
 mno_intro_next|Continua...
 mno_start_defend_caravan|Difendi la Carovana !
 mno_start_raid_caravan|Saccheggia la Carovana !
@@ -367,7 +367,7 @@ mno_lord_field_ai|I Lords hanno una IA migliore sul campo: {s7}
 mno_horse_archer_field_ai|Gli arcieri a cavallo hanno una IA migliorata in battaglia: {s7}
 mno_vs_orcs_field_ai|Gli arcieri hanno una mira migliore contro gli orchi (non tirano al di sopra delle loro teste): {s7}
 mno_battlefield_animals|Non-Warg / Compagni cavalcabili generati in battaglia: {s7}
-; mno_slow_when_wounded|Agents become Slow when Wounded:  {s7}
+mno_slow_when_wounded|Gli agenti diventa lenti una volta feriti:  {s7}
 ; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
 ; menu_hungry_orc|none
 ; menu_leaving_elf|none

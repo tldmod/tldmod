@@ -1,5 +1,5 @@
 dlga_start:mutiny_pretalk_1|嗨，{playername}。^伙计们在抱怨！想要乐子！不想行军！
-dlga_mutiny_pretalk_1:mutiny_pretalk_2|快归队渣滓！战争期间凡事儿我说了算！
+dlga_mutiny_pretalk_1:mutiny_pretalk_2|快归队，渣滓！战争期间凡事我说了算！
 dlga_mutiny_pretalk_2:close_window|好吧，头儿。好吧....
 dlga_start:mutiny_talk_1|头儿！伙计们不高兴！伙计们一点都不高兴！^没人肉吃，没乐子找！^伙计们认为头儿不好！
 dlga_mutiny_talk_1:mutiny_talk_2|什么？战时抗命？^这是要被处死的，渣滓！
@@ -143,8 +143,8 @@ dlga_ziggy_chosen_prisoner:ziggy_ritual|指揮官，謝謝你！等等... 這個
 dlga_ziggy_chosen_prisoner:ziggy_ritual.1|你在做什麼? 做一隻驕兵? 你值得嗎? 我現在要給你一個確實恐懼的理由。(咒語)
 ; dlga_ziggy_ritual:ziggy_ritual_succeed|Oh yes... yes! Behold, Commander! Gaze upon what I, Zigûrphel, have achieved! Know you of the wolves of Angband? Of Draugluin, or of mighty Carcharoth who slew Huan the Hound of Valinor? Just as the Dark Lord could twist and trap a captive spirit into a vessel fit for his purposes, I too have bound a lesser spirit and yoked it to us as a great beast of shadow! This one is not as great as Draugluin's first brood, of course, nothing like, but it will serve.
 dlga_ziggy_ritual:ziggy_ritual_succeed.1|将敌人刚好放倒总是那么令人高兴。
-; dlga_ziggy_ritual:ziggy_choose_prisoners|Ach! This one was too weak! Worthless! Give me a stronger one, Commander, one who will not fail!
-; dlga_ziggy_ritual_succeed:close_window|And of course, allow me but a little rest; then you may pass another captive into my care. I will do the rest.
+dlga_ziggy_ritual:ziggy_choose_prisoners|啊！这个太弱小了，不值一提！长官，给我一个更强的不会倒下的对手！
+dlga_ziggy_ritual_succeed:close_window|所以，请让我休息一会儿。然后你可以再给我一个奴隶，我会完成剩下的事。
 dlga_companion_objection_response:close_window|谢谢，感谢你的支持。
 dlga_companion_objection_response:close_window.1|下不为例。
 dlga_companion_objection_response:close_window.2|我注意到你反对的声音了，不过我现在还有更重要的事情要思考。
@@ -260,10 +260,10 @@ dlga_lord_defend_refugees_failed:lord_defend_refugees_failed_1a|请原谅我，{
 dlga_lord_defend_refugees_failed_1a:lord_pretalk|城门失火，殃及池鱼。{playername}，将来会有更多的难民，希望你下次能够准备更加充分。
 dlga_lord_start:lord_defend_refugees_half_completed|我接到报告说只有{reg17}的难民到达了目的地。太不幸了，但这就是战争的代价。接下来可能会有更多的难民，{playername}。希望下次你能准备得更充分一点。
 dlga_lord_defend_refugees_half_completed:lord_pretalk|大人，我会准备得更好的。
-; dlga_lord_start:lord_generic_mission_completed.8|I have received reports that the refugees were all killed, and that prisoner trains will be coming soon... You did well, {playername}. This is only the beginning, we shall rule over this land soon enough.
-; dlga_lord_start:lord_hunt_refugees_failed|{playername}, our spies tell us that you failed to intercept {reg1} of the refugee trains. They are weak and slow, and still you fail. What use are you?
+dlga_lord_start:lord_generic_mission_completed.8|我收到了关于那些被杀的难民和装有囚犯的列车的报告。你做的很好，{用户名}，这是个开始，我们很快会统治这片土地。
+dlga_lord_start:lord_hunt_refugees_failed|{用户名}我们的斥候说你未能截住{难民1}的列车。他们如此弱小和缓慢，但你却失败了，你有什么用呢？
 dlga_lord_hunt_refugees_failed:lord_hunt_refugees_failed_1|他们就像泥鳅一样滑，大人。我跟丢了。
-; dlga_lord_hunt_refugees_failed_1:lord_pretalk|Maybe you are not good enough to command the armies that will bring this world to its heels if you cannot even defeat the wounded and the sick!^^ Begone, and pray I give you a second chance.
+dlga_lord_hunt_refugees_failed_1:lord_pretalk|如果你都不能击败这些受伤和生病的人，可能你还不够优秀来领导这些将会把世界踩在脚底下的部队。走吧，祈祷我会再给你一次机会。
 dlga_lord_start:lord_generic_mission_completed.9|我不是在做梦吧，你竟然真的做到了，{playername}。所有的奴隶都回来了，他们正忙着准备收获。 你无可争议的赢得了报酬。 来，拿好你的奖励以及我的赞赏。
 dlga_lord_start:lord_bring_back_runaway_serfs_failed|{playername}。我一直在耐心等着我的奴隶，但到现在连个人影都没有。你有什么解释么？你是被林中的小动物迷惑了方向？还是说你根本就无能为力？
 dlga_lord_bring_back_runaway_serfs_failed:lord_bring_back_runaway_serfs_failed_1a|请原谅我，{s65}，那群奴隶狡猾的像泥鳅。
@@ -286,7 +286,7 @@ dlga_lord_mission_told_deliver_cattle_to_army_rejected:close_window|这…真是
 dlga_lord_start:lord_report_to_army_asked|啊，你终于来了，{playername}。我们一直期盼着你的到来。我希望你带来了足够数量且经验丰富的士兵。
 dlga_lord_report_to_army_asked:lord_report_to_army_completed|我带有一群优良且坚强的士兵。我们准备加入你。
 dlga_lord_report_to_army_asked:lord_report_to_army_continue|我现在还没有足够的士兵，我需要多一些的时间。
-; dlga_lord_report_to_army_completed:close_window|Excellent. I will send the word when I have a task for you. {s3}
+dlga_lord_report_to_army_completed:close_window|很好，如果我有任务，我会派人告知你的。{s3}
 dlga_lord_report_to_army_continue:close_window|那你最好快点。我们马上就要动身与敌人作战了，我们需要召集一切可以利用的人手。
 dlga_lord_start:lord_mission_told_scout_waypoints|{playername}，我需要一个志愿者帮我侦察这个区域。我们掌握的情报很匮乏，只有更好的了解当前的情况，我才能制定战略计划。我要你去侦查{s13}，{s14}和{s15}并报告你发现的一切。
 dlga_lord_mission_told_scout_waypoints:lord_mission_told_scout_waypoints_accepted|你找到你想要的志愿者了，先生。
@@ -298,8 +298,8 @@ dlga_lord_buy_prisoner:lord_buy_prisoner_accept|好吧，他是你的了。
 dlga_lord_buy_prisoner:lord_buy_prisoner_deny|对他的处置我有另外的想法。
 dlga_lord_buy_prisoner_accept:lord_pretalk|很好！我会立即派遣手下把他押入监狱。这必将帮助我们的事业。
 dlga_lord_buy_prisoner_deny:lord_pretalk|真遗憾，他本应该发挥更大的价值的，{playername}。
-; dlga_tld_intro_1:lord_pretalk|War Tutorial:^^- Factions will only initiate sieges when they are strong enough.^- Most settlements can only be sieged if their faction is weakened enough. Usually, capitals will be sieged last.^- If a faction loses their capital or if their strength is crushed, they will be defeated.^- Factions gain strength from victories in the field and from holding certain key settlements.^- Factions lose strength from defeats in the field or from losing settlements.^- Some quests or events can affect faction strength.^- You can compare the current faction strength ratings in the 'Reports' menu.^- See the Info Pages for more TLD guides.
-; dlga_lord_start:lord_pretalk|Ah, welcome, {s24}.^You should already know that {s12}. Your duty is to help in our struggle, {playername}. When you prove yourself worthy of my confidence [level {reg1}], I will also allow you access to that chest over there, for you to store your personal belongings.
+dlga_tld_intro_1:lord_pretalk|战争教学: 只有当一个势力足够强大的时候，他才会攻城。大多聚集地只有在势力足够弱小的时候才会被打下。一般来说，首都都是最后沦陷的。如果一个势力失去了自己的首都或者他们的军队被打散了，他们就被击败了。势力可以通过在野战斗的胜利和掌握特定聚集地来增加势力。反之亦然。一些任务和事件同样可以影响势力的强度。在“报告”菜单里你可以比较当前各个势力的强度评定。查看帮助信息页面来获得更多指南。
+dlga_lord_start:lord_pretalk|啊，欢迎你，{s24}。^你可能已经知道{s12}。你的职责是在战争中协助我们，{playername}。当你用行动赢得我的信任之后[{reg1}级]，我将允许你使用那边的宝箱来存放你的私人物品。
 dlga_lord_start:lord_talk|什么事？
 dlga_lord_pretalk:lord_talk|还有其他的事情么？
 dlga_lord_talk:lord_lend_companion_end|{s65}，如果你不再需要{s14}的服务，我希望让{reg3?她:他}归队。
@@ -309,11 +309,11 @@ dlga_lord_talk:lord_message_delivered|我从{s9}那里带来了一封信。
 dlga_lord_talk:lord_message_delivered_enemy|我从{s9}那里带来了一封信。
 dlga_lord_talk:lord_active_mission_1|关于你给我的那个任务…
 dlga_lord_talk:lord_request_mission_ask|你有什么任务可以给我做吗？
-; dlga_lord_talk:dwarf_lord_book|{s3}, I have a matter which I must bring to your attention.
+dlga_lord_talk:dwarf_lord_book|{s3}我有一件事必须向你汇报。
 dlga_dwarf_lord_book:dwarf_lord_book_give|请讲, {playername}。
 ; dlga_dwarf_lord_book_give:dwarf_lord_book_give_a|I ventured deep into the Mines of Moria and found record of Balin's company.
 ; dlga_dwarf_lord_book_give_a:dwarf_lord_book_give_b|You speak of my kin as though they are a memory. Is it so?
-; dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|I'm afraid it is. I'd have searched further but I was beset by goblins, and in great number. I bring only this...
+dlga_dwarf_lord_book_give_b:dwarf_lord_book_give_c|我恐怕是的。我深入搜索了一番，但遇到了很多哥布林，我只带了这个。。
 dlga_dwarf_lord_book_give_c:dwarf_lord_book_give_d|'我们不能出去，我们不能出去……他们来了。'
 ; dlga_dwarf_lord_book_give_d:dwarf_lord_book_give_e|So it is as I feared. I had counseled Balin against this expedition but he was resolved. A fool I was for giving him leave to go.
 ; dlga_dwarf_lord_book_give_e:dwarf_lord_book_give_f|You have done Erebor a great service, {playername}, and your deed will not go unrewarded.
@@ -321,7 +321,7 @@ dlga_dwarf_lord_book_give_f:dwarf_lord_book_give_g|谢谢你，{s3}。
 dlga_dwarf_lord_book_give_g:dwarf_lord_book_give_h|现在你会怎么做？
 ; dlga_dwarf_lord_book_give_h:dwarf_lord_book_give_i|We will not let the murders of our kin go unanswered. We will bring ruin and death to those who have wronged us. From the peaks of Mt. Gundabad to the deepest pits of Khazad-dûm, the Misty Mountains will be stained black with goblin blood.
 ; dlga_dwarf_lord_book_give_i:dwarf_lord_avenge|{s3}, I wish to help {s4} people avenge Balin and his company.
-; dlga_dwarf_lord_book_give_i:lord_pretalk|I wish you good luck with that.
+dlga_dwarf_lord_book_give_i:lord_pretalk|那就祝你好运了
 ; dlga_dwarf_lord_avenge:close_window|Very good, {playername}. Go with the blessings of Durin's folk and bring death to our enemies. Make them know pain and fear as our people have known them.
 dlga_lord_talk:find_lost_spears_permission|大人，我希望能进入孤山寻找布拉多辛王丢失的长枪。
 dlga_find_lost_spears_permission:lord_pretalk|我已经给了你许可了，{playername}。
@@ -332,11 +332,11 @@ dlga_lord_talk:tell_dorwinion_sack|大人，我在那里发现了一个麻袋，
 dlga_tell_dorwinion_sack:tell_dorwinion_sack_2|哦？那就有趣了。这个古老袋子上的标志显然指的是最优质葡萄酒，而这些葡萄酒只产自多温尼安。
 dlga_tell_dorwinion_sack_2:tell_dorwinion_sack_3|我还找到了这个卢恩盔。它可以告诉我们任何关于长枪的下落么？
 ; dlga_tell_dorwinion_sack_3:lord_pretalk|Caravans are often robbed along the way. That helm is from a Rhun Scout. Follow the river down south to the Sea of Rhun and search the trade routes to Dorwinion and you may find what you are looking for. NOTE: THIS QUEST IS NOT YET COMPLETED. TO BE CONTINUED.
-; dlga_lord_talk:lord_healer_wound_ask|I have heard that you were a great healer. Is this true, and can you help me?
+dlga_lord_talk:lord_healer_wound_ask|我听说你医术精湛。这是真的吗？你能帮我吗？
 dlga_lord_healer_wound_ask:lord_pretalk|{s1}
 dlga_lord_healer_wound_ask:lord_healer_wound_ask_check|{s1}
-; dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
-; dlga_lord_healer_wound_ask_check:lord_healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
+dlga_lord_healer_wound_ask_check:lord_healer_wound_heal|我和我的人有一些时间无法愈合的伤口，你能帮助我们疗伤吗？
+dlga_lord_healer_wound_ask_check:lord_healer_injured_ask|我和我的人受伤了，而且我们没有时间来等伤口自己好。你能帮我们吗？
 dlga_lord_healer_wound_ask_check:lord_pretalk|现在不行。
 dlga_lord_healer_wound_heal:lord_healers_wound_check|{s1}
 dlga_lord_healer_injured_ask:lord_healers_injured_check|{s1}
@@ -348,31 +348,31 @@ dlga_lord_talk:ring_hunters_start|大人，为了更好的服务你并结束这�
 ; dlga_ring_hunters_start:ring_hunters_check|{playername}, you have done great deeds and proven yourself worthy of the task I will now request of you. I trust you to deal with this matter as best you see fit, but know that our foe is dangerous and bloodshed will be unavoidable. Is your company strong enough for battle?
 dlga_ring_hunters_check:ring_hunters_1|是的，大人。 我有一群训练有素，身经百战的小伙子们。我们不惧任何挑战。
 dlga_ring_hunters_check:ring_hunters_check_failed|恐怕我没有，大人。
-; dlga_ring_hunters_check_failed:lord_pretalk|Then you are not ready for this task yet,{playername}. Go and gather more troops.
+dlga_ring_hunters_check_failed:lord_pretalk|看来你还没有准备好执行这个任务，{playername}。先去招募更多的士兵吧。
 ; dlga_ring_hunters_1:ring_hunters_2|Excellent. The North has recently been plagued by a marauding band of outlaws, who raid villages and ambush travellers searching for rings of any kind   You are to hunt these bandits down and put an end to their quest. Survivors of their last pillaging have reported two groups.   The first is returning with their loot to their encampment on the eaves of Mirkwood. The other, advances towards Beorn's House in great numbers, and I fear what may happen if they are left unimpeded.
 dlga_ring_hunters_2:ring_hunters_what|大人，他们到底在寻找什么？
 dlga_ring_hunters_2:ring_hunters_accept|大人，我会尽我所能，阻止这些…'魔戒猎手'
 dlga_ring_hunters_2:ring_hunters_reject|我现在还没有准备好接受这个任务。
-; dlga_ring_hunters_accept:close_window|With bravery in your heart and sharp steel in your hands you will, {playername}. We will await news of your success.
+dlga_ring_hunters_accept:close_window|勇气在心，利刃在手，{playername}， 我们等你凯旋的消息。
 dlga_ring_hunters_reject:lord_pretalk|明白，你要是准备好了就告诉我。另外别拖太久，我们可不想看到他们的目的达成。
 ; dlga_ring_hunters_what:ring_hunters_2|Designs of the Enemy are hidden from us, but we can see thes ruffians are bent on finding what they are looking for.  I cannot reveal all that we know, for much hangs in the balance and secrecy is paramount. Whatever they seek must be a powerful weapon, one to be used to cause more destruction in the Dark Lord's name.
-; dlga_ring_hunters_what:ring_hunters_2.1|The Dark Lord previously sent emissaries to different dwarven clans, asking about the rings of power given to our people. These bandits may be looking for them, or others like them...   Whether true or not, they must not fall into the Dark Lord's hands.
-; dlga_lord_talk:ring_hunter_party_defeated|My lord, I come bearing ill news... Though I have defeated the Ring Hunters terrorizing the villages, their leaders were not there. They may have found what they were looking for
+dlga_ring_hunters_what:ring_hunters_2.1|黑暗魔君曾派遣使者到各个矮人氏族中，询问早年间交给我们族人的统御魔戒的下落。这些土匪可能就是在寻找这些…无论如何，它们绝对不能落入黑暗魔君的手中。（注：统御魔戒是至尊魔戒精灵三戒矮人七戒人类九戒一共二十枚戒指的总称）
+dlga_lord_talk:ring_hunter_party_defeated|大人，我带来了一个坏消息…尽管我已经击败了那些威胁村庄的魔戒猎手，他们的首领却并不在场。他们可能已经找到了他们想要的了
 ; dlga_ring_hunter_party_defeated:ring_hunter_party_defeated2|This is not ill news,{playername}. We have heard of your great victory! The lives of those villagers matter more to our cause than any weapon. As we speak, the Beornings are amassing their strength, invigorated by your victory.     Moreover, we don't believe that these Ring Hunters found what they are looking for. If it was the weapon we feared, then we would have felt something... a disturbance.
 dlga_ring_hunter_party_defeated2:ring_hunter_quest_end|你的话让我感觉好多了。无论他们找的是何种武器…他们可能还在搜寻它。我会继续留意这些魔戒猎手的。
 dlga_ring_hunter_quest_end:close_window|我们都会留心的。再一次感谢你所做的一切，{playername}。
-; dlga_lord_talk:ring_hunter_lair_defeated_elf|My lord, though I was unable to intercept the Ring Hunters terrorizing the villages, I was able to defeat their leaders in their lair. They had this in their possession.
-; dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|I see, a ring, but not THE ring. Not even one of the great rings, yet not a mere trinket either. There is some power woven into it.
+dlga_lord_talk:ring_hunter_lair_defeated_elf|大人，虽然我不能阻止那群魔戒猎手威胁村庄，但我在他们的巢穴中击败他们的首领。他们收藏了这个。
+dlga_ring_hunter_lair_defeated_elf:ring_hunter_lair_defeated|我知道了，一个戒指，但不是我想要的，也不是一个魔戒，甚至不是一个稀有的珠宝。上面有一些魔力条纹。
 ; dlga_ring_hunter_lair_defeated:ring_hunter_lair_defeated2|Then we were right to snatch it from the Dark Lord’s fingers, before he could use it to spread his Shadow over the land and have it seep into the hearts of many.
 ; dlga_ring_hunter_lair_defeated2:ring_hunter_lair_quest_end|You must keep this ring and use it to fight the Enemy and his armies. I trust you to use it well.
-; dlga_ring_hunter_lair_quest_end:close_window|This is an honour, my Lord, thank you! My heart will stay true and my arm strong.
+dlga_ring_hunter_lair_quest_end:close_window|这是我的荣幸，领主！谢谢了！我会永远真诚而强大。
 dlga_start:ring_hunters_party_attack|看这里，伙计们，更多的羊羔子要被屠宰了。
-; dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|Your rampage has come to an end.
-; dlga_ring_hunters_party_attack_2:close_window|Check their packs and their fingers. Save one to torture. Everyone else is for eating!
+dlga_ring_hunters_party_attack:ring_hunters_party_attack_2|你的暴行已经到头了。
+dlga_ring_hunters_party_attack_2:close_window|仔细检查他们的包裹和手指。留下一个人严刑拷打，剩下的可以吃。
 dlga_start:ring_hunter_lair_defeat|那个戒指属于黑暗魔君！你无权持有！
 dlga_ring_hunter_lair_defeat:ring_hunter_lair_defeat2|它是我的啦！
-; dlga_ring_hunter_lair_defeat2:close_window|Do you think you’ve won a great victory? A pale tattered shade of one, perhaps. Bah! Our warband marched out long before you arrived. You are too late to save those they went after!
-; dlga_start:beorn_message|My {lord/lady}, we received a warning from {s1} that a large outlaw warband was headed our way! Alas, there was no time to gather enough warriors. Having heard the sound of battle, we prepared for the worst!
+dlga_ring_hunter_lair_defeat2:close_window|你认为你获得了一场大胜么？多半只是一次微不足道的胜利吧。我们的战团早在你来之间就离开了。你来不及救援他们追赶人了！
+dlga_start:beorn_message|我的{lord/lady}，我们收到了来自{s1}的信，说有一大帮土匪正在朝我们涌来！我们已经没有时间组织足够的战士了。每当战争的号角响起时，为最糟糕的情况做准备总没错！
 ; dlga_beorn_message:beorn_message2|That was no band of ordinary outlaws. They were the Dark Lord's worst of the worst, at least here in the North. Their leaders, however, were not here. Their den lies near Mirkwood Forest and I must make haste.
 ; dlga_beorn_message2:beorn_message_end|Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!
 ; dlga_beorn_message_end:beorn_message_close|I must report back and tell {s1} about the battle. Go back to your village and dispatch scouts. There may be stragglers.
@@ -458,7 +458,7 @@ dlga_lord_mission_told_kill_quest_targeted:lord_mission_rejected|我还不能做
 dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|我还不能做这个。
 ; dlga_lord_tell_mission:lord_mission_destroy_scout_camp_a|{playername}, we have received word that {s3} has a scout camp nearby, Make sure you are not seen and destroy it before they learn about our plans.
 ; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_accept|Consider it done.
-; dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|I do not have the time for this.
+dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|我没时间做这个。
 dlga_lord_mission_destroy_scout_camp_accept:close_window|我们会等你成功的消息。
 dlga_lord_mission_destroy_scout_camp_reject:close_window|我知道了。真是令人失望。
 ; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on its way to a village near {s12}.
@@ -666,7 +666,7 @@ dlga_caravan_help_fac_tut:caravan_help5|(派系军衔教程) ^^军衔点允许�
 dlga_caravan_help5:close_window|我会铭记的。谢谢你，托巴尔，注意安全。
 ; dlga_start:caravan_attack1|And who are you? We needed none of your interference, nar!
 ; dlga_caravan_attack3:close_window|Weakling? Let’s see who the weakling is! (Difficult)
-; dlga_caravan_attack3:close_window.1|Go on then, coward. I'll see your corpse in the fields.
+dlga_caravan_attack3:close_window.1|滚吧， 懦夫。 总有一天我会看见你那被弃荒野的尸体的。
 ; dlga_start:caravan_res_tut1|*snicker* No harm in biding one’s time, warrior! Some of the lads might not think so much of you, but not me, oh no. I saw you fight. Won’t bet against you! {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 ; dlga_start:caravan_res_tut2|*snicker* I s’pose I’m the leader now. You are a fierce warrior, yes! Take your share of the loot. Some o’ the lads were betting on you being warg meat, but not me, oh no. I saw you fight. Won’t bet against you!^^Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_caravan_res_tut1:caravan_noduel|(资源点教程)^^ 能在魔多用于交易的资源点和你在初始派系取得的的资源点不同，你要在魔多取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
@@ -702,9 +702,9 @@ dlga_kill_scout_8:close_window|好吧，好吧。走这边！
 dlga_woodelf_help_1:woodelf_help_2.1|我从没见过如此大的半兽人。真是些肮脏的东西…不用担心，我是一名正为未来大战做准备的士兵。
 dlga_woodelf_help_2:woodelf_help_3.1|你是一名士兵？毫无疑问！你精湛的武艺我刚刚已经见识过了。看来今天的确走运，我应该趁此机会返回村庄，把这群肮脏野兽的消息通知给我的村民们。
 dlga_woodelf_help_3:close_window|祝你一路平安，托巴尔。我想我们会再见面的。
-; dlga_healers_ask:healer_who|What do you do?.
-; dlga_healers_ask:healer_wound_ask|My men and I have wounds that require more than just time to heal. Can you heal our wounds?
-; dlga_healers_ask:healer_injured_ask|My men and I are injured, and we do not have the time to wait for them to heal. Can you provide aid?
+dlga_healers_ask:healer_who|你想要做什么？
+dlga_healers_ask:healer_wound_ask|我和我的人有一些时间无法愈合的伤口，你能帮助我们疗伤吗？
+dlga_healers_ask:healer_injured_ask|我和我的人受伤了，而且我们没有时间来等伤口自己好。你能帮我们吗？
 dlga_healers_ask:close_window|没什么。
 dlga_healers_injured_check:healers_injured_heal|来，加入我们。
 dlga_healers_wound_check:healers_wound_heal|来，加入我们。

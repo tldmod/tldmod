@@ -368,7 +368,7 @@ mno_horse_archer_field_ai|Atlı Okçular Gelişmiş Savaş Alanı Yapay Zekasın
 mno_vs_orcs_field_ai|Okçular orklara karşı daha iyi nişan alsınlar (orkların kafalarına hedef almazlar): {s7}
 mno_battlefield_animals|Warg olmayan / At veya Hayvan Yoldaşları Savaşta oluştur: {s7}
 mno_slow_when_wounded|Kişiler yaralanınca yavaşlar: [s7]
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
+mno_battle_encounter_effects|Özel grup bazlı savaş alanında etkiler (Örneğin Kasırgalar, Sisler): {s7}
 menu_hungry_orc|hiçbiri
 menu_leaving_elf|hiçbiri
 mno_defend_refugees|Yağmacılar için tetikte kal....

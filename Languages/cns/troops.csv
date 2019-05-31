@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|佩拉格看守
 trp_pelargir_marine|佩拉格水兵
 trp_pelargir_marine_pl|佩拉格水兵
 trp_pelargir_vet_marine|佩拉格资深水兵
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
+trp_pelargir_vet_marine_pl|佩拉格资深水兵
 trp_pelargir_infantry|佩拉格步兵
 trp_pelargir_infantry_pl|佩拉格步兵
 trp_pelargir_vet_infantry|佩拉格资深步兵
@@ -674,10 +674,10 @@ trp_olog_hai|魔多异化食人妖
 trp_olog_hai_pl|魔多异化食人妖
 trp_ent|树人
 trp_ent_pl|树人
-; trp_orc_snaga_of_guldur|Orc Snaga of Dol Guldur
-; trp_orc_snaga_of_guldur_pl|Orc Snagas of Dol Guldur
-; trp_orc_of_guldur|Orc Tracker of Dol Guldur
-; trp_orc_of_guldur_pl|Orc Trackers of Dol Guldur
+trp_orc_snaga_of_guldur|多尔哥多半兽人奴兵
+trp_orc_snaga_of_guldur_pl|多尔哥多半兽人奴兵
+trp_orc_of_guldur|多尔哥多半兽人追踪者
+trp_orc_of_guldur_pl|多尔哥多半兽人追踪者
 trp_orc_snaga_of_mordor|魔多半兽人奴兵
 trp_orc_snaga_of_mordor_pl|魔多半兽人奴兵
 trp_orc_of_mordor|魔多半兽人
@@ -690,14 +690,14 @@ trp_warg_rider_of_gorgoroth|葛哥洛斯平原座狼骑兵
 trp_warg_rider_of_gorgoroth_pl|葛哥洛斯平原座狼骑兵
 trp_great_warg_rider_of_mordor|乌顿巨型座狼骑兵
 trp_great_warg_rider_of_mordor_pl|乌顿巨型座狼骑兵
-; trp_morgul_orc|Orc of Minas Morgul
-; trp_morgul_orc_pl|Orcs of Minas Morgul
-; trp_fell_morgul_orc|Fell Orc of Minas Morgul
-; trp_fell_morgul_orc_pl|Fell Orcs of Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
-; trp_orc_tracker_of_mordor_pl|Large Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor|Fell Orc Tracker of Dol Guldur
-; trp_fell_orc_tracker_of_mordor_pl|Fell Orc Trackers of Dol Guldur
+trp_morgul_orc|米那斯魔窟半兽人
+trp_morgul_orc_pl|米纳斯魔窟半兽人
+trp_fell_morgul_orc|米纳斯魔窟暴虐半兽人
+trp_fell_morgul_orc_pl|米纳斯魔窟暴虐半兽人
+trp_orc_tracker_of_mordor|多尔哥多大型半兽人追踪者
+trp_orc_tracker_of_mordor_pl|多尔哥多大型半兽人追踪者
+trp_fell_orc_tracker_of_mordor|多尔哥多暴虐半兽人追踪者
+trp_fell_orc_tracker_of_mordor_pl|多尔哥多暴虐半兽人追踪者
 trp_orc_archer_of_mordor|魔多半兽人射手
 trp_orc_archer_of_mordor_pl|魔多半兽人射手
 trp_large_orc_archer_of_mordor|魔多大型半兽人射手
