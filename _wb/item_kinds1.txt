@@ -102,10 +102,10 @@ itemsfile version 2
  itm_rohirrim_courser2 Rohirrim_Courser Rohirrim_Courser 1  rohan_horse03 0  65537 0 900 16106389504 0 100 0 10 0 3 100 40 46 0 0 18 0
 0
 
- itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_leather_warhorse_brown 0  65537 0 1500 119185604608 0 100 0 35 0 4 135 36 40 0 0 34 0
+ itm_rohan_warhorse Rohirrim_Warhorse Rohirrim_Warhorse 1  rohan_warhorse01 0  65537 0 1500 119185604608 0 100 0 35 0 4 135 36 40 0 0 34 0
 0
 
- itm_thengel_warhorse Rohirrim_Heavy_Warhorse Rohirrim_Heavy_Warhorse 1  rohan_scale_warhorse_white 0  65537 0 2500 119185604608 0 100 0 38 0 4 135 34 39 0 0 41 0
+ itm_thengel_warhorse Rohirrim_Heavy_Warhorse Rohirrim_Heavy_Warhorse 1  rohan_warhorse02 0  65537 0 2500 119185604608 0 100 0 38 0 4 135 34 39 0 0 41 0
 0
 
  itm_rhun_horse_a Rhun_Horse Rhun_Horse 1  rhunhorselight1 0  65537 0 500 16106389504 0 100 0 10 0 2 70 39 38 0 0 10 0
