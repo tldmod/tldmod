@@ -232,10 +232,10 @@ scn_orc_sentry_camp_center orc_sentry_camp_center 256 none none 0 0 100 100 -100
   0 
   0 
  outer_terrain_osgiliath_9 
-scn_isengard_center isengard_center 256 none none 0 0 100 100 -100 0x00000007300005004009c5a200000f5200005bd50000739d 
+scn_isengard_center isengard_center 256 none none 0 0 100 100 -100 0x0000000320000500000d234800002ba680005bd500005b5d 
   0 
   0 
- outer_mountains2north 
+ outer_terrain_isen 
 scn_uruk_hai_outpost_center uruk_hai_outpost_center 256 none none 0 0 100 100 -100 0x00000007300014800002b4aa000074e600006c260000125a 
   0 
   0 

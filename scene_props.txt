@@ -3799,7 +3799,7 @@ spr_door_aw_tomb 1081344 1 door_a bo_door_a 1
 spr_isen_orthanc_tower 0 0 isen_orthanc_tower bo_isen_orthanc_tower 0
 
 
-spr_isen_circular_wall 0 0 isen_circular_wall 0 0
+spr_isen_circular_wall 0 0 isen_circular_wall_new 0 0
 
 
 spr_isen_roof_door 0 0 isen_roof_door bo_isen_roof_door 0
@@ -3835,7 +3835,7 @@ spr_isen_gate_house_a 0 0 isen_gate_house_a bo_isen_gate_house_a 0
 spr_isen_post_a 0 0 isen_post_a bo_isen_post_a 0
 
 
-spr_isen_gate_big 0 0 isen_gate_big bo_isen_gate_big 0
+spr_isen_gate_big 0 0 isen_gate bo_isen_gate 0
 
 
 spr_isen_passage_house 0 0 isen_passage_house bo_isen_passage_house 0
@@ -4600,7 +4600,7 @@ spr_mt_tirith_gate 0 0 tirith_gate bo_tirith_gate 0
 spr_rohan_meduseld_table 0 0 rohan_meduseld_int_table bo_rohan_meduseld_int_table 0
 
 
-spr_handsign 0 0 handsign bo_handsign 0
+spr_handsign 0 0 handsign_prop bo_handsign 0
 
 
 spr_ai_limiter_gate_breached 81928 0 barrier_8m bo_barrier_8m 0

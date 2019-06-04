@@ -1958,7 +1958,7 @@ scene_props = [
   ]),
 ## isengard props
 ("isen_orthanc_tower", 0, "isen_orthanc_tower", "bo_isen_orthanc_tower", []),
-("isen_circular_wall", 0, "isen_circular_wall", "0", []),
+("isen_circular_wall", 0, "isen_circular_wall_new", "0", []),
 ("isen_roof_door", 0, "isen_roof_door", "bo_isen_roof_door", []),
 ("isen_wood_construction", 0, "isen_wood_construction", "0", []),
 ("isen_crane", 0, "isen_crane", "bo_isen_crane", []),
@@ -1970,7 +1970,7 @@ scene_props = [
 ("isen_square_keep_a", 0, "isen_square_keep_a", "bo_isen_square_keep_a", []),
 ("isen_gate_house_a", 0, "isen_gate_house_a", "bo_isen_gate_house_a", []),
 ("isen_post_a", 0, "isen_post_a", "bo_isen_post_a", []),
-("isen_gate_big", 0, "isen_gate_big", "bo_isen_gate_big", []),
+("isen_gate_big", 0, "isen_gate", "bo_isen_gate", []),
 ("isen_passage_house", 0, "isen_passage_house", "bo_isen_passage_house", []),
 ("isen_good_ring_10", 0, "isen_good_ring_10", "bo_isen_good_ring_10", []),
   
@@ -2336,7 +2336,7 @@ scene_props = [
   
 ("mt_tirith_gate",0,"tirith_gate","bo_tirith_gate", []),
 ("rohan_meduseld_table",0,"rohan_meduseld_int_table","bo_rohan_meduseld_int_table", []),
-("handsign",0,"handsign","bo_handsign",[]),
+("handsign",0,"handsign_prop","bo_handsign",[]),
 
 ("ai_limiter_gate_breached" ,sokf_invisible|sokf_type_ai_limiter|sokf_moveable,"barrier_8m" ,"bo_barrier_8m" , []), # all instances moved away when gate_destructible is destroyed
 ("barrier_cube" ,sokf_invisible,"collision_cube" ,"bo_collision_cube", []), #a poli-efficient replacement for some colmeshes 
