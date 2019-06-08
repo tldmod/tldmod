@@ -126,7 +126,7 @@ dlga_start:companion_rehire|Moja propozycja, by ponownie się do ciebie przyłą
 dlga_start:companion_rehire.1|Dobrze widzieć cię żyw{ego/ą}, {s5}! {s6} i ja nie wiedzieliśmy, czy został{e/a}ś pojman{y/a}, zabit{y/a}, czy zdołał{eś/aś} uciec. Od tamtego czasu włóczę się po okolicy, szukając ciebie. Mam zabrać swój sprzęt i znów dołączyć do twej kompanii?
 dlga_start:companion_was_dismissed|Dobrze cię widzieć, {s21}! Szczerze mówiąc, coś mi mówiło, że się jeszcze spotkamy.
 dlga_companion_was_dismissed:companion_rehire|{s5}. Mam się znów do ciebie przyłączyć?
-dlga_companion_rehire:companion_recruit_signup_confirm|Witaj z powrotem!
+dlga_companion_rehire:companion_recruit_signup_confirm|Witaj z powrotem, przyjacielu!
 dlga_companion_rehire:companion_rehire_refused|Przykro mi, obecnie nie mogę już nikogo zwerbować.
 dlga_companion_rehire_refused:close_window|Cóż... Poszukaj mnie, jeśli zmienisz zdanie, dobrze?
 dlga_event_triggered:ziggy_ask_prisoners|Dowódco, chciałbym coś powiedzieć. Pokonałeś naszych wrogów i wziąłeś kilku jeńców. Mam dla Ciebie wspaniałą prezent który ci wręczę pod jednym warunkiem, jak oddasz mi jednego z jeńców których schwytałeś.
@@ -201,7 +201,7 @@ dlga_party_encounter_lord_hostile_attacker_2:close_window|Nie atakujcie! Poddaje
 dlga_party_encounter_lord_hostile_attacker_2:close_window.1|Będziemy walczyć do końca!
 dlga_party_encounter_offer_dont_fight:close_window|Jestem ci winien przysługę, czyż nie? Cóż... w porządku. Pozwolę ci odejść ten jeden jedyny raz.
 dlga_party_encounter_offer_dont_fight:close_window.1|Ha-ha. Ale ja chcę z wami walczyć.
-dlga_start:close_window.8|Dzień dobry, Pani{e/}. Dobrze mieć cię tu w {s10}.
+dlga_start:close_window.8|Spadaj, zanim stracę cierpliwość, ty ohydny żebraku!
 dlga_start:lord_start|Czyż to nie m{ój dzielny mistrz/oja dzielna mistrzyni}, {playername}...
 dlga_start:lord_start.1|{playername}, dobrze znów cię widzieć...
 dlga_start:lord_start.2|A więc znów się spotykamy, {playername}...
@@ -222,7 +222,7 @@ dlga_lord_capture_troll_completed_two_trolls:lord_capture_troll_completed_two_tr
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_info|Dzika bestia jest zdolna wykonywać rozkazy?
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_accept|Dziękuję Mistrzu. Możesz być pewien, że ten trol zostanie dobrze wykorzystany.
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse|Dziękuję Mistrzu. Jednak nie jestem godn{y/a} tak wielkiego daru. Jest to zbyt niebezpieczne dla mnie.
-dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Dziękuję, panie. Ale nie jestem godzien twojego wspaniałego daru. [brak miejsca w ekwipunku!]
+dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_refuse.1|Dziękuję, panie. Ale nie jestem godzien twojego wspaniałego daru. [brak miejsca w oddziale!]
 dlga_lord_capture_troll_completed_two_trolls_thankyou:lord_capture_troll_completed_two_trolls_thankyou_raise|Mistrzu, sprowadzę większy zamęt jeśli bestia otrzyma pancerz [10/{reg20} wpływów].
 dlga_lord_capture_troll_completed_two_trolls_thankyou_info:lord_capture_troll_completed_two_trolls_thankyou|Wątpisz w zdolności swego Mistrza, {playername}? Bestia została wyszkolona do słuchania każdego rozkazu na polu bitwy. Sprowadzi zamęt w szeregach naszych wrogów. Jednakże, ty i twoi wojownicy nie zbliżajcie się nadto do besti gdy walczy, i nigdy nie stwajacie między jej ramionami a ich ofiarami.
 dlga_lord_capture_troll_completed_two_trolls_thankyou_accept:lord_pretalk|A teraz sprowadź spustoszenie na moich wrogów swym nowym darem

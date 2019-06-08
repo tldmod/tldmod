@@ -41,7 +41,7 @@ mno_leave_custom_battle_2|Annulla
 menu_custom_battle_end|^^^^^^La battaglia è terminata. {s1} I tuoi alleati hanno ucciso {reg5} nemici e perso {reg6} truppe durante la battaglia.^Hai ucciso personalmente {reg7} avversari durante lo scontro.
 mno_replay|Combatti nuovamente la battaglia
 mno_continue_dot|Continua
-; menu_custom_battle_durin_end|^^^^^^It was an admirable last stand, but ultimately doomed.^^ You and your kinsmen killed {reg5} enemies.^You personally slew {reg7} opponents in the fighting.
+menu_custom_battle_durin_end|^^^^^^È stata una mirabile ultima resistenza, ma infine era destinata a cadere.^^ Tu e i tuoi avete ucciso {reg5} nemici.^Tu personalmente hai abbattuto {reg7} avversari in combattimento.
 mno_replay_cbd|Combatti nuovamente questa battaglia
 mno_continue_dot_cbd|Continua
 mno_dot_go_back|Torna Indietro
@@ -104,9 +104,9 @@ mno_start_2_hib|Alto Lignaggio
 menu_start_haradrim|^^^^^^^Sei un Haradrim,^un Uomo del Deserto.^Seleziona il tuo lignaggio:
 mno_start_1_des|Uomo del Deserto
 mno_start_2_far|Uomo delle Tribù del Lontano Harad
-; menu_start_numenorean|^^^^^^^You are a Black Numenorean,^faithful to the Darkness and Morgoth.^Select where you serve the Eye
-; mno_start_1_bn|Next to the Mouth of Sauron, in MORANNON
-; mno_start_2_bn|In the Fortress of the Necromancer, DOL GULDUR
+menu_start_numenorean|^^^^^^^Sei un Numenoreano Nero,^Fedele all'Oscurità e a Morgoth.^Scegli dove servire l'Occhio
+mno_start_1_bn|Vicino alla Bocca di Sauron, a MORANNON
+mno_start_2_bn|Nella fortezza del Negromante, DOL GULDUR
 menu_choose_gender|^^^^^^^^^^Il tuo sesso ?
 mno_start_male|Uomo
 mno_start_female|Donna
@@ -123,8 +123,8 @@ mno_camp_troop|Rassegna{reg10? truppe:}{reg12? e:}{reg11? prigionieri:}.
 mno_camp_action|Usa un oggetto.
 mno_camp_wait_here|Accampati qui per qualche tempo.
 mno_camp_options|Cambia le opzioni di TLD.
-; mno_Dev_Menu|Developer Menu
-; menu_dev_menu|These are Development Options that gives you alot of cheats/tools to play with.^^ However, this will result in some WIP events, triggers, campaign changes that could be game breaking.^^ Use at your own risk! ^^ Also, when reporting bugs, please tell us that you are using the Dev Menu.
+mno_Dev_Menu|Menu Sviluppatore
+menu_dev_menu|Queste sono Opzioni di Sviluppo che ti forniscono parecchi trucchi/strumenti che potrai usare.^^ Tuttavia, ciò determinerà cambiamenti in eventi incorso, interruttori, modifiche alla campagna che potrebbero mandare in crash il gioco.^^ Fanne uso a tuo rischio! ^^ Inoltre, nel segnalare bugs, ti preghiamo di specificare che hai fatto uso del Menu Sviluppatore.
 mno_Cheat_enable|Abilita opzioni cheat/modding.
 menu_game_options|^^^^^^^^Clicca su un'opzione per attivarla:
 mno_game_options_war_level_start|La guerra inizierà a livello: {s1}
@@ -195,13 +195,13 @@ mno_leave|Vattene.
 menu_simple_encounter|^^^^^{s2}^Hai {reg22} truppe pronte per la battaglia contro {reg11} delle loro.^^Luogo della battaglia: {s3}{s4}.^^I tuoi ordini ?
 mno_encounter_attack|{reg21?Carica !:Prepariamoci ad affrontarli}.
 mno_encounter_order_attack|Ordina alle tue truppe di {reg21?attaccare:affrontarli} senza di te.
-; mno_control_allies_menu|Use Influence to Command Your Allies in the Field.
+mno_control_allies_menu|Usa la tua Influenza per Comandare i Tuoi Alleati nel campo.
 mno_encounter_hide|Nasconditi dal nemico...
 mno_special_whip|Corri in avanti verso di loro rompendo il {s4}.
 mno_encounter_leave|Ritirati.
 mno_encounter_retreat|Ritirati, lasciando alcuni soldati dietro di te per coprire la ritirata.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|Comandali e carica il nemico
+mno_player_control_allies_back|Torna indietro...
 mno_hide_close|Continua...
 menu_encounter_retreat_confirm|Come membro della compagnia con le abilità di tattica più elevate,  ({reg2}), {reg3? escogiti:{s3} escogita} un piano che permetterà a te e i tuoi uomini di scappare in salvo, ma dovrai lasciare {reg4} soldati indietro a coprire la ritirata.
 mno_leave_behind|Procedi. Il sacrificio di questi uomini salverà molte vite.
@@ -229,9 +229,9 @@ mno_pre_join_leave|Non farti coinvolgere.
 menu_join_battle|^^^Assisti {s2} contro {s1}.^ Hai {reg22} truppe pronte per affrontare le {reg11} del nemico.^^Luogo dello scontro: {s3}{s4}.
 mno_join_attack|Carica il nemico.
 mno_join_order_attack|Ordina alle tue truppe di attaccare al fianco degli alleati mentre tu rimani nelle retrovie.
-; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
+mno_control_allies_join_menu|Usa i tuoi Punti Influenza per Comandare i Tuoi Alleati nel Campo.
 mno_join_leave|Ritirati.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|Comandali e carica il nemico
 menu_join_order_attack|{s4}^^I tuoi caduti: {s8}^^Caduti alleati: {s9}^^Caduti nemici: {s10}
 mno_enter|Entra.
 menu_battlefields|^^^^^^^^^Seleziona un campo...
@@ -368,9 +368,9 @@ mno_horse_archer_field_ai|Gli arcieri a cavallo hanno una IA migliorata in batta
 mno_vs_orcs_field_ai|Gli arcieri hanno una mira migliore contro gli orchi (non tirano al di sopra delle loro teste): {s7}
 mno_battlefield_animals|Non-Warg / Compagni cavalcabili generati in battaglia: {s7}
 mno_slow_when_wounded|Gli agenti diventa lenti una volta feriti:  {s7}
-; mno_battle_encounter_effects|Special Faction Based Effects on Battlefields (e.g storms, mists):  {s7}
-; menu_hungry_orc|none
-; menu_leaving_elf|none
+mno_battle_encounter_effects|Effetti Speciali della Fazione influenzano il campo di battaglia (es. tempeste, nebbie):  {s7}
+menu_hungry_orc|niente
+menu_leaving_elf|niente
 mno_defend_refugees|Tieni gli occhi aperti per i razziatori...
 mno_attack_refugees|Attacca la carovana di profughi...
 mno_leave_refugees|Lasciamoli, per il momento...
@@ -426,7 +426,7 @@ mno_leave_pyre|Abbandona la pira.
 menu_town_ruins|Quando ti avvicini, vedi che {s1} è {s2}
 mno_ruin_menu_0|Esplora il luogo.
 mno_ruin_leave|Vattene...
-; menu_premutiny|none
+menu_premutiny|niente
 menu_death|Sei stato ucciso. Anche se la guerra continua ad infuriare, tu non potrai più farne parte.
 menu_animal_ambush|Tu e i tuoi compagni vi trovate separati dal resto della compagnia, quando improvvisamente...
 menu_animal_ambush_success|I {s2} {reg0?cadono:cadono} davanti a te come spighe di grano sotto la falce ! In poco tempo tutti i tuoi nemici giacciono sul terreno, morti o feriti. {s3}

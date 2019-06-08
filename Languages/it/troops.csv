@@ -166,10 +166,10 @@ trp_a3_dwarven_scout|Nano Esploratore
 trp_a3_dwarven_scout_pl|Esploratori Nanici
 trp_a4_dwarven_bowman|Arciere Novizio Nano
 trp_a4_dwarven_bowman_pl|Arcieri Nanici
-; trp_i6_dwarven_longaxeman|Longaxe Dwarf
-; trp_i6_dwarven_longaxeman_pl|Longaxe Dwarves
-; trp_i3_iron_hills_warrior|Iron Hills Warrior
-; trp_i3_iron_hills_warrior_pl|Iron Hills Warriors
+trp_i6_dwarven_longaxeman|Nano Ascialunga
+trp_i6_dwarven_longaxeman_pl|Nani Ascialunga
+trp_i3_iron_hills_warrior|Guerriero delle Colline Ferrose
+trp_i3_iron_hills_warrior_pl|Guerrieri delle Colline Ferrose
 trp_i2_iron_hills_miner|Minatore dei Colli Ferrosi
 trp_i2_iron_hills_miner_pl|Minatori dei Colli Ferrosi
 trp_i4_iron_hills_infantry|Fanteria dei Colli Ferrosi
@@ -426,8 +426,8 @@ trp_i6_footman_guard_of_rohan|Guardia dell'Ordine di Folcwine di Rohan
 trp_i6_footman_guard_of_rohan_pl|Guardie dell'Ordine di Folcwine di Rohan
 trp_i6_frealaf_raider|Cacciatore dell'ordine di Frealaf
 trp_i6_frealaf_raider_pl|Cacciatori dell'Ordine di Frealaf
-; trp_i5_raider_of_rohan|Raider of Rohan
-; trp_i5_raider_of_rohan_pl|Raiders of Rohan
+trp_i5_raider_of_rohan|Razziatore di Rohan
+trp_i5_raider_of_rohan_pl|Razziatori di Rohan
 trp_i6_warden_of_methuseld|Guardiano di Meduseld
 trp_i6_warden_of_methuseld_pl|Guardiani di Meduseld
 trp_ac3_skirmisher_of_rohan|Schermagliatore di Rohan
@@ -456,8 +456,8 @@ trp_c5_elite_rider_of_rohan|Cavallerizzo d'élite di Rohan
 trp_c5_elite_rider_of_rohan_pl|Cavallerizzi d'élite di Rohan
 trp_c6_rider_guard_of_rohan|Guardia dell'Ordine di Eorl di Rohan
 trp_c6_rider_guard_of_rohan_pl|Guardie dell'ordine di Eorl di Rohan
-; trp_i6_2h_guard_of_rohan|Helm Guard of Rohan
-; trp_i6_2h_guard_of_rohan_pl|Helm Guards of Rohan
+trp_i6_2h_guard_of_rohan|Guardia di Rohan dell'Ordine di Helm
+trp_i6_2h_guard_of_rohan_pl|Guardie di Rohan dell'Ordine di Helm
 trp_dismounted_veteran_skirmisher_of_rohan|Schermagliatore veterano di Rohan
 trp_dismounted_veteran_skirmisher_of_rohan_pl|Schermagliatori veterani di Rohan
 trp_dismounted_elite_skirmisher_of_rohan|Schermagliatore d'élite di Rohan
@@ -560,10 +560,10 @@ trp_i1_corsair_youth|Marinaio di Umbar
 trp_i1_corsair_youth_pl|Marinai di Umbar
 trp_i2_corsair_warrior|Guerriero di Umbar
 trp_i2_corsair_warrior_pl|Guerrieri di Umbar
-; trp_i3_corsair_spearman|Spearman of Umbar
-; trp_i3_corsair_spearman_pl|Spearmen of Umbar
-; trp_i4_corsair_raider|Corsair Raider
-; trp_i4_corsair_raider_pl|Corsair Raiders
+trp_i3_corsair_spearman|Picchiere di Umbar
+trp_i3_corsair_spearman_pl|Picchieri di Umbar
+trp_i4_corsair_raider|Predone Corsaro
+trp_i4_corsair_raider_pl|Predoni Corsari
 trp_i5_corsair_night_raider|Razziatore Corsaro Notturno
 trp_i5_corsair_night_raider_pl|Razziatori Corsari Notturni
 trp_a2_corsair_marine|Marittimo di Umbar
@@ -584,12 +584,12 @@ trp_a4_corsair_assassin|Corsaro Assassino
 trp_a4_corsair_assassin_pl|Corsari Assassini
 trp_a5_corsair_master_assassin|Corsaro Assassino
 trp_a5_corsair_master_assassin_pl|Corsari Assassini
-; trp_i4_corsair_veteran_spearman|Veteran Spearman of Umbar
-; trp_i4_corsair_veteran_spearman_pl|Veteran Spearmen of Umbar
-; trp_i5_corsair_master_spearman|Spearmaster of Umbar
-; trp_i5_corsair_master_spearman_pl|Spearmasters of Umbar
-; trp_i5_corsair_master_pikeman|Pikemaster of Umbar
-; trp_i5_corsair_master_pikeman_pl|Pikemasters of Umbar
+trp_i4_corsair_veteran_spearman|Picchiere Veterano di Umbar
+trp_i4_corsair_veteran_spearman_pl|Picchiere Veterano di Umbar
+trp_i5_corsair_master_spearman|Mastro Lanciere di Umbar
+trp_i5_corsair_master_spearman_pl|Mastri Lancieri di Umbar
+trp_i5_corsair_master_pikeman|Mastro Picchiere di Umbar
+trp_i5_corsair_master_pikeman_pl|Mastri Picchieri di Umbar
 trp_orc_snaga_of_isengard|Orco Snaga di Isengard
 trp_orc_snaga_of_isengard_pl|Orchi Snaga di Isengard
 trp_orc_of_isengard|Orco di Isengard
@@ -733,12 +733,12 @@ trp_i3_orc_fighter_gundabad|Orco Combattente di Gundabad
 trp_i3_orc_fighter_gundabad_pl|Orchi Combattenti di Gundabad
 trp_i4_fell_orc_warrior_gundabad|Orco Guerriero di Gundabad
 trp_i4_fell_orc_warrior_gundabad_pl|Orchi Guerrieri di Gundabad
-; trp_i4_orc_beserker_gundabad|Gundabad Orc Berserker
-; trp_i4_orc_beserker_gundabad_pl|Gundabad Orc Berserkers
-; trp_ca4_warg_skirmisher_gundabad|Gundabad Skirmisher
-; trp_ca4_warg_skirmisher_gundabad_pl|Gundabad Skirmishers
-; trp_ca5_goblin_north_clan_skirmisher|Goblin North Clan Skirmisher
-; trp_ca5_goblin_north_clan_skirmisher_pl|Goblin North Clan Skirmishers
+trp_i4_orc_beserker_gundabad|Orco Berserker di Gundabad
+trp_i4_orc_beserker_gundabad_pl|Orchi Berserkers di Gundabad
+trp_ca4_warg_skirmisher_gundabad|Schermagliatore di Gundabad
+trp_ca4_warg_skirmisher_gundabad_pl|Schermagliatori di Gundabad
+trp_ca5_goblin_north_clan_skirmisher|Schermagliatore Goblin del Clan Nordico
+trp_ca5_goblin_north_clan_skirmisher_pl|Schermagliatori Goblin del Clan Nordico
 trp_c3_goblin_rider_gundabad|Cavalcatore Goblin di Gundabad
 trp_c3_goblin_rider_gundabad_pl|Cavalcatori Goblin di Gundabad
 trp_c4_warg_rider_gundabad|Cavalca-Warg di Gundabad
@@ -751,8 +751,8 @@ trp_tribal_orc|Orco Tribale
 trp_tribal_orc_pl|Orchi Tribali
 trp_tribal_orc_warrior|Orco Tribale Guerriero
 trp_tribal_orc_warrior_pl|Orchi Tribali Guerrieri
-; trp_i5_orc_champion_gundabad|Gundabad Orc Champion
-; trp_i5_orc_champion_gundabad_pl|Gundabad Orc Champions
+trp_i5_orc_champion_gundabad|Orco Campione di Gundabad
+trp_i5_orc_champion_gundabad_pl|Orchi Campioni di Gundabad
 trp_black_numenorean_renegade|Rinnegato Numenoreano Nero
 trp_black_numenorean_renegade_pl|Rinnegati Numenoreani Neri
 trp_black_numenorean_warrior|Guerriero Numeroreano Nero
@@ -1577,17 +1577,17 @@ trp_hungry_orc|Orco Affamato
 trp_longing_lorien|Elfo Bramoso
 trp_longing_woodelf|Elfo Bramoso
 trp_longing_imladris|Elfo Bramoso
-; trp_i5_deep_dweller_of_moria|Deep-Dweller of Moria
-; trp_i5_deep_dweller_of_moria_pl|Deep-Dwellers of Moria
+trp_i5_deep_dweller_of_moria|Abitante delle Profondità di Moria
+trp_i5_deep_dweller_of_moria_pl|Abitanti delle Profondità di Moria
 trp_i5_orc_chieftain_of_moria|Orco Capitano di Moria
 trp_i5_orc_chieftain_of_moria_pl|Orchi Capitani di Moria
 trp_rhovanion_noble|Nobile del Rhovanion
 trp_rhovanion_noble_pl|Nobile del Rhovanion
-; trp_npc18|Turmbathu
-; trp_npc19|Heidrek
-; trp_npc20|Zigûrphel
-; trp_werewolf|Werewolf
-; trp_werewolf_pl|Werewolves
+trp_npc18|Turmbathu
+trp_npc19|Heidrek
+trp_npc20|Zigûrphel
+trp_werewolf|Mannaro
+trp_werewolf_pl|Mannari
 trp_mountain_goblin2|Goblin di Montagna
 trp_mountain_goblin2_pl|Goblin di Montagna
 trp_tribal_orc2|Orco Tribale

@@ -891,7 +891,7 @@ dlga_merchant_quest_what_if_fail:mayor_pretalk|Spero che tu non fallisca. Non po
 dlga_merchant_quest_what_if_fail:mayor_pretalk.1|Beh, fai solo del tuo meglio per finirlo.
 dlga_merchant_quest_taken:mayor_pretalk|Eccellente. Conto su di te allora. Buona Fortuna.
 dlga_merchant_quest_stall:mayor_pretalk|Bene, vedrò di trovare qualcun altro. Ma dimmelo se cambi idea.
-; dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|I'll do what I can. I only hear their coming and going if they were recently in another center. If they are not in a center, I hear about the region they are around from caravans.
+dlga_mayor_talk_ask_location:mayor_talk_ask_location_2|Farò quel che posso. Posso solo sapere dei loro spostamenti se sono stati di recente in qualche insediamento. Se non si trovano in un insediamento, ho saputo qualcusa sulla regione in cui si trovano delle carovane.
 dlga_mayor_talk_ask_location_2:mayor_pretalk|Niente, chiedo scusa.
 dlga_merchant_quest_requested:merchant_quest_brief|Bene, sembri abbastanza abile. Credo di avere qualcosa che potresti fare.
 dlga_merchant_quest_brief:merchant_quest_looters_choice|Ultimamente ci sono stati degli scontri nei dintorni di {s5}, con tutto il caos che ne consegue, e questo ha portato alcune bande di orchi tribali a razziare nelle vicinanze durante la confusione. Ho bisogno di qualcuno che dia una lezione a quegli orchi. Ti sembra un lavoro adatto a te ? 
