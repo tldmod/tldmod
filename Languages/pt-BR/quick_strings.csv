@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} pto. recursos ({s2})
 qstr_+30_to_Party_Morale|+30 de moral do destacamento
 qstr_+20_to_Party_Morale|+20 de moral do destacamento
 qstr_+1_to_Riding_Skill|+1 em habilidade de cavalgar
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|+1 em encontrar o caminho
 qstr_+1_to_Athletics|+1 em habilidade atlética
 qstr_Use_from|Use de

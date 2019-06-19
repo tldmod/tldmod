@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Pts. Res ({s2})
 qstr_+30_to_Party_Morale|+30 au moral du groupe
 qstr_+20_to_Party_Morale|+20 au moral du groupe
 qstr_+1_to_Riding_Skill|+1 à la compétence Équitation
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|+1 à la Connaissance du terrain
 qstr_+1_to_Athletics|+1 d'Athlétisme
 qstr_Use_from|Utiliser depuis

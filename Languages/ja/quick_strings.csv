@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1}リソースポイント({s2})
 qstr_+30_to_Party_Morale|パーティの士気に+30
 qstr_+20_to_Party_Morale|パーティの士気に+20
 qstr_+1_to_Riding_Skill|乗馬スキルに+1
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|経路探索スキルに+1
 qstr_+1_to_Athletics|アスレチックスキルに+1
 qstr_Use_from|このアイテムは

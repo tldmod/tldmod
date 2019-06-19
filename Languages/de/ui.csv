@@ -49,5 +49,102 @@ ui_notification_cant_upgrade|(Keine Beförderung während der Übergabe möglich
 ui_lance_control|Lanzenausrichtung:
 ui_manual_easy|Manuell (einfach)
 ui_manual_hard|Manuell (schwer)
-ui_campaign_ai|Kampagnen-KI (unbenutzt):
-; ui_crouch|Crouch
+ui_campaign_ai|Kampagnen-KI (nicht verwendet):
+ui_crouch|Ducken
+
+# swy: added from this spreadsheet, as requested by our translators:
+#      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
+ui_are_you_sure_you_want_to_import_the_character|Bist du sicher, dass du diesen Charakter importieren möchtest?
+ui_explanation_strength|Stärke: Jeder Punkt fügt +1 Trefferpunkte hinzu. Die folgenden Fertigkeiten können nicht über 1/3 des Stärkewerts entwickelt werden: Eisenhaut, Schlagkraft, Wurfkraft, Bogenzugkraft.
+ui_explanation_intelligence|Intelligenz: Jeder zusätzliche Intelligenzpunkt gewährt sofort einen zusätzlichen Fertigkeitspunkt. Die folgenden Fertigkeiten können nicht über 1/3 des Intelligenzswerts entwickelt werden: Ausbilder, Spurensuche, Taktik, Wegfindung, Aufklärung. Inventarverwaltung, Wundheilung, Chirurgie, Erste Hilfe.
+ui_explanation_charisma|Charisma: Jeder Punkt erhöht die maximale Truppengröße um +1. Die folgenden Fertigkeiten können nicht über 1/3 des Charismawerts entwickelt werden: Wildkunde, Gefangenaufsicht, Führerschaft, Handeö.
+ui_delivered_number_damage|%d Schaden zugefügt.
+ui_mission_losses_killed|getötet : 
+ui_party_losses|%s  : %d verwundet--- %d getötet von %d.
+ui_following|Folgt
+ui_accompanying|Begleitet
+ui_dumping_value_items|%d Gegenstände werden für immer verloren sein. Bist du dir sicher?
+ui_dumping_value_item|Ein Gegenstand wird für immer verloren sein. Bist du dir sicher?
+ui_notification_requirements_not_met|Du hast nicht die benötigten Fertigkeiten oder Eigenschaften für diese Waffe.
+ui_disband|Entlassen
+ui_you_hit_a_friendly_troop|Du hast eine Freund getroffen!
+ui_you_are_not_carrying_any_arrows|Du hast keine Pfeile bei dir.
+ui_delivered_number_damage_to_horse|Dem Reittier wurde %d Schaden zugefügt.
+ui_received_number_damage|%d Schaden erlitten.
+ui_you_have_improved_your_proficiency_in_value_to_number|Du hast deine Fähigkeiten in %s auf %d gesteigert.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|Deine Fähigkeit in %s ist um +%d auf %d gestiegen.
+ui_value_killed_by_value|%s getötet von %s.
+ui_value_knocked_unconscious_by_value|%s von %s bewusstlos geschlagen.
+ui_you_got_number_experience|%d Erfahrung erhalten.
+ui_you_have_advanced_to_level_number|Du bist auf Stufe %d aufgestiegen.
+ui_you_got_value|%s verdient.
+ui_quest_succeeded_value|Aufgabe vollbracht: %s.
+ui_number_of_companions_exceeds_leadership_limit|Anzahl der Gefährten überschreitet das Anführerschaftslimit.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Die Anzahl der Gefangenen überschreitet das Gefangenenverwaltungslimit.
+ui_shared_number_experience_within_party|%d gemeinsame Erfahrung in der Truppe.
+ui_your_relations_with_value_has_improved_from_number_to_number|Deine Beziehung mit %s hat sich von %d auf %d verbessert.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Deine Beziehung mit %s hat sich von %d auf %d verschlechtert.
+ui_you_lost_value|Du hast %s verloren.
+ui_change_graphics_settings_explanation|Einige Änderungen werden erst in Kraft treten, wenn du ein neues Gebiet betrittst.
+ui_game_log_window|Spiel-Log-Fenster
+ui_blunt_short|b
+ui_tracks|Spuren
+ui_order_button_hold_fire|Beschuss einstellen!
+ui_order_button_fire_at_will|Nach Belieben schießen!
+ui_order_button_fire_orders|Schießbefehle
+ui_need_to_learn_prisoner_management|Du musst Gefangenenverwaltung erlernen, ehe du Gefangene nehmen kannst.
+ui_game_log_window|Spiel-Log-Fenster
+ui_unbalanced|Unausgewogene Waffe
+ui_can_crush_through_blocks|Kann Blöcke durchschlagen
+
+ui_order_1|Wähle Befehl 1
+ui_order_2|Wähle Befehl 2
+ui_order_3|Wähle Befehl 3
+ui_order_4|Wähle Befehl 4
+ui_order_5|Wähle Befehl 5
+ui_order_6|Wähle Befehl 6
+ui_order_button_hold_this_position|Position halten!
+ui_order_button_follow_me|Folgt mir!
+ui_order_button_charge|Angreifen!
+ui_order_button_stand_ground|Stellung halten!
+ui_order_button_retreat|Rückzug!
+ui_order_button_advance|10 Schritte vor!
+ui_order_button_fall_back|10 Schritte zurück!
+ui_order_button_spread_out|Ausfächern!
+ui_order_button_stand_closer|Zusammenrücken!
+ui_order_button_mount_horses|Aufsitzen!
+ui_order_button_dismount|Absitzen!
+ui_order_button_hold_fire|Beschuss einstellen!
+ui_order_button_fire_at_will|Nach Belieben schießen!
+ui_order_button_use_blunt_weapons|Stumpfe Waffen einsetzen!
+ui_order_button_use_any_weapon|Beliebige Waffen einsetzen!
+ui_order_button_movement_orders|Marschbefehle
+ui_order_button_formation_orders|Formationsbefehle
+ui_order_button_fire_orders|Schießbefehle
+ui_follow_me_e_|%s, folgt mir!
+ui_charge_e_|%s, greift an!!!
+ui_stand_ground_e_|%s, haltet die Stellung!
+ui_retreat_e_|%s, Rückzug!
+ui_mount_horses_e_|%s, Aufsitzen!
+ui_dismount_e_|%s, absitzen!
+ui_advance_e_|%s, 10 Schritte vor!
+ui_fall_back_e_|%s, 10 Schritte zurück!
+ui_stand_closer_e_|%s, rückt zusammen!
+ui_spread_out_e_|%s, ausfächern!
+ui_use_blunt_weapons_e_|%s, stumpfe Waffen einsetzen!
+ui_use_any_weapon_e_|%s, beliebige Waffen einsetzen!
+ui_hold_fire_e_|%, Beschuss einstellen!
+ui_fire_at_will_e_|%s, Nach Belieben schießen!
+ui_hold_this_position_e_|%s, Position halten!
+ui_infantry|Fußsoldaten
+ui_archers|Schützen
+ui_cavalry|Reiter
+ui_companions|Gefährten
+ui_everyone_hear_me|An alle, hört auf meinen Befehl!
+ui_everyone|Alle
+ui_everyone_around_me|Alle bei mir
+ui_str_hear_me|%s, hört auf meinen Befehl!
+
+ui_return|Zurück
+ui_factions|Reiche
+ui_troop_upgrades|Truppenbaum

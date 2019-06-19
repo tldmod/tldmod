@@ -117,14 +117,14 @@ mno_start_up1|Divieni un {s21} (Facile)
 mno_start_up2|Diventa un {s22} (Facile)
 mno_continue|Continua...
 menu_character_report|^^^^^Morale della Compagnia: {reg8}^Limite Dimensioni Compagnia: {reg7}^{s5}
-menu_camp|^^^^Sei a {s1}.{s2}^^Cosa vuoi fare ?
+menu_camp|^^^^Sei presso {s1}.{s2}^^Cosa vuoi fare ?
 mno_camp_scene|Ispeziona la zona.
-mno_camp_troop|Rassegna{reg10? truppe:}{reg12? e:}{reg11? prigionieri:}.
+mno_camp_troop|Passa in rassegna{reg10? le truppe:}{reg12? e:}{reg11? prigionieri:}.
 mno_camp_action|Usa un oggetto.
 mno_camp_wait_here|Accampati qui per qualche tempo.
 mno_camp_options|Cambia le opzioni di TLD.
 mno_Dev_Menu|Menu Sviluppatore
-menu_dev_menu|Queste sono Opzioni di Sviluppo che ti forniscono parecchi trucchi/strumenti che potrai usare.^^ Tuttavia, ciò determinerà cambiamenti in eventi incorso, interruttori, modifiche alla campagna che potrebbero mandare in crash il gioco.^^ Fanne uso a tuo rischio! ^^ Inoltre, nel segnalare bugs, ti preghiamo di specificare che hai fatto uso del Menu Sviluppatore.
+menu_dev_menu|Queste sono Opzioni di Sviluppo che ti forniscono parecchi trucchi/strumenti che potrai usare.^^ Tuttavia, ciò determinerà cambiamenti in eventi incorso, interruttori, modifiche alla campagna che potrebbero mandare in crash il gioco.^^ Fanne uso a tuo rischio ! ^^ Inoltre, nel segnalare bugs, ti preghiamo di specificare che hai fatto uso del Menu Sviluppatore.
 mno_Cheat_enable|Abilita opzioni cheat/modding.
 menu_game_options|^^^^^^^^Clicca su un'opzione per attivarla:
 mno_game_options_war_level_start|La guerra inizierà a livello: {s1}
@@ -133,8 +133,8 @@ mno_game_options_formations|Formazioni di battaglia e IA: {s7}
 mno_game_options_siege_ai|IA Assedio Avanzata: {s7}
 mno_game_options_town_menu|PNG delle città sempre accessibili dal Menu: {s7}
 mno_game_options_cutscenes|Scene d'intermezzo: {s7}
-mno_game_options_injuries|Ferite per i compagni: {s7}.
-mno_game_options_death|Morte permanente per nobili e compagni: {s7}.
+mno_game_options_injuries|Ferite per gli eroi: {s7}.
+mno_game_options_death|Morte permanente per nobili ed eroi: {s7}.
 mno_game_options_death2|Morte permanente per il giocatore (sei TU !): {s7}.
 mno_game_options_morale|Calcolo del morale in battaglia: {s7}
 mno_game_options_animal_ambushes|Imboscate degli animali: {s7}
@@ -165,7 +165,7 @@ mno_camp_customize_defilement|Personalizza armatura corrotta
 mno_camp_drink_water|Bevi l'acqua Ent !
 mno_camp_action_4|Indietro.
 menu_assasins_attack_player_won|Hai sconfitto con successo gli assassini da {s2}, inviati da {s3}.
-menu_assasins_attack_player_retreat|Sei scappato, salvandoti la vita!
+menu_assasins_attack_player_retreat|Hai potuto fuggire, salvandoti la vita !
 menu_fangorn_danger|^^^^^^Strano, senti rumori minacciosi intorno a te.^Sono gli alberi a parlare ? C'è un senso di profonda ira e di dolore nell'aria.^I tuoi ordini ?
 mno_be_quiet_elf|Rispetta l'odio degli alberi. Allontanati silenziosamente.
 mno_be_quiet|Abbassa le armi e rimani calmo ! Ora via da qui !
@@ -173,7 +173,7 @@ mno_be_bold|Continua ! Non ho paura delle piante e di vecchie leggende !
 mno_fight_back|Mettetevi a cercare ! Ispezionare l'area ! Abbattete e bruciate un albero o due !
 menu_fangorn_search_fails|^^^^^^Esplori l'oscura, fitta foresta ma non trovi niente.^Eppure, ti senti osservato e minacciato, sempre di più.
 menu_fangorn_battle_debrief_won|^^Vittoria !^^^Così questo era il significato di tutte le leggende su Fangorn...
-menu_fangorn_killed_player_only|^^^^^^Osservi nella fitta, oscura foresta.^All'improvviso vieni colpito da qualcosa ! Forse un pesante ramo è caduto sulla tua testa ?^Rimani svenuto per qualche minuto. Sei ferito seriamente ma puoi continuare.
+menu_fangorn_killed_player_only|^^^^^^Osservi nella fitta, oscura foresta.^All'improvviso qualcosa ti colpisce ! Forse un pesante ramo è caduto sulla tua testa ?^Rimani incosciente per qualche minuto. Hai delle ferite serie ma puoi continuare.
 mno_ow_get_out|Ahi ! Andiamocene da questo posto maledetto !
 menu_fangorn_killed_troop_and_player|^^^^^^Osservi nella fitta, oscura foresta.^^All'improvviso vieni colpito da qualcosa ! Forse un pesante ramo è caduto sulla tua testa.^^Svieni per qualche minuto, quando ti riprendi, noti con terrore che non tutte le tue truppe sono state così fortunate.^^
 menu_fangorn_killed_troop_only|^^^^^^Osservi nella fitta, oscura foresta. Le tue truppe sono terrorizzate.^^ All'improvviso, senti un urlo provenire da dietro ! Ti affretti a dirigerti verso il grido, solo per trovare alcune truppe a terra in una pozza di sangue.^^Di altre hai perso ogni traccia...
@@ -319,11 +319,11 @@ menu_sneak_into_town_caught_dispersed_guards|Ti liberi delle guardie e cancelli 
 menu_sneak_into_town_caught_ran_away|Trovi una via di fuga attraverso il cancello e ti ritiri prontamente verso la salvezza sulle colline.
 menu_tld_player_defeated|^^^^^ Improvvisamente senti un dolore dirompente alla nuca ! Il tuo corpo è scosso dai brividi mentre tutto si oscura attorno a te... ^ È questa la tua fine ?
 menu_recover_after_death_fangorn|Ti svegli. La foresta ti circonda ancora e ogni osso ti fa male. Sei vivo, per miracolo.^^ È stata una sconfitta, ma almeno sei in grado di vedere quello che è successo. ^Ora sai che cosa accade in questa foresta maledetta,^e sei sopravvissuto per raccontarlo. ^^Ti crederà mai qualcuno, quando lo farai ?
-menu_recover_after_death_moria|^^^^^Riprendi conoscenza. Sei sdraiato su di un soffice manto erboso, una fresca brezza ti accarezza il volto. Sei all'esterno !^Gli orchi devono averti creduto morto e hanno scaricato il tuo corpo dentro un pozzo profondo.^Devi essere stato trasportato in superficie da un torrente sotterraneo.
+menu_recover_after_death_moria|^^^^^Riprendi conoscenza. Giaci su di un soffice manto erboso, una fresca brezza ti accarezza il volto. Sei all'esterno !^Gli orchi devono averti creduto alla tua morte scaricando il tuo corpo dentro un profondo pozzo.^Il tuo corpo dev'essere stato trasportato in superficie da un torrente sotterraneo.
 mno_whatever|Alzati !
-menu_recover_after_death_default|^^^^^Riprendi conoscenza. Giaci nel posto in cui sei caduto. I nemici devono averti creduto morto e ti hanno lasciato lì. Comunque, pare che nessuna delle tue ferite sia letale, e anche se ti senti in modo orribile, ti rendi conto di essere in grado di camminare. Ti alzi e cerchi altri sopravvissuti della tua compagnia.
-menu_recover_after_death_town|^^^^Riprendi conoscenza a ti accorgi di trovarti nella periferia cittadina. Sei sopravvissuto ! Nessuno è nei paraggi e ne approfitti per allontanarti dalla città. Sembra che nessuna delle tue ferite sia letale, e anche se ti senti uno straccio, riesci ancora a camminare.
-menu_recover_after_death_town_alone|Riprendi conoscenza e ti accorgi di trovarti nella periferia cittadina. Sei sopravvissuto ! Nessuno è nei paraggi e ne approfitti per allontanarti dalla città. I tuoi compagni ti trovano. Sembra che nessuna delle tue ferite sia letale, e anche se ti senti uno straccio, riesci ancora a camminare.
+menu_recover_after_death_default|^^^^^Riprendi conoscenza. Giaci nel posto in cui hai perso i sensi. I nemici devono aver creduto alla tua morte e ti hanno lasciato lì. Comunque, pare che nessuna delle tue ferite sia letale, e anche se ti senti in modo orribile, ti rendi conto di essere in grado di camminare. Ti alzi e cerchi eventuali sopravvissuti.
+menu_recover_after_death_town|^^^^Riprendi conoscenza a ti accorgi di trovarti nella periferia cittadina. Sei ancora in vita ! Nessuno è nei paraggi e ne approfitti per allontanarti dalla città. Sembra che nessuna delle tue ferite sia letale, e anche se ti senti uno straccio, riesci ancora a camminare.
+menu_recover_after_death_town_alone|Riprendi conoscenza e ti accorgi di trovarti nella periferia cittadina. Sei ancora in vita ! Nessuno è nei paraggi e ne approfitti per allontanarti dalla città. I tuoi compagni ti trovano. Sembra che nessuna delle tue ferite sia letale, e anche se ti senti uno straccio, riesci ancora a camminare.
 menu_notification_center_under_siege|{s1} è sotto assedio da parte di {s2} di {s3} !
 menu_notification_one_side_left|^^^^^La Guerra dell'Anello è terminata !^^Il {s1} ha sconfitto tutti i nemici e ora si erge vittorioso !
 menu_notification_total_defeat|^^^^^La Guerra dell'Anello è terminata per te !^^Il {s1} è stato sconfitto dai suoi nemici e tu sei rimasto solo nella sconfitta !
@@ -335,7 +335,7 @@ mno_explore|Esplora questo luogo.
 menu_ring_hunter_lair|^^^^Hai seguito il sentiero dei Cacciatori dell'Anello attraverso Bosco Atro e sei giunto a {s1}. Li vedi mentre stanno lasciando una cassa.
 mno_attack_lair|Attaccali adesso
 mno_leave_bandit_lair|Vattene per ora.
-menu_gondor_reinforcement_event|^^^^^ le Torri-Faro di Gondor sono accese, Minas Tirith chiede aiuto! ^^ I signori dei feudi meridionali marceranno ora verso nord per difendere la Città Bianca contro l'oscurità incombente.
+menu_gondor_reinforcement_event|^^^^^ le Torri-Faro di Gondor sono accese, Minas Tirith chiede aiuto ! ^^ I signori dei feudi meridionali marceranno ora verso nord per difendere la Città Bianca contro l'oscurità incombente.
 mno_gondor_reinforcement_event_close|Chiudi
 menu_gondor_beacons|Alzi lo sguardo verso {s1}, uno dei fari di segnalazione di Gondor, usato per diffondere l'allarme nel nord e nel sud di Gondor stessa.
 mno_gondor_beacons_close|Vattene...
@@ -358,10 +358,10 @@ mno_defend_villagers|Difendi gli abitanti del villaggio !
 mno_raid_villagers|Razzia il Villaggio !
 mno_go_away|Partite e radunatevi, per ora.
 menu_scout_camp_quest|Scorgi l'accampamento degli esploratori nelle vicinanze. Prepari i tuoi uomini per attaccarli
-mno_attack_scout_camp|Attacca il campo degli esploratori!
+mno_attack_scout_camp|Attacca il campo degli esploratori !
 menu_sea_battle_quest|Incontri una flotta nemica. Le navi si avvicinano e i marinai calano le passerelle...
-mno_sb_defend_the_town|Abbordiamoli! Distruggiamo la loro flotta!
-mno_sb_attack_the_town|Cercano di bloccarci! Difendete la flotta!
+mno_sb_defend_the_town|Abbordiamoli ! Distruggiamo la loro flotta !
+mno_sb_attack_the_town|Cercano di bloccarci ! Difendete la flotta !
 menu_camp_field_ai|^^^^^Fare click su un'opzione per variarla.^^^Disattivare una o più scelte migliorerà le prestazioni (FPS)
 mno_lord_field_ai|I Lords hanno una IA migliore sul campo: {s7}
 mno_horse_archer_field_ai|Gli arcieri a cavallo hanno una IA migliorata in battaglia: {s7}

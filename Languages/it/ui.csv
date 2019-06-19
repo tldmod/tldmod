@@ -772,10 +772,10 @@ ui_return_your_bought_goods|Restituisci i beni presi, prime di cedere questo !
 ui_return_price|se restituito: +%d P.R.
 ui_sell_price|Prezzo vendita: +%d P.R.
 ui_reclaim_price|per recuperare: -%d P.R.
-ui_buying_price|Costo: -%d P.R.
+ui_buying_price|Costo: =%d P.R.
 ui_notification_riding_skill_not_enough|Non hai abbastanza abilità per cavalcarlo.
 ui_notification_payment_value|Spesa: %s
-ui_notification_payment_receive_value|Guadagnare %s
+ui_notification_payment_receive_value|Guadagni %s
 ui_weekly_cost_value|Mantenere: %s
 ui_sell|Dài
 ui_hire|Arruola
@@ -794,7 +794,7 @@ ui_has_deserted_the_party|ha abbandonato la Compagnia.
 ui_have_deserted_the_party|hanno abbandonato la Compagnia.
 ui_loading_textures|Caricamento Textures (sii paziente)...
 ui_order_hold_fire_toggle|Cessate il fuoco/Fuoco a volontà (Alternato)
-ui_order_dismount_toggle|Ordina di smontare/Montare (Alternato)
+ui_order_dismount_toggle|Ordina di Smontare/Montare (Alternato)
 ui_mount_horses_e_|%s, montate !
 ui_hold_fire_e_|%s, Non tirate !
 ui_fire_at_will_e_|%s, Tirate a volontà !
@@ -808,3 +808,100 @@ ui_manual_easy|Manuale (Facile)
 ui_manual_hard|Manuale (Difficile)
 ui_campaign_ai|IA Campagna:
 ui_crouch|Accucciarsi
+
+# swy: added from this spreadsheet, as requested by our translators:
+#      https://docs.google.com/spreadsheets/d/1_zpuLL5iCwybkPCiJLOuyXTdZDm1_zxoToTroJRbtp4/edit?usp=sharing
+ui_are_you_sure_you_want_to_import_the_character|Vuoi davvero importare il personaggio ?
+ui_explanation_strength|Forza: Ogni punto aggiunge +1 ai punti ferita. Le seguenti abilità non possono essere sviluppate oltre 1/3 della Forza: Resistenza, Potenza d'attacco, Potenza di lancio, Potenza di tiro.
+ui_explanation_intelligence|Intelligenza: Ogni punto d'intelligenza fornisce immediatamente un punto abilità aggiuntivo. Le seguenti abilità non possono essere sviluppate oltre 1/3 dell'Intelligenza: Addestramento, Seguire tracce, Tattica, Orientamento, Avvistamento, Gestione Inventario, Cura Ferite, Chirurgia, Primo Soccorso, Ingegneria, Persuasione.
+ui_explanation_charisma|Carisma: Ogni punto incrementa il limite della dimensione della tua compagnia di +1. Le seguenti abilità non possono essere sviluppate oltre 1/3 del Carisma: Gestione Prigionieri, Comando, Commercio.
+ui_delivered_number_damage|Hai inflitto %d danni.
+ui_mission_losses_killed|Uccisi :
+ui_party_losses|%s : %d feriti --- %d uccisi di %d.
+ui_following|Segue
+ui_accompanying|Accompagna
+ui_dumping_value_items|%d oggetti saranno persi per sempre, confermi ?
+ui_dumping_value_item|Un oggetto sarà perduto per sempre, confermi ?
+ui_notification_requirements_not_met|Non possiedi l'abilità richiesta o gli attributi necessari per usare quest'arma.
+ui_disband|Disperdere
+ui_you_hit_a_friendly_troop|Hai colpito un alleato!
+ui_you_are_not_carrying_any_arrows|Non hai frecce.
+ui_delivered_number_damage_to_horse|Inflitti %d danni alla cavalcatura.
+ui_received_number_damage|Ricevuto %d danni.
+ui_you_have_improved_your_proficiency_in_value_to_number|Hai migliorato la tua competenza in %s a %d.
+ui_your_proficiency_in_value_has_improved_by_number_to_number|La tua competenza in %s è migliorata da +%d a %d.
+ui_value_killed_by_value|%s ucciso da %s.
+ui_value_knocked_unconscious_by_value|%s tramortito da %s.
+ui_you_got_number_experience|Ottieni %d esperienza.
+ui_you_have_advanced_to_level_number|Hai raggiunto il livello %d.
+ui_you_got_value|%s guadagnato.
+ui_quest_succeeded_value|Missione completata: %s.
+ui_number_of_companions_exceeds_leadership_limit|Il numero dei compagni supera il limite in Comando.
+ui_number_of_prisoners_exceeds_prisoner_management_limit|Il numero di prigionieri supera il limite di gestione degli stessi.
+ui_shared_number_experience_within_party|Condivisa %d esperienza con la compagnia.
+ui_your_relations_with_value_has_improved_from_number_to_number|La tua relazione con %s è migliorata da %d a %d.
+ui_your_relations_with_value_has_deteriorated_from_number_to_number|Le tue relazioni con %s si sono deteriorate da %d a %d.
+ui_you_lost_value|Hai perso %s.
+ui_change_graphics_settings_explanation|Alcune modifiche che hai fatto avranno effetto quando accederai ad una nuova area.
+ui_game_log_window|Finestra Log di Gioco
+ui_blunt_short|b
+ui_tracks|Tracce
+ui_order_button_hold_fire|Non tirate
+ui_order_button_fire_at_will|Tirare a volontà
+ui_order_button_fire_orders|Ordini di tiro
+ui_need_to_learn_prisoner_management|Devi apprendere l'abilità nella Gestione dei Prigionieri per poter catturare prigionieri.
+ui_game_log_window|Finestra Log di Gioco
+ui_unbalanced|Sbilanciato
+ui_can_crush_through_blocks|Può frantumare i blocchi
+
+ui_order_1|Scelta Ordine 1
+ui_order_2|Scelta Ordine 2
+ui_order_3|Scelta Ordine 3
+ui_order_4|Scelta Ordine 4
+ui_order_5|Scelta Ordine 5
+ui_order_6|Scelta Ordine 6
+ui_order_button_hold_this_position|Mantenere la posizione
+ui_order_button_follow_me|Seguitemi
+ui_order_button_charge|Carica !
+ui_order_button_stand_ground|Fermi
+ui_order_button_retreat|Ritirata
+ui_order_button_advance|Avanzare dieci passi
+ui_order_button_fall_back|Arretrare dieci passi
+ui_order_button_spread_out|Distanziatevi
+ui_order_button_stand_closer|Serrare i ranghi
+ui_order_button_mount_horses|Montare
+ui_order_button_dismount|Smontate !
+ui_order_button_hold_fire|Non tirate
+ui_order_button_fire_at_will|Tirare a volontà
+ui_order_button_use_blunt_weapons|Usare solo armi non letali
+ui_order_button_use_any_weapon|Usare armi a libera scelta
+ui_order_button_movement_orders|Ordini di movimento
+ui_order_button_formation_orders|Ordini di formazione
+ui_order_button_fire_orders|Ordini di tiro
+ui_follow_me_e_|%s, seguitemi !
+ui_charge_e_|%s, Carica !
+ui_stand_ground_e_|%s, fermi!
+ui_retreat_e_|%s, ritirata !
+ui_mount_horses_e_|%s, montate !
+ui_dismount_e_|%s, smontare!
+ui_advance_e_|%s, avanzare dieci passi !
+ui_fall_back_e_|%s, arretrare di dieci passi !
+ui_stand_closer_e_|%s, serrare i ranghi !
+ui_spread_out_e_|%s, distanziarsi !
+ui_use_blunt_weapons_e_|%s, usare solo armi non letali !
+ui_use_any_weapon_e_|%s, usare arma a libera scelta !
+ui_hold_fire_e_|%s, Non tirate !
+ui_fire_at_will_e_|%s, Tirate a volontà !
+ui_hold_this_position_e_|%s,  tenere questa posizione !
+ui_infantry|Fanteria
+ui_archers|Arcieri
+ui_cavalry|Cavalleria 
+ui_companions|Compagni
+ui_everyone_hear_me|Ascoltatemi tutti !
+ui_everyone|Tutti
+ui_everyone_around_me|Soldati Vicini
+ui_str_hear_me|%s, ascoltatemi !
+
+ui_return|Torna
+ui_factions|Fazioni
+ui_troop_upgrades|Promozione truppe

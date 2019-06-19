@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Kay.Pnları ({s2})
 qstr_+30_to_Party_Morale|Parti Moraline +30
 qstr_+20_to_Party_Morale|Parti Moraline +20
 qstr_+1_to_Riding_Skill|Biniş Becerisine +1
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|Yol bulma Becerisine +1
 qstr_+1_to_Athletics|Atletizm Becerisine +1
 qstr_Use_from|Kullanmak

@@ -375,8 +375,8 @@ dlga_ring_hunter_lair_defeat2:close_window|你认为你获得了一场大胜么�
 dlga_start:beorn_message|我的{lord/lady}，我们收到了来自{s1}的信，说有一大帮土匪正在朝我们涌来！我们已经没有时间组织足够的战士了。每当战争的号角响起时，为最糟糕的情况做准备总没错！
 ; dlga_beorn_message:beorn_message2|That was no band of ordinary outlaws. They were the Dark Lord's worst of the worst, at least here in the North. Their leaders, however, were not here. Their den lies near Mirkwood Forest and I must make haste.
 ; dlga_beorn_message2:beorn_message_end|Yes, we were warned about the camp also and sent scouts towards it. We saw them burn it down and swiftly ride towards Mordor. If you chose to rush there first, you may not have been able to help us. We are truly grateful for your victory!
-; dlga_beorn_message_end:beorn_message_close|I must report back and tell {s1} about the battle. Go back to your village and dispatch scouts. There may be stragglers.
-; dlga_beorn_message_close:close_window|Yes, commander. We shall remain vigilant and send for more men from the distant hamlets. Your victory today has inspired us all.
+dlga_beorn_message_end:beorn_message_close|接下来我必须回去向{s1}报告这里所发生的一切。先回你的村庄准备好斥候。这周围可能会有残余的土匪游荡。
+dlga_beorn_message_close:close_window|好的，将军。我们会保持警惕的。我们将继续尝试从周边的村庄里招募更多人。你今天的胜利鼓舞了我们所有人。
 dlga_lord_give_troops:lord_give_troops_check|增强我的部队？没问题，士兵总是多多益善。
 dlga_lord_give_troops:lord_pretalk|很遗憾你没有任何来自{s14}的士兵能加入我…
 dlga_lord_give_troops_check:lord_give_troops_check_1|我要检查一下部队花名册…
@@ -461,18 +461,18 @@ dlga_lord_mission_told_kill_quest_faction:lord_mission_rejected|我还不能做�
 dlga_lord_mission_destroy_scout_camp_a:lord_mission_destroy_scout_camp_reject|我没时间做这个。
 dlga_lord_mission_destroy_scout_camp_accept:close_window|我们会等你成功的消息。
 dlga_lord_mission_destroy_scout_camp_reject:close_window|我知道了。真是令人失望。
-; dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}, we have received reports from our scouts that a raiding party is on its way to a village near {s12}.
+dlga_lord_tell_mission:lord_mission_defend_village_a|{playername}，我们收到了斥候的报告，说有一支掠夺的队伍正在前往{s12}附近的一个村庄。
 dlga_lord_mission_defend_village_a:lord_mission_defend_village_b|你能够派出一些援军么？
 dlga_lord_mission_defend_village_b:lord_mission_defend_question|我们可以，但动员起来需要时间。我们担心到那时就太晚了。^^你和你的人看起来现在就能骑马离开。你能帮忙守护那个村庄吗？
 dlga_lord_mission_defend_question:lord_mission_defend_accept|我和我的人已经准备好了。我们会尽快出发的。
 dlga_lord_mission_defend_question:lord_mission_defend_reject|我恐怕我完成不了这个任务。
 dlga_lord_mission_defend_accept:close_window|谢谢你，{playername}。现在出发吧，快！
 dlga_lord_mission_defend_reject:close_window|明白。那我会尽可能地派出援军。只希望我们不会太晚。
-; dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}, there is a village nearby that is ripe for the picking. Our scouts tell us that they are protected by {s3}, but they are few and can easily be defeated. ^^You happen to be the first commander I have told. What do you want to do with this information?
+dlga_lord_tell_mission:lord_mission_raid_village_a|{playername}，附近有一座的村庄正适合我们劫掠。我们的斥候告诉我他们受到{s3}的保护，但他们人数很少，我们可以轻易地打败。^^你碰巧是第一个听到这个消息的指挥官。你不打算做点什么？
 dlga_lord_mission_raid_village_a:lord_raid_village_accept|我会袭击那个村庄，杀死我们看到的每一个男人，奴役所有的女人和小孩！
 dlga_lord_mission_raid_village_a:lord_raid_village_reject|我可没时间去掠夺微不足道的村庄！
 dlga_lord_raid_village_accept:close_window|那你还在这儿干站着做什么？
-; dlga_lord_raid_village_reject:close_window|The excuses of cowards. Go away, your cowardly stench is insulting.
+dlga_lord_raid_village_reject:close_window|懦夫的借口。滚开，你那懦弱的恶臭让我感到恶心。
 dlga_lord_active_mission_1:lord_mission_sorcerer_completed|幽暗密林的巫师已经死了，我的女士。
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed|请恕罪，我的女士，某个突发事件绊住了我，等我回过神来巫师已经逃离了。
 dlga_lord_active_mission_1:lord_mission_sorcerer_failed.1|幽暗密林的巫师仍然活着。 我们打断了他的仪式，但他逃跑了。
@@ -665,7 +665,7 @@ dlga_caravan_help4:caravan_help_fac_tut|我对此十分期待。我的护卫在�
 dlga_caravan_help_fac_tut:caravan_help5|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
 dlga_caravan_help5:close_window|我会铭记的。谢谢你，托巴尔，注意安全。
 ; dlga_start:caravan_attack1|And who are you? We needed none of your interference, nar!
-; dlga_caravan_attack3:close_window|Weakling? Let’s see who the weakling is! (Difficult)
+dlga_caravan_attack3:close_window|懦夫？让我来告诉你谁才是真的懦弱！ (困难)
 dlga_caravan_attack3:close_window.1|滚吧， 懦夫。 总有一天我会看见你那被弃荒野的尸体的。
 ; dlga_start:caravan_res_tut1|*snicker* No harm in biding one’s time, warrior! Some of the lads might not think so much of you, but not me, oh no. I saw you fight. Won’t bet against you! {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 ; dlga_start:caravan_res_tut2|*snicker* I s’pose I’m the leader now. You are a fierce warrior, yes! Take your share of the loot. Some o’ the lads were betting on you being warg meat, but not me, oh no. I saw you fight. Won’t bet against you!^^Our friends and allies will hear of you, don’t doubt it! Might be they’d be willing to give you a new mount, or a new blade. No one has time for the weak, but if you’re strong, ha, we help those who help us, see? {s10}^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
@@ -691,10 +691,10 @@ dlga_beorn_help6:beorn_help7|(派系军衔教程) ^^军衔点允许你提升你�
 dlga_beorn_help7:close_window|Le fael（辛达林语：谢谢），朋友！再会。
 dlga_beorn_help7:close_window.1|(挥手，一言不发地离开。)
 ; dlga_start:kill_scout_1|Great eyes and ears you have there! If you hadn’t warned us, those green-clad tree-climbers would’ve had the jump on us, I warrant - or perhaps escaped, and brought down more of their fellows on our heads! Now they’re for the maggots and crows, and our mission is safe. Ai! The Bosses will be pleased.
-; dlga_kill_scout_1:kill_scout_2|Watch where you’re taking us, Orc. We have not travelled this far to perish in an ambush, before the war has even begun!
+dlga_kill_scout_1:kill_scout_2|看看你把我们带到了哪里去了，半兽人…我可不想在战争正式开始前就被解决掉！
 ; dlga_kill_scout_2:kill_scout_3|And war we shall have, indeed! Have no fear, warrior, Mordor is an ally to you and yours. Take this chit - get some supplies. Good for use in all Mordor outposts! Get a round of Orc brew on me!
 dlga_kill_scout_3:kill_scout_4|(资源点教程)^^ 能在魔多用于交易的资源点和你在初始派系取得的的资源点不同，你要在魔多取得当地派系的资源点以便与当地人交易。^^查看报告菜单获取更多消息。
-; dlga_kill_scout_4:kill_scout_5|You want us to drink Orc swill? We'd rather be drinking our own piss.
+dlga_kill_scout_4:kill_scout_5|你想让我们喝半兽人泔水？我们宁愿喝自己的小便。
 ; dlga_kill_scout_5:kill_scout_6|Ha! I knew you foreigners did such things! I’ve won my bet with Gothmog, thanks to you!!^^ I’ll tell him and the other Bosses about you, for sure. Lugbúrz will know how useful you were today, have no fear! The Great Eye is upon you, now!^^But we all stick to our own kind, we do. Serve the Eye, serve the Dark Lord, yes, but do a deed in the East, and the South takes no notice, and likewise. Help the Eye, and the White Hand cares not. Help the Old Man, and the Dark Tower thinks why you waste your time not doing work for it!
 dlga_kill_scout_6:kill_scout_7|(派系军衔教程) ^^军衔点允许你提升你在出生派系(和/或者其它派系)中的地位。^^这将决定你的部队上限，每周的派系资源点收入，并解锁一些派系特殊奖励。
 ; dlga_kill_scout_7:kill_scout_8|What I do is none of your affair, you disgusting creature. Now let’s move!

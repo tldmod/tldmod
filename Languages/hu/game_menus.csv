@@ -200,8 +200,8 @@ mno_encounter_hide|Elbújsz az ellenfelek elől...
 mno_special_whip|Rohanj velük szembe, megroppantva a {s4}t.
 mno_encounter_leave|Visszavonulás.
 mno_encounter_retreat|Visszavonulás, néhány katonát hátrahagyva, hogy fedezzék a visszavonulásodat.
-; mno_player_control_allies_simple|Command them and charge the enemy
-; mno_player_control_allies_back|Go back...
+mno_player_control_allies_simple|Vezesd őket, és rohand le az ellenséget
+mno_player_control_allies_back|Vissza...
 mno_hide_close|Folytatás...
 menu_encounter_retreat_confirm|^^^^^A legnagyobb taktikai képzettséggel rendelkező csapattagként, ({reg2}), {reg3?kiötölsz:{s3}kitalál} egy tervet, mely lehetővé teszi számodra és embereid számára, hogy elmeneküljetek, hátra kell azonban hagynod {reg4} katonát, hogy lefoglalják az ellenséget. 
 mno_leave_behind|Gyerünk. Ezeknek az embereknek a feláldozása megmenti a többiek életét.
@@ -231,7 +231,7 @@ mno_join_attack|Az ellenség megrohamozása.
 mno_join_order_attack|Utasítsd csapataidat szövetségeseiddel az ellenség megtámadására, miközben te hátra maradsz.
 ; mno_control_allies_join_menu|Use Influence Points to Command Your Allies in the Field.
 mno_join_leave|Visszavonulás.
-; mno_player_control_allies_join_menu|Command them and charge the enemy
+mno_player_control_allies_join_menu|Vezesd őket, és rohand le az ellenséget
 menu_join_order_attack|{s4}^^Veszteségeid: {s8}^^Szövetségesek vesztesége: {s9}^^Ellenség vesztesége: {s10}
 mno_enter|Belépés.
 menu_battlefields|^^^^^^^^^^Válassz mezőt...

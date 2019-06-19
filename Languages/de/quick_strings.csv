@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Ressourcenpunkte ({s2})
 qstr_+30_to_Party_Morale|+30 zur Truppenmoral
 qstr_+20_to_Party_Morale|+20 zur Truppenmoral
 qstr_+1_to_Riding_Skill|+1 Reiten
+qstr_during_battles|in Gefechten
 qstr_+1_to_Pathfinding|+1 Spurensuche
 qstr_+1_to_Athletics|+1 Athletik
 qstr_Use_from|Trinke davon
@@ -230,9 +231,9 @@ qstr_+2_to_Tactics|+2 Taktik
 qstr_+3_to_Spotting|+3 Aufklärung
 qstr_Less_Dunnish_upkeep|Weniger Unterhalt für Dunländer
 qstr_Less_Wargs_upkeep|Weniger Unterhalt für Warge
-; qstr_Light_Armor|Light Armor
+qstr_Light_Armor|Leichte Rüstung
 qstr_+{reg1}_to_Party_Mor|+{reg1} zur Truppenmoral
-; qstr_Shoot_Speed:_{reg55}|Shoot Speed: {reg55}
+qstr_Shoot_Speed:_{reg55}|Reichweite: {reg55}
 qstr_Do_you_want_to_disem|An Land gehen?
 qstr_Move_here|Hierhin bewegen
 qstr_View_notes|Betrachte Notizen
@@ -875,7 +876,7 @@ qstr_Unknown_{reg3}_|Unbekannt({reg3})
 qstr_ON|AN
 qstr_OFF__cheat_|AUS (Cheat)
 qstr_OFF|AUS
-; qstr_All_messages|All messages
+qstr_All_messages|Alle Nachrichten
 qstr_{reg0}__will_most_li|{reg0} (verursacht wahrscheinlich Abstürze während des Speicherns)
 qstr_{reg0}__could_possib|{reg0} (könnte Abstürze während des Speicherns verursachen)
 qstr_Normal|Normal
@@ -915,7 +916,7 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Eine Gruppe von {s1} {s10} dir entgegen.
 qstr_You_are_attacking_a_|Du greifst eine Gruppe von {s1} an.
 qstr_The_battle_against_t|Der Kampf gegen die Gruppe von {s1} setzt sich fort.
-; qstr_There_are_{reg39}_al|There are {reg39} ally commanders in this battle. You can command them and their troops for {reg40} influence points.
+qstr_There_are_{reg39}_al|Du kämpfst gemeinsam mit {reg39} verbündeten Befehlshabern. Übernimm den Befehl für {reg40} Einflusspunkte.
 qstr_Having_a_small_party|Ein kleiner Trupp hat seine Vorteile... Du und deine Truppen verbergen sich vor dem Feind. Ihr verharrt einige Stunden, um sicherzugehen, dass ihr nicht gesehen werdet.
 qstr_Your_ability_to_surv|Dank deiner guten Kenntnis der Wildnis findest du einen sicheren Ort, um deinen Trupp vor den Augen der Feinde zu verbergen. (Wildkunde-Fähigkeit erlaubt dir, bis zu {reg1} Truppen zu verstecken.)
 qstr_{reg4}_will_be_lost.|{reg4} Soldaten werden zurückgelassen.
@@ -1210,10 +1211,10 @@ qstr_It_is_my_duty_to_prot|Es ist meine Pflicht, unsere Verbündeten zu beschüt
 qstr_I_am_{s4}_{s15}_of_{|Ich bin {s4}, {s15} von {s6}
 qstr_I_am_{s4}_a_commande|Ich bin {s4}, ein Befehlshaber von {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? und Herr von {s8}.:.
-; qstr_{playername}_our_sco|{playername}, our scouts brought word of your success. May you live beyond this day in years of blessedness! With the hosts of {s7} thrown back by your victory, the enemy’s great advance has faltered. We may hope that there is now contention within their ranks, and among their captains. And, too, we may hope that they now hold a healthy fear of you! You have won us a brief rest from weariness, at the least.
-; qstr_Well_{playername}_yo|Well, {playername}, you’ve returned, and with good news for us, it would seem. I see now you are not only made of brag and hot air - ah, if only I could have seen {s7} fall before you with my own eyes! Our foes are now desperately disheartened, no doubt. Lost their heads, I warrant. Cut off the head of a serpent, as they say, and the deal’s done. Well, I must now lead my host to win the real victory. Your contribution will be reported, <Player>, to your betters. Have no fear about that.
-; qstr_Alas_that_I_could_no|Alas that I could not bring a final end to {s7} of {s8}, but if we should meet again, let them beware.
-; qstr__I_should_rather_mak| I should rather make report of my victory over {s7} of {s8} myself - the chief glory is mine, and you will not forget it!
+qstr_{playername}_our_sco|{playername}, unsere Späher haben von Eurem Erfolg berichtet. Möget Ihr nach diesem Tag noch ein langes, gesegnetes Leben haben! Da Ihr die Heerscharen von {s7} mit Eurem Sieg zurückgeworfen habt, wurde der Vormarsch des Feindes ins Stocken gebracht. Es besteht Grund zur Hoffnung, dass nun Zwist unter ihren Kriegern und Hauptleuten besteht. Ebenso steht zu vermuten, dass sie Euren Namen nun zurecht mit Furcht aussprechen! Und schließlich habt Ihr uns mindestens einen kurzen Augenblick der Ruhe verschafft.
+qstr_Well_{playername}_yo|Nun, {playername}, du bist zurück und bringst uns gute Neuigkeiten, wie es scheint. Ich sehe nun, dass du kein Angeber und Aufschneider bist - ah, wenn ich nur mit eigenen Augen gesehen hätte, wie {s7} vor dir versagt! Unsere Feinde sind nun ohne Zweifel eingeschüchtert, vielleicht beben sie vor Angst. Schlag der Schlange den Kopf ab und der Kampf ist vorbei, so heißt es doch? Nun, ich werde nun meine Armee ausrücken lassen, um den endgültigen Sieg zu erringen. Dein Beitrag wird an die Oberen gemeldet, {playername}, keine Sorge.
+qstr_Alas_that_I_could_no|Ich bedaure, dass ich {s7} von {s8} nicht eigenhändig niedergeschlagen habe. Sollten wir uns erneut auf dem Feld messen, so werde ich diesen Fehler nicht erneut begehen.
+qstr__I_should_rather_mak|Ich werde über meinen Sieg über {s7} von {s8} lieber selbst Bericht erstatten - der größte Ruhm gebührt mir und niemandem anders!
 qstr_Very_well_done_{play|Sehr gut gemacht, {playername}! Ihr habt sowohl den Spion als auch dessen Kontaktmann gefangen genommen, genau wie ich es mir erhofft habe. Die beiden sind nun sicher eingesperrt und warten auf ihre Befragung. Sie werden einiges zu erklären haben! Nun gut, ich bin sehr zufrieden mit Eurem Erfolg, {playername}, und überlasse Euch deshalb diese Summe als Zeichen meiner Wertschätzung.
 qstr_Beautiful_work_{play|Wunderbar, {playername}! Du hast, genau wie befohlen, sowohl den Spitzel als auch seinen Kontakt erwischt. Die beiden sind nun sicher im Verlies und warten auf ihr Verhör. Mein Folterer wird heute sehr beschäftigt sein! Ich bin sehr zufrieden mit deinem Erfolg, {playername}, nimm dies als Zeichen meiner Wertschätzung.
 qstr_Foiling_the_enemy_s_|Indem du die feindlichen Angriffe auf die Flüchtlingszüge abgewehrt hast, hast du den Feind entmutigt ({s1} verliert {reg19} aufgrund deines Sieges gegen {reg18} Plünderertrupps).
@@ -1363,13 +1364,13 @@ qstr_We_are_at_war_with_{|Wir sind im Krieg mit {s12}. Allerdings kämpfen wir v
 qstr_We_are_at_war_with_{s|Wir sind im Krieg mit {s12}. Allerdings finden im Moment nur Scharmützel statt.
 qstr_we_are_not_too_conce|wir beschäftigen uns damit im Moment nicht so sehr, denn wir bekämpfen andere Feinde näher unserer Heimat.
 qstr__under_your_orders|, unter deinem Befehl
-; qstr_{playername}_you_may|{playername}, you may have seen the hosts of {s7}. Of all the captains arrayed against us, at present {s7} of {s8} has won the greatest renown. Their mere presence on the field is enough to embolden our enemies and weaken the resolve of our allies. {playername}, if you wish to do a great deed in this war, strike down the host of {s7} in open battle, in sight of all! Thus may hope be rekindled, and dread fill the hearts of those who would come against us.
-; qstr_Do_you_mark_how_our_|Do you mark how our bravest fighters falter at the mere mention of {s7} of {s8}? A great warrior, oh yes, a capable captain. We cannot allow that to run amok like this! Everywhere their face is shown, our lines bend back, and our foes find new courage. This cannot be. I command that you, {playername}, challenge and defeat the soldiers of {s7} in open battle. To see {s7} struck down by you will freeze the blood and marrow of his followers, and show our own troops that our enemies can be thrown down!
-; qstr_This_is_a_chance_for|This is a chance for me to show my quality. I shall defeat {s7} in the sight of enemy and ally alike.
-; qstr_Accursed_be_those_wh|Accursed be those who follow {s7} this day, for I shall strike them down for all to see!.
-; qstr_{s9}_wants_you_to_de|{s9} wants you to defeat {s35} of {s36} in battle.
-; qstr_I_humbly_ask_that_yo|I humbly ask that you find another for this task. I do not think I could best {s7} in battle.
-; qstr_Mercy_I_crave!_To_fa|Mercy, I crave! To face {s7} in open battle is sheer folly! I cannot do this thing!
+qstr_{playername}_you_may|{playername}, Ihr seid vielleicht schon der Armee von {s7} begegnet. Von allen Hauptleuten des Feindes geht von {s7} von {s8} sicherlich im Augenblick die größte Gefahr aus. Allein {s7}s Anwesenheit auf dem Schlachtfeld ermutigt unsere Feinde und schwächt die Entschlossenheit unserer Truppen. {playername}, wenn Ihr eine große Tat begehen wollt, dann schlagt {s7}s Armee in offener Schlacht, vor unser aller Augen! So mag unsere Hoffnung neu entfacht werden und Grauen die Herzen unserer Feinde erfüllen.
+qstr_Do_you_mark_how_our_|Hast du bemerkt, wie unsere tapfersten Kämpfer erschauern, wenn {s7} von {s8} erwähnt wird? Ein fürcherlicher Feind. Überall wo {s7} erscheint, wanken unsere Reihen und unsere Feinde finden neuen Mut. Dies dürfen wir nicht zulassen! Ich befehle, dass du, {playername}, die Streitmacht von {s7} in offener Feldschlacht schlägst. Dies wird die Gedärme unserer Feinde vor Furcht gefrieren lassen und unseren eigenen Truppen beweisen, dass wir jeden unserer Feinde vernichten werden!
+qstr_This_is_a_chance_for|Endlich kann ich meinen Wert unter Beweis stellen. Ich werde {s7} vor aller Augen besiegen.
+qstr_Accursed_be_those_wh|Verflucht seien jene, die {s7} an jenem Tag in die Schlacht folgen, denn ich werde sie zermalmen!
+qstr_{s9}_wants_you_to_de|{s9} will, dass du die Armee von {s35} von {s36} in der Schlacht schlägst.
+qstr_I_humbly_ask_that_yo|Ich bitte demütig um eine andere Aufgabe. Ich glaube nicht, dass ich {s7} in der Schlacht schlagen kann.
+qstr_Mercy_I_crave!_To_fa|Gnade! {s7} in offener Schlacht zu begegnen wäre Selbstmord! Ich kann das nicht tun!
 qstr_strong_warriors_from|starke Krieger von {s7}
 qstr_champions_from_{s7}_|Vorkämpfer von {s7}, die stärksten auf dem Schlachtfeld
 qstr_{playername}_the_men|{playername}, es kursieren Gerüchte über die grausamen Krieger des Feindes. Diese verunsichern die Unsrigen. Ich will, dass Ihr ihnen zeigt, dass es nichts zu fürchten gibt. Erschlagt {reg22} {s6} mit eigener Hand!

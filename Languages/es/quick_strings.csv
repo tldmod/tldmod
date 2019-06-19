@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Pts. de Rec. ({s2})
 qstr_+30_to_Party_Morale|+30 a la Moral del Grupo
 qstr_+20_to_Party_Morale|+20 a la Moral del Grupo
 qstr_+1_to_Riding_Skill|+1 a Cabalgar
+qstr_during_battles|en enfrentamientos
 qstr_+1_to_Pathfinding|+1 a Busca-rutas
 qstr_+1_to_Athletics|+1 a Atletismo
 qstr_Use_from|Se usa desde
@@ -214,22 +215,22 @@ qstr_when_equipped|cuando está equipado
 qstr_+1_to_Strength|+1 a Fuerza
 qstr_+1_to_Agility|+1 a Agilidad
 qstr_+1_to_Leadership|+1 a Liderazgo
-qstr_+1_to_Wildcraft|+1 a Dominio de la tierras salvajes
+qstr_+1_to_Wildcraft|+1 de Dominio de la tierras salvajes
 qstr_+1_to_Power_Draw|+1 a Arquería
 qstr_Turns_nature_to_your|Pone a la naturaleza de tu parte (mejora con Dominio de la tierras salvajes)
 qstr_+1_to_Trainer|+1 a Instrucción
 qstr_Recruits_Tribal_Orcs|Recluta Orcos Tribales
-qstr_rally|reagrupan
-qstr_rallies|reagrupa
-qstr_+{reg1}_{s3}_in_batt|+{reg1} {s3} en batalla
+qstr_rally|tropa
+qstr_rallies|tropas
+qstr_+{reg1}_{s3}_in_batt|Reagrupas a +{reg1} {s3} en batalla
 qstr_+1_to_Charisma|+1 a Carisma
 qstr_+1_to_Surgery|+1 a Cirugía
 qstr_+1_to_Ironflesh|+1 a Piel curtida
 qstr_+1_to_Prisoner_Mgmt|+1 a Manejo de Prisioneros
 qstr_+2_to_Tactics|+2 a Tácticas
 qstr_+3_to_Spotting|+3 de Avistamiento
-qstr_Less_Dunnish_upkeep|Menor mantenimiento para Dunlendinos
-qstr_Less_Wargs_upkeep|Menor mantenimiento para Huargos
+qstr_Less_Dunnish_upkeep|Cuesta menos mantener a los Dunlendinos
+qstr_Less_Wargs_upkeep|Cuesta menos mantener a los Huargos
 qstr_Light_Armor|Armadura ligera
 qstr_+{reg1}_to_Party_Mor|+{reg1} a la Moral del Grupo
 qstr_Shoot_Speed:_{reg55}|Velocidad de disparo: {reg55}
@@ -269,7 +270,7 @@ qstr_in_sight_of_the_dark|a la vista de la oscura Torre de Orthanc
 qstr_near_the_Old_Ford_wh|cerca del Viejo Vado, donde el Viejo Camino del Bosque cruza el río Anduin
 qstr_near_a_big_ford_cros|cerca de un gran vado cruzando el Río {s15}
 qstr_near_a_small_ford_cr|cerca de un pequeño vado cruzando el Río {s15}
-qstr_Battle_Advantage_=_Ventaja en la batalla: {reg0}"
+qstr_Battle_Advantage_=_{ = "Ventaja de batalla: {reg0}"
 qstr_{s9}_wants_you_to_re|{s9} quiere que continúes siguiendo a su ejército hasta nuevo aviso.
 qstr__Being_Raided_|(Siendo asolado)
 qstr__Looted_|(Saqueado)
@@ -915,7 +916,7 @@ qstr__{s17}.|, {s17}.
 qstr_A_group_of_{s1}_is_{|Un grupo de {s1} está {s10} hacia ti.
 qstr_You_are_attacking_a_|Estás atacando a un grupo de {s1}.
 qstr_The_battle_against_t|La batalla contra el grupo de {s1} continúa.
-qstr_There_are_{reg39}_al|Hay {reg39} capitanes aliados en esta batalla. Puedes coordinar sus huestes en combate por {reg40} puntos de influencia.
+qstr_There_are_{reg39}_al|Hay {reg39} capitanes aliados en esta batalla. Puedes asumir el mando de sus huestes en combate por {reg40} puntos de influencia.
 qstr_Having_a_small_party|Tener un grupo pequeño tiene sus ventajas... Tus tropas y tú os escondéis del enemigo durante unas horas para aseguraros de no ser vistos.
 qstr_Your_ability_to_surv|Tu habilidad para sobrevivir en entornos inhóspitos te permite encontrar un lugar seguro para esconderte. (Tu habilidad de Dominio de las tierras salvajes te permite esconderte con {reg1} tropas)
 qstr_{reg4}_will_be_lost.|{reg4} soldados se perderán.
@@ -1211,8 +1212,8 @@ qstr_I_am_{s4}_{s15}_of_{|Soy {s4}, {s15} de {s6}
 qstr_I_am_{s4}_a_commande|Soy {s4}, capitán de {s6}
 qstr_{s9}{reg5?_and_the_r|{s9}{reg5? y gobierno sobre {s8}.:.
 qstr_{playername}_our_sco|Las buenas nuevas te preceden, {playername}. ¡Ojalá la vida te conceda cien años de bendiciones a partir de este día! Tu victoria ha hecho retoceder a as huestes de {s7}, desbaratando los avamces del enemigo. Esperamos que ahora sus tropas y capitanes actúen con más cautela. ¡Y que empiecen a temer tu nombre! Por lo menos nos has concedido un breve respiro en medio de tantas fatigas.
-qstr_Well_{playername}_yo|Bueno, {playername}, has regresado, y con buenas noticias, al parecer. Ahora veo que no eres todo bravuconadas. ¡Ah, ojalá hubiera estado allí para ver a {s7} caer ante ti con mis propios ojos! No cabe duda de que nuestros enemigos deben de estar terriblemente desmoralizados. Han perdido la cabeza, seguro. Como se suele decir, corta la cabeza de la serpiente, y la cosa está hecha. Bueno, ahora me toca a mí llevar a mis hueste a la victoria que realmente importa. Quedarña constancia de tu contribución, <Player>, al esfuerzo de tus superiores. No temas.
-qstr_Alas_that_I_could_no|Por desgracia, no pude acabar con {s7} de {s8}, pero si volvemos a encontrarnos tentará su suerte.
+qstr_Well_{playername}_yo|Bueno, {playername}, has regresado, y con buenas noticias, al parecer. Ahora veo que no eres todo bravuconadas. ¡Ah, ojalá hubiera estado allí para ver a {s7} caer ante ti con mis propios ojos! No cabe duda de que nuestros enemigos deben de estar terriblemente desmoralizados. Han perdido la cabeza, seguro. Como se suele decir, corta la cabeza de la serpiente, y la cosa está hecha. Bueno, ahora me toca a mí llevar a mis hueste a la victoria que realmente importa. Quedará constancia de tu contribución, <Player>, al esfuerzo de tus superiores. No temas.
+qstr_Alas_that_I_could_no|Por desgracia, no pude acabar con {s7} de {s8} de una vez por todas, pero si volvemos a encontrarnos, más vale que se ande con cuidado.
 qstr__I_should_rather_mak|Debería ser yo {mismo/misma} quien informara de mi victoria sobre {s7} de {s8}. ¡Mía es la gloria, no lo olvides!
 qstr_Very_well_done_{play|¡Muy bien hecho, {playername}! Has capturado a ambos, el espía y su contacto, tal y como esperaba, y ambos están ahora bajo llave, esperando a ser interrogados. ¡Tendrán que darnos alguna explicación ahora!. De cualquier modo, estoy muy satisfecho con los resultados, {playername}, y te doy esta bolsa como una muestra de aprecio.
 qstr_Beautiful_work_{play|¡Un trabajo excelente, {playername}! Has capturado a ambos, al espía y a su contacto, tal y como se te dijo, y ambos se encuentran enjaulados en mi mazmorra, esperando para ser interrogados. ¡Mi torturador estará ocupado esta noche!. Pero bueno, me satisfacen los resultados, {playername}, y quiero ofrecerte esta bolsa como muestra de mi aprecio.
@@ -1335,7 +1336,7 @@ qstr_Steel_must_be_kept_sh|Los aceros deben mantenerse afilados, los soldados y 
 qstr_Next_if_you_try_to_a|Segundo, si intentas atacar una capital enemiga, te ensartaré, si es que no estás {muerto/muerta} ya. Solo marchamos contra esos objetivos cuando el Amo lo ordene. Ve solamente allí donde el enemigo sea débil y pueda ser derrotado.
 qstr_Secondly_you_do_not_|En segundo lugar, no tienes permiso para liderar a nuestra gente en un asalto contra una capital enemiga. Esas plazas solo pueden tomarse con el esfuerzo combinado de todas nuestras fuerzas unidas. Solo debes atacar allí donde nuestros enemigos ya hayan sido debilitados lo bastante como para que puedan ser derrotados.
 qstr_Third_{s2}_is_on_its|Tercero, las fuerzas de {s2} están ocupadas con su propia campaña. Lucharemos junto a ti si el botín es prometedor, pero más te vale tener fuerza suficientes para vencer por tu cuenta, o no durarás mucho.
-qstr_Furthermore_you_must|Además, debes tener en cuenta que las fuerzas de {s2} están ocupadas con su propia campaña. Nuestros estandartes te seguirán a la batalla si las circunstancias lo permiten, pero no pongas en ello todas tus esperanzas; bien puede ser que te veas {obigado/obligada} a luchar en solitario.
+qstr_Furthermore_you_must|Además, debes tener en cuenta que las fuerzas de {s2} están ocupadas con su propia campaña. Nuestros estandartes te seguirán a la batalla si las circunstancias lo permiten, pero no pongas en ello todas tus esperanzas; bien puede ser que te veas {obligado/obligada} a luchar en solitario.
 qstr_Last_remember_that_a|Por último, recuerda que, como {s25} que eres, no puedes permitirte un fracaso a ojos del Amo. Los riesgos para {s2} son grandes en esta empresa; si cosechas una derrota, nos encargaremos de que te arrepientas de haber nacido.
 qstr_Finally_remember_tha|Por último, recuerda que como {s25} que eres, la vida y la muerte de muchos depende de tus éxitos o tus fracasos. Los riesgos para {s2} son grandes en esta empresa; si nos traes la ruina, las consecuencias serán severas.
 qstr_Finally_remember_that|Por último, recuerda que como {s25} que eres, podrás regocijarte en la gloria de una victoria ganada con esfuerzo y considerar dicha victoria como tuya; pero si fracasas, todo el pueblo de {s2} pagará el precio de tu derrota. Cuando marchas al combate, llevas contigo el destino de {s2}; si nos traes la ruina, las consecuencias serán severas.
@@ -1363,9 +1364,9 @@ qstr_We_are_at_war_with_{|Estamos en guerra con {s12}. Sin embargo, estamos luch
 qstr_We_are_at_war_with_{s|Estamos en guerra con {s12}. Sin embargo, solo hay escaramuzas por el momento.
 qstr_we_are_not_too_conce|no estamos demasiado preocupados por ellos en este momento, ya que estamos luchando contra otros enemigos más cercanos a casa.
 qstr__under_your_orders|, bajo tus órdenes.
-qstr_{playername}_you_may|{playername}, quizás te hayas encontrado ya con las huestes de {s7}. De todos los capitanes enemigos dispuestos para atacarnos, {s7} de {s8} es quien ha ganado mayor renombre en los últimos tiempos. Su mera presencia en el campo de batalla basta para envalentonar a nuestros enemigos y debilitar la determinación de nuestros aliados. {playername}, si quieres llevar a cabo una gran hazaña en esta guerra, ¡destruye la hueste de {s7} en batalla campal, a la vista de todos! Así, tal vez vuelvas a encender la llama de la esperanza, y llenes de miedo el corazón de los que se nos oponen.
+qstr_{playername}_you_may|{playername}, quizás te hayas encontrado ya con las huestes de {s7}. De todos los capitanes que el enemigo ha dispuesto para atacarnos, {s7} de {s8} es quien ha ganado mayor renombre en los últimos tiempos. Su mera presencia en el campo de batalla basta para envalentonar a nuestros enemigos y debilitar la determinación de nuestros aliados. {playername}, si quieres llevar a cabo una gran hazaña en esta guerra, ¡destruye la hueste de {s7} en batalla campal, a la vista de todos! Así, tal vez vuelvas a encender la llama de la esperanza, y llenes de miedo el corazón de los que se nos oponen.
 qstr_Do_you_mark_how_our_|¿Te has dado cuenta de cómo vacilan nuestros más fieros combatientes ante la mera mención de {s7} de {s8}? Lucha con gran valor, oh sí, pocos capitanes hay que sean tan capaces. ¡No podemos permitir que campe a sus anchas! Allá donde muestra su cara, nuestras líneas retroceden, y nuestros enemigos renuevan su coraje. Esto no puede seguir así. Te ordeno a ti, {playername}, que desafíes a las fuerzas de {s7} y las derrotes en batalla campal. ¡Ver cómo destrozas a {s7} hará que la sangre se congele en las venas de sus seguidores, y demostrará a nuestras tropas que nuestros enemigos pueden ser vencidos!
-qstr_This_is_a_chance_for|Esta es gran oportunidad para mostrar mi valía. Venceré a {s7} bajo la atenta mirada de amigos y enemigos.
+qstr_This_is_a_chance_for|Esta es una gran oportunidad para mostrar mi valía. Venceré a {s7} bajo la mirada de amigos y enemigos.
 qstr_Accursed_be_those_wh|¡Malditos los que sigan a {s7} en este día aciago, pues los destrozaré, y haré que todos lo vean! 
 qstr_{s9}_wants_you_to_de|{s9} quiere que derrotes en batalla a {s35} y sus tropas de {s36}.
 qstr_I_humbly_ask_that_yo|Pido humildemente que otro acometa tal desafío. No creo que pueda vencer a {s7} en batalla.

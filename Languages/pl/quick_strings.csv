@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Pkt.Prestiżu ({s2})
 qstr_+30_to_Party_Morale|+30 do Morale Oddziału
 qstr_+20_to_Party_Morale|+20 do Morale Oddziału
 qstr_+1_to_Riding_Skill|+1 do Umiejętności Jeździeckich
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|+1 do Szukania Ścieżek
 qstr_+1_to_Athletics|+1 do Atletyki
 qstr_Use_from|Do użycia z

@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} Оч.Снаб. ({s2})
 qstr_+30_to_Party_Morale|+30 к боевому духу отряда
 qstr_+20_to_Party_Morale|+20 к боевому духу отряда
 qstr_+1_to_Riding_Skill|+1 к навыку верховой езды
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|+1 к навыку поиска пути
 qstr_+1_to_Athletics|+1 к навыку атлетики
 qstr_Use_from|Используйте в 

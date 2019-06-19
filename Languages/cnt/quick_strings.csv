@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1} 資 源 點 ({s2})
 qstr_+30_to_Party_Morale|+30 部 隊 士 氣
 qstr_+20_to_Party_Morale|+20 部 隊 士 氣
 qstr_+1_to_Riding_Skill|+1 騎 術
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|+1 嚮 導
 qstr_+1_to_Athletics|+1 運 動
 qstr_Use_from|用 來

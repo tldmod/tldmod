@@ -201,6 +201,7 @@ qstr_{reg1}_Res.Pts__{s2}|{reg1}资源点({s2})
 qstr_+30_to_Party_Morale|部队士气 +30
 qstr_+20_to_Party_Morale|部队士气 +20
 qstr_+1_to_Riding_Skill|骑术等级+1
+; qstr_during_battles|during battles
 qstr_+1_to_Pathfinding|向导等级+1 
 qstr_+1_to_Athletics|跑动等级+1 
 qstr_Use_from|使用
@@ -1028,7 +1029,7 @@ qstr_You_have_evaded_the_|你躲过了巡逻队,并且悄悄地接近废墟！
 qstr_You_have_found_the_s|你已经找到了巫师！
 qstr_You_cannot_leave_unt|直到警卫失去你的踪迹前你不能离开！
 qstr_Kill_him_quickly_bef|在他逃脱前迅速杀了他！
-; qstr_Enraged_by_the_death|Enraged by the death of {s4}, you have sworn an oath of vengeance upon the forces of {s3}. You must now destroy as many of the troops of {s3} as possible in the coming days. You are keenly aware that your followers have witnessed this oath and you do not wish to become known as an oathbreaker. An orgy of bloodletting must now begin!
+qstr_Enraged_by_the_death|{s4}的死亡彻底激怒了你，你赌咒发誓：要向{s3}复仇，在未来的日子里你将尽可能多地消灭{s3}的军队。你很清楚你的跟随者是你复仇誓言的见证者，而且你不想成为破誓者。一个血腥复仇已经开始了！
 qstr_flooded._Somebody_or|已经被淹没了。一定有人破坏了艾辛河水坝。
 qstr_destroyed._Only_smol|已经被摧毁了。只留有冒着浓烟的废墟。
 qstr_^^^You_lost_your_fig|^^^你在和叛乱者的决斗中失败了！^看来你的半兽人现在有新头儿了。
@@ -1097,7 +1098,7 @@ qstr_{s27}:_Influence_wit|{s27}：对{s1}的影响力从{reg2}提高到{reg1}。
 qstr_{s27}:_Influence_with|{s27}：对{s1}的影响力从{reg2}降低到{reg1}。
 qstr_{s27}:_Party_morale_|{s27}：部队士气提升了。
 qstr_{s27}:_Party_morale_d|{s27}：部队士气降低了。
-; qstr_You_have_failed_to_f|You have failed to fulfill your oath to avenge Balin and his company!
+qstr_You_have_failed_to_f|你未能履行为巴林之死所做的复仇誓言！
 qstr_You_have_failed_to_fu|你未能履行为{s1}之死所做的复仇誓言！
 ; qstr_Your_troops_value_yo|Your troops value your effort to fullfill your oath, but acknowledge that events unfolded too quick. As a result, 
 ; qstr_{s22}You_have_fulfil|{s22}You have fulfilled your oath to avenge Balin and his company!

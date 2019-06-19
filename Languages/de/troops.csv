@@ -243,7 +243,7 @@ trp_pelargir_watchman_pl|Wachmänner von Pelargir
 trp_pelargir_marine|Seemann von Pelargir
 trp_pelargir_marine_pl|Seemänner von Pelargir
 trp_pelargir_vet_marine|Erfahrener Seemann von Pelargir
-; trp_pelargir_vet_marine_pl|Pelargir Veteran Marines
+trp_pelargir_vet_marine_pl|Erfahrene Seemänner von Pelargir
 trp_pelargir_infantry|Soldat von Pelargir
 trp_pelargir_infantry_pl|Soldaten von Pelargir
 trp_pelargir_vet_infantry|Erfahrener Soldat von Pelargir
@@ -626,12 +626,12 @@ trp_warg_ghost_a3a|Gepanzerter Warg
 trp_warg_ghost_a3a_pl|Gepanzerte Warge
 trp_warg_ghost_h|Riesiger Warg
 trp_warg_ghost_h_pl|Riesige Warge
-trp_uruk_hai_tracker|Fährtenleser der Uruk-hai
-trp_uruk_hai_tracker_pl|Fährtenleser der Uruk-hai
-trp_large_uruk_hai_tracker|Großer Fährtenleser der Uruk-hai
-trp_large_uruk_hai_tracker_pl|Großer Fährtenleser der Uruk-hai
-trp_fighting_uruk_hai_tracker|Fährtenleser der Kämpfenden Uruk-hai
-trp_fighting_uruk_hai_tracker_pl|Fährtenleser der Kämpfenden Uruk-hai
+trp_uruk_hai_tracker|Späher der Uruk-hai
+trp_uruk_hai_tracker_pl|Späher der Uruk-hai
+trp_large_uruk_hai_tracker|Großer Späher der Uruk-hai
+trp_large_uruk_hai_tracker_pl|Großer Späher der Uruk-hai
+trp_fighting_uruk_hai_tracker|Späher der Kämpfenden Uruk-hai
+trp_fighting_uruk_hai_tracker_pl|Späher der Kämpfenden Uruk-hai
 trp_fighting_uruk_hai_berserker|Berserker der Kämpfenden Uruk-hai
 trp_fighting_uruk_hai_berserker_pl|Berserker der Kämpfenden Uruk-hai
 trp_uruk_snaga_of_isengard|Uruk-hai-Frischling
@@ -676,8 +676,8 @@ trp_ent|Ent
 trp_ent_pl|Ents
 trp_orc_snaga_of_guldur|Snaga von Dol Guldur
 trp_orc_snaga_of_guldur_pl|Snagas von Dol Guldur
-trp_orc_of_guldur|Ork-Aufspürer von Dol Guldur
-trp_orc_of_guldur_pl|Ork-Aufspürer von Dol Guldur
+trp_orc_of_guldur|Spür-Ork von Dol Guldur
+trp_orc_of_guldur_pl|Spür-Orks von Dol Guldur
 trp_orc_snaga_of_mordor|Snaga aus Mordor
 trp_orc_snaga_of_mordor_pl|Snagas aus Mordor
 trp_orc_of_mordor|Ork aus Mordor
@@ -694,10 +694,10 @@ trp_morgul_orc|Ork von Minas Morgul
 trp_morgul_orc_pl|Orks von Minas Morgul
 trp_fell_morgul_orc|Grausamer Ork von Minas Morgul
 trp_fell_morgul_orc_pl|Grausamer Orks von Minas Morgul
-; trp_orc_tracker_of_mordor|Large Orc Trackers of Dol Guldur
-trp_orc_tracker_of_mordor_pl|Großer Ork-Aufspürer von Dol Guldur
-trp_fell_orc_tracker_of_mordor|Grausamer Ork-Aufspürer von Dol Guldur
-trp_fell_orc_tracker_of_mordor_pl|Grausame Ork-Aufspürer von Dol Guldur
+trp_orc_tracker_of_mordor|Große Spür-Orks von Guldur
+trp_orc_tracker_of_mordor_pl|Großer Spür-Ork von Dol Guldur
+trp_fell_orc_tracker_of_mordor|Grausamer Spür-Ork von Dol Guldur
+trp_fell_orc_tracker_of_mordor_pl|Grausame Spür-Orks von Dol Guldur
 trp_orc_archer_of_mordor|Ork-Bogenschütze aus Mordor
 trp_orc_archer_of_mordor_pl|Ork-Bogenschützen aus Mordor
 trp_large_orc_archer_of_mordor|Großer Ork-Bogenschütze aus Mordor

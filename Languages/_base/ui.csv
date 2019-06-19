@@ -61,14 +61,6 @@ ui_explanation_charisma|Charisma: Each point increases your party size limit by 
 ui_delivered_number_damage|Delivered %d damage.
 ui_mission_losses_killed|killed :
 ui_party_losses|%s  : %d wounded --- %d killed of %d.
-ui_advantage_change|Advantage change = %c%d 
-ui_advantage_outnumbered| You are hopelessly outnumbered.
-ui_advantage_major_disadvantage| You have a major disadvantage.
-ui_advantage_slight_disadvantage| You are slightly disadvantaged.
-ui_advantage_balanced| The situation is balanced.
-ui_advantage_fair_advantage| You have a fair advantage for winning.
-ui_question_save_changes|You have made changes to the objects. Do you want to save changes?
-ui_time_limit_reached|Time Limit Reached!
 ui_following|Following 
 ui_accompanying|Accompanying 
 ui_dumping_value_items|%d items will be permanently lost, are you sure?

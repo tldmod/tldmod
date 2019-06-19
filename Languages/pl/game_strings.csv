@@ -2158,7 +2158,7 @@ str_npc26_morality_speech|Walczący Uruk-hai nie {s21}. Jeśli Pan ma mało odwa
 ; str_npc27_morality_speech|[No primary moral code]
 ; str_npc18_2ary_morality_speech|I joined you not to {s21}, Great One, but to bathe in the blood of our foes! You may employ your guile for now, but give me a good slaughter soon, I beg you!
 ; str_npc19_2ary_morality_speech|[No secondary moral code]
-; str_npc20_2ary_morality_speech|Ah, our mighty Commander. Great deeds you performed, you say? I wonder how many other of your battles ended this way, with you advancing recklessly into the jaws of a trap, and fleeing with as much haste.
+str_npc20_2ary_morality_speech|Ah, nasz wielki wódz. Żes wielkie czyny pan popełnił,  powiadasz? myślę zes ile twoich  bitew skończyło się tak, z tobą bezmyślnie szarżującym w pysk płuapki, I uciekającym z tym samym zapałem.
 str_npc21_2ary_morality_speech|Proszę o wybaczenie, dowódco. Kobiety z mojej stacji zaakceptują śmierć, ale nie zhańbioną. {s21} przynosi wstyd mojego domowi i przodkom.
 ; str_npc22_2ary_morality_speech|[No secondary moral code]
 ; str_npc23_2ary_morality_speech|[No secondary moral code]
@@ -2324,7 +2324,7 @@ str_npc27_honorific|Mistrz
 ; str_woodelf_halls_guildmaster_companion|Indeed? There is one among us whose aid you should not despise. Luevanna is her name, and she is kin to me, as it happens. She is young, as our people reckon it, and has an abiding love for the woods and all the creatures in it, save those which are evil. Hers is a gentle spirit - she has not fought in our array. Still, I have a hope that she may be persuaded to follow you, for then she may come to learn that though we love peaceful ways in peaceful days, times of war call for warlike deeds. See, there she stands - you may speak with her. Harthon gerithach lend vaer!
 ; str_dale_guildmaster_companion_player_ask|Good master, I seek stout warriors of prowess to fight beside me in this war.
 ; str_dale_guildmaster_companion_none|Well, now. Here in our town, we have always plied our trades and managed our affairs quietly, and not until recently have we had a great need for fighting men. I suppose you might ask at our barracks, and find what recruits you can from our garrison. I know of none among our captains here who would abandon his post to follow you.
-; str_dale_guildmaster_companion_player_none_ok|I will do that, good master. Farewell to you.
+str_dale_guildmaster_companion_player_none_ok|Zrobie to, miłościwy panie. Bywaj.
 ; str_dale_guildmaster_player_found_ok|Oft the unbidden gift proves the best value. I will speak to Faniul. Farewell!
 ; str_dale_main_guildmaster_companion|Well, the King and his Lords have the best claim on the service of good captains. I don’t know that any of great renown are left to follow you - but are mere fighting men all you need? What about binders of wounds, versed in herblore? I know of one such - Faniul, personal healer to the King. She was midwife to my sister - and do not look askance at her age: she is of stout heart and sturdier than she looks. I warrant she’ll bear up well under the strains of travel. Why, I think I see her taking her ease over there, in this courtyard.
 ; str_dwarf_guildmaster_companion_player_ask|Good master, there seem to be some valiant warriors here. Will any follow my company?

@@ -16,9 +16,9 @@ itm_tools|Strumenti
 itm_siege_supply|Rifornimenti
 itm_quest_wine|Vino
 itm_quest_ale|Birra
-itm_metal_scraps_bad|Frammenti di metallo di bassa qualità
-itm_metal_scraps_medium|Frammenti di metallo di buona qualità
-itm_metal_scraps_good|Frammenti di metallo di ottima qualità
+itm_metal_scraps_bad|Metallo di bassa qualità
+itm_metal_scraps_medium|Metallo di buona qualità
+itm_metal_scraps_good|Metallo di ottima qualità
 itm_oliphant|Olifante
 itm_sumpter_horse|Cavallo da soma
 itm_saddle_horse|Cavallo da sella
@@ -55,17 +55,17 @@ itm_gondor_lam_horse|Cavallo corazzato del Lamedon
 itm_lorien_warhorse|Cavallo da Guerra di Lothlórien
 itm_harad_horse|Cavallo dell'Harad
 itm_harad_warhorse|Cavallo da Guerra dell'Harad
-itm_variag_pony|Pony Variag
+itm_variag_pony|Pony Variago
 itm_variag_kataphrakt|Cavallo da Guerra Easterling
-itm_warg_1b|Mannaro
-itm_warg_1c|Mannaro
-itm_warg_1d|Mannaro
-itm_wargarmored_1b|Mannaro corazzato
-itm_wargarmored_1c|Mannaro corazzato
-itm_wargarmored_2b|Mannaro corazzato
-itm_wargarmored_2c|Mannaro corazzato
-itm_wargarmored_3a|Mannaro corazzato
-itm_warg_reward|Mannaro enorme
+itm_warg_1b|Warg
+itm_warg_1c|Warg
+itm_warg_1d|Warg
+itm_wargarmored_1b|Warg corazzato
+itm_wargarmored_1c|Warg corazzato
+itm_wargarmored_2b|Warg corazzato
+itm_wargarmored_2c|Warg corazzato
+itm_wargarmored_3a|Warg corazzato
+itm_warg_reward|Gigantesco Warg
 itm_axe_a|Ascia Nordica
 itm_axe_b|Ascia Barbuta Nordica
 itm_axe_c|Ascia Nordica

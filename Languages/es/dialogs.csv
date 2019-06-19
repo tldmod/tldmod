@@ -446,7 +446,7 @@ dlga_lord_tell_objective:lord_pretalk.1|No comando ninguna fuerza en este moment
 dlga_lord_tell_objective:lord_pretalk.2|Estamos descansando en {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.3|Estamos viajando a {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.4|Estamos reclutando soldados de {s1}.
-dlga_lord_tell_objective:lord_pretalk.5|Estamos explorando en busca del enemigo alrededor de {s1}{s5}.
+dlga_lord_tell_objective:lord_pretalk.5|Estamos buscando al enemigo en los alrededores de {s1}{s5}.
 dlga_lord_tell_objective:lord_pretalk.6|Estamos saqueando la población de {s1}.
 dlga_lord_tell_objective:lord_pretalk.7|Nos retiramos hacia {s1}.
 dlga_lord_tell_objective:lord_pretalk.8|Estamos asediando {s1}{s5}.
